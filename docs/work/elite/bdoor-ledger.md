@@ -14465,3 +14465,627 @@ Cut for want of a source in the repository: a reason for the killing of the boys
 | Joshua 17:4; 1 Peter 1:4; Romans 8:17; Ephesians 3:6 | 5-13 | numbers/36.json `christ`; BSB | BSB text |
 | Is the limit fair: what it protects, what it narrows; not a rule about marriage today | 5-13 | numbers/27.json `hard`; the run's content rule | Repository; a caution of these notes |
 | Care line for anyone being hurt | 5-13 | exodus/plain/21.json 18-21 `hard` | Reused whole, word for word |
+
+## Deuteronomy's book page (teaching introduction, 2026-11-21)
+
+Every claim in `client/public/bible/notes/deuteronomy/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Fifth book, 34 chapters, mostly speech; the plains of Moab; a new generation; 6:5 as the center; Moses dies on Nebo and the five books close | in-a-minute | bible/books.json; deuteronomy/intro.json `tagline`, `overview`, `story` | Repository; BSB text |
+| The story so far; 1:3; Sihon and Og (1:4); Horeb as the usual name for Sinai; eleven days (1:2); Joshua next; Joshua to Kings measure Israel by this book | story | deuteronomy/intro.json `overview`, `story`, `setting`; BSB | Repository; BSB text |
+| The Greek title from the Septuagint's rendering of 17:18, a second law or repetition; Devarim, ‘words’; 1:1; 1:5; the Ten Commandments given again | names, words | deuteronomy/intro.json `overview`; BSB | Repository; BSB text |
+| Authorship: the book's own claim (31:9, 31:24); tradition; Jesus and the New Testament cite it as Moses'; 1:1-5 and chapter 34 as another hand; the Talmud and the last eight verses | who, hard list | deuteronomy/intro.json `author`; questions/old-testament/who-wrote-the-first-five-books.json (`concessions`) | Repository; no side |
+| The critical view: 2 Kings 22:8; about 622 BC; de Wette (1805); chapter 12 and the reform; chapter 28 and Esarhaddon (672 BC); northern Levites or prophets; growth through the exile | who, timeline | deuteronomy/intro.json `author`, `date`; deuteronomy/6.json `historical` | Repository; in its holders' terms; no side |
+| The reply from the Hittite treaties of the late second millennium; the middle position; the two dates for the exodus (1 Kings 6:1) | who, timeline | deuteronomy/intro.json `author`, `date` | Repository; no side |
+| Three addresses, then the farewell; 4:12; ‘today’ and 5:3 | built, words | deuteronomy/intro.json `overview`, `structure`, `reading`; deuteronomy/verses/6.json (verse 6, hayyom) | Repository; BSB text |
+| Preached law; second person, repetition, reasons; the Sabbath reason in Exodus and here (5:15); 24:22; the key verbs | preached | deuteronomy/intro.json `reading`, `purpose`; guides/reading-law.json (‘The Ten Commandments and their numbering’) | Repository; BSB text |
+| Laws as representative cases; the roof railing (22:8), flat roofs as living space; a judge reasons from cases | preached | guides/reading-law.json (‘Two ways of giving law’) | Repository |
+| The child's question and the parent's story (6:20-21); law after rescue; the law written, kept by the ark, read every seven years to all (31:10-13, 24-26) | preached | deuteronomy/intro.json `purpose`; deuteronomy/6.json `hard`; guides/reading-law.json (‘Torah: instruction inside a story’); BSB | Repository; BSB text |
+| Covenant as a binding relationship; Mendenhall (1954) and the Hittite treaties of the fourteenth and thirteenth centuries BC, their parts; Kline (1963); Weinfeld (1972) and Esarhaddon; what both sides share | treaty, timeline | guides/reading-law.json (‘Covenant: the frame around the laws’); deuteronomy/intro.json `themes`, `date` | Repository; only as the repository's notes describe it; no side on the date |
+| Moran (1963): ‘love’ as loyalty in treaties; Deuteronomy roots Israel's love in God's prior love (4:37), which no treaty did | treaty | deuteronomy/6.json `historical`; deuteronomy/verses/6.json (verse 5) | Repository |
+| The Shema: the name; to hear is to heed; six Hebrew words, more than one reading; heart, soul, strength; love as loyalty, and warm (10:15; 30:6); 6:7-9 | shema, words | deuteronomy/6.json `cultural`; deuteronomy/verses/6.json (verses 4 to 9) | Repository; BSB text |
+| Recited evening and morning for more than two thousand years; tefillin and the mezuzah; Rabbi Akiva (Berakhot 61b) | shema, timeline, words, readers | deuteronomy/verses/6.json (verses 4, 7, 8, 9); deuteronomy/6.json `cultural`, `historical` | Repository |
+| Jesus and the Shema (Mark 12:29-31); Christians confess the Trinity and keep the Shema; Jewish readers have long heard it as ruling that out; the disagreement real | shema, hard list | deuteronomy/6.json `christ`, `hard` | Repository; each in its own terms |
+| Chosen not for size (7:7-8) or goodness (9:6); chosen means set apart for a task; God loves the foreigner (10:18-19); no claim for any nation today | chosen, hard list | deuteronomy/intro.json `themes`, `reading`; deuteronomy/verses/18.json (verses 4-5, election to service); BSB | Repository; BSB text |
+| Remember: 8:2-3; the danger of plenty (6:10-11; 8:17-18) | chosen, words | deuteronomy/intro.json `themes` (‘Remember and do not forget’); BSB | Repository; BSB text |
+| The place the LORD will choose, never named (12:5); 16:20; 19:15; the king under the law (17:14-20); 18:15 and Acts 3:22; the laws for the poor (15:1-2, 8; 24:15, 19-21; 25:13-15; 23:15-16; 24:16) | laws, words | deuteronomy/intro.json `themes` (‘Justice for the vulnerable’), `structure`; deuteronomy/verses/18.json (verses 6-7); guides/reading-law.json (‘What is different about Israel's law’); BSB | Repository; BSB text |
+| The conquest command (7:2-3; 20:16-18); the readings Christians hold; what holds on every reading; Luke 9:54-55; no warrant for violence, no modern nation, people or conflict | hard, hard list | questions/old-testament/the-command-to-destroy-the-canaanites.json; context/guides/the-violence-of-the-old-testament.json; numbers/intro.json teaching (‘The wars and judgments in the book’); deuteronomy/3.json `hard` | Repository; worded as the site's live pages set it out; no side |
+| Chapters 13 and 17 as laws of Israel's covenant, no warrant for church or state; chapters 21 and 22 named; Mark 10:5 on the divorce law; Genesis 18:25 | hard | guides/reading-law.json (‘Reading the laws that trouble modern readers’); questions/old-testament/the-command-to-destroy-the-canaanites.json (`concessions`) | Repository; BSB text |
+| Gerizim and Ebal (27:12-13); chapter 28 counted: 14 verses of blessing, 54 of curse | blessings | BSB (verse count of chapter 28); deuteronomy/intro.json `structure` | BSB text |
+| The curses addressed to a nation; never a verdict on a person's illness, poverty or loss (Job; John 9:3); the reading of them as explaining Jewish suffering named and rejected; the pointer to the Acts 2:22-28 note | blessings, hard list | leviticus/plain/26.json `hard`; acts/plain/2.json 22-28 `hard`; BSB | Repository; BSB text |
+| Return and the circumcised heart (30:6); 30:14; 30:19-20; 29:29 | blessings, words | deuteronomy/intro.json `story`, `christ`, `keyChapters`; BSB | Repository; BSB text |
+| Moses at 120; 31:8; the song as witness (31:19; 32:4, 10-11); the blessing (33:27) | moses | deuteronomy/intro.json `structure`; BSB | Repository; BSB text |
+| Moses barred: 3:25-26; ‘on your account’ (1:37; 3:26) and Meribah (32:51; Numbers 20); the two ways readers join them | moses, hard list | deuteronomy/1.json `hard`; deuteronomy/34.json `hard` | Repository; no side |
+| The death (34:4-10); God buries him; thirty days; Matthew 17:3 | moses, timeline | deuteronomy/34.json `summary`, `hard`; BSB | Repository; BSB text |
+| The three answers in the wilderness (Matthew 4:4, 7, 10 from 8:3, 6:16, 6:13); forty days and forty years; the greatest commandment (Matthew 22:40); Acts 3:22; Galatians 3:13 and 21:23; Romans 10:8 and 30:14; 1 Corinthians 8:6 | new-testament, timeline | deuteronomy/intro.json `christ`; deuteronomy/6.json `christ` | Repository; only lines the New Testament itself draws; BSB text |
+| The Passover meal and the child's question of 6:20; reading habits; the two misreadings | readers | deuteronomy/verses/6.json (verse 20); deuteronomy/intro.json `reading` | Repository |
+| Timeline: Mesha, about 840 BC, and the word for the ban; the Nash Papyrus; tefillin at Qumran; the Mishnah (about AD 200) opening with the Shema | timeline | questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`); deuteronomy/6.json `historical`; deuteronomy/verses/6.json (verses 4, 8) | Repository |
+| Map: Jericho, the Jordan, Gilead (region), Shechem, on the `canaan` frame; Gerizim and Ebal on either side of Shechem; Nebo's traditional place | map, mapNote | numbers/intro.json and genesis/intro.json teaching maps (the same points); deuteronomy/11.json and 27.json `historical`; deuteronomy/34.json `historical` | Repository; Mount Nebo, Horeb, Kadesh-barnea, Heshbon, Bashan and Beth-peor left off |
+| Go deeper: twelve pages | deeper | guides/reading-law.json, guides/calendar-and-festivals.json; bible/doctrines.json (love, covenant, election, idolatry, justice-poor); the three questions pieces (status live); context guide; /answers/did-god-command-genocide | Repository; all live |
+
+Cut or narrowed on the book page: that Deuteronomy is among the books most quoted in the New Testament (not in the repository's notes); that the law for the king is unlike any other royal law of its world (narrowed to ‘even the king is put under the law’); that Jewish men wear tefillin daily (narrowed to what the verse notes say of tefillin and the mezuzah); a date within the fortieth year for the death of Moses; the exclamation in 3:25 and 2 Kings 22:8 left outside the quoted words. The BSB's word in 1:2 and 2:7 is not quoted.
+
+## The plain notes on Deuteronomy 1 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The narrator's frame (verses 1-5); Horeb as Sinai; the children of the first generation; eleven days against forty years; the uncertain place names; ‘explain’ | 1-8 | deuteronomy/1.json `story`, `historical`, `literary`; deuteronomy/intro.json `author` | Repository |
+| Genesis 15:18; Numbers 36:13 | 1-8 | BSB | BSB text |
+| Jethro and Exodus 18; thousands to tens for war and judgment; bribes and partiality; the foreign resident; ‘judgment belongs to God’; shaphat as setting right; the stars and the promise to Abraham | 9-18 | deuteronomy/1.json `cultural`, `words` (H8199); BSB (Genesis 15:5) | Repository; BSB text |
+| Exodus 18:21; 2 Chronicles 19:6; James 2:1 | 9-18 | BSB | BSB text |
+| Moses preaches with ‘you’; the scouts in Numbers 13 and here, both held true by many; the walls as the language of dread; the Anakim; nasa in verses 9 and 31; aman and Genesis 15:6, amen | 19-33 | deuteronomy/1.json `literary`, `cultural`, `words` (H5375H, H0539), `hard` | Repository |
+| Hosea 11:3; Isaiah 46:4; Hebrews 3:19, written to the church | 19-33 | deuteronomy/1.json `christ`; numbers/plain/14.json (the same statement); BSB | Repository; BSB text |
+| The oath answers the people's words (Numbers 14:3); the second rebellion, marah in verses 26 and 43; Psalm 95:7-8; Hebrews 4:1 | 34-46 | deuteronomy/1.json `words` (H4784), `christ`; BSB | Repository; BSB text |
+| ‘On your account’ and Numbers 20:12: the three explanations; 32:51; no side | 34-46 | deuteronomy/1.json `hard` | Repository; no side |
+
+## The plain notes on Deuteronomy 2 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Edom as Esau's descendants, south of the Dead Sea; yerushah used of Seir as of Israel's land; paying for passage; garah, do not provoke | 1-8 | deuteronomy/2.json `historical`, `cultural`, `words` (H3425, H1624) | Repository |
+| Genesis 36:8; Deuteronomy 23:7; Nehemiah 9:21; Acts 17:26 | 1-8 | deuteronomy/2.json `christ`; BSB | Repository; BSB text |
+| Moab and Ammon from Lot; where they lay; the Zered as border; the parenthetical notes, the Rephaim, Caphtor as Crete, ‘to this day’ as a later standpoint; thirty-eight years | 9-23 | deuteronomy/2.json `historical`, `cultural`, `literary` | Repository |
+| Genesis 19:37; Ruth of Moab, great-grandmother of David (Ruth 4:17); Amos 9:7 | 9-23 | deuteronomy/2.json `cultural`; BSB | Repository; BSB text |
+| Sihon north of the Arnon; the pattern broken; the offer of peace and 20:10; refusing passage as hostile; qashah and Pharaoh; charam, the ban | 24-37 | deuteronomy/2.json `historical`, `cultural`, `literary`, `words` (H2763A, H7185) | Repository |
+| Numbers 21:23; Psalm 136:19; Ephesians 6:12 | 24-37 | numbers/plain/21.json 21-35; deuteronomy/2.json `christ`; BSB | Repository; BSB text |
+| The readings of verse 34 and of the hardening; Genesis 15:16; the Mesha inscription; no side; no warrant for violence, no nation or conflict today | 24-37 | deuteronomy/2.json `hard`; numbers/plain/21.json 21-35 `hard` (the same wording); questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; worded as the Numbers 21 note; no side |
+
+## The plain notes on Deuteronomy 3 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Bashan, its cattle and oaks; Edrei as Daraa; the walled cities against the fear of Kadesh; the Rephaim; the bed, the cubit, the two readings; ‘still in Rabbah’ as a later note; the ban and Mesha in the ninth century BC | 1-11 | deuteronomy/3.json `historical`, `cultural`, `words` (H2763A, H7497B) | Repository |
+| Numbers 21:34; Psalm 135:11; Romans 12:21 | 1-11 | deuteronomy/3.json `hard`; BSB | Repository; BSB text |
+| The readings of verse 6; Genesis 15:16; chapter 20's limit; Joshua and Judges; no side; no warrant for violence, no nation or conflict today | 1-11 | deuteronomy/3.json `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; no side |
+| Numbers 32 behind the grant; land held by clans, Jair; the condition; ‘rest’ (nuach); the charge to Joshua | 12-22 | deuteronomy/3.json `historical`, `cultural`, `words` (H5117); numbers/plain/32.json | Repository |
+| Joshua 22:4; Hebrews 4:8-9 | 12-22 | deuteronomy/3.json `christ`; BSB | Repository; BSB text |
+| The narrowing of the chapter; ‘cross over’ and ‘see’; chazaq and ‘be strong and courageous’; ‘on account of you’ with the pointer to the chapter 1 note; Beth-peor | 23-29 | deuteronomy/3.json `literary`, `words` (H2388G); deuteronomy/1.json `hard`; BSB (4:3) | Repository |
+| 34:4; 2 Corinthians 12:8-9; Matthew 26:39; Matthew 17:3 | 23-29 | deuteronomy/3.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 3: a sentence that the gods of the ancient world could be worn down with gifts (no source in the repository).
+
+## The plain notes on Deuteronomy 4 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘Hear’; Baal-peor and Numbers 25; the nations and Israel's wisdom; the memory handed on; ‘form’ (temunah) five times | 1-14 | deuteronomy/4.json `literary`, `words` (H8544); deuteronomy/6.json `cultural`; BSB (3:29; Numbers 25) | Repository; BSB text |
+| Numbers 25:3; 1 Kings 8:23; John 1:18 | 1-14 | deuteronomy/4.json `christ`; BSB | Repository; BSB text |
+| Statues in Mesopotamia, the mouth-opening rite, fed and carried; no created shape can stand for God; astral worship in Judah (2 Kings 21; 23); qanna used only of God; heaven and earth as witnesses; shuv; 722 BC and 587 or 586 BC; the two datings of the passage | 15-31 | deuteronomy/4.json `historical`, `cultural`, `words` (H7067H, H7725G) | Repository; no side on the date |
+| Exodus 20:4; Psalm 115:5; Jeremiah 29:13; Hebrews 12:29; Colossians 1:15 | 15-31 | deuteronomy/4.json `christ`; BSB | Repository; BSB text |
+| Verse 19: the three readings; Acts 14:16; 32:8 (the BSB's ‘sons of God’); verse 39; not a license | 15-31 | deuteronomy/4.json `hard`; BSB | Repository; no side |
+| The rhetorical questions; ‘there is no other’ twice; love as the reason (verse 37); knowing before doing | 32-40 | deuteronomy/4.json `literary`; deuteronomy/intro.json `themes` | Repository |
+| Isaiah 45:5; Mark 12:32 | 32-40 | BSB | BSB text |
+| The three cities in the lands of chapter 3; blood vengeance and refuge; 19:5; verses 44-49 as a heading; Numbers 35:12; Joshua 20:7-8 | 41-49 | deuteronomy/4.json `historical`, `cultural`, `literary`; BSB | Repository; BSB text |
+
+Cut in chapter 4: a remark on the Hebrew wording of verse 39 and a sentence that the old custom made no difference between murder and accident (neither is in the repository's notes).
+
+## The plain notes on Deuteronomy 5 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Berit; the covenant made ‘with us’ as preaching; ‘today’; face to face beside ‘no form’; the treaty likeness with the pointer to the book page | 1-5 | deuteronomy/5.json `words` (H1285), `historical`, `literary`; deuteronomy/verses/6.json (verse 6) | Repository |
+| Exodus 24:7; Jeremiah 31:33; Hebrews 12:24 | 1-5 | deuteronomy/5.json `christ`; BSB | Repository; BSB text |
+| The ten words; rescue before command; the three ways of numbering; qanna; the name lifted ‘for emptiness’; the Sabbath's two reasons; rest as the privilege of the powerful; who is included | 6-15 | deuteronomy/5.json `cultural`, `literary`, `words` (H7067H, H7676); exodus/plain/20.json 7-11; guides/reading-law.json (‘The Ten Commandments and their numbering’) | Repository |
+| The Christian views of the Sabbath, no side | 6-15 | numbers/plain/15.json `hard` (the same sentence) | Repository; no side |
+| Exodus 20:11; Mark 2:27; Colossians 2:16 | 6-15 | BSB | BSB text |
+| Verse 9 and 24:16, Ezekiel 18:20; the three readings; verse 10 | 6-15 | deuteronomy/5.json `hard` | Repository; no side |
+| ‘Honor’ from ‘heavy’, care in old age; Ephesians 6:2; two Hebrew words each, joined by ‘and’; false witness at the gate; chamad, the two views; desire no court can convict; the differences from Exodus 20:17 | 16-21 | exodus/plain/20.json 12-17; deuteronomy/5.json `cultural`, `literary`, `words` (H2530A) | Repository |
+| Matthew 5:22; Romans 13:9; Romans 7:7 | 16-21 | deuteronomy/5.json `christ`; BSB | Repository; BSB text |
+| Honor and harm: two paragraphs reused whole from the Exodus 20 note; the care line reused whole | 16-21 | exodus/plain/20.json 12-17 `hard`; 1-corinthians/plain/13.json and others (‘If you are being hurt, at home, at work or in a church’) | Repository; word for word |
+| Why the rest of the book came through Moses; ‘If only’; the heart, 10:16 and 30:6; the straight road | 22-33 | deuteronomy/5.json `literary`, `christ` | Repository |
+| 18:15; Exodus 20:19; Ezekiel 36:26; 1 Timothy 2:5 | 22-33 | deuteronomy/5.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 5: two sentences on households and on a world without written records, replaced by the wording of the Exodus 20 note; a care sentence about parents written new, replaced by the Exodus 20 paragraphs and an existing care line, each whole.
+
+## The plain notes on Deuteronomy 6 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The singular ‘commandment’ as a heading; lelammed and talmid; fear as reverent loyalty; three generations; milk and honey, date and fig syrup; Exodus 3:8; Proverbs 1:7 | 1-3 | deuteronomy/verses/6.json (verses 1, 2, 3); deuteronomy/6.json `literary`, `words` (H3372H) | Repository; BSB text |
+| Shema, to hear is to heed; six Hebrew words, the groupings; the two stresses; Kuntillet Ajrud, about 800 BC; heart, soul, me'od and wealth; love as loyalty in treaties, grounded in God's prior love; shanan, to sharpen; the merisms; the gates | 4-9 | deuteronomy/verses/6.json (verses 4 to 9); deuteronomy/6.json `historical`, `cultural`, `words` (H8085G, H0259, H0157G, H3966, H8150) | Repository |
+| Jewish practice: recited evening and morning for more than two thousand years; the Mishnah (about AD 200) opening with its rules and ‘the yoke of the kingdom of heaven’ (m. Berakhot 2:2); tefillin and mezuzah; tefillin at Qumran; Karaite and Christian figurative readings; Rabbi Akiva (Berakhot 61b) | 4-9 | deuteronomy/verses/6.json (verses 4, 7, 8, 9); deuteronomy/6.json `cultural`, `historical`; mark/plain/12.json 28-34 | Repository; as a living practice |
+| 2 Kings 23:25; Proverbs 3:3; Mark 12:29-30; Matthew 22:40; 1 Corinthians 8:6; James 2:19 | 4-9 | deuteronomy/6.json `historical`, `christ`; BSB | Repository; BSB text |
+| The Shema and the Trinity: the Jewish objection (Maimonides, medieval disputations), Islam; the answers from history (Hurtado, Bauckham), the creeds (325, 381), and echad, called weak by many Christian scholars; the disagreement real | 4-9 | deuteronomy/6.json `hard` (first question), `christ`, `words` (H0259) | Repository; each in its holders' terms |
+| One long sentence; cisterns and olive trees; forgetting as a failure of loyalty; the oath; ‘Him’ first; Massah, the wordplay, testing as trust made to depend on proof | 10-19 | deuteronomy/verses/6.json (verses 10-11, 12, 13, 16); deuteronomy/6.json `literary`, `cultural`, `words` (H7911) | Repository |
+| Exodus 17:7; Jesus' answers (Matthew 4:7, 10); forty years and forty days, a line the Gospels draw | 10-19 | deuteronomy/6.json `christ`; matthew/plain/4.json; BSB | Repository; BSB text |
+| The catechism; the story before the rules; ‘we’; the Haggadah, the wise son and ‘We were slaves’ | 20-25 | deuteronomy/verses/6.json (verses 20, 21-23, 24); deuteronomy/6.json `literary` | Repository |
+| Exodus 13:14; Joshua 4:6; Ephesians 6:4 | 20-25 | deuteronomy/verses/6.json (verse 20); BSB | Repository; BSB text |
+| Verse 25 and earning: the two readings; 24:13; Romans 3:20; Sanders (1977); Lutheran and Reformed replies; Romans 10:6-8; no side | 20-25 | deuteronomy/6.json `hard` (second question) | Repository; no side |
+
+Cut in chapter 6: that the Shema is ‘the first prayer of childhood and the last words of life’ (not in the repository's notes); a quotation of another translation's wording of verse 4, which the quotation check does not allow, given in paraphrase.
+
+## The plain notes on Deuteronomy 7 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The seven nations, seven as completeness; herem, no plunder, Mesha about 840 BC and the same word; treaties and marriage assume the peoples remain; ‘little by little’; the reason religious and not ethnic; marriage and household gods; Rahab and Ruth in David's line; pillars and Asherah poles | 1-5 | deuteronomy/7.json `historical`, `cultural`, `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`) | Repository |
+| Joshua 6:25; Exodus 23:30; Joshua 13:1; Matthew 5:44; Luke 9:55 | 1-5 | questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`, `reply`); BSB | Repository; BSB text |
+| The command stated at its weight; 24:16 and Genesis 18:25; the four readings (war idiom; judgment after long patience, Genesis 15:16, 9:5, 12:31; God's right over life, Augustine and Aquinas; accommodation), each with its cost; no side | 1-5 | questions/old-testament/the-command-to-destroy-the-canaanites.json (`shortAnswer`, `evidence`, `reply`, `differ`); context/guides/the-violence-of-the-old-testament.json; /answers/did-god-command-genocide as those pages cite it; deuteronomy/7.json `hard` | Repository; handled as the site's live pages handle it; no side; shortened to fit the 3,000-character field |
+| What holds on every reading: one land and one moment; not about race (9:4-6; verse 26; 13:12-18); never renewed; no warrant for violence against any person or people; no nation, state, land or conflict today; the later misuse named as the church's sin; Ezekiel 18:23 | 1-5 | the same question page (`evidence`, `reply`, `differ`); context guide (‘What No One May Do With These Texts’) | Repository |
+| Holy as set apart; segullah, the Akkadian word and 1 Chronicles 29:3; not for numbers, and chapter 9 on righteousness; bachar; chosen for a purpose (Genesis 12:3), held to account, no contempt (10:19), no claim for any nation today; chesed | 6-11 | deuteronomy/7.json `cultural`, `words` (H5459, H0977, H2617A); deuteronomy/verses/18.json (verses 4-5); deuteronomy/intro.json `themes`, `reading` | Repository |
+| Exodus 19:5; Amos 3:2; Romans 11:28-29; 1 Peter 2:9 with the pointer to the 1 Peter 2 note, no side; 1 John 4:19 | 6-11 | deuteronomy/7.json `christ`; 1-peter/plain/2.json `hard`; BSB | Repository; BSB text; no side |
+| The promises as a nation's; grain, new wine and oil as the three staple crops, and Hosea 2:8; ‘a snare’ | 12-16 | hosea/2.json (`summary`, verse note on 2:8); leviticus/plain/26.json `hard` | Repository |
+| Genesis 12:2; Job 1:8; John 9:3; Sarah, Rebekah, Rachel and Hannah | 12-16 | leviticus/plain/26.json `hard`; BSB (Genesis 11:30; 25:21; 29:31; 1 Samuel 1:2) | Repository; BSB text |
+| Two sentences and the grief line reused whole | 12-16 | leviticus/plain/26.json 14-39 `hard` (‘So this chapter is never God's verdict...’; ‘Grief is not a lack of faith...’) | Repository; word for word |
+| The fear of Kadesh; memory as the answer; the hornet's three readings; ‘little by little’; cherem turned on Israel, Achan | 17-26 | deuteronomy/7.json `literary`, `cultural`, `words` (H2764A) | Repository |
+| Joshua 7:1; Judges 1:28; Matthew 28:19 | 17-26 | deuteronomy/7.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 7: a sentence that in Canaanite religion the crops were the gifts of Baal and ‘the gods of the soil’, narrowed to what the Hosea 2 note says; a remark built on the word ‘Instead’ in verse 5, narrowed to what the verse lists.
+
+## The plain notes on Deuteronomy 8 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Anah and nasah; bread as life and as all food; manna, its name, that it could not be stored; a father's discipline in the ancient household | 1-6 | deuteronomy/8.json `cultural`, `words` (H6031B, H5254G, H4478A); BSB (Exodus 16:15-24) | Repository; BSB text |
+| Exodus 16:15; Matthew 4:4, forty years and forty days, Israel as God's son; John 6:35; Hebrews 12:6 | 1-6 | deuteronomy/8.json `christ`; deuteronomy/6.json `christ`; matthew/plain/4.json 1-4; BSB | Repository; BSB text |
+| ‘To know what was in your heart’: the three readings, the third not accepted by the wider tradition; verse 16 | 1-6 | deuteronomy/8.json `hard` | Repository |
+| Springs and not a great river; the seven species; date syrup; copper in the Arabah; the grace after meals | 7-10 | deuteronomy/8.json `historical`, `cultural` | Repository |
+| Matthew 14:19; 1 Timothy 6:17 | 7-10 | BSB | BSB text |
+| Remember and forget; the mirror shape; forgetting as a failure of loyalty; verse 17 as the pivot and verse 18 the answer | 11-20 | deuteronomy/8.json `literary`, `words` (H7911) | Repository |
+| Hosea 13:6; 1 Corinthians 4:7; Luke 12:20 | 11-20 | BSB | BSB text |
+
+## The plain notes on Deuteronomy 9 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second proud thought; three denials; tsedaqah; ‘stiff-necked’ as an ox; the two reasons given; Israel no better (8:20); no ground for contempt; no claim or explanation for any nation today | 1-6 | deuteronomy/9.json `literary`, `words` (H6666, H6203); deuteronomy/intro.json `reading`; context/guides/the-violence-of-the-old-testament.json (‘A Judgment With a Four-Century Fuse’) | Repository |
+| Genesis 15:16; Romans 10:6 and 10:3; Romans 3:9; Titus 3:5; Luke 18:13-14 | 1-6 | deuteronomy/9.json `christ`; BSB | Repository; BSB text |
+| Exodus 32 to 34 behind the retelling; the bull in Canaan and Egypt; the calf as a stand or sign, Exodus 32:5; the smashed tablet as a voided treaty; burning, grinding, scattering; the offer to Moses; Aaron | 7-21 | deuteronomy/9.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 32:19; Psalm 106:19, 23; 1 Kings 12:28 and the root sin of the north | 7-21 | deuteronomy/9.json `historical`; BSB | Repository; BSB text |
+| Israel's own Scriptures confessing its own sin; not a charge against the Jewish people | 7-21 | numbers/intro.json teaching (‘How the New Testament reads Numbers’); leviticus/plain/26.json `hard` | Repository |
+| Taberah, Massah, Kibroth-hattaavah, Kadesh; the frame of verses 7 and 24; the three grounds of the prayer; ‘your people’ and ‘Your people’ | 22-29 | deuteronomy/9.json `historical`, `literary`, `words` (H6419); BSB | Repository; BSB text |
+| Exodus 32:14, 32; Hebrews 7:25 as a pattern the New Testament draws | 22-29 | deuteronomy/9.json `christ`; numbers/plain/14.json 11-25; BSB | Repository; BSB text |
+| Did the prayer change God's mind: the three views; Jeremiah 18:8; no side | 22-29 | deuteronomy/9.json `hard` | Repository; no side |
+
+## The plain notes on Deuteronomy 10 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The new tablets as the answer to the prayer; the ark, treaties kept in holy places, the footstool; verses 6-7 as a parenthesis and their purpose; the Levites without land | 1-11 | deuteronomy/10.json `historical`, `cultural`, `literary`, `hard`; deuteronomy/verses/18.json (verses 1, 2) | Repository |
+| Exodus 34:1; 1 Kings 8:9; Numbers 18:20 | 1-11 | deuteronomy/10.json `historical`; BSB | Repository; BSB text |
+| Moserah and Mount Hor: the three explanations; not settled | 1-11 | deuteronomy/10.json `hard` | Repository; no side |
+| ‘And now’; description then command; circumcision of the heart; the three vulnerable groups; kings who boasted of protecting widows and orphans, and how Deuteronomy goes further; ger; davaq and Genesis 2:24; seventy and the stars | 12-22 | deuteronomy/10.json `cultural`, `literary`, `words` (H4135A, H1616, H1692); deuteronomy/1.json `cultural` (bribes) | Repository |
+| The command about the foreigner as a command to Israel, no rule for any government or party, what it asks of every reader | 12-22 | leviticus/plain/19.json 33-37 `hearers` (the same sentences) | Repository; worded as the Leviticus 19 note |
+| Micah 6:8; Jeremiah 4:4; 30:6; Romans 2:29; Acts 10:34-35; Leviticus 19:34; Matthew 25:35 | 12-22 | deuteronomy/10.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 10: a remark on the Hebrew wording behind ‘showing no partiality’ (not in the repository's notes on this chapter).
+
+## The plain notes on Deuteronomy 11 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hearers young at the exodus, eyewitnesses; the two kinds of events; Dathan and Abiram (Numbers 16); discipline and chapter 8 | 1-7 | deuteronomy/11.json `historical`; deuteronomy/8.json `cultural` | Repository |
+| Numbers 16:32; Psalm 78:4; Judges 2:10 | 1-7 | BSB | BSB text |
+| Egypt's river and channels worked by hand and foot; Canaan's two rains; Baal the storm god as the temptation | 8-17 | deuteronomy/11.json `cultural`, `words` (H4306) | Repository |
+| 1 Kings 17:1; Jeremiah 14:22; Matthew 5:45; Acts 14:17 | 8-17 | deuteronomy/11.json `christ`, `words`; BSB | Repository; BSB text |
+| Prosperity teaching rejected by most interpreters; a nation's covenant and land; Job, the psalms, Ecclesiastes; Luke 13:4-5; what the chapter still teaches | 8-17 | deuteronomy/11.json `hard`; leviticus/plain/26.json `hard` | Repository |
+| Verses 18-21 repeat 6:6-9 and frame chapters 6 to 11; the three paragraphs of the Shema; the mezuzah holding 6:4-9 and 11:13-21; the borders nearest under David and Solomon; no border or conflict today | 18-25 | deuteronomy/11.json `historical`, `literary`; deuteronomy/6.json `literary`, `cultural` | Repository |
+| Joshua 1:3; 1 Kings 4:21; Proverbs 3:3 | 18-25 | deuteronomy/11.json `historical`; BSB | Repository; BSB text |
+| Blessing and curse as God's favor given and withdrawn; the treaty ending; Gerizim and Ebal at Shechem; the Oak of Moreh and Genesis 12:6-7; the choice made visible; chapters 27, 28 and 30 | 26-32 | deuteronomy/11.json `historical`, `cultural`, `literary`, `words` (H1293, H7045) | Repository |
+| Joshua 8:33; Genesis 12:6; John 4:20-21; Galatians 3:13-14 | 26-32 | deuteronomy/11.json `historical`, `christ`; BSB | Repository; BSB text |
+
+## The plain notes on Deuteronomy 12 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Local shrines on hills and under trees; one sanctuary chosen by God; verse 8; maqom nine times, never named; shakan and the tabernacle; worship as a feast, joy commanded three times | 1-14 | deuteronomy/12.json `cultural`, `literary`, `words` (H4725, H7931, H8055) | Repository |
+| The command about the shrines as a command to ancient Israel; no warrant to damage any place of worship or harm any person | 1-14 | deuteronomy/plain/7.json 1-5 `hard`; context/guides/the-violence-of-the-old-testament.json | Repository |
+| Jeremiah 7:12; 1 Kings 8:29; Judges 21:25; John 1:14; 2:21; 4:23 | 1-14 | deuteronomy/12.json `christ`; BSB | Repository; BSB text |
+| The date of the law: Hezekiah (2 Kings 18:4) and Josiah about 622 BC; the reply that Jerusalem is not named, Shiloh; the shrine at Arad, its dating debated; no side | 1-14 | deuteronomy/12.json `historical` | Repository; no side |
+| Meat and sacrifice in the ancient world; slaughter at home, gazelle and deer; the blood as the life; Genesis 9:4 and Leviticus 17 | 15-28 | deuteronomy/12.json `cultural`, `words` (H1818) | Repository |
+| Jewish practice of draining blood, kept today; the Christian readings and Acts 15:29 with no side; not medical advice | 15-28 | leviticus/plain/17.json (the same sentences); leviticus/17.json | Repository; no side |
+| The frame of verses 4 and 31; child sacrifice, Ahaz and Manasseh, the king of Moab; verse 32 and 4:2 | 29-32 | deuteronomy/12.json `historical`, `literary` | Repository |
+| 2 Kings 16:3; Jeremiah 7:31; Ephesians 2:22 | 29-32 | deuteronomy/12.json `historical`, `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 12: that a newcomer to a land would ask how its gods were served; that Shiloh was the first place the ark rested in the land (narrowed to Jeremiah's words); that pouring out the blood was a way of ‘giving the life back’ (narrowed to the wording of the deep note).
+
+## The plain notes on Deuteronomy 13 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Prophets and dreamers in the ancient world, the Mari letters; a test beyond whether the sign works; the words of the Shema in verse 3; sarah, revolt, and treason against Israel's king; Esarhaddon's oath of 672 BC and the two datings; ba'ar | 1-5 | deuteronomy/13.json `historical`, `cultural`, `literary`, `words` (H5030, H5627, H1197I) | Repository; no side on the date |
+| 18:22; Matthew 24:24; 1 John 4:1; 1 Corinthians 5:13; John 7:12 | 1-5 | deuteronomy/13.json `christ`; BSB | Repository; BSB text |
+| The death penalty for leading others to other gods: the three points interpreters make; not given to the church; 2 Timothy 2:25; Matthew 13:30; no church or state may use it against anyone; the history of persecution named as a grave misreading | 1-5 | deuteronomy/13.json `hard`; guides/reading-law.json (‘Reading the laws that trouble modern readers’) | Repository; set in Israel's covenant |
+| The nearest ties; ‘secretly’; religion bound up with family and town; the accuser's hand first, against false charges, with 17:6 | 6-11 | deuteronomy/13.json `cultural`, `literary` | Repository |
+| Matthew 10:37; Luke 9:55; 1 Peter 3:1 | 6-11 | deuteronomy/13.json `christ`; BSB | Repository; BSB text |
+| No warrant to harm, shun or threaten a relative over belief; the care line reused whole | 6-11 | deuteronomy/13.json `hard`; 1-corinthians/plain/13.json and others (‘If you are being hurt, at home, at work or in a church’) | Repository; word for word |
+| The town is Israelite, the ban falling on Israel's own; inquiry and proof; nothing kept, so no profit; beliyya'al and 2 Corinthians 6:15; rarely carried out; Judges 19 to 21 | 12-18 | deuteronomy/13.json `cultural`, `words` (H1100G), `hard`; BSB (Judges 20:13; 21:3) | Repository; BSB text |
+| Judges 20:13; 2 Corinthians 10:4; John 18:36 | 12-18 | BSB | BSB text |
+
+Cut in chapter 13: a sentence that the prophets wept over Jerusalem under this law's judgment (no reference, and not in the repository's notes); that Judges tells the war with Benjamin ‘as a disaster’, narrowed to what Judges reports.
+
+## The plain notes on Deuteronomy 14 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Mourning rites of the ancient world, tied to the cult of the dead or to appeasing gods; Mount Carmel; Israel to grieve but not so; qadosh, holy by God's choice | 1-2 | deuteronomy/14.json `cultural`, `words` (H6918G) | Repository; the rites not described in detail |
+| Leviticus 19:28; 1 Kings 18:28; 1 Thessalonians 4:13; John 11:35 | 1-2 | BSB | BSB text |
+| The grief and crisis paragraph reused whole | 1-2 | an existing plain note's paragraph, whole (‘If your grief is so heavy that you cannot carry it, or you feel you do not want to go on ... The Find Help page on this site lists places to turn’) | Repository; word for word |
+| The shorter list for households; uncertain bird names; ‘unclean’ not sinful or dirty; verse 21 and the foreigner; the explanations (health, pagan rites, Douglas 1966, boundary); pig bones on the coast and in the hills; the young goat, Maimonides, compassion, meat and dairy | 3-21 | deuteronomy/14.json `historical`, `cultural`, `words` (H2931), `hard`; questions/old-testament/which-old-testament-laws.json (`evidence`) | Repository; no side |
+| ‘None of this treats the food laws as foolish...’; the Christians who keep them; Romans 14:3 | 3-21 | leviticus/plain/11.json 41-47 `hard` (the same sentences) | Repository; word for word |
+| Leviticus 11:44; Mark 7:18-19 with the pointer; Acts 10:15, 28; Romans 14:17 | 3-21 | deuteronomy/14.json `christ`; BSB | Repository; BSB text |
+| The tithe as a common payment; a family feast; the allowance for distance; the third-year tithe for those without land; Numbers 18's different stress | 22-29 | deuteronomy/14.json `cultural`, `literary`, `words` (H4643) | Repository |
+| Genesis 14:20; 28:22; Matthew 23:23; 2 Corinthians 9:7 | 22-29 | deuteronomy/14.json `words`, `christ`; BSB | Repository; BSB text |
+| Must Christians tithe: the two views, no side | 22-29 | leviticus/plain/27.json 26-34 `hard` (the same wording) | Repository; no side |
+
+Cut in chapter 14: that later Jewish practice counted separate tithes (not in the repository's notes); the wording of 1 Kings 18:28 beyond three words, so that the rite is not described.
+
+## The plain notes on Deuteronomy 15 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Debt as the road into poverty; the royal decrees of Mesopotamia, the Babylonian edict of the seventeenth century BC; release fixed by law; shemittah, forgiven or suspended; the foreigner of verse 3; the heart and the hand; evyon six times; Hillel's prosbul | 1-11 | deuteronomy/15.json `historical`, `cultural`, `literary`, `words` (H8059, H0034, H6605A) | Repository |
+| Nehemiah 10:31; Luke 4:18-19; Acts 4:34; 1 John 3:17 | 1-11 | deuteronomy/15.json `historical`, `christ`; BSB | Repository; BSB text |
+| Verse 4 and verse 11 together; verse 11 as the reason for generosity; Matthew 26:11 and Mark 14:7; never an excuse for neglect | 1-11 | deuteronomy/15.json `hard`, `christ`; BSB | Repository; BSB text |
+| Exodus 21:2-6 and what Deuteronomy adds; the provision at release; Exodus 12:35-36; the pierced ear; chophshi | 12-18 | deuteronomy/15.json `cultural`, `words` (H2670); BSB | Repository; BSB text |
+| Exodus 21:2; Jeremiah 34:16; Leviticus 25:10 | 12-18 | deuteronomy/15.json `historical`; BSB | Repository; BSB text |
+| Servitude faced: what the law permitted (Leviticus 25:44-46, ‘That is in the text, and it cannot be explained away’), what it limited, the critics' answer; the pointer to the Exodus 21 note | 12-18 | exodus/plain/21.json 1-6 `hard` (the same sentences); deuteronomy/15.json `hard`; guides/reading-law.json | Repository; not defended |
+| The care line reused whole | 12-18 | exodus/plain/21.json and leviticus/plain/25.json (‘A word for anyone who is being held, owned or forced to work today...’) | Repository; word for word |
+| The firstborn as God's, from the exodus; not worked or shorn; eaten at the sanctuary; the blemished animal | 19-23 | deuteronomy/15.json `cultural` | Repository |
+| Exodus 13:2; Malachi 1:8 | 19-23 | BSB | BSB text |
+
+## The plain notes on Deuteronomy 16 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Abib, March or April, the barley ears, Nisan; Exodus 12; leaven and the bread of affliction; the feasts and their seasons against other peoples' festivals; the Seder after AD 70, kept to this day | 1-8 | deuteronomy/16.json `historical`, `cultural`, `hard`, `words` (H6453) | Repository |
+| Exodus 12:11; Luke 2:41; 22:15; 1 Corinthians 5:7 | 1-8 | deuteronomy/16.json `christ`; BSB | Repository; BSB text |
+| Passover at home and at the sanctuary: the two readings, Josiah and 2 Kings 23:22, Numbers 9; the practice in the time of Jesus; no side | 1-8 | deuteronomy/16.json `hard` | Repository; no side |
+| The three feasts and the farming year; the Gezer Calendar, tenth century BC; Pentecost as the Greek name; booths and the wilderness, built today; joy commanded; the guest list; gifts in proportion | 9-17 | deuteronomy/16.json `historical`, `cultural`, `literary`, `words` (H2282, H5521), `christ` | Repository |
+| Leviticus 23:43; Acts 2:1; John 7:37 | 9-17 | deuteronomy/16.json `christ`; BSB | Repository; BSB text |
+| Chapters 16 to 18 on those in authority; the gate; bribes; tsedeq doubled; pole and pillar beside the altar, justice and worship together | 18-22 | deuteronomy/16.json `cultural`, `literary`, `words` (H6664G); deuteronomy/verses/18.json (verse 1) | Repository |
+| Exodus 23:8; Amos 5:12, 24; Micah 3:11 | 18-22 | deuteronomy/16.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 16: that ‘Pentecost’ comes from the Greek word for fifty (not checked in the repository's notes).
+
+## The plain notes on Deuteronomy 17 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The gate as courthouse; investigation; two or three witnesses; the witnesses' hands first; the rabbis' safeguards | 1-7 | deuteronomy/17.json `cultural`, `words` (H5707), `hard` | Repository |
+| 19:15; Matthew 18:16; 1 Timothy 5:19; John 8:7 | 1-7 | deuteronomy/17.json `christ`; BSB | Repository; BSB text |
+| The death penalty for worshiping other gods: Israel's covenant and treason; the safeguards; most traditions and the theonomists, rejected by most Reformed churches; no church or state may use it; the misuse named | 1-7 | deuteronomy/17.json `hard`; guides/reading-law.json (theonomy); deuteronomy/13.json `hard`; deuteronomy/plain/13.json 1-5 | Repository; set in Israel's covenant |
+| The higher court of priests and judge; the office and not a person; ‘presumptuously’; the right and the left in verses 11 and 20 | 8-13 | deuteronomy/17.json `literary`; BSB (5:32; 18:22) | Repository; BSB text |
+| 2 Chronicles 19:8 | 8-13 | BSB | BSB text |
+| Kingship in the ancient world; the king receives the law; horses, wives, silver and gold and what each meant; the copy written before the priests; the Greek rendering and the book's name | 14-20 | deuteronomy/17.json `historical`, `cultural`, `words` (H4428G, H8451); deuteronomy/intro.json `overview` | Repository |
+| 1 Samuel 8:5; 1 Kings 10:26-28; 11:3, and Kings written with this chapter in view; Zechariah 9:9 and Matthew 21:5 as a pattern, not a prediction; Mark 10:43 | 14-20 | deuteronomy/17.json `historical`, `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 17: a statement that the Hebrew word behind ‘countrymen’ is ‘brothers’ (not in the repository's notes; verse 15's ‘brothers’ is cited in its place).
+
+## The plain notes on Deuteronomy 18 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Levi without land; the portions as a right; nachalah, the LORD as inheritance; bachar as election to service; the country Levites protected; ‘the Levitical priests’ and the two views | 1-8 | deuteronomy/verses/18.json (verses 1 to 7); deuteronomy/18.json `cultural` | Repository; no side |
+| Psalm 16:5; 1 Corinthians 9:14 | 1-8 | deuteronomy/18.json `cultural`; BSB | Repository; BSB text |
+| The catalogue of divination, sorcery and consulting the dead; livers, lots, arrows, a learned profession in Mesopotamia; rites for the dead across the region; child sacrifice at the head of the list; what unites the list; tamim | 9-14 | deuteronomy/18.json `cultural`; deuteronomy/verses/18.json (verses 10, 11, 12-13) | Repository |
+| No warrant to harm anyone; the witch trials as a misuse | 9-14 | exodus/plain/22.json (the note on 22:18); leviticus/plain/20.json | Repository |
+| 1 Samuel 28:7; Isaiah 8:19; Acts 16:16 | 9-14 | deuteronomy/verses/18.json (verse 11); BSB | Repository; BSB text |
+| The prophet as God's answer; the request at Horeb (chapter 5); the definition in verse 18; ‘from among your brothers’ and 17:15; the two old Jewish readings; verse 20 as Israel's covenant law, no church or state; the negative test and its partner in chapter 13 | 15-22 | deuteronomy/verses/18.json (verses 15 to 22); deuteronomy/18.json `christ`, `hard` | Repository |
+| 34:10; Jeremiah 28:15; John 1:21; 6:14; Acts 3:22; Matthew 17:5 | 15-22 | deuteronomy/18.json `christ`; acts/plain/3.json 22-26; BSB | Repository; BSB text |
+| Who is the prophet: the Jewish reading (the offices, Rashi, Ibn Ezra, Maimonides, the objection); the Christian answer (34:10; 1 Maccabees, Qumran, the Samaritans; Acts 3 and 7); both held together; the Muslim reading and the reply from 17:15; the disagreement real | 15-22 | deuteronomy/18.json `hard` (first question) | Repository; each in its holders' terms |
+
+## The plain notes on Deuteronomy 19 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Blood vengeance where there was no police; the avenger surrounded with process; the axe as a case study; go'el; innocent blood; ‘show no pity’ as protection of the victim | 1-13 | deuteronomy/19.json `historical`, `literary`, `words` (H1350H, H5355A) | Repository |
+| Numbers 35:25; Joshua 20:7-8; Hebrews 6:18, the image not pressed; the pointer to the Numbers 35 note; no revenge today | 1-13 | deuteronomy/19.json `christ`, `historical`; numbers/plain/35.json | Repository; BSB text |
+| Boundary stones; Babylonian stones with curses; the land as God's allotment; gevul in verses 8 and 14 | 14 | deuteronomy/19.json `cultural`, `words` (H1366G) | Repository |
+| Proverbs 23:10-11; Hosea 5:10 | 14 | deuteronomy/19.json `cultural`; BSB | Repository; BSB text |
+| The rule widened from 17:6; the court before God; the false witness bears what he intended | 15-21 | deuteronomy/19.json `cultural`, `literary` | Repository |
+| 1 Kings 21:13; Mark 14:56; Matthew 5:39; Romans 12:19 | 15-21 | deuteronomy/19.json `christ`; BSB | Repository; BSB text |
+| ‘Eye for eye’: a rule for judges and a limit; Hammurabi and rank; Exodus 21:26-27; the Mishnah and payment; Matthew 5; Christians differ on criminal justice | 15-21 | deuteronomy/19.json `hard`, `historical`; guides/reading-law.json (‘Reading the laws that trouble modern readers’) | Repository; no side |
+
+Cut in chapter 19: ‘the ninth of the Ten Commandments’ (traditions number the ten differently, as the chapter 5 note says); that fields in Israel were not fenced.
+
+## The plain notes on Deuteronomy 20 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No standing army; the priest's speech opens with the Shema's words; the exemptions and the years a vineyard takes; fear spreads; Gideon | 1-9 | deuteronomy/20.json `historical`, `cultural`, `literary`, `words` (H3372G) | Repository |
+| Judges 7:3; Psalm 20:7; 2 Corinthians 10:4; Colossians 2:15 | 1-9 | deuteronomy/20.json `christ`; BSB | Repository; BSB text |
+| Assyrian inscriptions; shalom and the offer of peace, 2:26; forced labor, the killing of the men, women and children as plunder, stated and not defended; herem and Mesha's monument; Jericho and Ai, Rahab, Gibeon, Canaanites remaining | 10-18 | deuteronomy/20.json `historical`, `cultural`, `words` (H2763A, H7965G), `hard`; exodus/plain/21.json (‘That is in the text, and it cannot be explained away’) | Repository; not defended |
+| Joshua 10:40; 9:15; Isaiah 2:4; Matthew 26:52 | 10-18 | questions/old-testament/the-command-to-destroy-the-canaanites.json; deuteronomy/20.json `christ`; BSB | Repository; BSB text |
+| The readings of the command; the Bible's own limits; the rules for distant cities as the warfare of their age, no model; no warrant for violence, no nation, state or conflict today; the crusading and colonial misuse | 10-18 | deuteronomy/20.json `hard`; deuteronomy/plain/7.json 1-5 `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json; context/guides/the-violence-of-the-old-testament.json | Repository; handled as the site's live pages handle it; no side |
+| Orchards cut down in ancient war, the Assyrian reliefs; the law as a question; the trees that feed people | 19-20 | deuteronomy/20.json `historical`, `literary`, `words` (H6086H) | Repository |
+| Genesis 2:15; Micah 4:4 | 19-20 | BSB | BSB text |
+
+Cut in chapter 20: that Israel had few horses and chariots (not in the repository's notes).
+
+## The plain notes on Deuteronomy 21 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Unsolved killings in ancient law, Hammurabi; the town answerable before God; the elders' prayer; kipper | 1-9 | deuteronomy/21.json `historical`, `literary`, `words` (H3722A) | Repository |
+| Genesis 4:10; Numbers 35:33; Matthew 27:24 | 1-9 | BSB | BSB text |
+| The captive woman: women taken in war commonly raped or sold; the limits (the wait, the mourning, marriage, freedom, no sale); the signs of transition; ‘you have dishonored her’ | 10-14 | deuteronomy/21.json `cultural`, `hard` | Repository; not defended |
+| Genesis 1:27; Exodus 21:16; Matthew 19:8 | 10-14 | numbers/plain/31.json 25-47 `hard`; deuteronomy/21.json `hard`; BSB | Repository; BSB text |
+| What the law permits and what it limits; the two readings and the critics' answer; not a pattern; rape, forced marriage and the abuse of captives as grave evils | 10-14 | deuteronomy/21.json `hard`; numbers/plain/31.json 13-18 `hard` (‘Rape, forced marriage and the abuse of captives are grave evils’); exodus/plain/21.json 1-6 `hard` (the shape) | Repository; faced, not defended |
+| The care line reused whole | 10-14 | 1-thessalonians/plain/4.json, exodus/plain/22.json, numbers/plain/31.json (‘A word for anyone who has been sexually assaulted...’) | Repository; word for word |
+| Inheritance and the double share; polygamy permitted, never commanded; Jacob, Rachel and Leah | 15-17 | deuteronomy/21.json `cultural`, `words` (H1060) | Repository |
+| Genesis 29:30-31; 49:3 | 15-17 | BSB | BSB text |
+| The rebellious son: persistent defiance (sarar); a father's power in ancient societies taken from him; both parents, the elders, the gate; the Talmud's view (Sanhedrin 71a) that it was never carried out | 18-21 | deuteronomy/21.json `cultural`, `words` (H5637), `hard` | Repository |
+| Matthew 11:19, not connected by the New Testament itself; Luke 15:13, 20 | 18-21 | deuteronomy/21.json `christ`; BSB | Repository; BSB text |
+| No right to harm a child; the care line reused whole | 18-21 | deuteronomy/21.json `hard`; existing plain notes (‘If you are being hurt, at home, at work or in a church...’) | Repository; word for word |
+| Hanging as display of a body already dead; burial the same day; the Temple Scroll and crucifixion | 22-23 | deuteronomy/21.json `historical`, `words` (H7045) | Repository |
+| Joshua 8:29; John 19:31; Acts 5:30 with the pointer to the Acts 2:22-28 note; Galatians 3:13-14 as the New Testament's own reading | 22-23 | deuteronomy/21.json `christ`, `historical`; deuteronomy/intro.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 21: that the captive woman's parents were ‘probably dead’; that the Hebrew verb in verse 14 is ‘a strong one’; that the rebellious son was ‘wasting the family's living’; that the soldier ‘may not touch her on the battlefield’ (narrowed to ‘He must wait a full month’).
+
+## The plain notes on Deuteronomy 22 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘You must not ignore it’ as ‘you shall not hide yourself’ (alam); the three repetitions; the village world of small farms | 1-4 | deuteronomy/22.json `historical`, `literary`, `words` (H5956) | Repository |
+| Exodus 23:4; Luke 10:31-32; 15:4 | 1-4 | deuteronomy/22.json `words`, `christ`; BSB | Repository; BSB text |
+| Flat roofs and their uses; ma'aqeh only here; the mixtures and the two explanations, the ox and donkey; the tassels and Numbers 15, worn today | 5-12 | deuteronomy/22.json `historical`, `cultural`, `words` (H4624); guides/reading-law.json (the roof railing) | Repository |
+| Verse 5: set among the laws of distinct kinds; no reason given in the verse; no application argued; ‘nothing here gives anyone a reason for contempt toward any person’ | 5-12 | BSB (the verse itself); deuteronomy/22.json `cultural` (the laws of kinds); romans/plain/1.json (the respect sentence) | Repository; no modern application argued |
+| Numbers 15:39; Matthew 9:20; Matthew 10:29 | 5-12 | deuteronomy/22.json `christ`; BSB | Repository; BSB text |
+| The slandered bride: the cloth kept by the family; the hundred shekels, double the bride-price; the bar on divorce as protection; the hearing at the gate | 13-21 | deuteronomy/22.json `cultural`, `hard` | Repository |
+| Matthew 1:19; John 8:11 | 13-21 | BSB | BSB text |
+| Verses 20-21 faced: uneven, severe, beside a protection; Israel's national law, not the church's; no warrant to shame or harm; the care line reused whole | 13-21 | deuteronomy/22.json `hard`; existing plain notes (‘If you are being hurt, at home, at work or in a church...’) | Repository; word for word |
+| Betrothal as binding; the woman in the field held innocent, the comparison with murder, the benefit of the doubt, tsa'aq; other ancient law collections; nevalah and Tamar | 22-30 | deuteronomy/22.json `historical`, `words` (H6817, H5039) | Repository |
+| 2 Samuel 13:12, 14, 20; Psalm 72:12; Psalm 34:18 | 22-30 | deuteronomy/22.json `words`, `christ`; BSB | Repository; BSB text |
+| Verses 28-29: what readers have said (the woman's future and the man's cost; Exodus 22:17 and the father's refusal; the verb debated against verse 25); the difficulty not removed; nothing here asks any victim to marry, stay with or return to anyone | 22-30 | deuteronomy/22.json `hard`; exodus/plain/22.json 16-17 `hard` (‘These verses must never be used to press anyone into marrying a person who has harmed them’) | Repository; not explained away |
+| The care line reused whole | 22-30 | exodus/plain/22.json 16-17 and others (‘A word for anyone who has been sexually assaulted...’) | Repository; word for word |
+
+Cut in chapter 22: a reason for letting the mother bird go (the verse gives none, and the repository's notes give none); 2 Corinthians 6:14 as an echo of the ox and the donkey (not in the repository's notes); any account of what verse 5 had in view in its own world (the repository's notes give none); a new sentence about a person's worth, which was not an existing care line.
+
+## The plain notes on Deuteronomy 23 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The assembly (qahal) as the gathered body, not the population; exclusion not expulsion; verse 1 and the two explanations; the uncertain word of verse 2 and Jewish tradition; Balaam (Numbers 22 to 24); Ammon and Moab through Lot, Edom through Esau; chapter 2 on their lands | 1-8 | deuteronomy/23.json `historical`, `cultural`, `words` (H6951); deuteronomy/2.json | Repository; nothing contemptuous of any people |
+| Ruth 1:16; 4:17; Matthew 1:5; Nehemiah 13:3; Isaiah 56:3, 5, 7; Acts 8:36 | 1-8 | deuteronomy/23.json `christ`, `hard`; BSB | Repository; BSB text |
+| Ruth and verse 3: the three answers (the Mishnah; assembly and not marriage; a counterpoint); Nehemiah and Ruth both held | 1-8 | deuteronomy/23.json `hard` | Repository; no side |
+| Verses 1 and 2 beside Isaiah 56; ‘Every person, with any disability or illness, is made by God and is precious to him. No one is a mistake.’ | 1-8 | leviticus/plain/21.json 16-24 `hard` (the same two sentences); deuteronomy/23.json `christ` | Repository; word for word |
+| The camp laws; uncleanness of Leviticus 15, not sin or shame; ‘the LORD your God walks throughout your camp’ as the one reason | 9-14 | deuteronomy/23.json `literary`; leviticus/plain/15.json | Repository |
+| Leviticus 26:12; 2 Corinthians 6:16; Genesis 3:8 | 9-14 | BSB | BSB text |
+| The escaped slave: ancient law on the owner's side, Hammurabi; foreign masters, on most readings | 15-16 | deuteronomy/23.json `historical`; exodus/plain/21.json 1-6 `hard`; guides/reading-law.json | Repository |
+| 5:15; Philemon 1:16 | 15-16 | BSB | BSB text |
+| Servitude limited and not abolished; the care line reused whole | 15-16 | exodus/plain/21.json and leviticus/plain/25.json (‘A word for anyone who is being held, owned or forced to work today...’) | Repository; word for word |
+| Qedeshah and the root ‘holy’, the debate about sacred prostitution; neshek, ‘to bite’, loans of desperation, the foreigner as trader; vows free but binding; permission and limit in the field | 17-25 | deuteronomy/23.json `cultural`, `literary`, `words` (H5392, H5087, H6948) | Repository |
+| Psalm 15:5; Ecclesiastes 5:5; Matthew 5:37; Mark 2:23 | 17-25 | deuteronomy/23.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 23: that treaties between kings required runaways to be returned; a sentence on how defenders and opponents of slavery later used verses 15-16; that Edom refused Israel passage (chapter 2 of this book tells it differently); that the verb ‘walk’ is the same Hebrew word as in Genesis 3 (narrowed to what the verses say); ‘runaway’ of Onesimus.
+
+## The plain notes on Deuteronomy 24 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The law regulates one case and commands only verse 4; the certificate as protection, keritut; ‘some indecency’ (ervah), probably not adultery; Shammai and Hillel (m. Gittin 9:10); why the first husband may not take her back, the readings | 1-4 | deuteronomy/24.json `historical`, `words` (H6172, H3748), `hard`; matthew/plain/19.json 1-9 | Repository; no side |
+| Malachi 2:16; Matthew 19:6-8 | 1-4 | matthew/plain/19.json 1-9; BSB | Repository; BSB text |
+| Divorce and remarriage: the Catholic, Orthodox and Protestant positions; what all share; no decision | 1-4 | matthew/plain/19.json 1-9 `hard` (the same sentences) | Repository; as the existing note reads Matthew 19; no side |
+| The care paragraph reused whole | 1-4 | an existing plain note's paragraph, whole (‘Nothing in this passage asks anyone to stay where they or their children are in danger ... The Find Help page on this site lists places to turn’) | Repository; word for word |
+| The year at home; the hand mill; kidnapping and Exodus 21:16; Miriam (Numbers 12) as one story, not a rule about illness | 5-9 | deuteronomy/24.json `cultural`, `literary`; exodus/plain/21.json 1-6 `hard`; numbers/plain/12.json | Repository |
+| Exodus 21:16; 1 Timothy 1:10; Job 24:3 | 5-9 | BSB | BSB text |
+| Sunset in both laws; the lender outside the house; the cloak as a blanket; day laborers and their pay; avot | 10-15 | deuteronomy/24.json `cultural`, `literary`, `words` (H5667) | Repository |
+| Leviticus 19:13; James 5:4; Matthew 20:8-9 | 10-15 | deuteronomy/24.json `christ`; BSB | Repository; BSB text |
+| Verse 16 and the conscience it forms; the three groups named together; gleaning by the poor's own labor; the frame of verses 18 and 22 | 16-22 | deuteronomy/24.json `historical`, `cultural`, `literary`, `words` (H2142); questions/old-testament/the-command-to-destroy-the-canaanites.json (`shortAnswer`) | Repository |
+| 2 Kings 14:6; Ezekiel 18:4; Ruth 2:2, 16 | 16-22 | deuteronomy/24.json `historical`, `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 24: a remark on the Hebrew wording of verse 15; the pointer to the Honest Answer on divorce at the end of the care paragraph (the paragraph is used in its other existing form, which ends at Find Help).
+
+## The plain notes on Deuteronomy 25 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Fairness and dignity as the chapter's thread; the three limits on a beating; ‘your brother’, not degraded; forty less one; threshing and the muzzle | 1-4 | deuteronomy/25.json `cultural`, `literary`, `christ` | Repository |
+| 2 Corinthians 11:24 with the pointer, no charge against the Jewish people; 1 Corinthians 9:9 and the two readings of Paul's use | 1-4 | 2-corinthians/plain/11.json `hard`; guides/reading-law.json (‘Two ways of giving law’); BSB | Repository; BSB text |
+| Levirate marriage, the name, parallels elsewhere; name and land through sons; the widow's support; yabam as a duty; the refusal, the sandal, the shame; the law's world | 5-10 | deuteronomy/25.json `historical`, `cultural`, `words` (H2993, H5275) | Repository |
+| Genesis 38:8; Ruth 4:7, 10; Matthew 1:3, 5; Matthew 22:30 | 5-10 | deuteronomy/25.json `christ`, `historical`; BSB | Repository; BSB text |
+| Weights as stones in a bag, ‘a stone and a stone’; measures; the fraud; ‘detestable’ | 11-16 | deuteronomy/25.json `cultural`, `words` (H0068H) | Repository |
+| Amos 8:5; Proverbs 11:1 | 11-16 | deuteronomy/25.json `cultural`, `words`; BSB | Repository; BSB text |
+| Verses 11-12: the only penalty of its kind; the offense and the name; the rabbinic reading as payment and the literal reading; not settled; no warrant to harm anyone | 11-16 | deuteronomy/25.json `hard` | Repository; harshness admitted |
+| Amalek: a people of the southern desert; Exodus 17; the stragglers; remember and blot out, the two-word command; the Jewish reading of the command as a charge to resist cruelty | 17-19 | deuteronomy/25.json `historical`, `literary`, `words` (H6002G), `hard` | Repository |
+| Exodus 17:14; 1 Samuel 15; Esther 3:1 and Agag | 17-19 | deuteronomy/25.json `historical`; BSB | Repository; BSB text |
+| How the command is read: the readings of the conquest with the pointers to chapters 7 and 20; no side; no people today is Amalek; no warrant for violence or contempt | 17-19 | deuteronomy/25.json `hard`; deuteronomy/plain/7.json 1-5; questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; no side |
+
+Cut in chapter 25: the reason for thirty-nine lashes (‘a miscount’); that the name Amalek was later used of enemies to justify killing, and that the Amalekites ‘vanished long ago’ (neither is in the repository's notes); that Tamar was wronged ‘by the whole family’.
+
+## The plain notes on Deuteronomy 26 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Firstfruits and the spoken confession; the story as a compact confession, its age questioned; the wandering Aramean as Jacob, ‘wandering’ or ‘perishing’; the pronouns; the shared joy | 1-11 | deuteronomy/26.json `historical`, `cultural`, `literary`, `words` (H7225G, H0761J); deuteronomy/6.json `literary` (von Rad) | Repository |
+| Exodus 2:24; Proverbs 3:9; 1 Corinthians 15:20 | 1-11 | deuteronomy/26.json `christ`; BSB | Repository; BSB text |
+| The third-year tithe (14:28-29); ‘the sacred portion’; the three denials and food for the dead in the ancient world; the prayer | 12-15 | deuteronomy/26.json `cultural`, `literary`, `words` (H4643) | Repository |
+| Psalm 26; Luke 18:11-12 | 12-15 | deuteronomy/26.json `hard`; BSB | Repository; BSB text |
+| Verse 14 and pride: narrow and specific; after a confession of gift; ending in prayer; contempt as the danger | 12-15 | deuteronomy/26.json `hard` | Repository |
+| The two ‘today’ declarations mirroring a covenant; segullah; the Shema's words; honor above the nations read with chapters 7 and 9, no claim for any nation today | 16-19 | deuteronomy/26.json `literary`, `words` (H5459); deuteronomy/plain/7.json 6-11; deuteronomy/plain/9.json 1-6 | Repository |
+| Exodus 19:5; Jeremiah 31:33; 1 Peter 2:9 with the pointer to the 1 Peter 2 note | 16-19 | deuteronomy/26.json `christ`; 1-peter/plain/2.json `hard`; BSB | Repository; BSB text; no side |
+
+## The plain notes on Deuteronomy 27 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ebal and Gerizim at Shechem, the place of the first promise; writing on plastered stone; royal monuments and this one; the altar of uncut stones and the two reasons proposed; ‘this day’ | 1-10 | deuteronomy/27.json `historical`, `cultural`, `literary`, `words` (H4196) | Repository |
+| Joshua 8:30, 32; Exodus 20:25; Jeremiah 31:33 | 1-10 | deuteronomy/27.json `cultural`; BSB | Repository; BSB text |
+| A curse as a declaration of God's judgment; ‘cursed’ twelve times, perhaps one for each tribe; acts done in secret beyond any court; Amen and its root; whom the list protects; the summary curse | 11-26 | deuteronomy/27.json `cultural`, `literary`, `words` (H0779, H0543) | Repository |
+| The care line reused whole | 11-26 | existing plain notes (‘If you are being hurt, at home, at work or in a church...’) | Repository; word for word |
+| Joshua 8:34; Leviticus 19:14; Galatians 3:10, 13; Romans 2:16 | 11-26 | deuteronomy/27.json `christ`, `hard`; BSB | Repository; BSB text |
+| Only curses recorded: the two explanations; Joshua 8; not words to speak over anyone today | 11-26 | deuteronomy/27.json `hard`; leviticus/plain/26.json `hard` | Repository |
+
+Cut in chapter 27: two new sentences addressed to anyone harmed in secret (not an existing care line; the existing line is used alone); the Samaritan reading of verse 4 and the structure Adam Zertal excavated on Mount Ebal are left to the deep note.
+
+## The plain notes on Deuteronomy 28 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The treaty ending; the blessings as the whole of life; rain; head and tail; blessing as God's active favor; addressed to the nation; verse 10 and chapter 4; the three ‘if’s | 1-14 | deuteronomy/28.json `historical`, `cultural`, `literary`, `words` (H1293) | Repository |
+| Genesis 12:3; Matthew 5:3-4; Ephesians 1:3 | 1-14 | deuteronomy/28.json `christ`; BSB | Repository; BSB text |
+| Health and wealth: Job 42:7, Psalm 73, Ecclesiastes; the two Christian readings; the prosperity gospel refused; John 16:33 | 1-14 | deuteronomy/28.json `hard` | Repository |
+| Fifty-four verses and fourteen (counted); the curse as blessing reversed; bronze sky and iron earth, Esarhaddon 672 BC; Israel's story undone; 722 BC and 587 or 586 BC as Israel's own prophets and historians read them | 15-46 | deuteronomy/28.json `historical`, `cultural`, `literary`, `words` (H7045); BSB (verse count; 31:27-29) | Repository; BSB text |
+| 2 Kings 17:23; 25:21; Daniel 9:11; Leviticus 26:44; Galatians 3:13 | 15-46 | deuteronomy/28.json `christ`; BSB | Repository; BSB text |
+| The two misuses named and refused: never God's verdict on a person's illness, poverty or loss (Job 1:8; John 9:3; the Leviticus 26 sentences); never a prediction or explanation of the Jewish people's later sufferings, that reading false and rejected; 30:1-10; Romans 11:1; the pointer to the Acts 2:22-28 note | 15-46 | leviticus/plain/26.json 14-39 `hard` (the same sentences); acts/plain/2.json 22-28 `hard`; deuteronomy/28.json `hard` | Repository; word for word where reused |
+| The grief line reused whole | 15-46 | leviticus/plain/26.json 14-39 `hard` (‘Grief is not a lack of faith...’) | Repository; word for word |
+| Verse 47; siege (matsor); the eagle as Assyria and Babylon in the prophets; the story run backward; chapter 30 follows | 47-68 | deuteronomy/28.json `cultural`, `literary`, `words` (H4692) | Repository; the siege verses not dwelt on |
+| Lamentations 3:22-23; Deuteronomy 30:3; Luke 19:41 | 47-68 | deuteronomy/28.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 28: the Roman destruction of Jerusalem in AD 70 and Josephus's report of captives sent to Egypt, as fulfillments of this chapter (left out, as in Leviticus 26, so that the chapter is not read as a prediction of later Jewish suffering); a sentence that the false reading was used to excuse expulsion and violence (the Acts 2 note says this of another charge; the pointer is given in its place); the details of verses 53-57.
+
+## The plain notes on Deuteronomy 29 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The covenant of Horeb renewed in Moab; the historical prologue as in treaties; verse 4 as a confession of need; lev; 30:6 | 1-9 | deuteronomy/29.json `literary`, `words` (H1285, H3820A), `hard` | Repository |
+| Mark 8:18; Romans 11:8 with 11:1 and the pointer to the Romans 11 note; Ezekiel 36:26 | 1-9 | deuteronomy/29.json `christ`; BSB | Repository; BSB text |
+| Verse 4 and blame: the Reformed and the Wesleyan and Arminian readings; the confession of need; no side | 1-9 | deuteronomy/29.json `hard` | Repository; no side |
+| Covenant-making as a public oath; the list from leaders to woodcutters; ‘today’; those not here as later generations | 10-15 | deuteronomy/29.json `cultural`, `literary` | Repository |
+| Joshua 9:21; Acts 2:39; Luke 22:20 | 10-15 | deuteronomy/29.json `christ`; BSB | Repository; BSB text |
+| The root and the bitter plant; the man who blesses himself; the imagined dialogue; the two datings of verses 22-28; how such passages may be used | 16-28 | deuteronomy/29.json `historical`, `cultural`, `literary`; deuteronomy/plain/28.json 15-46 `hard` | Repository; no side on the date |
+| Jeremiah 22:8; 7:10; Hebrews 12:15 | 16-28 | deuteronomy/29.json `christ`; BSB | Repository; BSB text |
+| Verse 20: settled defiance and not a person who wants to return; 30:1-3; 4:29; the care line reused whole | 16-28 | hebrews/plain/3.json 12-15 and numbers/plain/14.json 26-38 (‘If you are afraid that you have fallen away from God...’); BSB | Repository; word for word |
+| The secret things (satar) and the things revealed; inquiry not forbidden; the dots in the Hebrew manuscripts | 29 | deuteronomy/29.json `cultural`, `literary`, `words` (H5641) | Repository |
+| Isaiah 55:9; Romans 11:33; Psalm 131:1 | 29 | BSB | BSB text |
+
+## The plain notes on Deuteronomy 30 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘When’, not ‘if’; shuv of Israel and of God; the farthest horizon; 10:16 and 29:4 answered by verse 6; circumcision and the heart; exiled Jews read it as promise; the two views of when it was written | 1-10 | deuteronomy/30.json `historical`, `cultural`, `literary`, `words` (H7725G, H4135A) | Repository; no side on the date |
+| Nehemiah 1:9; Jeremiah 29:14; Romans 2:29; Luke 15:17, 20 | 1-10 | deuteronomy/30.json `christ`; BSB | Repository; BSB text |
+| The will of God not hidden; diviners and omens (chapter 18); ‘in your mouth’ and ‘in your heart’; qarov, near, not easy; the Jewish reading of the Torah as a gift that can be lived | 11-14 | deuteronomy/30.json `words` (H7138), `hard`; deuteronomy/18.json `cultural` | Repository |
+| 4:7; Romans 10:6-8, Paul reading the passage in the light of Christ | 11-14 | romans/plain/10.json 5-13 (`ot`, the same sentences); deuteronomy/30.json `christ`; BSB | Repository; as the existing Romans 10 note reads it |
+| 29:4 and 30:11: the readings; Paul's use, and whether he sets law against faith, with the pointer to the Romans 10 note; the Jewish reading and the real disagreement | 11-14 | deuteronomy/30.json `hard`; romans/plain/10.json 5-13 `hard` | Repository; no side |
+| Heaven and earth as witnesses; ‘choose life’; ‘He is your life’; davaq; bachar, God's choosing and Israel's; verse 6 and verse 19 held together | 15-20 | deuteronomy/30.json `cultural`, `literary`, `words` (H0977); deuteronomy/10.json `words` (H1692) | Repository |
+| Joshua 24:15; Isaiah 1:2; John 14:6; 10:10 | 15-20 | deuteronomy/30.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 30: that the will of the gods ‘was never certain’ in ancient religion, narrowed to what the chapter 18 note says; that Moses would be dead ‘within days’.
+
+## The plain notes on Deuteronomy 31 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The refrain three times and in Joshua 1; chazaq and amats; azav of God's promise and of Israel's turning; the public commissioning | 1-8 | deuteronomy/31.json `literary`, `words` (H2388G, H5800A) | Repository |
+| Joshua 1:5; Hebrews 13:5; Matthew 28:20 | 1-8 | deuteronomy/31.json `christ`; BSB | Repository; BSB text |
+| Treaties deposited and read at set times; the seventh year and the Feast of Tabernacles; the broad audience; public reading where few could read | 9-13 | deuteronomy/31.json `cultural` | Repository |
+| 2 Kings 22:8 and the identification many scholars make; Nehemiah 8:2-3; 1 Timothy 4:13 | 9-13 | deuteronomy/31.json `historical`; BSB | Repository; BSB text |
+| The marriage picture of verse 16; ‘hide My face’ as withdrawal of favor, about a nation's idolatry and not every believer's sense of distance; yetser; a song remembered where scrolls are lost; the song as witness | 14-23 | deuteronomy/31.json `cultural`, `literary`, `words` (H5707, H3336) | Repository |
+| Psalm 44:24; Acts 20:29 | 14-23 | BSB | BSB text |
+| If God knew: the two answers; both traditions; God's persistence as grace; no ground for contempt of the Jewish people | 14-23 | deuteronomy/31.json `hard`; numbers/intro.json teaching (‘How the New Testament reads Numbers’) | Repository; no side |
+| The ark and the book beside it; the two witnesses; Moses' bluntness as an Israelite to Israelites | 24-30 | deuteronomy/31.json `cultural`, `literary` | Repository |
+| 2 Kings 22:11; John 5:46 | 24-30 | questions/old-testament/who-wrote-the-first-five-books.json (`evidence`); BSB | Repository; BSB text |
+
+Cut in chapter 31: a sentence that a king who turned his face away had stopped listening (not in the repository's notes).
+
+## The plain notes on Deuteronomy 32 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Parallel lines; songs as memory; the covenant lawsuit shape, used by the prophets; the Rock (tsur) five times; verses 8-9 and the differing copies | 1-14 | deuteronomy/32.json `cultural`, `literary`, `words` (H6697H); deuteronomy/plain/4.json 15-31 `hard` | Repository |
+| Exodus 19:4; Psalm 18:2; 17:8; Isaiah 1:2 | 1-14 | deuteronomy/32.json `cultural`, `words`; BSB | Repository; BSB text |
+| Jeshurun, ‘upright’, used with irony; fullness as the danger (chapter 8); the judgments fall on Israel; the turn at verses 26-27 and Moses' own plea (9:28); verse 21 and the nations; Israel's own Scripture, no ground for contempt | 15-33 | deuteronomy/32.json `literary`, `words` (H3484, H7065), `hard`; deuteronomy/plain/28.json 15-46 `hard` | Repository |
+| Hosea 13:6; Romans 10:19 with 11:1; Philippians 2:15 | 15-33 | deuteronomy/32.json `christ`; BSB | Repository; BSB text |
+| Compassion when strength is gone; verse 39; naqam as a judge's act, kept for God; the nations called to rejoice; the longer form of verse 43 in a Dead Sea Scroll and the Greek | 34-43 | deuteronomy/32.json `literary`, `words` (H5359), `christ` | Repository |
+| 1 Samuel 2:6; Romans 12:19; 15:10; Revelation 15:3 | 34-43 | deuteronomy/32.json `christ`; BSB | Repository; BSB text |
+| The violent imagery: poetry; judgment on Israel itself; vengeance taken out of human hands; the compassionate ending; the two emphases; no license for violence | 34-43 | deuteronomy/32.json `hard` | Repository |
+| Moses and Joshua together; ‘take to heart’ and chapter 6; the words as life (30:20) | 44-47 | deuteronomy/32.json `literary`; BSB | Repository; BSB text |
+| 8:3; John 6:63 | 44-47 | BSB | BSB text |
+| Meribah (Numbers 20); ‘on account of you’ three times (1:37; 3:26; 4:21) and verse 51; Aaron on Mount Hor; Nebo across from Jericho; what softens the scene | 48-52 | deuteronomy/32.json `historical`; deuteronomy/1.json `hard`; deuteronomy/34.json `hard` | Repository |
+| Numbers 20:12; Psalm 106:32-33; 99:8; Matthew 17:3 | 48-52 | deuteronomy/3.json `christ`; BSB | Repository; BSB text |
+| Why Moses was kept out: the readings (the public act; the people's account; the softening; Hebrews and the law's limits); not chosen among; not a rule about any person's losses | 48-52 | deuteronomy/34.json `hard` | Repository; no side |
+
+Cut in chapter 32: that the Old Testament seldom calls God Father; that ‘the apple of the eye’ is the pupil; the meaning of the Hebrew word behind ‘idle’; a gloss on ‘gathered to your people’ (none of these is in the repository's notes).
+
+## The plain notes on Deuteronomy 33 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A father's last blessing in the ancient world; Genesis 48 to 49; ‘the man of God’ as a prophet's title; the opening hymn; Jeshurun used with honor | 1-5 | deuteronomy/33.json `cultural`, `literary`, `words` (H1293, H3484) | Repository |
+| Genesis 49:28; Psalm 90:1; Psalm 33:12 | 1-5 | deuteronomy/33.json `words`; BSB | Repository; BSB text |
+| The sayings' lengths and animal pictures; Levi and the golden calf, teaching first; Urim and Thummim; Joseph as two tribes and the richness of the land; Simeon absent (Joshua 19:1-9); sayings that seem to assume settlement, the two views | 6-25 | deuteronomy/33.json `historical`, `cultural`, `literary` | Repository; no side |
+| Genesis 49:10; Hebrews 7:14; Exodus 32:26; Malachi 2:7 | 6-25 | deuteronomy/33.json `christ`, `cultural`; BSB | Repository; BSB text |
+| The closing hymn; meonah, a refuge or den, and Psalm 90; yasha and the names Joshua and Jesus; the enemies and the pointer to chapter 7; ‘Who is like you’ no boast | 26-29 | deuteronomy/33.json `literary`, `words` (H4585, H3467), `christ`; deuteronomy/plain/7.json | Repository |
+| Psalm 90:1; Isaiah 46:4; Romans 8:39 | 26-29 | BSB | BSB text |
+
+Cut in chapter 33: that the burning bush is mentioned nowhere else in the Old Testament outside Exodus; that the mountains of verse 2 lie along the road from Sinai; a picture of a child on a parent's shoulders for verse 12 (none is in the repository's notes).
+
+## The plain notes on Deuteronomy 34 (2026-11-21)
+
+`client/public/bible/notes/deuteronomy/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each). With this chapter the plain notes cover all five books of Moses.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Nebo's traditional place, the view toward Jericho; Pisgah; the circle of places; the sight as given by God; the promise sworn to the fathers | 1-4 | deuteronomy/34.json `historical` | Repository |
+| Genesis 12:7; Hebrews 11:13 | 1-4 | BSB | BSB text |
+| ‘The servant of the LORD’ (eved); God buries him; burial in the ancient world and the cave of the fathers; no shrine; thirty days, as for Aaron | 5-8 | deuteronomy/34.json `cultural`, `literary`, `words` (H5650) | Repository |
+| Joshua 1:2; Hebrews 3:5; Luke 9:30-31 | 5-8 | deuteronomy/34.json `christ`; BSB | Repository; BSB text |
+| The grief line reused whole | 5-8 | leviticus/plain/26.json 14-39 `hard` (‘Grief is not a lack of faith...’) | Repository; word for word |
+| The laying on of hands (samakh); wisdom (chokhmah); ‘face to face’ (panim), Exodus 33:11 and 33:20, Numbers 12:6-8; ‘since that time’ as a backward look; 18:15 left open | 9-12 | deuteronomy/34.json `cultural`, `literary`, `words` (H5564, H2451, H6440H), `christ` | Repository |
+| Exodus 33:11; Numbers 27:18; John 6:14; Acts 3:22 with the pointer to chapter 18; Hebrews 3:5-6 | 9-12 | deuteronomy/34.json `christ`; deuteronomy/plain/18.json 15-22; BSB | Repository; BSB text |
+| Who wrote of the death of Moses: the Talmud and the last eight verses; a later editor; ‘to this day’; most readers, including many who hold to Moses' authorship; the wider question left open with the pointers | 9-12 | deuteronomy/34.json `historical`; deuteronomy/intro.json `author`; questions/old-testament/who-wrote-the-first-five-books.json | Repository; no side |
+
+Cut in chapter 34: a remark on the Hebrew wording of verse 5 (‘at the mouth of the LORD’) and that no one else was present at the burial (neither is in the repository's notes); Jude 1:9 and the dispute over the body of Moses are left to the deep note.
+
+Reworded after commit in chapter 21 (2026-11-21): two sentences that began ‘Here is what the law’ in the hard note on 21:10-14 now read ‘The law permits a great deal.’ and ‘The law also sets limits.’, since that opening counts as signposting.
+
+Reworded after commit in chapter 6 (2026-11-21): a word-for-word gloss of 6:4 that contained ‘our’ and an imagined speech in the first person were removed, so that the first-person scan over the whole book reads 0.

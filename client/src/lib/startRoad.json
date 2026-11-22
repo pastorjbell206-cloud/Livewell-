@@ -1,5 +1,5 @@
 {
-  "$comment": "The five roads on /start (client/src/pages/Start.tsx), one for each person the site is for, and the row of chips on Home that opens them (/start#<id>). Each road is four to six steps in order, one sentence and one link each, and every link is a page that exists and is public today. A step names the page and why it comes next; it promises nothing and teaches nothing. The 'new' road is the six steps /start has carried since 2026-11, unchanged. 'next' and 'quiz' follow the 'new' road. scripts/prerender-heads.mjs reads this file for the page's crawlable list and for Home's static chips, and start.test.tsx checks every link and count against the site's own data.",
+  "$comment": "The five roads on /start (client/src/pages/Start.tsx), one for each person the site is for, and the row of chips on Home that opens them (/start#<id>). Each road is four to six steps in order, one sentence and one link each, and every link is a page that exists and is public today. A step names the page and why it comes next; it promises nothing and teaches nothing. The 'new' road is the six steps /start has carried since 2026-11, unchanged; its 'track' names the track that road has become (client/public/tracks/, held to the tracks index by start.test.tsx), which /start offers as the road's main action with the six steps kept under it. 'next' and 'quiz' follow the 'new' road. scripts/prerender-heads.mjs reads this file for the page's crawlable list and for Home's static chips, and start.test.tsx checks every link and count against the site's own data.",
   "roads": [
     {
       "id": "skeptical",
@@ -52,6 +52,10 @@
       "title": "New to faith, or coming back",
       "note": "Six first steps",
       "plate": "tree",
+      "track": {
+        "slug": "new-to-this",
+        "sessions": 12
+      },
       "steps": [
         {
           "title": "Read the Gospel of John",

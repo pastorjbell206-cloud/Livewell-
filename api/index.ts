@@ -22,6 +22,10 @@ import { ESSAY_OVERRIDES } from "../client/src/lib/essayOverrides.generated.js";
 // The newest Substack titles (substack.latest): titles, dates and links only,
 // [] on any failure. Pure and dependency-free; the dev router uses the same file.
 import { createSubstackCache } from "../shared/substackLatest.js";
+// Gifts (/support): the amounts, the one check and the Stripe request, shared
+// with the dev router (server/giving-router.ts); and the page's own switch.
+import { GIVING_CLOSED_MESSAGE, checkGift, giftCheckoutParams } from "../shared/giving.js";
+import GIVING_FACTS from "../client/src/lib/giving.json" with { type: "json" };
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -1634,6 +1638,7 @@ const MUTATION_PROCS = new Set<string>([
   "feedSync.syncAll", "feedSync.syncSource",
   "adminNotifications.markAsRead",
   "stripe.createMembershipCheckout", "stripe.createCheckoutSession",
+  "giving.createCheckout",
   "files.upload", "files.updateDescription", "files.delete",
 ]);
 
@@ -2386,6 +2391,34 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
           )
         ).catch((err: any) => console.error("[stripe] purchase record failed:", err?.message));
         return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
+      }
+
+      // ─── Gifts (/support). Mirrors server/giving-router.ts. ─────────
+      // Two gates: the switch in client/src/lib/giving.json and a real
+      // STRIPE_SECRET_KEY. Nothing is stored and nothing about the giver or
+      // the gift is logged; Stripe holds the record.
+      case "giving.status": {
+        return trpcOk(res, { open: GIVING_FACTS.open === true && stripeConfigured() });
+      }
+      case "giving.createCheckout": {
+        const stripe = getStripe();
+        if (GIVING_FACTS.open !== true || !stripe || !stripeConfigured()) {
+          return trpcErr(res, "BAD_REQUEST", GIVING_CLOSED_MESSAGE, 400);
+        }
+        const checked = checkGift(input);
+        if (!checked.ok) return trpcErr(res, "BAD_REQUEST", checked.error, 400);
+        let sessionUrl = "";
+        try {
+          // The site's own address comes from the request, never from the page's input.
+          const session = await stripe.checkout.sessions.create(giftCheckoutParams(checked.gift, siteOrigin(req)));
+          sessionUrl = session.url || "";
+        } catch {
+          console.error("[giving] the checkout could not be started");
+        }
+        if (!sessionUrl) return trpcErr(res, "INTERNAL_SERVER_ERROR", "The gift could not be started. Nothing was charged.", 500);
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
+        res.setHeader("Cache-Control", "no-store");
+        return res.status(200).send(JSON.stringify([{ result: { data: superjson.serialize({ sessionUrl }) } }]));
       }
 
       // ─── Files (admin; scoped to the admin user) ───────────────────
