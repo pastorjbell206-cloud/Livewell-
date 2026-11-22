@@ -1815,5 +1815,10 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 6,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-money-the-root-of-all-evil": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
