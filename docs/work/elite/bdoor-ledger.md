@@ -15486,3 +15486,23 @@ Cut in chapter 22: Geliloth and its possible link with Gilgal; the word for ‘r
 | 1 Kings 2:2; 2 Corinthians 1:20; Jeremiah 31:31 | 14-16 | joshua/23.json `literary`, `christ`; joshua/24.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 23: a paragraph on believers already married to someone who does not share their faith (1 Corinthians 7:12-14), cut because no existing care paragraph for an unsafe marriage could be set beside it whole in the room left; the likeness of the speech to ancient treaties (said once, in chapter 24).
+
+## The plain notes on Joshua 24 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shechem between Ebal and Gerizim; Abraham's first altar; Jacob's field and the buried gods (Genesis 35:4); the earlier reading of the law (8:30-35); the story begins among other gods; God as the subject of the verbs; the comparison with ancient treaties since the 1950s (the Hittite treaties: history, loyalty, witnesses, a written copy), its closeness and bearing on date debated | 1-13 | joshua/24.json `historical`, `cultural`, `literary` | Repository; the comparison in its holders' terms, the debate noted |
+| Deuteronomy 6:10; Acts 7:2; Romans 4:5 | 1-13 | questions/old-testament/jericho-and-the-conquest.json (`evidence`); acts/plain/7.json; BSB | Repository; BSB text |
+| ‘Now, therefore’ rests on verses 2 to 13; ‘serve’ as slave's work, a vassal's loyalty and worship; household gods still kept (verse 14); the choice as irony among the other gods; spoken to God's own covenant people at a renewal; Joshua answers for his own house; the people repeat what God has done | 14-18 | joshua/24.json `cultural`, `literary`, `words` (avad, bachar), `christ` | Repository |
+| Deuteronomy 30:19; Matthew 6:24 | 14-18 | deuteronomy/intro.json `teaching` (blessings); BSB | Repository; BSB text |
+| ‘Choose for yourselves this day’ set in its covenant: spoken to a people already chosen; ‘choose’ often used of God choosing Israel, and the call as an answer to his choice; after what God has done; Joshua slows the people down (verse 19); no tool for pressure on anyone | 14-18 `hard` | joshua/24.json `words` (bachar), `literary`, `hard` | Repository; never turned into pressure on the reader |
+| Verse 19 as a deliberate shock and a counting of the cost; ‘holy’; ‘jealous’ used only of God, a rightful claim; three rounds; the foreign gods and Jacob at Shechem; the stone as the last of the book's memorials; the written record | 19-28 | joshua/24.json `historical`, `cultural`, `literary`, `words` (qanno, even), `hard` | Repository |
+| Exodus 20:3, 20:5; Jeremiah 31:33; Luke 22:20 | 19-28 | joshua/24.json `christ`, `words`; BSB | Repository; BSB text |
+| ‘You are not able’ and ‘He will not forgive’: a deliberate shock; read with verse 20, a settled turning to other gods and not the sins the law's sacrifices covered (Exodus 34:7); sober realism; the need the prophets answered with a new heart; never turned against the Jewish people; 1 John 1:9 | 19-28 `hard` | joshua/24.json `hard`, `christ`; BSB | Repository; BSB text |
+| The care lines (‘If you are afraid that you have fallen away from God...’ to ‘...lists places to turn.’) | 19-28 `hard` | hebrews/plain/3.json (12-15, `hard`); numbers/plain/14.json; deuteronomy/plain/29.json | Reused whole, word for word |
+| ‘The servant of the LORD’ given to Joshua only here; 110 years, Joseph's age; Timnath-serah (19:50); verse 31 and the generation after; Joseph's bones (Genesis 50:25; Exodus 13:19); Eleazar; three graves in the land; Abraham's burial cave | 29-33 | joshua/24.json `historical`, `literary`; joshua/intro.json `story`; genesis/intro.json `teaching` | Repository |
+| Genesis 50:25; Hebrews 11:22; Judges 2:10; Hebrews 4:8-9 | 29-33 | joshua/24.json `christ`; hebrews/plain/4.json; BSB | Repository; BSB text |
+
+Cut in chapter 24: George Mendenhall by name (on the Deuteronomy book page); the excavations at Tell Balata; that 110 years was an ideal life span in Egyptian texts; a new sentence addressed to a reader who fears being beyond forgiveness, replaced by the existing care lines from the Hebrews 3 note, reused whole.
