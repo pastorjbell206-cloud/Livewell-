@@ -15438,3 +15438,19 @@ Cut in chapter 19: the Tel Dan inscription; Sharuhen and the pharaoh Ahmose; Cab
 | Deuteronomy 19:10; Leviticus 24:22 | 7-9 | BSB | BSB text |
 
 Cut in chapter 20: a reason for the tie to the high priest's death (the notes on Numbers 35 say the text gives none); the Mishnah by name and date; Ramoth-gilead and Ahab; the horns of the altar; the death penalty question (set out in the note on Numbers 35).
+
+## The plain notes on Joshua 21 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Levites' work (priests, the care of the tent, teaching, Deuteronomy 33:10); towns given out of each tribe's own inheritance (Numbers 35:2); pasturelands as the common ground by the walls; living from tithes and offerings; the priests' towns in the south near the later temple, whether by design or by lot not said | 1-8 | joshua/21.json `historical`, `cultural`, `literary` | Repository |
+| Numbers 35:2; Deuteronomy 33:10 | 1-8 | joshua/21.json `cultural`; BSB | Repository; BSB text |
+| Forty-eight towns in every tribe so that teachers of the law lived near all; Jacob's word over Levi turned to good; the six cities of refuge in the list; Gibeon a town of priests; Anathoth and Jeremiah; Hebron's fields kept by Caleb; the parallel list in 1 Chronicles 6 with differences; scholars differ on the list's date | 9-42 | joshua/21.json `historical`, `cultural` | Repository; no side on the date |
+| Genesis 49:7; 1 Peter 2:9 | 9-42 | joshua/21.json `cultural`, `christ`; BSB | Repository; BSB text |
+| Verses 43-45 as the summit, answering chapter 1; the oath to the fathers; the LORD as subject; ‘all’; God's faithfulness fixed before the warnings | 43-45 | joshua/21.json `literary`, `christ`; joshua/intro.json `themes` | Repository |
+| Joshua 23:14; 1 Kings 8:56; Hebrews 4:8-9; 2 Corinthians 1:20 | 43-45 | joshua/21.json `christ`; hebrews/plain/4.json; BSB | Repository; BSB text |
+| ‘All the land’ beside 13:1 and chapters 15 to 17: the three answers; no side; Israel's enjoyment of the gift tied to its faithfulness; no statement about any border, state or claim to land today | 43-45 `hard` | joshua/21.json `hard` | Repository; no side; no claim about any land today |
+
+Cut in chapter 21: the doubled Gath-rimmon as a copyist's slip; Abiathar at Anathoth; the measured extent of the pasturelands. The first words of 1 Kings 8:56 are left out of the quotation, and the BSB's words in verses 16, 18 and 27 are not quoted because of their dashes.
