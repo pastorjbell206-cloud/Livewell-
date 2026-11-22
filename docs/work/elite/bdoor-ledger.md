@@ -15292,3 +15292,19 @@ Cut in chapter 9: Pritchard's excavation at el-Jib and what it found (left to th
 | ‘No survivors’: the historical question and the moral one; the readings in brief with the pointer to chapter 6; ‘No one of these answers satisfies every reader’; no warrant for violence; no nation, state, land or conflict today | 28-43 `hard` | joshua/10.json `hard`; joshua/plain/6.json (17-21, `hard`); questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; handled as the site's live pages handle it; no side |
 
 Cut in chapter 10: the name Adoni-zedek and Melchizedek; the Maccabees' victory at Beth-horon; that Gibeon lay east and Aijalon west of the battle, and that the road from Gilgal climbs steeply for many miles (the notes give only the valley, the road and the plateau); Origen's reading (named once, in chapter 6). The BSB's words in verses 1, 5, 23 and the first half of verse 40 are not quoted because of their dashes.
+
+## The plain notes on Joshua 11 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hazor north of the Sea of Galilee (Chinnereth), the largest city in Canaan, named in ancient records long before Joshua; chariots as the most advanced weapon, Israel on foot; hamstringing and burning so that Israel would not rely on them (Deuteronomy 17:16; the Psalms and prophets) | 1-9 | joshua/11.json `historical`, `cultural`, `words` (iqqer, merkabah) | Repository |
+| Deuteronomy 17:16; Psalm 33:16-17 | 1-9 | joshua/11.json `cultural`; BSB | Repository; BSB text |
+| Verses 11 and 14 carry the weight of Jericho, with the pointer to the note on chapter 6 and no warrant for violence; the ‘mounds’ as tells; only Hazor burned, the cities left to be lived in (Deuteronomy 6:10-11); three burned cities in the book's own account; Hazor's destruction by fire, usually dated to the thirteenth century BC, connected with Israel by some of its excavators, with Egyptians, rival Canaanites or a revolt by others, an earlier layer for the early date; verse 15 as praise of Joshua's obedience | 10-15 | joshua/11.json `historical`, `cultural`; questions/old-testament/jericho-and-the-conquest.json (`evidence`, `argument`) | Repository; no side; no overclaim |
+| Deuteronomy 6:10; Joshua 24:13 | 10-15 | questions/old-testament/jericho-and-the-conquest.json (`evidence`); BSB | Repository; BSB text |
+| The long war and Caleb's ages (about seven years); Gibeon shows peace was possible; the Anakim and the scouts' fear; Gath and Goliath; ‘the entire land’ beside 13:1, the two ways readers relate them; ‘rest’ | 16-23 | joshua/11.json `historical`, `cultural`, `words` (anaqi), `christ`; joshua/12.json `hard`; joshua/14.json `historical` | Repository; no side |
+| Numbers 13:33; Deuteronomy 9:2; Hebrews 4:8-9 | 16-23 | joshua/11.json `christ`; hebrews/plain/4.json; BSB | Repository; BSB text |
+| The hardening: Pharaoh (Exodus 9:12; 8:15); God's rule over the heart, or God confirming a stubbornness already there; the kings responsible; the way of peace open; no side; not to be said of anyone today | 16-23 `hard` | joshua/11.json `hard`; exodus/intro.json `teaching`; bible/doctrines/sovereignty.json | Repository; no side |
+
+Cut in chapter 11: the place names of the northern alliance; the Mari texts and the Amarna letters by name; the two kings named Jabin (Joshua 11 and Judges 4), left to the deep note and to the notes on Judges; Matthew 11:28 (used on the book page).
