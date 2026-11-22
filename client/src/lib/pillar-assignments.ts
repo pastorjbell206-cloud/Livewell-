@@ -1768,5 +1768,32 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 3,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-hell-real-and-is-it-fair": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "did-god-choose-who-would-be-saved": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-divorce-ever-right-and-may-a-divorced-person-remarry": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant"
+    ],
+    "confidence": "high"
+  },
+  "should-the-church-stay-out-of-politics": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-does-god-allow-evil": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
