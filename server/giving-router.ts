@@ -14,9 +14,11 @@
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
 import { GIFT_MAX_USD, GIFT_MIN_USD, GIVING_CLOSED_MESSAGE, checkGift } from "@shared/giving";
+import { DOWNLOAD_GIFT_MAX_CENTS, DOWNLOAD_GIFT_MIN_CENTS, checkDownloadGift } from "@shared/downloads";
+import DOWNLOAD_ITEMS from "@shared/download-items.json";
 import GIVING_FACTS from "../client/src/lib/giving.json";
 import { publicProcedure, router } from "./_core/trpc";
-import { createGiftCheckoutSession, isStripeConfigured } from "./stripe-service";
+import { createDownloadGiftCheckoutSession, createGiftCheckoutSession, isStripeConfigured } from "./stripe-service";
 
 const PRODUCTION_SITE_URL = "https://www.livewellbyjamesbell.co";
 
@@ -55,6 +57,35 @@ export const givingRouter = router({
         return { sessionUrl };
       } catch {
         // Stripe's own words never reach the page, and nothing about the gift is logged.
+        console.error("[giving] the checkout could not be started");
+        throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "The gift could not be started. Nothing was charged." });
+      }
+    }),
+
+  /**
+   * Start a gift given with a download (James, 2026-11-22: a suggested gift
+   * on every download, which the reader can change or skip). Takes the
+   * download's id and the amount, and nothing else: the id is looked up in
+   * shared/download-items.json, so the page never names a file or a return
+   * address. Behind the same two gates as a plain gift. Nothing is stored and
+   * nothing about the giver or the gift is logged.
+   */
+  createDownloadCheckout: publicProcedure
+    .input(
+      z.object({
+        itemId: z.string().min(3).max(120),
+        amountCents: z.number().int().min(DOWNLOAD_GIFT_MIN_CENTS).max(DOWNLOAD_GIFT_MAX_CENTS),
+      })
+    )
+    .mutation(async ({ input, ctx }) => {
+      if (!givingOpen()) throw new TRPCError({ code: "BAD_REQUEST", message: GIVING_CLOSED_MESSAGE });
+      const checked = checkDownloadGift(input, DOWNLOAD_ITEMS);
+      if (!checked.ok) throw new TRPCError({ code: "BAD_REQUEST", message: checked.error });
+      try {
+        const { sessionUrl } = await createDownloadGiftCheckoutSession(checked.gift, siteOrigin(ctx.req));
+        if (!sessionUrl) throw new Error("no checkout address");
+        return { sessionUrl };
+      } catch {
         console.error("[giving] the checkout could not be started");
         throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "The gift could not be started. Nothing was charged." });
       }

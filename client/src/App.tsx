@@ -1,5 +1,6 @@
 import PageTracker from "@/components/PageTracker";
 import WebVitalsBeacon from "@/components/WebVitalsBeacon";
+import DownloadGiftHost from "@/components/DownloadGiftHost";
 import ClientErrorReporter from "@/components/ClientErrorReporter";
 import NotFound from "@/pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -162,6 +163,7 @@ const Connect = lazy(() => import("./pages/Connect"));
 const AppInstall = lazy(() => import("./pages/AppInstall"));
 const Support = lazy(() => import("./pages/Support"));
 const SupportThanks = lazy(() => import("./pages/SupportThanks"));
+const DownloadThanks = lazy(() => import("./pages/DownloadThanks"));
 const StudyBible = lazy(() => import("./pages/StudyBible"));
 const StudyBibleStory = lazy(() => import("./pages/StudyBibleStory"));
 const StudyBibleDoctrines = lazy(() => import("./pages/StudyBibleDoctrines"));
@@ -544,6 +546,7 @@ function Router() {
         <Route path="/resources/creeds/:slug" component={CreedDocument} />
         <Route path="/resources/creeds" component={CreedsLibrary} />
         <Route path="/resources" component={Resources} />
+        <Route path="/downloads/thanks" component={DownloadThanks} />
         <Route path="/downloads" component={Downloads} />
         <Route path="/books" component={Books} />
         <Route path="/books/when-god-bless-america/thank-you" component={ToDownloadsRedirect} />
@@ -826,6 +829,7 @@ function App() {
             {/* Before the page in the document, so a keyboard reaches the way back first. */}
             <TrackReturnSlot />
             <Router />
+            <DownloadGiftHost />
             <StandaloneBar />
           </WouterRouter>
         </ToastProvider>
