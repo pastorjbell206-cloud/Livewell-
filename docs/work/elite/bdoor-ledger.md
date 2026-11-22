@@ -15156,3 +15156,19 @@ Cut in chapter 1: the Hittites as an empire in Anatolia (left to the deep note);
 | Joshua 6:22, 6:25; Deuteronomy 7:2; Ephesians 2:13 | 15-24 | joshua/6.json `literary`; joshua/9.json `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 2: Tell es-Sultan and the age of the site (on the book page); the meaning of the name Rahab; the casemate wall named as a technical term; any reason the scouts chose her house beyond what the notes give.
+
+## The plain notes on Joshua 3 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The spring flood; the ark (a gold-covered chest, the tablets, the cherubim, throne or footstool, carried on poles by priests); two thousand cubits as about half a mile, reverence and a clear view; consecration as at Sinai (washing clothes); the pillar of cloud before | 1-6 | joshua/3.json `historical`, `cultural`; exodus/intro.json `teaching`; BSB (Exodus 19:10) | Repository |
+| Exodus 14:22; Isaiah 43:2 | 1-6 | joshua/3.json `words` (ned); BSB | Repository; BSB text |
+| God begins to exalt Joshua; ‘the living God’ and ‘the Lord of all the earth’; power over a river credited in Canaan to Baal or the river; the seven peoples as a standard list, seven as completeness; the rare word ‘heap’ and Exodus 15:8 | 7-13 | joshua/3.json `cultural`, `literary`, `words` (ned, gadal); joshua/intro.json `setting` | Repository |
+| Exodus 15:8; Psalm 114:5, 114:7 | 7-13 | joshua/3.json `words`; BSB | Repository; BSB text |
+| The Jordan narrow but in flood from Hermon's snow and the winter rains; the fords (2:7); Adam upstream near the Jabbok; the Salt Sea as the Dead Sea; ‘dry ground’ as the Red Sea's words; the still picture at the end | 14-17 | joshua/3.json `historical`, `literary` | Repository |
+| 2 Kings 2:8; Matthew 3:13; whether the Gospels intend an echo is debated; the hymns' use of the Jordan as later devotion | 14-17 | joshua/3.json `christ`; BSB | Repository; BSB text; no line drawn that the New Testament does not draw |
+| The three ways the miracle is read: a direct act; the landslides near Adam (1927) with the timing as the miracle; a retelling shaped to mirror the exodus, perhaps tied to worship at Gilgal; no side | 14-17 `hard` | joshua/3.json `historical`, `hard` | Repository; each in its holders' terms; no side |
+
+Cut in chapter 3: the thirteenth-century AD landslide (the note says only ‘reported’); a link between the verb ‘cross over’ and the word ‘Hebrew’ (the note calls it debated); 1 Corinthians 10:1-2 (Paul speaks of the sea, not the Jordan). The BSB's words in verse 13 are quoted only in part because the verse has dashes.
