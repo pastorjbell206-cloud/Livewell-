@@ -15224,3 +15224,20 @@ Cut in chapter 5: the meaning of the name Gibeath-haaraloth; the later tradition
 | 1 Kings 16:34; Matthew 1:5; Hebrews 11:31 | 22-27 | joshua/6.json `historical`, `christ`; BSB | Repository; BSB text |
 
 Cut in chapter 6: how ancient armies took walled towns and how long a town could hold out; that one of the seven days must have been a Sabbath; that the people on the wall could have mocked Israel (none is in the repository's notes); Jericho as a military outpost (one proposal, left to the deep note); the trumpets of Revelation; the word ‘harem’. The BSB's words in verse 21 are quoted only up to the dash.
+
+## The plain notes on Joshua 7 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ai near Bethel on the road into the hills; its name ‘the ruin’; its site debated and the usual mound empty in the period, the views left to the book page; the reader told before the characters; the melting hearts change sides (2:11; 5:1); the customs of mourning; the prayer echoes the wilderness generation and ends with God's name (Exodus 32:11-12); one man's act counted as Israel's | 1-9 | joshua/7.json `historical`, `cultural`, `literary`; joshua/2.json `words` (masas) | Repository; no side on Ai |
+| 1 Chronicles 2:7; 1 Corinthians 5:6 | 1-9 | joshua/7.json `literary`; BSB | Repository; BSB text |
+| God's abrupt answer; the breach of covenant; Israel itself under the ban (6:18); ‘I will no longer be with you’ set against 1:5 and 5:13-14; the choice probably by lot; the nested groups of tribe, clan, family | 10-18 | joshua/7.json `cultural`, `literary`, `words` (maal, cherem) | Repository |
+| Psalm 32:3, 32:5; Proverbs 28:13 | 10-18 | BSB | BSB text |
+| ‘My son’; ‘give glory to the LORD’ as the form for telling the truth before God; saw, coveted, took, and Genesis 3:6; ‘covet’ as the tenth commandment's word; Shinar as Babylonia; the shekel a weight of eleven or twelve grams, no coins; the plunder allowed at Ai (8:2); stoning as the act of the whole community; akar and Achor | 19-26 | joshua/7.json `historical`, `cultural`, `literary`, `words` (chamad, akar); joshua/8.json `cultural` | Repository |
+| Hosea 2:15; Isaiah 65:10; Galatians 3:13; 1 John 1:9 | 19-26 | joshua/7.json `christ`; BSB | Repository; BSB text |
+| The household's death: Deuteronomy 24:16; the four answers (the family knew; the law of the ban, Deuteronomy 13:15-17; the household as one body; the unclear Hebrew of verse 25); none chosen; the day presented as extraordinary and terrible; Ezekiel 18:20; no rule for today | 19-26 `hard` | joshua/7.json `hard`, `cultural`; numbers/plain/16.json (16-35, `hard`) | Repository; sober; no side forced |
+| The care paragraph (‘A word of care. This story must not be used to say...’ to ‘...lists places to turn.’) | 19-26 `hard` | acts/plain/5.json (1-6, `hard`); numbers/plain/16.json (16-35, `hard`) | Reused whole, word for word |
+
+Cut in chapter 7: Beth-aven as ‘house of wickedness’; the Urim and Thummim as the means of the lot (the note says ‘perhaps’); Acts 5 as a parallel (the note gives it as what ‘some readers notice’; the care paragraph from that note is reused); a sentence saying that Achan's confession came too late (the text does not say what he found with God).
