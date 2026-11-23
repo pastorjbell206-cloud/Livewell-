@@ -1455,3 +1455,17 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | shame | Shame lives on secrecy; a wise counselor a gift, not a defeat | the topic's own first form (application) |
 | shame | Psalm 25: what would you like God to forget; remembered according to his loving devotion, not your past | plain psalms/25 1-22 asks |
 | shame | Care lines | plain luke/7; plain psalms/69 |
+| guilt-and-conscience | Twenty years later the brothers connect their distress with Joseph; a boy's cries not erased; they name a specific wrong, victim and refusal, how repentance begins; a wrong never named aloud | note genesis/42 verse 21; plain genesis/42 18-24 asks |
+| guilt-and-conscience | A man sick and crushed by guilt; one man's experience, not a teaching that every illness is punishment; honest about pain and sin at once | note psalms/38 summary; plain psalms/38 1-22 hard and asks |
+| guilt-and-conscience | Two readings of who the Gentiles are; conscience part of created human nature, a real but fallible witness, weak (1 Corinthians 8:7) or seared (1 Timothy 4:2) | plain romans/2 12-16 hard; note romans/2 verse 15 |
+| guilt-and-conscience | The weak believer may be drawn into what he believes is sin by another's example; no one pushed to act against conscience | plain 1-corinthians/8 7-13 hard |
+| guilt-and-conscience | Uzziah's death year; Isaiah undone; the seraph's coal atones; he then volunteers | note isaiah/6 summary; Isaiah 6:7-8 |
+| guilt-and-conscience | Confess, repay in full, add a fifth; said sorry and given nothing back | note numbers/5 summary; plain numbers/5 5-10 asks |
+| guilt-and-conscience | Godly and worldly sorrow turn different ways; a grieving heart not the mark of someone God turned away; meant to end in freedom; returning guilt not proof of unforgiveness; can be part of anxiety, depression or a habit of mind | note 2-corinthians/7; plain 2-corinthians/7 8-12 hard |
+| guilt-and-conscience | A former persecutor, the worst of sinners, shown mercy as an example of Christ's patience; anyone too far gone | note 1-timothy/1 summary; plain 1-timothy/1 12-17 asks |
+| guilt-and-conscience | Animal blood made outwardly clean; Christ's blood cleanses the conscience, the inner place the old sacrifices could not reach; the goal is service | note hebrews/9 verses 13-14; plain hebrews/9 11-14 asks |
+| guilt-and-conscience | Draw near with hearts sprinkled clean; full assurance rests on the priest and the cleansing, not feelings | note hebrews/10 verses 21-22 |
+| guilt-and-conscience | Mark 3:28-29: defined by its setting; not a word in anger, a doubt or a single failure but a settled refusal; many feared it; the fear itself a sign the heart has not hardened; the promise comes first | note mark/3 verses 28-29; plain mark/3 22-30 hard |
+| guilt-and-conscience | Receive the forgiveness already paid rather than paying a settled debt | the topic's own first form (application) |
+| guilt-and-conscience | Psalm 130: if God kept score no one would stand; he does not keep score that way; pray verse 1 from wherever you are | plain psalms/130 1-4 asks |
+| guilt-and-conscience | Care lines | plain psalms/38; plain 2-corinthians/7 |
