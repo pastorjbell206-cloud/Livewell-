@@ -93,7 +93,8 @@ describe("/family/catechism, said aloud", () => {
   const aloud = () => within(document.getElementById("say-it-aloud")!);
   const cardShows = (n: number) => screen.findByText(`Question ${n} of ${catechism.length}`);
 
-  it("turns a question to both answers exactly as written, steps on, and remembers its place", async () => {
+  // The whole catechism page twice (a reload is the point): heavy by design, so 10 s rather than 5.
+  it("turns a question to both answers exactly as written, steps on, and remembers its place", { timeout: 10000 }, async () => {
     serve(["family-catechism.json"]);
     const first = renderWithProviders(<FamilyCatechism />);
     await cardShows(1);

@@ -76,7 +76,8 @@ describe("/family/devotions", () => {
     expect(screen.queryByText(/^Week \d+/)).toBeNull();
   });
 
-  it("is a list of doors, one page per devotion, with the tab in the URL (U17)", async () => {
+  // The whole list of devotions, then the Advent tab's: heavy by design, so 10 s rather than 5.
+  it("is a list of doors, one page per devotion, with the tab in the URL (U17)", { timeout: 10000 }, async () => {
     stubFamily({ online: true });
     window.localStorage.setItem("livewell-progress-family-v1", JSON.stringify({ v: 1, start: "2026-11-03", band: "together", done: [{ id: "identity", date: "2026-11-03" }] }));
     renderWithProviders(<FamilyDevotions />);

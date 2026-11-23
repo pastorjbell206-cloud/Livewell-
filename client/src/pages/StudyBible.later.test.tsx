@@ -45,7 +45,8 @@ async function open(address: string, view: "study" | "read") {
 
 const lines = () => Array.from(document.querySelectorAll(".sb-later")).map((n) => n.textContent);
 
-describe("the reader's mark on a later passage", () => {
+// Each renders a whole chapter with its notes: heavy by design, so 15 s rather than 5.
+describe("the reader's mark on a later passage", { timeout: 15000 }, () => {
   for (const view of ["study", "read"] as const) {
     it(`opens and closes Mark 16:9-20 (${view} view)`, async () => {
       await open("/study/bible/mark/16", view);

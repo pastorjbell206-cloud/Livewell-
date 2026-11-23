@@ -35,7 +35,9 @@ afterEach(() => {
 });
 
 describe("the Study Bible reader", () => {
-  it("opens a verse of the chapter on screen when only the hash changes", async () => {
+  // Renders a whole chapter with its notes and cross references: heavy by
+  // design, so 15 s rather than 5; a busy machine stretched it past 4.
+  it("opens a verse of the chapter on screen when only the hash changes", { timeout: 15000 }, async () => {
     vi.stubGlobal("fetch", diskFetch);
     window.history.replaceState({}, "", "/study/bible/john/3");
     renderWithProviders(<StudyBible />);
