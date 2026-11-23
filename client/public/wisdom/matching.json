@@ -127,7 +127,13 @@
   "be saved": "saved salvation",
   "get saved": "saved salvation",
   "being saved": "saved salvation",
-  "truly saved": "saved salvation"
+  "truly saved": "saved salvation",
+  "killed himself": "died suddenly",
+  "killed herself": "died suddenly",
+  "took his own life": "died suddenly",
+  "took her own life": "died suddenly",
+  "died by suicide": "died suddenly",
+  "committed suicide": "died suddenly"
  },
  "synonyms": {
   "son": "child",
