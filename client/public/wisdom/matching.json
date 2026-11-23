@@ -127,7 +127,16 @@
   "be saved": "saved salvation",
   "get saved": "saved salvation",
   "being saved": "saved salvation",
-  "truly saved": "saved salvation"
+  "truly saved": "saved salvation",
+  "killed himself": "died suddenly",
+  "killed herself": "died suddenly",
+  "took his own life": "died suddenly",
+  "took her own life": "died suddenly",
+  "died by suicide": "died suddenly",
+  "committed suicide": "died suddenly",
+  "was abused": "abuse abusenow",
+  "been abused": "abuse abusenow",
+  "being abused": "abuse abusenow"
  },
  "synonyms": {
   "son": "child",
@@ -1201,7 +1210,14 @@
     "god feels far",
     "nothing when i pray",
     "spiritually dry",
-    "go through the motions"
+    "go through the motions",
+    "prayer feels like talking to the ceiling",
+    "bible feels dead to me",
+    "worship does nothing for me anymore",
+    "lost my joy in god",
+    "faith feels dry",
+    "just going through the motions at church",
+    "quiet time feels empty"
    ],
    "not": [],
    "related": [
@@ -1215,7 +1231,17 @@
     "barely get out of bed",
     "worn out",
     "running on empty",
-    "no energy"
+    "no energy",
+    "cant keep my eyes open",
+    "too tired to function",
+    "bone tired",
+    "running on fumes",
+    "no sleep for months",
+    "completely drained",
+    "need a nap every day",
+    "sleep deprived",
+    "my body is giving out",
+    "exhausted from caring for everyone"
    ],
    "not": [],
    "related": [
@@ -1458,13 +1484,24 @@
     "hurt by church",
     "pastor hurt me",
     "left the church because",
-    "church people"
+    "church people",
+    "the church covered it up",
+    "kicked out of church",
+    "church shunned me",
+    "pastor manipulated me",
+    "religious trauma",
+    "church trauma",
+    "the church protected him",
+    "my church turned on me",
+    "elders covered for him",
+    "church triggers me"
    ],
    "not": [],
    "related": [
     "submitting-to-leaders",
     "finding-a-church",
-    "forgiveness"
+    "forgiveness",
+    "betrayal"
    ]
   },
   "revenge": {
@@ -1577,7 +1614,15 @@
     "what ive done",
     "what i've done",
     "scared to tell anyone",
-    "dirty"
+    "dirty",
+    "cant look anyone in the eye",
+    "if people knew what i did",
+    "they would hate me if they knew",
+    "humiliated in front of everyone",
+    "embarrassed to show my face",
+    "a total disgrace",
+    "ashamed of where i came from",
+    "hiding my real self"
    ],
    "not": [],
    "related": [
@@ -1593,7 +1638,15 @@
     "years ago",
     "wasted years",
     "if only",
-    "my mistakes"
+    "my mistakes",
+    "wish i could go back and change it",
+    "too late to fix it",
+    "should have been a better father",
+    "should have been a better mother",
+    "years i cant get back",
+    "haunted by my choices",
+    "full of regret",
+    "wrecked my own life"
    ],
    "not": [],
    "related": [
@@ -1846,7 +1899,14 @@
     "when i pray",
     "cant pray",
     "dont know how to pray",
-    "prayer feels"
+    "prayer feels",
+    "my mind wanders when i pray",
+    "dont know what to say to god",
+    "stopped praying",
+    "feel awkward praying",
+    "fall asleep when i pray",
+    "my prayers feel empty",
+    "prayed for years and nothing changed"
    ],
    "not": [],
    "related": [
@@ -1862,7 +1922,13 @@
     "waiting for god",
     "god to answer",
     "unanswered prayer",
-    "still waiting"
+    "still waiting",
+    "why is god taking so long",
+    "tired of waiting on god",
+    "been waiting years for an answer",
+    "when will god come through",
+    "waiting for a breakthrough",
+    "god keeps saying not yet"
    ],
    "not": [],
    "related": [
@@ -2041,12 +2107,26 @@
     "sports betting",
     "casino",
     "lottery",
-    "betting"
+    "betting",
+    "cant stop betting",
+    "lost the rent money betting",
+    "gambled away our savings",
+    "chasing my losses",
+    "hiding my gambling debts",
+    "betting app",
+    "scratch offs",
+    "slot machines",
+    "online poker",
+    "the next bet will win it back",
+    "husband has a gambling problem",
+    "is the lottery a sin"
    ],
    "not": [],
    "related": [
     "addiction",
-    "financial-hardship"
+    "financial-hardship",
+    "greed",
+    "money"
    ]
   },
   "overthinking": {
@@ -2218,7 +2298,16 @@
     "really saved",
     "am i saved",
     "am i really a christian",
-    "lose my salvation"
+    "lose my salvation",
+    "afraid im not really a christian",
+    "what if i was never saved",
+    "i dont feel saved",
+    "did my prayer even count",
+    "doubting my salvation",
+    "afraid of falling away",
+    "no assurance of salvation",
+    "prayed the sinners prayer a hundred times",
+    "scared god will reject me in the end"
    ],
    "not": [],
    "related": [
@@ -2346,14 +2435,25 @@
   "anger-at-god": {
    "phrases": [
     "angry at god",
-    "mad at god",
     "furious with god",
-    "god let me down"
+    "i hate god for this",
+    "i blame god",
+    "god is cruel",
+    "yelling at god",
+    "i feel betrayed by god",
+    "god failed me",
+    "god is unfair to me",
+    "shaking my fist at god"
    ],
-   "not": [],
+   "not": [
+    "is god real",
+    "does god exist"
+   ],
    "related": [
     "suffering",
-    "doubt"
+    "doubt",
+    "the-problem-of-evil",
+    "grief"
    ]
   },
   "lust": {
@@ -2626,7 +2726,14 @@
    "phrases": [
     "feel guilty",
     "guilty conscience",
-    "what ive done"
+    "what ive done",
+    "the guilt is eating me alive",
+    "i did something terrible",
+    "did i commit the unforgivable sin",
+    "i keep confessing but still feel guilty",
+    "my conscience wont leave me alone",
+    "too far gone to be forgiven",
+    "still haunted by something i did"
    ],
    "not": [],
    "related": [
@@ -3647,6 +3754,25 @@
     "contentment",
     "greed",
     "saving-and-spending"
+   ]
+  },
+  "hell-and-judgment": {
+   "phrases": [
+    "scared of going to hell",
+    "terrified of hell",
+    "is hell real",
+    "is hell forever",
+    "how can a loving god send people to hell",
+    "afraid of judgment day",
+    "is my dad in hell",
+    "will god send me to hell",
+    "died without jesus"
+   ],
+   "not": [],
+   "related": [
+    "assurance-of-faith",
+    "heaven-and-eternity",
+    "the-problem-of-evil"
    ]
   }
  }

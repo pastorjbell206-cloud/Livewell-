@@ -861,6 +861,44 @@ What would raise it, in the order of what each would take:
 
 ---
 
+## 24. Run of 2026-11-23: the remaining wisdom topics, batch 1
+
+James's step 10 ("the remaining wisdom topics"). Retires, renames, merges and re-lists nothing; no menu, door, API procedure, dependency or matcher code changed. Ledger rows: `docs/work/elite/tools-ledger.md`, "Run of 2026-11-23: the remaining wisdom topics, written in full".
+
+### The order
+
+104 of 208 topics had no deep file. Taken first: those people bring at a hard moment (the church, faith and doubt, loss and health, money), then the rest.
+
+### Twelve topics written in full (116 of 208)
+
+church-hurt, anger-at-god, exhaustion, gambling, shame, guilt-and-conscience, assurance-of-faith, spiritual-dryness, hell-and-judgment, prayer-struggles, waiting-on-god, regret. One commit each, each with at least eight everyday phrasings in the same commit.
+
+- Nine to eleven passages each, every "where it stands" written against the chapter's note, verse note or plain note and agreeing with it.
+- **Often misread:** 1 Corinthians 6:7 (church-hurt: going to law is not a reason to keep a crime quiet), Isaiah 55:8-9 (anger-at-god), Isaiah 40:30-31 (exhaustion), Isaiah 64:6 (shame), Mark 3:28-29 (guilt-and-conscience), 2 Corinthians 13:5 and Matthew 7:21-23 (assurance-of-faith), Isaiah 59:1-2 (spiritual-dryness), Luke 16:25-26 (hell-and-judgment), Mark 11:24 (prayer-struggles), Hebrews 12:16-17 (regret). None on gambling or waiting-on-god.
+- **Where Christians differ**, shared ground first, no side taken: gambling (wrong in itself, or small stakes as entertainment, as the Find Help page on drinking, tattoos and gambling sets them out), assurance-of-faith (kept to the end, or faith that can be abandoned, as the notes on John 10, Romans 8 and 1 John 5 set them out), hell-and-judgment (endless conscious separation, final destruction, and a minority hope of restoration, as the note on Matthew 25 and the Honest Answer on hell set them out; the creeds confess the judgment itself).
+- **Care.** church-hurt is the heavy one (abuse and sexual assault in `sensitive-pages.json`): its whole-Bible section opens with the path to help, says a crime belongs with the police, and carries the 3 John and Matthew 18 care lines. Eleven of the twelve carry care lines word for word (all but prayer-struggles); nine open the whole-Bible section with Find Help. No page says anything about the eternal state of any particular person; hell-and-judgment says so in the words of the note on Revelation 20. No verse longing for death on any page (Jonah 4 and Jeremiah 20:14-18 left out of anger-at-god; 1 Kings 19 opened at 9-13 on spiritual-dryness); Matthew 18 opened only to verse 6 on church-hurt. No phone numbers.
+- **Not advice:** law on church-hurt; money on gambling; medicine on exhaustion, guilt-and-conscience, assurance-of-faith, spiritual-dryness and hell-and-judgment.
+
+### The finder, two safety defects found and fixed with data
+
+Found while checking that self-harm sentences still put the help topic first on each crisis-adjacent page (they do):
+
+- A death by suicide read as something else: "my brother killed himself" put Sibling Conflict first, "my friend committed suicide last week" Suicidal Thoughts. Six rewrites (killed himself, killed herself, took his own life, took her own life, died by suicide, committed suicide) add "died suddenly"; these sentences now land on Sudden Loss, Losing a Child or Losing a Parent, each a heavy page. A sentence that also carries the reader's own wish to die still puts the help topic first (`d30ba52a`).
+- Abuse in the passive voice was missed: "I was abused as a kid" put Parenting Struggles first. Three safety rewrites (was abused, been abused, being abused) now add the abuse safety word, as "abused me" did; "I abused drugs" is untouched (`82710a9b`).
+
+### The floors, and a narrowing by scope
+
+At first `pnpm test` failed on the batch: four floors in `wisdom-match.test.ts` (holdout7 top 1, holdout8 top 1, dev9 top 1 and top 3), each short by one sentence. Measured at the batch's end against `finder.json` from the commit before the run: holdout7 fell from 80.0% / 86.7% to 76.7% / 86.7%, holdout8 from 58.3% / 75.0% to 54.2% / 75.0%, dev9 from 76.4% / 83.6% to 74.5% / 81.8%. The floors and the fixture were not changed, and the holdout sets were not opened.
+
+The coordinator then compared the finder before and after the batch and reported that exactly three sentences had changed result, each to a wrong answer: one from dev9 ("i ran into my abuser at the store and froze", which had put Toxic and Harmful Relationships first and now put Church Hurt first), and two held-out sentences not read here, one now going to Church Hurt where church was only the place, one to Anger at God where the reader doubts that God is there. The fix is a rule about each topic's scope, not about any one sentence (`7e170f74`):
+
+- **Church Hurt wins only when a church, pastor, elder or leader is part of the harm.** The phrasing "church protected the abuser" had made "abuser" a word the finder knows, so it was no longer mended to "abuse" (which reaches Toxic and Harmful Relationships) and matched Church Hurt alone. It and three phrasings built on generic words (everyone at church turned against me; the elders took his side; can't step inside a church) were replaced by phrasings that name the church in the harm (the church protected him; my church turned on me; elders covered for him; church triggers me). The page's Matthew 18 line now says the church protected "those who did the harm" rather than "abusers", so the page no longer weighs that word.
+- **Anger at God wins when the reader is angry at, blaming or accusing God, not when they doubt he is there.** The older phrasing "god let me down" collapsed to the one word "god" (six points for any sentence naming God), and "mad at god" was also met by "made", which stems to "mad"; both are gone, and the finder's synonym still reads "mad" as anger. Six phrasings added in this batch leaned on generic words (why, took, prayed, died, forgive, abandoned) and were replaced by phrasings of anger and blame (god failed me; god is unfair to me; shaking my fist at god). "is god real" and "does god exist" are now its "not" phrases, and the Psalm 22 line says the sufferer "still calls God his own" instead of weighing "doubt" and "exist" on the page.
+
+Checked on sentences written for this purpose on both sides of each boundary: abuse with no church goes to Toxic and Harmful Relationships (or the help topic where a safety rewrite applies), never Church Hurt; a pastor, elders or a church that shunned or covered up reaches Church Hurt or Submitting to Leaders; church only as the place goes to what the person carries; doubting that God exists goes to Doubt and Questions or a neighbour, never Anger at God; anger and blame aimed at God reach Anger at God (9 of 10 first). Every safety sentence (abuse, a partner's control, self-harm, a death by suicide) still puts the help topic first. The floor test, unchanged, then passed: cases 100% / 100%, holdout 94.7% / 100%, holdout2 to holdout6 as before, holdout7 80.0% / 86.7%, holdout8 58.3% / 75.0%, holdout9 54.7% / 71.9%, dev9 76.4% / 83.6%. Every set is where it was before the batch, and cases is up from 98.6%.
+
+---
+
 ## Decisions waiting on James
 
 Every open decision from sections 8 to 17, with the page each affects. Nothing here has been done; each waits on his word.

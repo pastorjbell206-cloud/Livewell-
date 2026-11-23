@@ -1377,3 +1377,177 @@ No new claim outside Scripture and the notes: no statistic, study, scholar or da
 | consistency-check.json, the line on Leviticus 19:15 | No partiality to the poor, no favoritism to the rich | The verse itself |
 
 No statistic, study, scholar or date was added in this run.
+
+## Run of 2026-11-23: the remaining wisdom topics, written in full
+
+Every claim below was written against the site's own notes; "note" is `client/public/bible/notes/<book>/<n>.json` and its `verses/` file, "plain" its `plain/` file, and "Find Help" a page in `client/public/needs/`. Nothing outside the repo was opened. The care lines are checked word for word by `validate-wisdom.mjs`.
+
+| Topic | Claim | Checked against |
+|---|---|---|
+| church-hurt | Ezekiel's shepherds are Israel's rulers, who fed themselves while the flock went hungry, sick and scattered; God will shepherd the flock himself, judge between the strong sheep who trample the pasture and the weak, and shepherd them with justice | note ezekiel/34 summary; Ezekiel 34:2-4, 15-16 |
+| church-hurt | A friend's betrayal hurts more than an enemy's attack; the pain is not an overreaction | plain psalms/55 12-23 asks |
+| church-hurt | Heavy loads on others' shoulders, set against Jesus' own light burden; the warning lands first on those who teach and lead in his church today | note matthew/23 verse 4; plain matthew/23 1-12 asks |
+| church-hurt | The invitation heard as one more demand; spoken to anyone worn out by a religion that felt like a weight; a yoke is made for two, the word for easy also means kind | plain matthew/11 28-30 hard |
+| church-hurt | The hired hand runs because he does not care; God condemned shepherds who fed themselves; a true shepherd gives his life, not takes it; your hurt does not mean God was like them | note john/10 verses 12-13; plain john/10 11-21 asks |
+| church-hurt | The man is thrown out when he insists Jesus must be from God; the authorities use sin as a weapon, a label for someone else; Jesus went looking for the man they threw out | note john/9 summary and verse 34; plain john/9 35-41 asks |
+| church-hurt | The most severe warning in the Gospels; the little ones include every vulnerable disciple; rightly applied to the abuse of children; the church has sometimes protected abusers and silenced children, a betrayal of the passage | note matthew/18 verse 6; plain matthew/18 6-9 hard. Context ends at verse 6, so the hand and eye sayings are not shown |
+| church-hurt | Wolves from the elders' own number; such people may speak from the front of a church | Acts 20:29-30; plain acts/20 25-31 asks |
+| church-hurt | Diotrephes loves to be first, slanders the elder, refuses travelers and puts out those who welcome them; the elder names the wrong openly and does not answer slander with slander; the letter asks no one to stay under a leader who controls, shames or harms them | note 3-john/1 summary; plain 3-john/1 9-10 hard |
+| church-hurt | The God who counts the stars heals the brokenhearted; not too big to notice you | note psalms/147 summary; plain psalms/147 1-11 asks |
+| church-hurt | 1 Corinthians 6:7: everyday civil disputes over money, property and business, not crimes; nothing hides a crime; abuse reported to the police (Romans 13:4); Paul appealed to Caesar (Acts 25:11); his anger is at the strong who cheated the weak | plain 1-corinthians/6 1-8 hard |
+| church-hurt | The shapes church hurt takes (a pastor who could not be questioned, abuse and then the abuser protected, a congregation closing ranks, people dropped after a divorce or an illness); ordinary disappointment among sinners against spiritual abuse; Scripture puts God against shepherds who harm the flock, not beside them | Find Help church-hurt (answer and happening) |
+| church-hurt | Psalm 23: the promise is not that the sheep will never be in danger but that the shepherd will never leave | plain psalms/23 1-4 hard |
+| church-hurt | Care lines | plain 3-john/1; plain matthew/18 |
+| anger-at-god | The most famous cry of dereliction; the sufferer does not doubt God exists or is his; persistent prayer through silence is faithful; if a man can pray it and still be a man of faith, so can you | note psalms/22 verses 1-2; plain psalms/22 1-11 hard |
+| anger-at-god | After three hours of darkness Jesus cries the opening of Psalm 22, his last words in Mark; every sufferer who asks why has a place within faith, the Son asked it and was not rebuked; he still says my God | note mark/15 summary and verse 34; plain mark/15 33-39 hard |
+| anger-at-god | Job longs to find God and plead his case; both readings agree Scripture takes God's absence seriously and the response is to bring it to God | note job/23 summary and hard |
+| anger-at-god | Job admits he spoke of what he did not understand; the friends rebuked for not speaking accurately of God, as Job has; God answers Job with hard questions out of the whirlwind | note job/42 summary; Job 38:1-2; Job 42:3, 7 |
+| anger-at-god | Bricks without straw, foremen beaten; Moses' complaint recorded without rebuke; God answers with a renewed promise in 6:1; obedience has made things worse | note exodus/5 summary and verses 22-23 |
+| anger-at-god | Naomi lost husband and sons; the book does not rebuke her or hurry her grief, it answers slowly through what happens next; who is standing beside her | note ruth/1 summary; plain ruth/1 19-22 hard and asks |
+| anger-at-god | Habakkuk's complaint about violence and injustice; God's reply in chapter 2 calls for faith and patience rather than a full explanation; the chapter refuses the answer that God does not care or is not in control | note habakkuk/1 summary and hard |
+| anger-at-god | Sleepless, asks whether the Lord has rejected forever; you may pray these questions as your own, prayed by a temple singer; he kept talking through the night; resolves to remember | note psalms/77 summary; plain psalms/77 1-9 asks |
+| anger-at-god | Mary repeats Martha's words; the sisters had said this to each other many times in four days; Jesus answers with his own grief, deeply moved | note john/11 verses 32-33 |
+| anger-at-god | God pictured as bear, lion, archer, jailer; the speaker calls to mind God's character; the chapter lives inside the tension; hope chosen rather than felt | note lamentations/3 hard |
+| anger-at-god | Isaiah 55:8-9 used to shut down questions; context is God's freedom to pardon in verse 7; his word like rain makes him known; humility, not silence | note isaiah/55 hard |
+| anger-at-god | Job's friends sat seven days in silence | Job 2:13 |
+| anger-at-god | Psalm 13: permission to ask how long four times; faith arguing with God because it still believes he is there; pray all six verses, say verse 5 as the church's words; Psalm 88 never turns | plain psalms/13 1-6 hard and asks |
+| anger-at-god | Psalm 22 ends in praise widening to a people not yet born; remembering gives the pain somewhere to go | note psalms/22 summary; plain psalms/22 1-11 asks |
+| anger-at-god | Care lines | plain ruth/1 |
+| exhaustion | Jesus sleeps in the stern on the cushion through a storm; his sleep not flight from God as Jonah's, but trust | note mark/4 verses 37-38; Mark 4:1, 35 |
+| exhaustion | Weaknesses are human frailties, not sins; Christ knows tiredness, hunger, grief, fear and pain from the inside; come with confidence | plain hebrews/4 14-16 hard; note hebrews/4 verse 16 |
+| exhaustion | Willing spirit, weak flesh names the gap between intention and strength; Jesus names their weakness gently and does not stop loving them | note matthew/26 verses 40-41; plain matthew/26 36-46 asks |
+| exhaustion | David became exhausted; Abishai came to his aid; his men swore he would not go out to battle again; four brief battle reports end the chapter | 2 Samuel 21:15-17; note 2-samuel/21 summary |
+| exhaustion | Aaron and Hur hold up Moses' hands; whose arms could you hold up, have you let anyone hold up yours | Exodus 17:11-12; plain exodus/17 8-13 asks |
+| exhaustion | Jacob declines by pointing to the weakest; a leader sets the pace by the weakest member; God leads his flock so (Isaiah 40:11) | note genesis/33 verses 12-14 |
+| exhaustion | Psalm 3's heading: David fleeing Absalom; he sleeps and wakes, the LORD sustains him; name what you fear tonight and hand it over | note psalms/3 summary; plain psalms/3 5-8 asks |
+| exhaustion | A traveler looks to the hills; the Protector never sleeps when you cannot | note psalms/121 summary; plain psalms/121 3-8 asks |
+| exhaustion | The Servant brings justice quietly and gently; Matthew applies the song to Jesus | note isaiah/42 summary; Matthew 12:18-21 |
+| exhaustion | The Spirit intercedes; a comfort to anyone who cannot find words; weakness in prayer is expected; a wordless sigh | note romans/8 verse 26; plain romans/8 18-27 asks |
+| exhaustion | Isaiah 40:30-31: even youths tire; the chapters speak to people in exile, worn out in a foreign land; strength exchanged, not generated; the sequence ends in the ordinary daily walk | note isaiah/40 hard and verses 29-31 |
+| exhaustion | Psalm 127: does not tell you to stop working; worry not the same as work; sleep is a gift | plain psalms/127 1-2 asks |
+| exhaustion | Care lines | plain matthew/11; plain psalms/77 |
+| gambling | Eager to be rich not unpunished; the one who hastens after wealth does not see poverty coming; the chapter commends integrity over wealth and warns against greed | Proverbs 28:20, 22; note proverbs/28 summary |
+| gambling | The love of money never satisfies; riches hoarded or lost | note ecclesiastes/5 summary |
+| gambling | Those who want to be rich fall into a trap; godliness with contentment great gain; ask whether you want to be rich and what that wanting does | plain 1-timothy/6 3-10 hard and asks |
+| gambling | Hebrews 13:5 is not a promise of riches nor a rebuke of the poor, but a call to be free from the love of money | note hebrews/13 summary; plain hebrews/13 1-6 hard |
+| gambling | Paul answers Corinthian slogans; is it beneficial, is it mastering me; the slogan still lived by | note 1-corinthians/6 summary; plain 1-corinthians/6 12-14 asks |
+| gambling | One of the Bible's clearest sayings on confession; the verb for conceal also used of God covering sin, the difference is who covers | note proverbs/28 summary and words (H3680) |
+| gambling | The son comes to his senses and rehearses a speech; the father runs before he says a word; the turning matters, the welcome is a gift | note luke/15 verses 17, 18-19, 20; plain luke/15 11-19 hard |
+| gambling | The lot: even this apparently random act has its decision from the LORD; casting lots usually leaves a decision to God, not a wager | note proverbs/16 words (H1486); Find Help is-it-a-sin, the gambling question |
+| gambling | Four soldiers cast lots for the seamless tunic; John sees even the soldiers' gambling as fulfillment of Psalm 22:18 | note john/19 verses 23-24 |
+| gambling | Restore gently, a beautiful thing churches should practise; gentleness never means keeping serious wrongs quiet | plain galatians/6 1-5 hard |
+| gambling | The bet promises that one night can undo a hard life; what it is for is usually escape; walls between yourself and the trigger, the app, the account, the route past the machines | the topic's own first form (framing and application) in `client/public/wisdom/topics/` |
+| gambling | Where Christians differ: Scripture never names gambling; household money (1 Timothy 5:8); chasing, hiding, borrowing as signs of a grip; wrong in itself (1 Timothy 6:9, Ephesians 4:28, an industry profiting from those who cannot stop); small stakes as entertainment (Colossians 2:20-23); no side taken | Find Help is-it-a-sin, the gambling question, which sets out both and does not land |
+| gambling | Psalm 32: does not shame you; what silence costs and what confession gives; how quickly God forgives | plain psalms/32 1-5 asks |
+| gambling | Care lines | plain galatians/5; plain 1-timothy/6 |
+| shame | The first act after eating is to cover and hide; openness lost first; the first fear is the terror of a guilty conscience; God's first word is a question that seeks them out | note genesis/3 verses 7, 9, 10-11 |
+| shame | God makes garments of skin and clothes them; covers the shame they could not cover; God clothing sinners runs through Scripture; the one who made their clothes | note genesis/3 verse 21; plain genesis/3 20-24 asks |
+| shame | David fleeing his son; voices say God will not rescue him; the LORD lifts his head; the psalm turns and speaks to God | note psalms/3 summary; plain psalms/3 1-4 asks |
+| shame | Faces never ashamed; the heading, pretending insanity in an enemy city; thanks from humiliating places | Psalm 34:1 heading; plain psalms/34 1-10 asks |
+| shame | David seeks kindness for Jonathan's sake; Mephibosheth lame in both feet; land restored and a permanent place at the king's table; dead dog | note 2-samuel/9 summary; 2 Samuel 9:8, 13 |
+| shame | Twelve years bleeding; she comes trembling and tells all; Daughter gives her a family name in public after twelve years on the edges; by calling her out Jesus lets the crowd see she is clean | Luke 8:43; note luke/8 verses 47-48; plain luke/8 40-48 hard |
+| shame | Do you see this woman; Simon saw a sinner; Jesus let her come close when the room wanted her gone, spoke of her with honour | Luke 7:44; plain luke/7 36-50 hard and asks |
+| shame | Jesus endured the cross, scorning its shame; finished the race through shame and pain | Hebrews 12:2; plain hebrews/12 1-3 asks |
+| shame | Zion as barren and abandoned wife; her Maker her husband takes her back with everlasting compassion | note isaiah/54 summary |
+| shame | The word is near, not a height or depth; anyone can call | plain romans/10 5-13 hard and asks |
+| shame | Isaiah 64:6 needs care; a covenant people confessing; observances cannot cleanse while hearts turn away; verse 5 God welcomes those who do right; Father and potter; traditions differ; a confession, not an accusation | note isaiah/64 summary and hard; Isaiah 64:8 |
+| shame | Knowledge gained by disobedience brings shame, not freedom | note genesis/3 verse 7 |
+| shame | Shame lives on secrecy; a wise counselor a gift, not a defeat | the topic's own first form (application) |
+| shame | Psalm 25: what would you like God to forget; remembered according to his loving devotion, not your past | plain psalms/25 1-22 asks |
+| shame | Care lines | plain luke/7; plain psalms/69 |
+| guilt-and-conscience | Twenty years later the brothers connect their distress with Joseph; a boy's cries not erased; they name a specific wrong, victim and refusal, how repentance begins; a wrong never named aloud | note genesis/42 verse 21; plain genesis/42 18-24 asks |
+| guilt-and-conscience | A man sick and crushed by guilt; one man's experience, not a teaching that every illness is punishment; honest about pain and sin at once | note psalms/38 summary; plain psalms/38 1-22 hard and asks |
+| guilt-and-conscience | Two readings of who the Gentiles are; conscience part of created human nature, a real but fallible witness, weak (1 Corinthians 8:7) or seared (1 Timothy 4:2) | plain romans/2 12-16 hard; note romans/2 verse 15 |
+| guilt-and-conscience | The weak believer may be drawn into what he believes is sin by another's example; no one pushed to act against conscience | plain 1-corinthians/8 7-13 hard |
+| guilt-and-conscience | Uzziah's death year; Isaiah undone; the seraph's coal atones; he then volunteers | note isaiah/6 summary; Isaiah 6:7-8 |
+| guilt-and-conscience | Confess, repay in full, add a fifth; said sorry and given nothing back | note numbers/5 summary; plain numbers/5 5-10 asks |
+| guilt-and-conscience | Godly and worldly sorrow turn different ways; a grieving heart not the mark of someone God turned away; meant to end in freedom; returning guilt not proof of unforgiveness; can be part of anxiety, depression or a habit of mind | note 2-corinthians/7; plain 2-corinthians/7 8-12 hard |
+| guilt-and-conscience | A former persecutor, the worst of sinners, shown mercy as an example of Christ's patience; anyone too far gone | note 1-timothy/1 summary; plain 1-timothy/1 12-17 asks |
+| guilt-and-conscience | Animal blood made outwardly clean; Christ's blood cleanses the conscience, the inner place the old sacrifices could not reach; the goal is service | note hebrews/9 verses 13-14; plain hebrews/9 11-14 asks |
+| guilt-and-conscience | Draw near with hearts sprinkled clean; full assurance rests on the priest and the cleansing, not feelings | note hebrews/10 verses 21-22 |
+| guilt-and-conscience | Mark 3:28-29: defined by its setting; not a word in anger, a doubt or a single failure but a settled refusal; many feared it; the fear itself a sign the heart has not hardened; the promise comes first | note mark/3 verses 28-29; plain mark/3 22-30 hard |
+| guilt-and-conscience | Receive the forgiveness already paid rather than paying a settled debt | the topic's own first form (application) |
+| guilt-and-conscience | Psalm 130: if God kept score no one would stand; he does not keep score that way; pray verse 1 from wherever you are | plain psalms/130 1-4 asks |
+| guilt-and-conscience | Care lines | plain psalms/38; plain 2-corinthians/7 |
+| assurance-of-faith | Christians differ on whether a true believer can be lost; all agree the sheep's safety rests on his hand and the Father's power; many who worry are still listening for his voice | plain john/10 22-29 hard and asks; note john/10 verses 27-29 |
+| assurance-of-faith | Traditions read the Father's giving differently; every tradition reads the second half as unqualified welcome; he does not promise to check whether you were chosen | note john/6 verses 36-37; plain john/6 35-40 hard and asks |
+| assurance-of-faith | Not a spirit of slavery returning to fear; the Spirit's witness the ground of assurance, described differently (Wesley; Westminster 18.2, as the note gives them); what fear drives your relationship with God | note romans/8 verses 15, 16-17; plain romans/8 12-17 asks |
+| assurance-of-faith | No condemnation to no separation; churches differ on whether a believer can turn away; the fear of having lost God's love not usually the mark of one who has | note romans/8 verses 38-39; plain romans/8 31-39 hard |
+| assurance-of-faith | So that you may know; traditions explain assurance differently (Reformed, Wesleyan, Lutheran, Catholic, as the note gives them); all read John as giving confidence, grounded in Christ not feelings | plain 1-john/5 13-15 hard |
+| assurance-of-faith | Faith and doubt in one person; faith asks for more faith; Jesus heals at the mixed confession; you do not need perfect faith | note mark/9 verses 23-24; plain mark/9 14-29 asks |
+| assurance-of-faith | Little faith, not no faith; the rescue before the rebuke; the point is Jesus' hand | note matthew/14 verses 30-31; plain matthew/14 22-33 hard |
+| assurance-of-faith | Faith with no evidence but the manner of Jesus' dying; salvation without baptism, works or time to reform; if you think it too late, this story is for you | note luke/23 verses 42-43; plain luke/23 39-43 hard |
+| assurance-of-faith | Paul thanks God whenever he remembers them; writes in chains | plain philippians/1 3-11 asks; Philippians 1:13 |
+| assurance-of-faith | Near the end, expecting to die; what your confidence rests on | plain 2-timothy/1 8-12 hard and asks; 2 Timothy 4:6 |
+| assurance-of-faith | 2 Corinthians 13:5: Corinth testing Paul; he expects them to pass; the test is whether Christ is present; self-examination looks first to Christ | note 2-corinthians/13 hard; plain 2-corinthians/13 5-10 hard |
+| assurance-of-faith | Matthew 7:21-23: frightened many sincere people; those turned away rest on their works and never mention mercy; the answer is hearing and doing; the fear a sign you care what Jesus thinks | plain matthew/7 21-23 hard |
+| assurance-of-faith | Where Christians differ: perseverance (Reformed, Calvinist, much of the Baptist world); can fall away (Catholic, Orthodox, Lutheran, Wesleyan, Methodist), Hebrews 6:4-6, John 15:6; the creeds do not settle it; both lead to a humble clinging to Christ | plain john/10 22-29 hard; plain romans/8 31-39 hard; plain 1-john/5 13-15 hard; Honest Answer can-you-lose-your-salvation |
+| assurance-of-faith | Psalm 139: he knows the worst and has not let go; no place his hand cannot reach | plain psalms/139 1-12 asks |
+| assurance-of-faith | Care lines | plain 2-corinthians/13 |
+| spiritual-dryness | Far from the temple, thirsting like a deer, mocked with where is your God; the singer loves God and is still low; the psalm does not say why or give one cure | note psalms/42 summary; plain psalms/42 1-5 hard |
+| spiritual-dryness | Job cannot find God anywhere; trusts that God knows his way and testing will prove him gold | note job/23 summary |
+| spiritual-dryness | Those who fear the LORD walking in darkness are called to trust him; warning to those who light their own fires | note isaiah/50 summary |
+| spiritual-dryness | Forty years humbled and fed with manna; not a trap but for their good in the end (verse 16); the test showed Israel to itself; what you really live on | note deuteronomy/8 summary; plain deuteronomy/8 1-6 hard and asks |
+| spiritual-dryness | The LORD not in wind, earthquake or fire but a still, small voice; God answers with new work and the seven thousand | note 1-kings/19 summary |
+| spiritual-dryness | Springs in the Valley of Baca; the road runs through a valley of tears that is not skipped | note psalms/84 summary; plain psalms/84 1-7 asks |
+| spiritual-dryness | Seed grows while the man sleeps; the point is the growth without him; much of God's work happens while we are not watching | note mark/4 verses 26-27; plain mark/4 26-29 asks |
+| spiritual-dryness | Eyes kept and opened at the breaking of bread; hearts burning long before they understood why | note luke/24 summary and verse 32; plain luke/24 28-35 asks |
+| spiritual-dryness | Union not a technique but a dependence; remain means keep receiving; the branch does not strain | note john/15 verse 4; plain john/15 1-4 asks |
+| spiritual-dryness | Created, redeemed, called by name; with them through water and fire | note isaiah/43 summary |
+| spiritual-dryness | Isaiah 59:2 addressed to a society of violence, lies and injustice; ends with God redeeming those who turn and his Spirit and words never leaving them; the faithful low without a stated cause | note isaiah/59 summary; plain psalms/42 1-5 hard |
+| spiritual-dryness | God often nearest when he feels furthest; faith not built on feeling and often returning through the habit; dryness and depression can wear the same face | the topic's own first form (framing and application) |
+| spiritual-dryness | Psalm 63: longing itself a kind of prayer; praying verses 1 to 5 in the morning, as Christians have for centuries | plain psalms/63 1-5 asks; Psalm 63:1 heading |
+| spiritual-dryness | Care lines | plain psalms/42 |
+| hell-and-judgment | Abraham pleads for Sodom; will not the Judge of all the earth do what is right; God did not rebuke the question and let him press it again and again | note genesis/18 summary and verse 25; plain genesis/18 22-33 hard |
+| hell-and-judgment | Spoken to exiles crushed by guilt; no pleasure in the death of the wicked; not a ledger to trap anyone but a call to turn and live | note ezekiel/33 summary and hard |
+| hell-and-judgment | Scoffers; not slow but patient; patience mistaken for slowness | note 2-peter/3 summary; plain 2-peter/3 8-10 asks |
+| hell-and-judgment | Not sent to condemn but to save; judgment the consequence of rejecting rescue, not the reason for the mission; not meant to frighten into faith | note john/3 verse 17; plain john/3 16-21 hard |
+| hell-and-judgment | The two outcomes side by side; Christians differ whether eternal requires unending conscious experience, final destruction, or age-long punishment; the outcome final; the last word is life | note matthew/25 verse 46 |
+| hell-and-judgment | A command instead of a number; salvation not a statistic but a door; not meant to scare into sleepless fear; the door is open | note luke/13 verse 23; plain luke/13 22-30 hard |
+| hell-and-judgment | The church confesses the judgment (Nicene Creed); the notes say nothing about any particular person's eternal state; the judge is Jesus who died for sinners; grieving someone who died without clear faith | plain revelation/20 11-15 hard |
+| hell-and-judgment | Love that did not oppose what destroys the beloved would be indifference; the cross shows both; for those who know God's love judgment is no longer to dread | note 1-john/4 hard; plain 1-john/4 17-21 hard |
+| hell-and-judgment | Just and justifier; the cross where justice and mercy meet, described in different ways | note romans/3 verse 26 |
+| hell-and-judgment | Luke 16: most read it as a parable; pictures hard to take as a map; the chasm means finality; the sin was the closed hand at the gate | plain luke/16 19-26 hard; note luke/16 verse 26 |
+| hell-and-judgment | Jesus' sternest warnings often aimed at the religious; Abraham trusted God's justice would be better than his own | Honest Answer is-hell-forever-or-does-it-end |
+| hell-and-judgment | Where Christians differ: endless conscious separation, the most widely held view (Augustine on Matthew 25:46); final destruction (Matthew 10:28, Romans 6:23); a minority hope of restoration, which the church has generally not affirmed; none settled | plain matthew/25 41-46 hard; Honest Answer is-hell-forever-or-does-it-end |
+| hell-and-judgment | Psalm 96: judgment as good news from the side of the poor and the wronged | plain psalms/96 10-13 asks |
+| hell-and-judgment | Care lines | plain revelation/20 |
+| prayer-struggles | Disciples learn by watching Jesus pray; Christian prayer a sharing in his relation to the Father; teach us to pray, not about prayer | note luke/11 verse 1; plain luke/11 1-4 asks |
+| prayer-struggles | Not wearing God down with words; the Father knows; prayer simple, not pointless; not waiting for the right words | note matthew/6 verses 7-8; plain matthew/6 5-8 asks |
+| prayer-struggles | Hannah prays with moving lips; Eli thinks her drunk; poured out her soul; only the words you thought he wanted | 1 Samuel 1:6-7; plain 1-samuel/1 9-18 asks |
+| prayer-struggles | The psalmist tells his own soul to rest; pour out your hearts, not tidy prayers | plain psalms/62 1-12 asks |
+| prayer-struggles | Nehemiah's silent prayer before the king | note nehemiah/2 summary |
+| prayer-struggles | Morning plea and waiting; start tomorrow early and watch for an answer | note psalms/5 summary; plain psalms/5 1-7 asks |
+| prayer-struggles | The point stated first: pray and not lose heart; the enemy is weariness; works by contrast, not nagging an unjust judge | note luke/18 verse 1; plain luke/18 1-8 hard |
+| prayer-struggles | A real request and a real surrender; submission entrusts the wanting | note matthew/26 verse 39 |
+| prayer-struggles | Always lives to intercede; someone praying for you who never stops | plain hebrews/7 20-28 hard |
+| prayer-struggles | Mark 11:24 badly misused; hurt those who prayed for a sick child or marriage; faith in God, then forgiveness; Gethsemane; Paul's thorn; bold prayer, not a tool | note mark/11 verse 24; plain mark/11 20-26 hard |
+| prayer-struggles | Psalm 116: because God listened he will pray as long as he lives; answered prayer a reason for more | plain psalms/116 1-11 asks |
+| waiting-on-god | Psalm 27 ends in certainty of seeing God's goodness and a call to wait; ends before the answer comes; said twice because once is rarely enough | note psalms/27 summary; plain psalms/27 7-14 asks |
+| waiting-on-god | More than watchmen wait for the morning; no promise of when, only that it will; still waiting when it ended | note psalms/130 summary; plain psalms/130 5-8 hard and asks |
+| waiting-on-god | Good to wait quietly; the chapter lives inside the tension; hope chosen rather than felt | note lamentations/3 summary and hard |
+| waiting-on-god | The watchtower; write the vision, it awaits its time; the righteous live by faith | note habakkuk/2 summary |
+| waiting-on-god | God's faithfulness repeated twice; a promise that took twenty-five years; no promise of a child to every couple, childlessness not a judgment | note genesis/21 verses 1-2; plain genesis/21 1-7 hard and asks |
+| waiting-on-god | Love and delay in one breath; read the delay by the love; rules out waiting as indifference; loved and facing a long wait at once | note john/11 verses 5-6; plain john/11 1-6 asks |
+| waiting-on-god | Patient like a farmer; no promise of being put right in this life, many prophets not rescued; never a word to stay under abuse or exploitation | note james/5 summary; plain james/5 7-12 hard |
+| waiting-on-god | Be still, do not fret; stillness is refusing to be pushed by envy | note psalms/37 summary; plain psalms/37 1-11 asks |
+| waiting-on-god | Saved in hope; hope looks to what is unseen; certain in its object, unseen in experience; patient endurance not anxiety | note romans/8 verses 24-25 |
+| waiting-on-god | Wait for the promised gift; a job instead of a date; power promised for a task too big | plain acts/1 4-8 asks |
+| waiting-on-god | The widow kept coming back | plain luke/18 1-8 asks |
+| waiting-on-god | The God who seems slow is not absent | the topic's own first form (framing) |
+| waiting-on-god | Psalm 33: the congregation waiting; none of the things people trust saves | note psalms/33 summary; plain psalms/33 1-22 asks |
+| waiting-on-god | Care lines | plain psalms/130 |
+| regret | Peter breaks down; tears the beginning of repentance; the tomb's message names him, he has not been dropped; Jesus had known and chosen him anyway | note mark/14 verses 71-72; plain mark/14 66-72 hard and asks |
+| regret | God restores the harvests and repays the years the locusts ate | note joel/2 summary |
+| regret | Do not stay fixed on the former things; a new exodus greater than the first | note isaiah/43 summary; Isaiah 43:16-19 |
+| regret | Not yet arrived; forgetting what is behind; an old success you live on or an old failure you cannot put down | plain philippians/3 12-16 asks |
+| regret | Joseph names the sale, then tells them not to be distressed; neither truth cancels the other; the sale evil, God used it to save | note genesis/45 verses 4-5; plain genesis/45 4-8 hard |
+| regret | Least of the apostles because he persecuted the church; grace made him what he is and was not in vain; what grace could make of you | note 1-corinthians/15 verses 9-10; plain 1-corinthians/15 1-11 asks |
+| regret | Number our days; not morbid; those who know their days are few learn what matters | note psalms/90 summary; plain psalms/90 7-12 asks |
+| regret | Micah closes with a hymn to the God who pardons and casts sins into the sea | note micah/7 summary |
+| regret | New creation; what is the old that has passed and the new God is doing | plain 2-corinthians/5 11-17 asks |
+| regret | Hebrews 12:16-17: Esau could not undo the consequence; not God refusing a sincere turning; another reading of hardening; the note does not choose; Esau later embraced Jacob; the fear not the mark of one who has fallen | plain hebrews/12 12-17 hard; Genesis 33:4 |
+| regret | Twenty years for Joseph's brothers | plain genesis/42 18-24 asks |
+| regret | Regret that leads to repentance and life against regret that circles the wound; you cannot rewrite the road behind you but are not walking alone | the topic's own first form (framing and application) |
+| regret | Psalm 90:14-17: glad for as many days as afflicted; establish the work of our hands | Psalm 90:14-17 |
+| regret | Care lines | plain psalms/90 |
