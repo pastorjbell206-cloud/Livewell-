@@ -868,7 +868,8 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   longer match its file's hash, so change a caption and make its audio again.
   Films are drawn with the art kit's stage set (`components/art/stage.tsx`)
   and offered on other pages only through their own data
-  (`film-links.json`, the passage index), never a typed list.
+  (`film-links.json`, the passage index), never a typed list, and never on
+  a wisdom topic marked heavy (`data/sensitive-pages.json`), as with tools.
 - **Films in the family devotions (James, 2026-11-22)**: a devotion or a
   catechism question whose passage or subject has a finished Bible Explorer
   film offers it as "Watch first", played in place at the younger level
