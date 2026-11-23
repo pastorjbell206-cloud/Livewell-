@@ -397,9 +397,9 @@
             ],
             "line": "One of the towns on Samuel's yearly circuit as judge, with Gilgal and Mizpah (7:16). Saul kept two thousand men at Michmash and in the hill country of Bethel (13:2).",
             "label": {
-              "dx": -10,
-              "dy": 1,
-              "anchor": "end"
+              "dx": 0,
+              "dy": -10,
+              "anchor": "middle"
             }
           },
           {
@@ -428,9 +428,9 @@
             ],
             "line": "Jesse's town, where Samuel anointed David, the youngest son (16:1-13). David went back and forth from Saul to tend his father's sheep here (17:15).",
             "label": {
-              "dx": 0,
-              "dy": 19,
-              "anchor": "middle"
+              "dx": -10,
+              "dy": 10,
+              "anchor": "end"
             }
           },
           {
