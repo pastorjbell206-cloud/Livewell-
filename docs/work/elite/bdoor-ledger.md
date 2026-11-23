@@ -16499,3 +16499,22 @@ Cut in chapter 26: Philippians 2:6-11 and Jesus telling Peter to put away his sw
 | No warrant for violence against any person or people; no people living today is Amalek; no nation, land or conflict of today | 8-12 `hard` | deuteronomy/plain/25.json (17-19, `hard`); exodus/plain/17.json (14-16, `hard`) | Repository; as the site's notes state it |
 
 Cut in chapter 27: 1 Peter 2:22 and the son of David who never deceives (the deep note says it is better not to force a link to Christ here); Achish called king though Philistine rulers were usually called lords (not needed); Saul's word of blessing in 26:25 described as parting words, so that the word stays inside quoted Scripture.
+
+## The plain notes on 1 Samuel 28 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The story moving to this night since chapter 15; Samuel's death repeated; David marching with the Philistines, his answer given without comment; Shunem north of the Jezreel Valley and Gilboa to the south, the valley and its roads; Saul's removal of mediums under the law and the darkness of his visit; dreams, Urim and prophets; Saul cut off from the priesthood at Nob, Abiathar with David | 1-6 | 1-samuel/28.json `story`, `historical`, `cultural`, `words` (urim) | Repository |
+| ‘This is a law for Israel about its own worship...’ to ‘...the witch trials of later centuries.’ | 1-6 | deuteronomy/plain/18.json (9-14, `hearers`); exodus/plain/22.json (18-20, `hard`) | Reused whole, word for word (a guard sentence, not a care line) |
+| Leviticus 19:31; Deuteronomy 18:11 | 1-6 | 1-samuel/28.json `historical`; BSB | Repository; BSB text |
+| Necromancy widespread; Mesopotamian and Hittite rites and a pit, the word for medium linked by some; the law's reasons; Endor north of Shunem near Moreh and Tabor, the dangerous night journey; the reversals (an oath by the LORD for a forbidden practice); elohim of a being beyond the living (Isaiah 8:19); Samuel known by his robe (15:27-28) | 7-14 | 1-samuel/28.json `cultural`, `historical`, `literary`, `words` (ov, elohim) | Repository |
+| Isaiah 8:19 | 7-14 | 1-samuel/28.json `cultural`; isaiah/8.json; BSB | Repository; BSB text |
+| Did Samuel come back: God permitting a real appearance (the narrator's word, the true prophecy, the woman's shock; Ben Sira, Sirach 46); a deceiving spirit, held by a number of early Christian writers; the medium's performance, struggling with the true prophecy; early Christian opinion divided; no side; the practice condemned, no help, God's word standing, no support for contacting the dead | 7-14 `hard` | 1-samuel/28.json `hard`; isaiah/8.json `hard`; bible/doctrines/intermediate.json | Repository; the answers in their holders' terms |
+| Samuel's word repeating chapter 15; God's word standing in a strange setting; Saul's name and asking in vain; the woman not mocked and her full hospitality, bread baked in haste; the calf kept in the house downstairs; the ending in darkness | 15-25 | 1-samuel/28.json `literary`, `cultural`, `words` (shaal), `story`; context/worlds/old-testament-world.json (a village in the hill country) | Repository |
+| 1 Chronicles 10:13; Psalm 13:1 | 15-25 | 1-samuel/28.json `historical`; BSB | Repository; BSB text |
+| God's silence: his chosen ways of speaking, silence as judgment after long refusal, no forcing guidance; not every silence a judgment, the psalms' faithful cries | 15-25 `hard` | 1-samuel/28.json `doctrines` (revelation), `questions`; psalms/plain/142.json (1-7, `hard`: God kept his prayer in the Bible) | Repository |
+| The care line (‘If you are afraid that you have fallen away from God...’ to ‘...lists places to turn.’) | 15-25 `hard` | hebrews/plain/3.json (12-15), hebrews/plain/10.json (26-31) and others (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 28: Hebrews 2:14-15 and Revelation 1:18 set against Saul's fear of death (the deep note calls the link thematic, not a line the New Testament draws to this chapter); the names of early Christian writers on each side (not given in the repository's notes); 28:15's speech quoted only after Saul's opening words, to avoid a speech tag inside a quotation; David's answer in 28:2 called noncommittal (a reading the repository gives only for 29:8; cut before commit).
