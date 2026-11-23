@@ -1,0 +1,81 @@
+{
+  "id": "regret",
+  "updated": "2026-11-23",
+  "passages": [
+    {
+      "ref": "Mark 14:72",
+      "context": "Mark 14:66-72",
+      "where": "The rooster crows a second time, Peter remembers what Jesus said, and he breaks down and weeps. The site's note says his tears are the beginning of repentance, not its end, and its plain note points to the message from the empty tomb, which names him: Peter has not been dropped. The plain note adds that the rooster also proved Jesus had known all along and had chosen him anyway."
+    },
+    {
+      "ref": "Joel 2:25",
+      "context": "Joel 2:23-27",
+      "where": "After a plague of locusts has stripped the land, God promises to repay his people for the years the locusts ate. The site's note on the chapter says the LORD answers their return with pity: he will restore the harvests and repay the lost years. What was eaten cannot be uneaten, but it can be made up."
+    },
+    {
+      "ref": "Isaiah 43:18-19",
+      "context": "Isaiah 43:16-21",
+      "where": "To exiles who looked back to the exodus as the great thing God once did, God says not to stay fixed on the former things, because he is about to do something new, a way in the wilderness and streams in the desert. The site's note says the chapter announces a new exodus greater than the first."
+    },
+    {
+      "ref": "Philippians 3:13-14",
+      "context": "Philippians 3:12-16",
+      "where": "Paul says he has not yet arrived, but forgetting what is behind and straining toward what is ahead, he presses on toward the goal. The site's plain note asks what lies behind you that you keep looking back at, an old success you live on or an old failure you cannot put down, and what one step toward Christ you could take this week."
+    },
+    {
+      "ref": "Genesis 45:4-5",
+      "context": "Genesis 45:1-8",
+      "where": "Joseph names what his brothers did, the one you sold into Egypt, and then tells them not to be distressed or angry with themselves, because God sent him ahead to save lives. The site's plain note says the text lets neither truth cancel the other: the sale was evil, and God used it to save many. Their regret is met not with denial but with grace."
+    },
+    {
+      "ref": "1 Corinthians 15:9-10",
+      "context": "1 Corinthians 15:8-11",
+      "where": "Paul calls himself the least of the apostles and unworthy of the name, because he persecuted the church of God, and in the next breath says that by the grace of God he is what he is, and that grace was not wasted on him. The site's plain note says that if grace could make the church's enemy an apostle, you may ask what it could make of you."
+    },
+    {
+      "ref": "Psalm 90:12",
+      "context": "Psalm 90:10-12",
+      "where": "Moses' psalm sets the eternal God beside the brevity of human life and asks God to teach his people to number their days, so that they may gain a heart of wisdom. The site's plain note says this is not morbid: people who know their days are few often learn what matters most."
+    },
+    {
+      "ref": "Micah 7:18-19",
+      "context": "Micah 7:18-20",
+      "where": "The book of Micah closes with a hymn to a God who pardons iniquity, does not keep his anger forever and delights in loving devotion, and who will cast all our sins into the depths of the sea. What God has thrown into the sea is not for us to keep diving after."
+    },
+    {
+      "ref": "2 Corinthians 5:17",
+      "context": "2 Corinthians 5:14-17",
+      "where": "Paul says that anyone in Christ is a new creation: the old has passed away, and the new has come. The site's plain note asks what the old is that has passed away for you, and what new thing God is doing."
+    }
+  ],
+  "misread": [
+    {
+      "ref": "Hebrews 12:16-17",
+      "context": "Hebrews 12:14-17",
+      "taken": "Esau, who “could find no ground for repentance, though he sought the blessing with tears,” is held up to people full of regret as proof that some regret comes too late, and that some doors never open again.",
+      "says": "The site's plain note says many readers take it to mean that Esau could not undo what he had done: his father would not take back the blessing given to Jacob, and the tears were for the lost blessing. On that reading it is not a story about God refusing a sincere turning of heart; others read it as a warning that a settled despising of God's gifts can harden a person, and the note does not choose. It also says Esau's story does not end there: years later he ran to meet Jacob, embraced him and wept. And if you are afraid you have gone too far, the note says that fear is not usually the mark of someone who has."
+    }
+  ],
+  "whole": [
+    "Regret comes in more than one kind. Some is about sin: words that cannot be taken back, a marriage you did not fight for, a child you were too hard on, years given to something that hurt the people you love. Some is about loss with no sin in it at all: the job you did not take, the parent you did not visit often enough, the years that went to the wrong things. Regret tends to arrive late at night, and it asks the same questions over and over: what if, if only, how could I.",
+    "Scripture does not pretend the past can be edited. Peter heard the rooster and broke down and wept. Paul called himself unworthy to be an apostle because he had persecuted the church. Joseph's brothers carried what they had done for twenty years. But Scripture draws a line between two ways of looking back: the regret that turns toward God and leads to repentance and life, and the regret that only circles the wound. Much of the second kind grows from a quiet belief that the past decides everything that follows, and that what is lost can never be given back.",
+    "So take the regret apart. Where there is sin in it, confess it to God, make what amends you honestly can, and then stop paying a debt that has been settled. Where there is loss in it, grieve it like any other grief, without pretending it was nothing. Let the past teach you without letting it sentence you; Psalm 90 asks God to teach us to number our days, not to replay them. Paul never forgot what he had been, but he said the grace of God had made him what he was and was not wasted on him. The site's plain note on Philippians 3 asks what you keep looking back at, an old success you live on or an old failure you cannot put down.",
+    "The hope here is a God who restores what cannot be undone. He promised Israel he would repay the years the locusts had eaten. He told his people not to stay fixed on the former things, because he was doing something new and making a way in the wilderness. After Peter's denial, the message from the empty tomb named him: “tell His disciples and Peter.” You cannot rewrite the road behind you, but you are not walking the road ahead alone."
+  ],
+  "sit": "What is the one regret you keep returning to, and how much of it is sin to confess, and how much is loss to grieve?",
+  "prayer": {
+    "ref": "Psalm 90:14-17",
+    "lead": "The psalm that asks God to teach us to number our days ends by asking him to make his people glad for as many days as they have been afflicted, and to establish the work of their hands. Pray it for the years that are left."
+  },
+  "next": [
+    { "kind": "Wisdom", "label": "Guilt and Conscience", "href": "/wisdom/guilt-and-conscience" },
+    { "kind": "Wisdom", "label": "Starting Over", "href": "/wisdom/starting-over" },
+    { "kind": "Wisdom", "label": "Shame", "href": "/wisdom/shame" },
+    { "kind": "Reading", "label": "Success and Failure", "href": "/life/success-and-failure" },
+    { "kind": "Study guide", "label": "Forgiveness", "href": "/studyguides/forgiveness" }
+  ],
+  "careLines": [
+    { "from": "psalms/plain/90", "text": "If your grief feels too heavy to carry, please tell someone you trust: a pastor, a friend or a doctor." },
+    { "from": "psalms/plain/90", "text": "The Find Help page on this site lists places to turn." }
+  ]
+}
