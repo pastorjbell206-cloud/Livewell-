@@ -16297,3 +16297,5 @@ Cut in chapter 14: Mark 7:8-13 and the gospel's Son who is not spared set agains
 | The care line (‘If you are afraid that you have fallen away from God...’ to ‘...lists places to turn.’) | 24-35 `hard` | hebrews/plain/3.json (12-15), hebrews/plain/10.json (26-31) and others (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 15: Matthew 9:13 and 12:7, Hebrews 10:5-10 and Saul as the dark background for the King who obeyed (the deep note calls the link a theme, not a line the New Testament draws to this chapter); the manner of Agag's death (told in the text, not lingered over here); Jewish readings of Amalek as a charge to resist cruelty (kept in the Deuteronomy 25 note).
+
+A second correction to 1 Samuel's book page, made after chapter 15 (2026-11-23): the part on Endor and Mount Gilboa said that Saul ‘falls on his own sword’, and the hard-passage line spoke of his death ‘by his own sword’. Both now say that he took his own life, by his own hand, so that the page names no means of self-harm; the verse itself (31:4) stands in the Bible text beside it. The care line that follows is unchanged.
