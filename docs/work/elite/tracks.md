@@ -232,10 +232,11 @@ Titles and the page each would open. Every address below was live on 2026-11-21.
 11. **The Mark study (2026-11-23).** Its name, "Deep in one: the Gospel of Mark", and the reader's words for who it is for, "I want to know one book well"; the two retitled sessions; and that it says "about 15 minutes" a session, the long chapters 14 and 15 at 20.
 12. **The leader's guides (2026-11-23).** Their advice on size (four to eight for the skeptic, four to ten for Mark), seventy-five minutes, the order of a meeting, and what a leader does when someone is hurting or a child may be in danger, are new sentences in his name. The track for someone new had none on that day; the third run wrote it (below).
 13. **The track for someone who stepped back (third run).** Its name, "Your questions, taken seriously", the road's own note on /start; the two sessions it adds to the proposed ten (John 9 and Matthew 5, below); that "When God seems silent" opens the page on feeling far from God and keeps the family film as an extra; and every sentence of its teaching and its leader's guide, which meet people a church has hurt.
+14. **The track for going deeper (third run).** Its name, "Study, history, doctrine", the road's own note; that session 10 opens the which-view page and not the theology quiz (above), and whether the quiz should keep recommending essays from the whole archive; and the choice of Philippians and Romans 8 as the book to read whole and the hard chapter to study.
 
 ## Not built
 
-- The tracks for going deeper and for the family, until the third run writes them (below), and a second book study.
+- The track for the family, until the third run writes it (below), and a second book study.
 - A PDF of a track or of a leader's guide (decision 8). Each prints from the browser.
 - Any account, sync between devices, or reminder.
 
@@ -286,7 +287,7 @@ James on 2026-11-23, the same request: "Finish the tracks: 'I'm skeptical' first
 
 ### The engine
 
-Two changes to the kinds (`scripts/lib/tracks.mjs`, `lib/tracks.ts`): `history` for church history, the course or one of its lessons; and `case`, widened to take the library's room (/questions) and its areas as well as a piece. The test that held the leader's guides to the skeptic's track and Mark now holds every track to having one, and the page test for a track with no leader's guide yet serves a copy of the first track without its guide.
+Changes to the kinds (`scripts/lib/tracks.mjs`, `lib/tracks.ts`), each made with the track that first needed it: `history` for church history, the course or one of its lessons, and `case` widened to take the library's room (/questions) and its areas as well as a piece (the track for someone who stepped back); `bible` for the Study Bible's own pages (its front page, the story, the doctrines, the guides), `context` for Bible background, a guide or the list of them, and `guide` widened to take the study guides' own page (the track for going deeper). The test that held the leader's guides to the skeptic's track and Mark now holds every track to having one, and the page test for a track with no leader's guide yet serves a copy of the first track without its guide.
 
 ### The third track: Your questions, taken seriously (I've stepped back from faith)
 
@@ -318,6 +319,33 @@ The leader's guide is for a group that can hold people who still believe, people
 ### A leader's guide for the track for someone new
 
 `new-to-this.json` now has its `leader`, in the same six parts. Two people, someone new and a friend further on, are as good as a group of eight. Where churches differ (baptism, the Supper, some of the Spirit's gifts) the leader says what all share and sends each person to their own pastor, as the sessions do; doubt is given time, as session 10 gives it. The guide closes with the same word on Find Help as the others, naming a habit someone cannot break on their own among the weights to watch for.
+
+### The fourth track: Study, history, doctrine (I want to go deeper)
+
+Twelve sessions, `client/public/tracks/deeper.json`, for the road "If you want to go deeper", which now names it. Its name is the road's own note on /start. All six of the road's steps are inside it: the Study Bible in session 1, the guides to reading in 2, the doctrine studies in 6, the creeds in 7, church history in 8, and the views set side by side in 9.
+
+It follows the proposed list with two changes. Session 5 opens the background guide to Philippians 4:13 in its setting, a verse nearly everyone quotes, which ties back to session 1's suggestion to read Philippians whole; the list of every background guide stays as an extra. Session 10 opens "Where do you lean, and why?" (/theology/which-view) instead of the theology quiz. The quiz loads its questions from the database and ends on essays chosen by the site's older pillars from the whole archive, not from the public shelf, so it could send a reader to a retired essay; the which-view page works from the site's own files, calls itself "a mirror, not a verdict", and sends the reader on to the full doctrine. Session 12 opens the study guides and does not link /tracks, because the way back is never shown on the tracks' own pages; its teaching names the tracks' leader's guides instead.
+
+| # | Session | Opens | Kind |
+|---|---|---|---|
+| 1 | Read a whole book | The Study Bible | Study Bible |
+| 2 | How each kind of book reads | Guides to reading the Bible | Study Bible |
+| 3 | Seven steps on a hard chapter | The guided study of Romans 8 | Bible study |
+| 4 | The whole story | The Bible's story in eleven parts | Study Bible |
+| 5 | The world it was written in | What does Philippians 4:13 really mean? | Bible background |
+| 6 | One doctrine, followed through | The doctrines of the Bible | Study Bible |
+| 7 | The words the church confessed | Creeds and confessions | Creed |
+| 8 | Two thousand years | Church history | Church history |
+| 9 | Where Christians differ | Compare the views | Where Christians differ |
+| 10 | Where you lean, and why | Where do you lean, and why? | Where Christians differ |
+| 11 | A rule of life | Build a rule of life | Tool |
+| 12 | Hand it on | Small group study guides | Study guide |
+
+With its extra links the track uses eleven kinds of page: the Study Bible's own pages (the new kind `bible`), a book, the guided study and the method, a chapter, a plan (the whole story in 2027), Bible background (the new kind `context`), creeds, church history, where Christians differ, a tool, and the study guides, whose own page the kind `guide` now takes as well as a single guide. Session 3 carries the care line from Romans 8's own notes for someone afraid they have lost God's love, beside Romans 8:38-39; no other session touches sin, guilt, fear, death or doubt in its own words, and the leader's guide speaks to a study that lands on someone's life.
+
+Every claim outside Scripture rests on a live page: that Philippians can be read aloud in about fifteen minutes and is Paul's warmest letter, written from prison (its introduction); what each guide to reading covers, that the heroes of the stories are rarely models, that Hebrew poetry works by parallel lines and does not rhyme, that a proverb is not a promise, and that reading a letter is reading someone else's mail (the guides); the seven steps (the study method, `lib/study-method.ts`); the three readings of Romans 8:29-30 and that the notes do not choose (Romans 8's notes); the story's opening paragraph, its eleven parts and its placing of each chapter (the story page), and the 2027 plan's order (it is built from the story); the verse in its setting, the prisoner's thank-you note, the hunger of verse 12 and the thanks of verse 14 (the background guide); what a doctrine study holds (the doctrines page); Arius, Nicaea in 325, the one Greek word, Constantinople in 381, and the churches that confess the creed (the Nicene Creed's page); the course's fourteen lessons from Pentecost to the church since 1900, the martyrs and monks, the crusades, the inquisition, the revival preachers and slavery, the councils as a human story, and the Reformation's recovery and its violence and division (the course and its lessons); first, second and third order, with the Trinity, baptism, God's rule and human freedom, and the age of the earth as the site marks them (`lib/theology.ts`); "a mirror, not a verdict" (the which-view page); the trellis, being formed by what you repeatedly do, and the rhythms named (the rule of life); and the study guides' leader's guides with the answer behind every question (the study guides page).
+
+The leader's guide is for a group already reading the Bible that wants more than a devotional. It says the sessions ask for reading between meetings, to sort a disputed question by its order before arguing it, to let each view be stated as its own defenders would accept, to hold the line where the creeds hold it and an open hand elsewhere, to welcome people from other churches, and what to do when a doctrine lands on someone's grief or fear.
 
 ### Gates record (third run, first push: the track for someone who stepped back, and the first track's leader's guide)
 

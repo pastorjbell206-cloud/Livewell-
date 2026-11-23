@@ -173,6 +173,10 @@
       "title": "If you want to go deeper",
       "note": "Study, history, doctrine",
       "plate": "books",
+      "track": {
+        "slug": "deeper",
+        "sessions": 12
+      },
       "steps": [
         {
           "title": "Read a whole book",

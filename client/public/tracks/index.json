@@ -331,6 +331,114 @@
       ]
     },
     {
+      "slug": "deeper",
+      "title": "Study, history, doctrine",
+      "for": "I want to go deeper",
+      "road": "deeper",
+      "subtitle": "Twelve short sessions for someone who wants to go deeper: read whole books, learn how each kind reads, follow a doctrine through, and meet the creeds, the councils and where Christians differ.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "bible",
+        "book",
+        "chapter",
+        "compare",
+        "context",
+        "creed",
+        "guide",
+        "history",
+        "plan",
+        "study",
+        "tool"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Read a whole book",
+          "minutes": 10,
+          "kind": "bible",
+          "opens": "The Study Bible"
+        },
+        {
+          "n": 2,
+          "title": "How each kind of book reads",
+          "minutes": 10,
+          "kind": "bible",
+          "opens": "Guides to reading the Bible"
+        },
+        {
+          "n": 3,
+          "title": "Seven steps on a hard chapter",
+          "minutes": 15,
+          "kind": "study",
+          "opens": "The guided study of Romans 8"
+        },
+        {
+          "n": 4,
+          "title": "The whole story",
+          "minutes": 10,
+          "kind": "bible",
+          "opens": "The Bible's story in eleven parts"
+        },
+        {
+          "n": 5,
+          "title": "The world it was written in",
+          "minutes": 10,
+          "kind": "context",
+          "opens": "What does Philippians 4:13 really mean?"
+        },
+        {
+          "n": 6,
+          "title": "One doctrine, followed through",
+          "minutes": 10,
+          "kind": "bible",
+          "opens": "The doctrines of the Bible"
+        },
+        {
+          "n": 7,
+          "title": "The words the church confessed",
+          "minutes": 10,
+          "kind": "creed",
+          "opens": "Creeds and confessions"
+        },
+        {
+          "n": 8,
+          "title": "Two thousand years",
+          "minutes": 10,
+          "kind": "history",
+          "opens": "Church history"
+        },
+        {
+          "n": 9,
+          "title": "Where Christians differ",
+          "minutes": 10,
+          "kind": "compare",
+          "opens": "Compare the views"
+        },
+        {
+          "n": 10,
+          "title": "Where you lean, and why",
+          "minutes": 10,
+          "kind": "compare",
+          "opens": "Where do you lean, and why?"
+        },
+        {
+          "n": 11,
+          "title": "A rule of life",
+          "minutes": 10,
+          "kind": "tool",
+          "opens": "Build a rule of life"
+        },
+        {
+          "n": 12,
+          "title": "Hand it on",
+          "minutes": 10,
+          "kind": "guide",
+          "opens": "Small group study guides"
+        }
+      ]
+    },
+    {
       "slug": "mark",
       "title": "Deep in one: the Gospel of Mark",
       "for": "I want to know one book well",
