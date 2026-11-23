@@ -14,7 +14,7 @@ export default function Privacy() {
           Privacy Policy
         </h1>
         <div style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: "1.8", color: "var(--ink2)" }}>
-          <p style={p}><strong>Last updated:</strong> July 2026</p>
+          <p style={p}><strong>Last updated:</strong> November 2026</p>
           <p style={p}>
             This policy explains what LiveWell by James Bell collects, how it is used, and the choices you have. The short version: we collect the
             least we can, we never sell your information, and the only personal detail we ask for is an email address you choose to give.
@@ -47,6 +47,11 @@ export default function Privacy() {
             We use one essential cookie to keep the site owner logged in to the admin panel. For readers, we store a single random identifier in your
             browser&rsquo;s local storage so a page view and a repeat visit can be told apart; it carries no name or contact detail. We do not use
             third-party advertising or cross-site tracking cookies. You can clear this at any time by clearing your browser&rsquo;s site data.
+          </p>
+          <p style={p}>
+            What you save or start here (highlights, notes, saved pages, your place in plans and tools) is kept in your browser&rsquo;s local storage
+            too, on your device only; we never receive it. If you carry it to another device from My Library, the file or link you make holds that
+            reading and goes only where you send it. Our page counters are set never to record what a carry link holds.
           </p>
 
           <h2 style={h2}>Third-party services</h2>

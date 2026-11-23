@@ -24,10 +24,11 @@
  */
 import { lazy, Suspense, useEffect, useState, type ReactNode } from "react";
 import { Link } from "wouter";
-import { ArrowRight, LifeBuoy, Mail, Mic, Smartphone, UserRound } from "lucide-react";
+import { ArrowRight, Globe, LifeBuoy, Mail, Mic, Smartphone, UserRound } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import FollowRow from "@/components/FollowRow";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import RoadPlate from "@/components/art/RoadPlate";
 import PlateFrame from "@/components/art/PlateFrame";
@@ -35,7 +36,8 @@ import Plate, { type PlateName } from "@/components/art/Plate";
 import DoorCard from "@/components/art/DoorCard";
 import { useNear } from "@/components/art/useNear";
 import { BOOK_SHELF } from "@/lib/bookShelf";
-import { HOME_HEADLINE, HOME_LINE, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
+import { liveChannels } from "@/lib/channels";
+import { HOME_HEADLINE, HOME_LINE, HOME_WHO, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
 import { START_WITH, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
 import { followHash } from "@/lib/followHash";
 import HomeFind from "./home/HomeFind";
@@ -193,6 +195,9 @@ const WAYS = [
   { href: "/speaking", label: "Speaking", Icon: Mic },
   { href: "/about", label: "About James", Icon: UserRound },
 ];
+
+/** ENDS, as lib/channels.ts names and describes it. Absent when the channel is not live. */
+const ENDS = liveChannels().find((c) => c.id === "ends");
 
 export default function Home() {
   const lead = leadEssay();
@@ -364,6 +369,8 @@ export default function Home() {
             <h2 id="home-james-title" className="home-h2">
               Where he writes. How to reach him.
             </h2>
+            {/* Who is writing, in James's own confirmed words (positioning.ts). */}
+            <p className="home-who">{HOME_WHO}</p>
             <ul className="home-ways">
               {WAYS.map(({ href, label, Icon }) => (
                 <li key={href}>
@@ -376,6 +383,11 @@ export default function Home() {
             </ul>
             {/* Where else James writes: links only (lib/channels.ts). */}
             <FollowRow style={{ marginTop: "var(--s-2)" }} />
+            {/* The one real signup (the footer's form), where a reader has just met James. */}
+            <div className="home-signup">
+              <p className="home-signup__label">Essays by email (Substack)</p>
+              <NewsletterSignup variant="minimal" source="home-find-james" />
+            </div>
             <p className="home-helpbar">
               <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.5} />
               <span>
@@ -385,6 +397,18 @@ export default function Home() {
                 </Link>
               </span>
             </p>
+            {/* The mission work, linked home page only: LiveWell sends no one to give (lib/channels.ts). */}
+            {ENDS && (
+              <p className="home-appline home-endsline">
+                <Globe aria-hidden="true" size={20} strokeWidth={1.75} />
+                <span>
+                  <a href={ENDS.url} target="_blank" rel="noopener noreferrer" className="home-helpbar__link">
+                    {ENDS.label}
+                  </a>
+                  . {ENDS.blurb}
+                </span>
+              </p>
+            )}
             {/* One quiet line: LiveWell from an icon (/app). */}
             <p className="home-appline">
               <Smartphone aria-hidden="true" size={20} strokeWidth={1.75} />
