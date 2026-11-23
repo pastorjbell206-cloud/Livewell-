@@ -7,7 +7,7 @@ import { Fragment, useCallback, useEffect, useState } from "react";
 import { Link } from "wouter";
 import { RotateCcw } from "lucide-react";
 
-import { readTracks, saveTracks, type TrackProgress, type TrackToContinue, type TracksProgress } from "@/lib/tracks";
+import { paperAddress, readTracks, saveTracks, type TrackProgress, type TrackToContinue, type TracksProgress } from "@/lib/tracks";
 
 /**
  * Load one thing for one key. `data` is undefined while loading and null when
@@ -67,7 +67,11 @@ export function ProgressBar({ total, entry, now }: { total: number; entry?: Trac
   );
 }
 
-/** Text that names Find Help, with every "Find Help" a link to it (a care line, a leader's word on when to point someone there). */
+/**
+ * Text that names Find Help, with every "Find Help" a link to it (a care line,
+ * a leader's word on when to point someone there). On paper, where a link
+ * can't be tapped, its address follows the first one (.tk-paper, tracks.css).
+ */
 export function HelpText({ text }: { text: string }) {
   const parts = text.split("Find Help");
   return (
@@ -75,6 +79,7 @@ export function HelpText({ text }: { text: string }) {
       {parts.map((part, i) => (
         <Fragment key={i}>
           {i > 0 && <Link href="/help">Find Help</Link>}
+          {i === 1 && <span className="tk-paper"> ({paperAddress("/help")})</span>}
           {part}
         </Fragment>
       ))}
