@@ -60,11 +60,14 @@ function lineFor(t: Tonight, lead = "Tonight at the table:"): TonightLine | null
  * - On a day of the Advent calendar, tonight is that day, in U13's words
  *   ("Tonight at the table:", "Christmas Day at the table:", and "Advent
  *   begins ..." first in a year when the calendar starts before Advent).
- * - From the Sunday a week before Advent Sunday until the calendar starts,
+ * - From the Sunday a week before Advent Sunday until Advent Sunday,
  *   tonight's devotion (Thanksgiving week's, for one) and U13's Advent line
- *   beneath it. On Advent Sunday and the nights after it before December 1,
- *   the year map hands tonight December 1's reading early; Home leaves that to
- *   /family and says only that the calendar starts December 1.
+ *   beneath it.
+ * - On Advent Sunday and the nights after it before December 1, the year map
+ *   hands tonight the calendar's first reading early, and /family offers it
+ *   as "Day 1" (lib/familyTable nightLabel). Home offers the same reading the
+ *   same way, so the one tap that works every other night still works on the
+ *   first nights of Advent (the walk of 2026-11-23, finding 20).
  * - Any other night on the map, tonight's devotion. Off the map, nothing.
  */
 export function homeTonight(date: string): HomeTonightCopy {
@@ -76,6 +79,16 @@ export function homeTonight(date: string): HomeTonightCopy {
   if (advent.day) {
     const line = lineFor({ id: seasonalId("advent", advent.day), set: "advent", day: advent.day }, copy.line.lead);
     if (line) return { tonight: line, advent: null };
+  }
+  if (!advent.beforeAdvent && tonight?.set === "advent" && tonight.day) {
+    // Named by its number, as /family names it on these nights: its date has not come yet.
+    const title = tonightTitle(tonight);
+    if (title) {
+      return {
+        tonight: { lead: "Advent has begun. Tonight at the table:", title, href: devotionHref(tonight.id), after: `, Day ${tonight.day} of the family Advent calendar` },
+        advent: null,
+      };
+    }
   }
   return {
     tonight: tonight && tonight.set !== "advent" ? lineFor(tonight) : null,

@@ -53,7 +53,9 @@ import DoorCard from "@/components/art/DoorCard";
 import IconTile from "@/components/art/IconTile";
 import PlateFrame from "@/components/art/PlateFrame";
 import Plate, { type PlateName } from "@/components/art/Plate";
+import { followHash } from "@/lib/followHash";
 import { isPublicEssayHref } from "@/lib/shelf";
+import { entryById } from "@/lib/siteCatalog";
 import { toolName } from "@/lib/toolsList";
 import TonightCard from "./family/TonightCard";
 import TonightChooser from "./family/TonightChooser";
@@ -61,6 +63,9 @@ import TableLooksDifferent from "./family/TableLooksDifferent";
 import WeekGlance from "./family/WeekGlance";
 import { useFamilyIndex } from "./family/useFamilyData";
 import "./home/home.css";
+
+/** Bible Explorer's films, by the name every menu gives them (lib/siteCatalog). */
+const WATCH = entryById("bible.explorer-watch") ?? { name: "Watch and learn", href: "/study/explorer#watch" };
 
 /** The rooms of the Family door, after Tonight, in the map's order. */
 const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] = [
@@ -252,7 +257,12 @@ export default function Family() {
           <p className="lw-newline">
             <MapIcon aria-hidden="true" size={22} strokeWidth={1.75} />
             <span>
-              For ages 7 to 16: <Link href="/study/explorer">Bible Explorer</Link>, the whole Bible as one story on one illustrated map.
+              For ages 7 to 16: <Link href="/study/explorer">Bible Explorer</Link>, the whole Bible as one story on one illustrated map, and{" "}
+              {/* Its films sit six phone screens down the map's page, so the line goes straight to them (walk 2026-11, finding 21). */}
+              <Link href={WATCH.href} onClick={() => followHash(WATCH.href)}>
+                {WATCH.name}
+              </Link>
+              , its short films to watch together.
             </span>
           </p>
         </div>

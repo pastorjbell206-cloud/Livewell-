@@ -20,11 +20,14 @@ books). One page lists everything the site holds.
 
 ## Start here
 
-- New to faith, or coming back (one ordered road for a new Christian or a
-  returning one, built from pages already on the site: the Gospel of John in
-  the Study Bible, learning to pray, finding a church, the eight-week plan for
-  a new Christian, the catechism, and a study to go through with someone):
-  https://www.livewellbyjamesbell.co/start
+- Start where you are (a first step for each reader: a road of a few steps
+  for the skeptic, for someone new to faith or coming back, for someone who
+  has stepped back, for someone who wants to go deeper, and for a parent; and
+  one page to begin with for a Christian with doubts and for a pastor or group
+  leader. The road for someone new is built from pages already on the site:
+  the Gospel of John in the Study Bible, learning to pray, finding a church,
+  the eight-week plan for a new Christian, the catechism, and a study to go
+  through with someone): https://www.livewellbyjamesbell.co/start
 - Everything on LiveWell (every door, room and tool on one page, with a box
   to find one): https://www.livewellbyjamesbell.co/explore
 
@@ -225,8 +228,9 @@ books). One page lists everything the site holds.
   - What does the Bible say about divorce and remarriage? https://www.livewellbyjamesbell.co/answers/what-does-the-bible-say-about-divorce-and-remarriage
   - Why does God allow earthquakes, cancer, and animal suffering? https://www.livewellbyjamesbell.co/answers/why-does-god-allow-natural-disasters
   - What makes us human in the age of AI? https://www.livewellbyjamesbell.co/answers/what-makes-us-human-in-the-age-of-ai
-- For skeptics (Test the Case, the first questions, and the eight-week plan
-  for the curious skeptic): https://www.livewellbyjamesbell.co/skeptics
+- For skeptics (Test the Case, the first questions, the case for the faith,
+  and the eight-week plan for the curious skeptic):
+  https://www.livewellbyjamesbell.co/skeptics
 - Resources (the hub): https://www.livewellbyjamesbell.co/resources
 - Downloads and PDFs (every ebook and every printable, free: James's books
   and the hard-question books as PDF and EPUB, study-guide leader guides and

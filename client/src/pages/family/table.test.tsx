@@ -114,6 +114,17 @@ describe("/family", () => {
     expect(screen.getByText("1 of 5")).toBeInTheDocument(); // Read, Talk, Ask, Remember, Pray
   });
 
+  it("offers Bible Explorer's films straight from the rooms, not only its map", async () => {
+    // The walk of 2026-11-23, finding 21: the films sat six phone screens down the map's page.
+    at(new Date(2026, 10, 3, 19));
+    serveFamily();
+    renderAt("/family");
+    const rooms = await screen.findByRole("region", { name: "Everything for the table." });
+    expect(within(rooms).getByRole("link", { name: "Bible Explorer" })).toHaveAttribute("href", "/study/explorer");
+    expect(within(rooms).getByRole("link", { name: "Watch and learn" })).toHaveAttribute("href", "/study/explorer#watch");
+    expect(rooms).toHaveTextContent("Watch and learn, its short films to watch together.");
+  });
+
   it("says so when the index does not arrive, and loads on a retry", async () => {
     at(new Date(2026, 10, 3, 19));
     serveFamily(false);
