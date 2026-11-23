@@ -16005,3 +16005,567 @@ Cut in Ruth 3: Hebrews 2:14 and the redeemer as a pattern of Christ (the deep no
 | 1 Chronicles 2:12; Luke 3:32 | 18-22 | ruth/4.json `historical`; BSB | Repository; BSB text |
 
 Cut in Ruth 4: Ephesians 1:7 and 14 and the redeemer as a pattern of Christ (the deep note's thematic link); the written and spoken readings of the verb in verse 5.
+
+## 1 Samuel's book page (teaching introduction, 2026-11-23)
+
+Every claim in `client/public/bible/notes/1-samuel/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Ninth book, 31 chapters; from the judges to the kings; the three lives; the best-known scenes; 2:7 and the theme of reversal; Eli's house and Samuel, Dagon, the king chosen for his height; the book about power (who holds it, how it is given, what it does); the first book to call a king the LORD's anointed (2:10), mashiach and English messiah | in-a-minute | bible/books.json; 1-samuel/intro.json `tagline`, `overview`, `christ`, `themes`; 1-samuel/2.json `words` (mashiach); BSB | Repository; BSB text |
+| Judges 21:25 as the verdict on those years; Shiloh and its corrupt priests; 3:1; Ruth between Judges and 1 Samuel in Christian Bibles, ending with David; 1 and 2 Samuel one book in the Hebrew Bible; the Septuagint's division, the four books of the Kingdoms, printed Hebrew Bibles following; 2 Samuel and Kings after; the Former Prophets with Joshua and Judges, measuring each generation by the covenant; 2 Samuel 7 and the promise resting on the choice of David | story | 1-samuel/intro.json `overview`, `story`; judges/intro.json `teaching` (story); ruth/intro.json `teaching` (story); BSB | Repository; BSB text |
+| Anonymous; not Samuel in finished form (25:1); the Babylonian Talmud's credit to Samuel, with Gad and Nathan completing it; 1 Chronicles 29:29 and prophets' records; 27:6 and the divided kingdom, after about 930 BC; Leonhard Rost in the 1920s (an older ark story, roughly chapters 4 to 6) and a history of David's rise (roughly 1 Samuel 16 to 2 Samuel 5); Martin Noth in 1943 and one history from Deuteronomy to Kings, final form in the late seventh or the sixth century BC; others within a century or two of David; conservative scholars and writers near the events; all agree the book is carefully composed | who, timeline | 1-samuel/intro.json `author`, `date`; 1-samuel/27.json `historical`; judges/intro.json `teaching` (Noth as a German scholar); BSB | Repository; each view in its holders' terms; no side |
+| 4QSamuel-a often agreeing with the Septuagint against the standard Hebrew; Goliath six cubits and a span, about nine and a half feet, or four cubits and a span, about six feet nine inches (17:4); the scroll's paragraph on Nahash before chapter 11 | who, timeline | 1-samuel/intro.json `date`; 1-samuel/11.json and 17.json `historical`; bible/guides/how-we-got-the-old-testament.json (the scrolls table); bible/guides/weights-measures-money.json; questions/contradictions/numbers-in-samuel-kings-and-chronicles.json (status live) | Repository (the guides and the notes agree on the heights within rounding) |
+| The second half of the eleventh century BC; Saul about 1050 to 1010 BC, David king about 1010 BC, approximate, few anchors; 13:1 damaged (one year old, two years), English Bibles filling the gaps, the BSB reading thirty and forty-two | world, timeline | 1-samuel/intro.json `date`; 1-samuel/12.json `historical`; bible/guides/kings-of-israel-and-judah.json (13:1 and the table); BSB (13:1 as printed) | Repository; BSB text |
+| A loose alliance of tribes with no capital, army or king; Shiloh in Ephraim, the ark kept by Eli's family; Egypt and Mesopotamia weak, room for small kingdoms, kingship the normal rule; the Philistines on the southern coastal plain early in the twelfth century BC among the Sea Peoples; the five cities, each with its own ruler; the Ammonites and the Amalekites | world, timeline | 1-samuel/intro.json `setting`; 1-samuel/4.json and 13.json `historical`; 1-samuel/5.json `words` (seren) | Repository |
+| Ashdod, Gath and Ekron excavated, showing the Philistines' own material culture; the pim (13:21), stone weights inscribed with the word, about two thirds of a shekel | world | 1-samuel/5.json `historical`; 1-samuel/13.json `cultural`; context/worlds/old-testament-world.json (a village in the hill country); bible/guides/weights-measures-money.json | Repository |
+| Khirbet Qeiyafa above the Elah Valley, excavated from 2007, dated to the early tenth century BC, pointed to by some as evidence of organized rule in Judah in David's time; the Tel Dan inscription found in 1993 and 1994, most likely set up by Hazael of Damascus in the second half of the ninth century BC, naming a king of the house of David, for most scholars the earliest known reference to David's dynasty by name; the evidence for the earlier centuries neither proving nor disproving | world, timeline | questions/old-testament/what-archaeology-shows.json (`shortAnswer`, the evidence section; status live); 1-samuel/17.json `historical`; context/worlds/old-testament-world.json | Repository (live page); no overclaim |
+| The seven stages and their ranges; the three lives overlapping; the narrator's reticence and the pairs set side by side; the speeches of chapters 8, 12 and 15; the stories that seem told twice (Saul made king three times in 10 and 11; David at court in 16 and unknown in 17:55-58; David sparing Saul in 24 and 26) and the three explanations; hearing, seeing and the heart; Saul's name, Shaul, asked for | built | 1-samuel/intro.json `structure`, `reading`; 1-samuel/11.json and 17.json `hard`; 1-samuel/1.json and 28.json `words` (sha'al) | Repository; no side |
+| The ark a wooden chest overlaid with gold, holding the tablets, its lid the throne of the LORD enthroned between the cherubim (4:4); the elders' question (4:3) and the ark used as a device, never asking whether God wished to fight; the defeat, the deaths of Hophni, Phinehas and Eli; Ichabod (4:22); Dagon at Ashdod; the plague at Ashdod, Gath and Ekron; the cart, the two cows and the gold; Beth-shemesh (6:19); twenty years at Kiriath-jearim (7:2); Mizpah and Ebenezer (7:12); God not a charm, and Dagon humbled | ark | 1-samuel/4.json `cultural`, `hard`; 1-samuel/5.json, 6.json and 7.json `summary`; 1-samuel/intro.json `themes`; BSB | Repository; BSB text |
+| Jeremiah 7:12; excavations at Shiloh finding a fire in the Iron Age, which many connect with these years, the dating discussed | ark | 1-samuel/4.json `historical`; 1-samuel/21.json `historical`; BSB | Repository; BSB text |
+| Samuel's sons; the elders at Ramah (8:5); 8:7; the manner of the king and the verb take (8:11-18); 8:20; the readings of the tension with Deuteronomy 17 (motive and timing, the king the LORD shall choose, Deuteronomy 17:15; kings promised in Genesis 17:6 and 49:10; older accounts combined); the two things clear on every reading; Samuel's farewell and 12:23; the king as a servant under God's word | king | 1-samuel/8.json `summary`, `hard`; 1-samuel/12.json `summary`; 1-samuel/intro.json `themes`; BSB | Repository; BSB text; the readings in their holders' terms |
+| Saul's height (9:2); the private anointing; 10:9; the Spirit; hidden among the baggage (10:22); Jabesh-gilead; Gilgal and 13:14; the oath of chapter 14; Agag and the plunder; 15:22; the LORD regretted (15:11, 35) and does not change his mind (15:29), real grief and unchanging purposes, left side by side; 16:14 and the two readings, no diagnosis, relief through music; the spear, the hunt and Nob; 24:17; guilty and tragic, the asked-for king who ended asking in vain | saul | 1-samuel/9.json to 16.json `summary`; 1-samuel/15.json `words` (nacham), `literary`; bible/guides/reading-narrative.json; 1-samuel/16.json `hard`; 1-samuel/intro.json `reading`; 1-samuel/28.json `words` (shaal); BSB | Repository; BSB text; the readings in their holders' terms |
+| 15:3 quoted and not softened; Deuteronomy 24:16 and the conscience the Bible formed; Amalek's ambush (15:2; Exodus 17:8-16) and Deuteronomy 25:18; herem; Mesha's inscription of the ninth century BC | amalek | joshua/plain/6.json (17-21, `hard`); questions/old-testament/the-command-to-destroy-the-canaanites.json (status live); 1-samuel/15.json `historical`, `cultural`; deuteronomy/plain/25.json (17-19); BSB | Repository; BSB text |
+| The four readings, each with its cost (judgment after long patience; the stock idiom of ancient war, with 27:8 and 30:1, the text still saying infants; God's right over life, as Augustine and Aquinas held; God stooping to an ancient people's understanding, seen in the light of Christ's command to love enemies); many hold more than one; no side | amalek | questions/old-testament/the-command-to-destroy-the-canaanites.json (`shortAnswer`, the reply, `differ`); joshua/plain/6.json (17-21, `hard`); 1-samuel/15.json `hard` | Repository; each reading in its holders' terms; no side |
+| What holds on every reading: one people at one moment, never renewed; no war for the church (Matthew 5:44; 26:52); the chapter's question and its grief (15:35); no people living today is Amalek; no warrant for violence or contempt; no nation, state, land or conflict of today; the later misuse owned as the church's sin | amalek | joshua/plain/6.json (17-21, `hard`); deuteronomy/plain/25.json (17-19, `hard`); exodus/plain/17.json (14-16, `hard`); 1-samuel/15.json `hard`; the live page (the reply); BSB | Repository; as the site's live pages state it |
+| 16:7; the youngest with the sheep; 16:13; 17:26 and 17:47; the misreading of the story as self-belief; Jonathan's love (18:1), covenant and surrender of his claim; 18:7; the bride-price (18:25); Michal and the window (19:12); Michal given to another man (25:44); the outlaw years; 24:6 and the chapter giving leaders no shield, restraint and trust and not silence before injustice; David's faults (22:22; chapter 25; 27:8-12); risen because God chose him, a heart turned toward God | david | 1-samuel/16.json to 27.json `summary`; theology/passage-notes.json (1 samuel 17, `misreadings`); 1-samuel/24.json `hard`; 1-samuel/27.json `hard`; 1-samuel/intro.json `purpose`, `themes`; BSB | Repository; BSB text |
+| David sent home before the battle (chapter 29); 28:6; the law against mediums (Leviticus 19:31; Deuteronomy 18:10-11) and Saul's removal of them (28:3); the woman at Endor; the three answers to Samuel's appearance (God permitting it; a deceiving spirit, argued by a number of early Christian writers; the medium's performance, which struggles with the true prophecy); no side; the practice condemned, no help for Saul, no support for seeking the dead; 28:19; the woman not mocked, and her meal | endor | 1-samuel/28.json `hard`, `story`, `cultural`; 1-samuel/29.json `summary`; bible/doctrines/intermediate.json; isaiah/8.json `hard`; deuteronomy/plain/18.json (9-14); BSB | Repository; BSB text; the answers in their holders' terms |
+| Gilboa; Jonathan and two brothers; Saul wounded and his own sword (31:4); the Bible's few such deaths and never an honorable way out; sorrow, not contempt; Jabesh-gilead's night march and burial (31:11-13) | endor | 1-samuel/31.json `summary`, `hard`; BSB | Repository; BSB text |
+| The care line (‘If you have thoughts of hurting yourself...’ to ‘...lists places to turn.’) | endor | judges/plain/16.json (23-31, `hard`); 1-peter/plain/5.json (5-7); 2-timothy/plain/1.json (6-7); philippians/plain/4.json (4-9); psalms/plain/88.json (13-18) | Reused whole, word for word; Find Help named; the deep note's crisis-line number not carried over |
+| The New Testament's own lines: Mary's song and Hannah's (Luke 1:52; 2:7); Luke 2:52 and 2:26; Mark 2:25-26 and 21:1-6, Abiathar and Ahimelech; Acts 13:21-22 joining 13:14 with a psalm; Acts 3:24; Hebrews 11:32-33; the title Christ and son of David (Matthew 1:1), anointed first used of a king in 2:10; no detailed prediction and neither Saul nor David made a picture of Christ; never a reason to blame the Jewish people | new-testament | luke/plain/1.json (46-56, `ot`); luke/plain/2.json (36-40 and 41-52, `ot`); mark/plain/2.json (23-28, `ot`, `hard`); acts/plain/13.json (13-25, `ot`); bible/guides/reading-narrative.json; 1-samuel/intro.json `christ`; judges/intro.json `teaching` (new-testament); BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: Hannah's song; the pairs; heroes not models in everything; the hard chapters; no program for the present, no warrant for violence and no shield against correction; 2 Samuel after | readers | 1-samuel/intro.json `reading`; bible/guides/reading-narrative.json; 1-samuel/24.json `hard`; judges/intro.json `teaching` (readers) | Repository |
+| Hard passages (22), key words (15) and timeline (16): each drawn from the parts above and the chapter notes; the LORD of Hosts first in 1:3 (1.json `words`); nagid (9.json `words`); the seer (9:9); teraphim (19.json `words`); chesed (20.json `words`); Urim (28.json `words`); seren (5.json `words`) | lists | the notes named above; BSB | Repository; BSB text |
+| The map: Bethel, Jerusalem, Bethlehem, Hebron, Beersheba, Ashdod (drawn at the point the Acts map uses for Azotus, which the Acts notes call the old Philistine city of Ashdod), the Jordan, and Gilead as a region; 2 Samuel 5:6-7 for Jerusalem's capture later | map | the points already used on the site's maps (Genesis, Joshua, Judges, Ruth, Acts); acts/intro.json (map, azotus); acts/plain/8.json (36-40, `hearers`); BSB | Repository; Shiloh, Ramah, Mizpah, Gibeah, Gilgal, Michmash, Gath, Ekron, Beth-shemesh, the Valley of Elah, Nob, Ziklag, Endor and Gilboa left off and the note says so; no tribal borders; no claim about any border today |
+| Go deeper: eleven pages | deeper | bible/guides/reading-narrative.json, kings-of-israel-and-judah.json; bible/doctrines/prayer.json, messiah.json, state.json, intermediate.json; context/worlds/old-testament-world.json; questions/old-testament/what-archaeology-shows.json, the-command-to-destroy-the-canaanites.json and questions/morality/abuse-and-cover-up.json (status live); needs/infertility.json (page: true, at /help/infertility) | Repository; every page live |
+
+Cut from the book page: a reading of Ichabod's name as a warning for every age (not stated in the repository); Gath as Tell es-Safi and Aren Maeir's excavations, the pig bones of the hill villages, Ben Sira on Samuel prophesying after death, and the verdict of 1 Chronicles 10:13 (each sourced, cut for length and left to the chapter notes or the context page); the deep notes' lines to Christ that the New Testament does not draw (Saul as the dark background for the King who obeyed, chapter 15; Hebrews 2:14-15 and Revelation 1:18 set against Endor, chapter 28; the shepherd boy as a picture of the shepherd of the people, from the theology passage notes on chapter 16); Matthew 9:13 and 12:7, where Jesus quotes Hosea's form of the saying in 15:22 (a thematic link the New Testament does not draw to this book); the deep note's crisis-line number on chapter 31 (replaced by the care line reused whole); any statement about the borders of any land today.
+
+## The plain notes on 1 Samuel 1 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last years of the judges, probably the eleventh century BC; no king or capital; Shiloh about twenty miles north of Jerusalem in Ephraim, the ark there since Joshua (Joshua 18:1); the house and temple of the LORD, a building as well as the tent | 1-8 | 1-samuel/1.json `historical` | Repository |
+| A woman's security and standing tied to sons; childlessness painful, shaming, often read as divine disfavor; a second wife for a childless first wife; rivalry in Abraham's and Jacob's homes; rival as the word for a co-wife; the yearly feast and its portions | 1-8 | 1-samuel/1.json `cultural` | Repository |
+| Elkanah's question well meant and uncomprehending; the LORD of Hosts first appearing here, the commander of all powers; Hophni and Phinehas named | 1-8 | 1-samuel/1.json `literary`, `words` (tseva'ot); BSB | Repository; BSB text |
+| Genesis 30:1 (Rachel, the wife Jacob loved more, Genesis 29:30); Psalm 113:9; Luke 1:25; the women God remembered | 1-8 | psalms/plain/113.json (1-9, `hearers`); luke/plain/1.json (5-17); BSB | Repository; BSB text |
+| ‘The LORD had closed her womb’: life in God's hands, the story not ruled by chance or by her rival; no sin named and no blame; childlessness read as displeasure by others and not by the narrator; Sarah, Rebekah, Rachel and Hannah never blamed; no verdict on any person | 1-8 `hard` | 1-samuel/1.json `doctrines` (sovereignty), `cultural`; deuteronomy/plain/7.json (12-16, `hard`) | Repository |
+| The care lines (‘A word of care. This story ends in joy for one couple...’ to ‘...a friend, a pastor, a counsellor.’; ‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 1-8 `hard` | genesis/plain/25.json (19-26, `hard`); deuteronomy/plain/7.json, 28.json and 34.json, leviticus/plain/26.json, numbers/plain/19.json (`hard`) | Reused whole, word for word; Find Help named |
+| Silent prayer unusual and misread; the Nazirite vow of Numbers 6 made for life, as of Samson (Judges 13:5); a husband's power over a wife's vow (Numbers 30) and Elkanah letting it stand; pouring out her soul; her face changed before anything in her body changed; sha'al five times and the name Saul | 9-18 | 1-samuel/1.json `cultural`, `literary`, `words` (sha'al, nadar, palal), `doctrines` (prayer); needs/infertility.json (her face changed after she prayed) | Repository |
+| Psalm 62:8; Luke 1:15 and Luke's opening built on this story | 9-18 | luke/plain/1.json (5-17, `ot`); 1-samuel/1.json `christ`; BSB | Repository; BSB text |
+| God remembering as acting for someone (Genesis 8:1; 30:22); weaning at two or three, Samuel very young; the gifts (1:24); the verb of asking and the form meaning given on request or lent; the irony of Eli's house | 19-28 | genesis/plain/8.json (1-5) and 30.json (22-24) `hearers`; 1-samuel/1.json `cultural`, `literary`, `hard`; BSB | Repository; BSB text |
+| Luke 2:22 and the presentation recalling Hannah; Luke 1:66 and children given by God's special gift | 19-28 | luke/plain/2.json (21-24, `ot`); luke/plain/1.json (57-66, `ot`); BSB | Repository; BSB text |
+| Giving the child: not abandonment; care of the high priest at the main shrine; yearly visits and the robe (2:19); children apprenticed young, dedication to a sanctuary known if rare; the cost of the vow honored; not a pattern for parents | 19-28 `hard` | 1-samuel/1.json `hard`; BSB | Repository; BSB text |
+
+Cut in chapter 1: the Levite genealogy of 1 Chronicles 6 and the two explanations of it (not needed for the plain reading); the cost of a three-year-old bull (not stated in the repository; the gifts are called generous and listed); Luke 2:52 and the deep note's pattern reaching its fullest expression in Jesus' birth (left to chapter 2, where the New Testament's own echo of 2:26 belongs; the pattern line is the deep note's, not the New Testament's).
+
+## The plain notes on 1 Samuel 2 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hebrew poetry in pairs of lines and contrasts; personal praise to God's character to his judgment and king; the horn of the wild ox as strength and honor, Hannah's horn and the anointed's horn framing the song; Rock as refuge; Sheol as the grave | 1-10 | 1-samuel/2.json `literary`, `cultural`, `words` (qeren, tsur) | Repository |
+| A king named before Israel had one: an existing royal psalm placed in her mouth, or Hannah speaking prophetically; the song as overture to the book; mashiach first used of a king, and English messiah | 1-10 | 1-samuel/2.json `historical`, `words` (mashiach), `doctrines` (messiah) | Repository; both views in their holders' terms |
+| 2 Samuel 22:3 and 22:14 and the songs as bookends; Psalm 113:7; Luke 1:52 and Mary's song woven from Hannah's | 1-10 | 1-samuel/2.json `literary`; psalms/plain/113.json (1-9, `hearers`); luke/plain/1.json (46-56, `ot`); BSB | Repository; BSB text |
+| The fat of the peace offering the LORD's and burned first (Leviticus 3:16; 7:23-25); the priest's breast and right thigh (Leviticus 7:31-34); both rules broken; force threatened; meat rarely eaten but at sacrifices, so theft as well as sacrilege; the alternating telling; the simple linen ephod; the yearly robe as a mother's care | 11-21 | 1-samuel/2.json `cultural`, `literary`; BSB | Repository; BSB text |
+| Ezekiel 34:2; Leviticus 3:16 | 11-21 | BSB | BSB text (a thematic link within the Old Testament, no line to Christ) |
+| The women who served at the entrance (Exodus 38:8), their work unknown; exploitation by those charged with the sanctuary's holiness; Eli's rebuke heard from others and not acted on; 3:13; Samuel growing | 22-26 | 1-samuel/2.json `cultural`, `literary`; BSB | Repository; BSB text |
+| Luke 2:52 echoing verse 26, Samuel growing up in God's house, the line from Hannah's son to Mary's | 22-26 | luke/plain/2.json (41-52, `ot`); BSB | Repository; BSB text |
+| Verse 25: the hardening pattern of Pharaoh, the looser reading of the Hebrew, the time to turn having passed; the sons fully accountable; sovereignty and responsibility held together | 22-26 `hard` | 1-samuel/2.json `hard` | Repository; the readings in their holders' terms |
+| The site's page on abuse and its cover-up and Eli's sons (2:17; 3:13): the truth told, the abuser handed to the authorities, the harmed believed and protected | 22-26 `hard` | questions/morality/abuse-and-cover-up.json (`shortAnswer`, the evidence; status live) | Repository |
+| The care line (‘If you have been harmed by a controlling leader or church...’ to ‘...lists places to turn.’) | 22-26 `hard` | 2-timothy/plain/3.json (6-9, `hard`) | Reused whole, word for word; Find Help named |
+| Priests from Aaron and Eli's family at Shiloh; the calling in Egypt; the root of honor as weight, the sons fattening themselves, God honoring those who honor him, and the root returning in chapter 4; the stages of judgment (chapter 4; Nob in chapter 22 and Abiathar; Solomon and 1 Kings 2:27; Zadok and his line); Zadok or Samuel as the faithful priest; ‘My anointed one’ again | 27-36 | 1-samuel/2.json `historical`, `words` (kavod), `doctrines` (judgment); BSB | Repository; BSB text; both identifications in their holders' terms |
+
+Cut in chapter 2: Hebrews 2:17 and 3:1-2 and the faithful priest as a picture of Christ (the deep note calls it thematic, not a line the New Testament draws to this chapter); the deep note's line that the birth of Jesus is the greatest of the reversals Hannah sang (Luke's echo is kept; the further claim is the deep note's); Eli's failure described as not removing his sons from the altar (an inference beyond 3:13, which says only that he did not restrain them).
+
+## The plain notes on 1 Samuel 3 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shiloh in Eli's last years, the eleventh century BC; few prophets in Judges (Deborah, Judges 4:4; the unnamed prophet of Judges 6); a long silence, the corrupt priesthood part of the reason; the lamp kept burning from evening to morning (Exodus 27:20-21) and the call before dawn; Samuel sleeping in the temple, perhaps in a room of the sanctuary rather than by the ark; temple sleeping for dreams elsewhere, and Samuel seeking nothing; the pattern of threes, suspense and humor; the priest who cannot see recognizing the voice | 1-10 | 1-samuel/3.json `historical`, `cultural`, `literary`; theology/passage-notes.json (1 samuel 3, `flow`: Israel spiritually dim) | Repository |
+| Genesis 22:1; Exodus 3:4; Isaiah 6:8; Amos 8:11 (quoted only after its dash) | 1-10 | theology/passage-notes.json (1 samuel 3, `words`: hineni, and `echoes`); BSB | Repository; BSB text |
+| The first message a judgment on the household that raised him, repeating chapter 2; the oath formula of verse 17; Samuel's fear; Eli's answer read as humble faith or as passive resignation, no side | 11-18 | 1-samuel/3.json `cultural`, `literary`; theology/passage-notes.json (1 samuel 3, `misreadings`) | Repository; both readings in their holders' terms |
+| 2 Kings 21:12; Jeremiah 19:3; 1 Kings 2:27 | 11-18 | BSB; 1-samuel/2.json `historical` | BSB text; Repository |
+| Verse 14: the sacrifices the sons despised will not cover them; the office and future of the priestly house; the judgment fixed because the warning went unheeded; a judgment on the house as an institution, or defiant sin (Numbers 15:30-31) for which sacrifice gave no remedy; just | 11-18 `hard` | 1-samuel/3.json `hard` | Repository; both readings in their holders' terms |
+| The care line (‘If you are afraid that you have fallen away from God...’ to ‘...lists places to turn.’) | 11-18 `hard` | hebrews/plain/3.json (12-15), hebrews/plain/10.json (26-31), 1-john/plain/5.json (16-17) and others (`hard`) | Reused whole, word for word; Find Help named |
+| The frame of the word of the LORD, rare and then established; none of his words falling, every word coming true; Deuteronomy 18:22 as the law's test; from Dan to Beersheba, about 150 miles, the whole country; Samuel known beyond his tribe | 19-21 | 1-samuel/3.json `literary`, `historical`; deuteronomy/plain/18.json (15-22); BSB | Repository; BSB text |
+| Psalm 99:6; Acts 3:24 | 19-21 | 1-samuel/3.json `christ` (Peter names Samuel); BSB | Repository; BSB text; the New Testament's own line |
+
+Cut in chapter 3: Deuteronomy 18:15 and the prophet like Moses, John 1 and Hebrews 1:1-2 set beside Samuel (the deep note's pattern, not a line the New Testament draws to this chapter; Acts 3:24 is kept as Peter's own words); Luke 1:38 and Mary's surrender set beside 3:10 (the theology passage note's echo, not the New Testament's); the word confirmed in verse 20 as from the root of amen (not stated for this verse in the repository); a reading of the lamp as a picture of Israel's light (not stated in the repository; the note says only that the scene is dark in more ways than one, as the text shows).
+
+A correction to 1 Samuel's book page, made after chapter 3 (2026-11-23): the words of 4:4 were quoted as ‘who is enthroned between the cherubim’, a phrase the BSB uses elsewhere (2 Samuel 6:2), while 4:4 reads ‘who sits enthroned between the cherubim’. Both places on the page (the part on the ark and the key word) now quote 4:4 as it stands. A new check, run from here on over the book page and every chapter, tests each quotation against the verse it cites, not only against the whole Bible.
+
+## The plain notes on 1 Samuel 4 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Philistines on the coastal plain from the early twelfth century BC, pressing into the hills; Aphek at the Yarkon springs, a staging point; Ebenezer nearby; Izbet Sartah and its early alphabet inscription proposed as Ebenezer, not certain; the numbers and the debate over the word for thousand | 1-11 | 1-samuel/4.json `historical` | Repository; no side on the numbers or the site |
+| The ark, its lid as the throne of the invisible LORD, before Israel in the wilderness and at Jericho; gods carried into battle; the ark used as a device, never asking God's will; the LORD's ark treated like an idol; the Philistines' plural gods and garbled memory of the exodus | 1-11 | 1-samuel/4.json `cultural`, `doctrines` (idolatry) | Repository |
+| Numbers 10:35; Psalm 78:60-61 | 1-11 | 1-samuel/4.json `historical` (Psalm 78:60-61); BSB | Repository; BSB text |
+| Why God let the ark be taken: judgment (2:34), a false belief exposed, God not defeated (chapter 5); apparent defeat serving God's purposes, or the loss not softened, the ark never back at Shiloh | 1-11 `hard` | 1-samuel/4.json `hard`, `doctrines` (judgment) | Repository; both emphases in their holders' terms |
+| Torn clothes and dirt as signs of disaster; the slowed telling; the report in four steps and Eli falling at the ark; heavy from the root of glory and the charge of 2:29; the chair as throne and the doorpost of chapter 1; forty years as judge | 12-18 | 1-samuel/4.json `cultural`, `literary`, `words` (kavod); BSB | Repository; BSB text |
+| Psalm 78:64; Jeremiah 7:14 | 12-18 | 1-samuel/4.json `historical` (Jeremiah 7:12-14); BSB | Repository; BSB text |
+| Naming for the circumstances of birth; Ichabod as Where is the glory? or No glory; the unnamed mother's verdict twice; galah as to go into exile, heard by readers after Jerusalem fell; glory as weight | 19-22 | 1-samuel/4.json `cultural`, `literary`, `words` (galah, kavod) | Repository |
+| Ezekiel 10:18 and the glory leaving the temple before the exile | 19-22 | 1-samuel/4.json `doctrines` (holiness); BSB | Repository; BSB text |
+
+Cut in chapter 4: John 1:14 and the glory dwelling in Christ (the deep note calls the link thematic, not a line the New Testament draws to this chapter); Khirbet Seilun and the fire at Shiloh (kept on the book page; not needed here); Genesis 35:18 and Rachel naming her son as she died (a likeness in the text that the repository's notes do not draw).
+
+## The plain notes on 1 Samuel 5 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No Israelite army, priest or prophet present, and the LORD defending his honor; captured gods set in the victor's temple; Dagon face down as worshiper or vassal; head and hands cut off as a sign of total victory; the near-satire of a god lifted back into place | 1-5 | 1-samuel/5.json `story`, `cultural`, `literary`, `doctrines` (idolatry) | Repository |
+| Dagon an older god of the region, in texts from Mari and Ugarit; the name linked with grain, the fish-god idea largely given up; adopted by the Philistines; the temple at Gaza (Judges 16); 1 Maccabees 10 and Jonathan burning the temple at Ashdod in the second century BC; the threshold custom known to the narrator; thresholds as places of danger | 1-5 | 1-samuel/5.json `historical`, `cultural`, `words` (Dagon) | Repository |
+| Isaiah 46:7 (the prophets on idols that must be carried); Psalm 115:7; Zephaniah 1:9 and the threshold custom | 1-5 | 1-samuel/5.json `doctrines` (Isaiah 46:1-7), `cultural` (Zephaniah 1:9); BSB | Repository; BSB text |
+| Ashdod, Gath (Tell es-Safi) and Ekron (Tel Miqne) among the five cities, excavated, with Philistine material culture; each city's ruler and the five acting together; hand and heavy as key words, the weight of glory answering chapter 4; the tumors uncertain, swellings, bubonic plague suggested from the rats of chapter 6, no certainty; the ark passed on; the cry going up as Israel's did from Egypt | 6-12 | 1-samuel/5.json `historical`, `cultural`, `literary`, `words` (yad, kavad, seren) | Repository |
+| Exodus 9:3; Exodus 2:23 and the plagues of Egypt as background | 6-12 | 1-samuel/5.json `doctrines` (judgment), `literary`; BSB | Repository; BSB text |
+| The suffering of ordinary townspeople: a community bound together; the plague ending when the ark is returned, its purpose acknowledgment; a clear way out; or judgment falling broadly and the Bible's wrestling with innocent suffering; not neatly resolved | 6-12 `hard` | 1-samuel/5.json `hard` | Repository; the answers in their holders' terms |
+| The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 6-12 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 5: Colossians 2:15 and the cross as God's victory in apparent defeat (the deep note calls the link thematic, not a line the New Testament draws to this chapter).
+
+## The plain notes on 1 Samuel 6 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Priests and diviners consulted (Isaiah 2:6 on Philistine diviners); the guilt offering as compensation to a god; the gold models handing over the affliction; five for the five cities; asham as Israel's own word for restitution; the knowledge of the exodus; the test of the cows, untrained and taken from their calves; chance or God's hand; the near-comic first half | 1-9 | 1-samuel/6.json `cultural`, `literary`, `words` (asham), `doctrines` (repentance, providence) | Repository |
+| Joshua 7:19; Exodus 12:31 | 1-9 | BSB | BSB text |
+| Beth-shemesh on the border in the Sorek Valley west of Jerusalem, house of the sun, a Levites' town (Joshua 21:16), Tel Beth-Shemesh a border town of the Iron Age with its own material culture; the wheat harvest in late spring or early summer; the verb to return eight times and Israel's turning in chapter 7 | 10-18 | 1-samuel/6.json `historical`, `literary`, `words` (shuv) | Repository |
+| Joshua 21:16 | 10-18 | 1-samuel/6.json `historical`; BSB | Repository; BSB text |
+| Verse 19: seventy men, fifty thousand men in most Hebrew manuscripts, the BSB and others reading seventy; the Greek wording and its other reason; the two questions about the ark mirrored; Kiriath-jearim to the northeast on the road to Jerusalem; twenty years until David (2 Samuel 6) | 19-21 | 1-samuel/6.json `historical`, `literary`, `story` | Repository |
+| Numbers 4:20; 2 Samuel 6:7; Psalm 24:3 | 19-21 | 1-samuel/6.json `doctrines` (holiness), `hard`, `christ` (Psalm 24); BSB | Repository; BSB text |
+| Why the men of Beth-shemesh died: looking inside the ark; the law's limits; a Levites' town with less excuse; the Greek reading and a damaged Hebrew; a sober lesson repeated with Uzzah; the danger and the joy | 19-21 `hard` | 1-samuel/6.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 19-21 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 6: Hebrews 10:19-22 and the way into the holy place through Christ (the deep note calls it thematic, not a line the New Testament draws to this chapter); offerings of model body parts at later Greek shrines (not needed); the priests of Aaron's line in the Joshua 21 list (narrowed to the Levites, as the deep note says).
+
+## The plain notes on 1 Samuel 7 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Samuel back after the ark story; the twenty years as the time until Israel's turning, the ark there until David, longer in all; Baal the storm god and Ashtoreth (Astarte) of fertility and war, prudent-seeming to farmers; repentance as a turning with things done; pouring out water found nowhere else in such an assembly, its meaning uncertain (humility, helplessness, a break with the past); shaphakh joining Hannah's prayer (1:15) and the people's; Mizpah, watchtower, in Benjamin, Tell en-Nasbeh, a gathering place (Judges 20:1) | 1-6 | 1-samuel/7.json `story`, `historical`, `cultural`, `words` (shaphakh), `doctrines` (repentance, idolatry) | Repository; the readings of the water rite in their holders' terms |
+| Joshua 24:23; Genesis 35:2; Lamentations 2:19 | 1-6 | 1-samuel/7.json `cultural` (Lamentations 2:19); BSB | Repository; BSB text |
+| Chapter 4 answered point by point (Ebenezer, the ark absent); a Judges pattern without a warrior; prayer and sacrifice, the battle won by thunder (2:10); the whole burnt offering; memorial stones (Genesis 28:18; Joshua 4); Ebenezer, stone of help, thus far as place or time, the two Ebenezers and the reversal; the Amorites as the older peoples | 7-14 | 1-samuel/7.json `literary`, `cultural`, `historical`, `words` (even ha-ezer, azar) | Repository |
+| Jeremiah 15:1; Psalm 121:2; Genesis 28:18; Joshua 4:7 | 7-14 | 1-samuel/7.json `doctrines` (prayer), `words` (Psalm 121:1-2), `cultural`; BSB | Repository; BSB text |
+| Verse 13 and the later Philistine posts: no great invasion while Samuel judged; the threat belonging to Saul's reign; a source idealizing Samuel's time; the chapter's purpose agreed | 7-14 `hard` | 1-samuel/7.json `hard` | Repository; the readings in their holders' terms |
+| The summary in the style of Judges; Samuel last and in some ways greatest of the judges, prophet, priest and deliverer; shaphat as ruling and setting right; the small circuit centered in the hill country | 15-17 | 1-samuel/7.json `story`, `literary`, `historical`, `words` (shaphat) | Repository |
+| Acts 13:20; Hebrews 11:32-33 | 15-17 | acts/plain/13.json (13-25); hebrews/plain/11.json (32-40); BSB | Repository; BSB text; the New Testament's own lines |
+
+Cut in chapter 7: 1 Timothy 2:5 and Hebrews 7:25 and Samuel as a pattern of Christ's mediation (the deep note's pattern, not a line the New Testament draws to this chapter); 2 Samuel 23:16 and David's poured-out water (a different setting, as the deep note says).
+
+## The plain notes on 1 Samuel 8 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hinge of the book; Samuel's sons as Eli's again; bribes against Deuteronomy 16:19; Beersheba at the southern edge, far from Ramah; late eleventh century BC, Philistines and Ammonites; neighbors with kings; the elders' military reason; ancient kingship as sacred office; Deuteronomy 17:14-20 and its limits, imagining the people's words; the elders' real authority | 1-9 | 1-samuel/8.json `story`, `historical`, `cultural` | Repository |
+| Deuteronomy 17:14-15; Judges 8:23 | 1-9 | 1-samuel/8.json `cultural`; judges/intro.json `teaching` (Judges 8:23); BSB | Repository; BSB text |
+| Why the request is rejection: motive and timing and the king the LORD would choose; kings promised (Genesis 17:6; 35:11; 49:10) and grasping before God's time; sources with different attitudes; the two things clear | 1-9 `hard` | 1-samuel/8.json `hard` | Repository; the readings in their holders' terms |
+| The speech built on take and ending in slaves; mishpat as justice and as manner; the practices of ancient kings (conscription, forced labor, the tenth, confiscation); comparison with texts from Ugarit; Solomon's demands (1 Kings 4-5; 12:4) or a warning drawn from known kingdoms; no program for any government or party today | 10-18 | 1-samuel/8.json `historical`, `literary`, `words` (mishpat) | Repository; both views of the speech in their holders' terms |
+| 1 Kings 12:4; Hosea 13:11 | 10-18 | 1-samuel/8.json `historical` (1 Kings 12:4); BSB | Repository; BSB text |
+| Shama three times to Samuel and the people's refusal; listening as the test of the kingship; to be like the nations and have another fight their battles; God granting what he disapproves, judgment in the granting, and the throne of David later | 19-22 | 1-samuel/8.json `literary`, `words` (shama), `doctrines` (sovereignty, kingdom) | Repository |
+| Acts 13:21 | 19-22 | acts/plain/13.json (13-25); BSB | Repository; BSB text |
+
+Cut in chapter 8: Mark 10:42-45 and the king who serves (the deep note calls it thematic, not a line the New Testament draws to this chapter).
+
+## The plain notes on 1 Samuel 9 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A farm errand against the demand for a war king; Benjamin small, between Ephraim and Judah, nearly destroyed in Judges 20-21, politically placed between north and south; Gibeah at Tell el-Ful, other sites proposed; Shalishah, Shaalim and Zuph not all locatable, Zuph and Samuel's ancestor (1:1); the town never named, Ramah debated; Saul impressive and passive, the servant with the idea, the money and the knowledge; a seer consulted with a gift; the quarter shekel before coins; verse 9 as a sign of later writing | 1-10 | 1-samuel/9.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Judges 21:6; Amos 7:12 | 1-10 | BSB | BSB text |
+| The reader knowing more than Saul; the folktale pattern; matsa seven times; the exodus echo of 9:16; the choice remaining God's (Deuteronomy 17:15); nagid as the one God has appointed; the high place before the temple, not condemned until later; Saul's protest like Gideon's | 11-21 | 1-samuel/9.json `literary`, `cultural`, `words` (matsa, nagid), `doctrines` (sovereignty) | Repository |
+| Exodus 3:7; Judges 6:15 | 11-21 | 1-samuel/9.json `christ` (the exodus echo), `literary` (Judges 6:15); BSB | Repository; BSB text |
+| Why God chose Saul: suited and failing by his own choices; the people's kind of king against David chosen by heart (16:7); God's plan taking in both, without excusing Saul; sovereignty and responsibility held together | 11-21 `hard` | 1-samuel/9.json `hard` | Repository; the answers in their holders' terms |
+| The sacrificial meal and its seating; about thirty guests; the reserved leg and the priest's right thigh (Leviticus 7:32); the flat roof for sleeping and private talk | 22-27 | 1-samuel/9.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 9: Luke 4:18 and the anointed one who saves (the deep note calls it pattern and vocabulary, not a line the New Testament draws to this chapter); the weight of the shekel in grams (not needed).
+
+## The plain notes on 1 Samuel 10 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Anointing as consecration for priests and kings; the kiss as homage; the LORD's inheritance; signs confirming a prophetic word; Rachel's tomb at Zelzah on Benjamin's border and Genesis 35:19, with the two explanations; the Oak of Tabor and Zelzah not placed; the Philistine outpost and the wish for a war leader; the seven days at Gilgal planted for chapter 13 | 1-8 | 1-samuel/10.json `story`, `historical`, `cultural`, `doctrines` (kingdom) | Repository; both explanations of the tomb in their holders' terms |
+| Genesis 35:19; Judges 14:6; 16:13 | 1-8 | 1-samuel/10.json `historical`, `words` (tsalach); BSB | Repository; BSB text |
+| All the signs fulfilled; the band of prophets, ecstatic and shared, with music (2 Kings 3:15); tsalach sudden and powerful; the Spirit equipping leaders as with the judges; the proverb and its second origin in 19:24, its tone and the reply unclear; Saul's silence read as humility or hesitation | 9-16 | 1-samuel/10.json `cultural`, `literary`, `words` (tsalach, naba), `doctrines` (spirit) | Repository; the readings in their holders' terms |
+| 2 Kings 3:15; Numbers 11:25 (quoted only before its dash) | 9-16 | 1-samuel/10.json `cultural` (2 Kings 3:15); BSB | Repository; BSB text |
+| How Saul could fail: equipping without lasting renewal (16:14); a real turning and a real turning away; the uncertain signs in this chapter (silence, hiding), read as humility or fear; a gift no guarantee | 9-16 `hard` | 1-samuel/10.json `hard` | Repository; the answers in their holders' terms |
+| Mizpah as in chapter 7; the rebuke with the gift; the lot from tribe to clan to man (Joshua 7); Saul hidden among the baggage, modesty or fear; the traditional acclamation; the rights of kingship written and laid before the LORD (Deuteronomy 17:18-20), the king a steward bound by a charter; the valiant and the worthless | 17-27 | 1-samuel/10.json `historical`, `cultural`, `literary`, `doctrines` (kingdom) | Repository |
+| Deuteronomy 17:19; Joshua 7:14 | 17-27 | 1-samuel/10.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 10: Luke 4:18, John 1:32-33 and Acts 2:33 and the anointing and the Spirit in Jesus (the deep note calls it a pattern, not a line the New Testament draws to this chapter).
+
+## The plain notes on 1 Samuel 11 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Ammonites east of the Jordan, Rabbah as modern Amman, Gilead and the tribes there; Jabesh-gilead in northern Gilead; its bond with Benjamin from Judges 21; a treaty as surrender; the right eye as humiliation and perhaps disabling; seven days and Nahash's confidence; 4QSamuel-a's paragraph on Nahash, printed by some translations and not others; the king still in the fields | 1-5 | 1-samuel/11.json `historical`, `cultural`, `story`; bible/guides/how-we-got-the-old-testament.json (the scrolls table) | Repository |
+| Judges 21:12 | 1-5 | 1-samuel/11.json `historical`; BSB | Repository; BSB text |
+| A Judges-style rescue; Saul from the field like Gideon (Judges 6:11); the Spirit's work; the oxen as threat and the parallel of Judges 19:29-30, a summons to unite and not divide; the terror of the LORD and one man; the numbers of verse 8 and the word for thousand; the morning watch | 6-11 | 1-samuel/11.json `cultural`, `literary`, `historical`, `words` (pachad), `doctrines` (spirit) | Repository |
+| Judges 6:11; Judges 19:30 | 6-11 | 1-samuel/11.json `literary`, `cultural`; BSB | Repository; BSB text; the act of Judges 19:29 named without detail |
+| Saul's finest moment, mercy to his critics and credit to the LORD; teshu'ah as rescue and God's work; chadash and the three readings of renewal; Jabesh remembering (31:11-13) | 12-15 | 1-samuel/11.json `story`, `literary`, `words` (teshu'ah, chadash), `doctrines` (salvation, kingdom) | Repository; the readings in their holders' terms |
+| 2 Samuel 2:5 (quoted without its opening blessing); Proverbs 20:22 (only its second sentence, to keep a quotation out of a quotation) | 12-15 | BSB | BSB text |
+| Saul made king three times: several traditions gathered by editors, or one process (designation, selection, confirmation), Samuel's word renewal; the finished account's agreement | 12-15 `hard` | 1-samuel/11.json `hard` | Repository; both readings in their holders' terms |
+
+Cut in chapter 11: Luke 23:34 and the king who shows mercy to those who rejected him (the deep note calls it thematic, not a line the New Testament draws to this chapter); teshu'ah as related to the names Joshua and Jesus (kept for chapter 14, where the deep note gives it for yasha).
+
+## The plain notes on 1 Samuel 12 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The speech at the Gilgal ceremony; Samuel not retiring but handing over civil leadership; the language of a court, witnesses and the abuses of a powerful man; the echo of 8:11-17, the judge who took nothing | 1-5 | 1-samuel/12.json `story`, `cultural` | Repository |
+| Numbers 16:15; Acts 20:33 | 1-5 | BSB | BSB text (a leader's integrity in other farewells, no line to Christ) |
+| A covenant speech like Moses' and Joshua's farewells; a trial in three movements; righteous acts as God's deeds of rescue; Judges compressed; Jerubbaal as Gideon; Bedan in the Hebrew and Barak in the Greek and Syriac, followed by the BSB; Samson for Samuel in some versions; the terms of verses 14 and 15 at the center, king and people under one covenant | 6-15 | 1-samuel/12.json `literary`, `historical`, `words` (tsedaqah), `doctrines` (kingdom) | Repository |
+| Judges 2:16; Judges 6:32 | 6-15 | 1-samuel/12.json `historical` (Judges 6:32); BSB | Repository; BSB text |
+| Rain at the wheat harvest in the dry season, ruinous and plainly not ordinary; Baal as the storm god and who commands the sky; Samuel from prosecutor to intercessor, ceasing to pray a sin; tohu as in Genesis 1:2 for idols; the covenant resting on God's name yet conditional; the chapter ending with the warning | 16-25 | 1-samuel/12.json `cultural`, `literary`, `words` (tohu), `doctrines` (prayer, covenant) | Repository |
+| Proverbs 26:1; Psalm 94:14 | 16-25 | BSB | BSB text |
+| Why God gave a king: Deuteronomy 17:14-20 and kingship not forbidden; the motive condemned (8:5) and the turn from the LORD at Nahash's threat; two strands or one argument; a king good only under God's rule; the sin in the demand, not the office | 16-25 `hard` | 1-samuel/12.json `hard` | Repository; both readings in their holders' terms |
+
+Cut in chapter 12: the resolution of the tension in Christ and Hebrews 7:25 (the deep note's pattern, not a line the New Testament draws to this chapter).
+
+## The plain notes on 1 Samuel 13 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The regnal formula; 13:1 damaged (one year old, two years), the BSB's thirty and forty-two, Acts 13:21's forty; thirty thousand chariots in the Hebrew and three thousand in the Greek and Syriac, followed by the BSB; the Philistines on the coast from the twelfth century BC; Michmash, Geba and Gibeah in Benjamin, Michmash and Geba across a ravine; the pressure built step by step | 1-7 | 1-samuel/13.json `historical`, `literary`; bible/guides/kings-of-israel-and-judah.json | Repository |
+| Judges 6:2; Acts 13:21 | 1-7 | BSB | BSB text |
+| The command of 10:8; sacrifice before battle; kings as priests elsewhere and David and Solomon sacrificing, so the fault the disobedience to the prophet's word; one sentence of action and Samuel's arrival; Genesis 3:13 echoed; Saul's string of excuses; sakal as moral blindness; a man after his own heart read two ways; the verdict on the dynasty | 8-15 | 1-samuel/13.json `cultural`, `literary`, `words` (sakal, levav), `doctrines` (sin, faith) | Repository; both readings of the phrase in their holders' terms |
+| Genesis 3:13; Acts 13:22 and Psalm 89:20 joined by Paul | 8-15 | acts/plain/13.json (13-25, `ot`); BSB | Repository; BSB text; the New Testament's own line |
+| Why so severe: a specific command through the prophet, rule under God's word or over it; the blaming reply and chapter 15; the dynasty and not yet the throne; no religious act in place of obedience (15:22) | 8-15 `hard` | 1-samuel/13.json `hard` | Repository; the answers in their holders' terms |
+| The Philistine control of metalwork, monopoly of iron or of smiths debated; the pim unknown to the King James translators, weights found, about two thirds of a shekel, the verse a price list; the shekel a weight, not a coin; the chapter's inventory of weakness | 16-23 | 1-samuel/13.json `cultural`, `literary`; bible/guides/weights-measures-money.json; context/worlds/old-testament-world.json | Repository |
+| Judges 5:8 | 16-23 | BSB | BSB text |
+
+Cut in chapter 13: the contrast between Saul's grasping and Jesus' refusal of shortcuts (the deep note calls it thematic; Acts 13:22 is kept as Paul's own line); the place of the first pim weight's discovery (kept on the context page).
+
+## The plain notes on 1 Samuel 14 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Israel cornered after chapter 13; two ways of leading; the Michmash pass, Bozez and Seneh, the Wadi Suweinit; Ahijah a great-grandson of Eli; Jonathan's words at the heart, bold and humble (perhaps, a sign); yasha and the names Joshua and Jesus as a fact about the word | 1-15 | 1-samuel/14.json `story`, `historical`, `literary`, `words` (yasha), `doctrines` (faith) | Repository; the root of the names stated as a word fact, not as a line to Christ |
+| Judges 7:2; 2 Chronicles 14:11 | 1-15 | BSB | BSB text |
+| The ark in verse 18 and the Greek ephod, many taking the ephod; Urim and Thummim, form unknown (Exodus 28:30); the consultation broken off; the Hebrews of verse 21 under Philistine control; oaths and curses binding; akar and Achan (Joshua 7:25-26), the real troubler | 16-30 | 1-samuel/14.json `historical`, `cultural`, `literary`, `words` (akar) | Repository |
+| Joshua 7:25 | 16-30 | 1-samuel/14.json `literary`; BSB | Repository; BSB text |
+| Blood forbidden (Leviticus 17:10-14; Deuteronomy 12:23-24); the leader's rule pushing the people into sin; the stone; Saul's first altar as a quiet comment; the lot like Achan's; verse 41 and the fuller Greek text in the BSB; padah as ransom, how not said; the letter of the oath against the heart of the law | 31-46 | 1-samuel/14.json `cultural`, `literary`, `historical`, `words` (padah), `doctrines` (law) | Repository |
+| Leviticus 17:11; Deuteronomy 12:23 | 31-46 | 1-samuel/14.json `cultural`; BSB | Repository; BSB text |
+| Did God point to Jonathan: the lot as fact without approving the oath; God's silence first and a judgment on Saul's conduct; the narrator with Jonathan and the people | 31-46 `hard` | 1-samuel/14.json `hard` | Repository; both readings in their holders' terms |
+| The archival summary closing a king's account; real credit for Saul's wars; Michal and Abner named; the Philistine war all his days and the brave men enlisted | 47-52 | 1-samuel/14.json `literary`, `story` | Repository |
+| 1 Chronicles 8:33; 2 Samuel 2:8 | 47-52 | BSB | BSB text |
+
+Cut in chapter 14: Mark 7:8-13 and the gospel's Son who is not spared set against Jonathan (the deep note calls the echo thematic, not a line the New Testament draws to this chapter); verses 45 and 47 quoted only in part or paraphrased because they carry a dash.
+
+## The plain notes on 1 Samuel 15 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The turning point, the dynasty in 13 and Saul himself here; Amalek's attack (Exodus 17:8-16) and Deuteronomy 25:17-19; the Amalekites as raiders of the Negev and Sinai, enemies into David's day and alive at Ziklag (chapter 30); Havilah and Shur uncertain; herem, nothing kept; Mesha's inscription of the ninth century BC; keeping the best as theft from God; the numbers of verse 4 and the word for thousand; the Kenites warned and spared | 1-9 | 1-samuel/15.json `story`, `historical`, `cultural`, `words` (charam); deuteronomy/plain/25.json (17-19, `hearers`) | Repository |
+| Exodus 17:14; Deuteronomy 25:17; Judges 1:16 and the Kenites as the clan of Moses' father-in-law | 1-9 | judges/plain/1.json (8-21); BSB | Repository; BSB text |
+| 15:3 not softened; Deuteronomy 24:16; the four readings each with its cost (judgment after long patience; the stock idiom of war, with 27:8 and 30:1, the text still saying infants; God's right over life, Augustine and Aquinas; accommodation in the light of Christ's command to love enemies, and the critics' charge); many hold more than one; no side | 1-9 `hard` | joshua/plain/6.json (17-21, `hard`); questions/old-testament/the-command-to-destroy-the-canaanites.json (status live); 1-samuel/15.json `hard` | Repository; each reading in its holders' terms; no side |
+| What holds: one people, one moment, never renewed; not about race (the Kenites); no war for the church (Matthew 5:44; 26:52); the chapter's question and its grief; no people living today is Amalek; no warrant for violence or contempt; no nation, state, land or conflict of today; the misuse owned as sin; Ezekiel 18:23; the site's pages go further | 1-9 `hard` | joshua/plain/6.json (17-21, `hard`); deuteronomy/plain/25.json (17-19, `hard`); exodus/plain/17.json (14-16, `hard`); the live page; BSB | Repository; as the site's live pages state it |
+| Abraham's question as permission to ask (Genesis 18:25) | 1-9 `asks` | questions/old-testament/the-command-to-destroy-the-canaanites.json (the concessions) | Repository |
+| Samuel's night of distress; Carmel in Judah south of Hebron, not Mount Carmel; the monument as a self-made victory marker; shama through the chapter; Saul's blame-shifting; Samuel's poetry; teraphim and divination; ma'as answering ma'as as in 8:7 | 10-23 | 1-samuel/15.json `historical`, `cultural`, `literary`, `words` (ma'as, teraphim) | Repository |
+| Hosea 6:6; Micah 6:8; Psalm 51:16-17 | 10-23 | 1-samuel/15.json `christ` (Hosea 6:6; Micah 6:6-8); bible/guides/offerings-and-purity.json; BSB | Repository; BSB text |
+| Two confessions, regret over consequences set beside repentance; the garment as standing and the torn robe as verdict, the hem as pleading; Agag's death told in one sentence as the sentence Saul left undone, no model for treating a prisoner; the frame of regret with 15:29 in the middle; the grief | 24-35 | 1-samuel/15.json `cultural`, `literary`, `doctrines` (repentance); judges/plain/1.json (1-7, `hard`: no model for the treatment of any prisoner) | Repository |
+| 1 Kings 11:31; Numbers 23:19; Esther 3:1 and the tradition linking Agag and Haman | 24-35 | 1-samuel/15.json `cultural` (Ahijah's cloak), `historical` (Haman); deuteronomy/plain/25.json (17-19, `later`); BSB | Repository; BSB text |
+| Regret and no change of mind: real grief and response; purposes not fickle; side by side on purpose; the rejection of Saul as king, nothing said of any person's eternal state | 24-35 `hard` | 1-samuel/15.json `words` (nacham), `doctrines` (attributes); bible/guides/reading-narrative.json | Repository |
+| The care line (‘If you are afraid that you have fallen away from God...’ to ‘...lists places to turn.’) | 24-35 `hard` | hebrews/plain/3.json (12-15), hebrews/plain/10.json (26-31) and others (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 15: Matthew 9:13 and 12:7, Hebrews 10:5-10 and Saul as the dark background for the King who obeyed (the deep note calls the link a theme, not a line the New Testament draws to this chapter); the manner of Agag's death (told in the text, not lingered over here); Jewish readings of Amalek as a charge to resist cruelty (kept in the Deuteronomy 25 note).
+
+A second correction to 1 Samuel's book page, made after chapter 15 (2026-11-23): the part on Endor and Mount Gilboa said that Saul ‘falls on his own sword’, and the hard-passage line spoke of his death ‘by his own sword’. Both now say that he took his own life, by his own hand, so that the page names no means of self-harm; the verse itself (31:4) stands in the Bible text beside it. The care line that follows is unchanged.
+
+A third change to 1 Samuel's book page, made at the first push (2026-11-23): the browser check of the served build found two pairs of map names touching at 1440 pixels wide, Bethel with Jerusalem and Bethlehem with Hebron. Two labels were moved, Bethel's to sit centered above its mark and Bethlehem's to the left of its mark; no words changed and no place moved. The book page was checked again at 390 and 1440 with no overlap.
+
+## The plain notes on 1 Samuel 16 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The rise of David begins, running to 2 Samuel 5; Bethlehem six miles south, the town of Ruth (Ruth 4:17-22); David's reign from about 1010 BC and the anointing some years before; anointing another king as treason; the elders' trembling, two readings, not said; the sacrifice real and consecration before the meal | 1-5 | 1-samuel/16.json `story`, `historical`, `cultural` | Repository; both readings of the elders' fear in their holders' terms |
+| Ruth 4:17; Micah 5:2 (quoted only before its dash) and Matthew 2:6 | 1-5 | luke/plain/2.json (1-7, `ot`: Micah 5:2 and Matthew 2:6); BSB | Repository; BSB text; Matthew's own line |
+| Sight as the key word; the heart as the inner self; the irony of Saul's height; the slow procession and David's name withheld until the anointing; the youngest chosen against the firstborn, as in Genesis; sheep as younger sons' work; tsalach from that day forward; seven sons in 1 Chronicles 2:13-15 and eight implied here | 6-13 | 1-samuel/16.json `literary`, `cultural`, `historical`, `words` (levav, tsalach); theology/passage-notes.json (1 samuel 16) | Repository |
+| Psalm 78:70-71; 1 Chronicles 2:15 | 6-13 | 1-samuel/16.json `historical`; BSB | Repository; BSB text |
+| The two panels and the Spirit coming and going in consecutive verses; the Spirit's power for an office withdrawn; ra as bad or harmful; the kinnor as a lyre; music to calm; the customary gifts; the chosen king in the rejected king's house | 14-23 | 1-samuel/16.json `literary`, `cultural`, `words` (ra), `doctrines` (spirit) | Repository |
+| Judges 9:23; 1 Kings 22:22 | 14-23 | 1-samuel/16.json `hard` (Judges 9:23; 1 Kings 22:19-23); BSB | Repository; BSB text |
+| A spirit of distress from the LORD: God permitting or directing a hostile spirit without authoring evil; or a harmful affliction sent as judgment; both; the Old Testament tracing all to God's rule; the torment following the Spirit's departure and relief through music; no condition named and no diagnosis | 14-23 `hard` | 1-samuel/16.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘If sadness has settled on you and will not lift...’ to ‘...lists places to turn.’) | 14-23 `hard` | 1-thessalonians/plain/5.json (16-22, `hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 16: Isaiah 11:1-2, Jesus' baptism and the hidden king (the deep note's pattern, not a line the New Testament draws to this chapter; Matthew 2:6 is kept as Matthew's own line on Bethlehem); the theology passage note's shepherd boy as a picture of the shepherd of the people; a reading that God did not rebuke Samuel's grief (cut before commit; the note says only that God asked how long it would last).
+
+## The plain notes on 1 Samuel 17 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Valley of Elah as a corridor; Socoh and Azekah; Gath at Tell es-Safi; Khirbet Qeiyafa from 2007, roughly Saul and David's time, proposed as Shaaraim (verse 52), debated; single combat; benayim, the man of the between, only here; the armor's weight, roughly 125 pounds, and the Philistine advantage in metal; six cubits and a span (about nine and a half feet) or four cubits and a span (about six feet nine inches); the camera narrowing; the tall king afraid | 1-11 | 1-samuel/17.json `historical`, `cultural`, `literary`, `story`, `words` (benayim); bible/guides/weights-measures-money.json | Repository; no side on the height or the identification |
+| 2 Samuel 21:19 and 1 Chronicles 20:5, the BSB supplying the brother of, explained in different ways | 1-11 | questions/contradictions/numbers-in-samuel-kings-and-chronicles.json (status live); 1-samuel/17.json `historical`; BSB | Repository; BSB text; no side |
+| Forty days; charaph and the question of honor; chay and the living God; uncircumcised as outside the covenant (Genesis 17); the king's reward as a champion's favor; Eliab as the son Samuel had thought anointed (16:6-7) | 12-30 | 1-samuel/17.json `literary`, `cultural`, `words` (charaph, chay) | Repository |
+| Joshua 3:10 | 12-30 | 1-samuel/17.json `words` (chay); BSB | Repository; BSB text |
+| Faith as memory put to work; Saul's armor not fitting; the sling a weapon, trained slingers (Judges 20:16), a shepherd's defense; verses 45-47 as the center; the misreading of the story as self-belief | 31-47 | 1-samuel/17.json `cultural`, `literary`, `doctrines` (faith, salvation); theology/passage-notes.json (1 samuel 17, `misreadings`) | Repository |
+| Judges 20:16; Psalm 20:7 | 31-47 | 1-samuel/17.json `cultural`; theology/passage-notes.json (1 samuel 17, `echoes`: the Psalms on kings not saved by armies); BSB | Repository; BSB text |
+| The killing told briefly; verse 54 and Jerusalem not yet Israel's, the narrator looking ahead; Saul's question turned toward David's family | 48-58 | 1-samuel/17.json `historical`, `literary` | Repository |
+| 2 Samuel 5:7; Hebrews 11:33-34 | 48-58 | hebrews/plain/11.json (32-40); BSB | Repository; BSB text |
+| Saul's question: not recognizing a court musician, or David grown; a question about the father and household; two accounts set side by side and the shorter Greek form without 55-58; not exclusive, not settled | 48-58 `hard` | 1-samuel/17.json `hard` | Repository; the answers in their holders' terms |
+
+Cut in chapter 17: Colossians 2:15 and Hebrews 2:14-15 and David as a picture of Christ the champion (the deep note says the chapter is a battle story, not an allegory; not a line the New Testament draws to this chapter); Goliath falling facedown as Dagon fell (a likeness the repository's notes do not draw); verse 28 quoted only in part because it carries a dash.
+
+## The plain notes on 1 Samuel 18 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Everyone loving David and Saul alone afraid; the robe and weapons as identity and position, the crown prince handing over what would have been his; covenant as a sworn bond reaching to families, renewed in 20:8-17 and 23:18 and kept after Jonathan's death (2 Samuel 9); love as alliance loyalty too; women's victory songs (Exodus 15:20-21; Judges 11:34); thousands and tens of thousands as a poetic rise heard by Saul as a ranking; Saul's fear for the throne (15:28) | 1-9 | 1-samuel/18.json `story`, `cultural`, `words` (ahav, berit) | Repository |
+| Exodus 15:20; 2 Samuel 1:26; 2 Samuel 9:1 | 1-9 | 1-samuel/18.json `cultural`, `story`, `hard`; BSB | Repository; BSB text |
+| Jonathan's love: friendship and covenant loyalty, held by most commentators, the vocabulary of alliance, nothing describing a sexual relationship; some modern interpreters reading a romantic bond from the language and 2 Samuel 1:26; both readings named, the text the measure; covenant love at great cost | 1-9 `hard` | 1-samuel/18.json `hard` | Repository; both readings in their holders' terms |
+| The two repeated statements and the stages of Saul's fear; sakal as wise and prospering, not luck, sounding like the foolishness of 13:13; schemes that advance David; leading them out and back as the people's wish in 8:20 | 10-16 | 1-samuel/18.json `literary`, `words` (sakal), `doctrines` (providence) | Repository |
+| Proverbs 27:4 | 10-16 | BSB | BSB text (a thematic line within the Old Testament) |
+| The mohar paid to the bride's family (Exodus 22:16-17); David too poor; the custom made a trap; Saul's thoughts the only ones told, and schemes; Michal's love welcomed as a tool (18:20-21); the scheme advancing David into the royal family; Merab and Adriel in 2 Samuel 21:8; the shorter Greek text without the offer of Merab, scholars divided, the same shape of events | 17-30 | 1-samuel/18.json `cultural`, `literary`, `historical`, `words` (mohar), `doctrines` (providence) | Repository |
+| Exodus 22:16; 2 Samuel 3:14 | 17-30 | 1-samuel/18.json `cultural`; BSB | Repository; BSB text |
+| The bride-price and Michal: shown and not admired; Saul's plan seen for what it is; David's silence; the price told briefly, no pattern; every plan advancing David because the LORD is with him | 17-30 `hard` | 1-samuel/18.json `literary`, `cultural`, `doctrines` (providence, sin) | Repository |
+
+Cut in chapter 18: Mark 15:10 and Philippians 2:5-8 and the beloved one plotted against (the deep note calls it a thematic resonance, not a line the New Testament draws to this chapter); a claim that proof of an enemy's death was a custom of war (not stated in the repository; cut before commit).
+
+## The plain notes on 1 Samuel 19 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hostility in the open and the start of David's flight to Saul's death; protection through Saul's own household; Jonathan's plea recalling God's work and Saul's joy; chaphets against Saul's hatred (16:21); the oath broken within verses | 1-7 | 1-samuel/19.json `story`, `literary`, `words` (chaphets), `doctrines` (sin, providence) | Repository |
+| Proverbs 31:8 | 1-7 | judges/plain/19.json (22-30, `later`); BSB | Repository; BSB text |
+| Four attempts, each blocked; malat and flight, the anointed king's task to get away; teraphim as household gods sometimes for divination; Rachel's in Genesis 31; its presence unexplained, perhaps Michal's; large enough to pass for a man; the irony with 15:23; Michal's second lie protecting herself | 8-17 | 1-samuel/19.json `literary`, `cultural`, `words` (teraphim, malat) | Repository |
+| Psalm 59's heading and the debate over headings; Genesis 31:34 | 8-17 | 1-samuel/19.json `historical`; psalms/plain/59.json (1-17, `hearers`); BSB | Repository; BSB text |
+| Michal's lie and the idol: reported without comment; the midwives and Rahab and no duty of truth to a murderer; deception always wrong; the idol Michal's, or household figures tolerated; neither approved; God protecting David through imperfect people | 8-17 `hard` | 1-samuel/19.json `hard` | Repository; the readings in their holders' terms |
+| Ramah and Gibeah a few miles apart; Naioth perhaps dwellings or the prophets' camp; the company of prophets and ecstatic speech; three plus one; the Spirit not a tool, protecting David without changing Saul, no proof of approval; naked as lightly clothed; the king without the signs of office; the proverb of 10:11-12 said again with a darker edge | 18-24 | 1-samuel/19.json `historical`, `cultural`, `literary`, `doctrines` (spirit) | Repository |
+| Psalm 139:7 | 18-24 | BSB | BSB text (a thematic line within the Old Testament) |
+
+Cut in chapter 19: 1 John 2:1, Acts 4:25-28 and Jonathan's plea as a picture of intercession (the deep note calls these thematic connections, not lines the New Testament draws to this chapter); the large cistern at Secu placed (unidentified).
+
+## The plain notes on 1 Samuel 20 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last time together at court; reconciliation shown impossible; the New Moon as a holy day with offerings and trumpets (Numbers 10:10; 28:11-15) and a feast of at least two days; clan sacrifices at local places before the temple; the excuse believable | 1-11 | 1-samuel/20.json `story`, `cultural`, `historical` | Repository |
+| Proverbs 18:24; Numbers 10:10 | 1-11 | 1-samuel/20.json `cultural`; BSB | Repository; BSB text |
+| David's cover story: perhaps true, or a fair test of a king who had broken his oath (19:6); or a real deception reported without approval, a faith real but not flawless, with chapter 21 to come; neither model nor outright condemnation | 1-11 `hard` | 1-samuel/20.json `hard` | Repository; the readings in their holders' terms |
+| Jonathan's acknowledgment of David's future and his submission to it; chesed as loyalty beyond what is owed, the LORD's loving devotion; new dynasties wiping out the old, so the request no formality; oaths at the start and end, God as witness; the arrow signal unseen | 12-23 | 1-samuel/20.json `cultural`, `literary`, `words` (chesed, berit), `doctrines` (sovereignty, covenant) | Repository |
+| Proverbs 17:17; 2 Samuel 9:7; 2 Samuel 21:7 | 12-23 | 1-samuel/20.json `story`; BSB | Repository; BSB text |
+| The small court and its seating, Abner as Saul's cousin; ritual uncleanness barring the meal and not the same as sin; the insult to the mother as a charge of disloyalty; the political fact stated; Jonathan's two questions | 24-34 | 1-samuel/20.json `historical`, `cultural` | Repository |
+| Leviticus 7:20 | 24-34 | 1-samuel/20.json `cultural`; BSB | Repository; BSB text |
+| A father's rage: a family torn by jealousy; Jonathan choosing what is right at great cost while honoring his father as far as he can; the rage named as what it is | 24-34 `hard` | 1-samuel/20.json `doctrines` (family) | Repository |
+| The care line (‘Nothing in this passage asks anyone to stay where they or their children are in danger...’ to ‘...lists places to turn.’) | 24-34 `hard` | 1-john/plain/3.json (16-18, `hard`) | Reused whole, word for word; Find Help named |
+| The plan carried out; the double meaning of Jonathan's words to the boy; the spare last scene and David weeping more (verse 41, paraphrased after its dash); shalom as wholeness spoken in danger; the meeting in 23:16-18 and the news of Jonathan's death | 35-42 | 1-samuel/20.json `literary`, `words` (shalom) | Repository |
+| 1 Chronicles 10:2; 2 Samuel 1:25 | 35-42 | BSB | BSB text |
+
+Cut in chapter 20: Isaiah 55:3 and Acts 13:34 and Jonathan as a model of yielding to the true son of David (the deep note calls it thematic; not a line the New Testament draws to this chapter); 20:15 and 20:41 quoted only in part because they carry a dash.
+
+## The plain notes on 1 Samuel 21 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The exile beginning low; Nob a town of priests within sight of Jerusalem (Isaiah 10:32); Eli's descendants there after Shiloh (Jeremiah 7:12-14 and chapter 4); Ahimelech a great-grandson of Eli; the bread of the Presence and the priests' portion (Leviticus 24:5-9); the condition and ritual purity (Leviticus 15:18; Deuteronomy 23:9-10), bent and not ignored; the lie and its cost (22:22); the single sentence on Doeg as a deliberate delay; Doeg an Edomite and Saul's foreign servants; Goliath's sword as a trophy laid up in the sanctuary | 1-9 | 1-samuel/21.json `story`, `historical`, `cultural`, `literary`, `doctrines` (holiness, sin) | Repository |
+| Leviticus 24:9; Mark 2:25 and Jesus' point, with Matthew 12:3-4 and Luke 6:3-4 | 1-9 | mark/plain/2.json (23-28, `ot`); matthew/plain/12.json (1-8, `ot`); luke/plain/6.json (1-5, `ot`); 1-samuel/21.json `christ`; BSB | Repository; BSB text; Jesus' own use of the story |
+| Abiathar in Mark 2:26: Ahimelech's son, the one who escaped; Matthew and Luke without the name; in the time of Abiathar; a passage named by its best-known figure (Mark 12:26); a slip by Mark or a copyist; readers weighing these differently; Jesus' point unaffected | 1-9 `hard` | 1-samuel/21.json `hard`; mark/plain/2.json (23-28, `hard`) | Repository; the answers in their holders' terms |
+| Gath at Tell es-Safi; Achish again in 27 to 29; the irony of Goliath's sword at Gath and the title king of the land; the song quoted from 18:7; feigned madness and the fear and avoidance shown to the seemingly mad; halal spelled like the verb to praise, treated by lexicons as a separate root; undignified protection; no leave to mock anyone who suffers in mind | 10-15 | 1-samuel/21.json `historical`, `cultural`, `literary`, `words` (halal), `doctrines` (providence) | Repository |
+| The headings of Psalm 34 (Abimelech as a title or a later note) and Psalm 56 | 10-15 | psalms/plain/34.json (1-10, `hearers`); psalms/plain/56.json (1-13, `hearers`); 1-samuel/21.json `historical`; BSB | Repository; BSB text; both readings of the heading in their holders' terms |
+
+Cut in chapter 21: Jesus as the anointed but not yet enthroned king whose followers are fed from holy things (the deep note's reading beyond Jesus' own words; the story's use by Jesus is kept); the gloss in the time of Abiathar given without quotation marks, since it is not the BSB's wording; a reason for Ahimelech's trembling (the text gives none; cut before commit).
+
+## The plain notes on 1 Samuel 22 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two kingdoms taking shape; Adullam in the lowlands southwest of Bethlehem near Elah, in cave country; the distressed, indebted and discontented and bands on the margins, the core of a royal army; God's people formed from the margins; Moab east of the Dead Sea, Ruth the Moabite (Ruth 4:13-22) and Moab's hostility to Saul (14:47); the stronghold a natural fortress; Gad's first appearance and later service | 1-5 | 1-samuel/22.json `story`, `historical`, `cultural`, `words` (metsudah), `doctrines` (church) | Repository |
+| The headings of Psalms 142 and 57, which cave not said; 2 Samuel 24:11 | 1-5 | 1-samuel/22.json `historical`; psalms/plain/142.json and 57.json (`hearers`); BSB | Repository; BSB text |
+| The alternating telling and the two pictures of the leaders; the appeal to tribal loyalty and royal patronage; qashar and Saul's suspicion; aman and Ahimelech's truest word answered with death | 6-16 | 1-samuel/22.json `cultural`, `literary`, `words` (qashar, aman) | Repository |
+| Psalm 52's heading and its first line | 6-16 | 1-samuel/22.json `historical`; psalms/plain/52.json (1-9, `hearers`); BSB | Repository; BSB text (the heading quoted only up to its inner quotation) |
+| The guards' refusal and the turn to a foreigner; verse 19 echoing 15:3, the destruction turned on God's priests; the word against Eli's house fulfilled (2:31-33) and the guilt on Saul and Doeg; David's confession and his charge of the survivor (mishmeret); Abiathar and the ephod in chapter 23 | 17-23 | 1-samuel/22.json `literary`, `cultural`, `words` (mishmeret), `doctrines` (judgment) | Repository |
+| 1 Kings 2:27; Ezekiel 18:20 | 17-23 | 1-samuel/22.json `doctrines` (judgment), `hard` (Ezekiel 18); BSB | Repository; BSB text |
+| Why God allowed the massacre: not softened; guilt on Saul and Doeg and David's admitted part; the judgment on Eli's house at work without lessening guilt; the troubling framework and the children; consequences on families with personal judgment; lament and protection; never called good | 17-23 `hard` | 1-samuel/22.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 17-23 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 22: Mark 2:17 and the king whose company is those with nowhere else to go (the deep note calls it a thematic anticipation, not a line the New Testament draws to this chapter); Mizpeh of Moab placed (unidentified); 22:15 quoted not at all because it carries a dash.
+
+## The plain notes on 1 Samuel 23 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The ephod with David and Saul cut off from it; Keilah a walled town in the lowlands south of Adullam near the border; harvest raids and threshing floors on high ground; David doing Saul's task (9:16); yes-or-no questions through the ephod; gates and bars as a trap; sha'al and Saul's name, the asked-for king no longer asking | 1-13 | 1-samuel/23.json `story`, `historical`, `cultural`, `words` (sha'al, yasha) | Repository |
+| 1 Chronicles 14:10 | 1-13 | BSB | BSB text (quoted only after its inner quotation) |
+| God's answers about what did not happen: what would have happened had David stayed; the Molinists after Luis de Molina, sixteenth-century Jesuit; Reformed and Thomist theologians and God's knowledge through his decree; open theists and present intentions; debates that do not divide the faith; God warning David in time | 1-13 `hard` | 1-samuel/23.json `hard` | Repository; each view in its holders' terms; no side |
+| Ziph and the dry hill country south of Hebron; hand running through the chapter; Jonathan's visit at the center between two betrayals; strengthening in God as pointing to the promise, the strength from God (30:6); Jonathan's open word and the last meeting | 14-18 | 1-samuel/23.json `historical`, `literary`, `words` (chazaq), `doctrines` (faith), `story` | Repository |
+| Ecclesiastes 4:10 | 14-18 | BSB | BSB text (a thematic line within the Old Testament) |
+| The Ziphites of David's own tribe; Saul's warm words and self-pity; Jeshimon as wasteland; Sela-hammahlekoth as rock of parting or escape; En-gedi's springs, cliffs and caves; the tension and the sudden rescue | 19-29 | 1-samuel/23.json `historical`, `cultural`, `literary`, `words` (sela), `doctrines` (providence) | Repository |
+| The headings of Psalm 54 and Psalm 63, the time not said | 19-29 | psalms/plain/54.json and 63.json (`hearers`); BSB | Repository; BSB text |
+
+Cut in chapter 23: Luke 6:12-13, John 5:19 and Hebrews 10:23-25 and Jesus as one who prayed before decisions and was handed over (the deep note calls them thematic connections, not lines the New Testament draws to this chapter); Saul's greeting to the Ziphites in verse 21 left unquoted, the note quoting only his reason.
+
+## The plain notes on 1 Samuel 24 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hunter at the mercy of the hunted; the first of two sparings (chapter 26); no throne by violence, waiting for God; En-gedi's springs and cliffs, caves and wild goats; sheepfolds at cave mouths and caves deep enough to hide many; three thousand as in 13:2; the robe's corner as identity and authority, a symbolic act, the conscience troubled; the echo of 15:27-28; the anointing still marking Saul | 1-7 | 1-samuel/24.json `story`, `historical`, `cultural`, `words` (mashiach, kanaph) | Repository |
+| The headings of Psalms 57 and 142, the cave not said | 1-7 | 1-samuel/24.json `historical`; psalms/plain/57.json and 142.json (`hearers`); BSB | Repository; BSB text |
+| The LORD's anointed and leaders never opposed: further than the text; confrontation, appeal to God, flight; a narrow reading and a broader one; the prophets confronting kings; respect for authorities and obedience to God over people; restraint and trust, not silence before injustice | 1-7 `hard` | 1-samuel/24.json `hard` | Repository; both readings in their holders' terms |
+| The care line (‘And nothing in this passage shields a leader who does harm...’ to ‘...lists places to turn.’) | 1-7 `hard` | 1-timothy/plain/3.json (1-7); numbers/plain/16.json (1-15); titus/plain/1.json (5-9) (`hard`) | Reused whole, word for word; Find Help named |
+| The two halves of the chapter; ‘my father’ as respect and kinship; a dead dog and a flea as expressions of insignificance; hand binding the chapter; three appeals to God as judge, shaphat as deciding and delivering; vengeance handed to God | 8-15 | 1-samuel/24.json `literary`, `cultural`, `words` (shaphat), `doctrines` (judgment) | Repository |
+| Deuteronomy 32:35 and Romans 12:19; Psalm 7:4 | 8-15 | 1-samuel/24.json `doctrines` (judgment); psalms/plain/54.json (1-7, `later`); psalms/plain/7.json (1-5, `later`); BSB | Repository; BSB text |
+| Saul's words as the story's moral; his first open admission since chapter 18; the request echoing Jonathan's in chapter 20 and the custom of wiping out the old king's family; David's oath kept; Saul home and David to the stronghold; tears not lasting repentance (chapter 26) | 16-22 | 1-samuel/24.json `story`, `literary`, `cultural`, `words` (tsaddiq), `doctrines` (repentance) | Repository |
+| 2 Samuel 5:3; Proverbs 25:21 | 16-22 | 1-samuel/24.json `historical` (2 Samuel 5); BSB | Repository; BSB text |
+
+Cut in chapter 24: 1 Peter 2:23, Luke 6:27-28 and David's restraint as a reflection of Jesus' way (the deep note calls it thematic, not a line the New Testament draws to this chapter); the idiom behind relieve himself (not needed).
+
+## The plain notes on 1 Samuel 25 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Samuel's death closing an era; David an outlaw in the southern wilderness with about six hundred men, probably late in Saul's reign; Maon and Carmel south of Hebron, not Mount Carmel; Paran in Sinai and the Greek reading Maon; the Calebites, Caleb and Hebron (Joshua 14), the leading clan there; shearing as a festival of plenty and generosity; real protection given and a gift expected; David's courtesy and Nabal's calculated insult; the chapter between the two sparings | 1-13 | 1-samuel/25.json `story`, `historical`, `cultural` | Repository |
+| Genesis 38:12; Proverbs 26:4 | 1-13 | 1-samuel/25.json `cultural` (Genesis 38); BSB | Repository; BSB text |
+| The servant's report (a wall day and night); the large gift and a petitioner's posture; Abigail's speech the longest by a woman in Samuel, apology, theology and prophecy; Nabal as fool and nevalah as strong; the bundle of the living and stones from a sling; dam three times and innocent blood; the king kept from guilt; Abigail with Jonathan and Saul saying David will rule | 14-35 | 1-samuel/25.json `literary`, `cultural`, `words` (nevalah, dam, tseror, aman), `story` | Repository |
+| 2 Samuel 7:16; Deuteronomy 32:35; Proverbs 15:1 | 14-35 | 1-samuel/25.json `words` (aman and 2 Samuel 7:16), `doctrines` (judgment); BSB | Repository; BSB text |
+| A protection racket: the servant's testimony, the customary gift, the polite request; the planned revenge out of proportion and called bloodshed; the grievance real and the revenge sin | 14-35 `hard` | 1-samuel/25.json `hard` | Repository |
+| A feast fit for a king while the king is in the wilderness; good repaid with evil like Saul; the LORD dealing with Nabal and David's later word about Saul (26:10); Abigail and ties to the Calebite district and Hebron; Ahinoam of a Jezreel in Judah; David's household apart from Saul's; more than one wife allowed, never commanded, the trouble it caused | 36-44 | 1-samuel/25.json `literary`, `historical`; deuteronomy/plain/21.json (15-17, `hearers`) | Repository |
+| Deuteronomy 17:17; 2 Samuel 3:16 | 36-44 | BSB | BSB text |
+| Michal given to another man: one line; Saul's daughter again a piece in his quarrel (18:21); no word from Michal; Paltiel's weeping; grief recorded and not approved | 36-44 `hard` | 1-samuel/25.json `historical`; 1-samuel/18.json `literary`; BSB | Repository; BSB text |
+| The care line (‘A word for anyone who was not protected by a parent...’ to ‘...lists places to turn.’) | 36-44 `hard` | genesis/plain/19.json and judges/plain/11.json (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 25: 1 Peter 2:23 and Abigail as a faint picture of intercession (the deep note says the text does not press it and calls the link thematic); a pun on Calebite and the word for dog (one reading, not needed); the measure of a seah (not needed).
+
+## The plain notes on 1 Samuel 26 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second sparing, David taking the initiative; the Wilderness of Ziph southeast of Hebron and the Ziphites' earlier report (23:19); the standing force and Abner as Saul's cousin (14:50); Ahimelech the Hittite and foreigners in David's band; Abishai son of Zeruiah, David's nephew, and his brothers; the spear as almost a scepter and the spear thrown at David and Jonathan; the water jug in the desert; tardemah as with Adam and Abram, the sleep the LORD's doing; the lesson of Nabal | 1-12 | 1-samuel/26.json `story`, `historical`, `cultural`, `words` (tardemah), `doctrines` (sovereignty) | Repository |
+| Genesis 2:21; Genesis 15:12; 1 Chronicles 2:16 | 1-12 | 1-samuel/26.json `words` (tardemah), `historical`; BSB | Repository; BSB text |
+| The deliberate parallel with chapter 24 and its differences; the irony of the taunt to Abner; the inheritance of the LORD, worship among God's people, not a God limited to one land, exile as spiritual loss; the partridge hunted on foot; ‘I have played the fool’ and 13:13; no lasting change; the last meeting | 13-25 | 1-samuel/26.json `literary`, `cultural`, `words` (nachalah, tsedaqah), `doctrines` (repentance), `story` | Repository |
+| Psalm 42:2, a psalm of the sons of Korah, and 2 Samuel 1:23 | 13-25 | psalms/plain/42.json (the heading, ‘of the sons of Korah’); BSB | BSB text (Psalm 42:2 a thematic line within the Old Testament, not said to be David's) |
+
+Cut in chapter 26: Philippians 2:6-11 and Jesus telling Peter to put away his sword (the deep note calls it a pattern of character, not a prediction or a line the New Testament draws to this chapter); Uriah the Hittite (left to 2 Samuel); 26:19 quoted not at all, since its words of a curse and its closing quotation sit inside David's speech.
+
+## The plain notes on 1 Samuel 27 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Saul's parting words little reassurance; David speaking to himself and not to God, no prayer, priest, ephod or word, against chapter 23; a decision out of exhaustion; the earlier escape from Achish (21:10-15); mercenary service and settlement on the frontier; Ziklag in the western Negev, its site debated; 27:6 and the divided kingdom after about 930 BC; the double life | 1-7 | 1-samuel/27.json `story`, `historical`, `cultural`, `literary`, `doctrines` (faith) | Repository |
+| Psalm 56:3 (a psalm headed for Gath); 1 Chronicles 12:1 | 1-7 | psalms/plain/56.json (1-13, `hearers`); BSB | Repository; BSB text |
+| The cool telling and the gap between deed and word; the desert peoples toward Shur; the southern Geshurites distinct from Aramean Geshur; the Jerahmeelites and Kenites allied with Judah; raiding normal and the Amalekites old enemies (Exodus 17; Deuteronomy 25:17-19); secrecy as the stated motive; mishpat as custom and the future king of justice; aman and Achish's misplaced trust | 8-12 | 1-samuel/27.json `historical`, `cultural`, `literary`, `words` (mishpat, aman, baash) | Repository |
+| Genesis 34:30; Proverbs 12:22 | 8-12 | 1-samuel/27.json `words` (baash: Genesis 34:30); BSB | Repository; BSB text |
+| The raids and lies: under the ban (Exodus 17:14; chapter 15) though the motive secrecy; reported without approval, the silence about prayer; a ruse admired in the weak; no model; the cost beginning in chapter 30 | 8-12 `hard` | 1-samuel/27.json `hard` | Repository; the readings in their holders' terms |
+| No warrant for violence against any person or people; no people living today is Amalek; no nation, land or conflict of today | 8-12 `hard` | deuteronomy/plain/25.json (17-19, `hard`); exodus/plain/17.json (14-16, `hard`) | Repository; as the site's notes state it |
+
+Cut in chapter 27: 1 Peter 2:22 and the son of David who never deceives (the deep note says it is better not to force a link to Christ here); Achish called king though Philistine rulers were usually called lords (not needed); Saul's word of blessing in 26:25 described as parting words, so that the word stays inside quoted Scripture.
+
+## The plain notes on 1 Samuel 28 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The story moving to this night since chapter 15; Samuel's death repeated; David marching with the Philistines, his answer given without comment; Shunem north of the Jezreel Valley and Gilboa to the south, the valley and its roads; Saul's removal of mediums under the law and the darkness of his visit; dreams, Urim and prophets; Saul cut off from the priesthood at Nob, Abiathar with David | 1-6 | 1-samuel/28.json `story`, `historical`, `cultural`, `words` (urim) | Repository |
+| ‘This is a law for Israel about its own worship...’ to ‘...the witch trials of later centuries.’ | 1-6 | deuteronomy/plain/18.json (9-14, `hearers`); exodus/plain/22.json (18-20, `hard`) | Reused whole, word for word (a guard sentence, not a care line) |
+| Leviticus 19:31; Deuteronomy 18:11 | 1-6 | 1-samuel/28.json `historical`; BSB | Repository; BSB text |
+| Necromancy widespread; Mesopotamian and Hittite rites and a pit, the word for medium linked by some; the law's reasons; Endor north of Shunem near Moreh and Tabor, the dangerous night journey; the reversals (an oath by the LORD for a forbidden practice); elohim of a being beyond the living (Isaiah 8:19); Samuel known by his robe (15:27-28) | 7-14 | 1-samuel/28.json `cultural`, `historical`, `literary`, `words` (ov, elohim) | Repository |
+| Isaiah 8:19 | 7-14 | 1-samuel/28.json `cultural`; isaiah/8.json; BSB | Repository; BSB text |
+| Did Samuel come back: God permitting a real appearance (the narrator's word, the true prophecy, the woman's shock; Ben Sira, Sirach 46); a deceiving spirit, held by a number of early Christian writers; the medium's performance, struggling with the true prophecy; early Christian opinion divided; no side; the practice condemned, no help, God's word standing, no support for contacting the dead | 7-14 `hard` | 1-samuel/28.json `hard`; isaiah/8.json `hard`; bible/doctrines/intermediate.json | Repository; the answers in their holders' terms |
+| Samuel's word repeating chapter 15; God's word standing in a strange setting; Saul's name and asking in vain; the woman not mocked and her full hospitality, bread baked in haste; the calf kept in the house downstairs; the ending in darkness | 15-25 | 1-samuel/28.json `literary`, `cultural`, `words` (shaal), `story`; context/worlds/old-testament-world.json (a village in the hill country) | Repository |
+| 1 Chronicles 10:13; Psalm 13:1 | 15-25 | 1-samuel/28.json `historical`; BSB | Repository; BSB text |
+| God's silence: his chosen ways of speaking, silence as judgment after long refusal, no forcing guidance; not every silence a judgment, the psalms' faithful cries | 15-25 `hard` | 1-samuel/28.json `doctrines` (revelation), `questions`; psalms/plain/142.json (1-7, `hard`: God kept his prayer in the Bible) | Repository |
+| The care line (‘If you are afraid that you have fallen away from God...’ to ‘...lists places to turn.’) | 15-25 `hard` | hebrews/plain/3.json (12-15), hebrews/plain/10.json (26-31) and others (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 28: Hebrews 2:14-15 and Revelation 1:18 set against Saul's fear of death (the deep note calls the link thematic, not a line the New Testament draws to this chapter); the names of early Christian writers on each side (not given in the repository's notes); 28:15's speech quoted only after Saul's opening words, to avoid a speech tag inside a quotation; David's answer in 28:2 called noncommittal (a reading the repository gives only for 29:8; cut before commit).
+
+## The plain notes on 1 Samuel 29 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| David's dilemma and its resolution without his doing; the step back in time to Aphek before Shunem; Aphek at the Sharon plain's edge near the Yarkon's source, a mustering point, and 4:1; the coalition of five, Achish unable to overrule; the defectors of 14:21; Hebrews as outsiders' name for Israelites; the song again (18:7; 21:11); satan as a human adversary, later a title | 1-5 | 1-samuel/29.json `story`, `historical`, `cultural`, `words` (satan) | Repository |
+| 1 Chronicles 12:19; 1 Kings 11:14 | 1-5 | 1-samuel/29.json `words` (1 Kings 11:14); BSB | Repository; BSB text |
+| Dialogue and irony; Achish's triple praise and David's deception (chapter 27); the commanders reading rightly; Achish swearing by the LORD; an angel of God as perfect goodness; upright ‘in my sight’ (yashar) and judgment by appearances; the double meaning of my lord the king, David's intent not told; God's hand through Philistine suspicion; David far from Saul's death | 6-11 | 1-samuel/29.json `literary`, `cultural`, `words` (malak, yashar), `doctrines` (providence) | Repository |
+| Proverbs 21:1; 2 Samuel 14:17 | 6-11 | 1-samuel/29.json `cultural` (2 Samuel 14:17 and 19:27); BSB | Repository; BSB text |
+
+Cut in chapter 29: John 7:30 and 8:59 and God's care for the anointed's timing (the deep note calls it a pattern, not an allegory or a line the New Testament draws to this chapter); the grim proof of enemy heads explained beyond the commanders' own words (not lingered over).
+
+## The plain notes on 1 Samuel 30 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The story following David south while Gilboa is prepared; the raid as chapter 27 reversed; the Amalekites as Israel's first enemy and the reason for Saul's rejection (15; 28:18); raiding while the men were away; captives taken to sell, so recoverable; stoning and grief turned to blame; the lowest point; chazaq and strength from God not circumstances; the first asking since going over to the Philistines; two questions and a plain answer | 1-8 | 1-samuel/30.json `story`, `historical`, `cultural`, `words` (chazaq), `doctrines` (faith, prayer) | Repository |
+| Joshua 1:9 | 1-8 | 1-samuel/30.json `words` (chazaq: be strong and courageous); BSB | Repository; BSB text |
+| The Brook of Besor as Nahal Besor draining toward Gaza; the Egyptian slave abandoned, fed first and questioned after, his oath; the Cherethites linked with the Philistines and probably Crete, later in David's bodyguard; total loss to total recovery and the repeated line; the numbers; David defeating Amalek while Saul is about to die | 9-20 | 1-samuel/30.json `historical`, `cultural`, `literary`, `story` | Repository |
+| Isaiah 58:7 (a thematic line within the Old Testament); 2 Samuel 8:18 | 9-20 | 1-samuel/30.json `historical` (the Cherethites and 2 Samuel 8:18); BSB | Repository; BSB text |
+| Shalal six times and the character of sharers; beliyyaal as for Eli's sons (2:12) and Nabal (25:17); Numbers 31:27 and David going further; grace as the ground of the ruling; the first act of lawgiving and a lasting statute (choq); gifts to the elders sharing victory and preparing loyalty; the towns of the southern hills and Negev, the southern Bethel; Hebron last | 21-31 | 1-samuel/30.json `cultural`, `literary`, `words` (shalal, beliyyaal, choq), `historical`, `doctrines` (kingdom) | Repository |
+| Numbers 31:27; 2 Samuel 2:4 | 21-31 | 1-samuel/30.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 30: John 6:39 and 10:28 and Matthew 20:1-16 and David as the shepherd who loses none (the deep note calls them connections of pattern, not predictions or lines the New Testament draws to this chapter); 2 Corinthians 6:15 and Belial (not needed); verse 11 paraphrased because it carries a dash.
+
+## The plain notes on 1 Samuel 31 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The end of the book and of Saul's reign; Endor's word fulfilled (28:19); the king asked for to fight (8:20) dying in battle; about 1010 BC, dates uncertain; Gilboa on the southeastern side of the Jezreel Valley; the fear of capture and Samson blinded and mocked (Judges 16); Jonathan's death and the innocent suffering in others' ruin; the restraint of the telling; died together that same day | 1-6 | 1-samuel/31.json `story`, `historical`, `cultural`, `literary`, `doctrines` (suffering) | Repository |
+| 1 Chronicles 10:6; 2 Samuel 1:19 | 1-6 | 1-samuel/31.json `literary` (David's lament), `historical` (1 Chronicles 10); BSB | Repository; BSB text |
+| Saul's death: the Bible's few such deaths (Abimelech, Saul and his armor-bearer, Ahithophel, Zimri, Judas) reported without long comment; never a good or honorable way out; sorrow and not contempt; burial and lament; the traditions' differences, grave sin against the gift of life, salvation resting on Christ's grace and not the manner of death, compassion for despair; a tragedy to grieve; no means named | 1-6 `hard` | 1-samuel/31.json `hard` | Repository; the traditions in their holders' terms |
+| The care line (‘If you have thoughts of hurting yourself...’ to ‘...lists places to turn.’) | 1-6 `hard` | judges/plain/16.json (23-31); 1-peter/plain/5.json (5-7); 2-timothy/plain/1.json (6-7); philippians/plain/4.json (4-9); psalms/plain/88.json (13-18) (`hard`) | Reused whole, word for word; Find Help named; the deep note's crisis-line number not carried over |
+| The country cut in two; Philistine power at its height and David breaking it (2 Samuel 5 and 8); Beth-shan at the meeting of the valleys, once an Egyptian garrison; stripping, armor in a temple and display as the victors' gods' triumph; the Ashtoreths as Astarte; told briefly; naphal through the chapter and David's lament | 7-10 | 1-samuel/31.json `historical`, `cultural`, `words` (naphal) | Repository |
+| 1 Chronicles 10:10; Judges 16:21 | 7-10 | 1-samuel/31.json `historical`, `cultural`; BSB | Repository; BSB text |
+| Jabesh across the Jordan a night's march away; the debt of chapter 11 repaid at risk; burial a sacred duty; the burning unusual, the suggested reason given gently; the tamarisk (22:6) and the seven-day fast; the book from a prayer at Shiloh to a fast at a grave; loyalty as the last act | 11-13 | 1-samuel/31.json `historical`, `cultural`, `words` (eshel, tsum), `story` | Repository |
+| 2 Samuel 21:14 (and David's thanks, 2 Samuel 2:5); Genesis 50:10 | 11-13 | 1-samuel/31.json `words` (tsum: Genesis 50:10); BSB | Repository; BSB text |
+
+Cut in chapter 31: the deep note's contrast with Jesus' death and burial (it calls the parallel thematic, not a prediction or a line the New Testament draws to this chapter); the deep note's crisis-line sentence with a phone number (replaced by the care line reused whole); the means of Saul's death, which the text names and these notes do not repeat; a likeness between Goliath's head and Saul's (not drawn in the repository's notes, cut before commit).
+
+A change to the plain notes on 1 Samuel 22, made before the second push (2026-11-23): the closing question of 22:1-5 asked a reader who is one of the distressed ‘what it would mean to come to the one God has chosen’. For a reader today that points past David to Christ, the very line the chapter's cut records as not drawn by the New Testament (Mark 2:17 and the king whose company is those with nowhere else to go). It now asks ‘what it says about God that the king he chose gathered his first company from people like you’, which stays with David and with the note's own line that God's people have often been formed from the margins (1-samuel/22.json `doctrines`).
+
+A change to the plain notes on 1 Samuel 31, made before the second push (2026-11-23): the closing question of 31:1-6 began ‘Saul died alone at the end, cut off from God by his own long refusal’. The chapter says that Saul, his sons, his armor-bearer and all his men died together (31:6), and these notes say nothing of any person's eternal state (the note on 15:24-35). It now begins ‘At the end Saul could get no answer from God, after years of refusing to listen’, which is what 28:6 and 28:15 say and what the note on 28:15-25 already states.
+
+A second change to the plain notes on 1 Samuel 31, made before the second push (2026-11-23): the closing question of 31:11-13 asked whether a reader could honor someone's good deeds ‘even when their life ended badly’. In a chapter where Saul takes his own life, a reader who has lost someone that way could hear that as a verdict on the one they lost. It now asks whether a reader can honor the good someone did ‘even when their story ended in sorrow’, the word the note's hard passage uses for how the narrator tells Saul's end.
