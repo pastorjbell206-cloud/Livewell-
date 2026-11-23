@@ -15940,3 +15940,21 @@ Every claim in `client/public/bible/notes/ruth/intro.json`, field `teaching`. No
 Cut from the book page: the kinsman-redeemer as a pattern of Christ (the intro's thematic link, not a line the New Testament draws); Romans 11, Hebrews 2 and Matthew 23:37 (the deep notes' thematic links); Ruth 1:16-17 as poetry in balanced pairs (left to the chapter note); a map of Moab (not placed in the site's records).
 
 One existing line was corrected in the same commit: the old overview quoted Ruth 1:1 as ‘in the days when the judges ruled’ with a small first letter; it now has the capital the BSB verse has, so that the strict quotation check passes over the whole introduction. No other word of the old introduction changed.
+
+## The plain notes on Ruth 1 (2026-11-23)
+
+`client/public/bible/notes/ruth/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The days of the judges, told through one family; Bethlehem six miles south of Jerusalem, house of bread; famine as a recurring danger (Abraham, Isaac, Jacob's sons); Moab east of the Dead Sea, several days' walk; Balaam, Baal of Peor, Eglon, Deuteronomy 23:3; the first hearer's questions; a widow's plight | 1-5 | ruth/1.json `historical`, `cultural`; ruth/intro.json `setting` | Repository |
+| Genesis 12:10; Deuteronomy 23:3 | 1-5 | ruth/1.json `historical`, `hard`; BSB | Repository; BSB text |
+| Whether the move and the marriages brought judgment: the Jewish reading of judgment (Deuteronomy 23:3; 7:3); the narrator's silence, famine as a good reason, Deuteronomy 7 naming Canaan's peoples; grace through and beyond; left open; no loss read as a sentence | 1-5 `hard` | ruth/1.json `hard` | Repository; both readings in their holders' terms |
+| One of two places where the LORD is said to act (1:6); shuv twelve times and its sense of repentance; Naomi's practical advice; the sons in her womb and the brother's marriage; Orpah not blamed; a people and its god together; the vow, the oath and the grave; davaq in Genesis 2:24 and Deuteronomy 10:20; the wedding misreading | 6-18 | ruth/1.json `cultural`, `literary`, `words` (shuv, davaq, hesed); ruth/intro.json `reading`; theology/passage-notes.json (ruth 1) | Repository |
+| Genesis 2:24; Deuteronomy 10:20; Matthew 1:5 | 6-18 | ruth/1.json `words` (davaq), `christ`; BSB | Repository; BSB text |
+| Naomi as pleasant and Mara as bitter; Shaddai and God's power (Genesis 17:1; Job); ‘empty’ answered by ‘empty-handed’ (3:17) and the child (chapter 4); Ruth beside her; the barley harvest in April and the famine over | 19-22 | ruth/1.json `literary`, `words` (shaddai); ruth/3.json `literary`; ruth/2.json `historical` | Repository |
+| Job 1:21; Psalm 22:1 | 19-22 | ruth/1.json `christ` (the laments); BSB | Repository; BSB text |
+| Naomi's complaint not rebuked; honest grief as a way of speaking to God | 19-22 `hard` | ruth/intro.json `purpose`, `themes` (emptiness turned to fullness) | Repository |
+| The care line (‘If your grief is so heavy that you cannot carry it...’ to ‘...lists places to turn.’) | 19-22 `hard` | 2-timothy/plain/4.json (6-8, `hard`); deuteronomy/plain/14.json (1-2, `hard`); hebrews/plain/2.json (14-18, `hard`) | Reused whole, word for word |
+
+Cut in Ruth 1: Romans 11:17 and Mark 15:34 (the deep note's thematic links, not lines the New Testament draws to this chapter); the grief line from Genesis 23, which names Abraham and so does not fit whole (replaced by a line that does).
