@@ -15847,3 +15847,19 @@ Cut in chapter 16: the deep note's crisis-line number (no phone numbers in the p
 | Numbers 3:10; Deuteronomy 18:6; 1 Samuel 16:1 | 7-13 | judges/17.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 17: Hebrews 5:4-6, Hebrews 9:24 and John 4:23-24 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the hard question on the refrain and kingship (on the book page, in its own part, and in chapter 21's note).
+
+## The plain notes on Judges 18 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Dan's first land around Zorah and Eshtaol, lost to the Amorites (1:34) and pressed by the Philistines; spies recalling Numbers 13 and Joshua 2; spies and oracles as ordinary; the hired priest's vague answer; Laish at the north near a spring of the Jordan below Hermon; like the Sidonians, perhaps a peaceful trading town, far from Sidon and without allies; the conquest's language without God's command | 1-10 | judges/18.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Numbers 13:2; Joshua 19:47 | 1-10 | judges/18.json `historical`, `cultural`; BSB | Repository; BSB text |
+| Micah's confidence (17:13) emptied; the list of cult objects repeated and their emptiness; the priest's glad promotion; families and herds in front; ‘What else do I have?’; no one to appeal to and the rule of force | 11-26 | judges/18.json `story`, `cultural`, `literary`, `words` (kohen, pesel) | Repository |
+| Jeremiah 10:5; Isaiah 44:17 | 11-26 | judges/18.json `doctrines` (idolatry: Isaiah 44:9-20); BSB | Repository; BSB text |
+| The last conquest in Judges as a contrast with Joshua's (forms without substance); tranquil and unsuspecting twice; Jonathan son of Gershom, son of Moses, and the raised nun making Manasseh; the captivity as the Assyrian deportation from about 733 or 732 BC, or the earlier loss of the ark and Shiloh; Dan as the northern limit; Tel Dan's Iron Age city and cultic platform; Jeroboam's calf; Dan and Shiloh, false and true | 27-31 | judges/18.json `story`, `historical`, `literary`, `hard` | Repository; both readings of the captivity |
+| 1 Kings 12:29-30; 1 Samuel 4:11 | 27-31 | judges/18.json `historical`; BSB | Repository; BSB text |
+| A peaceful town destroyed: the condemnation in the telling; Joshua's conquest as judgment on wickedness (Genesis 15:16; Deuteronomy 9:4-5) and here no sin named and no word from the LORD; forms the same and substance not; meant to disturb; no warrant to take land or harm a people; no nation, land or conflict of today; no contempt for the people of Laish | 27-31 `hard` | judges/18.json `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`differ`); context/guides/the-violence-of-the-old-testament.json (`what-no-one-may-do`) | Repository |
+
+Cut in chapter 18: Hebrews 7:26-27, John 10:11-13 and John 4:21-24 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); Mahaneh-dan and Kiriath-jearim (verse 12); Beth-rehob's place.
