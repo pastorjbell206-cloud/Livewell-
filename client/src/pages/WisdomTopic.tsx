@@ -13,6 +13,7 @@
  * Help at the top, and a topic written in full carries the care lines word
  * for word from the Study Bible's plain notes.
  */
+import FilmsHere from "@/components/FilmsHere";
 import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import { Bookmark, BookmarkCheck, Search } from "lucide-react";
@@ -407,6 +408,7 @@ export default function WisdomTopic() {
                 </ul>
               </section>
             )}
+            <FilmsHere path={`/wisdom/${entry.id}`} />
             <TurnNav
               label={area ? `Previous and next subject in ${area}` : "Previous and next subject"}
               prev={entry.turn?.prev ? { href: `/wisdom/${entry.turn.prev.id}`, title: entry.turn.prev.label } : null}

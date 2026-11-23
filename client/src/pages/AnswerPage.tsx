@@ -11,6 +11,7 @@
  * The prerendered page (scripts/prerender-heads.mjs) carries the same
  * title, description and text, built from the same data at build time.
  */
+import FilmsHere from "@/components/FilmsHere";
 import { useState } from "react";
 import { Link, useRoute } from "wouter";
 import { ArrowLeft, ArrowRight, BookOpen, Compass, LifeBuoy, Link2, Rows3, Scale, Users } from "lucide-react";
@@ -127,6 +128,7 @@ export default function AnswerPage() {
                 </ul>
               </section>
             )}
+            <FilmsHere path={`/answers/${a.slug}`} />
           </article>
 
           {(essay || (a.bookHref && a.bookTitle) || more.length > 0) && (

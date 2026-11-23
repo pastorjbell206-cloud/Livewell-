@@ -31,8 +31,9 @@
  *   8  The life to come: the city gate open, the river, people walking in.  Revelation 21:3-4
  */
 import { Shape } from "../../art";
-import { Draw, Fade, Travel, type FilmDrawing } from "../motion";
-import { Flame, Standing } from "./figures";
+import { Cloud, Cypress, Grass, Olive, Sheep } from "@/components/art/stage";
+import { Ambient, Draw, Fade, Travel, type FilmDrawing } from "../motion";
+import { Flame, Robed } from "./figures";
 
 /** The crack: the edge both pieces of the land share. */
 const CRACK = "L418,330L440,372L422,420L436,500";
@@ -86,14 +87,29 @@ function Receiving({
         className="pl-l"
         d={`M${x - 9},${y + 24}L${x - 24},${y + 8}M${x + 9},${y + 24}L${x + 24},${y + 8}`}
       />
-      <Standing x={x} y={y} tone={tone} />
+      <Robed x={x} y={y} tone={tone} />
     </g>
   );
 }
 
+/** The camera, frame by frame: the tree, the crack, the blocks, the Son, the seam, the tomb, the one who turns, the house, the city. */
+const CAMERA: [number, number, number][] = [
+  [450, 290, 1.15],
+  [430, 300, 1.2],
+  [400, 280, 1.25],
+  [380, 260, 1.2],
+  [430, 300, 1.3],
+  [330, 280, 1.25],
+  [240, 280, 1.3],
+  [230, 270, 1.25],
+  [600, 280, 1.12],
+];
+
 const film: FilmDrawing = {
   w: 800,
   h: 500,
+  // The stage pushes in on the place where the land was one, broke, and is joined.
+  push: frame => CAMERA[frame] ?? null,
   draw: (h, frame) => {
     const k = frame + 1;
     return (
@@ -123,6 +139,27 @@ const film: FilmDrawing = {
         <Shape d={RIGHT_LAND} tone="g" />
         <path fill={h.h2} d="M640,290H800V500H640Z" />
 
+        {/* God's side is a garden in every picture: cypresses, grass, a sheep, a cloud going over. */}
+        <Ambient frame={frame} on={-1} kind="drift" dx={60}>
+          <Cloud x={120} y={70} s={1.1} />
+        </Ambient>
+        <Cypress x={742} y={292} s={0.8} hatch={h.hs} />
+        <Cypress x={772} y={296} s={1} hatch={h.hs} />
+        <Fade frame={frame} on={-1} off={8}>
+          <Ambient frame={frame} on={-1} off={8} kind="sway">
+            <Olive x={610} y={292} s={1} hatch={h.h2} />
+          </Ambient>
+          <Sheep x={690} y={330} s={0.8} graze />
+        </Fade>
+        <Grass
+          at={[
+            [520, 330],
+            [600, 380],
+            [740, 400],
+            [560, 450],
+          ]}
+        />
+
         {/* 0: the garden's tree on God's side, near where the land is one. */}
         <Fade frame={frame} on={0} off={1}>
           <Shape d="M478,290V256h10v34Z" tone="c" off={1.5} />
@@ -144,9 +181,9 @@ const film: FilmDrawing = {
             className="pl-f"
             d="M0,320C150,308 300,330 470,300S600,290 640,292"
           />
-          <Standing x={150} y={244} tone="c" s={0.8} />
-          <Standing x={250} y={240} tone="g" s={0.78} />
-          <Standing x={350} y={236} tone="b" s={0.74} />
+          <Robed x={150} y={244} tone="c" s={0.8} pose="walk" />
+          <Robed x={250} y={240} tone="g" s={0.78} head="veil" pose="walk" />
+          <Robed x={350} y={236} tone="b" s={0.74} pose="walk" />
           <path
             className="pl-f"
             d="M600,180L560,140M720,180L760,140M666,150V112"
@@ -165,7 +202,13 @@ const film: FilmDrawing = {
           </Fade>
           <Fade frame={frame} on={-1} off={5}>
             {PEOPLE.map(([x, t]) => (
-              <Standing key={x} x={x} y={228} tone={t} />
+              <Robed
+                key={x}
+                x={x}
+                y={228}
+                tone={t}
+                head={t === "g" ? "veil" : "cloth"}
+              />
             ))}
           </Fade>
           {/* 2: the blocks piled up to reach across, falling short. */}
@@ -183,7 +226,7 @@ const film: FilmDrawing = {
           ))}
           {/* 3: the Son, come to our side. */}
           <Fade frame={frame} on={3} off={4} from="down" delay={1500}>
-            <Standing x={330} y={216} tone="c" s={1.2} />
+            <Robed x={330} y={216} tone="c" s={1.2} />
           </Fade>
         </Travel>
 
@@ -246,9 +289,9 @@ const film: FilmDrawing = {
           <path className="pl-l" d="M88,290V236h32v54Z" />
           <path className="pl-l" d="M120,236l16,8v52" />
           <Receiving x={196} y={228} tone="b" />
-          <Standing x={240} y={232} tone="g" s={0.95} />
-          <Standing x={280} y={238} tone="c" s={0.85} />
-          <Standing x={60} y={248} tone="g" s={0.68} />
+          <Robed x={240} y={232} tone="g" s={0.95} head="veil" />
+          <Robed x={280} y={238} tone="c" s={0.85} />
+          <Robed x={60} y={248} tone="g" s={0.68} child head="bare" />
         </Fade>
         <Fade frame={frame} on={7} from="grow" delay={900}>
           <path

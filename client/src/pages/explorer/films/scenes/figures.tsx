@@ -1,8 +1,10 @@
 /**
  * People and marks for the moving pictures, in the engraved hand: a standing
- * figure and a seated one (head and shoulders, no face, as the art kit asks),
- * a small flame, and a ring. Each takes its place and an optional size.
+ * figure and a seated one (head and shoulders, no face, as the art kit asks;
+ * skin is the kit's clay tone for every figure alike, as in the stage set's
+ * cast), a small flame, and a ring. Each takes its place and an optional size.
  */
+import { Person, type PersonProps } from "@/components/art/stage";
 import { Shape } from "../../art";
 
 type Tone = "b" | "g" | "c";
@@ -26,7 +28,7 @@ export function Standing({
   return (
     <g>
       <Shape d={d} tone={tone} off={1.5 * s} />
-      <path className="pl-o" d={ring(x, y, 8 * s)} />
+      <path className="pl-c" d={ring(x, y, 8 * s)} />
       <path className="pl-l" d={ring(x, y, 8 * s)} />
     </g>
   );
@@ -55,7 +57,7 @@ export function Seated({
         tone={tone}
         off={1.5}
       />
-      <path className="pl-o" d={ring(x, y, 8)} />
+      <path className="pl-c" d={ring(x, y, 8)} />
       <path className="pl-l" d={ring(x, y, 8)} />
     </g>
   );
@@ -82,4 +84,26 @@ export function Flame({
       <path className="pl-l" d={FLAME} style={{ strokeWidth: 2.25 / s }} />
     </g>
   );
+}
+
+/**
+ * A standing figure from the stage set's cast, placed as Standing is (head
+ * at (x, y), feet about 62 below at size 1), so a drawing can change one for
+ * the other: a robed person with a head cloth or a veil, the same wherever
+ * that person is drawn in the film.
+ */
+export function Robed({
+  x,
+  y,
+  tone = "c",
+  s = 1,
+  ...rest
+}: {
+  x: number;
+  y: number;
+  /** The robe's tone, or "p" for a plain paper robe. */
+  tone?: Tone | "p";
+  s?: number;
+} & Omit<PersonProps, "x" | "y" | "s" | "robe">) {
+  return <Person x={x} y={y + 62 * s} s={0.7 * s} robe={tone} {...rest} />;
 }

@@ -1,0 +1,118 @@
+{
+  "slug": "the-exodus",
+  "title": "The Exodus: out of Egypt",
+  "group": "stories",
+  "status": "finished",
+  "mark": "rescue",
+  "line": {
+    "younger": "God's people were slaves in Egypt, and God set them free. The story as the Bible tells it, in seven pictures, from the brick yards to the far side of the sea.",
+    "older": "The rescue the whole Bible keeps pointing back to, in seven pictures: slavery, the burning bush, Pharaoh's question, the Passover, the sea, the song, and the greater rescue it became the pattern for."
+  },
+  "poster": "Under a hot sun, people bend to make bricks and carry them to a high wall, while an overseer with a staff stands watching.",
+  "frames": [
+    {
+      "id": "slaves",
+      "name": "Slaves in Egypt",
+      "still": "Under a hot sun, people bend to make bricks and carry them to a high wall, while an overseer with a staff stands watching.",
+      "younger": "Abraham's family grew into a big nation in Egypt. A new king of Egypt, called Pharaoh, was afraid of them, and he made them slaves. They made bricks and worked in the fields, and their lives were bitter. They cried out to God, and God heard them.",
+      "older": "Abraham's family has become a nation, and Egypt has made them slaves, their lives bitter with hard labor in brick and mortar. Under the whole story runs one question: who is the real lord here, Pharaoh or the LORD?",
+      "verse": {
+        "ref": "Exodus 2:24",
+        "text": "So God heard their groaning, and He remembered His covenant with Abraham, Isaac, and Jacob."
+      }
+    },
+    {
+      "id": "bush",
+      "name": "The bush that burned",
+      "still": "In the wilderness below a mountain, a shepherd with his flock stands before a bush with a gold flame in it that does not burn the bush up.",
+      "younger": "Moses was looking after sheep in the wilderness when he saw a bush on fire that did not burn up. God spoke to him from the bush. He had seen how his people suffered, and he had come down to rescue them. And he told Moses his name: I AM.",
+      "older": "At Horeb, Moses sees a bush that burns and is not burned up. God announces that he has seen, has heard and has come down, and sends a reluctant shepherd to Pharaoh. Asked for his name, he answers, “I AM WHO I AM.”",
+      "verse": {
+        "ref": "Exodus 3:7",
+        "text": "I have indeed seen the affliction of My people in Egypt."
+      }
+    },
+    {
+      "id": "pharaoh",
+      "name": "Let my people go",
+      "still": "In a hall of tall columns, two men stand before a king seated on his throne. One of them holds a staff and lifts his hand as he speaks.",
+      "younger": "Moses and his brother Aaron went to Pharaoh and said that the LORD says, “Let My people go.” Pharaoh said no, again and again. So God sent plagues on Egypt, ten of them, to show that he is the true God.",
+      "older": "Pharaoh answers with a question, and ten plagues reply to it. The river turns to blood, the sky goes dark, and Exodus says that in them God brought judgment “against all the gods of Egypt.”",
+      "verse": {
+        "ref": "Exodus 5:2",
+        "text": "Who is the LORD that I should obey His voice and let Israel go?"
+      }
+    },
+    {
+      "id": "passover",
+      "name": "The night of the Passover",
+      "still": "Night. A family stands at the door of their house dressed to travel, the father with a staff in his hand; the doorway is marked at its top and sides, and a lamb stands near.",
+      "younger": "Before the last plague, God told each family of his people to eat a special meal and to put the blood of a lamb on the doorframe of their home. That night was a night of great sadness in Egypt. But God passed over every house marked by the lamb's blood.",
+      "older": "The last plague falls on the firstborn. Israel is not spared because its people are better. They are spared because a lamb dies in their place and its blood marks their door. It was a night of great sadness in Egypt.",
+      "verse": {
+        "ref": "Exodus 12:13",
+        "text": "when I see the blood, I will pass over you."
+      }
+    },
+    {
+      "id": "sea",
+      "name": "Through the sea",
+      "still": "A dry road runs between two high walls of water. Moses stands at the front with his staff lifted, and families walk through behind him.",
+      "younger": "Then Pharaoh let the people go. Soon he changed his mind and chased them to the edge of the sea. The people were trapped and terrified. But God pushed back the water and made a dry path, and his people walked across to freedom.",
+      "older": "Pharaoh changes his mind and pursues with his chariots. Trapped between the army and the water, the people panic. All that night the LORD drives back the sea with a strong east wind, and people who could not save themselves walk through on dry ground.",
+      "verse": {
+        "ref": "Exodus 14:14",
+        "text": "The LORD will fight for you; you need only to be still."
+      }
+    },
+    {
+      "id": "song",
+      "name": "A song on the far shore",
+      "still": "Morning on the far shore, the sea calm behind. A woman holds up a tambourine and other women lift their hands and dance, while Moses stands by with his staff.",
+      "younger": "On the far shore the people sang. Moses' sister Miriam took a tambourine, and the women danced. God had done what no one else could do. He had set his people free.",
+      "older": "On the far shore Israel sings, and Miriam leads the women with tambourines and dancing. Ever after, when the Bible wants to say who God is, it points back here: the LORD, “who brought you out of the land of Egypt, out of the house of slavery.”",
+      "verse": {
+        "ref": "Exodus 15:2",
+        "text": "The LORD is my strength and my song, and He has become my salvation."
+      }
+    },
+    {
+      "id": "pattern",
+      "name": "A greater rescue",
+      "still": "On the left stands the house with its marked doorway. A dotted path leads from it across the land to a hill on the right, where an empty cross stands in the rising sun beside an open tomb.",
+      "younger": "The Bible never forgets this rescue. And it says a greater one came later. Jesus is called our Passover lamb. He sets people free from sin and death. They do not earn that rescue. They receive it.",
+      "older": "The New Testament reads the exodus as the pattern of a greater rescue. Paul calls Christ “our Passover lamb.” As God brought Israel out of slavery through death and water, so in Christ he brings his people out of sin and death, and they receive that rescue rather than earn it.",
+      "verse": {
+        "ref": "1 Corinthians 5:7",
+        "text": "For Christ, our Passover lamb, has been sacrificed."
+      }
+    }
+  ],
+  "think": {
+    "younger": "The people could not free themselves. Who did every part of the rescuing? What did the people have to do?",
+    "older": "The Bible keeps describing God as the one who brought Israel out of Egypt. Why might a rescue be the best way to say who God is?"
+  },
+  "read": [
+    { "label": "Exodus 1", "href": "/study/bible/exodus/1" },
+    { "label": "Exodus 2", "href": "/study/bible/exodus/2" },
+    { "label": "Exodus 3", "href": "/study/bible/exodus/3" },
+    { "label": "Exodus 5", "href": "/study/bible/exodus/5" },
+    { "label": "Exodus 12", "href": "/study/bible/exodus/12" },
+    { "label": "Exodus 14", "href": "/study/bible/exodus/14" },
+    { "label": "Exodus 15", "href": "/study/bible/exodus/15" },
+    { "label": "Exodus 20", "href": "/study/bible/exodus/20" },
+    { "label": "1 Corinthians 5", "href": "/study/bible/1-corinthians/5" }
+  ],
+  "stops": ["rescue"],
+  "cards": [],
+  "care": "This part of the story has death and fear in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Go to the stop: The Rescue from Egypt", "href": "/study/explorer/rescue" },
+    { "label": "Exodus 14 in the Study Bible: through the sea", "href": "/study/bible/exodus/14" },
+    { "label": "Sacrifice: why blood? (a moving picture)", "href": "/study/explorer/watch/why-blood" },
+    { "label": "Exile and coming home (a moving picture)", "href": "/study/explorer/watch/exile-and-home" },
+    { "label": "When You Are Waiting on God: what the Bible says", "href": "/wisdom/waiting-on-god" },
+    { "label": "When You Have Lost Hope: what the Bible says", "href": "/wisdom/despair-and-hope" }
+  ],
+  "end": { "label": "Go to the stop: The Rescue from Egypt", "href": "/study/explorer/rescue" }
+}

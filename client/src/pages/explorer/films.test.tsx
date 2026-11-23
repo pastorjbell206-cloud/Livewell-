@@ -34,6 +34,7 @@ import {
   speechTimeoutMs,
   spokenText,
 } from "@/lib/film-voice";
+import { filmAudioUrl } from "@/lib/film-audio";
 import { FILM_SCENES } from "./films/scenes";
 import ExplorerMap from "./ExplorerMap";
 import ExplorerStop from "./ExplorerStop";
@@ -491,23 +492,247 @@ describe("Listen", () => {
   });
 });
 
+/**
+ * Listen with the recorded files. jsdom cannot play sound, so window.Audio is
+ * replaced by a stand-in that records what was asked of it; each file's end
+ * (or failure) is fired by hand. No one has heard it here.
+ */
+class FakeAudio {
+  static all: FakeAudio[] = [];
+  src = "";
+  preload = "";
+  paused = true;
+  ended = false;
+  currentTime = 0;
+  dataset: Record<string, string> = {};
+  plays = 0;
+  onended: (() => void) | null = null;
+  onerror: (() => void) | null = null;
+  onplaying: (() => void) | null = null;
+  constructor() {
+    FakeAudio.all.push(this);
+  }
+  canPlayType() {
+    return "probably";
+  }
+  play() {
+    this.plays += 1;
+    this.paused = false;
+    return Promise.resolve();
+  }
+  pause() {
+    this.paused = true;
+  }
+}
+function installFiles() {
+  FakeAudio.all = [];
+  vi.stubGlobal("Audio", FakeAudio);
+  /** The one element the film plays through (the first made after the probe). */
+  const main = () => FakeAudio.all.filter(a => a.plays > 0)[0];
+  /** Every file asked for, in order. */
+  const asked = () => FakeAudio.all.map(a => a.src).filter(Boolean);
+  return { main, asked };
+}
+const fileOf = (k: number, level: "younger" | "older" = "younger") =>
+  filmAudioUrl(FILM.slug, level, k, FILM.frames[k].id);
+
+describe("Listen with the recorded files", () => {
+  it("is off by default, asks for no file until it is on, and never plays by itself", () => {
+    vi.useFakeTimers();
+    const { asked } = installFiles();
+    render(player());
+    expect(listenButton().getAttribute("aria-pressed")).toBe("false");
+    expect(
+      screen.getByText("Read aloud by a computer-made voice, not a person.")
+    ).toBeTruthy();
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    for (let k = 0; k < FILM.frames.length; k++)
+      advance(frameMs(FILM.frames[k].younger));
+    expect(current()).toBe(FILM.frames.length);
+    expect(asked()).toEqual([]);
+    // Turning Listen on at the poster asks for nothing either: no frame is on.
+    cleanup();
+    render(player());
+    fireEvent.click(listenButton());
+    expect(asked()).toEqual([]);
+    expect(current()).toBe(0);
+  });
+
+  it("on, plays each frame's own file and moves on only when the file ends", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    const { synth } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    expect(current()).toBe(1);
+    expect(main().src).toBe(fileOf(0));
+    // The caption's own timer no longer moves it: it waits for the file.
+    advance(frameMs(FILM.frames[0].younger) + 1000);
+    expect(current()).toBe(1);
+    for (let k = 1; k < FILM.frames.length; k++) {
+      act(() => main().onended?.());
+      advance(700);
+      expect(current()).toBe(k + 1);
+      expect(main().src).toBe(fileOf(k));
+    }
+    act(() => main().onended?.());
+    advance(700);
+    expect(screen.getByRole("button", { name: "Play again" })).toBeTruthy();
+    // One element plays the whole film, and the device's voice stays silent.
+    expect(FakeAudio.all.filter(a => a.plays > 0).length).toBe(1);
+    expect(synth.speak).not.toHaveBeenCalled();
+    // Nothing is announced to a screen reader while the voice speaks.
+    expect(live()).toBe("");
+  });
+
+  it("plays the file for the reading level on screen", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player("older"));
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    expect(main().src).toBe(fileOf(0, "older"));
+  });
+
+  it("fetches the next frame's file ahead only once this one is playing", () => {
+    vi.useFakeTimers();
+    const { main, asked } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    expect(asked()).toEqual([fileOf(0)]);
+    act(() => main().onplaying?.());
+    expect(asked()).toEqual([fileOf(0), fileOf(1)]);
+  });
+
+  it("Pause holds the file and Play on goes on from where it stopped", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    const a = main();
+    a.currentTime = 4.2;
+    fireEvent.click(screen.getByRole("button", { name: "Pause" }));
+    expect(a.paused).toBe(true);
+    advance(60_000);
+    expect(current()).toBe(1);
+    const src = a.src;
+    a.src = `${src}#same`; // a new src would show as a change
+    fireEvent.click(screen.getByRole("button", { name: "Play on" }));
+    expect(a.paused).toBe(false);
+    expect(a.src).toBe(`${src}#same`);
+    expect(a.currentTime).toBe(4.2);
+  });
+
+  it("stepping by hand plays that frame's file from its start; a playing film plays on", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    // Paused, at the poster: Next says picture 1 and stays there.
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(main().src).toBe(fileOf(0));
+    act(() => main().onended?.());
+    advance(60_000);
+    expect(current()).toBe(1);
+    fireEvent.click(
+      screen.getByRole("button", { name: `Picture 4: ${FILM.frames[3].name}` })
+    );
+    expect(main().src).toBe(fileOf(3));
+    fireEvent.click(screen.getByRole("button", { name: /^Back/ }));
+    expect(main().src).toBe(fileOf(2));
+    // Playing: a step by hand keeps it playing from the new frame.
+    fireEvent.click(screen.getByRole("button", { name: "Play on" }));
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(current()).toBe(4);
+    expect(main().src).toBe(fileOf(3));
+    expect(screen.getByRole("button", { name: "Pause" })).toBeTruthy();
+    act(() => main().onended?.());
+    advance(700);
+    expect(current()).toBe(5);
+    expect(live()).toBe("");
+  });
+
+  it("works with reduced motion, stepping by hand", () => {
+    motion(true);
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: /^Start/ }));
+    expect(main().src).toBe(fileOf(0));
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(main().src).toBe(fileOf(1));
+  });
+
+  it("where a file is missing, the device's voice says that frame and the film goes on", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    const { synth, last } = installVoice();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    act(() => main().onerror?.());
+    expect(synth.speak).toHaveBeenCalledTimes(1);
+    expect(last().text).toBe(said(0));
+    act(() => last().onend?.());
+    advance(700);
+    // The next frame tries its own file again.
+    expect(current()).toBe(2);
+    expect(main().src).toBe(fileOf(1));
+    expect(synth.speak).toHaveBeenCalledTimes(1);
+  });
+
+  it("where a file is missing and the device has no voice, the caption's own time moves the film", () => {
+    vi.useFakeTimers();
+    const { main } = installFiles();
+    render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: "Play" }));
+    act(() => main().onerror?.());
+    advance(frameMs(FILM.frames[0].younger) + 700);
+    expect(current()).toBe(2);
+  });
+
+  it("stops the file when Listen is turned off and when the player goes away", () => {
+    const { main } = installFiles();
+    const { unmount } = render(player());
+    fireEvent.click(listenButton());
+    fireEvent.click(screen.getByRole("button", { name: /^Next/ }));
+    expect(main().paused).toBe(false);
+    fireEvent.click(listenButton());
+    expect(main().paused).toBe(true);
+    fireEvent.click(listenButton());
+    expect(main().paused).toBe(false);
+    unmount();
+    expect(main().paused).toBe(true);
+  });
+});
+
 describe("the data", () => {
-  it("lists the four groups and the thirty-five finished films", () => {
+  it("lists the six groups and the forty-three finished films", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
+      "stories",
       "ideas",
       "beliefs",
+      "verses",
       "questions",
     ]);
     expect(READY.map(f => f.slug)).toEqual([
       "bible-two-minutes",
       "bible-in-a-minute",
       "sixty-six-books",
+      "the-exodus",
+      "david-and-goliath",
       "holy-spirit",
       "god-with-his-people",
       "the-king",
       "covenant",
       "the-lamb",
+      "why-blood",
       "exile-and-home",
       "kingdom-of-god",
       "who-god-is",
@@ -517,6 +742,8 @@ describe("the data", () => {
       "why-jesus-died",
       "the-resurrection",
       "how-salvation-works",
+      "grace",
+      "faith",
       "gospel-in-a-minute",
       "spirit-in-a-believer",
       "the-church",
@@ -524,6 +751,9 @@ describe("the data", () => {
       "the-bible",
       "prayer",
       "life-to-come",
+      "john-3-16",
+      "psalm-23",
+      "romans-8-28",
       "who-made-god",
       "does-god-exist",
       "why-cant-i-see-god",
@@ -1321,5 +1551,156 @@ describe("the four Good questions of 2026-11-20 (seventh run): seeing God, dying
       expect(film.frames.length, slug).toBe(7);
       expect(film.share?.level, slug).toBe("younger");
     }
+  });
+});
+
+describe("the eight films of 2026-11-22: doctrines, stories and verses, each with a recorded voice", () => {
+  const NEW = [
+    "why-blood",
+    "grace",
+    "faith",
+    "the-exodus",
+    "david-and-goliath",
+    "john-3-16",
+    "psalm-23",
+    "romans-8-28",
+  ];
+  const AUDIO = JSON.parse(
+    fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
+  ) as {
+    films: Record<
+      string,
+      Record<"younger" | "older", { id: string; seconds: number }[]>
+    >;
+  };
+  const text = (f: Film) => JSON.stringify(f);
+
+  it("each has seven pictures, a drawing, and a narrated length between 1:45 and 3:15 at both levels", () => {
+    for (const slug of NEW) {
+      const f = filmFile(slug);
+      expect(f.frames.length, slug).toBe(7);
+      expect(FILM_SCENES[slug], slug).toBeTruthy();
+      for (const level of ["younger", "older"] as const) {
+        const rows = AUDIO.films[slug][level];
+        expect(rows.map(r => r.id)).toEqual(f.frames.map(fr => fr.id));
+        // The files, and the breath the player leaves between pictures.
+        const seconds =
+          rows.reduce((s, r) => s + r.seconds, 0) + 0.7 * (rows.length - 1);
+        expect(seconds, `${slug} ${level}`).toBeGreaterThanOrEqual(105);
+        expect(seconds, `${slug} ${level}`).toBeLessThanOrEqual(195);
+      }
+    }
+  });
+
+  it("none of them speaks in the first person, presses for a decision, or dates the earth", () => {
+    for (const slug of NEW) {
+      const f = filmFile(slug);
+      const t = text(f);
+      // The captions, with what they quote from Scripture set aside.
+      const own = f.frames
+        .map(fr => `${fr.younger} ${fr.older}`)
+        .join(" ")
+        .replace(/“[^”]*”/g, " ");
+      expect(own, slug).not.toMatch(
+        /\b(I|my) (remember|grew|once|was|have)\b|\b(our|my) church\b/
+      );
+      expect(t, slug).not.toMatch(
+        /pray this prayer|decide today|right now, before/i
+      );
+      expect(t, slug).not.toMatch(
+        /years ago|million|billion|young earth|old earth/i
+      );
+    }
+  });
+
+  it("Sacrifice: why blood? draws no blood, sets no Father against the Son, and chooses no theory", () => {
+    const f = filmFile("why-blood");
+    expect(f.care).toBe(filmFile("the-lamb").care);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/blood/i);
+    expect(text(f)).toContain(
+      "It is not an angry Father against an unwilling Son"
+    );
+    expect(f.differ?.text).toMatch(/does not choose between them/);
+    expect(text(f)).toContain("Sacrifice is his gift, never a bribe");
+  });
+
+  it("Grace and Faith say what all Christians confess, name where they differ, and take no side", () => {
+    const grace = filmFile("grace");
+    expect(grace.differ?.text).toMatch(/takes no side/);
+    expect(grace.differ?.links?.[0].href).toBe(
+      "/study/bible/doctrines/salvation"
+    );
+    expect(text(grace)).toContain(
+      "Faith is the empty hand that takes what is given"
+    );
+    expect(text(grace)).toContain("Good works are not the root of salvation");
+    const faith = filmFile("faith");
+    expect(faith.differ?.text).toMatch(/takes no side/);
+    expect(text(faith)).toContain("It is not a leap in the dark");
+    expect(text(faith)).toContain(
+      "none of them teaches that faith earns salvation"
+    );
+  });
+
+  it("The Exodus gives no date and no route, grieves Egypt's night, and reuses the stop's care line whole", () => {
+    const f = filmFile("the-exodus");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/rescue.json"), "utf8")
+    );
+    expect(f.care).toBe(stop.care);
+    const t = text(f);
+    expect(t).not.toMatch(/\b1[2-5]\d\d\b|\bBC\b|Red Sea|Sea of Reeds/);
+    expect(t).toContain("a night of great sadness in Egypt");
+    expect(t).toContain("They do not earn that rescue. They receive it.");
+  });
+
+  it("David and Goliath is told as the text tells it: the battle is the LORD's, and we are the soldiers on the hill", () => {
+    const f = filmFile("david-and-goliath");
+    const t = text(f);
+    expect(t).toContain("for the battle is the LORD’s");
+    expect(t).toContain("Most readers are not David here");
+    expect(t).not.toMatch(/your giants?|giants in your life|face your/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/blood|head/i);
+    // A battle with a death in it: the Land stop's care line, whole.
+    const land = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/land.json"), "utf8")
+    );
+    expect(f.care).toBe(land.care);
+  });
+
+  it("Psalm 23 quotes the psalm line by line, never draws God, and keeps help in view", () => {
+    const f = filmFile("psalm-23");
+    expect(
+      f.frames.slice(0, 6).every(fr => fr.verse?.ref.startsWith("Psalm 23"))
+    ).toBe(true);
+    expect(f.frames[6].verse?.ref).toBe("John 10:11");
+    expect(f.care).toBe(filmFile("life-to-come").care);
+    expect(text(f)).toContain("It promises company in it");
+  });
+
+  it("John 3:16 is read in its chapter, says nothing of how any person's story ends, and takes no side", () => {
+    const f = filmFile("john-3-16");
+    const t = text(f);
+    expect(f.frames[3].verse?.ref).toBe("John 3:16");
+    expect(t).toContain("God's love is why there is a cross");
+    expect(t).toContain("John does not say how Nicodemus answered that night");
+    expect(t).not.toMatch(/Nicodemus (was saved|became a Christian|believed)/i);
+    expect(f.differ?.text).toMatch(/takes no side/);
+    // It tells of Jesus' death and burial: the films' own care line, whole.
+    expect(f.care).toBe(filmFile("the-king").care);
+  });
+
+  it("Romans 8:28 says what the verse does not promise, leaves room to groan, and keeps help in view", () => {
+    const f = filmFile("romans-8-28");
+    const t = text(f);
+    expect(t).toContain(
+      "The verse does not promise that all things are good, only that God is working in all of them."
+    );
+    expect(t).toContain("The verse is not a way to hurry anyone past grief");
+    expect(t).not.toMatch(
+      /everything happens for a reason|blessing in disguise|God needed/i
+    );
+    expect(f.care).toBe(filmFile("why-bad-things-happen").care);
+    expect(f.differ?.text).toMatch(/takes no side/);
   });
 });

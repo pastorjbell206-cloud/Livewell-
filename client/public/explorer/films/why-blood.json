@@ -1,0 +1,119 @@
+{
+  "slug": "why-blood",
+  "title": "Sacrifice: why blood?",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "why-blood",
+  "line": {
+    "younger": "The Bible talks about blood from its first pages to the cross. Seven pictures show why: blood means a life given, and God himself gives it.",
+    "older": "Why does the Bible speak so much of blood? Seven pictures follow its own answer from the first altars to the cross: a life given in place of another, and God the one who gives it."
+  },
+  "poster": "An altar of rough stones stands on a hill in the early morning with a thin line of smoke rising from it, and a man stands before it.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "Why blood?",
+      "still": "An altar of rough stones on a hill in the early morning, a thin line of smoke rising from it, and a man standing before it. Far off are a house with its door, and a hill with a cross.",
+      "younger": "The Bible talks about blood a great deal: on altars, on the doors of houses, in a cup, at the cross. That can sound strange, even frightening. Why blood? The Bible gives its own answer, and the answer begins with life.",
+      "older": "Blood runs through the whole Bible: on altars, on doorposts, in a cup, at a cross. The Bible gives its own reason for that in one sentence of the law, and the sentence is about life."
+    },
+    {
+      "id": "life",
+      "name": "Blood means life",
+      "still": "A family brings a lamb to the altar, where a priest waits with his hands open. Smoke rises from the altar.",
+      "younger": "In the Bible, blood stands for life. Blood poured out means a life has been given. Sin is so serious that it costs a life, and God gave his people a way for another life to be given in their place.",
+      "older": "In the law, blood stands for life, and blood poured out is a life given up. Sin forfeits life, so a life is given in place of the sinner's. And notice who provides it: “I have given it to you.” Sacrifice is his gift, never a bribe.",
+      "verse": {
+        "ref": "Leviticus 17:11",
+        "text": "For the life of the flesh is in the blood, and I have given it to you to make atonement for your souls upon the altar"
+      }
+    },
+    {
+      "id": "first",
+      "name": "The first altars",
+      "still": "Three small scenes side by side: a shepherd with his flock beside a small altar; an altar on a mountain under a rainbow; and a father and his son on a hilltop, with a ram caught in a bush beside them.",
+      "younger": "Sacrifice is there from the Bible's first pages. Abel brought the best of his flock. Noah built an altar after the flood. And when Abraham climbed a mountain with his son Isaac, God gave a ram to be offered in Isaac's place.",
+      "older": "Sacrifice appears in Genesis before any law commands it. Abel brings the firstborn of his flock; Noah builds an altar; on a mountain a ram is offered “in place of his son.” Two patterns are set: a life given in place of another, and a sacrifice God himself supplies.",
+      "verse": {
+        "ref": "Genesis 22:8",
+        "text": "God Himself will provide the lamb for the burnt offering, my son."
+      }
+    },
+    {
+      "id": "door",
+      "name": "A sign on the door",
+      "still": "A house at night under the stars. A father reaches up to mark the top of its doorway, a lamb stands near, and one window is lit.",
+      "younger": "In Egypt, on the night God set his people free, each family marked the doorway of its house with a lamb's blood. Judgment passed over every house with the mark. A lamb had died, and the family inside lived.",
+      "older": "At the exodus each household kills a lamb and marks its doorframe with the blood, and judgment passes over the houses so marked. The family inside lives because the lamb has died. It was a night of great sadness in Egypt, and Israel kept the meal every year.",
+      "verse": {
+        "ref": "Exodus 12:13",
+        "text": "when I see the blood, I will pass over you."
+      }
+    },
+    {
+      "id": "covenant",
+      "name": "Day after day",
+      "still": "A mountain under a cloud. At its foot Moses stands by an altar before the gathered people, and behind them a priest at the tent brings one more lamb.",
+      "younger": "At Mount Sinai, God made a promise with his people, and it was sealed with blood. After that, priests offered animals day after day, year after year. The sacrifices showed how serious sin is. But they had to be repeated again and again. They were pointing to something greater.",
+      "older": "At Sinai the covenant itself is sealed with blood, and from then on the offerings never stop: every morning, every evening, and once a year behind the veil. Yet the repetition was its own confession, and Hebrews says so plainly.",
+      "verse": {
+        "ref": "Hebrews 10:4",
+        "text": "it is impossible for the blood of bulls and goats to take away sins."
+      }
+    },
+    {
+      "id": "cup",
+      "name": "This is my blood",
+      "still": "An upper room in the evening. Jesus sits at a low table with his friends around him, and a cup stands on the table in front of him.",
+      "younger": "The night before he died, Jesus took a cup at the Passover meal. He said that his blood would be poured out so that sins could be forgiven. The next day he gave his life on the cross. Every sacrifice before had been pointing to this one.",
+      "older": "At a Passover table Jesus takes the cup and names his own death as the sacrifice the others pointed toward. No one takes his life from him. It is not an angry Father against an unwilling Son: God himself provides the offering, as he always had.",
+      "verse": {
+        "ref": "Matthew 26:28",
+        "text": "This is My blood of the covenant, which is poured out for many for the forgiveness of sins."
+      }
+    },
+    {
+      "id": "once",
+      "name": "Once for all",
+      "still": "Morning. The old altar stands cold, with grass growing round it and no smoke. Beyond it are a hill with an empty cross and an open tomb with light above it, and people walk toward the light.",
+      "younger": "Jesus' sacrifice never needs to be repeated. He died once, for all time, and God raised him from the dead. No more animals, and no more altars. Because of Jesus, people can be forgiven, made clean, and brought near to God.",
+      "older": "The priests stood, because their work was never done. Christ offered one sacrifice for all time and sat down. Nothing can be added to it, and it is never repeated. And on the third day the tomb was empty.",
+      "verse": {
+        "ref": "Hebrews 9:12",
+        "text": "He entered the Most Holy Place once for all by His own blood, thus securing eternal redemption."
+      }
+    }
+  ],
+  "think": {
+    "younger": "In every picture, who is it that provides the sacrifice? What does that tell you about God?",
+    "older": "Hebrews says the old sacrifices were repeated because they could never finish the work. What changes for a person who believes the work is finished?"
+  },
+  "read": [
+    { "label": "Genesis 4", "href": "/study/bible/genesis/4" },
+    { "label": "Genesis 22", "href": "/study/bible/genesis/22" },
+    { "label": "Exodus 12", "href": "/study/bible/exodus/12" },
+    { "label": "Exodus 24", "href": "/study/bible/exodus/24" },
+    { "label": "Leviticus 17", "href": "/study/bible/leviticus/17" },
+    { "label": "Matthew 26", "href": "/study/bible/matthew/26" },
+    { "label": "Hebrews 9", "href": "/study/bible/hebrews/9" },
+    { "label": "Hebrews 10", "href": "/study/bible/hebrews/10" }
+  ],
+  "stops": ["fall", "abraham", "rescue", "sinai", "cross"],
+  "cards": ["cross"],
+  "care": "This moving picture tells of a real death, and of our sin. If it brings up fear, sadness or guilt, talk with a parent or a leader you trust, or look at Find Help.",
+  "differ": {
+    "text": "All Christians confess that Christ died for our sins and was raised, and that his sacrifice was offered once for all. They explain how the cross saves in more than one way, and the church has never chosen one picture and discarded the rest; they also differ on how the Lord's Supper relates to that one sacrifice. This moving picture does not choose between them. They are set out in",
+    "links": [
+      { "label": "the Study Bible's study of atonement", "href": "/study/bible/doctrines/atonement" },
+      { "label": "its study of baptism and the Lord's Supper", "href": "/study/bible/doctrines/sacraments" }
+    ]
+  },
+  "deeper": [
+    { "label": "Sacrifice and the Lamb (a moving picture)", "href": "/study/explorer/watch/the-lamb" },
+    { "label": "Why did Jesus die? (a moving picture)", "href": "/study/explorer/watch/why-jesus-died" },
+    { "label": "Atonement: what the Bible teaches, and where Christians differ", "href": "/study/bible/doctrines/atonement" },
+    { "label": "Leviticus 17 in the Study Bible: the life is in the blood", "href": "/study/bible/leviticus/17" },
+    { "label": "Guilt and Conscience: what the Bible says", "href": "/wisdom/guilt-and-conscience" }
+  ],
+  "end": { "label": "Read Hebrews 9 in the Study Bible", "href": "/study/bible/hebrews/9" }
+}
