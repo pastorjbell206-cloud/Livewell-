@@ -15896,3 +15896,20 @@ Cut in chapter 19: the rare word for the knife and its use in Genesis 22 (litera
 | Joshua 8:2; Hosea 10:9 | 29-48 | judges/20.json `story`; judges/19.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 20: 2 Corinthians 5:21 and 1 Peter 2:24 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); qahal and ekklesia (a word link that would draw a line to the church the chapter does not draw); Baal-tamar, Gidom and the rock of Rimmon placed on a map.
+
+## The plain notes on Judges 21 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The tribes one people by covenant and incomplete without Benjamin; grief real; the question in verse 3 and no recorded answer; the book beginning with Israel asking God's direction and ending with its own plans; oaths binding even when rash; Numbers 30 and some vows set aside, an assembly's oath taken seriously; two oaths kept and more harm done | 1-7 | judges/21.json `cultural`, `literary`, `hard`, `doctrines` (covenant, sin), `words` (shava, nacham) | Repository |
+| Numbers 30:2; Ecclesiastes 5:6 | 1-7 | judges/21.json `cultural`; numbers/30.json (rash vows); BSB | Repository; BSB text |
+| Jabesh-gilead in Gilead with ties to Benjamin, the bond perhaps explained here; charam used against an Israelite town; the young women spared showing the purpose was wives, not devotion; told plainly; never asked, never speaking; one more wrong to repair the last | 8-14 | judges/21.json `historical`, `cultural`, `hard`, `words` (charam) | Repository |
+| 1 Samuel 11:1-11; 1 Samuel 31:12 | 8-14 | judges/21.json `historical`; 1-samuel/11.json `historical`; BSB | Repository; BSB text |
+| Perets, a breach; Shiloh as the place of God's house; the puzzling directions of verse 19 and the suggestion of a time when Shiloh was less known; the feast perhaps that of 1 Samuel 1:3, a harvest festival; marriage by capture known in the ancient world and not provided by the law; the letter of the oath kept and its spirit ignored; the flat telling; the last verse as the book's verdict, the period the depths of lawlessness and never a pattern | 15-25 | judges/21.json `historical`, `cultural`, `literary`, `words` (perets); bible/guides/reading-narrative.json | Repository |
+| Proverbs 14:12; 1 Samuel 1:3; Ruth 4:22 | 15-25 | judges/21.json `historical`, `christ` (Ruth ends with David); BSB | Repository; BSB text |
+| How the book can end so: not models but evidence; the last verse as verdict; no word from the LORD after verse 3; the readings of the refrain (a call for a king, perhaps David's line; no king guaranteed, as Kings shows; a longing for the LORD's rule, 8:23; a people only God could restore); troubled reading and Scripture's honesty; the women never asked or heard, like the woman of chapter 19; the flat report an indictment, not an endorsement; no pattern | 15-25 `hard` | judges/21.json `hard`; judges/17.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word for anyone who has been sold, traded, or forced to work or to do sexual acts...’ to ‘...lists places to turn.’) | 15-25 `hard` | acts/plain/16.json (16-18, `hard`); genesis/plain/37.json (25-28, `hard`); numbers/plain/31.json (25-47, `hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 21: Isaiah 9:6-7 and Jeremiah 23:5-6 and the king the New Testament proclaims (the deep note's thematic link; the book page keeps to the lines the New Testament itself draws); the deep note's sentence pointing to counselors and emergency services (replaced by the care line reused whole); Lebonah's place.
