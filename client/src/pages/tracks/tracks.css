@@ -154,14 +154,14 @@
   html[data-tk-print="group"] .tk-part,html[data-tk-print="group"] .tk-progress,html[data-tk-print="group"] .tk-facts{display:none !important}
   html[data-tk-print="group"] .tk-group{border:0;padding:0;margin-top:0}
   html[data-tk-print="session"] .tk-group{display:none !important}
-  /* The leader's guide and the whole track: every address written out, each session kept whole. */
+  /* The leader's guide and the whole track (.tk-page--paper): every address written out, each session kept whole. */
   .tk-paper{display:inline}
   p.tk-paper{display:block}
-  .tk-p,.tk-lead__steps,.tk-print-contents,.tk-lead-session__before,.tk-print-also li,.tk-lead-session__talk,.tk-print-talk,.tk-print-open{font-size:11pt;line-height:1.45;max-width:100%}
-  .tk-lead__about{font-size:11.5pt}
+  .tk-page--paper .tk-p,.tk-lead__steps,.tk-print-contents,.tk-lead-session__before,.tk-print-also li,.tk-lead-session__talk,.tk-print-talk,.tk-print-open{font-size:11pt;line-height:1.45;max-width:100%}
+  .tk-page--paper .tk-lead__about{font-size:11.5pt}
   .tk-print-subtitle{font-size:14pt;max-width:100%}
-  .tk-h2{font-size:18pt}
-  .tk-h3{font-size:13pt}
+  .tk-page--paper .tk-h2{font-size:18pt}
+  .tk-page--paper .tk-h3{font-size:13pt}
   .tk-lead__part{break-inside:avoid;padding-top:6pt;margin-top:6pt}
   .tk-lead__sessions{break-before:page}
   .tk-lead__list{display:block}

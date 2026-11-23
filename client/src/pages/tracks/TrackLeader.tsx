@@ -161,7 +161,7 @@ export default function TrackLeader() {
           url={`https://www.livewellbyjamesbell.co${leaderHref(slug)}`}
         />
       )}
-      <div className="tk-page">
+      <div className="tk-page tk-page--paper">
         {track === undefined && <div className="tk-wait" data-lw-loading aria-busy="true" />}
         {track === null && (
           <section className="tk-sec">
