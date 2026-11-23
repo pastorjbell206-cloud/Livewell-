@@ -16403,3 +16403,20 @@ Cut in chapter 20: Isaiah 55:3 and Acts 13:34 and Jonathan as a model of yieldin
 | The headings of Psalm 34 (Abimelech as a title or a later note) and Psalm 56 | 10-15 | psalms/plain/34.json (1-10, `hearers`); psalms/plain/56.json (1-13, `hearers`); 1-samuel/21.json `historical`; BSB | Repository; BSB text; both readings of the heading in their holders' terms |
 
 Cut in chapter 21: Jesus as the anointed but not yet enthroned king whose followers are fed from holy things (the deep note's reading beyond Jesus' own words; the story's use by Jesus is kept); the gloss in the time of Abiathar given without quotation marks, since it is not the BSB's wording; a reason for Ahimelech's trembling (the text gives none; cut before commit).
+
+## The plain notes on 1 Samuel 22 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two kingdoms taking shape; Adullam in the lowlands southwest of Bethlehem near Elah, in cave country; the distressed, indebted and discontented and bands on the margins, the core of a royal army; God's people formed from the margins; Moab east of the Dead Sea, Ruth the Moabite (Ruth 4:13-22) and Moab's hostility to Saul (14:47); the stronghold a natural fortress; Gad's first appearance and later service | 1-5 | 1-samuel/22.json `story`, `historical`, `cultural`, `words` (metsudah), `doctrines` (church) | Repository |
+| The headings of Psalms 142 and 57, which cave not said; 2 Samuel 24:11 | 1-5 | 1-samuel/22.json `historical`; psalms/plain/142.json and 57.json (`hearers`); BSB | Repository; BSB text |
+| The alternating telling and the two pictures of the leaders; the appeal to tribal loyalty and royal patronage; qashar and Saul's suspicion; aman and Ahimelech's truest word answered with death | 6-16 | 1-samuel/22.json `cultural`, `literary`, `words` (qashar, aman) | Repository |
+| Psalm 52's heading and its first line | 6-16 | 1-samuel/22.json `historical`; psalms/plain/52.json (1-9, `hearers`); BSB | Repository; BSB text (the heading quoted only up to its inner quotation) |
+| The guards' refusal and the turn to a foreigner; verse 19 echoing 15:3, the destruction turned on God's priests; the word against Eli's house fulfilled (2:31-33) and the guilt on Saul and Doeg; David's confession and his charge of the survivor (mishmeret); Abiathar and the ephod in chapter 23 | 17-23 | 1-samuel/22.json `literary`, `cultural`, `words` (mishmeret), `doctrines` (judgment) | Repository |
+| 1 Kings 2:27; Ezekiel 18:20 | 17-23 | 1-samuel/22.json `doctrines` (judgment), `hard` (Ezekiel 18); BSB | Repository; BSB text |
+| Why God allowed the massacre: not softened; guilt on Saul and Doeg and David's admitted part; the judgment on Eli's house at work without lessening guilt; the troubling framework and the children; consequences on families with personal judgment; lament and protection; never called good | 17-23 `hard` | 1-samuel/22.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 17-23 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 22: Mark 2:17 and the king whose company is those with nowhere else to go (the deep note calls it a thematic anticipation, not a line the New Testament draws to this chapter); Mizpeh of Moab placed (unidentified); 22:15 quoted not at all because it carries a dash.
