@@ -23,7 +23,7 @@ Where a claim could not be verified, the unverifiable specific was cut (the name
 
 ## Totals
 
-About 220 claims were checked: 121 verified against an opened source (left as they were, or kept with the source named), 48 cut (12 of them the Westminster year, see 2.0), 35 narrowed to what the source supports, one copyrighted translation replaced with a public-domain one (the Qur'an, 1.3), nine left as paraphrases of a position with nothing to verify, and one care passage kept whole although only partly verified (2.8). The edits touch 40 pages: eight Honest Answers, the short questions, the justice timeline and 30 essays. Each page has its own commit (one essay has two).
+About 220 claims were checked: 121 verified against an opened source (left as they were, or kept with the source named), 48 cut (12 of them the Westminster year, see 2.0), 35 narrowed to what the source supports, one copyrighted translation replaced with a public-domain one (the Qur'an, 1.3), one slip corrected to the Bible's own text (1 Samuel 17, 1.10), nine left as paraphrases of a position with nothing to verify, and one care passage kept whole although only partly verified (2.8). The edits touch 41 pages: eight Honest Answers, the short questions, the passage notes, the justice timeline and 30 essays. Each page has its own commit (one essay has two).
 
 ## Part 1. Problems already flagged to James
 
@@ -102,6 +102,12 @@ Page: /theology/questions (`client/public/theology/questions.json`). Flagged in 
 - **"Aren't we just our brains?"** Cut: "Phineas Gage took an iron rod through his frontal lobe and became, by his friends accounts, no longer Gage." Harlow's report of 1868 is not on GitHub; only Wikipedia copies were found.
 - **"What about near-death experiences?"** Cut: "Cardiologists like Pim van Lommel and researchers like Raymond Moody and Bruce Greyson have documented thousands of these accounts." ("They are data." became "These reports are data." so the sentence still has its subject.) Cut: "Pilots in high-g centrifuges report tunnel vision and euphoria." **For James, not changed:** the answer speaks as a pastor ("People come to a pastor with these stories more often than you might think"; "I will not pretend the case is closed").
 - **"How old is the earth, and does it matter?"** **Verified**, unchanged: Augustine's warning and his simultaneous creation. CE "Augustine of Hippo" (02089a): "*We must be on our guard against giving interpretations which are hazardous or opposed to science, and so exposing the word of God to the ridicule of unbelievers* (De Genesi ad litteram, I, 19, 21, especially n. 39)", followed by "his thesis on the simultaneous creation of the universe"; CE "Hexaemeron" (07310a): Augustine began the work in 401 and "admits again a simultaneous formation of the world".
+
+### 1.10 The passage note on 1 Samuel 17: the cheese
+
+Page: /theology/passage-notes, the note on 1 Samuel 17 (`client/public/theology/passage-notes.json`, the entry's `flow`). Flagged by the coordinator of this run (2026-11-23): the film agent corrected the same slip in its own film and left this file alone.
+
+- Before: "Then a boy arrives carrying bread and cheese to his older brothers, hears the giant, and asks a strange question." After: "Then a boy arrives carrying bread to his older brothers and cheese for their commander, hears the giant, and asks a strange question." **Corrected** to the text. Repo BSB, 1 Samuel 17:17-18: "Take this ephah of roasted grain and these ten loaves of bread for your brothers ... Take also these ten portions of cheese to the commander of their unit."
 
 ## Part 2. The public essays
 
