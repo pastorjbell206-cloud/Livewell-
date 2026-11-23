@@ -2,7 +2,10 @@
  * /study/explorer: the Bible Explorer, the whole Bible as one road for
  * readers aged 7 to 16.
  *
- * 1. The page top (PageHead, inner size) with the road drawn as its picture.
+ * 1. The page top (PageHead, inner size) with the road drawn as its picture,
+ *    and under it a short list of the page's parts by their own headings,
+ *    the films first: the page runs to about 37 phone screens (the walk's
+ *    polish, 2026-11-23). Nothing below is moved or removed.
  * 2. The controls: the reading level (Ages 7 to 11, Ages 12 to 16, kept on
  *    this device) and the threads. Tapping a thread lights it on the map at
  *    every stop where it runs, with one line at each stop saying how; a
@@ -51,9 +54,18 @@ import {
 } from "@/lib/explorer";
 import { CardArt, CARD_PICTURES, HeadArt, Roundel } from "./art";
 import { Count, LevelSwitch, ThreadIcon } from "./parts";
-import { MOVING_MAPS, Watch, WatchLinks } from "./Watch";
+import { MOVING_MAPS, WATCH_ID, Watch, WatchLinks } from "./Watch";
 import "./explorer.css";
 import "./films/film.css";
+
+/** The page's parts, each by its own heading, the films first; each link lands on its section. */
+export const JUMPS: { href: string; label: string }[] = [
+  { href: `#${WATCH_ID}`, label: "Watch and learn" },
+  { href: "#ex-map-title", label: "The map" },
+  { href: "#ex-holds-title", label: "What the Explorer holds" },
+  { href: "#ex-believe-title", label: "Why we believe" },
+  { href: "#ex-parents-title", label: "For parents and leaders" },
+];
 
 /** Where each roundel sits across the road's column, in percent: a gentle S down the page. */
 const SWAY = [32, 68];
@@ -157,6 +169,19 @@ export default function ExplorerMap() {
         line="The whole Bible as one story, on one map, for ages 7 to 16. Follow the road from the garden to the city."
         art={<HeadArt />}
       />
+
+      {/* A short way to each part of a long page, the films first. */}
+      <nav aria-label="On this page" className="ex-sec ex-holds__jump" style={{ paddingTop: "var(--s-3)", paddingBottom: 0 }}>
+        <div className="ex-wrap">
+          <ul>
+            {JUMPS.map(j => (
+              <li key={j.href}>
+                <a href={j.href}>{j.label}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </nav>
 
       <section className="ex-sec ex-sec--warm" aria-labelledby="ex-map-title">
         <div className="ex-wrap">
@@ -276,7 +301,7 @@ export default function ExplorerMap() {
         aria-labelledby="ex-parents-title"
       >
         <div className="ex-wrap">
-          <h2 className="ex-h2" id="ex-parents-title">
+          <h2 className="ex-h2 ex-anchor" id="ex-parents-title">
             For parents and leaders
           </h2>
           <p className="ex-lede">
@@ -329,7 +354,7 @@ function Holds({ index }: { index: ExplorerIndex }) {
   return (
     <section className="ex-sec ex-sec--tight" aria-labelledby="ex-holds-title">
       <div className="ex-wrap">
-        <h2 className="ex-h2" id="ex-holds-title">
+        <h2 className="ex-h2 ex-anchor" id="ex-holds-title">
           What the Explorer holds
         </h2>
         <ul className="ex-holds">

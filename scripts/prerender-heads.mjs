@@ -1682,11 +1682,16 @@ async function main() {
     // routes; starter entries live on /help itself. The head carries the
     // search title, not the reader's-words H1, plus the FAQ as structured
     // data; registry and review fields stay out of the crawlable body.
+    // The page's heading in the body is its own title, the reader's words the
+    // loaded page shows (CarePage's H1), so the first paint and the page agree;
+    // it once showed the search title and changed as the app arrived (the
+    // walk's polish, 2026-11-23). The title is then left out of the prose.
     {
       file: "client/public/needs/index.json", key: "needs", route: "/help/", ogPrefix: "help", desc: "description",
       contentDir: "client/public/needs", titleField: "seoTitle", preferTitleField: true, faq: true,
+      heading: (e) => e.title,
       filter: (e) => e.page === true,
-      omitKeys: ["slug", "page", "rank", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
+      omitKeys: ["slug", "page", "rank", "title", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
     },
     // A page per family devotion (/family/devotions/:id): the 72 weekly ones
     // and each day of the daily sets, from the family index
@@ -1798,7 +1803,7 @@ async function main() {
         } catch { /* leave head-only */ }
       } else if (contentObj) {
         try {
-          bodyHtml = bodyFromContent({ title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj });
+          bodyHtml = bodyFromContent({ title: (src.heading && src.heading(e)) || title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj });
           if (bodyHtml) withBody++;
         } catch { /* leave head-only */ }
       }
