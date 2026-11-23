@@ -293,9 +293,11 @@ describe("the page", () => {
     serve(false);
     renderWithProviders(<ScriptureMemory />);
     fireEvent.click(screen.getByRole("button", { name: "Show the catechism's verses" }));
-    expect(await screen.findByRole("alert")).toBeInTheDocument();
+    // The page always holds an empty alert for the own-verse field, so "an alert" can be
+    // found before the failed load has drawn anything. Wait for the retry button itself.
+    const retry = await screen.findByRole("button", { name: /try again/i });
     serve(true);
-    fireEvent.click(screen.getByRole("button", { name: /try again/i }));
+    fireEvent.click(retry);
     await waitFor(() => expect(screen.getByText(/^Question 1:/)).toBeInTheDocument());
   });
 
