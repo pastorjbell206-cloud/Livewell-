@@ -1484,3 +1484,17 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | assurance-of-faith | Where Christians differ: perseverance (Reformed, Calvinist, much of the Baptist world); can fall away (Catholic, Orthodox, Lutheran, Wesleyan, Methodist), Hebrews 6:4-6, John 15:6; the creeds do not settle it; both lead to a humble clinging to Christ | plain john/10 22-29 hard; plain romans/8 31-39 hard; plain 1-john/5 13-15 hard; Honest Answer can-you-lose-your-salvation |
 | assurance-of-faith | Psalm 139: he knows the worst and has not let go; no place his hand cannot reach | plain psalms/139 1-12 asks |
 | assurance-of-faith | Care lines | plain 2-corinthians/13 |
+| spiritual-dryness | Far from the temple, thirsting like a deer, mocked with where is your God; the singer loves God and is still low; the psalm does not say why or give one cure | note psalms/42 summary; plain psalms/42 1-5 hard |
+| spiritual-dryness | Job cannot find God anywhere; trusts that God knows his way and testing will prove him gold | note job/23 summary |
+| spiritual-dryness | Those who fear the LORD walking in darkness are called to trust him; warning to those who light their own fires | note isaiah/50 summary |
+| spiritual-dryness | Forty years humbled and fed with manna; not a trap but for their good in the end (verse 16); the test showed Israel to itself; what you really live on | note deuteronomy/8 summary; plain deuteronomy/8 1-6 hard and asks |
+| spiritual-dryness | The LORD not in wind, earthquake or fire but a still, small voice; God answers with new work and the seven thousand | note 1-kings/19 summary |
+| spiritual-dryness | Springs in the Valley of Baca; the road runs through a valley of tears that is not skipped | note psalms/84 summary; plain psalms/84 1-7 asks |
+| spiritual-dryness | Seed grows while the man sleeps; the point is the growth without him; much of God's work happens while we are not watching | note mark/4 verses 26-27; plain mark/4 26-29 asks |
+| spiritual-dryness | Eyes kept and opened at the breaking of bread; hearts burning long before they understood why | note luke/24 summary and verse 32; plain luke/24 28-35 asks |
+| spiritual-dryness | Union not a technique but a dependence; remain means keep receiving; the branch does not strain | note john/15 verse 4; plain john/15 1-4 asks |
+| spiritual-dryness | Created, redeemed, called by name; with them through water and fire | note isaiah/43 summary |
+| spiritual-dryness | Isaiah 59:2 addressed to a society of violence, lies and injustice; ends with God redeeming those who turn and his Spirit and words never leaving them; the faithful low without a stated cause | note isaiah/59 summary; plain psalms/42 1-5 hard |
+| spiritual-dryness | God often nearest when he feels furthest; faith not built on feeling and often returning through the habit; dryness and depression can wear the same face | the topic's own first form (framing and application) |
+| spiritual-dryness | Psalm 63: longing itself a kind of prayer; praying verses 1 to 5 in the morning, as Christians have for centuries | plain psalms/63 1-5 asks; Psalm 63:1 heading |
+| spiritual-dryness | Care lines | plain psalms/42 |
