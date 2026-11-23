@@ -15645,3 +15645,22 @@ Cut in chapter 4: that the name Kenite may be linked with metalworking (the deep
 | Whether the song gloats: some hear cruelty; others the oppressor's violence turned back, and a note of pity; a song of the rescued kept honestly; later Scripture and Jesus' command as further light; not the Bible's last word on enemies | 28-31 `hard` | judges/5.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 5: Matthew 13:43 and Colossians 2:15 (the deep note's thematic links to Christ, not lines the New Testament draws to this song); the identification of the places in verses 10 to 15 that translations render differently; verse 22 and verse 30 quoted only in part or paraphrased, because each has a dash in the BSB.
+
+## The plain notes on Judges 6 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Midianites of the desert east and south; Moses among them and later wars; the Amalekites and ‘the people of the east’; camels and the debate over when they were first widely used; one of the earliest pictures of camel raiding; raids at harvest from the Jordan through Jezreel to Gaza; hiding in caves; the prophet's short speech like a charge in court, with no recorded reply | 1-10 | judges/6.json `historical`, `literary` | Repository |
+| Isaiah 9:4; Exodus 20:2 | 1-10 | isaiah 9 (the day of Midian); judges/6.json `literary`; BSB | BSB text |
+| Threshing on an open floor and the winepress as a hiding place; the greeting as ironic and as what God would make him; the pattern of Moses' call (encounter, commission, objection, ‘I will be with you’, sign); Gideon's honest questions; the fear of seeing God and the gift of peace; The LORD Is Peace and shalom | 11-24 | judges/6.json `cultural`, `literary`, `words` (gibbor, shalom); context/worlds/old-testament-world.json (Judges 6:11) | Repository |
+| Exodus 3:11-12; Exodus 33:20; Hebrews 11:32 | 11-24 | judges/6.json `cultural`, `literary`, `christ`; hebrews/plain/11.json; BSB | Repository; BSB text |
+| The angel and the LORD in the same scene; the two readings as at Bochim; no side; God himself calling and bringing peace | 11-24 `hard` | judges/6.json; judges/2.json `christ`; judges/13.json `hard` | Repository; no side |
+| The altar of Baal in Gideon's own family; outward oppression and inward unfaithfulness; the Asherah pole; obedience by night; the town ready to kill him for tearing down an altar the law ordered torn down (Deuteronomy 7:5); Joash's challenge; riv and the name Jerubbaal | 25-32 | judges/6.json `cultural`, `doctrines` (idolatry), `words` (riv); BSB | Repository; BSB text |
+| 1 Samuel 12:11; 1 Kings 18:27 | 25-32 | 1-samuel/12.json `historical`; BSB | Repository; BSB text |
+| The Spirit ‘clothed himself with’ Gideon; the order of promise, sign, Spirit and then the fleece; the heavy dew of the dry season; the second, harder test; God answering both times | 33-40 | judges/6.json `cultural`, `literary`, `doctrines` (spirit), `words` (gazzah); bible/doctrines/spirit.json (`ot`) | Repository |
+| Deuteronomy 6:16; Matthew 4:7 | 33-40 | judges/6.json `hard`; deuteronomy/plain/6.json; BSB | Repository; BSB text |
+| The fleece: weak faith rather than a model (Deuteronomy 6:16, Gideon's own plea); God's patience with the fearful; description and not a method of guidance; Christians differ on asking for signs | 33-40 `hard` | judges/6.json `hard` | Repository; the views in their holders' terms; no side on asking for signs |
+
+Cut in chapter 6: John 20:19 and Ephesians 2:14 on peace, and 1 Corinthians 1:26-29 (the deep note's thematic links, not lines the New Testament draws to this chapter); where Ophrah lay (not identified with certainty).
