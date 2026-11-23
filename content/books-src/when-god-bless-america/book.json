@@ -1,0 +1,16 @@
+{
+  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/, which a rename never changes; the title and subtitle come from client/src/data/book-names.json. The sec*.xhtml files are the author's text, taken unchanged from the original EPUB kept in content/held-downloads/originals/: one block to a line. Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs when-god-bless-america --verify`. `copyright` is the notice as the original files printed it, without the PDF's unfilled ISBN line.",
+  "id": "when-god-bless-america",
+  "author": "James Bell",
+  "identifier": "urn:livewell:wgba-v2",
+  "language": "en",
+  "date": "2026",
+  "modified": "2026-11-22T00:00:00Z",
+  "copyright": [
+    "Copyright © 2026 by James Bell. All rights reserved.",
+    "Published by LiveWell by James Bell. Unless otherwise noted, Scripture quotations are from the English Standard Version (ESV)."
+  ],
+  "files": { "pdf": "A-Higher-Allegiance.pdf", "epub": "A-Higher-Allegiance.epub" },
+  "original": { "pdf": "When-God-Bless-America.pdf", "epub": "When-God-Bless-America.epub" },
+  "sections": ["sec01.xhtml", "sec02.xhtml", "sec03.xhtml", "sec04.xhtml", "sec05.xhtml", "sec06.xhtml", "sec07.xhtml", "sec08.xhtml", "sec09.xhtml", "sec10.xhtml", "sec11.xhtml"]
+}

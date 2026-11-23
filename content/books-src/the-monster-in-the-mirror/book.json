@@ -1,0 +1,16 @@
+{
+  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/, which a rename never changes; the title and subtitle come from client/src/data/book-names.json. The sec*.xhtml files are the author's text, taken unchanged from the original EPUB kept in content/held-downloads/originals/: one block to a line. Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs the-monster-in-the-mirror --verify`. `copyright` is the notice as the original PDF printed it, without its unfilled ISBN line.",
+  "id": "the-monster-in-the-mirror",
+  "author": "James Bell",
+  "identifier": "urn:livewell:monster-v1",
+  "language": "en",
+  "modified": "2026-11-22T00:00:00Z",
+  "copyright": [
+    "Copyright © 2026 by James Bell. All rights reserved. No part of this book may be reproduced in any form without written permission, except for brief quotations in reviews.",
+    "Published by LiveWell by James Bell. livewellbyjamesbell.co",
+    "Unless otherwise noted, Scripture quotations are from the English Standard Version (ESV)."
+  ],
+  "files": { "pdf": "Blind-Spots.pdf", "epub": "Blind-Spots.epub" },
+  "original": { "pdf": "The-Monster-in-the-Mirror.pdf", "epub": "The-Monster-in-the-Mirror.epub" },
+  "sections": ["sec01.xhtml", "sec02.xhtml", "sec03.xhtml", "sec04.xhtml", "sec05.xhtml", "sec06.xhtml", "sec07.xhtml", "sec08.xhtml", "sec09.xhtml", "sec10.xhtml", "sec11.xhtml", "sec12.xhtml", "sec13.xhtml", "sec14.xhtml", "sec15.xhtml", "sec16.xhtml", "sec17.xhtml", "sec18.xhtml"]
+}
