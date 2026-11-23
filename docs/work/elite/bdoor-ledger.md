@@ -16420,3 +16420,19 @@ Cut in chapter 21: Jesus as the anointed but not yet enthroned king whose follow
 | The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 17-23 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 22: Mark 2:17 and the king whose company is those with nowhere else to go (the deep note calls it a thematic anticipation, not a line the New Testament draws to this chapter); Mizpeh of Moab placed (unidentified); 22:15 quoted not at all because it carries a dash.
+
+## The plain notes on 1 Samuel 23 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The ephod with David and Saul cut off from it; Keilah a walled town in the lowlands south of Adullam near the border; harvest raids and threshing floors on high ground; David doing Saul's task (9:16); yes-or-no questions through the ephod; gates and bars as a trap; sha'al and Saul's name, the asked-for king no longer asking | 1-13 | 1-samuel/23.json `story`, `historical`, `cultural`, `words` (sha'al, yasha) | Repository |
+| 1 Chronicles 14:10 | 1-13 | BSB | BSB text (quoted only after its inner quotation) |
+| God's answers about what did not happen: what would have happened had David stayed; the Molinists after Luis de Molina, sixteenth-century Jesuit; Reformed and Thomist theologians and God's knowledge through his decree; open theists and present intentions; debates that do not divide the faith; God warning David in time | 1-13 `hard` | 1-samuel/23.json `hard` | Repository; each view in its holders' terms; no side |
+| Ziph and the dry hill country south of Hebron; hand running through the chapter; Jonathan's visit at the center between two betrayals; strengthening in God as pointing to the promise, the strength from God (30:6); Jonathan's open word and the last meeting | 14-18 | 1-samuel/23.json `historical`, `literary`, `words` (chazaq), `doctrines` (faith), `story` | Repository |
+| Ecclesiastes 4:10 | 14-18 | BSB | BSB text (a thematic line within the Old Testament) |
+| The Ziphites of David's own tribe; Saul's warm words and self-pity; Jeshimon as wasteland; Sela-hammahlekoth as rock of parting or escape; En-gedi's springs, cliffs and caves; the tension and the sudden rescue | 19-29 | 1-samuel/23.json `historical`, `cultural`, `literary`, `words` (sela), `doctrines` (providence) | Repository |
+| The headings of Psalm 54 and Psalm 63, the time not said | 19-29 | psalms/plain/54.json and 63.json (`hearers`); BSB | Repository; BSB text |
+
+Cut in chapter 23: Luke 6:12-13, John 5:19 and Hebrews 10:23-25 and Jesus as one who prayed before decisions and was handed over (the deep note calls them thematic connections, not lines the New Testament draws to this chapter); Saul's greeting to the Ziphites in verse 21 left unquoted, the note quoting only his reason.
