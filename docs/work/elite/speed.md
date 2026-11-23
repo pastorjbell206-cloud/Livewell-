@@ -85,36 +85,36 @@ Measured again after the day's other work was merged (`c91ed254`), /family score
 
 ### Before and after
 
-Performance, largest paint, layout shift. "Before" is the first set, on the code as it was this morning. "First pass" is the last set on commit `1fb666bd`, before the merge. "Final" is the last set on the merged tree with the changes above: for /study/explorer and the essay on the final build, for every other page on the build with the frame wait, whose code for those pages is the final code. Pages bound by blocking time move by several points between sets on this shared machine, so their range over the day's sets is given.
+Performance, largest paint, layout shift. "Before" is the first set, on the code as it was this morning. "First pass" is the last set on commit `1fb666bd`, before the merge. "Final" is the last set on the merged tree with the changes above: for /study/explorer and the essay on the final build, for every other page on the build with the frame wait, whose code for those pages is the final code. Pages bound by blocking time move by several points between sets on this shared machine, so their range over the day's sets is given. "Merged, last check" is the re-measure on the tree after the last merge (`e94b5cce`), every page, with the machine quiet (load 1 to 6).
 
-| Page | Before | First pass | Final |
-|---|---|---|---|
-| /study/bible | 80, 4.5 s, 0 | 95, 1.1 s, 0 | 99, 1.1 s, 0 |
-| /study/bible/john/3 | 79, 4.0 s, 0 | 93, 1.1 s, 0 | 99, 1.1 s, 0 |
-| /writing | 92, 2.9 s, 0 | 99, 1.1 s, 0 | 99, 1.1 s, 0 |
-| /writing/what-post-christian-means | 74, 4.3 s, 0 | 93, 1.1 s, 0 | 94, 1.1 s, 0 (87 to 95) |
-| /questions | 91, 3.2 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
-| /questions/jesus/did-jesus-exist | 69, 5.4 s, 0 | 91, 1.1 s, 0 | 98, 1.1 s, 0 |
-| /family | 89, 3.7 s, 0.006 | 100, 1.1 s, 0.006 | 100, 1.1 s, 0.006 |
-| /family/catechism | 83, 4.6 s, 0.004 | 99, 1.1 s, 0.004 | 99, 1.1 s, 0.004 |
-| /tools | 89, 3.6 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
-| /tools/wisdom-finder | 77, 4.4 s, 0 | 97, 1.1 s, 0 | 98, 1.1 s, 0 |
-| /help | 84, 3.8 s, 0.137 | 83, 3.8 s, 0.137 | 80, 3.8 s, 0.137 (not changed; see below) |
-| /explore | 82, 3.6 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
-| /tracks | 86, 3.9 s, 0 | 87, 3.9 s, 0 | 88, 3.9 s, 0 (not changed; see below) |
-| /study/explorer | 81, 4.0 s, 0 | 94, 1.1 s, 0 | 97, 1.1 s, 0 (88 to 97) |
-| /study/explorer/watch/bible-two-minutes | 86, 3.9 s, 0 | 95, 1.1 s, 0 | 94, 1.1 s, 0 |
-| /theology/history | 94, 3.0 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
-| /search | 81, 5.1 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
-| / (recorded only) | 100, 1.1 s, 0.016 | 99, 1.1 s, 0.016 | 99, 1.1 s, 0 |
-| /start (recorded only) | 89, 3.8 s, 0 | 88, 3.8 s, 0 | 88, 3.9 s, 0 |
-| /downloads (recorded only) | 65, 5.2 s, 0 | 62, 5.2 s, 0 | 70, 4.0 s, 0 |
+| Page | Before | First pass | Final | Merged, last check |
+|---|---|---|---|---|
+| /study/bible | 80, 4.5 s, 0 | 95, 1.1 s, 0 | 99, 1.1 s, 0 | 100, 1.1 s, 0 |
+| /study/bible/john/3 | 79, 4.0 s, 0 | 93, 1.1 s, 0 | 99, 1.1 s, 0 | 100, 1.1 s, 0 |
+| /writing | 92, 2.9 s, 0 | 99, 1.1 s, 0 | 99, 1.1 s, 0 | 99, 1.1 s, 0 |
+| /writing/what-post-christian-means | 74, 4.3 s, 0 | 93, 1.1 s, 0 | 94, 1.1 s, 0 (87 to 95) | 96, 1.1 s, 0 |
+| /questions | 91, 3.2 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
+| /questions/jesus/did-jesus-exist | 69, 5.4 s, 0 | 91, 1.1 s, 0 | 98, 1.1 s, 0 | 99, 1.1 s, 0 |
+| /family | 89, 3.7 s, 0.006 | 100, 1.1 s, 0.006 | 100, 1.1 s, 0.006 | 96, 1.1 s, 0.006 |
+| /family/catechism | 83, 4.6 s, 0.004 | 99, 1.1 s, 0.004 | 99, 1.1 s, 0.004 | 100, 1.1 s, 0.004 |
+| /tools | 89, 3.6 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
+| /tools/wisdom-finder | 77, 4.4 s, 0 | 97, 1.1 s, 0 | 98, 1.1 s, 0 | 99, 1.1 s, 0 |
+| /help | 84, 3.8 s, 0.137 | 83, 3.8 s, 0.137 | 80, 3.8 s, 0.137 (not changed; see below) | 84, 3.7 s, 0.137 |
+| /explore | 82, 3.6 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
+| /tracks | 86, 3.9 s, 0 | 87, 3.9 s, 0 | 88, 3.9 s, 0 (not changed; see below) | 89, 3.8 s, 0 |
+| /study/explorer | 81, 4.0 s, 0 | 94, 1.1 s, 0 | 97, 1.1 s, 0 (88 to 97) | 99, 1.1 s, 0 |
+| /study/explorer/watch/bible-two-minutes | 86, 3.9 s, 0 | 95, 1.1 s, 0 | 94, 1.1 s, 0 | 100, 1.1 s, 0 |
+| /theology/history | 94, 3.0 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
+| /search | 81, 5.1 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 | 100, 1.1 s, 0 |
+| / (recorded only) | 100, 1.1 s, 0.016 | 99, 1.1 s, 0.016 | 99, 1.1 s, 0 | 100, 1.1 s, 0 |
+| /start (recorded only) | 89, 3.8 s, 0 | 88, 3.8 s, 0 | 88, 3.9 s, 0 | 87, 3.9 s, 0 |
+| /downloads (recorded only) | 65, 5.2 s, 0 | 62, 5.2 s, 0 | 70, 4.0 s, 0 | 71, 4.3 s, 0 |
 
 Accessibility 100, best practices 96 and SEO 100 on every page, before and after.
 
 ### Under 90, and why
 
-- **/help (80).** Its layout shift of 0.137 is the crisis section moving down when "What people bring most" arrives with the needs index, after first paint; its largest paint is React's lede. What it would take: the chips from data committed in the bundle (or their space held while they load), and held text for the page. Not done here: it is the crisis page, its held text would have to carry the help lines word for word, and its first screen is not a change to make in passing.
-- **/tracks (88).** Its held text is right, but the real track card's description is set larger than the held line, so the largest paint comes when the app has run. What it would take: the held description at the card's size. The tracks pages were others' work this day.
-- **/start (88) and /downloads (70).** Recorded only, as asked. Both still have the shell moved at run time (they were left out of the new placement on purpose). /downloads now carries its first shelf of covers in its held text, merged from the shelf's own work today, and rose from 62 to 70; its largest paint still comes after the app's code. Placing their shell before `#root`, as every other held page now has it, is one line in `SHELL_STAYS_IN_ROOT` once that work has settled.
-- **Pages bound by blocking time.** The essay and /study/explorer paint their largest text at 1.1 s in every run; what moves their score is blocking time, which on this shared machine rises with its load. On the final code the essay measured 87, 95 and 94 in three sets, and the map 88, 88 and 97. What is left on the map is the hold's layout of about 3,300 elements (62 ms in a trace on a desktop machine) and React's commit (30 ms); on the essay, the commit of a long page. What would take them further is drawing less before it is needed, such as the map's lower sections only as they near the screen: a change to those pages' structure rather than a speed fix.
+- **/help (80 to 84).** Its layout shift of 0.137 is the crisis section moving down when "What people bring most" arrives with the needs index, after first paint; its largest paint is React's lede. What it would take: the chips from data committed in the bundle (or their space held while they load), and held text for the page. Not done here: it is the crisis page, its held text would have to carry the help lines word for word, and its first screen is not a change to make in passing.
+- **/tracks (87 to 89).** Its held text is right, but the real track card's description is set larger than the held line, so the largest paint comes when the app has run. What it would take: the held description at the card's size. The tracks pages were others' work this day.
+- **/start (87 to 89) and /downloads (62 to 71).** Recorded only, as asked. Both still have the shell moved at run time (they were left out of the new placement on purpose). /downloads now carries its first shelf of covers in its held text, merged from the shelf's own work today, and rose from 62 to 70 and 71; its largest paint still comes after the app's code. Placing their shell before `#root`, as every other held page now has it, is one line in `SHELL_STAYS_IN_ROOT` once that work has settled.
+- **Pages bound by blocking time.** The essay and /study/explorer paint their largest text at 1.1 s in every run; what moves their score is blocking time, which on this shared machine rises with its load. On the final code the essay measured 87, 95 and 94 in three sets, and the map 88, 88 and 97; at the last check, on the merged tree with the machine quiet, 96 and 99. What is left on the map is the hold's layout of about 3,300 elements (62 ms in a trace on a desktop machine) and React's commit (30 ms); on the essay, the commit of a long page. What would take them further is drawing less before it is needed, such as the map's lower sections only as they near the screen: a change to those pages' structure rather than a speed fix.
