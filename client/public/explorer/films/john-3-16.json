@@ -1,0 +1,114 @@
+{
+  "slug": "john-3-16",
+  "title": "John 3:16 in its chapter",
+  "group": "verses",
+  "status": "finished",
+  "mark": "john-3-16",
+  "line": {
+    "younger": "One of the best-known verses in the Bible comes from a talk in the dark between Jesus and a teacher named Nicodemus. Seven pictures tell the whole of it.",
+    "older": "John 3:16 read where it was said: a night visit, a new birth, a bronze snake lifted up, the love behind the cross, and what became of the man who came in the dark."
+  },
+  "poster": "Night. Jesus sits in a room lit by one small lamp, and an older man with a staff comes in at the door.",
+  "frames": [
+    {
+      "id": "night",
+      "name": "A visitor at night",
+      "still": "Night. Jesus sits in a room lit by one small lamp, and an older man with a staff comes in at the door.",
+      "younger": "One night a man named Nicodemus came to see Jesus. He was an important teacher, and he had questions. One of the best-known verses in the Bible comes from their talk in the dark.",
+      "older": "One of the best-known verses in the Bible belongs to a conversation. Nicodemus, a Pharisee and a recognized teacher of Israel, comes to Jesus at night. John means the reader to notice: this man comes out of the dark toward the Light.",
+      "verse": {
+        "ref": "John 3:2",
+        "text": "Rabbi, we know that You are a teacher who has come from God."
+      }
+    },
+    {
+      "id": "born",
+      "name": "Born again",
+      "still": "The two men sit facing each other by the lamp, and lines of wind blow in through the open window.",
+      "younger": "Jesus told him something surprising. Nobody gets into God's kingdom by being clever or important. You have to be born all over again, from above. Only God's Spirit can do that, like the wind, which you cannot see or steer.",
+      "older": "Jesus tells Israel's teacher that he must be born again, or from above, of water and the Spirit. Ezekiel had promised clean water, a new heart, and God's own Spirit within. What startled was the demand that a man like him needed it.",
+      "verse": {
+        "ref": "John 3:3",
+        "text": "no one can see the kingdom of God unless he is born again."
+      }
+    },
+    {
+      "id": "lifted",
+      "name": "Lifted up",
+      "still": "In the desert Moses stands beside a tall pole with a bronze snake fixed to it. People kneel and look up at it, with tents behind them.",
+      "younger": "Then Jesus reminded him of an old story. Long ago in the desert, God's people were bitten by snakes. God told Moses to lift up a bronze snake on a pole, and everyone who looked at it lived. Jesus said that he would be lifted up like that.",
+      "older": "Jesus reaches for a story Nicodemus knew. In the wilderness the people were dying under judgment, God provided the means of healing, and whoever looked lived. Jesus reads it as a picture of his own cross.",
+      "verse": {
+        "ref": "John 3:14-15",
+        "text": "Just as Moses lifted up the snake in the wilderness, so the Son of Man must be lifted up, that everyone who believes in Him may have eternal life."
+      }
+    },
+    {
+      "id": "loved",
+      "name": "God so loved the world",
+      "still": "Dawn over a town of flat-roofed houses. Beyond it a hill with an empty cross stands in front of the rising sun, and people in the town turn toward it.",
+      "younger": "And then comes the verse. God loved the world so much that he gave his one and only Son. Not a world that loved him back. The whole world, as it is.",
+      "older": "The verse names the source of it all. The cross does not persuade God to love. God's love is why there is a cross. And what he loved is the world, which in John's Gospel is the world that did not recognize him.",
+      "verse": {
+        "ref": "John 3:16",
+        "text": "For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life."
+      }
+    },
+    {
+      "id": "believes",
+      "name": "Everyone who believes",
+      "still": "A person kneels and looks up toward the hill and the cross, hands open, and light comes down on them.",
+      "younger": "Who is it for? The verse says: everyone who believes. To believe is to trust Jesus, the way the people in the desert looked up and lived. The gift is life with God that never ends.",
+      "older": "The gift is received by believing, which in John's Gospel means trusting yourself to a person more than agreeing with a statement. What is given is eternal life, and John speaks of it as something the believer already has."
+    },
+    {
+      "id": "save",
+      "name": "Not to condemn",
+      "still": "Jesus stands in a lit doorway with his arms open, and people come toward him out of the dark.",
+      "younger": "The next verse matters just as much. God did not send his Son to tell the world how bad it is. He sent him to save it.",
+      "older": "The next verse guards the first. The Son's mission is rescue. Yet he is also the dividing line: the light has come, and people can prefer the dark.",
+      "verse": {
+        "ref": "John 3:17",
+        "text": "For God did not send His Son into the world to condemn the world, but to save the world through Him."
+      }
+    },
+    {
+      "id": "daylight",
+      "name": "Out of the dark",
+      "still": "Day. The older man with the staff walks openly up a road carrying a jar, toward a hill with an empty cross and a tomb cut in the rock.",
+      "younger": "What happened to Nicodemus? John tells us. After Jesus died on the cross, Nicodemus came again, this time bringing spices to help bury him. The man who came at night stepped out into the open.",
+      "older": "John does not say how Nicodemus answered that night. But he appears twice more, and the last time is at the cross, carrying burial spices for the one who was lifted up.",
+      "verse": {
+        "ref": "John 19:39",
+        "text": "Nicodemus, who had previously come to Jesus at night"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Why do you think Nicodemus came at night the first time, and in the daytime the last time?",
+    "older": "The verse says God loved the world. Which is harder for you to believe: that he loves the world, or that he loves you in particular?"
+  },
+  "read": [
+    { "label": "John 3", "href": "/study/bible/john/3" },
+    { "label": "Numbers 21", "href": "/study/bible/numbers/21" },
+    { "label": "John 19", "href": "/study/bible/john/19" }
+  ],
+  "stops": ["jesus", "cross"],
+  "cards": ["cross"],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "differ": {
+    "text": "All Christians confess that God loved the world and gave his Son, and that life is found in him. They differ on questions the verse raises: how God's love for the world relates to his saving purpose (Arminian and Reformed readings), and what may be hoped for those who never heard of Jesus. This moving picture takes no side. The readings are set out in",
+    "links": [
+      { "label": "the Study Bible's note on John 3", "href": "/study/bible/john/3" },
+      { "label": "the Honest Answer on those who never heard", "href": "/answers/what-about-those-who-never-heard" }
+    ]
+  },
+  "deeper": [
+    { "label": "John 3 in the Study Bible", "href": "/study/bible/john/3" },
+    { "label": "Faith: trusting the one who promised (a moving picture)", "href": "/study/explorer/watch/faith" },
+    { "label": "Why did Jesus die? (a moving picture)", "href": "/study/explorer/watch/why-jesus-died" },
+    { "label": "Love: what the Bible teaches", "href": "/study/bible/doctrines/love" },
+    { "label": "The Love of God: what the Bible says", "href": "/wisdom/gods-love" }
+  ],
+  "end": { "label": "Read John 3 in the Study Bible", "href": "/study/bible/john/3" }
+}

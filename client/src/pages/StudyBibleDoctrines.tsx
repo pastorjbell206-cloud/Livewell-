@@ -9,6 +9,7 @@
  * the verse lists /bible/doctrine-verses/<id>.json, and the chapter lists
  * /bible/notes-index.json.
  */
+import FilmsHere from "@/components/FilmsHere";
 import { useMemo, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -312,6 +313,10 @@ function DoctrinePage({ data, id }: { data: Data; id: string }) {
           <RelatedList items={related} />
         </Section>
       )}
+
+      <div style={{ ...wrap, padding: "0 var(--s-4)" }}>
+        <FilmsHere path={`/study/bible/doctrines/${d.id}`} />
+      </div>
 
       <nav aria-label="Doctrines" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)", borderTop: "1px solid var(--border)" }}>
         <div style={{ ...wrap, display: "flex", justifyContent: "space-between", gap: "12px", flexWrap: "wrap" }}>

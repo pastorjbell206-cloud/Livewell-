@@ -232,6 +232,47 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "Faith and science in seven moving pictures: the old war story, two kinds of question, a God who is not in the gaps, and where Christians disagree.",
     },
+    "why-blood": {
+      title: "Sacrifice: why blood?: Bible Explorer",
+      description:
+        "Why the Bible speaks so much of blood, in seven moving pictures: life given for life, the first altars, the Passover door, the offerings that never stopped, the cup, and one sacrifice for all time.",
+    },
+    grace: {
+      title: "Grace: the gift no one earns: Bible Explorer",
+      description:
+        "What grace is, in seven moving pictures: a gift and not a wage, the late workers in the vineyard, the cross, empty hands, a changed life, grace enough for each day, and grace passed on.",
+    },
+    faith: {
+      title: "Faith: trusting the one who promised: Bible Explorer",
+      description:
+        "What the Bible means by faith, in seven moving pictures: Abraham under the stars, a mustard seed, a father's honest prayer, faith that comes by hearing, and faith that walks on without seeing.",
+    },
+    "psalm-23": {
+      title: "Psalm 23: the LORD is my shepherd: Bible Explorer",
+      description:
+        "Psalm 23 line by line, in seven moving pictures: the shepherd, green pastures, the dark valley, the rod and the staff, the host's table, the house at the end, and the good shepherd.",
+    },
+    "romans-8-28": {
+      title:
+        "Romans 8:28: what it promises, and what it does not: Bible Explorer",
+      description:
+        "Romans 8:28 read in its own chapter, in seven moving pictures: what the verse does not say, what it does, what the good is, room to groan, and the love nothing can separate us from.",
+    },
+    "john-3-16": {
+      title: "John 3:16 in its chapter: Bible Explorer",
+      description:
+        "John 3:16 read where it was said, in seven moving pictures: Nicodemus at night, born again, the bronze snake lifted up, God's love for the world, and the man who came out of the dark.",
+    },
+    "the-exodus": {
+      title: "The Exodus: out of Egypt: Bible Explorer",
+      description:
+        "The rescue the whole Bible points back to, in seven moving pictures: slavery in Egypt, the burning bush, Pharaoh, the Passover, the sea, Miriam's song, and the greater rescue it became the pattern for.",
+    },
+    "david-and-goliath": {
+      title: "David and Goliath: Bible Explorer",
+      description:
+        "1 Samuel 17 as the text tells it, in seven moving pictures: two armies, a champion, a shepherd boy, a speech in the name of the LORD, one stone, and who we are in the story.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
@@ -244,6 +285,7 @@ function exportAsk(): {
   shape: ExportShape;
   level: Level;
   cut: boolean;
+  spoken: boolean;
 } | null {
   try {
     const q = new URLSearchParams(window.location.search);
@@ -254,6 +296,8 @@ function exportAsk(): {
       shape,
       level: q.get("level") === "older" ? "older" : "younger",
       cut: q.get("cut") === "share",
+      // A video with a voice: frames last as long as their words.
+      spoken: q.get("pace") === "spoken",
     };
   } catch {
     return null;

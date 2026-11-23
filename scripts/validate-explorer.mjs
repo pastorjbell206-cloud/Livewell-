@@ -20,7 +20,7 @@
  *     people for the death of Jesus;
  *   - the threads and the "Why we believe" cards point only at stops that
  *     exist, and a card's catechism numbers exist in the family catechism;
- *   - "Watch and learn" (films.json, films/<slug>.json): four groups; a film
+ *   - "Watch and learn" (films.json, films/<slug>.json): six groups; a film
  *     not made yet has no file and no link; a finished film has 5 to 9
  *     frames, each with its caption at both levels and the words for its
  *     finished picture (all a reader gets with motion turned off), its
@@ -506,11 +506,11 @@ for (const c of cards) {
 
 
 // ── Watch and learn: the moving pictures ──────────────────────────────────
-// films.json lists every planned film under one of four groups; a finished
+// films.json lists every planned film under one of six groups; a finished
 // film has its own file, films/<slug>.json, and a drawing in
 // client/src/pages/explorer/films/scenes/<slug>.tsx listed in FILM_SCENES.
 {
-  const GROUPS = ["story", "ideas", "beliefs", "questions"];
+  const GROUPS = ["story", "stories", "ideas", "beliefs", "verses", "questions"];
   const groups = filmCatalogue.groups ?? [];
   if (groups.map(g => g.id).join() !== GROUPS.join())
     fail("films.json", `groups must be ${GROUPS.join(", ")}, in that order`);
@@ -531,7 +531,7 @@ for (const c of cards) {
       fail(w, "has a missing, unplain or repeated slug");
     seen.add(f.slug);
     if (!f.title) fail(w, "needs a title");
-    if (!GROUPS.includes(f.group)) fail(w, `group "${f.group}" is not one of the four`);
+    if (!GROUPS.includes(f.group)) fail(w, `group "${f.group}" is not one of the six`);
     textRules(w, f.title);
     const file = path.join(DIR, "films", `${f.slug}.json`);
     if (f.status === "coming") {

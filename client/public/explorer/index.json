@@ -1210,6 +1210,11 @@
       "line": "The whole Bible from beginning to end."
     },
     {
+      "id": "stories",
+      "name": "Bible stories",
+      "line": "Stories of the Bible, told as the text itself tells them."
+    },
+    {
       "id": "ideas",
       "name": "Big ideas",
       "line": "Themes that run from the first page to the last."
@@ -1218,6 +1223,11 @@
       "id": "beliefs",
       "name": "What we believe",
       "line": "What Christians everywhere confess, and where the Bible says it."
+    },
+    {
+      "id": "verses",
+      "name": "Verses to know",
+      "line": "One well-known verse at a time, read in its own chapter."
     },
     {
       "id": "questions",
@@ -1277,6 +1287,38 @@
       "cards": [
         "bible"
       ]
+    },
+    {
+      "slug": "the-exodus",
+      "title": "The Exodus: out of Egypt",
+      "group": "stories",
+      "status": "finished",
+      "line": {
+        "younger": "God's people were slaves in Egypt, and God set them free. The story as the Bible tells it, in seven pictures, from the brick yards to the far side of the sea.",
+        "older": "The rescue the whole Bible keeps pointing back to, in seven pictures: slavery, the burning bush, Pharaoh's question, the Passover, the sea, the song, and the greater rescue it became the pattern for."
+      },
+      "mark": "rescue",
+      "frames": 7,
+      "stops": [
+        "rescue"
+      ],
+      "cards": []
+    },
+    {
+      "slug": "david-and-goliath",
+      "title": "David and Goliath",
+      "group": "stories",
+      "status": "finished",
+      "line": {
+        "younger": "A giant, a frightened army, and a shepherd boy with a sling. The story as the Bible tells it, in seven pictures, and what it is really about.",
+        "older": "1 Samuel 17 as the text itself tells it, in seven pictures: two armies, forty days of fear, a boy on an errand, a speech in the name of the LORD, one stone, and the question of who we are in the story."
+      },
+      "mark": "david-and-goliath",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": []
     },
     {
       "slug": "holy-spirit",
@@ -1380,6 +1422,28 @@
         "jesus",
         "cross",
         "new-creation"
+      ],
+      "cards": [
+        "cross"
+      ]
+    },
+    {
+      "slug": "why-blood",
+      "title": "Sacrifice: why blood?",
+      "group": "ideas",
+      "status": "finished",
+      "line": {
+        "younger": "The Bible talks about blood from its first pages to the cross. Seven pictures show why: blood means a life given, and God himself gives it.",
+        "older": "Why does the Bible speak so much of blood? Seven pictures follow its own answer from the first altars to the cross: a life given in place of another, and God the one who gives it."
+      },
+      "mark": "why-blood",
+      "frames": 7,
+      "stops": [
+        "fall",
+        "abraham",
+        "rescue",
+        "sinai",
+        "cross"
       ],
       "cards": [
         "cross"
@@ -1571,6 +1635,41 @@
       ]
     },
     {
+      "slug": "grace",
+      "title": "Grace: the gift no one earns",
+      "group": "beliefs",
+      "status": "finished",
+      "line": {
+        "younger": "Grace is God's love that we do not have to earn. Seven pictures show what it is, what it cost, and what it does in a person.",
+        "older": "Grace in seven pictures: a gift and not a wage, given while we were still sinners, received with empty hands, never a licence, enough for each day, and meant to be passed on."
+      },
+      "mark": "grace",
+      "frames": 7,
+      "stops": [
+        "cross"
+      ],
+      "cards": [
+        "cross"
+      ]
+    },
+    {
+      "slug": "faith",
+      "title": "Faith: trusting the one who promised",
+      "group": "beliefs",
+      "status": "finished",
+      "line": {
+        "younger": "Faith is trusting God because he keeps his word. Seven pictures show what faith is, how it grows, and why even a little of it is enough.",
+        "older": "What the Bible means by faith, in seven pictures: trust in the God who has spoken, Abraham under the stars, a father's honest prayer, faith that comes by hearing, faith that acts, and faith that walks on without seeing."
+      },
+      "mark": "faith",
+      "frames": 7,
+      "stops": [
+        "abraham",
+        "jesus"
+      ],
+      "cards": []
+    },
+    {
       "slug": "gospel-in-a-minute",
       "title": "The gospel in a minute",
       "group": "beliefs",
@@ -1696,6 +1795,55 @@
       "cards": [
         "life-to-come"
       ]
+    },
+    {
+      "slug": "john-3-16",
+      "title": "John 3:16 in its chapter",
+      "group": "verses",
+      "status": "finished",
+      "line": {
+        "younger": "One of the best-known verses in the Bible comes from a talk in the dark between Jesus and a teacher named Nicodemus. Seven pictures tell the whole of it.",
+        "older": "John 3:16 read where it was said: a night visit, a new birth, a bronze snake lifted up, the love behind the cross, and what became of the man who came in the dark."
+      },
+      "mark": "john-3-16",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [
+        "cross"
+      ]
+    },
+    {
+      "slug": "psalm-23",
+      "title": "Psalm 23: the LORD is my shepherd",
+      "group": "verses",
+      "status": "finished",
+      "line": {
+        "younger": "One of the best-loved songs in the Bible, one line at a time: a shepherd, green grass, a dark valley, a feast, and a home at the end of the road.",
+        "older": "Psalm 23 read line by line, as the Study Bible's notes read it: the shepherd, the right paths, the valley, the rod and the staff, the host's table, and the house at the end."
+      },
+      "mark": "psalm-23",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": []
+    },
+    {
+      "slug": "romans-8-28",
+      "title": "Romans 8:28: what it promises, and what it does not",
+      "group": "verses",
+      "status": "finished",
+      "line": {
+        "younger": "A verse people say when something sad happens. Seven pictures look closely at what it promises, and at what it does not.",
+        "older": "One of the most quoted verses in the Bible, read in its own chapter: what it does not say, what it does, what the good is, and what the promise rests on."
+      },
+      "mark": "romans-8-28",
+      "frames": 7,
+      "stops": [],
+      "cards": []
     },
     {
       "slug": "who-made-god",

@@ -7,6 +7,11 @@
       "line": "The whole Bible from beginning to end."
     },
     {
+      "id": "stories",
+      "name": "Bible stories",
+      "line": "Stories of the Bible, told as the text itself tells them."
+    },
+    {
       "id": "ideas",
       "name": "Big ideas",
       "line": "Themes that run from the first page to the last."
@@ -15,6 +20,11 @@
       "id": "beliefs",
       "name": "What we believe",
       "line": "What Christians everywhere confess, and where the Bible says it."
+    },
+    {
+      "id": "verses",
+      "name": "Verses to know",
+      "line": "One well-known verse at a time, read in its own chapter."
     },
     {
       "id": "questions",
@@ -27,11 +37,15 @@
     { "slug": "bible-in-a-minute", "title": "The Bible in a minute", "group": "story", "status": "finished" },
     { "slug": "sixty-six-books", "title": "How the 66 books fit together", "group": "story", "status": "finished" },
 
+    { "slug": "the-exodus", "title": "The Exodus: out of Egypt", "group": "stories", "status": "finished" },
+    { "slug": "david-and-goliath", "title": "David and Goliath", "group": "stories", "status": "finished" },
+
     { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
     { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },
     { "slug": "the-king", "title": "The king", "group": "ideas", "status": "finished" },
     { "slug": "covenant", "title": "Promises that build: the covenants", "group": "ideas", "status": "finished" },
     { "slug": "the-lamb", "title": "Sacrifice and the Lamb", "group": "ideas", "status": "finished" },
+    { "slug": "why-blood", "title": "Sacrifice: why blood?", "group": "ideas", "status": "finished" },
     { "slug": "exile-and-home", "title": "Exile and coming home", "group": "ideas", "status": "finished" },
     { "slug": "all-nations", "title": "A blessing for all nations", "group": "ideas", "status": "coming" },
     { "slug": "kingdom-of-god", "title": "The kingdom of God", "group": "ideas", "status": "finished" },
@@ -44,6 +58,8 @@
     { "slug": "why-jesus-died", "title": "Why did Jesus die?", "group": "beliefs", "status": "finished" },
     { "slug": "the-resurrection", "title": "The resurrection", "group": "beliefs", "status": "finished" },
     { "slug": "how-salvation-works", "title": "How salvation works", "group": "beliefs", "status": "finished" },
+    { "slug": "grace", "title": "Grace: the gift no one earns", "group": "beliefs", "status": "finished" },
+    { "slug": "faith", "title": "Faith: trusting the one who promised", "group": "beliefs", "status": "finished" },
     { "slug": "gospel-in-a-minute", "title": "The gospel in a minute", "group": "beliefs", "status": "finished" },
     { "slug": "spirit-in-a-believer", "title": "The Holy Spirit in a believer", "group": "beliefs", "status": "finished" },
     { "slug": "the-church", "title": "What the church is", "group": "beliefs", "status": "finished" },
@@ -51,6 +67,10 @@
     { "slug": "the-bible", "title": "The Bible: how we got it", "group": "beliefs", "status": "finished" },
     { "slug": "prayer", "title": "Prayer", "group": "beliefs", "status": "finished" },
     { "slug": "life-to-come", "title": "The life to come", "group": "beliefs", "status": "finished" },
+
+    { "slug": "john-3-16", "title": "John 3:16 in its chapter", "group": "verses", "status": "finished" },
+    { "slug": "psalm-23", "title": "Psalm 23: the LORD is my shepherd", "group": "verses", "status": "finished" },
+    { "slug": "romans-8-28", "title": "Romans 8:28: what it promises, and what it does not", "group": "verses", "status": "finished" },
 
     { "slug": "who-made-god", "title": "Who made God?", "group": "questions", "status": "finished" },
     { "slug": "does-god-exist", "title": "Does God exist?", "group": "questions", "status": "finished" },

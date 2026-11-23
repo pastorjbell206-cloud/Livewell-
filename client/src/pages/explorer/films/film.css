@@ -401,13 +401,32 @@
   opacity: 1;
   transition:
     opacity 0.2s ease,
-    stroke-dashoffset 1.6s var(--motion-ease);
+    stroke-dashoffset var(--mv-dur, 1.6s) var(--motion-ease);
+}
+/* A part that arrives part-way through its frame (motion.tsx `at`): the time
+   is written for a spoken frame and fitted to a silent one by --mv-pace,
+   which the player sets. Only arriving is delayed, never going away. */
+.fp-screen .mv-timed.mv-timed.is-on {
+  transition-delay: calc(var(--mv-at, 0s) * var(--mv-pace, 0.28));
 }
 /* The light drawn as a line (Who made God?): mustard, the frame's one mark. */
 .fp-gold {
   fill: none;
   stroke: var(--mustard);
   stroke-width: 5;
+}
+/* The mark on a doorway (Sacrifice: why blood?): plain ink strokes, no more. */
+.fp-mark {
+  fill: none;
+  stroke: var(--art-ink);
+  stroke-width: 6;
+}
+/* The bronze snake on its pole (John 3:16 in its chapter): one clay line. */
+.fp-snake {
+  fill: none;
+  stroke: var(--art-clay);
+  stroke-width: 9;
+  stroke-linecap: round;
 }
 /* A picture crossed out (Who God is: the pictures that break): one ink stroke. */
 .fp-strike {
@@ -488,9 +507,105 @@ html.dark .fp-screen .fp-on-light {
 .fp-screen .mv-from-grow {
   transform: scale(0.55);
 }
+/* A figure walking in from further off, slowly. */
+.fp-screen .mv-from-walk-left {
+  transform: translateX(-90px);
+}
+.fp-screen .mv-from-walk-right {
+  transform: translateX(90px);
+}
+.fp-screen .mv-from-walk-left.is-on,
+.fp-screen .mv-from-walk-right.is-on {
+  transition:
+    opacity 1.2s ease,
+    transform 3.4s var(--motion-ease);
+}
 .fp-screen .mv-fade.is-on {
   opacity: 1;
   transform: none;
+}
+/* The stage's slow camera (motion.tsx stageMotion): it glides from one
+   frame's view to the next, so it never jumps. */
+.fp-screen[data-push] > svg > g {
+  transform-origin: 0 0;
+  transform: var(--mv-cam, none);
+  transition: transform 14s cubic-bezier(0.3, 0.1, 0.3, 1);
+}
+/* Small motions that run while their frame shows, then rest (motion.tsx
+   Ambient). Each ends where it began, so the finished frame is the same. */
+.fp-screen .mv-amb {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.fp-screen .mv-amb-sway,
+.fp-screen .mv-amb-flicker {
+  transform-origin: 50% 100%;
+}
+.fp-screen .mv-amb-drift.is-on {
+  animation: mv-drift 30s ease-in-out 1 both;
+}
+.fp-screen .mv-amb-sway.is-on {
+  animation: mv-sway 5.5s ease-in-out 6 alternate both;
+}
+.fp-screen .mv-amb-flicker.is-on {
+  animation: mv-flicker 1.3s ease-in-out 24 alternate both;
+}
+.fp-screen .mv-amb-twinkle.is-on {
+  animation: mv-twinkle 2.6s ease-in-out 12 alternate both;
+}
+.fp-screen .mv-amb-glow.is-on {
+  animation: mv-glow 4.2s ease-in-out 8 alternate both;
+}
+.fp-screen .mv-amb-bob.is-on {
+  animation: mv-bob 3.4s ease-in-out 10 alternate both;
+}
+@keyframes mv-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--mv-dx, 40px));
+  }
+}
+@keyframes mv-sway {
+  from {
+    transform: rotate(-1.4deg);
+  }
+  to {
+    transform: rotate(1.4deg);
+  }
+}
+@keyframes mv-flicker {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.92, 1.12);
+  }
+}
+@keyframes mv-twinkle {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes mv-glow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.09);
+  }
+}
+@keyframes mv-bob {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-4px);
+  }
 }
 .fp-screen .mv-travel {
   transition: transform 1.8s var(--motion-ease);
@@ -498,12 +613,20 @@ html.dark .fp-screen .fp-on-light {
 .fp-screen.is-still,
 .fp-screen.is-still * {
   transition: none !important;
+  animation: none !important;
+}
+.fp-screen.is-still > svg > g {
+  transform: none !important;
 }
 @media (prefers-reduced-motion: reduce) {
   .fp-screen *,
   .fp-cap,
   .fp-progress__fill {
     transition: none !important;
+    animation: none !important;
+  }
+  .fp-screen > svg > g {
+    transform: none !important;
   }
 }
 

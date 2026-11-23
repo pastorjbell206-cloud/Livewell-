@@ -494,6 +494,8 @@ img{display:block;max-width:100%}
 .pl-k{fill:var(--art-ink)}
 .pl-b{fill:var(--art-blue)}.pl-g{fill:var(--art-olive)}.pl-c{fill:var(--art-clay)}.pl-m{fill:var(--mustard)}
 .pl-hatch{stroke:var(--art-ink)}
+/* The stage set (components/art/stage.tsx): a part drawn at any size keeps the line's weight and the tone's side. */
+.pl-set .pl-o,.pl-set .pl-l{stroke-width:var(--pl-sw,2.25)}.pl-set .pl-f{stroke-width:var(--pl-sf,1.1)}.pl-off{transform:translate(var(--pl-ox,2.5px),var(--pl-oy,1.9px))}
 .lw-roundel{display:block;width:100%;height:auto}
 .lw-frame-fig{margin:0;min-width:0}
 .lw-frame{position:relative;display:block;border:1.5px solid var(--art-ink);padding:5px;background:var(--art-paper)}

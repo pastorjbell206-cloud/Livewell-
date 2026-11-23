@@ -1,0 +1,114 @@
+{
+  "slug": "psalm-23",
+  "title": "Psalm 23: the LORD is my shepherd",
+  "group": "verses",
+  "status": "finished",
+  "mark": "psalm-23",
+  "line": {
+    "younger": "One of the best-loved songs in the Bible, one line at a time: a shepherd, green grass, a dark valley, a feast, and a home at the end of the road.",
+    "older": "Psalm 23 read line by line, as the Study Bible's notes read it: the shepherd, the right paths, the valley, the rod and the staff, the host's table, and the house at the end."
+  },
+  "poster": "In dry hill country a shepherd with a crook walks ahead of his flock, and the sheep follow him along a path.",
+  "frames": [
+    {
+      "id": "shepherd",
+      "name": "My shepherd",
+      "still": "In dry hill country a shepherd with a crook walks ahead of his flock, and the sheep follow him along a path.",
+      "younger": "A long time ago, a shepherd named David, who became a king, wrote a song about God. He knew what a good shepherd does for his sheep. And he said: that is what God is like for me.",
+      "older": "This is a psalm of trust, and its first line is a king calling himself a sheep. Shepherding in Judah was hard, dangerous work in dry country, and David had done it.",
+      "verse": {
+        "ref": "Psalm 23:1",
+        "text": "The LORD is my shepherd; I shall not want."
+      }
+    },
+    {
+      "id": "pastures",
+      "name": "Green pastures",
+      "still": "Sheep lie down in green grass beside a still pool under an olive tree, and the shepherd sits near them.",
+      "younger": "A good shepherd finds green grass and quiet water for his sheep. Sheep will not lie down unless they are fed and feel safe. God gives rest like that.",
+      "older": "Green pastures and quiet waters were places a shepherd had to find, sometimes across long distances, and sheep will not lie down unless they are fed and unafraid.",
+      "verse": {
+        "ref": "Psalm 23:2-3",
+        "text": "He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul"
+      }
+    },
+    {
+      "id": "valley",
+      "name": "The dark valley",
+      "still": "A narrow path runs between two high, dark cliffs. The shepherd walks it with his staff, and the sheep keep close behind him.",
+      "younger": "Sometimes the path goes through a dark valley. The song does not say the sheep never go there. It says they are not alone there. And here David stops talking about God and starts talking to him: You are with me.",
+      "older": "The psalm does not promise a road around the valley. It promises company in it. And the grammar turns. Until now David has spoken about God. At the darkest point he speaks to him.",
+      "verse": {
+        "ref": "Psalm 23:4",
+        "text": "Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me"
+      }
+    },
+    {
+      "id": "rod",
+      "name": "The rod and the staff",
+      "still": "The shepherd stands between his flock and a dark thicket, a club in his hand. With his crook he reaches down to a lamb caught on a ledge.",
+      "younger": "The shepherd carries two things. The rod is a club for driving off wild animals. The staff is a long stick for guiding sheep and pulling them out of trouble. To a sheep they both say the same thing: someone strong is looking after me.",
+      "older": "The rod was a club for driving off predators, and the staff a longer stick for guiding and rescuing sheep. Comfort here is not softness. It is someone armed and attentive, standing between the flock and whatever hunts it.",
+      "verse": {
+        "ref": "Psalm 23:4",
+        "text": "Your rod and Your staff, they comfort me."
+      }
+    },
+    {
+      "id": "table",
+      "name": "A table and a full cup",
+      "still": "Inside an open tent a host stands at a low table set with food and a full gold cup, welcoming a guest who sits there. Far outside, two men with spears stand and watch.",
+      "younger": "Now the picture changes. God is like a kind host who welcomes a guest into his tent, sets out a feast, and fills the cup to the top. The guest is safe, even with enemies outside.",
+      "older": "The picture shifts from shepherd to host. A host who received a guest into his tent was bound to protect him. To spread a table in the presence of enemies is to welcome a fugitive as an honored guest while those who want to harm him look on.",
+      "verse": {
+        "ref": "Psalm 23:5",
+        "text": "You prepare a table before me in the presence of my enemies. You anoint my head with oil; my cup overflows."
+      }
+    },
+    {
+      "id": "house",
+      "name": "All the days of my life",
+      "still": "A traveller walks a road toward a house on a hill with one window lit. Two doves fly along behind him.",
+      "younger": "The song ends looking ahead. Goodness and mercy will follow David every day of his life. And at the end of the road is home: God's own house, for ever.",
+      "older": "The last verse reverses the chase. Enemies pursued him; now goodness and mercy will follow him, and the word can mean pursue. The psalm that began in a field ends in a house.",
+      "verse": {
+        "ref": "Psalm 23:6",
+        "text": "Surely goodness and mercy will follow me all the days of my life, and I will dwell in the house of the LORD forever."
+      }
+    },
+    {
+      "id": "good-shepherd",
+      "name": "The good shepherd",
+      "still": "Morning. Jesus stands with a crook in his hand and a lamb beside him, sheep at his feet. Far behind him is a hill with an empty cross in the rising sun.",
+      "younger": "Many years later Jesus said, I am the good shepherd. He walks with his sheep through the dark valley. And he went into death for them, and came out alive.",
+      "older": "Jesus took up this psalm's central image and applied it to himself. What the New Testament adds is this: the shepherd who walks with his sheep through the valley of the shadow of death is the one who went into death for them.",
+      "verse": {
+        "ref": "John 10:11",
+        "text": "I am the good shepherd. The good shepherd lays down His life for the sheep."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Which line of the song would you most like to remember when you are afraid? Why that one?",
+    "older": "At the darkest point David stops talking about God and starts talking to him. When has that turn been hard for you to make, and when has it happened?"
+  },
+  "read": [
+    { "label": "Psalm 23", "href": "/study/bible/psalms/23" },
+    { "label": "Ezekiel 34", "href": "/study/bible/ezekiel/34" },
+    { "label": "John 10", "href": "/study/bible/john/10" }
+  ],
+  "stops": ["kingdom"],
+  "cards": [],
+  "care": "If someone you love has died, or if thinking about death makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Psalm 23 in the Study Bible", "href": "/study/bible/psalms/23" },
+    { "label": "John 10 in the Study Bible: the good shepherd", "href": "/study/bible/john/10" },
+    { "label": "Prayer (a moving picture)", "href": "/study/explorer/watch/prayer" },
+    { "label": "Why does God seem silent sometimes? (a moving picture)", "href": "/study/explorer/watch/god-silent" },
+    { "label": "When You Are Afraid: what the Bible says", "href": "/wisdom/fear-and-courage" },
+    { "label": "When You Are Facing Death: what the Bible says", "href": "/wisdom/facing-death" },
+    { "label": "Grief and Loss: what the Bible says", "href": "/wisdom/grief" },
+    { "label": "Peace and Calm: what the Bible says", "href": "/wisdom/peace" }
+  ],
+  "end": { "label": "Read Psalm 23 in the Study Bible", "href": "/study/bible/psalms/23" }
+}

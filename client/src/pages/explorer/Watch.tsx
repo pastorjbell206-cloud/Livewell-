@@ -1,7 +1,8 @@
 /**
  * "Watch and learn": the Bible Explorer's moving pictures, as the map lists
- * them (client/public/explorer/films.json, through index.json). Four groups:
- * the big story, big ideas, what we believe, good questions. A finished film
+ * them (client/public/explorer/films.json, through index.json). Six groups:
+ * the big story, Bible stories, big ideas, what we believe, verses to know,
+ * good questions. A finished film
  * opens its own page; one not made yet is named, with no link.
  *
  * WatchLinks is the small list a stop's page shows of the films that belong
