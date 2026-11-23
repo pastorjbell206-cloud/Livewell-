@@ -1,0 +1,123 @@
+{
+  "slug": "grace",
+  "title": "Grace: the gift no one earns",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "grace",
+  "line": {
+    "younger": "Grace is God's love that we do not have to earn. Seven pictures show what it is, what it cost, and what it does in a person.",
+    "older": "Grace in seven pictures: a gift and not a wage, given while we were still sinners, received with empty hands, never a licence, enough for each day, and meant to be passed on."
+  },
+  "poster": "In a village square at evening, a landowner puts a coin into a worker's hand, and near them a father holds out a loaf of bread to his child.",
+  "frames": [
+    {
+      "id": "gift",
+      "name": "A wage or a gift?",
+      "still": "In a village square at evening, a landowner puts a coin into a worker's hand. Near them a father holds out a loaf of bread to his child.",
+      "younger": "A wage is what you are paid for your work. A gift is different: someone gives it because they love you. The Bible has a word for the greatest gift there is. The word is grace: God's love that we do not have to earn.",
+      "older": "A wage is owed. A gift is not. The Bible's word for the gift is grace: the free and undeserved favor of God, who gives sinners what they could never earn and forgives what they could never repay.",
+      "verse": {
+        "ref": "Romans 6:23",
+        "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord."
+      }
+    },
+    {
+      "id": "vineyard",
+      "name": "The late workers",
+      "still": "A vineyard at sunset. The owner pays a worker who has only just come, while two workers who have been there all day stand by with their tools, and one of them points.",
+      "younger": "Jesus told a story. A man hired workers for his vineyard, some at sunrise and some when the day was almost over. At evening he paid them all the same. The first workers grumbled. But nobody was cheated. The owner was simply generous.",
+      "older": "Jesus told of a landowner who paid those who had worked one hour the same as those who had worked twelve. The early workers grumbled, and he answered that he had wronged no one. Grace offends anyone who is keeping count.",
+      "verse": {
+        "ref": "Matthew 20:15",
+        "text": "Or are you envious because I am generous?"
+      }
+    },
+    {
+      "id": "while",
+      "name": "While we were still sinners",
+      "still": "A hill with an empty cross and the sun rising behind it. Below, people are walking away with their backs to the hill.",
+      "younger": "God did not wait for people to be good before he loved them. While we were still doing wrong, and walking away from him, Jesus died for us. That is how far grace goes.",
+      "older": "Grace is not God grading on a curve. He did not wait for sinners to put things right. He paid the debt himself, while we were still his enemies. The cross is what the gift cost.",
+      "verse": {
+        "ref": "Romans 5:8",
+        "text": "But God proves His love for us in this: While we were still sinners, Christ died for us."
+      }
+    },
+    {
+      "id": "hands",
+      "name": "Empty hands",
+      "still": "A person kneels with both hands held open, and light comes down from above. A pair of scales lies set aside on the ground.",
+      "younger": "You cannot buy grace, and you cannot win it by being good enough. You can only receive it, the way you receive a present, by trusting Jesus. Faith is like empty hands held out.",
+      "older": "So salvation is received, never achieved: by grace, through faith, not by works. Faith is not the one good deed that earns it. Faith is the empty hand that takes what is given.",
+      "verse": {
+        "ref": "Ephesians 2:8-9",
+        "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast."
+      }
+    },
+    {
+      "id": "new-way",
+      "name": "Not a licence",
+      "still": "A broken chain lies on the ground behind a person who walks along a road toward an olive tree heavy with fruit.",
+      "younger": "Does grace mean it does not matter what we do? No. Grace forgives us, and then it changes us. When you know how much you have been loved, you want to live a new way.",
+      "older": "Does that make sin safe? Paul heard the question and answered it at once. The grace that forgives also teaches. Good works are not the root of salvation. They are its fruit.",
+      "verse": {
+        "ref": "Romans 6:1-2",
+        "text": "Shall we continue in sin so that grace may increase? Certainly not!"
+      }
+    },
+    {
+      "id": "enough",
+      "name": "Enough for today",
+      "still": "A man sits writing on a scroll by lamplight, his staff leaning beside him, with the night sky in the window.",
+      "younger": "Grace is not only for the day you first trust Jesus. It is for every day after: when you are weak, when you fail, when things are hard. God said to Paul, “My grace is sufficient for you.”",
+      "older": "And grace does not stop at the door. Paul pleaded three times for a weakness to be taken away, and it was not. He was given this instead: grace enough for the day, and God's power at its clearest where ours runs out.",
+      "verse": {
+        "ref": "2 Corinthians 12:9",
+        "text": "My grace is sufficient for you, for My power is perfected in weakness."
+      }
+    },
+    {
+      "id": "pass-on",
+      "name": "Passed on",
+      "still": "Outside a house, two people reach out to each other to make peace, and beside them a child shares bread with another child at a low table.",
+      "younger": "People who have been given grace can give it away. We forgive, because God forgave us. We share, because everything we have was a gift.",
+      "older": "The gift is meant to travel. People who know they have been forgiven forgive. People who know that everything they have was given, give. In the church no one has anything they did not receive.",
+      "verse": {
+        "ref": "Ephesians 4:32",
+        "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you."
+      }
+    }
+  ],
+  "think": {
+    "younger": "What is the difference between a wage and a gift? Which one is grace?",
+    "older": "In Jesus' story, why were the first workers angry? Where do you catch yourself keeping count with God?"
+  },
+  "read": [
+    { "label": "Matthew 20", "href": "/study/bible/matthew/20" },
+    { "label": "Romans 5", "href": "/study/bible/romans/5" },
+    { "label": "Romans 6", "href": "/study/bible/romans/6" },
+    { "label": "2 Corinthians 12", "href": "/study/bible/2-corinthians/12" },
+    { "label": "Ephesians 2", "href": "/study/bible/ephesians/2" },
+    { "label": "Ephesians 4", "href": "/study/bible/ephesians/4" },
+    { "label": "Titus 2", "href": "/study/bible/titus/2" }
+  ],
+  "stops": ["cross"],
+  "cards": ["cross"],
+  "care": "Thinking about sin can bring up guilt or fear. Nobody is too bad to be forgiven, and nobody has to carry it alone. Talk with a parent, a pastor or a leader you trust, or look at Find Help.",
+  "differ": {
+    "text": "All Christians confess that salvation is God's gift, received by grace and not earned. They differ on how God's grace and the human will relate, and on how grace is received: by faith alone, or by faith with the sacraments and the life of the church. This moving picture takes no side. The readings are set out in",
+    "links": [
+      { "label": "the Study Bible's study of salvation", "href": "/study/bible/doctrines/salvation" }
+    ]
+  },
+  "deeper": [
+    { "label": "How salvation works (a moving picture)", "href": "/study/explorer/watch/how-salvation-works" },
+    { "label": "The family catechism: what is grace?", "href": "/family/catechism#q35" },
+    { "label": "Salvation: what the Bible teaches, and where Christians differ", "href": "/study/bible/doctrines/salvation" },
+    { "label": "Ephesians 2 in the Study Bible: by grace, through faith", "href": "/study/bible/ephesians/2" },
+    { "label": "Grace and Works: what the Bible says", "href": "/wisdom/grace-and-works" },
+    { "label": "Legalism and Rule-Keeping: what the Bible says", "href": "/wisdom/legalism" },
+    { "label": "When You Cannot Forgive: what the Bible says", "href": "/wisdom/forgiveness" }
+  ],
+  "end": { "label": "Read Ephesians 2 in the Study Bible", "href": "/study/bible/ephesians/2" }
+}

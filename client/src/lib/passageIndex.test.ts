@@ -90,7 +90,11 @@ describe("the passage index", () => {
 
   it("groups a chapter's rows by kind, in order, leaving out kinds with nothing", () => {
     const groups = groupRows(read("john/3")!);
-    expect(groups[0].name).toBe("Honest Answers");
+    // A moving picture comes first where a chapter has one (John 3:16 in its
+    // chapter), then the Honest Answers.
+    expect(groups[0].name).toBe("Watch and learn: moving pictures");
+    expect(groups[0].rows).toContainEqual({ k: "film", t: "John 3:16 in its chapter", h: "/study/explorer/watch/john-3-16", p: "John 3:2" });
+    expect(groups[1].name).toBe("Honest Answers");
     expect(groups.every((g) => g.rows.length > 0)).toBe(true);
     expect(groupRows([])).toEqual([]);
   });

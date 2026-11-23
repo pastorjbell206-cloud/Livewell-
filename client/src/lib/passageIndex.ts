@@ -9,6 +9,7 @@
  */
 
 export type PassageKind =
+  | "film"
   | "question"
   | "doctrine"
   | "history"
@@ -33,6 +34,7 @@ export interface PassageRow {
 
 /** The kinds in the order a chapter lists them, each under the name the site gives that library. */
 export const PASSAGE_KINDS: { k: PassageKind; name: string }[] = [
+  { k: "film", name: "Watch and learn: moving pictures" },
   { k: "question", name: "Honest Answers" },
   { k: "doctrine", name: "What Christians believe" },
   { k: "history", name: "Church history" },

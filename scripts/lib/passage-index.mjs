@@ -80,7 +80,7 @@ export const OUT_DIR = path.join(PUB, "index/chapters");
 export const LIST_FILE = path.join(PUB, "index/chapters.json");
 
 /** The kinds, in the order a chapter lists them. */
-export const KIND_ORDER = ["question", "doctrine", "history", "background", "guide", "devotion", "catechism", "care", "plan", "wisdom", "essay", "practice", "tool"];
+export const KIND_ORDER = ["film", "question", "doctrine", "history", "background", "guide", "devotion", "catechism", "care", "plan", "wisdom", "essay", "practice", "tool"];
 
 /** A reference over more chapters than this names a book or a long stretch, not a passage. */
 export const MAX_SPAN = 4;
@@ -285,6 +285,30 @@ function passageGuides() {
   });
 }
 
+/**
+ * The Bible Explorer's moving pictures: a finished film is offered on each
+ * chapter one of its pictures quotes, and on the chapters it sends the reader
+ * to ("Where the Bible says it").
+ */
+function films() {
+  const { films: list } = readJson("explorer/films.json");
+  return list
+    .filter((f) => f.status === "finished" && exists(`explorer/films/${f.slug}.json`))
+    .map((f) => {
+      const film = readJson(`explorer/films/${f.slug}.json`);
+      const read = (film.read ?? []).flatMap((r) => {
+        const m = String(r.href ?? "").match(/^\/study\/bible\/([a-z0-9-]+)\/(\d+)$/);
+        return m ? [{ slug: m[1], chapter: +m[2], label: r.label }] : [];
+      });
+      return {
+        kind: "film",
+        title: f.title,
+        href: `/study/explorer/watch/${f.slug}`,
+        at: [...(film.frames ?? []).flatMap((fr) => fieldRefs(fr.verse?.ref)), ...read],
+      };
+    });
+}
+
 /** The listed tools by id, from toolsList.ts read as text (it imports icons a script cannot use). */
 export function listedTools() {
   const src = fs.readFileSync(path.join(ROOT, "client/src/lib/toolsList.ts"), "utf8");
@@ -310,6 +334,7 @@ function toolOffers() {
 /** Every item from every library, with the chapters it treats. */
 export function collectItems() {
   return [
+    ...films(),
     ...answers(),
     ...doctrines(),
     ...history(),

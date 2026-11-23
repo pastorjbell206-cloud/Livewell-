@@ -11,13 +11,14 @@
  */
 import { useEffect, useId, useState } from "react";
 import { Link } from "wouter";
-import { BookMarked, Baby, ChevronDown, Feather, FileText, Hammer, Landmark, LifeBuoy, Lightbulb, Map as MapIcon, MessageCircleQuestion, Milestone, Moon, Users, type LucideIcon } from "lucide-react";
+import { BookMarked, Baby, ChevronDown, Feather, FileText, Hammer, Landmark, LifeBuoy, Lightbulb, Map as MapIcon, MessageCircleQuestion, Milestone, Moon, Play, Users, type LucideIcon } from "lucide-react";
 
 import { fetchChapterIndex, groupRows, type PassageKind, type PassageRow } from "@/lib/passageIndex";
 import "./go-deeper.css";
 
 /** The same icon each library has in the site's menus (lib/siteCatalog.ts). */
 const ICONS: Record<PassageKind, LucideIcon> = {
+  film: Play,
   question: MessageCircleQuestion,
   doctrine: Lightbulb,
   history: Landmark,

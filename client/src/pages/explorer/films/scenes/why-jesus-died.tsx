@@ -22,8 +22,9 @@
  */
 import type { ReactNode } from "react";
 import { Roundel, Shape } from "../../art";
-import { Draw, Fade, Travel, type FilmDrawing } from "../motion";
-import { Flame, Seated, Standing, ring } from "./figures";
+import { Cloud, Cypress, Olive, Palm, Stars } from "@/components/art/stage";
+import { Ambient, Draw, Fade, Travel, type FilmDrawing } from "../motion";
+import { Flame, Robed, Seated, ring } from "./figures";
 
 /** The far hill and its cross (or three), as the Cross stop draws them. */
 function Hill({ three = false }: { three?: boolean }) {
@@ -124,9 +125,22 @@ const BUNDLES: [number, number][] = [
   [240, 336],
 ];
 
+/** Where the stage pushes in, frame by frame: on the cross, the door, the way through. */
+const PUSH: [number, number, number][] = [
+  [480, 230, 1.2],
+  [400, 280, 1.2],
+  [450, 380, 1.3],
+  [480, 300, 1.15],
+  [400, 300, 1.2],
+  [400, 240, 1.12],
+  [400, 330, 1.25],
+  [400, 250, 1.04],
+];
+
 const film: FilmDrawing = {
   w: 800,
   h: 500,
+  push: frame => PUSH[frame] ?? null,
   draw: (h, frame) => {
     const k = frame + 1;
     return (
@@ -157,6 +171,16 @@ const film: FilmDrawing = {
           </g>
         </Fade>
 
+        {/* A heavy cloud over the hill, and cypresses by the road. */}
+        <Fade frame={frame} on={0} off={1} at={4}>
+          <Ambient frame={frame} on={0} off={1} kind="drift" dx={-70}>
+            <Cloud x={620} y={84} s={1.5} />
+            <path fill={h.h1} d="M566,84h108v-16h-108Z" />
+          </Ambient>
+          <Cypress x={706} y={436} s={0.9} hatch={h.hs} />
+          <Cypress x={748} y={444} s={1.1} hatch={h.hs} />
+        </Fade>
+
         {/* 1. The Passover lamb: a house at night, a lamb by its door, a lamp in the window. */}
         <Fade frame={frame} on={1} off={2}>
           <path fill={h.h1} d="M0,0H800V360H0Z" />
@@ -185,6 +209,23 @@ const film: FilmDrawing = {
               off={1.5}
             />
           </g>
+        </Fade>
+
+        {/* The night sky over the house, and a palm beside it. */}
+        <Fade frame={frame} on={1} off={2} at={3}>
+          <Ambient frame={frame} on={1} off={2} kind="twinkle">
+            <Stars
+              at={[
+                [70, 70, 5],
+                [200, 44, 4],
+                [330, 90, 5],
+                [610, 56, 5],
+                [720, 120, 4],
+                [520, 30, 4],
+              ]}
+            />
+          </Ambient>
+          <Palm x={690} y={424} s={1.25} />
         </Fade>
 
         {/* 2. A ransom: a walled yard, its door open, people walking out free. */}
@@ -218,14 +259,23 @@ const film: FilmDrawing = {
             from="left"
             delay={600 + n * 300}
           >
-            <Standing
+            <Robed
               x={x}
               y={360 - n * 4}
               tone={(["b", "g", "c"] as const)[n]}
               s={0.95 - n * 0.06}
+              head={(["cloth", "veil", "cloth"] as const)[n]}
+              pose="walk"
             />
           </Fade>
         ))}
+
+        {/* Outside, an olive tree in the light. */}
+        <Fade frame={frame} on={2} off={3} at={5}>
+          <Ambient frame={frame} on={2} off={3} kind="sway">
+            <Olive x={726} y={414} s={1.5} hatch={h.h2} />
+          </Ambient>
+        </Fade>
 
         {/* 3. In our place: bundles carried from the people to the cross on the hill. */}
         <Fade frame={frame} on={3} off={4}>
@@ -239,11 +289,12 @@ const film: FilmDrawing = {
             d="M140,310C260,230 420,220 600,250"
           />
           {BUNDLES.map(([x], n) => (
-            <Standing
+            <Robed
               key={x}
               x={x}
               y={338}
               tone={(["b", "g", "c"] as const)[n]}
+              head={(["cloth", "veil", "cloth"] as const)[n]}
             />
           ))}
         </Fade>
@@ -267,6 +318,13 @@ const film: FilmDrawing = {
             </Travel>
           </Fade>
         ))}
+
+        {/* A cloud going over. */}
+        <Fade frame={frame} on={3} off={4}>
+          <Ambient frame={frame} on={3} off={4} kind="drift" dx={80}>
+            <Cloud x={130} y={96} s={1.3} />
+          </Ambient>
+        </Fade>
 
         {/* 4. Victory: the gate of death fallen flat; light through the way. */}
         <Fade frame={frame} on={4} off={5}>
