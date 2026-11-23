@@ -1413,3 +1413,16 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | anger-at-god | Psalm 13: permission to ask how long four times; faith arguing with God because it still believes he is there; pray all six verses, say verse 5 as the church's words; Psalm 88 never turns | plain psalms/13 1-6 hard and asks |
 | anger-at-god | Psalm 22 ends in praise widening to a people not yet born; remembering gives the pain somewhere to go | note psalms/22 summary; plain psalms/22 1-11 asks |
 | anger-at-god | Care lines | plain ruth/1 |
+| exhaustion | Jesus sleeps in the stern on the cushion through a storm; his sleep not flight from God as Jonah's, but trust | note mark/4 verses 37-38; Mark 4:1, 35 |
+| exhaustion | Weaknesses are human frailties, not sins; Christ knows tiredness, hunger, grief, fear and pain from the inside; come with confidence | plain hebrews/4 14-16 hard; note hebrews/4 verse 16 |
+| exhaustion | Willing spirit, weak flesh names the gap between intention and strength; Jesus names their weakness gently and does not stop loving them | note matthew/26 verses 40-41; plain matthew/26 36-46 asks |
+| exhaustion | David became exhausted; Abishai came to his aid; his men swore he would not go out to battle again; four brief battle reports end the chapter | 2 Samuel 21:15-17; note 2-samuel/21 summary |
+| exhaustion | Aaron and Hur hold up Moses' hands; whose arms could you hold up, have you let anyone hold up yours | Exodus 17:11-12; plain exodus/17 8-13 asks |
+| exhaustion | Jacob declines by pointing to the weakest; a leader sets the pace by the weakest member; God leads his flock so (Isaiah 40:11) | note genesis/33 verses 12-14 |
+| exhaustion | Psalm 3's heading: David fleeing Absalom; he sleeps and wakes, the LORD sustains him; name what you fear tonight and hand it over | note psalms/3 summary; plain psalms/3 5-8 asks |
+| exhaustion | A traveler looks to the hills; the Protector never sleeps when you cannot | note psalms/121 summary; plain psalms/121 3-8 asks |
+| exhaustion | The Servant brings justice quietly and gently; Matthew applies the song to Jesus | note isaiah/42 summary; Matthew 12:18-21 |
+| exhaustion | The Spirit intercedes; a comfort to anyone who cannot find words; weakness in prayer is expected; a wordless sigh | note romans/8 verse 26; plain romans/8 18-27 asks |
+| exhaustion | Isaiah 40:30-31: even youths tire; the chapters speak to people in exile, worn out in a foreign land; strength exchanged, not generated; the sequence ends in the ordinary daily walk | note isaiah/40 hard and verses 29-31 |
+| exhaustion | Psalm 127: does not tell you to stop working; worry not the same as work; sleep is a gift | plain psalms/127 1-2 asks |
+| exhaustion | Care lines | plain matthew/11; plain psalms/77 |
