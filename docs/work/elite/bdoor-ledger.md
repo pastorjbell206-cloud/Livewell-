@@ -16471,3 +16471,16 @@ Cut in chapter 24: 1 Peter 2:23, Luke 6:27-28 and David's restraint as a reflect
 | The care line (‘A word for anyone who was not protected by a parent...’ to ‘...lists places to turn.’) | 36-44 `hard` | genesis/plain/19.json and judges/plain/11.json (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 25: 1 Peter 2:23 and Abigail as a faint picture of intercession (the deep note says the text does not press it and calls the link thematic); a pun on Calebite and the word for dog (one reading, not needed); the measure of a seah (not needed).
+
+## The plain notes on 1 Samuel 26 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second sparing, David taking the initiative; the Wilderness of Ziph southeast of Hebron and the Ziphites' earlier report (23:19); the standing force and Abner as Saul's cousin (14:50); Ahimelech the Hittite and foreigners in David's band; Abishai son of Zeruiah, David's nephew, and his brothers; the spear as almost a scepter and the spear thrown at David and Jonathan; the water jug in the desert; tardemah as with Adam and Abram, the sleep the LORD's doing; the lesson of Nabal | 1-12 | 1-samuel/26.json `story`, `historical`, `cultural`, `words` (tardemah), `doctrines` (sovereignty) | Repository |
+| Genesis 2:21; Genesis 15:12; 1 Chronicles 2:16 | 1-12 | 1-samuel/26.json `words` (tardemah), `historical`; BSB | Repository; BSB text |
+| The deliberate parallel with chapter 24 and its differences; the irony of the taunt to Abner; the inheritance of the LORD, worship among God's people, not a God limited to one land, exile as spiritual loss; the partridge hunted on foot; ‘I have played the fool’ and 13:13; no lasting change; the last meeting | 13-25 | 1-samuel/26.json `literary`, `cultural`, `words` (nachalah, tsedaqah), `doctrines` (repentance), `story` | Repository |
+| Psalm 42:2, a psalm of the sons of Korah, and 2 Samuel 1:23 | 13-25 | psalms/plain/42.json (the heading, ‘of the sons of Korah’); BSB | BSB text (Psalm 42:2 a thematic line within the Old Testament, not said to be David's) |
+
+Cut in chapter 26: Philippians 2:6-11 and Jesus telling Peter to put away his sword (the deep note calls it a pattern of character, not a prediction or a line the New Testament draws to this chapter); Uriah the Hittite (left to 2 Samuel); 26:19 quoted not at all, since its words of a curse and its closing quotation sit inside David's speech.
