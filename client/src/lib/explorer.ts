@@ -82,7 +82,13 @@ export interface Card {
 // ── Watch and learn: the moving pictures ─────────────────────────────────
 
 /** The four groups the moving pictures are listed under, in this order. */
-export type FilmGroup = "story" | "ideas" | "beliefs" | "questions";
+export type FilmGroup =
+  | "story"
+  | "stories"
+  | "ideas"
+  | "beliefs"
+  | "verses"
+  | "questions";
 
 /** A moving picture as the map lists it (index.json, from films.json and each film's file). */
 export interface FilmSummary {

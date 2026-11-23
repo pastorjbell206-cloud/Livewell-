@@ -40,6 +40,42 @@ for shade, one mustard mark. Add its name to `PlateName` and its entry to
 books, letter, jars, tomb, table, arch; and, drawn for the page heads, lens (a
 reading glass over a scroll), sundial (a day at a time) and lectern (speaking).
 
+## The stage set (pictures that tell a story)
+
+`stage.tsx` is a cast and a setting in the same hand, for the Bible
+Explorer's moving pictures and any plate that shows people in a place.
+
+- **The cast.** `Person` is one robed figure of the ancient Near East, drawn
+  with dignity and without a face: a long robe (`robe`), an outer cloak
+  (`cloak`), a head cloth with its band, a veil, a bare head, a crown or a
+  helmet (`head`), and a pose (`stand`, `walk`, `hold`, `reach`, `open`,
+  `pray`, `kneel`, `sit`, `bow`), with a staff, a crook or a spear, a bundle
+  on the back, or a child's build. Skin is the clay tone for every figure
+  alike. A figure is placed by where its feet stand and is about 100 units
+  tall at size 1. Keep a person's robe, cloak and head the same in every frame
+  of a film, so the same person is recognised. Jesus is drawn as the films
+  have always drawn him: one plain figure among the others, no face, no halo.
+  No people is ever drawn by caricature.
+- **The setting.** Sky: `Sun`, `Moon`, `Stars`, `Cloud`, `Rays`. Land:
+  `Hills`, `Mountain`, `Water`. What grows: `Palm`, `Olive`, `Cypress`,
+  `Grass`, `Wheat`. What is built: `Tent`, `House`, `CityWall`, `Well`,
+  `Altar`, `Jar`, `Lamp`, `Scroll`, `Boat`, `Table`. Animals: `Sheep` (and a
+  lamb), `Dove`, `Donkey`.
+- **How a part is placed.** `Place` puts a part at a point, at a size, turned
+  left or right; `Ink` is one shape in the hand inside it; `Scaled` draws a
+  whole group larger or smaller. At any size the line keeps its weight and the
+  tone keeps its side (`.pl-set`, `.pl-off` in `index.css`).
+- **Mustard.** The stage set never uses it by itself. A picture's one mustard
+  mark is the drawing's own choice: pass `gold` to the sun, a lamp's flame, a
+  lit window or a crown.
+- **Motion** belongs to the films (`pages/explorer/films/motion.tsx`,
+  `film.css`), CSS only, and none of it runs with motion turned off: parts
+  that arrive part-way through a spoken frame (`at`), lines that take seconds
+  to draw (`slow`), small motions that run and then rest (`Ambient`: drift,
+  sway, flicker, twinkle, glow, bob), a figure walking in (`walk-left`,
+  `walk-right`), and a slow camera (`push`) that glides from one frame's view
+  to the next.
+
 ## The page parts
 
 - `PageHead.tsx`: the one page top for the whole site. A small label naming

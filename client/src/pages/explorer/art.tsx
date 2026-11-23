@@ -629,6 +629,118 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M30,18l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
     </>
   ),
+  /* Sacrifice: why blood?: an altar of rough stones, a small gold flame on it. */
+  "why-blood": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M20,84L24,68H76L80,84Z" tone="b" off={1} />
+      <Shape d="M28,68L32,54H68L72,68Z" tone="b" off={1} />
+      <path className="pl-f" d="M40,84V68M60,84V68M50,68V54" />
+      <path
+        className="pl-m"
+        d="M50,26C56,34 60,40 60,46A10,10 0 0 1 40,46C40,40 44,34 50,26Z"
+      />
+      <path
+        className="pl-l"
+        d="M50,26C56,34 60,40 60,46A10,10 0 0 1 40,46C40,40 44,34 50,26Z"
+      />
+    </>
+  ),
+  /* Grace: an empty bowl held up, and a gift coming down into it. */
+  grace: h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M24,56H76C76,78 24,78 24,56Z" tone="c" off={1} />
+      <path className="pl-l" d="M42,74V84M58,74V84M36,84H64" />
+      <path className="pl-f" d="M50,12V20M38,16l3,6M62,16l-3,6" />
+      <path className="pl-m" d="M40,36a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M40,36a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+    </>
+  ),
+  /* Faith: one mustard seed, gold, before a mountain. */
+  faith: h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M30,84L62,26L92,84Z" tone="b" off={1} />
+      <path fill={h} d="M62,26L92,84H68Z" />
+      <path className="pl-l" d="M30,84L62,26L92,84" />
+      <path
+        className="pl-f"
+        strokeDasharray="2 3"
+        d="M12,72a12,12 0 1,0 24,0a12,12 0 1,0 -24,0Z"
+      />
+      <path className="pl-m" d="M19,72a5,5 0 1,0 10,0a5,5 0 1,0 -10,0Z" />
+      <path className="pl-l" d="M19,72a5,5 0 1,0 10,0a5,5 0 1,0 -10,0Z" />
+    </>
+  ),
+  /* David and Goliath: a shepherd's crook, a tall spear, and five smooth stones. */
+  "david-and-goliath": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M74,84V14" />
+      <path className="pl-k" d="M74,4l5,12h-10Z" />
+      <path className="pl-l" d="M28,84V36C28,24 44,24 44,36" />
+      <Shape
+        d="M36,80a6,4 0 1,0 12,0a6,4 0 1,0 -12,0ZM50,82a6,4 0 1,0 12,0a6,4 0 1,0 -12,0ZM44,72a6,4 0 1,0 12,0a6,4 0 1,0 -12,0ZM58,74a6,4 0 1,0 12,0a6,4 0 1,0 -12,0ZM52,64a6,4 0 1,0 12,0a6,4 0 1,0 -12,0Z"
+        tone="c"
+        off={0.8}
+      />
+    </>
+  ),
+  /* Psalm 23: a shepherd's crook, a sheep at rest, and a full gold cup. */
+  "psalm-23": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M24,84V30C24,16 42,16 42,30" />
+      <Shape
+        d="M40,70C34,60 44,52 52,56C56,48 70,50 70,58C80,58 80,72 72,74C68,80 46,80 42,74C36,74 36,72 40,70Z"
+        off={0.8}
+      />
+      <path className="pl-l" d="M46,76V84M66,76V84" />
+      <path className="pl-m" d="M76,40h14l-2,-14h-10Z" />
+      <path className="pl-l" d="M76,40h14l-2,-14h-10ZM80,40v5h6v-5" />
+    </>
+  ),
+  /* Romans 8:28: a heavy cloud, and the sun still behind it, gold. */
+  "romans-8-28": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-f" d="M66,14V8M80,20l5,-4M86,34h6M52,20l-5,-4" />
+      <path className="pl-m" d="M52,34a14,14 0 1,0 28,0a14,14 0 1,0 -28,0Z" />
+      <path className="pl-l" d="M52,34a14,14 0 1,0 28,0a14,14 0 1,0 -28,0Z" />
+      <Shape
+        d="M22,60C10,60 10,44 24,44C24,30 48,26 54,38C62,24 82,30 80,46C92,46 92,60 80,60Z"
+        off={1}
+      />
+      <path fill={h} d="M22,60C12,60 12,50 20,48H80C90,50 88,60 80,60Z" />
+      <path className="pl-f" d="M30,66l-4,10M46,66l-4,10M62,66l-4,10" />
+    </>
+  ),
+  /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
+  "john-3-16": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path
+        className="pl-f"
+        d="M22,20h4M24,18v4M74,28h4M76,26v4M60,12h4M62,10v4"
+      />
+      <Shape
+        d="M24,70C24,80 40,84 52,84C66,84 78,78 80,70L70,66C60,64 36,62 24,70Z"
+        tone="c"
+        off={1}
+      />
+      <path className="pl-l" d="M24,72C12,70 12,84 26,80" />
+      <path className="pl-m" d="M74,66C80,56 84,50 80,40C74,46 68,56 74,66Z" />
+      <path className="pl-l" d="M74,66C80,56 84,50 80,40C74,46 68,56 74,66Z" />
+    </>
+  ),
 };
 
 /** True when a stop has an emblem drawn for it. */

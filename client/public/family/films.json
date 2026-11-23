@@ -25,6 +25,12 @@
    "minutes": 2,
    "by": "name"
   },
+  "faith": {
+   "slug": "faith",
+   "title": "Faith: trusting the one who promised",
+   "minutes": 2,
+   "by": "passage"
+  },
   "caring-for-creation": {
    "slug": "image-of-god",
    "title": "Creation and the image of God",
@@ -83,6 +89,12 @@
    "slug": "spirit-in-a-believer",
    "title": "The Holy Spirit in a believer",
    "minutes": 2,
+   "by": "passage"
+  },
+  "the-good-shepherd": {
+   "slug": "psalm-23",
+   "title": "Psalm 23: the LORD is my shepherd",
+   "minutes": 3,
    "by": "passage"
   },
   "the-prodigal-son": {
@@ -298,9 +310,9 @@
    "by": "named"
   },
   "35": {
-   "slug": "how-salvation-works",
-   "title": "How salvation works",
-   "minutes": 4,
+   "slug": "grace",
+   "title": "Grace: the gift no one earns",
+   "minutes": 3,
    "by": "named"
   },
   "36": {

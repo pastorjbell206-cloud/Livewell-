@@ -3,16 +3,18 @@
  *
  * Each frame of a film (client/public/explorer/films/<slug>.json) is spoken
  * as its `say` text at the reader's level, or, where it has none, its caption;
- * then, if the frame quotes a verse, the verse's reference in words and the
- * verse itself, exactly as it stands under the picture. A caption that reads
+ * then, if the frame quotes a verse, the verse itself, exactly as it stands
+ * under the picture, and then its reference in words: the same parts in the
+ * same order as the recorded voice (scripts/lib/film-speech.mjs; the two are
+ * held together by lib/film-audio.test.ts). A caption that reads
  * badly aloud (a reference in brackets) has a `say` written for it in the
  * film's data; scripts/validate-explorer.mjs holds every spoken line to the
  * same rules as the captions (BSB words exact, no reference left in figures).
  *
- * The voice is the browser's own (window.speechSynthesis), as the essays'
- * Listen and the catechism's "Read it to me" use: nothing is recorded or sent.
- * The same text is the script a person would read to record a film's voice
- * (scripts/export-film-video.mjs takes those recordings).
+ * The voice here is the browser's own (window.speechSynthesis), as the
+ * essays' Listen and the catechism's "Read it to me" use: nothing is recorded
+ * or sent. The player uses it only where a frame's recorded file
+ * (lib/film-audio.ts) cannot be played.
  */
 import type { FilmFrame, Level } from "@/lib/explorer";
 import { readStoredJSON, writeStoredJSON } from "@/lib/storage";
@@ -53,13 +55,30 @@ const squash = (t: string) =>
 const endStop = (t: string) =>
   /[.!?”"]$/.test(t.trim()) ? t.trim() : `${t.trim()}.`;
 
-/** The words one frame says aloud at a level. */
-export function spokenText(frame: FilmFrame, level: Level): string {
+/**
+ * The parts one frame says aloud at a level, in order: the caption (or its
+ * `say`), then the verse and its reference, unless the caption already quotes
+ * the verse (it is not said twice).
+ */
+export function spokenParts(
+  frame: FilmFrame,
+  level: Level
+): { kind: "caption" | "verse" | "ref"; text: string }[] {
   const said = (frame.say?.[level] ?? frame[level]).trim();
-  if (!frame.verse) return said;
-  // A caption that already quotes the frame's verse does not say it twice.
-  if (squash(said).includes(squash(frame.verse.text))) return said;
-  return `${endStop(said)} ${refInWords(frame.verse.ref)}: ${endStop(frame.verse.text)}`;
+  if (!frame.verse || squash(said).includes(squash(frame.verse.text)))
+    return [{ kind: "caption", text: said }];
+  return [
+    { kind: "caption", text: said },
+    { kind: "verse", text: frame.verse.text.trim() },
+    { kind: "ref", text: frame.verse.ref.trim() },
+  ];
+}
+
+/** The words one frame says aloud at a level: caption, verse, then the reference in words. */
+export function spokenText(frame: FilmFrame, level: Level): string {
+  return spokenParts(frame, level)
+    .map(p => endStop(p.kind === "ref" ? refInWords(p.text) : p.text))
+    .join(" ");
 }
 
 export function canSpeak(): boolean {

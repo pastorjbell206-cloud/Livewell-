@@ -33,8 +33,11 @@
  * <dir>/<slug>/<nn>-<frame id>.<wav|mp3|m4a> (nn is the frame's place in the
  * video, 01 upward), and optionally <dir>/<slug>/00-title.* and
  * <dir>/<slug>/99-end.*. A frame with a recording holds until its recording
- * has finished (with a breath after), and the recordings are laid on the
- * track at the start of their frames. docs/work/elite/explorer.md lists the
+ * has finished (with a breath after), its picture moves at the spoken pace
+ * while the words last (as the player's does with Listen on), and the
+ * recordings are laid on the track at the start of their frames. The
+ * recorded voice's own files (client/public/explorer/audio/<slug>/<level>/,
+ * and title.mp3 as 00-title) can be laid out this way in a scratch folder. docs/work/elite/explorer.md lists the
  * words to read for each film. --script prints that list for one film.
  *
  * --poster-only writes just <slug>-poster.jpg (1200 by 630, the opening card),
@@ -269,7 +272,9 @@ async function poster(slug, mode) {
 async function render(slug, shape) {
   const f = film(slug);
   const mode = choose(f);
-  const query = `&level=${mode.level}${mode.cut ? "&cut=share" : ""}`;
+  // With a voice, the export view keeps each part's spoken arrival time
+  // (FilmExport's `spoken`), as the player does with Listen on.
+  const query = `&level=${mode.level}${mode.cut ? "&cut=share" : ""}${voiceDir ? "&pace=spoken" : ""}`;
   const { ctx, page, errors } = await openExport(
     slug,
     shape,
@@ -298,25 +303,28 @@ async function render(slug, shape) {
     });
     return name;
   };
-  /** Move to k, then photograph its motion 1/30 s apart; returns the motion's length in seconds. */
-  const move = async k => {
+  /**
+   * Move to k, then photograph its motion 1/30 s apart, for at most `capMs`;
+   * returns the motion's length in seconds.
+   */
+  const move = async (k, capMs) => {
     await page.evaluate(k => window.__lwExport.show(k), k);
     await page.evaluate(
       () =>
         new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))
     );
-    const endMs = await page.evaluate(() => {
+    const endMs = await page.evaluate(cap => {
       const anims = document.getAnimations();
       anims.forEach(a => a.pause());
       window.__lwAnims = anims;
       return Math.min(
-        3000,
+        cap,
         Math.max(
           0,
           ...anims.map(a => Number(a.effect?.getComputedTiming().endTime) || 0)
         )
       );
-    });
+    }, capMs);
     const steps = Math.ceil((endMs / 1000) * FPS);
     for (let s = 0; s < steps; s++) {
       await page.evaluate(
@@ -350,8 +358,12 @@ async function render(slug, shape) {
     { k: n, need: END_S, voice: voiceFor(slug, "99-end") },
   ];
   for (const p of plan) {
-    const moved = p.k === -1 ? 0 : await move(p.k);
     const voiceS = p.voice ? probeS(p.voice) + 0.3 + 0.7 : 0;
+    // A silent frame's motion is photographed for three seconds at most. A
+    // spoken frame's runs while its words do (the slow camera takes 14
+    // seconds), so the picture never jumps to its end part-way through.
+    const capMs = p.voice ? Math.max(3000, (voiceS - 0.5) * 1000) : 3000;
+    const moved = p.k === -1 ? 0 : await move(p.k, capMs);
     const total = Math.max(p.need, moved + 0.5, voiceS);
     const hold = Math.round((total - moved) * FPS) / FPS;
     list.push([await snap(), hold]);

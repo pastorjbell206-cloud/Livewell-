@@ -16,8 +16,9 @@
  *   7  "Come": from the open gate the line runs out toward the reader.  Revelation 22:17
  */
 import { Shape } from "../../art";
-import { Draw, Fade, Travel, type FilmDrawing } from "../motion";
-import { FLAME, Flame, Seated, Standing, ring } from "./figures";
+import { Olive } from "@/components/art/stage";
+import { Ambient, Draw, Fade, Travel, type FilmDrawing } from "../motion";
+import { FLAME, Flame, Robed, Seated, ring } from "./figures";
 
 /** Where the Spirit's flame stands, poster first, then each frame. */
 const SPARK: [number, number][] = [
@@ -75,6 +76,11 @@ const MANY: [number, number, number, "b" | "g" | "c"][] = [
 const film: FilmDrawing = {
   w: 800,
   h: 500,
+  // The stage pushes in toward where the Spirit's flame is.
+  push: frame => {
+    const [x, y] = SPARK[frame + 1] ?? [400, 250];
+    return [(x + 400) / 2, (y + 250) / 2, 1.1];
+  },
   draw: (h, frame) => {
     const k = frame + 1;
     return (
@@ -107,12 +113,13 @@ const film: FilmDrawing = {
             d="M30,400c20,-6 40,6 60,0M120,440c20,-6 40,6 60,0M40,470c20,-6 40,6 60,0"
           />
           {[360, 400, 440, 480, 520].map((x, n) => (
-            <Standing
+            <Robed
               key={x}
               x={x}
               y={384 - 62 * (n % 2 ? 0.75 : 0.9)}
               s={n % 2 ? 0.75 : 0.9}
               tone={(["c", "g", "b", "c", "g"] as const)[n]}
+              head={n % 2 ? "veil" : "cloth"}
             />
           ))}
           <Shape d="M580,384V300H640V284H760V300H800V384Z" tone="b" />
@@ -159,21 +166,21 @@ const film: FilmDrawing = {
           <Shape d="M520,500V420C570,388 710,388 760,420V500Z" tone="g" />
           <path fill={h.h1} d="M400,410V500H520V410C480,388 440,384 400,388Z" />
           {/* Gideon, blowing the ram's horn. */}
-          <Standing x={160} y={330} tone="b" />
+          <Robed x={160} y={330} tone="b" cloak="c" />
           <Shape
             d="M168,334C182,336 194,328 200,314l13,3C209,334 190,346 168,342Z"
             tone="c"
             off={1.5}
           />
           {/* David, the horn of oil over his head. */}
-          <Standing x={400} y={322} tone="c" />
+          <Robed x={400} y={322} tone="c" head="bare" />
           <Shape d="M404,300L428,266l13,9Z" tone="c" off={1.5} />
           <path
             className="pl-k"
             d="M399,306a2.5,3.5 0 1,0 5,0a2.5,3.5 0 1,0 -5,0Z"
           />
           {/* A prophet, with a scroll. */}
-          <Standing x={640} y={330} tone="g" />
+          <Robed x={640} y={330} tone="g" cloak="b" />
           <Shape d="M648,354h26v34h-26Z" tone="c" off={1.5} />
           <path
             className="pl-l"
@@ -226,7 +233,14 @@ const film: FilmDrawing = {
         <Fade frame={frame} on={2} off={3}>
           <path className="pl-l" d="M430,386H790" />
           {MANY.map(([x, , s, t]) => (
-            <Standing key={x} x={x} y={384 - 62 * s} s={s} tone={t} />
+            <Robed
+              key={x}
+              x={x}
+              y={384 - 62 * s}
+              s={s}
+              tone={t}
+              head={x % 3 === 0 ? "veil" : x % 3 === 1 ? "cloth" : "bare"}
+            />
           ))}
         </Fade>
         <Draw
@@ -251,7 +265,7 @@ const film: FilmDrawing = {
             d="M0,348V268C140,250 300,262 400,270C520,258 660,248 800,264V348Z"
             tone="g"
           />
-          <Standing x={400} y={262} tone="c" s={1.2} />
+          <Robed x={400} y={262} tone="c" s={1.2} />
           <Shape d="M0,430V330C200,322 600,322 800,330V430Z" tone="b" />
           <path fill={h.h2} d="M0,430V330C200,322 600,322 800,330V430Z" />
           <path
@@ -345,7 +359,7 @@ const film: FilmDrawing = {
               tone={(["g", "c", "b"] as const)[n % 3]}
             />
           ))}
-          <Standing x={200} y={258} tone="c" s={1.15} />
+          <Robed x={200} y={258} tone="c" s={1.15} pose="open" />
           <Shape d="M230,330H590V350H230Z" tone="c" />
           <path className="pl-l" d="M250,350V420M570,350V420" />
           <path className="pl-k" d="M392,326c0,-6 16,-6 16,0Z" />
@@ -433,7 +447,13 @@ const film: FilmDrawing = {
             from="up"
             delay={200 + n * 110}
           >
-            <Standing x={x} y={262} tone={t} s={1.4} />
+            <Robed
+              x={x}
+              y={262}
+              tone={t}
+              s={1.4}
+              head={n % 2 ? "veil" : "cloth"}
+            />
             <Flame x={x} y={326} s={0.55} />
           </Fade>
         ))}
@@ -450,15 +470,24 @@ const film: FilmDrawing = {
             className="pl-f"
             d="M380,300c14,-4 28,4 40,0M340,370c22,-6 44,6 66,0s44,6 66,0M290,450c30,-6 60,6 90,0s60,6 90,0"
           />
-          <Standing x={150} y={330} tone="c" s={0.9} />
-          <Standing x={230} y={300} tone="b" s={0.7} />
-          <Standing x={620} y={316} tone="g" s={0.8} />
-          <Standing x={680} y={360} tone="c" s={1} />
-          <path className="pl-l" d="M120,250V230M680,250V226" />
-          <path className="pl-o" d={ring(120, 222, 12)} />
-          <path className="pl-l" d={ring(120, 222, 12)} />
-          <path className="pl-o" d={ring(680, 218, 12)} />
-          <path className="pl-l" d={ring(680, 218, 12)} />
+          <Robed x={150} y={330} tone="c" s={0.9} pose="walk" />
+          <Robed x={230} y={300} tone="b" s={0.7} head="veil" pose="walk" />
+          <Robed x={620} y={316} tone="g" s={0.8} face={-1} pose="walk" />
+          <Robed
+            x={680}
+            y={360}
+            tone="c"
+            s={1}
+            face={-1}
+            head="veil"
+            pose="walk"
+          />
+          <Ambient frame={frame} on={7} off={8} kind="sway">
+            <Olive x={104} y={252} s={0.9} hatch={h.h2} />
+          </Ambient>
+          <Ambient frame={frame} on={7} off={8} kind="sway">
+            <Olive x={700} y={252} s={1} hatch={h.h2} />
+          </Ambient>
         </Fade>
         <Draw
           frame={frame}

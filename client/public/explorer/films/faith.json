@@ -1,0 +1,123 @@
+{
+  "slug": "faith",
+  "title": "Faith: trusting the one who promised",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "faith",
+  "line": {
+    "younger": "Faith is trusting God because he keeps his word. Seven pictures show what faith is, how it grows, and why even a little of it is enough.",
+    "older": "What the Bible means by faith, in seven pictures: trust in the God who has spoken, Abraham under the stars, a father's honest prayer, faith that comes by hearing, faith that acts, and faith that walks on without seeing."
+  },
+  "poster": "A child steps across a stream on stones, reaching for the hands of a father who waits on the far bank with his arms held out.",
+  "frames": [
+    {
+      "id": "trust",
+      "name": "Not a leap in the dark",
+      "still": "A child steps across a stream on stones, reaching for the hands of a father who waits on the far bank with his arms held out.",
+      "younger": "Faith is trust. It is not pretending, and it is not a feeling you have to work up. You trust a chair when you sit down on it. Faith in God is leaning your whole weight on him, because he has shown that he keeps his word.",
+      "older": "Faith, in the Bible's sense, is trust in God and in what he has promised. It is not a leap in the dark, and it does not grow stronger the less evidence it has. It is the answer a person gives to someone who has spoken and has proved reliable.",
+      "verse": {
+        "ref": "Hebrews 11:1",
+        "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see."
+      }
+    },
+    {
+      "id": "abraham",
+      "name": "Abraham and the stars",
+      "still": "Night. An old man with a staff stands outside his tent and looks up at a sky full of stars; a woman stands at the tent's door.",
+      "younger": "God promised an old man named Abraham a family as many as the stars. Abraham had no child at all. But he believed God, and God counted him as right with him.",
+      "older": "Abraham is the pattern. Old and childless, he was told his family would be like the stars, and he believed, centuries before the law. The same Abraham also doubted and schemed. Biblical faith is not a flawless mood. It is reliance that is tested and deepened.",
+      "verse": {
+        "ref": "Genesis 15:6",
+        "text": "Abram believed the LORD, and it was credited to him as righteousness."
+      }
+    },
+    {
+      "id": "seed",
+      "name": "Who you trust",
+      "still": "A person kneels and holds out a hand toward Jesus, who reaches back. On the ground between them lies one tiny gold seed, and a mountain rises behind.",
+      "younger": "What matters most is not how big your faith is. What matters is who you are trusting. Jesus said that faith as small as a mustard seed is enough, because it is Jesus who is strong, not our faith.",
+      "older": "In the Gospels faith is not a force the believer generates. It is reliance on Jesus himself, which is why a mustard seed of it is enough. Its strength was never in the believing. It is in the one believed.",
+      "verse": {
+        "ref": "Hebrews 12:2",
+        "text": "Let us fix our eyes on Jesus, the author and perfecter of our faith"
+      }
+    },
+    {
+      "id": "help",
+      "name": "Help my unbelief",
+      "still": "A father kneels before Jesus with his young son sitting beside him. Jesus reaches toward them, and two people watch from behind.",
+      "younger": "A father once brought his suffering son to Jesus. His faith was mixed up with doubt, and he said so out loud. Jesus helped him anyway. You can bring your doubts to Jesus too.",
+      "older": "A father brought his suffering son to Jesus and prayed one of the most honest prayers in the Gospels. His faith was mixed and struggling, and Jesus answered it. Doubt brought to Jesus is still coming to Jesus.",
+      "verse": {
+        "ref": "Mark 9:24",
+        "text": "I do believe; help my unbelief!"
+      }
+    },
+    {
+      "id": "hearing",
+      "name": "How faith grows",
+      "still": "Under an olive tree a man reads aloud from an open scroll, and a family sits on the ground listening.",
+      "younger": "Faith grows the way trust in a friend grows: by listening to what God has said and remembering what he has done. That is why Christians keep reading the Bible and telling its stories.",
+      "older": "Faith grows the way trust between persons grows: by hearing and remembering what the other has said and done. That is why Scripture keeps retelling the exodus, and why Paul ties faith to hearing the word.",
+      "verse": {
+        "ref": "Romans 10:17",
+        "text": "Consequently, faith comes by hearing, and hearing by the word of Christ."
+      }
+    },
+    {
+      "id": "walks",
+      "name": "Faith walks",
+      "still": "The old man with the staff walks along a road with the woman beside him, a loaded donkey and two sheep, their tent left behind.",
+      "younger": "Real faith does something. Abraham trusted God, so he packed up and went where God sent him, without knowing where the road would end. If you trust a bridge, you walk across it.",
+      "older": "The Bible's word for faith is also its word for faithfulness, so trust does not stay private. It obeys, endures and keeps its promises. Churches describe the link between faith and works in different words, and none of them teaches that faith earns salvation.",
+      "verse": {
+        "ref": "James 2:17",
+        "text": "So too, faith by itself, if it does not result in action, is dead."
+      }
+    },
+    {
+      "id": "unseen",
+      "name": "Not yet seen",
+      "still": "Dawn. Three travellers walk a road toward the rising sun, and far ahead, faint and dotted, is the outline of a city.",
+      "younger": "We cannot see God yet, and we cannot see the end of the story. Faith keeps walking anyway, holding on to what God has promised.",
+      "older": "Hebrews 11 is a list of people who acted on what God had said without seeing the outcome. Many died still waiting. Faith does not deny the darkness. It holds to the one who has spoken in it, and walks on.",
+      "verse": {
+        "ref": "2 Corinthians 5:7",
+        "text": "For we walk by faith, not by sight."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Who do you trust most? What have they done that makes you trust them?",
+    "older": "The father in Mark 9 prayed, “I do believe; help my unbelief!” What would it look like to pray that honestly?"
+  },
+  "read": [
+    { "label": "Genesis 15", "href": "/study/bible/genesis/15" },
+    { "label": "Mark 9", "href": "/study/bible/mark/9" },
+    { "label": "Romans 10", "href": "/study/bible/romans/10" },
+    { "label": "2 Corinthians 5", "href": "/study/bible/2-corinthians/5" },
+    { "label": "Hebrews 11", "href": "/study/bible/hebrews/11" },
+    { "label": "Hebrews 12", "href": "/study/bible/hebrews/12" },
+    { "label": "James 2", "href": "/study/bible/james/2" }
+  ],
+  "stops": ["abraham", "jesus"],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that faith is trust in Jesus Christ, and that faith does not earn salvation. They describe how faith relates to grace, to love and to works in different words: trust that receives Christ, faith enabled by grace, faith formed by love, living trust and faithfulness. This moving picture takes no side. Each is set out in",
+    "links": [
+      { "label": "the Study Bible's study of faith", "href": "/study/bible/doctrines/faith" }
+    ]
+  },
+  "deeper": [
+    { "label": "Faith: what the Bible teaches, and where Christians differ", "href": "/study/bible/doctrines/faith" },
+    { "label": "The family catechism: what is faith?", "href": "/family/catechism#q36" },
+    { "label": "Grace: the gift no one earns (a moving picture)", "href": "/study/explorer/watch/grace" },
+    { "label": "Hebrews 11 in the Study Bible", "href": "/study/bible/hebrews/11" },
+    { "label": "An Honest Answer: is faith irrational?", "href": "/answers/is-faith-irrational" },
+    { "label": "Doubt and Questions: what the Bible says", "href": "/wisdom/doubt" },
+    { "label": "Learning to Trust God: what the Bible says", "href": "/wisdom/trusting-god" },
+    { "label": "Assurance of Faith: what the Bible says", "href": "/wisdom/assurance-of-faith" }
+  ],
+  "end": { "label": "Read Hebrews 11 in the Study Bible", "href": "/study/bible/hebrews/11" }
+}

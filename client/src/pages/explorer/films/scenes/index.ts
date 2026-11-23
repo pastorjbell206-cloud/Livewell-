@@ -43,6 +43,14 @@ export const FILM_SCENES: Record<
   "when-we-die": () => import("./when-we-die"),
   "god-silent": () => import("./god-silent"),
   "science-and-the-bible": () => import("./science-and-the-bible"),
+  "why-blood": () => import("./why-blood"),
+  grace: () => import("./grace"),
+  faith: () => import("./faith"),
+  "david-and-goliath": () => import("./david-and-goliath"),
+  "the-exodus": () => import("./the-exodus"),
+  "john-3-16": () => import("./john-3-16"),
+  "psalm-23": () => import("./psalm-23"),
+  "romans-8-28": () => import("./romans-8-28"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;
