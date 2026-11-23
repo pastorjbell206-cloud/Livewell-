@@ -25,7 +25,7 @@ import dotenv from "dotenv";
 import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 import { loadQuestions } from "./lib/questions.mjs";
-import { SUPPORT_HEAD, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
+import { SUPPORT_HEAD, givingOpen, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
 
 dotenv.config();
 
@@ -827,6 +827,36 @@ function worldBody(e) {
 }
 
 const PAGE_BODIES = {
+  // The Downloads page: its top and its first shelf of books, covers and all,
+  // so the first cover (the page's largest paint on a phone) is drawn from the
+  // HTML instead of after the app starts; then every download as a plain link,
+  // as before. Each cover keeps its 400 by 600 box (the same file and width as
+  // the real shelf), so nothing moves when it arrives; the head preloads the
+  // first one (headExtra) and the others load lazily.
+  "/downloads": async () => {
+    const { SHELF_GROUPS = [], SHELF_ITEMS = [], formatLine } = await loadTs("client/src/lib/shelfItems.ts");
+    const group = SHELF_GROUPS[0];
+    const books = SHELF_ITEMS.filter((b) => group && b.group === group.id);
+    if (!books.length || typeof formatLine !== "function") return null;
+    const card = (b, i) => {
+      const img = `<img class="pre-cover" src="${escapeHtml(b.cover.src)}" alt="${escapeHtml(b.cover.alt)}" width="${b.cover.width}" height="${b.cover.height}"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'}>`;
+      const cover = b.page ? `<a href="${escapeHtml(b.page)}" tabindex="-1" aria-hidden="true">${img}</a>` : img;
+      const title = b.page ? `<a href="${escapeHtml(b.page)}">${escapeHtml(b.title)}</a>` : escapeHtml(b.title);
+      const file = (href, kind) => `<a href="${escapeHtml(href)}" aria-label="${escapeHtml(`Download ${b.title}, as ${kind === "PDF" ? "a PDF" : "an EPUB"}`)}">${kind}</a>`;
+      const files = [file(b.pdf, "PDF"), b.epub ? file(b.epub, "EPUB") : ""].filter(Boolean).join(" · ");
+      return `<li>${cover}<h4>${title}</h4><p class="pre-book-sub">${escapeHtml(b.subtitle)}</p><p class="pre-book-meta">${escapeHtml(formatLine(b))}</p><p class="pre-book-meta">${files}</p></li>`;
+    };
+    const html = [
+      `<h1>Downloads</h1>`,
+      `<p class="pre-subtitle">Every printable, in one place</p>`,
+      `<h2>${givingOpen() ? "Books and booklets" : "Free ebooks"}</h2>`,
+      `<h3 class="pre-eyebrow">${escapeHtml(group.label)}</h3>`,
+      `<p>${escapeHtml(group.line)}</p>`,
+      `<ul class="pre-shelf">\n${books.map(card).join("\n")}\n</ul>`,
+      hubListingHtml("/downloads"),
+    ].join("\n");
+    return { html, headExtra: `<link rel="preload" as="image" href="${escapeHtml(books[0].cover.src)}" fetchpriority="high">` };
+  },
   // The index of the Honest Answers: every question, grouped as the page
   // groups them, each linking to its own page. Each row carries the answer's
   // slug as its id, so an old /answers#<slug> link still lands on it with
@@ -1577,7 +1607,7 @@ async function main() {
       // (SKEPTIC_TRACK_LIVE in client/src/lib/skepticTrack.ts), as its page does.
       noindex: (page.path === "/skeptic-track" && !skepticTrackLive()) || (page.path === SUPPORT_HEAD.path && supportNoindex()),
     });
-    writeRoute(template, page, head, own?.html || hubListingHtml(page.path));
+    writeRoute(template, page, own?.headExtra ? `${head}\n    ${own.headExtra}` : head, own?.html || hubListingHtml(page.path));
     wrote++;
   }
 
@@ -2049,7 +2079,7 @@ async function main() {
       noindex: pageNoindex,
       schemas: own?.schemas ?? [],
     });
-    writeRoute(template, { path: routePath }, head, own?.html || hubListingHtml(routePath));
+    writeRoute(template, { path: routePath }, own?.headExtra ? `${head}\n    ${own.headExtra}` : head, own?.html || hubListingHtml(routePath));
     written.add(routePath);
     extracted++;
     wrote++;

@@ -656,3 +656,41 @@ cover image, the embedded fonts and the tags a screen reader uses.
 3. Blind Spots' copyright page now carries the fuller notice its old PDF
    had. Is that the notice you want, and do you want an ISBN when there is
    one?
+
+## 9. /downloads paints its first shelf from the HTML (2026-11-23)
+
+Lighthouse scored /downloads 59 for performance because the page's largest
+paint on a phone, the first cover, only existed after the app's script had
+run. The prerendered page (`scripts/prerender-heads.mjs`, `PAGE_BODIES`) now
+carries the top of the page and the first shelf: the three books with their
+covers, titles, subtitles, page counts and file links, before the plain list
+of every download it already had for crawlers. Each cover is the same file
+and box as the real shelf's (400 by 600, shown 230 wide on a phone), so
+nothing moves when it arrives, and the head preloads the first one. The
+styles are `.prerender-content .pre-shelf` and its parts in `index.css`.
+
+`lib/prerender-hold.ts` keeps the held page on screen until a picture it
+shows has been loaded, decoded and drawn (two frames after `decode()`, or
+the hold's longest wait). Without that, on a fast load the app could take the
+held page away before its cover was painted, and the real page's cover
+became the largest paint, timed from the app. Only /downloads holds a
+picture today. The second and third covers load lazily.
+
+Measured with the pinned Lighthouse (`scripts/lighthouse-median.mjs`, phone,
+three runs) on the served build (`scripts/serve-like-vercel.mjs`), the
+machine's load under 6:
+
+| | Performance (runs) | Median | LCP (Lighthouse's estimate) | LCP in the browser | CLS |
+|---|---|---|---|---|---|
+| Before | 67, 62, 57 | 62 | 5.2 s | 0.6 to 1.0 s (the cover the app draws) | 0 |
+| After | 70, 69, 66 | 69 | 4.0 s | 0.26 to 0.31 s (the cover in the HTML) | 0 |
+
+The paint a reader sees came forward by more than half a second. Lighthouse's
+estimate moved less, because it counts every file requested before the
+largest paint (the app's script among them) as if fetched on a slow phone
+network; the score is held down most by the app's script time (about 0.7 to
+0.9 s of blocking). Two cautions for anyone measuring: the local server keeps
+compressed files in memory, so restart it after a rebuild; and
+`prerender-heads.mjs` must run once on a fresh `pnpm build`, since a second
+run reads its own output as the template and puts the page text outside the
+shell, where the hold cannot find it.
