@@ -15958,3 +15958,18 @@ One existing line was corrected in the same commit: the old overview quoted Ruth
 | The care line (‘If your grief is so heavy that you cannot carry it...’ to ‘...lists places to turn.’) | 19-22 `hard` | 2-timothy/plain/4.json (6-8, `hard`); deuteronomy/plain/14.json (1-2, `hard`); hebrews/plain/2.json (14-18, `hard`) | Reused whole, word for word |
 
 Cut in Ruth 1: Romans 11:17 and Mark 15:34 (the deep note's thematic links, not lines the New Testament draws to this chapter); the grief line from Genesis 23, which names Abraham and so does not fit whole (replaced by a line that does).
+
+## The plain notes on Ruth 2 (2026-11-23)
+
+`client/public/bible/notes/ruth/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Boaz introduced first; gibbor chayil as wealth and worth; gleaning under the law and the danger to a foreign woman; ‘her chance chanced upon’ and providence; the shared harvest work; the greeting in the LORD's name | 1-7 | ruth/2.json `historical`, `cultural`, `literary`, `words` (miqreh) | Repository |
+| Leviticus 19:9; Deuteronomy 24:19 | 1-7 | ruth/2.json `historical`; leviticus/plain/19.json; deuteronomy/plain/24.json; BSB | Repository; BSB text |
+| Boaz beyond the law (protection, water, table, left grain); the order not to touch her; Ruth's question as the book's question; 2:11 and leaving her land; the wings and 3:9, the answer to his own prayer | 8-16 | ruth/2.json `cultural`, `literary`, `words` (kanaph) | Repository |
+| Psalm 91:4; Genesis 12:1 | 8-16 | BSB | BSB text |
+| An ephah, enough for some weeks; Naomi's turn and chesed (2:20), the grammar read two ways; the go'el's duties; barley and wheat, about seven weeks, Passover to the Feast of Weeks, Ruth read at Shavuot | 17-23 | ruth/2.json `historical`, `cultural`, `words` (ga'al, hesed) | Repository; both readings of verse 20 |
+| Leviticus 25:25; Exodus 6:6 | 17-23 | ruth/2.json `cultural`, `words` (ga'al); BSB | Repository; BSB text |
+
+Cut in Ruth 2: 1 Peter 1:18-19, Galatians 4:4-5, Hebrews 2:14-17 and Matthew 23:37 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the vinegar sauce and roasted grain explained.
