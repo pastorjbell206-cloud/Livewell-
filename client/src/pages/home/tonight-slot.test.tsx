@@ -48,8 +48,8 @@ function at(iso: string) {
 /** Elements, with their classes (a link drawn as a span), and the words: what decides the room a line takes. */
 function shapeOf(el: Element): string {
   const tag = el.tagName.toLowerCase() === "a" ? "span" : el.tagName.toLowerCase();
-  const cls = [...el.classList].filter((c) => c !== "home-tonight--slot").sort().join(".");
-  return `${tag}.${cls}[${[...el.children].map(shapeOf).join(",")}]`;
+  const cls = Array.from(el.classList).filter((c) => c !== "home-tonight--slot").sort().join(".");
+  return `${tag}.${cls}[${Array.from(el.children).map(shapeOf).join(",")}]`;
 }
 const wordsOf = (el: Element) => (el.textContent ?? "").replace(/\s+/g, " ").trim();
 
@@ -174,7 +174,7 @@ describe("the static shell's tonight slot", () => {
       delete (document as unknown as { currentScript?: unknown }).currentScript;
     }
     const slot = document.querySelector(".home-tonight--slot")!;
-    expect([...slot.querySelectorAll("p")].map(wordsOf)).toEqual([
+    expect(Array.from(slot.querySelectorAll("p")).map(wordsOf)).toEqual([
       "Tonight at the table: The Year the Fig Tree Did Not Bud, a reading for Thanksgiving week.",
       "Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas: see the readings.",
     ]);

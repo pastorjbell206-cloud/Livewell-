@@ -121,7 +121,7 @@ async function checkHome(night: Night) {
     expect(advent).toHaveTextContent("Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas: see the readings.");
     // Tonight's line is Thanksgiving week's, never an Advent reading.
     expect(line).not.toBeNull();
-    expect([...ADVENT_TITLES].some((t) => line!.textContent!.includes(t))).toBe(false);
+    expect(Array.from(ADVENT_TITLES).some((t) => line!.textContent!.includes(t))).toBe(false);
   } else {
     expect(line).toBeNull();
     expect(advent).toBeNull();
