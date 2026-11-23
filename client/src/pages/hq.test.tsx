@@ -16,7 +16,7 @@ import { QUESTION_GROUPS, ROWS_HELD_ELSEWHERE } from "@/data/questionGroups";
 import { AGE_ID_BY_NAME, ageOfPerson, peopleOfAge } from "@/lib/historyAges";
 import { answerCandidates, ask, toAnswerPage, type AskCandidate } from "@/lib/askQuestion";
 import { rowTarget } from "@/lib/topics";
-import { ASK_MORE } from "@/components/questions/AskBox";
+import AskBox, { ASK_MORE } from "@/components/questions/AskBox";
 import { entryHref, type Era, type Figure } from "@/lib/historyCourse";
 import { entryById } from "@/lib/siteCatalog";
 import TheologyHistory from "./TheologyHistory";
@@ -110,6 +110,18 @@ describe("the question groups", () => {
     expect(first("Why do Christians disagree about baptism?")).toBe("/theology/compare");
     // When the words call for help, the Find Help page of the same name keeps its place.
     expect(first("Why does God allow suffering?", true)).toBe("/help/suffering");
+  });
+
+  it("keeps no empty band under the box until a question is typed", () => {
+    // The walk of 2026-11-23, finding 4: 220px of nothing under the box on a phone.
+    const { container } = renderWithProviders(<AskBox />);
+    const result = container.querySelector(".qa-result")!;
+    expect(result.childNodes).toHaveLength(0);
+    const css = fs.readFileSync(path.resolve(__dirname, "../index.css"), "utf8");
+    expect(css).toContain(".qa-result:empty{min-height:0}");
+    fireEvent.change(screen.getByRole("searchbox", { name: "Ask a hard question" }), { target: { value: "Does God exist?" } });
+    expect(result.childNodes.length).toBeGreaterThan(0);
+    expect(within(result as HTMLElement).getByText("The closest answer")).toBeInTheDocument();
   });
 });
 

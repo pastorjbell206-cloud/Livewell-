@@ -1664,6 +1664,8 @@ html{-webkit-tap-highlight-color:transparent}
 .qa-ask .hq-find{max-width:640px}
 .qa-try{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:var(--s-2) 0 0;padding:0}
 .qa-result{min-height:300px}
+/* Its room is kept only once a question is typed: before that it was an empty band under the box (walk 2026-11, finding 4). */
+.qa-result:empty{min-height:0}
 .qa-best{margin-top:var(--s-4);padding-top:var(--s-3);border-top:1.5px solid var(--charcoal-fg);max-width:760px}
 .qa-best__label{font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mustard);margin:0 0 10px}
 .qa-best__label--next{margin-top:var(--s-4)}
