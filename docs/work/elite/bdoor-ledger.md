@@ -15817,3 +15817,20 @@ Cut in chapter 14: Romans 5:10, Ephesians 5:25 and Luke 3:22 (the deep note's co
 | Whether God approves the violence: told without being made a model; revenge plain, the burning brutal, the slaughter out of proportion; the Spirit and the answered prayer; the two readings (God using Samson's acts to begin the rescue; the silence inviting judgment of gift without character); the Bible describes much it does not approve | 18-20 `hard` | judges/15.json `hard` | Repository; both readings in their holders' terms |
 
 Cut in chapter 15: Mark 15:1, Luke 23:34, John 19:28 and John 4:10 (the deep note's thematic links to Christ, not lines the New Testament draws to Samson).
+
+## The plain notes on Judges 16 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Gaza the southernmost of the five cities; the appetites of Timnah still ruling; the gate as defense and pride; Hebron about forty miles east and three thousand feet higher, the gates carried there or to a hill facing it, debated; the pattern of woman, ambush and strength | 1-3 | judges/16.json `story`, `historical` | Repository; no side on the distance |
+| Joshua 13:3; Proverbs 6:25 | 1-3 | judges/13.json `historical` (Joshua 13:3); BSB | Repository; BSB text |
+| The valley of Sorek; Delilah's people not stated; the bribe of 1,100 shekels from each of five lords against the priest's ten a year (17:10); the pattern of three and a fourth, each lie nearer the truth; patah as at Timnah; ‘he did not know’; strength the LORD's, the hair the last sign of a neglected consecration; sur for both departures; blinding and grinding as known practices and public shame; the hair growing back | 4-22 | judges/16.json `historical`, `cultural`, `literary`, `words` (koach, sur), `doctrines` (holiness); judges/14.json `words` (patah) | Repository |
+| Proverbs 7:22; Psalm 51:11 | 4-22 | judges/16.json `doctrines` (holiness); bible/doctrines/spirit.json (`ot`, Psalm 51:11); BSB | Repository; BSB text |
+| Victories credited to the gods; a contest between the LORD and Dagon; Dagon an old Semitic god (Ebla, Mari), adopted by the Philistines, the fish-god idea doubted, grain or storms; Tell Qasile and the two central pillars; ‘remember’ as God acting (Noah, Hannah); the prayer ending in revenge; the answered prayer; no more deliverers after him | 23-31 | judges/16.json `story`, `historical`, `cultural`, `words` (dagon, zakhar), `doctrines` (prayer, idolatry) | Repository |
+| 1 Samuel 5:3; Hebrews 11:32 and why the flawed are named | 23-31 | judges/16.json `historical`, `doctrines` (idolatry); hebrews/plain/11.json (32-40, `hard`); BSB | Repository; BSB text |
+| Whether the death was a suicide: Augustine in The City of God (a special prompting shown by the answered prayer); a warrior's death in battle; a mixed motive and God's larger purpose; no verdict on his heart; God's patience and victory over Dagon; no pattern to follow | 23-31 `hard` | judges/16.json `hard` | Repository; each reading in its holders' terms; no side |
+| The care line (‘If you have thoughts of hurting yourself, speak to someone today...’ to ‘...lists places to turn.’) | 23-31 `hard` | 1-peter/plain/5.json (5-7, `hard`); 2-timothy/plain/1.json (6-7, `hard`); philippians/plain/4.json (4-9, `hard`); psalms/plain/88.json (13-18, `hard`) | Reused whole, word for word; no phone number |
+
+Cut in chapter 16: the deep note's crisis-line number (no phone numbers in the plain notes); Colossians 2:15 and the comparison of Samson's death with Christ's (the deep note's thematic contrast, not a line the New Testament draws); Ebla and Mari named only in the ledger.
