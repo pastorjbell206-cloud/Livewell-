@@ -33,6 +33,15 @@ describe("answer companions", () => {
     }
   });
 
+  it("points the doubter's answers to the page written for someone living them", () => {
+    // The walk of 2026-11-23, finding 9: these ended with no way to the care page.
+    const careFor = (slug: string) => companionsFor(ANSWERS.find((a) => a.slug === slug)!).find((c) => c.href.startsWith("/help/"))?.href;
+    expect(careFor("what-if-christianity-is-wrong")).toBe("/help/doubt");
+    expect(careFor("done-with-church-but-not-jesus")).toBe("/help/church-hurt");
+    expect(careFor("can-you-be-a-christian-without-church")).toBe("/help/church-hurt");
+    expect(careFor("what-happens-after-deconstruction")).toBe("/help/deconstructing");
+  });
+
   it("offers Test the Case where a published case is built from the answer's essay", () => {
     const res = companionsFor(ANSWERS.find((a) => a.slug === "did-the-resurrection-actually-happen")!);
     expect(res[0].href).toBe("/tools/test-the-case?case=resurrection");
