@@ -1661,6 +1661,11 @@ describe("the eight films of 2026-11-22: doctrines, stories and verses, each wit
     expect(t).toContain("Most readers are not David here");
     expect(t).not.toMatch(/your giants?|giants in your life|face your/i);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/blood|head/i);
+    // A battle with a death in it: the Land stop's care line, whole.
+    const land = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/land.json"), "utf8")
+    );
+    expect(f.care).toBe(land.care);
   });
 
   it("Psalm 23 quotes the psalm line by line, never draws God, and keeps help in view", () => {
@@ -1681,6 +1686,8 @@ describe("the eight films of 2026-11-22: doctrines, stories and verses, each wit
     expect(t).toContain("John does not say how Nicodemus answered that night");
     expect(t).not.toMatch(/Nicodemus (was saved|became a Christian|believed)/i);
     expect(f.differ?.text).toMatch(/takes no side/);
+    // It tells of Jesus' death and burial: the films' own care line, whole.
+    expect(f.care).toBe(filmFile("the-king").care);
   });
 
   it("Romans 8:28 says what the verse does not promise, leaves room to groan, and keeps help in view", () => {
