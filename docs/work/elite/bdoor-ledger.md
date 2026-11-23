@@ -16453,3 +16453,21 @@ Cut in chapter 23: Luke 6:12-13, John 5:19 and Hebrews 10:23-25 and Jesus as one
 | 2 Samuel 5:3; Proverbs 25:21 | 16-22 | 1-samuel/24.json `historical` (2 Samuel 5); BSB | Repository; BSB text |
 
 Cut in chapter 24: 1 Peter 2:23, Luke 6:27-28 and David's restraint as a reflection of Jesus' way (the deep note calls it thematic, not a line the New Testament draws to this chapter); the idiom behind relieve himself (not needed).
+
+## The plain notes on 1 Samuel 25 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Samuel's death closing an era; David an outlaw in the southern wilderness with about six hundred men, probably late in Saul's reign; Maon and Carmel south of Hebron, not Mount Carmel; Paran in Sinai and the Greek reading Maon; the Calebites, Caleb and Hebron (Joshua 14), the leading clan there; shearing as a festival of plenty and generosity; real protection given and a gift expected; David's courtesy and Nabal's calculated insult; the chapter between the two sparings | 1-13 | 1-samuel/25.json `story`, `historical`, `cultural` | Repository |
+| Genesis 38:12; Proverbs 26:4 | 1-13 | 1-samuel/25.json `cultural` (Genesis 38); BSB | Repository; BSB text |
+| The servant's report (a wall day and night); the large gift and a petitioner's posture; Abigail's speech the longest by a woman in Samuel, apology, theology and prophecy; Nabal as fool and nevalah as strong; the bundle of the living and stones from a sling; dam three times and innocent blood; the king kept from guilt; Abigail with Jonathan and Saul saying David will rule | 14-35 | 1-samuel/25.json `literary`, `cultural`, `words` (nevalah, dam, tseror, aman), `story` | Repository |
+| 2 Samuel 7:16; Deuteronomy 32:35; Proverbs 15:1 | 14-35 | 1-samuel/25.json `words` (aman and 2 Samuel 7:16), `doctrines` (judgment); BSB | Repository; BSB text |
+| A protection racket: the servant's testimony, the customary gift, the polite request; the planned revenge out of proportion and called bloodshed; the grievance real and the revenge sin | 14-35 `hard` | 1-samuel/25.json `hard` | Repository |
+| A feast fit for a king while the king is in the wilderness; good repaid with evil like Saul; the LORD dealing with Nabal and David's later word about Saul (26:10); Abigail and ties to the Calebite district and Hebron; Ahinoam of a Jezreel in Judah; David's household apart from Saul's; more than one wife allowed, never commanded, the trouble it caused | 36-44 | 1-samuel/25.json `literary`, `historical`; deuteronomy/plain/21.json (15-17, `hearers`) | Repository |
+| Deuteronomy 17:17; 2 Samuel 3:16 | 36-44 | BSB | BSB text |
+| Michal given to another man: one line; Saul's daughter again a piece in his quarrel (18:21); no word from Michal; Paltiel's weeping; grief recorded and not approved | 36-44 `hard` | 1-samuel/25.json `historical`; 1-samuel/18.json `literary`; BSB | Repository; BSB text |
+| The care line (‘A word for anyone who was not protected by a parent...’ to ‘...lists places to turn.’) | 36-44 `hard` | genesis/plain/19.json and judges/plain/11.json (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 25: 1 Peter 2:23 and Abigail as a faint picture of intercession (the deep note says the text does not press it and calls the link thematic); a pun on Calebite and the word for dog (one reading, not needed); the measure of a seah (not needed).
