@@ -522,3 +522,14 @@ Files other agents are changing were not touched: the essays in progress (is-the
 5. **Cuts that remove something true and important that only a source can restore:** the 1999 joint declaration (Catholics and Protestants); the rescuers who sheltered Jews and four of the measures in Luther's 1543 tract (antisemitism); Russell's sentence (hell); the Orthodox account of a second marriage (divorce). Each is quoted above.
 6. **Positions not touched.** The paragraphs stating your view on homosexuality, women in ministry and abortion were not edited. `should-women-preach` states no view; only its historical sentences were narrowed.
 
+## Gates (2026-11-23), in the order run
+
+On the tree merged with `claude/todo-implementation-hhp4bm` (fetched and merged cleanly before the gates; fetched again before the push, with nothing new):
+
+1. Content gates: all 54 commands of the content-gates step in `.github/workflows/ci.yml` exited 0, run once before the 1 Samuel 17 correction and again on the final tree.
+2. `pnpm check`: exit 0 (run after the merge, before the 1 Samuel 17 correction, which touches only a JSON file the browser fetches).
+3. `pnpm test`: exit 0; 186 test files passed and 7 skipped; 2,254 tests passed and 73 skipped.
+4. `pnpm build`: exit 0.
+5. `pnpm sitemap` (static fallback, no database), `pnpm prerender` (3,236 route files) and `pnpm audit:canonicals` (0 failures): all exit 0.
+6. The served build (`node scripts/serve-like-vercel.mjs --port 4691`, stopped by its PID afterwards) at 390 by 844 in Chromium: nineteen edited pages opened (eight Honest Answers, eight essays, the justice timeline, the short questions and the passage tool for 1 Samuel 17:18). On each, the new sentence was present, the cut text absent, and nothing scrolled sideways. The only console errors were 404s for `/_vercel/*` and `/api/track`, and, on the passage tool, the outside Bible API (bible-api.com), which the sandbox blocks. Screenshots of seven passages were read (the Inquisition entry, the Islam answer, the opening of the hell essay, the wrong tomb, Luther's tract, Junias, and the line about his followers); each reads straight through the cut.
+
