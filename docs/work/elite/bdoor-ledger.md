@@ -16098,3 +16098,20 @@ Cut in chapter 2: Hebrews 2:17 and 3:1-2 and the faithful priest as a picture of
 Cut in chapter 3: Deuteronomy 18:15 and the prophet like Moses, John 1 and Hebrews 1:1-2 set beside Samuel (the deep note's pattern, not a line the New Testament draws to this chapter; Acts 3:24 is kept as Peter's own words); Luke 1:38 and Mary's surrender set beside 3:10 (the theology passage note's echo, not the New Testament's); the word confirmed in verse 20 as from the root of amen (not stated for this verse in the repository); a reading of the lamp as a picture of Israel's light (not stated in the repository; the note says only that the scene is dark in more ways than one, as the text shows).
 
 A correction to 1 Samuel's book page, made after chapter 3 (2026-11-23): the words of 4:4 were quoted as ‘who is enthroned between the cherubim’, a phrase the BSB uses elsewhere (2 Samuel 6:2), while 4:4 reads ‘who sits enthroned between the cherubim’. Both places on the page (the part on the ark and the key word) now quote 4:4 as it stands. A new check, run from here on over the book page and every chapter, tests each quotation against the verse it cites, not only against the whole Bible.
+
+## The plain notes on 1 Samuel 4 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Philistines on the coastal plain from the early twelfth century BC, pressing into the hills; Aphek at the Yarkon springs, a staging point; Ebenezer nearby; Izbet Sartah and its early alphabet inscription proposed as Ebenezer, not certain; the numbers and the debate over the word for thousand | 1-11 | 1-samuel/4.json `historical` | Repository; no side on the numbers or the site |
+| The ark, its lid as the throne of the invisible LORD, before Israel in the wilderness and at Jericho; gods carried into battle; the ark used as a device, never asking God's will; the LORD's ark treated like an idol; the Philistines' plural gods and garbled memory of the exodus | 1-11 | 1-samuel/4.json `cultural`, `doctrines` (idolatry) | Repository |
+| Numbers 10:35; Psalm 78:60-61 | 1-11 | 1-samuel/4.json `historical` (Psalm 78:60-61); BSB | Repository; BSB text |
+| Why God let the ark be taken: judgment (2:34), a false belief exposed, God not defeated (chapter 5); apparent defeat serving God's purposes, or the loss not softened, the ark never back at Shiloh | 1-11 `hard` | 1-samuel/4.json `hard`, `doctrines` (judgment) | Repository; both emphases in their holders' terms |
+| Torn clothes and dirt as signs of disaster; the slowed telling; the report in four steps and Eli falling at the ark; heavy from the root of glory and the charge of 2:29; the chair as throne and the doorpost of chapter 1; forty years as judge | 12-18 | 1-samuel/4.json `cultural`, `literary`, `words` (kavod); BSB | Repository; BSB text |
+| Psalm 78:64; Jeremiah 7:14 | 12-18 | 1-samuel/4.json `historical` (Jeremiah 7:12-14); BSB | Repository; BSB text |
+| Naming for the circumstances of birth; Ichabod as Where is the glory? or No glory; the unnamed mother's verdict twice; galah as to go into exile, heard by readers after Jerusalem fell; glory as weight | 19-22 | 1-samuel/4.json `cultural`, `literary`, `words` (galah, kavod) | Repository |
+| Ezekiel 10:18 and the glory leaving the temple before the exile | 19-22 | 1-samuel/4.json `doctrines` (holiness); BSB | Repository; BSB text |
+
+Cut in chapter 4: John 1:14 and the glory dwelling in Christ (the deep note calls the link thematic, not a line the New Testament draws to this chapter); Khirbet Seilun and the fire at Shiloh (kept on the book page; not needed here); Genesis 35:18 and Rachel naming her son as she died (a likeness in the text that the repository's notes do not draw).
