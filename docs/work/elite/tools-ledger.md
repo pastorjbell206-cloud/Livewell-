@@ -1512,3 +1512,14 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | hell-and-judgment | Where Christians differ: endless conscious separation, the most widely held view (Augustine on Matthew 25:46); final destruction (Matthew 10:28, Romans 6:23); a minority hope of restoration, which the church has generally not affirmed; none settled | plain matthew/25 41-46 hard; Honest Answer is-hell-forever-or-does-it-end |
 | hell-and-judgment | Psalm 96: judgment as good news from the side of the poor and the wronged | plain psalms/96 10-13 asks |
 | hell-and-judgment | Care lines | plain revelation/20 |
+| prayer-struggles | Disciples learn by watching Jesus pray; Christian prayer a sharing in his relation to the Father; teach us to pray, not about prayer | note luke/11 verse 1; plain luke/11 1-4 asks |
+| prayer-struggles | Not wearing God down with words; the Father knows; prayer simple, not pointless; not waiting for the right words | note matthew/6 verses 7-8; plain matthew/6 5-8 asks |
+| prayer-struggles | Hannah prays with moving lips; Eli thinks her drunk; poured out her soul; only the words you thought he wanted | 1 Samuel 1:6-7; plain 1-samuel/1 9-18 asks |
+| prayer-struggles | The psalmist tells his own soul to rest; pour out your hearts, not tidy prayers | plain psalms/62 1-12 asks |
+| prayer-struggles | Nehemiah's silent prayer before the king | note nehemiah/2 summary |
+| prayer-struggles | Morning plea and waiting; start tomorrow early and watch for an answer | note psalms/5 summary; plain psalms/5 1-7 asks |
+| prayer-struggles | The point stated first: pray and not lose heart; the enemy is weariness; works by contrast, not nagging an unjust judge | note luke/18 verse 1; plain luke/18 1-8 hard |
+| prayer-struggles | A real request and a real surrender; submission entrusts the wanting | note matthew/26 verse 39 |
+| prayer-struggles | Always lives to intercede; someone praying for you who never stops | plain hebrews/7 20-28 hard |
+| prayer-struggles | Mark 11:24 badly misused; hurt those who prayed for a sick child or marriage; faith in God, then forgiveness; Gethsemane; Paul's thorn; bold prayer, not a tool | note mark/11 verse 24; plain mark/11 20-26 hard |
+| prayer-struggles | Psalm 116: because God listened he will pray as long as he lives; answered prayer a reason for more | plain psalms/116 1-11 asks |
