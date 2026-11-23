@@ -1523,3 +1523,17 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | prayer-struggles | Always lives to intercede; someone praying for you who never stops | plain hebrews/7 20-28 hard |
 | prayer-struggles | Mark 11:24 badly misused; hurt those who prayed for a sick child or marriage; faith in God, then forgiveness; Gethsemane; Paul's thorn; bold prayer, not a tool | note mark/11 verse 24; plain mark/11 20-26 hard |
 | prayer-struggles | Psalm 116: because God listened he will pray as long as he lives; answered prayer a reason for more | plain psalms/116 1-11 asks |
+| waiting-on-god | Psalm 27 ends in certainty of seeing God's goodness and a call to wait; ends before the answer comes; said twice because once is rarely enough | note psalms/27 summary; plain psalms/27 7-14 asks |
+| waiting-on-god | More than watchmen wait for the morning; no promise of when, only that it will; still waiting when it ended | note psalms/130 summary; plain psalms/130 5-8 hard and asks |
+| waiting-on-god | Good to wait quietly; the chapter lives inside the tension; hope chosen rather than felt | note lamentations/3 summary and hard |
+| waiting-on-god | The watchtower; write the vision, it awaits its time; the righteous live by faith | note habakkuk/2 summary |
+| waiting-on-god | God's faithfulness repeated twice; a promise that took twenty-five years; no promise of a child to every couple, childlessness not a judgment | note genesis/21 verses 1-2; plain genesis/21 1-7 hard and asks |
+| waiting-on-god | Love and delay in one breath; read the delay by the love; rules out waiting as indifference; loved and facing a long wait at once | note john/11 verses 5-6; plain john/11 1-6 asks |
+| waiting-on-god | Patient like a farmer; no promise of being put right in this life, many prophets not rescued; never a word to stay under abuse or exploitation | note james/5 summary; plain james/5 7-12 hard |
+| waiting-on-god | Be still, do not fret; stillness is refusing to be pushed by envy | note psalms/37 summary; plain psalms/37 1-11 asks |
+| waiting-on-god | Saved in hope; hope looks to what is unseen; certain in its object, unseen in experience; patient endurance not anxiety | note romans/8 verses 24-25 |
+| waiting-on-god | Wait for the promised gift; a job instead of a date; power promised for a task too big | plain acts/1 4-8 asks |
+| waiting-on-god | The widow kept coming back | plain luke/18 1-8 asks |
+| waiting-on-god | The God who seems slow is not absent | the topic's own first form (framing) |
+| waiting-on-god | Psalm 33: the congregation waiting; none of the things people trust saves | note psalms/33 summary; plain psalms/33 1-22 asks |
+| waiting-on-god | Care lines | plain psalms/130 |

@@ -14058,12 +14058,8 @@
       "application": "Waiting is not wasted time, though it rarely feels otherwise. Keep praying the request honestly, even when heaven seems quiet, and let the wait do its slow work in you rather than only watching the clock. Tell the truth about how hard it is, and lean on people who have waited longer and not given up. Trust that the delay is not the same as denial.",
       "verses": [
         {
-          "ref": "Isaiah 40:31",
-          "text": "But those who wait upon the LORD will renew their strength; they will mount up with wings like eagles; they will run and not grow weary, they will walk and not faint."
-        },
-        {
-          "ref": "Psalm 27:14",
-          "text": "Wait patiently for the LORD; be strong and courageous. Wait patiently for the LORD!"
+          "ref": "Psalm 27:13-14",
+          "text": "Still I am certain to see the goodness of the LORD in the land of the living. Wait patiently for the LORD; be strong and courageous. Wait patiently for the LORD!"
         },
         {
           "ref": "Psalm 130:5-6",
@@ -14076,6 +14072,30 @@
         {
           "ref": "Habakkuk 2:3",
           "text": "For the vision awaits an appointed time; it testifies of the end and does not lie. Though it lingers, wait for it, since it will surely come and will not delay."
+        },
+        {
+          "ref": "Genesis 21:1-2",
+          "text": "Now the LORD attended to Sarah as He had said, and the LORD did for Sarah what He had promised. So Sarah conceived and bore a son to Abraham in his old age, at the very time God had promised."
+        },
+        {
+          "ref": "John 11:5-7",
+          "text": "Now Jesus loved Martha and her sister and Lazarus. So on hearing that Lazarus was sick, He stayed where He was for two days, and then He said to the disciples, “Let us go back to Judea.”"
+        },
+        {
+          "ref": "James 5:7-8",
+          "text": "Be patient, then, brothers, until the Lord’s coming. See how the farmer awaits the precious fruit of the soil—how patient he is for the fall and spring rains. You, too, be patient and strengthen your hearts, because the Lord’s coming is near."
+        },
+        {
+          "ref": "Psalm 37:7",
+          "text": "Be still before the LORD and wait patiently for Him; do not fret when men prosper in their ways, when they carry out wicked schemes."
+        },
+        {
+          "ref": "Romans 8:24-25",
+          "text": "For in this hope we were saved; but hope that is seen is no hope at all. Who hopes for what he can already see? But if we hope for what we do not yet see, we wait for it patiently."
+        },
+        {
+          "ref": "Acts 1:4-5",
+          "text": "And while they were gathered together, He commanded them: “Do not leave Jerusalem, but wait for the gift the Father promised, which you have heard Me discuss. For John baptized with water, but in a few days you will be baptized with the Holy Spirit.”"
         }
       ],
       "related": [
