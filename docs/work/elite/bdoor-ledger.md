@@ -15769,3 +15769,19 @@ Cut in chapter 11: whether Jephthah expected an animal or a person (not in the r
 | Joshua 19:15 | 8-15 | judges/12.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 12: Ephesians 2:14-16 and Revelation 7:9 (the deep note's thematic links, not lines the New Testament draws to this chapter); Zaphon's place in the Jordan Valley; the hill country of the Amalekites in verse 15.
+
+## The plain notes on Judges 13 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last judge's cycle; no cry to the LORD for the first time; rescue from God's side alone; the Philistines as Sea Peoples from the Aegean and eastern Mediterranean, settled around 1200 BC in five cities each with a lord, strong in war, pressing into Dan's low hills; Zorah and Eshtaol in the Sorek Valley; barrenness, grief and shame, and the line of women (Sarah, Rebekah, Rachel, Hannah, Elizabeth); the Nazirite vow (Numbers 6) and Samson's three differences; ‘begin’ the deliverance, carried on by Samuel and David; the unnamed mother who understands | 1-7 | judges/13.json `story`, `historical`, `cultural`, `literary`, `christ`, `words` (nazir, aqar) | Repository |
+| Numbers 6:5; 1 Samuel 1:11; Luke 1:15 | 1-7 | judges/13.json `cultural`, `christ`; luke/plain/1.json (5-17, `ot`; 57-66, `ot`); BSB | Repository; BSB text; an echo the Luke note records |
+| Husband and wife side by side; Manoah a step behind, his wife understanding more; the meal as hospitality, as with Abraham at Mamre; the name ‘beyond comprehension’ and the word family for God's wonders (verse 19); no one sees God and lives; the flame and Gideon's rock (6:19-22) | 8-23 | judges/13.json `cultural`, `literary`, `words` (pil'i, mal'akh) | Repository |
+| Genesis 18:1; Exodus 33:20 | 8-23 | judges/13.json `cultural`; BSB | Repository; BSB text |
+| The angel of the LORD: the terms used almost interchangeably; Hagar, Abraham, Moses, Gideon; the three answers (a created angel bearing God's name, held by many Jewish and some Christian readers; a visible appearance of God, often the Son before the incarnation, held by many Christian interpreters from the early church on; a way of describing God's presence); no side; God himself began the birth and the rescue | 8-23 `hard` | judges/13.json `hard`, `words` (mal'akh) | Repository; each answer in its holders' terms; no side |
+| High hopes: promised, announced, set apart, given the Spirit; the Spirit stirring before he has done anything; chapters 14 to 16 | 24-25 | judges/13.json `story` | Repository |
+| Joshua 19:41; 1 Samuel 2:21 | 24-25 | judges/13.json `historical`, `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 13: the meaning of the verb for the Spirit's stirring in verse 25 (not in the repository's notes); Isaiah 9:6 and the word for wonderful (left out so that no line is drawn to Christ that the New Testament does not draw); the annunciation to Mary as surpassing this one (the deep note's thematic link); the meaning of the name Samson (not in the repository's notes).
