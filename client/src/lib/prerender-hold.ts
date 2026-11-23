@@ -56,13 +56,19 @@ export function holdPrerenderedPage(options: PrerenderHoldOptions = {}): boolean
   const root = doc.getElementById("root");
   const shell = doc.getElementById("lw-shell");
   if (path === "/" || !root || !shell || !Observer) return false;
-  if (!shell.querySelector(".prerender-content") || shell.parentNode !== root) return false;
+  if (!shell.querySelector(".prerender-content")) return false;
+  // Out of #root, so React's first render does not erase it. The prerender
+  // puts it just before #root already (scripts/prerender-heads.mjs), and then
+  // it is not moved: a moved node is painted again, and the browser counted
+  // that second paint, after the app's code had run, as the page's largest.
+  // A shell still inside #root (a page written the older way) is lifted out.
+  if (shell.parentNode === root) root.before(shell);
+  else if (shell.nextElementSibling !== root) return false;
 
-  // Out of #root, so React's first render does not erase it. A new id, so the
-  // self-heal script in index.html (which treats a lingering #lw-shell as an
-  // app that never started) leaves a page that is only waiting on data alone.
+  // A new id, so the self-heal script in index.html (which treats a lingering
+  // #lw-shell as an app that never started) leaves a page that is only
+  // waiting on data alone.
   shell.id = HELD_ID;
-  root.before(shell);
   root.classList.add(WAIT_CLASS);
 
   let done = false;

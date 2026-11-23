@@ -85,8 +85,12 @@ const trpcClient = trpc.createClient({
 // it (lib/static-hero.ts); everywhere else this mounts at once.
 mountAfterStaticHero(() => {
   // A chapter, an essay or a guide keeps its prerendered text on screen until
-  // the real page is ready (lib/prerender-hold.ts).
-  holdPrerenderedPage();
+  // the real page is ready (lib/prerender-hold.ts). The prerender puts that
+  // text just before #root (scripts/prerender-heads.mjs; not yet on /start or
+  // /downloads, which other work is changing).
+  const shell = document.getElementById("lw-shell");
+  const textInPlace = !!shell && shell.nextElementSibling === document.getElementById("root");
+  const held = holdPrerenderedPage();
   const root = createRoot(document.getElementById("root")!);
   const render = () =>
     root.render(
@@ -98,10 +102,11 @@ mountAfterStaticHero(() => {
         </QueryClientProvider>
       </trpc.Provider>
     );
-  // On "/" the static hero is already the page a visitor sees, so the first
-  // render can wait its turn: as a transition React works in short slices and
-  // lets a tap or a scroll through between them, where one long render would
-  // hold the main thread for the whole tree (Lighthouse's blocking time).
-  if (location.pathname === "/") startTransition(render);
+  // On "/" the static hero, and on a page with its own text the held text, is
+  // already the page a visitor sees, so the first render can wait its turn: as
+  // a transition React works in short slices and lets a tap or a scroll
+  // through between them, where one long render would hold the main thread
+  // for the whole tree (Lighthouse's blocking time: 520 ms on an essay).
+  if (location.pathname === "/" || (held && textInPlace)) startTransition(render);
   else render();
 });

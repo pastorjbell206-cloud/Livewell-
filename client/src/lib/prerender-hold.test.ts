@@ -29,6 +29,22 @@ describe("holdPrerenderedPage", () => {
     expect(root.classList.contains(WAIT_CLASS)).toBe(false);
   });
 
+  it("holds a shell the prerender put before #root without moving it, so its text is painted once", () => {
+    document.body.innerHTML = `<div id="lw-shell"><div class="lw-shell-bar"><span>LiveWell</span></div><div class="prerender-content"><article><h1>John 3</h1><p>Nicodemus came by night.</p></article></div></div><div id="root"></div>`;
+    const shell = document.getElementById("lw-shell")!;
+    const root = document.getElementById("root")!;
+    const moves: MutationRecord[] = [];
+    const watch = new MutationObserver((records) => moves.push(...records.filter((r) => r.type === "childList")));
+    watch.observe(document.body, { childList: true });
+    expect(holdPrerenderedPage({ path: "/study/bible/john/3" })).toBe(true);
+    moves.push(...watch.takeRecords().filter((r) => r.type === "childList"));
+    watch.disconnect();
+    expect(moves).toEqual([]);
+    expect(document.getElementById(HELD_ID)).toBe(shell);
+    expect(shell.nextElementSibling).toBe(root);
+    expect(root.classList.contains(WAIT_CLASS)).toBe(true);
+  });
+
   it("never holds the front page, which has its own static hero", () => {
     setPage(true);
     expect(holdPrerenderedPage({ path: "/" })).toBe(false);

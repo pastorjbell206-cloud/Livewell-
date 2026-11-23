@@ -827,6 +827,72 @@ function worldBody(e) {
 }
 
 const PAGE_BODIES = {
+  // The Study Bible's front page: its head, then the 66 books in their seven
+  // sections, each a link to its book, as BookCase lays them out
+  // (pages/study-bible/BibleFront.tsx; the sections from bookFacts.ts).
+  "/study/bible": async () => {
+    const books = readJsonSafe("client/public/bible/books.json") ?? [];
+    const src = fs.readFileSync(path.join(REPO_ROOT, "client/src/pages/study-bible/bookFacts.ts"), "utf8");
+    const sections = [...src.matchAll(/\{ id: "[a-z]+", label: "([^"]+)", short: "[^"]+", from: (\d+), to: (\d+) \}/g)].map((m) => ({ label: m[1], from: Number(m[2]), to: Number(m[3]) }));
+    if (books.length !== 66 || sections.length !== 7) return null;
+    const shelf = sections
+      .map((s) => `<section><h3>${escapeHtml(s.label)}</h3>\n<ul>\n${books.slice(s.from, s.to + 1).map((b) => `<li><a href="/study/bible/${escapeHtml(b.slug)}">${escapeHtml(b.name)}</a></li>`).join("\n")}\n</ul></section>`)
+      .join("\n");
+    return {
+      html: article([
+        `<h1>The Study Bible</h1>`,
+        `<p class="pre-subtitle">The Berean Standard Bible, with notes on every chapter.</p>`,
+        `<section><h2>The 66 books</h2>\n${shelf}</section>`,
+      ]),
+    };
+  },
+  // The tools door: its head, then every tool by its one name and its job, in
+  // its group, as pages/ToolsBody.tsx lists them (lib/toolsList.ts).
+  "/tools": async () => {
+    const { TOOL_GROUPS = [] } = await loadTs("client/src/lib/toolsList.ts");
+    if (!TOOL_GROUPS.length) return null;
+    const groups = TOOL_GROUPS.map(
+      (g) => `<section><h2>${escapeHtml(g.name)}</h2>\n<p>${escapeHtml(g.line)}</p>\n<ul>\n${g.tools.map((t) => `<li><a href="${escapeHtml(t.href)}">${escapeHtml(t.name)}</a><p>${escapeHtml(t.job)}</p></li>`).join("\n")}\n</ul></section>`,
+    );
+    return {
+      html: article([`<h1>Tools and resources</h1>`, `<p class="pre-subtitle">Every tool on LiveWell, free, and each one works on a phone.</p>`, ...groups]),
+    };
+  },
+  // Everything on LiveWell: its head in the page's own words
+  // (pages/Everything.tsx), then the catalogue as the hub listing gives it.
+  "/explore": async () => {
+    const list = hubListingHtml("/explore");
+    if (!list) return null;
+    return {
+      html: article([`<h1>Everything on LiveWell</h1>`, `<p class="pre-lede">Every door, room and tool, on one page. Type to find one.</p>`, list]),
+    };
+  },
+  // Search: its head and the line it shows before anything is typed
+  // (pages/Search.tsx). The box itself waits for the page, so nothing typed
+  // into a held copy is lost.
+  "/search": async () => ({
+    html: article([
+      `<h1>Search LiveWell</h1>`,
+      `<p>Ask in your own words, or type a passage like John 3:16. Find Help, the essays, the answers, the plans, the guides, the family devotions, and the tools are all in here.</p>`,
+    ]),
+  }),
+  // The Wisdom Finder: its head in the page's own words (ToolHead in
+  // pages/tools/WisdomFinder.tsx, the name from lib/toolsList.ts), then the
+  // areas of life, each opening that area on the page (finder.json).
+  "/tools/wisdom-finder": async () => {
+    const { TOOL_LIST = [] } = await loadTs("client/src/lib/toolsList.ts");
+    const tool = TOOL_LIST.find((t) => t.id === "wisdom-finder");
+    const finder = readJsonSafe("client/public/wisdom/finder.json");
+    if (!tool || !finder?.areas?.length) return null;
+    const areas = finder.areas.map((a) => `<li><a href="/tools/wisdom-finder?area=${escapeHtml(a.id)}">${escapeHtml(a.name)}</a><p>${escapeHtml(a.line)}</p></li>`).join("\n");
+    return {
+      html: article([
+        `<h1>${escapeHtml(tool.name)}</h1>`,
+        `<p>Say what you are facing in your own words, or choose an area of life. Each of the ${finder.topics.length} subjects has its own page: the passages that bear on it, each opening to the paragraph it sits in.</p>`,
+        sec("Browse by area of life", `<ul>\n${areas}\n</ul>`),
+      ]),
+    };
+  },
   // The index of the Honest Answers: every question, grouped as the page
   // groups them, each linking to its own page. Each row carries the answer's
   // slug as its id, so an old /answers#<slug> link still lands on it with
@@ -1288,7 +1354,11 @@ function writeRoute(template, route, head, bodyHtml = "") {
   // else it is the first thing on screen, and main.tsx keeps it there until
   // the real page has its content (lib/prerender-hold.ts), so a reader on a
   // phone never watches the text vanish behind "One moment."
-  const body = bodyHtml ? `\n        <div class="prerender-content">\n${bodyHtml}\n        </div>` : "";
+  // At the reading size (.prerender-content--read) where the shell stays in
+  // place: the real page sets its text larger than the old 17px, and a larger
+  // paragraph painted when it arrived became the page's largest paint again.
+  const inPlace = !isHome && !SHELL_STAYS_IN_ROOT.has(route.path);
+  const body = bodyHtml ? `\n        <div class="prerender-content${inPlace ? " prerender-content--read" : ""}">\n${bodyHtml}\n        </div>` : "";
   // The static hero paints from the HTML on the front page only; every other
   // route drops the marker so a deep link never flashes the home hero.
   if (HOME_HERO_MARKER.test(html)) {
@@ -1296,9 +1366,32 @@ function writeRoute(template, route, head, bodyHtml = "") {
   } else if (body) {
     html = html.replace('<div id="root">', () => `<div id="root">${body}`);
   }
+  if (body && !isHome && !SHELL_STAYS_IN_ROOT.has(route.path)) html = shellBeforeRoot(html);
   fs.writeFileSync(target, html);
   return target;
 }
+
+/**
+ * A page with its own text has its shell (masthead and text) before #root,
+ * not inside it, so main.tsx never has to lift it out of React's way
+ * (lib/prerender-hold.ts). Lifted out when the app started, the text was
+ * painted a second time, and the browser counted that second paint, after
+ * the app's code had run, as the page's largest; Lighthouse then counted the
+ * whole app's code before it: a largest paint of 4 s on a phone for text
+ * that was on screen at 1 s. In place from the start, nothing is painted
+ * twice. The self-heal script in index.html still finds #lw-shell by its id.
+ */
+function shellBeforeRoot(html) {
+  const open = '<div id="root">';
+  const at = html.indexOf(open);
+  const shellAt = html.indexOf('<div id="lw-shell"', at);
+  const rootClose = html.lastIndexOf("</div>", html.indexOf("</body>"));
+  if (at < 0 || shellAt < 0 || rootClose < shellAt) return html;
+  const shell = html.slice(shellAt, rootClose).trimEnd();
+  return `${html.slice(0, at)}${shell}\n    ${open}</div>${html.slice(rootClose + "</div>".length)}`;
+}
+/** Pages other work is changing as this lands (2026-11-23); the shell still moves there at run time, as before. */
+const SHELL_STAYS_IN_ROOT = new Set(["/start", "/downloads"]);
 
 /**
  * The Study Bible (client/public/bible/*): every book, every chapter, the
@@ -2377,7 +2470,10 @@ function prerenderQuestions(template) {
           `<p class="pre-eyebrow"><a href="${areaRoute}">${escapeHtml(a.title)}</a></p>`,
           `<h1>${escapeHtml(p.question)}</h1>`,
           review(!p.live),
-          sec("The short answer", mdToHtml(p.shortAnswer)),
+          // A small heading over the short answer, as the page's own card has it
+          // (.qx-short), so the answer sits where the page puts it and the
+          // page's paragraph is never the larger paint.
+          `<section><h2 class="pre-kicker">The short answer</h2>\n${mdToHtml(p.shortAnswer)}</section>`,
           ...parts,
           sec("Read the other side", list(p.otherSide || [])),
           sec("Read further", list(p.further || [])),
