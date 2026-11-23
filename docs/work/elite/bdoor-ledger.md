@@ -16318,3 +16318,21 @@ A third change to 1 Samuel's book page, made at the first push (2026-11-23): the
 | The care line (‘If sadness has settled on you and will not lift...’ to ‘...lists places to turn.’) | 14-23 `hard` | 1-thessalonians/plain/5.json (16-22, `hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 16: Isaiah 11:1-2, Jesus' baptism and the hidden king (the deep note's pattern, not a line the New Testament draws to this chapter; Matthew 2:6 is kept as Matthew's own line on Bethlehem); the theology passage note's shepherd boy as a picture of the shepherd of the people; a reading that God did not rebuke Samuel's grief (cut before commit; the note says only that God asked how long it would last).
+
+## The plain notes on 1 Samuel 17 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Valley of Elah as a corridor; Socoh and Azekah; Gath at Tell es-Safi; Khirbet Qeiyafa from 2007, roughly Saul and David's time, proposed as Shaaraim (verse 52), debated; single combat; benayim, the man of the between, only here; the armor's weight, roughly 125 pounds, and the Philistine advantage in metal; six cubits and a span (about nine and a half feet) or four cubits and a span (about six feet nine inches); the camera narrowing; the tall king afraid | 1-11 | 1-samuel/17.json `historical`, `cultural`, `literary`, `story`, `words` (benayim); bible/guides/weights-measures-money.json | Repository; no side on the height or the identification |
+| 2 Samuel 21:19 and 1 Chronicles 20:5, the BSB supplying the brother of, explained in different ways | 1-11 | questions/contradictions/numbers-in-samuel-kings-and-chronicles.json (status live); 1-samuel/17.json `historical`; BSB | Repository; BSB text; no side |
+| Forty days; charaph and the question of honor; chay and the living God; uncircumcised as outside the covenant (Genesis 17); the king's reward as a champion's favor; Eliab as the son Samuel had thought anointed (16:6-7) | 12-30 | 1-samuel/17.json `literary`, `cultural`, `words` (charaph, chay) | Repository |
+| Joshua 3:10 | 12-30 | 1-samuel/17.json `words` (chay); BSB | Repository; BSB text |
+| Faith as memory put to work; Saul's armor not fitting; the sling a weapon, trained slingers (Judges 20:16), a shepherd's defense; verses 45-47 as the center; the misreading of the story as self-belief | 31-47 | 1-samuel/17.json `cultural`, `literary`, `doctrines` (faith, salvation); theology/passage-notes.json (1 samuel 17, `misreadings`) | Repository |
+| Judges 20:16; Psalm 20:7 | 31-47 | 1-samuel/17.json `cultural`; theology/passage-notes.json (1 samuel 17, `echoes`: the Psalms on kings not saved by armies); BSB | Repository; BSB text |
+| The killing told briefly; verse 54 and Jerusalem not yet Israel's, the narrator looking ahead; Saul's question turned toward David's family | 48-58 | 1-samuel/17.json `historical`, `literary` | Repository |
+| 2 Samuel 5:7; Hebrews 11:33-34 | 48-58 | hebrews/plain/11.json (32-40); BSB | Repository; BSB text |
+| Saul's question: not recognizing a court musician, or David grown; a question about the father and household; two accounts set side by side and the shorter Greek form without 55-58; not exclusive, not settled | 48-58 `hard` | 1-samuel/17.json `hard` | Repository; the answers in their holders' terms |
+
+Cut in chapter 17: Colossians 2:15 and Hebrews 2:14-15 and David as a picture of Christ the champion (the deep note says the chapter is a battle story, not an allegory; not a line the New Testament draws to this chapter); Goliath falling facedown as Dagon fell (a likeness the repository's notes do not draw); verse 28 quoted only in part because it carries a dash.
