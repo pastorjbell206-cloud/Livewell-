@@ -15717,3 +15717,21 @@ Cut in chapter 8: Philippians 2:5-8, John 18:36 and John 6:15 (the deep note's c
 | Proverbs 26:27; Psalm 7:16; 2 Samuel 11:21 | 42-57 | judges/9.json `historical`, `doctrines` (judgment); BSB | Repository; BSB text |
 
 Cut in chapter 9: Mark 10:45 and the olive, fig and vine as pictures of Christ's people (the deep note's thematic links, not lines the New Testament draws to this chapter); the meaning of Beth-millo; the place of Thebez (usually Tubas, not certain); Jotham's place of refuge.
+
+## The plain notes on Judges 10 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The fixed pattern of the minor judges' notices; families, wealth and quiet years; Tola saving with no enemy named (the note says no more); Shamir not identified; thirty sons on donkeys as wealth and standing, donkeys before horses (5:10); something close to a local ruling family; Havvoth-jair and the earlier Jair, the two explanations | 1-5 | judges/10.json `historical`, `cultural`, `literary`; judges/12.json `literary` | Repository; no side on Jair |
+| Numbers 32:41 | 1-5 | judges/10.json `historical`; BSB | Repository; BSB text |
+| The seven gods of the region, with Chemosh, Milcom and Dagon named elsewhere; honoring neighbors' gods as normal and as hedging that the covenant counted betrayal; the two enemies and the two stories to come; possible overlap, east and west; the hinge of the book; Rabbah and Amman | 6-9 | judges/10.json `story`, `historical`, `cultural`, `doctrines` (idolatry) | Repository |
+| 1 Kings 11:5; Joshua 24:15 | 6-9 | judges/10.json `words` (bachar); BSB | Repository; BSB text |
+| The first confession and the first refusal; the two lists of seven and completeness; ‘chosen’ and Joshua's challenge; surrender and the putting away of gods; qatsar, God's soul grown short, his patience with their misery running out and not with them; no deliverer sent, the elders searching | 10-16 | judges/10.json `literary`, `words` (chata, bachar, qatsar, amal), `doctrines` (repentance, attributes) | Repository |
+| Jeremiah 2:28; Hosea 11:8; Isaiah 63:9 | 10-16 | judges/10.json `doctrines` (attributes); BSB | BSB text |
+| Did God change his mind: a real warning withdrawn, a test of sincerity, or compassion and not performance (verse 16); whether the repentance was real; judgment and compassion held together, mercy rooted in God's character | 10-16 `hard` | judges/10.json `hard` | Repository; the readings in their holders' terms |
+| Mizpah as watchtower, a common name, this one in Gilead and Jephthah's home; the elders searching and offering the headship | 17-18 | judges/10.json `historical`, `literary` | Repository |
+| Joshua 22:9 and Gilead as the land of Reuben, Gad and half of Manasseh | 17-18 | judges/11.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 10: Matthew 9:36 and 1 Thessalonians 1:9-10 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the Maonites of verse 12 and the Septuagint's reading of Midianites; the place Kamon.
