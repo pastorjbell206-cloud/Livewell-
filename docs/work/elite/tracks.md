@@ -1,6 +1,6 @@
 # Tracks: the engine, the tracks, and how to write the next
 
-Date: 2026-11-21 (the engine and the first track, branch `elite/nav`); 2026-11-23 (the skeptic's track, the first book study, leader's guides and print views, branch `elite/tools`).
+Date: 2026-11-21 (the engine and the first track, branch `elite/nav`); 2026-11-23 (the skeptic's track, the first book study, leader's guides and print views, branch `elite/tools`); later on 2026-11-23 (the tracks for stepping back, going deeper and the family, and a leader's guide for every track, branch `elite/tools`).
 
 James on 2026-11-21: "I don't want to lose all of those tools. I want to make sure that they're used. What is the best way for people to learn and to study? ... Certain tracks or like steps of discipleship or pathways of discipleship ... Deep in one ... What would be best?" What was agreed: a few tracks built as steps. Each of the five roads on /start becomes a track of numbered sessions of about ten minutes, each session using something the site already has and ending by asking something of the reader; then "Deep in one", a book studied chapter by chapter in the same shape; and a group version of each. This unit builds the model: the engine, and the track for "I'm new to this". The other four tracks and the book study are not written.
 
@@ -168,7 +168,7 @@ The teaching reads each chapter in Mark's own shape and agrees with the live not
 
 ## Proposed sessions for the other three tracks
 
-Titles and the page each would open. Every address below was live on 2026-11-21. No prose is written. Some open a kind of page the gate does not list yet (a hub such as /questions, /study/bible or /theology/history); add a kind for it in `KINDS` and `KIND_LABEL` first, as the skeptic's track did for /skeptics.
+Titles and the page each would open. Every address below was live on 2026-11-21. No prose is written. (All three were written in the third run, below, with the changes it records.) Some open a kind of page the gate does not list yet (a hub such as /questions, /study/bible or /theology/history); add a kind for it in `KINDS` and `KIND_LABEL` first, as the skeptic's track did for /skeptics.
 
 **I've stepped back from faith**
 
@@ -233,10 +233,12 @@ Titles and the page each would open. Every address below was live on 2026-11-21.
 12. **The leader's guides (2026-11-23).** Their advice on size (four to eight for the skeptic, four to ten for Mark), seventy-five minutes, the order of a meeting, and what a leader does when someone is hurting or a child may be in danger, are new sentences in his name. The track for someone new had none on that day; the third run wrote it (below).
 13. **The track for someone who stepped back (third run).** Its name, "Your questions, taken seriously", the road's own note on /start; the two sessions it adds to the proposed ten (John 9 and Matthew 5, below); that "When God seems silent" opens the page on feeling far from God and keeps the family film as an extra; and every sentence of its teaching and its leader's guide, which meet people a church has hurt.
 14. **The track for going deeper (third run).** Its name, "Study, history, doctrine", the road's own note; that session 10 opens the which-view page and not the theology quiz (above), and whether the quiz should keep recommending essays from the whole archive; and the choice of Philippians and Romans 8 as the book to read whole and the hard chapter to study.
+15. **The track for the family (third run).** Its name, "Start at the table tonight", the road's own note; the two sessions it adds (Deuteronomy 6 and Ephesians 6); that it is written for the grown-up, with something to try with the children most weeks; and every sentence of its teaching and its leader's guide, which meet marriages and children in trouble, and which say that a leader tells the authorities when a child may be in danger.
+16. **CLAUDE.md's Decision Log entry on tracks** still says the other three roads are listed on /tracks under Coming. It is now out of date; an agent does not edit that file.
 
 ## Not built
 
-- The track for the family, until the third run writes it (below), and a second book study.
+- A second book study ("Deep in one" after Mark), and which book it is (decision 7).
 - A PDF of a track or of a leader's guide (decision 8). Each prints from the browser.
 - Any account, sync between devices, or reminder.
 
@@ -287,7 +289,7 @@ James on 2026-11-23, the same request: "Finish the tracks: 'I'm skeptical' first
 
 ### The engine
 
-Changes to the kinds (`scripts/lib/tracks.mjs`, `lib/tracks.ts`), each made with the track that first needed it: `history` for church history, the course or one of its lessons, and `case` widened to take the library's room (/questions) and its areas as well as a piece (the track for someone who stepped back); `bible` for the Study Bible's own pages (its front page, the story, the doctrines, the guides), `context` for Bible background, a guide or the list of them, and `guide` widened to take the study guides' own page (the track for going deeper). The test that held the leader's guides to the skeptic's track and Mark now holds every track to having one, and the page test for a track with no leader's guide yet serves a copy of the first track without its guide.
+Changes to the kinds (`scripts/lib/tracks.mjs`, `lib/tracks.ts`), each made with the track that first needed it: `history` for church history, the course or one of its lessons, and `case` widened to take the library's room (/questions) and its areas as well as a piece (the track for someone who stepped back); `bible` for the Study Bible's own pages (its front page, the story, the doctrines, the guides), `context` for Bible background, a guide or the list of them, and `guide` widened to take the study guides' own page (the track for going deeper); and `explorer` for the Bible Explorer, the map or one of its stops (the track for the family). With every road written, /tracks no longer shows its list of roads still coming, as the page was built to do. The test that held the leader's guides to the skeptic's track and Mark now holds every track to having one, and the page test for a track with no leader's guide yet serves a copy of the first track without its guide.
 
 ### The third track: Your questions, taken seriously (I've stepped back from faith)
 
@@ -346,6 +348,33 @@ With its extra links the track uses eleven kinds of page: the Study Bible's own 
 Every claim outside Scripture rests on a live page: that Philippians can be read aloud in about fifteen minutes and is Paul's warmest letter, written from prison (its introduction); what each guide to reading covers, that the heroes of the stories are rarely models, that Hebrew poetry works by parallel lines and does not rhyme, that a proverb is not a promise, and that reading a letter is reading someone else's mail (the guides); the seven steps (the study method, `lib/study-method.ts`); the three readings of Romans 8:29-30 and that the notes do not choose (Romans 8's notes); the story's opening paragraph, its eleven parts and its placing of each chapter (the story page), and the 2027 plan's order (it is built from the story); the verse in its setting, the prisoner's thank-you note, the hunger of verse 12 and the thanks of verse 14 (the background guide); what a doctrine study holds (the doctrines page); Arius, Nicaea in 325, the one Greek word, Constantinople in 381, and the churches that confess the creed (the Nicene Creed's page); the course's fourteen lessons from Pentecost to the church since 1900, the martyrs and monks, the crusades, the inquisition, the revival preachers and slavery, the councils as a human story, and the Reformation's recovery and its violence and division (the course and its lessons); first, second and third order, with the Trinity, baptism, God's rule and human freedom, and the age of the earth as the site marks them (`lib/theology.ts`); "a mirror, not a verdict" (the which-view page); the trellis, being formed by what you repeatedly do, and the rhythms named (the rule of life); and the study guides' leader's guides with the answer behind every question (the study guides page).
 
 The leader's guide is for a group already reading the Bible that wants more than a devotional. It says the sessions ask for reading between meetings, to sort a disputed question by its order before arguing it, to let each view be stated as its own defenders would accept, to hold the line where the creeds hold it and an open hand elsewhere, to welcome people from other churches, and what to do when a doctrine lands on someone's grief or fear.
+
+### The fifth track: Start at the table tonight (I'm leading a family)
+
+Twelve sessions, `client/public/tracks/family.json`, for the road "If you're leading a family", which now names it. Its name is the road's own note on /start. All six of the road's steps are inside it: tonight's devotion in session 1, the catechism in 3, the Bible Explorer in 5, the family reading plans and every devotion in 7, and Raising Believers in 12. The sessions are for the grown-up; most end with something to try with the children that week.
+
+It follows the proposed list with two sessions added, both from pages the site already has. Deuteronomy 6 (session 2) gives the reason for everything else: the Bible's most direct word on handing faith to children is to talk, at home and on the road, and a parent's answer to a child's "why" begins with rescue, not rules. Ephesians 6 (session 9) is the session for a parent who gets it wrong: Paul limits a parent's authority as soon as he names it, the page for worn-out parents says how to repair, and the notes refuse every use of the passage against a harmed child. "Talking with a teen" became "Talking with a teenager", and the last session adds the page for a marriage in trouble as an extra.
+
+| # | Session | Opens | Kind |
+|---|---|---|---|
+| 1 | Tonight | Tonight's devotion | Family devotion |
+| 2 | At home and on the road | Deuteronomy 6, passage by passage | Bible chapter |
+| 3 | One question, learned together | The family catechism | Catechism |
+| 4 | The whole Bible in two minutes | The whole Bible in two minutes | Short film |
+| 5 | The map | Bible Explorer | Bible Explorer |
+| 6 | Praying at the table | Prayer | Short film |
+| 7 | A plan you can keep | Family reading plans | Plan |
+| 8 | When a child asks a hard one | Who made God? | Short film |
+| 9 | When you get it wrong | Ephesians 6, passage by passage | Bible chapter |
+| 10 | When a teenager says no | What do I do when my teenager says they don't believe? | Honest Answer |
+| 11 | Talking with a teenager | The Parent and Teen Conversation | Tool |
+| 12 | For the grown-ups | Raising Believers: the study guide | Study guide |
+
+With its extra links the track uses eleven kinds of page: family devotions, Find Help (family devotions, parenting, a marriage in trouble), Bible chapters, the catechism, films, the Bible Explorer (a new kind, `explorer`, for the map or one of its stops), a plan, the case for the faith (who made God, for the parent), an Honest Answer, a tool and a study guide. Care lines, each reused whole: anger at home that has made anyone afraid, and the abuse of a child as a crime to be reported (9); grief (10); the abuse of a child again, where a teenager may say home isn't safe (11); and being hurt at home (12). No session promises that any method produces believing children, and session 12 says so plainly, as Raising Believers does.
+
+Every claim outside Scripture rests on a live page: five minutes counts, start smaller than you think, little ones and teenagers (the page on family devotions); what a devotion holds and that /family/tonight always means tonight's (the devotion pages, `pages/family/Tonight.tsx`); talk, not schedule or out-argue, and rescue before rules (Raising Believers and Deuteronomy 6's notes); the catechism's seventy-six questions, its two answers, its verse and its prayer, and its practice one question at a time (the catechism page); the story as one road from the garden to the city (the film); the map's two reading levels, its stops and its threads (the Explorer); what prayer is, and the unanswered prayer the film does not hide (the prayer film, quoting the catechism); the four family reading plans, their lengths and the days kept on the device, and the seventy-two weekly devotions (the plans and devotions pages); Passover built around a child's question, and careful people who have thought about these questions a long time (Raising Believers, and the film on who made God); harshness, unfairness, broken promises and never having time, and repair without adding a but (Ephesians 6's notes and the parenting page); don't argue them back and don't grieve them gone, listening until they finish, and the father who runs (the Honest Answer); twelve statements, codes swapped, about five minutes each, nothing sent, and a teenager who isn't safe told where to go (the tool); and no method that guarantees believing children, the five sessions of Raising Believers, and nobody meant to raise children alone (the study guide and the parenting page).
+
+The leader's guide is for a group of parents. Each takes the sessions alone; the meeting is where they compare notes on what they tried at home, with no one judged for a hard week. It says to arrange care for children in another room, that what is said about anyone's children or marriage stays in the room unless someone is in danger, to guard against both the promise of a method and the blame of a wandering child, and that if anyone says a child is being harmed, or may be, the leader tells the authorities and does not promise to keep it secret. If someone is afraid of a husband or wife, their safety comes first.
 
 ### Gates record (third run, first push: the track for someone who stepped back, and the first track's leader's guide)
 

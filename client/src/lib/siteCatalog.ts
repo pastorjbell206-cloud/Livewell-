@@ -128,7 +128,7 @@ export const DOORS: Door[] = [
         id: "bible.how-to-study", name: "How to study the Bible", line: "Seven steps for studying a passage, in order.", href: "/study/how-to-study", icon: "Milestone",
         inside: [
           { id: "bible.guides", name: "Guides to reading the Bible", line: "How the Bible came to us, and how to read each kind of book.", href: "/study/bible/guides", icon: "Compass", count: { n: 24, of: "guides" } },
-          { id: "bible.tracks", name: "Tracks", line: "Short sessions in order: new to faith, skeptical, stepped back, going deeper, or Mark.", href: "/tracks", icon: "Route" },
+          { id: "bible.tracks", name: "Tracks", line: "Short sessions in order: new, skeptical, stepped back, deeper, family, or Mark.", href: "/tracks", icon: "Route" },
         ],
       },
       {

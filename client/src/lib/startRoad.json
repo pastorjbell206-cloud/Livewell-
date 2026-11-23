@@ -222,6 +222,10 @@
       "title": "If you're leading a family",
       "note": "Start at the table tonight",
       "plate": "table",
+      "track": {
+        "slug": "family",
+        "sessions": 12
+      },
       "steps": [
         {
           "title": "Tonight's devotion",

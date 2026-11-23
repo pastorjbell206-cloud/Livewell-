@@ -50,6 +50,7 @@ export const KINDS = {
   history: { name: "Church history: the course, or one of its lessons", match: /^\/theology\/history(\/[a-z0-9-]+)?$/ },
   bible: { name: "The Study Bible's own pages: its front page, the story, the doctrines, the guides", match: /^\/study\/bible(\/(story|doctrines|guides))?$/ },
   context: { name: "Bible background: a guide to the world it was written in, or all of them", match: /^\/resources\/context(\/[a-z0-9-]+)?$/ },
+  explorer: { name: "The Bible Explorer: the map, or one of its stops", match: /^\/study\/explorer(\/[a-z0-9-]+)?$/ },
 };
 
 /** A track uses at least this many kinds across its sessions. */

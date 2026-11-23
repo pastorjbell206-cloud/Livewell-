@@ -177,7 +177,9 @@ describe("the tracks' data", () => {
 
   it("keeps every step of a road inside the track it has become", () => {
     const withTrack = ROADS.filter((r) => r.track);
-    expect(withTrack.map((r) => r.id)).toEqual(expect.arrayContaining(["new", "skeptical", "stepped-back", "deeper"]));
+    expect(withTrack.map((r) => r.id)).toEqual(expect.arrayContaining(["new", "skeptical", "stepped-back", "deeper", "family"]));
+    // Every road on /start has become a track.
+    expect(ROADS.filter((r) => !r.track).map((r) => r.id)).toEqual([]);
     for (const road of withTrack) {
       const file = JSON.parse(fs.readFileSync(path.join(PUBLIC, `tracks/${road.track!.slug}.json`), "utf8"));
       const linked = new Set(file.sessions.flatMap((s: { open: { href: string }; also?: { href: string }[] }) => [s.open.href, ...(s.also ?? []).map((l) => l.href)]));

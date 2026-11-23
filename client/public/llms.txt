@@ -51,9 +51,10 @@ books). One page lists everything the site holds.
   keep, with a guide for a group; twelve sessions for someone new to faith or
   coming back, twelve for the skeptic that state the case against first,
   twelve for someone who has stepped back from faith or from church, twelve
-  for going deeper in study, history and doctrine, and sixteen through the
-  Gospel of Mark, a chapter at a time; every track has a leader's guide at
-  /tracks/<slug>/leader, and prints whole at /tracks/<slug>/print):
+  for going deeper in study, history and doctrine, twelve for a parent or
+  anyone leading a family, and sixteen through the Gospel of Mark, a chapter
+  at a time; every track has a leader's guide at /tracks/<slug>/leader, and
+  prints whole at /tracks/<slug>/print):
   https://www.livewellbyjamesbell.co/tracks
 - Bible Explorer (the whole Bible as one story on one illustrated map, for
   ages 7 to 16, written at two reading levels, with a drawn scene, verses and
