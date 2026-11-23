@@ -891,3 +891,7 @@ Honest Answers: all twenty-three argued answers read; about 64 rows verified aga
 4. **Secondhand on the question library** (Part 6): the books named through the site's own notes and studies. Keeping them is honest about where they come from; it is not "opened or cut".
 5. **First-person lines**, not changed: "that's where I lived for years" (resurrection), "I held the comfortable view" (good teacher), "I say it as a man who spent years sure no one was there" and "I came to faith from atheism" (God exists), "I came to faith from atheism" (good without God; New Atheists), "I was raised without a father" (wishful thinking), "I was an atheist" (meaning), "I have five sons" (genocide), "I'm a Baptist pastor ... and I am one" (slavery). The ledger calls the facts confirmed biography; only you can say whether the sentences are yours.
 6. **Positions not touched.** No paragraph stating your view on homosexuality, women in ministry or abortion was edited.
+
+### After the second pass
+
+- **Restored:** Russell's paragraph in `/writing/is-hell-real-and-is-it-forever`, word for word as it stood before 2.4 cut it, now that 3.20 has verified the lecture against two full copies. The first pass cut it only because no copy could be opened.
