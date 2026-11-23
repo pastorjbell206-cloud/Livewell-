@@ -16148,3 +16148,19 @@ Cut in chapter 5: Colossians 2:15 and the cross as God's victory in apparent def
 | The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 19-21 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 6: Hebrews 10:19-22 and the way into the holy place through Christ (the deep note calls it thematic, not a line the New Testament draws to this chapter); offerings of model body parts at later Greek shrines (not needed); the priests of Aaron's line in the Joshua 21 list (narrowed to the Levites, as the deep note says).
+
+## The plain notes on 1 Samuel 7 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Samuel back after the ark story; the twenty years as the time until Israel's turning, the ark there until David, longer in all; Baal the storm god and Ashtoreth (Astarte) of fertility and war, prudent-seeming to farmers; repentance as a turning with things done; pouring out water found nowhere else in such an assembly, its meaning uncertain (humility, helplessness, a break with the past); shaphakh joining Hannah's prayer (1:15) and the people's; Mizpah, watchtower, in Benjamin, Tell en-Nasbeh, a gathering place (Judges 20:1) | 1-6 | 1-samuel/7.json `story`, `historical`, `cultural`, `words` (shaphakh), `doctrines` (repentance, idolatry) | Repository; the readings of the water rite in their holders' terms |
+| Joshua 24:23; Genesis 35:2; Lamentations 2:19 | 1-6 | 1-samuel/7.json `cultural` (Lamentations 2:19); BSB | Repository; BSB text |
+| Chapter 4 answered point by point (Ebenezer, the ark absent); a Judges pattern without a warrior; prayer and sacrifice, the battle won by thunder (2:10); the whole burnt offering; memorial stones (Genesis 28:18; Joshua 4); Ebenezer, stone of help, thus far as place or time, the two Ebenezers and the reversal; the Amorites as the older peoples | 7-14 | 1-samuel/7.json `literary`, `cultural`, `historical`, `words` (even ha-ezer, azar) | Repository |
+| Jeremiah 15:1; Psalm 121:2; Genesis 28:18; Joshua 4:7 | 7-14 | 1-samuel/7.json `doctrines` (prayer), `words` (Psalm 121:1-2), `cultural`; BSB | Repository; BSB text |
+| Verse 13 and the later Philistine posts: no great invasion while Samuel judged; the threat belonging to Saul's reign; a source idealizing Samuel's time; the chapter's purpose agreed | 7-14 `hard` | 1-samuel/7.json `hard` | Repository; the readings in their holders' terms |
+| The summary in the style of Judges; Samuel last and in some ways greatest of the judges, prophet, priest and deliverer; shaphat as ruling and setting right; the small circuit centered in the hill country | 15-17 | 1-samuel/7.json `story`, `literary`, `historical`, `words` (shaphat) | Repository |
+| Acts 13:20; Hebrews 11:32-33 | 15-17 | acts/plain/13.json (13-25); hebrews/plain/11.json (32-40); BSB | Repository; BSB text; the New Testament's own lines |
+
+Cut in chapter 7: 1 Timothy 2:5 and Hebrews 7:25 and Samuel as a pattern of Christ's mediation (the deep note's pattern, not a line the New Testament draws to this chapter); 2 Samuel 23:16 and David's poured-out water (a different setting, as the deep note says).
