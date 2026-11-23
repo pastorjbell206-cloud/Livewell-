@@ -1,0 +1,77 @@
+{
+  "id": "prayer-struggles",
+  "updated": "2026-11-23",
+  "passages": [
+    {
+      "ref": "Luke 11:1",
+      "context": "Luke 11:1-4",
+      "where": "The disciples have watched Jesus pray for years, and one of them still has to ask him to teach them. The site's note says they learned to pray by watching him, and that Christian prayer is a sharing in his relation to the Father. Its plain note points out that they did not ask to be taught about prayer, but to pray."
+    },
+    {
+      "ref": "Matthew 6:7-8",
+      "context": "Matthew 6:5-8",
+      "where": "Jesus warns against piling up words as if God had to be worn down, because the Father knows what his children need before they ask. The site's note says this makes prayer simple, not pointless: not information or persuasion, but the trust of children speaking to a father. Its plain note says the Father is not waiting for the right words."
+    },
+    {
+      "ref": "1 Samuel 1:13-15",
+      "context": "1 Samuel 1:9-18",
+      "where": "Hannah, childless and taunted, prays in her heart with only her lips moving, and the priest Eli thinks she is drunk. She answers that she has been pouring out her soul before the LORD. The site's plain note asks whether you have poured out your own soul to God, or only said the words you thought he wanted."
+    },
+    {
+      "ref": "Psalm 62:8",
+      "context": "Psalm 62:5-8",
+      "where": "David, who has had to tell his own soul to wait quietly for God, calls the people to trust God at all times and pour out their hearts before him. The site's plain note says this is an invitation to bring not tidy prayers but everything."
+    },
+    {
+      "ref": "Nehemiah 2:4-5",
+      "context": "Nehemiah 2:1-5",
+      "where": "The Persian king asks Nehemiah what he wants, and in the moment between the question and the answer Nehemiah prays to the God of heaven. The site's note calls it a silent prayer. Some of the Bible's prayers take one breath."
+    },
+    {
+      "ref": "Psalm 5:3",
+      "context": "Psalm 5:1-3",
+      "where": "At daybreak David lays his plea before the LORD and waits in expectation. The site's plain note suggests starting tomorrow the same way: early, before the day fills up, setting your requests before God and then watching for his answer."
+    },
+    {
+      "ref": "Luke 18:1",
+      "context": "Luke 18:1-8",
+      "where": "Luke states the point of the parable before Jesus tells it: his followers must pray at all times and not lose heart. The site's note says the enemy of prayer named here is not unbelief first but weariness, and the plain note says the parable works by contrast: God is not an unjust judge to be nagged, and prayer is refusing to give up on a God who is good when his answer seems slow."
+    },
+    {
+      "ref": "Matthew 26:39",
+      "context": "Matthew 26:36-46",
+      "where": "In Gethsemane Jesus falls on his face and asks for the cup to pass, and then prays, not as I will, but as you will. The site's note says the prayer holds together a real request and a real surrender, and that submission in prayer does not mean pretending not to want something; it means entrusting the wanting to the Father."
+    },
+    {
+      "ref": "Hebrews 7:25",
+      "context": "Hebrews 7:23-25",
+      "where": "Hebrews says Jesus is able to save completely those who come to God through him, because he always lives to intercede for them. The site's plain note calls this one of the most comforting words in the Bible: someone is praying for you who never stops and never fails."
+    }
+  ],
+  "misread": [
+    {
+      "ref": "Mark 11:24",
+      "context": "Mark 11:22-25",
+      "taken": "“Whatever you ask for in prayer, believe that you have received it” is taught as a promise that anyone who believes hard enough will get what they ask, so that an unanswered prayer is blamed on weak faith.",
+      "says": "The site's note says this verse has been badly misused, and that it has hurt many who prayed for a sick child or a broken marriage and did not see it healed. The words begin with faith in God, not faith in your own certainty, and they end at once with forgiving others. Jesus himself asked in Gethsemane for the cup to pass and then accepted that it would not, and Paul asked three times for his thorn to be taken and was told no. The promise is a call to bold prayer to a Father who can do anything, not a tool for making God do what we want."
+    }
+  ],
+  "whole": [
+    "Many people who believe in God find prayer the hardest part of faith. The mind wanders after a sentence. The words sound hollow, or the same as yesterday's. Some never learned how and feel foolish starting now. Some prayed for years for a child, a marriage or a healing, and stopped when nothing changed. And some were told that unanswered prayer means weak faith, so that every silence now feels like an accusation.",
+    "Scripture does not treat prayer as a skill the spiritual are born with. The disciples, who had watched Jesus pray, still had to ask him to teach them. Jesus warned against piling up words as if God had to be worn down, because the Father already knows what his children need; the site's note says that makes prayer simple, not pointless. Underneath much of the struggle is a picture of God as someone who must be impressed or persuaded, and of prayer as a performance that has to be done well. Hannah prayed so rawly that the priest thought she was drunk, and hers is the prayer Scripture keeps.",
+    "So begin small and honest. Pray short prayers often, as Nehemiah prayed in the moment between the king's question and his answer. Give God the morning's first words and then wait, as David did. Use the words Jesus gave, slowly, a line at a time, and when your own words fail, pray a psalm; pour out your heart rather than tidying it first. Keep bringing back what you have stopped asking for, because Jesus told the parable of the widow so that his followers would not lose heart. And on the days when you cannot pray at all, remember that the Spirit helps us in our weakness.",
+    "The hope here is that prayer was never resting on you. In Gethsemane Jesus prayed with both halves honest, let this cup pass, and yet not as I will, and Hebrews says he always lives to intercede for those who come to God through him. The site's note on Luke 11 says Christian prayer is a sharing in his relation to the Father. You are not praying alone, and you never were."
+  ],
+  "sit": "What is one thing you have stopped praying about, and what would it be like to say it to God tonight in a single honest sentence?",
+  "prayer": {
+    "ref": "Psalm 116:1-2",
+    "lead": "The site's plain note says verse 2 is worth stopping on: because God has listened, the singer will keep praying for the rest of his life. Answered prayer is not the end of prayer. It is a reason for more."
+  },
+  "next": [
+    { "kind": "Find Help", "label": "I don't know how to pray", "href": "/help/prayer" },
+    { "kind": "Study guide", "label": "Prayer", "href": "/studyguides/prayer" },
+    { "kind": "Study guide", "label": "The Lord's Prayer", "href": "/studyguides/the-lords-prayer" },
+    { "kind": "Reading", "label": "Waiting and Unanswered Prayer", "href": "/life/waiting-and-unanswered-prayer" },
+    { "kind": "Wisdom", "label": "When God Feels Far Away", "href": "/wisdom/spiritual-dryness" }
+  ]
+}
