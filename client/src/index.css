@@ -2184,6 +2184,8 @@ aside .sb-tabs{margin-left:calc(var(--s-4) * -1);margin-right:calc(var(--s-4) * 
 .lw-find__field input::placeholder{color:var(--ink-muted)}
 .lw-find__field:has(input:focus-visible){outline:2px solid var(--ink);outline-offset:3px}
 .lw-find__field input:focus-visible{outline:none!important;box-shadow:none!important}
+/* My Library: the carry preview's heading takes focus when a file is chosen; it shows as an underline, as tool headings do (tool-shell.css). */
+.carry-preview__title:focus-visible{outline:none!important;box-shadow:none!important;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:2px;text-underline-offset:.22em}
 .home-sec--dark .lw-find__label{color:var(--charcoal-fg)}
 .home-sec--dark .lw-find__field{background:var(--charcoal-fg);border-color:var(--charcoal-line);color:var(--charcoal)}
 .home-sec--dark .lw-find__field input{color:var(--charcoal)}
