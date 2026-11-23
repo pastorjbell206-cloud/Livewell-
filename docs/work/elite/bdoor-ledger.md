@@ -15801,3 +15801,19 @@ Cut in chapter 13: the meaning of the verb for the Spirit's stirring in verse 25
 | Genesis 29:27; patah again with Delilah (16:5) | 10-20 | judges/14.json `cultural`, `words` (patah); BSB | Repository; BSB text |
 
 Cut in chapter 14: Romans 5:10, Ephesians 5:25 and Luke 3:22 (the deep note's contrasts with Christ, not lines the New Testament draws to Samson); the riddle as a picture of the gospel (named by the deep note as devotional use, not the meaning); the form of marriage in which the wife stays in her father's house (left to chapter 15); Tel Batash as Timnah; whether walking in the vineyards touched his vow (the text does not say).
+
+## The plain notes on Judges 15 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A spiral of reprisal; the marriage in which the wife stays in her father's house, as some read it; the wheat harvest in late spring and early summer, the burned grain, vineyards and olives as a grave blow; shu'al as foxes or jackals; the burning of the wife and her father as the threat of 14:15 carried out; she never speaks and pays for the men's quarrel; revenge in honor culture and the law's limits (Exodus 21:23-25) | 1-8 | judges/15.json `story`, `historical`, `cultural`, `literary`, `doctrines` (sin); judges/14.json `cultural` | Repository |
+| Exodus 21:24; Proverbs 20:22; Romans 12:17 | 1-8 | judges/15.json `cultural`, `words` (naqam); BSB | Repository; BSB text |
+| Judah, first in chapter 1, now accepting Philistine rule and handing over its deliverer; ‘I have done to them what they did to me’; Lehi as jawbone, its place unknown, and Etam uncertain; the fresh jawbone and contact with death; the play on donkey and heap; the boast without God | 9-17 | judges/15.json `historical`, `cultural`, `literary`, `words` (lechi, shava) | Repository |
+| Judges 1:19; 1 Samuel 16:13 | 9-17 | judges/15.json `historical`; BSB | Repository; BSB text |
+| The first recorded prayer, at the end of his strength; the first credit given to God; teshu'ah as rescue or victory; God answering a self-directed life; Ramath-lehi and En-hakkore keeping both sides; the twenty years and the ending still to come | 18-20 | judges/15.json `story`, `literary`, `words` (teshu'ah), `doctrines` (prayer) | Repository |
+| Exodus 17:6; Psalm 18:6 | 18-20 | BSB | BSB text |
+| Whether God approves the violence: told without being made a model; revenge plain, the burning brutal, the slaughter out of proportion; the Spirit and the answered prayer; the two readings (God using Samson's acts to begin the rescue; the silence inviting judgment of gift without character); the Bible describes much it does not approve | 18-20 `hard` | judges/15.json `hard` | Repository; both readings in their holders' terms |
+
+Cut in chapter 15: Mark 15:1, Luke 23:34, John 19:28 and John 4:10 (the deep note's thematic links to Christ, not lines the New Testament draws to Samson).
