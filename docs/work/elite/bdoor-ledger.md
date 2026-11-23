@@ -15626,3 +15626,22 @@ Cut in chapter 3: what ‘son of Anath’ may mean (not in the repository's note
 | Jael, hero or murderer: the breach of hospitality and of the peace with Jabin; 5:24; the three ways readers weigh her act; agreement that the death fulfils verse 9; the ethics left to the reader; no pattern for today and no warrant to harm one who has trusted | 17-24 `hard` | judges/4.json `hard`; judges/5.json `hard` | Repository; each view in its holders' terms; no side |
 
 Cut in chapter 4: that the name Kenite may be linked with metalworking (the deep note calls it uncertain); Jael and Genesis 3:15 (a link some readers make and the New Testament does not); 1 Corinthians 1:25 as a line to the cross (the deep note's thematic link); whether Harosheth-hagoyim can be placed.
+
+## The plain notes on Judges 5 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The song as one of the oldest substantial pieces of Hebrew literature, perhaps not long after the events, around the twelfth century BC on the usual dating; old and difficult Hebrew and the differing translations of verses 10 to 15; the view that old style can be imitated; most hold it early | 1-11 | judges/5.json `historical` | Repository; both views stated |
+| Victory songs sung by women (Miriam; the women's song for David); parallel lines; the LORD from Seir and Edom, the southern tradition of Sinai; the storm set against Baal; ‘a mother in Israel’ as a title of honor and care; verse 8; the singers at the wells and an oral culture; ‘righteous acts’ as God putting things right | 1-11 | judges/5.json `cultural`, `literary`, `words` (tsedaqah, em, nadav); reading-poetry guide (song of Deborah among the poems in the stories) | Repository |
+| Deuteronomy 33:2; Psalm 68:8; Habakkuk 3:3; Exodus 15:21 | 1-11 | judges/5.json `cultural`; BSB | Repository; BSB text |
+| The tribes as a loose alliance and war as voluntary; the ten named, six who came and four who did not (Reuben; Gilead, the eastern tribes; Dan; Asher); Judah and Simeon unmentioned and the two suggested reasons; questions, not curses, for those who stayed; Zebulun and Naphtali; nadav and the freewill offering | 12-18 | judges/5.json `historical`, `words` (nadav), `doctrines` (church) | Repository |
+| Genesis 49 and Reuben, as the Genesis note reads Judges 5:16; Deuteronomy 33:6; 1 Corinthians 12:26 | 12-18 | genesis/plain/49.json (1-4, `later`); BSB | Repository; BSB text |
+| Taanach and Megiddo; the stars and the Kishon as poetry, and the storm many readers infer; Meroz otherwise unknown, cursed for staying away; the staircase lines of old poetry (verse 27); the song's praise of Jael set in a song of the rescued; the ways readers weigh her act, pointed to the chapter 4 note; no side | 19-27 | judges/5.json `historical`, `literary`; judges/4.json `historical`, `hard` | Repository; no side |
+| Joshua 10:12-14; Psalm 83:9; Luke 1:42 and Mary, by giving birth and not by a sword | 19-27 | joshua/plain/10.json (12-15, `later`); psalms/plain/83.json; luke/plain/1.json (39-45, `ot`); BSB | Repository; BSB text; an echo the Luke note records |
+| The irony of the mother at the window; the plunder she imagines as what Israel had suffered; racham and the crude soldier's phrase for captive women; the two mothers framing the victory; the closing prayer and forty years | 28-31 | judges/5.json `literary`, `words` (racham, em), `cultural` | Repository |
+| Matthew 5:44; Ezekiel 18:23 | 28-31 | judges/5.json `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`differ`); BSB | Repository; BSB text |
+| Whether the song gloats: some hear cruelty; others the oppressor's violence turned back, and a note of pity; a song of the rescued kept honestly; later Scripture and Jesus' command as further light; not the Bible's last word on enemies | 28-31 `hard` | judges/5.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 5: Matthew 13:43 and Colossians 2:15 (the deep note's thematic links to Christ, not lines the New Testament draws to this song); the identification of the places in verses 10 to 15 that translations render differently; verse 22 and verse 30 quoted only in part or paraphrased, because each has a dash in the BSB.
