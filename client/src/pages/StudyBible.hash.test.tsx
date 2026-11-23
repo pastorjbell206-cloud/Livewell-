@@ -10,6 +10,12 @@ import { act, screen, waitFor } from "@testing-library/react";
 
 import { renderWithProviders } from "@/test/harness";
 import StudyBible from "./StudyBible";
+// The chapter page's lazy parts, compiled here rather than inside the test's
+// 5 s, where on a busy machine their first load alone took seconds.
+import "@/pages/study-bible/VerseMarks";
+import "@/pages/study-bible/CrossRefs";
+import "@/components/GoDeeper";
+import "@/pages/study-bible/PlainPassages";
 
 const PUBLIC = path.resolve(__dirname, "../../public");
 
@@ -37,7 +43,10 @@ describe("the Study Bible reader", () => {
     expect(screen.queryByRole("button", { name: "Close the study panel" })).toBeNull();
 
     act(() => window.history.pushState(null, "", "/study/bible/john/3#v16"));
-    expect(await screen.findByRole("button", { name: "Close the study panel" })).toBeInTheDocument();
+    // Waited for by its label, then found by role once: a role query polled
+    // over a whole chapter weighs every button on it each time.
+    await waitFor(() => expect(document.querySelector('[aria-label="Close the study panel"]')).not.toBeNull());
+    expect(screen.getByRole("button", { name: "Close the study panel" })).toBeInTheDocument();
     expect(screen.getAllByText("John 3:16").length).toBeGreaterThan(0);
   });
 });

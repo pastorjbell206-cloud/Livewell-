@@ -19,6 +19,9 @@ import { rowTarget } from "@/lib/topics";
 import { ASK_MORE } from "@/components/questions/AskBox";
 import { entryHref, type Era, type Figure } from "@/lib/historyCourse";
 import TheologyHistory from "./TheologyHistory";
+// The history door's lazy timeline, compiled here rather than inside a test,
+// where on a busy machine its first load ran past findBy's one second.
+import "@/components/history/HistoryTimeline";
 import HistoryEssay from "./history/HistoryEssay";
 import HistoryPeople from "./history/HistoryPeople";
 import Answers from "./Answers";

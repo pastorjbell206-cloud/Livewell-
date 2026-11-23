@@ -11,6 +11,12 @@ import { screen, waitFor } from "@testing-library/react";
 import { renderWithProviders } from "@/test/harness";
 import { VIEW_KEY } from "@/lib/bible-desk";
 import StudyBible from "./StudyBible";
+// The chapter page's lazy parts, compiled here rather than inside a test's
+// 5 s, where on a busy machine their first load alone took seconds.
+import "@/pages/study-bible/VerseMarks";
+import "@/pages/study-bible/CrossRefs";
+import "@/components/GoDeeper";
+import "@/pages/study-bible/PlainPassages";
 
 const PUBLIC = path.resolve(__dirname, "../../public");
 
