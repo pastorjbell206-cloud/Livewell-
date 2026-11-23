@@ -16484,3 +16484,18 @@ Cut in chapter 25: 1 Peter 2:23 and Abigail as a faint picture of intercession (
 | Psalm 42:2, a psalm of the sons of Korah, and 2 Samuel 1:23 | 13-25 | psalms/plain/42.json (the heading, ‘of the sons of Korah’); BSB | BSB text (Psalm 42:2 a thematic line within the Old Testament, not said to be David's) |
 
 Cut in chapter 26: Philippians 2:6-11 and Jesus telling Peter to put away his sword (the deep note calls it a pattern of character, not a prediction or a line the New Testament draws to this chapter); Uriah the Hittite (left to 2 Samuel); 26:19 quoted not at all, since its words of a curse and its closing quotation sit inside David's speech.
+
+## The plain notes on 1 Samuel 27 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Saul's parting words little reassurance; David speaking to himself and not to God, no prayer, priest, ephod or word, against chapter 23; a decision out of exhaustion; the earlier escape from Achish (21:10-15); mercenary service and settlement on the frontier; Ziklag in the western Negev, its site debated; 27:6 and the divided kingdom after about 930 BC; the double life | 1-7 | 1-samuel/27.json `story`, `historical`, `cultural`, `literary`, `doctrines` (faith) | Repository |
+| Psalm 56:3 (a psalm headed for Gath); 1 Chronicles 12:1 | 1-7 | psalms/plain/56.json (1-13, `hearers`); BSB | Repository; BSB text |
+| The cool telling and the gap between deed and word; the desert peoples toward Shur; the southern Geshurites distinct from Aramean Geshur; the Jerahmeelites and Kenites allied with Judah; raiding normal and the Amalekites old enemies (Exodus 17; Deuteronomy 25:17-19); secrecy as the stated motive; mishpat as custom and the future king of justice; aman and Achish's misplaced trust | 8-12 | 1-samuel/27.json `historical`, `cultural`, `literary`, `words` (mishpat, aman, baash) | Repository |
+| Genesis 34:30; Proverbs 12:22 | 8-12 | 1-samuel/27.json `words` (baash: Genesis 34:30); BSB | Repository; BSB text |
+| The raids and lies: under the ban (Exodus 17:14; chapter 15) though the motive secrecy; reported without approval, the silence about prayer; a ruse admired in the weak; no model; the cost beginning in chapter 30 | 8-12 `hard` | 1-samuel/27.json `hard` | Repository; the readings in their holders' terms |
+| No warrant for violence against any person or people; no people living today is Amalek; no nation, land or conflict of today | 8-12 `hard` | deuteronomy/plain/25.json (17-19, `hard`); exodus/plain/17.json (14-16, `hard`) | Repository; as the site's notes state it |
+
+Cut in chapter 27: 1 Peter 2:22 and the son of David who never deceives (the deep note says it is better not to force a link to Christ here); Achish called king though Philistine rulers were usually called lords (not needed); Saul's word of blessing in 26:25 described as parting words, so that the word stays inside quoted Scripture.
