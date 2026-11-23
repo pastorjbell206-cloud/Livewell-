@@ -19,3 +19,10 @@ export async function fetchJson<T = unknown>(
   if (validate && !validate(data)) throw new Error(`fetch ${url} → unexpected shape`);
   return data as T;
 }
+
+/** The same seam for a binary file: fetch + res.ok, then the bytes, or a throw. */
+export async function fetchArrayBuffer(url: string, init?: RequestInit): Promise<ArrayBuffer> {
+  const res = await fetch(url, init);
+  if (!res.ok) throw new Error(`fetch ${url} → ${res.status}`);
+  return res.arrayBuffer();
+}

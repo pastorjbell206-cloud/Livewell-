@@ -806,6 +806,61 @@ A film line in the pdfkit PDFs. The quotes page's small controls, "Clear history
 
 ---
 
+## 23. Run of 2026-11-23: the word vectors, measured on two clean sets
+
+James (2026-11-23): "Raise the Wisdom Finder's first-answer accuracy to at least 70 percent." He had been told the word-vector file (section 19, item 4) was the surest route. This run built it. No topic, menu, door, API procedure or dependency changed; the safety rules are as they were.
+
+### Measured first, written first
+
+**holdout9**, 64 sentences in plain words, each aimed at a topic written in full with every topic id that would be a right answer, and **dev9**, 55 sentences across the library for choosing the vectors' weight, were written and committed (`24b2c85c`) before the matcher, `matching.json` or any vector file was touched. Each sentence was checked against every earlier fixture sentence; thirteen that came too near one were rewritten before anything ran. Measured fresh at that commit: holdout8 54.2% first, 75.0% in the first three; holdout9 50.0% and 71.9%; dev9 72.7% and 81.8%.
+
+### The vector file
+
+- **Source and licence:** GloVe 6B, 100 dimensions (Pennington, Socher and Manning, Stanford, 2014; trained on Wikipedia 2014 and Gigaword 5), released under the Open Data Commons Public Domain Dedication and License v1.0. Read from the npm package `wink-embeddings-sg-100d` 1.1.0 (MIT, GRAYPE Systems), which carries `glove.6B.100d` as JSON; its acknowledgement names the source and the build checks that its first vector is GloVe's own. The tarball's sha256 is in the script. Nothing from the package is a dependency: its file is read once by a script and not kept.
+- **File:** `client/public/wisdom/vectors.bin`, 3.40 MB, 30,277 words (the 30,000 commonest made of letters, then 277 more that the finder's own data uses), each a float32 length and 100 signed bytes of direction. Built by `scripts/build-wisdom-vectors.mjs` (not in CI: the source is 300 MB); the same source gives the same file byte for byte (checked twice).
+- **Loaded only when the finder is used:** `lib/wisdom-vectors.ts` fetches it once the reader focuses or types in the box, presses a sentence to try, picks up an earlier question, or arrives with a question in the address; never on first paint. A question asked before the file arrives waits for it, up to 4 s, so its results never change under the reader; past that, or if the file cannot be had, words alone, as before.
+
+### How the vectors count
+
+A sentence becomes one vector: its words' vectors, each weighted by how uncommon the word is (smooth inverse frequency), added and scaled to length one. Each topic's name and every phrasing become vectors the same way; what they all share is taken out. The nearest of a topic's phrasings adds up to `VECTOR_WEIGHT` (8) from a cosine of `VECTOR_FLOOR` (0.4) up, beside the score the matcher already gave. A safety result is untouched: the help topic of a safety word still stands first, with nothing beside it and no area step (tested with and without the vectors on ten crisis sentences).
+
+### What was tried, on the tuning sets and dev9 only
+
+| Tried | dev9 first / first three | Kept |
+|---|---|---|
+| Words alone (before) | 72.7% / 81.8% | |
+| Each topic as one averaged vector (its name, keywords and phrasings; with its whole page, 16.4% / 41.8%) | 27.3% / 49.1% alone | no |
+| Unknown words expanded to their nearest library words | 69.1% to 70.9% / 81.8% | no |
+| A small classifier trained on the phrasings (softmax over sentence vectors) | 70.9% / 83.6% added to words | no |
+| Phrasings matched loosely (each word or a near neighbour) | 50.9% to 67.3% | no (GloVe's neighbours are too loose) |
+| A phrasing's name only partly met counts in part; common words damped | 69.1% to 76.4% | no gain |
+| **Nearest phrasing, weight 8, floor 0.4** (weights 6 to 14, floors 0.35 to 0.5 tried) | **76.4% / 83.6%** | **yes** |
+
+### Then, once, the clean sets
+
+| Set | Before | After |
+|---|---|---|
+| holdout8 (24, written by someone else) | 54.2% / 75.0% | 58.3% / 75.0% |
+| holdout9 (64, this run) | 50.0% / 71.9% | 54.7% / 71.9% |
+| dev9 (55, tuned on) | 72.7% / 81.8% | 76.4% / 83.6% |
+| holdout7 (30) | 76.7% / 86.7% | 80.0% / 86.7% |
+| holdout (19) | 100% / 100% | 94.7% / 100% ("my wife and I feel like roommates" now has Talking with Your Spouse first, Marriage Trouble in the first three) |
+| cases, holdout2 to holdout6 | unchanged | unchanged |
+
+### The aim is not met, and why
+
+70% first on the clean sets was not reached: 58.3% on holdout8 and 54.7% on holdout9, and the first three stay under 90% (75.0% and 71.9%). Neither clean set was tuned to.
+
+What the misses share: the sentence names the situation in an idiom or by its circumstances, not in any word the library or its neighbours use, or it lands on a neighbouring subject. GloVe was trained on news and encyclopedia text: it places "knots" near "mph", "ring" near "belt", "bailing" near "bailouts", "space" near "nasa", "stuff" near "things". It moves a sentence toward a subject when one of its words means the same as a phrasing's words; it cannot read "my stomach is in knots", "still no ring" or "she needs space and moved her stuff out". Common words in subject names also still pull ("stuff" toward Consumerism and Stuff, "balance" toward Work and Life Balance), and damping them cost as much as it gained.
+
+What would raise it, in the order of what each would take:
+
+1. **More everyday phrasings, written by someone other than the writer of the next holdout.** Every gain so far in sections 13 to 21 came from phrasings; the honest limit is that each new holdout finds words no phrasing has. A pastor, or James, writing ten sentences people have actually said to them for each subject would be both the best data and the truest measure.
+2. **A sentence model rather than word vectors**: a small encoder that reads whole phrases (it would read "stomach in knots" as worry). It needs a runtime library and a model file of 20 MB or more, a new dependency the site's rules do not allow without James.
+3. **Asking the reader one question when the fit is weak**, as "Is it one of these?" already does: it raises what a reader finds, not the number.
+
+---
+
 ## Decisions waiting on James
 
 Every open decision from sections 8 to 17, with the page each affects. Nothing here has been done; each waits on his word.

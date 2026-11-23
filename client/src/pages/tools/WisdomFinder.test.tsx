@@ -1,7 +1,9 @@
 /**
  * The Wisdom Finder page, on the real finder index: a plain sentence finds its
  * subject, nonsense is told so plainly with Find Help in reach, an area lists
- * its subjects, and the verse of the day is always a whole sentence.
+ * its subjects, and the verse of the day is always a whole sentence. The word
+ * vectors are not served here (words alone), except in "the word vectors",
+ * which serves the real file.
  */
 import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
 import { render, screen, waitFor, fireEvent } from "@testing-library/react";
@@ -238,5 +240,54 @@ describe("WisdomFinder", () => {
     fireEvent.click(screen.getByRole("button", { name: "Find" }));
     await waitFor(() => expect(document.querySelector(".wf-best")?.getAttribute("href")).toBe("/wisdom/wayward-child"));
     expect(screen.queryByText("Is it one of these?")).toBeNull();
+  });
+});
+
+describe("WisdomFinder, the word vectors", () => {
+  const VECTORS = fs.readFileSync(path.join(PUBLIC, "wisdom/vectors.bin"));
+  let asked: string[] = [];
+  beforeEach(() => {
+    sessionStorage.clear();
+    asked = [];
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async (input: RequestInfo | URL) => {
+        const url = String(input);
+        asked.push(url);
+        if (url.endsWith("/wisdom/finder.json")) return new Response(JSON.stringify(finder), { status: 200 });
+        if (url.endsWith("/wisdom/vectors.bin")) return new Response(new Uint8Array(VECTORS), { status: 200 });
+        return new Response("{}", { status: 404 });
+      }),
+    );
+  });
+  afterEach(() => vi.unstubAllGlobals());
+
+  const open = async () => {
+    render(
+      <TestProviders>
+        <WisdomFinder />
+      </TestProviders>,
+    );
+    await waitFor(() => expect(screen.getByText("Browse by area of life")).toBeInTheDocument());
+  };
+
+  it("fetches them only once the reader starts to use the finder, not on arrival", async () => {
+    await open();
+    expect(asked.some((u) => u.endsWith("/wisdom/vectors.bin"))).toBe(false);
+    fireEvent.focus(screen.getByRole("searchbox", { name: "What are you facing?" }));
+    await waitFor(() => expect(asked.filter((u) => u.endsWith("/wisdom/vectors.bin"))).toHaveLength(1));
+  });
+
+  it("finds the subject with them, and keeps the help topic first for self-harm, Find Help under it", async () => {
+    await open();
+    const box = screen.getByRole("searchbox", { name: "What are you facing?" });
+    fireEvent.change(box, { target: { value: "my son walked away from the faith" } });
+    fireEvent.click(screen.getByRole("button", { name: "Find" }));
+    await waitFor(() => expect(document.querySelector(".wf-best")?.getAttribute("href")).toBe("/wisdom/wayward-child"));
+    fireEvent.change(box, { target: { value: "i have been cutting myself again" } });
+    fireEvent.click(screen.getByRole("button", { name: "Find" }));
+    await waitFor(() => expect(document.querySelector(".wf-best")?.getAttribute("href")).toBe("/wisdom/suicidal-thoughts"));
+    expect(document.querySelector('.wf-safety a[href="/help"]')).not.toBeNull();
+    expect(screen.queryByText("Just as close")).toBeNull();
   });
 });
