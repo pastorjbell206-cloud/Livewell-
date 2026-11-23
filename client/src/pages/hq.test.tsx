@@ -217,6 +217,15 @@ describe("/answers and /answers/:slug", () => {
     expect(screen.getByRole("link", { name: /All the questions/ }).getAttribute("href")).toBe("/answers");
   });
 
+  it("tells the reader who disagrees where to say so, before previous and next", () => {
+    renderAt("/answers/does-god-actually-exist");
+    const back = screen.getByTestId("push-back");
+    expect(back).toHaveTextContent("Think this answer gets something wrong? Write to James and say where.");
+    expect(within(back).getByRole("link", { name: "Write to James" }).getAttribute("href")).toBe("/contact");
+    const turn = screen.getByRole("navigation", { name: "Previous and next question" });
+    expect(back.compareDocumentPosition(turn) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
+
   it("lays out an argued answer: its parts, the numbered steps and the sources; a plain answer has none of them", () => {
     const a = ANSWERS.find((x) => x.slug === "does-god-actually-exist")!;
     renderAt(`/answers/${a.slug}`);

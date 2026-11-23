@@ -5,8 +5,9 @@
  * argument laid out in numbered steps, and its sources. Under it: the full essay (only while it is on
  * the public shelf, lib/shelf) and the book that takes the question up; the
  * tools that go further where they truly match (data/answerCompanions:
- * Test the Case, Compare the views, Which View Am I?, Find Help); then the
- * previous and next question and the way back to all of them.
+ * Test the Case, Compare the views, Which View Am I?, Find Help); a line for
+ * the reader who disagrees (components/PushBack); then the previous and next
+ * question and the way back to all of them.
  *
  * The prerendered page (scripts/prerender-heads.mjs) carries the same
  * title, description and text, built from the same data at build time.
@@ -17,6 +18,7 @@ import { ArrowLeft, ArrowRight, BookOpen, Compass, LifeBuoy, Link2, Rows3, Scale
 import type { LucideIcon } from "lucide-react";
 
 import Layout from "@/components/Layout";
+import PushBack from "@/components/PushBack";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import { ANSWERS } from "@/data/answers";
@@ -162,6 +164,9 @@ export default function AnswerPage() {
               })}
             </ul>
           )}
+
+          {/* For the reader who thinks the answer is wrong: where to say so. */}
+          <PushBack what="answer" />
 
           <nav className="qa-turn" aria-label="Previous and next question">
             {prev ? (
