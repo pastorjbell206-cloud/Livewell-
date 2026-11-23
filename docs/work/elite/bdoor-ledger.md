@@ -15591,3 +15591,21 @@ Cut in chapter 1: Adoni-bezek's seventy kings ‘like dogs’ (an image the text
 | Why God left the nations: judgment and test together; the two responses of readers; justice and mercy side by side, not every tension resolved | 20-23 `hard` | judges/2.json `hard` | Repository; both responses in their holders' terms |
 
 Cut in chapter 2: Hebrews 7:23-25 and the savior who does not die (the deep note's thematic link, not a line the New Testament draws to this chapter); the Ugarit myths of Baal's death and return told at length (left to the site's guide on the gods of the nations).
+
+## The plain notes on Judges 3 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The close of the opening; the nations named; the five Philistine rulers and their five cities; the old list of the peoples of Canaan; verse 6 names worship, not birth; marriage joining two families and their gods; Rahab and Ruth welcomed and in David's line; the misuse to forbid marriages between peoples named and rejected | 1-6 | judges/3.json `historical`, `literary`; judges/2.json `hard`; joshua/plain/23.json (9-13, `hard`) | Repository; as the Joshua note states it |
+| Deuteronomy 7:3-4; 1 Corinthians 7:39 | 1-6 | joshua/plain/23.json (9-13, `hard`); BSB | Repository; BSB text |
+| Othniel's story as the pattern in its purest form; ‘forgot’; the Asherahs; Cushan-rishathaim known from no other source, Aram of the two rivers, a mocking nickname, the Edom conjecture called a guess; ‘cried out’ as a cry of pain heard by God; Othniel as Caleb's nephew; the Spirit for a task, not a statement of character | 7-11 | judges/3.json `historical`, `literary`, `words` (za'aq, ruach), `doctrines` (spirit, repentance); judges/2.json `cultural` | Repository; no side on the name |
+| Joshua 15:17; Exodus 2:23-24; 1 Samuel 12:9 | 7-11 | judges/3.json `words` (za'aq); judges/1.json; BSB | Repository; BSB text |
+| Moab east of the Dead Sea; the City of Palms as Jericho or its oasis, the fords and Benjamin; tribute and the access it gave; ‘restricted in his right hand’, most take as left-handed; Benjamin as son of the right hand; the sword where a guard would not look; the idols near Gilgal; the upper room and its toilet; the irony and coarse humor (Eglon and the calf, davar as word and thing), not dwelt on | 12-25 | judges/3.json `historical`, `cultural`, `literary`, `words` (itter) | Repository |
+| Judges 20:16; 1 Chronicles 12:2; Ruth 4:17 | 12-25 | judges/3.json `cultural`; judges/20.json `cultural`; BSB | Repository; BSB text |
+| Ehud's killing of Eglon: the three readings (a war of liberation under occupation; God raised Ehud but the Spirit is not said to come on him and not every means is endorsed; the book growing critical of its heroes); God freed an oppressed people and the reader weighs the means; no side; no pattern for today and no warrant to deceive or kill in God's name; Romans 12:19 | 12-25 `hard` | judges/3.json `hard`, `christ`; bible/guides/reading-narrative.json; BSB | Repository; each reading in its holders' terms; no side |
+| The ram's horn to call men to war; the fords and the later echoes (7:24; 12:5-6); the credit given to God (verse 28); eighty years the longest rest; Shamgar's single verse as a brief notice; the Philistines on the coast in the twelfth century; the oxgoad; the large number and the 'eleph debate; no contempt for Moab or any people | 26-31 | judges/3.json `historical`, `cultural`, `literary`, `doctrines` (providence), `words` (shaqat); judges/7.json `historical`; judges/12.json `historical` | Repository |
+| Judges 5:6; 1 Samuel 12:9 | 26-31 | BSB | BSB text |
+
+Cut in chapter 3: what ‘son of Anath’ may mean (not in the repository's notes); the length of a cubit in inches; the detail of the blade and the fat (left in the verses, not repeated); 1 Corinthians 1:27 and Luke 4:18 as links to Christ (the deep note's thematic links, not lines the New Testament draws to this chapter); a cross-reference to David's flight over the Jordan, dropped as not to the point.
