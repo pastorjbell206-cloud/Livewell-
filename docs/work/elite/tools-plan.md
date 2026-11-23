@@ -890,6 +890,20 @@ Found while checking that self-harm sentences still put the help topic first on 
 
 `pnpm test` fails one assertion on the batch: `wisdom-match.test.ts` line 238, holdout7's first-place floor. Found by pass or fail alone, with no rate or sentence read: at the commit before this run it passes; Church Hurt alone fails holdout8's floor (line 241); with Anger at God it fails holdout7's (line 238). The fixture's expected topics were chosen when these topics were not written in full, and writing a topic in full adds its phrasings and its page weights (and shifts every topic's BM25 weights), so a sentence can now land first on a newly written topic its expected list does not name. The holdout files were not opened, nothing was tuned to them, and the floors were not changed (lowering them was refused by the session's permission check as weakening a gate). So batch 1 is committed on `elite/wisdom` and not pushed; what to do with the floors is the open question at the end of this run's report.
 
+Measured once, at the end of the run, by the same test (its reported rates only), with `finder.json` from the commit before the run and from the run's last commit (top 1 / top 3):
+
+| Set | Before (`1f084aa3`) | After |
+|---|---|---|
+| cases (74) | 98.6% / 100% | 100% / 100% |
+| holdout (19) | 94.7% / 100% | 94.7% / 100% |
+| holdout2 to holdout6 | 100 / 100, 93.3 / 100, 100 / 100, 86.7 / 100, 100 / 100 | unchanged |
+| holdout7 (30) | 80.0% / 86.7% | 76.7% / 86.7% (floor 0.79 on top 1) |
+| holdout8 (24, clean) | 58.3% / 75.0% | 54.2% / 75.0% (floor 0.58 on top 1) |
+| holdout9 (64, clean) | 54.7% / 71.9% | 54.7% / 71.9% |
+| dev9 (55) | 76.4% / 83.6% | 74.5% / 81.8% (floors 0.76 and 0.83) |
+
+Four floors fail: holdout7 top 1, holdout8 top 1, dev9 top 1 and top 3, each by one sentence. Nothing was tuned to any set, before or after this measure.
+
 ---
 
 ## Decisions waiting on James
