@@ -177,7 +177,9 @@ describe("the tracks' data", () => {
 
   it("keeps every step of a road inside the track it has become", () => {
     const withTrack = ROADS.filter((r) => r.track);
-    expect(withTrack.map((r) => r.id)).toEqual(expect.arrayContaining(["new", "skeptical"]));
+    expect(withTrack.map((r) => r.id)).toEqual(expect.arrayContaining(["new", "skeptical", "stepped-back", "deeper", "family"]));
+    // Every road on /start has become a track.
+    expect(ROADS.filter((r) => !r.track).map((r) => r.id)).toEqual([]);
     for (const road of withTrack) {
       const file = JSON.parse(fs.readFileSync(path.join(PUBLIC, `tracks/${road.track!.slug}.json`), "utf8"));
       const linked = new Set(file.sessions.flatMap((s: { open: { href: string }; also?: { href: string }[] }) => [s.open.href, ...(s.also ?? []).map((l) => l.href)]));
@@ -190,7 +192,8 @@ describe("the tracks' data", () => {
       const file = JSON.parse(fs.readFileSync(path.join(PUBLIC, `tracks/${t.slug}.json`), "utf8"));
       expect(t.leader, t.slug).toBe(!!file.leader);
     }
-    expect(INDEX.tracks.filter((t) => t.leader).map((t) => t.slug)).toEqual(["skeptical", "mark"]);
+    // Every track has one (James, 2026-11-23: "each with a group leader's guide").
+    expect(INDEX.tracks.filter((t) => !t.leader).map((t) => t.slug)).toEqual([]);
   });
 
   it("has a reader's name for every kind of page a track opens, and uses eight or more", () => {

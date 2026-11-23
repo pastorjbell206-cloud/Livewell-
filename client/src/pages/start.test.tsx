@@ -163,11 +163,12 @@ describe("/start: the five roads", () => {
     // The track is the one filled button; the steps are all still there, as plain links.
     expect(Array.from(road.querySelectorAll("a.btn:not(.btn--quiet)")).map((a) => a.textContent)).toEqual(["Start the track"]);
     expect(within(within(road).getAllByRole("list")[0]).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(START_STEPS.map((s) => s.href));
-    // A road with no track yet is as it was: its next step is the button.
+    // Every road is now a track: the family's road offers its own the same way.
     fireEvent.click(screen.getByRole("link", { name: /I'm leading a family/ }));
     const other = screen.getByRole("heading", { level: 2, name: "If you're leading a family" }).closest("section") as HTMLElement;
-    expect(within(other).queryByText(/This road is now a track/)).toBeNull();
-    expect(other.querySelectorAll("a.btn").length).toBe(1);
+    expect(within(other).getByText(/This road is now a track: 12 short sessions in order/)).toBeInTheDocument();
+    expect(within(other).getByRole("link", { name: "Start the track" }).getAttribute("href")).toBe("/tracks/family/1");
+    expect(Array.from(other.querySelectorAll("a.btn:not(.btn--quiet)")).map((a) => a.textContent)).toEqual(["Start the track"]);
   });
 
   it("offers the skeptic's track as the main action of the road for the skeptic, with its six steps kept under it", () => {

@@ -1,0 +1,486 @@
+{
+  "slug": "family",
+  "title": "Start at the table tonight",
+  "for": "I'm leading a family",
+  "road": "family",
+  "subtitle": "Twelve short sessions for anyone leading a home: a devotion at the table, a question learned together, the Bible as one story, the hard questions children ask, and grace when you get it wrong.",
+  "intro": [
+    "This track is for anyone leading a home: a mother or a father, a grandparent raising grandchildren, a single parent at the end of a long day, or anyone with children at their table. It has twelve sessions of about ten minutes each, for you to take on your own, and most of them end with something to try with the children that same week. Nothing here is a method that guarantees believing children. It is a way to keep the faith in the ordinary talk of a home, a little at a time.",
+    "Each session works the same way. You read a few short paragraphs, then open one page on this site and use it, then come back to one question, one thing to do, and one verse. Many of the pages are made for families with children, and a few are for you alone. If you can, take the track with another adult in your home, or with another parent. Each session ends with a guide for a group of parents."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group of parents through Start at the table tonight: mothers and fathers, grandparents, single parents, and anyone with children at their table. Each person takes the sessions on their own, and most sessions end with something to try at home that week, so the meeting is where parents compare notes on what happened. The leader's task is to keep it honest and kind. No parent should leave feeling judged, and none should leave with a formula.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what happened at home, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten parents is a good size, and a couple can come together or one at a time. Meet for about seventy-five minutes, once a week or once a fortnight, for twelve meetings, and keep the end time you promised, because someone is usually waiting at home. If children come along, arrange for them to be cared for in another room, so that parents can speak freely. A leader doesn't need to have raised perfect children. Nobody has."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A living room or a kitchen table suits this group better than a classroom. Make it plain at the first meeting that anyone may pass on any question, that what is said about anyone's children or marriage stays in the room unless someone is in danger, and that no one has to pray aloud. Say the part about danger plainly at the start, so that no one is surprised by it later."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: what each family tried at home since the last meeting, and how it went, with no one judged for a hard week.",
+          "Five minutes: one person reads the verse aloud.",
+          "Thirty minutes: the three questions to talk over, in order.",
+          "Ten minutes: the prayer prompt, in your own words, with the children named. Nobody has to pray aloud.",
+          "Five minutes: name the next session, the page it opens and what it asks families to try, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Parents bring hard questions of their own: why a faithful home raised a child who walked away, how to answer a child who asks about death or suffering, what to do when two parents believe differently. Welcome them, and don't answer too fast. If the page the session opened takes the question up, read that part together. Where churches differ, as they do on the baptism of children, say what all of them share and that they differ, and send parents to their own pastor. If no one knows, write the question down and bring it back the next week.",
+          "Guard against two easy answers. One promises that the right method will produce believing children. The other tells a parent whose child has wandered that it must be their fault. Scripture supports neither, and the study for parents in the last session says so plainly."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "This group will meet real trouble: a marriage coming apart, a child in danger or in despair, a grown child who no longer calls, a parent at the end of their strength. When someone tells their story, stop and listen. Thank them for saying it, don't explain it for them or hurry them back to the session, and ask whether they would like the group to go on or to pause. Speak with them on their own afterwards.",
+          "If anyone says that a child is being harmed, or may be, the leader tells the authorities and does not promise to keep it secret. Abuse of a child is a crime, to be reported to the police or the local child protection service, not handled quietly inside a church. If someone is afraid of a husband or wife, their safety comes first, and no one should be pressed to stay where they or their children are in danger, or to forgive quickly."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a parent to Find Help when what they carry has become too heavy to set down: a home where anyone is afraid, a child who talks of not wanting to live, anger at home they cannot control, grief or exhaustion that has taken their sleep for weeks, or any sign that they no longer want to be alive themselves. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Tonight",
+      "minutes": 10,
+      "teaching": [
+        "Faith is handed on at home more than anywhere else, and most of it happens in ordinary minutes. You don't need a plan for the year to begin. You need one meal or one bedtime this week, a few verses read aloud, one question, and a prayer, even a single sentence. The page on family devotions says it plainly: start smaller than you think, and five minutes counts. When a night goes badly, and some will, try again tomorrow.",
+        "The page this session opens always means tonight's devotion. Each devotion has a short passage, its big idea in a sentence, a few paragraphs to read aloud, questions for younger and older children, something to do together, and a prayer. Little ones need a story and a one-line prayer. Older children can take a passage and a question. Teenagers need you to ask what they are wondering, and then to talk less. None of it has to go well to count."
+      ],
+      "open": {
+        "kind": "devotion",
+        "label": "Tonight's devotion",
+        "href": "/family/tonight",
+        "why": "This week's family devotion: a passage, a big idea, a few paragraphs to read aloud, questions for younger and older children, something to do, and a prayer."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "How do we do family devotions?",
+          "href": "/help/family-devotions",
+          "why": "For little ones, school-age children and teenagers, and how to start again when it falls apart. Five minutes at the table counts."
+        }
+      ],
+      "question": "What would make five minutes at your table possible this week, and what usually gets in the way?",
+      "do": "Choose one meal or one bedtime this week. Open tonight's devotion there, read the passage aloud, ask one of its questions, and pray one sentence. Then write down what happened, however it went.",
+      "verse": {
+        "ref": "Psalm 127:1",
+        "text": "Unless the LORD builds the house, its builders labor in vain; unless the LORD protects the city, its watchmen stand guard in vain."
+      },
+      "group": {
+        "open": "What did meals look like in the home you grew up in?",
+        "discuss": [
+          "The page on family devotions says five minutes counts. Why might small and steady do more than long and rare?",
+          "What happened when you tried tonight's devotion, and what would you change next time?",
+          "How do you speak about God with a teenager without turning it into a lecture?"
+        ],
+        "pray": "Pray for each family represented, by name, and for the one meal or bedtime each person has chosen this week."
+      }
+    },
+    {
+      "n": 2,
+      "title": "At home and on the road",
+      "minutes": 10,
+      "teaching": [
+        "The Bible's most direct word on handing faith to children doesn't say schedule them, or out-argue them. It says talk. “And you shall teach them diligently to your children and speak of them when you sit at home and when you walk along the road, when you lie down and when you get up” (Deuteronomy 6:7). The words are to be on the parent's own heart first. From there they go into the whole day: the kitchen and the car, bedtime and breakfast.",
+        "Later in the chapter Moses pictures a child asking what all these commands mean, and he gives the parent an answer that begins with a story: “We were slaves of Pharaoh in Egypt, but the LORD brought us out of Egypt with a mighty hand” (Deuteronomy 6:21). The notes on the chapter leave a question every parent can carry. When a child asks why you live as you do, would your first words be about rules, or about rescue?"
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Deuteronomy 6, passage by passage",
+        "href": "/study/bible/deuteronomy/6#plain",
+        "why": "The great confession of Israel, the charge to talk of God at home and on the road, and what a parent says when a child asks why."
+      },
+      "question": "If your child asked you why you follow Jesus, what would you say first?",
+      "do": "Read Deuteronomy 6 aloud, with the notes. Then write down in three or four sentences what God has done for you, the way the parent in verses 21 to 23 tells it, so that you are ready when the question comes.",
+      "verse": {
+        "ref": "Deuteronomy 6:6-7",
+        "text": "These words I am commanding you today are to be upon your hearts. And you shall teach them diligently to your children and speak of them when you sit at home and when you walk along the road, when you lie down and when you get up."
+      },
+      "group": {
+        "open": "Who in your childhood talked about God in ordinary moments, and not only at church?",
+        "discuss": [
+          "Moses says the words must be on the parent's heart before they reach the children. Why does the order matter?",
+          "Where in an ordinary day does talk about God come most naturally in your home, and where does it feel forced?",
+          "When a child asks why, the parent in Deuteronomy tells a story of rescue. How is that different from giving a list of rules?"
+        ],
+        "pray": "Ask God to put his words on each parent's own heart this week, and pray by name for the children in each home."
+      }
+    },
+    {
+      "n": 3,
+      "title": "One question, learned together",
+      "minutes": 10,
+      "teaching": [
+        "A catechism is the faith taught in questions and answers, short enough to say at a table and learn by heart. Children have been taught this way for centuries, and the reason is simple. A child who can answer ‘Who made you?’ with ‘God made me’ has something to stand on before they can explain it. The family catechism on this site has seventy-six questions, each with an answer for adults, a shorter one for a child, a verse to go with it, and a prayer.",
+        "Take one question a week and stay on it as long as it takes. Say the question, let the youngest answer, read the verse, and talk about it for a minute. The page has a way to practise saying it aloud, one question at a time. The answers are not a replacement for Scripture. They are a short summary of it, small enough to carry, and a door into longer conversations as your children grow."
+      ],
+      "open": {
+        "kind": "catechism",
+        "label": "The family catechism",
+        "href": "/family/catechism",
+        "why": "Seventy-six short questions and answers that teach the faith, each with an answer for adults, a shorter one for children, a verse and a prayer."
+      },
+      "question": "Which question of the catechism would you most like your children to be able to answer by heart, and why that one?",
+      "do": "Choose this week's question, or begin with the first. Say it at a meal each day this week, let the children answer, and read its verse together. Notice which child remembers it first.",
+      "verse": {
+        "ref": "2 Timothy 3:15",
+        "text": "From infancy you have known the Holy Scriptures, which are able to make you wise for salvation through faith in Christ Jesus."
+      },
+      "group": {
+        "open": "Is there anything you learned by heart as a child that you still remember?",
+        "discuss": [
+          "Why might learning short answers by heart help a child even before they understand them?",
+          "How do you keep a catechism from becoming a test that children dread?",
+          "Which question in the catechism do you find hardest to answer yourself?"
+        ],
+        "pray": "Give thanks for the faith the catechism sums up, and pray by name for the children each person is teaching."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The whole Bible in two minutes",
+      "minutes": 10,
+      "teaching": [
+        "Children often learn the Bible as a set of separate stories: Noah, David, Daniel, Jonah, each with its own lesson. But the Bible is one story, and the separate stories make more sense inside it. It runs from a good world made by God, through the damage done when people turned from him, through God's promise to Abraham and his rescue of Israel, to Jesus, his cross and his empty tomb, and on to the day when God makes all things new.",
+        "The short film this session opens draws that story as one road in nine pictures, from a garden to a city. Watch it with your children, then ask them where on the road they would put themselves, and what Christians are still waiting for. Once a child knows the whole story, every Bible story they hear afterwards has a place to go. Jesus himself explained all the Scriptures this way to two of his followers on a road (Luke 24:27)."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The whole Bible in two minutes",
+        "href": "/study/explorer/watch/bible-two-minutes",
+        "why": "The whole story of the Bible as one road in nine pictures, from the garden to the city, short enough to watch together after a meal."
+      },
+      "question": "Which Bible stories did you learn as a child, and how do they fit into the one story?",
+      "do": "Watch the film with your children, or on your own first. Then ask them where they would put themselves on the road, and listen to the answer.",
+      "verse": {
+        "ref": "Psalm 78:4",
+        "text": "We will not hide them from their children, but will declare to the next generation the praises of the LORD and His might, and the wonders He has performed."
+      },
+      "group": {
+        "open": "What was your favourite Bible story as a child, and why?",
+        "discuss": [
+          "Why might it help children to know the Bible as one story, and not only as separate stories?",
+          "Where on the road the film draws would you put your own family?",
+          "What are Christians still waiting for, and how would you explain it to a child?"
+        ],
+        "pray": "Give thanks that the story ends with God making all things new, and pray for the children in each home to find their place in it."
+      }
+    },
+    {
+      "n": 5,
+      "title": "The map",
+      "minutes": 15,
+      "teaching": [
+        "Some children take in a story best when they can see it. The Bible Explorer lays the whole Bible out as one road on one illustrated map, from the garden to the city, for readers from seven to sixteen. Each finished stop has its own picture, the story told at two reading levels, the verses behind it, and something to do together. Threads run through the stops, so that a child can follow one idea, like God living among his people or the promise of a king, from beginning to end.",
+        "Let your child choose the stop, and read it at their level while you read it at yours. Ask what they noticed, and what they would want to ask the people in the picture. The aim is not to finish the map. It is to sit beside a child and look at the same story together, which is a large part of what handing on the faith looks like."
+      ],
+      "open": {
+        "kind": "explorer",
+        "label": "Bible Explorer",
+        "href": "/study/explorer",
+        "why": "The whole Bible as one story on one illustrated map, for ages 7 to 16, at two reading levels, with something to do at each finished stop."
+      },
+      "question": "Which stop on the map did your child choose, and what did they notice that you didn't?",
+      "do": "Sit with a child for fifteen minutes this week and explore one stop together, each at your own reading level. Then let them tell the story of that stop back to you.",
+      "verse": {
+        "ref": "Revelation 21:5",
+        "text": "And the One seated on the throne said, “Behold, I make all things new.” Then He said, “Write this down, for these words are faithful and true.”"
+      },
+      "group": {
+        "open": "Did you have a picture Bible as a child? What do you remember of it?",
+        "discuss": [
+          "Why might seeing the whole Bible as one road help a child remember it?",
+          "What did you learn about your child from the stop they chose?",
+          "How do you read the Bible with a child without turning it into a lesson they have to pass?"
+        ],
+        "pray": "Pray for each child by name, that they would come to know the God of the whole story for themselves."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Praying at the table",
+      "minutes": 10,
+      "teaching": [
+        "Children learn to pray mostly by hearing the people they live with pray. The family catechism calls prayer talking with God, who is our Father: bringing him worship, thanks, confession and requests, and trusting that he hears because of Jesus. A child who hears a parent thank God for supper, say sorry for a sharp word, and ask for help with a hard day is learning more than a lesson could teach.",
+        "The film this session opens shows prayer in seven pictures, including the hardest one: some prayers, even for someone to get better, are not answered the way we hoped. It doesn't hide that, and it doesn't blame anyone's faith. Begin with the prayer Jesus gave his disciples, “Our Father in heaven, hallowed be Your name” (Matthew 6:9), and invite each child to pray one sentence of their own, if they want to. Nobody has to pray aloud who would rather not."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Prayer",
+        "href": "/study/explorer/watch/prayer",
+        "why": "What prayer is, in seven pictures: talking with God as Father, the prayer Jesus taught, thanks, asking, saying sorry, waiting, and the Spirit's help."
+      },
+      "question": "What did you learn about prayer in the home you grew up in, and what do you want your children to learn in yours?",
+      "do": "At one meal this week, pray the Lord's Prayer together slowly. Then anyone who wants to can thank God for one thing, in a sentence.",
+      "verse": {
+        "ref": "Philippians 4:6",
+        "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God."
+      },
+      "group": {
+        "open": "Who taught you to pray, if anyone did?",
+        "discuss": [
+          "Why might children learn more from hearing a parent pray than from being told how?",
+          "How would you explain to a child a prayer that was not answered the way you hoped?",
+          "What keeps prayer at your table from becoming a quick formula before the food?"
+        ],
+        "pray": "Go round the group: each person thanks God for one thing about their family and asks for one thing, in a sentence each. Nobody has to pray aloud who would rather not."
+      }
+    },
+    {
+      "n": 7,
+      "title": "A plan you can keep",
+      "minutes": 10,
+      "teaching": [
+        "When the table has a rhythm, a plan gives it a direction. The family reading plans on this site give a passage and a prompt for each day. One walks through the life of Jesus in thirty days, most of it in the Gospel of Mark. One takes the Old Testament story in thirty days, written for children. One spends thirty days in the Psalms, and one is a twenty-one-day start for a family new to faith or coming back to it.",
+        "Choose one and keep it simple. A plan kept three nights a week is better than one abandoned after four days. The plan remembers on this device the days you mark read, so a missed night is only a gap, not a failure. And keep the whole library of family devotions close, for a hard night, a season of the church year, or a question that came home from school."
+      ],
+      "open": {
+        "kind": "plan",
+        "label": "Family reading plans",
+        "href": "/family/reading-plans",
+        "why": "Read the Bible together: the life of Jesus, the Old Testament story, the Psalms, and a starter plan, with a passage and a prompt for each day."
+      },
+      "also": [
+        {
+          "kind": "devotion",
+          "label": "All family devotions",
+          "href": "/family/devotions",
+          "why": "Seventy-two weekly devotions, and daily ones for Thanksgiving week, Advent and Holy Week, for a hard night, a season, or a question that came up."
+        }
+      ],
+      "question": "Which plan suits the ages at your table now, and which nights could you keep it?",
+      "do": "Choose one plan and three nights this week. Read that night's passage together and ask its prompt. Mark each day read, and don't make up the nights you miss.",
+      "verse": {
+        "ref": "Psalm 1:2",
+        "text": "But his delight is in the Law of the LORD, and on His law he meditates day and night."
+      },
+      "group": {
+        "open": "What habit in your family has lasted longest, and why do you think it lasted?",
+        "discuss": [
+          "Why might a plan kept three nights a week do more than an ambitious one that stops?",
+          "Which of the plans fits your children's ages best, and why?",
+          "What gets in the way of reading together in your home, and what could you move?"
+        ],
+        "pray": "Pray for the nights each family has chosen, and for patience when a night goes badly."
+      }
+    },
+    {
+      "n": 8,
+      "title": "When a child asks a hard one",
+      "minutes": 10,
+      "teaching": [
+        "Children ask the questions adults stop asking. Who made God? Why can't anyone see him? Why do bad things happen? Where was God when Grandpa was sick? The Passover itself was built to answer a child's question: “What does this service mean to you?” (Exodus 12:26). A child's hard question is not a threat to their faith. Often it is the first sign that the faith has become theirs to think about.",
+        "The film this session opens takes one of the oldest children's questions seriously: who made God? Everything we know comes from something, so why not God? Watch it first on your own, then with your child. The best answers are honest ones. Say what you know, say what you don't, and say that careful people have thought about these questions for a very long time. A parent who can say ‘that's a good question, let's find out together’ teaches more than a parent with every answer."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Who made God?",
+        "href": "/study/explorer/watch/who-made-god",
+        "why": "A child's honest question taken seriously in six pictures: why anything is here at all, and why the Bible says God has no beginning."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Who made God? (the case for the faith)",
+          "href": "/questions/god/who-made-god",
+          "why": "The same question for grown-ups: what the serious arguments claim and what they don't, and where the burden of proof falls."
+        }
+      ],
+      "question": "What is the hardest question a child has asked you about God, and what did you say?",
+      "do": "Watch the film on your own first, then with your child if they are seven or older. Ask what they think, and write down any question you couldn't answer, to look up together.",
+      "verse": {
+        "ref": "Matthew 19:14",
+        "text": "But Jesus said, “Let the little children come to Me, and do not hinder them! For the kingdom of heaven belongs to such as these.”"
+      },
+      "group": {
+        "open": "What question did you ask as a child that no adult would answer?",
+        "discuss": [
+          "Why might a child's hard question be a good sign and not a bad one?",
+          "How do you tell a child honestly that you don't know?",
+          "What do children learn about faith from the way adults react to their questions?"
+        ],
+        "pray": "Pray for the questions each child is carrying, and for patience and honesty in the adults who answer them."
+      }
+    },
+    {
+      "n": 9,
+      "title": "When you get it wrong",
+      "minutes": 10,
+      "teaching": [
+        "Every parent gets it wrong. You will speak sharply, lose your temper on no sleep, break a promise, or be too busy to listen. Paul's word to parents is short: “Fathers, do not provoke your children to wrath; instead, bring them up in the discipline and instruction of the Lord” (Ephesians 6:4). The notes on the chapter ask what in a home provokes children to anger: harshness, unfairness, broken promises, or never having time. Paul limits a parent's authority as soon as he names it.",
+        "So when you get it wrong, repair it. The page for worn-out parents says to step away before you blow up, and afterwards to go back to the child, name what you did without adding a but, say it was wrong, and ask them to forgive you. Apologizing won't cost you your authority, it says. It shows your children what to do with their own failures. And the notes say one more thing plainly: no one may use these verses to keep a child quiet about harm, or to send a child back to someone who is hurting them."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Ephesians 6, passage by passage",
+        "href": "/study/bible/ephesians/6#plain",
+        "why": "Paul's words to children and to parents, read with care: authority held under God and used for the child's good, never against a child."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "Parenting is harder than anyone said",
+          "href": "/help/parenting",
+          "why": "For the worn-out parent, the parent of a teenager who has gone quiet, and the parent of a grown child who left the faith."
+        }
+      ],
+      "question": "What in your home most often provokes your children to anger, and what would repair look like this week?",
+      "do": "Think of one time recently you spoke or acted wrongly toward a child. Go back to them this week, name it plainly, and ask their forgiveness without excuses.",
+      "verse": {
+        "ref": "Ephesians 6:4",
+        "text": "Fathers, do not provoke your children to wrath; instead, bring them up in the discipline and instruction of the Lord."
+      },
+      "care": [
+        "If anger has become something you cannot control, or if anger at home has made anyone afraid, that is more than a verse can fix. Please talk to someone you trust, and the Find Help page on this site lists places to turn.",
+        "Abuse of a child is a crime. It is to be reported to the police and the proper authorities, not handled quietly inside a church. If a child is in danger, or you know of a child being harmed, contact the police or your local child protection service now. If you were harmed as a child, what was done to you was wrong, and it was not your fault. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Did a parent ever apologize to you when you were a child? What did it do?",
+        "discuss": [
+          "The notes name harshness, unfairness, broken promises and never having time. What else in a home provokes children?",
+          "Why is it so hard for a parent to say sorry to a child?",
+          "How can a church help parents who are worn out, without adding to their guilt?"
+        ],
+        "pray": "Pray for each parent's patience, by name, and for any home in the group where anger has made someone afraid."
+      }
+    },
+    {
+      "n": 10,
+      "title": "When a teenager says no",
+      "minutes": 10,
+      "teaching": [
+        "Few sentences land harder on a parent than a teenager saying they don't believe anymore. The answer this session opens begins with two things not to do: don't argue them back, and don't grieve them gone. Both come from love, and both fail. What is being tested, it says, isn't the case for the resurrection. It is whether your love was ever unconditional, or only the reward for agreement.",
+        "So listen long enough that they finish. Most teenagers have never been heard to the end on this by anyone who loves them. Much of what gets called deconstruction is a young person taking apart a secondhand faith to find which parts hold, and sometimes that is the only way an inherited faith becomes their own. The father in Jesus' story doesn't meet his returning son with a test of doctrine. He runs (Luke 15:20). Keep the table set, and the porch light on."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "What do I do when my teenager says they don't believe?",
+        "href": "/answers/when-your-teenager-says-they-dont-believe",
+        "why": "Don't argue them back, and don't grieve them gone: a short answer for a parent whose child has said the words."
+      },
+      "question": "If your child told you they didn't believe, what would you most want them to know about your love?",
+      "do": "Spend unhurried time this week with a teenager in your home, with no agenda and no lecture. If they raise a question about faith, ask them to tell you more, and listen until they finish.",
+      "verse": {
+        "ref": "Luke 15:20",
+        "text": "So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him."
+      },
+      "care": [
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When you were a teenager, who listened to you without trying to fix you?",
+        "discuss": [
+          "Why might an argument lose even when it wins?",
+          "The answer says a teenager's no is often a test of love. What would passing that test look like?",
+          "How do you keep praying for a child without turning every conversation into a hint?"
+        ],
+        "pray": "Pray by name for any child in the group's homes who is questioning or has walked away, and for the parents who love them."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Talking with a teenager",
+      "minutes": 10,
+      "teaching": [
+        "Parents and teenagers often live in the same house and see it differently, and neither knows it. The tool this session opens gives you a way in. A parent and a teenager each answer the same twelve statements about home, on their own and without looking. Then you swap codes and see where you see things the same and where you don't, with a few questions to ask each other in the places that matter. It takes about five minutes each, and nothing is sent anywhere.",
+        "It is a way into a conversation, not a test of anyone. Go in ready to hear something that surprises you, and to learn before you defend. The letter of James puts it plainly: “Everyone should be quick to listen, slow to speak, and slow to anger” (James 1:19). And if a teenager says that home isn't safe, take it seriously. The tool tells a teenager who isn't safe at home where to go instead, and a parent should never make a child sorry they said it."
+      ],
+      "open": {
+        "kind": "tool",
+        "label": "The Parent and Teen Conversation",
+        "href": "/tools/parent-teen-conversation",
+        "why": "A parent and a teenager each answer twelve short statements about home, then compare and talk where they see it differently. Private to your device."
+      },
+      "question": "Where do you think you and your teenager see home most differently?",
+      "do": "Ask a teenager in your home to take the twelve statements with you this week, each on your own. Compare your answers together, and ask one of the tool's questions where you differ most.",
+      "verse": {
+        "ref": "Proverbs 20:5",
+        "text": "The intentions of a man’s heart are deep waters, but a man of understanding draws them out."
+      },
+      "care": [
+        "Abuse of a child is a crime. It is to be reported to the police and the proper authorities, not handled quietly inside a church. If a child is in danger, or you know of a child being harmed, contact the police or your local child protection service now. If you were harmed as a child, what was done to you was wrong, and it was not your fault. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What did your parents not know about you when you were a teenager?",
+        "discuss": [
+          "Why might a parent and a teenager see the same home so differently?",
+          "What makes it hard for a parent to listen without defending?",
+          "If your teenager told you something hard about your home, what would you want your first words to be?"
+        ],
+        "pray": "Pray for each teenager by name, and for each parent to listen well this week."
+      }
+    },
+    {
+      "n": 12,
+      "title": "For the grown-ups",
+      "minutes": 10,
+      "teaching": [
+        "There is no method that guarantees believing children, and any book that promises one will leave parents crushed and blaming themselves if a child wanders. Scripture is full of faithful parents whose children walked away. The home is still the main place faith is handed on, and that is true and weighty and worth all you can give it. But the gospel, and not a technique, is finally the hope of any child, and of any parent.",
+        "The study this session opens is for the grown-ups: five sessions for parents and grandparents, from what the home is for, through the hard questions children ask, to a faith that lasts after a child leaves home, and last, parenting from grace. A tired parent can lead it with no preparation. Take it with other parents if you can. Nobody was meant to raise children alone, and if you are raising them by yourself, the people who love you need to be told how to help."
+      ],
+      "open": {
+        "kind": "guide",
+        "label": "Raising Believers: the study guide",
+        "href": "/studyguides/raising-believers",
+        "why": "Five sessions for parents and grandparents on handing on a faith that lasts, with no formula, ending in grace."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "My marriage is falling apart",
+          "href": "/help/marriage",
+          "why": "For a marriage gone cold, loud or broken by betrayal: what Scripture says, what to do this week, and where to get help, with safety first."
+        }
+      ],
+      "question": "What do you most worry about for your children's faith, and what would it mean to hand that worry to God?",
+      "do": "Read the study's first session on your own. Then ask one or two other parents to go through all five sessions with you, and set the first date.",
+      "verse": {
+        "ref": "Lamentations 3:22-23",
+        "text": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!"
+      },
+      "care": [
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What do you hope your children will remember about your home when they are grown?",
+        "discuss": [
+          "Why is it dangerous to treat a home as a machine that produces believing children?",
+          "How does parenting from grace look different from parenting from worry?",
+          "What would it look like for the parents in this group to carry one another?"
+        ],
+        "pray": "Pray for each child in each home by name, and give thanks that their future rests on God's grace and not on any parent's success."
+      }
+    }
+  ]
+}

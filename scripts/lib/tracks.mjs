@@ -32,7 +32,7 @@ export const KINDS = {
   book: { name: "A book of the Bible", match: /^\/study\/bible\/[a-z0-9-]+$/ },
   film: { name: "A Bible Explorer film", match: /^\/study\/explorer\/watch\/[a-z0-9-]+$/ },
   answer: { name: "An Honest Answer", match: /^\/answers\/[a-z0-9-]+$/ },
-  case: { name: "A piece from the case for the faith", match: /^\/questions\/[a-z0-9-]+\/[a-z0-9-]+$/ },
+  case: { name: "The case for the faith: a piece, an area, or the whole library", match: /^\/questions(\/[a-z0-9-]+(\/[a-z0-9-]+)?)?$/ },
   "wisdom-finder": { name: "The Wisdom Finder", match: /^\/tools\/wisdom-finder(\?.*)?$/ },
   wisdom: { name: "What the Bible says on a subject", match: /^\/wisdom\/[a-z0-9-]+$/ },
   psalms: { name: "Pray the Psalms", match: /^\/tools\/pray-the-psalms(\?psalm=\d+)?$/ },
@@ -40,13 +40,17 @@ export const KINDS = {
   catechism: { name: "The family catechism", match: /^\/family\/catechism(#q\d+)?$/ },
   devotion: { name: "A family devotion", match: /^\/family\/(tonight|devotions(\/[a-z0-9-]+)?)$/ },
   plan: { name: "A plan", match: /^\/(plans\/[a-z0-9-]+|study\/plans|study\/bible\/guides\/whole-story-2027|family\/reading-plans)$/ },
-  guide: { name: "A study guide", match: /^\/studyguides\/[a-z0-9-]+$/ },
+  guide: { name: "A study guide, or the study guides' own page", match: /^\/studyguides(\/[a-z0-9-]+)?$/ },
   help: { name: "Find Help", match: /^\/help(\/[a-z0-9-]+)?$/ },
   creed: { name: "A creed", match: /^\/resources\/creeds(\/[a-z0-9-]+)?$/ },
   compare: { name: "Where Christians differ", match: /^\/theology\/(compare|traditions|which-view)$/ },
   tool: { name: "A tool", match: /^\/tools\/[a-z0-9-]+$/ },
   track: { name: "The tracks", match: /^\/tracks(\/[a-z0-9-]+)?$/ },
   skeptics: { name: "For skeptics", match: /^\/skeptics$/ },
+  history: { name: "Church history: the course, or one of its lessons", match: /^\/theology\/history(\/[a-z0-9-]+)?$/ },
+  bible: { name: "The Study Bible's own pages: its front page, the story, the doctrines, the guides", match: /^\/study\/bible(\/(story|doctrines|guides))?$/ },
+  context: { name: "Bible background: a guide to the world it was written in, or all of them", match: /^\/resources\/context(\/[a-z0-9-]+)?$/ },
+  explorer: { name: "The Bible Explorer: the map, or one of its stops", match: /^\/study\/explorer(\/[a-z0-9-]+)?$/ },
 };
 
 /** A track uses at least this many kinds across its sessions. */
