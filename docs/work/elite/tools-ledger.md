@@ -1440,3 +1440,18 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | gambling | Where Christians differ: Scripture never names gambling; household money (1 Timothy 5:8); chasing, hiding, borrowing as signs of a grip; wrong in itself (1 Timothy 6:9, Ephesians 4:28, an industry profiting from those who cannot stop); small stakes as entertainment (Colossians 2:20-23); no side taken | Find Help is-it-a-sin, the gambling question, which sets out both and does not land |
 | gambling | Psalm 32: does not shame you; what silence costs and what confession gives; how quickly God forgives | plain psalms/32 1-5 asks |
 | gambling | Care lines | plain galatians/5; plain 1-timothy/6 |
+| shame | The first act after eating is to cover and hide; openness lost first; the first fear is the terror of a guilty conscience; God's first word is a question that seeks them out | note genesis/3 verses 7, 9, 10-11 |
+| shame | God makes garments of skin and clothes them; covers the shame they could not cover; God clothing sinners runs through Scripture; the one who made their clothes | note genesis/3 verse 21; plain genesis/3 20-24 asks |
+| shame | David fleeing his son; voices say God will not rescue him; the LORD lifts his head; the psalm turns and speaks to God | note psalms/3 summary; plain psalms/3 1-4 asks |
+| shame | Faces never ashamed; the heading, pretending insanity in an enemy city; thanks from humiliating places | Psalm 34:1 heading; plain psalms/34 1-10 asks |
+| shame | David seeks kindness for Jonathan's sake; Mephibosheth lame in both feet; land restored and a permanent place at the king's table; dead dog | note 2-samuel/9 summary; 2 Samuel 9:8, 13 |
+| shame | Twelve years bleeding; she comes trembling and tells all; Daughter gives her a family name in public after twelve years on the edges; by calling her out Jesus lets the crowd see she is clean | Luke 8:43; note luke/8 verses 47-48; plain luke/8 40-48 hard |
+| shame | Do you see this woman; Simon saw a sinner; Jesus let her come close when the room wanted her gone, spoke of her with honour | Luke 7:44; plain luke/7 36-50 hard and asks |
+| shame | Jesus endured the cross, scorning its shame; finished the race through shame and pain | Hebrews 12:2; plain hebrews/12 1-3 asks |
+| shame | Zion as barren and abandoned wife; her Maker her husband takes her back with everlasting compassion | note isaiah/54 summary |
+| shame | The word is near, not a height or depth; anyone can call | plain romans/10 5-13 hard and asks |
+| shame | Isaiah 64:6 needs care; a covenant people confessing; observances cannot cleanse while hearts turn away; verse 5 God welcomes those who do right; Father and potter; traditions differ; a confession, not an accusation | note isaiah/64 summary and hard; Isaiah 64:8 |
+| shame | Knowledge gained by disobedience brings shame, not freedom | note genesis/3 verse 7 |
+| shame | Shame lives on secrecy; a wise counselor a gift, not a defeat | the topic's own first form (application) |
+| shame | Psalm 25: what would you like God to forget; remembered according to his loving devotion, not your past | plain psalms/25 1-22 asks |
+| shame | Care lines | plain luke/7; plain psalms/69 |
