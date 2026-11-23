@@ -16243,3 +16243,19 @@ Cut in chapter 11: Luke 23:34 and the king who shows mercy to those who rejected
 | Why God gave a king: Deuteronomy 17:14-20 and kingship not forbidden; the motive condemned (8:5) and the turn from the LORD at Nahash's threat; two strands or one argument; a king good only under God's rule; the sin in the demand, not the office | 16-25 `hard` | 1-samuel/12.json `hard` | Repository; both readings in their holders' terms |
 
 Cut in chapter 12: the resolution of the tension in Christ and Hebrews 7:25 (the deep note's pattern, not a line the New Testament draws to this chapter).
+
+## The plain notes on 1 Samuel 13 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The regnal formula; 13:1 damaged (one year old, two years), the BSB's thirty and forty-two, Acts 13:21's forty; thirty thousand chariots in the Hebrew and three thousand in the Greek and Syriac, followed by the BSB; the Philistines on the coast from the twelfth century BC; Michmash, Geba and Gibeah in Benjamin, Michmash and Geba across a ravine; the pressure built step by step | 1-7 | 1-samuel/13.json `historical`, `literary`; bible/guides/kings-of-israel-and-judah.json | Repository |
+| Judges 6:2; Acts 13:21 | 1-7 | BSB | BSB text |
+| The command of 10:8; sacrifice before battle; kings as priests elsewhere and David and Solomon sacrificing, so the fault the disobedience to the prophet's word; one sentence of action and Samuel's arrival; Genesis 3:13 echoed; Saul's string of excuses; sakal as moral blindness; a man after his own heart read two ways; the verdict on the dynasty | 8-15 | 1-samuel/13.json `cultural`, `literary`, `words` (sakal, levav), `doctrines` (sin, faith) | Repository; both readings of the phrase in their holders' terms |
+| Genesis 3:13; Acts 13:22 and Psalm 89:20 joined by Paul | 8-15 | acts/plain/13.json (13-25, `ot`); BSB | Repository; BSB text; the New Testament's own line |
+| Why so severe: a specific command through the prophet, rule under God's word or over it; the blaming reply and chapter 15; the dynasty and not yet the throne; no religious act in place of obedience (15:22) | 8-15 `hard` | 1-samuel/13.json `hard` | Repository; the answers in their holders' terms |
+| The Philistine control of metalwork, monopoly of iron or of smiths debated; the pim unknown to the King James translators, weights found, about two thirds of a shekel, the verse a price list; the shekel a weight, not a coin; the chapter's inventory of weakness | 16-23 | 1-samuel/13.json `cultural`, `literary`; bible/guides/weights-measures-money.json; context/worlds/old-testament-world.json | Repository |
+| Judges 5:8 | 16-23 | BSB | BSB text |
+
+Cut in chapter 13: the contrast between Saul's grasping and Jesus' refusal of shortcuts (the deep note calls it thematic; Acts 13:22 is kept as Paul's own line); the place of the first pim weight's discovery (kept on the context page).
