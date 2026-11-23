@@ -1,0 +1,110 @@
+# Speed and polish (unit "speed", 2026-11-23)
+
+Branch `elite/explorer`. James asked (2026-11-23): "Bring every main page to 90 or better on Lighthouse for phones, starting with /downloads, or tell me why one can't get there." "Fix the root cause of the tests that time out when the machine is busy." "Raise the Wisdom Finder's first-answer accuracy to at least 70 percent." /downloads, the home page, /start and the tracks pages were others' work this day, so they were measured and not changed.
+
+## 1. The tests that timed out on a busy machine
+
+### The cause
+
+Every test named in the earlier runs (WisdomTopic, fes, the Explorer, Connect, StudyBible.hash, hq, advent-ready, family-pages, the desk) and the two a loaded run found (the header search, the tools list) is a page-level test in jsdom that used 1 to 3 s of its own CPU on a quiet machine, against a wall-clock budget of 5 s (or findBy's 1 s). A machine shared with other suites gives a test a fraction of a core, and the same work then took three or four times as long. V8's profiler on the slow files showed where the time went:
+
+1. **Role queries over whole pages.** testing-library's `*ByRole` computes the accessible name of every element with the role and checks each is not hidden; each check calls `getComputedStyle`, and jsdom runs its cascade for every call (its default stylesheet's selectors, then every inline property parsed again) and forgets every answer on any change to the document. Role queries were 34 to 49% of the CPU in the slow files. On the family catechism page (850 elements, 95 buttons, since every question in its list is a button) one button query after a click took 323 ms; `findByRole` repeats its query on every DOM change while a page loads.
+2. **Many whole pages in one test.** WisdomTopic rendered the 24 heavy topics in one test, the Explorer 13 stops in one and 9 in another, the films test compiled and ran all 43 film drawings in one.
+3. **Lazy chunks compiled inside the timed test.** The history timeline, the chapter page's parts, the film player, the header search and its reference parser are lazy imports; the first test that needed one paid for compiling it, and under load that alone ran past findBy's one second.
+
+### What changed
+
+Commits `f251934a` and `0bad3306`.
+
+- `client/src/test/setup.ts` keeps each computed style until a change touches that part of the document (the element, an ancestor, or its parent's children) or any stylesheet comes, goes or changes, read from a MutationObserver before each answer. jsdom's default sheet matches on tag names, attributes and child order only, so nothing else can change a style here. The kept answer is jsdom's own. `client/src/test/style-cache.test.tsx` holds it (an ancestor hidden by style and by `hidden`, a move under a hidden parent, a stylesheet added, edited and removed, alone or inside a page's own `<style>`). On the catechism page a button query after a click: 323 ms before, 34 ms after; the same query again with no change between, 89 ms and 15 ms.
+- One page to a test, with the same assertions: the 24 heavy wisdom topics (`it.each`, with a check that there are at least 20); the Explorer's walk (each stop's Next names the next stop on the road, and the walk starts at Creation, so the chain is the same); the 9 older-level stops; the 43 film drawings (with a check that there are more than 30).
+- Waits on a page's words or ids, then the role query once; role queries scoped to the section they test (the catechism's card and week sections, the devotions' tabs, each map stop's item and the thread switches, the desk's highlight group and view switch, the history door's age line).
+- Lazy parts imported at the top of the tests that wait on them (`hq`, `StudyBible.hash`, `StudyBible.later`, `desk`, `watch-first`, `catechism-week`, `MinimalNav.find`).
+- Budgets raised only where a test is heavy by design, each with its reason in a comment: the whole Explorer map (3,300 elements, half of them drawings) 15 s; a whole Study Bible chapter 15 s (StudyBible.hash, StudyBible.later) and 20 s (the desk, where the budget was already there, now explained); the catechism page rendered twice for a reload and the devotions list then its Advent tab 10 s; the tools list, its own lazy chunk, 4 s for its one findBy. No global timeout changed.
+
+### Timings, in ms
+
+"Quiet": the slow files in one fork at a load of about 3, before (the tests as they were, the style cache off) and after. "Loaded": the whole suite alongside six CPU burners started for the run and stopped after (load about 10 through the run), before (run F, the old tests checked out for the run) and after (runs D and E). A split test shows its slowest part.
+
+| Test | Quiet before | Quiet after | Loaded before | Loaded after (D / E) |
+|---|---|---|---|---|
+| WisdomTopic: Find Help on every heavy subject | 2,041 | 207 (24 tests) | 4,408 | 611 / 458 |
+| Explorer: Next walks the thirteen stops | 2,223 | 413 (13 tests) | 7,000 | 777 / 684 |
+| Explorer: the older level on the newer stops | 1,084 | 219 (9 tests) | 4,552 | 591 / 536 |
+| Explorer: every stop a link (15 s budget) | 1,048 | 1,308 | 3,843 | 3,031 / 2,254 |
+| Explorer: the reading level kept (15 s budget) | 818 | 1,326 | 3,013 | 4,236 / 3,110 |
+| fes: the catechism card, turned and kept | 2,114 | 1,193 | 6,240 | 2,450 / 3,010 |
+| fes: read aloud | 1,290 | 318 | 3,658 | 642 / 672 |
+| catechism-week: answer hidden until turned | 2,098 | 725 | 5,948 | 1,534 / 1,460 |
+| catechism-week: passes over the known ones | 1,281 | 532 | 3,460 | 1,222 / 1,268 |
+| family-pages: the devotions list | 813 | 1,015 | 2,622 | 2,438 / 2,171 |
+| family-pages: a family's own place | 1,061 | 577 | 2,881 | 1,516 / 1,507 |
+| advent-ready: the Advent tab | 597 | 609 | 1,159 | 1,100 / 1,367 |
+| StudyBible.hash (15 s budget) | 1,570 | 1,712 | 4,153 | 3,472 / 3,502 |
+| desk: a mark through a reload (20 s budget) | 2,741 | 2,130 | 7,960 | 5,433 / 4,664 |
+| hq: the history door's ages | 990 | 1,290 | 3,154 | 2,859 / 2,232 |
+| Connect (slowest of 10) | 362 | 440 | 1,054 | 985 / 1,061 |
+| films: each drawing a lazy chunk | (not run) | 144 (43 tests) | 2,620 | 343 / 212 |
+| MinimalNav.find: straight to a verse | (not run) | 350 | 1,204 | 947 / 872 |
+
+Under the same load, the tests that had run past 5 s now run in well under it, and the ones still near it carry a budget with its reason. Some quiet "after" figures are higher than "before": the quiet runs were an hour apart on a machine other agents share, and a scoped wait polls by id where `findByRole` resolved on the first DOM change; the loaded runs are the measure that matters here.
+
+### The loaded runs
+
+Before any change, the whole suite on a machine other agents were loading (5 to 10): two tests timed out (WisdomTopic's Find Help loop at 5.2 s, the Explorer's older-level loop at 5.2 s). With six burners and the first fixes, four more appeared (two Explorer map tests, the devotions list, the tools list's lazy findBy) and two in the header search; each was fixed above. Then two full `pnpm test` runs alongside six burners (load about 10 through each run): **D, 2,346 passed, 0 failed (405 s); E, 2,346 passed, 0 failed (401 s).** Run F, the old tests under the same six burners, also passed that once (2,254 tests), which is why the table above, not pass and fail, is the evidence: at that load the old tests ran at 4 to 8 s against 5.
+
+## 2. The Wisdom Finder
+
+The full record is `docs/work/elite/tools-plan.md`, section 23. In short: a second clean holdout (holdout9, 64 sentences) and a tuning set (dev9, 55) were committed first; GloVe 6B word vectors (public domain, 3.40 MB, fetched only once the finder is used) now add each topic's nearest phrasing to the matcher's score. First answer on holdout8 54.2% to 58.3%, on holdout9 50.0% to 54.7%; the first three unchanged at 75.0% and 71.9%. The aim of 70% is not met, and section 23 says why and what would.
+
+## 3. Lighthouse on phones
+
+Pinned Lighthouse 13.6.0 (`scripts/lighthouse-median.mjs`, median of three, phone), Playwright's Chromium, the served build (`scripts/serve-like-vercel.mjs` on port 4671, restarted after each build: it keeps compressed files in memory), each set started at a load under 6.
+
+### What was wrong
+
+A chapter's or an essay's text was on screen at about 1 s, yet Lighthouse put the largest paint near 4 s. The prerender wrote the page's text inside `#root`; when the app started, `lib/prerender-hold.ts` lifted that shell out of `#root` so React would not erase it, and a moved node is painted again. The browser counted that second paint, after the app's code had run, as the largest, and Lighthouse's phone simulation then counted all of the app's code before it. Seen in Chromium: with the app's scripts blocked the largest paint came with the first; with them it came after DOMContentLoaded. On pages with no prerendered text at all (/study/bible, /tools, /help, /search, the Wisdom Finder) the largest paint was always React's.
+
+### What changed (commit `1fb666bd`)
+
+- `scripts/prerender-heads.mjs` writes a page's shell just before `#root`, and `lib/prerender-hold.ts` holds it without moving it (a shell still inside `#root` is lifted as before). /start and /downloads keep the old way, since other work on them was landing the same day. `prerender-hold.test.ts` holds it.
+- The held text is set at the reading size (`.prerender-content--read`), a question piece's short answer under a small heading as the page's own card has it (`h2.pre-kicker`), and /explore's lede at the page's lede size (`.pre-lede`), so the real page's paragraph, painted when it arrives, is never the larger.
+- `main.tsx` renders a held page as a transition, as Home already did: React works in slices behind the held text, which cut the essay's blocking time.
+- Held text for five pages that had none, in each page's own words and from its own data: /study/bible (the 66 books in their seven sections), /tools (every tool in its group), the Wisdom Finder (its head and the areas of life), /explore (its head, then the catalogue) and /search (its head and the line it shows first; no box, so nothing typed into a held copy is lost).
+- No dependency, no new preload (the reading face stays unpreloaded, as the type rules say), CLS unchanged.
+
+### Before and after
+
+Performance, largest paint, layout shift. "After" is the last set on the final code; the essay and the chapter move by several points between sets on this shared machine (blocking time), so both sets are given.
+
+| Page | Before | After |
+|---|---|---|
+| /study/bible | 80, 4.5 s, 0 | 95, 1.1 s, 0 |
+| /study/bible/john/3 | 79, 4.0 s, 0 | 93 (87 at load 5.7), 1.1 s, 0 |
+| /writing | 92, 2.9 s, 0 | 99, 1.1 s, 0 |
+| /writing/what-post-christian-means | 74, 4.3 s, 0 | 93 (85 at load 5.9), 1.1 s, 0 |
+| /questions | 91, 3.2 s, 0 | 100, 1.1 s, 0 |
+| /questions/jesus/did-jesus-exist | 69, 5.4 s, 0 | 91, 1.1 s, 0 |
+| /family | 89, 3.7 s, 0.006 | 100, 1.1 s, 0.006 |
+| /family/catechism | 83, 4.6 s, 0.004 | 99, 1.1 s, 0.004 |
+| /tools | 89, 3.6 s, 0 | 100, 1.1 s, 0 |
+| /tools/wisdom-finder | 77, 4.4 s, 0 | 97, 1.1 s, 0 |
+| /help | 84, 3.8 s, 0.137 | 83, 3.8 s, 0.137 (not changed; see below) |
+| /explore | 82, 3.6 s, 0 | 100, 1.1 s, 0 |
+| /tracks | 86, 3.9 s, 0 | 87, 3.9 s, 0 (not changed; see below) |
+| /study/explorer | 81, 4.0 s, 0 | 94, 1.1 s, 0 |
+| /study/explorer/watch/bible-two-minutes | 86, 3.9 s, 0 | 95, 1.1 s, 0 |
+| /theology/history | 94, 3.0 s, 0 | 100, 1.1 s, 0 |
+| /search | 81, 5.1 s, 0 | 100, 1.1 s, 0 |
+| / (recorded only) | 100, 1.1 s, 0.016 | 99, 1.1 s, 0.016 |
+| /start (recorded only) | 89, 3.8 s, 0 | 88, 3.8 s, 0 |
+| /downloads (recorded only) | 65, 5.2 s, 0 | 62, 5.2 s, 0 |
+
+Accessibility 100, best practices 96 and SEO 100 on every page, before and after.
+
+### Under 90, and why
+
+- **/help (83).** Its layout shift of 0.137 is the crisis section moving down when "What people bring most" arrives with the needs index, after first paint; its largest paint is React's lede. What it would take: the chips from data committed in the bundle (or their space held while they load), and held text for the page. Not done here: it is the crisis page, its held text would have to carry the help lines word for word, and its first screen is not a change to make in passing.
+- **/tracks (87).** Its held text is right, but the real track card's description is set larger than the held line, so the largest paint comes when the app has run. What it would take: the held description at the card's size. The tracks pages were others' work this day.
+- **/start (88) and /downloads (62).** Recorded only, as asked. Both still have the shell moved at run time (they were left out of the new placement on purpose); /downloads also paints its first shelf from React. Placing their shell before `#root`, as every other held page now has it, is one line in `SHELL_STAYS_IN_ROOT` once that work has landed.
+- **The essay** reaches 93 on a quieter machine and 85 with the load near 6: its largest paint is 1.1 s in every run, and what is left is the main thread's blocking time from the essay's own long render and commit.
