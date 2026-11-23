@@ -46,6 +46,7 @@ export const KINDS = {
   compare: { name: "Where Christians differ", match: /^\/theology\/(compare|traditions|which-view)$/ },
   tool: { name: "A tool", match: /^\/tools\/[a-z0-9-]+$/ },
   track: { name: "The tracks", match: /^\/tracks(\/[a-z0-9-]+)?$/ },
+  skeptics: { name: "For skeptics", match: /^\/skeptics$/ },
 };
 
 /** A track uses at least this many kinds across its sessions. */

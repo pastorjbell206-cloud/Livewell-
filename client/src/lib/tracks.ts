@@ -103,6 +103,7 @@ export const KIND_LABEL: Record<string, string> = {
   compare: "Where Christians differ",
   tool: "Tool",
   track: "Tracks",
+  skeptics: "For skeptics",
 };
 
 export const kindLabel = (kind: string) => KIND_LABEL[kind] ?? "Page";

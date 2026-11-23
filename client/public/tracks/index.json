@@ -1,6 +1,113 @@
 {
   "tracks": [
     {
+      "slug": "skeptical",
+      "title": "Weigh the case for yourself",
+      "for": "I'm skeptical",
+      "road": "skeptical",
+      "subtitle": "Twelve short sessions for someone who doesn't believe and would rather look than be told: God, the texts, Jesus, the resurrection, suffering, science and the church's record, with the case against stated first.",
+      "minutes": 11,
+      "kinds": [
+        "answer",
+        "book",
+        "case",
+        "chapter",
+        "creed",
+        "film",
+        "help",
+        "plan",
+        "skeptics",
+        "study",
+        "tool"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Start with the questions",
+          "minutes": 10,
+          "kind": "skeptics",
+          "opens": "For skeptics"
+        },
+        {
+          "n": 2,
+          "title": "Is anyone there?",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Does God actually exist?"
+        },
+        {
+          "n": 3,
+          "title": "Can the text be trusted?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Copies of copies: isn't it a telephone game?"
+        },
+        {
+          "n": 4,
+          "title": "Who wrote the Gospels?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "The Gospels are anonymous. Weren't the names added later?"
+        },
+        {
+          "n": 5,
+          "title": "Did Jesus exist, and what did he claim?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Did Jesus even exist?"
+        },
+        {
+          "n": 6,
+          "title": "Read the source",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 1, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "The claim everything rests on",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Did the resurrection actually happen?"
+        },
+        {
+          "n": 8,
+          "title": "Argue it yourself",
+          "minutes": 15,
+          "kind": "tool",
+          "opens": "Test the Case"
+        },
+        {
+          "n": 9,
+          "title": "If God is good",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "If God is good, why is there so much suffering?"
+        },
+        {
+          "n": 10,
+          "title": "Science and the god of the gaps",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Hasn't science made God unnecessary?"
+        },
+        {
+          "n": 11,
+          "title": "The church's record",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Weren't the Crusades a holy war of conquest?"
+        },
+        {
+          "n": 12,
+          "title": "Deciding while unsure",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "What if Christianity is wrong?"
+        }
+      ]
+    },
+    {
       "slug": "new-to-this",
       "title": "New to faith, or coming back",
       "for": "I'm new to this",

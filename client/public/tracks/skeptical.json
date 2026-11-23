@@ -1,0 +1,473 @@
+{
+  "slug": "skeptical",
+  "title": "Weigh the case for yourself",
+  "for": "I'm skeptical",
+  "road": "skeptical",
+  "subtitle": "Twelve short sessions for someone who doesn't believe and would rather look than be told: God, the texts, Jesus, the resurrection, suffering, science and the church's record, with the case against stated first.",
+  "intro": [
+    "This track is for someone who doesn't believe, or isn't sure, and would rather look hard than be talked into anything. It has twelve sessions of about ten minutes each. Every page it opens states the case against Christianity at its strongest before it replies, and each reply says plainly what it doesn't prove. Nothing here asks you to believe by the last session, or to pray, or to sign anything.",
+    "Each session works the same way. You read a few short paragraphs, then open one page on this site and weigh it, then come back to one question, one thing to do, and one verse, so that you know what the text itself says. If you can, take the track with a friend who sees it differently. Each session ends with a guide for a group, and nobody in the group needs to believe."
+  ],
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Start with the questions",
+      "minutes": 10,
+      "teaching": [
+        "Most people who don't believe have reasons, and some of the best reasons were handed to them by Christians: answers that came too fast, a church more interested in winning than in the truth, the sense that a question was a kind of disloyalty. This track takes the other road. It puts the questions first and states the case against at full strength before anyone replies, because a faith that can't face its strongest objection hasn't earned a hearing.",
+        "The page this session opens was made for people who don't believe. It gathers the first questions a skeptic tends to ask, each with a short answer and a longer argument behind it, and a tool that argues the case one move at a time and lets you push back at every step. None of it presses for a decision, and you don't need to read it all today. Look for the question you would ask first if someone could actually answer it."
+      ],
+      "open": {
+        "kind": "skeptics",
+        "label": "For skeptics",
+        "href": "/skeptics",
+        "why": "The case for Christianity one step at a time, short answers to the first questions a skeptic asks, and longer reading, all at your own pace."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "I don't believe, but I'm curious",
+          "href": "/help/curious",
+          "why": "What Christians actually claim at the center, why the first hearers found it as hard to believe as anyone does now, and how to look with no pressure."
+        }
+      ],
+      "question": "Which question would you most want answered before you could take Christianity seriously, and what would count as a good answer?",
+      "do": "Write that question down in one sentence. Under it, write what would count as good evidence for you and what would count against. Keep the page somewhere safe, because the last session asks for it back.",
+      "verse": {
+        "ref": "John 1:46",
+        "text": "“Can anything good come from Nazareth?” Nathanael asked. “Come and see,” said Philip."
+      },
+      "group": {
+        "open": "What is one thing about Christianity that nobody has ever given you a straight answer to?",
+        "discuss": [
+          "The page puts the strongest objections first. Why might that be harder for a believer to do than for a skeptic?",
+          "Which of the first questions on the page would you ask first, and why that one?",
+          "Nathanael's first words about Jesus are a sneer, and Philip answers with an invitation. What makes it possible to keep talking with someone who thinks you're wrong?"
+        ],
+        "pray": "For those in the group who pray: give thanks for honest questions, and ask for patience to hear one another out. Anyone who doesn't pray can sit with their own question in the quiet."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Is anyone there?",
+      "minutes": 10,
+      "teaching": [
+        "Start with whether there is a God at all, and start with the other side, because it is stronger than most believers admit. David Hume took apart the argument that the world looks designed. Darwin gave a natural account of the way living things fit their lives. Pressed on BBC radio in 1948 to say why the universe exists, Bertrand Russell answered that it is just there, and that's all. The answer this session opens grants that a God brought in to fill the gaps in science should be expected to shrink, and that he has.",
+        "Then it sets out three lines of reasoning, each open to inspection: that anything exists at all, that the universe is fit for life, and that some things are really wrong whatever anyone thinks. None is offered as a proof, and each names the one step where an honest person can get off. Even if all three hold, they bring you to a source of the world that seems to intend life and grounds goodness. That is a long way from atheism, and it isn't yet Christianity. What would make it Christianity is a question of history, and it comes later in this track."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Does God actually exist?",
+        "href": "/answers/does-god-actually-exist",
+        "why": "The case against at its strongest, then three arguments, each with the premise that carries the weight and the place where a skeptic can fairly disagree."
+      },
+      "question": "Of the three lines of reasoning, which comes closest to persuading you, and at which step would you get off?",
+      "do": "Choose the argument you find weakest and write the strongest objection to it you can, in two or three sentences. Then read what the answer says at that step, and note whether it meets your objection.",
+      "verse": {
+        "ref": "Acts 17:27",
+        "text": "God intended that they would seek Him and perhaps reach out for Him and find Him, though He is not far from each one of us."
+      },
+      "group": {
+        "open": "As a child, did you assume there was a God, or that there wasn't, and who taught you that?",
+        "discuss": [
+          "Russell said the universe is just there, and that's all. Is that a reasonable place for explanations to stop?",
+          "The answer grants that a God of the gaps should shrink. How is the God it argues for different from that one?",
+          "Which is harder to accept: that the universe has no explanation at all, or that it has one we can't see?"
+        ],
+        "pray": "Those who pray may ask for honesty about where their own explanations stop. Anyone who doesn't pray can keep a minute of quiet with the same question."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Can the text be trusted?",
+      "minutes": 10,
+      "teaching": [
+        "A common objection works like a party game. We don't have the originals of the New Testament, only copies of copies made by hand over centuries, so trusting the text is like trusting the last child in a game of telephone to repeat what the first one said. Much of that is true, and the page this session opens grants it plainly. No original survives, the earliest pieces are small and their dates are argued over, and Christians have sometimes claimed more than the evidence gives.",
+        "What the telephone picture leaves out is how the copying actually worked. It was written, not whispered, so a copyist could look back at his page. It spread in many places at once, so a slip made in one branch stands out against the others. Older copies stayed in use, and early Christians compared copies and argued about the differences in the open. That lets scholars trace the text back with good confidence to what was being read in the second century. The first hundred years of copying are still the part no one can see, and the page says so."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Copies of copies: isn't it a telephone game?",
+        "href": "/questions/text/copies-of-copies",
+        "why": "It states Bart Ehrman's case first, grants what is true in it, then shows how the copying actually worked and where the evidence runs out."
+      },
+      "question": "What standard of evidence do you ask of other ancient books, and are you asking the same of this one?",
+      "do": "Read the section on how the copying actually worked. Then write one sentence on what the telephone picture gets right, and one on what it gets wrong.",
+      "verse": {
+        "ref": "Isaiah 40:8",
+        "text": "The grass withers and the flowers fall, but the word of our God stands forever."
+      },
+      "group": {
+        "open": "Have you ever played the telephone game? How far had the message drifted by the end?",
+        "discuss": [
+          "The page names four ways real copying differed from the game. Which matters most to you, and why?",
+          "A Christian scholar once announced a first-century fragment of Mark that turned out to be later, and he apologized in public. What does a correction like that do to your trust?",
+          "No copy survives from the first hundred years. How much should that gap weigh with you?"
+        ],
+        "pray": "Those who pray may give thanks for the people who copied, compared and checked these books, and ask for the same care in their own reading."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Who wrote the Gospels?",
+      "minutes": 10,
+      "teaching": [
+        "Open any of the four Gospels and you won't find the author's name in the text. The titles we know, ‘According to Matthew’ and the rest, were very probably added by others when the books began to circulate together, and the first writer we have who names all four is Irenaeus, around 180. Bart Ehrman argues that the names were attached in the second century, when the church needed apostles behind its books. The page this session opens grants much of that.",
+        "Then it notices something odd. Every early copy that keeps a title gives the same four names, and none gives a rival. Two of them, Mark and Luke, belong to men who weren't among the Twelve, a strange choice for anyone inventing authority. Papias, early in the second century, already links Mark with Peter on the word of an older teacher. None of this proves who held the pen. It makes it likely that the names traveled with the books from early on, and on Matthew and John careful scholars, Christians among them, still disagree."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "The Gospels are anonymous. Weren't the names added later?",
+        "href": "/questions/authors/the-gospels-are-anonymous",
+        "why": "It grants what is true in the objection, then weighs the titles, the earliest witnesses and the names themselves, and leaves open what is still open."
+      },
+      "also": [
+        {
+          "kind": "book",
+          "label": "Mark's introduction in the Study Bible",
+          "href": "/study/bible/mark",
+          "why": "Who wrote Mark, when and for whom, with the case for its link to Peter and the case against it set side by side."
+        }
+      ],
+      "question": "Does it matter to you who wrote a Gospel, or only whether what it reports is true?",
+      "do": "Read Luke 1:1-4, where one Gospel writer describes his own method. Write down what he claims to have done, and what he doesn't claim.",
+      "verse": {
+        "ref": "Luke 1:3-4",
+        "text": "Therefore, having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you, most excellent Theophilus, so that you may know the certainty of the things you have been taught."
+      },
+      "group": {
+        "open": "If you wanted to check a story written decades after the events, where would you start?",
+        "discuss": [
+          "Why would a church inventing authors choose Mark and Luke, who weren't among the Twelve?",
+          "The page says that anonymous isn't the same as unknown. Do you agree?",
+          "Luke says he investigated what eyewitnesses handed down. What would make you trust a writer who says that, and what would make you suspicious?"
+        ],
+        "pray": "Those who pray may ask for patience to weigh evidence fairly, above all where it cuts against what they hoped to find."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Did Jesus exist, and what did he claim?",
+      "minutes": 10,
+      "teaching": [
+        "A few writers argue that Jesus never lived. The most careful of them, Richard Carrier, makes a serious case: no document from Jesus' lifetime names him, Christian copyists expanded the longer passage about him in Josephus, and Paul says little about his life. The page this session opens grants all of that. Then it turns to Paul, who says he stayed fifteen days with Peter and met “James, the Lord’s brother” (Galatians 1:19), and to Josephus, a Jew who never became a Christian, naming ‘the brother of Jesus, who was called Christ’.",
+        "Add Tacitus, a Roman who despised the movement, recording that Christ was executed under Pontius Pilate, and the page concludes that a Jewish teacher who lived in the first century and was crucified under Pilate is, by a wide margin, the best explanation of the evidence. Then it marks the limit. History shows that he lived and was executed. It doesn't show who he was. On that question the earliest sources make the comfortable verdict hard to hold, because the teaching people admire and the claims they would rather set aside come from the same mouth."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Did Jesus even exist?",
+        "href": "/questions/jesus/did-jesus-exist",
+        "why": "It gives the case that he never lived at its strongest, grants what is true in it, and weighs Paul, Josephus and Tacitus one at a time."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Was Jesus just a good teacher?",
+          "href": "/answers/was-jesus-just-a-good-teacher",
+          "why": "Why the respectable verdict is the one the earliest sources make hardest to hold, and what the argument cannot do."
+        },
+        {
+          "kind": "case",
+          "label": "Did Jesus claim to be God?",
+          "href": "/questions/jesus/did-jesus-claim-to-be-god",
+          "why": "In the first three Gospels he never says it in so many words. What he does say and do, with the objection stated first."
+        }
+      ],
+      "question": "If Jesus lived and was executed under Pilate, what do you make of what his first followers say he claimed?",
+      "do": "Read Galatians 1 and 2 in one sitting, as the page suggests. Then decide whether the phrase about James, the Lord's brother, reads like a name any believer could carry or like the name of a man's real brother.",
+      "verse": {
+        "ref": "Galatians 1:18-19",
+        "text": "Only after three years did I go up to Jerusalem to confer with Cephas, and I stayed with him fifteen days. But I saw none of the other apostles except James, the Lord’s brother."
+      },
+      "group": {
+        "open": "What did you first hear about Jesus, and who told you?",
+        "discuss": [
+          "Why might a Jewish historian who never believed in Jesus mention his brother in passing?",
+          "The page says history shows that Jesus lived and was executed, but not who he was. Where does that leave the question?",
+          "Can someone admire Jesus' teaching and set aside what he said about himself? What would that cost?"
+        ],
+        "pray": "Those who pray may ask to see Jesus as he is, and not as anyone, believer or skeptic, has drawn him."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Read the source",
+      "minutes": 15,
+      "teaching": [
+        "After five sessions about the evidence, read the thing itself. Mark is the shortest of the four Gospels, and most scholars think it the earliest. It has no birth story and no long sermon. In its first chapter John appears in the wilderness, Jesus is baptized and tested, calls four fishermen who leave their nets, silences an unclean spirit in a synagogue, and touches a man with leprosy whom the law kept apart from everyone. The word often translated ‘immediately’ comes eleven times in this one chapter, and the story runs.",
+        "Read it the way you would read any ancient life, closely and without owing it anything. Notice what Jesus says and does, what the people around him get wrong, and what strikes you as strange, because the strangeness is often where the real questions live. The crowd in Capernaum asks the question the whole book asks: “What is this? A new teaching with authority!” (Mark 1:27). The notes under each passage explain what its first hearers would have noticed, and they flag the hard places, including a verse where the manuscripts disagree."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Mark 1, passage by passage",
+        "href": "/study/bible/mark/1#plain",
+        "why": "Each passage of Mark's first chapter explained in plain words: what is happening, what its first hearers noticed, and the hard questions it raises."
+      },
+      "also": [
+        {
+          "kind": "study",
+          "label": "The guided study of Mark 1",
+          "href": "/study/bible/mark/1?study=walk",
+          "why": "The same chapter in seven steps, one screen at a time, and it keeps your place. Closing it shows the way back to this session."
+        },
+        {
+          "kind": "book",
+          "label": "Open Mark in the Study Bible",
+          "href": "/study/bible/mark",
+          "why": "Sixteen chapters, about as long as a film, with notes beside every one, so you can read the whole book for yourself."
+        }
+      ],
+      "question": "What surprised you in Mark 1, and what did you expect to find there that wasn't?",
+      "do": "Read the rest of Mark this week, two or three chapters at a sitting, before anyone explains it to you. Write down one question each sitting raises.",
+      "verse": {
+        "ref": "Mark 1:27",
+        "text": "All the people were amazed and began to ask one another, “What is this? A new teaching with authority! He commands even the unclean spirits, and they obey Him!”"
+      },
+      "group": {
+        "open": "What did you expect the Gospels to be like before you read one?",
+        "discuss": [
+          "Read Mark 1:21-28 aloud. What does the crowd notice about Jesus, and what does it miss?",
+          "Jesus touches the man with leprosy before he heals him. What would the people watching have expected to happen?",
+          "Mark tells you who Jesus is in his first line, then lets the characters work it out slowly. Why might a writer do that?"
+        ],
+        "pray": "Those who pray may ask to read Mark without deciding in advance what it will say. Anyone who doesn't pray can name one thing in the chapter they want to understand."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The claim everything rests on",
+      "minutes": 10,
+      "teaching": [
+        "Christianity names the fact that would sink it. Paul wrote, “And if Christ has not been raised, our preaching is worthless, and so is your faith” (1 Corinthians 15:14). That is a public claim about a particular man in a particular city, and it can be weighed like any other event in history. The answer this session opens starts with the case against: Hume's argument that a report of a miracle is always less likely than an error in the witness, Bart Ehrman's suggestion that grieving followers had visions, and the late date and differing details of the Gospel accounts.",
+        "Then it sets out what nearly every historian of the period grants, skeptics included: Jesus was crucified, his followers were soon convinced they had seen him alive, a persecutor and a skeptical brother came to believe the same, and the preaching began in the city where he was buried. Each natural explanation covers part of that and strains at the rest. The answer doesn't claim that history can prove a miracle. It argues that the explanation which covers everything is ruled out only by a decision, made in advance, that God can't act."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Did the resurrection actually happen?",
+        "href": "/answers/did-the-resurrection-actually-happen",
+        "why": "The case against at full strength, the facts nearly every historian grants, the rival explanations one at a time, and what history cannot do."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "The empty tomb",
+          "href": "/questions/jesus/the-empty-tomb",
+          "why": "Was Jesus buried in a known tomb, and was it found empty? The most disputed part of the case, with the objection stated first."
+        }
+      ],
+      "question": "Before you weighed the evidence, had you already decided whether a resurrection is possible, and where did that decision come from?",
+      "do": "Write down the four facts the answer says nearly every historian grants. Beside each, write the natural explanation you find most likely, then note what it leaves unexplained.",
+      "verse": {
+        "ref": "1 Corinthians 15:14",
+        "text": "And if Christ has not been raised, our preaching is worthless, and so is your faith."
+      },
+      "care": [
+        "If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What would it take for you to believe that something impossible had really happened?",
+        "discuss": [
+          "Hume said no testimony could make him believe a miracle. Is that a conclusion from the evidence, or a rule made before it?",
+          "Paul and James both had reasons not to believe. What do you think changed their minds?",
+          "The answer says history can move someone from dismissing the claim to weighing it, and no further. Do you agree?"
+        ],
+        "pray": "Those who pray may ask for honesty about what they decided before the evidence was called. Anyone who doesn't pray can keep a minute of quiet with the hardest question of the session."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Argue it yourself",
+      "minutes": 15,
+      "teaching": [
+        "Reading an argument is one thing. Arguing back is a better test. Test the Case takes one question and makes the argument a move at a time. At each move you can push back with the objection you actually hold and read the honest reply, and every move ends by saying what it doesn't prove. The case on the resurrection opens first. The others take up hell, meaning, suffering, the Gospels, whether Jesus was only a good teacher, wishful thinking, other religions and faith itself.",
+        "Go slowly, and push hardest where you disagree most. The tool keeps your place, so you can leave a case and come back to it. When you reach the end of one, notice what kind of disagreement is left. Some disagreements are about evidence, and more reading can move them. Others rest on what you decided was possible before any evidence was heard, and no argument can settle those for you. Knowing which kind you hold is worth more than winning the case."
+      ],
+      "open": {
+        "kind": "tool",
+        "label": "Test the Case",
+        "href": "/tools/test-the-case",
+        "why": "Each case one move at a time, your own objection answered at every step, and what each move does not prove said plainly."
+      },
+      "question": "At which move did you push back hardest, and did the reply answer you or go around you?",
+      "do": "Work through one case to its end. At the move where you disagree most, write your objection in your own words before you open the tool's reply, then compare the two.",
+      "verse": {
+        "ref": "Proverbs 18:17",
+        "text": "The first to state his case seems right until another comes and cross-examines him."
+      },
+      "group": {
+        "open": "When did someone last change your mind about something that mattered?",
+        "discuss": [
+          "Which objection did you raise in the tool, and did the reply meet it?",
+          "Where in the case did the disagreement stop being about evidence and start being about what is possible?",
+          "The tool says that walking away is a choice about the evidence, not an escape from making one. Is that fair?"
+        ],
+        "pray": "Those who pray may ask for the courage to change their minds where the evidence calls for it, and the steadiness not to where it doesn't."
+      }
+    },
+    {
+      "n": 9,
+      "title": "If God is good",
+      "minutes": 10,
+      "teaching": [
+        "For many people this is the question under all the others, and it deserves an argument, not a slogan. The answer this session opens starts with the protest at full strength: the old question of Epicurus, William Rowe's fawn burned in a forest fire and lying in agony for days, and Ivan Karamazov in Dostoevsky's novel handing back his ticket. It also says that some of the answers Christians reach for first are worse than silence. Telling a grieving mother that everything happens for a reason is the mistake of Job's friends, and God rebukes them for it.",
+        "Then it separates two arguments. The claim that evil makes God impossible has largely been given up, even by atheist philosophers. The claim that evil makes God unlikely is serious and still argued, and its key step, that suffering we can see no reason for probably has none, is weaker than it looks. None of this explains anyone's suffering, and the answer says so. What Christianity offers at a hospital bed is not an explanation but an event: a God who entered suffering himself, and a promise about how it ends."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "If God is good, why is there so much suffering?",
+        "href": "/answers/if-god-is-good-why-suffering",
+        "why": "The protest at full strength, the two forms of the argument laid out, where the second is weakest, and what no argument can do at a hospital bed."
+      },
+      "question": "Is your objection about suffering an argument, a wound, or both?",
+      "do": "Read the section on where the evidential argument is weakest. Then write one sentence on whether we should expect to see God's reasons if there were any, and say where you stand.",
+      "verse": {
+        "ref": "Psalm 13:1",
+        "text": "How long, O LORD? Will You forget me forever? How long will You hide Your face from me?"
+      },
+      "care": [
+        "If you are suffering now, your pain is real, and you are not failing God by feeling it. The psalms are full of people who cried out to God. “The LORD is near to the brokenhearted” (Psalm 34:18). Please do not carry it alone: talk to someone you trust, a friend, a pastor, a doctor or a counsellor. If the pain ever feels like more than you can bear, reach out today to a crisis line or emergency service. The Find Help page on this site lists places to turn. The site's Honest Answer, ‘If God is good, why is there so much suffering?’, faces the larger question."
+      ],
+      "group": {
+        "open": "What answer to suffering have you heard that made things worse?",
+        "discuss": [
+          "The answer separates the claim that evil makes God impossible from the claim that it makes him unlikely. Why does the difference matter?",
+          "In the book of Job the reader is told a reason that Job never hears. What does that do to the argument from suffering we can't explain?",
+          "Christians say God entered suffering himself. Does that answer anything, or only change the question?"
+        ],
+        "pray": "Pray, if you pray, for anyone in the group carrying pain now, by name if they wish. Leave room for silence, and let no one explain anyone else's suffering."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Science and the god of the gaps",
+      "minutes": 10,
+      "teaching": [
+        "The strong form of this objection doesn't need the old story of a war between science and faith, which historians of science, believers and unbelievers alike, have taken apart. It needs only the track record. Lightning, plague, the paths of the planets and the fitness of living things were once put down to God, one by one natural explanations replaced them, and the replacements worked. Jerry Coyne argues that science has ways of finding out it is wrong and religion has none. The page this session opens grants a good deal of this, including the times the church set itself against what it should have welcomed.",
+        "Its reply is that science has made one kind of god unnecessary, the god who is needed only where explanations run out, and Christians should be glad to see him go. The God of the creeds was never offered as one more cause inside nature. He is confessed as the reason there is a lawful nature at all, and Thomas Aquinas made that answer in the thirteenth century. Science explains superbly how one state of nature leads to another. By its method it can't say why there is a nature with laws, or why minds can grasp them. That doesn't prove God. It leaves the question open."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Hasn't science made God unnecessary?",
+        "href": "/questions/science/has-science-made-god-unnecessary",
+        "why": "The objection from the track record of science at full strength, what is true in it, and what kind of question science was built to answer."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Do I have to choose between faith and science?",
+          "href": "/answers/do-i-have-to-choose-between-faith-and-science",
+          "why": "The shorter answer, with the history of the war story and the questions Christians still argue among themselves."
+        },
+        {
+          "kind": "film",
+          "label": "Are science and the Bible enemies?",
+          "href": "/study/explorer/watch/science-and-the-bible",
+          "why": "The same question in seven short pictures, made for families, if you want to talk it over with a child."
+        }
+      ],
+      "question": "Is your objection to the god of the gaps, or to the God the creeds describe?",
+      "do": "Write down one thing science has explained that people once put down to God. Then write one question that science, by its method, could never answer, and say why.",
+      "verse": {
+        "ref": "Proverbs 25:2",
+        "text": "It is the glory of God to conceal a matter and the glory of kings to search it out."
+      },
+      "group": {
+        "open": "Have you ever felt you had to choose between faith and science? When was it?",
+        "discuss": [
+          "The page says science has made one kind of god unnecessary. Which kind, and what is left?",
+          "Water boils because its molecules are agitated, and because someone wanted tea. Where else do two true answers to two different questions get mixed up?",
+          "Einstein, who didn't believe in a personal God, called the world's being comprehensible a miracle. What do you make of that?"
+        ],
+        "pray": "Those who pray may give thanks for the order of the world and for the minds that study it. Anyone who doesn't pray can name one thing in nature that still astonishes them."
+      }
+    },
+    {
+      "n": 11,
+      "title": "The church's record",
+      "minutes": 10,
+      "teaching": [
+        "Many people who reject Christianity are rejecting what Christians have done, and some of what Christians have done deserves to be rejected. The Crusades were preached by popes as acts of devotion, with forgiveness promised to those who fought. Armies under the cross massacred the Jewish communities of Worms and Mainz in 1096, killed the Muslims of Jerusalem in July 1099 and burned its Jews in their synagogue, and in 1204 sacked Constantinople, a Christian city. The page this session opens says all of that first, without excuse.",
+        "It corrects one thing, because it is true: the Crusades answered real conquests, after Turkish armies overran Christian Asia Minor and a Byzantine emperor asked the West for help. That lessens nothing that was done. Its argument is narrower. Jesus told the disciple who drew a sword to put it away, and nothing in the New Testament promises forgiveness to anyone for killing. The Crusades show what a church joined to armies and land will do with Christ's name. The church has confessed it as sin, and the warning stands over every Christian who wants the faith to rule by force, in any century."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Weren't the Crusades a holy war of conquest?",
+        "href": "/questions/morality/the-crusades",
+        "why": "It grants the history first and without bargaining, corrects one claim because it is false, and asks what the Crusades actually show about the faith."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "The church hurt me",
+          "href": "/help/church-hurt",
+          "why": "If the record that weighs on you is your own, start with the page written for people a church has harmed."
+        }
+      ],
+      "question": "How much of your objection to Christianity is to what Christians have done, and how much is to what Christ taught?",
+      "do": "Read Matthew 26:47-56, the arrest in the garden. Then write down the standard you use to judge the Crusades, and where you think that standard came from.",
+      "verse": {
+        "ref": "Matthew 26:52",
+        "text": "“Put your sword back in its place,” Jesus said to him. “For all who draw the sword will die by the sword.”"
+      },
+      "care": [
+        "If you have been harmed by someone in a church, and were told to forgive and say nothing, what happened to you may have been wrong. Please talk with someone you trust outside that situation. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What has the church done, in history or in your own life, that made it hardest to take seriously?",
+        "discuss": [
+          "The page grants the massacres without excuse, then corrects the claim that the Crusades came from nowhere. Does the correction lessen anything?",
+          "Is ‘that wasn't real Christianity’ always a dodge? When is it fair to judge followers by their founder's words?",
+          "Where do Christians today make the cross the badge of a people's power?"
+        ],
+        "pray": "Pray, if you pray, for the descendants of those the church has harmed, and for anyone in the group who carries harm done in Christ's name. Others can keep a minute of silence for the same people."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Deciding while unsure",
+      "minutes": 10,
+      "teaching": [
+        "This track hasn't tried to settle anything for you, and it won't start now. The last question is how to decide while the evidence is still being weighed, which for most people is the whole of life. W. K. Clifford argued in 1877 that ‘it is wrong always, everywhere, and for anyone, to believe anything upon insufficient evidence.’ John Loftus asks believers to look at their own faith as an outsider would. And Pascal's wager, the answer Christians often reach for first, deserves the criticism it gets.",
+        "The answer this session opens replies with William James: some questions are live, forced and momentous, and refusing to decide one means living by one answer anyway. Neither belief nor unbelief is a safe default. Both are commitments made under risk. Christianity doesn't offer itself as a safe bet. It names the fact that would sink it, a tomb in Jerusalem, and asks to be judged there. You may finish this track unconvinced. If you do, finish having weighed the strongest case, and keep the question you wrote in the first session where you will find it again."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "What if Christianity is wrong?",
+        "href": "/answers/what-if-christianity-is-wrong",
+        "why": "Clifford, Loftus and the case against Pascal's wager first, then why neither belief nor unbelief is the safe ground, and where the faith could be shown wrong."
+      },
+      "also": [
+        {
+          "kind": "plan",
+          "label": "Eight Weeks for the Curious Skeptic",
+          "href": "/plans/skeptic",
+          "why": "If you want to keep going: Mark read as an ancient life, the hardest texts on the table, and nothing waiting for you in week eight."
+        },
+        {
+          "kind": "creed",
+          "label": "The Apostles' Creed",
+          "href": "/resources/creeds/apostles-creed",
+          "why": "The oldest summary of the faith still in use, with notes on what each line was answering, so that anything you reject is the real claim."
+        }
+      ],
+      "question": "Where do you stand now on the question you wrote down in the first session, and what would it take to move you?",
+      "do": "Take out the question from the first session. Under it, write in one honest sentence where you stand now. If you want to keep going, begin the eight-week plan. If you don't, keep the page where you will find it again.",
+      "verse": {
+        "ref": "Acts 17:32",
+        "text": "When they heard about the resurrection of the dead, some began to mock him, but others said, “We want to hear you again on this topic.”"
+      },
+      "care": [
+        "If your grief is so heavy that you cannot carry it, or you feel you do not want to go on, please tell someone: a pastor, a friend, a doctor or a counsellor. You do not have to carry it alone. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Since the first session, what has changed, if anything, in the way you hold your question?",
+        "discuss": [
+          "Clifford says believing on insufficient evidence is always wrong. Could anyone live by that rule?",
+          "Is unbelief a neutral place to stand, or a commitment of its own?",
+          "When Paul spoke in Athens, some mocked and others wanted to hear more. Where would you have stood then, and where do you stand now?"
+        ],
+        "pray": "Those who pray may thank God by name for each person in the group and for every honest question asked, and ask nothing more of anyone than that they keep looking."
+      }
+    }
+  ]
+}
