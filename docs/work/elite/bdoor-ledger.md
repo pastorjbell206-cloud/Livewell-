@@ -16895,3 +16895,20 @@ Cut in chapter 15: John 18:1, Luke 22:39-44, Judas beside Ahithophel, Psalm 41:9
 | The care line (‘A word for anyone who has been sexually assaulted...’ to ‘...lists places to turn.’) | 15-23 `hard` | judges/plain/19.json (22-30); deuteronomy/plain/22.json (22-30) and others (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 16: 1 Peter 2:23, Galatians 3:13 and Jesus crossing the Kidron set beside David and Shimei (the deep note calls it a pattern, not a line the New Testament draws to this chapter); Psalm 7's heading and Shimei (the Psalms note says the guess cannot be proved); 16:18 paraphrased because it carries a dash; 16:3 and 16:10 quoted only around their inner quotations.
+
+## The plain notes on 2 Samuel 17 (2026-11-23)
+
+`client/public/bible/notes/2-samuel/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hinge of the revolt; the prayer of 15:31 answered through Hushai; counsel as a formal court affair; Ahithophel's sound strategy that would probably have ended David's life; Hushai's speech of images playing on fear and pride, buying time; verse 14 as one of few places in chapters 9 to 20 where the narrator says what God is doing; God working through human decisions | 1-14 | 2-samuel/17.json `story`, `cultural`, `literary`, `doctrines` (providence, prayer, wisdom), `words` (etsah, parar, tsavah) | Repository |
+| Proverbs 21:30; Psalm 33:10 | 1-14 | 2-samuel/17.json `doctrines` (wisdom: Proverbs 21:30), `words` (parar: Psalm 33:10); BSB | Repository; BSB text |
+| The fast second half; courtyard wells and stored rainwater; grain spread to dry; the woman's quick thinking and Rahab; avar seven times and the crossing by daybreak; Ahithophel's end in one sentence; his likely foresight of Absalom's failure and his own death as a traitor | 15-23 | 2-samuel/17.json `cultural`, `literary`, `words` (avar), `hard` | Repository |
+| Joshua 2:6 | 15-23 | 2-samuel/17.json `cultural` (Rahab, Joshua 2); BSB | Repository; BSB text |
+| Ahithophel's death: reported briefly without comment; neither praised nor condemned; the Bible's few such deaths, tragic endings and never a good or honorable way out; life belonging to God and no one beyond his mercy; despair after ruined plans and wounded pride; the story not ending in despair; no means named | 15-23 `hard` | 2-samuel/17.json `hard`; 1-samuel/plain/31.json (1-6, `hard`) | Repository |
+| The care line (‘If you have thoughts of hurting yourself...’ to ‘...lists places to turn.’) | 15-23 `hard` | 1-samuel/plain/31.json (1-6); judges/plain/16.json (23-31); 1-peter/plain/5.json (5-7) and others (`hard`) | Reused whole, word for word; Find Help named; the deep note's crisis-line number not carried over |
+| Mahanaim east of the Jordan in Gilead, Ish-bosheth's capital (2:8-9), a fortified town; Jacob and the angels; Shobi from Rabbah, probably Hanun's brother and perhaps ruling under David; Machir who sheltered Mephibosheth (9:4); Barzillai of Gilead; old kindness repaid; lavish hospitality answering hunger, exhaustion and thirst; Amasa as cousin to Joab and nephew to David (1 Chronicles 2:16-17); Abigail daughter of Nahash a puzzle; Israelite or Ishmaelite and the BSB following Chronicles | 24-29 | 2-samuel/17.json `historical`, `cultural`, `literary` | Repository |
+| Genesis 32:2; 1 Chronicles 2:16-17 | 24-29 | 2-samuel/17.json `historical`; genesis/plain/32.json (1-2, `hearers`); BSB | Repository; BSB text |
+
+Cut in chapter 17: Ahithophel compared with Judas (Matthew 27:3-5) and Acts 4:27-28 set beside verse 14 (the deep note calls the comparison a pattern readers noticed, not a line the New Testament draws to this chapter); the means of Ahithophel's death, which the text names and these notes do not repeat; the deep note's crisis-line number; 17:11 paraphrased because it carries a dash; 17:9 and 17:16 paraphrased around their inner quotations.
