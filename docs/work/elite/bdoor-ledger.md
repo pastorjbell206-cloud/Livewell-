@@ -15664,3 +15664,19 @@ Cut in chapter 5: Matthew 13:43 and Colossians 2:15 (the deep note's thematic li
 | The fleece: weak faith rather than a model (Deuteronomy 6:16, Gideon's own plea); God's patience with the fearful; description and not a method of guidance; Christians differ on asking for signs | 33-40 `hard` | judges/6.json `hard` | Repository; the views in their holders' terms; no side on asking for signs |
 
 Cut in chapter 6: John 20:19 and Ephesians 2:14 on peace, and 1 Corinthians 1:26-29 (the deep note's thematic links, not lines the New Testament draws to this chapter); where Ophrah lay (not identified with certainty).
+
+## The plain notes on Judges 7 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Numbers that fall (32,000, 10,000, 300) and the reason given first (verse 2), pride after victory; the fearful sent home under Deuteronomy 20:8; Harod at the foot of Gilboa, Moreh to the north, the camp between; Mount Gilead in verse 3 and the three explanations; tsaraph as refining; the test left unexplained so the point is God's choosing | 1-8 | judges/7.json `historical`, `cultural`, `literary`, `words` (pa'ar, tsaraph); theology/passage-notes.json (judges 7) | Repository; no side on Gilead |
+| Deuteronomy 20:8; Deuteronomy 8:17; Psalm 33:16; Zechariah 4:6 | 1-8 | judges/7.json `cultural`; theology/passage-notes.json (judges 7, `crossRefs`, `echoes`); BSB | Repository; BSB text |
+| The test at the water: the alert-soldier view, the sorting view, the less-disciplined view; the weight on verses 2 and 7; the small-teams misreading named | 1-8 `hard` | judges/7.json `hard`; theology/passage-notes.json (judges 7, `misreadings`) | Repository; the views in their holders' terms |
+| God offering a sign before Gideon asks; dreams as messages in the ancient world; barley as poor men's bread and the tent as the nomads; the enemy camp announcing its own defeat; Gideon's worship | 9-15 | judges/7.json `cultural`, `literary`, `words` (chalom), `doctrines` (faith) | Repository |
+| Psalm 83:11; 1 Corinthians 1:27 | 9-15 | psalms/plain/83.json; theology/passage-notes.json (judges 7, `echoes`); BSB | Repository; BSB text; Paul's words given as the same way of God's working, not as a line drawn to Gideon |
+| The watches and the middle watch about ten at night; few horns in an army and three hundred from every side; the jars and torches; sound and light, Midianite swords turned on each other; the horns and Jericho; the cry joining God and Gideon, God first, and chapter 8; the fords and Ehud's men; Ephraim called late; Oreb and Zeeb as raven and wolf; the heads told without comment | 16-25 | judges/7.json `historical`, `cultural`, `literary`, `words` (shophar); bible/guides/calendar-and-festivals.json (three watches, Judges 7:19) | Repository |
+| Joshua 6:20; Isaiah 10:26; Isaiah 9:4 | 16-25 | judges/7.json `historical`, `story`, `words`; BSB | Repository; BSB text |
+
+Cut in chapter 7: 2 Corinthians 4:7 and the treasure in jars of clay (the deep note says Paul does not cite Gideon there; the link is not drawn by the New Testament); Abel-meholah as Elisha's later home; the places of the flight beyond the fords.
