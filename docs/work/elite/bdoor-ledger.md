@@ -16755,3 +16755,17 @@ Cut in chapter 7: John 2:19-21, 1 Peter 2:5, Ephesians 2:19-22 and the son of Da
 | Isaiah 9:7; 1 Chronicles 18:17 | 15-18 | 2-samuel/8.json `christ` (Isaiah 9:7), `cultural` (1 Chronicles 18:17); BSB | Repository; BSB text (a line within the Old Testament) |
 
 Cut in chapter 8: the New Testament's reading of the royal psalms and of Isaiah 9:7 of Jesus (the deep note calls the link one of pattern, not a line the New Testament draws to this chapter); the deep note's list of the numbers of chariots and men compared with Chronicles (left to the site's page on those numbers); 8:11 quoted not at all, since it ends in a dash.
+
+## The plain notes on 2 Samuel 9 (2026-11-23)
+
+`client/public/bible/notes/2-samuel/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The oath to Jonathan (1 Samuel 20:14-17); Jonathan's death and his son lamed at five (4:4); new dynasties removing the old one's men; Lo-debar in Gilead and Machir's house; fear when summoned; chesed three times (verses 1, 3 and 7); the kindness of God as God's kind of kindness or kindness sworn before God; faithfulness reaching a son who had earned nothing; a dead dog as the lowest self-description, dogs as scavengers; the gap between his words and David's gift | 1-8 | 2-samuel/9.json `story`, `historical`, `cultural`, `literary`, `words` (chesed, kelev), `doctrines` (covenant) | Repository |
+| 1 Kings 15:29; 2 Kings 10 | 1-8 | 2-samuel/9.json `historical`; BSB | Repository; BSB text |
+| Genuine or watchful: political suspicion and the argument that chapter 21 came first; the narrator taken at his word, the oath and the land returned; generosity and prudence together; 21:7 | 1-8 `hard` | 2-samuel/9.json `hard` | Repository; both readings in their holders' terms |
+| The king's table as honor, support and a way to keep a rival close; Saul's land probably around Gibeah, passed to the crown or managed by Ziba; Ziba's household to work it; the table four times; like one of the king's sons; disability and social shame (5:8); the unresolved last line, weakness kept in view; welcomed without being healed first; Ziba and Mephibosheth in chapters 16 and 19 | 9-13 | 2-samuel/9.json `cultural`, `literary`, `words` (shulchan), `story`, `questions` | Repository |
+| 2 Kings 25:29; Proverbs 19:17 | 9-13 | 2-samuel/9.json `cultural` (2 Kings 25:27-30); luke/plain/14.json (12-14, `ot`: Proverbs 19:17 beside 2 Samuel 9:13); BSB | Repository; BSB text (lines within the Old Testament) |
+
+Cut in chapter 9: Luke 14:12-24, the Lord's Supper and Revelation 19:9 set beside Mephibosheth at the king's table (the deep note says the New Testament does not quote this chapter and calls the link a pattern); the name Merib-baal (given in chapter 4's note).
