@@ -114,7 +114,10 @@
 .ex-holds__jump a {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 44px;
+  /* "God" and "Sin" are narrower than a thumb (the walk's polish, 2026-11-23). */
+  min-width: 44px;
   color: var(--ink);
   text-decoration: underline;
   text-decoration-color: var(--mustard);
@@ -427,6 +430,9 @@ h3.ex-panel__title,
   text-decoration-color: var(--mustard);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 0.18em;
+  /* The title alone was 30 px tall on a phone: padding on an inline link makes
+     the target 44 px without moving a line (the walk's polish, 2026-11-23). */
+  padding: 7px 0;
 }
 .ex-stop__title a:hover {
   text-decoration-thickness: 3px;
@@ -591,6 +597,16 @@ h3.ex-panel__title,
 .ex-card li {
   font-family: var(--U);
   font-size: 15px;
+}
+/* A card's passages and stops, and its quotation's reference, are each a
+   link of their own: 44 px tall, as every other control (the walk's polish,
+   2026-11-23). */
+.ex-card li > .st-verseref,
+.ex-card li > .ex-link,
+.ex-quote__ref .st-verseref {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 .ex-card__answer {
   font-family: var(--B);

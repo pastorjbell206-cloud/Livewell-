@@ -1711,7 +1711,8 @@ html{-webkit-tap-highlight-color:transparent}
 .qa-group__list a{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:52px;padding:8px 0;font-family:var(--U);font-size:15.5px;line-height:1.35;color:var(--ink);text-decoration:none;scroll-margin-top:96px}
 .qa-group__list a:hover span{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:4px}
 .qa-group__list small{font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mustard-text)}
-.qa-group__more{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;padding:0;border:0;background:none;font-family:var(--U);font-weight:500;font-size:15px;color:var(--ink);cursor:pointer;border-bottom:1.5px solid var(--mustard)}
+/* "All 7" is 31 px of text: the button is held to 44 px each way (the walk's polish, 2026-11-23). */
+.qa-group__more{display:inline-flex;align-items:center;min-height:44px;min-width:44px;margin-top:4px;padding:0;border:0;background:none;font-family:var(--U);font-weight:500;font-size:15px;color:var(--ink);cursor:pointer;border-bottom:1.5px solid var(--mustard)}
 @media (max-width:1000px){.qa-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.qa-groups{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}.qa-result{min-height:220px}}
 
