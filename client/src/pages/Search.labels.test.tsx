@@ -27,10 +27,10 @@ afterEach(() => {
 
 describe("a hub page's search label", () => {
   it("is the name of its door or room from the catalogue, never 'Main Pages'", () => {
-    const labels = HUBS.map((e) => resultLabel({ sourceLabel: "Main Pages", href: e.href }));
-    for (const [i, label] of labels.entries()) {
-      expect(label, HUBS[i].href).not.toBe("Main Pages");
-      if (label) expect(NAMES.has(label), `${HUBS[i].href}: ${label}`).toBe(true);
+    for (const hub of HUBS) {
+      const label = resultLabel({ sourceLabel: "Main Pages", href: hub.href });
+      expect(label, hub.href).not.toBe("Main Pages");
+      if (label) expect(NAMES.has(label), `${hub.href}: ${label}`).toBe(true);
     }
     // Paul's travels is listed inside the Bible door's room "The Bible's story"; a film sits in the Bible Explorer.
     expect(resultLabel({ sourceLabel: "Main Pages", href: "/study/explorer/pauls-travels" })).toBe("The Bible's story");
