@@ -1377,3 +1377,24 @@ No new claim outside Scripture and the notes: no statistic, study, scholar or da
 | consistency-check.json, the line on Leviticus 19:15 | No partiality to the poor, no favoritism to the rich | The verse itself |
 
 No statistic, study, scholar or date was added in this run.
+
+## Run of 2026-11-23: the remaining wisdom topics, written in full
+
+Every claim below was written against the site's own notes; "note" is `client/public/bible/notes/<book>/<n>.json` and its `verses/` file, "plain" its `plain/` file, and "Find Help" a page in `client/public/needs/`. Nothing outside the repo was opened. The care lines are checked word for word by `validate-wisdom.mjs`.
+
+| Topic | Claim | Checked against |
+|---|---|---|
+| church-hurt | Ezekiel's shepherds are Israel's rulers, who fed themselves while the flock went hungry, sick and scattered; God will shepherd the flock himself, judge between the strong sheep who trample the pasture and the weak, and shepherd them with justice | note ezekiel/34 summary; Ezekiel 34:2-4, 15-16 |
+| church-hurt | A friend's betrayal hurts more than an enemy's attack; the pain is not an overreaction | plain psalms/55 12-23 asks |
+| church-hurt | Heavy loads on others' shoulders, set against Jesus' own light burden; the warning lands first on those who teach and lead in his church today | note matthew/23 verse 4; plain matthew/23 1-12 asks |
+| church-hurt | The invitation heard as one more demand; spoken to anyone worn out by a religion that felt like a weight; a yoke is made for two, the word for easy also means kind | plain matthew/11 28-30 hard |
+| church-hurt | The hired hand runs because he does not care; God condemned shepherds who fed themselves; a true shepherd gives his life, not takes it; your hurt does not mean God was like them | note john/10 verses 12-13; plain john/10 11-21 asks |
+| church-hurt | The man is thrown out when he insists Jesus must be from God; the authorities use sin as a weapon, a label for someone else; Jesus went looking for the man they threw out | note john/9 summary and verse 34; plain john/9 35-41 asks |
+| church-hurt | The most severe warning in the Gospels; the little ones include every vulnerable disciple; rightly applied to the abuse of children; the church has sometimes protected abusers and silenced children, a betrayal of the passage | note matthew/18 verse 6; plain matthew/18 6-9 hard. Context ends at verse 6, so the hand and eye sayings are not shown |
+| church-hurt | Wolves from the elders' own number; such people may speak from the front of a church | Acts 20:29-30; plain acts/20 25-31 asks |
+| church-hurt | Diotrephes loves to be first, slanders the elder, refuses travelers and puts out those who welcome them; the elder names the wrong openly and does not answer slander with slander; the letter asks no one to stay under a leader who controls, shames or harms them | note 3-john/1 summary; plain 3-john/1 9-10 hard |
+| church-hurt | The God who counts the stars heals the brokenhearted; not too big to notice you | note psalms/147 summary; plain psalms/147 1-11 asks |
+| church-hurt | 1 Corinthians 6:7: everyday civil disputes over money, property and business, not crimes; nothing hides a crime; abuse reported to the police (Romans 13:4); Paul appealed to Caesar (Acts 25:11); his anger is at the strong who cheated the weak | plain 1-corinthians/6 1-8 hard |
+| church-hurt | The shapes church hurt takes (a pastor who could not be questioned, abuse and then the abuser protected, a congregation closing ranks, people dropped after a divorce or an illness); ordinary disappointment among sinners against spiritual abuse; Scripture puts God against shepherds who harm the flock, not beside them | Find Help church-hurt (answer and happening) |
+| church-hurt | Psalm 23: the promise is not that the sheep will never be in danger but that the shepherd will never leave | plain psalms/23 1-4 hard |
+| church-hurt | Care lines | plain 3-john/1; plain matthew/18 |
