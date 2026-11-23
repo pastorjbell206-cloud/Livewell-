@@ -128,6 +128,7 @@ export const KIND_LABEL: Record<string, string> = {
   tool: "Tool",
   track: "Tracks",
   skeptics: "For skeptics",
+  history: "Church history",
 };
 
 export const kindLabel = (kind: string) => KIND_LABEL[kind] ?? "Page";

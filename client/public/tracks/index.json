@@ -115,7 +115,7 @@
       "road": "new",
       "subtitle": "Twelve short sessions for someone who has just come to faith, or is coming back to the start: who Jesus is, how to read and pray, the church, and what to do when you fail or doubt.",
       "minutes": 10,
-      "leader": false,
+      "leader": true,
       "kinds": [
         "answer",
         "book",
@@ -219,6 +219,114 @@
           "minutes": 10,
           "kind": "plan",
           "opens": "Eight Weeks for a New Christian"
+        }
+      ]
+    },
+    {
+      "slug": "stepped-back",
+      "title": "Your questions, taken seriously",
+      "for": "I've stepped back from faith",
+      "road": "stepped-back",
+      "subtitle": "Twelve short sessions for someone who has stepped back from faith or from church: the hurt, the questions, the silence of God, and the older faith underneath what you were handed, with no hurry.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "chapter",
+        "creed",
+        "film",
+        "help",
+        "history",
+        "plan",
+        "psalms",
+        "skeptics",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "If a church hurt you",
+          "minutes": 10,
+          "kind": "help",
+          "opens": "The church hurt me"
+        },
+        {
+          "n": 2,
+          "title": "If you're taking it apart",
+          "minutes": 10,
+          "kind": "help",
+          "opens": "I'm deconstructing my faith"
+        },
+        {
+          "n": 3,
+          "title": "Done with church, not with Jesus?",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Done with church but not Jesus?"
+        },
+        {
+          "n": 4,
+          "title": "Angry at God",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Is it okay to be angry at God?"
+        },
+        {
+          "n": 5,
+          "title": "A prayer for when you can't pray",
+          "minutes": 10,
+          "kind": "psalms",
+          "opens": "Pray Psalm 42 slowly"
+        },
+        {
+          "n": 6,
+          "title": "When God seems silent",
+          "minutes": 10,
+          "kind": "wisdom",
+          "opens": "Feeling Far From God"
+        },
+        {
+          "n": 7,
+          "title": "Thrown out, and found",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "John 9, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "Do one thing he said",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Matthew 5, passage by passage"
+        },
+        {
+          "n": 9,
+          "title": "The faith before your church",
+          "minutes": 10,
+          "kind": "creed",
+          "opens": "The Apostles' Creed"
+        },
+        {
+          "n": 10,
+          "title": "The longer story",
+          "minutes": 10,
+          "kind": "history",
+          "opens": "Church history"
+        },
+        {
+          "n": 11,
+          "title": "The question you couldn't ask",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "The case for the faith"
+        },
+        {
+          "n": 12,
+          "title": "What comes after",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "What happens after deconstruction?"
         }
       ]
     },

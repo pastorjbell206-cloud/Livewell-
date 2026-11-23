@@ -70,7 +70,7 @@ export default function Tracks() {
     <Layout>
       <SEOMeta
         title="Tracks: Short Sessions in Order, Step by Step"
-        description="Short sessions in order: for someone new to faith, for the skeptic, and through the Gospel of Mark a chapter at a time. Each uses a page on LiveWell and ends with one question, one thing to do and one verse."
+        description="Short sessions in order, each with a leader's guide: for someone new to faith, the skeptic, someone who has stepped back, and Mark a chapter at a time."
         url="https://www.livewellbyjamesbell.co/tracks"
       />
       <div className="tk-page">

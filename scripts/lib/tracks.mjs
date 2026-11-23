@@ -32,7 +32,7 @@ export const KINDS = {
   book: { name: "A book of the Bible", match: /^\/study\/bible\/[a-z0-9-]+$/ },
   film: { name: "A Bible Explorer film", match: /^\/study\/explorer\/watch\/[a-z0-9-]+$/ },
   answer: { name: "An Honest Answer", match: /^\/answers\/[a-z0-9-]+$/ },
-  case: { name: "A piece from the case for the faith", match: /^\/questions\/[a-z0-9-]+\/[a-z0-9-]+$/ },
+  case: { name: "The case for the faith: a piece, an area, or the whole library", match: /^\/questions(\/[a-z0-9-]+(\/[a-z0-9-]+)?)?$/ },
   "wisdom-finder": { name: "The Wisdom Finder", match: /^\/tools\/wisdom-finder(\?.*)?$/ },
   wisdom: { name: "What the Bible says on a subject", match: /^\/wisdom\/[a-z0-9-]+$/ },
   psalms: { name: "Pray the Psalms", match: /^\/tools\/pray-the-psalms(\?psalm=\d+)?$/ },
@@ -47,6 +47,7 @@ export const KINDS = {
   tool: { name: "A tool", match: /^\/tools\/[a-z0-9-]+$/ },
   track: { name: "The tracks", match: /^\/tracks(\/[a-z0-9-]+)?$/ },
   skeptics: { name: "For skeptics", match: /^\/skeptics$/ },
+  history: { name: "Church history: the course, or one of its lessons", match: /^\/theology\/history(\/[a-z0-9-]+)?$/ },
 };
 
 /** A track uses at least this many kinds across its sessions. */

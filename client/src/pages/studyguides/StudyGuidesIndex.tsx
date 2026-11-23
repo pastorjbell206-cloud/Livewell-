@@ -98,6 +98,9 @@ export default function StudyGuidesIndex() {
             <p>
               More guides are on the way. The booklets, libraries, and tools for leaders live in the wider resource hub.
             </p>
+            <p>
+              Leading a group through short sessions in order? Each of the <Link href="/tracks">tracks</Link> has a leader's guide, with every session's group questions gathered in order.
+            </p>
           </div>
           <ul className="lw-tiles" style={{ marginTop: "var(--s-4)" }}>
             <li><IconTile href="/resources" icon={LayoutGrid} name="All resources" line="Downloads, tools and help in one list" /></li>
