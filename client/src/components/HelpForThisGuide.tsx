@@ -54,7 +54,8 @@ export function HelpForThisGuide({ slug }: { slug: string }) {
           <li key={n.slug}>
             <Link
               href={n.page ? `/help/${n.slug}` : `/help?need=${n.slug}`}
-              style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "underline", textUnderlineOffset: "3px" }}
+              // Each a link of its own: 44 px tall, as every other control (the walk's polish, 2026-11-23).
+              style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, color: "var(--mustard-text)", textDecoration: "underline", textUnderlineOffset: "3px" }}
             >
               {n.title}
             </Link>

@@ -165,9 +165,13 @@ export default function CarePage() {
   const data = current?.data;
 
   if (!data) {
+    // While the page is on its way it is marked loading, so the prerendered page (whose heading is
+    // this page's own title) stays on screen until the real one replaces it with the same heading
+    // (lib/prerender-hold; the walk's polish, 2026-11-23). It once showed "Loading…" in between.
+    const loading = !current?.missing && !current?.failed;
     return (
       <Layout>
-        <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
+        <section data-lw-loading={loading ? "" : undefined} style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
           <div style={wrap}>
             <Place path="/help/page" dark />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 48px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.025em", margin: 0, maxWidth: "22ch" }}>

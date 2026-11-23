@@ -598,6 +598,8 @@ img{display:block;max-width:100%}
 .ed-kicker{display:block;font-family:var(--U);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:8px}
 .ed-num{font-family:var(--F);font-size:1.05rem;color:var(--mustard-text);margin-right:6px;letter-spacing:0}
 .ed-title{display:block;font-family:var(--F);font-size:clamp(1.3rem,1.1rem + 0.55vw,1.6rem);font-weight:500;line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin:0;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+/* A short plain line under the title (Find Help: each page's own title, naming its subject). */
+.ed-sub{font-family:var(--U);font-size:14px;font-weight:500;line-height:1.45;color:var(--ink);margin:6px 0 0;max-width:62ch}
 .ed-dek{font-family:var(--B);font-size:1rem;line-height:1.6;color:var(--ink-muted);margin:8px 0 0;max-width:62ch}
 .ed-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;font-family:var(--U);font-size:13px;color:var(--ink-muted);margin-top:10px}
 .ed-read{display:inline-flex;align-items:center;gap:5px;color:var(--ok);font-weight:600}
@@ -618,7 +620,7 @@ img{display:block;max-width:100%}
 .ed-row--thumb-right:hover .ed-thumb,.ed-row--thumb-right:focus-visible .ed-thumb{filter:brightness(1.12)}
 @media (max-width:760px){.ed-row--thumb-right{grid-template-columns:minmax(0,1fr)}.ed-row--thumb-right .ed-thumb{display:none}}
 .ed-index--dark,.ed-index--dark > li{border-color:rgba(245,240,230,.16)}
-.ed-index--dark .ed-title{color:var(--charcoal-fg)}
+.ed-index--dark .ed-title,.ed-index--dark .ed-sub{color:var(--charcoal-fg)}
 .ed-index--dark .ed-dek,.ed-index--dark .ed-kicker,.ed-index--dark .ed-meta,.ed-index--dark .ed-arrow{color:rgba(245,240,230,.7)}
 .ed-index--dark .ed-row:hover .ed-arrow,.ed-index--dark .ed-row:focus-visible .ed-arrow{color:var(--mustard)}
 .ed-split{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(28px,4vw,48px) clamp(32px,5vw,72px)}
@@ -1709,7 +1711,8 @@ html{-webkit-tap-highlight-color:transparent}
 .qa-group__list a{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:52px;padding:8px 0;font-family:var(--U);font-size:15.5px;line-height:1.35;color:var(--ink);text-decoration:none;scroll-margin-top:96px}
 .qa-group__list a:hover span{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:4px}
 .qa-group__list small{font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mustard-text)}
-.qa-group__more{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;padding:0;border:0;background:none;font-family:var(--U);font-weight:500;font-size:15px;color:var(--ink);cursor:pointer;border-bottom:1.5px solid var(--mustard)}
+/* "All 7" is 31 px of text: the button is held to 44 px each way (the walk's polish, 2026-11-23). */
+.qa-group__more{display:inline-flex;align-items:center;min-height:44px;min-width:44px;margin-top:4px;padding:0;border:0;background:none;font-family:var(--U);font-weight:500;font-size:15px;color:var(--ink);cursor:pointer;border-bottom:1.5px solid var(--mustard)}
 @media (max-width:1000px){.qa-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.qa-groups{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}.qa-result{min-height:220px}}
 
