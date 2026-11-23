@@ -1486,15 +1486,15 @@
     "left the church because",
     "church people",
     "the church covered it up",
-    "church protected the abuser",
-    "the elders took his side",
     "kicked out of church",
-    "cant step inside a church",
     "church shunned me",
     "pastor manipulated me",
-    "everyone at church turned against me",
     "religious trauma",
-    "church trauma"
+    "church trauma",
+    "the church protected him",
+    "my church turned on me",
+    "elders covered for him",
+    "church triggers me"
    ],
    "not": [],
    "related": [
@@ -2435,23 +2435,20 @@
   "anger-at-god": {
    "phrases": [
     "angry at god",
-    "mad at god",
     "furious with god",
-    "god let me down",
-    "why did god take him",
-    "why did god take her",
     "i hate god for this",
-    "god abandoned me",
-    "i prayed and he still died",
     "i blame god",
     "god is cruel",
     "yelling at god",
-    "cant forgive god",
-    "why would god let my child die",
-    "god took everything from me",
-    "i feel betrayed by god"
+    "i feel betrayed by god",
+    "god failed me",
+    "god is unfair to me",
+    "shaking my fist at god"
    ],
-   "not": [],
+   "not": [
+    "is god real",
+    "does god exist"
+   ],
    "related": [
     "suffering",
     "doubt",
