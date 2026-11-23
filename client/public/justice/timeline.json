@@ -37,8 +37,8 @@
       "era": "Medieval",
       "title": "The Sack of Constantinople",
       "category": "church",
-      "summary": "The Fourth Crusade, launched to recover Jerusalem, instead turned on the greatest Christian city in the world and sacked Constantinople in April 1204. Latin Christians looted churches, desecrated the altar of Hagia Sophia, and carried off relics and treasure while killing fellow believers. The wound to relations between East and West has never fully healed, and a sitting pope only apologized for it eight centuries later.",
-      "scale": "Three days of looting that crippled the Byzantine Empire and deepened a schism still felt today.",
+      "summary": "The Fourth Crusade, launched to recover Jerusalem, instead turned on the greatest Christian city in the world and sacked Constantinople in April 1204. Latin Christians looted churches, desecrated the altar of Hagia Sophia, and carried off relics and treasure while killing fellow believers. The wound to relations between East and West has never fully healed.",
+      "scale": "Looting that crippled the Byzantine Empire and deepened a schism still felt today.",
       "theReckoning": "When a holy war runs out of infidels it will find heretics, and when it runs out of those it will turn on its own. The crusade meant to save Christendom plundered it instead."
     },
     {
@@ -67,8 +67,8 @@
       "era": "Early Modern",
       "title": "The Spanish Inquisition",
       "category": "church",
-      "summary": "Established in 1478 under the Catholic monarchs and the church, the Spanish Inquisition policed the sincerity of converts from Judaism and Islam and later other suspected heretics, using torture, secret trials, and public burnings. Recent archival scholarship has lowered older inflated figures, estimating roughly 3,000 to 5,000 executions over more than three centuries, though the wider toll of imprisonment, confiscation, and fear was vast. It made the interrogation of conscience an instrument of the state and the church together.",
-      "scale": "Around 3,000 to 5,000 executed, with tens of thousands tried, over more than three hundred years.",
+      "summary": "Established in 1478 under the Catholic monarchs and the church, the Spanish Inquisition policed the sincerity of converts from Judaism and Islam and later other suspected heretics, using torture, secret trials, and public burnings. Over more than three centuries its toll of execution, imprisonment, confiscation, and fear was vast. It made the interrogation of conscience an instrument of the state and the church together.",
+      "scale": "Executions, imprisonments and confiscations over more than three hundred years.",
       "theReckoning": "When the church appoints itself judge of what a soul secretly believes, it builds a courtroom God never authorized. We tortured people into the words we wanted and called the confession faith."
     },
     {

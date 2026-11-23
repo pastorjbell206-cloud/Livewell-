@@ -43,3 +43,15 @@ To bring one back: put the corrected PDF at
 `api/index.ts` at the served file (add an `href` and send a paid buyer there),
 redirect `/<slug>` and `/<slug>/thank-you` to `/downloads` (vercel.json and
 App.tsx), and delete the file here.
+
+## originals/
+
+The four files of the two books James renamed on 2026-11-22, exactly as they
+were served until then: `The-Monster-in-the-Mirror.pdf` and `.epub` (now Blind
+Spots) and `When-God-Bless-America.pdf` and `.epub` (now A Higher Allegiance).
+They are kept so nothing of his is lost, and they are not served or listed.
+The files the site serves now are rebuilt from the EPUBs' own text, which is
+kept in `content/books-src/<id>/`, by `scripts/build-book-files.mjs`; its
+`--verify` compares the rebuilt text with these originals word for word.
+This folder is not a held book: nothing in `HELD_EBOOKS` or `api/index.ts`
+reads it (the API function's `includeFiles` glob does carry it along).

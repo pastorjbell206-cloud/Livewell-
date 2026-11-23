@@ -13,7 +13,9 @@
  *
  * Every line is the description the site already had for the book, from its
  * own page. `sub` is the subtitle printed on the file's title page and `pages`
- * the PDF's page count, both read from the files on 2026-11-22.
+ * the PDF's page count, both read from the files on 2026-11-22; the two James
+ * renamed were rebuilt from their own text on 2026-11-23
+ * (scripts/build-book-files.mjs) and their counts read from the new files.
  *
  * HELD_EBOOKS are not served and not listed (content/held-downloads/README.md).
  * Seven name the Pastors Connection Network inside the file and wait for
@@ -42,9 +44,10 @@ export interface Ebook {
   page?: string;
   /**
    * The title printed inside the file, when the site's title is newer than
-   * the file (James renamed two books on 2026-11-22; the PDFs and EPUBs are
-   * finished files and still say the old title). Shown as "Published earlier
-   * as ...". Remove it when his corrected file is in place.
+   * the file: written by scripts/sync-book-names.mjs from `fileTitle` in
+   * data/book-names.json, and shown on the card as the file's earlier name.
+   * Gone once the file is rebuilt under the new title (as both renamed books
+   * were on 2026-11-23).
    */
   formerly?: string;
 }
@@ -60,26 +63,24 @@ export const FREE_EBOOKS: Ebook[] = [
     group: "james",
     slug: "a-higher-allegiance",
     title: "A Higher Allegiance",
-    formerly: "When God Bless America Replaces Thy Kingdom Come",
     sub: "Reclaiming Jesus from American Politics",
     line: "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary.",
-    pages: 495,
+    pages: 212,
     cover: "/covers/when-god-bless-america-400.webp",
-    pdf: "/ebook/when-god-bless-america/When-God-Bless-America.pdf",
-    epub: "/ebook/when-god-bless-america/When-God-Bless-America.epub",
+    pdf: "/ebook/when-god-bless-america/A-Higher-Allegiance.pdf",
+    epub: "/ebook/when-god-bless-america/A-Higher-Allegiance.epub",
     page: "/books/a-higher-allegiance",
   },
   {
     group: "james",
     slug: "blind-spots",
     title: "Blind Spots",
-    formerly: "The Monster in the Mirror",
     sub: "Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It",
     line: "Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots.",
-    pages: 274,
+    pages: 244,
     cover: "/covers/the-monster-in-the-mirror-400.webp",
-    pdf: "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.pdf",
-    epub: "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.epub",
+    pdf: "/ebook/the-monster-in-the-mirror/Blind-Spots.pdf",
+    epub: "/ebook/the-monster-in-the-mirror/Blind-Spots.epub",
     page: "/books/blind-spots",
   },
   {
