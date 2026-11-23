@@ -363,3 +363,16 @@ Run on the merged tree, in this order.
 9. Before the push the target moved once more (search labels, a heading kept on the care pages from first paint, tap targets on /topics, the Explorer and the study guides, and a load failure stated on the compare page) and merged at `23929d8c` with no conflicts; the care pages the track opens changed only in how their heading paints. On that tree, in order: all 54 content-gate commands, pass; `pnpm check`, pass; `pnpm test`, 197 files passed, 7 skipped, 2,364 tests passed, 73 skipped; `pnpm build`, `pnpm run sitemap` (2,589), `pnpm run prerender` (64 track pages, 3,287 files) and `pnpm run audit:canonicals` (no failures), pass. The walk of item 6 and the print of item 7 were run again on a restarted server: every check passed, and the page counts were the same.
 
 Not verified: a real phone, Safari, a screen reader, or a printer. Lighthouse was not run for this track; its session pages are built like the others, which measured 83 to 85 on the phone profile. No person has read the new teaching, questions or leader's guides: every sentence is new and in James's name.
+
+### Gates record (third run, second push: the track for going deeper)
+
+Run on the tree at `deb24960`, the target having not moved since the first push.
+
+1. All 54 commands of the content-gates step: pass.
+2. `pnpm check`: pass.
+3. `pnpm test`: 197 files passed, 7 skipped; 2,365 tests passed, 73 skipped.
+4. `pnpm build`, `pnpm run sitemap` (2,604 addresses, fifteen more: the track, its twelve sessions, its leader's guide and its print view), `pnpm run prerender` (79 track pages, 3,302 files) and `pnpm run audit:canonicals` (2,604 checked, none unprerendered, no failures): pass.
+5. On the served build, restarted for the new build, by script at 390 and at 1440: the track from session 1 to 12, as in the first push's item 6. Each of the 20 links its sessions offer landed on its own address, answered 200, drew its own page, and showed "Back to session N of 12", which brought the reader back with the answer kept; the guided study of Romans 8 opened as a dialog, and once closed the way back was there. Halfway a reload kept the answer, the tick and the mark, /tracks offered session 7, and at the end the track's page said "All 12 sessions done". The leader's guide drew all six parts and every session, and the print view every session. No sideways scroll, no console error, no resource with an error beyond the local server's missing analytics. By keyboard on sessions 1, 3 and 10: a 2px solid focus ring on the session's button, Enter opens the page, and the first Tab is "Back to session N of 12", except in the guided study, a dialog that keeps focus until it is closed, as the session's own line says.
+6. As print (print media, Letter): the track on 25 pages, its leader's guide on 15; nothing that only works on a screen prints.
+
+Not verified: the same as for the first push. No person has read the new sessions or the leader's guide.
