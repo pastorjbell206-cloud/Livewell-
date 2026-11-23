@@ -6,10 +6,12 @@
  *
  * Tonight comes from the reader's own clock and the static year map
  * (lib/familyTable, lib/familyAdvent), titles included, so it never waits on
- * the network. The app mounts with createRoot and the prerendered HTML never
- * holds this line, so the clock and this device's storage are read on the
- * client's first render, after the static hero has painted; reading them
- * there rather than in an effect keeps the doors below from jumping.
+ * the network. The app mounts with createRoot and the prerendered HTML holds
+ * only an unseen copy of the words, to keep their room
+ * (scripts/lib/home-tonight-slot.mjs, which mirrors homeTonight below), so
+ * the clock and this device's storage are read on the client's first render,
+ * after the static hero has painted; reading them there rather than in an
+ * effect keeps the doors below from jumping.
  */
 import { useState } from "react";
 import { Link } from "wouter";
@@ -63,12 +65,14 @@ function lineFor(t: Tonight, lead = "Tonight at the table:"): TonightLine | null
  * - From the Sunday a week before Advent Sunday until Advent Sunday,
  *   tonight's devotion (Thanksgiving week's, for one) and U13's Advent line
  *   beneath it.
- * - On Advent Sunday and the nights after it before December 1, the year map
- *   hands tonight the calendar's first reading early, and /family offers it
- *   as "Day 1" (lib/familyTable nightLabel). Home offers the same reading the
- *   same way, so the one tap that works every other night still works on the
- *   first nights of Advent (the walk of 2026-11-23, finding 20).
- * - Any other night on the map, tonight's devotion. Off the map, nothing.
+ * - On Advent Sunday and the nights after it before December 1, no reading
+ *   is tonight's (the calendar's days are dates; lib/familyTable tonightOn),
+ *   so Home says what /family and Tonight say: "Advent has begun. The family
+ *   Advent calendar starts Tuesday, December 1, with The Long Wait Begins.",
+ *   the first reading's title its one tap (the walk's polish, 2026-11-23; it
+ *   was "Day 1" offered as tonight's, which /family's own card contradicted).
+ * - Any other night on the map, tonight's devotion. Off the map, and on the
+ *   nights after Christmas in Advent's last week, nothing.
  */
 export function homeTonight(date: string): HomeTonightCopy {
   const tonight = tonightOn(date);
@@ -80,19 +84,12 @@ export function homeTonight(date: string): HomeTonightCopy {
     const line = lineFor({ id: seasonalId("advent", advent.day), set: "advent", day: advent.day }, copy.line.lead);
     if (line) return { tonight: line, advent: null };
   }
-  if (!advent.beforeAdvent && tonight?.set === "advent" && tonight.day) {
-    // Named by its number, as /family names it on these nights: its date has not come yet.
-    const title = tonightTitle(tonight);
-    if (title) {
-      return {
-        tonight: { lead: "Advent has begun. Tonight at the table:", title, href: devotionHref(tonight.id), after: `, Day ${tonight.day} of the family Advent calendar` },
-        advent: null,
-      };
-    }
+  if (!advent.beforeAdvent) {
+    return { tonight: { lead: copy.line.lead, title: copy.line.link, href: copy.line.href, after: "" }, advent: null };
   }
   return {
-    tonight: tonight && tonight.set !== "advent" ? lineFor(tonight) : null,
-    advent: { lead: copy.line.lead, link: copy.line.link, href: copy.href },
+    tonight: tonight && lineFor(tonight),
+    advent: { lead: copy.line.lead, link: copy.line.link, href: copy.line.href },
   };
 }
 

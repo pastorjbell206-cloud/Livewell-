@@ -26,6 +26,7 @@ import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 import { loadQuestions } from "./lib/questions.mjs";
 import { SUPPORT_HEAD, givingOpen, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
+import { slotData, slotScript, withSlotScript } from "./lib/home-tonight-slot.mjs";
 
 dotenv.config();
 
@@ -1222,9 +1223,15 @@ function homeHeroHtml() {
   // Find works before the app runs: a plain GET to /search. Plate I's frame is
   // here, empty, at the size the drawing fills when React mounts.
   const label = "Look up a passage or ask a question";
-  // Tonight's line arrives with the app into a slot of the same height (Home.tsx),
-  // and under it the choices of /start as one row of chips, as Home draws them
-  // (pages/home/roadChips.ts): a road opens on /start, a reader's page opens itself.
+  // Tonight's line arrives with the app into a slot of the same height (Home.tsx):
+  // a script in the head of "/" (homeSlotScript, below) writes the line's own words
+  // into it, unseen, as the parser inserts it, on the nights an ordinary line's room
+  // would not fit them (lib/home-tonight-slot.mjs). No script sits inside the hero:
+  // the parser waits at a script for the stylesheet and may paint what it has, and on
+  // a phone that painted the words before Plate I, which then pushed them down. Under
+  // the slot, the choices of /start as one
+  // row of chips, as Home draws them (pages/home/roadChips.ts): a road opens on /start,
+  // a reader's page opens itself.
   const start = readJsonSafe("client/src/lib/startRoad.json") || {};
   const choice = new Map([
     ...(start.roads || []).map((r) => [r.id, { chip: r.chip, href: `/start#${r.id}` }]),
@@ -1256,6 +1263,16 @@ function homeHeroHtml() {
             <figure class="lw-frame-fig home-hero__art"><div class="lw-frame"><div class="lw-frame__in"></div></div><figcaption class="lw-cap"><span>Plate I</span><span>The road</span></figcaption></figure>
           </div>
         </section>`;
+}
+
+/**
+ * The script that fills the static hero's tonight slot with the words Home's
+ * line will say tonight, unseen, so the slot holds their room
+ * (lib/home-tonight-slot.mjs). It goes early in the head of "/", before the
+ * stylesheet (withSlotScript), never inside the hero (see homeHeroHtml).
+ */
+function homeSlotScript() {
+  return slotScript(slotData(REPO_ROOT));
 }
 
 /**
@@ -1323,6 +1340,8 @@ function writeRoute(template, route, head, bodyHtml = "") {
   fs.mkdirSync(path.dirname(target), { recursive: true });
   const preloads = isHome ? "" : chunkPreloads(route.path, template);
   let html = rewriteIndexHtml(template, preloads ? `${head}\n    ${preloads}` : head);
+  // The front page's head also carries the script that fills the hero's tonight slot, early (homeSlotScript).
+  if (isHome) html = withSlotScript(html, homeSlotScript());
   // The page's own text goes inside the static shell, under the masthead, in
   // the site's own type (.prerender-content in index.css). A crawler, a link
   // preview and a browser with scripts blocked read it there. For everyone

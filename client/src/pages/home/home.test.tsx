@@ -73,19 +73,21 @@ describe("homeTonight", () => {
     });
   });
 
-  it("offers the calendar's first reading on Advent Sunday and the nights before December 1, as /family does", () => {
-    // The walk of 2026-11-23 (finding 20): Home had no devotion on these nights while /family had one.
+  it("says when the calendar starts on Advent Sunday and the nights before December 1, and names its first reading", () => {
+    // The walk's polish (2026-11-23): no reading is tonight's on these nights, since the
+    // calendar's days are dates; Home says what /family's card says, with one tap to the first reading.
     for (const date of ["2026-11-29", "2026-11-30"]) {
+      expect(tonightOn(date)).toBeNull();
       expect(said(date)).toEqual({
-        tonight: "Advent has begun. Tonight at the table: The Long Wait Begins, Day 1 of the family Advent calendar.",
-        href: "/family/devotions/advent-1",
+        tonight: "Advent has begun. The family Advent calendar starts Tuesday, December 1, with The Long Wait Begins.",
+        href: devotionHref("advent-1"),
         advent: null,
       });
-      // The same reading /family offers that night.
-      expect(said(date).href).toBe(devotionHref(tonightOn(date)!.id));
     }
     // December 1 names it by its date, as before.
     expect(said("2026-12-01").tonight).toBe("Tonight at the table: The Long Wait Begins, December 1 in the family Advent calendar.");
+    // The nights after Christmas in Advent's last week have no reading, and Home shows nothing.
+    expect(homeTonight("2026-12-26")).toEqual({ tonight: null, advent: null });
   });
 
   it("names the day of the Advent calendar, in U13's words", () => {

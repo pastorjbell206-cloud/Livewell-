@@ -118,11 +118,14 @@ const dayNumber = (iso: string) => Date.UTC(Number(iso.slice(0, 4)), Number(iso.
 /**
  * Tonight's devotion on a calendar date (YYYY-MM-DD, the reader's own; see
  * localISODate). A day of a daily set takes that day; any other week takes
- * the week's devotion. A week a set serves has nights its set does not cover
- * (Advent Sunday and Monday before December 1, the Friday and Saturday after
- * Thanksgiving, the days after Christmas in Advent's last week): those nights
- * take the set's nearest day, its first before it begins and its last after it
- * ends. Null off the map.
+ * the week's devotion. A week a set serves has nights its set does not cover:
+ * the Friday and Saturday after Thanksgiving take the set's nearest day (its
+ * last). The Advent calendar's weeks do not: its days are dates (December 1
+ * to 25 in family-seasonal.json), so Advent Sunday and the nights before
+ * December 1, and the nights after Christmas in Advent's last week, have no
+ * devotion of their own, and Home, /family and Tonight say when the calendar
+ * starts instead of lending them a reading dated another day (the walk's
+ * polish, 2026-11-23). Null off the map, and on those nights.
  */
 export function tonightOn(date: string): Tonight | null {
   if (!onFamilyMap(date)) return null;
@@ -131,7 +134,7 @@ export function tonightOn(date: string): Tonight | null {
   const week = familyWeekOn(date);
   if (!week) return null;
   if (week.devotion) return { id: week.devotion };
-  if (!week.set) return null;
+  if (!week.set || week.set === "advent") return null;
   const today = dayNumber(date);
   let best: { set: FamilySetKey; day: number; gap: number } | null = null;
   for (const w of FAMILY_SETS) {
@@ -166,15 +169,19 @@ export function weekStartOf(date: string): string {
 
 /**
  * The first night after `date` whose devotion is a different one: next Sunday
- * in an ordinary week, tomorrow inside a daily set. Null when the map ends
- * first.
+ * in an ordinary week, tomorrow inside a daily set, and past the nights of an
+ * Advent week that have none (tonightOn) to the next that has. Null when the
+ * map ends first.
  */
 export function nextNewNight(date: string): { date: string; tonight: Tonight } | null {
   const now = tonightOn(date);
   for (let i = 1; i <= 8; i++) {
     const d = addDays(date, i);
     const t = tonightOn(d);
-    if (!t) return null;
+    if (!t) {
+      if (!onFamilyMap(d)) return null;
+      continue;
+    }
     if (!now || t.id !== now.id) return { date: d, tonight: t };
   }
   return null;
@@ -188,10 +195,11 @@ export function nextSaid(date: string, today: string): string {
 
 /**
  * How a devotion's day is named on a given night. A day of a daily set
- * carries a date for a label ("December 1"), and a week has nights its set
- * does not cover (Advent Sunday and the Monday after it fall before December
- * 1; see tonightOn). On those nights the label would name the wrong date, so
- * the day is named by its number: "Day 1".
+ * carries a label ("Thanksgiving Day", "December 1"), and a week has nights
+ * its set does not cover (the Friday and Saturday after Thanksgiving; see
+ * tonightOn). On those nights the label would name the wrong day, so the day
+ * is named by its number: "Day 7". The Advent calendar never gets here: its
+ * days are only ever tonight's on their own dates.
  */
 export function nightLabel(row: Pick<FamilyIndexRow, "id" | "label" | "day">, today: string): string | undefined {
   if (!row.day || tonightOn(today)?.id !== row.id) return row.label;

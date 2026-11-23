@@ -11,6 +11,7 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import LoadFailed from "@/components/LoadFailed";
+import { adventWaitingLine } from "@/components/AdventAtTheTable";
 import { Position } from "@/components/study/Position";
 import { localISODate } from "@/lib/familyYear";
 import { devotionHref, doneThisWeek, lastDone, nightLabel, placeOf, readFamilyProgress, tableHref, tonightOn, weekOfYear, whenSaid, type FamilyIndex } from "@/lib/familyTable";
@@ -22,6 +23,7 @@ export default function TonightCard({ index, retry }: { index: Loaded<FamilyInde
   const [today] = useState(() => localISODate());
   const [progress] = useState(() => readFamilyProgress());
   const tonight = tonightOn(today);
+  const waiting = tonight ? null : adventWaitingLine(today);
   // "Watch first": the film tonight's devotion offers, from the generated map.
   const film = filmForDevotion(useFamilyFilms(), tonight?.id ?? "");
 
@@ -47,7 +49,20 @@ export default function TonightCard({ index, retry }: { index: Loaded<FamilyInde
           <h2 className="tb-tonight__title">
             Choose tonight's devotion
           </h2>
-          <p className="tb-tonight__meta">No devotion is set for this date yet.</p>
+          {/* Advent Sunday to November 30: the calendar has not started, and the card says so as Home does. */}
+          <p className="tb-tonight__meta">
+            {waiting ? (
+              <>
+                {waiting.lead}{" "}
+                <Link href={waiting.href} className="tb-inline-link">
+                  {waiting.link}
+                </Link>
+                .
+              </>
+            ) : (
+              "No devotion is set for this date yet."
+            )}
+          </p>
           <div className="tb-tonight__actions">
             <Link href="/family/devotions" className="pg-action">
               All family devotions

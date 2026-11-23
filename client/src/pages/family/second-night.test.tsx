@@ -116,13 +116,15 @@ describe("the night after the week's devotion", () => {
 });
 
 describe("Advent's first nights", () => {
-  it("heads the devotion Day 1 on Advent Sunday, not December 1", async () => {
+  it("heads the first reading with its own date on Advent Sunday, and not as tonight's", async () => {
     at(new Date(2026, 10, 29, 18)); // Sunday, November 29, 2026: Advent Sunday
     serveFamily();
     renderAt("/family/devotions/advent-1");
     expect(await screen.findByRole("heading", { level: 1, name: row("advent-1").title })).toBeInTheDocument();
-    expect(screen.getByText(`Day 1 · ${row("advent-1").passage}`)).toBeInTheDocument();
-    expect(screen.queryByText(`December 1 · ${row("advent-1").passage}`)).toBeNull();
+    // The calendar starts December 1 (the walk's polish, 2026-11-23): its first reading keeps that date.
+    expect(screen.getByText(`December 1 · ${row("advent-1").passage}`)).toBeInTheDocument();
+    expect(screen.queryByText(`Day 1 · ${row("advent-1").passage}`)).toBeNull();
+    expect(screen.queryByText("· Tonight")).toBeNull();
   });
 });
 
