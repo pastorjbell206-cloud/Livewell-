@@ -895,3 +895,4 @@ Honest Answers: all twenty-three argued answers read; about 64 rows verified aga
 ### After the second pass
 
 - **Restored:** Russell's paragraph in `/writing/is-hell-real-and-is-it-forever`, word for word as it stood before 2.4 cut it, now that 3.20 has verified the lecture against two full copies. The first pass cut it only because no copy could be opened.
+- **Cut, to match the answer:** the same Einstein sentences ("Physics and Reality", 1936) from `/questions/science/has-science-made-god-unnecessary`, which the skeptic's track opens at session 10. The Einstein row in Part 3 cut them from the Honest Answer on faith and science because the essay could not be opened. Wigner's words, verified there, stay; the paragraph now speaks of him alone.

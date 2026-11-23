@@ -164,10 +164,22 @@ describe("/start: the five roads", () => {
     expect(Array.from(road.querySelectorAll("a.btn:not(.btn--quiet)")).map((a) => a.textContent)).toEqual(["Start the track"]);
     expect(within(within(road).getAllByRole("list")[0]).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(START_STEPS.map((s) => s.href));
     // A road with no track yet is as it was: its next step is the button.
-    fireEvent.click(screen.getByRole("link", { name: /I'm skeptical/ }));
-    const other = screen.getByRole("heading", { level: 2, name: "If you're skeptical" }).closest("section") as HTMLElement;
+    fireEvent.click(screen.getByRole("link", { name: /I'm leading a family/ }));
+    const other = screen.getByRole("heading", { level: 2, name: "If you're leading a family" }).closest("section") as HTMLElement;
     expect(within(other).queryByText(/This road is now a track/)).toBeNull();
     expect(other.querySelectorAll("a.btn").length).toBe(1);
+  });
+
+  it("offers the skeptic's track as the main action of the road for the skeptic, with its six steps kept under it", () => {
+    vi.stubGlobal("fetch", offlineFetch());
+    window.history.replaceState(null, "", "/start#skeptical");
+    renderWithProviders(<Start />);
+    const road = screen.getByRole("heading", { level: 2, name: "If you're skeptical" }).closest("section") as HTMLElement;
+    expect(within(road).getByText(/This road is now a track: 12 short sessions in order/)).toBeInTheDocument();
+    expect(within(road).getByRole("link", { name: "Start the track" }).getAttribute("href")).toBe("/tracks/skeptical/1");
+    expect(within(road).getByRole("link", { name: "See the 12 sessions" }).getAttribute("href")).toBe("/tracks/skeptical");
+    expect(within(road).getByRole("heading", { level: 3, name: "Or take the 6 first steps on their own" })).toBeInTheDocument();
+    expect(Array.from(road.querySelectorAll("a.btn:not(.btn--quiet)")).map((a) => a.textContent)).toEqual(["Start the track"]);
   });
 
   it("continues a track begun on this device, on the road and above the five choices", () => {

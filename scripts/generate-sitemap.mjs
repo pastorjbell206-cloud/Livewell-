@@ -315,12 +315,16 @@ function manifestPages() {
       console.warn(`[sitemap] could not read ${s.file}: ${err.message}`);
     }
   }
-  // The tracks and their sessions (/tracks/:slug, /tracks/:slug/:n), from the
-  // tracks index (scripts/build-tracks-index.mjs).
+  // The tracks and their sessions (/tracks/:slug, /tracks/:slug/:n), each
+  // track's leader's guide when it has one (/tracks/:slug/leader) and the whole
+  // track to print (/tracks/:slug/print), from the tracks index
+  // (scripts/build-tracks-index.mjs).
   if (fs.existsSync("client/public/tracks/index.json")) {
     for (const t of JSON.parse(fs.readFileSync("client/public/tracks/index.json", "utf8")).tracks) {
       pages.push({ url: `/tracks/${t.slug}`, priority: "0.8", changefreq: "monthly" });
       for (const x of t.sessions) pages.push({ url: `/tracks/${t.slug}/${x.n}`, priority: "0.7", changefreq: "monthly" });
+      if (t.leader) pages.push({ url: `/tracks/${t.slug}/leader`, priority: "0.6", changefreq: "monthly" });
+      pages.push({ url: `/tracks/${t.slug}/print`, priority: "0.5", changefreq: "monthly" });
     }
   }
 

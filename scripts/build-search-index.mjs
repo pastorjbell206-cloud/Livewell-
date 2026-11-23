@@ -217,7 +217,7 @@ const MAIN_PAGES = [
   { title: "Guides to reading the Bible", href: "/study/bible/guides", blurb: "Short guides to what the Bible is, how it came to us, and how to read it.", keywords: "how to read the bible who wrote the bible canon translations" },
   { title: "Read the whole story in 2027", href: "/study/bible/guides/whole-story-2027", blurb: "A plan for reading through the Bible's story in a year.", keywords: "reading plan bible in a year daily" },
   { title: "Bible reading plans", href: "/study/plans", blurb: "Every reading plan in one place, by length and by who is reading.", keywords: "reading plan reading plans bible in a year new testament psalms daily family devotional schedule" },
-  { title: "Tracks", href: "/tracks", blurb: "Short sessions in order, about ten minutes each, with your place kept. The first is for someone new to faith or coming back.", keywords: "tracks track discipleship pathway pathways steps step by step sessions lessons course new believer new christian first steps follow jesus group guide" },
+  { title: "Tracks", href: "/tracks", blurb: "Short sessions in order, with your place kept: for someone new to faith, for the skeptic, and through the Gospel of Mark a chapter at a time.", keywords: "tracks track discipleship pathway pathways steps step by step sessions lessons course new believer new christian first steps follow jesus group guide skeptic skeptical doubter apologetics gospel of mark bible study chapter by chapter leader's guide small group printable" },
   { title: "How to study the Bible", href: "/study/how-to-study", blurb: "Seven steps that work on any chapter, and a guided study that takes you through them one screen at a time.", keywords: "how to study the bible bible study method steps inductive observe interpret apply guided study" },
   { title: "Church history", href: "/theology/history", blurb: "The story of the church from the apostles to now: its eras, its people, its councils, and the false teachings it answered.", keywords: "history of the church christian history timeline early church fathers reformation councils" },
   { title: "Compare the views", href: "/theology/compare", blurb: "The doctrines Christians debate, with each view set side by side.", keywords: "doctrine comparison debated views positions denominations differences" },
@@ -337,7 +337,7 @@ function studyBible() {
   return [...books, ...guides, ...acts];
 }
 
-/** Each track and each of its sessions, from the tracks index (scripts/build-tracks-index.mjs). */
+/** Each track and each of its sessions, its leader's guide when it has one, and the whole track to print, from the tracks index (scripts/build-tracks-index.mjs). */
 function tracks() {
   const file = "tracks/index.json";
   if (!fs.existsSync(path.join(PUB, file))) return [];
@@ -350,6 +350,24 @@ function tracks() {
       keywords: "track session",
       href: `/tracks/${t.slug}/${x.n}`,
     })),
+    ...(t.leader
+      ? [
+          {
+            title: `Leader's guide: ${str(t.title)}`,
+            blurb: clip(`How to run a small group through ${str(t.title)}: the group, the room, the order of a meeting, hard questions, and each session's group guide in order.`),
+            facet: "Tracks",
+            keywords: "leader leaders guide small group discussion facilitator study group track",
+            href: `/tracks/${t.slug}/leader`,
+          },
+        ]
+      : []),
+    {
+      title: `${str(t.title)}: the whole track, to print`,
+      blurb: clip(`All ${t.sessions.length} sessions on one page, a session to a sheet, to print or to keep.`),
+      facet: "Tracks",
+      keywords: "print printable booklet pdf track sessions",
+      href: `/tracks/${t.slug}/print`,
+    },
   ]);
 }
 
