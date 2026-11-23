@@ -1756,12 +1756,13 @@ html{-webkit-tap-highlight-color:transparent}
 @media (max-width:900px){.hx-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .hp-sec,.qa-index,.qa-page{padding-top:var(--s-4)}
 
-/* START WHERE YOU ARE (pages/Start.tsx): the five roads as picture cards, the
+/* START WHERE YOU ARE (pages/Start.tsx): the five roads and the two readers'
+   pages (lib/startRoads WAYS_IN) as seven picture cards, four to a row, the
    open road's steps with a tick each, and "Pick up where you left off". Then
-   Home's quiet row of the same five, under Find and tonight's line; those
+   Home's quiet row of the same seven, under Find and tonight's line; those
    chips are in the static hero too (scripts/prerender-heads.mjs). Tokens only. */
 .st-choose{background:var(--bone);padding:var(--s-2) var(--gutter) var(--s-5)}
-.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--s-3)}
+.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-3)}
 .st-cards>li{display:flex}
 .st-card{flex:1;display:flex;flex-direction:column;min-width:0;color:var(--ink);text-decoration:none}
 .st-card .lw-frame{transition:transform .35s var(--ease),box-shadow .35s var(--ease)}

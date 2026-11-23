@@ -526,14 +526,15 @@ const HUB_LISTINGS = {
     { title: "Blind Spots", href: "/books/blind-spots", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
   ] },
-  // The five roads on /start, each step by step, then where the road for someone new goes on.
-  "/start": { label: "Start where you are", cap: 40, load: () => {
+  // The five roads on /start, each step by step, the two readers' pages, then where the road for someone new goes on.
+  "/start": { label: "Start where you are", cap: 42, load: () => {
     const d = readJsonSafe("client/src/lib/startRoad.json") || {};
     return [
       ...(d.roads || []).flatMap((r) => [
         ...(r.track ? [{ title: `${r.chip}: the track, in ${r.track.sessions} sessions`, href: `/tracks/${r.track.slug}`, blurb: "Short sessions in order, about ten minutes each, with your place kept." }] : []),
         ...(r.steps || []).map((x) => ({ title: `${r.chip}: ${x.title}`, href: x.href, blurb: x.line })),
       ]),
+      ...(d.pages || []).map((p) => ({ title: `${p.chip}: ${p.link}`, href: p.href, blurb: p.note })),
       ...(d.next || []).map((x) => ({ title: x.link, href: x.href, blurb: x.lead })),
     ];
   } },
@@ -1190,9 +1191,17 @@ function homeHeroHtml() {
   // here, empty, at the size the drawing fills when React mounts.
   const label = "Look up a passage or ask a question";
   // Tonight's line arrives with the app into a slot of the same height (Home.tsx),
-  // and under it the five roads of /start as one row of chips, as Home draws them.
-  const chips = ((readJsonSafe("client/src/lib/startRoad.json") || {}).roads || [])
-    .map((r) => `<li><a class="home-road" href="/start#${esc(r.id)}">${esc(r.chip)}</a></li>`)
+  // and under it the choices of /start as one row of chips, as Home draws them
+  // (pages/home/roadChips.ts): a road opens on /start, a reader's page opens itself.
+  const start = readJsonSafe("client/src/lib/startRoad.json") || {};
+  const choice = new Map([
+    ...(start.roads || []).map((r) => [r.id, { chip: r.chip, href: `/start#${r.id}` }]),
+    ...(start.pages || []).map((p) => [p.id, { chip: p.chip, href: p.href }]),
+  ]);
+  const chips = (start.order || (start.roads || []).map((r) => r.id))
+    .map((id) => choice.get(id))
+    .filter(Boolean)
+    .map((c) => `<li><a class="home-road" href="${esc(c.href)}">${esc(c.chip)}</a></li>`)
     .join("");
   const roads = chips
     ? `

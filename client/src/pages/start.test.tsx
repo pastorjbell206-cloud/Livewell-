@@ -1,10 +1,11 @@
 /**
  * /start, "Start where you are": five roads, one for each person the site is
- * for. Every step links a page that exists and does not redirect, every road
- * is four to six steps, the road for someone new is the six steps it was,
- * the road for someone who stepped back meets church hurt first, the counts
- * the copy states still match the data, ticks survive a reload, and Home's
- * chips name the same five roads.
+ * for, and one page each for the two readers no road fits (the doubter and
+ * the pastor). Every step links a page that exists and does not redirect,
+ * every road is four to six steps, the road for someone new is the six steps
+ * it was, the road for someone who stepped back meets church hurt first, the
+ * counts the copy states still match the data, ticks survive a reload, and
+ * Home's chips name the same choices in the same order.
  */
 import { describe, it, expect, vi, afterEach, beforeEach } from "vitest";
 import { fireEvent, screen, within } from "@testing-library/react";
@@ -12,9 +13,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
-import { ROADS, START_ROADS_KEY, readRoadProgress } from "@/lib/startRoads";
+import { ROADS, START_PAGES, START_ROADS_KEY, WAYS_IN, readRoadProgress } from "@/lib/startRoads";
 import { TRACKS_KEY } from "@/lib/tracks";
 import { isPublicEssayHref } from "@/lib/shelf";
+import { nameForHref } from "@/lib/siteCatalog";
 import { ROAD_CHIPS } from "./home/roadChips";
 import Start, { START_NEXT, START_STEPS } from "./Start";
 import { ANSWERS } from "@/data/answers";
@@ -87,8 +89,34 @@ describe("/start: the five roads", () => {
     expect(back.steps[0].href).toBe("/help/church-hurt");
   });
 
-  it("names the same five roads in Home's chips", () => {
-    expect(ROAD_CHIPS).toEqual(ROADS.map((r) => ({ id: r.id, chip: r.chip })));
+  it("names the same choices in Home's chips, in the same order and to the same addresses", () => {
+    expect(ROAD_CHIPS).toEqual(WAYS_IN.map((w) => ({ id: w.id, chip: w.chip, href: w.href })));
+    // Every road once, in its own order, with the two readers' pages among them.
+    expect(WAYS_IN.filter((w) => w.road).map((w) => w.id)).toEqual(ROADS.map((r) => r.id));
+    expect(WAYS_IN.map((w) => w.id)).toEqual(["skeptical", "doubts", "new", "stepped-back", "deeper", "family", "leading"]);
+  });
+
+  it("gives the doubter and the pastor one way in each, straight to the page that serves them", () => {
+    // The walk of 2026-11-23: neither had a chip on Home or a card on /start (findings 8 and 14).
+    expect(START_PAGES.map((p) => [p.id, p.href])).toEqual([
+      ["doubts", "/help/doubt"],
+      ["leading", "/studyguides"],
+    ]);
+    for (const p of START_PAGES) {
+      expect(resolveHref(p.href).status, p.href).toBe("ok");
+      expect(`${p.chip} ${p.note} ${p.link}`).not.toMatch(/[—!]/);
+    }
+    // Each page under its own title.
+    expect(json("client/public/needs/doubt.json").title).toBe(START_PAGES[0].link);
+    expect(json("client/public/needs/doubt.json").answer).toContain("You don't have to settle this tonight.");
+    expect(nameForHref("/studyguides")).toBe(START_PAGES[1].link);
+
+    vi.stubGlobal("fetch", offlineFetch());
+    renderWithProviders(<Start />);
+    const choose = screen.getByRole("region", { name: "Where to start" });
+    expect(within(choose).getByRole("link", { name: /^I have doubts/ }).getAttribute("href")).toBe("/help/doubt");
+    expect(within(choose).getByRole("link", { name: /^I'm a pastor or group leader/ }).getAttribute("href")).toBe("/studyguides");
+    expect(within(choose).getAllByRole("listitem")).toHaveLength(7);
   });
 
   it("opens with the five choices, opens a road from its address, and keeps the help line", () => {

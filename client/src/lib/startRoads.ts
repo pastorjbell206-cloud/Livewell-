@@ -1,6 +1,6 @@
 /**
- * The five roads of /start ("Start where you are"), and this device's memory
- * of them.
+ * The five roads of /start ("Start where you are"), the two readers no road
+ * fits, and this device's memory of the roads.
  *
  * The roads themselves are data (lib/startRoad.json), so the prerender script
  * can list them for crawlers and draw Home's static chips from the same words.
@@ -8,6 +8,11 @@
  * reader last opened and which steps they ticked. No account, no score, no
  * streak: a tick is the reader's own note to themselves, kept through
  * lib/storage and nowhere else.
+ *
+ * Beside the roads, two choices open one page instead (START_PAGES): the
+ * Christian with doubts and the pastor or group leader, whom the walk of
+ * 2026-11-23 found with no way in from Home or /start. WAYS_IN is every
+ * choice, roads and pages, in the order /start's cards and Home's chips show.
  */
 import road from "./startRoad.json";
 import type { PlateName } from "@/components/art/Plate";
@@ -46,6 +51,39 @@ export function roadById(id: string | null | undefined): Road | null {
 
 /** /start#skeptical: the address that opens one road. */
 export const roadHref = (id: RoadId) => `/start#${id}`;
+
+/** A choice that opens one page, for a reader no road fits. */
+export interface StartPage {
+  id: string;
+  /** The chip on Home and the card's name: the reader's own words. */
+  chip: string;
+  /** One short line on the card. */
+  note: string;
+  plate: PlateName;
+  /** The page's own title. */
+  link: string;
+  href: string;
+}
+
+export const START_PAGES = road.pages as StartPage[];
+
+/** One choice on /start and on Home: a road (opened on /start) or one page. */
+export interface WayIn {
+  id: string;
+  chip: string;
+  note: string;
+  plate: PlateName;
+  /** Where the chip on Home goes: the road's address on /start, or the page. */
+  href: string;
+  road: Road | null;
+}
+
+export const WAYS_IN: WayIn[] = road.order.flatMap((id): WayIn[] => {
+  const r = roadById(id);
+  if (r) return [{ id: r.id, chip: r.chip, note: r.note, plate: r.plate, href: roadHref(r.id), road: r }];
+  const p = START_PAGES.find((x) => x.id === id);
+  return p ? [{ id: p.id, chip: p.chip, note: p.note, plate: p.plate, href: p.href, road: null }] : [];
+});
 
 export const START_ROADS_KEY = "livewell-progress-start-roads-v1";
 

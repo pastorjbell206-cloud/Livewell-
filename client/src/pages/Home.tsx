@@ -131,7 +131,11 @@ const MORE_DOORS: Door[] = [
   { title: "Find James", href: "/connect", plate: "letter" },
 ];
 
-/** "Start where you are": the five roads of /start as one quiet row of chips (home/roadChips.ts). */
+/**
+ * "Start where you are": the choices of /start as one quiet row of chips
+ * (home/roadChips.ts). A road opens on /start; the doubter's and the pastor's
+ * chips open their one page.
+ */
 function RoadChips() {
   return (
     <nav className="home-roads" aria-labelledby="home-roads-label">
@@ -141,7 +145,7 @@ function RoadChips() {
       <ul className="home-roads__list">
         {ROAD_CHIPS.map((r) => (
           <li key={r.id}>
-            <Link href={`/start#${r.id}`} className="home-road" onClick={() => followHash(`/start#${r.id}`)}>
+            <Link href={r.href} className="home-road" onClick={() => followHash(r.href)}>
               {r.chip}
             </Link>
           </li>
@@ -215,7 +219,7 @@ export default function Home() {
             <HomeFind />
             {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
             <Tonight />
-            {/* The five roads of /start, one chip each. */}
+            {/* The choices of /start, one chip each: five roads, and the doubter's and the pastor's page. */}
             <RoadChips />
           </div>
           <PlateFrame className="home-hero__art" ratio={null} number="Plate I" title="The road">
