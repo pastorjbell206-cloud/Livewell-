@@ -1860,5 +1860,10 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 6,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-gambling-a-sin": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
