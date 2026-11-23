@@ -15834,3 +15834,16 @@ Cut in chapter 15: Mark 15:1, Luke 23:34, John 19:28 and John 4:10 (the deep not
 | The care line (‘If you have thoughts of hurting yourself, speak to someone today...’ to ‘...lists places to turn.’) | 23-31 `hard` | 1-peter/plain/5.json (5-7, `hard`); 2-timothy/plain/1.json (6-7, `hard`); philippians/plain/4.json (4-9, `hard`); psalms/plain/88.json (13-18, `hard`) | Reused whole, word for word; no phone number |
 
 Cut in chapter 16: the deep note's crisis-line number (no phone numbers in the plain notes); Colossians 2:15 and the comparison of Samson's death with Christ's (the deep note's thematic contrast, not a line the New Testament draws); Ebla and Mari named only in the ledger.
+
+## The plain notes on Judges 17 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first of the two closing stories, short and ironic; Micah's name, who is like the LORD, in a longer form with the divine name; the curse over stolen goods and his confession; his mother's words of favor, the silver dedicated and the idol made, most of it kept; faith mixed with the neighbors' ways; the second commandment and Deuteronomy 27:15; the image and cast idol as one object or two; the ephod; teraphim and Rachel; Aaron's line and Micah's son; 17:6 at the center; yashar moved from the LORD's eyes to one's own | 1-6 | judges/17.json `cultural`, `literary`, `words` (pesel, teraphim, yashar, ephod), `doctrines` (idolatry, law) | Repository |
+| Deuteronomy 12:8; Exodus 20:4; Genesis 31:19 | 1-6 | judges/17.json `cultural`, `words` (pesel, teraphim, yashar); BSB | Repository; BSB text |
+| The Levites with no land, given towns, living on tithes (Joshua 21; Numbers 18; Deuteronomy 18); a wandering Levite as a sign of the system breaking down, perhaps neglected tithes; Bethlehem not a Levite town; ten shekels, clothes and food as a respectable wage; the son replaced; 17:13 as misplaced confidence; Bethlehem's later mentions and the town of David | 7-13 | judges/17.json `historical`, `cultural`, `literary` | Repository |
+| Numbers 3:10; Deuteronomy 18:6; 1 Samuel 16:1 | 7-13 | judges/17.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 17: Hebrews 5:4-6, Hebrews 9:24 and John 4:23-24 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the hard question on the refrain and kingship (on the book page, in its own part, and in chapter 21's note).
