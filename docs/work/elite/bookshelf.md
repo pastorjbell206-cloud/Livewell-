@@ -118,21 +118,24 @@ not in the repo, and the sample chapters belong to held books). Left as found.
 | The Monster in the Mirror | **Blind Spots** | Why Every Generation Gets the Bible Wrong, Why Yours Is No Different, and What to Do About It (unchanged, from the file) | `/books/blind-spots` (the old address goes there once) |
 | When God Bless America Replaces Thy Kingdom Come | **A Higher Allegiance** | Reclaiming Jesus from American Politics (his own words, from his cover 04; the file's own subtitle is "How Patriotism Became Our Practical Savior") | `/books/a-higher-allegiance` (the old address goes there once) |
 
-**The files still carry the old titles.** Both PDFs and both EPUBs are
-finished files: the title page, the running heads, the copyright page and the
-EPUB's title record all say the old title, and "the monster in the mirror" is
-also a phrase the book itself uses (chapter 3 is "The Monster Is Never the
-One in the Mirror"). They were not edited. The site shows the new title, and
-each book's card and page carries one line: "Published earlier as [old
-title]. The file still carries that title." **James needs to supply
-corrected files** (PDF and EPUB) for both. They go at the same addresses
-under `client/public/ebook/`; then set `fileTitle` to the new title in
-`client/src/data/book-names.json` and run `node scripts/sync-book-names.mjs`,
-and the "Published earlier as" lines go.
+**The files carry the new titles (2026-11-23).** Until then both PDFs and
+both EPUBs said the old title inside, and each card and page said so. James
+asked for that to be fixed and for the inside to look "elite and
+professional": both books were rebuilt from their own EPUB text by
+`scripts/build-book-files.mjs`, word for word, with the new title in the
+apparatus (section 8). `fileTitle` in `client/src/data/book-names.json` is now
+the new title, so the cards say nothing about the old one; each book's own
+page keeps one short line, "Published earlier as [old title].", for a reader
+who knew it by that name.
 
-The file addresses did not change (`/ebook/the-monster-in-the-mirror/...`,
-`/ebook/when-god-bless-america/...`), so no saved link to a file breaks. A
-reader who downloads one gets a file named for the old title.
+The files now take the new names in the same folders:
+`/ebook/the-monster-in-the-mirror/Blind-Spots.pdf` and `.epub`,
+`/ebook/when-god-bless-america/A-Higher-Allegiance.pdf` and `.epub`. Each old
+file address (`.../The-Monster-in-the-Mirror.pdf`, `.../When-God-Bless-America.pdf`
+and their EPUBs) is a permanent redirect, one hop, in `vercel.json`, so no
+saved link breaks and a reader who downloads gets a file named for the book.
+The original four files are kept, unserved, in
+`content/held-downloads/originals/`.
 
 **A rename is one data change.** `client/src/data/book-names.json` holds each
 of these books' name in use and its earlier names. To rename one: copy its
@@ -151,7 +154,8 @@ Higher Allegiance was made this way. If the cover's `lines` in
 `client/src/data/covers.json` no longer spell the title, the cover build says
 so; fix or delete them.
 
-**What a rename does not touch:** the PDF and EPUB; the essays (an essay that
+**What a rename does not touch:** the PDF and EPUB (for these two books, one
+more command rebuilds them: section 8); the essays (an essay that
 is still "pending" on the essay shelf is titled "When God Bless America
 Replaces Thy Kingdom Come", and is not public); the database; the old Stripe
 ebook list in `api/index.ts`, which sells nothing; the old cover images under
@@ -215,8 +219,11 @@ book by the name.
 | Church Governance That Works | Fine, and a little like a business book. | 1. Who Decides: Polity, Structure, and Decision-Making for the Local Church. 2. Good Order: Polity, Structure, and Decision-Making for the Local Church. 3. Keep it. | **Who Decides**, with the file's own subtitle. | Chapter 3, "What Pastors Decide and What Belongs to the Congregation"; chapter 4 on decision-making structures. |
 | Change Without Casualties | Nothing. Three words, a plain subtitle. | 1. Keep it. 2. Bring Them Along: A Playbook for Introducing Major Ministry Decisions. | **Keep it.** | Its introduction: a process "that brought the congregation along rather than informing them after the fact". |
 
-A renamed book needs what the two above needed: a corrected PDF and EPUB from
-James, since the old title is printed inside each file.
+A renamed book needs what the two above needed: a PDF and EPUB that carry the
+new title, since the title is printed inside each file. For a book whose text
+is in `content/books-src/<id>/` that is one command (section 8); the other
+books' text is not in the repo in that form yet (their EPUB text can be
+taken out the same way).
 
 ## 3. Covers
 
@@ -451,8 +458,9 @@ No real payment was made. Stripe was a stand-in in every test.
 
 ## 7. Questions for James
 
-1. The corrected PDF and EPUB for Blind Spots and for A Higher Allegiance:
-   until they come, each says "Published earlier as ...".
+1. Done 2026-11-23: Blind Spots and A Higher Allegiance were rebuilt under
+   their new titles from their own text (section 8, which has his questions
+   about the two files).
 2. The titles table above: which of the proposals, if any.
 3. Are the amounts right, and is $1.99 the right floor?
 4. The Find Help printables and the care plans do not ask. Should they?
@@ -464,3 +472,187 @@ No real payment was made. Stripe was a stand-in in every test.
 8. "Blind Spots" is also the title of a live essay. Is that all right?
 9. Should /downloads stop calling itself "Free Printable ..." in search
    results once giving opens?
+
+## 8. The two renamed books, rebuilt (2026-11-23)
+
+James asked on 2026-11-22 that the PDF and EPUB of Blind Spots and A Higher
+Allegiance stop carrying the old titles inside, and that "the inside look
+elite and professional". Both books were rebuilt from their own text.
+
+### How it is made
+
+`content/books-src/<id>/` holds each book's text: the chapter files of its
+original EPUB, byte for byte (`sec01.xhtml` and on), and `book.json` (the
+author's name as the file has it, the EPUB identifier, the copyright notice,
+the served and original file names). The title and subtitle come from
+`client/src/data/book-names.json`, the cover from `client/public/covers/`, the
+title-page picture from `scripts/lib/cover-art.mjs` and the colours from the
+tokens in `client/src/index.css`.
+
+    node scripts/build-book-files.mjs <id> --verify    one book
+    node scripts/build-book-files.mjs --all --verify   both
+
+It is run by hand, not in CI, and needs the machine's Playwright Chromium and
+poppler's `pdftotext`; no dependency was added. It writes the PDF and EPUB
+into `client/public/ebook/<id>/` (`--out` writes elsewhere, `--keep` keeps
+the print HTML and each pass). After a rebuild, put the new page count in
+`client/src/data/ebooks.ts`.
+
+**The PDF** is a 6 by 9 trade interior set by Chromium's print engine with CSS
+paged media. The new cover is the first page, full bleed. Then a half-title,
+the title page with the cover's engraved picture, the copyright page and the
+contents with page numbers, the front matter numbered in roman. Every chapter
+opens on a right-hand page with a generous sink: the chapter's label in
+letterspaced capitals, the title in Cormorant Garamond, the subtitle in
+italic, a short rule in the accent, and the first three words in small
+capitals. The text is Source Serif 4 at 10.5 points on 15, justified and
+hyphenated, with first-line indents and no space between paragraphs.
+Margins are mirrored with a wider gutter. Running heads (the book's title on
+the left, the chapter's on the right) are letterspaced capitals and are left
+off chapter openers, part pages and blank pages; folios sit at the foot on
+the outside. Quotations are set in from both sides with their reference on
+its own line. Bookmarks list the contents, parts and chapters; the title,
+author, subject, language and page labels are set. Chromium does not
+hyphenate a word that begins with a capital or ends in "'s", so such a word
+gets a soft hyphen at the point Chromium's own dictionary gives it, and only
+where a line actually breaks (the book is set twice to find those places,
+and the lines are compared to prove nothing else moved).
+
+**The EPUB** is EPUB 3 with the same identifier as before (so a reader's
+library treats it as an update), the new cover with alt text, one file per
+chapter, a contents nav with landmarks and an NCX. Its stylesheet uses
+relative sizes only and sets no text colour, background or body font, so a
+reader's own font, size and night mode apply; Cormorant Garamond is embedded
+for headings (SIL Open Font License, which allows it; the font files carry
+their copyright and licence address).
+
+### The one rule: the text is the author's
+
+The script is a typesetter. What it does to the text, each counted on every
+run:
+
+| Change | Blind Spots | A Higher Allegiance |
+|---|---|---|
+| Straight double quotation marks set as curly ones | 298 | 1,090 |
+| Straight apostrophes and single quotation marks set as curly ones | 646 | 494 |
+| Double hyphens set as dashes | 0 (none in the text) | 0 (none in the text) |
+| Markdown asterisks around an end-of-chapter label removed, the label set as a heading (Key Takeaways, Reflection Questions, Practices, Sources & Notes) | 0 | 32 labels |
+| Markdown backslashes removed from list numbers ("1\\." to "1.") | 0 | 42 |
+| Other Markdown backslashes removed ("\\_" in a fill-in blank, "\\..." twice) | 0 | 9 |
+| A stray Markdown asterisk removed (chapter 1: "...that you would condemn in your opponents.*") | 0 | 1 |
+| List items the source ran together with double spaces set one to a line | 0 | 165 breaks |
+| "- " list items set with a bullet | 0 | 48 |
+| "- " before a source in Sources & Notes dropped (every chapter's sources set alike) | 0 | 17 |
+| Empty citation elements dropped (stray empty blocks) | 0 | 133 |
+| A reference at the end of a quotation set on its own line (no word moved) | 0 | 53 |
+| LORD, written in capitals in the source, set in small capitals | 12 | 0 |
+| First three words of a chapter set in small capitals by the stylesheet | 15 | 11 |
+| Soft hyphens at a line break (PDF only, invisible elsewhere) | 89 | 63 |
+
+Widows and orphans are held to two lines; headings keep with what follows.
+
+**The proof** (`--verify`, and an independent check written apart from the
+script). The old EPUB's chapter text and the new EPUB's were compared word by
+word with only whitespace and quotation-mark shapes normalised, the list
+markers a reader's software draws put back: Blind Spots 65,747 words against
+65,747, no difference at all; A Higher Allegiance 56,548 against 56,531, and
+every difference falls in the classes above (56 label words with asterisks,
+42 escaped list numbers, 3 escaped words, 48 hyphens set as bullets, 17
+hyphens dropped before sources, 1 stray asterisk), nothing else. The new
+PDF's pages, from the first chapter on and without running heads or folios,
+were compared with the new EPUB character by character with whitespace
+removed, ligatures unfolded and line-end hyphens resolved against the text:
+Blind Spots 338,952 characters, A Higher Allegiance 287,939, no difference.
+
+**The old PDF against the old EPUB.** Compared the same way (letters, digits
+and punctuation; case, spacing and quotation-mark shapes set aside), the two
+old files of each book carry the same text. The one difference: the old A
+Higher Allegiance PDF printed a lone dash under each of its 133 quotations
+whose citation was empty in the EPUB. Nothing had to be reconciled.
+
+### The apparatus
+
+- The new title and subtitle are on the cover, half-title, title page,
+  copyright page, running heads, bookmarks, the EPUB's title record, nav and
+  NCX, and the PDF's title, author and subject. Neither book has an "also
+  by" page.
+- Copyright page: the unfilled "ISBN: ____" line is gone. Added: "Previously
+  published as [old title]." and, for A Higher Allegiance, the site's address
+  (Blind Spots already printed it). Nothing else was added: no ISBN,
+  publisher, edition, year, Library of Congress or printer line. Blind
+  Spots uses the notice its old PDF printed ("... No part of this book may be
+  reproduced in any form without written permission, except for brief
+  quotations in reviews."), which is fuller than its old EPUB's; both new
+  files carry it. A Higher Allegiance's notice is the same in its old PDF
+  and EPUB.
+- The author is "James Bell" in both books, as both files had it.
+- Neither book names the Pastors Connection Network.
+
+### Where the old titles' words stay in the text
+
+Left exactly as written:
+
+- **Blind Spots, chapter 3**: its title is "The Monster Is Never the One in
+  the Mirror", and the chapter says "The monster is never the one in the
+  mirror.", with "The Mirror Test" as a heading.
+- **Blind Spots, chapter 10, under "The Face in the Mirror"**: "We have
+  arrived, at the end of ten chapters, at the place where the book's title
+  finds its full meaning. The monster in the mirror is not a dramatic
+  horror ..." and, later, "The monster in the mirror is something
+  considerably more disturbing ...". This sentence names the old title as
+  the book's title.
+- **Blind Spots, Appendix C**: "... is the empirical background for Chapter
+  3's argument about the monster in the mirror."
+- The image of the mirror runs through chapters 3, 6 ("The Mirror Test,
+  Applied"), 7 ("The Other Side of the Mirror"), 10 and the conclusion.
+- **A Higher Allegiance, chapter 5 (Civil Religion)**: three sentences quote
+  the two phrases of the old title: "... singing "Holy, Holy, Holy" or "God
+  Bless America."", "... how "God Bless America" quietly replaced "Thy
+  Kingdom Come" as the functional prayer of the church ...", and "Let "Thy
+  Kingdom Come" be the prayer of the church. And let "God Bless America"
+  return to what it was always meant to be ...".
+
+### The files
+
+| | Pages | PDF | EPUB |
+|---|---|---|---|
+| Blind Spots, before | 274 | 756 KB | 274 KB |
+| Blind Spots, now | 244 | 1.7 MB | 399 KB |
+| A Higher Allegiance, before | 495 | 767 KB | 733 KB |
+| A Higher Allegiance, now | 212 | 1.7 MB | 345 KB |
+
+The old PDFs were set loosely (A Higher Allegiance at about 115 words a
+page); the new ones at about 270. The new PDFs are larger: they carry the
+cover image, the embedded fonts and the tags a screen reader uses.
+
+### Checked, and not
+
+- epubcheck is not on the build machine and was not installed, so it was not
+  run. The EPUBs were checked by a script instead: the mimetype first and
+  stored, container.xml, the package against the files, every chapter well
+  formed, every link and anchor resolving, the contents in spine order,
+  landmarks present. Both pass.
+- The PDFs were checked for lines running past the text block (none),
+  headings stranded at a page foot (none), single lines at a page top or foot
+  (none), and soft hyphens anywhere but a line end (none). About 100 lines in
+  each book still have word gaps wider than 7 points (of about 6,000), and a
+  page ends two to six lines short where a heading, a short quotation or the
+  end-of-chapter section would not fit beneath it.
+- Chromium embeds Cormorant Garamond's upright (a variable font) as a Type 3
+  font. It prints and reads as text, but a commercial printer's preflight may
+  flag it.
+- Pages were looked at as images (the contact sheets) and the EPUB chapters
+  at a phone's width, in light and dark. No person has read either new file
+  from end to end.
+
+### Questions for James
+
+1. Blind Spots, chapter 10, says "the place where the book's title finds its
+   full meaning. The monster in the mirror is ..." Under the new title, do
+   you want to change that sentence? (Nothing in the text was changed.)
+2. A Higher Allegiance, chapter 1: "...that you would condemn in your
+   opponents.*" carried a stray asterisk, which was taken out as a leftover
+   mark. Was something meant there?
+3. Blind Spots' copyright page now carries the fuller notice its old PDF
+   had. Is that the notice you want, and do you want an ISBN when there is
+   one?

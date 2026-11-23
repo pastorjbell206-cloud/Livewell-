@@ -12,6 +12,7 @@
 import { Download } from "lucide-react";
 import { Link } from "wouter";
 import type { Ebook } from "@/data/ebooks";
+import NAMES from "@/data/book-names.json";
 import { useGivingOpen } from "@/lib/downloadGift";
 
 export function FreeEbookButtons({
@@ -54,6 +55,19 @@ export function FreeEbookButtons({
 /** The one honest line for a book whose file still carries its old title. */
 export function formerlyLine(formerly: string): string {
   return `Published earlier as ${formerly}. The file still carries that title.`;
+}
+
+/**
+ * On a renamed book's own page: "Published earlier as <its last title>." (from
+ * data/book-names.json), or the line above while its file still carries that
+ * title. Nothing for a book that was never renamed. The cards carry only the
+ * line above.
+ */
+export function earlierLine(book: Pick<Ebook, "slug" | "formerly">): string | null {
+  if (book.formerly) return formerlyLine(book.formerly);
+  const named = NAMES.books.find((b) => b.slug === book.slug);
+  const was = named?.was[named.was.length - 1];
+  return was ? `Published earlier as ${was.title}.` : null;
 }
 
 /** One free ebook as a card: cover, title (linked to its page when it has one), its line, the buttons. */

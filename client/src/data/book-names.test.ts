@@ -5,7 +5,12 @@
  *  - every earlier address goes to the present one in one hop, in vercel.json
  *    and as a stub in App.tsx, and nothing redirects to an old address
  *  - the old title is on no page except as "Published earlier as ..."
- *  - while the file still carries the old title, the card says so
+ *  - while the file still carries the old title, the card says so; once the
+ *    file is rebuilt under the new one (both were, on 2026-11-23, by
+ *    scripts/build-book-files.mjs) the card says nothing and the book's own
+ *    page keeps the short "Published earlier as <old title>."
+ *  - the rebuilt files are served under the new name, each old file address
+ *    goes there in one hop, and the original files are kept, unserved
  *  - every listed ebook and booklet has a drawn cover at the sizes the pages
  *    use; no held book has one
  *  - scripts/sync-book-names.mjs and scripts/build-covers.mjs agree with what
@@ -22,6 +27,7 @@ import { BOOKLETS, HELD_BOOKLETS } from "./booklets";
 import { BOOK_SHELF } from "@/lib/bookShelf";
 import { SHELF_ITEMS } from "@/lib/shelfItems";
 import { DOWNLOAD_KINDS } from "@shared/downloads";
+import { earlierLine, formerlyLine } from "@/components/FreeEbookButtons";
 
 const ROOT = path.resolve(__dirname, "../../..");
 const read = (rel: string) => fs.readFileSync(path.join(ROOT, rel), "utf8");
@@ -58,13 +64,38 @@ describe("the renamed books", () => {
     expect(APP).toContain(`redirectTo("${to}")`);
   });
 
-  it("the old title is said only as \"Published earlier as\", and only while the file still carries it", () => {
+  it("the old title is said only as \"Published earlier as\": on the card only while the file still carries it", () => {
     for (const book of NAMES.books) {
       const ebook = freeEbook(book.slug)!;
       if (book.fileTitle !== book.title) expect(ebook.formerly).toBe(book.fileTitle);
       else expect(ebook.formerly).toBeUndefined();
       const item = SHELF_ITEMS.find((i) => i.folder === book.id)!;
       expect(item.formerly).toBe(ebook.formerly);
+      // The book's own page always names the title it had before.
+      const was = book.was[book.was.length - 1].title;
+      expect(earlierLine(ebook)).toBe(ebook.formerly ? formerlyLine(ebook.formerly) : `Published earlier as ${was}.`);
+    }
+    // Both files now carry the new titles (rebuilt 2026-11-23), so no card says otherwise.
+    expect(NAMES.books.every((b) => b.fileTitle === b.title)).toBe(true);
+    expect(earlierLine({ slug: "believe" })).toBeNull();
+  });
+
+  it.each(NAMES.books)("$title: its files are served under its name, and the old file names go there in one hop", (book) => {
+    const ebook = freeEbook(book.slug)!;
+    const meta = JSON.parse(read(`content/books-src/${book.id}/book.json`));
+    for (const kind of ["pdf", "epub"] as const) {
+      const served = ebook[kind]!;
+      expect(served).toBe(`/ebook/${book.id}/${meta.files[kind]}`);
+      expect(fs.existsSync(path.join(ROOT, "client/public", served)), served).toBe(true);
+      const old = `/ebook/${book.id}/${meta.original[kind]}`;
+      expect(old).not.toBe(served);
+      expect(fs.existsSync(path.join(ROOT, "client/public", old)), old).toBe(false);
+      const rules = RULES.filter((r) => r.source === old);
+      expect(rules, old).toHaveLength(1);
+      expect(rules[0].destination).toBe(served);
+      expect(RULES.some((r) => r.source === served)).toBe(false);
+      // The original file is kept, outside the served folder.
+      expect(fs.existsSync(path.join(ROOT, "content/held-downloads/originals", meta.original[kind])), meta.original[kind]).toBe(true);
     }
   });
 
