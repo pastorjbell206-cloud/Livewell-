@@ -16131,3 +16131,20 @@ Cut in chapter 4: John 1:14 and the glory dwelling in Christ (the deep note call
 | The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 6-12 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 5: Colossians 2:15 and the cross as God's victory in apparent defeat (the deep note calls the link thematic, not a line the New Testament draws to this chapter).
+
+## The plain notes on 1 Samuel 6 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Priests and diviners consulted (Isaiah 2:6 on Philistine diviners); the guilt offering as compensation to a god; the gold models handing over the affliction; five for the five cities; asham as Israel's own word for restitution; the knowledge of the exodus; the test of the cows, untrained and taken from their calves; chance or God's hand; the near-comic first half | 1-9 | 1-samuel/6.json `cultural`, `literary`, `words` (asham), `doctrines` (repentance, providence) | Repository |
+| Joshua 7:19; Exodus 12:31 | 1-9 | BSB | BSB text |
+| Beth-shemesh on the border in the Sorek Valley west of Jerusalem, house of the sun, a Levites' town (Joshua 21:16), Tel Beth-Shemesh a border town of the Iron Age with its own material culture; the wheat harvest in late spring or early summer; the verb to return eight times and Israel's turning in chapter 7 | 10-18 | 1-samuel/6.json `historical`, `literary`, `words` (shuv) | Repository |
+| Joshua 21:16 | 10-18 | 1-samuel/6.json `historical`; BSB | Repository; BSB text |
+| Verse 19: seventy men, fifty thousand men in most Hebrew manuscripts, the BSB and others reading seventy; the Greek wording and its other reason; the two questions about the ark mirrored; Kiriath-jearim to the northeast on the road to Jerusalem; twenty years until David (2 Samuel 6) | 19-21 | 1-samuel/6.json `historical`, `literary`, `story` | Repository |
+| Numbers 4:20; 2 Samuel 6:7; Psalm 24:3 | 19-21 | 1-samuel/6.json `doctrines` (holiness), `hard`, `christ` (Psalm 24); BSB | Repository; BSB text |
+| Why the men of Beth-shemesh died: looking inside the ark; the law's limits; a Levites' town with less excuse; the Greek reading and a damaged Hebrew; a sober lesson repeated with Uzzah; the danger and the joy | 19-21 `hard` | 1-samuel/6.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 19-21 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 6: Hebrews 10:19-22 and the way into the holy place through Christ (the deep note calls it thematic, not a line the New Testament draws to this chapter); offerings of model body parts at later Greek shrines (not needed); the priests of Aaron's line in the Joshua 21 list (narrowed to the Levites, as the deep note says).
