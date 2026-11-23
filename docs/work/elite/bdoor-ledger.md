@@ -16518,3 +16518,16 @@ Cut in chapter 27: 1 Peter 2:22 and the son of David who never deceives (the dee
 | The care line (‘If you are afraid that you have fallen away from God...’ to ‘...lists places to turn.’) | 15-25 `hard` | hebrews/plain/3.json (12-15), hebrews/plain/10.json (26-31) and others (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 28: Hebrews 2:14-15 and Revelation 1:18 set against Saul's fear of death (the deep note calls the link thematic, not a line the New Testament draws to this chapter); the names of early Christian writers on each side (not given in the repository's notes); 28:15's speech quoted only after Saul's opening words, to avoid a speech tag inside a quotation; David's answer in 28:2 called noncommittal (a reading the repository gives only for 29:8; cut before commit).
+
+## The plain notes on 1 Samuel 29 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| David's dilemma and its resolution without his doing; the step back in time to Aphek before Shunem; Aphek at the Sharon plain's edge near the Yarkon's source, a mustering point, and 4:1; the coalition of five, Achish unable to overrule; the defectors of 14:21; Hebrews as outsiders' name for Israelites; the song again (18:7; 21:11); satan as a human adversary, later a title | 1-5 | 1-samuel/29.json `story`, `historical`, `cultural`, `words` (satan) | Repository |
+| 1 Chronicles 12:19; 1 Kings 11:14 | 1-5 | 1-samuel/29.json `words` (1 Kings 11:14); BSB | Repository; BSB text |
+| Dialogue and irony; Achish's triple praise and David's deception (chapter 27); the commanders reading rightly; Achish swearing by the LORD; an angel of God as perfect goodness; upright ‘in my sight’ (yashar) and judgment by appearances; the double meaning of my lord the king, David's intent not told; God's hand through Philistine suspicion; David far from Saul's death | 6-11 | 1-samuel/29.json `literary`, `cultural`, `words` (malak, yashar), `doctrines` (providence) | Repository |
+| Proverbs 21:1; 2 Samuel 14:17 | 6-11 | 1-samuel/29.json `cultural` (2 Samuel 14:17 and 19:27); BSB | Repository; BSB text |
+
+Cut in chapter 29: John 7:30 and 8:59 and God's care for the anointed's timing (the deep note calls it a pattern, not an allegory or a line the New Testament draws to this chapter); the grim proof of enemy heads explained beyond the commanders' own words (not lingered over).
