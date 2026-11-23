@@ -16531,3 +16531,18 @@ Cut in chapter 28: Hebrews 2:14-15 and Revelation 1:18 set against Saul's fear o
 | Proverbs 21:1; 2 Samuel 14:17 | 6-11 | 1-samuel/29.json `cultural` (2 Samuel 14:17 and 19:27); BSB | Repository; BSB text |
 
 Cut in chapter 29: John 7:30 and 8:59 and God's care for the anointed's timing (the deep note calls it a pattern, not an allegory or a line the New Testament draws to this chapter); the grim proof of enemy heads explained beyond the commanders' own words (not lingered over).
+
+## The plain notes on 1 Samuel 30 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The story following David south while Gilboa is prepared; the raid as chapter 27 reversed; the Amalekites as Israel's first enemy and the reason for Saul's rejection (15; 28:18); raiding while the men were away; captives taken to sell, so recoverable; stoning and grief turned to blame; the lowest point; chazaq and strength from God not circumstances; the first asking since going over to the Philistines; two questions and a plain answer | 1-8 | 1-samuel/30.json `story`, `historical`, `cultural`, `words` (chazaq), `doctrines` (faith, prayer) | Repository |
+| Joshua 1:9 | 1-8 | 1-samuel/30.json `words` (chazaq: be strong and courageous); BSB | Repository; BSB text |
+| The Brook of Besor as Nahal Besor draining toward Gaza; the Egyptian slave abandoned, fed first and questioned after, his oath; the Cherethites linked with the Philistines and probably Crete, later in David's bodyguard; total loss to total recovery and the repeated line; the numbers; David defeating Amalek while Saul is about to die | 9-20 | 1-samuel/30.json `historical`, `cultural`, `literary`, `story` | Repository |
+| Isaiah 58:7 (a thematic line within the Old Testament); 2 Samuel 8:18 | 9-20 | 1-samuel/30.json `historical` (the Cherethites and 2 Samuel 8:18); BSB | Repository; BSB text |
+| Shalal six times and the character of sharers; beliyyaal as for Eli's sons (2:12) and Nabal (25:17); Numbers 31:27 and David going further; grace as the ground of the ruling; the first act of lawgiving and a lasting statute (choq); gifts to the elders sharing victory and preparing loyalty; the towns of the southern hills and Negev, the southern Bethel; Hebron last | 21-31 | 1-samuel/30.json `cultural`, `literary`, `words` (shalal, beliyyaal, choq), `historical`, `doctrines` (kingdom) | Repository |
+| Numbers 31:27; 2 Samuel 2:4 | 21-31 | 1-samuel/30.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 30: John 6:39 and 10:28 and Matthew 20:1-16 and David as the shepherd who loses none (the deep note calls them connections of pattern, not predictions or lines the New Testament draws to this chapter); 2 Corinthians 6:15 and Belial (not needed); verse 11 paraphrased because it carries a dash.
