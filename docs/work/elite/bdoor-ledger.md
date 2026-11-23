@@ -16670,3 +16670,18 @@ Cut in chapter 2: Matthew 13:31-33 and the kingdom growing like a seed, David's 
 | Why David did not punish Joab: the curse, the public mourning and the verdict but no removal; David's own reason (3:39); a fragile kingdom dependent on Joab, David's nephew; political realism, or a failure of justice recorded on purpose, with Amasa (chapter 20) and Absalom (chapter 18) to come; the deathbed charge; neither excused nor condemned outright | 22-39 `hard` | 2-samuel/3.json `hard` | Repository; both readings in their holders' terms |
 
 Cut in chapter 3: Isaiah 11:3-5 and Hebrews 12:24 and the son of David unstained by innocent blood (the deep note calls the link a longing, not a line the New Testament draws to this chapter); the manner of Abner's death beyond the gateway (not lingered over); the curse of verse 29 quoted not at all (its list of afflictions is not needed for the plain reading).
+
+## The plain notes on 2 Samuel 4 (2026-11-23)
+
+`client/public/bible/notes/2-samuel/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The end of Ish-bosheth's two years at Mahanaim, near the end of the first decade of the tenth century BC, dates uncertain; Abner the last strong man; Beeroth one of the four Gibeonite towns (Joshua 9:17), later in Benjamin (Joshua 18:25); the flight to Gittaim and the possible link with 21:1-2, which the text does not draw | 1-4 | 2-samuel/4.json `historical`, `story` | Repository; the link given as some readers' suggestion |
+| Mephibosheth's story placed between the killers' names and the murder; Saul's house represented by a lame child (and Saul a head taller, 1 Samuel 9:2); his injury from another's panic; the last male of Saul's line with a claim; chapter 9 ahead; Merib-baal and the scribes' bosheth | 1-4 | 2-samuel/4.json `literary`, `historical`, `story`, `questions` | Repository |
+| Joshua 18:25; 1 Chronicles 8:34 | 1-4 | 2-samuel/4.json `historical`; BSB | Repository; BSB text (Joshua 9:17 cited, not quoted, because it carries a dash) |
+| The midday rest; entering as if for wheat; killing a man on his own bed as treachery; the murder told twice; an enemy's head brought to prove a kill, as David once brought Goliath's (1 Samuel 17:57); David's oath, padah and tsarah; from the lesser to the greater; tsaddiq as innocent; the frame of hands (verses 1 and 12); burial in Abner's tomb as an honor | 5-12 | 2-samuel/4.json `cultural`, `literary`, `words` (padah, tsaddiq, tsarah), `doctrines` (providence, judgment) | Repository |
+| Genesis 9:6; Numbers 35:16; Deuteronomy 21:23 | 5-12 | 2-samuel/4.json `cultural` (Genesis 9:6; Numbers 35), `hard` (Numbers 35:16-21; Deuteronomy 21:22-23); BSB | Repository; BSB text |
+| The punishment: death for planned murder; the cutting and display to show the reason and deter, the hands and feet singled out; the one-day limit not broken; political theater or ordinary justice for its time; not a model for all times; no kingdom built on innocent blood | 5-12 `hard` | 2-samuel/4.json `hard` | Repository; both readings in their holders' terms |
+
+Cut in chapter 4: Matthew 4:8-10 and Romans 5:10 and the kingdom established by dying for enemies, and basar as the root of gospel set against false good news (the deep note calls these thematic links, not lines the New Testament draws to this chapter); the manner of the murder beyond what the text's own words give (not lingered over); 4:2 paraphrased because it carries a dash.
