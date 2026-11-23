@@ -41,6 +41,7 @@ import { HOME_HEADLINE, HOME_LINE, HOME_WHO, HOME_LINKED_HREF, HOME_LINKED_WORD,
 import { START_WITH, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
 import { followHash } from "@/lib/followHash";
 import HomeFind from "./home/HomeFind";
+import TonightSlot, { readShellLines } from "./home/TonightSlot";
 import { ROAD_CHIPS } from "./home/roadChips";
 import HomeLatest from "./home/HomeLatest";
 import "./home/home.css";
@@ -49,10 +50,13 @@ import "./home/home.css";
  * The tonight line (pages/home/HomeTonight) reads the family year map with
  * its titles, the Advent calendar, and this device's progress for Continue:
  * about 45 kB that every route's entry script would otherwise carry. It loads
- * on its own, starting as this module runs on "/", into a slot one line tall
- * (index.css, .home-tonight--slot) at the foot of the hero's text, so nothing
- * moves when it arrives.
+ * on its own, starting as this module runs on "/", into a slot at the foot of
+ * the hero's text (index.css, .home-tonight--slot) that holds the room the
+ * line will take, so nothing moves when it arrives: the static shell writes
+ * the line's words into its slot unseen, and this slot draws the same
+ * (home/TonightSlot, read once here, before the app replaces the shell).
  */
+const SHELL_LINES = typeof document === "undefined" ? undefined : readShellLines();
 type TonightModule = typeof import("./home/HomeTonight");
 let tonightModule: TonightModule | null = null;
 let tonightLoading: Promise<TonightModule> | null = null;
@@ -81,7 +85,7 @@ function Tonight() {
       live = false;
     };
   }, [loaded]);
-  if (!loaded) return <div className="home-tonight home-tonight--slot" aria-hidden="true" />;
+  if (!loaded) return <TonightSlot lines={SHELL_LINES} />;
   const HomeTonight = loaded.default;
   return <HomeTonight />;
 }

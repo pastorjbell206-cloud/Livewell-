@@ -12,13 +12,18 @@
  * so reading the clock here is already after mount and shifts nothing.
  *
  * The copy keeps Advent and the calendar apart: Advent begins on Advent
- * Sunday; the calendar runs December 1 to 25 (lib/familyAdvent.ts).
+ * Sunday; the calendar runs December 1 to 25 (lib/familyAdvent.ts), the
+ * days its data names. Between the two no reading is tonight's: Home, this
+ * card, /family's Tonight card and /family/tonight all say the calendar
+ * starts December 1 and name its first reading (`line`), so no page offers a
+ * day of the calendar before its date (the walk's polish, 2026-11-23).
  */
 import { useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 
 import { localISODate } from "@/lib/familyYear";
+import { FAMILY_SET_TITLES } from "@/lib/familyYear.generated";
 import { addDaysISO, adventHref, adventTonight, longDate, type AdventTonight } from "@/lib/familyAdvent";
 
 const BOOKLET = {
@@ -26,9 +31,12 @@ const BOOKLET = {
   a4: "/downloads/seasonal/advent-family-a4.pdf",
 };
 
+/** The calendar's first reading: its title and its own page. */
+const FIRST = { title: FAMILY_SET_TITLES.advent?.[0] ?? "", href: "/family/devotions/advent-1" };
+
 export interface AdventCopy {
-  /** The line for Home: lead text, then a link, then a full stop. */
-  line: { lead: string; link: string };
+  /** The line for Home: lead text, then a link (to `href`), then a full stop. */
+  line: { lead: string; link: string; href: string };
   /** The card for /family. */
   heading: string;
   text: string;
@@ -52,6 +60,7 @@ export function adventCopy(a: AdventTonight): AdventCopy {
       line: {
         lead: `${a.beforeAdvent ? `${begins} ` : ""}${christmas ? "Christmas Day" : "Tonight"} at the table:`,
         link: `${dayName} in the family Advent calendar`,
+        href: adventHref(a.day),
       },
       heading: christmas ? "Christmas Day" : `Tonight, ${dayName}`,
       text: `${a.beforeAdvent ? `${begins} ` : ""}The reading for ${dayName} in the family Advent calendar, with a question to talk about and a prayer.`,
@@ -63,7 +72,7 @@ export function adventCopy(a: AdventTonight): AdventCopy {
   const startDay = longDate(a.calendarStart, { weekday: false });
   if (a.beforeAdvent) {
     return {
-      line: { lead: `${begins} The family Advent calendar runs from ${startDay} to Christmas:`, link: "see the readings" },
+      line: { lead: `${begins} The family Advent calendar runs from ${startDay} to Christmas:`, link: "see the readings", href: adventHref() },
       heading: `Advent begins ${sunday}`,
       text: `The family Advent calendar has a short reading for each day from ${startDay} to Christmas, with a question to talk about and a prayer.`,
       href: adventHref(),
@@ -71,15 +80,28 @@ export function adventCopy(a: AdventTonight): AdventCopy {
       onDay: false,
     };
   }
+  // Advent Sunday and the nights before December 1: Advent has begun and the
+  // calendar has not, so its first reading is named by its place, not offered as tonight's.
   const start = longDate(a.calendarStart);
   return {
-    line: { lead: `Advent has begun. The family Advent calendar starts ${start}:`, link: "see the readings" },
+    line: { lead: `Advent has begun. The family Advent calendar starts ${start}, with`, link: FIRST.title, href: FIRST.href },
     heading: "Advent has begun",
     text: `The family Advent calendar starts ${start}, with a short reading for each day to Christmas, a question to talk about, and a prayer.`,
     href: adventHref(),
     action: "See the readings",
     onDay: false,
   };
+}
+
+/**
+ * On Advent Sunday and the nights after it before the calendar starts, the
+ * one sentence Home, /family's Tonight card and /family/tonight all say
+ * (adventCopy's line): "Advent has begun. The family Advent calendar starts
+ * Tuesday, December 1, with The Long Wait Begins." Null on any other night.
+ */
+export function adventWaitingLine(date: string): AdventCopy["line"] | null {
+  const a = adventTonight(date);
+  return a && !a.day && !a.beforeAdvent ? adventCopy(a).line : null;
 }
 
 const cardLink = {

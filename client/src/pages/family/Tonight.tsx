@@ -13,6 +13,7 @@ import { Link, useLocation, useSearch } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
+import { adventWaitingLine } from "@/components/AdventAtTheTable";
 import { localISODate } from "@/lib/familyYear";
 import { devotionHref, doneThisWeek, readFamilyProgress, tonightOn, tonightTitle } from "@/lib/familyTable";
 import DoneThisWeek from "./DoneThisWeek";
@@ -24,6 +25,8 @@ export default function Tonight() {
   const search = useSearch();
   const [today] = useState(() => localISODate());
   const [tonight] = useState(() => tonightOn(today));
+  // Advent Sunday to November 30 has no devotion of its own: say when the calendar starts, as Home does.
+  const [waiting] = useState(() => (tonight ? null : adventWaitingLine(today)));
   // A family that has done this week's devotion is not sent back into it
   // (audit 2026-11, F3): the page stays and says what the other nights hold.
   const [done] = useState(() => (tonight ? doneThisWeek(readFamilyProgress(), tonight.id, today) : null));
@@ -48,7 +51,21 @@ export default function Tonight() {
         door="Family"
         doorHref="/family"
         title="Tonight's family devotion"
-        line={done ? undefined : tonight ? "Opening tonight's devotion." : "No devotion is set for this date yet. Choose one from the library."}
+        line={
+          done ? undefined : tonight ? (
+            "Opening tonight's devotion."
+          ) : waiting ? (
+            <>
+              {waiting.lead}{" "}
+              <Link href={waiting.href} className="tb-inline-link">
+                {waiting.link}
+              </Link>
+              .
+            </>
+          ) : (
+            "No devotion is set for this date yet. Choose one from the library."
+          )
+        }
         plate="table"
         action={
           <Link href="/family/devotions" className="btn btn--quiet">
