@@ -58,9 +58,8 @@ export default function TheologyCompare() {
         url="https://www.livewellbyjamesbell.co/theology/compare"
       />
 
-      <InnerHead path="/theology/compare" title="Where Christians differ" line="Compare Christian views, side by side" plate="arch">
-        <p className="pg-head__lede">See the positions side by side.</p>
-      </InnerHead>
+      {/* One line under the title: a second one said the same thing again (walk 2026-11, finding 17). */}
+      <InnerHead path="/theology/compare" title="Where Christians differ" line="Compare Christian views, side by side" plate="arch" />
 
       {/* FIRST: pick a doctrine. */}
       <section className="home-sec home-sec--dark lw-band-tight" aria-labelledby="tc-pick-title">
