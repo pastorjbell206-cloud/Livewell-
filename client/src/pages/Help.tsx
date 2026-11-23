@@ -33,10 +33,16 @@ import { crisisTopicsFor } from "@/lib/siteSearch";
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const isIndex = (x: unknown): x is NeedsIndex => !!x && Array.isArray((x as NeedsIndex).needs);
 
+/**
+ * A care page in the list: the reader's own words, then the page's own title
+ * (its search title), which names the subject plainly, so someone scanning for
+ * "anxiety" or "grief" sees the word (the walk's polish, 2026-11-23).
+ */
 function needItem(n: NeedEntry, state?: ReaderState): IndexItem {
   return {
     href: `/help/${n.slug}${state === "helping" ? "#helping" : ""}`,
     title: n.title,
+    sub: n.seoTitle,
     dek: n.summary,
     kicker: n.sensitivity === "ordinary" ? "Care page" : "Care page · help first",
   };
@@ -193,6 +199,7 @@ export default function Help() {
                         <button type="button" onClick={() => go(n)} className="ed-row" style={{ width: "100%", padding: "12px 0", font: "inherit", textAlign: "left", cursor: "pointer", background: "none", border: 0 }}>
                           <span style={{ display: "block", minWidth: 0 }}>
                             <span className="ed-title" style={{ fontSize: "20px", fontWeight: 400 }}>{n.title}</span>
+                            {n.seoTitle && <span className="ed-sub" style={{ display: "block" }}>{n.seoTitle}</span>}
                             <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, color: "var(--ink-muted)", marginTop: "4px" }}>{n.summary}</span>
                           </span>
                           <span className="ed-arrow" aria-hidden>→</span>
