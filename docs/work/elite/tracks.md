@@ -405,3 +405,16 @@ Run on the tree at `deb24960`, the target having not moved since the first push.
 6. As print (print media, Letter): the track on 25 pages, its leader's guide on 15; nothing that only works on a screen prints.
 
 Not verified: the same as for the first push. No person has read the new sessions or the leader's guide.
+
+### Gates record (third run, third push: the track for the family)
+
+Run on the tree at `eb3217f4`, the target having not moved since the second push.
+
+1. All 54 commands of the content-gates step: pass.
+2. `pnpm check`: pass.
+3. `pnpm test`: 197 files passed, 7 skipped; 2,366 tests passed, 73 skipped. `tracks.test.ts` now holds every road on /start to having a track; `tracks.test.tsx` holds /tracks to showing no list of roads still coming, every track's card to its leader's guide, and draws sessions of the three new tracks and all four leader's guides added in this run; `start.test.tsx` holds the family's road to offering its track first.
+4. `pnpm build`, `pnpm run sitemap` (2,619 addresses, fifteen more), `pnpm run prerender` (94 track pages, 3,317 files) and `pnpm run audit:canonicals` (2,619 checked, none unprerendered, no failures): pass.
+5. On the served build, restarted for the new build, by script at 390 and at 1440, as before: each of the 17 links the track's sessions offer landed where it should, answered 200, drew its own page and showed the way back, which returned with the answer kept; /family/tonight moved on, as it is built to, to that week's devotion (on this date the fourth of Thanksgiving week), with the way back still shown. A reload halfway kept everything, /tracks offered session 7, and the end said "All 12 sessions done". The leader's guide and the print view drew every part and every session. No sideways scroll, no console error, no resource with an error beyond the local server's missing analytics. By keyboard on sessions 1, 5 and 11: a 2px solid focus ring on the session's button, Enter opens the page, and the first Tab there is "Back to session N of 12".
+6. As print (print media, Letter): the track on 26 pages, its leader's guide on 15; nothing that only works on a screen prints.
+
+Not verified: the same as for the first push. No person has read the new sessions or the leader's guide.
