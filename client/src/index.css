@@ -560,15 +560,20 @@ img{display:block;max-width:100%}
 .home-find__passage{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:15px}
 .home-find__passage:hover,.home-tonight__link:hover{text-decoration-thickness:2px}
 .home-tonight{margin:var(--s-2) 0 0}
-/* Holds one line (.home-tonight__line's 17px at 1.6) while the line's module loads (Home.tsx). */
+/* Holds one line (.home-tonight__line's 17px at 1.6) while the line's module loads (Home.tsx).
+   On a night of a daily set or around Advent the static shell writes the line's own words
+   into the slot (scripts/lib/home-tonight-slot.mjs), unseen, so it holds exactly their room;
+   a held row is an ordinary week's line, whose title the shell does not carry. */
 .home-tonight--slot{min-height:calc(17px * 1.6)}
+.home-tonight--slot>*{visibility:hidden}
+.home-tonight__row--held{min-height:calc(17px * 1.6)}
 .home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 var(--s-4)}
 .home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
 .home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
 .home-tonight__link{padding:13px 0}
 /* On a phone an ordinary night's line runs to two lines; both the slot and the
    line hold two, so the doors under the hero never move when it arrives. */
-@media (max-width:760px){.home-tonight{margin-top:var(--s-1)}.home-tonight--slot,.home-tonight{min-height:calc(17px * 1.6 * 2)}}
+@media (max-width:760px){.home-tonight{margin-top:var(--s-1)}.home-tonight--slot,.home-tonight,.home-tonight__row--held{min-height:calc(17px * 1.6 * 2)}}
 
 /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
  * Collections read as an index, not a wall of boxes: type carries the
@@ -1019,6 +1024,8 @@ img{display:block;max-width:100%}
 .tb-different__body{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
 .tb-different__more{font-family:var(--U);font-size:15px;line-height:1.7;color:var(--ink);margin:0;max-width:68ch}
 .tb-different__link{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:.2em;padding:10px 0}
+/* A link inside a sentence (the Advent calendar's first reading on /family and /family/tonight): padded to a 44 px target without changing the line. */
+.tb-inline-link{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:.2em;padding:13px 0}
 .tb-lib__theme{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 var(--s-3);font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink)}
 .tb-lib__theme select{min-height:44px;max-width:100%;padding:0 12px;font-family:var(--U);font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);cursor:pointer}
 .tb-lib__shelf+.tb-lib__shelf{margin-top:var(--s-5)}

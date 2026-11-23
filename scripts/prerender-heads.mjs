@@ -26,6 +26,7 @@ import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 import { loadQuestions } from "./lib/questions.mjs";
 import { SUPPORT_HEAD, givingOpen, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
+import { slotData, slotScript } from "./lib/home-tonight-slot.mjs";
 
 dotenv.config();
 
@@ -1220,9 +1221,12 @@ function homeHeroHtml() {
   // Find works before the app runs: a plain GET to /search. Plate I's frame is
   // here, empty, at the size the drawing fills when React mounts.
   const label = "Look up a passage or ask a question";
-  // Tonight's line arrives with the app into a slot of the same height (Home.tsx),
-  // and under it the choices of /start as one row of chips, as Home draws them
+  // Tonight's line arrives with the app into a slot of the same height (Home.tsx):
+  // the script after the slot writes the line's own words into it, unseen, on the
+  // nights an ordinary line's room would not fit them (lib/home-tonight-slot.mjs).
+  // Under it, the choices of /start as one row of chips, as Home draws them
   // (pages/home/roadChips.ts): a road opens on /start, a reader's page opens itself.
+  const slot = `<script>${slotScript(slotData(REPO_ROOT))}</script>`;
   const start = readJsonSafe("client/src/lib/startRoad.json") || {};
   const choice = new Map([
     ...(start.roads || []).map((r) => [r.id, { chip: r.chip, href: `/start#${r.id}` }]),
@@ -1249,7 +1253,7 @@ function homeHeroHtml() {
                   <button type="submit" class="home-find__go" aria-label="Find"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
                 </div>
               </form>
-              <div class="home-tonight home-tonight--slot" aria-hidden="true"></div>${roads}
+              <div class="home-tonight home-tonight--slot" aria-hidden="true"></div>${slot}${roads}
             </div>
             <figure class="lw-frame-fig home-hero__art"><div class="lw-frame"><div class="lw-frame__in"></div></div><figcaption class="lw-cap"><span>Plate I</span><span>The road</span></figcaption></figure>
           </div>
