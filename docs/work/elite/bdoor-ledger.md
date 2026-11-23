@@ -16336,3 +16336,20 @@ Cut in chapter 16: Isaiah 11:1-2, Jesus' baptism and the hidden king (the deep n
 | Saul's question: not recognizing a court musician, or David grown; a question about the father and household; two accounts set side by side and the shorter Greek form without 55-58; not exclusive, not settled | 48-58 `hard` | 1-samuel/17.json `hard` | Repository; the answers in their holders' terms |
 
 Cut in chapter 17: Colossians 2:15 and Hebrews 2:14-15 and David as a picture of Christ the champion (the deep note says the chapter is a battle story, not an allegory; not a line the New Testament draws to this chapter); Goliath falling facedown as Dagon fell (a likeness the repository's notes do not draw); verse 28 quoted only in part because it carries a dash.
+
+## The plain notes on 1 Samuel 18 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Everyone loving David and Saul alone afraid; the robe and weapons as identity and position, the crown prince handing over what would have been his; covenant as a sworn bond reaching to families, renewed in 20:8-17 and 23:18 and kept after Jonathan's death (2 Samuel 9); love as alliance loyalty too; women's victory songs (Exodus 15:20-21; Judges 11:34); thousands and tens of thousands as a poetic rise heard by Saul as a ranking; Saul's fear for the throne (15:28) | 1-9 | 1-samuel/18.json `story`, `cultural`, `words` (ahav, berit) | Repository |
+| Exodus 15:20; 2 Samuel 1:26; 2 Samuel 9:1 | 1-9 | 1-samuel/18.json `cultural`, `story`, `hard`; BSB | Repository; BSB text |
+| Jonathan's love: friendship and covenant loyalty, held by most commentators, the vocabulary of alliance, nothing describing a sexual relationship; some modern interpreters reading a romantic bond from the language and 2 Samuel 1:26; both readings named, the text the measure; covenant love at great cost | 1-9 `hard` | 1-samuel/18.json `hard` | Repository; both readings in their holders' terms |
+| The two repeated statements and the stages of Saul's fear; sakal as wise and prospering, not luck, sounding like the foolishness of 13:13; schemes that advance David; leading them out and back as the people's wish in 8:20 | 10-16 | 1-samuel/18.json `literary`, `words` (sakal), `doctrines` (providence) | Repository |
+| Proverbs 27:4 | 10-16 | BSB | BSB text (a thematic line within the Old Testament) |
+| The mohar paid to the bride's family (Exodus 22:16-17); David too poor; the custom made a trap; Saul's thoughts the only ones told, and schemes; Michal's love welcomed as a tool (18:20-21); the scheme advancing David into the royal family; Merab and Adriel in 2 Samuel 21:8; the shorter Greek text without the offer of Merab, scholars divided, the same shape of events | 17-30 | 1-samuel/18.json `cultural`, `literary`, `historical`, `words` (mohar), `doctrines` (providence) | Repository |
+| Exodus 22:16; 2 Samuel 3:14 | 17-30 | 1-samuel/18.json `cultural`; BSB | Repository; BSB text |
+| The bride-price and Michal: shown and not admired; Saul's plan seen for what it is; David's silence; the price told briefly, no pattern; every plan advancing David because the LORD is with him | 17-30 `hard` | 1-samuel/18.json `literary`, `cultural`, `doctrines` (providence, sin) | Repository |
+
+Cut in chapter 18: Mark 15:10 and Philippians 2:5-8 and the beloved one plotted against (the deep note calls it a thematic resonance, not a line the New Testament draws to this chapter); a claim that proof of an enemy's death was a custom of war (not stated in the repository; cut before commit).
