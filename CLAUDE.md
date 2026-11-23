@@ -863,10 +863,13 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   shows "Back to session 3 of 12" (`components/TrackReturnBar.tsx`, fixed in a
   corner, kept for the sitting). Progress and answers stay on the device
   (`livewell-progress-tracks-v1`). A road on /start that has become a track
-  names it in `startRoad.json` and offers it first; its steps stay. The first
-  is "New to faith, or coming back"; the other four roads and the book study
-  ("Deep in one") are listed on /tracks as not written.
-  `docs/work/elite/tracks.md` says how to write the next.
+  names it in `startRoad.json` and offers it first; its steps stay. Written:
+  "New to faith, or coming back", "Weigh the case for yourself"
+  (/tracks/skeptical) and "Deep in one: the Gospel of Mark" (/tracks/mark); the
+  other three roads are listed on /tracks under Coming. A track marked
+  `leader: true` has a leader's guide at /tracks/<slug>/leader, and every track
+  prints at /tracks/<slug>/print. `docs/work/elite/tracks.md` says how to write
+  the next.
 - **The films' recorded voice (2026-11-22; James: "continue to add these")**:
   Listen on a Bible Explorer film plays one small MP3 a frame, a level
   (`client/public/explorer/audio/`), fetched only once Listen is on, with the

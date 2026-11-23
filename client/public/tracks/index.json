@@ -1,12 +1,121 @@
 {
   "tracks": [
     {
+      "slug": "skeptical",
+      "title": "Weigh the case for yourself",
+      "for": "I'm skeptical",
+      "road": "skeptical",
+      "subtitle": "Twelve short sessions for someone who doesn't believe and would rather look than be told: God, the texts, Jesus, the resurrection, suffering, science and the church's record, with the case against stated first.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "book",
+        "case",
+        "chapter",
+        "creed",
+        "film",
+        "help",
+        "plan",
+        "skeptics",
+        "study",
+        "tool"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Start with the questions",
+          "minutes": 10,
+          "kind": "skeptics",
+          "opens": "For skeptics"
+        },
+        {
+          "n": 2,
+          "title": "Is anyone there?",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Does God actually exist?"
+        },
+        {
+          "n": 3,
+          "title": "Can the text be trusted?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Copies of copies: isn't it a telephone game?"
+        },
+        {
+          "n": 4,
+          "title": "Who wrote the Gospels?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "The Gospels are anonymous. Weren't the names added later?"
+        },
+        {
+          "n": 5,
+          "title": "Did Jesus exist, and what did he claim?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Did Jesus even exist?"
+        },
+        {
+          "n": 6,
+          "title": "Read the source",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 1, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "The claim everything rests on",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Did the resurrection actually happen?"
+        },
+        {
+          "n": 8,
+          "title": "Argue it yourself",
+          "minutes": 15,
+          "kind": "tool",
+          "opens": "Test the Case"
+        },
+        {
+          "n": 9,
+          "title": "If God is good",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "If God is good, why is there so much suffering?"
+        },
+        {
+          "n": 10,
+          "title": "Science and the god of the gaps",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Hasn't science made God unnecessary?"
+        },
+        {
+          "n": 11,
+          "title": "The church's record",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Weren't the Crusades a holy war of conquest?"
+        },
+        {
+          "n": 12,
+          "title": "Deciding while unsure",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "What if Christianity is wrong?"
+        }
+      ]
+    },
+    {
       "slug": "new-to-this",
       "title": "New to faith, or coming back",
       "for": "I'm new to this",
       "road": "new",
       "subtitle": "Twelve short sessions for someone who has just come to faith, or is coming back to the start: who Jesus is, how to read and pray, the church, and what to do when you fail or doubt.",
       "minutes": 10,
+      "leader": false,
       "kinds": [
         "answer",
         "book",
@@ -110,6 +219,140 @@
           "minutes": 10,
           "kind": "plan",
           "opens": "Eight Weeks for a New Christian"
+        }
+      ]
+    },
+    {
+      "slug": "mark",
+      "title": "Deep in one: the Gospel of Mark",
+      "for": "I want to know one book well",
+      "road": null,
+      "subtitle": "Sixteen sessions, one for each chapter of Mark, the shortest Gospel: read the chapter and its notes, and follow the book's own shape from the river to the cross and the empty tomb.",
+      "minutes": 15,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "book",
+        "case",
+        "chapter",
+        "creed",
+        "film",
+        "psalms",
+        "study",
+        "wisdom-finder"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "The beginning of the gospel",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 1, passage by passage"
+        },
+        {
+          "n": 2,
+          "title": "Authority to forgive",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 2, passage by passage"
+        },
+        {
+          "n": 3,
+          "title": "A new family",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 3, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "Seeds and a storm",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 4, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "Three people past hope",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 5, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "Bread in the wilderness",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 6, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "What makes a person unclean",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 7, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "You are the Christ",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 8, passage by passage"
+        },
+        {
+          "n": 9,
+          "title": "A father's honest prayer",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 9, passage by passage"
+        },
+        {
+          "n": 10,
+          "title": "A ransom for many",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 10, passage by passage"
+        },
+        {
+          "n": 11,
+          "title": "The king arrives",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 11, passage by passage"
+        },
+        {
+          "n": 12,
+          "title": "Caesar's coin",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 12, passage by passage"
+        },
+        {
+          "n": 13,
+          "title": "Watch",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 13, passage by passage"
+        },
+        {
+          "n": 14,
+          "title": "The table and the garden",
+          "minutes": 20,
+          "kind": "chapter",
+          "opens": "Mark 14, passage by passage"
+        },
+        {
+          "n": 15,
+          "title": "The cross",
+          "minutes": 20,
+          "kind": "chapter",
+          "opens": "Mark 15, passage by passage"
+        },
+        {
+          "n": 16,
+          "title": "The empty tomb, and Mark's ending",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Mark 16, passage by passage"
         }
       ]
     }

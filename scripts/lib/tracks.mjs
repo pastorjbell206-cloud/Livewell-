@@ -46,10 +46,18 @@ export const KINDS = {
   compare: { name: "Where Christians differ", match: /^\/theology\/(compare|traditions|which-view)$/ },
   tool: { name: "A tool", match: /^\/tools\/[a-z0-9-]+$/ },
   track: { name: "The tracks", match: /^\/tracks(\/[a-z0-9-]+)?$/ },
+  skeptics: { name: "For skeptics", match: /^\/skeptics$/ },
 };
 
 /** A track uses at least this many kinds across its sessions. */
 export const MIN_KINDS = 8;
+
+/**
+ * A track's leader's guide (/tracks/<slug>/leader), when it has one: a word on
+ * what the group is, then these parts in this order. The page gathers each
+ * session's group guide under them.
+ */
+export const LEADER_SECTIONS = ["group", "room", "order", "hard", "hurting", "help"];
 
 /** Words that mean a session touches sin, guilt, fear, death or doubt: it then carries a care line. */
 const HEAVY = /\b(sins?|sinned|sinners?|sinful|guilt|guilty|shame|ashamed|afraid|fears?|feared|frightened|death|dead|die|died|dies|dying|grief|doubts?|doubted|doubting)\b/i;
@@ -94,7 +102,9 @@ export function buildIndex(dir = TRACKS_DIR) {
       for: t.for,
       road: t.road ?? null,
       subtitle: t.subtitle,
-      minutes: Math.round(t.sessions.reduce((n, s) => n + s.minutes, 0) / t.sessions.length),
+      // "About N minutes each": the sessions' average, to the nearest five.
+      minutes: Math.round(t.sessions.reduce((n, s) => n + s.minutes, 0) / t.sessions.length / 5) * 5,
+      leader: !!t.leader,
       kinds: [...new Set(t.sessions.flatMap((s) => [s.open, ...(s.also ?? [])].map((l) => l.kind)))].sort(),
       sessions: t.sessions.map((s) => ({ n: s.n, title: s.title, minutes: s.minutes, kind: s.open.kind, opens: s.open.label })),
     }));
@@ -257,6 +267,30 @@ export function validateTrack(t, slug) {
   });
 
   if (kinds.size < MIN_KINDS) fail("sessions", `uses ${kinds.size} kinds of page (${[...kinds].join(", ")}); a track uses at least ${MIN_KINDS}, so the tools get used`);
+
+  // The leader's guide, when there is one: the same voice rules, every part in order, and the way to Find Help named.
+  if (t.leader !== undefined) {
+    const L = t.leader;
+    if (!L || typeof L !== "object") fail("leader", "missing");
+    else {
+      if (!Array.isArray(L.about) || L.about.length < 1 || L.about.length > 3) fail("leader.about", "one to three paragraphs");
+      else L.about.forEach((p, i) => prose(`leader.about[${i}]`, p, 25, 150));
+      const parts = Array.isArray(L.sections) ? L.sections : [];
+      if (JSON.stringify(parts.map((x) => x?.id)) !== JSON.stringify(LEADER_SECTIONS)) fail("leader.sections", `the parts are ${LEADER_SECTIONS.join(", ")}, in that order`);
+      parts.forEach((x, i) => {
+        const w = `leader.sections[${i}]`;
+        if (!x || typeof x !== "object") return fail(w, "missing");
+        prose(`${w}.title`, x.title, 1, 10);
+        if (!Array.isArray(x.body) || x.body.length < 1 || x.body.length > 3) fail(`${w}.body`, "one to three paragraphs");
+        else x.body.forEach((p, j) => prose(`${w}.body[${j}]`, p, 15, 160));
+        if (x.id === "order") {
+          if (!Array.isArray(x.steps) || x.steps.length < 4 || x.steps.length > 8) fail(`${w}.steps`, "four to eight steps, in order");
+          else x.steps.forEach((p, j) => prose(`${w}.steps[${j}]`, p, 5, 50));
+        } else if (x.steps !== undefined) fail(`${w}.steps`, "only the order of a meeting has steps");
+        if (x.id === "help" && !(x.body ?? []).some((p) => typeof p === "string" && p.includes("Find Help"))) fail(`${w}.body`, "names Find Help");
+      });
+    }
+  }
   return errors;
 }
 

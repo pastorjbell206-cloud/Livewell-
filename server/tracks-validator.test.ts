@@ -27,10 +27,10 @@ function run(script: string, dir: string, args: string[] = []) {
   return { code: r.status, out: `${r.stdout}${r.stderr}` };
 }
 
-function seeded(change: (j: Json) => void, { reindex = true } = {}) {
+function seeded(change: (j: Json) => void, { reindex = true, file = TRACK } = {}) {
   const dir = fs.mkdtempSync(path.join(tmp, "t-"));
   fs.cpSync(DATA, dir, { recursive: true });
-  const p = path.join(dir, TRACK);
+  const p = path.join(dir, file);
   const j = JSON.parse(fs.readFileSync(p, "utf8"));
   change(j);
   fs.writeFileSync(p, JSON.stringify(j, null, 2) + "\n");
@@ -81,6 +81,24 @@ describe("validate-tracks.mjs", () => {
   for (const [name, change, expected] of faults) {
     it(`fails on ${name}`, () => {
       const r = seeded(change);
+      expect(r.out).toMatch(expected);
+      expect(r.code).toBe(1);
+    });
+  }
+
+  // A leader's guide (the skeptic's track has one) keeps its parts in order, names Find Help, and keeps the voice rules.
+  const leaderFaults: [string, (j: Json) => void, RegExp][] = [
+    ["a leader's guide with a part missing", (j) => { j.leader.sections.splice(1, 1); }, /leader\.sections: the parts are group, room, order, hard, hurting, help, in that order/],
+    ["a leader's guide with its parts out of order", (j) => { j.leader.sections.reverse(); }, /in that order/],
+    ["a meeting with no steps", (j) => { delete j.leader.sections[2].steps; }, /leader\.sections\[2\]\.steps: four to eight steps/],
+    ["steps in a part that is not the order of a meeting", (j) => { j.leader.sections[0].steps = ["One step that does not belong here at all."]; }, /only the order of a meeting has steps/],
+    ["a word on Find Help that never names it", (j) => { j.leader.sections[5].body = ["Point someone to a counsellor when a question has become a weight they cannot put down, and stay with them while they make the first call."]; }, /leader\.sections\[5\]\.body: names Find Help/],
+    ["the first person in a leader's guide", (j) => { j.leader.about[0] += " I have led groups like this for years."; }, /leader\.about\[0\]: first person/],
+    ["a phone number in a leader's guide", (j) => { j.leader.sections[5].body[0] += " Call 988 at any hour."; }, /leader\.sections\[5\]\.body\[0\]: a phone number/],
+  ];
+  for (const [name, change, expected] of leaderFaults) {
+    it(`fails on ${name}`, () => {
+      const r = seeded(change, { file: "skeptical.json" });
       expect(r.out).toMatch(expected);
       expect(r.code).toBe(1);
     });

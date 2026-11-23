@@ -176,6 +176,8 @@ const HowToStudy = lazy(() => import("./pages/HowToStudy"));
 const Tracks = lazy(() => import("./pages/tracks/Tracks"));
 const Track = lazy(() => import("./pages/tracks/Track"));
 const TrackSession = lazy(() => import("./pages/tracks/TrackSession"));
+const TrackLeader = lazy(() => import("./pages/tracks/TrackLeader"));
+const TrackPrint = lazy(() => import("./pages/tracks/TrackPrint"));
 const ExplorerMap = lazy(() => import("./pages/explorer/ExplorerMap"));
 const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const ExplorerFilm = lazy(() => import("./pages/explorer/ExplorerFilm"));
@@ -626,6 +628,9 @@ function Router() {
         <Route path="/study/how-to-study" component={HowToStudy} />
         <Route path="/tracks" component={Tracks} />
         <Route path="/tracks/:slug" component={Track} />
+        {/* A track's leader's guide and the whole track to print, before a session number. */}
+        <Route path="/tracks/:slug/leader" component={TrackLeader} />
+        <Route path="/tracks/:slug/print" component={TrackPrint} />
         <Route path="/tracks/:slug/:n" component={TrackSession} />
         <Route path="/study/explorer/watch/:slug" component={ExplorerFilm} />
         <Route path="/study/explorer/pauls-travels" component={ExplorerTravels} />

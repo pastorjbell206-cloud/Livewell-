@@ -5,10 +5,11 @@
  * client/public/tracks/, listed in its index.json).
  *
  * The page lists the tracks that are written, each with who it is for, how
- * many sessions it has, and "Start" or "Continue"; then, plainly, the ones
- * that are not written yet: the other roads of /start (lib/startRoads) and
- * "Deep in one", a book studied chapter by chapter. A road with no track yet
- * links to its steps on /start, which stay as they are.
+ * many sessions it has, "Start" or "Continue", and its leader's guide when it
+ * has one; then, plainly, the roads of /start (lib/startRoads) that have no
+ * track yet, each linking to its steps on /start, which stay as they are. A
+ * book studied chapter by chapter ("Deep in one") grows from no road and is
+ * listed with the rest.
  */
 import { Link } from "wouter";
 import { ArrowRight, LifeBuoy, Lock, Milestone, Users } from "lucide-react";
@@ -19,15 +20,9 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import InnerHead from "@/components/art/InnerHead";
 import { ROADS, roadHref } from "@/lib/startRoads";
-import { fetchTrackIndex, nextSession, sessionHref, trackHref, trackToContinue, type TrackBrief, type TrackProgress } from "@/lib/tracks";
+import { fetchTrackIndex, leaderHref, nextSession, sessionHref, trackHref, trackToContinue, type TrackBrief, type TrackProgress } from "@/lib/tracks";
 import { ContinueLine, ProgressBar, useLoad, useTracksProgress } from "./parts";
 import "./tracks.css";
-
-/** The book study that is planned and not written: said plainly, with nothing to open yet. */
-export const DEEP_IN_ONE = {
-  name: "Deep in one: the Gospel of Mark",
-  line: "One book, studied a chapter at a time in the same step shape. Not written yet.",
-};
 
 function TrackCard({ t, entry }: { t: TrackBrief; entry?: TrackProgress }) {
   const total = t.sessions.length;
@@ -54,6 +49,11 @@ function TrackCard({ t, entry }: { t: TrackBrief; entry?: TrackProgress }) {
         <Link href={trackHref(t.slug)} className="btn btn--quiet">
           All {total} sessions
         </Link>
+        {t.leader && (
+          <Link href={leaderHref(t.slug)} className="btn btn--quiet">
+            Leader's guide
+          </Link>
+        )}
       </div>
     </li>
   );
@@ -69,8 +69,8 @@ export default function Tracks() {
   return (
     <Layout>
       <SEOMeta
-        title="Tracks: Follow Jesus Step by Step"
-        description="Short sessions in order for someone new to faith, about ten minutes each. Every session uses a page or tool on LiveWell and ends with one question, one thing to do and one verse."
+        title="Tracks: Short Sessions in Order, Step by Step"
+        description="Short sessions in order: for someone new to faith, for the skeptic, and through the Gospel of Mark a chapter at a time. Each uses a page on LiveWell and ends with one question, one thing to do and one verse."
         url="https://www.livewellbyjamesbell.co/tracks"
       />
       <div className="tk-page">
@@ -108,7 +108,7 @@ export default function Tracks() {
           </div>
         </section>
 
-        {data && (
+        {data && coming.length > 0 && (
           <section className="tk-sec tk-sec--warm" aria-labelledby="tk-coming">
             <div className="tk-in">
               <h2 id="tk-coming" className="tk-h2">
@@ -127,15 +127,6 @@ export default function Tracks() {
                     </Link>
                   </li>
                 ))}
-                <li>
-                  <span>
-                    <span className="tk-coming__name">{DEEP_IN_ONE.name}</span>
-                    <span className="tk-coming__line">{DEEP_IN_ONE.line}</span>
-                  </span>
-                  <Link href="/study/bible/mark">
-                    Read Mark for now <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
-                  </Link>
-                </li>
               </ul>
             </div>
           </section>
@@ -147,7 +138,10 @@ export default function Tracks() {
               <Users aria-hidden="true" size={18} strokeWidth={1.75} />
               With a group
             </p>
-            <p className="tk-p">Every session ends with a guide for a group: a question to open with, three to talk over, and something to pray about. It prints on one sheet.</p>
+            <p className="tk-p">
+              Every session ends with a guide for a group: a question to open with, three to talk over, and something to pray about. It prints on one sheet. A track with a leader's guide offers it
+              on its card, and every track prints whole, a session to a sheet.
+            </p>
             <p className="lw-newline">
               <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.75} />
               <span>

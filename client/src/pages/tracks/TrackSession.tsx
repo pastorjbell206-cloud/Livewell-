@@ -8,7 +8,8 @@
  * The reader's answer and ticks are kept on this device through lib/storage
  * (livewell-progress-tracks-v1) and the page says so. Opening a session
  * begins the track; "Mark this session done" moves the reader on. A session
- * and its group guide each print on their own.
+ * and its group guide each print on their own, and a track with a leader's
+ * guide offers it beside them.
  */
 import { useEffect, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
@@ -22,7 +23,7 @@ import TurnNav from "@/components/TurnNav";
 import { RefText } from "@/components/VerseRef";
 import InnerHead from "@/components/art/InnerHead";
 import { KEPT_HERE } from "@/lib/study-method";
-import { TRACKS_PATH, fetchTrack, kindLabel, sessionHref, setReturn, trackHref, withDone, withNotes, withStarted, type Track, type TrackLink, type TrackSession as Session } from "@/lib/tracks";
+import { TRACKS_PATH, fetchTrack, kindLabel, leaderHref, sessionHref, setReturn, trackHref, withDone, withNotes, withStarted, type Track, type TrackLink, type TrackSession as Session } from "@/lib/tracks";
 import { ProgressBar, useLoad, useTracksProgress } from "./parts";
 import "./tracks.css";
 
@@ -257,6 +258,12 @@ function SessionBody({ track, s }: { track: Track; s: Session }) {
               <Printer aria-hidden="true" size={18} strokeWidth={1.75} />
               Print this session
             </button>
+            {track.leader && (
+              <Link href={leaderHref(track.slug)} className="btn btn--quiet">
+                <Users aria-hidden="true" size={18} strokeWidth={1.75} />
+                The leader's guide
+              </Link>
+            )}
           </div>
         </section>
 
