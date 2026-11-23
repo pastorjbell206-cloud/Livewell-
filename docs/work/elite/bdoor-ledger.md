@@ -15699,3 +15699,21 @@ Cut in chapter 7: 2 Corinthians 4:7 and the treasure in jars of clay (the deep n
 | Psalm 106:21 | 29-35 | theology/passage-notes.json (judges 2, `crossRefs`: Psalm 106); BSB | BSB text |
 
 Cut in chapter 8: Philippians 2:5-8, John 18:36 and John 6:15 (the deep note's contrast with Christ, not a line the New Testament draws to Gideon); the 120,000 fallen of verse 10 discussed as a number; where Karkor lay (not identified with certainty); verses 22 and 29 quoted only in part or paraphrased, because each has a dash in the BSB.
+
+## The plain notes on Judges 9 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sequel to chapter 8; the one long story without a foreign enemy, a cry or a deliverer; Israel's first try at kingship, a disaster; Shechem between Ebal and Gerizim, an old Canaanite city with a mixed population loyal to Baal-berith; kinship as the basic loyalty; temple money funding the campaign; killing rival heirs common; ‘on one stone’ suggesting a public execution | 1-6 | judges/9.json `story`, `historical`, `cultural` | Repository |
+| Genesis 4:10; 2 Samuel 11:21 | 1-6 | judges/9.json `historical`; BSB | Repository; BSB text |
+| Why the massacre is told: what the book is about; verses 56-57 as the narrator's verdict; recorded to condemn; no pattern | 1-6 `hard` | judges/9.json `literary`, `doctrines` (judgment); judges/12.json `hard` (Abimelech's massacre named) | Repository |
+| Fables of plants and animals in the ancient Near East and in the Bible (2 Kings 14:9); olive, fig and vine as the land's most valued plants; the thornbush with no shade and quick to burn; Abimelech as the thornbush; the fable at the center and the conditional curse fulfilled; Gerizim and the tribes standing there (Deuteronomy 27:12; Joshua 8:33) | 7-21 | judges/9.json `cultural`, `literary`, `words` (atad, malakh); BSB | Repository; BSB text |
+| Abimelech never called a judge but one who ‘reigned over Israel’; God's first act in the chapter; verse 24 and the blood of the seventy; the ba'als of Shechem and the god's name; Gaal and the men of Hamor, Genesis 34 and non-Israelite loyalties; the near-comic scene with Zebul | 22-41 | judges/9.json `historical`, `literary`, `words` (ba'al), `doctrines` (providence) | Repository |
+| 1 Samuel 16:14; Genesis 34:2 | 22-41 | judges/9.json `hard`, `historical`; BSB | Repository; BSB text |
+| The spirit of animosity: literally an evil or harmful spirit; Saul; a personal being sent or allowed as an agent of judgment, or a mood God allowed; God sovereign over judgment, not the cause of the murders; the evil already present and turned back | 22-41 `hard` | judges/9.json `hard` | Repository; both readings in their holders' terms |
+| The curse fulfilled; the echoes (one stone, the towers); sowing with salt as a curse; the upper millstone; shame at a woman's hand and the armor-bearer; the burning of the tower told plainly; the verdict of verses 56-57; the fortress-temple at Tell Balata and the debated link (G. Ernest Wright) | 42-57 | judges/9.json `historical`, `cultural`, `literary`, `words` (shuv) | Repository; the link to the temple stated as debated |
+| Proverbs 26:27; Psalm 7:16; 2 Samuel 11:21 | 42-57 | judges/9.json `historical`, `doctrines` (judgment); BSB | Repository; BSB text |
+
+Cut in chapter 9: Mark 10:45 and the olive, fig and vine as pictures of Christ's people (the deep note's thematic links, not lines the New Testament draws to this chapter); the meaning of Beth-millo; the place of Thebez (usually Tubas, not certain); Jotham's place of refuge.
