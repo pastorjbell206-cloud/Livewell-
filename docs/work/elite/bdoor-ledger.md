@@ -15571,3 +15571,23 @@ Cut from the book page: a count of the judges (the repository gives none); forty
 | The care line (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 22-36 `hard` | 1-corinthians/plain/7.json (17-24, `hard`); exodus/plain/21.json (7-11, `hard`); joshua/plain/9.json (16-27, `hard`) | Reused whole, word for word |
 
 Cut in chapter 1: Adoni-bezek's seventy kings ‘like dogs’ (an image the text does not use); that the law of Moses never told Israel to maim captives (not stated in the repository's notes); Hebrews 4 and 1 Peter 1:3-4 as the inheritance not fully entered (the deep note's thematic link, not a line the New Testament draws to this chapter); the meaning of the names of the sons of Anak. The BSB's words in verse 18 are paraphrased because the verse has a dash.
+
+## The plain notes on Judges 2 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapter 1 from outside, chapter 2 from God's side; Gilgal as Israel's first camp and a place of covenant memory (Joshua 4 and 5); Bochim not otherwise known, the Septuagint linking it with Bethel; the name as weepers; the charge (no covenant, tear down the altars); the tears that did not change what followed | 1-5 | judges/2.json `story`, `historical`; theology/passage-notes.json (judges 2, `questions`); BSB | Repository; BSB text |
+| ‘What is this you have done?’ as God's question to the woman in Genesis 3:13 | 1-5 | BSB (Genesis 3:13; Judges 2:2) | BSB text, the words identical |
+| Numbers 33:55; Joshua 23:13; 2 Corinthians 7:10 | 1-5 | judges/2.json `story`; BSB | Repository; BSB text |
+| The angel of the LORD speaking as God; the two readings (the Son before the incarnation, held by many Christian interpreters from the early church on; a created messenger with God's authority); no side; the message not in doubt | 1-5 `hard` | judges/2.json `christ`; judges/13.json `hard` | Repository; each reading in its holders' terms; no side |
+| Verses 6-9 repeating Joshua 24:28-31; the change of generation; ‘had seen all the great works’; gathered to their fathers; yada as knowing by experience; faith not passed on; the teaching at home and the danger of plenty (Deuteronomy 6); Timnath-heres and Timnath-serah, the same letters reordered, heres a word for the sun, the two explanations | 6-10 | judges/2.json `story`, `historical`, `cultural`, `words` (yada), `doctrines` (family); theology/passage-notes.json (judges 2, `words`, `echoes`) | Repository; no side on the name |
+| Joshua 24:31; Deuteronomy 6:7, 6:12; Psalm 78:6 | 6-10 | judges/2.json `doctrines`; theology/passage-notes.json (judges 2, `echoes`); BSB | Repository; BSB text (Psalm 78:6 quoted only up to its dash) |
+| The wheel set out in advance; the crying out added later; the spiral downward (verse 19); Baal the storm god, the Ugarit texts of the late 1920s, the Baals as local forms, the Ashtoreths as Astarte, ‘good farming’; shophet as one who puts things right, chiefly a deliverer; yasha as the root of the names Joshua and Jesus; mercy before any turning back (verse 18) | 11-19 | judges/2.json `cultural`, `literary`, `words` (shaphat, yasha, nacham), `doctrines` (attributes); theology/passage-notes.json (judges 2) | Repository; the root of the names stated as a word fact, not as a line to Christ |
+| Nehemiah 9:27; Psalm 106:43-44; Romans 2:4 | 11-19 | theology/passage-notes.json (judges 2, `crossRefs`, `echoes`); BSB | Repository; BSB text |
+| The nations left as judgment and as a test; 3:2 and the new generation taught war; the covenant at Shechem broken | 20-23 | judges/2.json `literary`, `hard`; joshua/intro.json `teaching` | Repository |
+| Joshua 23:16; Judges 3:4; Deuteronomy 8:2 | 20-23 | judges/2.json `hard`; BSB | Repository; BSB text |
+| Why God left the nations: judgment and test together; the two responses of readers; justice and mercy side by side, not every tension resolved | 20-23 `hard` | judges/2.json `hard` | Repository; both responses in their holders' terms |
+
+Cut in chapter 2: Hebrews 7:23-25 and the savior who does not die (the deep note's thematic link, not a line the New Testament draws to this chapter); the Ugarit myths of Baal's death and return told at length (left to the site's guide on the gods of the nations).
