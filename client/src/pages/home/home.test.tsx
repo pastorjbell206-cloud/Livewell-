@@ -16,6 +16,8 @@ import Home from "../Home";
 import { homeTonight } from "./HomeTonight";
 import { LATEST_COUNT, committedLatest, latestFrom, longDate } from "./HomeLatest";
 import { LATEST_CUTOFF, SHELF_ESSAYS, isPublicEssay } from "@/lib/shelf";
+import { devotionHref, tonightOn } from "@/lib/familyTable";
+import { nameForHref } from "@/lib/siteCatalog";
 
 /** Noon on a calendar day in the reader's own time zone. */
 function setToday(y: number, m: number, d: number) {
@@ -71,12 +73,19 @@ describe("homeTonight", () => {
     });
   });
 
-  it("says only that the calendar starts December 1 on the nights before it", () => {
-    expect(said("2026-11-29")).toEqual({
-      tonight: null,
-      href: undefined,
-      advent: "Advent has begun. The family Advent calendar starts Tuesday, December 1: see the readings.",
-    });
+  it("offers the calendar's first reading on Advent Sunday and the nights before December 1, as /family does", () => {
+    // The walk of 2026-11-23 (finding 20): Home had no devotion on these nights while /family had one.
+    for (const date of ["2026-11-29", "2026-11-30"]) {
+      expect(said(date)).toEqual({
+        tonight: "Advent has begun. Tonight at the table: The Long Wait Begins, Day 1 of the family Advent calendar.",
+        href: "/family/devotions/advent-1",
+        advent: null,
+      });
+      // The same reading /family offers that night.
+      expect(said(date).href).toBe(devotionHref(tonightOn(date)!.id));
+    }
+    // December 1 names it by its date, as before.
+    expect(said("2026-12-01").tonight).toBe("Tonight at the table: The Long Wait Begins, December 1 in the family Advent calendar.");
   });
 
   it("names the day of the Advent calendar, in U13's words", () => {
@@ -155,7 +164,7 @@ describe("Home's doors", () => {
       "/topics",
       "/family",
       "/start",
-      "/study",
+      "/resources/context",
       "/tools",
       "/writing",
       "/books",
@@ -165,6 +174,26 @@ describe("Home's doors", () => {
     expect(within(doors).getByRole("link", { name: /Find James/ }).getAttribute("href")).toBe("/connect");
     // Every door carries its picture frame; the pictures themselves are decorative.
     expect(doors.querySelectorAll(".lw-door .lw-frame")).toHaveLength(10);
+  });
+
+  it("never count themselves as the menu's doors, and name each page as the menus do", () => {
+    // The walk of 2026-11-23, finding 3: "Ten doors" beside a menu of seven, and "Context and creeds" opening Study the Bible.
+    setToday(2026, 10, 27);
+    renderHome();
+    const doors = screen.getByRole("region", { name: "Where to begin." });
+    expect(doors).toHaveTextContent("Ten ways in");
+    expect(doors).not.toHaveTextContent(/doors/i);
+    const background = within(doors).getByRole("link", { name: /Bible background/ });
+    expect(background.getAttribute("href")).toBe("/resources/context");
+    expect(nameForHref("/resources/context")).toBe("Bible background");
+  });
+
+  it("offer Start here to every reader, not only someone new", () => {
+    // The walk of 2026-11-23, finding 24: the card said "New, or coming back".
+    setToday(2026, 10, 27);
+    renderHome();
+    const doors = screen.getByRole("region", { name: "Where to begin." });
+    expect(within(doors).getByRole("link", { name: /Start here/ })).toHaveTextContent("Wherever you are");
   });
 });
 

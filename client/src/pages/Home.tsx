@@ -4,7 +4,7 @@
  * The first screen is Plate I (the road), James's headline, the one sentence
  * that says what the site is for, and Find (one field: a passage or a
  * question), with tonight's family devotion under it. On a phone the plate
- * runs edge to edge above the headline. Then the ten doors as picture
+ * runs edge to edge above the headline. Then ten ways in as picture
  * cards, and the things a visitor can touch: the 66 books on one shelf, a
  * hard question asked straight, tonight at the table, and two thousand
  * years of church history on one line. Then the latest writing and the
@@ -116,19 +116,29 @@ const DOORS: Door[] = [
   { title: "Church history", href: "/theology/history", plate: "basilica", note: "From Pentecost to today" },
   { title: "Hard questions", href: "/topics", plate: "lantern", note: "Straight answers" },
   { title: "Family", href: "/family", plate: "house", note: "Tonight's devotion" },
-  { title: "Start here", href: "/start", plate: "tree", note: "New, or coming back" },
+  // /start has a way in for every reader, not only someone new (walk 2026-11, finding 24).
+  { title: "Start here", href: "/start", plate: "tree", note: "Wherever you are" },
 ];
 
-/** The other five, smaller. */
+/**
+ * The other five, smaller. The first was "Context and creeds" on /study, from
+ * when that page held both; the creeds now sit under History, so the card
+ * takes the context half under its one name, Bible background (lib/siteCatalog),
+ * and opens that page (the walk of 2026-11-23, finding 3).
+ */
 const MORE_DOORS: Door[] = [
-  { title: "Context and creeds", href: "/study", plate: "jar" },
+  { title: "Bible background", href: "/resources/context", plate: "jar" },
   { title: "Tools", href: "/tools", plate: "compass" },
   { title: "Essays", href: "/writing", plate: "quill" },
   { title: "Books", href: "/books", plate: "books" },
   { title: "Find James", href: "/connect", plate: "letter" },
 ];
 
-/** "Start where you are": the five roads of /start as one quiet row of chips (home/roadChips.ts). */
+/**
+ * "Start where you are": the choices of /start as one quiet row of chips
+ * (home/roadChips.ts). A road opens on /start; the doubter's and the pastor's
+ * chips open their one page.
+ */
 function RoadChips() {
   return (
     <nav className="home-roads" aria-labelledby="home-roads-label">
@@ -138,7 +148,7 @@ function RoadChips() {
       <ul className="home-roads__list">
         {ROAD_CHIPS.map((r) => (
           <li key={r.id}>
-            <Link href={`/start#${r.id}`} className="home-road" onClick={() => followHash(`/start#${r.id}`)}>
+            <Link href={r.href} className="home-road" onClick={() => followHash(r.href)}>
               {r.chip}
             </Link>
           </li>
@@ -215,7 +225,7 @@ export default function Home() {
             <HomeFind />
             {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
             <Tonight />
-            {/* The five roads of /start, one chip each. */}
+            {/* The choices of /start, one chip each: five roads, and the doubter's and the pastor's page. */}
             <RoadChips />
           </div>
           <PlateFrame className="home-hero__art" ratio={null} number="Plate I" title="The road">
@@ -224,10 +234,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE TEN DOORS */}
+      {/* TEN WAYS IN. Not called doors: the menu's seven doors are the site's doors. */}
       <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">
         <div className="home-wrap">
-          <SectionHead id="home-doors-title" eyebrow="Ten doors" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
+          <SectionHead id="home-doors-title" eyebrow="Ten ways in" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
           <ul className="home-doors">
             {DOORS.map((d, i) => (
               <li key={d.href} className={i === 0 ? "home-doors__lead" : undefined}>

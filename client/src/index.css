@@ -1674,6 +1674,8 @@ html{-webkit-tap-highlight-color:transparent}
 .qa-ask .hq-find{max-width:640px}
 .qa-try{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:var(--s-2) 0 0;padding:0}
 .qa-result{min-height:300px}
+/* Its room is kept only once a question is typed: before that it was an empty band under the box (walk 2026-11, finding 4). */
+.qa-result:empty{min-height:0}
 .qa-best{margin-top:var(--s-4);padding-top:var(--s-3);border-top:1.5px solid var(--charcoal-fg);max-width:760px}
 .qa-best__label{font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mustard);margin:0 0 10px}
 .qa-best__label--next{margin-top:var(--s-4)}
@@ -1764,12 +1766,13 @@ html{-webkit-tap-highlight-color:transparent}
 @media (max-width:900px){.hx-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .hp-sec,.qa-index,.qa-page{padding-top:var(--s-4)}
 
-/* START WHERE YOU ARE (pages/Start.tsx): the five roads as picture cards, the
+/* START WHERE YOU ARE (pages/Start.tsx): the five roads and the two readers'
+   pages (lib/startRoads WAYS_IN) as seven picture cards, four to a row, the
    open road's steps with a tick each, and "Pick up where you left off". Then
-   Home's quiet row of the same five, under Find and tonight's line; those
+   Home's quiet row of the same seven, under Find and tonight's line; those
    chips are in the static hero too (scripts/prerender-heads.mjs). Tokens only. */
 .st-choose{background:var(--bone);padding:var(--s-2) var(--gutter) var(--s-5)}
-.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--s-3)}
+.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-3)}
 .st-cards>li{display:flex}
 .st-card{flex:1;display:flex;flex-direction:column;min-width:0;color:var(--ink);text-decoration:none}
 .st-card .lw-frame{transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
@@ -2181,6 +2184,8 @@ aside .sb-tabs{margin-left:calc(var(--s-4) * -1);margin-right:calc(var(--s-4) * 
 .lw-find__field input::placeholder{color:var(--ink-muted)}
 .lw-find__field:has(input:focus-visible){outline:2px solid var(--ink);outline-offset:3px}
 .lw-find__field input:focus-visible{outline:none!important;box-shadow:none!important}
+/* My Library: the carry preview's heading takes focus when a file is chosen; it shows as an underline, as tool headings do (tool-shell.css). */
+.carry-preview__title:focus-visible{outline:none!important;box-shadow:none!important;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:2px;text-underline-offset:.22em}
 .home-sec--dark .lw-find__label{color:var(--charcoal-fg)}
 .home-sec--dark .lw-find__field{background:var(--charcoal-fg);border-color:var(--charcoal-line);color:var(--charcoal)}
 .home-sec--dark .lw-find__field input{color:var(--charcoal)}

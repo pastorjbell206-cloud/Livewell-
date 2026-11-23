@@ -1,7 +1,8 @@
 /**
  * /tracks/:slug: one track. Its sessions in order, which are done on this
- * device, and "Start" or "Continue" at the first one that is not. The data is
- * client/public/tracks/<slug>.json (lib/tracks.ts).
+ * device, and "Start" or "Continue" at the first one that is not; then, for a
+ * group, the way to its leader's guide and to the whole track on one page to
+ * print. The data is client/public/tracks/<slug>.json (lib/tracks.ts).
  */
 import { Link, useRoute } from "wouter";
 import { ArrowRight, Check, Lock, Milestone, RotateCcw, Users } from "lucide-react";
@@ -12,7 +13,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import InnerHead from "@/components/art/InnerHead";
 import { roadById, roadHref } from "@/lib/startRoads";
-import { TRACKS_PATH, fetchTrack, kindLabel, nextSession, sessionHref, trackHref, withoutTrack } from "@/lib/tracks";
+import { TRACKS_PATH, fetchTrack, kindLabel, leaderHref, nextSession, printHref, sessionHref, trackHref, withoutTrack } from "@/lib/tracks";
 import { ProgressBar, useLoad, useTracksProgress } from "./parts";
 import "./tracks.css";
 
@@ -131,6 +132,15 @@ export default function Track() {
                 <p className="tk-p">
                   Every session ends with a guide for a group: a question to open with, three to talk over, and something to pray about. Each person reads the session on their own first, then
                   the group meets.
+                </p>
+                {track.leader && (
+                  <p className="tk-p">
+                    Leading one? <Link href={leaderHref(slug)}>The leader's guide</Link> says how to run the group, what to do with a hard question or someone who is hurting, and gathers every
+                    session's group guide in order.
+                  </p>
+                )}
+                <p className="tk-p">
+                  <Link href={printHref(slug)}>The whole track on one page</Link>, to print or to keep, each session on its own sheet.
                 </p>
                 {road && (
                   <p className="tk-p">

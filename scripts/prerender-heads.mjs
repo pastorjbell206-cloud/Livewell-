@@ -526,23 +526,26 @@ const HUB_LISTINGS = {
     { title: "Blind Spots", href: "/books/blind-spots", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
   ] },
-  // The five roads on /start, each step by step, then where the road for someone new goes on.
-  "/start": { label: "Start where you are", cap: 40, load: () => {
+  // The five roads on /start, each step by step, the two readers' pages, then where the road for someone new goes on.
+  "/start": { label: "Start where you are", cap: 42, load: () => {
     const d = readJsonSafe("client/src/lib/startRoad.json") || {};
     return [
       ...(d.roads || []).flatMap((r) => [
         ...(r.track ? [{ title: `${r.chip}: the track, in ${r.track.sessions} sessions`, href: `/tracks/${r.track.slug}`, blurb: "Short sessions in order, about ten minutes each, with your place kept." }] : []),
         ...(r.steps || []).map((x) => ({ title: `${r.chip}: ${x.title}`, href: x.href, blurb: x.line })),
       ]),
+      ...(d.pages || []).map((p) => ({ title: `${p.chip}: ${p.link}`, href: p.href, blurb: p.note })),
       ...(d.next || []).map((x) => ({ title: x.link, href: x.href, blurb: x.lead })),
     ];
   } },
-  // Every track on /tracks and each of its sessions, from the tracks index (scripts/build-tracks-index.mjs).
+  // Every track on /tracks, each of its sessions, its leader's guide when it has one, and the whole track to print, from the tracks index (scripts/build-tracks-index.mjs).
   "/tracks": { label: "Tracks", cap: 120, load: () => {
     const d = readJsonSafe("client/public/tracks/index.json") || {};
     return (d.tracks || []).flatMap((t) => [
       { title: t.title, href: `/tracks/${t.slug}`, blurb: t.subtitle },
       ...t.sessions.map((x) => ({ title: `Session ${x.n}: ${x.title}`, href: `/tracks/${t.slug}/${x.n}`, blurb: `About ${x.minutes} minutes. Opens: ${x.opens}.` })),
+      ...(t.leader ? [{ title: `Leader's guide: ${t.title}`, href: `/tracks/${t.slug}/leader`, blurb: "How to run a small group through the track, and each session's group guide in order." }] : []),
+      { title: `${t.title}: the whole track, to print`, href: `/tracks/${t.slug}/print`, blurb: "Every session on one page, a session to a sheet." },
     ]);
   } },
   // Every reading plan on /study/plans, opening the plan itself.
@@ -1220,9 +1223,17 @@ function homeHeroHtml() {
   // here, empty, at the size the drawing fills when React mounts.
   const label = "Look up a passage or ask a question";
   // Tonight's line arrives with the app into a slot of the same height (Home.tsx),
-  // and under it the five roads of /start as one row of chips, as Home draws them.
-  const chips = ((readJsonSafe("client/src/lib/startRoad.json") || {}).roads || [])
-    .map((r) => `<li><a class="home-road" href="/start#${esc(r.id)}">${esc(r.chip)}</a></li>`)
+  // and under it the choices of /start as one row of chips, as Home draws them
+  // (pages/home/roadChips.ts): a road opens on /start, a reader's page opens itself.
+  const start = readJsonSafe("client/src/lib/startRoad.json") || {};
+  const choice = new Map([
+    ...(start.roads || []).map((r) => [r.id, { chip: r.chip, href: `/start#${r.id}` }]),
+    ...(start.pages || []).map((p) => [p.id, { chip: p.chip, href: p.href }]),
+  ]);
+  const chips = (start.order || (start.roads || []).map((r) => r.id))
+    .map((id) => choice.get(id))
+    .filter(Boolean)
+    .map((c) => `<li><a class="home-road" href="${esc(c.href)}">${esc(c.chip)}</a></li>`)
     .join("");
   const roads = chips
     ? `
@@ -1884,9 +1895,85 @@ async function main() {
         );
         n++;
       }
+      // The leader's guide (/tracks/:slug/leader), when the track has one: how
+      // to run the group, then every session's group guide in order, as the page
+      // shows them. Its head matches the page's own SEOMeta (TrackLeader.tsx).
+      const groupGuide = (x) =>
+        [
+          `<p>Before you meet, each person opens <a href="${escapeHtml(x.open.href)}">${escapeHtml(x.open.label)}</a>.</p>`,
+          `<p>${escapeHtml(x.question)}</p>`,
+          `<p>${escapeHtml(x.group.open)}</p>`,
+          `<ol>\n${x.group.discuss.map((q) => `<li>${escapeHtml(q)}</li>`).join("\n")}\n</ol>`,
+          `<p>${escapeHtml(x.verse.text)} (${escapeHtml(x.verse.ref)})</p>`,
+          `<p>${escapeHtml(x.group.pray)}</p>`,
+          (x.care || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+        ].join("\n");
+      if (t.leader) {
+        const lRoute = `${route}/leader`;
+        writeRoute(
+          template,
+          { path: lRoute },
+          buildHead({
+            title: `Leader's Guide: ${t.title}`,
+            description: `How to run a small group through ${t.title}, ${total} sessions: the group, the room, the order of a meeting, hard questions, and each session's group guide.`,
+            url: `${SITE_URL}${lRoute}`,
+            image: ogImageUrl(`Leader's guide: ${t.title}`),
+            type: "article",
+            schemas: [breadcrumbSchema([...crumbs, { name: "Leader's guide", path: lRoute }])],
+          }) + data,
+          article([
+            `<p class="pre-eyebrow"><a href="${route}">${escapeHtml(t.title)}</a></p>`,
+            `<h1>${escapeHtml(`Leader's guide: ${t.title}`)}</h1>`,
+            t.leader.about.map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+            ...t.leader.sections.map((p) =>
+              sec(p.title, [p.body.map((b) => `<p>${escapeHtml(b)}</p>`).join("\n"), p.steps ? `<ol>\n${p.steps.map((x) => `<li>${escapeHtml(x)}</li>`).join("\n")}\n</ol>` : ""].join("\n")),
+            ),
+            sec(`The ${total} sessions, in order`, t.sessions.map((x) => `<h3><a href="${route}/${x.n}">Session ${x.n}: ${escapeHtml(x.title)}</a></h3>\n${groupGuide(x)}`).join("\n")),
+            `<p><a href="${route}/print">The whole track on one page, to print</a></p>`,
+          ]),
+        );
+        n++;
+      }
+      // The whole track on one page, to print (/tracks/:slug/print).
+      const pRoute = `${route}/print`;
+      writeRoute(
+        template,
+        { path: pRoute },
+        buildHead({
+          title: `${t.title}: The Whole Track, to Print`,
+          description: `All ${total} sessions of ${t.title} on one page, to print or keep: the teaching, the page each session opens, one question, one thing to do, one verse, and the group guide.`,
+          url: `${SITE_URL}${pRoute}`,
+          image: ogImageUrl(t.title),
+          type: "article",
+          schemas: [breadcrumbSchema([...crumbs, { name: "The whole track, to print", path: pRoute }])],
+        }) + data,
+        article([
+          `<p class="pre-eyebrow"><a href="${route}">${escapeHtml(t.title)}</a>, the whole track</p>`,
+          `<h1>${escapeHtml(t.title)}</h1>`,
+          `<p class="pre-subtitle">${escapeHtml(t.subtitle)}</p>`,
+          t.intro.map((x) => `<p>${escapeHtml(x)}</p>`).join("\n"),
+          ...t.sessions.map((x) =>
+            sec(
+              `Session ${x.n}: ${x.title}`,
+              [
+                x.teaching.map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+                (x.care || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+                `<ul>\n${[x.open, ...(x.also || [])].map(linkLi).join("\n")}\n</ul>`,
+                `<p>${escapeHtml(x.question)}</p>`,
+                `<p>${escapeHtml(x.do)}</p>`,
+                `<blockquote><p>${escapeHtml(x.verse.text)}</p><p>${escapeHtml(x.verse.ref)}, Berean Standard Bible</p></blockquote>`,
+                `<p>${escapeHtml(x.group.open)}</p>`,
+                `<ol>\n${x.group.discuss.map((q) => `<li>${escapeHtml(q)}</li>`).join("\n")}\n</ol>`,
+                `<p>${escapeHtml(x.group.pray)}</p>`,
+              ].join("\n"),
+            ),
+          ),
+        ]),
+      );
+      n++;
     }
     wrote += n;
-    console.log(`[prerender] wrote ${n} track and session pages`);
+    console.log(`[prerender] wrote ${n} track, session, leader's guide and print pages`);
   }
 
   // A page per finished stop of the Bible Explorer (/study/explorer/:slug).

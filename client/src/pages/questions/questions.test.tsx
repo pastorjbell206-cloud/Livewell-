@@ -195,6 +195,11 @@ describe("a piece", () => {
     expect(screen.getByRole("heading", { name: "Read the other side" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Read further" })).toBeInTheDocument();
     expect(screen.getAllByRole("link", { name: /Mark 16/ }).map((a) => a.getAttribute("href"))).toContain("/study/bible/mark/16");
+
+    // The reader who disagrees is told where to say so (walk 2026-11, finding 2).
+    const back = screen.getByTestId("push-back");
+    expect(back).toHaveTextContent("Think this piece gets something wrong? Write to James and say where.");
+    expect(within(back).getByRole("link", { name: "Write to James" }).getAttribute("href")).toBe("/contact");
   });
 
   it("the page on homosexuality is live: no review line, no noindex, where the author lands before the closing care passage", async () => {

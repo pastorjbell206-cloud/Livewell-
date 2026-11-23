@@ -32,7 +32,11 @@ export const ANSWER_VIEWS: Record<string, { compare?: string; whichView?: string
 /**
  * answer slug → the Find Help page for a reader who is living the question,
  * not only asking it. Listed only where the answer touches fear, despair or
- * harm, so the way to real help sits under it.
+ * harm, or a faith coming apart, so the way to real help sits under it. The
+ * last four are the answers a doubter reads on the road for someone who has
+ * stepped back (/start) and among the skeptic's first questions; each now
+ * points to the page written for that state (the walk of 2026-11-23,
+ * finding 9).
  */
 export const ANSWER_CARE: Record<string, { slug: string; label: string }> = {
   "what-does-the-bible-say-about-anxiety": { slug: "anxiety", label: "I can't stop worrying" },
@@ -40,6 +44,10 @@ export const ANSWER_CARE: Record<string, { slug: string; label: string }> = {
   "what-does-the-bible-say-about-divorce-and-remarriage": { slug: "divorce", label: "My marriage has ended" },
   "if-god-is-good-why-suffering": { slug: "suffering", label: "Why would God let this happen?" },
   "can-life-mean-anything-without-god": { slug: "purpose", label: "What's the point of my life?" },
+  "what-if-christianity-is-wrong": { slug: "doubt", label: "I'm not sure I believe anymore" },
+  "done-with-church-but-not-jesus": { slug: "church-hurt", label: "The church hurt me" },
+  "can-you-be-a-christian-without-church": { slug: "church-hurt", label: "The church hurt me" },
+  "what-happens-after-deconstruction": { slug: "deconstructing", label: "I'm deconstructing my faith" },
 };
 
 export interface Companion { lead: string; label: string; href: string }
