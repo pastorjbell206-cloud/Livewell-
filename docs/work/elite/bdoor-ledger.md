@@ -16436,3 +16436,20 @@ Cut in chapter 22: Mark 2:17 and the king whose company is those with nowhere el
 | The headings of Psalm 54 and Psalm 63, the time not said | 19-29 | psalms/plain/54.json and 63.json (`hearers`); BSB | Repository; BSB text |
 
 Cut in chapter 23: Luke 6:12-13, John 5:19 and Hebrews 10:23-25 and Jesus as one who prayed before decisions and was handed over (the deep note calls them thematic connections, not lines the New Testament draws to this chapter); Saul's greeting to the Ziphites in verse 21 left unquoted, the note quoting only his reason.
+
+## The plain notes on 1 Samuel 24 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hunter at the mercy of the hunted; the first of two sparings (chapter 26); no throne by violence, waiting for God; En-gedi's springs and cliffs, caves and wild goats; sheepfolds at cave mouths and caves deep enough to hide many; three thousand as in 13:2; the robe's corner as identity and authority, a symbolic act, the conscience troubled; the echo of 15:27-28; the anointing still marking Saul | 1-7 | 1-samuel/24.json `story`, `historical`, `cultural`, `words` (mashiach, kanaph) | Repository |
+| The headings of Psalms 57 and 142, the cave not said | 1-7 | 1-samuel/24.json `historical`; psalms/plain/57.json and 142.json (`hearers`); BSB | Repository; BSB text |
+| The LORD's anointed and leaders never opposed: further than the text; confrontation, appeal to God, flight; a narrow reading and a broader one; the prophets confronting kings; respect for authorities and obedience to God over people; restraint and trust, not silence before injustice | 1-7 `hard` | 1-samuel/24.json `hard` | Repository; both readings in their holders' terms |
+| The care line (‘And nothing in this passage shields a leader who does harm...’ to ‘...lists places to turn.’) | 1-7 `hard` | 1-timothy/plain/3.json (1-7); numbers/plain/16.json (1-15); titus/plain/1.json (5-9) (`hard`) | Reused whole, word for word; Find Help named |
+| The two halves of the chapter; ‘my father’ as respect and kinship; a dead dog and a flea as expressions of insignificance; hand binding the chapter; three appeals to God as judge, shaphat as deciding and delivering; vengeance handed to God | 8-15 | 1-samuel/24.json `literary`, `cultural`, `words` (shaphat), `doctrines` (judgment) | Repository |
+| Deuteronomy 32:35 and Romans 12:19; Psalm 7:4 | 8-15 | 1-samuel/24.json `doctrines` (judgment); psalms/plain/54.json (1-7, `later`); psalms/plain/7.json (1-5, `later`); BSB | Repository; BSB text |
+| Saul's words as the story's moral; his first open admission since chapter 18; the request echoing Jonathan's in chapter 20 and the custom of wiping out the old king's family; David's oath kept; Saul home and David to the stronghold; tears not lasting repentance (chapter 26) | 16-22 | 1-samuel/24.json `story`, `literary`, `cultural`, `words` (tsaddiq), `doctrines` (repentance) | Repository |
+| 2 Samuel 5:3; Proverbs 25:21 | 16-22 | 1-samuel/24.json `historical` (2 Samuel 5); BSB | Repository; BSB text |
+
+Cut in chapter 24: 1 Peter 2:23, Luke 6:27-28 and David's restraint as a reflection of Jesus' way (the deep note calls it thematic, not a line the New Testament draws to this chapter); the idiom behind relieve himself (not needed).
