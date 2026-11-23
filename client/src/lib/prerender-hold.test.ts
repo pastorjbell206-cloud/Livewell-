@@ -14,7 +14,8 @@ function mount(root: HTMLElement, html: string) {
   root.innerHTML = html;
 }
 
-const flush = () => new Promise<void>((resolve) => setTimeout(resolve, 0));
+/** A frame, and the task after it: the held text has been drawn by then (the hold waits for one). */
+const flush = () => new Promise<void>((resolve) => requestAnimationFrame(() => setTimeout(resolve, 0)));
 
 describe("holdPrerenderedPage", () => {
   beforeEach(() => vi.useRealTimers());
@@ -27,6 +28,22 @@ describe("holdPrerenderedPage", () => {
     expect(holdPrerenderedPage({ path: "/study" })).toBe(false);
     expect(document.getElementById("lw-shell")?.parentNode).toBe(root);
     expect(root.classList.contains(WAIT_CLASS)).toBe(false);
+  });
+
+  it("holds a shell the prerender put before #root without moving it, so its text is painted once", () => {
+    document.body.innerHTML = `<div id="lw-shell"><div class="lw-shell-bar"><span>LiveWell</span></div><div class="prerender-content"><article><h1>John 3</h1><p>Nicodemus came by night.</p></article></div></div><div id="root"></div>`;
+    const shell = document.getElementById("lw-shell")!;
+    const root = document.getElementById("root")!;
+    const moves: MutationRecord[] = [];
+    const watch = new MutationObserver((records) => moves.push(...records.filter((r) => r.type === "childList")));
+    watch.observe(document.body, { childList: true });
+    expect(holdPrerenderedPage({ path: "/study/bible/john/3" })).toBe(true);
+    moves.push(...watch.takeRecords().filter((r) => r.type === "childList"));
+    watch.disconnect();
+    expect(moves).toEqual([]);
+    expect(document.getElementById(HELD_ID)).toBe(shell);
+    expect(shell.nextElementSibling).toBe(root);
+    expect(root.classList.contains(WAIT_CLASS)).toBe(true);
   });
 
   it("never holds the front page, which has its own static hero", () => {
@@ -82,6 +99,28 @@ describe("holdPrerenderedPage", () => {
       expect(root.classList.contains(WAIT_CLASS)).toBe(false);
     } finally {
       delete (document as unknown as { fonts?: unknown }).fonts;
+    }
+  });
+
+  it("does not take the held text away before a frame has drawn it", async () => {
+    // A busy machine: the page is ready before the browser has drawn its first frame.
+    const frames: FrameRequestCallback[] = [];
+    const view = document.defaultView!;
+    const spy = vi.spyOn(view, "requestAnimationFrame").mockImplementation((cb) => frames.push(cb));
+    try {
+      const root = setPage(true);
+      holdPrerenderedPage({ path: "/family" });
+      mount(root, "<main><h1>Family</h1></main>");
+      await new Promise<void>((resolve) => setTimeout(resolve, 0));
+      expect(document.getElementById(HELD_ID)).not.toBeNull();
+      expect(root.classList.contains(WAIT_CLASS)).toBe(true);
+
+      frames.splice(0).forEach((cb) => cb(performance.now()));
+      await new Promise<void>((resolve) => setTimeout(resolve, 0));
+      expect(document.getElementById(HELD_ID)).toBeNull();
+      expect(root.classList.contains(WAIT_CLASS)).toBe(false);
+    } finally {
+      spy.mockRestore();
     }
   });
 

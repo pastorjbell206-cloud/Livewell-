@@ -116,6 +116,29 @@ function renderAt(url: string) {
 const stored = () =>
   JSON.parse(window.localStorage.getItem(EXPLORER_PROGRESS_KEY) ?? "null");
 
+/**
+ * The map has loaded: Creation's item is on it, named by its heading. The map
+ * is 3,300 elements, half of them drawings, so it is waited for by an id and
+ * checked by role once; a role query polled over all of it as it loaded, and
+ * page-wide ones after, cost seconds on a busy machine.
+ */
+async function mapReady() {
+  await waitFor(() =>
+    expect(document.getElementById("stop-creation")).not.toBeNull()
+  );
+  expect(
+    within(document.getElementById("stop-creation")!).getByRole("heading", {
+      name: "Creation",
+    })
+  ).toBeInTheDocument();
+}
+/** A thread's switch, found among the threads. */
+const threadButton = (name: string) =>
+  within(document.querySelector<HTMLElement>(".ex-threads")!).getByRole(
+    "button",
+    { name }
+  );
+
 beforeEach(() => {
   window.localStorage.clear();
   serve();
@@ -156,12 +179,18 @@ describe("the data", () => {
   });
 });
 
-describe("the map", () => {
+// Every test here renders the whole map: 3,300 elements, half of them the
+// drawings, the page as a reader gets it. Heavy by design, so each has 15 s
+// rather than the default 5 s; a busy machine stretched one render past 4 s.
+describe("the map", { timeout: 15000 }, () => {
   it("shows every stop as a link; no stop says it is being drawn", async () => {
     renderAt("/study/explorer");
-    await screen.findByRole("heading", { name: "Creation" });
+    await mapReady();
     for (const s of FINISHED) {
-      const h = screen.getByRole("heading", { name: s.title });
+      // Within the stop's own item: thirteen role queries over the whole map
+      // weighed every heading on it each time.
+      const item = document.getElementById(`stop-${s.slug}`)!;
+      const h = within(item).getByRole("heading", { name: s.title });
       expect(
         within(h).getByRole("link", { name: s.title }).getAttribute("href")
       ).toBe(`/study/explorer/${s.slug}`);
@@ -176,7 +205,7 @@ describe("the map", () => {
     vi.unstubAllGlobals();
     serve("church");
     renderAt("/study/explorer");
-    await screen.findByRole("heading", { name: "Creation" });
+    await mapReady();
     for (const s of INDEX.stops.filter(x => x.slug === "church")) {
       const item = document.getElementById(`stop-${s.slug}`)!;
       expect(item, s.slug).toBeTruthy();
@@ -225,9 +254,9 @@ describe("the map", () => {
     expect(threadsAt("fall", INDEX.threads)[0].at.state).toBe("apart");
 
     renderAt("/study/explorer");
-    await screen.findByRole("heading", { name: "Creation" });
+    await mapReady();
     expect(document.querySelectorAll("[data-lit]")).toHaveLength(0);
-    const button = screen.getByRole("button", { name: thread.name });
+    const button = threadButton(thread.name);
     fireEvent.click(button);
     expect(button).toHaveAttribute("aria-pressed", "true");
     const lit = Array.from(document.querySelectorAll("[data-lit]")).map(el =>
@@ -444,11 +473,11 @@ describe("a stop", () => {
     expect(readExplorerProgress().last).toBe("abraham");
     cleanup();
     renderAt("/study/explorer");
-    await screen.findByRole("heading", { name: "Creation" });
+    await mapReady();
     expect(document.getElementById("stop-abraham")!.textContent).toContain(
       "You are here"
     );
-  });
+  }, 15000); // a stop, then the whole map: heavy by design, as "the map" above
 
   it("a stop still being drawn answers with its summary and no activity", async () => {
     vi.unstubAllGlobals();
@@ -766,20 +795,28 @@ describe("a stop", () => {
       expect(screen.getByText(v.text)).toBeInTheDocument();
   });
 
-  it("Next walks all thirteen stops from Creation to the New Creation, each saying Stop N of 13", async () => {
-    const chain: string[] = [];
-    let slug: string | null = FINISHED[0].slug;
-    while (slug) {
-      chain.push(slug);
+  // The walk, one stop to a test: Next from each stop must name the next
+  // stop on the road, so following Next from Creation walks all thirteen.
+  // Rendering all thirteen pages in one test ran past its budget on a busy
+  // machine.
+  it("Next starts the walk at Creation", () => {
+    expect(FINISHED[0].slug).toBe(ROAD[0]);
+  });
+
+  it.each(ROAD.map((slug, i) => [slug, i] as const))(
+    "Next walks on from %s, which says Stop N of 13",
+    async (slug, i) => {
       renderAt(`/study/explorer/${slug}`);
       const title = INDEX.stops.find(s => s.slug === slug)!.title;
       await screen.findByRole("heading", { level: 1, name: title });
       expect(
-        screen.getByText(new RegExp(`^Stop ${chain.length} of 13\\.`))
+        screen.getByText(new RegExp(`^Stop ${i + 1} of 13\\.`))
       ).toBeInTheDocument();
       const next = screen.queryByRole("link", { name: /^Next stop: / });
-      slug = next ? next.getAttribute("href")!.split("/").pop()! : null;
-      if (!slug) {
+      expect(next?.getAttribute("href")?.split("/").pop() ?? null).toBe(
+        ROAD[i + 1] ?? null
+      );
+      if (!next) {
         // The last stop leads back to the whole map and on to the cards.
         expect(
           screen.getByRole("link", { name: "The whole map" })
@@ -788,12 +825,21 @@ describe("a stop", () => {
           screen.getByRole("link", { name: "Why we believe" })
         ).toHaveAttribute("href", "/study/explorer#ex-believe-title");
       }
-      cleanup();
     }
-    expect(chain).toEqual(ROAD);
-  }, 20000); // thirteen stops rendered in turn: allow for a loaded machine
+  );
 
-  it("shows the older level's care line and question on the newer stops", async () => {
+  // One stop to a test, for the same reason as the walk above.
+  it.each([
+    "fall",
+    "sinai",
+    "land",
+    "kingdom",
+    "exile",
+    "jesus",
+    "return",
+    "church",
+    "new-creation",
+  ])("shows the older level's care line and question on %s", async slug => {
     window.localStorage.setItem(
       EXPLORER_PROGRESS_KEY,
       JSON.stringify({
@@ -804,26 +850,13 @@ describe("a stop", () => {
         last: null,
       })
     );
-    for (const slug of [
-      "fall",
-      "sinai",
-      "land",
-      "kingdom",
-      "exile",
-      "jesus",
-      "return",
-      "church",
-      "new-creation",
-    ]) {
-      const s = stopFile(slug);
-      renderAt(`/study/explorer/${slug}`);
-      await screen.findByRole("heading", { name: "A question people ask" });
-      expect(screen.getByText(s.question!.ask)).toBeInTheDocument();
-      expect(Boolean(document.querySelector(".ex-care a[href='/help']"))).toBe(
-        Boolean(s.care)
-      );
-      cleanup();
-    }
+    const s = stopFile(slug);
+    renderAt(`/study/explorer/${slug}`);
+    await screen.findByRole("heading", { name: "A question people ask" });
+    expect(screen.getByText(s.question!.ask)).toBeInTheDocument();
+    expect(Boolean(document.querySelector(".ex-care a[href='/help']"))).toBe(
+      Boolean(s.care)
+    );
   });
 
   it("says plainly when this browser will not keep the progress", async () => {
@@ -951,14 +984,15 @@ describe("a stop", () => {
   });
 });
 
-describe("the king thread", () => {
+// Renders the whole map; see "the map" above.
+describe("the king thread", { timeout: 15000 }, () => {
   it("lights all thirteen stops, drawn broken where the king is waited for, with its own key", async () => {
     const king = INDEX.threads.find(t => t.id === "king")!;
     expect(king.status).toBe("finished");
     expect(threadStops(king, INDEX.stops).map(x => x.slug)).toEqual(ROAD);
     renderAt("/study/explorer");
-    await screen.findByRole("heading", { name: "Creation" });
-    fireEvent.click(screen.getByRole("button", { name: king.name }));
+    await mapReady();
+    fireEvent.click(threadButton(king.name));
     const lit = Array.from(document.querySelectorAll("[data-lit]"));
     expect(lit.map(el => el.id.replace(/^stop-/, ""))).toEqual(ROAD);
     for (const means of Object.values(king.key!))
@@ -1008,7 +1042,8 @@ describe("the king thread", () => {
   });
 });
 
-describe("the Holy Spirit, promise and lamb threads", () => {
+// Each renders the whole map; see "the map" above.
+describe("the Holy Spirit, promise and lamb threads", { timeout: 15000 }, () => {
   const cases = [
     { id: "spirit", broken: "promised", skip: ["fall"] },
     { id: "promise", broken: "waited", skip: ["creation"] },
@@ -1023,8 +1058,8 @@ describe("the Holy Spirit, promise and lamb threads", () => {
       expect(threadStops(t, INDEX.stops).map(x => x.slug)).toEqual(want);
       expect(t.broken).toEqual([c.broken]);
       renderAt("/study/explorer");
-      await screen.findByRole("heading", { name: "Creation" });
-      fireEvent.click(screen.getByRole("button", { name: t.name }));
+      await mapReady();
+      fireEvent.click(threadButton(t.name));
       const lit = Array.from(document.querySelectorAll("[data-lit]"));
       expect(lit.map(el => el.id.replace(/^stop-/, ""))).toEqual(want);
       for (const means of Object.values(t.key!))

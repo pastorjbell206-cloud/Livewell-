@@ -11,6 +11,12 @@ import { screen, waitFor } from "@testing-library/react";
 import { renderWithProviders } from "@/test/harness";
 import { VIEW_KEY } from "@/lib/bible-desk";
 import StudyBible from "./StudyBible";
+// The chapter page's lazy parts, compiled here rather than inside a test's
+// 5 s, where on a busy machine their first load alone took seconds.
+import "@/pages/study-bible/VerseMarks";
+import "@/pages/study-bible/CrossRefs";
+import "@/components/GoDeeper";
+import "@/pages/study-bible/PlainPassages";
 
 const PUBLIC = path.resolve(__dirname, "../../public");
 
@@ -39,7 +45,8 @@ async function open(address: string, view: "study" | "read") {
 
 const lines = () => Array.from(document.querySelectorAll(".sb-later")).map((n) => n.textContent);
 
-describe("the reader's mark on a later passage", () => {
+// Each renders a whole chapter with its notes: heavy by design, so 15 s rather than 5.
+describe("the reader's mark on a later passage", { timeout: 15000 }, () => {
   for (const view of ["study", "read"] as const) {
     it(`opens and closes Mark 16:9-20 (${view} view)`, async () => {
       await open("/study/bible/mark/16", view);

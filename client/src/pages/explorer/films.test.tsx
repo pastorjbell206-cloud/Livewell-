@@ -261,15 +261,22 @@ describe("the player's contract", () => {
     expect(vi.getTimerCount()).toBe(0);
   });
 
-  it("each film's drawing is its own lazy chunk and draws every frame", async () => {
-    for (const f of READY) {
-      expect(FILM_SCENES[f.slug], f.slug).toBeTypeOf("function");
-      const drawing = (await FILM_SCENES[f.slug]()).default;
+  it("has finished films whose drawings to check", () => {
+    expect(READY.length).toBeGreaterThan(30);
+  });
+
+  // One film to a test: loading every film's chunk in one test compiled and
+  // ran three dozen modules inside one 5 s budget, too few on a busy machine.
+  it.each(READY.map(f => [f.slug, f] as const))(
+    "each film's drawing is its own lazy chunk and draws every frame: %s",
+    async (slug, f) => {
+      expect(FILM_SCENES[slug], slug).toBeTypeOf("function");
+      const drawing = (await FILM_SCENES[slug]()).default;
       const hatch = { h1: "a", h2: "b", h3: "c", hh: "d", hs: "e" };
       for (let k = -1; k < (f.frames ?? 0); k++)
-        expect(drawing.draw(hatch, k), `${f.slug} frame ${k}`).toBeTruthy();
+        expect(drawing.draw(hatch, k), `${slug} frame ${k}`).toBeTruthy();
     }
-  });
+  );
 });
 
 /**
@@ -908,6 +915,8 @@ describe("the pages", () => {
     );
   }
 
+  // Renders the whole Explorer map (3,300 elements, half of them drawings):
+  // heavy by design, so 15 s rather than 5; a busy machine stretched it past 7.
   it("the map's Watch and learn links each finished film and names the rest with no link", async () => {
     renderAt("/study/explorer");
     const sec = await screen.findByRole("region", {
@@ -921,7 +930,7 @@ describe("the pages", () => {
       const el = within(sec).getByText(f.title);
       expect(el.closest("a"), f.slug).toBeNull();
     }
-  });
+  }, 15000);
 
   it("a stop links the films that belong to it", async () => {
     renderAt("/study/explorer/creation");

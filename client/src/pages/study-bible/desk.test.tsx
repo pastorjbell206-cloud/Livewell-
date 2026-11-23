@@ -16,6 +16,12 @@ import { MARKS_KEY, VIEW_KEY, WALK_KEY, readMarks, removeMark, saveMark } from "
 import { STUDY_STEPS } from "@/lib/study-method";
 import StudyBible from "../StudyBible";
 import ChapterWalk from "./ChapterWalk";
+// The chapter page's lazy parts, compiled here rather than inside a test's
+// clock, where on a busy machine their first load alone took seconds.
+import "./VerseMarks";
+import "./CrossRefs";
+import "./PlainPassages";
+import "@/components/GoDeeper";
 
 const PUBLIC = path.resolve(__dirname, "../../../public");
 const json = <T,>(file: string): T => JSON.parse(fs.readFileSync(path.join(PUBLIC, file), "utf8"));
@@ -48,7 +54,12 @@ function walk(slug: string, chapter: number) {
 }
 const next = () => fireEvent.click(screen.getByRole("button", { name: /^Next:/ }));
 const stepName = () => document.querySelector(".wk__title")?.textContent;
+/** Found by role inside one part of the page: a whole chapter has a button on every verse. */
+const views = () => within(screen.getByRole("group", { name: "How to show this chapter" }));
 
+// These render a whole chapter of the Study Bible, its notes and its cross
+// references, and the walk opens all seven steps: heavy by design, so each
+// keeps a 20 s budget rather than the default 5 s.
 describe("Study this chapter", { timeout: 20000 }, () => {
   it("walks John 3 in seven steps, each from the chapter's own files", async () => {
     walk("john", 3);
@@ -138,16 +149,18 @@ describe("Read and Study", { timeout: 20000 }, () => {
   it("opens in Study on a first visit, and remembers Read", async () => {
     window.history.replaceState({}, "", "/study/bible/john/3");
     const first = renderWithProviders(<StudyBible />);
-    expect(await screen.findByRole("button", { name: "Study", pressed: true }, { timeout: 5000 })).toBeTruthy();
+    await screen.findByRole("group", { name: "How to show this chapter" }, { timeout: 5000 });
+    expect(views().getByRole("button", { name: "Study", pressed: true })).toBeTruthy();
     expect(screen.getByText(/shows the words alone/)).toBeTruthy();
     expect(screen.getByRole("button", { name: /Study this chapter/ })).toBeTruthy();
 
-    fireEvent.click(within(screen.getByRole("group", { name: "How to show this chapter" })).getByRole("button", { name: "Read" }));
+    fireEvent.click(views().getByRole("button", { name: "Read" }));
     expect(JSON.parse(localStorage.getItem(VIEW_KEY)!)).toBe("read");
     first.unmount();
 
     renderWithProviders(<StudyBible />);
-    expect(await screen.findByRole("button", { name: "Read", pressed: true }, { timeout: 5000 })).toBeTruthy();
+    await screen.findByRole("group", { name: "How to show this chapter" }, { timeout: 5000 });
+    expect(views().getByRole("button", { name: "Read", pressed: true })).toBeTruthy();
     expect(screen.getByRole("button", { name: "Text size" })).toBeTruthy();
     expect(screen.queryByRole("button", { name: /Study this chapter/ })).toBeNull();
     await waitFor(() => expect(document.querySelector(".sb-text--read #v16")).not.toBeNull(), { timeout: 5000 });
@@ -170,10 +183,12 @@ describe("highlights and notes on a verse", { timeout: 20000 }, () => {
   it("survives a reload in Study, and is removed with one tap", async () => {
     window.history.replaceState({}, "", "/study/bible/john/3#v16");
     const first = renderWithProviders(<StudyBible />);
-    fireEvent.click(await screen.findByRole("button", { name: "Highlight in gold" }, { timeout: 5000 }));
-    fireEvent.click(screen.getByRole("button", { name: "Note" }));
+    const colors = await screen.findByRole("group", { name: "Highlight John 3:16" }, { timeout: 5000 });
+    fireEvent.click(within(colors).getByRole("button", { name: "Highlight in gold" }));
+    const marks = within(colors.closest<HTMLElement>(".sb-marks")!);
+    fireEvent.click(marks.getByRole("button", { name: "Note" }));
     fireEvent.change(screen.getByLabelText("Your note on John 3:16"), { target: { value: "Loved first." } });
-    fireEvent.click(screen.getByRole("button", { name: "Keep" }));
+    fireEvent.click(marks.getByRole("button", { name: "Keep" }));
     first.unmount();
 
     window.history.replaceState({}, "", "/study/bible/john/3");

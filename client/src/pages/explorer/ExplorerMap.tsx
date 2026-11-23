@@ -26,7 +26,7 @@
  *
  * Data: client/public/explorer/index.json (scripts/build-explorer-index.mjs).
  */
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { startTransition, useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { Check, Hourglass, MapPin, PenLine } from "lucide-react";
 
@@ -87,9 +87,14 @@ function useIndex() {
   const [nonce, setNonce] = useState(0);
   useEffect(() => {
     let live = true;
+    // As a transition, so React renders the map in slices the browser can
+    // answer between. Set plainly, render and commit were one task of 200 ms
+    // on a desktop machine, about 800 on the phone Lighthouse simulates.
+    const settle = (data: ExplorerIndex | null) =>
+      live && startTransition(() => setRes({ nonce, data }));
     fetchExplorerIndex()
-      .then(d => live && setRes({ nonce, data: d }))
-      .catch(() => live && setRes({ nonce, data: null }));
+      .then(d => settle(d))
+      .catch(() => settle(null));
     return () => {
       live = false;
     };

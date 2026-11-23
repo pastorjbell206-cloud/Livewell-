@@ -181,7 +181,9 @@ describe("the tools page", () => {
   it("draws its page top at once, then the list below it", async () => {
     renderWithProviders(<ToolsHub />);
     expect(screen.getByRole("heading", { level: 1, name: "Tools and resources" })).toBeInTheDocument();
-    expect(await screen.findByRole("searchbox", { name: "Find a tool" })).toBeInTheDocument();
+    // The list is its own lazy chunk by design and draws every tool; on a busy
+    // machine it came after findBy's default one second, so it gets four.
+    expect(await screen.findByRole("searchbox", { name: "Find a tool" }, { timeout: 4000 })).toBeInTheDocument();
     expectOneName("/tools");
   });
 

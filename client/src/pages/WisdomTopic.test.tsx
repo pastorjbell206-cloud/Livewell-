@@ -23,6 +23,7 @@ import WisdomTopic from "./WisdomTopic";
 const PUBLIC = path.resolve(__dirname, "../../public");
 const topics: { id: string; label: string }[] = JSON.parse(fs.readFileSync(path.join(PUBLIC, "wisdom/topics.json"), "utf8")).topics;
 const deepIds = fs.readdirSync(path.join(PUBLIC, "wisdom/deep")).map((f) => f.replace(/\.json$/, ""));
+const heavyDeepIds = deepIds.filter((x) => SENSITIVE_WISDOM[x]);
 
 function servePublic() {
   return vi.fn(async (input: RequestInfo | URL) => {
@@ -106,16 +107,19 @@ describe("WisdomTopic", () => {
     }
   });
 
-  it("keeps Find Help at the top of every heavy subject written in full, with the care lines", async () => {
-    for (const id of deepIds.filter((x) => SENSITIVE_WISDOM[x])) {
-      const { container, unmount } = renderAt(`/wisdom/${id}`);
-      await waitFor(() => expect(container.querySelector(".wz-verse")).not.toBeNull());
-      const help = container.querySelector('a[href="/help"]');
-      expect(help, id).not.toBeNull();
-      expect(help!.compareDocumentPosition(container.querySelector(".wz-verse")!) & Node.DOCUMENT_POSITION_FOLLOWING, id).toBeTruthy();
-      expect(container.querySelector(".wz-care")?.textContent, id).toMatch(/Find Help page on this site lists places to turn/);
-      unmount();
-    }
+  it("has heavy subjects written in full to check", () => {
+    expect(heavyDeepIds.length).toBeGreaterThanOrEqual(20);
+  });
+
+  // One page to a test: all of them in one test rendered two dozen whole
+  // pages, and on a busy machine that alone ran past the 5 s budget.
+  it.each(heavyDeepIds)("keeps Find Help at the top of %s, a heavy subject written in full, with the care lines", async (id) => {
+    const { container } = renderAt(`/wisdom/${id}`);
+    await waitFor(() => expect(container.querySelector(".wz-verse")).not.toBeNull());
+    const help = container.querySelector('a[href="/help"]');
+    expect(help, id).not.toBeNull();
+    expect(help!.compareDocumentPosition(container.querySelector(".wz-verse")!) & Node.DOCUMENT_POSITION_FOLLOWING, id).toBeTruthy();
+    expect(container.querySelector(".wz-care")?.textContent, id).toMatch(/Find Help page on this site lists places to turn/);
   });
 
   it("still renders a topic not yet written in full, without the new sections", async () => {

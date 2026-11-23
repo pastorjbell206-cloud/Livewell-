@@ -21,6 +21,13 @@
  * each opening its subjects written in full, for words the finder does not
  * meet.
  *
+ * The word vectors (lib/wisdom-vectors.ts, 3.4 MB) are fetched only once the
+ * reader starts to use the finder: a question in the address, the box focused
+ * or typed in, one of the sentences to try, or picking up an earlier
+ * question. A question asked before they arrive waits for them, up to
+ * VECTOR_WAIT_MS, so its results never change under the reader; past that, or
+ * if they cannot be had, it is matched on its words alone.
+ *
  * Built on the tool shell (components/tool-shell): ToolHead, QuestionCard
  * (the areas), useToolProgress, ResultActions.
  */
@@ -31,7 +38,8 @@ import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
 import { ToolHead, QuestionCard, ResultActions, useToolProgress, SAVE_FAILED } from "@/components/tool-shell";
-import { prepare, findTopics, findInArea, type FinderTopic } from "@/lib/wisdom-match";
+import { prepare, prepareVectors, findTopics, findInArea, type FinderTopic, type TopicVectors } from "@/lib/wisdom-match";
+import { fetchVectors } from "@/lib/wisdom-vectors";
 import { fetchFinder, readSavedTopics, verseForToday, type FinderFile } from "@/lib/wisdom";
 import { toolById } from "@/lib/toolsList";
 import "../wisdom/wisdom.css";
@@ -44,6 +52,9 @@ const isPlace = (x: unknown): x is Place => {
   const p = x as Place;
   return !!p && typeof p === "object" && typeof p.q === "string" && (p.area === null || typeof p.area === "string");
 };
+
+/** How long a question waits for the word vectors before it is matched on its words alone. */
+const VECTOR_WAIT_MS = 4000;
 
 /** Plain sentences a reader can try, the way people actually say these things. */
 const TRY = ["My son walked away from the faith", "I can't stop worrying", "We can't pay our bills", "I don't know if I believe anymore", "My husband and I fight all the time", "Why is this happening to me?"];
@@ -87,6 +98,13 @@ export default function WisdomFinder() {
   const inputRef = useRef<HTMLInputElement>(null);
   const resultsRef = useRef<HTMLHeadingElement>(null);
   const [saved] = useState<string[]>(() => readSavedTopics());
+  // The word vectors: not wanted until the reader uses the finder (a question
+  // in the address counts as use).
+  const [vec, setVec] = useState<{ state: "idle" | "loading" | "ready" | "off"; tv: TopicVectors | null }>(() => ({
+    state: urlQ ? "loading" : "idle",
+    tv: null,
+  }));
+  const wantVectors = () => setVec((v) => (v.state === "idle" ? { state: "loading", tv: null } : v));
 
   useEffect(() => {
     let stale = false;
@@ -109,7 +127,28 @@ export default function WisdomFinder() {
   }, []);
 
   const prep = useMemo(() => (data ? prepare(data) : null), [data]);
-  const result = useMemo(() => (prep && asked.trim() ? findTopics(prep, asked) : null), [prep, asked]);
+
+  useEffect(() => {
+    if (vec.state !== "loading" || !prep) return;
+    let stale = false;
+    fetchVectors().then((v) => {
+      if (!stale) setVec(v ? { state: "ready", tv: prepareVectors(prep, v) } : { state: "off", tv: null });
+    });
+    return () => {
+      stale = true;
+    };
+  }, [vec.state, prep]);
+
+  // A question asked while the vectors are on their way waits for them, up to
+  // VECTOR_WAIT_MS; then words alone, and vectors arriving later are not used
+  // on this visit, so the results shown never change under the reader.
+  const waiting = !!asked.trim() && vec.state === "loading";
+  useEffect(() => {
+    if (!waiting) return;
+    const timer = setTimeout(() => setVec((v) => (v.state === "loading" ? { state: "off", tv: null } : v)), VECTOR_WAIT_MS);
+    return () => clearTimeout(timer);
+  }, [waiting]);
+  const result = useMemo(() => (prep && asked.trim() && !waiting ? findTopics(prep, asked, 6, vec.tv) : null), [prep, asked, waiting, vec.tv]);
   const byId = useMemo(() => new Map((data?.topics ?? []).map((t) => [t.id, t])), [data]);
   const today = useMemo(() => (data ? verseForToday(data.daily) : null), [data]);
   const area = data?.areas.find((a) => a.id === place.value.area) ?? null;
@@ -139,6 +178,7 @@ export default function WisdomFinder() {
   const savedTopics = saved.map((id) => byId.get(id)).filter((t): t is FinderTopic => !!t);
 
   const ask = (q: string) => {
+    wantVectors();
     setDraft(q);
     setAsked(q);
     place.set((p) => ({ ...p, q }));
@@ -150,7 +190,7 @@ export default function WisdomFinder() {
 
   const choices = useMemo(() => (data && result?.unsure ? result.areas.map((id) => data.areas.find((a) => a.id === id)).filter((a): a is NonNullable<typeof a> => !!a) : []), [data, result]);
   const picked = chosen && chosen.q === asked ? (choices.find((a) => a.id === chosen.area) ?? null) : null;
-  const narrowed = useMemo(() => (prep && picked ? findInArea(prep, asked, picked.id) : null), [prep, picked, asked]);
+  const narrowed = useMemo(() => (prep && picked ? findInArea(prep, asked, picked.id, 6, vec.tv) : null), [prep, picked, asked, vec.tv]);
   const confident = narrowed ? narrowed.length > 0 : (result?.confident ?? false);
   const matches = narrowed ?? result?.matches ?? [];
   const best = confident ? matches[0] : null;
@@ -205,7 +245,11 @@ export default function WisdomFinder() {
                 autoComplete="off"
                 aria-describedby="wf-q-help"
                 value={draft}
-                onChange={(e) => setDraft(e.target.value)}
+                onFocus={wantVectors}
+                onChange={(e) => {
+                  wantVectors();
+                  setDraft(e.target.value);
+                }}
                 placeholder="My daughter won't speak to me"
               />
               <button type="submit" className="btn btn--on-dark">
@@ -323,7 +367,9 @@ export default function WisdomFinder() {
                   ? ""
                   : !data
                     ? "Opening the library…"
-                    : (result?.confident ?? false)
+                    : waiting
+                      ? "Finding the subjects that fit…"
+                      : (result?.confident ?? false)
                       ? `${result?.matches.length} ${result?.matches.length === 1 ? "subject fits" : "subjects fit"} what you wrote, closest first.`
                       : "Nothing in the library fits that well."}
               </p>

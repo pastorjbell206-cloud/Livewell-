@@ -45,9 +45,18 @@
  * own page (finder.json "weights", BM25 built by build-wisdom-index.mjs), at
  * PAGE_WEIGHT, so words a page already uses can find it.
  *
+ * And, once the word vectors have arrived (lib/wisdom-vectors.ts, GloVe), the
+ * sentence is compared with each topic's own name and phrasings as a whole:
+ * the nearest of them adds up to VECTOR_WEIGHT, from VECTOR_FLOOR up. So a
+ * sentence in words the data never uses ("furious at my mother in law") can
+ * still come near a phrasing that says the same thing. The vectors never move
+ * a safety result: the help topic of a safety word still stands first.
+ *
  * client/src/lib/wisdom-match.test.ts holds the hit rate on a fixture of plain
  * sentences (wisdom-match.fixture.json).
  */
+
+import { sentenceVector, unit, type WordVectors } from "@/lib/wisdom-vectors";
 
 export interface FinderTopic {
   id: string;
@@ -440,6 +449,60 @@ export function scoreTopic(p: PreparedTopic, q: Set<string>): number {
   return score;
 }
 
+/** The most a topic's nearest phrasing can add. Chosen on the tuning sets and dev9 (wisdom-match.test.ts); never on holdout8 or holdout9. */
+export const VECTOR_WEIGHT = 8;
+/** Nearness (cosine, after the shared part is taken out) under which a phrasing adds nothing. */
+export const VECTOR_FLOOR = 0.4;
+
+/** Words the vectors skip besides the stop words: contractions whose GloVe vectors are noise. */
+const VECTOR_SKIP = new Set("dont cant wont didnt doesnt isnt wasnt arent havent hasnt couldnt wouldnt shouldnt hes shes theyre youre thats whats theres".split(" "));
+const vectorWords = (text: string) =>
+  normalize(text)
+    .split(" ")
+    .filter((w) => w && !STOP.has(w) && !VECTOR_SKIP.has(w));
+
+export interface TopicVectors {
+  vectors: WordVectors;
+  /** Each topic's name and phrasings as vectors: t is the topic's place in prep.topics. */
+  units: { t: number; v: Float32Array }[];
+  /** What all of them share, taken out of each so the differences count. */
+  mean: Float32Array;
+}
+
+/** The topics' names and phrasings as vectors, made once per index. */
+export function prepareVectors(prep: Prepared, vectors: WordVectors): TopicVectors {
+  const units: TopicVectors["units"] = [];
+  prep.topics.forEach((p, t) => {
+    for (const text of [p.t.label, ...p.t.phrases]) {
+      const v = sentenceVector(vectors, vectorWords(text));
+      if (v) units.push({ t, v });
+    }
+  });
+  const mean = new Float32Array(vectors.dims);
+  for (const u of units) for (let d = 0; d < mean.length; d++) mean[d] += u.v[d] / units.length;
+  for (const u of units) center(u.v, mean);
+  return { vectors, units, mean };
+}
+
+function center(v: Float32Array, mean: Float32Array): Float32Array {
+  for (let d = 0; d < v.length; d++) v[d] -= mean[d];
+  return unit(v);
+}
+
+/** What the vectors add to each topic for a sentence (by place in prep.topics); null when no word of it is known. */
+export function vectorBonus(tv: TopicVectors, sentence: string, count: number): Float32Array | null {
+  const q = sentenceVector(tv.vectors, vectorWords(sentence));
+  if (!q) return null;
+  center(q, tv.mean);
+  const near = new Float32Array(count).fill(-1);
+  for (const u of tv.units) {
+    let c = 0;
+    for (let d = 0; d < q.length; d++) c += q[d] * u.v[d];
+    if (c > near[u.t]) near[u.t] = c;
+  }
+  return near.map((c) => (VECTOR_WEIGHT * Math.max(0, c - VECTOR_FLOOR)) / (1 - VECTOR_FLOOR));
+}
+
 export interface Found {
   matches: Match[];
   confident: boolean;
@@ -461,12 +524,17 @@ export const UNSURE_SCORE = 12;
 /** At most this many areas are offered. */
 export const MAX_CHOICES = 6;
 
-/** Topics for a sentence, best first. `confident` is false when the best is under MIN_SCORE. */
-export function findTopics(prep: Prepared, sentence: string, limit = 6): Found {
+/**
+ * Topics for a sentence, best first. `confident` is false when the best is
+ * under MIN_SCORE. With `tv` (the word vectors, once they have arrived) each
+ * topic's nearness to the sentence is added to its score.
+ */
+export function findTopics(prep: Prepared, sentence: string, limit = 6, tv?: TopicVectors | null): Found {
   const q = queryWords(prep.index, sentence);
   if (!q.size) return { matches: [], confident: false, close: [], unsure: false, areas: [] };
+  const nearness = tv ? vectorBonus(tv, sentence, prep.topics.length) : null;
   const scored: Match[] = prep.topics
-    .map((p) => ({ topic: p.t, score: scoreTopic(p, q) }))
+    .map((p, i) => ({ topic: p.t, score: scoreTopic(p, q) + (nearness?.[i] ?? 0) }))
     .filter((m) => m.score >= 2)
     .sort((a, b) => b.score - a.score || a.topic.label.localeCompare(b.topic.label));
   // Safety first: the help topic of a safety word leads, whatever else scored.
@@ -516,16 +584,17 @@ export function findTopics(prep: Prepared, sentence: string, limit = 6): Found {
  * the area the words met, then (when fewer than three met) the area's other
  * topics by name, so a chosen area is never empty.
  */
-export function findInArea(prep: Prepared, sentence: string, area: string, limit = 6): Match[] {
+export function findInArea(prep: Prepared, sentence: string, area: string, limit = 6, tv?: TopicVectors | null): Match[] {
   const q = queryWords(prep.index, sentence);
-  const inArea = prep.topics.filter((p) => p.t.area === area);
+  const nearness = tv && q.size ? vectorBonus(tv, sentence, prep.topics.length) : null;
+  const inArea = prep.topics.map((p, i) => ({ p, i })).filter(({ p }) => p.t.area === area);
   const met: Match[] = inArea
-    .map((p) => ({ topic: p.t, score: q.size ? scoreTopic(p, q) : 0 }))
+    .map(({ p, i }) => ({ topic: p.t, score: q.size ? scoreTopic(p, q) + (nearness?.[i] ?? 0) : 0 }))
     .filter((m) => m.score >= 2)
     .sort((a, b) => b.score - a.score || a.topic.label.localeCompare(b.topic.label));
   if (met.length < 3) {
     const have = new Set(met.map((m) => m.topic.id));
-    for (const p of inArea.slice().sort((a, b) => a.t.label.localeCompare(b.t.label))) {
+    for (const { p } of inArea.slice().sort((a, b) => a.p.t.label.localeCompare(b.p.t.label))) {
       if (met.length >= 3) break;
       if (!have.has(p.t.id)) met.push({ topic: p.t, score: 0, related: true });
     }
