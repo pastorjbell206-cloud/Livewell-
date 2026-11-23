@@ -16259,3 +16259,21 @@ Cut in chapter 12: the resolution of the tension in Christ and Hebrews 7:25 (the
 | Judges 5:8 | 16-23 | BSB | BSB text |
 
 Cut in chapter 13: the contrast between Saul's grasping and Jesus' refusal of shortcuts (the deep note calls it thematic; Acts 13:22 is kept as Paul's own line); the place of the first pim weight's discovery (kept on the context page).
+
+## The plain notes on 1 Samuel 14 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Israel cornered after chapter 13; two ways of leading; the Michmash pass, Bozez and Seneh, the Wadi Suweinit; Ahijah a great-grandson of Eli; Jonathan's words at the heart, bold and humble (perhaps, a sign); yasha and the names Joshua and Jesus as a fact about the word | 1-15 | 1-samuel/14.json `story`, `historical`, `literary`, `words` (yasha), `doctrines` (faith) | Repository; the root of the names stated as a word fact, not as a line to Christ |
+| Judges 7:2; 2 Chronicles 14:11 | 1-15 | BSB | BSB text |
+| The ark in verse 18 and the Greek ephod, many taking the ephod; Urim and Thummim, form unknown (Exodus 28:30); the consultation broken off; the Hebrews of verse 21 under Philistine control; oaths and curses binding; akar and Achan (Joshua 7:25-26), the real troubler | 16-30 | 1-samuel/14.json `historical`, `cultural`, `literary`, `words` (akar) | Repository |
+| Joshua 7:25 | 16-30 | 1-samuel/14.json `literary`; BSB | Repository; BSB text |
+| Blood forbidden (Leviticus 17:10-14; Deuteronomy 12:23-24); the leader's rule pushing the people into sin; the stone; Saul's first altar as a quiet comment; the lot like Achan's; verse 41 and the fuller Greek text in the BSB; padah as ransom, how not said; the letter of the oath against the heart of the law | 31-46 | 1-samuel/14.json `cultural`, `literary`, `historical`, `words` (padah), `doctrines` (law) | Repository |
+| Leviticus 17:11; Deuteronomy 12:23 | 31-46 | 1-samuel/14.json `cultural`; BSB | Repository; BSB text |
+| Did God point to Jonathan: the lot as fact without approving the oath; God's silence first and a judgment on Saul's conduct; the narrator with Jonathan and the people | 31-46 `hard` | 1-samuel/14.json `hard` | Repository; both readings in their holders' terms |
+| The archival summary closing a king's account; real credit for Saul's wars; Michal and Abner named; the Philistine war all his days and the brave men enlisted | 47-52 | 1-samuel/14.json `literary`, `story` | Repository |
+| 1 Chronicles 8:33; 2 Samuel 2:8 | 47-52 | BSB | BSB text |
+
+Cut in chapter 14: Mark 7:8-13 and the gospel's Son who is not spared set against Jonathan (the deep note calls the echo thematic, not a line the New Testament draws to this chapter); verses 45 and 47 quoted only in part or paraphrased because they carry a dash.
