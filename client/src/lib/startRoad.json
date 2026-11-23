@@ -124,6 +124,10 @@
       "title": "If you've stepped back from faith",
       "note": "Your questions, taken seriously",
       "plate": "arch",
+      "track": {
+        "slug": "stepped-back",
+        "sessions": 12
+      },
       "steps": [
         {
           "title": "If a church hurt you",
@@ -169,6 +173,10 @@
       "title": "If you want to go deeper",
       "note": "Study, history, doctrine",
       "plate": "books",
+      "track": {
+        "slug": "deeper",
+        "sessions": 12
+      },
       "steps": [
         {
           "title": "Read a whole book",
@@ -214,6 +222,10 @@
       "title": "If you're leading a family",
       "note": "Start at the table tonight",
       "plate": "table",
+      "track": {
+        "slug": "family",
+        "sessions": 12
+      },
       "steps": [
         {
           "title": "Tonight's devotion",

@@ -70,7 +70,7 @@ export default function Tracks() {
     <Layout>
       <SEOMeta
         title="Tracks: Short Sessions in Order, Step by Step"
-        description="Short sessions in order: for someone new to faith, for the skeptic, and through the Gospel of Mark a chapter at a time. Each uses a page on LiveWell and ends with one question, one thing to do and one verse."
+        description="Short sessions in order, each with a leader's guide: new to faith, the skeptic, stepping back, going deeper, a family, and Mark a chapter at a time."
         url="https://www.livewellbyjamesbell.co/tracks"
       />
       <div className="tk-page">
@@ -139,7 +139,7 @@ export default function Tracks() {
               With a group
             </p>
             <p className="tk-p">
-              Every session ends with a guide for a group: a question to open with, three to talk over, and something to pray about. It prints on one sheet. A track with a leader's guide offers it
+              Every session ends with a guide for a group: a question to open with, three to talk over, and something to pray about. It prints on one sheet. Every track has a leader's guide, offered
               on its card, and every track prints whole, a session to a sheet.
             </p>
             <p className="lw-newline">

@@ -2191,6 +2191,8 @@ aside .sb-tabs{margin-left:calc(var(--s-4) * -1);margin-right:calc(var(--s-4) * 
 .lw-prose-band__body p{margin:0 0 1em;font-family:var(--font-reading);font-size:var(--fs-read);line-height:1.6;color:var(--ink)}
 .lw-prose-band__body p:last-child{margin-bottom:0}
 .home-sec--dark .lw-prose-band__body p{color:var(--charcoal-fg)}
+.lw-prose-band__body a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px}
+.home-sec--dark .lw-prose-band__body a{color:var(--charcoal-fg)}
 
 .lw-find{max-width:620px}
 .lw-find__label{display:block;margin-bottom:8px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink)}

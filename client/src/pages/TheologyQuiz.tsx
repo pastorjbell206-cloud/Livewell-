@@ -8,6 +8,18 @@ import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { SITE_URL } from "@/lib/site";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { filterPublicPosts } from "@/lib/shelf";
+
+/** An essay the quiz recommends, as the server returns it. */
+type RecommendedArticle = {
+  slug: string;
+  title: string;
+  excerpt?: string | null;
+  pillar?: string | null;
+  readTime?: string | number | null;
+  createdAt?: unknown;
+  publishedAt?: unknown;
+};
 
 /* Session mirror (roadmap HS-5). One-sitting entry flow: answers, step, and
  * the results flag survive an accidental refresh via sessionStorage, and
@@ -119,6 +131,15 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
   const recommendationsQuery = trpc.quiz.getRecommendations.useQuery(
     { answers },
     { enabled: showResults && answers.length > 0 }
+  );
+  // The server picks from the whole archive; only essays on the live shelf are
+  // offered, so a recommendation never lands on a retired essay's notice.
+  const recommendedArticles = useMemo(
+    () =>
+      filterPublicPosts(
+        (recommendationsQuery.data?.recommendedArticles ?? []) as RecommendedArticle[],
+      ),
+    [recommendationsQuery.data],
   );
 
   // Mirror the state on every change, with the question ids the answers were
@@ -304,11 +325,11 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                   </div>
 
                   {/* Recommended Articles */}
-                  {recommendationsQuery.data.recommendedArticles?.length > 0 && (
+                  {recommendedArticles.length > 0 && (
                     <div style={{ marginBottom: "40px" }}>
                       <h3 style={{ fontSize: "22px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "24px" }}>Recommended Reading For You</h3>
                       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "20px" }}>
-                        {recommendationsQuery.data.recommendedArticles.slice(0, 4).map((article: any) => (
+                        {recommendedArticles.slice(0, 4).map((article) => (
                           <Link key={article.slug} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
                             <div style={{ background: "var(--card)", borderRadius: "8px", border: "1px solid var(--bone-muted)", padding: "24px", cursor: "pointer", height: "100%" }}>
                               <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>{article.pillar}</div>
