@@ -16,8 +16,9 @@ import { QUESTION_GROUPS, ROWS_HELD_ELSEWHERE } from "@/data/questionGroups";
 import { AGE_ID_BY_NAME, ageOfPerson, peopleOfAge } from "@/lib/historyAges";
 import { answerCandidates, ask, toAnswerPage, type AskCandidate } from "@/lib/askQuestion";
 import { rowTarget } from "@/lib/topics";
-import { ASK_MORE } from "@/components/questions/AskBox";
+import AskBox, { ASK_MORE } from "@/components/questions/AskBox";
 import { entryHref, type Era, type Figure } from "@/lib/historyCourse";
+import { entryById } from "@/lib/siteCatalog";
 import TheologyHistory from "./TheologyHistory";
 import HistoryEssay from "./history/HistoryEssay";
 import HistoryPeople from "./history/HistoryPeople";
@@ -109,6 +110,18 @@ describe("the question groups", () => {
     expect(first("Why do Christians disagree about baptism?")).toBe("/theology/compare");
     // When the words call for help, the Find Help page of the same name keeps its place.
     expect(first("Why does God allow suffering?", true)).toBe("/help/suffering");
+  });
+
+  it("keeps no empty band under the box until a question is typed", () => {
+    // The walk of 2026-11-23, finding 4: 220px of nothing under the box on a phone.
+    const { container } = renderWithProviders(<AskBox />);
+    const result = container.querySelector(".qa-result")!;
+    expect(result.childNodes).toHaveLength(0);
+    const css = fs.readFileSync(path.resolve(__dirname, "../index.css"), "utf8");
+    expect(css).toContain(".qa-result:empty{min-height:0}");
+    fireEvent.change(screen.getByRole("searchbox", { name: "Ask a hard question" }), { target: { value: "Does God exist?" } });
+    expect(result.childNodes.length).toBeGreaterThan(0);
+    expect(within(result as HTMLElement).getByText("The closest answer")).toBeInTheDocument();
   });
 });
 
@@ -216,6 +229,15 @@ describe("/answers and /answers/:slug", () => {
     expect(screen.getByRole("link", { name: /All the questions/ }).getAttribute("href")).toBe("/answers");
   });
 
+  it("tells the reader who disagrees where to say so, before previous and next", () => {
+    renderAt("/answers/does-god-actually-exist");
+    const back = screen.getByTestId("push-back");
+    expect(back).toHaveTextContent("Think this answer gets something wrong? Write to James and say where.");
+    expect(within(back).getByRole("link", { name: "Write to James" }).getAttribute("href")).toBe("/contact");
+    const turn = screen.getByRole("navigation", { name: "Previous and next question" });
+    expect(back.compareDocumentPosition(turn) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
+
   it("lays out an argued answer: its parts, the numbered steps and the sources; a plain answer has none of them", () => {
     const a = ANSWERS.find((x) => x.slug === "does-god-actually-exist")!;
     renderAt(`/answers/${a.slug}`);
@@ -278,5 +300,14 @@ describe("/skeptics", () => {
     expect(screen.getByRole("link", { name: /Did the resurrection happen\?/ }).getAttribute("href")).toBe("/tools/test-the-case?case=resurrection");
     expect(screen.getByRole("link", { name: "Does God actually exist?" }).getAttribute("href")).toBe("/answers/does-god-actually-exist");
     expect(screen.getByRole("link", { name: /Eight Weeks for the Curious Skeptic/ }).getAttribute("href")).toBe("/plans/skeptic");
+  });
+
+  it("reaches the case for the faith, under the name and line every menu gives it", () => {
+    renderAt("/skeptics");
+    const room = entryById("questions.case")!;
+    const further = screen.getByRole("region", { name: "Take longer." });
+    const tile = within(further).getByRole("link", { name: new RegExp(`^${room.name}`) });
+    expect(tile.getAttribute("href")).toBe("/questions");
+    expect(tile.textContent).toContain(room.line);
   });
 });

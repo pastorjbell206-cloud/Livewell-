@@ -68,6 +68,8 @@ export function holdPrerenderedPage(options: PrerenderHoldOptions = {}): boolean
   let done = false;
   let timer: ReturnType<typeof setTimeout> | null = null;
   let awaitingFonts = false;
+  let awaitingPictures = false;
+  let picturesDrawn = false;
   const observer = new Observer(() => {
     if (pageIsReady(root)) releaseWhenFontsAreIn();
   });
@@ -79,16 +81,48 @@ export function holdPrerenderedPage(options: PrerenderHoldOptions = {}): boolean
   // ask for the faces it uses, and the swap waits for them (or for
   // `maxWaitMs`, whichever comes first).
   function releaseWhenFontsAreIn() {
-    if (done || awaitingFonts) return;
+    if (done || awaitingFonts || awaitingPictures) return;
     const fonts = doc.fonts;
     void root!.offsetHeight;
-    if (!fonts || fonts.status !== "loading") return release();
-    awaitingFonts = true;
-    const again = () => {
-      awaitingFonts = false;
-      if (pageIsReady(root!)) releaseWhenFontsAreIn();
-    };
-    fonts.ready.then(again, again);
+    if (fonts && fonts.status === "loading") {
+      awaitingFonts = true;
+      const again = () => {
+        awaitingFonts = false;
+        if (pageIsReady(root!)) releaseWhenFontsAreIn();
+      };
+      fonts.ready.then(again, again);
+      return;
+    }
+    // A picture the held page shows (the first shelf of covers on /downloads)
+    // is let arrive and be drawn before the swap. Taken away half-loaded, the
+    // real page's copy of it would become the page's largest paint, counted
+    // from when the app started instead of from the HTML.
+    const pictures = Array.from(shell!.querySelectorAll("img")).filter((img) => img.loading !== "lazy");
+    if (pictures.length && !picturesDrawn) {
+      awaitingPictures = true;
+      // Loaded and decoded, ready to be drawn (decode() waits for both).
+      const arrived = (img: HTMLImageElement) =>
+        typeof img.decode === "function"
+          ? img.decode().catch(() => undefined)
+          : img.complete
+            ? Promise.resolve()
+            : new Promise((resolve) => {
+                img.addEventListener("load", resolve, { once: true });
+                img.addEventListener("error", resolve, { once: true });
+              });
+      const view = doc.defaultView;
+      // Then two frames, so it has been painted.
+      const painted = () =>
+        new Promise<void>((resolve) => (view?.requestAnimationFrame ? view.requestAnimationFrame(() => view.requestAnimationFrame(() => resolve())) : setTimeout(resolve, 0)));
+      const again = () => {
+        awaitingPictures = false;
+        picturesDrawn = true;
+        if (pageIsReady(root!)) releaseWhenFontsAreIn();
+      };
+      Promise.all(pictures.map(arrived)).then(painted).then(again, again);
+      return;
+    }
+    release();
   }
   function release() {
     if (done) return;

@@ -1,5 +1,24 @@
 {
-  "$comment": "The five roads on /start (client/src/pages/Start.tsx), one for each person the site is for, and the row of chips on Home that opens them (/start#<id>). Each road is four to six steps in order, one sentence and one link each, and every link is a page that exists and is public today. A step names the page and why it comes next; it promises nothing and teaches nothing. The 'new' road is the six steps /start has carried since 2026-11, unchanged. A road's 'track' names the track that road has become (client/public/tracks/, held to the tracks index by start.test.tsx and tracks.test.ts), which /start offers as the road's main action with the road's steps kept under it. 'next' and 'quiz' follow the 'new' road. scripts/prerender-heads.mjs reads this file for the page's crawlable list and for Home's static chips, and start.test.tsx checks every link and count against the site's own data.",
+  "$comment": "The five roads on /start (client/src/pages/Start.tsx), one for each person the site is for, and the row of chips on Home that opens them (/start#<id>). Each road is four to six steps in order, one sentence and one link each, and every link is a page that exists and is public today. A step names the page and why it comes next; it promises nothing and teaches nothing. The 'new' road is the six steps /start has carried since 2026-11, unchanged. A road's 'track' names the track that road has become (client/public/tracks/, held to the tracks index by start.test.tsx and tracks.test.ts), which /start offers as the road's main action with the road's steps kept under it. 'next' and 'quiz' follow the 'new' road. 'pages' are the two readers no road fits, found by the walk of 2026-11-23 (docs/work/elite/walk-2026-11.md): the Christian with doubts and the pastor or group leader. Each is one card on /start and one chip on Home that opens the one page to begin with, by that page's own title ('link'), not a road, so neither is a track to be written. 'order' is the order of the cards and the chips, roads and pages together. scripts/prerender-heads.mjs reads this file for the page's crawlable list and for Home's static chips, and start.test.tsx checks every link and count against the site's own data.",
+  "order": ["skeptical", "doubts", "new", "stepped-back", "deeper", "family", "leading"],
+  "pages": [
+    {
+      "id": "doubts",
+      "chip": "I have doubts",
+      "note": "Nothing to settle tonight",
+      "plate": "tomb",
+      "link": "I'm not sure I believe anymore",
+      "href": "/help/doubt"
+    },
+    {
+      "id": "leading",
+      "chip": "I'm a pastor or group leader",
+      "note": "Studies with a leader's guide",
+      "plate": "lectern",
+      "link": "Small group study guides",
+      "href": "/studyguides"
+    }
+  ],
   "roads": [
     {
       "id": "skeptical",

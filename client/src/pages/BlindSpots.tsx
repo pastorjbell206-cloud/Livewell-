@@ -1,14 +1,15 @@
 /**
  * Blind Spots (published earlier as The Monster in the Mirror): the book's own page, with its free download (James,
  * 2026-11-18: every ebook is free). The PDF and EPUB are static files under
- * /ebook/the-monster-in-the-mirror/ (the file keeps its address), listed in data/ebooks.ts. The old Stripe link and its
+ * /ebook/the-monster-in-the-mirror/ (the folder keeps its name; the files were rebuilt under the new title on
+ * 2026-11-23 and their old names redirect), listed in data/ebooks.ts. The old Stripe link and its
  * /thank-you page are gone; the thank-you address redirects to /downloads.
  */
 import Layout from "@/components/Layout";
 import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
-import { FreeEbookButtons, formerlyLine } from "@/components/FreeEbookButtons";
+import { FreeEbookButtons, earlierLine } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
 import { OfferLine, OfferMeta, useEbookLabel } from "@/components/BookOffer";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
@@ -16,6 +17,7 @@ import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
 const COVER = "/covers/the-monster-in-the-mirror-800.webp";
 const SHARE = "/covers/the-monster-in-the-mirror.jpg";
 const EBOOK = freeEbook("blind-spots")!;
+const EARLIER = earlierLine(EBOOK);
 
 export default function BlindSpots() {
   const ebookLabel = useEbookLabel();
@@ -45,8 +47,8 @@ export default function BlindSpots() {
             <p style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(245,240,230,.7)", margin: "0 0 12px" }}>
               James Bell
             </p>
-            {EBOOK.formerly && (
-              <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--charcoal-fg-muted)", margin: "0 0 28px" }}>{formerlyLine(EBOOK.formerly)}</p>
+            {EARLIER && (
+              <p style={{ fontFamily: "var(--B)", fontSize: "14px", color: "var(--charcoal-fg-muted)", margin: "0 0 28px" }}>{EARLIER}</p>
             )}
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
               <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />

@@ -328,6 +328,14 @@ img{display:block;max-width:100%}
 .prerender-content .pre-eyebrow{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin-bottom:var(--s-2)}
 .prerender-content .pre-subtitle{font-size:1.125rem;line-height:1.55;color:var(--ink-muted)}
 .prerender-content .pre-byline{font-family:var(--U);font-size:.8125rem;color:var(--ink-muted);padding-bottom:var(--s-3);border-bottom:1px solid var(--border);margin-bottom:var(--s-4)}
+/* The first shelf of /downloads in the prerendered page (scripts/prerender-heads.mjs):
+   each cover keeps its 2 by 3 box at the width the real shelf gives it. */
+.prerender-content .pre-shelf{list-style:none;padding:0;margin:0 0 var(--s-5);display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:var(--s-4)}
+.prerender-content .pre-shelf li{margin:0}
+.prerender-content .pre-cover{display:block;width:100%;max-width:230px;height:auto;aspect-ratio:2 / 3;margin:0 0 var(--s-2)}
+.prerender-content .pre-shelf h4{margin:0 0 4px}
+.prerender-content .pre-book-sub{margin:0 0 6px;font-family:var(--F);font-style:italic;font-size:17px;line-height:1.3}
+.prerender-content .pre-book-meta{margin:0 0 4px;font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted)}
 /* While the prerendered text is held on screen the app renders underneath it,
    laid out but not painted, so nothing the reader can see moves until the
    swap. */
@@ -1666,6 +1674,8 @@ html{-webkit-tap-highlight-color:transparent}
 .qa-ask .hq-find{max-width:640px}
 .qa-try{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:var(--s-2) 0 0;padding:0}
 .qa-result{min-height:300px}
+/* Its room is kept only once a question is typed: before that it was an empty band under the box (walk 2026-11, finding 4). */
+.qa-result:empty{min-height:0}
 .qa-best{margin-top:var(--s-4);padding-top:var(--s-3);border-top:1.5px solid var(--charcoal-fg);max-width:760px}
 .qa-best__label{font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mustard);margin:0 0 10px}
 .qa-best__label--next{margin-top:var(--s-4)}
@@ -1756,12 +1766,13 @@ html{-webkit-tap-highlight-color:transparent}
 @media (max-width:900px){.hx-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .hp-sec,.qa-index,.qa-page{padding-top:var(--s-4)}
 
-/* START WHERE YOU ARE (pages/Start.tsx): the five roads as picture cards, the
+/* START WHERE YOU ARE (pages/Start.tsx): the five roads and the two readers'
+   pages (lib/startRoads WAYS_IN) as seven picture cards, four to a row, the
    open road's steps with a tick each, and "Pick up where you left off". Then
-   Home's quiet row of the same five, under Find and tonight's line; those
+   Home's quiet row of the same seven, under Find and tonight's line; those
    chips are in the static hero too (scripts/prerender-heads.mjs). Tokens only. */
 .st-choose{background:var(--bone);padding:var(--s-2) var(--gutter) var(--s-5)}
-.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--s-3)}
+.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-3)}
 .st-cards>li{display:flex}
 .st-card{flex:1;display:flex;flex-direction:column;min-width:0;color:var(--ink);text-decoration:none}
 .st-card .lw-frame{transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
