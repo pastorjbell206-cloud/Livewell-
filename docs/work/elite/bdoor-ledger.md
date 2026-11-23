@@ -16546,3 +16546,20 @@ Cut in chapter 29: John 7:30 and 8:59 and God's care for the anointed's timing (
 | Numbers 31:27; 2 Samuel 2:4 | 21-31 | 1-samuel/30.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 30: John 6:39 and 10:28 and Matthew 20:1-16 and David as the shepherd who loses none (the deep note calls them connections of pattern, not predictions or lines the New Testament draws to this chapter); 2 Corinthians 6:15 and Belial (not needed); verse 11 paraphrased because it carries a dash.
+
+## The plain notes on 1 Samuel 31 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The end of the book and of Saul's reign; Endor's word fulfilled (28:19); the king asked for to fight (8:20) dying in battle; about 1010 BC, dates uncertain; Gilboa on the southeastern side of the Jezreel Valley; the fear of capture and Samson blinded and mocked (Judges 16); Jonathan's death and the innocent suffering in others' ruin; the restraint of the telling; died together that same day | 1-6 | 1-samuel/31.json `story`, `historical`, `cultural`, `literary`, `doctrines` (suffering) | Repository |
+| 1 Chronicles 10:6; 2 Samuel 1:19 | 1-6 | 1-samuel/31.json `literary` (David's lament), `historical` (1 Chronicles 10); BSB | Repository; BSB text |
+| Saul's death: the Bible's few such deaths (Abimelech, Saul and his armor-bearer, Ahithophel, Zimri, Judas) reported without long comment; never a good or honorable way out; sorrow and not contempt; burial and lament; the traditions' differences, grave sin against the gift of life, salvation resting on Christ's grace and not the manner of death, compassion for despair; a tragedy to grieve; no means named | 1-6 `hard` | 1-samuel/31.json `hard` | Repository; the traditions in their holders' terms |
+| The care line (‘If you have thoughts of hurting yourself...’ to ‘...lists places to turn.’) | 1-6 `hard` | judges/plain/16.json (23-31); 1-peter/plain/5.json (5-7); 2-timothy/plain/1.json (6-7); philippians/plain/4.json (4-9); psalms/plain/88.json (13-18) (`hard`) | Reused whole, word for word; Find Help named; the deep note's crisis-line number not carried over |
+| The country cut in two; Philistine power at its height and David breaking it (2 Samuel 5 and 8); Beth-shan at the meeting of the valleys, once an Egyptian garrison; stripping, armor in a temple and display as the victors' gods' triumph; the Ashtoreths as Astarte; told briefly; naphal through the chapter and David's lament | 7-10 | 1-samuel/31.json `historical`, `cultural`, `words` (naphal) | Repository |
+| 1 Chronicles 10:10; Judges 16:21 | 7-10 | 1-samuel/31.json `historical`, `cultural`; BSB | Repository; BSB text |
+| Jabesh across the Jordan a night's march away; the debt of chapter 11 repaid at risk; burial a sacred duty; the burning unusual, the suggested reason given gently; the tamarisk (22:6) and the seven-day fast; the book from a prayer at Shiloh to a fast at a grave; loyalty as the last act | 11-13 | 1-samuel/31.json `historical`, `cultural`, `words` (eshel, tsum), `story` | Repository |
+| 2 Samuel 21:14 (and David's thanks, 2 Samuel 2:5); Genesis 50:10 | 11-13 | 1-samuel/31.json `words` (tsum: Genesis 50:10); BSB | Repository; BSB text |
+
+Cut in chapter 31: the deep note's contrast with Jesus' death and burial (it calls the parallel thematic, not a prediction or a line the New Testament draws to this chapter); the deep note's crisis-line sentence with a phone number (replaced by the care line reused whole); the means of Saul's death, which the text names and these notes do not repeat; a likeness between Goliath's head and Saul's (not drawn in the repository's notes, cut before commit).
