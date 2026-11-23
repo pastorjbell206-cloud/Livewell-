@@ -17005,3 +17005,19 @@ Cut in chapter 21: 1 Peter 3:18 and John 1:5 set beside the settlement and the l
 | The war song: history not hidden; victories in God's hands and praise among the nations; no modern nation or army in the place of God's anointed, no warrant to hate an enemy | 29-51 `hard` | psalms/plain/18.json (31-50, `hard`) | Repository; as the Psalms notes state it |
 
 Cut in chapter 22: the song's rescue pattern set beside the resurrection, and Hebrews 4:15 and Jesus as the righteous king in whom the claim of blamelessness is true (the deep note calls these the song pointing beyond David, not lines the New Testament draws to this chapter; Romans 15:9 is kept as Paul's own); Luke 1:69 and the horn of salvation (the Luke notes tie it to Psalm 132:17, not to this song); 22:42 and 22:47 quoted only before their dashes or not at all.
+
+## The plain notes on 2 Samuel 23 (2026-11-23)
+
+`client/public/bible/notes/2-samuel/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The poem paired with chapter 22 at the center of the collection; David's last formal utterance, though he speaks again in 1 Kings 1 and 2; neum, oracle, almost always of the LORD's speech; David presented as prophet and king; the sweet psalmist; the just ruler like sun after rain; tsaddiq as right relationship and fair dealing toward the weak; the picture shaping Israel's hope and measuring later kings; covenant unnamed in chapter 7 and named here | 1-7 | 2-samuel/23.json `story`, `cultural`, `literary`, `words` (neum, berit, tsaddiq), `doctrines` (covenant, revelation, kingdom) | Repository |
+| Acts 2:30 and Peter calling David a prophet; Psalm 89:3; Numbers 24:3 and the same word opening Balaam's sayings | 1-7 | 2-samuel/23.json `cultural` (Acts 2:30), `words` (berit: Psalm 89; neum: Numbers 24); acts/plain/2.json (29-36); BSB | Repository; BSB text; Peter's own line |
+| David's wars with the Philistines from Adullam (1 Samuel 22:1) to his early reign, around 1000 BC; the Valley of Rephaim southwest of Jerusalem and the garrison at Bethlehem; elite warriors ranked and remembered, the Three and the Thirty; the pattern of name, deed and the LORD's victory; the water and loyalty; blood belonging to God and poured out; the water treated as the men's blood and offered | 8-17 | 2-samuel/23.json `historical`, `cultural`, `literary`, `words` (gibbor) | Repository |
+| Leviticus 17:11; 1 Chronicles 11:19 | 8-17 | 2-samuel/23.json `cultural` (Leviticus 17:11-14), `historical` (1 Chronicles 11); BSB | Repository; BSB text |
+| The ranked list; foreigners (Zelek the Ammonite, Igal of Zobah, Uriah the Hittite); Eliam son of Ahithophel perhaps Bathsheba's father, never drawn by the text; thirty-seven and the explanations; the parallel in 1 Chronicles 11:10-47, Jashobeam and three hundred | 18-39 | 2-samuel/23.json `historical` | Repository; the explanations in their holders' terms |
+| 1 Chronicles 11:41 and the list continuing past Uriah | 18-39 | 2-samuel/23.json `hard`; BSB | Repository; BSB text |
+| Why the list ends with Uriah: a loyal warrior betrayed; Chronicles going on and Samuel stopping; a deliberate note of judgment and grief closing the chapter that opened with 23:5; no triumphant royal history; glory and sin side by side | 18-39 `hard` | 2-samuel/23.json `hard`, `literary` | Repository |
+
+Cut in chapter 23: the water poured out set beside Luke 22:20 and the cup of the new covenant, and Isaiah 11:1-5 and Jeremiah 23:5 read of Jesus (the deep note says the water episode is not a prediction and calls the link a resonance; not lines the New Testament draws to this chapter); 23:3-4 quoted only within their inner quotation.
