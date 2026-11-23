@@ -15973,3 +15973,19 @@ Cut in Ruth 1: Romans 11:17 and Mark 15:34 (the deep note's thematic links, not 
 | Leviticus 25:25; Exodus 6:6 | 17-23 | ruth/2.json `cultural`, `words` (ga'al); BSB | Repository; BSB text |
 
 Cut in Ruth 2: 1 Peter 1:18-19, Galatians 4:4-5, Hebrews 2:14-17 and Matthew 23:37 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the vinegar sauce and roasted grain explained.
+
+## The plain notes on Ruth 3 (2026-11-23)
+
+`client/public/bible/notes/ruth/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Manoach as settled security and Naomi's prayer of 1:9; threshing and winnowing on high, windy ground, owners guarding the grain at night; washing, perfume and best clothes perhaps ending mourning; the plan bold and risky | 1-5 | ruth/3.json `cultural`, `words` (manoach) | Repository |
+| Ruth 1:9; Genesis 38:14 and the comparison in the Genesis 38 note | 1-5 | genesis/plain/38.json (12-19, `later`); BSB | Repository; BSB text |
+| The corner of the garment as marriage and protection; kanaph and 2:12, the answer to his own prayer; redeemer and brother's marriage joined, taken as honorable; the greater kindness of 3:10; ‘a woman of noble character’ matching Boaz; her good name kept | 6-15 | ruth/3.json `cultural`, `literary`, `words` (kanaph, hesed, ga'al) | Repository |
+| Ezekiel 16:8; Proverbs 31:10 | 6-15 | ruth/3.json `cultural`; ruth/intro.json `story`; BSB | Repository; BSB text |
+| The threshing floor: the words with overtones and the reading of a suggested seduction; the reading of a bold but chaste proposal held by most; agreement on risk, trust and Boaz's honor | 6-15 `hard` | ruth/3.json `hard` | Repository; both readings in their holders' terms |
+| The two framing talks; ‘empty-handed’ and 1:21; patience and Boaz's resolve | 16-18 | ruth/3.json `literary` | Repository |
+| Psalm 27:14 | 16-18 | BSB | BSB text (quoted without the verse's closing exclamation point) |
+
+Cut in Ruth 3: Hebrews 2:14 and the redeemer as a pattern of Christ (the deep note's thematic link); the date of the book (left to the book page).
