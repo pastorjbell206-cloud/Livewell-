@@ -43,11 +43,8 @@ function Guide({ track }: { track: Track }) {
             </p>
           ))}
 
-          <p className="tk-label tk-lead__label">
+          <h2 id="tk-run" className="tk-label tk-lead__label">
             <Users aria-hidden="true" size={18} strokeWidth={1.75} />
-            Running the group
-          </p>
-          <h2 id="tk-run" className="sr-only">
             Running the group
           </h2>
           {leader.sections.map((part) => (
