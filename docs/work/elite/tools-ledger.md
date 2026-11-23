@@ -1426,3 +1426,17 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | exhaustion | Isaiah 40:30-31: even youths tire; the chapters speak to people in exile, worn out in a foreign land; strength exchanged, not generated; the sequence ends in the ordinary daily walk | note isaiah/40 hard and verses 29-31 |
 | exhaustion | Psalm 127: does not tell you to stop working; worry not the same as work; sleep is a gift | plain psalms/127 1-2 asks |
 | exhaustion | Care lines | plain matthew/11; plain psalms/77 |
+| gambling | Eager to be rich not unpunished; the one who hastens after wealth does not see poverty coming; the chapter commends integrity over wealth and warns against greed | Proverbs 28:20, 22; note proverbs/28 summary |
+| gambling | The love of money never satisfies; riches hoarded or lost | note ecclesiastes/5 summary |
+| gambling | Those who want to be rich fall into a trap; godliness with contentment great gain; ask whether you want to be rich and what that wanting does | plain 1-timothy/6 3-10 hard and asks |
+| gambling | Hebrews 13:5 is not a promise of riches nor a rebuke of the poor, but a call to be free from the love of money | note hebrews/13 summary; plain hebrews/13 1-6 hard |
+| gambling | Paul answers Corinthian slogans; is it beneficial, is it mastering me; the slogan still lived by | note 1-corinthians/6 summary; plain 1-corinthians/6 12-14 asks |
+| gambling | One of the Bible's clearest sayings on confession; the verb for conceal also used of God covering sin, the difference is who covers | note proverbs/28 summary and words (H3680) |
+| gambling | The son comes to his senses and rehearses a speech; the father runs before he says a word; the turning matters, the welcome is a gift | note luke/15 verses 17, 18-19, 20; plain luke/15 11-19 hard |
+| gambling | The lot: even this apparently random act has its decision from the LORD; casting lots usually leaves a decision to God, not a wager | note proverbs/16 words (H1486); Find Help is-it-a-sin, the gambling question |
+| gambling | Four soldiers cast lots for the seamless tunic; John sees even the soldiers' gambling as fulfillment of Psalm 22:18 | note john/19 verses 23-24 |
+| gambling | Restore gently, a beautiful thing churches should practise; gentleness never means keeping serious wrongs quiet | plain galatians/6 1-5 hard |
+| gambling | The bet promises that one night can undo a hard life; what it is for is usually escape; walls between yourself and the trigger, the app, the account, the route past the machines | the topic's own first form (framing and application) in `client/public/wisdom/topics/` |
+| gambling | Where Christians differ: Scripture never names gambling; household money (1 Timothy 5:8); chasing, hiding, borrowing as signs of a grip; wrong in itself (1 Timothy 6:9, Ephesians 4:28, an industry profiting from those who cannot stop); small stakes as entertainment (Colossians 2:20-23); no side taken | Find Help is-it-a-sin, the gambling question, which sets out both and does not land |
+| gambling | Psalm 32: does not shame you; what silence costs and what confession gives; how quickly God forgives | plain psalms/32 1-5 asks |
+| gambling | Care lines | plain galatians/5; plain 1-timothy/6 |
