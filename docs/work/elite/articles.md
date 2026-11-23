@@ -521,7 +521,7 @@ The feed was not checked this run (the local server does not serve it); the feed
 
 James, 2026-11-20 and 21: "I want you to continue, especially the articles. I want them to be a lot more controversial and dealing with very difficult issues in a very balanced, intellectual, academic, historical, biblical way that is very easy to understand, easy to read, normal, common language that is semi-professional, that's in my tone style that you've been writing like." "keep going and publish when ready."
 
-The run was done by two sessions. The first wrote the first three essays on 2026-11-22 and stopped at a usage limit. The second, after the machine had been restarted, wrote the last two on 2026-11-23, re-read all five, and ran the gates. A partial draft of the fourth essay that the first session left in the scratch folder was deleted unread and the essay written new.
+The run was done by two sessions. The first wrote the first three essays on 2026-11-22 and stopped at a usage limit. The second, after the machine had been restarted, wrote the last two that evening (Eastern time; the machine's clock, which keeps UTC, read 2026-11-23, and the files are dated 2026-11-22 like the other three), re-read all five, and ran the gates. A partial draft of the fourth essay that the first session left in the scratch folder was deleted unread and the essay written new.
 
 ## What was written
 
