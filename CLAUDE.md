@@ -760,12 +760,22 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   Thy Kingdom Come is **A Higher Allegiance**, subtitle "Reclaiming Jesus
   from American Politics" (`/books/a-higher-allegiance`; "American Idols"
   was dropped the same day). Each old address 301s once. The PDFs and EPUBs
-  are finished files and still carry the old titles, so each card and page
-  says "Published earlier as ..." until his corrected files come; the file
-  addresses under `/ebook/` did not change. A rename is one data change:
+  were rebuilt under the new titles on 2026-11-23 (next entry); each book's
+  own page says "Published earlier as [old title]." A rename is one data change:
   `client/src/data/book-names.json`, then `node scripts/sync-book-names.mjs`
   (its `--check` is a content gate). No other title is changed until he
   picks from the table in `docs/work/elite/bookshelf.md`.
+- **The two renamed books' files are built from their text (2026-11-23)**:
+  James asked that the PDF and EPUB of Blind Spots and A Higher Allegiance
+  stop carrying the old titles and look "elite and professional". Both were
+  rebuilt by `scripts/build-book-files.mjs` (run by hand, not in CI) from the
+  original EPUBs' own chapter files, kept in `content/books-src/<id>/`; the
+  author's words are unchanged, and `--verify` proves it against the
+  originals, which stay unserved in `content/held-downloads/originals/`. The
+  files take the new names in the same folders (`Blind-Spots.pdf`,
+  `A-Higher-Allegiance.pdf` and their EPUBs); each old file address 301s
+  once to its new file. `docs/work/elite/bookshelf.md` section 8 has the
+  design, the proof and the commands.
 - **Covers are drawn by a script (2026-11-22)**: `scripts/build-covers.mjs`
   draws every listed ebook's cover and a card for each kind of printable
   from `client/src/data/covers.json`, in the site's engraved hand, the
@@ -853,10 +863,13 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   shows "Back to session 3 of 12" (`components/TrackReturnBar.tsx`, fixed in a
   corner, kept for the sitting). Progress and answers stay on the device
   (`livewell-progress-tracks-v1`). A road on /start that has become a track
-  names it in `startRoad.json` and offers it first; its steps stay. The first
-  is "New to faith, or coming back"; the other four roads and the book study
-  ("Deep in one") are listed on /tracks as not written.
-  `docs/work/elite/tracks.md` says how to write the next.
+  names it in `startRoad.json` and offers it first; its steps stay. Written:
+  "New to faith, or coming back", "Weigh the case for yourself"
+  (/tracks/skeptical) and "Deep in one: the Gospel of Mark" (/tracks/mark); the
+  other three roads are listed on /tracks under Coming. A track marked
+  `leader: true` has a leader's guide at /tracks/<slug>/leader, and every track
+  prints at /tracks/<slug>/print. `docs/work/elite/tracks.md` says how to write
+  the next.
 - **The films' recorded voice (2026-11-22; James: "continue to add these")**:
   Listen on a Bible Explorer film plays one small MP3 a frame, a level
   (`client/public/explorer/audio/`), fetched only once Listen is on, with the

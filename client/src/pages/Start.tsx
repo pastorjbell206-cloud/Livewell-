@@ -2,9 +2,12 @@
  * /start: "Start where you are". Five roads, one for each person the site is
  * for (docs/work/elite/PROJECT-PROMPT.md, "Who it is for"): the skeptic, the
  * person new to faith or coming back, the one who has stepped back from it,
- * the believer who wants depth, and the parent at the table.
+ * the believer who wants depth, and the parent at the table. Beside them, two
+ * readers no road fits, whom the walk of 2026-11-23 found with no way in: the
+ * Christian with doubts and the pastor or group leader. Each of the two is a
+ * card that opens the one page to begin with (lib/startRoads START_PAGES).
  *
- * The page opens with the five choices as picture cards. Choosing one opens
+ * The page opens with the seven choices as picture cards. Choosing a road opens
  * its road under them: four to six steps in order, each one sentence and one
  * link, every link a page that exists and is public today. A road that has
  * become a track (numbered sessions, lib/tracks.ts) offers the track first,
@@ -35,7 +38,7 @@ import road from "@/lib/startRoad.json";
 import { toolByHref } from "@/lib/toolsList";
 import { nextSession, readTracks, sessionHref, trackHref, trackToContinue, type TracksProgress } from "@/lib/tracks";
 import {
-  ROADS,
+  WAYS_IN,
   nextStep,
   readRoadProgress,
   roadById,
@@ -45,6 +48,7 @@ import {
   type RoadId,
   type RoadProgress,
   type RoadStep,
+  type WayIn,
 } from "@/lib/startRoads";
 import "./home/home.css";
 
@@ -78,6 +82,21 @@ function RoadCard({ r, open, onPick }: { r: Road; open: boolean; onPick: (id: Ro
         <span className="st-card__note">{r.note}</span>
       </span>
     </a>
+  );
+}
+
+/** A reader no road fits: the card opens the one page to begin with. */
+function PageCard({ w }: { w: WayIn }) {
+  return (
+    <Link href={w.href} className="st-card">
+      <PlateFrame>
+        <Plate name={w.plate} decorative />
+      </PlateFrame>
+      <span className="st-card__text">
+        <span className="st-card__name">{w.chip}</span>
+        <span className="st-card__note">{w.note}</span>
+      </span>
+    </Link>
   );
 }
 
@@ -222,12 +241,12 @@ export default function Start() {
         url="https://www.livewellbyjamesbell.co/start"
       />
 
-      <PageHead door="Start here" title="Start where you are" line="Pick the road that sounds like you. Each one is a few steps, in order." plate="tree" />
+      <PageHead door="Start here" title="Start where you are" line="Pick the one that sounds like you." plate="tree" />
 
       <section className="st-choose" aria-labelledby="st-choose-title">
         <div className="home-wrap">
           <h2 id="st-choose-title" className="sr-only">
-            Five roads
+            Where to start
           </h2>
           {last && (
             <p className="st-resume">
@@ -250,10 +269,8 @@ export default function Start() {
             </p>
           )}
           <ul className="st-cards">
-            {ROADS.map((r) => (
-              <li key={r.id}>
-                <RoadCard r={r} open={open?.id === r.id} onPick={pick} />
-              </li>
+            {WAYS_IN.map((w) => (
+              <li key={w.id}>{w.road ? <RoadCard r={w.road} open={open?.id === w.road.id} onPick={pick} /> : <PageCard w={w} />}</li>
             ))}
           </ul>
         </div>

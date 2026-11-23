@@ -83,10 +83,21 @@ describe("Home and /family before, during, and after the window", () => {
     expect(within(card).getByRole("link", { name: "A4" })).toHaveAttribute("href", "/downloads/seasonal/advent-family-a4.pdf");
   });
 
-  it("say Advent has begun on Advent Sunday, before the calendar starts", async () => {
+  it("say Advent has begun on Advent Sunday and the calendar starts December 1, Home and /family alike", async () => {
     setToday(2026, 11, 29);
-    renderWithProviders(<Home />);
-    expect(await screen.findByTestId("advent-at-the-table")).toHaveTextContent("Advent has begun. The family Advent calendar starts Tuesday, December 1:");
+    serveFamilyFiles();
+    const home = renderWithProviders(<Home />);
+    // Home keeps one tap on the first nights of Advent (walk 2026-11, finding 20), to the calendar's
+    // first reading by name, not offered as tonight's (the walk's polish: its date is December 1).
+    expect(await screen.findByTestId("home-tonight")).toHaveTextContent("Advent has begun. The family Advent calendar starts Tuesday, December 1, with The Long Wait Begins.");
+    expect(screen.getByRole("link", { name: "The Long Wait Begins" })).toHaveAttribute("href", "/family/devotions/advent-1");
+    expect(screen.queryByTestId("advent-at-the-table")).toBeNull();
+    home.unmount();
+    // /family says the same: its Tonight card, then its Advent card.
+    renderWithProviders(<Family />);
+    expect(await screen.findByText(/^Advent has begun\. The family Advent calendar starts Tuesday, December 1, with/)).toBeInTheDocument();
+    expect(screen.queryByText(/Day 1/)).toBeNull();
+    expect(screen.getByRole("region", { name: "Advent has begun" })).toHaveTextContent("The family Advent calendar starts Tuesday, December 1");
   });
 
   it("point at tonight's day during the calendar", async () => {

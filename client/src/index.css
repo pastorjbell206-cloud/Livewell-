@@ -333,6 +333,14 @@ img{display:block;max-width:100%}
 .prerender-content .pre-lede{font-size:1.375rem;line-height:1.5}
 .prerender-content h2.pre-kicker{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);line-height:1.4;margin:var(--s-3) 0 var(--s-1)}
 .prerender-content .pre-byline{font-family:var(--U);font-size:.8125rem;color:var(--ink-muted);padding-bottom:var(--s-3);border-bottom:1px solid var(--border);margin-bottom:var(--s-4)}
+/* The first shelf of /downloads in the prerendered page (scripts/prerender-heads.mjs):
+   each cover keeps its 2 by 3 box at the width the real shelf gives it. */
+.prerender-content .pre-shelf{list-style:none;padding:0;margin:0 0 var(--s-5);display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));gap:var(--s-4)}
+.prerender-content .pre-shelf li{margin:0}
+.prerender-content .pre-cover{display:block;width:100%;max-width:230px;height:auto;aspect-ratio:2 / 3;margin:0 0 var(--s-2)}
+.prerender-content .pre-shelf h4{margin:0 0 4px}
+.prerender-content .pre-book-sub{margin:0 0 6px;font-family:var(--F);font-style:italic;font-size:17px;line-height:1.3}
+.prerender-content .pre-book-meta{margin:0 0 4px;font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted)}
 /* While the prerendered text is held on screen the app renders underneath it,
    laid out but not painted, so nothing the reader can see moves until the
    swap. */
@@ -557,15 +565,20 @@ img{display:block;max-width:100%}
 .home-find__passage{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:15px}
 .home-find__passage:hover,.home-tonight__link:hover{text-decoration-thickness:2px}
 .home-tonight{margin:var(--s-2) 0 0}
-/* Holds one line (.home-tonight__line's 17px at 1.6) while the line's module loads (Home.tsx). */
+/* Holds one line (.home-tonight__line's 17px at 1.6) while the line's module loads (Home.tsx).
+   On a night of a daily set or around Advent the static shell writes the line's own words
+   into the slot (scripts/lib/home-tonight-slot.mjs), unseen, so it holds exactly their room;
+   a held row is an ordinary week's line, whose title the shell does not carry. */
 .home-tonight--slot{min-height:calc(17px * 1.6)}
+.home-tonight--slot>*{visibility:hidden}
+.home-tonight__row--held{min-height:calc(17px * 1.6)}
 .home-tonight__row{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 var(--s-4)}
 .home-tonight__line{font-family:var(--B);font-size:17px;line-height:1.6;color:var(--ink);margin:0}
 .home-tonight__line--quiet{font-size:16px;color:var(--ink-muted);margin-top:8px}
 .home-tonight__link{padding:13px 0}
 /* On a phone an ordinary night's line runs to two lines; both the slot and the
    line hold two, so the doors under the hero never move when it arrives. */
-@media (max-width:760px){.home-tonight{margin-top:var(--s-1)}.home-tonight--slot,.home-tonight{min-height:calc(17px * 1.6 * 2)}}
+@media (max-width:760px){.home-tonight{margin-top:var(--s-1)}.home-tonight--slot,.home-tonight,.home-tonight__row--held{min-height:calc(17px * 1.6 * 2)}}
 
 /* ─── EDITORIAL SYSTEM (the reading room) ───────────────────────────
  * Collections read as an index, not a wall of boxes: type carries the
@@ -590,6 +603,8 @@ img{display:block;max-width:100%}
 .ed-kicker{display:block;font-family:var(--U);font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:8px}
 .ed-num{font-family:var(--F);font-size:1.05rem;color:var(--mustard-text);margin-right:6px;letter-spacing:0}
 .ed-title{display:block;font-family:var(--F);font-size:clamp(1.3rem,1.1rem + 0.55vw,1.6rem);font-weight:500;line-height:1.2;letter-spacing:-0.01em;color:var(--ink);margin:0;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
+/* A short plain line under the title (Find Help: each page's own title, naming its subject). */
+.ed-sub{font-family:var(--U);font-size:14px;font-weight:500;line-height:1.45;color:var(--ink);margin:6px 0 0;max-width:62ch}
 .ed-dek{font-family:var(--B);font-size:1rem;line-height:1.6;color:var(--ink-muted);margin:8px 0 0;max-width:62ch}
 .ed-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;font-family:var(--U);font-size:13px;color:var(--ink-muted);margin-top:10px}
 .ed-read{display:inline-flex;align-items:center;gap:5px;color:var(--ok);font-weight:600}
@@ -610,7 +625,7 @@ img{display:block;max-width:100%}
 .ed-row--thumb-right:hover .ed-thumb,.ed-row--thumb-right:focus-visible .ed-thumb{filter:brightness(1.12)}
 @media (max-width:760px){.ed-row--thumb-right{grid-template-columns:minmax(0,1fr)}.ed-row--thumb-right .ed-thumb{display:none}}
 .ed-index--dark,.ed-index--dark > li{border-color:rgba(245,240,230,.16)}
-.ed-index--dark .ed-title{color:var(--charcoal-fg)}
+.ed-index--dark .ed-title,.ed-index--dark .ed-sub{color:var(--charcoal-fg)}
 .ed-index--dark .ed-dek,.ed-index--dark .ed-kicker,.ed-index--dark .ed-meta,.ed-index--dark .ed-arrow{color:rgba(245,240,230,.7)}
 .ed-index--dark .ed-row:hover .ed-arrow,.ed-index--dark .ed-row:focus-visible .ed-arrow{color:var(--mustard)}
 .ed-split{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(28px,4vw,48px) clamp(32px,5vw,72px)}
@@ -1016,6 +1031,8 @@ img{display:block;max-width:100%}
 .tb-different__body{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
 .tb-different__more{font-family:var(--U);font-size:15px;line-height:1.7;color:var(--ink);margin:0;max-width:68ch}
 .tb-different__link{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:.2em;padding:10px 0}
+/* A link inside a sentence (the Advent calendar's first reading on /family and /family/tonight): padded to a 44 px target without changing the line. */
+.tb-inline-link{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:.2em;padding:13px 0}
 .tb-lib__theme{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 var(--s-3);font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink)}
 .tb-lib__theme select{min-height:44px;max-width:100%;padding:0 12px;font-family:var(--U);font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm);cursor:pointer}
 .tb-lib__shelf+.tb-lib__shelf{margin-top:var(--s-5)}
@@ -1671,6 +1688,8 @@ html{-webkit-tap-highlight-color:transparent}
 .qa-ask .hq-find{max-width:640px}
 .qa-try{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:var(--s-2) 0 0;padding:0}
 .qa-result{min-height:300px}
+/* Its room is kept only once a question is typed: before that it was an empty band under the box (walk 2026-11, finding 4). */
+.qa-result:empty{min-height:0}
 .qa-best{margin-top:var(--s-4);padding-top:var(--s-3);border-top:1.5px solid var(--charcoal-fg);max-width:760px}
 .qa-best__label{font-family:var(--U);font-weight:500;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mustard);margin:0 0 10px}
 .qa-best__label--next{margin-top:var(--s-4)}
@@ -1697,7 +1716,8 @@ html{-webkit-tap-highlight-color:transparent}
 .qa-group__list a{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:52px;padding:8px 0;font-family:var(--U);font-size:15.5px;line-height:1.35;color:var(--ink);text-decoration:none;scroll-margin-top:96px}
 .qa-group__list a:hover span{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:4px}
 .qa-group__list small{font-size:11.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mustard-text)}
-.qa-group__more{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;padding:0;border:0;background:none;font-family:var(--U);font-weight:500;font-size:15px;color:var(--ink);cursor:pointer;border-bottom:1.5px solid var(--mustard)}
+/* "All 7" is 31 px of text: the button is held to 44 px each way (the walk's polish, 2026-11-23). */
+.qa-group__more{display:inline-flex;align-items:center;min-height:44px;min-width:44px;margin-top:4px;padding:0;border:0;background:none;font-family:var(--U);font-weight:500;font-size:15px;color:var(--ink);cursor:pointer;border-bottom:1.5px solid var(--mustard)}
 @media (max-width:1000px){.qa-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.qa-groups{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}.qa-result{min-height:220px}}
 
@@ -1761,12 +1781,13 @@ html{-webkit-tap-highlight-color:transparent}
 @media (max-width:900px){.hx-rooms{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .hp-sec,.qa-index,.qa-page{padding-top:var(--s-4)}
 
-/* START WHERE YOU ARE (pages/Start.tsx): the five roads as picture cards, the
+/* START WHERE YOU ARE (pages/Start.tsx): the five roads and the two readers'
+   pages (lib/startRoads WAYS_IN) as seven picture cards, four to a row, the
    open road's steps with a tick each, and "Pick up where you left off". Then
-   Home's quiet row of the same five, under Find and tonight's line; those
+   Home's quiet row of the same seven, under Find and tonight's line; those
    chips are in the static hero too (scripts/prerender-heads.mjs). Tokens only. */
 .st-choose{background:var(--bone);padding:var(--s-2) var(--gutter) var(--s-5)}
-.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--s-3)}
+.st-cards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-3)}
 .st-cards>li{display:flex}
 .st-card{flex:1;display:flex;flex-direction:column;min-width:0;color:var(--ink);text-decoration:none}
 .st-card .lw-frame{transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
@@ -2178,6 +2199,8 @@ aside .sb-tabs{margin-left:calc(var(--s-4) * -1);margin-right:calc(var(--s-4) * 
 .lw-find__field input::placeholder{color:var(--ink-muted)}
 .lw-find__field:has(input:focus-visible){outline:2px solid var(--ink);outline-offset:3px}
 .lw-find__field input:focus-visible{outline:none!important;box-shadow:none!important}
+/* My Library: the carry preview's heading takes focus when a file is chosen; it shows as an underline, as tool headings do (tool-shell.css). */
+.carry-preview__title:focus-visible{outline:none!important;box-shadow:none!important;text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:2px;text-underline-offset:.22em}
 .home-sec--dark .lw-find__label{color:var(--charcoal-fg)}
 .home-sec--dark .lw-find__field{background:var(--charcoal-fg);border-color:var(--charcoal-line);color:var(--charcoal)}
 .home-sec--dark .lw-find__field input{color:var(--charcoal)}

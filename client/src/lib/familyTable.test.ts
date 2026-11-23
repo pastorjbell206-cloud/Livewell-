@@ -1,7 +1,8 @@
 /**
  * The Table's rules: tonight from the year map (every night on the map names
- * a devotion page that exists, including the nights a daily set does not
- * cover), the week of the year, where a devotion sits in its set, and what
+ * a devotion page that exists, including the nights Thanksgiving's set does
+ * not cover, but for the Advent weeks' nights outside the calendar's own
+ * dates, which have none), the week of the year, where a devotion sits in its set, and what
  * this device remembers (dates only, the same devotion twice in a night
  * counted once, a corrupt value ignored).
  */
@@ -61,18 +62,24 @@ describe("tonightOn", () => {
     expect(tonightOn("2027-03-28")?.id).toBe("holy-week-8");
   });
 
-  it("gives the nights a set's week does not cover the set's nearest day", () => {
+  it("gives the nights Thanksgiving's week does not cover the set's nearest day", () => {
     // The Friday and Saturday after Thanksgiving.
     expect(tonightOn("2026-11-27")?.id).toBe("thanksgiving-7");
     expect(tonightOn("2026-11-28")?.id).toBe("thanksgiving-7");
-    // Advent Sunday and Monday, before the calendar starts on December 1.
-    expect(tonightOn("2026-11-29")?.id).toBe("advent-1");
-    expect(tonightOn("2026-11-30")?.id).toBe("advent-1");
-    // The day after Christmas, still in Advent's last week.
-    expect(tonightOn("2026-12-26")?.id).toBe("advent-25");
   });
 
-  it("names a devotion page that exists on every night of the map", () => {
+  it("gives the Advent calendar's readings only to their own dates, December 1 to 25", () => {
+    // Advent Sunday and Monday, before the calendar starts on December 1 (the walk's polish, 2026-11-23).
+    expect(tonightOn("2026-11-29")).toBeNull();
+    expect(tonightOn("2026-11-30")).toBeNull();
+    // The day after Christmas, still in Advent's last week.
+    expect(tonightOn("2026-12-26")).toBeNull();
+    // A year with five such nights after Christmas (December 25, 2028 is a Monday).
+    for (const night of ["2028-12-26", "2028-12-30"]) expect(tonightOn(night)).toBeNull();
+    expect(tonightOn("2028-12-31")).toEqual({ id: weekOf("2028-12-31").devotion });
+  });
+
+  it("names a devotion page that exists on every night of the map but the Advent weeks' nights outside the calendar", () => {
     const missing: string[] = [];
     const day = new Date(`${FAMILY_YEAR_FROM}T12:00:00Z`);
     const last = new Date(`${FAMILY_YEAR_THROUGH}T12:00:00Z`);
@@ -80,7 +87,10 @@ describe("tonightOn", () => {
     while (day <= last) {
       const iso = day.toISOString().slice(0, 10);
       const t = tonightOn(iso);
-      if (!t || !IDS.has(t.id)) missing.push(`${iso}: ${t?.id ?? "nothing"}`);
+      // In an Advent week, a night with no reading of its own is outside December 1 to 25.
+      const week = FAMILY_WEEKS[Math.floor((Date.parse(`${iso}T12:00:00Z`) - Date.parse(`${FAMILY_YEAR_FROM}T12:00:00Z`)) / 86_400_000 / 7)];
+      const outsideCalendar = week?.set === "advent" && !(iso.slice(5, 7) === "12" && Number(iso.slice(8)) <= 25);
+      if (outsideCalendar ? t !== null : !t || !IDS.has(t.id)) missing.push(`${iso}: ${t?.id ?? "nothing"}`);
       nights += 1;
       day.setUTCDate(day.getUTCDate() + 1);
     }

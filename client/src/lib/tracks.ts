@@ -36,6 +36,21 @@ export interface TrackSession {
   group: { open: string; discuss: string[]; pray: string };
 }
 
+/** One part of a leader's guide: "group", "room", "order", "hard", "hurting" or "help" (LEADER_SECTIONS in scripts/lib/tracks.mjs). */
+export interface TrackLeaderSection {
+  id: string;
+  title: string;
+  body: string[];
+  /** Only "the order of a meeting" has steps. */
+  steps?: string[];
+}
+
+/** How to run a group through the track (/tracks/:slug/leader); the page gathers each session's group guide under it. */
+export interface TrackLeader {
+  about: string[];
+  sections: TrackLeaderSection[];
+}
+
 export interface Track {
   slug: string;
   title: string;
@@ -45,6 +60,8 @@ export interface Track {
   road?: string | null;
   subtitle: string;
   intro: string[];
+  /** The leader's guide, when the track has one. */
+  leader?: TrackLeader;
   sessions: TrackSession[];
 }
 
@@ -55,6 +72,8 @@ export interface TrackBrief {
   road: string | null;
   subtitle: string;
   minutes: number;
+  /** The track has a leader's guide (/tracks/:slug/leader). */
+  leader: boolean;
   kinds: string[];
   sessions: { n: number; title: string; minutes: number; kind: string; opens: string }[];
 }
@@ -81,6 +100,11 @@ export const fetchTrack = (slug: string) => fetchJson<Track>(`/tracks/${encodeUR
 export const TRACKS_PATH = "/tracks";
 export const trackHref = (slug: string) => `/tracks/${slug}`;
 export const sessionHref = (slug: string, n: number) => `/tracks/${slug}/${n}`;
+/** The leader's guide, and the whole track on one page to print. */
+export const leaderHref = (slug: string) => `/tracks/${slug}/leader`;
+export const printHref = (slug: string) => `/tracks/${slug}/print`;
+/** A link's address written out for paper, where it can't be tapped. */
+export const paperAddress = (href: string) => `livewellbyjamesbell.co${href}`;
 
 /** The kinds of page a session opens, in a reader's words (the keys are KINDS in scripts/lib/tracks.mjs). */
 export const KIND_LABEL: Record<string, string> = {
@@ -103,6 +127,7 @@ export const KIND_LABEL: Record<string, string> = {
   compare: "Where Christians differ",
   tool: "Tool",
   track: "Tracks",
+  skeptics: "For skeptics",
 };
 
 export const kindLabel = (kind: string) => KIND_LABEL[kind] ?? "Page";

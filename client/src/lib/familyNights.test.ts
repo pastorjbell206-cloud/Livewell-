@@ -1,7 +1,8 @@
 /**
  * The 2026-11 audit's family fixes, at the level of the rules: the second
  * night of a week is not the first night again (doneThisWeek, nextNewNight),
- * Advent's nights before December 1 are named by day number (nightLabel), a
+ * Advent's nights before December 1 have no reading of their own and a set's
+ * uncovered night is named by day number (nightLabel), a
  * family has its own place in the catechism (catechismFor and the place
  * functions), a reading plan knows what day today is (familyPlans), and the
  * chooser only ever offers a devotion that exists (familyChooser).
@@ -56,14 +57,26 @@ describe("the second night of the week", () => {
 describe("the nights of Advent before December 1", () => {
   const day1 = INDEX.devotions.find((r) => r.id === "advent-1")!;
 
-  it("are tonight's, and are named Day 1 instead of a date that has not come", () => {
-    // Advent Sunday 2026 is November 29; the calendar's first day is December 1.
+  it("have no reading of their own, so the first reading keeps its own date", () => {
+    // Advent Sunday 2026 is November 29; the calendar's first day is December 1,
+    // the day its data names (the walk's polish, 2026-11-23: it was "Day 1", tonight's).
     for (const night of ["2026-11-29", "2026-11-30"]) {
-      expect(tonightOn(night)?.id).toBe("advent-1");
-      expect(nightLabel(day1, night)).toBe("Day 1");
+      expect(tonightOn(night)).toBeNull();
+      expect(nightLabel(day1, night)).toBe("December 1");
     }
     expect(tonightOn("2026-12-01")?.id).toBe("advent-1");
     expect(nightLabel(day1, "2026-12-01")).toBe("December 1");
+    // The data's own days: day N of the calendar is December N.
+    for (const r of INDEX.devotions.filter((d) => d.set === "advent")) expect(r.label).toBe(`December ${r.day}`);
+  });
+
+  it("send the next new night past them to December 1", () => {
+    // Thanksgiving's last reading done on the Saturday after: the next is the calendar's first, on its own date.
+    const next = nextNewNight("2026-11-28")!;
+    expect(next).toEqual({ date: "2026-12-01", tonight: { id: "advent-1", set: "advent", day: 1 } });
+    expect(nextSaid(next.date, "2026-11-28")).toBe("Tuesday");
+    // After Christmas, the next is the week's devotion on Sunday, December 27.
+    expect(nextNewNight("2026-12-25")?.date).toBe("2026-12-27");
   });
 
   it("leave every other day's label alone", () => {
@@ -71,10 +84,13 @@ describe("the nights of Advent before December 1", () => {
     expect(nightLabel(day6, "2026-12-06")).toBe("December 6");
     // Read from the library on some other day, a day keeps its own name.
     expect(nightLabel(day1, "2026-07-04")).toBe("December 1");
-    // The day after Christmas is still served by day 25, which is not December 25 any more.
+    // The day after Christmas has no reading of its own; day 25 keeps its date.
     const day25 = INDEX.devotions.find((r) => r.id === "advent-25")!;
-    expect(tonightOn("2026-12-26")?.id).toBe("advent-25");
-    expect(nightLabel(day25, "2026-12-26")).toBe("Day 25");
+    expect(tonightOn("2026-12-26")).toBeNull();
+    expect(nightLabel(day25, "2026-12-26")).toBe("December 25");
+    // The Friday after Thanksgiving is still served by its set's last day, named by its number.
+    const thanks7 = INDEX.devotions.find((r) => r.id === "thanksgiving-7")!;
+    expect(nightLabel(thanks7, "2026-11-27")).toBe("Day 7");
     // A weekly devotion has no day label.
     expect(nightLabel(INDEX.devotions.find((r) => r.id === "identity")!, "2026-11-03")).toBeUndefined();
   });

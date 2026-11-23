@@ -164,7 +164,8 @@ describe("the tracks' data", () => {
 
   it("holds the road on /start to the track it names", () => {
     const withTrack = ROADS.filter((r) => r.track);
-    expect(withTrack.map((r) => r.id)).toEqual(INDEX.tracks.map((t) => t.road));
+    // A book studied chapter by chapter ("Deep in one") grows from no road.
+    expect(withTrack.map((r) => r.id)).toEqual(INDEX.tracks.filter((t) => t.road).map((t) => t.road));
     for (const r of withTrack) {
       const t = INDEX.tracks.find((x) => x.slug === r.track!.slug);
       expect(t, r.id).toBeDefined();
@@ -174,11 +175,22 @@ describe("the tracks' data", () => {
     }
   });
 
-  it("keeps every step of the road for someone new inside its track", () => {
-    const road = ROADS.find((r) => r.id === "new")!;
-    const file = JSON.parse(fs.readFileSync(path.join(PUBLIC, `tracks/${road.track!.slug}.json`), "utf8"));
-    const linked = new Set(file.sessions.flatMap((s: { open: { href: string }; also?: { href: string }[] }) => [s.open.href, ...(s.also ?? []).map((l) => l.href)]));
-    for (const step of road.steps) expect(linked.has(step.href), step.href).toBe(true);
+  it("keeps every step of a road inside the track it has become", () => {
+    const withTrack = ROADS.filter((r) => r.track);
+    expect(withTrack.map((r) => r.id)).toEqual(expect.arrayContaining(["new", "skeptical"]));
+    for (const road of withTrack) {
+      const file = JSON.parse(fs.readFileSync(path.join(PUBLIC, `tracks/${road.track!.slug}.json`), "utf8"));
+      const linked = new Set(file.sessions.flatMap((s: { open: { href: string }; also?: { href: string }[] }) => [s.open.href, ...(s.also ?? []).map((l) => l.href)]));
+      for (const step of road.steps) expect(linked.has(step.href), `${road.id}: ${step.href}`).toBe(true);
+    }
+  });
+
+  it("says which tracks have a leader's guide, as their files do", () => {
+    for (const t of INDEX.tracks) {
+      const file = JSON.parse(fs.readFileSync(path.join(PUBLIC, `tracks/${t.slug}.json`), "utf8"));
+      expect(t.leader, t.slug).toBe(!!file.leader);
+    }
+    expect(INDEX.tracks.filter((t) => t.leader).map((t) => t.slug)).toEqual(["skeptical", "mark"]);
   });
 
   it("has a reader's name for every kind of page a track opens, and uses eight or more", () => {

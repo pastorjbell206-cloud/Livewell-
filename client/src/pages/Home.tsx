@@ -4,7 +4,7 @@
  * The first screen is Plate I (the road), James's headline, the one sentence
  * that says what the site is for, and Find (one field: a passage or a
  * question), with tonight's family devotion under it. On a phone the plate
- * runs edge to edge above the headline. Then the ten doors as picture
+ * runs edge to edge above the headline. Then ten ways in as picture
  * cards, and the things a visitor can touch: the 66 books on one shelf, a
  * hard question asked straight, tonight at the table, and two thousand
  * years of church history on one line. Then the latest writing and the
@@ -24,10 +24,11 @@
  */
 import { lazy, Suspense, useEffect, useState, type ReactNode } from "react";
 import { Link } from "wouter";
-import { ArrowRight, LifeBuoy, Mail, Mic, Smartphone, UserRound } from "lucide-react";
+import { ArrowRight, Globe, LifeBuoy, Mail, Mic, Smartphone, UserRound } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import FollowRow from "@/components/FollowRow";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
 import RoadPlate from "@/components/art/RoadPlate";
 import PlateFrame from "@/components/art/PlateFrame";
@@ -35,10 +36,12 @@ import Plate, { type PlateName } from "@/components/art/Plate";
 import DoorCard from "@/components/art/DoorCard";
 import { useNear } from "@/components/art/useNear";
 import { BOOK_SHELF } from "@/lib/bookShelf";
-import { HOME_HEADLINE, HOME_LINE, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
+import { liveChannels } from "@/lib/channels";
+import { HOME_HEADLINE, HOME_LINE, HOME_WHO, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
 import { START_WITH, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
 import { followHash } from "@/lib/followHash";
 import HomeFind from "./home/HomeFind";
+import TonightSlot, { readShellLines } from "./home/TonightSlot";
 import { ROAD_CHIPS } from "./home/roadChips";
 import HomeLatest from "./home/HomeLatest";
 import "./home/home.css";
@@ -47,10 +50,13 @@ import "./home/home.css";
  * The tonight line (pages/home/HomeTonight) reads the family year map with
  * its titles, the Advent calendar, and this device's progress for Continue:
  * about 45 kB that every route's entry script would otherwise carry. It loads
- * on its own, starting as this module runs on "/", into a slot one line tall
- * (index.css, .home-tonight--slot) at the foot of the hero's text, so nothing
- * moves when it arrives.
+ * on its own, starting as this module runs on "/", into a slot at the foot of
+ * the hero's text (index.css, .home-tonight--slot) that holds the room the
+ * line will take, so nothing moves when it arrives: the static shell writes
+ * the line's words into its slot unseen, and this slot draws the same
+ * (home/TonightSlot, read once here, before the app replaces the shell).
  */
+const SHELL_LINES = typeof document === "undefined" ? undefined : readShellLines();
 type TonightModule = typeof import("./home/HomeTonight");
 let tonightModule: TonightModule | null = null;
 let tonightLoading: Promise<TonightModule> | null = null;
@@ -79,7 +85,7 @@ function Tonight() {
       live = false;
     };
   }, [loaded]);
-  if (!loaded) return <div className="home-tonight home-tonight--slot" aria-hidden="true" />;
+  if (!loaded) return <TonightSlot lines={SHELL_LINES} />;
   const HomeTonight = loaded.default;
   return <HomeTonight />;
 }
@@ -114,19 +120,29 @@ const DOORS: Door[] = [
   { title: "Church history", href: "/theology/history", plate: "basilica", note: "From Pentecost to today" },
   { title: "Hard questions", href: "/topics", plate: "lantern", note: "Straight answers" },
   { title: "Family", href: "/family", plate: "house", note: "Tonight's devotion" },
-  { title: "Start here", href: "/start", plate: "tree", note: "New, or coming back" },
+  // /start has a way in for every reader, not only someone new (walk 2026-11, finding 24).
+  { title: "Start here", href: "/start", plate: "tree", note: "Wherever you are" },
 ];
 
-/** The other five, smaller. */
+/**
+ * The other five, smaller. The first was "Context and creeds" on /study, from
+ * when that page held both; the creeds now sit under History, so the card
+ * takes the context half under its one name, Bible background (lib/siteCatalog),
+ * and opens that page (the walk of 2026-11-23, finding 3).
+ */
 const MORE_DOORS: Door[] = [
-  { title: "Context and creeds", href: "/study", plate: "jar" },
+  { title: "Bible background", href: "/resources/context", plate: "jar" },
   { title: "Tools", href: "/tools", plate: "compass" },
   { title: "Essays", href: "/writing", plate: "quill" },
   { title: "Books", href: "/books", plate: "books" },
   { title: "Find James", href: "/connect", plate: "letter" },
 ];
 
-/** "Start where you are": the five roads of /start as one quiet row of chips (home/roadChips.ts). */
+/**
+ * "Start where you are": the choices of /start as one quiet row of chips
+ * (home/roadChips.ts). A road opens on /start; the doubter's and the pastor's
+ * chips open their one page.
+ */
 function RoadChips() {
   return (
     <nav className="home-roads" aria-labelledby="home-roads-label">
@@ -136,7 +152,7 @@ function RoadChips() {
       <ul className="home-roads__list">
         {ROAD_CHIPS.map((r) => (
           <li key={r.id}>
-            <Link href={`/start#${r.id}`} className="home-road" onClick={() => followHash(`/start#${r.id}`)}>
+            <Link href={r.href} className="home-road" onClick={() => followHash(r.href)}>
               {r.chip}
             </Link>
           </li>
@@ -180,6 +196,9 @@ const WAYS = [
   { href: "/about", label: "About James", Icon: UserRound },
 ];
 
+/** ENDS, as lib/channels.ts names and describes it. Absent when the channel is not live. */
+const ENDS = liveChannels().find((c) => c.id === "ends");
+
 export default function Home() {
   const lead = leadEssay();
   // "post-Christian" in the headline opens the page that explains it.
@@ -210,7 +229,7 @@ export default function Home() {
             <HomeFind />
             {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
             <Tonight />
-            {/* The five roads of /start, one chip each. */}
+            {/* The choices of /start, one chip each: five roads, and the doubter's and the pastor's page. */}
             <RoadChips />
           </div>
           <PlateFrame className="home-hero__art" ratio={null} number="Plate I" title="The road">
@@ -219,10 +238,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE TEN DOORS */}
+      {/* TEN WAYS IN. Not called doors: the menu's seven doors are the site's doors. */}
       <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">
         <div className="home-wrap">
-          <SectionHead id="home-doors-title" eyebrow="Ten doors" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
+          <SectionHead id="home-doors-title" eyebrow="Ten ways in" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
           <ul className="home-doors">
             {DOORS.map((d, i) => (
               <li key={d.href} className={i === 0 ? "home-doors__lead" : undefined}>
@@ -350,6 +369,8 @@ export default function Home() {
             <h2 id="home-james-title" className="home-h2">
               Where he writes. How to reach him.
             </h2>
+            {/* Who is writing, in James's own confirmed words (positioning.ts). */}
+            <p className="home-who">{HOME_WHO}</p>
             <ul className="home-ways">
               {WAYS.map(({ href, label, Icon }) => (
                 <li key={href}>
@@ -362,6 +383,11 @@ export default function Home() {
             </ul>
             {/* Where else James writes: links only (lib/channels.ts). */}
             <FollowRow style={{ marginTop: "var(--s-2)" }} />
+            {/* The one real signup (the footer's form), where a reader has just met James. */}
+            <div className="home-signup">
+              <p className="home-signup__label">Essays by email (Substack)</p>
+              <NewsletterSignup variant="minimal" source="home-find-james" />
+            </div>
             <p className="home-helpbar">
               <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.5} />
               <span>
@@ -371,6 +397,18 @@ export default function Home() {
                 </Link>
               </span>
             </p>
+            {/* The mission work, linked home page only: LiveWell sends no one to give (lib/channels.ts). */}
+            {ENDS && (
+              <p className="home-appline home-endsline">
+                <Globe aria-hidden="true" size={20} strokeWidth={1.75} />
+                <span>
+                  <a href={ENDS.url} target="_blank" rel="noopener noreferrer" className="home-helpbar__link">
+                    {ENDS.label}
+                  </a>
+                  . {ENDS.blurb}
+                </span>
+              </p>
+            )}
             {/* One quiet line: LiveWell from an icon (/app). */}
             <p className="home-appline">
               <Smartphone aria-hidden="true" size={20} strokeWidth={1.75} />

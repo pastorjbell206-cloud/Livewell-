@@ -101,6 +101,24 @@ describe("holdPrerenderedPage", () => {
     }
   });
 
+  it("lets a held picture arrive and be drawn before the swap, so the real page's copy is not the largest paint", async () => {
+    const root = setPage(true);
+    let arrived = false;
+    const cover = document.createElement("img");
+    Object.defineProperty(cover, "complete", { configurable: true, get: () => arrived });
+    document.querySelector(".prerender-content")!.appendChild(cover);
+    holdPrerenderedPage({ path: "/downloads" });
+    mount(root, "<main><h1>Downloads</h1></main>");
+    await flush();
+    expect(document.getElementById(HELD_ID)).not.toBeNull();
+
+    arrived = true;
+    cover.dispatchEvent(new Event("load"));
+    await new Promise<void>((resolve) => setTimeout(resolve, 120));
+    expect(document.getElementById(HELD_ID)).toBeNull();
+    expect(root.classList.contains(WAIT_CLASS)).toBe(false);
+  });
+
   it("lets go after the longest wait when the page never gets its content", () => {
     vi.useFakeTimers();
     const root = setPage(true);

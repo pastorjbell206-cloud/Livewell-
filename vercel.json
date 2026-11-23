@@ -1320,6 +1320,26 @@
       "permanent": false
     },
     {
+      "source": "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.pdf",
+      "destination": "/ebook/the-monster-in-the-mirror/Blind-Spots.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.epub",
+      "destination": "/ebook/the-monster-in-the-mirror/Blind-Spots.epub",
+      "permanent": true
+    },
+    {
+      "source": "/ebook/when-god-bless-america/When-God-Bless-America.pdf",
+      "destination": "/ebook/when-god-bless-america/A-Higher-Allegiance.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ebook/when-god-bless-america/When-God-Bless-America.epub",
+      "destination": "/ebook/when-god-bless-america/A-Higher-Allegiance.epub",
+      "permanent": true
+    },
+    {
       "source": "/authors/:slug",
       "destination": "/about",
       "permanent": true

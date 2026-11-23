@@ -1,10 +1,11 @@
 /**
  * /start, "Start where you are": five roads, one for each person the site is
- * for. Every step links a page that exists and does not redirect, every road
- * is four to six steps, the road for someone new is the six steps it was,
- * the road for someone who stepped back meets church hurt first, the counts
- * the copy states still match the data, ticks survive a reload, and Home's
- * chips name the same five roads.
+ * for, and one page each for the two readers no road fits (the doubter and
+ * the pastor). Every step links a page that exists and does not redirect,
+ * every road is four to six steps, the road for someone new is the six steps
+ * it was, the road for someone who stepped back meets church hurt first, the
+ * counts the copy states still match the data, ticks survive a reload, and
+ * Home's chips name the same choices in the same order.
  */
 import { describe, it, expect, vi, afterEach, beforeEach } from "vitest";
 import { fireEvent, screen, within } from "@testing-library/react";
@@ -12,9 +13,10 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
-import { ROADS, START_ROADS_KEY, readRoadProgress } from "@/lib/startRoads";
+import { ROADS, START_PAGES, START_ROADS_KEY, WAYS_IN, readRoadProgress } from "@/lib/startRoads";
 import { TRACKS_KEY } from "@/lib/tracks";
 import { isPublicEssayHref } from "@/lib/shelf";
+import { START_LINK, nameForHref } from "@/lib/siteCatalog";
 import { ROAD_CHIPS } from "./home/roadChips";
 import Start, { START_NEXT, START_STEPS } from "./Start";
 import { ANSWERS } from "@/data/answers";
@@ -87,8 +89,40 @@ describe("/start: the five roads", () => {
     expect(back.steps[0].href).toBe("/help/church-hurt");
   });
 
-  it("names the same five roads in Home's chips", () => {
-    expect(ROAD_CHIPS).toEqual(ROADS.map((r) => ({ id: r.id, chip: r.chip })));
+  it("names the same choices in Home's chips, in the same order and to the same addresses", () => {
+    expect(ROAD_CHIPS).toEqual(WAYS_IN.map((w) => ({ id: w.id, chip: w.chip, href: w.href })));
+    // Every road once, in its own order, with the two readers' pages among them.
+    expect(WAYS_IN.filter((w) => w.road).map((w) => w.id)).toEqual(ROADS.map((r) => r.id));
+    expect(WAYS_IN.map((w) => w.id)).toEqual(["skeptical", "doubts", "new", "stepped-back", "deeper", "family", "leading"]);
+  });
+
+  it("is offered in the menus as a first step for every reader, not only someone new to faith", () => {
+    // The walk of 2026-11-23, finding 24: the phone menu's first line read "One road for someone new to faith, or coming back."
+    for (const who of ["skeptic", "doubter", "parent", "pastor"]) expect(START_LINK.line).toContain(who);
+    expect(START_LINK.href).toBe("/start");
+  });
+
+  it("gives the doubter and the pastor one way in each, straight to the page that serves them", () => {
+    // The walk of 2026-11-23: neither had a chip on Home or a card on /start (findings 8 and 14).
+    expect(START_PAGES.map((p) => [p.id, p.href])).toEqual([
+      ["doubts", "/help/doubt"],
+      ["leading", "/studyguides"],
+    ]);
+    for (const p of START_PAGES) {
+      expect(resolveHref(p.href).status, p.href).toBe("ok");
+      expect(`${p.chip} ${p.note} ${p.link}`).not.toMatch(/[—!]/);
+    }
+    // Each page under its own title.
+    expect(json("client/public/needs/doubt.json").title).toBe(START_PAGES[0].link);
+    expect(json("client/public/needs/doubt.json").answer).toContain("You don't have to settle this tonight.");
+    expect(nameForHref("/studyguides")).toBe(START_PAGES[1].link);
+
+    vi.stubGlobal("fetch", offlineFetch());
+    renderWithProviders(<Start />);
+    const choose = screen.getByRole("region", { name: "Where to start" });
+    expect(within(choose).getByRole("link", { name: /^I have doubts/ }).getAttribute("href")).toBe("/help/doubt");
+    expect(within(choose).getByRole("link", { name: /^I'm a pastor or group leader/ }).getAttribute("href")).toBe("/studyguides");
+    expect(within(choose).getAllByRole("listitem")).toHaveLength(7);
   });
 
   it("opens with the five choices, opens a road from its address, and keeps the help line", () => {
@@ -130,10 +164,22 @@ describe("/start: the five roads", () => {
     expect(Array.from(road.querySelectorAll("a.btn:not(.btn--quiet)")).map((a) => a.textContent)).toEqual(["Start the track"]);
     expect(within(within(road).getAllByRole("list")[0]).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual(START_STEPS.map((s) => s.href));
     // A road with no track yet is as it was: its next step is the button.
-    fireEvent.click(screen.getByRole("link", { name: /I'm skeptical/ }));
-    const other = screen.getByRole("heading", { level: 2, name: "If you're skeptical" }).closest("section") as HTMLElement;
+    fireEvent.click(screen.getByRole("link", { name: /I'm leading a family/ }));
+    const other = screen.getByRole("heading", { level: 2, name: "If you're leading a family" }).closest("section") as HTMLElement;
     expect(within(other).queryByText(/This road is now a track/)).toBeNull();
     expect(other.querySelectorAll("a.btn").length).toBe(1);
+  });
+
+  it("offers the skeptic's track as the main action of the road for the skeptic, with its six steps kept under it", () => {
+    vi.stubGlobal("fetch", offlineFetch());
+    window.history.replaceState(null, "", "/start#skeptical");
+    renderWithProviders(<Start />);
+    const road = screen.getByRole("heading", { level: 2, name: "If you're skeptical" }).closest("section") as HTMLElement;
+    expect(within(road).getByText(/This road is now a track: 12 short sessions in order/)).toBeInTheDocument();
+    expect(within(road).getByRole("link", { name: "Start the track" }).getAttribute("href")).toBe("/tracks/skeptical/1");
+    expect(within(road).getByRole("link", { name: "See the 12 sessions" }).getAttribute("href")).toBe("/tracks/skeptical");
+    expect(within(road).getByRole("heading", { level: 3, name: "Or take the 6 first steps on their own" })).toBeInTheDocument();
+    expect(Array.from(road.querySelectorAll("a.btn:not(.btn--quiet)")).map((a) => a.textContent)).toEqual(["Start the track"]);
   });
 
   it("continues a track begun on this device, on the road and above the five choices", () => {

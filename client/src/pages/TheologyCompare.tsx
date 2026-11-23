@@ -3,20 +3,42 @@
  * see its positions side by side: the one-line summary, the best-case voice,
  * the advocates, and the key texts, laid out in columns so the differences are
  * easy to scan. Reads the same doctrine JSON the doctrine pages use, so it
- * needs no content of its own.
+ * needs no content of its own. A doctrine that does not load says so, with a
+ * retry and a way back (lib/fetch-json, components/LoadFailed), instead of
+ * "Loading…" for ever (the walk's polish, 2026-11-23).
  */
 import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { TriageBadge } from "@/components/TriageBadge";
+import { LoadFailed } from "@/components/LoadFailed";
 import InnerHead from "@/components/art/InnerHead";
 import SectionHead from "@/components/art/SectionHead";
 import { LibCard } from "@/components/art/LibraryIndex";
 import { Scale } from "lucide-react";
+import { fetchJson } from "@/lib/fetch-json";
+import { trailFor } from "@/lib/pagePlace";
 import { DOCTRINE_INDEX, type Doctrine } from "@/lib/theology";
 
 const wrap = { maxWidth: "var(--w-wide)", margin: "0 auto" } as const;
+
+const isText = (x: unknown): x is string => typeof x === "string";
+const isTexts = (x: unknown): x is string[] => Array.isArray(x) && x.every(isText);
+/** The fields the table reads, so a malformed file shows the failure panel rather than breaking the page. */
+function isComparable(x: unknown): x is Doctrine {
+  const d = x as Partial<Doctrine> | null;
+  return (
+    !!d &&
+    isText(d.slug) &&
+    isText(d.title) &&
+    Array.isArray(d.positions) &&
+    d.positions.every((p) => !!p && isText(p.name) && isText(p.inOneLine) && isText(p.bestCase) && isTexts(p.advocates) && isTexts(p.keyTexts))
+  );
+}
+
+/** The way back from a doctrine that did not load: the door this page sits in, by its catalogue name. */
+const BACK = trailFor("/theology/compare")?.door ?? { name: "Questions", href: "/topics" };
 
 export default function TheologyCompare() {
   const ready = useMemo(() => DOCTRINE_INDEX.filter((d) => d.ready), []);
@@ -25,19 +47,25 @@ export default function TheologyCompare() {
     const asked = typeof window === "undefined" ? null : new URLSearchParams(window.location.search).get("doctrine");
     return (asked && ready.some((d) => d.slug === asked) ? asked : ready[0]?.slug) ?? "soteriology";
   });
-  // The fetched doctrine is tagged with the slug it answered; `doc` is derived
-  // per render, so switching doctrines resets the view without a synchronous
-  // setState in the effect.
-  const [result, setResult] = useState<{ slug: string; doc: Doctrine | null } | null>(null);
+  // The fetched doctrine is tagged with the slug and the attempt it answered;
+  // `doc` and `failed` are derived per render, so switching doctrines or
+  // trying again shows "Loading…" without a synchronous setState in the effect.
+  const [nonce, setNonce] = useState(0);
+  const [result, setResult] = useState<{ slug: string; nonce: number; doc: Doctrine | null } | null>(null);
 
   useEffect(() => {
-    fetch(`/theology/${slug}.json`)
-      .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then((d) => setResult({ slug, doc: d }))
-      .catch(() => setResult({ slug, doc: null }));
-  }, [slug]);
+    let live = true;
+    fetchJson(`/theology/${slug}.json`, isComparable)
+      .then((d) => live && setResult({ slug, nonce, doc: d }))
+      .catch(() => live && setResult({ slug, nonce, doc: null }));
+    return () => {
+      live = false;
+    };
+  }, [slug, nonce]);
 
-  const doc = result && result.slug === slug ? result.doc : null;
+  const current = result && result.slug === slug && result.nonce === nonce ? result : null;
+  const doc = current?.doc ?? null;
+  const failed = !!current && !current.doc;
 
   const col = `minmax(220px, 1fr)`;
 
@@ -58,9 +86,8 @@ export default function TheologyCompare() {
         url="https://www.livewellbyjamesbell.co/theology/compare"
       />
 
-      <InnerHead path="/theology/compare" title="Where Christians differ" line="Compare Christian views, side by side" plate="arch">
-        <p className="pg-head__lede">See the positions side by side.</p>
-      </InnerHead>
+      {/* One line under the title: a second one said the same thing again (walk 2026-11, finding 17). */}
+      <InnerHead path="/theology/compare" title="Where Christians differ" line="Compare Christian views, side by side" plate="arch" />
 
       {/* FIRST: pick a doctrine. */}
       <section className="home-sec home-sec--dark lw-band-tight" aria-labelledby="tc-pick-title">
@@ -85,7 +112,8 @@ export default function TheologyCompare() {
 
       <section className="home-sec" style={{ paddingLeft: "var(--gutter)", paddingRight: "var(--gutter)" }}>
         <div style={wrap}>
-          {!doc && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
+          {failed && <LoadFailed what="The comparison" onRetry={() => setNonce((n) => n + 1)} backHref={BACK.href} backLabel={`Back to ${BACK.name}`} />}
+          {!doc && !failed && <p style={{ fontFamily: "var(--U)", color: "var(--ink-muted)", textAlign: "center", padding: "var(--s-6) 0" }} role="status">Loading…</p>}
           {doc && (
             <>
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "12px", marginBottom: "var(--s-4)" }}>

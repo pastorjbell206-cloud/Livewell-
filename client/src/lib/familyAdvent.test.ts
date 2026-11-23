@@ -93,9 +93,11 @@ describe("the words", () => {
     expect(before.line.lead).toBe("Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas:");
     expect(before.heading).toBe("Advent begins Sunday, November 29");
     const begun = adventCopy(adventTonight("2026-11-30")!);
-    expect(begun.line.lead).toBe("Advent has begun. The family Advent calendar starts Tuesday, December 1:");
+    // The calendar's first reading by name, on its own page: not offered as tonight's (the walk's polish, 2026-11-23).
+    expect(begun.line).toEqual({ lead: "Advent has begun. The family Advent calendar starts Tuesday, December 1, with", link: "The Long Wait Begins", href: "/family/devotions/advent-1" });
+    expect(begun.text).toBe("The family Advent calendar starts Tuesday, December 1, with a short reading for each day to Christmas, a question to talk about, and a prayer.");
     const sixth = adventCopy(adventTonight("2026-12-06")!);
-    expect(sixth.line).toEqual({ lead: "Tonight at the table:", link: "December 6 in the family Advent calendar" });
+    expect(sixth.line).toEqual({ lead: "Tonight at the table:", link: "December 6 in the family Advent calendar", href: "/family/devotions?tab=advent&day=6" });
     expect(sixth.href).toBe("/family/devotions?tab=advent&day=6");
     expect(adventCopy(adventTonight("2026-12-25")!).heading).toBe("Christmas Day");
     expect(adventCopy(adventTonight("2028-12-01")!).line.lead).toBe("Advent begins Sunday, December 3. Tonight at the table:");

@@ -25,7 +25,8 @@ import dotenv from "dotenv";
 import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 import { loadQuestions } from "./lib/questions.mjs";
-import { SUPPORT_HEAD, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
+import { SUPPORT_HEAD, givingOpen, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
+import { slotData, slotScript, withSlotScript } from "./lib/home-tonight-slot.mjs";
 
 dotenv.config();
 
@@ -526,23 +527,26 @@ const HUB_LISTINGS = {
     { title: "Blind Spots", href: "/books/blind-spots", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
   ] },
-  // The five roads on /start, each step by step, then where the road for someone new goes on.
-  "/start": { label: "Start where you are", cap: 40, load: () => {
+  // The five roads on /start, each step by step, the two readers' pages, then where the road for someone new goes on.
+  "/start": { label: "Start where you are", cap: 42, load: () => {
     const d = readJsonSafe("client/src/lib/startRoad.json") || {};
     return [
       ...(d.roads || []).flatMap((r) => [
         ...(r.track ? [{ title: `${r.chip}: the track, in ${r.track.sessions} sessions`, href: `/tracks/${r.track.slug}`, blurb: "Short sessions in order, about ten minutes each, with your place kept." }] : []),
         ...(r.steps || []).map((x) => ({ title: `${r.chip}: ${x.title}`, href: x.href, blurb: x.line })),
       ]),
+      ...(d.pages || []).map((p) => ({ title: `${p.chip}: ${p.link}`, href: p.href, blurb: p.note })),
       ...(d.next || []).map((x) => ({ title: x.link, href: x.href, blurb: x.lead })),
     ];
   } },
-  // Every track on /tracks and each of its sessions, from the tracks index (scripts/build-tracks-index.mjs).
+  // Every track on /tracks, each of its sessions, its leader's guide when it has one, and the whole track to print, from the tracks index (scripts/build-tracks-index.mjs).
   "/tracks": { label: "Tracks", cap: 120, load: () => {
     const d = readJsonSafe("client/public/tracks/index.json") || {};
     return (d.tracks || []).flatMap((t) => [
       { title: t.title, href: `/tracks/${t.slug}`, blurb: t.subtitle },
       ...t.sessions.map((x) => ({ title: `Session ${x.n}: ${x.title}`, href: `/tracks/${t.slug}/${x.n}`, blurb: `About ${x.minutes} minutes. Opens: ${x.opens}.` })),
+      ...(t.leader ? [{ title: `Leader's guide: ${t.title}`, href: `/tracks/${t.slug}/leader`, blurb: "How to run a small group through the track, and each session's group guide in order." }] : []),
+      { title: `${t.title}: the whole track, to print`, href: `/tracks/${t.slug}/print`, blurb: "Every session on one page, a session to a sheet." },
     ]);
   } },
   // Every reading plan on /study/plans, opening the plan itself.
@@ -892,6 +896,36 @@ const PAGE_BODIES = {
         sec("Browse by area of life", `<ul>\n${areas}\n</ul>`),
       ]),
     };
+  },
+  // The Downloads page: its top and its first shelf of books, covers and all,
+  // so the first cover (the page's largest paint on a phone) is drawn from the
+  // HTML instead of after the app starts; then every download as a plain link,
+  // as before. Each cover keeps its 400 by 600 box (the same file and width as
+  // the real shelf), so nothing moves when it arrives; the head preloads the
+  // first one (headExtra) and the others load lazily.
+  "/downloads": async () => {
+    const { SHELF_GROUPS = [], SHELF_ITEMS = [], formatLine } = await loadTs("client/src/lib/shelfItems.ts");
+    const group = SHELF_GROUPS[0];
+    const books = SHELF_ITEMS.filter((b) => group && b.group === group.id);
+    if (!books.length || typeof formatLine !== "function") return null;
+    const card = (b, i) => {
+      const img = `<img class="pre-cover" src="${escapeHtml(b.cover.src)}" alt="${escapeHtml(b.cover.alt)}" width="${b.cover.width}" height="${b.cover.height}"${i === 0 ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'}>`;
+      const cover = b.page ? `<a href="${escapeHtml(b.page)}" tabindex="-1" aria-hidden="true">${img}</a>` : img;
+      const title = b.page ? `<a href="${escapeHtml(b.page)}">${escapeHtml(b.title)}</a>` : escapeHtml(b.title);
+      const file = (href, kind) => `<a href="${escapeHtml(href)}" aria-label="${escapeHtml(`Download ${b.title}, as ${kind === "PDF" ? "a PDF" : "an EPUB"}`)}">${kind}</a>`;
+      const files = [file(b.pdf, "PDF"), b.epub ? file(b.epub, "EPUB") : ""].filter(Boolean).join(" · ");
+      return `<li>${cover}<h4>${title}</h4><p class="pre-book-sub">${escapeHtml(b.subtitle)}</p><p class="pre-book-meta">${escapeHtml(formatLine(b))}</p><p class="pre-book-meta">${files}</p></li>`;
+    };
+    const html = [
+      `<h1>Downloads</h1>`,
+      `<p class="pre-subtitle">Every printable, in one place</p>`,
+      `<h2>${givingOpen() ? "Books and booklets" : "Free ebooks"}</h2>`,
+      `<h3 class="pre-eyebrow">${escapeHtml(group.label)}</h3>`,
+      `<p>${escapeHtml(group.line)}</p>`,
+      `<ul class="pre-shelf">\n${books.map(card).join("\n")}\n</ul>`,
+      hubListingHtml("/downloads"),
+    ].join("\n");
+    return { html, headExtra: `<link rel="preload" as="image" href="${escapeHtml(books[0].cover.src)}" fetchpriority="high">` };
   },
   // The index of the Honest Answers: every question, grouped as the page
   // groups them, each linking to its own page. Each row carries the answer's
@@ -1255,10 +1289,24 @@ function homeHeroHtml() {
   // Find works before the app runs: a plain GET to /search. Plate I's frame is
   // here, empty, at the size the drawing fills when React mounts.
   const label = "Look up a passage or ask a question";
-  // Tonight's line arrives with the app into a slot of the same height (Home.tsx),
-  // and under it the five roads of /start as one row of chips, as Home draws them.
-  const chips = ((readJsonSafe("client/src/lib/startRoad.json") || {}).roads || [])
-    .map((r) => `<li><a class="home-road" href="/start#${esc(r.id)}">${esc(r.chip)}</a></li>`)
+  // Tonight's line arrives with the app into a slot of the same height (Home.tsx):
+  // a script in the head of "/" (homeSlotScript, below) writes the line's own words
+  // into it, unseen, as the parser inserts it, on the nights an ordinary line's room
+  // would not fit them (lib/home-tonight-slot.mjs). No script sits inside the hero:
+  // the parser waits at a script for the stylesheet and may paint what it has, and on
+  // a phone that painted the words before Plate I, which then pushed them down. Under
+  // the slot, the choices of /start as one
+  // row of chips, as Home draws them (pages/home/roadChips.ts): a road opens on /start,
+  // a reader's page opens itself.
+  const start = readJsonSafe("client/src/lib/startRoad.json") || {};
+  const choice = new Map([
+    ...(start.roads || []).map((r) => [r.id, { chip: r.chip, href: `/start#${r.id}` }]),
+    ...(start.pages || []).map((p) => [p.id, { chip: p.chip, href: p.href }]),
+  ]);
+  const chips = (start.order || (start.roads || []).map((r) => r.id))
+    .map((id) => choice.get(id))
+    .filter(Boolean)
+    .map((c) => `<li><a class="home-road" href="${esc(c.href)}">${esc(c.chip)}</a></li>`)
     .join("");
   const roads = chips
     ? `
@@ -1281,6 +1329,16 @@ function homeHeroHtml() {
             <figure class="lw-frame-fig home-hero__art"><div class="lw-frame"><div class="lw-frame__in"></div></div><figcaption class="lw-cap"><span>Plate I</span><span>The road</span></figcaption></figure>
           </div>
         </section>`;
+}
+
+/**
+ * The script that fills the static hero's tonight slot with the words Home's
+ * line will say tonight, unseen, so the slot holds their room
+ * (lib/home-tonight-slot.mjs). It goes early in the head of "/", before the
+ * stylesheet (withSlotScript), never inside the hero (see homeHeroHtml).
+ */
+function homeSlotScript() {
+  return slotScript(slotData(REPO_ROOT));
 }
 
 /**
@@ -1348,6 +1406,8 @@ function writeRoute(template, route, head, bodyHtml = "") {
   fs.mkdirSync(path.dirname(target), { recursive: true });
   const preloads = isHome ? "" : chunkPreloads(route.path, template);
   let html = rewriteIndexHtml(template, preloads ? `${head}\n    ${preloads}` : head);
+  // The front page's head also carries the script that fills the hero's tonight slot, early (homeSlotScript).
+  if (isHome) html = withSlotScript(html, homeSlotScript());
   // The page's own text goes inside the static shell, under the masthead, in
   // the site's own type (.prerender-content in index.css). A crawler, a link
   // preview and a browser with scripts blocked read it there. For everyone
@@ -1670,7 +1730,7 @@ async function main() {
       // (SKEPTIC_TRACK_LIVE in client/src/lib/skepticTrack.ts), as its page does.
       noindex: (page.path === "/skeptic-track" && !skepticTrackLive()) || (page.path === SUPPORT_HEAD.path && supportNoindex()),
     });
-    writeRoute(template, page, head, own?.html || hubListingHtml(page.path));
+    writeRoute(template, page, own?.headExtra ? `${head}\n    ${own.headExtra}` : head, own?.html || hubListingHtml(page.path));
     wrote++;
   }
 
@@ -1715,11 +1775,16 @@ async function main() {
     // routes; starter entries live on /help itself. The head carries the
     // search title, not the reader's-words H1, plus the FAQ as structured
     // data; registry and review fields stay out of the crawlable body.
+    // The page's heading in the body is its own title, the reader's words the
+    // loaded page shows (CarePage's H1), so the first paint and the page agree;
+    // it once showed the search title and changed as the app arrived (the
+    // walk's polish, 2026-11-23). The title is then left out of the prose.
     {
       file: "client/public/needs/index.json", key: "needs", route: "/help/", ogPrefix: "help", desc: "description",
       contentDir: "client/public/needs", titleField: "seoTitle", preferTitleField: true, faq: true,
+      heading: (e) => e.title,
       filter: (e) => e.page === true,
-      omitKeys: ["slug", "page", "rank", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
+      omitKeys: ["slug", "page", "rank", "title", "seoTitle", "description", "summary", "askedAs", "states", "sensitivity", "crisisTopics", "kit", "related", "slots", "sources", "reviewed"],
     },
     // A page per family devotion (/family/devotions/:id): the 72 weekly ones
     // and each day of the daily sets, from the family index
@@ -1831,7 +1896,7 @@ async function main() {
         } catch { /* leave head-only */ }
       } else if (contentObj) {
         try {
-          bodyHtml = bodyFromContent({ title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj });
+          bodyHtml = bodyFromContent({ title: (src.heading && src.heading(e)) || title, subtitle: e.subtitle || description, sectionLabel: e.group || e.kicker, contentObj });
           if (bodyHtml) withBody++;
         } catch { /* leave head-only */ }
       }
@@ -1947,9 +2012,85 @@ async function main() {
         );
         n++;
       }
+      // The leader's guide (/tracks/:slug/leader), when the track has one: how
+      // to run the group, then every session's group guide in order, as the page
+      // shows them. Its head matches the page's own SEOMeta (TrackLeader.tsx).
+      const groupGuide = (x) =>
+        [
+          `<p>Before you meet, each person opens <a href="${escapeHtml(x.open.href)}">${escapeHtml(x.open.label)}</a>.</p>`,
+          `<p>${escapeHtml(x.question)}</p>`,
+          `<p>${escapeHtml(x.group.open)}</p>`,
+          `<ol>\n${x.group.discuss.map((q) => `<li>${escapeHtml(q)}</li>`).join("\n")}\n</ol>`,
+          `<p>${escapeHtml(x.verse.text)} (${escapeHtml(x.verse.ref)})</p>`,
+          `<p>${escapeHtml(x.group.pray)}</p>`,
+          (x.care || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+        ].join("\n");
+      if (t.leader) {
+        const lRoute = `${route}/leader`;
+        writeRoute(
+          template,
+          { path: lRoute },
+          buildHead({
+            title: `Leader's Guide: ${t.title}`,
+            description: `How to run a small group through ${t.title}, ${total} sessions: the group, the room, the order of a meeting, hard questions, and each session's group guide.`,
+            url: `${SITE_URL}${lRoute}`,
+            image: ogImageUrl(`Leader's guide: ${t.title}`),
+            type: "article",
+            schemas: [breadcrumbSchema([...crumbs, { name: "Leader's guide", path: lRoute }])],
+          }) + data,
+          article([
+            `<p class="pre-eyebrow"><a href="${route}">${escapeHtml(t.title)}</a></p>`,
+            `<h1>${escapeHtml(`Leader's guide: ${t.title}`)}</h1>`,
+            t.leader.about.map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+            ...t.leader.sections.map((p) =>
+              sec(p.title, [p.body.map((b) => `<p>${escapeHtml(b)}</p>`).join("\n"), p.steps ? `<ol>\n${p.steps.map((x) => `<li>${escapeHtml(x)}</li>`).join("\n")}\n</ol>` : ""].join("\n")),
+            ),
+            sec(`The ${total} sessions, in order`, t.sessions.map((x) => `<h3><a href="${route}/${x.n}">Session ${x.n}: ${escapeHtml(x.title)}</a></h3>\n${groupGuide(x)}`).join("\n")),
+            `<p><a href="${route}/print">The whole track on one page, to print</a></p>`,
+          ]),
+        );
+        n++;
+      }
+      // The whole track on one page, to print (/tracks/:slug/print).
+      const pRoute = `${route}/print`;
+      writeRoute(
+        template,
+        { path: pRoute },
+        buildHead({
+          title: `${t.title}: The Whole Track, to Print`,
+          description: `All ${total} sessions of ${t.title} on one page, to print or keep: the teaching, the page each session opens, one question, one thing to do, one verse, and the group guide.`,
+          url: `${SITE_URL}${pRoute}`,
+          image: ogImageUrl(t.title),
+          type: "article",
+          schemas: [breadcrumbSchema([...crumbs, { name: "The whole track, to print", path: pRoute }])],
+        }) + data,
+        article([
+          `<p class="pre-eyebrow"><a href="${route}">${escapeHtml(t.title)}</a>, the whole track</p>`,
+          `<h1>${escapeHtml(t.title)}</h1>`,
+          `<p class="pre-subtitle">${escapeHtml(t.subtitle)}</p>`,
+          t.intro.map((x) => `<p>${escapeHtml(x)}</p>`).join("\n"),
+          ...t.sessions.map((x) =>
+            sec(
+              `Session ${x.n}: ${x.title}`,
+              [
+                x.teaching.map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+                (x.care || []).map((p) => `<p>${escapeHtml(p)}</p>`).join("\n"),
+                `<ul>\n${[x.open, ...(x.also || [])].map(linkLi).join("\n")}\n</ul>`,
+                `<p>${escapeHtml(x.question)}</p>`,
+                `<p>${escapeHtml(x.do)}</p>`,
+                `<blockquote><p>${escapeHtml(x.verse.text)}</p><p>${escapeHtml(x.verse.ref)}, Berean Standard Bible</p></blockquote>`,
+                `<p>${escapeHtml(x.group.open)}</p>`,
+                `<ol>\n${x.group.discuss.map((q) => `<li>${escapeHtml(q)}</li>`).join("\n")}\n</ol>`,
+                `<p>${escapeHtml(x.group.pray)}</p>`,
+              ].join("\n"),
+            ),
+          ),
+        ]),
+      );
+      n++;
     }
     wrote += n;
-    console.log(`[prerender] wrote ${n} track and session pages`);
+    console.log(`[prerender] wrote ${n} track, session, leader's guide and print pages`);
   }
 
   // A page per finished stop of the Bible Explorer (/study/explorer/:slug).
@@ -2142,7 +2283,7 @@ async function main() {
       noindex: pageNoindex,
       schemas: own?.schemas ?? [],
     });
-    writeRoute(template, { path: routePath }, head, own?.html || hubListingHtml(routePath));
+    writeRoute(template, { path: routePath }, own?.headExtra ? `${head}\n    ${own.headExtra}` : head, own?.html || hubListingHtml(routePath));
     written.add(routePath);
     extracted++;
     wrote++;
