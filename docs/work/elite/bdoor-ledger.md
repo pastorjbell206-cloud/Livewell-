@@ -16948,3 +16948,22 @@ Cut in chapter 18: Romans 5:8-10 and the Father who gave his Son set beside Davi
 | 1 Kings 2:7; Jeremiah 41:17 | 31-43 | 2-samuel/19.json `historical` (1 Kings 2:7; Jeremiah 41:17), `story` (1 Kings 12); BSB | Repository; BSB text |
 
 Cut in chapter 19: Luke 9:54-55 and the son of David who will return in glory set beside David's mercy to Shimei (the deep note calls the link thematic, not a line the New Testament draws to this chapter); 19:11-13 and 19:26 quoted only around their inner quotations.
+
+## The plain notes on 2 Samuel 20 (2026-11-23)
+
+`client/public/bible/notes/2-samuel/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The revolt over and its wounds open; the quarrel of 19:41-43 and Judah's harsher words; Sheba a Benjamite and Saul's tribe's resentment (as Shimei, 16:5-8); a loose union held by the king, the line between Israel and Judah; beliyyaal as a judgment on a troublemaker; the ten women unable to return to David or be sent away, living as widows under guard, cared for and set aside; the cost of Absalom's act on women who had no say | 1-3 | 2-samuel/20.json `story`, `historical`, `cultural`, `words` (beliyyaal), `doctrines` (sin) | Repository |
+| 1 Kings 12:16 and the same cry at the split | 1-3 | 2-samuel/20.json `story`; BSB | Repository; BSB text |
+| Amasa promised the command (19:13) and Joab humiliated; the beard and the kiss as friendship, the murder treacherous; the two meetings set against each other, the dagger on the road and the words at the wall; the troops stopping at the body | 4-13 | 2-samuel/20.json `story`, `cultural`, `literary` | Repository |
+| Proverbs 27:6; 1 Kings 2:5 (quoted after its dash) | 4-13 | 2-samuel/20.json `hard` (1 Kings 2:5-6); BSB | Repository; BSB text (Proverbs a thematic line within the Old Testament) |
+| Joab unpunished: the killing told without approval; 1 Kings 2:5-6; David's power dependent on him, a weakness exposed and not excused; the sons of Zeruiah still beyond his control (3:39) | 4-13 `hard` | 2-samuel/20.json `hard`, `doctrines` (sin) | Repository |
+| Abel-beth-maacah in the far north near Dan and the Jordan's headwaters, by Aramean Maacah, its name's meaning; the siege ramp and battering; a wise woman as a respected counselor, like Tekoa's; Abel's name for counsel, a mother in Israel as a leading town with villages, the LORD's inheritance; nachalah used by the rebel and by the woman; the quick exchange and the repeated listen; verse 19 shaming the general; wisdom set against the dagger; Sheba's horn and Joab's framing the story | 14-22 | 2-samuel/20.json `historical`, `cultural`, `literary`, `words` (nachalah, bala), `doctrines` (wisdom) | Repository |
+| 1 Kings 15:20; 2 Kings 15:29; Judges 5:7 | 14-22 | 2-samuel/20.json `historical` (1 Kings 15:20; 2 Kings 15:29); BSB | Repository; BSB text |
+| The woman's choice: Sheba a rebel under sentence; a town spared for one man; a hard but just act of wisdom, or a violent world reported honestly without every act a model | 14-22 `hard` | 2-samuel/20.json `hard` | Repository; both readings in their holders' terms |
+| The list repeating 8:15-18 and the two lists framing chapters 9 to 20; Joab back over the army and David's later warning; Adoram over the forced labor, apparently Adoniram under Solomon and Adoram under Rehoboam, conscripted labor beginning under David | 23-26 | 2-samuel/20.json `historical`, `story`; 2-samuel/8.json `literary` | Repository |
+| 1 Kings 4:6; 1 Kings 12:18 | 23-26 | 2-samuel/20.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 20: Ezekiel 37:22-24, Ephesians 2:14-16 and Luke 22:48 set beside Sheba's cry and Joab's kiss (the deep note calls the connection thematic, not a line the New Testament draws to this chapter); the manner of Amasa's death beyond the text's single verse (not lingered over); 20:18 quoted not at all, since it carries an inner quotation.
