@@ -16180,3 +16180,18 @@ Cut in chapter 7: 1 Timothy 2:5 and Hebrews 7:25 and Samuel as a pattern of Chri
 | Acts 13:21 | 19-22 | acts/plain/13.json (13-25); BSB | Repository; BSB text |
 
 Cut in chapter 8: Mark 10:42-45 and the king who serves (the deep note calls it thematic, not a line the New Testament draws to this chapter).
+
+## The plain notes on 1 Samuel 9 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A farm errand against the demand for a war king; Benjamin small, between Ephraim and Judah, nearly destroyed in Judges 20-21, politically placed between north and south; Gibeah at Tell el-Ful, other sites proposed; Shalishah, Shaalim and Zuph not all locatable, Zuph and Samuel's ancestor (1:1); the town never named, Ramah debated; Saul impressive and passive, the servant with the idea, the money and the knowledge; a seer consulted with a gift; the quarter shekel before coins; verse 9 as a sign of later writing | 1-10 | 1-samuel/9.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Judges 21:6; Amos 7:12 | 1-10 | BSB | BSB text |
+| The reader knowing more than Saul; the folktale pattern; matsa seven times; the exodus echo of 9:16; the choice remaining God's (Deuteronomy 17:15); nagid as the one God has appointed; the high place before the temple, not condemned until later; Saul's protest like Gideon's | 11-21 | 1-samuel/9.json `literary`, `cultural`, `words` (matsa, nagid), `doctrines` (sovereignty) | Repository |
+| Exodus 3:7; Judges 6:15 | 11-21 | 1-samuel/9.json `christ` (the exodus echo), `literary` (Judges 6:15); BSB | Repository; BSB text |
+| Why God chose Saul: suited and failing by his own choices; the people's kind of king against David chosen by heart (16:7); God's plan taking in both, without excusing Saul; sovereignty and responsibility held together | 11-21 `hard` | 1-samuel/9.json `hard` | Repository; the answers in their holders' terms |
+| The sacrificial meal and its seating; about thirty guests; the reserved leg and the priest's right thigh (Leviticus 7:32); the flat roof for sleeping and private talk | 22-27 | 1-samuel/9.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 9: Luke 4:18 and the anointed one who saves (the deep note calls it pattern and vocabulary, not a line the New Testament draws to this chapter); the weight of the shekel in grams (not needed).
