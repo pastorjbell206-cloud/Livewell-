@@ -16930,3 +16930,21 @@ Cut in chapter 17: Ahithophel compared with Judas (Matthew 27:3-5) and Acts 4:27
 | The care line (‘If your grief is so heavy that you cannot carry it, or you feel you do not want to go on...’ to ‘...lists places to turn.’) | 19-33 `hard` | ruth/plain/1.json (19-22); 2-timothy/plain/4.json (6-8); deuteronomy/plain/14.json (1-2); hebrews/plain/2.json (14-18) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 18: Romans 5:8-10 and the Father who gave his Son set beside David's wish to die in Absalom's place, and Galatians 3:13 and Deuteronomy 21:23 set beside Absalom in the tree (the deep note calls the first thematic and says the text of Samuel does not make the second link itself); Absalom's hair as what caught him (the text says his head); 18:7 and 18:13 paraphrased because they carry a dash; 18:12 quoted only before its inner quotation.
+
+## The plain notes on 2 Samuel 19 (2026-11-23)
+
+`client/public/bible/notes/2-samuel/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The kingdom not yet healed; a victory celebration requiring the king to honor his soldiers, the troops stealing back as if beaten; Joab's warning real; the gate where a king appeared and judged, David resuming his role; grief not rebuked, a father's sorrow and a king's duty at once | 1-8 | 2-samuel/19.json `story`, `cultural`, `questions` | Repository |
+| Ecclesiastes 3:4 | 1-8 | BSB | BSB text (a thematic line within the Old Testament) |
+| Two groups never fully merged; Judah first at Hebron (2:4), the north later (5:1-3); both behind Absalom; the political strategy through the priests and Amasa, humiliating Joab; shuv as return and repentance; Gilgal near Jericho, Israel's first camp (Joshua 4-5) and Saul's renewal (1 Samuel 11:14-15), a second entry into the land; Shimei's confession perhaps political, echoing 12:13, gaining his life; no one to die today; satan in its human sense; mercy real and partial, and 1 Kings 2:8-9 | 9-23 | 2-samuel/19.json `historical`, `literary`, `words` (shuv, satan, chata), `doctrines` (repentance, kingdom), `christ` (1 Kings 2:8-9) | Repository |
+| Joshua 4:19; 1 Kings 2:46 and Shimei's end (bound to Jerusalem by Solomon and killed when he left it, 1 Kings 2:36-46) | 9-23 | 2-samuel/19.json `historical` (Joshua 4-5); 2-samuel/16.json `story` (Shimei's end in 1 Kings 2); BSB | Repository; BSB text |
+| Mephibosheth's mourning signs since David left supporting his loyalty; the angel of God and the king's wisdom to know all things (14:17, 20); the earlier judgment on one man's word (16:4) and the land now divided; let Ziba take it all against the bargaining around him | 24-30 | 2-samuel/19.json `cultural`, `hard`, `doctrines` (wisdom) | Repository |
+| Proverbs 18:13 (quoted before its dash) | 24-30 | BSB | BSB text (a thematic line within the Old Testament) |
+| Ziba or Mephibosheth: the case for Mephibosheth's loyalty, held by many; the case for a clever defense; the division as wise compromise, a tired king's evasion or injustice to a loyal man; the narrator not settling it | 24-30 `hard` | 2-samuel/19.json `hard` | Repository; the readings in their holders' terms |
+| Barzillai's age and wealth; old age spoken of as lost taste and hearing; burial near his parents; content to let a younger man receive the reward; Chimham perhaps remembered near Bethlehem (Jeremiah 41:17, hedged as the note hedges it); ten shares and closer kinship; the chapter mirroring the flight; avar eleven times; grief at the start and quarreling at the end; the fault line leading to Sheba and later the split | 31-43 | 2-samuel/19.json `cultural`, `historical`, `literary`, `story` | Repository |
+| 1 Kings 2:7; Jeremiah 41:17 | 31-43 | 2-samuel/19.json `historical` (1 Kings 2:7; Jeremiah 41:17), `story` (1 Kings 12); BSB | Repository; BSB text |
+
+Cut in chapter 19: Luke 9:54-55 and the son of David who will return in glory set beside David's mercy to Shimei (the deep note calls the link thematic, not a line the New Testament draws to this chapter); 19:11-13 and 19:26 quoted only around their inner quotations.
