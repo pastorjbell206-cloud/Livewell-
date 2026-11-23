@@ -151,7 +151,10 @@ describe("/family/devotions?tab=advent", () => {
     setToday(2026, 12, 20);
     serveFamilyFiles();
     renderDevotions("/family/devotions?tab=advent");
-    const day20 = await screen.findByRole("link", { name: /December 20 · Tonight/ });
+    // Waited for by its words, then found by role once: polling a role query
+    // over a list of a hundred links as it loads cost seconds on a busy machine.
+    await screen.findAllByText(/· Tonight/);
+    const day20 = screen.getByRole("link", { name: /December 20 · Tonight/ });
     expect(day20).toHaveAttribute("href", "/family/devotions/advent-20");
     expect(day20).toHaveTextContent("The Night Before");
     expect(screen.getByRole("button", { name: "Advent · 25" })).toHaveAttribute("aria-pressed", "true");
@@ -170,7 +173,8 @@ describe("/family/devotions?tab=advent", () => {
     setToday(2026, 12, 20);
     serveFamilyFiles();
     renderDevotions("/family/devotions?tab=lent&day=3");
-    await waitFor(() => expect(screen.getByRole("button", { name: /^Foundations · \d+$/ })).toHaveAttribute("aria-pressed", "true"));
+    await screen.findAllByText(/^Foundations · \d+$/);
+    expect(screen.getByRole("button", { name: /^Foundations · \d+$/ })).toHaveAttribute("aria-pressed", "true");
     expect(window.location.pathname).toBe("/family/devotions");
   });
 });

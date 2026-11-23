@@ -6,7 +6,7 @@
  * past question 52. Rendered from the real data files, not fixtures.
  */
 import { describe, it, expect, vi, afterEach } from "vitest";
-import { screen, fireEvent, waitFor } from "@testing-library/react";
+import { screen, fireEvent, waitFor, within } from "@testing-library/react";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -76,11 +76,14 @@ describe("/family/devotions", () => {
     expect(screen.queryByText(/^Week \d+/)).toBeNull();
   });
 
-  it("is a list of doors, one page per devotion, with the tab in the URL (U17)", async () => {
+  // The whole list of devotions, then the Advent tab's: heavy by design, so 10 s rather than 5.
+  it("is a list of doors, one page per devotion, with the tab in the URL (U17)", { timeout: 10000 }, async () => {
     stubFamily({ online: true });
     window.localStorage.setItem("livewell-progress-family-v1", JSON.stringify({ v: 1, start: "2026-11-03", band: "together", done: [{ id: "identity", date: "2026-11-03" }] }));
     renderWithProviders(<FamilyDevotions />);
-    const first = await screen.findByRole("link", { name: /Made on Purpose/ });
+    // Waited for by its words: polling a role query over a hundred links as the list loads cost seconds on a busy machine.
+    await screen.findAllByText(/Made on Purpose/);
+    const first = screen.getByRole("link", { name: /Made on Purpose/ });
     expect(first).toHaveAttribute("href", "/family/devotions/identity");
     expect(first).toHaveTextContent("Done on this device");
     // A list of references, so no verse text and no translation note.
@@ -88,7 +91,7 @@ describe("/family/devotions", () => {
     // No accordion: the list holds links, not buttons that open in place.
     expect(screen.getByRole("list", { name: "Hard days and big feelings" }).querySelectorAll("button")).toHaveLength(0);
 
-    fireEvent.click(screen.getByRole("button", { name: /^Advent · \d+$/ }));
+    fireEvent.click(within(screen.getByRole("group", { name: "Which devotions" })).getByRole("button", { name: /^Advent · \d+$/ }));
     await waitFor(() => expect(window.location.search).toBe("?tab=advent"));
     expect(screen.getByRole("link", { name: /December 1(?!\d)/ })).toHaveAttribute("href", "/family/devotions/advent-1");
     window.localStorage.clear();
@@ -106,7 +109,8 @@ describe("/family/devotions", () => {
     stubFamily({ online: true });
     window.history.pushState({}, "", "/family/devotions?tab=holy-week&day=40");
     renderWithProviders(<FamilyDevotions />);
-    expect(await screen.findByRole("link", { name: /Palm Sunday/ })).toBeInTheDocument();
+    await screen.findAllByText(/Palm Sunday/);
+    expect(screen.getByRole("link", { name: /Palm Sunday/ })).toBeInTheDocument();
     expect(window.location.pathname).toBe("/family/devotions");
   });
 
@@ -114,12 +118,17 @@ describe("/family/devotions", () => {
     stubFamily({ online: true });
     window.history.pushState({}, "", "/family/devotions?tab=holy-week");
     renderWithProviders(<FamilyDevotions />);
-    expect(await screen.findByRole("link", { name: /Palm Sunday/ })).toHaveAttribute("href", "/family/devotions/holy-week-1");
+    await screen.findAllByText(/Palm Sunday/);
+    expect(screen.getByRole("link", { name: /Palm Sunday/ })).toHaveAttribute("href", "/family/devotions/holy-week-1");
     expect(screen.getByRole("button", { name: /^Holy Week · \d+$/ })).toHaveAttribute("aria-pressed", "true");
   });
 });
 
 describe("/family/catechism", () => {
+  // Every question in the list further down is a button, so a role query over
+  // the whole page weighs about a hundred; these controls sit in the week's section.
+  const week = () => within(document.querySelector<HTMLElement>(".cw-week")!);
+
   it("starts a family at question 1, and features a question past 52 when it follows the calendar and its week comes", async () => {
     window.localStorage.clear();
     const when = new Date(2027, 0, 10, 12); // a Sunday in January 2027
@@ -130,7 +139,7 @@ describe("/family/catechism", () => {
     stubFamily({ online: true });
     renderWithProviders(<FamilyCatechism />);
     await waitFor(() => expect(screen.getByText(`Your family's place: Question 1 of ${catechism.length}`)).toBeTruthy());
-    fireEvent.click(screen.getByRole("button", { name: "follow the calendar's question instead" }));
+    fireEvent.click(week().getByRole("button", { name: "follow the calendar's question instead" }));
     expect(screen.getByText(`This week: Question ${expected.number}`)).toBeTruthy();
     window.localStorage.clear();
   });
@@ -140,13 +149,13 @@ describe("/family/catechism", () => {
     stubFamily({ online: true });
     const first = renderWithProviders(<FamilyCatechism />);
     await waitFor(() => expect(screen.getByText(`Your family's place: Question 1 of ${catechism.length}`)).toBeTruthy());
-    fireEvent.click(screen.getByRole("button", { name: "We learned it. Next question" }));
+    fireEvent.click(week().getByRole("button", { name: "We learned it. Next question" }));
     expect(screen.getByText(`Your family's place: Question 2 of ${catechism.length}`)).toBeTruthy();
     expect(screen.getByText(`1 of ${catechism.length} learned`)).toBeTruthy();
     first.unmount();
     renderWithProviders(<FamilyCatechism />);
     await waitFor(() => expect(screen.getByText(`Your family's place: Question 2 of ${catechism.length}`)).toBeTruthy());
-    fireEvent.click(screen.getByRole("button", { name: "Go back one" }));
+    fireEvent.click(week().getByRole("button", { name: "Go back one" }));
     expect(screen.getByText(`Your family's place: Question 1 of ${catechism.length}`)).toBeTruthy();
     window.localStorage.clear();
   });

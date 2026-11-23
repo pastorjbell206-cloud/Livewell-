@@ -313,6 +313,8 @@ img{display:block;max-width:100%}
    browser's largest-paint mark stays with this first paint and does not move
    to the swap. */
 .prerender-content{max-width:calc(var(--w-prose) + 2 * var(--s-4));margin:0 auto;padding:var(--s-5) var(--s-4) var(--s-7);font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);overflow-wrap:break-word}
+/* The held text at the reading size, as the real page sets it, so the real page's paragraph is never the larger paint (scripts/prerender-heads.mjs). */
+.prerender-content--read{font-size:var(--fs-read)}
 .prerender-content h1{font-family:var(--F);font-weight:400;font-size:var(--fs-h1);line-height:1.1;letter-spacing:-.02em;margin:0 0 var(--s-2)}
 .prerender-content h2{font-family:var(--F);font-weight:400;font-size:1.75rem;line-height:1.2;margin:var(--s-5) 0 var(--s-2)}
 .prerender-content h3,.prerender-content h4,.prerender-content h5,.prerender-content h6{font-family:var(--F);font-weight:500;font-size:1.35rem;line-height:1.25;margin:var(--s-4) 0 var(--s-1)}
@@ -327,6 +329,9 @@ img{display:block;max-width:100%}
 .prerender-content sup{font-family:var(--U);font-size:.68em;color:var(--ink-muted);margin-right:.25em}
 .prerender-content .pre-eyebrow{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);margin-bottom:var(--s-2)}
 .prerender-content .pre-subtitle{font-size:1.125rem;line-height:1.55;color:var(--ink-muted)}
+/* A page head's lede line in the held text (scripts/prerender-heads.mjs), no smaller than the page's own lede, so the real one is never the larger paint. */
+.prerender-content .pre-lede{font-size:1.375rem;line-height:1.5}
+.prerender-content h2.pre-kicker{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);line-height:1.4;margin:var(--s-3) 0 var(--s-1)}
 .prerender-content .pre-byline{font-family:var(--U);font-size:.8125rem;color:var(--ink-muted);padding-bottom:var(--s-3);border-bottom:1px solid var(--border);margin-bottom:var(--s-4)}
 /* The first shelf of /downloads in the prerendered page (scripts/prerender-heads.mjs):
    each cover keeps its 2 by 3 box at the width the real shelf gives it. */

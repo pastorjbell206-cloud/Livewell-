@@ -17,6 +17,10 @@ import { CATECHISM_PRACTICE_KEY, CATECHISM_WEEK_KEY, WEEK_STEPS, isCatechismWeek
 import { forgetFamilyFilms, type FamilyFilms } from "@/lib/familyFilms";
 import type { CatechismEntry } from "./CatechismWeek";
 import FamilyCatechism from "../FamilyCatechism";
+// The film player loads only when Watch first is pressed (by design); compiled
+// here rather than inside a test, where on a busy machine its first load ran
+// past findBy's one second.
+import "@/pages/explorer/films/FilmPlayer";
 
 const PUBLIC = path.resolve(__dirname, "../../../public");
 const catechism: CatechismEntry[] = JSON.parse(fs.readFileSync(path.join(PUBLIC, "family-catechism.json"), "utf8"));
@@ -47,6 +51,12 @@ afterEach(() => {
 });
 
 const weekCard = () => screen.findByRole("article", { name: catechism[0].question });
+// Every question in the list further down is a button, so a role query over
+// the whole page weighs about a hundred of them. These look inside the
+// week's section and the say-it-aloud card's section, where the controls are.
+const week = () => within(document.querySelector<HTMLElement>(".cw-week")!);
+const aloud = () => within(document.getElementById("say-it-aloud")!);
+const cardShows = (n: number) => screen.findByText(`Question ${n} of ${catechism.length}`);
 
 describe("the catechism's data", () => {
   it("gives every question one plain sentence and one thing to talk about, beside its answer", () => {
@@ -118,7 +128,7 @@ describe("this week's question", () => {
   it("keeps the week's ticks through a reload and starts clean on the next question", async () => {
     const first = renderWithProviders(<FamilyCatechism />);
     await weekCard();
-    const say = screen.getByRole("checkbox", { name: new RegExp(WEEK_STEPS[0].label) });
+    const say = week().getByRole("checkbox", { name: new RegExp(WEEK_STEPS[0].label) });
     fireEvent.click(say);
     expect(say).toBeChecked();
     expect(JSON.parse(window.localStorage.getItem(CATECHISM_WEEK_KEY)!)).toEqual({ v: 1, q: 1, steps: ["say"] });
@@ -126,12 +136,12 @@ describe("this week's question", () => {
 
     renderWithProviders(<FamilyCatechism />);
     await weekCard();
-    await waitFor(() => expect(screen.getByRole("checkbox", { name: new RegExp(WEEK_STEPS[0].label) })).toBeChecked());
-    expect(screen.getByRole("checkbox", { name: new RegExp(WEEK_STEPS[1].label) })).not.toBeChecked();
+    await waitFor(() => expect(week().getByRole("checkbox", { name: new RegExp(WEEK_STEPS[0].label) })).toBeChecked());
+    expect(week().getByRole("checkbox", { name: new RegExp(WEEK_STEPS[1].label) })).not.toBeChecked();
 
-    fireEvent.click(screen.getByRole("button", { name: "We learned it. Next question" }));
+    fireEvent.click(week().getByRole("button", { name: "We learned it. Next question" }));
     await screen.findByRole("article", { name: catechism[1].question });
-    for (const s of WEEK_STEPS) expect(screen.getByRole("checkbox", { name: new RegExp(s.label) })).not.toBeChecked();
+    for (const s of WEEK_STEPS) expect(week().getByRole("checkbox", { name: new RegExp(s.label) })).not.toBeChecked();
   });
 
   it("says so when the browser will not keep a tick", async () => {
@@ -140,8 +150,8 @@ describe("this week's question", () => {
     vi.spyOn(Storage.prototype, "setItem").mockImplementation(() => {
       throw new Error("full");
     });
-    fireEvent.click(screen.getByRole("checkbox", { name: new RegExp(WEEK_STEPS[2].label) }));
-    expect(screen.getByRole("checkbox", { name: new RegExp(WEEK_STEPS[2].label) })).toBeChecked();
+    fireEvent.click(week().getByRole("checkbox", { name: new RegExp(WEEK_STEPS[2].label) }));
+    expect(week().getByRole("checkbox", { name: new RegExp(WEEK_STEPS[2].label) })).toBeChecked();
     expect(screen.getAllByText(SAVE_FAILED).length).toBeGreaterThan(0);
   });
 
@@ -150,7 +160,7 @@ describe("this week's question", () => {
     vi.stubGlobal("print", print);
     renderWithProviders(<FamilyCatechism />);
     await weekCard();
-    fireEvent.click(screen.getByRole("button", { name: "Print this card" }));
+    fireEvent.click(week().getByRole("button", { name: "Print this card" }));
     expect(print).toHaveBeenCalledTimes(1);
     expect(document.querySelector(".cw-printhead")?.textContent).toBe("The Family Catechism · Question 1 of 76");
   });
@@ -160,7 +170,7 @@ describe("this week's question", () => {
     renderWithProviders(<FamilyCatechism />);
     await weekCard();
     expect(screen.getByText("Question 9 of 76")).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: "Say this one aloud" }));
+    fireEvent.click(week().getByRole("button", { name: "Say this one aloud" }));
     await waitFor(() => expect(screen.getByText("Question 1 of 76")).toBeInTheDocument());
   });
 });
@@ -168,54 +178,55 @@ describe("this week's question", () => {
 describe("saying it aloud", () => {
   it("hides the answer until the card is turned, ticks a question as known, and keeps both through a reload", async () => {
     const first = renderWithProviders(<FamilyCatechism />);
-    const card = await screen.findByRole("button", { name: /Showing the question/ });
+    await cardShows(1);
+    const card = aloud().getByRole("button", { name: /Showing the question/ });
     expect(card).toHaveAttribute("aria-pressed", "false");
     expect(card.querySelector(".cp-face--back")).toHaveAttribute("aria-hidden", "true");
     fireEvent.click(card);
     expect(card.querySelector(".cp-face--back")).toHaveAttribute("aria-hidden", "false");
 
     expect(screen.getByText("You know 0 of 76.")).toBeInTheDocument();
-    const know = screen.getByRole("button", { name: "We know this one" });
+    const know = aloud().getByRole("button", { name: "We know this one" });
     fireEvent.click(know);
     expect(know).toHaveAttribute("aria-pressed", "true");
     expect(screen.getByText("You know 1 of 76.")).toBeInTheDocument();
     // The same tick the list shows.
     expect(screen.getByText("1 of 76 learned")).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: "Next question" }));
-    expect(screen.getByRole("button", { name: "We know this one" })).toHaveAttribute("aria-pressed", "false");
+    fireEvent.click(aloud().getByRole("button", { name: "Next question" }));
+    expect(aloud().getByRole("button", { name: "We know this one" })).toHaveAttribute("aria-pressed", "false");
     first.unmount();
 
     renderWithProviders(<FamilyCatechism />);
     await waitFor(() => expect(screen.getByText("Question 2 of 76")).toBeInTheDocument());
     expect(screen.getByText("You know 1 of 76.")).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: "Previous question" }));
-    expect(screen.getByRole("button", { name: "We know this one" })).toHaveAttribute("aria-pressed", "true");
+    fireEvent.click(aloud().getByRole("button", { name: "Previous question" }));
+    expect(aloud().getByRole("button", { name: "We know this one" })).toHaveAttribute("aria-pressed", "true");
   });
 
   it("passes over the ones the family knows, and remembers that it was asked to", async () => {
     window.localStorage.setItem("lw-family-catechism-v1", JSON.stringify({ "2": true, "3": true }));
     const first = renderWithProviders(<FamilyCatechism />);
-    await screen.findByRole("button", { name: /Showing the question/ });
-    fireEvent.click(screen.getByRole("checkbox", { name: "Pass over the ones we know" }));
-    fireEvent.click(screen.getByRole("button", { name: "Next question" }));
+    await cardShows(1);
+    fireEvent.click(aloud().getByRole("checkbox", { name: "Pass over the ones we know" }));
+    fireEvent.click(aloud().getByRole("button", { name: "Next question" }));
     expect(screen.getByText("Question 4 of 76")).toBeInTheDocument();
     expect(JSON.parse(window.localStorage.getItem(CATECHISM_PRACTICE_KEY)!)).toEqual({ v: 1, at: 4, skip: true });
     first.unmount();
 
     renderWithProviders(<FamilyCatechism />);
     await waitFor(() => expect(screen.getByText("Question 4 of 76")).toBeInTheDocument());
-    expect(screen.getByRole("checkbox", { name: "Pass over the ones we know" })).toBeChecked();
-    fireEvent.click(screen.getByRole("button", { name: "Previous question" }));
+    expect(aloud().getByRole("checkbox", { name: "Pass over the ones we know" })).toBeChecked();
+    fireEvent.click(aloud().getByRole("button", { name: "Previous question" }));
     expect(screen.getByText("Question 1 of 76")).toBeInTheDocument();
   });
 
   it("says so when the browser will not keep the card's place", async () => {
     renderWithProviders(<FamilyCatechism />);
-    await screen.findByRole("button", { name: /Showing the question/ });
+    await cardShows(1);
     vi.spyOn(Storage.prototype, "setItem").mockImplementation(() => {
       throw new Error("full");
     });
-    fireEvent.click(screen.getByRole("button", { name: "Next question" }));
+    fireEvent.click(aloud().getByRole("button", { name: "Next question" }));
     expect(screen.getByText("Question 2 of 76")).toBeInTheDocument();
     expect(screen.getAllByText(SAVE_FAILED).length).toBeGreaterThan(0);
   });
