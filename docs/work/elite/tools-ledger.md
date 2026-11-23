@@ -1537,3 +1537,17 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | waiting-on-god | The God who seems slow is not absent | the topic's own first form (framing) |
 | waiting-on-god | Psalm 33: the congregation waiting; none of the things people trust saves | note psalms/33 summary; plain psalms/33 1-22 asks |
 | waiting-on-god | Care lines | plain psalms/130 |
+| regret | Peter breaks down; tears the beginning of repentance; the tomb's message names him, he has not been dropped; Jesus had known and chosen him anyway | note mark/14 verses 71-72; plain mark/14 66-72 hard and asks |
+| regret | God restores the harvests and repays the years the locusts ate | note joel/2 summary |
+| regret | Do not stay fixed on the former things; a new exodus greater than the first | note isaiah/43 summary; Isaiah 43:16-19 |
+| regret | Not yet arrived; forgetting what is behind; an old success you live on or an old failure you cannot put down | plain philippians/3 12-16 asks |
+| regret | Joseph names the sale, then tells them not to be distressed; neither truth cancels the other; the sale evil, God used it to save | note genesis/45 verses 4-5; plain genesis/45 4-8 hard |
+| regret | Least of the apostles because he persecuted the church; grace made him what he is and was not in vain; what grace could make of you | note 1-corinthians/15 verses 9-10; plain 1-corinthians/15 1-11 asks |
+| regret | Number our days; not morbid; those who know their days are few learn what matters | note psalms/90 summary; plain psalms/90 7-12 asks |
+| regret | Micah closes with a hymn to the God who pardons and casts sins into the sea | note micah/7 summary |
+| regret | New creation; what is the old that has passed and the new God is doing | plain 2-corinthians/5 11-17 asks |
+| regret | Hebrews 12:16-17: Esau could not undo the consequence; not God refusing a sincere turning; another reading of hardening; the note does not choose; Esau later embraced Jacob; the fear not the mark of one who has fallen | plain hebrews/12 12-17 hard; Genesis 33:4 |
+| regret | Twenty years for Joseph's brothers | plain genesis/42 18-24 asks |
+| regret | Regret that leads to repentance and life against regret that circles the wound; you cannot rewrite the road behind you but are not walking alone | the topic's own first form (framing and application) |
+| regret | Psalm 90:14-17: glad for as many days as afflicted; establish the work of our hands | Psalm 90:14-17 |
+| regret | Care lines | plain psalms/90 |
