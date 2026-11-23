@@ -16,6 +16,7 @@ import Home from "../Home";
 import { homeTonight } from "./HomeTonight";
 import { LATEST_COUNT, committedLatest, latestFrom, longDate } from "./HomeLatest";
 import { LATEST_CUTOFF, SHELF_ESSAYS, isPublicEssay } from "@/lib/shelf";
+import { devotionHref, tonightOn } from "@/lib/familyTable";
 
 /** Noon on a calendar day in the reader's own time zone. */
 function setToday(y: number, m: number, d: number) {
@@ -71,12 +72,19 @@ describe("homeTonight", () => {
     });
   });
 
-  it("says only that the calendar starts December 1 on the nights before it", () => {
-    expect(said("2026-11-29")).toEqual({
-      tonight: null,
-      href: undefined,
-      advent: "Advent has begun. The family Advent calendar starts Tuesday, December 1: see the readings.",
-    });
+  it("offers the calendar's first reading on Advent Sunday and the nights before December 1, as /family does", () => {
+    // The walk of 2026-11-23 (finding 20): Home had no devotion on these nights while /family had one.
+    for (const date of ["2026-11-29", "2026-11-30"]) {
+      expect(said(date)).toEqual({
+        tonight: "Advent has begun. Tonight at the table: The Long Wait Begins, Day 1 of the family Advent calendar.",
+        href: "/family/devotions/advent-1",
+        advent: null,
+      });
+      // The same reading /family offers that night.
+      expect(said(date).href).toBe(devotionHref(tonightOn(date)!.id));
+    }
+    // December 1 names it by its date, as before.
+    expect(said("2026-12-01").tonight).toBe("Tonight at the table: The Long Wait Begins, December 1 in the family Advent calendar.");
   });
 
   it("names the day of the Advent calendar, in U13's words", () => {
