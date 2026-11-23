@@ -4,7 +4,7 @@
  * The first screen is Plate I (the road), James's headline, the one sentence
  * that says what the site is for, and Find (one field: a passage or a
  * question), with tonight's family devotion under it. On a phone the plate
- * runs edge to edge above the headline. Then the ten doors as picture
+ * runs edge to edge above the headline. Then ten ways in as picture
  * cards, and the things a visitor can touch: the 66 books on one shelf, a
  * hard question asked straight, tonight at the table, and two thousand
  * years of church history on one line. Then the latest writing and the
@@ -117,9 +117,14 @@ const DOORS: Door[] = [
   { title: "Start here", href: "/start", plate: "tree", note: "New, or coming back" },
 ];
 
-/** The other five, smaller. */
+/**
+ * The other five, smaller. The first was "Context and creeds" on /study, from
+ * when that page held both; the creeds now sit under History, so the card
+ * takes the context half under its one name, Bible background (lib/siteCatalog),
+ * and opens that page (the walk of 2026-11-23, finding 3).
+ */
 const MORE_DOORS: Door[] = [
-  { title: "Context and creeds", href: "/study", plate: "jar" },
+  { title: "Bible background", href: "/resources/context", plate: "jar" },
   { title: "Tools", href: "/tools", plate: "compass" },
   { title: "Essays", href: "/writing", plate: "quill" },
   { title: "Books", href: "/books", plate: "books" },
@@ -219,10 +224,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE TEN DOORS */}
+      {/* TEN WAYS IN. Not called doors: the menu's seven doors are the site's doors. */}
       <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">
         <div className="home-wrap">
-          <SectionHead id="home-doors-title" eyebrow="Ten doors" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
+          <SectionHead id="home-doors-title" eyebrow="Ten ways in" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
           <ul className="home-doors">
             {DOORS.map((d, i) => (
               <li key={d.href} className={i === 0 ? "home-doors__lead" : undefined}>

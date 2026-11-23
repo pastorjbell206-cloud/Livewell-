@@ -17,6 +17,7 @@ import { homeTonight } from "./HomeTonight";
 import { LATEST_COUNT, committedLatest, latestFrom, longDate } from "./HomeLatest";
 import { LATEST_CUTOFF, SHELF_ESSAYS, isPublicEssay } from "@/lib/shelf";
 import { devotionHref, tonightOn } from "@/lib/familyTable";
+import { nameForHref } from "@/lib/siteCatalog";
 
 /** Noon on a calendar day in the reader's own time zone. */
 function setToday(y: number, m: number, d: number) {
@@ -163,7 +164,7 @@ describe("Home's doors", () => {
       "/topics",
       "/family",
       "/start",
-      "/study",
+      "/resources/context",
       "/tools",
       "/writing",
       "/books",
@@ -173,6 +174,18 @@ describe("Home's doors", () => {
     expect(within(doors).getByRole("link", { name: /Find James/ }).getAttribute("href")).toBe("/connect");
     // Every door carries its picture frame; the pictures themselves are decorative.
     expect(doors.querySelectorAll(".lw-door .lw-frame")).toHaveLength(10);
+  });
+
+  it("never count themselves as the menu's doors, and name each page as the menus do", () => {
+    // The walk of 2026-11-23, finding 3: "Ten doors" beside a menu of seven, and "Context and creeds" opening Study the Bible.
+    setToday(2026, 10, 27);
+    renderHome();
+    const doors = screen.getByRole("region", { name: "Where to begin." });
+    expect(doors).toHaveTextContent("Ten ways in");
+    expect(doors).not.toHaveTextContent(/doors/i);
+    const background = within(doors).getByRole("link", { name: /Bible background/ });
+    expect(background.getAttribute("href")).toBe("/resources/context");
+    expect(nameForHref("/resources/context")).toBe("Bible background");
   });
 });
 
