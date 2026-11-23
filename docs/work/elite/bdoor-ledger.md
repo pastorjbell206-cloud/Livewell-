@@ -16211,3 +16211,19 @@ Cut in chapter 9: Luke 4:18 and the anointed one who saves (the deep note calls 
 | Deuteronomy 17:19; Joshua 7:14 | 17-27 | 1-samuel/10.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 10: Luke 4:18, John 1:32-33 and Acts 2:33 and the anointing and the Spirit in Jesus (the deep note calls it a pattern, not a line the New Testament draws to this chapter).
+
+## The plain notes on 1 Samuel 11 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Ammonites east of the Jordan, Rabbah as modern Amman, Gilead and the tribes there; Jabesh-gilead in northern Gilead; its bond with Benjamin from Judges 21; a treaty as surrender; the right eye as humiliation and perhaps disabling; seven days and Nahash's confidence; 4QSamuel-a's paragraph on Nahash, printed by some translations and not others; the king still in the fields | 1-5 | 1-samuel/11.json `historical`, `cultural`, `story`; bible/guides/how-we-got-the-old-testament.json (the scrolls table) | Repository |
+| Judges 21:12 | 1-5 | 1-samuel/11.json `historical`; BSB | Repository; BSB text |
+| A Judges-style rescue; Saul from the field like Gideon (Judges 6:11); the Spirit's work; the oxen as threat and the parallel of Judges 19:29-30, a summons to unite and not divide; the terror of the LORD and one man; the numbers of verse 8 and the word for thousand; the morning watch | 6-11 | 1-samuel/11.json `cultural`, `literary`, `historical`, `words` (pachad), `doctrines` (spirit) | Repository |
+| Judges 6:11; Judges 19:30 | 6-11 | 1-samuel/11.json `literary`, `cultural`; BSB | Repository; BSB text; the act of Judges 19:29 named without detail |
+| Saul's finest moment, mercy to his critics and credit to the LORD; teshu'ah as rescue and God's work; chadash and the three readings of renewal; Jabesh remembering (31:11-13) | 12-15 | 1-samuel/11.json `story`, `literary`, `words` (teshu'ah, chadash), `doctrines` (salvation, kingdom) | Repository; the readings in their holders' terms |
+| 2 Samuel 2:5 (quoted without its opening blessing); Proverbs 20:22 (only its second sentence, to keep a quotation out of a quotation) | 12-15 | BSB | BSB text |
+| Saul made king three times: several traditions gathered by editors, or one process (designation, selection, confirmation), Samuel's word renewal; the finished account's agreement | 12-15 `hard` | 1-samuel/11.json `hard` | Repository; both readings in their holders' terms |
+
+Cut in chapter 11: Luke 23:34 and the king who shows mercy to those who rejected him (the deep note calls it thematic, not a line the New Testament draws to this chapter); teshu'ah as related to the names Joshua and Jesus (kept for chapter 14, where the deep note gives it for yasha).
