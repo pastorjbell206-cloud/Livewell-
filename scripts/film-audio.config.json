@@ -1,0 +1,21 @@
+{
+  "about": "The one setting for the moving pictures' recorded voice. Change `voice` (a stock voice of the speech model, never a copy of a real person's voice) and run `node scripts/build-film-audio.mjs --all` to make every file again; `--check` fails until the files match. `speed` is the engine speed that lands this voice near 137 words a minute with its pauses; `gaps` are the pauses in seconds; `respell` changes only what the engine is given to say, never the site's text (LORD as Lord; two names the British voice stressed wrongly; a reference in figures in a film's title said in words).",
+  "voice": "bm_lewis",
+  "lang": "en-gb",
+  "speed": 0.829,
+  "gaps": {
+    "lead": 0.12,
+    "sentence": 0.5,
+    "captionToVerse": 0.85,
+    "verseToRef": 0.5,
+    "tail": 0.3
+  },
+  "loudness": -16,
+  "bitrate": "48k",
+  "respell": [
+    ["\\bLORD\\b", "Lord"],
+    ["\\bJudea\\b", "Judaea"],
+    ["\\bIsrael\\b", "Izrael"],
+    ["(\\d+):(\\d+)", "$1, verse $2"]
+  ]
+}

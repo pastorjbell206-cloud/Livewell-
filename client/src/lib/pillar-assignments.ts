@@ -1845,5 +1845,30 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 6,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-the-god-of-the-old-testament-the-god-of-jesus": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-keep-the-sabbath": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "does-god-have-a-plan-for-my-life": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-gambling-a-sin": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "can-i-trust-my-feelings-about-god": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
   }
 };

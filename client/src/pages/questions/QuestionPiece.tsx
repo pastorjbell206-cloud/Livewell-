@@ -11,6 +11,7 @@
  * Scripture references open as verse sheets; the wording is not changed. A
  * pending piece says noindex and carries the review line.
  */
+import FilmsHere from "@/components/FilmsHere";
 import { Link, useRoute } from "wouter";
 import { ArrowLeft, ArrowRight, ArrowUp, BookOpen, MessageCircleQuestion } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -199,6 +200,7 @@ export default function QuestionPiece() {
               )}
               <Back />
             </section>
+            <FilmsHere path={`/questions/${params?.area ?? ""}/${params?.slug ?? ""}`} />
 
             {/* For the reader who thinks the piece is wrong: where to say so. */}
             <PushBack what="piece" />

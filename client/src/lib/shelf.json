@@ -102,6 +102,8 @@
     {"slug": "does-science-disprove-god", "section": "doubt", "status": "live", "title": "Does Science Disprove God?"},
     {"slug": "did-jesus-really-rise-from-the-dead", "section": "doubt", "status": "live", "title": "Did Jesus Really Rise from the Dead?"},
     {"slug": "is-depression-a-spiritual-failure", "section": "doubt", "status": "live", "title": "Is Depression a Spiritual Failure?"},
+    {"slug": "is-the-god-of-the-old-testament-the-god-of-jesus", "section": "doubt", "status": "live", "title": "Is the God of the Old Testament the God of Jesus?"},
+    {"slug": "can-i-trust-my-feelings-about-god", "section": "doubt", "status": "live", "title": "Can I Trust My Feelings About God?"},
     {"slug": "covenant-vs-contract-what-marriage-is", "section": "ordinary-faithfulness", "status": "pending", "title": "Is Marriage a Covenant or a Contract?"},
     {"slug": "what-the-bible-says-about-submission", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Submission in Marriage?"},
     {"slug": "what-fatherhood-requires", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Being a Father?"},
@@ -111,6 +113,9 @@
     {"slug": "divorce-remarriage-and-the-church", "section": "ordinary-faithfulness", "status": "live", "title": "Divorce, Remarriage and the Church"},
     {"slug": "is-divorce-ever-right-and-may-a-divorced-person-remarry", "section": "ordinary-faithfulness", "status": "live", "title": "Is Divorce Ever Right, and May a Divorced Person Remarry?"},
     {"slug": "should-christians-drink-alcohol", "section": "ordinary-faithfulness", "status": "live", "title": "Should Christians Drink Alcohol?"},
+    {"slug": "should-christians-keep-the-sabbath", "section": "ordinary-faithfulness", "status": "live", "title": "Should Christians Keep the Sabbath?"},
+    {"slug": "does-god-have-a-plan-for-my-life", "section": "ordinary-faithfulness", "status": "live", "title": "Does God Have a Plan for My Life?"},
+    {"slug": "is-gambling-a-sin", "section": "ordinary-faithfulness", "status": "live", "title": "Is Gambling a Sin?"},
     {"slug": "is-money-the-root-of-all-evil", "section": "ordinary-faithfulness", "status": "live", "title": "Is Money the Root of All Evil?"}
   ]
 }

@@ -17,16 +17,21 @@
  *   not offered, every frame appears finished, and the reader steps with
  *   Next. Everything the motion shows is said in the caption.
  * - It pauses when it is scrolled out of view or the tab is hidden.
- * - Listen (off by default, kept on this device) reads each frame aloud in the
- *   device's own voice (lib/film-voice.ts). While it plays with Listen on, a
- *   frame waits for its words to finish before the next one comes (with a
- *   timeout in case the voice never says it has finished). Pause stops the
- *   voice; Back, Next and the frame buttons stop it and say the new frame, and
- *   a playing film keeps playing; leaving the page, scrolling the player away
- *   or hiding the tab stops it. Where the device has no voice, or the voice
- *   fails, the film falls back to its timed captions and says so in one line.
- *   With Listen on, steps are not also announced to a screen reader, so no
- *   one hears two voices at once. Captions always stay on screen.
+ * - Listen (off by default, kept on this device) reads each frame aloud. It
+ *   plays the frame's recorded file (lib/film-audio.ts: a computer-made voice,
+ *   said so in one line under the control), asked for only once Listen is on
+ *   and the frame is reached; nothing is fetched with the page. Where a file
+ *   is missing or cannot be played, the device's own voice says that frame
+ *   (lib/film-voice.ts). While it plays with Listen on, a frame waits for its
+ *   words to finish before the next one comes (with a timeout in case the
+ *   end never arrives). Pause holds the voice and Play goes on from where it
+ *   stopped (the device's voice starts the frame again); Back, Next and the
+ *   frame buttons stop it and say the new frame, and a playing film keeps
+ *   playing; leaving the page, scrolling the player away or hiding the tab
+ *   stops it. Where there is no sound at all, the film falls back to its
+ *   timed captions and says so in one line. With Listen on, steps are not
+ *   also announced to a screen reader, so no one hears two voices at once.
+ *   Captions always stay on screen.
  * - Every caption is laid in the same grid cell, so the box is as tall as the
  *   longest one from the start and nothing below it moves while it plays.
  *   The box is drawn as a panel: before Play it holds the film's line and the
@@ -62,8 +67,9 @@ import {
   spokenText,
   writeListen,
 } from "@/lib/film-voice";
+import { canPlayFiles, filmAudioUrl } from "@/lib/film-audio";
 import type { FilmFrame, Level, Leveled, Link as LinkT } from "@/lib/explorer";
-import type { FilmDrawing } from "./motion";
+import { stageMotion, type FilmDrawing } from "./motion";
 import { FILM_SCENES } from "./scenes";
 import "./film.css";
 
@@ -120,20 +126,39 @@ export default function FilmPlayer({
   const uid = useId();
   const hintId = `${uid}hint`;
 
-  // Listen: the device's voice. `voiced` is true while frames are spoken.
+  // Listen. A frame's recorded file is played where the browser can play
+  // it; where it cannot, or the file fails, the device's own voice says the
+  // frame. `voiced` is true while frames are spoken.
   const [listen, setListen] = useState(readListen);
+  const [filesOk] = useState(canPlayFiles);
   const [voiceOk] = useState(canSpeak);
   const [voiceFailed, setVoiceFailed] = useState(false);
-  const voiced = listen && voiceOk && !voiceFailed;
+  const voiceDown = useRef(false);
+  const voiced = listen && (filesOk || (voiceOk && !voiceFailed));
   // Bumped whenever the voice is stopped, so a sentence that ends after the
   // reader has moved on cannot move the film.
   const run = useRef(0);
   // Held while it speaks: Chrome can drop an utterance nothing references and
   // never fire its end.
   const speaking = useRef<SpeechSynthesisUtterance | null>(null);
+  // One audio element for the whole film (a phone lets an element that a tap
+  // started play on by itself), the file it holds, and the next frame's file
+  // fetched ahead while this one plays.
+  const audio = useRef<HTMLAudioElement | null>(null);
+  const held = useRef("");
+  const ahead = useRef<HTMLAudioElement | null>(null);
+  const missing = useRef(new Set<string>());
+  // True when the next frame said must start from its first word (a step by
+  // hand, Replay, Listen turned on); false lets a paused file go on.
+  const fresh = useRef(true);
   const hush = useCallback(() => {
     run.current += 1;
     speaking.current = null;
+    try {
+      audio.current?.pause();
+    } catch {
+      /* nothing is playing */
+    }
     if (!voiceOk) return;
     try {
       window.speechSynthesis.cancel();
@@ -147,8 +172,11 @@ export default function FilmPlayer({
     (k: number, done?: () => void) => {
       hush();
       const mine = run.current;
+      const restart = fresh.current;
+      fresh.current = false;
       const text = spokenText(frames[k], level);
       let finished = false;
+      let wait = 0;
       const finish = () => {
         if (finished || mine !== run.current) return;
         finished = true;
@@ -156,36 +184,101 @@ export default function FilmPlayer({
         speaking.current = null;
         done?.();
       };
-      const wait = window.setTimeout(finish, speechTimeoutMs(text));
-      try {
-        const synth = window.speechSynthesis;
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = document.documentElement.lang || "en-US";
-        const v = pickVoice(u.lang);
-        if (v) u.voice = v;
-        u.rate = 0.95;
-        u.onend = finish;
-        u.onerror = e => {
-          if (mine !== run.current) return;
-          // Our own stops interrupt the voice; anything else means this
-          // device cannot read aloud here: fall back to the timed captions.
-          if (e.error === "interrupted" || e.error === "canceled") return;
+      /** No sound for this frame: hold it as long as its caption takes to read. */
+      const timed = () => {
+        window.clearTimeout(wait);
+        wait = window.setTimeout(finish, frameMs(frames[k][level]));
+      };
+      /** The device's own voice. */
+      const speak = () => {
+        window.clearTimeout(wait);
+        if (!voiceOk || voiceDown.current) return timed();
+        const fail = (later = false) => {
+          voiceDown.current = true;
+          // A throw happens during this render's work: say so after it.
+          if (later) window.setTimeout(() => setVoiceFailed(true), 0);
+          else setVoiceFailed(true);
+          if (filesOk) return timed();
           window.clearTimeout(wait);
           hush();
-          setVoiceFailed(true);
         };
-        speaking.current = u;
-        if (synth.paused) synth.resume();
-        synth.speak(u);
-      } catch {
-        window.clearTimeout(wait);
-        hush();
-        // Said after this render, as the voice's own errors are.
-        window.setTimeout(() => setVoiceFailed(true), 0);
+        wait = window.setTimeout(finish, speechTimeoutMs(text));
+        try {
+          const synth = window.speechSynthesis;
+          const u = new SpeechSynthesisUtterance(text);
+          u.lang = document.documentElement.lang || "en-US";
+          const v = pickVoice(u.lang);
+          if (v) u.voice = v;
+          u.rate = 0.95;
+          u.onend = finish;
+          u.onerror = e => {
+            if (mine !== run.current) return;
+            // Our own stops interrupt the voice; anything else means this
+            // device cannot read aloud here: fall back to the timed captions.
+            if (e.error === "interrupted" || e.error === "canceled") return;
+            fail();
+          };
+          speaking.current = u;
+          if (synth.paused) synth.resume();
+          synth.speak(u);
+        } catch {
+          fail(true);
+        }
+      };
+
+      const url = filmAudioUrl(scene, level, k, frames[k].id);
+      if (!filesOk || missing.current.has(url)) speak();
+      else {
+        // The frame's recorded file.
+        const a = (audio.current ??= new window.Audio());
+        let fell = false;
+        const fallBack = () => {
+          if (fell || finished || mine !== run.current) return;
+          fell = true;
+          missing.current.add(url);
+          held.current = "";
+          speak();
+        };
+        a.onended = finish;
+        a.onerror = fallBack;
+        a.onplaying = () => {
+          // Fetch the next frame's file ahead, now that Listen is on.
+          if (mine !== run.current || k + 1 >= frames.length) return;
+          const next = filmAudioUrl(scene, level, k + 1, frames[k + 1].id);
+          if (missing.current.has(next) || ahead.current?.dataset.url === next)
+            return;
+          const b = new window.Audio();
+          b.preload = "auto";
+          b.dataset.url = next;
+          b.src = next;
+          ahead.current = b;
+        };
+        // In case neither the end nor an error ever comes.
+        wait = window.setTimeout(finish, speechTimeoutMs(text) * 2);
+        const goOn =
+          !restart &&
+          held.current === url &&
+          a.paused &&
+          !a.ended &&
+          a.currentTime > 0;
+        if (!goOn) {
+          held.current = url;
+          a.preload = "auto";
+          a.src = url;
+        }
+        try {
+          const p = a.play() as Promise<void> | undefined;
+          p?.catch?.((e: { name?: string }) => {
+            // Our own stop interrupts a file that is still loading.
+            if (e?.name !== "AbortError") fallBack();
+          });
+        } catch {
+          fallBack();
+        }
       }
       return () => window.clearTimeout(wait);
     },
-    [frames, level, hush]
+    [frames, level, hush, scene, filesOk, voiceOk]
   );
 
   useEffect(() => {
@@ -229,13 +322,12 @@ export default function FilmPlayer({
 
   // Leaving the page stops the voice.
   useEffect(() => {
-    if (!voiceOk) return;
     window.addEventListener("pagehide", hush);
     return () => {
       window.removeEventListener("pagehide", hush);
       hush();
     };
-  }, [voiceOk, hush]);
+  }, [hush]);
 
   // Out of view, or the tab hidden: pause, and stop the voice.
   useEffect(() => {
@@ -268,6 +360,7 @@ export default function FilmPlayer({
   const goTo = useCallback(
     (k: number) => {
       const to = Math.max(0, Math.min(n - 1, k));
+      fresh.current = true;
       if (voiced) {
         setAnnounce("");
         setI(to);
@@ -287,9 +380,11 @@ export default function FilmPlayer({
     const on = !listen;
     setListen(on);
     setVoiceFailed(false);
+    voiceDown.current = false;
+    fresh.current = true;
     writeListen(on);
     if (!on) hush();
-    else if (!playing && i >= 0 && voiceOk) say(i);
+    else if (!playing && i >= 0 && (filesOk || voiceOk)) say(i);
   };
 
   const play = () => {
@@ -304,6 +399,7 @@ export default function FilmPlayer({
   const replay = () => {
     if (still) goTo(0);
     else {
+      fresh.current = true;
       setAnnounce("");
       setI(0);
       setPlaying(true);
@@ -338,6 +434,7 @@ export default function FilmPlayer({
         <div
           className={`lw-frame__in fp-screen${still ? " is-still" : ""}${i < 0 ? " is-poster" : ""}`}
           data-frame={i}
+          {...stageMotion(drawing, i, voiced ? 1 : 0.28)}
           tabIndex={0}
           aria-describedby={hintId}
         >
@@ -455,9 +552,11 @@ export default function FilmPlayer({
           </span>
         </button>
         <p className="fp-listen__note" id={`${uid}voice`} aria-live="polite">
-          {listen && (!voiceOk || voiceFailed)
+          {listen && !filesOk && (!voiceOk || voiceFailed)
             ? "Sound is not available on this device, so the captions carry the words."
-            : "Read aloud by your device's voice."}
+            : filesOk
+              ? "Read aloud by a computer-made voice, not a person."
+              : "Read aloud by your device's voice."}
         </p>
       </div>
 
