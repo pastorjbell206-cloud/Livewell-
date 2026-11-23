@@ -1469,3 +1469,18 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | guilt-and-conscience | Receive the forgiveness already paid rather than paying a settled debt | the topic's own first form (application) |
 | guilt-and-conscience | Psalm 130: if God kept score no one would stand; he does not keep score that way; pray verse 1 from wherever you are | plain psalms/130 1-4 asks |
 | guilt-and-conscience | Care lines | plain psalms/38; plain 2-corinthians/7 |
+| assurance-of-faith | Christians differ on whether a true believer can be lost; all agree the sheep's safety rests on his hand and the Father's power; many who worry are still listening for his voice | plain john/10 22-29 hard and asks; note john/10 verses 27-29 |
+| assurance-of-faith | Traditions read the Father's giving differently; every tradition reads the second half as unqualified welcome; he does not promise to check whether you were chosen | note john/6 verses 36-37; plain john/6 35-40 hard and asks |
+| assurance-of-faith | Not a spirit of slavery returning to fear; the Spirit's witness the ground of assurance, described differently (Wesley; Westminster 18.2, as the note gives them); what fear drives your relationship with God | note romans/8 verses 15, 16-17; plain romans/8 12-17 asks |
+| assurance-of-faith | No condemnation to no separation; churches differ on whether a believer can turn away; the fear of having lost God's love not usually the mark of one who has | note romans/8 verses 38-39; plain romans/8 31-39 hard |
+| assurance-of-faith | So that you may know; traditions explain assurance differently (Reformed, Wesleyan, Lutheran, Catholic, as the note gives them); all read John as giving confidence, grounded in Christ not feelings | plain 1-john/5 13-15 hard |
+| assurance-of-faith | Faith and doubt in one person; faith asks for more faith; Jesus heals at the mixed confession; you do not need perfect faith | note mark/9 verses 23-24; plain mark/9 14-29 asks |
+| assurance-of-faith | Little faith, not no faith; the rescue before the rebuke; the point is Jesus' hand | note matthew/14 verses 30-31; plain matthew/14 22-33 hard |
+| assurance-of-faith | Faith with no evidence but the manner of Jesus' dying; salvation without baptism, works or time to reform; if you think it too late, this story is for you | note luke/23 verses 42-43; plain luke/23 39-43 hard |
+| assurance-of-faith | Paul thanks God whenever he remembers them; writes in chains | plain philippians/1 3-11 asks; Philippians 1:13 |
+| assurance-of-faith | Near the end, expecting to die; what your confidence rests on | plain 2-timothy/1 8-12 hard and asks; 2 Timothy 4:6 |
+| assurance-of-faith | 2 Corinthians 13:5: Corinth testing Paul; he expects them to pass; the test is whether Christ is present; self-examination looks first to Christ | note 2-corinthians/13 hard; plain 2-corinthians/13 5-10 hard |
+| assurance-of-faith | Matthew 7:21-23: frightened many sincere people; those turned away rest on their works and never mention mercy; the answer is hearing and doing; the fear a sign you care what Jesus thinks | plain matthew/7 21-23 hard |
+| assurance-of-faith | Where Christians differ: perseverance (Reformed, Calvinist, much of the Baptist world); can fall away (Catholic, Orthodox, Lutheran, Wesleyan, Methodist), Hebrews 6:4-6, John 15:6; the creeds do not settle it; both lead to a humble clinging to Christ | plain john/10 22-29 hard; plain romans/8 31-39 hard; plain 1-john/5 13-15 hard; Honest Answer can-you-lose-your-salvation |
+| assurance-of-faith | Psalm 139: he knows the worst and has not let go; no place his hand cannot reach | plain psalms/139 1-12 asks |
+| assurance-of-faith | Care lines | plain 2-corinthians/13 |
