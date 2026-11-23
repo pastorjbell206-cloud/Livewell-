@@ -1686,7 +1686,6 @@ export const ANSWERS: Answer[] = [
               "Paul, writing in the 50s, hands on a formula he had already received: \"that Christ died for our sins in accordance with the Scriptures, that he was buried\" (1 Corinthians 15:3-4).",
               "Tacitus, a Roman historian with no sympathy for Christians, writing early in the second century, says \"Christus, from whom the name had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our procurators, Pontius Pilatus\" (Annals 15.44).",
               "A crucified Messiah embarrassed the first preachers. Paul called it \"a stumbling block to Jews and folly to Gentiles\" (1 Corinthians 1:23). It isn't a story they would have invented.",
-              "John Dominic Crossan, no friend of traditional belief, in Jesus: A Revolutionary Biography (1994), called Jesus' death by crucifixion under Pilate \"as sure as anything historical can ever be.\"",
             ],
             conclusion: "The best historical explanation of the evidence is that Jesus was crucified under Pontius Pilate and died.",
           },
