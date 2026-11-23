@@ -15880,3 +15880,19 @@ Cut in chapter 18: Hebrews 7:26-27, John 10:11-13 and John 4:21-24 (the deep not
 | The care line (‘A word for anyone who has been sexually assaulted...’ to ‘...lists places to turn.’) | 22-30 `hard` | 1-thessalonians/plain/4.json (1-8, `hard`); exodus/plain/22.json (16-17, `hard`); deuteronomy/plain/21.json and 22.json | Reused whole, word for word; Find Help named |
 
 Cut in chapter 19: the rare word for the knife and its use in Genesis 22 (literary, but it would linger on the act); the possibility, which some note, that she was still alive when he took the knife (it would linger on the act; the note says only that the Hebrew never says when she died); Tell el-Ful, Geba and the scholars of the debate over Gibeah's site; Ephesians 5:25, 1 Corinthians 11:24 and Psalm 72:4 as lines to Christ (the deep note's thematic contrasts, not lines the New Testament draws to this chapter); the deep note's helpline sentence (replaced by the care line reused whole, which names Find Help).
+
+## The plain notes on Judges 20 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| All Israel acting as one for the first time, against one of its own tribes; ‘as one man’ three times, a unity in vengeance; Mizpah in Benjamin a few miles north of Jerusalem, a place of assembly used later by Samuel; the Levite's account leaving out his part, the reader meant to notice; nevalah and zimmah as outrage against the covenant order; the large numbers and the 'eleph debate | 1-11 | judges/20.json `story`, `historical`, `literary`, `words` (nevalah, zimmah, qahal) | Repository; no side on the numbers |
+| Joshua 7:24-25; 1 Samuel 7:5 | 1-11 | judges/20.json `historical`; BSB | Repository; BSB text |
+| The demand under Deuteronomy's command to purge evil; Benjamin's tribal loyalty above justice; the left-handed slingers and Ehud, son of the right hand; inquiry probably through the high priest; the three questions growing humbler; ‘Judah will be first’ and the book's opening; Phinehas, active in the wilderness, placing these events early in the period | 12-28 | judges/20.json `historical`, `cultural`, `literary`, `words` (ba'ar), `doctrines` (repentance, sin) | Repository |
+| Deuteronomy 17:7; 1 Corinthians 5:13 and the church's discipline as restoring, not destroying | 12-28 | judges/20.json `christ` (1 Corinthians 5:13 quoting the same phrase), `words` (ba'ar); 1-corinthians/plain/5.json (9-13, `ot`); BSB | Repository; BSB text; Paul's own use of the law's words |
+| Why two defeats: the first question only about who would go first, Israel humbled; judgment on all Israel; the command not promising an easy victory, the cost of war among brothers; not explained | 12-28 `hard` | judges/20.json `hard` | Repository; the readings in their holders' terms |
+| The ambush and Ai; the battle told twice, in summary and in detail; 25,100 and 25,000 as an exact and a round count; verse 48 and punishment far beyond the crime; Israel slaughtering Israel; not presented as justice done well; six hundred left | 29-48 | judges/20.json `story`, `historical`, `literary`, `words` (ba'ar), `doctrines` (judgment) | Repository |
+| Joshua 8:2; Hosea 10:9 | 29-48 | judges/20.json `story`; judges/19.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 20: 2 Corinthians 5:21 and 1 Peter 2:24 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); qahal and ekklesia (a word link that would draw a line to the church the chapter does not draw); Baal-tamar, Gidom and the rock of Rimmon placed on a map.
