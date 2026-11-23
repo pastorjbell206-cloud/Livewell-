@@ -112,6 +112,12 @@
  * it was rewritten, and holdout8 returned to 75.0%. End of the tenth build:
  * cases 98.6% / 100%, holdout4 100% / 100%, holdout7 76.7% / 86.7%,
  * holdout8 54.2% / 75.0%; the rest unchanged.
+ * On 2026-11-23 holdout9 (64 sentences, clean) and dev9 (55, for tuning the
+ * word vectors) were written and committed before the matcher, matching.json
+ * or the vectors were touched. Measured then, fresh:
+ *   holdout8 (24) top 1 54.2%  top 3 75.0%
+ *   holdout9 (64) top 1 50.0%  top 3 71.9%
+ *   dev9     (55) top 1 72.7%  top 3 81.8%
  * The floors below sit just under those, so a change to the data that makes
  * the finder worse fails here by name.
  */
@@ -131,6 +137,8 @@ const fixture = JSON.parse(fs.readFileSync(path.resolve(__dirname, "wisdom-match
   holdout6: { q: string; expect: string[] }[];
   holdout7: { q: string; expect: string[] }[];
   holdout8: { q: string; expect: string[] }[];
+  holdout9: { q: string; expect: string[] }[];
+  dev9: { q: string; expect: string[] }[];
 };
 
 if (!isFinderIndex(index)) throw new Error("finder.json is not a finder index");
@@ -154,7 +162,7 @@ function rate(cases: { q: string; expect: string[] }[]) {
 describe("wisdom matcher", () => {
   it("has at least 60 plain sentences, every expected topic real", () => {
     const ids = new Set(index.topics.map((t) => t.id));
-    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2, ...fixture.holdout3, ...fixture.holdout4, ...fixture.holdout5, ...fixture.holdout6, ...fixture.holdout7, ...fixture.holdout8];
+    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2, ...fixture.holdout3, ...fixture.holdout4, ...fixture.holdout5, ...fixture.holdout6, ...fixture.holdout7, ...fixture.holdout8, ...fixture.holdout9, ...fixture.dev9];
     expect(all.length).toBeGreaterThanOrEqual(60);
     for (const c of all) for (const id of c.expect) expect(ids.has(id), `${c.q}: ${id}`).toBe(true);
   });
@@ -169,6 +177,8 @@ describe("wisdom matcher", () => {
     const holdout6 = rate(fixture.holdout6);
     const holdout7 = rate(fixture.holdout7);
     const holdout8 = rate(fixture.holdout8);
+    const holdout9 = rate(fixture.holdout9);
+    const dev9 = rate(fixture.dev9);
     console.info(
       `[wisdom-match] cases ${cases.n}: top 1 ${(cases.top1 * 100).toFixed(1)}%, top 3 ${(cases.top3 * 100).toFixed(1)}%; ` +
         `holdout ${holdout.n}: top 1 ${(holdout.top1 * 100).toFixed(1)}%, top 3 ${(holdout.top3 * 100).toFixed(1)}%` +
@@ -186,7 +196,9 @@ describe("wisdom matcher", () => {
         `\n[wisdom-match] holdout7 ${holdout7.n}: top 1 ${(holdout7.top1 * 100).toFixed(1)}%, top 3 ${(holdout7.top3 * 100).toFixed(1)}%` +
         (holdout7.misses.length ? `\n  holdout7 misses: ${holdout7.misses.join("\n  ")}` : "") +
         `\n[wisdom-match] holdout8 ${holdout8.n}: top 1 ${(holdout8.top1 * 100).toFixed(1)}%, top 3 ${(holdout8.top3 * 100).toFixed(1)}%` +
-        (holdout8.misses.length ? `\n  holdout8 misses: ${holdout8.misses.join("\n  ")}` : ""),
+        (holdout8.misses.length ? `\n  holdout8 misses: ${holdout8.misses.join("\n  ")}` : "") +
+        `\n[wisdom-match] holdout9 ${holdout9.n}: top 1 ${(holdout9.top1 * 100).toFixed(1)}%, top 3 ${(holdout9.top3 * 100).toFixed(1)}%` +
+        `\n[wisdom-match] dev9 ${dev9.n}: top 1 ${(dev9.top1 * 100).toFixed(1)}%, top 3 ${(dev9.top3 * 100).toFixed(1)}%`,
     );
     expect(cases.top1).toBeGreaterThanOrEqual(0.95);
     expect(cases.top3).toBeGreaterThanOrEqual(0.95);
@@ -207,6 +219,11 @@ describe("wisdom matcher", () => {
     // The clean set, written by someone else: reported, and held just under what it scored.
     expect(holdout8.top1).toBeGreaterThanOrEqual(0.54);
     expect(holdout8.top3).toBeGreaterThanOrEqual(0.74);
+    // The second clean set, written on 2026-11-23: reported, and held just under what it scored.
+    expect(holdout9.top1).toBeGreaterThanOrEqual(0.49);
+    expect(holdout9.top3).toBeGreaterThanOrEqual(0.71);
+    expect(dev9.top1).toBeGreaterThanOrEqual(0.72);
+    expect(dev9.top3).toBeGreaterThanOrEqual(0.81);
   });
 
   it("does not force a match on nonsense", () => {
