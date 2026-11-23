@@ -18,6 +18,7 @@ import { answerCandidates, ask, toAnswerPage, type AskCandidate } from "@/lib/as
 import { rowTarget } from "@/lib/topics";
 import { ASK_MORE } from "@/components/questions/AskBox";
 import { entryHref, type Era, type Figure } from "@/lib/historyCourse";
+import { entryById } from "@/lib/siteCatalog";
 import TheologyHistory from "./TheologyHistory";
 import HistoryEssay from "./history/HistoryEssay";
 import HistoryPeople from "./history/HistoryPeople";
@@ -278,5 +279,14 @@ describe("/skeptics", () => {
     expect(screen.getByRole("link", { name: /Did the resurrection happen\?/ }).getAttribute("href")).toBe("/tools/test-the-case?case=resurrection");
     expect(screen.getByRole("link", { name: "Does God actually exist?" }).getAttribute("href")).toBe("/answers/does-god-actually-exist");
     expect(screen.getByRole("link", { name: /Eight Weeks for the Curious Skeptic/ }).getAttribute("href")).toBe("/plans/skeptic");
+  });
+
+  it("reaches the case for the faith, under the name and line every menu gives it", () => {
+    renderAt("/skeptics");
+    const room = entryById("questions.case")!;
+    const further = screen.getByRole("region", { name: "Take longer." });
+    const tile = within(further).getByRole("link", { name: new RegExp(`^${room.name}`) });
+    expect(tile.getAttribute("href")).toBe("/questions");
+    expect(tile.textContent).toContain(room.line);
   });
 });
