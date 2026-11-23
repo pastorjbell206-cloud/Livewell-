@@ -16115,3 +16115,19 @@ A correction to 1 Samuel's book page, made after chapter 3 (2026-11-23): the wor
 | Ezekiel 10:18 and the glory leaving the temple before the exile | 19-22 | 1-samuel/4.json `doctrines` (holiness); BSB | Repository; BSB text |
 
 Cut in chapter 4: John 1:14 and the glory dwelling in Christ (the deep note calls the link thematic, not a line the New Testament draws to this chapter); Khirbet Seilun and the fire at Shiloh (kept on the book page; not needed here); Genesis 35:18 and Rachel naming her son as she died (a likeness in the text that the repository's notes do not draw).
+
+## The plain notes on 1 Samuel 5 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No Israelite army, priest or prophet present, and the LORD defending his honor; captured gods set in the victor's temple; Dagon face down as worshiper or vassal; head and hands cut off as a sign of total victory; the near-satire of a god lifted back into place | 1-5 | 1-samuel/5.json `story`, `cultural`, `literary`, `doctrines` (idolatry) | Repository |
+| Dagon an older god of the region, in texts from Mari and Ugarit; the name linked with grain, the fish-god idea largely given up; adopted by the Philistines; the temple at Gaza (Judges 16); 1 Maccabees 10 and Jonathan burning the temple at Ashdod in the second century BC; the threshold custom known to the narrator; thresholds as places of danger | 1-5 | 1-samuel/5.json `historical`, `cultural`, `words` (Dagon) | Repository |
+| Isaiah 46:7 (the prophets on idols that must be carried); Psalm 115:7; Zephaniah 1:9 and the threshold custom | 1-5 | 1-samuel/5.json `doctrines` (Isaiah 46:1-7), `cultural` (Zephaniah 1:9); BSB | Repository; BSB text |
+| Ashdod, Gath (Tell es-Safi) and Ekron (Tel Miqne) among the five cities, excavated, with Philistine material culture; each city's ruler and the five acting together; hand and heavy as key words, the weight of glory answering chapter 4; the tumors uncertain, swellings, bubonic plague suggested from the rats of chapter 6, no certainty; the ark passed on; the cry going up as Israel's did from Egypt | 6-12 | 1-samuel/5.json `historical`, `cultural`, `literary`, `words` (yad, kavad, seren) | Repository |
+| Exodus 9:3; Exodus 2:23 and the plagues of Egypt as background | 6-12 | 1-samuel/5.json `doctrines` (judgment), `literary`; BSB | Repository; BSB text |
+| The suffering of ordinary townspeople: a community bound together; the plague ending when the ark is returned, its purpose acknowledgment; a clear way out; or judgment falling broadly and the Bible's wrestling with innocent suffering; not neatly resolved | 6-12 `hard` | 1-samuel/5.json `hard` | Repository; the answers in their holders' terms |
+| The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 6-12 `hard` | acts/plain/5.json (1-6); joshua/plain/7.json (19-26); numbers/plain/11.json (31-35); numbers/plain/16.json (16-35) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 5: Colossians 2:15 and the cross as God's victory in apparent defeat (the deep note calls the link thematic, not a line the New Testament draws to this chapter).
