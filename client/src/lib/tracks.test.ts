@@ -185,6 +185,14 @@ describe("the tracks' data", () => {
     }
   });
 
+  it("says which tracks have a leader's guide, as their files do", () => {
+    for (const t of INDEX.tracks) {
+      const file = JSON.parse(fs.readFileSync(path.join(PUBLIC, `tracks/${t.slug}.json`), "utf8"));
+      expect(t.leader, t.slug).toBe(!!file.leader);
+    }
+    expect(INDEX.tracks.filter((t) => t.leader).map((t) => t.slug)).toEqual(["skeptical", "mark"]);
+  });
+
   it("has a reader's name for every kind of page a track opens, and uses eight or more", () => {
     for (const t of INDEX.tracks) {
       for (const k of t.kinds) expect(KIND_LABEL[k], k).toBeTruthy();

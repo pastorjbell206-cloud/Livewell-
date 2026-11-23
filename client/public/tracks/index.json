@@ -6,7 +6,8 @@
       "for": "I'm skeptical",
       "road": "skeptical",
       "subtitle": "Twelve short sessions for someone who doesn't believe and would rather look than be told: God, the texts, Jesus, the resurrection, suffering, science and the church's record, with the case against stated first.",
-      "minutes": 11,
+      "minutes": 10,
+      "leader": true,
       "kinds": [
         "answer",
         "book",
@@ -114,6 +115,7 @@
       "road": "new",
       "subtitle": "Twelve short sessions for someone who has just come to faith, or is coming back to the start: who Jesus is, how to read and pray, the church, and what to do when you fail or doubt.",
       "minutes": 10,
+      "leader": false,
       "kinds": [
         "answer",
         "book",
@@ -226,7 +228,8 @@
       "for": "I want to know one book well",
       "road": null,
       "subtitle": "Sixteen sessions, one for each chapter of Mark, the shortest Gospel: read the chapter and its notes, and follow the book's own shape from the river to the cross and the empty tomb.",
-      "minutes": 16,
+      "minutes": 15,
+      "leader": true,
       "kinds": [
         "answer",
         "book",

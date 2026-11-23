@@ -7,6 +7,66 @@
     "This track reads one book of the Bible slowly, a chapter at a sitting. Mark is the shortest of the four Gospels, most scholars think it the earliest, and it moves fast, from a voice in the wilderness to an empty tomb in sixteen chapters. Each session takes about fifteen minutes: read the chapter, then its notes in plain words, then come back to one question, one thing to do, and one verse.",
     "If you can, read the whole book once in an evening before you begin, as its first hearers did, then come back here and take it slowly. The track follows Mark's own shape: the question of who Jesus is, his habit of telling people to keep quiet, the road to Jerusalem, and an ending the oldest manuscripts don't share with the later ones. Each session ends with a guide for a group."
   ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through Deep in one: the Gospel of Mark. The group reads one chapter a meeting, sixteen in all. It suits people who already believe and people who are only curious, because Mark is short and fast and rewards anyone who reads it closely. The leader's task is to keep the group in the text, so that the conversation is about what Mark says before it is about anything else.",
+      "Each person reads the chapter, its notes and the session before the group meets. The meeting reads part of the chapter aloud and talks it over, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size, small enough that everyone speaks. Meet for about seventy-five minutes, once a week, for sixteen meetings, and keep the end time you promised. A group that meets once a fortnight can take two chapters together where they fall naturally, such as the two chapters of the arrest and the cross. A leader doesn't need to be a scholar. A leader needs to have read the chapter and its notes, and to be willing to admit not knowing."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Sit in a circle round a table if you can, with the text open in front of everyone, in print or on a phone. Mark was most likely written to be read aloud to a gathered church, so ask a good reader to read the passage at each meeting, and let people take turns. Make it plain at the first meeting that anyone may pass on any question, that what people say about their own lives stays in the room, and that no one has to pray aloud."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Fifteen minutes: one person reads the heart of the chapter aloud, or all of it when it is short, while the others follow.",
+          "Thirty-five minutes: the three questions to talk over, in order. Ask where each answer is in the text.",
+          "Five minutes: one person reads the verse to keep, and the group says what it noticed in it.",
+          "Five minutes: the prayer prompt, in your own words.",
+          "Five minutes: name the next chapter and the page its session opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Mark has hard places, and the notes name them: a verse where the manuscripts differ, a saying that sounds harsh, a promise about the generation then living, an ending the oldest copies don't share. When the group reaches one, read the note on it together before anyone answers. Say plainly where Christians read a passage in more than one way, give each reading its strongest form, and don't settle for the group what the church has not settled. If no one knows, write the question down and bring it back the next week.",
+          "Some questions are not about the text at all, but about the church, or about whether any of it is true. Welcome them. The Honest Answers and the case for the faith on this site take many of them up, and a session often links one. Treating a question as disloyalty ends the conversation, and Mark himself shows the disciples asking, misunderstanding and being taught again."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Mark is full of people in trouble: a man among the tombs, a woman ill for twelve years, a father with a son in danger, a friend who failed. Their stories will touch someone's own. When that happens, stop the discussion and listen. Thank the person for saying it, don't explain their suffering for them, and don't hurry them back to the passage. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "Some passages have been misused to wound people: words about divorce read as a reason to stay where someone is in danger, words about faith read as blame on the sick, a fig tree or a trial read as contempt for the Jewish people. The notes refuse every one of those readings, and so should the group. If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: grief that has taken their sleep or appetite for weeks, fear or guilt that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
   "sessions": [
     {
       "n": 1,

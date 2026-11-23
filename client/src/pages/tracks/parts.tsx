@@ -1,8 +1,9 @@
 /**
- * The parts the three track pages share: the loader, the progress bar, the
- * "Continue where you left off" line, and this device's progress as state.
+ * The parts the track pages share: the loader, the progress bar, the
+ * "Continue where you left off" line, this device's progress as state, and
+ * text that names Find Help with the name a link.
  */
-import { useCallback, useEffect, useState } from "react";
+import { Fragment, useCallback, useEffect, useState } from "react";
 import { Link } from "wouter";
 import { RotateCcw } from "lucide-react";
 
@@ -63,6 +64,21 @@ export function ProgressBar({ total, entry, now }: { total: number; entry?: Trac
         ))}
       </ol>
     </div>
+  );
+}
+
+/** Text that names Find Help, with every "Find Help" a link to it (a care line, a leader's word on when to point someone there). */
+export function HelpText({ text }: { text: string }) {
+  const parts = text.split("Find Help");
+  return (
+    <>
+      {parts.map((part, i) => (
+        <Fragment key={i}>
+          {i > 0 && <Link href="/help">Find Help</Link>}
+          {part}
+        </Fragment>
+      ))}
+    </>
   );
 }
 

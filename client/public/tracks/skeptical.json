@@ -8,6 +8,66 @@
     "This track is for someone who doesn't believe, or isn't sure, and would rather look hard than be talked into anything. It has twelve sessions of about ten minutes each. Every page it opens states the case against Christianity at its strongest before it replies, and each reply says plainly what it doesn't prove. Nothing here asks you to believe by the last session, or to pray, or to sign anything.",
     "Each session works the same way. You read a few short paragraphs, then open one page on this site and weigh it, then come back to one question, one thing to do, and one verse, so that you know what the text itself says. If you can, take the track with a friend who sees it differently. Each session ends with a guide for a group, and nobody in the group needs to believe."
   ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through Weigh the case for yourself. The group can hold people who believe, people who don't, and people who aren't sure, and it is better when it does. Nobody in it needs to believe anything, and nobody is there to be won. The leader's task is to keep the questions honest and the room safe for disagreement, and to let the pages the sessions open do the arguing.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to eight people is a good size: small enough that everyone speaks, large enough that no one feels watched. Meet for about seventy-five minutes, once a week or once a fortnight, for twelve meetings, and keep the end time you promised. If a believer and a skeptic who are friends can both come, ask them, because the conversation is better when it isn't one-sided. A leader doesn't need to be an expert. A leader needs to be fair, curious, and willing to admit not knowing."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A living room or a quiet corner of a café works better than a classroom. Sit in a circle so that no one faces a teacher. Have the session on a phone or printed for each person, with the page it opens, since some of those pages are long. Make it plain at the first meeting that anyone may pass on any question, that what people say about their own lives stays in the room, and that no one will be asked to pray aloud or to decide anything."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Five minutes: one person reads the verse aloud, and a few verses around it if the session opens a chapter of the Bible.",
+          "Forty minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Ten minutes: what each person would push back on in the page the session opened.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Hard questions are the point of this group, so welcome them. Say what is true in an objection before anything else, and don't let anyone answer a question that hasn't been fully asked. If the page the session opened takes the question up, read that part aloud together. If no one knows, say so, write the question down, and bring it back the next week. A question treated as disloyalty, or as a sign of a bad heart, ends the conversation and confirms what many skeptics already suspect about churches.",
+          "Keep the strongest form of every view in the room, including views the leader doesn't hold. When believers in the group are tempted to win, remind them that the aim is for each person to be able to state the other side so well that the other side recognizes it. Where Christians themselves disagree, say that they do, and let the group see more than one answer."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Some questions come with a wound attached: a death, an illness, a church that did harm, a prayer that went unanswered. When that happens, stop arguing. Listen, thank the person for saying it, and don't explain anyone's suffering for them or hurry them back to the topic. Ask whether they would like the group to go on or to pause, and afterwards speak with them on their own and ask what would help.",
+          "If someone says that a leader, a partner or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group. Never press anyone to forgive quickly, or to stay where they are being hurt."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when a question has become a weight they can't put down: grief that has taken their sleep or appetite for weeks, fear that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
   "sessions": [
     {
       "n": 1,

@@ -28,9 +28,14 @@ import { KEPT_HERE } from "@/lib/study-method";
 import Tracks from "./Tracks";
 import Track from "./Track";
 import TrackSession from "./TrackSession";
+import TrackLeader from "./TrackLeader";
+import TrackPrint from "./TrackPrint";
 
 const PUBLIC = path.resolve(__dirname, "../../../public");
-const FILE = JSON.parse(fs.readFileSync(path.join(PUBLIC, "tracks/new-to-this.json"), "utf8"));
+const readTrackFile = (slug: string) => JSON.parse(fs.readFileSync(path.join(PUBLIC, `tracks/${slug}.json`), "utf8"));
+const FILE = readTrackFile("new-to-this");
+const SKEPTIC = readTrackFile("skeptical");
+const MARK = readTrackFile("mark");
 const T = { slug: "new-to-this", title: FILE.title as string, total: FILE.sessions.length as number };
 
 function servePublic() {
@@ -52,6 +57,8 @@ function renderAt(p: string) {
         <Switch>
           <Route path="/tracks" component={Tracks} />
           <Route path="/tracks/:slug" component={Track} />
+          <Route path="/tracks/:slug/leader" component={TrackLeader} />
+          <Route path="/tracks/:slug/print" component={TrackPrint} />
           <Route path="/tracks/:slug/:n" component={TrackSession} />
           <Route>
             <p>Another page</p>
@@ -75,21 +82,29 @@ afterEach(() => {
 });
 
 describe("/tracks", () => {
-  it("lists the track with Start at session 1, and says plainly what is not written yet", async () => {
+  it("lists every written track with who it is for and Start at session 1, and says plainly what is not written yet", async () => {
     renderAt("/tracks");
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Tracks");
-    const start = await screen.findByRole("link", { name: "Start at session 1" });
-    expect(start.getAttribute("href")).toBe("/tracks/new-to-this/1");
+    const starts = await screen.findAllByRole("link", { name: "Start at session 1" });
+    // In the order of the roads on /start, and a book studied chapter by chapter after them.
+    expect(starts.map((a) => a.getAttribute("href"))).toEqual(["/tracks/skeptical/1", "/tracks/new-to-this/1", "/tracks/mark/1"]);
+    for (const t of [FILE, SKEPTIC, MARK]) {
+      const card = screen.getByRole("link", { name: t.title }).closest("li") as HTMLElement;
+      expect(within(card).getByText(t.for)).toBeInTheDocument();
+    }
     expect(screen.getByRole("link", { name: FILE.title }).getAttribute("href")).toBe("/tracks/new-to-this");
-    expect(screen.getByText(/12 sessions, about 10 minutes each/)).toBeInTheDocument();
+    expect(screen.getAllByText(/^12 sessions, about 10 minutes each/)).toHaveLength(2);
+    expect(screen.getByText(/^16 sessions, about 15 minutes each/)).toBeInTheDocument();
+    // A leader's guide on the card of each track that has one.
+    expect(screen.getAllByRole("link", { name: "Leader's guide" }).map((a) => a.getAttribute("href"))).toEqual(["/tracks/skeptical/leader", "/tracks/mark/leader"]);
     expect(screen.queryByTestId("track-continue")).toBeNull();
 
     const coming = screen.getByRole("heading", { level: 2, name: "Coming" }).closest("section") as HTMLElement;
-    for (const chip of ["I'm skeptical", "I've stepped back from faith", "I want to go deeper", "I'm leading a family"]) expect(within(coming).getByText(chip)).toBeInTheDocument();
-    expect(within(coming).queryByText("I'm new to this")).toBeNull();
-    expect(within(coming).getByText(/Deep in one/)).toBeInTheDocument();
-    expect(within(coming).getAllByText(/Not written yet/).length).toBe(5);
-    expect(within(coming).getAllByRole("link", { name: /The road for now/ }).map((a) => a.getAttribute("href"))).toEqual(["/start#skeptical", "/start#stepped-back", "/start#deeper", "/start#family"]);
+    for (const chip of ["I've stepped back from faith", "I want to go deeper", "I'm leading a family"]) expect(within(coming).getByText(chip)).toBeInTheDocument();
+    for (const chip of ["I'm new to this", "I'm skeptical"]) expect(within(coming).queryByText(chip)).toBeNull();
+    expect(within(coming).queryByText(/Deep in one/)).toBeNull();
+    expect(within(coming).getAllByText(/Not written yet/).length).toBe(3);
+    expect(within(coming).getAllByRole("link", { name: /The road for now/ }).map((a) => a.getAttribute("href"))).toEqual(["/start#stepped-back", "/start#deeper", "/start#family"]);
   });
 
   it("offers Continue where you left off once a track is begun", async () => {
@@ -203,6 +218,85 @@ describe("/tracks/:slug/:n", () => {
   });
 });
 
+describe("the skeptic's track and the book study", () => {
+  it("offers the leader's guide and the whole track to print from the track's page", async () => {
+    const first = renderAt("/tracks/skeptical");
+    await waitFor(() => expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(SKEPTIC.title));
+    expect(screen.getByRole("link", { name: "The leader's guide" }).getAttribute("href")).toBe("/tracks/skeptical/leader");
+    expect(screen.getByRole("link", { name: "The whole track on one page" }).getAttribute("href")).toBe("/tracks/skeptical/print");
+    first.unmount();
+    // The track for someone new has no leader's guide yet, and still prints whole.
+    renderAt("/tracks/new-to-this");
+    await waitFor(() => expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(FILE.title));
+    expect(screen.queryByRole("link", { name: "The leader's guide" })).toBeNull();
+    expect(screen.getByRole("link", { name: "The whole track on one page" }).getAttribute("href")).toBe("/tracks/new-to-this/print");
+  });
+
+  it("shows a Mark session whole, with the chapter it opens and the leader's guide beside the group guide", async () => {
+    const s = MARK.sessions[4];
+    renderAt("/tracks/mark/5");
+    await waitFor(() => expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(s.title));
+    expect(screen.getByText(/Session 5 of 16/)).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: s.open.label }).getAttribute("href")).toBe("/study/bible/mark/5#plain");
+    expect(screen.getByRole("complementary", { name: "If this is heavy for you" }).textContent).toBe(s.care.join(""));
+    expect(screen.getByRole("link", { name: "The leader's guide" }).getAttribute("href")).toBe("/tracks/mark/leader");
+  });
+});
+
+describe("/tracks/:slug/leader", () => {
+  it("says how to run the group, part by part, then gathers every session's group guide in order", async () => {
+    renderAt("/tracks/skeptical/leader");
+    await waitFor(() => expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(`Leader's guide: ${SKEPTIC.title}`));
+    const parts = SKEPTIC.leader.sections as { id: string; title: string; body: string[]; steps?: string[] }[];
+    for (const p of parts) expect(screen.getByRole("heading", { level: 3, name: p.title })).toBeInTheDocument();
+    const order = parts.find((p) => p.id === "order")!;
+    for (const step of order.steps!) expect(screen.getByText(step)).toBeInTheDocument();
+    // Find Help is a real link wherever the guide names it.
+    const help = screen.getByRole("heading", { level: 3, name: "When to point someone to Find Help" }).closest("section") as HTMLElement;
+    expect(within(help).getAllByRole("link", { name: "Find Help" }).every((a) => a.getAttribute("href") === "/help")).toBe(true);
+    // Every session, in order, with its page, its question and its group guide.
+    const list = screen.getByRole("heading", { level: 2, name: `The ${SKEPTIC.sessions.length} sessions, in order` }).closest("section") as HTMLElement;
+    const sessions = within(list).getAllByRole("article");
+    expect(sessions).toHaveLength(SKEPTIC.sessions.length);
+    SKEPTIC.sessions.forEach((s: { n: number; title: string; question: string; open: { href: string }; group: { open: string; discuss: string[]; pray: string } }, i: number) => {
+      const el = sessions[i];
+      expect(within(el).getByRole("link", { name: s.title }).getAttribute("href")).toBe(`/tracks/skeptical/${s.n}`);
+      expect(within(el).getAllByRole("link").map((a) => a.getAttribute("href"))).toContain(s.open.href);
+      expect(within(el).getByText(s.question)).toBeInTheDocument();
+      expect(within(el).getByText(s.group.open)).toBeInTheDocument();
+      for (const q of s.group.discuss) expect(el.textContent).toContain(q);
+      expect(within(el).getByText(s.group.pray)).toBeInTheDocument();
+    });
+    expect(screen.getByRole("button", { name: /Print/ })).toBeInTheDocument();
+  });
+
+  it("says plainly when a track has no leader's guide yet", async () => {
+    renderAt("/tracks/new-to-this/leader");
+    await waitFor(() => expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("This track has no leader's guide yet"));
+    expect(screen.getByRole("link", { name: "See the 12 sessions" }).getAttribute("href")).toBe("/tracks/new-to-this");
+  });
+});
+
+describe("/tracks/:slug/print", () => {
+  it("sets out every session with its addresses written out for paper, and nothing to type into", async () => {
+    renderAt("/tracks/mark/print");
+    await waitFor(() => expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(MARK.title));
+    const sessions = MARK.sessions as { n: number; title: string; question: string; do: string; open: { href: string }; verse: { text: string } }[];
+    for (const s of sessions) {
+      const sec = screen.getByRole("heading", { level: 2, name: s.title }).closest("section") as HTMLElement;
+      expect(within(sec).getByText(s.question)).toBeInTheDocument();
+      expect(sec.textContent).toContain(`livewellbyjamesbell.co${s.open.href}`);
+      expect(sec.textContent).toContain(s.verse.text);
+    }
+    // Nothing to type into or tick on the page itself (the site's own footer has its sign-up box).
+    const page = document.querySelector(".tk-page") as HTMLElement;
+    expect(within(page).queryByRole("textbox")).toBeNull();
+    expect(within(page).queryByRole("checkbox")).toBeNull();
+    expect(within(page).getByRole("button", { name: /Print/ })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "The leader's guide" }).getAttribute("href")).toBe("/tracks/mark/leader");
+  });
+});
+
 describe("the way back", () => {
   it("is set on leaving a session, shown on the page it opened, and cleared on coming back", async () => {
     const { loc } = renderAt("/tracks/new-to-this/5");
@@ -237,7 +331,7 @@ describe("the way back", () => {
   it("does not show on the tracks' own pages", async () => {
     setReturn({ slug: "new-to-this", n: 2, total: 12, to: "/study/explorer/watch/why-jesus-died" });
     renderAt("/tracks");
-    await screen.findByRole("link", { name: "Start at session 1" });
+    await screen.findAllByRole("link", { name: "Start at session 1" });
     expect(screen.queryByTestId("track-return")).toBeNull();
   });
 });
