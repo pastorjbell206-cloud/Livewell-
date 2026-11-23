@@ -15609,3 +15609,20 @@ Cut in chapter 2: Hebrews 7:23-25 and the savior who does not die (the deep note
 | Judges 5:6; 1 Samuel 12:9 | 26-31 | BSB | BSB text |
 
 Cut in chapter 3: what ‘son of Anath’ may mean (not in the repository's notes); the length of a cubit in inches; the detail of the blade and the fat (left in the verses, not repeated); 1 Corinthians 1:27 and Luke 4:18 as links to Christ (the deep note's thematic links, not lines the New Testament draws to this chapter); a cross-reference to David's flight over the Jordan, dropped as not to the point.
+
+## The plain notes on Judges 4 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| An oppressor from inside the land; Hazor the largest city in Canaan; Joshua 11 and the earlier Jabin; the three views of how the accounts relate; king of Canaan as leader of a northern alliance; chariots fast and terrifying on flat ground | 1-10 | judges/4.json `story`, `historical`, `words` (rekhev) | Repository; no side |
+| Deborah as prophetess and judge; one of few women so called, with Miriam and Huldah; judgment as deciding disputes; authority from the word of God and not military rank; Lappidoth as torches or a husband's name; Barak as lightning; Barak's answer read as weak faith, a right instinct, or both; the first-time reader expects Deborah | 1-10 | judges/4.json `cultural`, `literary`, `words` (nevi'ah); judges/4.json `questions` | Repository; no side on Barak |
+| Exodus 15:20; 2 Kings 22:14; Joshua 11:10; Hebrews 11:32 | 1-10 | judges/4.json `cultural`, `historical`, `christ`; BSB | Repository; BSB text |
+| The Jezreel Valley and the Kishon; Mount Tabor out of the chariots' reach; ‘routed’ (hamam) as at the Red Sea, a new exodus; the storm and the mud from the song; the chariots made useless; the battle won before it was fought (verse 14); the Kenites related to Moses' family, Heber separated and at peace with Jabin | 11-16 | judges/4.json `historical`, `cultural`, `literary`, `words` (hamam), `doctrines` (sovereignty) | Repository |
+| Exodus 14:24-25; Psalm 20:7; Psalm 83:9 | 11-16 | judges/4.json `words` (hamam); psalms/plain/83.json; deuteronomy/plain/20.json; BSB | Repository; BSB text |
+| The word of verse 9 fulfilled through Jael; hospitality a sacred duty; a woman's tent her own place; Sisera's breach and his request to lie; tents as women's work; the slowed pace and the irony of ‘no man’; the credit given to God (verse 23) | 17-24 | judges/4.json `cultural`, `literary`, `words` (kana) | Repository |
+| 1 Samuel 12:9; Judges 5:24 and Luke 1:42 | 17-24 | 1-samuel/12.json `historical`; luke/plain/1.json (39-45, `ot`); BSB | Repository; BSB text; an echo the Luke note records |
+| Jael, hero or murderer: the breach of hospitality and of the peace with Jabin; 5:24; the three ways readers weigh her act; agreement that the death fulfils verse 9; the ethics left to the reader; no pattern for today and no warrant to harm one who has trusted | 17-24 `hard` | judges/4.json `hard`; judges/5.json `hard` | Repository; each view in its holders' terms; no side |
+
+Cut in chapter 4: that the name Kenite may be linked with metalworking (the deep note calls it uncertain); Jael and Genesis 3:15 (a link some readers make and the New Testament does not); 1 Corinthians 1:25 as a line to the cross (the deep note's thematic link); whether Harosheth-hagoyim can be placed.
