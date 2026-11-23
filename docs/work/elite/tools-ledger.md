@@ -1498,3 +1498,17 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | spiritual-dryness | God often nearest when he feels furthest; faith not built on feeling and often returning through the habit; dryness and depression can wear the same face | the topic's own first form (framing and application) |
 | spiritual-dryness | Psalm 63: longing itself a kind of prayer; praying verses 1 to 5 in the morning, as Christians have for centuries | plain psalms/63 1-5 asks; Psalm 63:1 heading |
 | spiritual-dryness | Care lines | plain psalms/42 |
+| hell-and-judgment | Abraham pleads for Sodom; will not the Judge of all the earth do what is right; God did not rebuke the question and let him press it again and again | note genesis/18 summary and verse 25; plain genesis/18 22-33 hard |
+| hell-and-judgment | Spoken to exiles crushed by guilt; no pleasure in the death of the wicked; not a ledger to trap anyone but a call to turn and live | note ezekiel/33 summary and hard |
+| hell-and-judgment | Scoffers; not slow but patient; patience mistaken for slowness | note 2-peter/3 summary; plain 2-peter/3 8-10 asks |
+| hell-and-judgment | Not sent to condemn but to save; judgment the consequence of rejecting rescue, not the reason for the mission; not meant to frighten into faith | note john/3 verse 17; plain john/3 16-21 hard |
+| hell-and-judgment | The two outcomes side by side; Christians differ whether eternal requires unending conscious experience, final destruction, or age-long punishment; the outcome final; the last word is life | note matthew/25 verse 46 |
+| hell-and-judgment | A command instead of a number; salvation not a statistic but a door; not meant to scare into sleepless fear; the door is open | note luke/13 verse 23; plain luke/13 22-30 hard |
+| hell-and-judgment | The church confesses the judgment (Nicene Creed); the notes say nothing about any particular person's eternal state; the judge is Jesus who died for sinners; grieving someone who died without clear faith | plain revelation/20 11-15 hard |
+| hell-and-judgment | Love that did not oppose what destroys the beloved would be indifference; the cross shows both; for those who know God's love judgment is no longer to dread | note 1-john/4 hard; plain 1-john/4 17-21 hard |
+| hell-and-judgment | Just and justifier; the cross where justice and mercy meet, described in different ways | note romans/3 verse 26 |
+| hell-and-judgment | Luke 16: most read it as a parable; pictures hard to take as a map; the chasm means finality; the sin was the closed hand at the gate | plain luke/16 19-26 hard; note luke/16 verse 26 |
+| hell-and-judgment | Jesus' sternest warnings often aimed at the religious; Abraham trusted God's justice would be better than his own | Honest Answer is-hell-forever-or-does-it-end |
+| hell-and-judgment | Where Christians differ: endless conscious separation, the most widely held view (Augustine on Matthew 25:46); final destruction (Matthew 10:28, Romans 6:23); a minority hope of restoration, which the church has generally not affirmed; none settled | plain matthew/25 41-46 hard; Honest Answer is-hell-forever-or-does-it-end |
+| hell-and-judgment | Psalm 96: judgment as good news from the side of the poor and the wronged | plain psalms/96 10-13 asks |
+| hell-and-judgment | Care lines | plain revelation/20 |
