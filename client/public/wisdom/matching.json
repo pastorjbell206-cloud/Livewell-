@@ -133,7 +133,10 @@
   "took his own life": "died suddenly",
   "took her own life": "died suddenly",
   "died by suicide": "died suddenly",
-  "committed suicide": "died suddenly"
+  "committed suicide": "died suddenly",
+  "was abused": "abuse abusenow",
+  "been abused": "abuse abusenow",
+  "being abused": "abuse abusenow"
  },
  "synonyms": {
   "son": "child",
