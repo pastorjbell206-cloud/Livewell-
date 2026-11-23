@@ -16353,3 +16353,19 @@ Cut in chapter 17: Colossians 2:15 and Hebrews 2:14-15 and David as a picture of
 | The bride-price and Michal: shown and not admired; Saul's plan seen for what it is; David's silence; the price told briefly, no pattern; every plan advancing David because the LORD is with him | 17-30 `hard` | 1-samuel/18.json `literary`, `cultural`, `doctrines` (providence, sin) | Repository |
 
 Cut in chapter 18: Mark 15:10 and Philippians 2:5-8 and the beloved one plotted against (the deep note calls it a thematic resonance, not a line the New Testament draws to this chapter); a claim that proof of an enemy's death was a custom of war (not stated in the repository; cut before commit).
+
+## The plain notes on 1 Samuel 19 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hostility in the open and the start of David's flight to Saul's death; protection through Saul's own household; Jonathan's plea recalling God's work and Saul's joy; chaphets against Saul's hatred (16:21); the oath broken within verses | 1-7 | 1-samuel/19.json `story`, `literary`, `words` (chaphets), `doctrines` (sin, providence) | Repository |
+| Proverbs 31:8 | 1-7 | judges/plain/19.json (22-30, `later`); BSB | Repository; BSB text |
+| Four attempts, each blocked; malat and flight, the anointed king's task to get away; teraphim as household gods sometimes for divination; Rachel's in Genesis 31; its presence unexplained, perhaps Michal's; large enough to pass for a man; the irony with 15:23; Michal's second lie protecting herself | 8-17 | 1-samuel/19.json `literary`, `cultural`, `words` (teraphim, malat) | Repository |
+| Psalm 59's heading and the debate over headings; Genesis 31:34 | 8-17 | 1-samuel/19.json `historical`; psalms/plain/59.json (1-17, `hearers`); BSB | Repository; BSB text |
+| Michal's lie and the idol: reported without comment; the midwives and Rahab and no duty of truth to a murderer; deception always wrong; the idol Michal's, or household figures tolerated; neither approved; God protecting David through imperfect people | 8-17 `hard` | 1-samuel/19.json `hard` | Repository; the readings in their holders' terms |
+| Ramah and Gibeah a few miles apart; Naioth perhaps dwellings or the prophets' camp; the company of prophets and ecstatic speech; three plus one; the Spirit not a tool, protecting David without changing Saul, no proof of approval; naked as lightly clothed; the king without the signs of office; the proverb of 10:11-12 said again with a darker edge | 18-24 | 1-samuel/19.json `historical`, `cultural`, `literary`, `doctrines` (spirit) | Repository |
+| Psalm 139:7 | 18-24 | BSB | BSB text (a thematic line within the Old Testament) |
+
+Cut in chapter 19: 1 John 2:1, Acts 4:25-28 and Jonathan's plea as a picture of intercession (the deep note calls these thematic connections, not lines the New Testament draws to this chapter); the large cistern at Secu placed (unidentified).
