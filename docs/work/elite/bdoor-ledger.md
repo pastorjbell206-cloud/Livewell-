@@ -15735,3 +15735,22 @@ Cut in chapter 9: Mark 10:45 and the olive, fig and vine as pictures of Christ's
 | Joshua 22:9 and Gilead as the land of Reuben, Gad and half of Manasseh | 17-18 | judges/11.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 10: Matthew 9:36 and 1 Thessalonians 1:9-10 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the Maonites of verse 12 and the Septuagint's reading of Midianites; the place Kamon.
+
+## The plain notes on Judges 11 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Inheritance through legitimate sons; the displaced man leading displaced men, raiding or hiring out; Tob north or northeast of Gilead; the old hurt; qatsin offered, then headship pressed for; terms sworn before the LORD at Mizpah; three negotiations (elders, king, God); ‘a mighty man of valor’ as with Gideon | 1-11 | judges/11.json `historical`, `cultural`, `literary`, `words` (qatsin) | Repository |
+| Genesis 45:4-7 and the rejected brother; 2 Samuel 10:6 | 1-11 | judges/11.json `christ` (the Joseph pattern), `historical`; BSB | Repository; BSB text; an Old Testament pattern only |
+| The land between Arnon and Jabbok; the history of Numbers 20-21 and Deuteronomy 2; Sihon; Deuteronomy 2:19; Chemosh as Moab's god and Milcom Ammon's, with the three explanations; the three hundred years and the two readings; ‘the LORD, the Judge’ and the book's name | 12-28 | judges/11.json `historical`, `cultural`, `words` (shaphat) | Repository; no side on the date |
+| Numbers 21:21; Deuteronomy 2:19 | 12-28 | judges/11.json `historical`; BSB | Repository; BSB text |
+| The Spirit before the vow; vows as conditional promises (Jacob, Hannah); redemption under Leviticus 27; no vow may require what God forbids; olah, the ordinary word for a burnt offering; what he expected not told; bargaining as the root | 29-33 | judges/11.json `cultural`, `literary`, `words` (neder, olah), `doctrines` (spirit, god) | Repository |
+| Proverbs 20:25; Ecclesiastes 5:5; Leviticus 27:2 | 29-33 | leviticus/27.json; numbers/30.json; proverbs/20.json (each naming Jephthah's rash vow); BSB | Repository; BSB text |
+| Women greeting warriors with tambourines (Miriam; David); the only child and the word used of Isaac; his first words spoken to her; the daughter unnamed and remembered by the yearly lament; the act not described | 34-40 | judges/11.json `literary`; genesis/22.json (`words`, yachid); exodus/plain/15.json; 1-samuel/18.json `cultural` | Repository |
+| Genesis 22:12; Jeremiah 7:31; Micah 6:8 | 34-40 | judges/11.json `christ` (Genesis 22 contrast); questions/old-testament/abraham-and-isaac.json (`evidence`); BSB | Repository; BSB text |
+| The two readings: a real sacrifice (most interpreters, ancient and modern, Jewish and Christian; olah; verse 39; the narrator's restraint not approval; the law supplies the verdict; tragedy); lifelong service at the sanctuary, unmarried (some medieval Jewish and some Christian readers; mourning her virginity; the note that she had never known a man; the connecting word read as or), with the critics' reply; no choice made; nothing praises the vow; Deuteronomy 12:31; Hebrews 11:32 as God working despite the vow; no one asked by God to harm a child | 34-40 `hard` | judges/11.json `hard`, `cultural`, `christ`; hebrews/11.json `hard`; hebrews/plain/11.json (32-40, `hard`); genesis/plain/22.json (1-2, `hard`); BSB | Repository; both readings in their holders' terms; no side |
+| The care line (‘A word for anyone who was not protected by a parent...’ to ‘...lists places to turn.’) | 34-40 `hard` | genesis/plain/19.json (4-11, `hard`) | Reused whole, word for word |
+
+Cut in chapter 11: whether Jephthah expected an animal or a person (not in the repository's notes); the rejected son and the cornerstone (Mark 12:10, Acts 4:11) and God giving his own Son (the deep note's thematic links, not lines the New Testament draws to this chapter); the twenty towns and their places.
