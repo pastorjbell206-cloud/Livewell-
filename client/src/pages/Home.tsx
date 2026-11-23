@@ -114,7 +114,8 @@ const DOORS: Door[] = [
   { title: "Church history", href: "/theology/history", plate: "basilica", note: "From Pentecost to today" },
   { title: "Hard questions", href: "/topics", plate: "lantern", note: "Straight answers" },
   { title: "Family", href: "/family", plate: "house", note: "Tonight's devotion" },
-  { title: "Start here", href: "/start", plate: "tree", note: "New, or coming back" },
+  // /start has a way in for every reader, not only someone new (walk 2026-11, finding 24).
+  { title: "Start here", href: "/start", plate: "tree", note: "Wherever you are" },
 ];
 
 /**

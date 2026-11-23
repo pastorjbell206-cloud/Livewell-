@@ -187,6 +187,14 @@ describe("Home's doors", () => {
     expect(background.getAttribute("href")).toBe("/resources/context");
     expect(nameForHref("/resources/context")).toBe("Bible background");
   });
+
+  it("offer Start here to every reader, not only someone new", () => {
+    // The walk of 2026-11-23, finding 24: the card said "New, or coming back".
+    setToday(2026, 10, 27);
+    renderHome();
+    const doors = screen.getByRole("region", { name: "Where to begin." });
+    expect(within(doors).getByRole("link", { name: /Start here/ })).toHaveTextContent("Wherever you are");
+  });
 });
 
 describe("Home's latest writing", () => {

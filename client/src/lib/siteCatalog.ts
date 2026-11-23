@@ -331,8 +331,14 @@ export const DOORS: Door[] = [
   },
 ];
 
-/** "New here? Start here": first in every door's panel foot and the phone menu. */
-export const START_LINK: CatalogEntry = { id: "start", name: "New here? Start here", line: "One road for someone new to faith, or coming back.", href: "/start", icon: "Sprout" };
+/**
+ * "New here? Start here": first in every door's panel foot and the phone menu.
+ * Its line names the readers /start serves; it once said "One road for someone
+ * new to faith, or coming back", which told the skeptic, the doubter, the
+ * parent and the pastor that it was not for them (the walk of 2026-11-23,
+ * finding 24).
+ */
+export const START_LINK: CatalogEntry = { id: "start", name: "New here? Start here", line: "A first step for the skeptic, the doubter, the parent, the pastor, or anyone new.", href: "/start", icon: "Sprout" };
 
 /** Crisis care, one tap from every page. */
 export const HELP_ENTRY: CatalogEntry = { id: "help", name: "Find Help", line: "Help for what you are facing, with the crisis lines first.", href: "/help", icon: "LifeBuoy", count: { n: 40, of: "pages" } };

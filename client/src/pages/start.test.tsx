@@ -16,7 +16,7 @@ import { renderWithProviders, offlineFetch } from "@/test/harness";
 import { ROADS, START_PAGES, START_ROADS_KEY, WAYS_IN, readRoadProgress } from "@/lib/startRoads";
 import { TRACKS_KEY } from "@/lib/tracks";
 import { isPublicEssayHref } from "@/lib/shelf";
-import { nameForHref } from "@/lib/siteCatalog";
+import { START_LINK, nameForHref } from "@/lib/siteCatalog";
 import { ROAD_CHIPS } from "./home/roadChips";
 import Start, { START_NEXT, START_STEPS } from "./Start";
 import { ANSWERS } from "@/data/answers";
@@ -94,6 +94,12 @@ describe("/start: the five roads", () => {
     // Every road once, in its own order, with the two readers' pages among them.
     expect(WAYS_IN.filter((w) => w.road).map((w) => w.id)).toEqual(ROADS.map((r) => r.id));
     expect(WAYS_IN.map((w) => w.id)).toEqual(["skeptical", "doubts", "new", "stepped-back", "deeper", "family", "leading"]);
+  });
+
+  it("is offered in the menus as a first step for every reader, not only someone new to faith", () => {
+    // The walk of 2026-11-23, finding 24: the phone menu's first line read "One road for someone new to faith, or coming back."
+    for (const who of ["skeptic", "doubter", "parent", "pastor"]) expect(START_LINK.line).toContain(who);
+    expect(START_LINK.href).toBe("/start");
   });
 
   it("gives the doubter and the pastor one way in each, straight to the page that serves them", () => {
