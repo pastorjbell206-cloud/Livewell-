@@ -20,7 +20,7 @@ import { tonightOn } from "@/lib/familyTable";
 import { adventTonight } from "@/lib/familyAdvent";
 import HomeTonight, { homeTonight } from "./HomeTonight";
 import TonightSlot, { readShellLines, type ShellLines } from "./TonightSlot";
-import { fillSlot, slotData, slotLines, slotScript } from "../../../../scripts/lib/home-tonight-slot.mjs";
+import { fillSlot, slotData, slotLines, slotScript, withSlotScript } from "../../../../scripts/lib/home-tonight-slot.mjs";
 
 const ROOT = path.resolve(__dirname, "../../../..");
 const DATA = slotData(ROOT);
@@ -160,13 +160,20 @@ describe("the static shell's tonight slot", () => {
   it("runs as written from the head of /, filling the slot as the parser inserts it", async () => {
     const script = slotScript(DATA);
     expect(script).not.toContain("</script");
-    // The prerendered "/" carries it in its head, and nothing inside the hero: a parser may paint
-    // before a script, and on a phone that once painted the words before Plate I, which then pushed them down.
+    // The prerendered "/" carries it early in its head, and nothing inside the hero: the parser waits at a
+    // script for the stylesheet and may paint what it has, and on a phone that once painted the words before
+    // Plate I, which then pushed them down (a layout shift of 0.252).
     const prerender = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
-    expect(prerender).toContain("isHome ? `${head}\\n    ${homeSlotScript()}`");
+    expect(prerender).toContain("if (isHome) html = withSlotScript(html, homeSlotScript());");
     const hero = prerender.slice(prerender.indexOf("function homeHeroHtml"), prerender.indexOf("function homeSlotScript"));
     expect(hero).toContain('<div class="home-tonight home-tonight--slot" aria-hidden="true"></div>${roads}');
     expect(hero).not.toContain("<script");
+    const page =
+      '<html><head><meta charset="UTF-8" /><script>heal()</script><script type="module" crossorigin src="/assets/index-a.js"></script><link rel="stylesheet" crossorigin href="/assets/index-a.css"><title>t</title></head><body></body></html>';
+    const built = withSlotScript(page, "fill()");
+    expect(built.indexOf("<script>fill()</script>")).toBeGreaterThan(built.indexOf("<script>heal()</script>"));
+    expect(built.indexOf("<script>fill()</script>")).toBeLessThan(built.indexOf('<script type="module"'));
+    expect(built.indexOf("<script>fill()</script>")).toBeLessThan(built.indexOf('<link rel="stylesheet"'));
 
     at("2026-11-23");
     // The head's script runs before the body is parsed...

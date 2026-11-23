@@ -185,16 +185,18 @@ const tidy = (fn) =>
     .join("\n");
 
 /**
- * The inline script for the head of the "/" HTML: the reader's own date (as
- * lib/familyYear.ts localISODate reads it), then the lines, then the slot as
- * soon as the parser inserts it. It sits in the head, not after the slot,
- * because a parser can stop before a script and paint what it has: with a
- * script inside the hero, a phone could paint the words before Plate I (which
- * comes after them in the HTML and sits above them on the screen), and the
- * plate's arrival then pushed every word down (a layout shift of 0.25 in one
- * Lighthouse run). A mutation observer's callback runs before the next paint,
- * so the slot holds its words in the first frame that shows it. It never
- * throws; on any error the slot stays as the CSS draws it.
+ * The inline script for the head of the "/" HTML (withSlotScript): the
+ * reader's own date (as lib/familyYear.ts localISODate reads it), then the
+ * lines, then the slot as soon as the parser inserts it. It sits early in the
+ * head, not after the slot, because a script that follows a stylesheet makes
+ * the parser wait there for the stylesheet, and when it arrives the browser
+ * may paint what has been parsed so far: with the script inside the hero, a
+ * phone could paint the words before Plate I (which comes after them in the
+ * HTML and sits above them on the screen), and the plate's arrival pushed
+ * every word down (a layout shift of 0.252 in one Lighthouse run). A mutation
+ * observer's callback runs before the next paint, so the slot holds its words
+ * in the first frame that shows it. It never throws; on any error the slot
+ * stays as the CSS draws it.
  */
 export function slotScript(data) {
   // Inside the JSON's strings, "<" is "<", so no title can close the script element.
@@ -212,4 +214,18 @@ export function slotScript(data) {
     "}catch(e){}})();";
   if (/<\/script|<!--/i.test(out)) throw new Error("home-tonight-slot: the inline script would close its own element");
   return out;
+}
+
+/**
+ * The "/" HTML with the slot's script early in its head: before the
+ * stylesheet and the app's own script. A script after a stylesheet waits for
+ * it to arrive, and the parser waiting there can paint whatever it has parsed
+ * so far; ahead of them it waits on nothing.
+ */
+export function withSlotScript(html, script) {
+  const tag = `<script>${script}</script>`;
+  const head = html.indexOf("</head>");
+  const at = html.search(/<link rel="stylesheet"|<script type="module"/);
+  if (at > -1 && at < head) return `${html.slice(0, at)}${tag}\n    ${html.slice(at)}`;
+  return head > -1 ? `${html.slice(0, head)}    ${tag}\n  ${html.slice(head)}` : html;
 }

@@ -21,3 +21,4 @@ export function slotData(root: string): SlotData;
 export function slotLines(d: SlotData, today: string): SlotLines | null;
 export function fillSlot(slot: Element, lines: SlotLines | null): void;
 export function slotScript(data: SlotData): string;
+export function withSlotScript(html: string, script: string): string;

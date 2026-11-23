@@ -26,7 +26,7 @@ import { buildSync } from "esbuild";
 import { essayDate, loadEssayShelf, loadTakenDown, RETIRED_SENTENCE, PENDING_SENTENCE } from "./lib/shelf.mjs";
 import { loadQuestions } from "./lib/questions.mjs";
 import { SUPPORT_HEAD, givingOpen, supportNoindex, writeBuiltLlms } from "./lib/giving.mjs";
-import { slotData, slotScript } from "./lib/home-tonight-slot.mjs";
+import { slotData, slotScript, withSlotScript } from "./lib/home-tonight-slot.mjs";
 
 dotenv.config();
 
@@ -1225,8 +1225,9 @@ function homeHeroHtml() {
   // a script in the head of "/" (homeSlotScript, below) writes the line's own words
   // into it, unseen, as the parser inserts it, on the nights an ordinary line's room
   // would not fit them (lib/home-tonight-slot.mjs). No script sits inside the hero:
-  // a parser may paint before a script, and on a phone that painted the words before
-  // Plate I, which then pushed them down. Under the slot, the choices of /start as one
+  // the parser waits at a script for the stylesheet and may paint what it has, and on
+  // a phone that painted the words before Plate I, which then pushed them down. Under
+  // the slot, the choices of /start as one
   // row of chips, as Home draws them (pages/home/roadChips.ts): a road opens on /start,
   // a reader's page opens itself.
   const start = readJsonSafe("client/src/lib/startRoad.json") || {};
@@ -1265,11 +1266,11 @@ function homeHeroHtml() {
 /**
  * The script that fills the static hero's tonight slot with the words Home's
  * line will say tonight, unseen, so the slot holds their room
- * (lib/home-tonight-slot.mjs). It goes in the head of "/", never inside the
- * hero (see homeHeroHtml).
+ * (lib/home-tonight-slot.mjs). It goes early in the head of "/", before the
+ * stylesheet (withSlotScript), never inside the hero (see homeHeroHtml).
  */
 function homeSlotScript() {
-  return `<script>${slotScript(slotData(REPO_ROOT))}</script>`;
+  return slotScript(slotData(REPO_ROOT));
 }
 
 /**
@@ -1336,8 +1337,9 @@ function writeRoute(template, route, head, bodyHtml = "") {
     : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
   const preloads = isHome ? "" : chunkPreloads(route.path, template);
-  // The front page's head also carries the script that fills the hero's tonight slot (homeSlotScript).
-  let html = rewriteIndexHtml(template, isHome ? `${head}\n    ${homeSlotScript()}` : preloads ? `${head}\n    ${preloads}` : head);
+  let html = rewriteIndexHtml(template, preloads ? `${head}\n    ${preloads}` : head);
+  // The front page's head also carries the script that fills the hero's tonight slot, early (homeSlotScript).
+  if (isHome) html = withSlotScript(html, homeSlotScript());
   // The page's own text goes inside the static shell, under the masthead, in
   // the site's own type (.prerender-content in index.css). A crawler, a link
   // preview and a browser with scripts blocked read it there. For everyone
