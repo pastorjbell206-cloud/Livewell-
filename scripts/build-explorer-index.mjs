@@ -100,10 +100,21 @@ export function buildIndex() {
  * where it sends the reader at the end), turned round, so that an Honest
  * Answer, a /questions piece, a doctrine study or a wisdom topic can show the
  * films that belong on it (components FilmsHere). Study Bible chapters are
- * left to the passage index, and the family pages to their own data.
+ * left to the passage index, and the family pages to their own data. A
+ * wisdom topic the site marks as heavy (client/src/data/sensitive-pages.json)
+ * keeps the path to help and nothing beside it, as with the tools, so no film
+ * is offered there; a film may still link to it.
  */
 export function buildFilmLinks() {
   const catalogue = read(path.join(DIR, "films.json"));
+  const heavy = read(
+    path.join(ROOT, "client/src/data/sensitive-pages.json")
+  ).wisdom;
+  const HEAVY = new Set(
+    [...Object.keys(heavy.lead), ...Object.keys(heavy.end)].map(
+      id => `/wisdom/${id}`
+    )
+  );
   const films = {};
   const pages = {};
   for (const f of catalogue.films) {
@@ -116,7 +127,7 @@ export function buildFilmLinks() {
     ].map(l => String(l.href ?? "").replace(/[#?].*$/, ""));
     let used = false;
     for (const h of new Set(hrefs)) {
-      if (!OFFERED_ON.test(h)) continue;
+      if (!OFFERED_ON.test(h) || HEAVY.has(h)) continue;
       (pages[h] ??= []).push(f.slug);
       used = true;
     }

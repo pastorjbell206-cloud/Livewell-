@@ -94,4 +94,26 @@ describe("FilmsHere", () => {
     expect(LINKS.pages["/answers/is-faith-irrational"]).toContain("faith");
     expect(LINKS.pages["/study/bible/doctrines/salvation"]).toContain("grace");
   });
+
+  it("offers no film on a wisdom topic the site marks as heavy, as no tool is offered there", () => {
+    const heavy = JSON.parse(
+      fs.readFileSync(
+        path.resolve(__dirname, "../data/sensitive-pages.json"),
+        "utf8"
+      )
+    ).wisdom as {
+      lead: Record<string, string[]>;
+      end: Record<string, string[]>;
+    };
+    const ids = [...Object.keys(heavy.lead), ...Object.keys(heavy.end)];
+    expect(ids.length).toBeGreaterThan(10);
+    for (const id of ids)
+      expect(LINKS.pages[`/wisdom/${id}`], `a film on /wisdom/${id}`).toBe(
+        undefined
+      );
+    // A film may still send its reader there (Psalm 23 links Grief and Loss).
+    expect(
+      filmFile("psalm-23").deeper.map((l: { href: string }) => l.href)
+    ).toContain("/wisdom/grief");
+  });
 });
