@@ -15989,3 +15989,19 @@ Cut in Ruth 2: 1 Peter 1:18-19, Galatians 4:4-5, Hebrews 2:14-17 and Matthew 23:
 | Psalm 27:14 | 16-18 | BSB | BSB text (quoted without the verse's closing exclamation point) |
 
 Cut in Ruth 3: Hebrews 2:14 and the redeemer as a pattern of Christ (the deep note's thematic link); the date of the book (left to the book page).
+
+## The plain notes on Ruth 4 (2026-11-23)
+
+`client/public/bible/notes/ruth/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The gate as court and public square; ten elders and witnesses; the legal logic of the land, the redeemer's first right, the field passing to another line; the sandal as a sign of transfer; Deuteronomy 25:9 and the differences scholars debate; the unnamed so-and-so; qanah as legal language and not property; the elders' prayer and Rachel, Leah and Tamar | 1-12 | ruth/4.json `cultural`, `literary`, `words` (qanah, shem, ed); genesis/plain/38.json (27-30, `later`) | Repository |
+| Leviticus 25:25; Deuteronomy 25:9; Genesis 38 | 1-12 | ruth/4.json `cultural`; deuteronomy/plain/25.json (5-10, `later`); BSB | Repository; BSB text |
+| Deuteronomy 23:3 and the Moabite: the three answers (rabbinic, men only; a hostile people, not those who join in faith; a test of a strict reading); not exclusive; no choice made; a gift from the LORD | 1-12 `hard` | ruth/4.json `hard`; deuteronomy/plain/23.json (1-8, `hard`) | Repository; the answers in their holders' terms |
+| The second of the two places the LORD is said to act (4:13); the women's chorus returning; the child as redeemer; ‘better to you than seven sons’ and seven as completeness; Naomi's emptiness answered; Obed and David | 13-17 | ruth/4.json `literary`; ruth/intro.json `reading` | Repository |
+| Matthew 1:5; 1 Samuel 16:1 | 13-17 | ruth/4.json `christ`; BSB | Repository; BSB text |
+| Ten names from Perez to David; 1 Chronicles 2; Perez and Tamar, Nahshon in the wilderness; a chosen list; Boaz seventh; the last word David | 18-22 | ruth/4.json `historical`, `literary`; bible/guides/reading-genealogies.json | Repository |
+| 1 Chronicles 2:12; Luke 3:32 | 18-22 | ruth/4.json `historical`; BSB | Repository; BSB text |
+
+Cut in Ruth 4: Ephesians 1:7 and 14 and the redeemer as a pattern of Christ (the deep note's thematic link); the written and spoken readings of the verb in verse 5.
