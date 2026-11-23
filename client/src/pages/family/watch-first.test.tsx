@@ -17,6 +17,10 @@ import { tonightOn } from "@/lib/familyTable";
 import { localISODate } from "@/lib/familyYear";
 import Family from "../Family";
 import DevotionPage from "./DevotionPage";
+// The film player loads only when Watch first is pressed (by design); compiled
+// here rather than inside a test, where on a busy machine its first load ran
+// past findBy's one second.
+import "@/pages/explorer/films/FilmPlayer";
 
 vi.mock("@vercel/analytics", () => ({ track: vi.fn() }));
 

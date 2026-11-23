@@ -20,6 +20,9 @@ import AskBox, { ASK_MORE } from "@/components/questions/AskBox";
 import { entryHref, type Era, type Figure } from "@/lib/historyCourse";
 import { entryById } from "@/lib/siteCatalog";
 import TheologyHistory from "./TheologyHistory";
+// The history door's lazy timeline, compiled here rather than inside a test,
+// where on a busy machine its first load ran past findBy's one second.
+import "@/components/history/HistoryTimeline";
 import HistoryEssay from "./history/HistoryEssay";
 import HistoryPeople from "./history/HistoryPeople";
 import Answers from "./Answers";
@@ -148,19 +151,22 @@ describe("/theology/history", () => {
     expect(buttons).toHaveLength(ERAS.length);
     expect(buttons[0].getAttribute("aria-pressed")).toBe("true");
     expect(screen.getByRole("link", { name: "Start at lesson 1" }).getAttribute("href")).toBe("/theology/history/the-apostolic-age");
-    // Touch the Councils age: its lessons, its councils, its people.
+    // Touch the Councils age: its lessons, its councils, its people. Found
+    // within the age line: page-wide role queries after each touch weighed
+    // every link and button on the door.
     fireEvent.click(buttons[2]);
-    expect(screen.getByRole("heading", { level: 3, name: "The Age of the Councils" })).toBeTruthy();
+    const line = within(document.querySelector<HTMLElement>(".hl")!);
+    expect(line.getByRole("heading", { level: 3, name: "The Age of the Councils" })).toBeTruthy();
     const panel = document.querySelector(".hl-panel") as HTMLElement;
     expect(within(panel).getByRole("link", { name: /Lesson 6/ }).getAttribute("href")).toBe("/theology/history/the-great-councils");
-    expect(screen.getByRole("button", { name: /First Council of Nicaea/ })).toBeTruthy();
-    expect(screen.getByRole("link", { name: "Augustine of Hippo" }).getAttribute("href")).toBe("/theology/history/people#person-augustine-of-hippo");
+    expect(line.getByRole("button", { name: /First Council of Nicaea/ })).toBeTruthy();
+    expect(line.getByRole("link", { name: "Augustine of Hippo" }).getAttribute("href")).toBe("/theology/history/people#person-augustine-of-hippo");
     // Arrow keys move on; Later and End too.
     fireEvent.keyDown(buttons[2], { key: "ArrowRight" });
     expect(buttons[3].getAttribute("aria-pressed")).toBe("true");
     fireEvent.keyDown(buttons[3], { key: "End" });
     expect(buttons[ERAS.length - 1].getAttribute("aria-pressed")).toBe("true");
-    fireEvent.click(screen.getByRole("button", { name: /Earlier/ }));
+    fireEvent.click(line.getByRole("button", { name: /Earlier/ }));
     expect(buttons[ERAS.length - 2].getAttribute("aria-pressed")).toBe("true");
   });
 

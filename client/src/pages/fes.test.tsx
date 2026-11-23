@@ -86,10 +86,19 @@ describe("/family, cut short", () => {
 });
 
 describe("/family/catechism, said aloud", () => {
-  it("turns a question to both answers exactly as written, steps on, and remembers its place", async () => {
+  // Every question in the list under the card is a button too, so a role
+  // query over the whole page weighs about a hundred buttons, and polling one
+  // while the page loads repeats that on every change. So the card is awaited
+  // by its own words, and its buttons are found inside its own section.
+  const aloud = () => within(document.getElementById("say-it-aloud")!);
+  const cardShows = (n: number) => screen.findByText(`Question ${n} of ${catechism.length}`);
+
+  // The whole catechism page twice (a reload is the point): heavy by design, so 10 s rather than 5.
+  it("turns a question to both answers exactly as written, steps on, and remembers its place", { timeout: 10000 }, async () => {
     serve(["family-catechism.json"]);
     const first = renderWithProviders(<FamilyCatechism />);
-    const card = await screen.findByRole("button", { name: /Showing the question/ });
+    await cardShows(1);
+    const card = aloud().getByRole("button", { name: /Showing the question/ });
     expect(within(card).getByText(catechism[0].question)).toBeInTheDocument();
     expect(screen.getByText(`Question 1 of ${catechism.length}`)).toBeInTheDocument();
 
@@ -98,12 +107,12 @@ describe("/family/catechism, said aloud", () => {
     expect(within(card).getByText(catechism[0].kidsAnswer)).toBeInTheDocument();
     expect(within(card).getByText(catechism[0].answer)).toBeInTheDocument();
 
-    fireEvent.click(screen.getByRole("button", { name: "Next question" }));
+    fireEvent.click(aloud().getByRole("button", { name: "Next question" }));
     expect(screen.getByText(`Question 2 of ${catechism.length}`)).toBeInTheDocument();
-    expect(within(screen.getByRole("button", { name: /Showing the question/ })).getByText(catechism[1].question)).toBeInTheDocument();
+    expect(within(aloud().getByRole("button", { name: /Showing the question/ })).getByText(catechism[1].question)).toBeInTheDocument();
     expect(JSON.parse(window.localStorage.getItem(PRACTICE_KEY)!)).toEqual({ v: 1, at: 2 });
-    fireEvent.click(screen.getByRole("button", { name: "Previous question" }));
-    fireEvent.click(screen.getByRole("button", { name: "Previous question" }));
+    fireEvent.click(aloud().getByRole("button", { name: "Previous question" }));
+    fireEvent.click(aloud().getByRole("button", { name: "Previous question" }));
     expect(screen.getByText(`Question ${catechism.length} of ${catechism.length}`)).toBeInTheDocument();
     first.unmount();
 
@@ -130,13 +139,14 @@ describe("/family/catechism, said aloud", () => {
     );
     serve(["family-catechism.json"]);
     renderWithProviders(<FamilyCatechism />);
-    const read = await screen.findByRole("button", { name: "Read it to me" });
+    await cardShows(1);
+    const read = aloud().getByRole("button", { name: "Read it to me" });
     fireEvent.click(read);
     expect(spoken).toEqual([catechism[0].question]);
-    fireEvent.click(screen.getByRole("button", { name: "Stop" }));
-    fireEvent.click(screen.getByRole("button", { name: /Showing the question/ }));
+    fireEvent.click(aloud().getByRole("button", { name: "Stop" }));
+    fireEvent.click(aloud().getByRole("button", { name: /Showing the question/ }));
     spoken.length = 0;
-    fireEvent.click(screen.getByRole("button", { name: "Read it to me" }));
+    fireEvent.click(aloud().getByRole("button", { name: "Read it to me" }));
     expect(spoken).toEqual([catechism[0].question, catechism[0].kidsAnswer, catechism[0].answer]);
   });
 });

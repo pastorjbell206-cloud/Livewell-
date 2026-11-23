@@ -20,7 +20,7 @@
  *   after the opening section; generated art is not drawn.
  * - Crossway's notice follows an essay that quotes the ESV (lib/esv)
  */
-import { useEffect, useId, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useId, useRef, useState } from "react";
 import { scrollBehavior } from "@/lib/motion";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
@@ -533,8 +533,13 @@ export default function ArticleDetail() {
     enabled: Boolean(slug && rewrite),
   });
 
-  const dbPost = postQuery.data ?? null;
-  const rewritten = rewriteQuery.data ?? null;
+  // Drawn as a transition when it arrives, so React renders the essay in
+  // slices: straight from the query it was one task of 141 ms on a desktop
+  // machine, about four times that on the phone Lighthouse simulates. Until
+  // that first draw is done the loading line (or the prerendered text) stays.
+  const dbPost = useDeferredValue(postQuery.data ?? null);
+  const rewritten = useDeferredValue(rewriteQuery.data ?? null);
+  const arriving = dbPost !== (postQuery.data ?? null) || rewritten !== (rewriteQuery.data ?? null);
   const post: EssayView | null = rewritten
     ? {
         slug: rewritten.slug,
@@ -638,7 +643,7 @@ export default function ArticleDetail() {
   // An essay with a rewrite shows as soon as its file loads. The database row
   // (its pillar, dates and cover image) fills in when the server answers, and
   // a slow, missing or failed row never holds the essay back.
-  if (rewrite ? rewriteQuery.isLoading : postQuery.isLoading) {
+  if ((rewrite ? rewriteQuery.isLoading : postQuery.isLoading) || (arriving && !post)) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>

@@ -8,6 +8,11 @@ import { fireEvent, screen, waitFor } from "@testing-library/react";
 
 import { offlineFetch, renderWithProviders } from "@/test/harness";
 import MinimalNav from "./MinimalNav";
+// The search and its reference parser load only when the field is used (by
+// design); compiled here rather than inside a test, where on a busy machine
+// their first load ran past findBy's and waitFor's one second.
+import "@/lib/siteSearch";
+import "@/lib/scripture-ref";
 
 function openSearch() {
   vi.stubGlobal("fetch", offlineFetch());

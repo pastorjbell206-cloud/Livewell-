@@ -112,13 +112,34 @@
  * it was rewritten, and holdout8 returned to 75.0%. End of the tenth build:
  * cases 98.6% / 100%, holdout4 100% / 100%, holdout7 76.7% / 86.7%,
  * holdout8 54.2% / 75.0%; the rest unchanged.
+ * On 2026-11-23 holdout9 (64 sentences, clean) and dev9 (55, for tuning the
+ * word vectors) were written and committed before the matcher, matching.json
+ * or the vectors were touched. Measured then, fresh:
+ *   holdout8 (24) top 1 54.2%  top 3 75.0%
+ *   holdout9 (64) top 1 50.0%  top 3 71.9%
+ *   dev9     (55) top 1 72.7%  top 3 81.8%
+ * Then the word vectors (lib/wisdom-vectors.ts: GloVe 6B, public domain, 3.4
+ * MB, fetched only once the finder is used): each topic's name and phrasings
+ * as sentence vectors, the nearest adding up to VECTOR_WEIGHT from
+ * VECTOR_FLOOR. Weight and floor were chosen on the sets above holdout8 and
+ * on dev9 (8 and 0.4: weights 6 to 14 and floors 0.35 to 0.5 were tried), and
+ * only then were the clean sets measured, once:
+ *   holdout8 (24) top 1 54.2% -> 58.3%  top 3 75.0% -> 75.0%
+ *   holdout9 (64) top 1 50.0% -> 54.7%  top 3 71.9% -> 71.9%
+ *   dev9     (55) top 1 72.7% -> 76.4%  top 3 81.8% -> 83.6%
+ *   holdout7 (30) top 1 76.7% -> 80.0%; holdout (19) 100% -> 94.7% (one
+ *   sentence, "my wife and I feel like roommates", now Talking with Your
+ *   Spouse first and Marriage Trouble in the first three); the rest unchanged.
+ * The aim of 70% first on the clean sets is not met; tools-plan.md, section 23,
+ * says why. Every rate below is measured with the vectors, as the page uses them.
  * The floors below sit just under those, so a change to the data that makes
  * the finder worse fails here by name.
  */
 import { describe, it, expect } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
-import { prepare, findTopics, findInArea, stem, normalize, queryWords, isFinderIndex, editDistance, MAX_CHOICES } from "./wisdom-match";
+import { prepare, prepareVectors, vectorBonus, findTopics as findWithoutVectors, findInArea, stem, normalize, queryWords, isFinderIndex, editDistance, MAX_CHOICES, VECTOR_WEIGHT, type TopicVectors } from "./wisdom-match";
+import { parseVectors, sentenceVector } from "./wisdom-vectors";
 
 const index: unknown = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../../public/wisdom/finder.json"), "utf8"));
 const fixture = JSON.parse(fs.readFileSync(path.resolve(__dirname, "wisdom-match.fixture.json"), "utf8")) as {
@@ -131,10 +152,18 @@ const fixture = JSON.parse(fs.readFileSync(path.resolve(__dirname, "wisdom-match
   holdout6: { q: string; expect: string[] }[];
   holdout7: { q: string; expect: string[] }[];
   holdout8: { q: string; expect: string[] }[];
+  holdout9: { q: string; expect: string[] }[];
+  dev9: { q: string; expect: string[] }[];
 };
 
 if (!isFinderIndex(index)) throw new Error("finder.json is not a finder index");
 const prep = prepare(index);
+const bin = fs.readFileSync(path.resolve(__dirname, "../../public/wisdom/vectors.bin"));
+const vectors = parseVectors(bin.buffer.slice(bin.byteOffset, bin.byteOffset + bin.byteLength));
+if (!vectors) throw new Error("vectors.bin is not the finder's vector file");
+const tv: TopicVectors = prepareVectors(prep, vectors);
+/** The finder as the page runs it once the vectors have arrived. */
+const findTopics = (p: typeof prep, q: string, limit = 6) => findWithoutVectors(p, q, limit, tv);
 
 function rate(cases: { q: string; expect: string[] }[]) {
   let top1 = 0;
@@ -154,7 +183,7 @@ function rate(cases: { q: string; expect: string[] }[]) {
 describe("wisdom matcher", () => {
   it("has at least 60 plain sentences, every expected topic real", () => {
     const ids = new Set(index.topics.map((t) => t.id));
-    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2, ...fixture.holdout3, ...fixture.holdout4, ...fixture.holdout5, ...fixture.holdout6, ...fixture.holdout7, ...fixture.holdout8];
+    const all = [...fixture.cases, ...fixture.holdout, ...fixture.holdout2, ...fixture.holdout3, ...fixture.holdout4, ...fixture.holdout5, ...fixture.holdout6, ...fixture.holdout7, ...fixture.holdout8, ...fixture.holdout9, ...fixture.dev9];
     expect(all.length).toBeGreaterThanOrEqual(60);
     for (const c of all) for (const id of c.expect) expect(ids.has(id), `${c.q}: ${id}`).toBe(true);
   });
@@ -169,6 +198,8 @@ describe("wisdom matcher", () => {
     const holdout6 = rate(fixture.holdout6);
     const holdout7 = rate(fixture.holdout7);
     const holdout8 = rate(fixture.holdout8);
+    const holdout9 = rate(fixture.holdout9);
+    const dev9 = rate(fixture.dev9);
     console.info(
       `[wisdom-match] cases ${cases.n}: top 1 ${(cases.top1 * 100).toFixed(1)}%, top 3 ${(cases.top3 * 100).toFixed(1)}%; ` +
         `holdout ${holdout.n}: top 1 ${(holdout.top1 * 100).toFixed(1)}%, top 3 ${(holdout.top3 * 100).toFixed(1)}%` +
@@ -186,7 +217,9 @@ describe("wisdom matcher", () => {
         `\n[wisdom-match] holdout7 ${holdout7.n}: top 1 ${(holdout7.top1 * 100).toFixed(1)}%, top 3 ${(holdout7.top3 * 100).toFixed(1)}%` +
         (holdout7.misses.length ? `\n  holdout7 misses: ${holdout7.misses.join("\n  ")}` : "") +
         `\n[wisdom-match] holdout8 ${holdout8.n}: top 1 ${(holdout8.top1 * 100).toFixed(1)}%, top 3 ${(holdout8.top3 * 100).toFixed(1)}%` +
-        (holdout8.misses.length ? `\n  holdout8 misses: ${holdout8.misses.join("\n  ")}` : ""),
+        (holdout8.misses.length ? `\n  holdout8 misses: ${holdout8.misses.join("\n  ")}` : "") +
+        `\n[wisdom-match] holdout9 ${holdout9.n}: top 1 ${(holdout9.top1 * 100).toFixed(1)}%, top 3 ${(holdout9.top3 * 100).toFixed(1)}%` +
+        `\n[wisdom-match] dev9 ${dev9.n}: top 1 ${(dev9.top1 * 100).toFixed(1)}%, top 3 ${(dev9.top3 * 100).toFixed(1)}%`,
     );
     expect(cases.top1).toBeGreaterThanOrEqual(0.95);
     expect(cases.top3).toBeGreaterThanOrEqual(0.95);
@@ -202,11 +235,16 @@ describe("wisdom matcher", () => {
     expect(holdout5.top3).toBeGreaterThanOrEqual(0.95);
     expect(holdout6.top1).toBeGreaterThanOrEqual(0.95);
     expect(holdout6.top3).toBeGreaterThanOrEqual(0.95);
-    expect(holdout7.top1).toBeGreaterThanOrEqual(0.76);
+    expect(holdout7.top1).toBeGreaterThanOrEqual(0.79);
     expect(holdout7.top3).toBeGreaterThanOrEqual(0.86);
     // The clean set, written by someone else: reported, and held just under what it scored.
-    expect(holdout8.top1).toBeGreaterThanOrEqual(0.54);
+    expect(holdout8.top1).toBeGreaterThanOrEqual(0.58);
     expect(holdout8.top3).toBeGreaterThanOrEqual(0.74);
+    // The second clean set, written on 2026-11-23: reported, and held just under what it scored.
+    expect(holdout9.top1).toBeGreaterThanOrEqual(0.54);
+    expect(holdout9.top3).toBeGreaterThanOrEqual(0.71);
+    expect(dev9.top1).toBeGreaterThanOrEqual(0.76);
+    expect(dev9.top3).toBeGreaterThanOrEqual(0.83);
   });
 
   it("does not force a match on nonsense", () => {
@@ -407,9 +445,55 @@ describe("wisdom matcher", () => {
     }
   });
 
+  it("reads the vector file: GloVe's words, one length and one direction each, near words near", () => {
+    expect(vectors.dims).toBe(100);
+    expect(vectors.rank.size).toBeGreaterThan(30000);
+    // GloVe's own order, most frequent first.
+    expect(vectors.rank.get("the")).toBe(0);
+    const near = (a: string, b: string) => {
+      const x = sentenceVector(vectors, [a])!;
+      const y = sentenceVector(vectors, [b])!;
+      return x.reduce((s, v, i) => s + v * y[i], 0);
+    };
+    expect(near("furious", "angry")).toBeGreaterThan(0.6);
+    expect(near("grief", "sorrow")).toBeGreaterThan(0.6);
+    expect(near("furious", "pottery")).toBeLessThan(0.3);
+    expect(parseVectors(new ArrayBuffer(8))).toBeNull();
+  });
+
+  it("adds nothing for words the vectors do not know, and never more than VECTOR_WEIGHT", () => {
+    expect(vectorBonus(tv, "asdf qwerty", prep.topics.length)).toBeNull();
+    const bonus = vectorBonus(tv, "my husband and i never stop arguing", prep.topics.length)!;
+    expect(Math.max(...bonus)).toBeGreaterThan(0);
+    expect(Math.max(...bonus)).toBeLessThanOrEqual(VECTOR_WEIGHT);
+    expect(Math.min(...bonus)).toBe(0);
+  });
+
+  it("never lets the vectors move a safety result: the help topic first, with or without them", () => {
+    for (const q of [
+      "i want to hurt myself tonight",
+      "i keep thinking about how to end my life",
+      "my kids would be better off without me",
+      "i wish i could just disappear and never come back",
+      "i just want to die",
+      "my husband beats me when he drinks",
+      "he threatened to kill me if i leave",
+      "i am not safe at home",
+      "my husband checks my phone and wont let me see my friends",
+      "my girlfriend wont let me talk to my friends anymore",
+    ]) {
+      const plain = findWithoutVectors(prep, q);
+      const withVectors = findTopics(prep, q);
+      expect(withVectors.matches[0].safety, q).toBe(true);
+      expect(withVectors.matches[0].topic.id, q).toBe(plain.matches[0].topic.id);
+      expect(withVectors.close, q).toEqual([]);
+      expect(withVectors.unsure, q).toBe(false);
+    }
+  });
+
   it("narrows to the area the reader picks, never to an empty list", () => {
     const area = findTopics(prep, "i feel off lately").areas[1];
-    const list = findInArea(prep, "i feel off lately", area);
+    const list = findInArea(prep, "i feel off lately", area, 6, tv);
     expect(list.length).toBeGreaterThanOrEqual(3);
     for (const m of list) expect(m.topic.area).toBe(area);
     const scores = list.filter((m) => !m.related).map((m) => m.score);
