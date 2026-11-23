@@ -16164,3 +16164,19 @@ Cut in chapter 6: Hebrews 10:19-22 and the way into the holy place through Chris
 | Acts 13:20; Hebrews 11:32-33 | 15-17 | acts/plain/13.json (13-25); hebrews/plain/11.json (32-40); BSB | Repository; BSB text; the New Testament's own lines |
 
 Cut in chapter 7: 1 Timothy 2:5 and Hebrews 7:25 and Samuel as a pattern of Christ's mediation (the deep note's pattern, not a line the New Testament draws to this chapter); 2 Samuel 23:16 and David's poured-out water (a different setting, as the deep note says).
+
+## The plain notes on 1 Samuel 8 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hinge of the book; Samuel's sons as Eli's again; bribes against Deuteronomy 16:19; Beersheba at the southern edge, far from Ramah; late eleventh century BC, Philistines and Ammonites; neighbors with kings; the elders' military reason; ancient kingship as sacred office; Deuteronomy 17:14-20 and its limits, imagining the people's words; the elders' real authority | 1-9 | 1-samuel/8.json `story`, `historical`, `cultural` | Repository |
+| Deuteronomy 17:14-15; Judges 8:23 | 1-9 | 1-samuel/8.json `cultural`; judges/intro.json `teaching` (Judges 8:23); BSB | Repository; BSB text |
+| Why the request is rejection: motive and timing and the king the LORD would choose; kings promised (Genesis 17:6; 35:11; 49:10) and grasping before God's time; sources with different attitudes; the two things clear | 1-9 `hard` | 1-samuel/8.json `hard` | Repository; the readings in their holders' terms |
+| The speech built on take and ending in slaves; mishpat as justice and as manner; the practices of ancient kings (conscription, forced labor, the tenth, confiscation); comparison with texts from Ugarit; Solomon's demands (1 Kings 4-5; 12:4) or a warning drawn from known kingdoms; no program for any government or party today | 10-18 | 1-samuel/8.json `historical`, `literary`, `words` (mishpat) | Repository; both views of the speech in their holders' terms |
+| 1 Kings 12:4; Hosea 13:11 | 10-18 | 1-samuel/8.json `historical` (1 Kings 12:4); BSB | Repository; BSB text |
+| Shama three times to Samuel and the people's refusal; listening as the test of the kingship; to be like the nations and have another fight their battles; God granting what he disapproves, judgment in the granting, and the throne of David later | 19-22 | 1-samuel/8.json `literary`, `words` (shama), `doctrines` (sovereignty, kingdom) | Repository |
+| Acts 13:21 | 19-22 | acts/plain/13.json (13-25); BSB | Repository; BSB text |
+
+Cut in chapter 8: Mark 10:42-45 and the king who serves (the deep note calls it thematic, not a line the New Testament draws to this chapter).
