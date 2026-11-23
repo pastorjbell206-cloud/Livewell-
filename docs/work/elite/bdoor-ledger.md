@@ -15680,3 +15680,22 @@ Cut in chapter 6: John 20:19 and Ephesians 2:14 on peace, and 1 Corinthians 1:26
 | Joshua 6:20; Isaiah 10:26; Isaiah 9:4 | 16-25 | judges/7.json `historical`, `story`, `words`; BSB | Repository; BSB text |
 
 Cut in chapter 7: 2 Corinthians 4:7 and the treasure in jars of clay (the deep note says Paul does not cite Gideon there; the link is not drawn by the New Testament); Abel-meholah as Elisha's later home; the places of the flight beyond the fords.
+
+## The plain notes on Judges 8 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ephraim as a large central tribe that saw itself as leader of the north; offended to be called late; the grape-harvest proverb (gleanings, Abiezer), flattery that defuses; the contrast with Jephthah in chapter 12 | 1-3 | judges/8.json `cultural`; judges/12.json `historical` | Repository |
+| Proverbs 15:1; Isaiah 7:2 and Ephraim as the name of the north | 1-3 | hosea/intro.json `setting`; isaiah/7.json `historical`; BSB | Repository; BSB text |
+| Succoth and Penuel as Israelite towns near the Jabbok; Jacob's shelters and wrestling; their refusal probably caution, their fear understandable; the young man's list and early alphabetic writing and inscriptions; God hardly mentioned, threats and oaths, Israelites punished; the kings killed as revenge for brothers at Tabor, an event not otherwise described; avenging kin counted a duty; the boy and the warrior's death; no pattern | 4-21 | judges/8.json `historical`, `cultural`, `literary`, `doctrines` (sin) | Repository |
+| Genesis 32:30; Genesis 33:17; Deuteronomy 32:35; Romans 12:19 | 4-21 | judges/8.json `historical`; BSB | Repository; BSB text |
+| Succoth and Penuel: rough wartime justice, or a narrative critical of Gideon (God absent, Israelites harmed, the slope down); the towns' fear; a deliverer becoming an oppressor; no side settled | 4-21 `hard` | judges/8.json `hard` | Repository; both readings in their holders' terms |
+| The refusal as the high point (God is Israel's king), undercut at once; desert wealth worn on the body; 1,700 shekels about forty pounds or nineteen kilograms; the ephod as priestly garment used in seeking guidance, Gideon's perhaps such a garment or another object of worship; a rival center; ‘prostituted themselves’ as the book's strongest word for unfaithfulness; the snare of 2:3 now made by Israel's own judge | 22-28 | judges/8.json `cultural`, `literary`, `words` (mashal, ephod, moqesh), `doctrines` (kingdom, idolatry) | Repository |
+| Deuteronomy 17:17 set beside Gideon's gold and wives; 1 Samuel 23:9 and the ephod as the priest's means of guidance | 22-28 | judges/8.json `cultural`, `words` (ephod); 1-samuel/8.json `cultural` (Deuteronomy 17); BSB | Repository; BSB text; a comparison the reader can see in the text |
+| Gideon's ephod and its snare: his intent not told (a memorial, or a means of guidance); the result plain; idolatry growing out of victory and good intentions; the judge who pulled down his father's idol sets up his own; finest words and gravest failure side by side | 22-28 `hard` | judges/8.json `story`, `doctrines` (idolatry), `words` (moqesh) | Repository |
+| Many wives and a concubine as marks of kings; Abimelech's name, father and king; Baal-berith, Baal of the covenant, at Shechem; verse 34 and the forgetting of 2:10; no kindness to Gideon's house; no rest after Gideon | 29-35 | judges/8.json `cultural`, `literary`, `words` (Baal-berith); BSB (3:11, 3:30, 5:31, 8:28) | Repository; BSB text |
+| Psalm 106:21 | 29-35 | theology/passage-notes.json (judges 2, `crossRefs`: Psalm 106); BSB | BSB text |
+
+Cut in chapter 8: Philippians 2:5-8, John 18:36 and John 6:15 (the deep note's contrast with Christ, not a line the New Testament draws to Gideon); the 120,000 fallen of verse 10 discussed as a number; where Karkor lay (not identified with certainty); verses 22 and 29 quoted only in part or paraphrased, because each has a dash in the BSB.
