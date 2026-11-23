@@ -1,6 +1,6 @@
 /**
  * Home's tonight line, held in the static shell (the walk's polish,
- * 2026-11-23; finding 22): the script after the static slot works out from
+ * 2026-11-23; finding 22): a script in the head of "/" works out from
  * the reader's clock what Home will say on a night of a daily set or around
  * Advent and writes it into the slot unseen, so the slot takes the line's own
  * room and the chips under Find do not move when the line arrives. Here: the
@@ -157,28 +157,36 @@ describe("the static shell's tonight slot", () => {
     expect(plain.container.innerHTML).toBe('<div class="home-tonight home-tonight--slot" aria-hidden="true"></div>');
   });
 
-  it("runs as written in the static HTML of /, from the reader's own clock", () => {
+  it("runs as written from the head of /, filling the slot as the parser inserts it", async () => {
     const script = slotScript(DATA);
-    // The prerendered "/" carries it straight after the slot.
-    const prerender = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
-    expect(prerender).toContain('<div class="home-tonight home-tonight--slot" aria-hidden="true"></div>${slot}');
     expect(script).not.toContain("</script");
+    // The prerendered "/" carries it in its head, and nothing inside the hero: a parser may paint
+    // before a script, and on a phone that once painted the words before Plate I, which then pushed them down.
+    const prerender = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
+    expect(prerender).toContain("isHome ? `${head}\\n    ${homeSlotScript()}`");
+    const hero = prerender.slice(prerender.indexOf("function homeHeroHtml"), prerender.indexOf("function homeSlotScript"));
+    expect(hero).toContain('<div class="home-tonight home-tonight--slot" aria-hidden="true"></div>${roads}');
+    expect(hero).not.toContain("<script");
 
     at("2026-11-23");
-    document.body.innerHTML = '<div id="lw-shell"><div class="home-tonight home-tonight--slot" aria-hidden="true"></div><script></script></div>';
-    const tag = document.querySelector("#lw-shell script")!;
-    Object.defineProperty(document, "currentScript", { configurable: true, get: () => tag });
-    try {
-      new Function(script)();
-    } finally {
-      delete (document as unknown as { currentScript?: unknown }).currentScript;
-    }
+    // The head's script runs before the body is parsed...
+    document.body.innerHTML = '<div id="lw-shell"></div>';
+    new Function(script)();
+    // ...and the parser then inserts the hero with its slot.
+    document.getElementById("lw-shell")!.innerHTML = '<section class="home-hero"><div class="home-tonight home-tonight--slot" aria-hidden="true"></div></section>';
+    await Promise.resolve();
     const slot = document.querySelector(".home-tonight--slot")!;
     expect(Array.from(slot.querySelectorAll("p")).map(wordsOf)).toEqual([
       "Tonight at the table: The Year the Fig Tree Did Not Bud, a reading for Thanksgiving week.",
       "Advent begins Sunday, November 29. The family Advent calendar runs from December 1 to Christmas: see the readings.",
     ]);
     expect(readShellLines(document)).toEqual(slotLines(DATA, "2026-11-23"));
+
+    // A slot already there when it runs (a shell served for another address) is filled at once, and only once.
+    document.body.innerHTML = '<div id="lw-shell"><div class="home-tonight home-tonight--slot" aria-hidden="true"></div></div>';
+    new Function(script)();
+    await Promise.resolve();
+    expect(document.querySelectorAll(".home-tonight--slot p")).toHaveLength(2);
   });
 
   it("keeps what it writes out of sight", () => {

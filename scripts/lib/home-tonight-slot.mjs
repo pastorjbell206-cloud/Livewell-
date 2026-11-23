@@ -185,19 +185,31 @@ const tidy = (fn) =>
     .join("\n");
 
 /**
- * The inline script that follows the slot in the "/" HTML: the reader's own
- * date (as lib/familyYear.ts localISODate reads it), then the lines, then the
- * slot. It never throws; on any error the slot stays as the CSS draws it.
+ * The inline script for the head of the "/" HTML: the reader's own date (as
+ * lib/familyYear.ts localISODate reads it), then the lines, then the slot as
+ * soon as the parser inserts it. It sits in the head, not after the slot,
+ * because a parser can stop before a script and paint what it has: with a
+ * script inside the hero, a phone could paint the words before Plate I (which
+ * comes after them in the HTML and sits above them on the screen), and the
+ * plate's arrival then pushed every word down (a layout shift of 0.25 in one
+ * Lighthouse run). A mutation observer's callback runs before the next paint,
+ * so the slot holds its words in the first frame that shows it. It never
+ * throws; on any error the slot stays as the CSS draws it.
  */
 export function slotScript(data) {
   // Inside the JSON's strings, "<" is "<", so no title can close the script element.
   const json = JSON.stringify(data).replace(/</g, "\\u003c");
   const out =
-    "(function(){try{var s=document.currentScript&&document.currentScript.previousElementSibling;" +
-    "if(!s||!/home-tonight--slot/.test(s.className))return;" +
+    "(function(){try{" +
     "var n=new Date(),q=function(x){return(x<10?\"0\":\"\")+x};" +
     `var lines=(${tidy(slotLines)})(${json},n.getFullYear()+"-"+q(n.getMonth()+1)+"-"+q(n.getDate()));\n` +
-    `(${tidy(fillSlot)})(s,lines)}catch(e){}})();`;
+    `var fill=${tidy(fillSlot)};\n` +
+    "var find=function(){var s=document.querySelector(\"#lw-shell .home-tonight--slot\");if(!s)return false;fill(s,lines);return true};" +
+    "if(find())return;" +
+    "var mo=new MutationObserver(function(){if(find())mo.disconnect()});" +
+    "mo.observe(document.documentElement,{childList:true,subtree:true});" +
+    "document.addEventListener(\"DOMContentLoaded\",function(){mo.disconnect()})" +
+    "}catch(e){}})();";
   if (/<\/script|<!--/i.test(out)) throw new Error("home-tonight-slot: the inline script would close its own element");
   return out;
 }

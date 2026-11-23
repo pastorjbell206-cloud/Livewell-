@@ -1222,11 +1222,13 @@ function homeHeroHtml() {
   // here, empty, at the size the drawing fills when React mounts.
   const label = "Look up a passage or ask a question";
   // Tonight's line arrives with the app into a slot of the same height (Home.tsx):
-  // the script after the slot writes the line's own words into it, unseen, on the
-  // nights an ordinary line's room would not fit them (lib/home-tonight-slot.mjs).
-  // Under it, the choices of /start as one row of chips, as Home draws them
-  // (pages/home/roadChips.ts): a road opens on /start, a reader's page opens itself.
-  const slot = `<script>${slotScript(slotData(REPO_ROOT))}</script>`;
+  // a script in the head of "/" (homeSlotScript, below) writes the line's own words
+  // into it, unseen, as the parser inserts it, on the nights an ordinary line's room
+  // would not fit them (lib/home-tonight-slot.mjs). No script sits inside the hero:
+  // a parser may paint before a script, and on a phone that painted the words before
+  // Plate I, which then pushed them down. Under the slot, the choices of /start as one
+  // row of chips, as Home draws them (pages/home/roadChips.ts): a road opens on /start,
+  // a reader's page opens itself.
   const start = readJsonSafe("client/src/lib/startRoad.json") || {};
   const choice = new Map([
     ...(start.roads || []).map((r) => [r.id, { chip: r.chip, href: `/start#${r.id}` }]),
@@ -1253,11 +1255,21 @@ function homeHeroHtml() {
                   <button type="submit" class="home-find__go" aria-label="Find"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></button>
                 </div>
               </form>
-              <div class="home-tonight home-tonight--slot" aria-hidden="true"></div>${slot}${roads}
+              <div class="home-tonight home-tonight--slot" aria-hidden="true"></div>${roads}
             </div>
             <figure class="lw-frame-fig home-hero__art"><div class="lw-frame"><div class="lw-frame__in"></div></div><figcaption class="lw-cap"><span>Plate I</span><span>The road</span></figcaption></figure>
           </div>
         </section>`;
+}
+
+/**
+ * The script that fills the static hero's tonight slot with the words Home's
+ * line will say tonight, unseen, so the slot holds their room
+ * (lib/home-tonight-slot.mjs). It goes in the head of "/", never inside the
+ * hero (see homeHeroHtml).
+ */
+function homeSlotScript() {
+  return `<script>${slotScript(slotData(REPO_ROOT))}</script>`;
 }
 
 /**
@@ -1324,7 +1336,8 @@ function writeRoute(template, route, head, bodyHtml = "") {
     : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
   const preloads = isHome ? "" : chunkPreloads(route.path, template);
-  let html = rewriteIndexHtml(template, preloads ? `${head}\n    ${preloads}` : head);
+  // The front page's head also carries the script that fills the hero's tonight slot (homeSlotScript).
+  let html = rewriteIndexHtml(template, isHome ? `${head}\n    ${homeSlotScript()}` : preloads ? `${head}\n    ${preloads}` : head);
   // The page's own text goes inside the static shell, under the masthead, in
   // the site's own type (.prerender-content in index.css). A crawler, a link
   // preview and a browser with scripts blocked read it there. For everyone
