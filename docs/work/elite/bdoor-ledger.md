@@ -16389,3 +16389,17 @@ Cut in chapter 19: 1 John 2:1, Acts 4:25-28 and Jonathan's plea as a picture of 
 | 1 Chronicles 10:2; 2 Samuel 1:25 | 35-42 | BSB | BSB text |
 
 Cut in chapter 20: Isaiah 55:3 and Acts 13:34 and Jonathan as a model of yielding to the true son of David (the deep note calls it thematic; not a line the New Testament draws to this chapter); 20:15 and 20:41 quoted only in part because they carry a dash.
+
+## The plain notes on 1 Samuel 21 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The exile beginning low; Nob a town of priests within sight of Jerusalem (Isaiah 10:32); Eli's descendants there after Shiloh (Jeremiah 7:12-14 and chapter 4); Ahimelech a great-grandson of Eli; the bread of the Presence and the priests' portion (Leviticus 24:5-9); the condition and ritual purity (Leviticus 15:18; Deuteronomy 23:9-10), bent and not ignored; the lie and its cost (22:22); the single sentence on Doeg as a deliberate delay; Doeg an Edomite and Saul's foreign servants; Goliath's sword as a trophy laid up in the sanctuary | 1-9 | 1-samuel/21.json `story`, `historical`, `cultural`, `literary`, `doctrines` (holiness, sin) | Repository |
+| Leviticus 24:9; Mark 2:25 and Jesus' point, with Matthew 12:3-4 and Luke 6:3-4 | 1-9 | mark/plain/2.json (23-28, `ot`); matthew/plain/12.json (1-8, `ot`); luke/plain/6.json (1-5, `ot`); 1-samuel/21.json `christ`; BSB | Repository; BSB text; Jesus' own use of the story |
+| Abiathar in Mark 2:26: Ahimelech's son, the one who escaped; Matthew and Luke without the name; in the time of Abiathar; a passage named by its best-known figure (Mark 12:26); a slip by Mark or a copyist; readers weighing these differently; Jesus' point unaffected | 1-9 `hard` | 1-samuel/21.json `hard`; mark/plain/2.json (23-28, `hard`) | Repository; the answers in their holders' terms |
+| Gath at Tell es-Safi; Achish again in 27 to 29; the irony of Goliath's sword at Gath and the title king of the land; the song quoted from 18:7; feigned madness and the fear and avoidance shown to the seemingly mad; halal spelled like the verb to praise, treated by lexicons as a separate root; undignified protection; no leave to mock anyone who suffers in mind | 10-15 | 1-samuel/21.json `historical`, `cultural`, `literary`, `words` (halal), `doctrines` (providence) | Repository |
+| The headings of Psalm 34 (Abimelech as a title or a later note) and Psalm 56 | 10-15 | psalms/plain/34.json (1-10, `hearers`); psalms/plain/56.json (1-13, `hearers`); 1-samuel/21.json `historical`; BSB | Repository; BSB text; both readings of the heading in their holders' terms |
+
+Cut in chapter 21: Jesus as the anointed but not yet enthroned king whose followers are fed from holy things (the deep note's reading beyond Jesus' own words; the story's use by Jesus is kept); the gloss in the time of Abiathar given without quotation marks, since it is not the BSB's wording; a reason for Ahimelech's trembling (the text gives none; cut before commit).
