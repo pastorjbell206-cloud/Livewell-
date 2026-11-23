@@ -16369,3 +16369,23 @@ Cut in chapter 18: Mark 15:10 and Philippians 2:5-8 and the beloved one plotted 
 | Psalm 139:7 | 18-24 | BSB | BSB text (a thematic line within the Old Testament) |
 
 Cut in chapter 19: 1 John 2:1, Acts 4:25-28 and Jonathan's plea as a picture of intercession (the deep note calls these thematic connections, not lines the New Testament draws to this chapter); the large cistern at Secu placed (unidentified).
+
+## The plain notes on 1 Samuel 20 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last time together at court; reconciliation shown impossible; the New Moon as a holy day with offerings and trumpets (Numbers 10:10; 28:11-15) and a feast of at least two days; clan sacrifices at local places before the temple; the excuse believable | 1-11 | 1-samuel/20.json `story`, `cultural`, `historical` | Repository |
+| Proverbs 18:24; Numbers 10:10 | 1-11 | 1-samuel/20.json `cultural`; BSB | Repository; BSB text |
+| David's cover story: perhaps true, or a fair test of a king who had broken his oath (19:6); or a real deception reported without approval, a faith real but not flawless, with chapter 21 to come; neither model nor outright condemnation | 1-11 `hard` | 1-samuel/20.json `hard` | Repository; the readings in their holders' terms |
+| Jonathan's acknowledgment of David's future and his submission to it; chesed as loyalty beyond what is owed, the LORD's loving devotion; new dynasties wiping out the old, so the request no formality; oaths at the start and end, God as witness; the arrow signal unseen | 12-23 | 1-samuel/20.json `cultural`, `literary`, `words` (chesed, berit), `doctrines` (sovereignty, covenant) | Repository |
+| Proverbs 17:17; 2 Samuel 9:7; 2 Samuel 21:7 | 12-23 | 1-samuel/20.json `story`; BSB | Repository; BSB text |
+| The small court and its seating, Abner as Saul's cousin; ritual uncleanness barring the meal and not the same as sin; the insult to the mother as a charge of disloyalty; the political fact stated; Jonathan's two questions | 24-34 | 1-samuel/20.json `historical`, `cultural` | Repository |
+| Leviticus 7:20 | 24-34 | 1-samuel/20.json `cultural`; BSB | Repository; BSB text |
+| A father's rage: a family torn by jealousy; Jonathan choosing what is right at great cost while honoring his father as far as he can; the rage named as what it is | 24-34 `hard` | 1-samuel/20.json `doctrines` (family) | Repository |
+| The care line (‘Nothing in this passage asks anyone to stay where they or their children are in danger...’ to ‘...lists places to turn.’) | 24-34 `hard` | 1-john/plain/3.json (16-18, `hard`) | Reused whole, word for word; Find Help named |
+| The plan carried out; the double meaning of Jonathan's words to the boy; the spare last scene and David weeping more (verse 41, paraphrased after its dash); shalom as wholeness spoken in danger; the meeting in 23:16-18 and the news of Jonathan's death | 35-42 | 1-samuel/20.json `literary`, `words` (shalom) | Repository |
+| 1 Chronicles 10:2; 2 Samuel 1:25 | 35-42 | BSB | BSB text |
+
+Cut in chapter 20: Isaiah 55:3 and Acts 13:34 and Jonathan as a model of yielding to the true son of David (the deep note calls it thematic; not a line the New Testament draws to this chapter); 20:15 and 20:41 quoted only in part because they carry a dash.
