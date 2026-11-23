@@ -34,5 +34,541 @@
     { "ch": 16, "why": "David is anointed, because the LORD looks at the heart, and the Spirit leaves Saul." },
     { "ch": 17, "why": "David defeats Goliath, trusting in the LORD's name rather than in weapons." },
     { "ch": 24, "why": "David spares Saul in the cave, refusing to lift his hand against the LORD's anointed." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "1 Samuel in a minute",
+        "body": "First Samuel is the ninth book of the Bible. It has 31 chapters, and it tells how Israel moved from the judges to the kings.\n\nIt follows three lives. Samuel is the answer to a childless woman's prayer, given to the LORD as a small boy at the shrine of Shiloh, who grows up to be prophet, priest and the last of the judges. Saul is the tall young man from the tribe of Benjamin who becomes Israel's first king, begins well, and comes apart. David is the youngest son of Jesse of Bethlehem, called in from the sheep and anointed in secret, who rises in Saul's court, flees Saul's jealousy, and waits years in the wilderness for a throne he will not take by force.\n\nBetween those lives come some of the best-known scenes in the Bible: a boy who hears his name called in the night, the ark of the covenant captured in battle, a people asking for ‘a king to judge us like all the other nations’ (8:5), a shepherd boy and a giant, the friendship of David and Jonathan, a king who visits a medium by night, and that king's death on Mount Gilboa.\n\nThe book's theme is sung near the start, in Hannah's prayer: “The LORD sends poverty and wealth; He humbles and He exalts” (2:7). The lives that follow bear it out. Eli's house falls and Samuel rises. The Philistine god Dagon falls on his face before the ark. The king chosen for his height is set aside for the son no one thought to call in. First Samuel is about power: who holds it, how it is given, and what it does to the people who hold it. It is also the first book of the Bible to call a king the LORD's anointed, in Hebrew his mashiach, the word that gives English messiah."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "First Samuel opens in the world the book of Judges left behind. Judges ends with its verdict on those years: “In those days there was no king in Israel; everyone did what was right in his own eyes” (Judges 21:25). The shrine at Shiloh still stands, but its priests are corrupt, and ‘the word of the LORD was rare’ (3:1).\n\nIn Christian Bibles the book of Ruth stands between Judges and 1 Samuel, and it ends with the name of David. So a reader comes to this book already waiting for him.\n\nIn the Hebrew Bible, 1 and 2 Samuel are one book. The Greek translation made by Jews before the time of Jesus, called the Septuagint, divided it in two and grouped it with Kings as the four books of the Kingdoms, and printed Hebrew Bibles later followed the two-part division. So the story does not stop at chapter 31. Second Samuel carries straight on with David's reign, and 1 and 2 Kings follow the royal line from Solomon to the fall of Jerusalem.\n\nWith Joshua and Judges, these books make up what the Hebrew Bible calls the Former Prophets. They tell Israel's story in the land as prophets would, measuring each generation by the covenant God made with them.\n\nFirst Samuel is the hinge of that story. Behind it are the judges, raised up for a time and then gone. Ahead of it is the promise God will make to David in 2 Samuel 7, of a son whose throne will last forever. That promise rests on the choice of David made in this book."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book does not name its author. It cannot have been written by Samuel in its finished form, since he dies in chapter 25 and the story goes on well past him. A Jewish tradition preserved in the Babylonian Talmud credits Samuel with the book and says that the prophets Gad and Nathan completed it. The tradition draws on 1 Chronicles 29:29, which names records kept by Samuel, Nathan and Gad, and many readers take that verse as a sign that prophets' records lay behind the book.\n\nOne verse shows when the book was finished. Of the town of Ziklag it says, ‘to this day it still belongs to the kings of Judah’ (27:6). That assumes a time when there were separate kings of Judah, after the kingdom divided around 930 BC.\n\nModern scholars generally see the book as built from earlier accounts. In the 1920s Leonhard Rost argued for an older story of the ark, roughly chapters 4 to 6, and many also find a history of David's rise running roughly from 1 Samuel 16 to 2 Samuel 5. Since the German scholar Martin Noth's work in 1943, many have read Samuel as part of one larger history from Deuteronomy to Kings, shaped by the teaching of Deuteronomy and given its final form in the late seventh or the sixth century BC, around the time of the exile in Babylon. Others place most of the book within a century or two of David. More conservative scholars stress the book's unity and its close, early detail, and see writers near the events, among them prophets, as its main authors.\n\nThe text itself has a history worth knowing. Among the Dead Sea Scrolls are several copies of Samuel, and the best known, called 4QSamuel-a, often agrees with the Greek translation against the standard Hebrew text. The standard Hebrew gives Goliath's height as six cubits and a span (17:4), about nine and a half feet, while the scroll and the Greek have four cubits and a span, about six feet nine inches. The scroll also has a paragraph, missing from the standard Hebrew, on the cruelty of Nahash the Ammonite before chapter 11 begins.\n\nChristians who receive 1 Samuel as God's word hold more than one of these views of how it was written, and these notes take no side among them. All agree that the book is carefully composed, whatever its sources."
+      },
+      {
+        "id": "world",
+        "h": "The world of 1 Samuel, and what has been dug up",
+        "body": "The events run from Samuel's birth to Saul's death, in the second half of the eleventh century BC. Saul's reign is usually placed around 1050 to 1010 BC, and David's becoming king around 1010 BC, though these figures are approximate and the text gives few anchors. Even the verse that should give Saul's age and the length of his reign is damaged in the Hebrew. Read word for word, it says that he was one year old when he began to reign and that he reigned two years. English Bibles fill the gaps in different ways, and the Berean Standard Bible reads thirty and forty-two (13:1).\n\nAt the start of the book Israel is a loose alliance of tribes in the central hill country, with no capital, no standing army and no king. Its chief shrine is at Shiloh, in the land of Ephraim, where the ark of the covenant is kept by Eli's family. The great empires of Egypt and Mesopotamia were weak in these years, which left room for small kingdoms to form in Canaan and east of the Jordan. In that world a king was the normal ruler.\n\nThe greatest threat is the Philistines. They had settled on the southern coastal plain early in the twelfth century BC, part of a wider movement of peoples that Egyptian records call the Sea Peoples. They lived in five cities, Gaza, Ashkelon, Ashdod, Gath and Ekron, each with its own ruler, and they pressed steadily up into the hills. Other pressures came from the Ammonites east of the Jordan and the Amalekites in the southern desert.\n\nMuch of this world has been dug up. Ashdod, Gath and Ekron have been excavated and show the Philistines' own way of life. And a word in 1 Samuel that no one could translate for centuries, the pim, the charge the Philistines made for sharpening Israel's tools (13:21), turned out to be a weight: small stone weights inscribed with the word have been found, about two thirds of a shekel.\n\nFor David's own century the evidence is thinner and argued over. Above the Valley of Elah, the setting of chapter 17, excavations from 2007 at Khirbet Qeiyafa uncovered a fortified town dated to the early tenth century BC, and some point to it as evidence of organized rule in Judah in David's time. An Aramaic inscription found at Tel Dan in 1993 and 1994, most likely set up by Hazael of Damascus in the second half of the ninth century BC, names a king of the house of David, and most scholars take it as the earliest known reference to David's line by name. The site's page on what archaeology shows gives the balance: for these earlier centuries the evidence neither proves the biblical accounts nor shows them false. These notes set out what has been found, and claim no more for it than it shows."
+      },
+      {
+        "id": "built",
+        "h": "How 1 Samuel is built",
+        "body": "The book moves in seven stages: Samuel's birth and call (chapters 1 to 3); the ark lost and returned (4 to 7); Israel asks for a king, and Saul is made king (8 to 12); Saul's reign and rejection (13 to 15); David at Saul's court (16 to 20); David the fugitive (21 to 27); and the end of Saul (28 to 31).\n\nThe three lives overlap, and the handover is never clean. Samuel anoints Saul and then mourns him. Saul keeps the throne for years after God has rejected him, and David is anointed long before he reigns.\n\nThe narrator rarely stops to say what to think. Meaning comes through what people say, through repetition, and through people set side by side: Hannah and Peninnah, Samuel and Eli's sons, Saul and David, Jonathan and his father. Samuel's speeches in chapters 8, 12 and 15 state the book's teaching outright.\n\nA few stories seem to be told twice. Saul seems to become king three times, anointed in private, chosen by lot at Mizpah, and confirmed at Gilgal after his first victory (chapters 10 and 11). David comes to Saul's court as a musician in chapter 16, and at the end of chapter 17 Saul asks whose son he is. David spares Saul's life twice, in a cave and in a sleeping camp (chapters 24 and 26). Scholars debate whether these come from accounts combined by an editor, from deliberate retelling, or from events that really happened more than once. A reader can notice the pattern without deciding that question.\n\nWatch too for words that run through the whole book: hearing and listening, seeing, and the heart. And watch the word ask. Saul's name in Hebrew, Shaul, means asked for, and the book plays on it from Hannah's prayer to the night at Endor."
+      },
+      {
+        "id": "ark",
+        "h": "The ark, and a God who will not be used",
+        "body": "The ark of the covenant was a wooden chest overlaid with gold, holding the tablets of the covenant. Its lid, between two cherubim, was understood as the throne of the invisible LORD, ‘who sits enthroned between the cherubim’ (4:4).\n\nIn chapter 4 Israel loses a battle to the Philistines. The elders ask, “Why has the LORD brought defeat on us before the Philistines today?” (4:3), and they answer their own question by fetching the ark from Shiloh, as if it would force a victory. They never ask whether God wants to fight for them. Israel is crushed. The ark is captured, Eli's sons Hophni and Phinehas are killed, and when the news reaches Shiloh the old priest falls and dies. His son's wife, dying in childbirth, names her baby Ichabod. “The glory has departed from Israel,” she said, “for the ark of God has been captured” (4:22).\n\nThe Philistines set the ark in the temple of their god Dagon at Ashdod, and two mornings in a row they find Dagon fallen on his face before it, the second time broken. Plague follows the ark from Ashdod to Gath to Ekron, until the Philistines send it back on a cart drawn by two cows, with an offering of gold. It comes to Beth-shemesh, where men who look into it die (6:19), and then to Kiriath-jearim, where it stays for twenty years. At last Samuel calls Israel to put away its foreign gods. The people gather at Mizpah to fast and confess, the LORD thunders against the Philistines, and Samuel sets up a stone and names it Ebenezer: “Thus far the LORD has helped us” (7:12).\n\nThe lesson of these chapters is plain. The ark was holy, but God could not be carried into battle and made to fight. Israel used the sign of his presence as a lucky charm, and lost it. The Philistines kept it as a trophy, and could not hold it. The God who let the ark be taken humbled Dagon in his own temple.\n\nThe chapters do not tell what became of Shiloh. But Jeremiah later told Jerusalem to ‘go now to the place in Shiloh where I first made a dwelling for My Name, and see what I did to it’ (Jeremiah 7:12). Excavations at the site have found signs of a fire in the Iron Age, which many connect with these years, though the dating is discussed."
+      },
+      {
+        "id": "king",
+        "h": "‘Give us a king’",
+        "body": "When Samuel grows old, his sons take bribes and twist justice. The elders come to him at Ramah: “Look,” they said, “you are old, and your sons do not walk in your ways. Now appoint a king to judge us like all the other nations” (8:5). Samuel is displeased, and he prays. The LORD answers: “Listen to the voice of the people in all that they say to you. For it is not you they have rejected, but they have rejected Me as their king” (8:7).\n\nSamuel warns them what a king will do, and the warning keeps saying one word: he will take. He will take their sons for his chariots, their daughters for his kitchens, the best of their fields, and a tenth of their harvests and flocks, until they cry out because of ‘the king you have chosen’ (8:18). The people will not listen: “Then we will be like all the other nations, with a king to judge us, to go out before us, and to fight our battles” (8:20).\n\nReaders have long asked why the request counts as a rejection of God, when the law of Moses had already allowed for a king (Deuteronomy 17:14-20). Some find the fault in the motive and the timing. The elders wanted to be like the nations and did not trust the LORD to save them, and the law said the king must be one ‘the LORD your God shall choose’ (Deuteronomy 17:15). Some note that God had promised kings in Israel's future (Genesis 17:6; 49:10) and find the fault in grasping for a king before God's time and his chosen man. Many scholars see the book combining older accounts, some warm toward kings and some wary of them, and read the result as an honest record of Israel's mixed experience. On every reading the text is clear on two things. The request came from a failure to trust God as king, and God took up the kingship anyway.\n\nIn his farewell (chapter 12), Samuel calls the demand a great evil, then comforts the frightened people with a promise: “As for me, far be it from me that I should sin against the LORD by ceasing to pray for you. And I will continue to teach you the good and right way” (12:23).\n\nThe question the book asks is never simply whether Israel should have a king. It is whether the king will rule as a servant under the word of God."
+      },
+      {
+        "id": "saul",
+        "h": "Saul: chosen, changed and rejected",
+        "body": "Saul is the kind of king the people wanted: ‘a head taller than any of the people’ (9:2). Samuel anoints him in private. Then ‘God changed Saul’s heart’ (10:9), and the Spirit of God rushes upon him. When the tribes gather to choose a king by lot, he is found hiding among the baggage (10:22). His first act as king is a true rescue: when the Ammonites besiege Jabesh-gilead, he rallies Israel and saves the town (chapter 11).\n\nThen he comes apart. At Gilgal, with his army slipping away and Samuel not yet come, he offers the burnt offering himself, and Samuel tells him that his kingdom will not last: ‘the LORD has sought a man after His own heart’ (13:14). In the next battle he binds his hungry army with a rash oath that nearly costs his own son his life (chapter 14). Sent against the Amalekites, he keeps their king and the best of the plunder, and then insists he has obeyed. Samuel answers with the book's best-known saying: “Behold, obedience is better than sacrifice, and attentiveness is better than the fat of rams” (15:22). The LORD rejects Saul as king.\n\nThat chapter holds a tension on purpose. Twice it says that the LORD regretted making Saul king (15:11, 35), and in between Samuel says that God ‘does not lie or change His mind, for He is not a man’ (15:29). Most readers take the first as God's real grief and response to Saul's sin, and the second as a denial that God changes his purposes the way people do. The narrator leaves the two side by side.\n\nAfter this, ‘a spirit of distress from the LORD began to torment him’ (16:14). Readers take that spirit as a hostile spirit God allowed or sent as judgment, or as an affliction of mind, since the Hebrew word can mean harmful rather than morally evil. The text names no illness, and it is wise not to diagnose one across three thousand years. It shows the torment following the Spirit's departure, and God sending relief through David's music.\n\nJealousy of David drives the rest of Saul's life. He hurls his spear at David, hunts him through the wilderness, and has the priests of Nob killed for helping him. Yet the narrator never makes him a monster. When David spares him, Saul weeps and says, “You are more righteous than I, for you have rewarded me with good, though I have rewarded you with evil” (24:17). Saul is guilty, and he is tragic too: a king who began as the answer to Israel's asking and ended asking in vain."
+      },
+      {
+        "id": "amalek",
+        "h": "The war on Amalek",
+        "body": "Chapter 15 opens with one of the hardest commands in the Bible. Samuel gives Saul the LORD's word: “Now go and attack the Amalekites and devote to destruction all that belongs to them. Do not spare them, but put to death men and women, children and infants, oxen and sheep, camels and donkeys” (15:3). Nothing in these notes softens that. A reader who is grieved by it is reading with a conscience the Bible formed: “Fathers shall not be put to death for their children, nor children for their fathers” (Deuteronomy 24:16).\n\nThe text gives its reason. The Amalekites were raiders of the southern desert who had ambushed Israel on the way up from Egypt (15:2; Exodus 17:8-16), striking the weary stragglers at the rear, and they ‘had no fear of God’ (Deuteronomy 25:18). To devote to destruction was the ban, in Hebrew herem: people and goods given over wholly to God, with nothing kept for human use. Israel did not invent it. The Moabite king Mesha, in an inscription of the ninth century BC, boasts of devoting an Israelite town to his god Chemosh.\n\nChristians who receive this book as God's word read the command in several ways, as the site's pages on the conquest set out, and each has a cost. Some read it as judgment on a people's long record of violence after long patience; the cost is the children, for whom this reading has no answer that takes the grief away. Some read its language of total destruction as the stock idiom of ancient war, since Amalekites are alive and raiding a few chapters later (27:8; 30:1); the cost is that this eases the scale and not the substance, for the text still says infants. Some ground it in God's unique right over life, as Augustine and Thomas Aquinas did; the cost is that this does not show how anyone could know such a command was God's. Some read these texts as God stooping to the understanding of an ancient people, to be seen in the light of Christ's command to love enemies; the cost is that the reader must decide which portraits of God to trust. Many hold more than one together. The site takes no side, and none of them makes the chapter easy.\n\nUnder all of them these things hold. The command was tied to one people at one moment, and it was never renewed. The New Testament gives the church no war to wage. Jesus told his followers to love their enemies (Matthew 5:44) and said that ‘all who draw the sword will die by the sword’ (Matthew 26:52). And the chapter itself does not celebrate the killing. Its question is whether God's king will obey God, and it ends in grief: ‘Samuel mourned for Saul’ (15:35).\n\nSo it must be said plainly. No people living today is Amalek. No one may use this chapter to justify violence or contempt toward any person or people, and it has no nation, state, land or conflict of today in view. Christians did later quote such chapters over their own wars. That was a misuse of the text, and the church must own it as sin."
+      },
+      {
+        "id": "david",
+        "h": "David: the shepherd, the friend and the fugitive",
+        "body": "David comes into the story as an afterthought. Samuel goes to Bethlehem to anoint one of Jesse's sons and is taken with the tall eldest. The LORD stops him: “Do not consider his appearance or height, for I have rejected him; the LORD does not see as man does. For man sees the outward appearance, but the LORD sees the heart” (16:7). The youngest is out with the sheep, and no one has called him in. He is the one, and ‘the Spirit of the LORD rushed upon David from that day forward’ (16:13).\n\nWhen Goliath of Gath defies ‘the armies of the living God’ (17:26), David goes out with a sling and says why he will win: ‘it is not by sword or spear that the LORD saves; for the battle is the LORD’s’ (17:47). The story is not a lesson in believing in oneself. David wins because he is not trusting himself at all. Jonathan, Saul's son and heir, loves David ‘as himself’ (18:1), makes a covenant with him, and in time gives up his own claim to the throne out of love for David and trust in God's choice.\n\nSaul's admiration turns to jealousy when the women sing, “Saul has slain his thousands, and David his tens of thousands” (18:7). He hurls his spear, sends David into danger, and sets a bride-price for his daughter Michal that is meant to get David killed (18:25). Michal loves David and saves his life, letting him down from a window (19:12). Later, while David is in hiding, Saul gives her to another man (25:44).\n\nFor years David lives as an outlaw in the wilderness of Judah. Twice he has Saul in his power and will not harm him: “May I never lift my hand against him, since he is the LORD’s anointed” (24:6). That refusal is not a teaching that leaders may never be opposed. David confronts Saul openly, asks God to judge between them, and runs rather than submit to injustice. What the chapter teaches is restraint and trust in God's timing, not silence before injustice.\n\nThe book does not hide David's faults. His lie to the priest at Nob costs the priests their lives, and he says so himself (22:22). Abigail has to stop him from slaughtering Nabal's household in his anger (chapter 25). Among the Philistines he raids the desert peoples, leaves no one alive to tell of it, and lies to his host (27:8-12). The book shows that David rose because God chose him, not because he grasped, and it shows him, for all his faults, as a man whose heart was turned toward God."
+      },
+      {
+        "id": "endor",
+        "h": "Endor and Mount Gilboa",
+        "body": "The last chapters move north. The Philistines gather for a great battle, and David, who has been living among them, is sent home before it starts because their commanders do not trust him (chapter 29).\n\nSaul faces the Philistines alone. Samuel is dead, and ‘the LORD did not answer him by dreams or Urim or prophets’ (28:6). The law of Moses forbade turning to mediums and seeking the dead (Leviticus 19:31; Deuteronomy 18:10-11), and Saul had removed the mediums from the land. Now he disguises himself and goes by night to a woman at Endor who was a medium, and he asks for Samuel.\n\nDid Samuel really come back? Interpreters have given three main answers. Many, ancient and modern, hold that God really allowed Samuel to appear: the narrator calls the figure Samuel, his words come true, and the woman herself seems shocked, as if something happened that she did not expect. Others, among them a number of early Christian writers, argued that a deceiving spirit took Samuel's form, since God would not honor a forbidden practice. A third view sees the whole scene as the medium's own performance, though it struggles to explain the true prophecy. The text does not say how it happened, and these notes take no side. What it makes plain is that the practice is condemned, that the meeting brings Saul no help, and that the chapter gives no support to seeking contact with the dead. Samuel's word is the word Saul had refused for years, with one thing added: ‘tomorrow you and your sons will be with me’ (28:19). The woman is not mocked. When the king falls to the ground, she feeds him.\n\nOn Mount Gilboa Israel is routed. Jonathan and two of his brothers are killed. Saul is badly wounded, and rather than be taken alive, he takes his own life (31:4). The Bible records a few such deaths, and it never presents taking one's own life as a good or honorable way out. The narrator tells Saul's end with sorrow and not contempt. The men of Jabesh-gilead, whom Saul rescued at the start of his reign, travel all night to take the bodies down from the wall of Beth-shan and bury them with honor (31:11-13).\n\nIf you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads 1 Samuel",
+        "body": "The New Testament names Samuel, Saul and David often, and it is wise to keep to the lines it draws.\n\nLuke's first chapters echo this book. Mary's song is woven from Hannah's prayer: Hannah sang that the LORD ‘humbles and He exalts’ (2:7), and Mary sings, “He has brought down rulers from their thrones, but has exalted the humble” (Luke 1:52). And Luke's summary of the boy Jesus, who ‘grew in wisdom and stature, and in favor with God and man’ (Luke 2:52), echoes what was said of the boy Samuel, who grew ‘in stature and in favor with the LORD and with man’ (2:26).\n\nJesus himself tells a story from 1 Samuel. When his disciples are criticized for picking grain on the Sabbath, he asks, “Have you never read what David did when he and his companions were hungry and in need?” (Mark 2:25), and points to the day the priest at Nob gave David the holy bread (21:1-6). Mark names the high priest as Abiathar, where 1 Samuel names Ahimelech, Abiathar's father. The chapter note on 1 Samuel 21 sets out the answers readers have given.\n\nPaul, preaching in Acts, tells this part of Israel's story in a few lines: “Then the people asked for a king, and God gave them forty years under Saul son of Kish, from the tribe of Benjamin” (Acts 13:21). He gives God's words about David, ‘a man after My own heart’ (Acts 13:22), joining Samuel's words to Saul (13:14) with a psalm. Peter speaks of ‘all the prophets from Samuel on’ (Acts 3:24). And Hebrews names David and Samuel among those ‘who through faith conquered kingdoms, administered justice, and gained what was promised’ (Hebrews 11:32-33).\n\nThe New Testament calls Jesus the Christ, the Greek form of the title anointed, and ‘the son of David’ (Matthew 1:1). The word anointed is first used of a king in Hannah's prayer (2:10). First Samuel does not predict Jesus in detail, and these notes do not make Saul or David a picture of him. It gives the words, anointed king and son of David, in which the church confessed him.\n\nFirst Samuel is Israel's Scripture first, and it records Israel's failures as honestly as Israel's own prophets did. Nothing in it, or in the New Testament's use of it, is a reason to blame or look down on the Jewish people."
+      },
+      {
+        "id": "readers",
+        "h": "How to read 1 Samuel",
+        "body": "A few habits will help a new reader.\n\nRead Hannah's song (2:1-10) slowly. It sings the book's theme in advance, and the rises and falls that follow bear it out.\n\nWatch the pairs. The book sets people side by side and lets the contrast speak.\n\nDo not take its heroes as models in everything. Telling what someone did is not the same as recommending it. Even David lies, and his lies cost lives. Saul is to be pitied as well as judged.\n\nDo not skip the hard chapters, and do not read them alone. The chapter notes take them one at a time, say plainly what happens, and set out how careful readers have weighed them. None of those readings makes them painless.\n\nDo not carry the book into the present as a program. It tells of Israel's kings under Israel's covenant with God. It gives no nation, party or leader a warrant for violence against anyone, and no leader a shield against correction.\n\nAnd read 2 Samuel after it. First Samuel ends with the first king dead on a mountain and the anointed one still waiting. The promise God will make to David is still ahead."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 5,
+        "ref": "1:1-8",
+        "line": "‘The LORD had closed her womb’: what the words say about God, and what they do not say about anyone who has no children."
+      },
+      {
+        "ch": 1,
+        "v": 28,
+        "ref": "1:21-28",
+        "line": "Hannah gives her young son to serve at Shiloh: what her vow meant, and how readers have weighed it."
+      },
+      {
+        "ch": 2,
+        "v": 22,
+        "ref": "2:12-25",
+        "line": "Eli's sons abuse their office and the women at the tent, and their father does not stop them."
+      },
+      {
+        "ch": 3,
+        "v": 14,
+        "ref": "3:11-14",
+        "line": "Why the guilt of Eli's house could not be wiped away by sacrifice or offering."
+      },
+      {
+        "ch": 4,
+        "v": 11,
+        "ref": "4:1-11",
+        "line": "Why God let the ark be captured: the sign of his presence is not a charm."
+      },
+      {
+        "ch": 6,
+        "v": 19,
+        "ref": "6:19-21",
+        "line": "The men of Beth-shemesh struck down for looking into the ark."
+      },
+      {
+        "ch": 8,
+        "v": 7,
+        "ref": "8:4-22",
+        "line": "Why asking for a king is called a rejection of God, when the law allowed for one."
+      },
+      {
+        "ch": 13,
+        "v": 13,
+        "ref": "13:8-14",
+        "line": "Saul's offering at Gilgal: why an offering made too soon cost Saul a lasting kingdom."
+      },
+      {
+        "ch": 14,
+        "v": 44,
+        "ref": "14:24-46",
+        "line": "Saul's rash oath, the lot that fell on Jonathan, and the people who saved him."
+      },
+      {
+        "ch": 15,
+        "v": 3,
+        "ref": "15:1-9",
+        "line": "The command to destroy the Amalekites, children and infants included: how Christians read it, and what no one may do with it."
+      },
+      {
+        "ch": 15,
+        "v": 29,
+        "ref": "15:10-35",
+        "line": "The LORD regretted making Saul king, yet does not change his mind: two truths held together."
+      },
+      {
+        "ch": 16,
+        "v": 14,
+        "ref": "16:14-23",
+        "line": "‘A spirit of distress from the LORD’: what the words mean, and why the text names no illness."
+      },
+      {
+        "ch": 18,
+        "v": 1,
+        "ref": "18:1-4",
+        "line": "Jonathan's love for David: what the text says, and how readers have understood it."
+      },
+      {
+        "ch": 18,
+        "v": 25,
+        "ref": "18:20-27",
+        "line": "Michal and the bride-price: a daughter's love turned into a plot against David."
+      },
+      {
+        "ch": 19,
+        "v": 13,
+        "ref": "19:11-17",
+        "line": "Michal's lie, and a household idol in David's house: told, not approved."
+      },
+      {
+        "ch": 21,
+        "v": 6,
+        "ref": "21:1-6",
+        "line": "David and the holy bread, and why Mark 2:26 names Abiathar."
+      },
+      {
+        "ch": 22,
+        "v": 18,
+        "ref": "22:6-23",
+        "line": "The massacre of the priests of Nob, and David's ‘I myself am responsible’."
+      },
+      {
+        "ch": 24,
+        "v": 6,
+        "ref": "24:1-15",
+        "line": "‘The LORD’s anointed’: why David spared Saul, and why the chapter gives no shield to leaders who do wrong."
+      },
+      {
+        "ch": 25,
+        "v": 22,
+        "ref": "25:14-35",
+        "line": "David's oath to kill every male of Nabal's house, and the woman who turned him back."
+      },
+      {
+        "ch": 27,
+        "v": 9,
+        "ref": "27:8-12",
+        "line": "David's raids from Ziklag, and the lies he told Achish: reported, not approved."
+      },
+      {
+        "ch": 28,
+        "v": 12,
+        "ref": "28:7-25",
+        "line": "The medium at Endor: did Samuel really appear, and what the chapter says about seeking the dead."
+      },
+      {
+        "ch": 31,
+        "v": 4,
+        "ref": "31:1-6",
+        "line": "Saul's death by his own hand: told with sorrow, and never as a way out."
+      }
+    ],
+    "words": [
+      {
+        "word": "Anointed",
+        "line": "In Hebrew mashiach, someone set apart by having oil poured on the head. Hannah's prayer is the first place it names a king (2:10). It gives English messiah, and its Greek form is Christ."
+      },
+      {
+        "word": "The LORD of Hosts",
+        "line": "God as commander of all powers, the armies of heaven and of Israel. First Samuel is the first book of the Bible to use the title (1:3)."
+      },
+      {
+        "word": "The ark of the covenant",
+        "line": "The gold-covered chest that held the tablets of the covenant. Its lid was seen as the throne of the LORD, ‘who sits enthroned between the cherubim’ (4:4)."
+      },
+      {
+        "word": "Glory",
+        "line": "In Hebrew kavod, from a word meaning heavy: the weight of God's presence. Ichabod's mother cried that the glory had departed from Israel (4:21)."
+      },
+      {
+        "word": "Ebenezer",
+        "line": "Stone of help. Samuel's name for the stone he set up after the victory at Mizpah: “Thus far the LORD has helped us” (7:12)."
+      },
+      {
+        "word": "Seer",
+        "line": "An older word for a prophet, one who sees: ‘the prophet of today was formerly called the seer’ (9:9)."
+      },
+      {
+        "word": "Leader",
+        "line": "In Hebrew nagid, the title God gives Saul (9:16) and later the man after his own heart (13:14): a ruler appointed by God and answerable to him."
+      },
+      {
+        "word": "The Spirit rushed upon",
+        "line": "God's power coming suddenly and strongly on a person for a task, on Saul (10:10; 11:6) and on David (16:13)."
+      },
+      {
+        "word": "Devote to destruction",
+        "line": "The ban, in Hebrew herem: people or goods given over wholly to God, with nothing kept for human use (15:3)."
+      },
+      {
+        "word": "Ephod",
+        "line": "A priestly garment used in asking God's guidance. Abiathar brought one with him when he fled to David (23:6, 9)."
+      },
+      {
+        "word": "Urim",
+        "line": "One of the two sacred lots, with the Thummim, used to put a question to the LORD (14:41; 28:6)."
+      },
+      {
+        "word": "Medium",
+        "line": "A person who claimed to call up the dead, forbidden by the law of Moses. Saul had removed them from the land and then sought one out (28:3, 7)."
+      },
+      {
+        "word": "Loving devotion",
+        "line": "The Hebrew chesed: loyal, covenant-keeping love. Jonathan asks David never to cut it off from his household (20:14-15)."
+      },
+      {
+        "word": "Household idol",
+        "line": "A small figure kept in a home, called teraphim in Hebrew. Michal laid one in David's bed to fool Saul's men (19:13)."
+      },
+      {
+        "word": "Heart",
+        "line": "In Hebrew the center of thought, will and loyalty, not only of feeling. Samuel was told that ‘the LORD sees the heart’ (16:7)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "The early 1100s BC",
+        "what": "The Philistines settle on the southern coastal plain, part of the movement that Egyptian records call the Sea Peoples.",
+        "kind": "world"
+      },
+      {
+        "when": "The eleventh century BC",
+        "what": "Samuel is born to Hannah and given to the LORD at Shiloh in the last years of Eli (chapters 1 to 3).",
+        "kind": "story"
+      },
+      {
+        "when": "Twenty years",
+        "what": "After the Philistines send it back, the ark stays at Kiriath-jearim (7:2).",
+        "kind": "story"
+      },
+      {
+        "when": "Late in the eleventh century BC",
+        "what": "The elders ask Samuel for a king like all the other nations (chapter 8).",
+        "kind": "story"
+      },
+      {
+        "when": "About 1050 to 1010 BC",
+        "what": "Saul's reign, on most estimates. The Hebrew of 13:1 is damaged, and Acts 13:21 gives him forty years.",
+        "kind": "story"
+      },
+      {
+        "when": "Some years before about 1010 BC",
+        "what": "Samuel anoints David at Bethlehem while Saul still reigns (chapter 16).",
+        "kind": "story"
+      },
+      {
+        "when": "A year and four months",
+        "what": "David lives in Philistine territory, at Ziklag (27:7).",
+        "kind": "story"
+      },
+      {
+        "when": "About 1010 BC",
+        "what": "Saul and three of his sons die on Mount Gilboa (chapter 31). The date is the usual one, and Saul's dates are uncertain.",
+        "kind": "story"
+      },
+      {
+        "when": "After about 930 BC",
+        "what": "The note that Ziklag still belongs ‘to the kings of Judah’ (27:6) assumes the divided kingdom, so the book was finished after the split.",
+        "kind": "book"
+      },
+      {
+        "when": "The late 600s or the 500s BC",
+        "what": "The final edition of the book, on the view that it belongs to one history running from Deuteronomy to Kings.",
+        "kind": "book"
+      },
+      {
+        "when": "The second half of the 800s BC",
+        "what": "An Aramaic inscription at Tel Dan, most likely set up by Hazael of Damascus, names a king of the house of David.",
+        "kind": "world"
+      },
+      {
+        "when": "The centuries before Christ",
+        "what": "The Greek translation divides Samuel in two. The best-preserved copy of Samuel later found among the Dead Sea Scrolls often agrees with the Greek against the standard Hebrew.",
+        "kind": "book"
+      },
+      {
+        "when": "The first century AD",
+        "what": "Mary's song echoes Hannah's (Luke 1:46-55), and Paul gives Saul forty years (Acts 13:21).",
+        "kind": "book"
+      },
+      {
+        "when": "The 1920s",
+        "what": "Leonhard Rost argues for an older story of the ark inside the book.",
+        "kind": "book"
+      },
+      {
+        "when": "1943",
+        "what": "Martin Noth proposes that the books from Deuteronomy to Kings form one history, Samuel among them.",
+        "kind": "book"
+      },
+      {
+        "when": "From 2007",
+        "what": "Excavations at Khirbet Qeiyafa, above the Valley of Elah, uncover a fortified town dated to the early tenth century BC.",
+        "kind": "world"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The land of Samuel, Saul and David",
+        "places": [
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "7:16",
+              "13:2"
+            ],
+            "line": "One of the towns on Samuel's yearly circuit as judge, with Gilgal and Mizpah (7:16). Saul kept two thousand men at Michmash and in the hill country of Bethel (13:2).",
+            "label": {
+              "dx": 0,
+              "dy": -10,
+              "anchor": "middle"
+            }
+          },
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "17:54"
+            ],
+            "line": "David brought Goliath's head to Jerusalem (17:54). The city was taken from the Jebusites only later, in David's reign (2 Samuel 5:6-7).",
+            "label": {
+              "dx": -10,
+              "dy": -9,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "bethlehem",
+            "name": "Bethlehem",
+            "lat": 31.705,
+            "lon": 35.2,
+            "refs": [
+              "16:1",
+              "17:15"
+            ],
+            "line": "Jesse's town, where Samuel anointed David, the youngest son (16:1-13). David went back and forth from Saul to tend his father's sheep here (17:15).",
+            "label": {
+              "dx": -10,
+              "dy": 10,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "hebron",
+            "name": "Hebron",
+            "lat": 31.525,
+            "lon": 35.102,
+            "refs": [
+              "30:31"
+            ],
+            "line": "Among the towns of Judah to which David sent a share of the plunder taken back from the Amalekites (30:26-31)."
+          },
+          {
+            "id": "beersheba",
+            "name": "Beersheba",
+            "lat": 31.245,
+            "lon": 34.84,
+            "refs": [
+              "3:20",
+              "8:2"
+            ],
+            "line": "Samuel's sons served as judges here and took bribes (8:1-3). ‘From Dan to Beersheba’ named the whole land, north to south (3:20)."
+          },
+          {
+            "id": "ashdod",
+            "name": "Ashdod",
+            "lat": 31.76,
+            "lon": 34.66,
+            "refs": [
+              "5:1",
+              "6:17"
+            ],
+            "line": "A Philistine city. The captured ark was set in the temple of Dagon here, and Dagon fell on his face before it (5:1-5). Acts calls the city Azotus (Acts 8:40).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "jordan",
+            "name": "The Jordan",
+            "lat": 31.84,
+            "lon": 35.55,
+            "refs": [
+              "13:7",
+              "31:7"
+            ],
+            "line": "When the Philistines gathered at Michmash, some Hebrews fled across the Jordan (13:7). After Gilboa, Israelites on the other side of the Jordan left their towns (31:7).",
+            "label": {
+              "dx": 8,
+              "dy": 10,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "11:1",
+              "31:11"
+            ],
+            "line": "The land east of the Jordan. Saul's first victory saved Jabesh-gilead (chapter 11), and its men buried him at the end (31:11-13). Drawn roughly.",
+            "region": true
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only eight places are drawn, each placed elsewhere on this site. Shiloh, Ramah, Mizpah, Gibeah, Gilgal, Michmash, Gath, Ekron, Beth-shemesh, the Valley of Elah, Nob, Ziklag, Endor and Gilboa are left off, because where they lay is debated or is not placed in this site's records. No tribal borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-narrative",
+        "name": "Reading the Stories",
+        "line": "How the Bible tells its stories, and why its heroes are rarely models",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "Saul and the kings after him, with the dates and what is uncertain",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/doctrines/prayer",
+        "name": "Prayer and Lament",
+        "line": "Behind Hannah's prayer and Samuel's promise to keep praying (12:23)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/messiah",
+        "name": "The Messiah",
+        "line": "Behind the word anointed and the hope for a son of David",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/state",
+        "name": "Government and the State",
+        "line": "Behind the request for a king and Samuel's warning (chapter 8)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/intermediate",
+        "name": "Death and the Intermediate State",
+        "line": "Behind the night at Endor (chapter 28)",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/world/old-testament-world",
+        "name": "The Old Testament's world",
+        "line": "The Philistines, the hill villages, and the pim of 13:21",
+        "icon": "world"
+      },
+      {
+        "href": "/questions/old-testament/what-archaeology-shows",
+        "name": "Does archaeology confirm the Old Testament?",
+        "line": "The house of David at Tel Dan, Khirbet Qeiyafa, and what remains argued",
+        "icon": "people"
+      },
+      {
+        "href": "/questions/old-testament/the-command-to-destroy-the-canaanites",
+        "name": "The command to destroy the Canaanites",
+        "line": "The objection at its strongest, and how Christians read these commands (chapter 15)",
+        "icon": "people"
+      },
+      {
+        "href": "/questions/morality/abuse-and-cover-up",
+        "name": "Abuse and its cover-up",
+        "line": "Eli's sons, a father who did not restrain them, and why harm must be reported",
+        "icon": "people"
+      },
+      {
+        "href": "/help/infertility",
+        "name": "We can't have children",
+        "line": "For the ache Hannah knew: the Find Help page for those who long for a child",
+        "icon": "people"
+      }
+    ]
+  }
 }
