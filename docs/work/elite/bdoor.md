@@ -8492,3 +8492,237 @@ Chapters were written ahead while gates and tests for earlier chapters ran, and 
 ### Next
 
 Judges: the book page, then the chapters. It was not begun in this sitting.
+
+## Judges and Ruth: the book pages and every chapter (2026-11-23)
+
+Judges is whole: a teaching introduction on the book page and all 21 chapters in plain words. With room
+to spare, Ruth followed under the same rules, and it is whole too: its book page and all four chapters.
+The shape is the one Joshua uses: each passage's third part is `later`; each chapter note gained only
+`"plain": true` at its end; one commit for each book page and one per chapter, each with its ledger rows
+and only that chapter's files.
+
+### Judges' book page (`/study/bible/judges`, same address)
+
+Data only, in `client/public/bible/notes/judges/intro.json`, field `teaching`, added at the end of the
+file. Twelve parts (4,880 words, inside the 3,500 to 5,000 asked for): Judges in a minute; Where it sits
+in the story; Who wrote it, and when; Dates, years and what has been dug up; How Judges is built; The
+wheel, and the slope; What a judge was; The deliverers, from Othniel to Samson; ‘No king in Israel’: the
+last five chapters; Does Judges want a king?; How the New Testament reads Judges; How to read Judges.
+Then 19 hard passages, 14 key words, a timeline of 15 entries, one map, and ten Go deeper pages (the
+guide Reading the Stories; four doctrine studies, on idolatry, the Holy Spirit, repentance and
+forgiveness, and the kingdom of God; the context pages on the gods of the nations, the Old Testament's
+world and the violence of the Old Testament; and the two live question pages on Jericho and the conquest
+and on abuse and its cover-up; all live).
+
+The page makes the book's shape plain: the incomplete conquest, the cycle of sin, oppression, crying out
+and rescue, a little lower each time, the deliverers from Othniel to Samson, and the two closing stories
+under the refrain ‘In those days there was no king in Israel; everyone did what was right in his own
+eyes’ (17:6; 21:25). Date and authorship are given in each view's own terms: an exodus in the fifteenth
+century BC puts the judges roughly between 1375 and 1050 BC, one in the thirteenth roughly between 1200
+and 1050 BC; the book's own numbers add to about four hundred years, and many readers conclude that some
+judges overlapped; Jephthah's three hundred years (11:26) are read two ways; the Talmud's credit to
+Samuel, the two readings of ‘the captivity of the land’ (18:30), and Martin Noth's proposal of 1943 sit
+beside earlier and later datings. No side is taken. The world around the book is given as the site's
+notes give it: the collapse of the great powers around 1200 BC, Merneptah's monument of about 1208 BC
+naming Israel, the early Iron Age villages of the hill country and the views of who settled them, the
+Philistines among the Sea Peoples (the Peleset of Medinet Habu), and what has been dug at Hazor, Shechem
+and Dan, with the site's own statement that for these centuries the evidence neither proves the accounts
+nor shows them false. The part ends: ‘These notes set out what has been found, and claim no more for it
+than it shows.’
+
+The last five chapters are told plainly and not lingered over: the narrator presents those days as the
+depths of Israel's lawlessness and never as a pattern; the likeness to Sodom is named; any reading that
+excuses the men or blames the woman is called a misreading; the war that follows and the seizing of the
+women of Jabesh-gilead and Shiloh are not approved; Hosea 9:9 remembers Gibeah; and the care line for
+anyone who has been sexually assaulted is reused whole, naming Find Help. ‘Does Judges want a king?’
+gives the readings of the refrain (a case for kings, perhaps David's line; kings who led Israel into the
+same idolatry; a longing for the LORD's own rule, 8:23), Abimelech and Jotham's fable, and 1 Samuel 8:5
+and 7, and ends on a need, not a solution. The New Testament is kept to its own lines: Hebrews 11:32-34
+and 40 (four names from Judges, named because they trusted God and not as approval of every act), Acts
+13:20, and Luke's two echoes (1:15 of the charge to Samson's mother, 1:42 of Deborah's song). No judge is
+made a picture of Christ, and nothing in the book or in the New Testament's use of it is given as a
+reason to blame or look down on the Jewish people.
+
+The map uses the `canaan` frame and draws eight places, each with a point already used on the site:
+Shechem, Bethel, Jericho, the Jordan, Jerusalem, Bethlehem, Hebron, and Gilead as a region. The map note
+says that Hazor, Tabor, Jezreel, Ophrah, Shiloh, Gibeah, Mizpah, Dan and the Philistine towns are left
+off, that no tribal borders are drawn, and that the map makes no claim about any border today.
+`teaching.test.tsx` now lists Judges and Ruth among the books with a teaching guide, and its frame test
+names each one's frame (`canaan`). No other code changed.
+
+### Judges 1 to 21 in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words | Chapter | Passages | Plain words |
+|---|---|---|---|---|---|
+| Judges 1 | 3 | 2,665 | Judges 12 | 2 | 1,165 |
+| Judges 2 | 4 | 2,634 | Judges 13 | 3 | 1,605 |
+| Judges 3 | 4 | 2,598 | Judges 14 | 3 | 1,726 |
+| Judges 4 | 3 | 1,985 | Judges 15 | 3 | 1,663 |
+| Judges 5 | 4 | 2,248 | Judges 16 | 3 | 1,862 |
+| Judges 6 | 4 | 2,299 | Judges 17 | 2 | 1,087 |
+| Judges 7 | 3 | 1,753 | Judges 18 | 3 | 1,663 |
+| Judges 8 | 4 | 2,107 | Judges 19 | 3 | 2,040 |
+| Judges 9 | 4 | 2,323 | Judges 20 | 3 | 1,738 |
+| Judges 10 | 4 | 1,720 | Judges 21 | 3 | 1,761 |
+| Judges 11 | 4 | 2,403 | | | |
+| | | | **Total** | **69** | **41,045** |
+
+### The hard places in Judges, and how they are stated
+
+Adoni-bezek (1:4-7): the text does not say whether Judah was right to maim him; the king's verdict on
+himself is not a command and no model for the treatment of any prisoner. The iron chariots (1:19): a
+plain report of war, or a quiet exposure of failed trust; both part of the picture. Forced labor (1:28-35):
+a failure in the book's terms and a wrong in itself, as the Joshua note states it. The angel of the LORD
+(2:1-5; 6:11-24; 13:8-23): the readings in their holders' terms (the Son before the incarnation, as many
+Christian interpreters from the early church on have held; a created messenger bearing God's name; in
+chapter 13 also a way of describing God's presence), no side. Why God left the nations (2:20 to 3:6):
+judgment and test together, not every tension resolved. Ehud (3:12-25): three readings, no side; no
+pattern for anyone today and no warrant to deceive or kill anyone in God's name; Romans 12:19 quoted.
+Jael (4:17-24; 5:24-27): the broken trust owed to a guest; the song's praise quoted; three ways readers
+weigh her act; agreement that the death fulfils the word of 4:9; the rights and wrongs left to the
+reader; no pattern and no warrant to harm anyone who has trusted. Whether the song gloats (5:28-31): the
+readings, and the song not the Bible's last word on enemies. The fleece (6:36-40): weak faith rather than
+a model, and God patient with the fearful; a description and not a method of guidance; Christians differ
+on asking for signs. The test at the water (7:1-8): the three views, and the small-teams misreading named.
+Succoth and Penuel (8:4-21): rough wartime justice, or a narrative critical of Gideon; no side. Gideon's
+ephod (8:22-27): his intent not told, its result plain; the judge who pulled down his father's idol set up
+his own. Abimelech (9): why the massacre is told, with verses 56-57 as the narrator's verdict; the harmful
+spirit (9:23) read two ways, God sovereign over judgment and not the cause of the murders. God's refusal
+and his compassion (10:10-16): the readings, judgment and compassion held together. Jephthah's daughter
+(11:29-40): both readings set out fairly (a real sacrifice, as most readers, Jewish and Christian,
+ancient and modern, have understood it; lifelong service at the sanctuary, unmarried, as some medieval
+Jewish and some Christian readers hold, with the critics' reply), neither chosen; nothing in the chapter
+praises the vow; Deuteronomy 12:31 quoted, forbidding the sacrifice of children; Hebrews 11:32 read as God
+working despite the vow; no one is ever asked by God to harm a child. Shibboleth (12:1-7): recorded and
+not approved. Samson: the desire ‘from the LORD’ yet against God's law (14:1-4), providence and
+responsibility, two readings; whether God approves the violence (15:18-20), told without being made a
+model; his death (16:23-31), with Augustine's reading in The City of God, a warrior's death in battle and
+a mixed motive, no verdict on his heart and no pattern to follow, and the care line for thoughts of
+self-harm. Laish (18:27-31): a peaceful town destroyed with no sin named and no word from the LORD; the
+condemnation in the telling; no warrant to take land or harm a people; no nation, land or conflict of
+today in view; no contempt for the people of Laish. The Levite's concubine (19:22-30): said plainly and
+not lingered over; why the story is in Scripture; the period as the depths of lawlessness and never a
+pattern; the narrator's condemnation by the way he tells it; the Levite's account in chapter 20 leaving
+out his own part; Phyllis Trible's Texts of Terror (1984); any reading that excuses the men or blames the
+woman named and rejected, each man answering for what he did; the live page on abuse and its cover-up;
+the care line reused whole. The war (20:18-28): the readings of why Israel lost twice, with no claim that
+the text explains it. Jabesh-gilead and Shiloh (21:15-25): not models but evidence; the last verse as the
+book's verdict; the readings of the refrain; the women never asked or heard; the flat report an
+indictment and not an endorsement; the care line for anyone sold, traded or forced. No note says anything
+about any person's eternal state, and nothing is said in contempt of any people.
+
+### Ruth's book page (`/study/bible/ruth`, same address)
+
+Data only, in `client/public/bible/notes/ruth/intro.json`, field `teaching`. Thirteen parts (3,675
+words, inside the range): Ruth in a minute; Where it sits in the story; Who wrote it, and when; Bethlehem
+and Moab; How Ruth is built; Kindness that keeps faith; Gleaning, the redeemer, and the dead man's name;
+Boaz, a man of standing; The night at the threshing floor; A Moabite in the line of David; Naomi's
+bitterness, and God's quiet hand; How the New Testament reads Ruth; How to read Ruth. Then 9 hard
+passages, 12 key words, a timeline of 12 entries, one map, and seven Go deeper pages (the guides Reading
+the Stories, Reading Genealogies and Lists, and The Calendar and Festivals; the doctrine studies of
+providence and covenant; the context pages on the Old Testament's world and on hospitality and the
+stranger; all live).
+
+Date and authorship are given in each view's own terms: the Talmud's credit to Samuel (Bava Batra
+14b-15a) and the doubts about it, since the line reaches David; a woman author suggested and doubted; the
+story set in the twelfth and eleventh centuries BC; a dating under the monarchy (the tenth century or
+after) and a dating in the Persian period (the fifth or fourth century) read beside Ezra and Nehemiah;
+the debate over the language. No side is taken. Moab is described without a word against it, then or
+now, and Deuteronomy 23:3 is met with the three answers readers give, none chosen. The threshing floor is
+given in both readings, with what they agree on. The New Testament is kept to Matthew 1:5 and Luke 3:32;
+Boaz is not made a picture of Christ, and Ruth is not read as foretelling Jesus.
+
+The map draws only Bethlehem, a point already used on the site; its note says that Moab is left off
+because it is not placed in the site's records, and that the map makes no claim about any border today.
+One existing line was corrected in the book page's commit: the old overview quoted Ruth 1:1 with a small
+first letter, and it now has the capital the BSB verse has, so that the strict quotation check passes
+over the whole introduction. No other word of the old introduction changed.
+
+### Ruth 1 to 4 in plain words
+
+| Chapter | Passages | Plain words | Chapter | Passages | Plain words |
+|---|---|---|---|---|---|
+| Ruth 1 | 3 | 1,920 | Ruth 3 | 3 | 1,400 |
+| Ruth 2 | 3 | 1,440 | Ruth 4 | 3 | 1,659 |
+| | | | **Total** | **12** | **6,419** |
+
+### The hard places in Ruth, and how they are stated
+
+Moab and the three graves (1:1-5): whether the move and the marriages were wrong, and whether the deaths
+were a punishment, given in both views and left open, with the sentence that the text gives no one cause
+to read a death in their own family as God's sentence on them. Naomi's bitter words (1:19-22): not
+rebuked, answered by events; honest grief treated as a way of speaking to God, with the grief care line
+reused whole. The threshing floor (3:6-15): the reading that hears a suggestion of seduction and the
+reading most readers hold, a bold but chaste proposal, with what both agree on. A Moabite in David's line
+(4:1-12): Deuteronomy 23:3 and the three answers (the later rabbinic reading of the law as about men; Moab
+shut out as a hostile people, not each foreigner who joined Israel in faith; the book testing a strict
+use of the law), none chosen. Orpah is never blamed.
+
+### Care lines
+
+Reused whole, word for word, each naming Find Help and none with a phone number: the lines for anyone
+held, owned or forced to work (Judges 1, from the 1 Corinthians 7, Exodus 21 and Joshua 9 notes); the
+line for anyone not protected by a parent (Judges 11, from the Genesis 19 note); the lines for thoughts of
+self-harm (Judges 16, from the 1 Peter 5, 2 Timothy 1, Philippians 4 and Psalm 88 notes); the line for
+anyone who has been sexually assaulted (the Judges book page and Judges 19, from the 1 Thessalonians 4,
+Exodus 22 and Deuteronomy 21 and 22 notes); the line for anyone sold, traded or forced to work or to do
+sexual acts (Judges 21, from the Acts 16, Genesis 37 and Numbers 31 notes); and the lines for grief too
+heavy to carry (Ruth 1, from the 2 Timothy 4, Deuteronomy 14 and Hebrews 2 notes). No new care sentence
+stands in the data. The deep notes' crisis-line number (16), helpline sentence (19) and sentence on
+counselors and emergency services (21) were not carried over; the reused lines stand in their place. The
+grief line from the Genesis 23 note was set aside in Ruth 1 because it names Abraham and so does not fit
+whole.
+
+### Cut or narrowed
+
+Each is in the ledger under its chapter. Among them: a count of the judges, forty as a round number for a
+generation, and ‘no inscription names a judge’ (book page; none is stated in the repository); that the
+law of Moses never told Israel to maim captives (1); what ‘son of Anath’ may mean (3); whether Jephthah
+expected an animal or a person (11); the meaning of the verb for the Spirit's stirring in 13:25 and of the
+name Samson (13); whether walking in the vineyards touched Samson's vow (14; the text does not say); the
+rare word for the knife in 19:29, and whether the woman was still alive when the Levite took it (19; each
+would linger on the act, and the note says only that the Hebrew never says when she died); the hard
+question on the refrain and kingship in chapter 17 (kept on the book page and in chapter 21). Lines the
+deep notes draw to Christ that the New Testament does not draw were left out throughout, among them Jael
+and Genesis 3:15 (4), the jars of clay (7), the riddle as a picture of the gospel (14), and, in Ruth, the
+kinsman-redeemer as a pattern of Christ (book page, 3 and 4). Verses with a dash or a quotation inside a
+quotation in the BSB are quoted only in part or paraphrased (among them Judges 1:18; 5:22; 5:30; 8:22;
+8:29; Psalm 78:6; Deuteronomy 25:9). The BSB's ‘blessed’ and ‘blessing’ appear only inside quoted
+Scripture; no forbidden word is used.
+
+### Sources
+
+All in `bdoor-ledger.md`, a table for each book page and for each chapter. No web searches.
+
+### What was run
+
+After each book page and each chapter: validate-bible-notes, the strict quotation check and the
+single-quote check (0 problems each), the forbidden-word scan, the signposting scan and the first-person
+scan (0 each), no-emdash, the search-index and passage-index checks through `pnpm exec tsx`, and
+validate-politics, each exit 0; after each book page, `teaching.test.tsx` (33 of 33). After Judges 5, 10,
+15 and 20 and after Ruth 4 (the twenty-fifth chapter), at their chapter and before the next was gated:
+all 54 content-gate commands (54 of 54 each time), `pnpm check` (exit 0) and `pnpm test` (186 files and
+2,257 tests passed, with the 7 files and 73 tests the suite skips).
+
+At the end, in this order: the whole-book first-person and signposting scans over Judges and Ruth (0 and
+0, nothing to fix); the merge of the shared branch (no conflict); then on the merged tree the 54 content
+gates (54 of 54), `pnpm check` (exit 0), `pnpm test` (190 files and 2,299 tests passed, with 7 files and
+73 tests skipped), `pnpm build`, sitemap, prerender (3,271 pages) and `pnpm audit:canonicals` (each exit
+0, 0 canonical failures), and the served build at 390 and 1440: both book pages (Judges: 12 of 12 parts,
+19 hard passages, 14 words, 15 timeline entries; Ruth: 13 of 13 parts, 9 hard passages, 12 words, 12
+timeline entries; each with its map and note, no label overlap, no sideways scroll, no console errors)
+and every new chapter at both widths (Judges 42 of 42, 138 passages and 604 fields matched to the data;
+Ruth 8 of 8, 24 passages and 104 fields). The browser script answers the local server's missing
+`/_vercel` scripts and `/api/track` itself, so those do not count as errors. One load check, before the
+merged-tree content gates, ran in the same command as a disk check instead of on its own (load 4.28);
+every other heavy command had its own load check just before it.
+
+### Next
+
+1 Samuel: the book page, then the chapters. It was not begun in this sitting. Two small things for that
+run to weigh, since no content may change after the final gates: the Ruth map's title, ‘Bethlehem, and
+the way to Moab’, names a road the map does not draw, since Moab is left off; and the Judges page's
+sentence that Mary rescues ‘by giving birth and not by a sword’ sets her beside Jael, whose weapon was a
+tent peg.

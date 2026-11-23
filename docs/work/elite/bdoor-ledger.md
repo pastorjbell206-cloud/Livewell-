@@ -15508,3 +15508,500 @@ Cut in chapter 23: a paragraph on believers already married to someone who does 
 Cut in chapter 24: George Mendenhall by name (on the Deuteronomy book page); the excavations at Tell Balata; that 110 years was an ideal life span in Egyptian texts; a new sentence addressed to a reader who fears being beyond forgiveness, replaced by the existing care lines from the Hebrews 3 note, reused whole.
 
 Changed on Joshua's book page after the first browser check (2026-11-22): the map labels for Jericho and Bethel were moved (Jericho above and to the right of its point, Bethel to the left of its point) so that the two names no longer overlap. No words changed.
+
+## Judges' book page (teaching introduction, 2026-11-23)
+
+Every claim in `client/public/bible/notes/judges/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Seventh book, 21 chapters; after Joshua's death and before the kings; 2:10; the cycle of sin, oppression, crying out and deliverance, a little lower each time; the named judges; the two closing stories; the refrain (17:6; 21:25) | in-a-minute | bible/books.json; judges/intro.json `tagline`, `overview`, `themes`; theology/passage-notes.json (judges 2); BSB | Repository; BSB text |
+| Joshua's last scene and warning; 2:7; Ruth 1:1 and the line of David; Samuel the last judge; 1 Samuel 8:6; the Former Prophets; no capital, army or central government, kinship and covenant, Shiloh | story | judges/intro.json `story`, `setting`; joshua/intro.json `teaching`; 1-samuel/8.json `story`; BSB | Repository; BSB text |
+| Authorship: no author named; the Talmud (Bava Batra 14b) credits Samuel; the refrain looks back from the time of the kings; 18:30 and the Assyrian deportations from about 733 BC, or an earlier disaster at Shiloh (18:31) | who, timeline | judges/intro.json `author`, `date`; judges/18.json `historical`; BSB | Repository; no side |
+| Martin Noth (1943) and Deuteronomy to Kings as one work; older stories and poems framed by later editors; the Song of Deborah among the oldest Hebrew poetry; composition early in the monarchy from earlier sources; Saul or David, or late monarchy or exile; a deliberate, shaped work | who, timeline | judges/intro.json `author`, `date`; judges/5.json `historical`; joshua/intro.json `teaching` (Noth as a German scholar) | Repository; each view in its holders' terms; no side |
+| The two spans, about 1375 to 1050 BC or about 1200 to 1050 BC; the end with Samuel and Saul in the eleventh century | history, timeline | judges/intro.json `date`; 1-samuel/8.json `historical` | Repository; no side |
+| The book's own numbers (3:8, 3:11, 3:14, 3:30, 4:3, 5:31, 15:20) laid end to end come to about four hundred years, more than either scheme allows; overlapping regional judges; 10:7 and two oppressions that may have overlapped; 11:26 and its two readings | history | judges/intro.json `date`; judges/10.json `historical`; judges/11.json `historical`; BSB (the sum is the BSB's own figures, 390 to 410 years depending on whether Samson's twenty years fall inside the forty of 13:1) | Repository; BSB text; no side |
+| The collapse of the Late Bronze Age powers around 1200 BC; Merneptah, about 1208 BC | history, timeline | judges/intro.json `setting` | Repository |
+| More than 250 small early Iron Age settlements in the hill country, most on hilltops; the three views of who the villagers were | history, timeline | context/worlds/old-testament-world.json (part 1, the land) | Repository (live page); no side |
+| Israel a people of the hills who could not take the fortified towns of the plains (1:19, 1:27) | history | judges/1.json `historical`; BSB | Repository; stated as the book's picture, no match claimed |
+| The Philistines among the Sea Peoples; Ramesses III, Medinet Habu, the Peleset; the five cities; decorated pottery with Aegean roots | history, timeline, words | judges/13.json `historical`; judges/3.json `historical` | Repository |
+| Hazor burned in the Late Bronze Age and the debate over the two Jabins; the fortress-temple at Shechem and the debated link with chapter 9; the Iron Age city and platform at Dan | history | judges/4.json, 9.json, 18.json `historical` | Repository; no side |
+| The evidence for the centuries before the ninth century thinner and argued over, neither proving nor disproving | history | questions/old-testament/what-archaeology-shows.json (`shortAnswer`; status live) | Repository; no overclaim |
+| The three parts and their ranges; 1:27; Bochim (2:1-5); the refrain four times in the epilogue, twice in full; the opening and ending mirrored (1:1-2 and 20:18; the LORD's direction and Israel's own plans; 21:3 unanswered) | built | judges/intro.json `structure`; judges/17.json `hard`; judges/20.json `literary`; judges/21.json `literary`; BSB | Repository; BSB text |
+| The wheel of chapter 2 (2:11, 2:15, 2:16, 2:18, 2:19); the refrains; mercy often before repentance; 10:16; the downward slope from Othniel to Samson; no rest after Gideon (3:11, 3:30, 5:31, 8:28 are the only ‘rest’ verses); the treatment of women as a measure (Acsah, Deborah, Jephthah's daughter, the concubine, the women of Jabesh-gilead and Shiloh) | cycle, words | judges/intro.json `themes`, `reading`; theology/passage-notes.json (judges 2); judges/21.json `hard`; BSB | Repository; BSB text |
+| Shophet as rescuer and ruler; the minor judges' notices (10:1-5; 12:8-15); Deborah settling cases (4:4-5); the Spirit on Othniel, Gideon, Jephthah and Samson (3:10; 6:34; 11:29; 14:6), power for a task and not good character; the unlikely deliverers | judges, words | theology/passage-notes.json (judges 2, `words`); judges/intro.json `themes`; bible/doctrines/spirit.json (`ot`); judges/6.json `hard`; judges/12.json `literary`; BSB | Repository; BSB text |
+| Othniel (3:9-11); Ehud's sword, the secret message, the upper room; irony and coarse humor at the enemy's expense; God raised him but the Spirit is not said to come on him; the three readings; no pattern for today | deliverers | judges/3.json `literary`, `hard`; bible/guides/reading-narrative.json; BSB | Repository; BSB text; no side |
+| Deborah and Barak; nine hundred chariots of iron; 4:9; the Kishon; Jael and the peace with Jabin; 5:24; the ways readers weigh her act; Sisera's mother heard as mockery or with pity | deliverers | judges/4.json `historical`, `hard`; judges/5.json `hard`; BSB | Repository; BSB text; no side |
+| Gideon in the winepress; 6:12; the altar, the fleece, the three hundred, 7:2; Succoth and Penuel; 8:23; the ephod, perhaps a garment, perhaps an object of worship | deliverers, words | judges/6.json, 7.json, 8.json (`summary`, `cultural`, `hard`); context/worlds/old-testament-world.json (Judges 6:11); BSB | Repository; BSB text |
+| Abimelech: silver from Baal-berith's temple, seventy brothers ‘on one stone’ (9:5), king at Shechem, three years, the millstone, 9:56 | deliverers | judges/9.json `summary`, `historical`; BSB | Repository; BSB text |
+| Jephthah: driven out, called back, the Spirit and then the vow (11:29-31); his only child; most interpreters, ancient and modern, Jewish and Christian, read a real sacrifice; the minority reading of lifelong service, unmarried; nothing praises the vow; Deuteronomy 12:31 | deliverers | judges/11.json `summary`, `hard`; questions/old-testament/abraham-and-isaac.json (`evidence`); BSB | Repository; BSB text; both readings in their holders' terms |
+| Samson: Dan, a Nazirite from the womb, 13:5; the Spirit and the lion (14:6); the Philistine wife, the prostitute at Gaza (16:1), Delilah and the lords; blinded and grinding; Dagon's temple and 16:30; no verdict on his heart, the prayer answered | deliverers | judges/13.json, 14.json, 16.json (`summary`, `hard`); BSB | Repository; BSB text |
+| Micah, his mother's silver and the idol; 17:13; the Danites and Laish, ‘tranquil and unsuspecting’ (18:7, 18:27); the forms of the conquest without God's word or a reason for judgment | no-king | judges/17.json `summary`, `literary`; judges/18.json `hard`; BSB | Repository; BSB text |
+| The Levite and his concubine (a wife of lower standing); the crowd; the offer; 19:25-29 said plainly and briefly; the war on Benjamin; the six hundred; Jabesh-gilead's four hundred and the seizing at Shiloh | no-king | judges/19.json, 20.json, 21.json (`summary`, `cultural`); BSB | Repository; BSB text; not lingered over |
+| The narrator presents the period as the depths of lawlessness, never as a pattern; the deliberate echo of Genesis 19; the woman's silence, her hands on the threshold, the Levite's account that leaves out his part (20:4-7); any reading that excuses the men or blames the woman named and rejected; the women of chapter 21 never asked; Hosea 9:9 | no-king | judges/19.json `literary`, `hard`; judges/20.json `literary`; judges/21.json `hard`; genesis/plain/19.json (1-3 and 4-11, `later`, `hard`); bible/guides/reading-narrative.json; BSB | Repository; BSB text |
+| The care line (‘A word for anyone who has been sexually assaulted...’ to ‘...lists places to turn.’) | no-king | 1-thessalonians/plain/4.json (1-8, `hard`); exodus/plain/22.json; deuteronomy/plain/21.json and 22.json | Reused whole, word for word |
+| The refrain read as a case for kings (Bethlehem and Gibeah), as no endorsement of any king, as a longing for the LORD's rule (8:23); held together; Jotham's thornbush (9:8-15); 1 Samuel 8:5, 7; some kings helped, many made it worse | king | judges/17.json `hard`; judges/19.json `historical`; judges/9.json `summary`; 1-samuel/8.json; bible/guides/reading-narrative.json; BSB | Repository; BSB text; no side |
+| The New Testament's own lines: Hebrews 11:32-34, 11:40, and what Hebrews praises; Acts 13:20; Luke 1:15 and 1:42 as echoes of 13:4-5 and 5:24; Judges does not foretell Christ; no judge made a picture of him; never a reason to blame the Jewish people | new-testament | hebrews/plain/11.json (32-40, `hard`); bible/guides/reading-narrative.json; acts/plain/13.json (13-25); luke/plain/1.json (5-17 and 39-45, `ot`); judges/intro.json `christ`; joshua/intro.json `teaching`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: chapter 2 as the key; the refrains and where they stop; description and not prescription; the hard chapters; no program for the present; Ruth after it, Ruth 4:22 | readers | theology/passage-notes.json (judges 2); bible/guides/reading-narrative.json; judges/intro.json `reading`; context/guides/the-violence-of-the-old-testament.json (`what-no-one-may-do`); BSB | Repository |
+| Hard passages (19), key words (14) and timeline (15): each drawn from the parts above and the chapter notes; ‘household gods’ (teraphim) from judges/17.json `cultural`; the Nazirite from judges/13.json; Shibboleth from 12:6 | lists | the notes named above; BSB | Repository; BSB text |
+| The map: Shechem, Bethel, Jericho (the City of Palms), the Jordan, Jerusalem (Jebus), Bethlehem, Hebron, and Gilead as a region | map | The points already used on the site's maps (Genesis, Joshua, Numbers, Deuteronomy, Luke); judges/1.json and 3.json `historical` (the City of Palms) | Repository; Hazor, Tabor, Jezreel, Ophrah, Shiloh, Gibeah, Mizpah, Dan and the Philistine towns left off and the note says so; no tribal borders; no claim about any border today |
+| Go deeper: ten pages | deeper | bible/guides/reading-narrative.json; bible/doctrines/idolatry.json, spirit.json, repentance.json, kingdom.json; context/guides/the-gods-of-the-nations.json, the-violence-of-the-old-testament.json; context/worlds/old-testament-world.json; questions/old-testament/jericho-and-the-conquest.json and questions/morality/abuse-and-cover-up.json (status live) | Repository; every page live |
+
+Cut from the book page: a count of the judges (the repository gives none); forty as a round number for a generation (not in the repository); ‘no inscription names a judge’ (not stated in the repository); that most judges acted for one tribe (the notes say only that some were regional leaders); Jael and Sisera's mother as making the enemy faceless (one reading among several); the rare word for the knife in 19:29 and its other use in Genesis 22 (not needed on the book page); any statement of where Israel's borders were or should be.
+
+## The plain notes on Judges 1 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No single leader after Joshua; the tribes ask the LORD; Judah first, the tribe of David's line; Simeon's land inside Judah's; the Canaanites and Perizzites | 1-7 | judges/1.json `story`, `christ`; joshua/intro.json `teaching` | Repository |
+| Thumbs and big toes: unable to hold a weapon or run, and shamed; Adoni-bezek, lord of Bezek, and the seventy lesser kings of city-states; his own verdict on his fate, which the narrator lets stand | 1-7 | judges/1.json `cultural`, `doctrines` (judgment) | Repository |
+| Matthew 7:2; Galatians 6:7; Hebrews 7:14 | 1-7 | judges/1.json `christ`, `doctrines`; BSB | Repository; BSB text; Hebrews 7:14 as a fact about Judah, no line drawn from the chapter to Christ |
+| Whether Judah was right to maim the king: the text does not say; the king's verdict is on himself and not a command; no model for the treatment of a prisoner; the cruelty of an age Israel shared | 1-7 `hard` | judges/1.json `cultural`; bible/guides/reading-narrative.json (description and prescription) | Repository; sober, no side forced |
+| Hebron, Debir and Acsah, told also in Joshua 15; Jerusalem burned yet still Jebusite, held only under David, most scholars think raided and not kept; land in the Negev useless without springs; a daughter's marriage gift; Acsah as what Israel could have been; Caleb's offer as a way of honoring a champion, no pattern for today; Othniel the first judge (3:9) | 8-21 | judges/1.json `historical`, `cultural`, `literary`; joshua/plain/15.json (13-19, `hearers`); BSB | Repository; BSB text |
+| The Kenites, Moses' father-in-law's clan; the City of Palms as Jericho; Hormah and the root of the word for the ban; the vow of Numbers 21; the site's reading of the ban and that no one may use it to justify violence | 8-21 | judges/1.json `cultural`, `words` (charam); joshua/plain/6.json (17-21, `hard`); questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository |
+| Gaza, Ashkelon and Ekron later Philistine; the Septuagint reads verse 18 as not taken; chariots on open ground and the hill tribes on foot | 8-21 | judges/1.json `historical`; judges/4.json `historical` | Repository |
+| Joshua 15:16-19, 15:63; Joshua 17:18; 2 Samuel 5:7; Numbers 21:3 | 8-21 | judges/1.json `historical`, `hard`, `words`; BSB | Repository; BSB text |
+| Verse 19, the LORD with Judah and the iron chariots: a plain military report, or a quiet exposure of failed trust (Joshua 17:18; 2:1-3); both part of the picture | 8-21 `hard` | judges/1.json `hard` | Repository; both readings in their holders' terms |
+| Bethel, Jacob's dream and the renaming of Luz; help from inside as at Jericho, and the man who neither confessed Israel's God nor stayed (Joshua 2:11; 6:25); the list from south to north, darkening; ‘the LORD was with’ and ‘failed to drive out’; who lives among whom (verses 29, 32, 34) | 22-36 | judges/1.json `literary`; genesis/plain/28.json (Bethel, ‘house of God’); BSB | Repository; BSB text |
+| Megiddo, Taanach, Beth-shean and Gezer as fortified cities on the valleys and trade roads; Beth-shean an Egyptian base; Gezer given to Solomon as a dowry (1 Kings 9:16); forced labor as common and as a compromise that looked like strength (Deuteronomy 7:1-5); Dan's failure and chapter 18 | 22-36 | judges/1.json `historical`, `cultural`, `words` (mas); BSB | Repository |
+| Joshua 23:13; Deuteronomy 7:4; Psalm 106:34-36; 1 Kings 5:13 | 22-36 | judges/1.json `story`, `words` (mas); theology/passage-notes.json (judges 2, `crossRefs`); BSB | Repository; BSB text |
+| Forced labor: a failure in the book's terms and a wrong in itself, reported and not praised; Solomon's yoke | 22-36 `hard` | joshua/plain/16.json (5-10, `hearers`, `hard`); judges/1.json `words` (mas) | Repository; as the Joshua note states it |
+| The care line (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 22-36 `hard` | 1-corinthians/plain/7.json (17-24, `hard`); exodus/plain/21.json (7-11, `hard`); joshua/plain/9.json (16-27, `hard`) | Reused whole, word for word |
+
+Cut in chapter 1: Adoni-bezek's seventy kings ‘like dogs’ (an image the text does not use); that the law of Moses never told Israel to maim captives (not stated in the repository's notes); Hebrews 4 and 1 Peter 1:3-4 as the inheritance not fully entered (the deep note's thematic link, not a line the New Testament draws to this chapter); the meaning of the names of the sons of Anak. The BSB's words in verse 18 are paraphrased because the verse has a dash.
+
+## The plain notes on Judges 2 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapter 1 from outside, chapter 2 from God's side; Gilgal as Israel's first camp and a place of covenant memory (Joshua 4 and 5); Bochim not otherwise known, the Septuagint linking it with Bethel; the name as weepers; the charge (no covenant, tear down the altars); the tears that did not change what followed | 1-5 | judges/2.json `story`, `historical`; theology/passage-notes.json (judges 2, `questions`); BSB | Repository; BSB text |
+| ‘What is this you have done?’ as God's question to the woman in Genesis 3:13 | 1-5 | BSB (Genesis 3:13; Judges 2:2) | BSB text, the words identical |
+| Numbers 33:55; Joshua 23:13; 2 Corinthians 7:10 | 1-5 | judges/2.json `story`; BSB | Repository; BSB text |
+| The angel of the LORD speaking as God; the two readings (the Son before the incarnation, held by many Christian interpreters from the early church on; a created messenger with God's authority); no side; the message not in doubt | 1-5 `hard` | judges/2.json `christ`; judges/13.json `hard` | Repository; each reading in its holders' terms; no side |
+| Verses 6-9 repeating Joshua 24:28-31; the change of generation; ‘had seen all the great works’; gathered to their fathers; yada as knowing by experience; faith not passed on; the teaching at home and the danger of plenty (Deuteronomy 6); Timnath-heres and Timnath-serah, the same letters reordered, heres a word for the sun, the two explanations | 6-10 | judges/2.json `story`, `historical`, `cultural`, `words` (yada), `doctrines` (family); theology/passage-notes.json (judges 2, `words`, `echoes`) | Repository; no side on the name |
+| Joshua 24:31; Deuteronomy 6:7, 6:12; Psalm 78:6 | 6-10 | judges/2.json `doctrines`; theology/passage-notes.json (judges 2, `echoes`); BSB | Repository; BSB text (Psalm 78:6 quoted only up to its dash) |
+| The wheel set out in advance; the crying out added later; the spiral downward (verse 19); Baal the storm god, the Ugarit texts of the late 1920s, the Baals as local forms, the Ashtoreths as Astarte, ‘good farming’; shophet as one who puts things right, chiefly a deliverer; yasha as the root of the names Joshua and Jesus; mercy before any turning back (verse 18) | 11-19 | judges/2.json `cultural`, `literary`, `words` (shaphat, yasha, nacham), `doctrines` (attributes); theology/passage-notes.json (judges 2) | Repository; the root of the names stated as a word fact, not as a line to Christ |
+| Nehemiah 9:27; Psalm 106:43-44; Romans 2:4 | 11-19 | theology/passage-notes.json (judges 2, `crossRefs`, `echoes`); BSB | Repository; BSB text |
+| The nations left as judgment and as a test; 3:2 and the new generation taught war; the covenant at Shechem broken | 20-23 | judges/2.json `literary`, `hard`; joshua/intro.json `teaching` | Repository |
+| Joshua 23:16; Judges 3:4; Deuteronomy 8:2 | 20-23 | judges/2.json `hard`; BSB | Repository; BSB text |
+| Why God left the nations: judgment and test together; the two responses of readers; justice and mercy side by side, not every tension resolved | 20-23 `hard` | judges/2.json `hard` | Repository; both responses in their holders' terms |
+
+Cut in chapter 2: Hebrews 7:23-25 and the savior who does not die (the deep note's thematic link, not a line the New Testament draws to this chapter); the Ugarit myths of Baal's death and return told at length (left to the site's guide on the gods of the nations).
+
+## The plain notes on Judges 3 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The close of the opening; the nations named; the five Philistine rulers and their five cities; the old list of the peoples of Canaan; verse 6 names worship, not birth; marriage joining two families and their gods; Rahab and Ruth welcomed and in David's line; the misuse to forbid marriages between peoples named and rejected | 1-6 | judges/3.json `historical`, `literary`; judges/2.json `hard`; joshua/plain/23.json (9-13, `hard`) | Repository; as the Joshua note states it |
+| Deuteronomy 7:3-4; 1 Corinthians 7:39 | 1-6 | joshua/plain/23.json (9-13, `hard`); BSB | Repository; BSB text |
+| Othniel's story as the pattern in its purest form; ‘forgot’; the Asherahs; Cushan-rishathaim known from no other source, Aram of the two rivers, a mocking nickname, the Edom conjecture called a guess; ‘cried out’ as a cry of pain heard by God; Othniel as Caleb's nephew; the Spirit for a task, not a statement of character | 7-11 | judges/3.json `historical`, `literary`, `words` (za'aq, ruach), `doctrines` (spirit, repentance); judges/2.json `cultural` | Repository; no side on the name |
+| Joshua 15:17; Exodus 2:23-24; 1 Samuel 12:9 | 7-11 | judges/3.json `words` (za'aq); judges/1.json; BSB | Repository; BSB text |
+| Moab east of the Dead Sea; the City of Palms as Jericho or its oasis, the fords and Benjamin; tribute and the access it gave; ‘restricted in his right hand’, most take as left-handed; Benjamin as son of the right hand; the sword where a guard would not look; the idols near Gilgal; the upper room and its toilet; the irony and coarse humor (Eglon and the calf, davar as word and thing), not dwelt on | 12-25 | judges/3.json `historical`, `cultural`, `literary`, `words` (itter) | Repository |
+| Judges 20:16; 1 Chronicles 12:2; Ruth 4:17 | 12-25 | judges/3.json `cultural`; judges/20.json `cultural`; BSB | Repository; BSB text |
+| Ehud's killing of Eglon: the three readings (a war of liberation under occupation; God raised Ehud but the Spirit is not said to come on him and not every means is endorsed; the book growing critical of its heroes); God freed an oppressed people and the reader weighs the means; no side; no pattern for today and no warrant to deceive or kill in God's name; Romans 12:19 | 12-25 `hard` | judges/3.json `hard`, `christ`; bible/guides/reading-narrative.json; BSB | Repository; each reading in its holders' terms; no side |
+| The ram's horn to call men to war; the fords and the later echoes (7:24; 12:5-6); the credit given to God (verse 28); eighty years the longest rest; Shamgar's single verse as a brief notice; the Philistines on the coast in the twelfth century; the oxgoad; the large number and the 'eleph debate; no contempt for Moab or any people | 26-31 | judges/3.json `historical`, `cultural`, `literary`, `doctrines` (providence), `words` (shaqat); judges/7.json `historical`; judges/12.json `historical` | Repository |
+| Judges 5:6; 1 Samuel 12:9 | 26-31 | BSB | BSB text |
+
+Cut in chapter 3: what ‘son of Anath’ may mean (not in the repository's notes); the length of a cubit in inches; the detail of the blade and the fat (left in the verses, not repeated); 1 Corinthians 1:27 and Luke 4:18 as links to Christ (the deep note's thematic links, not lines the New Testament draws to this chapter); a cross-reference to David's flight over the Jordan, dropped as not to the point.
+
+## The plain notes on Judges 4 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| An oppressor from inside the land; Hazor the largest city in Canaan; Joshua 11 and the earlier Jabin; the three views of how the accounts relate; king of Canaan as leader of a northern alliance; chariots fast and terrifying on flat ground | 1-10 | judges/4.json `story`, `historical`, `words` (rekhev) | Repository; no side |
+| Deborah as prophetess and judge; one of few women so called, with Miriam and Huldah; judgment as deciding disputes; authority from the word of God and not military rank; Lappidoth as torches or a husband's name; Barak as lightning; Barak's answer read as weak faith, a right instinct, or both; the first-time reader expects Deborah | 1-10 | judges/4.json `cultural`, `literary`, `words` (nevi'ah); judges/4.json `questions` | Repository; no side on Barak |
+| Exodus 15:20; 2 Kings 22:14; Joshua 11:10; Hebrews 11:32 | 1-10 | judges/4.json `cultural`, `historical`, `christ`; BSB | Repository; BSB text |
+| The Jezreel Valley and the Kishon; Mount Tabor out of the chariots' reach; ‘routed’ (hamam) as at the Red Sea, a new exodus; the storm and the mud from the song; the chariots made useless; the battle won before it was fought (verse 14); the Kenites related to Moses' family, Heber separated and at peace with Jabin | 11-16 | judges/4.json `historical`, `cultural`, `literary`, `words` (hamam), `doctrines` (sovereignty) | Repository |
+| Exodus 14:24-25; Psalm 20:7; Psalm 83:9 | 11-16 | judges/4.json `words` (hamam); psalms/plain/83.json; deuteronomy/plain/20.json; BSB | Repository; BSB text |
+| The word of verse 9 fulfilled through Jael; hospitality a sacred duty; a woman's tent her own place; Sisera's breach and his request to lie; tents as women's work; the slowed pace and the irony of ‘no man’; the credit given to God (verse 23) | 17-24 | judges/4.json `cultural`, `literary`, `words` (kana) | Repository |
+| 1 Samuel 12:9; Judges 5:24 and Luke 1:42 | 17-24 | 1-samuel/12.json `historical`; luke/plain/1.json (39-45, `ot`); BSB | Repository; BSB text; an echo the Luke note records |
+| Jael, hero or murderer: the breach of hospitality and of the peace with Jabin; 5:24; the three ways readers weigh her act; agreement that the death fulfils verse 9; the ethics left to the reader; no pattern for today and no warrant to harm one who has trusted | 17-24 `hard` | judges/4.json `hard`; judges/5.json `hard` | Repository; each view in its holders' terms; no side |
+
+Cut in chapter 4: that the name Kenite may be linked with metalworking (the deep note calls it uncertain); Jael and Genesis 3:15 (a link some readers make and the New Testament does not); 1 Corinthians 1:25 as a line to the cross (the deep note's thematic link); whether Harosheth-hagoyim can be placed.
+
+## The plain notes on Judges 5 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The song as one of the oldest substantial pieces of Hebrew literature, perhaps not long after the events, around the twelfth century BC on the usual dating; old and difficult Hebrew and the differing translations of verses 10 to 15; the view that old style can be imitated; most hold it early | 1-11 | judges/5.json `historical` | Repository; both views stated |
+| Victory songs sung by women (Miriam; the women's song for David); parallel lines; the LORD from Seir and Edom, the southern tradition of Sinai; the storm set against Baal; ‘a mother in Israel’ as a title of honor and care; verse 8; the singers at the wells and an oral culture; ‘righteous acts’ as God putting things right | 1-11 | judges/5.json `cultural`, `literary`, `words` (tsedaqah, em, nadav); reading-poetry guide (song of Deborah among the poems in the stories) | Repository |
+| Deuteronomy 33:2; Psalm 68:8; Habakkuk 3:3; Exodus 15:21 | 1-11 | judges/5.json `cultural`; BSB | Repository; BSB text |
+| The tribes as a loose alliance and war as voluntary; the ten named, six who came and four who did not (Reuben; Gilead, the eastern tribes; Dan; Asher); Judah and Simeon unmentioned and the two suggested reasons; questions, not curses, for those who stayed; Zebulun and Naphtali; nadav and the freewill offering | 12-18 | judges/5.json `historical`, `words` (nadav), `doctrines` (church) | Repository |
+| Genesis 49 and Reuben, as the Genesis note reads Judges 5:16; Deuteronomy 33:6; 1 Corinthians 12:26 | 12-18 | genesis/plain/49.json (1-4, `later`); BSB | Repository; BSB text |
+| Taanach and Megiddo; the stars and the Kishon as poetry, and the storm many readers infer; Meroz otherwise unknown, cursed for staying away; the staircase lines of old poetry (verse 27); the song's praise of Jael set in a song of the rescued; the ways readers weigh her act, pointed to the chapter 4 note; no side | 19-27 | judges/5.json `historical`, `literary`; judges/4.json `historical`, `hard` | Repository; no side |
+| Joshua 10:12-14; Psalm 83:9; Luke 1:42 and Mary, by giving birth and not by a sword | 19-27 | joshua/plain/10.json (12-15, `later`); psalms/plain/83.json; luke/plain/1.json (39-45, `ot`); BSB | Repository; BSB text; an echo the Luke note records |
+| The irony of the mother at the window; the plunder she imagines as what Israel had suffered; racham and the crude soldier's phrase for captive women; the two mothers framing the victory; the closing prayer and forty years | 28-31 | judges/5.json `literary`, `words` (racham, em), `cultural` | Repository |
+| Matthew 5:44; Ezekiel 18:23 | 28-31 | judges/5.json `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`differ`); BSB | Repository; BSB text |
+| Whether the song gloats: some hear cruelty; others the oppressor's violence turned back, and a note of pity; a song of the rescued kept honestly; later Scripture and Jesus' command as further light; not the Bible's last word on enemies | 28-31 `hard` | judges/5.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 5: Matthew 13:43 and Colossians 2:15 (the deep note's thematic links to Christ, not lines the New Testament draws to this song); the identification of the places in verses 10 to 15 that translations render differently; verse 22 and verse 30 quoted only in part or paraphrased, because each has a dash in the BSB.
+
+## The plain notes on Judges 6 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Midianites of the desert east and south; Moses among them and later wars; the Amalekites and ‘the people of the east’; camels and the debate over when they were first widely used; one of the earliest pictures of camel raiding; raids at harvest from the Jordan through Jezreel to Gaza; hiding in caves; the prophet's short speech like a charge in court, with no recorded reply | 1-10 | judges/6.json `historical`, `literary` | Repository |
+| Isaiah 9:4; Exodus 20:2 | 1-10 | isaiah 9 (the day of Midian); judges/6.json `literary`; BSB | BSB text |
+| Threshing on an open floor and the winepress as a hiding place; the greeting as ironic and as what God would make him; the pattern of Moses' call (encounter, commission, objection, ‘I will be with you’, sign); Gideon's honest questions; the fear of seeing God and the gift of peace; The LORD Is Peace and shalom | 11-24 | judges/6.json `cultural`, `literary`, `words` (gibbor, shalom); context/worlds/old-testament-world.json (Judges 6:11) | Repository |
+| Exodus 3:11-12; Exodus 33:20; Hebrews 11:32 | 11-24 | judges/6.json `cultural`, `literary`, `christ`; hebrews/plain/11.json; BSB | Repository; BSB text |
+| The angel and the LORD in the same scene; the two readings as at Bochim; no side; God himself calling and bringing peace | 11-24 `hard` | judges/6.json; judges/2.json `christ`; judges/13.json `hard` | Repository; no side |
+| The altar of Baal in Gideon's own family; outward oppression and inward unfaithfulness; the Asherah pole; obedience by night; the town ready to kill him for tearing down an altar the law ordered torn down (Deuteronomy 7:5); Joash's challenge; riv and the name Jerubbaal | 25-32 | judges/6.json `cultural`, `doctrines` (idolatry), `words` (riv); BSB | Repository; BSB text |
+| 1 Samuel 12:11; 1 Kings 18:27 | 25-32 | 1-samuel/12.json `historical`; BSB | Repository; BSB text |
+| The Spirit ‘clothed himself with’ Gideon; the order of promise, sign, Spirit and then the fleece; the heavy dew of the dry season; the second, harder test; God answering both times | 33-40 | judges/6.json `cultural`, `literary`, `doctrines` (spirit), `words` (gazzah); bible/doctrines/spirit.json (`ot`) | Repository |
+| Deuteronomy 6:16; Matthew 4:7 | 33-40 | judges/6.json `hard`; deuteronomy/plain/6.json; BSB | Repository; BSB text |
+| The fleece: weak faith rather than a model (Deuteronomy 6:16, Gideon's own plea); God's patience with the fearful; description and not a method of guidance; Christians differ on asking for signs | 33-40 `hard` | judges/6.json `hard` | Repository; the views in their holders' terms; no side on asking for signs |
+
+Cut in chapter 6: John 20:19 and Ephesians 2:14 on peace, and 1 Corinthians 1:26-29 (the deep note's thematic links, not lines the New Testament draws to this chapter); where Ophrah lay (not identified with certainty).
+
+## The plain notes on Judges 7 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Numbers that fall (32,000, 10,000, 300) and the reason given first (verse 2), pride after victory; the fearful sent home under Deuteronomy 20:8; Harod at the foot of Gilboa, Moreh to the north, the camp between; Mount Gilead in verse 3 and the three explanations; tsaraph as refining; the test left unexplained so the point is God's choosing | 1-8 | judges/7.json `historical`, `cultural`, `literary`, `words` (pa'ar, tsaraph); theology/passage-notes.json (judges 7) | Repository; no side on Gilead |
+| Deuteronomy 20:8; Deuteronomy 8:17; Psalm 33:16; Zechariah 4:6 | 1-8 | judges/7.json `cultural`; theology/passage-notes.json (judges 7, `crossRefs`, `echoes`); BSB | Repository; BSB text |
+| The test at the water: the alert-soldier view, the sorting view, the less-disciplined view; the weight on verses 2 and 7; the small-teams misreading named | 1-8 `hard` | judges/7.json `hard`; theology/passage-notes.json (judges 7, `misreadings`) | Repository; the views in their holders' terms |
+| God offering a sign before Gideon asks; dreams as messages in the ancient world; barley as poor men's bread and the tent as the nomads; the enemy camp announcing its own defeat; Gideon's worship | 9-15 | judges/7.json `cultural`, `literary`, `words` (chalom), `doctrines` (faith) | Repository |
+| Psalm 83:11; 1 Corinthians 1:27 | 9-15 | psalms/plain/83.json; theology/passage-notes.json (judges 7, `echoes`); BSB | Repository; BSB text; Paul's words given as the same way of God's working, not as a line drawn to Gideon |
+| The watches and the middle watch about ten at night; few horns in an army and three hundred from every side; the jars and torches; sound and light, Midianite swords turned on each other; the horns and Jericho; the cry joining God and Gideon, God first, and chapter 8; the fords and Ehud's men; Ephraim called late; Oreb and Zeeb as raven and wolf; the heads told without comment | 16-25 | judges/7.json `historical`, `cultural`, `literary`, `words` (shophar); bible/guides/calendar-and-festivals.json (three watches, Judges 7:19) | Repository |
+| Joshua 6:20; Isaiah 10:26; Isaiah 9:4 | 16-25 | judges/7.json `historical`, `story`, `words`; BSB | Repository; BSB text |
+
+Cut in chapter 7: 2 Corinthians 4:7 and the treasure in jars of clay (the deep note says Paul does not cite Gideon there; the link is not drawn by the New Testament); Abel-meholah as Elisha's later home; the places of the flight beyond the fords.
+
+## The plain notes on Judges 8 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ephraim as a large central tribe that saw itself as leader of the north; offended to be called late; the grape-harvest proverb (gleanings, Abiezer), flattery that defuses; the contrast with Jephthah in chapter 12 | 1-3 | judges/8.json `cultural`; judges/12.json `historical` | Repository |
+| Proverbs 15:1; Isaiah 7:2 and Ephraim as the name of the north | 1-3 | hosea/intro.json `setting`; isaiah/7.json `historical`; BSB | Repository; BSB text |
+| Succoth and Penuel as Israelite towns near the Jabbok; Jacob's shelters and wrestling; their refusal probably caution, their fear understandable; the young man's list and early alphabetic writing and inscriptions; God hardly mentioned, threats and oaths, Israelites punished; the kings killed as revenge for brothers at Tabor, an event not otherwise described; avenging kin counted a duty; the boy and the warrior's death; no pattern | 4-21 | judges/8.json `historical`, `cultural`, `literary`, `doctrines` (sin) | Repository |
+| Genesis 32:30; Genesis 33:17; Deuteronomy 32:35; Romans 12:19 | 4-21 | judges/8.json `historical`; BSB | Repository; BSB text |
+| Succoth and Penuel: rough wartime justice, or a narrative critical of Gideon (God absent, Israelites harmed, the slope down); the towns' fear; a deliverer becoming an oppressor; no side settled | 4-21 `hard` | judges/8.json `hard` | Repository; both readings in their holders' terms |
+| The refusal as the high point (God is Israel's king), undercut at once; desert wealth worn on the body; 1,700 shekels about forty pounds or nineteen kilograms; the ephod as priestly garment used in seeking guidance, Gideon's perhaps such a garment or another object of worship; a rival center; ‘prostituted themselves’ as the book's strongest word for unfaithfulness; the snare of 2:3 now made by Israel's own judge | 22-28 | judges/8.json `cultural`, `literary`, `words` (mashal, ephod, moqesh), `doctrines` (kingdom, idolatry) | Repository |
+| Deuteronomy 17:17 set beside Gideon's gold and wives; 1 Samuel 23:9 and the ephod as the priest's means of guidance | 22-28 | judges/8.json `cultural`, `words` (ephod); 1-samuel/8.json `cultural` (Deuteronomy 17); BSB | Repository; BSB text; a comparison the reader can see in the text |
+| Gideon's ephod and its snare: his intent not told (a memorial, or a means of guidance); the result plain; idolatry growing out of victory and good intentions; the judge who pulled down his father's idol sets up his own; finest words and gravest failure side by side | 22-28 `hard` | judges/8.json `story`, `doctrines` (idolatry), `words` (moqesh) | Repository |
+| Many wives and a concubine as marks of kings; Abimelech's name, father and king; Baal-berith, Baal of the covenant, at Shechem; verse 34 and the forgetting of 2:10; no kindness to Gideon's house; no rest after Gideon | 29-35 | judges/8.json `cultural`, `literary`, `words` (Baal-berith); BSB (3:11, 3:30, 5:31, 8:28) | Repository; BSB text |
+| Psalm 106:21 | 29-35 | theology/passage-notes.json (judges 2, `crossRefs`: Psalm 106); BSB | BSB text |
+
+Cut in chapter 8: Philippians 2:5-8, John 18:36 and John 6:15 (the deep note's contrast with Christ, not a line the New Testament draws to Gideon); the 120,000 fallen of verse 10 discussed as a number; where Karkor lay (not identified with certainty); verses 22 and 29 quoted only in part or paraphrased, because each has a dash in the BSB.
+
+## The plain notes on Judges 9 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sequel to chapter 8; the one long story without a foreign enemy, a cry or a deliverer; Israel's first try at kingship, a disaster; Shechem between Ebal and Gerizim, an old Canaanite city with a mixed population loyal to Baal-berith; kinship as the basic loyalty; temple money funding the campaign; killing rival heirs common; ‘on one stone’ suggesting a public execution | 1-6 | judges/9.json `story`, `historical`, `cultural` | Repository |
+| Genesis 4:10; 2 Samuel 11:21 | 1-6 | judges/9.json `historical`; BSB | Repository; BSB text |
+| Why the massacre is told: what the book is about; verses 56-57 as the narrator's verdict; recorded to condemn; no pattern | 1-6 `hard` | judges/9.json `literary`, `doctrines` (judgment); judges/12.json `hard` (Abimelech's massacre named) | Repository |
+| Fables of plants and animals in the ancient Near East and in the Bible (2 Kings 14:9); olive, fig and vine as the land's most valued plants; the thornbush with no shade and quick to burn; Abimelech as the thornbush; the fable at the center and the conditional curse fulfilled; Gerizim and the tribes standing there (Deuteronomy 27:12; Joshua 8:33) | 7-21 | judges/9.json `cultural`, `literary`, `words` (atad, malakh); BSB | Repository; BSB text |
+| Abimelech never called a judge but one who ‘reigned over Israel’; God's first act in the chapter; verse 24 and the blood of the seventy; the ba'als of Shechem and the god's name; Gaal and the men of Hamor, Genesis 34 and non-Israelite loyalties; the near-comic scene with Zebul | 22-41 | judges/9.json `historical`, `literary`, `words` (ba'al), `doctrines` (providence) | Repository |
+| 1 Samuel 16:14; Genesis 34:2 | 22-41 | judges/9.json `hard`, `historical`; BSB | Repository; BSB text |
+| The spirit of animosity: literally an evil or harmful spirit; Saul; a personal being sent or allowed as an agent of judgment, or a mood God allowed; God sovereign over judgment, not the cause of the murders; the evil already present and turned back | 22-41 `hard` | judges/9.json `hard` | Repository; both readings in their holders' terms |
+| The curse fulfilled; the echoes (one stone, the towers); sowing with salt as a curse; the upper millstone; shame at a woman's hand and the armor-bearer; the burning of the tower told plainly; the verdict of verses 56-57; the fortress-temple at Tell Balata and the debated link (G. Ernest Wright) | 42-57 | judges/9.json `historical`, `cultural`, `literary`, `words` (shuv) | Repository; the link to the temple stated as debated |
+| Proverbs 26:27; Psalm 7:16; 2 Samuel 11:21 | 42-57 | judges/9.json `historical`, `doctrines` (judgment); BSB | Repository; BSB text |
+
+Cut in chapter 9: Mark 10:45 and the olive, fig and vine as pictures of Christ's people (the deep note's thematic links, not lines the New Testament draws to this chapter); the meaning of Beth-millo; the place of Thebez (usually Tubas, not certain); Jotham's place of refuge.
+
+## The plain notes on Judges 10 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The fixed pattern of the minor judges' notices; families, wealth and quiet years; Tola saving with no enemy named (the note says no more); Shamir not identified; thirty sons on donkeys as wealth and standing, donkeys before horses (5:10); something close to a local ruling family; Havvoth-jair and the earlier Jair, the two explanations | 1-5 | judges/10.json `historical`, `cultural`, `literary`; judges/12.json `literary` | Repository; no side on Jair |
+| Numbers 32:41 | 1-5 | judges/10.json `historical`; BSB | Repository; BSB text |
+| The seven gods of the region, with Chemosh, Milcom and Dagon named elsewhere; honoring neighbors' gods as normal and as hedging that the covenant counted betrayal; the two enemies and the two stories to come; possible overlap, east and west; the hinge of the book; Rabbah and Amman | 6-9 | judges/10.json `story`, `historical`, `cultural`, `doctrines` (idolatry) | Repository |
+| 1 Kings 11:5; Joshua 24:15 | 6-9 | judges/10.json `words` (bachar); BSB | Repository; BSB text |
+| The first confession and the first refusal; the two lists of seven and completeness; ‘chosen’ and Joshua's challenge; surrender and the putting away of gods; qatsar, God's soul grown short, his patience with their misery running out and not with them; no deliverer sent, the elders searching | 10-16 | judges/10.json `literary`, `words` (chata, bachar, qatsar, amal), `doctrines` (repentance, attributes) | Repository |
+| Jeremiah 2:28; Hosea 11:8; Isaiah 63:9 | 10-16 | judges/10.json `doctrines` (attributes); BSB | BSB text |
+| Did God change his mind: a real warning withdrawn, a test of sincerity, or compassion and not performance (verse 16); whether the repentance was real; judgment and compassion held together, mercy rooted in God's character | 10-16 `hard` | judges/10.json `hard` | Repository; the readings in their holders' terms |
+| Mizpah as watchtower, a common name, this one in Gilead and Jephthah's home; the elders searching and offering the headship | 17-18 | judges/10.json `historical`, `literary` | Repository |
+| Joshua 22:9 and Gilead as the land of Reuben, Gad and half of Manasseh | 17-18 | judges/11.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 10: Matthew 9:36 and 1 Thessalonians 1:9-10 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the Maonites of verse 12 and the Septuagint's reading of Midianites; the place Kamon.
+
+## The plain notes on Judges 11 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Inheritance through legitimate sons; the displaced man leading displaced men, raiding or hiring out; Tob north or northeast of Gilead; the old hurt; qatsin offered, then headship pressed for; terms sworn before the LORD at Mizpah; three negotiations (elders, king, God); ‘a mighty man of valor’ as with Gideon | 1-11 | judges/11.json `historical`, `cultural`, `literary`, `words` (qatsin) | Repository |
+| Genesis 45:4-7 and the rejected brother; 2 Samuel 10:6 | 1-11 | judges/11.json `christ` (the Joseph pattern), `historical`; BSB | Repository; BSB text; an Old Testament pattern only |
+| The land between Arnon and Jabbok; the history of Numbers 20-21 and Deuteronomy 2; Sihon; Deuteronomy 2:19; Chemosh as Moab's god and Milcom Ammon's, with the three explanations; the three hundred years and the two readings; ‘the LORD, the Judge’ and the book's name | 12-28 | judges/11.json `historical`, `cultural`, `words` (shaphat) | Repository; no side on the date |
+| Numbers 21:21; Deuteronomy 2:19 | 12-28 | judges/11.json `historical`; BSB | Repository; BSB text |
+| The Spirit before the vow; vows as conditional promises (Jacob, Hannah); redemption under Leviticus 27; no vow may require what God forbids; olah, the ordinary word for a burnt offering; what he expected not told; bargaining as the root | 29-33 | judges/11.json `cultural`, `literary`, `words` (neder, olah), `doctrines` (spirit, god) | Repository |
+| Proverbs 20:25; Ecclesiastes 5:5; Leviticus 27:2 | 29-33 | leviticus/27.json; numbers/30.json; proverbs/20.json (each naming Jephthah's rash vow); BSB | Repository; BSB text |
+| Women greeting warriors with tambourines (Miriam; David); the only child and the word used of Isaac; his first words spoken to her; the daughter unnamed and remembered by the yearly lament; the act not described | 34-40 | judges/11.json `literary`; genesis/22.json (`words`, yachid); exodus/plain/15.json; 1-samuel/18.json `cultural` | Repository |
+| Genesis 22:12; Jeremiah 7:31; Micah 6:8 | 34-40 | judges/11.json `christ` (Genesis 22 contrast); questions/old-testament/abraham-and-isaac.json (`evidence`); BSB | Repository; BSB text |
+| The two readings: a real sacrifice (most interpreters, ancient and modern, Jewish and Christian; olah; verse 39; the narrator's restraint not approval; the law supplies the verdict; tragedy); lifelong service at the sanctuary, unmarried (some medieval Jewish and some Christian readers; mourning her virginity; the note that she had never known a man; the connecting word read as or), with the critics' reply; no choice made; nothing praises the vow; Deuteronomy 12:31; Hebrews 11:32 as God working despite the vow; no one asked by God to harm a child | 34-40 `hard` | judges/11.json `hard`, `cultural`, `christ`; hebrews/11.json `hard`; hebrews/plain/11.json (32-40, `hard`); genesis/plain/22.json (1-2, `hard`); BSB | Repository; both readings in their holders' terms; no side |
+| The care line (‘A word for anyone who was not protected by a parent...’ to ‘...lists places to turn.’) | 34-40 `hard` | genesis/plain/19.json (4-11, `hard`) | Reused whole, word for word |
+
+Cut in chapter 11: whether Jephthah expected an animal or a person (not in the repository's notes); the rejected son and the cornerstone (Mark 12:10, Acts 4:11) and God giving his own Son (the deep note's thematic links, not lines the New Testament draws to this chapter); the twenty towns and their places.
+
+## The plain notes on Judges 12 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ephraim as a large central tribe and self-styled leader of the north; the same complaint to Gideon and his soft answer; Jephthah the outsider with no soft answer; honor and being left out; the ‘runaways’ taunt (palit) and the river dividing the tribes; the fords; the shibboleth test, an ear of grain or a stream, sh said as s; a shared language and covenant grown into separate communities; the word's later English use | 1-7 | judges/12.json `historical`, `cultural`, `words` (shibboleth, palit); judges/8.json `cultural` | Repository |
+| 42,000 and the 'eleph debate, both views held by those who take the account as history; the first judge's sword turned mainly on Israelites; more dead than in the war with Ammon; the road to the civil war of chapters 20-21 | 1-7 | judges/12.json `story`, `historical` | Repository; no side on the number |
+| Proverbs 18:19; Psalm 133:1; Galatians 5:15 | 1-7 | judges/12.json `doctrines` (sin, covenant); BSB | BSB text |
+| The killing not approved but recorded; Ephraim the aggressor and defense understandable; the fords beyond defense; placed after the vow; the pattern of chapters 8 and 9; why Israel needed something better; the smaller scale does not lessen the wrong | 1-7 `hard` | judges/12.json `hard` | Repository |
+| The fixed formula of the minor judges and its calm after slaughter; Jephthah's notice in the same formula; children, marriages outside the clan and donkeys as wealth, standing and alliance; Jair's thirty sons (10:4); Ibzan's Bethlehem in Judah or Zebulun (Joshua 19:15); Aijalon unknown; Pirathon in Ephraim; years of quiet and leadership even in disorder | 8-15 | judges/12.json `historical`, `cultural`, `literary`, `doctrines` (providence) | Repository; no side on Bethlehem |
+| Joshua 19:15 | 8-15 | judges/12.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 12: Ephesians 2:14-16 and Revelation 7:9 (the deep note's thematic links, not lines the New Testament draws to this chapter); Zaphon's place in the Jordan Valley; the hill country of the Amalekites in verse 15.
+
+## The plain notes on Judges 13 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The last judge's cycle; no cry to the LORD for the first time; rescue from God's side alone; the Philistines as Sea Peoples from the Aegean and eastern Mediterranean, settled around 1200 BC in five cities each with a lord, strong in war, pressing into Dan's low hills; Zorah and Eshtaol in the Sorek Valley; barrenness, grief and shame, and the line of women (Sarah, Rebekah, Rachel, Hannah, Elizabeth); the Nazirite vow (Numbers 6) and Samson's three differences; ‘begin’ the deliverance, carried on by Samuel and David; the unnamed mother who understands | 1-7 | judges/13.json `story`, `historical`, `cultural`, `literary`, `christ`, `words` (nazir, aqar) | Repository |
+| Numbers 6:5; 1 Samuel 1:11; Luke 1:15 | 1-7 | judges/13.json `cultural`, `christ`; luke/plain/1.json (5-17, `ot`; 57-66, `ot`); BSB | Repository; BSB text; an echo the Luke note records |
+| Husband and wife side by side; Manoah a step behind, his wife understanding more; the meal as hospitality, as with Abraham at Mamre; the name ‘beyond comprehension’ and the word family for God's wonders (verse 19); no one sees God and lives; the flame and Gideon's rock (6:19-22) | 8-23 | judges/13.json `cultural`, `literary`, `words` (pil'i, mal'akh) | Repository |
+| Genesis 18:1; Exodus 33:20 | 8-23 | judges/13.json `cultural`; BSB | Repository; BSB text |
+| The angel of the LORD: the terms used almost interchangeably; Hagar, Abraham, Moses, Gideon; the three answers (a created angel bearing God's name, held by many Jewish and some Christian readers; a visible appearance of God, often the Son before the incarnation, held by many Christian interpreters from the early church on; a way of describing God's presence); no side; God himself began the birth and the rescue | 8-23 `hard` | judges/13.json `hard`, `words` (mal'akh) | Repository; each answer in its holders' terms; no side |
+| High hopes: promised, announced, set apart, given the Spirit; the Spirit stirring before he has done anything; chapters 14 to 16 | 24-25 | judges/13.json `story` | Repository |
+| Joshua 19:41; 1 Samuel 2:21 | 24-25 | judges/13.json `historical`, `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 13: the meaning of the verb for the Spirit's stirring in verse 25 (not in the repository's notes); Isaiah 9:6 and the word for wonderful (left out so that no line is drawn to Christ that the New Testament does not draw); the annunciation to Mary as surpassing this one (the deep note's thematic link); the meaning of the name Samson (not in the repository's notes).
+
+## The plain notes on Judges 14 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The grown man against the promise of chapter 13; marriage arranged by families, his demand and his refusal of their counsel; the law against marriage with the peoples of the land (Deuteronomy 7:3-4) and the Philistines within its spirit; ‘pleasing to my eyes’ as ‘right in his eyes’ and the book's closing refrain; Timnah on the Sorek border; the two peoples side by side, ruling but not always at war; verse 4 and God's purpose, not approval; to'anah found only here | 1-4 | judges/14.json `story`, `historical`, `cultural`, `literary`, `words` (to'anah) | Repository |
+| Genesis 50:20; Proverbs 16:9 | 1-4 | judges/14.json `hard`; BSB | Repository; BSB text |
+| From the LORD yet against God's law: not approval of the desire; God working through wrongdoing without causing or excusing it (Joseph); providence and responsibility; the two readings of how far verse 4 goes; not settled | 1-4 `hard` | judges/14.json `hard`, `doctrines` (providence) | Repository; both readings in their holders' terms |
+| Tsalach, the Spirit rushing, also of Saul and David; the carcass, uncleanness under the law; Numbers 6 speaking of human corpses and so not directly forbidding this, with contact with death as a thread that raises the question of his consecration; the secret kept even from his parents; secrets as the chapter's thread | 5-9 | judges/14.json `literary`, `words` (tsalach), `doctrines` (spirit, sin); judges/13.json `cultural` (the Nazirite vow); judges/15.json `cultural` (Numbers 6 and human corpses) | Repository |
+| Leviticus 11:27; Numbers 6:6; 1 Samuel 10:6; 1 Samuel 16:13 | 5-9 | judges/14.json `words` (tsalach); BSB | Repository; BSB text |
+| Seven-day feasts; mishteh from the verb to drink and the unanswered question of the vow; the thirty companions as attendants and guard; riddles and wagers; the stake; the answer shaped like a riddle and the suggestion that its usual answer was love; the threat to burn the wife and her family; the crude heifer image; Ashkelon, one of the five cities, more than twenty miles away; the Spirit's gift not making the anger holy; the bride given away | 10-20 | judges/14.json `historical`, `cultural`, `literary`, `words` (chidah, patah) | Repository |
+| Genesis 29:27; patah again with Delilah (16:5) | 10-20 | judges/14.json `cultural`, `words` (patah); BSB | Repository; BSB text |
+
+Cut in chapter 14: Romans 5:10, Ephesians 5:25 and Luke 3:22 (the deep note's contrasts with Christ, not lines the New Testament draws to Samson); the riddle as a picture of the gospel (named by the deep note as devotional use, not the meaning); the form of marriage in which the wife stays in her father's house (left to chapter 15); Tel Batash as Timnah; whether walking in the vineyards touched his vow (the text does not say).
+
+## The plain notes on Judges 15 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A spiral of reprisal; the marriage in which the wife stays in her father's house, as some read it; the wheat harvest in late spring and early summer, the burned grain, vineyards and olives as a grave blow; shu'al as foxes or jackals; the burning of the wife and her father as the threat of 14:15 carried out; she never speaks and pays for the men's quarrel; revenge in honor culture and the law's limits (Exodus 21:23-25) | 1-8 | judges/15.json `story`, `historical`, `cultural`, `literary`, `doctrines` (sin); judges/14.json `cultural` | Repository |
+| Exodus 21:24; Proverbs 20:22; Romans 12:17 | 1-8 | judges/15.json `cultural`, `words` (naqam); BSB | Repository; BSB text |
+| Judah, first in chapter 1, now accepting Philistine rule and handing over its deliverer; ‘I have done to them what they did to me’; Lehi as jawbone, its place unknown, and Etam uncertain; the fresh jawbone and contact with death; the play on donkey and heap; the boast without God | 9-17 | judges/15.json `historical`, `cultural`, `literary`, `words` (lechi, shava) | Repository |
+| Judges 1:19; 1 Samuel 16:13 | 9-17 | judges/15.json `historical`; BSB | Repository; BSB text |
+| The first recorded prayer, at the end of his strength; the first credit given to God; teshu'ah as rescue or victory; God answering a self-directed life; Ramath-lehi and En-hakkore keeping both sides; the twenty years and the ending still to come | 18-20 | judges/15.json `story`, `literary`, `words` (teshu'ah), `doctrines` (prayer) | Repository |
+| Exodus 17:6; Psalm 18:6 | 18-20 | BSB | BSB text |
+| Whether God approves the violence: told without being made a model; revenge plain, the burning brutal, the slaughter out of proportion; the Spirit and the answered prayer; the two readings (God using Samson's acts to begin the rescue; the silence inviting judgment of gift without character); the Bible describes much it does not approve | 18-20 `hard` | judges/15.json `hard` | Repository; both readings in their holders' terms |
+
+Cut in chapter 15: Mark 15:1, Luke 23:34, John 19:28 and John 4:10 (the deep note's thematic links to Christ, not lines the New Testament draws to Samson).
+
+## The plain notes on Judges 16 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Gaza the southernmost of the five cities; the appetites of Timnah still ruling; the gate as defense and pride; Hebron about forty miles east and three thousand feet higher, the gates carried there or to a hill facing it, debated; the pattern of woman, ambush and strength | 1-3 | judges/16.json `story`, `historical` | Repository; no side on the distance |
+| Joshua 13:3; Proverbs 6:25 | 1-3 | judges/13.json `historical` (Joshua 13:3); BSB | Repository; BSB text |
+| The valley of Sorek; Delilah's people not stated; the bribe of 1,100 shekels from each of five lords against the priest's ten a year (17:10); the pattern of three and a fourth, each lie nearer the truth; patah as at Timnah; ‘he did not know’; strength the LORD's, the hair the last sign of a neglected consecration; sur for both departures; blinding and grinding as known practices and public shame; the hair growing back | 4-22 | judges/16.json `historical`, `cultural`, `literary`, `words` (koach, sur), `doctrines` (holiness); judges/14.json `words` (patah) | Repository |
+| Proverbs 7:22; Psalm 51:11 | 4-22 | judges/16.json `doctrines` (holiness); bible/doctrines/spirit.json (`ot`, Psalm 51:11); BSB | Repository; BSB text |
+| Victories credited to the gods; a contest between the LORD and Dagon; Dagon an old Semitic god (Ebla, Mari), adopted by the Philistines, the fish-god idea doubted, grain or storms; Tell Qasile and the two central pillars; ‘remember’ as God acting (Noah, Hannah); the prayer ending in revenge; the answered prayer; no more deliverers after him | 23-31 | judges/16.json `story`, `historical`, `cultural`, `words` (dagon, zakhar), `doctrines` (prayer, idolatry) | Repository |
+| 1 Samuel 5:3; Hebrews 11:32 and why the flawed are named | 23-31 | judges/16.json `historical`, `doctrines` (idolatry); hebrews/plain/11.json (32-40, `hard`); BSB | Repository; BSB text |
+| Whether the death was a suicide: Augustine in The City of God (a special prompting shown by the answered prayer); a warrior's death in battle; a mixed motive and God's larger purpose; no verdict on his heart; God's patience and victory over Dagon; no pattern to follow | 23-31 `hard` | judges/16.json `hard` | Repository; each reading in its holders' terms; no side |
+| The care line (‘If you have thoughts of hurting yourself, speak to someone today...’ to ‘...lists places to turn.’) | 23-31 `hard` | 1-peter/plain/5.json (5-7, `hard`); 2-timothy/plain/1.json (6-7, `hard`); philippians/plain/4.json (4-9, `hard`); psalms/plain/88.json (13-18, `hard`) | Reused whole, word for word; no phone number |
+
+Cut in chapter 16: the deep note's crisis-line number (no phone numbers in the plain notes); Colossians 2:15 and the comparison of Samson's death with Christ's (the deep note's thematic contrast, not a line the New Testament draws); Ebla and Mari named only in the ledger.
+
+## The plain notes on Judges 17 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first of the two closing stories, short and ironic; Micah's name, who is like the LORD, in a longer form with the divine name; the curse over stolen goods and his confession; his mother's words of favor, the silver dedicated and the idol made, most of it kept; faith mixed with the neighbors' ways; the second commandment and Deuteronomy 27:15; the image and cast idol as one object or two; the ephod; teraphim and Rachel; Aaron's line and Micah's son; 17:6 at the center; yashar moved from the LORD's eyes to one's own | 1-6 | judges/17.json `cultural`, `literary`, `words` (pesel, teraphim, yashar, ephod), `doctrines` (idolatry, law) | Repository |
+| Deuteronomy 12:8; Exodus 20:4; Genesis 31:19 | 1-6 | judges/17.json `cultural`, `words` (pesel, teraphim, yashar); BSB | Repository; BSB text |
+| The Levites with no land, given towns, living on tithes (Joshua 21; Numbers 18; Deuteronomy 18); a wandering Levite as a sign of the system breaking down, perhaps neglected tithes; Bethlehem not a Levite town; ten shekels, clothes and food as a respectable wage; the son replaced; 17:13 as misplaced confidence; Bethlehem's later mentions and the town of David | 7-13 | judges/17.json `historical`, `cultural`, `literary` | Repository |
+| Numbers 3:10; Deuteronomy 18:6; 1 Samuel 16:1 | 7-13 | judges/17.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 17: Hebrews 5:4-6, Hebrews 9:24 and John 4:23-24 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the hard question on the refrain and kingship (on the book page, in its own part, and in chapter 21's note).
+
+## The plain notes on Judges 18 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Dan's first land around Zorah and Eshtaol, lost to the Amorites (1:34) and pressed by the Philistines; spies recalling Numbers 13 and Joshua 2; spies and oracles as ordinary; the hired priest's vague answer; Laish at the north near a spring of the Jordan below Hermon; like the Sidonians, perhaps a peaceful trading town, far from Sidon and without allies; the conquest's language without God's command | 1-10 | judges/18.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Numbers 13:2; Joshua 19:47 | 1-10 | judges/18.json `historical`, `cultural`; BSB | Repository; BSB text |
+| Micah's confidence (17:13) emptied; the list of cult objects repeated and their emptiness; the priest's glad promotion; families and herds in front; ‘What else do I have?’; no one to appeal to and the rule of force | 11-26 | judges/18.json `story`, `cultural`, `literary`, `words` (kohen, pesel) | Repository |
+| Jeremiah 10:5; Isaiah 44:17 | 11-26 | judges/18.json `doctrines` (idolatry: Isaiah 44:9-20); BSB | Repository; BSB text |
+| The last conquest in Judges as a contrast with Joshua's (forms without substance); tranquil and unsuspecting twice; Jonathan son of Gershom, son of Moses, and the raised nun making Manasseh; the captivity as the Assyrian deportation from about 733 or 732 BC, or the earlier loss of the ark and Shiloh; Dan as the northern limit; Tel Dan's Iron Age city and cultic platform; Jeroboam's calf; Dan and Shiloh, false and true | 27-31 | judges/18.json `story`, `historical`, `literary`, `hard` | Repository; both readings of the captivity |
+| 1 Kings 12:29-30; 1 Samuel 4:11 | 27-31 | judges/18.json `historical`; BSB | Repository; BSB text |
+| A peaceful town destroyed: the condemnation in the telling; Joshua's conquest as judgment on wickedness (Genesis 15:16; Deuteronomy 9:4-5) and here no sin named and no word from the LORD; forms the same and substance not; meant to disturb; no warrant to take land or harm a people; no nation, land or conflict of today; no contempt for the people of Laish | 27-31 `hard` | judges/18.json `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`differ`); context/guides/the-violence-of-the-old-testament.json (`what-no-one-may-do`) | Repository |
+
+Cut in chapter 18: Hebrews 7:26-27, John 10:11-13 and John 4:21-24 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); Mahaneh-dan and Kiriath-jearim (verse 12); Beth-rehob's place.
+
+## The plain notes on Judges 19 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The refrain opening the second closing story; pilegesh as a secondary wife, bound by law without a first wife's place, often from a poorer family, eight times and never named, never speaking; the Hebrew ‘unfaithful’ and the Septuagint's ‘angry’; ‘speak to her heart’ as a phrase of comfort and reconciliation; hospitality as a sacred duty, perhaps pressed to excess; the slow, almost comic delay that makes them leave late; Bethlehem in a kindly light | 1-9 | judges/19.json `summary`, `cultural`, `literary`, `words` (pilegesh, lev); judges/17.json `historical` | Repository; both readings of verse 2 |
+| Hosea 2:14 as the same idiom; Ruth 1:1 | 1-9 | isaiah/verses/40.json (the idiom ‘speak to the heart’ in Genesis 34:3, Hosea 2:14, Ruth 2:13); BSB | Repository; BSB text |
+| Jebus held by the Jebusites until David; the refusal of a foreign city for safety, and no safety in Gibeah; Gibeah a few miles north of Jerusalem, its site debated, later Saul's home; travelers' dependence on hospitality; no door opened but an outsider's from Ephraim; washing feet and food as a guest received | 10-21 | judges/19.json `historical`, `cultural`, `literary` | Repository; no side on Gibeah's site |
+| Genesis 19:4; 1 Samuel 10:26 | 10-21 | judges/19.json `historical`, `literary`; genesis/plain/19.json (1-3, `later`); BSB | Repository; BSB text |
+| The acts said plainly and not lingered over (rape, murder, the dismembering); the deliberate echo of Sodom, no rescuer here; the old man's offer and the ranking of a male guest over women's safety, exposed by the story; the Levite pushing her out; the Hebrew never saying when she died; the hands on the threshold; the summons by pieces and Saul's oxen (1 Samuel 11:7); the nation's shock and its call to think, take counsel and speak | 22-30 | judges/19.json `literary`, `cultural`, `hard`, `doctrines` (sin, humanity) | Repository |
+| Hosea 9:9; the Genesis 19 note on Lot's offer; Proverbs 31:8 | 22-30 | judges/19.json `historical`; genesis/plain/19.json (4-11, `hard`); BSB | Repository; BSB text |
+| Why the story is in Scripture: true to what God's people can become; the book's argument; the period as the depths of lawlessness and never a pattern; condemnation by presentation; the Levite's account in chapter 20 leaving out his part; no word from God, Israel without God's rule; Phyllis Trible, Texts of Terror (1984); any reading that excuses the men or blames the woman named and rejected; each man answers for what he did; the site's page on abuse and its cover-up on bringing harm into the light and reporting it | 22-30 `hard` | judges/19.json `hard`; judges/20.json `literary`; questions/morality/abuse-and-cover-up.json (`shortAnswer`, `argument`; status live) | Repository |
+| The care line (‘A word for anyone who has been sexually assaulted...’ to ‘...lists places to turn.’) | 22-30 `hard` | 1-thessalonians/plain/4.json (1-8, `hard`); exodus/plain/22.json (16-17, `hard`); deuteronomy/plain/21.json and 22.json | Reused whole, word for word; Find Help named |
+
+Cut in chapter 19: the rare word for the knife and its use in Genesis 22 (literary, but it would linger on the act); the possibility, which some note, that she was still alive when he took the knife (it would linger on the act; the note says only that the Hebrew never says when she died); Tell el-Ful, Geba and the scholars of the debate over Gibeah's site; Ephesians 5:25, 1 Corinthians 11:24 and Psalm 72:4 as lines to Christ (the deep note's thematic contrasts, not lines the New Testament draws to this chapter); the deep note's helpline sentence (replaced by the care line reused whole, which names Find Help).
+
+## The plain notes on Judges 20 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| All Israel acting as one for the first time, against one of its own tribes; ‘as one man’ three times, a unity in vengeance; Mizpah in Benjamin a few miles north of Jerusalem, a place of assembly used later by Samuel; the Levite's account leaving out his part, the reader meant to notice; nevalah and zimmah as outrage against the covenant order; the large numbers and the 'eleph debate | 1-11 | judges/20.json `story`, `historical`, `literary`, `words` (nevalah, zimmah, qahal) | Repository; no side on the numbers |
+| Joshua 7:24-25; 1 Samuel 7:5 | 1-11 | judges/20.json `historical`; BSB | Repository; BSB text |
+| The demand under Deuteronomy's command to purge evil; Benjamin's tribal loyalty above justice; the left-handed slingers and Ehud, son of the right hand; inquiry probably through the high priest; the three questions growing humbler; ‘Judah will be first’ and the book's opening; Phinehas, active in the wilderness, placing these events early in the period | 12-28 | judges/20.json `historical`, `cultural`, `literary`, `words` (ba'ar), `doctrines` (repentance, sin) | Repository |
+| Deuteronomy 17:7; 1 Corinthians 5:13 and the church's discipline as restoring, not destroying | 12-28 | judges/20.json `christ` (1 Corinthians 5:13 quoting the same phrase), `words` (ba'ar); 1-corinthians/plain/5.json (9-13, `ot`); BSB | Repository; BSB text; Paul's own use of the law's words |
+| Why two defeats: the first question only about who would go first, Israel humbled; judgment on all Israel; the command not promising an easy victory, the cost of war among brothers; not explained | 12-28 `hard` | judges/20.json `hard` | Repository; the readings in their holders' terms |
+| The ambush and Ai; the battle told twice, in summary and in detail; 25,100 and 25,000 as an exact and a round count; verse 48 and punishment far beyond the crime; Israel slaughtering Israel; not presented as justice done well; six hundred left | 29-48 | judges/20.json `story`, `historical`, `literary`, `words` (ba'ar), `doctrines` (judgment) | Repository |
+| Joshua 8:2; Hosea 10:9 | 29-48 | judges/20.json `story`; judges/19.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 20: 2 Corinthians 5:21 and 1 Peter 2:24 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); qahal and ekklesia (a word link that would draw a line to the church the chapter does not draw); Baal-tamar, Gidom and the rock of Rimmon placed on a map.
+
+## The plain notes on Judges 21 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The tribes one people by covenant and incomplete without Benjamin; grief real; the question in verse 3 and no recorded answer; the book beginning with Israel asking God's direction and ending with its own plans; oaths binding even when rash; Numbers 30 and some vows set aside, an assembly's oath taken seriously; two oaths kept and more harm done | 1-7 | judges/21.json `cultural`, `literary`, `hard`, `doctrines` (covenant, sin), `words` (shava, nacham) | Repository |
+| Numbers 30:2; Ecclesiastes 5:6 | 1-7 | judges/21.json `cultural`; numbers/30.json (rash vows); BSB | Repository; BSB text |
+| Jabesh-gilead in Gilead with ties to Benjamin, the bond perhaps explained here; charam used against an Israelite town; the young women spared showing the purpose was wives, not devotion; told plainly; never asked, never speaking; one more wrong to repair the last | 8-14 | judges/21.json `historical`, `cultural`, `hard`, `words` (charam) | Repository |
+| 1 Samuel 11:1-11; 1 Samuel 31:12 | 8-14 | judges/21.json `historical`; 1-samuel/11.json `historical`; BSB | Repository; BSB text |
+| Perets, a breach; Shiloh as the place of God's house; the puzzling directions of verse 19 and the suggestion of a time when Shiloh was less known; the feast perhaps that of 1 Samuel 1:3, a harvest festival; marriage by capture known in the ancient world and not provided by the law; the letter of the oath kept and its spirit ignored; the flat telling; the last verse as the book's verdict, the period the depths of lawlessness and never a pattern | 15-25 | judges/21.json `historical`, `cultural`, `literary`, `words` (perets); bible/guides/reading-narrative.json | Repository |
+| Proverbs 14:12; 1 Samuel 1:3; Ruth 4:22 | 15-25 | judges/21.json `historical`, `christ` (Ruth ends with David); BSB | Repository; BSB text |
+| How the book can end so: not models but evidence; the last verse as verdict; no word from the LORD after verse 3; the readings of the refrain (a call for a king, perhaps David's line; no king guaranteed, as Kings shows; a longing for the LORD's rule, 8:23; a people only God could restore); troubled reading and Scripture's honesty; the women never asked or heard, like the woman of chapter 19; the flat report an indictment, not an endorsement; no pattern | 15-25 `hard` | judges/21.json `hard`; judges/17.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word for anyone who has been sold, traded, or forced to work or to do sexual acts...’ to ‘...lists places to turn.’) | 15-25 `hard` | acts/plain/16.json (16-18, `hard`); genesis/plain/37.json (25-28, `hard`); numbers/plain/31.json (25-47, `hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 21: Isaiah 9:6-7 and Jeremiah 23:5-6 and the king the New Testament proclaims (the deep note's thematic link; the book page keeps to the lines the New Testament itself draws); the deep note's sentence pointing to counselors and emergency services (replaced by the care line reused whole); Lebonah's place.
+
+## Ruth's book page (teaching introduction, 2026-11-23)
+
+Every claim in `client/public/bible/notes/ruth/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Eighth book, four chapters; 1:1; the story in brief; Obed and David; Matthew 1:5; no vision or wonder; loyal love, providence and the outsider | in-a-minute | bible/books.json; ruth/intro.json `tagline`, `overview`, `themes`; BSB | Repository; BSB text |
+| The same years as Judges seen from one family; the Septuagint order between Judges and 1 Samuel as a bridge; the Writings and the five festival scrolls; Shavuot; after Proverbs and ‘A wife of noble character’ (Proverbs 31:10) beside 3:11; Rachel, Leah and Tamar (4:11-12) | story | ruth/intro.json `story`, `purpose`; bible/guides/reading-narrative.json (Ruth as counterpoint); BSB | Repository; BSB text |
+| The Talmud (Bava Batra 14b-15a, completed around AD 500) and Samuel; doubts because the line reaches David; a woman author suggested and doubted; the writer unknown; set in the twelfth and eleventh centuries BC; 4:7 and the line to David; the monarchy dating (tenth century or after) and the Persian dating (fifth or fourth century) with Ezra and Nehemiah; the language debate | who, timeline | ruth/intro.json `author`, `date`; ruth/3.json `historical` | Repository; each view in its holders' terms; no side |
+| Bethlehem six miles south of Jerusalem, house of bread, the famine's irony; Ephrathah; Moab east of the Dead Sea, a high plateau, several days' walk; Chemosh and the Mesha Stele (ninth century BC); Lot, Balaam, Baal of Peor, Eglon (Judges 3), Deuteronomy 23:3; no word against Moab then or now; barley in April, wheat into early summer; gleaning, threshing floor, gate | places, words, timeline | ruth/intro.json `setting`; ruth/1.json `historical`; genesis/plain/19.json (30-38, `hard`) | Repository |
+| Four places and four chapters; ‘empty’ and ‘empty-handed’ (1:21; 3:17); ‘happened to come’ (2:3); the key words; God said to act only at 1:6 and 4:13 | built | ruth/intro.json `structure`, `reading`; ruth/1.json and 3.json `literary`; BSB | Repository; BSB text |
+| Chesed as kindness or loving devotion (1:8; 2:20; 3:10); Orpah not blamed; a people and its god together; the vow, the oath and the grave; Boaz on Ruth's greater kindness; God's faithfulness through others' faithfulness; the wedding misreading | kindness, words | ruth/intro.json `themes`; ruth/1.json `cultural`, `words`; ruth/3.json `words`; theology/passage-notes.json (ruth 1, `misreadings`) | Repository |
+| Gleaning laws (Leviticus 19; Deuteronomy 24) and Boaz beyond them; the go'el (Leviticus 25:25, 47-49) and taking up a cause; the brother's marriage (Deuteronomy 25:5-10); Ruth fitting neither exactly, much discussed; 4:10; qanah as legal language, not property | law, words | ruth/intro.json `setting`; ruth/2.json `historical`, `cultural`; ruth/4.json `cultural`, `words` (qanah); deuteronomy/plain/24.json; leviticus/plain/25.json | Repository; no side on the laws |
+| Boaz as a man of standing and worth, matched by ‘a woman of noble character’; ‘The LORD be with you’; the shared harvest; his knowledge of her loyalty (2:11); protection, water, food and left grain; an ephah enough for some weeks; honor at night, the gate the same morning; the unnamed relative | boaz | ruth/2.json `cultural`, `literary`; ruth/3.json `literary`; ruth/4.json `literary`; BSB | Repository; BSB text |
+| The threshing floor and its custom; Naomi's plan; the corner of the garment and marriage (Ezekiel 16:8); kanaph and 2:12; the two readings of the scene, most readers holding a chaste proposal; agreement that it was risky and answered with honor; the barley and ‘empty-handed’ | night | ruth/3.json `cultural`, `literary`, `hard`, `words` (kanaph); BSB | Repository; both readings in their holders' terms |
+| ‘The Moabitess’ and ‘a foreigner’ (2:10); Deuteronomy 23:3; the three answers (rabbinic, men only; Moab as a hostile people, not believers; the book testing a strict use); Nehemiah and Ruth held together; 4:15 | moabite | ruth/4.json `hard`; deuteronomy/plain/23.json (1-8, `hard`) | Repository; the answers in their holders' terms |
+| Mara and the Almighty (Shaddai); no rebuke, an answer by events; whether the move to Moab brought judgment, the two views, left open; no reader's loss read as a sentence; ‘happened’ and ‘Just then’ (2:3-4); the nearer redeemer passing (4:1); providence in small turns | naomi | ruth/1.json `literary`, `hard`, `words`; ruth/2.json `literary`, `words` (miqreh); ruth/intro.json `themes` | Repository |
+| The New Testament's own lines: Matthew 1:5 and the four women with the two readings from the Matthew note; Luke 3:32; the only places Boaz and Ruth are named (checked in the BSB text of the New Testament); Boaz not made a picture of Christ; Ruth not foretelling Jesus; never a reason to blame the Jewish people | new-testament | matthew/plain/1.json (1-6, `hearers`, `hard`); ruth/intro.json `christ` (Boaz not a hidden prediction); BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: one sitting; after Judges; the conversations and key words; more than a love story; the threshing floor read with care; the outsider; the ending, 4:22 | readers | ruth/intro.json `reading`; theology/passage-notes.json (ruth 1, `misreadings`); BSB | Repository |
+| Hard passages (9), key words (12) and timeline (12), each drawn from the parts above and the chapter notes | lists | the notes named above; BSB | Repository; BSB text |
+| The map: Bethlehem only | map | the point already used on the Genesis and Luke maps | Repository; Moab left off because it is not placed in the site's records, and the note says so; no claim about any border today |
+| Go deeper: seven pages | deeper | bible/guides/reading-narrative.json, reading-genealogies.json, calendar-and-festivals.json; bible/doctrines/providence.json, covenant.json; context/worlds/old-testament-world.json; context/guides/hospitality-and-the-stranger.json | Repository; every page live |
+
+Cut from the book page: the kinsman-redeemer as a pattern of Christ (the intro's thematic link, not a line the New Testament draws); Romans 11, Hebrews 2 and Matthew 23:37 (the deep notes' thematic links); Ruth 1:16-17 as poetry in balanced pairs (left to the chapter note); a map of Moab (not placed in the site's records).
+
+One existing line was corrected in the same commit: the old overview quoted Ruth 1:1 as ‘in the days when the judges ruled’ with a small first letter; it now has the capital the BSB verse has, so that the strict quotation check passes over the whole introduction. No other word of the old introduction changed.
+
+## The plain notes on Ruth 1 (2026-11-23)
+
+`client/public/bible/notes/ruth/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The days of the judges, told through one family; Bethlehem six miles south of Jerusalem, house of bread; famine as a recurring danger (Abraham, Isaac, Jacob's sons); Moab east of the Dead Sea, several days' walk; Balaam, Baal of Peor, Eglon, Deuteronomy 23:3; the first hearer's questions; a widow's plight | 1-5 | ruth/1.json `historical`, `cultural`; ruth/intro.json `setting` | Repository |
+| Genesis 12:10; Deuteronomy 23:3 | 1-5 | ruth/1.json `historical`, `hard`; BSB | Repository; BSB text |
+| Whether the move and the marriages brought judgment: the Jewish reading of judgment (Deuteronomy 23:3; 7:3); the narrator's silence, famine as a good reason, Deuteronomy 7 naming Canaan's peoples; grace through and beyond; left open; no loss read as a sentence | 1-5 `hard` | ruth/1.json `hard` | Repository; both readings in their holders' terms |
+| One of two places where the LORD is said to act (1:6); shuv twelve times and its sense of repentance; Naomi's practical advice; the sons in her womb and the brother's marriage; Orpah not blamed; a people and its god together; the vow, the oath and the grave; davaq in Genesis 2:24 and Deuteronomy 10:20; the wedding misreading | 6-18 | ruth/1.json `cultural`, `literary`, `words` (shuv, davaq, hesed); ruth/intro.json `reading`; theology/passage-notes.json (ruth 1) | Repository |
+| Genesis 2:24; Deuteronomy 10:20; Matthew 1:5 | 6-18 | ruth/1.json `words` (davaq), `christ`; BSB | Repository; BSB text |
+| Naomi as pleasant and Mara as bitter; Shaddai and God's power (Genesis 17:1; Job); ‘empty’ answered by ‘empty-handed’ (3:17) and the child (chapter 4); Ruth beside her; the barley harvest in April and the famine over | 19-22 | ruth/1.json `literary`, `words` (shaddai); ruth/3.json `literary`; ruth/2.json `historical` | Repository |
+| Job 1:21; Psalm 22:1 | 19-22 | ruth/1.json `christ` (the laments); BSB | Repository; BSB text |
+| Naomi's complaint not rebuked; honest grief as a way of speaking to God | 19-22 `hard` | ruth/intro.json `purpose`, `themes` (emptiness turned to fullness) | Repository |
+| The care line (‘If your grief is so heavy that you cannot carry it...’ to ‘...lists places to turn.’) | 19-22 `hard` | 2-timothy/plain/4.json (6-8, `hard`); deuteronomy/plain/14.json (1-2, `hard`); hebrews/plain/2.json (14-18, `hard`) | Reused whole, word for word |
+
+Cut in Ruth 1: Romans 11:17 and Mark 15:34 (the deep note's thematic links, not lines the New Testament draws to this chapter); the grief line from Genesis 23, which names Abraham and so does not fit whole (replaced by a line that does).
+
+## The plain notes on Ruth 2 (2026-11-23)
+
+`client/public/bible/notes/ruth/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Boaz introduced first; gibbor chayil as wealth and worth; gleaning under the law and the danger to a foreign woman; ‘her chance chanced upon’ and providence; the shared harvest work; the greeting in the LORD's name | 1-7 | ruth/2.json `historical`, `cultural`, `literary`, `words` (miqreh) | Repository |
+| Leviticus 19:9; Deuteronomy 24:19 | 1-7 | ruth/2.json `historical`; leviticus/plain/19.json; deuteronomy/plain/24.json; BSB | Repository; BSB text |
+| Boaz beyond the law (protection, water, table, left grain); the order not to touch her; Ruth's question as the book's question; 2:11 and leaving her land; the wings and 3:9, the answer to his own prayer | 8-16 | ruth/2.json `cultural`, `literary`, `words` (kanaph) | Repository |
+| Psalm 91:4; Genesis 12:1 | 8-16 | BSB | BSB text |
+| An ephah, enough for some weeks; Naomi's turn and chesed (2:20), the grammar read two ways; the go'el's duties; barley and wheat, about seven weeks, Passover to the Feast of Weeks, Ruth read at Shavuot | 17-23 | ruth/2.json `historical`, `cultural`, `words` (ga'al, hesed) | Repository; both readings of verse 20 |
+| Leviticus 25:25; Exodus 6:6 | 17-23 | ruth/2.json `cultural`, `words` (ga'al); BSB | Repository; BSB text |
+
+Cut in Ruth 2: 1 Peter 1:18-19, Galatians 4:4-5, Hebrews 2:14-17 and Matthew 23:37 (the deep note's thematic links to Christ, not lines the New Testament draws to this chapter); the vinegar sauce and roasted grain explained.
+
+## The plain notes on Ruth 3 (2026-11-23)
+
+`client/public/bible/notes/ruth/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Manoach as settled security and Naomi's prayer of 1:9; threshing and winnowing on high, windy ground, owners guarding the grain at night; washing, perfume and best clothes perhaps ending mourning; the plan bold and risky | 1-5 | ruth/3.json `cultural`, `words` (manoach) | Repository |
+| Ruth 1:9; Genesis 38:14 and the comparison in the Genesis 38 note | 1-5 | genesis/plain/38.json (12-19, `later`); BSB | Repository; BSB text |
+| The corner of the garment as marriage and protection; kanaph and 2:12, the answer to his own prayer; redeemer and brother's marriage joined, taken as honorable; the greater kindness of 3:10; ‘a woman of noble character’ matching Boaz; her good name kept | 6-15 | ruth/3.json `cultural`, `literary`, `words` (kanaph, hesed, ga'al) | Repository |
+| Ezekiel 16:8; Proverbs 31:10 | 6-15 | ruth/3.json `cultural`; ruth/intro.json `story`; BSB | Repository; BSB text |
+| The threshing floor: the words with overtones and the reading of a suggested seduction; the reading of a bold but chaste proposal held by most; agreement on risk, trust and Boaz's honor | 6-15 `hard` | ruth/3.json `hard` | Repository; both readings in their holders' terms |
+| The two framing talks; ‘empty-handed’ and 1:21; patience and Boaz's resolve | 16-18 | ruth/3.json `literary` | Repository |
+| Psalm 27:14 | 16-18 | BSB | BSB text (quoted without the verse's closing exclamation point) |
+
+Cut in Ruth 3: Hebrews 2:14 and the redeemer as a pattern of Christ (the deep note's thematic link); the date of the book (left to the book page).
+
+## The plain notes on Ruth 4 (2026-11-23)
+
+`client/public/bible/notes/ruth/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The gate as court and public square; ten elders and witnesses; the legal logic of the land, the redeemer's first right, the field passing to another line; the sandal as a sign of transfer; Deuteronomy 25:9 and the differences scholars debate; the unnamed so-and-so; qanah as legal language and not property; the elders' prayer and Rachel, Leah and Tamar | 1-12 | ruth/4.json `cultural`, `literary`, `words` (qanah, shem, ed); genesis/plain/38.json (27-30, `later`) | Repository |
+| Leviticus 25:25; Deuteronomy 25:9; Genesis 38 | 1-12 | ruth/4.json `cultural`; deuteronomy/plain/25.json (5-10, `later`); BSB | Repository; BSB text |
+| Deuteronomy 23:3 and the Moabite: the three answers (rabbinic, men only; a hostile people, not those who join in faith; a test of a strict reading); not exclusive; no choice made; a gift from the LORD | 1-12 `hard` | ruth/4.json `hard`; deuteronomy/plain/23.json (1-8, `hard`) | Repository; the answers in their holders' terms |
+| The second of the two places the LORD is said to act (4:13); the women's chorus returning; the child as redeemer; ‘better to you than seven sons’ and seven as completeness; Naomi's emptiness answered; Obed and David | 13-17 | ruth/4.json `literary`; ruth/intro.json `reading` | Repository |
+| Matthew 1:5; 1 Samuel 16:1 | 13-17 | ruth/4.json `christ`; BSB | Repository; BSB text |
+| Ten names from Perez to David; 1 Chronicles 2; Perez and Tamar, Nahshon in the wilderness; a chosen list; Boaz seventh; the last word David | 18-22 | ruth/4.json `historical`, `literary`; bible/guides/reading-genealogies.json | Repository |
+| 1 Chronicles 2:12; Luke 3:32 | 18-22 | ruth/4.json `historical`; BSB | Repository; BSB text |
+
+Cut in Ruth 4: Ephesians 1:7 and 14 and the redeemer as a pattern of Christ (the deep note's thematic link); the written and spoken readings of the verb in verse 5.
