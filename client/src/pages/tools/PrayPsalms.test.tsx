@@ -140,9 +140,11 @@ describe("Pray the Psalms", () => {
     const day = planDay();
     expect(await screen.findByRole("heading", { name: `Day ${day} of the month` })).toBeInTheDocument();
     expect(screen.getByText(/This is a plan made for this page, not an ancient order of prayer/)).toBeInTheDocument();
+    // A psalm with no kind has nothing after its number in the card's kicker, so the
+    // name runs straight on into the title in this test DOM: match the number alone.
     const plan = read("pray-psalms/index.json").plan.find((d: { d: number }) => d.d === day);
-    expect(screen.getByRole("button", { name: new RegExp(`^Psalm ${plan.morning[0]} `) })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: new RegExp(`^Psalm ${plan.evening.at(-1)} `) })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: new RegExp(`^Psalm ${plan.morning[0]}(?!\\d)`) })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: new RegExp(`^Psalm ${plan.evening.at(-1)}(?!\\d)`) })).toBeInTheDocument();
   });
 
   it("says so in the site's own sentence when the browser will not save", async () => {
