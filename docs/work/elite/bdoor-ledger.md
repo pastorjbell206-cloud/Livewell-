@@ -16769,3 +16769,18 @@ Cut in chapter 8: the New Testament's reading of the royal psalms and of Isaiah 
 | 2 Kings 25:29; Proverbs 19:17 | 9-13 | 2-samuel/9.json `cultural` (2 Kings 25:27-30); luke/plain/14.json (12-14, `ot`: Proverbs 19:17 beside 2 Samuel 9:13); BSB | Repository; BSB text (lines within the Old Testament) |
 
 Cut in chapter 9: Luke 14:12-24, the Lord's Supper and Revelation 19:9 set beside Mephibosheth at the king's table (the deep note says the New Testament does not quote this chapter and calls the link a pattern); the name Merib-baal (given in chapter 4's note).
+
+## The plain notes on 2 Samuel 10 (2026-11-23)
+
+`client/public/bible/notes/2-samuel/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Ammonites east of the Jordan, Rabbah at modern Amman; Nahash and Jabesh-gilead (1 Samuel 11); the kindness of Nahash not stated, the enemy-of-Saul suggestion an inference; comforters as a courtesy between allied rulers; the princes' suspicion not absurd; the half-shaved beard and the cut garments as captives' shame; an insult to envoys as an act of war; Jericho the first town west of the Jordan on the road from Ammon; David sparing the men further shame | 1-5 | 2-samuel/10.json `historical`, `cultural`; context/worlds/honor-and-shame.json (2 Samuel 10:4-5) | Repository |
+| 1 Chronicles 19:1-5; Isaiah 20:4 (quoted after its dash) | 1-5 | 2-samuel/10.json `cultural` (Isaiah 20:4); BSB | Repository; BSB text |
+| A stench as becoming hateful; the Aramean kingdoms (Beth-rehob and Zobah north, Maacah near Hermon, Tob east of the Jordan); Chronicles' thousand talents; Joab's speech at the center; yeshuah as rescue among soldiers and God's deliverance in the Psalms; planning and leaving the result to God; the verb see marking each turn | 6-14 | 2-samuel/10.json `cultural`, `historical`, `literary`, `words` (yeshuah, chazaq, baash), `doctrines` (providence) | Repository |
+| Joshua 1:6; Judges 11:3 and Tob's men for hire | 6-14 | 2-samuel/10.json `words` (chazaq: Joshua 1:6-9); judges/plain/11.json (1-11, `later`); BSB | Repository; BSB text |
+| The fuller telling of chapter 8's wars; Hadadezer's coalition beyond the Euphrates; Helam east of the Jordan, place uncertain; seven hundred and seven thousand; foot soldiers where the Hebrew has horsemen, the BSB following the parallel; the Ammonite war continuing into chapter 11; the king who sends an army and will send a soldier to his death | 15-19 | 2-samuel/10.json `historical`, `story`; questions/contradictions/numbers-in-samuel-kings-and-chronicles.json (concessions, unresolved; status live) | Repository (live page) |
+| 1 Chronicles 19:18 | 15-19 | BSB | BSB text |
+
+Cut in chapter 10: Mark 12:1-9 and the rejected envoy, and Joab's words set beside Jesus' prayer before the cross (the deep note calls the link thematic, not a line the New Testament draws to this chapter).
