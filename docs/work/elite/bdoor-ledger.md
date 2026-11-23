@@ -15754,3 +15754,18 @@ Cut in chapter 10: Matthew 9:36 and 1 Thessalonians 1:9-10 (the deep note's them
 | The care line (‘A word for anyone who was not protected by a parent...’ to ‘...lists places to turn.’) | 34-40 `hard` | genesis/plain/19.json (4-11, `hard`) | Reused whole, word for word |
 
 Cut in chapter 11: whether Jephthah expected an animal or a person (not in the repository's notes); the rejected son and the cornerstone (Mark 12:10, Acts 4:11) and God giving his own Son (the deep note's thematic links, not lines the New Testament draws to this chapter); the twenty towns and their places.
+
+## The plain notes on Judges 12 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ephraim as a large central tribe and self-styled leader of the north; the same complaint to Gideon and his soft answer; Jephthah the outsider with no soft answer; honor and being left out; the ‘runaways’ taunt (palit) and the river dividing the tribes; the fords; the shibboleth test, an ear of grain or a stream, sh said as s; a shared language and covenant grown into separate communities; the word's later English use | 1-7 | judges/12.json `historical`, `cultural`, `words` (shibboleth, palit); judges/8.json `cultural` | Repository |
+| 42,000 and the 'eleph debate, both views held by those who take the account as history; the first judge's sword turned mainly on Israelites; more dead than in the war with Ammon; the road to the civil war of chapters 20-21 | 1-7 | judges/12.json `story`, `historical` | Repository; no side on the number |
+| Proverbs 18:19; Psalm 133:1; Galatians 5:15 | 1-7 | judges/12.json `doctrines` (sin, covenant); BSB | BSB text |
+| The killing not approved but recorded; Ephraim the aggressor and defense understandable; the fords beyond defense; placed after the vow; the pattern of chapters 8 and 9; why Israel needed something better; the smaller scale does not lessen the wrong | 1-7 `hard` | judges/12.json `hard` | Repository |
+| The fixed formula of the minor judges and its calm after slaughter; Jephthah's notice in the same formula; children, marriages outside the clan and donkeys as wealth, standing and alliance; Jair's thirty sons (10:4); Ibzan's Bethlehem in Judah or Zebulun (Joshua 19:15); Aijalon unknown; Pirathon in Ephraim; years of quiet and leadership even in disorder | 8-15 | judges/12.json `historical`, `cultural`, `literary`, `doctrines` (providence) | Repository; no side on Bethlehem |
+| Joshua 19:15 | 8-15 | judges/12.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 12: Ephesians 2:14-16 and Revelation 7:9 (the deep note's thematic links, not lines the New Testament draws to this chapter); Zaphon's place in the Jordan Valley; the hill country of the Amalekites in verse 15.
