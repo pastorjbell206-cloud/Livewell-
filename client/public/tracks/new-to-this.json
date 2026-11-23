@@ -8,6 +8,66 @@
     "This track is for an adult who has just begun to follow Jesus, or who is coming back after years away and wants to start again from the beginning. It has twelve sessions. Each one takes about ten minutes, and you can take them a day apart or a week apart. Nothing here is timed, and nothing counts the days you miss.",
     "Every session works the same way. You read a few short paragraphs, then open one page or tool on this site and use it, then come back. At the end there's one question to answer, one thing to do, and one verse to keep. If you can, go through it with one other person. Each session has a guide for a group at the bottom."
   ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through New to faith, or coming back, or sitting down with one friend to go through it together. The group is for adults who have just begun to follow Jesus, or who are coming back after years away and want to start again from the beginning. A leader doesn't need to be a pastor or a teacher. A leader needs to have gone a little further down the road, to be patient with plain questions, and to point past themselves to Jesus, to the Bible and to a local church.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight people is a good size, and two people work just as well: someone new to the faith and a friend who has followed Jesus for longer. Meet for about seventy-five minutes, once a week, for twelve meetings, and keep the end time you promised. If the group meets at a church, ask one or two others from the church to come once, so that a newcomer knows more than one face there. A leader doesn't need every answer, only the willingness to say so and find out."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A kitchen table or a living room works well. Have a Bible for each person, printed or on a phone, and the session open, since several sessions read a chapter together. Make it plain at the first meeting that there are no foolish questions, that anyone may pass on any question, that what people say about their own lives stays in the room unless someone is in danger, and that no one has to pray aloud."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the verse aloud, and the passage around it when the session opens a chapter.",
+          "Thirty-five minutes: the three questions to talk over, in order. Leave room for the questions people bring themselves.",
+          "Five minutes: how each person got on with the session's one thing to do, for anyone who wants to say.",
+          "Ten minutes: the prayer prompt, in your own words. Nobody has to pray aloud.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "People new to the faith ask the questions longtime Christians have stopped asking, and some of them are hard: why the cross, why so many churches, what about people who never heard, why a prayer went unanswered. Welcome every one. If the page the session opened takes the question up, read that part together. If no one knows, say so, write it down, and bring it back the next week, or ask a pastor.",
+          "Where churches differ, as they do on baptism, the Lord's Supper and some of the Spirit's gifts, say what they all share and that they differ, and send each person to ask their own pastor, as the sessions do. And when someone doubts, don't hurry them. The track gives a whole session to doubt, because it is common in the first years and is no sign that a person's faith was never real."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Coming to faith, or coming back, often happens in a hard season: a loss, a marriage in trouble, a habit that has a grip on someone, a church that hurt them years ago. When someone's story comes into the room, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry them back to the session. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group. Never press anyone to forgive quickly, or to stay where they are being hurt."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: grief that has taken their sleep or appetite for weeks, guilt or fear that will not let them rest, a habit they cannot break on their own, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
   "sessions": [
     {
       "n": 1,

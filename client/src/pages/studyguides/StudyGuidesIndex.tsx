@@ -18,7 +18,7 @@ import InnerHead from "@/components/art/InnerHead";
 import LibraryIndex, { type LibGroup } from "@/components/art/LibraryIndex";
 import SectionHead from "@/components/art/SectionHead";
 import IconTile from "@/components/art/IconTile";
-import { BookOpen, BookOpenText, Church, FileText, Flame, Hourglass, House, LayoutGrid, Lightbulb, Scale, ShieldQuestion, Sprout, Users, type LucideIcon } from "lucide-react";
+import { BookOpen, BookOpenText, Church, FileText, Flame, Hourglass, House, LayoutGrid, Lightbulb, Route, Scale, ShieldQuestion, Sprout, Users, type LucideIcon } from "lucide-react";
 import THEME_DATA from "@/data/studyguide-themes.json";
 
 /** Each shelf with an icon; the names are the shelves' own. */
@@ -103,6 +103,12 @@ export default function StudyGuidesIndex() {
             <li><IconTile href="/resources" icon={LayoutGrid} name="All resources" line="Downloads, tools and help in one list" /></li>
             <li><IconTile href="/resources/hard-issues-series" icon={FileText} name="The Hard Issues Series" line="Booklets for church leaders" /></li>
           </ul>
+          <p className="lw-newline">
+            <Route aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              Short sessions in order, each with a leader's guide for a group: <Link href="/tracks">the tracks</Link>.
+            </span>
+          </p>
         </div>
       </section>
     </Layout>

@@ -24,7 +24,27 @@ import { TOOLS, foldedInto } from "@/lib/toolsList";
 import IconTile from "@/components/art/IconTile";
 import { DOORS, EVERYTHING_ENTRY, HELP_ENTRY, START_LINK, type CatalogEntry } from "@/lib/siteCatalog";
 import { ICONS } from "@/lib/siteIcons";
+import { trailFor } from "@/lib/pagePlace";
 import { findEntries, type Found } from "@/lib/searchMend";
+
+/**
+ * search-index.json files the site's hub pages and films under "Main Pages",
+ * a word for the builder. Each such result is labelled instead with the door
+ * or room it belongs to, by its catalogue name (lib/pagePlace trailFor): a film
+ * under Bible Explorer, "Read the Study Bible" under Bible. A page
+ * beside the doors (Find Help, Start here, My Library) has none and shows no
+ * label; the label never changes how results rank (the walk's polish, 2026-11-23).
+ */
+const HUBS = "Main Pages";
+export function resultLabel(entry: Pick<SearchEntry, "sourceLabel" | "href">): string {
+  if (entry.sourceLabel !== HUBS) return entry.sourceLabel;
+  const place = trailFor(entry.href);
+  return place ? (place.room ?? place.door).name : "";
+}
+
+/** "See all" for the hubs goes to the whole site on one page, by its catalogue name. */
+const seeAll = (entry: SearchEntry) =>
+  entry.sourceLabel === HUBS ? { href: EVERYTHING_ENTRY.href, label: `${EVERYTHING_ENTRY.name} →` } : { href: entry.indexHref, label: `See all in ${entry.sourceLabel} →` };
 
 // The verses that hold the words typed ("born again"). The Bible's words are
 // a large download, so the code and the text both wait for a query.
@@ -333,12 +353,14 @@ export default function SearchPage() {
                           backgroundColor: "var(--bone)",
                         }}
                       >
-                        <p
-                          className="text-xs font-ui mb-2 uppercase tracking-wider"
-                          style={{ color: "var(--mustard-text)" }}
-                        >
-                          {entry.sourceLabel}
-                        </p>
+                        {resultLabel(entry) && (
+                          <p
+                            className="text-xs font-ui mb-2 uppercase tracking-wider"
+                            style={{ color: "var(--mustard-text)" }}
+                          >
+                            {resultLabel(entry)}
+                          </p>
+                        )}
                         <h3
                           className="font-display font-bold mb-2"
                           style={{ color: "var(--ink)" }}
@@ -361,11 +383,11 @@ export default function SearchPage() {
                       {truncatedLibraries.map((entry) => (
                         <p key={`see-all-${entry.indexHref}`} className="text-sm">
                           <Link
-                            href={entry.indexHref}
+                            href={seeAll(entry).href}
                             className="font-ui font-medium hover:opacity-70 transition-opacity"
                             style={{ color: "var(--mustard-text)" }}
                           >
-                            See all in {entry.sourceLabel} →
+                            {seeAll(entry).label}
                           </Link>
                         </p>
                       ))}
