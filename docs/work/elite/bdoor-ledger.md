@@ -16301,3 +16301,20 @@ Cut in chapter 15: Matthew 9:13 and 12:7, Hebrews 10:5-10 and Saul as the dark b
 A second correction to 1 Samuel's book page, made after chapter 15 (2026-11-23): the part on Endor and Mount Gilboa said that Saul ‘falls on his own sword’, and the hard-passage line spoke of his death ‘by his own sword’. Both now say that he took his own life, by his own hand, so that the page names no means of self-harm; the verse itself (31:4) stands in the Bible text beside it. The care line that follows is unchanged.
 
 A third change to 1 Samuel's book page, made at the first push (2026-11-23): the browser check of the served build found two pairs of map names touching at 1440 pixels wide, Bethel with Jerusalem and Bethlehem with Hebron. Two labels were moved, Bethel's to sit centered above its mark and Bethlehem's to the left of its mark; no words changed and no place moved. The book page was checked again at 390 and 1440 with no overlap.
+
+## The plain notes on 1 Samuel 16 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The rise of David begins, running to 2 Samuel 5; Bethlehem six miles south, the town of Ruth (Ruth 4:17-22); David's reign from about 1010 BC and the anointing some years before; anointing another king as treason; the elders' trembling, two readings, not said; the sacrifice real and consecration before the meal | 1-5 | 1-samuel/16.json `story`, `historical`, `cultural` | Repository; both readings of the elders' fear in their holders' terms |
+| Ruth 4:17; Micah 5:2 (quoted only before its dash) and Matthew 2:6 | 1-5 | luke/plain/2.json (1-7, `ot`: Micah 5:2 and Matthew 2:6); BSB | Repository; BSB text; Matthew's own line |
+| Sight as the key word; the heart as the inner self; the irony of Saul's height; the slow procession and David's name withheld until the anointing; the youngest chosen against the firstborn, as in Genesis; sheep as younger sons' work; tsalach from that day forward; seven sons in 1 Chronicles 2:13-15 and eight implied here | 6-13 | 1-samuel/16.json `literary`, `cultural`, `historical`, `words` (levav, tsalach); theology/passage-notes.json (1 samuel 16) | Repository |
+| Psalm 78:70-71; 1 Chronicles 2:15 | 6-13 | 1-samuel/16.json `historical`; BSB | Repository; BSB text |
+| The two panels and the Spirit coming and going in consecutive verses; the Spirit's power for an office withdrawn; ra as bad or harmful; the kinnor as a lyre; music to calm; the customary gifts; the chosen king in the rejected king's house | 14-23 | 1-samuel/16.json `literary`, `cultural`, `words` (ra), `doctrines` (spirit) | Repository |
+| Judges 9:23; 1 Kings 22:22 | 14-23 | 1-samuel/16.json `hard` (Judges 9:23; 1 Kings 22:19-23); BSB | Repository; BSB text |
+| A spirit of distress from the LORD: God permitting or directing a hostile spirit without authoring evil; or a harmful affliction sent as judgment; both; the Old Testament tracing all to God's rule; the torment following the Spirit's departure and relief through music; no condition named and no diagnosis | 14-23 `hard` | 1-samuel/16.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘If sadness has settled on you and will not lift...’ to ‘...lists places to turn.’) | 14-23 `hard` | 1-thessalonians/plain/5.json (16-22, `hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 16: Isaiah 11:1-2, Jesus' baptism and the hidden king (the deep note's pattern, not a line the New Testament draws to this chapter; Matthew 2:6 is kept as Matthew's own line on Bethlehem); the theology passage note's shepherd boy as a picture of the shepherd of the people; a reading that God did not rebuke Samuel's grief (cut before commit; the note says only that God asked how long it would last).
