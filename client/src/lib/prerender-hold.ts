@@ -76,6 +76,14 @@ export function holdPrerenderedPage(options: PrerenderHoldOptions = {}): boolean
   let awaitingFonts = false;
   let awaitingPictures = false;
   let picturesDrawn = false;
+  // Not before the held text has been drawn once. On a busy machine the
+  // browser has drawn its first frame only after the app was ready (Lighthouse
+  // on /family, 2026-11-23: nothing on screen for 1.2 seconds), and a swap
+  // before that frame made the real page the first thing painted, its largest
+  // paint counted from when the app's code had run. A page loading out of sight
+  // (a background tab) draws no frame until it is shown, so it is not held for one.
+  const nextFrame = doc.visibilityState === "hidden" ? undefined : doc.defaultView?.requestAnimationFrame?.bind(doc.defaultView);
+  let drawn = !nextFrame;
   const observer = new Observer(() => {
     if (pageIsReady(root)) releaseWhenFontsAreIn();
   });
@@ -87,7 +95,7 @@ export function holdPrerenderedPage(options: PrerenderHoldOptions = {}): boolean
   // ask for the faces it uses, and the swap waits for them (or for
   // `maxWaitMs`, whichever comes first).
   function releaseWhenFontsAreIn() {
-    if (done || awaitingFonts || awaitingPictures) return;
+    if (done || awaitingFonts || awaitingPictures || !drawn) return;
     const fonts = doc.fonts;
     void root!.offsetHeight;
     if (fonts && fonts.status === "loading") {
@@ -139,6 +147,13 @@ export function holdPrerenderedPage(options: PrerenderHoldOptions = {}): boolean
     root!.classList.remove(WAIT_CLASS);
   }
   observer.observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ["data-lw-loading"] });
+  // The task after an animation frame runs once that frame has been painted.
+  nextFrame?.(() =>
+    setTimeout(() => {
+      drawn = true;
+      if (pageIsReady(root)) releaseWhenFontsAreIn();
+    }, 0),
+  );
   timer = setTimeout(release, maxWaitMs);
   return true;
 }

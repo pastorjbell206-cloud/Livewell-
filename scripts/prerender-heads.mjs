@@ -1032,7 +1032,8 @@ const PAGE_BODIES = {
       html: article([
         `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
         `<h1>Bible Explorer</h1>`,
-        `<p class="pre-subtitle">The whole Bible as one story, on one map, for ages 7 to 16. Follow the road from the garden to the city.</p>`,
+        // At the lede's size: as a subtitle it came within a few pixels of the real lede, which then won the largest paint.
+        `<p class="pre-lede">The whole Bible as one story, on one map, for ages 7 to 16. Follow the road from the garden to the city.</p>`,
         sec("The map", `<ol>\n${d.stops.map(stop).join("\n")}\n</ol>`),
         thread ? sec(`A thread through the whole Bible: ${thread.name}`, `<p>${escapeHtml(thread.line.older)}</p>`) : "",
         (d.filmGroups || []).length

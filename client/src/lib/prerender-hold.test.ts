@@ -14,7 +14,8 @@ function mount(root: HTMLElement, html: string) {
   root.innerHTML = html;
 }
 
-const flush = () => new Promise<void>((resolve) => setTimeout(resolve, 0));
+/** A frame, and the task after it: the held text has been drawn by then (the hold waits for one). */
+const flush = () => new Promise<void>((resolve) => requestAnimationFrame(() => setTimeout(resolve, 0)));
 
 describe("holdPrerenderedPage", () => {
   beforeEach(() => vi.useRealTimers());
@@ -98,6 +99,28 @@ describe("holdPrerenderedPage", () => {
       expect(root.classList.contains(WAIT_CLASS)).toBe(false);
     } finally {
       delete (document as unknown as { fonts?: unknown }).fonts;
+    }
+  });
+
+  it("does not take the held text away before a frame has drawn it", async () => {
+    // A busy machine: the page is ready before the browser has drawn its first frame.
+    const frames: FrameRequestCallback[] = [];
+    const view = document.defaultView!;
+    const spy = vi.spyOn(view, "requestAnimationFrame").mockImplementation((cb) => frames.push(cb));
+    try {
+      const root = setPage(true);
+      holdPrerenderedPage({ path: "/family" });
+      mount(root, "<main><h1>Family</h1></main>");
+      await new Promise<void>((resolve) => setTimeout(resolve, 0));
+      expect(document.getElementById(HELD_ID)).not.toBeNull();
+      expect(root.classList.contains(WAIT_CLASS)).toBe(true);
+
+      frames.splice(0).forEach((cb) => cb(performance.now()));
+      await new Promise<void>((resolve) => setTimeout(resolve, 0));
+      expect(document.getElementById(HELD_ID)).toBeNull();
+      expect(root.classList.contains(WAIT_CLASS)).toBe(false);
+    } finally {
+      spy.mockRestore();
     }
   });
 
