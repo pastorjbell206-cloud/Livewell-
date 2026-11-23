@@ -15785,3 +15785,19 @@ Cut in chapter 12: Ephesians 2:14-16 and Revelation 7:9 (the deep note's themati
 | Joshua 19:41; 1 Samuel 2:21 | 24-25 | judges/13.json `historical`, `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 13: the meaning of the verb for the Spirit's stirring in verse 25 (not in the repository's notes); Isaiah 9:6 and the word for wonderful (left out so that no line is drawn to Christ that the New Testament does not draw); the annunciation to Mary as surpassing this one (the deep note's thematic link); the meaning of the name Samson (not in the repository's notes).
+
+## The plain notes on Judges 14 (2026-11-23)
+
+`client/public/bible/notes/judges/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The grown man against the promise of chapter 13; marriage arranged by families, his demand and his refusal of their counsel; the law against marriage with the peoples of the land (Deuteronomy 7:3-4) and the Philistines within its spirit; ‘pleasing to my eyes’ as ‘right in his eyes’ and the book's closing refrain; Timnah on the Sorek border; the two peoples side by side, ruling but not always at war; verse 4 and God's purpose, not approval; to'anah found only here | 1-4 | judges/14.json `story`, `historical`, `cultural`, `literary`, `words` (to'anah) | Repository |
+| Genesis 50:20; Proverbs 16:9 | 1-4 | judges/14.json `hard`; BSB | Repository; BSB text |
+| From the LORD yet against God's law: not approval of the desire; God working through wrongdoing without causing or excusing it (Joseph); providence and responsibility; the two readings of how far verse 4 goes; not settled | 1-4 `hard` | judges/14.json `hard`, `doctrines` (providence) | Repository; both readings in their holders' terms |
+| Tsalach, the Spirit rushing, also of Saul and David; the carcass, uncleanness under the law; Numbers 6 speaking of human corpses and so not directly forbidding this, with contact with death as a thread that raises the question of his consecration; the secret kept even from his parents; secrets as the chapter's thread | 5-9 | judges/14.json `literary`, `words` (tsalach), `doctrines` (spirit, sin); judges/13.json `cultural` (the Nazirite vow); judges/15.json `cultural` (Numbers 6 and human corpses) | Repository |
+| Leviticus 11:27; Numbers 6:6; 1 Samuel 10:6; 1 Samuel 16:13 | 5-9 | judges/14.json `words` (tsalach); BSB | Repository; BSB text |
+| Seven-day feasts; mishteh from the verb to drink and the unanswered question of the vow; the thirty companions as attendants and guard; riddles and wagers; the stake; the answer shaped like a riddle and the suggestion that its usual answer was love; the threat to burn the wife and her family; the crude heifer image; Ashkelon, one of the five cities, more than twenty miles away; the Spirit's gift not making the anger holy; the bride given away | 10-20 | judges/14.json `historical`, `cultural`, `literary`, `words` (chidah, patah) | Repository |
+| Genesis 29:27; patah again with Delilah (16:5) | 10-20 | judges/14.json `cultural`, `words` (patah); BSB | Repository; BSB text |
+
+Cut in chapter 14: Romans 5:10, Ephesians 5:25 and Luke 3:22 (the deep note's contrasts with Christ, not lines the New Testament draws to Samson); the riddle as a picture of the gospel (named by the deep note as devotional use, not the meaning); the form of marriage in which the wife stays in her father's house (left to chapter 15); Tel Batash as Timnah; whether walking in the vineyards touched his vow (the text does not say).
