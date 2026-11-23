@@ -16227,3 +16227,19 @@ Cut in chapter 10: Luke 4:18, John 1:32-33 and Acts 2:33 and the anointing and t
 | Saul made king three times: several traditions gathered by editors, or one process (designation, selection, confirmation), Samuel's word renewal; the finished account's agreement | 12-15 `hard` | 1-samuel/11.json `hard` | Repository; both readings in their holders' terms |
 
 Cut in chapter 11: Luke 23:34 and the king who shows mercy to those who rejected him (the deep note calls it thematic, not a line the New Testament draws to this chapter); teshu'ah as related to the names Joshua and Jesus (kept for chapter 14, where the deep note gives it for yasha).
+
+## The plain notes on 1 Samuel 12 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The speech at the Gilgal ceremony; Samuel not retiring but handing over civil leadership; the language of a court, witnesses and the abuses of a powerful man; the echo of 8:11-17, the judge who took nothing | 1-5 | 1-samuel/12.json `story`, `cultural` | Repository |
+| Numbers 16:15; Acts 20:33 | 1-5 | BSB | BSB text (a leader's integrity in other farewells, no line to Christ) |
+| A covenant speech like Moses' and Joshua's farewells; a trial in three movements; righteous acts as God's deeds of rescue; Judges compressed; Jerubbaal as Gideon; Bedan in the Hebrew and Barak in the Greek and Syriac, followed by the BSB; Samson for Samuel in some versions; the terms of verses 14 and 15 at the center, king and people under one covenant | 6-15 | 1-samuel/12.json `literary`, `historical`, `words` (tsedaqah), `doctrines` (kingdom) | Repository |
+| Judges 2:16; Judges 6:32 | 6-15 | 1-samuel/12.json `historical` (Judges 6:32); BSB | Repository; BSB text |
+| Rain at the wheat harvest in the dry season, ruinous and plainly not ordinary; Baal as the storm god and who commands the sky; Samuel from prosecutor to intercessor, ceasing to pray a sin; tohu as in Genesis 1:2 for idols; the covenant resting on God's name yet conditional; the chapter ending with the warning | 16-25 | 1-samuel/12.json `cultural`, `literary`, `words` (tohu), `doctrines` (prayer, covenant) | Repository |
+| Proverbs 26:1; Psalm 94:14 | 16-25 | BSB | BSB text |
+| Why God gave a king: Deuteronomy 17:14-20 and kingship not forbidden; the motive condemned (8:5) and the turn from the LORD at Nahash's threat; two strands or one argument; a king good only under God's rule; the sin in the demand, not the office | 16-25 `hard` | 1-samuel/12.json `hard` | Repository; both readings in their holders' terms |
+
+Cut in chapter 12: the resolution of the tension in Christ and Hebrews 7:25 (the deep note's pattern, not a line the New Testament draws to this chapter).
