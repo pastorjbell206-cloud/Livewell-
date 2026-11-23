@@ -176,7 +176,9 @@ describe("Home's latest writing", () => {
     const live = SHELF_ESSAYS.filter((e) => isPublicEssay(e.slug)).slice(0, 2);
     expect(live).toHaveLength(2);
     const retired = { slug: "an-essay-off-the-shelf", title: "Off the shelf", publishedAt: "2026-01-05T00:00:00.000Z" };
-    const fresh = { slug: "a-post-from-the-admin", title: "A new post", publishedAt: new Date(LATEST_CUTOFF + 40 * DAY).toISOString() };
+    // Dated a day after the newest committed essay, so a newly landed essay can never outrank it.
+    const newest = Math.max(LATEST_CUTOFF, ...committedLatest().map((e) => e.time));
+    const fresh = { slug: "a-post-from-the-admin", title: "A new post", publishedAt: new Date(newest + DAY).toISOString() };
     const rows = [
       { slug: live[0].slug, title: live[0].title, publishedAt: "2025-03-02T00:00:00.000Z" },
       retired,

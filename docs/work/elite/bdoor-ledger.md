@@ -15089,3 +15089,422 @@ Cut in chapter 34: a remark on the Hebrew wording of verse 5 (‘at the mouth of
 Reworded after commit in chapter 21 (2026-11-21): two sentences that began ‘Here is what the law’ in the hard note on 21:10-14 now read ‘The law permits a great deal.’ and ‘The law also sets limits.’, since that opening counts as signposting.
 
 Reworded after commit in chapter 6 (2026-11-21): a word-for-word gloss of 6:4 that contained ‘our’ and an imagined speech in the first person were removed, so that the first-person scan over the whole book reads 0.
+
+## Joshua's book page (teaching introduction, 2026-11-22)
+
+Every claim in `client/public/bible/notes/joshua/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check and the single-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Sixth book, 24 chapters; after Moses' death, east of the Jordan; the two halves; 21:45 as the book's own summary; Rahab in the line of Jesus | in-a-minute | bible/books.json; joshua/intro.json `tagline`, `overview`, `christ`; BSB | Repository; BSB text |
+| 1:2; Genesis 12:7; the story so far; the Former Prophets (Joshua, Judges, Samuel, Kings); Judges 2:10; 1:8 | story, words | joshua/intro.json `overview`, `story`; BSB | Repository; BSB text |
+| Joshua before the book (Exodus 17:9; 33:11; Numbers 14:6-9; 27:18-23); Hoshea renamed (Numbers 13:16); Yehoshua, the LORD saves; Iesous the Greek form, the same as the name Jesus; Matthew 1:21; the New Testament builds no allegory on it; ‘the servant of the LORD’ only at 24:29; 10:42 | joshua, words | joshua/intro.json `overview`, `christ`; joshua/1.json `christ`; hebrews/plain/4.json (6-11, `hearers`); BSB | Repository; stated as the repository's notes state it |
+| Authorship: no author named; the Talmud credits Joshua, his death added by others; written by Joshua or someone close; 24:26; ‘to this day’; the Book of Jashar (10:13) | who, words | joshua/intro.json `author`; joshua/10.json `cultural`; BSB | Repository; no side |
+| Martin Noth (1943), Deuteronomy to Kings as one history; final form under Josiah or in the exile; a smaller hand on an older core | who, timeline | joshua/intro.json `author` | Repository; in its holders' terms; no side |
+| The date of the events: 1 Kings 6:1, about 1446 and 1406 BC; the thirteenth century; the Merneptah monument, about 1208 BC | who, timeline | joshua/intro.json `date`; joshua/1.json `historical` | Repository; no side |
+| The four movements; thirty-one kings (12:24); forty-eight Levite towns (21:41); the lists as title deeds; ‘as the LORD had commanded Moses’ | built | joshua/intro.json `structure`, `reading`; BSB | Repository; BSB text |
+| Rahab's confession (2:11) and the oath; the ark; the flood season and 3:17; the stones and 4:24; the commander, 5:13-14, the sandals and the burning bush; the main point not in dispute | entering | joshua/2.json, 3.json, 4.json, 5.json (`cultural`, `literary`, `hard`); BSB | Repository; BSB text; the views on the commander left to the chapter note |
+| 6:21; Ai, the south, Hazor; herem, no plunder; Deuteronomy 7 and 20; Mesha, about 840 BC, the same word | conquest, words, timeline | joshua/6.json `cultural`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`) | Repository |
+| Genesis 18:25; the four readings (judgment after long patience, Genesis 15:16, Deuteronomy 9:5; the stock idiom of ancient war reports, Egypt, Assyria and Moab; God's right over life, Augustine and Aquinas; accommodation read through Christ), each with its cost; many hold more than one; no side | conquest | questions/old-testament/the-command-to-destroy-the-canaanites.json (`shortAnswer`, `evidence`, `reply`, `differ`); context/guides/the-violence-of-the-old-testament.json; deuteronomy/plain/7.json (1-5, `hard`) | Repository; handled as the site's live pages handle it; no side |
+| What holds on every reading: one land and one moment, never renewed; not about race (Rahab, Achan, Gibeon); Luke 9:55; no warrant for violence against any person or people; no nation, state, land or conflict today and no claim about who should hold any land; the later misuse named as the church's sin; no contempt; Ezekiel 18:23 | conquest | questions/old-testament/the-command-to-destroy-the-canaanites.json (`reply`, `differ`); context/guides/the-violence-of-the-old-testament.json (`what-no-one-may-do`); deuteronomy/plain/7.json | Repository; BSB text |
+| Jericho: Tell es-Sultan; Garstang (1930s, about 1400 BC); Kenyon (1950s, about 1550 BC, Garstang's walls older); most archaeologists hold her date; Wood (1990), disputed; erosion | digging, timeline | joshua/6.json `historical`; joshua/intro.json `setting`; questions/old-testament/jericho-and-the-conquest.json (`objection`, `evidence`) | Repository; each view in its holders' terms; no side |
+| Ai: et-Tell, destroyed long before, empty in the period; the three responses; unresolved | digging | joshua/7.json `historical`; questions/old-testament/jericho-and-the-conquest.json (`evidence`) | Repository; no side |
+| Hazor: 11:10-13; the largest city in Canaan; a great fire usually dated to the thirteenth century BC; Israel, Egyptians, rival Canaanites or a revolt | digging, timeline | joshua/11.json `historical`; questions/old-testament/jericho-and-the-conquest.json (`evidence`) | Repository; no side |
+| Archaeology has not confirmed the conquest; it counts against a sudden destruction of all the cities; the book's own admissions (11:13; 13:1; 15:63; Judges 1; 24:13); the four ways scholars read the narratives; Christians hold more than one | digging | questions/old-testament/jericho-and-the-conquest.json (`shortAnswer`, `concessions`, `evidence`, `reply`, `differ`) | Repository; no overclaim; no side |
+| The Amarna letters (1300s BC), a ruler of Jerusalem and a king of Hazor | timeline | joshua/10.json `historical`; joshua/11.json `historical`; joshua/intro.json `setting` | Repository |
+| Rahab, Achan (the cloak, silver and gold; about thirty-six dead; the household) and Gibeon (9:14; 9:19; the night march of 10:9) set side by side; the line runs through faith and not birth | belonging | joshua/intro.json `reading`, `themes`; joshua/7.json, 9.json; context/guides/the-violence-of-the-old-testament.json (`judgment-not-ethnicity`); BSB | Repository; BSB text; the household's death left to the chapter note, no side |
+| Inheritance and the lot; Caleb (14:12); the daughters of Zelophehad (17:3-4); Levi (13:33); the cities of refuge (20; 20:9); 21:43-44; rest real and not complete (13:1; 18:2-3); Psalm 95 and Hebrews 4 | dividing, words | joshua/13.json, 14.json, 20.json (`cultural`, `historical`); joshua/intro.json `themes`; hebrews/plain/4.json; BSB | Repository; BSB text |
+| The altar by the Jordan: gathered for war, asked first, a witness and not for offerings (22:27) | dividing | joshua/22.json `cultural`, `hard`; BSB | Repository; BSB text |
+| Chapter 23: 23:14; the warning about worship and not birth, Rahab and Ruth; 23:15-16 | farewell | joshua/23.json `cultural`, `hard`; BSB | Repository; BSB text |
+| Chapter 24: Shechem and Abraham's first altar; 24:2; God as the one who acts; 24:14-15 set inside a covenant already made; the gods named; the comparison with ancient treaties (many scholars); 24:19 as counting the cost; the stone; the three burials; 24:31 | farewell | joshua/24.json `historical`, `cultural`, `literary`, `hard`; BSB | Repository; BSB text; never turned into pressure on the reader |
+| The New Testament's own lines: Matthew 1:5; Hebrews 11:30-31; James 2:25; Hebrews 4:8-9 and Psalm 95; the one Greek name; Matthew 11:28; 1:5 and Hebrews 13:5; Acts 7:45; Ephesians 6:12; 2 Corinthians 10:4; Matthew 26:52; never a reason to blame the Jewish people | new-testament | joshua/intro.json `christ`, `story`; joshua/6.json `christ`; joshua/11.json `christ`; hebrews/plain/4.json; hebrews/plain/11.json (23-31); james/plain/2.json (14-26); matthew/plain/1.json (1-6); acts/plain/7.json (44-50); BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: after Deuteronomy; the summaries and the admissions together; no program for the present; the outsiders (8:35); the ending | readers | joshua/intro.json `reading`; joshua/8.json `cultural`; BSB | Repository |
+| Hiel of Bethel in Ahab's days (1 Kings 16:34) | timeline | joshua/6.json `historical`; BSB | Repository; BSB text |
+| The campaigns about seven years, from Caleb's ages | timeline | joshua/11.json `historical`; joshua/14.json `historical` | Repository; stated as an estimate |
+| The map: Jericho, the Jordan, Bethel, Jerusalem, Hebron, Shechem, and Gilead as a region | map | The points already used on the site's maps (Genesis, Numbers, Deuteronomy, Mark, Psalms) | Repository; Gilgal, Ai, Gibeon, Shiloh, Hazor and the campaign towns left off and the note says so; no tribal borders drawn |
+| Go deeper: ten pages | deeper | bible/guides/reading-narrative.json; bible/doctrines/covenant.json, sabbath.json, faith.json, judgment.json; context/guides/covenant-and-treaty.json, the-violence-of-the-old-testament.json; questions/old-testament/jericho-and-the-conquest.json and the-command-to-destroy-the-canaanites.json (status live); /answers/did-god-command-genocide | Repository; every page live |
+
+Cut from the book page: Caleb named among the outsiders (the notes give two readings of ‘Kenizzite’ and take no side); Origen's reading of the wars as a picture of the struggle against sin (left to the chapter notes, since the live question page does not list it among the main readings); the scarlet cord as a picture of Christ's blood (the New Testament does not draw it); Jericho and Ai as military strongpoints (one writer's proposal in the context guide); the Habiru of the Amarna letters; any statement of what Israel's borders were or should be.
+
+## The plain notes on Joshua 1 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Joshua as Moses' assistant, already appointed (Numbers 27:18-23); the land as gift (‘giving’, ‘given’); the wide borders of verse 4 never held in Joshua's day, nearest under David and Solomon | 1-9 | joshua/1.json `historical`, `literary`, `words` (natan) | Repository |
+| The Book of the Law as Moses' written teaching; the king's copy (Deuteronomy 17:18-19); ‘meditate’ as murmuring (the lion and the dove); ‘prosper’ as acting wisely, not a formula for gain; courage resting on God's presence | 1-9 | joshua/1.json `cultural`, `words` (hagah, sakal, chazaq) | Repository |
+| Deuteronomy 31:8; Psalm 1:2; Hebrews 13:5; Matthew 28:20 | 1-9 | joshua/1.json `christ`, `words`; joshua/intro.json `christ`; BSB | Repository; BSB text |
+| The officers; provisions though the manna still fell; the eastern tribes and the condition Moses set (Numbers 32); ‘rest’; the pledge like an ancient oath of loyalty; the people give Joshua God's own words | 10-18 | joshua/1.json `historical`, `cultural`, `literary` | Repository |
+| Joshua 22:2; Hebrews 4:8; Matthew 11:28 | 10-18 | joshua/1.json `christ`; joshua/11.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 1: the Hittites as an empire in Anatolia (left to the deep note); that Jesus answered the tempter from Deuteronomy (the deep note's link, not one the New Testament draws to this chapter). The BSB's words in verse 4 are paraphrased because the verse has a dash.
+
+## The plain notes on Joshua 2 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jericho as an oasis town guarding the road into the hills, with its own king; the archaeology debated; the ordinary Hebrew word for a prostitute, kept by the New Testament; the innkeeper tradition; a house where strangers drew little notice; flat roofs, flax and the spring harvest; the irony of the search | 1-7 | joshua/2.json `historical`, `cultural`, `literary` | Repository |
+| Hebrews 11:31; James 2:25; the midwives (Exodus 1:17, 1:20) | 1-7 | joshua/2.json `christ`, `hard`; hebrews/plain/11.json (23-31, `hard`); BSB | Repository; BSB text |
+| Rahab's lie: reported without comment; what the New Testament praises; Augustine's view (always wrong, praised in spite of it, a new believer); the other view (deceiving those engaged in unjust killing, the midwives); the later question of hiding the hunted; no side | 1-7 `hard` | joshua/2.json `hard`; hebrews/plain/11.json (23-31, `hard`) | Repository; as readers have weighed it; no side |
+| The news on the trade roads; the whole city afraid; verse 11 and Deuteronomy 4:39; chesed as loyal love, most often God's love for Israel; oaths in a god's name | 8-14 | joshua/2.json `historical`, `cultural`, `literary`, `words` (hesed, masas) | Repository |
+| ‘The LORD’ in capitals for the personal name of God | 8-14 | bible/doctrines/names-of-god.json; exodus/intro.json `teaching` | Repository |
+| Exodus 15:14-15; Ruth 4:21; Matthew 1:5; Jesse the father of David | 8-14 | joshua/2.json `christ`; matthew/plain/1.json (1-6); BSB | Repository; BSB text |
+| Houses in the wall and double walls with rooms; the careful terms of the oath; the cord as a sign; the early Christian reading of its color named as later devotion, not the text's meaning; the word also meaning hope, not to be built on; the scouts report Rahab's words | 15-24 | joshua/2.json `cultural`, `literary`, `words` (tiqvah), `christ` | Repository |
+| Joshua 6:22, 6:25; Deuteronomy 7:2; Ephesians 2:13 | 15-24 | joshua/6.json `literary`; joshua/9.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 2: Tell es-Sultan and the age of the site (on the book page); the meaning of the name Rahab; the casemate wall named as a technical term; any reason the scouts chose her house beyond what the notes give.
+
+## The plain notes on Joshua 3 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The spring flood; the ark (a gold-covered chest, the tablets, the cherubim, throne or footstool, carried on poles by priests); two thousand cubits as about half a mile, reverence and a clear view; consecration as at Sinai (washing clothes); the pillar of cloud before | 1-6 | joshua/3.json `historical`, `cultural`; exodus/intro.json `teaching`; BSB (Exodus 19:10) | Repository |
+| Exodus 14:22; Isaiah 43:2 | 1-6 | joshua/3.json `words` (ned); BSB | Repository; BSB text |
+| God begins to exalt Joshua; ‘the living God’ and ‘the Lord of all the earth’; power over a river credited in Canaan to Baal or the river; the seven peoples as a standard list, seven as completeness; the rare word ‘heap’ and Exodus 15:8 | 7-13 | joshua/3.json `cultural`, `literary`, `words` (ned, gadal); joshua/intro.json `setting` | Repository |
+| Exodus 15:8; Psalm 114:5, 114:7 | 7-13 | joshua/3.json `words`; BSB | Repository; BSB text |
+| The Jordan narrow but in flood from Hermon's snow and the winter rains; the fords (2:7); Adam upstream near the Jabbok; the Salt Sea as the Dead Sea; ‘dry ground’ as the Red Sea's words; the still picture at the end | 14-17 | joshua/3.json `historical`, `literary` | Repository |
+| 2 Kings 2:8; Matthew 3:13; whether the Gospels intend an echo is debated; the hymns' use of the Jordan as later devotion | 14-17 | joshua/3.json `christ`; BSB | Repository; BSB text; no line drawn that the New Testament does not draw |
+| The three ways the miracle is read: a direct act; the landslides near Adam (1927) with the timing as the miracle; a retelling shaped to mirror the exodus, perhaps tied to worship at Gilgal; no side | 14-17 `hard` | joshua/3.json `historical`, `hard` | Repository; each in its holders' terms; no side |
+
+Cut in chapter 3: the thirteenth-century AD landslide (the note says only ‘reported’); a link between the verb ‘cross over’ and the word ‘Hebrew’ (the note calls it debated); 1 Corinthians 10:1-2 (Paul speaks of the sea, not the Jordan). The BSB's words in verse 13 are quoted only in part because the verse has dashes.
+
+## The plain notes on Joshua 4 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The chapter retells the crossing in overlapping layers; standing stones in the ancient world (Jacob at Bethel, Moses' twelve pillars); memory where few could read; one stone for each tribe, the eastern tribes included; the child's question as at Passover; ‘to this day’ as the later writer's voice | 1-9 | joshua/4.json `cultural`, `literary`, `words` (shevet); joshua/intro.json `author` | Repository |
+| Exodus 12:26-27; Luke 22:19 | 1-9 | joshua/4.json `cultural`, `christ`; BSB | Repository; BSB text |
+| The ark as the constant of the account; the eastern tribes keep their word; 40,000 and the two readings of the Hebrew word for thousand; Joshua exalted as 3:7 promised; ‘the ark of the Testimony’ | 10-18 | joshua/4.json `historical`, `cultural`, `literary`, `words` (gadal) | Repository; no side on the number |
+| Exodus 14:31; the ark no charm (1 Samuel 4) | 10-18 | joshua/3.json `words` (aron); BSB | Repository; BSB text |
+| The tenth day of the first month and the choosing of the lamb (Exodus 12:3); Gilgal between the river and Jericho, its site not found, Samuel's circuit, Saul confirmed there; ‘before us’; the two purposes of verse 24; the fear of the LORD as reverence | 19-24 | joshua/4.json `historical`, `literary`; bible/doctrines/fear-of-god.json | Repository |
+| Psalm 66:6; Matthew 28:19 | 19-24 | joshua/4.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 4: the prophets' later words against worship at Gilgal (left to the deep note); the twelve apostles as an echo of the twelve stones (the note says ‘many interpreters see’, and the New Testament does not draw the line to this chapter).
+
+## The plain notes on Joshua 5 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Circumcision as the sign of the covenant with Abraham, practiced by other peoples (Egyptians) with a different meaning; the lapse in the wilderness and the two suggested reasons; flint knives used long after metal; the men unable to fight (Genesis 34:25); the three readings of ‘the reproach of Egypt’; Gilgal and the verb ‘to roll’ | 1-9 | joshua/5.json `historical`, `cultural`, `words` (galal, cherpah) | Repository; no side on the reproach |
+| Genesis 17:11; Deuteronomy 30:6; Romans 2:29 | 1-9 | joshua/5.json `christ`; deuteronomy/intro.json `teaching`; BSB | Repository; BSB text |
+| Passover on the fourteenth day; no uncircumcised man may eat it (Exodus 12:48); roasted grain from the spring barley harvest; the manna six days in seven for forty years; the harder test of plenty (Deuteronomy 8) | 10-12 | joshua/5.json `historical`, `literary`; deuteronomy/intro.json `teaching` (chosen); BSB | Repository |
+| Exodus 16:35; Deuteronomy 8:3; John 6:35; 1 Corinthians 5:7 | 10-12 | joshua/5.json `historical`, `christ`; BSB | Repository; BSB text |
+| The soldier's question and the answer that refuses it; the LORD's army as the heavenly host; ‘commander’ used in Daniel for heavenly princes; the sandals and the burning bush; holy because of who is present; worship before the battle | 13-15 | joshua/5.json `cultural`, `literary`, `words` (sar, qodesh), `hard` | Repository |
+| Exodus 3:5; Numbers 22:31; 2 Kings 6:17 | 13-15 | joshua/5.json `cultural`; BSB | Repository; BSB text |
+| Who the commander is: the Son of God before the incarnation (many early Christian writers and later ones); the angel of the LORD who speaks as God; a created angel, perhaps Michael; 6:2 continuing with the LORD speaking; no side; the main point not in dispute | 13-15 `hard` | joshua/5.json `christ`, `hard` | Repository; each view in its holders' terms; no side |
+
+Cut in chapter 5: the meaning of the name Gibeath-haaraloth; the later tradition that priests served barefoot; Colossians 2:11-12. The BSB's words in verse 4 are not quoted because the verse has dashes.
+
+## The plain notes on Joshua 6 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The shut city and its spring; a procession more like worship than a siege; the shofar as a signal horn; the number seven; the city given before anyone moves | 1-7 | joshua/6.json `cultural`, `literary`, `words` (shofar, sheva); joshua/2.json `historical` | Repository |
+| The archaeology of Jericho in one paragraph: dug several times; most hold that the last walled city fell before any date proposed for Joshua; others argue a later date; erosion; the book page for each view | 1-7 | joshua/6.json `historical`; questions/old-testament/jericho-and-the-conquest.json (`shortAnswer`, `evidence`) | Repository; no side; no overclaim |
+| Hebrews 11:30; Psalm 20:7 | 1-7 | joshua/6.json `christ`; deuteronomy/plain/20.json (1-9, `later`); BSB | Repository; BSB text |
+| The repeated order of march; the enforced silence; the shout as battle cry and as worship; ‘has given’ | 8-16 | joshua/6.json `literary`, `words` (rua) | Repository |
+| Psalm 100:1; 2 Corinthians 10:4-5, the strongholds not cities or people | 8-16 | joshua/6.json `christ`, `words`; BSB | Repository; BSB text |
+| Herem: given over wholly to God, the people killed, the goods destroyed or given to the sanctuary, no plunder; Mesha of Moab (ninth century BC) and the same word; the stated reason is worship (Deuteronomy 20:18; 12:31); the ban shuts out greed and falls on Israel if broken; the line not drawn by birth | 17-21 | joshua/6.json `cultural`, `words` (cherem), `hard`; questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`) | Repository |
+| Origen and the reading of the wars as a picture of the fight against sin, set beside the other readings and not as an answer to what was done | 17-21 | joshua/6.json `hard`; joshua/8.json `cultural` | Repository |
+| Deuteronomy 20:16; Exodus 23:30; Joshua 13:1; Matthew 5:44; Luke 9:55 | 17-21 | questions/old-testament/the-command-to-destroy-the-canaanites.json (`evidence`, `reply`); deuteronomy/plain/7.json (1-5, `later`); BSB | Repository; BSB text |
+| The hard question: Deuteronomy 24:16; the four readings (judgment after long patience; the stock idiom of ancient war; God's right over life, Augustine and Aquinas; accommodation seen through Christ), each with its cost; many hold more than one; no side | 17-21 `hard` | questions/old-testament/the-command-to-destroy-the-canaanites.json (`shortAnswer`, `reply`, `differ`); context/guides/the-violence-of-the-old-testament.json; deuteronomy/plain/7.json (1-5, `hard`) | Repository; handled as the site's live pages handle it; no side |
+| What holds on every reading: one land and one moment, never renewed; not about race (Rahab and Achan); no warrant for violence against any person or people; no nation, state, land or conflict today; the later misuse named as the church's sin; no contempt; Ezekiel 18:23; Genesis 18:25 | 17-21 `hard`, `asks` | the same pages; BSB | Repository; BSB text |
+| Rahab frames the fall; the oath kept by the men who swore it; ‘outside the camp’ and then ‘among the Israelites’; ‘to this day’; the curse as concerning a rebuilt walled city, the site not left empty; verse 27 answers 1:5 | 22-27 | joshua/6.json `historical`, `literary` | Repository |
+| 1 Kings 16:34; Matthew 1:5; Hebrews 11:31 | 22-27 | joshua/6.json `historical`, `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 6: how ancient armies took walled towns and how long a town could hold out; that one of the seven days must have been a Sabbath; that the people on the wall could have mocked Israel (none is in the repository's notes); Jericho as a military outpost (one proposal, left to the deep note); the trumpets of Revelation; the word ‘harem’. The BSB's words in verse 21 are quoted only up to the dash.
+
+## The plain notes on Joshua 7 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ai near Bethel on the road into the hills; its name ‘the ruin’; its site debated and the usual mound empty in the period, the views left to the book page; the reader told before the characters; the melting hearts change sides (2:11; 5:1); the customs of mourning; the prayer echoes the wilderness generation and ends with God's name (Exodus 32:11-12); one man's act counted as Israel's | 1-9 | joshua/7.json `historical`, `cultural`, `literary`; joshua/2.json `words` (masas) | Repository; no side on Ai |
+| 1 Chronicles 2:7; 1 Corinthians 5:6 | 1-9 | joshua/7.json `literary`; BSB | Repository; BSB text |
+| God's abrupt answer; the breach of covenant; Israel itself under the ban (6:18); ‘I will no longer be with you’ set against 1:5 and 5:13-14; the choice probably by lot; the nested groups of tribe, clan, family | 10-18 | joshua/7.json `cultural`, `literary`, `words` (maal, cherem) | Repository |
+| Psalm 32:3, 32:5; Proverbs 28:13 | 10-18 | BSB | BSB text |
+| ‘My son’; ‘give glory to the LORD’ as the form for telling the truth before God; saw, coveted, took, and Genesis 3:6; ‘covet’ as the tenth commandment's word; Shinar as Babylonia; the shekel a weight of eleven or twelve grams, no coins; the plunder allowed at Ai (8:2); stoning as the act of the whole community; akar and Achor | 19-26 | joshua/7.json `historical`, `cultural`, `literary`, `words` (chamad, akar); joshua/8.json `cultural` | Repository |
+| Hosea 2:15; Isaiah 65:10; Galatians 3:13; 1 John 1:9 | 19-26 | joshua/7.json `christ`; BSB | Repository; BSB text |
+| The household's death: Deuteronomy 24:16; the four answers (the family knew; the law of the ban, Deuteronomy 13:15-17; the household as one body; the unclear Hebrew of verse 25); none chosen; the day presented as extraordinary and terrible; Ezekiel 18:20; no rule for today | 19-26 `hard` | joshua/7.json `hard`, `cultural`; numbers/plain/16.json (16-35, `hard`) | Repository; sober; no side forced |
+| The care paragraph (‘A word of care. This story must not be used to say...’ to ‘...lists places to turn.’) | 19-26 `hard` | acts/plain/5.json (1-6, `hard`); numbers/plain/16.json (16-35, `hard`) | Reused whole, word for word |
+
+Cut in chapter 7: Beth-aven as ‘house of wickedness’; the Urim and Thummim as the means of the lot (the note says ‘perhaps’); Acts 5 as a parallel (the note gives it as what ‘some readers notice’; the care paragraph from that note is reused); a sentence saying that Achan's confession came too late (the text does not say what he found with God).
+
+## The plain notes on Joshua 8 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The words of 1:9 repeated; the contrast with the first attack (7:2-4); ambush and pretended retreat as ordinary tactics, the plan given by God; not every city under the full ban, plunder allowed (Deuteronomy 20:14); the light this throws on Achan | 1-13 | joshua/8.json `cultural`, `literary`, `words` (arav); deuteronomy/plain/20.json (10-18) | Repository |
+| Proverbs 21:31 | 1-13 | BSB | BSB text |
+| The battle reverses chapter 7; the raised lance as signal and as an echo of Moses at the battle with Amalek (Exodus 17:11); the king's body and the law of Deuteronomy 21:22-23; the two heaps of stones (7:26; 8:29); Ai's site debated | 14-29 | joshua/8.json `cultural`, `literary`, `words` (kidon); joshua/7.json `historical` | Repository |
+| Deuteronomy 21:23; Galatians 3:13; Exodus 17:11 | 14-29 | joshua/8.json `christ`; joshua/intro.json `christ`; BSB | Repository; BSB text; the line to the cross as Paul draws it |
+| The dead of Ai: the same question as Jericho; the readings named in brief (judgment on Canaan's long sin; the sweeping style of ancient war reports; God's right over life; accommodation read in the light of Christ); many hold more than one; no side; one land and one moment; no warrant for violence against any person or people | 14-29 `hearers`, `hard` | joshua/8.json `cultural`; joshua/plain/6.json (17-21, `hard`); questions/old-testament/the-command-to-destroy-the-canaanites.json (`differ`) | Repository; handled as the site's live pages handle it; no side |
+| Moses' command (Deuteronomy 27:2-8, 27:12-13); Ebal and Gerizim on either side of Shechem; Abraham's first altar there; uncut stones (Exodus 20:25); burnt and peace offerings; writing on stone as public record; women, children and foreigners named (Deuteronomy 31:12) | 30-35 | joshua/8.json `historical`, `cultural`, `literary`, `words` (mizbeach, qahal); leviticus/intro.json `teaching` | Repository |
+| Deuteronomy 27:4; 31:12; Nehemiah 8:3 | 30-35 | joshua/8.json `cultural`; BSB | Repository; BSB text |
+| The placement of the ceremony: twenty miles north of Ai; the Greek translation places it after 9:2; a Dead Sea Scrolls copy appears to place a similar account after the crossing; the three answers; no side | 30-35 `hard` | joshua/8.json `hard` | Repository; no side |
+
+Cut in chapter 8: Adam Zertal's structure on Mount Ebal (left to the deep note, since what it was is debated); the two figures for the ambush in verses 3 and 12 (the repository's notes do not discuss them); a guess that Rahab's family stood in the crowd; John 19:31. Deuteronomy 20:14 and the BSB's words in verses 25 and 34 are quoted only in part or not at all because of their dashes.
+
+## The plain notes on Joshua 9 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Gibeon a few miles northwest of Jerusalem, head of a league of four towns in Israel's path; the disguise aimed at Deuteronomy 20:10-18; their words about God like Rahab's; ‘craftiness’ in a bad or a good sense; ‘We are your servants’ as the language of a weaker party; they did not ask the mouth of the LORD (Numbers 27:21); treaties sworn in a god's name | 1-15 | joshua/9.json `historical`, `cultural`, `words` (berit, shaba, ormah, shaal) | Repository |
+| Deuteronomy 20:10, 20:15; Numbers 27:21; Proverbs 3:5 | 1-15 | joshua/9.json `cultural`, `words`; BSB | Repository; BSB text |
+| The oath kept because sworn by the LORD; wood and water as the heaviest daily tasks, needed at the altar; spared, protected and bound to the house of God; Rahab and Gibeon beside the kings of verse 1 | 16-27 | joshua/9.json `cultural`, `christ`; joshua/11.json `hard` | Repository |
+| 2 Samuel 21:1; Psalm 15:4; Nehemiah 3:7 | 16-27 | joshua/9.json `historical`; BSB | Repository; BSB text |
+| Why the oath bound: the LORD's name (verse 20), confirmed by 2 Samuel 21:1-2; the two weighings of the leaders' mistake; the servitude as the commuting of a death sentence, accepted (verse 25), near the sanctuary, or as the hard world of its time reported without approval; no side; no warrant for forced labor today | 16-27 `hard` | joshua/9.json `hard` | Repository; an oath kept though won by a trick; no side |
+| The care lines (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 16-27 `hard` | 1-corinthians/plain/7.json (17-24, `hard`); exodus/plain/21.json | Reused whole, word for word |
+
+Cut in chapter 9: Pritchard's excavation at el-Jib and what it found (left to the deep note); Gibeon as a Levite town and Solomon's sacrifice there; ‘four hundred years’ between Joshua and Saul (the notes say only ‘generations later’); Ephesians 2 and Hebrews 6 (the note calls the link a pattern and not one the New Testament draws). The BSB's words in verses 1 and 10 are not quoted because of their dashes.
+
+## The plain notes on Joshua 10 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The five towns as real places of the south; the Amarna letters (fourteenth century BC) and a ruler of Jerusalem; the kings march on Gibeon; the oath (9:15) treated as a bond; Gilgal in the valley and Gibeon in the hills; the victory credited to God; Beth-horon as the main road, fought over for centuries | 1-11 | joshua/10.json `historical`, `words` (lacham); joshua/9.json `historical` | Repository |
+| Exodus 14:14; 2 Samuel 21:1 | 1-11 | joshua/9.json `historical`; BSB | Repository; BSB text |
+| The lines as poetry from the Book of Jashar, a lost collection quoted again for David's lament (2 Samuel 1:18); the verb can mean be still, be silent or stop; the day unique because God listened to a man | 12-15 | joshua/10.json `cultural`, `words` (damam) | Repository |
+| Habakkuk 3:11; Judges 5:20 | 12-15 | joshua/10.json `hard`; BSB | Repository; BSB text |
+| The sun: a miracle in the sky (the earth's turning slowed, or a local miracle of light; the day called unique); poetry read as poetry (Judges 5:20); a request that sun and moon stop shining, the storm's darkness prolonged; the Mesopotamian omen texts; all credit the victory to God; no side | 12-15 `hard` | joshua/10.json `hard`, `words` | Repository; the readings as the notes give them; no side |
+| The foot on the neck as a common sign of victory, shown in Egyptian and Assyrian art, behind the footstool picture; Joshua gives his officers the words of chapter 1; the bodies and Deuteronomy 21:22-23, as at Ai; the cave as a memorial ‘to this day’; verse 20 and the survivors | 16-27 | joshua/10.json `cultural`, `hard` | Repository |
+| Psalm 110:1; 1 Corinthians 15:25-26 | 16-27 | joshua/10.json `christ`; BSB | Repository; BSB text; the line as the New Testament draws it |
+| The repeated report; the summary and the words of Deuteronomy 20:16; what the book sets beside it (verse 20; Hebron and Debir in 15:13-15; Jerusalem in 15:63; 13:1); the stock language of ancient war reports (Egypt, Assyria, Mesha of Moab); many scholars, evangelical among them, read the summaries so, others more literally | 28-43 | joshua/10.json `historical`, `cultural`, `words` (sarid), `hard`; questions/old-testament/jericho-and-the-conquest.json (`evidence`); context/guides/the-violence-of-the-old-testament.json | Repository; no side |
+| Deuteronomy 20:16; Joshua 13:1; 15:63; Isaiah 2:4 | 28-43 | deuteronomy/plain/20.json (10-18, `later`); BSB | Repository; BSB text |
+| ‘No survivors’: the historical question and the moral one; the readings in brief with the pointer to chapter 6; ‘No one of these answers satisfies every reader’; no warrant for violence; no nation, state, land or conflict today | 28-43 `hard` | joshua/10.json `hard`; joshua/plain/6.json (17-21, `hard`); questions/old-testament/the-command-to-destroy-the-canaanites.json | Repository; handled as the site's live pages handle it; no side |
+
+Cut in chapter 10: the name Adoni-zedek and Melchizedek; the Maccabees' victory at Beth-horon; that Gibeon lay east and Aijalon west of the battle, and that the road from Gilgal climbs steeply for many miles (the notes give only the valley, the road and the plateau); Origen's reading (named once, in chapter 6). The BSB's words in verses 1, 5, 23 and the first half of verse 40 are not quoted because of their dashes.
+
+## The plain notes on Joshua 11 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hazor north of the Sea of Galilee (Chinnereth), the largest city in Canaan, named in ancient records long before Joshua; chariots as the most advanced weapon, Israel on foot; hamstringing and burning so that Israel would not rely on them (Deuteronomy 17:16; the Psalms and prophets) | 1-9 | joshua/11.json `historical`, `cultural`, `words` (iqqer, merkabah) | Repository |
+| Deuteronomy 17:16; Psalm 33:16-17 | 1-9 | joshua/11.json `cultural`; BSB | Repository; BSB text |
+| Verses 11 and 14 carry the weight of Jericho, with the pointer to the note on chapter 6 and no warrant for violence; the ‘mounds’ as tells; only Hazor burned, the cities left to be lived in (Deuteronomy 6:10-11); three burned cities in the book's own account; Hazor's destruction by fire, usually dated to the thirteenth century BC, connected with Israel by some of its excavators, with Egyptians, rival Canaanites or a revolt by others, an earlier layer for the early date; verse 15 as praise of Joshua's obedience | 10-15 | joshua/11.json `historical`, `cultural`; questions/old-testament/jericho-and-the-conquest.json (`evidence`, `argument`) | Repository; no side; no overclaim |
+| Deuteronomy 6:10; Joshua 24:13 | 10-15 | questions/old-testament/jericho-and-the-conquest.json (`evidence`); BSB | Repository; BSB text |
+| The long war and Caleb's ages (about seven years); Gibeon shows peace was possible; the Anakim and the scouts' fear; Gath and Goliath; ‘the entire land’ beside 13:1, the two ways readers relate them; ‘rest’ | 16-23 | joshua/11.json `historical`, `cultural`, `words` (anaqi), `christ`; joshua/12.json `hard`; joshua/14.json `historical` | Repository; no side |
+| Numbers 13:33; Deuteronomy 9:2; Hebrews 4:8-9 | 16-23 | joshua/11.json `christ`; hebrews/plain/4.json; BSB | Repository; BSB text |
+| The hardening: Pharaoh (Exodus 9:12; 8:15); God's rule over the heart, or God confirming a stubbornness already there; the kings responsible; the way of peace open; no side; not to be said of anyone today | 16-23 `hard` | joshua/11.json `hard`; exodus/intro.json `teaching`; bible/doctrines/sovereignty.json | Repository; no side |
+
+Cut in chapter 11: the place names of the northern alliance; the Mari texts and the Amarna letters by name; the two kings named Jabin (Joshua 11 and Judges 4), left to the deep note and to the notes on Judges; Matthew 11:28 (used on the book page).
+
+## The plain notes on Joshua 12 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The list closes the first half; Sihon and Og defeated under Moses (Numbers 21; Deuteronomy 2 and 3) and remembered in worship; named by Rahab and the Gibeonites; the Arnon, the Jabbok and Hermon; ‘inheritance’ looks ahead | 1-6 | joshua/12.json `historical`, `words` (yerushah); joshua/2.json; joshua/9.json | Repository |
+| Psalm 136:19-20; the pointer to the notes on Numbers 21 and Deuteronomy 2 to 3 | 1-6 | joshua/12.json `historical`; BSB | Repository; BSB text |
+| Canaan as a patchwork of city-states, a ‘king’ the ruler of one walled town; conquest lists in the ancient world (the pharaohs' temple walls); the repeated ‘one’ as a count and a kind of worship; Megiddo and Tirzah; only three cities named as burned | 7-24 | joshua/12.json `historical`, `cultural`, `words` (echad, melek); joshua/plain/11.json | Repository |
+| Colossians 2:15; 1 Peter 1:4 | 7-24 | joshua/12.json `christ`; BSB | Repository; BSB text |
+| Defeated kings and cities still held (15:63; 16:10; 17:11-12; Judges 1:27): the three answers; 13:1; no side | 7-24 `hard` | joshua/12.json `hard` | Repository; no side |
+
+Cut in chapter 12: Thutmose III at Megiddo and the name Armageddon; Dor and Aphek; the differences in the Greek translation of the list; Og as one of the Rephaim. The BSB's words in verses 7 and 8 are not quoted because of the dash.
+
+## The plain notes on Joshua 13 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| ‘The entire land’ (11:23) beside ‘very much of the land remains’; the regions left, mostly along the coast; the Philistines and their five cities; the Egyptian records of the early twelfth century BC and the peoples of the sea; early and late dates explain the mention differently; Sidon and Gebal (Byblos); land divided before it is held; no map for any border or dispute today | 1-7 | joshua/13.json `historical`, `words` (yarash); joshua/12.json `hard`; questions/old-testament/jericho-and-the-conquest.json (`evidence`) | Repository; no side; no claim about any land today |
+| Judges 1:28; Exodus 23:30; Hebrews 11:13 | 1-7 | questions/old-testament/jericho-and-the-conquest.json; joshua/14.json `christ`; BSB | Repository; BSB text |
+| Dibon and the Mesha monument (ninth century BC), Mesha's claims in the region and the men of Gad; Geshur later a kingdom, David's father-in-law its king; Levi set apart for the tent, living from the offerings and in scattered towns | 8-14 | joshua/13.json `historical`, `cultural` | Repository |
+| Numbers 18:20; Psalm 16:5 | 8-14 | joshua/13.json `christ`; BSB | Repository; BSB text |
+| The clans as the unit that received land; the land the LORD's and not to be sold for good (Leviticus 25:23); Balaam (Numbers 22 to 24; 31:8, 31:16) and the Deir Alla inscription (about the eighth century BC); verses 14 and 33 as one truth from two sides | 15-33 | joshua/13.json `historical`, `cultural`, `words` (nachalah, mishpachah); numbers/intro.json `teaching` | Repository |
+| Leviticus 25:23; 1 Peter 2:9 | 15-33 | joshua/13.json `cultural`, `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 13: Matthew 5:5 and Romans 8:17 (the deep note's links by theme); the names of the five chiefs of Midian. The BSB's words in verses 3, 11, 20 and 30 are not quoted because of their dashes.
+
+## The plain notes on Joshua 14 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Priest, leader and heads of families share out the land; the lot as God's decision, guarding against the strong; the twelve shares with Levi set aside and Joseph counted twice; ‘inherited’ | 1-5 | joshua/14.json `cultural`, `words` (nachal); joshua/13.json `cultural` | Repository |
+| Numbers 26:55; Proverbs 16:33; Psalm 16:6 | 1-5 | joshua/14.json `cultural`; joshua/13.json `christ`; BSB | Repository; BSB text |
+| Caleb and Joshua the two faithful scouts (Numbers 13 and 14); forty-five years; the campaigns about seven years (Deuteronomy 2:14); he asks for the Anakim's hill country; ‘wholly followed’, word for word ‘filled up after’, said also in Numbers 14:24 and Deuteronomy 1:36; the Kenizzite, the two readings; Hebron and Abraham's burial cave, David made king there | 6-15 | joshua/14.json `historical`, `cultural`, `words` (male, koach) | Repository; no side on ‘Kenizzite’ |
+| Numbers 14:24; Joshua 15:14; Hebrews 11:13; 2 Corinthians 1:20 | 6-15 | joshua/14.json `christ`, `words`; BSB | Repository; BSB text |
+
+Cut in chapter 14: that Caleb buried the friends of his youth in the wilderness (not in the text or the notes); the meaning of the name Kiriath-arba; the idiom ‘going out and coming in’.
+
+## The plain notes on Joshua 15 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Judah first and longest; borders drawn by landmarks; ‘border’ more than twenty times; the boundary stone (Deuteronomy 19:14); the mixed country of Judah; the Valley of Hinnom, later child sacrifice, Gehenna in the teaching of Jesus; no guide to any border today | 1-12 | joshua/15.json `historical`, `cultural`, `words` (gevul) | Repository; no claim about any land today |
+| Deuteronomy 19:14; Genesis 49:10 | 1-12 | joshua/15.json `words`, `christ`; BSB | Repository; BSB text |
+| Caleb does what he hoped (14:12); a daughter offered to a champion as honor in that world, no pattern; Othniel the later judge; land in the Negev worthless without springs; Acsah asks and receives; Debir taken again after chapter 10 | 13-19 | joshua/15.json `cultural`, `words` (yarash); joshua/10.json `historical` | Repository |
+| Judges 3:9; Matthew 7:11 | 13-19 | BSB | BSB text |
+| The town list as a register by region; ‘along with their villages’; totals that do not match; the debate over the list's origin (the districts of the later kingdom, or older tribal records updated); Ziklag, En-gedi, Lachish and Azekah later; verse 63 and David's capture of the city; ‘to this day’ | 20-63 | joshua/15.json `historical`, `cultural`, `literary`, `words` (chatser); joshua/intro.json `author` | Repository; no side on the list's origin |
+| Judges 1:21; 2 Samuel 5:7; Micah 5:2 and Matthew 2:6 | 20-63 | joshua/15.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 15: the Brook of Egypt and Wadi el-Arish; the Lachish letters; the Greek translation's extra towns after verse 59; Albrecht Alt by name. The BSB's words in verses 13 and 14 are quoted only in part because of their dashes. ‘Give me a blessing’ stands only inside quoted Scripture.
+
+## The plain notes on Joshua 16 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Joseph's two sons counted as tribes, the younger set first (Genesis 48); the central hills, better watered than Judah; the border along the road of chapter 10; Bethel and Jacob's dream; Ephraim as the leading tribe of the north, its name used by Hosea | 1-4 | joshua/16.json `historical`, `words` (Ephraim), `christ`; genesis/intro.json `teaching` | Repository |
+| Genesis 48:19; Genesis 28:17 | 1-4 | BSB | BSB text |
+| No town list; towns of one tribe inside another's land; Gezer on the road from the coast, its king defeated (10:33) and the city not taken; the Merneptah monument (about 1208 BC) lists Gezer; Gezer in Israel's hands in Solomon's time (1 Kings 9:16); forced labor; a failure in the book's terms and a wrong in itself | 5-10 | joshua/16.json `historical`, `cultural`, `literary`, `words` (mas), `hard` | Repository |
+| Judges 1:29; 1 Kings 12:4 | 5-10 | joshua/16.json `cultural`; BSB | Repository; BSB text |
+| A mercy, a failure or an injustice: the readings; a report and not approval; halfway obedience produced a second wrong | 5-10 `hard` | joshua/16.json `hard` | Repository |
+| The care lines (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 5-10 `hard` | 1-corinthians/plain/7.json (17-24, `hard`) | Reused whole, word for word |
+
+Cut in chapter 16: the Gezer Calendar; Jeroboam's calf at Bethel; Romans 9 and the pattern of the younger son (the deep note's link by theme).
+
+## The plain notes on Joshua 17 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The daughters of Zelophehad and the ruling of Numbers 27, with the condition of Numbers 36; they appeal to God's command; all five named; the Samaria pottery inscriptions (eighth century BC) with the clan names and the districts Hoglah and Noah; the limits of the ruling | 1-6 | joshua/17.json `historical`, `cultural`; numbers/plain/27.json | Repository |
+| Numbers 27:7; Galatians 3:28-29 | 1-6 | joshua/17.json `christ`; BSB | Repository; BSB text |
+| Manasseh's share and the Jezreel Valley; the six strong cities, Megiddo and Taanach over the passes, Beth-shean a center of Egyptian rule; the third admission in a row (15:63; 16:10) | 7-13 | joshua/17.json `historical`, `literary` | Repository |
+| Judges 1:27; Judges 2:2 | 7-13 | questions/old-testament/jericho-and-the-conquest.json (`evidence`); BSB | Repository; BSB text |
+| Joshua an Ephraimite (Numbers 13:8; 19:50); the wooded hills and the work of clearing; iron chariots as chariots fitted with iron, strong on the plain and of little use in the hills; Joshua turns their words back on them | 14-18 | joshua/17.json `cultural`, `literary`, `words` (barzel, bara); BSB | Repository |
+| Judges 1:19; Joshua 19:50 | 14-18 | joshua/17.json `hard`; BSB | Repository; BSB text |
+| Why the tribes could not: a military report; Joshua's ‘you can’ and Judges 2:1-3; the book's frankness; not a rule about anyone's faith today | 14-18 `hard` | joshua/17.json `hard` | Repository; no side |
+
+Cut in chapter 17: Gideon and the clan of Abiezer; Saul's body at Beth-shean; the remark on the Hebrew verb for ‘clear’ (the note warns against building on it); Philippians 4:13.
+
+## The plain notes on Joshua 18 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Tent of Meeting set up at Shiloh in the hills of Ephraim, the place of worship through the time of the judges (Hannah, Samuel); the word for going slack; the survey as a rare scene of mapping, with a written record, such lists common in the ancient world; lots cast before the LORD as worship and as a binding decision; verse 7 on the Levites | 1-10 | joshua/18.json `historical`, `cultural`, `literary`, `words` (raphah, goral, katav) | Repository |
+| Jeremiah 7:12; John 1:14 and the Greek verb for pitching a tent | 1-10 | joshua/18.json `historical`, `christ`; BSB | Repository; BSB text |
+| Benjamin the youngest son and a small tribe between Judah and Joseph, its borders the others' borders; Jericho, Bethel and Gibeon within it; Gibeah, Ramah and Mizpeh later; Paul of this tribe; Jebus on the line, held by neither tribe until David (15:63; Judges 1:21); borders walked by landmarks | 11-28 | joshua/18.json `historical`, `literary`; joshua/15.json `cultural` | Repository |
+| Philippians 3:5; Deuteronomy 33:12 | 11-28 | joshua/18.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 18: the excavations at Khirbet Seilun and their debated destruction layer; the echo of Genesis 1:28 in ‘subdued’ (the deep note says only that it ‘suggests’ one). The BSB's words in verses 24 and 28 are quoted only in part because of their dashes.
+
+## The plain notes on Joshua 19 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Simeon with towns inside Judah and no borders of its own; Jacob's words over Simeon and Levi after Shechem (Genesis 34; 49:5-7); Levi scattered in service, Simeon absorbed; Beersheba | 1-9 | joshua/19.json `historical`, `cultural`; genesis/intro.json `teaching` | Repository |
+| Genesis 49:7; Acts 4:34 | 1-9 | joshua/19.json `cultural`; BSB | Repository; BSB text |
+| The northern tribes and the later Galilee; the fixed pattern of each account; twelve, sixteen, twenty-two and nineteen towns (verses 15, 22, 30, 38); Shunem, Gath-hepher, the northern Bethlehem; Asher among the Canaanites of the coast (Judges 1:31-32) | 10-39 | joshua/19.json `historical`, `cultural`, `literary`; BSB | Repository |
+| Isaiah 9:1-2; Matthew 4:13-14 | 10-39 | joshua/19.json `christ`; BSB | Repository; BSB text; the line as Matthew draws it |
+| Dan beside the Philistines; verse 47 looks ahead to Judges 18 and shows the book was finished later; ‘from Dan to Beersheba’; Joshua's share last and at his own request, a town to rebuild; Caleb opens and Joshua closes the division; the frame with 14:1 | 40-51 | joshua/19.json `historical`, `cultural`, `literary`, `words` (Dan) | Repository |
+| Joshua 24:30; Mark 10:43-45 | 40-51 | joshua/19.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 19: the Tel Dan inscription; Sharuhen and the pharaoh Ahmose; Cabul and Hiram of Tyre; a sentence calling the story of Judges 18 ‘a dark one’ ahead of the notes on Judges. The BSB's opening word of verse 47 (‘Later,’) is left out of the quotation so that it begins without the bracket.
+
+## The plain notes on Joshua 20 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A world with no police; the avenger of blood as the nearest male relative; the danger of feuds and of the innocent killed; murder told from accident and a hearing set before punishment; the city gate and the elders; ‘refuge’ as a place of being taken in; the verb of the commandment used of accidental killing; release at the high priest's death, the reason not given | 1-6 | joshua/20.json `cultural`, `literary`, `words` (miqlat, gaal, shegagah, ratsach); numbers/plain/35.json (16-29) | Repository |
+| No warrant for revenge today (‘The role of the avenger of blood belonged to a world without police or public courts. Nothing here permits any family or any person today to take revenge for a death.’) | 1-6 | numbers/plain/35.json (16-29, `hard`) | Repository; worded as the Numbers note words it |
+| Deuteronomy 19:5; Hebrews 6:18, 6:20; the New Testament does not call Christ a city of refuge | 1-6 | joshua/20.json `cultural`, `christ`; BSB | Repository; BSB text; no line drawn that the New Testament does not draw |
+| Three cities on each side of the river, north, middle and south, within reach of all; Shechem and Hebron old and honored; all six Levite towns; foreigners included (verse 9); no recorded case of their use; later Jewish discussion | 7-9 | joshua/20.json `historical`, `cultural`; joshua/21.json `historical` | Repository |
+| Deuteronomy 19:10; Leviticus 24:22 | 7-9 | BSB | BSB text |
+
+Cut in chapter 20: a reason for the tie to the high priest's death (the notes on Numbers 35 say the text gives none); the Mishnah by name and date; Ramoth-gilead and Ahab; the horns of the altar; the death penalty question (set out in the note on Numbers 35).
+
+## The plain notes on Joshua 21 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The Levites' work (priests, the care of the tent, teaching, Deuteronomy 33:10); towns given out of each tribe's own inheritance (Numbers 35:2); pasturelands as the common ground by the walls; living from tithes and offerings; the priests' towns in the south near the later temple, whether by design or by lot not said | 1-8 | joshua/21.json `historical`, `cultural`, `literary` | Repository |
+| Numbers 35:2; Deuteronomy 33:10 | 1-8 | joshua/21.json `cultural`; BSB | Repository; BSB text |
+| Forty-eight towns in every tribe so that teachers of the law lived near all; Jacob's word over Levi turned to good; the six cities of refuge in the list; Gibeon a town of priests; Anathoth and Jeremiah; Hebron's fields kept by Caleb; the parallel list in 1 Chronicles 6 with differences; scholars differ on the list's date | 9-42 | joshua/21.json `historical`, `cultural` | Repository; no side on the date |
+| Genesis 49:7; 1 Peter 2:9 | 9-42 | joshua/21.json `cultural`, `christ`; BSB | Repository; BSB text |
+| Verses 43-45 as the summit, answering chapter 1; the oath to the fathers; the LORD as subject; ‘all’; God's faithfulness fixed before the warnings | 43-45 | joshua/21.json `literary`, `christ`; joshua/intro.json `themes` | Repository |
+| Joshua 23:14; 1 Kings 8:56; Hebrews 4:8-9; 2 Corinthians 1:20 | 43-45 | joshua/21.json `christ`; hebrews/plain/4.json; BSB | Repository; BSB text |
+| ‘All the land’ beside 13:1 and chapters 15 to 17: the three answers; no side; Israel's enjoyment of the gift tied to its faithfulness; no statement about any border, state or claim to land today | 43-45 `hard` | joshua/21.json `hard` | Repository; no side; no claim about any land today |
+
+Cut in chapter 21: the doubled Gath-rimmon as a copyist's slip; Abiathar at Anathoth; the measured extent of the pasturelands. The first words of 1 Kings 8:56 are left out of the quotation, and the BSB's words in verses 16, 18 and 27 are not quoted because of their dashes.
+
+## The plain notes on Joshua 22 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The promise of chapter 1 kept; the five verbs of verse 5 in the words of Deuteronomy; Shiloh west of the river and the lands beyond a deep valley, nearer other peoples; the spoil shared with those who stayed | 1-9 | joshua/22.json `historical`, `literary`; joshua/plain/1.json | Repository |
+| Deuteronomy 10:12; 1 Samuel 30:24 | 1-9 | BSB | BSB text |
+| The one place of sacrifice (Deuteronomy 12) and why a second altar looked like a rival; Peor (Numbers 25) and Achan (Joshua 7); war assembled before a question was asked; ‘breach of faith’ as Achan's word; the delegation of Phinehas and ten chiefs; the offer of verse 19; Phinehas at Peor | 10-20 | joshua/22.json `historical`, `cultural`, `words` (ma'al, marad), `hard`; numbers/plain/25.json | Repository |
+| Deuteronomy 12:13-14; Proverbs 18:17; Matthew 18:15 | 10-20 | joshua/22.json `cultural`; BSB | Repository; BSB text |
+| The double oath; the fear of being shut out, not far-fetched given the valley; ‘witness’ as an object that testifies; a copy not meant for offerings; the delegation satisfied; the Hebrew of verse 34 gives no plain name and translations supply ‘Witness’ | 21-34 | joshua/22.json `historical`, `cultural`, `literary`, `words` (ed, mizbeach) | Repository |
+| Judges 20:13; James 1:19; Ephesians 2:14 | 21-34 | joshua/22.json `hard`, `christ`; BSB | Repository; BSB text |
+| Were the western tribes wrong: they assembled but did not march; zeal praised, or suspicion warned against (Judges 20); many hold both; a civil war avoided by asking first; no support for force over a disagreement about worship | 21-34 `hard` | joshua/22.json `hard` | Repository; no side |
+
+Cut in chapter 22: Geliloth and its possible link with Gilgal; the word for ‘replica’ and the plan of the tabernacle; Hebrews 10 (the deep note's link by theme). The BSB's words in verses 14 and 30 are not quoted because of their dashes. ‘Joshua blessed them’ (verse 6) is paraphrased so that the word stands only inside quoted Scripture.
+
+## The plain notes on Joshua 23 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A farewell speech like those of Moses, Samuel and David; the LORD named as the one who fought; the charge of chapter 1 handed on (1:7); peoples and their gods still in the land; the steps of verse 7 and what swearing by a god meant; ‘hold fast’ as the verb of Genesis 2:24 | 1-8 | joshua/23.json `historical`, `cultural`, `literary`, `words` (davaq) | Repository |
+| Joshua 1:7; Deuteronomy 10:20; Hebrews 10:23 | 1-8 | joshua/23.json `christ`; BSB | Repository; BSB text |
+| Verse 11 as the center, in the language of Deuteronomy; love as loyalty and more than duty; the one verb for clinging to the LORD and to the nations; the snare as a bird trap; the gift that could be lost | 9-13 | joshua/23.json `cultural`, `literary`, `words` (davaq, pach); deuteronomy/intro.json `teaching` (shema) | Repository |
+| Deuteronomy 7:3-4; Judges 2:3; Ruth 1:16 | 9-13 | joshua/23.json `cultural`, `words`; BSB | Repository; BSB text |
+| The warning against marriage: the reason is worship (Deuteronomy 7); marriage and household gods; Rahab and Ruth in the line of David and of Jesus; some find it tied to Israel's moment; most Christian readers find its lasting point in 1 Corinthians 7:39; the misuse to forbid marriages between peoples and to rank peoples named and rejected | 9-13 `hard` | joshua/23.json `cultural`, `hard`; numbers/plain/12.json; matthew/plain/1.json (1-6) | Repository; a matter of worship and not of birth |
+| ‘The way of all the earth’; not one word ‘fallen’; God's faithfulness cuts both ways; ‘this good land’ three times in verses 13 to 16; the covenant of Sinai and ‘transgress’ as crossing a boundary; not a rule for reading any person's troubles, and no ground for explaining the later sufferings of the Jewish people | 14-16 | joshua/23.json `literary`, `words` (naphal, berit); deuteronomy/intro.json `teaching` (blessings) | Repository; never a charge against the Jewish people |
+| 1 Kings 2:2; 2 Corinthians 1:20; Jeremiah 31:31 | 14-16 | joshua/23.json `literary`, `christ`; joshua/24.json `christ`; BSB | Repository; BSB text |
+
+Cut in chapter 23: a paragraph on believers already married to someone who does not share their faith (1 Corinthians 7:12-14), cut because no existing care paragraph for an unsafe marriage could be set beside it whole in the room left; the likeness of the speech to ancient treaties (said once, in chapter 24).
+
+## The plain notes on Joshua 24 (2026-11-22)
+
+`client/public/bible/notes/joshua/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict and single-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shechem between Ebal and Gerizim; Abraham's first altar; Jacob's field and the buried gods (Genesis 35:4); the earlier reading of the law (8:30-35); the story begins among other gods; God as the subject of the verbs; the comparison with ancient treaties since the 1950s (the Hittite treaties: history, loyalty, witnesses, a written copy), its closeness and bearing on date debated | 1-13 | joshua/24.json `historical`, `cultural`, `literary` | Repository; the comparison in its holders' terms, the debate noted |
+| Deuteronomy 6:10; Acts 7:2; Romans 4:5 | 1-13 | questions/old-testament/jericho-and-the-conquest.json (`evidence`); acts/plain/7.json; BSB | Repository; BSB text |
+| ‘Now, therefore’ rests on verses 2 to 13; ‘serve’ as slave's work, a vassal's loyalty and worship; household gods still kept (verse 14); the choice as irony among the other gods; spoken to God's own covenant people at a renewal; Joshua answers for his own house; the people repeat what God has done | 14-18 | joshua/24.json `cultural`, `literary`, `words` (avad, bachar), `christ` | Repository |
+| Deuteronomy 30:19; Matthew 6:24 | 14-18 | deuteronomy/intro.json `teaching` (blessings); BSB | Repository; BSB text |
+| ‘Choose for yourselves this day’ set in its covenant: spoken to a people already chosen; ‘choose’ often used of God choosing Israel, and the call as an answer to his choice; after what God has done; Joshua slows the people down (verse 19); no tool for pressure on anyone | 14-18 `hard` | joshua/24.json `words` (bachar), `literary`, `hard` | Repository; never turned into pressure on the reader |
+| Verse 19 as a deliberate shock and a counting of the cost; ‘holy’; ‘jealous’ used only of God, a rightful claim; three rounds; the foreign gods and Jacob at Shechem; the stone as the last of the book's memorials; the written record | 19-28 | joshua/24.json `historical`, `cultural`, `literary`, `words` (qanno, even), `hard` | Repository |
+| Exodus 20:3, 20:5; Jeremiah 31:33; Luke 22:20 | 19-28 | joshua/24.json `christ`, `words`; BSB | Repository; BSB text |
+| ‘You are not able’ and ‘He will not forgive’: a deliberate shock; read with verse 20, a settled turning to other gods and not the sins the law's sacrifices covered (Exodus 34:7); sober realism; the need the prophets answered with a new heart; never turned against the Jewish people; 1 John 1:9 | 19-28 `hard` | joshua/24.json `hard`, `christ`; BSB | Repository; BSB text |
+| The care lines (‘If you are afraid that you have fallen away from God...’ to ‘...lists places to turn.’) | 19-28 `hard` | hebrews/plain/3.json (12-15, `hard`); numbers/plain/14.json; deuteronomy/plain/29.json | Reused whole, word for word |
+| ‘The servant of the LORD’ given to Joshua only here; 110 years, Joseph's age; Timnath-serah (19:50); verse 31 and the generation after; Joseph's bones (Genesis 50:25; Exodus 13:19); Eleazar; three graves in the land; Abraham's burial cave | 29-33 | joshua/24.json `historical`, `literary`; joshua/intro.json `story`; genesis/intro.json `teaching` | Repository |
+| Genesis 50:25; Hebrews 11:22; Judges 2:10; Hebrews 4:8-9 | 29-33 | joshua/24.json `christ`; hebrews/plain/4.json; BSB | Repository; BSB text |
+
+Cut in chapter 24: George Mendenhall by name (on the Deuteronomy book page); the excavations at Tell Balata; that 110 years was an ideal life span in Egyptian texts; a new sentence addressed to a reader who fears being beyond forgiveness, replaced by the existing care lines from the Hebrews 3 note, reused whole.
+
+Changed on Joshua's book page after the first browser check (2026-11-22): the map labels for Jericho and Bethel were moved (Jericho above and to the right of its point, Bethel to the left of its point) so that the two names no longer overlap. No words changed.

@@ -31,5 +31,474 @@
     { "ch": 7, "why": "Achan's hidden theft brings defeat on the whole nation. A sober study of sin, corporate responsibility, and confession." },
     { "ch": 21, "why": "The summary of fulfillment: the LORD gave Israel the land and rest, and not one of his good promises failed." },
     { "ch": 24, "why": "The covenant renewal at Shechem, where Joshua calls Israel to choose whom they will serve and declares that he and his house will serve the LORD." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Joshua in a minute",
+        "body": "Joshua is the sixth book of the Bible. It has 24 chapters, and it tells how Israel came into the land God had promised to Abraham.\n\nMoses is dead. Israel is camped east of the Jordan River, and a new leader, Joshua son of Nun, is told to take the people across. The first half of the book tells of the crossing and of the wars that followed. The second half tells how the land was divided among the twelve tribes, and it ends with an old Joshua gathering the people at Shechem to renew their covenant with God.\n\nThe book says in one sentence what it is about: “Not one of all the LORD’s good promises to the house of Israel had failed; everything was fulfilled” (21:45). God keeps his word. He gives a homeless people a home and rest, and he asks for their whole loyalty.\n\nJoshua is also one of the hardest books in the Bible. It tells of cities destroyed at God's command, and no honest reader passes over that. These notes face it plainly, set out the ways Christians have read it, and say what must be said: nothing in this book gives anyone a warrant for violence today. Beside the wars the book tells of a Canaanite woman named Rahab, who is taken in with her whole family and whose name stands in the family line of Jesus."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Joshua follows straight on from Deuteronomy. The five books of Moses end with Moses dying on Mount Nebo, in sight of a land he was not allowed to enter. Joshua opens with the next sentence of the story: “Moses My servant is dead. Now therefore arise, you and all these people, and cross over the Jordan into the land that I am giving to the children of Israel” (1:2).\n\nThe promise is old by this point. God had said to Abraham, “I will give this land to your offspring” (Genesis 12:7). Abraham's family went down to Egypt and became slaves. God brought them out under Moses, made a covenant with them at Mount Sinai, and led them through the wilderness for forty years. The generation that left Egypt refused to enter the land and died in the desert. Their children now stand at the river.\n\nIn the Hebrew Bible, Joshua is the first of the books called the Former Prophets: Joshua, Judges, Samuel and Kings. Together they tell Israel's story in the land, from the crossing of the Jordan to the exile in Babylon. Joshua is the bright beginning of that story. Judges, the next book, shows what happened when a generation grew up ‘who did not know the LORD or the works that He had done for Israel’ (Judges 2:10).\n\nSo Joshua is a hinge. Behind it stand the promise and the law. Ahead of it stands a long history in which Israel's life in the land is measured by what Moses commanded. The book keeps that measure in view from its first chapter: “This Book of the Law must not depart from your mouth” (1:8)."
+      },
+      {
+        "id": "joshua",
+        "h": "Joshua the man, and his name",
+        "body": "Joshua first appears in Exodus, as the young man Moses sends to lead the fight against Amalek (Exodus 17:9). He is Moses' assistant, and when Moses leaves the tent where he met with God, Joshua stays behind in it (Exodus 33:11). He is one of the twelve scouts sent into Canaan, and with Caleb he is one of only two who trust God to give the land (Numbers 14:6-9). Before Moses dies, God tells him to lay his hands on Joshua and appoint him in front of all the people (Numbers 27:18-23).\n\nHis name was changed. He was born Hoshea, and “Moses gave to Hoshea son of Nun the name Joshua” (Numbers 13:16). In Hebrew the name is Yehoshua, and it means that the LORD saves.\n\nWhen the Old Testament was put into Greek, Yehoshua became Iesous. That is also the Greek form of the name Jesus. So in the Greek New Testament Joshua and Jesus are the same word, and an angel gives the reason Mary's son is to bear it: “because He will save His people from their sins” (Matthew 1:21). The New Testament does not build a hidden code on the shared name. It does draw one open comparison, in Hebrews 4, which is set out later on this page.\n\nThe book is modest about its hero. Its first verse calls him Moses' assistant. Only at his death is he given the title Moses bore, ‘the servant of the LORD’ (24:29). And the book says again and again whose victories these were: ‘the LORD, the God of Israel, fought for Israel’ (10:42)."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book does not name its author. Jewish tradition, recorded in the Babylonian Talmud, credits Joshua himself with most of it, with the account of his death added by others. Many Christian scholars have held that it was written by Joshua or by someone close to the events. The book does say that Joshua wrote: “Joshua recorded these things in the Book of the Law of God” (24:26).\n\nSome details point to writing after his lifetime. The phrase ‘to this day’ comes again and again, about the stones at Gilgal, about Rahab's family, about the heap of rocks over Achan. It speaks of things that had already lasted a while. The book also quotes an older collection, the Book of Jashar (10:13), which has not survived.\n\nMost critical scholars follow in some form a proposal made by the German scholar Martin Noth in 1943. He argued that the books from Deuteronomy to Kings form a single history, shaped by writers steeped in the language and thought of Deuteronomy. On this view Joshua drew on older stories, lists and records, and was given its final form late in the time of the kings, around the reign of Josiah in the late seventh century BC, or during the exile in Babylon in the sixth. Others see a smaller editing hand at work on a much older core. On every view the book is closely tied to Deuteronomy.\n\nWhen the events took place is a separate question, and it depends on the date of the exodus. Those who take 1 Kings 6:1 as a plain count of years place the exodus about 1446 BC and the entry into Canaan about 1406 BC. Many others place the entry in the thirteenth century BC. One fixed point comes from Egypt. A victory monument of Pharaoh Merneptah, from about 1208 BC, names a people called Israel already living in Canaan.\n\nChristians who receive Joshua as God's word hold more than one of these views. These notes do not choose among them. They read the book as it presents itself, the story of the generation that entered the land."
+      },
+      {
+        "id": "built",
+        "h": "How Joshua is built",
+        "body": "Joshua has four movements, and a reader can hold them with four words: entering, taking, dividing and serving.\n\nEntering (chapters 1 to 5). God commissions Joshua. Two scouts are hidden in Jericho by Rahab. Israel crosses the Jordan on dry ground, sets up twelve stones, and camps at Gilgal. There the men are circumcised, the Passover is kept, and the manna stops.\n\nTaking (chapters 6 to 12). Jericho falls. Israel is beaten at Ai because of one man's theft, and takes the town once the theft is dealt with. The people of Gibeon win a treaty by a trick. Then come two campaigns, one against the kings of the south and one against the kings of the north, and a list of thirty-one defeated kings.\n\nDividing (chapters 13 to 21). The land is shared out among the tribes by lot. Caleb is given Hebron. The tent of meeting is set up at Shiloh. Six cities of refuge are named, and forty-eight towns are given to the Levites, who have no territory of their own.\n\nServing (chapters 22 to 24). The tribes from east of the Jordan go home, and a quarrel over an altar nearly becomes a war. Joshua, now old, speaks twice to the people. At Shechem they renew the covenant, and the book closes with three burials.\n\nThe long lists of towns and borders in the third movement are the part a new reader is most tempted to skip. For Israel they were title deeds. They said that the promise had come down to particular hills, wells and villages, and to particular families. They are the book's way of saying that God's promises land on the ground.\n\nOne refrain is the book's measure for everything. Things are done ‘as the LORD had commanded Moses’ (11:20)."
+      },
+      {
+        "id": "entering",
+        "h": "Entering: Rahab, the river, and the man with the sword",
+        "body": "Three scenes at the start set the terms for the whole book.\n\nThe first is in Jericho, before a single Israelite has crossed the river. Joshua sends two scouts, and they lodge in the house of a prostitute named Rahab. When the king's men come for them she hides them on her roof and sends the searchers the wrong way. Then she tells the scouts what she believes: “for the LORD your God is God in the heavens above and on the earth below” (2:11). She asks for the lives of her family, and they give their oath. So the first person in Canaan whom the book lets speak at length is a Canaanite woman who trusts Israel's God, and the first promise Israel makes in the land is a promise to spare. Readers have long weighed her lie to the king's men, and the note on chapter 2 sets out how.\n\nThe second is the crossing. The Jordan is in flood. The priests carry the ark of the covenant, the gold-covered chest that was the sign of God's presence, down to the water. When their feet touch its edge the river stops, and Israel walks over ‘on dry ground’ (3:17). It is the Red Sea again, for a generation that had not seen the first crossing. Twelve stones from the riverbed are set up at Gilgal so that children will ask about them. The answer the parents are to give reaches beyond Israel. God did this ‘so that all the peoples of the earth may know that the hand of the LORD is mighty’ (4:24).\n\nThe third is the strangest. Near Jericho Joshua sees a man standing with a drawn sword and asks the natural question: “Are You for us or for our enemies?” The answer is one word: “Neither” (5:13-14). He has come as commander of the LORD's army. Joshua falls on his face and is told to take off his sandals, as Moses was told at the burning bush. Who the commander is has been read in more than one way, and the note on chapter 5 gives the views. What his answer means is not in doubt. Before the first battle the book refuses to let Israel think that God belongs to its side. The question is never whether God is with Israel's cause. It is whether Israel is with God. Two chapters later Israel finds out, when its own army runs from a small town."
+      },
+      {
+        "id": "conquest",
+        "h": "The wars, and ‘devoted to destruction’",
+        "body": "The hardest matter in Joshua has to be stated before it can be discussed. At Jericho the book says, “At the edge of the sword they devoted to destruction everything in the city” (6:21), and it names man and woman, young and old. The same is said of Ai (8:26), of the towns of the south (chapter 10), and of Hazor in the north (11:11). The phrase translates the Hebrew word herem, the ban: a city and its people given over wholly to God, with no plunder kept. It carries out the command of Deuteronomy 7 and 20. Israel did not invent the practice. A king of Moab named Mesha boasted on his monument, around 840 BC, that he had devoted an Israelite town to his own god, and he used the same word.\n\nThis is in the text, and the young are named with the old. A reader who is troubled by it is reading with a conscience the Bible itself formed. Abraham asked God, “Will not the Judge of all the earth do what is right?” (Genesis 18:25), and he was not rebuked for asking.\n\nChristians who receive this book as God's word read these chapters in several ways, as the site's pages on the conquest set out. Each reading has a cost.\n\nSome read them as judgment on named evil after long patience. God told Abraham that his family must wait for generations, ‘for the iniquity of the Amorites is not yet complete’ (Genesis 15:16), and Deuteronomy says the nations are driven out for their wickedness and not for any goodness in Israel (Deuteronomy 9:5). The cost is the children, for whom this reading has no answer that takes the grief away.\n\nSome read the language of total destruction as the stock idiom of ancient reports of war, which kings of Egypt, Assyria and Moab also used of enemies who lived on. They point out that Joshua itself goes on to say that many Canaanites remained. The cost is that this eases the scale and not the substance.\n\nSome ground the command in God's unique right over the life he gives, as Augustine and Thomas Aquinas did. The cost is that it does not show how anyone could know such a command was God's.\n\nSome read these texts as God stooping to the understanding of an ancient people, to be read in the light of Christ. The cost is that the reader must decide which portraits of God to trust, and critics say this weakens the authority of Scripture.\n\nMany hold more than one together. The site takes no side among them, and none of them makes these chapters easy.\n\nSeveral things hold on every reading. The ban was tied to one land and one moment, and it was never renewed. It was not about race. Rahab the Canaanite is taken in with her whole family, and Achan the Israelite, who steals from the ban, falls under it himself. The people of Gibeon make peace and live. The New Testament gives the church no land to take and no people to destroy. When two disciples wanted to call down fire on a village, “Jesus turned and rebuked them” (Luke 9:55).\n\nSo it must be said plainly. No one may use these chapters to justify violence against any person or people. They name peoples who passed away long ago. They say nothing about any nation, state, land or conflict today, and nothing about who should hold any land now. Christians did later quote these chapters over their own wars. That was a misuse of the text, and the church must own it as sin. Nothing here permits contempt for the Canaanites or for anyone. God says, “Do I take any pleasure in the death of the wicked?” (Ezekiel 18:23)."
+      },
+      {
+        "id": "digging",
+        "h": "Archaeology, and how complete the conquest was",
+        "body": "Three cities named in Joshua have been dug, and a reader should know what was found. The site's page on Jericho and the conquest gives the detail.\n\nJericho is the mound called Tell es-Sultan. John Garstang, who dug there in the 1930s, found collapsed walls and dated them to about 1400 BC. Kathleen Kenyon dug again in the 1950s with more careful methods. She dated the fall of the last great walled city to about 1550 BC, before any date proposed for Joshua, and showed that Garstang's walls were far older still. Most archaeologists hold her date. In 1990 Bryant Wood reexamined the pottery and argued for a destruction around 1400 BC, and others disputed his reading at once. The mound is badly eroded, which complicates every account of it.\n\nAi is usually identified with a mound called et-Tell. Excavators found a large city there that was destroyed long before Joshua, and no settlement at all in the period when Israel would have come. Some scholars conclude that the story explains an old ruin. Some look for Ai at another site nearby. Some suggest that the people of Bethel used the old ruin as an outpost. The question is unresolved.\n\nHazor is different. Joshua says it ‘was formerly the head of all these kingdoms’ and that it was the only city on its mound that Israel burned (11:10-13). It was the largest city in Canaan, and excavators found that it was destroyed by a great fire, usually dated to the thirteenth century BC. Some connect the fire with Israel. Others have proposed Egyptians, rival Canaanites or a revolt inside the city.\n\nSo archaeology has not confirmed the conquest, and no one should say that it has. It counts heavily against a picture in which the cities of Canaan were all destroyed within a few years. That is not quite the picture Joshua gives. Beside its sweeping summaries the book says that Israel burned none of the cities on their mounds except Hazor (11:13). God says to an aged Joshua, ‘very much of the land remains to be possessed’ (13:1). Judah ‘could not drive out the Jebusites living in Jerusalem’ (15:63). The book of Judges opens with a list of towns the tribes did not take (Judges 1). And in Joshua's last chapter God says, “So I gave you a land on which you did not toil and cities that you did not build” (24:13).\n\nScholars read all this in several ways. Some hold an entry about 1400 BC and read Jericho with Wood. Some hold an entry in the thirteenth century and point to Hazor. Some read Joshua as history told in the war language of its world, describing in sweeping terms a longer and smaller process. Many archaeologists hold that Israel arose largely from within Canaan and that the stories are later tradition. Christians hold more than one of these views, and these notes do not settle what the evidence has not settled."
+      },
+      {
+        "id": "belonging",
+        "h": "Rahab, Achan and Gibeon: who belongs",
+        "body": "Three stories in the first half of the book stand side by side, and together they say something the battle reports do not.\n\nRahab is a Canaanite, a woman and a prostitute. By every outward measure she stands furthest from Israel. She confesses Israel's God, and she and her whole family are brought out of Jericho alive. “So she has lived among the Israelites to this day” (6:25).\n\nAchan is an Israelite of Judah, the leading tribe. At Jericho he takes a cloak, some silver and a bar of gold from what was devoted to God, and hides them under his tent. Israel loses its next battle, and about thirty-six men die. When the theft is found, Achan is put to death, and the text includes his household (chapter 7). It is a dreadful scene, and the death of his sons and daughters has troubled readers in every age. The note on chapter 7 sets out how they have understood it and forces no answer.\n\nThe people of Gibeon are Canaanites who save themselves by a trick. They dress as travelers from a far country and ask for a treaty. Israel's leaders ‘did not seek the counsel of the LORD’ (9:14), and they swear an oath. Three days later the truth comes out. The oath stands all the same: “We have sworn an oath to them by the LORD, the God of Israel, and now we cannot touch them” (9:19). The next chapter finds Israel marching all night to defend the people who deceived it.\n\nSet together, the three stories show where the line runs in this book. It does not run between one people and another by birth. A Canaanite who turns to the LORD is kept, an Israelite who breaks faith is not spared, and a promise made in God's name is honored even when it was won by a lie."
+      },
+      {
+        "id": "dividing",
+        "h": "A land divided, and rest",
+        "body": "The second half of Joshua is quieter, and it is where the book's own subject comes into view. The land is called an inheritance, a family's share handed down. It is divided by lot, so that the choice lies with God and the strongest tribes cannot seize the best ground.\n\nA few people stand out among the lists. Caleb, eighty-five years old, asks for the hill country he had scouted forty-five years before: “Now therefore give me this hill country that the LORD promised me on that day” (14:12). The five daughters of Zelophehad come to claim the share Moses had promised them, and they receive it (17:3-4). The tribe of Levi receives no territory: ‘The LORD, the God of Israel, is their inheritance’ (13:33).\n\nSix cities of refuge are set apart, spread through the land so that one was within reach of everyone. A person who had killed someone by accident could flee there and be safe from the dead man's family until the case was heard (chapter 20). They were open to ‘all the Israelites and foreigners among them’ (20:9). In a world where a killing was avenged by the victim's relatives, the law set a hearing between the death and the revenge.\n\nThen comes the summary on which the book turns: “Thus the LORD gave Israel all the land He had sworn to give their fathers, and they took possession of it and settled in it. And the LORD gave them rest on every side” (21:43-44).\n\nRest is the word to notice. For a people whose parents had been slaves, and who had themselves grown up in tents in a desert, rest meant a home, a field and an end of war. The book says it was given. It also says, with the same honesty, that land remained untaken and that seven tribes were slow to go and claim their share (18:2-3). Both stand in Joshua at once. The gift was real, and it was not yet complete. Psalm 95, from long after Joshua's day, still speaks of entering God's rest, and the letter to the Hebrews builds on that.\n\nOne more story belongs here. When the eastern tribes go home, they build a great altar by the Jordan. The other tribes take it for a rival place of sacrifice and gather for war. But they send a delegation to ask first, and the answer satisfies them. The altar is a witness, never meant for offerings, so that no later generation can say to the people across the river, ‘You have no share in the LORD’ (22:27). A civil war is avoided because someone asked before striking."
+      },
+      {
+        "id": "farewell",
+        "h": "The farewell, and the covenant at Shechem",
+        "body": "The book ends with two speeches by an old man.\n\nIn the first (chapter 23) Joshua looks back and then ahead. Looking back, he says that ‘not one of the good promises the LORD your God made to you has failed’ (23:14). Looking ahead, he warns. Peoples who serve other gods still live around Israel, and Israel is not to call on those gods or bow to them. The danger he names is worship and not birth. The same Old Testament welcomes Rahab the Canaanite and Ruth the Moabite when they turn to the LORD. And God's faithfulness cuts both ways. As surely as he kept his promises, he will keep his warnings if Israel breaks the covenant (23:15-16).\n\nIn the second (chapter 24) Joshua gathers the tribes at Shechem, where Abraham had built his first altar in the land. He speaks in God's name and tells their story from the beginning. It starts in an unexpected place: ‘Long ago your fathers, including Terah the father of Abraham and Nahor, lived beyond the Euphrates and worshiped other gods’ (24:2). Israel did not begin as a people who knew God. God took Abraham, gave him Isaac, sent Moses, brought the people out and gave them the land. All through the story God is the one who acts, and Israel receives.\n\nOnly then comes the call. “Now, therefore, fear the LORD and serve Him in sincerity and truth” (24:14). The famous sentence follows: ‘choose for yourselves this day whom you will serve’, with Joshua's own answer, ‘As for me and my house, we will serve the LORD’ (24:15).\n\nThat sentence is often lifted out of its place. In its place it is spoken to a people God has already rescued, at the renewing of a covenant God had already made. The gods on offer are named: the old gods from beyond the Euphrates, the gods of Egypt, and the gods of the land. Many scholars have compared the chapter with treaties of the ancient world, in which a great king recounted what he had done for a lesser king and then asked for his loyalty. The kindness comes first. The choice is an answer to it.\n\nJoshua does not make the answer easy. When the people say they will serve the LORD, he replies, “You are not able to serve the LORD, for He is a holy God” (24:19). He wants them to count the cost. They insist, a covenant is made, and a great stone is set up as a witness.\n\nThe book closes with three graves in the promised land: Joshua's, the bones of Joseph carried up from Egypt, and the priest Eleazar's. Its last word on that generation is good: “Israel had served the LORD throughout the days of Joshua and of the elders who outlived him” (24:31). The next book tells what came after."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads Joshua",
+        "body": "The New Testament draws a few lines from Joshua, and it is wise to keep to the lines it draws.\n\nThe first is Rahab. Matthew opens his Gospel with the family line of Jesus, and he names her in it: “Salmon was the father of Boaz by Rahab” (Matthew 1:5). Hebrews places her among the people of faith: “By faith the prostitute Rahab, because she welcomed the spies in peace, did not perish with those who were disobedient” (Hebrews 11:31). James sets her beside Abraham as someone whose faith showed itself in what she did (James 2:25). Hebrews and James both say plainly what she had been. A Canaanite woman from the first city of the conquest is an ancestor of the Messiah.\n\nThe second is Jericho. Hebrews says, “By faith the walls of Jericho fell, after the people had marched around them for seven days” (Hebrews 11:30). What it praises is trust in a strange command. The New Testament never holds up the destruction of the city as something for the church to copy.\n\nThe third is rest. Hebrews reasons from Psalm 95, which comes from long after Israel had settled in Canaan and still speaks of entering God's rest. “For if Joshua had given them rest, God would not have spoken later about another day. There remains, then, a Sabbath rest for the people of God” (Hebrews 4:8-9). The rest Joshua gave was real, and it was not the last. Since Joshua and Jesus are one name in Greek, the first readers would have heard the point at once: Joshua led Israel into the land, and Jesus leads his people into God's own rest. Jesus himself said, “Come to Me, all you who are weary and burdened, and I will give you rest” (Matthew 11:28).\n\nThe fourth is a promise. God said to Joshua, ‘I will never leave you nor forsake you’ (1:5). Hebrews gives those words to every believer (Hebrews 13:5).\n\nStephen, in his speech in Acts, mentions Joshua once, as the leader under whom the tent of God's presence came into the land (Acts 7:45).\n\nAnd the New Testament changes the war. “For our struggle is not against flesh and blood” (Ephesians 6:12). “The weapons of our warfare are not the weapons of the world” (2 Corinthians 10:4). The church is given no enemy peoples and no territory, and its Lord told Peter to put his sword away (Matthew 26:52).\n\nJoshua is Israel's Scripture first, and the book records Israel's own failures beside its victories. Nothing in it, and nothing in the New Testament's use of it, is a reason to blame or look down on the Jewish people."
+      },
+      {
+        "id": "readers",
+        "h": "How to read Joshua",
+        "body": "A few habits will help a new reader.\n\nRead it after Deuteronomy. Joshua carries out what Moses commanded, and its language is Deuteronomy's language.\n\nRead the whole book and not only the battles. The wars fill seven chapters. The sharing out of the land, the cities of refuge, the farewell and the covenant fill more.\n\nKeep the summaries and the admissions together. The book says that Joshua took the whole land, and it says that very much of the land remained. A reader who keeps only the first will misread the book, and so will a reader who keeps only the second.\n\nDo not skip the hard chapters, and do not read them alone. The chapter notes face them one at a time, with the ways Christians have read them. None of those readings makes them painless, and a reader should distrust any account that claims to.\n\nDo not carry the book into the present as a program. It names no nation, people or dispute over land today. No army and no cause may claim it.\n\nWatch the outsiders. Rahab, the people of Gibeon, and the foreigners who stand with Israel to hear the law read (8:35) are all inside the story.\n\nAnd notice how the book ends. It does not end with a victory. It ends with a people who have been given everything, standing before a stone, promising to be faithful, and hearing from their own leader that they are not able. Joshua gave Israel a land. The book itself knows that a land was not all they needed."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 2,
+        "v": 4,
+        "ref": "2:1-7",
+        "line": "Rahab hides the scouts and lies to the king's men: how readers have weighed her lie, and what the New Testament praises her for."
+      },
+      {
+        "ch": 3,
+        "v": 16,
+        "ref": "3:14-17",
+        "line": "The Jordan stops flowing: the ways readers have understood the crossing."
+      },
+      {
+        "ch": 5,
+        "v": 14,
+        "ref": "5:13-15",
+        "line": "The commander of the LORD's army and his answer, ‘Neither’: who he is, and what the answer means."
+      },
+      {
+        "ch": 6,
+        "v": 21,
+        "ref": "6:17-21",
+        "line": "Jericho ‘devoted to destruction’: the readings Christians hold, and why no one may use the chapter to justify violence."
+      },
+      {
+        "ch": 7,
+        "v": 25,
+        "ref": "7:22-26",
+        "line": "Achan and his household: how readers have understood the deaths of his sons and daughters."
+      },
+      {
+        "ch": 8,
+        "v": 30,
+        "ref": "8:30-35",
+        "line": "The altar on Mount Ebal: why the ceremony stands here in the book, far north of Ai."
+      },
+      {
+        "ch": 9,
+        "v": 19,
+        "ref": "9:14-21",
+        "line": "The oath to Gibeon: why a promise won by a trick still bound Israel."
+      },
+      {
+        "ch": 10,
+        "v": 13,
+        "ref": "10:12-14",
+        "line": "The sun stands still: the ways the words are read."
+      },
+      {
+        "ch": 10,
+        "v": 40,
+        "ref": "10:28-43",
+        "line": "‘Leaving no survivors’: the sweeping summaries, and the survivors the book itself reports."
+      },
+      {
+        "ch": 11,
+        "v": 20,
+        "ref": "11:16-20",
+        "line": "‘It was of the LORD to harden their hearts’: how readers have understood the hardening."
+      },
+      {
+        "ch": 13,
+        "v": 1,
+        "ref": "13:1-7",
+        "line": "‘Very much of the land remains’: how complete the conquest was."
+      },
+      {
+        "ch": 20,
+        "v": 3,
+        "ref": "20:1-9",
+        "line": "The cities of refuge: a hearing set between a death and revenge."
+      },
+      {
+        "ch": 22,
+        "v": 12,
+        "ref": "22:10-34",
+        "line": "The altar by the Jordan: zeal, suspicion, and a war avoided by asking first."
+      },
+      {
+        "ch": 23,
+        "v": 12,
+        "ref": "23:6-13",
+        "line": "The warning against marriage with the nations: a matter of worship and not of birth."
+      },
+      {
+        "ch": 24,
+        "v": 15,
+        "ref": "24:14-15",
+        "line": "‘Choose for yourselves this day whom you will serve’: a call set inside a covenant God had already made."
+      },
+      {
+        "ch": 24,
+        "v": 19,
+        "ref": "24:19-20",
+        "line": "‘You are not able to serve the LORD’: why Joshua answers the people's promise this way."
+      }
+    ],
+    "words": [
+      {
+        "word": "Joshua",
+        "line": "The Hebrew name Yehoshua, which means that the LORD saves. In Greek it is Iesous, the same word as the name Jesus."
+      },
+      {
+        "word": "Former Prophets",
+        "line": "The Hebrew Bible's name for Joshua, Judges, Samuel and Kings, the history of Israel in its land."
+      },
+      {
+        "word": "Ark of the covenant",
+        "line": "The gold-covered chest that held the tablets of the law and was the sign of God's presence. It goes ahead of Israel into the Jordan (3:3)."
+      },
+      {
+        "word": "Gilgal",
+        "line": "Israel's first camp in the land, near Jericho. The name sounds like the Hebrew verb for rolling: “Today I have rolled away the reproach of Egypt from you” (5:9)."
+      },
+      {
+        "word": "Herem",
+        "line": "The Hebrew word for the ban: a city and its people given over wholly to God, with no plunder kept for the victors (6:17)."
+      },
+      {
+        "word": "Devoted to destruction",
+        "line": "The Berean Standard Bible's words for herem (6:17; 10:40)."
+      },
+      {
+        "word": "Kindness",
+        "line": "The Berean Standard Bible's word in 2:12 for the Hebrew chesed, loyal love that keeps its word. Rahab shows it and asks for it."
+      },
+      {
+        "word": "To this day",
+        "line": "A phrase the book uses of stones, names and families that were still there when it was written (4:9; 6:25; 7:26)."
+      },
+      {
+        "word": "Inheritance",
+        "line": "A family's share of the land, handed down through the generations and received as a gift from God (13:7)."
+      },
+      {
+        "word": "Lot",
+        "line": "The way the land was divided, so that the choice was left with God and not with the strongest tribe (14:2; 18:10)."
+      },
+      {
+        "word": "Rest",
+        "line": "A home in the land and an end of war, promised by Moses and given under Joshua (1:13; 21:44). Hebrews 4 speaks of a greater rest still open."
+      },
+      {
+        "word": "City of refuge",
+        "line": "One of six towns where a person who had killed by accident was safe until the case was heard (20:2-3)."
+      },
+      {
+        "word": "Avenger of blood",
+        "line": "The near relative whose duty it was, in the ancient world, to pursue the one who had killed a member of the family (20:3)."
+      },
+      {
+        "word": "Shiloh",
+        "line": "The town in the hill country where the Tent of Meeting was set up and the last of the land was shared out (18:1)."
+      },
+      {
+        "word": "Covenant",
+        "line": "A binding relationship with promises and duties. At Shechem Israel renews its covenant with the LORD (24:25)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 1550 BC",
+        "what": "The last great walled city at Jericho is destroyed, on the date Kathleen Kenyon gave and most archaeologists hold.",
+        "kind": "world"
+      },
+      {
+        "when": "The 1300s BC",
+        "what": "The Amarna letters, clay tablets found in Egypt: the kings of Canaan's small city-states write to Pharaoh, a ruler of Jerusalem and a king of Hazor among them.",
+        "kind": "world"
+      },
+      {
+        "when": "About 1406 BC, or the 1200s BC",
+        "what": "The two main dates proposed for Israel's entry into Canaan. Which is right depends on the date of the exodus.",
+        "kind": "world"
+      },
+      {
+        "when": "The tenth day of the first month",
+        "what": "Israel crosses the Jordan and camps at Gilgal (4:19). Four days later it keeps the Passover in the land (5:10).",
+        "kind": "story"
+      },
+      {
+        "when": "The first battles",
+        "what": "Jericho falls, Israel is beaten at Ai and then takes it, and Gibeon wins its treaty (chapters 6 to 9).",
+        "kind": "story"
+      },
+      {
+        "when": "‘A long period of time’",
+        "what": "The campaigns in the south and the north (11:18). Caleb's ages in 14:7-10 suggest about seven years.",
+        "kind": "story"
+      },
+      {
+        "when": "After the wars",
+        "what": "The land is divided by lot at Gilgal and Shiloh, and the cities of refuge are named (chapters 13 to 21).",
+        "kind": "story"
+      },
+      {
+        "when": "‘A long time after’",
+        "what": "Joshua, now old, gives his farewell, renews the covenant at Shechem, and dies at the age of 110 (23:1; 24:29).",
+        "kind": "story"
+      },
+      {
+        "when": "The 1200s BC",
+        "what": "Hazor, the largest city in Canaan, is destroyed by a great fire. Who burned it is argued.",
+        "kind": "world"
+      },
+      {
+        "when": "About 1208 BC",
+        "what": "The monument of Pharaoh Merneptah names a people called Israel already living in Canaan.",
+        "kind": "world"
+      },
+      {
+        "when": "About 840 BC",
+        "what": "Mesha, king of Moab, records on his monument that he devoted an Israelite town to his god, using the word Joshua uses for the ban.",
+        "kind": "world"
+      },
+      {
+        "when": "In the days of King Ahab",
+        "what": "Hiel of Bethel rebuilds Jericho at the cost of two sons, as Joshua's oath had said (6:26; 1 Kings 16:34).",
+        "kind": "book"
+      },
+      {
+        "when": "The first century AD",
+        "what": "Matthew names Rahab in the family line of Jesus. Hebrews praises her faith and speaks of a rest that Joshua did not give.",
+        "kind": "book"
+      },
+      {
+        "when": "The 1930s to 1990",
+        "what": "John Garstang, Kathleen Kenyon and Bryant Wood date the fall of Jericho differently. The question is still argued.",
+        "kind": "book"
+      },
+      {
+        "when": "1943",
+        "what": "Martin Noth proposes that the books from Deuteronomy to Kings form one history, with Joshua as its second part.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The land Israel entered",
+        "places": [
+          {
+            "id": "jericho",
+            "name": "Jericho",
+            "lat": 31.871,
+            "lon": 35.444,
+            "refs": [
+              "2:1",
+              "6:1"
+            ],
+            "line": "The first city Israel came to after crossing the river. Rahab lived here, and here the wall fell (chapters 2 and 6).",
+            "label": {
+              "dx": 4,
+              "dy": -12,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "jordan",
+            "name": "The Jordan",
+            "lat": 31.84,
+            "lon": 35.55,
+            "refs": [
+              "3:17",
+              "4:19"
+            ],
+            "line": "Israel crossed ‘on dry ground’ opposite Jericho, with the river in flood (3:15-17).",
+            "label": {
+              "dx": 8,
+              "dy": 10,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "7:2",
+              "8:17"
+            ],
+            "line": "Ai, where Israel was beaten and then won, lay ‘to the east of Bethel’ (7:2). Where Ai itself stood is debated.",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "10:1",
+              "15:63"
+            ],
+            "line": "Its king led the five kings of the south against Gibeon (10:1-5). Judah could not drive out its people (15:63)."
+          },
+          {
+            "id": "hebron",
+            "name": "Hebron",
+            "lat": 31.525,
+            "lon": 35.102,
+            "refs": [
+              "14:13",
+              "20:7"
+            ],
+            "line": "The town given to Caleb (14:13), and one of the six cities of refuge (20:7)."
+          },
+          {
+            "id": "shechem",
+            "name": "Shechem",
+            "lat": 32.213,
+            "lon": 35.282,
+            "refs": [
+              "8:33",
+              "24:1"
+            ],
+            "line": "Between Mount Ebal and Mount Gerizim. Here the law was read (8:30-35) and the covenant renewed (24:1), and here Joseph was buried (24:32)."
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "22:9"
+            ],
+            "line": "The land east of the Jordan to which Reuben, Gad and half of Manasseh went home (22:9). Drawn roughly.",
+            "region": true
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only seven places are drawn, each one placed elsewhere on this site. Gilgal, Ai, Gibeon, Shiloh, Hazor and the towns of the two campaigns are left off, because where they lay is debated or is not placed in the records of this site. No tribal borders are drawn. The map shows the story's places and makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-narrative",
+        "name": "Reading the Stories",
+        "line": "How the Bible tells its stories, and why its heroes are rarely models",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/doctrines/covenant",
+        "name": "Covenant",
+        "line": "Behind the covenant renewed at Shechem (chapter 24)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/sabbath",
+        "name": "Sabbath and Rest",
+        "line": "Behind ‘the LORD gave them rest’ (21:44) and Hebrews 4",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/faith",
+        "name": "Faith and Faithfulness",
+        "line": "Behind Rahab, Caleb and the walls of Jericho",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/judgment",
+        "name": "Judgment and Justice",
+        "line": "Behind the ban, Achan and the cities of refuge",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/covenant-and-treaty",
+        "name": "What Is a Biblical Covenant? The Ancient Treaty Form",
+        "line": "How ancient treaties help a reader hear chapter 24",
+        "icon": "scroll"
+      },
+      {
+        "href": "/questions/old-testament/jericho-and-the-conquest",
+        "name": "Was the conquest of Canaan a legend?",
+        "line": "Jericho, Ai and Hazor: what archaeology has found and what it leaves open",
+        "icon": "people"
+      },
+      {
+        "href": "/questions/old-testament/the-command-to-destroy-the-canaanites",
+        "name": "The command to destroy the Canaanites",
+        "line": "The objection at its strongest, and how Christians read these commands",
+        "icon": "people"
+      },
+      {
+        "href": "/resources/context/the-violence-of-the-old-testament",
+        "name": "Why Is the Old Testament So Violent? An Honest Look",
+        "line": "Behind chapters 6 to 11",
+        "icon": "people"
+      },
+      {
+        "href": "/answers/did-god-command-genocide",
+        "name": "Did God command genocide in the Old Testament?",
+        "line": "An Honest Answer on the hardest question the conquest raises",
+        "icon": "people"
+      }
+    ]
+  }
 }

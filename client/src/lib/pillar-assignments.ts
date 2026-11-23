@@ -1820,5 +1820,55 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
     "pillar": 6,
     "subThemes": [],
     "confidence": "high"
+  },
+  "is-the-church-responsible-for-antisemitism": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "are-catholics-and-protestants-both-christians": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-support-the-death-penalty": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-depression-a-spiritual-failure": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "do-i-have-to-go-to-church-to-be-a-christian": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-the-god-of-the-old-testament-the-god-of-jesus": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-keep-the-sabbath": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "does-god-have-a-plan-for-my-life": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-gambling-a-sin": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "can-i-trust-my-feelings-about-god": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
   }
 };
