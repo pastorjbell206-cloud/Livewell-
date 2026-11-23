@@ -16195,3 +16195,19 @@ Cut in chapter 8: Mark 10:42-45 and the king who serves (the deep note calls it 
 | The sacrificial meal and its seating; about thirty guests; the reserved leg and the priest's right thigh (Leviticus 7:32); the flat roof for sleeping and private talk | 22-27 | 1-samuel/9.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 9: Luke 4:18 and the anointed one who saves (the deep note calls it pattern and vocabulary, not a line the New Testament draws to this chapter); the weight of the shekel in grams (not needed).
+
+## The plain notes on 1 Samuel 10 (2026-11-23)
+
+`client/public/bible/notes/1-samuel/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote and cited-verse checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Anointing as consecration for priests and kings; the kiss as homage; the LORD's inheritance; signs confirming a prophetic word; Rachel's tomb at Zelzah on Benjamin's border and Genesis 35:19, with the two explanations; the Oak of Tabor and Zelzah not placed; the Philistine outpost and the wish for a war leader; the seven days at Gilgal planted for chapter 13 | 1-8 | 1-samuel/10.json `story`, `historical`, `cultural`, `doctrines` (kingdom) | Repository; both explanations of the tomb in their holders' terms |
+| Genesis 35:19; Judges 14:6; 16:13 | 1-8 | 1-samuel/10.json `historical`, `words` (tsalach); BSB | Repository; BSB text |
+| All the signs fulfilled; the band of prophets, ecstatic and shared, with music (2 Kings 3:15); tsalach sudden and powerful; the Spirit equipping leaders as with the judges; the proverb and its second origin in 19:24, its tone and the reply unclear; Saul's silence read as humility or hesitation | 9-16 | 1-samuel/10.json `cultural`, `literary`, `words` (tsalach, naba), `doctrines` (spirit) | Repository; the readings in their holders' terms |
+| 2 Kings 3:15; Numbers 11:25 (quoted only before its dash) | 9-16 | 1-samuel/10.json `cultural` (2 Kings 3:15); BSB | Repository; BSB text |
+| How Saul could fail: equipping without lasting renewal (16:14); a real turning and a real turning away; the uncertain signs in this chapter (silence, hiding), read as humility or fear; a gift no guarantee | 9-16 `hard` | 1-samuel/10.json `hard` | Repository; the answers in their holders' terms |
+| Mizpah as in chapter 7; the rebuke with the gift; the lot from tribe to clan to man (Joshua 7); Saul hidden among the baggage, modesty or fear; the traditional acclamation; the rights of kingship written and laid before the LORD (Deuteronomy 17:18-20), the king a steward bound by a charter; the valiant and the worthless | 17-27 | 1-samuel/10.json `historical`, `cultural`, `literary`, `doctrines` (kingdom) | Repository |
+| Deuteronomy 17:19; Joshua 7:14 | 17-27 | 1-samuel/10.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 10: Luke 4:18, John 1:32-33 and Acts 2:33 and the anointing and the Spirit in Jesus (the deep note calls it a pattern, not a line the New Testament draws to this chapter).
