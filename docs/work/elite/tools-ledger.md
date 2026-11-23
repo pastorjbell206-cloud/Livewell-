@@ -1398,3 +1398,18 @@ Every claim below was written against the site's own notes; "note" is `client/pu
 | church-hurt | The shapes church hurt takes (a pastor who could not be questioned, abuse and then the abuser protected, a congregation closing ranks, people dropped after a divorce or an illness); ordinary disappointment among sinners against spiritual abuse; Scripture puts God against shepherds who harm the flock, not beside them | Find Help church-hurt (answer and happening) |
 | church-hurt | Psalm 23: the promise is not that the sheep will never be in danger but that the shepherd will never leave | plain psalms/23 1-4 hard |
 | church-hurt | Care lines | plain 3-john/1; plain matthew/18 |
+| anger-at-god | The most famous cry of dereliction; the sufferer does not doubt God exists or is his; persistent prayer through silence is faithful; if a man can pray it and still be a man of faith, so can you | note psalms/22 verses 1-2; plain psalms/22 1-11 hard |
+| anger-at-god | After three hours of darkness Jesus cries the opening of Psalm 22, his last words in Mark; every sufferer who asks why has a place within faith, the Son asked it and was not rebuked; he still says my God | note mark/15 summary and verse 34; plain mark/15 33-39 hard |
+| anger-at-god | Job longs to find God and plead his case; both readings agree Scripture takes God's absence seriously and the response is to bring it to God | note job/23 summary and hard |
+| anger-at-god | Job admits he spoke of what he did not understand; the friends rebuked for not speaking accurately of God, as Job has; God answers Job with hard questions out of the whirlwind | note job/42 summary; Job 38:1-2; Job 42:3, 7 |
+| anger-at-god | Bricks without straw, foremen beaten; Moses' complaint recorded without rebuke; God answers with a renewed promise in 6:1; obedience has made things worse | note exodus/5 summary and verses 22-23 |
+| anger-at-god | Naomi lost husband and sons; the book does not rebuke her or hurry her grief, it answers slowly through what happens next; who is standing beside her | note ruth/1 summary; plain ruth/1 19-22 hard and asks |
+| anger-at-god | Habakkuk's complaint about violence and injustice; God's reply in chapter 2 calls for faith and patience rather than a full explanation; the chapter refuses the answer that God does not care or is not in control | note habakkuk/1 summary and hard |
+| anger-at-god | Sleepless, asks whether the Lord has rejected forever; you may pray these questions as your own, prayed by a temple singer; he kept talking through the night; resolves to remember | note psalms/77 summary; plain psalms/77 1-9 asks |
+| anger-at-god | Mary repeats Martha's words; the sisters had said this to each other many times in four days; Jesus answers with his own grief, deeply moved | note john/11 verses 32-33 |
+| anger-at-god | God pictured as bear, lion, archer, jailer; the speaker calls to mind God's character; the chapter lives inside the tension; hope chosen rather than felt | note lamentations/3 hard |
+| anger-at-god | Isaiah 55:8-9 used to shut down questions; context is God's freedom to pardon in verse 7; his word like rain makes him known; humility, not silence | note isaiah/55 hard |
+| anger-at-god | Job's friends sat seven days in silence | Job 2:13 |
+| anger-at-god | Psalm 13: permission to ask how long four times; faith arguing with God because it still believes he is there; pray all six verses, say verse 5 as the church's words; Psalm 88 never turns | plain psalms/13 1-6 hard and asks |
+| anger-at-god | Psalm 22 ends in praise widening to a people not yet born; remembering gives the pain somewhere to go | note psalms/22 summary; plain psalms/22 1-11 asks |
+| anger-at-god | Care lines | plain ruth/1 |
