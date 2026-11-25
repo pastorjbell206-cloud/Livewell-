@@ -19912,3 +19912,18 @@ Cut in chapter 1: the deep note's lines to Isaiah 11:1-2 and 1 Corinthians 1:24,
 | The hard note: 1 Kings 9 and 2 Chronicles 8; the levy of 1 Kings 5; 1 Kings 12; corvée reported, not commended; the law's memory of Egypt; ger; the prophets (Jeremiah 22:13); chapter 10 | 11-18 `hard` | 2-chronicles/2.json `hard`, `words` (ger) | Repository |
 
 Cut in chapter 2: nothing from the deep note's line to Christ was needed. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 3 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; the date (3:2); 3:3 (its phrase); the hall and gold (3:4-5); 3:6; the carved cherubim (3:7) | 1-7 | BSB | BSB text |
+| The inventory; Ornan's floor (1 Chronicles 21-22); tabernacle to house; Moriah only here and in Genesis 22:2, the Chronicler alone making the link; 1 Kings 6:1, 480 years, about 966 BC and the exodus debate; seven years (1 Kings 6:38); the old standard cubit, 52 and 45 centimeters; Parvaim unknown; the three-part plan, Ain Dara and Tell Tayinat; no remains identified | 1-7 | 2-chronicles/3.json `story`, `historical`, `cultural`, `words` (Moriah) | Repository |
+| Genesis 22:2 (its phrase); 1 Kings 6:1 (its first clause) | 1-7 | BSB | BSB text |
+| 3:8 (its first sentence); the gold (3:8); 3:10; the wings (3:11-13); 3:14; the pillars (3:15-16); 3:17 (its last sentence) | 8-17 | BSB | BSB text |
+| Temples as homes and gardens; Eden and the cherubim (Genesis 3:24); gold nine times; keruv; the cherub throne; paroketh and the tabernacle veil (Exodus 26:31-33); the Day of Atonement; Jachin and Boaz, debated; the Chronicler's focus against 1 Kings 6-7; the differences (1 Kings 7:15; the 120 cubits of 3:4 and the BSB's twenty; olivewood doors) and the explanations | 8-17 | 2-chronicles/3.json `cultural`, `literary`, `words` (keruv, paroketh, Jachin), `hard` | Repository |
+| Matthew 27:51 (its first sentence) | 8-17 | BSB | BSB text; the New Testament's own event at the temple veil |
+
+Cut in chapter 3: the deep note's typological lines from the temple to Christ beyond the Gospel's own report of the torn veil. No care line is needed in this chapter.
