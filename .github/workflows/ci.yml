@@ -71,6 +71,9 @@ jobs:
           node scripts/build-bible-atlas-index.mjs --check
           node scripts/build-bible-words-index.mjs --check
           node scripts/build-bible-hard-index.mjs --check
+          node scripts/build-bible-glance-index.mjs --check
+          node scripts/build-bible-keys-index.mjs --check
+          node scripts/build-bible-themes-index.mjs --check
           node scripts/validate-bible.mjs
           node scripts/build-bible-text.mjs --check
           node scripts/build-bible-search.mjs --check
