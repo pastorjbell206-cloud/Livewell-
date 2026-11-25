@@ -19295,3 +19295,18 @@ Cut in chapter 41: the deep note's line from Isaiah 27:1 to Revelation's dragon 
 | The child-loss line | 10-17 | 2-samuel/plain/12.json (15-25), 1-kings/plain/3.json (16-28), 2-kings/plain/4.json (18-37) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 42: the deep note's lines to Christ (Luke 23:34, Hebrews 7:25 and the resurrection as vindication beside Job's prayer and restoration; the note says the New Testament does not call Job a prophecy of Christ); the Greek postscript identifying Job with Jobab of Genesis 36:33 (later speculation, not needed).
+
+## The plain notes on Job 38 (2026-11-25)
+
+`client/public/bible/notes/job/plain/38.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The awaited moment; 31:35; the friends and Elihu speaking for God; the covenant name for the first time since the prologue; the courtroom turned inside out and girding the loins; the world as a building and the sea behind doors; etsah; searah overwhelming and personal | 1-11 | job/38.json `story`, `cultural`, `historical`, `words` (searah, etsah, yasad) | Repository |
+| 2 Kings 2:11 | 1-11 | job/38.json `words` (searah); BSB | Repository; BSB text |
+| The hard note: the critics' reading of raw power; not hostile; the shared premise corrected; 42:7; reasons not unknowable in principle; Job did not know them, God did, meeting God enough; the test never mentioned; no theory, a God who comes; no one to use it to silence a sufferer | 1-11 | job/38.json `hard`, `story` | Repository; each reading in its holders' terms |
+| The order through the world; dawn as seal and shaken cloth; verse 26 and places no human goes; the world larger than human interests; the irony of verse 21 | 12-30 | job/38.json `literary`, `cultural` | Repository |
+| Kimah, kesil, the Bear uncertain, mazzaroth debated; hunger first; the raven unclean (Leviticus 11:15) and fed; questions not to humiliate | 31-41 | job/38.json `historical`, `cultural`, `words` (kimah); the notes on Job 38:41 and the raven | Repository |
+| Amos 5:8 (in part: the verse holds a dash); Psalm 147:9 | 31-41 | job/38.json `words` (kimah: Amos 5:8); the notes setting Psalm 147:9 beside Job 38:41; BSB | Repository; BSB text |
+
+Cut in chapter 38: the deep note's lines to Christ (John 1:3, Colossians 1:16-17, Luke 12:24 and the stilling of the storm; the New Testament does not quote Job 38); the BSB's word ‘journeyed’ in verse 16 is not quoted.
