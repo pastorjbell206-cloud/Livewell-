@@ -20677,3 +20677,26 @@ Cut from the book page: the introduction's lines to Christ beyond what the New T
 | Genesis 41:38; Daniel 5:28 | 17-21 `later` | BSB | BSB text |
 
 Cut in chapter 1: the deep note's lines to Christ that the New Testament does not draw (Jesus under Rome and the faithful-servant pattern; 1 Corinthians 1:24 set beside the chapter). A line that Daniel later ate no meat only in mourning (10:3), drawn as an inference about his whole life, was cut before commit. No care line is needed in this chapter.
+
+## The plain notes on Daniel 2 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1-13 (quotations inside the BSB's speech marks only) | 1-13 | BSB | BSB text |
+| About 603 BC and the training years, two explanations; omen collections and dream books; the demand outside the system; the suspicion reasonable; Aramaic from 2:4 | 1-13 | daniel/2.json `historical`, `cultural` | Repository |
+| Genesis 41:8; Daniel 4:9 | 1-13 `later` | BSB | BSB text |
+| The hard note: the king's threat not approved; ancient royal power; Daniel's plea for the wise men (2:24) | 1-13 `hard` | daniel/2.json `cultural`; BSB | Repository; BSB text |
+| 2:14-23 | 14-23 | BSB | BSB text |
+| Discretion; prayer with friends; the God of heaven; raz; the thesis of the book in the prayer | 14-23 | daniel/2.json `cultural`, `words` (raz) | Repository |
+| Genesis 41:16; Psalm 139:12 (first typed inexactly, caught by the quotation check and corrected) | 14-23 `later` | BSB | BSB text |
+| 2:24-35 | 24-35 | BSB | BSB text |
+| Credit refused (2:30); the descending metals; the stone without hands | 24-35 | daniel/2.json `literary`, `words` (even) | Repository |
+| Isaiah 28:16; Psalm 118:22; Luke 20:18, with many interpreters hearing an echo of the stone | 24-35 `later` | daniel/2.json `words`, `christ`; BSB | BSB text; stated as interpreters hear it |
+| 2:36-49 | 36-49 | BSB | BSB text |
+| Only the gold named; malkhu; the royal confession pattern; the homage recorded without comment | 36-49 | daniel/2.json `literary`, `words` (malkhu) | Repository |
+| Daniel 7:13; Mark 1:15; Revelation 11:15 | 36-49 `later` | daniel/2.json `christ`; BSB | BSB text |
+| The hard note: the four kingdoms in the traditional, critical and futurist readings; 5:31, 6:28 and 8:20; no side, no present-day nation | 36-49 `hard` | daniel/2.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 2: the deep note's lines that the New Testament does not draw (the stone as Jesus' parables of small beginnings). No care line is needed in this chapter.
