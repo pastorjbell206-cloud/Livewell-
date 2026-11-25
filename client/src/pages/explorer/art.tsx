@@ -860,6 +860,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <Shape d="M50,26c-9,-3 -14,3 -12,11c7,1 12,-3 12,-11ZM48,42c9,-5 16,0 15,8c-8,2 -14,-1 -15,-8Z" tone="g" off={0.6} />
     </>
   ),
+  /* Matthew: a hill for the sermon, and a gold star over it. */
+  "book-matthew": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M8,84C28,84 34,48 52,48C70,48 76,84 92,84Z" tone="g" off={1} />
+      <path className="pl-f" d="M30,76H74M38,66H66" />
+      <path className="pl-m" d="M52,10l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+      <path className="pl-l" d="M52,10l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

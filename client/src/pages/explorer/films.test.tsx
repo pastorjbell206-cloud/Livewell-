@@ -1718,6 +1718,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-exodus",
     "book-proverbs",
     "book-isaiah",
+    "book-matthew",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2173,6 +2174,36 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(captions(f)).not.toMatch(/\bBC\b|\b[5-8]\d\d\b/);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
       /battle|ruin|burn|dead|blood|chains/i
+    );
+  });
+
+  it("Matthew carries the book page's caution at both levels: an argument among Jews, no verdict on the Jewish people", () => {
+    const f = filmFile("book-matthew");
+    const intro = JSON.parse(
+      fs.readFileSync(
+        path.join(PUBLIC, "bible/notes/matthew/intro.json"),
+        "utf8"
+      )
+    ) as { reading: string };
+    expect(intro.reading).toContain(
+      "belong to an argument among Jews about Israel's Scriptures"
+    );
+    const fr = f.frames.find(x => x.id === "nations")!;
+    expect(fr.older).toContain(
+      "belong to an argument among Jews about Israel's Scriptures, and are no verdict on the Jewish people"
+    );
+    expect(fr.younger).toContain(
+      "Jesus is a Jew, and so are all his first friends."
+    );
+    expect(fr.younger).toContain(
+      "never a reason to think badly of Jewish people"
+    );
+    expect(captions(f)).not.toMatch(
+      /the Jews (killed|rejected|hated|wanted)|Jews (killed|murdered|crucified)|His blood be on us/i
+    );
+    expect(f.care).toBe(filmFile("the-king").care);
+    expect(f.frames.map(fr2 => fr2.still).join(" ")).not.toMatch(
+      /\bcross\b|blood/i
     );
   });
 });

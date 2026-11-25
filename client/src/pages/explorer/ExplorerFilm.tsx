@@ -328,6 +328,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Isaiah in seven moving pictures: what it is, its three parts, the Holy One of Israel, trust or ruin, judgment and a remnant, the king and the Servant, a world made new, and where to start reading.",
     },
+    "book-matthew": {
+      title: "Matthew: God with us: Bible Explorer",
+      description:
+        "The whole Gospel of Matthew in seven moving pictures: what it is, its five great blocks of teaching, promises kept, the kingdom of heaven, who Jesus is, Israel and all nations, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

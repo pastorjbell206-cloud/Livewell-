@@ -1365,6 +1365,116 @@
     }
    ]
   },
+  "book-matthew": {
+   "title": {
+    "file": "book-matthew/title.mp3",
+    "hash": "fbb6460aeb60d1f0f553",
+    "seconds": 2.22,
+    "bytes": 13892
+   },
+   "younger": [
+    {
+     "id": "immanuel",
+     "file": "book-matthew/younger/01-immanuel.mp3",
+     "hash": "2bc7af380952b3033f16",
+     "seconds": 22.95,
+     "bytes": 138308
+    },
+    {
+     "id": "layout",
+     "file": "book-matthew/younger/02-layout.mp3",
+     "hash": "f5c57a3b8a476426720b",
+     "seconds": 23.56,
+     "bytes": 141908
+    },
+    {
+     "id": "fulfill",
+     "file": "book-matthew/younger/03-fulfill.mp3",
+     "hash": "988d1d8310a536200ede",
+     "seconds": 23.69,
+     "bytes": 142628
+    },
+    {
+     "id": "kingdom",
+     "file": "book-matthew/younger/04-kingdom.mp3",
+     "hash": "ec7b1e4320da84e6d44d",
+     "seconds": 24.37,
+     "bytes": 146804
+    },
+    {
+     "id": "who",
+     "file": "book-matthew/younger/05-who.mp3",
+     "hash": "73aa2bb5c849fb66b8c9",
+     "seconds": 24.16,
+     "bytes": 145508
+    },
+    {
+     "id": "nations",
+     "file": "book-matthew/younger/06-nations.mp3",
+     "hash": "fe60a51236552e7d48e9",
+     "seconds": 27.94,
+     "bytes": 168260
+    },
+    {
+     "id": "start",
+     "file": "book-matthew/younger/07-start.mp3",
+     "hash": "79ae084c1907f7dac9e0",
+     "seconds": 24.44,
+     "bytes": 147236
+    }
+   ],
+   "older": [
+    {
+     "id": "immanuel",
+     "file": "book-matthew/older/01-immanuel.mp3",
+     "hash": "c36b74e32dc6c9349ac4",
+     "seconds": 26.34,
+     "bytes": 158612
+    },
+    {
+     "id": "layout",
+     "file": "book-matthew/older/02-layout.mp3",
+     "hash": "3ad4033343f2ed071850",
+     "seconds": 22.5,
+     "bytes": 135572
+    },
+    {
+     "id": "fulfill",
+     "file": "book-matthew/older/03-fulfill.mp3",
+     "hash": "8ad871971044ad81a2f7",
+     "seconds": 23.78,
+     "bytes": 143204
+    },
+    {
+     "id": "kingdom",
+     "file": "book-matthew/older/04-kingdom.mp3",
+     "hash": "ab6c953b64b77daa18e5",
+     "seconds": 21.97,
+     "bytes": 132404
+    },
+    {
+     "id": "who",
+     "file": "book-matthew/older/05-who.mp3",
+     "hash": "b9adcec556dac74c4ee3",
+     "seconds": 24.64,
+     "bytes": 148388
+    },
+    {
+     "id": "nations",
+     "file": "book-matthew/older/06-nations.mp3",
+     "hash": "df18e456a2640bd030b8",
+     "seconds": 27.68,
+     "bytes": 166676
+    },
+    {
+     "id": "start",
+     "file": "book-matthew/older/07-start.mp3",
+     "hash": "5da67ee4ea98c1e9758b",
+     "seconds": 26.03,
+     "bytes": 156740
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

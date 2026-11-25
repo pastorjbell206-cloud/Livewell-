@@ -1449,6 +1449,24 @@
       "book": "isaiah"
     },
     {
+      "slug": "book-matthew",
+      "title": "Matthew: God with us",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The first book of the New Testament: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Matthew as a whole book: the son of David and of Abraham, five great blocks of teaching, fulfillment, the kingdom of heaven, the way of the cross, all nations, and where to begin."
+      },
+      "mark": "book-matthew",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "matthew"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
