@@ -28,7 +28,8 @@ Three scripts, kept outside the repo in `/home/user/vs2/` (`apply.py`, `factdiff
 | Chapter 5: Civil Religion | 4,670 | 4,673 | +0.1% | 2 (0.4) | 0 (0.0) | 117 (25.1) | 94 (20.1) | 27 | PASS |
 | Chapter 6: How Christian Nationalism Quietly Rewrites Doctrine | 5,114 | 5,109 | -0.1% | 1 (0.2) | 0 (0.0) | 111 (21.7) | 84 (16.4) | 21 | PASS |
 | Chapter 7: Constantine's Bargain | 3,975 | 3,964 | -0.3% | 2 (0.5) | 1 (0.3) | 106 (26.7) | 79 (19.9) | 36 | PASS |
-| **All 8** | 32,274 | 32,158 | -0.4% | 17 (0.5) | 1 (0.0) | 962 (29.8) | 666 (20.7) | 264 | |
+| Chapter 8: Germany's Warning | 3,680 | 3,678 | -0.1% | 0 (0.0) | 0 (0.0) | 91 (24.7) | 72 (19.6) | 18 | PASS |
+| **All 9** | 35,954 | 35,836 | -0.3% | 17 (0.5) | 1 (0.0) | 1053 (29.3) | 738 (20.6) | 282 | |
 
 ## Introduction: Not Persecuted—Seduced (`sec01.xhtml`)
 
@@ -220,3 +221,27 @@ Five pairs:
    After: What it had was the Holy Spirit. What it had was a community of believers whose love for one another was so visible, so radical, and so countercultural that the watching world could not explain it. What it had was a message so powerful that it turned the Roman Empire upside down, not through political maneuvering but through proclamation, service, and the willingness to suffer.
 
 Left alone, and why. The chapter is careful to be fair to Constantine ("These were not small things. They were real blessings. And anyone who tells you that Constantine simply "ruined" Christianity in one stroke is offering lazy history and bad theology.") and to Christendom ("The claim that Christendom was simply a dark age of religious tyranny is historically illiterate."); both passages are word for word. "And then, almost overnight, the entire calculus changed.", "It was a posture.", "And then Constantine put the cross on his soldiers' shields.", "And the church panicked." and "It is a clarification." are hinges. The paired contrasts ("Rome said power flows from the top down. The cross said power flows from the bottom up.") stay as pairs. The history of Luther, Calvin and the Church of England took one semicolon. Forbidden list: "the legal and cultural landscape" is now "the legal and cultural order". One dash stays, before the translation of In hoc signo vinces.
+
+
+## Chapter 8: Germany's Warning (`sec09.xhtml`)
+
+Words 3,680 to 3,678. Em-dashes in his prose 0 to 0 (0.0 to 0.0 per 1,000 words). Tells 91 to 72 (24.7 to 19.6 per 1,000). Mean sentence 14.4 words to 16.3; sentences of eight words or fewer 35.8% to 28.1%; of five or fewer 15.9% to 11.5%. 18 edits; paragraphs 74 to 67. Paragraphs of fifteen words or fewer 8 to 5; runs of three fragments 1 to 0.
+
+By kind (before to after): not_but 8 to 11, not_just 1 to 1, NotX.Y 14 to 4, isnt_its 1 to 1, triplet 17 to 19, frag3 1 to 0, anaphora 24 to 17, stock 4 to 4, intens 5 to 3, q_answered 0 to 1, colon_reveal 3 to 2, short_close 4 to 4, one_line_para 8 to 5, forbidden 1 to 0.
+
+Fact diff: **PASS**. Fixed blocks (headings, pull quote, block quotes, and the end matter: Key Takeaways, Reflection Questions, Practices, Sources & Notes) identical; 25 quoted strings, 5 Scripture references, 4 years, 11 numbers in digits, 46 number words, proper names by count, and 47 hedge words (after: 47) compared.
+
+Five pairs:
+
+1. Before: And millions of German Christians accepted the offer. Not because they were uniquely evil. Not because they lacked sincere faith. But because they were afraid.
+   After: And millions of German Christians accepted the offer, not because they were uniquely evil, not because they lacked sincere faith, but because they were afraid.
+2. Before: The doctrine was quietly, systematically rewritten. Not all at once. Not through a single dramatic act of apostasy. But gradually, under the pressure of national crisis, through the slow accommodation of theology to political necessity, one compromise at a time. That is how it always happens. Not with a bang but with a thousand small concessions, each one feeling reasonable at the time.
+   After: The doctrine was quietly, systematically rewritten, not all at once, not through a single dramatic act of apostasy, but gradually, under the pressure of national crisis, through the slow accommodation of theology to political necessity, one compromise at a time. That is how it always happens: not with a bang but with a thousand small concessions, each one feeling reasonable at the time.
+3. Before: the church has one Lord. Not two. Not Christ and the Führer. Not the gospel and the national destiny. Not Scripture and the ideology of the state.
+   After: the church has one Lord, not two: not Christ and the Führer, not the gospel and the national destiny, not Scripture and the ideology of the state.
+4. Before: What is dangerous is when "lesser evil" becomes moral anesthesia, when it stops functioning as a sober acknowledgment of fallenness and starts functioning as a blanket excuse for tolerating whatever your preferred side does. When we stop calling evil "evil" because it is our side's evil. When we begin defending behavior we would condemn in our opponents. When we excuse corruption, cruelty, and dishonesty because the person committing them delivers the policy outcomes we want. When we find ourselves constructing elaborate justifications for conduct that, in any other context, we would recognize as disqualifying. At that point, we are not navigating moral complexity.
+   After: What is dangerous is when "lesser evil" becomes moral anesthesia, when it stops functioning as a sober acknowledgment of fallenness and starts functioning as a blanket excuse for tolerating whatever your preferred side does: when we stop calling evil "evil" because it is our side's evil, when we begin defending behavior we would condemn in our opponents, when we excuse corruption, cruelty, and dishonesty because the person committing them delivers the policy outcomes we want, when we find ourselves constructing elaborate justifications for conduct that, in any other context, we would recognize as disqualifying. At that point, we are not working through moral complexity.
+5. Before: And it is appearing now. Not in identical form. Not with identical consequences. But with the same underlying dynamic:
+   After: And it is appearing now, not in identical form, not with identical consequences, but with the same underlying dynamic:
+
+Left alone, and why. This is the chapter where a careless edit could do most harm, so it took the fewest changes of any chapter and none to a sentence that draws or limits the comparison. "No. I am not calling American Christians Nazis. ... That kind of rhetorical escalation is lazy, manipulative, and morally irresponsible, and it deserves to be rejected whenever it appears, from any direction." is word for word; so are "The lesson of Germany is not "you are Nazis." The lesson of Germany is "you are not immune."" and the caution that "History does not repeat itself in photocopy form." The fair statement of the German Christians' fear ("The fear was real. The threats were not imaginary. Moral decline was not a figment of conservative paranoia.") and of the lesser-of-two-evils case ("That reasoning is not wrong in itself.") stay in their own sentences. "One Lord. One Word. One source of ultimate authority." is Barmen's creed and the chapter's hinge. The five "It appeared in ..." sentences were left as five. Forbidden list: "we are not navigating moral complexity" is now "we are not working through moral complexity". "Precisely" went twice.
