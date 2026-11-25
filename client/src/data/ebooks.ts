@@ -161,7 +161,7 @@ export const FREE_EBOOKS: Ebook[] = [
     title: "Raising Believers: Christian Parenting in a Post-Christian World",
     sub: "Christian Parenting and the Costly Work of Forming Faith in a Post-Christian World",
     line: "A pastor and father of five sons on what it actually takes to form faith in children — in the home, the church, and the long obedience of years.",
-    pages: 357,
+    pages: 163,
     cover: "/covers/raising-believers-400.webp",
     pdf: "/ebook/raising-believers/Raising-Believers.pdf",
     epub: "/ebook/raising-believers/Raising-Believers.epub",
