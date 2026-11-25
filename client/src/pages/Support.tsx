@@ -72,8 +72,9 @@ const FREE_WAYS = [
 
 /** The give card: how often, how much, and the one button. */
 export function GiveForm({ state, facts, cancelled = false }: { state: GiveState; facts: GivingFacts; cancelled?: boolean }) {
-  const [frequency, setFrequency] = useState<GiftFrequency>("once");
-  const [amount, setAmount] = useState<number | "other">(25);
+  const [frequency, setFrequency] = useState<GiftFrequency>("monthly");
+  // Monthly first, as the Bible Project asks (James, 2026-11-25: "like Bible Project, but even better"); one time is one tap away.
+  const [amount, setAmount] = useState<number | "other">(10);
   const [other, setOther] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [sending, setSending] = useState(false);
@@ -164,11 +165,11 @@ export function GiveForm({ state, facts, cancelled = false }: { state: GiveState
           How often
         </p>
         <div className="sp-choices sp-choices--two">
-          <button type="button" className="sp-choice" aria-pressed={frequency === "once"} onClick={() => choose("once")}>
-            One time
-          </button>
           <button type="button" className="sp-choice" aria-pressed={frequency === "monthly"} onClick={() => choose("monthly")}>
             Each month
+          </button>
+          <button type="button" className="sp-choice" aria-pressed={frequency === "once"} onClick={() => choose("once")}>
+            One time
           </button>
         </div>
       </div>
