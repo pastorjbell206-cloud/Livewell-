@@ -28,5 +28,380 @@
     { "ch": 2, "why": "Faces the most difficult claim in the book, that the LORD himself acted as an enemy, and records the suffering of children without softening it." },
     { "ch": 3, "why": "The book's center, where a sufferer moves from despair to hope in God's unfailing loving devotion and faithfulness." },
     { "ch": 5, "why": "A communal prayer that ends with an open question, showing how the people of God pray when restoration has not yet come." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Lamentations in a minute",
+        "body": "Lamentations is a short book of five poems. It was written in the shadow of the worst disaster in Israel's history: Babylon's siege and destruction of Jerusalem in 587 or 586 BC. The temple Solomon built was burned. The king of David's line was captured and blinded. Many of the people were carried off to Babylon, and those who stayed lived among the ruins under foreign rule.\n\nThe book does not explain the disaster away, and it does not hurry to comfort. Its voices weep, confess, protest, remember and pray. The first poem opens with a cry of shock: “How lonely lies the city, once so full of people!” (1:1). The city is pictured as a widow with no one to comfort her. The second poem dares to say that the Lord himself has acted like an enemy. The third, at the center of the book, gives the voice of one man who has felt God's hand against him, and who then, in the dark, calls to mind that ‘His mercies never fail’ (3:22). The fourth looks again at the horrors of the siege. The fifth is the whole community praying together.\n\nThe book ends without an answer. Its last words ask God to restore his people, ‘unless You have utterly rejected us and remain angry with us beyond measure’ (5:22). That is part of its gift. Lamentations gives the people of God permission, and words, to grieve before God rather than away from him. It shows that confession and complaint can sit in the same prayer, and that hope, when it comes, is chosen in the dark rather than felt in the light."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "For centuries the prophets had warned Judah. If the people kept breaking the covenant made at Sinai, the curses written in Deuteronomy 28 would fall on them: siege, famine and exile. In Lamentations those curses have fallen. The books of Kings and Jeremiah tell what happened, and 2 Kings 25 and Jeremiah 52 give the record of the siege and the burning. Lamentations tells what it felt like.\n\nIn English Bibles the book comes right after Jeremiah. That order comes from the old Greek translation, which linked the book to Jeremiah. In the Hebrew Bible it stands among the Writings, as one of the five short scrolls, the Megillot, each read at a set time in the Jewish year. Lamentations is read on the fast of the ninth of Av.\n\nWhat comes after Lamentations is the long exile and the slow return. Ezra and Nehemiah tell of the people going home after the Persian king Cyrus took Babylon in 539 BC, and Haggai and Zechariah speak to them as they rebuild. Before that, the prophets of the exile promised a new covenant, a new heart and a restored people. Lamentations stands between the judgment and those promises, in the place where no one yet knows how the story will go on. That is why so many people in their own ruin have found it a true companion. It does not speak from the far side of the trouble."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book names no author. An old tradition credits it to Jeremiah. The Greek translation of the Old Testament, the Septuagint, made by Jewish scholars in the last centuries BC, opens the book with a short preface saying that Jeremiah sat weeping and spoke this lament. The tradition is natural. Jeremiah lived through the siege, he wept over his people, and 2 Chronicles 35:25 says he composed laments, though that verse speaks of a lament for King Josiah, not this book.\n\nMany modern scholars doubt that Jeremiah wrote it. They point out that the Hebrew book is anonymous and placed among the Writings, not beside Jeremiah. Some lines seem to voice hopes Jeremiah opposed, such as watching for a foreign nation to rescue the city (4:17) and calling King Zedekiah ‘the breath of our life’ (4:20). And the five poems differ enough that they may come from more than one poet. Others answer that these differences are not decisive, and that a prophet who saw the siege could voice the feelings of the whole city without agreeing with every one. Nearly everyone agrees that the poems come from someone who knew the siege and its aftermath at close range.\n\nThe vivid detail of chapters 2 and 4 suggests they were written soon after the fall, within a few years. Most scholars date the whole collection between the fall of the city and the return that began after Cyrus's decree in 539 or 538 BC, because the poems show no knowledge of the return or of a rebuilt temple. Chapter 5, which speaks of the ruins already overgrown, may be somewhat later than the others."
+      },
+      {
+        "id": "world",
+        "h": "The fall of Jerusalem",
+        "body": "Nebuchadnezzar II of Babylon had controlled Judah since about 605 BC. When King Jehoiakim rebelled, Babylon besieged Jerusalem, and in 597 BC it carried King Jehoiachin into exile with many leaders and craftsmen. Nebuchadnezzar set Zedekiah on the throne. Zedekiah rebelled too, trusting in help from Egypt. The Babylonian army besieged the city for about a year and a half. For a short time an Egyptian army came near and the siege was lifted, but the Egyptians withdrew and the siege went on (Jeremiah 37:5-11). The food ran out, the wall was breached, and Zedekiah was caught as he fled. A month later the temple, the palace and the houses of the city were burned.\n\nThe year is given as 587 or 586 BC. The two dates come from different ways of counting the years of Judah's kings and Babylon's. The site's guide to the kings follows Thiele's 586, and many historians prefer 587. This book page gives both.\n\nLamentations speaks from inside the aftermath. The temple, the place where Israel believed God had chosen to put his name, lies in ruins. The king, the heir of God's promise to David, is blind and in chains. Many survivors are in Babylon, and those left behind scrape together bread and water under foreign officials. Neighbors such as Edom have gloated or joined in the plunder (Psalm 137:7; Obadiah 11-14). After the return, the prophet Zechariah mentions that the people had fasted and mourned in the fifth and seventh months for seventy years (Zechariah 7:5), and many scholars think poems like these were first used in such public mourning."
+      },
+      {
+        "id": "built",
+        "h": "How Lamentations is built",
+        "body": "Lamentations is poetry, and its shape is part of what it says. Chapters 1 to 4 are alphabetic acrostics. Each stanza or verse begins with the next letter of the twenty-two-letter Hebrew alphabet. Chapter 3 triples the pattern: sixty-six verses, three for each letter. Chapter 5 drops the alphabet but keeps twenty-two verses, as if the shape remains when the strength to fill it has gone. The form suggests grief spoken completely, from beginning to end, and also grief given a shape so that it can be borne.\n\nMost lines follow a falling rhythm, a longer half-line followed by a shorter one, which scholars call the qinah, or lament, meter. Chapters 1, 2 and 4 open with the same Hebrew word, ekah, ‘how’. It was the traditional first cry of a funeral song, a cry of shock at the distance between what was and what is. Lamentations takes up the funeral song and sings it over a whole city.\n\nWatch the voices. A narrator describes the city. The city herself, pictured as a woman, Daughter Zion, speaks of her own pain. A single man speaks in chapter 3. The whole community prays in chapter 5. The poems move between confession and protest without settling the tension. They say the city sinned, and they say the suffering is beyond measure, and they leave both in front of God.\n\nThe five poems also have a center. The third poem stands in the middle of the book, and its middle verses, 3:21-24, are the turning point of the whole. Hope is placed at the heart of the book, surrounded on every side by ruin."
+      },
+      {
+        "id": "widow",
+        "h": "A widow with no one to comfort her",
+        "body": "The first poem pictures Jerusalem as a widow. In ancient Israel a widow had often lost her protection, her income and her standing, and the law commands care for her again and again because she was so exposed. The city that was ‘great among the nations has become a widow’ (1:1). She weeps in the night, and ‘Among all her lovers there is no one to comfort her’ (1:2). The lovers are probably the allies Judah had trusted, such as Egypt and the small neighboring kingdoms. None came to help.\n\nThe line that there is no one to comfort her returns five times (1:2, 9, 16, 17 and 21). In Israel, friends and family came to sit with the bereaved. Jerusalem has no one. The roads to Zion mourn, because no pilgrims come to the feasts. Foreigners have entered the sanctuary. The people trade their treasures for food.\n\nThe poem does not deny the cause. ‘Jerusalem has sinned greatly’ (1:8), and the city says of herself, ‘The LORD is righteous, for I have rebelled against His command’ (1:18). But confession does not make the pain smaller. In the same breath she cries to every passer-by, ‘Is this nothing to you, all you who pass by?’ (1:12). And she ends by asking God to deal with her enemies as he has dealt with her.\n\nThe poem's pictures of the city's shame use the language of a woman exposed. They are a prophetic picture of a city and its fall. They give no one leave to shame or to harm a woman."
+      },
+      {
+        "id": "enemy",
+        "h": "The Lord like an enemy",
+        "body": "The second poem turns to the hardest question in the book: who did this? The answer is not only Babylon. Again and again the poem says he. The Lord has swallowed up the dwellings of Jacob, torn down the walls, rejected his altar and abandoned his sanctuary. ‘The Lord is like an enemy; He has swallowed up Israel’ (2:5). And the poet says this was no accident of history: ‘The LORD has done what He planned’ (2:17), the judgment the covenant had warned of in days of old.\n\nThe poet does not pretend that knowing this makes the suffering easier. He breaks down. His eyes fail from weeping, because children and infants faint from hunger in the streets of the city (2:11). He blames the prophets who had promised peace: their visions ‘were empty and deceptive’ (2:14), because they never exposed the people's guilt while there was still time to turn.\n\nThen he tells the city to pray. ‘Pour out your heart like water in the presence of the Lord’ (2:19). The prayer she prays is almost an accusation. She asks God to look at what he has done, and she names the worst thing the famine did, which Deuteronomy 28:53 had warned of: mothers driven to eat their own children. This page names it and does not describe it. The poem does not explain it either. It sets it before God as a question.\n\nThis chapter shows how a people can bring even God's judgment back to God. It does not ask the reader to call such suffering good. The poet weeps over the children. He does not excuse what happened to them."
+      },
+      {
+        "id": "mercies",
+        "h": "The man who has seen affliction",
+        "body": "The third poem narrows to one person. ‘I am the man who has seen affliction under the rod of God’s wrath’ (3:1). He may be a single sufferer, such as Jeremiah, who was mocked and dropped into a muddy cistern (Jeremiah 38:6), or a figure standing for the whole people. Either way, the city's ruin is now felt in one body.\n\nFor twenty verses he says what affliction feels like. God seems to be a bear lying in wait, an archer, a jailer, one who ‘shuts out my prayer’ (3:8). The Bible does not cut these words out. Then comes the turn. “Yet I call this to mind, and therefore I have hope: Because of the loving devotion of the LORD we are not consumed, for His mercies never fail. They are new every morning; great is Your faithfulness!” (3:21-23).\n\nThe hope is not a feeling that arrives. It is a decision to call something to mind. It rests on God's character, his loving devotion (in Hebrew chesed, love that keeps its covenant when the other party has failed), his compassion and his faithfulness, not on any change in the man's circumstances. Nothing outside him has changed between verse 18 and verse 21.\n\nThe chapter goes on to teach that it is good to wait quietly, that the Lord will not cast off forever, and that ‘He does not willingly afflict or grieve the sons of men’ (3:33). It calls the people to examine their ways and return to the LORD. Then it laments again, remembers that God heard him from the pit, and ends by asking God to judge his enemies. Even here, at the book's brightest point, the darkness is not edited out."
+      },
+      {
+        "id": "gold",
+        "h": "Gold grown dim",
+        "body": "The fourth poem goes back to the siege with a sharper eye. “How the gold has become tarnished, the pure gold has become dull!” (4:1). The precious sons of Zion are treated like clay pots. Little children beg for bread, and no one gives them any. Those who ate delicacies sit in ash heaps. The nobles are so thin and dark with hunger that no one recognizes them in the streets.\n\nVerse 10 repeats the famine curse named in chapter 2. It is named here and not quoted. The poem says the city's punishment was greater than Sodom's (4:6), because Sodom fell in an instant and Jerusalem starved slowly.\n\nThen the poem names who failed. The disaster came ‘for the sins of her prophets and the guilt of her priests, who shed the blood of the righteous in her midst’ (4:13). The people watched from their towers for a nation that could not save them. The king they trusted, ‘The LORD’s anointed, the breath of our life’ (4:20), was caught as he fled. The word anointed, mashiach, is the word behind Messiah, and here it names a son of David who failed.\n\nThe poem ends by turning the corner. Edom, which gloated over Jerusalem's fall, will drink the cup of judgment too. And to the city comes a word she has not heard before: ‘O Daughter of Zion, your punishment is complete; He will not prolong your exile’ (4:22). It is the first time in the book that the city is told her suffering has an end."
+      },
+      {
+        "id": "remember",
+        "h": "Remember, O LORD",
+        "body": "The last poem is the whole community praying together. ‘Remember, O LORD, what has happened to us’ (5:1). In the Bible, for God to remember is not to recall a forgotten fact. It is to act in faithfulness toward someone. The people ask God to look at their disgrace and do something about it.\n\nThey list what life is like under foreign rule. Their family land has been handed to strangers. They pay for water and wood. Women have been violated, princes hung up by their hands, young men forced to grind at the mill, boys staggering under loads of wood. The elders have left the city gate, and the music has stopped. Mount Zion lies desolate, and foxes walk over it.\n\nThey confess, “Woe to us, for we have sinned!” (5:16). They also say, ‘Our fathers sinned and are no more, but we bear their punishment’ (5:7). Later prophets take that complaint up and answer it (Jeremiah 31:29-30; Ezekiel 18).\n\nThen they look up. ‘You, O LORD, reign forever; Your throne endures from generation to generation’ (5:19). David's throne has fallen, but God's has not. On that ground they pray: ‘Restore us to Yourself, O LORD, so we may return; renew our days as of old’ (5:21). The Hebrew word shuv is used twice in that line, once for God's restoring and once for the people's return. Turning back to God is itself something God must give.\n\nThe last verse can be read as a fearful condition, a question, or a concession. On every reading, the book ends with a prayer still waiting for an answer. When Lamentations is read aloud in the synagogue, verse 21 is repeated after verse 22, so that the last word the congregation hears is the request to be restored."
+      },
+      {
+        "id": "readers",
+        "h": "How Lamentations has been read",
+        "body": "In Jewish practice Lamentations is read on the ninth of Av, Tisha b'Av, the fast that remembers the destruction of both the first temple and the second. The fasts Zechariah mentions show that the people kept days of mourning for the city from the first years of the exile (Zechariah 7:5; 8:19). The book has been a mourning song for a people ever since.\n\nThe New Testament does not name Lamentations, and these notes draw no line from it to Christ that the New Testament does not draw. Christian worship has long read it in Holy Week, and has heard the city's cry, ‘Is this nothing to you, all you who pass by?’ (1:12), beside the suffering of Christ. That is a reading of the church, not a claim the book itself makes. The speaker in the poem is the city.\n\nThe line about mercies new every morning has been sung in churches for about a century, in a hymn by Thomas Chisholm (1923) that takes its name from it. Read in its place, the line is not a cheerful motto. It is spoken by a man in the dark who has just said his hope has perished.\n\nThis is Judah's own Scripture, grieving Judah's own losses and confessing Judah's own sin. It was written for people who had lost everything, to help them pray. It is not a key for reading anyone else's suffering. It gives no one a warrant to say that any people's suffering, then or now, is a punishment they deserved. And it is never a reason to blame the Jewish people, then or now."
+      },
+      {
+        "id": "how-to-read",
+        "h": "How to read Lamentations",
+        "body": "Read it as poetry and as prayer, not as a treatise. It is meant to be heard slowly, and best of all aloud. Notice who is speaking in each part, and notice that the poems hold confession and protest together without resolving them.\n\nTwo misreadings are common. One lifts 3:22-23 out of the book as a cheerful motto and forgets the darkness around it. The other treats the book's accusations against God as its final verdict. Both lose what the book does. It holds the anguish and the hope side by side, and it places the hope at the center.\n\nThe book is honest about horrors that some readers have lived through or live with now: hunger, the loss of children, violence, a home in ruins. It does not ask anyone to call those things good, or to explain them. It lets them be spoken to God. And it shows grief being shared: the narrator weeps with the city, and in the last poem the people pray as one.\n\nGrief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn.\n\nIf you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn.\n\nIf the book finds you in your own darkness, let it give you words. Then read on into the books that come after it, where God answers the people's prayer: Isaiah 40, which opens with ‘Comfort, comfort My people’ (Isaiah 40:1), and the return told in Ezra and Nehemiah."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 8,
+        "ref": "1:8-10",
+        "line": "The city pictured as a woman exposed and shamed: a picture of a city, never a warrant to shame or harm a woman."
+      },
+      {
+        "ch": 1,
+        "v": 21,
+        "ref": "1:21-22",
+        "line": "Zion confesses her sin and still asks God to deal with her enemies as he has dealt with her."
+      },
+      {
+        "ch": 2,
+        "v": 5,
+        "ref": "2:1-10",
+        "line": "‘The Lord is like an enemy’: the poet says God himself brought the city down."
+      },
+      {
+        "ch": 2,
+        "v": 11,
+        "ref": "2:11-12",
+        "line": "Children and infants faint from hunger in the streets, and the poet weeps."
+      },
+      {
+        "ch": 2,
+        "v": 14,
+        "ref": "2:14",
+        "line": "Prophets whose comforting visions hid the people's guilt."
+      },
+      {
+        "ch": 2,
+        "v": 20,
+        "ref": "2:20-22",
+        "line": "The worst thing the famine did, named as a question to God and not described."
+      },
+      {
+        "ch": 3,
+        "v": 8,
+        "ref": "3:1-20",
+        "line": "A man who feels God as bear, archer and jailer, and who says God shuts out his prayer."
+      },
+      {
+        "ch": 3,
+        "v": 38,
+        "ref": "3:31-39",
+        "line": "Do adversity and good both come from the Most High, if he does not willingly afflict?"
+      },
+      {
+        "ch": 3,
+        "v": 65,
+        "ref": "3:64-66",
+        "line": "A prayer that God would pay back the speaker's enemies."
+      },
+      {
+        "ch": 4,
+        "v": 6,
+        "ref": "4:6",
+        "line": "Jerusalem's punishment called greater than Sodom's."
+      },
+      {
+        "ch": 4,
+        "v": 10,
+        "ref": "4:9-10",
+        "line": "The famine curse of chapter 2 told again, named here and not quoted."
+      },
+      {
+        "ch": 4,
+        "v": 21,
+        "ref": "4:21-22",
+        "line": "Edom will drink the cup, and Zion's punishment is complete."
+      },
+      {
+        "ch": 5,
+        "v": 7,
+        "ref": "5:7",
+        "line": "Children bearing their fathers' punishment, and the prophets' answer."
+      },
+      {
+        "ch": 5,
+        "v": 11,
+        "ref": "5:11-13",
+        "line": "Women violated, princes hung up, young men forced to labor: the cruelties of conquest named."
+      },
+      {
+        "ch": 5,
+        "v": 22,
+        "ref": "5:19-22",
+        "line": "A book that ends on the fear that God has rejected his people."
+      }
+    ],
+    "words": [
+      {
+        "word": "How (ekah)",
+        "line": "The first word of the book and its Hebrew title, the traditional opening cry of a funeral song. It opens chapters 1, 2 and 4."
+      },
+      {
+        "word": "Daughter of Zion",
+        "line": "A name for Jerusalem pictured as a woman, the way the prophets often speak of a city (1:6; 2:1; 4:22)."
+      },
+      {
+        "word": "Comfort",
+        "line": "In Hebrew nacham. The refrain is that the city has no one to comfort her (1:2, 9, 16, 17, 21). Isaiah 40 opens with the same verb."
+      },
+      {
+        "word": "Widow",
+        "line": "In Hebrew almanah, the model of the person left without protection or provision. The city has ‘become a widow’ (1:1)."
+      },
+      {
+        "word": "Transgression",
+        "line": "In Hebrew pesha, a deliberate breach of a covenant, not a mere mistake. The city's transgressions become a yoke on her neck (1:14)."
+      },
+      {
+        "word": "Anger",
+        "line": "In Hebrew aph, nose or face, and so anger, from the picture of flaring nostrils. ‘The day of His anger’ frames chapter 2 (2:1, 22)."
+      },
+      {
+        "word": "Without pity",
+        "line": "In Hebrew chamal means to spare or have pity. The poem says three times that God acted without it (2:2, 17, 21), and that is the heart of the city's anguish."
+      },
+      {
+        "word": "Loving devotion",
+        "line": "In Hebrew chesed, loyal love that keeps a covenant when the other party has failed. Because of it ‘we are not consumed’ (3:22)."
+      },
+      {
+        "word": "Mercies",
+        "line": "In Hebrew rachamim, related to the word for womb: a tender love like a mother's for her child. They ‘are new every morning’ (3:23)."
+      },
+      {
+        "word": "Faithfulness",
+        "line": "In Hebrew emunah, the steadiness of someone who can be leaned on without giving way. ‘Great is Your faithfulness’ (3:23)."
+      },
+      {
+        "word": "Portion",
+        "line": "In Hebrew cheleq, a share of inherited land. Having lost the land, the speaker claims the LORD himself as his portion (3:24)."
+      },
+      {
+        "word": "Anointed",
+        "line": "In Hebrew mashiach, the word behind Messiah. In 4:20 it names King Zedekiah, the son of David who was captured."
+      },
+      {
+        "word": "Cup",
+        "line": "The prophets' picture of God's judgment, given to a nation to drink. Zion has drunk it, and it will pass to Edom (4:21)."
+      },
+      {
+        "word": "Remember",
+        "line": "In Hebrew zakar. When God remembers, he acts in faithfulness toward someone. The last poem opens with it (5:1)."
+      },
+      {
+        "word": "Restore, return",
+        "line": "In Hebrew shuv, used for God bringing his people back and for the people turning back to God. 5:21 uses it twice."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 605 BC",
+        "what": "Nebuchadnezzar II, as crown prince, defeats Egypt at Carchemish and takes control of Judah. He reigns over Babylon until 562 BC.",
+        "kind": "world"
+      },
+      {
+        "when": "597 BC",
+        "what": "After Jehoiakim's rebellion, Jerusalem surrenders. King Jehoiachin and many leaders and craftsmen are taken to Babylon, and Zedekiah is made king.",
+        "kind": "story"
+      },
+      {
+        "when": "588 or 587 BC",
+        "what": "Zedekiah rebels, trusting in Egypt, and the Babylonian army begins a siege of Jerusalem that lasts about a year and a half.",
+        "kind": "story"
+      },
+      {
+        "when": "During the siege",
+        "what": "An Egyptian army comes near and the siege is lifted for a time, but the Egyptians withdraw and the siege resumes (Jeremiah 37:5-11; compare 4:17).",
+        "kind": "world"
+      },
+      {
+        "when": "587 or 586 BC",
+        "what": "The famine is complete, the wall is breached, Zedekiah is caught near Jericho, and the temple, palace and houses are burned (2 Kings 25). The site's guide to the kings gives 586; many historians prefer 587.",
+        "kind": "story"
+      },
+      {
+        "when": "Soon after the fall",
+        "what": "The vivid detail of chapters 2 and 4 suggests they were written within a few years of the fall.",
+        "kind": "book"
+      },
+      {
+        "when": "During the exile",
+        "what": "The people fast and mourn for the city in the fifth and seventh months (Zechariah 7:5). Chapter 5, with the ruins overgrown, may come from these years.",
+        "kind": "book"
+      },
+      {
+        "when": "539 or 538 BC",
+        "what": "Cyrus takes Babylon and allows the exiles to return. The poems show no knowledge of the return, so most scholars date the collection before it.",
+        "kind": "world"
+      },
+      {
+        "when": "Last centuries BC",
+        "what": "Jewish scholars translate the Scriptures into Greek. The Septuagint opens Lamentations with a preface naming Jeremiah as the weeping poet.",
+        "kind": "book"
+      },
+      {
+        "when": "1923",
+        "what": "Thomas Chisholm writes a hymn that takes its name from ‘great is Your faithfulness’ (3:23).",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The places Lamentations names that this map can show",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "1:1",
+              "2:15",
+              "5:18"
+            ],
+            "line": "The city the whole book mourns, ‘once so full of people’ (1:1). Mount Zion, its temple hill, lies desolate (5:18).",
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "sodom",
+            "name": "Sodom",
+            "lat": 31.2,
+            "lon": 35.49,
+            "refs": [
+              "4:6"
+            ],
+            "region": true,
+            "line": "The city overthrown in an instant (4:6). Where it stood is not known. It is drawn roughly at the south end of the Dead Sea, one of the places proposed, as on the Genesis map."
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only Jerusalem and, roughly, Sodom are drawn, each where the site's other maps place them. Edom and the land of Uz (4:21), Egypt and Assyria (5:6) and Babylon are left off. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-poetry",
+        "name": "Reading Hebrew Poetry",
+        "line": "For the acrostics, the lament rhythm and the voices of the five poems",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-prophets",
+        "name": "Reading the Prophets",
+        "line": "The prophets who warned of the fall, and the false ones who promised peace",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "Jehoiakim, Jehoiachin and Zedekiah, and how the date of the fall is worked out",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/empires",
+        "name": "The Empires Around Israel",
+        "line": "Babylon and Nebuchadnezzar, the siege, and the exiles by the rivers of Babylon",
+        "icon": "world"
+      },
+      {
+        "href": "/study/bible/doctrines/prayer",
+        "name": "Prayer and Lament",
+        "line": "How the Bible teaches its people to pray their pain",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/suffering",
+        "name": "Suffering and Evil",
+        "line": "What the whole Bible says, beside the book's refusal to explain",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/exile",
+        "name": "Exile and Restoration",
+        "line": "The exile the book mourns, and the return it does not yet see",
+        "icon": "book"
+      },
+      {
+        "href": "/studyguides/lament",
+        "name": "Lament: A Bible Study on Praying Your Pain",
+        "line": "Five sessions on praying honestly in grief",
+        "icon": "book"
+      },
+      {
+        "href": "/answers/if-god-is-good-why-suffering",
+        "name": "If God is good, why is there so much suffering?",
+        "line": "An honest answer to the question this book prays",
+        "icon": "people"
+      },
+      {
+        "href": "/help/grief",
+        "name": "Someone I love has died",
+        "line": "For anyone grieving as the city grieved: the Find Help page",
+        "icon": "people"
+      },
+      {
+        "href": "/help/suffering",
+        "name": "Why would God let this happen?",
+        "line": "The Find Help page for a reader in the city's place",
+        "icon": "people"
+      }
+    ]
+  }
 }
