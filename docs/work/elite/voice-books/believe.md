@@ -26,7 +26,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Chapter 1: Why Is There Something Rather Than Nothing? | 4,582 | 4,582 | +0.0% | 44 (9.6) | 4 (0.9) | 116 (25.3) | 79 (17.2) | 37 | PASS |
 | Chapter 2: Can We Actually Trust the Bible? | 3,616 | 3,616 | +0.0% | 58 (16.0) | 2 (0.6) | 107 (29.6) | 56 (15.5) | 41 | PASS |
 | Chapter 3: Who Did Jesus Think He Was? | 3,329 | 3,329 | +0.0% | 55 (16.5) | 3 (0.9) | 104 (31.2) | 55 (16.5) | 40 | PASS |
-| **All 4** | 13,219 | 13,219 | +0.0% | 182 (13.8) | 11 (0.8) | 380 (28.7) | 221 (16.7) | 136 | |
+| Chapter 4: Did Jesus Really Rise from the Dead? | 3,577 | 3,577 | +0.0% | 34 (9.5) | 3 (0.8) | 96 (26.8) | 67 (18.7) | 24 | PASS |
+| **All 5** | 16,796 | 16,796 | +0.0% | 216 (12.9) | 14 (0.8) | 476 (28.3) | 288 (17.1) | 160 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -122,3 +123,27 @@ Five pairs:
    After: The third party, the admirers who keep the teaching and discard the teacher, was never in the room.
 
 Left alone, and why. All 40 edits are dashes recast; no word changed. The Lewis quotation and its dashes are untouched. The liar and lunatic options and "the modern escape", legend, are each stated before they are answered, and each is word for word. The verdict lines stay as he wrote them: "They were right about what he was saying. They were wrong only about what to do with it.", "That is not the timescale of legend. It is the timescale of memory.", the four-sentence summation ("The claims are explicit. The mind behind them is sound. ...") and "He did not leave it open to them. He did not intend to.", which answers Lewis. Three dashes stay.
+
+
+## Chapter 4: Did Jesus Really Rise from the Dead? (`sec05.xhtml`)
+
+Words 3,577 to 3,577. Em-dashes in his prose 34 to 3 (9.5 to 0.8 per 1,000 words). Tells 96 to 67 (26.8 to 18.7 per 1,000). Mean sentence 24.2 words to 24.4; sentences of eight words or fewer 26.5% to 26.0%; of five or fewer 17.0% to 17.1%. 24 edits; paragraphs 45 to 45. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
+
+By kind (before to after): emdash 34 to 3, not_but 7 to 7, NotX.Y 3 to 3, isnt_its 6 to 6, triplet 25 to 26, frag3 1 to 1, anaphora 3 to 3, stock 1 to 1, intens 3 to 3, colon_reveal 5 to 6, short_close 8 to 8.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 5 quoted strings, 32 Scripture references, 0 years, 17 numbers in digits, 95 number words, proper names by count, and 38 hedge words (after: 38) compared.
+
+Five pairs:
+
+1. Before: Working only from the minimal facts — the facts accepted by virtually all scholars, Christian and skeptic alike — it asks what best explains the evidence, examining and measuring every alternative in turn, and the verdict it reaches is the one it has always been. The resurrection is the best explanation. Not the only conceivable one, but the only one that does justice to all the evidence at once.
+   After: Working only from the minimal facts, the facts accepted by virtually all scholars, Christian and skeptic alike, it asks what best explains the evidence, examining and measuring every alternative in turn, and the verdict it reaches is the one it has always been. The resurrection is the best explanation: not the only conceivable one, but the only one that does justice to all the evidence at once.
+2. Before: The figure who staggered from that tomb — beaten, pierced, half dead, in desperate need of a physician — would not have convinced anyone that he was the triumphant Lord of life; he would have convinced them he needed a doctor, inspiring pity, not worship.
+   After: The figure who staggered from that tomb, beaten, pierced, half dead, in desperate need of a physician, would not have convinced anyone that he was the triumphant Lord of life; he would have convinced them he needed a doctor, inspiring pity, not worship.
+3. Before: People die for beliefs they hold to be true all the time — Muslims, Hindus, Mormons have done so for inherited convictions — but that proves sincerity, not truth.
+   After: People die for beliefs they hold to be true all the time (Muslims, Hindus, Mormons have done so for inherited convictions), but that proves sincerity, not truth.
+4. Before: Peter, who had denied him three times, has gone back to fishing — back to the old life — and the others are with him; they catch nothing all night, and at dawn a figure on the shore calls out.
+   After: Peter, who had denied him three times, has gone back to fishing, back to the old life, and the others are with him; they catch nothing all night, and at dawn a figure on the shore calls out.
+5. Before: If the resurrection happened, every claim Jesus made about himself is vindicated — the deity, the forgiveness, the authority, the promise of return — and all of it rides on that morning.
+   After: If the resurrection happened, every claim Jesus made about himself is vindicated (the deity, the forgiveness, the authority, the promise of return), and all of it rides on that morning.
+
+Left alone, and why. Each of the five alternative theories (hallucination, swoon, stolen body, legend, wrong tomb) is stated in its own terms before it is answered, and those statements are word for word; so is the caution that dying for a belief "proves sincerity, not truth". The claim itself is stated with its hedge intact and only a colon added ("The resurrection is the best explanation: not the only conceivable one, but the only one that does justice to all the evidence at once."). "Something changed.", "These do.", "Not spiritual. Not metaphorical. Bodily." and "He is risen. He is alive. He is at the door." are verdicts. Both pull quotes and the sentences near them are untouched. Three dashes stay.
