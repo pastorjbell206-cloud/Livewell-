@@ -20863,3 +20863,22 @@ Cut in chapter 8: nothing beyond the policy on lines to Christ. No care line is 
 | The hard note: the Jewish readings (Seder Olam, Rashi), the critical reading (Onias III), the traditional Christian reading (Young, Calvin), the dispensational reading, the symbolic reading; Jerome's refusal; no side, no date calculated | 24-27 `hard` | daniel/9.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 9: the deep note's lines to Christ beyond the stated readings. No care line is needed in this chapter.
+
+## The plain notes on Daniel 10 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 10:1-9 | 1-9 | BSB | BSB text |
+| Chapters 10 to 12 one vision; about 536 BC, the latest date; Daniel in his eighties; the return stalled; Nisan and Passover; the linen and Ezekiel; Hiddekel and Eden | 1-9 | daniel/10.json `story`, `historical`, `cultural` | Repository |
+| Ezra 4:24; Revelation 1:15 | 1-9 `later` | BSB | BSB text |
+| 10:10-14 | 10-14 | BSB | BSB text |
+| Heard on the first day; the prince of Persia and Michael; spiritual beings; Deuteronomy 32:8 and Psalm 82; Michael's name | 10-14 | daniel/10.json `cultural`, `hard` | Repository |
+| Daniel 12:1; Revelation 12:7; Jude 1:9 | 10-14 `later` | BSB | BSB text |
+| The hard note: spiritual beings; how far to press; no side; no present-day nation named as ruled by an evil prince | 10-14 `hard` | daniel/10.json `hard` | Repository; both readings in their holders' terms |
+| 10:15-21 (10:19 in double quotes for its exclamations) | 15-21 | BSB | BSB text |
+| Three touches; twice precious; the slow narrative; Persia and Greece above and below; one unit; Alexander in the 330s; the two datings; the Book of Truth | 15-21 | daniel/10.json `literary`, `historical` | Repository |
+| Judges 6:23; Joshua 1:9 | 15-21 `later` | BSB | BSB text |
+
+Cut in chapter 10: Ephesians 6:12, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
