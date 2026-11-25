@@ -648,6 +648,78 @@ Both books are now edited, so no book is at present held to its original by
 `--verify`; the check stays in the script for the next book that is typeset
 before it is edited.
 
+### Believe, brought into the typesetter (2026-11-25)
+
+Believe: The Rational Case for Christian Faith (id `believe`) was the third
+book. It had no source folder, so before any word was edited it was brought
+in as the other two were: the original PDF and EPUB are kept, untouched, in
+`content/held-downloads/originals/` (`Believe.pdf`, `Believe.epub`), the
+EPUB's fifteen chapter files are in `content/books-src/believe/` byte for
+byte, and the book was built once with no edit and verified against the
+original.
+
+**Its two original files did not carry the same things.** Compared letter by
+letter, the old PDF's text from the introduction to chapter 12 is the old
+EPUB's, with these differences:
+
+- the PDF had a dedication ("For Susanna ... For five sons ... For the
+  atheist I was ...") and four part pages (Part One, Foundation, "Can we
+  know anything at all?"; Part Two, The Person, "Who was Jesus, really?";
+  Part Three, The Hard Questions, "What about the things that make belief
+  hard?"; Part Four, The Verdict, "What will you do with what you now
+  know?"). The EPUB had neither;
+- the EPUB had two appendices (A, Recommended Reading; B, Greek & Hebrew
+  Glossary). The PDF had neither;
+- the PDF's title page said "The Rational Case for Christian Faith", the
+  site's subtitle; the EPUB's said "The Evidence for God, the Reliability
+  of the Bible, and the Case That Jesus Rose from the Dead".
+
+Nothing of his was dropped: the new PDF and EPUB both carry the dedication,
+the four part pages and the two appendices, and both use the site's
+subtitle. The typesetter was changed for this in general terms, not for
+this book alone (each is in the script's header):
+
+- `book.json` may give a `dedication`, set on its own page after the
+  copyright page (and as its own file in the EPUB);
+- `book.json` may name, in `fromOriginalPdf`, section files whose words come
+  from the original PDF (here `part1.xhtml` to `part4.xhtml`). `--verify`
+  leaves them out of the comparison with the original EPUB and checks
+  instead that their words, and the dedication's, are in the original PDF
+  letter for letter;
+- `book.json` may name, in `entries`, sections whose paragraphs under a
+  heading are entries of a list (the reading list and the glossary): each
+  is set with a hanging indent, as a source is in "Sources & Notes" (80
+  entries);
+- a source paragraph marked `class="first"` is read as a paragraph (this
+  EPUB marks the first paragraph under each heading; the typesetter sets
+  its own indents);
+- a label the source writes all in capitals ("APPENDIX A", "INTRODUCTION")
+  is set in capitals and small letters in the contents and bookmarks.
+
+**The proof, before any edit.** `--verify`: the source folder's EPUB-derived
+text is the original EPUB's, 49,624 words against 49,624, no difference; the
+part pages and the dedication are in the original PDF; the new EPUB carries
+exactly the set text (49,667 words, the 43 more being the part pages); the
+new PDF's pages carry the same text character for character (235,684
+against 235,684). Typesetting counted: 82 straight double quotation marks
+and 206 apostrophes set curly, 80 entries, 15 lead-ins, 67 soft hyphens at
+line breaks. The two earlier books were built again with the changed script
+(into a scratch folder; their served files were not touched) and verify as
+before: Blind Spots 244 pages, A Higher Allegiance 207, both identical.
+
+**The files.** The old PDF was 392 small-type pages; the new one is 191
+pages in the same 6 by 9 design as the other two (`client/src/data/ebooks.ts`
+now says 191). The names did not change (`Believe.pdf`, `Believe.epub`), so
+no redirect was needed. The dedication, the contents, a part page, a
+chapter opening, a spread with a block quotation, the reading list and the
+glossary were looked at as images.
+
+**Left as found, for James.** In Appendix A, under "The Problem of Evil and
+Suffering: Best Books", four entries are run together in one paragraph with
+no space between them ("... (Intro)Lewis, C. S. A Grief Observed. ...
+wife's death.Moltmann, Jürgen. ..."). That is how the original EPUB has it,
+and the typesetter does not change his text.
+
 ### The apparatus
 
 - The new title and subtitle are on the cover, half-title, title page,
@@ -700,6 +772,8 @@ Left exactly as written:
 | A Higher Allegiance, before | 495 | 767 KB | 733 KB |
 | A Higher Allegiance, 2026-11-23 | 212 | 1.7 MB | 345 KB |
 | A Higher Allegiance, edited, 2026-11-25 | 207 | 1.7 MB | 353 KB |
+| Believe, before | 392 | 636 KB | 180 KB |
+| Believe, typeset, 2026-11-25 (no word changed) | 191 | 1.4 MB | 300 KB |
 
 The old PDFs were set loosely (A Higher Allegiance at about 115 words a
 page); the new ones at about 270. The new PDFs are larger: they carry the

@@ -89,7 +89,7 @@ export const FREE_EBOOKS: Ebook[] = [
     title: "Believe: The Rational Case for Christian Faith",
     sub: "The Rational Case for Christian Faith",
     line: "Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist.",
-    pages: 392,
+    pages: 191,
     cover: "/covers/believe-400.webp",
     pdf: "/ebook/believe/Believe.pdf",
     epub: "/ebook/believe/Believe.epub",

@@ -1,0 +1,57 @@
+{
+  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/; the title and subtitle come from client/src/data/covers.json (book-names.json holds only renamed books). The sec*.xhtml files are the author's text, taken unchanged from the original EPUB kept in content/held-downloads/originals/: one block to a line. The original PDF and EPUB did not carry the same things: the PDF had a dedication and four part pages the EPUB lacked, and the EPUB had two appendices the PDF lacked. So that nothing of his is lost, the part*.xhtml files and `dedication` are taken, word for word, from the original PDF (`fromOriginalPdf` names them, and --verify checks them against that PDF), and the appendices from the EPUB. `entries` names the two appendices whose paragraphs are entries (a reading list, a glossary), set with a hanging indent. Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs believe --verify`. `copyright` is the notice as the original files printed it, without the PDF's unfilled ISBN line.",
+  "id": "believe",
+  "author": "James Bell",
+  "identifier": "urn:livewell:believe-v2",
+  "language": "en",
+  "date": "2026",
+  "modified": "2026-11-25T00:00:00Z",
+  "copyright": [
+    "Copyright © 2026 by James Bell. All rights reserved.",
+    "Published by LiveWell by James Bell. Unless otherwise noted, Scripture quotations are from the English Standard Version (ESV)."
+  ],
+  "dedication": [
+    "For Susanna, who stayed when the questions were sharper than the answers.",
+    "For five sons, who asked the first questions that made me find my own.",
+    "For the atheist I was, who would have read this and walked outside to think."
+  ],
+  "files": {
+    "pdf": "Believe.pdf",
+    "epub": "Believe.epub"
+  },
+  "original": {
+    "pdf": "Believe.pdf",
+    "epub": "Believe.epub"
+  },
+  "fromOriginalPdf": [
+    "part1.xhtml",
+    "part2.xhtml",
+    "part3.xhtml",
+    "part4.xhtml"
+  ],
+  "entries": [
+    "sec14.xhtml",
+    "sec15.xhtml"
+  ],
+  "sections": [
+    "sec01.xhtml",
+    "part1.xhtml",
+    "sec02.xhtml",
+    "sec03.xhtml",
+    "part2.xhtml",
+    "sec04.xhtml",
+    "sec05.xhtml",
+    "part3.xhtml",
+    "sec06.xhtml",
+    "sec07.xhtml",
+    "sec08.xhtml",
+    "sec09.xhtml",
+    "part4.xhtml",
+    "sec10.xhtml",
+    "sec11.xhtml",
+    "sec12.xhtml",
+    "sec13.xhtml",
+    "sec14.xhtml",
+    "sec15.xhtml"
+  ]
+}
