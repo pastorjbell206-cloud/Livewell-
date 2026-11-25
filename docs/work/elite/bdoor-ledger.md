@@ -17768,3 +17768,18 @@ Cut from the book page: the deep notes' lines to Christ (Jesus weeping over Jeru
 | Deuteronomy 7:9; Deuteronomy 30:4; Daniel 9:4; Genesis 40:21 | 5-11 | nehemiah/1.json `literary`; genesis/plain/40.json (Nehemiah's post as cupbearer); BSB | Repository; BSB text |
 
 Cut in chapter 1: the deep note's lines to Christ (Luke 19:41-44, John 17, Philippians 2:6-8, Matthew 23:37, John 11:52; the note calls them patterns, not predictions); the grief care line (not needed: the passage's grief is for a city, and the hard question is about the calendar).
+
+## The plain notes on Nehemiah 2 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Nisan, March to April, spring 445 BC, about four months after the news; sorrow before the king dangerous; the king's earlier order (Ezra 4:21) and the request to reverse it; the graves of his fathers named before Jerusalem; the silent prayer; the letters as ordinary papers; pardes and paradise | 1-8 | nehemiah/2.json `historical`, `cultural`, `literary`, `words` (pardes) | Repository |
+| Ezra 7:9; Ezra 4:21 | 1-8 | nehemiah/2.json `literary` (the gracious hand used of Ezra); BSB | Repository; BSB text |
+| The escort fitting a royal appointee, governor (5:14); Sanballat in the Elephantine papyri of about 407 BC; Horonite and Beth-horon or Horonaim; Tobiah and the Tobiads; the night ride and the rubble; Kathleen Kenyon's excavations in the 1960s and the collapsed terraces | 9-16 | nehemiah/2.json `historical`, `cultural` | Repository |
+| Ezra 8:22 | 9-16 | ezra/8.json `cultural` (Nehemiah later accepted an escort); BSB | Repository; BSB text |
+| Cherpah, disgrace, God's honor more than theirs; chazaq in verse 18 and chapter 3; Geshem and Qedar and the bowl from Tell el-Maskhuta; the charge of rebellion; no portion, right or claim, cheleq and legal language | 17-20 | nehemiah/2.json `words` (cherpah, chazaq, cheleq), `historical`; nehemiah/intro.json `setting` | Repository |
+| Ezra 4:15 | 17-20 | nehemiah/2.json `historical` (Ezra 4:12-22); BSB | Repository; BSB text |
+
+Cut in chapter 2: the deep note's lines to Christ (Matthew 16:18, Ephesians 2:22, Luke 23:2); the BSB's word for the trip in 2:6, kept out of the prose; Psalm 137 (used in chapter 1).
