@@ -19716,3 +19716,22 @@ Cut in chapter 20: the deep note's thematic line to Colossians 2:15 and Romans 8
 | 2 Chronicles 3:1 (its clauses); Genesis 22:2 (its phrase) | 18-30 | BSB | BSB text |
 
 Cut in chapter 21: the deep note's typological lines to John 10:11 and John 2:19-21, which the New Testament does not draw from this chapter, and Moriah as a figure of a substitute provided by God. No key is offered for reading anyone's suffering.
+
+## The plain notes on 1 Chronicles 22 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 22:1; the stonecutters (22:2); 22:3 (its phrase); the cedar (22:4); 22:5 (its phrase and its last sentence) | 1-5 | BSB | BSB text |
+| The story turned to the temple; David doing all but building; 1 Kings 5 against Chronicles; the second temple completed around 516 or 515 BC; the foreigners conscripted (2 Chronicles 2:17-18); Sidon, Tyre and Hiram; kun | 1-5 | 1-chronicles/22.json `story`, `historical`, `words` (kun) | Repository |
+| 2 Chronicles 2:17 (its first clause); 1 Kings 5:15 | 1-5 | BSB | BSB text |
+| The charge (22:6); 22:8 (its first sentence); 22:9 (its clause); the son and the throne (22:9-10); 22:11; 22:13 (its last two sentences); the treasure and craftsmen (22:14-16); 22:16 (its last sentence) | 6-16 | BSB | BSB text |
+| The charge retelling chapter 17; Shelomoh and shalom; menuchah; the king of rest; the Joshua formula (Deuteronomy 31:7-8; Joshua 1:6-9); Solomon as a new Joshua; the quantities, three thousand metric tons, and the three ways interpreters handle them | 6-16 | 1-chronicles/22.json `cultural`, `literary`, `words` (menuchah, shalom, amats) | Repository |
+| Deuteronomy 31:7 (its words to Joshua); 1 Kings 5:3 (its phrase) | 6-16 | BSB | BSB text |
+| The hard note: the victories from God (18:6, 13); 2 Samuel 7 grounding the refusal in God's will; 1 Kings 5:3's wars; the two reasons as complementary; the Bible recording David's wars and refusing to make him a model in every act | 6-16 `hard` | 2-samuel/plain/7.json; 1-kings/plain/5.json; 2-samuel/plain/8.json; 1-kings/5.json `historical` | Repository |
+| 22:17; 22:18 (its first sentence); 22:19 (its first two sentences) | 17-19 | BSB | BSB text |
+| Darash and Saul (10:14); the ark's road through chapters 13 and 15 | 17-19 | 1-chronicles/10.json, 13.json, 15.json (as published in plain/10, 13, 15) | Repository |
+| Deuteronomy 4:29 | 17-19 | BSB | BSB text |
+
+Cut in chapter 22: the deep note's lines to 1 Peter 2:5, Ephesians 2:21-22, Isaiah 9:6, Hebrews 4 and John 17:4, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
