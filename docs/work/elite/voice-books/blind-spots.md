@@ -29,7 +29,8 @@ His limit for em-dashes is 2 to 3 per 500 words, which is 4 to 6 per 1,000. Head
 | Chapter 6: The Progressive Blind Spot | 3,892 | 3,892 | +0.0% | 68 (17.5) | 12 (3.1) | 117 (30.1) | 62 (15.9) | 39 | PASS |
 | Chapter 7: The Conservative Blind Spot | 4,142 | 4,142 | +0.0% | 62 (15.0) | 10 (2.4) | 115 (27.8) | 64 (15.5) | 38 | PASS |
 | Chapter 8: The Bible Assumes You Will Be Wrong | 4,148 | 4,142 | -0.1% | 44 (10.6) | 12 (2.9) | 102 (24.6) | 66 (15.9) | 29 | PASS |
-| **All 9** | 37,708 | 37,680 | -0.1% | 534 (14.2) | 108 (2.9) | 1146 (30.4) | 689 (18.3) | 371 | |
+| Chapter 9: The Prophetic Voice and Why You Need It | 4,486 | 4,488 | +0.0% | 71 (15.8) | 10 (2.2) | 141 (31.4) | 72 (16.0) | 51 | PASS |
+| **All 10** | 42,194 | 42,168 | -0.1% | 605 (14.3) | 118 (2.8) | 1287 (30.5) | 761 (18.0) | 422 | |
 
 ## Introduction: Every Generation Was Convinced (`sec01.xhtml`)
 
@@ -245,3 +246,27 @@ Five pairs:
    After: The question this chapter leaves is practical, not merely diagnostic. If the Bible assumes you will be wrong, if the scriptural witness builds accountability structures specifically because the community of faith cannot self-correct, what does it look like to take that seriously?
 
 Left alone, and why. This chapter came with the fewest dashes in the book (44) and the fewest tells, so it got the fewest edits. "Nathan does not come to David with an accusation. He comes with a story" is the hinge of its central section; "The parable is not a trick. It is a hermeneutical tool", "It says so. And it insists on the requirement anyway." and "It is not accountability. It is confirmation." are verdicts. The ending ("Not certainty. Accountability. Not the absence of blind spots, but the presence of structures that can find them.") is the chapter's thesis line and stays as he wrote it. The passage the pull quote echoes was not touched. Twelve dashes stay.
+
+
+## Chapter 9: The Prophetic Voice and Why You Need It (`sec13.xhtml`)
+
+Words 4,486 to 4,488. Em-dashes in his prose 71 to 10 (15.8 to 2.2 per 1,000 words). Tells 141 to 72 (31.4 to 16.0 per 1,000). Mean sentence 22.2 words to 23.7; sentences of eight words or fewer 25.4% to 20.7%; of five or fewer 14.4% to 10.1%. 51 edits; paragraphs 51 to 51.
+
+By kind (before to after): emdash 71 to 10, not_but 9 to 10, NotX.Y 4 to 0, isnt_its 3 to 3, triplet 12 to 14, frag3 1 to 0, anaphora 16 to 13, intens 11 to 8, q_answered 1 to 1, colon_reveal 1 to 1, short_close 10 to 10, one_line_para 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (headings, subtitle, pull quote, block quotes and their references) identical; 5 quoted strings, 15 Scripture references, 0 years, 6 numbers in digits, 26 number words, proper names by count, and 85 hedge words (after: 85) compared.
+
+Five pairs:
+
+1. Before: Every defensive vocabulary the church has ever developed — the accusation of divisiveness, the diagnosis of a critical spirit, the claim that the challenger lacks spiritual discernment, the suggestion that the person raising the hard question simply does not understand what God is doing here — every one of these is, at its core, a technology for getting rid of the prophetic word before it can land. Before it can be heard. Before it can do what the prophetic word, throughout the biblical narrative, consistently does when it is received:
+   After: Every defensive vocabulary the church has ever developed — the accusation of divisiveness, the diagnosis of a critical spirit, the claim that the challenger lacks spiritual discernment, the suggestion that the person raising the hard question simply does not understand what God is doing here — every one of these is, at its core, a technology for getting rid of the prophetic word before it can land, before it can be heard, before it can do what the prophetic word, throughout the biblical narrative, consistently does when it is received:
+2. Before: The community has a framework for evaluating challenges — a set of criteria by which it determines which are worth engaging seriously and which are not — and those criteria, which the community believes to be neutral and principled, are systematically calibrated to protect the community from exactly the information it most needs.
+   After: The community has a framework for evaluating challenges (a set of criteria by which it determines which are worth engaging seriously and which are not), and those criteria, which the community believes to be neutral and principled, are systematically calibrated to protect the community from exactly the information it most needs.
+3. Before: And the Ninevites believed God. They called a fast. The king put on sackcloth. The revision was immediate, total, and — from the outside — inexplicable.
+   After: And the Ninevites believed God; they called a fast, and the king put on sackcloth. The revision was immediate, total, and, from the outside, inexplicable.
+4. Before: The willingness is the thing. Not perfect information. Not the ideal messenger. Not the right timing. Not the community's comfort with the process. The willingness to let the word do what the word came to do — to sit with the disruption long enough to hear what it is saying, rather than deploying the community's considerable resources for dismissal before the word has had time to work.
+   After: The willingness is the thing: not perfect information, not the ideal messenger, not the right timing, not the community's comfort with the process, but the willingness to let the word do what the word came to do, to sit with the disruption long enough to hear what it is saying, rather than deploying the community's considerable resources for dismissal before the word has had time to work.
+5. Before: Moses is judging all of Israel's disputes by himself, from morning to evening, and his father-in-law Jethro — a Midianite priest, an outsider to the covenant community — sees what Moses cannot see about his own situation:
+   After: Moses is judging all of Israel's disputes by himself, from morning to evening, and his father-in-law Jethro, a Midianite priest, an outsider to the covenant community, sees what Moses cannot see about his own situation:
+
+Left alone, and why. "That is not a coincidence. It is the mechanism.", "Later, however, rarely arrives.", "James was not a progressive.", "The revision was painful. What it produced was the church." and the last two words, "Receive it.", are verdicts. The community's own voice ("We are going to bring it to Scripture. ... We are going to wait." and "The community is still here. The truth did not kill us. We can survive hearing it again.") is speech and keeps its short sentences. The three fragments that list practices ("The board meeting that always includes ...", "The annual review process ...", "The theological formation process ...") are a real list and were left as he set them; joining them would have needed a new sentence. The four forms of dismissal are described as fairly as he wrote them ("None of these strategies are necessarily cynical."). "Profoundly unprepared" lost its "profoundly" (the same sentence already has "profound"), and "precisely" went twice. Ten dashes stay.
