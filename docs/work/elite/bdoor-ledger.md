@@ -18759,3 +18759,19 @@ Cut in chapter 2: the deep note's lines beyond the New Testament's own (the shap
 | The hard note: Pedaiah and Shealtiel (Ezra 3:2; Haggai 1:1; Matthew 1:12); brothers; levirate marriage (Deuteronomy 25:5-6); raised as heir; the Greek reading; Jeconiah's grandson in all sources | 10-24 `hard` | 1-chronicles/3.json `hard` | Repository; the views in their holders' terms |
 
 Cut in chapter 3: the deep note's line that the heir has come, beyond the Gospels' own genealogies, which are quoted. Tamar's story is named, not told; the site's plain note on 2 Samuel 13 tells it with its care line. No care line is used in this chapter.
+
+## The plain notes on 1 Chronicles 4 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Judah's families and towns (4:1-8); 4:9 (to its quotation); Jabez's prayer (4:10, quoted in double quotes) and its last sentence; Othniel's and Caleb's families, the craftsmen, linen workers (4:11-22); 4:23 | 1-23 | 1-chronicles/4.json `summary`, `outline`, `historical`; BSB | Repository; BSB text |
+| Jabez known only for his prayer; otsev and the wordplay; a name as a sentence; land, hand, safety; the contrast with the names around him; Othniel (Judges 3:9-11) and Caleb (Numbers 13 and 14); ancient records (4:22); families by trade; the royal potters and the stamped jar handles, unproved; Bithiah, princess or Egyptian of standing | 1-23 | 1-chronicles/4.json `story`, `historical`, `cultural`, `literary`, `words` (Jabez, otsev) | Repository |
+| Philippians 4:6 | 1-23 | 1-chronicles/4.json `christ` (the confidence to bring needs to God); BSB | Repository; BSB text; Paul's own words on prayer |
+| The hard note: Wilkinson's book in 2000; encouragement and the worry about a formula and prosperity teaching; the modest text; those who call are heard; no guarantee; faithful people who prayed and suffered; honest, confident prayer | 1-23 `hard` | 1-chronicles/4.json `hard` | Repository; both readings in their holders' terms |
+| Simeon's descendants and small clans (4:24-27); the towns until David (4:28-33); the leaders (4:34-38); pasture at Gedor (4:39-40); 4:41 (its first sentence); the attack and settling; Seir and the Amalekites; 4:43 (its last sentence) | 24-43 | 1-chronicles/4.json `summary`, `outline`; BSB | Repository; BSB text |
+| Simeon's towns and Joshua 19:2-8; absorption into Judah; Ziklag (1 Samuel 27:6); Hezekiah about 715 to 686 BC; the Meunites (2 Chronicles 26:7) and Amalekites; pasture as life; 'to this day'; taking land reported without comment; no warrant to take land or harm any people | 24-43 | 1-chronicles/4.json `historical`, `cultural`, `literary`; the brief | Repository |
+| Joshua 19:9 (its last sentence) | 24-43 | 1-chronicles/4.json `historical` (Joshua 19); BSB | Repository; BSB text |
+
+Cut in chapter 4: the deep note's line from Jabez to Jesus bearing griefs and Revelation 21:4, which it calls thematic. A first draft quoted Philippians 4:6 and Joshua 19 from memory and set Jabez's prayer inside a narrative quotation; the checks caught all three before they reached the repository, and 'blessing' was rewritten. No care line is needed in this chapter.
