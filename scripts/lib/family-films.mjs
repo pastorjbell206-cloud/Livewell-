@@ -146,7 +146,9 @@ export function matchFilm({ names, passage, number }, films, pick) {
   }
   const words = new Set(names.flatMap((n) => [...subjectWords(n)]));
   const close = films.filter(
-    (f) => f.group !== "story" && f.verses.some((v) => touches(v, passage)) && [...subjectWords(f.title)].some((w) => words.has(w)),
+    // A film of the whole story, or of one whole book, is not about a
+    // devotion's own subject, whatever verse they share: only a pick offers it.
+    (f) => f.group !== "story" && f.group !== "books" && f.verses.some((v) => touches(v, passage)) && [...subjectWords(f.title)].some((w) => words.has(w)),
   );
   return close.length === 1 ? { film: close[0], by: "passage" } : null;
 }

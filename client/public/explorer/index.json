@@ -1397,6 +1397,76 @@
       "book": "romans"
     },
     {
+      "slug": "book-exodus",
+      "title": "Exodus: out of slavery, to God",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The second book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Exodus as a whole book: its two halves, the name of God, the Passover and the sea, a law given to people already rescued, the tent where God comes to live, and where to begin."
+      },
+      "mark": "book-exodus",
+      "frames": 7,
+      "stops": [
+        "rescue",
+        "sinai"
+      ],
+      "cards": [],
+      "book": "exodus"
+    },
+    {
+      "slug": "book-proverbs",
+      "title": "Proverbs: skill for ordinary days",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The Bible's book of wise sayings: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Proverbs as a whole book: a collection of collections, the fear of the LORD, two ways, Wisdom's call, words, work and the poor, and how to read a proverb."
+      },
+      "mark": "book-proverbs",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": [],
+      "book": "proverbs"
+    },
+    {
+      "slug": "book-isaiah",
+      "title": "Isaiah: the Holy One who comforts",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The longest book of the prophets: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Isaiah as a whole book: its three parts, the Holy One of Israel, trust or ruin, judgment and a remnant, the king and the Servant, a new creation, and where to begin."
+      },
+      "mark": "book-isaiah",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "isaiah"
+    },
+    {
+      "slug": "book-matthew",
+      "title": "Matthew: God with us",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The first book of the New Testament: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Matthew as a whole book: the son of David and of Abraham, five great blocks of teaching, fulfillment, the kingdom of heaven, the way of the cross, all nations, and where to begin."
+      },
+      "mark": "book-matthew",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "matthew"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
