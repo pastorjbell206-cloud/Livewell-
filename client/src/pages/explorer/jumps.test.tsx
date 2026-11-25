@@ -62,7 +62,7 @@ describe("the Explorer's jump list", () => {
       // Clear of the sticky header: a heading with the Explorer's scroll margin, or the films' whole section.
       expect(target.classList.contains("ex-anchor") || target.id === "watch", j.href).toBe(true);
     }
-    }, 20000);
+  }, 20000);
 
   it("is 44 px a link, like every other control on the page", () => {
     const css = fs.readFileSync(path.resolve(__dirname, "explorer.css"), "utf8").replace(/\s+/g, " ");
