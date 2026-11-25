@@ -24,7 +24,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 |---|---|---|---|---|---|---|---|---|---|
 | Introduction: The Case for a Reasonable Faith | 1,692 | 1,692 | +0.0% | 25 (14.8) | 2 (1.2) | 53 (31.3) | 31 (18.3) | 18 | PASS |
 | Chapter 1: Why Is There Something Rather Than Nothing? | 4,582 | 4,582 | +0.0% | 44 (9.6) | 4 (0.9) | 116 (25.3) | 79 (17.2) | 37 | PASS |
-| **All 2** | 6,274 | 6,274 | +0.0% | 69 (11.0) | 6 (1.0) | 169 (26.9) | 110 (17.5) | 55 | |
+| Chapter 2: Can We Actually Trust the Bible? | 3,616 | 3,616 | +0.0% | 58 (16.0) | 2 (0.6) | 107 (29.6) | 56 (15.5) | 41 | PASS |
+| **All 3** | 9,890 | 9,890 | +0.0% | 127 (12.8) | 8 (0.8) | 276 (27.9) | 166 (16.8) | 96 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -72,3 +73,27 @@ Five pairs:
    After: And the thing they converge upon is not a force: a force does not begin to act in time, a force does not choose to design, a force is not a lawgiver.
 
 Left alone, and why. Every scientist's name, year and figure is as it was (the fact diff holds 1927, 1929, 1965, 2003 and the powers of ten by count). The skeptic's objections are in his words: the quantum objection, the multiverse ("The honest objection is the multiverse"), the young Lewis's argument from injustice ("The world is cruel. Children die. Evil flourishes."), and "Blind faith. A leap in the dark." Each took a comma for a dash at most. "It has been dodged. It has been reframed. It has not been answered." is his claim about the Kalam and stays as three sentences. "Every dial. At once. That is fine-tuning.", "He was reading his equations." and "It is a witness to a Lawgiver." are verdicts; the passage the pull quote condenses was not touched. Four dashes stay.
+
+
+## Chapter 2: Can We Actually Trust the Bible? (`sec03.xhtml`)
+
+Words 3,616 to 3,616. Em-dashes in his prose 58 to 2 (16.0 to 0.6 per 1,000 words). Tells 107 to 56 (29.6 to 15.5 per 1,000). Mean sentence 24.4 words to 24.6; sentences of eight words or fewer 31.8% to 31.3%; of five or fewer 16.2% to 15.0%. 41 edits; paragraphs 50 to 50. Paragraphs of fifteen words or fewer 2 to 2; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 58 to 2, not_but 5 to 5, NotX.Y 1 to 1, isnt_its 1 to 1, triplet 23 to 27, stock 3 to 3, intens 2 to 2, q_answered 1 to 1, colon_reveal 0 to 1, short_close 11 to 11, one_line_para 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 42 Scripture references, 3 years, 34 numbers in digits, 148 number words, proper names by count, and 45 hedge words (after: 45) compared.
+
+Five pairs:
+
+1. Before: They can grant a God who might speak, and they can grant that a God who speaks might leave a record; what they cannot grant is that this particular record — copied for centuries, translated from translations, contradictory in its details, assembled by a council — is the one.
+   After: They can grant a God who might speak, and they can grant that a God who speaks might leave a record; what they cannot grant is that this particular record (copied for centuries, translated from translations, contradictory in its details, assembled by a council) is the one.
+2. Before: The two texts were essentially identical, word for word, across more than a thousand years, the only differences being minor spelling variants and a few obvious copyist slips — a preservation so exact it should have been scientifically impossible. The Hebrew word for that kind of keeping is natsach — to preserve with faithful care, to guard, to maintain — the very word Psalm 119 uses for God's preservation of his word.
+   After: The two texts were essentially identical, word for word, across more than a thousand years, the only differences being minor spelling variants and a few obvious copyist slips, a preservation so exact it should have been scientifically impossible. The Hebrew word for that kind of keeping is natsach (to preserve with faithful care, to guard, to maintain), the very word Psalm 119 uses for God's preservation of his word.
+3. Before: Warner Wallace, a cold-case homicide detective turned apologist, has argued that the Gospels bear every mark of genuine eyewitness testimony, and the minor divergences — Matthew naming one angel at the tomb, John two; Matthew showing the women meeting the risen Jesus on the way back, Mark cutting off at the empty tomb — are precisely what investigators find in real cases.
+   After: Warner Wallace, a cold-case homicide detective turned apologist, has argued that the Gospels bear every mark of genuine eyewitness testimony, and the minor divergences (Matthew naming one angel at the tomb, John two; Matthew showing the women meeting the risen Jesus on the way back, Mark cutting off at the empty tomb) are precisely what investigators find in real cases.
+4. Before: He says there are hundreds of thousands of textual variants across the Greek manuscripts — true; he says many of them mark places where the reading is uncertain — also true; he says certain beloved passages, the ending of Mark and the woman caught in adultery in John 8, are almost certainly not original — true, and Christian scholars have said so for centuries.
+   After: He says there are hundreds of thousands of textual variants across the Greek manuscripts, true; he says many of them mark places where the reading is uncertain, also true; he says certain beloved passages, the ending of Mark and the woman caught in adultery in John 8, are almost certainly not original, true, and Christian scholars have said so for centuries.
+5. Before: Four tests. Transmission, archaeology, prophecy, honesty.
+   After: Four tests: transmission, archaeology, prophecy, honesty.
+
+Left alone, and why. The skeptic's bundle of objections, the telephone-game objection, the late-dating move and "The honest objection is that the specific events of Jesus's life have no independent record outside Christian documents" are in his words, with a bracket or comma for a dash. What Ehrman says and what he concedes took punctuation only, so that he is neither strengthened nor weakened. Every manuscript count, date and scholar's name is unchanged (the fact diff holds 42 references and every number word). "It is a fine story. It is also false.", "Jesus did not fulfill eight. He fulfilled more than three hundred." and "Not after Jesus. A century and a half before him." are verdicts. One stack was joined ("Four tests. Transmission, archaeology, prophecy, honesty."). Two dashes stay.
