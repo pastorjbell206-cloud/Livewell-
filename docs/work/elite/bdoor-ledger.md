@@ -18087,3 +18087,17 @@ Cut in chapter 6: the deep note's lines to Christ (Philippians 2:8-9 and the hum
 | Esther's silence as Haman begs: what he had done; the decision the king's; no power to overrule; reported without comment; love of enemies and just punishment; a judgment recorded, no invitation to revenge | 7-10 `hard` | esther/7.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 7: the deep note's lines to Christ (Colossians 2:15 and the cross as reversal, Christ's intercession; the note says Haman is not a figure of Christ); Harbonah's words beyond verse 9 and the means of execution (not lingered over).
+
+## The plain notes on Esther 8 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The signet ring and Joseph; the unrevocable decree and Daniel; a second decree as the way out; Esther weeping for her kindred | 1-8 | esther/8.json `cultural`, `summary` | Repository |
+| Genesis 41:42 | 1-8 | esther/8.json `cultural`; BSB | Repository; BSB text |
+| The date about two months later, about 474 BC, nine months before Adar; the mirror of chapter 3; the couriers; light, gladness, joy and honor and the later ritual use; yahad found only here and its debated sense | 9-17 | esther/8.json `historical`, `literary`, `words` (orah, yahad) | Repository |
+| Esther 3:15; Psalm 30:11 | 9-17 | esther/8.json `literary`; BSB | Repository; BSB text |
+| Women and children in 8:11: two readings of the grammar; chapter 9's men counted and no plunder; defense against a legal order for destruction; no warrant today to harm anyone | 9-17 `hard` | esther/8.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 8: the deep note's line to Christ (the irrevocable sentence answered by a new decree of life, read as a picture of the gospel; the note calls it thematic, not predictive); naqam and vengeance (the note's word study, left out to keep the decree's sense to its hard question).
