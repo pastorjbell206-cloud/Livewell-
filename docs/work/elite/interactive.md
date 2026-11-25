@@ -85,8 +85,8 @@ the site's standing Find Help tab.
 
 ## Where the data was thin
 
-- **Books.** 41 of the 66 book pages have `teaching` as of this run (Ezra and
-  Nehemiah arrived during it). Each page names the books it does not hold yet
+- **Books.** 42 of the 66 book pages have `teaching` as of this run (it began
+  with 39; Ezra, Nehemiah and 2 Kings arrived during it). Each page names the books it does not hold yet
   and counts itself from the data, so it fills as book pages are written.
 - **Timeline dates** are free text, written for a reader. The year rules above
   read them; about one entry in six names no year.
