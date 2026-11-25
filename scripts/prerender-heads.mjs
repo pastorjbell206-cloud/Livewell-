@@ -540,10 +540,11 @@ const HUB_LISTINGS = {
     ];
   } },
   // Every track on /tracks, each of its sessions, its leader's guide when it has one, and the whole track to print, from the tracks index (scripts/build-tracks-index.mjs).
+  // A track's description whole, at the size its card sets it (dek: .pre-dek in index.css).
   "/tracks": { label: "Tracks", cap: 120, load: () => {
     const d = readJsonSafe("client/public/tracks/index.json") || {};
     return (d.tracks || []).flatMap((t) => [
-      { title: t.title, href: `/tracks/${t.slug}`, blurb: t.subtitle },
+      { title: t.title, href: `/tracks/${t.slug}`, blurb: t.subtitle, dek: true },
       ...t.sessions.map((x) => ({ title: `Session ${x.n}: ${x.title}`, href: `/tracks/${t.slug}/${x.n}`, blurb: `About ${x.minutes} minutes. Opens: ${x.opens}.` })),
       ...(t.leader ? [{ title: `Leader's guide: ${t.title}`, href: `/tracks/${t.slug}/leader`, blurb: "How to run a small group through the track, and each session's group guide in order." }] : []),
       { title: `${t.title}: the whole track, to print`, href: `/tracks/${t.slug}/print`, blurb: "Every session on one page, a session to a sheet." },
@@ -1148,7 +1149,10 @@ function hubListingHtml(routePath) {
   try { items = cfg.load(); } catch { return ""; }
   if (!items || !items.length) return "";
   const rows = items.slice(0, cfg.cap).map((it) => {
-    const blurb = it.blurb ? `<p>${escapeHtml(String(it.blurb).slice(0, 160))}</p>` : "";
+    // A row whose line the real page sets as a card's description (dek) keeps
+    // it whole, at the card's size: the card's own, painted when the page
+    // arrives, was the larger paint (/tracks, 2026-11-25).
+    const blurb = !it.blurb ? "" : it.dek ? `<p class="pre-dek">${escapeHtml(it.blurb)}</p>` : `<p>${escapeHtml(String(it.blurb).slice(0, 160))}</p>`;
     return `<li><a href="${escapeHtml(it.href)}">${escapeHtml(it.title)}</a>${blurb}</li>`;
   }).join("\n");
   return `<nav aria-label="${escapeHtml(cfg.label)}"><h2>${escapeHtml(cfg.label)}</h2><ul>\n${rows}\n</ul></nav>`;
