@@ -19144,3 +19144,19 @@ Cut in chapter 28: the deep note's lines to Christ (1 Corinthians 1:24, Colossia
 | Nest, roots and bow; malqosh and the spring rain; a comforter of the mourners | 18-25 | job/29.json `literary`, `cultural`, `words` (malqosh) | Repository |
 
 Cut in chapter 29: the deep note's lines to Christ (Isaiah 11:4, Psalm 72:12-14, Matthew 11:4-5 and 2 Corinthians 8:9; the note calls them thematic).
+
+## The plain notes on Job 30 (2026-11-25)
+
+`client/public/bible/notes/job/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second part; attah three times; king to mockery; the outcasts of the desert fringe; dogs as scavengers and working animals; spitting; the byword; the siege | 1-15 | job/30.json `story`, `historical`, `cultural`, `literary`, `words` (attah) | Repository |
+| 1 Kings 19:4 (in part) | 1-15 | job/30.json `cultural` (the broom tree and Elijah); BSB | Repository; BSB text |
+| The hard note: the contempt troubling; the flaw of charity from above; the bitterness of pain; mockers, not simply the poor; held together; recorded honestly | 1-15 | job/30.json `hard` | Repository; each reading in its holders' terms |
+| You addressed; the body matching 2:7-8; afar va'efer and 42:6; verse 20 | 16-23 | job/30.json `literary`, `cultural`; the genesis notes (dust and ashes, Job 30:19 and 42:6) | Repository |
+| Genesis 18:27 (in part: the verse holds a dash) | 16-23 | the genesis notes on afar va'efer; BSB | Repository; BSB text |
+| No hand stretched out; oni and ani; jackals and ostriches; harp and flute reversed from 21:12 | 24-31 | job/30.json `cultural`, `words` (oni, tan) | Repository |
+| Micah 1:8 | 24-31 | job/30.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 30: the deep note's lines to Christ (Mark 14:65, 15:19 and 15:34 beside Job's mockery and cry; the note calls it a pattern, not prediction).
