@@ -19826,3 +19826,21 @@ Cut in chapter 27: the deep note's thematic line to the church as one body, whic
 | Exodus 25:9; Psalm 132:7 | 11-21 | BSB | BSB text |
 
 Cut in chapter 28: the deep note's line from 28:6 to Hebrews 1:5, already given at 17:13 where the words first stand. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 29 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 29:1 (its last sentence); 29:3 (its clause); 29:4; 29:5 (its question); 29:6 (its phrase); the gifts (29:7-8); 29:9 | 1-9 | BSB | BSB text |
+| The last scene and the handover; around 970 BC; kings' temple gifts; nadav seven times; the joy in willingness; Exodus 35-36; the talent about thirty kilograms; Ophir and the three proposals; the daric, end of the sixth century BC, and the Persian period | 1-9 | 1-chronicles/29.json `story`, `historical`, `cultural`, `words` (nadav) | Repository |
+| Exodus 36:6 (the proclamation); 2 Corinthians 9:7 | 1-9 | BSB | BSB text |
+| 29:11; 29:12 (its first clause); 29:14; 29:15; 29:18 paraphrased; 29:19 (its first clause); 29:20 paraphrased | 10-20 | BSB | BSB text |
+| The prayer's movements; the key words; ger and toshav and Abraham; levav; the doxology of later manuscripts of Matthew 6:13 echoing 29:11, as many scholars think | 10-20 | 1-chronicles/29.json `literary`, `words` (ger, levav), `christ` (the doxology) | Repository |
+| Psalm 39:12 (its last sentence) | 10-20 | BSB | BSB text |
+| The sacrifices (29:21); 29:22 (its first sentence); the second anointing (29:22); 29:23; the pledge (29:24); 29:26; 29:27 paraphrased; 29:28; the sources (29:29) | 21-30 | BSB | BSB text |
+| Fellowship offerings; 23:1 and a second time; 1 Kings 1 and the Gihon; the throne of the LORD; 1 Kings 2:10-11; the source citation; the lost records; the Chronicler's David ending in offering and prayer | 21-30 | 1-chronicles/29.json `story`, `historical`, `cultural`, `literary`, `christ` | Repository |
+| 1 Kings 2:10; 1 Kings 2:11 (its words after the dash) | 21-30 | BSB | BSB text |
+
+Cut in chapter 29: the deep note's lines from 29:23 to Christ seated at God's right hand and from 29:15 to Hebrews 11:13, which the New Testament does not draw from this chapter. Barakh is left out to keep the prose clear of the bless family. No care line is needed in this chapter.
