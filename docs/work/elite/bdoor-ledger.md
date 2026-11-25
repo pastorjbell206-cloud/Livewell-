@@ -20527,3 +20527,22 @@ Cut from the book page: the old introduction's line that Christians see in Jesus
 | The hard note: poetry in the style of a prophetic warning; consequences that cannot be undone; the mocking reversing the scoffers' own (1:22); spoken now, while there is time; the outstretched hand; God welcoming the repentant and warning against delay; 1:33 as a pattern, not a promise that the wise never suffer; Job and Ecclesiastes | 20-33 `hard` | proverbs/1.json `hard` | Repository |
 
 Cut in chapter 1: the deep note's lines to Christ (Matthew 11:19 and wisdom vindicated by her deeds; Matthew 23:37 and Jesus' lament over Jerusalem set beside verse 22; 1 Corinthians 1:24 set beside this chapter; the note calls the links thematic). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 2 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; the conditions (2:2-3); 2:4; 2:5; 2:6; the LORD's storing and guarding (2:7-8); 2:10 (its second clause); 2:11 | 1-11 | BSB | BSB text; 2:9 (with a dash) not quoted |
+| One long conditional sentence; twenty-two verses and the possible alphabetic design; silver and hidden treasure, buried valuables, mining as patient work; tsaphan and 1:11; effort and gift held together | 1-11 | proverbs/2.json `literary`, `cultural`, `words` (tsaphan), `doctrines` (wisdom) | Repository |
+| Job 28:1; Job 28:12; James 1:5 (from ‘if any of you’) | 1-11 | proverbs/2.json `cultural` (Job 28), `christ` (James 1:5, named there as the New Testament's teaching that wisdom is God's gift); BSB | Repository; BSB text |
+| 2:13 (its clause); 2:14 (its clause); 2:15 (its clause); 2:16; 2:17 (its clause); 2:18; 2:19 | 12-19 | BSB | BSB text |
+| The two dangers matching chapter 1; the woman of chapters 5 to 7; the two Hebrew words; the literal reading and Ezra 9 and 10, Nehemiah 13; the reading of a woman outside one's marriage; verse 17 supporting the second; berit and its uses; marriage made before God as witness; rephaim and Sheol; the road downhill | 12-19 | proverbs/2.json `story`, `historical`, `cultural`, `literary`, `words` (berit, rephaim), `doctrines` (covenant, family) | Repository; each reading in its holders' terms |
+| Malachi 2:14 (from ‘the LORD has been a witness’) | 12-19 | proverbs/2.json `cultural` (Malachi 2:14); BSB | Repository; BSB text |
+| 2:20; 2:21; 2:22 | 20-22 | BSB | BSB text |
+| Deuteronomy's promises and warnings; the land promised to Abraham and given through Moses; wisdom as the way to live in God's land; readers after the exile; the prophets | 20-22 | proverbs/2.json `story`, `historical` | Repository |
+| Deuteronomy 30:20 (its second sentence, in part); Psalm 37:11 (its first clause); Psalm 37:29; Matthew 5:5 | 20-22 | proverbs/2.json `hard` (Psalm 37; Matthew 5:5); BSB | Repository; BSB text; the New Testament quoting the psalm, not this chapter |
+| The hard note: the covenant pattern; how things tend to go and will finally be set right; not a promise that the righteous never lose a home; the Psalms and Job; Daniel and Ezekiel in exile; true as a direction and a final outcome; no reason to judge someone by their losses | 20-22 `hard` | proverbs/2.json `hard`; the brief's crisis rules | Repository |
+
+Cut in chapter 2: the deep note's lines to Christ (the treasure in the field and the pearl, Matthew 13:44-46; Colossians 2:3 as Christ the treasure this chapter tells the young to seek; the note calls the connection thematic); the widening of the land into the renewed earth (not needed). No care line is needed in this chapter.
