@@ -837,6 +837,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M50,42C60,30 62,20 56,8C46,18 42,30 50,42Z" />
     </>
   ),
+  /* Proverbs: a road that divides, and a gold dawn at the end of one way. */
+  "book-proverbs": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M58,36a12,12 0 0,1 24,0Z" />
+      <path className="pl-l" d="M58,36a12,12 0 0,1 24,0" />
+      <Shape d="M8,84V60C30,48 60,40 92,38V84Z" tone="g" off={1} />
+      <path className="pl-l" d="M40,84C44,70 52,60 60,54C66,48 68,44 70,38M52,84C54,72 60,64 66,58M40,84C32,72 24,66 14,64" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

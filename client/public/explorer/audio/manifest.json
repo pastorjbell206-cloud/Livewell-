@@ -1145,6 +1145,116 @@
     }
    ]
   },
+  "book-proverbs": {
+   "title": {
+    "file": "book-proverbs/title.mp3",
+    "hash": "8b40d60266c4debdb757",
+    "seconds": 3.17,
+    "bytes": 19652
+   },
+   "younger": [
+    {
+     "id": "wisdom",
+     "file": "book-proverbs/younger/01-wisdom.mp3",
+     "hash": "5494101692f7d1588909",
+     "seconds": 21.73,
+     "bytes": 130964
+    },
+    {
+     "id": "layout",
+     "file": "book-proverbs/younger/02-layout.mp3",
+     "hash": "bbb8af7cb2e2f1e344ff",
+     "seconds": 22.17,
+     "bytes": 133556
+    },
+    {
+     "id": "two-ways",
+     "file": "book-proverbs/younger/03-two-ways.mp3",
+     "hash": "ada293324a4a5fbd50de",
+     "seconds": 24.88,
+     "bytes": 149828
+    },
+    {
+     "id": "call",
+     "file": "book-proverbs/younger/04-call.mp3",
+     "hash": "ed64c7e0522c8617ad4d",
+     "seconds": 25.24,
+     "bytes": 151988
+    },
+    {
+     "id": "words",
+     "file": "book-proverbs/younger/05-words.mp3",
+     "hash": "0c335d7ca8e71acfa2c8",
+     "seconds": 25.17,
+     "bytes": 151556
+    },
+    {
+     "id": "work",
+     "file": "book-proverbs/younger/06-work.mp3",
+     "hash": "03062c04d87cbded3e5f",
+     "seconds": 25.15,
+     "bytes": 151412
+    },
+    {
+     "id": "start",
+     "file": "book-proverbs/younger/07-start.mp3",
+     "hash": "aa258ba158479ea8e254",
+     "seconds": 24.06,
+     "bytes": 144932
+    }
+   ],
+   "older": [
+    {
+     "id": "wisdom",
+     "file": "book-proverbs/older/01-wisdom.mp3",
+     "hash": "f87b6cfc4ed7698f22d3",
+     "seconds": 21.27,
+     "bytes": 128228
+    },
+    {
+     "id": "layout",
+     "file": "book-proverbs/older/02-layout.mp3",
+     "hash": "cce1b44cbc60e3914c89",
+     "seconds": 22.19,
+     "bytes": 133700
+    },
+    {
+     "id": "two-ways",
+     "file": "book-proverbs/older/03-two-ways.mp3",
+     "hash": "9f7f2c4bc4d4796a8a21",
+     "seconds": 26.38,
+     "bytes": 158900
+    },
+    {
+     "id": "call",
+     "file": "book-proverbs/older/04-call.mp3",
+     "hash": "5180d2ae6b4a094792cc",
+     "seconds": 28,
+     "bytes": 168548
+    },
+    {
+     "id": "words",
+     "file": "book-proverbs/older/05-words.mp3",
+     "hash": "1d29dfcbf18dbd8a20d7",
+     "seconds": 27.34,
+     "bytes": 164660
+    },
+    {
+     "id": "work",
+     "file": "book-proverbs/older/06-work.mp3",
+     "hash": "aecdc95ec52b556367dc",
+     "seconds": 24.53,
+     "bytes": 147812
+    },
+    {
+     "id": "start",
+     "file": "book-proverbs/older/07-start.mp3",
+     "hash": "d71795e5c41343f6de89",
+     "seconds": 30.39,
+     "bytes": 182948
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

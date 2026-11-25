@@ -318,6 +318,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Exodus in seven moving pictures: what it is, its two halves, the name of God, the Passover and the sea, a law given to people already rescued, the tent where God comes to live, and where to start reading.",
     },
+    "book-proverbs": {
+      title: "Proverbs: skill for ordinary days: Bible Explorer",
+      description:
+        "The whole book of Proverbs in seven moving pictures: what it is, a collection of collections, two ways, Wisdom's call, words, work and the poor, and how to read a proverb.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

@@ -1716,6 +1716,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-john",
     "book-romans",
     "book-exodus",
+    "book-proverbs",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2134,5 +2135,21 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
       /firstborn|dead|drown|bod(y|ies)|blood|soldier|army/i
     );
+  });
+
+  it("Proverbs says what a proverb is: how life usually goes, not a promise for every case", () => {
+    const f = filmFile("book-proverbs");
+    const t = text(f);
+    expect(t).toContain(
+      "A proverb is a compressed observation about how life usually goes under God, not a guarantee for every case."
+    );
+    expect(t).toContain("It is not a promise for every time.");
+    expect(t).toContain(
+      "Wisdom in Proverbs is not cleverness or book learning."
+    );
+    expect(t).not.toMatch(
+      /God will make you rich|always prosper|guarantee[sd]? (you|that)/i
+    );
+    expect(f.care).toBeUndefined();
   });
 });
