@@ -19160,3 +19160,20 @@ Cut in chapter 29: the deep note's lines to Christ (Isaiah 11:4, Psalm 72:12-14,
 | Micah 1:8 | 24-31 | job/30.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 30: the deep note's lines to Christ (Mark 14:65, 15:19 and 15:34 beside Job's mockery and cry; the note calls it a pattern, not prediction).
+
+## The plain notes on Job 31 (2026-11-25)
+
+`client/public/bible/notes/job/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The climax of Job's speeches; the hearing longed for since chapters 9, 13 and 23; the oath of clearance with self-curse (Exodus 22:10-11; Numbers 5:19-22); the case put in God's hands; berit and the eyes; the curse of verse 10 and grinding grain as slaves' work | 1-12 | job/31.json `story`, `historical`, `cultural`, `literary`, `words` (berit, tummah) | Repository |
+| Household slaves and their few rights; the same Maker (31:15); widow, orphan and poor; support in the gate as influence; the answer to chapter 22 | 13-23 | job/31.json `cultural`; the notes quoting Job 31:13-15 on master and servant | Repository |
+| Isaiah 58:7 | 13-23 | the notes setting Isaiah 58:7 beside Job 31:16-20; BSB | Repository; BSB text |
+| From people to God; gold as idolatry (31:24-28); the sun and moon; the thrown kiss; hospitality (Genesis 19:2; Judges 19:15-21); adam as Adam or as people | 24-34 | job/31.json `cultural`, `words` (adam); the notes counting trust in gold as idolatry | Repository; both readings |
+| 1 Kings 19:18 (in part: the verse holds a dash) | 24-34 | job/31.json `cultural`; BSB | Repository; BSB text |
+| Tav as signature and cross mark; verses 38-40 moved or deliberate; the narrator's close; Elihu next | 35-40 | job/31.json `cultural`, `literary`, `words` (tav), `story` | Repository |
+| Ezekiel 9:4 | 35-40 | job/31.json `words` (tav); BSB | Repository; BSB text |
+| The hard note: not sinless (9:2; 14:4; 13:26); denying the guilt that would explain his disaster; verse 33; the high standard; confidence that God owed him an answer (40:8); innocent of the charges | 35-40 | job/31.json `hard` | Repository |
+
+Cut in chapter 31: the deep note's lines to Christ (Matthew 5:28, 5:44, 25:35-36 and Hebrews 4:15; the note calls them thematic); the Egyptian Book of the Dead (not needed). The note's judgment on the curse of verse 10 (that it is not a picture to approve) is a plain-words comment on the text, not a claim of fact.
