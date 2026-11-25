@@ -20531,3 +20531,24 @@ Cut from the book page: the introduction's line from Hosea's marriage to Christ 
 | Genesis 22:17 (its phrase); Romans 9:26 (its clause, inside Paul's quotation); 1 Peter 2:10 | 10-11 | hosea/1.json `story`, `christ`; BSB | Repository; BSB text; the New Testament's own lines |
 
 Cut in chapter 1: the deep note's line from Hosea's marriage to Christ who loved the church and gave himself up for her (Ephesians 5:25), which the New Testament does not draw from Hosea. The literal Hebrew of 1:9 is given in a paraphrase so that no first-person gloss stands in the prose. Genesis 22:17 is quoted only in part.
+
+## The plain notes on Hosea 2 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 paraphrased (its inner quotations not quoted); 2:2 (its first sentence); 2:3 paraphrased and not quoted; 2:4-5 paraphrased | 1-5 | BSB | BSB text; 2:3 named, not quoted |
+| Chapter 2 tells the story chapter 1 stood for; the mother as Israel and the children as Israelites; Jeroboam II's plenty credited to Baal; Baal at Ugarit; Ahab and Jezebel, Carmel, Jehu's purge; the blend lived on; the Samaria receipts; divorce without provision; public stripping known; the law court | 1-5 | hosea/2.json `story`, `historical`, `cultural` | Repository |
+| 1 Kings 18; Jeremiah 13:26; Ezekiel 16:37-39 | 1-5 | hosea/2.json `historical`, `cultural` | Repository |
+| The hard note: a picture of a nation; invasion and famine; legal customs; the wilderness as the turning point; feminist interpreters and others; both agree misuse is grave | 1-5 `hard` | hosea/2.json `hard` | Repository; both views in their holders' terms |
+| A prophetic picture; no warrant for any man to shame, strip, threaten or harm a wife, or anyone | 1-5 `hard` | the brief | Stated as the brief asks |
+| The care line ('Nothing in this passage asks anyone to stay where they or their children are in danger...' to '...lists places to turn.') | 1-5 `hard` | deuteronomy/plain/24.json; 1-corinthians/plain/7.json; colossians/intro.json and others | Reused whole, word for word; Find Help named; no phone number |
+| 2:6 (its first clause); 2:7 paraphrased; 2:8 (its clause); 2:9, 2:11, 2:12 paraphrased; 2:13 (its last words) | 6-13 | BSB | BSB text |
+| Three therefores (6, 9, 14); grain, new wine and oil as the three staples; the husband's duty to provide (Exodus 21:10); the gifts and the giver; the Assyrian invasions of the 730s and 722 BC; the blocked way as discipline meant to bring her home (2:7) | 6-13 | hosea/2.json `literary`, `cultural`, `historical`, `doctrines` (idolatry, repentance) | Repository |
+| Deuteronomy 8:14 (its clause) | 6-13 | BSB | BSB text |
+| 2:14; 2:15 (its phrase); 2:16-18 paraphrased; 2:19-20; 2:21-23 paraphrased (their inner quotations not quoted) | 14-23 | BSB | BSB text |
+| The wilderness and Israel's youth; Achor near Jericho, Achan (Joshua 7), trouble; baal as master or husband; ishi and baali; aras three times, a new beginning; the bride price paid by God in five gifts; hesed supplied; the chain of answers; the three names reversed | 14-23 | hosea/2.json `historical`, `cultural`, `literary`, `words` (Baal, ish, aras, hesed) | Repository |
+| Romans 9:25 (its opening words) with 1:10; 1 Peter 2:10 (its second half) | 14-23 | hosea/2.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+
+Cut in chapter 2: the deep note's lines to the bridegroom in John 3:29, Mark 2:19-20 and 2 Corinthians 11:2, to the marriage of the Lamb (Revelation 19:7; 21:2), to the bride price paid in the Son, and to Ephesians 5:25, which the New Testament does not draw from this chapter. The words of 2:3 and 2:10 are named and not quoted. The verses with inner quotations (2:1, 2:5, 2:7, 2:16, 2:23) are paraphrased, and the forms ‘my Husband’ and ‘my baal’ are given without the first-person word.
