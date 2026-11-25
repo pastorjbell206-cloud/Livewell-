@@ -18118,3 +18118,14 @@ Cut in chapter 8: the deep note's line to Christ (the irrevocable sentence answe
 | A feast without a command in the law: established by the people; received and kept; remembering, thanks and care for the poor; not adding to the law | 20-32 `hard` | esther/9.json `historical` | Repository; the readings in their holders' terms |
 
 Cut in chapter 9: the deep note's line to Christ (the day of destruction turned to rescue read beside the cross and resurrection and John 16:20; the note calls it the Christian reading, not a line the New Testament draws to this chapter); the list of Haman's sons and the column layout of the scroll (not needed); the numbers of the dead in Susa and the provinces stated only once, by the text's own words in its quotations (not lingered over); the claim that Purim is the only feast the people established (not stated in the repository; narrowed before commit).
+
+## The plain notes on Esther 10 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The epilogue like the closing notices in Kings; the frame with chapter 1; tribute as the state's backbone and the Persepolis reliefs; the lost chronicles; the Marduka tablet unproven; second to the king, Joseph and Daniel; seeking good and speaking shalom | 1-3 | esther/10.json `historical`, `cultural`, `literary`, `words` (mishneh, shalom, darash, mas) | Repository |
+| 1 Kings 11:41; Genesis 41:40 | 1-3 | esther/10.json `cultural` (the formula of Kings; Joseph); BSB | Repository; BSB text |
+
+Cut in chapter 10: the deep note's line to Christ (Mordecai's exaltation as a pattern fulfilled in Jesus; the note says the book does not present Mordecai as a messianic figure); 1 Kings 11:41 quoted only after its dashes.
