@@ -3,6 +3,8 @@
  * /study/words, /study/hard-passages): the note that says which books a page
  * does not hold yet, and the row of chips that narrows a page to a testament.
  */
+import { startTransition, useEffect, useState } from "react";
+
 import { nameList } from "@/lib/bibleExplore";
 
 export type Testament = "all" | "OT" | "NT";
@@ -38,4 +40,18 @@ export function TestamentChips({ value, onChange }: { value: Testament; onChange
       ))}
     </div>
   );
+}
+
+/**
+ * False for the first paint, then true. A page of several hundred entries
+ * draws its top and its first group at once and the rest straight after, in
+ * a transition the browser can interrupt, so a phone is never held up by the
+ * whole list (the long task that drawing it in one go cost).
+ */
+export function useStaged(): boolean {
+  const [all, setAll] = useState(false);
+  useEffect(() => {
+    startTransition(() => setAll(true));
+  }, []);
+  return all;
 }

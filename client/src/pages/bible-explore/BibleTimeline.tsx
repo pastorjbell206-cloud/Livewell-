@@ -22,7 +22,7 @@ import { LoadFailed } from "@/components/LoadFailed";
 import { chapterBookName, chapterHref } from "@/lib/bible";
 import { fetchTimeline, nameList, type ExploreBook, type TimelineData, type TimelineEntry, type TimelineKind } from "@/lib/bibleExplore";
 import { Band, Status, useLoad } from "../study-bible/shared";
-import { NotYet, TestamentChips, type Testament } from "./shared";
+import { NotYet, TestamentChips, useStaged, type Testament } from "./shared";
 import "../study-bible/bible.css";
 import "./explore.css";
 
@@ -67,6 +67,7 @@ export function TimelineView({ data, initialBook = "" }: { data: TimelineData; i
   const [testament, setTestament] = useState<Testament>("all");
   const [bookSlug, setBookSlug] = useState(data.books.some((b) => b.slug === initialBook) ? initialBook : "");
   const [kind, setKind] = useState<Kind>("all");
+  const all = useStaged();
 
   const books = useMemo(() => new Map(data.books.map((b) => [b.slug, b])), [data.books]);
   const groups = useMemo(() => new Map(data.groups.map((g) => [g.id, g])), [data.groups]);
@@ -113,6 +114,7 @@ export function TimelineView({ data, initialBook = "" }: { data: TimelineData; i
                   {names.length} books mark this: {nameList(names)}.
                 </strong>{" "}
                 {g.differ ? "They do not date it alike. Each is shown as its own book gives it, and this page does not choose between them." : "They date it alike."}
+                {here.length < members.length && " The others are hidden by what you chose above."}
               </p>
               <ol className="bk-tl">
                 {here.map((m) => (
@@ -196,6 +198,7 @@ export function TimelineView({ data, initialBook = "" }: { data: TimelineData; i
 
       {data.bands
         .filter((b) => shown.some((e) => e.band === b.id))
+        .filter((_, i) => all || i === 0)
         .map((b, i) => (
           <Band key={b.id} tone={i % 2 ? "bone" : "warm"}>
             <div className="bx-band__head">

@@ -53,7 +53,7 @@
 .bx-same__head{margin:0 0 6px;font-family:var(--U);font-size:14.5px;line-height:1.5;color:var(--ink)}
 .bx-same__head strong{font-weight:600}
 .bx-same .bk-tl li:last-child{border-bottom:0;padding-bottom:0}
-.bx-top{margin:var(--s-4) 0 0;font-family:var(--U);font-size:14px}
+.bx-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin:var(--s-4) 0 0;font-family:var(--U);font-size:14px}
 .bx-top a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:3px}
 @media (max-width:720px){
   .bx-line a,.bx-line span.bx-line__row{grid-template-columns:minmax(0,132px) minmax(0,1fr) 3ch;gap:8px}
