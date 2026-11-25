@@ -1093,6 +1093,22 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // Where to start in every book: each book's key chapters, each with the
+  // book's own reason and the link that opens the chapter
+  // (client/public/bible/explore/key-chapters.json).
+  "/study/key-chapters": async () => {
+    const d = readJsonSafe("client/public/bible/explore/key-chapters.json");
+    if (!d?.books?.length) return null;
+    const book = (b, i) => far(i < 4 ? 0 : i, b.name, `<ul>\n${b.chapters.map((c) => `<li><a href="/study/bible/${b.slug}/${c.ch}">${escapeHtml(`${b.slug === "psalms" ? "Psalm" : b.name} ${c.ch}`)}</a>: ${escapeHtml(c.why)}</li>`).join("\n")}\n</ul>`);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Where to start in every book</h1>`,
+        `<p class="pre-subtitle">The key chapters of all 66 books, each with its book's own reason. Choose one to open it.</p>`,
+        ...d.books.map(book),
+      ]),
+    };
+  },
   // Paul's travels: every trip's places in order with what happened there and
   // its Acts reference, then the churches and the letters written to them
   // (client/public/explorer/travels.json; places named as the Acts book page

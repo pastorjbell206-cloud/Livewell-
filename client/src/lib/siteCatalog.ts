@@ -126,6 +126,7 @@ export const DOORS: Door[] = [
           { id: "bible.words", name: "Key words of the Bible", line: "The words the book pages explain, in one list you can search.", href: "/study/words", icon: "BookMarked" },
           { id: "bible.hard-passages", name: "Hard passages", line: "The places where readers stop and ask, each with the way to its note.", href: "/study/hard-passages", icon: "MessageCircleQuestion" },
           { id: "bible.glance", name: "The 66 books at a glance", line: "Every book drawn as one band, part by part.", href: "/study/books-at-a-glance", icon: "Library" },
+          { id: "bible.key-chapters", name: "Where to start in every book", line: "The key chapters of all 66 books, each with its book's reason.", href: "/study/key-chapters", icon: "Signpost" },
         ],
       },
       { id: "bible.search", name: "Search the Bible", line: "Find every verse that holds a word or phrase.", href: "/study/bible/search", icon: "Search" },
