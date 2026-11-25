@@ -17829,3 +17829,18 @@ Cut in chapter 4: the deep note's lines to Christ (the servant-leader, Ephesians
 | Nehemiah 10:31 and Deuteronomy 15:1-2 | 14-19 | deuteronomy/plain/15.json (Nehemiah 10:31); BSB | Repository; BSB text |
 
 Cut in chapter 5: the deep note's lines to Christ (2 Corinthians 8:9, Luke 4:18-19, Acts 4:34; the note calls them thematic); a single quotation of 5:13 that carried the people's amen in its own quotation marks (rewritten before commit so that no quotation holds another).
+
+## The plain notes on Nehemiah 6 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The three schemes aimed at Nehemiah; the plain of Ono near the coast and near Lod; letters normally sealed and this one open; the charge of revolt and the earlier stop; prophets and kings, Haggai and Zechariah and Zerubbabel; fear as the weapon and the prayer for strength | 1-9 | nehemiah/6.json `story`, `historical`, `cultural`, `words` (yare, raphah) | Repository |
+| Ezra 4:12 | 1-9 | nehemiah/6.json `historical` (Ezra 4:12-22); BSB | Repository; BSB text |
+| Shemaiah's advice and the rules of the sanctuary (Numbers 18:7), Uzziah (2 Chronicles 26:16-21); a layman hiding in the temple as sin and cowardice; testing the message; Noadiah and other prophets | 10-14 | nehemiah/6.json `cultural`, `doctrines` (revelation), `words` (nevuah); BSB | Repository; BSB text |
+| How Nehemiah knew: the form proving nothing, source and content to agree with God's word; testing, not suspicion of every word | 10-14 `hard` | nehemiah/6.json `words` (nevuah), `doctrines` (revelation) | Repository; the readings in their holders' terms |
+| The twenty-fifth of Elul, 445 BC; why fifty-two days; the enemies crediting God; the postscript and Tobiah's ties by marriage and oath; shalem and shalom | 15-19 | nehemiah/6.json `historical`, `story`, `words` (shalem); BSB | Repository; BSB text |
+| Nehemiah 12:27; Psalm 147:2 | 15-19 | psalms/plain/147.json (Nehemiah 12:27); bible/story.json (Psalm 147 at the dedication); BSB | Repository; BSB text |
+
+Cut in chapter 6: the deep note's lines to Christ (Mark 15:30-31 and the charge of King of the Jews; the note calls them thematic); Numbers 18:7's last clause (not quoted, to avoid dwelling on death).
