@@ -17891,3 +17891,17 @@ Cut in chapter 8: the deep note's lines to Christ (Luke 4:16-21, Luke 24:27, Joh
 | Verse 29 and Leviticus 18:5; Paul's use (Romans 10:5; Galatians 3:12); the Reformation reading and the reading of obedience as response; the prayer fitting both | 26-38 `hard` | nehemiah/9.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 9: the deep note's lines to Christ (John 6:31-35, 1 Corinthians 10:4, Stephen's speech applied to Jesus; Acts 7:52 is quoted only for its words about the prophets); the order of the calf and verse 17 corrected before commit to follow the text.
+
+## The plain notes on Nehemiah 10 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hearing, confessing, committing; sealing as signature and legal act; names matching chapter 12 and chapter 7, heads of families sealing for clans; the governor first | 1-27 | nehemiah/10.json `story`, `cultural`, `historical`, `words` (chatam) | Repository |
+| Ezra 2:3 | 1-27 | nehemiah/10.json `historical`; BSB | Repository; BSB text |
+| All who had separated themselves to obey the law joining; the oath and its curse; each promise applying the law (Deuteronomy 7; the Sabbath and foreign traders; the seventh year); the showbread, offerings and tithes; the house of God closing the chapter; chapter 13 breaking these pledges | 28-39 | nehemiah/10.json `cultural`, `literary`, `story`, `words` (alah, maaser, bikkurim); ezra/6.json `cultural` (6:21) | Repository |
+| Exodus 30:13; Matthew 17:24; Numbers 18:21 | 28-39 | nehemiah/10.json `hard` (Exodus 30:11-16); matthew/plain/17.json (Nehemiah 10:32); BSB | Repository; BSB text |
+| The pledges differing from the law (a third of a shekel, wood by lot, no Sabbath trade): shekel standards, a reduction, a new gift; applications of the law; not adding to God's word | 28-39 `hard` | nehemiah/10.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 10: the deep note's lines to Christ (Jeremiah 31 and the new covenant in Luke 22:20 and Hebrews 8, Hebrews 10:11-14; the note says the New Testament does not refer to this chapter).
