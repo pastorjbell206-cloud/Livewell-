@@ -20070,3 +20070,19 @@ Cut in chapter 11: the deep note's lines to Mark 10:29-30 and to a coming son of
 | 1 Kings 14:26 (its last sentence) | 9-16 | BSB | BSB text |
 
 Cut in chapter 12: the deep note's lines to Matthew 11:28-30 and Romans 6:17-22, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 13 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 13:2 (its clause); the armies (13:3); 13:4 (its call); 13:5; the charges (13:6-9); 13:9 (its last sentence); 13:10 (its first two sentences); the worship (13:11); 13:12 (its last sentence) | 1-12 | BSB | BSB text |
+| About 913 to 911 BC; one scene; the sermon's four parts; the covenant of salt (Leviticus 2:13; Numbers 18:19); the open priesthood against Aaron's line; Abijam's verdict in Kings left unmentioned; Iddo and the two readings | 1-12 | 2-chronicles/13.json `story`, `historical`, `cultural`, `literary`, `words` (melach) | Repository |
+| 1 Kings 15:3 (its first clause) | 1-12 | BSB | BSB text |
+| The hard note: the numbers and the four ways; eleph; Micaiah and Maacah (1 Kings 15:2) and the two explanations; the site's numbers page | 1-12 `hard` | 2-chronicles/13.json `hard`; questions/contradictions/numbers-in-samuel-kings-and-chronicles.json | Repository; the readings in their holders' terms |
+| The ambush (13:13); 13:14 (its first sentence and clause); the rout (13:15); 13:18; Bethel (13:19); 13:20 (its last clause); 13:21-22 | 13-22 | BSB | BSB text |
+| The payoff; tsa'aq; chatsotserah and Numbers 10:9; sha'an and chapter 16; Zemaraim; Bethel as Jeroboam's shrine (1 Kings 12:29), later northern again; brothers | 13-22 | 2-chronicles/13.json `historical`, `literary`, `words` (sha'an, tsa'aq, chatsotserah) | Repository |
+| Numbers 10:9 (its clause); Psalm 20:7 | 13-22 | BSB | BSB text |
+
+Cut in chapter 13: the deep note's line from the covenant of salt to Luke 1:32-33, which does not cite this chapter. No care line is needed in this chapter.
