@@ -19648,3 +19648,18 @@ Cut in chapter 16: the deep note's Christian reading of the psalm (Galatians 3, 
 | 2 Samuel 7:18 (its question); Psalm 132:11 (its first sentence) | 16-27 | BSB | BSB text |
 
 Cut in chapter 17: the deep note's line from God's house to the church as temple (1 Corinthians 3:16; Ephesians 2:19-22), because those verses do not cite this chapter. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 18 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The campaigns and tribute (18:1-5); 18:3 (its clause); 18:6; the shields and bronze (18:7); 18:8 (its clause); Tou's gifts and the dedication (18:9-11); Abishai and Edom (18:12); 18:13 | 1-13 | 1-chronicles/18.json `summary`; BSB | Repository; BSB text |
+| The promise of 17:10 kept; the two refrains; the compass; yasha and its names; early tenth century BC; Egypt and Assyria absent; Zobah, Hamath and the Orontes; tribute and garrisons; disabling horses, Joshua 11, Deuteronomy 17:16; dedicated spoil; the differences from 2 Samuel 8 (8:4, 8:8, 8:2 left out, 8:13 and the heading of Psalm 60); the look ahead to the temple and chapter 22 | 1-13 | 1-chronicles/18.json `story`, `historical`, `cultural`, `literary`, `words` (yasha, qadash) | Repository |
+| 1 Chronicles 17:10 (its clause); Deuteronomy 17:16 (its first clause); Psalm 20:7 | 1-13 | BSB | BSB text |
+| 18:14; the officials (18:15-17); 18:17 (its last clause) | 14-17 | BSB | BSB text |
+| Verse 14 as hinge; mishpat; tsedaqah; the standard pair for good kingship; war report and list as a royal form; the recorder; the Cherethites and Pelethites; 2 Samuel 8:18 kohanim and the reason offered | 14-17 | 1-chronicles/18.json `historical`, `cultural`, `literary`, `words` (mishpat, tsedaqah) | Repository |
+| Isaiah 9:7 (its phrase) | 14-17 | 1-chronicles/18.json `christ` (Isaiah 9:7); BSB | Repository; BSB text |
+
+Cut in chapter 18: the deep note's typological line from David's reign to Christ's, which the New Testament does not draw from this chapter; Isaiah 9:7 is kept as Isaiah's own promise. The treatment of Moabite prisoners in 2 Samuel 8:2 is named as left out, not described. No care line is needed in this chapter.
