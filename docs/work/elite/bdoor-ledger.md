@@ -17858,3 +17858,20 @@ Cut in chapter 6: the deep note's lines to Christ (Mark 15:30-31 and the charge 
 | The figures (about 31,089 and 29,818 against 42,360); copies at different stages, copying errors, unlisted people; none certain; the writers not smoothing differences | 6-73 `hard` | nehemiah/7.json `hard`; ezra/2.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 7: the deep note's lines to Christ (Matthew 1, Bethlehem and the Messiah, Luke 10:20, Revelation 21:27, Hebrews 7:16; the note calls them later developments of the theme).
+
+## The plain notes on Nehemiah 8 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapters 8 to 10 as the spiritual center; the first of the seventh month days after the wall, about 445 BC; the festival month (trumpets, Atonement, Tabernacles); the people asking; the square by the Water Gate near the Gihon spring, men and women together; standing in respect; the leaders beside Ezra; the word in verse 8, reading clearly or translating into Aramaic, and the later spoken translations | 1-8 | nehemiah/8.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Deuteronomy 31:11; 1 Timothy 4:13 | 1-8 | nehemiah/8.json `cultural` (Deuteronomy 31:10-13); 1-timothy/plain/4.json (Nehemiah 8:8); BSB | Repository; BSB text |
+| Explaining or translating; the Mishnah's translator beside the reader; both readings agreeing on understanding | 1-8 `hard` | nehemiah/8.json `cultural`; bible/guides/how-we-got-the-old-testament.json (Megillah 4:4) | Repository; the readings in their holders' terms |
+| The weeping and the holy day turned to joy; confession in its place in chapter 9; holiness as feasting and generosity; portions for the poor; bin running through the chapter | 9-12 | nehemiah/8.json `doctrines`, `cultural`, `words` (bin, simchah) | Repository |
+| Deuteronomy 16:14 | 9-12 | nehemiah/8.json `cultural`; BSB | Repository; BSB text |
+| The leaders studying and the people obeying; booths remembering the wilderness and fresh meaning for exiles; the reading every seventh year at the feast | 13-18 | nehemiah/8.json `literary`, `cultural`, `words` (sukkah) | Repository |
+| Leviticus 23:42; Deuteronomy 31:10 | 13-18 | nehemiah/8.json `cultural`; BSB | Repository; BSB text |
+| Not since Joshua: Ezra 3:4, Solomon's festival; manner and scope, not first keeping; Hezekiah's and Josiah's Passovers in Chronicles | 13-18 `hard` | nehemiah/8.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 8: the deep note's lines to Christ (Luke 4:16-21, Luke 24:27, John 7 and 8, John 1:14 and the tent; the note calls them connections the New Testament makes, but not to this chapter); the people's double amen of verse 6 quoted (it would leave an exclamation outside a checked quotation; told in plain words before commit).
