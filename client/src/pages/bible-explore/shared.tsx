@@ -66,16 +66,18 @@ export function jumpTo(id: string) {
   const el = document.getElementById(id);
   if (!el) return;
   window.history.replaceState(null, "", `#${id}`);
+  const UNDER_MASTHEAD = 90;
   let tries = 0;
-  let last = Infinity;
+  let steady = 0;
   const go = () => {
-    // Under the fixed masthead, and at once: the page's own smooth scrolling would never settle here.
-    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 90, behavior: "instant" as ScrollBehavior });
-    const top = el.getBoundingClientRect().top;
-    if (tries++ < 8 && Math.abs(top - last) > 1) {
-      last = top;
-      requestAnimationFrame(go);
-    } else el.focus({ preventScroll: true });
+    const off = el.getBoundingClientRect().top - UNDER_MASTHEAD;
+    // At once: the page's own smooth scrolling would never settle while the lists above are still finding their height.
+    if (Math.abs(off) > 2) {
+      steady = 0;
+      window.scrollTo({ top: window.scrollY + off, behavior: "instant" as ScrollBehavior });
+    } else steady++;
+    if (++tries < 20 && steady < 3) window.setTimeout(go, 60);
+    else el.focus({ preventScroll: true });
   };
   go();
 }

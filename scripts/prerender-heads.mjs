@@ -1052,6 +1052,24 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // Hard passages: every passage the book pages list as hard, book by book,
+  // each with the link to the chapter where its note faces the question, and
+  // the way to Find Help first (client/public/bible/explore/hard-passages.json).
+  "/study/hard-passages": async () => {
+    const d = readJsonSafe("client/public/bible/explore/hard-passages.json");
+    if (!d?.books?.length) return null;
+    const help = catalogEntries().find((e) => e.href === "/help");
+    const book = (b, i) => far(i, b.name, `<ul>\n${b.items.map((h) => `<li><a href="/study/bible/${b.slug}/${h.ch}#v${h.v}">${escapeHtml(`${b.slug === "psalms" ? "Psalm" : b.name} ${h.ref}`)}</a>: ${escapeHtml(h.line)}</li>`).join("\n")}\n</ul>`);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Hard passages</h1>`,
+        `<p class="pre-subtitle">The places where readers stop and ask. Each one opens the chapter where its note faces the question.</p>`,
+        help ? `<p><a href="/help">${escapeHtml(help.title)}</a>: ${escapeHtml(help.blurb)}</p>` : "",
+        ...d.books.map(book),
+      ]),
+    };
+  },
   // Paul's travels: every trip's places in order with what happened there and
   // its Acts reference, then the churches and the letters written to them
   // (client/public/explorer/travels.json; places named as the Acts book page

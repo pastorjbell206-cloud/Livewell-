@@ -97,9 +97,11 @@ export function WordsView({ data }: { data: WordsData }) {
   return (
     <>
       <Band id="words">
+        {/* Two short paragraphs, not one tall one: a tall one here becomes the page's largest paint, counted late. */}
         <p className="bx-lede">
-          {data.words.length} words from the pages of {data.books.length} books, each explained in its own book's words. Where more than one book explains a word, each explanation is given.
+          {data.words.length} words from the pages of {data.books.length} books, each explained in its own book's words.
         </p>
+        <p className="bx-note">Where more than one book explains a word, each explanation is given.</p>
         <NotYet without={data.without} what="key words" />
 
         <div className="bx-filters">

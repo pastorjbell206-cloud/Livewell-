@@ -918,6 +918,20 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   from the Bible files by `scripts/build-memory-verses.mjs` (drift-checked),
   never typed; a verse returns after 1, 3, 7, 14 and 30 days. No second
   memorizing tool: the existing address was rebuilt.
+- **Four pages across the book pages (James, 2026-11-25: "more content and
+  videos and interactive pages than bible project")**: the Bible's timeline
+  (/study/timeline), the Bible atlas (/study/atlas), Key words of the Bible
+  (/study/words) and Hard passages (/study/hard-passages), all inside "Read
+  the Study Bible". Each reads one file under `client/public/bible/explore/`,
+  written by `scripts/build-bible-<timeline|atlas|words|hard>-index.mjs`
+  (rules in `scripts/lib/bible-explore.mjs`; `--check` is a content gate)
+  from the book pages' own `teaching` data, word for word: no page adds a
+  claim. So: change a book's intro.json, then rerun the four scripts. A date
+  is never chosen between books (the same-event list is
+  `scripts/bible-timeline-same.json`, judgments only); a language is named
+  only where a book's sentence names it; hard passages have no kinds because
+  the data has none, and each keeps its link to its note and Find Help in
+  reach. `docs/work/elite/interactive.md` has the rules and the run.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.

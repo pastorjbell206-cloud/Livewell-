@@ -67,8 +67,9 @@ export function HardView({ data }: { data: HardData }) {
     <>
       <Band id="hard">
         <p className="bx-lede">
-          {count} passages from the pages of {data.books.length} books: the places where readers often stop and ask. Each one opens its chapter, where the notes face the question.
+          {count} passages from the pages of {data.books.length} books: the places where readers often stop and ask.
         </p>
+        <p className="bx-note">Each one opens its chapter, where the notes face the question.</p>
         <CareLine />
         <p className="bx-note">The book pages do not sort these passages by kind, so they are listed by book, in the Bible's order.</p>
         <NotYet without={data.without} what="list of hard passages" />
