@@ -20457,3 +20457,24 @@ Cut in chapter 34: the deep note's lines to Jeremiah 31:31-34 and the new covena
 | The hard note: Huldah's promise and the two readings; God speaking through Neco and later through Cyrus | 20-27 `hard` | 2-chronicles/35.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 35: the deep note's lines to Luke 22:14-20, 1 Corinthians 5:7 and John 19:37, which do not cite this chapter. Josiah's death is told in the text's own words. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 36 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jehoahaz removed, Eliakim renamed (36:1-4); 36:6; the vessels (36:7); Jehoiachin (36:9-10); 36:12; 36:13 (its last sentence) | 1-13 | BSB | BSB text |
+| The end of the story from Adam; the brief formula paragraphs; Jehoahaz 609 BC; Jehoiakim about 609 to 598 BC; Carchemish 605 BC; the Babylonian Chronicle and early 597 BC; the ration tablets for Jehoiachin; Zedekiah's rebellion; renaming and trophies; 36:6 against 2 Kings 24:6 and the uncertainty | 1-13 | 2-chronicles/36.json `story`, `historical`, `cultural`, `literary` | Repository |
+| 2 Kings 24:6 | 1-13 | BSB | BSB text |
+| 36:14 paraphrased; 36:15; 36:16; the Chaldeans (36:17) told in a line; the treasures (36:18); 36:19 (its first sentence); the exile (36:20); 36:21 | 14-21 | BSB | BSB text |
+| 587 or 586 BC; 2 Kings 25, Jeremiah 39 and 52; no lingering; chamal and its reversal; marpe and 7:14; the land's Sabbaths (Leviticus 25:1-7; 26:34-35); Jeremiah's seventy years; judgment and forced rest | 14-21 | 2-chronicles/36.json `historical`, `cultural`, `literary`, `words` (chamal, marpe, shabbat) | Repository |
+| Leviticus 26:34 (its first sentence); Jeremiah 25:11 (its clause) | 14-21 | BSB | BSB text |
+| The hard note: the exiles' question; Lamentations and Psalm 89; the Chronicler's answer of long compassion and warning; the conditions on each king (7:19-22); God meant what he said; Judah's own Scripture, not a key for anyone's suffering, no warrant for calling anyone's suffering deserved, never a reason to blame the Jewish people | 14-21 `hard` | 2-kings/plain/25.json (8-21 `hard`); 2-kings/intro.json part "exile"; 2-chronicles/36.json `literary` | Repository; agrees with the 2 Kings 25 notes |
+| Care line ("A word for anyone who has lived through a flood, a storm or another disaster...") | 14-21 `hard` | Reused byte for byte; found whole in 4 places, among them 2-kings/plain/25.json | care.mjs |
+| 36:22; 36:23 (its last sentence) and its substance | 22-23 | BSB | BSB text |
+| The door opening; Cyrus and Babylon 539 BC; 539 or 538 BC; Ezra 1:1-3; the Cyrus Cylinder in the British Museum, not mentioning Judah; the God of heaven; ur; verses 21 and 22 mirrored; the Hebrew order and the last word; the line of David and Matthew's genealogy (Matthew 1:11-12, 17) | 22-23 | 2-chronicles/36.json `story`, `historical`, `cultural`, `literary`, `words` (ur), `christ` (Matthew 1) | Repository; the New Testament's own genealogy |
+| Ezra 1:1 (its clause); Matthew 1:17 (its clauses) | 22-23 | BSB | BSB text |
+| The hard note on the seventy years: 605 to 539 or 538 BC; 587 or 586 to about 516 BC; a round number (Psalm 90:10; Isaiah 23:15) | 22-23 `hard` | 2-chronicles/36.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 36: the deep note's line to John 2:19-21, which does not cite this chapter. The killing in 36:17 is told in a line and not described.
