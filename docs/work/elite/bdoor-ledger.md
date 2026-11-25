@@ -20135,3 +20135,18 @@ Cut in chapter 15: the deep note's lines to Matthew 7:7, John 14:9 and Mark 12:2
 | The hard note: medicine not condemned; only the physicians; 2 Kings 20:7; Luke the physician; medical care and seeking God together | 11-14 `hard` | 2-chronicles/16.json `hard` | Repository |
 
 Cut in chapter 16: the deep note's lines to Luke 19:10 and James 5:14-15, which do not cite this chapter; and a closing imperative about doctors, which read as advice the notes should not give.
+
+## The plain notes on 2 Chronicles 17 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The succession and strengthening (17:1-2); 17:3; 17:4; 17:5 paraphrased; 17:6; the mission (17:7-8); 17:9 | 1-9 | BSB | BSB text |
+| Four chapters; the unmixed picture; twenty-five years, about 872 to 848 BC, the overlap; Ahab and Elijah; Kings' summary (1 Kings 22:41-50) and what only Chronicles has; David missing in some manuscripts; the Baals and Ahab and Jezebel (1 Kings 16:31-33); the Book of the Law; the traveling mission; Deuteronomy 33:10; lamad and Talmud; gavah used well | 1-9 | 2-chronicles/17.json `story`, `historical`, `cultural`, `literary`, `words` (lamad, gavah) | Repository |
+| Deuteronomy 6:7 (its first clause) | 1-9 | BSB | BSB text |
+| 17:10; the tribute (17:11); the fortresses (17:12); the commanders (17:13-19); 17:16 (its phrase) | 10-19 | BSB | BSB text |
+| The structure with teaching at the center; pachad; tribute and the Arab herders; the names; the volunteer and 1 Chronicles 29; the largest numbers and chapter 13's readings | 10-19 | 2-chronicles/17.json `cultural`, `literary`, `words` (pachad) | Repository |
+| 1 Chronicles 29:9 (its clause); Judges 5:2 (its clauses) | 10-19 | BSB | BSB text |
+
+Cut in chapter 17: the deep note's lines to Matthew 9:35, Matthew 28:19-20 and Jeremiah 31:34 as fulfilled, which do not cite this chapter. No care line is needed in this chapter.
