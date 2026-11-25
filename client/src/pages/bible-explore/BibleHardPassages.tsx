@@ -33,15 +33,34 @@ const PARTS: ["OT" | "NT", string][] = [
   ["NT", "New Testament"],
 ];
 
-/** The way to help, kept on the page wherever a reader is in it. */
-export function CareLine() {
+/**
+ * The way to help, kept on the page wherever a reader is in it. The words are
+ * not this page's: they are the Study Bible notes' own care lines, whole
+ * (data.care), with "Find Help" in them made the link. Should the notes ever
+ * stop saying them, the catalogue's own line for Find Help stands in.
+ */
+export function CareLine({ lines }: { lines: string[] }) {
+  const helpLink = <Link href={HELP_ENTRY.href}>{HELP_ENTRY.name}</Link>;
   return (
-    <aside className="bx-care" aria-label="If a passage is close to home">
+    <aside className="bx-care" aria-label={HELP_ENTRY.name}>
       <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.75} />
-      <p>
-        Some of these passages tell of violence, abuse and despair. If one is close to what you are living through, you do not have to read it alone.{" "}
-        <Link href={HELP_ENTRY.href}>{HELP_ENTRY.name}</Link>: {HELP_ENTRY.line.charAt(0).toLowerCase() + HELP_ENTRY.line.slice(1)}
-      </p>
+      <div>
+        {lines.length === 0 && (
+          <p>
+            {helpLink}: {HELP_ENTRY.line.charAt(0).toLowerCase() + HELP_ENTRY.line.slice(1)}
+          </p>
+        )}
+        {lines.map((line) => {
+          const at = line.lastIndexOf(HELP_ENTRY.name);
+          return (
+            <p key={line}>
+              {at < 0 ? line : line.slice(0, at)}
+              {at < 0 ? <> {helpLink}</> : helpLink}
+              {at < 0 ? null : line.slice(at + HELP_ENTRY.name.length)}
+            </p>
+          );
+        })}
+      </div>
     </aside>
   );
 }
@@ -70,7 +89,7 @@ export function HardView({ data }: { data: HardData }) {
           {count} passages from the pages of {data.books.length} books: the places where readers often stop and ask.
         </p>
         <p className="bx-note">Each one opens its chapter, where the notes face the question.</p>
-        <CareLine />
+        <CareLine lines={data.care} />
         <p className="bx-note">The book pages do not sort these passages by kind, so they are listed by book, in the Bible's order.</p>
         <NotYet without={data.without} what="list of hard passages" />
 
@@ -139,7 +158,7 @@ export function HardView({ data }: { data: HardData }) {
                 </ul>
               </section>
             ))}
-          <CareLine />
+          <CareLine lines={data.care} />
           <p className="bx-top">
             <a href="#hard">Back to the top of the list</a>
           </p>
