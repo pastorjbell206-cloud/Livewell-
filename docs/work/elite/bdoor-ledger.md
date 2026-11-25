@@ -20773,3 +20773,22 @@ Cut in chapter 13: the deep note's lines to Christ (2 Corinthians 1:20 and Revel
 | Genesis 1:27 (its first clause); James 1:19 (from ‘Everyone’) | 25-35 | proverbs/14.json `cultural` (Genesis 1); the chapter data's cross-references for 14:29 (James 1:19); BSB | Repository; BSB text |
 
 Cut in chapter 14: the deep note's lines to Christ (Matthew 7:13-14 and John 14:6 beside verse 12; the sheep and the goats, Matthew 25:31-46, beside verse 31; the wise builder, Matthew 7:24-25, beside verse 1; the note calls them thematic). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 15 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 15:1; 15:4; 15:3; 15:8; 15:9; 15:11 paraphrased (the verse holds a dash); 15:12 | 1-12 | BSB | BSB text |
+| The close of the first half of Solomon's collection; contrasts giving way to varied forms; the LORD named nine times; Proverbs and the prophets on worship (Amos 5:21-24; Isaiah 1:11-17; Micah 6:6-8; 1 Samuel 15:22); Sheol and Abaddon (Job 26:6); the how-much-more argument | 1-12 | proverbs/15.json `story`, `historical`, `cultural`, `literary` | Repository |
+| 1 Samuel 15:22 (its last sentence, first clause); 1 Kings 12:13 (its first clause) | 1-12 | proverbs/15.json `historical` (1 Samuel 15:22); the chapter data's cross-references for 15:1 (1 Kings 12:13, 16); BSB | Repository; BSB text |
+| The hard note: worship that uses God while refusing to turn; Isaiah 1:15 and 1:18 (the quoted promise); the wicked as those who persist; Manasseh (2 Chronicles 33) and Nineveh (Jonah); not bought with performance; no one demands a hearing, no one who turns in need is turned away | 1-12 `hard` | proverbs/15.json `hard`; BSB | Repository; BSB text |
+| 15:13; 15:15; 15:16; 15:17; 15:18; 15:22; the fitting reply (15:23) paraphrased (the verse holds a dash); 15:24 | 13-24 | BSB | BSB text |
+| The oppressed's hard days; better-than sayings; meat rare and the stall-fed ox as kings' food (1 Kings 4:23) | 13-24 | proverbs/15.json `cultural`, `literary` | Repository |
+| Psalm 37:16; James 1:19 (from ‘Everyone’) | 13-24 | the chapter data's cross-references for 15:16 (Psalm 37:16) and 15:18 (James 1:19); BSB | Repository; BSB text |
+| 15:25; 15:27; 15:28; 15:29; 15:30; 15:31; 15:33 | 25-33 | BSB | BSB text |
+| The widow's boundary at the gate; stones quietly moved; the law's curse (Deuteronomy 19:14; 27:17); the prophets; verse 33 as hinge into chapter 16; 18:12 | 25-33 | proverbs/15.json `historical`, `literary`, `story` | Repository |
+| Deuteronomy 19:14 (its first clause); Psalm 146:9 (its second clause) | 25-33 | proverbs/15.json `historical`; the chapter data's cross-references for 15:25 (Psalm 146:9); BSB | Repository; BSB text |
+
+Cut in chapter 15: the deep note's lines to Christ (Matthew 5:23-24 beside verse 8; the Pharisee and the tax collector, Luke 18:9-14, beside verse 33; Matthew 11:29 and Jesus' gentleness beside verse 1); James 3 as a commentary on the chapter (not needed beyond James 1:19). No care line is needed in this chapter.
