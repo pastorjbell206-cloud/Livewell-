@@ -18059,3 +18059,17 @@ Cut in chapter 4: the deep note's lines to Christ (Esther as a mediator beside C
 | Psalm 7:15 | 9-14 | esther/7.json `doctrines` (judgment: Psalm 7:15-16); BSB | Repository; BSB text |
 
 Cut in chapter 5: the deep note's lines to Christ (the third day of 5:1, which the note itself says should not be pressed; Luke 1:52 and Christ's humbling; the note calls them thematic); the Behistun inscription and impalement (not lingered over).
+
+## The plain notes on Esther 6 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The one night between the banquets; the sleep that fled (nadad) and no reason given; the royal records; rewards for benefactors; five years unrewarded; everything on time | 1-5 | esther/6.json `story`, `historical`, `words` (nadad) | Repository |
+| Esther 2:23; Psalm 121:4 | 1-5 | esther/2.json `literary`; BSB | Repository; BSB text |
+| Providence or coincidence: the text silent; the crowding of coincidence as the point; Jewish and Christian readers; the advisers; providence seen looking back | 1-5 `hard` | esther/6.json `hard` | Repository; the readings in their holders' terms |
+| Honor public; the robe and horse; Joseph honored; Haman's private thought; the repeated phrase; the head covered; fall twice; the chapter as the center, as many scholars see it | 6-14 | esther/6.json `cultural`, `literary`, `words` (yeqar, chaphets, naphal) | Repository |
+| Genesis 41:43; Luke 1:52 | 6-14 | esther/6.json `cultural` (Genesis 41:42-43); esther/5.json `christ` (Luke 1:52 on reversal); BSB | Repository; BSB text |
+
+Cut in chapter 6: the deep note's lines to Christ (Philippians 2:8-9 and the humbled exalted; the note calls it thematic; Luke 1:52 is kept as Mary's song on God's reversals, with no line drawn from Esther to Christ); a draft 'later' that quoted Genesis 41:43 across its inner quotation (rewritten before commit).
