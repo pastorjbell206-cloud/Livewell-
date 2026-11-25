@@ -17983,3 +17983,18 @@ Every claim in `client/public/bible/notes/esther/intro.json`, field `teaching`. 
 | Go deeper: nine pages | deeper | bible/guides/calendar-and-festivals.json, empires.json, reading-narrative.json, canon.json; bible/doctrines/providence.json, sovereignty.json; questions/evil/the-hiddenness-of-god.json (status live; named by a short form of its own question); context/guides/women-in-the-ancient-world.json; context/worlds/honor-and-shame.json | Repository; every page live |
 
 Cut from the book page: the deep notes' lines to Christ (Mark 10:45 and the king who serves, Galatians 3:16 and 4:4, Hebrews 4:16 and Esther as a mediator, Philippians 2:8-9, Colossians 2:15 and Haman's gallows, the third day of 5:1, the decree on the eve of Passover set beside the Last Supper; the book's own introduction and the notes call these patterns or thematic links); the old introduction's sentence that without the Jews there would have been no people for the Messiah to come from (the deep note's, not the New Testament's); Xerxes' sleepless night tied to God by the narrator (the page says the book leaves it to the reader); the method of execution behind the word for gallows (not lingered over).
+
+## The plain notes on Esther 1 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The palace setting, no Jew and no mention of God; Xerxes about 486 to 465 BC, Ahasuerus and Khshayarsha; India to Cush; the 127 provinces smaller than the satrapies; Susa and the excavated hall; the third year about 483 BC and Herodotus on the gathering before 480 BC, not stated by the text; royal banquets; reclining; mishteh from the verb to drink | 1-9 | esther/1.json `story`, `historical`, `cultural`, `words` (mishteh) | Repository |
+| Daniel 6:8; Ezra 4:6 | 1-9 | esther/1.json `cultural` (Daniel 6:8); bible/guides/empires.json (Ezra 4:6); BSB | Repository; BSB text |
+| The satire; the eunuchs and the seven princes; the queen shown only at the king's command and treated as a possession; the unrepealable decree (1:19); letters in every script and language, Aramaic common; dat's first appearance | 10-22 | esther/1.json `cultural`, `literary`, `words` (dat) | Repository |
+| Esther 8:8; Daniel 6:8 | 10-22 | esther/1.json `cultural`; BSB | Repository; BSB text |
+| Vashti's reasons unstated; defiance or a right refusal of degradation; the cost; the decree saying more of the king; no blame on Vashti | 10-22 `hard` | esther/1.json `words` (maen), `cultural`; esther/intro.json `reading`, `themes` (a queen deposed for refusing to be displayed) | Repository; the readings in their holders' terms |
+| The care line (‘A word for anyone who is being pressured for sex, or for anything else...’ to ‘...lists places to turn.’) | 10-22 `hard` | genesis/plain/39.json (11-18, `hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 1: the deep note's line to Christ by contrast (Mark 10:45 and Galatians 3:16; the note calls it contrast and pattern); the hard question of Esther's history (left to the book page); the variant readings of 1:8 (not needed).
