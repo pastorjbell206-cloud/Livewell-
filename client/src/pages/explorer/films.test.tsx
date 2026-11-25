@@ -25,7 +25,7 @@ import { Route, Switch } from "wouter";
 import fs from "node:fs";
 import path from "node:path";
 
-import { renderWithProviders, offlineFetch } from "@/test/harness";
+import { renderWithProviders, offlineFetch, untilDrawn } from "@/test/harness";
 import { isFilm, type ExplorerIndex, type Film } from "@/lib/explorer";
 import FilmPlayer, { frameMs } from "./films/FilmPlayer";
 import {
@@ -904,9 +904,12 @@ describe("the pages", () => {
 
   // Renders the whole Explorer map (3,300 elements, half of them drawings):
   // heavy by design, so 15 s rather than 5; a busy machine stretched it past 7.
+  // The map's data comes in a transition, drawn in slices, so the test waits
+  // for the drawing (untilDrawn, test/harness.tsx), not a one-second findBy.
   it("the map's Watch and learn links each finished film and names the rest with no link", async () => {
     renderAt("/study/explorer");
-    const sec = await screen.findByRole("region", {
+    await untilDrawn(() => document.getElementById("stop-creation") !== null);
+    const sec = screen.getByRole("region", {
       name: /^Watch and learn/,
     });
     for (const f of READY)

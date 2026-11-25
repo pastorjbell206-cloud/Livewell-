@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "anxiety",
+    "title": "I can't stop worrying"
+  },
+  {
+    "slug": "fear-of-the-future",
+    "title": "I'm scared about the future"
+  },
+  {
+    "slug": "loneliness",
+    "title": "I feel so alone"
+  },
+  {
+    "slug": "grief",
+    "title": "Someone I love has died"
+  },
+  {
+    "slug": "suffering",
+    "title": "Why would God let this happen?"
+  },
+  {
+    "slug": "doubt",
+    "title": "I'm not sure I believe anymore"
+  },
+  {
+    "slug": "empty",
+    "title": "I feel empty, and I don't know why"
+  },
+  {
+    "slug": "prayer",
+    "title": "I don't know how to pray"
+  },
+  {
+    "slug": "marriage",
+    "title": "My marriage is falling apart"
+  },
+  {
+    "slug": "reading-the-bible",
+    "title": "Where do I start reading the Bible?"
+  },
+  {
+    "slug": "decisions",
+    "title": "How do I know what God wants me to do?"
+  },
+  {
+    "slug": "cant-forgive",
+    "title": "I can't forgive them"
+  }
+]
