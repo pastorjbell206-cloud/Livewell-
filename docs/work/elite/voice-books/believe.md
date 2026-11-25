@@ -347,3 +347,106 @@ Five pairs:
    After: Talk to him, not to a pastor, not to a priest, to him, and tell him you are done running, or done earning, or done pretending you have it managed; tell him you believe he died for you and rose for you, and ask him to take everything you have been trying to manage yourself.
 
 Left alone, and why. This is the invitation, and its short sentences are doing what short sentences are for: "This last chapter is about the door.", "Same root. A change of form.", "Confess. Believe.", "You have to turn. You have to lean.", "He is waiting.", "The book is finished. The argument is made. The door is open." None was joined. The word for the reader who is not ready ("do not manufacture a conversion or pray words you do not mean") is exactly as he wrote it; nothing in the appeal was made more pressing. The pull quote stands. The Greek and Hebrew words and their glosses are unchanged; the glosses that sat between dashes now sit in brackets. All 27 edits are dashes recast; no word changed. Three dashes stay.
+
+## The whole book
+
+Thirteen chapter files were edited (the introduction and chapters 1 to 12). The four part pages hold a title and a line each and were not touched; the two appendices were not edited. In his running prose: 43,575 words before, 43,575 after; em-dashes 589 before, 38 after (13.5 to 0.9 per 1,000 words; his limit is 4 to 6); 539 paragraphs before and after. 417 edits. The fact diff passed on all thirteen.
+
+**Every edit is punctuation.** All 417 recast a dash as a comma, a colon, a semicolon, brackets or a full stop. No word was added, removed or replaced: the word count is the same before and after in every chapter. In eight places a letter changed case because of the new punctuation. Three fragments now continue the sentence before them ("It is a mind. Personal, intelligent, powerful, moral." is "It is a mind: personal, intelligent, powerful, moral."; "Four tests. Transmission, archaeology, prophecy, honesty." is "Four tests: transmission, archaeology, prophecy, honesty."; "The resurrection is the best explanation. Not the only conceivable one, but ..." is "... the best explanation: not the only conceivable one, but ..."), and five clauses that followed a dash now open their own sentence ("... nothing more was owed. So when Jesus cried tetelestai ...").
+
+**Why so little else.** Believe is written in a different register from the other two books: impersonal ("the reader", "the skeptic"), in long built sentences, with almost no fragment stacks (6 runs of three in the whole book) and almost no one-line paragraphs (11). It did not need joining. What made it read as machine-set was the dash, used some thirteen times in every thousand words as the standard join between clauses, and that is what was taken out. The short sentences that remain are verdicts at the end of an argument ("It is a witness to a Lawgiver."; "Tetelestai was not a lie."; "His world is too small."; "The door is open.").
+
+**The skeptic's case.** Every statement of an objection, every steelman, and every quotation of an atheist is word for word: the multiverse, the telephone game, Ehrman, the five rival theories of the resurrection, the logical and evidential problems of evil, Ivan Karamazov, the three views of hell, Hick's pluralism, Nietzsche, Camus, Russell and Sartre, the argument from geography "at full strength", and the thirteen objections of chapter 11. Nothing was softened and nothing sharpened. Where two or more positions are set side by side (the three views of hell, the three views of creation, the six faiths of chapter 9) they took the same punctuation or none.
+
+**Forbidden Language list.** None of the listed words is in his prose in this book, before or after.
+
+**One thing the typesetter now does that is not an edit.** Three words in chapter 2 printed in the original as their codes ("Bo&#287;azk&#246;y", "L&#252;demann", "trustworthy&#8230;"), because the source escaped the character references twice. The typesetter sets the characters and counts them (3); the source files are unchanged.
+
+## For James: things that look wrong, none of them changed
+
+Believe makes more checkable claims than the other two books together, so this list is longer. Each item was left exactly as it stands. They were noticed in reading and were not checked against the sources, so each needs checking before it is corrected. The ones a hostile reviewer would find first are marked with a star.
+
+1. Ch 1: the Hebrews 11:1 block quotation ("Faith is the substance of things hoped for, the evidence of things not seen") is the King James wording, not the ESV's ("the assurance of things hoped for, the conviction of things not seen"); the argument that follows depends on "substance".
+2. Ch 1: Bill Gates is quoted as calling the genetic code "far, far more advanced than any software we have ever developed". The sentence in The Road Ahead is usually given as "DNA is like a computer program but far, far more advanced than any software ever created."
+3. Ch 1: "Jean-Paul Sartre ... wrote that without God no finite point has meaning apart from an infinite reference point". This line is widely attributed to Sartre but I know of no place in his work where he says it.
+4. Ch 1: Tertullian's "I believe because it is absurd" (in the skeptic's mouth) is a later paraphrase; Tertullian wrote "it is certain, because it is impossible".
+5. Ch 1: Einstein's "greatest blunder" is usually reported (by Gamow) of the cosmological constant itself, not of his reluctance to accept an expanding universe; Hoyle said he did not coin "Big Bang" to mock it.
+6. Ch 1: "the scholars at the Académie Française and the Royal Society": the scientific body in Paris was the Académie des sciences; the Académie Française is the body for the language.
+7. Ch 2: three words in the original printed as their codes: "Bo&#287;azk&#246;y", "L&#252;demann" and "trustworthy&#8230;" (in the Ramsay quotation). The source escaped the character references twice. The typesetter now sets the characters (Boğazköy, Lüdemann, an ellipsis); this is counted as typesetting, not as an edit.
+8. Ch 2: the manuscript counts for the classical authors (Plato 7, Aristotle 49, Caesar 10, Tacitus 20, Homer about 1,900) are the figures of older apologetics handbooks; current counts are higher for several of them, and a critic will say so.
+9. Ch 2: "the textual agreement exceeds ninety-nine and a half percent" has no source.
+10. ★ Ch 2: the Great Isaiah Scroll and the Masoretic text are called "essentially identical, word for word", "a preservation so exact it should have been scientifically impossible". The scroll has many hundreds of variants, most of them spelling; "word for word" overstates it.
+11. ★ Ch 2: "The Hebrew word for that kind of keeping is natsach ... the very word Psalm 119 uses for God's preservation of his word." Psalm 119:89 uses natsab ("stands firm"); natsach has a different sense. The glossary repeats the claim.
+12. Ch 2: "every time the critics have insisted the Bible had it wrong, the shovel has vindicated the text, and there has been no reverse case." Archaeologists dispute this (Jericho, Ai, the Exodus); it is stated without a hedge. Glueck as "the most influential American archaeologist of the twentieth century" would usually be said of Albright.
+13. ★ Ch 2: Jesus's birth in Bethlehem is said to be attested by "the Roman tax registration under Quirinius". That census is itself a well-known difficulty in dating the birth; it does not attest it.
+14. ★ Ch 2: "Micah wrote in the eighth century BC, Isaiah in the eighth, Daniel in the sixth". The sixth-century date of Daniel is the contested point (many scholars date it to the second century BC), and the chapter does not say so.
+15. Ch 2: Sir Robert Anderson is called "a Scotland Yard inspector"; he was Assistant Commissioner.
+16. Ch 2: Porphyry is listed among "the second-century opponents of Christianity"; he wrote in the late third century.
+17. Ch 2: "taken up in chapter seven" (of suffering). Suffering is chapter five in this book; chapter seven is science.
+18. Ch 2: "Paul invented the word [theopneustos]" and "a woman's testimony carried no weight in court" are both commonly said and both stronger than the evidence.
+19. Ch 3: the Lewis block quotation from Mere Christianity leaves out part of the passage (between "the Devil of Hell" and "Let us not come") without an ellipsis, and Lewis wrote "But let us not come with any patronising nonsense".
+20. Ch 3: "An atheist psychiatrist, writing on mental health, concluded that the whole of modern psychology amounts to an awkward and incomplete summation of the Sermon on the Mount." This is J. T. Fisher (A Few Buttons Missing, 1951), who is not named, and I know of no evidence that he was an atheist.
+21. Ch 3: the name is "Gerd Ludemann" here and "Lüdemann" in chapter 2.
+22. Ch 3: the Isaiah 53:5 block quotation joins the ESV's first half to the NIV's second ("The punishment that brought us peace was on him, and by his wounds we are healed").
+23. Ch 4: Habermas's set of facts is said to be "conceded by more than ninety percent" of scholars, and the empty tomb is then counted as one of the five. Habermas himself puts acceptance of the empty tomb at about three quarters and keeps it apart from his core facts.
+24. Ch 4: "Bereavement hallucinations ... occurring in something like ten to twenty percent of grieving people". Published studies report a good deal more than that; the figure needs a source.
+25. ★ Ch 4: "Eleven of the Twelve met violent ends" and "The record of how they died is consistent across the earliest sources". The deaths of most of the Twelve rest on late and uneven tradition (Thomas "speared in India", for instance), and the list that follows has John exiled, not killed. A critic will press this, because the argument leans on it.
+26. Ch 4: the 1 Corinthians 15:3-5 block quotation has "according to the Scriptures" twice where the ESV has "in accordance with the Scriptures".
+27. Ch 4: "Children, have you caught anything?" (John 21:5) is not the ESV ("Children, do you have any fish?"); Matthew 11:28 is quoted in the NIV's wording ("all you who are weary and burdened"); Jesus's three replies to Peter are given as "Feed my sheep" each time (John has "Feed my lambs", "Tend my sheep", "Feed my sheep").
+28. Ch 4: N. T. Wright's book is said to run "seven hundred and thirty-eight pages" (and Appendix A repeats it); the count depends on the edition.
+29. Ch 5: Scripture in the NIV's wording under an ESV copyright line: James 1:2-4, Romans 5:3-5, Job 38:4, Romans 8:28, Romans 8:38-39 and Revelation 21:4.
+30. ★ Ch 5: "Elie Wiesel ... wrote in Night that he had not lost faith in God, that he had moments of anger and protest, that sometimes he had been closer to God for that very reason". Those words are from his later writing and interviews, not from Night, which describes the opposite.
+31. Ch 5: "C. S. Lewis compared the complaint to a reader scolding a novelist because a character did not get what she wanted on page fifty". I know of no such passage in Lewis.
+32. Ch 5: Moltmann ("Jurgen" here, "Jürgen" in Appendix A) "came home to a ruined city and opened a Bible for the first time". By his own account he was given a Bible as a prisoner of war in Britain.
+33. Ch 5: Mackie "later granted that the argument had been "blunted"": the quoted word needs its source.
+34. Ch 5: Paul "writes on the road to a house arrest in Rome". Romans was written before his arrest, most likely from Corinth.
+35. Ch 5: "the wolf will lie down with the lamb"; Isaiah 11:6 has the wolf dwelling with the lamb (the phrase is usually misquoted of the lion).
+36. Ch 5: "No other religion has a suffering God" is a large claim stated without a hedge.
+37. Ch 6: every Scripture quotation in this chapter but one is in the NIV's wording (2 Thessalonians 1:9, Matthew 25:46, Revelation 20:10, 1 Timothy 2:4, Colossians 1:20, Romans 8:1, John 19:30, Galatians 3:3, 2 Corinthians 5:21, Isaiah 53:4–5, 1 Corinthians 11:26, Ezekiel 33:11, 2 Peter 3:9, Revelation 3:20); Galatians 6:14 is marked KJV, the only translation the book names.
+38. Ch 6: Gehenna as "the city dump, where Jerusalem's garbage was thrown and burned without ceasing". This comes from a medieval commentator and has no ancient evidence; many scholars now reject it.
+39. ★ Ch 6: Isaiah 53 "was read every Sabbath in the synagogues for centuries before the servant came". It was not; the chapter is in fact absent from the synagogue's cycle of prophetic readings.
+40. Ch 6: tetelestai as the word stamped on receipts for "paid in full" is a popular claim that specialists dispute.
+41. Ch 6: "The doors of hell ... are locked from the inside" is given as a reading of The Great Divorce; Lewis's sentence ("locked on the inside") is in The Problem of Pain.
+42. ★ Ch 7: "Cardinal Robert Bellarmine ... wrote to Galileo in 1615". Bellarmine's letter of April 1615 was written to Paolo Foscarini (and was meant for Galileo to see).
+43. Ch 7: Max Planck is listed with Lord Kelvin as "both Christians too". Planck was a churchwarden but said late in life that he did not believe in a personal God.
+44. Ch 7: Whitehead's "1925 Harvard lectures" were the Lowell Lectures, given in Boston while he taught at Harvard.
+45. Ch 7: "one of the few instances in history where an institution publicly admitted a four-hundred-year-old mistake": 1633 to 1992 is 359 years.
+46. Ch 7: "medieval Islam ... eventually subordinated science to religious authority in ways that foreclosed further development" is a contested summary stated as fact.
+47. Ch 7: Romans 1:20 and Proverbs 25:2 are in the NIV's wording.
+48. Ch 8: Romans 1:19-20, Luke 12:47-48, Hebrews 11:6, Genesis 18:25 and Deuteronomy 4:29 are in the NIV's wording; Romans 2:15-16 is the ESV's.
+49. Ch 8: "the abolition of slavery, the elevation of women, the care of the poor, the founding of hospitals and universities, the moral architecture of human rights — these grew from Christian soil, not pagan" is a broad historical claim with no hedge and no source.
+50. Ch 9: the story of C. S. Lewis arriving late at "an Oxford conference" and saying the unique thing was grace comes from Philip Yancey, who tells it of a British conference and without a source; it may be legend.
+51. Ch 9: "Every other major religion is, at its core, a system of human effort", with Judaism summed up as "to keep the covenant" and Islam as "to submit to the law". A Jewish or Muslim reader would say that leaves out the mercy and grace their own traditions confess; by CLAUDE.md's standard a position should be stated in a form its holders would sign.
+52. Ch 9: "Joseph Smith's golden plates, which no one else was permitted to examine". Latter-day Saints point to the eleven named witnesses who said they saw them.
+53. Ch 9: the crucifixion "recorded by Roman, Jewish, and Greek historians": the Roman and Jewish sources are Tacitus and Josephus; which Greek historian is meant is not said.
+54. Ch 9: Newbigin "spent forty years in India"; he went in 1936 and left in 1974.
+55. Ch 9: Ephesians 2:8–9, Romans 3:23–24, Ezekiel 36:26, Acts 17:31, Galatians 3:28 and John 14:6 are in the NIV's wording.
+56. Ch 10: the Nietzsche block quotation (The Gay Science, §125) leaves out a long stretch between "All of us are his murderers." and "This tremendous event" without an ellipsis.
+57. Ch 10: Augustine is described as "the young man who slept with anyone who would have him, fathered a child he did not want". By the Confessions he lived for some fifteen years with one woman and loved their son Adeodatus; the description is harsher than the source.
+58. ★ Ch 10: "Malcolm Muggeridge, who mocked Mother Teresa, then met her, then met Christ". Muggeridge did not mock her; he made the 1969 film and book that introduced her to the world, and was a skeptic of the church, not of her.
+59. Ch 10: "those who move away usually do so because they found something wrong with a particular expression of it ... and mistook that expression for the whole." People who have left the faith would not sign that as their reason; it is not the strongest form of their case.
+60. Ch 10: Ecclesiastes 12:13, 3:11 and 12:1 and Romans 13:13–14 are in the NIV's wording.
+61. ★ Ch 11: "Copernicus had published forty years earlier without condemnation". Copernicus published in 1543, ninety years before Galileo's trial in 1633, and his book was put on the Index in 1616.
+62. Ch 11: the block quotation "To whom then will you liken God, or what likeness compare with him?" is Isaiah 40:18, not 40:25 (the glossary gives 40:25 too).
+63. Ch 11: Aldous Huxley is quoted as "not wanting the world to have meaning ... satisfactory reasons"; Ends and Means has "to have a meaning" and "satisfying reasons".
+64. Ch 11: Hebrews 11:1 is again in the King James wording, and the argument turns on "evidence" (elenchos); Philemon 16 and "slave traders" (1 Timothy 1:10) are the NIV's.
+65. Ch 11: the section headed "What About the Hypocrites in the Church?" opens "Yes. It is." The answer fits a different question (something like "Isn't the church full of hypocrites?"); the heading seems to have been changed after the paragraph was written.
+66. Ch 11: "the most sexually satisfied and relationally stable adults in America are, by a wide margin, married religious couples", "sexual assault on a scale earlier generations never imagined" and "religious people give more to charity, volunteer more ..." are stated without sources.
+67. ★ Ch 11: "The person who, having considered the full case, concludes against Christianity has done so for some reason other than the evidence". This is the one sentence in the book that tells the skeptic his disagreement cannot be honest. It sits against the introduction's promise ("Disagreement is welcome") and against chapter 10's close ("You may land somewhere different from where this book lands"), and against your own standard that the skeptic should be left able to disagree. It was not changed.
+68. Ch 11: the body counts ("a hundred million", "perhaps two million", "fewer than five thousand") and "sixty-six books by forty authors across fifteen hundred years" are standard figures given without sources.
+69. ★ Ch 12: "Luke 15 is the longest chapter in the Gospels". It is not (Luke 1 and Matthew 26 are far longer); perhaps "the best-loved" or "the longest run of parables" was meant.
+70. Ch 12: "the love of God so loved the world that he gave" reads as a slip for "the love with which God so loved the world".
+71. Ch 12: "This book named three readers at the start: the honest skeptic ..., the Christian whose faith has met real resistance, and the young person who had never heard Christianity stated ...". The introduction's third reader is "the searcher, who would claim neither skepticism nor belief", not a young person.
+72. Ch 12: every Scripture quotation in the chapter is in the NIV's wording (Genesis 15:6, 2 Corinthians 5:21, Luke 15:20, Luke 9:23, 1 John 4:8, Romans 8:1-2, Revelation 3:20, Romans 10:9).
+73. Appendix A: under "The Problem of Evil and Suffering: Best Books" four entries are run together in one paragraph with no space between them ("(Intro)Lewis, C. S. A Grief Observed."), as the original EPUB has it.
+74. Appendix B: six glossary words are not used in the chapter the entry names, nor anywhere I could find in the book: tachlit and mataioo (chapter 10), ekenosen, kenosis and proskuneo (chapter 3), and metanoeō (chapter 12 has metanoia and metamorphoo). The other forty chapter references check. The glossary may have been made for a longer draft.
+75. The whole book: the copyright page says Scripture is from the ESV unless noted, and only Galatians 6:14 (KJV) is noted. By my count the ESV is the wording in chapters 1 to 4 for the most part and the NIV's from chapter 5 on.
+
+## Questions only James can answer
+
+1. Which translation? The copyright page says ESV, and from chapter 5 on nearly every quotation is the NIV's. Either the quotations are brought to the ESV (a mechanical job, and Hebrews 11:1 would then need its argument looked at, since "substance" and "evidence" are the King James words the argument turns on), or the copyright page names the NIV.
+2. Do you want the starred items corrected? Several are small (a date, a name, a reference); a few would mean rewriting a sentence of the argument (natsach, the Isaiah scroll "word for word", the apostles' deaths, Daniel's date).
+3. Chapter 11 ends by saying that anyone who weighs the case and still says no "has done so for some reason other than the evidence". Do you want to keep that sentence? It is the one place the book tells the skeptic he cannot disagree honestly.
+4. The original PDF had a dedication and four part pages that the original EPUB lacked, and the EPUB had two appendices the PDF lacked. The new files carry all of it. Is that what you want, and is the dedication ("For Susanna ... For five sons ... For the atheist I was ...") to stand as it is?
+5. The glossary lists six words the book does not seem to use. Cut them, or is there text missing?
+6. "What About the Hypocrites in the Church?" opens "Yes. It is." Which should change, the heading or the answer?

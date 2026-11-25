@@ -1,11 +1,16 @@
 {
-  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/; the title and subtitle come from client/src/data/covers.json (book-names.json holds only renamed books). The sec*.xhtml files are the author's text, taken unchanged from the original EPUB kept in content/held-downloads/originals/: one block to a line. The original PDF and EPUB did not carry the same things: the PDF had a dedication and four part pages the EPUB lacked, and the EPUB had two appendices the PDF lacked. So that nothing of his is lost, the part*.xhtml files and `dedication` are taken, word for word, from the original PDF (`fromOriginalPdf` names them, and --verify checks them against that PDF), and the appendices from the EPUB. `entries` names the two appendices whose paragraphs are entries (a reading list, a glossary), set with a hanging indent. Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs believe --verify`. `copyright` is the notice as the original files printed it, without the PDF's unfilled ISBN line.",
+  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/; the title and subtitle come from client/src/data/covers.json (book-names.json holds only renamed books). The sec*.xhtml files are the author's text, one block to a line: taken from the original EPUB kept (untouched) in content/held-downloads/originals/, built once unchanged and verified against it, then edited at his instruction (see `edited`). The original PDF and EPUB did not carry the same things: the PDF had a dedication and four part pages the EPUB lacked, and the EPUB had two appendices the PDF lacked. So that nothing of his is lost, the part*.xhtml files and `dedication` are taken, word for word, from the original PDF (`fromOriginalPdf` names them, and --verify checks them against that PDF), and the appendices from the EPUB. `entries` names the two appendices whose paragraphs are entries (a reading list, a glossary), set with a hanging indent. Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs believe --verify`. `copyright` is the notice as the original files printed it, without the PDF's unfilled ISBN line.",
   "id": "believe",
   "author": "James Bell",
   "identifier": "urn:livewell:believe-v2",
   "language": "en",
   "date": "2026",
-  "modified": "2026-11-25T00:00:00Z",
+  "modified": "2026-11-25T12:00:00Z",
+  "edited": {
+    "date": "2026-11-25",
+    "instruction": "James: \"i also want you to go through all the book, pdfs, and downloadable content to make it sound human and like me\"; and, the same day, \"use full paragraphs in the books too\".",
+    "record": "docs/work/elite/voice-books/believe.md"
+  },
   "copyright": [
     "Copyright © 2026 by James Bell. All rights reserved.",
     "Published by LiveWell by James Bell. Unless otherwise noted, Scripture quotations are from the English Standard Version (ESV)."

@@ -56,6 +56,8 @@
  *
  * TYPESETTING (each is counted in the run's report):
  *   - straight quotation marks and apostrophes set as curly ones;
+ *   - a character reference the source escaped twice, so that it printed as
+ *     its code ("Bo&#287;azk&#246;y"), set as the character it names;
  *   - unrendered Markdown removed: *Label* headings, "1\." list numbers, the
  *     backslashes in "\_\_\_" and "\...", one stray "*";
  *   - end-of-chapter lists that the source ran together with double spaces,
@@ -231,6 +233,8 @@ function typeset(blocks, stats) {
   let mode = null;
   const clean = (text) => {
     let s = text;
+    // A character reference the source escaped twice ("Bo&amp;#287;azk&amp;#246;y", which printed as "Bo&#287;azk&#246;y"): the character it names.
+    s = s.replace(/&#(\d+);/g, (m, d) => (stats.characterReferences++, String.fromCodePoint(Number(d))));
     s = s.replace(/([.!?])\*(?= |$)/g, (m, p) => (stats.strayAsterisk++, p));
     s = s.replace(/\\([._])/g, (m, p) => (stats.markdownEscapes++, p));
     if (/[*\\]/.test(s)) fail(`an asterisk or backslash this script does not know how to set: ${s.slice(0, 100)}`);
@@ -359,7 +363,7 @@ function loadBook(id) {
   const formerly = named?.was?.length ? named.was[named.was.length - 1].title : "";
   const stats = {
     quotes: 0, apostrophes: 0, markdownLabels: 0, markdownNumbers: 0, markdownEscapes: 0, strayAsterisk: 0, listSeparators: 0, doubleSpaces: 0,
-    hyphensToBullets: 0, sourceHyphensDropped: 0, emptyCites: 0, referenceLines: 0, entries: 0, leadIns: 0, lordSmallCaps: 0, softHyphensAtBreaks: 0,
+    hyphensToBullets: 0, sourceHyphensDropped: 0, emptyCites: 0, referenceLines: 0, entries: 0, characterReferences: 0, leadIns: 0, lordSmallCaps: 0, softHyphensAtBreaks: 0,
   };
   const sections = meta.sections.map((file, i) => {
     const source = parseSection(path.join(dir, file));
@@ -1351,6 +1355,7 @@ function verify(book, epubFile, pdfInfo) {
       .replace(/(^| )\*(Key Takeaways|Reflection Questions|Practices|Sources & Notes)\*(?= |$)/g, "$1$2")
       .replace(/\\([._])/g, "$1")
       .replace(/([.!?])\*(?= )/g, "$1")
+      .replace(/&#(\d+);/g, (m, d) => String.fromCodePoint(Number(d)))
       .split(" ");
   // Marks at the head of a list item are compared apart from the words.
   const isMark = (w) => w === "-" || w === "•";

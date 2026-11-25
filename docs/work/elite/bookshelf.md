@@ -644,9 +644,9 @@ pages (it was 212; `client/src/data/ebooks.ts` now says 207), 1.7 MB; the
 EPUB is 353 KB. The contents, a chapter opening, two spreads and a page of
 Sources & Notes were looked at as images.
 
-Both books are now edited, so no book is at present held to its original by
-`--verify`; the check stays in the script for the next book that is typeset
-before it is edited.
+Both books are now edited, so neither is held to its original by `--verify`
+any longer; the check stays in the script, and the next book (Believe,
+below) was held to it on its first build, before any edit.
 
 ### Believe, brought into the typesetter (2026-11-25)
 
@@ -714,6 +714,28 @@ no redirect was needed. The dedication, the contents, a part page, a
 chapter opening, a spread with a block quotation, the reading list and the
 glossary were looked at as images.
 
+**Three words that printed as their codes.** In chapter 2 the original
+printed "Bo&#287;azk&#246;y", "L&#252;demann" and "trustworthy&#8230;",
+because the source escaped those character references twice. The typesetter
+now sets a doubly escaped reference as the character it names (Boğazköy,
+Lüdemann, an ellipsis) and counts it (4 characters in this book, none in the
+other two). The source files are unchanged; `--verify` applies the same rule
+to the source before comparing.
+
+**The edit.** After that first build was committed, Believe was edited as
+the other two were, one commit a chapter; the record is
+`docs/work/elite/voice-books/believe.md` and `book.json` carries `edited`.
+This book's fault was the dash: 589 in the 43,575 words of his prose, 13.5
+per 1,000, the most of any of his books. All 417 edits are punctuation; no
+word was added, removed or replaced, and the word count of every chapter is
+the same before and after. Dashes fell to 38 (0.9 per 1,000). It is
+apologetics, so the rule was stricter: every statement of an objection,
+every scholar's position and every quotation is word for word, and the fact
+diff passed on all thirteen chapters. The appendices were not edited.
+`--verify` on the rebuilt files: EPUB 49,116 words against 49,116 (the
+count falls from 49,667 because a spaced dash counts as a word); PDF
+235,731 characters against 235,731. Still 191 pages.
+
 **Left as found, for James.** In Appendix A, under "The Problem of Evil and
 Suffering: Best Books", four entries are run together in one paragraph with
 no space between them ("... (Intro)Lewis, C. S. A Grief Observed. ...
@@ -774,6 +796,7 @@ Left exactly as written:
 | A Higher Allegiance, edited, 2026-11-25 | 207 | 1.7 MB | 353 KB |
 | Believe, before | 392 | 636 KB | 180 KB |
 | Believe, typeset, 2026-11-25 (no word changed) | 191 | 1.4 MB | 300 KB |
+| Believe, edited, 2026-11-25 | 191 | 1.4 MB | 300 KB |
 
 The old PDFs were set loosely (A Higher Allegiance at about 115 words a
 page); the new ones at about 270. The new PDFs are larger: they carry the
