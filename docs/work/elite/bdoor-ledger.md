@@ -19958,3 +19958,19 @@ Cut in chapter 4: the deep note's lines from the washing and the bread to Christ
 | Exodus 40:34; 1 Chronicles 16:34 | 11-14 | BSB | BSB text |
 
 Cut in chapter 5: the deep note's lines from the glory to Christ, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 6 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1 (Solomon's words); 6:2 (its phrase); the speech (6:3-9); 6:10 (its first sentence); the ark (6:11) | 1-11 | BSB | BSB text |
+| The prayer as interpretation and charter; God's answer in chapter 7; the Name (Deuteronomy 12:5, 11), name as presence | 1-11 | 2-chronicles/6.json `story`, `cultural` | Repository |
+| Deuteronomy 12:5 (its clause) | 1-11 | BSB | BSB text |
+| The platform and kneeling (6:13); 6:14; the promise to David (6:15-17); 6:18; 6:21 (its last two sentences); the seven cases (6:22-39); 6:32 (its phrase); 6:36 (its clause); 6:39 (its last sentence); 6:41 (its first sentence); 6:42 | 12-42 | BSB | BSB text |
+| 1 Kings 8:12-53; the platform's size; the changed ending (1 Kings 8:50-53; Psalm 132:8-10); posture and a kneeling king; the oath at the altar; shama twelve times; salach with God alone; shuv; mashiach; the exile petition and the readers; praying toward Jerusalem | 12-42 | 2-chronicles/6.json `historical`, `cultural`, `literary`, `words` | Repository |
+| Daniel 6:10 (its clause); Psalm 132:8 | 12-42 | BSB | BSB text |
+| The hard note: 6:2 and 6:18; the apparent contradiction and the development view; transcendence and presence held together; the Name; the prophets' warning | 12-42 `hard` | 2-chronicles/6.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 6: the deep note's lines from the anointed one and the hearing God to Christ, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
