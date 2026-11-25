@@ -29,7 +29,8 @@ Three scripts, kept outside the repo in `/home/user/vs2/` (`apply.py`, `factdiff
 | Chapter 6: How Christian Nationalism Quietly Rewrites Doctrine | 5,114 | 5,109 | -0.1% | 1 (0.2) | 0 (0.0) | 111 (21.7) | 84 (16.4) | 21 | PASS |
 | Chapter 7: Constantine's Bargain | 3,975 | 3,964 | -0.3% | 2 (0.5) | 1 (0.3) | 106 (26.7) | 79 (19.9) | 36 | PASS |
 | Chapter 8: Germany's Warning | 3,680 | 3,678 | -0.1% | 0 (0.0) | 0 (0.0) | 91 (24.7) | 72 (19.6) | 18 | PASS |
-| **All 9** | 35,954 | 35,836 | -0.3% | 17 (0.5) | 1 (0.0) | 1053 (29.3) | 738 (20.6) | 282 | |
+| Chapter 9: The Generational Cost | 4,364 | 4,342 | -0.5% | 1 (0.2) | 0 (0.0) | 118 (27.0) | 92 (21.2) | 21 | PASS |
+| **All 10** | 40,318 | 40,178 | -0.3% | 18 (0.4) | 1 (0.0) | 1171 (29.0) | 830 (20.7) | 303 | |
 
 ## Introduction: Not Persecuted—Seduced (`sec01.xhtml`)
 
@@ -245,3 +246,27 @@ Five pairs:
    After: And it is appearing now, not in identical form, not with identical consequences, but with the same underlying dynamic:
 
 Left alone, and why. This is the chapter where a careless edit could do most harm, so it took the fewest changes of any chapter and none to a sentence that draws or limits the comparison. "No. I am not calling American Christians Nazis. ... That kind of rhetorical escalation is lazy, manipulative, and morally irresponsible, and it deserves to be rejected whenever it appears, from any direction." is word for word; so are "The lesson of Germany is not "you are Nazis." The lesson of Germany is "you are not immune."" and the caution that "History does not repeat itself in photocopy form." The fair statement of the German Christians' fear ("The fear was real. The threats were not imaginary. Moral decline was not a figment of conservative paranoia.") and of the lesser-of-two-evils case ("That reasoning is not wrong in itself.") stay in their own sentences. "One Lord. One Word. One source of ultimate authority." is Barmen's creed and the chapter's hinge. The five "It appeared in ..." sentences were left as five. Forbidden list: "we are not navigating moral complexity" is now "we are not working through moral complexity". "Precisely" went twice.
+
+
+## Chapter 9: The Generational Cost (`sec10.xhtml`)
+
+Words 4,364 to 4,342. Em-dashes in his prose 1 to 0 (0.2 to 0.0 per 1,000 words). Tells 118 to 92 (27.0 to 21.2 per 1,000). Mean sentence 14.0 words to 15.4; sentences of eight words or fewer 33.6% to 28.5%; of five or fewer 15.8% to 12.2%. 21 edits; paragraphs 91 to 81. Paragraphs of fifteen words or fewer 15 to 8; runs of three fragments 2 to 1.
+
+By kind (before to after): emdash 1 to 0, not_but 8 to 9, not_just 1 to 1, NotX.Y 12 to 9, isnt_its 1 to 1, triplet 17 to 17, frag3 2 to 1, anaphora 36 to 26, stock 2 to 2, intens 4 to 4, colon_reveal 3 to 3, short_close 15 to 11, one_line_para 15 to 8, forbidden 1 to 0.
+
+Fact diff: **PASS**. Fixed blocks (headings, pull quote, block quotes, and the end matter: Key Takeaways, Reflection Questions, Practices, Sources & Notes) identical; 44 quoted strings, 6 Scripture references, 0 years, 5 numbers in digits, 56 number words, proper names by count, and 54 hedge words (after: 54) compared. A sentence he wrote in quotation marks as someone's imagined words, changed only to replace a word on the Forbidden Language list (before, after): "Christians are navigating a complex world"; "Christians are finding their way through a complex world".
+
+Five pairs:
+
+1. Before: And they are drawing conclusions. Not first about politics. Not first about culture. Not first about which party is right or which candidate deserves their vote. About God.
+   After: And they are drawing conclusions, not first about politics, not first about culture, not first about which party is right or which candidate deserves their vote, but about God.
+2. Before: They described it as hypocritical. They described it as judgmental. They described it as politically entangled. They described it as more interested in power than in love.
+   After: They described it as hypocritical, as judgmental, as politically entangled, as more interested in power than in love.
+3. Before: Whitewashed tombs. Beautiful on the outside. Dead on the inside. Religious performance masking spiritual rot.
+   After: Whitewashed tombs: beautiful on the outside, dead on the inside, religious performance masking spiritual rot.
+4. Before: The solution is a church that looks like Jesus. A church that tells the truth even when it is costly. A church that loves its enemies even when it is ridiculed. A church that holds moral standards consistently even when it is inconvenient. A church that cares for the vulnerable even when there is no political reward. A church that repents publicly even when it is humiliating. A church that would rather lose every political battle than lose its integrity. A church that knows the difference between winning an election and winning a soul. That kind of church has always been the most powerful apologetic in the world. Not because it is perfect, no church is. But because it is honest about its imperfection, relentless in its pursuit of faithfulness, and visibly shaped by the Savior it proclaims.
+   After: The solution is a church that looks like Jesus: a church that tells the truth even when it is costly, that loves its enemies even when it is ridiculed, that holds moral standards consistently even when it is inconvenient, that cares for the vulnerable even when there is no political reward, that repents publicly even when it is humiliating, a church that would rather lose every political battle than lose its integrity, a church that knows the difference between winning an election and winning a soul. That kind of church has always been the most powerful apologetic in the world, not because it is perfect (no church is), but because it is honest about its imperfection, relentless in its pursuit of faithfulness, and visibly shaped by the Savior it proclaims.
+5. Before: That is a different problem. And it requires a different solution. The solution is not more information. The solution is not better programs.
+   After: That is a different problem, and it requires a different solution. The solution is not more information or better programs.
+
+Left alone, and why. "There is a generation watching.", "The word that came up again and again in the research was not "false." It was "inauthentic."", "Not revised. Not careful. Abandoned." and "They are looking for a real one." are verdicts. The conservative explanation for why the young leave is stated as its holders would state it, and the concession that follows ("There is partial truth in that explanation. The cultural pressures on young believers are real. ...") is word for word; so is "This is not a progressive critique." The four "When a church preaches ..." paragraphs and the paired "We are not giving people a reason for our hope. We are giving them a reason for our outrage." were left. The call for one standard is already measured both ways ("If dishonesty disqualifies an opponent, it must disqualify an ally. If cruelty is condemned in the other party, it must be condemned in ours."; "When the church's positions line up with the left on some issues and with the right on others") and was not touched. Forbidden list: "navigating" twice, now "finding their way through" (inside a sentence he puts in quotation marks as the watching world's imagined reading) and "working through".
