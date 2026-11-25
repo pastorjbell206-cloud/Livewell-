@@ -33,5 +33,641 @@
     { "ch": 19, "why": "Hezekiah spreads Sennacherib's threatening letter before the LORD, Isaiah answers, and Jerusalem is delivered." },
     { "ch": 22, "why": "The Book of the Law is found in the temple, and Josiah's response begins the greatest reform in Judah's history." },
     { "ch": 25, "why": "Jerusalem falls, the temple burns, and the people go into exile, yet the book ends with Jehoiachin released and fed at the king's table." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "2 Kings in a minute",
+        "body": "Second Kings is the twelfth book of the Bible. It has 25 chapters, and it covers about three centuries, from the death of King Ahaziah of Israel, about 852 BC, to 561 BC, when a captive king of Judah was let out of prison in Babylon.\n\nThe first half belongs largely to the prophet Elisha. Elijah is taken up in a whirlwind, and Elisha takes up his cloak. He provides oil for a widow, raises a mother's son, heals an enemy general of his skin disease, and sees the hills full of horses and chariots of fire. Around him the politics grind on. Moab rebels, Aram besieges Samaria, and Jehu wipes out the house of Ahab in a bloody coup. In Judah, Ahab's daughter Athaliah nearly destroys David's line, until a hidden boy is crowned in the temple.\n\nThe second half moves faster and darker. Assyria rises in the east, and Samaria falls in 722 BC. Judah lasts another century and more, under kings good and bad. Hezekiah prays, and Jerusalem is spared. His son Manasseh leads Judah into the worst idolatry in its history. Josiah finds the Book of the Law in the temple and carries out the most thorough reform any king attempted, but it cannot turn back the judgment. Babylon takes Jerusalem in 597 BC and burns it, with the temple, in 587 or 586 BC.\n\nThe book ends in exile with a quiet scene. Jehoiachin, David's descendant, is released from prison and ‘dined regularly at the king’s table for the rest of his life’ (25:29). The word of the LORD has proved true in judgment, and the promise to David is still alive."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Second Kings follows straight on from 1 Kings, where Ahab dies at Ramoth-gilead as Micaiah had said. In the Hebrew Bible the two were one book, and it completes the history that begins in Joshua and runs through Judges and Samuel. The people brought into the land lose it.\n\nMany of the prophets whose books stand later in the Bible preached in these same reigns. Amos and Hosea spoke to the northern kingdom in the eighth century. Isaiah and Micah preached in Judah through the Assyrian crisis, and Jeremiah, Zephaniah and Habakkuk in Judah's last decades. Jonah is dated by this book to the reign of Jeroboam II (14:25). Reading 2 Kings beside them is like hearing the same years from the street and from the throne.\n\nFirst and 2 Chronicles retell the period from Judah's side for the community after the exile, sometimes adding what Kings leaves out. Lamentations mourns the fall that 2 Kings reports, and Ezra, Nehemiah, Haggai and Zechariah tell of a return that 2 Kings does not reach. Its first readers were Judeans in Babylon or in the ruins of Judah, asking what their history meant."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "Like 1 Kings, the book does not name its author. A Jewish tradition preserved in the Babylonian Talmud names the prophet Jeremiah. The link is real in one respect: 2 Kings 24:18 to 25:30 appears almost word for word as Jeremiah 52. Most scholars today think of an editor or a school of editors who shaped older sources into the book as it stands. Those sources are named again and again at the end of a reign, the Book of the Chronicles of the Kings of Israel and of Judah, probably royal annals, now lost. The long stories of Elijah and Elisha probably came from circles of prophets who kept them.\n\nSince Martin Noth's work in the 1940s, many scholars have read Deuteronomy through 2 Kings as one history, judged by Deuteronomy's standards: the LORD alone, worshiped at the one place he chose. Frank Moore Cross argued for a first edition under Josiah, whose reform is the book's high point, and a second in the exile. Others argue for one author working in the exile. Conservative scholars generally accept that sources were used and shaped, while stressing that the material is old and reliable.\n\nThe finished book can be no earlier than about 561 BC, the year Evil-merodach of Babylon released Jehoiachin (25:27-30). It says nothing of Cyrus's decree of 539 or 538 BC, or of any return, so most scholars date its completion to the middle of the sixth century BC, during the exile."
+      },
+      {
+        "id": "world",
+        "h": "Empires, dates, and what has been dug up",
+        "body": "Second Kings is the story of a small people caught between empires. In the ninth century Israel's main rival was Aram, the kingdom of Damascus. Assyria was already pressing west, and from the reign of Tiglath-pileser III (745 to 727 BC), called Pul in 15:19, it turned raiding into conquest, deporting whole populations and making kingdoms into provinces. Shalmaneser V besieged Samaria, and his successor Sargon II claimed its capture. In 701 BC Sennacherib invaded Judah and took Lachish. Then Assyria collapsed: Nineveh fell in 612 BC, Josiah died at Megiddo in 609 BC confronting Pharaoh Neco, and Nebuchadnezzar of Babylon defeated Egypt at Carchemish in 605 BC.\n\nThe kings' dates are approximate. Kingdoms counted a king's first year in different ways and sometimes had a son reigning beside his father, and scholars have proposed several reconstructions. This page follows the dates Edwin R. Thiele worked out, as the site's guide to the kings does, and says where the reckonings differ. They rarely differ by more than a few years: Samaria fell in 723 or 722 BC on Thiele's count, 722 or 721 in most histories; Jerusalem fell in 586 BC on Thiele's count, and many historians prefer 587.\n\nFrom here on, outside records touch the story often. The Mesha Stele, found at Dhiban in 1868, is Moab's own account of throwing off Israel's rule (compare chapter 3). The Black Obelisk of Shalmaneser III shows Jehu, or his envoy, bowing and bringing tribute, an event Kings does not mention. The Tel Dan Stele, found in fragments in 1993 and 1994, is an Aramaic inscription that refers to the house of David. Sennacherib's own annals boast of Hezekiah's tribute and claim no capture of Jerusalem, and reliefs of Lachish's fall decorated his palace at Nineveh. The Siloam tunnel inscription was cut into the water tunnel usually connected with Hezekiah (20:20). The Babylonian Chronicle records the capture of Jerusalem in 597 BC, and ration tablets from Babylon name Jehoiachin, king of Judah, receiving provisions in exile."
+      },
+      {
+        "id": "built",
+        "h": "How 2 Kings is built",
+        "body": "The book has six movements. Chapters 1 and 2 tell Elijah's last acts and Elisha's succession. Chapters 3 to 8 are the ministry of Elisha. Chapters 9 to 12 tell Jehu's purge in the north and the rescue of Joash in the south. Chapters 13 to 17 tell the last years of Israel, ending with the fall of Samaria and a long explanation of why it fell. Chapters 18 to 21 belong to Hezekiah and Manasseh, and chapters 22 to 25 to Josiah's reform and the fall of Jerusalem.\n\nEach reign is framed by a set pattern, as in 1 Kings: the year a king began, his age and, in Judah, his mother's name, how long he reigned, and a verdict on whether he did what was right or evil in the eyes of the LORD. Northern kings are almost always said to keep the sins of Jeroboam son of Nebat, the golden calves at Bethel and Dan. The story moves back and forth between the two kingdoms until Israel falls, and both kingdoms had kings named Jehoram or Joram, Ahaziah, and Jehoash or Joash at about the same time, so a reader has to watch which one is meant.\n\nWatch also for prophecy and fulfillment. Again and again the narrator notes that something happened according to the word of the LORD. The Elisha chapters are not a detour from the history. They show God at work in ordinary homes, among foreigners and in a besieged city while the kings fail."
+      },
+      {
+        "id": "elisha",
+        "h": "Elijah's cloak, and Elisha's wonders",
+        "body": "King Ahaziah falls through a lattice and sends to ask Baal-zebub, the god of Ekron, whether he will recover. Elijah meets his messengers with a question from the LORD: ‘Is it because there is no God in Israel’ (1:3) that they go to Ekron? Soldiers sent to seize the prophet are consumed by fire, until a third captain begs for mercy. The text presents it as the king's assault on the LORD's messenger. The New Testament refuses to make it a pattern: when two disciples wanted to call down fire from heaven on a Samaritan village, “Jesus turned and rebuked them” (Luke 9:55).\n\nThen Elijah is taken up. Elisha will not leave him, and when Elijah asks what he can do for him, Elisha answers, “Please, let me inherit a double portion of your spirit” (2:9). ‘Suddenly a chariot of fire with horses of fire appeared and separated the two of them, and Elijah went up into heaven in a whirlwind’ (2:11). Elisha takes up the cloak and parts the Jordan with it.\n\nAt Bethel a crowd of youths jeers at him, and he curses them in the LORD's name, and bears maul forty-two of them (2:23-24). It is one of the hardest scenes in the Bible. The Hebrew words can mean young men as well as children, and the crowd's size suggests a mob from the center of the calf worship, mocking the prophet at the start of his work. Other readers, granting all of that, still find the punishment severe, and the narrator reports it without comment. The text gives no one today a warrant to harm anyone, or to curse anyone who mocks them.\n\nElisha's wonders reach into ordinary homes. A prophet's widow, whose creditor is coming to take her two children as slaves (4:1), is given oil enough to pay her debts. A woman of Shunem who made a room for him is given a son, and when the boy dies in her lap, Elisha raises him. Naaman, the commander of Aram's army, comes because a young girl taken captive from Israel speaks of the prophet in Samaria (5:3). He washes seven times in the Jordan and declares, “Now I know for sure that there is no God in all the earth except in Israel” (5:15). At Dothan, surrounded, Elisha prays that his servant's eyes will be opened, ‘and he saw that the hills were full of horses and chariots of fire all around Elisha’ (6:17).\n\nThen famine comes to besieged Samaria, so severe that the text records mothers eating a child (6:28-29). It tells this in two verses as the curse the covenant had warned of, and these notes do not linger on it. The next day four men with leprosy find the Aramean camp deserted and say, “Today is a day of good news” (7:9). The LORD had not abandoned the city."
+      },
+      {
+        "id": "jehu",
+        "h": "Jehu, Jezebel, and a hidden king",
+        "body": "Elisha sends a young prophet to anoint Jehu, an army commander, king over Israel, with a charge to destroy the house of Ahab. Jehu drives to Jezreel and kills Joram, Ahab's son, on the field that had been Naboth's. He also has Ahaziah king of Judah shot. Jezebel meets him at her window, her own servants throw her down, and the dogs leave almost nothing of her, as Elijah had said (9:36). The text tells it briefly, and these notes do the same.\n\nIn chapter 10 Jehu has Ahab's seventy sons killed, then the rest of his family and officials, forty-two relatives of the king of Judah, and the worshipers of Baal, whom he gathers into their temple by a lie. ‘Thus Jehu eradicated Baal from Israel’ (10:28). The LORD tells him, “Because you have done well in carrying out what is right in My sight”, his sons will reign to the fourth generation (10:30). The very next verse qualifies the praise: ‘Yet Jehu was not careful to follow the instruction of the LORD’ (10:31). He kept the golden calves.\n\nAbout a century later the prophet Hosea named his son Jezreel, ‘for soon I will bring the bloodshed of Jezreel upon the house of Jehu’ (Hosea 1:4). Readers explain the tension in more than one way. Many hold that Jehu carried out a judgment on Ahab's house but went far beyond it, with cruelty and for his own ends, and that Hosea condemns the excess and the motive. Others see Jehu's purge as political, shown by his keeping the calves, so that the blood became guilt on his own house. Some critical scholars see two prophetic judgments set side by side. All agree that the chapter's verdict is mixed. Being used by God to carry out judgment does not make anyone righteous, and nothing here gives anyone a warrant to purge their enemies in God's name.\n\nIn Judah, when her son Ahaziah dies, Athaliah sets out ‘to annihilate all the royal heirs’ (11:1). His sister Jehosheba steals away the baby Joash, ‘and Joash remained hidden with his nurse in the house of the LORD for six years’ (11:3). In the seventh year the priest Jehoiada crowns him in the temple, Athaliah is put to death, and the covenant between the LORD, the king and the people is renewed. The lamp of David nearly went out, and it was kept alive in a hidden child. Joash later repairs the temple with an honest collection chest by the altar (chapter 12)."
+      },
+      {
+        "id": "fall-of-israel",
+        "h": "The north comes apart",
+        "body": "Jehu's line rules the north for nearly a century. Aram grinds Israel down, and the dying Elisha has King Jehoash strike the ground with arrows. Then the narrator stops to say why Israel survived so long: ‘But the LORD was gracious to Israel and had compassion on them, and He turned toward them because of His covenant with Abraham, Isaac, and Jacob’ (13:23).\n\nUnder Jeroboam II Israel reaches its widest borders in generations, ‘according to the word that the LORD, the God of Israel, had spoken through His servant Jonah son of Amittai’ (14:25), not as a reward for the king, who kept the calves, but ‘For the LORD saw that the affliction of the Israelites, both slave and free, was very bitter’ (14:26). Amos, preaching in those years, saw Samaria's wealth as a sign of injustice. After Jeroboam the kingdom comes apart in about twenty-five years. Four kings are assassinated, Menahem pays tribute to Assyria, and Tiglath-pileser carries off the people of Galilee and Gilead (15:29).\n\nIn the ninth year of Hoshea, after a three-year siege, ‘the king of Assyria captured Samaria and carried away the Israelites to Assyria’ (17:6). The narrator then stops the story to explain it. Israel worshiped other gods and refused the prophets: ‘Yet through all His prophets and seers, the LORD warned Israel and Judah’ (17:13), ‘But they would not listen’ (17:14). The chapter's harshest words are aimed at Israel and then at Judah, the writer's own people, not at the foreigners. The book was written for those who had lost everything, to help them see their own history honestly.\n\nIt is not a key for reading anyone else's suffering. These chapters give no one a warrant to say that any people's suffering, then or now, is a punishment they deserved, or to point at a nation, a city or a family in trouble and pronounce God's verdict on them. They are never a reason to blame the Jewish people. Jesus refused that kind of reasoning about disaster. The chapter also tells of the peoples Assyria settled in Samaria, who worshiped the LORD alongside their own gods (17:24-41). Later Jewish writers often used it against the Samaritans, who told their own story differently, and historians think many Israelites stayed in the land. By the time of Jesus the Samaritans worshiped the LORD alone, and the New Testament treats them as people to whom the gospel belongs.\n\nA word for anyone who has lived through a flood, a storm or another disaster. Your loss was not a judgment on you. When Jesus was asked about people killed when a tower fell, he refused that reading of a disaster: “Do you think that they were more sinful than all the others living in Jerusalem? No, I tell you” (Luke 13:4-5). If you are carrying this, you need people more than explanations. Please talk to someone you trust, and the Find Help page has people you can call."
+      },
+      {
+        "id": "hezekiah",
+        "h": "Hezekiah and the Assyrian siege",
+        "body": "Before Hezekiah came Ahaz, who ‘even sacrificed his son in the fire, according to the abominations of the nations’ (16:3). The text names the act plainly as an abomination and does not describe it. Faced with two armies, Ahaz turned to the gods of the nations and to the power of Assyria rather than the LORD, and paid Assyria with the temple's silver and gold.\n\nHis son is the opposite. ‘Hezekiah trusted in the LORD, the God of Israel. No king of Judah was like him, either before him or after him’ (18:5). He removes the high places and breaks up the bronze snake Moses made, because the people had been burning incense to it (18:4). He rebels against Assyria. When Sennacherib invades, Hezekiah first pays a heavy tribute, stripping even the gold from the temple doors, and readers differ on whether that was a lapse of faith or a king's attempt to spare a land already overrun. It does not buy safety. The Assyrian officer called the Rabshakeh stands outside the wall and asks, ‘What is the basis of this confidence of yours?’ (18:19), in Hebrew, so that the people on the wall can hear.\n\nHezekiah takes Sennacherib's letter into the temple, spreads it before the LORD and prays: ‘You alone are God over all the kingdoms of the earth’ (19:15), and ‘please save us from his hand, so that all the kingdoms of the earth may know that You alone, O LORD, are God’ (19:19). Isaiah answers that the king of Assyria will not enter the city. That night the angel of the LORD strikes the Assyrian camp, and Sennacherib goes home to Nineveh. Readers take the event in more than one way, as a direct act of God or as God acting through a sudden plague, and some question the size of the number. What is historically secure is that Sennacherib did not take Jerusalem, and his own records claim only tribute.\n\nThen Hezekiah falls ill, prays and weeps, and is given fifteen more years. When envoys come from Babylon, he shows them everything in his treasuries, and Isaiah says it will all be carried off to Babylon one day. Hezekiah answers that the word is good, and he thinks, “Will there not at least be peace and security in my lifetime?” (20:19). The narrator gives his spoken words and his private thought, and leaves the reader to weigh them."
+      },
+      {
+        "id": "manasseh-josiah",
+        "h": "Manasseh and Josiah",
+        "body": "Hezekiah's son Manasseh reigns fifty-five years, the longest reign in Judah, and undoes everything. He rebuilds the high places, sets up altars to Baal and to the stars in the temple courts, ‘He sacrificed his own son in the fire’ and ‘consulted mediums and spiritists’ (21:6). ‘Moreover, Manasseh shed so much innocent blood that he filled Jerusalem from end to end’ (21:16). The text names child sacrifice as the shedding of innocent blood, the deepest evil a king could do, and these notes do not describe it.\n\nA word for anyone who was not protected by a parent, or was handed over to harm by someone who should have kept them safe. This story does not call that right. What was done to you was wrong, and it was not your fault. If you are still in danger, please tell someone you trust and get help. The Find Help page on this site lists places to turn.\n\nThrough the prophets the LORD says that Jerusalem will be judged as Samaria was. Kings never mentions the repentance that 2 Chronicles 33 reports of Manasseh. Some historians think Chronicles preserves a real episode that Kings left out because it did not change the outcome, and others think the Chronicler shaped the story to teach that God answers repentance in every generation.\n\nThen comes Josiah, made king at eight after his father Amon is murdered. In his eighteenth year, during repairs to the temple, the high priest Hilkiah says, “I have found the Book of the Law in the house of the LORD!” (22:8). When it is read, the king tears his clothes. The prophetess Huldah confirms that disaster will come on Jerusalem, but because Josiah's heart was tender, ‘Your eyes will not see all the calamity that I will bring on this place’ (22:20). Josiah reads the book to all the people, ‘all the people small and great’ (23:2), and makes a covenant before the LORD. He purges the temple and the land, from Jerusalem to the altar at Bethel, and keeps a Passover like none since the judges.\n\n‘Neither before nor after Josiah was there any king like him, who turned to the LORD with all his heart and with all his soul and with all his strength, according to all the Law of Moses’ (23:25). And yet the next verse begins, ‘Nevertheless’ (23:26). Reform led from the top could not by itself turn a people's heart. Josiah is killed at Megiddo by Pharaoh Neco (23:29), and his sons rule under Egypt and then Babylon."
+      },
+      {
+        "id": "exile",
+        "h": "The fall of Jerusalem, and a king at the table",
+        "body": "Nebuchadnezzar of Babylon makes Jehoiakim his vassal, and Jehoiakim rebels. His son Jehoiachin reigns three months and surrenders in 597 BC. Nebuchadnezzar carries off the king, the royal family, the leaders, the soldiers and the craftsmen, strips the temple's gold, and sets up Jehoiachin's uncle Zedekiah as king. The narrator says it happened because of Manasseh's sins and the innocent blood he shed, ‘and the LORD was unwilling to forgive’ (24:4). That refusal concerns the verdict on Jerusalem as a city and a kingdom. It does not set a limit on God's mercy toward anyone who turns to him; Jeremiah, in these same years, called people to repent and promised a new covenant.\n\nZedekiah rebels too. Babylon besieges Jerusalem until famine breaks the city. Zedekiah flees by night and is caught near Jericho. His sons are killed in front of him, and he is blinded and taken to Babylon (25:7). A month later Nebuzaradan ‘burned down the house of the LORD, the royal palace, and all the houses of Jerusalem’ (25:9) and broke down the walls. The people are carried into exile, and only the poorest are left. The text tells the destruction in a few plain lines and does not linger over it.\n\nKings gives its own answer to why. King and people broke the covenant again and again, despite generations of warning. Lamentations grieves the same fall without pretending to understand everything, and Psalm 89 cries out that God seems to have renounced his covenant with David. Both are in the Bible. As with the fall of Samaria, this is Judah's own Scripture judging Judah's own kings. It gives no one a warrant to say that any people's suffering, then or now, is a punishment they deserved, and it is never a reason to blame the Jewish people.\n\nThe last scene comes thirty-seven years into the exile. The new king of Babylon releases Jehoiachin from prison, speaks kindly to him, sets his throne above the other captive kings, ‘So Jehoiachin changed out of his prison clothes, and he dined regularly at the king’s table for the rest of his life’ (25:29). The writer does not explain why he ends there. Readers have long seen in it a small light: David's line had not been cut off, and the story was not over."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads 2 Kings",
+        "body": "Jesus himself pointed to Elisha. At Nazareth he reminded his hometown, ‘there were many lepers in Israel in the time of Elisha the prophet. Yet not one of them was cleansed’ (Luke 4:27), except Naaman the Syrian. God's mercy had reached an enemy general, and Jesus would not let his hearers forget it.\n\nElijah, taken up in 2 Kings 2, stands behind John the Baptist. The angel told Zechariah that his son would go before the Lord ‘in the spirit and power of Elijah’ (Luke 1:17). The king's men had described Elijah as ‘a hairy man’ with ‘a leather belt around his waist’ (1:8), and Matthew says that John ‘wore a garment of camel’s hair, with a leather belt around his waist’ (Matthew 3:4). When two disciples wanted to call down fire as Elijah had, Jesus rebuked them (Luke 9:54-55).\n\nMatthew's family tree of Jesus runs through the kings of this book: ‘Uzziah was the father of Jotham, Jotham the father of Ahaz, and Ahaz the father of Hezekiah’, and on through Manasseh, Amon and Josiah to ‘Jeconiah and his brothers at the time of the exile to Babylon’ (Matthew 1:9-11). Jeconiah is Jehoiachin, the king released at the end of the book. The promise to David passed through faithful hands and through some of the worst kings in the Bible, and through the exile itself.\n\nThe New Testament draws those lines and no others from this book. It does not make every prophet or king in 2 Kings a picture of Christ. And nothing in 2 Kings, or in the New Testament's use of it, gives anyone reason to blame or look down on the Jewish people. This is Israel's own Scripture, telling the truth about Israel's own kings and grieving Israel's own losses."
+      },
+      {
+        "id": "readers",
+        "h": "How to read 2 Kings",
+        "body": "Read it as history with a question. Watch the verdict on each reign, and watch the prophets. A word spoken in one chapter comes true in another, sometimes centuries later, as when Josiah burns bones on the altar at Bethel that a man of God had cried out against in 1 Kings 13. Watch the lamp kept for David ‘for the sake of His servant David’ (8:19), through a hidden child and a released prisoner.\n\nDo not read prosperity as proof of God's approval, or disaster as proof of anyone's guilt. Jeroboam II prospered and did evil; Josiah was the best of kings and died in battle. Do not read the fire on the soldiers, the bears, Jehu's purge or Josiah's killing of the priests of the high places as a pattern for today. The New Testament gives the church no sword in matters of worship, and these chapters give no one a warrant for violence. And do not be surprised when the reforming kings fall short. The book honors Jehoash, Hezekiah and Josiah, and still shows that reform from the top cannot by itself change a people's heart.\n\nTwo places are worth reading slowly: Hezekiah's prayer with the enemy's letter spread before the LORD (chapter 19), and the last four verses, where a captive king changes out of his prison clothes. The story runs on in the books that come after it: in Lamentations' grief, in the prophets of the exile, and in Ezra and Nehemiah, where the people come home."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 10,
+        "ref": "1:9-16",
+        "line": "Fire on two captains and their fifty men, who came on their king's orders."
+      },
+      {
+        "ch": 2,
+        "v": 24,
+        "ref": "2:23-24",
+        "line": "Elisha curses a jeering crowd at Bethel, and two bears maul forty-two of them."
+      },
+      {
+        "ch": 3,
+        "v": 27,
+        "ref": "3:26-27",
+        "line": "Mesha sacrifices his son on the wall, and great fury falls on Israel: whose fury?"
+      },
+      {
+        "ch": 4,
+        "v": 1,
+        "ref": "4:1-7",
+        "line": "A creditor coming to take a widow's two children as slaves."
+      },
+      {
+        "ch": 4,
+        "v": 20,
+        "ref": "4:18-37",
+        "line": "A mother's only son dies in her lap, and she goes to the prophet."
+      },
+      {
+        "ch": 5,
+        "v": 18,
+        "ref": "5:15-19",
+        "line": "Naaman asks pardon in advance for bowing in the temple of Rimmon, and Elisha says, Go in peace."
+      },
+      {
+        "ch": 5,
+        "v": 27,
+        "ref": "5:20-27",
+        "line": "Gehazi's greed, and Naaman's disease on him and his descendants."
+      },
+      {
+        "ch": 6,
+        "v": 29,
+        "ref": "6:24-31",
+        "line": "Famine in besieged Samaria, and a king who blames God."
+      },
+      {
+        "ch": 7,
+        "v": 20,
+        "ref": "7:17-20",
+        "line": "The officer who scoffed is trampled to death in the gate."
+      },
+      {
+        "ch": 8,
+        "v": 10,
+        "ref": "8:7-15",
+        "line": "Did Elisha tell Hazael to lie to the king, or encourage him to murder?"
+      },
+      {
+        "ch": 9,
+        "v": 24,
+        "ref": "9:14-29",
+        "line": "Jehu kills Joram on Naboth's land and has Ahaziah of Judah shot."
+      },
+      {
+        "ch": 9,
+        "v": 33,
+        "ref": "9:30-37",
+        "line": "Jezebel thrown from a window, as Elijah had said."
+      },
+      {
+        "ch": 10,
+        "v": 7,
+        "ref": "10:1-11",
+        "line": "Ahab's seventy sons killed at Jehu's command."
+      },
+      {
+        "ch": 10,
+        "v": 30,
+        "ref": "10:28-31",
+        "line": "God praises Jehu's purge, and Hosea later condemns the blood of Jezreel."
+      },
+      {
+        "ch": 11,
+        "v": 1,
+        "ref": "11:1-3",
+        "line": "Athaliah sets out to destroy the royal family, and a baby is hidden."
+      },
+      {
+        "ch": 12,
+        "v": 20,
+        "ref": "12:17-21",
+        "line": "Kings speaks well of Joash, and Chronicles tells of his turning and a prophet stoned."
+      },
+      {
+        "ch": 13,
+        "v": 19,
+        "ref": "13:14-19",
+        "line": "Elisha angry at a king who struck the ground three times."
+      },
+      {
+        "ch": 13,
+        "v": 21,
+        "ref": "13:20-21",
+        "line": "A dead man revived at the touch of Elisha's bones."
+      },
+      {
+        "ch": 14,
+        "v": 27,
+        "ref": "14:23-29",
+        "line": "Jeroboam II did evil, and Israel prospered under him."
+      },
+      {
+        "ch": 15,
+        "v": 16,
+        "ref": "15:13-16",
+        "line": "Menahem's atrocity at Tiphsah, reported without comment."
+      },
+      {
+        "ch": 16,
+        "v": 3,
+        "ref": "16:1-4",
+        "line": "Ahaz sacrifices his son in the fire."
+      },
+      {
+        "ch": 17,
+        "v": 18,
+        "ref": "17:7-23",
+        "line": "The fall of Samaria explained as judgment."
+      },
+      {
+        "ch": 17,
+        "v": 33,
+        "ref": "17:24-41",
+        "line": "The settlers in Samaria, and the Samaritans' own story."
+      },
+      {
+        "ch": 18,
+        "v": 16,
+        "ref": "18:13-16",
+        "line": "Hezekiah, who trusted the LORD, pays tribute and strips the temple doors."
+      },
+      {
+        "ch": 19,
+        "v": 35,
+        "ref": "19:35-37",
+        "line": "The Assyrian camp struck in one night."
+      },
+      {
+        "ch": 20,
+        "v": 19,
+        "ref": "20:12-19",
+        "line": "Hezekiah hears of exile to come and thinks of peace in his own lifetime."
+      },
+      {
+        "ch": 21,
+        "v": 16,
+        "ref": "21:1-16",
+        "line": "Manasseh's child sacrifice and the innocent blood that filled Jerusalem."
+      },
+      {
+        "ch": 22,
+        "v": 20,
+        "ref": "22:14-20",
+        "line": "Huldah promised Josiah a peaceful grave, and he died in battle."
+      },
+      {
+        "ch": 23,
+        "v": 20,
+        "ref": "23:15-20",
+        "line": "Josiah kills the priests of the high places on their altars."
+      },
+      {
+        "ch": 24,
+        "v": 4,
+        "ref": "24:1-4",
+        "line": "‘The LORD was unwilling to forgive’: what that means."
+      },
+      {
+        "ch": 25,
+        "v": 7,
+        "ref": "25:1-7",
+        "line": "Zedekiah's sons killed before his eyes."
+      },
+      {
+        "ch": 25,
+        "v": 9,
+        "ref": "25:8-21",
+        "line": "If God chose Jerusalem, how could he let the city and the temple burn?"
+      }
+    ],
+    "words": [
+      {
+        "word": "Man of God",
+        "line": "A prophet, someone sent with God's word. Elisha is called this again and again, and the woman of Shunem calls him a holy man of God (4:9)."
+      },
+      {
+        "word": "Sons of the prophets",
+        "line": "Groups of prophets who lived and worked together around a senior prophet such as Elijah or Elisha (2:3; 4:38)."
+      },
+      {
+        "word": "Spirit",
+        "line": "In Hebrew ruach: spirit, wind or breath. Elisha asks for a double portion of Elijah's (2:9), the share of the firstborn heir."
+      },
+      {
+        "word": "Chariots of Israel",
+        "line": "Elisha's cry as Elijah is taken (2:12), and the king's cry over the dying Elisha (13:14): the prophet was Israel's real defense."
+      },
+      {
+        "word": "Leprosy",
+        "line": "In Hebrew tsara'at, a range of skin diseases, not only what is called leprosy today. Naaman had it (5:1), and so did four men at Samaria's gate (7:3)."
+      },
+      {
+        "word": "Lamp",
+        "line": "A picture of a family line kept alive. The LORD had promised to maintain a lamp for David (8:19)."
+      },
+      {
+        "word": "The sins of Jeroboam",
+        "line": "The golden calves at Bethel and Dan, which every northern king kept, even Jehu (10:29)."
+      },
+      {
+        "word": "High places",
+        "line": "In Hebrew bamah, local hilltop shrines. Even good kings left them, until Hezekiah removed them (18:4)."
+      },
+      {
+        "word": "Asherah",
+        "line": "A Canaanite goddess, and the wooden pole that stood for her. Manasseh set up a carved Asherah pole in the temple (21:7)."
+      },
+      {
+        "word": "Passed through the fire",
+        "line": "The Hebrew phrase behind the BSB's sacrificed in the fire (16:3; 21:6). Most scholars read it as child sacrifice, which the prophets call innocent blood."
+      },
+      {
+        "word": "Rabshakeh",
+        "line": "An Assyrian title, a chief officer, not a name. He mocked Hezekiah's trust outside Jerusalem's wall (18:17-35)."
+      },
+      {
+        "word": "Nehushtan",
+        "line": "The bronze snake Moses made, which the people had turned into an idol. Hezekiah broke it up (18:4)."
+      },
+      {
+        "word": "Book of the Law",
+        "line": "The scroll found in the temple in Josiah's eighteenth year (22:8), called the Book of the Covenant when he reads it to the people (23:2). Many scholars connect it with Deuteronomy."
+      },
+      {
+        "word": "Remnant",
+        "line": "Those who are left after judgment. Isaiah promised that a remnant would go out from Jerusalem (19:30-31)."
+      },
+      {
+        "word": "Exile",
+        "line": "Being carried off from the land. Israel went to Assyria (17:6), and Judah to Babylon (24:14-16; 25:21)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 852 BC",
+        "what": "Ahaziah of Israel dies after his fall, as Elijah had said (1:17), and his brother Joram reigns.",
+        "kind": "story"
+      },
+      {
+        "when": "About 852 to 841 BC",
+        "what": "Joram reigns in Israel, and Elisha's ministry fills chapters 3 to 8. Moab rebels (chapter 3), and Mesha tells his side on a stone found at Dhiban in 1868.",
+        "kind": "story"
+      },
+      {
+        "when": "841 BC",
+        "what": "Jehu kills Joram and Ahaziah and takes Israel's throne (chapter 9). Albright's reckoning gives 842. The same year Jehu, or his envoy, brings tribute to Shalmaneser III, shown on the Black Obelisk.",
+        "kind": "story"
+      },
+      {
+        "when": "About 841 to 835 BC",
+        "what": "Athaliah rules Judah, until the priest Jehoiada crowns Joash in the temple (chapter 11).",
+        "kind": "story"
+      },
+      {
+        "when": "About 798 to 782 BC",
+        "what": "Jehoash reigns in Israel. Elisha dies in his reign, after the arrows of victory (13:14-20).",
+        "kind": "story"
+      },
+      {
+        "when": "About 793 to 753 BC",
+        "what": "Jeroboam II restores Israel's borders, as Jonah had said (14:25). Amos and Hosea preach in the north.",
+        "kind": "story"
+      },
+      {
+        "when": "745 to 727 BC",
+        "what": "Tiglath-pileser III, called Pul (15:19), rules Assyria and begins deporting conquered peoples. Menahem pays him tribute.",
+        "kind": "world"
+      },
+      {
+        "when": "734 to 732 BC",
+        "what": "Aram and Israel attack Judah; Ahaz appeals to Assyria, which takes Damascus and Galilee (15:29; 16:5-9).",
+        "kind": "world"
+      },
+      {
+        "when": "723 or 722 BC",
+        "what": "Samaria falls after a three-year siege (17:5-6). Most histories give 722 or 721. Sargon II claimed the capture and the deportation.",
+        "kind": "story"
+      },
+      {
+        "when": "716 or 715 to 687 or 686 BC",
+        "what": "Hezekiah reigns in Judah, removes the high places and rebels against Assyria (chapter 18). Galil's reckoning gives 726 to 697.",
+        "kind": "story"
+      },
+      {
+        "when": "701 BC",
+        "what": "Sennacherib invades Judah, takes Lachish and besieges Jerusalem, but does not take it (chapters 18 and 19).",
+        "kind": "world"
+      },
+      {
+        "when": "About 697 to 642 BC",
+        "what": "Manasseh reigns fifty-five years, at first beside his father (21:1).",
+        "kind": "story"
+      },
+      {
+        "when": "622 BC",
+        "what": "In Josiah's eighteenth year the Book of the Law is found in the temple (22:3-8).",
+        "kind": "story"
+      },
+      {
+        "when": "612 BC",
+        "what": "Nineveh, Assyria's capital, falls to the Babylonians and Medes.",
+        "kind": "world"
+      },
+      {
+        "when": "609 BC",
+        "what": "Josiah is killed at Megiddo confronting Pharaoh Neco (23:29).",
+        "kind": "story"
+      },
+      {
+        "when": "605 BC",
+        "what": "Nebuchadnezzar defeats Egypt at Carchemish, and Judah becomes Babylon's vassal (24:1).",
+        "kind": "world"
+      },
+      {
+        "when": "597 BC",
+        "what": "Jerusalem surrenders; Jehoiachin and thousands are carried to Babylon (24:10-16). The Babylonian Chronicle records it.",
+        "kind": "story"
+      },
+      {
+        "when": "586 BC",
+        "what": "Jerusalem and the temple are burned (25:8-10). Many historians prefer 587.",
+        "kind": "story"
+      },
+      {
+        "when": "About 561 BC",
+        "what": "Evil-merodach releases Jehoiachin from prison (25:27-30). The finished book of Kings can be no earlier.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "Israel and Judah in the days of Elisha and the last kings",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "18:17",
+              "19:34",
+              "25:9"
+            ],
+            "line": "David's city. Sennacherib's officers mocked Hezekiah outside its wall (18:17-35), the LORD defended it (19:34), and Babylon burned it (25:8-10).",
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "2:2",
+              "2:23",
+              "23:15"
+            ],
+            "line": "Elijah and Elisha passed through it (2:2-3), youths jeered at Elisha on the road up (2:23), and Josiah tore down its altar (23:15).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "jericho",
+            "name": "Jericho",
+            "lat": 31.871,
+            "lon": 35.444,
+            "refs": [
+              "2:4",
+              "2:19",
+              "25:5"
+            ],
+            "line": "Elisha healed its spring (2:19-22). Zedekiah was overtaken in its plains as he fled (25:5).",
+            "label": {
+              "dx": 4,
+              "dy": -12,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "jordan",
+            "name": "The Jordan",
+            "lat": 31.84,
+            "lon": 35.55,
+            "refs": [
+              "2:7",
+              "2:13",
+              "5:14"
+            ],
+            "line": "Elijah and then Elisha parted it with the cloak (2:8, 14), and Naaman washed in it seven times (5:14).",
+            "label": {
+              "dx": 8,
+              "dy": 10,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "samaria",
+            "name": "Samaria",
+            "lat": 32.4,
+            "lon": 35.42,
+            "refs": [
+              "6:24",
+              "17:5",
+              "17:24"
+            ],
+            "region": true,
+            "line": "The northern hill country, named after Israel's capital, which Aram besieged (6:24) and Assyria took after three years (17:5-6). The book also uses the name for the region (17:24). Drawn roughly; the city is not marked."
+          },
+          {
+            "id": "dothan",
+            "name": "Dothan",
+            "lat": 32.41,
+            "lon": 35.24,
+            "refs": [
+              "6:13"
+            ],
+            "line": "Where the Arameans surrounded Elisha, and his servant saw the hills full of horses and chariots of fire (6:13-17).",
+            "label": {
+              "dx": -10,
+              "dy": -6,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "9:1",
+              "10:33",
+              "15:29"
+            ],
+            "region": true,
+            "line": "The land east of the Jordan. Jehu was anointed at Ramoth-gilead (9:1-6), Hazael took it (10:32-33), and Assyria carried off its people (15:29). Drawn roughly."
+          },
+          {
+            "id": "damascus",
+            "name": "Damascus",
+            "lat": 33.513,
+            "lon": 36.27,
+            "refs": [
+              "5:12",
+              "8:7",
+              "16:9"
+            ],
+            "line": "Capital of Aram, Naaman's home (5:12). Elisha went there and wept before Hazael (8:7-15), and Assyria took it (16:9).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "beersheba",
+            "name": "Beersheba",
+            "lat": 31.245,
+            "lon": 34.84,
+            "refs": [
+              "12:1",
+              "23:8"
+            ],
+            "line": "The southern edge of Judah. Joash's mother came from here (12:1), and Josiah defiled the high places ‘from Geba to Beersheba’ (23:8)."
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only nine places are drawn, each placed elsewhere on this site; Samaria and Gilead roughly, as regions. Gilgal, Shunem, Jezreel, Megiddo, Lachish, Ekron, Moab and Edom are left off, because where they lay is debated or is not placed in this site's records, and so are Assyria, Babylon and Egypt. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "Every king of both kingdoms with approximate dates, the prophets who spoke to them, and how the dates are worked out",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/empires",
+        "name": "The Empires Around Israel",
+        "line": "Assyria and Babylon, the kings the book names, and what their own records say",
+        "icon": "world"
+      },
+      {
+        "href": "/study/bible/guides/reading-narrative",
+        "name": "Reading the Stories",
+        "line": "How the Bible tells its stories, and why the narrator often reports without comment",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-prophets",
+        "name": "Reading the Prophets",
+        "line": "Who the prophets were, and how Amos, Hosea, Isaiah and Jeremiah spoke into these same reigns",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/doctrines/idolatry",
+        "name": "Idolatry",
+        "line": "Behind the calves, the high places, Baal and Manasseh's altars",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/judgment",
+        "name": "Judgment and Justice",
+        "line": "Behind the falls of Samaria and Jerusalem, and what they do and do not teach",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/exile",
+        "name": "Exile and Restoration",
+        "line": "Behind the exile that ends the book, and the return it does not reach",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/repentance",
+        "name": "Repentance and Forgiveness",
+        "line": "Behind Hezekiah's prayer, Josiah's torn clothes and Manasseh's story in Chronicles",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/the-violence-of-the-old-testament",
+        "name": "Why Is the Old Testament So Violent? An Honest Look",
+        "line": "For the bears, Jehu's purge and the siege chapters",
+        "icon": "world"
+      },
+      {
+        "href": "/questions/old-testament/what-archaeology-shows",
+        "name": "Does archaeology confirm the Old Testament?",
+        "line": "Mesha, the Black Obelisk, Tel Dan, Sennacherib's annals and Jehoiachin's rations",
+        "icon": "people"
+      },
+      {
+        "href": "/help/grief",
+        "name": "Someone I love has died",
+        "line": "For the Shunammite mother, and anyone who has lost a child: the Find Help page",
+        "icon": "people"
+      }
+    ]
+  }
 }
