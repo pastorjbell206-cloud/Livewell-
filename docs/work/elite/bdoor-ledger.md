@@ -18627,3 +18627,17 @@ Cut in chapter 10: the deep note's lines to Christ (John 1:3, 14 and Hebrews 4:1
 | Lifted hands as a posture of prayer; clean hands; sound counsel and beautiful promises; the pattern of the friends' endings; cruel only by its assumption; the hint in verse 20 | 13-20 | job/11.json `cultural`, `literary`, `doctrines` (repentance), `words` (tiqvah) | Repository |
 
 Cut in chapter 11: the deep note's lines to Christ (Romans 11:33 beside Zophar's hymn and 1 Corinthians 1:23-24 and 2:7; Paul quotes Job 41:11 in Romans 11:35, which is kept for chapter 41, but not Job 11); Mesopotamian prayers to reveal an unknown sin (not needed).
+
+## The plain notes on Job 12 (2026-11-25)
+
+`client/public/bible/notes/job/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapters 12 to 14 the longest reply; sarcasm; the laughingstock in an honor culture; verse 5 and the reflex of the comfortable; agreement on God's rule, disagreement on what it looks like; learning from animals (Proverbs 6:6); the only use of the LORD in the dialogue, and the manuscripts reading God | 1-12 | job/12.json `story`, `cultural`, `literary`, `historical`, `words` (YHWH) | Repository |
+| Isaiah 41:20, the same line word for word | 1-12 | job/12.json `historical`; BSB | Repository; BSB text |
+| The unusual hymn of God humbling the high; captives barefoot and Isaiah 20:2-4; no event named, fitting many periods; tohu and Genesis 1:2; the friends' order made to look naive | 13-25 | job/12.json `literary`, `cultural`, `historical`, `words` (tohu, sholal), `doctrines` | Repository |
+| Psalm 107:40 repeating 12:21 and 12:24 | 13-25 | BSB (the two texts compared) | BSB text |
+| The hard note: not that God lies; both under God's rule; Isaiah 19:14 and 1 Kings 22:19-23; Numbers 23:19 and Titus 1:2; the two readings; no scheme outside God's rule | 13-25 | job/12.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 12: the deep note's lines to Christ (1 Corinthians 1:20, 27, Luke 1:52, Philippians 2:8-9 and Colossians 2:3, which the note calls thematic); the dates of Nineveh's fall and Babylon's (not needed for a poem that names no event).
