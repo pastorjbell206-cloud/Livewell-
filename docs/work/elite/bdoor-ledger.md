@@ -18504,3 +18504,17 @@ Cut in chapter 2: the deep note's lines to Christ (Christ suffering in body, Joh
 | The self-harm line, handled as 1 Kings 19 was | 20-26 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 3: the deep note's lines to Christ (Matthew 27:46 and Psalm 22 beside Job's why; Hebrews 2:15 and the rest that death cannot give; the note calls the link a shared anguish, not a prediction); the rest Jesus offers (Matthew 11:28), from the word note on nuach.
+
+## The plain notes on Job 4 (2026-11-25)
+
+`client/public/bible/notes/job/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Eliphaz first, probably the eldest; Teman and Edom's wisdom; a real attempt to comfort; the ancient view of retribution in Egypt, Mesopotamia and Proverbs; his case stated as he would sign it; verse 7 assuming its answer; the reader knows; the gentle start and hard conclusion; the lion | 1-11 | job/4.json `story`, `historical`, `cultural`, `literary`, `words` (naqi, kislah) | Repository |
+| Jeremiah 49:7 | 1-11 | job/4.json `historical`; BSB | Repository; BSB text |
+| The hard note: true in general, misapplied; reasoning backward; 1 Corinthians 3:19; true ideas misapplied wound; no one may say verse 7 to the grieving; 42:7 | 1-11 | job/4.json `hard`, `doctrines` (revelation) | Repository |
+| Night visions; the details as authority; tardemah (Genesis 2:21; 15:12); the message true; frailty not guilt; the claimed revelation making the error worse | 12-21 | job/4.json `cultural`, `doctrines` (sin, humanity), `words` (tardemah), `hard` | Repository |
+| Genesis 2:7 | 12-21 | job/4.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 4: the deep note's line to John 9:2-3 and the cross (the note calls it pattern, not prophecy; the New Testament does not draw it from Job).
