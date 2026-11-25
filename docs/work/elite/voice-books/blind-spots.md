@@ -27,7 +27,8 @@ His limit for em-dashes is 2 to 3 per 500 words, which is 4 to 6 per 1,000. Head
 | Chapter 4: The Organized Blind Spot | 5,139 | 5,134 | -0.1% | 65 (12.6) | 17 (3.3) | 134 (26.1) | 82 (16.0) | 46 | PASS |
 | Chapter 5: When Fear Becomes Theology | 4,513 | 4,514 | +0.0% | 67 (14.8) | 13 (2.9) | 137 (30.4) | 80 (17.7) | 40 | PASS |
 | Chapter 6: The Progressive Blind Spot | 3,892 | 3,892 | +0.0% | 68 (17.5) | 12 (3.1) | 117 (30.1) | 62 (15.9) | 39 | PASS |
-| **All 7** | 29,418 | 29,396 | -0.1% | 428 (14.5) | 86 (2.9) | 929 (31.6) | 559 (19.0) | 304 | |
+| Chapter 7: The Conservative Blind Spot | 4,142 | 4,142 | +0.0% | 62 (15.0) | 10 (2.4) | 115 (27.8) | 64 (15.5) | 38 | PASS |
+| **All 8** | 33,560 | 33,538 | -0.1% | 490 (14.6) | 96 (2.9) | 1044 (31.1) | 623 (18.6) | 342 | |
 
 ## Introduction: Every Generation Was Convinced (`sec01.xhtml`)
 
@@ -195,3 +196,27 @@ Five pairs:
    After: Not relativism; some positions are closer to the biblical witness than others, and it is worth arguing for them carefully. Not paralysis; genuine uncertainty about some things does not require abandoning all conviction. Not false equivalence; some communities are more honestly wrestling with their blind spots than others.
 
 Left alone, and why. This chapter states his position on a contested question in nearly every paragraph, so it took punctuation only: 39 edits, every one a dash recast as a comma, colon, semicolon or brackets. Not one word changed (3,892 words before and after). No fragment was joined and no two-step turned, so that nothing here leans harder or softer on the progressive reader than he wrote it: "It relocates.", "First. The plank in your own eye, first.", "Not the clarity — the clarity may be genuine. The contempt.", and the four "told him he was right" sentences stay as they are. Every concession stays word for word ("This narrative is not entirely false.", "The program may be largely correct", "The planks are not equal; the diagnosis of asymmetry may be entirely correct."). Chapter 7, its pair, was held to the same rule so that the two chapters were treated alike.
+
+
+## Chapter 7: The Conservative Blind Spot (`sec10.xhtml`)
+
+Words 4,142 to 4,142. Em-dashes in his prose 62 to 10 (15.0 to 2.4 per 1,000 words). Tells 115 to 64 (27.8 to 15.5 per 1,000). Mean sentence 23.5 words to 23.5; sentences of eight words or fewer 22.3% to 22.3%; of five or fewer 11.4% to 11.4%. 38 edits; paragraphs 45 to 45.
+
+By kind (before to after): emdash 62 to 10, not_but 6 to 6, NotX.Y 6 to 6, isnt_its 2 to 2, triplet 13 to 14, anaphora 8 to 8, intens 10 to 10, colon_reveal 5 to 5, short_close 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (headings, subtitle, pull quote, block quotes and their references) identical; 6 quoted strings, 9 Scripture references, 0 years, 14 numbers in digits, 23 number words, proper names by count, and 56 hedge words (after: 56) compared.
+
+Five pairs:
+
+1. Before: At her best she is practicing tradition — receiving the wisdom of the community across time, testing the claims of the present moment against the weight of the whole, resisting the elevation of contemporary cultural assumptions to theological authority. At her worst she is practicing traditionalism — identifying the tradition with the truth so thoroughly that the tradition can no longer be corrected, that the mechanism by which the Spirit might speak a new word has been closed, that the community has, in effect, replaced Scripture with its own reading of Scripture while believing it has simply remained faithful to Scripture. The conservative instinct — to hold fast, to resist, to insist that not every change represents progress — is not wrong.
+   After: At her best she is practicing tradition: receiving the wisdom of the community across time, testing the claims of the present moment against the weight of the whole, resisting the elevation of contemporary cultural assumptions to theological authority. At her worst she is practicing traditionalism: identifying the tradition with the truth so thoroughly that the tradition can no longer be corrected, that the mechanism by which the Spirit might speak a new word has been closed, that the community has, in effect, replaced Scripture with its own reading of Scripture while believing it has simply remained faithful to Scripture. The conservative instinct (to hold fast, to resist, to insist that not every change represents progress) is not wrong.
+2. Before: Not because those arrangements, forms, and assumptions are wrong — some of them may be defensible, even right — but because the inability to distinguish between the defense of the faith and the defense of the community's cultural inheritance is the precondition for the mechanism's operation.
+   After: Not because those arrangements, forms, and assumptions are wrong (some of them may be defensible, even right) but because the inability to distinguish between the defense of the faith and the defense of the community's cultural inheritance is the precondition for the mechanism's operation.
+3. Before: The Pharisees and Herodians — an unlikely coalition of people who disagreed about nearly everything — came together to ask Jesus about taxes, hoping to trap him between loyalty to Caesar and loyalty to Israel.
+   After: The Pharisees and Herodians, an unlikely coalition of people who disagreed about nearly everything, came together to ask Jesus about taxes, hoping to trap him between loyalty to Caesar and loyalty to Israel.
+4. Before: In each case the fear of revision — the conviction that acknowledging the tradition's error would mean losing everything — prevented the very correction that could have stopped the catastrophe.
+   After: In each case the fear of revision, the conviction that acknowledging the tradition's error would mean losing everything, prevented the very correction that could have stopped the catastrophe.
+5. Before: That combination — eagerness to receive, commitment to examine, willingness to be changed — is the mark of faithfulness in the tradition of the biblical witness.
+   After: That combination (eagerness to receive, commitment to examine, willingness to be changed) is the mark of faithfulness in the tradition of the biblical witness.
+
+Left alone, and why. Held to the same rule as chapter 6, its pair: punctuation only, so that neither chapter was pressed harder than the other. Every one of the 38 edits is a dash recast; not one word changed. The concessions to the conservative reader stay word for word ("The instinct to preserve is not wrong.", "This fear is understandable. It is not entirely irrational.", "Something was lost there, and the loss was real.", "some of them may be defensible, even right"), and so does the paragraph that names both collapses, conservative and progressive, in one sentence. The closing "Not: abandon your convictions. Not: concede the progressive argument. ... But: ask whether ..." is his position and was not joined. "Precisely" in the sentence the pull quote echoes stays.
