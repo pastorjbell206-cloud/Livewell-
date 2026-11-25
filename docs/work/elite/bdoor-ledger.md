@@ -20816,3 +20816,25 @@ Cut in chapter 6: the deep note's line to Matthew 27:66 and the sealed tomb, a p
 | The hard note: no date calculated; numbers as symbols; the readings; Matthew 24:36; no present-day figure named | 23-28 `hard` | bible/guides/reading-apocalyptic.json (Numbers and time) | Repository |
 
 Cut in chapter 7: Hebrews 11:35 and Luke 12:32, first drafted as later lines, were cut before commit because the New Testament does not draw them from this chapter. The deep note's typological lines beyond the Son of Man sayings were left out. No care line is needed in this chapter.
+
+## The plain notes on Daniel 8 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1-8 | 1-8 | BSB | BSB text |
+| Return to Hebrew; the narrower focus; Belshazzar's third year, early 540s BC; Susa and Elam; present in vision; the named symbols; Media and Persia; Alexander from 334 BC, died 323; four kingdoms; rams, goats and horns; the verb to become great | 1-8 | daniel/8.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Esther 1:2; Nehemiah 1:1 (its clause) | 1-8 `later` | BSB | BSB text |
+| 8:9-14 | 9-14 | BSB | BSB text |
+| The Beautiful Land; Antiochus IV and 167 and 164 BC; the daily sacrifice (Exodus 29:38-42); the host; Epiphanes and Polybius's Epimanes; How long | 9-14 | daniel/8.json `historical`, `cultural` | Repository |
+| Psalm 13:1; Zechariah 1:12; Revelation 6:10 | 9-14 `later` | BSB | BSB text |
+| The hard note: 1,150 or 2,300 days; 167 to 164 BC; William Miller and 1844; a limited period; no date calculated | 9-14 `hard` | daniel/8.json `hard` | Repository; the readings in their holders' terms |
+| 8:15-22 | 15-22 | BSB | BSB text |
+| Gabriel the first named angel and his name; son of man as a mortal; the time of the end; the four kingdoms | 15-22 | daniel/8.json `literary`, `historical` | Repository |
+| Luke 1:19; Ezekiel 2:1 | 15-22 `later` | BSB | BSB text |
+| 8:23-27 | 23-27 | BSB | BSB text |
+| The insolent king as Antiochus; power not his own; broken without hands as in 2:34; the Prince of princes; Daniel ill and back at work | 23-27 | daniel/8.json `historical`, `literary` | Repository |
+| Daniel 11:21; Daniel 2:34; Psalm 2:4 (added when the validator asked for a book beyond Daniel) | 23-27 `later` | BSB | BSB text |
+
+Cut in chapter 8: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
