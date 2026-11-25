@@ -20619,3 +20619,22 @@ Cut in chapter 5: the deep note's lines to Christ (Matthew 5:27-28 as Jesus deep
 | Psalm 119:105; Exodus 22:1 (its consequence clause) | 20-35 | proverbs/6.json `doctrines` (law: Psalm 119:105), `historical` (Exodus 22:1-4); BSB | Repository; BSB text |
 
 Cut in chapter 6: the deep note's lines to Christ (Jesus as the opposite of the seven things, Ephesians 2:14-16; the false witnesses at his trial, Mark 14:55-59, set beside verse 19). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 7 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1; 7:2; 7:4 (its first clause, holding an inner quotation, paraphrased; its second clause quoted); 7:5 paraphrased; 7:6; 7:7 (its last clause); 7:8; 7:9 | 1-9 | BSB | BSB text |
+| The third and fullest warning; the evening told as a drama; ishon, the pupil of the eye; sister as family closeness and a bride's name in the Song; lattice windows and an unseen witness; twilight and empty, unlit streets; going where he had no business | 1-9 | proverbs/7.json `story`, `cultural`, `literary`, `words` (ishon) | Repository |
+| Psalm 17:8; Deuteronomy 11:18 (its second clause) | 1-9 | the chapter data's cross-references for 7:2 (Psalm 17:8) and 7:3 (Deuteronomy 11:18); BSB | Repository; BSB text |
+| 7:10; her manner (7:11-12); 7:13 paraphrased; 7:14; 7:16 (its clause); the perfumes (7:17); 7:18 not quoted; the husband away (7:19-20) paraphrased, the BSB's ‘journey’ not quoted; 7:21; 7:22; 7:23 paraphrased (the verse holds a dash) | 10-23 | BSB | BSB text |
+| Peace offerings (Leviticus 3 and 7) and meat to be eaten quickly (Leviticus 7:15-18); fresh meat as a rare luxury; imported linen and spices from Egypt, Arabia and farther east; a merchant on a trading trip; the pace slowing and quickening; the three animal similes | 10-23 | proverbs/7.json `historical`, `cultural`, `literary` | Repository |
+| James 1:14-15; 1 Corinthians 10:13 (its last sentence) | 10-23 | proverbs/7.json `christ` (James 1:14-15 and 1 Corinthians 10:13 as the New Testament's own words on temptation); BSB | Repository; BSB text |
+| The hard note: the feast explained; religion beside a plan to sin; the readings (foreign cults; a picture of idolatry; ordinary hypocrisy), not settled; observance no proof of a faithful heart | 10-23 `hard` | proverbs/7.json `hard` | Repository; each reading in its holders' terms |
+| 7:24; 7:25; 7:26; 7:27 | 24-27 | BSB | BSB text |
+| The house motif; Sheol; the heart before the feet (chapter 4); the preparation for chapters 8 and 9 and 9:18 | 24-27 | proverbs/7.json `literary`, `story`; proverbs/1.json `cultural` (Sheol) | Repository |
+| Solomon led astray (1 Kings 11:1-4); Nehemiah 13:26 (its first sentence) | 24-27 | the chapter data's cross-references for 7:26 (1 Kings 11:1-2; Nehemiah 13:26); BSB | Repository; BSB text |
+
+Cut in chapter 7: the deep note's lines to Christ (Hebrews 4:15 and Jesus tempted without sin; the temptation in the wilderness, Matthew 4:1-11, set against the young man); 2 Timothy 2:22 (not needed). The scene is told without the woman's explicit invitation (7:18) and without lingering.
