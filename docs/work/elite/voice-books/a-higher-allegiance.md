@@ -26,7 +26,8 @@ Three scripts, kept outside the repo in `/home/user/vs2/` (`apply.py`, `factdiff
 | Chapter 3: The Messiah You Want vs. the Messiah You Need | 4,105 | 4,090 | -0.4% | 3 (0.7) | 0 (0.0) | 155 (37.8) | 103 (25.2) | 46 | PASS |
 | Chapter 4: "Jesus Is Lord" | 4,674 | 4,661 | -0.3% | 2 (0.4) | 0 (0.0) | 125 (26.7) | 88 (18.9) | 31 | PASS |
 | Chapter 5: Civil Religion | 4,670 | 4,673 | +0.1% | 2 (0.4) | 0 (0.0) | 117 (25.1) | 94 (20.1) | 27 | PASS |
-| **All 6** | 23,185 | 23,085 | -0.4% | 14 (0.6) | 0 (0.0) | 745 (32.1) | 503 (21.8) | 207 | |
+| Chapter 6: How Christian Nationalism Quietly Rewrites Doctrine | 5,114 | 5,109 | -0.1% | 1 (0.2) | 0 (0.0) | 111 (21.7) | 84 (16.4) | 21 | PASS |
+| **All 7** | 28,299 | 28,194 | -0.4% | 15 (0.5) | 0 (0.0) | 856 (30.2) | 587 (20.8) | 228 | |
 
 ## Introduction: Not Persecuted—Seduced (`sec01.xhtml`)
 
@@ -170,3 +171,27 @@ Five pairs:
    After: A kingdom that cannot be shaken: not a nation that cannot be shaken (nations shake all the time), not an empire that cannot fall (empires fall regularly), but a kingdom, God's Kingdom, that is founded on something no political earthquake can touch. That is the invitation: not to stop caring about America, not to abandon civic responsibility, not to retreat into apolitical passivity, but to stop treating the American project as though it were the Kingdom of God, to stop wrapping the cross in the flag, to stop borrowing sacred language for national purposes, and to trust that the God who has sustained His church through the fall of Rome, the splintering of Christendom, the rise and fall of empires, and the upheaval of every civilization in history is more than capable of sustaining it through whatever happens to the United States of America. The church does not need a nation to survive. The church needs a King. And it already has one.
 
 Left alone, and why. The five concessions ("It is not wrong to be grateful ... It is not wrong to love your country.") are the fair statement of what is good in patriotism and stay as five sentences. "That is not patriotism. That is theology.", "America is not Israel.", "This is not anti-American sentiment. It is basic Christian theology." and "It deserves honor. It does not deserve worship." are verdicts. His answer to "Wasn't America founded on Christian values?" ("yes, in part. And also: no, in part. And both parts matter.") gives both halves their weight and was not touched. The national-covenant idea is traced "through the abolitionist movement, through the civil rights era, through the religious right", left and right in one sentence, word for word. The four things civil religion teaches and the three pathologies took punctuation only. One "precisely" went.
+
+
+## Chapter 6: How Christian Nationalism Quietly Rewrites Doctrine (`sec07.xhtml`)
+
+Words 5,114 to 5,109. Em-dashes in his prose 1 to 0 (0.2 to 0.0 per 1,000 words). Tells 111 to 84 (21.7 to 16.4 per 1,000). Mean sentence 13.2 words to 15.7; sentences of eight words or fewer 41.9% to 32.6%; of five or fewer 25.8% to 17.3%. 21 edits; paragraphs 87 to 83. Paragraphs of fifteen words or fewer 7 to 2; runs of three fragments 6 to 0.
+
+By kind (before to after): emdash 1 to 0, not_but 15 to 17, not_just 2 to 3, NotX.Y 10 to 3, triplet 14 to 15, frag3 6 to 0, anaphora 22 to 12, stock 1 to 1, intens 8 to 8, q_answered 6 to 6, colon_reveal 3 to 3, short_close 16 to 14, one_line_para 7 to 2.
+
+Fact diff: **PASS**. Fixed blocks (headings, pull quote, block quotes, and the end matter: Key Takeaways, Reflection Questions, Practices, Sources & Notes) identical; 53 quoted strings, 24 Scripture references, 0 years, 19 numbers in digits, 33 number words, proper names by count, and 70 hedge words (after: 70) compared. Words the name counter misread, allowed: Supreme.
+
+Five pairs:
+
+1. Before: The emergency never ends. Because there is always another election. Always another threat. Always another crisis that demands total mobilization.
+   After: The emergency never ends, because there is always another election, always another threat, always another crisis that demands total mobilization.
+2. Before: The Reformers fought and died over the principle of solus Christus—Christ alone. Salvation is through Christ alone. Not Christ plus works. Not Christ plus the sacramental system. Not Christ plus human merit.
+   After: The Reformers fought and died over the principle of solus Christus, Christ alone. Salvation is through Christ alone: not Christ plus works, not Christ plus the sacramental system, not Christ plus human merit.
+3. Before: Not by openly arguing that character does not matter, almost no one would say that in plain language. But by creating a system of moral reasoning in which character becomes subordinate to outcomes. In which the question "Is this person honest, kind, just, and self-controlled?
+   After: It does so not by openly arguing that character does not matter (almost no one would say that in plain language) but by creating a system of moral reasoning in which character becomes subordinate to outcomes, in which the question "Is this person honest, kind, just, and self-controlled?
+4. Before: That is the corrective. Not merely that Christ is important, everyone in the church will affirm that. But that Christ is preeminent. First. Central. Supreme. Not one voice among many. Not one source of security among several. Not one factor in the equation alongside political power, cultural influence, and legislative strategy.
+   After: That is the corrective: not merely that Christ is important (everyone in the church will affirm that), but that Christ is preeminent, first, central, supreme; not one voice among many, not one source of security among several, not one factor in the equation alongside political power, cultural influence, and legislative strategy.
+5. Before: Prayer. Scripture. Sabbath. Fasting. Silence. Confession. Communion. These are the practices that anchor the church's identity in something deeper than the news cycle.
+   After: Prayer, Scripture, Sabbath, fasting, silence, confession, communion: these are the practices that anchor the church's identity in something deeper than the news cycle.
+
+Left alone, and why. This chapter is the most developed prose in the book and took the fewest edits. "Christian nationalism quietly rewrites this." keeps its own line in each of the four sections; "It feels like faithfulness.", "It is a political caucus that opens with a prayer.", "I do not doubt their sincerity. I question the formation." and "Christ alone." are verdicts. The double standard is stated both ways and stays word for word ("When our leader lies, it is strategy. When their leader lies, it is corruption. ..."), and so does the pair "Not Scripture as filtered through the priorities of Fox News or MSNBC." and the test set to both sides ("A church that reserves prophetic speech only for the other side has become a propaganda arm"). The fair statement of the people he is correcting ("They are sincere. They love Jesus. They are afraid.") and the concession after the five slogans ("Policies do matter. Laws do shape cultures.") were not touched. The five slogans were five paragraphs and are one. Allowed: "Supreme" (the fragment "Supreme." is now "supreme" inside a sentence; "Supreme Court" is untouched).
