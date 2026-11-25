@@ -377,3 +377,7 @@ The chapters were not read whole for this list. It comes from reading every bloc
 2. Twenty years, or 16?
 3. Add a crisis line where the book speaks of suicide?
 4. "James C. Bell" or "James Bell" on the copyright line?
+
+## The files
+
+Rebuilt after the last chapter: still 167 pages (`client/src/data/ebooks.ts` says 167), PDF 1.3 MB, EPUB 302 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (45,183 words compared, no difference); the PDF's pages carry the same text character for character (233,796 against 233,796).

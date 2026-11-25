@@ -862,6 +862,11 @@ differ in is said under each book. Each was then edited (records in
   use it; both originals print "James C. Bell" there, and so do the new
   files. 189 pages became 167 (`client/src/data/ebooks.ts` says 167).
   `--verify`: identical (45,417 words; 233,792 characters).
+  Then edited (`bible-and-homosexuality.md`): 438 dashes in his prose to 2
+  (both inside words the book puts in a parent's mouth), every edit
+  punctuation, every position and steelman word for word, fact diff passed
+  on all fourteen files; rebuilt, still 167 pages, `--verify` identical
+  (45,183 words; 233,796 characters).
 
 ### The apparatus
 
