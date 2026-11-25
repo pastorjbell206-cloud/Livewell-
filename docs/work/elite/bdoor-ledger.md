@@ -18549,3 +18549,18 @@ Cut in chapter 5: the deep note's lines to Christ (Isaiah 53:5 and 1 Peter 2:24 
 | Psalm 88:18 | 14-30 | job/3.json `hard` (Psalm 88); the study guides quoting Psalm 88:18 on companions; BSB | Repository; BSB text (quoted from the BSB, which words the verse differently from those guides) |
 
 Cut in chapter 6: the deep note's lines to Christ (Mark 14:50 and John 15:13, which the note calls thematic).
+
+## The plain notes on Job 7 (2026-11-25)
+
+`client/public/bible/notes/job/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The hired hand and Deuteronomy 24:14-15; the slave and shade; the weaver's shuttle and the cut thread; Sheol, not hell, the end of return; breath (ruach, hevel) | 1-10 | job/7.json `cultural`, `literary`, `words` (hevel, Sheol) | Repository |
+| Psalm 39:5 | 1-10 | psalms/39.json and psalms/plain/39.json `hard` (Job 7:16, 7:19); BSB | Repository; BSB text |
+| Verse 11 as the hinge, speaking to God; Ugarit, Yam and the monsters of the deep, Psalm 74:13-14; Psalm 8 turned inside out; paqad; the last question | 11-21 | job/7.json `story`, `cultural`, `literary`, `words` (paqad, miphga) | Repository |
+| Psalm 8:4; Psalm 39:13 | 11-21 | job/7.json `literary` (Psalm 8); psalms/39.json `hard` (Job 7:19); BSB | Repository; BSB text |
+| The hard note: shocking words; 42:7 read two ways; the rebuke of chapters 38 to 41 and 42:6; lament not unbelief; verse 15 recorded without recommendation | 11-21 | job/7.json `hard` | Repository; each reading in its holders' terms |
+| The self-harm line, handled as 1 Kings 19 was | 11-21 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 7: the deep note's lines to Christ (Hebrews 2:6-9 beside Job's echo of Psalm 8; Mark 15:34 and Psalm 22:1; Hebrews 4:15; the cross as the answer to 7:21; the note calls them thematic); the Ludlul poem (no date in the repository and not needed).
