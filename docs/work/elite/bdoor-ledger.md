@@ -20509,3 +20509,25 @@ Every claim in `client/public/bible/notes/hosea/intro.json`, field `teaching`. N
 | Go deeper: eleven pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json, empires.json; bible/doctrines.json (Covenant; Idolatry; Repentance and Forgiveness; Judgment and Justice); context/guides/the-gods-of-the-nations.json, women-in-the-ancient-world.json; questions/morality/is-christianity-bad-for-women.json (status live); needs/marriage.json (page: true) | Repository; every page live; the Find Help page named by its own title |
 
 Cut from the book page: the introduction's line from Hosea's marriage to Christ as husband of the church (Ephesians 5:25), which the New Testament does not draw from Hosea; the third day of 6:2 is named only as a reading the New Testament never quotes. The violent verses 9:14, 10:14 and 13:16 are named and not quoted. The words of 2:3 and 2:10 are not quoted. The heading of 7:5 is paraphrased so that no first-person gloss stands in the prose.
+
+## The plain notes on Hosea 1 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The heading (1:1); 1:2; Gomer daughter of Diblaim and the son (1:3) | 1-3 | BSB | BSB text |
+| The eighth century; Jeroboam II and 2 Kings 14:23-29; Hezekiah; before about 753 BC into the last years; four kings of Judah and one of Israel, two explanations; a wife of harlotries; arranged marriage and a husband's honor; the shame as the point; the land's prostitution as Baal worship; zanah through the book | 1-3 | hosea/1.json `historical`, `cultural`, `words` (zanah) | Repository |
+| Jeremiah 2 to 3 and Ezekiel 16 and 23; Isaiah 7:3 and 8:3 | 1-3 | hosea/intro.json `story`; hosea/1.json `cultural` | Repository |
+| The hard note: three readings of the command (already known; named for what she became, 2:15; a vision or parable, medieval Jewish interpreters; most modern scholars and a real marriage); Hosea's pain mirrors God's; not a model | 1-3 `hard` | hosea/1.json `hard` | Repository; the readings in their holders' terms |
+| A prophetic sign; no warrant for any man to shame or harm a wife | 1-3 `hard` | the brief | Stated as the brief asks |
+| The care line ('Nothing in this passage asks anyone to stay where they or their children are in danger...' to '...lists places to turn.') | 1-3 `hard` | deuteronomy/plain/24.json; 1-corinthians/plain/7.json; colossians/intro.json and others | Reused whole, word for word; Find Help named; no phone number |
+| 1:4; 1:5 paraphrased; Lo-ruhamah and 1:6 (its clause); 1:7 (its clause after the dash); Lo-ammi and 1:9 | 4-9 | BSB | BSB text |
+| Names as statements; walking sermons; Jezreel city and valley; Jehu about 841 BC, Joram, Ahaziah, Jezebel, Ahab's house (2 Kings 9 to 10); Jeroboam II of Jehu's line; Zechariah after six months (2 Kings 15:8-12); some thirty years; racham and the womb; Lo-ammi and the covenant formula; the names harsher; ehyeh and Exodus 3:14; the BSB smoothing | 4-9 | hosea/1.json `cultural`, `historical`, `literary`, `words` (racham) | Repository |
+| 2 Kings 15:12 (the word to Jehu); Leviticus 26:12 | 4-9 | hosea/1.json `cultural` (Leviticus 26:12); BSB | Repository; BSB text |
+| The hard note: 2 Kings 10:30 against 1:4; three readings (excess and motive; political purge and guilt carried; two judgments side by side); being used for judgment does not make righteous; no warrant for violence in God's name | 4-9 `hard` | hosea/1.json `historical`; 2-kings/plain/10.json `hard`; 2-kings/intro.json `teaching` (jehu) | Repository; the readings in their holders' terms |
+| 1:10 (its first sentence); 1:10 paraphrased; 1:11 paraphrased and its last line | 10-11 | BSB | BSB text |
+| The names reversed; Jezreel as God sows; one leader and 3:5; the promise to Abraham; the Hebrew numbering 2:1-2 | 10-11 | hosea/1.json `literary`, `story`, `doctrines`, `words` (Jezreel) | Repository |
+| Genesis 22:17 (its phrase); Romans 9:26 (its clause, inside Paul's quotation); 1 Peter 2:10 | 10-11 | hosea/1.json `story`, `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+
+Cut in chapter 1: the deep note's line from Hosea's marriage to Christ who loved the church and gave himself up for her (Ephesians 5:25), which the New Testament does not draw from Hosea. The literal Hebrew of 1:9 is given in a paraphrase so that no first-person gloss stands in the prose. Genesis 22:17 is quoted only in part.
