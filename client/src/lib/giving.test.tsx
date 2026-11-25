@@ -78,8 +78,8 @@ describe("the committed files agree with the committed switch", () => {
     expect(isPlaceholderLine(facts.taxLine), "taxLine is empty or a template: see docs/work/elite/giving.md").toBe(false);
   });
 
-  it("says what James said on 2026-11-21: gifts go to him personally, and are not tax-deductible", () => {
-    expect(facts.recipientLine).toBe("Gifts go to James Bell personally, to keep the work of LiveWell going.");
+  it("says what James said on 2026-11-21 and 2026-11-25: gifts go to him personally, what is left after the costs plants churches, and a gift is not tax-deductible", () => {
+    expect(facts.recipientLine).toBe("Gifts go to James Bell personally. They pay what LiveWell costs to run, and whatever is left goes to planting churches around the world through the Ends Initiative and Gather Church.");
     expect(facts.taxLine).toBe("A gift is not tax-deductible.");
   });
 
