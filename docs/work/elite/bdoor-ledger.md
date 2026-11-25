@@ -20715,3 +20715,22 @@ Cut in chapter 10: the deep note's lines to Christ (Matthew 12:42 and Jesus' say
 | The hard note: the Hebrew ‘takes lives’ and 1:19; the three readings (winning people toward life; the Greek reading of violence; a wordplay); a saying about the influence of the righteous, not a technical instruction; a fair extension without overbuilding | 24-31 `hard` | proverbs/11.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 11: the deep note's lines set beside Jesus (Luke 6:38 beside verses 24-25; the rich fool, Luke 12:16-21, as verse 28 told as a story; the tree of life and Revelation 22:2; the note calls them thematic). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 12 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1; 12:3; 12:4; 12:7; 12:9; 12:10; 12:11 | 1-12 | BSB | BSB text |
+| Home, market and city, then the farm; the blunt restatement of 1:7; teachability as doorway; eshet chayil, 31:10 and Ruth; chayil as strength, ability, worth; a household's shared name; small family plots; the ox unmuzzled and the Sabbath rest (Deuteronomy 25:4; Exodus 20:10); nephesh of the animal; mercy that is cruelty | 1-12 | proverbs/12.json `story`, `historical`, `cultural` | Repository |
+| Ruth 3:11 (its last clause); Deuteronomy 25:4 | 1-12 | proverbs/12.json `cultural`; BSB | Repository; BSB text |
+| 12:13; 12:15; 12:16; 12:18; 12:19; 12:20; 12:21; 12:22; 12:23 | 13-23 | BSB | BSB text |
+| The longest block on speech; courts at the gate; two witnesses and the false witness's penalty (Deuteronomy 19:15-21); physical images; restraint and the overlooked insult | 13-23 | proverbs/12.json `historical`, `literary` | Repository |
+| Psalm 15:2; James 3:5 (its last sentence) | 13-23 | the chapter data's cross-references for 12:18 (James 3:6) and 12:22 (Psalm 15 by way of 12:17); BSB | Repository; BSB text |
+| The hard note: Abel and Jeremiah; the pattern; aven as trouble from wickedness; the whole Bible and Romans 8:28-39; never used to charge a sufferer with hidden guilt; Job's friends | 13-23 `hard` | proverbs/12.json `hard` | Repository |
+| 12:24; 12:25; 12:26; 12:27; 12:28 | 24-28 | BSB | BSB text |
+| Mas and Solomon's labor gangs (1 Kings 5:13-14); debt and servitude; verses 24 and 27 as a pair; a good word as one of the ordinary ways a burden is lightened; verse 28's two readings | 24-28 | proverbs/12.json `historical`, `literary` | Repository; each reading in its holders' terms |
+| Isaiah 50:4 (its clause); 1 Peter 3:10 (the quoted words) | 24-28 | the chapter data's cross-references for 12:25 (Isaiah 50:4); 1-peter/plain/3.json (Peter quoting the psalm); BSB | Repository; BSB text |
+
+Cut in chapter 12: the deep note's lines to Christ (Matthew 12:34-37 joined to these sayings; John 1:14 and 14:6 beside verse 19; Mark 13:31; the Gospels' healing word beside verse 18); Jesus as an example in the hard note (left to the Gospels). No care line is needed in this chapter.
