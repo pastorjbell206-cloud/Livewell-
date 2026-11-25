@@ -1,0 +1,117 @@
+{
+  "slug": "book-exodus",
+  "title": "Exodus: out of slavery, to God",
+  "group": "books",
+  "status": "finished",
+  "book": "exodus",
+  "mark": "book-exodus",
+  "line": {
+    "younger": "The second book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Exodus as a whole book: its two halves, the name of God, the Passover and the sea, a law given to people already rescued, the tent where God comes to live, and where to begin."
+  },
+  "poster": "Workers bend under loads of brick beside a great wall, and far above them a gold sun stands in the sky.",
+  "frames": [
+    {
+      "id": "rescue",
+      "name": "The book of the rescue",
+      "still": "Workers bend under loads of brick beside a great wall, and far above them a gold sun stands in the sky.",
+      "younger": "Exodus is the second book of the Bible. It begins where Genesis ended. God's people have become slaves in Egypt. They cry out, and God hears them.",
+      "older": "Exodus opens where Genesis ended. The family of Jacob has become a nation, and the nation a slave people. The rescue begins not with Israel's faith but with God's attention.",
+      "verse": {
+        "ref": "Exodus 2:24",
+        "text": "So God heard their groaning, and He remembered His covenant with Abraham, Isaac, and Jacob."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in six panels, with waves, a jar, a mountain, a measuring line, a broken stone and a tent over them. A gold rule lies under the third panel, the mountain.",
+      "younger": "Exodus has two halves. In the first, God brings his people out of Egypt. In the second, they stay at one mountain, Mount Sinai, where God makes them his own people and comes to live among them.",
+      "older": "The first half tells the rescue from Egypt and the road through the wilderness. The second half takes place almost entirely at Mount Sinai. The book gives as much space to God's dwelling as to Israel's rescue.",
+      "verse": {
+        "ref": "Exodus 19:4",
+        "text": "I carried you on eagles’ wings and brought you to Myself."
+      }
+    },
+    {
+      "id": "name",
+      "name": "Watch for: the name of God",
+      "still": "In the desert a man with a shepherd's staff has taken off his sandals and stands before a bush that burns with a gold flame and is not burned up.",
+      "younger": "Watch for God's name. A man named Moses sees a bush that burns and is not burned up, and God speaks to him from it. God tells Moses his name. The whole book is about getting to know who he is.",
+      "older": "The book turns on a name. At the bush God reveals himself as I AM, and as the LORD. Pharaoh begins by asking who the LORD is, that he should obey him. The plagues are sent so that Egypt and Israel will know.",
+      "verse": {
+        "ref": "Exodus 3:14",
+        "text": "God said to Moses, “I AM WHO I AM."
+      }
+    },
+    {
+      "id": "passover",
+      "name": "Watch for: the Passover and the sea",
+      "still": "Morning. A crowd of people with bundles and a donkey stands on the far shore of a sea, and a woman with a tambourine leads them in a song. A gold sun is rising.",
+      "younger": "Watch for the night God sets his people free. Each family marks its door with the blood of a lamb, and God passes over those houses. It was a night of great sadness in Egypt. Then God opens a way through the sea.",
+      "older": "Israel keeps the first Passover and goes free on a night of great sadness in Egypt. At the sea God makes a way. This is the Old Testament's defining act of salvation, and the rest of the Bible keeps coming back to it.",
+      "verse": {
+        "ref": "Exodus 15:2",
+        "text": "The LORD is my strength and my song, and He has become my salvation."
+      }
+    },
+    {
+      "id": "law",
+      "name": "Watch for: a law for rescued people",
+      "still": "A mountain stands wrapped in cloud, and a great crowd waits at its foot. Two stone tablets stand in front of them.",
+      "younger": "Watch for when the rules come. God gives the Ten Commandments after he has rescued his people, not before. The rules are not a way to earn his love. They show rescued people how to live.",
+      "older": "One Hebrew word means both to serve as a slave and to serve God in worship. Exodus is a change of masters. And the laws are not a ladder by which Israel earned God's favor. They are given to people already rescued.",
+      "verse": {
+        "ref": "Exodus 20:2",
+        "text": "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery."
+      }
+    },
+    {
+      "id": "tent",
+      "name": "Watch for: God comes to live with them",
+      "still": "A camp of tents in the desert. In the middle stands one large tent with a cloud resting on it and gold light at its door.",
+      "younger": "Watch for the tent. God does not only bring his people out. He brings them to himself. They build a tent, just as he tells them, and at the end of the book his glory fills it.",
+      "older": "The book's last third is about a tent. The golden calf nearly ends that hope, and Moses pleads for the people. God renews the covenant, and the book ends with the goal the whole story has moved toward.",
+      "verse": {
+        "ref": "Exodus 40:34",
+        "text": "the glory of the LORD filled the tabernacle."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter one, in Egypt. Then read chapter three, about the burning bush, and chapter fourteen, about the sea. When you come to the chapters about the tent, do not hurry.",
+      "older": "Start with chapter 1. The book's page marks eight key chapters: 3, 12, 14, 19, 20, 32, 34 and 40. Do not hurry through the tabernacle chapters. Their length is part of the point.",
+      "verse": {
+        "ref": "Exodus 34:6",
+        "text": "The LORD, the LORD God, is compassionate and gracious, slow to anger"
+      }
+    }
+  ],
+  "think": {
+    "younger": "God set his people free so that they could belong to him. What is the difference between being free and belonging to no one?",
+    "older": "Exodus gives as much room to the tent as to the rescue. Why do you think God wanted to live among his people, and not only to save them?"
+  },
+  "read": [
+    { "label": "Exodus 1", "href": "/study/bible/exodus/1" },
+    { "label": "Exodus 3", "href": "/study/bible/exodus/3" },
+    { "label": "Exodus 14", "href": "/study/bible/exodus/14" },
+    { "label": "Exodus 20", "href": "/study/bible/exodus/20" },
+    { "label": "Exodus 40", "href": "/study/bible/exodus/40" }
+  ],
+  "stops": [
+    "rescue",
+    "sinai"
+  ],
+  "cards": [],
+  "care": "This part of the story has death and fear in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Exodus in the Study Bible: the whole book, taught from the start", "href": "/study/bible/exodus" },
+    { "label": "The Exodus: out of Egypt (a moving picture)", "href": "/study/explorer/watch/the-exodus" },
+    { "label": "God with his people (a moving picture)", "href": "/study/explorer/watch/god-with-his-people" },
+    { "label": "Promises that build: the covenants (a moving picture)", "href": "/study/explorer/watch/covenant" },
+    { "label": "Genesis: the book of beginnings (a moving picture)", "href": "/study/explorer/watch/book-genesis" }
+  ],
+  "end": { "label": "Start reading: Exodus 1", "href": "/study/bible/exodus/1" }
+}

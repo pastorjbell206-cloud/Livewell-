@@ -1715,6 +1715,10 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-psalms",
     "book-john",
     "book-romans",
+    "book-exodus",
+    "book-proverbs",
+    "book-isaiah",
+    "book-matthew",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -1747,11 +1751,11 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
   it("none of them speaks in the first person, presses for a decision, or dates the earth", () => {
     for (const slug of NEW) {
       const f = filmFile(slug);
-      // What a film quotes is set aside, and so is "I am", which the film
-      // on John names as Jesus' own words.
+      // What a film quotes is set aside, and so is "I am", which the films
+      // on John and Exodus name as Jesus' own words and as God's name.
       const own = captions(f)
         .replace(/“[^”]*”/g, " ")
-        .replace(/\bI am\b/g, " ");
+        .replace(/\bI (am|AM)\b/g, " ");
       expect(own, slug).not.toMatch(/\b(I|I'm|I've|my|me|we|our|us)\b/);
       expect(text(f), slug).not.toMatch(
         /pray this prayer|decide today|right now, before|before it is too late/i
@@ -2111,5 +2115,95 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     };
     expect(scene.LAYOUT).toEqual([3, 2, 3, 3, 4, 1]);
     expect(f.care).toBe(filmFile("the-king").care);
+  });
+
+  it("Exodus tells the Passover night as the Exodus story film does, draws no death, and gives no date or route", () => {
+    const f = filmFile("book-exodus");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/rescue.json"), "utf8")
+    ) as { care: string };
+    expect(f.care).toBe(stop.care);
+    const t = text(f);
+    expect(t).toContain("a night of great sadness in Egypt");
+    expect(text(filmFile("the-exodus"))).toContain(
+      "a night of great sadness in Egypt"
+    );
+    expect(t).toContain(
+      "the laws are not a ladder by which Israel earned God's favor"
+    );
+    expect(t).not.toMatch(
+      /\b1[2-5]\d\d\b|\bBC\b|Red Sea|Sea of Reeds|600,000|Rameses|Ramesses/
+    );
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /firstborn|dead|drown|bod(y|ies)|blood|soldier|army/i
+    );
+  });
+
+  it("Proverbs says what a proverb is: how life usually goes, not a promise for every case", () => {
+    const f = filmFile("book-proverbs");
+    const t = text(f);
+    expect(t).toContain(
+      "A proverb is a compressed observation about how life usually goes under God, not a guarantee for every case."
+    );
+    expect(t).toContain("It is not a promise for every time.");
+    expect(t).toContain(
+      "Wisdom in Proverbs is not cleverness or book learning."
+    );
+    expect(t).not.toMatch(
+      /God will make you rich|always prosper|guarantee[sd]? (you|that)/i
+    );
+    expect(f.care).toBeUndefined();
+  });
+
+  it("Isaiah reads the Servant as the New Testament does, names the other reading, and blames no people", () => {
+    const f = filmFile("book-isaiah");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/exile.json"), "utf8")
+    ) as { care: string };
+    expect(f.care).toBe(stop.care);
+    const t = text(f);
+    expect(t).toContain(
+      "Jewish interpreters have often read the Servant as Israel. The New Testament sees all three in Jesus."
+    );
+    expect(t).toContain("it falls on Judah and on every nation alike");
+    expect(t).toContain("It is not where the book ends.");
+    expect(captions(f)).not.toMatch(
+      /\bJews?\b|God (rejected|abandoned|cast off)|deserved|punished them/i
+    );
+    // No date in the captions, and no battle or ruin in any picture.
+    expect(captions(f)).not.toMatch(/\bBC\b|\b[5-8]\d\d\b/);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /battle|ruin|burn|dead|blood|chains/i
+    );
+  });
+
+  it("Matthew carries the book page's caution at both levels: an argument among Jews, no verdict on the Jewish people", () => {
+    const f = filmFile("book-matthew");
+    const intro = JSON.parse(
+      fs.readFileSync(
+        path.join(PUBLIC, "bible/notes/matthew/intro.json"),
+        "utf8"
+      )
+    ) as { reading: string };
+    expect(intro.reading).toContain(
+      "belong to an argument among Jews about Israel's Scriptures"
+    );
+    const fr = f.frames.find(x => x.id === "nations")!;
+    expect(fr.older).toContain(
+      "belong to an argument among Jews about Israel's Scriptures, and are no verdict on the Jewish people"
+    );
+    expect(fr.younger).toContain(
+      "Jesus is a Jew, and so are all his first friends."
+    );
+    expect(fr.younger).toContain(
+      "never a reason to think badly of Jewish people"
+    );
+    expect(captions(f)).not.toMatch(
+      /the Jews (killed|rejected|hated|wanted)|Jews (killed|murdered|crucified)|His blood be on us/i
+    );
+    expect(f.care).toBe(filmFile("the-king").care);
+    expect(f.frames.map(fr2 => fr2.still).join(" ")).not.toMatch(
+      /\bcross\b|blood/i
+    );
   });
 });

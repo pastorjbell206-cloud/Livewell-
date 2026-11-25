@@ -1,0 +1,117 @@
+{
+  "slug": "book-matthew",
+  "title": "Matthew: God with us",
+  "group": "books",
+  "status": "finished",
+  "book": "matthew",
+  "mark": "book-matthew",
+  "line": {
+    "younger": "The first book of the New Testament: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Matthew as a whole book: the son of David and of Abraham, five great blocks of teaching, fulfillment, the kingdom of heaven, the way of the cross, all nations, and where to begin."
+  },
+  "poster": "Night. A man and a woman stand at the door of a small house with a baby in the woman's arms, and one gold star stands above the house.",
+  "frames": [
+    {
+      "id": "immanuel",
+      "name": "God with us",
+      "still": "Night. A man and a woman stand at the door of a small house with a baby in the woman's arms, and one gold star stands above the house.",
+      "younger": "Matthew is the first book of the New Testament, one of the four books that tell the story of Jesus. It begins with a family tree, to show that Jesus comes from the family of Abraham and of King David.",
+      "older": "Matthew tells the story of Jesus with Israel's Scriptures always in view. It opens with a genealogy tracing him through King David to Abraham. Its Jesus is the promised Messiah, the teacher greater than Moses, and Immanuel.",
+      "verse": {
+        "ref": "Matthew 1:23",
+        "text": "they will call Him Immanuel” (which means, “God with us”)."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in seven panels, with a star, a hill, a boat, a seed, a road, a city gate and an open tomb over them. A gold rule lies under the second panel, the hill.",
+      "younger": "Matthew takes turns: a part of the story, then a long speech by Jesus. There are five long speeches. The first is the most famous, the Sermon on the Mount. The book ends with the cross and the empty tomb.",
+      "older": "Matthew alternates story and speech. Five long discourses, beginning with the Sermon on the Mount, each close with the same formula. They make this the fullest collection of Jesus' words among the Gospels.",
+      "verse": {
+        "ref": "Matthew 7:28",
+        "text": "When Jesus had finished saying these things"
+      }
+    },
+    {
+      "id": "fulfill",
+      "name": "Watch for: promises kept",
+      "still": "In a synagogue a reader stands holding a scroll open, and Jesus sits among the listeners. A lamp with a gold flame hangs above the scroll.",
+      "younger": "Watch for the word fulfill. Again and again Matthew stops and says: this happened to fulfill what God said long ago through a prophet. He wants you to see that the story of Jesus finishes the story of Israel.",
+      "older": "Matthew sees Jesus as the goal of Israel's Scriptures. The fulfillment formulas, the genealogy, and the patterns that echo Moses and the exodus present his story as the completion of the story of Israel.",
+      "verse": {
+        "ref": "Matthew 5:17",
+        "text": "I have not come to abolish them, but to fulfill them."
+      }
+    },
+    {
+      "id": "kingdom",
+      "name": "Watch for: the kingdom of heaven",
+      "still": "Jesus sits on a hillside and teaches, and a crowd sits on the grass below him. A gold sun stands over the hill.",
+      "younger": "Watch for the kingdom of heaven. That means God's rule, and Jesus says it has come near. On a mountain he teaches what life in that kingdom is like. He blesses the poor and the gentle, and he teaches his friends to pray.",
+      "older": "The kingdom of heaven means God's reign, arriving in Jesus' own person and work. It is present in his healings and teaching, hidden and growing like a mustard seed, and yet to come in fullness.",
+      "verse": {
+        "ref": "Matthew 4:17",
+        "text": "Repent, for the kingdom of heaven is near."
+      }
+    },
+    {
+      "id": "who",
+      "name": "Watch for: who he is",
+      "still": "On a road among hills Jesus stands and faces one of his friends, who has stepped forward from the others with a hand held out.",
+      "younger": "Watch for the question in the middle of the book. Jesus asks his friends who they say he is, and Peter answers. From then on, Jesus begins to tell them that he must go to Jerusalem, suffer and die, and rise again.",
+      "older": "In the middle of the book Peter confesses Jesus as the Christ, and from that time Jesus begins to show his disciples that he must suffer, be killed, and on the third day be raised. The story turns toward Jerusalem and the cross.",
+      "verse": {
+        "ref": "Matthew 16:16",
+        "text": "You are the Christ, the Son of the living God."
+      }
+    },
+    {
+      "id": "nations",
+      "name": "Watch for: Israel and all nations",
+      "still": "Morning on a mountain. Jesus stands with one hand held out toward far hills and towns, and his friends stand and kneel beside him. A gold sun is rising.",
+      "younger": "Watch how wide the book grows. Jesus is a Jew, and so are all his first friends. When he argues with some of the teachers, it is an argument inside one family, never a reason to think badly of Jewish people. At the end he sends his friends to every nation.",
+      "older": "Matthew is a deeply Jewish book. Its sharp words against scribes and Pharisees belong to an argument among Jews about Israel's Scriptures, and are no verdict on the Jewish people. Jesus is sent first to Israel, and the Gospel ends with all nations.",
+      "verse": {
+        "ref": "Matthew 28:19",
+        "text": "Therefore go and make disciples of all nations"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter one, and do not skip the family tree. Then read chapters five, six and seven, the Sermon on the Mount. The book's last words keep the promise in its first chapter.",
+      "older": "Start with chapter 1. The book's page marks seven key chapters: 1, 5, 6, 13, 16, 26 and 28. The Gospel opens with the name Immanuel and closes with the risen Jesus keeping it.",
+      "verse": {
+        "ref": "Matthew 28:20",
+        "text": "And surely I am with you always, even to the end of the age."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Jesus is called God with us. When would you most like to remember that he is with you?",
+    "older": "Matthew says the kingdom's righteousness is a changed heart, not added rules. Where do you find it easier to add a rule than to change?"
+  },
+  "read": [
+    { "label": "Matthew 1", "href": "/study/bible/matthew/1" },
+    { "label": "Matthew 5", "href": "/study/bible/matthew/5" },
+    { "label": "Matthew 13", "href": "/study/bible/matthew/13" },
+    { "label": "Matthew 16", "href": "/study/bible/matthew/16" },
+    { "label": "Matthew 28", "href": "/study/bible/matthew/28" }
+  ],
+  "stops": [
+    "jesus",
+    "cross"
+  ],
+  "cards": [],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Matthew in the Study Bible: the whole book, taught from the start", "href": "/study/bible/matthew" },
+    { "label": "The kingdom of God (a moving picture)", "href": "/study/explorer/watch/kingdom-of-god" },
+    { "label": "Who Jesus is (a moving picture)", "href": "/study/explorer/watch/who-jesus-is" },
+    { "label": "A blessing for all nations (a moving picture)", "href": "/study/explorer/watch/all-nations" },
+    { "label": "John: the Word made flesh (a moving picture)", "href": "/study/explorer/watch/book-john" }
+  ],
+  "end": { "label": "Start reading: Matthew 1", "href": "/study/bible/matthew/1" }
+}

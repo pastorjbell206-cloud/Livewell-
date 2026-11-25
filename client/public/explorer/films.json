@@ -49,6 +49,10 @@
     { "slug": "book-psalms", "title": "Psalms: the prayer book of the Bible", "group": "books", "status": "finished" },
     { "slug": "book-john", "title": "John: the Word made flesh", "group": "books", "status": "finished" },
     { "slug": "book-romans", "title": "Romans: the good news, set out", "group": "books", "status": "finished" },
+    { "slug": "book-exodus", "title": "Exodus: out of slavery, to God", "group": "books", "status": "finished" },
+    { "slug": "book-proverbs", "title": "Proverbs: skill for ordinary days", "group": "books", "status": "finished" },
+    { "slug": "book-isaiah", "title": "Isaiah: the Holy One who comforts", "group": "books", "status": "finished" },
+    { "slug": "book-matthew", "title": "Matthew: God with us", "group": "books", "status": "finished" },
 
     { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
     { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },
