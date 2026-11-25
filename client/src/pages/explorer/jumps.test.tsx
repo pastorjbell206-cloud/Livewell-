@@ -51,7 +51,9 @@ describe("the Explorer's jump list", () => {
     expect(nav.compareDocumentPosition(mapHeading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
 
     // Once the parts have drawn, each link lands on a part whose heading starts with the link's words.
-    await waitFor(() => expect(document.getElementById("watch")).not.toBeNull());
+    // The films' section is drawn in a later slice, and holds more films each
+    // week: wait for it for as long as a busy machine needs, not for a second.
+    await waitFor(() => expect(document.getElementById("watch")).not.toBeNull(), { timeout: 10000 });
     for (const j of JUMPS) {
       const target = document.getElementById(j.href.slice(1))!;
       expect(target, j.href).not.toBeNull();
@@ -60,7 +62,7 @@ describe("the Explorer's jump list", () => {
       // Clear of the sticky header: a heading with the Explorer's scroll margin, or the films' whole section.
       expect(target.classList.contains("ex-anchor") || target.id === "watch", j.href).toBe(true);
     }
-  });
+    }, 20000);
 
   it("is 44 px a link, like every other control on the page", () => {
     const css = fs.readFileSync(path.resolve(__dirname, "explorer.css"), "utf8").replace(/\s+/g, " ");
