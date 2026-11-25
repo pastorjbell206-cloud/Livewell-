@@ -29,6 +29,10 @@ import { isPublicEssayHref } from "@/lib/shelf";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import { READER_STATES, searchNeeds, type NeedEntry, type NeedsIndex, type ReaderState } from "@/lib/needs";
 import { crisisTopicsFor } from "@/lib/siteSearch";
+// "What people bring most": the first twelve care pages by rank, written with
+// the index by scripts/build-needs-index.mjs. On the page from its first paint,
+// so the crisis lines under them never move when the index arrives.
+import HELP_CHIPS from "@/data/help-chips.json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const isIndex = (x: unknown): x is NeedsIndex => !!x && Array.isArray((x as NeedsIndex).needs);
@@ -123,7 +127,7 @@ export default function Help() {
   // A reader who types their trouble here ("I want to die") is shown how to
   // reach a person before any page, as on /search.
   const typedCrisis = useMemo(() => crisisTopicsFor(query), [query]);
-  const chips = useMemo(() => (needs ? needs.filter((n) => n.page).slice(0, 12) : []), [needs]);
+  const chips = HELP_CHIPS;
   const inState = useMemo(() => (needs ? needs.filter((n) => n.states.includes(state)) : []), [needs, state]);
   const pages = inState.filter((n) => n.page);
   const starters = inState.filter((n) => !n.page);

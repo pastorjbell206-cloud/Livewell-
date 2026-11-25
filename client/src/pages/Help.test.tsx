@@ -72,3 +72,33 @@ describe("Find Help's lines", () => {
     }
   });
 });
+
+describe("The crisis lines on Find Help", () => {
+  it("never move: the needs most people bring are on the page before the list arrives, above them", async () => {
+    // The chips came with the needs index, after first paint, and pushed the
+    // crisis section down the screen (a layout shift of 0.137 on a phone).
+    let send: () => void = () => {};
+    const arrived = new Promise<void>((resolve) => { send = resolve; });
+    const base = offlineFetch();
+    vi.stubGlobal("fetch", vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
+      if (String(input) !== "/needs/index.json") return base(input, init);
+      await arrived;
+      return new Response(fs.readFileSync(path.join(PUBLIC, "needs/index.json"), "utf8"), { status: 200, headers: { "Content-Type": "application/json" } });
+    }));
+    renderWithProviders(<Help />);
+
+    const crisis = document.getElementById("help-now")!;
+    const chips = () => screen.getByText("What people bring most").nextElementSibling as HTMLElement;
+    const first = NEEDS.filter((n) => n.page).slice(0, 12);
+    const before = within(chips()).getAllByRole("link");
+    expect(before.map((a) => [a.textContent, a.getAttribute("href")])).toEqual(first.map((n) => [n.title, `/help/${n.slug}`]));
+    expect(chips().compareDocumentPosition(crisis) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(screen.getByText("Loading the list…")).toBeInTheDocument();
+
+    send();
+    await screen.findByRole("list", { name: "Care pages" });
+    // The same chips, the same nodes: nothing above the crisis lines changed.
+    expect(within(chips()).getAllByRole("link")).toEqual(before);
+    expect(document.getElementById("help-now")).toBe(crisis);
+  });
+});
