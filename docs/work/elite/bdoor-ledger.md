@@ -20792,3 +20792,27 @@ Cut in chapter 5: the deep note's lines to Christ that the New Testament does no
 | Daniel 4:34; Daniel 7:13; Psalm 145:13 (added when the validator asked for a book beyond Daniel) | 25-28 `later` | BSB | BSB text |
 
 Cut in chapter 6: the deep note's line to Matthew 27:66 and the sealed tomb, a pattern the New Testament does not draw.
+
+## The plain notes on Daniel 7 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1-8 (7:7's clauses either side of the dash) | 1-8 | BSB | BSB text |
+| The hinge; last Aramaic, first vision; about 553 BC; the sea as chaos; composite beasts in Assyrian and Babylonian art and the Ishtar Gate; horns; statue and beasts; the lion and chapter 4 | 1-8 | daniel/7.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Revelation 13:1-2; Jeremiah 4:7 and Ezekiel 17:3 named | 1-8 `later` | daniel/7.json `historical`; bible/guides/reading-apocalyptic.json; BSB | BSB text |
+| The hard note: the kingdoms in the traditional reading (4 Ezra, Josephus, the Talmud), the critical reading (Seleucids, Antiochus IV) and the futurist reading; no side; no figure of the present day | 1-8 `hard` | daniel/7.json `historical`; bible/guides/reading-apocalyptic.json (humility about identifications) | Repository; each reading in its holders' terms |
+| 7:9-14 | 9-14 | BSB | BSB text |
+| Poetry and prose; the heavenly court; the Ancient of Days and Ezekiel's throne; Rabbi Akiva and the thrones (Hagigah 14a); bar enash without the article; the clouds and pelach; Genesis 1 reversed | 9-14 | daniel/7.json `cultural`, `literary`, `words` | Repository |
+| Mark 14:62; Mark 13:26; Acts 7:56 | 9-14 `later` | daniel/7.json `christ`, `doctrines`; BSB | BSB text; the New Testament's own Son of Man sayings |
+| The hard note: a people (Casey, Jewish interpreters), an angel (Collins), an individual (the Similitudes of Enoch, 4 Ezra, Sanhedrin 98a, Rashi); not exclusive; the New Testament holding several | 9-14 `hard` | daniel/7.json `hard` | Repository; each reading in its holders' terms |
+| 7:15-22 | 15-22 | BSB | BSB text |
+| Two rounds of interpretation; the saints as people, angels or both; a limit, a judge and a kingdom; Daniel shaken | 15-22 | daniel/7.json `literary`, `words` (qaddish), `doctrines` | Repository |
+| Revelation 13:7; Daniel 12:1 (its clause) | 15-22 `later` | BSB | BSB text |
+| 7:23-28 | 23-28 | BSB | BSB text |
+| Three and a half as half of seven; Revelation's forty-two months and 1,260 days; Antiochus in 167 BC and 164 BC; the traditional answer; Daniel's distress | 23-28 | daniel/7.json `historical`, `cultural`, `literary`; bible/guides/reading-apocalyptic.json | Repository |
+| Revelation 12:14; Daniel 12:7 (first typed inexactly, caught and corrected) | 23-28 `later` | BSB | BSB text |
+| The hard note: no date calculated; numbers as symbols; the readings; Matthew 24:36; no present-day figure named | 23-28 `hard` | bible/guides/reading-apocalyptic.json (Numbers and time) | Repository |
+
+Cut in chapter 7: Hebrews 11:35 and Luke 12:32, first drafted as later lines, were cut before commit because the New Testament does not draw them from this chapter. The deep note's typological lines beyond the Son of Man sayings were left out. No care line is needed in this chapter.
