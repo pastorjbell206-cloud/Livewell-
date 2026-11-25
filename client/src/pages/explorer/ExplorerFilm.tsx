@@ -273,6 +273,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "1 Samuel 17 as the text tells it, in seven moving pictures: two armies, a champion, a shepherd boy, a speech in the name of the LORD, one stone, and who we are in the story.",
     },
+    "all-nations": {
+      title: "A blessing for all nations: Bible Explorer",
+      description:
+        "God's promise to bless every family on earth, in seven moving pictures: Babel, Abraham under the stars, Rahab and Ruth, Jonah and Nineveh, the Magi, Pentecost, and a crowd no one can count.",
+    },
+    "light-and-darkness": {
+      title: "Light and darkness: Bible Explorer",
+      description:
+        "One light followed through the whole Bible, in seven moving pictures: the first word of creation, light in Egypt's darkness, the pillar of fire, the lamp in the tent, Isaiah's great light, the light of the world, and the city with no night.",
+    },
+    "never-heard": {
+      title: "What about people who never heard?: Bible Explorer",
+      description:
+        "A hard question in seven moving pictures: what all Christians confess, what the Bible says and does not say about those who never heard of Jesus, and the three main answers Christians give, with no side taken.",
+    },
+    "temple-destroyed": {
+      title: "Why did God let his temple be destroyed?: Bible Explorer",
+      description:
+        "The prophets' own answer, in seven moving pictures: a temple that never held God, prophet after prophet, Jeremiah at the gate, the glory leaving, the day it fell, grief kept in Scripture, and a promise larger than what was lost.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
