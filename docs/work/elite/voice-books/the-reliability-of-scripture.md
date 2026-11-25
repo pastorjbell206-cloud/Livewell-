@@ -39,7 +39,10 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Twelve: The Internal Testimony — What Scripture Claims About Itself | 942 | 942 | +0.0% | 13 (13.8) | 0 (0.0) | 25 (26.5) | 12 (12.7) | 10 | PASS |
 | Chapter Thirteen: Why It Still Matters — Living from the Authority of Scripture | 1,556 | 1,556 | +0.0% | 16 (10.3) | 0 (0.0) | 51 (32.8) | 35 (22.5) | 11 | PASS |
 | Chapter Fourteen: Eyewitness Testimony and the Four Gospels | 1,233 | 1,233 | +0.0% | 15 (12.2) | 0 (0.0) | 24 (19.5) | 11 (8.9) | 11 | PASS |
-| **All 15** | 17,931 | 17,931 | +0.0% | 233 (13.0) | 2 (0.1) | 460 (25.7) | 235 (13.1) | 164 | |
+| Chapter Fifteen: Prophecy, Fulfillment, and the Coherence of Two Testaments | 1,219 | 1,219 | +0.0% | 14 (11.5) | 0 (0.0) | 29 (23.8) | 15 (12.3) | 10 | PASS |
+| Chapter Sixteen: The Resurrection — The Historical Core of Everything | 1,188 | 1,188 | +0.0% | 21 (17.7) | 0 (0.0) | 34 (28.6) | 13 (10.9) | 14 | PASS |
+| Chapter Seventeen: The Transmission of Meaning — Translation, Language, and Trust | 815 | 815 | +0.0% | 10 (12.3) | 0 (0.0) | 21 (25.8) | 11 (13.5) | 7 | PASS |
+| **All 18** | 21,153 | 21,153 | +0.0% | 278 (13.1) | 2 (0.1) | 544 (25.7) | 274 (13.0) | 195 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -369,3 +372,69 @@ Five pairs, taken at even intervals through the chapter:
    After: It is the independent accounts, different in incidental detail but consistent in substance, that carry the marks of genuine independent witness.
 5. Before: They are, at their core, the testimony of people who were there — filtered through the theological and literary purposes of the evangelists, shaped by the communities in which they were produced, but grounded in the actual history of what Jesus did and said.
    After: They are, at their core, the testimony of people who were there, filtered through the theological and literary purposes of the evangelists, shaped by the communities in which they were produced, but grounded in the actual history of what Jesus did and said.
+
+
+## Chapter Fifteen: Prophecy, Fulfillment, and the Coherence of Two Testaments (`sec16.xhtml`)
+
+Words 1,219 to 1,219. Em-dashes in his prose 14 to 0 (11.5 to 0.0 per 1,000 words). Tells 29 to 15 (23.8 to 12.3 per 1,000). Mean sentence 27.8 words to 27.8; sentences of eight words or fewer 7.0% to 7.0%; of five or fewer 4.7% to 4.7%. 10 edits; paragraphs 15 to 15. Paragraphs of fifteen words or fewer 2 to 2; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 14 to 0, not_but 2 to 2, not_just 1 to 1, isnt_its 2 to 2, triplet 7 to 7, intens 1 to 1, one_line_para 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 9 quoted strings, 29 Scripture references, 0 years, 19 numbers in digits, 22 number words, proper names by count, and 15 hedge words (after: 15) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: the New Testament makes sense only as the fulfillment of the Old — not in the vague sense that one religious text draws on another, but in the specific, numerically substantial sense that the life, death, and resurrection of Jesus of Nazareth corresponds to a pattern of expectation embedded in the Hebrew Scriptures across hundreds of years, produced by dozens of authors in different literary genres, representing traditions that were not in communication with each other and that in some cases postdate by centuries the events they are said to predict.
+   After: the New Testament makes sense only as the fulfillment of the Old, not in the vague sense that one religious text draws on another, but in the specific, numerically substantial sense that the life, death, and resurrection of Jesus of Nazareth corresponds to a pattern of expectation embedded in the Hebrew Scriptures across hundreds of years, produced by dozens of authors in different literary genres, representing traditions that were not in communication with each other and that in some cases postdate by centuries the events they are said to predict.
+2. Before: Genesis 3:15 speaks of a seed of the woman who will crush the serpent's head — a promise of decisive divine action through a human agent.
+   After: Genesis 3:15 speaks of a seed of the woman who will crush the serpent's head, a promise of decisive divine action through a human agent.
+3. Before: The "Israel" interpretation struggles with the singular forms throughout the passage and with the statement that the servant bears the sin of "the many" — hard to read as Israel bearing the sin of Israel.
+   After: The "Israel" interpretation struggles with the singular forms throughout the passage and with the statement that the servant bears the sin of "the many," hard to read as Israel bearing the sin of Israel.
+4. Before: Zechariah 11:12-13 describes thirty pieces of silver paid for a shepherd who is rejected — and the money being thrown "to the potter.
+   After: Zechariah 11:12-13 describes thirty pieces of silver paid for a shepherd who is rejected, and the money being thrown "to the potter.
+5. Before: The evidence — particularly the early dating of the Gospels, the multiple attestation of key events, and the specificity of details that would have been impossible to control — weighs, on balance, toward the former.
+   After: The evidence (particularly the early dating of the Gospels, the multiple attestation of key events, and the specificity of details that would have been impossible to control) weighs, on balance, toward the former.
+
+
+## Chapter Sixteen: The Resurrection — The Historical Core of Everything (`sec17.xhtml`)
+
+Words 1,188 to 1,188. Em-dashes in his prose 21 to 0 (17.7 to 0.0 per 1,000 words). Tells 34 to 13 (28.6 to 10.9 per 1,000). Mean sentence 23.3 words to 24.3; sentences of eight words or fewer 24.0% to 20.8%; of five or fewer 16.0% to 12.5%. 14 edits; paragraphs 13 to 13. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 0.
+
+By kind (before to after): emdash 21 to 0, not_but 1 to 1, not_just 1 to 1, NotX.Y 2 to 2, triplet 4 to 5, frag3 1 to 0, colon_reveal 2 to 2, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 4 quoted strings, 8 Scripture references, 0 years, 9 numbers in digits, 22 number words, proper names by count, and 20 hedge words (after: 20) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Not the manuscript tradition, not the archaeological evidence, not the eyewitness testimony, not the fulfilled prophecy — all of it, every argument in every chapter, is a prologue to a story that would be fiction if the tomb were not empty.
+   After: Not the manuscript tradition, not the archaeological evidence, not the eyewitness testimony, not the fulfilled prophecy: all of it, every argument in every chapter, is a prologue to a story that would be fiction if the tomb were not empty.
+2. Before: Roman crucifixion was effective — the Romans had refined it into a reliable execution method — and no credible historian, Christian or secular, doubts that Jesus of Nazareth was executed under Pontius Pilate, probably in 30 or 33 AD.
+   After: Roman crucifixion was effective (the Romans had refined it into a reliable execution method), and no credible historian, Christian or secular, doubts that Jesus of Nazareth was executed under Pontius Pilate, probably in 30 or 33 AD.
+3. Before: Paul is writing approximately 25 years after the crucifixion, describing himself as the last to receive an appearance, and inviting his readers to consult the other witnesses — "most of whom are still alive.
+   After: Paul is writing approximately 25 years after the crucifixion, describing himself as the last to receive an appearance, and inviting his readers to consult the other witnesses: "most of whom are still alive.
+4. Before: why would you fabricate a claim and then die for it — not die in a moment of passion but live out years of suffering, imprisonment, and eventual execution rather than recant?
+   After: why would you fabricate a claim and then die for it, not die in a moment of passion but live out years of suffering, imprisonment, and eventual execution rather than recant?
+5. Before: And the result was a movement that produced the most examined, most attacked, most defended document in the history of human civilization — a document that, two thousand years later, is still being read, still being trusted, still being lived by people on every continent in every language.
+   After: And the result was a movement that produced the most examined, most attacked, most defended document in the history of human civilization, a document that, two thousand years later, is still being read, still being trusted, still being lived by people on every continent in every language.
+
+
+## Chapter Seventeen: The Transmission of Meaning — Translation, Language, and Trust (`sec18.xhtml`)
+
+Words 815 to 815. Em-dashes in his prose 10 to 0 (12.3 to 0.0 per 1,000 words). Tells 21 to 11 (25.8 to 13.5 per 1,000). Mean sentence 27.2 words to 27.2; sentences of eight words or fewer 6.7% to 6.7%; of five or fewer 6.7% to 6.7%. 7 edits; paragraphs 8 to 8. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 10 to 0, not_but 1 to 1, not_just 1 to 1, isnt_its 1 to 1, triplet 4 to 4, intens 1 to 1, q_answered 1 to 1, colon_reveal 1 to 1, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 1 quoted strings, 1 Scripture references, 1 years, 1 numbers in digits, 15 number words, proper names by count, and 10 hedge words (after: 10) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Greek is inflected — it uses word endings rather than word order to signal grammatical relationships — which means a Greek sentence can arrange its words in an order that produces an emphasis a literal English rendering cannot capture.
+   After: Greek is inflected (it uses word endings rather than word order to signal grammatical relationships), which means a Greek sentence can arrange its words in an order that produces an emphasis a literal English rendering cannot capture.
+2. Before: They indicate that translation involves genuine judgment calls — choices between word options, decisions about how to render a Greek idiom in English, decisions about whether to follow a formal equivalence approach that preserves the structure of the original as much as possible or a functional equivalence approach that conveys the meaning as naturally as possible in the target language.
+   After: They indicate that translation involves genuine judgment calls: choices between word options, decisions about how to render a Greek idiom in English, decisions about whether to follow a formal equivalence approach that preserves the structure of the original as much as possible or a functional equivalence approach that conveys the meaning as naturally as possible in the target language.
+3. Before: Wycliffe's English translation in the fourteenth century, Tyndale's in the sixteenth, the King James Bible in 1611 — each generation produced translations from the available manuscript evidence, using the linguistic tools of its time.
+   After: Wycliffe's English translation in the fourteenth century, Tyndale's in the sixteenth, the King James Bible in 1611: each generation produced translations from the available manuscript evidence, using the linguistic tools of its time.
+4. Before: The theological DNA of the text — the character of God, the reality of human sin, the nature of redemption, the identity and work of Jesus Christ — survives translation into every language because it is embedded in the structure of the text, not in the specific vocabulary of any single linguistic rendering.
+   After: The theological DNA of the text (the character of God, the reality of human sin, the nature of redemption, the identity and work of Jesus Christ) survives translation into every language because it is embedded in the structure of the text, not in the specific vocabulary of any single linguistic rendering.
+5. Before: It is addressed to every human being in every culture, because it addresses the condition every human being shares — the condition of being a created being in need of a Creator, a broken person in need of restoration.
+   After: It is addressed to every human being in every culture, because it addresses the condition every human being shares: the condition of being a created being in need of a Creator, a broken person in need of restoration.
