@@ -395,3 +395,65 @@ Five pairs:
    After: McKnight's argument, that every Christian picks and chooses from Scripture, and that the question is not whether you do so but by what principles, is the popular-level version of the hermeneutical argument this book makes at a more theoretical level.
 
 Left alone, and why. A reading list: every author, title, edition, year and volume is as it was, and so is every judgment of a book ("Essential.", "Dense but worth the effort.", "Useful counterweight to McLaren."). The annotations are notes, and their fragments are the form of a note, so none was joined. All 24 edits are dashes recast; no word changed. Four dashes stay. The title of Christopher Wright's book carries a word on the Forbidden Language list ("Unlocking"); it is a title and stays.
+
+## The whole book
+
+Fifteen chapter files were edited (the three part pages, `sec02`, `sec07` and `sec12`, hold only a title and a tag line and were not touched). In his running prose: 61,493 words before, 61,465 after; 853 em-dashes before, 148 after (13.9 to 2.4 per 1,000 words); 590 edits. Of the 590, about 560 recast a dash or join a fragment stack with his own words; the rest take out a filler word ("precisely" nine times, "simply" three, "deeply" and "profoundly" once each), turn a two-step the plain way round (three times), drop a stock opener ("Here is what we almost never pause to ask" became "We almost never pause to ask"), or add a contraction (seven, all in the introduction and chapter 1). The fact diff passed on all fifteen.
+
+**No paragraph was joined.** After the edit the book has 25 paragraphs of fifteen words or fewer, none next to another. Each is a hinge ("But we are different."; "He saw a responsible man."; "And the system tortured people.") or the line that hands over to a block quotation ("Romans 3:23 is an equal opportunity verse."), which is where his standard keeps a short sentence.
+
+**Chapters 6 and 7, and Appendix A, took punctuation only.** They state his position on contested questions in nearly every paragraph (the progressive and the conservative blind spot; women's ministry, baptism, election, inerrancy, same-sex relationships), and the rule was that such a sentence takes nothing beyond a dash or a contraction. Chapters 6 and 7 were held to exactly the same treatment so that neither was pressed harder than the other.
+
+**What was not done, on purpose.** The two-step ("It is not X. It is Y.") is this book's argument as much as its habit: a blind spot is not ignorance, the horror was not the monster, the sincerity is not a defense. The counter still finds it often, and only three were turned, because the others are definitions, verdicts or his stated position. Whether the book leans on it too much is a judgment about his argument, not a tell to be cleaned, and it was left to him. Contractions were added only where a sentence was already speech; the book's formal "is not" and "does not" carry weight at its verdicts and were left. No intensifier was cut where it does work ("genuinely" is nearly always a real claim about sincerity in this book, which is its subject).
+
+**Words on the Forbidden Language list.** None in his prose before or after. "Unlocking" is in the title of Christopher Wright's book in Appendix C. "Do the work" appears once, literally ("before it has had time to do the work it came to do").
+
+## For James: things that look wrong, none of them changed
+
+The rule for this pass was that a quotation or claim that looks wrong is listed, not fixed. Each of these should be checked against the source before the book is next printed.
+
+**Attributions and facts**
+
+1. Chapter 1: "Bonhoeffer, in his prison letters near the end of his life, wrote about 'cheap grace'". Cheap grace is from The Cost of Discipleship (1937), as the book's own Appendix C says, not from the prison letters.
+2. Chapter 3: Bonhoeffer "writing from his prison cell, identified what he called 'the great masquerade of evil'". The phrase is from "After Ten Years", written at the end of 1942, before his arrest in April 1943 (it is printed in Letters and Papers from Prison).
+3. Chapter 3: "The phenomenon has a technical name in psychology — 'moral licensing'". Moral licensing is a different finding (a good deed making a later bad one feel permitted). Seeing others' faults and not one's own is usually called the bias blind spot, or moral hypocrisy.
+4. Chapter 3: "C.S. Lewis ... identified self-deception as the deepest and most dangerous of the spiritual sins". Lewis's "great sin" in Mere Christianity is pride; the sentence may be claiming more than he wrote.
+5. Chapter 3: the Spanish Inquisition "tortured a substantial portion" of those it tried. Historians now put torture in a small minority of cases; "tens of thousands" tried is, if anything, low.
+6. Chapter 4: "Peter's confrontation with the Jerusalem church in Acts 15". Peter is challenged by the Jerusalem believers in Acts 11; Acts 15 is the Council.
+7. Chapter 4: the Homogeneous Unit Principle "later named ... by McGavran's student C. Peter Wagner". McGavran used the term himself; worth checking who named it.
+8. Chapter 5: the paragraphs on the amygdala are the popular account, simpler than the neuroscience.
+9. Chapter 7: "in the words of the scholars, 'non-imperial'" quotes no named scholar.
+10. Chapter 7: Pelikan's line on tradition and traditionalism is from The Vindication of Tradition (1984), not from "his magisterial study of the history of Christian doctrine".
+11. Chapter 8: Isaiah walking naked for three years (Isaiah 20) is listed among the ways prophets were unwelcome; it was a sign he acted out, not something done to him.
+12. Chapter 10: "what Bernard of Clairvaux called the via negativa applied to the self" and "what the mystics called learned ignorance". The via negativa is usually traced to Pseudo-Dionysius, and "learned ignorance" is Nicholas of Cusa's title. The conclusion's "line from the mystic tradition" ("you cannot see the light by looking at it directly") has no source.
+13. Chapter 10: "The objection that the person in the previous chapter was most likely to raise" reads like a slip (perhaps "the reader of the previous chapter").
+14. Conclusion: the three portraits are described differently from the introduction. There the German was a layman who "signed the forms"; here he is "a German pastor who signed the forms and kept the congregation quiet", and the slaveholder "knelt at the same altar his enslaved workers were forbidden to approach", a detail the introduction does not have. Also, the introduction has the German Protestant "genuflected, confessed, received the Eucharist", which is Catholic practice.
+15. Conclusion: "Theresa of Avila" (usually Teresa). And the conclusion opens with a paragraph that gives its own last lines in advance ("The face in the mirror is yours. Start there. And do not stop."); it may be a summary that was left in.
+16. Conclusion against chapter 1: the conclusion says the Bible's testimony against slavery "is overwhelming and has always been available to anyone willing to read it"; chapter 1 says the debates were "real debates, with real exegetical complexity". Both can stand, but a reader may feel the gap.
+17. Appendix A: "abomination" (toevah) is said to be used of eating shellfish (Leviticus 11:10–12) and of mixed fibres and mixed seed (19:19). Leviticus 11 uses a different word (sheqets), and 19:19 uses neither. This is a known weak point in the argument and a hostile reviewer will find it.
+18. Appendix A: William Loader is listed with Boswell, Scroggs and Vines as holding that the texts address only exploitative acts. Loader argues that Paul did condemn same-sex acts as such (and then disagrees with Paul).
+19. Appendix A: "Revelation 13, where Rome is depicted as the beast and the whore". The whore is in Revelation 17.
+20. Appendix A: Paul "uses the same term in 1 Corinthians 11:14 to describe men wearing long hair as 'contrary to nature'". 11:14 says "Does not nature itself teach you ..."; the quoted words are not in it.
+21. Appendix A: Harnack's summary is given in quotation marks as "the Fatherhood of God and the brotherhood of man". His own formula in What Is Christianity? is closer to "God the Father and the infinite value of the human soul".
+22. Appendix A: Felix Manz as "the first Anabaptist martyr" (the first killed by Protestants; one was burned by Catholic authorities in 1525), and "the tradition he founded".
+23. Appendix A: premillennialists are said to read Revelation "in the same genre register as newspaper reporting", which they would not sign as a fair statement of their view.
+24. Appendix A: Ezra 9–10 is offered in chapter 7 as a model of costly revision ("it was the right thing"), a few pages after the sojourner texts; the two sit awkwardly together.
+25. Appendix B: "Matthew 1 through 5, for instance, is structured as a new Exodus ... five sermons". The five discourses run through the whole Gospel (chapters 5 to 25).
+26. Appendix C: Haidt's "Chapter 5, on moral dumbfounding". In The Righteous Mind moral dumbfounding is in chapter 2.
+27. The John 16:13 block quotation is printed twice in chapter 9 (in the last section and again at the end).
+
+**Scripture quotations.** The copyright page says "Unless otherwise noted, Scripture quotations are from the English Standard Version (ESV)", and nothing is noted. These are not the ESV's wording:
+
+- NIV: Matthew 23:15, Jeremiah 17:9 (also shortened: "and beyond cure" is missing), Matthew 15:8–9, Revelation 3:17 (introduction); Jeremiah 7:9–11 and 7:11 (chapter 1; chapter 8 quotes the same verse in the ESV); Amos 5:21–24 and "all Scripture is God-breathed" (chapter 2); 1 John 1:8, Proverbs 14:12, John 16:2 (chapter 3); Philemon 16 and Romans 16:7 (Appendix A).
+- Chapter 2 runs Luke 16:29 and 16:31 together as one quotation.
+- Chapter 4's Exodus 23:9 ("having been sojourners yourselves") is no translation I can find; chapter 7 quotes the same verse correctly from the ESV.
+- Appendix A: "an eloquent man, mighty in the Scriptures" is Acts 18:24 in the NKJV, not 18:26 in the ESV; "gouge out your eye" (Matthew 5:29) is the NIV's verb; Ephesians 6:5, Colossians 3:22, 1 Timothy 6:1 and 1 Corinthians 7:21 follow the ESV before 2011 ("slaves"), where the current text has "bondservants".
+- Chapter 2: Chesterton wrote "giving votes", not "giving a vote". Chapter 2 also puts Augustine's use-and-enjoy distinction to work on ways of reading Scripture; in On Christian Doctrine it is a distinction between things, not readings.
+
+## Questions only James can answer
+
+1. Do you want the items above corrected? The quotation ones are mechanical once you name the translation; the factual ones (Bonhoeffer twice, moral licensing, toevah, Loader, Revelation 13, 1 Corinthians 11:14) need your decision on the sentence.
+2. ESV throughout, or a note on the copyright page that some quotations are from the NIV?
+3. The two-step ("It is not X. It is Y."). It was left wherever it is a definition, a verdict or your position, which is most of the time. Do you want a harder pass at it in this book, knowing it would change how some of your arguments are put?
+4. Chapter 10 still says "the place where the book's title finds its full meaning. The monster in the mirror is ..." under the new title (bookshelf.md, section 8, question 1). Still yours.
+5. The conclusion's first paragraph: keep it as an epigraph, or cut it?
