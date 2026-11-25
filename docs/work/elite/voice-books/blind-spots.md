@@ -28,7 +28,8 @@ His limit for em-dashes is 2 to 3 per 500 words, which is 4 to 6 per 1,000. Head
 | Chapter 5: When Fear Becomes Theology | 4,513 | 4,514 | +0.0% | 67 (14.8) | 13 (2.9) | 137 (30.4) | 80 (17.7) | 40 | PASS |
 | Chapter 6: The Progressive Blind Spot | 3,892 | 3,892 | +0.0% | 68 (17.5) | 12 (3.1) | 117 (30.1) | 62 (15.9) | 39 | PASS |
 | Chapter 7: The Conservative Blind Spot | 4,142 | 4,142 | +0.0% | 62 (15.0) | 10 (2.4) | 115 (27.8) | 64 (15.5) | 38 | PASS |
-| **All 8** | 33,560 | 33,538 | -0.1% | 490 (14.6) | 96 (2.9) | 1044 (31.1) | 623 (18.6) | 342 | |
+| Chapter 8: The Bible Assumes You Will Be Wrong | 4,148 | 4,142 | -0.1% | 44 (10.6) | 12 (2.9) | 102 (24.6) | 66 (15.9) | 29 | PASS |
+| **All 9** | 37,708 | 37,680 | -0.1% | 534 (14.2) | 108 (2.9) | 1146 (30.4) | 689 (18.3) | 371 | |
 
 ## Introduction: Every Generation Was Convinced (`sec01.xhtml`)
 
@@ -220,3 +221,27 @@ Five pairs:
    After: That combination (eagerness to receive, commitment to examine, willingness to be changed) is the mark of faithfulness in the tradition of the biblical witness.
 
 Left alone, and why. Held to the same rule as chapter 6, its pair: punctuation only, so that neither chapter was pressed harder than the other. Every one of the 38 edits is a dash recast; not one word changed. The concessions to the conservative reader stay word for word ("The instinct to preserve is not wrong.", "This fear is understandable. It is not entirely irrational.", "Something was lost there, and the loss was real.", "some of them may be defensible, even right"), and so does the paragraph that names both collapses, conservative and progressive, in one sentence. The closing "Not: abandon your convictions. Not: concede the progressive argument. ... But: ask whether ..." is his position and was not joined. "Precisely" in the sentence the pull quote echoes stays.
+
+
+## Chapter 8: The Bible Assumes You Will Be Wrong (`sec11.xhtml`)
+
+Words 4,148 to 4,142. Em-dashes in his prose 44 to 12 (10.6 to 2.9 per 1,000 words). Tells 102 to 66 (24.6 to 15.9 per 1,000). Mean sentence 23.4 words to 24.2; sentences of eight words or fewer 20.9% to 16.4%; of five or fewer 13.0% to 9.4%. 29 edits; paragraphs 46 to 46.
+
+By kind (before to after): emdash 44 to 12, not_but 15 to 15, NotX.Y 1 to 1, isnt_its 2 to 2, triplet 14 to 15, frag3 1 to 0, anaphora 15 to 11, intens 3 to 2, q_answered 1 to 1, colon_reveal 2 to 3, short_close 4 to 4.
+
+Fact diff: **PASS**. Fixed blocks (headings, subtitle, pull quote, block quotes and their references) identical; 0 quoted strings, 25 Scripture references, 0 years, 20 numbers in digits, 41 number words, proper names by count, and 61 hedge words (after: 61) compared.
+
+Five pairs:
+
+1. Before: The answer that is usually given — that the prophets spoke forth the word of God, that they proclaimed coming judgment and called the people to repentance — is true but incomplete; it describes the prophets' function without explaining why that function required a separate office, structurally distinct from the priesthood and the monarchy. The priests had Scripture. The kings had authority. The scribes had learning.
+   After: The answer that is usually given, that the prophets spoke forth the word of God, that they proclaimed coming judgment and called the people to repentance, is true but incomplete; it describes the prophets' function without explaining why that function required a separate office, structurally distinct from the priesthood and the monarchy. The priests had Scripture, the kings had authority, and the scribes had learning.
+2. Before: He has not been torn apart by guilt. He has not confessed.
+   After: He has not been torn apart by guilt, and he has not confessed.
+3. Before: He does not argue. He does not lecture. He creates the conditions under which David's own moral perception — his own sense of justice, which is functioning perfectly when it is directed at someone else — can be brought to bear on David's own situation.
+   After: He does not argue or lecture. He creates the conditions under which David's own moral perception, his own sense of justice, which is functioning perfectly when it is directed at someone else, can be brought to bear on David's own situation.
+4. Before: It does not require bad faith. It does not even require conscious intention.
+   After: It does not require bad faith, or even conscious intention.
+5. Before: The question this chapter leaves is not merely diagnostic. It is practical. If the Bible assumes you will be wrong — if the scriptural witness builds accountability structures specifically because the community of faith cannot self-correct — what does it look like to take that seriously?
+   After: The question this chapter leaves is practical, not merely diagnostic. If the Bible assumes you will be wrong, if the scriptural witness builds accountability structures specifically because the community of faith cannot self-correct, what does it look like to take that seriously?
+
+Left alone, and why. This chapter came with the fewest dashes in the book (44) and the fewest tells, so it got the fewest edits. "Nathan does not come to David with an accusation. He comes with a story" is the hinge of its central section; "The parable is not a trick. It is a hermeneutical tool", "It says so. And it insists on the requirement anyway." and "It is not accountability. It is confirmation." are verdicts. The ending ("Not certainty. Accountability. Not the absence of blind spots, but the presence of structures that can find them.") is the chapter's thesis line and stays as he wrote it. The passage the pull quote echoes was not touched. Twelve dashes stay.
