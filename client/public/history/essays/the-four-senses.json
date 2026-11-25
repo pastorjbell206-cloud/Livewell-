@@ -1,0 +1,100 @@
+{
+  "slug": "the-four-senses",
+  "title": "The Letter and the Spirit: The Medieval Bible's Four Senses",
+  "standfirst": "The Medieval Church and Its Readers",
+  "subtitle": "Augustine's signs and things and the rule of charity, Cassian's four Jerusalems, the couplet of Augustine of Dacia, monastic lectio divina, Thomas Aquinas on the literal foundation of every sense, and Nicholas of Lyra's literal postils.",
+  "era": "Medieval",
+  "dateRange": "AD 400 to 1500",
+  "sections": [
+    {
+      "id": "a-thousand-years-of-reading",
+      "kicker": "Orientation",
+      "title": "A Thousand Years of Slow Reading",
+      "body": "For roughly a thousand years, from the last decades of the Roman West to the eve of the Reformation, Latin Christians read the Bible according to a shared conviction that most modern readers have quietly abandoned. They believed a single passage of Scripture could carry several meanings at once, each true, each ordered to the others, and that a faithful reader was obliged to listen for all of them. The usual name for this is the fourfold sense of Scripture: the literal, the allegorical, the moral and the anagogical.\n\nIt is tempting to treat this as a quaint medieval mistake, the kind of thing the Reformers and the scholars of the Renaissance rightly swept away. Some of that judgment is fair. The medieval method could be fanciful, and it sometimes buried the plain meaning of a text under layers of ingenuity. But that is only part of the story. The fourfold sense was also the most sustained attempt in Christian history to read the whole Bible as one book about Christ, the church, the soul and the end of all things, and it formed saints as well as scholars.\n\nThis essay follows that tradition from its foundations in Augustine and John Cassian, through the monasteries where it was prayed, to the universities where Thomas Aquinas gave it its most careful theory and Nicholas of Lyra pressed it back toward the letter. Along the way it asks a question that belongs to this whole series: how a particular culture, feudal in its ordering of society, liturgical in its rhythm of time and Latin in its learning, shaped what Christians were able to see in the Bible, and what they saw there that we, shaped by a different culture, have largely stopped seeing."
+    },
+    {
+      "id": "signs-things-and-charity",
+      "kicker": "Augustine",
+      "title": "Signs, Things and the Rule of Charity",
+      "body": "The medieval West read the Bible through Augustine before it read it through anyone else. His handbook On Christian Teaching, the De doctrina Christiana, was begun about 396, shortly after he became bishop of Hippo, and left unfinished for some thirty years before he completed it about 426. It became the founding textbook of Christian interpretation in the Latin world.\n\nAugustine organized the book around a distinction between things and signs. Some realities are to be enjoyed for their own sake, and in the end only the triune God is to be enjoyed in that way; everything else is to be used, loved rightly in relation to him. Words are signs pointing to things, and Scripture is a vast system of signs through which God leads the reader from the things of this world to himself. That is why Augustine could also commend the study of languages, history and nature. A reader who did not know what a serpent or a hyssop plant was could miss what Scripture meant by them.\n\nThe governing principle of the whole work is what later readers called the rule of charity. Augustine argued that the purpose of all Scripture is the double love of God and neighbor, and that anyone who thinks he has understood the Bible but whose understanding does not build up that love has not yet understood it. When a passage, read plainly, seemed to commend neither true faith nor good conduct, he counseled the reader to look for a figurative meaning. The rule is easily abused, since a reader can call his own preferences charity. But it put a moral question at the center of interpretation that modern method has largely removed, namely whether a reading makes the reader more loving."
+    },
+    {
+      "id": "jerusalem-four-ways",
+      "kicker": "The Four Senses",
+      "title": "One City, Four Meanings",
+      "body": "The classic illustration of the fourfold sense comes from John Cassian, a monk who had lived among the desert fathers of Egypt and who, around 415, founded monasteries near Marseille in southern Gaul. In his Conferences, which present the teaching of Egyptian elders to Western monks, the fourteenth conference gives the words of Abba Nesteros on spiritual knowledge. There, in chapter eight, Cassian takes the single word Jerusalem and shows how it may be read four ways. In the historical sense it is the city of the Jews. In the allegorical sense it is the church of Christ. In the anagogical sense it is the heavenly city of God, the mother of us all. In the tropological or moral sense it is the human soul.\n\nThe example is useful precisely because it is so plain. Nothing in it denies that Jerusalem was a real city with real walls. The other meanings grow out of the city's place in the story of God's people, as Paul himself had linked the earthly and the heavenly Jerusalem in Galatians 4:25 and 26. The method taught readers to see the history, the faith built upon it, the life it calls for, and the hope it points toward.\n\nIn the thirteenth century the scheme was compressed into a Latin couplet, usually attributed to the Dominican Augustine of Dacia, which generations of students memorized: \"Littera gesta docet, quid credas allegoria, moralis quid agas, quo tendas anagogia.\" The letter teaches what happened; allegory, what you are to believe; the moral sense, what you are to do; anagogy, where you are going. The scheme put four questions to every text: what happened, what must I believe, how must I live, and what am I hoping for."
+    },
+    {
+      "id": "reading-as-prayer",
+      "kicker": "The Cloister",
+      "title": "Lectio Divina: Reading as Prayer",
+      "body": "For most of the Middle Ages the fourfold sense was learned less in a lecture hall than in a choir stall. The Rule of Benedict, written in the sixth century, set aside hours each day for sacred reading and arranged for the whole Psalter to be chanted every week. A monk read the Bible slowly, usually aloud or in a murmur, returning to the same words until they were stored in his memory, a practice the monks compared to an animal chewing the cud. Scripture became the medium in which he thought and prayed.\n\nThis practice, called lectio divina, had its own theorists. Gregory the Great, pope from 590 to 604, whose long commentary on Job known as the Moralia became one of the most copied books of the Middle Ages, compared Scripture to a river shallow enough for a lamb to wade and deep enough for an elephant to swim. In the twelfth century the Carthusian Guigo II described the monk's reading as a ladder of four rungs: reading, meditation, prayer and contemplation. In the same century Bernard of Clairvaux began a series of sermons on the Song of Songs in 1135 and was still preaching them when he died in 1153.\n\nJean Leclercq called this monastic culture the love of learning joined to the desire for God, and the phrase is just. The spiritual senses made sense to the monks because their lives were organized around them. A man who sang the psalms of David at hours across the day and night, and through the whole Psalter every week, would naturally hear in them the voice of Christ and the cry of his own soul. The method was not imposed on the text from outside. It rose from a community whose whole day was shaped by the text."
+    },
+    {
+      "id": "founded-on-the-letter",
+      "kicker": "The Schools",
+      "title": "Aquinas: Every Sense Founded on the Letter",
+      "body": "In the twelfth and thirteenth centuries the study of Scripture moved increasingly from the monastery into the cathedral schools and then the universities. Masters at Laon and Paris assembled the Glossa Ordinaria, the standard marginal and interlinear commentary that framed the medieval page of the Bible. At the abbey of Saint Victor in Paris, Hugh of Saint Victor insisted that students master the history before they ascend to allegory, and his pupil Andrew of Saint Victor went so far as to consult Jewish scholars about the literal meaning of the Hebrew text. Beryl Smalley's classic study traced how this school recovered the dignity of the letter.\n\nThe decisive theoretical statement came from Thomas Aquinas, in the opening question of the Summa Theologiae, which he left unfinished at his death in 1274. In the tenth article of that first question, Thomas asks whether one passage of Scripture can have several senses. His answer is that the author of Scripture is God, who can signify meaning not only by words, as human authors do, but by the things and events themselves. The meaning carried by the words is the literal sense. The meaning carried by the things those words signify is the spiritual sense, which divides into the allegorical, the moral and the anagogical.\n\nThe crucial move is that the spiritual sense is founded on the literal and presupposes it. Thomas added that no argument may be drawn from the spiritual sense alone, and that nothing necessary to faith is contained in a spiritual sense that Scripture does not teach plainly somewhere in the literal. Here the medieval tradition disciplined itself. Allegory was not abolished, but it was placed under the letter and denied the power to establish doctrine on its own."
+    },
+    {
+      "id": "lyra-and-the-literal",
+      "kicker": "The Turn",
+      "title": "Nicholas of Lyra and the Literal Postils",
+      "body": "The man who carried that discipline furthest was Nicholas of Lyra, a Franciscan who taught at Paris and died in 1349. He completed his Postilla litteralis, a running commentary on the literal sense of the entire Bible, in 1331. Lyra complained that the literal sense had been smothered by the multiplying of mystical readings, and he set out to recover it. To do so he read Hebrew and drew extensively on the eleventh-century Jewish commentator Rashi of Troyes, bringing the plain-sense tradition of medieval Judaism into the heart of Christian scholarship.\n\nLyra kept the spiritual senses. He later wrote a moral commentary as well, and he developed the idea that some passages have a double literal sense, as when a prophecy refers both to an event in Israel's history and, as the New Testament reads it, to Christ. But his literal postils became the most widely used Bible commentary of the late Middle Ages, copied in hundreds of manuscripts and printed alongside the biblical text. A later Latin jingle, playing on his name, suggested that if Lyra had not played his lyre Luther would not have danced, and there is truth in the joke. The Reformers' insistence on the plain, grammatical sense of Scripture was the harvest of a long medieval labor, not a sudden modern discovery.\n\nThe irony deserves attention from Protestants like me. We often tell the story as if the Reformation rescued the Bible from medieval darkness. The more accurate story is that medieval Christians, Franciscans and Victorines and Dominicans among them, had already spent two centuries teaching the church to honor the letter, often with the help of Jewish scholars whom the same church treated with contempt."
+    },
+    {
+      "id": "what-we-lost",
+      "kicker": "Today",
+      "title": "What the Medieval Reader Saw",
+      "body": "The culture that produced the fourfold sense was hierarchical, liturgical and Latin, and each of those traits shaped its reading. A society ordered in ranks, from serf to lord to king and from creature to angel to God, found it natural that a text should have ranked meanings rising from the letter to the heights. A church whose year moved from Advent to Pentecost heard the Old Testament read against the feasts of Christ and could hardly avoid hearing Christ in it. And a Bible read in Latin by a learned few was mediated to most Christians through sermons, stained glass, drama and the liturgy, which meant that the senses of Scripture were often taught by sight and song before they were taught by study. Some of that was loss. Ordinary believers were kept at a distance from the text, and allegory could make the Bible say what powerful people needed it to say.\n\nYet the medieval reader saw things we have trained ourselves not to see. He assumed that Scripture was one book with one story, that its purpose was to make him holy, that the reader must be formed by the text before he could understand it, and that every passage asked him what to believe, how to live and what to hope for. We have gained precision about authors, dates and grammar, and I would not give it back. But many of us read the Bible as information to be mastered, quickly and alone, and then wonder why it does not master us.\n\nThe couplet's last line asks where you are going. The medieval church believed no reading of Scripture was complete until that question had been answered. It is still the question our methods are least equipped to ask, and the one we can least afford to leave unasked."
+    }
+  ],
+  "keyFigures": [
+    {
+      "name": "Augustine of Hippo",
+      "note": "Bishop whose De doctrina Christiana, begun about 396 and finished about 426, taught the Latin West to read by signs, things and the rule of charity."
+    },
+    {
+      "name": "John Cassian",
+      "note": "Monk of Marseille whose fourteenth Conference reads Jerusalem as city, church, heavenly home and soul."
+    },
+    {
+      "name": "Gregory the Great",
+      "note": "Pope from 590 to 604 whose Moralia on Job made moral and spiritual reading the common property of the medieval church."
+    },
+    {
+      "name": "Augustine of Dacia",
+      "note": "Thirteenth-century Dominican to whom the Latin couplet summarizing the four senses is usually attributed."
+    },
+    {
+      "name": "Bernard of Clairvaux",
+      "note": "Cistercian abbot whose sermons on the Song of Songs, begun in 1135, are the summit of monastic spiritual reading."
+    },
+    {
+      "name": "Thomas Aquinas",
+      "note": "Dominican theologian who taught in the Summa Theologiae that every spiritual sense is founded on the literal."
+    },
+    {
+      "name": "Nicholas of Lyra",
+      "note": "Franciscan of Paris whose literal postils, completed in 1331 and drawing on Rashi, became the standard late medieval commentary."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Medieval Exegesis: The Four Senses of Scripture",
+      "author": "Henri de Lubac"
+    },
+    {
+      "title": "The Study of the Bible in the Middle Ages",
+      "author": "Beryl Smalley"
+    },
+    {
+      "title": "The Love of Learning and the Desire for God",
+      "author": "Jean Leclercq"
+    },
+    {
+      "title": "Biblical Exegesis and the Formation of Christian Culture",
+      "author": "Frances Young"
+    }
+  ]
+}

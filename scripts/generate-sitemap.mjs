@@ -210,6 +210,7 @@ const STATIC_PAGES = [
   { url: "/theology/how-to-use", priority: "0.7", changefreq: "monthly" },
   { url: "/theology/passage", priority: "0.75", changefreq: "monthly" },
   { url: "/theology/traditions", priority: "0.75", changefreq: "monthly" },
+  { url: "/theology/reading-the-bible", priority: "0.8", changefreq: "monthly" },
   { url: "/theology/which-view", priority: "0.7", changefreq: "monthly" },
   // Tools previously missing
   { url: "/tools/bible-on", priority: "0.65", changefreq: "monthly" },

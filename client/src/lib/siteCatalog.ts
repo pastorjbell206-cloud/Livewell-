@@ -190,6 +190,7 @@ export const DOORS: Door[] = [
         ],
       },
       { id: "history.traditions", name: "Christian traditions", line: "Why there are so many churches, and where each came from.", href: "/theology/traditions", icon: "Church" },
+      { id: "history.reading", name: "How culture reads the Bible", line: "The same Bible read across centuries and continents, and the scholars who show our lens.", href: "/theology/reading-the-bible", icon: "Globe" },
     ],
   },
   {
