@@ -187,7 +187,7 @@ Lighthouse, median of three, layout shift 0.000:
 |------|-------|
 | /study/books-at-a-glance | 96, 100, 96, 100 |
 | /study/key-chapters | 98, 100, 96, 100 |
-| /study/themes | LH_THEMES |
+| /study/themes | 100, 100, 96, 100 |
 
 Pushes in this second run: the fixes (3eb4c9ea..b39908cb), the glance page
 (b39908cb..08eabd07), then key chapters and themes together, because the
