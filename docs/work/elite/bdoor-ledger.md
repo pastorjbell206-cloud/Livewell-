@@ -19130,3 +19130,17 @@ Cut in chapter 27: the deep note's lines to Christ (1 Peter 2:22-23 and Jesus be
 | The hard note: Job as speaker in the text as it stands; the change of tone and chapters 29 to 31; the three readings (the narrator's interlude; Job's moment of insight; a preview of God's speeches); no side; the book's deepest theme | 23-28 | job/28.json `hard` | Repository; each reading in its holders' terms; no side |
 
 Cut in chapter 28: the deep note's lines to Christ (1 Corinthians 1:24, Colossians 2:3 and John 1:3 beside the poem; the note calls them parallels of the wisdom tradition, and the New Testament does not quote Job 28); the Egyptian expeditions in Sinai (not needed).
+
+## The plain notes on Job 29 (2026-11-25)
+
+`client/public/bible/notes/job/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The final speech as a legal case in three parts; no hearer named; who will give me; sod and the friendship of God; God first, then the children; cream and oil | 1-6 | job/29.json `story`, `literary`, `cultural`, `words` (sod) | Repository |
+| The city gate and its uses; Iron Age gate complexes; the ideal of defending the vulnerable; Exodus 22:22-24; clothing and the turban; justice as identity; the answer to chapter 22 | 7-17 | job/29.json `historical`, `cultural`, `story`, `words` (tsedeq, av) | Repository |
+| Psalm 68:5 | 7-17 | job/29.json `words` (av); BSB | Repository; BSB text |
+| The hard note: pride heard by some; Elihu and God's challenge; a legal defense; 1:1 and 1:8; both, and a self bound to honor | 7-17 | job/29.json `hard` | Repository; each reading in its holders' terms |
+| Nest, roots and bow; malqosh and the spring rain; a comforter of the mourners | 18-25 | job/29.json `literary`, `cultural`, `words` (malqosh) | Repository |
+
+Cut in chapter 29: the deep note's lines to Christ (Isaiah 11:4, Psalm 72:12-14, Matthew 11:4-5 and 2 Corinthians 8:9; the note calls them thematic).
