@@ -1015,6 +1015,61 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // The Bible atlas: every place the book pages place, A to Z, with each book's
+  // own sentence about it and the chapters that book names
+  // (client/public/bible/explore/atlas.json, built from the book pages).
+  "/study/atlas": async () => {
+    const d = readJsonSafe("client/public/bible/explore/atlas.json");
+    if (!d?.places?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const refHref = (slug, r) => { const m = r.match(/^(\d+):(\d+)/); return m ? `/study/bible/${slug}/${m[1]}#v${m[2]}` : `/study/bible/${slug}`; };
+    const place = (p) => `<li id="${escapeHtml(p.id)}"><h2>${escapeHtml(p.name)}</h2>\n${p.books.map((b) => {
+      const name = books.get(b.slug)?.name ?? b.slug;
+      return `<p><a href="/study/bible/${b.slug}"><strong>${escapeHtml(name)}.</strong></a> ${escapeHtml(b.line)} ${b.refs.map((r) => `<a href="${refHref(b.slug, r)}">${escapeHtml(`${b.slug === "psalms" ? "Psalm" : name} ${r}`)}</a>`).join(", ")}</p>`;
+    }).join("\n")}</li>`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>The Bible atlas</h1>`,
+        `<p class="pre-subtitle">Every place the book pages put on a map. Choose one to see the books and chapters that name it.</p>`,
+        `<ul>\n${d.places.map(place).join("\n")}\n</ul>`,
+      ]),
+    };
+  },
+  // Key words of the Bible: every word the book pages explain, A to Z, with
+  // each book's own explanation (client/public/bible/explore/words.json).
+  "/study/words": async () => {
+    const d = readJsonSafe("client/public/bible/explore/words.json");
+    if (!d?.words?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const word = (w) => `<li id="${escapeHtml(w.id)}"><h2>${escapeHtml(w.word)}</h2>\n${w.entries.map((e) => `<p>${escapeHtml(e.line)} <a href="/study/bible/${e.book}">${escapeHtml(books.get(e.book)?.name ?? e.book)}</a></p>`).join("\n")}</li>`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Key words of the Bible</h1>`,
+        `<p class="pre-subtitle">The words the book pages stop to explain, in one list. Search it, or go by language.</p>`,
+        ...Array.from({ length: Math.ceil(d.words.length / 60) }, (_, k) => `<ul${k ? ' class="pre-far"' : ""}>\n${d.words.slice(k * 60, k * 60 + 60).map(word).join("\n")}\n</ul>`),
+      ]),
+    };
+  },
+  // Hard passages: every passage the book pages list as hard, book by book,
+  // each with the link to the chapter where its note faces the question, and
+  // the way to Find Help first (client/public/bible/explore/hard-passages.json).
+  "/study/hard-passages": async () => {
+    const d = readJsonSafe("client/public/bible/explore/hard-passages.json");
+    if (!d?.books?.length) return null;
+    const help = catalogEntries().find((e) => e.href === "/help");
+    const book = (b, i) => far(i, b.name, `<ul>\n${b.items.map((h) => `<li><a href="/study/bible/${b.slug}/${h.ch}#v${h.v}">${escapeHtml(`${b.slug === "psalms" ? "Psalm" : b.name} ${h.ref}`)}</a>: ${escapeHtml(h.line)}</li>`).join("\n")}\n</ul>`);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Hard passages</h1>`,
+        `<p class="pre-subtitle">The places where readers stop and ask. Each one opens the chapter where its note faces the question.</p>`,
+        help ? `<p><a href="/help">${escapeHtml(help.title)}</a>: ${escapeHtml(help.blurb)}</p>` : "",
+        ...d.books.map(book),
+      ]),
+    };
+  },
   // Paul's travels: every trip's places in order with what happened there and
   // its Acts reference, then the churches and the letters written to them
   // (client/public/explorer/travels.json; places named as the Acts book page
