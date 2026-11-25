@@ -18872,3 +18872,19 @@ Cut in chapter 9: the deep note's lines to Jesus as the door, the bread of life 
 | The hard note: 1 Samuel 28:6 and 10:14; shaal and darash; asking without seeking; the medium; a verdict on a whole reign; not denying the inquiry | 13-14 `hard` | 1-chronicles/10.json `hard` | Repository; the views in their holders' terms |
 
 Cut in chapter 10: the deep note's contrast between Saul and Jesus (Matthew 26:39), which it calls a connection of theme and not a prediction. The words of 10:4-5 are not quoted.
+
+## The plain notes on 1 Chronicles 11 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 11:1 (narrative and words); 11:2 (paraphrased, the LORD's words quoted alone); 11:3 (its last sentence); Jebus; 11:5 (the people's words and its second sentence); Joab first (11:6); 11:9 | 1-9 | 1-chronicles/11.json `summary`; BSB | Repository; BSB text |
+| Straight to Hebron; the seven years and the civil war passed over (2 Samuel 2 to 4); 2 Samuel 5 followed; kinship; the covenant; mashach and mashiach; raah; Jerusalem's ridge, valleys and Gihon; a neutral capital; about 1010 to 970 BC and about 1000 BC; the Millo and the stepped stone structure, debated | 1-9 | 1-chronicles/11.json `story`, `historical`, `cultural`, `words` (raah, mashach) | Repository |
+| 2 Samuel 5:2 (the LORD's words); Psalm 133:1 (its second sentence, in double quotes); Ezekiel 34:23 (its phrase) | 1-9 | 1-chronicles/11.json `words` (raah), `christ` (Ezekiel 34:23); BSB | Repository; BSB text |
+| The hard note: the omissions; idealizing or whitewashing; the readers had Samuel and Kings; chosen and arranged; the seven years in passing (3:4; 29:27); Uriah (11:41); a second portrait | 1-9 `hard` | 1-chronicles/11.json `hard` | Repository; both readings in their holders' terms |
+| The chiefs and 11:10 (its phrase); Jashobeam and Eleazar (11:11-14); 11:17 (David's words, quoted alone); 11:18 (its last sentence); 11:19 (David's words); Abishai and Benaiah (11:20-25); the roll and 11:41 (its phrase) | 10-47 | 1-chronicles/11.json `summary`, `outline`; BSB | Repository; BSB text |
+| The Three and the Thirty; the roll placed at the beginning; 2 Samuel 23:8-39 and another source after Uriah; foreigners among them; the drink offering; blood belonging to God (Leviticus 17:10-14); Eleazar and Shammah joined and the copyist's skip | 10-47 | 1-chronicles/11.json `story`, `historical`, `cultural`, `literary`, `words` (dam) | Repository |
+| 2 Samuel 23:17 | 10-47 | 1-chronicles/11.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 11: the deep note's lines to Jesus as the good shepherd (John 10:11) and the cup of Mark 14:24 set against David's poured-out water, which it calls thematic. A first draft nested David's words inside a narrative quotation and used first-person glosses; all were rewritten before they reached the repository. No care line is needed in this chapter.
