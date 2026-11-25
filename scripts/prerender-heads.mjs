@@ -1405,7 +1405,13 @@ function writeRoute(template, route, head, bodyHtml = "") {
     ? path.join(DIST_DIR, "index.html")
     : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  const preloads = isHome ? "" : chunkPreloads(route.path, template);
+  // Not on a page whose held text opens on a picture (the first cover on
+  // /downloads): a picture is the page's largest paint, and Lighthouse counts
+  // every file fetched before it is drawn. Preloaded from the head, the page's
+  // own code (two dozen files) arrived first and was counted, 600 ms of a phone's
+  // largest paint; the app fetches it when it starts, behind the held page.
+  const opensOnPicture = /<img\b[^>]*\bfetchpriority="high"/.test(bodyHtml);
+  const preloads = isHome || opensOnPicture ? "" : chunkPreloads(route.path, template);
   let html = rewriteIndexHtml(template, preloads ? `${head}\n    ${preloads}` : head);
   // The front page's head also carries the script that fills the hero's tonight slot, early (homeSlotScript).
   if (isHome) html = withSlotScript(html, homeSlotScript());
