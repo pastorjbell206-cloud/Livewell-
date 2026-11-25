@@ -18581,3 +18581,18 @@ Cut in chapter 7: the deep note's lines to Christ (Hebrews 2:6-9 beside Job's ec
 | Isaiah 18:2 | 25-35 | exodus/verses/2.json `history` (papyrus vessels, Isaiah 18:2, and Job 9:26); BSB | Repository; BSB text |
 
 Cut in chapter 9: the deep note's lines to Christ (1 Timothy 2:5, Hebrews 7:25, Romans 3:21-26 beside 9:2 and 9:33; the note says the verse is not a prophecy, and the New Testament does not quote it); the Mark and John notes' echo of 9:8 and 9:11 in Jesus walking on the sea (the Gospels do not quote Job).
+
+## The plain notes on Job 8 (2026-11-25)
+
+`client/public/bible/notes/job/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Bildad the Shuhite and Shuah (Genesis 25:1-6), uncertain; one of the eastern peoples; simpler and harsher; his case as he would sign it; right that God is just, wrong to read every event as a verdict; mishpat | 1-7 | job/8.json `story`, `historical`, `doctrines` (judgment, repentance), `words` (mishpat) | Repository |
+| Ezekiel 18:20 | 1-7 | john/9.json `cultural` (children not bearing parents' guilt, Ezekiel 18:20; Job argues against suffering always revealing sin); BSB | Repository; BSB text |
+| The hard note: 8:4 to a grieving father; the deaths in the test, not punishment; 1:5; a deduction from theory; 42:7; the speeches recorded to be tested; no one may say it to a grieving parent | 1-7 | job/8.json `hard` | Repository |
+| The child-loss line | 1-7 | 2-samuel/plain/12.json (15-25), 1-kings/plain/3.json (16-28), 2-kings/plain/4.json (18-37) (`hard`) | Reused whole, word for word; Find Help named |
+| Tradition and the fathers; born yesterday; papyrus, reeds and the Nile; the spider's web; tam in verse 20 and 1:1, 1:8; inherited wisdom's strength and limit | 8-22 | job/8.json `cultural`, `literary`, `words` (dor, tam), `doctrines` (wisdom) | Repository |
+| Psalm 144:4 | 8-22 | exodus and psalms notes (the shadow as what is brief: Psalm 144:4; Job 8:9); BSB | Repository; BSB text |
+
+Cut in chapter 8: the deep note's lines to Christ (John 9:1-3, Luke 13:1-5, Matthew 27:41-43 and the cross breaking Bildad's equation; the New Testament does not draw them from Job); the Babylonian Theodicy (dated only roughly in the note; not needed).
