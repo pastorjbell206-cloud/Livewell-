@@ -255,6 +255,19 @@ Lighthouse, median of three, layout shift 0.000:
 
 | Page | Score |
 |------|-------|
-| /study/word | LH_WORD |
-| /study/word/G0026 | LH_WORD2 |
-| /study/cross-references | LH_XREF |
+| /study/word | 100 |
+| /study/cross-references | 100 |
+| /study/cross-references?ref=Jhn.3.16 | 97 to 99 |
+| /study/word/G0026 | 64 to 81 (LCP 4.0 to 5.3 s) |
+| /study/word/H0430 | 75 |
+
+The finder and the cross-references page paint their held text first and
+pass. A word's own page does not reach 90: it has no held text (it is not
+prerendered, for the reason above), so its largest text, the dictionary
+entry, waits on the app, the lexicon file (44 KB) and its fonts, and
+Lighthouse's phone model puts that at four to five seconds while the real
+load here is under a second. The verse list's chapters are now asked for only
+after the entry paints. Getting it to 90 would need each word's page
+prerendered (some 17,000 more HTML files), which is James's call, not taken
+here. For comparison, the Bible word search, also drawn in the browser,
+measured 66 on the same machine. Measured under a shared load of 6 to 12.
