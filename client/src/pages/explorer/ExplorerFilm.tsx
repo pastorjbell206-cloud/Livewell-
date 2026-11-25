@@ -313,6 +313,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole letter to the Romans in seven moving pictures: what it is, its large blocks, what is wrong, what God has done, the new life, one people from Jew and Gentile, and where to start reading.",
     },
+    "book-exodus": {
+      title: "Exodus: out of slavery, to God: Bible Explorer",
+      description:
+        "The whole book of Exodus in seven moving pictures: what it is, its two halves, the name of God, the Passover and the sea, a law given to people already rescued, the tent where God comes to live, and where to start reading.",
+    },
+    "book-proverbs": {
+      title: "Proverbs: skill for ordinary days: Bible Explorer",
+      description:
+        "The whole book of Proverbs in seven moving pictures: what it is, a collection of collections, two ways, Wisdom's call, words, work and the poor, and how to read a proverb.",
+    },
+    "book-isaiah": {
+      title: "Isaiah: the Holy One who comforts: Bible Explorer",
+      description:
+        "The whole book of Isaiah in seven moving pictures: what it is, its three parts, the Holy One of Israel, trust or ruin, judgment and a remnant, the king and the Servant, a world made new, and where to start reading.",
+    },
+    "book-matthew": {
+      title: "Matthew: God with us: Bible Explorer",
+      description:
+        "The whole Gospel of Matthew in seven moving pictures: what it is, its five great blocks of teaching, promises kept, the kingdom of heaven, who Jesus is, Israel and all nations, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

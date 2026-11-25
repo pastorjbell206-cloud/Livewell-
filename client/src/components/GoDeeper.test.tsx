@@ -52,23 +52,35 @@ describe("Go deeper", () => {
     expect(within(doctrine).getByRole("button", { name: /Show fewer/ }).getAttribute("aria-expanded")).toBe("true");
   });
 
-  // Genesis 36 was this test's empty chapter until Genesis had a film of its
-  // own (2026-11-25), which is offered on every chapter of the book.
-  it("draws nothing for a chapter with nothing (Exodus 38), and asks for no file it lacks", async () => {
-    const { container } = render(<GoDeeper slug="exodus" chapter={38} label="Exodus 38" />);
+  // Chapters the list leaves out, found from the list itself: as each book of
+  // the Bible gains a film of its own (offered on every chapter of the book),
+  // a chapter named here by hand would stop being empty. Genesis 36, Exodus 38
+  // and Matthew 8 each were. When every book has its film none will be left,
+  // and these two tests then have nothing to check.
+  const LIST: Record<string, number[]> = JSON.parse(fs.readFileSync(path.join(PUBLIC, "index/chapters.json"), "utf8"));
+  const BOOKS: { slug: string; name: string; chapters: number }[] = JSON.parse(fs.readFileSync(path.join(PUBLIC, "bible/books.json"), "utf8"));
+  const EMPTY = BOOKS.flatMap((b) =>
+    Array.from({ length: b.chapters }, (_, i) => i + 1)
+      .filter((n) => !(LIST[b.slug] ?? []).includes(n))
+      .map((n) => ({ slug: b.slug, name: b.name, n })),
+  );
+
+  it("draws nothing for a chapter with nothing, and asks for no file it lacks", async () => {
+    const one = EMPTY[0];
+    if (!one) return;
+    const { container } = render(<GoDeeper slug={one.slug} chapter={one.n} label={`${one.name} ${one.n}`} />);
     await waitFor(() => expect(container.innerHTML).toBe(""));
     expect(screen.queryByText("Go deeper")).toBeNull();
-    expect(requested).not.toContain("/index/chapters/exodus/38.json");
+    expect(requested).not.toContain(`/index/chapters/${one.slug}/${one.n}.json`);
   });
 
-  it("asks for no file for Matthew 8 or 17, which the list leaves out (no 404 in the console)", async () => {
-    const list: Record<string, number[]> = JSON.parse(fs.readFileSync(path.join(PUBLIC, "index/chapters.json"), "utf8"));
-    for (const n of [8, 17]) {
-      expect(list.matthew).not.toContain(n);
-      const { container, unmount } = render(<GoDeeper slug="matthew" chapter={n} label={`Matthew ${n}`} />);
+  it("asks for no file for chapters the list leaves out (no 404 in the console)", async () => {
+    const some = EMPTY.slice(-2);
+    for (const one of some) {
+      const { container, unmount } = render(<GoDeeper slug={one.slug} chapter={one.n} label={`${one.name} ${one.n}`} />);
       await waitFor(() => expect(container.innerHTML).toBe(""));
       unmount();
     }
-    expect(requested.filter((u) => u.startsWith("/index/chapters/matthew/"))).toEqual([]);
+    for (const one of some) expect(requested).not.toContain(`/index/chapters/${one.slug}/${one.n}.json`);
   });
 });

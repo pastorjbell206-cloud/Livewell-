@@ -84,7 +84,8 @@ describe("the passage index", () => {
     const list: Record<string, number[]> = JSON.parse(fs.readFileSync(path.resolve(DIR, "../chapters.json"), "utf8"));
     const listed = Object.entries(list).flatMap(([slug, ns]) => ns.map((n) => `${slug}/${n}`)).sort();
     expect(listed).toEqual(files.map((f) => f.key).sort());
-    expect(list.matthew).not.toContain(8);
+    // (Matthew 8 was named here as a chapter with nothing, until Matthew had
+    // a film of its own, offered on every chapter of the book.)
     expect(list.john).toContain(3);
   });
 
