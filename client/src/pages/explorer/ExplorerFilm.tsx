@@ -333,6 +333,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole Gospel of Matthew in seven moving pictures: what it is, its five great blocks of teaching, promises kept, the kingdom of heaven, who Jesus is, Israel and all nations, and where to start reading.",
     },
+    "book-mark": {
+      title: "Mark: the story at a run: Bible Explorer",
+      description:
+        "The whole Gospel of Mark in seven moving pictures: what it is, its two halves, the question of who Jesus is, the way of the cross, friends who fail, the centurion at the cross, and where to start reading.",
+    },
+    "book-luke": {
+      title: "Luke: good news for the lost: Bible Explorer",
+      description:
+        "The whole Gospel of Luke in seven moving pictures: what it is, the long road to Jerusalem, people others passed over, the lost found, prayer, salvation today and joy, and where to start reading.",
+    },
+    "book-acts": {
+      title: "Acts: to the ends of the earth: Bible Explorer",
+      description:
+        "The whole book of Acts in seven moving pictures: what it is, the road from Jerusalem to Rome, the Holy Spirit, witnesses and what it cost, every line crossed, Saul who became Paul, and where to start reading.",
+    },
+    "book-revelation": {
+      title: "Revelation: the Lamb on the throne: Bible Explorer",
+      description:
+        "The whole book of Revelation in seven moving pictures, with nothing to frighten: what it is, how it is laid out, the throne, the Lamb, the ways Christians read its visions, all things made new, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

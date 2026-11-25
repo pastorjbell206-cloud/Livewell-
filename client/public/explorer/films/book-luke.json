@@ -1,0 +1,117 @@
+{
+  "slug": "book-luke",
+  "title": "Luke: good news for the lost",
+  "group": "books",
+  "status": "finished",
+  "book": "luke",
+  "mark": "book-luke",
+  "line": {
+    "younger": "The longest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Luke as a whole book: an orderly account, the long road to Jerusalem, good news to the poor, the lost found, prayer, salvation today, and where to begin."
+  },
+  "poster": "Night on a hillside. Shepherds stand among their sheep and look up, and one gold light shines in the sky above them.",
+  "frames": [
+    {
+      "id": "account",
+      "name": "An orderly account",
+      "still": "Night on a hillside. Shepherds stand among their sheep and look up, and one gold light shines in the sky above them.",
+      "younger": "Luke is the longest of the four books about Jesus. Luke says he looked into everything carefully and wrote it down in order for a man named Theophilus. And it is only the first half. His second book is called Acts.",
+      "older": "Luke opens with a formal preface: many have written accounts, the material was handed down by eyewitnesses, and he has investigated everything carefully. It is the first of two books by the same author. Luke presents Jesus as Savior.",
+      "verse": {
+        "ref": "Luke 2:11",
+        "text": "Today in the city of David a Savior has been born to you."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in six panels, with a manger, a boat, a long road, a city gate, a hill and an open tomb over them. A gold rule lies under the third panel, the road.",
+      "younger": "Luke begins with two babies, John and Jesus. Then Jesus teaches and heals in Galilee. The longest part is a walk: the road to Jerusalem. Then come the city, the cross, and the first Easter morning.",
+      "older": "After the births of John and Jesus comes the ministry in Galilee. Then the turning point is marked in the text, and the long central section is framed as the road to Jerusalem. The book ends, as it began, in the temple.",
+      "verse": {
+        "ref": "Luke 9:51",
+        "text": "Jesus resolutely set out for Jerusalem."
+      }
+    },
+    {
+      "id": "poor",
+      "name": "Watch for: people others passed over",
+      "still": "At the edge of a town Jesus stands with a hand held out to a group of people: a widow, a man leaning on a stick, a child, and a man sitting apart by the wall.",
+      "younger": "Watch for the people other people passed by. The poor. Widows. The sick. Foreigners. People everyone called sinners. Luke's book is full of them, and Jesus keeps stopping for them.",
+      "older": "Luke gives more attention to wealth and poverty than any other Gospel, and women are prominent throughout. Samaritans, tax collectors and sinners are welcomed. In his first sermon Jesus reads from Isaiah and says it is fulfilled that day.",
+      "verse": {
+        "ref": "Luke 4:18",
+        "text": "He has anointed Me to preach good news to the poor."
+      }
+    },
+    {
+      "id": "lost",
+      "name": "Watch for: the lost, found",
+      "still": "On a road outside a house a father comes with his arms open toward his son, who has dropped to the ground a little way off with his head bowed. A gold sun stands over the house.",
+      "younger": "Watch for lost things being found. A lost sheep. A lost coin. A lost son, whose father runs down the road to meet him. And a man named Zacchaeus, up a tree. Jesus says this is the very reason he came.",
+      "older": "The parables of the lost sheep, the lost coin and the lost son show God's joy in finding the lost, and expose the resentment of those who think they were never lost. Jesus sums up the whole book in one line.",
+      "verse": {
+        "ref": "Luke 19:10",
+        "text": "For the Son of Man came to seek and to save the lost."
+      }
+    },
+    {
+      "id": "prayer",
+      "name": "Watch for: prayer",
+      "still": "Early morning on a hill. Jesus kneels alone and prays, and two of his friends wait a little way off. A thin gold line of dawn lies along the hills.",
+      "younger": "Watch for Jesus praying. Luke shows him praying at every big moment: when he is baptized, before he chooses his twelve friends, on the mountain, in the garden, and on the cross. One day his friends ask him to teach them.",
+      "older": "Luke shows Jesus praying at the turning points of his life: at his baptism, before choosing the Twelve, at the transfiguration, in Gethsemane, and on the cross. Prayer in Luke is the ordinary posture of those who wait on God.",
+      "verse": {
+        "ref": "Luke 11:1",
+        "text": "Lord, teach us to pray"
+      }
+    },
+    {
+      "id": "today",
+      "name": "Watch for: today, and joy",
+      "still": "Evening in a village house. Two friends sit at a table with bread on it, and Jesus stands between them with his hands held out over the bread. A lamp with a gold flame burns on the table.",
+      "younger": "Watch for the word today. Today a Savior is born. Luke's good news is for now, and it brings joy. Even after the cross, two sad friends on a road find that Jesus is alive, and walking with them.",
+      "older": "The word today carries weight in Luke. Salvation is present, not only future, and it brings joy. On the Emmaus road the risen Jesus opens the Scriptures to two disciples who had been hoping, and had given up.",
+      "verse": {
+        "ref": "Luke 24:32",
+        "text": "Were not our hearts burning within us as He spoke with us on the road"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapters one and two, the Christmas story. Then read chapter fifteen, about the lost sheep, the lost coin and the lost son. And when you finish Luke, his story goes on in the book of Acts.",
+      "older": "Start with chapter 1. The book's page marks six key chapters: 1, 2, 4, 15, 19 and 24. Watch the meals, the prayers, and the word today. And read on: the same author's second book is Acts.",
+      "verse": {
+        "ref": "Luke 1:4",
+        "text": "so that you may know the certainty of the things you have been taught."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Jesus kept stopping for people others walked past. Who gets walked past where you are?",
+    "older": "The story of the lost son ends with the older brother outside, angry at the welcome. Which of the two brothers are you more like?"
+  },
+  "read": [
+    { "label": "Luke 1", "href": "/study/bible/luke/1" },
+    { "label": "Luke 2", "href": "/study/bible/luke/2" },
+    { "label": "Luke 4", "href": "/study/bible/luke/4" },
+    { "label": "Luke 15", "href": "/study/bible/luke/15" },
+    { "label": "Luke 24", "href": "/study/bible/luke/24" }
+  ],
+  "stops": [
+    "jesus",
+    "cross"
+  ],
+  "cards": [],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Luke in the Study Bible: the whole book, taught from the start", "href": "/study/bible/luke" },
+    { "label": "Does God still love me when I do wrong? (a moving picture)", "href": "/study/explorer/watch/love-when-i-do-wrong" },
+    { "label": "Prayer (a moving picture)", "href": "/study/explorer/watch/prayer" },
+    { "label": "Matthew: God with us (a moving picture)", "href": "/study/explorer/watch/book-matthew" },
+    { "label": "Mark: the story at a run (a moving picture)", "href": "/study/explorer/watch/book-mark" }
+  ],
+  "end": { "label": "Start reading: Luke 1", "href": "/study/bible/luke/1" }
+}

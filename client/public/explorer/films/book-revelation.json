@@ -1,0 +1,122 @@
+{
+  "slug": "book-revelation",
+  "title": "Revelation: the Lamb on the throne",
+  "group": "books",
+  "status": "finished",
+  "book": "revelation",
+  "mark": "book-revelation",
+  "line": {
+    "younger": "The last book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Revelation as a whole book: letters to seven churches, a throne, a Lamb who was slain, the ways Christians read its visions, the making new of all things, and where to begin."
+  },
+  "poster": "A man sits writing on a rocky island in the sea. Before him stand seven lampstands in a row, and the middle one burns with a gold flame.",
+  "frames": [
+    {
+      "id": "unveiling",
+      "name": "An unveiling",
+      "still": "A man sits writing on a rocky island in the sea. Before him stand seven lampstands in a row, and the middle one burns with a gold flame.",
+      "younger": "Revelation is the last book of the Bible. Its name means an unveiling, like pulling back a curtain. A man named John, on a small island, sees the risen Jesus. The first thing Jesus says to him is: do not be afraid.",
+      "older": "Revelation is the last book of the Bible. Its title means an unveiling. It was written to real churches under real pressure, some in danger, some comfortable and compromised. It shows them their world as heaven sees it.",
+      "verse": {
+        "ref": "Revelation 1:17",
+        "text": "Do not be afraid. I am the First and the Last"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in six panels, with a lampstand, seven small lamps, a seat with a rainbow over it, a crown, a fallen tower and a tree by a river over them. A gold rule lies under the last panel, the tree.",
+      "younger": "Revelation begins with letters from Jesus to seven churches. Then a door opens in heaven, and John is shown one picture after another. Some are strange, and some are hard. The book ends with everything made new.",
+      "older": "John sees the risen Christ and receives messages for seven churches. Then a door opens in heaven: God's throne, and a Lamb who opens a sealed scroll. A sequence of visions follows, and the book ends with a new heaven and a new earth.",
+      "verse": {
+        "ref": "Revelation 1:3",
+        "text": "Blessed is the one who reads aloud the words of this prophecy"
+      }
+    },
+    {
+      "id": "throne",
+      "name": "Watch for: the throne",
+      "still": "A wide floor like a calm sea of glass, with seven lamps burning before a great arch of rainbow. Under the arch there is only gold light. No one is drawn.",
+      "younger": "Watch for the throne. Before John is shown anything else, he sees that God is on his throne and is worshiped day and night. Whatever happens on earth, God is still king.",
+      "older": "The throne is the book's central image. Whatever chaos appears on earth, the vision of chapter 4 shows the One seated on the throne, worshiped day and night. The empires that claim ultimate power are not ultimate.",
+      "verse": {
+        "ref": "Revelation 4:8",
+        "text": "Holy, Holy, Holy, is the Lord God Almighty, who was and is and is to come!"
+      }
+    },
+    {
+      "id": "lamb",
+      "name": "Watch for: the Lamb",
+      "still": "A lamb stands on a hill in gold light, and a scroll stands open beside it. Around the hill people of many lands stand with their hands lifted.",
+      "younger": "Watch for the Lamb. John is told to look for a lion, and when he looks, he sees a lamb. The Lamb is Jesus, who gave his life and is alive. In this book the one who wins is the one who gave himself.",
+      "older": "John hears of the Lion of the tribe of Judah, and looks, and sees a Lamb who was slain. That reversal defines the book: Christ conquers by sacrifice, and his people overcome the same way.",
+      "verse": {
+        "ref": "Revelation 5:12",
+        "text": "Worthy is the Lamb, who was slain"
+      }
+    },
+    {
+      "id": "readings",
+      "name": "Watch for: pictures, not a puzzle",
+      "still": "Four readers sit in a half circle, each with the same scroll open, and one lamp with a gold flame burns in the middle of them.",
+      "younger": "Christians read these pictures in different ways. Some think they are mostly about John's own time. Some, about the whole story of the church. Some, about things still to come. Some, about every age. No one should use this book to guess dates.",
+      "older": "Readers follow four main approaches. Some read most of it as fulfilled in the first centuries, some as a map of church history, some as events still to come, some as the conflict of every age. Many combine them, and faithful Christians hold each.",
+      "verse": {
+        "ref": "Revelation 14:12",
+        "text": "Here is a call for the perseverance of the saints"
+      }
+    },
+    {
+      "id": "new",
+      "name": "Watch for: all things new",
+      "still": "A city on a hill with its gates standing open, a river running out from it and a tree on the river's bank. People walk up toward the gates in the light of a gold sun.",
+      "younger": "Watch where it all ends. Not with the hard pictures. It ends with a new heaven and a new earth, and a city where God lives with his people. He wipes away every tear. There is no more death, and no more crying.",
+      "older": "Revelation does not flinch from judgment on evil, but it does not end there. The goal is a renewed creation in which God dwells with his people, death is gone, and the nations walk in the light of the Lamb.",
+      "verse": {
+        "ref": "Revelation 21:4",
+        "text": "He will wipe away every tear from their eyes"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter one, where John sees Jesus. Then read chapters twenty-one and twenty-two. Read the chapters in between with a grown-up you trust, and remember the first words: do not be afraid.",
+      "older": "Start with chapter 1. The book's page marks eight key chapters: 1, 2, 5, 12, 13, 20, 21 and 22. Read its symbols by the Old Testament. The book's own interest is less in timetables than in worship, endurance and hope.",
+      "verse": {
+        "ref": "Revelation 22:20",
+        "text": "Come, Lord Jesus!"
+      }
+    }
+  ],
+  "think": {
+    "younger": "John was told to look for a lion, and saw a lamb. What does that tell you about how Jesus wins?",
+    "older": "Revelation was written to churches in danger and to churches too comfortable. Which of the two would it have more to say to where you live?"
+  },
+  "read": [
+    { "label": "Revelation 1", "href": "/study/bible/revelation/1" },
+    { "label": "Revelation 4", "href": "/study/bible/revelation/4" },
+    { "label": "Revelation 5", "href": "/study/bible/revelation/5" },
+    { "label": "Revelation 21", "href": "/study/bible/revelation/21" },
+    { "label": "Revelation 22", "href": "/study/bible/revelation/22" }
+  ],
+  "stops": [
+    "new-creation"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that Jesus Christ will come again, and that God will make all things new. They read Revelation's visions in four main ways (as fulfilled in the first centuries, as a map of church history, as events still to come, or as the conflict of every age), and the thousand years of chapter 20 in three (premillennial, postmillennial and amillennial). Faithful Christians hold each of these views. This moving picture takes no side and names no date; the readings are set out on",
+    "links": [
+      { "label": "the Revelation page of the Study Bible", "href": "/study/bible/revelation" }
+    ]
+  },
+  "care": "This stop talks about death and about God's judgment. If you are grieving someone who has died, or if thinking about death or judgment makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Revelation in the Study Bible: the whole book", "href": "/study/bible/revelation" },
+    { "label": "The New Creation: the last stop on the map", "href": "/study/explorer/new-creation" },
+    { "label": "The life to come (a moving picture)", "href": "/study/explorer/watch/life-to-come" },
+    { "label": "Sacrifice and the Lamb (a moving picture)", "href": "/study/explorer/watch/the-lamb" },
+    { "label": "The kingdom of God (a moving picture)", "href": "/study/explorer/watch/kingdom-of-god" }
+  ],
+  "end": { "label": "Start reading: Revelation 1", "href": "/study/bible/revelation/1" }
+}

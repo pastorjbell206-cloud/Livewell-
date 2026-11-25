@@ -54,7 +54,7 @@ describe("Mark's teaching introduction", () => {
   it("only the four Gospels, Acts and Genesis have one so far, and every other book's introduction still has the fields its page draws", () => {
     for (const b of BOOKS) {
       const d: BookIntro = json(`bible/notes/${b.slug}/intro.json`);
-      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke", "acts", "genesis", "exodus", "leviticus", "numbers", "deuteronomy", "joshua", "judges", "ruth", "1-samuel", "2-samuel", "1-kings", "2-kings", "1-chronicles", "ezra", "nehemiah", "esther", "psalms", "romans", "1-corinthians", "2-corinthians", "galatians", "ephesians", "philippians", "colossians", "1-thessalonians", "2-thessalonians", "1-timothy", "2-timothy", "titus", "philemon", "hebrews", "james", "1-peter", "2-peter", "1-john", "2-john", "3-john", "jude", "revelation"].includes(b.slug));
+      expect(!!d.teaching, b.slug).toBe(["mark", "matthew", "john", "luke", "acts", "genesis", "exodus", "leviticus", "numbers", "deuteronomy", "joshua", "judges", "ruth", "1-samuel", "2-samuel", "1-kings", "2-kings", "1-chronicles", "ezra", "nehemiah", "esther", "job", "psalms", "romans", "1-corinthians", "2-corinthians", "galatians", "ephesians", "philippians", "colossians", "1-thessalonians", "2-thessalonians", "1-timothy", "2-timothy", "titus", "philemon", "hebrews", "james", "1-peter", "2-peter", "1-john", "2-john", "3-john", "jude", "revelation"].includes(b.slug));
       expect(typeof d.overview).toBe("string");
     }
   });
@@ -317,6 +317,7 @@ describe("a map's frame", () => {
       else if (b.slug === "ezra") expect(frames).toEqual(["canaan"]);
       else if (b.slug === "nehemiah") expect(frames).toEqual(["canaan"]);
       else if (b.slug === "esther") expect(frames).toEqual(["canaan"]);
+      else if (b.slug === "job") expect(frames).toEqual(["canaan"]);
       else if (b.slug === "romans") expect(frames).toEqual(["mediterranean"]);
       else if (b.slug === "1-corinthians") expect(frames).toEqual(["mediterranean"]);
       else if (b.slug === "2-corinthians") expect(frames).toEqual(["mediterranean"]);
