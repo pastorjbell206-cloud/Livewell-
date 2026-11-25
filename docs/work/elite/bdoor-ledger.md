@@ -20508,3 +20508,28 @@ Every claim in `client/public/bible/notes/lamentations/intro.json`, field `teach
 | Go deeper: eleven pages | deeper | bible/guides/reading-poetry.json, reading-prophets.json, kings-of-israel-and-judah.json, empires.json; bible/doctrines.json (Prayer and Lament; Suffering and Evil; Exile and Restoration); studyguides/lament.json; the Honest Answer on suffering (linked from the Job book page); needs/grief.json and needs/suffering.json (page: true) | Repository; every page live; the Find Help pages named by their own titles |
 
 Cut from the book page: the introduction's lines to Christ that the New Testament does not draw (Jesus standing where the sufferer of chapter 3 stands; the mercies grounded in the resurrection; the cross and the uncomforted city), kept only as the church's reading where the introduction itself marks it so. The phone number in the introduction's older `reading` field was not repeated; the care lines name Find Help and give no number. The acts in 2:20 and 4:10 are named and not described or quoted.
+
+## The plain notes on Lamentations 1 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1 (three clauses); 1:2 (its clause); friends turned enemies; 1:3; 1:4 (its clause); gates, priests, young women; 1:5 (its clause); captives; 1:6; 1:7 | 1-7 | BSB | BSB text |
+| A year and a half; 587 or 586 BC; the burning and the exile; the poorer remnant; the silence after; ekah as the funeral cry and the book's name; mourning women; the widow's lost protection and the law's care; lovers as Egypt and the neighbors (Jeremiah 27:3); the acrostic | 1-7 | lamentations/1.json `historical`, `cultural`, `literary`, `words` (ekah, almanah) | Repository |
+| Isaiah 40:1 and nacham; Isaiah 51:19; Psalm 79:1 | 1-7 `later` | lamentations/1.json `words` (nacham and Isaiah 40); BSB | BSB text |
+| 1:8 (its clause); honor to scorn; 1:9 (its last line, in double quotes for its exclamation); 1:10 (its first clause, before the dash) and the nations in the sanctuary; 1:11 (two clauses) | 8-11 | BSB | BSB text |
+| The prophets' warnings; public shame and the purity laws; the holy city untouchable; foreigners barred and now in the sanctuary; the famine trade; the two voices | 8-11 | lamentations/1.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Jeremiah 13:22 (its clause); Isaiah 62:4 (its clause) | 8-11 `later` | BSB | BSB text |
+| The hard note: the city pictured as a woman; the shame is the city's fall; the poem grieves and does not mock; a prophetic picture of a city, no warrant for any man to shame or harm a woman | 8-11 `hard` | lamentations/1.json `cultural`; lamentations/intro.json `reading` (Daughter Zion); revelation/plain/17.json (the same care in substance); the brief | Repository; stated as the brief asks |
+| Care line ("If someone is hurting you, at home, at work or in a church...") | 8-11 `hard` | Reused byte for byte; found whole in 2-kings/plain/9.json and other places | care.mjs |
+| 1:12 (in double quotes for its exclamation, and its clause); 1:13; 1:14; 1:15; 1:16 (its first sentence); 1:17 (its first sentence and the rest) | 12-17 | BSB | BSB text |
+| Zion speaking from verse 12 with the narrator's one interruption at 17; friends sitting with the bereaved; the yoke; pesha as deliberate breach; the refrain five times building to the plea | 12-17 | lamentations/1.json `literary`, `cultural`, `words` (pesha) | Repository |
+| Isaiah 49:15 (its question); Jeremiah 14:17 (its clause) | 12-17 `later` | BSB | BSB text |
+| 1:18 (its first sentence); peoples to look; captivity; 1:19; 1:20 (in double quotes for its exclamation) and the sword and death; 1:21; 1:22 | 18-22 | BSB | BSB text |
+| Confession and grief held together; the false prophets' promises; the enemies' gladness and Edom; equal justice handed to God; no comfort at the chapter's end | 18-22 | lamentations/1.json `hard`, `doctrines`; lamentations/2.json `historical` (Hananiah and peace); lamentations/4.json `hard` (Edom) | Repository |
+| Psalm 79:5; Obadiah 1:12 (its clause); Romans 12:19 (its clause) | 18-22 `later` | BSB | BSB text |
+| The hard note: vindictive or just; the nations not innocent tools; the prayer of extreme pain recorded honestly; Matthew 5:44; Romans 12:19 | 18-22 `hard` | lamentations/1.json `hard`; BSB | Repository; both readings in their holders' terms |
+| Care line, the grief line ("Grief is not a lack of faith...") | 18-22 `hard` | Reused byte for byte; found whole in 18 places, among them 1-samuel/plain/1.json | care.mjs |
+
+Cut in chapter 1: the deep note's lines to Christ that the New Testament does not draw (verse 12 on the lips of Christ, the mocking passers-by of Mark 15:29, the Comforter of John 14:16). The claim that Jerusalem sat on the roads between Egypt and Mesopotamia was cut before commit, as unsourced for the city itself. The phone number in the deep note's hard answer was not repeated.
