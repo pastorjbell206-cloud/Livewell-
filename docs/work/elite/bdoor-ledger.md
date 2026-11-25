@@ -20769,3 +20769,26 @@ Cut in chapter 4: the deep note's lines that the New Testament does not draw (Ja
 | The hard note: Darius the Mede, Ugbaru or Gubaru, Cyrus (Wiseman), a figure from traditions of Darius I (Isaiah 13:17; Jeremiah 51:11); no agreement | 29-31 `hard` | daniel/6.json `hard`; bible/guides/empires.json | Repository; each view in its holders' terms |
 
 Cut in chapter 5: the deep note's lines to Christ that the New Testament does not draw (Christ bearing the judgment written on the wall). Revelation 18:2 was not used, since it takes up Isaiah 21:9 rather than this chapter. No care line is needed in this chapter.
+
+## The plain notes on Daniel 6 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1-9 | 1-9 | BSB | BSB text |
+| The same position under a new empire; past eighty; satraps and Herodotus's twenty; the irrevocable decree in Esther and its caution; faithfulness the only charge | 1-9 | daniel/6.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Esther 8:8 (its clause); Psalm 57:4 | 1-9 `later` | BSB | BSB text |
+| 6:10-18 | 10-18 | BSB | BSB text |
+| Solomon's prayer toward the land (1 Kings 8:46-49); three times a day and Psalm 55:17; thanks; the pair with chapter 3; the bound king; one of the exiles | 10-18 | daniel/6.json `cultural`, `story`, `literary` | Repository |
+| 1 Kings 8:48-49; Psalm 55:17 | 10-18 `later` | BSB | BSB text |
+| 6:19-24 | 19-24 | BSB | BSB text |
+| The reversals; royal lions and the Assyrian reliefs; collective punishment, forbidden by Deuteronomy 24:16, reported and not a model | 19-24 | daniel/6.json `historical`, `cultural`, `literary` | Repository |
+| Deuteronomy 24:16; Psalm 7:15; Hebrews 11:33 | 19-24 `later` | BSB | BSB text |
+| The hard note: the king's command, not God's; the children innocent | 19-24 `hard` | daniel/6.json `cultural`; the brief | Repository |
+| Care line ("A word for anyone who was not protected by a parent...") | 19-24 `hard` | Reused byte for byte from 2-kings/plain/16.json | care.mjs |
+| 6:25-28 | 25-28 | BSB | BSB text |
+| The living God against dead idols; shezav; the decree's echo of 2:44 and preparation for chapter 7; Wiseman's reading of 6:28 | 25-28 | daniel/6.json `words`, `story`, `hard` | Repository |
+| Daniel 4:34; Daniel 7:13; Psalm 145:13 (added when the validator asked for a book beyond Daniel) | 25-28 `later` | BSB | BSB text |
+
+Cut in chapter 6: the deep note's line to Matthew 27:66 and the sealed tomb, a pattern the New Testament does not draw.
