@@ -32,7 +32,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Chapter 7: Christianity and Science | 2,269 | 2,269 | +0.0% | 26 (11.5) | 1 (0.4) | 63 (27.8) | 38 (16.7) | 20 | PASS |
 | Chapter 8: What About People Who've Never Heard? | 2,701 | 2,701 | +0.0% | 35 (13.0) | 2 (0.7) | 68 (25.2) | 35 (13.0) | 24 | PASS |
 | Chapter 9: Why Christianity and Not Other Religions? | 3,216 | 3,216 | +0.0% | 48 (14.9) | 3 (0.9) | 105 (32.6) | 61 (19.0) | 33 | PASS |
-| **All 10** | 32,115 | 32,115 | +0.0% | 425 (13.2) | 27 (0.8) | 934 (29.1) | 555 (17.3) | 305 | |
+| Chapter 10: Why Atheism Can't Sustain the Human Heart | 3,877 | 3,877 | +0.0% | 54 (13.9) | 3 (0.8) | 101 (26.1) | 55 (14.2) | 38 | PASS |
+| **All 11** | 35,992 | 35,992 | +0.0% | 479 (13.3) | 30 (0.8) | 1035 (28.8) | 610 (16.9) | 343 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -272,3 +273,27 @@ Five pairs:
    After: Pilate asked the question every thoughtful pluralist is asking (What is truth?), and he asked it of the one person in the room who could have answered, for the answer was standing in front of him, bound, beaten, about to be crucified, and silent.
 
 Left alone, and why. The chapter describes five faiths and secular spirituality one after another in the same form ("the center of gravity is ..."), and the six descriptions were given the same punctuation, so that none reads as more or less carefully put than he wrote it. Not one word of any description changed. Hick's pluralism is stated before it is answered, and the pluralist's case ("This sounds humble") is in his words. The admission "Christians have produced their own horrors and no honest account pretends otherwise" and "You may still reject it; that is your right." are untouched. The Lewis anecdote keeps its dashes, because the scholars' three questions sit inside them. "Everywhere else salvation is earned. Here it is given.", "It is more specific." and the last four imperatives are verdicts. Three dashes stay.
+
+
+## Chapter 10: Why Atheism Can't Sustain the Human Heart (`sec11.xhtml`)
+
+Words 3,877 to 3,877. Em-dashes in his prose 54 to 3 (13.9 to 0.8 per 1,000 words). Tells 101 to 55 (26.1 to 14.2 per 1,000). Mean sentence 27.7 words to 27.7; sentences of eight words or fewer 17.5% to 17.5%; of five or fewer 11.7% to 11.7%. 38 edits; paragraphs 45 to 45. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 54 to 3, not_but 16 to 16, isnt_its 2 to 2, triplet 15 to 18, anaphora 2 to 2, stock 1 to 1, intens 2 to 2, colon_reveal 1 to 3, short_close 7 to 7, one_line_para 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 7 quoted strings, 3 Scripture references, 1 years, 2 numbers in digits, 51 number words, proper names by count, and 38 hedge words (after: 38) compared.
+
+Five pairs:
+
+1. Before: Now live that — not theorize it, but live it — and the honest atheists who have tried report the same result:
+   After: Now live that, not theorize it, but live it, and the honest atheists who have tried report the same result:
+2. Before: The problem is not that the atheist cannot find meaning in daily life — of course he can, loving his children, enjoying a meal, pursuing his work — but that he cannot ground that meaning in anything beyond his own preferences.
+   After: The problem is not that the atheist cannot find meaning in daily life (of course he can, loving his children, enjoying a meal, pursuing his work), but that he cannot ground that meaning in anything beyond his own preferences.
+3. Before: On a strictly materialist view, love is a set of chemical reactions — dopamine, oxytocin, vasopressin — a useful illusion that prompted our ancestors to bond, mate, and raise offspring to reproductive age, the feeling being the hook that makes propagation happen.
+   After: On a strictly materialist view, love is a set of chemical reactions (dopamine, oxytocin, vasopressin), a useful illusion that prompted our ancestors to bond, mate, and raise offspring to reproductive age, the feeling being the hook that makes propagation happen.
+4. Before: The New Atheists — Dawkins, Dennett, Harris, Hitchens — wrote as though the question had been settled in favor of unbelief in the nineteenth century and they were merely announcing the verdict to the slow. That is not how the history reads, for the nineteenth-century thinkers who actually made the case — Feuerbach, Nietzsche, Marx, Freud — were more honest than their contemporary heirs:
+   After: The New Atheists (Dawkins, Dennett, Harris, Hitchens) wrote as though the question had been settled in favor of unbelief in the nineteenth century and they were merely announcing the verdict to the slow. That is not how the history reads, for the nineteenth-century thinkers who actually made the case (Feuerbach, Nietzsche, Marx, Freud) were more honest than their contemporary heirs:
+5. Before: One atheist argument, though, deserves to be named at full strength — the strongest one there is.
+   After: One atheist argument, though, deserves to be named at full strength, the strongest one there is.
+
+Left alone, and why. This is the chapter that gives the atheists their best lines, and none was touched: the Nietzsche, Camus, Russell, Sartre and Pascal quotations are identical, and the chapter's own summaries of them took punctuation only. The atheist's reply on morals ("I can be good without God ... In one sense this is true"), the tribute to Camus ("the most admirable of the atheists ... His honesty deserves honor") and above all the argument he names "at full strength", that religion follows geography, are word for word: "The argument is serious, and its force is real." So is his own hedge at the end ("That is not a proof. It is a verdict after an examination"; "You may land somewhere different from where this book lands"). "Vapor.", "It is a diagnosis." and "His world is too small." are verdicts. All 38 edits are dashes recast; no word changed. Three dashes stay.
