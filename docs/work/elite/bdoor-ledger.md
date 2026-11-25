@@ -20978,3 +20978,24 @@ Cut in chapter 16: the deep note's lines to Christ (Isaiah 9:7 and 11:1-5 with J
 | Job 13:5 (an exclamation, in double quotes); 1 Samuel 8:3 (from ‘turned aside’) | 21-28 | the chapter data's cross-references for 17:28 (Job 13:5) and 17:23 (1 Samuel 8:3); proverbs/17.json `historical` (Samuel's sons); BSB | Repository; BSB text |
 
 Cut in chapter 17: the deep note's lines to Christ (John 15:13-15 and Hebrews 2:11 beside verse 17; Romans 3:26 and 4:5 and the cross as the answer to verse 15). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 18 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 18:1; 18:2; 18:4; partiality (18:5); the fool's mouth (18:6-7); 18:8; 18:10; 18:11; 18:12 | 1-12 | BSB | BSB text |
+| The places people run: isolation, opinions, wealth, companions, and the one refuge; towers in town walls and an inner tower as last refuge; 18:11 picking up 10:15 and ‘in his imagination’; gossip as delicacies, repeated at 26:22 | 1-12 | proverbs/18.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Psalm 61:3; Judges 9:51 (its first sentence) | 1-12 | proverbs/18.json `historical` (Judges 9:51), `christ` (Psalm 61:3); BSB | Repository; BSB text |
+| 18:13 paraphrased (the verse holds a dash); 18:14; 18:15 (its first clause); 18:16; 18:17; 18:18; 18:19; 18:21 | 13-21 | BSB | BSB text |
+| The court at the gate; the first speaker and cross-examination; answering before hearing; the lot when evidence fails (16:33); gifts before kings (Genesis 32:13-21; 43:11; 1 Kings 10:10) as courtesy distinct from bribes; brothers, shared land and long quarrels (Jacob and Esau; Joseph); the broken spirit | 13-21 | proverbs/18.json `historical`, `cultural` | Repository |
+| Care line (‘If sadness has settled on you and will not lift, these verses do not shame you...’ to ‘...lists places to turn.’) | 13-21 | 1-samuel/plain/16.json and 1-thessalonians/plain/5.json (`hard`) | Reused byte for byte (care.mjs); Find Help named; no phone number |
+| Deuteronomy 19:18 (its first clause); Psalm 147:3 | 13-21 | proverbs/18.json `historical` (Deuteronomy 19:18); the chapter data's cross-references for 18:14 (Psalm 147:3); BSB | Repository; BSB text |
+| 18:22; 18:23; 18:24 | 22-24 | BSB | BSB text |
+| The frame of companionship (verses 1 and 24); verse 24's difficult first line and the translations; verse 23 as observation, like 14:20 | 22-24 | proverbs/18.json `literary`; proverbs/14.json `hard` | Repository |
+| Genesis 2:18 (the LORD's words); 2 Samuel 1:26 (its first sentence) | 22-24 | proverbs/18.json `hard` (Genesis 2:18); the chapter data's cross-references for 18:24 (2 Samuel 1:26); BSB | Repository; BSB text |
+| The hard note: marriage as gift; a general truth; 19:13, 21:9 and 19:14; false as a promise, true as praise; singleness not lesser; Jesus unmarried; Paul and 1 Corinthians 7:7-8, 32-35; both honorable callings; no verdict on the unmarried | 22-24 `hard` | proverbs/18.json `hard` | Repository |
+| Care line (‘Nothing in this passage asks anyone to stay where they or their children are in danger...’ to ‘...not legal advice.’) | 22-24 `hard` | colossians/plain/3.json (12-17 and 18-19 `hard`) | Reused byte for byte; no phone number |
+
+Cut in chapter 18: the deep note's lines to Christ (Acts 2:21, Romans 10:13 and Acts 4:12 beside the name of verse 10; the friend of verse 24 as Christ, which the note calls a devotional application; Matthew 28:20); James 3:5-6 (used in chapter 12).
