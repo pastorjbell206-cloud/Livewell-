@@ -18487,3 +18487,20 @@ Cut in chapter 1: the deep note's lines to Christ (Jesus as the innocent one who
 | Romans 12:15 | 11-13 | needs/suffering.json `helping`; bible/doctrines/suffering.json; BSB | Repository; BSB text |
 
 Cut in chapter 2: the deep note's lines to Christ (Christ suffering in body, John 15:25, Hebrews 2:18; the seven days as a picture of the incarnation, which the note calls thematic).
+
+## The plain notes on Job 3 (2026-11-25)
+
+`client/public/bible/notes/job/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Prose to poetry after seven days; no curse on God; curses in the ancient world, a poet's wish; creation run backward (Genesis 1:3); Leviathan (Psalm 74:14; Isaiah 27:1), sorcerers, yam and yom, translations differ; chapter 41; tsalmavet and Psalm 23:4; 3:3 quoted in part (the verse holds an inner quotation) | 1-10 | job/3.json `story`, `cultural`, `literary`, `words` (tsalmavet, livyatan) | Repository; BSB text |
+| Jeremiah 20:14 | 1-10 | job/3.json `historical`; BSB | Repository; BSB text |
+| Why as the turn to lament; knees and Genesis 50:23; Sheol for all ranks; ruined cities; not a doctrine of the afterlife but a lament; verse 16 about Job's own wish | 11-19 | job/3.json `literary`, `cultural`, `historical`; psalms/verses/22.json (the newborn on the father's knees, Genesis 50:23; Job 3:12) | Repository |
+| Jeremiah 20:18 | 11-19 | job/3.json `historical`, `hard` (Jeremiah 20:14-18); BSB | Repository; BSB text |
+| The question widened; sukh and the hedge of 1:10; the breathless last verse; no rushed answer; Eliphaz next | 20-26 | job/3.json `literary`, `words` (sukh, nuach), `story` | Repository |
+| 1 Kings 19:4 and God's answer to Elijah | 20-26 | 1-kings/plain/19.json (1-8) `happening`, `hard`; BSB | Repository; BSB text (quoted in part; the BSB's word ‘journey’ in that verse is not quoted) |
+| The hard note: the two readings; Jeremiah 20:14-18; Psalm 88; 42:7; most interpreters; not the last word | 20-26 | job/3.json `hard`, `doctrines` | Repository |
+| The self-harm line, handled as 1 Kings 19 was | 20-26 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 3: the deep note's lines to Christ (Matthew 27:46 and Psalm 22 beside Job's why; Hebrews 2:15 and the rest that death cannot give; the note calls the link a shared anguish, not a prediction); the rest Jesus offers (Matthew 11:28), from the word note on nuach.
