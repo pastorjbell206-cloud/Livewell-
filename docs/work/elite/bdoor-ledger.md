@@ -20189,3 +20189,22 @@ The walk of the served build at 390 and 1440 found the Bethel and Jericho labels
 | Deuteronomy 16:19 (its last sentence) | 4-11 | BSB | BSB text |
 
 Cut in chapter 19: the deep note's lines to Isaiah 11:3-5, John 5:22 and Acts 10:34, 42, which do not cite this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 20 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 20:1; En-gedi (20:2); 20:3; 20:4 paraphrased; 20:6; the land and the temple promise (20:7-9); the invaders (20:10-11); 20:12 (its last sentence); 20:13 | 1-13 | BSB | BSB text |
+| The test; 7:14 enacted; Moab, Ammon, the Meunites; Aram or Edom in 20:2; En-gedi; not in Kings; the Mesha Stele, found 1868, and the uncertain link; tsom; the prayer's shape; Deuteronomy 2:4-19 | 1-13 | 2-chronicles/20.json `story`, `historical`, `cultural`, `literary`, `words` (tsom) | Repository |
+| 2 Chronicles 6:38 (its clause); Psalm 121:1 (its words after the heading) | 1-13 | BSB | BSB text |
+| Jahaziel (20:14); 20:15 (God's words); 20:17 (its first two sentences and clause); the worship (20:18-19); 20:20 (the king's words); 20:21 (the song); 20:22 (its clause); 20:23 paraphrased; the spoil and Beracah (20:25-26); the return (20:27-28); 20:30 | 14-30 | BSB | BSB text |
+| The answered fears; Exodus 14:13; aman in 20:20; the procession as worship; Psalm 136 and 5:13, 7:3; chesed; the Levite singers; Beracah as a memorial name; rest | 14-30 | 2-chronicles/20.json `cultural`, `literary`, `words` (aman, chesed) | Repository |
+| Exodus 14:13 (its first sentences); Isaiah 7:9 (its last sentence) | 14-30 | BSB | BSB text |
+| The hard note: a particular answer, not a promise for every threat; laments and persecution; the two emphases; seeking God first; the invaders' destruction told in one verse, not a pattern | 14-30 `hard` | 2-chronicles/20.json `hard`; BSB of 20:23 | Repository; BSB text |
+| The reign (20:31-32); 20:33; Jehu's records (20:34); 20:35; the ships (20:36); 20:37 (Eliezer's words) | 31-37 | BSB | BSB text |
+| 20:33 against 17:6; the people's hearts; chavar three times; Tarshish ships; 1 Kings 22:48-49 and the two stages | 31-37 | 2-chronicles/20.json `historical`, `cultural`, `literary`, `words` (chavar) | Repository |
+| 1 Kings 22:48 | 31-37 | BSB | BSB text |
+
+Cut in chapter 20: the deep note's lines to Colossians 2:15 and 1 Corinthians 15:57, which do not cite this chapter. The name Beracah is explained without the bless family of words. No care line is needed in this chapter.
