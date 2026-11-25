@@ -18657,3 +18657,19 @@ Cut in chapter 12: the deep note's lines to Christ (1 Corinthians 1:20, 27, Luke
 | Psalm 10:1 | 20-28 | needs/suffering.json `faq` (Job 13:24 beside Psalm 10:1); BSB | Repository; BSB text |
 
 Cut in chapter 13: the deep note's lines to Christ (1 Peter 2:23, Luke 23:46, Acts 2:23-24, 1 Timothy 3:16 and Hebrews 4:16; the note says none is predicted in Job).
+
+## The plain notes on Job 14 (2026-11-25)
+
+`client/public/bible/notes/job/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The end of the first round; meditation, not argument; born of woman as every human being; read at funerals; tame and verse 4; the hired hand from chapter 7 | 1-6 | job/14.json `story`, `literary`, `cultural`, `words` (tame); matthew notes (born of women as all human beings, Job 14:1) | Repository |
+| The stump that sprouts; the reverse of hope; tiqvah framing the chapter; Sheol (Psalm 6:5; Ecclesiastes 9:10) | 7-12 | job/14.json `cultural`, `historical`, `literary`, `words` (tiqvah) | Repository |
+| Isaiah 11:1 | 7-12 | job/14.json `cultural`; BSB | Repository; BSB text |
+| Verse 14 rarely asked so openly; a wish let go; chaliphah and the soldier's relief; the sealed bag; erosion; the first reach beyond the grave, toward chapters 16 and 19 | 13-22 | job/14.json `historical`, `story`, `cultural`, `literary`, `words` (chaliphah, tseror) | Repository |
+| Daniel 12:2 | 13-22 | job/14.json `historical`; BSB | Repository; BSB text |
+| The hard note: both sides in the chapter; the three readings; 19:25-27; the question taken up by Scripture; verse 13 as a cry for relief | 13-22 | job/14.json `hard`, `doctrines` (hope) | Repository; each reading in its holders' terms |
+| The self-harm line, handled as 1 Kings 19 was | 13-22 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 14: the deep note's lines to Christ (John 11:25, 1 Corinthians 15:20, 53-54, and Isaiah 11:1 read as fulfilled in Jesus set beside Job's tree; the New Testament does not draw them from Job); Egyptian and Mesopotamian beliefs about the dead (not needed).
