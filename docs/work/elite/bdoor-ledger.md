@@ -20441,3 +20441,19 @@ Cut in chapter 33: the deep note's lines to 1 Timothy 1:15-16 and Luke 15:11-24,
 | The hard note: the book lost; Deuteronomy and the matching emphases; the traditional view; the critical view from the early nineteenth century; the middle view; the response demanded | 14-33 `hard` | 2-chronicles/34.json `hard`, `historical` | Repository; each view in its holders' terms |
 
 Cut in chapter 34: the deep note's lines to Jeremiah 31:31-34 and the new covenant in Luke 22:20 and Hebrews 8, which do not cite this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 35 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 35:1; 35:3 (Josiah's words); the preparation (35:4); the king's gift (35:7-9); the service (35:10-15); 35:18 (its first sentence) | 1-19 | BSB | BSB text |
+| The covenant kept in worship; 622 BC; pesach (Exodus 12:13); household to national feast (Deuteronomy 16:5-6); gifts for the poor; kun repeated; the ark puzzle and the two readings; the last mention of the ark | 1-19 | 2-chronicles/35.json `story`, `historical`, `cultural`, `literary`, `words` (pesach, kun) | Repository |
+| Deuteronomy 16:5 | 1-19 | BSB | BSB text |
+| 35:20; 35:21 (Neco's clause); 35:22; the archers (35:23); 35:24 (its last sentence); Jeremiah's laments (35:25) | 20-27 | BSB | BSB text |
+| After all this; 609 BC; Assyria's last stand; Neco the Second; the unstated motive; Megiddo's pass; Carchemish and 605 BC; the echo of Ahab's death; chaphas; qun; the lost Book of Laments, not Lamentations | 20-27 | 2-chronicles/35.json `historical`, `cultural`, `literary`, `words` (chaphas, qun) | Repository |
+| 2 Kings 23:29 (its last sentence); Zechariah 12:11 (its clause) | 20-27 | BSB | BSB text |
+| The hard note: Huldah's promise and the two readings; God speaking through Neco and later through Cyrus | 20-27 `hard` | 2-chronicles/35.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 35: the deep note's lines to Luke 22:14-20, 1 Corinthians 5:7 and John 19:37, which do not cite this chapter. Josiah's death is told in the text's own words. No care line is needed in this chapter.
