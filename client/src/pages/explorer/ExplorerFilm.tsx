@@ -308,6 +308,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole Gospel of John in seven moving pictures: what it is, how it is built, the signs, the seven I am sayings, believing and life, the last evening and the glory of the cross, and where to start reading.",
     },
+    "book-romans": {
+      title: "Romans: the good news, set out: Bible Explorer",
+      description:
+        "The whole letter to the Romans in seven moving pictures: what it is, its large blocks, what is wrong, what God has done, the new life, one people from Jew and Gentile, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

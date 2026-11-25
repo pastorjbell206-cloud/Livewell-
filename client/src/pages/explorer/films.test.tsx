@@ -1714,6 +1714,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-genesis",
     "book-psalms",
     "book-john",
+    "book-romans",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2078,5 +2079,37 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
       /\bcross\b|blood/i
     );
+  });
+
+  it("Romans takes no side on Paul's disputed phrases, and does not say God has finished with Israel", async () => {
+    const f = filmFile("book-romans");
+    const intro = JSON.parse(
+      fs.readFileSync(
+        path.join(PUBLIC, "bible/notes/romans/intro.json"),
+        "utf8"
+      )
+    ) as { keyChapters: { ch: number }[]; reading: string };
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect(f.differ?.links?.[0].href).toBe("/study/bible/romans");
+    const t = text(f);
+    expect(t).toContain("Faith means trust.");
+    expect(t).toContain("It is not a good deed that earns a reward.");
+    expect(t).toContain("Chapters 9 to 11 are not a detour.");
+    expect(t).toContain("God's word has not failed");
+    expect(intro.reading).toContain("chapters 9 to 11 are not a detour");
+    expect(t).not.toMatch(
+      /replaced Israel|rejected (Israel|the Jews|his people)|new Israel|God is finished with/i
+    );
+    expect(f.frames[6].older).toContain(
+      intro.keyChapters
+        .map(k => k.ch)
+        .join(", ")
+        .replace(/, (\d+)$/, " and $1")
+    );
+    const scene = (await FILM_SCENES["book-romans"]()) as unknown as {
+      LAYOUT: number[];
+    };
+    expect(scene.LAYOUT).toEqual([3, 2, 3, 3, 4, 1]);
+    expect(f.care).toBe(filmFile("the-king").care);
   });
 });

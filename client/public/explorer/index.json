@@ -1380,6 +1380,23 @@
       "book": "john"
     },
     {
+      "slug": "book-romans",
+      "title": "Romans: the good news, set out",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "Paul's longest letter: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Romans as a whole letter: its theme, its large blocks, what is wrong, what God has done, the new life, one people from Jew and Gentile, and where to begin."
+      },
+      "mark": "book-romans",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "romans"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

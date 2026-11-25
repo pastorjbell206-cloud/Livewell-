@@ -925,6 +925,116 @@
     }
    ]
   },
+  "book-romans": {
+   "title": {
+    "file": "book-romans/title.mp3",
+    "hash": "7a9bc30d96653e07a65b",
+    "seconds": 3.02,
+    "bytes": 18644
+   },
+   "younger": [
+    {
+     "id": "letter",
+     "file": "book-romans/younger/01-letter.mp3",
+     "hash": "93d7cb2092c8b7962ee0",
+     "seconds": 26.56,
+     "bytes": 159908
+    },
+    {
+     "id": "layout",
+     "file": "book-romans/younger/02-layout.mp3",
+     "hash": "cae3467769c53e3da35d",
+     "seconds": 25.74,
+     "bytes": 155012
+    },
+    {
+     "id": "wrong",
+     "file": "book-romans/younger/03-wrong.mp3",
+     "hash": "6ffe0ae2379680d0399a",
+     "seconds": 21.03,
+     "bytes": 126788
+    },
+    {
+     "id": "gift",
+     "file": "book-romans/younger/04-gift.mp3",
+     "hash": "9246fc8c3a90f09e2f26",
+     "seconds": 26.42,
+     "bytes": 159044
+    },
+    {
+     "id": "life",
+     "file": "book-romans/younger/05-life.mp3",
+     "hash": "936c037e30f91799ac18",
+     "seconds": 21.45,
+     "bytes": 129236
+    },
+    {
+     "id": "one-people",
+     "file": "book-romans/younger/06-one-people.mp3",
+     "hash": "a3792c9e74910bed788a",
+     "seconds": 23.26,
+     "bytes": 140180
+    },
+    {
+     "id": "start",
+     "file": "book-romans/younger/07-start.mp3",
+     "hash": "d1ce7b13c59871bdd4f9",
+     "seconds": 25.45,
+     "bytes": 153284
+    }
+   ],
+   "older": [
+    {
+     "id": "letter",
+     "file": "book-romans/older/01-letter.mp3",
+     "hash": "bdc00a6859bd6a458990",
+     "seconds": 27.25,
+     "bytes": 164084
+    },
+    {
+     "id": "layout",
+     "file": "book-romans/older/02-layout.mp3",
+     "hash": "ba4463ef92ec59196caf",
+     "seconds": 26.62,
+     "bytes": 160340
+    },
+    {
+     "id": "wrong",
+     "file": "book-romans/older/03-wrong.mp3",
+     "hash": "3b8aac41a49ede797265",
+     "seconds": 27.28,
+     "bytes": 164228
+    },
+    {
+     "id": "gift",
+     "file": "book-romans/older/04-gift.mp3",
+     "hash": "6b7bbca729d0fcf0f239",
+     "seconds": 23.96,
+     "bytes": 144356
+    },
+    {
+     "id": "life",
+     "file": "book-romans/older/05-life.mp3",
+     "hash": "66c0a3292db4c1eee296",
+     "seconds": 22.4,
+     "bytes": 134996
+    },
+    {
+     "id": "one-people",
+     "file": "book-romans/older/06-one-people.mp3",
+     "hash": "1843e87bb38968a1e32e",
+     "seconds": 25.42,
+     "bytes": 153140
+    },
+    {
+     "id": "start",
+     "file": "book-romans/older/07-start.mp3",
+     "hash": "e384388adc6af8e34919",
+     "seconds": 27.48,
+     "bytes": 165524
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",
