@@ -33,5 +33,641 @@
     { "ch": 19, "why": "The exhausted Elijah flees to Horeb, where God meets him not in wind, earthquake, or fire but in a quiet whisper, and sends him back to work." },
     { "ch": 21, "why": "Ahab and Jezebel murder Naboth to take his vineyard, and Elijah pronounces judgment, showing God's concern for justice to the powerless." },
     { "ch": 22, "why": "Micaiah alone tells Ahab the truth against four hundred prophets, and Ahab dies in battle just as the word of the LORD said." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "1 Kings in a minute",
+        "body": "First Kings is the eleventh book of the Bible. It has 22 chapters, and it tells the story of about 120 years, from David's last days, about 970 BC, to the death of King Ahab in battle, about 853 BC.\n\nChapters 1 to 11 belong to Solomon. He wins the throne, asks God for wisdom, rules a kingdom at peace, and builds the temple in Jerusalem, where the cloud of the LORD's glory fills the house. Then, in his old age, his heart turns to other gods. In chapters 12 to 22 the kingdom splits in two: Israel in the north, and Judah in the south, where David's family keeps the throne. The book follows both, king by king, until it slows down for Ahab and the prophet Elijah, who stands against the worship of Baal.\n\nSome of the Bible's best-known scenes are here: Solomon's request for ‘an understanding heart’ (3:9) and the two mothers before his throne, the queen of Sheba's visit, the fire on Mount Carmel, Elijah under a broom tree and the voice that came after the fire, and a vineyard taken by murder.\n\nThe book asks one question of every king: did he do what was right in the eyes of the LORD? Most did not. Yet God keeps his promise to David through all of it. When Solomon turns away, one tribe is kept ‘for the sake of My servant David’ (11:13).\n\nThe kings hold the power in this book, and the prophets hold the word. Nathan, Ahijah, an unnamed man of God from Judah, Elijah and Micaiah speak for God to kings who do not want to hear, and what they say comes true."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "First Kings follows straight on from 2 Samuel. God had promised David a son who would build a house for his name, and a throne that would last forever (2 Samuel 7:12-16). In 1 Kings that son takes the throne and builds the house. Then the book shows the kingdom David built coming apart.\n\nIn the Hebrew Bible, 1 and 2 Kings were one book. The Greek translation called the Septuagint divided it and grouped it with Samuel as the four books of Kingdoms, and the division passed into Latin and English Bibles. With Joshua, Judges and Samuel, it belongs to the Former Prophets: history told by people who measured each generation by its faithfulness to God.\n\nSecond Kings carries both kingdoms to their ends, Israel to Assyria in 722 BC and Judah to Babylon in 587 or 586 BC. First and 2 Chronicles later retell the same years from Judah's side, for the people who came home from exile. And Elijah, whose stories fill the end of 1 Kings, prepares the way for the prophets whose words became books, such as Amos and Hosea, who preached to the north in the next century.\n\nIts first readers lived after the fall of Jerusalem, many of them in exile. They had lost the land, the temple and the throne, and the book answers their question: how did it come to this?"
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book does not name its author. A Jewish tradition preserved in the Babylonian Talmud credits the books of Kings to the prophet Jeremiah, and there are real overlaps: the end of 2 Kings (2 Kings 24:18 to 25:30) is closely matched, much of it word for word, in Jeremiah 52. Most modern scholars think instead of one or more editors who shaped older sources into a single account.\n\nThe book names some of those sources. It sends the reader to ‘the Book of the Acts of Solomon’ (11:41), and again and again to the records of the kings of Israel and of Judah. These were probably royal annals, now lost. They are not the books of Chronicles in the Bible.\n\nIn 1943 the German scholar Martin Noth argued that the books from Deuteronomy to Kings form one history, judged by the standards of Deuteronomy: one place of worship, no other gods, and a king who keeps the law. In 1973 Frank Moore Cross argued for a first edition under King Josiah, late in the seventh century BC, and a second in the exile. Others think of a single author in the exile. Conservative scholars often accept that sources were used and shaped, while stressing that the material is old and reliable.\n\nThe finished book can be no earlier than about 561 BC, since its last scene, at the end of 2 Kings, tells how the exiled King Jehoiachin was let out of prison in Babylon (2 Kings 25:27-30). Nothing reports the return from exile under Cyrus in 539 or 538 BC, so most scholars date the finished book to the exile, about the middle of the sixth century BC. All agree that whoever wrote it had a prophetic outlook and a clear purpose: to explain, and to call to repentance."
+      },
+      {
+        "id": "world",
+        "h": "Dates, and what has been dug up",
+        "body": "Kings gives two numbers for almost every king: how long he reigned, and the year of the other kingdom's king in which he began. Baasha, for example, became king ‘In the third year of Asa’s reign over Judah’ (15:33). Added up simply, the numbers do not agree with each other or with dates known from Assyria. Much of the tangle comes from how ancient scribes counted. Kingdoms began their years at different seasons, counted a king's first part-year in different ways, and sometimes had a son reigning beside his father. Edwin R. Thiele worked through these possibilities in The Mysterious Numbers of the Hebrew Kings, first published in 1951. On his reckoning nearly all the numbers fit, and the kingdom divided in 931 or 930 BC. Most study Bibles follow him, as this page does. William F. Albright put the division in 922 BC, and John H. Hayes and Paul K. Hooker in 927. The differences are rarely more than a decade, and the order of events is not in dispute.\n\nAfter the division the outside records begin to touch the story. Shishak of Egypt, known from Egyptian records as Shoshenq I, raided the land in Rehoboam's fifth year (14:25-26) and listed the places he claimed on a wall at Karnak. Jerusalem does not clearly appear in the damaged list, which fits the Bible's account that the city paid rather than fell. The Mesha Stele, a Moabite king's inscription found at Dhiban in 1868, names Omri as a king of Israel who oppressed Moab, and the Kurkh Monolith of the Assyrian king Shalmaneser III lists Ahab with a large force of chariots at the battle of Qarqar in 853 BC.\n\nSolomon's own kingdom is argued over. Excavations in the twentieth century, notably by Yigael Yadin, found similar gates at Hazor, Megiddo and Gezer, the three cities 9:15 names among Solomon's works, and Yadin credited them to Solomon; other archaeologists, among them Israel Finkelstein, date them to the century after him. The debate is about how large the kingdom was more than whether it existed. Nothing of Solomon's temple has been dug up, since the Temple Mount has not been excavated, but its plan matches temples found elsewhere, such as the one at Ain Dara in northern Syria. For these early centuries the evidence neither proves the accounts nor shows them false."
+      },
+      {
+        "id": "built",
+        "h": "How 1 Kings is built",
+        "body": "The book has two halves. Chapters 1 to 11 tell Solomon's reign: the throne secured (1 and 2), the wise king (3 and 4), the temple (5 to 8), and glory and decline (9 to 11). Chapters 12 to 22 tell of the divided kingdom: the split and the first kings of both kingdoms (12 to 16), then Elijah, Ahab and the prophets (17 to 22).\n\nFrom the division on, each reign is framed by a set pattern. The writer gives the year the king began, dated by the king of the other kingdom; for a king of Judah, his age and his mother's name; how long he reigned; a verdict on whether he did what was right in the eyes of the LORD; where more could be read; and his death and burial. Judah's kings are measured against David, and Israel's against Jeroboam.\n\nA second pattern is prophecy and fulfillment. A prophet speaks, and later the narrator notes that it happened ‘according to the word that the LORD had spoken’ (14:18; 22:38). The writer also slows down where faithfulness is at stake. Omri, a strong king, gets eight verses; Ahab, whose reign turned on the worship of Baal, gets most of seven chapters."
+      },
+      {
+        "id": "throne",
+        "h": "A throne secured",
+        "body": "The book opens with David ‘old and well along in years’ (1:1), unable to keep warm. His servants bring a young woman, Abishag of Shunem, to care for him. She is never asked, and she never speaks. The narrator notes that the king ‘had no relations with her’ (1:4), a sign that David's strength is gone.\n\nHis son Adonijah, now the eldest living, declares, “I will be king!” (1:5), with Joab the army commander and Abiathar the priest behind him. The narrator adds a line about the father: he ‘had never once reprimanded him’ (1:6). Nathan the prophet and Bathsheba remind David of an oath that Solomon would reign, an oath not recorded earlier, and David has Solomon anointed at the Gihon spring. The people shout, “Long live King Solomon!” (1:39). Did David really make that promise, or did a prophet and a mother press it on an old man? Some point to the careful staging of the scene. Others note that God had already named Solomon Jedidiah, beloved of the LORD (2 Samuel 12:24-25), and that David answers with full clarity. The narrator does not settle it.\n\nDavid tells his son to ‘be strong and prove yourself a man’ (2:2) and to keep the law of Moses, and then names men to deal with. After David dies, Solomon removes every threat. Adonijah asks for Abishag as his wife, a request the court reads as a claim to the throne, and he is put to death. Abiathar the priest is sent home to Anathoth. Joab, who had murdered Abner and Amasa, is killed at the altar. Shimei, who had cursed David, is confined to Jerusalem and put to death when he leaves it. ‘Thus the kingdom was firmly established in the hand of Solomon’ (2:46).\n\nIs this justice, or ruthless politics? Readers are divided, and the text gives material for both. On one reading each man condemned himself by his own acts; on another, the charges served Solomon's safety a little too neatly. Many hold both. The narrator often reports what kings did without approving it. The chapter gives no one today a warrant to remove a rival, in a nation, a church or a family."
+      },
+      {
+        "id": "wisdom",
+        "h": "Wisdom asked for",
+        "body": "At Gibeon the LORD appears to the young king in a dream and says, “Ask, and I will give it to you!” (3:5). Solomon calls himself ‘only a little child’ (3:7) and asks for ‘an understanding heart to judge Your people and to discern between good and evil’ (3:9). The Hebrew says, more simply, a hearing heart: one that listens to God and to the people it must judge. God gives it, with riches and honor besides, and long life if Solomon walks in his ways (3:12-14).\n\nThe proof follows at once. Two women, both prostitutes, bring the king one living baby and one dead, and there are no witnesses. Solomon calls for a sword. The true mother, who ‘yearned with compassion for her son’ (3:26), would rather give him up than see him die, and the king gives her the child. “When all Israel heard of the judgment the king had given, they stood in awe of him, for they saw that the wisdom of God was in him to administer justice” (3:28). That two such women could bring their case to the king shows that justice was meant to reach the lowest in the land.\n\nChapter 4 shows the kingdom that wisdom made. ‘Judah and Israel dwelt securely from Dan to Beersheba, each man under his own vine and his own fig tree’ (4:25), a picture of peace the prophet Micah took up again (Micah 4:4). Solomon composed ‘three thousand proverbs’ (4:32) and studied trees, animals, birds and fish. In chapter 10 the queen of Sheba, from southern Arabia, comes to test him with hard questions. She ends by praising the LORD, who made Solomon king ‘to carry out justice and righteousness’ (10:9).\n\nWisdom in this book has limits. The king who asked for a hearing heart ends by not listening. Knowing what is right and loving it with a whole heart are different things, and chapter 11 shows the difference."
+      },
+      {
+        "id": "temple",
+        "h": "A house for the Name",
+        "body": "Solomon tells Hiram of Tyre that ‘the LORD my God has given me rest on every side’ (5:4), and he plans ‘a house for the Name of the LORD my God’ (5:5), as God had promised David. The Name means God himself, truly present there, though no building can hold him. Hiram sends cedar and cypress from Lebanon, and Solomon pays in wheat and olive oil. The work has a cost the book does not hide: ‘King Solomon conscripted a labor force of 30,000 men from all Israel’ (5:13). The Hebrew word for that forced labor, mas, is the word used for the work gangs Pharaoh laid on Israel in Egypt (Exodus 1:11).\n\nThe temple was begun ‘in the fourth year of Solomon’s reign’ (6:37) and finished seven years later. It was God's house: a porch, a main hall, and an inner room twenty cubits each way (6:20), a perfect cube overlaid with gold, where two great cherubim spread their wings. The people gathered in the courts outside; only the high priest entered the inner room, once a year. Carved palm trees and open flowers made the inside a kind of garden, and many readers see an echo of Eden, where cherubim guarded the way to the tree of life (Genesis 3:24). In the middle of the building report God speaks, and he ties his presence to faithfulness, not gold: ‘I will dwell among the Israelites and will not abandon My people Israel’ (6:13).\n\nAt the autumn feast the priests carry the ark into the inner room, and the cloud fills the house, ‘for the glory of the LORD filled the house of the LORD’ (8:11), as it once filled the tabernacle in the wilderness (Exodus 40:34).\n\nThen Solomon spreads out his hands toward heaven and prays. He knows what no temple can do: “Even heaven, the highest heaven, cannot contain You, much less this temple I have built” (8:27). So he asks God to hear from heaven whenever his people pray toward this place: in a dispute, in defeat, in drought, in plague, in war. He prays for the foreigner who comes from a distant land ‘because of Your name’ (8:41). And his longest request pictures the people carried off as captives, praying from the land of their enemies. For the first readers, in exile with the temple gone, that request was about them."
+      },
+      {
+        "id": "turning",
+        "h": "Gold, wives, and a heart turned away",
+        "body": "After the dedication the LORD appears to Solomon a second time. The promise to David stands, but if his sons ‘go off to serve and worship other gods’ (9:6), Israel will be cut off from the land, and the temple will become ‘a heap of rubble’ (9:8). The first readers had seen it happen.\n\nThen come lists of Solomon's wealth: gold by the ton, an ivory throne, ships and horses. Some read chapter 10 as a plain celebration of God's promise of riches and honor coming true (3:13). Others hear it as double-edged, because the law for kings said that a king ‘must not acquire many horses for himself or send the people back to Egypt to acquire more horses’, must not take many wives, ‘lest his heart go astray’, and must not pile up silver and gold (Deuteronomy 17:16-17). Solomon ‘accumulated 1,400 chariots and 12,000 horses’ (10:26), his horses ‘were imported from Egypt’ (10:28), and he ‘made silver as common in Jerusalem as stones’ (10:27).\n\nChapter 11 says the rest outright. ‘He had seven hundred wives of royal birth and three hundred concubines’ (11:3), and ‘when Solomon grew old, his wives turned his heart after other gods’ (11:4). On a hill east of Jerusalem, within sight of the temple, he built high places for Chemosh, the god of Moab, and for Molech, the god of the Ammonites (11:7). Royal marriages in that world sealed treaties, and each foreign princess brought her household and her gods. The numbers may be a real count of marriages made over forty years, or the inflated language of royal courts; scholars hold both. The women are not named here, and they are given no voice. The law's concern was worship, not birth: Ruth the Moabite, David's ancestor, had joined herself to Israel's God.\n\nThe kingdom will be torn from Solomon's son, though not all of it, and not in Solomon's lifetime, ‘for the sake of your father David’ (11:12). God raises up adversaries: Hadad of Edom, Rezon of Damascus, and Jeroboam, an official over the labor gangs. The prophet Ahijah meets Jeroboam in a field, tears his new cloak into twelve pieces, and gives him ten (11:29-31). One tribe will remain, so that David ‘will always have a lamp before Me in Jerusalem’ (11:36). The wisest man in Israel did not keep his own heart, and Proverbs, tied to his name, warns of the very danger that undid him."
+      },
+      {
+        "id": "divided",
+        "h": "Two kingdoms",
+        "body": "When Solomon died, about 931 or 930 BC, the northern tribes met his son Rehoboam at Shechem. “Your father put a heavy yoke on us” (12:4), they said, and if he lightened it, they would serve him. The old men who had served Solomon advised, “If you will be a servant to these people and serve them this day, and if you will respond by speaking kind words to them, they will be your servants forever” (12:7). Rehoboam took the young men's advice instead: “Whereas my father made your yoke heavy, I will add to your yoke” (12:14). The north answered with an old cry, “To your tents, O Israel!” (12:16), and made Jeroboam king. Only Judah, with most of Benjamin, stayed with David's house. The narrator says that ‘this turn of events was from the LORD’ (12:15), fulfilling Ahijah's word, and he does not excuse Rehoboam's folly.\n\nJeroboam feared that if his people kept going up to Jerusalem to worship, their hearts would turn back to Rehoboam. So he set up two golden calves, at Bethel and at Dan, and said, “Here, O Israel, are your gods, who brought you up out of the land of Egypt” (12:28), almost the words spoken over the golden calf at Sinai (Exodus 32:4). Many scholars think he meant the calves as pedestals for the invisible LORD, rather than images of another god. The text judges them as idols all the same: ‘this thing became a sin’ (12:30). A man of God from Judah cries out against the altar at Bethel and names a king of David's line, Josiah, who will one day burn bones upon it (13:2), as 2 Kings tells he did, about three centuries later (2 Kings 23:15-16). Traditional readers take the naming as true prediction; many critical scholars think the name was added later.\n\nJudah was no better. Under Rehoboam it built high places and Asherah poles, and Shishak carried off the temple's treasures and Solomon's gold shields; Rehoboam made bronze ones in their place (14:27). In the north, dynasty after dynasty fell by murder, until Omri the army commander won a civil war and built Samaria. In Judah, ‘Asa’s heart was fully devoted to the LORD all his days’ (15:14). Then came Ahab son of Omri, who married Jezebel, daughter of the king of the Sidonians, built a temple for Baal in Samaria, and ‘did more to provoke the LORD, the God of Israel, to anger than all the kings of Israel before him’ (16:33)."
+      },
+      {
+        "id": "elijah",
+        "h": "Elijah, the drought and the fire",
+        "body": "Elijah appears without warning, a man from Gilead whose name means that the LORD is his God. He tells Ahab, “there will be neither dew nor rain in these years except at my word!” (17:1). In a land that lived by rain, under a king who served Baal, the storm god said to send it, the drought asked who truly gives the rain. God hides Elijah by a brook, where ravens feed him, and then sends him to a widow in Zarephath, in Sidon, the country Jezebel came from. She shares her last flour and oil, and they do not run out. When her son dies, Elijah cries out to the LORD, and the boy lives.\n\nIn the third year Elijah calls Israel to Mount Carmel and asks, “How long will you waver between two opinions? If the LORD is God, follow Him. But if Baal is God, follow him” (18:21). The prophets of Baal call on their god from morning until noon and on into the afternoon, and ‘no one answered’ (18:26). Elijah rebuilds the LORD's altar, has it soaked with water, and prays, and ‘the fire of the LORD fell and consumed the sacrifice’ (18:38). The people fall on their faces: “The LORD, He is God! The LORD, He is God!” (18:39).\n\nThen Elijah has the prophets of Baal seized and kills them at the Kishon (18:40). The text tells it in one verse, and these notes do not dwell on it. Elijah was acting under the law of Deuteronomy 13, which treated a prophet who led Israel to other gods as guilty of a capital crime, and these men served a royal campaign that had already killed the LORD's prophets (18:4). Christians broadly agree that such laws were for Israel as a nation under God's direct rule, and that the church was never given the sword. When two disciples wanted to call down fire from heaven on a village that would not receive Jesus, “Jesus turned and rebuked them” (Luke 9:55). This chapter gives no one today a warrant to harm, threaten or silence anyone over religion.\n\nJezebel answers with a threat, and Elijah runs. A day into the wilderness, ‘He sat down under a broom tree and prayed that he might die’ (19:4). “I have had enough, LORD,” he says (19:4). The Bible does not rebuke him or hide his prayer. God answers in a striking order: sleep, then bread and water from an angel, then sleep and food again, then a long walk to Horeb, the mountain of God, where God asks, “What are you doing here, Elijah?” (19:9). A wind, an earthquake and a fire pass by, but the LORD is not in them, and then comes ‘a still, small voice’ (19:12). God gives Elijah work to do, a successor in Elisha, and the news that he is not alone: ‘I have reserved seven thousand in Israel’ (19:18).\n\nIf you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn."
+      },
+      {
+        "id": "naboth",
+        "h": "Naboth's vineyard, and Ahab's end",
+        "body": "Ahab is given two victories over Aram, so that he will know that the LORD is God of the valleys as well as the hills (20:28), and then he lets the Aramean king go free with a treaty. In chapter 21 he wants the vineyard beside his palace at Jezreel. Its owner refuses: “The LORD forbid that I should give you the inheritance of my fathers” (21:3). In Israel land belonged to the LORD, and each family held its share as an inheritance that was not to be sold away (Leviticus 25:23).\n\nAhab sulks. Jezebel asks him, “Do you not reign over Israel?” (21:7), and she writes letters in his name, sealed with his seal, to the elders of Naboth's town. They proclaim a fast, seat Naboth before the people, and set two worthless men against him to testify that he cursed God and the king. Every form of the law was kept, and the whole thing was a lie. ‘So they took him outside the city and stoned him to death’ (21:13), and Ahab goes down to take the vineyard.\n\nElijah meets him there with God's question: “Have you not murdered a man and seized his land?” (21:19). The narrator gives his hardest verdict on any king: ‘Surely there was never one like Ahab, who sold himself to do evil in the sight of the LORD’ (21:25). Then comes a surprise. Ahab tears his clothes, puts on sackcloth and fasts, and God tells Elijah that because Ahab has humbled himself, the disaster will not come in his days (21:29). God sees one vineyard owner, and he sees even the partial turning of a guilty king.\n\nAfter three years without war, Ahab and Jehoshaphat of Judah march on Ramoth-gilead. Four hundred court prophets promise victory. Ahab admits there is one more, Micaiah son of Imlah, but he hates him ‘because he never prophesies anything good for me’ (22:8). Micaiah swears, “As surely as the LORD lives, I will speak whatever the LORD tells me” (22:14). He sees ‘all Israel scattered on the hills like sheep without a shepherd’ (22:17), and tells of a heavenly council that sends a lying spirit to the king's prophets. Many read the vision as saying that God handed Ahab over to the falsehood he preferred, and readers differ on whether God sends such deceit or permits it. It was not hidden: Micaiah told Ahab all of it before the battle. Ahab rides out in disguise and is struck by a man who ‘drew his bow without taking special aim’ (22:34). He dies that evening, as the LORD had said."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads 1 Kings",
+        "body": "Matthew's family tree of Jesus runs through its kings: ‘Solomon the father of Rehoboam, Rehoboam the father of Abijah, and Abijah the father of Asa’, and Asa the father of Jehoshaphat (Matthew 1:7-8). The promise to David passed through flawed hands.\n\nJesus spoke of Solomon twice. Of the wildflowers he said, ‘not even Solomon in all his glory was adorned like one of these’ (Matthew 6:29). Of the queen of Sheba he said, “she came from the ends of the earth to hear the wisdom of Solomon, and now One greater than Solomon is here” (Matthew 12:42; Luke 11:31). Stephen, on trial, remembered that ‘it was Solomon who built the house for Him’, and added, “However, the Most High does not dwell in houses made by human hands” (Acts 7:47-48), close to Solomon's own words at the dedication. In John's Gospel, standing in the temple of his own day, Jesus speaks of ‘the temple of His body’ (John 2:21).\n\nElijah is everywhere. At Nazareth Jesus reminded his hometown that ‘there were many widows in Israel in the time of Elijah’, and yet ‘Elijah was not sent to any of them, but to the widow of Zarephath in Sidon’ (Luke 4:25-26). James calls Elijah ‘a man just like us’ whose prayers shut and opened the sky (James 5:17-18). Paul quotes Elijah's complaint that he alone was left, and God's reply, “I have reserved for Myself seven thousand men who have not bowed the knee to Baal” (Romans 11:4), to show that God had not rejected his people. Malachi had promised that God would send Elijah before the day of the LORD (Malachi 4:5), and Jesus said of John the Baptist, ‘he is the Elijah who was to come’ (Matthew 11:14). Elijah and Moses appeared with Jesus on the mountain (Mark 9:4). Revelation gives a false prophetess at Thyatira the name of Ahab's queen, ‘that woman Jezebel’ (Revelation 2:20).\n\nThe New Testament says plainly where it draws its lines: one greater than Solomon is here, and the Elijah who was to come has come. It does not make every king or prophet in this book a picture of Christ. Nothing in 1 Kings, or in the New Testament's use of it, gives anyone reason to blame or look down on the Jewish people. This is Israel's own Scripture, telling the truth about Israel's own kings."
+      },
+      {
+        "id": "readers",
+        "h": "How to read 1 Kings",
+        "body": "Read it as history with a question. Watch the verdict on each reign, and watch the prophets: a word spoken in one chapter comes true in another, sometimes centuries later. And watch the lamp kept for David in Jerusalem through kings who did not deserve it (15:4).\n\nDo not read Solomon's wealth as proof of God's approval; chapters 10 and 11 set it beside the law for kings and show where it led. Do not read the deaths of chapter 2, the killing at the Kishon or any war in this book as a pattern for today. They give no one a warrant for violence, and no shield against correction. And do not be surprised when the heroes fail. Solomon turned his heart away, and Elijah, after the fire on Carmel, asked to die, and God fed him and sent him on.\n\nTwo places are worth reading slowly: Solomon's prayer at the temple (chapter 8), which asks God to hear his people even in exile, and the night at Horeb (chapter 19), where God meets a worn-out prophet with a still, small voice. The story runs straight on into 2 Kings, where Elijah's cloak passes to Elisha and the two kingdoms go on to their ends."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 4,
+        "ref": "1:1-4",
+        "line": "Abishag, a young woman brought to an old king's bed, who is never asked and never speaks."
+      },
+      {
+        "ch": 1,
+        "v": 30,
+        "ref": "1:11-37",
+        "line": "Did David really promise Solomon the throne, or did a prophet and a mother press it on an old man?"
+      },
+      {
+        "ch": 2,
+        "v": 25,
+        "ref": "2:13-25",
+        "line": "Adonijah put to death for asking to marry Abishag."
+      },
+      {
+        "ch": 2,
+        "v": 34,
+        "ref": "2:28-35",
+        "line": "Joab killed at the altar, and a kingdom established by executions: justice or ruthless politics?"
+      },
+      {
+        "ch": 3,
+        "v": 3,
+        "ref": "3:1-3",
+        "line": "Pharaoh's daughter and the high places: a quiet warning at the start of Solomon's reign."
+      },
+      {
+        "ch": 3,
+        "v": 25,
+        "ref": "3:16-28",
+        "line": "‘Cut the living child in two’: the sword that found the true mother."
+      },
+      {
+        "ch": 4,
+        "v": 26,
+        "ref": "4:20-28",
+        "line": "Forty thousand stalls or four thousand: where the BSB follows Chronicles."
+      },
+      {
+        "ch": 6,
+        "v": 1,
+        "ref": "6:1",
+        "line": "Four hundred and eighty years after the exodus: what the number means for dating the exodus."
+      },
+      {
+        "ch": 7,
+        "v": 23,
+        "ref": "7:23-26",
+        "line": "Ten cubits across and thirty around: does the bronze Sea make pi equal three?"
+      },
+      {
+        "ch": 8,
+        "v": 27,
+        "ref": "8:22-30",
+        "line": "If heaven cannot contain God, why build him a house?"
+      },
+      {
+        "ch": 8,
+        "v": 63,
+        "ref": "8:62-66",
+        "line": "Twenty-two thousand oxen and a hundred and twenty thousand sheep: are the numbers literal?"
+      },
+      {
+        "ch": 9,
+        "v": 22,
+        "ref": "9:15-23",
+        "line": "Canaanite slave labor, and an Israelite levy that the north called a heavy yoke."
+      },
+      {
+        "ch": 10,
+        "v": 26,
+        "ref": "10:14-29",
+        "line": "Gold, horses from Egypt and silver like stones: praise, or a quiet charge under Deuteronomy 17?"
+      },
+      {
+        "ch": 11,
+        "v": 3,
+        "ref": "11:1-8",
+        "line": "Seven hundred wives and three hundred concubines, and a heart turned to other gods."
+      },
+      {
+        "ch": 12,
+        "v": 15,
+        "ref": "12:12-15",
+        "line": "‘This turn of events was from the LORD’: God's purpose and Rehoboam's folly."
+      },
+      {
+        "ch": 12,
+        "v": 28,
+        "ref": "12:25-33",
+        "line": "Jeroboam's golden calves: images of other gods, or pedestals for the LORD?"
+      },
+      {
+        "ch": 13,
+        "v": 24,
+        "ref": "13:20-25",
+        "line": "Why the man of God died for being deceived while the old prophet who lied lived."
+      },
+      {
+        "ch": 14,
+        "v": 13,
+        "ref": "14:7-16",
+        "line": "Why the one good child in Jeroboam's house died."
+      },
+      {
+        "ch": 15,
+        "v": 18,
+        "ref": "15:16-22",
+        "line": "Asa, whose heart was devoted to the LORD, pays the king of Aram to attack Israel."
+      },
+      {
+        "ch": 16,
+        "v": 7,
+        "ref": "16:1-7",
+        "line": "Baasha condemned for destroying Jeroboam's house, though God had said it would happen."
+      },
+      {
+        "ch": 16,
+        "v": 34,
+        "ref": "16:34",
+        "line": "Hiel rebuilds Jericho at the cost of two of his sons."
+      },
+      {
+        "ch": 17,
+        "v": 20,
+        "ref": "17:17-24",
+        "line": "Why would God let the son of the widow who sheltered his prophet die?"
+      },
+      {
+        "ch": 18,
+        "v": 40,
+        "ref": "18:40",
+        "line": "The prophets of Baal killed at the Kishon, and why it gives no one a warrant for violence today."
+      },
+      {
+        "ch": 19,
+        "v": 4,
+        "ref": "19:1-8",
+        "line": "Elijah asks to die under a broom tree, and how God answers him."
+      },
+      {
+        "ch": 20,
+        "v": 36,
+        "ref": "20:35-43",
+        "line": "A man killed by a lion, and Ahab condemned for sparing the king of Aram."
+      },
+      {
+        "ch": 21,
+        "v": 13,
+        "ref": "21:8-16",
+        "line": "Naboth condemned by false witnesses under the forms of the law."
+      },
+      {
+        "ch": 21,
+        "v": 29,
+        "ref": "21:27-29",
+        "line": "Judgment delayed to Ahab's son: is it fair?"
+      },
+      {
+        "ch": 22,
+        "v": 22,
+        "ref": "22:13-28",
+        "line": "A lying spirit in the mouths of the prophets: does God deceive?"
+      }
+    ],
+    "words": [
+      {
+        "word": "Understanding heart",
+        "line": "Solomon's request (3:9), in Hebrew literally a hearing heart: one that listens to God and to the people it must judge."
+      },
+      {
+        "word": "Wisdom",
+        "line": "In Hebrew chokmah, skill for living, from craftsmanship to governing to moral judgment. God gave it to Solomon as a gift (4:29)."
+      },
+      {
+        "word": "House",
+        "line": "In Hebrew bayit: a building, a palace, a temple or a line of kings. Solomon builds the LORD's house, and God keeps his promise of a house for David."
+      },
+      {
+        "word": "The Name",
+        "line": "The temple is ‘a house for the Name of the LORD my God’ (5:5): God truly present there, yet never contained (8:27)."
+      },
+      {
+        "word": "Glory",
+        "line": "In Hebrew kavod, weight, and so honor and the visible radiance of God's presence. It filled the house when the ark came in (8:11)."
+      },
+      {
+        "word": "Cherubim",
+        "line": "Winged guardian figures of God's throne. Two great ones, carved of olive wood and covered with gold, spread their wings in the inner room (6:23-28)."
+      },
+      {
+        "word": "High places",
+        "line": "In Hebrew bamah, local hilltop shrines (3:2). In Kings they become a mark of failure, even under good kings (15:14)."
+      },
+      {
+        "word": "Forced labor",
+        "line": "In Hebrew mas, conscripted work for the king (5:13). The north's complaint against it split the kingdom (12:4, 18)."
+      },
+      {
+        "word": "Yoke",
+        "line": "The beam that bound an animal to its work, and a picture of a king's demands. Rehoboam promised a heavier one (12:14)."
+      },
+      {
+        "word": "Lamp",
+        "line": "A picture of a family line kept alive. God kept a lamp for David in Jerusalem through kings who did not deserve it (11:36; 15:4)."
+      },
+      {
+        "word": "Baal",
+        "line": "Lord or master, the Canaanite storm god said to send the rain. Ahab built him a temple in Samaria (16:32)."
+      },
+      {
+        "word": "Asherah",
+        "line": "A Canaanite goddess, and the wooden pole that stood for her at shrines (14:23; 16:33)."
+      },
+      {
+        "word": "Man of God",
+        "line": "A prophet, someone sent with God's word. The widow of Zarephath calls Elijah one (17:24)."
+      },
+      {
+        "word": "Inheritance",
+        "line": "In Hebrew nachalah, a family's land held from God down the generations. Naboth would not sell his (21:3)."
+      },
+      {
+        "word": "A still, small voice",
+        "line": "What Elijah heard at Horeb after the wind, the earthquake and the fire (19:12). Translations vary: a gentle whisper, or a sound of thin silence."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 970 BC",
+        "what": "David dies after forty years as king, and Solomon secures the throne (chapters 1 and 2).",
+        "kind": "story"
+      },
+      {
+        "when": "About 966 BC",
+        "what": "In Solomon's fourth year the building of the temple begins, dated 480 years after the exodus (6:1).",
+        "kind": "story"
+      },
+      {
+        "when": "About 959 BC",
+        "what": "The temple is finished after seven years (6:38) and dedicated at the autumn feast (chapter 8). Readers differ on whether the dedication came that year or the next.",
+        "kind": "story"
+      },
+      {
+        "when": "About 945 to 924 BC",
+        "what": "Shoshenq I, the Bible's Shishak, reigns in Egypt. Jeroboam flees to him from Solomon (11:40).",
+        "kind": "world"
+      },
+      {
+        "when": "About 931 or 930 BC",
+        "what": "Solomon dies after forty years (11:42), and the kingdom divides at Shechem (chapter 12). Other reckonings give 927 or 922 BC.",
+        "kind": "story"
+      },
+      {
+        "when": "About 926 or 925 BC",
+        "what": "In Rehoboam's fifth year Shishak carries off the treasures of the temple and palace (14:25-26), and lists the places he claims on a wall at Karnak.",
+        "kind": "world"
+      },
+      {
+        "when": "About 911 to 870 BC",
+        "what": "Asa reigns in Judah, removes the idols, and his heart is fully devoted to the LORD (15:9-24).",
+        "kind": "story"
+      },
+      {
+        "when": "About 909 BC",
+        "what": "Baasha kills Jeroboam's son Nadab and wipes out Jeroboam's house, as Ahijah had said (15:27-30).",
+        "kind": "story"
+      },
+      {
+        "when": "About 885 BC",
+        "what": "Zimri reigns seven days; Omri takes the throne after a civil war and later builds Samaria (16:9-24).",
+        "kind": "story"
+      },
+      {
+        "when": "About 874 BC",
+        "what": "Ahab begins to reign. He marries Jezebel of Sidon and builds a temple for Baal in Samaria (16:29-33). Albright's reckoning gives 869.",
+        "kind": "story"
+      },
+      {
+        "when": "In Ahab's reign",
+        "what": "Elijah announces the drought, and the contest on Mount Carmel comes ‘in the third year of the drought’ (18:1). The New Testament gives three and a half years (Luke 4:25; James 5:17).",
+        "kind": "story"
+      },
+      {
+        "when": "853 BC",
+        "what": "Shalmaneser III of Assyria fights a coalition of western kings at Qarqar. His Kurkh Monolith lists Ahab with a large force of chariots.",
+        "kind": "world"
+      },
+      {
+        "when": "About 853 BC",
+        "what": "Ahab dies in battle at Ramoth-gilead (22:34-37), and his son Ahaziah reigns in Israel (22:51).",
+        "kind": "story"
+      },
+      {
+        "when": "About 840 BC",
+        "what": "Mesha king of Moab sets up a stone at Dibon naming Omri as a king of Israel who oppressed Moab. It was found in 1868.",
+        "kind": "world"
+      },
+      {
+        "when": "About 640 to 609 BC",
+        "what": "Josiah reigns in Judah and burns bones on the altar at Bethel, as the man of God from Judah had said (13:2; 2 Kings 23:15-16).",
+        "kind": "world"
+      },
+      {
+        "when": "722 BC and 587 or 586 BC",
+        "what": "Samaria falls to Assyria, as Ahijah had warned (14:15-16), and Babylon destroys Jerusalem and the temple, as the LORD had warned Solomon (9:6-9).",
+        "kind": "world"
+      },
+      {
+        "when": "About 561 BC or later",
+        "what": "The finished book of Kings, whose last scene is Jehoiachin's release in Babylon (2 Kings 25:27-30).",
+        "kind": "book"
+      },
+      {
+        "when": "The centuries before Christ",
+        "what": "The Greek translation divides Kings in two and sets it with Samuel as the four books of Kingdoms.",
+        "kind": "book"
+      },
+      {
+        "when": "1943 and 1951",
+        "what": "Martin Noth proposes that Deuteronomy to Kings form one history (1943), and Edwin R. Thiele's reckoning of the kings' years appears (1951).",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The two kingdoms, from Solomon to Ahab",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "6:1",
+              "8:1",
+              "14:25"
+            ],
+            "line": "David's city, where Solomon built the house of the LORD (6:1) and brought up the ark (8:1-6). Shishak plundered its treasures (14:25-26).",
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "12:29",
+              "13:1"
+            ],
+            "line": "Jeroboam set up one of his golden calves here (12:29), and a man of God from Judah cried out against its altar (13:1-2).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "shechem",
+            "name": "Shechem",
+            "lat": 32.213,
+            "lon": 35.282,
+            "refs": [
+              "12:1",
+              "12:25"
+            ],
+            "line": "All Israel gathered here to make Rehoboam king, and the north broke away (12:1-20). Jeroboam built it up (12:25).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "samaria",
+            "name": "Samaria",
+            "lat": 32.4,
+            "lon": 35.42,
+            "refs": [
+              "13:32",
+              "16:24",
+              "16:29"
+            ],
+            "region": true,
+            "line": "The hill country of the north, named after the capital Omri built on a hill he bought (16:24), where Ahab reigned (16:29). The book also uses the name for the region (13:32). Drawn roughly; the city is not marked."
+          },
+          {
+            "id": "jericho",
+            "name": "Jericho",
+            "lat": 31.871,
+            "lon": 35.444,
+            "refs": [
+              "16:34"
+            ],
+            "line": "In Ahab's days Hiel of Bethel rebuilt it, at the cost of two of his sons, as Joshua had said (16:34).",
+            "label": {
+              "dx": 4,
+              "dy": -12,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "jordan",
+            "name": "The Jordan",
+            "lat": 31.84,
+            "lon": 35.55,
+            "refs": [
+              "7:46",
+              "17:3"
+            ],
+            "line": "The temple's bronze was cast in clay molds in the plain of the Jordan (7:46). Elijah hid by a brook east of it (17:3).",
+            "label": {
+              "dx": 8,
+              "dy": 10,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "17:1",
+              "22:3"
+            ],
+            "region": true,
+            "line": "The land east of the Jordan. Elijah came from here (17:1), and Ahab died fighting for Ramoth-gilead (22:3). Drawn roughly."
+          },
+          {
+            "id": "beersheba",
+            "name": "Beersheba",
+            "lat": 31.245,
+            "lon": 34.84,
+            "refs": [
+              "4:25",
+              "19:3"
+            ],
+            "line": "‘From Dan to Beersheba’ named the whole land (4:25). Elijah fled past it into the wilderness (19:3)."
+          },
+          {
+            "id": "tyre",
+            "name": "Tyre",
+            "lat": 33.27,
+            "lon": 35.2,
+            "refs": [
+              "5:1",
+              "7:13",
+              "9:11"
+            ],
+            "line": "Hiram king of Tyre sent cedar and craftsmen for the temple (5:1-10), and Huram the bronze-worker came from here (7:13-14)."
+          },
+          {
+            "id": "sidon",
+            "name": "Sidon",
+            "lat": 33.56,
+            "lon": 35.37,
+            "refs": [
+              "16:31",
+              "17:9"
+            ],
+            "line": "Jezebel was the daughter of Ethbaal king of the Sidonians (16:31). Elijah was sent to a widow at Zarephath of Sidon (17:9)."
+          },
+          {
+            "id": "damascus",
+            "name": "Damascus",
+            "lat": 33.513,
+            "lon": 36.27,
+            "refs": [
+              "11:24",
+              "15:18",
+              "19:15"
+            ],
+            "line": "Rezon made himself king here (11:23-24). Asa paid its king to attack Israel (15:18-20), and Elijah was sent to the desert of Damascus (19:15).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only eleven places are drawn, each placed elsewhere on this site; Samaria and Gilead roughly, as regions. Gibeon, Hazor, Megiddo, Gezer, Dan, Tirzah, Jezreel, Mount Carmel, Zarephath, Ramoth-gilead and Aphek are left off, because where they lay is debated or is not placed in this site's records, and so are Horeb, Egypt and Sheba. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "Every king of both kingdoms with approximate dates, the prophets who spoke to them, and how the dates are worked out",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-narrative",
+        "name": "Reading the Stories",
+        "line": "How the Bible tells its stories, and why Solomon and Elijah are not models in everything",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/doctrines/temple",
+        "name": "Tabernacle, Temple, and God's Presence",
+        "line": "Behind the house Solomon built and the glory that filled it (chapters 6 to 8)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/wisdom",
+        "name": "Wisdom",
+        "line": "Behind Solomon's request for a hearing heart, and where his wisdom failed (chapters 3, 4 and 11)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/prayer",
+        "name": "Prayer and Lament",
+        "line": "Behind Solomon's prayer at the temple (chapter 8) and Elijah's prayers (chapters 17 to 19)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/idolatry",
+        "name": "Idolatry",
+        "line": "Behind Solomon's turning, Jeroboam's calves and the worship of Baal",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/justice-poor",
+        "name": "Justice, the Poor, and the Stranger",
+        "line": "Behind Naboth's vineyard and what a king owes the weak (chapter 21)",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/the-gods-of-the-nations",
+        "name": "Why Did Israel's Neighbors Worship Idols?",
+        "line": "Baal the storm god, Asherah, Chemosh and Molech, and the contest on Mount Carmel",
+        "icon": "world"
+      },
+      {
+        "href": "/questions/old-testament/what-archaeology-shows",
+        "name": "Does archaeology confirm the Old Testament?",
+        "line": "Shishak at Karnak, Omri on the Mesha Stele, Ahab at Qarqar, and Solomon's kingdom argued over",
+        "icon": "people"
+      },
+      {
+        "href": "/questions/contradictions/numbers-in-samuel-kings-and-chronicles",
+        "name": "Why do Samuel and Chronicles give different numbers?",
+        "line": "Solomon's stalls (4:26), and the ways the kings' years are counted",
+        "icon": "people"
+      },
+      {
+        "href": "/help/empty",
+        "name": "I feel empty, and I don't know why",
+        "line": "For anyone under the broom tree with Elijah (19:4): the Find Help page",
+        "icon": "people"
+      }
+    ]
+  }
 }
