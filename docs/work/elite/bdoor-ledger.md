@@ -20054,3 +20054,19 @@ Cut in chapter 10: the deep note's thematic contrast with Mark 10:45 and Matthew
 | The hard note: wise as political shrewdness; Deuteronomy 17:17 and 1 Kings 11; the two readings | 13-23 `hard` | 2-chronicles/11.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 11: the deep note's lines to Mark 10:29-30 and to a coming son of David, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 12 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1; 12:2; the army and cities (12:3-4); 12:5 (God's words); 12:6 (the leaders' words); God's answer (12:7); 12:8 | 1-8 | BSB | BSB text |
+| The pattern; immediate retribution; Shishak as Sheshonq I, the Twenty-second Dynasty, Libyan descent; Karnak and the Megiddo stela; about 925 BC; Jerusalem absent from the damaged list and the payment; azav mirrored; kana four times and 7:14; avodah's range | 1-8 | 2-chronicles/12.json `story`, `historical`, `literary`, `words` (kana, azav, avodah) | Repository |
+| 2 Chronicles 6:38 (its clause); Proverbs 16:18 | 1-8 | BSB | BSB text |
+| The hard note: the rule read too widely; theological history with prophets interpreting; Job, the psalms, Luke 13:1-5, John 9:1-3; a call, not a formula for diagnosing others; mercy, not greatness | 1-8 `hard` | 2-chronicles/12.json `hard`; context/guides/2-chronicles-7-14-in-context.json section 3 | Repository |
+| 12:9 (its clause); 12:10 (its first clause); the guards (12:11); 12:12; 12:13 (its clause) and Naamah; 12:14; the wars (12:15) | 9-16 | BSB | BSB text |
+| The shields as symbols; bronze and irony; the closing formula; Naamah the Ammonite and 1 Kings 11:1; the verdict; 1 Kings 14:25-28 and what Chronicles adds | 9-16 | 2-chronicles/12.json `story`, `historical`, `cultural`, `literary` | Repository |
+| 1 Kings 14:26 (its last sentence) | 9-16 | BSB | BSB text |
+
+Cut in chapter 12: the deep note's lines to Matthew 11:28-30 and Romans 6:17-22, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
