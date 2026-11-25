@@ -17522,3 +17522,19 @@ Every claim in `client/public/bible/notes/2-kings/intro.json`, field `teaching`.
 | Go deeper: eleven pages | deeper | bible/guides/kings-of-israel-and-judah.json, empires.json, reading-narrative.json, reading-prophets.json; bible/doctrines.json (Idolatry; Judgment and Justice; Exile and Restoration; Repentance and Forgiveness); context/guides/the-violence-of-the-old-testament.json; questions/old-testament/what-archaeology-shows.json (status live); needs/grief.json (page: true) | Repository; every page live; the Find Help page named by its own title |
 
 Cut from the book page: the introduction's echoes that the New Testament does not itself draw to this book (the feeding of the crowds beside 4:42-44, and the widow's son at Nain beside the Shunammite's son; Jesus carrying on a work greater than Elisha's). The deep notes' other lines to Christ are left to the chapters, where each is weighed. The words of 25:7 are paraphrased rather than quoted, so the page does not linger on them. The inscriptions are paraphrased, not quoted. Any statement about the borders of any land today.
+
+## The plain notes on 2 Kings 1 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; the fall through the lattice and 1:2; the angel and 1:3; the verdict (1:4); the messengers' report; 1:8 and the king's answer | 1-8 | 2-kings/1.json `summary`; BSB | Repository; BSB text |
+| Straight on from 1 Kings 22:51-53; Ahaziah about 853 to 852 BC; oracles about illness; a Philistine shrine; Ekron among the five cities, Tel Miqne and the 1996 inscription; Baal-zebub as lord of flies, mockery of Baal-zebul or a real local god; darash five times; Moab subject since Omri, the Mesha Stele at Dhiban in 1868; the hairy garment and belt, outside the court | 1-8 | 2-kings/1.json `story`, `historical`, `cultural`, `words` (darash, Baal-zebub, se'ar); bible/guides/kings-of-israel-and-judah.json (Ahaziah 853 to 852); BSB | Repository; both readings of the name in their holders' terms |
+| Matthew 3:4; Luke 1:17; Beelzebul and Matthew 12:24 (named, not quoted) | 1-8 | 2-kings/1.json `christ`, `cultural`; BSB | Repository; BSB text; the New Testament's own lines |
+| The first captain and his order (1:9, paraphrased around its inner quotation); 1:10; the second captain (1:11-12); the third captain and 1:13; 1:15; Elijah before the king (1:16); 1:17; Jehoram succeeds | 9-18 | 2-kings/1.json `summary`; BSB | Repository; BSB text |
+| Fifties as army units; summoning a prophet by force; the threes; ish elohim and esh elohim; Carmel and the chariot of fire; up and down; the accession dated two ways (1:17; 3:1) and the co-regency; two Jehorams | 9-18 | 2-kings/1.json `cultural`, `literary`, `historical`, `words` (esh); BSB | Repository |
+| Luke 9:54; Luke 9:55 | 9-18 | 2-kings/1.json `christ`, `hard`; luke/plain/9.json; BSB | Repository; BSB text; the New Testament's own line |
+| The hard note: the captains' command, the king's assault on the messenger, the third captain spared; the soldiers not the ones who sent to Ekron; the two emphases; not a pattern; no warrant to wish harm or call down judgment on opponents | 9-18 `hard` | 2-kings/1.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 1: the deep note's lines that the New Testament does not draw (the one greater than Elijah who came not to destroy but to save and received the rejection himself; the chapter's question answered by God dwelling among his people in the Son). The captain's order in 1:9 is paraphrased so that no quotation sits inside another. No care line is needed in this chapter.
