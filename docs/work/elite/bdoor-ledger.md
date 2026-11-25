@@ -20566,3 +20566,21 @@ Cut in chapter 2: the deep note's lines to Christ (the treasure in the field and
 | Deuteronomy 24:15 (its first clause); James 4:6 and 1 Peter 5:5 quoting 3:34 in its Greek form | 21-35 | proverbs/3.json `cultural` (Deuteronomy 24:14-15), `historical` (James 4:6; 1 Peter 5:5); BSB | Repository; BSB text; the New Testament's own quotation |
 
 Cut in chapter 3: the deep note's lines to Christ (Jesus as the Son who learned obedience, Hebrews 5:8, as the fullest picture of verse 5; the tree of life open to those redeemed by the Lamb; creation by wisdom as all things made through Christ, John 1:3 and 1 Corinthians 1:24, set beside verse 19; the note calls them developments, not predictions).
+
+## The plain notes on Proverbs 4 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1; 4:3 (its clause); the grandfather's words: 4:4, 4:5, 4:6 (its clause), 4:7, 4:8, the crown (4:9) | 1-9 | BSB | BSB text; each quoted span inside the grandfather's speech holds no inner mark |
+| Three generations; oral teaching in families and among scribes; authority from age and line; Solomon, David and Bathsheba heard by some readers, 1 Kings 2 and 1 Chronicles 22 and 28; the chapter naming no one; only child as beloved or unique; Bathsheba's other sons (1 Chronicles 3:5); every teaching father; qanah four times and verse 7 | 1-9 | proverbs/4.json `historical`, `literary`, `words` (qanah), `doctrines` (family) | Repository |
+| Deuteronomy 4:9 (its last sentence); 1 Chronicles 28:9 (its first sentence, in part) | 1-9 | proverbs/4.json `historical` (1 Chronicles 28), `doctrines` (Deuteronomy 6:7); the chapter data's cross-references for 4:4 (1 Chronicles 28:9); BSB | Repository; BSB text |
+| 4:10; straight paths (4:11-12); 4:13; 4:14; 4:15; 4:17; 4:18-19 | 10-19 | BSB | BSB text |
+| Travel on foot, stones and ruts, darkness; the five-fold warning; the wicked living on what they take; the two paths moving into light and into darkness | 10-19 | proverbs/4.json `cultural`, `literary`, `summary`, `story` | Repository |
+| Psalm 1:6 | 10-19 | the chapter data's cross-references (Psalm 1 for 4:14 by way of 1:15); BSB | BSB text |
+| 4:20; 4:22; 4:23; 4:24; 4:25; 4:26; 4:27 | 20-27 | BSB | BSB text |
+| Lev as the center of the inner person, mind and will; guarding the heart as guarding the whole inner direction; springs and towns in a dry land; natsar and the watchman, 4:6; heart, mouth, eyes, feet from the inside out; the level path cleared and smoothed; the inner self deciding the outer path | 20-27 | proverbs/4.json `cultural`, `literary`, `words` (lev, natsar), `doctrines` (humanity) | Repository |
+| Deuteronomy 5:32 (its last clause); Hebrews 12:13 | 20-27 | the chapter data's cross-references for 4:27 (Deuteronomy 5:32) and 4:26 (Hebrews 12:13); hebrews/plain/12.json (12-17 `ot`: ‘Verse 13 echoes Proverbs’); BSB | Repository; BSB text; the New Testament's own echo |
+
+Cut in chapter 4: the deep note's lines to Christ (Luke 2:52 as the language of Proverbs used of the boy Jesus; Mark 7:20-23 as a direct echo of verse 23; Jesus as the light of the world, John 8:12, set beside verse 18; the note calls them thematic). No care line is needed in this chapter.
