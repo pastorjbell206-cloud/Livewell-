@@ -1712,6 +1712,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "never-heard",
     "temple-destroyed",
     "book-genesis",
+    "book-psalms",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -1823,7 +1824,9 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
       // readers, the hardest question it faces.
       expect(fr.verse, fr.id).toBeTruthy();
       expect(fr.older, fr.id).toContain("Its hardest question is");
-      expect(fr.younger, fr.id).not.toMatch(/\b(right|wrong|best|true) answer\b/i);
+      expect(fr.younger, fr.id).not.toMatch(
+        /\b(right|wrong|best|true) answer\b/i
+      );
     }
     // No answer gets much more to say than another (older level).
     const lengths = views.map(fr => fr.older.length);
@@ -1853,9 +1856,9 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(links.pages["/answers/what-about-those-who-never-heard"]).toContain(
       "never-heard"
     );
-    expect(
-      links.pages["/questions/religions/those-who-never-heard"]
-    ).toContain("never-heard");
+    expect(links.pages["/questions/religions/those-who-never-heard"]).toContain(
+      "never-heard"
+    );
   });
 
   it("Why did God let his temple be destroyed? gives the prophets' answer, blames no people, and calls no one's loss today a punishment", () => {
@@ -1935,9 +1938,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
       expect(f.frames[6].name).toBe("Where to start");
       // Its book page is where its words come from, and is linked.
       expect(
-        fs.existsSync(
-          path.join(PUBLIC, `bible/notes/${book.slug}/intro.json`)
-        )
+        fs.existsSync(path.join(PUBLIC, `bible/notes/${book.slug}/intro.json`))
       ).toBe(true);
       expect(f.deeper?.some(d => d.href === `/study/bible/${book.slug}`)).toBe(
         true
@@ -2002,5 +2003,41 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
       fs.readFileSync(path.join(PUBLIC, "explorer/stops/fall.json"), "utf8")
     ) as { care: string };
     expect(f.care).toBe(fall.care);
+  });
+
+  it("Psalms is laid out as its own book page lays it out, keeps the laments, and keeps help in view", async () => {
+    const f = filmFile("book-psalms");
+    const intro = JSON.parse(
+      fs.readFileSync(
+        path.join(PUBLIC, "bible/notes/psalms/intro.json"),
+        "utf8"
+      )
+    ) as { structure: { range: string }[]; keyChapters: { ch: number }[] };
+    // The second picture's seven panels are the book page's seven parts.
+    const scene = (await FILM_SCENES["book-psalms"]()) as unknown as {
+      LAYOUT: number[];
+    };
+    expect(scene.LAYOUT).toEqual(
+      intro.structure.map(p => {
+        const [a, b] = p.range.split("-").map(Number);
+        return b - a + 1;
+      })
+    );
+    const t = text(f);
+    expect(t).toContain("The largest group of psalms are laments.");
+    expect(t).toContain("Protest can be a form of faith.");
+    expect(t).toContain("So you may pray that way too.");
+    // The key psalms it names are the book page's own, in order.
+    expect(f.frames[6].older).toContain(
+      intro.keyChapters
+        .map(k => k.ch)
+        .join(", ")
+        .replace(/, (\d+)$/, " and $1")
+    );
+    // It names Jesus' death on the cross: the films' own care line, whole.
+    expect(f.care).toBe(filmFile("the-king").care);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /\bcross\b|blood/i
+    );
   });
 });

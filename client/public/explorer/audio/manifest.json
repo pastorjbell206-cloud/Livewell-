@@ -705,6 +705,116 @@
     }
    ]
   },
+  "book-psalms": {
+   "title": {
+    "file": "book-psalms/title.mp3",
+    "hash": "20b8b961c2a2ffa1772d",
+    "seconds": 3.01,
+    "bytes": 18644
+   },
+   "younger": [
+    {
+     "id": "prayer-book",
+     "file": "book-psalms/younger/01-prayer-book.mp3",
+     "hash": "23b517851364f1478072",
+     "seconds": 25.58,
+     "bytes": 154004
+    },
+    {
+     "id": "layout",
+     "file": "book-psalms/younger/02-layout.mp3",
+     "hash": "00878114c7fad872f31a",
+     "seconds": 27.64,
+     "bytes": 166388
+    },
+    {
+     "id": "lament",
+     "file": "book-psalms/younger/03-lament.mp3",
+     "hash": "d4fcea701fdf9640a446",
+     "seconds": 25.38,
+     "bytes": 152852
+    },
+    {
+     "id": "praise",
+     "file": "book-psalms/younger/04-praise.mp3",
+     "hash": "8ba51f36169a6713d5be",
+     "seconds": 21.91,
+     "bytes": 131972
+    },
+    {
+     "id": "king",
+     "file": "book-psalms/younger/05-king.mp3",
+     "hash": "c4be8755ce369abe69c3",
+     "seconds": 20.3,
+     "bytes": 122324
+    },
+    {
+     "id": "jesus",
+     "file": "book-psalms/younger/06-jesus.mp3",
+     "hash": "5b67b22bc393e195418a",
+     "seconds": 20.43,
+     "bytes": 123188
+    },
+    {
+     "id": "start",
+     "file": "book-psalms/younger/07-start.mp3",
+     "hash": "a206dd8f25e9dd8c388e",
+     "seconds": 21.21,
+     "bytes": 127796
+    }
+   ],
+   "older": [
+    {
+     "id": "prayer-book",
+     "file": "book-psalms/older/01-prayer-book.mp3",
+     "hash": "85e7c2d26800ef5ab340",
+     "seconds": 24.44,
+     "bytes": 147236
+    },
+    {
+     "id": "layout",
+     "file": "book-psalms/older/02-layout.mp3",
+     "hash": "3c7bd75fbd876ea19c60",
+     "seconds": 27.38,
+     "bytes": 164804
+    },
+    {
+     "id": "lament",
+     "file": "book-psalms/older/03-lament.mp3",
+     "hash": "42428ba4b32ebc88b713",
+     "seconds": 29.38,
+     "bytes": 176900
+    },
+    {
+     "id": "praise",
+     "file": "book-psalms/older/04-praise.mp3",
+     "hash": "d23b04bf4ecdd7060a69",
+     "seconds": 22.8,
+     "bytes": 137444
+    },
+    {
+     "id": "king",
+     "file": "book-psalms/older/05-king.mp3",
+     "hash": "81b9356329e0ea8b949d",
+     "seconds": 26.2,
+     "bytes": 157748
+    },
+    {
+     "id": "jesus",
+     "file": "book-psalms/older/06-jesus.mp3",
+     "hash": "5ba7ea9763a2f34f51e4",
+     "seconds": 24.02,
+     "bytes": 144644
+    },
+    {
+     "id": "start",
+     "file": "book-psalms/older/07-start.mp3",
+     "hash": "e8bb2ef367b47385a655",
+     "seconds": 24.62,
+     "bytes": 148244
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

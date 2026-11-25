@@ -298,6 +298,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Genesis in seven moving pictures: what it is, its two halves, the image of God, the first sin, the promise to Abraham, a faithful God with a flawed family, and where to start reading.",
     },
+    "book-psalms": {
+      title: "Psalms: the prayer book of the Bible: Bible Explorer",
+      description:
+        "The whole book of Psalms in seven moving pictures: what it is, its gateway and five books, honest prayer, praise, the LORD as king, the prayers Jesus prayed, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

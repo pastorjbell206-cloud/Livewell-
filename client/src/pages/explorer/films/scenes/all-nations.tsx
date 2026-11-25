@@ -148,7 +148,15 @@ const film: FilmDrawing = {
           <Person x={752} y={442} s={0.8} pose="walk" robe="b" head="veil" />
         </Fade>
         <Fade frame={frame} on={-1} off={1} from="up" at={10}>
-          <Person x={372} y={478} s={0.9} face={-1} pose="walk" robe="c" bundle />
+          <Person
+            x={372}
+            y={478}
+            s={0.9}
+            face={-1}
+            pose="walk"
+            robe="c"
+            bundle
+          />
           <Person x={440} y={484} s={0.9} pose="walk" robe="b" cloak="g" />
         </Fade>
       </Fade>
@@ -297,7 +305,10 @@ const film: FilmDrawing = {
           className="pl-l"
           d="M214,318C214,270 204,236 172,222M204,262C190,250 176,252 168,262M210,286C224,270 238,272 244,282"
         />
-        <path className="pl-f" d="M172,222l-12,10M172,222l-4,14M168,262l-6,10" />
+        <path
+          className="pl-f"
+          d="M172,222l-12,10M172,222l-4,14M168,262l-6,10"
+        />
         <Person
           x={150}
           y={322}
@@ -339,7 +350,10 @@ const film: FilmDrawing = {
         <House x={746} y={400} s={0.8} tone="b" hatch={h.h3} />
         <Fade frame={frame} on={4} off={5} from="grow" at={5}>
           <GoldStar x={620} y={150} r={12} />
-          <path className="pl-f" d="M620,176V250M606,180L596,236M634,180L644,236" />
+          <path
+            className="pl-f"
+            d="M620,176V250M606,180L596,236M634,180L644,236"
+          />
         </Fade>
         <Fade frame={frame} on={4} off={5} from="walk-left" at={2}>
           <Person
@@ -413,7 +427,15 @@ const film: FilmDrawing = {
           />
           <Person x={668} y={486} s={1.3} face={-1} robe="g" head="veil" />
           <Person x={736} y={472} s={1.3} face={-1} robe="c" cloak="g" />
-          <Person x={636} y={492} s={0.9} face={-1} robe="b" child head="bare" />
+          <Person
+            x={636}
+            y={492}
+            s={0.9}
+            face={-1}
+            robe="b"
+            child
+            head="bare"
+          />
         </Fade>
       </Scene>
 
@@ -469,7 +491,15 @@ const film: FilmDrawing = {
           <Branch x={620} y={408} />
           <Person x={730} y={452} s={1.3} face={-1} robe="p" cloak="c" />
           <Branch x={700} y={382} />
-          <Person x={606} y={492} s={0.9} face={-1} robe="p" child head="bare" />
+          <Person
+            x={606}
+            y={492}
+            s={0.9}
+            face={-1}
+            robe="p"
+            child
+            head="bare"
+          />
         </Fade>
       </Scene>
     </>

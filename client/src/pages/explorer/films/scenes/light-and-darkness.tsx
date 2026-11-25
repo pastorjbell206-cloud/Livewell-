@@ -131,7 +131,10 @@ const film: FilmDrawing = {
           d="M446,404L380,500H640L514,404ZM360,240H600V404H360Z"
         />
         <House x={480} y={404} s={1.8} tone="c" />
-        <path className="pl-paper" d="M458,404V343C458,321 502,321 502,343V404Z" />
+        <path
+          className="pl-paper"
+          d="M458,404V343C458,321 502,321 502,343V404Z"
+        />
         <path className="pl-l" d="M458,404V343C458,321 502,321 502,343V404" />
         <Fade frame={frame} on={1} off={2} from="grow" at={4}>
           <Ambient frame={frame} on={1} off={2} kind="glow">
@@ -150,7 +153,15 @@ const film: FilmDrawing = {
             robe="b"
             head="veil"
           />
-          <Person x={498} y={486} s={0.85} pose="sit" robe="c" child head="bare" />
+          <Person
+            x={498}
+            y={486}
+            s={0.85}
+            pose="sit"
+            robe="c"
+            child
+            head="bare"
+          />
         </Fade>
       </Scene>
 
@@ -207,9 +218,33 @@ const film: FilmDrawing = {
             cloak="b"
             staff="staff"
           />
-          <Person x={360} y={468} s={1.4} pose="walk" robe="b" head="veil" bundle />
-          <Person x={310} y={474} s={0.9} pose="walk" robe="g" child head="bare" />
-          <Person x={250} y={462} s={1.4} pose="walk" robe="g" cloak="c" bundle />
+          <Person
+            x={360}
+            y={468}
+            s={1.4}
+            pose="walk"
+            robe="b"
+            head="veil"
+            bundle
+          />
+          <Person
+            x={310}
+            y={474}
+            s={0.9}
+            pose="walk"
+            robe="g"
+            child
+            head="bare"
+          />
+          <Person
+            x={250}
+            y={462}
+            s={1.4}
+            pose="walk"
+            robe="g"
+            cloak="c"
+            bundle
+          />
           <Donkey x={150} y={470} s={1.3} />
           <Person x={70} y={464} s={1.3} pose="walk" robe="p" cloak="b" />
         </Fade>
@@ -231,7 +266,10 @@ const film: FilmDrawing = {
         <Tent x={720} y={414} s={0.9} hatch={h.h3} />
         {/* The great tent, its door open. */}
         <Ink d="M170,470L230,220L400,130L570,220L630,470Z" tone="c" />
-        <path className="pl-paper" d="M250,470L300,250L400,196L500,250L550,470Z" />
+        <path
+          className="pl-paper"
+          d="M250,470L300,250L400,196L500,250L550,470Z"
+        />
         <path
           className="pl-l"
           d="M250,470L300,250L400,196L500,250L550,470M400,130V100"
@@ -284,7 +322,11 @@ const film: FilmDrawing = {
           tone="b"
           hatch={h.h3}
         />
-        <Ink d="M-10,510V400C240,380 560,392 810,380V510Z" tone="g" hatch={h.h2} />
+        <Ink
+          d="M-10,510V400C240,380 560,392 810,380V510Z"
+          tone="g"
+          hatch={h.h2}
+        />
         <path className="pl-f" d="M0,452C260,430 540,440 800,424" />
         <Fade frame={frame} on={4} off={5} from="walk-left" at={2}>
           <Person
@@ -310,7 +352,10 @@ const film: FilmDrawing = {
         <Ink d="M60,400V130H110V400ZM690,400V130H740V400Z" tone="c" />
         <path className="pl-l" d="M50,130H120M680,130H750M-10,150H810" />
         <Ink d="M-10,510V400H810V510Z" tone="b" />
-        <path className="pl-f" d="M0,436H800M0,474H800M200,400L170,500M600,400L630,500" />
+        <path
+          className="pl-f"
+          d="M0,436H800M0,474H800M200,400L170,500M600,400L630,500"
+        />
         {/* The great lamp of the feast. */}
         <path className="pl-l" d="M560,400V230M530,400H590" />
         <Ink d="M520,230C520,206 600,206 600,230L588,244H532Z" tone="c" />
@@ -327,7 +372,15 @@ const film: FilmDrawing = {
         </Fade>
         <Fade frame={frame} on={5} off={6} from="right" at={9}>
           <Person x={680} y={478} s={1.4} face={-1} robe="b" cloak="c" />
-          <Person x={744} y={486} s={1.0} face={-1} robe="g" child head="bare" />
+          <Person
+            x={744}
+            y={486}
+            s={1.0}
+            face={-1}
+            robe="g"
+            child
+            head="bare"
+          />
         </Fade>
       </Scene>
 
@@ -342,21 +395,33 @@ const film: FilmDrawing = {
             d="M400,126V40M300,160L240,90M500,160L560,90M270,230H170M530,230H630M310,290L220,330M490,290L580,330M340,140L310,60M460,140L490,60"
           />
         </Fade>
-        <Hills
-          y={380}
-          peaks={[
-            [400, 80],
-          ]}
-          tone="g"
-          hatch={h.hs}
-        />
+        <Hills y={380} peaks={[[400, 80]]} tone="g" hatch={h.hs} />
         <CityWall x={400} y={312} w={300} s={1.2} />
-        <path className="pl-f" d="M360,500C372,430 388,370 392,312M448,500C432,430 414,370 408,312" />
+        <path
+          className="pl-f"
+          d="M360,500C372,430 388,370 392,312M448,500C432,430 414,370 408,312"
+        />
         <Fade frame={frame} on={6} from="up" at={7}>
           <Person x={330} y={478} s={1.3} pose="walk" robe="p" cloak="b" />
-          <Person x={470} y={484} s={1.3} pose="walk" face={-1} robe="p" head="veil" />
+          <Person
+            x={470}
+            y={484}
+            s={1.3}
+            pose="walk"
+            face={-1}
+            robe="p"
+            head="veil"
+          />
           <Person x={400} y={440} s={0.9} pose="walk" robe="p" cloak="c" />
-          <Person x={250} y={488} s={0.9} pose="walk" robe="p" child head="bare" />
+          <Person
+            x={250}
+            y={488}
+            s={0.9}
+            pose="walk"
+            robe="p"
+            child
+            head="bare"
+          />
         </Fade>
       </Scene>
     </>

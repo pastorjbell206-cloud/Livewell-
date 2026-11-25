@@ -1,0 +1,116 @@
+{
+  "slug": "book-psalms",
+  "title": "Psalms: the prayer book of the Bible",
+  "group": "books",
+  "status": "finished",
+  "book": "psalms",
+  "mark": "book-psalms",
+  "line": {
+    "younger": "The Bible's book of prayers and songs: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "The Psalms as a whole book: a gateway, five books and a last Hallelujah; lament, praise, the LORD as king, the prayers Jesus prayed, and where to begin."
+  },
+  "poster": "Under a tree a singer sits with a harp, and people stand near with their hands lifted, in the light of a gold sun.",
+  "frames": [
+    {
+      "id": "prayer-book",
+      "name": "The prayer book of the Bible",
+      "still": "Under a tree a singer sits with a harp, and people stand near with their hands lifted, in the light of a gold sun.",
+      "younger": "The Psalms are the prayer book and the song book of the Bible. There are 150 of them. Most of the Bible is God speaking to his people. In the Psalms, God's people speak to him, and he kept their words.",
+      "older": "The Psalms are the prayer book of the Bible: 150 poems. Other parts of the Bible are God's word to his people. The Psalms are also his people's words to him, which he has taken into Scripture.",
+      "verse": {
+        "ref": "Psalm 62:8",
+        "text": "Trust in Him at all times, O people; pour out your hearts before Him."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in seven panels: a narrow one at the front with a gate over it and a gold rule under it, five wide ones marked one to five, and a narrow one at the end with a trumpet over it.",
+      "younger": "The psalms are gathered into five smaller books. Two psalms stand at the front, like a gate. Five psalms of praise stand at the end. And each of the first four books closes with a short blessing of God.",
+      "older": "The Psalms are not one long list. Two gateway psalms open the collection, five books follow, and five psalms of Hallelujah close it. Each of the first four books ends with a short blessing of God, like this one.",
+      "verse": {
+        "ref": "Psalm 41:13",
+        "text": "Blessed be the LORD, the God of Israel, from everlasting to everlasting. Amen and Amen."
+      }
+    },
+    {
+      "id": "lament",
+      "name": "Watch for: honest prayer",
+      "still": "Night on a bare hill. One person bows low, alone under the stars, and far off a thin gold line of dawn lies along the hills.",
+      "younger": "Watch for the sad psalms. There are more of them than any other kind. People tell God about their fear, their enemies, and the feeling that he is far away. God kept those prayers in the Bible. So you may pray that way too.",
+      "older": "The largest group of psalms are laments. They complain to God about enemies, about guilt, and about God's own apparent absence, and they do so inside the covenant. Most turn toward trust. A few, like Psalm 88, never do. Protest can be a form of faith.",
+      "verse": {
+        "ref": "Psalm 13:1",
+        "text": "How long, O LORD? Will You forget me forever?"
+      }
+    },
+    {
+      "id": "praise",
+      "name": "Watch for: praise",
+      "still": "People walk up a road toward a house on a hill, one with a harp, one with a trumpet, others with their hands lifted, under a gold sun.",
+      "younger": "Watch for praise. People sing about the world God made, and about the times he rescued them. One person's thank-you becomes everyone's song. And the whole book ends with praise.",
+      "older": "Praise in the Psalms is response: to God's work in creation, to his rescue of Israel, to his help in one crisis. One person's rescue becomes the whole community's reason to worship.",
+      "verse": {
+        "ref": "Psalm 150:6",
+        "text": "Let everything that has breath praise the LORD!"
+      }
+    },
+    {
+      "id": "king",
+      "name": "Watch for: the king",
+      "still": "A crown lies fallen on the ground beside an empty seat. Behind the hills a great gold sun is rising.",
+      "younger": "Watch for the king. Israel's kings failed, and their kingdom fell. But the psalms keep on saying that God himself is king, over the whole world, whatever happens.",
+      "older": "Beneath every lament and every hymn lies the conviction that the LORD reigns. Book Three ends by asking how God's covenant with David can stand when the crown lies in the dust. Book Four answers by proclaiming that the LORD is king.",
+      "verse": {
+        "ref": "Psalm 93:1",
+        "text": "The LORD reigns! He is robed in majesty"
+      }
+    },
+    {
+      "id": "jesus",
+      "name": "Watch for: the prayers of Jesus",
+      "still": "Night under olive trees. Jesus kneels and prays, and a small lamp with a gold flame burns beside him.",
+      "younger": "Watch for Jesus. He prayed the psalms. On the cross he prayed the first line of Psalm twenty-two. Christians pray the psalms as their own prayers, and as his.",
+      "older": "The Gospels show Jesus praying the psalms in his suffering: he cries the opening of Psalm 22 from the cross. Christians since the early church have prayed the Psalms both as their own prayers and as the prayers of Christ.",
+      "verse": {
+        "ref": "Psalm 22:1",
+        "text": "My God, my God, why have You forsaken me?"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With Psalm one, at the gate. Then try Psalm twenty-three. Read slowly, and read out loud. And read the whole psalm, not only the line you know.",
+      "older": "Start at the gateway, with Psalm 1. The book's own page marks eight key psalms: 1, 2, 22, 23, 51, 73, 89 and 110. Read each one whole, slowly and aloud.",
+      "verse": {
+        "ref": "Psalm 1:3",
+        "text": "He is like a tree planted by streams of water"
+      }
+    }
+  ],
+  "think": {
+    "younger": "The psalms hold happy prayers and sad ones. Which kind do you find easier to pray, and why?",
+    "older": "The Psalms give permission to complain, to plead and to question, and they keep bending those cries back toward trust. What would you say to God if you prayed as honestly as Psalm 13?"
+  },
+  "read": [
+    { "label": "Psalm 1", "href": "/study/bible/psalms/1" },
+    { "label": "Psalm 13", "href": "/study/bible/psalms/13" },
+    { "label": "Psalm 22", "href": "/study/bible/psalms/22" },
+    { "label": "Psalm 23", "href": "/study/bible/psalms/23" },
+    { "label": "Psalm 150", "href": "/study/bible/psalms/150" }
+  ],
+  "stops": [
+    "kingdom"
+  ],
+  "cards": [],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Psalms in the Study Bible: the whole book, taught from the start", "href": "/study/bible/psalms" },
+    { "label": "Pray the Psalms: find a psalm for today", "href": "/tools/pray-the-psalms" },
+    { "label": "Psalm 23: the LORD is my shepherd (a moving picture)", "href": "/study/explorer/watch/psalm-23" },
+    { "label": "Prayer (a moving picture)", "href": "/study/explorer/watch/prayer" },
+    { "label": "Why does God seem silent sometimes? (a moving picture)", "href": "/study/explorer/watch/god-silent" }
+  ],
+  "end": { "label": "Start reading: Psalm 1", "href": "/study/bible/psalms/1" }
+}

@@ -789,6 +789,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M30,58H70M30,65H70M30,72H58" />
     </>
   ),
+  /* Psalms: a small harp, and a gold sun behind it. */
+  "book-psalms": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M56,30a13,13 0 1,0 26,0a13,13 0 1,0 -26,0Z" />
+      <path className="pl-l" d="M56,30a13,13 0 1,0 26,0a13,13 0 1,0 -26,0Z" />
+      <Shape d="M30,84C22,58 30,34 52,24L57,31C42,40 36,60 40,84Z" tone="c" off={1} />
+      <path className="pl-l" d="M30,84H66M55,28L62,84" />
+      <path className="pl-f" d="M38,74L60,70M37,62L59,56M39,50L58,44M44,40L56,34" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

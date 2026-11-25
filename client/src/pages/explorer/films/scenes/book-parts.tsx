@@ -137,7 +137,14 @@ export function Layout({
         d={`M46,${top - 18}h32M46,${bot + 18}h32M722,${top - 18}h32M722,${bot + 18}h32`}
       />
       {spans.map((s, i) => (
-        <Fade key={i} frame={frame} on={k} off={k + 1} from="up" at={1 + i * step}>
+        <Fade
+          key={i}
+          frame={frame}
+          on={k}
+          off={k + 1}
+          from="up"
+          at={1 + i * step}
+        >
           <Ink
             d={`M${s.x},${top + 14}h${s.w}v${h - 28}h${-s.w}Z`}
             tone={TONES[i % 3]}
@@ -156,7 +163,13 @@ export function Layout({
         </Fade>
       ))}
       {mark !== undefined && spans[mark] && (
-        <Fade frame={frame} on={k} off={k + 1} from="grow" at={2 + parts.length * step}>
+        <Fade
+          frame={frame}
+          on={k}
+          off={k + 1}
+          from="grow"
+          at={2 + parts.length * step}
+        >
           <path
             className="pl-m"
             d={`M${spans[mark].x},${bot + 30}h${spans[mark].w}v9h${-spans[mark].w}Z`}
@@ -197,16 +210,21 @@ export function StartReading({
       <Person x={330} y={470} s={1.8} pose="sit" robe="b" cloak="c" />
       {child && (
         <Fade frame={frame} on={k} from="left" at={4}>
-          <Person x={236} y={476} s={1.2} pose="sit" robe="g" child head="bare" />
+          <Person
+            x={236}
+            y={476}
+            s={1.2}
+            pose="sit"
+            robe="g"
+            child
+            head="bare"
+          />
         </Fade>
       )}
       {/* The scroll, open across the knees. */}
       <Ink d="M372,420h112v52h-112Z" />
       <Ink d="M362,414h12v64h-12ZM482,414h12v64h-12Z" tone="c" />
-      <path
-        className="pl-f"
-        d="M384,432h88M384,442h88M384,452h88M384,462h60"
-      />
+      <path className="pl-f" d="M384,432h88M384,442h88M384,452h88M384,462h60" />
       <Fade frame={frame} on={k} from="grow" at={7}>
         <Ambient frame={frame} on={k} kind="glow">
           <path className="pl-m" d="M384,426h40v8h-40Z" />

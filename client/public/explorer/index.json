@@ -1345,6 +1345,23 @@
       "book": "genesis"
     },
     {
+      "slug": "book-psalms",
+      "title": "Psalms: the prayer book of the Bible",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The Bible's book of prayers and songs: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "The Psalms as a whole book: a gateway, five books and a last Hallelujah; lament, praise, the LORD as king, the prayers Jesus prayed, and where to begin."
+      },
+      "mark": "book-psalms",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": [],
+      "book": "psalms"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

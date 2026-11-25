@@ -85,13 +85,19 @@ const film: FilmDrawing = {
         />
         <Olive x={250} y={236} s={1.5} hatch={h.h2} />
         <Palm x={130} y={250} s={0.9} />
-        <Ink d="M380,220C420,250 470,270 560,290H420C400,270 380,250 360,226Z" tone="b" />
+        <Ink
+          d="M380,220C420,250 470,270 560,290H420C400,270 380,250 360,226Z"
+          tone="b"
+        />
         <Water x={400} y={262} w={150} rows={2} gap={12} />
         {/* The table, and the scroll open on it. */}
         <Ink d="M-10,510V330H810V510Z" tone="c" hatch={h.hs} />
         <Ink d="M170,440V340H630V440Z" />
         <Ink d="M150,330h22v120h-22ZM628,330h22v120h-22Z" tone="c" />
-        <path className="pl-l" d="M144,330h34M144,450h34M622,330h34M622,450h34M400,340V440" />
+        <path
+          className="pl-l"
+          d="M144,330h34M144,450h34M622,330h34M622,450h34M400,340V440"
+        />
         <path
           className="pl-f"
           d="M196,362h180M196,380h180M196,398h180M196,416h130M424,362h180M424,380h180M424,398h180M424,416h110"
@@ -184,19 +190,45 @@ const film: FilmDrawing = {
           tone="b"
           hatch={h.hs}
         />
-        <Ink d="M-10,510V390C240,372 560,378 810,390V510Z" tone="g" hatch={h.hs} />
+        <Ink
+          d="M-10,510V390C240,372 560,378 810,390V510Z"
+          tone="g"
+          hatch={h.hs}
+        />
         {/* The light, coming through the garden. */}
         <Fade frame={frame} on={3} off={4} from="left" at={5}>
           <path className="pl-paper" d="M0,360L330,430V480L0,480Z" />
           <path className="pl-f" d="M0,360L330,430M0,480H330" />
           <Ambient frame={frame} on={3} off={4} kind="glow">
-            <path className="pl-m" d="M22,420a16,16 0 1,0 32,0a16,16 0 1,0 -32,0Z" />
-            <path className="pl-l" d="M22,420a16,16 0 1,0 32,0a16,16 0 1,0 -32,0Z" />
+            <path
+              className="pl-m"
+              d="M22,420a16,16 0 1,0 32,0a16,16 0 1,0 -32,0Z"
+            />
+            <path
+              className="pl-l"
+              d="M22,420a16,16 0 1,0 32,0a16,16 0 1,0 -32,0Z"
+            />
           </Ambient>
         </Fade>
         {/* The two who hide, behind the trees. */}
-        <Person x={560} y={476} s={1.5} pose="kneel" face={-1} robe="c" head="bare" />
-        <Person x={650} y={480} s={1.4} pose="kneel" face={-1} robe="b" head="veil" />
+        <Person
+          x={560}
+          y={476}
+          s={1.5}
+          pose="kneel"
+          face={-1}
+          robe="c"
+          head="bare"
+        />
+        <Person
+          x={650}
+          y={480}
+          s={1.4}
+          pose="kneel"
+          face={-1}
+          robe="b"
+          head="veil"
+        />
         <Ambient frame={frame} on={3} off={4} kind="sway">
           <Olive x={470} y={480} s={2.6} hatch={h.h2} />
           <Olive x={740} y={470} s={2.2} hatch={h.h2} />
@@ -259,11 +291,25 @@ const film: FilmDrawing = {
         <Ink d="M-10,510V400H810V510Z" tone="b" />
         <path className="pl-f" d="M0,440H800M0,476H800" />
         {/* The grain he stored. */}
-        <Ink d="M170,400C160,360 180,330 200,330C222,330 240,360 230,400Z" tone="g" />
-        <Ink d="M226,400C218,366 236,340 254,340C274,340 290,366 282,400Z" tone="c" />
+        <Ink
+          d="M170,400C160,360 180,330 200,330C222,330 240,360 230,400Z"
+          tone="g"
+        />
+        <Ink
+          d="M226,400C218,366 236,340 254,340C274,340 290,366 282,400Z"
+          tone="c"
+        />
         <path className="pl-f" d="M190,336l10,-10l10,10M244,346l10,-10l10,10" />
         <Jar x={130} y={470} s={1.2} />
-        <Person x={330} y={470} s={1.8} pose="open" robe="p" cloak="b" head="bare" />
+        <Person
+          x={330}
+          y={470}
+          s={1.8}
+          pose="open"
+          robe="p"
+          cloak="b"
+          head="bare"
+        />
         <Fade frame={frame} on={5} off={6} from="grow" at={4}>
           <path
             className="pl-m"
@@ -275,9 +321,25 @@ const film: FilmDrawing = {
           />
         </Fade>
         <Fade frame={frame} on={5} off={6} from="right" at={6}>
-          <Person x={490} y={474} s={1.4} pose="kneel" face={-1} robe="g" cloak="c" />
+          <Person
+            x={490}
+            y={474}
+            s={1.4}
+            pose="kneel"
+            face={-1}
+            robe="g"
+            cloak="c"
+          />
           <Person x={570} y={480} s={1.4} pose="bow" face={-1} robe="c" />
-          <Person x={650} y={470} s={1.4} pose="kneel" face={-1} robe="b" cloak="g" />
+          <Person
+            x={650}
+            y={470}
+            s={1.4}
+            pose="kneel"
+            face={-1}
+            robe="b"
+            cloak="g"
+          />
           <Person x={730} y={482} s={1.4} pose="bow" face={-1} robe="g" />
         </Fade>
       </Scene>
