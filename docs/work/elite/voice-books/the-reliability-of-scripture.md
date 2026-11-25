@@ -42,7 +42,10 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Fifteen: Prophecy, Fulfillment, and the Coherence of Two Testaments | 1,219 | 1,219 | +0.0% | 14 (11.5) | 0 (0.0) | 29 (23.8) | 15 (12.3) | 10 | PASS |
 | Chapter Sixteen: The Resurrection — The Historical Core of Everything | 1,188 | 1,188 | +0.0% | 21 (17.7) | 0 (0.0) | 34 (28.6) | 13 (10.9) | 14 | PASS |
 | Chapter Seventeen: The Transmission of Meaning — Translation, Language, and Trust | 815 | 815 | +0.0% | 10 (12.3) | 0 (0.0) | 21 (25.8) | 11 (13.5) | 7 | PASS |
-| **All 18** | 21,153 | 21,153 | +0.0% | 278 (13.1) | 2 (0.1) | 544 (25.7) | 274 (13.0) | 195 | |
+| Chapter Eighteen: When Faith and Doubt Inhabit the Same Room | 964 | 964 | +0.0% | 9 (9.3) | 0 (0.0) | 26 (27.0) | 17 (17.6) | 8 | PASS |
+| Chapter Nineteen: The Bible in the Life of the Church — Two Thousand Years of Evidence | 978 | 978 | +0.0% | 14 (14.3) | 0 (0.0) | 37 (37.8) | 25 (25.6) | 10 | PASS |
+| Chapter Twenty: What Remains After the Argument — A Word to the Persuaded and the Still-Uncertain | 659 | 659 | +0.0% | 5 (7.6) | 0 (0.0) | 14 (21.2) | 9 (13.7) | 4 | PASS |
+| **All 21** | 23,754 | 23,754 | +0.0% | 306 (12.9) | 2 (0.1) | 621 (26.1) | 325 (13.7) | 217 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -438,3 +441,67 @@ Five pairs, taken at even intervals through the chapter:
    After: The theological DNA of the text (the character of God, the reality of human sin, the nature of redemption, the identity and work of Jesus Christ) survives translation into every language because it is embedded in the structure of the text, not in the specific vocabulary of any single linguistic rendering.
 5. Before: It is addressed to every human being in every culture, because it addresses the condition every human being shares — the condition of being a created being in need of a Creator, a broken person in need of restoration.
    After: It is addressed to every human being in every culture, because it addresses the condition every human being shares: the condition of being a created being in need of a Creator, a broken person in need of restoration.
+
+
+## Chapter Eighteen: When Faith and Doubt Inhabit the Same Room (`sec19.xhtml`)
+
+Words 964 to 964. Em-dashes in his prose 9 to 0 (9.3 to 0.0 per 1,000 words). Tells 26 to 17 (27.0 to 17.6 per 1,000). Mean sentence 21.9 words to 21.9; sentences of eight words or fewer 28.6% to 28.6%; of five or fewer 9.5% to 9.5%. 8 edits; paragraphs 12 to 12. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 9 to 0, not_but 4 to 4, NotX.Y 1 to 1, triplet 2 to 2, anaphora 6 to 6, intens 1 to 1, colon_reveal 1 to 1, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 3 quoted strings, 0 Scripture references, 0 years, 0 numbers in digits, 15 number words, proper names by count, and 6 hedge words (after: 6) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: I had gone to his office carrying a question I had held for months — not a textbook question but a real one, the kind that does not let you sleep.
+   After: I had gone to his office carrying a question I had held for months, not a textbook question but a real one, the kind that does not let you sleep.
+2. Before: It is the posture I want to commend — not the posture of the person who refuses to ask because the asking threatens faith, and not the posture of the person who mistakes doubt for wisdom and settles into a permanent suspension of judgment to avoid the cost of commitment, but the posture of one who takes the questions seriously, follows the evidence honestly, and arrives, with eyes open, at a conclusion that can be held with integrity even in the presence of unresolved difficulties.
+   After: It is the posture I want to commend: not the posture of the person who refuses to ask because the asking threatens faith, and not the posture of the person who mistakes doubt for wisdom and settles into a permanent suspension of judgment to avoid the cost of commitment, but the posture of one who takes the questions seriously, follows the evidence honestly, and arrives, with eyes open, at a conclusion that can be held with integrity even in the presence of unresolved difficulties.
+3. Before: A church that trusts the case can engage the questions with the equanimity of the professor in that office — naming the difficulties honestly, working through the evidence carefully, acknowledging what is not known, and arriving at the considered conclusion that the evidence supports trust.
+   After: A church that trusts the case can engage the questions with the equanimity of the professor in that office, naming the difficulties honestly, working through the evidence carefully, acknowledging what is not known, and arriving at the considered conclusion that the evidence supports trust.
+4. Before: She was wrong — or the community was wrong — to read the silence that followed as proof that the questions were unanswerable.
+   After: She was wrong, or the community was wrong, to read the silence that followed as proof that the questions were unanswerable.
+5. Before: I hold this conclusion with confidence — not with a certainty that requires no faith, because there is no certainty in this domain that requires no faith, but with the confidence that comes from having followed the argument honestly, having engaged the strongest objections, having sat with the genuine difficulties, and having found that the ground holds.
+   After: I hold this conclusion with confidence, not with a certainty that requires no faith, because there is no certainty in this domain that requires no faith, but with the confidence that comes from having followed the argument honestly, having engaged the strongest objections, having sat with the genuine difficulties, and having found that the ground holds.
+
+
+## Chapter Nineteen: The Bible in the Life of the Church — Two Thousand Years of Evidence (`sec20.xhtml`)
+
+Words 978 to 978. Em-dashes in his prose 14 to 0 (14.3 to 0.0 per 1,000 words). Tells 37 to 25 (37.8 to 25.6 per 1,000). Mean sentence 20.8 words to 22.2; sentences of eight words or fewer 29.8% to 27.3%; of five or fewer 10.6% to 11.4%. 10 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 14 to 0, not_but 1 to 1, not_just 1 to 1, isnt_its 1 to 1, triplet 6 to 8, anaphora 8 to 8, stock 1 to 1, intens 1 to 1, colon_reveal 1 to 1, short_close 2 to 2, one_line_para 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 0 Scripture references, 0 years, 0 numbers in digits, 17 number words, proper names by count, and 4 hedge words (after: 4) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: I am not suggesting that pragmatic evidence — this works, therefore it is true — is sufficient.
+   After: I am not suggesting that pragmatic evidence (this works, therefore it is true) is sufficient.
+2. Before: Within three hundred years of the crucifixion of a Jewish carpenter in a minor province of the empire, Christianity had spread through every stratum of Roman society, from slaves to senators, and had produced a literary output — the New Testament, the Apostolic Fathers, the Apologists, the great theological works of the third century — that shaped the intellectual history of the next two thousand years.
+   After: Within three hundred years of the crucifixion of a Jewish carpenter in a minor province of the empire, Christianity had spread through every stratum of Roman society, from slaves to senators, and had produced a literary output (the New Testament, the Apostolic Fathers, the Apologists, the great theological works of the third century) that shaped the intellectual history of the next two thousand years.
+3. Before: And yet it spread — through the Mediterranean world, through North Africa, through Persia, through the European continent, through Asia Minor, through Ethiopia and India and Armenia.
+   After: And yet it spread, through the Mediterranean world, through North Africa, through Persia, through the European continent, through Asia Minor, through Ethiopia and India and Armenia.
+4. Before: The hospital, which was a Christian invention — the systematic care of the sick and dying as a religious obligation.
+   After: The hospital, which was a Christian invention: the systematic care of the sick and dying as a religious obligation.
+5. Before: They are not the inevitable result of trusting the text — the history shows that the text can be misused as easily as used — but they are evidence that when the text is received as it asks to be received, as the living word of the God who is love, requiring a response of love toward God and neighbor, it produces something that the world, at its most honest, recognizes as genuinely good.
+   After: They are not the inevitable result of trusting the text (the history shows that the text can be misused as easily as used), but they are evidence that when the text is received as it asks to be received, as the living word of the God who is love, requiring a response of love toward God and neighbor, it produces something that the world, at its most honest, recognizes as genuinely good.
+
+
+## Chapter Twenty: What Remains After the Argument — A Word to the Persuaded and the Still-Uncertain (`sec21.xhtml`)
+
+Words 659 to 659. Em-dashes in his prose 5 to 0 (7.6 to 0.0 per 1,000 words). Tells 14 to 9 (21.2 to 13.7 per 1,000). Mean sentence 25.0 words to 25.0; sentences of eight words or fewer 30.8% to 30.8%; of five or fewer 19.2% to 19.2%. 4 edits; paragraphs 9 to 9. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
+
+By kind (before to after): emdash 5 to 0, not_but 2 to 2, NotX.Y 1 to 1, triplet 2 to 2, frag3 1 to 1, anaphora 1 to 1, colon_reveal 1 to 1, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 2 Scripture references, 0 years, 0 numbers in digits, 7 number words, proper names by count, and 5 hedge words (after: 5) compared.
+
+4 pairs (all there are), taken at even intervals through the chapter:
+
+1. Before: The first is the person who has followed the argument of this book and has found it persuasive — who has arrived at the end with a conviction that was not quite there at the beginning, or that was there but shaky and is now more stable, and who feels the ground firmer underfoot.
+   After: The first is the person who has followed the argument of this book and has found it persuasive, who has arrived at the end with a conviction that was not quite there at the beginning, or that was there but shaky and is now more stable, and who feels the ground firmer underfoot.
+2. Before: You are joining the company of Abraham, who trusted a word he did not fully understand; of David, who found in the Psalms a language for the whole range of his experience — the triumph, the failure, the abandonment, the return; of the disciples, who followed a man they did not fully understand and were rebuilt by an encounter with him they could not have anticipated; of Augustine, who resisted for years and then found that his restless heart had been made for the rest he was avoiding; of John Newton, the slave trader who encountered grace and wrote it down so that generations could sing it.
+   After: You are joining the company of Abraham, who trusted a word he did not fully understand; of David, who found in the Psalms a language for the whole range of his experience (the triumph, the failure, the abandonment, the return); of the disciples, who followed a man they did not fully understand and were rebuilt by an encounter with him they could not have anticipated; of Augustine, who resisted for years and then found that his restless heart had been made for the rest he was avoiding; of John Newton, the slave trader who encountered grace and wrote it down so that generations could sing it.
+3. Before: To the second person — the one who remains uncertain — I respect your uncertainty more than I respect cheap conviction.
+   After: To the second person, the one who remains uncertain, I respect your uncertainty more than I respect cheap conviction.
+4. Before: I made the crossing a long time ago, and I have not regretted it for a single day — not because life has been easy, not because every question has been answered, not because the faith has cost me nothing, but because on the other side of the crossing I found that the text told the truth about the world and about myself; that the God it describes is the God who is; that the grace it offers is the grace that holds.
+   After: I made the crossing a long time ago, and I have not regretted it for a single day, not because life has been easy, not because every question has been answered, not because the faith has cost me nothing, but because on the other side of the crossing I found that the text told the truth about the world and about myself; that the God it describes is the God who is; that the grace it offers is the grace that holds.
