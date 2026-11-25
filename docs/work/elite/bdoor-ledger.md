@@ -18564,3 +18564,20 @@ Cut in chapter 6: the deep note's lines to Christ (Mark 14:50 and John 15:13, wh
 | The self-harm line, handled as 1 Kings 19 was | 11-21 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 7: the deep note's lines to Christ (Hebrews 2:6-9 beside Job's echo of Psalm 8; Mark 15:34 and Psalm 22:1; Hebrews 4:15; the cross as the answer to 7:21; the note calls them thematic); the Ludlul poem (no date in the repository and not needed).
+
+## The plain notes on Job 9 (2026-11-25)
+
+`client/public/bible/notes/job/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Not denying God's justice but asking how a case could be heard; riv and tsadaq; the city gate; the hymn's dark point; the stars not certainly identified; Rahab not the woman of Jericho, a chaos monster, and Egypt (Psalm 87:4; Isaiah 30:7) | 1-13 | job/9.json `story`, `cultural`, `historical`, `literary`, `words` (riv, tsadaq, rahab) | Repository |
+| Psalm 77:19 | 1-13 | john and mark notes (God alone treads the sea: Job 9:8; Psalm 77:19); BSB | Repository; BSB text |
+| Chinnam in 9:17 and 2:3; 9:2 and Eliphaz's 4:17 turned; 9:24 and no other power | 14-24 | job/9.json `literary`, `doctrines` (sovereignty); job/2.json `words` (chinnam) | Repository |
+| Jeremiah 12:1 | 14-24 | the study guides setting Jeremiah 12:1 beside Job's protest; BSB | Repository; BSB text |
+| The hard note: Job's words in agony, not the narrator's; the friends' answers tested; 40:8; 42:6; 42:7 read as honesty nearer the truth; protest and correction; verse 21 recorded, not commended | 14-24 | job/9.json `hard` | Repository |
+| The self-harm line, handled as 1 Kings 19 was | 14-24 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
+| Runner, papyrus boat, eagle; lye and snow water; the mediator as arbiter laying a hand on both; yakach; the manuscripts and Greek and Syriac reading a wish; the thread to 16:19 and 19:25 | 25-35 | job/9.json `cultural`, `literary`, `words` (yakach), `story` | Repository |
+| Isaiah 18:2 | 25-35 | exodus/verses/2.json `history` (papyrus vessels, Isaiah 18:2, and Job 9:26); BSB | Repository; BSB text |
+
+Cut in chapter 9: the deep note's lines to Christ (1 Timothy 2:5, Hebrews 7:25, Romans 3:21-26 beside 9:2 and 9:33; the note says the verse is not a prophecy, and the New Testament does not quote it); the Mark and John notes' echo of 9:8 and 9:11 in Jesus walking on the sea (the Gospels do not quote Job).
