@@ -9049,3 +9049,62 @@ The first push covered the book page and chapters 1 to 12. The shared branch mov
   - chapters 1 to 12 at both widths: 36 passages and 165 fields matched to the data
 
 Chapters 13 to 25 were drafted and checked in a staging folder while the heavy commands for the first push waited for the machine's load to fall. They were then written, checked and committed in order. The final gates are recorded in the hand-back.
+
+## Job: the book page and every chapter (2026-11-25)
+
+Job is whole: a book page with a teaching introduction, and all forty-two chapters in plain words, in the shape 2 Samuel uses (`later` as the third part where the Bible takes the passage up; `"plain": true` appended to each chapter note; one commit for the book page and one per chapter, each with its ledger rows). The book page's commit also rebuilt the four cross-book indexes (timeline, atlas, words, hard passages) and added Job to `teaching.test.tsx` (the list of books with a teaching guide, and its frame, `canaan`).
+
+### The book page (`/study/bible/job`)
+
+Sixteen parts (4,346 words): Job in a minute; Where it sits in the story; Who wrote it, and when; Is Job history, a poem, or a drama?; How Job is built; The test in heaven, and the accuser; Ten children, and a man in the ashes; Job's lament: the day of his birth; The friends' case, and the book's verdict on it; Job's protest: a mediator, a witness, a Redeemer; Where wisdom is found, and Job's last defense; Elihu; The LORD answers from the whirlwind; Dust and ashes, and the ending; How the New Testament reads Job; How to read Job. Then 16 hard passages, 15 key words, 15 timeline entries, a map of one place, and eleven Go deeper pages (all live).
+
+Contested matters are stated in their holders' terms and no side is taken, since the site takes none: who the accuser is (a member of the heavenly court, or Satan as most Christian interpreters read him); whether Job is history, a poem built on a real man, or a wisdom drama (the Talmud's mashal); the date of writing (Solomon's time, the seventh century, or after the exile; the Dead Sea Scrolls copies); 19:25-27 and how far it sees (God himself or a heavenly figure; resurrection, vindication after death, or seeing God before death); Elihu (wise voice, repetition, later addition, or deliberately mixed); what the speeches from the whirlwind answer and what they do not; Behemoth and Leviathan (hippopotamus and crocodile, mythic creatures, or both; the dinosaur proposal named). The map draws only the Jordan (40:23), at the point the site's other maps use; Uz, Teman, Shuah, Naamah, Buz, Tema and Sheba are left off and the note says so.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 3 | 1,747 | 22 | 3 | 1,221 |
+| 2 | 3 | 1,257 | 23 | 3 | 1,012 |
+| 3 | 3 | 1,274 | 24 | 3 | 1,070 |
+| 4 | 2 | 950 | 25 | 1 | 573 |
+| 5 | 3 | 1,205 | 26 | 2 | 757 |
+| 6 | 2 | 1,060 | 27 | 2 | 937 |
+| 7 | 2 | 1,086 | 28 | 3 | 1,194 |
+| 8 | 2 | 955 | 29 | 3 | 1,050 |
+| 9 | 3 | 1,329 | 30 | 3 | 1,112 |
+| 10 | 3 | 1,181 | 31 | 4 | 1,492 |
+| 11 | 3 | 1,091 | 32 | 2 | 854 |
+| 12 | 2 | 994 | 33 | 3 | 1,154 |
+| 13 | 3 | 1,250 | 34 | 3 | 1,127 |
+| 14 | 3 | 1,202 | 35 | 2 | 828 |
+| 15 | 2 | 1,015 | 36 | 3 | 1,015 |
+| 16 | 3 | 1,158 | 37 | 2 | 905 |
+| 17 | 2 | 812 | 38 | 3 | 1,410 |
+| 18 | 2 | 933 | 39 | 3 | 1,137 |
+| 19 | 3 | 1,324 | 40 | 3 | 1,184 |
+| 20 | 2 | 976 | 41 | 3 | 1,113 |
+| 21 | 3 | 1,146 | 42 | 3 | 1,428 |
+| | | | **Total** | **111** | **46,518** |
+
+Twenty-two passages have no `later` part, because no connection to another book could be sourced in the repository for them; the validator allows it.
+
+### The hard places, and how they are stated
+
+Job is the site's hardest book for a suffering reader, and the notes hold to the crisis rules throughout. No note says or implies that a reader's suffering is a punishment or a test they are failing, or explains why any particular person suffers. The scene in heaven explains Job's loss to the reader and no other's (1, book page). Each friend's case is first stated in the form he would sign, then held against 42:7, and the notes say plainly that no one may speak to a sufferer as the friends did: not that a loss is punishment (4, 8, 11, 15, 18, 20, 22), not that a child died for anyone's sins (8), not that suffering is God's correction or warning when no one can see God's reasons (5, 33, 36), not that a person in distress is nothing (25). Elihu's teaching that God may teach through affliction is granted as something many believers have found, with the line that no one is entitled to tell another sufferer what lesson God intends. Job's curse on his birth and his longing for death (3, 6, 7, 9, 10, 14, 17) are recorded as cries spoken to God, never as counsel, validating the anguish and not the despair; each of those chapters carries the self-harm line whole, handled as 1 Kings 19 was. The deaths of the ten children are told in two verses and not lingered over (1); the new children of chapter 42 are said plainly not to replace the first. Job's contempt for the outcasts (30) and the curse that falls on his wife (31) are named without approval.
+
+### Care lines
+
+Reused whole, word for word, read by script from their sources, each naming Find Help, none with a phone number, and no new care sentence: the self-harm line (book page; 3, 6, 7, 9, 10, 14, 17; from 1-kings/plain/19.json and 2-samuel/plain/17.json); the grief line (book page; 1, 2, 18; from 1-samuel/plain/1.json); the child-loss line (book page; 1, 8, 42; from 2-samuel/plain/12.json, also in the 1 Kings 3 and 2 Kings 4 notes); the line for anyone suffering now (book page; from hebrews/plain/10.json and 2-timothy/intro.json).
+
+### Cut or narrowed
+
+Every line the deep notes draw from Job to Christ that the New Testament does not itself draw (the mediator, the witness, the Redeemer, the guarantor, the ransom as Jesus; Psalm 22 and the cross; Revelation 12:10; the incarnation; Philippians 2; John 1:3 and Colossians 1:16-17; the stilling of the storm; Luke 12:24 and the ravens; the Paraclete). The New Testament lines kept are James 5:11, 1 Corinthians 3:19 quoting 5:13, Romans 11:35 quoting 41:11, and Philippians 1:19's wording of 13:16 in the Greek, as the site's Philippians note states it. Verses with a dash or an inner quotation are quoted in part or paraphrased (among them 3:3, 26:5, 27:2, 27:13, 28:28, 35:2, 35:10, 36:23, 40:5); the BSB's ‘journeyed’ (38:16) is not quoted; ‘bless’ appears only inside quoted Scripture. Each chapter's ledger names its cuts.
+
+### What was run
+
+My checks in `/home/user/bdoor-scratch/ezra/` (quotations strict, single-quote, cited and nested; forbidden words, signposting and first-person scans; the care-line check; Job added to the books the care corpus leaves out) after every page and chapter, with validate-bible-notes, no-emdash, the search and passage index checks, validate-politics and the Bible index checks, each exit 0. Mid-run after chapter 5: all content gates (58 of 58), `pnpm check`, `pnpm test` (all passed). Before the first push, on the merged tree, five full runs of the content gates, `pnpm check`, `pnpm test`, build, sitemap, prerender and `audit:canonicals`, each green, and the served build walked at 390 and 1440 (the book page's parts, hard passages, words, timeline and place; every chapter's passages, headings and fields), 0 problems on four of the five; on the fifth a passage of chapter 13 was read at 390 before it had drawn, and after the walk was made to wait for every passage the same commit walked clean. The shared branch moved during each run; the first push went out after a docs-and-content merge was re-gated with all content gates, `pnpm check` and the tests related to the files that came in.
+
+### Next
+
+The Psalms already have a book page; Proverbs, Ecclesiastes and the Song of Songs are the wisdom books still without one. As with Job, each new book page needs the explore indexes rebuilt in its own commit (`build-bible-timeline-index.mjs`, `-atlas-`, `-words-`, `-hard-`, and now `-keys-`, `-themes-`, `-glance-` where its data changes).

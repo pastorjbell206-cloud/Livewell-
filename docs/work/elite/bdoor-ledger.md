@@ -19130,6 +19130,217 @@ Cut in chapter 27: the deep note's lines to Christ (1 Peter 2:22-23 and Jesus be
 | The hard note: Job as speaker in the text as it stands; the change of tone and chapters 29 to 31; the three readings (the narrator's interlude; Job's moment of insight; a preview of God's speeches); no side; the book's deepest theme | 23-28 | job/28.json `hard` | Repository; each reading in its holders' terms; no side |
 
 Cut in chapter 28: the deep note's lines to Christ (1 Corinthians 1:24, Colossians 2:3 and John 1:3 beside the poem; the note calls them parallels of the wisdom tradition, and the New Testament does not quote Job 28); the Egyptian expeditions in Sinai (not needed).
+
+## The plain notes on Job 29 (2026-11-25)
+
+`client/public/bible/notes/job/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The final speech as a legal case in three parts; no hearer named; who will give me; sod and the friendship of God; God first, then the children; cream and oil | 1-6 | job/29.json `story`, `literary`, `cultural`, `words` (sod) | Repository |
+| The city gate and its uses; Iron Age gate complexes; the ideal of defending the vulnerable; Exodus 22:22-24; clothing and the turban; justice as identity; the answer to chapter 22 | 7-17 | job/29.json `historical`, `cultural`, `story`, `words` (tsedeq, av) | Repository |
+| Psalm 68:5 | 7-17 | job/29.json `words` (av); BSB | Repository; BSB text |
+| The hard note: pride heard by some; Elihu and God's challenge; a legal defense; 1:1 and 1:8; both, and a self bound to honor | 7-17 | job/29.json `hard` | Repository; each reading in its holders' terms |
+| Nest, roots and bow; malqosh and the spring rain; a comforter of the mourners | 18-25 | job/29.json `literary`, `cultural`, `words` (malqosh) | Repository |
+
+Cut in chapter 29: the deep note's lines to Christ (Isaiah 11:4, Psalm 72:12-14, Matthew 11:4-5 and 2 Corinthians 8:9; the note calls them thematic).
+
+## The plain notes on Job 30 (2026-11-25)
+
+`client/public/bible/notes/job/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second part; attah three times; king to mockery; the outcasts of the desert fringe; dogs as scavengers and working animals; spitting; the byword; the siege | 1-15 | job/30.json `story`, `historical`, `cultural`, `literary`, `words` (attah) | Repository |
+| 1 Kings 19:4 (in part) | 1-15 | job/30.json `cultural` (the broom tree and Elijah); BSB | Repository; BSB text |
+| The hard note: the contempt troubling; the flaw of charity from above; the bitterness of pain; mockers, not simply the poor; held together; recorded honestly | 1-15 | job/30.json `hard` | Repository; each reading in its holders' terms |
+| You addressed; the body matching 2:7-8; afar va'efer and 42:6; verse 20 | 16-23 | job/30.json `literary`, `cultural`; the genesis notes (dust and ashes, Job 30:19 and 42:6) | Repository |
+| Genesis 18:27 (in part: the verse holds a dash) | 16-23 | the genesis notes on afar va'efer; BSB | Repository; BSB text |
+| No hand stretched out; oni and ani; jackals and ostriches; harp and flute reversed from 21:12 | 24-31 | job/30.json `cultural`, `words` (oni, tan) | Repository |
+| Micah 1:8 | 24-31 | job/30.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 30: the deep note's lines to Christ (Mark 14:65, 15:19 and 15:34 beside Job's mockery and cry; the note calls it a pattern, not prediction).
+
+## The plain notes on Job 31 (2026-11-25)
+
+`client/public/bible/notes/job/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The climax of Job's speeches; the hearing longed for since chapters 9, 13 and 23; the oath of clearance with self-curse (Exodus 22:10-11; Numbers 5:19-22); the case put in God's hands; berit and the eyes; the curse of verse 10 and grinding grain as slaves' work | 1-12 | job/31.json `story`, `historical`, `cultural`, `literary`, `words` (berit, tummah) | Repository |
+| Household slaves and their few rights; the same Maker (31:15); widow, orphan and poor; support in the gate as influence; the answer to chapter 22 | 13-23 | job/31.json `cultural`; the notes quoting Job 31:13-15 on master and servant | Repository |
+| Isaiah 58:7 | 13-23 | the notes setting Isaiah 58:7 beside Job 31:16-20; BSB | Repository; BSB text |
+| From people to God; gold as idolatry (31:24-28); the sun and moon; the thrown kiss; hospitality (Genesis 19:2; Judges 19:15-21); adam as Adam or as people | 24-34 | job/31.json `cultural`, `words` (adam); the notes counting trust in gold as idolatry | Repository; both readings |
+| 1 Kings 19:18 (in part: the verse holds a dash) | 24-34 | job/31.json `cultural`; BSB | Repository; BSB text |
+| Tav as signature and cross mark; verses 38-40 moved or deliberate; the narrator's close; Elihu next | 35-40 | job/31.json `cultural`, `literary`, `words` (tav), `story` | Repository |
+| Ezekiel 9:4 | 35-40 | job/31.json `words` (tav); BSB | Repository; BSB text |
+| The hard note: not sinless (9:2; 14:4; 13:26); denying the guilt that would explain his disaster; verse 33; the high standard; confidence that God owed him an answer (40:8); innocent of the charges | 35-40 | job/31.json `hard` | Repository |
+
+Cut in chapter 31: the deep note's lines to Christ (Matthew 5:28, 5:44, 25:35-36 and Hebrews 4:15; the note calls them thematic); the Egyptian Book of the Dead (not needed). The note's judgment on the curse of verse 10 (that it is not a picture to approve) is a plain-words comment on the text, not a claim of fact.
+
+## The plain notes on Job 32 (2026-11-25)
+
+`client/public/bible/notes/job/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| God expected, Elihu instead; six chapters unanswered; the first prose since chapter 2; the fullest family line; Buz, Nahor and Uz (Jeremiah 25:23); nothing known outside the book; absent from prologue and epilogue; aph four times | 1-5 | job/32.json `story`, `historical`, `literary`, `words` (aph) | Repository |
+| Genesis 22:21 | 1-5 | job/32.json `historical`; BSB | Repository; BSB text |
+| Age and wisdom (15:10); ruach; the wineskin; the self-referential speech read as pompous or as courtesy | 6-22 | job/32.json `cultural`, `literary`, `words` (ruach, kanah) | Repository; each reading in its holders' terms |
+| Joel 2:28 | 6-22 | job/32.json `christ` (Joel 2:28 on the Spirit given regardless of age); BSB | Repository; BSB text |
+| The hard note: the four readings (a wise voice not rebuked at 42:7-9; a repetition ignored by God; a later addition; deliberately mixed); no side | 6-22 | job/32.json `hard` | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 32: the deep note's lines to Christ (Luke 2:46-47, John 7:15 and Acts 2:17; the note says none is predicted in Job 32); Mark 2:22 on wineskins (not drawn from Job).
+
+## The plain notes on Job 33 (2026-11-25)
+
+`client/public/bible/notes/job/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Elihu turning to Job; 9:33 and 16:19-21 taken up; a fellow creature of clay; the breath of the Almighty; Job's words quoted (13:24, 27), selectively as some note; innocent of the charges, not sinless | 1-13 | job/33.json `story`, `cultural`, `literary`, `hard`; job/31.json `hard` | Repository |
+| Genesis 2:7 | 1-13 | job/27.json `doctrines` (humanity: Genesis 2:7); job/32.json `words` (ruach); BSB | Repository; BSB text |
+| Dreams as warning; Eliphaz's vision (4:12-17) taken gently; illness before modern medicine, read as displeasure; shachat five times | 14-22 | job/33.json `cultural`, `words` (shachat) | Repository |
+| The hard note: not the friends' idea; teaching through hardship; no one can tell God's purpose in a given case; 1:19 and the children; Elihu not knowing the prologue; no one may tell the sick their illness is God's warning | 14-22 | job/33.json `hard`; job/37.json `hard` | Repository |
+| Luts as go-between; the messenger as angel, teacher or undefined; kopher found, not produced; the small drama; verse 32 | 23-33 | job/33.json `words` (luts, kopher, malak), `literary` | Repository; each reading in its holders' terms |
+| Genesis 42:23; Exodus 30:12 | 23-33 | job/33.json `words` (luts: Genesis 42:23; kopher: Exodus 21:30, 30:12); BSB | Repository; BSB text |
+
+Cut in chapter 33: the deep note's lines to Christ (1 Timothy 2:5-6 and Mark 10:45 beside the messenger and the ransom; the note itself says the passage should not be read as a coded prophecy); parallels of protective spirits in the region (not needed).
+
+## The plain notes on Job 34 (2026-11-25)
+
+`client/public/bible/notes/job/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second speech; the wider audience; the hardening; the public hearing and Job as defendant; the saying of 12:11; God's justice from who God is; appointed by no one; life held by his breath; the company one keeps | 1-15 | job/34.json `story`, `cultural`, `literary`, `words` (neshamah, Shaddai) | Repository |
+| Psalm 104:29 | 1-15 | the genesis notes (death as the Giver taking back his breath, Job 34:14-15); BSB | Repository; BSB text |
+| The hard note: not entirely fair; 21:15 and 9:22 gathered into their worst form; fair summary or the friends' failure; God does not pervert justice; the reader knows the prologue | 1-15 | job/34.json `hard` | Repository; each reading in its holders' terms |
+| The ruler as guardian of justice raised higher in God; kings and nobles rebuked; the sudden fall of the mighty; verse 29 and God's silence | 16-30 | job/34.json `historical`, `cultural`, `words` (mishpat, evel) | Repository |
+| Deuteronomy 10:17 | 16-30 | the notes quoting Deuteronomy 10:17 on God showing no partiality; BSB | Repository; BSB text |
+| Verse 33 and 40:8; joining the friends; clapping as scorn; without knowledge and 38:2 | 31-37 | job/34.json `story`, `cultural`, `literary` | Repository |
+
+Cut in chapter 34: the deep note's lines to Christ (the Gospels and Romans 3:26 beside Elihu's picture of the impartial ruler; the note calls them a fulfilment of the wider picture); Hammurabi's prologue (not needed).
+
+## The plain notes on Job 35 (2026-11-25)
+
+`client/public/bible/notes/job/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The third speech between 34 and 36-37; the two claims answered; Eliphaz's 22:2-3; the ancient idea that the gods need people, rejected; God beyond harm or gain | 1-8 | job/35.json `story`, `cultural`, `literary` | Repository |
+| Genesis 6:6; Psalm 147:11 | 1-8 | job/35.json `hard`; BSB | Repository; BSB text |
+| The hard note: not indifference; no debt; grief at sin and delight in the faithful as love, not need; the two halves | 1-8 | job/35.json `hard` | Repository |
+| Oppression real (chapter 24); seeking relief without God; the formal cry; songs in the night and confidence in the dark; prayer as demand or turning; unfair to Job, who has cried to God | 9-16 | job/35.json `historical`, `cultural`, `literary`, `words` (zamir, shav) | Repository |
+| Psalm 42:8 | 9-16 | the notes setting Psalm 42:8 beside Job 35:10; BSB | Repository; BSB text |
+
+Cut in chapter 35: the deep note's lines to Christ (Acts 17:25, Mark 14:26 and the cross; the note calls the link thematic).
+
+## The plain notes on Job 36 (2026-11-25)
+
+`client/public/bible/notes/job/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The fourth and longest speech; its themes gathered; the claim of verse 4 read as arrogance or as soundness (37:16); verse 15 as the heart; chains and captivity in war or for debt | 1-15 | job/36.json `story`, `cultural`, `historical`, `words` (oni, musar) | Repository; each reading in its holders' terms |
+| Psalm 119:71 | 1-15 | job/36.json `hard`; BSB | Repository; BSB text |
+| Verses 16-20 notoriously difficult; the pointed application to Job; verse 17 as the friends' charge | 16-21 | job/36.json `literary` | Repository |
+| The hard note: teaching through affliction, true in many lives; the danger of a universal explanation; the prologue; no one entitled to tell another sufferer God's lesson | 16-21 | job/36.json `hard` | Repository |
+| Two cries of greatness and two panels; the rainy season and hunger; the storm that terrifies and feeds; the storm gathering toward chapter 38 | 22-33 | job/36.json `literary`, `historical`, `story` | Repository |
+
+Cut in chapter 36: the deep note's lines to Christ (Hebrews 12:5-11 and 5:8; the note says Elihu is not speaking of the Messiah); the meaning of qedeshim in verse 14 (not needed for plain words, and the scholarly question is left in the deep note).
+
+## The plain notes on Job 37 (2026-11-25)
+
+`client/public/bible/notes/job/plain/37.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The storm told as present; voice repeated; storm gods; Baal at Ugarit before 1200 BC; the storm given to the one God; weather and work; chesed and the three purposes | 1-13 | job/37.json `historical`, `cultural`, `literary`, `words` (qol, chesed) | Repository |
+| Psalm 29:3 | 1-13 | job/37.json `historical` (Psalm 29 the closest parallel); BSB | Repository; BSB text |
+| The hard note: the two views of providence (the Reformed view; creation's own regularity); purpose; no one can tell which in a given case; 1:19 | 1-13 | job/37.json `hard` | Repository; each view in its holders' terms |
+| The south wind; bronze mirrors and the summer sky; questions anticipating God's speech; tsaphon and Baal's mountain; the close of the human debate; 38:1 next | 14-24 | job/37.json `cultural`, `historical`, `story`, `words` (tsaphon) | Repository |
+
+Cut in chapter 37: the deep note's line to Christ (Mark 4:41 and the stilling of the storm; the note says it is not a prediction).
+
+## The plain notes on Job 41 (2026-11-25)
+
+`client/public/bible/notes/job/plain/41.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The height of the second speech; the absurd scenes of hook, rope, nose-ring (Assyrian reliefs), covenant (Exodus 21:5-6), pet birds and merchants; verse 10's turn; verse 11 and no claim on God | 1-11 | job/41.json `cultural`, `literary`, `words` (berit) | Repository |
+| Romans 11:35 quoting 41:11, and Paul's meaning | 1-11 | job/41.json `christ`; BSB | Repository; BSB text; a line the New Testament draws |
+| God's delight in the creature; the Nile crocodile, feared and worshiped; the fiery breath beyond any animal; the lower millstone | 12-24 | job/41.json `historical`, `literary`, `hard` | Repository |
+| Psalm 104:26 | 12-24 | job/41.json `historical` (Psalm 104:26); BSB | Repository; BSB text |
+| Head to tail and the wake; king over all the proud and 40:11-12; tehom and Genesis 1:2 | 25-34 | job/41.json `literary`, `cultural`, `words` (shachats, tehom) | Repository |
+| Psalm 74:14 | 25-34 | job/41.json `historical` (Psalm 74:13-14; Isaiah 27:1); BSB | Repository; BSB text |
+| The hard note: real animal or myth; the speech's real creatures; Psalm 74:14, Isaiah 27:1 and Litan at Ugarit; the middle path; no side; a creature God made and delights in | 25-34 | job/41.json `hard`, `historical` | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 41: the deep note's line from Isaiah 27:1 to Revelation's dragon and the victory of Christ (the New Testament does not draw it from Job 41); Sobek (not needed).
+
+## The plain notes on Job 42 (2026-11-25)
+
+`client/public/bible/notes/job/plain/42.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Job's last reply quoting 38:2-3 and 40:7; verse 5 as the hinge; dust and ashes (30:19) and Abraham | 1-6 | job/42.json `literary`; the genesis notes (afar va'efer) | Repository |
+| Genesis 18:27 (in part: the verse holds a dash) | 1-6 | the genesis notes on afar va'efer (Job 30:19; 42:6); BSB | Repository; BSB text |
+| The hard note: maas without an object and the translations; nacham as repent or be comforted; the BSB's traditional reading; no confession of the friends' charges; 42:7; words without knowledge taken back, innocence kept | 1-6 | job/42.json `words` (nacham, maas, kun); job/40.json `hard` | Repository; each reading in its holders' terms |
+| The epilogue mirroring the prologue; my servant Job four times (1:8); kun; the costly offering; the accused praying for the accusers; 22:30 fulfilled the other way; Elihu unmentioned | 7-9 | job/42.json `literary`, `cultural`, `words` (kun); job/22.json `christ` (verse 30 and 42:8); job/32.json `hard` | Repository |
+| Shevut and the restoration after exile; the relatives' return (19:13-19); the qesitah (Genesis 33:19; Joshua 24:32); double livestock (1:3), same children; the daughters named and their meanings; the inheritance beyond Numbers 27:1-11 | 10-17 | job/42.json `historical`, `cultural`, `words` (shevut) | Repository |
+| James 5:11; Genesis 25:8 and the phrase old and full of years | 10-17 | job/42.json `christ` (James 5:11), `literary` (Genesis 25:8); BSB | Repository; BSB text; a line the New Testament draws |
+| The hard note: the unease; an older story kept, or restoration as free gift after the demand was let go; God's freedom; the first children not erased or replaced; the doubled livestock and same number of children, an inference interpreters differ on; four generations; no promise of the same ending for every sufferer | 10-17 | job/42.json `hard` | Repository; each reading in its holders' terms |
+| The child-loss line | 10-17 | 2-samuel/plain/12.json (15-25), 1-kings/plain/3.json (16-28), 2-kings/plain/4.json (18-37) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 42: the deep note's lines to Christ (Luke 23:34, Hebrews 7:25 and the resurrection as vindication beside Job's prayer and restoration; the note says the New Testament does not call Job a prophecy of Christ); the Greek postscript identifying Job with Jobab of Genesis 36:33 (later speculation, not needed).
+
+## The plain notes on Job 38 (2026-11-25)
+
+`client/public/bible/notes/job/plain/38.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The awaited moment; 31:35; the friends and Elihu speaking for God; the covenant name for the first time since the prologue; the courtroom turned inside out and girding the loins; the world as a building and the sea behind doors; etsah; searah overwhelming and personal | 1-11 | job/38.json `story`, `cultural`, `historical`, `words` (searah, etsah, yasad) | Repository |
+| 2 Kings 2:11 | 1-11 | job/38.json `words` (searah); BSB | Repository; BSB text |
+| The hard note: the critics' reading of raw power; not hostile; the shared premise corrected; 42:7; reasons not unknowable in principle; Job did not know them, God did, meeting God enough; the test never mentioned; no theory, a God who comes; no one to use it to silence a sufferer | 1-11 | job/38.json `hard`, `story` | Repository; each reading in its holders' terms |
+| The order through the world; dawn as seal and shaken cloth; verse 26 and places no human goes; the world larger than human interests; the irony of verse 21 | 12-30 | job/38.json `literary`, `cultural` | Repository |
+| Kimah, kesil, the Bear uncertain, mazzaroth debated; hunger first; the raven unclean (Leviticus 11:15) and fed; questions not to humiliate | 31-41 | job/38.json `historical`, `cultural`, `words` (kimah); the notes on Job 38:41 and the raven | Repository |
+| Amos 5:8 (in part: the verse holds a dash); Psalm 147:9 | 31-41 | job/38.json `words` (kimah: Amos 5:8); the notes setting Psalm 147:9 beside Job 38:41; BSB | Repository; BSB text |
+
+Cut in chapter 38: the deep note's lines to Christ (John 1:3, Colossians 1:16-17, Luke 12:24 and the stilling of the storm; the New Testament does not quote Job 38); the BSB's word ‘journeyed’ in verse 16 is not quoted.
+
+## The plain notes on Job 39 (2026-11-25)
+
+`client/public/bible/notes/job/plain/39.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first speech continuing; the narrowed focus; still questions, still silent on the test; the ibex near En Gedi; the onager; re'em as the aurochs, extinct, and the unicorn of older Bibles; the wild chosen over the tame; freedom as God's gift; the months counted | 1-12 | job/39.json `story`, `historical`, `cultural`, `words` (reem, pere) | Repository |
+| Genesis 16:12 | 1-12 | job/39.json `words` (pere); BSB | Repository; BSB text |
+| The ostrich as humor and delight, and the modern naturalists' note; the war horse, chariots and mounted troops, the great powers; the shofar | 13-25 | job/39.json `cultural`, `historical`, `literary`, `words` (renen) | Repository |
+| Deuteronomy 17:16 (in part: the verse holds an inner quotation) | 13-25 | job/39.json `historical`; BSB | Repository; BSB text |
+| Nesher as eagle or griffon vulture; the pairs; the stark close; 40:1-2 next | 26-30 | job/39.json `words` (nesher), `literary`, `story` | Repository |
+| Isaiah 40:31 | 26-30 | job/39.json `words` (nesher: Exodus 19:4; Isaiah 40:31); BSB | Repository; BSB text |
+| The hard note: enlarging Job's world; the wild order beyond reward and punishment; the tenderness of God's attention for a bereaved father | 26-30 | job/39.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 39: the deep note's line to Christ (Matthew 10:29-31; the note says the chapter is not a prophecy and should not be read as allegory).
+
+## The plain notes on Job 40 (2026-11-25)
+
+`client/public/bible/notes/job/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The exchange between the two speeches; yissor and its irony; the hand over the mouth as silence before a greater (29:9); the honor culture; no confession of the friends' charges; verse 5 paraphrased (it holds a dash) | 1-5 | job/40.json `literary`, `cultural`, `words` (yissor), `hard` | Repository |
+| The same opening; mishpat and verse 8; kingship, majesty and humbling the proud; the right hand; justice as God's work | 6-14 | job/40.json `literary`, `cultural`, `words` (mishpat, tsadaq) | Repository |
+| The hard note: a limited rebuke; verse 8; no charge of the friends' sins; the prologue's verdict kept; 42:7; the two reconciliations; protest not sin, judging God the line; silence and repentance as recognition | 6-14 | job/40.json `hard` | Repository; each reading in its holders' terms |
+| Behemoth the beast of beasts and the foremost of God's works; made along with Job; the hippopotamus, the Nile, Egyptian hunts; the Jordan as any surging river; power beyond Job's reach | 15-24 | job/40.json `historical`, `literary`, `words` (Behemoth) | Repository |
+| Proverbs 8:22 | 15-24 | job/40.json `words` (Behemoth: Proverbs 8:22); BSB | Repository; BSB text |
+| The hard note: hippopotamus; elephant or water buffalo; a real animal in mythic language; the dinosaur proposal and the tail; no side | 15-24 | job/40.json `historical` | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 40: the deep note's lines to Christ (Philippians 2:6-11 and Luke 1:51-52 beside God's challenge; the note calls the connection thematic).
 ## 1 Chronicles' book page (teaching introduction, 2026-11-25)
 
 Every claim in `client/public/bible/notes/1-chronicles/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each) and by `validate-bible-notes.mjs`. The checks read only the new `teaching` layer; the older fields of the introduction (which use ‘blesses’ and ‘we’, and quote Hebrews 1:5 in its 2 Samuel wording) are not this run's work and were left as they are.
