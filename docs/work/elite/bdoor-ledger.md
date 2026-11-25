@@ -20882,3 +20882,29 @@ Cut in chapter 9: the deep note's lines to Christ beyond the stated readings. No
 | Judges 6:23; Joshua 1:9 | 15-21 `later` | BSB | BSB text |
 
 Cut in chapter 10: Ephesians 6:12, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on Daniel 11 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 11:1-4 | 1-4 | BSB | BSB text |
+| The Book of Truth; the closest detail in the Old Testament; verses 2 to 35 matching the history; Xerxes I and 480 BC; Alexander and 323 BC; the narrowing focus | 1-4 | daniel/11.json `story`, `historical` | Repository |
+| Daniel 8:8; Esther 1:2 | 1-4 `later` | BSB | BSB text |
+| 11:5-20 | 5-20 | BSB | BSB text |
+| Ptolemies and Seleucids; Seleucus I; Berenice about 252 BC and her murder with her child; Ptolemy III; Raphia 217 BC; Panium about 200 BC; Cleopatra I; 190 and 187 BC; Seleucus IV and the temple funds (2 Maccabees 3) | 5-20 | daniel/11.json `historical` | Repository |
+| Isaiah 10:12; Psalm 9:10 | 5-20 `later` | BSB | BSB text |
+| 11:21-28 | 21-28 | BSB | BSB text |
+| Antiochus IV from 175 BC; Onias III; 169 BC and the temple plundered; lies at one table; the appointed time | 21-28 | daniel/11.json `historical` | Repository |
+| Daniel 8:23; Psalm 33:10 | 21-28 `later` | BSB | BSB text |
+| 11:29-35 | 29-35 | BSB | BSB text |
+| 168 BC and the Roman envoy; Kittim as the Romans; 167 BC and 1 Maccabees 1:54; the Maccabean little help; the maskilim; the cost | 29-35 | daniel/11.json `historical`, `words` | Repository |
+| Matthew 24:15 (the phrase inside the BSB's inner quotation marks); Zechariah 13:9 | 29-35 `later` | BSB | BSB text |
+| The hard note: refining under persecution; no pleasure in suffering; the persecutor not right; not a word to say to another sufferer; no reader's suffering read as a test failed | 29-35 `hard` | daniel/11.json `summary`; the brief | Repository |
+| 11:36-45 (11:38's clauses either side of the dash) | 36-45 | BSB | BSB text |
+| The line of proud rulers; the end with no one to help; verses 40 to 45 and Antiochus's death in Persia in 164 BC | 36-45 | daniel/11.json `hard`, `summary` | Repository |
+| 2 Thessalonians 2:4; Isaiah 14:14 | 36-45 `later` | BSB | BSB text; the wording only |
+| The hard note: the critical, traditional (Jerome) and dispensational readings; no present-day person, nation or movement named | 36-45 `hard` | daniel/11.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 11: nothing beyond the policy on lines to Christ. The scan's list of royal names with numerals was extended (Xerxes, Seleucus, Ptolemy, Antiochus, Cleopatra and others) so that a numeral I is not read as a first-person word. No care line is needed in this chapter.
