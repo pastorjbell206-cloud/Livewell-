@@ -20225,3 +20225,19 @@ Cut in chapter 20: the deep note's lines to Colossians 2:15 and 1 Corinthians 15
 | The hard note: Elijah's letter; 2 Kings 3:11 and 2 Kings 2; the three explanations; the open question | 12-20 `hard` | 2-chronicles/21.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 21: the graphic details of 21:15 and 21:19, named and not described. No other line to Christ beyond Matthew 1:8.
+
+## The plain notes on 2 Chronicles 22 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 22:1 paraphrased; 22:2 (its sentence on Athaliah); 22:3; 22:4 (its phrase); the war and the visit (22:5-6); 22:7 (its first clause and its last phrase); Jehu and the princes (22:8); the capture and burial (22:9) and the people's words | 1-9 | BSB | BSB text |
+| The line at the edge; about 841 BC; 2 Kings 9-10 (Elisha, Jehu, Joram, Ahaziah, Jezebel); Hazael; the Black Obelisk; the Tel Dan inscription, the 1990s, damaged names, the differing claim, the earliest reference to the house of David; 2 Kings 9:27-28 and the two readings; etsah three times; Omri and daughter as descendant; tevusah | 1-9 | 2-chronicles/22.json `story`, `historical`, `cultural`, `literary`, `words` (etsah, tevusah) | Repository |
+| Hosea 1:4 (God's words) | 1-9 | BSB | BSB text |
+| The hard note: Jehu's violence; Chronicles and 2 Kings (1 Kings 21:17-24); Hosea 1:4; the two readings; not a model | 1-9 `hard` | 2-chronicles/22.json `hard` | Repository; the readings in their holders' terms |
+| 22:10; Jehoshabeath and Joash (22:11); 22:12 | 10-12 | BSB | BSB text |
+| The only non-Davidic ruler; the queen mother; usurpers' strategy; Jehosheba in 2 Kings 11:2; the priest's wife only in Chronicles; side rooms; satar; the hidden child and chapter 23 | 10-12 | 2-chronicles/22.json `story`, `cultural`, `literary`, `words` (satar, zera) | Repository |
+| 2 Kings 11:2 (its second sentence) | 10-12 | BSB | BSB text |
+
+Cut in chapter 22: the deep note's pattern from Joash to Matthew 2:13-16, which the deep note itself says Matthew does not cite. No care line is needed in this chapter.
