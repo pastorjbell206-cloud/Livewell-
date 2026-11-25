@@ -8854,3 +8854,198 @@ The earlier runs' helper scripts were gone, so the 1 Kings run's checks were cop
 ### Next
 
 The rest of the Old Testament from 2 Kings, 1 and 2 Chronicles and Job onward, as James's order runs. One small thing for that run: the four cross-book indexes (`client/public/bible/explore/`) are now built from the book pages, so each new book page needs `build-bible-timeline-index.mjs`, `-atlas-`, `-words-` and `-hard-index.mjs` rerun in its own commit.
+## 2 Kings: the book page and every chapter (2026-11-25)
+
+2 Kings is complete: a teaching introduction on the book page and all 25 chapters in plain words. It follows the shape of 1 Kings. Each passage's third part is `later`. Each chapter note gained only `"plain": true` at its end. There is one commit for the book page and one per chapter, each with its ledger rows and only that chapter's files. While this work ran, the shared branch gained four new content gates: the Bible explore indexes (timeline, atlas, key words and hard passages), built from the book pages. They were rebuilt to take in this book page in their own commit, and again at the merge that brought in Nehemiah's.
+
+### The book page (`/study/bible/2-kings`, same address)
+
+The book page is data only, in `client/public/bible/notes/2-kings/intro.json`, field `teaching`, added at the end of the file. It has thirteen parts (4,505 words):
+- 2 Kings in a minute
+- Where it sits in the story
+- Who wrote it, and when
+- Empires, dates, and what has been dug up
+- How 2 Kings is built
+- Elijah's cloak, and Elisha's wonders
+- Jehu, Jezebel, and a hidden king
+- The north comes apart
+- Hezekiah and the Assyrian siege
+- Manasseh and Josiah
+- The fall of Jerusalem, and a king at the table
+- How the New Testament reads 2 Kings
+- How to read 2 Kings
+
+After the parts come 32 hard passages, 15 key words, a timeline of 19 entries, one map and eleven Go deeper pages, all live:
+- the guides to the kings, the empires, reading the stories and reading the prophets
+- the doctrine studies of idolatry, judgment, exile, and repentance
+- the context page on the violence of the Old Testament
+- the live archaeology question
+- the Find Help page ‘Someone I love has died’
+
+Dates follow the site's guide to the kings (Thiele), and the page says where the reckonings differ:
+- Jehu in 841 BC, with Albright's 842.
+- Samaria in 723 or 722 BC, with 722 or 721 in most histories.
+- Hezekiah 716 or 715 to 687 or 686 BC, with Galil's 726 to 697.
+- Jerusalem in 586 BC, with 587, which many historians prefer.
+
+What has been dug up is given as the introduction and the guide give it: the Mesha Stele, the Black Obelisk, the Tel Dan Stele, Sennacherib's annals and the Lachish reliefs, the Siloam inscription, the Babylonian Chronicle and Jehoiachin's ration tablets. Each is paraphrased, not quoted.
+
+The map uses the `canaan` frame and draws nine places, each at a point already used on the site:
+- Jerusalem
+- Bethel
+- Jericho
+- the Jordan
+- Samaria, as a region
+- Dothan, at the point the Genesis map uses
+- Gilead, as a region
+- Damascus
+- Beersheba
+
+The map note says what is left off: Gilgal, Shunem, Jezreel, Megiddo, Lachish, Ekron, Moab and Edom, and Assyria, Babylon and Egypt. It says no borders are drawn, and that the map makes no claim about any border today. `teaching.test.tsx` lists 2 Kings among the books with a teaching guide, and its frame test names `canaan`. No other code changed.
+
+### Chapters 1 to 25 in plain words
+
+Words were counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words | Chapter | Passages | Plain words |
+|---|---|---|---|---|---|
+| 2 Kings 1 | 2 | 1,267 | 2 Kings 14 | 3 | 1,472 |
+| 2 Kings 2 | 3 | 1,662 | 2 Kings 15 | 3 | 1,598 |
+| 2 Kings 3 | 3 | 1,659 | 2 Kings 16 | 3 | 1,486 |
+| 2 Kings 4 | 4 | 2,052 | 2 Kings 17 | 3 | 1,953 |
+| 2 Kings 5 | 4 | 2,102 | 2 Kings 18 | 3 | 1,589 |
+| 2 Kings 6 | 3 | 1,635 | 2 Kings 19 | 3 | 1,644 |
+| 2 Kings 7 | 3 | 1,453 | 2 Kings 20 | 2 | 1,423 |
+| 2 Kings 8 | 3 | 1,562 | 2 Kings 21 | 3 | 1,543 |
+| 2 Kings 9 | 3 | 1,833 | 2 Kings 22 | 3 | 1,532 |
+| 2 Kings 10 | 3 | 2,033 | 2 Kings 23 | 3 | 1,789 |
+| 2 Kings 11 | 3 | 1,466 | 2 Kings 24 | 3 | 1,345 |
+| 2 Kings 12 | 3 | 1,425 | 2 Kings 25 | 4 | 1,937 |
+| 2 Kings 13 | 3 | 1,478 | **Total** | **76** | **40,938** |
+
+### The hard places, and how they are stated
+
+- **The fire on the captains (1):** the king's assault on God's messenger. The New Testament refuses the model (Luke 9:54-55). No warrant to call down judgment on anyone.
+- **The bears (2:23-24):** the readings are stated fairly. Young men or children; a mob from the calf shrine; the covenant warning. Others still find the punishment severe, and the narrator gives no comment. Mauled, not said to be killed. The LORD's judgment rather than revenge, with readers differing on how much that helps. These notes do not settle it. No warrant to harm, curse or wish harm on anyone, with Jesus' rebuke.
+- **Mesha's sacrifice (3:27):** named, not described. Three readings of whose fury it was. The line for anyone not protected by a parent.
+- **The Shunammite's son (4):** not lingered on. No rule that every loss has a visible purpose, or that faith brings a child back. The child-loss line and the grief line.
+- **Naaman's bow in Rimmon's temple (5),** in each reading's own terms. **Gehazi's sentence on his descendants (5):** with Ezekiel 18:20 and the care line against reading illness as punishment.
+- **The famine in Samaria (6:24-31):** the mothers' pact is named but not quoted or described. No key for reading any people's suffering now. The grief line.
+- **The officer trampled (7),** with the same care line.
+- **Hazael and Elisha's word (8):** two readings. The cruelties of 8:12 are not quoted.
+- **Jehu (9 to 10):**
+  - The Tel Dan Stele, with three explanations.
+  - The coup told without detail.
+  - Jezebel's death told in a few verses and not lingered on. Her name in Revelation is a warning about teaching, not a label for any woman. The line for anyone being hurt.
+  - Ahab's sons, with the line for anyone not protected by a parent.
+  - The killing of Baal's worshipers. Israel as a nation under God's direct rule; the church never given the sword; Luke 9:55. No warrant to harm, threaten or silence anyone over religion.
+  - Hosea 1:4 against 10:30, in three readings. The verdict is mixed; being used by God does not make anyone righteous; no warrant for violence in God's name.
+- **Athaliah (11):** named in one verse, with the line for anyone not protected by a parent. Her death and Mattan's told in single verses. No warrant to overthrow a ruler by force in God's name.
+- **Joash in Kings and Chronicles (12).**
+- **Elisha's bones and arrows (13).**
+- **Jeroboam II's prosperity (14):** prosperity is not proof of God's approval.
+- **Azariah's illness (15),** with the line that sickness is not a failure of faith. **Menahem's atrocity (15):** named in one line, not described.
+- **Ahaz's sacrifice of his son (16:3):** named as the text names it, never described, with the line for anyone not protected by a parent. Isaiah 7:14, with the debated word, and Matthew 1:23.
+- **The fall of Samaria (17):**
+  - A theological reading of a political disaster.
+  - Israel's own Scripture, for its own children, with its harshest words aimed at its own nation.
+  - No warrant to call any people's suffering, then or now, deserved.
+  - The warning is for oneself, not to point at others.
+  - Never a reason to blame the Jewish people.
+  - Luke 13. The disaster line.
+  - The Samaritans' own account, set beside the chapter's.
+- **Hezekiah's tribute (18),** read two ways.
+- **The 185,000 (19):** three readings. No celebration of the dead.
+- **Hezekiah's healing and his answer to Isaiah (20).** Not every prayer for healing brings healing. The illness line.
+- **Manasseh (21:6):** child sacrifice named, never described, with the line for anyone not protected by a parent. Chronicles' account of his repentance. No one punished for another's guilt.
+- **Huldah's promise and Josiah's death (22).**
+- **Josiah's killing of the priests (23:20):** told in a verse. No warrant to harm, threaten or silence anyone over religion.
+- **‘Unwilling to forgive’ (24:4):** the verdict on Jerusalem, not the limits of mercy. No warrant to call suffering deserved; no blame on the Jewish people.
+- **The fall of Jerusalem (25):**
+  - Lamentations and Psalm 89 beside Kings' own answer.
+  - The promise to David not withdrawn.
+  - Judah's own Scripture judging its own kings.
+  - No warrant to call any people's suffering deserved.
+  - Never a reason to blame the Jewish people.
+  - The disaster line.
+
+No note says anything about any person's eternal state, and nothing is said in contempt of any people.
+
+### Care lines
+
+Each is reused whole, word for word. Each names Find Help, and none has a phone number.
+
+| Care line | Where it is used |
+|---|---|
+| For anyone not protected by a parent | The book page; chapters 3, 10, 11, 16 and 21 |
+| For anyone who has lived through a disaster (from Genesis 6) | The book page; chapters 17 and 25 |
+| For the loss of a child | Chapter 4 |
+| The grief line | Chapters 4 and 6 |
+| Against reading a sudden death, an accident or an illness as punishment | Chapters 5 and 7 |
+| For anyone being hurt at home, at work or in a church (from the wisdom entries on toxic relationships) | Chapter 9 |
+| That sickness is not a failure of faith (from the 2 Corinthians 12 and Revelation 2 notes) | Chapters 15 and 20 |
+
+No new care sentence stands in the data.
+
+### Cut or narrowed
+
+Each cut is recorded in the ledger under its chapter.
+
+Lines that the deep notes draw to Christ, but the New Testament does not, were left out throughout. Among them:
+- Elijah's ascension set beside Acts 1 and 2
+- the feeding of the crowds and the raising at Nain beside chapter 4
+- Gethsemane and Emmaus beside chapter 6
+- Herod beside Athaliah
+- Jesus' body as the temple beside chapters 12 and 25
+- the mocking at the cross beside chapter 18
+- Hebrews 5:7 beside Hezekiah
+
+The New Testament's own lines were kept:
+- Luke 4:27
+- Luke 1:17
+- Matthew 3:4
+- Luke 9:54-55
+- Mark 9:4
+- Hebrews 11:35
+- Matthew 1:9-12 and 1:17
+- Revelation 2:20
+- John 3:14
+- Matthew 4:15-16
+- Matthew 1:23
+- Acts 8:5
+- Luke 11:51
+- Romans 9:27
+
+Verses with a dash or an inner quotation in the BSB are quoted only in part or are paraphrased. Short exclamations are paraphrased or set as Scripture in double quotes. The violent verses are named and not quoted: 6:28-29, 8:12, 9:33-35, 10:7 and 25, 15:16, 18:27 and 25:7. Unsourced sentences caught before commit were cut.
+
+### Sources
+
+All sources are in `bdoor-ledger.md`, with a table for the book page and for each chapter. No web searches were made.
+
+### What was run
+
+The checks were the 1 Kings scripts, copied to `/home/user/bdoor-scratch/2kgs/` and pointed at 2 Kings:
+- the strict, single-quote, cited-verse and nested-quote checks
+- the forbidden-word, signposting and first-person scans
+- the care-line check
+- the word counter
+
+After the book page and after each chapter:
+- validate-bible-notes
+- the checks above (0 problems each)
+- no-emdash
+- the search-index and passage-index checks
+- validate-politics
+
+Each exited 0. After the book page, `teaching.test.tsx` passed (33 of 33). After chapter 5: the 54 content gates (54 of 54), `pnpm check` (exit 0) and `pnpm test` (198 files, 2,477 tests).
+
+The first push covered the book page and chapters 1 to 12. The shared branch moved three times during its gates, so the sequence was run again after each merge. The four new explore-index gates failed once, before their indexes were rebuilt. On the final merged tree:
+- the 58 content gates (58 of 58)
+- `pnpm check` (exit 0)
+- `pnpm test` (199 files, 2,498 tests passed, with 7 files and 73 tests skipped)
+- `pnpm build`, sitemap, prerender and `pnpm audit:canonicals` (each exit 0, with 0 canonical failures)
+- the served build on port 4603 at 390 and 1440:
+  - the book page: 13 of 13 parts and every hard passage, key word, timeline entry, the map note and Go deeper page present; 11 map labels with no overlap; no sideways scroll; no console errors
+  - chapters 1 to 12 at both widths: 36 passages and 165 fields matched to the data
+
+Chapters 13 to 25 were drafted and checked in a staging folder while the heavy commands for the first push waited for the machine's load to fall. They were then written, checked and committed in order. The final gates are recorded in the hand-back.
