@@ -17936,3 +17936,21 @@ Cut in chapter 11: the deep note's lines to Christ (the heavenly Jerusalem in He
 | Numbers 18:21; Malachi 3:10 | 44-47 | nehemiah/13.json `historical` (Malachi 3:8-10); BSB | Repository; BSB text |
 
 Cut in chapter 12: the deep note's lines to Christ (John 2:19-21, Revelation 21:22, Hebrews 7:23-25; the note calls them thematic); Psalm 122 (not needed).
+
+## The plain notes on Nehemiah 13 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The book's honest close; the promises of chapter 10 broken; the thirty-second year, about 433 BC, the absence of unknown length; king of Babylon as a Persian title; the storerooms as holy space given to an opponent; the Levites without income; Eliashib probably the high priest of 3:1, or another priest | 1-14 | nehemiah/13.json `story`, `historical`, `cultural` | Repository |
+| Deuteronomy 23:4; Malachi 3:10 | 1-14 | nehemiah/13.json `cultural` (Deuteronomy 23:3-5), `historical` (Malachi 3:8-10); BSB | Repository; BSB text |
+| The exclusion of all of foreign descent and Ruth: faith the difference most often named; the questions about how the exclusion was applied; Isaiah 56:3-7; Nehemiah acting on the law and Ruth remembered | 1-14 `hard` | nehemiah/13.json `hard`; ruth/intro.json `teaching` (moabite) | Repository; the readings in their holders' terms |
+| The Sabbath as a mark of identity, ten times in the chapter; the men of Tyre; the gates shut at dusk; chalal, to profane; the prayer for mercy | 15-22 | nehemiah/13.json `cultural`, `words` (shabbat, chalal) | Repository |
+| Jeremiah 17:22; Nehemiah 10:31 | 15-22 | BSB (Jeremiah 17:21-22 on the Sabbath, cited in the Mark notes); nehemiah/13.json `story` | Repository; BSB text |
+| The children's language and the loss of Scripture and worship; Solomon's example; the high priest's grandson and Sanballat; riv as a formal charge; the book's unresolved ending | 23-31 | nehemiah/13.json `cultural`, `historical`, `words` (riv, nokhri), `literary` | Repository |
+| Malachi 2:8; Ezra 9 and 10 | 23-31 | nehemiah/13.json `historical` (Malachi 2:10-16), `doctrines` (Malachi 2:4-8); BSB | Repository; BSB text |
+| The beating told without comment; description is not recommendation; the two readings (lawful harsh discipline; zeal beyond what was right, ending in a plea for mercy); no side; no warrant today to strike, shame or harm anyone | 23-31 `hard` | nehemiah/13.json `hard`; bible/guides/reading-narrative.json | Repository |
+| The care line (‘If you are being hurt, at home, at work or in a church, tell someone you trust and get help...’ to ‘...lists places to turn.’) | 23-31 `hard` | deuteronomy/plain/5.json (16-21), 13.json, 21.json, 22.json and 27.json; exodus/plain/21.json (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 13: the deep note's lines to Christ (John 2:13-17, Hebrews 7:26, Mark 2:28, Ephesians 2:11-22; the note calls them the New Testament's own reading of the story, not drawn to this chapter); the means of the harm in verse 25 beyond the text's own words (not lingered over); a draft sentence that began to quote 13:17 across its dash (rewritten before commit).
