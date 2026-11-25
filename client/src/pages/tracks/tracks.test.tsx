@@ -137,6 +137,24 @@ describe("/tracks", () => {
     expect(await screen.findByRole("alert")).toHaveTextContent("The list of tracks didn't load.");
     expect(screen.getByRole("button", { name: "Try again" })).toBeInTheDocument();
   });
+
+  it("is held, before it loads, with each track's description whole and at its card's size", () => {
+    // The prerendered list gave the description cut short, at 15px; the
+    // card's own, set larger when the page arrived, was the page's largest
+    // paint, counted after the app's code (Lighthouse on a phone, 2026-11-25).
+    const ROOT = path.resolve(__dirname, "../../../..");
+    const src = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
+    const listing = src.slice(src.indexOf('"/tracks": { label: "Tracks"'), src.indexOf('"/study/plans": {'));
+    expect(listing).toContain("{ title: t.title, href: `/tracks/${t.slug}`, blurb: t.subtitle, dek: true }");
+    expect(src).toContain('it.dek ? `<p class="pre-dek">${escapeHtml(it.blurb)}</p>`');
+    const rule = (css: string, selector: string) => css.slice(css.indexOf(`${selector}{`)).split("}")[0];
+    const held = rule(fs.readFileSync(path.join(ROOT, "client/src/index.css"), "utf8"), ".prerender-content .pre-dek");
+    const card = rule(fs.readFileSync(path.join(__dirname, "tracks.css"), "utf8"), ".tk-track__dek");
+    const px = (r: string) => Number(r.match(/font-size:(\d+(?:\.\d+)?)px/)?.[1]);
+    const lh = (r: string) => Number(r.match(/line-height:(\d+(?:\.\d+)?)/)?.[1]);
+    expect(px(held)).toBe(px(card));
+    expect(lh(held)).toBeGreaterThanOrEqual(lh(card));
+  });
 });
 
 describe("/tracks/:slug", () => {

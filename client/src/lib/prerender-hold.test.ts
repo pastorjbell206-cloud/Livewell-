@@ -1,5 +1,9 @@
+import fs from "node:fs";
+import path from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { HELD_ID, WAIT_CLASS, holdPrerenderedPage, pageIsReady } from "./prerender-hold";
+
+const ROOT = path.resolve(__dirname, "../../..");
 
 function setPage(withText: boolean) {
   document.body.innerHTML = `<div id="root"><div id="lw-shell">
@@ -44,6 +48,29 @@ describe("holdPrerenderedPage", () => {
     expect(document.getElementById(HELD_ID)).toBe(shell);
     expect(shell.nextElementSibling).toBe(root);
     expect(root.classList.contains(WAIT_CLASS)).toBe(true);
+  });
+
+  it("is written before #root on every held page, /downloads and /start included, so its text is painted once", () => {
+    // Lifted out of #root when the app started, the text was painted again,
+    // and that second paint, after the app's code, was the largest
+    // (Lighthouse on a phone, 2026-11-25: /downloads 4.3 s, /start 3.5 s).
+    const src = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
+    expect(src).not.toMatch(/SHELL_STAYS_IN_ROOT/);
+    expect(src).toMatch(/if \(body && !isHome\) html = shellBeforeRoot\(html\);/);
+  });
+
+  it("preloads none of the page's own code on a page that opens on a picture, as /downloads does", () => {
+    // A picture is the page's largest paint, and Lighthouse counts every file
+    // fetched before it is drawn: preloaded from the head, the page's two dozen
+    // code files arrived first (600 ms of a phone's largest paint, 2026-11-25).
+    const src = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
+    const rule = src.match(/const opensOnPicture = \/(.+)\/\.test\(bodyHtml\);\s*const preloads = isHome \|\| opensOnPicture \? "" : chunkPreloads\(/);
+    expect(rule).not.toBeNull();
+    const opensOnPicture = new RegExp(rule![1]);
+    expect(opensOnPicture.test('<ul class="pre-shelf">\n<li><a href="/books/blind-spots"><img class="pre-cover" src="/covers/the-monster-in-the-mirror-400.webp" alt="" width="400" height="600" fetchpriority="high"></a></li>')).toBe(true);
+    expect(opensOnPicture.test('<article><h1>John 3</h1><p>Nicodemus came by night.</p><img src="/plates/a.webp" loading="lazy"></article>')).toBe(false);
+    // The Downloads page's held shelf writes its first cover as that picture.
+    expect(src).toMatch(/\$\{i === 0 \? ' fetchpriority="high"' : ' loading="lazy" decoding="async"'\}/);
   });
 
   it("never holds the front page, which has its own static hero", () => {

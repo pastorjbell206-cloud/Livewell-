@@ -18,7 +18,7 @@ import { Route, Switch } from "wouter";
 import fs from "node:fs";
 import path from "node:path";
 
-import { renderWithProviders, offlineFetch } from "@/test/harness";
+import { renderWithProviders, offlineFetch, untilDrawn } from "@/test/harness";
 import {
   EXPLORER_PROGRESS_KEY,
   readExplorerProgress,
@@ -121,11 +121,16 @@ const stored = () =>
  * is 3,300 elements, half of them drawings, so it is waited for by an id and
  * checked by role once; a role query polled over all of it as it loaded, and
  * page-wide ones after, cost seconds on a busy machine.
+ *
+ * Its data comes in a transition (ExplorerMap.tsx), which React draws in
+ * slices; a findBy or waitFor here ran its one-second clock between them and,
+ * on a busy machine, gave up before the map was drawn. untilDrawn waits for
+ * the drawing itself (test/harness.tsx). Everything the map shows comes with
+ * the same data, so a test that needs its cards or its sections waits here,
+ * then looks.
  */
 async function mapReady() {
-  await waitFor(() =>
-    expect(document.getElementById("stop-creation")).not.toBeNull()
-  );
+  await untilDrawn(() => document.getElementById("stop-creation") !== null);
   expect(
     within(document.getElementById("stop-creation")!).getByRole("heading", {
       name: "Creation",
@@ -234,14 +239,16 @@ describe("the map", { timeout: 15000 }, () => {
 
   it("switches the reading level in one tap and keeps it on this device", async () => {
     renderAt("/study/explorer");
-    await screen.findByText(INDEX.stops[0].summary.younger);
+    await mapReady();
+    expect(screen.getByText(INDEX.stops[0].summary.younger)).toBeInTheDocument();
     fireEvent.click(screen.getByRole("radio", { name: "Ages 12 to 16" }));
     expect(screen.getByText(INDEX.stops[0].summary.older)).toBeInTheDocument();
     expect(screen.queryByText(INDEX.stops[0].summary.younger)).toBeNull();
     expect(stored().level).toBe("older");
     cleanup();
     renderAt("/study/explorer");
-    await screen.findByText(INDEX.stops[0].summary.older);
+    await mapReady();
+    expect(screen.getByText(INDEX.stops[0].summary.older)).toBeInTheDocument();
     expect(screen.getByRole("radio", { name: "Ages 12 to 16" })).toBeChecked();
   });
 
@@ -282,7 +289,8 @@ describe("the map", { timeout: 15000 }, () => {
 
   it("lists the finished doctrine cards and names the rest without links", async () => {
     renderAt("/study/explorer");
-    await screen.findByRole("heading", { name: /^Why we believe/ });
+    await mapReady();
+    expect(screen.getByRole("heading", { name: /^Why we believe/ })).toBeInTheDocument();
     for (const c of INDEX.cards.filter(x => x.status === "finished"))
       expect(
         screen.getByRole("heading", { name: c.title })
@@ -310,7 +318,8 @@ describe("the map", { timeout: 15000 }, () => {
     expect(church).toContain("this card does not choose between them");
     expect(church).toContain("one Lord");
     renderAt("/study/explorer");
-    const card = await screen.findByRole("group", { name: "The church" });
+    await mapReady();
+    const card = screen.getByRole("group", { name: "The church" });
     expect(
       within(card).getByRole("link", { name: /What the church is/ })
     ).toBeInTheDocument();
@@ -350,13 +359,14 @@ describe("the map", { timeout: 15000 }, () => {
     expect(cross).toContain("is a lie that Christians must reject plainly");
     expect(cross).toContain("it is wrong to blame the Jewish people");
     renderAt("/study/explorer");
+    await mapReady();
     for (const name of [
       "God",
       "People made in God's image",
       "Sin",
       "The cross",
     ]) {
-      const card = await screen.findByRole("group", { name });
+      const card = screen.getByRole("group", { name });
       expect(within(card).getByRole("img")).toBeInTheDocument();
     }
     const cardCross = screen.getByRole("group", { name: "The cross" });
@@ -367,7 +377,8 @@ describe("the map", { timeout: 15000 }, () => {
 
   it("what the Explorer holds: every part counted, every film, card, thread and map two taps away at most", async () => {
     renderAt("/study/explorer");
-    const holds = await screen.findByRole("region", {
+    await mapReady();
+    const holds = screen.getByRole("region", {
       name: "What the Explorer holds",
     });
     const films = (INDEX.films ?? []).filter(f => f.status === "finished");
@@ -451,8 +462,9 @@ describe("the map", { timeout: 15000 }, () => {
     expect(life).toContain("a parent or another grown-up you trust");
     expect(life).not.toMatch(/suicide|rapture/i);
     renderAt("/study/explorer");
+    await mapReady();
     for (const name of ["The Holy Spirit", "The life to come"]) {
-      const card = await screen.findByRole("group", { name });
+      const card = screen.getByRole("group", { name });
       expect(within(card).getByRole("img")).toBeInTheDocument();
     }
     const scard = screen.getByRole("group", { name: "The Holy Spirit" });

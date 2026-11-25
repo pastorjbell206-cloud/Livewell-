@@ -9,6 +9,11 @@
  * Section 5.3). validate-needs.mjs fails CI when the committed index drifts
  * from what this script would write.
  *
+ * It also writes client/src/data/help-chips.json, the twelve needs /help
+ * shows under "What people bring most" (the first care pages by rank), so
+ * the page has them on its first paint and the crisis lines under them never
+ * move when the index arrives (Lighthouse on a phone, 2026-11-25).
+ *
  *   node scripts/build-needs-index.mjs
  */
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
@@ -52,8 +57,16 @@ export function serialize(index) {
   return JSON.stringify(index, null, 2) + "\n";
 }
 
+/** The needs most people bring, as /help shows them: the first twelve care pages by rank. */
+export function helpChips(index) {
+  return index.needs.filter((n) => n.page).slice(0, 12).map((n) => ({ slug: n.slug, title: n.title }));
+}
+
+export const HELP_CHIPS = join(ROOT, "client/src/data/help-chips.json");
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const index = buildNeedsIndex();
   writeFileSync(join(DIR, "index.json"), serialize(index));
+  writeFileSync(HELP_CHIPS, serialize(helpChips(index)));
   console.log(`needs index: ${index.needs.length} needs (${index.needs.filter((n) => n.page).length} care pages)`);
 }
