@@ -17599,3 +17599,27 @@ Cut in chapter 3: the deep note's contrast between Mesha's offering and God givi
 | Numbers 18:13 | 38-44 | 2-kings/4.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 4: the deep note's Gospel echoes (Jesus' feeding of the five thousand and John 6:9; the raising at Nain near Shunem; Jesus going beyond Elisha), which the note calls echoes rather than lines the New Testament draws to this chapter; the site's own notes on John 6, Mark 6, Matthew 14 and Luke 7 keep them where the Gospels are read. A sentence reading the woman's reply in 4:16 as fear of hoping, which no source states, was cut before it reached the repository. Three quotations (Psalm 68:5, Genesis 18:10, Hebrews 13:2) were first misquoted and corrected by the checks before they reached the repository.
+
+## The plain notes on 2 Kings 5 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 (two quotations); the captive girl (5:2); 5:3; the letter and the gift (5:5-6); 5:7 and the quarrel | 1-7 | 2-kings/5.json `summary`; BSB | Repository; BSB text |
+| From the prophet's circle to the enemy; Aram and Israel through the ninth century and the raiding; the kings unnamed, Jehoram about 852 to 841 BC; teshu'ah and the LORD directing Aram's victories; tsara'at's range, unclean in Israel, not barring command in Aram; greatness and smallness; the titles and one word; the talent about thirty kilograms; the kings helpless | 1-7 | 2-kings/5.json `story`, `historical`, `cultural`, `literary`, `words` (tsara'at, teshu'ah) | Repository |
+| 1 Samuel 2:6 | 1-7 | BSB | BSB text; set beside the king's own words in 5:7 |
+| 5:8; Naaman at the door; 5:10; the anger and 5:11 paraphrased; 5:12; the servants and 5:13 (quoted to its inner quotation); 5:14 | 8-14 | 2-kings/5.json `summary`; BSB | Repository; BSB text |
+| Healers in Naaman's world; the insult; Damascus's oasis, the Abanah as the Barada, the Pharpar; the muddy Jordan; going down and the little child, the same word as the girl; taher and Leviticus; given, not bought, through obedience; servants showing the way | 8-14 | 2-kings/5.json `historical`, `cultural`, `literary`, `words` (taher), `doctrines` (salvation) | Repository |
+| Mark 1:41 | 8-14 | 2-kings/5.json `christ` (Mark 1:40-42); BSB | Repository; BSB text; the Gospel's own words about Jesus, not a claim about this chapter |
+| 5:15; 5:16; refusing every pressing; 5:17 (the soil, and the vow quoted); 5:18 (its last words); 5:19 | 15-19 | 2-kings/5.json `summary`; BSB | Repository; BSB text |
+| Elijah's question answered from an unexpected direction; gods tied to lands; adamah, imperfect and real; Rimmon as Hadad, thunderer; the court ceremony | 15-19 | 2-kings/5.json `story`, `cultural`, `words` (adamah) | Repository |
+| Daniel 3:18; Luke 4:27 (quoted to its dash; Naaman named in paraphrase) and the anger at Nazareth (Luke 4:28-29) | 15-19 | 2-kings/5.json `hard` (Daniel 3), `christ` (Luke 4:27); luke/plain/4.json (22-30); BSB | Repository; BSB text; Jesus' own line |
+| The hard note: pastoral wisdom; a court duty; patience with a young faith; a customary farewell; the first commandment and Daniel's friends; not settled; Naaman's heart turned and compromise needing forgiveness | 15-19 `hard` | 2-kings/5.json `hard` | Repository; the readings in their holders' terms |
+| Gehazi's resentment and 5:20; Naaman stepping down; the invented visitors (5:21-22); two talents hidden (5:23-24); 5:25; 5:26; the sentence and his leaving white as snow (5:27, paraphrased) | 20-27 | 2-kings/5.json `summary`; BSB | Repository; BSB text |
+| The reversal of outsider and insider; the disease as frame (5:14, 27); the refusal protecting the gift; greed as idolatry; Gehazi faithful until now; his return in chapter 8 and the stories not in strict order | 20-27 | 2-kings/5.json `literary`, `story`, `words` (tsara'at), `doctrines` (salvation, idolatry); 2-kings/4.json `historical` (Gehazi in chapter 8) | Repository |
+| Matthew 10:8; Acts 8:20 | 20-27 | BSB; matthew/plain/10.json; acts/plain/8.json | BSB text; Scripture's own words on freely given gifts |
+| The hard note: Elisha's sentence without explanation; the lie and the transaction; Ezekiel 18:20; the text saying no more; no right to treat a person's or a family's illness as punishment for another's sin | 20-27 `hard` | 1-kings/plain/21.json (27-29, `hard`: Ezekiel 18:20 and no right to punish one for another); the brief | Repository |
+| The care line (‘A word of care. This story must not be used to say that a sudden death, an accident or an illness today is God's punishment...’ to ‘...lists places to turn.’) | 20-27 `hard` | 1-kings/plain/13.json and 17.json; acts/plain/5.json and the other files named in the 1 Kings rows | Reused whole, word for word; Find Help named |
+
+Cut in chapter 5: the deep note's application of Naaman's washing to baptism (which it calls a traditional application, not what the text claims), the gospel to the Gentiles as something the story anticipates, and the Samaritan who returned in Luke 17 set beside Naaman's return; Jesus' own line in Luke 4:27 is kept. Two sentences that no source states (the descendants as the language of a solemn sentence; Gehazi's list in 5:26 as what he meant to buy) were cut before they reached the repository.
