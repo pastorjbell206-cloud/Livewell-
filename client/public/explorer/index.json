@@ -1467,6 +1467,76 @@
       "book": "matthew"
     },
     {
+      "slug": "book-mark",
+      "title": "Mark: the story at a run",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The shortest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Mark as a whole book: its speed, its hinge at Peter's answer, the question of who Jesus is, the way of the cross, failure and grace, the centurion at the cross, and where to begin."
+      },
+      "mark": "book-mark",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "mark"
+    },
+    {
+      "slug": "book-luke",
+      "title": "Luke: good news for the lost",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The longest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Luke as a whole book: an orderly account, the long road to Jerusalem, good news to the poor, the lost found, prayer, salvation today, and where to begin."
+      },
+      "mark": "book-luke",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "luke"
+    },
+    {
+      "slug": "book-acts",
+      "title": "Acts: to the ends of the earth",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book that tells what happened after Jesus rose: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Acts as a whole book: Luke's second volume, the road from Jerusalem to Rome, the Holy Spirit, witness and its cost, a gospel that crosses every line, and where to begin."
+      },
+      "mark": "book-acts",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "acts"
+    },
+    {
+      "slug": "book-revelation",
+      "title": "Revelation: the Lamb on the throne",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The last book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Revelation as a whole book: letters to seven churches, a throne, a Lamb who was slain, the ways Christians read its visions, the making new of all things, and where to begin."
+      },
+      "mark": "book-revelation",
+      "frames": 7,
+      "stops": [
+        "new-creation"
+      ],
+      "cards": [],
+      "book": "revelation"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
