@@ -20386,3 +20386,22 @@ Cut in chapter 30: the deep note's lines to 1 Corinthians 5:7 and to the Gospels
 | The hard note on tithing: Genesis 14:20; 2 Corinthians 9:6-7; the shared ground; a second-order question | 11-21 `hard` | 2-chronicles/31.json `hard` | Repository; each view in its holders' terms |
 
 Cut in chapter 31: the deep note's lines to 1 Corinthians 9:13-14 and Acts 4:34-35, which do not cite this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 32 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 32:1; the springs and walls (32:2-5); 32:7; 32:8 (Hezekiah's words) | 1-8 | BSB | BSB text |
+| After all these acts; trust not naive; 701 BC; 2 Kings 18-20 and Isaiah 36-39; the annals and forty-six cities, no fall of Jerusalem; the Lachish reliefs in the British Museum; the tribute left out (2 Kings 18:14-16); water and siege; the Broad Wall; the Joshua echo; basar | 1-8 | 2-chronicles/32.json `story`, `historical`, `cultural`, `literary`, `words` (basar) | Repository |
+| Jeremiah 17:5 (God's words) | 1-8 | BSB | BSB text |
+| The officers and the taunt (32:9-19) paraphrased; 32:15 (its last sentence); 32:20; 32:21 (its first sentence); the sons (32:21); 32:22 | 9-23 | BSB | BSB text |
+| Fear as tactic; their own language; gods defeated with their nations; the answer of 32:19; natsal repeated; the LORD saved; Sennacherib killed in 681 BC and the compressed interval | 9-23 | 2-chronicles/32.json `historical`, `cultural`, `literary`, `words` (natsal) | Repository |
+| Isaiah 37:36 (its first sentence) | 9-23 | BSB | BSB text |
+| The hard note: the angel; 2 Kings 19:35; the annals' silence; royal records and defeats; disease; Herodotus' tradition, uncertain; the miracle reading; Jerusalem survived | 9-23 `hard` | 2-chronicles/32.json `hard` | Repository; the readings in their holders' terms |
+| 32:24; 32:25 (its first clause); 32:26 (its first clause); the wealth (32:27-29); 32:30 (its first sentence); 32:31; Isaiah's vision and the burial (32:32-33) | 24-33 | BSB | BSB text |
+| Pride, humbling and test; kana; the compression and Isaiah's vision; the illness as the occasion of prayer, the pride as the cause of wrath; the tunnel, the Siloam inscription of 1880; Merodach-baladan (2 Kings 20:12); the treasures shown; Babylon introduced | 24-33 | 2-chronicles/32.json `story`, `historical`, `cultural`, `words` (kana) | Repository |
+| 2 Kings 20:12 | 24-33 | BSB | BSB text |
+
+Cut in chapter 32: the deep note's lines to 1 John 4:4 and to the Son of David surrounded and mocked, which do not cite this chapter. No care line is needed in this chapter; Hezekiah's illness is not presented as a punishment.
