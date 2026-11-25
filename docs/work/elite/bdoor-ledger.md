@@ -18888,3 +18888,19 @@ Cut in chapter 10: the deep note's contrast between Saul and Jesus (Matthew 26:3
 | 2 Samuel 23:17 | 10-47 | 1-chronicles/11.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 11: the deep note's lines to Jesus as the good shepherd (John 10:11) and the cup of Mark 14:24 set against David's poured-out water, which it calls thematic. A first draft nested David's words inside a narrative quotation and used first-person glosses; all were rewritten before they reached the repository. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 12 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1 (to its first clause); 12:2 (its phrase); 12:8 (its last phrase); the Jordan in flood (12:15); 12:17 (David's first condition, the rest paraphrased); 12:18 (narrative and Amasai's words); Manasseh; 12:22 (its last words) | 1-22 | 1-chronicles/12.json `summary`, `outline`; BSB | Repository; BSB text |
+| Back in time; Benjamin, Gad, Judah and Manasseh; none in Samuel; Ziklag (1 Samuel 27:6-7); either hand (Judges 20:16); the spring flood; friends or spies; the conditional oath; Amasai's poem; lavash and Gideon; azar; shalom three times | 1-22 | 1-chronicles/12.json `story`, `historical`, `cultural`, `literary`, `words` (azar, shalom, lavash) | Repository |
+| Judges 6:34 (its first clause) | 1-22 | 1-chronicles/12.json `words` (lavash: Judges 6:34); BSB | Repository; BSB text |
+| 12:23; the tribes counted (12:24-37); 12:32 (its phrase); 12:38; three days and the provisions (12:39-40); 12:40 (its last sentence) | 23-40 | 1-chronicles/12.json `summary`; BSB | Repository; BSB text |
+| Hebron about 1003 BC; south to north; trickle to flood; the covenant meal; Issachar's understanding as a byword; Israel as it should be | 23-40 | 1-chronicles/12.json `historical`, `cultural`, `literary`, `words` (binah) | Repository |
+| Matthew 8:11 (from 'many') | 23-40 | 1-chronicles/12.json `christ` (Matthew 8:11); BSB | Repository; BSB text; Jesus' own words about a feast to come |
+| The hard note: about 340,000; Judah's 6,800 against Zebulun and the east; face value; eleph as unit; the Chronicler's emphasis; scholarly defenders; all Israel of one mind | 23-40 `hard` | 1-chronicles/12.json `hard` | Repository; the views in their holders' terms |
+
+Cut in chapter 12: the deep note's line to 1 Corinthians 12:3 and its reading of the gathering as a foreshadowing of the kingdom, which it calls thematic; Matthew 8:11 is quoted as Jesus' own words. A first draft misquoted Judges 6:34 and used a signposting phrase; both were corrected before they reached the repository. No care line is needed in this chapter.
