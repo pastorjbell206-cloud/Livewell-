@@ -20654,3 +20654,26 @@ Every claim in `client/public/bible/notes/daniel/intro.json`, field `teaching`. 
 | Go deeper: eleven pages | deeper | bible/guides/reading-apocalyptic.json, empires.json, between-the-testaments.json, reading-prophets.json; bible/doctrines.json (sovereignty, kingdom, messiah, hope, angels, idolatry); needs/suffering.json (page: true) | Repository; every page live |
 
 Cut from the book page: the introduction's lines to Christ beyond what the New Testament draws (the faithful servant pattern in chapter 1; the empty tomb as more than a noticed pattern). A sentence that the high priest heard Mark 14:62 as a claim to share God's throne was cut before commit, as unsourced. A sentence placing Daniel with the prophets in the Greek Old Testament was narrowed to English Bibles before commit (the repository's own note on chapter 7 does say the Greek Bibles place it after Ezekiel). No date is calculated from any number, and no person, nation or movement of the present day is identified with any figure.
+
+## The plain notes on Daniel 1 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2; the vessels to Shinar | 1-2 | BSB | BSB text |
+| Jehoiakim about 609 to 598 BC; Carchemish 605 and Nebuchadnezzar's accession; Jehoiakim's submission (2 Kings 24:1); hostages, 597 and 587 or 586; the Lord delivered; vessels as trophies and Marduk; Shinar and Babel | 1-2 | daniel/1.json `story`, `historical` | Repository |
+| Daniel 5:2-3; Ezra 1:7; 2 Chronicles 36:7 | 1-2 `later` | BSB | BSB text |
+| The hard note: Jeremiah 25:1 and the accession-year reckoning; the Babylonian Chronicle's silence; 2 Kings 24:1; compression in the critical view | 1-2 `hard` | daniel/1.json `hard` | Repository; both views in their holders' terms |
+| 1:3-7 (1:4's clause after the dash) | 3-7 | BSB | BSB text |
+| Hostage princes as imperial practice; the Chaldeans and their learning; learning not sin; the names and their meanings; Belteshazzar and Abednego; saris uncertain | 3-7 | daniel/1.json `historical`, `cultural`, `words` (saris) | Repository |
+| Isaiah 39:7; Jeremiah 29:7 | 3-7 `later` | daniel/1.json `words`; BSB | BSB text |
+| 1:8-16 | 8-16 | BSB | BSB text |
+| Ga'al; the three readings of the refusal; asking permission; nasah and Genesis 22:1; God's favor first (verse 9) | 8-16 | daniel/1.json `cultural`, `words` | Repository |
+| Leviticus 11:47; Genesis 41:39 | 8-16 `later` | BSB | BSB text |
+| The hard note: three readings, the text undecided; not a diet plan; where and how to draw a line | 8-16 `hard` | daniel/1.json `cultural` | Repository |
+| 1:17-21 | 17-21 | BSB | BSB text |
+| Natan three times; ten days and ten times; Cyrus and 539 BC; the quiet promise | 17-21 | daniel/1.json `literary`, `story` | Repository |
+| Genesis 41:38; Daniel 5:28 | 17-21 `later` | BSB | BSB text |
+
+Cut in chapter 1: the deep note's lines to Christ that the New Testament does not draw (Jesus under Rome and the faithful-servant pattern; 1 Corinthians 1:24 set beside the chapter). A line that Daniel later ate no meat only in mourning (10:3), drawn as an inference about his whole life, was cut before commit. No care line is needed in this chapter.
