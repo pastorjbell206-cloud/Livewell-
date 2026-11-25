@@ -1255,6 +1255,116 @@
     }
    ]
   },
+  "book-isaiah": {
+   "title": {
+    "file": "book-isaiah/title.mp3",
+    "hash": "54c0e757e4a6306376be",
+    "seconds": 3.25,
+    "bytes": 20084
+   },
+   "younger": [
+    {
+     "id": "holy",
+     "file": "book-isaiah/younger/01-holy.mp3",
+     "hash": "bdbd032b06db04837391",
+     "seconds": 27.1,
+     "bytes": 163220
+    },
+    {
+     "id": "layout",
+     "file": "book-isaiah/younger/02-layout.mp3",
+     "hash": "5b6f63d08db6cb92273f",
+     "seconds": 25.03,
+     "bytes": 150692
+    },
+    {
+     "id": "trust",
+     "file": "book-isaiah/younger/03-trust.mp3",
+     "hash": "e5cfedf5fa82c3058d97",
+     "seconds": 22.04,
+     "bytes": 132836
+    },
+    {
+     "id": "remnant",
+     "file": "book-isaiah/younger/04-remnant.mp3",
+     "hash": "05dcf8ce76833064d54b",
+     "seconds": 25.89,
+     "bytes": 155876
+    },
+    {
+     "id": "servant",
+     "file": "book-isaiah/younger/05-servant.mp3",
+     "hash": "88d027fd88b146ff0be4",
+     "seconds": 24.73,
+     "bytes": 148964
+    },
+    {
+     "id": "new",
+     "file": "book-isaiah/younger/06-new.mp3",
+     "hash": "7edd967644fb982e260c",
+     "seconds": 22.4,
+     "bytes": 134996
+    },
+    {
+     "id": "start",
+     "file": "book-isaiah/younger/07-start.mp3",
+     "hash": "09f63240cb9dd62f6a94",
+     "seconds": 22.2,
+     "bytes": 133844
+    }
+   ],
+   "older": [
+    {
+     "id": "holy",
+     "file": "book-isaiah/older/01-holy.mp3",
+     "hash": "d4349ac55fcfc77a2e79",
+     "seconds": 27.76,
+     "bytes": 167108
+    },
+    {
+     "id": "layout",
+     "file": "book-isaiah/older/02-layout.mp3",
+     "hash": "79c24eaa7cdfb85b3bae",
+     "seconds": 26.66,
+     "bytes": 160484
+    },
+    {
+     "id": "trust",
+     "file": "book-isaiah/older/03-trust.mp3",
+     "hash": "c7ab4e72d60aea86c8bc",
+     "seconds": 27.55,
+     "bytes": 165812
+    },
+    {
+     "id": "remnant",
+     "file": "book-isaiah/older/04-remnant.mp3",
+     "hash": "38ddde612d3477dccbc7",
+     "seconds": 23.24,
+     "bytes": 140036
+    },
+    {
+     "id": "servant",
+     "file": "book-isaiah/older/05-servant.mp3",
+     "hash": "370859576469d80aa332",
+     "seconds": 27.96,
+     "bytes": 168260
+    },
+    {
+     "id": "new",
+     "file": "book-isaiah/older/06-new.mp3",
+     "hash": "db268aeea162b0b1fb47",
+     "seconds": 26.4,
+     "bytes": 159044
+    },
+    {
+     "id": "start",
+     "file": "book-isaiah/older/07-start.mp3",
+     "hash": "23a4470d25d0e34308ca",
+     "seconds": 26.26,
+     "bytes": 158180
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

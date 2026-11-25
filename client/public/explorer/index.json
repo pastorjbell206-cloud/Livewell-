@@ -1432,6 +1432,23 @@
       "book": "proverbs"
     },
     {
+      "slug": "book-isaiah",
+      "title": "Isaiah: the Holy One who comforts",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The longest book of the prophets: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Isaiah as a whole book: its three parts, the Holy One of Israel, trust or ruin, judgment and a remnant, the king and the Servant, a new creation, and where to begin."
+      },
+      "mark": "book-isaiah",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "isaiah"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

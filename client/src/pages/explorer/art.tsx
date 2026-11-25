@@ -848,6 +848,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M40,84C44,70 52,60 60,54C66,48 68,44 70,38M52,84C54,72 60,64 66,58M40,84C32,72 24,66 14,64" />
     </>
   ),
+  /* Isaiah: a stump with one green shoot, and a gold sun rising behind it. */
+  "book-isaiah": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M52,40a14,14 0 1,0 28,0a14,14 0 1,0 -28,0Z" />
+      <path className="pl-l" d="M52,40a14,14 0 1,0 28,0a14,14 0 1,0 -28,0Z" />
+      <Shape d="M28,84C32,74 34,66 34,58H62C62,66 64,74 68,84Z" tone="c" off={1} />
+      <path className="pl-l" d="M46,58C45,46 47,36 50,26" />
+      <Shape d="M50,26c-9,-3 -14,3 -12,11c7,1 12,-3 12,-11ZM48,42c9,-5 16,0 15,8c-8,2 -14,-1 -15,-8Z" tone="g" off={0.6} />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

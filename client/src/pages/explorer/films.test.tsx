@@ -1717,6 +1717,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-romans",
     "book-exodus",
     "book-proverbs",
+    "book-isaiah",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2151,5 +2152,27 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
       /God will make you rich|always prosper|guarantee[sd]? (you|that)/i
     );
     expect(f.care).toBeUndefined();
+  });
+
+  it("Isaiah reads the Servant as the New Testament does, names the other reading, and blames no people", () => {
+    const f = filmFile("book-isaiah");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/exile.json"), "utf8")
+    ) as { care: string };
+    expect(f.care).toBe(stop.care);
+    const t = text(f);
+    expect(t).toContain(
+      "Jewish interpreters have often read the Servant as Israel. The New Testament sees all three in Jesus."
+    );
+    expect(t).toContain("it falls on Judah and on every nation alike");
+    expect(t).toContain("It is not where the book ends.");
+    expect(captions(f)).not.toMatch(
+      /\bJews?\b|God (rejected|abandoned|cast off)|deserved|punished them/i
+    );
+    // No date in the captions, and no battle or ruin in any picture.
+    expect(captions(f)).not.toMatch(/\bBC\b|\b[5-8]\d\d\b/);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /battle|ruin|burn|dead|blood|chains/i
+    );
   });
 });

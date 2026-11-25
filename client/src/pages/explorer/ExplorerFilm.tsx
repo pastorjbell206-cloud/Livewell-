@@ -323,6 +323,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Proverbs in seven moving pictures: what it is, a collection of collections, two ways, Wisdom's call, words, work and the poor, and how to read a proverb.",
     },
+    "book-isaiah": {
+      title: "Isaiah: the Holy One who comforts: Bible Explorer",
+      description:
+        "The whole book of Isaiah in seven moving pictures: what it is, its three parts, the Holy One of Israel, trust or ruin, judgment and a remnant, the king and the Servant, a world made new, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
