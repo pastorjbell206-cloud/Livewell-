@@ -20940,3 +20940,22 @@ Cut in chapter 4: the deep note's lines to Christ that the New Testament does no
 | Care line ("If you are suffering now, for your faith or for any other reason...") | 19-22 `hard` | Reused byte for byte from job/intro.json, read by script | care.mjs |
 
 Cut in chapter 5: the deep note's lines to Christ that the New Testament does not draw (Romans 11:1 as Paul's answer to verse 22; Jesus as heir of the fallen crown and bearer of the rejection). The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Proverbs 16 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 16:1; 16:2; 16:3; 16:4 (its first clause; the rest, after a dash, paraphrased); 16:5 paraphrased; 16:6; 16:8; 16:9 | 1-9 | BSB | BSB text |
+| Chapter 15's humility and chapter 16's reason; the start of the second half of the collection; verses 1 and 9 bracketing; freedom under God's rule (19:21; 20:24; 21:1); motives weighed; kipper and loving devotion between people | 1-9 | proverbs/16.json `story`, `literary`, `words` (kipper) | Repository |
+| Psalm 37:5; Jeremiah 10:23 | 1-9 | the chapter data's cross-references for 16:3 (Psalm 37:5) and 16:9 (Jeremiah 10:23); BSB | Repository; BSB text |
+| The hard note: the Reformed reading with Romans 9; God not the author of evil; the Hebrew ‘for its answer’ and the moral-order reading; what both readings deny (verse 5; the call to turn); a long-standing difference among faithful Christians | 1-9 `hard` | proverbs/16.json `hard` | Repository; each reading in its holders' terms; no side |
+| 16:10; 16:11; 16:12; 16:14; the king's favor (16:15); 16:16 (its first sentence, an exclamation in double quotes); 16:18; 16:19 | 10-19 | BSB | BSB text |
+| The king as highest judge; qesem and Deuteronomy 18:10; the condition of justice; the ideal missed; weights as a royal standard (2 Samuel 14:26); pride walking ahead of a fall | 10-19 | proverbs/16.json `historical`, `literary` | Repository |
+| Psalm 72:1 (after its heading); Obadiah 1:3 (its first clause) | 10-19 | the chapter data's cross-references for 16:10 (Psalm 72 by way of Isaiah 32:1 and Psalm 45:6) and 16:18 (Obadiah 1:3); BSB | Repository; BSB text |
+| 16:20; 16:23; 16:24; 16:25; the four troublemakers (16:27-30) with 16:28 quoted in part; 16:31; 16:32; 16:33 | 20-33 | BSB | BSB text |
+| 16:25 repeating 14:12; honor for old age (Leviticus 19:32); the warrior and the ruled temper; lots in the fold of a garment, the land divided (Joshua 18:10), the LORD's answer (Exodus 28:30); not an endorsement of gambling | 20-33 | proverbs/16.json `cultural`, `literary` | Repository |
+| Leviticus 19:32 (its first clause, in part); Acts 1:26 (its first clause and lot) | 20-33 | proverbs/16.json `cultural` (Leviticus 19:32; Acts 1:26); BSB | Repository; BSB text |
+
+Cut in chapter 16: the deep note's lines to Christ (Isaiah 9:7 and 11:1-5 with Jesus as the just king of verses 10-12; Acts 2:23 and the cross as the deepest example of verse 9; 1 Peter 2:23 beside verse 32; the note calls them connections of theme). No care line is needed in this chapter.
