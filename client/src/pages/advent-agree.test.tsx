@@ -13,7 +13,8 @@
  *   starts Tuesday, December 1, and nothing says "Day 1";
  * - from December 1 to 25 tonight is that day, named by its date, on Home,
  *   /family, the devotion page (marked Tonight), Tonight and the library;
- * - on December 26 no Advent reading is tonight's anywhere;
+ * - on December 26 no Advent reading is tonight's anywhere: the next week's
+ *   devotion is, begun early (lib/familyTable.ts afterChristmas);
  * - a reading's own page names it by its date on every night, and calls it
  *   Tonight only on that date;
  * - the library's Advent tab and the printed booklet both say the calendar
@@ -32,6 +33,7 @@ import path from "node:path";
 
 import { renderWithProviders, offlineFetch } from "@/test/harness";
 import type { FamilyIndex } from "@/lib/familyTable";
+import { FAMILY_WEEKS } from "@/lib/familyYear.generated";
 import Home from "./Home";
 import Family from "./Family";
 import FamilyDevotions from "./FamilyDevotions";
@@ -47,6 +49,8 @@ const INDEX: FamilyIndex = JSON.parse(fs.readFileSync(path.join(PUBLIC, "family/
 const SEASONAL: { advent: { day: number; label: string; title: string; passage: string }[] } = JSON.parse(fs.readFileSync(path.join(PUBLIC, "family-seasonal.json"), "utf8"));
 const reading = (n: number) => SEASONAL.advent.find((d) => d.day === n)!;
 const ADVENT_TITLES = new Set(SEASONAL.advent.map((d) => d.title));
+/** December 26 takes the year map's devotion for the week of Sunday, December 27, begun early. */
+const AFTER = INDEX.devotions.find((r) => r.id === FAMILY_WEEKS.find((w) => w.start === "2026-12-27")!.devotion)!;
 
 /** What the data says each night is, independent of the code under test. */
 type Night = { kind: "before" } | { kind: "waiting" } | { kind: "day"; n: number } | { kind: "after" };
@@ -123,7 +127,10 @@ async function checkHome(night: Night) {
     expect(line).not.toBeNull();
     expect(Array.from(ADVENT_TITLES).some((t) => line!.textContent!.includes(t))).toBe(false);
   } else {
-    expect(line).toBeNull();
+    // The next week's devotion, begun early: never an Advent reading.
+    expect(line).toHaveTextContent(`Tonight at the table: ${AFTER.title}.`);
+    expect(within(line!).getByRole("link", { name: AFTER.title })).toHaveAttribute("href", `/family/devotions/${AFTER.id}`);
+    expect(ADVENT_TITLES.has(AFTER.title)).toBe(false);
     expect(advent).toBeNull();
   }
   page.unmount();
@@ -149,8 +156,9 @@ async function checkFamily(night: Night) {
     expect(ADVENT_TITLES.has(title.textContent ?? "")).toBe(false);
     expect(screen.getByRole("region", { name: "Advent begins Sunday, November 29" })).toHaveTextContent("a short reading for each day from December 1 to Christmas");
   } else {
-    expect(title).toHaveTextContent("Choose tonight's devotion");
-    expect(meta).toHaveTextContent("No devotion is set for this date yet.");
+    expect(title).toHaveTextContent(AFTER.title);
+    expect(meta.textContent).toContain(AFTER.passage);
+    expect(meta).not.toHaveTextContent("No devotion is set for this date yet.");
     expect(document.querySelector('[data-testid="advent-at-the-table"]')).toBeNull();
   }
   // No Advent reading is ever named by a day number in place of its date.
@@ -184,13 +192,13 @@ async function checkTonight(night: Night) {
     await waitFor(() => expect(window.location.pathname).toBe(`/family/devotions/advent-${night.n}`));
   } else if (night.kind === "before") {
     await waitFor(() => expect(window.location.pathname).toMatch(/^\/family\/devotions\/thanksgiving-\d$/));
+  } else if (night.kind === "after") {
+    await waitFor(() => expect(window.location.pathname).toBe(`/family/devotions/${AFTER.id}`));
   } else {
-    // No devotion of its own: the page stays and says so.
+    // No devotion of its own: the page stays and says when the calendar starts.
     await screen.findByRole("heading", { level: 1, name: "Tonight's family devotion" });
     expect(window.location.pathname).toBe("/family/tonight");
-    const line = document.querySelector(".pg-head__lede");
-    if (night.kind === "waiting") expect(line).toHaveTextContent(WAITING);
-    else expect(line).toHaveTextContent("No devotion is set for this date yet. Choose one from the library.");
+    expect(document.querySelector(".pg-head__lede")).toHaveTextContent(WAITING);
   }
   page.unmount();
 }

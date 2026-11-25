@@ -86,8 +86,12 @@ describe("homeTonight", () => {
     }
     // December 1 names it by its date, as before.
     expect(said("2026-12-01").tonight).toBe("Tonight at the table: The Long Wait Begins, December 1 in the family Advent calendar.");
-    // The nights after Christmas in Advent's last week have no reading, and Home shows nothing.
-    expect(homeTonight("2026-12-26")).toEqual({ tonight: null, advent: null });
+    // The nights after Christmas in Advent's last week take next week's devotion, begun early.
+    expect(said("2026-12-26")).toEqual({
+      tonight: "Tonight at the table: Made on Purpose.",
+      href: devotionHref(tonightOn("2026-12-27")!.id),
+      advent: null,
+    });
   });
 
   it("names the day of the Advent calendar, in U13's words", () => {

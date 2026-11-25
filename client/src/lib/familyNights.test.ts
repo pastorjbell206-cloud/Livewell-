@@ -75,8 +75,9 @@ describe("the nights of Advent before December 1", () => {
     const next = nextNewNight("2026-11-28")!;
     expect(next).toEqual({ date: "2026-12-01", tonight: { id: "advent-1", set: "advent", day: 1 } });
     expect(nextSaid(next.date, "2026-11-28")).toBe("Tuesday");
-    // After Christmas, the next is the week's devotion on Sunday, December 27.
-    expect(nextNewNight("2026-12-25")?.date).toBe("2026-12-27");
+    // After Christmas, the next is the following week's devotion, begun early on December 26.
+    expect(nextNewNight("2026-12-25")).toEqual({ date: "2026-12-26", tonight: tonightOn("2026-12-27") });
+    expect(nextSaid("2026-12-26", "2026-12-25")).toBe("tomorrow");
   });
 
   it("leave every other day's label alone", () => {
@@ -84,15 +85,44 @@ describe("the nights of Advent before December 1", () => {
     expect(nightLabel(day6, "2026-12-06")).toBe("December 6");
     // Read from the library on some other day, a day keeps its own name.
     expect(nightLabel(day1, "2026-07-04")).toBe("December 1");
-    // The day after Christmas has no reading of its own; day 25 keeps its date.
+    // The day after Christmas takes next week's devotion, begun early; day 25 keeps its date.
     const day25 = INDEX.devotions.find((r) => r.id === "advent-25")!;
-    expect(tonightOn("2026-12-26")).toBeNull();
+    expect(tonightOn("2026-12-26")?.set).toBeUndefined();
     expect(nightLabel(day25, "2026-12-26")).toBe("December 25");
     // The Friday after Thanksgiving is still served by its set's last day, named by its number.
     const thanks7 = INDEX.devotions.find((r) => r.id === "thanksgiving-7")!;
     expect(nightLabel(thanks7, "2026-11-27")).toBe("Day 7");
     // A weekly devotion has no day label.
     expect(nightLabel(INDEX.devotions.find((r) => r.id === "identity")!, "2026-11-03")).toBeUndefined();
+  });
+});
+
+describe("the nights after Christmas in Advent's last week", () => {
+  // December 26, 2026 is a Saturday; it takes the devotion of the week of Sunday, December 27.
+  const early = tonightOn("2026-12-27")!.id;
+
+  it("begin the next week's devotion early, so the table is not empty", () => {
+    expect(tonightOn("2026-12-26")).toEqual({ id: early });
+    // December 25, 2028 is a Monday: five nights take the week of December 31's devotion.
+    const long = tonightOn("2028-12-31")!.id;
+    for (const night of ["2028-12-26", "2028-12-30"]) expect(tonightOn(night)).toEqual({ id: long });
+  });
+
+  it("count the devotion done on that first night as done for its week", () => {
+    const p = progress([{ id: early, date: "2026-12-26" }]);
+    expect(doneThisWeek(p, early, "2026-12-26")).toEqual({ id: early, date: "2026-12-26" });
+    expect(doneThisWeek(p, early, "2026-12-27")).toEqual({ id: early, date: "2026-12-26" });
+    expect(doneThisWeek(p, early, "2027-01-02")).toEqual({ id: early, date: "2026-12-26" });
+    // The week after has its own devotion, and this one no longer counts.
+    expect(doneThisWeek(p, early, "2027-01-03")).toBeNull();
+    // Christmas Day's reading done on December 25 is not the early devotion.
+    expect(doneThisWeek(progress([{ id: "advent-25", date: "2026-12-25" }]), early, "2026-12-26")).toBeNull();
+  });
+
+  it("send the next new night past the whole run to the week after", () => {
+    expect(nextNewNight("2026-12-26")?.date).toBe("2027-01-03");
+    // The longest run, twelve nights from December 26, 2028, still finds the next.
+    expect(nextNewNight("2028-12-26")).toEqual({ date: "2029-01-07", tonight: tonightOn("2029-01-07") });
   });
 });
 

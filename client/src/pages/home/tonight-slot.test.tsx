@@ -66,7 +66,7 @@ afterEach(() => {
 });
 
 /** Nights that say more than an ordinary week's line, and one that says nothing. */
-const NIGHTS = ["2026-11-20", "2026-11-23", "2026-11-27", "2026-11-28", "2026-11-29", "2026-11-30", "2026-12-01", "2026-12-06", "2026-12-25", "2026-12-26", "2027-03-25", "2027-11-28", "2028-11-26", "2028-12-01", "2028-12-03"];
+const NIGHTS = ["2026-11-20", "2026-11-23", "2026-11-27", "2026-11-28", "2026-11-29", "2026-11-30", "2026-12-01", "2026-12-06", "2026-12-25", "2026-12-26", "2027-03-25", "2027-11-28", "2028-11-26", "2028-12-01", "2028-12-03", "2031-12-26"];
 
 describe("the static shell's tonight slot", () => {
   it("knows what Home says on every night of the year map, and off it", () => {
@@ -100,8 +100,10 @@ describe("the static shell's tonight slot", () => {
     expect(slotLines(DATA, "2026-12-06")?.row).toEqual({ lead: "Tonight at the table:", title: "A Child Is Given", after: ", December 6 in the family Advent calendar" });
     // An ordinary week's night: the CSS holds one line, as before.
     expect(slotLines(DATA, "2026-10-27")).toEqual({ row: null, quiet: null });
+    // The nights after Christmas in Advent's last week take next week's devotion, begun early: an ordinary week's line.
+    expect(slotLines(DATA, "2026-12-26")).toEqual({ row: null, quiet: null });
+    expect(slotLines(DATA, "2028-12-30")).toEqual({ row: null, quiet: null });
     // Nothing to say: the slot takes no room.
-    expect(slotLines(DATA, "2026-12-26")).toBeNull();
     expect(slotLines(DATA, "2040-01-01")).toBeNull();
   });
 
