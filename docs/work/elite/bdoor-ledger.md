@@ -20102,3 +20102,19 @@ Cut in chapter 13: the deep note's line from the covenant of salt to Luke 1:32-3
 | The hard note: the million and the readings; the plunder reported without comment; the terror of the LORD; defense, not a model; the larger story | 9-15 `hard` | 2-chronicles/14.json `hard` | Repository |
 
 Cut in chapter 14: the deep note's lines to Luke 1:52 and 1 Corinthians 1:27, which do not cite this chapter. The chapter numbering note (English 14:1 is Hebrew 13:23) is left to the deep note. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 15 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 15:1; 15:2 (Azariah's words); 15:3 (its clause); 15:4; the disorder (15:5-6); 15:7 | 1-7 | BSB | BSB text |
+| A prophet interpreting success; Rehoboam's carelessness (12:1); Azariah only here; the judges or the north or any time; the conditions; matsa in 15:4 and 15:15 | 1-7 | 2-chronicles/15.json `story`, `historical`, `literary`, `words` (matsa) | Repository |
+| Deuteronomy 4:29 (its clause); Judges 21:25 | 1-7 | BSB | BSB text |
+| The idols removed and the altar repaired (15:8); 15:9 (its clause); the gathering and sacrifices (15:10-11); 15:12; 15:13 paraphrased; 15:15; Maacah (15:16); 15:17; 15:19 paraphrased | 8-19 | BSB | BSB text |
+| The high point; later renewals; the fifteenth year, about 896 BC; the Feast of Weeks link; the plunder given back; shevu'ah and the ceremony; the northerners and Simeon's puzzle (Joshua 19:1-9); the queen mother; grandmother in the BSB; miphletset; the Kidron (29:16; 30:14); 14:3 and 15:17 side by side | 8-19 | 2-chronicles/15.json `story`, `historical`, `cultural`, `words` (shevu'ah, miphletset); BSB of 14:3 and 15:17 | Repository; BSB text |
+| 1 Kings 15:13 (its first sentence) | 8-19 | BSB | BSB text |
+| The hard note on 15:13: Deuteronomy 13:6-10 and 17:2-7; covenant as constitution; the curse of the oath; not a pattern for the church (Matthew 26:52; John 18:36); the church's repentance for coercion | 8-19 `hard` | 2-chronicles/15.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 15: the deep note's lines to Matthew 7:7, John 14:9 and Mark 12:29-30, which do not cite this chapter. No care line is needed in this chapter.
