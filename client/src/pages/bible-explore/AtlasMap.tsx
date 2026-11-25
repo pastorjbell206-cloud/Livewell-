@@ -19,6 +19,15 @@ type Side = { dx: number; dy: number; anchor: "start" | "end" | "middle"; text?:
 type Box = [number, number, number, number];
 
 const DEFAULT: Side = { dx: 10, dy: 4, anchor: "start" };
+/**
+ * Where a name sits on a sheet when the side its own book gave it runs into
+ * another book's mark: set by hand, as the book maps set theirs (`label` in
+ * a book's data, LABEL in BookMap.tsx). Keyed by sheet, then the place's id.
+ */
+const SHEET_LABEL: Partial<Record<MapFrameId, Record<string, Side>>> = {
+  // Genesis draws the plain of the Jordan beside Jericho, where Numbers set Jericho's name.
+  canaan: { jericho: { dx: -10, dy: -5, anchor: "end" } },
+};
 /** The name's size on the drawing, in drawing units, at the size a phone shows it (the larger case). */
 const NAME_SIZE: Record<MapFrameId, number> = { israel: 12.5, canaan: 12.5, "fertile-crescent": 18, mediterranean: 14 };
 
@@ -65,17 +74,19 @@ export default function AtlasMap({
       // The chosen place and Jerusalem (the drawing's one mustard mark) always carry their names.
       const on = p.id === selected || p.ids.includes("jerusalem");
       if (given === false && !on) continue;
-      const first: Side = (given || undefined) ?? p.ids.map((i) => LABEL[i]).find(Boolean) ?? DEFAULT;
+      const first: Side = SHEET_LABEL[frame]?.[p.id] ?? (given || undefined) ?? p.ids.map((i) => LABEL[i]).find(Boolean) ?? DEFAULT;
       const text = first.text ?? shortName(p.name);
       const own = places.indexOf(p);
       // The book's own side first; then the other three sides of the mark.
       const sides: Side[] = [first, { dx: half + 5, dy: 4, anchor: "start" }, { dx: -(half + 5), dy: 4, anchor: "end" }, { dx: 0, dy: -(half + 6), anchor: "middle" }, { dx: 0, dy: half + size, anchor: "middle" }];
-      const free = sides.find((sd) => {
+      const fits = (sd: Side, allowBeside: boolean) => {
         const b = nameBox(x(p.lon), y(p.lat), sd, text, size);
-        // A mark that all but sits on this one (Bethany beside Jerusalem) cannot be cleared on any side, so it does not count.
-        const beside = (i: number) => i < places.length && Math.hypot(x(places[i].lon) - x(p.lon), y(places[i].lat) - y(p.lat)) < 16;
+        // A mark that all but sits on this one (Bethany beside Jerusalem) may leave no side clear.
+        const beside = (i: number) => allowBeside && i < places.length && Math.hypot(x(places[i].lon) - x(p.lon), y(places[i].lat) - y(p.lat)) < 16;
         return b[0] >= 0 && b[2] <= W && b[1] >= 0 && b[3] <= H && !taken.some((t, i) => i !== own && !beside(i) && hits(t, b));
-      });
+      };
+      // A side clear of every mark and name first; only when there is none, a side that touches a mark sitting beside this one.
+      const free = sides.find((sd) => fits(sd, false)) ?? sides.find((sd) => fits(sd, true));
       if (!free && !on) continue;
       const side = free ?? first;
       taken.push(nameBox(x(p.lon), y(p.lat), side, text, size));
