@@ -20661,3 +20661,20 @@ Cut in chapter 7: the deep note's lines to Luke 13:34 and 19:41-44, to the true 
 | 2 Kings 18:13 paraphrased; Amos 2:5 | 11-14 | BSB | BSB text |
 
 Cut in chapter 8: the deep note's lines to John 6:15, Galatians 6:7-8 and Luke 19:10, which the New Testament does not draw from this chapter; Proverbs 22:8 stands in their place as the Bible's own proverb of sowing and reaping. The cry of 8:2, an inner quotation, is paraphrased.
+
+## The plain notes on Hosea 9 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1 (its clause); 9:2 and 9:4-6 paraphrased; 9:3; 9:7 (its first clause; the rest paraphrased); 9:8-9 paraphrased | 1-9 | BSB | BSB text |
+| A harvest festival, most likely Tabernacles; spoken in public, perhaps at Bethel; threshing floors and fertility rites; the harvest as a god's payment turned to accusation; the 730s or 720s BC and the deportations from Galilee and Gilead; no altar abroad; the bread of mourners and uncleanness; Memphis and its burial ground; the watchman; the insults turned back; Gibeah and the civil war, and Saul's Gibeah | 1-9 | hosea/9.json `historical`, `cultural`, `literary` | Repository; both readings of Gibeah in their holders' terms |
+| Deuteronomy 16:13-15; Judges 19 to 21; Ezekiel 3:17 | 1-9 | hosea/9.json `historical`, `cultural` | Repository |
+| 9:10 (its first two sentences; the rest paraphrased); 9:11-16 paraphrased and not quoted; 9:17 | 10-17 | BSB | BSB text; 9:14 and 9:16 named, not quoted |
+| God looking back; grapes and first figs; Baal-peor, the Moabite women and the plague; becoming like what is loved; Gilgal; children as a family's future; Ephraim and fruitfulness; the prophet's verdict | 10-17 | hosea/9.json `literary`, `historical`, `cultural` | Repository |
+| Numbers 25:1-9; 1 Samuel 11:15; Jeremiah 2:2 (its clause) | 10-17 | hosea/9.json `historical`; BSB | Repository; BSB text |
+| The hard note: a nation, not particular mothers; the reverse of what Israel sought from Baal; 9:14 as a plea broken off and childlessness chosen over slaughter (9:13); invasion and siege; never a reason to call any family's loss a punishment; John 9:3 paraphrased; national judgment, not a key to personal tragedy | 10-17 `hard` | hosea/9.json `hard`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+| The care line ('If you carry grief or guilt about a pregnancy, or about the loss of a child before or after birth...' to '...lists places to turn.') | 10-17 `hard` | 1-kings/plain/3.json; 2-kings/plain/4.json; 2-samuel/plain/12.json and nine more | Reused whole, word for word; Find Help named; no phone number |
+
+Cut in chapter 9: the deep note's mention of 13:16 beside 9:13, so that the atrocity is named once, in its own chapter. The words of 9:14 and 9:16 are not quoted. Luke 13:1-5 is left out to keep the care note short; John 9:3 is kept, paraphrased.
