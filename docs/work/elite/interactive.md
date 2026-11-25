@@ -114,10 +114,16 @@ SEO), with layout shift 0.000 on every page:
 
 | Page | Score |
 |------|-------|
-| /study/timeline | 93, 100, 96, 100 |
-| /study/atlas | 95, 100, 96, 100 |
-| /study/words | LH_WORDS |
-| /study/hard-passages | LH_HARD |
+| /study/timeline | 97, 96, 96, 100 (first push: 93, 100, 96, 100) |
+| /study/atlas | 100, 100, 96, 100 |
+| /study/words | 96, 100, 96, 100 |
+| /study/hard-passages | 93, 100, 96, 100 |
+
+The timeline's 96 for accessibility in the last run is one finding, a link
+"with contrast 1.08" far down the page. The link is ink on cream like every
+other; it sits in a list not yet laid out (`.bx-far`), and the checker read
+the wrong background for it. The first run, before more books arrived, read
+100. Worth a second look in CI against a preview.
 
 What the measuring changed: a list of several hundred entries is drawn in two
 steps (its top and first group at once, the rest in a transition:
