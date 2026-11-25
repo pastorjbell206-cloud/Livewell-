@@ -20556,3 +20556,27 @@ Cut in chapter 1: the deep note's lines to Christ that the New Testament does no
 | Care lines, the grief line and the self-harm line | 18-22 `hard` | Reused byte for byte; found whole in 18 and 34 places | care.mjs |
 
 Cut in chapter 2: the deep note's lines to Christ that the New Testament does not draw (Jesus bearing the wrath the chapter describes; the head-shaking of Mark 15:29; Luke 19:41-44 and AD 70 set beside the chapter). The acts in 2:20 are named, not quoted or described. The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Lamentations 3 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; God unnamed as He; 3:2; 3:3-5; 3:6; 3:7; 3:8; 3:10; the archer (3:12-13); 3:14; 3:16-17; 3:18 (the man's words, inside the BSB's quotation marks); 3:19; 3:20 | 1-20 | BSB | BSB text |
+| The ruin felt in one body; Jeremiah or an everyman; the rod; wormwood and gall; the pit and waters in the lament psalms; the triple acrostic of sixty-six verses; Psalm 119 | 1-20 | lamentations/3.json `story`, `historical`, `cultural`, `literary` | Repository; both readings of the speaker in their holders' terms |
+| Jeremiah 20:7 (its last sentence); Jeremiah 38:6 (its clause); Psalm 88:6 | 1-20 `later` | lamentations/3.json `story`, `historical`; BSB | BSB text |
+| The hard note: how affliction feels; Psalms 13, 22 and 88 and Job; honesty not unbelief; the deliberate turn | 1-20 `hard` | lamentations/3.json `hard` | Repository |
+| Care line, the self-harm line | 1-20 `hard` | Reused byte for byte; found whole in 34 places, among them job/plain/3.json | care.mjs |
+| 3:21-23 (in double quotes for its exclamation); direct address as praise; 3:24 (its words, inside the BSB's quotation marks); 3:25; 3:26; 3:27; 3:28-29 paraphrased (3:29 holds a dash); 3:30 (its clause); 3:31; 3:32; 3:33; 3:34-36 (3:36's last clause, after the dash); 3:37 paraphrased; 3:38; 3:39 paraphrased | 21-39 | BSB | BSB text |
+| Nothing changed between 3:18 and 3:21; hope as a decision; chesed, rachamim, emunah; the textual question in 3:22; cheleq and the Levites' portion (Numbers 18:20); the center of the book | 21-39 | lamentations/3.json `literary`, `words`, `cultural`, `doctrines`; lamentations/intro.json `themes` | Repository |
+| Psalm 73:26 (its clause); Psalm 130:5; Isaiah 54:10 (its clause) | 21-39 `later` | BSB | BSB text |
+| The hard note: 3:37-38 and 3:33, 36 held together; sovereignty or permission, both readings; hope chosen; 3:39 as the city's own confession, not a word to say to another sufferer, not a claim that any person's pain is punishment | 21-39 `hard` | lamentations/3.json `hard`, `doctrines` | Repository; both readings in their holders' terms |
+| 3:40; 3:41 paraphrased; 3:42 (the people's words, inside the BSB's quotation marks); 3:43; 3:44; 3:45; 3:46-47 paraphrased (3:47 holds a dash); 3:48; 3:49; 3:50 (its clause); 3:52; 3:53; 3:54 | 40-54 | BSB | BSB text |
+| Communal confession and lament; forgiveness not yet come; mocked by neighbors under Babylonian rule; the pit, the stones and the waters, Jeremiah or the psalms' pictures | 40-54 | lamentations/3.json `historical`, `literary` | Repository |
+| Psalm 130:1 (in double quotes for its exclamation); Jonah 2:3 (its clause); Psalm 69:2 (its clause) | 40-54 `later` | BSB | BSB text |
+| 3:55; 3:56 paraphrased; 3:57 (its first clause, and its last words paraphrased); 3:58; 3:59 (its first clause); 3:60-62; 3:63; 3:64; 3:65-66 paraphrased | 55-66 | BSB | BSB text |
+| The remembered answer; ga'al in 3:58 (the verse's own Hebrew in the repository) and the near relative's buying back; the prayer for justice handed to God | 55-66 | lamentations/3.json `summary`, `literary`; bible/ch/lamentations/3.json (H1350); ruth notes (the redeemer) | Repository |
+| Isaiah 41:10 (its clauses); Psalm 142:5 (the psalmist's words, inside the BSB's quotation marks); Romans 12:19 (its clause) | 55-66 `later` | BSB | BSB text |
+
+Cut in chapter 3: the deep note's lines to Christ that the New Testament does not draw (the man under the rod as a pattern of Jesus; verse 30 beside Matthew 5:39; the mercies grounded in the cross and the empty tomb). The phone number in the deep note's hard answer was not repeated.
