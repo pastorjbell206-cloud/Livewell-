@@ -1,11 +1,16 @@
 {
-  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/, which a rename never changes; the title and subtitle come from client/src/data/book-names.json. The sec*.xhtml files are the author's text, taken unchanged from the original EPUB kept in content/held-downloads/originals/: one block to a line. Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs when-god-bless-america --verify`. `copyright` is the notice as the original files printed it, without the PDF's unfilled ISBN line.",
+  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/, which a rename never changes; the title and subtitle come from client/src/data/book-names.json. The sec*.xhtml files are the author's text, one block to a line: taken from the original EPUB kept (untouched) in content/held-downloads/originals/, then edited at his instruction (see `edited`). Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs when-god-bless-america --verify`. `copyright` is the notice as the original files printed it, without the PDF's unfilled ISBN line.",
   "id": "when-god-bless-america",
   "author": "James Bell",
   "identifier": "urn:livewell:wgba-v2",
   "language": "en",
   "date": "2026",
-  "modified": "2026-11-23T00:00:00Z",
+  "modified": "2026-11-25T00:00:00Z",
+  "edited": {
+    "date": "2026-11-25",
+    "instruction": "James: \"i also want you to go through all the book, pdfs, and downloadable content to make it sound human and like me\"; and, the same day, \"use full paragraphs in the books too\".",
+    "record": "docs/work/elite/voice-books/a-higher-allegiance.md"
+  },
   "copyright": [
     "Copyright © 2026 by James Bell. All rights reserved.",
     "Published by LiveWell by James Bell. Unless otherwise noted, Scripture quotations are from the English Standard Version (ESV)."
