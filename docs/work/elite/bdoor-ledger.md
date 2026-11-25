@@ -18716,3 +18716,18 @@ Cut in chapter 16: the deep note's lines to Christ (1 John 2:1, Hebrews 7:25, Ma
 | The self-harm line, handled as 1 Kings 19 was | 10-16 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 17: the deep note's lines to Christ (Hebrews 7:22 and Mark 15:19 beside Job's guarantor and shame; the note calls them thematic, and the New Testament does not draw them from Job).
+
+## The plain notes on Job 18 (2026-11-25)
+
+`client/public/bible/notes/job/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No answer to Job's hope; the most concentrated portrait; no way back, the promise of chapter 8 gone; his case as he would sign it; the lamp; the six words for traps; sin entangling, read backward | 1-10 | job/18.json `story`, `cultural`, `literary`, `doctrines` (sin, judgment), `words` (ner) | Repository |
+| Proverbs 5:22 | 1-10 | job/18.json `doctrines` (sin); BSB | Repository; BSB text |
+| The king of terrors and Mot at Ugarit; the firstborn of death; sulfur and Sodom; name and offspring; the portrait matched to Job's losses (1:16; 1:19; 2:7) | 11-21 | job/18.json `historical`, `cultural`, `literary`, `words` (bekhor, melekh, shem) | Repository |
+| Genesis 19:24 (in part: the verse holds a dash) | 11-21 | job/18.json `historical`; BSB | Repository; BSB text |
+| The hard note: cruel; an argument needing the friends' fullest case; a sincere believer; a formula condemning the innocent; 42:7; recognizing the pattern in one's own speech; loss never in itself a sign of not knowing God | 11-21 | job/18.json `hard` | Repository |
+| The grief line | 11-21 | 1-samuel/plain/1.json (1-8) and the 2 Samuel 21 and Deuteronomy notes (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 18: the deep note's lines to Christ (Hebrews 2:14-15, 1 Corinthians 15:26, John 8:12 and Luke 10:20; the note calls them thematic and says Bildad would not have meant them).
