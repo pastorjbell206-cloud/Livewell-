@@ -20959,3 +20959,22 @@ Cut in chapter 5: the deep note's lines to Christ that the New Testament does no
 | Leviticus 19:32 (its first clause, in part); Acts 1:26 (its first clause and lot) | 20-33 | proverbs/16.json `cultural` (Leviticus 19:32; Acts 1:26); BSB | Repository; BSB text |
 
 Cut in chapter 16: the deep note's lines to Christ (Isaiah 9:7 and 11:1-5 with Jesus as the just king of verses 10-12; Acts 2:23 and the cross as the deepest example of verse 9; 1 Peter 2:23 beside verse 32; the note calls them connections of theme). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 17 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 17:1; 17:2; 17:3; 17:5; 17:6; 17:8 | 1-8 | BSB | BSB text |
+| Feasting as ‘sacrifices’ and fellowship offerings; stale bread in quiet; the wise servant and the disgraceful son; crucible and furnace; God refining his people in the prophets; the poor's Maker (14:31) | 1-8 | proverbs/17.json `cultural`, `literary`; proverbs/14.json `cultural` | Repository |
+| Malachi 3:3 (its first clause); Exodus 23:8 | 1-8 | proverbs/17.json `cultural` (Malachi 3:3), `historical` (Exodus 23:8); BSB | Repository; BSB text |
+| The hard note: observation, not commendation; the giver's view; verse 23 (quoted in two parts); Exodus 23:8; irony, realism, and the gift for a hearing (18:16; 21:14); justice that can be bought detestable to the LORD | 1-8 `hard` | proverbs/17.json `hard`; BSB | Repository; BSB text; each reading in its holders' terms |
+| 17:9; 17:10; 17:12; 17:13; 17:14; 17:15 paraphrased (the verse holds a dash); 17:17; the pledge (17:18) | 9-20 | BSB | BSB text |
+| The thread on quarrels (9, 14, 19); water let loose; covering an offense, not hiding a crime; the Syrian brown bear (2 Samuel 17:8; Hosea 13:8); courts at the gate and Deuteronomy 25:1; striking hands | 9-20 | proverbs/17.json `literary`, `cultural`, `historical`; proverbs/10.json `words` (kasah) | Repository |
+| 1 Samuel 18:3 (from ‘Jonathan’); Ruth 1:16 (its second sentence, in part); Romans 12:17 (its first sentence) | 9-20 | the chapter data's cross-references for 17:17 (1 Samuel 18:3; Ruth 1:16) and 17:13 (Romans 12:17); BSB | Repository; BSB text |
+| 17:21; 17:22; 17:23; 17:24; 17:25; 17:26; 17:27; 17:28 | 21-28 | BSB | BSB text |
+| The foolish son of 10:1 in verses 21 and 25; the father's teaching; the broken spirit and the body; the bribe described (8) and condemned (23); quiet framing the chapter (1, 28) | 21-28 | proverbs/17.json `story`, `literary` | Repository |
+| Job 13:5 (an exclamation, in double quotes); 1 Samuel 8:3 (from ‘turned aside’) | 21-28 | the chapter data's cross-references for 17:28 (Job 13:5) and 17:23 (1 Samuel 8:3); proverbs/17.json `historical` (Samuel's sons); BSB | Repository; BSB text |
+
+Cut in chapter 17: the deep note's lines to Christ (John 15:13-15 and Hebrews 2:11 beside verse 17; Romans 3:26 and 4:5 and the cross as the answer to verse 15). No care line is needed in this chapter.
