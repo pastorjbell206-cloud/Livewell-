@@ -1719,6 +1719,10 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-proverbs",
     "book-isaiah",
     "book-matthew",
+    "book-mark",
+    "book-luke",
+    "book-acts",
+    "book-revelation",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2205,5 +2209,93 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.frames.map(fr2 => fr2.still).join(" ")).not.toMatch(
       /\bcross\b|blood/i
     );
+  });
+
+  it("Mark, Luke and the other Gospel films draw no cross, blame no people, and carry the cross's care line", () => {
+    for (const slug of ["book-mark", "book-luke"]) {
+      if (!READY.some(f => f.slug === slug)) continue;
+      const f = filmFile(slug);
+      expect(f.care, slug).toBe(filmFile("the-king").care);
+      expect(f.frames.map(fr => fr.still).join(" "), slug).not.toMatch(
+        /\bcross\b|blood|nail/i
+      );
+      expect(captions(f), slug).not.toMatch(
+        /\bthe Jews\b|Jews (killed|murdered|crucified)|Jewish leaders killed/i
+      );
+    }
+    const mark = filmFile("book-mark");
+    expect(text(mark)).toContain(
+      "the message at the tomb names Peter in particular"
+    );
+    expect(text(mark)).toContain(
+      "The oldest complete copies end with the women at the tomb."
+    );
+  });
+
+  it("Acts tells Stephen's death without drawing it, carries the caution at both levels, and takes no side on the Spirit's gifts", () => {
+    const f = filmFile("book-acts");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/rescue.json"), "utf8")
+    ) as { care: string };
+    expect(f.care).toBe(stop.care);
+    expect(f.differ?.text).toMatch(/takes no side/);
+    const paul = f.frames.find(x => x.id === "paul")!;
+    expect(paul.older).toContain(
+      "faith in Jesus fulfills Israel's hope and does not replace it"
+    );
+    expect(paul.younger).toContain(
+      "Jesus, Paul and all the first believers were Jews."
+    );
+    expect(captions(f)).not.toMatch(
+      /\bthe Jews\b|Jews (killed|stoned|murdered)|stoned by/i
+    );
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /ston(e|ed|es|ing)|blood|dead|bod(y|ies)|prison|chains|crowd/i
+    );
+  });
+
+  it("Revelation gives the ways Christians read it and takes none, sets no date, names no one of today, and has nothing to frighten a child", () => {
+    const f = filmFile("book-revelation");
+    const stop = JSON.parse(
+      fs.readFileSync(
+        path.join(PUBLIC, "explorer/stops/new-creation.json"),
+        "utf8"
+      )
+    ) as { care: string };
+    expect(f.care).toBe(stop.care);
+    const readings = f.frames.find(x => x.id === "readings")!;
+    // The four approaches, each in a clause of its own, at both levels.
+    expect(readings.older).toContain("fulfilled in the first centuries");
+    expect(readings.older).toContain("a map of church history");
+    expect(readings.older).toContain("events still to come");
+    expect(readings.older).toContain("the conflict of every age");
+    expect(readings.older).toContain("faithful Christians hold each");
+    expect(readings.younger).toContain("John's own time");
+    expect(readings.younger).toContain("the whole story of the church");
+    expect(readings.younger).toContain("things still to come");
+    expect(readings.younger).toContain("every age");
+    expect(readings.younger).toContain(
+      "No one should use this book to guess dates."
+    );
+    expect(f.differ?.text).toMatch(/takes no side and names no date/);
+    expect(f.differ?.text).toContain(
+      "premillennial, postmillennial and amillennial"
+    );
+    const t = text(f);
+    // No date, no one of today, no figure to be afraid of.
+    expect(t).not.toMatch(
+      /\b(1[0-9]|20)\d\d\b|\bAD\b|\bBC\b|soon be|any day now/
+    );
+    expect(t).not.toMatch(
+      /antichrist|666|mark of the beast|rapture|tribulation|armageddon|\bbeasts?\b|dragon|plague|locust|hell\b|lake of fire/i
+    );
+    expect(t).not.toMatch(
+      /Russia|China|America|United States|Israel today|European|Rome today|pope|president/i
+    );
+    expect(t).toContain("do not be afraid");
+    expect(f.frames[0].verse?.text).toBe(
+      "Do not be afraid. I am the First and the Last"
+    );
+    expect(f.frames[2].still).toContain("No one is drawn.");
   });
 });

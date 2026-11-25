@@ -1,0 +1,122 @@
+{
+  "slug": "book-acts",
+  "title": "Acts: to the ends of the earth",
+  "group": "books",
+  "status": "finished",
+  "book": "acts",
+  "mark": "book-acts",
+  "line": {
+    "younger": "The book that tells what happened after Jesus rose: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Acts as a whole book: Luke's second volume, the road from Jerusalem to Rome, the Holy Spirit, witness and its cost, a gospel that crosses every line, and where to begin."
+  },
+  "poster": "Morning on a hill outside a city. A group of friends stands looking up, hands lifted, toward a cloud with a gold light behind it.",
+  "frames": [
+    {
+      "id": "next",
+      "name": "What happened next",
+      "still": "Morning on a hill outside a city. A group of friends stands looking up, hands lifted, toward a cloud with a gold light behind it.",
+      "younger": "Acts is the second book by Luke. His first book told the story of Jesus. This one tells what happened next. The risen Jesus goes up to heaven, and gives his friends a job that is still going on.",
+      "older": "Acts picks up where the Gospel of Luke leaves off. Luke's first book was about all that Jesus began to do and to teach, which implies that Acts is about what Jesus continues to do, through his Spirit and his people.",
+      "verse": {
+        "ref": "Acts 1:8",
+        "text": "you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in six panels, with a flame, a city gate, a road, a ship, a pillar and a house over them. A gold rule lies under the first panel, the flame.",
+      "younger": "Acts moves outward, step by step. It starts in one room in Jerusalem. Then the good news goes to the country round about, then to other nations. The second half follows a man named Paul, all the way to Rome.",
+      "older": "Acts moves outward from Jerusalem: the city, then Judea and Samaria, then the door to the nations. The second half belongs largely to Paul, and it ends with him in Rome under guard, still teaching.",
+      "verse": {
+        "ref": "Acts 28:31",
+        "text": "Boldly and freely he proclaimed the kingdom of God"
+      }
+    },
+    {
+      "id": "spirit",
+      "name": "Watch for: the Holy Spirit",
+      "still": "In an upper room a group of people stand close together with their hands lifted, and one small gold flame rests above them. Wind moves the curtain at the window.",
+      "younger": "Watch for the Holy Spirit. Jesus promised his friends power from God, and at the feast of Pentecost the Spirit came. After that, frightened people became brave. The Spirit leads them all the way through the book.",
+      "older": "The Spirit is the driving force of Acts. He comes at Pentecost, fills believers for bold speech, guides decisions, sets apart messengers, and falls on Samaritans and Gentiles in ways that force the church to recognize them as full members.",
+      "verse": {
+        "ref": "Acts 2:17",
+        "text": "I will pour out My Spirit on all people."
+      }
+    },
+    {
+      "id": "witness",
+      "name": "Watch for: witnesses, and what it cost",
+      "still": "Families with bundles walk out of a city gate along three roads that lead away in different directions. A gold sun stands over the far hills.",
+      "younger": "Watch for the word witness. A witness tells what they have seen. It was not safe. A man named Stephen was killed for it, and he prayed for those who hurt him. The believers had to run from the city, and wherever they went, they told the good news.",
+      "older": "The key word of the book is witness. Stephen's witness costs him his life. Almost every advance in Acts comes through opposition, and Luke presents none of it as defeat: persecution scatters the church and so spreads the word.",
+      "verse": {
+        "ref": "Acts 7:60",
+        "text": "Lord, do not hold this sin against them."
+      }
+    },
+    {
+      "id": "lines",
+      "name": "Watch for: every line crossed",
+      "still": "At the door of a house a fisherman in a plain robe and a Roman officer greet each other with open hands, and the officer's family stands behind him.",
+      "younger": "Watch the good news cross one line after another. To Samaria. To a man from far-off Ethiopia. To an officer in the Roman army. Each time, God shows that the good news is for them too.",
+      "older": "Acts traces the good news across line after line: Samaritans, an official from Ethiopia, a Roman centurion. Each crossing is contested. The council in Jerusalem settles the central question: Gentiles are saved by grace, as Jews are.",
+      "verse": {
+        "ref": "Acts 10:34",
+        "text": "I now truly understand that God does not show favoritism"
+      }
+    },
+    {
+      "id": "paul",
+      "name": "Watch for: Saul, called Paul",
+      "still": "On a road near a city a man has fallen to his knees in a gold light that falls from above. His companions stand back.",
+      "younger": "Watch for a man named Saul. He hunted the followers of Jesus. Then Jesus met him on a road, and Saul, also called Paul, became his messenger. Remember that Jesus, Paul and all the first believers were Jews. This is a story inside one family.",
+      "older": "Saul, the church's fiercest opponent, meets the risen Jesus and becomes its messenger. Acts insists that faith in Jesus fulfills Israel's hope and does not replace it. The first believers are Jews, and Paul on trial says he stands accused because of the hope of Israel.",
+      "verse": {
+        "ref": "Acts 9:4",
+        "text": "Saul, Saul, why do you persecute Me?"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapters one and two. It helps to read Luke first, because Acts is part two. And notice how it ends: with Paul still teaching. The book stops, but the story does not.",
+      "older": "Start with chapter 1, and read for the large movement, from Jerusalem outward. Not every event in Acts is a rule for every church. The book's page marks eight key chapters: 1, 2, 7, 9, 10, 15, 17 and 28.",
+      "verse": {
+        "ref": "Acts 1:1",
+        "text": "I wrote about all that Jesus began to do and to teach"
+      }
+    }
+  ],
+  "think": {
+    "younger": "The good news kept reaching people nobody expected. Who would you be surprised to see it reach?",
+    "older": "Acts ends without saying what happened to Paul. Why might Luke have left the story open?"
+  },
+  "read": [
+    { "label": "Acts 1", "href": "/study/bible/acts/1" },
+    { "label": "Acts 2", "href": "/study/bible/acts/2" },
+    { "label": "Acts 9", "href": "/study/bible/acts/9" },
+    { "label": "Acts 10", "href": "/study/bible/acts/10" },
+    { "label": "Acts 28", "href": "/study/bible/acts/28" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that the Holy Spirit is given to the church. They differ on how much of the pattern in Acts is meant for every church, especially on the order of faith, baptism and receiving the Spirit, and on whether speaking in tongues is a regular sign of the Spirit's coming. This moving picture takes no side; the readings are set out on",
+    "links": [
+      { "label": "the Acts page of the Study Bible", "href": "/study/bible/acts" }
+    ]
+  },
+  "care": "This part of the story has death and fear in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Acts in the Study Bible: the whole book, with its map", "href": "/study/bible/acts" },
+    { "label": "Paul's travels: a map that draws itself", "href": "/study/explorer/pauls-travels" },
+    { "label": "The Holy Spirit through the Bible (a moving picture)", "href": "/study/explorer/watch/holy-spirit" },
+    { "label": "What the church is (a moving picture)", "href": "/study/explorer/watch/the-church" },
+    { "label": "Luke: good news for the lost (a moving picture)", "href": "/study/explorer/watch/book-luke" }
+  ],
+  "end": { "label": "Start reading: Acts 1", "href": "/study/bible/acts/1" }
+}

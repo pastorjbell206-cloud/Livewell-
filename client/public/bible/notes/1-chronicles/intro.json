@@ -35,5 +35,541 @@
     { "ch": 17, "why": "God promises David an everlasting dynasty and a son who will build God's house, the promise that shapes the rest of Chronicles." },
     { "ch": 21, "why": "David's sinful census leads to the choice of the temple site at Ornan's threshing floor, where judgment is stopped by sacrifice." },
     { "ch": 29, "why": "David leads Israel in generous giving and offers a great prayer of praise that confesses everything as God's, before Solomon takes the throne." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "1 Chronicles in a minute",
+        "body": "First Chronicles is the thirteenth book of the Bible and has 29 chapters. It is the first half of one work, Chronicles, which retells Israel's history from Adam to the decree of Cyrus that let the exiles go home.\n\nChapters 1 to 9 are genealogies: family lists running from Adam through the nations, through Abraham and Jacob's twelve sons, down to the people who resettled Jerusalem after the exile. Then the book tells one reign. Saul falls in a single chapter, and the rest belongs to David: all Israel making him king at Hebron, the capture of Jerusalem, the ark brought up to the city with music, God's promise of a house that will last forever, David's wars, a census that brings a plague, and long preparations for a temple his son will build.\n\nReaders who come from Samuel and Kings notice at once that much is missing and much is added. There is no Bathsheba and no Absalom. There are long lists of priests, Levites, singers and gatekeepers. Samuel and Kings, finished in the exile, explain why the kingdom fell. Chronicles, written after the return, asks who the people of God are now, and whether the promises still hold.\n\nIts answer is in David's prayer near the end: ‘Yours, O LORD, is the kingdom, and You are exalted as head over all’ (29:11)."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Chronicles comes after the whole story of Israel's kings has already been told in Samuel and Kings, and it tells it again from a later vantage point. In the Hebrew Bible Chronicles was one book; the Greek translators divided it in two. In English Bibles it follows 2 Kings and comes before Ezra and Nehemiah, which take up where it ends. In the traditional Hebrew order it stands among the Writings, often as the very last book, so that the Hebrew Scriptures end with Cyrus's words inviting God's people to go up and rebuild.\n\nFirst Chronicles sweeps from Adam to the eve of Solomon's reign in nine chapters of names and twenty chapters on David. Second Chronicles goes on with Solomon's temple and the kings of Judah to the exile and the decree of return.\n\nThe best way to read it is with Samuel and Kings open beside it. Many of its points are made by what it adds, changes or leaves out. The site's plain notes on 1 and 2 Samuel and 1 and 2 Kings tell the same events from the earlier telling."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book does not name its author. A Jewish tradition recorded in the Babylonian Talmud credits Ezra, the priest and scribe of the return. For a long time many scholars held that one author, called the Chronicler, wrote both Chronicles and Ezra and Nehemiah, partly because the last verses of 2 Chronicles are repeated as the first verses of Ezra. Since the late 1960s and 1970s many scholars, notably Sara Japhet and H. G. M. Williamson, have argued from differences in language and outlook that they come from different hands, though others still see a close link. Most agree that the author belonged to the circle of the Jerusalem temple and cared deeply about the Levites, the singers and the right ordering of worship. The book names many of its sources, among them the records of Samuel the seer, Nathan the prophet and Gad the seer (29:29), and the writer clearly used Samuel and Kings in a form close to the one that has come down.\n\nThe book was written after the exile. It ends with Cyrus allowing the return in 539 or 538 BC, and the royal line in chapter 3 runs several generations past Zerubbabel, who led the community around 520 BC. Chapter 29 counts gold in darics, a Persian coin first struck under Darius I late in the sixth century BC. Most scholars date the book in the Persian period, commonly between about 400 and 350 BC. Some argue for an earlier first edition around the rebuilding of the temple, about 520 to 515 BC, and a smaller group places it after Alexander the Great, around 300 BC or a little later."
+      },
+      {
+        "id": "world",
+        "h": "The world it was written for",
+        "body": "When Chronicles was written, David's kingdom was centuries gone. Babylon had destroyed Jerusalem and its temple in 587 or 586 BC. In 539 BC Cyrus of Persia took Babylon and let exiled peoples go home and rebuild their shrines. A minority of Jews returned. The temple was rebuilt and dedicated around 515 BC, and in the next century Ezra and Nehemiah worked to reform the community and restore Jerusalem's walls.\n\nJudah, called Yehud in Persian records, was now a small province of the Persian Empire. There was no king of David's line on the throne, though David's descendants were still known by name. The community lived by the law of Moses, gathered around a modest temple, and argued about who truly belonged to Israel.\n\nChronicles speaks into all of that. Its genealogies tell a small people that they are not new but the continuation of all Israel, rooted back to Adam. Its picture of a united Israel gathered around David and the house of God shows what Israel is at its best. Its account of kings who sought God or forsook him gives its readers a pattern they could still act on. It is history written as a sermon to people who wondered whether they still mattered."
+      },
+      {
+        "id": "built",
+        "h": "How 1 Chronicles is built",
+        "body": "The book has eight movements. Chapters 1 to 9 are all Israel in its generations: from Adam through the nations to Jacob's twelve sons, with Judah and David's line first, Levi at the center, and a closing list of those who resettled Jerusalem. Chapter 10 tells the fall of Saul. Chapters 11 and 12 show all Israel making David king. Chapters 13 to 16 bring the ark to Jerusalem. Chapter 17 is God's covenant with David. Chapters 18 to 20 are David's wars, chapter 21 the census and the site of the temple, and chapters 22 to 29 David's preparations for the temple and for Solomon.\n\nWatch a few words. To seek the LORD, darash, is to turn to him in worship, prayer and obedience; to be unfaithful, ma'al, is to break faith with him. Saul died for his unfaithfulness and did not seek the LORD (10:13-14), and Judah went into exile because of its unfaithfulness (9:1). Watch also the phrase all Israel, which comes again and again, and the long attention to Levites and music. David is remembered less as a warrior than as the founder of Israel's worship."
+      },
+      {
+        "id": "names",
+        "h": "Nine chapters of names",
+        "body": "For modern readers the genealogies are the hardest part of the book. For the first readers they were the most urgent. A people back from exile, with no king and little land, needed to know that they were still Israel and still joined to God's purposes from the beginning. The first verse simply begins, ‘Adam, Seth, Enosh’ (1:1).\n\nThe lists are not all the same. Some are bare names; others pause for a story. Judah comes first, because David came from Judah. Achan's sin is remembered in a single line: ‘Achar, who brought trouble upon Israel by violating the ban on devoted things’ (2:7). In the middle of Judah's clans a man named Jabez prays, “If only You would bless me and enlarge my territory!” (4:10), and God grants it. The tribes east of the Jordan win a battle ‘Because they put their trust in God’ (5:20), and later go into exile for turning to other gods. Ephraim mourns sons killed in a raid, and names a new son for the tragedy (7:22-23). A woman named Sheerah is remembered for building towns. Levi, the tribe set apart for God's house, stands at the center. Dan and Zebulun are missing, and no one knows why.\n\nThe lists end with a line that sums up the whole: ‘So all Israel was recorded in the genealogies written in the Book of the Kings of Israel. But Judah was exiled to Babylon because of their unfaithfulness’ (9:1). Then come the people who came home and the gatekeepers of God's house.\n\nA reader does not need to linger over every name. Read for the pauses, and notice what they are for."
+      },
+      {
+        "id": "king",
+        "h": "Saul falls, and all Israel makes David king",
+        "body": "Saul's whole reign is passed over. The book tells only his death on Mount Gilboa, where the Philistines defeat Israel, his sons fall, and Saul, wounded, dies rather than fall into their hands (10:1-6). The text names it in a verse, and these notes do not dwell on it. Then the narrator gives a verdict: ‘So Saul died for his unfaithfulness to the LORD, because he did not keep the word of the LORD and even consulted a medium for guidance’ (10:13), ‘and he failed to inquire of the LORD. So the LORD put him to death and turned the kingdom over to David son of Jesse’ (10:14).\n\nIf you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn.\n\nDavid's seven years as king of Judah alone and the long war with Saul's house are left out. All Israel comes to David at Hebron, ‘And they anointed him king over Israel, according to the word of the LORD through Samuel’ (11:3). He takes the Jebusite fortress of Zion, ‘And David became greater and greater, for the LORD of Hosts was with him’ (11:9). Long lists of warriors from every tribe follow, men who came to him even at Ziklag. The Spirit comes on one of them, Amasai, who says, “We are yours, O David! We are with you, O son of Jesse!” (12:18). The whole nation is of one mind to make David king."
+      },
+      {
+        "id": "ark",
+        "h": "The ark comes to Jerusalem",
+        "body": "David's first act as king of all Israel is to bring the ark of God, the gold-covered chest that stood for God's throne among his people, to Jerusalem. He consults the whole assembly, and they carry it on a new cart with joyful music. ‘David and all the Israelites were celebrating before God with all their might’ (13:8). When the oxen stumble, Uzzah reaches out to steady the ark, and the LORD strikes him dead. ‘Then David became angry because the LORD had burst forth against Uzzah’ (13:11). The ark stays three months at the house of Obed-edom, and it goes well with that household, for the LORD is with it.\n\nThe story is hard, and David himself was angry. The law had said the ark was to be carried on poles by Levites, and that touching the holy things meant death. When David tries again, he says, ‘For we did not consult Him about the proper order’ (15:13). He takes responsibility rather than blaming God or Uzzah. The text lets David's anger and fear stand, and these notes do not explain the death away.\n\nA word of care. This story must not be used to say that a sudden death, an accident or an illness today is God's punishment on the person who suffered it. Jesus refused that kind of reasoning: of people killed when a tower fell, he asked, “Do you think that they were more sinful than all the others living in Jerusalem? No, I tell you” (Luke 13:4-5). If you have lost someone suddenly, or carry fear or guilt after reading this, please speak with someone you trust, a pastor or a friend. The Find Help page on this site lists places to turn.\n\nThe second time, the Levites carry the ark on their shoulders, with singers, cymbals and trumpets, and David dances; Michal, Saul's daughter, watches from a window and despises him. The ark is set in David's tent, and Asaph and the Levites lead a song of thanks drawn from the Psalms: ‘Give thanks to the LORD, for He is good; His loving devotion endures forever’ (16:34)."
+      },
+      {
+        "id": "house",
+        "h": "A house for David",
+        "body": "Settled in his cedar palace, David says to the prophet Nathan, “Here I am, living in a house of cedar, while the ark of the covenant of the LORD is under a tent” (17:1). That night God answers through Nathan. David will not build God a house. God will build David one.\n\n‘I will raise up your descendant after you, one of your own sons, and I will establish his kingdom’ (17:11). ‘He will build a house for Me, and I will establish his throne forever’ (17:12). ‘I will be his Father, and he will be My son’ (17:13). ‘But I will set him over My house and My kingdom forever, and his throne will be established forever’ (17:14).\n\nThe promise governs the whole book. Chronicles tells it in a way that looks past any one king. In 2 Samuel the promise reads, ‘Your house and kingdom will endure forever before Me’ (2 Samuel 7:16). Here God says ‘My house and My kingdom’: the kingdom is God's own, entrusted to David's line. It was written when no son of David reigned, so for its first readers the promise was a hope, not a present fact. David goes in, sits before the LORD, and prays with wonder: who is he, that God should bring him this far?"
+      },
+      {
+        "id": "census",
+        "h": "Wars, a census, and a threshing floor",
+        "body": "Chapters 18 to 20 tell David's wars against the Philistines, Moab, the Arameans, Edom and Ammon. They are told in the language of ancient royal records, and Chronicles itself qualifies them: David may not build the temple, God says, because ‘You have shed much blood and waged great wars’ (22:8).\n\nThen comes the census. ‘Then Satan rose up against Israel and incited David to take a census of Israel’ (21:1). In 2 Samuel the same event begins, ‘Again the anger of the LORD burned against Israel, and He stirred up David against them’ (2 Samuel 24:1). Readers account for the difference in more than one way. Many see both as true at different levels: God permitted or used the adversary's temptation to carry out a judgment, as in Job, where the accuser acts only with God's leave. Others see a development in Israel's thought after the exile, with the Chronicler naming a heavenly adversary behind evil so that God is not seen as its author. Some take the Hebrew as an adversary, perhaps a human enemy whose threat prompted the count. All agree that David is still responsible; he says so himself.\n\nThe numbers differ too. Joab reports 800,000 men in Israel and 500,000 in Judah in Samuel, and 1,100,000 in all Israel with 470,000 in Judah here (21:5). David pays fifty shekels of silver in Samuel and six hundred shekels of gold here (21:25). The site's question page on the numbers in Samuel, Kings and Chronicles sets out the ways readers explain such differences, and these notes take no side beyond it.\n\nA plague falls, and David prays, ‘I am the one who has sinned and acted wickedly. But these sheep, what have they done?’ (21:17). He buys the threshing floor of Ornan, builds an altar, and God answers with fire. That threshing floor becomes the site of the temple."
+      },
+      {
+        "id": "temple",
+        "h": "Preparing for the temple",
+        "body": "The last eight chapters belong to the temple David will not build. He gathers stone, iron, bronze and cedar in vast amounts. He tells Solomon that a son ‘will be a man of rest’ (22:9), and charges him to be strong and build. He organizes the Levites for their new work in a settled house, divides the priests into twenty-four divisions by lot, sets apart singers who ‘prophesy’ with lyres and cymbals, and appoints gatekeepers, treasurers and officials.\n\nHe gives Solomon the written plan of the temple and charges him: ‘If you seek Him, He will be found by you; but if you forsake Him, He will reject you forever’ (28:9). He gives his own treasure and invites the leaders to give, and they give freely and with joy. Then David praises the LORD before the whole assembly: ‘Yours, O LORD, is the greatness and the power and the glory and the splendor and the majesty, for everything in heaven and on earth belongs to You’ (29:11). And then: ‘For everything comes from You, and from Your own hand we have given to You’ (29:14).\n\nThe amounts of gold and silver in these chapters are enormous, and readers take them in more than one way: as accurate, as figures enlarged in copying, or as deliberately grand language for the glory of the temple. David's own point does not depend on the sums. All of it came from God's hand, and what pleases God is ‘uprightness’ and willing giving (29:17). David dies ‘full of years, riches, and honor’ (29:28), and Solomon reigns."
+      },
+      {
+        "id": "parallels",
+        "h": "Reading Chronicles beside Samuel and Kings",
+        "body": "A common misreading treats Chronicles as a whitewash of David. Most scholars now read it differently. Its first readers already had Samuel and Kings; the Chronicler was not hiding what everyone knew. He leaves out David's adultery with Bathsheba, the murder of Uriah and Absalom's revolt, and yet he lists Uriah the Hittite among the mighty men (11:41) and tells David's sin in the census honestly and at length. He is painting a second portrait from another angle: David as the king God chose, all Israel united under him, and his reign turned toward God's house.\n\nWhere Chronicles tells the same event differently, these notes say so plainly and give the ways readers account for it in each view's own terms. Some differences are in numbers, which were easy to miscopy and which the Greek translation often reads differently. Some come from the Chronicler's sources or purposes. Some have no agreed explanation. Readers who hold to the Bible's full reliability treat many of them as questions of how the text was handed down. None of them touches what the books were written to teach.\n\nThe differences a reader meets in 1 Chronicles include these. David is Jesse's seventh son here and the eighth in 1 Samuel, perhaps because a brother who died without children was left out of the line. Saul ‘failed to inquire of the LORD’ (10:14), though 1 Samuel 28:6 says he asked and was not answered; the two books use different verbs, and Chronicles' word means to seek God with the whole life. Elhanan kills ‘Lahmi the brother of Goliath’ (20:5), where the Hebrew of 2 Samuel 21:19 says he killed Goliath, and many think the Samuel text was miscopied. The census is incited by Satan here and by the LORD in Samuel, and its numbers and price differ. In each case these notes give the main ways readers account for it, and let the reader weigh them."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads 1 Chronicles",
+        "body": "The New Testament opens with a genealogy built from the same family lines as 1 Chronicles 2 and 3: ‘This is the record of the genealogy of Jesus Christ, the son of David, the son of Abraham’ (Matthew 1:1). It runs through Judah, Perez, Boaz and Jesse to David, and on through the kings to ‘Jeconiah’ and, after the exile, to ‘Shealtiel’ and ‘Zerubbabel’ (Matthew 1:12), names that 1 Chronicles 3 lists among the descendants of Jeconiah the captive.\n\nThe letter to the Hebrews takes up God's word to David about his son and applies it to Jesus: “I will be His Father, and He will be My Son” (Hebrews 1:5). Luke's Gospel announces a son of David who will reign forever, and Acts reads the promise to David of his resurrection.\n\nThe New Testament draws those lines and no others from this book. It does not make every king or priest in 1 Chronicles a picture of Christ. Nothing in the book, or in the New Testament's use of it, gives anyone reason to blame or look down on the Jewish people. This is Israel's own Scripture, telling Israel who it is."
+      },
+      {
+        "id": "readers",
+        "h": "How to read 1 Chronicles",
+        "body": "Read it as theological history: a real account of the past, chosen and arranged to preach to its own generation. Keep Samuel and Kings open beside it. Do not skip the genealogies, but read them for their pauses: a prayer, a crime, a victory, a grief, an exile. Watch the words seek and unfaithful, the phrase all Israel, and the long attention to worship.\n\nDo not read the large numbers as a test of faith, or the wars as a pattern for today. Do not read Uzzah's death, or the plague, as a key for reading anyone's death or illness now. And do not read the book as a story of a flawless king. Its David sins in the census and says so, and it gives the temple to a man of peace.\n\nThree places are worth reading slowly: the song of thanks when the ark comes home (chapter 16), God's promise of a house for David (chapter 17), and David's prayer at the end (29:10-19), where everything is confessed as God's gift."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 1,
+        "ref": "1:1-54",
+        "line": "Why would a history begin with nine chapters of names?"
+      },
+      {
+        "ch": 2,
+        "v": 15,
+        "ref": "2:13-15",
+        "line": "Was David the seventh son of Jesse, as here, or the eighth, as 1 Samuel says?"
+      },
+      {
+        "ch": 3,
+        "v": 19,
+        "ref": "3:17-19",
+        "line": "Who was Zerubbabel's father, Pedaiah or Shealtiel?"
+      },
+      {
+        "ch": 4,
+        "v": 10,
+        "ref": "4:9-10",
+        "line": "Is the prayer of Jabez a formula for success?"
+      },
+      {
+        "ch": 5,
+        "v": 21,
+        "ref": "5:18-22",
+        "line": "The huge numbers of warriors, animals and captives."
+      },
+      {
+        "ch": 6,
+        "v": 28,
+        "ref": "6:27-28",
+        "line": "Was Samuel a Levite or an Ephraimite?"
+      },
+      {
+        "ch": 7,
+        "v": 13,
+        "ref": "7:1-40",
+        "line": "Why are Dan and Zebulun missing from the genealogies?"
+      },
+      {
+        "ch": 8,
+        "v": 33,
+        "ref": "8:33-34",
+        "line": "Names with Baal in Saul's family, changed in Samuel."
+      },
+      {
+        "ch": 9,
+        "v": 2,
+        "ref": "9:2-17",
+        "line": "Why the list of Jerusalem's residents differs from Nehemiah 11."
+      },
+      {
+        "ch": 10,
+        "v": 4,
+        "ref": "10:1-6",
+        "line": "Saul's death on Mount Gilboa."
+      },
+      {
+        "ch": 10,
+        "v": 14,
+        "ref": "10:13-14",
+        "line": "Saul ‘failed to inquire of the LORD’, though 1 Samuel 28:6 says he did."
+      },
+      {
+        "ch": 11,
+        "v": 1,
+        "ref": "11:1-9",
+        "line": "Why Chronicles leaves out David's years over Judah alone and the civil war."
+      },
+      {
+        "ch": 12,
+        "v": 24,
+        "ref": "12:23-37",
+        "line": "The troop numbers, and why Judah's is so small."
+      },
+      {
+        "ch": 13,
+        "v": 10,
+        "ref": "13:9-11",
+        "line": "Why God struck Uzzah dead when he tried to keep the ark from falling."
+      },
+      {
+        "ch": 15,
+        "v": 13,
+        "ref": "15:11-15",
+        "line": "Does the chapter blame Uzzah, or David?"
+      },
+      {
+        "ch": 18,
+        "v": 2,
+        "ref": "18:1-13",
+        "line": "Why the Bible celebrates David's wars."
+      },
+      {
+        "ch": 20,
+        "v": 5,
+        "ref": "20:4-8",
+        "line": "Who killed Goliath: David, or Elhanan? And where is Bathsheba?"
+      },
+      {
+        "ch": 21,
+        "v": 1,
+        "ref": "21:1",
+        "line": "Who incited the census: God (2 Samuel 24:1) or Satan?"
+      },
+      {
+        "ch": 21,
+        "v": 5,
+        "ref": "21:5",
+        "line": "Different numbers from 2 Samuel 24 for the census and the price."
+      },
+      {
+        "ch": 21,
+        "v": 14,
+        "ref": "21:14-17",
+        "line": "Seventy thousand dead in a plague for the king's sin."
+      },
+      {
+        "ch": 22,
+        "v": 8,
+        "ref": "22:6-10",
+        "line": "Why David, whose victories God gave, could not build the temple."
+      },
+      {
+        "ch": 27,
+        "v": 7,
+        "ref": "27:1-15",
+        "line": "Why Asahel is listed as a commander after his death."
+      },
+      {
+        "ch": 29,
+        "v": 7,
+        "ref": "29:1-9",
+        "line": "Can the enormous amounts of gold and silver be historical?"
+      }
+    ],
+    "words": [
+      {
+        "word": "All Israel",
+        "line": "The book's favorite phrase: the whole people, all twelve tribes, gathered around David and the house of God (11:1; 13:5)."
+      },
+      {
+        "word": "Seek",
+        "line": "In Hebrew darash: to turn to God in worship, prayer and obedience. Saul did not seek the LORD (10:14); Solomon is told to (28:9)."
+      },
+      {
+        "word": "Unfaithful",
+        "line": "In Hebrew ma'al: to break faith with God. Saul died for it (10:13), and Judah went into exile because of it (9:1)."
+      },
+      {
+        "word": "Genealogy",
+        "line": "A family list. In Chronicles it is an argument for identity: the returned community is still Israel (9:1)."
+      },
+      {
+        "word": "Ark of the covenant",
+        "line": "The gold-covered chest that stood for God's throne among his people, brought to Jerusalem in chapters 13 to 16."
+      },
+      {
+        "word": "Levites",
+        "line": "The tribe of Levi, set apart for God's house: carrying the ark, serving the priests, singing, keeping the gates (15:2; 23:3-5)."
+      },
+      {
+        "word": "House",
+        "line": "A palace, a temple or a line of kings. David may not build God a house; God will build David one (17:10-12)."
+      },
+      {
+        "word": "Man of rest",
+        "line": "God's word about Solomon, the son who will build the temple in peace (22:9)."
+      },
+      {
+        "word": "Satan",
+        "line": "In Hebrew satan, adversary or accuser. Readers take it in 21:1 as the heavenly accuser, or as an adversary."
+      },
+      {
+        "word": "Threshing floor",
+        "line": "A flat place for beating out grain. Ornan's became the site of the temple (21:18; 22:1)."
+      },
+      {
+        "word": "Divisions",
+        "line": "The twenty-four groups of priests, and of musicians, who served in turn, their order set by lot (24:7-19; 25:9-31)."
+      },
+      {
+        "word": "Prophesy",
+        "line": "Used of the temple musicians, who ‘prophesy’ with lyres and cymbals (25:1): music as a way of speaking God's word."
+      },
+      {
+        "word": "Darics",
+        "line": "A Persian gold coin first struck under Darius I. Its mention in 29:7 helps date the book after the exile."
+      },
+      {
+        "word": "Seer",
+        "line": "An older word for a prophet. Samuel the seer and Gad the seer are among the book's named sources (29:29)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 1010 BC",
+        "what": "Saul and his sons die on Mount Gilboa (chapter 10). Saul's dates are uncertain.",
+        "kind": "story"
+      },
+      {
+        "when": "About 1010 to 1003 BC",
+        "what": "David reigns at Hebron, over Judah alone. Chronicles mentions the years only in passing (3:4; 29:27).",
+        "kind": "story"
+      },
+      {
+        "when": "About 1003 BC",
+        "what": "All Israel anoints David at Hebron, and he takes Jerusalem (chapter 11). The dates are approximate.",
+        "kind": "story"
+      },
+      {
+        "when": "In David's reign",
+        "what": "The ark is brought to Jerusalem (chapters 13 to 16), and God promises David a house (chapter 17).",
+        "kind": "story"
+      },
+      {
+        "when": "About 970 BC",
+        "what": "David dies after forty years as king, and Solomon reigns (29:26-28).",
+        "kind": "story"
+      },
+      {
+        "when": "587 or 586 BC",
+        "what": "Babylon destroys Jerusalem and the temple. Judah goes into exile ‘because of their unfaithfulness’ (9:1).",
+        "kind": "world"
+      },
+      {
+        "when": "539 BC",
+        "what": "Cyrus of Persia takes Babylon.",
+        "kind": "world"
+      },
+      {
+        "when": "538 BC",
+        "what": "Cyrus decrees the return, the event with which Chronicles ends (2 Chronicles 36:22-23).",
+        "kind": "world"
+      },
+      {
+        "when": "About 520 BC",
+        "what": "Zerubbabel, of David's line, leads the returned community (3:19).",
+        "kind": "world"
+      },
+      {
+        "when": "515 BC",
+        "what": "The rebuilt temple is dedicated.",
+        "kind": "world"
+      },
+      {
+        "when": "The late sixth century BC",
+        "what": "The first gold darics are struck under Darius I (29:7).",
+        "kind": "world"
+      },
+      {
+        "when": "458 and 445 BC",
+        "what": "Ezra and then Nehemiah come to Jerusalem, on the traditional dating.",
+        "kind": "world"
+      },
+      {
+        "when": "About 400 to 350 BC",
+        "what": "Chronicles is written, on the most common dating. Some argue for about 520 to 515 BC, others for about 300 BC.",
+        "kind": "book"
+      },
+      {
+        "when": "The centuries before Christ",
+        "what": "The Greek translation divides Chronicles in two.",
+        "kind": "book"
+      },
+      {
+        "when": "The first century AD",
+        "what": "Matthew builds Jesus' genealogy from the family lines of 1 Chronicles 2 and 3 (Matthew 1:1-17).",
+        "kind": "book"
+      },
+      {
+        "when": "From the late 1960s",
+        "what": "Sara Japhet and H. G. M. Williamson argue that Chronicles and Ezra and Nehemiah come from different hands.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The land in the days of David",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "11:4",
+              "15:3",
+              "22:1"
+            ],
+            "line": "The Jebusite fortress of Zion, taken by David (11:4-7). The ark came here (15:3), and Ornan's threshing floor became the site of the temple (22:1).",
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "hebron",
+            "name": "Hebron",
+            "lat": 31.525,
+            "lon": 35.102,
+            "refs": [
+              "11:1",
+              "12:23",
+              "29:27"
+            ],
+            "line": "All Israel came to David here and anointed him king (11:1-3; 12:23-38). He had reigned here seven years (29:27)."
+          },
+          {
+            "id": "bethlehem",
+            "name": "Bethlehem",
+            "lat": 31.705,
+            "lon": 35.2,
+            "refs": [
+              "11:17"
+            ],
+            "line": "David's hometown. Three of his mighty men broke through the Philistines to bring him water from its well (11:15-19).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "jordan",
+            "name": "The Jordan",
+            "lat": 31.84,
+            "lon": 35.55,
+            "refs": [
+              "12:15",
+              "19:17"
+            ],
+            "line": "Gadite commanders crossed it in flood to join David (12:15), and David crossed it to fight the Arameans (19:17).",
+            "label": {
+              "dx": 8,
+              "dy": 10,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "5:9",
+              "5:16",
+              "10:11"
+            ],
+            "region": true,
+            "line": "The land east of the Jordan, home of Reuben, Gad and half of Manasseh (5:9-16). The men of Jabesh-gilead buried Saul (10:11-12). Drawn roughly."
+          },
+          {
+            "id": "beersheba",
+            "name": "Beersheba",
+            "lat": 31.245,
+            "lon": 34.84,
+            "refs": [
+              "4:28",
+              "21:2"
+            ],
+            "line": "A town of Simeon (4:28). David's census ran ‘from Beersheba to Dan’ (21:2)."
+          },
+          {
+            "id": "tyre",
+            "name": "Tyre",
+            "lat": 33.27,
+            "lon": 35.2,
+            "refs": [
+              "14:1",
+              "22:4"
+            ],
+            "line": "Hiram king of Tyre sent cedar and craftsmen for David's palace (14:1), and the people of Tyre brought cedar for the temple (22:4)."
+          },
+          {
+            "id": "damascus",
+            "name": "Damascus",
+            "lat": 33.513,
+            "lon": 36.27,
+            "refs": [
+              "18:5",
+              "18:6"
+            ],
+            "line": "David defeated the Arameans of Damascus and put garrisons among them (18:5-6).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only eight places are drawn, each placed elsewhere on this site; Gilead roughly, as a region. Mount Gilboa, Gibeon, Kiriath-jearim, Rabbah, Gath, Zobah, Hamath and Edom are left off, because where they lay is debated or is not placed in this site's records, and so are Babylon and Persia. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-genealogies",
+        "name": "Reading Genealogies and Lists",
+        "line": "How to read the nine chapters of names, and what they were for",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "David and his line with approximate dates, and how Kings and Chronicles tell the story",
+        "icon": "scroll"
+      },
+      {
+        "href": "/questions/contradictions/numbers-in-samuel-kings-and-chronicles",
+        "name": "Why do Samuel and Chronicles give different numbers?",
+        "line": "The census (21:5), the price of the threshing floor, and the ways readers account for them",
+        "icon": "people"
+      },
+      {
+        "href": "/questions/contradictions/the-two-genealogies",
+        "name": "Why do Matthew and Luke give different genealogies?",
+        "line": "Jesus' family line, built from the lists of 1 Chronicles 2 and 3",
+        "icon": "people"
+      },
+      {
+        "href": "/study/bible/doctrines/worship",
+        "name": "Worship",
+        "line": "Behind the ark, the Levites, the singers and David's song of thanks (chapters 15, 16 and 25)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/temple",
+        "name": "Tabernacle, Temple, and God's Presence",
+        "line": "Behind the plans for the temple and the threshing floor (chapters 21 to 29)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/covenant",
+        "name": "Covenant",
+        "line": "Behind God's promise of a house for David (chapter 17)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/messiah",
+        "name": "The Messiah",
+        "line": "Behind the son of David whose throne will last forever (17:11-14)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/prayer",
+        "name": "Prayer and Lament",
+        "line": "Behind Jabez's prayer and David's great prayer at the end (4:10; 29:10-19)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/wealth",
+        "name": "Money and Possessions",
+        "line": "Behind the willing gifts and ‘from Your own hand we have given to You’ (29:14)",
+        "icon": "book"
+      }
+    ]
+  }
 }

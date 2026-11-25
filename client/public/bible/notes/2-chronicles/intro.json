@@ -33,5 +33,554 @@
     { "ch": 30, "why": "Hezekiah's Passover invites all Israel, north and south, back to the house of God, and God heals a people who were not ritually ready." },
     { "ch": 33, "why": "Manasseh's captivity, prayer, and restoration show that no one is beyond the reach of repentance." },
     { "ch": 36, "why": "Jerusalem falls after long mercy, the land keeps its Sabbaths, and Cyrus's decree leaves the door open for return." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "2 Chronicles in a minute",
+        "body": "Second Chronicles is the fourteenth book of the Bible and has 36 chapters. It is the second half of one work, Chronicles, which retells Israel's history from Adam to the decree of Cyrus that let the exiles go home.\n\nChapters 1 to 9 belong to Solomon, and almost all of them to one project: the temple in Jerusalem. Solomon asks for wisdom, builds the house his father planned, brings in the ark, and prays at its dedication, and fire and glory answer. Chapters 10 to 36 follow the kings of Judah, David's descendants, from the split of the kingdom under Rehoboam around 931 BC to the burning of Jerusalem by Babylon in 587 or 586 BC. The northern kingdom appears only where it touches Judah.\n\nEach king is measured by one question: did he seek the LORD or forsake him? Kings who seek him are helped, kings who forsake him are disciplined, and often the same king does both. Again and again a king or a people humbles itself, and God hears. The worst king of all, Manasseh, is taken captive, prays, and is brought home.\n\nThe book ends not with ashes but with a decree. Cyrus of Persia invites God's people to go up and build again: ‘may the LORD his God be with him, and may he go up’ (36:23)."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Second Chronicles goes on from 1 Chronicles, which traced the families of Israel from Adam and told David's reign, with its long preparations for a temple he would not build. Here Solomon builds it, and the story runs through the kings of Judah to the exile. It covers the same years as 1 Kings 1 to 2 Kings 25, often in the same words, but from another angle.\n\nIn English Bibles it is followed by Ezra and Nehemiah, which take up the return from Babylon, the rebuilding of the temple and walls, and the reform of the community. The last two verses of 2 Chronicles are repeated as the first verses of Ezra. In the traditional Hebrew order Chronicles stands among the Writings, often as the very last book, so that the Hebrew Scriptures close on Cyrus's invitation to go up.\n\nThe prophets spoke into these same reigns. Isaiah dates his vision by Uzziah, Jotham, Ahaz and Hezekiah, and Jeremiah's word is named in the last chapter. Reading them beside this book fills out the picture, and the site's plain notes on 1 and 2 Kings tell the same events from the earlier telling."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book does not name its author. A Jewish tradition in the Babylonian Talmud credits Ezra. For a long time scholars treated Chronicles, Ezra and Nehemiah as one history by one writer, partly because of the shared decree of Cyrus. Since the late twentieth century many, notably Sara Japhet and H. G. M. Williamson, have argued from vocabulary and outlook that Chronicles and Ezra-Nehemiah come from different hands. Most now speak simply of the Chronicler. His deep interest in the Levites, singers and gatekeepers has led many to think he was a Levite himself, though that is an inference.\n\nHe was a careful user of sources. He drew heavily on Samuel and Kings, in a form sometimes closer to Hebrew manuscripts found among the Dead Sea Scrolls than to the traditional Hebrew text, and he names other works now lost, such as the records of Nathan the prophet and the visions of Iddo the seer (9:29).\n\nHe wrote after the exile: the book ends with Cyrus's decree of 539 or 538 BC, and 1 Chronicles counts gold in darics, a Persian coin first minted around the end of the sixth century BC. Most scholars date it in the Persian period, commonly around 400 to 350 BC. Some place it a little later, after Alexander the Great, and a minority argue for a first edition around 520 to 500 BC, when the temple was rebuilt."
+      },
+      {
+        "id": "world",
+        "h": "The world it was written for",
+        "body": "The stories run through four centuries. Solomon reigned over a united Israel in the tenth century BC, with trade reaching Tyre, Egypt and Arabia. After his death the ten northern tribes broke away under Jeroboam, and Judah, with Benjamin and much of the priesthood, stayed with David's line. Judah lived in the shadow of greater powers: Egypt, whose Pharaoh Shishak invaded under Rehoboam around 925 BC; Assyria, which destroyed the northern kingdom and fell on Judah under Hezekiah in 701 BC; and Babylon, whose king Nebuchadnezzar burned the temple in 587 or 586 BC. The dates of the kings in these notes follow the site's guide to the kings of Israel and Judah, which uses Thiele's scheme and says where other chronologies differ.\n\nThe first readers lived in a very different world. Judah was Yehud, a small province of the Persian Empire. The temple had been rebuilt and finished in 516 or 515 BC, but it was modest; there was no king of David's line; the community was poor, small and often discouraged, and priests and Levites carried much of its leadership. For them the story of the old temple and the old kings told them who they were and how to live before God in their own day."
+      },
+      {
+        "id": "built",
+        "h": "How 2 Chronicles is built",
+        "body": "The book has six movements. Chapters 1 to 9 are Solomon and the temple. Chapters 10 to 12 tell the division of the kingdom and Rehoboam's humbling before Shishak. Chapters 13 to 20 follow Abijah, Asa and Jehoshaphat, kings who seek the LORD and are helped, though Asa ends badly and Jehoshaphat makes unwise alliances with the north. Chapters 21 to 28 run from Jehoram to Ahaz: Athaliah's seizure of the throne, Joash rescued and later turning, and kings who begin well and end poorly, down to Ahaz, who shuts the temple doors. Chapters 29 to 32 are Hezekiah's reform and his deliverance from Assyria. Chapters 33 to 36 go from Manasseh's sin and repentance through Josiah's renewal to the fall of Jerusalem and Cyrus's decree.\n\nWatch a handful of words. To seek the LORD, darash, is to turn to him in worship, prayer and trust; to forsake him, azav, is its opposite. To humble oneself, kana, is the turning that God answers again and again. To be unfaithful, ma'al, is to break faith with him. And watch all Israel: the book follows Judah, but it never writes off the north. Prophets appear at nearly every turn, many of them known only from Chronicles, so that judgment never comes without warning."
+      },
+      {
+        "id": "temple",
+        "h": "Solomon's temple, and the prayer it answers",
+        "body": "At Gibeon God offers Solomon whatever he asks, and he asks, ‘Now grant me wisdom and knowledge, so that I may lead this people’ (1:10). He builds the temple on Mount Moriah, ‘on the threshing floor of Ornan the Jebusite’ (3:1), where David's plague had stopped. When the ark is brought in and the singers praise God, ‘the glory of the LORD filled the house of God’ (5:14).\n\nSolomon's prayer at the dedication knows that no building can hold God: ‘Even heaven, the highest heaven, cannot contain You, much less this temple I have built’ (6:18). He asks God to hear whatever is prayed toward this house, in defeat, drought, famine, plague and even captivity in an enemy's land. ‘When Solomon had finished praying, fire came down from heaven and consumed the burnt offering and the sacrifices, and the glory of the LORD filled the temple’ (7:1).\n\nThen God answers at night. ‘If I close the sky so there is no rain, or if I command the locust to devour the land, or if I send a plague among My people’ (7:13), ‘and if My people who are called by My name humble themselves and pray and seek My face and turn from their wicked ways, then I will hear from heaven, forgive their sin, and heal their land’ (7:14). The promise belongs to the troubles Solomon had named, the discipline Israel's covenant had warned of, and the same answer goes on to warn of exile if Israel forsakes God. First Kings tells the same appearance without these verses; only Chronicles sets the promise among drought, locusts and plague.\n\nThe verse is often read as a promise to a modern nation. The site's context guide, Is 2 Chronicles 7:14 a Promise to America?, reads it where it was first spoken. To Solomon's Israel the promise was concrete: their land, their covenant, their temple. To the Chronicler's readers it was a question answered in the stories that follow, above all in Manasseh's. Through Christ the people called by God's name now reach into every nation, and no nation owns them. The verse still promises that God hears his people's humble prayer. It does not promise any nation revival or victory in exchange for prayer, and the four verbs, humble, pray, seek and turn, begin with the people who pray them."
+      },
+      {
+        "id": "divided",
+        "h": "The kingdom divides, and a king humbled",
+        "body": "Solomon's wealth and fame fill chapters 8 and 9; the queen of Sheba comes, and Solomon reigns forty years. The Chronicler leaves out his many foreign wives and his turning to other gods in old age, which 1 Kings 11 tells. His readers had Kings, and he was not hiding it; he was drawing out what they needed to hear.\n\nAt Shechem Rehoboam answers the northern tribes harshly, and they break away. ‘So the king did not listen to the people, and indeed this turn of events was from God’ (10:15). Rehoboam is strengthened, then abandons the law, and Shishak of Egypt invades. The prophet Shemaiah brings God's word, and the leaders and the king humble themselves and say, “The LORD is righteous” (12:6). God answers that he will not destroy them. ‘Nevertheless, they will become his servants, so that they may learn the difference between serving Me and serving the kings of other lands’ (12:8).\n\nThat is the pattern of the whole book in small. Humbling brings mercy, not greatness. Rehoboam keeps his throne, and Solomon's gold shields go to Egypt."
+      },
+      {
+        "id": "seekers",
+        "h": "Kings who seek, and kings who stop",
+        "body": "Abijah faces Jeroboam's larger army and calls the north back: ‘O children of Israel, do not fight against the LORD, the God of your fathers, for you will not succeed’ (13:12). Asa removes foreign altars and, facing a vast army, prays, “O LORD, there is no one besides You to help the powerless against the mighty” (14:11). The prophet Azariah tells him, “The LORD is with you when you are with Him. If you seek Him, He will be found by you, but if you forsake Him, He will forsake you” (15:2).\n\nLate in his reign Asa buys help from Damascus with the temple's silver. The seer Hanani rebukes him: ‘For the eyes of the LORD roam to and fro over all the earth, to show Himself strong on behalf of those whose hearts are fully devoted to Him’ (16:9). Asa puts the seer in prison. ‘In the thirty-ninth year of his reign, Asa became diseased in his feet, and his malady became increasingly severe. Yet even in his illness he did not seek the LORD, but only the physicians’ (16:12). The verse faults Asa for not seeking God, not for seeing physicians, and it does not make his illness a measure for anyone else's.\n\nIt needs to be said plainly. The Bible does not teach that sickness comes from too little faith, or that a person who stays ill did not believe enough. Paul prayed and was not healed, and no one blames him. If you live with chronic illness, pain or disability, you are not a failure of faith. Your worth to God does not rise or fall with your body. If the weight of it is heavy, please share it with someone you trust: a friend, a pastor, a doctor. The Find Help page on this site lists places to turn.\n\nJehoshaphat sends Levites to teach the law in every town and appoints judges. He also marries his son into Ahab's house and joins Ahab at war, and a prophet asks him, “Should you help the wicked and love those who hate the LORD?” (19:2). When three nations invade, he prays, “We do not know what to do, but our eyes are upon You” (20:12), and the army goes out with singers before it: “Give thanks to the LORD, for His loving devotion endures forever” (20:21)."
+      },
+      {
+        "id": "middle",
+        "h": "Athaliah, Joash, and a murdered prophet",
+        "body": "The alliance with Ahab's house bears bitter fruit. Jehoram kills his brothers and walks in the ways of Ahab, ‘Yet the LORD was unwilling to destroy the house of David, because of the covenant He had made with David’ (21:7). When his son Ahaziah dies, Ahaziah's mother Athaliah, Ahab's daughter, sets out to destroy the royal family. One infant, Joash, is hidden in the temple for six years, and the priest Jehoiada crowns him.\n\nJoash repairs the temple while Jehoiada lives. After the old priest dies, the king and the officials turn to idols. The Spirit of God comes on Jehoiada's son Zechariah, and he tells them God's word: “Because you have forsaken the LORD, He has forsaken you” (24:20). Then ‘by order of the king, they stoned him in the courtyard of the house of the LORD’ (24:21). His last words are, “May the LORD see this and call you to account” (24:22).\n\nJesus spoke of this murder. To the scribes and Pharisees of his own day he said that ‘all the righteous blood shed on earth, from the blood of righteous Abel to the blood of Zechariah son of Berechiah, whom you murdered between the temple and the altar’ (Matthew 23:35) would come upon that generation. Luke's version names only Zechariah (Luke 11:51). Abel's murder is the first in Genesis, and Zechariah's is the last told in Chronicles, the last book in the Hebrew order, so many see in Jesus' words the whole span of the Hebrew Scriptures. Matthew's son of Berechiah is a known difficulty, set out on the notes for Matthew 23 and on chapter 24 here. Jesus spoke to leaders of his own day about what they were about to do. His words give no one reason to blame the Jewish people, then or now.\n\nAmaziah and Uzziah each begin well. Uzziah grows strong, and then, ‘when Uzziah grew powerful, his arrogance led to his own destruction’ (26:16): he enters the temple to burn incense, a task kept for the priests, and is struck with a skin disease that keeps him ‘cut off from the house of the LORD’ (26:21) until he dies. The story is told of one king's pride in one act. It is not a key for reading anyone's illness."
+      },
+      {
+        "id": "hezekiah",
+        "h": "Ahaz shuts the doors; Hezekiah opens them",
+        "body": "Ahaz makes images for the Baals, and he ‘sacrificed his sons in the fire’ (28:3). The text names it, the worst evil a king could do, and these notes do not describe it. Judah is defeated by Aram and by Israel, and the northern army takes captives from its own kinsmen. A prophet named Oded meets the army at Samaria, and leaders of Ephraim clothe and feed the captives and bring them back to Jericho (28:15). Then Ahaz shuts the doors of the temple.\n\nHezekiah opens them in the first month of his reign. The Levites cleanse the house, and the king sends couriers through all Israel, north as well as south, inviting them to keep the Passover in Jerusalem: ‘For the LORD your God is gracious and merciful; He will not turn His face away from you if you return to Him’ (30:9). Many come who are not ritually ready, and Hezekiah prays for them. ‘And the LORD heard Hezekiah and healed the people’ (30:20).\n\nSennacherib of Assyria invades in 701 BC. Hezekiah strengthens the city, encourages the people, and prays with the prophet Isaiah, and the Assyrian army is turned back. Chronicles tells the siege more briefly than Kings, and adds that when envoys came from Babylon, ‘God left him alone to test him, that He might know all that was in Hezekiah’s heart’ (32:31)."
+      },
+      {
+        "id": "manasseh",
+        "h": "Manasseh's repentance, and Josiah",
+        "body": "Manasseh, Hezekiah's son, reigns fifty-five years and undoes everything. He rebuilds the high places, sets up altars to the stars in the temple courts, ‘He sacrificed his sons in the fire in the Valley of Hinnom’ (33:6), and sets an idol in God's house. The text names child sacrifice as the deepest evil, and these notes do not describe it.\n\nA word for anyone who was not protected by a parent, or was handed over to harm by someone who should have kept them safe. This story does not call that right. What was done to you was wrong, and it was not your fault. If you are still in danger, please tell someone you trust and get help. The Find Help page on this site lists places to turn.\n\nHere Chronicles tells what Kings does not. Assyrian commanders take Manasseh to Babylon with a hook. ‘And in his distress, Manasseh sought the favor of the LORD his God and earnestly humbled himself before the God of his fathers’ (33:12). God hears him ‘so He brought him back to Jerusalem and to his kingdom. Then Manasseh knew that the LORD is God’ (33:13). He removes the foreign gods and restores the altar.\n\nSecond Kings 21 tells Manasseh's reign without the repentance and lays the fall of Jerusalem at his door. Readers account for the difference in more than one way. Some historians think Chronicles preserves a real episode that Kings left out because it did not change the outcome, and they note that Assyrian records list Manasseh among the vassal kings who served Esarhaddon and Ashurbanipal. Others think the Chronicler shaped the story to teach that God answers repentance in every generation. On either reading, a people back from Babylon could read their own story in this man.\n\nJosiah begins to seek God while still young, cleanses the land, finds the Book of the Law in the temple, renews the covenant and keeps a great Passover. He dies at Megiddo fighting Pharaoh Neco, and Chronicles says that ‘He did not listen to Neco’s words from the mouth of God’ (35:22)."
+      },
+      {
+        "id": "exile",
+        "h": "The fall of Jerusalem, and a decree",
+        "body": "The last four kings reign under Egypt and Babylon. Zedekiah ‘did not humble himself’ before Jeremiah (36:12). The narrator sums up the long story of warning: ‘Again and again the LORD, the God of their fathers, sent word to His people through His messengers because He had compassion on them and on His dwelling place’ (36:15). ‘But they mocked the messengers of God, despising His words and scoffing at His prophets, until the wrath of the LORD against His people was stirred up beyond remedy’ (36:16). Babylon burns the temple and breaks down the walls, and the survivors are carried into exile. The text tells it in a few plain lines and does not linger.\n\n‘So the land enjoyed its Sabbath rest all the days of the desolation, until seventy years were completed, in fulfillment of the word of the LORD through Jeremiah’ (36:21). Even the empty land is given a meaning: a rest the people had not kept.\n\nThis is Judah's own Scripture, judging Judah's own kings and grieving Judah's own losses. It was written for people who had lost everything, to help them understand their history and turn back to God. It is not a key for reading anyone else's suffering, and it gives no one a warrant to say that any people's suffering, then or now, is a punishment they deserved. It is never a reason to blame the Jewish people.\n\nA word for anyone who has lived through a flood, a storm or another disaster. Your loss was not a judgment on you. When Jesus was asked about people killed when a tower fell, he refused that reading of a disaster: “Do you think that they were more sinful than all the others living in Jerusalem? No, I tell you” (Luke 13:4-5). If you are carrying this, you need people more than explanations. Please talk to someone you trust, and the Find Help page has people you can call.\n\nThen, in two verses, the door opens. In the first year of Cyrus, ‘the LORD stirred the spirit of Cyrus king of Persia’ (36:22), and Cyrus invites anyone among God's people to go up and build the house of God again."
+      },
+      {
+        "id": "parallels",
+        "h": "Reading Chronicles beside Kings",
+        "body": "A common misreading treats Chronicles as Kings with the bad parts removed. Most scholars now read it differently. Its first readers already had Kings, and the Chronicler was not hiding what they knew. He leaves out Solomon's foreign wives and his turning to other gods, told in 1 Kings 11, and almost all the northern kings. He adds speeches, prophets, reforms, Passovers and the repentance of Manasseh. These choices are his message.\n\nWhere Chronicles tells the same event differently, these notes say so plainly and give the ways readers account for it in each view's own terms. Kings gives Abijam, as it names him, a brief and negative verdict (1 Kings 15:3); Chronicles gives Abijah a speech calling the north back to God and a victory. Chronicles says Asa removed the high places (14:3), and also that ‘The high places were not removed from Israel’ (15:17), the line Kings gives; the book sets the two side by side and does not explain them, and readers reconcile them in more than one way. Kings tells Manasseh's reign without his repentance. Kings tells Josiah's death in a verse; Chronicles says he would not hear God's word through Neco.\n\nSome differences are in numbers. Abijah's battle has armies of 400,000 and 800,000 and 500,000 slain, very large for the region at the time, and readers handle such figures in several ways: as accurate, as figures enlarged in copying, as a word for thousand that may also mean a military unit, or as deliberate grandeur. The site's question page on the numbers in Samuel, Kings and Chronicles sets out the ways, and these notes take no side beyond it. None of these differences touches what the books were written to teach."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads 2 Chronicles",
+        "body": "The New Testament draws few direct lines from this book, and these notes keep to them. Jesus named the murder of Zechariah in the temple court as the last of the righteous blood from Abel onward (Matthew 23:35; Luke 11:51), a span many read as the first and last murders of the Hebrew Scriptures. Matthew's genealogy runs through the kings of this book by name: ‘Solomon the father of Rehoboam, Rehoboam the father of Abijah, and Abijah the father of Asa’ (Matthew 1:7), and on through Jehoshaphat, Uzziah, Hezekiah, Manasseh and Josiah ‘at the time of the exile to Babylon’ (Matthew 1:11). Matthew counts ‘fourteen from David to the exile to Babylon’ (Matthew 1:17).\n\nJesus also named Solomon's glory and Solomon's wisdom. ‘Yet I tell you that not even Solomon in all his glory was adorned like one of these’ (Matthew 6:29), he said of the lilies, and of the queen of the South who came to hear Solomon, ‘and now One greater than Solomon is here’ (Matthew 12:42).\n\nThe New Testament does not make every king or every sacrifice in the book a picture of Christ, and neither do these notes. Nothing in the book, or in the New Testament's use of it, gives anyone reason to blame or look down on the Jewish people. This is Israel's own Scripture, telling Israel's own story."
+      },
+      {
+        "id": "readers",
+        "h": "How to read 2 Chronicles",
+        "body": "Read it as a sermon on history, not a second draft of Kings, and keep Kings open beside it. Notice what the Chronicler leaves out and what he adds; his choices are his message. Watch the words seek, forsake, humble and unfaithful, and the phrase all Israel.\n\nDo not read the pattern of seeking and help as a mechanical rule, as if every good thing proved obedience and every trouble proved sin. The Chronicler's point is more pastoral: God responds to his people, repentance is never wasted, and each generation stands before God on its own account. Do not read Asa's feet, Uzziah's skin disease or the fall of Jerusalem as a key for reading anyone's illness or loss now. Do not read 7:14 as a promise to a modern nation. And do not read the large numbers as a test of faith.\n\nThree places are worth reading slowly: Solomon's prayer and God's answer (chapters 6 and 7), Jehoshaphat's prayer before the battle he did not have to fight (chapter 20), and Manasseh's return (chapter 33), where the worst king of Judah is heard."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 14,
+        "ref": "1:14-17",
+        "line": "Solomon's horses and chariots, which the law warned kings against."
+      },
+      {
+        "ch": 2,
+        "v": 17,
+        "ref": "2:17-18",
+        "line": "The foreigners Solomon put to forced labor."
+      },
+      {
+        "ch": 6,
+        "v": 18,
+        "ref": "6:18",
+        "line": "If heaven cannot contain God, what did the temple mean?"
+      },
+      {
+        "ch": 7,
+        "v": 14,
+        "ref": "7:13-15",
+        "line": "Is 7:14 a promise to a modern nation?"
+      },
+      {
+        "ch": 7,
+        "v": 20,
+        "ref": "7:19-22",
+        "line": "God's warning that he would uproot Israel and reject the temple."
+      },
+      {
+        "ch": 10,
+        "v": 15,
+        "ref": "10:15",
+        "line": "‘This turn of events was from God’: did God cause the division?"
+      },
+      {
+        "ch": 12,
+        "v": 8,
+        "ref": "12:5-8",
+        "line": "Humbled and spared, but still made Shishak's servants."
+      },
+      {
+        "ch": 13,
+        "v": 17,
+        "ref": "13:3-17",
+        "line": "Armies of 400,000 and 800,000, and 500,000 slain."
+      },
+      {
+        "ch": 15,
+        "v": 17,
+        "ref": "14:3; 15:17",
+        "line": "Did Asa remove the high places or not?"
+      },
+      {
+        "ch": 16,
+        "v": 12,
+        "ref": "16:12",
+        "line": "Asa ‘did not seek the LORD, but only the physicians’."
+      },
+      {
+        "ch": 18,
+        "v": 22,
+        "ref": "18:18-22",
+        "line": "A lying spirit sent by the LORD to Ahab's prophets."
+      },
+      {
+        "ch": 20,
+        "v": 23,
+        "ref": "20:22-23",
+        "line": "The enemy armies destroy one another."
+      },
+      {
+        "ch": 21,
+        "v": 15,
+        "ref": "21:12-19",
+        "line": "Jehoram's illness, foretold in a letter from Elijah."
+      },
+      {
+        "ch": 22,
+        "v": 10,
+        "ref": "22:10-12",
+        "line": "Athaliah's attempt to destroy the royal family."
+      },
+      {
+        "ch": 24,
+        "v": 21,
+        "ref": "24:20-22",
+        "line": "Zechariah's murder, and why Matthew 23:35 calls him the son of Berechiah."
+      },
+      {
+        "ch": 25,
+        "v": 12,
+        "ref": "25:11-12",
+        "line": "Ten thousand thrown from a cliff."
+      },
+      {
+        "ch": 26,
+        "v": 21,
+        "ref": "26:16-21",
+        "line": "Uzziah struck with a skin disease for burning incense."
+      },
+      {
+        "ch": 28,
+        "v": 3,
+        "ref": "28:3",
+        "line": "Ahaz sacrificed his sons in the fire."
+      },
+      {
+        "ch": 30,
+        "v": 18,
+        "ref": "30:17-20",
+        "line": "Passover eaten by people not ritually clean, and God heals them."
+      },
+      {
+        "ch": 32,
+        "v": 31,
+        "ref": "32:31",
+        "line": "‘God left him alone to test him’."
+      },
+      {
+        "ch": 33,
+        "v": 6,
+        "ref": "33:6",
+        "line": "Manasseh's child sacrifice and sorcery."
+      },
+      {
+        "ch": 33,
+        "v": 13,
+        "ref": "33:10-17",
+        "line": "Manasseh's repentance, which Kings does not tell."
+      },
+      {
+        "ch": 35,
+        "v": 22,
+        "ref": "35:20-24",
+        "line": "Josiah killed for not heeding ‘God’ speaking through Pharaoh Neco."
+      },
+      {
+        "ch": 36,
+        "v": 16,
+        "ref": "36:15-21",
+        "line": "If God chose Jerusalem, how could he let the city and the temple burn?"
+      }
+    ],
+    "words": [
+      {
+        "word": "Seek",
+        "line": "In Hebrew darash: to turn to God in worship, prayer and trust. The book's measure of a king (15:2; 34:3)."
+      },
+      {
+        "word": "Forsake",
+        "line": "In Hebrew azav: to abandon God, the opposite of seeking. ‘If you forsake Him, He will forsake you’ (15:2)."
+      },
+      {
+        "word": "Humble oneself",
+        "line": "In Hebrew kana: the turning God answers, from Rehoboam to Manasseh (12:6-7; 33:12). Zedekiah would not (36:12)."
+      },
+      {
+        "word": "Unfaithful",
+        "line": "In Hebrew ma'al: to break faith with God. Uzziah was unfaithful when he burned incense (26:16)."
+      },
+      {
+        "word": "All Israel",
+        "line": "The whole people, north and south. Hezekiah invites ‘all Israel’ to the Passover (30:1)."
+      },
+      {
+        "word": "High places",
+        "line": "Local shrines on hills, often used for other gods. Good kings tore them down, and some were left standing (14:3; 15:17)."
+      },
+      {
+        "word": "Asherah poles",
+        "line": "Wooden objects for the Canaanite goddess Asherah, set up near altars. Reforming kings cut them down (14:3; 34:3)."
+      },
+      {
+        "word": "Ark of the covenant",
+        "line": "The gold-covered chest that stood for God's throne, brought into the temple's inner room (5:7)."
+      },
+      {
+        "word": "Passover",
+        "line": "The feast remembering the exodus. Hezekiah and Josiah each keep a great one (chapters 30 and 35)."
+      },
+      {
+        "word": "Seer",
+        "line": "An older word for a prophet. Hanani the seer rebukes Asa (16:7), and Iddo the seer is a named source (9:29)."
+      },
+      {
+        "word": "Lamp for David",
+        "line": "God's promise to keep a descendant of David on the throne (21:7)."
+      },
+      {
+        "word": "Sabbath rest",
+        "line": "The rest the land kept during the exile, ‘until seventy years were completed’ (36:21)."
+      },
+      {
+        "word": "Valley of Hinnom",
+        "line": "A valley by Jerusalem where Ahaz and Manasseh sacrificed their sons (28:3; 33:6)."
+      },
+      {
+        "word": "Cyrus",
+        "line": "The Persian king whose decree lets the exiles go up to rebuild (36:22-23)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 970 BC",
+        "what": "Solomon begins to reign, and asks God for wisdom at Gibeon (chapter 1). The dates are approximate.",
+        "kind": "story"
+      },
+      {
+        "when": "About 966 BC",
+        "what": "Solomon begins the temple, on the traditional dating from 1 Kings 6:1.",
+        "kind": "story"
+      },
+      {
+        "when": "About 931 BC",
+        "what": "Solomon dies, and the kingdom divides under Rehoboam (chapter 10).",
+        "kind": "story"
+      },
+      {
+        "when": "About 925 BC",
+        "what": "Shishak of Egypt invades Judah (chapter 12).",
+        "kind": "story"
+      },
+      {
+        "when": "From about 910 to about 870 BC",
+        "what": "Asa reigns forty-one years (chapters 14 to 16).",
+        "kind": "story"
+      },
+      {
+        "when": "841 to 835 BC",
+        "what": "Athaliah holds the throne; the infant Joash is hidden in the temple (chapters 22 and 23).",
+        "kind": "story"
+      },
+      {
+        "when": "835 to 796 BC",
+        "what": "Joash reigns. After Jehoiada dies, Zechariah is stoned in the temple court (24:20-22).",
+        "kind": "story"
+      },
+      {
+        "when": "Alone 767 to 740 or 739 BC",
+        "what": "Uzziah reigns, and his skin disease makes his son Jotham regent (chapter 26).",
+        "kind": "story"
+      },
+      {
+        "when": "716 or 715 to 687 or 686 BC",
+        "what": "Hezekiah reigns, reopens the temple and keeps the Passover (chapters 29 to 32).",
+        "kind": "story"
+      },
+      {
+        "when": "701 BC",
+        "what": "Sennacherib of Assyria invades Judah (chapter 32).",
+        "kind": "world"
+      },
+      {
+        "when": "697 or 696 to 643 or 642 BC",
+        "what": "Manasseh reigns, the longest reign in Judah (chapter 33).",
+        "kind": "story"
+      },
+      {
+        "when": "641 or 640 to 609 BC",
+        "what": "Josiah reigns; he dies at Megiddo fighting Pharaoh Neco (chapters 34 and 35).",
+        "kind": "story"
+      },
+      {
+        "when": "587 or 586 BC",
+        "what": "Babylon burns the temple and Jerusalem (chapter 36).",
+        "kind": "world"
+      },
+      {
+        "when": "539 or 538 BC",
+        "what": "Cyrus of Persia decrees the return (36:22-23).",
+        "kind": "world"
+      },
+      {
+        "when": "516 or 515 BC",
+        "what": "The rebuilt temple is finished.",
+        "kind": "world"
+      },
+      {
+        "when": "About 400 to 350 BC",
+        "what": "Chronicles is written, on the most common dating. Some argue for about 520 to 500 BC, others for after Alexander the Great.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "Judah and its neighbors in the days of the kings",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "3:1",
+              "7:12",
+              "36:19"
+            ],
+            "line": "Solomon built the temple on Mount Moriah (3:1), the place God chose (7:12). Babylon burned it (36:19).",
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "hebron",
+            "name": "Hebron",
+            "lat": 31.525,
+            "lon": 35.102,
+            "refs": [
+              "11:10"
+            ],
+            "line": "One of the fortified cities Rehoboam built up in Judah (11:5-10)."
+          },
+          {
+            "id": "beersheba",
+            "name": "Beersheba",
+            "lat": 31.245,
+            "lon": 34.84,
+            "refs": [
+              "19:4",
+              "30:5"
+            ],
+            "line": "Judah's southern edge. Jehoshaphat went out ‘from Beersheba to the hill country of Ephraim’ (19:4), and Hezekiah's Passover invitation ran ‘from Beersheba to Dan’ (30:5)."
+          },
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "13:19"
+            ],
+            "line": "A town of the north, one of the cities Abijah took from Jeroboam (13:19).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "jericho",
+            "name": "Jericho",
+            "lat": 31.871,
+            "lon": 35.444,
+            "refs": [
+              "28:15"
+            ],
+            "line": "‘The City of Palms’, where the men of Ephraim brought back the captives from Judah (28:15).",
+            "label": {
+              "dx": 4,
+              "dy": -12,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "samaria",
+            "name": "Samaria",
+            "lat": 32.4,
+            "lon": 35.42,
+            "refs": [
+              "18:2",
+              "28:9"
+            ],
+            "region": true,
+            "line": "The northern capital. Jehoshaphat visited Ahab there (18:2), and the prophet Oded met the army bringing captives (28:9). Drawn roughly."
+          },
+          {
+            "id": "tyre",
+            "name": "Tyre",
+            "lat": 33.27,
+            "lon": 35.2,
+            "refs": [
+              "2:3"
+            ],
+            "line": "Solomon asked Hiram king of Tyre for cedar, as he had sent to David (2:3)."
+          },
+          {
+            "id": "damascus",
+            "name": "Damascus",
+            "lat": 33.513,
+            "lon": 36.27,
+            "refs": [
+              "16:2",
+              "24:23",
+              "28:5"
+            ],
+            "line": "The Aramean capital. Asa bought its king's help with the temple's silver (16:2), and its armies later struck Judah (24:23; 28:5).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only eight places are drawn, each placed elsewhere on this site; Samaria roughly, as a region. Gibeon, Megiddo, Lachish, Ramoth-gilead, Moab, Ammon and Edom are left off, because where they lay is debated or is not placed in this site's records, and so are Egypt, Assyria and Babylon. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/resources/context/2-chronicles-7-14-in-context",
+        "name": "Is 2 Chronicles 7:14 a Promise to America?",
+        "line": "God's answer to Solomon read where it was first spoken, and what it never promised any nation",
+        "icon": "world"
+      },
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "Every king of Judah with approximate dates, the prophets who spoke to them, and how Kings and Chronicles tell the story",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/empires",
+        "name": "The Empires Around Israel",
+        "line": "Egypt, Assyria, Babylon and Persia, and what their own records say",
+        "icon": "scroll"
+      },
+      {
+        "href": "/questions/contradictions/numbers-in-samuel-kings-and-chronicles",
+        "name": "Why do Samuel, Kings and Chronicles give different numbers?",
+        "line": "The armies and sums in this book, and the ways readers account for them",
+        "icon": "people"
+      },
+      {
+        "href": "/study/bible/doctrines/temple",
+        "name": "Tabernacle, Temple, and God's Presence",
+        "line": "Behind Solomon's temple, the glory that filled it, and its burning (chapters 3 to 7 and 36)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/prayer",
+        "name": "Prayer and Lament",
+        "line": "Behind Solomon's prayer, Jehoshaphat's and Manasseh's (chapters 6, 20 and 33)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/repentance",
+        "name": "Repentance and Forgiveness",
+        "line": "Behind 7:14, Rehoboam's humbling and Manasseh's return",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/idolatry",
+        "name": "Idolatry",
+        "line": "Behind the high places, the Asherah poles and the altars of Ahaz and Manasseh",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/judgment",
+        "name": "Judgment and Justice",
+        "line": "Behind the fall of Jerusalem, and what it does and does not teach",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/exile",
+        "name": "Exile and Restoration",
+        "line": "Behind the exile, the land's Sabbath rest and Cyrus's decree",
+        "icon": "book"
+      },
+      {
+        "href": "/help/suffering",
+        "name": "Why would God let this happen?",
+        "line": "For the fall of Jerusalem, Asa's and Uzziah's illnesses, and anyone carrying a loss: the Find Help page",
+        "icon": "people"
+      }
+    ]
+  }
 }
