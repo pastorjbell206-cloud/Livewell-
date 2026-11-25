@@ -76,7 +76,8 @@ name.
 ### 3. Next: a monthly partner program, without a paywall
 
 - Make "each month" the first thing a visitor sees on `/support`, with
-  one-time one tap away. This is how the Bible Project grew, and a $10
+  one-time one tap away. (Done 2026-11-25: monthly is first and chosen, at
+  $10.) This is how the Bible Project grew, and a $10
   monthly partner gives $120 a year.
 - Call monthly givers **partners**. They get nothing locked away from
   anyone else; they get a short letter from James each quarter with a
