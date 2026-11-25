@@ -20713,3 +20713,18 @@ Cut in chapter 10: the deep note's line from the vine of 10:1 to John 15:1, whic
 | Deuteronomy 29:23 paraphrased; Isaiah 11:11 (its phrase) | 8-12 | hosea/11.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 11: nothing further; the New Testament line kept is Matthew 2:15. The title of verses 8-12 does not quote 11:8, so that no first-person words stand outside quoted Scripture.
+
+## The plain notes on Hosea 12 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1 (its first clause; the rest paraphrased); 12:2 paraphrased; 12:3; 12:4 (its clause; the rest paraphrased); 12:5 paraphrased; 12:6 | 1-6 | BSB | BSB text |
+| The double game: Menahem's tribute to Tiglath-pileser III; Hoshea, So of Egypt and prison; olive oil as a diplomatic gift; the east wind; a covenant lawsuit, present and past; the Jacob stories from Genesis; the weeping not in Genesis, a fuller tradition or an interpretation; Ephraim with the cunning and not the tears; 12:6 as the way back | 1-6 | hosea/12.json `historical`, `cultural`, `literary`, `summary` | Repository; both readings of 12:4 in their holders' terms |
+| Genesis 25:26; 32:22-32; 28:10-22; 35:1-15; Micah 6:8 (its clause) | 1-6 | hosea/12.json `cultural`; BSB | Repository; BSB text |
+| 12:7; 12:8-12 paraphrased (12:8's inner quotation not quoted); 12:13; 12:14 paraphrased | 7-14 | BSB | BSB text |
+| Kena'an as Canaan and merchant; dishonest scales forbidden; wealth as proof of innocence; the appointed feast as Tabernacles and the tents; Gilead and Gilgal with sanctuaries; Gilead annexed about 733 BC (2 Kings 15:29); gallim; two departures, Jacob to Aram and Israel from Egypt by a prophet, Moses | 7-14 | hosea/12.json `cultural`, `historical`, `literary` | Repository |
+| Leviticus 19:35-36; Deuteronomy 25:13-16; Genesis 29:20 paraphrased; Deuteronomy 18:15 (its first sentence) | 7-14 | hosea/12.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 12: the deep note's lines to John 1:51 and Acts 3:22, which the New Testament does not draw from this chapter; Deuteronomy 18:15 is given in its own place as the law's word about a prophet like Moses. Jacob's blessing at the Jabbok is told without the bless family of words.
