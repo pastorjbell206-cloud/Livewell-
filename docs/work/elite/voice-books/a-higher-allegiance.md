@@ -27,7 +27,8 @@ Three scripts, kept outside the repo in `/home/user/vs2/` (`apply.py`, `factdiff
 | Chapter 4: "Jesus Is Lord" | 4,674 | 4,661 | -0.3% | 2 (0.4) | 0 (0.0) | 125 (26.7) | 88 (18.9) | 31 | PASS |
 | Chapter 5: Civil Religion | 4,670 | 4,673 | +0.1% | 2 (0.4) | 0 (0.0) | 117 (25.1) | 94 (20.1) | 27 | PASS |
 | Chapter 6: How Christian Nationalism Quietly Rewrites Doctrine | 5,114 | 5,109 | -0.1% | 1 (0.2) | 0 (0.0) | 111 (21.7) | 84 (16.4) | 21 | PASS |
-| **All 7** | 28,299 | 28,194 | -0.4% | 15 (0.5) | 0 (0.0) | 856 (30.2) | 587 (20.8) | 228 | |
+| Chapter 7: Constantine's Bargain | 3,975 | 3,964 | -0.3% | 2 (0.5) | 1 (0.3) | 106 (26.7) | 79 (19.9) | 36 | PASS |
+| **All 8** | 32,274 | 32,158 | -0.4% | 17 (0.5) | 1 (0.0) | 962 (29.8) | 666 (20.7) | 264 | |
 
 ## Introduction: Not Persecuted—Seduced (`sec01.xhtml`)
 
@@ -195,3 +196,27 @@ Five pairs:
    After: Prayer, Scripture, Sabbath, fasting, silence, confession, communion: these are the practices that anchor the church's identity in something deeper than the news cycle.
 
 Left alone, and why. This chapter is the most developed prose in the book and took the fewest edits. "Christian nationalism quietly rewrites this." keeps its own line in each of the four sections; "It feels like faithfulness.", "It is a political caucus that opens with a prayer.", "I do not doubt their sincerity. I question the formation." and "Christ alone." are verdicts. The double standard is stated both ways and stays word for word ("When our leader lies, it is strategy. When their leader lies, it is corruption. ..."), and so does the pair "Not Scripture as filtered through the priorities of Fox News or MSNBC." and the test set to both sides ("A church that reserves prophetic speech only for the other side has become a propaganda arm"). The fair statement of the people he is correcting ("They are sincere. They love Jesus. They are afraid.") and the concession after the five slogans ("Policies do matter. Laws do shape cultures.") were not touched. The five slogans were five paragraphs and are one. Allowed: "Supreme" (the fragment "Supreme." is now "supreme" inside a sentence; "Supreme Court" is untouched).
+
+
+## Chapter 7: Constantine's Bargain (`sec08.xhtml`)
+
+Words 3,975 to 3,964. Em-dashes in his prose 2 to 1 (0.5 to 0.3 per 1,000 words). Tells 106 to 79 (26.7 to 19.9 per 1,000). Mean sentence 13.1 words to 15.8; sentences of eight words or fewer 37.5% to 24.3%; of five or fewer 16.0% to 9.1%. 36 edits; paragraphs 92 to 76. Paragraphs of fifteen words or fewer 16 to 7; runs of three fragments 2 to 0.
+
+By kind (before to after): emdash 2 to 1, not_but 8 to 11, not_just 2 to 2, NotX.Y 9 to 0, isnt_its 2 to 2, triplet 18 to 22, frag3 2 to 0, anaphora 18 to 9, stock 3 to 3, intens 14 to 14, colon_reveal 1 to 0, short_close 10 to 8, one_line_para 16 to 7, forbidden 1 to 0.
+
+Fact diff: **PASS**. Fixed blocks (headings, pull quote, block quotes, and the end matter: Key Takeaways, Reflection Questions, Practices, Sources & Notes) identical; 19 quoted strings, 5 Scripture references, 0 years, 13 numbers in digits, 32 number words, proper names by count, and 47 hedge words (after: 47) compared.
+
+Five pairs:
+
+1. Before: He returned confiscated property to the churches. He exempted clergy from certain taxes and civic duties. He funded church construction.
+   After: He returned confiscated property to the churches, exempted clergy from certain taxes and civic duties, and funded church construction.
+2. Before: And when those two considerations conflict, as they inevitably will, the church that is tied to power will almost always choose survival over truth. Not because the leaders are wicked. Not because they have consciously chosen cowardice. But because the structural incentives of privilege push toward compliance.
+   After: And when those two considerations conflict, as they inevitably will, the church that is tied to power will almost always choose survival over truth, not because the leaders are wicked, not because they have consciously chosen cowardice, but because the structural incentives of privilege push toward compliance.
+3. Before: That is Constantine's bargain. Protection in exchange for compliance. Privilege in exchange for silence. A seat at the table in exchange for not disrupting the meal.
+   After: That is Constantine's bargain: protection in exchange for compliance, privilege in exchange for silence, a seat at the table in exchange for not disrupting the meal.
+4. Before: Israel demands a king. Not because they have rejected God intellectually. Not because they have embraced paganism. But because they are afraid. The Philistines are a real threat. Samuel's sons are corrupt. The nation feels vulnerable.
+   After: Israel demands a king, not because they have rejected God intellectually, not because they have embraced paganism, but because they are afraid. The Philistines are a real threat, Samuel's sons are corrupt, and the nation feels vulnerable.
+5. Before: What it had was the Holy Spirit. What it had was a community of believers whose love for one another was so visible, so radical, and so countercultural that the watching world could not explain it. What it had was a message so powerful that it turned the Roman Empire upside down, not through political maneuvering but through proclamation, service, and the willingness to suffer.
+   After: What it had was the Holy Spirit. What it had was a community of believers whose love for one another was so visible, so radical, and so countercultural that the watching world could not explain it. What it had was a message so powerful that it turned the Roman Empire upside down, not through political maneuvering but through proclamation, service, and the willingness to suffer.
+
+Left alone, and why. The chapter is careful to be fair to Constantine ("These were not small things. They were real blessings. And anyone who tells you that Constantine simply "ruined" Christianity in one stroke is offering lazy history and bad theology.") and to Christendom ("The claim that Christendom was simply a dark age of religious tyranny is historically illiterate."); both passages are word for word. "And then, almost overnight, the entire calculus changed.", "It was a posture.", "And then Constantine put the cross on his soldiers' shields.", "And the church panicked." and "It is a clarification." are hinges. The paired contrasts ("Rome said power flows from the top down. The cross said power flows from the bottom up.") stay as pairs. The history of Luther, Calvin and the Church of England took one semicolon. Forbidden list: "the legal and cultural landscape" is now "the legal and cultural order". One dash stays, before the translation of In hoc signo vinces.
