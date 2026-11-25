@@ -18015,3 +18015,18 @@ Cut in chapter 1: the deep note's line to Christ by contrast (Mark 10:45 and Gal
 | Acts 23:16 | 19-23 | acts/plain/23.json (Esther 2:21-23); BSB | Repository; BSB text |
 
 Cut in chapter 2: the deep note's lines to Christ (Genesis 50:20, Galatians 4:4, the hidden identity; the note says Esther is not a type of Christ); the Persepolis tablets naming a Marduka (left to the book page and chapter 10); a quotation of 1 Samuel 9:1 and of 2 Kings 24:12 corrected to the BSB's words before commit.
+
+## The plain notes on Esther 3 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Haman promoted after Mordecai's unrewarded deed; the Agagite and Agag, as most readers hear it; Amalek's attack and the old war; Mordecai of Kish; bowing as ordinary courtesy; the one clue; a slight turned to a plan in one verse | 1-6 | esther/3.json `story`, `cultural`, `literary`, `words` (Agagi, shachah) | Repository |
+| Exodus 17:16; 1 Samuel 15:8; no people today is Amalek | 1-6 | esther/3.json `cultural`; 1-samuel/intro.json `teaching` and exodus/plain/17.json (`hard`: no people living today is Amalek); BSB | Repository; BSB text |
+| Why Mordecai would not bow: honor due God (with the Greek additions' prayer); Benjaminite and Agagite; pride; the clue of verse 4; the response monstrous whatever the motive | 1-6 `hard` | esther/3.json `hard` | Repository; the readings in their holders' terms |
+| The twelfth year, about 474 BC; the lot a year away; pur and the Akkadian word; lots for lucky days; Haman's manipulation; ten thousand talents; the signet ring; the thirteenth of Nisan, the eve of Passover; 3:15; the decree not lingered over | 7-15 | esther/3.json `historical`, `cultural`, `literary`, `words` (pur) | Repository |
+| Proverbs 16:33 | 7-15 | esther/3.json `doctrines` (sovereignty: Proverbs 16:33); BSB | Repository; BSB text |
+| The decree to destroy a people: hatred written into law and exposed; the threat to the people of the promises; never a reason to blame the Jewish people or to harm anyone | 7-15 `hard` | esther/intro.json `purpose`, `story`; esther/3.json `doctrines` (sin, covenant) | Repository; the readings in their holders' terms |
+
+Cut in chapter 3: the deep note's lines to Christ (Exodus 1, 2 Kings 11 and Matthew 2:16 as one conflict reaching the cross, and the eve of Passover set beside Luke 22; the note says the New Testament does not cite Esther and the link is thematic); the inscribed die from Assyria (not needed); the words of the decree's list of victims (not lingered over).
