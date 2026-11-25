@@ -21059,3 +21059,24 @@ Cut in chapter 20: the deep note's lines to Christ (1 Peter 2:23 and Jesus' non-
 | Psalm 20:7; Psalm 33:17 (its first clause) | 20-31 | proverbs/21.json `historical` (Psalm 20:7); the chapter data's cross-references for 21:31 (Psalm 33:17); BSB | Repository; BSB text |
 
 Cut in chapter 21: the deep note's lines to Christ (Acts 4:27-28 as the deepest example of verse 1; Matthew 9:13 and 12:7 beside verse 3; 1 Corinthians 15:57 as verse 31 fulfilled; Mark 10:45 and 1 Peter 3:18 set in contrast with verse 18, which the note says is not what the proverb means).
+
+## The plain notes on Proverbs 22 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 22:1; 22:2; 22:3; 22:4; 22:6; 22:7; 22:8 (its first clause); 22:9 | 1-9 | BSB | BSB text |
+| The end of Solomon's collection at 22:16; wealth and poverty gathered; one Maker; debt servitude, children taken (2 Kings 4:1; Nehemiah 5:1-5), the seventh-year release (Exodus 21:2; Deuteronomy 15:12); description, not approval | 1-9 | proverbs/22.json `story`, `literary`, `cultural` | Repository |
+| 2 Kings 4:1 (the widow's last clause); Ezekiel 18:20 (its second sentence) | 1-9 | proverbs/22.json `cultural` (2 Kings 4:1), `hard` (Ezekiel 18); BSB | Repository; BSB text |
+| The hard note: comfort and pain; a pattern, not a contract; 19:27; good parents with wayward children and the reverse; Ezekiel 18; the three readings of ‘the way he should go’; the task taken seriously; parents not the only cause; no blame on grieving parents | 1-9 `hard` | proverbs/22.json `hard`; guides/reading-wisdom.json section 2 (the guilt laid on parents) | Repository; each reading in its holders' terms |
+| 22:10; 22:11; 22:12 paraphrased; the lion (22:13) paraphrased (it holds an inner quotation and an exclamation); 22:14 (its first clause); 22:15; 22:16 | 10-16 | BSB | BSB text |
+| The comic slacker; children not born wise; shevet and its range (13:24's word note; 10:13; 26:3); the 375 verses of 10:1 to 22:16 | 10-16 | proverbs/22.json `cultural`, `story`; proverbs/13.json `words` (shevet) | Repository |
+| Colossians 3:21 | 10-16 | proverbs/13.json `hard` (Colossians 3:21); BSB | Repository; BSB text |
+| The hard note on 22:15: two readings, each fairly, with 13:24, 23:13-14 and 29:15; measured physical discipline, calmly, never in anger or to injure, aimed at the folly not the child; the rod as correction in general, adult fools, the methods of its culture, consequences, teaching and relationship, Ephesians 6:4 and Colossians 3:21; dividing faithful parents without dividing anyone from Christ; no side; anger or injury is not discipline; no warrant to harm a child; injury and abuse condemned | 10-16 `hard` | proverbs/13.json `hard`; proverbs/23.json `hard`; needs/parenting.json `faq`; wisdom/deep/parenting-struggles.json `misread`, `differ` | Repository; each reading in its holders' terms; no side |
+| Care line (‘Abuse of a child is a crime...’ to ‘...lists places to turn.’) | 10-16 `hard` | colossians/plain/3.json, ephesians/plain/6.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| 22:17 (its first clause); keeping them (22:18); 22:19 (its first clause); 22:20; 22:21 paraphrased; 22:22-23; 22:24 (its first clause); 22:25 paraphrased; 22:26; 22:28; 22:29 (its first two sentences) | 17-29 | BSB | BSB text; the quoted spans hold no dash |
+| The seam: the Words of the Wise to 24:22; longer units, commands with reasons, direct address; verse 19's purpose; Amenemope published in the 1920s, an official to his son, thirty chapters, the parallels of 22:17 to 23:11; adaptation or a common tradition; the LORD as defender of the poor; verse 20's three readings; boundary stones moved at night; the court at the gate and the poor | 17-29 | proverbs/22.json `story`, `historical`, `cultural`, `literary`, `words` (shalish, gevul) | Repository; each view in its holders' terms |
+| Deuteronomy 27:17 (the curse); James 2:5 (from ‘Has not God’) | 17-29 | proverbs/22.json `cultural` (Deuteronomy 27:17), `christ` (James 2:1-7); BSB | Repository; BSB text |
+
+Cut in chapter 22: the deep note's lines (2 Corinthians 9:7 and the Greek addition after verse 8, which the note says Paul ‘appears to draw on’, not certain enough to state; Acts 17:28-31 and Colossians 2:3 as connections of practice and theme).
