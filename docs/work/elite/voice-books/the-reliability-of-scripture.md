@@ -51,7 +51,11 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Twenty-Four: Practicing the Trust — Scripture as Daily Bread | 1,008 | 1,008 | +0.0% | 19 (18.8) | 0 (0.0) | 39 (38.7) | 20 (19.8) | 11 | PASS |
 | Chapter Twenty-Five: A Final Word — To the Skeptic Who Made It This Far | 673 | 673 | +0.0% | 5 (7.4) | 0 (0.0) | 18 (26.7) | 13 (19.3) | 4 | PASS |
 | Chapter Twenty-Six: The Bible's Self-Understanding Through History — From Desert to Diaspora | 1,043 | 1,043 | +0.0% | 15 (14.4) | 0 (0.0) | 32 (30.7) | 17 (16.3) | 9 | PASS |
-| **All 27** | 29,497 | 29,497 | +0.0% | 386 (13.1) | 2 (0.1) | 778 (26.4) | 404 (13.7) | 267 | |
+| Chapter Twenty-Seven: The Parable of the Coins — An Illustration of Textual Criticism | 750 | 750 | +0.0% | 6 (8.0) | 0 (0.0) | 10 (13.3) | 4 (5.3) | 5 | PASS |
+| Chapter Twenty-Eight: The Church Under Pressure — How Persecution Tested and Confirmed the Text | 620 | 620 | +0.0% | 7 (11.3) | 0 (0.0) | 15 (24.2) | 8 (12.9) | 6 | PASS |
+| Chapter Twenty-Nine: What Kind of Book Is This? — The Unity of Scripture | 845 | 845 | +0.0% | 16 (18.9) | 0 (0.0) | 24 (28.4) | 8 (9.5) | 12 | PASS |
+| Chapter Thirty: The Reader in the Story — Why This Matters for Your Life | 707 | 707 | +0.0% | 15 (21.2) | 0 (0.0) | 27 (38.2) | 13 (18.4) | 12 | PASS |
+| **All 31** | 32,419 | 32,419 | +0.0% | 430 (13.3) | 2 (0.1) | 854 (26.3) | 437 (13.5) | 302 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -641,3 +645,91 @@ Five pairs, taken at even intervals through the chapter:
    After: Jesus's frequent citations of the Old Testament, his engagement with the precise wording of specific texts, his statement that not the smallest letter would pass from the Law until all was accomplished: all of it signals a community for whom the exact words mattered profoundly.
 5. Before: The scrolls show that across the entire span from the Second Temple through the medieval period — more than a thousand years — the essential content of the text remained stable, not because the scribes were infallible but because the community had organized its whole institutional life around the faithful transmission of the words of God. The history of the text's transmission is, at its core, the story of communities for whom the exact words mattered — not as a fetish for letterism, not as a substitute for living faith, but because the words were the medium through which the living God addressed his people.
    After: The scrolls show that across the entire span from the Second Temple through the medieval period (more than a thousand years), the essential content of the text remained stable, not because the scribes were infallible but because the community had organized its whole institutional life around the faithful transmission of the words of God. The history of the text's transmission is, at its core, the story of communities for whom the exact words mattered, not as a fetish for letterism, not as a substitute for living faith, but because the words were the medium through which the living God addressed his people.
+
+
+## Chapter Twenty-Seven: The Parable of the Coins — An Illustration of Textual Criticism (`sec28.xhtml`)
+
+Words 750 to 750. Em-dashes in his prose 6 to 0 (8.0 to 0.0 per 1,000 words). Tells 10 to 4 (13.3 to 5.3 per 1,000). Mean sentence 21.4 words to 21.4; sentences of eight words or fewer 14.3% to 14.3%; of five or fewer 8.6% to 8.6%. 5 edits; paragraphs 8 to 8. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 6 to 0, NotX.Y 1 to 1, triplet 2 to 2, intens 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 1 Scripture references, 0 years, 0 numbers in digits, 32 number words, proper names by count, and 10 hedge words (after: 10) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: When you compare them, they agree with each other almost entirely — but there are small differences.
+   After: When you compare them, they agree with each other almost entirely, but there are small differences.
+2. Before: What you do — which is exactly what textual critics do — is compare all twenty-seven copies systematically.
+   After: What you do, which is exactly what textual critics do, is compare all twenty-seven copies systematically.
+3. Before: The critical Greek New Testament text published by the United Bible Societies and by Nestle-Aland represents the cumulative work of this scholarship — the best available reconstruction of what the original New Testament documents said, based on analysis of the full manuscript tradition.
+   After: The critical Greek New Testament text published by the United Bible Societies and by Nestle-Aland represents the cumulative work of this scholarship: the best available reconstruction of what the original New Testament documents said, based on analysis of the full manuscript tradition.
+4. Before: When historians want to establish the exact image and legend on a Roman coin minted in a particular year, they do not need a perfect exemplar — a coin preserved with every detail sharp and clear.
+   After: When historians want to establish the exact image and legend on a Roman coin minted in a particular year, they do not need a perfect exemplar, a coin preserved with every detail sharp and clear.
+5. Before: The overwhelming agreement is the minting — the original from which all copies were made.
+   After: The overwhelming agreement is the minting: the original from which all copies were made.
+
+
+## Chapter Twenty-Eight: The Church Under Pressure — How Persecution Tested and Confirmed the Text (`sec29.xhtml`)
+
+Words 620 to 620. Em-dashes in his prose 7 to 0 (11.3 to 0.0 per 1,000 words). Tells 15 to 8 (24.2 to 12.9 per 1,000). Mean sentence 26.9 words to 26.9; sentences of eight words or fewer 17.4% to 17.4%; of five or fewer 13.0% to 13.0%. 6 edits; paragraphs 8 to 8. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 7 to 0, not_but 2 to 2, not_just 1 to 1, triplet 2 to 2, intens 1 to 1, colon_reveal 1 to 1, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 0 Scripture references, 0 years, 1 numbers in digits, 5 number words, proper names by count, and 10 hedge words (after: 10) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The Latin word traditio — "handing over" — was applied to the act of surrendering the Scriptures to Roman authorities, and Christians who complied became known as traditores, the origin of our word "traitor.
+   After: The Latin word traditio ("handing over") was applied to the act of surrendering the Scriptures to Roman authorities, and Christians who complied became known as traditores, the origin of our word "traitor.
+2. Before: They believed it was what it claimed to be — not because they could not imagine it being false, but because the evidence of its truth had been so thoroughly embedded in their lives, their worship, their pastoral practice, and their corporate memory that surrendering the text was equivalent to surrendering the reality the text described.
+   After: They believed it was what it claimed to be, not because they could not imagine it being false, but because the evidence of its truth had been so thoroughly embedded in their lives, their worship, their pastoral practice, and their corporate memory that surrendering the text was equivalent to surrendering the reality the text described.
+3. Before: What produced the willingness to die was the conviction that the text being targeted was not a human composition but a divine communication — that to hand it over was a betrayal not merely of culture but of God.
+   After: What produced the willingness to die was the conviction that the text being targeted was not a human composition but a divine communication, that to hand it over was a betrayal not merely of culture but of God.
+4. Before: When restrictions eased and paper Bibles became available again, the texts recovered from memory were compared with the available manuscripts — and the accuracy of memorized transmission was striking.
+   After: When restrictions eased and paper Bibles became available again, the texts recovered from memory were compared with the available manuscripts, and the accuracy of memorized transmission was striking.
+5. Before: It is the evidence of communities for whom the text was valuable enough to be carried in their bodies when it could not be carried in their hands — and who preserved it accurately because accuracy mattered.
+   After: It is the evidence of communities for whom the text was valuable enough to be carried in their bodies when it could not be carried in their hands, and who preserved it accurately because accuracy mattered.
+
+
+## Chapter Twenty-Nine: What Kind of Book Is This? — The Unity of Scripture (`sec30.xhtml`)
+
+Words 845 to 845. Em-dashes in his prose 16 to 0 (18.9 to 0.0 per 1,000 words). Tells 24 to 8 (28.4 to 9.5 per 1,000). Mean sentence 25.3 words to 25.3; sentences of eight words or fewer 24.2% to 24.2%; of five or fewer 6.1% to 6.1%. 12 edits; paragraphs 11 to 11. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 16 to 0, isnt_its 1 to 1, triplet 4 to 4, colon_reveal 2 to 2, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 3 quoted strings, 5 Scripture references, 0 years, 4 numbers in digits, 17 number words, proper names by count, and 7 hedge words (after: 7) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The Bible is a library of sixty-six books written by approximately forty different human authors over a period of roughly fifteen hundred years — a span no other text in human possession can claim.
+   After: The Bible is a library of sixty-six books written by approximately forty different human authors over a period of roughly fifteen hundred years, a span no other text in human possession can claim.
+2. Before: Human beings, given the gift of freedom, chose to use that freedom against the one who gave it, and the consequences of that choice infected the created order — relationships broken, the ground cursed, death introduced, the image of God in humanity twisted but not destroyed.
+   After: Human beings, given the gift of freedom, chose to use that freedom against the one who gave it, and the consequences of that choice infected the created order: relationships broken, the ground cursed, death introduced, the image of God in humanity twisted but not destroyed.
+3. Before: It is the story that emerges from the library when the library is read as a whole — when the typological connections, the thematic threads, the narrative progressions are allowed to speak.
+   After: It is the story that emerges from the library when the library is read as a whole, when the typological connections, the thematic threads, the narrative progressions are allowed to speak.
+4. Before: The tabernacle in the wilderness — the mobile dwelling of God's presence among the people — finds its answer in the incarnation, which John 1:14 describes using the Greek word for "tabernacling":
+   After: The tabernacle in the wilderness, the mobile dwelling of God's presence among the people, finds its answer in the incarnation, which John 1:14 describes using the Greek word for "tabernacling":
+5. Before: But the scale of the coherence, and the way it runs through every level of the text — from individual word choices to broad narrative structures to typological patterns — is not easily explained by editorial activity alone.
+   After: But the scale of the coherence, and the way it runs through every level of the text (from individual word choices to broad narrative structures to typological patterns) is not easily explained by editorial activity alone.
+
+
+## Chapter Thirty: The Reader in the Story — Why This Matters for Your Life (`sec31.xhtml`)
+
+Words 707 to 707. Em-dashes in his prose 15 to 0 (21.2 to 0.0 per 1,000 words). Tells 27 to 13 (38.2 to 18.4 per 1,000). Mean sentence 18.1 words to 18.6; sentences of eight words or fewer 30.8% to 28.9%; of five or fewer 28.2% to 26.3%. 12 edits; paragraphs 12 to 12. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 2 to 2.
+
+By kind (before to after): emdash 15 to 0, not_but 2 to 2, NotX.Y 3 to 3, isnt_its 1 to 1, frag3 2 to 2, anaphora 3 to 3, colon_reveal 0 to 1, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 2 Scripture references, 0 years, 0 numbers in digits, 6 number words, proper names by count, and 9 hedge words (after: 9) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: This is the unusual — perhaps unique — feature of the biblical story.
+   After: This is the unusual, perhaps unique, feature of the biblical story.
+2. Before: This is not metaphor in the weak sense — nice language that conveys an abstract truth. It is a claim about what actually happens when the word is received; the person who hears and trusts is incorporated into the story, their life becomes part of the argument, and their faithfulness — or their faithlessness — is evidence in the ongoing case about whether the God of the Bible is real and whether his word is trustworthy.
+   After: This is not metaphor in the weak sense: nice language that conveys an abstract truth. It is a claim about what actually happens when the word is received; the person who hears and trusts is incorporated into the story, their life becomes part of the argument, and their faithfulness, or their faithlessness, is evidence in the ongoing case about whether the God of the Bible is real and whether his word is trustworthy.
+3. Before: The disciples were appointed as witnesses — people whose testimony about what they had seen and heard was to be the mechanism by which the story spread.
+   After: The disciples were appointed as witnesses, people whose testimony about what they had seen and heard was to be the mechanism by which the story spread.
+4. Before: This is why the reliability of Scripture, which we have argued for at length on historical and textual grounds, also has a phenomenological dimension — the dimension of lived testimony.
+   After: This is why the reliability of Scripture, which we have argued for at length on historical and textual grounds, also has a phenomenological dimension: the dimension of lived testimony.
+5. Before: A story — the ongoing story of a God who made the world and will not give it up, who entered it in human flesh and changed everything, and who continues to call people into the story by speaking through the text that has survived every century's attempts to silence it.
+   After: A story: the ongoing story of a God who made the world and will not give it up, who entered it in human flesh and changed everything, and who continues to call people into the story by speaking through the text that has survived every century's attempts to silence it.
