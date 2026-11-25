@@ -38,8 +38,10 @@ const isoOf = (n) => new Date(n * DAY_MS).toISOString().slice(0, 10);
  * What the static page needs from the year map: its first and last day,
  * each Advent Sunday, the daily sets' windows and titles, and the nights a
  * set's week does not cover (Thanksgiving's Friday and Saturday after, which
- * take its last day; the Advent weeks' nights outside December 1 to 25,
- * which have no reading: client/src/lib/familyTable.ts tonightOn).
+ * take its last day; the Advent weeks' nights before December 1, which have
+ * no reading: client/src/lib/familyTable.ts tonightOn). The nights after
+ * Christmas in Advent's last week take the next week's devotion, begun early
+ * (familyTable.ts afterChristmas), so here they are an ordinary week's night.
  */
 export function slotData(root) {
   const src = fs.readFileSync(path.join(root, YEAR_MAP), "utf8");
@@ -64,6 +66,7 @@ export function slotData(root) {
     for (let n = dayNum(start); n < dayNum(start) + 7; n++) {
       const iso = isoOf(n);
       if (iso < from || iso > through || sets.some(([, a, b]) => a <= iso && iso <= b)) continue;
+      if (set === "advent" && sets.some(([s, , b]) => s === "advent" && b < iso && n - dayNum(b) < 7)) continue;
       let day = 0;
       if (set !== "advent") {
         let gap = Infinity;

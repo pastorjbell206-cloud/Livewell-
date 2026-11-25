@@ -71,8 +71,9 @@ function lineFor(t: Tonight, lead = "Tonight at the table:"): TonightLine | null
  *   Advent calendar starts Tuesday, December 1, with The Long Wait Begins.",
  *   the first reading's title its one tap (the walk's polish, 2026-11-23; it
  *   was "Day 1" offered as tonight's, which /family's own card contradicted).
- * - Any other night on the map, tonight's devotion. Off the map, and on the
- *   nights after Christmas in Advent's last week, nothing.
+ * - Any other night on the map, tonight's devotion; on the nights after
+ *   Christmas in Advent's last week, that is the next week's, begun early
+ *   (lib/familyTable tonightOn). Off the map, nothing.
  */
 export function homeTonight(date: string): HomeTonightCopy {
   const tonight = tonightOn(date);

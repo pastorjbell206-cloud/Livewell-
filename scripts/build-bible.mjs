@@ -9,7 +9,8 @@
  * Sources (docs/STUDY-BIBLE-PROMPT.md §2):
  *   - Berean Standard Bible, public domain (scrollmapper/bible_databases BSB.json)
  *   - STEPBible TAHOT / TAGNT tagged Hebrew and Greek, CC BY 4.0 (Tyndale House)
- *   - STEPBible TBESH / TBESG brief lexicons, CC BY 4.0
+ *   - STEPBible TBESH / TBESG brief lexicons, CC BY 4.0 (six Greek entries
+ *     corrected in lib/lex-fixes.mjs; two from STEPBible TFLSJ, CC BY 4.0)
  *   - STEPBible TEHMC / TEGMC morphology expansions, CC BY 4.0
  *   - OpenBible.info cross-references, CC BY (via scrollmapper SQL dump)
  *
@@ -30,6 +31,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { fixedDefinition } from "./lib/lex-fixes.mjs";
 
 const STEP = process.env.STEP_DIR;
 const BSB = process.env.BSB_JSON;
@@ -251,7 +253,8 @@ for (const lang of ["H", "G"]) {
       tr: (c[4] || "").trim(),
       pos: (c[5] || "").trim(),
       g: (c[6] || "").trim(),
-      d: clean(c[7]),
+      // Six entries carry another word's definition upstream (lib/lex-fixes.mjs).
+      d: fixedDefinition(key, clean(c[7])),
       n: o?.n ?? 0,
       r: o?.refs ?? [],
       ...(relation.trim() && related && related !== key ? { rel: `${relation.trim()} ${related}` } : {}),
@@ -283,7 +286,7 @@ writeJson(path.join(OUT, "sources.json"), {
   builtAt: new Date().toISOString(),
   sources: [
     { name: "Berean Standard Bible", licence: "Public domain", url: "https://berean.bible" },
-    { name: "STEPBible Data (Tyndale House, Cambridge): TAHOT, TAGNT, TBESH, TBESG, TEHMC, TEGMC", licence: "CC BY 4.0", url: "https://www.STEPBible.org" },
+    { name: "STEPBible Data (Tyndale House, Cambridge): TAHOT, TAGNT, TBESH, TBESG, TFLSJ, TEHMC, TEGMC", licence: "CC BY 4.0", url: "https://www.STEPBible.org" },
     { name: "OpenBible.info cross-references", licence: "CC BY", url: "https://www.openbible.info/labs/cross-references/" },
   ],
 });
