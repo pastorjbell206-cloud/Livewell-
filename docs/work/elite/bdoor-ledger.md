@@ -18470,3 +18470,20 @@ Cut from the book page: the old introduction's and the deep notes' lines to Chri
 | The grief line and the child-loss line | 13-22 | 1-samuel/plain/1.json (1-8); 2-samuel/plain/12.json (15-25), 1-kings/plain/3.json (16-28), 2-kings/plain/4.json (18-37) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 1: the deep note's lines to Christ (Jesus as the innocent one whose loyalty was tested; Revelation 12:10 and the accuser thrown down, set beside Job 1; the note calls the link thematic); the Christian reading of the heavenly court as part of the conflict the cross resolves.
+
+## The plain notes on Job 2 (2026-11-25)
+
+`client/public/bible/notes/job/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The repeated scene and the new line; tummah; chinnam returning from 1:9; skin for skin and its point; the sores, Exodus 9:9 and Deuteronomy 28:35, no modern diagnosis; the ash heap as the place of mourning and exclusion; the potsherd | 1-8 | job/2.json `literary`, `historical`, `cultural`, `words` (tummah); job/1.json `words` (chinnam) | Repository |
+| Deuteronomy 28:35 | 1-8 | job/2.json `historical`; BSB | Repository; BSB text |
+| One sentence and one question; integrity echoed; the accuser's prediction in her mouth; barakh as a reverent turn of speech; naval; 2:10 as the book's challenge; ‘in what he said’ read two ways | 9-10 | job/2.json `literary`, `words` (barakh, naval, tummah) | Repository; each reading in its holders' terms |
+| Isaiah 45:7 and ra' as adversity and calamity; 19:17 | 9-10 | bible/doctrines/suffering.json `definition`; job/2.json `hard`; BSB | Repository; BSB text |
+| The hard note: the harsh reading in the church's history; the grieving mother; the reply firm not contemptuous; the Greek translation's lament; both readings | 9-10 | job/2.json `hard` | Repository |
+| The grief line | 9-10 | 1-samuel/plain/1.json (1-8) and the 2 Samuel 21 and Deuteronomy notes (`hard`) | Reused whole, word for word; Find Help named |
+| Teman (Genesis 36:11) and Edom's wise men; Shuah (Genesis 25:2); Naamah unidentified; time passing; nacham and 16:2; the customs of grief; Genesis 50:10 and shiva; compassion first | 11-13 | job/2.json `historical`, `cultural`, `words` (nacham); 1-samuel notes (shiva, from the Hebrew for seven) | Repository |
+| Romans 12:15 | 11-13 | needs/suffering.json `helping`; bible/doctrines/suffering.json; BSB | Repository; BSB text |
+
+Cut in chapter 2: the deep note's lines to Christ (Christ suffering in body, John 15:25, Hebrews 2:18; the seven days as a picture of the incarnation, which the note calls thematic).
