@@ -1713,6 +1713,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "temple-destroyed",
     "book-genesis",
     "book-psalms",
+    "book-john",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -1745,7 +1746,11 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
   it("none of them speaks in the first person, presses for a decision, or dates the earth", () => {
     for (const slug of NEW) {
       const f = filmFile(slug);
-      const own = captions(f).replace(/“[^”]*”/g, " ");
+      // What a film quotes is set aside, and so is "I am", which the film
+      // on John names as Jesus' own words.
+      const own = captions(f)
+        .replace(/“[^”]*”/g, " ")
+        .replace(/\bI am\b/g, " ");
       expect(own, slug).not.toMatch(/\b(I|I'm|I've|my|me|we|our|us)\b/);
       expect(text(f), slug).not.toMatch(
         /pray this prayer|decide today|right now, before|before it is too late/i
@@ -2035,6 +2040,40 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
         .replace(/, (\d+)$/, " and $1")
     );
     // It names Jesus' death on the cross: the films' own care line, whole.
+    expect(f.care).toBe(filmFile("the-king").care);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /\bcross\b|blood/i
+    );
+  });
+
+  it("John names the book's own cautions: a faith of doing, and no contempt for Jewish people", async () => {
+    const f = filmFile("book-john");
+    const intro = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "bible/notes/john/intro.json"), "utf8")
+    ) as { keyChapters: { ch: number }[]; reading: string };
+    const t = text(f);
+    expect(t).toContain("Believing is something you do");
+    expect(t).toContain(
+      "when John speaks of the Jews, he usually means the Jerusalem authorities"
+    );
+    expect(t).toContain("Jesus and nearly everyone in the story are Jews.");
+    // The book page gives the same caution; the film does not go past it.
+    expect(intro.reading).toContain(
+      "the term usually names the Jerusalem authorities"
+    );
+    expect(captions(f)).not.toMatch(
+      /the Jews (killed|rejected|hated|wanted)|Jews (killed|murdered|crucified)/i
+    );
+    expect(f.frames[6].older).toContain(
+      intro.keyChapters
+        .map(k => k.ch)
+        .join(", ")
+        .replace(/, (\d+)$/, " and $1")
+    );
+    const scene = (await FILM_SCENES["book-john"]()) as unknown as {
+      LAYOUT: number[];
+    };
+    expect(scene.LAYOUT).toEqual([1, 11, 8, 1]);
     expect(f.care).toBe(filmFile("the-king").care);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
       /\bcross\b|blood/i

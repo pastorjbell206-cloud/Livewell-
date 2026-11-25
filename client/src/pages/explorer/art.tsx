@@ -801,6 +801,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M38,74L60,70M37,62L59,56M39,50L58,44M44,40L56,34" />
     </>
   ),
+  /* John: a tent pitched under the stars, a gold light in its door. */
+  "book-john": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path fill={h} d="M8,8H92V84H8Z" />
+      <path className="pl-l" d="M24,18l2,5l5,2l-5,2l-2,5l-2,-5l-5,-2l5,-2ZM74,14l1.5,4l4,1.5l-4,1.5l-1.5,4l-1.5,-4l-4,-1.5l4,-1.5Z" />
+      <Shape d="M14,84L26,58L46,42L62,46L78,58L88,84Z" tone="c" off={1} />
+      <path className="pl-m" d="M40,84L45,60H59L64,84Z" />
+      <path className="pl-l" d="M40,84L45,60H59L64,84M26,58H78" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

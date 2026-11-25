@@ -1,0 +1,117 @@
+{
+  "slug": "book-john",
+  "title": "John: the Word made flesh",
+  "group": "books",
+  "status": "finished",
+  "book": "john",
+  "mark": "book-john",
+  "line": {
+    "younger": "One of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "The Gospel of John as a whole book: its opening, its signs, the seven “I am” sayings, believing and life, the hour and the glory, and where to begin."
+  },
+  "poster": "Night. Among the dark tents of a camp, one tent has a gold light in its door, under a great sky of stars.",
+  "frames": [
+    {
+      "id": "word",
+      "name": "The Word made flesh",
+      "still": "Night. Among the dark tents of a camp, one tent has a gold light in its door, under a great sky of stars.",
+      "younger": "John is one of the four books that tell the story of Jesus. It begins before the world was made. Then it says something huge. The God who made everything came to live as a man.",
+      "older": "John is the fourth of the four Gospels. It tells the same story as Matthew, Mark and Luke from a different height. It begins before the world was made, and soon comes the sentence the whole book hangs on.",
+      "verse": {
+        "ref": "John 1:14",
+        "text": "The Word became flesh and made His dwelling among us."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in four panels: a narrow opening with stars over it, a wide first half with a water jar over it, a second half with a basin and towel over it and a gold rule under it, and a narrow last panel with a fish over it.",
+      "younger": "John has twenty-one chapters. It opens like a poem. The first half is built around signs, the wonderful things Jesus did. The second half slows right down for his last evening, the cross and the empty tomb.",
+      "older": "John is built with care: an opening poem, a first half built around signs, and a second half that slows almost to a stop. Five chapters are given to one evening. Then come the cross, the resurrection, and a closing scene by the lake.",
+      "verse": {
+        "ref": "John 13:1",
+        "text": "Jesus knew that His hour had come"
+      }
+    },
+    {
+      "id": "signs",
+      "name": "Watch for: the signs",
+      "still": "At a wedding, six tall stone jars stand in a row. A servant pours water into one, another carries a gold cup toward the table, and Jesus stands near.",
+      "younger": "Watch for the signs. Jesus turns water into wine, feeds a huge crowd, gives sight to a man born blind, and calls his friend Lazarus out of a tomb. John calls them signs, because each one points to who Jesus is.",
+      "older": "John calls Jesus' miracles signs, because each one points beyond itself to who he is. The first half is built around seven of them. Signs can start faith, but faith that only wants miracles is thin.",
+      "verse": {
+        "ref": "John 2:11",
+        "text": "Jesus performed this, the first of His signs, at Cana in Galilee."
+      }
+    },
+    {
+      "id": "i-am",
+      "name": "Watch for: “I am”",
+      "still": "Jesus stands on a hillside with his arms open. Around him are a table with bread, a lamp with a gold flame, two sheep, and a vine heavy with grapes.",
+      "younger": "Watch for two small words: I am. Jesus says he is the bread of life, the light of the world, and the good shepherd. Each picture takes something people cannot live without and says: this is what I am for you.",
+      "older": "Seven times Jesus says “I am” and adds a picture: bread, light, a gate, a shepherd, resurrection and life, the way, the true vine. Each takes something people cannot live without and says: this is what I am for you.",
+      "verse": {
+        "ref": "John 6:35",
+        "text": "I am the bread of life."
+      }
+    },
+    {
+      "id": "believe",
+      "name": "Watch for: believing",
+      "still": "Noon at a well. Jesus sits on the edge of the well and speaks with a woman who has set down her water jar. A gold sun is high overhead.",
+      "younger": "Watch for the word believe. John uses it again and again. For John, believing is something you do: coming to Jesus, trusting him, and staying with him. And John says plainly that this is why he wrote his book.",
+      "older": "The verb believe comes 98 times in John, and the noun faith never. Believing is something you do: coming to Jesus, trusting him, staying with him. And eternal life, in John, is life with God that begins now.",
+      "verse": {
+        "ref": "John 20:31",
+        "text": "these are written so that you may believe that Jesus is the Christ, the Son of God"
+      }
+    },
+    {
+      "id": "hour",
+      "name": "Watch for: the last evening",
+      "still": "Evening in an upper room. Jesus kneels with a basin and a towel before one of his friends, and others sit at a low table. A lamp with a gold flame burns.",
+      "younger": "Watch for the last evening. Jesus washes his friends' feet and tells them to love one another. The next day he dies on a cross, and John says that is where God's glory shows most clearly. On the third day, the tomb is empty.",
+      "older": "The second half opens when Jesus knows that his hour has come. He washes his disciples' feet and gives them a new command. In John the glory of God is seen most clearly at the cross. Then come the empty tomb and the risen Jesus.",
+      "verse": {
+        "ref": "John 13:34",
+        "text": "A new commandment I give you: Love one another."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? John is a good book to read first, and many people have. Start at chapter one and read slowly. Its words are small and simple: light, life, love, truth. No one has ever reached the bottom of them.",
+      "older": "Start at chapter 1 and read slowly. The book's page marks seven key chapters: 1, 3, 6, 11, 13, 17 and 20. One caution: when John speaks of the Jews, he usually means the Jerusalem authorities. Jesus and nearly everyone in the story are Jews.",
+      "verse": {
+        "ref": "John 1:12",
+        "text": "to those who believed in His name, He gave the right to become children of God"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Jesus says he is bread, light and a shepherd. Which of those pictures helps you most, and why?",
+    "older": "John says he wrote so that readers may believe and have life. As you read, which person in the book answers Jesus most like you would: Nicodemus, the woman at the well, Thomas, or Peter?"
+  },
+  "read": [
+    { "label": "John 1", "href": "/study/bible/john/1" },
+    { "label": "John 3", "href": "/study/bible/john/3" },
+    { "label": "John 6", "href": "/study/bible/john/6" },
+    { "label": "John 13", "href": "/study/bible/john/13" },
+    { "label": "John 20", "href": "/study/bible/john/20" }
+  ],
+  "stops": [
+    "jesus",
+    "cross"
+  ],
+  "cards": [],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "John in the Study Bible: the whole book, taught from the start", "href": "/study/bible/john" },
+    { "label": "John 3:16 in its chapter (a moving picture)", "href": "/study/explorer/watch/john-3-16" },
+    { "label": "Who Jesus is (a moving picture)", "href": "/study/explorer/watch/who-jesus-is" },
+    { "label": "Light and darkness (a moving picture)", "href": "/study/explorer/watch/light-and-darkness" },
+    { "label": "The resurrection (a moving picture)", "href": "/study/explorer/watch/the-resurrection" }
+  ],
+  "end": { "label": "Start reading: John 1", "href": "/study/bible/john/1" }
+}

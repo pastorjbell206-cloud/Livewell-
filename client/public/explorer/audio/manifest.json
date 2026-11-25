@@ -815,6 +815,116 @@
     }
    ]
   },
+  "book-john": {
+   "title": {
+    "file": "book-john/title.mp3",
+    "hash": "06394104b2d3d7d30614",
+    "seconds": 2.45,
+    "bytes": 15332
+   },
+   "younger": [
+    {
+     "id": "word",
+     "file": "book-john/younger/01-word.mp3",
+     "hash": "f45611050fe0c20497a5",
+     "seconds": 21.23,
+     "bytes": 127940
+    },
+    {
+     "id": "layout",
+     "file": "book-john/younger/02-layout.mp3",
+     "hash": "2e457e850e6f35a8198b",
+     "seconds": 23.89,
+     "bytes": 143924
+    },
+    {
+     "id": "signs",
+     "file": "book-john/younger/03-signs.mp3",
+     "hash": "f5758c8d79a6623ce228",
+     "seconds": 26.61,
+     "bytes": 160196
+    },
+    {
+     "id": "i-am",
+     "file": "book-john/younger/04-i-am.mp3",
+     "hash": "8f4284f865cb0eef5f86",
+     "seconds": 21.37,
+     "bytes": 128804
+    },
+    {
+     "id": "believe",
+     "file": "book-john/younger/05-believe.mp3",
+     "hash": "f8f7deddbf312c50ca4a",
+     "seconds": 26.98,
+     "bytes": 162500
+    },
+    {
+     "id": "hour",
+     "file": "book-john/younger/06-hour.mp3",
+     "hash": "f4bc61efed2a53c8e1a1",
+     "seconds": 25.29,
+     "bytes": 152276
+    },
+    {
+     "id": "start",
+     "file": "book-john/younger/07-start.mp3",
+     "hash": "d8558620827400b95237",
+     "seconds": 27.08,
+     "bytes": 163076
+    }
+   ],
+   "older": [
+    {
+     "id": "word",
+     "file": "book-john/older/01-word.mp3",
+     "hash": "cc1862b792ea928c8b0f",
+     "seconds": 22.85,
+     "bytes": 137588
+    },
+    {
+     "id": "layout",
+     "file": "book-john/older/02-layout.mp3",
+     "hash": "97d1438da2155caa05ae",
+     "seconds": 25.63,
+     "bytes": 154436
+    },
+    {
+     "id": "signs",
+     "file": "book-john/older/03-signs.mp3",
+     "hash": "1f2e66399349995d75c9",
+     "seconds": 24.77,
+     "bytes": 149108
+    },
+    {
+     "id": "i-am",
+     "file": "book-john/older/04-i-am.mp3",
+     "hash": "5c953cb7b7a9c25ed655",
+     "seconds": 22.47,
+     "bytes": 135428
+    },
+    {
+     "id": "believe",
+     "file": "book-john/older/05-believe.mp3",
+     "hash": "fb34c1068cb51e44f151",
+     "seconds": 27.03,
+     "bytes": 162788
+    },
+    {
+     "id": "hour",
+     "file": "book-john/older/06-hour.mp3",
+     "hash": "c7f5ef35939c45bfbfca",
+     "seconds": 26.24,
+     "bytes": 158036
+    },
+    {
+     "id": "start",
+     "file": "book-john/older/07-start.mp3",
+     "hash": "2ff713a1b77f39fe9683",
+     "seconds": 31.92,
+     "bytes": 192164
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

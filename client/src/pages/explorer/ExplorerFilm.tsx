@@ -303,6 +303,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Psalms in seven moving pictures: what it is, its gateway and five books, honest prayer, praise, the LORD as king, the prayers Jesus prayed, and where to start reading.",
     },
+    "book-john": {
+      title: "John: the Word made flesh: Bible Explorer",
+      description:
+        "The whole Gospel of John in seven moving pictures: what it is, how it is built, the signs, the seven I am sayings, believing and life, the last evening and the glory of the cross, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

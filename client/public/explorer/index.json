@@ -1362,6 +1362,24 @@
       "book": "psalms"
     },
     {
+      "slug": "book-john",
+      "title": "John: the Word made flesh",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "One of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "The Gospel of John as a whole book: its opening, its signs, the seven “I am” sayings, believing and life, the hour and the glory, and where to begin."
+      },
+      "mark": "book-john",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "john"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
