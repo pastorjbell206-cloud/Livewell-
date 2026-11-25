@@ -22,7 +22,8 @@ Three scripts, kept outside the repo in `/home/user/vs2/` (`apply.py`, `factdiff
 |---|---|---|---|---|---|---|---|---|---|
 | Introduction: Not Persecuted—Seduced | 1,758 | 1,734 | -1.4% | 3 (1.7) | 0 (0.0) | 89 (50.6) | 52 (30.0) | 25 | PASS |
 | Chapter 1: Zanah | 3,729 | 3,719 | -0.3% | 1 (0.3) | 0 (0.0) | 136 (36.5) | 75 (20.2) | 36 | PASS |
-| **All 2** | 5,487 | 5,453 | -0.6% | 4 (0.7) | 0 (0.0) | 225 (41.0) | 127 (23.3) | 61 | |
+| Chapter 2: Chariots Aren't Evil—But They Aren't Ultimate | 4,249 | 4,208 | -1.0% | 3 (0.7) | 0 (0.0) | 123 (28.9) | 91 (21.6) | 42 | PASS |
+| **All 3** | 9,736 | 9,661 | -0.8% | 7 (0.7) | 0 (0.0) | 348 (35.7) | 218 (22.6) | 103 | |
 
 ## Introduction: Not Persecuted—Seduced (`sec01.xhtml`)
 
@@ -70,3 +71,27 @@ Five pairs:
    After: Because the God of Hosea is waiting, not with folded arms and a lecture but with open arms and a feast. And the road home is shorter than you think.
 
 Left alone, and why. "The vows are still spoken. The heart has moved.", "But zanah is not atheism.", "Israel has not divorced Yahweh. Israel has brought another partner into the covenant bed and called it "strategy."", "It looks like Jesus plus the strongman.", "He asks them to come home." and "Name it. Confess it. And return." are verdicts on their own lines. The six diagnostic markers were not touched except for one word: the double standard ("When your side's leader lies, it is "strategy." When the other side's leader lies, it is "corruption."") is already measured the same both ways and stays word for word. The exegesis of Hosea 14 keeps its quoted phrases and their order ("Not "I will punish their apostasy." ... Heal."). The five "that is evidence" sentences were five paragraphs and are now one; no word changed. Forbidden list: "political leverage" is now "political influence".
+
+
+## Chapter 2: Chariots Aren't Evil—But They Aren't Ultimate (`sec03.xhtml`)
+
+Words 4,249 to 4,208. Em-dashes in his prose 3 to 0 (0.7 to 0.0 per 1,000 words). Tells 123 to 91 (28.9 to 21.6 per 1,000). Mean sentence 12.7 words to 15.3; sentences of eight words or fewer 41.5% to 30.6%; of five or fewer 21.8% to 11.2%. 42 edits; paragraphs 101 to 81. Paragraphs of fifteen words or fewer 17 to 7; runs of three fragments 6 to 0.
+
+By kind (before to after): emdash 3 to 0, not_but 5 to 8, not_just 1 to 1, NotX.Y 9 to 5, isnt_its 1 to 1, triplet 18 to 21, frag3 6 to 0, anaphora 26 to 15, stock 3 to 3, intens 8 to 6, q_answered 8 to 7, colon_reveal 1 to 1, short_close 17 to 16, one_line_para 17 to 7.
+
+Fact diff: **PASS**. Fixed blocks (headings, pull quote, block quotes, and the end matter: Key Takeaways, Reflection Questions, Practices, Sources & Notes) identical; 20 quoted strings, 8 Scripture references, 0 years, 2 numbers in digits, 21 number words, proper names by count, and 52 hedge words (after: 52) compared. A name that was the repeated subject of a stack and is now said once, by count before and after: Egypt 9 to 7.
+
+Five pairs:
+
+1. Before: Chariots can be used. Horses can be ridden. Military resources can be deployed. Political structures can be engaged.
+   After: Chariots can be used, horses ridden, military resources deployed, political structures engaged.
+2. Before: But the people who trusted in the name of the Lord? They stand. Not because they were passive. Not because they did nothing. But because their standing was never dependent on the chariot in the first place.
+   After: But the people who trusted in the name of the Lord stand, not because they were passive or did nothing, but because their standing was never dependent on the chariot in the first place.
+3. Before: The problem is not that Egypt exists. The problem is not that military alliances are available. The problem is the direction of the gaze. The posture of the heart. The location of trust.
+   After: The problem is not that Egypt exists or that military alliances are available. The problem is the direction of the gaze, the posture of the heart, the location of trust.
+4. Before: The king they are demanding will take. Their sons. Their daughters. Their land. Their wealth. Their freedom. The protector will become the predator. The savior will become the enslaver.
+   After: The king they are demanding will take: their sons, their daughters, their land, their wealth, their freedom. The protector will become the predator, and the savior will become the enslaver.
+5. Before: They engaged politics without worshiping it. They used the chariot without trusting it. They participated in civic life without making civic life ultimate. They held political convictions with deep seriousness and loose hands. They cared about outcomes without being defined by them.
+   After: They engaged politics without worshiping it and used the chariot without trusting it. They participated in civic life without making civic life ultimate, held political convictions with deep seriousness and loose hands, and cared about outcomes without being defined by them.
+
+Left alone, and why. "Every idol begins as a gift.", "And God condemns it.", "We have forgotten our Exodus. And we are running back to Egypt." and "Trust Him. And hold the chariot loosely." are verdicts on their own lines. His answer to "Are you saying Christians shouldn't be involved?" is his position and took paragraph joins only. The concession that some fears are legitimate ("Moral decline is real. Cultural hostility to Christianity is real. Legal threats to religious liberty are real. ...") is a fair statement of what the reader he is correcting sees, and stays in its four sentences. The six diagnostic questions were not touched. The six "It looks like ..." sentences were six paragraphs and are one; no word changed. "Precisely" went twice.
