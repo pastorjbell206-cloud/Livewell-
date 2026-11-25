@@ -18534,3 +18534,18 @@ Cut in chapter 4: the deep note's line to John 9:2-3 and the cross (the note cal
 | The hard note: Scripture teaches discipline; not all suffering is discipline; Job's case; promises to a bereaved father; no one may announce God's reasons in another's pain; 42:7 | 17-27 | job/5.json `doctrines` (suffering), `words` (musar); context/guides/psalm-91-in-context.json | Repository |
 
 Cut in chapter 5: the deep note's lines to Christ (Isaiah 53:5 and 1 Peter 2:24 beside 5:18, which the note calls thematic; Hebrews 12:5-6, which takes up Proverbs 3 and not Job).
+
+## The plain notes on Job 6 (2026-11-25)
+
+`client/public/bible/notes/job/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Job's reply through chapters 6 and 7; the donkey, the ox and food without salt, the white of an egg or a plant's juice; complaint in proportion to pain; the arrows of Shaddai and no accuser known to Job; the wish for death addressed to God; one comfort kept | 1-13 | job/6.json `story`, `cultural`, `literary`, `words` (Shaddai), `doctrines` (suffering, faith) | Repository |
+| Jonah 4:3, and God's care in answer | 1-13 | job/6.json `hard` (Numbers 11:15; 1 Kings 19:4; Jonah 4:3); BSB | Repository; BSB text |
+| The hard note: a cry not a plan; Moses, Elijah, Jonah; recorded without endorsement; answered with care; faith and despair at once; better brought to God; not the end of his story | 1-13 | job/6.json `hard` | Repository |
+| The self-harm line, handled as 1 Kings 19 was | 1-13 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
+| The wadis; Tema and Sheba and the caravans; chesed; the two readings of verse 14; verse 21 and fear; tsedeq, in the right, not sinless; look at me | 14-30 | job/6.json `historical`, `cultural`, `literary`, `words` (chesed, nachal, tsedeq); genesis/verses/25.json (Tema, Job 6:19); the notes quoting 6:21 on friends who keep away | Repository; each reading in its holders' terms |
+| Psalm 88:18 | 14-30 | job/3.json `hard` (Psalm 88); the study guides quoting Psalm 88:18 on companions; BSB | Repository; BSB text (quoted from the BSB, which words the verse differently from those guides) |
+
+Cut in chapter 6: the deep note's lines to Christ (Mark 14:50 and John 15:13, which the note calls thematic).
