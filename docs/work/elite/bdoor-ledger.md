@@ -20624,3 +20624,21 @@ Cut in chapter 5: nothing drawn to the New Testament, since the New Testament do
 | The 730s BC; Gilead and the fifty men with Pekah (2 Kings 15:25); Shechem a city of refuge (Joshua 20:7) and murders by priests; Adam as the town (Joshua 3:16) or the first man, both defended; verse 11 read two ways and sometimes joined to chapter 7 | 7-11 | hosea/6.json `historical`, `literary` | Repository; both readings in their holders' terms |
 
 Cut in chapter 6: the deep note's picture of Jesus as Israel's representative experiencing its revival, which the New Testament does not draw; 6:2 is given only as a reading the New Testament never quotes. The people's words 'let us' stand only inside quoted Scripture.
+
+## The plain notes on Hosea 7 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 (its first sentence; the rest paraphrased); 7:2-5 paraphrased; 7:6; 7:7 (its last sentence) | 1-7 | BSB | BSB text |
+| The chaos after Jeroboam II about 753 BC; six kings in thirty years, four murdered; Zechariah, Shallum, Menahem, Pekahiah, Pekah, Hoshea (2 Kings 15:8-30); the clay oven and the banked fire; no king calls on God; healing exposes the sickness | 1-7 | hosea/7.json `historical`, `cultural`, `summary` | Repository |
+| 2 Kings 15:8-30; 1 Samuel 8:5 paraphrased | 1-7 | hosea/7.json `historical`; BSB | Repository; BSB text |
+| 7:8; 7:9 (its clause); 7:10 paraphrased; 7:11 (to its dash); 7:12 paraphrased | 8-12 | BSB | BSB text |
+| The unturned cake; gray hair as decline unnoticed; the dove and the net as proverbs; Menahem and Pul (2 Kings 15:19); Pekah's alliance; Hoshea, So of Egypt and the fall | 8-12 | hosea/7.json `cultural`, `historical` | Repository |
+| 2 Kings 17:3-6; Isaiah 31:1 (its first clause) | 8-12 | hosea/7.json `historical`; BSB | Repository; BSB text |
+| 7:13 (its first clause and last sentence); 7:14-15 paraphrased; 7:16 (its first sentence) | 13-16 | BSB | BSB text |
+| Woe as a funeral cry; 7:13 the heart; gather or slash in 7:14 (the standard text, the manuscripts and the Greek; the BSB's choice); the practice tied to Baal and forbidden; the faulty bow; the chain of images and the failure to notice and cry out | 13-16 | hosea/7.json `cultural`, `literary`, `christ` (7:13) | Repository |
+| 1 Kings 18:28; Deuteronomy 14:1 | 13-16 | hosea/7.json `cultural` | Repository |
+
+Cut in chapter 7: the deep note's lines to Luke 13:34 and 19:41-44, to the true king, and to Matthew 6:31-33, which the New Testament does not draw from this chapter. The cutting of 7:14 is named as a worship practice and not described.
