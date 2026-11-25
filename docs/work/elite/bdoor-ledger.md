@@ -19927,3 +19927,18 @@ Cut in chapter 2: nothing from the deep note's line to Christ was needed. No car
 | Matthew 27:51 (its first sentence) | 8-17 | BSB | BSB text; the New Testament's own event at the temple veil |
 
 Cut in chapter 3: the deep note's typological lines from the temple to Christ beyond the Gospel's own report of the torn veil. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 4 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1; 4:2; the oxen (4:4); 4:5; 4:6; lampstands, tables, bowls and courts (4:7-10) | 1-10 | BSB | BSB text |
+| Outside to inside; the altar added from 1 Kings 8:64, its size and approach; cleanness; kiyyor and Exodus 30:17-21; the bath about 22 liters; yam, Ugarit and Baal, the quiet claim; the ratio of three and the answer; 1 Kings 7:26 two thousand baths and the three explanations | 1-10 | 2-chronicles/4.json `story`, `historical`, `cultural`, `words` (yam, kiyyor), `hard` | Repository |
+| Exodus 30:19; Psalm 93:3; Psalm 93:4 paraphrased | 1-10 | BSB | BSB text |
+| 4:11 (its last sentence); 4:16 (its last sentence); 4:17; 4:18 paraphrased; the gold furnishings (4:19-22); 4:22 (its phrase) | 11-22 | BSB | BSB text |
+| The catalog's form; he made thirteen times; as prescribed; menorah; the Bread of the Presence (Leviticus 24:5-9); the Jordan's clay and metalworking; Zarethan; the casting; the second temple's lack and 2 Kings 25:13-17 | 11-22 | 2-chronicles/4.json `story`, `historical`, `literary`, `words` (menorah, lechem) | Repository |
+| 2 Kings 25:13 (its clauses) | 11-22 | BSB | BSB text |
+
+Cut in chapter 4: the deep note's lines from the washing and the bread to Christ, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
