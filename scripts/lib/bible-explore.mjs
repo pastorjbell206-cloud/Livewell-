@@ -25,6 +25,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { bucketOf, lexicon } from "./bible-study.mjs";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 export const OUT_DIR = path.join(ROOT, "client/public/bible/explore");
@@ -329,6 +330,49 @@ const LANGS = [
 ];
 
 /**
+ * The Study Bible word a key word's sentence names, when it names exactly
+ * one: the way from a key word to /study/word/<strong>. A match is made only
+ * when all of these hold, so none is a guess:
+ *   - the sentence says "Hebrew x", "Aramaic x" or "Greek x", a language and
+ *     then a transliterated word;
+ *   - exactly one word of that language in the Study Bible's dictionary is
+ *     transliterated x (letters compared without accents or dots);
+ *   - and the Study Bible's own text uses that word in this very book.
+ * Two dictionary words spelled alike, a spelling the dictionary writes
+ * another way, a word the book does not use: each leaves the key word with
+ * no link. Returns (line, book) -> Strong's number or null.
+ */
+function strongMatcher(books) {
+  const lex = lexicon();
+  const letters = (x) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z]/g, "");
+  const byTr = { H: new Map(), G: new Map() };
+  for (const [k, e] of lex) {
+    const t = letters(e.tr);
+    if (!t) continue;
+    const m = byTr[k[0]];
+    if (!m.has(t)) m.set(t, []);
+    m.get(t).push(k);
+  }
+  const buckets = new Map();
+  const inBook = (strong, bookIndex) => {
+    const file = path.join(ROOT, "client/public/bible/words/occ", strong[0], `${bucketOf(strong)}.json`);
+    if (!buckets.has(file)) buckets.set(file, fs.existsSync(file) ? readJson(file) : {});
+    return (buckets.get(file)[strong]?.b ?? []).some(([b]) => b === bookIndex);
+  };
+  return (line, book) => {
+    const found = new Set();
+    for (const m of line.matchAll(/\b(Hebrew|Aramaic|Greek) ([\p{Ll}][\p{L}\p{M}'ʾʿ’.-]*)/gu)) {
+      const lang = m[1] === "Greek" ? "G" : "H";
+      const hits = (byTr[lang].get(letters(m[2])) ?? []).filter((k) => inBook(k, books.findIndex((b) => b.slug === book.slug)));
+      const all = byTr[lang].get(letters(m[2])) ?? [];
+      // One word in the dictionary, and this book uses it.
+      if (all.length === 1 && hits.length === 1) found.add(hits[0]);
+    }
+    return found.size === 1 ? [...found][0] : null;
+  };
+}
+
+/**
  * Key words: every word a book page explains, one entry per word, with each
  * book's own explanation under it. `langs` lists the languages the books' own
  * sentences name (a sentence that says "Greek euangelion" names Greek); a
@@ -338,6 +382,7 @@ const LANGS = [
 export function buildWords(books = loadBooks()) {
   const have = withTeaching(books, "words");
   const words = [];
+  const match = strongMatcher(books);
   for (const b of have) {
     for (const w of b.teaching.words) {
       const key = w.word.toLowerCase().replace(/^the /, "").trim();
@@ -347,7 +392,8 @@ export function buildWords(books = loadBooks()) {
         words.push(hit);
       }
       const langs = LANGS.filter(([, re]) => re.test(w.line)).map(([l]) => l);
-      hit.entries.push({ book: b.slug, ...(w.word !== hit.word ? { word: w.word } : {}), line: w.line, langs, refs: ownRefs(w.line, b) });
+      const strong = match(w.line, b);
+      hit.entries.push({ book: b.slug, ...(w.word !== hit.word ? { word: w.word } : {}), line: w.line, langs, refs: ownRefs(w.line, b), ...(strong ? { strong } : {}) });
     }
   }
   const used = new Set();
