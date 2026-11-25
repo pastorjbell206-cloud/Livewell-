@@ -19206,3 +19206,18 @@ Cut in chapter 32: the deep note's lines to Christ (Luke 2:46-47, John 7:15 and 
 | Genesis 42:23; Exodus 30:12 | 23-33 | job/33.json `words` (luts: Genesis 42:23; kopher: Exodus 21:30, 30:12); BSB | Repository; BSB text |
 
 Cut in chapter 33: the deep note's lines to Christ (1 Timothy 2:5-6 and Mark 10:45 beside the messenger and the ransom; the note itself says the passage should not be read as a coded prophecy); parallels of protective spirits in the region (not needed).
+
+## The plain notes on Job 34 (2026-11-25)
+
+`client/public/bible/notes/job/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second speech; the wider audience; the hardening; the public hearing and Job as defendant; the saying of 12:11; God's justice from who God is; appointed by no one; life held by his breath; the company one keeps | 1-15 | job/34.json `story`, `cultural`, `literary`, `words` (neshamah, Shaddai) | Repository |
+| Psalm 104:29 | 1-15 | the genesis notes (death as the Giver taking back his breath, Job 34:14-15); BSB | Repository; BSB text |
+| The hard note: not entirely fair; 21:15 and 9:22 gathered into their worst form; fair summary or the friends' failure; God does not pervert justice; the reader knows the prologue | 1-15 | job/34.json `hard` | Repository; each reading in its holders' terms |
+| The ruler as guardian of justice raised higher in God; kings and nobles rebuked; the sudden fall of the mighty; verse 29 and God's silence | 16-30 | job/34.json `historical`, `cultural`, `words` (mishpat, evel) | Repository |
+| Deuteronomy 10:17 | 16-30 | the notes quoting Deuteronomy 10:17 on God showing no partiality; BSB | Repository; BSB text |
+| Verse 33 and 40:8; joining the friends; clapping as scorn; without knowledge and 38:2 | 31-37 | job/34.json `story`, `cultural`, `literary` | Repository |
+
+Cut in chapter 34: the deep note's lines to Christ (the Gospels and Romans 3:26 beside Elihu's picture of the impartial ruler; the note calls them a fulfilment of the wider picture); Hammurabi's prologue (not needed).
