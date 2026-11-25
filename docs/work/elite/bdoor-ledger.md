@@ -18904,3 +18904,20 @@ Cut in chapter 11: the deep note's lines to Jesus as the good shepherd (John 10:
 | The hard note: about 340,000; Judah's 6,800 against Zebulun and the east; face value; eleph as unit; the Chronicler's emphasis; scholarly defenders; all Israel of one mind | 23-40 `hard` | 1-chronicles/12.json `hard` | Repository; the views in their holders' terms |
 
 Cut in chapter 12: the deep note's line to 1 Corinthians 12:3 and its reading of the gathering as a foreshadowing of the kingdom, which it calls thematic; Matthew 8:11 is quoted as Jesus' own words. A first draft misquoted Judges 6:34 and used a signposting phrase; both were corrected before they reached the repository. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 13 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| David confers; 13:2 paraphrased; 13:3 (its words); 13:4; 13:5 (its phrase); 13:6 (its phrase); the new cart, Uzzah and Ahio (13:7); 13:8 | 1-8 | 1-chronicles/13.json `summary`; BSB | Repository; BSB text |
+| Worship before war; David as founder of worship; 2 Samuel 6:1-11 and the added introduction; arranged by theme; the ark described (Exodus 25:10-22) as footstool of God's throne; Kiriath-jearim eight or nine miles west; not sought in Saul's days (darash and 10:14); the full extent of the land | 1-8 | 1-chronicles/13.json `story`, `historical`, `cultural`, `words` (aron, darash) | Repository |
+| 1 Samuel 7:2 (its middle words) | 1-8 | 1-chronicles/13.json `historical`; BSB | Repository; BSB text |
+| 13:9; 13:10; 13:11 (to its first sentence's end); 13:12 (its first words); the question paraphrased; Obed-edom; 13:14 (its last clause) | 9-14 | 1-chronicles/13.json `summary`; BSB | Repository; BSB text |
+| The law on carrying the ark (Numbers 4:15; Kohathites, poles, covering); the new cart and the Philistines (1 Samuel 6:7); parats and Perez-uzzah; 'before God' in joy and death; the same presence in both outcomes; Obed-edom the Gittite, Gath or Gath-rimmon (Joshua 21:24-25), identity debated; chapter 15 | 9-14 | 1-chronicles/13.json `historical`, `cultural`, `literary`, `words` (parats, barak) | Repository |
+| 2 Samuel 6:7 (its phrase); Leviticus 10:3 (the LORD's words, from its first clause) | 9-14 | 1-chronicles/15.json `hard` (Nadab and Abihu, Leviticus 10); BSB | Repository; BSB text |
+| The hard note: David's anger; the law and the death penalty; disregard of instructions (15:13); presumption and familiarity; a founding moment; not made easy; anger and fear left standing; good for Obed-edom | 9-14 `hard` | 1-chronicles/13.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 9-14 `hard` | 1-kings/plain/13.json and 17.json; 2-kings/plain/5.json and 7.json; 1-chronicles/intro.json `teaching` | Reused whole, word for word; Find Help named |
+
+Cut in chapter 13: the deep note's contrast between Uzzah and those who touched Jesus (Mark 5:25-34), and Hebrews 4:16 and 10:19-22, which it presents as connections the New Testament suggests, not lines it draws to this chapter. A first draft misquoted 1 Samuel 7:2 and used 'bless'; both were corrected before they reached the repository.
