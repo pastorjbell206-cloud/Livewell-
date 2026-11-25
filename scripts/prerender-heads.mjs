@@ -1065,7 +1065,8 @@ const PAGE_BODIES = {
         `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
         `<h1>Hard passages</h1>`,
         `<p class="pre-subtitle">The places where readers stop and ask. Each one opens the chapter where its note faces the question.</p>`,
-        help ? `<p><a href="/help">${escapeHtml(help.title)}</a>: ${escapeHtml(help.blurb)}</p>` : "",
+        // The notes' own care lines, whole, with Find Help in them made the link (the page does the same).
+        ...(d.care?.length ? d.care.map((c) => `<p>${escapeHtml(c).replace("Find Help", `<a href="/help">Find Help</a>`)}</p>`) : [help ? `<p><a href="/help">${escapeHtml(help.title)}</a>: ${escapeHtml(help.blurb)}</p>` : ""]),
         ...d.books.map(book),
       ]),
     };

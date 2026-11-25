@@ -11,7 +11,7 @@ import { renderWithProviders } from "@/test/harness";
 import { isHard, type HardData } from "@/lib/bibleExplore";
 import type { BookIntro } from "@/lib/bible-notes";
 // @ts-expect-error a plain .mjs build library, read here to hold its rules
-import { buildHard } from "../../../../scripts/lib/bible-explore.mjs";
+import { CARE_LINES, buildHard } from "../../../../scripts/lib/bible-explore.mjs";
 import BibleHardPassages, { HardView } from "./BibleHardPassages";
 
 const PUBLIC = path.resolve(__dirname, "../../../../client/public");
@@ -61,9 +61,26 @@ describe("the hard passages page", () => {
   it("keeps Find Help in reach, at the top and after each part", () => {
     renderWithProviders(<HardView data={DATA} />);
     const help = screen.getAllByRole("link", { name: "Find Help" });
-    expect(help.length).toBeGreaterThanOrEqual(2);
+    expect(help.length).toBeGreaterThanOrEqual(2 * DATA.care.length);
     for (const a of help) expect(a.getAttribute("href")).toBe("/help");
-    expect(screen.getAllByText(/you do not have to read it alone/).length).toBe(help.length);
+  });
+
+  it("says no care words of its own: each care line is a whole paragraph the Study Bible's notes already say, byte for byte", () => {
+    expect(DATA.care).toHaveLength(CARE_LINES.length);
+    // Each line is, whole, a paragraph of the note it is copied from, and of other chapters' notes besides.
+    const plainHard = (file: string): string[] => (json(`bible/notes/${file}`).passages as { hard?: string }[]).flatMap((p) => (p.hard ?? "").split(/\n{2,}/));
+    CARE_LINES.forEach((c: { from: string; starts: string }, i: number) => {
+      expect(plainHard(c.from), c.from).toContain(DATA.care[i]);
+      expect(DATA.care[i].startsWith(c.starts)).toBe(true);
+      expect(DATA.care[i]).toContain("Find Help");
+    });
+    expect(plainHard("revelation/plain/9.json").some((p) => p.endsWith(DATA.care[0]))).toBe(true);
+    expect(plainHard("1-john/plain/3.json").some((p) => p.endsWith(DATA.care[1]))).toBe(true);
+    // And the page shows exactly those words, with nothing added or dropped.
+    renderWithProviders(<HardView data={DATA} />);
+    const boxes = Array.from(document.querySelectorAll(".bx-care"));
+    expect(boxes.length).toBeGreaterThanOrEqual(2);
+    for (const box of boxes) expect(Array.from(box.querySelectorAll("p")).map((p) => p.textContent)).toEqual(DATA.care);
   });
 
   it("says plainly that the passages are listed by book because the book pages give them no kinds", () => {

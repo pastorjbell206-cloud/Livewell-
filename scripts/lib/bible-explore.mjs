@@ -1,11 +1,17 @@
 /**
- * bible-explore.mjs: the four cross-book indexes read by the pages that let a
+ * bible-explore.mjs: the cross-book indexes read by the pages that let a
  * reader explore the Study Bible's book pages across the whole Bible:
  *
- *   /study/timeline        client/public/bible/explore/timeline.json
- *   /study/atlas           client/public/bible/explore/atlas.json
- *   /study/words           client/public/bible/explore/words.json
- *   /study/hard-passages   client/public/bible/explore/hard-passages.json
+ *   /study/timeline            client/public/bible/explore/timeline.json
+ *   /study/atlas               client/public/bible/explore/atlas.json
+ *   /study/words               client/public/bible/explore/words.json
+ *   /study/hard-passages       client/public/bible/explore/hard-passages.json
+ *   /study/books-at-a-glance   client/public/bible/explore/books-at-a-glance.json
+ *   /study/key-chapters        client/public/bible/explore/key-chapters.json
+ *   /study/themes              client/public/bible/explore/themes.json
+ *
+ * The first four read a book's `teaching`; the last three read `structure`,
+ * `keyChapters` and `themes`, which all 66 book pages have.
  *
  * Every word in those files is copied from a book page's own data
  * (client/public/bible/notes/<book>/intro.json, `teaching`). Nothing is
@@ -366,6 +372,31 @@ export function buildWords(books = loadBooks()) {
 /* ------------------------------------------------------------------ */
 
 /**
+ * The care lines the hard-passages page carries. The site's rule is that a
+ * care line is never newly written: it is one the site already says, reused
+ * whole. These two are the Study Bible notes' own standing lines, the first
+ * for despair and the second for violence and abuse, each said word for word
+ * in more than ten chapters' notes. They are copied from the note named here
+ * (a whole paragraph of a passage's "hard" note), never typed, so the page
+ * cannot drift from its source; BibleHardPassages.test.tsx holds them equal.
+ */
+export const CARE_LINES = [
+  { from: "judges/plain/16.json", starts: "If you have thoughts of hurting yourself, speak to someone today" },
+  { from: "deuteronomy/plain/13.json", starts: "If you are being hurt, at home, at work or in a church" },
+];
+
+/** The whole paragraph of a plain note's "hard" text that begins with `starts`, or null. */
+export function careLine({ from, starts }) {
+  const file = path.join(NOTES, from);
+  if (!fs.existsSync(file)) return null;
+  for (const p of readJson(file).passages ?? []) {
+    const hit = String(p.hard ?? "").split(/\n{2,}/).find((para) => para.startsWith(starts));
+    if (hit) return hit;
+  }
+  return null;
+}
+
+/**
  * Hard passages: every passage a book page lists as hard, book by book, in
  * the book's own order and words. The book pages give these no kinds, so
  * none are given here. Each carries the chapter its note is in; an entry
@@ -375,6 +406,12 @@ export function buildWords(books = loadBooks()) {
 export function buildHard(books = loadBooks()) {
   const have = withTeaching(books, "hard");
   const warnings = [];
+  const care = [];
+  for (const c of CARE_LINES) {
+    const line = careLine(c);
+    if (line) care.push(line);
+    else warnings.push(`care line "${c.starts}..." is no longer a whole paragraph of ${c.from}, so it is left out`);
+  }
   const rows = have.map((b) => ({
     ...bookRow(b),
     items: b.teaching.hard.filter((h) => {
@@ -383,7 +420,82 @@ export function buildHard(books = loadBooks()) {
       return ok;
     }).map((h) => ({ ch: h.ch, v: h.v, ref: h.ref, line: h.line })),
   }));
-  return { data: { v: 1, books: rows, without: withoutTeaching(books, "hard") }, warnings };
+  return { data: { v: 1, care, books: rows, without: withoutTeaching(books, "hard") }, warnings };
+}
+
+/* ------------------------------------------------------------------ */
+/* The 66 books at a glance, key chapters, themes                      */
+/* ------------------------------------------------------------------ */
+
+/** The 66 books with a field every book page has (structure, keyChapters, themes). */
+function loadIntros() {
+  return readJson(path.join(ROOT, "client/public/bible/books.json")).map((b) => ({ ...b, intro: readJson(path.join(NOTES, b.slug, "intro.json")) }));
+}
+
+/**
+ * The 66 books at a glance: each book's own outline (intro.json `structure`),
+ * part by part in its own words. The page draws each book as one band with
+ * the book page's own rule for a part's width (outlineBand in
+ * pages/study-bible/bookFacts.ts), so the two drawings of a book agree.
+ */
+export function buildGlance(books = loadIntros()) {
+  const warnings = [];
+  const rows = books.map((b) => {
+    const parts = (b.intro.structure ?? []).map((p) => ({ range: p.range, title: p.title, summary: p.summary }));
+    if (!parts.length) warnings.push(`${b.name} has no outline`);
+    for (const p of parts) if (!/^\d+(?::\d+)?(?:-\d+(?::\d+)?)?$/.test(p.range)) warnings.push(`${b.name}: the range "${p.range}" cannot be drawn`);
+    return { ...bookRow(b), chapters: b.chapters, parts };
+  });
+  return { data: { v: 1, books: rows }, warnings };
+}
+
+/**
+ * Where to start in every book: each book's key chapters (intro.json
+ * `keyChapters`) in the book's own order, each with the book's own reason.
+ */
+export function buildKeyChapters(books = loadIntros()) {
+  const warnings = [];
+  const rows = books.map((b) => ({
+    ...bookRow(b),
+    chapters: (b.intro.keyChapters ?? []).filter((k) => {
+      const ok = k.ch >= 1 && k.ch <= b.chapters;
+      if (!ok) warnings.push(`${b.name}: chapter ${k.ch} is not in the book, so it is left out`);
+      return ok;
+    }).map((k) => ({ ch: k.ch, why: k.why })),
+  }));
+  return { data: { v: 1, books: rows }, warnings };
+}
+
+/**
+ * Themes of the Bible: every book's themes (intro.json `themes`). Themes
+ * that carry the same title in more than one book are set under that one
+ * title, each book's paragraph kept whole and apart. Titles are matched as
+ * written (letter case aside): nothing here decides that two differently
+ * named themes are the same, and no theme is sorted into a scheme.
+ */
+export function buildThemes(books = loadIntros()) {
+  const themes = [];
+  for (const b of books) {
+    for (const t of b.intro.themes ?? []) {
+      const key = t.title.trim().toLowerCase();
+      let hit = themes.find((x) => x.key === key);
+      if (!hit) {
+        hit = { key, title: t.title, entries: [] };
+        themes.push(hit);
+      }
+      hit.entries.push({ book: b.slug, ...(t.title !== hit.title ? { title: t.title } : {}), body: t.body });
+    }
+  }
+  const used = new Set();
+  const out = themes.map((t) => {
+    let id = t.key.normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "theme";
+    while (used.has(id)) id += "-2";
+    used.add(id);
+    return { id, title: t.title, entries: t.entries };
+  });
+  const sortKey = (t) => t.title.replace(/^(?:The|A|An) /i, "");
+  out.sort((a, b) => sortKey(a).localeCompare(sortKey(b), "en", { sensitivity: "base" }));
+  return { data: { v: 1, books: books.map(bookRow), themes: out }, warnings: [] };
 }
 
 /* ------------------------------------------------------------------ */
@@ -395,6 +507,9 @@ export const INDEXES = {
   atlas: { file: "atlas.json", build: buildAtlas, count: (d) => `${d.places.length} places from ${d.books.length} books` },
   words: { file: "words.json", build: buildWords, count: (d) => `${d.words.length} words from ${d.books.length} books` },
   hard: { file: "hard-passages.json", build: buildHard, count: (d) => `${d.books.reduce((n, b) => n + b.items.length, 0)} passages from ${d.books.length} books` },
+  glance: { file: "books-at-a-glance.json", build: buildGlance, count: (d) => `${d.books.reduce((n, b) => n + b.parts.length, 0)} parts of ${d.books.length} books` },
+  keys: { file: "key-chapters.json", build: buildKeyChapters, count: (d) => `${d.books.reduce((n, b) => n + b.chapters.length, 0)} key chapters of ${d.books.length} books` },
+  themes: { file: "themes.json", build: buildThemes, count: (d) => `${d.themes.length} themes, ${d.themes.reduce((n, t) => n + t.entries.length, 0)} paragraphs from ${d.books.length} books` },
 };
 
 /** Write one index, or with --check exit 1 when the committed file is not what the book pages now give. */
