@@ -18364,3 +18364,22 @@ Cut in chapter 17: the deep note's lines from the chapter to Jesus and the Samar
 | Psalm 20:7; Micah 4:4 | 17-37 | 2-kings/18.json `cultural` (Micah 4:4); BSB | Repository; BSB text |
 
 Cut in chapter 18: the deep note's line from Hezekiah's mocked trust to Jesus mocked on the cross (Matthew 27:43), which the New Testament does not draw to this chapter; John 3:14 is kept as Jesus' own word about the snake. The coarse words of 18:27 are not quoted. A first draft set the king's order inside the quotation of 18:36; the sentence was rewritten before it reached the repository. No care line is needed in this chapter.
+
+## The plain notes on 2 Kings 19 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sackcloth and the temple (19:1); the officials and priests to Isaiah (19:2); 19:3 (Hezekiah's words); 19:4 (two phrases); 19:6 (the LORD's words); the rumor and the sword (19:7, paraphrased); Libnah (19:8); Tirhakah and the second warning (19:9-12, paraphrased); 19:13 | 1-13 | 2-kings/19.json `summary`; BSB | Repository; BSB text |
+| The challenge answered; the high point of the reign; set against Samaria; sackcloth; the proverb of children at birth; charaph and Goliath (1 Samuel 17:26); she'erit and Isaiah; 701 BC; Libnah near Lachish; Tirhakah, the Cushite dynasty, about 690 BC, the title in anticipation, the two-campaign view; Eltekeh in the annals | 1-13 | 2-kings/19.json `story`, `historical`, `cultural`, `words` (charaph, she'erit) | Repository; the views in their holders' terms |
+| 1 Samuel 17:26; Psalm 46:1 | 1-13 | 2-kings/19.json `words` (charaph); BSB | Repository; BSB text |
+| The letter spread out (19:14); 19:15; 19:16; the gods thrown into the fire and 19:18 (quoted before its dash); 19:19; Isaiah's message (19:20); the taunt song (19:21-28, paraphrased) and 19:22 (its exclamation in double quotes); the boasts (19:23-24) and the LORD's planning (19:25); 19:28; the sign (19:29); 19:30; 19:32 paraphrased; 19:34 | 14-34 | 2-kings/19.json `summary`; BSB | Repository; BSB text |
+| Answering the LORD, not Assyria; the letter before the true king; the cherubim and the footstool; the prayer's shape; the LORD answering because Hezekiah prayed; chay; the taunt song; the Assyrian boasts and Isaiah's reversal; Assyrian art and the hook; the empire as a tool | 14-34 | 2-kings/19.json `cultural`, `literary`, `words` (chay), `doctrines` (prayer, sovereignty) | Repository |
+| Isaiah 11:1; Romans 9:27 | 14-34 | 2-kings/19.json `christ` (Isaiah 11:1; Romans 9:27-29); BSB | Repository; BSB text; Paul's own quotation of Isaiah's remnant promise |
+| 19:35 (to its first sentence's end); the return to Nineveh (19:36); Nisroch, the sons, Ararat and Esarhaddon (19:37) | 35-37 | 2-kings/19.json `summary`; BSB | Repository; BSB text; the dead not described |
+| The fulfilled promises (rumor, return, sword); the annals' silence about Jerusalem; Herodotus and the mice, the link uncertain; the Babylonian records and 681 BC; two decades in one verse; Nisroch unidentified | 35-37 | 2-kings/19.json `historical`, `literary` | Repository |
+| 2 Samuel 24:16 (its narrative and the LORD's words) | 35-37 | 2-kings/19.json `hard` (2 Samuel 24:15-16); BSB | Repository; BSB text |
+| The hard note: a direct act; a plague through which God acted; the number questioned (thousand as a unit); the secure facts; soldiers under orders and the moral question; judgment on an empire and defense of the helpless; no celebration of the dead; no warrant to cheer enemies' deaths or claim God's hand behind one's own war | 35-37 `hard` | 2-kings/19.json `hard`; the brief | Repository; the readings in their holders' terms |
+
+Cut in chapter 19: the deep note's line from Hezekiah's prayer for the nations to the church's mission, and from the defended city to the Messiah, beyond Paul's own quotation; the shoot of Jesse is quoted from Isaiah without a further claim. A quotation of 19:18 first ran past its dash, and the exclamation of 19:22 was first set in single quotes; both were corrected before they reached the repository. No care line is needed in this chapter.
