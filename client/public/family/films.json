@@ -85,12 +85,6 @@
    "minutes": 2,
    "by": "pick"
   },
-  "gods-faithfulness": {
-   "slug": "temple-destroyed",
-   "title": "Why did God let his temple be destroyed?",
-   "minutes": 3,
-   "by": "passage"
-  },
   "the-fruit-of-the-spirit": {
    "slug": "spirit-in-a-believer",
    "title": "The Holy Spirit in a believer",
@@ -469,7 +463,7 @@
    "slug": "never-heard",
    "title": "What about people who never heard?",
    "minutes": 3,
-   "by": "passage"
+   "by": "pick"
   },
   "70": {
    "slug": "when-we-die",
@@ -482,12 +476,6 @@
    "title": "Are science and the Bible enemies?",
    "minutes": 2,
    "by": "pick"
-  },
-  "73": {
-   "slug": "never-heard",
-   "title": "What about people who never heard?",
-   "minutes": 3,
-   "by": "passage"
   },
   "74": {
    "slug": "love-when-i-do-wrong",
