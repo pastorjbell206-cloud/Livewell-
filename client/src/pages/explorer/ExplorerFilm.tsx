@@ -293,6 +293,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The prophets' own answer, in seven moving pictures: a temple that never held God, prophet after prophet, Jeremiah at the gate, the glory leaving, the day it fell, grief kept in Scripture, and a promise larger than what was lost.",
     },
+    "book-genesis": {
+      title: "Genesis: the book of beginnings: Bible Explorer",
+      description:
+        "The whole book of Genesis in seven moving pictures: what it is, its two halves, the image of God, the first sin, the promise to Abraham, a faithful God with a flawed family, and where to start reading.",
+    },
+    "book-psalms": {
+      title: "Psalms: the prayer book of the Bible: Bible Explorer",
+      description:
+        "The whole book of Psalms in seven moving pictures: what it is, its gateway and five books, honest prayer, praise, the LORD as king, the prayers Jesus prayed, and where to start reading.",
+    },
+    "book-john": {
+      title: "John: the Word made flesh: Bible Explorer",
+      description:
+        "The whole Gospel of John in seven moving pictures: what it is, how it is built, the signs, the seven I am sayings, believing and life, the last evening and the glory of the cross, and where to start reading.",
+    },
+    "book-romans": {
+      title: "Romans: the good news, set out: Bible Explorer",
+      description:
+        "The whole letter to the Romans in seven moving pictures: what it is, its large blocks, what is wrong, what God has done, the new life, one people from Jew and Gentile, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

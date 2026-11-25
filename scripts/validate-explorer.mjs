@@ -20,7 +20,7 @@
  *     people for the death of Jesus;
  *   - the threads and the "Why we believe" cards point only at stops that
  *     exist, and a card's catechism numbers exist in the family catechism;
- *   - "Watch and learn" (films.json, films/<slug>.json): six groups; a film
+ *   - "Watch and learn" (films.json, films/<slug>.json): seven groups; a film
  *     not made yet has no file and no link; a finished film has 5 to 9
  *     frames, each with its caption at both levels and the words for its
  *     finished picture (all a reader gets with motion turned off), its
@@ -506,11 +506,15 @@ for (const c of cards) {
 
 
 // ── Watch and learn: the moving pictures ──────────────────────────────────
-// films.json lists every planned film under one of six groups; a finished
+// films.json lists every planned film under one of seven groups; a finished
 // film has its own file, films/<slug>.json, and a drawing in
 // client/src/pages/explorer/films/scenes/<slug>.tsx listed in FILM_SCENES.
 {
-  const GROUPS = ["story", "stories", "ideas", "beliefs", "verses", "questions"];
+  const GROUPS = ["story", "stories", "books", "ideas", "beliefs", "verses", "questions"];
+  const bibleBooks = new Map(
+    read(path.join(ROOT, "client/public/bible/books.json")).map(b => [b.slug, b])
+  );
+  const bookFilms = new Set();
   const groups = filmCatalogue.groups ?? [];
   if (groups.map(g => g.id).join() !== GROUPS.join())
     fail("films.json", `groups must be ${GROUPS.join(", ")}, in that order`);
@@ -531,7 +535,7 @@ for (const c of cards) {
       fail(w, "has a missing, unplain or repeated slug");
     seen.add(f.slug);
     if (!f.title) fail(w, "needs a title");
-    if (!GROUPS.includes(f.group)) fail(w, `group "${f.group}" is not one of the six`);
+    if (!GROUPS.includes(f.group)) fail(w, `group "${f.group}" is not one of the seven`);
     textRules(w, f.title);
     const file = path.join(DIR, "films", `${f.slug}.json`);
     if (f.status === "coming") {
@@ -556,6 +560,33 @@ for (const c of cards) {
     if (film.title !== f.title) fail(fw, "title does not match films.json");
     if (film.group !== f.group) fail(fw, "group does not match films.json");
     textRules(fw, film);
+    // A film for one whole book of the Bible: in the group "books", named
+    // for its book, with a book page to draw its words from; every verse it
+    // shows is that book's own, and it ends by sending the reader into the
+    // book. One film a book.
+    if ((f.group === "books") !== (film.book !== undefined))
+      fail(fw, 'a film in the group "books" names its book, and only such a film does');
+    if (film.book !== undefined) {
+      const book = bibleBooks.get(film.book);
+      if (!book) fail(fw, `book "${film.book}" is not a book of the Bible (bible/books.json)`);
+      else {
+        if (f.slug !== `book-${film.book}`) fail(fw, `a film for ${book.name} is named book-${film.book}`);
+        if (bookFilms.has(film.book)) fail(fw, `${book.name} already has a film`);
+        bookFilms.add(film.book);
+        if (!fs.existsSync(path.join(ROOT, "client/public/bible/notes", film.book, "intro.json")))
+          fail(fw, `${book.name} has no book page to draw from (bible/notes/${film.book}/intro.json)`);
+        for (const [i, fr] of (film.frames ?? []).entries()) {
+          const r = fr.verse ? readRef(fr.verse.ref) : null;
+          if (fr.verse && r && r.book.slug !== film.book)
+            fail(`${fw} frames[${i}] verse`, `${fr.verse.ref} is not a verse of ${book.name}`);
+        }
+        for (const [i, r] of (film.read ?? []).entries())
+          if (!String(r.href ?? "").startsWith(`/study/bible/${film.book}/`))
+            fail(`${fw} read[${i}]`, `is not a chapter of ${book.name}`);
+        if (!String(film.end?.href ?? "").startsWith(`/study/bible/${film.book}/`))
+          fail(`${fw} end`, `a book film ends by sending the reader to a chapter of ${book.name}`);
+      }
+    }
     levelPair(`${fw} line`, film.line, 240);
     if (!film.poster) fail(fw, "needs what the poster shows");
     // A film's small picture: the map's road, a stop's roundel, or the film's
