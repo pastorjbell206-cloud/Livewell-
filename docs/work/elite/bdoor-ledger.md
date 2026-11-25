@@ -17812,3 +17812,20 @@ Cut in chapter 3: the deep note's lines to Christ (1 Corinthians 12, 1 Peter 2:5
 | Exodus 14:14 | 15-23 | nehemiah/4.json `words` (lacham: Exodus 14:14); BSB | Repository; BSB text |
 
 Cut in chapter 4: the deep note's lines to Christ (the servant-leader, Ephesians 2 and 6, Colossians 2:15; the note calls them thematic); the phrase 'the rhythm of a work song' for verse 10 (not stated in the repository; cut before commit).
+
+## The plain notes on Nehemiah 5 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The threat from inside; the province's tribute in silver, the famine, the builders' time; pledged land and children; tseaqah as the cry God hears; the law on interest and debt service and their breakdown; brothers selling brothers | 1-5 | nehemiah/5.json `story`, `historical`, `cultural`, `words` (tseaqah) | Repository |
+| Exodus 22:25; Leviticus 25:36 | 1-5 | nehemiah/5.json `cultural`; leviticus/plain/25.json (Nehemiah 5:5); BSB | Repository; BSB text |
+| Why the law allowed debt service: not approved here; the ancient alternative to starving; regulation, term limits and release; interest forbidden; God meeting a harsh economy, or laws that kept would end lasting poverty; the protections ignored | 1-5 `hard` | nehemiah/5.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word for anyone who is being held, owned or forced to work today...’ to ‘...lists places to turn.’) | 1-5 `hard` | 2-samuel/plain/12.json (26-31); 1-corinthians/plain/7.json; deuteronomy/plain/15.json and 23.json; exodus/plain/21.json (`hard`) | Reused whole, word for word; Find Help named |
+| Anger after thought; the public assembly; the covenant and the fear of God; the shame before enemies; Nehemiah including himself (5:10); the hundredth part, perhaps one percent a month; the shaken robe as sign-act and curse; the amen; the promise kept | 6-13 | nehemiah/5.json `literary`, `cultural`, `doctrines` (law), `words` (mashsha, yirah); BSB | Repository; BSB text |
+| Acts 18:6; Deuteronomy 15:12 | 6-13 | acts/plain/18.json (Nehemiah 5:13); nehemiah/5.json `cultural`; BSB | Repository; BSB text |
+| The twentieth to thirty-second year, about 445 to 433 BC, written looking back; the governor's table and the earlier governors' burden; the fear of God; the remember prayer not a claim to earn salvation; an unjust economy not a restored city | 14-19 | nehemiah/5.json `historical`, `cultural`, `words` (zakar); nehemiah/intro.json `themes` | Repository |
+| Nehemiah 10:31 and Deuteronomy 15:1-2 | 14-19 | deuteronomy/plain/15.json (Nehemiah 10:31); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (2 Corinthians 8:9, Luke 4:18-19, Acts 4:34; the note calls them thematic); a single quotation of 5:13 that carried the people's amen in its own quotation marks (rewritten before commit so that no quotation holds another).
