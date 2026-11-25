@@ -1,5 +1,5 @@
 {
-  "about": "Watch and learn: every moving picture planned for the Bible Explorer, in the order the map lists them. A finished film has its own file in films/<slug>.json and a page at /study/explorer/watch/<slug>; one still coming is named here only, with no link. scripts/build-explorer-index.mjs copies this into index.json; scripts/validate-explorer.mjs checks it.",
+  "about": "Watch and learn: every moving picture planned for the Bible Explorer, in the order the map lists them. A film for one whole book of the Bible is in the group \"books\", is named book-<the book's slug> and says which book in its own file (\"book\"). A finished film has its own file in films/<slug>.json and a page at /study/explorer/watch/<slug>; one still coming is named here only, with no link. scripts/build-explorer-index.mjs copies this into index.json; scripts/validate-explorer.mjs checks it.",
   "groups": [
     {
       "id": "story",
@@ -10,6 +10,11 @@
       "id": "stories",
       "name": "Bible stories",
       "line": "Stories of the Bible, told as the text itself tells them."
+    },
+    {
+      "id": "books",
+      "name": "Books of the Bible",
+      "line": "One book at a time: what it is, how it is laid out, what to watch for, and where to start."
     },
     {
       "id": "ideas",
@@ -39,6 +44,11 @@
 
     { "slug": "the-exodus", "title": "The Exodus: out of Egypt", "group": "stories", "status": "finished" },
     { "slug": "david-and-goliath", "title": "David and Goliath", "group": "stories", "status": "finished" },
+
+    { "slug": "book-genesis", "title": "Genesis: the book of beginnings", "group": "books", "status": "finished" },
+    { "slug": "book-psalms", "title": "Psalms: the prayer book of the Bible", "group": "books", "status": "finished" },
+    { "slug": "book-john", "title": "John: the Word made flesh", "group": "books", "status": "finished" },
+    { "slug": "book-romans", "title": "Romans: the good news, set out", "group": "books", "status": "finished" },
 
     { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
     { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },

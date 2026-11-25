@@ -26,6 +26,7 @@ import {
 import { Band, H2, H3, Pill, Prose, RelatedList, kicker, useLoad } from "./shared";
 import BookGlance from "./BookGlance";
 import BookTeaching from "./BookTeaching";
+import FilmsHere from "@/components/FilmsHere";
 import { fetchBookMeta } from "./bookFacts";
 import "../home/home.css";
 import "./bible.css";
@@ -107,6 +108,14 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
           </ol>
         </div>
       </section>
+
+      {/* The Bible Explorer's film for this book, if one is made: offered from
+          the film's own data (its "book"), never from a list here. It sits
+          below the chapters, so its late arrival moves nothing in the first
+          screen. */}
+      <div className="home-wrap" style={{ paddingInline: "var(--gutter)" }}>
+        <FilmsHere path={`/study/bible/${book.slug}`} />
+      </div>
 
       {intro && teaching && <BookTeaching book={book} teaching={teaching} />}
 
