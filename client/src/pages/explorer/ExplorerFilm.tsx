@@ -338,6 +338,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole Gospel of Mark in seven moving pictures: what it is, its two halves, the question of who Jesus is, the way of the cross, friends who fail, the centurion at the cross, and where to start reading.",
     },
+    "book-luke": {
+      title: "Luke: good news for the lost: Bible Explorer",
+      description:
+        "The whole Gospel of Luke in seven moving pictures: what it is, the long road to Jerusalem, people others passed over, the lost found, prayer, salvation today and joy, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

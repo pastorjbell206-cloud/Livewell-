@@ -1585,6 +1585,116 @@
     }
    ]
   },
+  "book-luke": {
+   "title": {
+    "file": "book-luke/title.mp3",
+    "hash": "4a2e933a856d57def085",
+    "seconds": 2.53,
+    "bytes": 15764
+   },
+   "younger": [
+    {
+     "id": "account",
+     "file": "book-luke/younger/01-account.mp3",
+     "hash": "f1faefa8968e5bd4595a",
+     "seconds": 24.39,
+     "bytes": 146948
+    },
+    {
+     "id": "layout",
+     "file": "book-luke/younger/02-layout.mp3",
+     "hash": "b9f4bc6bf67240f09e0f",
+     "seconds": 24.47,
+     "bytes": 147380
+    },
+    {
+     "id": "poor",
+     "file": "book-luke/younger/03-poor.mp3",
+     "hash": "d172bb79dd5d0389d84a",
+     "seconds": 23.39,
+     "bytes": 140900
+    },
+    {
+     "id": "lost",
+     "file": "book-luke/younger/04-lost.mp3",
+     "hash": "5efe7213d72a19438970",
+     "seconds": 25.22,
+     "bytes": 151844
+    },
+    {
+     "id": "prayer",
+     "file": "book-luke/younger/05-prayer.mp3",
+     "hash": "ad8185f62c3ec8c681dc",
+     "seconds": 22.17,
+     "bytes": 133556
+    },
+    {
+     "id": "today",
+     "file": "book-luke/younger/06-today.mp3",
+     "hash": "b47fa0650db231363522",
+     "seconds": 25.05,
+     "bytes": 150836
+    },
+    {
+     "id": "start",
+     "file": "book-luke/younger/07-start.mp3",
+     "hash": "b9251fee15e6b64dd79e",
+     "seconds": 23.51,
+     "bytes": 141620
+    }
+   ],
+   "older": [
+    {
+     "id": "account",
+     "file": "book-luke/older/01-account.mp3",
+     "hash": "bbe50f10f1a7615de3d8",
+     "seconds": 26.3,
+     "bytes": 158324
+    },
+    {
+     "id": "layout",
+     "file": "book-luke/older/02-layout.mp3",
+     "hash": "24af32b3cbaa92f0e1c4",
+     "seconds": 24.91,
+     "bytes": 149972
+    },
+    {
+     "id": "poor",
+     "file": "book-luke/older/03-poor.mp3",
+     "hash": "b94d8126690693cac5cd",
+     "seconds": 25.7,
+     "bytes": 154724
+    },
+    {
+     "id": "lost",
+     "file": "book-luke/older/04-lost.mp3",
+     "hash": "578570cf62c5464bb6f4",
+     "seconds": 22.64,
+     "bytes": 136436
+    },
+    {
+     "id": "prayer",
+     "file": "book-luke/older/05-prayer.mp3",
+     "hash": "08e454990686a4f95653",
+     "seconds": 23.26,
+     "bytes": 140180
+    },
+    {
+     "id": "today",
+     "file": "book-luke/older/06-today.mp3",
+     "hash": "2f8c03e6207667c6fd74",
+     "seconds": 26.01,
+     "bytes": 156596
+    },
+    {
+     "id": "start",
+     "file": "book-luke/older/07-start.mp3",
+     "hash": "58753a55d7c76b53f145",
+     "seconds": 25.08,
+     "bytes": 151124
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

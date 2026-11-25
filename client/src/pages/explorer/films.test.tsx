@@ -1720,6 +1720,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-isaiah",
     "book-matthew",
     "book-mark",
+    "book-luke",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")

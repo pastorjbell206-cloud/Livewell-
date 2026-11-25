@@ -884,6 +884,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M12,76q5,-4 10,0t10,0M40,80q5,-4 10,0t10,0M68,76q5,-4 10,0t10,0" />
     </>
   ),
+  /* Luke: one sheep found, and a gold light over it. */
+  "book-luke": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M50,8l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+      <path className="pl-l" d="M50,8l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+      <Shape d="M30,68C24,56 36,46 46,52C50,42 68,44 68,54C80,54 80,70 70,72C66,80 38,80 34,72C28,72 28,70 30,68Z" off={1} />
+      <Shape d="M68,56c8,-4 14,2 12,8c-4,4 -10,2 -12,-8Z" tone="c" off={0.6} />
+      <path className="pl-l" d="M40,76V84M62,76V84" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
