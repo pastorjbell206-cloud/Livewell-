@@ -288,6 +288,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "A hard question in seven moving pictures: what all Christians confess, what the Bible says and does not say about those who never heard of Jesus, and the three main answers Christians give, with no side taken.",
     },
+    "temple-destroyed": {
+      title: "Why did God let his temple be destroyed?: Bible Explorer",
+      description:
+        "The prophets' own answer, in seven moving pictures: a temple that never held God, prophet after prophet, Jeremiah at the gate, the glory leaving, the day it fell, grief kept in Scripture, and a promise larger than what was lost.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

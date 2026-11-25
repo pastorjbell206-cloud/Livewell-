@@ -1,0 +1,122 @@
+{
+  "slug": "temple-destroyed",
+  "title": "Why did God let his temple be destroyed?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "temple-destroyed",
+  "line": {
+    "younger": "God's people had a beautiful temple, and one day it was burned. Why would God let that happen? What the prophets said, and how the story went on.",
+    "older": "The prophets' own answer, as the Bible gives it: long warnings, a temple that never held God, real grief kept in Scripture, and a promise larger than what was lost."
+  },
+  "poster": "A temple of pale stone stands on a hill above a city, two tall pillars at its door, and people climb the road toward it.",
+  "frames": [
+    {
+      "id": "house",
+      "name": "A house for God's name",
+      "still": "A temple of pale stone stands on a hill above a city, two tall pillars at its door, and people climb the road toward it.",
+      "younger": "King Solomon built a beautiful temple in Jerusalem, where God's people came to worship. But on the day it was finished, Solomon said something wise. No building could ever hold God.",
+      "older": "The temple in Jerusalem was the place toward which prayer was directed and where God's Name dwelt. It was never a box that held him. Solomon said so on the day it was finished.",
+      "verse": {
+        "ref": "1 Kings 8:27",
+        "text": "Even heaven, the highest heaven, cannot contain You, much less this temple I have built."
+      }
+    },
+    {
+      "id": "prophets",
+      "name": "Prophet after prophet",
+      "still": "In a city street a prophet with a staff stands and speaks with one hand held out. Most of the people walk past him, and one child has stopped to listen.",
+      "younger": "For hundreds of years, many of the kings led the people away from God. So God sent prophets to call them back, one after another. He warned them again and again, because he cared about them.",
+      "older": "For more than three centuries God sent prophets: Elijah, Amos, Hosea, Isaiah, Micah, Jeremiah and others. They spoke about worship, about justice for the poor, and about hope.",
+      "verse": {
+        "ref": "2 Chronicles 36:15",
+        "text": "Again and again the LORD, the God of their fathers, sent word to His people through His messengers"
+      }
+    },
+    {
+      "id": "gate",
+      "name": "At the temple gate",
+      "still": "A prophet stands beside the great gate of the temple wall with his hand held out, and people pass by him toward the gate. The temple is seen beyond it.",
+      "younger": "Some people thought nothing bad could happen to them, because the temple was in their city. God sent Jeremiah to the temple gate. The building would not keep them safe, he said. God wanted them to change how they lived.",
+      "older": "God sent Jeremiah to the temple gate, the most public pulpit in Judah, to tell the worshipers that the temple would not save them. The sermon nearly cost him his life.",
+      "verse": {
+        "ref": "Jeremiah 7:4",
+        "text": "Do not trust in deceptive words, chanting: ‘This is the temple of the LORD, the temple of the LORD, the temple of the LORD.’"
+      }
+    },
+    {
+      "id": "glory",
+      "name": "The glory leaves",
+      "still": "The temple stands on its hill under a dark sky. A gold light has risen from it and stands above the roof, moving away toward the east.",
+      "younger": "Far away in Babylon, a prophet named Ezekiel saw a vision. The bright glory of God rose up and left the temple, before the city fell. God was never shut inside it.",
+      "older": "Ezekiel, already an exile, saw in a vision the glory of the LORD leave the temple before the city fell. The exile was not God losing a battle to Babylon's gods.",
+      "verse": {
+        "ref": "Ezekiel 10:18",
+        "text": "Then the glory of the LORD moved away from the threshold of the temple"
+      }
+    },
+    {
+      "id": "burned",
+      "name": "The day it fell",
+      "still": "Evening. The temple is a ruin of broken walls and fallen pillars with thin smoke rising from it, and a line of people with bundles walks away down the road.",
+      "younger": "Then the army of Babylon came. They burned the temple, and many people were taken far away. It was a very sad time. The Bible keeps the people's sad songs, and does not hurry past them.",
+      "older": "In 587 or 586 BC (historians give either year) Babylon's army burned the temple, the palace and the city. The Bible does not treat the grief as small. Lamentations and Psalm 137 keep raw sorrow in Scripture itself.",
+      "verse": {
+        "ref": "2 Kings 25:9",
+        "text": "He burned down the house of the LORD"
+      }
+    },
+    {
+      "id": "why",
+      "name": "Why?",
+      "still": "By a wide river people sit on the bank with their heads bowed, and harps hang in the branches of a tree. Far across the water a gold dawn is beginning.",
+      "younger": "Why did God let it happen? The prophets said it came after a very long time of turning away, and many warnings. But not every sad thing is a punishment. Jesus himself said so. And God had not stopped loving his people.",
+      "older": "The prophets' answer is hard to hear: God did what he had said he would do. But not every loss is a punishment. Asked whose sin had made a man blind, Jesus said, “Neither this man nor his parents sinned.” And this loss was not the end of God's love.",
+      "verse": {
+        "ref": "Lamentations 3:22-23",
+        "text": "His mercies never fail. They are new every morning; great is Your faithfulness!"
+      }
+    },
+    {
+      "id": "again",
+      "name": "More than was lost",
+      "still": "Morning. A new, smaller temple stands on the hill where the ruin was. People stand before it with their arms raised, and an old man kneels with his head bowed to the ground. A gold sun is up.",
+      "younger": "God went with his people to Babylon, and he brought them home. About seventy years later, a new temple stood in Jerusalem. And God had promised something better than a building.",
+      "older": "God had been a sanctuary for the exiles in the lands where they had gone. About seventy years after Solomon's temple was burned, the house of God stood in Jerusalem again. And the prophets promised more than had been lost.",
+      "verse": {
+        "ref": "Jeremiah 31:33",
+        "text": "I will put My law in their minds and inscribe it on their hearts."
+      }
+    }
+  ],
+  "think": {
+    "younger": "The people thought the building would keep them safe. What is the difference between trusting a place and trusting God?",
+    "older": "The Bible keeps Lamentations and Psalm 137 in it, grief and all. Why do you think God wanted those sad songs kept?"
+  },
+  "read": [
+    { "label": "1 Kings 8", "href": "/study/bible/1-kings/8" },
+    { "label": "Jeremiah 7", "href": "/study/bible/jeremiah/7" },
+    { "label": "Ezekiel 10", "href": "/study/bible/ezekiel/10" },
+    { "label": "2 Kings 25", "href": "/study/bible/2-kings/25" },
+    { "label": "Lamentations 3", "href": "/study/bible/lamentations/3" },
+    { "label": "Jeremiah 31", "href": "/study/bible/jeremiah/31" }
+  ],
+  "stops": [
+    "exile",
+    "return"
+  ],
+  "cards": [],
+  "care": "This stop tells of people who lost their home and were taken far away. If you have had to leave a home, or have lost someone or something you loved, it is right to feel sad, and you do not have to carry it alone. Talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "The Prophets and Exile: the stop on the map", "href": "/study/explorer/exile" },
+    { "label": "2 Chronicles 36 in the Study Bible", "href": "/study/bible/2-chronicles/36" },
+    { "label": "John 9 in the Study Bible: neither this man nor his parents sinned", "href": "/study/bible/john/9" },
+    { "label": "Psalm 137 in the Study Bible", "href": "/study/bible/psalms/137" },
+    { "label": "Ezra 6 in the Study Bible: the temple finished", "href": "/study/bible/ezra/6" },
+    { "label": "Ezekiel 11 in the Study Bible: a sanctuary for them", "href": "/study/bible/ezekiel/11" },
+    { "label": "God with his people (a moving picture)", "href": "/study/explorer/watch/god-with-his-people" },
+    { "label": "Exile and coming home (a moving picture)", "href": "/study/explorer/watch/exile-and-home" },
+    { "label": "Why do bad things happen? (a moving picture)", "href": "/study/explorer/watch/why-bad-things-happen" },
+    { "label": "If God is good, why is there suffering? (an Honest Answer)", "href": "/answers/if-god-is-good-why-suffering" }
+  ],
+  "end": { "label": "Go to the Prophets and Exile on the map", "href": "/study/explorer/exile" }
+}

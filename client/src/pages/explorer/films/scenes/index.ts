@@ -54,6 +54,7 @@ export const FILM_SCENES: Record<
   "all-nations": () => import("./all-nations"),
   "light-and-darkness": () => import("./light-and-darkness"),
   "never-heard": () => import("./never-heard"),
+  "temple-destroyed": () => import("./temple-destroyed"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

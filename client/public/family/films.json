@@ -85,6 +85,12 @@
    "minutes": 2,
    "by": "pick"
   },
+  "gods-faithfulness": {
+   "slug": "temple-destroyed",
+   "title": "Why did God let his temple be destroyed?",
+   "minutes": 3,
+   "by": "passage"
+  },
   "the-fruit-of-the-spirit": {
    "slug": "spirit-in-a-believer",
    "title": "The Holy Spirit in a believer",

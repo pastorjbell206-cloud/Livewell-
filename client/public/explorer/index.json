@@ -2038,7 +2038,18 @@
       "slug": "temple-destroyed",
       "title": "Why did God let his temple be destroyed?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God's people had a beautiful temple, and one day it was burned. Why would God let that happen? What the prophets said, and how the story went on.",
+        "older": "The prophets' own answer, as the Bible gives it: long warnings, a temple that never held God, real grief kept in Scripture, and a promise larger than what was lost."
+      },
+      "mark": "temple-destroyed",
+      "frames": 7,
+      "stops": [
+        "exile",
+        "return"
+      ],
+      "cards": []
     },
     {
       "slug": "love-when-i-do-wrong",

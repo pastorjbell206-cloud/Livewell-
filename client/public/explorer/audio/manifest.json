@@ -4859,6 +4859,116 @@
     }
    ]
   },
+  "temple-destroyed": {
+   "title": {
+    "file": "temple-destroyed/title.mp3",
+    "hash": "11fb1ba332117d59266e",
+    "seconds": 3.32,
+    "bytes": 20516
+   },
+   "younger": [
+    {
+     "id": "house",
+     "file": "temple-destroyed/younger/01-house.mp3",
+     "hash": "737a1d73e05379fc6113",
+     "seconds": 24.29,
+     "bytes": 146228
+    },
+    {
+     "id": "prophets",
+     "file": "temple-destroyed/younger/02-prophets.mp3",
+     "hash": "e257f9555b69fae500de",
+     "seconds": 26.83,
+     "bytes": 161636
+    },
+    {
+     "id": "gate",
+     "file": "temple-destroyed/younger/03-gate.mp3",
+     "hash": "fe32f27021e8ee8c82c7",
+     "seconds": 30.03,
+     "bytes": 180788
+    },
+    {
+     "id": "glory",
+     "file": "temple-destroyed/younger/04-glory.mp3",
+     "hash": "364a06ae2ee938614e28",
+     "seconds": 22.49,
+     "bytes": 135428
+    },
+    {
+     "id": "burned",
+     "file": "temple-destroyed/younger/05-burned.mp3",
+     "hash": "4b16f478adc61a930e31",
+     "seconds": 21.82,
+     "bytes": 131540
+    },
+    {
+     "id": "why",
+     "file": "temple-destroyed/younger/06-why.mp3",
+     "hash": "129c8218f894c78df006",
+     "seconds": 30.29,
+     "bytes": 182228
+    },
+    {
+     "id": "again",
+     "file": "temple-destroyed/younger/07-again.mp3",
+     "hash": "c9ad37997fc47dcd1f34",
+     "seconds": 22.28,
+     "bytes": 134276
+    }
+   ],
+   "older": [
+    {
+     "id": "house",
+     "file": "temple-destroyed/older/01-house.mp3",
+     "hash": "0094f358105d0fa198a7",
+     "seconds": 24.44,
+     "bytes": 147236
+    },
+    {
+     "id": "prophets",
+     "file": "temple-destroyed/older/02-prophets.mp3",
+     "hash": "4c48d5c70b10f2782f0d",
+     "seconds": 27.02,
+     "bytes": 162788
+    },
+    {
+     "id": "gate",
+     "file": "temple-destroyed/older/03-gate.mp3",
+     "hash": "24cafe2f9b6b32de2c32",
+     "seconds": 25.48,
+     "bytes": 153428
+    },
+    {
+     "id": "glory",
+     "file": "temple-destroyed/older/04-glory.mp3",
+     "hash": "93d5f59a143669d12880",
+     "seconds": 21.91,
+     "bytes": 131972
+    },
+    {
+     "id": "burned",
+     "file": "temple-destroyed/older/05-burned.mp3",
+     "hash": "683e3827dd4b23069296",
+     "seconds": 29.92,
+     "bytes": 180068
+    },
+    {
+     "id": "why",
+     "file": "temple-destroyed/older/06-why.mp3",
+     "hash": "0345784d9134b3116ab8",
+     "seconds": 32.16,
+     "bytes": 193460
+    },
+    {
+     "id": "again",
+     "file": "temple-destroyed/older/07-again.mp3",
+     "hash": "b98a18d8c3d9ca36ba89",
+     "seconds": 25.58,
+     "bytes": 154004
+    }
+   ]
+  },
   "love-when-i-do-wrong": {
    "title": {
     "file": "love-when-i-do-wrong/title.mp3",

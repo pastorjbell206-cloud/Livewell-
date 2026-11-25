@@ -153,6 +153,10 @@
    "title": "What about people who never heard?",
    "line": "Many people have lived without ever hearing about Jesus. What does the Bible say, and what do Christians believe? An honest look at a hard question."
   },
+  "temple-destroyed": {
+   "title": "Why did God let his temple be destroyed?",
+   "line": "God's people had a beautiful temple, and one day it was burned. Why would God let that happen? What the prophets said, and how the story went on."
+  },
   "love-when-i-do-wrong": {
    "title": "Does God still love me when I do wrong?",
    "line": "Everyone does wrong sometimes. Does God stop loving us then? Jesus answered with a story about a son who ran away and a father who ran too."
@@ -210,7 +214,8 @@
   ],
   "/answers/if-god-is-good-why-suffering": [
    "romans-8-28",
-   "why-bad-things-happen"
+   "why-bad-things-happen",
+   "temple-destroyed"
   ],
   "/answers/is-faith-irrational": [
    "faith"

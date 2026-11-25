@@ -833,7 +833,8 @@ describe("the data", () => {
   });
 
   it("has no file for a film not made yet", () => {
-    expect(COMING.length).toBeGreaterThan(0);
+    // Every film announced so far is finished (2026-11-25), so this holds
+    // for whichever film is announced next.
     for (const f of COMING)
       expect(
         fs.existsSync(path.join(PUBLIC, `explorer/films/${f.slug}.json`)),
@@ -1705,6 +1706,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "all-nations",
     "light-and-darkness",
     "never-heard",
+    "temple-destroyed",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -1849,5 +1851,50 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(
       links.pages["/questions/religions/those-who-never-heard"]
     ).toContain("never-heard");
+  });
+
+  it("Why did God let his temple be destroyed? gives the prophets' answer, blames no people, and calls no one's loss today a punishment", () => {
+    const f = filmFile("temple-destroyed");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/exile.json"), "utf8")
+    ) as { care: string; story: { older: string[] } };
+    // It tells of a city burned and a people carried off: the stop's own care line, whole.
+    expect(f.care).toBe(stop.care);
+    const t = text(f);
+    // The one date is the stop's own, worded as the stop words it.
+    expect(stop.story.older.join(" ")).toContain(
+      "In 587 or 586 BC (historians give either year)"
+    );
+    expect(f.frames[4].older).toContain(
+      "In 587 or 586 BC (historians give either year)"
+    );
+    expect(
+      f.frames.map(fr => fr.younger).join(" ") + f.line.younger
+    ).not.toMatch(/\bBC\b|\bAD\b|\d{3}/);
+    expect(t.replace(/587 or 586 BC/g, "")).not.toMatch(
+      /\b\d{3,4} (BC|AD)\b|AD \d|\b70\b|Roman/
+    );
+    // Not every loss is a punishment, at both levels, in Jesus' own words.
+    expect(f.frames[5].older).toContain("But not every loss is a punishment.");
+    expect(f.frames[5].older).toContain(
+      "“Neither this man nor his parents sinned.”"
+    );
+    expect(f.frames[5].younger).toContain(
+      "But not every sad thing is a punishment."
+    );
+    expect(t).not.toMatch(
+      /deserved|God punished them|punished the Jews|your (sin|fault)|happens? to you because/i
+    );
+    // No people is blamed: the captions name kings, prophets and "the
+    // people", never "the Jews", and no nation of today.
+    expect(captions(f)).not.toMatch(/\bJews?\b|\bJewish\b|Israelis?\b|Iraq/);
+    expect(t).not.toMatch(/modern|today's (Israel|Jerusalem)|temple mount/i);
+    // The grief is kept, and the promise.
+    expect(t).toContain("The Bible does not treat the grief as small.");
+    expect(f.frames[6].verse?.ref).toBe("Jeremiah 31:33");
+    // No battle and no flame in any picture.
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /soldier|sword|spear|flame|fire|blood|bod(y|ies)/i
+    );
   });
 });

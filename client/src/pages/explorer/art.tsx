@@ -762,6 +762,20 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M27,10V5M27,42V47M11,26H6M43,26H48" />
     </>
   ),
+  /* Why did God let his temple be destroyed?: two pillars, one standing and one broken, a gold dawn between them. */
+  "temple-destroyed": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M36,84a14,14 0 0,1 28,0Z" />
+      <path className="pl-l" d="M36,84a14,14 0 0,1 28,0" />
+      <path className="pl-f" d="M50,62V54M34,68l-5,-5M66,68l5,-5" />
+      <Shape d="M18,84V24H32V84Z" tone="c" off={1} />
+      <path className="pl-l" d="M14,24H36M14,18H36" />
+      <Shape d="M68,84V56L74,48L78,58L82,50V84Z" tone="c" off={1} />
+      <Shape d="M62,84L88,78L90,84Z" off={0.8} />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
