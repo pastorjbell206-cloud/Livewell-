@@ -17783,3 +17783,16 @@ Cut in chapter 1: the deep note's lines to Christ (Luke 19:41-44, John 17, Phili
 | Ezra 4:15 | 17-20 | nehemiah/2.json `historical` (Ezra 4:12-22); BSB | Repository; BSB text |
 
 Cut in chapter 2: the deep note's lines to Christ (Matthew 16:18, Ephesians 2:22, Luke 23:2); the BSB's word for the trip in 2:6, kept out of the prose; Psalm 137 (used in chapter 1).
+
+## The plain notes on Nehemiah 3 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The list as a record, the wall the whole community's work; the circuit from the Sheep Gate north, west and south; gates as towers, markets and courts; the Sheep, Fish and Dung Gates named for what passed; work by household and town; Persian district rulers; Shallum's daughters (3:12); the Tekoite nobles (3:5) and their townsmen's second section; the Broad Wall and Nahman Avigad in the 1970s, debated | 1-14 | nehemiah/3.json `story`, `historical`, `cultural`, `literary`, `words` (bat) | Repository |
+| John 5:2; Nehemiah 12:10 | 1-14 | nehemiah/3.json `christ` (John 5:2), `historical` (Eliashib grandson of Jeshua); BSB | Repository; BSB text |
+| The eastern side by houses and landmarks; repairs in front of homes; Nehemiah's smaller Jerusalem; chazaq about thirty-five times; at their hand; Meremoth (Ezra 8:33), Meshullam and Tobiah's son, Nehemiah son of Azbuk not the governor; the landmarks of 3:16 | 15-32 | nehemiah/3.json `historical`, `cultural`, `literary`, `words` (chazaq, yad); BSB | Repository; BSB text |
+| Ezra 8:33; Nehemiah 12:31-40 | 15-32 | nehemiah/3.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 3: the deep note's lines to Christ (1 Corinthians 12, 1 Peter 2:5, the Sheep Gate and the Lamb of God; the note calls them thematic and warns against allegory); the landmark names first written loosely and corrected to the BSB's own before commit.
