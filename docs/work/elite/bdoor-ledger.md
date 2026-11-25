@@ -20086,3 +20086,19 @@ Cut in chapter 12: the deep note's lines to Matthew 11:28-30 and Romans 6:17-22,
 | Numbers 10:9 (its clause); Psalm 20:7 | 13-22 | BSB | BSB text |
 
 Cut in chapter 13: the deep note's line from the covenant of salt to Luke 1:32-33, which does not cite this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 14 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ten years of peace (14:1); 14:2; 14:3; 14:4 paraphrased; 14:6 (its clause); 14:7 (Asa's last two sentences); the army (14:8) | 1-8 | BSB | BSB text |
+| Chapters 14 to 16 in two halves; forty-one years, about 911 to 870 BC; foreign altars, high places (Deuteronomy 12), pillars and Asherah poles; darash three times; nuach (Deuteronomy 12:10); building as rest's fruit; heavy infantry and archers | 1-8 | 2-chronicles/14.json `story`, `historical`, `cultural`, `literary`, `words` (darash, nuach) | Repository |
+| Deuteronomy 12:10 (its clause) | 1-8 | BSB | BSB text |
+| 14:9; 14:11; 14:12; Gerar and the plunder (14:13-15) | 9-15 | BSB | BSB text |
+| Kings and Baasha (1 Kings 15:9-24); Zerah only in Chronicles, unidentified, the two suggestions (Osorkon; Cushite herders), not called a king; Mareshah (11:8); Gerar and the patriarchs; the prayer's parts; the LORD's army; sha'an and chapter 16 | 9-15 | 2-chronicles/14.json `historical`, `literary`, `words` (azar, sha'an) | Repository |
+| Psalm 46:1 (its sentence after the heading) | 9-15 | BSB | BSB text |
+| The hard note: the million and the readings; the plunder reported without comment; the terror of the LORD; defense, not a model; the larger story | 9-15 `hard` | 2-chronicles/14.json `hard` | Repository |
+
+Cut in chapter 14: the deep note's lines to Luke 1:52 and 1 Corinthians 1:27, which do not cite this chapter. The chapter numbering note (English 14:1 is Hebrew 13:23) is left to the deep note. No care line is needed in this chapter.
