@@ -819,6 +819,26 @@ folder's text (48,545 words compared, no difference), the PDF's pages the
 same text character for character (251,607 against 251,607). Still 241
 pages, so `client/src/data/ebooks.ts` is unchanged; PDF 1.6 MB, EPUB 345 KB.
 
+### The other eight books, brought into the typesetter (2026-11-25)
+
+The remaining eight ebooks came in the same way as The Reliability of
+Scripture, one at a time: the original PDF and EPUB kept, untouched, in
+`content/held-downloads/originals/`; the EPUB's chapter files copied byte for
+byte into `content/books-src/<id>/`; a `book.json` with the copyright notice
+the files printed (without the PDF's unfilled ISBN line); one build with no
+word changed and `--verify`. The two original files of each book were
+compared letter by letter (all letters and digits, from the first chapter to
+the end, the PDF's running heads and page numbers set aside); what they
+differ in is said under each book. Each was then edited (records in
+`docs/work/elite/voice-books/<id>.md`).
+
+- **Raising Believers** (`raising-believers`). The PDF and EPUB carry the
+  same text, letter for letter (208,778 letters). 357 pages became 163,
+  `--verify` identical. Then edited (`raising-believers.md`): 516 dashes in
+  his prose to 0, every edit punctuation, fact diff passed on all fifteen
+  files; rebuilt at 161 pages (`client/src/data/ebooks.ts` says 161),
+  `--verify` identical (47,089 words; 214,892 characters).
+
 ### The apparatus
 
 - The new title and subtitle are on the cover, half-title, title page,
