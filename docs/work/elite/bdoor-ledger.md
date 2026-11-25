@@ -20208,3 +20208,20 @@ Cut in chapter 19: the deep note's lines to Isaiah 11:3-5, John 5:22 and Acts 10
 | 1 Kings 22:48 | 31-37 | BSB | BSB text |
 
 Cut in chapter 20: the deep note's lines to Colossians 2:15 and 1 Corinthians 15:57, which do not cite this chapter. The name Beracah is explained without the bless family of words. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 21 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jehoshaphat's death (21:1); the brothers and the gifts (21:2-3); 21:4; 21:6; 21:7; Edom and Libnah (21:8-10); 21:10 (its clause); the high places (21:11) | 1-11 | BSB | BSB text |
+| The alliance's fruit; the darkest chapter; eight years, about 848 to 841 BC, the coregency; the two Jehorams; killing rivals; 2 Kings 8:16-24 and what only Chronicles has; Israel for Judah; nir and the lamp (1 Kings 11:36; 2 Kings 8:19); the thread to chapters 22-23; zanah three times | 1-11 | 2-chronicles/21.json `story`, `historical`, `cultural`, `literary`, `words` (nir, zanah) | Repository |
+| 2 Kings 8:19; Matthew 1:8 (its clauses) | 1-11 | 2-chronicles/21.json `christ` (Matthew 1:8); BSB | Repository; the New Testament's own genealogy; BSB text |
+| 21:12 (its clause); the letter's charges (21:12-13); 21:13 (its phrase); the sentence (21:14-15), the illness named and not described; the raid (21:16-17); 21:18; the two years and no fire (21:19); 21:20 (its last sentence) | 12-20 | BSB | BSB text |
+| Reversal of Jehoshaphat; the judgment speech; prophets' letters (Jeremiah 29); Jehoahaz and Ahaziah; burial honors withheld (16:14); the bleak epitaph; the illness as judgment on this king alone, not a key for anyone's illness | 12-20 | 2-chronicles/21.json `historical`, `cultural`, `literary`, `words` (mikhtav) | Repository |
+| Care line ("It needs to be said plainly. The Bible does not teach that sickness...") | 12-20 | Reused byte for byte from the site's existing plain notes and the 2 Chronicles book page | care.mjs |
+| 2 Kings 8:24 (its first sentence) | 12-20 | BSB | BSB text |
+| The hard note: Elijah's letter; 2 Kings 3:11 and 2 Kings 2; the three explanations; the open question | 12-20 `hard` | 2-chronicles/21.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 21: the graphic details of 21:15 and 21:19, named and not described. No other line to Christ beyond Matthew 1:8.
