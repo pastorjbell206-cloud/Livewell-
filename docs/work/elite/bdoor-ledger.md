@@ -18046,3 +18046,16 @@ Cut in chapter 3: the deep note's lines to Christ (Exodus 1, 2 Kings 11 and Matt
 | The silence about God and prayer: with the Song of Songs; deliberate hiddenness; reserve; another place read two ways; the Greek prayers | 10-17 `hard` | esther/4.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 4: the deep note's lines to Christ (Esther as a mediator beside Christ, Hebrews 4:16; the note calls the link thematic); the Talmud's picture of Esther speaking Psalm 22 (left to the Psalms notes).
+
+## The plain notes on Esther 5 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The danger passing in two verses; the audience hall facing the entrance; half the kingdom as a formula; the banquet as diplomacy and a trap; patience and discretion | 1-8 | esther/5.json `story`, `historical`, `cultural`, `doctrines` (wisdom) | Repository |
+| Mark 6:23 | 1-8 | mark/plain/6.json (Esther 5:3); esther/5.json `historical`; BSB | Repository; BSB text |
+| Honor's visible measures; one grudge emptying all (shavah); the gallows fifty cubits, about seventy-five feet; ets as tree or wood, a pole more than a rope; not lingered over; the irony | 9-14 | esther/5.json `cultural`, `historical`, `literary`, `words` (shavah, ets) | Repository |
+| Psalm 7:15 | 9-14 | esther/7.json `doctrines` (judgment: Psalm 7:15-16); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (the third day of 5:1, which the note itself says should not be pressed; Luke 1:52 and Christ's humbling; the note calls them thematic); the Behistun inscription and impalement (not lingered over).
