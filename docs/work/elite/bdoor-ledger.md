@@ -20589,3 +20589,20 @@ Cut in chapter 3: the deep note's lines to Jesus as son of David (Matthew 1:1; L
 | The hard note: verse 14 and the double standard turned around; two settings (rites at the shrines; a general collapse); those who lead judged more strictly | 11-19 `hard` | hosea/4.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 4: the deep note's lines to Luke 11:52, John 5:39-40, John 1:18 and 17:3, Jeremiah 31:34 in Hebrews 8:11, and Hebrews 7:26-28, which the New Testament does not draw from this chapter; and the hard note's reference to James 3:1, which the New Testament does not draw from Hosea. The verse with an inner quotation (4:15) is paraphrased; its word ‘journey’ is not quoted.
+
+## The plain notes on Hosea 5 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 (its last clause; the summons paraphrased); 5:2-3 and 5:5 paraphrased; 5:4; 5:6 (its last words); 5:7 paraphrased | 1-7 | BSB | BSB text |
+| The circle widened to the king's house and Judah; corrupt worship to war and Assyria; Mizpah and Tabor, the watchtower; the bird-catcher's snare and net; the New Moon turned to judgment; 5:6 and God withdrawn | 1-7 | hosea/5.json `story`, `cultural`, `summary` | Repository |
+| Isaiah 1:13 (its first clause); Jeremiah 29:13 | 1-7 | BSB | BSB text |
+| 5:8 (its first line; the rest paraphrased); 5:9-11 paraphrased; 5:12; 5:13 (its last sentence); 5:14 paraphrased; 5:15 (its clause) | 8-15 | BSB | BSB text |
+| The Syro-Ephraimite war about 734 to 732 BC; Pekah, Rezin, Ahaz, Tiglath-pileser III, Damascus, Galilee and Gilead; Albrecht Alt's reading of 5:8 and 5:10, followed by many, others placing it more broadly; Menahem's tribute; Ahaz and the temple silver; boundary stones and inheritance; the great king as an Assyrian title; moth and rot to lion; God waiting | 8-15 | hosea/5.json `historical`, `cultural`, `literary` | Repository; both readings in their holders' terms |
+| 2 Kings 16:5-9; Isaiah 7:1-6; Deuteronomy 27:17 (paraphrased) | 8-15 | hosea/5.json `historical`, `cultural` | Repository |
+| The hard note: the images meant to disturb; a tame god at the shrines; Leviticus 26 and Deuteronomy 28; the lion for judgment and Assyria; tearing for return, not annihilation; 6:1; anger and love held together | 8-15 `hard` | hosea/5.json `hard` | Repository; readers' differences stated |
+| No way to read a particular person's illness or loss as God's attack | 8-15 `hard` | the brief (no reader's suffering read as punishment) | Stated as the brief asks |
+
+Cut in chapter 5: nothing drawn to the New Testament, since the New Testament does not quote this chapter. The deep note's mention of Amos 3:8 for the lion is left out to keep the note short.
