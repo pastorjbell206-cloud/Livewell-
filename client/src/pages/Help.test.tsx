@@ -72,3 +72,61 @@ describe("Find Help's lines", () => {
     }
   });
 });
+
+describe("The crisis lines on Find Help", () => {
+  it("never move: the needs most people bring are on the page before the list arrives, above them", async () => {
+    // The chips came with the needs index, after first paint, and pushed the
+    // crisis section down the screen (a layout shift of 0.137 on a phone).
+    let send: () => void = () => {};
+    const arrived = new Promise<void>((resolve) => { send = resolve; });
+    const base = offlineFetch();
+    vi.stubGlobal("fetch", vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
+      if (String(input) !== "/needs/index.json") return base(input, init);
+      await arrived;
+      return new Response(fs.readFileSync(path.join(PUBLIC, "needs/index.json"), "utf8"), { status: 200, headers: { "Content-Type": "application/json" } });
+    }));
+    renderWithProviders(<Help />);
+
+    const crisis = document.getElementById("help-now")!;
+    const chips = () => screen.getByText("What people bring most").nextElementSibling as HTMLElement;
+    const first = NEEDS.filter((n) => n.page).slice(0, 12);
+    const before = within(chips()).getAllByRole("link");
+    expect(before.map((a) => [a.textContent, a.getAttribute("href")])).toEqual(first.map((n) => [n.title, `/help/${n.slug}`]));
+    expect(chips().compareDocumentPosition(crisis) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(screen.getByText("Loading the list…")).toBeInTheDocument();
+
+    send();
+    await screen.findByRole("list", { name: "Care pages" });
+    // The same chips, the same nodes: nothing above the crisis lines changed.
+    expect(within(chips()).getAllByRole("link")).toEqual(before);
+    expect(document.getElementById("help-now")).toBe(crisis);
+  });
+
+  it("are held from the first paint, word for word: the crisis line, then the page's head and chips", () => {
+    // Before the app has loaded (and with scripts off), the prerendered page
+    // shows the crisis line, so 988 can be called from the first paint; its
+    // head, set at the lede's size, is the page's largest paint (Lighthouse on
+    // a phone: 3.7 s to 1.1 s, 2026-11-25). The crisis section itself is not
+    // held, so it is never drawn in one place and then another.
+    const src = fs.readFileSync(path.resolve(__dirname, "../../../scripts/prerender-heads.mjs"), "utf8");
+    const body = src.slice(src.indexOf('"/help": async () => {'), src.indexOf("// The Wisdom Finder: its head"));
+    const held = document.createElement("div");
+    held.innerHTML = Array.from(body.matchAll(/^\s*`(<(?:p|h1)\b.*<\/(?:p|h1)>)`,$/gm), (m) => m[1]).join("");
+    expect(body).toContain('readJsonSafe("client/src/data/help-chips.json")');
+    expect(body).not.toContain("help-now-heading");
+
+    vi.stubGlobal("fetch", vi.fn(offlineFetch()));
+    renderWithProviders(<Help />);
+    const words = (el: Element | null) => (el?.textContent ?? "").replace(/\s+/g, " ").trim();
+    const line = screen.getByText(/In danger or thinking about ending your life\?/);
+    const heldLine = held.querySelector("p")!;
+    expect(words(heldLine)).toBe(words(line));
+    expect(Array.from(heldLine.querySelectorAll("a"), (a) => [a.textContent, a.getAttribute("href")])).toEqual(
+      Array.from(line.querySelectorAll("a"), (a) => [a.textContent, a.getAttribute("href")]),
+    );
+    expect(words(held.querySelector("h1"))).toBe(words(screen.getByRole("heading", { level: 1 })));
+    // The head's line, then the lede under it (InnerHead sets both as .pg-head__lede).
+    const head = Array.from(document.querySelectorAll(".pg-head__lede"), words);
+    expect([words(held.querySelector(".pre-subtitle")), words(held.querySelector(".pre-lede"))]).toEqual(head);
+  });
+});

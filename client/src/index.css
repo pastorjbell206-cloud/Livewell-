@@ -331,6 +331,8 @@ img{display:block;max-width:100%}
 .prerender-content .pre-subtitle{font-size:1.125rem;line-height:1.55;color:var(--ink-muted)}
 /* A page head's lede line in the held text (scripts/prerender-heads.mjs), no smaller than the page's own lede, so the real one is never the larger paint. */
 .prerender-content .pre-lede{font-size:1.375rem;line-height:1.5}
+/* A card's description in a held list, at the size the card sets it (.tk-track__dek, 17px), its lines a little more open (1.7 to the card's 1.6), so the card's own is never the larger paint: about 53,500 square pixels to the card's 50,500 on a 412px phone. */
+.prerender-content .pre-dek{font-size:17px;line-height:1.7;color:var(--ink)}
 .prerender-content h2.pre-kicker{font-family:var(--U);font-weight:500;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mustard-text);line-height:1.4;margin:var(--s-3) 0 var(--s-1)}
 .prerender-content .pre-byline{font-family:var(--U);font-size:.8125rem;color:var(--ink-muted);padding-bottom:var(--s-3);border-bottom:1px solid var(--border);margin-bottom:var(--s-4)}
 /* The first shelf of /downloads in the prerendered page (scripts/prerender-heads.mjs):
