@@ -30,5 +30,415 @@
     { "ch": 6, "why": "A call to return, the complaint that Israel's loyalty is like morning mist, and the verse Jesus quoted: God desires mercy, not sacrifice." },
     { "ch": 11, "why": "God as the Father who taught Israel to walk, and whose compassion will not let him destroy his son." },
     { "ch": 14, "why": "The closing invitation to return and God's promise to heal and love freely." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Hosea in a minute",
+        "body": "Hosea is the first of the twelve shorter prophets that close the Old Testament. It has 14 chapters. Hosea son of Beeri spoke to the northern kingdom of Israel in its last decades, from the good years of Jeroboam II, before about 753 BC, into the years when Assyria swallowed it.\n\nThe book opens with a command that still startles readers. God tells Hosea to marry a woman who will be unfaithful, ‘because this land is flagrantly prostituting itself by departing from the LORD’ (1:2). Hosea marries Gomer, and their three children are given names that announce judgment: Jezreel, No Compassion, and Not My People. His broken home becomes a sermon. Israel has left the LORD for Baal, the rain and fertility god of Canaan, and for the protection of empires.\n\nChapters 4 to 14 are short, sharp oracles. Hosea charges the priests, the kings and the people with forgetting God. They make kings without him, bow to calf images, and run between Egypt and Assyria. He calls it adultery, and he warns that it will end in exile.\n\nYet this same book holds some of the tenderest words God speaks anywhere. He will lead his people into the wilderness and ‘speak to her tenderly’ (2:14). He taught Ephraim to walk (11:3). He cries, ‘How could I give you up, O Ephraim?’ (11:8). The book ends with words for the people to pray and God's answer, ‘I will heal their apostasy; I will freely love them’ (14:4)."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Hosea stands near the end of the northern kingdom's story. Ten tribes broke away from David's house after Solomon died (1 Kings 12), and their first king, Jeroboam I, set up golden calves at Bethel and Dan so that his people would not go up to Jerusalem to worship. Two centuries later Hosea is still speaking against the calf of Samaria.\n\nThe book shares its world with 2 Kings 14 to 17, which tells the same years from the throne. Amos, a man from Judah, preached in the north at about the same time, and Isaiah and Micah preached in Judah. Hosea is the one writing prophet who addressed the northern kingdom as his own people.\n\nHe reaches back as well as forward. He recalls Jacob, the nation's ancestor (chapter 12), the exodus, the wilderness and Israel's youth (2:15; 11:1; 13:4-5), and the sin at Baal-peor in the wilderness (9:10). He looks ahead to the fall of Samaria, the first of the Bible's two great exiles, and past it to a return. His picture of Israel as the LORD's unfaithful wife shaped Jeremiah (Jeremiah 2 to 3) and Ezekiel (Ezekiel 16 and 23)."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book names its prophet as Hosea son of Beeri (1:1) and tells almost nothing else about him apart from his marriage. His name comes from the same Hebrew root as Joshua and means something like salvation. He was almost certainly from the north. He speaks of the king in Samaria as his own people's king (7:5), he knows the northern towns and shrines closely, and many scholars hear northern features in his Hebrew.\n\nTradition holds that the book keeps Hosea's own words, and chapter 3, told in the first person, reads like his own account. Most scholars, many conservative ones among them, think his disciples collected and arranged the oracles, and that the book was carried south to Judah after Samaria fell. Critical scholars often give some passages, especially those that mention Judah and some of the promises of restoration, to later editors in Judah. Others answer that Hosea himself spoke to Judah and spoke of hope, since judgment and restoration run through the book from its first chapter.\n\nThe heading dates Hosea by four kings of Judah, from Uzziah to Hezekiah, and one king of Israel, Jeroboam II (1:1). So he began before Jeroboam died, about 753 BC, and went on for decades. The dates given on this site differ a little. The site's guide to the kings gives about 755 to 715 BC. The book's own introduction gives about 755 to about 725, and says scholars differ on whether Hosea lived to see Samaria fall, since the book never clearly describes it as past."
+      },
+      {
+        "id": "world",
+        "h": "The world Hosea spoke to",
+        "body": "When Hosea began, Israel was enjoying the long reign of Jeroboam II, a time of wider borders, trade and wealth for those at the top, while Assyria was weak for a time. The wealth did not make the people faithful. Worship at the royal shrines, like Bethel, had blurred into the worship of Baal, the god many believed sent rain and good harvests. The site's notes on chapter 2 point to eighth-century receipts found at Samaria that include personal names built on Baal beside names built on the LORD's name.\n\nAfter Jeroboam died, the kingdom came apart from within. Of the six kings who followed him, four were assassinated: Zechariah, Shallum, Pekahiah and Pekah (2 Kings 15). Assyria revived under Tiglath-pileser III, who began to rule in 745 BC. Israel's rulers swung between paying tribute to Assyria and asking Egypt for help. Menahem paid Assyria a heavy tribute (2 Kings 15:19-20). Pekah joined Damascus against Assyria and lost Galilee and Gilead in about 733 to 732 BC. Many scholars connect 5:8-15 with that war. The last king, Hoshea, stopped paying and turned to Egypt (2 Kings 17:4). Assyria besieged Samaria for three years, and it fell. The book's introduction gives 722 BC; the guide to the kings, following Thiele's dates, gives 723 or 722.\n\nHosea's first hearers lived in that downward spiral. His words about kings made ‘not by Me’ (8:4) and about a ‘silly, senseless dove’ (7:11) are about real kings and real envoys."
+      },
+      {
+        "id": "built",
+        "h": "How Hosea is built",
+        "body": "The book has two unequal parts. Chapters 1 to 3 tell of Hosea's marriage and set it beside the LORD's marriage to Israel: the children named in judgment (chapter 1), the LORD's case against his unfaithful wife and his promise to win her back (chapter 2), and Hosea buying back his wife (chapter 3). Each of these three chapters moves from judgment to hope.\n\nChapters 4 to 14 are collected oracles, dense and often abrupt. They can be read in three movements, each ending in hope. Chapters 4 to 7 bring the charge that there is no knowledge of God in the land. Chapters 8 to 11 warn that those who sow the wind will reap the whirlwind, and end with the Father who will not give up his son. Chapters 12 to 14 trace Israel's deceit back to Jacob and end with the last call to return.\n\nHosea is poetry, and its Hebrew is among the hardest in the Old Testament. Translations differ here more than in most books, and the notes say so where the Hebrew is uncertain. The speaker changes without warning, and so does the subject, from Israel to Judah and from judgment to hope. Hosea also uses several names for the same people. Israel, Ephraim, Samaria and Jacob usually all mean the northern kingdom."
+      },
+      {
+        "id": "marriage",
+        "h": "A marriage that preached",
+        "body": "‘Go, take a prostitute as your wife and have children of adultery’ (1:2). Readers have always been troubled by this command, and the book's notes set out the main readings without choosing between them. Some think Gomer was already known for sleeping with other men, perhaps in the fertility rites of the shrines, and that the command is meant to shock. Others note that the Hebrew says a wife of harlotries, not the ordinary word for a prostitute, and think she was faithful when Hosea married her and is named for what she became, as Israel was faithful in her youth (2:15). Still others, some medieval Jewish interpreters among them, read the marriage as a vision or a parable, though most modern scholars think the names of Gomer and her father point to a real marriage.\n\nOn any reading, Hosea's pain mirrors God's. The names of the children carry the message. Jezreel recalls the place where Jehu wiped out the house of Ahab (2 Kings 9 to 10), and announces the end of Jehu's line. Lo-ruhamah means No Compassion. Lo-ammi means Not My People, the covenant words of Sinai spoken in reverse. Then, before the chapter ends, every name is turned inside out. In the very place where they were called Not My People, they will be called sons of the living God (1:10).\n\nIn chapter 3 the LORD says, ‘Go show love to your wife again’ (3:1). Hosea buys her back for silver and barley and sets a time of waiting, as Israel must live many days without king or sacrifice before it returns ‘and seek the LORD their God and David their king’ (3:5). Most readers take her to be Gomer, and the story to be the love that goes after the one who left.\n\nThis is a prophetic sign, one man's life carrying God's grief for a nation. It is not a model for anyone's marriage, and it gives no warrant for any man to shame or harm a wife."
+      },
+      {
+        "id": "courtroom",
+        "h": "The wife in the courtroom",
+        "body": "Chapter 2 is a lawsuit. The LORD speaks as a wronged husband, and the wife is Israel as a people. She has gone after her lovers, Baal and the powers she trusted, and has said that they gave her bread and water, wool and linen. She does not acknowledge that ‘it was I who gave her grain, new wine, and oil’ (2:8).\n\nThen come the hardest lines in the book. Verses 3 and 10 threaten to strip the wife and expose her. Many readers find these lines painful, and readers who have known abuse may find them very hard. The site's notes give several things that help. The chapter is a picture of a nation, and the stripping describes what invasion and famine would do to a land, left bare like a desert. The images come from the legal customs of the ancient world, which prophets used to make the weight of covenant betrayal felt. Scholars weigh the problem differently. Some, many feminist interpreters among them, argue that the picture has shaped harmful attitudes and must be read critically. Others stress that it describes God's judgment on a nation and never permits any husband to act this way. Both agree that using it to justify the mistreatment of women is a grave misuse.\n\nSo it must be said plainly. These verses are a prophetic picture of God and a nation. They give no warrant for any man to shame, strip, threaten or harm a wife, or anyone.\n\nNothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first. Talk to a pastor or a counselor you trust, or call a local domestic violence line. These notes are not legal advice. The Find Help page on this site lists places to turn.\n\nAnd the chapter does not end in the courtroom. ‘Therefore, behold, I will allure her and lead her to the wilderness, and speak to her tenderly’ (2:14). The Valley of Achor, a name that recalled trouble, becomes ‘a gateway of hope’ (2:15). She will call him her husband, not her master (2:16), since the word baal could mean master or husband, and the names of the Baals will be forgotten. ‘So I will betroth you to Me forever; I will betroth you in righteousness and justice, in loving devotion and compassion’ (2:19). The names of chapter 1 are reversed. God will have compassion on No Compassion, and say to Not My People that they are his people (2:23)."
+      },
+      {
+        "id": "no-knowledge",
+        "h": "No knowledge of God in the land",
+        "body": "Chapter 4 opens the second half with another lawsuit. ‘There is no truth, no loving devotion, and no knowledge of God in the land’ (4:1). To know God, in Hosea, is not to hold information about him. It is the close, loyal knowing of a covenant partner, the kind of knowing that marriage also names.\n\nThe priests bear the heaviest blame. ‘My people are destroyed for lack of knowledge’ (4:6), because the priests have rejected the law they were meant to teach. The people consult wooden idols and go to the hilltop shrines, where worship has become sexual immorality. Bethel, the house of God, Hosea calls Beth-aven, house of wickedness (4:15).\n\nChapter 6 shows how shallow repentance can be. The people sing, ‘Come, let us return to the LORD’ (6:1), sure that the God who tore them will heal them, ‘on the third day He will raise us up’ (6:2). God answers with grief: ‘your loyalty is like a morning mist, like the early dew that vanishes’ (6:4). Then comes the verse Jesus quoted twice: ‘For I desire mercy, not sacrifice, and the knowledge of God rather than burnt offerings’ (6:6).\n\nHosea's word for that loyalty is hesed, rendered in the BSB as loving devotion or loyalty. It is the faithfulness covenant partners owe each other. God has shown it to Israel from the exodus. He wants it from them more than any offering."
+      },
+      {
+        "id": "kings-and-calves",
+        "h": "Kings, calves and a senseless dove",
+        "body": "Hosea treats Israel's politics as a matter of worship. ‘They set up kings, but not by Me’ (8:4). In the years after Jeroboam II, kings were murdered one after another, and chapter 7 pictures the plotters as an oven, hot all night, that devours its rulers. Ephraim mixes with the nations ‘like a silly, senseless dove’ (7:11), calling to Egypt one year and to Assyria the next.\n\nThe calf of Samaria stands at the center of the charge. Jeroboam I had set up golden calves at Bethel and Dan, probably as pedestals or images of the LORD, though the line between the LORD and Baal had blurred. Hosea mocks it: ‘a craftsman made it, and it is not God’ (8:6). It will be carried off to Assyria as tribute (10:5-6). Their verdict is a proverb: ‘For they sow the wind, and they shall reap the whirlwind’ (8:7).\n\nThe judgments in these chapters are severe. Hosea speaks of exile, of festivals ended, and of the loss of children (9:11-16). He names the war crimes of his day as crimes and warns that Israel will suffer them (10:14; 13:16). These notes name those verses and do not describe them. They are not a pattern for anyone, and they are no key for reading any people's suffering, then or now, as deserved. This is Israel's own Scripture, and its harshest words are aimed at its own nation. It is never a reason to blame the Jewish people.\n\nEven here the call to return breaks in: ‘Sow for yourselves righteousness and reap the fruit of loving devotion; break up your unplowed ground’ (10:12)."
+      },
+      {
+        "id": "father",
+        "h": "The Father who taught his son to walk",
+        "body": "Chapter 11 is the heart of the book. The marriage picture gives way to a parent and a child. ‘When Israel was a child, I loved him, and out of Egypt I called My son’ (11:1). The more God called, the farther Israel ran to the Baals. Yet ‘It was I who taught Ephraim to walk, taking them in My arms’ (11:3). He led them ‘with cords of kindness, with ropes of love’ and bent down to feed them (11:4).\n\nJudgment by Assyria is coming, and the chapter does not hide it. Then God's own heart turns. ‘How could I give you up, O Ephraim? How could I surrender you, O Israel?’ (11:8). Admah and Zeboiim were cities destroyed with Sodom and Gomorrah, bywords for total ruin. God will not make Ephraim like them. ‘For I am God and not man’ (11:9), the Holy One among them. His holiness is the reason his anger does not have the last word.\n\nThe chapter ends with the LORD roaring like a lion and his children coming home trembling from Egypt and Assyria (11:10-11). Hosea, raised in a world where the exodus was the great rescue, already expects God to rescue again."
+      },
+      {
+        "id": "jacob",
+        "h": "From Jacob to the last call",
+        "body": "Chapters 12 to 14 gather the book together. Hosea reaches back to Jacob, the nation's ancestor, who grasped his brother's heel in the womb, wrestled with God, and wept and sought his favor (12:3-4). Ephraim has his ancestor's deceit without his tears. The merchant with dishonest scales boasts that his wealth proves he has done nothing wrong (12:7-8).\n\nChapter 13 is the darkest. The God who knew Israel in the wilderness will fall on it like a lion, a leopard, and a bear robbed of her cubs (13:7-8), and the kings Israel asked for cannot save it. In the middle of the doom comes a verse read two ways. ‘I will ransom them from the power of Sheol; I will redeem them from Death’ (13:14) may be a promise, or, read as questions in the Hebrew, a threat; the verses around it are judgment. Paul later took up its taunt at death (1 Corinthians 15:55).\n\nThen the last chapter gives the people the words to come home. ‘Take away all our iniquity and receive us graciously’ (14:2). They renounce trust in Assyria, horses and idols: ‘For in You the fatherless find compassion’ (14:3). God answers, ‘I will heal their apostasy; I will freely love them, for My anger has turned away from them’ (14:4). He pictures Israel blossoming like a lily and rooted like the cedars of Lebanon. The last verse speaks to every later reader: ‘Whoever is wise, let him understand these things’ (14:9)."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads Hosea",
+        "body": "The New Testament quotes Hosea several times, and these notes draw only the lines it draws. Jesus twice used 6:6 against religion without mercy: ‘But go and learn what this means’ (Matthew 9:13), and again when his disciples were condemned for picking grain on the Sabbath (Matthew 12:7).\n\nMatthew tells of the child Jesus brought back from Egypt and says it fulfilled what the Lord had spoken through the prophet (Matthew 2:15), quoting 11:1. Hosea was speaking of the exodus, and Matthew knew it. Many interpreters call his reading typological: Jesus, the Son in a unique sense, lives through Israel's story faithfully. Others point out that Hosea himself expected a new exodus (11:10-11). Either way, Matthew does not claim that Hosea foresaw Jesus' childhood. He claims that Jesus completes the story Hosea told.\n\nPaul quotes the reversal of the names to show God's mercy reaching Gentiles as well as Jews: ‘As He says in Hosea’ (Romans 9:25), and Peter writes, ‘Once you were not a people, but now you are the people of God’ (1 Peter 2:10). Paul turns 13:14 into a song of resurrection: ‘Where, O Death, is your victory? Where, O Death, is your sting?’ (1 Corinthians 15:55). Jesus, on the way to the cross, used the words of 10:8 about people who will say to the mountains, ‘Fall on us’ (Luke 23:30).\n\nMany Christians hear 6:2, ‘on the third day He will raise us up’, behind the confession that Christ was raised on the third day, but the New Testament never quotes the verse. These notes leave that reading as a reading. Hosea's warnings were spoken to Israel by an Israelite prophet, and the New Testament never uses them to blame the Jewish people."
+      },
+      {
+        "id": "readers",
+        "h": "How to read Hosea",
+        "body": "Read Hosea a few verses at a time, and notice who is speaking. The voice moves between the LORD, the prophet and the people, sometimes inside one verse. Let the pictures do their work: a half-baked cake, a senseless dove, a morning mist, a stubborn heifer, a lion, a moth, a lily.\n\nRead the marriage chapters with care. The picture uses the world of ancient Israel, where a husband held legal authority over his wife, and some of its images of punishment are harsh. It describes God and a nation. It is not a model for any human marriage, and it has been wrongly used to excuse the abuse of women. Watch where it goes: every speech of judgment in chapters 1 to 3 ends in renewal.\n\nRead the judgments as Israel's own Scripture, spoken by one of its own prophets to his own people. They are a warning to take to oneself, not a verdict to pronounce on anyone else's suffering. And read to the end. The book's last word to Israel is not the sword but the invitation of 14:1, ‘Return, O Israel, to the LORD your God’, and the promise to heal and love freely."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 2,
+        "ref": "1:2-3",
+        "line": "God tells Hosea to marry ‘a prostitute’: three readings of who Gomer was."
+      },
+      {
+        "ch": 1,
+        "v": 4,
+        "ref": "1:4-5",
+        "line": "Jezreel: judgment on Jehu's house for a purge that 2 Kings 10:30 credits to God's word."
+      },
+      {
+        "ch": 2,
+        "v": 3,
+        "ref": "2:2-13",
+        "line": "The threats to strip and expose the unfaithful wife: a picture of a nation, never a warrant to shame or harm a wife."
+      },
+      {
+        "ch": 3,
+        "v": 2,
+        "ref": "3:1-3",
+        "line": "Hosea buys back his wife and sets a time of waiting: is she Gomer, and why must she wait?"
+      },
+      {
+        "ch": 4,
+        "v": 14,
+        "ref": "4:13-14",
+        "line": "God will not punish the daughters for adultery: the blame laid on the men and the priests."
+      },
+      {
+        "ch": 5,
+        "v": 14,
+        "ref": "5:12-14",
+        "line": "God as a moth, as rot, and as a lion tearing its prey."
+      },
+      {
+        "ch": 6,
+        "v": 2,
+        "ref": "6:1-3",
+        "line": "The people's song of return, and whether the third day points to Jesus."
+      },
+      {
+        "ch": 8,
+        "v": 5,
+        "ref": "8:4-6",
+        "line": "The calf of Samaria: an image of the LORD or of another god?"
+      },
+      {
+        "ch": 9,
+        "v": 14,
+        "ref": "9:11-16",
+        "line": "The prophet's prayer that Ephraim have no children: named, not lingered on."
+      },
+      {
+        "ch": 10,
+        "v": 14,
+        "ref": "10:14",
+        "line": "Mothers and children in war: an atrocity named as a crime, not described."
+      },
+      {
+        "ch": 11,
+        "v": 1,
+        "ref": "11:1",
+        "line": "‘Out of Egypt I called My son’: how Matthew can say a verse about the exodus was fulfilled."
+      },
+      {
+        "ch": 11,
+        "v": 8,
+        "ref": "11:8-9",
+        "line": "God's heart turns, and he will not destroy Ephraim completely."
+      },
+      {
+        "ch": 13,
+        "v": 14,
+        "ref": "13:14",
+        "line": "A promise of rescue from death, or a threat: the Hebrew read two ways."
+      },
+      {
+        "ch": 13,
+        "v": 16,
+        "ref": "13:16",
+        "line": "Samaria's fall by the sword: the cruelty of war named, not described."
+      }
+    ],
+    "words": [
+      {
+        "word": "Hesed",
+        "line": "Loving devotion or loyalty: the faithful love covenant partners owe each other. God desires it more than sacrifice (6:6) and will betroth his people in it (2:19)."
+      },
+      {
+        "word": "Knowledge of God",
+        "line": "Not information but the loyal, close knowing of a covenant partner. Its lack is the root of Israel's sin (4:1, 6)."
+      },
+      {
+        "word": "Zanah",
+        "line": "To act as a prostitute: the book's main picture of Israel's unfaithfulness, from the wife of harlotries (1:2) onward."
+      },
+      {
+        "word": "Baal",
+        "line": "The storm and fertility god of Canaan, credited with rain and harvest. The word also meant master or husband, which is why 2:16 sets it aside."
+      },
+      {
+        "word": "Jezreel",
+        "line": "‘God sows’: a city and valley where Jehu shed blood, and in the end the name of a great day of planting (1:4, 11; 2:22)."
+      },
+      {
+        "word": "Lo-ruhamah",
+        "line": "‘No Compassion’, Hosea's daughter. The word comes from the word for womb. God will have compassion on her (2:23)."
+      },
+      {
+        "word": "Lo-ammi",
+        "line": "‘Not My People’, Hosea's second son: the covenant words spoken in reverse, and then reversed again (1:9-10; 2:23)."
+      },
+      {
+        "word": "Ephraim",
+        "line": "The largest northern tribe, and Hosea's usual name for the whole northern kingdom (5:3; 11:8)."
+      },
+      {
+        "word": "Beth-aven",
+        "line": "House of wickedness: Hosea's mocking name for Bethel, the house of God, where the calf stood (4:15; 10:5)."
+      },
+      {
+        "word": "The calf of Samaria",
+        "line": "The calf image set up by Jeroboam I and still worshiped, which ‘a craftsman made’ (8:5-6; 10:5)."
+      },
+      {
+        "word": "Shuv",
+        "line": "To turn or return. Israel will not return to God, so it will return to a new Egypt; yet the book ends with ‘Return, O Israel’ (14:1)."
+      },
+      {
+        "word": "Covenant",
+        "line": "The bond between the LORD and Israel, here pictured as a marriage. Israel has broken it (6:7; 8:1), and God promises a new one (2:18)."
+      },
+      {
+        "word": "Sheol",
+        "line": "The realm of the dead. God speaks of ransoming his people from it, or of summoning its plagues (13:14)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "931/930 BC",
+        "what": "The kingdom divides. Jeroboam I becomes king of the north and sets up golden calves at Bethel and Dan (1 Kings 12).",
+        "kind": "story"
+      },
+      {
+        "when": "841 BC",
+        "what": "Jehu kills Joram, Ahaziah, Jezebel and Ahab's house at Jezreel (2 Kings 9 to 10): ‘the bloodshed of Jezreel’ of 1:4.",
+        "kind": "story"
+      },
+      {
+        "when": "793/792 to 753 BC",
+        "what": "Jeroboam II reigns in Israel, a time of wider borders and wealth. Hosea begins in his reign (1:1).",
+        "kind": "story"
+      },
+      {
+        "when": "About 760 BC",
+        "what": "Amos, a man from Judah, preaches at Bethel under Jeroboam II.",
+        "kind": "world"
+      },
+      {
+        "when": "About 755 BC",
+        "what": "Hosea begins to preach. The site's guide to the kings has him speaking to about 715 BC; the book's introduction gives about 755 to about 725.",
+        "kind": "book"
+      },
+      {
+        "when": "753 BC",
+        "what": "Jeroboam's son Zechariah reigns six months and is murdered. Jehu's line ends, as 1:4 warned (2 Kings 15:8-12).",
+        "kind": "story"
+      },
+      {
+        "when": "752 to 742/741 BC",
+        "what": "Menahem reigns and pays Assyria a heavy tribute (2 Kings 15:19-20).",
+        "kind": "story"
+      },
+      {
+        "when": "745 BC",
+        "what": "Tiglath-pileser III begins to rule Assyria and turns west.",
+        "kind": "world"
+      },
+      {
+        "when": "About 734 to 732 BC",
+        "what": "Israel and Damascus fight Judah and Assyria. Many scholars connect 5:8-15 with this war. Galilee and Gilead are lost.",
+        "kind": "story"
+      },
+      {
+        "when": "732/731 BC",
+        "what": "Hoshea, the last king of Israel, comes to the throne. He later stops paying tribute and turns to Egypt (2 Kings 17:4).",
+        "kind": "story"
+      },
+      {
+        "when": "722 BC",
+        "what": "Samaria falls after a three-year siege, and much of its people is deported (2 Kings 17:5-6). The guide to the kings, following Thiele, gives 723 or 722.",
+        "kind": "story"
+      },
+      {
+        "when": "716/715 BC",
+        "what": "Hezekiah becomes king of Judah, the last king named in Hosea's heading (1:1).",
+        "kind": "world"
+      },
+      {
+        "when": "After 722 BC",
+        "what": "Hosea's words are carried south and kept in Judah, where most scholars think the book took its final form.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The northern kingdom in Hosea's day",
+        "places": [
+          {
+            "id": "samaria",
+            "name": "Samaria",
+            "lat": 32.4,
+            "lon": 35.42,
+            "refs": [
+              "8:5",
+              "10:5",
+              "13:16"
+            ],
+            "region": true,
+            "line": "The northern capital and its hill country. Its calf is rejected (8:5), and it will fall by the sword (13:16). Drawn roughly, as a region; the city is not marked."
+          },
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "4:15",
+              "10:5",
+              "12:4"
+            ],
+            "line": "Where Jacob met God (12:4), and where Jeroboam's calf stood. Hosea calls it Beth-aven, house of wickedness (4:15; 10:5).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "shechem",
+            "name": "Shechem",
+            "lat": 32.213,
+            "lon": 35.282,
+            "refs": [
+              "6:9"
+            ],
+            "line": "Priests lie in ambush on the road to Shechem (6:9).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "6:8",
+              "12:11"
+            ],
+            "region": true,
+            "line": "The land east of the Jordan, ‘a city of evildoers’ (6:8), lost to Assyria in Hosea's day. Drawn roughly, as a region."
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only four places are drawn, each at a point already used on this site's maps; Samaria and Gilead roughly, as regions. Jezreel, Gilgal, Gibeah, Ramah, Mizpah, Tabor, Adam, the Valley of Achor, Admah and Zeboiim, and Lebanon are left off, because they are not placed in this site's records, and so are Egypt and Assyria. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-prophets",
+        "name": "Reading the Prophets",
+        "line": "Who the prophets were, the forms they used, and how to read an oracle in its own time",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "The last kings of the north, murdered one after another, and how their dates are worked out",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/empires",
+        "name": "The Empires Around Israel",
+        "line": "Assyria, the empire Hosea warned of, and Egypt, the help that never came",
+        "icon": "world"
+      },
+      {
+        "href": "/study/bible/doctrines/covenant",
+        "name": "Covenant",
+        "line": "Behind the marriage picture, the broken covenant and the new betrothal",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/idolatry",
+        "name": "Idolatry",
+        "line": "Behind Baal, the calf of Samaria, and trust in empires",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/repentance",
+        "name": "Repentance and Forgiveness",
+        "line": "Behind the call to return and the prayer of chapter 14",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/judgment",
+        "name": "Judgment and Justice",
+        "line": "Behind the fall of Samaria, and what it does and does not teach",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/the-gods-of-the-nations",
+        "name": "Why Did Israel's Neighbors Worship Idols?",
+        "line": "For Baal, the rain, and the pull of the fertility shrines",
+        "icon": "world"
+      },
+      {
+        "href": "/resources/context/women-in-the-ancient-world",
+        "name": "How Did the Bible Treat Women Compared to Its World?",
+        "line": "For reading the marriage chapters in their world",
+        "icon": "world"
+      },
+      {
+        "href": "/questions/morality/is-christianity-bad-for-women",
+        "name": "Is Christianity bad for women?",
+        "line": "The hard question asked honestly, with the texts that have been misused",
+        "icon": "people"
+      },
+      {
+        "href": "/help/marriage",
+        "name": "My marriage is falling apart",
+        "line": "For anyone whose own marriage is in trouble: the Find Help page",
+        "icon": "people"
+      }
+    ]
+  }
 }
