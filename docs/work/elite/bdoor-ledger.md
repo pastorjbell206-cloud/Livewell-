@@ -18819,3 +18819,15 @@ Cut in chapter 23: the deep note's lines to Christ (John 1:18, Hebrews 4:14-16 a
 | The hard note: no agreement; the four readings (a friend's words, the third round short; a quotation; wishes; death as common to all); no side; the question pressed | 18-25 | job/24.json `hard`, `literary` | Repository; each reading in its holders' terms; no side |
 
 Cut in chapter 24: the deep note's lines to Christ (Luke 4:18-19 and Acts 17:31 as the answer to verse 1; the note calls the link thematic).
+
+## The plain notes on Job 25 (2026-11-25)
+
+`client/public/bible/notes/job/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The shortest speech and the friends' last; the shrinking third round; arguments exhausted; the undisputed point and 9:2; Eliphaz's 4:17-19 and 15:14-16; the heavenly hosts; the moon and stars worshiped around Israel and placed among God's creatures; shalom; maggot and worm | 1-6 | job/25.json `story`, `historical`, `cultural`, `literary`, `words` (shalom, rimmah, tolea) | Repository |
+| Psalm 8:5; Isaiah 41:14 | 1-6 | job/25.json `hard`, `doctrines` (humanity), `words` (tolea); BSB | Repository; BSB text |
+| The hard note: the truth Scripture affirms; Isaiah 41:14; the image of God (Genesis 1:27) and Psalm 8:5; holiness used to silence; misapplied, since Job claimed innocence of the charges, not sinlessness; holiness without love as a weapon; no one in distress told they are nothing | 1-6 | job/25.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 25: the deep note's lines to Christ (Romans 3:21-26 and Psalm 22 with the crucifixion beside Bildad's worm; the note calls the connection thematic); the Mesopotamian moon god (not needed).
