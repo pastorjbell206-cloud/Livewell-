@@ -21,7 +21,8 @@ Three scripts, kept outside the repo in `/home/user/vs2/` (`apply.py`, `factdiff
 | Chapter | Words before | after | change | Em-dashes before (per 1,000) | after | Tells before (per 1,000) | after | Edits | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|
 | Introduction: Not Persecuted—Seduced | 1,758 | 1,734 | -1.4% | 3 (1.7) | 0 (0.0) | 89 (50.6) | 52 (30.0) | 25 | PASS |
-| **All 1** | 1,758 | 1,734 | -1.4% | 3 (1.7) | 0 (0.0) | 89 (50.6) | 52 (30.0) | 25 | |
+| Chapter 1: Zanah | 3,729 | 3,719 | -0.3% | 1 (0.3) | 0 (0.0) | 136 (36.5) | 75 (20.2) | 36 | PASS |
+| **All 2** | 5,487 | 5,453 | -0.6% | 4 (0.7) | 0 (0.0) | 225 (41.0) | 127 (23.3) | 61 | |
 
 ## Introduction: Not Persecuted—Seduced (`sec01.xhtml`)
 
@@ -45,3 +46,27 @@ Five pairs:
    After: If your honest answer involves courts, legislatures, cultural influence, or political victory more than prayer, holiness, sacrificial love, and courageous witness, then this book is for you, not because you are a bad person but because you may have been seduced.
 
 Left alone, and why. "American Christianity is not being persecuted. It is being seduced." is the book's thesis and keeps its own paragraph. "Ten years ago we disagreed. Now we despise.", "They wanted a sword. He brought a towel." and "We distort Christ." are verdicts. "I am not writing as a political commentator. I am writing as a pastor." and the two sentences after it are his own account of himself and were not touched. Three stray dash-and-comma pairs ("That Hebrew word—zanah, is not polite.") were set with commas. One "precisely" went.
+
+
+## Chapter 1: Zanah (`sec02.xhtml`)
+
+Words 3,729 to 3,719. Em-dashes in his prose 1 to 0 (0.3 to 0.0 per 1,000 words). Tells 136 to 75 (36.5 to 20.2 per 1,000). Mean sentence 12.4 words to 15.7; sentences of eight words or fewer 46.0% to 29.3%; of five or fewer 28.8% to 15.1%. 36 edits; paragraphs 97 to 71. Paragraphs of fifteen words or fewer 28 to 10; runs of three fragments 13 to 2.
+
+By kind (before to after): emdash 1 to 0, not_but 10 to 14, NotX.Y 22 to 4, triplet 10 to 14, frag3 13 to 2, anaphora 28 to 15, stock 2 to 2, intens 2 to 2, colon_reveal 2 to 1, short_close 17 to 11, one_line_para 28 to 10, forbidden 1 to 0.
+
+Fact diff: **PASS**. Fixed blocks (headings, pull quote, block quotes, and the end matter: Key Takeaways, Reflection Questions, Practices, Sources & Notes) identical; 45 quoted strings, 19 Scripture references, 0 years, 5 numbers in digits, 24 number words, proper names by count, and 40 hedge words (after: 40) compared.
+
+Five pairs:
+
+1. Before: marriage. Not contract law. Not military desertion. Not commercial fraud. Marriage.
+   After: marriage. Not contract law, not military desertion, not commercial fraud, but marriage.
+2. Before: So they added. They added alliances with Egypt. They added treaties with Assyria. They added the military resources of foreign nations.
+   After: So they added: alliances with Egypt, treaties with Assyria, the military resources of foreign nations.
+3. Before: you do not throw God away. You simply add insurance. You do not deny the covenant. You supplement it. You do not leave the marriage. You bring someone else into the bed and tell yourself it is for the good of the family. And God's response is not indifference. It is not theological detachment.
+   After: you do not throw God away; you simply add insurance. You do not deny the covenant; you supplement it. You do not leave the marriage; you bring someone else into the bed and tell yourself it is for the good of the family. And God's response is not indifference or theological detachment.
+4. Before: God remembers the early days, when Israel trusted Him in the desert with nothing. No armies. No treaties. No chariots. No backup plan. Just manna falling from the sky each morning and a pillar of cloud leading through the wilderness.
+   After: God remembers the early days, when Israel trusted Him in the desert with nothing: no armies, no treaties, no chariots, no backup plan, just manna falling from the sky each morning and a pillar of cloud leading through the wilderness.
+5. Before: Because the God of Hosea is waiting. Not with folded arms and a lecture. With open arms and a feast. And the road home is shorter than you think.
+   After: Because the God of Hosea is waiting, not with folded arms and a lecture but with open arms and a feast. And the road home is shorter than you think.
+
+Left alone, and why. "The vows are still spoken. The heart has moved.", "But zanah is not atheism.", "Israel has not divorced Yahweh. Israel has brought another partner into the covenant bed and called it "strategy."", "It looks like Jesus plus the strongman.", "He asks them to come home." and "Name it. Confess it. And return." are verdicts on their own lines. The six diagnostic markers were not touched except for one word: the double standard ("When your side's leader lies, it is "strategy." When the other side's leader lies, it is "corruption."") is already measured the same both ways and stays word for word. The exegesis of Hosea 14 keeps its quoted phrases and their order ("Not "I will punish their apostasy." ... Heal."). The five "that is evidence" sentences were five paragraphs and are now one; no word changed. Forbidden list: "political leverage" is now "political influence".
