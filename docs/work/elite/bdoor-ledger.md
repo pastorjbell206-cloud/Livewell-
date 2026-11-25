@@ -20657,3 +20657,23 @@ Cut in chapter 7: the deep note's lines to Christ (Hebrews 4:15 and Jesus tempte
 | Psalm 119:2; Proverbs 9:1-6 named | 32-36 | the chapter data's cross-references for 8:32 (Psalm 119:1-2); BSB | Repository; BSB text |
 
 Cut in chapter 8: the deep note's further lines to Christ (Hebrews 1:2-3; Luke 7:35 and Matthew 11:19; the Son fulfilling and surpassing the chapter), beyond the one line the site's book page already draws. No care line is needed in this chapter.
+
+## The plain notes on Proverbs 9 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1; 9:2; the servants (9:3); 9:4 (its quoted words); 9:5-6 (her words) | 1-6 | BSB | BSB text; the exclamations set as Scripture in double quotes |
+| The climax of chapters 1 to 9; two rival feasts in one place with almost the same words; meat as a luxury; mixed wine; servant girls inviting from the heights; the seven pillars and their readings, and the caution not to build on the number; the echo of a god's feast for a finished house, or a noble lady's banquet | 1-6 | proverbs/9.json `story`, `historical`, `cultural`, `literary` | Repository; each reading in its holders' terms |
+| Isaiah 25:6 (its first clause); Isaiah 55:1 (its first sentence, in part) | 1-6 | the chapter data's cross-references for 9:2 (Isaiah 25:6) and 9:5 (Isaiah 55:1); BSB | Repository; BSB text |
+| 9:7 (its first clause); 9:8; 9:9 (its first clause); 9:10; 9:11; 9:12 | 7-12 | BSB | BSB text |
+| Luts and the mocker who will not be taught; the teachable wise; 9:10 framing chapters 1 to 9 with 1:7; qadosh, set apart; each bearing his own choices | 7-12 | proverbs/9.json `literary`, `words` (luts, qadosh, yirah) | Repository |
+| Psalm 141:5 (its first sentence); Psalm 111:10 (its first clause) | 7-12 | the chapter data's cross-references for 9:8 (Psalm 141:5) and 9:10 (Psalm 111:10); BSB | Repository; BSB text |
+| The hard note: a proverb, not a guarantee; protection from violence, recklessness and addiction; folly and early death in chapters 1 to 9; the righteous who died young; Ecclesiastes 2:14-16; cruel as a promise, true as a direction; no one may tell a family their loved one died for lack of wisdom | 7-12 `hard` | proverbs/9.json `hard`; the brief's crisis rules | Repository |
+| The grief line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 7-12 `hard` | 1-samuel/plain/1.json (1-8 `hard`) and the other notes care.mjs names | Reused byte for byte; Find Help named |
+| 9:13; her seat (9:14-15); 9:16 (its quoted words); 9:17; 9:18 | 13-18 | BSB | BSB text |
+| Folly's cheaper, hidden setup; stolen water and owned water (5:15-16), most likely another man's wife; the matching words and different offers; rephaim; the chapter as the doorway to the sayings | 13-18 | proverbs/9.json `cultural`, `literary`, `story` | Repository |
+| Deuteronomy 30:19 (from ‘I have set before you’, before its last clause) | 13-18 | proverbs/9.json `literary` (two ways); the Two Ways theme (proverbs/intro.json `themes`); BSB | Repository; BSB text |
+
+Cut in chapter 9: the deep note's lines to Christ (the parable of the wedding feast, Matthew 22:1-10 and Luke 14:16-24, which the note says does not cite this chapter; the bread of life, John 6; the Lord's Supper beside verse 5, which the note calls an application; Matthew 7:13-14 beside the two feasts); the resurrection as the answer to verse 11 (left to the New Testament's own pages).
