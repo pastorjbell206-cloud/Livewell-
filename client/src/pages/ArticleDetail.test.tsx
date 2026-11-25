@@ -12,7 +12,7 @@ import { fireEvent, screen, waitFor, within } from "@testing-library/react";
 import { Route, Switch } from "wouter";
 import superjson from "superjson";
 
-import { renderWithProviders, offlineFetch } from "@/test/harness";
+import { renderWithProviders, offlineFetch, untilDrawn } from "@/test/harness";
 import { LEGACY_BOOKMARKS_KEY, LIBRARY_KEY } from "@/lib/library";
 import { ESV_NOTICE } from "@/lib/esv";
 import ArticleDetail, { quoteShareText, splitAtFirstSection } from "./ArticleDetail";
@@ -67,6 +67,12 @@ function essayFetch(post: Record<string, unknown> = {}): typeof fetch {
   }) as typeof fetch;
 }
 
+/**
+ * The essay page, drawn. ArticleDetail takes the essay as a deferred value,
+ * which React draws in slices; a one-second findBy ran its clock between them
+ * and, on a busy machine, gave up before the essay was drawn. untilDrawn waits
+ * for the drawing itself (test/harness.tsx); the heading is then checked once.
+ */
 async function renderEssay() {
   window.history.pushState({}, "", `/writing/${SLUG}`);
   const view = renderWithProviders(
@@ -74,7 +80,8 @@ async function renderEssay() {
       <Route path="/writing/:slug" component={ArticleDetail} />
     </Switch>
   );
-  await screen.findByRole("heading", { level: 1, name: TITLE });
+  await untilDrawn(() => document.querySelector("h1")?.textContent === TITLE);
+  expect(screen.getByRole("heading", { level: 1, name: TITLE })).toBeInTheDocument();
   return view;
 }
 

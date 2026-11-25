@@ -8,9 +8,9 @@
  * slices instead of one long task (Lighthouse on a phone, 2026-11-25).
  */
 import { afterEach, describe, it, expect, vi } from "vitest";
-import { screen, waitFor } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 import * as React from "react";
-import { renderWithProviders, offlineFetch } from "@/test/harness";
+import { renderWithProviders, offlineFetch, untilDrawn } from "@/test/harness";
 import Downloads, { fileLines } from "./Downloads";
 
 vi.mock("react", async (importOriginal) => {
@@ -62,7 +62,9 @@ describe("the Downloads page", () => {
       counts: {},
       items: [{ kind: "Study guide", title: "Lament: A Bible Study on Praying Your Pain", href: "/studyguides/lament", files: [f("Leader's guide"), f("Participant handout")] }],
     });
-    await waitFor(() => expect(document.getElementById("study-guide-title")).not.toBeNull());
+    // Drawn in a transition, so waited for as drawn (test/harness.tsx), not by a one-second clock.
+    await untilDrawn(() => document.getElementById("study-guide-title") !== null);
+    expect(document.getElementById("study-guide-title")).not.toBeNull();
     expect(screen.queryByText("Gathering the files…")).toBeNull();
     expect(screen.getByRole("link", { name: "Lament: A Bible Study on Praying Your Pain: Leader's guide" })).toHaveAttribute("href", f("Leader's guide").href);
     expect(vi.mocked(React.startTransition).mock.calls.length).toBeGreaterThan(before);
