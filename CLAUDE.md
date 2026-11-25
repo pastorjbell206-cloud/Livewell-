@@ -777,11 +777,12 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   books to be edited ("i also want you to go through all the book, pdfs, and
   downloadable content to make it sound human and like me"; and, of
   fragments, "use full paragraphs in the books too", so
-  `docs/VOICE-JAMES-BELL.md` governs the books as well). Blind Spots is
-  edited (`edited` in its `book.json`): the proof of what the edit kept is
-  the fact diff against the original, chapter by chapter, in
-  `docs/work/elite/voice-books/blind-spots.md`. A Higher Allegiance is not
-  yet edited, and `--verify` still holds its source to its original. The
+  `docs/VOICE-JAMES-BELL.md` governs the books as well). Both books
+  are edited (`edited` in each `book.json`): the proof of what an edit kept
+  is the fact diff against the original, chapter by chapter, in
+  `docs/work/elite/voice-books/blind-spots.md` and
+  `a-higher-allegiance.md`. A book with no `edited` entry is still held to
+  its original by `--verify`. The
   files take the new names in the same folders (`Blind-Spots.pdf`,
   `A-Higher-Allegiance.pdf` and their EPUBs); each old file address 301s
   once to its new file. `docs/work/elite/bookshelf.md` section 8 has the

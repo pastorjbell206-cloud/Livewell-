@@ -65,7 +65,7 @@ export const FREE_EBOOKS: Ebook[] = [
     title: "A Higher Allegiance",
     sub: "Reclaiming Jesus from American Politics",
     line: "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary.",
-    pages: 212,
+    pages: 207,
     cover: "/covers/when-god-bless-america-400.webp",
     pdf: "/ebook/when-god-bless-america/A-Higher-Allegiance.pdf",
     epub: "/ebook/when-god-bless-america/A-Higher-Allegiance.epub",
