@@ -1704,6 +1704,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
   const NEW = [
     "all-nations",
     "light-and-darkness",
+    "never-heard",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -1800,5 +1801,53 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/skin|race/i);
     // No date for the exodus, as in the other films.
     expect(t).not.toMatch(/\b1[2-5]\d\d\b|\bBC\b/);
+  });
+
+  it("What about people who never heard? gives three answers the same room, takes no side, and says nothing of any person's end", () => {
+    const f = filmFile("never-heard");
+    const views = f.frames.slice(3, 6);
+    expect(views.map(fr => fr.id)).toEqual([
+      "hear-and-believe",
+      "his-work-reaches",
+      "everyone-meets",
+    ]);
+    for (const fr of views) {
+      // Each answer has its own picture, its own verse, and, for older
+      // readers, the hardest question it faces.
+      expect(fr.verse, fr.id).toBeTruthy();
+      expect(fr.older, fr.id).toContain("Its hardest question is");
+      expect(fr.younger, fr.id).not.toMatch(/\b(right|wrong|best|true) answer\b/i);
+    }
+    // No answer gets much more to say than another (older level).
+    const lengths = views.map(fr => fr.older.length);
+    expect(Math.max(...lengths) - Math.min(...lengths)).toBeLessThan(70);
+    expect(f.differ?.text).toMatch(/takes no side among them/);
+    expect(f.differ?.links?.map(l => l.href)).toEqual([
+      "/questions/religions/those-who-never-heard",
+      "/answers/what-about-those-who-never-heard",
+    ]);
+    const t = text(f);
+    expect(t).toContain(
+      "None of the three says that God condemns anyone for an accident of birth"
+    );
+    expect(t).toContain("He was shown who the Judge is.");
+    // Nothing on any person's or people's eternal state.
+    expect(captions(f)).not.toMatch(
+      /\b(is|are|was|were|will be|went|go|goes) (lost|damned|in hell|to hell|in heaven|to heaven|saved anyway)\b/i
+    );
+    expect(t).not.toMatch(/\bhell\b|\bdamn/i);
+    expect(f.frames[5].still).toContain("No one is drawn.");
+    // It touches death and the dead: a care line already on the site, whole.
+    expect(f.care).toBe(filmFile("life-to-come").care);
+    // Offered, through its own links, on the pages that set the views out.
+    const links = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/film-links.json"), "utf8")
+    ) as { pages: Record<string, string[]> };
+    expect(links.pages["/answers/what-about-those-who-never-heard"]).toContain(
+      "never-heard"
+    );
+    expect(
+      links.pages["/questions/religions/those-who-never-heard"]
+    ).toContain("never-heard");
   });
 });

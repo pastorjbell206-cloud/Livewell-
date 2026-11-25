@@ -459,6 +459,12 @@
    "minutes": 3,
    "by": "named"
   },
+  "68": {
+   "slug": "never-heard",
+   "title": "What about people who never heard?",
+   "minutes": 3,
+   "by": "passage"
+  },
   "70": {
    "slug": "when-we-die",
    "title": "What happens when we die?",
@@ -470,6 +476,12 @@
    "title": "Are science and the Bible enemies?",
    "minutes": 2,
    "by": "pick"
+  },
+  "73": {
+   "slug": "never-heard",
+   "title": "What about people who never heard?",
+   "minutes": 3,
+   "by": "passage"
   },
   "74": {
    "slug": "love-when-i-do-wrong",

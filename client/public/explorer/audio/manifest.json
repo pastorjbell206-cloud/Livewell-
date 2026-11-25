@@ -4749,6 +4749,116 @@
     }
    ]
   },
+  "never-heard": {
+   "title": {
+    "file": "never-heard/title.mp3",
+    "hash": "19eb3039d4a4c1eb51cc",
+    "seconds": 2.64,
+    "bytes": 16340
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "never-heard/younger/01-question.mp3",
+     "hash": "844a7ad7c04c5b83d681",
+     "seconds": 26.82,
+     "bytes": 161492
+    },
+    {
+     "id": "one-savior",
+     "file": "never-heard/younger/02-one-savior.mp3",
+     "hash": "d00910f9ed442f5fe715",
+     "seconds": 25.51,
+     "bytes": 153716
+    },
+    {
+     "id": "not-far",
+     "file": "never-heard/younger/03-not-far.mp3",
+     "hash": "65ec084307429d5a6577",
+     "seconds": 26.48,
+     "bytes": 159476
+    },
+    {
+     "id": "hear-and-believe",
+     "file": "never-heard/younger/04-hear-and-believe.mp3",
+     "hash": "86a069249638df1b9bd6",
+     "seconds": 25.7,
+     "bytes": 154724
+    },
+    {
+     "id": "his-work-reaches",
+     "file": "never-heard/younger/05-his-work-reaches.mp3",
+     "hash": "970cebad107558785956",
+     "seconds": 24.53,
+     "bytes": 147812
+    },
+    {
+     "id": "everyone-meets",
+     "file": "never-heard/younger/06-everyone-meets.mp3",
+     "hash": "f3fbbda90e3352a4186f",
+     "seconds": 19.32,
+     "bytes": 116420
+    },
+    {
+     "id": "the-judge",
+     "file": "never-heard/younger/07-the-judge.mp3",
+     "hash": "b248fab0e5cde3f983ec",
+     "seconds": 26.32,
+     "bytes": 158468
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "never-heard/older/01-question.mp3",
+     "hash": "5e4bbe7af8eaff873704",
+     "seconds": 24.63,
+     "bytes": 148388
+    },
+    {
+     "id": "one-savior",
+     "file": "never-heard/older/02-one-savior.mp3",
+     "hash": "834baa83d57d59c76d2e",
+     "seconds": 24.08,
+     "bytes": 145076
+    },
+    {
+     "id": "not-far",
+     "file": "never-heard/older/03-not-far.mp3",
+     "hash": "44eb9827e2622beb3161",
+     "seconds": 24.68,
+     "bytes": 148676
+    },
+    {
+     "id": "hear-and-believe",
+     "file": "never-heard/older/04-hear-and-believe.mp3",
+     "hash": "dccd796bd0e3e6248ef7",
+     "seconds": 28.88,
+     "bytes": 173876
+    },
+    {
+     "id": "his-work-reaches",
+     "file": "never-heard/older/05-his-work-reaches.mp3",
+     "hash": "61335708e0c23c233889",
+     "seconds": 27.75,
+     "bytes": 167108
+    },
+    {
+     "id": "everyone-meets",
+     "file": "never-heard/older/06-everyone-meets.mp3",
+     "hash": "5b2a71af3e498dea63ff",
+     "seconds": 24.54,
+     "bytes": 147812
+    },
+    {
+     "id": "the-judge",
+     "file": "never-heard/older/07-the-judge.mp3",
+     "hash": "7286ceffbda0aafd9adf",
+     "seconds": 25.72,
+     "bytes": 154868
+    }
+   ]
+  },
   "love-when-i-do-wrong": {
    "title": {
     "file": "love-when-i-do-wrong/title.mp3",

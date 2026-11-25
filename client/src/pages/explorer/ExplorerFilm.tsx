@@ -283,6 +283,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "One light followed through the whole Bible, in seven moving pictures: the first word of creation, light in Egypt's darkness, the pillar of fire, the lamp in the tent, Isaiah's great light, the light of the world, and the city with no night.",
     },
+    "never-heard": {
+      title: "What about people who never heard?: Bible Explorer",
+      description:
+        "A hard question in seven moving pictures: what all Christians confess, what the Bible says and does not say about those who never heard of Jesus, and the three main answers Christians give, with no side taken.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

@@ -1,0 +1,124 @@
+{
+  "slug": "never-heard",
+  "title": "What about people who never heard?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "never-heard",
+  "line": {
+    "younger": "Many people have lived without ever hearing about Jesus. What does the Bible say, and what do Christians believe? An honest look at a hard question.",
+    "older": "What Christians confess together, what the Bible says and does not say, and the three main answers faithful Christians give, each in its own words, with no side taken."
+  },
+  "poster": "Evening. A child sits on a hillside beside an older woman and looks across a wide valley at a small far village.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "An honest question",
+      "still": "Evening. A child sits on a hillside beside an older woman and looks across a wide valley at a small far village.",
+      "younger": "Christians believe that Jesus is the one who saves. But many people have lived without ever hearing his name. What about them? It is an honest question. Abraham once asked God a question like it, and God did not tell him off for asking.",
+      "older": "If Jesus is the only Savior, and most people who have ever lived never heard his name, is everything settled by where a person was born? The Bible puts a question like it in Abraham's mouth, and God did not rebuke him for asking.",
+      "verse": {
+        "ref": "Genesis 18:25",
+        "text": "Will not the Judge of all the earth do what is right?"
+      }
+    },
+    {
+      "id": "one-savior",
+      "name": "One Savior",
+      "still": "Morning. On a far hill stands an empty cross with a gold sun rising behind it. Roads from every side of the land run toward the hill.",
+      "younger": "Here is what all Christians say together. Whoever is saved is saved by Jesus, and by no one else. And God wants everyone to be saved. But the Bible does not say how much a person has to know about Jesus.",
+      "older": "Christians of every tradition confess that whoever is saved is saved by Christ alone, and that God wants all people to be saved. What the confession does not say is how much a person must know about him.",
+      "verse": {
+        "ref": "Acts 4:12",
+        "text": "there is no other name under heaven given to men by which we must be saved."
+      }
+    },
+    {
+      "id": "not-far",
+      "name": "Not far from anyone",
+      "still": "Night. A family sits by a small gold fire outside a tent and looks up at a sky full of stars.",
+      "younger": "God has not left anyone with nothing. Everyone can see the world he made, and everyone knows something of right and wrong. No one in the Bible is blamed for not believing a message they never heard. God judges fairly, by the light each person had.",
+      "older": "No one is left with nothing: there is the world God made, and the conscience. Judgment is measured by the light a person had. No one in Scripture is condemned for never hearing a name. But Paul also says that all have sinned.",
+      "verse": {
+        "ref": "Acts 17:27",
+        "text": "He is not far from each one of us."
+      }
+    },
+    {
+      "id": "hear-and-believe",
+      "name": "One answer: hear and believe",
+      "still": "A messenger with a staff and a bundle walks a long road toward a far village, under a gold sun.",
+      "younger": "Christians give three main answers. The first: a person must hear about Jesus and trust him in this life. No one is punished for not hearing, only for the wrong they have done. And God can send the good news to anyone who seeks him.",
+      "older": "The first answer: a person must hear the gospel and trust Christ in this life. No one is condemned for not hearing, only for sin against the light he had, and God can bring the gospel to anyone who seeks him. Its hardest question is the many who never had a messenger in reach.",
+      "verse": {
+        "ref": "Romans 10:14",
+        "text": "And how can they believe in the One of whom they have not heard?"
+      }
+    },
+    {
+      "id": "his-work-reaches",
+      "name": "A second answer: his work reaches further",
+      "still": "Night. An old man with a staff stands on a hill and looks up at the stars, one of them gold.",
+      "younger": "The second: no one is saved without Jesus. But what he did may reach some who never knew his name, and who trusted God with what they did know. Abraham trusted God long before Jesus was born.",
+      "older": "The second: no one is saved apart from Christ, but his work may reach some who never knew his name and who answered, in faith, the light God gave them, as it reached Abraham. Its hardest question is why the New Testament presses so hard on hearing.",
+      "verse": {
+        "ref": "Genesis 15:6",
+        "text": "Abram believed the LORD, and it was credited to him as righteousness."
+      }
+    },
+    {
+      "id": "everyone-meets",
+      "name": "A third answer: everyone will meet him",
+      "still": "A doorway stands open in a plain wall, with gold light in it and a path leading up to it. No one is drawn.",
+      "younger": "The third: every person will meet Jesus, at death or after it, and be able to answer him. Christians who say this point to words in one of Peter's letters.",
+      "older": "The third: every person will meet Christ, at death or beyond it, and be able to answer him. Its hardest question is that people die once and after that face judgment, and that most of Scripture is silent about any later chance.",
+      "verse": {
+        "ref": "1 Peter 4:6",
+        "text": "the gospel was preached even to those who are now dead"
+      }
+    },
+    {
+      "id": "the-judge",
+      "name": "Who the Judge is",
+      "still": "Morning. Jesus stands on a hill road with one hand held out toward far villages, and two of his friends set out down the road with staffs.",
+      "younger": "None of the three says that God blames anyone for where they were born. The Bible does not say what happens to each person. It says who the Judge is: Jesus, who cried at his friend's grave, and who sends his friends to every nation.",
+      "older": "None of the three says that God condemns anyone for an accident of birth, and each leaves the church sent to every nation. Abraham was never shown how the judgment would be worked out. He was shown who the Judge is.",
+      "verse": {
+        "ref": "John 10:16",
+        "text": "I have other sheep that are not of this fold. I must bring them in as well"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Abraham took his hard question straight to God. What hard question would you like to ask God?",
+    "older": "Almost everyone who asks about people who never heard has heard. What do you think you are meant to do with what you have been told?"
+  },
+  "read": [
+    { "label": "Genesis 18", "href": "/study/bible/genesis/18" },
+    { "label": "Acts 10", "href": "/study/bible/acts/10" },
+    { "label": "Acts 17", "href": "/study/bible/acts/17" },
+    { "label": "Romans 2", "href": "/study/bible/romans/2" },
+    { "label": "Romans 10", "href": "/study/bible/romans/10" }
+  ],
+  "stops": [
+    "abraham",
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that whoever is saved is saved by Christ, and that the Judge of all the earth will do what is right. How the one Savior reaches those who never heard of him is a question Christians who share the creeds answer differently, and no creed decides it. This moving picture names three answers and takes no side among them. Some Christians have also hoped that God will in the end restore everyone; the church's councils and confessions have generally not received that hope. All four are set out, each with its hardest question, in",
+    "links": [
+      { "label": "the page on those who never heard", "href": "/questions/religions/those-who-never-heard" },
+      { "label": "the Honest Answer on those who never heard", "href": "/answers/what-about-those-who-never-heard" }
+    ]
+  },
+  "care": "If someone you love has died, or if thinking about death makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "What Happens to People Who Never Hear the Gospel? (an essay)", "href": "/writing/what-happens-to-people-who-never-hear-the-gospel" },
+    { "label": "Is Jesus really the only way to God? (an Honest Answer)", "href": "/answers/is-jesus-the-only-way" },
+    { "label": "John 10 in the Study Bible: other sheep", "href": "/study/bible/john/10" },
+    { "label": "1 Peter 4 in the Study Bible", "href": "/study/bible/1-peter/4" },
+    { "label": "A blessing for all nations (a moving picture)", "href": "/study/explorer/watch/all-nations" },
+    { "label": "John 3:16 in its chapter (a moving picture)", "href": "/study/explorer/watch/john-3-16" }
+  ],
+  "end": { "label": "Read the Honest Answer on those who never heard", "href": "/answers/what-about-those-who-never-heard" }
+}

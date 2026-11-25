@@ -748,6 +748,20 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M50,62C58,52 60,44 54,32C44,42 42,52 50,62Z" />
     </>
   ),
+  /* What about people who never heard?: a small far house on a hill, a long road up to it, a gold sun. */
+  "never-heard": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M8,84V66C30,54 60,50 92,58V84Z" tone="g" off={1} />
+      <Shape d="M60,54V40H80V54Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M57,40H83M68,54V46h5v8" />
+      <path className="pl-f" d="M14,84C30,76 40,74 46,68C52,62 60,60 66,55M26,84C40,78 50,76 54,70" />
+      <path className="pl-m" d="M18,26a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M18,26a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-f" d="M27,10V5M27,42V47M11,26H6M43,26H48" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

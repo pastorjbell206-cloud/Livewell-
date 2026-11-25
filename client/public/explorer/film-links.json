@@ -149,6 +149,10 @@
    "title": "Why are there so many churches?",
    "line": "There are so many different churches on so many signs. Seven pictures of how one church became many, and the one root they still share."
   },
+  "never-heard": {
+   "title": "What about people who never heard?",
+   "line": "Many people have lived without ever hearing about Jesus. What does the Bible say, and what do Christians believe? An honest look at a hard question."
+  },
   "love-when-i-do-wrong": {
    "title": "Does God still love me when I do wrong?",
    "line": "Everyone does wrong sometimes. Does God stop loving us then? Jesus answered with a story about a son who ran away and a father who ran too."
@@ -217,11 +221,15 @@
   "/answers/is-it-okay-to-be-angry-at-god": [
    "prayer"
   ],
+  "/answers/is-jesus-the-only-way": [
+   "never-heard"
+  ],
   "/answers/was-jesus-just-a-good-teacher": [
    "who-jesus-is"
   ],
   "/answers/what-about-those-who-never-heard": [
-   "john-3-16"
+   "john-3-16",
+   "never-heard"
   ],
   "/answers/what-does-the-bible-say-about-anxiety": [
    "prayer"
@@ -235,6 +243,9 @@
   "/answers/why-would-anyone-trust-the-bible": [
    "the-bible",
    "is-the-bible-true"
+  ],
+  "/questions/religions/those-who-never-heard": [
+   "never-heard"
   ],
   "/study/bible/doctrines/atonement": [
    "the-lamb",

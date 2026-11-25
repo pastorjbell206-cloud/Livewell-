@@ -2021,7 +2021,18 @@
       "slug": "never-heard",
       "title": "What about people who never heard?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Many people have lived without ever hearing about Jesus. What does the Bible say, and what do Christians believe? An honest look at a hard question.",
+        "older": "What Christians confess together, what the Bible says and does not say, and the three main answers faithful Christians give, each in its own words, with no side taken."
+      },
+      "mark": "never-heard",
+      "frames": 7,
+      "stops": [
+        "abraham",
+        "church"
+      ],
+      "cards": []
     },
     {
       "slug": "temple-destroyed",
