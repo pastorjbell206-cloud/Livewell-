@@ -19632,3 +19632,19 @@ Cut in chapter 15: the deep note's lines to John 1:14 and Hebrews' high priest, 
 | 1 Kings 3:4 (its phrase); Ezra 3:11 | 37-43 | 1-chronicles/16.json `historical` (1 Kings 3:4); BSB | Repository; BSB text |
 
 Cut in chapter 16: the deep note's Christian reading of the psalm (Galatians 3, the nations, the return of Christ), because these verses are not quoted by the New Testament. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 17 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 17:1; Nathan's answer (17:2); 17:4; 17:5-6; 17:7; 17:8-9; 17:10 (its last sentence); 17:11-12; 17:13; 17:14; 17:15 | 1-15 | BSB | BSB text |
+| A pivotal chapter; bayit and its senses; temple-building kings; God not a patron; father and son as royal and covenant language; the predecessor is Saul; the two differences from 2 Samuel 7 (7:14's clause left out; My house and My kingdom); olam eight times, its range; the first readers without a king; the Tel Dan inscription, found in the 1990s, ninth century BC, house of David | 1-15 | 1-chronicles/17.json `story`, `historical`, `cultural`, `literary`, `words` (bayit, olam) | Repository |
+| 2 Samuel 7:14 (its clause); 2 Samuel 7:16 (its first clause) | 1-15 | 1-chronicles/17.json `historical`; BSB | Repository; BSB text |
+| Luke 1:32 (its phrase); Hebrews 1:5 (its second quotation) | 1-15 | 1-chronicles/17.json `christ` (Luke 1:32-33; Hebrews 1:5); BSB | Repository; New Testament's own use; BSB text |
+| 17:16; 17:17; 17:18; 17:20; 17:21-22; 17:23; 17:25; 17:27 | 16-27 | BSB | BSB text |
+| Sitting before the LORD, likely in the ark's tent; servant's posture; the prayer answering the oracle in the same order | 16-27 | 1-chronicles/17.json `cultural`, `literary` | Repository |
+| 2 Samuel 7:18 (its question); Psalm 132:11 (its first sentence) | 16-27 | BSB | BSB text |
+
+Cut in chapter 17: the deep note's line from God's house to the church as temple (1 Corinthians 3:16; Ephesians 2:19-22), because those verses do not cite this chapter. No care line is needed in this chapter.
