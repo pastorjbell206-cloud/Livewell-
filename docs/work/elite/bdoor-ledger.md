@@ -20173,3 +20173,19 @@ Cut in chapter 18: the deep note's lines to Matthew 9:36, Mark 6:34, John 10:11 
 ## 2 Chronicles' book page: map labels (2026-11-25)
 
 The walk of the served build at 390 and 1440 found the Bethel and Jericho labels overlapping on the 2 Chronicles map. The label offsets for Jerusalem, Bethel, Jericho and Damascus are now the ones the 1 Kings map already uses for the same places. No words changed.
+
+## The plain notes on 2 Chronicles 19 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The return (19:1); 19:2 (Jehu's words); 19:3 | 1-3 | BSB | BSB text |
+| Response to rebuke; Asa and Hanani (16:10); Jehu's family and Baasha (1 Kings 16:1-7); 20:34; rebuke and weighing; love as alliance | 1-3 | 2-chronicles/19.json `story`, `historical`, `literary` | Repository |
+| 1 Kings 16:1 (its clause) | 1-3 | BSB | BSB text |
+| The hard note: the particular alliance; love as loyalty; Jehoram and Athaliah; Jesus' command to love enemies; the two teachings; 2 Corinthians 6:14 | 1-3 `hard` | 2-chronicles/19.json `hard` | Repository |
+| 19:4 (its clause); 19:5; 19:6; 19:7; the Jerusalem court (19:8); 19:9; Amariah and Zebadiah (19:11); 19:11 (its last sentence) | 4-11 | BSB | BSB text |
+| Shaphat and the king's name; the reform only in Chronicles and the dating debate; elders at the gate; Deuteronomy 16:18-20 and 17:8-13; religious and royal cases; shochad and partiality (Exodus 23:6-8; Leviticus 19:15); God's character as ground; yir'ah; emunah | 4-11 | 2-chronicles/19.json `historical`, `cultural`, `words` | Repository |
+| Deuteronomy 16:19 (its last sentence) | 4-11 | BSB | BSB text |
+
+Cut in chapter 19: the deep note's lines to Isaiah 11:3-5, John 5:22 and Acts 10:34, 42, which do not cite this chapter. No care line is needed in this chapter.
