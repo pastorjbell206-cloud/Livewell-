@@ -28,7 +28,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Chapter 3: Who Did Jesus Think He Was? | 3,329 | 3,329 | +0.0% | 55 (16.5) | 3 (0.9) | 104 (31.2) | 55 (16.5) | 40 | PASS |
 | Chapter 4: Did Jesus Really Rise from the Dead? | 3,577 | 3,577 | +0.0% | 34 (9.5) | 3 (0.8) | 96 (26.8) | 67 (18.7) | 24 | PASS |
 | Chapter 5: If God Is Good, Why Is There So Much Suffering? | 3,640 | 3,640 | +0.0% | 38 (10.4) | 3 (0.8) | 104 (28.6) | 70 (19.2) | 28 | PASS |
-| **All 6** | 20,436 | 20,436 | +0.0% | 254 (12.4) | 17 (0.8) | 580 (28.4) | 358 (17.5) | 188 | |
+| Chapter 6: How Could a Loving God Send People to Hell? | 3,493 | 3,493 | +0.0% | 62 (17.7) | 4 (1.1) | 118 (33.8) | 63 (18.0) | 40 | PASS |
+| **All 7** | 23,929 | 23,929 | +0.0% | 316 (13.2) | 21 (0.9) | 698 (29.2) | 421 (17.6) | 228 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -172,3 +173,27 @@ Five pairs:
    After: Paul writes the theology of joy from a prison cell, Peter writes to Christians under persecution, Revelation is composed in exile on Patmos, and the Psalms of lament, the raw, unanswered, fist-shaking ones, are the single largest category in the Psalter.
 
 Left alone, and why. This chapter states the hardest objection in the book and the rule was at its strictest here: all 28 edits are dashes recast, and no word changed. The chain of the logical problem, the evidential problem with its list of horrors, and above all Ivan Karamazov's rebellion ("the most humane objection to Christianity ever framed") are word for word; Ivan's paragraph took one pair of brackets. The admissions that the answer is incomplete also stay exactly: "It is no full answer to why children die", "No theodicy answers Ivan", "This is not the whole answer. The agony of a mother at a graveside is not met by a syllogism." The care for a reader in grief is untouched: nothing here was made brisker or more confident. "Not all new things. All things new." and the last five sentences are verdicts. Three dashes stay.
+
+
+## Chapter 6: How Could a Loving God Send People to Hell? (`sec07.xhtml`)
+
+Words 3,493 to 3,493. Em-dashes in his prose 62 to 4 (17.7 to 1.1 per 1,000 words). Tells 118 to 63 (33.8 to 18.0 per 1,000). Mean sentence 29.4 words to 29.1; sentences of eight words or fewer 21.0% to 20.8%; of five or fewer 14.3% to 14.2%. 40 edits; paragraphs 48 to 48. Paragraphs of fifteen words or fewer 2 to 2; runs of three fragments 1 to 1.
+
+By kind (before to after): emdash 62 to 4, not_but 16 to 16, NotX.Y 2 to 2, isnt_its 2 to 2, triplet 21 to 23, frag3 1 to 1, anaphora 1 to 1, intens 3 to 3, colon_reveal 2 to 3, short_close 6 to 6, one_line_para 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 19 Scripture references, 0 years, 13 numbers in digits, 39 number words, proper names by count, and 35 hedge words (after: 35) compared.
+
+Five pairs:
+
+1. Before: The New Testament describes hell with several images that do not fit together literally — fire, outer darkness, weeping and gnashing of teeth, separation from the Lord — and they cannot all be literal at once, since fire is not dark, darkness is not fire, and worms do not thrive in flame.
+   After: The New Testament describes hell with several images that do not fit together literally (fire, outer darkness, weeping and gnashing of teeth, separation from the Lord), and they cannot all be literal at once, since fire is not dark, darkness is not fire, and worms do not thrive in flame.
+2. Before: The second is conditional immortality, or annihilationism — held by John Stott, F.
+   After: The second is conditional immortality, or annihilationism (held by John Stott, F.
+3. Before: These are the theories the critics most love to caricature — cosmic child abuse, as the phrase goes — but the caricature does not land, because penal substitution is not the Father abusing the Son but the triune God accepting the cost of human rebellion inside himself:
+   After: These are the theories the critics most love to caricature (cosmic child abuse, as the phrase goes), but the caricature does not land, because penal substitution is not the Father abusing the Son but the triune God accepting the cost of human rebellion inside himself:
+4. Before: The word is a commercial term that appears on ancient business receipts meaning paid in full — when a debt was settled, the creditor stamped the ledger with it, the account was closed, nothing more was owed — so when Jesus cried tetelestai, he was not announcing that his suffering was over but that the debt was paid. The ledger humanity had been running against the holiness of God — Adam's debt, Israel's debt, every reader's debt — was settled.
+   After: The word is a commercial term that appears on ancient business receipts meaning paid in full: when a debt was settled, the creditor stamped the ledger with it, the account was closed, nothing more was owed. So when Jesus cried tetelestai, he was not announcing that his suffering was over but that the debt was paid. The ledger humanity had been running against the holiness of God (Adam's debt, Israel's debt, every reader's debt) was settled.
+5. Before: Read it line by line against the Passion narratives — the silence before his accusers, the crushing, the numbering with transgressors, the grave assigned with the wicked and the burial with the rich, the justification of many by his knowledge — and these are not coincidences gathered after the fact.
+   After: Read it line by line against the Passion narratives (the silence before his accusers, the crushing, the numbering with transgressors, the grave assigned with the wicked and the burial with the rich, the justification of many by his knowledge), and these are not coincidences gathered after the fact.
+
+Left alone, and why. Hell is a contested doctrine, and the chapter does what CLAUDE.md asks of one: it states three positions, names who holds each, and says where he lands and with what reserve. So it took punctuation only (40 dashes recast, no word changed), and the three views were given the same treatment: each keeps its holders, its texts and its wording, and the two that named their holders between dashes now name them in brackets alike. The paragraph "Where, then, to stand." is his position and was not touched at all, dashes included ("it should be held with trembling, not triumph"). The four atonement theories each keep "this is true" and "but alone". The critics' phrase "cosmic child abuse" is as he gave it. "Tetelestai was not a lie.", "Not reduced. Not deferred. Settled." and the last three sentences are verdicts; both pull quotes stand. Four dashes stay.
