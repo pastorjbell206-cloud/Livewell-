@@ -365,6 +365,9 @@ function manifestPages() {
     pages.push({ url: "/study/books-at-a-glance", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/key-chapters", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/themes", priority: "0.8", changefreq: "monthly" });
+    // The word finder. A word's own page (/study/word/<strong>, some 17,000 of them) is noindex and not listed.
+    pages.push({ url: "/study/word", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/cross-references", priority: "0.8", changefreq: "monthly" });
     // The Bible Explorer: the map, and each stop once it is finished (a stop
     // still being drawn has no link and no place in the sitemap).
     // Bible films: every finished film, for every reader (the films themselves are listed below).
