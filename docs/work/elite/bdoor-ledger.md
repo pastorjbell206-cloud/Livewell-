@@ -20749,3 +20749,21 @@ Cut in chapter 12: the deep note's lines to John 1:51 and Acts 3:22, which the N
 | The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 15-16 `hard` | genesis/plain/6.json; 2-kings/plain/17.json and 25.json | Reused whole, word for word; Find Help named; no phone number |
 
 Cut in chapter 13: the deep note's line that naming Jesus as Savior confesses him one with the God of Israel, which the New Testament does not draw from this chapter. The cruelties of 13:16 and the words of 13:8 are named and not quoted.
+
+## The plain notes on Hosea 14 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 14:1; 14:2 (the prayer's first sentence, inside its quotation); 14:3 paraphrased (its inner quotation not quoted) and its last sentence | 1-3 | BSB | BSB text |
+| Not datable; a last appeal or a word kept for survivors and Judah; Assyria bought off; horses, might and Egypt; the whole strategy given up; a model prayer from forgiveness to trust; bulls of the lips (Hebrew) and fruit of the lips (Greek); the law's care for orphans; shuv through the chapter | 1-3 | hosea/14.json `historical`, `cultural`, `literary` | Repository; the readings in their holders' terms |
+| Isaiah 31:1 (its phrase); Psalm 68:5 (its phrase); Hebrews 13:15 and the phrase in its Greek form | 1-3 | hosea/14.json `historical`, `christ`; BSB | Repository; BSB text; the New Testament's own use of the phrase |
+| 14:4; 14:5; 14:6-7 paraphrased; 14:8 (its last sentence; the rest paraphrased) | 4-8 | BSB | BSB text |
+| Dew in a land of winter rain; 6:4 and 13:3 reversed; Lebanon's cedars, forests and wines; height, permanence and plenty; the land in flower, the opposite of chapter 2; the cypress, the only place God compares himself to a tree; fruit from the LORD, not Baal | 4-8 | hosea/14.json `cultural`, `historical`, `literary` | Repository |
+| Hosea 2:12; Psalm 92:12 (its phrase) | 4-8 | BSB | BSB text |
+| 14:9 | 9 | BSB | BSB text |
+| An epilogue in the style of wisdom; to every later reader; kept in Judah; the two ways; stumble picking up 14:1 | 9 | hosea/14.json `literary`; hosea/intro.json `purpose`, `author` | Repository |
+| Proverbs 9:10 (its first clause); Psalm 1:6 paraphrased | 9 | BSB | BSB text |
+
+Cut in chapter 14: the deep note's lines to John 15:1-8 and to the father of the parable in Luke 15, which the New Testament does not draw from this chapter. Hebrews 13:15 is kept, as the New Testament's own use of the phrase. The forms of 14:2 and 14:8 that would put first-person words in the prose are given in the third person.
