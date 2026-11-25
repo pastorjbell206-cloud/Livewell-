@@ -615,6 +615,11 @@ const paras = (text) =>
   String(text ?? "").split(/\n{2,}/).map((x) => x.trim()).filter(Boolean).map((x) => `<p>${inline(x)}</p>`).join("\n");
 const sec = (heading, body) => (body ? `<section><h2>${escapeHtml(heading)}</h2>\n${body}</section>` : "");
 const article = (parts) => `<article>\n${parts.filter(Boolean).join("\n")}\n</article>`;
+// A section of a very long list (the cross-book Bible pages hold several
+// hundred entries). All but the first are marked so the browser lays them out
+// only as they near the screen (.pre-far in index.css); the words are all in
+// the file for a reader without scripts.
+const far = (i, heading, body) => (body ? `<section${i ? ' class="pre-far"' : ""}><h2>${escapeHtml(heading)}</h2>\n${body}</section>` : "");
 
 /** An argued answer's parts and sources (answers.ts `sections`, `sources`), as plain HTML. */
 function argued(a) {
@@ -1006,7 +1011,7 @@ const PAGE_BODIES = {
         `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
         `<h1>The Bible's timeline</h1>`,
         `<p class="pre-subtitle">Every date the book pages give, on one line of time. Each entry opens its book.</p>`,
-        ...d.bands.map((band) => sec(band.name, `<ol>\n${d.entries.filter((e) => e.band === band.id).map(row).join("\n")}\n</ol>`)),
+        ...d.bands.map((band, i) => far(i, band.name, `<ol>\n${d.entries.filter((e) => e.band === band.id).map(row).join("\n")}\n</ol>`)),
       ]),
     };
   },

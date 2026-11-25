@@ -211,7 +211,7 @@ export function TimelineView({ data, initialBook = "" }: { data: TimelineData; i
                   : "Listed by the first year each book's own words name."}
               </p>
             </div>
-            <ol className="bk-tl bx-tl">{rows(b.id)}</ol>
+            <ol className={`bk-tl bx-tl${i ? " bx-far" : ""}`}>{rows(b.id)}</ol>
             <p className="bx-top">
               <a href="#line">Back to the line of time</a>
               {narrowed && (
