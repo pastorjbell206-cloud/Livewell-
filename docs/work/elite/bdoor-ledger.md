@@ -19663,3 +19663,18 @@ Cut in chapter 17: the deep note's line from God's house to the church as temple
 | Isaiah 9:7 (its phrase) | 14-17 | 1-chronicles/18.json `christ` (Isaiah 9:7); BSB | Repository; BSB text |
 
 Cut in chapter 18: the deep note's typological line from David's reign to Christ's, which the New Testament does not draw from this chapter; Isaiah 9:7 is kept as Isaiah's own promise. The treatment of Moabite prisoners in 2 Samuel 8:2 is named as left out, not described. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 19 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Nahash's death (19:1); 19:2 (David's words); 19:3 (its question); 19:4; 19:5 (the king's words) | 1-5 | BSB | BSB text |
+| The campaign told in detail after chapter 18; the parallel with 2 Samuel 10; Ammon and Rabbah on the site of Amman; Nahash and Jabesh-gilead (1 Samuel 11); Nahash's kindness unstated, the common suggestion; condolence envoys as diplomacy; chesed between kings; spying as a real danger; the beard and the garments; Jericho sparing shame | 1-5 | 1-chronicles/19.json `story`, `historical`, `cultural`, `words` (chesed, nacham) | Repository |
+| 1 Samuel 11:1 (its clause); Romans 12:18 | 1-5 | BSB | BSB text |
+| 19:6 (its clause); hiring the Arameans (19:6-7); Joab and Abishai (19:8-11); 19:12 paraphrased; 19:13; the flight (19:14-15); the second battle (19:16-18); 19:19 | 6-19 | BSB | BSB text |
+| Stench as idiom; bought military power; a talent about thirty kilograms; Joab's speech at the center; chazaq and 22:13; the reversal; the number differences (thirty-three thousand men in 2 Samuel 10; 19:7; 19:18 against 2 Samuel 10:18); copying and the word for thousand; Bathsheba's story at the siege of Rabbah passed over | 6-19 | 1-chronicles/19.json `story`, `historical`, `cultural`, `literary`, `words` (chazaq) | Repository |
+| 2 Samuel 10:18 (its clause); 1 Corinthians 16:13 | 6-19 | BSB | BSB text |
+
+Cut in chapter 19: the deep note's thematic contrast with Colossians 1:20, which the New Testament does not draw from this chapter. The forty thousand horsemen of the deep note's reading of 2 Samuel 10:18 are left out, since the BSB there reads foot soldiers. No care line is needed in this chapter.
