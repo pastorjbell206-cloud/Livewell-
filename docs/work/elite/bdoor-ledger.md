@@ -18422,3 +18422,22 @@ Cut in chapter 20: the deep note's line from Hezekiah's third day and tears to J
 | Matthew 1:10 | 19-26 | 2-kings/21.json `christ` (Matthew 1:10); BSB | Repository; BSB text; Matthew's own genealogy |
 
 Cut in chapter 21: the deep note's line from Manasseh's repentance to grace in Christ's innocent blood, which it calls thematic; the later Jewish tradition of Isaiah's death under Manasseh, which the note says is not in the Bible. A first draft called Ahaz Manasseh's father; it was corrected to grandfather before it reached the repository.
+
+## The plain notes on 2 Kings 22 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Josiah at eight, thirty-one years, Jedidah of Bozkath (22:1); 22:2; Shaphan sent in the eighteenth year (22:3); the money and the workers (22:4-6, paraphrased); 22:7 | 1-7 | 2-kings/22.json `summary`; BSB | Repository; BSB text |
+| Out of darkness a child king; the highest verdict and Deuteronomy 17:20; about 640 to 609 BC and about 622 BC; Assyria weakening after Ashurbanipal's death around 631 BC; Babylon rising; room to act; Jeremiah from the thirteenth year (Jeremiah 1:2) and Zephaniah (Zephaniah 1:1); the collection following Joash (12:9-15) | 1-7 | 2-kings/22.json `story`, `historical`, `cultural`; bible/guides/kings-of-israel-and-judah.json (Josiah 641/640 to 609) | Repository |
+| Deuteronomy 17:19; Deuteronomy 17:20 | 1-7 | 2-kings/22.json `story` (Deuteronomy 17:20); BSB | Repository; BSB text |
+| 22:8 (Hilkiah's words in double quotes); Shaphan reads it; the report and 22:10 (its words); 22:11; the five officials and 22:13 | 8-13 | 2-kings/22.json `summary`; BSB | Repository; BSB text |
+| Routine to crisis; the understated report; what the book was: Deuteronomy or its core for most, an old copy lost under Manasseh for those who hold Mosaic authorship, written or revised not long before for many critical scholars; the text saying only that it was found; foundation deposits and found writings; torah; Shaphan's family in Jeremiah, Ahikam (Jeremiah 26:24); the seal impressions and Gemariah son of Shaphan (Jeremiah 36:10) | 8-13 | 2-kings/22.json `historical`, `cultural`, `literary`, `words` (torah) | Repository; the views in their holders' terms |
+| Jeremiah 26:24; Psalm 119:105 | 8-13 | 2-kings/22.json `historical` (Jeremiah 26:24); BSB | Repository; BSB text |
+| Huldah, Shallum, the wardrobe, the Second District (22:14); the judgment (22:15-17, paraphrased) and 22:17 (its first words); the mercy and 22:19 (its first part); 22:20 (the LORD's words) | 14-20 | 2-kings/22.json `summary`; BSB | Repository; BSB text |
+| Inquiring of the LORD; Huldah rather than Jeremiah or Zephaniah, her authority respected; Miriam and Deborah (Exodus 15:20; Judges 4:4); the Second District on the western hill, perhaps with northern refugees; the wardrobe; two oracles; 'heard' tying the chapter; rakhakh and the stiff neck (17:14); a heart moved; the reform not cancelling the judgment | 14-20 | 2-kings/22.json `story`, `cultural`, `literary`, `words` (rakhakh, neviah), `doctrines` (repentance, judgment) | Repository |
+| Judges 4:4; Jeremiah 31:33 | 14-20 | 2-kings/22.json `words` (neviah: Deborah), `christ` (Jeremiah 31:31-34); BSB | Repository; BSB text |
+| The hard note: Megiddo and 'in peace'; verse 20's own meaning; buried while the city stood; honorable burial; the tension left in place; the promise conditional and 2 Chronicles 35:21-22; the difficulty not hidden; the promise kept | 14-20 `hard` | 2-kings/22.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 22: the deep note's lines from the new covenant to Jesus (Luke 22:20; Hebrews 8) and from Josiah to the Son of David who fulfilled the law; Jeremiah's promise itself is quoted. No care line is needed in this chapter.
