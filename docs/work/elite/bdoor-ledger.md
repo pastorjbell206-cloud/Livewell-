@@ -17875,3 +17875,19 @@ Cut in chapter 7: the deep note's lines to Christ (Matthew 1, Bethlehem and the 
 | Not since Joshua: Ezra 3:4, Solomon's festival; manner and scope, not first keeping; Hezekiah's and Josiah's Passovers in Chronicles | 13-18 `hard` | nehemiah/8.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 8: the deep note's lines to Christ (Luke 4:16-21, Luke 24:27, John 7 and 8, John 1:14 and the tent; the note calls them connections the New Testament makes, but not to this chapter); the people's double amen of verse 6 quoted (it would leave an exclamation outside a checked quotation; told in plain words before commit).
+
+## The plain notes on Nehemiah 9 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The twenty-fourth of the month, two days after the feast; sackcloth, dust and fasting; standing to confess; the day in quarters; the separation of verse 2 for this occasion, confessing their own fathers' sins, solidarity and not blame | 1-5 | nehemiah/9.json `story`, `cultural` | Repository |
+| Daniel 9:5; Ezra 9:7 | 1-5 | nehemiah/9.json `cultural` (Daniel 9 and Ezra 9); BSB | Repository; BSB text |
+| One of the longest prayers and fullest summaries; Genesis to Kings behind it; stages of God's acts and the people's response; Exodus 34:6 behind verse 17; stiff-necked; rachamim and the womb | 6-25 | nehemiah/9.json `literary`, `words` (rachamim, oreph), `doctrines` (attributes); questions/old-testament/the-god-of-the-old-testament.json (Nehemiah 9:17 among the repetitions) | Repository |
+| Exodus 34:6; Genesis 15:7 | 6-25 | acts/plain/7.json (Nehemiah 9:7 and Genesis 15:7); BSB | Repository; BSB text |
+| The autumn of about 445 BC; subjection under Persia and the harvest to foreign kings; the kings of Assyria and 722 BC; God just, hope in compassion; amanah from the root of amen | 26-38 | nehemiah/9.json `historical`, `words` (amanah), `doctrines` (repentance) | Repository |
+| Acts 7:52; Leviticus 18:5; Ezekiel 20:11 | 26-38 | acts/plain/7.json (Nehemiah 9:26); nehemiah/9.json `hard`; BSB | Repository; BSB text |
+| Verse 29 and Leviticus 18:5; Paul's use (Romans 10:5; Galatians 3:12); the Reformation reading and the reading of obedience as response; the prayer fitting both | 26-38 `hard` | nehemiah/9.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 9: the deep note's lines to Christ (John 6:31-35, 1 Corinthians 10:4, Stephen's speech applied to Jesus; Acts 7:52 is quoted only for its words about the prophets); the order of the calf and verse 17 corrected before commit to follow the text.
