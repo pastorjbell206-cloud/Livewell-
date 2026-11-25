@@ -18825,3 +18825,16 @@ Cut in chapter 6: the deep note's reading of the whole chapter as a pattern poin
 | The care line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 20-40 `hard` | 1-kings/plain/14.json; 2-kings/plain/4.json and 6.json and the other files named there | Reused whole, word for word; Find Help named |
 
 Cut in chapter 7: the deep note's line from Joshua's name to Jesus' name beyond Hebrews' own line, and its reading of Ephraim's grief-to-hope as part of the wider story. 
+
+## The plain notes on 1 Chronicles 8 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Benjamin's sons (8:1-5); the clusters by place (8:6-32); Gath (8:13); 8:28 (its last words); 8:33; 8:34 (its first sentence); the line to Ulam and 8:40 (its phrase) | 1-40 | 1-chronicles/8.json `summary`, `outline`; BSB | Repository; BSB text |
+| Two reasons for a whole chapter (Ezra 1:5); the strategic land and Jerusalem on the border; Ono and Lod (Ezra 2:33; Nehemiah 11:35); Ehud (Judges 3:15); Benjaminite slingers and archers (Judges 20:16; 12:2); Saul's sons at Gilboa (1 Samuel 31:2); Esh-baal as Ish-bosheth (2 Samuel 2 to 4); Merib-baal as Mephibosheth (2 Samuel 4:4; 9); Saul's line going on; the repetition in 9:35-44 as a hinge | 1-40 | 1-chronicles/8.json `story`, `historical`, `cultural`, `literary` | Repository |
+| 2 Samuel 9:7 (David's words, from 'surely'); Philippians 3:5 (its phrase) | 1-40 | 1-chronicles/8.json `christ` (2 Samuel 9; Philippians 3:5); BSB | Repository; BSB text |
+| The hard note: baal as owner, lord, husband and the god's title; a title for the LORD in Saul's day, or Canaanite influence; the word tainted later; bosheth in Samuel; authors or copyists debated; Chronicles keeping the older forms | 1-40 `hard` | 1-chronicles/8.json `hard`, `cultural` (Hosea 2:16-17) | Repository; the views in their holders' terms |
+
+Cut in chapter 8: the deep note's reading of David's kindness to Mephibosheth as a pattern of the gospel, which it says the New Testament does not draw. No care line is needed in this chapter.
