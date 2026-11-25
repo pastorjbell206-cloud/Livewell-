@@ -784,7 +784,12 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   is the fact diff against the original, chapter by chapter, in
   `docs/work/elite/voice-books/blind-spots.md` and
   `a-higher-allegiance.md`. A book with no `edited` entry is still held to
-  its original by `--verify`. The
+  its original by `--verify`. Believe was brought in the same way the same
+  day (`content/books-src/believe/`): built once unchanged and verified
+  against its originals, then edited (`voice-books/believe.md`). Its old PDF
+  and EPUB did not carry the same things, so its `book.json` also holds the
+  dedication and names the four part pages taken from the PDF
+  (`fromOriginalPdf`) and the two appendices set as lists (`entries`). The
   files take the new names in the same folders (`Blind-Spots.pdf`,
   `A-Higher-Allegiance.pdf` and their EPUBs); each old file address 301s
   once to its new file. `docs/work/elite/bookshelf.md` section 8 has the
