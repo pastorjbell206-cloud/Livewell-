@@ -924,7 +924,7 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   from the Bible files by `scripts/build-memory-verses.mjs` (drift-checked),
   never typed; a verse returns after 1, 3, 7, 14 and 30 days. No second
   memorizing tool: the existing address was rebuilt.
-- **Four pages across the book pages (James, 2026-11-25: "more content and
+- **Seven pages across the book pages (James, 2026-11-25: "more content and
   videos and interactive pages than bible project")**: the Bible's timeline
   (/study/timeline), the Bible atlas (/study/atlas), Key words of the Bible
   (/study/words) and Hard passages (/study/hard-passages), all inside "Read
@@ -937,7 +937,14 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   `scripts/bible-timeline-same.json`, judgments only); a language is named
   only where a book's sentence names it; hard passages have no kinds because
   the data has none, and each keeps its link to its note and Find Help in
-  reach. `docs/work/elite/interactive.md` has the rules and the run.
+  reach, in the notes' own care lines, copied whole (`CARE_LINES`). Three
+  more (2026-11-25) read what all 66 book pages have: The 66 books at a
+  glance (/study/books-at-a-glance, each book's `structure` as the book
+  page's own band), Where to start in every book (/study/key-chapters,
+  `keyChapters`, never ranked: "one chapter" is the first a book lists) and
+  Themes of the Bible (/study/themes, joined only where books give the same
+  title; no taxonomy). Seven scripts in all, each a gate.
+  `docs/work/elite/interactive.md` has the rules and the run.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.
