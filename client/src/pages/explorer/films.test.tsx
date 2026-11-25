@@ -1701,7 +1701,10 @@ describe("the eight films of 2026-11-22: doctrines, stories and verses, each wit
 });
 
 describe("the films of 2026-11-25: the four that were announced, and the first books of the Bible", () => {
-  const NEW = ["all-nations"];
+  const NEW = [
+    "all-nations",
+    "light-and-darkness",
+  ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
   ) as {
@@ -1772,5 +1775,30 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
       /skin|dark-|darker|lighter|race/i
     );
+  });
+
+  it("Light and darkness follows one light, never ties darkness to a people, and makes no second power of it", () => {
+    const f = filmFile("light-and-darkness");
+    expect(f.frames.map(fr => fr.verse?.ref)).toEqual([
+      "Genesis 1:3",
+      "Exodus 10:23",
+      "Exodus 13:21",
+      "Exodus 27:20",
+      "Isaiah 9:2",
+      "John 8:12",
+      "Revelation 22:5",
+    ]);
+    const t = text(f);
+    expect(t).toContain("light and darkness are not two equal powers");
+    expect(t).toContain(
+      "“The Light shines in the darkness, and the darkness has not overcome it.”"
+    );
+    // Darkness is night, water or shadow over a land: never a people.
+    expect(t).not.toMatch(
+      /dark(er)? (people|skin|race|nations?|hearts? of the Egyptians)|people of darkness|sons of darkness/i
+    );
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/skin|race/i);
+    // No date for the exodus, as in the other films.
+    expect(t).not.toMatch(/\b1[2-5]\d\d\b|\bBC\b/);
   });
 });

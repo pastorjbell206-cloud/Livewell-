@@ -278,6 +278,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "God's promise to bless every family on earth, in seven moving pictures: Babel, Abraham under the stars, Rahab and Ruth, Jonah and Nineveh, the Magi, Pentecost, and a crowd no one can count.",
     },
+    "light-and-darkness": {
+      title: "Light and darkness: Bible Explorer",
+      description:
+        "One light followed through the whole Bible, in seven moving pictures: the first word of creation, light in Egypt's darkness, the pillar of fire, the lamp in the tent, Isaiah's great light, the light of the world, and the city with no night.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

@@ -52,6 +52,7 @@ export const FILM_SCENES: Record<
   "psalm-23": () => import("./psalm-23"),
   "romans-8-28": () => import("./romans-8-28"),
   "all-nations": () => import("./all-nations"),
+  "light-and-darkness": () => import("./light-and-darkness"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

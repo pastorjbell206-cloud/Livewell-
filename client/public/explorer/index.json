@@ -1510,7 +1510,18 @@
       "slug": "light-and-darkness",
       "title": "Light and darkness",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "The Bible begins in the dark and ends in a city with no night. Follow one light all the way through.",
+        "older": "From “Let there be light” to the city that needs no sun: the Bible's light followed through Egypt, the wilderness, the tent, Isaiah's promise and the words of Jesus."
+      },
+      "mark": "light-and-darkness",
+      "frames": 7,
+      "stops": [
+        "creation",
+        "new-creation"
+      ],
+      "cards": []
     },
     {
       "slug": "who-god-is",

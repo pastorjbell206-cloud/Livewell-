@@ -1627,6 +1627,116 @@
     }
    ]
   },
+  "light-and-darkness": {
+   "title": {
+    "file": "light-and-darkness/title.mp3",
+    "hash": "3d3de9f043a68d779ead",
+    "seconds": 2.13,
+    "bytes": 13316
+   },
+   "younger": [
+    {
+     "id": "first-light",
+     "file": "light-and-darkness/younger/01-first-light.mp3",
+     "hash": "78884915aed8a07b713a",
+     "seconds": 21.05,
+     "bytes": 126932
+    },
+    {
+     "id": "egypt",
+     "file": "light-and-darkness/younger/02-egypt.mp3",
+     "hash": "669db1068ba4b46d655b",
+     "seconds": 23.58,
+     "bytes": 142052
+    },
+    {
+     "id": "pillar",
+     "file": "light-and-darkness/younger/03-pillar.mp3",
+     "hash": "856ef65592645c7a7c32",
+     "seconds": 27.23,
+     "bytes": 163940
+    },
+    {
+     "id": "lamp",
+     "file": "light-and-darkness/younger/04-lamp.mp3",
+     "hash": "7934f2479abc895f8b4d",
+     "seconds": 25.02,
+     "bytes": 150692
+    },
+    {
+     "id": "great-light",
+     "file": "light-and-darkness/younger/05-great-light.mp3",
+     "hash": "2a2ecd34b2cacb82c3a8",
+     "seconds": 23.72,
+     "bytes": 142916
+    },
+    {
+     "id": "light-of-the-world",
+     "file": "light-and-darkness/younger/06-light-of-the-world.mp3",
+     "hash": "d01000145a6def0f6ff9",
+     "seconds": 27.96,
+     "bytes": 168260
+    },
+    {
+     "id": "no-night",
+     "file": "light-and-darkness/younger/07-no-night.mp3",
+     "hash": "5826f9fba311bc02e6e0",
+     "seconds": 26.93,
+     "bytes": 162212
+    }
+   ],
+   "older": [
+    {
+     "id": "first-light",
+     "file": "light-and-darkness/older/01-first-light.mp3",
+     "hash": "82f16e40b2d51b71a44b",
+     "seconds": 23.97,
+     "bytes": 144356
+    },
+    {
+     "id": "egypt",
+     "file": "light-and-darkness/older/02-egypt.mp3",
+     "hash": "3145f4a783cebcd0126a",
+     "seconds": 20.45,
+     "bytes": 123332
+    },
+    {
+     "id": "pillar",
+     "file": "light-and-darkness/older/03-pillar.mp3",
+     "hash": "6443423caa0cced51bd4",
+     "seconds": 27.73,
+     "bytes": 166964
+    },
+    {
+     "id": "lamp",
+     "file": "light-and-darkness/older/04-lamp.mp3",
+     "hash": "6843d7253bdac082d02e",
+     "seconds": 25.76,
+     "bytes": 155156
+    },
+    {
+     "id": "great-light",
+     "file": "light-and-darkness/older/05-great-light.mp3",
+     "hash": "984f41466487dd437c34",
+     "seconds": 25.66,
+     "bytes": 154580
+    },
+    {
+     "id": "light-of-the-world",
+     "file": "light-and-darkness/older/06-light-of-the-world.mp3",
+     "hash": "2ec960254196712bd253",
+     "seconds": 28.89,
+     "bytes": 173876
+    },
+    {
+     "id": "no-night",
+     "file": "light-and-darkness/older/07-no-night.mp3",
+     "hash": "8368dd275e845f2bafd0",
+     "seconds": 26.32,
+     "bytes": 158468
+    }
+   ]
+  },
   "who-god-is": {
    "title": {
     "file": "who-god-is/title.mp3",

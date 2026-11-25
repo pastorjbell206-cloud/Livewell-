@@ -735,6 +735,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M50,6l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
     </>
   ),
+  /* Light and darkness: a small clay lamp on dark ground, its flame gold, rays above it. */
+  "light-and-darkness": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path fill={h} d="M8,8H92V84H8Z" />
+      <path className="pl-paper" d="M50,10a30,30 0 1,0 0.1,0Z" />
+      <path className="pl-f" d="M50,14V22M32,22l5,6M68,22l-5,6M24,40h8M76,40h-8" />
+      <Shape d="M26,70C26,80 38,84 50,84C64,84 76,80 78,70L70,68C60,64 38,62 26,70Z" tone="c" off={1} />
+      <path className="pl-m" d="M50,62C58,52 60,44 54,32C44,42 42,52 50,62Z" />
+      <path className="pl-l" d="M50,62C58,52 60,44 54,32C44,42 42,52 50,62Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
