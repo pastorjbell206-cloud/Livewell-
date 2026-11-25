@@ -19877,3 +19877,22 @@ Every claim in `client/public/bible/notes/2-chronicles/intro.json`, field `teach
 Also in this commit: `teaching.test.tsx` lists 2 Chronicles among the books with a teaching guide and names its frame (`canaan`); the Bible explore indexes, built from the book pages, were rebuilt to take in this page (their `--check` gates).
 
 Cut from the book page: the introduction's line from Jesus' body as the temple (John 2:19-21) and the church as God's temple, which the New Testament does not draw to this book. Asa's timeline row gives rounded dates, because a four-digit year in the form the scans read as a phone number was refused. Child sacrifice (28:3; 33:6) is named, never described.
+
+## The plain notes on 2 Chronicles 1 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; the assembly (1:2); 1:3 (its clause); the ark in Jerusalem (1:4); 1:5 (its last sentence); the thousand offerings (1:6) | 1-6 | BSB | BSB text |
+| Where 1 Chronicles ended; about 970 to 930 BC; darash; the doorway to nine chapters; 1 Kings 1 to 3 (Adonijah, Joab, Shimei; Pharaoh's daughter; high places) compressed; high places and why Gibeon was right; Bezalel; Gibeon six miles north-west at el-Jib, the pool and jar handles; worship at two sites | 1-6 | 2-chronicles/1.json `story`, `historical`, `cultural`, `words` (darash) | Repository |
+| 1 Chronicles 21:29 (its phrase); 1 Kings 3:4 (its first sentence) | 1-6 | BSB | BSB text |
+| 1:7; 1:8-9 paraphrased; 1:10; what Solomon did not ask (1:11); 1:12; 1:13 | 7-13 | BSB | BSB text |
+| Kings seeking guidance by a dream; the verb ask; chokhmah and Proverbs; madda in late books; chesed | 7-13 | 2-chronicles/1.json `cultural`, `literary`, `words` (chokhmah, madda, chesed) | Repository |
+| 1 Kings 3:9 (its first sentence); Matthew 12:42 (its clause); James 1:5 | 7-13 | 2-chronicles/1.json `christ` (Matthew 12:42; James 1:5); BSB | Repository; the New Testament's own use; BSB text |
+| 1:14 (its first clause); 1:15; Egypt, Kue, the Hittite and Aramean kings (1:16-17) | 14-17 | BSB | BSB text |
+| 1 Kings 10 and the placement here; 9:25-28; chariots as costly technology; Kue as Cilicia; middlemen; overstatement | 14-17 | 2-chronicles/1.json `historical`, `cultural`, `literary` | Repository |
+| Deuteronomy 17:16 (its first clause); Deuteronomy 17:17 (its second sentence) | 14-17 | BSB | BSB text |
+| The hard note: the law for kings; the two readings (seeds of later trouble; the promise kept); the minority view of Egypt near Kue; faults left to Kings | 14-17 `hard` | 2-chronicles/1.json `hard`; 2-chronicles/9.json | Repository; the readings in their holders' terms |
+
+Cut in chapter 1: the deep note's lines to Isaiah 11:1-2 and 1 Corinthians 1:24, 30 as fulfillments, and Christ as the wise king whose wisdom never failed, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
