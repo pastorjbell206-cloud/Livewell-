@@ -20338,3 +20338,19 @@ Cut in chapter 27: the deep note's line to Isaiah 9:6-7 as fulfilled, which the 
 | Isaiah 7:4 (its first sentences); 2 Kings 16:9 (its first sentence) | 16-27 | BSB | BSB text |
 
 Cut in chapter 28: the deep note's line from Ahaz's refusal to the promise of Isaiah 7:14, which the New Testament draws from Isaiah, not from this chapter. Child sacrifice is named, never described.
+
+## The plain notes on 2 Chronicles 29 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Twenty-five and twenty-nine years (29:1); 29:2; 29:3; the charge (29:4-5) paraphrased; 29:6 (its first sentence); the shut doors and the wrath (29:7-9); 29:10; the Levites and the sixteen days (29:12-19) | 1-19 | BSB | BSB text |
+| Doors shut and opened; more space than any king after Solomon; the order of chapters 29 to 32; a second Solomon; about 715 to 686 BC or an accession around 727 or 726 BC; 722 BC; 2 Kings 18:3-6 and the reversed proportions; the first month; the Kidron (15:16; 30:14); priests within, Levites without; the speech's pattern; berit; every clan and guild | 1-19 | 2-chronicles/29.json `story`, `historical`, `cultural`, `literary`, `words` (berit) | Repository |
+| 2 Kings 18:5 | 1-19 | BSB | BSB text |
+| The sin offering and the laying on of hands (29:20-24); the Levites and the prophets' command (29:25); 29:27 (its second sentence); 29:28 paraphrased; 29:30 (its phrase); the willing (29:31); 29:34 (its last sentence); 29:36 | 20-36 | BSB | BSB text |
+| Leviticus' patterns; sin offering as purification; kipper; burnt offering; todah; nadiv; music by David's order through Gad and Nathan; joy and speed; the diligent Levites | 20-36 | 2-chronicles/29.json `cultural`, `literary`, `words` (kipper, todah, nadiv) | Repository |
+| Leviticus 17:11 (its first clause) | 20-36 | BSB | BSB text |
+| The hard note: sacrifice as the language of worship; what it taught (Leviticus 17:11); shared feasts; Isaiah 1:11-17; Jewish practice after AD 70; Christians and Hebrews; not about God needing meat | 20-36 `hard` | 2-chronicles/29.json `hard` | Repository; each view in its holders' terms |
+
+Cut in chapter 29: the deep note's picture of the goats as a substitute pointing to Christ, beyond the Christian view the hard note names. No care line is needed in this chapter.
