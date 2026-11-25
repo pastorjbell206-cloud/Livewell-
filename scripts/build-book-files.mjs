@@ -69,8 +69,13 @@
  *   - in a section book.json lists under `entries` (a reading list, a
  *     glossary), each paragraph under a heading set as an entry with a hanging
  *     indent, like a source in "Sources & Notes";
- *   - a label the source writes all in capitals ("APPENDIX A") set in capitals
- *     and small letters in the contents and the bookmarks;
+ *   - a label or title the source writes all in capitals ("APPENDIX A", "A
+ *     NOTE ON FURTHER READING") set in capitals and small letters in the
+ *     contents and the bookmarks; a label that only repeats the title under
+ *     it set once, not twice;
+ *   - a running head too long for the line, with no shorter main title before
+ *     a colon or dash, replaced by the chapter's own label ("Chapter Fifteen"),
+ *     or, where there is no label, cut at a word and closed with an ellipsis;
  *   - LORD, where the source has it in capitals, set in small capitals;
  *   - the first three words of a chapter and its labels set in capitals by
  *     the stylesheet (the words in the file are unchanged);
@@ -176,6 +181,7 @@ function parseSection(file) {
     else if ((m = /^<h2>(.*)<\/h2>$/.exec(line))) blocks.push({ t: "h2", text: text(m[1]) });
     else if (line === '<hr class="rule"/>') blocks.push({ t: "rule" });
     else if ((m = /^<blockquote><p>(.*)<\/p><cite>(.*)<\/cite><\/blockquote>$/.exec(line))) blocks.push({ t: "bq", text: text(m[1]), cite: text(m[2]) });
+    else if ((m = /^<blockquote><p>(.*)<\/p><\/blockquote>$/.exec(line))) blocks.push({ t: "bq", text: text(m[1]) });
     else if ((m = /^<p(?: class="first")?>(.*)<\/p>$/.exec(line))) blocks.push({ t: "p", text: text(m[1]) });
     else fail(`${file}: a line this script does not know how to set: ${line.slice(0, 120)}`);
   }
@@ -183,10 +189,12 @@ function parseSection(file) {
 }
 
 /** The plain words of the source blocks, in order: what --verify starts from. */
-function sourceWords(blocks) {
+function sourceWords(blocks, { asSet = false } = {}) {
   const out = [];
-  for (const b of blocks) {
+  for (const [i, b] of blocks.entries()) {
     if (b.t === "rule") continue;
+    // A label that only repeats the title under it is set once (see typeset).
+    if (asSet && b.t === "eyebrow" && blocks[i + 1]?.t === "h1" && blocks[i + 1].text.trim().toLowerCase() === b.text.trim().toLowerCase()) continue;
     if (b.t === "part") out.push(b.label, b.name, b.tag);
     else out.push(b.text, ...(b.cite ? [b.cite] : []));
   }
@@ -255,6 +263,11 @@ function typeset(blocks, stats) {
     if (b.t === "h1") {
       if (!head) out.push((head = { t: "head", eyebrow: "", title: "", subtitle: "" }));
       head.title = clean(b.text);
+      // A label that only repeats the title ("A NOTE ON FURTHER READING" over "A NOTE ON FURTHER READING") is not set twice.
+      if (head.eyebrow && head.eyebrow.toLowerCase() === head.title.toLowerCase()) {
+        head.eyebrow = "";
+        stats.repeatedLabels++;
+      }
       continue;
     }
     if (b.t === "subtitle") {
@@ -363,7 +376,7 @@ function loadBook(id) {
   const formerly = named?.was?.length ? named.was[named.was.length - 1].title : "";
   const stats = {
     quotes: 0, apostrophes: 0, markdownLabels: 0, markdownNumbers: 0, markdownEscapes: 0, strayAsterisk: 0, listSeparators: 0, doubleSpaces: 0,
-    hyphensToBullets: 0, sourceHyphensDropped: 0, emptyCites: 0, referenceLines: 0, entries: 0, characterReferences: 0, leadIns: 0, lordSmallCaps: 0, softHyphensAtBreaks: 0,
+    hyphensToBullets: 0, sourceHyphensDropped: 0, emptyCites: 0, referenceLines: 0, entries: 0, characterReferences: 0, repeatedLabels: 0, leadIns: 0, lordSmallCaps: 0, softHyphensAtBreaks: 0,
   };
   const sections = meta.sections.map((file, i) => {
     const source = parseSection(path.join(dir, file));
@@ -383,7 +396,7 @@ function loadBook(id) {
     const head = set.find((b) => b.t === "head");
     if (!part && !head) fail(`${id}/${file}: neither a part page nor a chapter`);
     const eyebrow = part ? part.label : head.eyebrow;
-    const kind = part ? "part" : /^introduction/i.test(eyebrow) ? "introduction" : /^conclusion/i.test(eyebrow) ? "conclusion" : /^appendix/i.test(eyebrow) ? "appendix" : "chapter";
+    const kind = part ? "part" : /^introduction/i.test(eyebrow) ? "introduction" : /^conclusion/i.test(eyebrow) ? "conclusion" : /^appendix/i.test(eyebrow) ? "appendix" : /^chapter\b/i.test(eyebrow) ? "chapter" : "note";
     return { file, n: i + 1, kind, eyebrow, title: part ? part.name : head.title, source, set };
   });
   const dedication = (meta.dedication ?? []).map((l) => curl(l, stats));
@@ -392,12 +405,21 @@ function loadBook(id) {
 
 /** A chapter's number as the contents page prints it. */
 const NUMBER_WORDS = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"];
+const TENS_WORDS = ["twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
 function chapterNumber(eyebrow) {
   const m = /^chapter\s+(\S+)$/i.exec(eyebrow);
   if (!m) return "";
   if (/^\d+$/.test(m[1])) return m[1];
-  const i = NUMBER_WORDS.indexOf(m[1].toLowerCase());
-  return i >= 0 ? String(i + 1) : m[1];
+  const word = m[1].toLowerCase();
+  const i = NUMBER_WORDS.indexOf(word);
+  if (i >= 0) return String(i + 1);
+  // "Twenty-One" to "Ninety-Nine"
+  const [tens, unit] = word.split("-");
+  const t = TENS_WORDS.indexOf(tens);
+  const u = unit ? NUMBER_WORDS.indexOf(unit) : -1;
+  if (t >= 0 && !unit) return String((t + 2) * 10);
+  if (t >= 0 && u >= 0 && u < 9) return String((t + 2) * 10 + u + 1);
+  return m[1];
 }
 
 /** The running heads: letterspaced capitals of the reading face, measured so a head never outruns the text block. */
@@ -411,10 +433,19 @@ function headWidth(text) {
 }
 
 /** The running head: the chapter's title, or its main title (before a colon or a dash) when the whole will not fit. */
-function runningHead(title) {
+function runningHead(title, label = "") {
   if (headWidth(title) <= HEAD.max) return title;
   const m = /^(.{4,}?)(?::\s|—)/.exec(title);
   if (m && headWidth(m[1]) <= HEAD.max) return m[1];
+  // A long title with no shorter main title: the chapter's own label ("Chapter Fifteen").
+  if (label && headWidth(label) <= HEAD.max) return label;
+  // No label either: as many whole words as fit, not ending on a small word, closed with an ellipsis.
+  const words = title.split(/\s+/);
+  for (let n = words.length - 1; n >= 2; n--) {
+    if (SMALL_WORDS.has(words[n - 1].toLowerCase())) continue;
+    const cut = `${words.slice(0, n).join(" ")}…`;
+    if (headWidth(cut) <= HEAD.max) return cut;
+  }
   return fail(`the running head "${title}" does not fit the text block, and has no shorter main title`);
 }
 
@@ -487,7 +518,7 @@ nav h1{margin-bottom:1em;text-align:center}
 const xhtml = (title, body, { bodyAttr = "" } = {}) =>
   `<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html>\n<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" lang="en" xml:lang="en"><head><meta charset="utf-8"/><title>${esc(title)}</title><link rel="stylesheet" type="text/css" href="style.css"/></head><body${bodyAttr}>\n${body}\n</body></html>\n`;
 
-const EPUB_TYPE = { introduction: "introduction", chapter: "chapter", conclusion: "conclusion", appendix: "appendix", part: "part" };
+const EPUB_TYPE = { introduction: "introduction", chapter: "chapter", conclusion: "conclusion", appendix: "appendix", part: "part", note: "chapter" };
 
 /** The set blocks of one section as EPUB markup. Lists are real lists here. */
 function epubBlocks(section, stats) {
@@ -545,9 +576,13 @@ function contentsTree(book) {
 }
 
 /** A label the source writes all in capitals ("APPENDIX A"), in capitals and small letters for the contents and bookmarks. */
-const labelCase = (e) => (/[a-z]/.test(e) ? e : e.replace(/[A-Z]{2,}/g, (w) => w[0] + w.slice(1).toLowerCase()));
+const SMALL_WORDS = new Set(["a", "an", "and", "at", "by", "for", "in", "of", "on", "the", "to"]);
+const labelCase = (e) =>
+  /[a-z]/.test(e)
+    ? e
+    : e.replace(/[A-Z]+/g, (w, at) => (at > 0 && SMALL_WORDS.has(w.toLowerCase()) ? w.toLowerCase() : w[0] + w.slice(1).toLowerCase()));
 
-const tocLabel = (s) => (s.kind === "part" ? `${labelCase(s.eyebrow)}: ${s.title}` : s.kind === "chapter" ? `${chapterNumber(s.eyebrow)}. ${s.title}` : `${labelCase(s.eyebrow)}: ${s.title}`);
+const tocLabel = (s) => (s.kind === "part" ? `${labelCase(s.eyebrow)}: ${s.title}` : s.kind === "chapter" ? `${chapterNumber(s.eyebrow)}. ${s.title}` : s.eyebrow ? `${labelCase(s.eyebrow)}: ${s.title}` : labelCase(s.title));
 
 async function buildEpub(book, outFile) {
   const files = [];
@@ -734,7 +769,7 @@ function printCss(book, { final }) {
       pages.push(
         `@page c${s.n}{counter-increment:bd}`,
         `@page c${s.n}:left{@top-left{content:${cssString(book.title.toUpperCase())};${head}}@bottom-left{content:counter(bd);${folio}}}`,
-        `@page c${s.n}:right{@top-right{content:${cssString(runningHead(s.title).toUpperCase())};${head}}@bottom-right{content:counter(bd);${folio}}}`
+        `@page c${s.n}:right{@top-right{content:${cssString(runningHead(s.title, s.eyebrow).toUpperCase())};${head}}@bottom-right{content:counter(bd);${folio}}}`
       );
     }
     pages.push(`@page open{counter-increment:bd;@bottom-right{content:counter(bd);${folio}}}`);
@@ -806,6 +841,7 @@ h2{margin:22.5pt 0 7.5pt;font:600 13.6pt/${PAGE.lead}pt "Cormorant Garamond";tex
 p.pull{margin:22.5pt 30pt;font:italic 400 15pt/22.5pt "Cormorant Garamond";text-indent:0;text-align:center;hyphens:none;text-wrap:balance;break-inside:avoid}
 .ch-head + p.pull{margin-top:0}
 p.pull + h2{margin-top:0}
+.rest > :first-child{margin-top:0}
 blockquote{margin:${PAGE.lead}pt 0 ${PAGE.lead}pt 18pt;padding-right:18pt}
 blockquote.short{break-inside:avoid}
 blockquote.cut-a{margin-bottom:0}
@@ -884,8 +920,8 @@ function printHtml(book, plan) {
     const pn = final ? plan.folio[s.n] : "000";
     if (s.kind === "part") return `<div class="pt">${esc(s.eyebrow)} · ${esc(s.title)}</div>`;
     const no = s.kind === "chapter" ? chapterNumber(s.eyebrow) : "";
-    const lab = s.kind === "chapter" ? "" : `<span class="lab">${esc(labelCase(s.eyebrow))}</span> `;
-    return `<div class="row"><span class="no">${no}</span><span class="tt">${lab}${esc(s.title)}</span><span class="pn">${pn}</span></div>`;
+    const lab = s.kind === "chapter" || !s.eyebrow ? "" : `<span class="lab">${esc(labelCase(s.eyebrow))}</span> `;
+    return `<div class="row"><span class="no">${no}</span><span class="tt">${lab}${esc(labelCase(s.title))}</span><span class="pn">${pn}</span></div>`;
   });
   out.push(`<div class="toc"><h1>Contents</h1><div class="rule"></div>${rows.join("")}</div>`);
   if (final && plan.frontBlank) out.push(`<div class="fm-blank"></div>`);
@@ -920,7 +956,9 @@ function printHtml(book, plan) {
       } else target.push(printBlock(b, prev, { greedy }));
       prev = b.t;
     });
-    if (cut) html.push(`<div style="page:open">${open.join("\n")}</div>`, `<div style="page:c${s.n}">${rest.join("\n")}</div>`);
+    // The rest begins at the top of a page after a forced break, where Chromium keeps a block's top margin;
+    // on the measuring pass that page began after an unforced break, where the margin is dropped.
+    if (cut) html.push(`<div style="page:open">${open.join("\n")}</div>`, `<div class="rest" style="page:c${s.n}">${rest.join("\n")}</div>`);
     else html.push(`<div style="page:c${s.n}">${rest.join("\n")}</div>`);
     out.push(`<section id="s${s.n}">${html.join("\n")}</section>`);
   }
@@ -1171,7 +1209,10 @@ async function buildPdf(book, outFile, keep) {
     book.stats.softHyphensAtBreaks = SOFT_KEEP.size;
     SOFT_KEEP = null;
     const finalTexts = pageTexts(raw);
-    if (finalTexts.length !== total) fail(`${book.id}: the second pass has ${finalTexts.length} pages, the plan ${total}`);
+    if (finalTexts.length !== total) {
+      const moved = book.sections.find((s) => sectionStarts(book, finalTexts, 6)[s.n] !== plan.start[s.n]);
+      fail(`${book.id}: the second pass has ${finalTexts.length} pages, the plan ${total}${moved ? ` (first moved: "${moved.title}")` : ""}`);
+    }
     const finalStarts = sectionStarts(book, finalTexts, 6);
     for (const s of book.sections) {
       if (finalStarts[s.n] !== plan.start[s.n]) fail(`${book.id}: "${s.title}" starts on page ${finalStarts[s.n] + 1}, the plan said ${plan.start[s.n] + 1}`);
@@ -1359,7 +1400,8 @@ function verify(book, epubFile, pdfInfo) {
       .split(" ");
   // Marks at the head of a list item are compared apart from the words.
   const isMark = (w) => w === "-" || w === "•";
-  const a = rules(srcWords).map(straight).filter((w) => !isMark(w));
+  const srcSetWords = book.sections.flatMap((s) => sourceWords(s.source, { asSet: true }));
+  const a = rules(srcSetWords).map(straight).filter((w) => !isMark(w));
   const b = expected.map(straight).filter((w) => !isMark(w));
   report.wordsCompared = a.length;
   for (let i = 0; i < Math.max(a.length, b.length); i++) {
@@ -1368,7 +1410,7 @@ function verify(book, epubFile, pdfInfo) {
       break;
     }
   }
-  const marksOld = rules(srcWords).filter(isMark).length;
+  const marksOld = rules(srcSetWords).filter(isMark).length;
   const marksNew = expected.filter(isMark).length;
   if (marksOld - book.stats.sourceHyphensDropped !== marksNew) report.differences.push(`list marks: ${marksOld} in the source, ${book.stats.sourceHyphensDropped} dropped, ${marksNew} set`);
   report.listMarks = { source: marksOld, droppedBeforeSources: book.stats.sourceHyphensDropped, set: marksNew };

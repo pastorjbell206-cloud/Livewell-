@@ -20478,3 +20478,152 @@ Cut in chapter 35: the deep note's lines to Luke 22:14-20, 1 Corinthians 5:7 and
 | The hard note on the seventy years: 605 to 539 or 538 BC; 587 or 586 to about 516 BC; a round number (Psalm 90:10; Isaiah 23:15) | 22-23 `hard` | 2-chronicles/36.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 36: the deep note's line to John 2:19-21, which does not cite this chapter. The killing in 36:17 is told in a line and not described.
+
+## Lamentations' book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/lamentations/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions and guides, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Five poems; 587 or 586 BC; temple burned, king captured and blinded, exile; no hurry to comfort; 1:1; widow without comforter; 2:5's simile; the man of chapter 3 and 3:22; chapter 4 and the siege; chapter 5 the community; 5:22; permission to grieve before God; confession and complaint; hope chosen in the dark | in-a-minute | lamentations/intro.json `overview`, `structure`, `themes`, `tagline`; BSB | Repository; BSB text |
+| Deuteronomy 28's curses fallen; Kings and Jeremiah tell what happened (2 Kings 25; Jeremiah 52), Lamentations what it felt like; English order from the Greek; among the Writings as one of the five Megillot; read on the ninth of Av; Cyrus and 539 BC; Ezra, Nehemiah, Haggai, Zechariah; new covenant, new heart; between judgment and promise | story | lamentations/intro.json `story`, `author`, `purpose`, `setting`; esther/intro.json (the five Megillot read at set times) | Repository |
+| Anonymous; the Septuagint's preface naming Jeremiah; Jeremiah's tears; 2 Chronicles 35:25 and Josiah; the modern doubts (anonymous, among the Writings, 4:17 and 4:20, more than one poet); the reply; eyewitness agreement; chapters 2 and 4 soon after; between the fall and 539 or 538 BC; chapter 5 perhaps later | who | lamentations/intro.json `author`, `date`; BSB | Repository; each view in its holders' terms |
+| Nebuchadnezzar and 605 BC; Jehoiakim; 597 BC and Jehoiachin; Zedekiah and Egypt; about a year and a half; the Egyptian approach and withdrawal (Jeremiah 37:5-11); the breach, the capture, the burning a month later | world | lamentations/intro.json `setting`; lamentations/4.json `historical`; bible/guides/empires.json (Babylon) | Repository |
+| 587 or 586 BC; the two ways of counting; Thiele's 586 in the site's guide; many historians prefer 587 | world | lamentations/intro.json `date`; bible/guides/kings-of-israel-and-judah.json; 2-kings/intro.json `teaching` | Repository. Sources differ, and the page says so |
+| The aftermath (temple, king, survivors, officials); Edom (Psalm 137:7; Obadiah 11-14); Zechariah 7:5 and the fasts; the poems used in mourning | world | lamentations/intro.json `setting`; lamentations/4.json `historical`; BSB | Repository; BSB text |
+| Acrostics; chapter 3 tripled; chapter 5's twenty-two verses; qinah meter; ekah opening chapters 1, 2 and 4; the funeral song; the voices; confession and protest unresolved; hope at the center, 3:21-24 | built | lamentations/intro.json `reading`; lamentations/1.json `cultural`, `literary`; lamentations/3.json `literary`; lamentations/5.json `literary` | Repository |
+| The widow's loss of protection; 1:1; 1:2; lovers as allies, Egypt and the neighbors; the refrain five times (1:2, 9, 16, 17, 21); friends sitting with the bereaved; the roads, the sanctuary, the treasures; 1:8; 1:18; 1:12; the prayer about enemies | widow | lamentations/1.json `historical`, `cultural`, `literary`, `hard`; BSB | Repository; BSB text |
+| The pictures of the city's shame are a prophetic picture of a city; no leave to shame or to harm a woman | widow | revelation/plain/17.json (the same sentence's substance); the brief | Repository; stated as the brief asks |
+| He as the subject; 2:5; 2:17 and days of old; the poet's tears over the children (2:11); 2:14 and the false prophets; 2:19; Zion's prayer; the famine curse of Deuteronomy 28:53 named and not described; no excuse | enemy | lamentations/2.json `story`, `historical`, `cultural`, `literary`, `hard`; BSB | Repository; BSB text; the act named, not described |
+| 3:1; Jeremiah 38:6 or a representative figure; 3:8 and the images; 3:21-23; hope as a decision; chesed, rachamim, emunah; nothing outside changed between 3:18 and 3:21; waiting; 3:33; the call to return; the pit and the prayer about enemies | mercies | lamentations/3.json `story`, `literary`, `words`, `doctrines`, `hard`; BSB | Repository; BSB text |
+| 4:1; sons as clay pots; children begging; nobles unrecognized; 4:10 named not quoted; Sodom (4:6) and the slow starving; 4:13; watching for a nation; 4:20 and mashiach; Edom's cup; 4:22 as the first word of an end | gold | lamentations/4.json `summary`, `story`, `cultural`, `literary`, `words`, `doctrines`, `hard`; BSB | Repository; BSB text |
+| 5:1 and zakar; the list of the aftermath (5:2-18); 5:16; 5:7 and Jeremiah 31:29-30 and Ezekiel 18; 5:19; 5:21 and shuv twice; restoration as God's gift; the three readings of 5:22; the synagogue repeating 5:21 | remember | lamentations/5.json `summary`, `historical`, `cultural`, `literary`, `words`, `doctrines`, `hard`; BSB | Repository; BSB text; the readings in their holders' terms |
+| Tisha b'Av; Zechariah 7:5 and 8:19; no New Testament naming of the book and no line drawn that it does not draw; Holy Week as the church's reading, the speaker the city; Chisholm's hymn (1923); the line in its place | readers | lamentations/intro.json `purpose`, `christ`; lamentations/1.json `christ`; lamentations/3.json `words` (emunah, Chisholm 1923); BSB (no New Testament verse names Lamentations) | Repository; BSB text; only lines the New Testament draws |
+| Judah's own Scripture; not a key for anyone's suffering; no warrant to call any people's suffering deserved; never a reason to blame the Jewish people | readers | 2-kings/plain/25.json (8-21 `hard`); 2-kings/intro.json `teaching`; the brief | Repository; agrees with the 2 Kings 25 notes |
+| How to read; the two misreadings; the horrors not called good; grief shared; Isaiah 40:1; Ezra and Nehemiah | how-to-read | lamentations/intro.json `reading`; BSB | Repository; BSB text |
+| Care lines: the grief line ("Grief is not a lack of faith...") and the self-harm line ("If you have thoughts of hurting yourself...") | how-to-read | Reused byte for byte; found whole in 18 and 34 places, among them 1-samuel/plain/1.json and 1-chronicles/plain/10.json | care.mjs |
+| Hard passages (15) and key words (15): drawn from the parts above and the chapter notes; ekah, nacham, almanah, pesha (1.json); aph, chamal (2.json); chesed, rachamim, emunah, cheleq (3.json); mashiach, kos (4.json); zakar, shuv (5.json) | lists | the notes named above; BSB | Repository; BSB text |
+| Timeline (10): 605 and Carchemish, Nebuchadnezzar to 562 (empires guide); 597 (intro `setting`; empires guide); 588 or 587 the siege (4.json `historical`; 2-kings/plain/25.json); the Egyptian approach (4.json; Jeremiah 37:5-11); 587 or 586, with the guide's 586 and many historians' 587; chapters 2 and 4 soon after (intro `date`); the exile fasts (Zechariah 7:5); 539 or 538 (intro `date`); the Septuagint preface (intro `author`); 1923 (3.json `words`) | lists | as named; BSB | Repository. The siege's first year and the fall's year are each given as two years, as the sources give them |
+| The map: Jerusalem, and Sodom roughly as a region, each at the point the Genesis and other book maps use; the Sodom line agrees with the Genesis map's | map | genesis/intro.json and 2-kings/intro.json `teaching.map`; BSB at each reference | Repository; Edom, Uz, Egypt, Assyria and Babylon left off and the note says so; no borders; no claim about any border today |
+| Go deeper: eleven pages | deeper | bible/guides/reading-poetry.json, reading-prophets.json, kings-of-israel-and-judah.json, empires.json; bible/doctrines.json (Prayer and Lament; Suffering and Evil; Exile and Restoration); studyguides/lament.json; the Honest Answer on suffering (linked from the Job book page); needs/grief.json and needs/suffering.json (page: true) | Repository; every page live; the Find Help pages named by their own titles |
+
+Cut from the book page: the introduction's lines to Christ that the New Testament does not draw (Jesus standing where the sufferer of chapter 3 stands; the mercies grounded in the resurrection; the cross and the uncomforted city), kept only as the church's reading where the introduction itself marks it so. The phone number in the introduction's older `reading` field was not repeated; the care lines name Find Help and give no number. The acts in 2:20 and 4:10 are named and not described or quoted.
+
+## The plain notes on Lamentations 1 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1 (three clauses); 1:2 (its clause); friends turned enemies; 1:3; 1:4 (its clause); gates, priests, young women; 1:5 (its clause); captives; 1:6; 1:7 | 1-7 | BSB | BSB text |
+| A year and a half; 587 or 586 BC; the burning and the exile; the poorer remnant; the silence after; ekah as the funeral cry and the book's name; mourning women; the widow's lost protection and the law's care; lovers as Egypt and the neighbors (Jeremiah 27:3); the acrostic | 1-7 | lamentations/1.json `historical`, `cultural`, `literary`, `words` (ekah, almanah) | Repository |
+| Isaiah 40:1 and nacham; Isaiah 51:19; Psalm 79:1 | 1-7 `later` | lamentations/1.json `words` (nacham and Isaiah 40); BSB | BSB text |
+| 1:8 (its clause); honor to scorn; 1:9 (its last line, in double quotes for its exclamation); 1:10 (its first clause, before the dash) and the nations in the sanctuary; 1:11 (two clauses) | 8-11 | BSB | BSB text |
+| The prophets' warnings; public shame and the purity laws; the holy city untouchable; foreigners barred and now in the sanctuary; the famine trade; the two voices | 8-11 | lamentations/1.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Jeremiah 13:22 (its clause); Isaiah 62:4 (its clause) | 8-11 `later` | BSB | BSB text |
+| The hard note: the city pictured as a woman; the shame is the city's fall; the poem grieves and does not mock; a prophetic picture of a city, no warrant for any man to shame or harm a woman | 8-11 `hard` | lamentations/1.json `cultural`; lamentations/intro.json `reading` (Daughter Zion); revelation/plain/17.json (the same care in substance); the brief | Repository; stated as the brief asks |
+| Care line ("If someone is hurting you, at home, at work or in a church...") | 8-11 `hard` | Reused byte for byte; found whole in 2-kings/plain/9.json and other places | care.mjs |
+| 1:12 (in double quotes for its exclamation, and its clause); 1:13; 1:14; 1:15; 1:16 (its first sentence); 1:17 (its first sentence and the rest) | 12-17 | BSB | BSB text |
+| Zion speaking from verse 12 with the narrator's one interruption at 17; friends sitting with the bereaved; the yoke; pesha as deliberate breach; the refrain five times building to the plea | 12-17 | lamentations/1.json `literary`, `cultural`, `words` (pesha) | Repository |
+| Isaiah 49:15 (its question); Jeremiah 14:17 (its clause) | 12-17 `later` | BSB | BSB text |
+| 1:18 (its first sentence); peoples to look; captivity; 1:19; 1:20 (in double quotes for its exclamation) and the sword and death; 1:21; 1:22 | 18-22 | BSB | BSB text |
+| Confession and grief held together; the false prophets' promises; the enemies' gladness and Edom; equal justice handed to God; no comfort at the chapter's end | 18-22 | lamentations/1.json `hard`, `doctrines`; lamentations/2.json `historical` (Hananiah and peace); lamentations/4.json `hard` (Edom) | Repository |
+| Psalm 79:5; Obadiah 1:12 (its clause); Romans 12:19 (its clause) | 18-22 `later` | BSB | BSB text |
+| The hard note: vindictive or just; the nations not innocent tools; the prayer of extreme pain recorded honestly; Matthew 5:44; Romans 12:19 | 18-22 `hard` | lamentations/1.json `hard`; BSB | Repository; both readings in their holders' terms |
+| Care line, the grief line ("Grief is not a lack of faith...") | 18-22 `hard` | Reused byte for byte; found whole in 18 places, among them 1-samuel/plain/1.json | care.mjs |
+
+Cut in chapter 1: the deep note's lines to Christ that the New Testament does not draw (verse 12 on the lips of Christ, the mocking passers-by of Mark 15:29, the Comforter of John 14:16). The claim that Jerusalem sat on the roads between Egypt and Mesopotamia was cut before commit, as unsourced for the city itself. The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Lamentations 2 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (in double quotes for its exclamation, and its last clause); 2:2 (its first sentence); 2:3; 2:4 (its first clause); 2:5 (its first sentence); 2:6; 2:7 (two clauses); 2:8; 2:9 (its last clause); 2:10 (its first sentence and the rest) | 1-10 | BSB | BSB text |
+| Who did this; the Lord as subject; covenant and prophets; the footstool and its use for the ark and temple; the soldiers' shout; the feasts and Sabbaths stopped; Zedekiah blinded and taken; the mourning rites; sackcloth of goat hair; elders in the gate | 1-10 | lamentations/2.json `story`, `historical`, `cultural`; lamentations/5.json `cultural` (elders in the gate) | Repository |
+| Psalm 74:1; Amos 8:11 (its clause, after the dash) | 1-10 `later` | lamentations/2.json `words` (chazon and Amos 8:11-12); BSB | BSB text |
+| The hard note: a simile from inside the disaster; covenant judgment, not caprice (2:17); 3:33 and 3:22; sovereignty or consequences, both readings; Judah's own Scripture, not a key for anyone's suffering, no warrant to call any people's suffering deserved, never a reason to blame the Jewish people | 1-10 `hard` | lamentations/2.json `hard`; 2-kings/plain/25.json (8-21 `hard`); the brief | Repository; the readings in their holders' terms; agrees with the 2 Kings 25 notes |
+| 2:11 (two clauses); the children's cry paraphrased around its inner quotation; 2:12 (its last clause); 2:13 (its last two sentences); 2:14 (its first sentence); 2:15 (its first sentence; the mockers' words paraphrased); 2:16 paraphrased; 2:17 (its first sentence) | 11-17 | BSB | BSB text |
+| Siege as the most feared war, the weak first; Hananiah and two years (Jeremiah 28:1-4); peace, peace (Jeremiah 6:14); the gestures of scorn; days of old and Deuteronomy 28 | 11-17 | lamentations/2.json `historical`, `cultural`, `doctrines` | Repository |
+| Jeremiah 6:14 (its clause, before the inner quotation); Jeremiah 9:1 (its last sentence); Psalm 48:2 (its clause) | 11-17 `later` | BSB | BSB text |
+| The hard note: judgment falls on the innocent; tears, not justification; no warrant to read a child's suffering or death as punishment | 11-17 `hard` | lamentations/2.json `doctrines` (suffering), `hard` | Repository |
+| Care line, the child-loss line ("If you carry grief or guilt about a pregnancy...") | 11-17 `hard` | Reused byte for byte; found whole in 2-kings/plain/4.json and 2-samuel/plain/12.json | care.mjs |
+| 2:18 (two clauses); 2:19 (its second sentence and last sentence, and its first); 2:20 (its first sentence; the rest named, not quoted or described); 2:21 (its first sentence); 2:22 (its last sentence) | 18-22 | BSB | BSB text |
+| The watches of the night; lifted hands; priests and prophets killed (2 Chronicles 36:17); the day of his anger framing the poem; honest protest as prayer; Deuteronomy 28:53 and 2 Kings 6:28-29 | 18-22 | lamentations/2.json `historical`, `cultural`, `literary`, `doctrines`; mark/plain notes (the watches of the night); job notes (lifted hands as prayer) | Repository |
+| Psalm 62:8 (its clause); Isaiah 51:17 (its clause) | 18-22 `later` | BSB | BSB text |
+| The hard note: lament is not unbelief; the psalms and Job; spoken to God; horror, not lesson; permission to protest | 18-22 `hard` | lamentations/2.json `hard`; lamentations/3.json `hard` | Repository |
+| Care lines, the grief line and the self-harm line | 18-22 `hard` | Reused byte for byte; found whole in 18 and 34 places | care.mjs |
+
+Cut in chapter 2: the deep note's lines to Christ that the New Testament does not draw (Jesus bearing the wrath the chapter describes; the head-shaking of Mark 15:29; Luke 19:41-44 and AD 70 set beside the chapter). The acts in 2:20 are named, not quoted or described. The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Lamentations 3 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; God unnamed as He; 3:2; 3:3-5; 3:6; 3:7; 3:8; 3:10; the archer (3:12-13); 3:14; 3:16-17; 3:18 (the man's words, inside the BSB's quotation marks); 3:19; 3:20 | 1-20 | BSB | BSB text |
+| The ruin felt in one body; Jeremiah or an everyman; the rod; wormwood and gall; the pit and waters in the lament psalms; the triple acrostic of sixty-six verses; Psalm 119 | 1-20 | lamentations/3.json `story`, `historical`, `cultural`, `literary` | Repository; both readings of the speaker in their holders' terms |
+| Jeremiah 20:7 (its last sentence); Jeremiah 38:6 (its clause); Psalm 88:6 | 1-20 `later` | lamentations/3.json `story`, `historical`; BSB | BSB text |
+| The hard note: how affliction feels; Psalms 13, 22 and 88 and Job; honesty not unbelief; the deliberate turn | 1-20 `hard` | lamentations/3.json `hard` | Repository |
+| Care line, the self-harm line | 1-20 `hard` | Reused byte for byte; found whole in 34 places, among them job/plain/3.json | care.mjs |
+| 3:21-23 (in double quotes for its exclamation); direct address as praise; 3:24 (its words, inside the BSB's quotation marks); 3:25; 3:26; 3:27; 3:28-29 paraphrased (3:29 holds a dash); 3:30 (its clause); 3:31; 3:32; 3:33; 3:34-36 (3:36's last clause, after the dash); 3:37 paraphrased; 3:38; 3:39 paraphrased | 21-39 | BSB | BSB text |
+| Nothing changed between 3:18 and 3:21; hope as a decision; chesed, rachamim, emunah; the textual question in 3:22; cheleq and the Levites' portion (Numbers 18:20); the center of the book | 21-39 | lamentations/3.json `literary`, `words`, `cultural`, `doctrines`; lamentations/intro.json `themes` | Repository |
+| Psalm 73:26 (its clause); Psalm 130:5; Isaiah 54:10 (its clause) | 21-39 `later` | BSB | BSB text |
+| The hard note: 3:37-38 and 3:33, 36 held together; sovereignty or permission, both readings; hope chosen; 3:39 as the city's own confession, not a word to say to another sufferer, not a claim that any person's pain is punishment | 21-39 `hard` | lamentations/3.json `hard`, `doctrines` | Repository; both readings in their holders' terms |
+| 3:40; 3:41 paraphrased; 3:42 (the people's words, inside the BSB's quotation marks); 3:43; 3:44; 3:45; 3:46-47 paraphrased (3:47 holds a dash); 3:48; 3:49; 3:50 (its clause); 3:52; 3:53; 3:54 | 40-54 | BSB | BSB text |
+| Communal confession and lament; forgiveness not yet come; mocked by neighbors under Babylonian rule; the pit, the stones and the waters, Jeremiah or the psalms' pictures | 40-54 | lamentations/3.json `historical`, `literary` | Repository |
+| Psalm 130:1 (in double quotes for its exclamation); Jonah 2:3 (its clause); Psalm 69:2 (its clause) | 40-54 `later` | BSB | BSB text |
+| 3:55; 3:56 paraphrased; 3:57 (its first clause, and its last words paraphrased); 3:58; 3:59 (its first clause); 3:60-62; 3:63; 3:64; 3:65-66 paraphrased | 55-66 | BSB | BSB text |
+| The remembered answer; ga'al in 3:58 (the verse's own Hebrew in the repository) and the near relative's buying back; the prayer for justice handed to God | 55-66 | lamentations/3.json `summary`, `literary`; bible/ch/lamentations/3.json (H1350); ruth notes (the redeemer) | Repository |
+| Isaiah 41:10 (its clauses); Psalm 142:5 (the psalmist's words, inside the BSB's quotation marks); Romans 12:19 (its clause) | 55-66 `later` | BSB | BSB text |
+
+Cut in chapter 3: the deep note's lines to Christ that the New Testament does not draw (the man under the rod as a pattern of Jesus; verse 30 beside Matthew 5:39; the mercies grounded in the cross and the empty tomb). The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Lamentations 4 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (in double quotes for its exclamation, and its last sentence); 4:2 (its clause, before the exclamation); 4:3; 4:4 (its last sentence); 4:5 (its clauses); 4:6 (its clause); 4:7 (its clause); 4:8 (its clauses); 4:9 (its clause); 4:10 named, not quoted; 4:11 (its clauses and the rest) | 1-11 | BSB | BSB text |
+| A year and a half; the famine (Jeremiah 52:6); gold, clay, skin as signs of rank; the jackal and the ostrich (Job 39:13-16); Sodom overthrown in an instant; Deuteronomy 28:53-57 repeated; two-line acrostic, shorter and quieter; the survivors looking again | 1-11 | lamentations/4.json `historical`, `cultural`, `literary`, `story`, `doctrines` | Repository |
+| Job 39:16 (its clause); Ezekiel 16:48 (its clause) | 1-11 `later` | lamentations/4.json `cultural` (Job 39), `hard` (Ezekiel 16:48); BSB | BSB text |
+| The hard note: Sodom in Genesis 19; longer suffering, not necessarily worse sin; more asked of those given more; verse 10 a cry of horror, not a lesson; Judah's own Scripture, not a key, no warrant to call any people's suffering deserved | 1-11 `hard` | lamentations/4.json `hard`; 2-kings/plain/25.json (8-21 `hard`) | Repository; agrees with the 2 Kings 25 notes |
+| Care line, the disaster line ("A word for anyone who has lived through a flood...") | 1-11 `hard` | Reused byte for byte from 2-kings/plain/25.json (first typed with a variant ending, caught by the care check and replaced by the exact line read by script) | care.mjs |
+| 4:12; 4:13; 4:14 (its clause); 4:15 paraphrased around its inner quotations; 4:16 (its first sentence and the rest) | 12-16 | BSB | BSB text |
+| The temple as a supposed guarantee (Jeremiah 7:4); leaders' duty and failure; the cry of Leviticus 13:45 turned on the priests; leaders' corruption bringing ruin on the whole | 12-16 | lamentations/4.json `cultural`, `doctrines`; bible/guides/reading-prophets.json (the temple treated as a guarantee) | Repository |
+| Jeremiah 23:11 (the LORD's words, inside the BSB's quotation marks); Leviticus 13:45 (its clause, before the inner quotation) | 12-16 `later` | BSB | BSB text |
+| 4:17 (its last sentence); 4:18 (its clause, before the exclamation); 4:19 (its first clause and the rest); 4:20 (its first sentence; the rest paraphrased around its inner quotation) | 17-20 | BSB | BSB text |
+| Egypt the nation that could not save; the siege lifted and resumed (Jeremiah 37:5-11); the flight toward the Arabah and the capture near Jericho (Jeremiah 52:7-11; 2 Kings 25:4-5); Riblah; not dwelt on; mashiach and anointing; the breath of their life and the view that Jeremiah would not have shared the hope | 17-20 | lamentations/4.json `historical`, `words`, `doctrines`; lamentations/intro.json `author`; 2-kings/plain/25.json (1-7) | Repository; the view on Jeremiah stated as some scholars' |
+| Jeremiah 37:7 (its clause); Psalm 89:38 (its clauses); Jeremiah 23:5 (its clause) | 17-20 `later` | lamentations/4.json `christ` (Jeremiah 23:5-6); BSB | BSB text |
+| 4:21 (two clauses, and the rest); 4:22 (its first sentence, and the rest) | 21-22 | BSB | BSB text |
+| Edom to the southeast; Jacob and Esau; Edom's gloating and its help to the invaders (Obadiah 11-14; Psalm 137:7); Uz and Job; the cup of wrath (Jeremiah 25:15-29); the first word of an end; avon twice | 21-22 | lamentations/4.json `historical`, `cultural`, `words`, `doctrines`, `hard` | Repository |
+| Isaiah 40:2 (its clauses); Obadiah 1:10 (its clause); Jeremiah 49:12 named | 21-22 `later` | lamentations/4.json `doctrines` (Isaiah 40:2); BSB | BSB text |
+| The hard note: Edom's conduct; God's justice for all; judgment handed to God; Edom an ancient nation; no people of the present day identified with it; no warrant to wish ruin on any people | 21-22 `hard` | lamentations/4.json `hard`; the brief | Repository; stated as the brief asks |
+
+Cut in chapter 4: the deep note's lines to Christ that the New Testament does not draw (the anointed of verse 20 and Jesus captured and handed over; the cup of verse 21 and Mark 14:36). A sentence guessing what the first hearers remembered of persecuted prophets was cut before commit, as unsourced. The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Lamentations 5 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 (its first sentence, and its second in double quotes for its exclamation); 5:2; 5:3; 5:4; 5:5 paraphrased; 5:6; 5:7; 5:8; 5:9 paraphrased; 5:10 paraphrased | 1-10 | BSB | BSB text |
+| Some time after the fall; Babylonian control; the family land and the law (Leviticus 25:23); free water and wood; orphans and widows; slaves as the officials; alliances with Assyria and Egypt (Hosea 7:11; Jeremiah 2:18); the generation of the exile; twenty-two verses without the acrostic | 1-10 | lamentations/5.json `historical`, `cultural`, `literary`, `story` | Repository |
+| Hosea 7:11 (its clause, after the dash); Jeremiah 31:30 (its clause); Ezekiel 18:20 (its clause) | 1-10 `later` | lamentations/5.json `historical` (Jeremiah 31:29-30 and Ezekiel 18); BSB | BSB text |
+| The hard note: a cry, not a doctrine; a nation's choices shape its children; Deuteronomy 24:16; Jeremiah 31:29-30 and Ezekiel 18; 5:16; no warrant to read a child's suffering as a parent's punishment | 1-10 `hard` | lamentations/5.json `historical`; BSB | Repository; BSB text |
+| 5:11 named in paraphrase; 5:12; 5:13; 5:14; 5:15; 5:16 (in double quotes for its exclamation); 5:17 paraphrased (it holds a dash); 5:18 (its clause) | 11-18 | BSB | BSB text |
+| The cruelties named in a line each; millstones and Samson (Judges 16:21); the city gate; the crown; foxes and time passed; the people's own confession | 11-18 | lamentations/5.json `historical`, `cultural`, `doctrines` | Repository |
+| Psalm 137:1; Psalm 30:11 (its clause); Zechariah 1:16 (the LORD's words, inside the BSB's quotation marks) | 11-18 `later` | BSB | BSB text |
+| The hard note: a lament naming a horror; no blame on the women and no shame theirs; no making such violence anything but evil | 11-18 `hard` | lamentations/5.json `summary`; the brief | Repository; stated as the brief asks |
+| Care line ("A word for anyone who has been sexually assaulted...") | 11-18 `hard` | Reused byte for byte from judges/plain/19.json, read by script | care.mjs |
+| 5:19; 5:20; 5:21; 5:22 | 19-22 | BSB | BSB text |
+| God's throne untouched; shuv twice; God acting first; chadash and 3:23; the three readings of 5:22; the synagogue custom of repeating 5:21 and its use for other books | 19-22 | lamentations/5.json `literary`, `words`, `doctrines`, `cultural`, `hard` | Repository; the readings in their holders' terms |
+| Psalm 80:3; Psalm 102:12 (its clause); Jeremiah 33:26 (its last sentence) | 19-22 `later` | lamentations/5.json `words` (Jeremiah 33:26); BSB | BSB text |
+| The hard note: the ending meant to unsettle; a prayer not yet answered; the custom; the prophets' promises and the return in Ezra and Nehemiah | 19-22 `hard` | lamentations/5.json `hard`; lamentations/intro.json `story` | Repository |
+| Care line ("If you are suffering now, for your faith or for any other reason...") | 19-22 `hard` | Reused byte for byte from job/intro.json, read by script | care.mjs |
+
+Cut in chapter 5: the deep note's lines to Christ that the New Testament does not draw (Romans 11:1 as Paul's answer to verse 22; Jesus as heir of the fallen crown and bearer of the rejection). The phone number in the deep note's hard answer was not repeated.

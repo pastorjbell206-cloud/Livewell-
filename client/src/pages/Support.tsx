@@ -313,7 +313,7 @@ export function SupportPage({ facts = GIVING }: { facts?: GivingFacts }) {
         <div className="sp-wrap">
           <SectionHead icon={Server} label="What gifts keep going" title="The work is what you see here." id="sp-kept-title" />
           <div className="sp-prose">
-            <p>Gifts go to keep the work going. That is the pages below and the rest of the site, and the hosting that keeps all of it online.</p>
+            <p>Gifts go to keep the work going. That is the pages below and the rest of the site, and the hosting that keeps all of it online. What is left after those costs goes to planting churches around the world.</p>
           </div>
           <ul className="lw-tiles sp-tiles">
             {KEPT.map(({ id, icon }) => {

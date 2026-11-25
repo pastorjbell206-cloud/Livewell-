@@ -79,7 +79,7 @@ export default function DownloadGiftSheet({ ask, onClose }: { ask: GiftAsk; onCl
             </div>
           </div>
 
-          <p className="dg-line">A gift with this {noun} helps keep the work going. Give what you like, or nothing.</p>
+          <p className="dg-line">A gift with this {noun} keeps LiveWell going and helps plant churches around the world. Give what you like, or nothing.</p>
 
           <div className="sp-group" role="group" aria-label="Amount">
             <div className="sp-choices">

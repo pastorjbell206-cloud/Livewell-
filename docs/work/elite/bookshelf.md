@@ -302,7 +302,7 @@ shows.
 | Suggested | What | Why |
 |---|---|---|
 | $8.99 | A Higher Allegiance, Blind Spots, Believe, The Deconstruction of Faith, Raising Believers | The amount James named. The three shelf books, and the two others of 350 pages or more. |
-| $6.99 | The Reliability of Scripture | A shorter book, 261 pages. |
+| $6.99 | The Reliability of Scripture | A shorter book, 261 pages in its old file (241 as typeset on 2026-11-25; the amount is set by hand in `shared/downloads.ts`, not by the count). |
 | $5.99 | The two "What Does the Bible Say" books, Is Critical Race Theory Biblical? | Short books, about 200 pages each. |
 | $4.99 | A workbook (A Weekend for Two, Before You Marry) | 18 to 28 pages, used by a couple or a group over several sittings. |
 | $3.99 | A booklet for church leaders | About 40 pages. |
@@ -340,6 +340,8 @@ what they saw before: every download is a plain link, the ebook buttons read
 
 - the cover, the label "Your download", the title;
 - "Suggested gift: $8.99";
+- (Reworded 2026-11-25: "A gift with this book keeps LiveWell going and
+  helps plant churches around the world. Give what you like, or nothing.")
 - "A gift with this book helps keep the work going. Give what you like, or
   nothing." (book, study guide, worksheet and so on, by kind);
 - four amounts, the suggested one already chosen ($5, $8.99, $15, $25 for a
@@ -742,6 +744,115 @@ no space between them ("... (Intro)Lewis, C. S. A Grief Observed. ...
 wife's death.Moltmann, Jürgen. ..."). That is how the original EPUB has it,
 and the typesetter does not change his text.
 
+### The Reliability of Scripture, brought into the typesetter (2026-11-25)
+
+The Reliability of Scripture (id `the-reliability-of-scripture`) was the
+fourth book, brought in as Believe was: the original PDF and EPUB are kept,
+untouched, in `content/held-downloads/originals/`, the EPUB's forty-seven
+chapter files are in `content/books-src/the-reliability-of-scripture/` byte
+for byte, and the book was built once with no edit and verified.
+
+**Its two original files carry the same text.** Compared letter by letter
+from the introduction to Appendix E, the old PDF is the old EPUB; the only
+additions in the PDF are its running heads (206 of them) and its front
+matter. Nothing had to be reconciled and nothing was written. The one
+difference in the front matter: the PDF's copyright notice is the fuller one
+("No part of this book may be reproduced ...", and the site's address), and
+the new files use it, without the PDF's unfilled ISBN line. There is no
+dedication and there are no part pages in either original.
+
+**What the typesetter learned, in general terms** (each is in the script's
+header):
+
+- chapter labels written as words past twenty ("Chapter Twenty-One" to
+  "Chapter Thirty") are numbered in the contents like the rest; this book
+  writes chapters 31 to 38 in figures, and both forms are read;
+- a section that is not an introduction, a chapter, a conclusion or an
+  appendix (here "A NOTE ON FURTHER READING" and "A PASTORAL NOTE ON
+  BIBLICAL LITERACY IN THE CONGREGATION") is listed in the contents by its
+  title alone;
+- a label that only repeats the title under it is set once, not twice (the
+  source gives each of those two notes its title as both label and title;
+  2 in this book, counted);
+- a title written all in capitals is set in capitals and small letters in
+  the contents and bookmarks ("A Note on Further Reading"); in the chapter
+  itself it is set as the source has it;
+- a running head too long for the line uses the title's main part before a
+  colon or dash, or the chapter's own label ("Chapter Fifteen"), or, where
+  there is neither, is cut at a word and closed with an ellipsis ("A
+  PASTORAL NOTE ON BIBLICAL LITERACY…");
+- a block quotation with no reference element at all is read as one (one in
+  this book).
+
+**The proof, before any edit.** `--verify`: source against original EPUB,
+49,134 words against 49,134, no difference; the new EPUB carries exactly the
+set text (49,120 words, the 14 fewer being the two repeated labels); the new
+PDF's pages carry the same text character for character (251,569 against
+251,569). Typesetting counted: 220 straight double quotation marks and 307
+apostrophes set curly, 2 repeated labels, 47 lead-ins, 79 soft hyphens.
+
+**The files.** 261 pages became 241 in the same 6 by 9 design
+(`client/src/data/ebooks.ts` now says 241); PDF 1.6 MB, EPUB 345 KB. The
+names did not change, so no redirect was needed. The three pages of
+contents, a chapter opening, a spread, both notes, an appendix opening and
+the last pages were looked at as images.
+
+**The three earlier books, rebuilt the same day.** Blind Spots, A Higher
+Allegiance and Believe were built again with the script as it now stands, so
+that their served files are what a fresh build gives (they had differed from
+one by stylesheet rules added for later books, never in a word). `--verify`
+passes for each as before, and their page counts are unchanged (244, 207,
+191).
+
+**Then edited, the same day.** The Reliability of Scripture was the fourth
+book edited at James's word, by Believe's method; its `book.json` carries
+`edited`, and the record is
+`docs/work/elite/voice-books/the-reliability-of-scripture.md` (per chapter,
+the counts, the fact diff's result and five pairs; the whole book; a list of
+things that look wrong, none changed, with where this book and Believe
+disagree; and questions for him). In short: 406 edits in 45 of its 47 files,
+every one punctuation; em-dashes in his prose fell from 579 to 4 (13.1 to
+0.1 per 1,000 words); no word was added, removed or replaced, and the word
+count of every chapter is unchanged; the fact diff passed on every edited
+file. `--verify` on the rebuilt files: the EPUB carries exactly the source
+folder's text (48,545 words compared, no difference), the PDF's pages the
+same text character for character (251,607 against 251,607). Still 241
+pages, so `client/src/data/ebooks.ts` is unchanged; PDF 1.6 MB, EPUB 345 KB.
+
+### The other eight books, brought into the typesetter (2026-11-25)
+
+The remaining eight ebooks came in the same way as The Reliability of
+Scripture, one at a time: the original PDF and EPUB kept, untouched, in
+`content/held-downloads/originals/`; the EPUB's chapter files copied byte for
+byte into `content/books-src/<id>/`; a `book.json` with the copyright notice
+the files printed (without the PDF's unfilled ISBN line); one build with no
+word changed and `--verify`. The two original files of each book were
+compared letter by letter (all letters and digits, from the first chapter to
+the end, the PDF's running heads and page numbers set aside); what they
+differ in is said under each book. Each was then edited (records in
+`docs/work/elite/voice-books/<id>.md`).
+
+- **Raising Believers** (`raising-believers`). The PDF and EPUB carry the
+  same text, letter for letter (208,778 letters). 357 pages became 163,
+  `--verify` identical. Then edited (`raising-believers.md`): 516 dashes in
+  his prose to 0, every edit punctuation, fact diff passed on all fifteen
+  files; rebuilt at 161 pages (`client/src/data/ebooks.ts` says 161),
+  `--verify` identical (47,089 words; 214,892 characters).
+- **The Deconstruction of Faith** (`deconstruction-of-faith`). The PDF and
+  EPUB carry the same text, letter for letter (221,772 letters), with four
+  places where the PDF's text extraction reads a pull quote in a different
+  order; no word differs. 391 pages became 180 (`client/src/data/ebooks.ts`
+  says 180). `--verify`: identical. **The typesetter learned one thing**: a
+  chapter's pages after its opening page begin after a forced page break,
+  where Chromium keeps a heading's top margin, while on the measuring pass the
+  same page began after an ordinary break, where the margin is dropped; a
+  heading at the top of the first page after the opening page therefore set
+  one line lower and the chapter ran a page long. That first block now has
+  no top margin (`.rest > :first-child`).
+  Then edited (`deconstruction-of-faith.md`): 477 dashes in his prose to 0,
+  every edit punctuation, fact diff passed on all twenty files; rebuilt,
+  still 180 pages, `--verify` identical (47,777 words; 227,704 characters).
+
 ### The apparatus
 
 - The new title and subtitle are on the cover, half-title, title page,
@@ -797,6 +908,9 @@ Left exactly as written:
 | Believe, before | 392 | 636 KB | 180 KB |
 | Believe, typeset, 2026-11-25 (no word changed) | 191 | 1.4 MB | 300 KB |
 | Believe, edited, 2026-11-25 | 191 | 1.4 MB | 300 KB |
+| The Reliability of Scripture, before | 261 | 665 KB | 253 KB |
+| The Reliability of Scripture, typeset, 2026-11-25 (no word changed) | 241 | 1.6 MB | 345 KB |
+| The Reliability of Scripture, edited, 2026-11-25 | 241 | 1.6 MB | 345 KB |
 
 The old PDFs were set loosely (A Higher Allegiance at about 115 words a
 page); the new ones at about 270. The new PDFs are larger: they carry the
