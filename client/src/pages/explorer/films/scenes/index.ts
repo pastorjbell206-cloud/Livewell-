@@ -51,6 +51,10 @@ export const FILM_SCENES: Record<
   "john-3-16": () => import("./john-3-16"),
   "psalm-23": () => import("./psalm-23"),
   "romans-8-28": () => import("./romans-8-28"),
+  "all-nations": () => import("./all-nations"),
+  "light-and-darkness": () => import("./light-and-darkness"),
+  "never-heard": () => import("./never-heard"),
+  "temple-destroyed": () => import("./temple-destroyed"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

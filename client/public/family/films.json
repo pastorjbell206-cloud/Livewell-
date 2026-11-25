@@ -151,6 +151,12 @@
    "minutes": 3,
    "by": "pick"
   },
+  "advent-7": {
+   "slug": "light-and-darkness",
+   "title": "Light and darkness",
+   "minutes": 3,
+   "by": "passage"
+  },
   "advent-10": {
    "slug": "why-jesus-died",
    "title": "Why did Jesus die?",
@@ -452,6 +458,12 @@
    "title": "Why can't I see God?",
    "minutes": 3,
    "by": "named"
+  },
+  "68": {
+   "slug": "never-heard",
+   "title": "What about people who never heard?",
+   "minutes": 3,
+   "by": "pick"
   },
   "70": {
    "slug": "when-we-die",

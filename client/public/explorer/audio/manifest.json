@@ -1407,6 +1407,116 @@
     }
    ]
   },
+  "all-nations": {
+   "title": {
+    "file": "all-nations/title.mp3",
+    "hash": "bd25b03f1b863191e8ba",
+    "seconds": 2.5,
+    "bytes": 15620
+   },
+   "younger": [
+    {
+     "id": "babel",
+     "file": "all-nations/younger/01-babel.mp3",
+     "hash": "d31ca75eb2e8d427dcf7",
+     "seconds": 22.8,
+     "bytes": 137444
+    },
+    {
+     "id": "abraham",
+     "file": "all-nations/younger/02-abraham.mp3",
+     "hash": "ab545961758f28e872f0",
+     "seconds": 23.28,
+     "bytes": 140324
+    },
+    {
+     "id": "ruth",
+     "file": "all-nations/younger/03-ruth.mp3",
+     "hash": "160f14c52b6be34e548a",
+     "seconds": 24.9,
+     "bytes": 149972
+    },
+    {
+     "id": "nineveh",
+     "file": "all-nations/younger/04-nineveh.mp3",
+     "hash": "b2c4c8c69bfb0c6ab3f4",
+     "seconds": 27.84,
+     "bytes": 167684
+    },
+    {
+     "id": "magi",
+     "file": "all-nations/younger/05-magi.mp3",
+     "hash": "4a8d10c425f5cf5a309f",
+     "seconds": 23.59,
+     "bytes": 142052
+    },
+    {
+     "id": "pentecost",
+     "file": "all-nations/younger/06-pentecost.mp3",
+     "hash": "94923b4f6692c9638a47",
+     "seconds": 30.25,
+     "bytes": 182084
+    },
+    {
+     "id": "multitude",
+     "file": "all-nations/younger/07-multitude.mp3",
+     "hash": "d1205797800145f2de44",
+     "seconds": 25.56,
+     "bytes": 153860
+    }
+   ],
+   "older": [
+    {
+     "id": "babel",
+     "file": "all-nations/older/01-babel.mp3",
+     "hash": "c50979685f08b9c525ca",
+     "seconds": 22.2,
+     "bytes": 133844
+    },
+    {
+     "id": "abraham",
+     "file": "all-nations/older/02-abraham.mp3",
+     "hash": "946d24dfc058592394fb",
+     "seconds": 25.01,
+     "bytes": 150692
+    },
+    {
+     "id": "ruth",
+     "file": "all-nations/older/03-ruth.mp3",
+     "hash": "776782670e16e945da30",
+     "seconds": 24.35,
+     "bytes": 146660
+    },
+    {
+     "id": "nineveh",
+     "file": "all-nations/older/04-nineveh.mp3",
+     "hash": "fcef469a9eb3ae42b80a",
+     "seconds": 28.66,
+     "bytes": 172580
+    },
+    {
+     "id": "magi",
+     "file": "all-nations/older/05-magi.mp3",
+     "hash": "f29bcad93dc6da4df185",
+     "seconds": 25.02,
+     "bytes": 150692
+    },
+    {
+     "id": "pentecost",
+     "file": "all-nations/older/06-pentecost.mp3",
+     "hash": "d7c5bd12e04e2cbb30c4",
+     "seconds": 27.94,
+     "bytes": 168260
+    },
+    {
+     "id": "multitude",
+     "file": "all-nations/older/07-multitude.mp3",
+     "hash": "8423be8eee4650713847",
+     "seconds": 24.96,
+     "bytes": 150404
+    }
+   ]
+  },
   "kingdom-of-god": {
    "title": {
     "file": "kingdom-of-god/title.mp3",
@@ -1514,6 +1624,116 @@
      "hash": "450159bd1d192acb9431",
      "seconds": 40.03,
      "bytes": 240692
+    }
+   ]
+  },
+  "light-and-darkness": {
+   "title": {
+    "file": "light-and-darkness/title.mp3",
+    "hash": "3d3de9f043a68d779ead",
+    "seconds": 2.13,
+    "bytes": 13316
+   },
+   "younger": [
+    {
+     "id": "first-light",
+     "file": "light-and-darkness/younger/01-first-light.mp3",
+     "hash": "78884915aed8a07b713a",
+     "seconds": 21.05,
+     "bytes": 126932
+    },
+    {
+     "id": "egypt",
+     "file": "light-and-darkness/younger/02-egypt.mp3",
+     "hash": "669db1068ba4b46d655b",
+     "seconds": 23.58,
+     "bytes": 142052
+    },
+    {
+     "id": "pillar",
+     "file": "light-and-darkness/younger/03-pillar.mp3",
+     "hash": "856ef65592645c7a7c32",
+     "seconds": 27.23,
+     "bytes": 163940
+    },
+    {
+     "id": "lamp",
+     "file": "light-and-darkness/younger/04-lamp.mp3",
+     "hash": "7934f2479abc895f8b4d",
+     "seconds": 25.02,
+     "bytes": 150692
+    },
+    {
+     "id": "great-light",
+     "file": "light-and-darkness/younger/05-great-light.mp3",
+     "hash": "2a2ecd34b2cacb82c3a8",
+     "seconds": 23.72,
+     "bytes": 142916
+    },
+    {
+     "id": "light-of-the-world",
+     "file": "light-and-darkness/younger/06-light-of-the-world.mp3",
+     "hash": "d01000145a6def0f6ff9",
+     "seconds": 27.96,
+     "bytes": 168260
+    },
+    {
+     "id": "no-night",
+     "file": "light-and-darkness/younger/07-no-night.mp3",
+     "hash": "5826f9fba311bc02e6e0",
+     "seconds": 26.93,
+     "bytes": 162212
+    }
+   ],
+   "older": [
+    {
+     "id": "first-light",
+     "file": "light-and-darkness/older/01-first-light.mp3",
+     "hash": "82f16e40b2d51b71a44b",
+     "seconds": 23.97,
+     "bytes": 144356
+    },
+    {
+     "id": "egypt",
+     "file": "light-and-darkness/older/02-egypt.mp3",
+     "hash": "3145f4a783cebcd0126a",
+     "seconds": 20.45,
+     "bytes": 123332
+    },
+    {
+     "id": "pillar",
+     "file": "light-and-darkness/older/03-pillar.mp3",
+     "hash": "6443423caa0cced51bd4",
+     "seconds": 27.73,
+     "bytes": 166964
+    },
+    {
+     "id": "lamp",
+     "file": "light-and-darkness/older/04-lamp.mp3",
+     "hash": "6843d7253bdac082d02e",
+     "seconds": 25.76,
+     "bytes": 155156
+    },
+    {
+     "id": "great-light",
+     "file": "light-and-darkness/older/05-great-light.mp3",
+     "hash": "984f41466487dd437c34",
+     "seconds": 25.66,
+     "bytes": 154580
+    },
+    {
+     "id": "light-of-the-world",
+     "file": "light-and-darkness/older/06-light-of-the-world.mp3",
+     "hash": "2ec960254196712bd253",
+     "seconds": 28.89,
+     "bytes": 173876
+    },
+    {
+     "id": "no-night",
+     "file": "light-and-darkness/older/07-no-night.mp3",
+     "hash": "8368dd275e845f2bafd0",
+     "seconds": 26.32,
+     "bytes": 158468
     }
    ]
   },
@@ -4526,6 +4746,226 @@
      "hash": "2cbace251f3048c77b6d",
      "seconds": 34.95,
      "bytes": 210308
+    }
+   ]
+  },
+  "never-heard": {
+   "title": {
+    "file": "never-heard/title.mp3",
+    "hash": "19eb3039d4a4c1eb51cc",
+    "seconds": 2.64,
+    "bytes": 16340
+   },
+   "younger": [
+    {
+     "id": "question",
+     "file": "never-heard/younger/01-question.mp3",
+     "hash": "844a7ad7c04c5b83d681",
+     "seconds": 26.82,
+     "bytes": 161492
+    },
+    {
+     "id": "one-savior",
+     "file": "never-heard/younger/02-one-savior.mp3",
+     "hash": "d00910f9ed442f5fe715",
+     "seconds": 25.51,
+     "bytes": 153716
+    },
+    {
+     "id": "not-far",
+     "file": "never-heard/younger/03-not-far.mp3",
+     "hash": "65ec084307429d5a6577",
+     "seconds": 26.48,
+     "bytes": 159476
+    },
+    {
+     "id": "hear-and-believe",
+     "file": "never-heard/younger/04-hear-and-believe.mp3",
+     "hash": "86a069249638df1b9bd6",
+     "seconds": 25.7,
+     "bytes": 154724
+    },
+    {
+     "id": "his-work-reaches",
+     "file": "never-heard/younger/05-his-work-reaches.mp3",
+     "hash": "970cebad107558785956",
+     "seconds": 24.53,
+     "bytes": 147812
+    },
+    {
+     "id": "everyone-meets",
+     "file": "never-heard/younger/06-everyone-meets.mp3",
+     "hash": "f3fbbda90e3352a4186f",
+     "seconds": 19.32,
+     "bytes": 116420
+    },
+    {
+     "id": "the-judge",
+     "file": "never-heard/younger/07-the-judge.mp3",
+     "hash": "b248fab0e5cde3f983ec",
+     "seconds": 26.32,
+     "bytes": 158468
+    }
+   ],
+   "older": [
+    {
+     "id": "question",
+     "file": "never-heard/older/01-question.mp3",
+     "hash": "5e4bbe7af8eaff873704",
+     "seconds": 24.63,
+     "bytes": 148388
+    },
+    {
+     "id": "one-savior",
+     "file": "never-heard/older/02-one-savior.mp3",
+     "hash": "834baa83d57d59c76d2e",
+     "seconds": 24.08,
+     "bytes": 145076
+    },
+    {
+     "id": "not-far",
+     "file": "never-heard/older/03-not-far.mp3",
+     "hash": "44eb9827e2622beb3161",
+     "seconds": 24.68,
+     "bytes": 148676
+    },
+    {
+     "id": "hear-and-believe",
+     "file": "never-heard/older/04-hear-and-believe.mp3",
+     "hash": "dccd796bd0e3e6248ef7",
+     "seconds": 28.88,
+     "bytes": 173876
+    },
+    {
+     "id": "his-work-reaches",
+     "file": "never-heard/older/05-his-work-reaches.mp3",
+     "hash": "61335708e0c23c233889",
+     "seconds": 27.75,
+     "bytes": 167108
+    },
+    {
+     "id": "everyone-meets",
+     "file": "never-heard/older/06-everyone-meets.mp3",
+     "hash": "5b2a71af3e498dea63ff",
+     "seconds": 24.54,
+     "bytes": 147812
+    },
+    {
+     "id": "the-judge",
+     "file": "never-heard/older/07-the-judge.mp3",
+     "hash": "7286ceffbda0aafd9adf",
+     "seconds": 25.72,
+     "bytes": 154868
+    }
+   ]
+  },
+  "temple-destroyed": {
+   "title": {
+    "file": "temple-destroyed/title.mp3",
+    "hash": "11fb1ba332117d59266e",
+    "seconds": 3.32,
+    "bytes": 20516
+   },
+   "younger": [
+    {
+     "id": "house",
+     "file": "temple-destroyed/younger/01-house.mp3",
+     "hash": "737a1d73e05379fc6113",
+     "seconds": 24.29,
+     "bytes": 146228
+    },
+    {
+     "id": "prophets",
+     "file": "temple-destroyed/younger/02-prophets.mp3",
+     "hash": "e257f9555b69fae500de",
+     "seconds": 26.83,
+     "bytes": 161636
+    },
+    {
+     "id": "gate",
+     "file": "temple-destroyed/younger/03-gate.mp3",
+     "hash": "fe32f27021e8ee8c82c7",
+     "seconds": 30.03,
+     "bytes": 180788
+    },
+    {
+     "id": "glory",
+     "file": "temple-destroyed/younger/04-glory.mp3",
+     "hash": "364a06ae2ee938614e28",
+     "seconds": 22.49,
+     "bytes": 135428
+    },
+    {
+     "id": "burned",
+     "file": "temple-destroyed/younger/05-burned.mp3",
+     "hash": "4b16f478adc61a930e31",
+     "seconds": 21.82,
+     "bytes": 131540
+    },
+    {
+     "id": "why",
+     "file": "temple-destroyed/younger/06-why.mp3",
+     "hash": "129c8218f894c78df006",
+     "seconds": 30.29,
+     "bytes": 182228
+    },
+    {
+     "id": "again",
+     "file": "temple-destroyed/younger/07-again.mp3",
+     "hash": "c9ad37997fc47dcd1f34",
+     "seconds": 22.28,
+     "bytes": 134276
+    }
+   ],
+   "older": [
+    {
+     "id": "house",
+     "file": "temple-destroyed/older/01-house.mp3",
+     "hash": "0094f358105d0fa198a7",
+     "seconds": 24.44,
+     "bytes": 147236
+    },
+    {
+     "id": "prophets",
+     "file": "temple-destroyed/older/02-prophets.mp3",
+     "hash": "4c48d5c70b10f2782f0d",
+     "seconds": 27.02,
+     "bytes": 162788
+    },
+    {
+     "id": "gate",
+     "file": "temple-destroyed/older/03-gate.mp3",
+     "hash": "24cafe2f9b6b32de2c32",
+     "seconds": 25.48,
+     "bytes": 153428
+    },
+    {
+     "id": "glory",
+     "file": "temple-destroyed/older/04-glory.mp3",
+     "hash": "93d5f59a143669d12880",
+     "seconds": 21.91,
+     "bytes": 131972
+    },
+    {
+     "id": "burned",
+     "file": "temple-destroyed/older/05-burned.mp3",
+     "hash": "683e3827dd4b23069296",
+     "seconds": 29.92,
+     "bytes": 180068
+    },
+    {
+     "id": "why",
+     "file": "temple-destroyed/older/06-why.mp3",
+     "hash": "0345784d9134b3116ab8",
+     "seconds": 32.16,
+     "bytes": 193460
+    },
+    {
+     "id": "again",
+     "file": "temple-destroyed/older/07-again.mp3",
+     "hash": "b98a18d8c3d9ca36ba89",
+     "seconds": 25.58,
+     "bytes": 154004
     }
    ]
   },

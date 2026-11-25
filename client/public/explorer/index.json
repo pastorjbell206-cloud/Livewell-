@@ -1474,7 +1474,19 @@
       "slug": "all-nations",
       "title": "A blessing for all nations",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God chose one family so that every family on earth could be blessed. Follow that promise from a tower left unfinished to a crowd no one can count.",
+        "older": "From Babel's scattering to the multitude before the throne: how the promise to Abraham, a blessing for all the families of the earth, runs through the whole Bible."
+      },
+      "mark": "all-nations",
+      "frames": 7,
+      "stops": [
+        "abraham",
+        "church",
+        "new-creation"
+      ],
+      "cards": []
     },
     {
       "slug": "kingdom-of-god",
@@ -1498,7 +1510,18 @@
       "slug": "light-and-darkness",
       "title": "Light and darkness",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "The Bible begins in the dark and ends in a city with no night. Follow one light all the way through.",
+        "older": "From “Let there be light” to the city that needs no sun: the Bible's light followed through Egypt, the wilderness, the tent, Isaiah's promise and the words of Jesus."
+      },
+      "mark": "light-and-darkness",
+      "frames": 7,
+      "stops": [
+        "creation",
+        "new-creation"
+      ],
+      "cards": []
     },
     {
       "slug": "who-god-is",
@@ -1998,13 +2021,35 @@
       "slug": "never-heard",
       "title": "What about people who never heard?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Many people have lived without ever hearing about Jesus. What does the Bible say, and what do Christians believe? An honest look at a hard question.",
+        "older": "What Christians confess together, what the Bible says and does not say, and the three main answers faithful Christians give, each in its own words, with no side taken."
+      },
+      "mark": "never-heard",
+      "frames": 7,
+      "stops": [
+        "abraham",
+        "church"
+      ],
+      "cards": []
     },
     {
       "slug": "temple-destroyed",
       "title": "Why did God let his temple be destroyed?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God's people had a beautiful temple, and one day it was burned. Why would God let that happen? What the prophets said, and how the story went on.",
+        "older": "The prophets' own answer, as the Bible gives it: long warnings, a temple that never held God, real grief kept in Scripture, and a promise larger than what was lost."
+      },
+      "mark": "temple-destroyed",
+      "frames": 7,
+      "stops": [
+        "exile",
+        "return"
+      ],
+      "cards": []
     },
     {
       "slug": "love-when-i-do-wrong",

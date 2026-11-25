@@ -1,0 +1,119 @@
+{
+  "slug": "light-and-darkness",
+  "title": "Light and darkness",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "light-and-darkness",
+  "line": {
+    "younger": "The Bible begins in the dark and ends in a city with no night. Follow one light all the way through.",
+    "older": "From “Let there be light” to the city that needs no sun: the Bible's light followed through Egypt, the wilderness, the tent, Isaiah's promise and the words of Jesus."
+  },
+  "poster": "Dark water under a dark sky, and one small gold light above it.",
+  "frames": [
+    {
+      "id": "first-light",
+      "name": "Let there be light",
+      "still": "Dark water under a dark sky. One gold light has appeared above the water, and lines of light spread out from it.",
+      "younger": "The Bible begins in the dark. There was no sun yet, and not one star. Then God spoke, and there was light. There was no battle. God only said the word.",
+      "older": "The Bible's first picture is darkness over the deep, and then God speaks. There is no battle. The sun and moon, worshiped across the ancient world, are not even named. They are lights with a job to do.",
+      "verse": {
+        "ref": "Genesis 1:3",
+        "text": "And God said, “Let there be light,” and there was light."
+      }
+    },
+    {
+      "id": "egypt",
+      "name": "Light where they lived",
+      "still": "A land lies under thick darkness. Among the dark houses stands one house with a lit window, and a family sits in the light that falls from its open door.",
+      "younger": "Later, God's people were slaves in Egypt. One of the signs God sent was darkness over the whole land, for three days. No one could see anyone else. But where God's people lived, there was light.",
+      "older": "When Pharaoh would not let Israel go, total darkness covered Egypt for three days. It comes at Moses' gesture, and it leaves the Israelites with light where they live.",
+      "verse": {
+        "ref": "Exodus 10:23",
+        "text": "Yet all the Israelites had light in their dwellings."
+      }
+    },
+    {
+      "id": "pillar",
+      "name": "A fire to lead them",
+      "still": "Night in a wild, empty land. A tall pillar of fire stands ahead, gold at its heart, and a long line of people with bundles and a donkey walks toward it.",
+      "younger": "When the people left Egypt, they walked into a wild, empty land. God went ahead of them, in cloud by day and in fire by night. Even in the dark, they could see which way to go.",
+      "older": "On the march out of Egypt the pillar of cloud and fire becomes the visible sign of God's presence, leading Israel through the wilderness. The light now does more than shine. It leads.",
+      "verse": {
+        "ref": "Exodus 13:21",
+        "text": "And the LORD went before them in a pillar of cloud to guide their way by day, and in a pillar of fire to give them light by night"
+      }
+    },
+    {
+      "id": "lamp",
+      "name": "The lamp that stayed lit",
+      "still": "Night in a camp of tents. In the open door of the largest tent a lampstand burns with gold flames, and a priest stands beside it with a jar of oil.",
+      "younger": "God told his people to make a tent where he would live among them. Inside it, lamps burned all night, every night. The oil for them came from all the people, so every family had a share in the light.",
+      "older": "In the tent of meeting, Aaron and his sons tended the lamps before the LORD from evening until morning. The oil came from the Israelites as a whole, so every household had a share in the light that burned through the night.",
+      "verse": {
+        "ref": "Exodus 27:20",
+        "text": "pure oil of pressed olives for the light, to keep the lamps burning continually."
+      }
+    },
+    {
+      "id": "great-light",
+      "name": "A great light",
+      "still": "People walk a road through dark hills. Ahead of them, over the far end of a lake, a gold dawn has begun to rise.",
+      "younger": "Many years later, a dark time came to the north of the land. A prophet named Isaiah brought a promise from God. The people walking in the dark would see a great light. And he spoke of a child who would be born.",
+      "older": "Isaiah promised light to the northern lands of Zebulun and Naphtali, humbled and in gloom. Matthew quotes his words when Jesus goes to live by the sea in that very region. He sees in the move the great light dawning in Galilee.",
+      "verse": {
+        "ref": "Isaiah 9:2",
+        "text": "The people walking in darkness have seen a great light"
+      }
+    },
+    {
+      "id": "light-of-the-world",
+      "name": "The light of the world",
+      "still": "Night in a temple court. Jesus stands among a few listeners, and behind him a tall lamp burns with a gold flame.",
+      "younger": "At a feast in Jerusalem, great lamps were lit to remember the pillar of fire. There Jesus said that he is the light of the world. Whoever follows him, as the people once followed the fire, will not walk in the dark.",
+      "older": "Jesus says it at the time of the Feast of Tabernacles, whose lamps recalled the pillar of fire. In John's Gospel, light and darkness are not two equal powers. “The Light shines in the darkness, and the darkness has not overcome it.”",
+      "verse": {
+        "ref": "John 8:12",
+        "text": "I am the light of the world. Whoever follows Me will never walk in the darkness, but will have the light of life."
+      }
+    },
+    {
+      "id": "no-night",
+      "name": "No more night",
+      "still": "A city on a hill with its gate standing open. Light fills the whole sky from behind the city, gold at its center, and people walk up the road toward the gate.",
+      "younger": "The Bible ends in a city where there is no night. It needs no sun and no lamp, because God himself is its light. And its gates are never shut. The light that began with one word fills everything.",
+      "older": "The last pages show a city with no need of sun or moon, because the glory of God is its light and the Lamb is its lamp. Until that day, Jesus says to his followers: “You are the light of the world.”",
+      "verse": {
+        "ref": "Revelation 22:5",
+        "text": "There will be no more night in the city, and they will have no need for the light of a lamp or of the sun."
+      }
+    }
+  ],
+  "think": {
+    "younger": "In Egypt the light was in the houses. In the camp it was in the tent. Where would you most like God's light to be near you?",
+    "older": "John says the darkness has not overcome the light. He does not say there is no darkness. Where do you see each of those two things today?"
+  },
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Exodus 10", "href": "/study/bible/exodus/10" },
+    { "label": "Exodus 13", "href": "/study/bible/exodus/13" },
+    { "label": "Isaiah 9", "href": "/study/bible/isaiah/9" },
+    { "label": "John 8", "href": "/study/bible/john/8" },
+    { "label": "Revelation 22", "href": "/study/bible/revelation/22" }
+  ],
+  "stops": [
+    "creation",
+    "new-creation"
+  ],
+  "cards": [],
+  "deeper": [
+    { "label": "Exodus 27 in the Study Bible: oil for the lamps", "href": "/study/bible/exodus/27" },
+    { "label": "John 1 in the Study Bible: the light the darkness could not overcome", "href": "/study/bible/john/1" },
+    { "label": "Matthew 4 in the Study Bible: the light dawns in Galilee", "href": "/study/bible/matthew/4" },
+    { "label": "Matthew 5 in the Study Bible: you are the light of the world", "href": "/study/bible/matthew/5" },
+    { "label": "Revelation 21 in the Study Bible: the Lamb is its lamp", "href": "/study/bible/revelation/21" },
+    { "label": "God with his people (a moving picture)", "href": "/study/explorer/watch/god-with-his-people" },
+    { "label": "John 3:16 in its chapter (a moving picture)", "href": "/study/explorer/watch/john-3-16" },
+    { "label": "When You Are Afraid: what the Bible says", "href": "/wisdom/fear-and-courage" }
+  ],
+  "end": { "label": "Read John 8 in the Study Bible", "href": "/study/bible/john/8" }
+}
