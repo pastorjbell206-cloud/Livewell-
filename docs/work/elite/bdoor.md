@@ -8786,6 +8786,74 @@ Chapters 12 to 22 were drafted and checked in a staging folder while heavy comma
 
 2 Kings: the book page, then the chapters. It was not begun in this sitting.
 
+## Ezra, Nehemiah and Esther: the book pages and every chapter (2026-11-25)
+
+All three books are whole: each book page has a teaching introduction, and every chapter (10 of Ezra, 13 of Nehemiah, 10 of Esther) is in plain words. The shape is the one 2 Samuel uses: each passage's third part is `later`; each chapter note gained only `"plain": true` at its end; one commit for each book page and one per chapter, each with its ledger rows and only that chapter's files. One further commit rebuilt the four cross-book Bible indexes (timeline, atlas, words, hard passages) that arrived from the shared branch during this run and are built from the book pages; Esther's book page commit rebuilt them again.
+
+### The book pages (`/study/bible/ezra`, `/nehemiah`, `/esther`, same addresses)
+
+Data only, in each `intro.json`, field `teaching`, added at the end of the file; no old field was changed.
+
+Ezra: thirteen parts (4,551 words): Ezra in a minute; Where it sits in the story; Who wrote it, and how it was put together; When it happened, and the order of Ezra and Nehemiah; The Persian world; How Ezra is built; Home under Cyrus; An altar, a foundation, and a long delay; Prophets, the archives, and a finished house; Ezra the scribe; The marriages: the hardest chapters; How the New Testament reads Ezra; How to read Ezra. Then 17 hard passages, 16 key words, a timeline of 20 entries, a map of nine places, and eleven Go deeper pages (all live).
+
+Nehemiah: fourteen parts (3,848 words), from Nehemiah in a minute through Susa, the cupbearer and three rivals; Prayer, a king, and a night ride; The wall; Brothers selling brothers; The law read, a people confessing, a pledge signed; A city filled, and a wall dedicated; Broken promises, and Nehemiah's last reforms; to How to read Nehemiah. Then 16 hard passages, 15 key words, 17 timeline entries, a map of ten places, and eleven Go deeper pages.
+
+Esther: fourteen parts (3,625 words), among them Is Esther history?; The God who is never named; A queen who refused, and a girl who was taken; A decree to destroy a people; For such a time as this; The day overturned, and the feast of Purim; How the New Testament reads Esther. Then 16 hard passages, 15 key words, 16 timeline entries, a one-place map, and nine Go deeper pages.
+
+Dates are the repository's own. Cyrus took Babylon in 539 BC and decreed the return in 538 BC; the temple was finished in 515 BC, and the page says some count 516 (the exile doctrine study and the Explorer's stop say so); Ezra came in 458 BC on the traditional and most widely held view, with Albin van Hoonacker's 398 BC (Artaxerxes II) and the smaller group's 428 BC given in their holders' terms; Nehemiah came in 445 BC, the Chislev and Nisan puzzle set out, his first term ending in 433 BC and his return dated about 430 BC on one reckoning, with the page saying the book does not say how long he was away; Xerxes reigned about 486 to 465 BC. The order of Ezra and Nehemiah, the Chronicler question, whether Esther is history (Herodotus's Amestris, the Marduka tablet, the novella reading) and the silence about God in Esther (deliberate hiddenness, reserve, another place read two ways, the Greek additions) are each given in their holders' terms, and no side is taken.
+
+The maps use the `canaan` frame and draw only points already used on the site's maps. Ezra: Jerusalem, Bethlehem, Bethel, Jericho, Lod (at the point the Acts map uses for Lydda, which the Acts notes call the old town of Lod), Joppa, Tyre, Sidon and Samaria as a region; the note says Babylon, the Ahava Canal, Casiphia, Ecbatana and Susa lie beyond the map and are not placed in the site's records. Nehemiah: the same towns with Hebron (Kiriath-arba), Beersheba, Ashdod and Tyre; Susa, Ono, Gibeon, Mizpah, Tekoa, Beth-horon, Ammon and Qedar left off. Esther: Jerusalem alone (2:6), with Susa, Babylon and the empire's reach left off and said so. Each note says that no borders are drawn and that the map makes no claim about any border today. `teaching.test.tsx` lists the three books among those with a teaching guide, and its frame test names each one's frame (`canaan`). No other code changed.
+
+### The chapters in plain words
+
+Counted by script over each passage's title and five prose fields.
+
+| Chapter | Passages | Plain words | Chapter | Passages | Plain words |
+|---|---|---|---|---|---|
+| Ezra 1 | 2 | 1,470 | Nehemiah 7 | 2 | 1,067 |
+| Ezra 2 | 3 | 1,615 | Nehemiah 8 | 3 | 1,570 |
+| Ezra 3 | 3 | 1,610 | Nehemiah 9 | 3 | 1,625 |
+| Ezra 4 | 3 | 1,891 | Nehemiah 10 | 2 | 1,049 |
+| Ezra 5 | 3 | 1,373 | Nehemiah 11 | 3 | 1,107 |
+| Ezra 6 | 4 | 1,965 | Nehemiah 12 | 3 | 1,351 |
+| Ezra 7 | 3 | 1,736 | Nehemiah 13 | 3 | 1,811 |
+| Ezra 8 | 3 | 1,600 | Esther 1 | 2 | 1,237 |
+| Ezra 9 | 3 | 1,839 | Esther 2 | 3 | 1,512 |
+| Ezra 10 | 3 | 1,996 | Esther 3 | 2 | 1,284 |
+| Nehemiah 1 | 2 | 1,143 | Esther 4 | 2 | 1,160 |
+| Nehemiah 2 | 3 | 1,388 | Esther 5 | 2 | 828 |
+| Nehemiah 3 | 2 | 1,046 | Esther 6 | 2 | 967 |
+| Nehemiah 4 | 3 | 1,409 | Esther 7 | 2 | 957 |
+| Nehemiah 5 | 3 | 1,631 | Esther 8 | 2 | 970 |
+| Nehemiah 6 | 3 | 1,360 | Esther 9 | 3 | 1,547 |
+| | | | Esther 10 | 1 | 404 |
+| | | | **Total** | **86** | **45,518** |
+
+### The hard places, and how they are stated
+
+Ezra 9 and 10: the report on the marriages, the list of peoples drawn from Deuteronomy 7 and 23, Ezra's prayer confessing the guilt as his own; the covenant to send away the wives and their children called one of the most troubling scenes in the Old Testament, the women's and children's fate untold; the readings given in their holders' terms (a painful but necessary act of faithfulness against absorption, the cases heard one by one; a record and not a model, with Ruth, Isaiah 56 and Malachi pointing another way; both, a repentance under the old covenant not applied directly to Christians); readers' difference over a line by birth as well as faith; all agreeing it never justifies ethnic exclusion; Paul's different instruction (1 Corinthians 7:12-14), as the site's 1 Corinthians note states it; the sentence that nothing in Ezra 9 and 10 gives anyone today a warrant to break up a marriage or a family; 10:15 read two ways and the last verse's hard Hebrew with 1 Esdras. Nehemiah 13: the beating and hair-pulling of 13:25 told without comment in the text; the two readings (a governor's harsh but lawful discipline in a shame culture; zeal beyond what was right, the book ending in a plea for mercy), no side; a story that describes without recommending; no warrant today to strike, shame or harm anyone. Esther 2: the young women taken into the harem without choice, named plainly and not lingered over; Esther's concealment in both readings; the book not calling it right. Esther 3 and 9: Haman's decree held up as hatred of the Jewish people written into law and exposed; the fighting of the thirteenth of Adar weighed (defense under decree, plunder refused three times, the second day in Susa read two ways, stylized numbers or history), faithful readers differing; never lingered over; Romans 12:19; no warrant to harm anyone or take revenge on any people; and, in Esther 3, no people living today is Amalek. Also stated with care: the refusal of help in Ezra 4, Darius's threat in Ezra 6 (a Persian decree, not God's command, its means not named), the king's grant of penal power in Ezra 7, Nehemiah's prayer against his enemies (4:4-5), debt slavery in Nehemiah 5, the exclusion of Ammonites and Moabites and Ruth (13:1-3), Vashti's refusal, Esther's silence as Haman begs, and 8:11's women and children read two ways.
+
+No figure of Ezra, Nehemiah, Esther or Mordecai is made a picture of Christ; the New Testament's own lines are kept (Zerubbabel in Matthew 1:12 and Luke 3:27; the temple of the Gospels, rebuilt by Herod, and John 2:20; the scribes; the Sheep Gate in John 5:2; the temple tax of Matthew 17:24; 1 Timothy 4:13; the echoes of Mark 6:23 and Revelation 11:10), and each page says the New Testament says little about the book, or, for Esther, never quotes it (the Old Testament canon page says so). Nothing is said in contempt of the Jewish people, the Samaritans or any people.
+
+### Care lines
+
+Reused whole, word for word, each naming Find Help and none with a phone number: the line for anyone hurt by a church's discipline or shunned by a church or a family (Ezra's book page and Ezra 10, from the 2 John 1 note); the line for anyone held, owned or forced to work (Nehemiah 5, from the 2 Samuel 12, 1 Corinthians 7, Deuteronomy 15 and 23 and Exodus 21 notes); the line for anyone being hurt at home, at work or in a church (Nehemiah 13, from the Deuteronomy 5 and Exodus 21 notes); the line for anyone pressured for sex or anything else by someone with power over them (Esther 1, from the Genesis 39 note); the line for anyone sold, traded or forced to work or to do sexual acts (Esther's book page and Esther 2, from the Judges 21, Acts 16, Genesis 37 and Numbers 31 notes); and the grief line (Esther 4, from the 1 Samuel 1, 2 Samuel 21 and Deuteronomy notes). A script read each line from its source file rather than retyping it, and the care-line check found each one whole elsewhere on the site, outside these three books. No new care sentence stands in the data.
+
+### Cut or narrowed
+
+Each is in the ledger under its chapter. Among them: every line the deep notes draw to Christ that the New Testament does not draw (the second temple and John 2:19-21, Ezra's intercession and Isaiah 53, Nehemiah leaving the palace and Philippians 2, Nehemiah 9 and the bread from heaven, Esther as a mediator and Hebrews 4:16, the third day of Esther 5:1, the gallows and the cross, the decree on the eve of Passover); the claim that the New Testament never quotes Ezra or Nehemiah (not in the repository); Ben Sira's silence about Ezra; the meaning of the BSB's 'an Elamite' for Shecaniah; Beersheba called Abraham's town; Purim called the only feast the people established; the means of harm in Ezra 6:11, Nehemiah 13:25 and Esther 5 and 7 beyond the text's own words. The BSB's word 'journey' (Ezra 7:9; 8:21; Nehemiah 2:6) is kept out of the prose, as on earlier runs, and 'bless' in every form appears only inside quoted Scripture; one 'blessing' in a draft of Ezra 7 was caught by the scan and changed before commit. Verses with a dash or an inner quotation are quoted only in part or paraphrased (among them Ezra 1:5, 6:9, 10:1; Nehemiah 6:10, 9:36, 13:17; Esther 3:13, 7:6, 10:2; 1 Kings 11:41; Genesis 41:43).
+
+### Sources
+
+All in `bdoor-ledger.md`, a table for each book page and for each chapter. No web searches.
+
+### What was run
+
+The earlier runs' helper scripts were gone, so the 1 Kings run's checks were copied into `/home/user/bdoor-scratch/ezra/`, read, adapted (this worktree, these three books, the Persian kings' numerals excused from the first-person scan, the old introduction fields held only to the forbidden list) and tested: on 2 Samuel and Ruth, and on a file seeded with a misquotation, a wrong reference, an em-dash, an exclamation point, forbidden words, signposts, first-person words, a phone number and a new care sentence, each of which they caught. After each book page and each chapter: validate-bible-notes, the strict, single-quote, cited-verse and nested quotation checks (0 problems each), the forbidden-word, signposting and first-person scans (0 each), the care-line check (0 problems), no-emdash, the search-index and passage-index checks through `pnpm exec tsx`, validate-politics, and, once they arrived, the four Bible index checks, each exit 0; after each book page, `teaching.test.tsx` (33 of 33). After Ezra 5, Nehemiah 5 and 10 and Esther 5, at their chapter and before the next was gated: all content-gate commands (54 of 54, then 58 of 58 once the index checks arrived), `pnpm check` (exit 0) and `pnpm test` (all passed; the explorer jump-list test once timed out under load and the suite passed on the rerun). Before each push, on the tree merged with the shared branch: the content gates, `pnpm check`, `pnpm test`, `pnpm build`, sitemap, prerender and `pnpm audit:canonicals` (each exit 0, 0 canonical failures), and the served build walked at 390 and 1440 (each book page's parts, hard passages, words, timeline and places matched to the data, no label overlap, no sideways scroll, no console errors; every chapter's passages, headings and fields matched). Three pushes, Ezra's after two refusals that each led to a fresh merge and a full rerun.
+
+### Next
+
+The rest of the Old Testament from 2 Kings, 1 and 2 Chronicles and Job onward, as James's order runs. One small thing for that run: the four cross-book indexes (`client/public/bible/explore/`) are now built from the book pages, so each new book page needs `build-bible-timeline-index.mjs`, `-atlas-`, `-words-` and `-hard-index.mjs` rerun in its own commit.
 ## 2 Kings: the book page and every chapter (2026-11-25)
 
 2 Kings is complete: a teaching introduction on the book page and all 25 chapters in plain words. It follows the shape of 1 Kings. Each passage's third part is `later`. Each chapter note gained only `"plain": true` at its end. There is one commit for the book page and one per chapter, each with its ledger rows and only that chapter's files. While this work ran, the shared branch gained four new content gates: the Bible explore indexes (timeline, atlas, key words and hard passages), built from the book pages. They were rebuilt to take in this book page in their own commit, and again at the merge that brought in Nehemiah's.
