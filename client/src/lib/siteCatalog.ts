@@ -118,6 +118,15 @@ export const DOORS: Door[] = [
     page: { id: "bible", name: "Study the Bible", line: "Read, search and understand the Bible, with notes beside every chapter.", href: "/study", icon: "BookOpen" },
     rooms: [
       {
+        id: "bible.films", name: "Bible films", line: "Short narrated films on the Bible's story, its books, its big ideas and hard questions.", href: "/study/films", icon: "Clapperboard", count: { n: 59, of: "films" },
+        inside: [
+          { id: "bible.story", name: "The Bible's story", line: "The whole Bible as one story, in eleven parts.", href: "/study/bible/story", icon: "Route", count: { n: 11, of: "parts" } },
+          { id: "bible.explorer", name: "Bible Explorer", line: "The Bible's story on one illustrated map, for ages 7 to 16.", href: "/study/explorer", icon: "Map" },
+          { id: "bible.abrahams-road", name: "Abraham's road", line: "A map of Genesis that draws itself, place by place.", href: "/study/explorer/abrahams-road", icon: "Route" },
+          { id: "bible.pauls-travels", name: "Paul's travels", line: "A map of Acts that draws itself: three trips and the voyage to Rome.", href: "/study/explorer/pauls-travels", icon: "Route" },
+        ],
+      },
+      {
         id: "bible.read", name: "Read the Study Bible", line: "Every book and chapter, with notes beside the text.", href: "/study/bible", icon: "BookOpen", count: { n: 66, of: "books" },
         inside: [
           { id: "bible.passage", name: "Read any verse in context", line: "Type a verse and see the passage around it.", href: "/theology/passage", icon: "FileText" },
@@ -130,7 +139,6 @@ export const DOORS: Door[] = [
           { id: "bible.themes", name: "Themes of the Bible", line: "Every theme the book pages name, in one list you can search.", href: "/study/themes", icon: "Lightbulb" },
         ],
       },
-      { id: "bible.search", name: "Search the Bible", line: "Find every verse that holds a word or phrase.", href: "/study/bible/search", icon: "Search" },
       {
         id: "bible.how-to-study", name: "How to study the Bible", line: "Seven steps for studying a passage, in order.", href: "/study/how-to-study", icon: "Milestone",
         inside: [
@@ -138,15 +146,7 @@ export const DOORS: Door[] = [
           { id: "bible.tracks", name: "Tracks", line: "Short sessions in order: new, skeptical, stepped back, deeper, family, or Mark.", href: "/tracks", icon: "Route" },
         ],
       },
-      {
-        id: "bible.story", name: "The Bible's story", line: "The whole Bible as one story, in eleven parts.", href: "/study/bible/story", icon: "Route", count: { n: 11, of: "parts" },
-        inside: [
-          { id: "bible.explorer", name: "Bible Explorer", line: "The Bible's story on one illustrated map, for ages 7 to 16.", href: "/study/explorer", icon: "Map" },
-          { id: "bible.explorer-watch", name: "Watch and learn", line: "Short moving pictures on the Bible's story, its big ideas and good questions.", href: "/study/explorer#watch", icon: "Clapperboard" },
-          { id: "bible.abrahams-road", name: "Abraham's road", line: "A map of Genesis that draws itself, place by place.", href: "/study/explorer/abrahams-road", icon: "Route" },
-          { id: "bible.pauls-travels", name: "Paul's travels", line: "A map of Acts that draws itself: three trips and the voyage to Rome.", href: "/study/explorer/pauls-travels", icon: "Route" },
-        ],
-      },
+      { id: "bible.search", name: "Search the Bible", line: "Find every verse that holds a word or phrase.", href: "/study/bible/search", icon: "Search" },
       { id: "bible.background", name: "Bible background", line: "The world the Bible was written in: its places, peoples and customs.", href: "/resources/context", icon: "Map", count: { n: 41, of: "guides" } },
       {
         id: "bible.plans", name: "Reading plans", line: "Every plan for reading the Bible, by length.", href: "/study/plans", icon: "CalendarDays",

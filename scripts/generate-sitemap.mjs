@@ -366,6 +366,8 @@ function manifestPages() {
     pages.push({ url: "/study/themes", priority: "0.8", changefreq: "monthly" });
     // The Bible Explorer: the map, and each stop once it is finished (a stop
     // still being drawn has no link and no place in the sitemap).
+    // Bible films: every finished film, for every reader (the films themselves are listed below).
+    pages.push({ url: "/study/films", priority: "0.9", changefreq: "weekly" });
     pages.push({ url: "/study/explorer", priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/explorer/pauls-travels", priority: "0.7", changefreq: "monthly" });
     pages.push({ url: "/study/explorer/abrahams-road", priority: "0.7", changefreq: "monthly" });

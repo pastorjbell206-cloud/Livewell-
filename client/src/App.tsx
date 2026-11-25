@@ -190,6 +190,7 @@ const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const ExplorerFilm = lazy(() => import("./pages/explorer/ExplorerFilm"));
 const ExplorerTravels = lazy(() => import("./pages/explorer/ExplorerTravels"));
 const ExplorerAbraham = lazy(() => import("./pages/explorer/ExplorerAbraham"));
+const BibleFilms = lazy(() => import("./pages/explorer/BibleFilms"));
 const Answers = lazy(() => import("./pages/Answers"));
 const AnswerPage = lazy(() => import("./pages/AnswerPage"));
 // The apologetics library (lib/questions): pending until James reads it, so
@@ -647,6 +648,7 @@ function Router() {
         <Route path="/tracks/:slug/leader" component={TrackLeader} />
         <Route path="/tracks/:slug/print" component={TrackPrint} />
         <Route path="/tracks/:slug/:n" component={TrackSession} />
+        <Route path="/study/films" component={BibleFilms} />
         <Route path="/study/explorer/watch/:slug" component={ExplorerFilm} />
         <Route path="/study/explorer/pauls-travels" component={ExplorerTravels} />
         <Route path="/study/explorer/abrahams-road" component={ExplorerAbraham} />
