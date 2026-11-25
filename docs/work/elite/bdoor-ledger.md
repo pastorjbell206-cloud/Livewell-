@@ -20552,3 +20552,21 @@ Cut in chapter 1: the deep note's line from Hosea's marriage to Christ who loved
 | Romans 9:25 (its opening words) with 1:10; 1 Peter 2:10 (its second half) | 14-23 | hosea/2.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
 
 Cut in chapter 2: the deep note's lines to the bridegroom in John 3:29, Mark 2:19-20 and 2 Corinthians 11:2, to the marriage of the Lamb (Revelation 19:7; 21:2), to the bride price paid in the Son, and to Ephesians 5:25, which the New Testament does not draw from this chapter. The words of 2:3 and 2:10 are named and not quoted. The verses with inner quotations (2:1, 2:5, 2:7, 2:16, 2:23) are paraphrased, and the forms ‘my Husband’ and ‘my baal’ are given without the first-person word.
+
+## The plain notes on Hosea 3 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 (the command, quoted to its first sentence; the rest paraphrased); 3:2; 3:3 paraphrased | 1-3 | BSB | BSB text |
+| A first-person report like the sign acts of the prophets; love four times in 3:1; raisin cakes; the price in silver and barley; the shekel about 11 grams; the homer about 200 liters, uncertain; the lethech probably half; thirty shekels and Exodus 21:32, uncertain; barley and a short purse; three explanations of the payment; the waiting as restraint and preparation | 1-3 | hosea/3.json `literary`, `cultural`, `hard` | Repository |
+| Exodus 21:32; Jeremiah 13:1-11; Ezekiel 4:1-3 | 1-3 | hosea/3.json `cultural`, `literary` (sign acts); BSB | Repository; BSB text |
+| The hard note: your wife or a woman; most take her to be Gomer; a second sign or a retelling; again in 3:1 favors the first | 1-3 `hard` | hosea/3.json `hard` | Repository; the readings in their holders' terms |
+| A prophetic sign, not a pattern; no warrant for any man to buy, confine, control, shame or harm a wife | 1-3 `hard` | the brief | Stated as the brief asks |
+| The care line ('Nothing in this passage asks anyone to stay where they or their children are in danger...' to '...lists places to turn.') | 1-3 `hard` | deuteronomy/plain/24.json; 1-corinthians/plain/7.json; colossians/intro.json and others | Reused whole, word for word; Find Help named; no phone number |
+| 3:4; 3:5 | 4-5 | BSB | BSB text |
+| King and prince, sacrifice and pillar; the pillar forbidden but common; the ephod and guidance; teraphim as household images used in divination; lawful and unlawful stripped away; many days linking 3:3 and 3:4; fulfilled in stages, the murders after Jeroboam II, 722 BC; no northern king again; David their king; the added-phrase view and 1:11 | 4-5 | hosea/3.json `cultural`, `historical`, `literary` | Repository; both views in their holders' terms |
+| 1 Kings 12:16 (paraphrased); Amos 9:11; Jeremiah 30:9; Ezekiel 34:23-24 | 4-5 | hosea/3.json `historical`, `christ` | Repository |
+
+Cut in chapter 3: the deep note's lines to Jesus as son of David (Matthew 1:1; Luke 1:32-33), to redemption bought at a price (1 Corinthians 6:20; 1 Peter 1:18-19) and to Romans 5:8, which the New Testament does not draw from this chapter. Verse 1 is quoted only up to its inner quotation's first sentence, so that no quotation holds another.
