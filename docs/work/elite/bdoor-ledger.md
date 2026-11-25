@@ -18731,3 +18731,17 @@ Cut in chapter 17: the deep note's lines to Christ (Hebrews 7:22 and Mark 15:19 
 | The grief line | 11-21 | 1-samuel/plain/1.json (1-8) and the 2 Samuel 21 and Deuteronomy notes (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 18: the deep note's lines to Christ (Hebrews 2:14-15, 1 Corinthians 15:26, John 8:12 and Luke 10:20; the note calls them thematic and says Bildad would not have meant them).
+
+## The plain notes on Job 19 (2026-11-25)
+
+`client/public/bible/notes/job/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The emotional summit, lowest and then highest; God, not Job, has done wrong in this case; the siege ramp | 1-12 | job/19.json `story`, `literary`, `historical` | Repository |
+| The household as the web of a man's life; suffering as isolation, hope rising from inside it; the proverbial phrase of verse 20; the plea for pity | 13-22 | job/19.json `cultural`, `literary`, `doctrines` (suffering) | Repository |
+| Lasting records; Behistun around 520 BC; stylus and lead read two ways; the wish fulfilled in the book itself; go'el in family law (Leviticus 25:25, 47-49; Numbers 35:19; Ruth 3 and 4) and of God (Isaiah 41:14; 43:14); no human go'el left; acharon as last in time or as the last witness; three times he will see God | 23-29 | job/19.json `historical`, `cultural`, `literary`, `words` (ga'al, acharon, chay, sepher) | Repository |
+| Leviticus 25:25; Isaiah 41:14 | 23-29 | job/19.json `cultural`; BSB | Repository; BSB text |
+| The hard note: the Redeemer as God himself (16:19) or a heavenly figure; Christians reading it of Christ, Job not knowing Jesus, the New Testament not quoting it; in my flesh or apart from the flesh; the timing; three readings (resurrection; vindication after death; seeing God before death, as in chapter 42); no side; Job's certainty | 23-29 | job/19.json `hard`, `christ` (the New Testament does not quote this verse) | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 19: the deep note's lines to Christ (Hebrews 2:14, Ephesians 1:7, 1 Peter 1:18-19, 1 Corinthians 15:20-23 and 1 John 3:2 as the answer to 19:25-27; the note itself says the Christian reading should be held with care and that the New Testament does not quote the verse); Handel and funerals (not needed).
