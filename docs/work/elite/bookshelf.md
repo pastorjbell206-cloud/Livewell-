@@ -340,6 +340,8 @@ what they saw before: every download is a plain link, the ebook buttons read
 
 - the cover, the label "Your download", the title;
 - "Suggested gift: $8.99";
+- (Reworded 2026-11-25: "A gift with this book keeps LiveWell going and
+  helps plant churches around the world. Give what you like, or nothing.")
 - "A gift with this book helps keep the work going. Give what you like, or
   nothing." (book, study guide, worksheet and so on, by kind);
 - four amounts, the suggested one already chosen ($5, $8.99, $15, $25 for a
