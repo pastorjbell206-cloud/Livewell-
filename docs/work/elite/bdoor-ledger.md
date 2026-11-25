@@ -17246,3 +17246,24 @@ Cut in chapter 7: the deep note's lines to Christ (Matthew 13:52 and the scribe 
 | The amounts: 650 talents over twenty tons by the usual estimate; inflated in copying, a lighter talent, or as they stand | 24-36 `hard` | ezra/8.json `historical` | Repository; the views in their holders' terms |
 
 Cut in chapter 8: the deep note's lines to Christ (Jesus fasting in the wilderness, John 17:12 and John 10:27-29, and the shepherd who brings his flock home; the note calls the link thematic); the BSB's word for the trip in verse 21, kept out of the note's prose; the two-word quotation of ‘with me’ (it would leave a first-person word in the prose; the sentence was rewritten before commit).
+
+## The plain notes on Ezra 9 (2026-11-25)
+
+`client/public/bible/notes/ezra/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Some months after Ezra's arrival (10:9, the ninth month); grief before action | 1-5 | ezra/9.json `story`; ezra/10.json `historical` | Repository |
+| Intermarriage a real problem across the period; Nehemiah a generation later; Malachi in the same era; marriage into local leaders' families bringing land, trade and ties, which may explain the leaders' lead | 1-5 | ezra/9.json `historical` | Repository |
+| The list of peoples joining the Canaanite nations to Ammon, Moab and Egypt; most Canaanite groups gone by the fifth century BC; drawn from Deuteronomy 7 and 23; abominations as the law's word for idolatry and its practices | 1-5 | ezra/9.json `historical`, `cultural` | Repository |
+| Marriage as a family alliance sharing the household's gods; the law's ban grounded in faith (Deuteronomy 7:4); the holy seed as Israel set apart; maal as breaking faith (a wife's unfaithfulness, Israel's betrayal) | 1-5 | ezra/9.json `cultural`, `words` (zera, maal) | Repository |
+| Torn clothes, pulled hair and silence as signs of mourning and horror; the report treated as a death; the evening offering as an hour of prayer; kneeling with hands spread out, Solomon's posture (1 Kings 8:54) | 1-5 | ezra/9.json `cultural` | Repository |
+| Deuteronomy 7:4; 1 Kings 11:2 and Solomon's heart turned in old age (1 Kings 11:4); Nehemiah 13:23; Malachi 2:11; Isaiah 6:13 | 1-5 | ezra/9.json `story` (1 Kings 11:1-8), `historical` (Nehemiah 13:23-27; Malachi 2:11-16), `words` (zera: Isaiah 6:13); BSB | Repository; BSB text |
+| Ethnic exclusion or religious concern: the narrowing boundary reading, with Ruth and Isaiah 56 in tension; the religious reading (abominations, Deuteronomy 7's reasons, 6:21's welcome, Ruth); both agreeing on faithfulness to God and on the cost of chapter 10 | 1-5 `hard` | ezra/9.json `hard`; ruth/intro.json `teaching` (moabite) | Repository; both readings in their holders' terms; no side |
+| No warrant today to break up a marriage or a family, or to look down on anyone for where they come from | 1-5 `hard` | ezra/10.json `hard` (never to justify ethnic exclusion); 2-corinthians/plain/6.json (14-18, `hard`) | As the site's notes state it |
+| One of the great confessional prayers, beside Nehemiah 1 and 9 and Daniel 9; its five steps; the shared pronouns, Ezra confessing as one of the guilty; the images (guilt over their heads, a stake, a wall); peletah; still slaves under a foreign king, grace real and brief | 6-9 | ezra/9.json `story`, `literary`, `words` (yated, peletah), `doctrines` (repentance, salvation) | Repository |
+| Daniel 9:5; Nehemiah 9:36 | 6-9 | psalms/plain/106.json (Ezra 9, Nehemiah 9 and Daniel 9 as like prayers); bible/doctrines/exile.json (Nehemiah 9:36); BSB | Repository; BSB text |
+| The prayer in the words of the law (Leviticus 18 for the polluted land; Deuteronomy 7 for daughters and sons); the fear that the sin of the exile had returned, with Solomon and the kings behind it; no request; repentance beginning in grief before action | 10-15 | leviticus/plain/18.json (Ezra praying in the words of Leviticus 18); ezra/9.json `literary`, `story`, `doctrines` (repentance) | Repository |
+| Leviticus 18:25; Psalm 130:3 | 10-15 | leviticus/plain/18.json; BSB | Repository; BSB text (a link within the Old Testament, no line to Christ) |
+
+Cut in chapter 9: the deep note's lines to Christ (Ezra's intercession as a pattern completed in Jesus, Isaiah 53, 1 Peter 2:24, Romans 5:1-2, and the holy seed as Christ in Galatians 3:16, 29; the note calls these theological connections, not predictions); the claim that the prophets of 9:11 means Moses and those who gave the law (not stated in the repository); a sentence that spoke of our iniquities in the note's own voice (rewritten before commit so that no first-person word stands outside quotation).
