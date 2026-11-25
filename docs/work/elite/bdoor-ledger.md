@@ -17328,3 +17328,19 @@ Cut in chapter 13: John 4:21-24, the cleansing of the temple and Galatians 1:8 (
 | 2 Chronicles 12:6 | 19-31 | BSB (2 Chronicles 12:5-6) | BSB text |
 
 Cut in chapter 14: Jeremiah 31, Ezekiel 37 and John 10:16 set beside the scattering (the deep note calls the thread thematic, not a line the New Testament draws to this chapter); 14:10, 14:11 and 14:14 not quoted (harsh images and a dash; paraphrased); a nested quotation of 2 Chronicles 12:5 replaced by 12:6 before commit.
+
+## The plain notes on 1 Kings 15 (2026-11-25)
+
+`client/public/bible/notes/1-kings/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 15:1; three years and Maacah (15:2); 15:3; 15:4; 15:5; war and succession (15:6-8); the rhythm of alternating reigns, dated by the other kingdom and judged by David or Jeroboam; Abijam about 913 to 911 BC, Abijah in Chronicles; the lamp and the promise; David's faithfulness as a heart never turned to other gods; the dates approximate, overlaps and counting, Thiele | 1-8 | 1-kings/15.json `story`, `historical`, `doctrines` (covenant); bible/guides/kings-of-israel-and-judah.json (Abijah is Abijam in Kings; the table); BSB | Repository; BSB text |
+| Matthew 1:7 | 1-8 | 1-kings/15.json `christ` (Matthew 1:7); BSB | Repository; BSB text; the genealogy is the New Testament's own line |
+| Asa's accession and reign (15:9-10); 15:11; the reforms and Maacah removed (15:12-13); 15:14; the dedicated things (15:15); Baasha and Ramah (15:16-17); the treasury sent to Ben-hadad (15:18-19); the northern towns taken and Ramah dismantled (15:20-22); Asa's feet and death (15:23-24); Asa about 911 to 870 BC, the first reform; the queen mother's office; mother read as grandmother (ancestress) in the BSB; the Kidron as the place of destroying idols; high places left standing until Hezekiah and Josiah; Ramah five miles north; Ben-hadad grandson of Hezion; treaties passing from father to son; shochad, a bribe; the northern frontier towns; the same word for a whole heart for Abijam and Asa | 9-24 | 1-kings/15.json `historical`, `cultural`, `literary`, `words` (shochad, berit); BSB | Repository; BSB text |
+| 2 Chronicles 16:7; Psalm 20:7 | 9-24 | 1-kings/15.json `hard`, `doctrines` (faith: 2 Chronicles 16:7-9); BSB | Repository; BSB text (Psalm 20 a thematic line within the Old Testament) |
+| Asa's bargain: no open verdict and success; the details leaning critical (the emptied treasury, the bribe, the door opened to Aram); Hanani's rebuke in Chronicles; the verdict on his heart as lifelong loyalty against idols and the lapse of trust | 9-24 `hard` | 1-kings/15.json `hard` | Repository; the readings in their holders' terms |
+| 15:25; Nadab's evil (15:26); Baasha's coup at Gibbethon (15:27-28); 15:29 and the household struck down; 15:30; 15:34; Nadab about 910 to 909 and Baasha about 909 to 886 BC; Ahijah's word fulfilled within two years; the first coup and the pattern; nine dynasties in about two hundred years and eight kings lost to coups; Gibbethon a Philistine town; the killing recorded as fulfillment and later held to account (16:7), not dwelt on | 25-34 | 1-kings/15.json `story`, `historical`; bible/guides/kings-of-israel-and-judah.json (nine dynasties; eight of nineteen kings); 1-kings/16.json `hard`; BSB | Repository; BSB text |
+| Hosea 1:4 | 25-34 | 1-kings/16.json `hard` (Hosea 1:4 and Jehu's bloodshed); BSB | Repository; BSB text |
+
+Cut in chapter 15: the contrast between seized power and the kingdom Jesus announced (the deep note calls it thematic, not a line the New Testament draws to this chapter); 15:18's last words and 15:19 paraphrased; a misquotation of Hosea 1:4 (‘I will soon’ for ‘soon I will’) caught by the strict check and corrected before it reached the repository.
