@@ -18774,3 +18774,18 @@ Cut in chapter 20: the deep note's lines to Christ (the mockers at the cross, Is
 | The travelers' reports; the great man's funeral; hevel and the frame of consolation (21:2, 34; 2:11) | 27-34 | job/21.json `historical`, `cultural`, `words` (tanchum, hevel) | Repository |
 
 Cut in chapter 21: the deep note's lines to Christ (Matthew 5:45 and Luke 16:19-31, which the note says are not prophecy); Mesopotamian laments (not needed).
+
+## The plain notes on Job 22 (2026-11-25)
+
+`client/public/bible/notes/job/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The third round; Eliphaz's movement from chapters 4 and 5 through 15; charges with no evidence; his logic as he would sign it; the landowner's duties; the pledge and the cloak; hospitality; widows and orphans; verses 2 and 3 true, the conclusion false; God's delight in Job (1:8) | 1-11 | job/22.json `story`, `historical`, `cultural`, `doctrines` (attributes), `words` (sakan, chaval) | Repository |
+| Exodus 22:26-27 | 1-11 | job/22.json `cultural`; BSB | Repository; BSB text |
+| The hard note: nothing supports the charges (1:1; 1:8; 2:3; chapters 29 and 31); reasoning backward; the likeliest crimes; a sincere kindness; theology trusted over testimony and God's verdict; no one may invent sins for a sufferer | 1-11 | job/22.json `hard` | Repository; each explanation in its holders' terms |
+| The vault and the clouds; words put in Job's mouth, against 7:17-20; the flood generation, as many hear it; verse 18 repeating 21:16 | 12-20 | job/22.json `cultural`, `literary`; proverbs notes (the circle of the earth, Job 22:14) | Repository |
+| The most beautiful poetry of the friends; shuv; God as gold; Ophir famous and unlocated; harsh middle and tender end; good counsel for sins not committed; verse 30 uncertain; the irony of 42:8 | 21-30 | job/22.json `literary`, `historical`, `doctrines` (repentance, prayer), `words` (shuv, betser), `christ` (the Hebrew of verse 30) | Repository |
+| Psalm 119:11 | 21-30 | job/23.json `words` (tsaphan, Psalm 119:11); BSB | Repository; BSB text |
+
+Cut in chapter 22: the deep note's lines to Christ (Luke 23:34 and Hebrews 7:25 beside 42:8, which the note calls typological); Hammurabi's law code and the Tell Qasile ostracon (not needed).
