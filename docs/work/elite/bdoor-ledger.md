@@ -18789,3 +18789,18 @@ Cut in chapter 21: the deep note's lines to Christ (Matthew 5:45 and Luke 16:19-
 | Psalm 119:11 | 21-30 | job/23.json `words` (tsaphan, Psalm 119:11); BSB | Repository; BSB text |
 
 Cut in chapter 22: the deep note's lines to Christ (Luke 23:34 and Hebrews 7:25 beside 42:8, which the note calls typological); Hammurabi's law code and the Tell Qasile ostracon (not needed).
+
+## The plain notes on Job 23 (2026-11-25)
+
+`client/public/bible/notes/job/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| No point-by-point answer; turning to God as in chapters 9, 13 and 19; absence as the problem; the plaintiff and the judge's seat; the change from chapter 9; the reading of verse 2 in the Hebrew and in the Greek and Syriac | 1-7 | job/23.json `story`, `historical`, `literary` | Repository |
+| The compass by the sunrise; refining gold; tested, not exposed; a truth the reader knows; bread and survival | 8-12 | job/23.json `historical`, `cultural`, `doctrines` (suffering), `words` (bachan, tsaphan) | Repository |
+| Psalm 66:10 | 8-12 | job/23.json `cultural` (Psalm 66:10); BSB | Repository; BSB text |
+| The hard note: Psalm 139; verse 10; hiddenness; presence everywhere and revealing presence; Psalms 13 and 88; honest poetry not rebuked; bring it to God | 8-12 | job/23.json `hard` | Repository; each reading in its holders' terms |
+| Confidence and dread; sovereignty as weight; the phrase of verse 13 rendered three ways; verse 17 difficult; still speaking | 13-17 | job/23.json `literary`, `doctrines` (sovereignty), `words` (ophel) | Repository |
+| Psalm 88:14 | 13-17 | job/23.json `hard` (Psalm 88); BSB | Repository; BSB text |
+
+Cut in chapter 23: the deep note's lines to Christ (John 1:18, Hebrews 4:14-16 and Mark 15:34; the note calls them thematic).
