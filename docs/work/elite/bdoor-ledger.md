@@ -20678,3 +20678,19 @@ Cut in chapter 8: the deep note's lines to John 6:15, Galatians 6:7-8 and Luke 1
 | The care line ('If you carry grief or guilt about a pregnancy, or about the loss of a child before or after birth...' to '...lists places to turn.') | 10-17 `hard` | 1-kings/plain/3.json; 2-kings/plain/4.json; 2-samuel/plain/12.json and nine more | Reused whole, word for word; Find Help named; no phone number |
 
 Cut in chapter 9: the deep note's mention of 13:16 beside 9:13, so that the atrocity is named once, in its own chapter. The words of 9:14 and 9:16 are not quoted. Luke 13:1-5 is left out to keep the care note short; John 9:3 is kept, paraphrased.
+
+## The plain notes on Hosea 10 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 10:1 (its first sentence; the rest paraphrased); 10:2-4 paraphrased (10:3's inner quotation not quoted); 10:5 (its last clause); 10:6 (its first sentence); 10:7 (its phrase); 10:8 paraphrased | 1-8 | BSB | BSB text |
+| Sacred pillars forbidden (Deuteronomy 16:22) and multiplied with prosperity; the calf since Jeroboam I; tribute to the great king, possibly an Assyrian title; Beth-aven as house of wickedness or of nothing; the word for priests of false gods; no king and the four murders or Hoshea's imprisonment (2 Kings 17:4); the twig on the water | 1-8 | hosea/10.json `cultural`, `historical` | Repository; both readings of 10:3 in their holders' terms |
+| Luke 23:30 (its two words, inside its inner quotation); Revelation 6:16 | 1-8 | hosea/10.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+| 10:9; 10:10-11 paraphrased; 10:12; 10:13 (its first sentence; the rest paraphrased); 10:14 named and not quoted; 10:15 paraphrased | 9-15 | BSB | BSB text |
+| Gibeah's crime and the civil war (Judges 19-21); threshing unmuzzled and plowing under the yoke; fallow ground; two ways of sowing; Shalman as Shalmaneser or Salamanu of Moab; Beth-arbel as Irbid in Gilead or a town in Galilee; uncertain | 9-15 | hosea/10.json `cultural`, `literary`, `historical` | Repository; the identifications in their holders' terms |
+| Deuteronomy 25:4; Jeremiah 4:3 (its quoted words, to the end of the sentence) | 9-15 | hosea/10.json `cultural`; BSB | Repository; BSB text |
+| The hard note: siege warfare named, not described; not commended; a remembered massacre; the prophets condemn such crimes in other nations (Amos 1:13); two emphases (human agents responsible; no romance about war); Israel's own Scripture; no warrant for violence; no key for any people's suffering | 9-15 `hard` | hosea/10.json `hard`; the brief | Repository; the emphases in their holders' terms; stated as the brief asks |
+
+Cut in chapter 10: the deep note's line from the vine of 10:1 to John 15:1, which the New Testament does not draw from Hosea. The words of 10:14 and of Amos 1:13 are named and not quoted.
