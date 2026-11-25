@@ -1035,6 +1035,116 @@
     }
    ]
   },
+  "book-exodus": {
+   "title": {
+    "file": "book-exodus/title.mp3",
+    "hash": "d0a8f8a935ccfd883681",
+    "seconds": 3.29,
+    "bytes": 20372
+   },
+   "younger": [
+    {
+     "id": "rescue",
+     "file": "book-exodus/younger/01-rescue.mp3",
+     "hash": "d66f6fc6b7bb5ffe53e6",
+     "seconds": 24.12,
+     "bytes": 145364
+    },
+    {
+     "id": "layout",
+     "file": "book-exodus/younger/02-layout.mp3",
+     "hash": "bf6aead94b1b366ce8de",
+     "seconds": 22.81,
+     "bytes": 137444
+    },
+    {
+     "id": "name",
+     "file": "book-exodus/younger/03-name.mp3",
+     "hash": "532657eabddce417d4b2",
+     "seconds": 23.22,
+     "bytes": 139892
+    },
+    {
+     "id": "passover",
+     "file": "book-exodus/younger/04-passover.mp3",
+     "hash": "b2f86610dfa02e72c99f",
+     "seconds": 26.45,
+     "bytes": 159332
+    },
+    {
+     "id": "law",
+     "file": "book-exodus/younger/05-law.mp3",
+     "hash": "295e6f4d226b1a52f2d5",
+     "seconds": 25.35,
+     "bytes": 152708
+    },
+    {
+     "id": "tent",
+     "file": "book-exodus/younger/06-tent.mp3",
+     "hash": "ab426ff1e7d0c0254d5e",
+     "seconds": 21.21,
+     "bytes": 127796
+    },
+    {
+     "id": "start",
+     "file": "book-exodus/younger/07-start.mp3",
+     "hash": "f101758dcd87bfd92d34",
+     "seconds": 24.8,
+     "bytes": 149396
+    }
+   ],
+   "older": [
+    {
+     "id": "rescue",
+     "file": "book-exodus/older/01-rescue.mp3",
+     "hash": "0e650fe9d277380d78de",
+     "seconds": 25.51,
+     "bytes": 153572
+    },
+    {
+     "id": "layout",
+     "file": "book-exodus/older/02-layout.mp3",
+     "hash": "d7c3d788e7efdac61118",
+     "seconds": 23.89,
+     "bytes": 143924
+    },
+    {
+     "id": "name",
+     "file": "book-exodus/older/03-name.mp3",
+     "hash": "4a76435db3e506b9529f",
+     "seconds": 23.75,
+     "bytes": 143060
+    },
+    {
+     "id": "passover",
+     "file": "book-exodus/older/04-passover.mp3",
+     "hash": "4b0f2897816782629be4",
+     "seconds": 26.08,
+     "bytes": 157028
+    },
+    {
+     "id": "law",
+     "file": "book-exodus/older/05-law.mp3",
+     "hash": "31e8e186022d491bac71",
+     "seconds": 28.63,
+     "bytes": 172292
+    },
+    {
+     "id": "tent",
+     "file": "book-exodus/older/06-tent.mp3",
+     "hash": "104ea1c4bd7273edc018",
+     "seconds": 22.74,
+     "bytes": 137012
+    },
+    {
+     "id": "start",
+     "file": "book-exodus/older/07-start.mp3",
+     "hash": "41dd696aabcce683781b",
+     "seconds": 27.63,
+     "bytes": 166388
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

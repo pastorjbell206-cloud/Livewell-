@@ -826,6 +826,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M30,84H70" />
     </>
   ),
+  /* Exodus: a bush that burns and is not burned up, its flame gold. */
+  "book-exodus": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M50,84V64M50,72L38,60M50,70L62,58" />
+      <Shape d="M26,66C20,50 32,38 42,42C46,30 64,30 66,44C78,42 84,56 76,66Z" tone="g" off={1} />
+      <path className="pl-m" d="M50,42C60,30 62,20 56,8C46,18 42,30 50,42Z" />
+      <path className="pl-l" d="M50,42C60,30 62,20 56,8C46,18 42,30 50,42Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

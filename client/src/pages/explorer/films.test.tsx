@@ -1715,6 +1715,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-psalms",
     "book-john",
     "book-romans",
+    "book-exodus",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -1747,11 +1748,11 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
   it("none of them speaks in the first person, presses for a decision, or dates the earth", () => {
     for (const slug of NEW) {
       const f = filmFile(slug);
-      // What a film quotes is set aside, and so is "I am", which the film
-      // on John names as Jesus' own words.
+      // What a film quotes is set aside, and so is "I am", which the films
+      // on John and Exodus name as Jesus' own words and as God's name.
       const own = captions(f)
         .replace(/“[^”]*”/g, " ")
-        .replace(/\bI am\b/g, " ");
+        .replace(/\bI (am|AM)\b/g, " ");
       expect(own, slug).not.toMatch(/\b(I|I'm|I've|my|me|we|our|us)\b/);
       expect(text(f), slug).not.toMatch(
         /pray this prayer|decide today|right now, before|before it is too late/i
@@ -2111,5 +2112,27 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     };
     expect(scene.LAYOUT).toEqual([3, 2, 3, 3, 4, 1]);
     expect(f.care).toBe(filmFile("the-king").care);
+  });
+
+  it("Exodus tells the Passover night as the Exodus story film does, draws no death, and gives no date or route", () => {
+    const f = filmFile("book-exodus");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/rescue.json"), "utf8")
+    ) as { care: string };
+    expect(f.care).toBe(stop.care);
+    const t = text(f);
+    expect(t).toContain("a night of great sadness in Egypt");
+    expect(text(filmFile("the-exodus"))).toContain(
+      "a night of great sadness in Egypt"
+    );
+    expect(t).toContain(
+      "the laws are not a ladder by which Israel earned God's favor"
+    );
+    expect(t).not.toMatch(
+      /\b1[2-5]\d\d\b|\bBC\b|Red Sea|Sea of Reeds|600,000|Rameses|Ramesses/
+    );
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /firstborn|dead|drown|bod(y|ies)|blood|soldier|army/i
+    );
   });
 });
