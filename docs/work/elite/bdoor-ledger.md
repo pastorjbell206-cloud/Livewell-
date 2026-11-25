@@ -19249,3 +19249,16 @@ Cut in chapter 35: the deep note's lines to Christ (Acts 17:25, Mark 14:26 and t
 | Two cries of greatness and two panels; the rainy season and hunger; the storm that terrifies and feeds; the storm gathering toward chapter 38 | 22-33 | job/36.json `literary`, `historical`, `story` | Repository |
 
 Cut in chapter 36: the deep note's lines to Christ (Hebrews 12:5-11 and 5:8; the note says Elihu is not speaking of the Messiah); the meaning of qedeshim in verse 14 (not needed for plain words, and the scholarly question is left in the deep note).
+
+## The plain notes on Job 37 (2026-11-25)
+
+`client/public/bible/notes/job/plain/37.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The storm told as present; voice repeated; storm gods; Baal at Ugarit before 1200 BC; the storm given to the one God; weather and work; chesed and the three purposes | 1-13 | job/37.json `historical`, `cultural`, `literary`, `words` (qol, chesed) | Repository |
+| Psalm 29:3 | 1-13 | job/37.json `historical` (Psalm 29 the closest parallel); BSB | Repository; BSB text |
+| The hard note: the two views of providence (the Reformed view; creation's own regularity); purpose; no one can tell which in a given case; 1:19 | 1-13 | job/37.json `hard` | Repository; each view in its holders' terms |
+| The south wind; bronze mirrors and the summer sky; questions anticipating God's speech; tsaphon and Baal's mountain; the close of the human debate; 38:1 next | 14-24 | job/37.json `cultural`, `historical`, `story`, `words` (tsaphon) | Repository |
+
+Cut in chapter 37: the deep note's line to Christ (Mark 4:41 and the stilling of the storm; the note says it is not a prediction).
