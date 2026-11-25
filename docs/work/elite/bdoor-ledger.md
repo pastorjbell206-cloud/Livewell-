@@ -20792,3 +20792,23 @@ Every claim in `client/public/bible/notes/joel/intro.json`, field `teaching`. No
 | Go deeper: ten pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json, calendar-and-festivals.json; bible/doctrines.json (The Holy Spirit; Repentance and Forgiveness; Prayer and Lament; Judgment and Justice); the lament study guide and the Honest Answer on suffering (each already linked from other book pages); needs/suffering.json (page: true) | Repository; every page live; the Find Help page named by its own title |
 
 Cut from the book page: the introduction's lines from 3:13 to Jesus' teaching on the end and from the locusts to Revelation 9, which the New Testament does not draw from Joel. The words of 3:3 are paraphrased. The ‘blessing’ of 2:14 is not quoted.
+
+## The plain notes on Joel 1 (2026-11-25)
+
+`client/public/bible/notes/joel/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 paraphrased; 1:3; 1:4 | 1-4 | BSB | BSB text |
+| A catastrophe, not a call; no king or datable event; Judah, the temple, the elders; locust plagues across the Near East and North Africa; breeding and swarming; ancient texts; the plague of 1915 and the observers in Jerusalem; four words read three ways | 1-4 | joel/1.json `story`, `historical`, `cultural` | Repository; the readings in their holders' terms |
+| Deuteronomy 28:38; Exodus 10:2 paraphrased | 1-4 | joel/1.json `story` (Deuteronomy 28:38-42); BSB | Repository; BSB text |
+| 1:5 (its first clause); 1:6-8 and 1:10-13 paraphrased; 1:9 (its first clause); 1:12 (its last sentence); 1:14 (its first clause) | 5-14 | BSB | BSB text |
+| A call to communal lament; the summonses; each group's loss; the lion's teeth and chapter 2; the bark and branches; the staples; the daily grain and drink offerings; sackcloth, wailing, nights, fasting; the solemn assembly; the bride whose husband died | 5-14 | joel/1.json `literary`, `cultural`, `historical` | Repository |
+| Exodus 29:38-41; Numbers 28:3-8; 2 Chronicles 20:3-4 | 5-14 | joel/1.json `cultural`; BSB | Repository; BSB text |
+| 1:15 (in double quotes, for its exclamation); 1:16-18 and 1:20 paraphrased; 1:19 | 15-20 | BSB | BSB text |
+| The turn to warning; shod and Shaddai; drought and fire; the prophet's prayer and the animals; the call to the temple and chapter 2 | 15-20 | joel/1.json `literary` | Repository |
+| Amos 5:18 paraphrased; Psalm 42:1 (after its heading) | 15-20 | BSB | BSB text |
+| The hard note: the plague from God as warning; Deuteronomy's world; no sins listed; the response; Job, the man born blind and the tower; a summons without the right to explain case by case; the covenant setting unique to Israel; the response, not the calculation | 15-20 `hard` | joel/1.json `hard` | Repository; the readings in their holders' terms |
+| The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 15-20 `hard` | genesis/plain/6.json; 2-kings/plain/17.json; 2-chronicles/plain/36.json and others | Reused whole, word for word; Find Help named; no phone number |
+
+Cut in chapter 1: the deep note's lines to 1 Thessalonians 5:2, 2 Peter 3:10, Luke 19:41-44 and Mark 13:8, which the New Testament does not draw from this chapter.
