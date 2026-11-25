@@ -19262,3 +19262,19 @@ Cut in chapter 36: the deep note's lines to Christ (Hebrews 12:5-11 and 5:8; the
 | The south wind; bronze mirrors and the summer sky; questions anticipating God's speech; tsaphon and Baal's mountain; the close of the human debate; 38:1 next | 14-24 | job/37.json `cultural`, `historical`, `story`, `words` (tsaphon) | Repository |
 
 Cut in chapter 37: the deep note's line to Christ (Mark 4:41 and the stilling of the storm; the note says it is not a prediction).
+
+## The plain notes on Job 41 (2026-11-25)
+
+`client/public/bible/notes/job/plain/41.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The height of the second speech; the absurd scenes of hook, rope, nose-ring (Assyrian reliefs), covenant (Exodus 21:5-6), pet birds and merchants; verse 10's turn; verse 11 and no claim on God | 1-11 | job/41.json `cultural`, `literary`, `words` (berit) | Repository |
+| Romans 11:35 quoting 41:11, and Paul's meaning | 1-11 | job/41.json `christ`; BSB | Repository; BSB text; a line the New Testament draws |
+| God's delight in the creature; the Nile crocodile, feared and worshiped; the fiery breath beyond any animal; the lower millstone | 12-24 | job/41.json `historical`, `literary`, `hard` | Repository |
+| Psalm 104:26 | 12-24 | job/41.json `historical` (Psalm 104:26); BSB | Repository; BSB text |
+| Head to tail and the wake; king over all the proud and 40:11-12; tehom and Genesis 1:2 | 25-34 | job/41.json `literary`, `cultural`, `words` (shachats, tehom) | Repository |
+| Psalm 74:14 | 25-34 | job/41.json `historical` (Psalm 74:13-14; Isaiah 27:1); BSB | Repository; BSB text |
+| The hard note: real animal or myth; the speech's real creatures; Psalm 74:14, Isaiah 27:1 and Litan at Ugarit; the middle path; no side; a creature God made and delights in | 25-34 | job/41.json `hard`, `historical` | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 41: the deep note's line from Isaiah 27:1 to Revelation's dragon and the victory of Christ (the New Testament does not draw it from Job 41); Sobek (not needed).
