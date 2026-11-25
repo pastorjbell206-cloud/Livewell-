@@ -45,7 +45,10 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Eighteen: When Faith and Doubt Inhabit the Same Room | 964 | 964 | +0.0% | 9 (9.3) | 0 (0.0) | 26 (27.0) | 17 (17.6) | 8 | PASS |
 | Chapter Nineteen: The Bible in the Life of the Church — Two Thousand Years of Evidence | 978 | 978 | +0.0% | 14 (14.3) | 0 (0.0) | 37 (37.8) | 25 (25.6) | 10 | PASS |
 | Chapter Twenty: What Remains After the Argument — A Word to the Persuaded and the Still-Uncertain | 659 | 659 | +0.0% | 5 (7.6) | 0 (0.0) | 14 (21.2) | 9 (13.7) | 4 | PASS |
-| **All 21** | 23,754 | 23,754 | +0.0% | 306 (12.9) | 2 (0.1) | 621 (26.1) | 325 (13.7) | 217 | |
+| Chapter Twenty-One: The Septuagint, the Apocrypha, and the Boundaries of the Canon | 864 | 864 | +0.0% | 13 (15.0) | 0 (0.0) | 19 (22.0) | 7 (8.1) | 9 | PASS |
+| Chapter Twenty-Two: The Bible and Science — Where the Conflict Is Real and Where It Isn't | 885 | 885 | +0.0% | 14 (15.8) | 0 (0.0) | 23 (26.0) | 9 (10.2) | 8 | PASS |
+| Chapter Twenty-Three: Objections Answered — The Most Persistent Challenges to Biblical Reliability | 1,270 | 1,270 | +0.0% | 14 (11.0) | 0 (0.0) | 26 (20.5) | 13 (10.2) | 9 | PASS |
+| **All 24** | 26,773 | 26,773 | +0.0% | 347 (13.0) | 2 (0.1) | 689 (25.7) | 354 (13.2) | 243 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -505,3 +508,69 @@ Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block 
    After: To the second person, the one who remains uncertain, I respect your uncertainty more than I respect cheap conviction.
 4. Before: I made the crossing a long time ago, and I have not regretted it for a single day — not because life has been easy, not because every question has been answered, not because the faith has cost me nothing, but because on the other side of the crossing I found that the text told the truth about the world and about myself; that the God it describes is the God who is; that the grace it offers is the grace that holds.
    After: I made the crossing a long time ago, and I have not regretted it for a single day, not because life has been easy, not because every question has been answered, not because the faith has cost me nothing, but because on the other side of the crossing I found that the text told the truth about the world and about myself; that the God it describes is the God who is; that the grace it offers is the grace that holds.
+
+
+## Chapter Twenty-One: The Septuagint, the Apocrypha, and the Boundaries of the Canon (`sec22.xhtml`)
+
+Words 864 to 864. Em-dashes in his prose 13 to 0 (15.0 to 0.0 per 1,000 words). Tells 19 to 7 (22.0 to 8.1 per 1,000). Mean sentence 24.7 words to 24.7; sentences of eight words or fewer 5.7% to 5.7%; of five or fewer 2.9% to 2.9%. 9 edits; paragraphs 12 to 12. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 13 to 0, not_but 1 to 1, triplet 2 to 2, intens 3 to 3, colon_reveal 0 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 2 Scripture references, 0 years, 4 numbers in digits, 22 number words, proper names by count, and 15 hedge words (after: 15) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: why do Catholic Bibles have more books than Protestant Bibles, and does the difference mean that somebody made an error — either in including the extra books or in excluding them?
+   After: why do Catholic Bibles have more books than Protestant Bibles, and does the difference mean that somebody made an error, either in including the extra books or in excluding them?
+2. Before: And the Septuagint included books that were not in the Hebrew canon recognized by Palestinian Judaism — the deuterocanonical books named above.
+   After: And the Septuagint included books that were not in the Hebrew canon recognized by Palestinian Judaism: the deuterocanonical books named above.
+3. Before: When the Protestant Reformation in the sixteenth century returned to the Hebrew canon — the canon recognized by Palestinian Judaism and formalized at Jamnia around 90 AD — it excluded the deuterocanonical books from Scripture proper while often retaining them in a separate section for edification.
+   After: When the Protestant Reformation in the sixteenth century returned to the Hebrew canon (the canon recognized by Palestinian Judaism and formalized at Jamnia around 90 AD), it excluded the deuterocanonical books from Scripture proper while often retaining them in a separate section for edification.
+4. Before: Jerome, who produced the Latin Vulgate and was the greatest biblical scholar of the early church, shared these doubts about the deuterocanonical books and expressed them explicitly in his prefaces — even as the church required him to translate them.
+   After: Jerome, who produced the Latin Vulgate and was the greatest biblical scholar of the early church, shared these doubts about the deuterocanonical books and expressed them explicitly in his prefaces, even as the church required him to translate them.
+5. Before: The outcome — the common canon shared by virtually all Christian traditions — represents the settled conviction of an enormous, diverse, multi-century community that these books bear the marks of divine origin in a way that no other texts do.
+   After: The outcome, the common canon shared by virtually all Christian traditions, represents the settled conviction of an enormous, diverse, multi-century community that these books bear the marks of divine origin in a way that no other texts do.
+
+
+## Chapter Twenty-Two: The Bible and Science — Where the Conflict Is Real and Where It Isn't (`sec23.xhtml`)
+
+Words 885 to 885. Em-dashes in his prose 14 to 0 (15.8 to 0.0 per 1,000 words). Tells 23 to 9 (26.0 to 10.2 per 1,000). Mean sentence 21.8 words to 21.8; sentences of eight words or fewer 26.3% to 26.3%; of five or fewer 10.5% to 10.5%. 8 edits; paragraphs 12 to 12. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 14 to 0, triplet 5 to 5, anaphora 1 to 1, intens 1 to 1, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 8 quoted strings, 3 Scripture references, 0 years, 5 numbers in digits, 18 number words, proper names by count, and 22 hedge words (after: 22) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: science has established a picture of the universe — its age, its origins, the mechanisms by which life developed — that contradicts the Bible's account.
+   After: science has established a picture of the universe (its age, its origins, the mechanisms by which life developed) that contradicts the Bible's account.
+2. Before: It is a question about the interpretation of Genesis 1 — about what the text is claiming, and whether it makes specific claims about timing and mechanism or whether it makes claims only about the who and the why of creation.
+   After: It is a question about the interpretation of Genesis 1, about what the text is claiming, and whether it makes specific claims about timing and mechanism or whether it makes claims only about the who and the why of creation.
+3. Before: The historical Adam question — whether the biblical account of Adam and Eve requires the existence of a single ancestral pair from whom all of humanity descended, and how this relates to the population genetics evidence — is a genuine question that careful theologians and scientists are working through.
+   After: The historical Adam question (whether the biblical account of Adam and Eve requires the existence of a single ancestral pair from whom all of humanity descended, and how this relates to the population genetics evidence) is a genuine question that careful theologians and scientists are working through.
+4. Before: The existence of God, the creation of the universe from nothing, the special status of human beings as image-bearers, the reality of human moral responsibility, the historical life, death, and resurrection of Jesus Christ — none of these claims are contradicted by any finding of physics, chemistry, biology, or cosmology.
+   After: The existence of God, the creation of the universe from nothing, the special status of human beings as image-bearers, the reality of human moral responsibility, the historical life, death, and resurrection of Jesus Christ: none of these claims are contradicted by any finding of physics, chemistry, biology, or cosmology.
+5. Before: When we read it as the kind of document it is — a theological account of who God is, what God has done, and what human beings are — rather than imposing categories on it from outside, we find that its claims are coherent, substantial, and well-supported by the evidence from multiple domains.
+   After: When we read it as the kind of document it is (a theological account of who God is, what God has done, and what human beings are) rather than imposing categories on it from outside, we find that its claims are coherent, substantial, and well-supported by the evidence from multiple domains.
+
+
+## Chapter Twenty-Three: Objections Answered — The Most Persistent Challenges to Biblical Reliability (`sec24.xhtml`)
+
+Words 1,270 to 1,270. Em-dashes in his prose 14 to 0 (11.0 to 0.0 per 1,000 words). Tells 26 to 13 (20.5 to 10.2 per 1,000). Mean sentence 18.9 words to 18.9; sentences of eight words or fewer 18.2% to 18.2%; of five or fewer 12.1% to 12.1%. 9 edits; paragraphs 15 to 15. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 14 to 0, not_but 2 to 2, triplet 6 to 7, intens 2 to 2, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 7 Scripture references, 0 years, 3 numbers in digits, 13 number words, proper names by count, and 17 hedge words (after: 17) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: But clearly — because the objections deserve clear answers rather than the anxious deflection that too often passes for apologetics.
+   After: But clearly, because the objections deserve clear answers rather than the anxious deflection that too often passes for apologetics.
+2. Before: Just as a human author selects, shapes, and arranges material in service of a purpose, so God selected, shaped, and arranged — through the choices and writing of the human authors — in service of a purpose the human authors did not fully understand.
+   After: Just as a human author selects, shapes, and arranges material in service of a purpose, so God selected, shaped, and arranged, through the choices and writing of the human authors, in service of a purpose the human authors did not fully understand.
+3. Before: The major translations — ESV, NIV, NASB, CSB — differ in approach, formal versus functional equivalence, but not in accuracy about the substance of what the original says.
+   After: The major translations (ESV, NIV, NASB, CSB) differ in approach, formal versus functional equivalence, but not in accuracy about the substance of what the original says.
+4. Before: This raises a real issue — the Bible's relationship to slavery is complex, and parts of the Old Testament and even the New Testament have been read as permitting or regulating rather than condemning the institution.
+   After: This raises a real issue: the Bible's relationship to slavery is complex, and parts of the Old Testament and even the New Testament have been read as permitting or regulating rather than condemning the institution.
+5. Before: The canon as a whole presents a God whose fundamental character is love — who pursues rebellious creation with extraordinary patience, who is "slow to anger and abounding in steadfast love," who sends his own Son to die for the people who reject him.
+   After: The canon as a whole presents a God whose fundamental character is love, who pursues rebellious creation with extraordinary patience, who is "slow to anger and abounding in steadfast love," who sends his own Son to die for the people who reject him.
