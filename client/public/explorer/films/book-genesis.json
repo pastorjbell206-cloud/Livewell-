@@ -1,0 +1,123 @@
+{
+  "slug": "book-genesis",
+  "title": "Genesis: the book of beginnings",
+  "group": "books",
+  "status": "finished",
+  "book": "genesis",
+  "mark": "book-genesis",
+  "line": {
+    "younger": "The first book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Genesis as a whole book: its two halves, its ten headings, the image of God, the first sin, the promise to Abraham, a faithful God with a flawed family, and where to begin."
+  },
+  "poster": "A scroll lies open on a table. Above it, small and far off, are a garden with a tree, a river and a rising gold sun.",
+  "frames": [
+    {
+      "id": "beginnings",
+      "name": "The book of beginnings",
+      "still": "A scroll lies open on a table. Above it, small and far off, are a garden with a tree, a river and a rising gold sun.",
+      "younger": "Genesis is the first book of the Bible, and its name means beginning. It tells how the world began, how people began, and how God's own people began. It has fifty chapters.",
+      "older": "Genesis is the first book of the Bible, and the first of the five books of the Torah. Its name means origin or birth. It tells of beginnings: the world, human beings, sin and death, the nations, and the people of Israel.",
+      "verse": {
+        "ref": "Genesis 1:1",
+        "text": "In the beginning God created the heavens and the earth."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in four panels. The first, for the whole world, has a round earth over it. The next three, for one family, have a tent, a ladder and a sheaf of grain over them, and a gold rule lies under the second, where the promise begins.",
+      "younger": "Genesis has two halves. The first eleven chapters tell about the whole world. Then the story follows one family: first Abraham, then his grandson Jacob, then Jacob's son Joseph.",
+      "older": "Genesis moves in two halves. Chapters 1 to 11 tell the story of the whole world. Chapters 12 to 50 narrow to one family: Abraham, then Jacob, then Joseph. The heading “This is the account of” opens each of its ten sections.",
+      "verse": {
+        "ref": "Genesis 2:4",
+        "text": "This is the account of the heavens and the earth when they were created"
+      }
+    },
+    {
+      "id": "image",
+      "name": "Watch for: God's image",
+      "still": "A garden with trees and a river. A man and a woman stand side by side with their hands open, and a gold sun shines on them both.",
+      "younger": "Watch for what God says about people. He makes them in his own image, men and women alike, and he calls all he has made very good. Every person you will ever meet is made that way.",
+      "older": "Watch what the first chapter says about people. In the ancient world a king set up his image to show his rule. Genesis gives that dignity to every person, not only kings. And the image is not lost after the first sin.",
+      "verse": {
+        "ref": "Genesis 1:27",
+        "text": "So God created man in His own image; in the image of God He created him; male and female He created them."
+      }
+    },
+    {
+      "id": "wrong",
+      "name": "Watch for: what went wrong",
+      "still": "Evening in the garden. A man and a woman crouch behind the trees, hiding, and a path of light comes through the garden toward them.",
+      "younger": "Watch for what goes wrong. The first people turn away from God, and the hurt spreads through the whole world. But God does not give up on them. He comes looking for them.",
+      "older": "Chapter 3 tells the first disobedience and what came of it, and the damage spreads: a murder, a flood, a proud tower. Everything that goes wrong in the Bible's story traces back here. So does the first hint of hope.",
+      "verse": {
+        "ref": "Genesis 3:9",
+        "text": "But the LORD God called out to the man, “Where are you?”"
+      }
+    },
+    {
+      "id": "promise",
+      "name": "Watch for: the promise",
+      "still": "Night. An old man with a staff stands outside his tent with his wife beside him, looking up at a sky full of stars, one of them gold.",
+      "younger": "Watch for the promise. In chapter twelve God chooses a man named Abram and promises him a family, a land, and a blessing for every family on earth. The rest of the Bible grows out of that promise.",
+      "older": "Chapter 12 is the hinge on which the whole Bible turns, from the world's story to Israel's. God calls Abram and promises him a great nation, a great name, and blessing for all the families of the earth.",
+      "verse": {
+        "ref": "Genesis 12:3",
+        "text": "all the families of the earth will be blessed through you."
+      }
+    },
+    {
+      "id": "faithful",
+      "name": "Watch for: a faithful God",
+      "still": "In a hall with two pillars a man with a gold chain at his neck holds out his arms to a group of men who kneel and bow before him. Sacks of grain stand behind him.",
+      "younger": "Watch the people closely. They lie, they trick each other, and brothers even sell their own brother, Joseph. They are not heroes to copy. The promise lasts because God keeps it, not because the family is good.",
+      "older": "The people of Genesis lie, scheme, play favorites and betray one another, and God works through all of it without excusing any of it. They are flawed people carried by a faithful God. Joseph says so to the brothers who sold him.",
+      "verse": {
+        "ref": "Genesis 50:20",
+        "text": "what you intended against me for evil, God intended for good"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At the very beginning, with chapter one. Read on to chapter three, and then go to chapter twelve, where the promise begins. Genesis ends with that promise still waiting.",
+      "older": "Start with chapter 1. The book's own page marks eight key chapters: 1, 3, 9, 12, 15, 22, 32 and 50. Describing an act is not the same as approving it. Genesis ends with the promise alive, but not yet kept.",
+      "verse": {
+        "ref": "Genesis 50:24",
+        "text": "God will surely visit you and bring you up from this land to the land He promised"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Genesis says every person is made in God's image. How would you treat someone differently if you remembered that?",
+    "older": "Genesis shows flawed people carried by a faithful God, and it rarely stops to say who was right. Which person in the book do you find hardest to like, and what does God do with them?"
+  },
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Genesis 3", "href": "/study/bible/genesis/3" },
+    { "label": "Genesis 12", "href": "/study/bible/genesis/12" },
+    { "label": "Genesis 50", "href": "/study/bible/genesis/50" }
+  ],
+  "stops": [
+    "creation",
+    "fall",
+    "abraham"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Readers differ on how literally to take chapters 1 to 11. The book's own concern is who God is, who we are, and how God keeps his word. This moving picture takes no side; the readings Christians hold are set out in",
+    "links": [
+      { "label": "the Honest Answer on reading Genesis 1", "href": "/answers/how-should-a-christian-read-genesis-1" }
+    ]
+  },
+  "care": "This part of the story talks about guilt and death. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Genesis in the Study Bible: the whole book, with its map and timeline", "href": "/study/bible/genesis" },
+    { "label": "Abraham's road: a map that draws itself", "href": "/study/explorer/abrahams-road" },
+    { "label": "Creation and the image of God (a moving picture)", "href": "/study/explorer/watch/image-of-god" },
+    { "label": "What sin is (a moving picture)", "href": "/study/explorer/watch/what-sin-is" },
+    { "label": "A blessing for all nations (a moving picture)", "href": "/study/explorer/watch/all-nations" }
+  ],
+  "end": { "label": "Start reading: Genesis 1", "href": "/study/bible/genesis/1" }
+}

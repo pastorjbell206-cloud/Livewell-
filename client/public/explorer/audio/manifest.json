@@ -595,6 +595,116 @@
     }
    ]
   },
+  "book-genesis": {
+   "title": {
+    "file": "book-genesis/title.mp3",
+    "hash": "65afba358ed3ebbf8c09",
+    "seconds": 2.97,
+    "bytes": 18356
+   },
+   "younger": [
+    {
+     "id": "beginnings",
+     "file": "book-genesis/younger/01-beginnings.mp3",
+     "hash": "b24ca10301bbc71cc8b7",
+     "seconds": 22.35,
+     "bytes": 134708
+    },
+    {
+     "id": "layout",
+     "file": "book-genesis/younger/02-layout.mp3",
+     "hash": "9bd8a7563b7b78a5b9a6",
+     "seconds": 24.4,
+     "bytes": 146948
+    },
+    {
+     "id": "image",
+     "file": "book-genesis/younger/03-image.mp3",
+     "hash": "82a24136f4400e7ac3ce",
+     "seconds": 27,
+     "bytes": 162500
+    },
+    {
+     "id": "wrong",
+     "file": "book-genesis/younger/04-wrong.mp3",
+     "hash": "5d427abd48e32007318a",
+     "seconds": 20.62,
+     "bytes": 124340
+    },
+    {
+     "id": "promise",
+     "file": "book-genesis/younger/05-promise.mp3",
+     "hash": "919fe3b39c6d56579da1",
+     "seconds": 23.59,
+     "bytes": 142052
+    },
+    {
+     "id": "faithful",
+     "file": "book-genesis/younger/06-faithful.mp3",
+     "hash": "961f2edf794334e4cc70",
+     "seconds": 25.09,
+     "bytes": 151124
+    },
+    {
+     "id": "start",
+     "file": "book-genesis/younger/07-start.mp3",
+     "hash": "db2a73035d344b0ad44a",
+     "seconds": 25.2,
+     "bytes": 151700
+    }
+   ],
+   "older": [
+    {
+     "id": "beginnings",
+     "file": "book-genesis/older/01-beginnings.mp3",
+     "hash": "d3909b23c9436e7da499",
+     "seconds": 25.62,
+     "bytes": 154292
+    },
+    {
+     "id": "layout",
+     "file": "book-genesis/older/02-layout.mp3",
+     "hash": "5865c57611b8e876f4d4",
+     "seconds": 29.17,
+     "bytes": 175604
+    },
+    {
+     "id": "image",
+     "file": "book-genesis/older/03-image.mp3",
+     "hash": "bea278bbcb64021e90ea",
+     "seconds": 30.51,
+     "bytes": 183668
+    },
+    {
+     "id": "wrong",
+     "file": "book-genesis/older/04-wrong.mp3",
+     "hash": "4def124fd26f8a8c62eb",
+     "seconds": 25.05,
+     "bytes": 150836
+    },
+    {
+     "id": "promise",
+     "file": "book-genesis/older/05-promise.mp3",
+     "hash": "d24b98d9767f8415f45b",
+     "seconds": 23.53,
+     "bytes": 141764
+    },
+    {
+     "id": "faithful",
+     "file": "book-genesis/older/06-faithful.mp3",
+     "hash": "6680c95f724719c602da",
+     "seconds": 26.13,
+     "bytes": 157316
+    },
+    {
+     "id": "start",
+     "file": "book-genesis/older/07-start.mp3",
+     "hash": "e33776c88c306ef23c35",
+     "seconds": 30.3,
+     "bytes": 182372
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

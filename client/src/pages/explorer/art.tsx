@@ -776,6 +776,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <Shape d="M62,84L88,78L90,84Z" off={0.8} />
     </>
   ),
+  /* Genesis: an open scroll, and a gold sun rising over it. */
+  "book-genesis": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M36,46a14,14 0 0,1 28,0Z" />
+      <path className="pl-l" d="M36,46a14,14 0 0,1 28,0" />
+      <path className="pl-f" d="M50,24V16M34,30l-5,-5M66,30l5,-5" />
+      <Shape d="M22,80V50H78V80Z" off={1} />
+      <Shape d="M16,46h8v38h-8ZM76,46h8v38h-8Z" tone="c" off={0.8} />
+      <path className="pl-f" d="M30,58H70M30,65H70M30,72H58" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

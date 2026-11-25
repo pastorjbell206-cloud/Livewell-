@@ -293,6 +293,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The prophets' own answer, in seven moving pictures: a temple that never held God, prophet after prophet, Jeremiah at the gate, the glory leaving, the day it fell, grief kept in Scripture, and a promise larger than what was lost.",
     },
+    "book-genesis": {
+      title: "Genesis: the book of beginnings: Bible Explorer",
+      description:
+        "The whole book of Genesis in seven moving pictures: what it is, its two halves, the image of God, the first sin, the promise to Abraham, a faithful God with a flawed family, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

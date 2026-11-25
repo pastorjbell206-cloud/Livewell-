@@ -1215,6 +1215,11 @@
       "line": "Stories of the Bible, told as the text itself tells them."
     },
     {
+      "id": "books",
+      "name": "Books of the Bible",
+      "line": "One book at a time: what it is, how it is laid out, what to watch for, and where to start."
+    },
+    {
       "id": "ideas",
       "name": "Big ideas",
       "line": "Themes that run from the first page to the last."
@@ -1319,6 +1324,25 @@
         "kingdom"
       ],
       "cards": []
+    },
+    {
+      "slug": "book-genesis",
+      "title": "Genesis: the book of beginnings",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The first book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Genesis as a whole book: its two halves, its ten headings, the image of God, the first sin, the promise to Abraham, a faithful God with a flawed family, and where to begin."
+      },
+      "mark": "book-genesis",
+      "frames": 7,
+      "stops": [
+        "creation",
+        "fall",
+        "abraham"
+      ],
+      "cards": [],
+      "book": "genesis"
     },
     {
       "slug": "holy-spirit",
