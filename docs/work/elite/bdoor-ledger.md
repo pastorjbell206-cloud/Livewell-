@@ -17207,3 +17207,24 @@ Cut in chapter 5: the deep note's lines to Christ (the church as a spiritual hou
 | Exodus 12:48; Proverbs 21:1 | 19-22 | ezra/6.json `cultural` (Exodus 12:48); BSB (Proverbs 21:1, among the BSB data's cross-references for Ezra 1:1) | Repository; BSB text |
 
 Cut in chapter 6: the deep note's lines to Christ (the temple Jesus taught in and his body as the temple, John 2:19-21; the Last Supper at Passover and Christ our Passover, Luke 22 and 1 Corinthians 5:7; the note says the link is not a prophecy in Ezra 6 but the institutions the New Testament says Jesus fulfills); the means of the punishment threatened in verse 11 (not lingered over; the note says only that the threat was meant seriously); a guess that Darius, having fought for his throne, wanted every god on his side (not stated in the repository; cut before commit); the dimensions of 6:3 compared with Solomon's temple (not discussed in the repository).
+
+## The plain notes on Ezra 7 (2026-11-25)
+
+`client/public/bible/notes/ezra/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| About fifty-seven years after 515 BC, Esther's story in the gap; the second half rebuilding the people around the law; Ezra appearing only now | 1-10 | ezra/7.json `story` | Repository |
+| The shortened line to Aaron, skipping generations of 1 Chronicles 6; Seraiah executed in 587 or 586 BC, so son means descendant | 1-10 | ezra/7.json `cultural` | Repository |
+| The scribe trained in writing, law and administration; Ezra a scribe of the law of Moses; the scribes of the Gospels looking back to him | 1-10 | ezra/7.json `cultural`, `words` (sopher); bible/guides/how-we-got-the-old-testament.json | Repository |
+| The road along the Euphrates and south, roughly 900 miles, four months | 1-10 | ezra/7.json `cultural` | Repository |
+| The hand of the LORD (verses 6 and 9) as guidance through ordinary events; study, practice, teach in order; darash as seeking and midrash from its root | 1-10 | ezra/7.json `literary`, `words` (yad, darash) | Repository |
+| Nehemiah 8:8 | 1-10 | bible/guides/canon.json (Ezra's reading and the Levites' explaining); BSB | Repository; BSB text |
+| The date of Ezra: Artaxerxes I and 458 BC, the traditional and most widely held view; Artaxerxes II and 398 BC; the thirty-seventh year and about 428 BC; Nehemiah 8 and 12 and the high priests; no side | 1-10 `hard` | ezra/7.json `historical`; ezra/intro.json `date` | Repository; each view in its holders' terms |
+| The letter in Aramaic; Persian kings supporting temples and backing local laws; Udjahorresnet's statue in the Vatican Museums and Darius I's commission at Sais; the seven counselors and the seven nobles of Esther 1:14; the scribe as a Persian office debated; honoring a people's god as protection for the empire | 11-24 | ezra/7.json `historical`, `cultural`, `literary` | Repository |
+| Esther 1:14; Nehemiah 2:7 | 11-24 | ezra/7.json `historical` (Esther 1:14); BSB | Repository; BSB text |
+| The return to Hebrew and the first person at verse 27, the Ezra Memoir to the end of chapter 9; dat for law, the law of God and the law of the king side by side, the empire giving force to its peoples' religious laws; the same word in Esther; Ezra's first words praise to God; favor turning to courage | 25-28 | ezra/7.json `literary`, `words` (dat), `doctrines` (providence); ezra/intro.json `author` | Repository |
+| Esther 1:19 | 25-28 | ezra/7.json `words` (dat in Esther); BSB | Repository; BSB text |
+| The king's grant of power with heavy penalties: a Persian decree recorded as the empire's grant; the empire's practice; the book's weight on teaching and thanks; not a pattern for any government or church today; no warrant to force faith by threat or harm | 25-28 `hard` | ezra/7.json `words` (dat), `doctrines` (law); bible/guides/reading-narrative.json (description is not recommendation); 1-samuel/intro.json and 2-samuel/intro.json `teaching` (no warrant for violence) | Repository; as the site's notes state it |
+
+Cut in chapter 7: the deep note's lines to Christ (Matthew 13:52 and the scribe trained for the kingdom, Matthew 5:17, and Jesus as the one in whom study, practice and teaching are perfectly lived; the note calls the link thematic); the BSB's own word for Ezra's trip in verse 9, kept out of the note's prose as on earlier runs; the word blessing outside quoted Scripture (caught by the scan and changed to praise before commit).
