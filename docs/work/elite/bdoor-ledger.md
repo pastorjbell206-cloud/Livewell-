@@ -18759,3 +18759,18 @@ Cut in chapter 19: the deep note's lines to Christ (Hebrews 2:14, Ephesians 1:7,
 | The hard note: the real difficulty; timing; application; compassion; 42:7 | 12-29 | job/20.json `hard`, `doctrines` | Repository; each answer in its holders' terms |
 
 Cut in chapter 20: the deep note's lines to Christ (the mockers at the cross, Isaiah 53 and the rich fool of Luke 12:16-21; the note calls the link thematic).
+
+## The plain notes on Job 21 (2026-11-25)
+
+`client/public/bible/notes/job/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The close of the second round; the doctrine tested against the world; the most direct rebuttal; the household hoped for, the instruments, Sheol in peace; Zophar answered point for point; verse 16 | 1-16 | job/21.json `story`, `cultural`, `literary`, `words` (rasha, Sheol) | Repository |
+| Psalm 73:12 (in part: the verse holds a dash) | 1-16 | job/21.json `historical` (Psalm 73); BSB | Repository; BSB text |
+| The hard note: true to experience; Psalm 73, Jeremiah 12, Ecclesiastes; 42:7; not that God never judges; Daniel 12:2; the speeches from the whirlwind; many holding both | 1-16 | job/21.json `hard` | Repository; each answer in its holders' terms |
+| Bildad's lamp (18:5-6); the saying of verse 19 rejected; death the leveler | 17-26 | job/21.json `cultural`, `literary` | Repository |
+| Ecclesiastes 7:15 | 17-26 | job/21.json `historical` (Ecclesiastes on the righteous perishing and the wicked living long); BSB | Repository; BSB text |
+| The travelers' reports; the great man's funeral; hevel and the frame of consolation (21:2, 34; 2:11) | 27-34 | job/21.json `historical`, `cultural`, `words` (tanchum, hevel) | Repository |
+
+Cut in chapter 21: the deep note's lines to Christ (Matthew 5:45 and Luke 16:19-31, which the note says are not prophecy); Mesopotamian laments (not needed).
