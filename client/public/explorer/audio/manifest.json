@@ -1915,6 +1915,116 @@
     }
    ]
   },
+  "book-ruth": {
+   "title": {
+    "file": "book-ruth/title.mp3",
+    "hash": "7840d21636b33ec6f99e",
+    "seconds": 3.14,
+    "bytes": 19364
+   },
+   "younger": [
+    {
+     "id": "story",
+     "file": "book-ruth/younger/01-story.mp3",
+     "hash": "42e48c8a8c209c73588a",
+     "seconds": 29.13,
+     "bytes": 175316
+    },
+    {
+     "id": "layout",
+     "file": "book-ruth/younger/02-layout.mp3",
+     "hash": "4c42298c1b0ad3ffc5cf",
+     "seconds": 26.05,
+     "bytes": 156884
+    },
+    {
+     "id": "loyal",
+     "file": "book-ruth/younger/03-loyal.mp3",
+     "hash": "bdd892215a4de4e8391b",
+     "seconds": 25.94,
+     "bytes": 156164
+    },
+    {
+     "id": "ordinary",
+     "file": "book-ruth/younger/04-ordinary.mp3",
+     "hash": "07f011768528cf67be69",
+     "seconds": 19.12,
+     "bytes": 115268
+    },
+    {
+     "id": "redeemer",
+     "file": "book-ruth/younger/05-redeemer.mp3",
+     "hash": "22503673639ad2eacb0b",
+     "seconds": 25.43,
+     "bytes": 153140
+    },
+    {
+     "id": "david",
+     "file": "book-ruth/younger/06-david.mp3",
+     "hash": "ac8b5522be2c93e3033f",
+     "seconds": 23.2,
+     "bytes": 139748
+    },
+    {
+     "id": "start",
+     "file": "book-ruth/younger/07-start.mp3",
+     "hash": "9c9330e229cc49e6fd68",
+     "seconds": 22.58,
+     "bytes": 136004
+    }
+   ],
+   "older": [
+    {
+     "id": "story",
+     "file": "book-ruth/older/01-story.mp3",
+     "hash": "6aef2a27b4269e9b0796",
+     "seconds": 25.23,
+     "bytes": 151988
+    },
+    {
+     "id": "layout",
+     "file": "book-ruth/older/02-layout.mp3",
+     "hash": "0a521ef8fb2c1c2d4ae9",
+     "seconds": 25.34,
+     "bytes": 152564
+    },
+    {
+     "id": "loyal",
+     "file": "book-ruth/older/03-loyal.mp3",
+     "hash": "25e823181b6db9ae0f42",
+     "seconds": 20.92,
+     "bytes": 126068
+    },
+    {
+     "id": "ordinary",
+     "file": "book-ruth/older/04-ordinary.mp3",
+     "hash": "88eae5d54194bc4d4ff4",
+     "seconds": 24.43,
+     "bytes": 147092
+    },
+    {
+     "id": "redeemer",
+     "file": "book-ruth/older/05-redeemer.mp3",
+     "hash": "db8a663aaaecd03a27ce",
+     "seconds": 22.45,
+     "bytes": 135284
+    },
+    {
+     "id": "david",
+     "file": "book-ruth/older/06-david.mp3",
+     "hash": "fbc4d290812705296067",
+     "seconds": 25.83,
+     "bytes": 155588
+    },
+    {
+     "id": "start",
+     "file": "book-ruth/older/07-start.mp3",
+     "hash": "96e1d091a6c977bba2d5",
+     "seconds": 24.84,
+     "bytes": 149684
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

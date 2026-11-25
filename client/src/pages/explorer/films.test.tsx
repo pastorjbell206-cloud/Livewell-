@@ -1723,6 +1723,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-luke",
     "book-acts",
     "book-revelation",
+    "book-ruth",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2297,5 +2298,21 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
       "Do not be afraid. I am the First and the Last"
     );
     expect(f.frames[2].still).toContain("No one is drawn.");
+  });
+
+  it("Ruth tells the family's deaths in words and draws none, lets Naomi's grief stand, and keeps help in view", () => {
+    const f = filmFile("book-ruth");
+    expect(f.care).toBe(filmFile("life-to-come").care);
+    expect(f.frames[0].younger).toContain("There the father dies, and then both sons.");
+    expect(f.frames[0].older).toContain("the men die there");
+    // The losses are told, never drawn: no still shows a death or a grave.
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /dead|dying|grave|tomb|bod(y|ies)|bury|buried|weep/i
+    );
+    expect(f.frames[1].verse?.text).toBe(
+      "I went away full, but the LORD has brought me back empty."
+    );
+    expect(f.think.older).toContain("the book lets her say it");
+    expect((f.deeper ?? []).map(d => d.href)).toContain("/wisdom/grief");
   });
 });

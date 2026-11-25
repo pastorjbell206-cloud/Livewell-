@@ -921,6 +921,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M47,63V70M61,63V70" />
     </>
   ),
+  /* Ruth: two sheaves of barley bound and standing in a field, and a gold sun over them. */
+  "book-ruth": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M74,22a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M74,22a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <Shape d="M20,84L28,62L18,40H42L32,62L40,84Z" tone="c" off={0.8} />
+      <Shape d="M46,84L55,60L44,32H70L59,60L68,84Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M24,62h12M50,60h14" />
+      <path className="pl-l" d="M20,40l-3,-8M26,40l-1,-9M33,40l1,-9M40,40l3,-8M46,32l-3,-8M53,32l-1,-9M61,32l1,-9M68,32l3,-8" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

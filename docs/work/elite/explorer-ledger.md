@@ -1170,3 +1170,24 @@ Made for ages 7 to 16 with nothing to frighten: no dragon, beast, plague, battle
 | pictures | God is not drawn: under the rainbow there is only light ("No one is drawn" is in the frame's own words). Christ is drawn as the book draws him, a lamb, whole and standing, with no wound. The seven lampstands are plain stands. Nothing that could frighten is drawn | The drawing (`scenes/book-revelation.tsx`); stills read in `/home/user/elite-shots/explorer/run11/stills/book-revelation-sheet.png` |
 | left out | Who John was and when he wrote; the seals, trumpets and bowls one by one; the dragon, the beasts, Babylon, 666; the rapture and the tribulation; any reading of today's news | Deliberate (`films.test.tsx` fails on each of those words); the book page teaches them and is linked |
 | length | Younger 2:58.7, older 3:01.7 | `audio/manifest.json` |
+
+## Run of 2026-11-25, third: eight more Books of the Bible
+
+Ruth, Jonah, Daniel, 1 Corinthians, Ephesians, Philippians, Hebrews and James, by the same method and shared parts. Every claim is from the book's own page (`client/public/bible/notes/<book>/intro.json`) or its chapter notes, named row by row.
+
+### Ruth: loyal love in a hard time (`book-ruth`)
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Ruth 1:1; 1:21; 1:16; 2:12; 2:20; 4:17; 4:14 (some trimmed to a clause) | BSB, by the validator; all Ruth |
+| 1 A small story | Four chapters; set in the days of the judges, told from inside one family in Bethlehem; famine drives them to Moab; the father dies, then both sons; Naomi turns home with nothing, and her Moabite daughter-in-law will not leave her | The Ruth book page, overview and `teaching` "Ruth in a minute", nearly word for word |
+| 2 How it is laid out | Four balanced scenes: the road, the field, the threshing floor, the gate; the third is the turning point; Naomi's emptiness in chapter 1 is answered by the child in her lap in chapter 4 | The book page's `reading` and keyChapters 3 ("the book's turning point"), nearly word for word. Four equal panels, the gold rule under the third |
+| 3 Loyal love | Hesed: a love that keeps faith within a relationship and goes beyond what duty requires; Ruth shows it to Naomi, Boaz in the field; Ruth chooses Naomi's God | The book page, themes "Hesed", word for word; BSB Ruth 1:16 |
+| 4 God in ordinary days | No vision, no wonder; famine ends, harvests come, Ruth happens to enter the field of Boaz; the narrator lets the reader see God's hand without forcing the point | The book page, themes "Providence without miracles", word for word; BSB Ruth 2:3, 12 |
+| 5 The redeemer | A near relative who could rescue a family that had lost everything; Boaz takes the role openly, at the town gate, at cost to himself | The book page, themes "Redemption and the kinsman-redeemer" and `teaching` ("He does it openly, at the town gate"); BSB Ruth 2:20; 4:7-10 |
+| 6 The surprise at the end | Ruth is called the Moabitess again and again, takes refuge in the LORD and becomes an ancestor of David; the small story is a hinge in Israel's history; Matthew names Ruth in the family line of Jesus | The book page, themes "The outsider brought in", overview, `christ` (Matthew 1:5); BSB Ruth 4:17 |
+| 7 Where to start | Read all four chapters at one sitting, slowly; watch the dialogue and the key words; the book treats grief honestly and lets hope arrive slowly | The book page's `reading` and themes "Emptiness turned to fullness", nearly word for word; BSB Ruth 4:14 |
+| care | "If someone you love has died, or if thinking about death makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help." | The care line of "The life to come", whole (`films.test.tsx`) |
+| pictures | No death or grave is drawn; the three deaths are in the captions only. God is not drawn. Ruth and Naomi wear the same clothes in every picture. The sandal at the gate (4:7-8) is held up by Boaz | The drawing (`scenes/book-ruth.tsx`); a sheet of the finished frames read |
+| left out | Who wrote it and when; the threshing-floor scene's delicacy (named only as "at night, on the threshing floor"); the laws of Leviticus 25 and Deuteronomy 25 behind the plot; Israel's law about Moab | Deliberate; the book page is linked |
+| length | Younger 2:55.6, older 2:53.2 | `audio/manifest.json` |

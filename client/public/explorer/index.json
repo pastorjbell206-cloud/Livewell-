@@ -1537,6 +1537,23 @@
       "book": "revelation"
     },
     {
+      "slug": "book-ruth",
+      "title": "Ruth: loyal love in a hard time",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short story of two women, a field and a kind man: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Ruth as a whole book: four scenes, loyal love, a God who works through ordinary days, the kinsman-redeemer, an outsider brought in, and an ending that reaches to David."
+      },
+      "mark": "book-ruth",
+      "frames": 7,
+      "stops": [
+        "land"
+      ],
+      "cards": [],
+      "book": "ruth"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

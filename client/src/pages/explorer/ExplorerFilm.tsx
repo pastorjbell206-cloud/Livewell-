@@ -353,6 +353,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Revelation in seven moving pictures, with nothing to frighten: what it is, how it is laid out, the throne, the Lamb, the ways Christians read its visions, all things made new, and where to start reading.",
     },
+    "book-ruth": {
+      title: "Ruth: loyal love in a hard time: Bible Explorer",
+      description:
+        "The whole book of Ruth in seven moving pictures: what it is, how its four scenes are laid out, loyal love, God at work in ordinary days, the redeemer, the surprise at the end, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

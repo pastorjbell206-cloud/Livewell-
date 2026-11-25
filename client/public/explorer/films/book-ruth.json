@@ -1,0 +1,114 @@
+{
+  "slug": "book-ruth",
+  "title": "Ruth: loyal love in a hard time",
+  "group": "books",
+  "status": "finished",
+  "book": "ruth",
+  "mark": "book-ruth",
+  "line": {
+    "younger": "A short story of two women, a field and a kind man: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Ruth as a whole book: four scenes, loyal love, a God who works through ordinary days, the kinsman-redeemer, an outsider brought in, and an ending that reaches to David."
+  },
+  "poster": "Two women walk a road toward a small town among barley fields, the younger one carrying their bundle.",
+  "frames": [
+    {
+      "id": "story",
+      "name": "A small story",
+      "still": "Two women walk a road toward a small town among barley fields, the younger one carrying their bundle.",
+      "younger": "Ruth is a short story, only four chapters long. It begins sadly. There is no food in Bethlehem, so a family moves far away to Moab. There the father dies, and then both sons. Naomi is left with her sons' wives. One of them is Ruth.",
+      "older": "Ruth is set in the dark days of the judges, but told from inside one family in Bethlehem. Famine drives them to Moab, and the men die there. Naomi turns home with nothing, and her Moabite daughter-in-law will not leave her.",
+      "verse": {
+        "ref": "Ruth 1:1",
+        "text": "In the days when the judges ruled, there was a famine in the land."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in four equal panels, with a road, a sheaf of barley, a night sky and a town gate over them. A gold rule lies under the third panel, the night.",
+      "younger": "The book has four chapters, and each one is a scene. On the road home. In the barley field. At night, on the threshing floor. And at the town gate. It begins with Naomi empty, and it ends with a baby in her lap.",
+      "older": "The four chapters are balanced: scenes on the road, in the field, at the threshing floor, and at the gate. The third is the turning point. Naomi's emptiness in chapter 1 is answered by the child in her lap in chapter 4.",
+      "verse": {
+        "ref": "Ruth 1:21",
+        "text": "I went away full, but the LORD has brought me back empty."
+      }
+    },
+    {
+      "id": "loyal",
+      "name": "Watch for: loyal love",
+      "still": "On a road a young woman holds the arm of an older woman and will not let go. Behind them a third woman walks away, back toward far hills.",
+      "younger": "Watch for a love that will not let go. Naomi tells Ruth to go back to her own home. Ruth will not. She stays with Naomi, and she chooses Naomi's God as her own. The Bible has a special word for love like that.",
+      "older": "The Hebrew word hesed names a love that keeps faith within a relationship and goes beyond what duty requires. Ruth shows it to Naomi, and Boaz shows it in the field.",
+      "verse": {
+        "ref": "Ruth 1:16",
+        "text": "your people will be my people, and your God will be my God."
+      }
+    },
+    {
+      "id": "ordinary",
+      "name": "Watch for: God in ordinary days",
+      "still": "A barley field at harvest. A woman bends to gather fallen stalks behind the reapers, and the owner of the field stands watching, under a gold sun.",
+      "younger": "Watch how God works in this story. Nobody sees a miracle. Ruth goes out to gather leftover grain, and she happens to come to the field of a good man named Boaz.",
+      "older": "No one in Ruth sees a vision or witnesses a wonder. Famine ends, harvests come, Ruth happens to enter the field of Boaz. The narrator lets the reader see God's hand in these ordinary turns without forcing the point.",
+      "verse": {
+        "ref": "Ruth 2:12",
+        "text": "under whose wings you have taken refuge."
+      }
+    },
+    {
+      "id": "redeemer",
+      "name": "Watch for: the redeemer",
+      "still": "At the gate of a town a man holds up a sandal before a row of seated elders, and another man stands back. A lamp with a gold flame hangs in the gateway.",
+      "younger": "Watch for the word redeemer. In Israel, a near relative could step in to rescue a family that had lost everything. Boaz is that relative. He does it openly, at the town gate, and it costs him something.",
+      "older": "The kinsman-redeemer was a near relative responsible for protecting a family's land, name and people when they could not protect themselves. Boaz takes on the role at cost to himself.",
+      "verse": {
+        "ref": "Ruth 2:20",
+        "text": "The man is a close relative. He is one of our kinsman-redeemers."
+      }
+    },
+    {
+      "id": "david",
+      "name": "Watch for: the surprise at the end",
+      "still": "An older woman sits with a baby in her lap. The young mother stands beside her, and two neighbor women come near with their hands open. A gold sun stands over the town.",
+      "younger": "Watch for the surprise at the end. Ruth and Boaz have a son, and Naomi holds him in her lap. That baby will be the grandfather of David, Israel's great king. And Ruth came from another nation.",
+      "older": "Ruth is called the Moabitess again and again, yet she takes refuge in the LORD and becomes an ancestor of David. The small family story turns out to be a hinge in Israel's history. Matthew names Ruth in the family line of Jesus.",
+      "verse": {
+        "ref": "Ruth 4:17",
+        "text": "He became the father of Jesse, the father of David."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter one, and read all four. It does not take long. Listen to what the people say to each other. And notice how slowly the hope comes.",
+      "older": "Read all four chapters at one sitting, slowly. Watch the dialogue, and the words that come back: return, empty and full, kindness, wings, redeem. The book treats grief honestly, and lets hope arrive slowly.",
+      "verse": {
+        "ref": "Ruth 4:14",
+        "text": "Blessed be the LORD, who has not left you this day without a kinsman-redeemer."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Ruth stayed when it would have been easier to leave. Who has stayed with you when things were hard?",
+    "older": "Naomi says plainly that God has dealt bitterly with her, and the book lets her say it. What does it tell you that her complaint was kept in Scripture?"
+  },
+  "read": [
+    { "label": "Ruth 1", "href": "/study/bible/ruth/1" },
+    { "label": "Ruth 2", "href": "/study/bible/ruth/2" },
+    { "label": "Ruth 3", "href": "/study/bible/ruth/3" },
+    { "label": "Ruth 4", "href": "/study/bible/ruth/4" }
+  ],
+  "stops": [
+    "land"
+  ],
+  "cards": [],
+  "care": "If someone you love has died, or if thinking about death makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Ruth in the Study Bible: the whole book", "href": "/study/bible/ruth" },
+    { "label": "A blessing for all nations (a moving picture)", "href": "/study/explorer/watch/all-nations" },
+    { "label": "The king (a moving picture)", "href": "/study/explorer/watch/the-king" },
+    { "label": "Grief and Loss: what the Bible says", "href": "/wisdom/grief" }
+  ],
+  "end": { "label": "Start reading: Ruth 1", "href": "/study/bible/ruth/1" }
+}
