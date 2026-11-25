@@ -17538,3 +17538,22 @@ Cut from the book page: the introduction's echoes that the New Testament does no
 | The hard note: the captains' command, the king's assault on the messenger, the third captain spared; the soldiers not the ones who sent to Ekron; the two emphases; not a pattern; no warrant to wish harm or call down judgment on opponents | 9-18 `hard` | 2-kings/1.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 1: the deep note's lines that the New Testament does not draw (the one greater than Elijah who came not to destroy but to save and received the rejection himself; the chapter's question answered by God dwelling among his people in the Son). The captain's order in 1:9 is paraphrased so that no quotation sits inside another. No care line is needed in this chapter.
+
+## The plain notes on 2 Kings 2 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; three requests and 2:2; the sons of the prophets and 2:3; the fifty at a distance; the Jordan parted (2:8); 2:9; 2:10 paraphrased; 2:11; 2:12; the torn clothes | 1-12 | 2-kings/2.json `summary`, `literary`; BSB | Repository; BSB text |
+| The hinge to the Elisha stories; Horeb and the call (1 Kings 19:16, 19-21); about 852 BC; will the word go on; the sons of the prophets at Bethel, Jericho and Gilgal; Gilgal in the hill country; across the Jordan near where Moses died and Israel crossed; the double portion as the firstborn's share and Elisha as heir; master called father; ruach and its range; the threefold pattern; the whirlwind not described | 1-12 | 2-kings/2.json `story`, `historical`, `cultural`, `literary`, `words` (ruach, se'arah); BSB | Repository |
+| Genesis 5:24; Deuteronomy 21:17; Mark 9:4 | 1-12 | 2-kings/2.json `doctrines` (hope: Enoch), `cultural` (Deuteronomy 21:17), `christ` (Mark 9:4); BSB | Repository; BSB text; Mark 9:4 is the New Testament's own line |
+| The cloak picked up; 2:14; 2:15; the search for three days (2:16-18); 2:19; the new bowl and salt; 2:21 (the LORD's words alone, quoted in single quotes); 2:22 | 13-22 | 2-kings/2.json `summary`; BSB | Repository; BSB text |
+| Adderet and the call; the crossing framed, Elijah's and Elisha's, and Joshua; the question about the LORD, not the cloak; the prophets' search; Jericho rebuilt at the cost of its builder's sons (1 Kings 16:34); salt with purity and covenant; the new bowl; rapha and Marah; the spring at Tell es-Sultan | 13-22 | 2-kings/2.json `historical`, `cultural`, `literary`, `words` (adderet, rapha); BSB | Repository |
+| Exodus 15:26 | 13-22 | 2-kings/2.json `words` (rapha); BSB | Repository; BSB text |
+| Elisha to Bethel; 2:23 (narrative and the chant); 2:24; Carmel and Samaria (2:25) | 23-25 | 2-kings/2.json `summary`; BSB | Repository; BSB text |
+| Bethel the royal shrine and the calf (1 Kings 12:28-29); the range of the Hebrew words; the crowd's size; the taunt and Elijah's going up; shaving and baldness, not said which; healing at Jericho and judgment at Bethel | 23-25 | 2-kings/2.json `historical`, `cultural`, `literary`, `hard` | Repository |
+| Leviticus 26:22; Luke 9:55 | 23-25 | 2-kings/2.json `hard` (Leviticus 26:22); 2-kings/1.json `hard` (Luke 9:54-55); BSB | Repository; BSB text |
+| The hard note: young men or children; a mob of at least forty-two; Bethel and the calf worship; the taunt; the covenant warning; others still find it severe; no comment from the narrator; mauled, not said killed; the LORD's judgment, not personal revenge, and readers differing; not settled here; no warrant to harm, curse a mocker or wish harm on a child or young person; Jesus' rebuke | 23-25 `hard` | 2-kings/2.json `hard`; 2-kings/1.json `hard`; the brief | Repository; the readings in their holders' terms |
+
+Cut in chapter 2: the deep note's lines that the New Testament does not itself draw to this chapter (Elijah's ascension and the gift of his spirit set beside the ascension and Pentecost in Acts 1 and 2, which the note calls thematic; Elisha's name set beside Jesus' name; Elisha's ministry set beside Jesus'; the Jordan crossing set beside Jesus' baptism). The note on Elijah's letter in 2 Chronicles 21:12-15 is left out for length. No care line is used in this chapter; the hard note states plainly that it gives no warrant to harm anyone.
