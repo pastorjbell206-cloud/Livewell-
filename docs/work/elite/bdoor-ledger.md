@@ -18073,3 +18073,17 @@ Cut in chapter 5: the deep note's lines to Christ (the third day of 5:1, which t
 | Genesis 41:43; Luke 1:52 | 6-14 | esther/6.json `cultural` (Genesis 41:42-43); esther/5.json `christ` (Luke 1:52 on reversal); BSB | Repository; BSB text |
 
 Cut in chapter 6: the deep note's lines to Christ (Philippians 2:8-9 and the humbled exalted; the note calls it thematic; Luke 1:52 is kept as Mary's song on God's reversals, with no line drawn from Esther to Christ); a draft 'later' that quoted Genesis 41:43 across its inner quotation (rewritten before commit).
+
+## The plain notes on Esther 7 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The third asking; Esther's plea framed: her life, then her people's, Haman's words, sold; the king learning his queen is among them; the adversary and enemy | 1-6 | esther/7.json `literary`, `historical`, `words` (makar, tsar) | Repository |
+| Esther 3:13; Genesis 37:28 | 1-6 | esther/7.json `words` (makar); BSB | Repository; BSB text |
+| Reclining at banquets; contact with the king's women; the charge as possible misreading; the covered face; falling; told briefly; the decree still standing | 7-10 | esther/7.json `cultural`, `literary`, `story` | Repository |
+| Psalm 7:15; Proverbs 26:27 | 7-10 | esther/7.json `doctrines` (judgment: Psalm 7:15-16); BSB | Repository; BSB text |
+| Esther's silence as Haman begs: what he had done; the decision the king's; no power to overrule; reported without comment; love of enemies and just punishment; a judgment recorded, no invitation to revenge | 7-10 `hard` | esther/7.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 7: the deep note's lines to Christ (Colossians 2:15 and the cross as reversal, Christ's intercession; the note says Haman is not a figure of Christ); Harbonah's words beyond verse 9 and the means of execution (not lingered over).
