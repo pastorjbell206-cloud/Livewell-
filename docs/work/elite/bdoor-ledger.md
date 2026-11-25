@@ -18245,3 +18245,22 @@ Cut in chapter 11: the deep note's parallels to Herod and the flight to Egypt (M
 | The hard note: Kings' account and 2 Chronicles 24; complementary readings; Kings' selection and the wording of 12:2; the Chronicler's moral shape; other sources or theological interpretation; the shared main shape | 17-21 `hard` | 2-kings/12.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 12: the deep note's thematic links (Jesus' body as the temple, John 2:19-21; the widow at the treasury, Mark 12:41-44); Luke 11:51 is kept because Jesus names Zechariah himself. A quotation of 2 Corinthians 8:21 first dropped a comma; the check caught it before it reached the repository. No care line is needed in this chapter.
+
+## The plain notes on 2 Kings 13 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jehoahaz seventeen years, evil (13:1-2); 13:3; 13:4; the deliverer and homes again (13:5); the Asherah pole (13:6); 13:7 (its last words); Jehoash sixteen years, evil (13:10-11); his burial and Jeroboam (13:13) | 1-13 | 2-kings/13.json `summary`; BSB | Repository; BSB text |
+| Jehu's dynasty and the calves; Jehoahaz about 814 to 798 BC and Jehoash about 798 to 782 BC; Hazael and his son; Aram at its height; the small army against Ahab's chariots; the Judges pattern (13:3-5); Adad-nirari III, the tribute from Damascus, the Tell al-Rimah stela naming Joash of Samaria; the deliverer as Adad-nirari, Jehoash or Jeroboam II (14:27); the burial told out of order | 1-13 | 2-kings/13.json `story`, `historical`, `literary`; bible/guides/kings-of-israel-and-judah.json (Jehoahaz 814/813 to 798; Jehoash 798 to 782/781) | Repository; the identifications in their holders' terms |
+| Judges 2:18 | 1-13 | 2-kings/13.json `literary` (the Judges pattern); BSB | Repository; BSB text |
+| Elisha's last illness and 13:14; the bow and the hands (13:15-16); 13:17 (two quotations); the arrows and 13:18; Elisha's anger and 13:19; his death and burial; the Moabite raiders; 13:21 | 14-21 | 2-kings/13.json `summary`; BSB | Repository; BSB text |
+| The Elisha cycle closed; the cry repeating 2:12; father as a title; the prophet as Israel's defense; the arrow as a symbolic opening of war and the east window; the hands; the sign-act; teshu'ah; rock-cut family tombs; life from the grave; three strikes and three victories | 14-21 | 2-kings/13.json `story`, `cultural`, `literary`, `words` (teshu'ah) | Repository |
+| 2 Kings 2:12; 1 Kings 17:17-24 and 2 Kings 4:32-37 (cited); Hebrews 11:35 | 14-21 | 2-kings/13.json `cultural`, `christ` (Elijah and Elisha raising the dead); hebrews/plain/11.json (32-40); BSB | Repository; BSB text |
+| The hard note: told briefly; honoring remains in parts of the church; no one seeking the bones; the frightened mourners; the power the LORD's; not a tool; Elisha's anger; the sign-act testing expectation; the smallness of hope | 14-21 `hard` | 2-kings/13.json `hard` | Repository; the readings in their holders' terms |
+| 13:22; 13:23; Ben-hadad succeeds (13:24); the cities recovered and three victories (13:25) | 22-25 | 2-kings/13.json `summary`; BSB | Repository; BSB text |
+| 13:23 at the center; not repentance but the covenant with the patriarchs, older than the kingdom and Sinai; racham and the womb; the recovery under Jeroboam II; 'to this day' and the fall in chapter 17; three and three | 22-25 | 2-kings/13.json `story`, `literary`, `words` (berit, racham), `doctrines` (covenant) | Repository |
+| Exodus 2:24; Psalm 103:13; Luke 1:72 | 22-25 | 2-kings/13.json `christ` (Mary's and Zechariah's songs on God's mercy to Abraham); BSB | Repository; BSB text; Zechariah's own words on God remembering his covenant |
+
+Cut in chapter 13: the deep note's line from Elisha's bones to Jesus walking out of his tomb, the firstborn from the dead, which it calls a pattern and not a prediction. The first draft's later field for verses 14-21 named only Kings; Hebrews 11:35 was added before it reached the repository. No care line is needed in this chapter.
