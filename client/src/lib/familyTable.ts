@@ -122,10 +122,11 @@ const dayNumber = (iso: string) => Date.UTC(Number(iso.slice(0, 4)), Number(iso.
  * the Friday and Saturday after Thanksgiving take the set's nearest day (its
  * last). The Advent calendar's weeks do not: its days are dates (December 1
  * to 25 in family-seasonal.json), so Advent Sunday and the nights before
- * December 1, and the nights after Christmas in Advent's last week, have no
- * devotion of their own, and Home, /family and Tonight say when the calendar
- * starts instead of lending them a reading dated another day (the walk's
- * polish, 2026-11-23). Null off the map, and on those nights.
+ * December 1 have no devotion of their own, and Home, /family and Tonight say
+ * when the calendar starts instead of lending them a reading dated another
+ * day (the walk's polish, 2026-11-23). The nights after Christmas in Advent's
+ * last week take the next week's devotion, begun early (afterChristmas). Null
+ * off the map, and on the nights before December 1.
  */
 export function tonightOn(date: string): Tonight | null {
   if (!onFamilyMap(date)) return null;
@@ -134,7 +135,8 @@ export function tonightOn(date: string): Tonight | null {
   const week = familyWeekOn(date);
   if (!week) return null;
   if (week.devotion) return { id: week.devotion };
-  if (!week.set || week.set === "advent") return null;
+  if (week.set === "advent") return afterChristmas(date);
+  if (!week.set) return null;
   const today = dayNumber(date);
   let best: { set: FamilySetKey; day: number; gap: number } | null = null;
   for (const w of FAMILY_SETS) {
@@ -168,14 +170,37 @@ export function weekStartOf(date: string): string {
 }
 
 /**
+ * A night after Christmas in the Advent calendar's last week (December 26 in
+ * 2026; December 26 to 30 in 2028) takes the next week's devotion, begun a
+ * few nights early, so the table is not left empty after Christmas and no
+ * later week moves. Null on the nights of Advent before December 1, which
+ * wait for the calendar (tonightOn).
+ */
+function afterChristmas(date: string): Tonight | null {
+  const today = dayNumber(date);
+  const ended = FAMILY_SETS.some((w) => w.set === "advent" && dayNumber(w.end) < today && today - dayNumber(w.end) < 7);
+  if (!ended) return null;
+  const next = familyWeekOn(addDays(weekStartOf(date), 7));
+  return next?.devotion ? { id: next.devotion } : null;
+}
+
+/**
+ * How far nextNewNight looks: the longest run of one devotion is twelve
+ * nights, a week's devotion begun on the night after a Monday Christmas
+ * (December 26, 2028 to January 6, 2029).
+ */
+const NEXT_NIGHT_REACH = 14;
+
+/**
  * The first night after `date` whose devotion is a different one: next Sunday
- * in an ordinary week, tomorrow inside a daily set, and past the nights of an
- * Advent week that have none (tonightOn) to the next that has. Null when the
- * map ends first.
+ * in an ordinary week, tomorrow inside a daily set, past the nights of an
+ * Advent week that have none (tonightOn) to the next that has, and past a
+ * devotion begun early after Christmas to the one after it. Null when the map
+ * ends first.
  */
 export function nextNewNight(date: string): { date: string; tonight: Tonight } | null {
   const now = tonightOn(date);
-  for (let i = 1; i <= 8; i++) {
+  for (let i = 1; i <= NEXT_NIGHT_REACH; i++) {
     const d = addDays(date, i);
     const t = tonightOn(d);
     if (!t) {
@@ -323,10 +348,17 @@ export function lastDone(progress: FamilyProgress): FamilyDone | null {
  * Whether this device has a devotion marked done in the week holding `today`
  * (Sunday up to tonight): the latest such night, or null. There is one
  * devotion a week outside the daily sets, so a family that has done it should
- * be told so on the other six nights, not handed the same Start button.
+ * be told so on the other six nights, not handed the same Start button. A
+ * week's devotion begun early after Christmas (afterChristmas) counts from its
+ * first night, so doing it on December 26 still counts that Sunday.
  */
 export function doneThisWeek(progress: FamilyProgress, id: string, today: string): FamilyDone | null {
-  const from = weekStartOf(today);
+  let from = weekStartOf(today);
+  for (let i = 0; i < 7; i++) {
+    const night = addDays(from, -1);
+    if (familyWeekOn(night)?.set !== "advent" || tonightOn(night)?.id !== id) break;
+    from = night;
+  }
   let best: FamilyDone | null = null;
   for (const d of progress.done) if (d.id === id && d.date >= from && d.date <= today && (!best || d.date > best.date)) best = d;
   return best;

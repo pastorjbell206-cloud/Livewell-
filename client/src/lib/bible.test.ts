@@ -1,4 +1,6 @@
 import { describe, it, expect } from "vitest";
+import fs from "node:fs";
+import path from "node:path";
 
 import { chapterHref, editionSplit, expandGrammar, glossParts, grammarRows, isPoetry, occurrenceLine, outlineTarget, parseRef, plainGloss, poetryLines, safeDefinition, verseCopyText, type BibleBook } from "./bible";
 
@@ -90,5 +92,29 @@ describe("study bible helpers", () => {
 
   it("copies a verse with its reference and the translation's name", () => {
     expect(verseCopyText("Jesus wept.", "John", 11, 35)).toBe("Jesus wept.\nJohn 11:35, Berean Standard Bible");
+  });
+});
+
+describe("the committed Greek lexicon", () => {
+  // Six STEP entries carried another word's definition (scripts/lib/lex-fixes.mjs).
+  const entry = (key: string) => {
+    const bucket = Math.floor(Number(key.slice(1, 5)) / 250);
+    return JSON.parse(fs.readFileSync(path.resolve(__dirname, `../../public/bible/lex/G/${bucket}.json`), "utf8"))[key];
+  };
+  const opens = (key: string) => entry(key).d.normalize("NFC");
+
+  it("gives each misfiled word its own definition", () => {
+    const own: [string, string, string][] = [
+      ["G0062", "<b>ἀγράμματος</b>", "to live in the fields"],
+      ["G2600", "<b>κατά-βᾰσις</b>", "to weigh down"],
+      ["G3426", "<b>μόδιος</b>", "adulteress"],
+      ["G4776", "<b>συν-καθίζω</b>", "besiege"],
+      ["G4821", "<b>συν-βασιλεύω</b>", "to advise"],
+      ["G4844", "<b>συν-πίνω</b>", "a drinking party"],
+    ];
+    for (const [key, head, wrong] of own) {
+      expect(opens(key).startsWith(head.normalize("NFC")), key).toBe(true);
+      expect(entry(key).d, key).not.toContain(wrong);
+    }
   });
 });
