@@ -20606,3 +20606,21 @@ Cut in chapter 4: the deep note's lines to Luke 11:52, John 5:39-40, John 1:18 a
 | No way to read a particular person's illness or loss as God's attack | 8-15 `hard` | the brief (no reader's suffering read as punishment) | Stated as the brief asks |
 
 Cut in chapter 5: nothing drawn to the New Testament, since the New Testament does not quote this chapter. The deep note's mention of Amos 3:8 for the lion is left out to keep the note short.
+
+## The plain notes on Hosea 6 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1; 6:2; 6:3 (its clause; the rest paraphrased) | 1-3 | BSB | BSB text |
+| The dialogue (1-3 the people, 4-6 God); the rhythm of a liturgy; autumn and spring rains; no sin named; after two days as after a short time; national revival | 1-3 | hosea/6.json `literary`, `cultural`, `hard` | Repository |
+| Deuteronomy 32:39 (its clause); Ezekiel 37:1-14 | 1-3 | BSB | BSB text; a cross-reference within Scripture |
+| The hard note: shallow repentance or a model prayer (5:15); both supported; the third day read of Israel, or with 1 Corinthians 15:4 as among the Scriptures Paul meant; never quoted in the New Testament; a reading of pattern | 1-3 `hard` | hosea/6.json `hard`, `christ` | Repository; the readings in their holders' terms |
+| 6:4; 6:5 paraphrased; 6:6 | 4-6 | BSB | BSB text |
+| A parent at a loss; dew and mist burned off; rain against dew; mercy as hesed; sacrifice commanded, not abolished; this, not that as this more than that; the prophets on sacrifice without faithfulness | 4-6 | hosea/6.json `literary`, `cultural` | Repository |
+| 1 Samuel 15:22 (its clause); Micah 6:6-8; Matthew 9:13 (its clause); Matthew 12:7 paraphrased | 4-6 | hosea/6.json `cultural`, `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+| 6:7; 6:8; 6:9-11 paraphrased | 7-11 | BSB | BSB text |
+| The 730s BC; Gilead and the fifty men with Pekah (2 Kings 15:25); Shechem a city of refuge (Joshua 20:7) and murders by priests; Adam as the town (Joshua 3:16) or the first man, both defended; verse 11 read two ways and sometimes joined to chapter 7 | 7-11 | hosea/6.json `historical`, `literary` | Repository; both readings in their holders' terms |
+
+Cut in chapter 6: the deep note's picture of Jesus as Israel's representative experiencing its revival, which the New Testament does not draw; 6:2 is given only as a reading the New Testament never quotes. The people's words 'let us' stand only inside quoted Scripture.
