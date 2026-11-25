@@ -22,7 +22,8 @@ His limit for em-dashes is 2 to 3 per 500 words, which is 4 to 6 per 1,000. Head
 |---|---|---|---|---|---|---|---|---|---|
 | Introduction: Every Generation Was Convinced | 2,379 | 2,376 | -0.1% | 36 (15.1) | 9 (3.8) | 106 (44.6) | 66 (27.8) | 32 | PASS |
 | Chapter 1: You Are Not the Exception | 4,566 | 4,559 | -0.2% | 63 (13.8) | 11 (2.4) | 155 (33.9) | 101 (22.2) | 50 | PASS |
-| **All 2** | 6,945 | 6,935 | -0.1% | 99 (14.3) | 20 (2.9) | 261 (37.6) | 167 (24.1) | 82 | |
+| Chapter 2: How the Bible Gets Translated by the Room You're In | 4,482 | 4,482 | +0.0% | 67 (14.9) | 13 (2.9) | 135 (30.1) | 78 (17.4) | 49 | PASS |
+| **All 3** | 11,427 | 11,417 | -0.1% | 166 (14.5) | 33 (2.9) | 396 (34.7) | 245 (21.5) | 131 | |
 
 ## Introduction: Every Generation Was Convinced (`sec01.xhtml`)
 
@@ -70,3 +71,27 @@ Five pairs:
    After: It was hard then, it is hard now, and it will always be hard, because communities are where we live and breathe and receive our identities, and to question what a community believes is always experienced, by the community and often by the questioner, as a kind of betrayal. But the alternative is to be the slaveholder at his Bible, the German Christian at his hymnal, the Pharisee at his prayers.
 
 Left alone, and why. The two-step is this chapter's argument, not its ornament: "A blind spot is not ignorance", "The sincerity is not a defense. The sincerity is the problem.", "This is not a counsel of despair. It is a counsel of sobriety.", "They don't feel like blindness. They feel like sight." Each is a definition or a verdict, and none was recast. Barth's diagnosis of the German Christians and the fair statement of the pro-slavery argument ("This is a coherent argument. It is wrong — catastrophically, damnably wrong — but it is coherent") took nothing but a dash or a bracket. One-line paragraphs that are hinges stay ("But we are different."; "Urgency is always the friend of the blind spot. We will return to this."; "He was, at the moment he said this, the prophet they would kill."). "Let us" became "Let's" twice; the name counter reads "Let" as a name, hence the allowance.
+
+
+## Chapter 2: How the Bible Gets Translated by the Room You're In (`sec04.xhtml`)
+
+Words 4,482 to 4,482. Em-dashes in his prose 67 to 13 (14.9 to 2.9 per 1,000 words). Tells 135 to 78 (30.1 to 17.4 per 1,000). Mean sentence 26.7 words to 28.8; sentences of eight words or fewer 25.9% to 19.3%; of five or fewer 16.0% to 10.0%. 49 edits; paragraphs 38 to 38.
+
+By kind (before to after): emdash 67 to 13, not_but 14 to 15, not_just 1 to 1, NotX.Y 3 to 1, isnt_its 4 to 3, triplet 17 to 18, frag3 1 to 0, anaphora 3 to 3, stock 5 to 5, intens 16 to 14, colon_reveal 0 to 1, short_close 4 to 4.
+
+Fact diff: **PASS**. Fixed blocks (headings, subtitle, pull quote, block quotes and their references) identical; 25 quoted strings, 2 Scripture references, 0 years, 1 numbers in digits, 29 number words, proper names by count, and 111 hedge words (after: 111) compared. Allowed, as words the name counter misread: {"caps": ["Learn", "Map", "Profitable", "Name"]}.
+
+Five pairs:
+
+1. Before: Wright is not saying all readings are equally valid; he is saying that the path to a more faithful reading runs through greater honesty about the reading you already have — about the glasses you are already wearing — rather than the pretense that you are reading without glasses at all.
+   After: Wright is not saying all readings are equally valid; he is saying that the path to a more faithful reading runs through greater honesty about the reading you already have, about the glasses you are already wearing, rather than the pretense that you are reading without glasses at all.
+2. Before: These are real texts. They are important texts. There is nothing wrong with preaching them — but there is something to be examined in what sits beside them in the canon and is never preached.
+   After: These are real texts, and important ones. There is nothing wrong with preaching them, but there is something to be examined in what sits beside them in the canon and is never preached.
+3. Before: Ask what circumstances produced it. Ask whose interests it served.
+   After: Ask what circumstances produced it and whose interests it served.
+4. Before: That is a staggering claim — not just that Scripture is useful or inspiring or morally instructive, but that it is the very breath of God, and that its purpose includes reproof and correction, not merely confirmation and encouragement. Most communities quote the first half — "all Scripture is God-breathed" — regularly. The second half lands less often. Profitable for reproof. For correction. Not for endorsement. Not for validation of what you already believe. For the harder thing:
+   After: That is a staggering claim: not just that Scripture is useful or inspiring or morally instructive, but that it is the very breath of God, and that its purpose includes reproof and correction, not merely confirmation and encouragement. Most communities quote the first half ("all Scripture is God-breathed") regularly. The second half lands less often: profitable for reproof, for correction. Not for endorsement or for validation of what you already believe, but for the harder thing:
+5. Before: What you can do is know you are in it. Name it. Map its walls. Learn where the windows are. And then read Scripture again — not in the pretense that you have escaped the room, but with the honest, accountable, correctable posture of someone who knows exactly where they are standing, and knows that standing there, they can only see so far.
+   After: What you can do is know you are in it: name it, map its walls, learn where the windows are. And then read Scripture again, not in the pretense that you have escaped the room, but with the honest, accountable, correctable posture of someone who knows exactly where they are standing, and knows that standing there, they can only see so far.
+
+Left alone, and why. The three "who benefits" cases (patriarchal authority, prosperity, Christian nationalism) each end on a hedge ("This does not prove ...", "Again, this is not a proof."); the hedges are word for word and the cases took only a bracket for a dash. The Wright, Pelikan and Chesterton paragraphs took punctuation only. "Tradition invites examination. Traditionalism forecloses it." and "That is not a rejection of tradition. That is tradition, functioning the way it is supposed to." are verdicts. Thirteen dashes stay, among them the two long asides that define prosperity teaching and Christian nationalism, where commas would tangle the lists inside them. Allowed: four words that opened fragments and now sit inside a sentence (Name, Map, Learn, Profitable).
