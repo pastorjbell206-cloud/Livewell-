@@ -20273,3 +20273,19 @@ Cut in chapter 23: the deep note's lines to Acts 2:30-36 and the new covenant, w
 | The hard note: Berechiah and Jehoiada; Zechariah 1:1; the skeptics' charge and the merging view; Jerome around 398 and the Nazarenes' gospel; the manuscript lacking the words; a second name or a grandfather; the later Zechariah and why most reject him; no side chosen; Abel to Zechariah, first and last in the Hebrew order; Jesus speaking to leaders of his own day; Deuteronomy 24:16; the false reading of blame, rejected plainly | 17-27 `hard` | 2-chronicles/24.json `hard`; matthew/plain/23.json (the hard question on verse 35 and the note on blame); matthew/23.json | Repository; agrees with the site's notes on Matthew 23 |
 
 Cut in chapter 24: the deep note's line from the murdered prophets to Jesus' own death, beyond the words Jesus himself spoke. The stoning is named, not described. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 25 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Twenty-nine years (25:1); 25:2; the executions (25:3); 25:4 (its clause); the hired troops (25:6); 25:7 (its first sentence); 25:9 (the prophet's answer); the dismissal (25:10); the Valley of Salt (25:11); 25:12 named, not described; the raid (25:13) | 1-13 | BSB | BSB text |
+| Shalem; the divided heart; the habit of decline; about 796 to 767 BC and the overlap (25:25); 2 Kings 14:1-20 and what Chronicles adds; Edom's revolt (21:8-10); hiring and the sum; the objection to relying on Israel; the captives reported without praise, the corrupting success | 1-13 | 2-chronicles/25.json `story`, `historical`, `cultural`, `words` (shalem), `hard` | Repository |
+| Deuteronomy 24:16 | 1-13 | BSB | BSB text |
+| 25:14; 25:15 (the prophet's question); 25:16 (the king's question and the prophet's last sentence); the challenge (25:17); the fable (25:18) paraphrased; the defeat and the wall (25:21-24); 25:27 | 14-28 | BSB | BSB text |
+| The conquered gods' logic; darash turned; yaats in 25:16-17; 25:20 as the hidden cause; Jehoash grandson of Jehu; the fable and Judges 9; Beth-shemesh and Lachish | 14-28 | 2-chronicles/25.json `historical`, `cultural`, `literary`, `words` (darash, yaats) | Repository |
+| Judges 9:15 (its last sentence) | 14-28 | BSB | BSB text |
+| The hard note: the atrocity reported without praise; not commanded; ancient practice; the corrupting success; numbers as units; the verdict on pride and idolatry | 14-28 `hard` | 2-chronicles/25.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 25: the deep note's line to Matthew 4:8-10, which does not cite this chapter. No care line is needed in this chapter; the killing of captives is named, not described.
