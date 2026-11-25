@@ -25,6 +25,7 @@ import { CrisisBlock } from "@/components/CrisisBlock";
 import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
+import { followHash } from "@/lib/followHash";
 import { isPublicEssayHref } from "@/lib/shelf";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import { READER_STATES, searchNeeds, type NeedEntry, type NeedsIndex, type ReaderState } from "@/lib/needs";
@@ -117,10 +118,12 @@ export default function Help() {
   }, [nonce, asked, navigate]);
 
   // Pages link here as /help#help-now. The router does not scroll to a
-  // fragment on its own, so bring the help lines into view on arrival.
+  // fragment on its own, so bring the help lines into view on arrival, once
+  // the held page (the crisis line and the head, from the prerendered HTML)
+  // has given way to this one (lib/followHash waits for that).
   useEffect(() => {
     if (typeof window === "undefined" || window.location.hash !== "#help-now") return;
-    requestAnimationFrame(() => document.getElementById("help-now")?.scrollIntoView({ block: "start" }));
+    followHash("#help-now");
   }, []);
 
   const results = useMemo(() => (needs ? searchNeeds(query, needs) : []), [needs, query]);

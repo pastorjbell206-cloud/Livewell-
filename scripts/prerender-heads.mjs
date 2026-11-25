@@ -881,6 +881,26 @@ const PAGE_BODIES = {
       `<p>Ask in your own words, or type a passage like John 3:16. Find Help, the essays, the answers, the plans, the guides, the family devotions, and the tools are all in here.</p>`,
     ]),
   }),
+  // Find Help: the crisis line first, word for word as the page has it
+  // (pages/Help.tsx), so 988, the Crisis Text Line and 911 can be called or
+  // texted from the first paint, before the app has loaded, and without it;
+  // then the page's head and the needs most people bring, the same twelve
+  // (client/src/data/help-chips.json). The crisis section is not held: it
+  // comes with the page, under the chips, where it stays. No search box, so
+  // nothing typed into a held copy is lost.
+  "/help": async () => {
+    const chips = readJsonSafe("client/src/data/help-chips.json") ?? [];
+    if (!chips.length) return null;
+    return {
+      html: article([
+        `<p>In danger or thinking about ending your life? Call or text <a href="tel:988">988</a>, text <a href="sms:741741?&amp;body=HOME">HOME to 741741</a>, or call <a href="tel:911">911</a>. <a href="#help-now">More lines below</a></p>`,
+        `<h1>Find Help</h1>`,
+        `<p class="pre-subtitle">What are you facing?</p>`,
+        `<p class="pre-lede">Say it the way you would say it to a friend. Each page here starts with what you are carrying, reads Scripture in context, and ends with something you can do this week and people who can help.</p>`,
+        `<section><h2 class="pre-kicker">What people bring most</h2>\n<ul>\n${chips.map((c) => `<li><a href="/help/${escapeHtml(c.slug)}">${escapeHtml(c.title)}</a></li>`).join("\n")}\n</ul></section>`,
+      ]),
+    };
+  },
   // The Wisdom Finder: its head in the page's own words (ToolHead in
   // pages/tools/WisdomFinder.tsx, the name from lib/toolsList.ts), then the
   // areas of life, each opening that area on the page (finder.json).
