@@ -18460,3 +18460,22 @@ Cut in chapter 22: the deep note's lines from the new covenant to Jesus (Luke 22
 | 2 Chronicles 35:25 (its first words); Jeremiah 22:10 | 28-37 | 2-kings/23.json `historical` (Jeremiah 22:11); BSB | Repository; BSB text |
 
 Cut in chapter 23: the deep note's line from Josiah's failure to save to a son of David who bore judgment for his people, and from Hinnom to Mark 9:43-48 beyond the plain fact of the word Gehenna. No care line is used in this chapter; the hard note states plainly that it gives no warrant for harm over religion.
+
+## The plain notes on 2 Kings 24 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 24:1 (its first sentence); vassal three years and rebellion; the raiders and 24:2 (its last words); 24:3; 24:4; Jehoiachin (24:6); 24:7 paraphrased | 1-7 | 2-kings/24.json `summary`; BSB | Repository; BSB text |
+| Isaiah's word (20:17) arriving; Carchemish in 605 BC; Egypt's loss; Nebuchadnezzar to 562 BC; the battle near Egypt's border around 601 BC in the Babylonian Chronicle; the raiders; the explanation before the description; the LORD and the prophets' word; God over the plans of kings; salach only of God, and Solomon's prayer (1 Kings 8:30) | 1-7 | 2-kings/24.json `story`, `historical`, `literary`, `words` (salach), `doctrines` (sovereignty) | Repository |
+| Jeremiah 46:2 (its phrase); Ezekiel 18:32 (its first sentence) | 1-7 | bible/guides/kings-of-israel-and-judah.json (Jeremiah 46:2 and Carchemish); 2-kings/24.json `hard` (Ezekiel's call to repent); BSB | Repository; BSB text |
+| The hard note: verse 4 beside God's readiness to forgive; not the end of mercy for individuals; Jeremiah and Ezekiel calling to repent; the nation's built-up guilt and the verdict on Jerusalem; announced and deferred; Josiah's reform; seventy years and the new covenant (Jeremiah 29:10; 31:34); no warrant to read any people's suffering as deserved or to blame the Jewish people; God's verdict through his own prophets to his own people | 1-7 `hard` | 2-kings/24.json `hard`; the brief | Repository; stated as the brief asks |
+| Jehoiachin at eighteen, three months, Nehushta (24:8-9); the siege and the king (24:10-11); the surrender (24:12); 24:13's first words; the treasures and Solomon's gold; 24:14 (its last sentence); the king, his mother, wives, officials and leaders (24:15) | 8-16 | 2-kings/24.json `summary`; BSB | Repository; BSB text |
+| Late 598 BC; the Babylonian Chronicle, Adar, the seventh year, March 597 BC; the eighth year here and the different reckoning; removing those able to lead revolt; craftsmen and metalsmiths; the poorest left; the queen mother's influence; golah; Ezekiel among the exiles | 8-16 | 2-kings/24.json `historical`, `cultural`, `words` (golah) | Repository. Sources differ, and the note says so: the chapter counts Nebuchadnezzar's eighth year, the Babylonian Chronicle his seventh |
+| Ezekiel 1:2 (quoted after its dash); Jeremiah 29:7 | 8-16 | 2-kings/24.json `historical` (Ezekiel 1:2; Jeremiah 29); BSB | Repository; BSB text |
+| Mattaniah renamed Zedekiah (24:17); twenty-one, eleven years, evil (24:18-19); 24:20 | 17-20 | 2-kings/24.json `summary`; BSB | Repository; BSB text |
+| Renaming as the overlord's authority (23:34); Zedekiah's name and its irony; 597 to 587 or 586 BC; Jeremiah urging submission; marad and Hezekiah (18:7); three accounts, each shorter; the hanging sentence | 17-20 | 2-kings/24.json `historical`, `cultural`, `literary`, `words` (marad); bible/guides/kings-of-israel-and-judah.json (Zedekiah 597 to 586) | Repository. Sources differ: the chapter note and the guide give 586; the introduction gives 587 or 586, and the note gives both |
+| Jeremiah 22:24 (its phrase); Matthew 1:12 | 17-20 | 2-kings/24.json `christ` (Jeremiah 22:24-30; Matthew 1:11-12); BSB | Repository; BSB text; Matthew's own genealogy |
+
+Cut in chapter 24: the deep note's line from Jehoiachin to Jesus as the son of David who took up the interrupted line, beyond Matthew's own genealogy. No care line is used in this chapter; the hard note states plainly that the verdict gives no warrant to call any people's suffering deserved, and the disaster care line stands in chapter 25.
