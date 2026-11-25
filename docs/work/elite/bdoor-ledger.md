@@ -19221,3 +19221,17 @@ Cut in chapter 33: the deep note's lines to Christ (1 Timothy 2:5-6 and Mark 10:
 | Verse 33 and 40:8; joining the friends; clapping as scorn; without knowledge and 38:2 | 31-37 | job/34.json `story`, `cultural`, `literary` | Repository |
 
 Cut in chapter 34: the deep note's lines to Christ (the Gospels and Romans 3:26 beside Elihu's picture of the impartial ruler; the note calls them a fulfilment of the wider picture); Hammurabi's prologue (not needed).
+
+## The plain notes on Job 35 (2026-11-25)
+
+`client/public/bible/notes/job/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The third speech between 34 and 36-37; the two claims answered; Eliphaz's 22:2-3; the ancient idea that the gods need people, rejected; God beyond harm or gain | 1-8 | job/35.json `story`, `cultural`, `literary` | Repository |
+| Genesis 6:6; Psalm 147:11 | 1-8 | job/35.json `hard`; BSB | Repository; BSB text |
+| The hard note: not indifference; no debt; grief at sin and delight in the faithful as love, not need; the two halves | 1-8 | job/35.json `hard` | Repository |
+| Oppression real (chapter 24); seeking relief without God; the formal cry; songs in the night and confidence in the dark; prayer as demand or turning; unfair to Job, who has cried to God | 9-16 | job/35.json `historical`, `cultural`, `literary`, `words` (zamir, shav) | Repository |
+| Psalm 42:8 | 9-16 | the notes setting Psalm 42:8 beside Job 35:10; BSB | Repository; BSB text |
+
+Cut in chapter 35: the deep note's lines to Christ (Acts 17:25, Mark 14:26 and the cross; the note calls the link thematic).
