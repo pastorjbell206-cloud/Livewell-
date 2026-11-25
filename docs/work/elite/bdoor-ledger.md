@@ -19678,3 +19678,20 @@ Cut in chapter 18: the deep note's typological line from David's reign to Christ
 | 2 Samuel 10:18 (its clause); 1 Corinthians 16:13 | 6-19 | BSB | BSB text |
 
 Cut in chapter 19: the deep note's thematic contrast with Colossians 1:20, which the New Testament does not draw from this chapter. The forty thousand horsemen of the deep note's reading of 2 Samuel 10:18 are left out, since the BSB there reads foot soldiers. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 20 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 20:1; the crown and plunder (20:2); 20:3 (its first sentence) | 1-3 | BSB | BSB text |
+| Spring as campaign season; Rabbah on the site of Amman; the talent about thirty kilograms; the crown ceremonial or an idol's; malkam and Milcom; the crown as transferred rule; the verb in 20:3, the King James reading, 2 Samuel 12:31 and forced labor; the three parts of 2 Samuel drawn on | 1-3 | 1-chronicles/20.json `historical`, `cultural` | Repository |
+| 2 Samuel 11:1 | 1-3 | BSB | BSB text |
+| The hard note: Bathsheba and Uriah (2 Samuel 11-12) and the revolts (2 Samuel 13-20) left out; the critics' reading; the majority reading; the census told in full (chapter 21); Uriah named at 11:41; a second portrait | 1-3 `hard` | 1-chronicles/20.json `story`; 1-chronicles/11.json `hard` (as already published in plain/11.json) | Repository; the readings in their holders' terms |
+| Sibbecai and Sippai (20:4); 20:5; the man at Gath and Jonathan (20:6-7); 20:8 | 4-8 | BSB | BSB text |
+| Undated episodes; Gezer and Gath; the Rephaim and the three views of the term; charaph and Goliath; the courage spread to David's soldiers | 4-8 | 1-chronicles/20.json `historical`, `literary`, `words` (rapha, charaph) | Repository |
+| Elhanan and Goliath: 2 Samuel 21:19 in Hebrew, 1 Samuel 17, Chronicles' Lahmi; the three readings; the site's numbers page; no side taken | 4-8 | 2-samuel/plain/21.json (15-22 `hard`); questions/contradictions/numbers-in-samuel-kings-and-chronicles.json | Repository |
+| 1 Samuel 17:45 | 4-8 | BSB | BSB text |
+
+Cut in chapter 20: the deep note's thematic line to Colossians 2:15 and Romans 8:37, which the New Testament does not draw from this chapter. Polydactyly as a named condition is left out. No care line is needed in this chapter.
