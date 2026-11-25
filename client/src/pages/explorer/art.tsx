@@ -908,6 +908,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M30,42C38,32 40,24 35,12C26,22 23,32 30,42Z" />
     </>
   ),
+  /* Revelation: a lamb standing on a hill, gold light behind it. */
+  "book-revelation": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M30,50a20,20 0 0,1 40,0Z" />
+      <path className="pl-l" d="M30,50a20,20 0 0,1 40,0" />
+      <path className="pl-f" d="M50,22V14M30,30l-5,-5M70,30l5,-5" />
+      <Shape d="M10,84C24,56 76,56 90,84Z" tone="g" off={1} />
+      <Shape d="M40,58C36,50 44,44 50,47C53,41 64,42 64,49C72,49 72,60 66,61C63,66 46,66 44,61C39,61 39,60 40,58Z" off={0.8} />
+      <path className="pl-l" d="M47,63V70M61,63V70" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

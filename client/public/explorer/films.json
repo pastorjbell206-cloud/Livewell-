@@ -56,6 +56,7 @@
     { "slug": "book-mark", "title": "Mark: the story at a run", "group": "books", "status": "finished" },
     { "slug": "book-luke", "title": "Luke: good news for the lost", "group": "books", "status": "finished" },
     { "slug": "book-acts", "title": "Acts: to the ends of the earth", "group": "books", "status": "finished" },
+    { "slug": "book-revelation", "title": "Revelation: the Lamb on the throne", "group": "books", "status": "finished" },
 
     { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
     { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },

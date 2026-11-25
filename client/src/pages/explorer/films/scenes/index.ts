@@ -66,6 +66,7 @@ export const FILM_SCENES: Record<
   "book-mark": () => import("./book-mark"),
   "book-luke": () => import("./book-luke"),
   "book-acts": () => import("./book-acts"),
+  "book-revelation": () => import("./book-revelation"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

@@ -1805,6 +1805,116 @@
     }
    ]
   },
+  "book-revelation": {
+   "title": {
+    "file": "book-revelation/title.mp3",
+    "hash": "0dcd95ae4dcf7a72aed8",
+    "seconds": 3.31,
+    "bytes": 20372
+   },
+   "younger": [
+    {
+     "id": "unveiling",
+     "file": "book-revelation/younger/01-unveiling.mp3",
+     "hash": "b188457a479feb181490",
+     "seconds": 26.63,
+     "bytes": 160340
+    },
+    {
+     "id": "layout",
+     "file": "book-revelation/younger/02-layout.mp3",
+     "hash": "18b54c0c5d1640a4135c",
+     "seconds": 25.7,
+     "bytes": 154724
+    },
+    {
+     "id": "throne",
+     "file": "book-revelation/younger/03-throne.mp3",
+     "hash": "2cbdb8fbac932214a62d",
+     "seconds": 23.31,
+     "bytes": 140468
+    },
+    {
+     "id": "lamb",
+     "file": "book-revelation/younger/04-lamb.mp3",
+     "hash": "57a015780700323d77e0",
+     "seconds": 23.07,
+     "bytes": 139028
+    },
+    {
+     "id": "readings",
+     "file": "book-revelation/younger/05-readings.mp3",
+     "hash": "19cff33d35699f67843e",
+     "seconds": 27.53,
+     "bytes": 165812
+    },
+    {
+     "id": "new",
+     "file": "book-revelation/younger/06-new.mp3",
+     "hash": "12a8fce17b19fe388faa",
+     "seconds": 25.04,
+     "bytes": 150836
+    },
+    {
+     "id": "start",
+     "file": "book-revelation/younger/07-start.mp3",
+     "hash": "ac4f55d275735ed5ba92",
+     "seconds": 23.2,
+     "bytes": 139748
+    }
+   ],
+   "older": [
+    {
+     "id": "unveiling",
+     "file": "book-revelation/older/01-unveiling.mp3",
+     "hash": "b0aaba548b2787ba8124",
+     "seconds": 26.41,
+     "bytes": 159044
+    },
+    {
+     "id": "layout",
+     "file": "book-revelation/older/02-layout.mp3",
+     "hash": "83f3ab35b652c012cd52",
+     "seconds": 26.96,
+     "bytes": 162356
+    },
+    {
+     "id": "throne",
+     "file": "book-revelation/older/03-throne.mp3",
+     "hash": "fef5e1795a75c3e32a40",
+     "seconds": 26.39,
+     "bytes": 158900
+    },
+    {
+     "id": "lamb",
+     "file": "book-revelation/older/04-lamb.mp3",
+     "hash": "2c852afee10c5526c7ae",
+     "seconds": 21.3,
+     "bytes": 128372
+    },
+    {
+     "id": "readings",
+     "file": "book-revelation/older/05-readings.mp3",
+     "hash": "cb37a1ccbb90d729e77e",
+     "seconds": 26.64,
+     "bytes": 160484
+    },
+    {
+     "id": "new",
+     "file": "book-revelation/older/06-new.mp3",
+     "hash": "dd18356de96f67f80489",
+     "seconds": 22.7,
+     "bytes": 136724
+    },
+    {
+     "id": "start",
+     "file": "book-revelation/older/07-start.mp3",
+     "hash": "01123fc6fce49f1d16d1",
+     "seconds": 27.05,
+     "bytes": 162788
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

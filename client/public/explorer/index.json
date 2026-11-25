@@ -1520,6 +1520,23 @@
       "book": "acts"
     },
     {
+      "slug": "book-revelation",
+      "title": "Revelation: the Lamb on the throne",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The last book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Revelation as a whole book: letters to seven churches, a throne, a Lamb who was slain, the ways Christians read its visions, the making new of all things, and where to begin."
+      },
+      "mark": "book-revelation",
+      "frames": 7,
+      "stops": [
+        "new-creation"
+      ],
+      "cards": [],
+      "book": "revelation"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
