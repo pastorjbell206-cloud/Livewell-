@@ -20241,3 +20241,19 @@ Cut in chapter 21: the graphic details of 21:15 and 21:19, named and not describ
 | 2 Kings 11:2 (its second sentence) | 10-12 | BSB | BSB text |
 
 Cut in chapter 22: the deep note's pattern from Joash to Matthew 2:13-16, which the deep note itself says Matthew does not cite. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 23 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The covenant with the commanders (23:1); the gathering (23:2); 23:3 (its first clause, Jehoiada's exclamation and its clause); the guards and the rule of entry (23:4-7); David's weapons (23:9); 23:11 (its first sentence and the shout) | 1-11 | BSB | BSB text |
+| The lamp set back; about 841 to 835 BC; Jehoiada as guardian; the divisions and the Sabbath changeover (1 Chronicles 24); David's weapons; 2 Kings 11 and the Carites; the two readings of the Levites' role; the crown, the Testimony (edut) and Deuteronomy 17:18-20; mashach and mashiach; the acclamation | 1-11 | 2-chronicles/23.json `story`, `historical`, `cultural`, `words` (edut, mashach) | Repository |
+| Deuteronomy 17:18 (its first sentence) | 1-11 | BSB | BSB text |
+| Athaliah at the temple (23:12-13); the order (23:14); 23:15; 23:16; Baal's temple and Mattan (23:17); the order restored (23:18-20); 23:21 (its last clauses) | 12-21 | BSB | BSB text |
+| Secrecy to celebration; berit three times; the sounds; qesher and the irony; Baal's temple under Athaliah, Jezebel, 2 Kings 10:18-28; Mattan unknown; torn clothes; rest | 12-21 | 2-chronicles/23.json `historical`, `cultural`, `literary`, `words` (berit, qesher) | Repository |
+| 2 Kings 11:17 (its first sentence) | 12-21 | BSB | BSB text |
+| The hard note: restoration, not rebellion; Athaliah's murders; Deuteronomy 13; the violence felt; not a model; Romans 12:17-21; the tyrant debate | 12-21 `hard` | 2-chronicles/23.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 23: the deep note's lines to Acts 2:30-36 and the new covenant, which do not cite this chapter. Athaliah's death is told in the text's own words. No care line is needed in this chapter.
