@@ -1,0 +1,45 @@
+{
+  "piece": "did-christianity-copy-pagan-myths",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read agrees with the first that this essay is clean and sits in the mature register. Literal search of body and excerpt: no em-dash, no en-dash, no exclamation point, no Forbidden Language word or phrase, no hedge from the list, no connective filler, no stated title, years, book count or denomination, no one-directional politics, and no crisis passage needing a path to help. One of the six findings survives. The other five either flagged plain habits the brief names as his own (plain signposting, a voiced concession), or offered a replacement that was weaker than the sentence it replaced or touched a paraphrase the ledger had already corrected twice against the source. Nothing new was found on the second pass.",
+  "keep": [
+    {
+      "quote": "Nobody borrowing from the heroes would have chosen that.",
+      "tell": "Repeated sentence frame used as a paragraph closer",
+      "why": "'Nobody' carries five sentences in the piece, and this is the second time in the same section that a paragraph ends on a short 'Nobody ...' line ('Nobody asks which year Osiris died' closes the section's first paragraph). The other four each do something this one doesn't: the Horus line is the skeptic's own thought, the Bacchae line makes the point that even the slanderers in the play assume a man, the Osiris line is the hinge of the section, and the last one is the closing question. This is the one a careful ear hears as a stamp. The point stays; only the first word changes. Checked against the ledger: no fact, quotation or reference is touched (Galatians 3:13 sits in the sentence before and is unchanged).",
+      "replacement": "Someone borrowing from the heroes wouldn't have chosen that.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    {
+      "quote": "Nobody in the story imagines a virgin.",
+      "reason": "The sentence is doing real work: it follows the sisters' slander and says that even Semele's accusers assume a lover, human or divine. The replacement ('There's no virgin anywhere in the story.') loses that and echoes 'There is no virgin in Plutarch's story' five paragraphs earlier, trading one repetition for another. With the later 'Nobody borrowing' line varied, four uses across 3,600 words is a man's ordinary word, not a tic."
+    },
+    {
+      "quote": "That is a real parallel. But it was written down about a century after Paul's letters",
+      "reason": "A 'consider' item. Concede-then-qualify is the governing standard's own model ('Some of that is true. But that is only part of the story.'), and the three concessions sit in different sections. 'The likeness is there.' is more literary and less plain than what it replaces."
+    },
+    {
+      "quote": "The way to answer it is to read what the old sources actually say.",
+      "reason": "A 'consider' item asking for a deletion. The brief lists plain signposting among his habits, and this is one plain sentence telling the reader what the essay will do, not the prose describing its editorial method. The later restatement at the end of the first section narrows the test to the film's central claim, so it is not a bare repeat. Cutting it would also end the paragraph on the skeptic's line with no turn toward the answer."
+    },
+    {
+      "quote": "He also wrote that, as far as he was aware, there was no evidence, on the face of it, that the Christian proclamation of Jesus' death and resurrection had been built from those myths.",
+      "reason": "A 'consider' item. The sentence is stiff, but it is stiff because it carries Mettinger's two hedges ('as far as I am aware', 'no prima facie evidence'), which the ledger added in changes 14 and 24 to match his words. The replacement turns 'no evidence, on the face of it' into 'nothing on the face of it showed' and 'as far as he was aware' into 'so far as he knew', moving a checked paraphrase of a living scholar further from the source for a small gain in ease. A careful hedge reads as a careful person, not a machine."
+    },
+    {
+      "quote": "Ralph Woodrow, an evangelical writer, popularized Hislop in the 1960s in a book called *Babylon Mystery Religion*.",
+      "reason": "A 'consider' item. 'Name, a plain identification,' is ordinary expository prose and each identification helps a reader who has never heard the name; the first reader agrees none is decoration. Hislop and Woodrow are three paragraphs apart. Not something to stake the essay on."
+    }
+  ],
+  "added": [],
+  "for_james": [
+    "One change only is recommended, a single word at the end of the paragraph on the crucifixion ('Nobody borrowing' to 'Someone borrowing'). Everything else stands as published.",
+    "Voice is 8 rather than 10 for the reason the first reader gave, and no editor can fix it: the essay is fair and exact but you are not in it beyond 'my own side of the Reformation'. You came to faith from atheism and this is an atheist's argument. If you met the Horus and Mithras list yourself before you believed, or someone has brought it to you, one plain true sentence saying so would make the piece yours. It has not been written because it would have to be invented.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree on shape: the profile asks for 2 to 4 sentence paragraphs, 1,500 to 2,500 words, a Greek or Hebrew word, three Monday-morning questions and a line built to be screenshotted. This essay follows VOICE-JAMES-BELL.md instead (developed paragraphs, about 3,600 words, no application box), and it was judged by that standard. Say so if you want the profile's features back.",
+    "The Mettinger sentence is the one stiff sentence in the essay. It was left alone because it paraphrases his own hedged words; if you want it smoother, that rewording should be yours.",
+    "If the one kept change is applied, the same line is in the draft at /home/user/livewell-essays/docs/work/essays/did-christianity-copy-pagan-myths.md."
+  ]
+}

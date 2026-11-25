@@ -1,0 +1,32 @@
+{
+  "piece": "why-didnt-the-bible-ban-slavery",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read agrees with the first: clean. Literal search finds no Forbidden Language, no exclamation point, no hedge or connective filler, and one em-dash, which is the ESV's own in Philemon 16. Two of the five findings hold; three are dropped as over-editing. Nothing added.",
+  "keep": [
+    {
+      "quote": "The Fugitive Slave Act of 1850, which required Americans to help return escaped slaves, points the opposite way.",
+      "tell": "Edit seam: a sentence left without its referent after a fact-check insertion (ambiguous framing)",
+      "replacement": "The Fugitive Slave Act of 1850, which required Americans to help return escaped slaves, points the opposite way from Deuteronomy.",
+      "severity": "should"
+    },
+    {
+      "quote": "Some of the law meets a hard-hearted people where they are and restrains the damage they'll do",
+      "tell": "Stock church phrase (\"meets people where they are\") in the sentence carrying the essay's central theological claim; the one line that could run on any church's page",
+      "replacement": "Some of the law takes a hard-hearted people as they are and restrains the damage they'll do",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"This isn't a modern sensibility pressed back onto an ancient text. It's the canon interpreting itself:\" Dropped. It answers the skeptic's real next objection at the hinge of the section, the colon introduces a Scripture quotation and not a reveal, and the paragraph's opening sentence is a concession, not a second antithesis. The essay runs about one such turn per section, which is his voice.",
+    "\"The church had both and looked past them for a very long time.\" Dropped. An accuracy worry, not a voice tell, and the subject here is the whole church across centuries, not the antebellum defenders the ledger's change 8 corrected. The proposed \"read around\" would repeat a phrase used two paragraphs earlier. Noted for James.",
+    "\"Abolition had other engines.\" Dropped. A common idiom, used once and paid off three sentences later; changing it means rewriting three sentences to fix nothing a reader would hear."
+  ],
+  "added": [],
+  "for_james": [
+    "The first reader's notes to you stand: the essay has no memory of yours in it (only you can supply one); \"I pastor a Baptist church\" states your denomination beside the Southern Baptist Convention's 1845 founding and 1995 repentance (your call); the slaveholder from The Monster in the Mirror is the book's composite figure in an essay where every other person is documented; your Substack profile and VOICE-JAMES-BELL.md disagree on length, paragraph size, the 'Monday morning' block and the screenshot line, and the essay follows VOICE-JAMES-BELL.md, which governs.",
+    "\"The church had both and looked past them for a very long time.\" The fact check changed \"skipped\" to \"explained away\" for the slaveholders' preachers. This sentence is about the whole church over centuries, so it was left alone; if you want it to match, \"explained them away\" is the wording the sources support.",
+    "Closing Texts: the Philemon 16 line ends the quotation with a period where the ESV runs on with a dash (\"as a beloved brother—especially to me\"). It is a truncation, not a misquote, but the period sits inside the quotation marks.",
+    "Carried from the ledger: Noll's argument is checked against reviews and an interview, not his pages, and the Wilberforce diary entry stays a paraphrase."
+  ]
+}

@@ -7,25 +7,39 @@ import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import LoadFailed from "@/components/LoadFailed";
-import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import InnerHead from "@/components/art/InnerHead";
+import LibraryIndex, { type LibGroup } from "@/components/art/LibraryIndex";
+import SectionHead from "@/components/art/SectionHead";
+import IconTile from "@/components/art/IconTile";
 import { fetchJson } from "@/lib/fetch-json";
+import { BookOpenText, Briefcase, Compass, Flame, Globe, HeartPulse, House, Lightbulb, Route, Sprout, Users, ClipboardCheck, Hourglass } from "lucide-react";
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 interface Entry { slug: string; title: string; blurb: string; pillar: string }
 function isIndex(x: unknown): x is { domains: Entry[] } {
   return !!x && typeof x === "object" && Array.isArray((x as { domains?: unknown }).domains);
 }
 
-const PILLAR_ORDER = [
-  "The Integrated Vision",
-  "The Inner Life",
-  "The Body and the Rhythms",
-  "The Home and Relationships",
-  "Work, Money, and Calling",
-  "The Life in the World",
-  "The Seasons and the Crises",
+/** The pillars, in order, each with its icon; the pillar's name is its id in the index. */
+const PILLARS: LibGroup[] = [
+  { id: "The Integrated Vision", name: "The Integrated Vision", icon: Compass },
+  { id: "The Inner Life", name: "The Inner Life", icon: Flame },
+  { id: "The Body and the Rhythms", name: "The Body and the Rhythms", icon: HeartPulse },
+  { id: "The Home and Relationships", name: "The Home and Relationships", icon: House },
+  { id: "Work, Money, and Calling", name: "Work, Money, and Calling", icon: Briefcase },
+  { id: "The Life in the World", name: "The Life in the World", icon: Globe },
+  { id: "The Seasons and the Crises", name: "The Seasons and the Crises", icon: Hourglass },
+];
+
+/** The pages next to this one (the links the page has always offered). */
+const NEXT = [
+  { name: "The Whole-Life Assessment", line: "Where life is flourishing, and where it has gone quiet", href: "/life/assessment", icon: ClipboardCheck },
+  { name: "Marriage", line: "The long covenant", href: "/life/marriage-the-long-covenant", icon: Users },
+  { name: "Parenting", line: "Raising children in grace", href: "/life/raising-children-in-grace", icon: Sprout },
+  { name: "Family Discipleship", line: "Faith at the family table", href: "/family", icon: House },
+  { name: "How-Tos for Making Disciples", line: "Short, plain guides", href: "/how-tos?topic=discipleship", icon: Route },
+  { name: "Wisdom for All of Life", line: "What the Bible says, by subject", href: "/wisdom", icon: Lightbulb },
+  { name: "New to Faith, or Coming Back", line: "One road, step by step", href: "/start", icon: Sprout },
 ];
 
 export default function LifeIndex() {
@@ -46,78 +60,67 @@ export default function LifeIndex() {
     return () => { stale = true; };
   }, [nonce]);
 
-  const grouped = useMemo(() => {
-    if (!items) return [];
-    const present = Array.from(new Set(items.map((i) => i.pillar)));
-    const order = PILLAR_ORDER.filter((p) => present.includes(p)).concat(present.filter((p) => !PILLAR_ORDER.includes(p)).sort());
-    return order.map((p) => [p, items.filter((i) => i.pillar === p)] as const);
-  }, [items]);
+  const libItems = useMemo(
+    () => items?.map((e) => ({ href: `/life/${e.slug}`, title: e.title, line: e.blurb, group: e.pillar })) ?? null,
+    [items],
+  );
 
   return (
     <Layout>
       <SEOMeta
-        title="Integrated Life — Living the Whole of Life Well"
-        description="One undivided life before God: the inner life, the body, the home, work and money, and the world. Scripture, tradition, and tested knowledge for the Tuesday."
+        title="Christian Living: Home, Work, Money, Body, Soul"
+        description="One undivided life before God: the inner life, the body, the home, work and money, and the world. Scripture, tradition, and tested knowledge."
         url="https://www.livewellbyjamesbell.co/life"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Integrated Life · The capstone</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
-            One life, offered whole
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch", marginBottom: "12px" }}>
-            The modern person lives in boxes. Faith in one, work in another, the body in another, money in a fourth that nobody opens in church. The gospel claims all of it. To live well is not to balance the boxes. It is to dissolve them.
-          </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch" }}>
-            Every domain here is worked the same way: the real struggle named without shame, the biblical vision in context, the tradition's wisdom, the best of modern knowledge tested against Scripture, the places faithful people differ treated fairly, and a practice you can start this week. The standard is flourishing. Not productivity. Not appearance. Not willpower.
-          </p>
+      <InnerHead path="/life" title="Everyday life" line="Following Jesus in every part of life" plate="tree" action={
+        <Link href="/life/assessment" className="btn btn--quiet">
+          Take the Whole-Life Assessment
+        </Link>
+      } />
+
+      {/* FIRST: find the part of life you are in. */}
+      <LibraryIndex
+        id="life"
+        items={items === null ? null : libItems}
+        failed={failed ? { what: "The life domains", onRetry: () => setNonce((n) => n + 1), backHref: "/", backLabel: "Back home" } : null}
+        groups={PILLARS}
+        icon={Sprout}
+        noun={["guide", "guides"]}
+        findLabel="Find a guide"
+        placeholder="Try: marriage, money, grief, sleep"
+        bandTitle="What part of life are you in?"
+        none={<p>The domains are being written. Check back soon, or try another word.</p>}
+      />
+
+      {/* An honest look, and the pages near this one. */}
+      <section className="home-sec" aria-labelledby="life-next-title">
+        <div className="home-wrap">
+          <SectionHead icon={Compass} label="Start with an honest look" title="Where to go next." id="life-next-title" />
+          <ul className="lw-tiles">
+            {NEXT.map((t) => (
+              <li key={t.href}>
+                <IconTile {...t} />
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          {failed ? (
-            <LoadFailed what="The life domains" onRetry={() => setNonce((n) => n + 1)} backHref="/" backLabel="Back home" />
-          ) : items === null ? (
-            <p role="status" style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>Loading the domains…</p>
-          ) : items.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>The domains are being written. Check back soon.</p>
-          ) : (
-            // Each group is a section of the page (h2, with its count, in the
-            // Theology pillar-heading pattern), then its domains as an index.
-            grouped.map(([pillar, entries]) => (
-              <div key={pillar} style={{ marginBottom: "var(--s-5)" }}>
-                <h2 style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "12px", fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", margin: "0 0 var(--s-2)" }}>
-                  {pillar}
-                  <span style={{ fontFamily: "var(--U)", fontSize: "13px", letterSpacing: 0, color: "var(--ink-muted)" }}>{" "}{entries.length}</span>
-                </h2>
-                <EditorialIndex
-                  label={pillar}
-                  items={entries.map((e) => ({ href: `/life/${e.slug}`, title: e.title, dek: e.blurb }))}
-                />
-              </div>
-            ))
-          )}
-
-          <div style={{ marginTop: "var(--s-4)", background: "var(--charcoal)", padding: "var(--s-4)", color: "var(--charcoal-fg)" }}>
-            <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "10px" }}>Start with an honest look</div>
-            <p style={{ fontFamily: "var(--F)", fontSize: "19px", lineHeight: 1.5, marginBottom: "16px", maxWidth: "56ch" }}>
+      {/* The page's own words on how every guide here is written. */}
+      <section className="home-sec home-sec--warm" aria-labelledby="life-why-title">
+        <div className="home-wrap">
+          <SectionHead icon={BookOpenText} label="How these guides are written" title="One life, offered whole." id="life-why-title" />
+          <div className="lw-prose-band__body">
+            <p>
+              The modern person lives in boxes. Faith in one, work in another, the body in another, money in a fourth that nobody opens in church. The gospel claims all of it. To live well is not to balance the boxes. It is to dissolve them.
+            </p>
+            <p>
+              Every domain here is worked the same way: the real struggle named without shame, the biblical vision in context, the tradition's wisdom, the best of modern knowledge tested against Scripture, the places faithful people differ treated fairly, and a practice you can start this week. The standard is flourishing. Not productivity. Not appearance. Not willpower.
+            </p>
+            <p>
               The Whole-Life Assessment maps where your life is flourishing and where it has gone quiet, then hands you a rule of life for this season. It is not a scorecard. God is not grading you.
             </p>
-            <Link href="/life/assessment" style={{ fontFamily: "var(--U)", fontSize: "13.5px", fontWeight: 600, color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-              Take the Whole-Life Assessment
-            </Link>
-          </div>
-
-          <div style={{ marginTop: "var(--s-3)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
-            <Link href="/life/marriage-the-long-covenant" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Marriage</Link>
-            <Link href="/life/raising-children-in-grace" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Parenting</Link>
-            <Link href="/family" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Family Discipleship</Link>
-            <Link href="/how-tos?topic=discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>How-Tos for Making Disciples</Link>
-            <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Wisdom for All of Life</Link>
-            <Link href="/pathways/discipleship" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Making Disciples at the Table</Link>
           </div>
         </div>
       </section>

@@ -1,0 +1,139 @@
+{
+  "slug": "land",
+  "n": 6,
+  "act": "land-judges",
+  "title": "The Land and the Judges",
+  "range": "Numbers to Ruth",
+  "status": "finished",
+  "summary": {
+    "younger": "God brought his people into the land he had promised. They kept forgetting him, and God kept sending leaders to rescue them.",
+    "older": "God keeps his word and gives the land. Then a cycle begins: the people turn away, trouble comes, they cry out, God sends a judge. Each time round it gets worse."
+  },
+  "scene": "land",
+  "sceneLabel": "The river Jordan on the left. Beside it, the twelve stones taken from the middle of the river, one for each tribe, piled up as a reminder. Behind, the hill country with a village. On the right, a field of barley at harvest under a low sun, with sheaves standing, a harvester with a sickle, and a woman bent down gathering the grain left behind.",
+  "story": {
+    "younger": [
+      "God's people did not go straight into the land God had promised. They were afraid of the people who lived there, and they did not trust God, so they lived in the wilderness for forty years. Even there, God gave them food called manna every day.",
+      "When Moses died, Joshua became their leader. God told him, “Do not be afraid; do not be discouraged, for the LORD your God is with you wherever you go.” God stopped the river Jordan, and the people walked across on dry ground. They set up twelve stones from the river, so that their children would ask what the stones meant.",
+      "Then came battles for the land, and many people died. This is one of the hardest parts of the Bible to read, and it is right to feel how hard it is. In the city of Jericho, a woman named Rahab trusted Israel's God, and she and her family were kept safe.",
+      "After Joshua died, the people forgot God again and again. Each time, trouble came, they cried out to God, and God sent a leader called a judge to rescue them, like Deborah or Gideon. Then they forgot him again.",
+      "In those hard days lived a woman named Ruth. She came from Moab, not from Israel, but she loved her mother-in-law Naomi and chose to follow Naomi's God. She gathered grain at harvest in the field of a kind man named Boaz, and they married. Ruth became the great-grandmother of King David, and Jesus was born into her family line."
+    ],
+    "older": [
+      "The generation that left Egypt refused to go into the land when they heard how strong its people were, so they spent forty years in the wilderness (Numbers 14:33-34). God still fed them every day with manna (Deuteronomy 8:3). Moses died in sight of the land, and it was their children who crossed the Jordan.",
+      "Under Joshua the river stops, as the sea had stopped, and Israel crosses on dry ground. Twelve stones are carried up out of the riverbed, so that when children ask, “What is the meaning of these stones?” the story will be told again (Joshua 4:21).",
+      "Then comes the conquest of Canaan, and it is the hardest part of this stop. The book of Joshua tells of wars in which cities were destroyed and many people were killed, and it says that God commanded it (Joshua 10:40). These chapters are not a story to cheer. In the middle of them, Rahab of Jericho confesses Israel's God and is spared, and Joshua says she lived among the Israelites “to this day” (Joshua 6:25). At the end, Joshua says that not one of God's good promises had failed (Joshua 21:45).",
+      "After Joshua, the book of Judges runs in a circle. The people turn to other gods, enemies oppress them, they cry out, God raises up a judge to rescue them, and the land has rest, until the judge dies and they turn away again, each time worse than before (Judges 2:19). Even the judges grow worse; Gideon ends by making an object that all Israel worships (Judges 8:27). The book's last line says why: “In those days there was no king in Israel; everyone did what was right in his own eyes” (Judges 21:25).",
+      "The book of Ruth is set in the days when the judges ruled (Ruth 1:1), and it shines in a dark time. Ruth is a Moabite, an outsider, and she chooses Naomi's people and Naomi's God (Ruth 1:16). In Boaz's field at harvest she finds a redeemer, and her son Obed becomes the grandfather of David (Ruth 4:17). Matthew names both Rahab and Ruth in the family line of Jesus (Matthew 1:5)."
+    ]
+  },
+  "god": {
+    "younger": "God keeps his promises, even when his people forget him. When they cry out, he hears and helps. And his family has room for people from every nation.",
+    "older": "God keeps his word when his people do not: not one of his good promises failed (Joshua 21:45). He is patient, rescuing his people again and again. And he writes outsiders like Rahab and Ruth into the story that leads to the king."
+  },
+  "verses": [
+    {
+      "ref": "Judges 2:18",
+      "text": "Whenever the LORD raised up a judge for the Israelites, He was with that judge and saved them from the hands of their enemies while the judge was still alive; for the LORD was moved to pity by their groaning under those who oppressed them and afflicted them."
+    },
+    {
+      "ref": "Ruth 1:16",
+      "text": "wherever you go, I will go, and wherever you live, I will live; your people will be my people, and your God will be my God."
+    }
+  ],
+  "read": [
+    {
+      "label": "Joshua 1",
+      "href": "/study/bible/joshua/1"
+    },
+    {
+      "label": "Joshua 3",
+      "href": "/study/bible/joshua/3"
+    },
+    {
+      "label": "Joshua 4",
+      "href": "/study/bible/joshua/4"
+    },
+    {
+      "label": "Judges 2",
+      "href": "/study/bible/judges/2"
+    },
+    {
+      "label": "Ruth 1",
+      "href": "/study/bible/ruth/1"
+    },
+    {
+      "label": "Ruth 4",
+      "href": "/study/bible/ruth/4"
+    }
+  ],
+  "care": "This part of the story has war and death in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "question": {
+    "ask": "Did God command killing?",
+    "answer": [
+      "This is the question the conquest raises, and it deserves a straight answer. On the page, God commands it, and a person who reads those verses and feels sick is reading them correctly.",
+      "Christians who hold the whole Bible to be God's word read these chapters in more than one way. LiveWell's Honest Answer on this question sets out the main readings, with the strength and the hard question of each, without pretending any of them makes the problem go away.",
+      "Two things hold under all of them. The God of Joshua is the Father of Jesus. And nothing in these chapters gives anyone today a warrant for violence against anyone."
+    ]
+  },
+  "deeper": [
+    {
+      "label": "Did God command genocide in the Old Testament?",
+      "href": "/answers/did-god-command-genocide"
+    },
+    {
+      "label": "Why is the Old Testament so violent? An honest look",
+      "href": "/resources/context/the-violence-of-the-old-testament"
+    }
+  ],
+  "talk": {
+    "younger": "Israel set up stones so their children would ask about what God had done. What has God done that you would want to remember?",
+    "older": "The judges' circle goes round and round. Where do you see people going round the same circle today? What would it take to break it?"
+  },
+  "activity": {
+    "kind": "cycle",
+    "title": "Round and round",
+    "prompt": "The book of Judges goes round in a circle. Step round it with the Next button and see what happens each time.",
+    "stages": [
+      {
+        "id": "away",
+        "name": "They turn away",
+        "text": "The people forgot the LORD and served other gods.",
+        "ref": "Judges 2:11-13"
+      },
+      {
+        "id": "trouble",
+        "name": "Trouble comes",
+        "text": "Enemies overpowered them, and they were in great distress.",
+        "ref": "Judges 2:14-15"
+      },
+      {
+        "id": "cry",
+        "name": "They cry out",
+        "text": "The people cried out to the LORD for help.",
+        "ref": "Judges 3:9"
+      },
+      {
+        "id": "rescuer",
+        "name": "God sends a judge",
+        "text": "God raised up a judge to rescue them: Othniel, Deborah, Gideon and others.",
+        "ref": "Judges 2:16"
+      },
+      {
+        "id": "rest",
+        "name": "Rest",
+        "text": "The land had rest while the judge was alive, often for forty years.",
+        "ref": "Judges 3:11"
+      }
+    ],
+    "again": {
+      "text": "When the judge died, the people turned away again, and each time they became worse than before.",
+      "ref": "Judges 2:19"
+    },
+    "end": {
+      "title": "Why the story needs a better king",
+      "text": "Judges ends: “In those days there was no king in Israel; everyone did what was right in his own eyes.” Each judge rescued the people for a while and then died, and the circle began again. The story is waiting for a king who rules God's way and whose rule does not end. The next stops follow Israel's kings, and the New Testament names the king the story was waiting for: Jesus, the son of David, whose kingdom “will never end.”",
+      "ref": "Judges 21:25; Luke 1:32-33"
+    }
+  }
+}

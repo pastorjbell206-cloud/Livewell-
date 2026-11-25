@@ -1,0 +1,99 @@
+---
+area: morality
+slug: the-first-christians-on-abortion-and-exposure
+status: live (James, 2026-11-20: "let the apologetics go live too"; second read in the twenty-sixth run)
+question: "The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?"
+ledger: docs/work/elite/apol-ledger.md, "Twenty-fifth run", key "by"
+---
+
+# The Bible never mentions abortion. What did the first Christians believe about it, and about leaving unwanted infants to die?
+
+## The short answer
+
+If you carry grief or guilt about a pregnancy, or about the loss of a child before or after birth, please know that you are met with gentleness here, not judgment. God knows your story too. Please talk with a trusted pastor or friend. The Find Help page on this site lists places to turn. The first Christians opposed both abortion and the exposure of infants, and said so in some of their earliest writings outside the New Testament. They lived in a world where both were ordinary. The Bible has no verse that names abortion; it says that God forms and knows a person in the womb, and one law in Exodus is read in two ways. Later Christians differed over when a human life begins, and still called abortion a grave wrong. This page is history and theology. It argues for no law and no party.
+
+## The objection at its strongest
+
+The objection starts from a fact: the Bible never mentions abortion. The practice was known in the ancient world, and the Bible's writers were not shy about naming sins. Yet no law of Moses, no prophet, no saying of Jesus and no letter of Paul speaks of it.
+
+The ancient world's best moral thinking, meanwhile, allowed it. Aristotle wrote in his *Politics*, in Benjamin Jowett's translation: "let there be a law that no deformed child shall live," and where a couple had too many children, "let abortion be procured before sense and life have begun; what may or may not be lawfully done in these cases depends on the question of life and sensation." On that view an early abortion harms no one, because no one is there yet.
+
+The one biblical law that comes near the subject seems to agree. In Exodus 21:22, in the King James Version, men who are fighting hurt a pregnant woman "so that her fruit depart from her, and yet no mischief follow," and the penalty is a fine. Only if "mischief" follows is it life for life. Many readers have taken that to mean a miscarriage costs a fine, while harm to the mother is punished as harm to a person. And the old Greek translation of Exodus draws Aristotle's line inside the verse. In Brenton's English it reads: a fine if the child is "imperfectly formed," life for life if it is "perfectly formed."
+
+The church's own teachers kept that line for centuries. Augustine wrote of "unformed abortions" and asked who wouldn't think that they "perish, like seeds that have never fructified" (*Enchiridion* 85). Thomas Aquinas held that the human soul "is created by God at the end of human generation" (*Summa Theologiae* I, question 118, article 2), and so not at conception. At full strength the objection says the Christian position was never as old, as biblical or as settled as it is now claimed to be.
+
+## What is true in it
+
+A good deal. The Bible doesn't name abortion. Christians who say it does are claiming more than the text gives. The law in Exodus really is read two ways, and the Greek version, made before the time of Christ, does make the formed child the turning point.
+
+It's also true that the tradition was not of one mind about when a human life begins. Augustine said he didn't know. When the infant begins to live in the womb was, he wrote, a question for learned men, "though I do not know whether it is in man's power to resolve it" (*Enchiridion* 86). Aquinas, citing Aristotle, held that the human soul comes only when the body has been formed. The Catholic Church's penalties changed more than once. In 1588 Pope Sixtus V threatened all who procured an abortion with the penalty for homicide; in 1591 Gregory XIV moderated that ruling, as the index to the *Bullarium Romanum* records; and the list of excommunications Pius IX issued in 1869 names those who procure an abortion that takes effect, and draws no line between an earlier and a later stage.
+
+And something else must be granted. A church can condemn abortion and still shame the mother and do little for her child. Where that has happened, a teaching about the worth of a life has kept only half of itself.
+
+## The evidence
+
+Start with the world the first Christians were born into. Leaving a newborn outside to die, or to be picked up by a stranger, was an ordinary family decision. A letter survives from a working man named Hilarion to a woman named Alis, who was expecting his child. It is dated 1 BC, and in one English translation it says, "if you bear a child and it is male, let it be; if it is female, cast it out." He wasn't a monster. In the same letter he tells her not to worry and asks how he could ever forget her.
+
+One people stood out. The Roman historian Tacitus, who wrote of the Jews with open contempt, recorded in his *Histories*, in W. Hamilton Fyfe's translation, that "they count it a crime to kill any of their later-born children." The Jewish philosopher Philo, writing in Alexandria in the first half of the first century, said that the law of Moses forbids the exposure of infants, a practice he called common among other nations. The first Christians were Jews, and they carried this conviction into the Gentile world.
+
+Then listen to them. The *Didache*, a short church manual from the late first or early second century, lists the commandments for new converts: "thou shalt not murder a child by abortion nor kill that which is begotten." The *Epistle of Barnabas*, another early Christian writing, says the same: "Thou shalt not slay the child by procuring abortion; nor, again, shalt thou destroy it after it is born." Justin, writing to the emperor in the 150s, says Christians "have been taught that to expose newly-born children is the part of wicked men." The *Epistle to Diognetus* describes Christians as people who marry and have children like everyone else, "but they do not destroy their offspring."
+
+Two writers give the reason. Athenagoras, defending Christians before the emperors Marcus Aurelius and Commodus against the charge of murder, answers that Christians hold even abortion to be killing, because they "regard the very foetus in the womb as a created being, and therefore an object of God's care." Tertullian, at Carthage around 197, writes: "murder being once for all forbidden, we may not destroy even the foetus in the womb." And he adds, "That is a man which is going to be one; you have the fruit already in its seed."
+
+In the East, Basil of Caesarea, in a letter the *Nicene and Post-Nicene Fathers* edition places in 374, set aside the very distinction the objection relies on: "The woman who purposely destroys her unborn child is guilty of murder. With us there is no nice enquiry as to its being formed or unformed." A council of Eastern bishops in 692 repeated the judgment. But notice what Basil does next. He limits the woman's penance to ten years, "not for life," and says her treatment should depend "not on mere lapse of time, but on the character of their repentance." He also notes that "in most cases women who make such attempts die." Church law on the subject, as early as Basil, already has the woman's danger and her restoration in view. (All of these are quoted from the *Ante-Nicene Fathers* and *Nicene and Post-Nicene Fathers* translations.)
+
+Then Scripture. It gives no command about abortion. What it gives is a way of speaking about the child in the womb. "For You formed my inmost being; You knit me together in my mother's womb" (Psalm 139:13, BSB). "Before I formed you in the womb I knew you" (Jeremiah 1:5, BSB). When Mary greets Elizabeth, "the baby leaped in her womb" (Luke 1:41, BSB), and Elizabeth calls her own unborn son "the baby in my womb" (Luke 1:44, BSB). The Study Bible's note on Psalm 139 says what these verses do and don't settle: they say "that God knows and cares for a person before birth," and Christians "do not all draw every conclusion in the same way."
+
+The law in Exodus can be read with the early Christians as well as against them. The Berean Standard Bible translates: "her child is born prematurely, but there is no further injury" (Exodus 21:22, BSB). On that reading the child is born alive, and "life for life" covers harm to either mother or child. John Calvin read it so in the sixteenth century: the child, "though enclosed in the womb of its mother, is already a human being." English translations still divide between the two readings.
+
+## The argument, laid out
+
+This is a historical argument. It makes no claim about what any law should say.
+
+1. In the world the church was born into, abortion and the exposure of infants were ordinary, and its most admired philosopher approved of both.
+2. From their earliest writings outside the New Testament, Christians, following Jewish teaching, rejected both, and gave a reason: the child, born or unborn, is God's creature and under his care.
+3. Scripture doesn't name abortion, but the early writers stood on what it does say about God forming and knowing a person in the womb; and the later disputes about the formed and unformed child, in Augustine and in the church's penalties, concerned how grave the act was and what penalty it carried, not whether it was wrong.
+
+So: the Christian refusal of abortion and exposure was not a late invention and was not borrowed from the surrounding culture; it is among the oldest of the church's moral teachings, though Christians have differed over when a human life begins, and Scripture doesn't settle every hard case.
+
+The weight sits on the third step. If the teachers who drew the line at the formed child thought that an earlier abortion was no wrong at all, the tradition would be divided on the main point.
+
+## The strongest reply, and an answer
+
+The strongest reply is that "oldest" hides a great deal. A few sentences in second-century church manuals are not Scripture. For well over a thousand years the church's leading teachers said that an early abortion is not the killing of a human being, and its law treated it differently. The firm line Christians now defend is modern, the critic says, and reading it back into the first centuries is the kind of history that begins with the conclusion.
+
+Much of that should be granted. The early writings are not Scripture, and no one should quote the *Didache* as though it were. The distinction between the formed and the unformed child was real and long-lived.
+
+But look at what the distinction was. It was a claim about biology, taken from Aristotle: that the body is not ready for a human soul until weeks after conception. The teachers who held it didn't conclude that early abortion was permitted. Augustine is the clearest case. In one sentence of *On Marriage and Concupiscence* (1.17) he condemns those who "destroy the conceived seed by some means previous to birth, preferring that its offspring should rather perish than receive vitality," and those who kill it when "it was advancing to life within the womb." He calls both "lustful cruelty." He differed from Basil about what to call the earlier act, not about whether to do it. Aristotle's account of how the body forms has long been set aside, and for most of the church the reason for the distinction went with it. That is why 1869 looks to a critic like a tightening and to the church like the removal of a mistaken premise.
+
+The reply is right about one thing. A teaching that old can be held coldly. The same Basil who called it murder wrote the woman's way back into the rule. A church that keeps his first sentence and forgets his second has not kept the early Christian teaching.
+
+## What remains unresolved
+
+When a human person begins is a question philosophers still dispute, and Christians have answered it in more than one way across their history. How Exodus 21:22 should be translated is unsettled. So are the hardest cases, above all when a mother's life is in danger. How any of this should bear on a country's laws is a separate question, and this page doesn't take it up.
+
+## Where Christians differ
+
+The Catholic Church teaches that human life is to be respected and protected from the moment of conception. The Orthodox churches count Basil's canons and those of the council of 692 among their own, with his refusal of the line between formed and unformed. Protestants have no single teaching office, and they differ more. Many hold what the early church held, for the reasons Calvin gave. Others, while opposing abortion, allow that there are tragic cases. The Church of England, in a statement its own representative gave in 2024, "believes that the foetus is a human life with the potential to develop, while recognising that there can be strictly limited conditions under which abortion may be morally preferable to any available alternative." In the words of the Study Bible's note, "These notes take no political position and speak for no party or law." Neither does this page.
+
+The author of this site holds, with the historic teaching traced above, that abortion is wrong. It is said here plainly and without heat, and it is not this page's last word.
+
+What every one of these traditions confesses is that God's mercy is wider than any failure. "Therefore, there is now no condemnation for those who are in Christ Jesus" (Romans 8:1, BSB). "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness" (1 John 1:9, BSB). That is said to women and to men, and it is said without an asterisk. So, once more, in the words of the notes: If you carry grief or guilt about a pregnancy, or about the loss of a child before or after birth, please know that you are met with gentleness here, not judgment. God knows your story too. Please talk with a trusted pastor or friend. The Find Help page on this site lists places to turn. Nothing on this page is medical or legal advice.
+
+## Read the other side
+
+- Aristotle, *Politics*, book 7, in Benjamin Jowett's translation (1885), for the ancient case for exposure and early abortion.
+- Thomas Aquinas, *Summa Theologiae*, part I, question 118, article 2 (written about 1265 to 1274), in the English Dominican translation, for the medieval account of when the soul is given.
+
+## Read further
+
+- The *Epistle of Barnabas*, chapter 19, the *Epistle to Diognetus*, chapter 5, and Justin Martyr, *First Apology*, chapters 27 and 29, in the *Ante-Nicene Fathers*, vol. 1 (1885).
+- The *Didache*, chapter 2, Athenagoras, *A Plea for the Christians*, chapter 35, and Tertullian, *Apology*, chapter 9, in later volumes of the same series, which began to appear in 1885.
+- Basil of Caesarea, Letter 188, in the *Nicene and Post-Nicene Fathers*, second series, vol. 8 (its preface is dated 1894), and canon 91 of the Council in Trullo in the same series; Augustine, *Enchiridion* 85 and 86 and *On Marriage and Concupiscence* 1.17, in the first series.
+
+## On the site
+
+- Find Help (/help), for anyone carrying grief or guilt, or facing a hard pregnancy now.
+- The Study Bible's notes on Psalm 139 (/study/bible/psalms/139), Exodus 21 (/study/bible/exodus/21) and Luke 1 (/study/bible/luke/1).
+- The site's page on grief (/wisdom/grief).
+- The other questions in this area (/questions/morality).

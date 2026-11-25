@@ -1,18 +1,21 @@
 /**
- * Believe — dedicated ebook product + purchase page.
- *
- * Self-contained (not DB-backed) so it deploys with the code. The Buy button
- * points at the Stripe Buy Button; Stripe redirects to
- * /books/believe/thank-you on success, where the EPUB and PDF download links live.
+ * Believe: the book's own page, with its free download (James,
+ * 2026-11-18: every ebook is free). The PDF and EPUB are static files under
+ * /ebook/believe/, listed in data/ebooks.ts. The old Stripe link and its
+ * /thank-you page are gone; the thank-you address redirects to /downloads.
  */
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
-import { StripeBuyButton } from "@/components/StripeBuyButton";
+import { FreeEbookButtons } from "@/components/FreeEbookButtons";
+import { freeEbook } from "@/data/ebooks";
+import { OfferLine, OfferMeta, useEbookLabel } from "@/components/BookOffer";
 import { SITE_URL } from "@/lib/site";
 
-const COVER = "/books/believe.jpg";
-const PAYMENT_LINK = "https://buy.stripe.com/28E28r6ZwfgagOa9nka3u01";
+const COVER = "/covers/believe-800.webp";
+const SHARE = "/covers/believe.jpg";
+const EBOOK = freeEbook("believe")!;
 
 const CHAPTERS: [string, string][] = [
   ["1", "Why Is There Something Rather Than Nothing?"],
@@ -35,23 +38,24 @@ const eyebrow: React.CSSProperties = {
 };
 
 export default function Believe() {
+  const ebookLabel = useEbookLabel();
   return (
     <Layout>
       <SEOMeta
-        title="Believe: The Rational Case for Christian Faith — by James Bell"
+        title="Believe: The Rational Case for Christian Faith"
         description="Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist."
-        image={`${SITE_URL}${COVER}`}
+        image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/believe`}
         type="book"
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img src={COVER} alt="Believe — cover" width={1600} height={2560}
+          <img src={COVER} alt="Cover of Believe" width={800} height={1200}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
-            <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Ebook Available Now</div>
+            <Place path="/books/believe" after={ebookLabel} dark style={{ margin: 0 }} />
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               Believe
             </h1>
@@ -62,9 +66,9 @@ export default function Believe() {
               James Bell
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
-              <StripeBuyButton paymentLink={PAYMENT_LINK} />
+              <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
-                EPUB + PDF · instant download · secure checkout by Stripe
+                <OfferMeta pdf={EBOOK.pdf} />
               </span>
             </div>
           </div>
@@ -78,9 +82,9 @@ export default function Believe() {
             He came to faith from atheism. He did not arrive by feeling his way there.
           </p>
           <div style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.75, color: "var(--ink)" }}>
-            <p style={{ margin: "0 0 1.2em" }}>Believe is for the reader whose questions have outgrown the answers they were handed in church — and for the skeptic who suspects Christianity cannot survive an honest cross-examination. James Bell takes the hardest questions one at a time: why there is something rather than nothing, whether the Bible can be trusted, who Jesus thought he was, whether the resurrection happened, why a good God allows suffering, and how anyone could speak of hell.</p>
-            <p style={{ margin: "0 0 1.2em" }}>He does not flinch and he does not flatter. Every objection gets its strongest form before it gets an answer. The atheists are quoted at their most formidable, not their most convenient. This is apologetics written from inside the doubt, by a man who once stood outside the faith and walked away — until the evidence walked after him.</p>
-            <p style={{ margin: 0, fontWeight: 600 }}>It is not a book that asks you to stop thinking. It is a book that asks you to keep going.</p>
+            <p style={{ margin: "0 0 1.2em" }}>Believe is for the reader whose questions have outgrown the answers they were handed in church, and for the skeptic who suspects Christianity can't survive an honest cross-examination. James Bell takes the hardest questions one at a time: why there is something rather than nothing, whether the Bible can be trusted, who Jesus thought he was, whether the resurrection happened, why a good God allows suffering, and how anyone could speak of hell.</p>
+            <p style={{ margin: "0 0 1.2em" }}>Every objection is stated the way the people who hold it would state it, and the atheists are quoted at their strongest. The book was written by a man who was an atheist before he was a Christian and still remembers how the objections sound from that side.</p>
+            <p style={{ margin: 0, fontWeight: 600 }}>It doesn't ask you to stop thinking. It asks you to keep going.</p>
           </div>
         </div>
       </section>
@@ -106,17 +110,17 @@ export default function Believe() {
       </section>
 
       {/* BUY + BIO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>Read it now</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
+            <OfferLine />
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <StripeBuyButton paymentLink={PAYMENT_LINK} />
+            <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,.6)", maxWidth: "56ch", margin: "44px auto 0", borderTop: "1px solid rgba(245,240,230,.18)", paddingTop: "28px" }}>
-            James Bell is the Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, and the author of more than twenty books. He came to faith from atheism and writes for the reader whose faith has outgrown the answers they were given.
+            James Bell is a pastor and a writer. He came to faith from atheism, and he writes for the reader whose faith has outgrown the answers they were given.
           </p>
         </div>
       </section>
@@ -126,7 +130,7 @@ export default function Believe() {
         related={[
           { href: "/books/the-reliability-of-scripture", title: "The Reliability of Scripture" },
           { href: "/books/deconstruction-of-faith", title: "The Deconstruction of Faith" },
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
         ]}
       />
     </Layout>

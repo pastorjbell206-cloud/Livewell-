@@ -12,7 +12,7 @@
   ],
   "doctrines": [
     { "id": "providence", "note": "God is not only the maker of the world but its constant sustainer: he covers the sky with clouds, prepares rain, grows grass, feeds animals, and sends and melts the snow. Nothing in the weather or the food chain runs apart from his word." },
-    { "id": "attributes", "note": "The psalm pairs God's greatness with his tenderness. His understanding has no limit and he names every star, yet he stoops to heal the brokenhearted and sustain the humble. His power is never cold, and his care is never weak." },
+    { "id": "attributes", "note": "The psalm pairs God's greatness with his tenderness. His understanding has no limit and he names every star, yet he stoops to heal the brokenhearted and sustain the humble." },
     { "id": "revelation", "note": "Verses 19 and 20 distinguish God's word in creation, which all nations experience, from his word given to Israel as statutes and judgments. The same God speaks through both, but the covenant word is a particular gift to a particular people." }
   ],
   "words": [
@@ -29,5 +29,6 @@
     "The psalm places God's naming of the stars right beside his healing of the brokenhearted. Which of these is harder for you to believe about God, and why?",
     "Verses 10 and 11 say God is not impressed by strength but by those who hope in his loving devotion. What are the horses and strong legs you are tempted to trust?",
     "How might noticing God's hand in ordinary weather, food, and seasons change the way you pray and give thanks?"
-  ]
+  ],
+  "plain": true
 }

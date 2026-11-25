@@ -1,0 +1,92 @@
+---
+area: contradictions
+slug: the-day-of-the-crucifixion
+status: live (James, 2026-11-20: "publish all of this when ready")
+question: "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?"
+ledger: docs/work/elite/apol-ledger.md, "Fifteenth run", key "ab"
+---
+
+# Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?
+
+## The short answer
+
+They seem to, on both the day and the hour, and the question isn't settled. Matthew, Mark and Luke present the Last Supper as a Passover meal, which puts the crucifixion on the feast day itself; John says those who brought Jesus to Pilate had not yet eaten the Passover on the morning of the trial and that Jesus was sentenced on "the day of Preparation for the Passover," the day the lambs were killed. Mark says Jesus was crucified at the third hour, John that Pilate was still judging him at about the sixth. Careful scholars hold four different solutions: that John has the historical date, that the Synoptics do, that John's phrases fit the Synoptic date, or that two calendars were in use. Each has a real weakness. What all four Gospels agree on is the frame: Jesus died under Pilate, at Passover, on a Friday, and was raised on the first day of the week.
+
+## The objection at its strongest
+
+The objection is laid out for general readers in Bart Ehrman's *Jesus, Interrupted* (2009), and many critical scholars share it. It begins with dates that the Gospels themselves give.
+
+In Mark, "On the first day of the Feast of Unleavened Bread, when the Passover lamb was to be sacrificed," the disciples ask where to prepare the Passover, and "they prepared the Passover" (Mark 14:12, 16, BSB). Matthew and Luke agree, and Luke has Jesus say, "I have eagerly desired to eat this Passover with you before My suffering" (Luke 22:15, BSB). The lambs were killed on the afternoon of the fourteenth of Nisan (Exodus 12:6) and eaten that night, which by Jewish reckoning was already the fifteenth. So on the Synoptic account Jesus ate the Passover meal and died on the fifteenth, the feast day.
+
+John tells it otherwise. His supper takes place "just before the Passover Feast" (John 13:1, BSB). The next morning those who brought Jesus from Caiaphas would not enter the governor's headquarters, "to avoid being defiled and unable to eat the Passover" (John 18:28, BSB), so the meal was still ahead of them. And when Pilate brings Jesus out to the judgment seat, John notes: "It was the day of Preparation for the Passover, about the sixth hour" (John 19:14, BSB). On the usual reading of John, Jesus died on the fourteenth, in the afternoon, when the Passover lambs were being slaughtered.
+
+The hours disagree too. Mark says, "It was the third hour when they crucified Him" (Mark 15:25, BSB), about nine in the morning; John has Pilate still on the judgment seat about noon. And the critics point to motive. In its first chapter John's Gospel has John the Baptist call Jesus "the Lamb of God," and at the cross it notes that his legs were not broken, so that "Not one of His bones will be broken" (John 19:36, BSB), a rule for the Passover lamb. On this view John moved the day, and with it the hour, so that Jesus would die as the lambs died.
+
+Put at full strength, the objection says that the Gospels disagree on the date of the central event of the faith, and that at least one of them changed the facts to make a theological point.
+
+## What is true in it
+
+The difficulty is real, and Christians have known it a long time. The Synoptic Gospels plainly call the supper a Passover, and John plainly puts the Passover meal after the trial. On a natural reading the two can't both be giving the same day. The hours, read at face value, don't agree either, and copyists noticed: a few manuscripts of John read "the third hour" at 19:14, and a few of Mark the sixth at 15:25, each changed to match the other, as the Study Bible's notes on John 19 and Mark 15 record. The great majority of manuscripts read the sixth hour in John and the third in Mark.
+
+It is also true that John's account carries Passover meaning, and that some Christian harmonizations of these passages are strained. A reader who has been told that the Gospels agree on the day without difficulty has not been told the whole story.
+
+## The evidence
+
+Begin with the calendar. A Jewish day ran from sunset to sunset. The Passover lambs were slaughtered on the afternoon of the fourteenth of Nisan; Josephus says the sacrifices were slain "from the ninth hour till the eleventh" (*Jewish War* 6.423, in William Whiston's translation), about three to five in the afternoon. The meal was eaten after sunset, on the fifteenth, which began the seven days of Unleavened Bread. "Preparation" was the ordinary name for Friday, the day before the Sabbath; Mark explains it as "the day before the Sabbath" (Mark 15:42, BSB), and Josephus quotes a decree of Augustus that Jews should not be summoned to court "on the sabbath day, nor on the day of the preparation to it, after the ninth hour" (*Antiquities* 16.163). All four Gospels agree that Jesus died on a Friday. John adds that the following Sabbath was "a High Sabbath" (John 19:31, BSB), a Sabbath that coincided with the feast.
+
+Astronomy can help a little. Colin Humphreys and Graeme Waddington calculated in 1983, in the journal *Nature*, that the fourteenth of Nisan fell on a Friday in both AD 30 and AD 33, which fits John's chronology in either year. Paul, writing to Corinth in the 50s, before any Gospel, already called Christ "our Passover lamb" (1 Corinthians 5:7, BSB), so the link between Jesus' death and Passover is older than John's Gospel and doesn't depend on its dating.
+
+Now the solutions, each with its weakness, as the Study Bible's notes on John 13, John 19 and Mark 14 set them out.
+
+The first holds that John's date is the historical one. John Meier and Raymond Brown favored it, and Pope Benedict XVI followed it in *Jesus of Nazareth: Holy Week* (2011). A trial and execution on the feast day itself would be surprising, and the astronomical dates fit. On this view the Synoptic writers told a farewell meal with Passover features as a Passover. Its weakness is the plain wording of Mark 14:12 and Luke 22:15, which call the meal the Passover more than once.
+
+The second holds that the Synoptic date is the historical one, and that John set the death on the day of the lambs for theological reasons. Joachim Jeremias argued at length that the supper had the marks of a Passover meal: eaten at night, within the city, reclining, with wine, a dish for dipping, words interpreting the food and a closing hymn. Its weakness is that it has to explain why John built several separate time notes around a different day, and why the authorities would hold a trial and an execution on the feast.
+
+The third holds that the accounts agree once John's words are read in their festival sense. D. A. Carson and Craig Blomberg, following older scholars such as Theodor Zahn, argue that "eat the Passover" in John 18:28 can refer to the sacrificial meals of the whole seven-day feast, and that "the day of Preparation for the Passover" in John 19:14 means the Friday of Passover week, as John uses "Preparation" for Friday in 19:31 and 19:42. Its strength is that it takes every verse as true. Its weakness is that John 13:1 places the supper "just before the Passover Feast," and many readers, including many who hold a high view of Scripture, find the festival reading of 18:28 strained.
+
+The fourth proposes two calendars. Annie Jaubert argued in 1957 that Jesus followed the solar calendar known from Jubilees and the Dead Sea Scrolls and ate the Passover on Tuesday evening, while the temple kept the official calendar; Colin Humphreys argued in 2011 for a Wednesday meal on an older reckoning. Either would let both accounts be right about different Passovers. The weakness is that there is no evidence Jesus followed a sectarian calendar, or that the temple would slaughter lambs for anyone who did.
+
+The hour has its own proposals. John says "about" the sixth hour, and Mark's day moves in three-hour steps, the third, the sixth and the ninth, so many think both writers were naming broad blocks of the day rather than reading a clock; mid-morning and late morning could be described either way. An ancient explanation, later associated with Eusebius, held that a copyist confused the Greek numerals for three and six. Some older writers proposed that John counted hours from midnight, but most now doubt it.
+
+## The argument, laid out
+
+This is an argument about what a disagreement over the calendar can and can't show.
+
+1. The Synoptic Gospels present the Last Supper as a Passover meal, putting the crucifixion on the fifteenth of Nisan, while John puts the trial on the day of Preparation for the Passover, the fourteenth; the hours they give also differ, and none of the proposed harmonizations is generally accepted.
+2. All four agree on the frame of the event: Jesus was crucified under Pontius Pilate in Jerusalem at Passover, on a Friday, the day before a Sabbath, was buried before the Sabbath began, and was found risen on the first day of the week.
+3. A disagreement of one day in the festival calendar, and of a few hours in the morning, bears on how the Gospels' chronologies relate, not on whether the event they describe took place at the time and place they all give.
+
+So: the Gospels' accounts of the day and hour may not be reconcilable, and a fair reader shouldn't pretend otherwise, but the disagreement leaves the crucifixion where all four put it, at Passover, under Pilate, on a Friday.
+
+The weight sits on the second step. If the Gospels disagreed about the frame, about the governor, the city, the festival or the week, the argument would fail, and that is where a reader should test it.
+
+## The strongest reply, and an answer
+
+The strongest reply is that the frame isn't the issue. The issue is that at least one evangelist changed a fact to make a theological point, and if John could move the day of the crucifixion to make Jesus die with the lambs, nothing he reports can be taken as plain history. A writer who alters dates for symbolism has told us what kind of writer he is.
+
+Part of that should be granted. If John, or the Synoptic writers, set the meal or the death on a day other than the one it happened, that tells us something about how they wrote, and Christians shouldn't avoid it. But the reply assumes it knows which account was altered, and the experts don't agree. Brown and Meier, critical scholars both, judged John's date the historical one, which would make the Passover framing of the supper the theological touch, and others judge the reverse. Ancient biographers arranged time and sequence with a freedom modern readers don't expect, as the page in this library on the Easter accounts sets out. To arrange a meal's meaning or a scene's timing isn't the same as inventing the event, and here the event is attested independently: all four Gospels put the execution under Pilate at Passover, Tacitus names Pilate as the governor who executed Christ, and Paul had already tied the death to Passover. The disagreement shows that the Gospels are not four copies of one record. It doesn't show that they made up what they record.
+
+## What remains unresolved
+
+Which day the Gospels' chronologies point to, and whether they can be reconciled, is unresolved. So is the year: AD 30 and AD 33 both have defenders. Whether the Last Supper was a Passover meal, a farewell meal with Passover features, or a Passover eaten on another calendar is argued among scholars of every conviction. The hour is the least of the difficulties and still has no agreed answer. And what John meant by setting the death beside the slaughter of the lambs, if he did, is a question of interpretation as much as of history.
+
+## Where Christians differ
+
+Christians answer this passage according to how they confess Scripture's truthfulness, and the site takes no side among them. Christians who hold to inerrancy, in the form the Chicago Statement of 1978 gave it, confess that Scripture in its original writings is without error in all that it affirms. Many of them read John's terms in their festival sense or adopt a calendar solution, others hold the question open, and they follow the Statement in denying that inerrancy is negated by "a lack of modern technical precision" or by "the topical arrangement of material." Christians who hold Scripture to be infallible in what God gave it to teach, the way of salvation and of life with him, are freer to say that John and the Synoptic writers dated the meal differently, and they hold that what all four teach, that Jesus gave himself at Passover as the Lamb of God, is true. Both confess with the Nicene Creed that the Holy Spirit "spake by the prophets," and both receive Scripture as the church's final authority for faith and life. And all of them confess with Paul that "Christ, our Passover lamb, has been sacrificed."
+
+## Read the other side
+
+- Bart D. Ehrman, *Jesus, Interrupted* (2009).
+- Raymond E. Brown, *The Death of the Messiah* (1994), two volumes.
+
+## Read further
+
+- D. A. Carson, *The Gospel According to John* (1991).
+- Craig L. Blomberg, *The Historical Reliability of John's Gospel* (2001).
+- Colin J. Humphreys, *The Mystery of the Last Supper* (2011).
+
+## On the site
+
+- The Study Bible's notes on John 19 (/study/bible/john/19), Mark 14 (/study/bible/mark/14) and John 13 (/study/bible/john/13), which set out the day, the hour and the four solutions.
+- "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?" (/questions/jesus/the-resurrection-accounts-disagree), on how ancient biographers arranged their material.
+- The other questions in this area (/questions/contradictions).

@@ -1,0 +1,94 @@
+{
+  "piece": "why-does-god-feel-far-away",
+  "human_score": 8.5,
+  "voice_score": 7.5,
+  "verdict": "Clean on every literal check (no forbidden language, no em-dash, no exclamation point, no hedge outside Paul's own 'perhaps', crisis passage carries 988 and Find Help, no biography or credential). It reads as a person thinking, with fair concessions and an earned ending. What remains is small: one quantifier habit, one cliche in the Emmaus paragraph, one epigram closer, one leftover 'in other words', a repeated section opener, and a one-line recap that interrupts the ending. The gap to a 10 on voice is that James never appears in it; only he can supply that.",
+  "findings": [
+    {
+      "quote": "which a great many people have had",
+      "tell": "Verbal tic: the 'a great many / a good many / a good deal / a great deal' quantifier appears five times in the essay",
+      "why": "'A great many people who have never read Lewis', 'a great many people have had', 'a good many churches', 'a good deal of evangelical church life', 'A great deal of what got in was fear'. One vague quantifier reused this often is a pattern a careful reader hears as a default setting.",
+      "replacement": "which plenty of people have had",
+      "severity": "should"
+    },
+    {
+      "quote": "A great deal of what got in was fear.",
+      "tell": "Same quantifier tic (fifth instance)",
+      "why": "Breaks the repetition without changing the claim checked in the ledger.",
+      "replacement": "Much of what got in was fear.",
+      "severity": "should"
+    },
+    {
+      "quote": "and he was beside them every step of the way.",
+      "tell": "Stock phrase; generic Christian content",
+      "why": "'Every step of the way' is greeting-card language at the most important moment of the essay, close to the Footprints poem. The plain statement is stronger.",
+      "replacement": "and he had been walking beside them the entire time.",
+      "severity": "should"
+    },
+    {
+      "quote": "The sense that the sky is empty is partly something we inherited, and an inheritance can be examined instead of simply obeyed.",
+      "tell": "Aphoristic paragraph closer with a fresh literary image",
+      "why": "The paragraph has already made its point ('the feeling is not neutral data'); this restates it as a balanced epigram, the two-beat closer the brief warns against.",
+      "replacement": "The sense that the sky is empty is partly something we inherited, and we're allowed to question it.",
+      "severity": "should"
+    },
+    {
+      "quote": "A sixteenth-century friar, in other words, refused to spiritualize everything.",
+      "tell": "Connective filler ('in other words')",
+      "why": "A listed AI connective, and it announces a restatement. The sentence lands without it.",
+      "replacement": "A sixteenth-century friar refused to spiritualize everything.",
+      "severity": "should"
+    },
+    {
+      "quote": "The philosopher J. L. Schellenberg has turned the skeptic's answer into a formal argument. He first set it out in 1993, in *Divine Hiddenness and Human Reason*.",
+      "tell": "Repeated section-opener template (scholar parade shape)",
+      "why": "The previous section's second sentence is 'The philosopher Charles Taylor, in *A Secular Age*, describes'. Two consecutive sections introducing 'The philosopher [Name]' with a title reads as a survey template.",
+      "replacement": "The skeptic's answer also comes as a formal argument. J. L. Schellenberg, a philosopher, first set it out in 1993, in *Divine Hiddenness and Human Reason*.",
+      "severity": "consider"
+    },
+    {
+      "quote": "If God feels far from you, tell him so. The psalmists have already written the words for you.\n\nWhen we leave no room for those words in our churches, we fail the people sitting in them.\n\nYou may have walked",
+      "tell": "Closing recap; one-line paragraph inserted between two lines of direct address",
+      "why": "The middle line repeats the end of the Lament section ('We have mostly lost that habit') and switches from 'you' to 'we' and back. Standing alone it reads as a self-implication added to satisfy a rule. Folded into the paragraph before it, it reads as James finishing a thought.",
+      "replacement": "If God feels far from you, tell him so. The psalmists have already written the words for you, and when we leave no room for those words in our churches, we fail the people sitting in them.\n\nYou may have walked",
+      "severity": "consider"
+    },
+    {
+      "quote": "Some have prayed for years about a marriage or a child or a diagnosis and heard nothing back.",
+      "tell": "Tidy triplet, second 'X or Y or Z' in two sentences",
+      "why": "Two sentences earlier: 'in prayer or at the Lord's Table or in a song on a Sunday night'. Two polysyndeton triplets inside a four-part 'Some... Some... Some... And some' run makes the paragraph sound composed.",
+      "replacement": "Some have prayed for years about a marriage or a child and heard nothing back.",
+      "severity": "consider"
+    },
+    {
+      "quote": "it learned to describe the experience behind them with real care",
+      "tell": "Vague intensifier ('real')",
+      "why": "'Real' is doing emphasis work here and again in 'Those are real questions'. Once is voice; twice is filler.",
+      "replacement": "it learned to describe the experience behind them carefully",
+      "severity": "consider"
+    },
+    {
+      "quote": "That event was preceded by the darkest hour in the Gospels.",
+      "tell": "Essay voice where a person speaking should be (passive, Latinate)",
+      "why": "Nobody says 'was preceded by' across a table. It opens the essay's most important section.",
+      "replacement": "Before that event came the darkest hour in the Gospels.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "Zero forbidden words or phrases, zero em-dashes, zero exclamation points; the only 'perhaps' is inside Acts 17:27 and the sentence pointing at it.",
+    "Real concessions that cost something: 'Sometimes the one who moved is us', 'It isn't a stupid answer, and thoughtful people give it', 'Kierkegaard's parable doesn't fully answer Schellenberg, and I don't want to pretend it does.'",
+    "Self-implication done by doing it: 'We plan services to move people, and then we call the movement God... We gave them that.'",
+    "Every named source carries an idea a reader can keep (John's signs for telling dryness apart, Taylor's porous and buffered selves, Schellenberg's premise). Remove a name and the sentence changes.",
+    "Scripture is the argument, not decoration: Job 42:7 against the church-sign line, emunah in Exodus 17 and Habakkuk 2:4, the word 'far' in Psalm 22.",
+    "The crisis passage is plain, warm and complete (tell someone, 988, Find Help, no medical advice) without diagnosing the reader.",
+    "Antithesis is held to about one per section, each at a real hinge ('faith is not finally a feeling of nearness. It is steadiness under weight.').",
+    "Paragraph and sentence lengths vary; the ending leaves Saturday and the unrecognized walk in place and does not press for a decision."
+  ],
+  "for_james": [
+    "The essay now contains no first-person experience at all (the atheism clause was cut because two sibling essays used the same line). That is why voice scores below human: it sounds like a careful pastor, not unmistakably you. One true sentence only you can supply would close the gap, most naturally where the text says 'Anyone who has sat with a person who prayed for years to believe and could not knows it' or where it describes the first warmth of faith fading. I did not write one, because it would have to be invented.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree here, and the voice document governs. The profile asks for 1,500 to 2,500 words, paragraphs of 2 to 4 sentences, a line built to be screenshotted, and a 'Monday Morning' block of three questions and one practice. This essay runs about 3,750 words in developed paragraphs with no takeaway block, which is what the voice document asks for. I did not edit toward the profile.",
+    "Whether all unbelief involves suppression of the truth (Romans 1:18) is left open in the Schellenberg section, and the debate over what passed between Father and Son at the cry from the cross is named and not settled. Both are your call if you want the essay to say where you land.",
+    "The heading 'Charles Taylor and the Modern Self' is plain but is the one heading a reader who came with a hurt, not a reading list, may skip. If you would say it differently aloud (for example 'The Age We Live In', which an earlier pass replaced), that choice is yours."
+  ]
+}

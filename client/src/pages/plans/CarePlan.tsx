@@ -9,6 +9,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import { CrisisHelp } from "@/components/CrisisHelp";
 import { RemindMe } from "@/components/RemindMe";
@@ -118,9 +119,7 @@ export default function CarePlan() {
 
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>
-            <Link href="/help" style={{ color: "inherit" }}>Find Help</Link> · An eight-week guided plan
-          </div>
+          <Place path={`/plans/${slug ?? ""}`} dark style={{ marginBottom: "16px" }} />
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "22ch" }}>{data?.title ?? (missing ? "That plan is not here yet." : "Loading the plan…")}</h1>
           {missing && (
             <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,0.8)", maxWidth: "60ch" }}>
@@ -138,7 +137,8 @@ export default function CarePlan() {
           {data && !progress && (
             <button
               onClick={start}
-              style={{ marginTop: "10px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", padding: "13px 24px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, borderRadius: "2px", cursor: "pointer" }}
+              className="btn btn--on-dark"
+              style={{ marginTop: "10px" }}
             >
               Begin week one
             </button>
@@ -157,7 +157,8 @@ export default function CarePlan() {
               {currentWeek && (
                 <a
                   href={`#week-${currentWeek}`}
-                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: "44px", marginTop: "14px", padding: "10px 20px", background: "var(--mustard)", color: "var(--charcoal)", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 700, borderRadius: "2px", textDecoration: "none" }}
+                  className="btn btn--on-dark"
+                  style={{ gap: "8px", marginTop: "14px" }}
                 >
                   Go to week {currentWeek} <ArrowDown size={16} aria-hidden />
                 </a>

@@ -4,16 +4,23 @@
  * position they currently lean toward. It is a starting point for
  * self-understanding, never a verdict, and says so plainly. Data:
  * /theology/theology-diagnostics.json.
+ *
+ * The quiz in hand and its answers are kept on this device as the reader goes
+ * (key livewell-progress-which-view), so a reload lands where they were; the
+ * result offers a non-destructive "Change my answers", and "Start over" clears.
  */
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { scrollBehavior } from "@/lib/motion";
 import { Link } from "wouter";
 import { RotateCcw } from "lucide-react";
 import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { fetchJson } from "@/lib/fetch-json";
 import { DOCTRINE_INDEX } from "@/lib/theology";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { toolName } from "@/lib/toolsList";
 
 interface Option { label: string; view: string; }
 interface Question { q: string; options: Option[]; }
@@ -21,6 +28,27 @@ interface Result { view: string; name: string; blurb: string; doctrine: string; 
 interface Quiz { slug: string; title: string; intro: string; disclaimer: string; questions: Question[]; results: Result[]; }
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+
+const PROGRESS_KEY = "livewell-progress-which-view";
+interface Saved { slug: string; answers: Record<number, number>; savedAt: string }
+const isSaved = (x: unknown): x is Saved => {
+  if (!x || typeof x !== "object") return false;
+  const v = x as Record<string, unknown>;
+  return (
+    typeof v.slug === "string" && typeof v.savedAt === "string" &&
+    !!v.answers && typeof v.answers === "object" && !Array.isArray(v.answers) &&
+    Object.entries(v.answers as Record<string, unknown>).every(([k, n]) => /^\d+$/.test(k) && typeof n === "number" && Number.isInteger(n) && n >= 0)
+  );
+};
+
+/** Where to open: a quiz named in the link wins; else the one the reader left part-way, with its answers. */
+function initialPlace(): { slug: string | null; answers: Record<number, number> } {
+  if (typeof window === "undefined") return { slug: null, answers: {} };
+  const asked = new URLSearchParams(window.location.search).get("topic");
+  const saved = readStoredJSON<Saved | null>(PROGRESS_KEY, isSaved, null);
+  const slug = asked ?? saved?.slug ?? null;
+  return { slug, answers: saved && saved.slug === slug ? saved.answers : {} };
+}
 
 // The render needs an array of quizzes; anything else is a failed load.
 const isDiagnosticsFile = (x: unknown): x is { quizzes: Quiz[] } => {
@@ -31,8 +59,11 @@ const isDiagnosticsFile = (x: unknown): x is { quizzes: Quiz[] } => {
 export default function TheologyDiagnostic() {
   // null = not loaded yet; [] = loaded but empty (distinct from loading)
   const [quizzes, setQuizzes] = useState<Quiz[] | null>(null);
-  const [activeSlug, setActiveSlug] = useState<string | null>(null);
-  const [answers, setAnswers] = useState<Record<number, number>>({});
+  // A link can name the quiz to open on: /theology/which-view?topic=origins.
+  const [start0] = useState(initialPlace);
+  const [activeSlug, setActiveSlug] = useState<string | null>(start0.slug);
+  const [answers, setAnswers] = useState<Record<number, number>>(start0.answers);
+  const questionsRef = useRef<HTMLDivElement>(null);
   const [nonce, setNonce] = useState(0);
   // The attempt (retry nonce) that failed; deriving `loadError` from it means
   // Retry clears the panel without extra state writes inside the effect.
@@ -50,13 +81,24 @@ export default function TheologyDiagnostic() {
   const quiz = (quizzes ?? []).find((q) => q.slug === activeSlug) ?? null;
   const docReady = (slug: string) => DOCTRINE_INDEX.find((d) => d.slug === slug && d.ready);
 
-  const answeredCount = Object.keys(answers).length;
+  // Keep the place on this device as the reader goes.
+  useEffect(() => {
+    if (!activeSlug) return;
+    writeStoredJSON(PROGRESS_KEY, { slug: activeSlug, answers, savedAt: new Date().toISOString() });
+  }, [activeSlug, answers]);
+
+  // Saved answers count only where they still fit the quiz as it loaded.
+  const fitted = useMemo(
+    () => (quiz ? Object.fromEntries(Object.entries(answers).filter(([qi, oi]) => quiz.questions[Number(qi)]?.options[oi])) : {}),
+    [quiz, answers],
+  );
+  const answeredCount = Object.keys(fitted).length;
   const complete = quiz ? answeredCount === quiz.questions.length : false;
 
   const result = useMemo(() => {
     if (!quiz || !complete) return null;
     const tally: Record<string, number> = {};
-    for (const [qi, oi] of Object.entries(answers)) {
+    for (const [qi, oi] of Object.entries(fitted)) {
       const view = quiz.questions[Number(qi)]?.options[oi]?.view;
       if (view) tally[view] = (tally[view] ?? 0) + 1;
     }
@@ -64,32 +106,22 @@ export default function TheologyDiagnostic() {
     for (const [v, n] of Object.entries(tally)) if (n > bestN) { best = v; bestN = n; }
     const tied = Object.values(tally).filter((n) => n === bestN).length > 1;
     return { result: quiz.results.find((r) => r.view === best) ?? null, tied, tally };
-  }, [quiz, complete, answers]);
+  }, [quiz, complete, fitted]);
 
   function start(slug: string) { setActiveSlug(slug); setAnswers({}); }
-  function reset() { setAnswers({}); window.scrollTo({ top: 0, behavior: scrollBehavior() }); }
+  function reset() { removeStoredJSON(PROGRESS_KEY); setAnswers({}); window.scrollTo({ top: 0, behavior: scrollBehavior() }); }
+  /** Back to the questions, every answer kept. */
+  function changeAnswers() { questionsRef.current?.scrollIntoView({ behavior: scrollBehavior(), block: "start" }); }
 
   return (
     <Layout>
       <SEOMeta
-        title="Which View Am I? A Theology Diagnostic"
+        title="Which Christian View Do You Lean Toward?"
         description="Answer a few plain questions and see which position you lean toward on a contested doctrine. A starting point for understanding yourself, never a verdict."
         url="https://www.livewellbyjamesbell.co/theology/which-view"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · Which view am I
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Where do you lean, and why?
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "60ch" }}>
-            Answer a few honest questions and see which view you currently lean toward. This is a mirror, not a verdict. The point is not to box you in but to help you see where you stand, so you can read the full doctrine with open eyes.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/theology/which-view" title="Where do you lean, and why?" line="Answer a few honest questions and see which view you currently lean toward. This is a mirror, not a verdict. The point is not to box you in but to help you see where you stand, so you can read the full doctrine with open eyes." plate="lantern" />
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-7)" }}>
         <div style={wrap}>
@@ -121,11 +153,11 @@ export default function TheologyDiagnostic() {
             <>
               <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "baseline", gap: "10px", marginBottom: "var(--s-3)" }}>
                 <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, color: "var(--ink)" }}>{quiz.title}</h2>
-                <button type="button" onClick={() => setActiveSlug(null)} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", cursor: "pointer" }}>Pick another →</button>
+                <button type="button" onClick={() => setActiveSlug(null)} style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", background: "none", border: "none", minHeight: "44px", cursor: "pointer" }}>Pick another →</button>
               </div>
               <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.6, color: "var(--ink-muted)", fontStyle: "italic", maxWidth: "66ch", marginBottom: "var(--s-4)", borderLeft: "2px solid var(--mustard)", paddingLeft: "14px" }}>{quiz.disclaimer}</p>
 
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div ref={questionsRef} style={{ display: "flex", flexDirection: "column", gap: "16px", scrollMarginTop: "90px" }}>
                 {quiz.questions.map((question, qi) => (
                   <div key={qi} style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)", padding: "var(--s-4)" }}>
                     <p style={{ fontFamily: "var(--F)", fontSize: "19px", fontWeight: 500, color: "var(--ink)", marginBottom: "14px" }}>{qi + 1}. {question.q}</p>
@@ -165,10 +197,20 @@ export default function TheologyDiagnostic() {
                             Read the full doctrine →
                           </Link>
                         )}
-                        <button type="button" onClick={reset} style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", background: "transparent", border: "1px solid var(--border)", padding: "12px 18px", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>
+                        <button type="button" onClick={changeAnswers} style={{ display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", background: "transparent", border: "1px solid var(--border)", padding: "12px 18px", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>
+                          Change my answers
+                        </button>
+                        <button type="button" onClick={reset} style={{ display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--ink)", background: "transparent", border: "1px solid var(--border)", padding: "12px 18px", borderRadius: "var(--radius-sm)", cursor: "pointer" }}>
                           <RotateCcw size={15} aria-hidden /> Start over
                         </button>
                       </div>
+                      <p style={{ fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink)", margin: "18px 0 0" }}>
+                        Next, read each view in its own best words:{" "}
+                        <Link href="/theology/compare" style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", fontWeight: 600, color: "var(--ink)", textDecoration: "underline", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>
+                          {toolName("compare-views")}
+                        </Link>
+                        .
+                      </p>
                     </>
                   )}
                   <p style={{ fontFamily: "var(--B)", fontSize: "13px", color: "var(--ink-muted)", fontStyle: "italic", marginTop: "18px" }}>{quiz.disclaimer}</p>

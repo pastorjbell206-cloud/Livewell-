@@ -7,13 +7,15 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import LoadFailed from "@/components/LoadFailed";
-import { EditorialIndex } from "@/components/editorial/EditorialIndex";
+import InnerHead from "@/components/art/InnerHead";
+import LibraryIndex, { type LibGroup } from "@/components/art/LibraryIndex";
+import SectionHead from "@/components/art/SectionHead";
+import IconTile from "@/components/art/IconTile";
+import { BookOpenText, Briefcase, Compass, Flame, Globe, HeartHandshake, HeartPulse, Hourglass, House, Lightbulb, Megaphone, Sprout, Users, Baby, Route } from "lucide-react";
 import { fetchJson } from "@/lib/fetch-json";
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 
 // readTime is usually "7 min read"; a few entries carry a bare minute count.
 interface Entry { slug: string; title: string; excerpt: string; topic: string; readTime: string | number }
@@ -25,23 +27,19 @@ const readTimeLabel = (t: Entry["readTime"]) => {
   return /^\d+$/.test(s) ? `${s} min read` : s;
 };
 
-const TOPIC_LABEL: Record<string, string> = {
-  "spiritual-formation": "The Inner Life",
-  marriage: "Marriage",
-  parenting: "Parenting",
-  relationships: "Relationships",
-  family: "The Home",
-  work: "Work & Money",
-  suffering: "Hard Seasons",
-  "the-body": "The Body",
-  "the-life-in-the-world": "Life in the World",
-  discipleship: "Following Jesus",
-  evangelism: "Sharing Your Faith",
-};
-
-const TOPIC_ORDER = [
-  "spiritual-formation", "discipleship", "marriage", "parenting", "relationships",
-  "family", "work", "the-body", "suffering", "the-life-in-the-world", "evangelism",
+/** The subjects, in order, under the names the page has always used; the id is the index's topic. */
+const TOPICS: LibGroup[] = [
+  { id: "spiritual-formation", name: "The Inner Life", icon: Flame },
+  { id: "discipleship", name: "Following Jesus", icon: Route },
+  { id: "marriage", name: "Marriage", icon: HeartHandshake },
+  { id: "parenting", name: "Parenting", icon: Baby },
+  { id: "relationships", name: "Relationships", icon: Users },
+  { id: "family", name: "The Home", icon: House },
+  { id: "work", name: "Work & Money", icon: Briefcase },
+  { id: "the-body", name: "The Body", icon: HeartPulse },
+  { id: "suffering", name: "Hard Seasons", icon: Hourglass },
+  { id: "the-life-in-the-world", name: "Life in the World", icon: Globe },
+  { id: "evangelism", name: "Sharing Your Faith", icon: Megaphone },
 ];
 
 export default function HowTos() {
@@ -53,11 +51,6 @@ export default function HowTos() {
   const [nonce, setNonce] = useState(0);
   const failed = failedAt === nonce;
   const items = loaded && loaded.nonce === nonce ? loaded.articles : null;
-  const [active, setActive] = useState<string>(() => {
-    const q = typeof window !== "undefined" ? new URLSearchParams(window.location.search).get("topic") : null;
-    return q || "all";
-  });
-
   useEffect(() => {
     let stale = false;
     fetchJson("/howtos/index.json", isIndex)
@@ -66,85 +59,58 @@ export default function HowTos() {
     return () => { stale = true; };
   }, [nonce]);
 
-  const topics = useMemo(() => {
-    const present = Array.from(new Set((items ?? []).map((i) => i.topic)));
-    return TOPIC_ORDER.filter((t) => present.includes(t)).concat(present.filter((t) => !TOPIC_ORDER.includes(t)));
-  }, [items]);
-
-  const shown = useMemo(
-    () => (!items ? [] : active === "all" ? items : items.filter((i) => i.topic === active)),
-    [items, active]
+  const libItems = useMemo(
+    () =>
+      items?.map((e) => ({
+        href: `/how-tos/${e.slug}`,
+        title: e.title,
+        line: e.excerpt,
+        meta: readTimeLabel(e.readTime),
+        group: e.topic,
+      })) ?? null,
+    [items],
   );
-  const countFor = (t: string) => (items ?? []).filter((i) => i.topic === t).length;
 
   return (
     <Layout>
       <SEOMeta
-        title="How-To Guides — Practical, Scripture-Grounded Help for Real Life"
+        title="How-To Guides: Marriage, Parenting, Prayer, Money"
         description="Short, practical how-to guides for marriage, parenting, money, the inner life, hard seasons, and making disciples. Plain help, grounded in Scripture."
         url="https://www.livewellbyjamesbell.co/how-tos"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--charcoal-fg)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>How-to guides</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "18ch" }}>
-            Practical help for real life
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            Short, plain guides for the things you actually have to do: start family worship, fight fair in marriage, get out of debt, share your faith without being weird, make a disciple at your table. Grounded in Scripture, written for the long obedience of an ordinary week.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/how-tos" title="How-to guides" line="How-to guides for everyday Christian life" plate="table">
+        <p className="pg-head__lede">Practical help for real life.</p>
+      </InnerHead>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          {failed ? (
-            <LoadFailed what="The how-to library" onRetry={() => setNonce((n) => n + 1)} backHref="/" backLabel="Back home" />
-          ) : items === null ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the library…</p>
-          ) : items.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }}>No guides are published yet.</p>
-          ) : (
-            <>
-              {/* topic filter */}
-              <div className="ed-chips" role="group" aria-label="Filter guides by topic">
-                {["all", ...topics].map((t) => (
-                  <button key={t} type="button" className="ed-chip" aria-pressed={t === active} onClick={() => setActive(t)}>
-                    {t === "all" ? "All" : (TOPIC_LABEL[t] || t)}
-                    <span className="ed-chip-n">{t === "all" ? items.length : countFor(t)}</span>
-                  </button>
-                ))}
-              </div>
-              <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-2)" }}>
-                {`Showing ${shown.length} of ${items.length}`}
-              </p>
-              {shown.length === 0 ? (
-                <p style={{ fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink-muted)", padding: "var(--s-3) 0" }}>
-                  No guides are filed under that topic. Choose one above.
-                </p>
-              ) : (
-                <EditorialIndex
-                  compact
-                  headingAs="h2"
-                  label="How-to guides"
-                  items={shown.map((e) => ({
-                    href: `/how-tos/${e.slug}`,
-                    title: e.title,
-                    dek: e.excerpt,
-                    kicker: TOPIC_LABEL[e.topic] || e.topic,
-                    meta: readTimeLabel(e.readTime),
-                  }))}
-                />
-              )}
-            </>
-          )}
+      {/* FIRST: find a guide, by word or by subject (?topic= opens one subject). */}
+      <LibraryIndex
+        id="howtos"
+        items={items === null ? null : libItems}
+        failed={failed ? { what: "The how-to library", onRetry: () => setNonce((n) => n + 1), backHref: "/", backLabel: "Back home" } : null}
+        groups={TOPICS}
+        icon={Sprout}
+        noun={["guide", "guides"]}
+        findLabel="Find a guide"
+        placeholder="Try: family worship, debt, forgive, pray"
+        bandTitle="What do you need to do?"
+        param="topic"
+        none={<p>No guide matches. Try another word, or <Link href="/tools/wisdom-finder">tell us what you are facing</Link>.</p>}
+      />
 
-          <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid var(--border)", paddingTop: "var(--s-3)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
-            <Link href="/tools/wisdom-finder" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Wisdom Finder</Link>
-            <Link href="/life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The Integrated Life</Link>
-            <Link href="/disciple-making" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Make Disciples</Link>
+      <section className="home-sec home-sec--warm" aria-labelledby="howtos-more-title">
+        <div className="home-wrap">
+          <SectionHead icon={BookOpenText} label="Short, plain guides" title="Grounded in Scripture." id="howtos-more-title" />
+          <div className="lw-prose-band__body">
+            <p>
+              Short, plain guides for the things you actually have to do: start family worship, fight fair in marriage, get out of debt, share your faith without being weird, make a disciple at your table. Grounded in Scripture, written for the long obedience of an ordinary week.
+            </p>
           </div>
+          <ul className="lw-tiles" style={{ marginTop: "var(--s-4)" }}>
+            <li><IconTile href="/tools/wisdom-finder" icon={Lightbulb} name="Wisdom Finder" line="What the Bible says about what you face" /></li>
+            <li><IconTile href="/life" icon={Compass} name="The Integrated Life" line="Every part of life, one guide each" /></li>
+            <li><IconTile href="/life/making-disciples-at-the-table" icon={Users} name="Make Disciples" line="At your own table" /></li>
+          </ul>
         </div>
       </section>
     </Layout>

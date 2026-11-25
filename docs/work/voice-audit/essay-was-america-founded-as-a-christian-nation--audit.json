@@ -1,0 +1,78 @@
+{
+  "piece": "was-america-founded-as-a-christian-nation",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean. Literal search finds no Forbidden Language, no em-dash, and the only exclamation point is inside Psalm 33:12 (verbatim ESV). The prose is plain, dated, sourced, fair to both sides before it turns, and the writer puts himself inside it twice without using biography as a credential. What remains is small: a question-then-clipped-answer habit used four times, one question that repeats its own heading, a patched appositive in the Plain Answer section, the same 'the gospel needs no help' epigram landing three times in the last third, and a final paragraph whose first sentence goes abstract right where it should be most spoken. No finding touches a checked fact.",
+  "findings": [
+    {
+      "quote": "What does the Bible itself call a holy nation? The verse most often quoted",
+      "tell": "Stacked self-answered questions; the question restates the heading directly above it",
+      "why": "The heading is 'What Scripture Calls a Holy Nation' and the first sentence asks the same thing back. It is also the third of four question-then-answer openers ('Does that settle it? Not by itself.' / 'Who took these arrangements apart? Mostly not skeptics.' / 'Does that make Christians indifferent to their country? No.'). Two read as him; four read as a device. This is the one to drop, because the heading already asked it.",
+      "replacement": "The verse most often quoted",
+      "severity": "should"
+    },
+    {
+      "quote": "has the Constitution to explain, and the Treaty of Tripoli, and the Baptists in Danbury, the Christians whose letter Jefferson answered with the wall.",
+      "tell": "Patched appositive; the sentence explains itself a second time",
+      "why": "The trailing 'the Christians whose letter Jefferson answered with the wall' reads like a correction bolted on (the ledger shows it was). A person talking would use a plain relative clause. The claim stays exactly as checked: the letter was theirs, the wall was Jefferson's.",
+      "replacement": "has the Constitution to explain, and the Treaty of Tripoli, and the Baptists in Danbury, whose letter Jefferson answered with the wall.",
+      "severity": "should"
+    },
+    {
+      "quote": "the feeling is worth examining. It says less about the founders than about where we have been looking for our security.",
+      "tell": "Abstraction at the close; no contraction where speech would have one",
+      "why": "'The feeling is worth examining' is essay voice, close to counseling language, in the last paragraph of the piece, where he should sound most like a man across a table. The second sentence is the real ending and should stay; it only needs the contraction.",
+      "replacement": "it's worth asking why. It says less about the founders than about where we've been looking for our security.",
+      "severity": "should"
+    },
+    {
+      "quote": "largely by Christians who believed the gospel needed no help from the tax collector.",
+      "tell": "Aphoristic paragraph closer; one motif stamped three times",
+      "why": "The same thought lands as an epigram here, again at 'that the faith must need the help,' and again at 'has never needed a legislature's permission.' The last one is the earned verdict and the middle one sets it up. This first one spends the line early and makes the later two sound like a refrain. Ending on the plain fact is stronger and loses nothing the Baptist section has not already shown.",
+      "replacement": "largely by Christians.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Who took these arrangements apart? Mostly not skeptics.",
+      "tell": "Clipped fragment answer to a self-posed question",
+      "why": "'Mostly not skeptics' is not how anyone says it aloud. A full short sentence keeps the turn and sounds spoken.",
+      "replacement": "Who took these arrangements apart? For the most part it wasn't skeptics.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Their conclusion was blunt.",
+      "tell": "Announced turn",
+      "why": "It tells the reader how to take the next sentence before giving it. The conclusion that follows is blunt on its own, and the paragraph's last line ('they would not tell the church a flattering story about itself') already does the characterizing.",
+      "replacement": "",
+      "severity": "consider"
+    },
+    {
+      "quote": "A deeply Protestant people built a national government",
+      "tell": "Vague intensifier in the standfirst",
+      "why": "'Deeply' is the one soft adverb in the piece, and it sits in the first line a reader sees. The body's own phrase is more exact ('overwhelmingly Protestant in culture').",
+      "replacement": "An overwhelmingly Protestant people built a national government",
+      "severity": "consider"
+    },
+    {
+      "quote": "And they produced the Separate Baptists. Their leader, Shubal Stearns,",
+      "tell": "Ambiguous pronoun after a three-beat build",
+      "why": "'They' is the revivals for three sentences running, so 'Their leader' briefly reads as the revivals' leader. Minor, but it is the kind of slip a read-aloud catches.",
+      "replacement": "And they produced the Separate Baptists, whose leader, Shubal Stearns,",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The two-document opening (Brewer 1892, Tripoli 1797) is concrete and fair before any judgment, and Proverbs 18:17 is used inside the argument, not as decoration.",
+    "The Beecher paragraph: 'It's easy to smile at him now. But if I had been a Congregational minister in Connecticut in 1818, what reason do I have to believe I would have stood with the Baptists rather than with Beecher?' That is the writer inside the diagnosis by doing it, not announcing it.",
+    "'Preachers, and I'm one of them' followed by the false Patrick Henry quotation and the ninth commandment. Specific, self-implicating, and it could not run on any church's page unchanged.",
+    "'The two mistakes don't cost the same, though.' One antithesis at the true hinge, and it refuses false symmetry without caricaturing the secular reader.",
+    "Every scholar named carries an idea (Butler and Kidd on the label, Frazer's 'theistic rationalism', Finke and Stark's 17 percent, Noll, Hatch and Marsden's test, Dreisbach on the wall). Remove any name and the sentence loses content. No parade.",
+    "Headings are plain. Contractions are present without being forced. Sentence and paragraph lengths vary. No title, years in ministry, book count or denomination claim appears."
+  ],
+  "for_james": [
+    "Two places would only get more human with something real from you, and nothing should be invented for them. First: 'You may have heard the episode told in church as proof of a praying Convention.' If you have heard it told that way, or told it yourself, one plain sentence saying so would do more than any edit. Second: 'Preachers, and I'm one of them.' If you ever used a founder quotation from the pulpit that turned out to be false, naming it there is the strongest line the essay could have. If not, leave both as they stand.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree, and I judged by VOICE-JAMES-BELL.md. The profile asks for 2 to 4 sentence paragraphs, a 1,500 to 2,500 word ceiling, a screenshot line in every piece, a Greek or Hebrew word, a real person's story and three Monday-morning questions. This essay runs longer, in developed paragraphs, with no word study and no application box, which is what the governing standard asks for. I did not rewrite toward the profile. The profile also names livewellbyjamesbell.com; the site is livewellbyjamesbell.co.",
+    "The ledger still carries an open item for you: Beecher's Autobiography may read 'upon' where web sources give 'on.' The essay now quotes only the words every source shares, so nothing is wrong as published; it is noted so no one changes that sentence without the book in hand.",
+    "The essay's criticism lands harder on the Christian-nation side than on the secularist side, and it says so openly ('The two mistakes don't cost the same'). That fits your standard on refusing false symmetry, and the secular myth is named and corrected earlier. Flagged only so you know it was weighed, not missed."
+  ]
+}

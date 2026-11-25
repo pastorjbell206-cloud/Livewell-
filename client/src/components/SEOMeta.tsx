@@ -30,9 +30,28 @@ interface SEOMetaProps {
   structuredData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
+/** The short ending every search title carries. The full name stays in
+ *  og:site_name and on the pages that are about James himself. */
+const TITLE_SUFFIX = "LiveWell";
+
+/**
+ * A search description of about 155 characters. A longer one is cut back to
+ * its last whole sentence that fits, or to a whole word with an ellipsis.
+ * scripts/prerender-heads.mjs carries the same function, so the browser and
+ * the prerendered head agree.
+ */
+export function capDescription(text: string, max = 155): string {
+  const t = String(text ?? "").replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  const head = t.slice(0, max + 1);
+  const end = Math.max(head.lastIndexOf(". "), head.lastIndexOf("? "));
+  if (end >= 60) return t.slice(0, end + 1);
+  return `${t.slice(0, max - 1).replace(/\s+\S*$/, "").replace(/[,;:]$/, "")}\u2026`;
+}
+
 export function SEOMeta({
   title,
-  description,
+  description: rawDescription,
   keywords,
   image = OG_DEFAULT_IMAGE,
   url,
@@ -47,7 +66,8 @@ export function SEOMeta({
   // the brand. Matching the full SITE_NAME missed titles ending "| LiveWell" or
   // "— by James Bell", which then shipped doubled.
   const fullTitle =
-    title.includes("James Bell") || title.includes("LiveWell") ? title : `${title} | ${SITE_NAME}`;
+    title.includes("James Bell") || title.includes("LiveWell") ? title : `${title} | ${TITLE_SUFFIX}`;
+  const description = capDescription(rawDescription);
   // Canonical: an explicit `url` always wins. Otherwise derive it from the
   // current route so each page self-canonicalizes — without this, every page
   // that omits `url` would canonicalize to the homepage (SITE_URL), telling

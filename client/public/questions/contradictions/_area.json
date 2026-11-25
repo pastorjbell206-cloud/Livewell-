@@ -1,0 +1,64 @@
+{
+  "slug": "contradictions",
+  "title": "Contradictions and hard passages",
+  "record": "docs/work/elite/apol-pilot/contradictions/index.md",
+  "intro": "Anyone who reads the Bible slowly, with two accounts of the same event open side by side, will find places where they don't agree. Luke dates Jesus' birth by a census that Josephus puts a decade after Herod's death. Matthew and Luke give Jesus two different grandfathers. Matthew and Acts tell the death of Judas in two different ways. John seems to put the crucifixion on a different day from the other three Gospels, and at a different hour from Mark. Samuel and Chronicles, telling the same reigns, give different numbers for the same armies. These aren't inventions of skeptics, and they weren't discovered in the modern age. Christians noticed them from the start: Julius Africanus wrote about the genealogies early in the third century, and Augustine wrote a whole book on the agreement of the Gospels around 400.\n\nThese pages take the best-known difficulties one at a time. Each sets out the problem in the words of the text itself, from the Berean Standard Bible the site uses, and at the strength its best critics give it. Each sets out the main solutions that have been proposed, with the real weakness of each, and says plainly where a harmonization is strained and where a question is still open. None of them pretends that every difficulty has been solved.\n\nThe pages also take no side between the ways Christians confess Scripture's truthfulness. Some hold to inerrancy, that Scripture in its original writings is without error in all that it affirms; others hold that Scripture is infallible in what God gave it to teach, the way of salvation and of life with him, without requiring that every number or date in its histories be harmonized. Each page says what each holds, in words its holders would sign, and what all confess together: that God has spoken in Scripture, and that it is the church's final authority for faith and life. The difficulties matter, and they deserve honest answers. They are also, in nearly every case, about the edges of a story whose center the accounts share.",
+  "pieces": [
+    {
+      "slug": "the-census-of-quirinius",
+      "question": "Luke says Jesus was born during a census taken while Quirinius governed Syria. Josephus dates that census to AD 6, about ten years after Herod died. Didn't Luke get it wrong?",
+      "blurb": "What Luke says and what Josephus dates, the governors of Syria, Justin and Tertullian, the five proposed solutions with the weakness of each, and why the question is still open."
+    },
+    {
+      "slug": "the-two-genealogies",
+      "question": "Matthew and Luke give Jesus two different family trees, with different fathers for Joseph. Doesn't that show at least one of them was made up?",
+      "blurb": "Both lists set side by side, Julian's charge and Jerome's count, Africanus's levirate explanation in his own words with its weakness, Mary's line and the royal line, and what both lists affirm."
+    },
+    {
+      "slug": "how-did-judas-die",
+      "question": "Matthew and Acts tell Judas's death differently: in one he takes his own life, in the other he falls headlong in a field he had bought. Can both be true?",
+      "blurb": "The two passages and Papias's third account, the harmonizations with their weaknesses, Augustine's candor about \"Jeremiah\" in Matthew 27:9, and the core the accounts share."
+    },
+    {
+      "slug": "the-day-of-the-crucifixion",
+      "question": "Mark says Jesus ate the Passover with his disciples and was crucified at the third hour. John says he was sentenced on the day of Preparation for the Passover, about the sixth hour. Don't the Gospels disagree about when Jesus died?",
+      "blurb": "The Passover calendar from Exodus and Josephus, every time note in the four Gospels, the four solutions with their weaknesses, the hour, and the frame all four share."
+    },
+    {
+      "slug": "numbers-in-samuel-kings-and-chronicles",
+      "question": "Samuel and Kings tell the same history as Chronicles, but their numbers often disagree: 800,000 soldiers or 1,100,000, seven hundred charioteers or seven thousand, a king of twenty-two or forty-two. If the Bible can't keep its numbers straight, why trust it on anything?",
+      "blurb": "The differences set out from the English and the Hebrew, where the BSB has already chosen a reading, the Greek translation and the Dead Sea Scrolls, who killed Goliath, and what copying can and can't explain."
+    }
+  ],
+  "words": [
+    {
+      "term": "Inerrancy",
+      "meaning": "the conviction that Scripture in its original writings is without error in all that it affirms; its best-known modern statement is the Chicago Statement of 1978."
+    },
+    {
+      "term": "Infallibility",
+      "meaning": "as used here, the conviction that Scripture never fails in what God gave it to teach, the way of salvation and of life with him. Christians who hold to inerrancy confess Scripture infallible too; the Chicago Statement says the two \"may be distinguished, but not separated.\""
+    },
+    {
+      "term": "Harmonization",
+      "meaning": "an explanation that shows how two accounts that seem to conflict can both be true."
+    },
+    {
+      "term": "Parallel account",
+      "meaning": "a second telling of the same event, as Chronicles retells Samuel and Kings, or as the four Gospels tell the passion."
+    },
+    {
+      "term": "Masoretic text",
+      "meaning": "the standard Hebrew text of the Old Testament, preserved by Jewish scribes; the Leningrad Codex, copied early in the eleventh century, is its oldest complete copy."
+    },
+    {
+      "term": "Septuagint",
+      "meaning": "the Greek translation of the Hebrew Scriptures made by Jews before the time of Jesus, which sometimes preserves a different reading."
+    }
+  ],
+  "elsewhere": [
+    "The argued answer \"Why would anyone trust the Bible?\" (/answers/why-would-anyone-trust-the-bible), the short form of this area.",
+    "The Study Bible's notes, which treat each of these passages verse by verse: Luke 2 (/study/bible/luke/2), Luke 3 (/study/bible/luke/3), Matthew 1 (/study/bible/matthew/1), Matthew 27 (/study/bible/matthew/27), Acts 1 (/study/bible/acts/1), John 19 (/study/bible/john/19), 2 Samuel 24 (/study/bible/2-samuel/24) and 1 Chronicles 21 (/study/bible/1-chronicles/21).",
+    "\"The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?\" (/questions/jesus/the-resurrection-accounts-disagree), the resurrection accounts, treated in the area on the historical Jesus."
+  ]
+}

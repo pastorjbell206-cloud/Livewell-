@@ -1,6 +1,6 @@
 {
   "tagline": "An anonymous sermon in letter form, urging weary Christians to hold on because Jesus is the final word of God and the great high priest.",
-  "overview": "Hebrews is the most sustained argument in the New Testament, and one of its most beautiful pieces of Greek. It begins without a greeting, like a sermon, and ends with personal news and greetings, like a letter. Its author calls it a word of exhortation (13:22). It was written to believers who had once suffered bravely for their faith but were now tired, drifting, and tempted to give up on Christ, most likely by turning back to the familiar world of the synagogue, its priesthood, and its sacrifices.\n\nThe author's answer is not simply to scold but to show them who Jesus is. Page after page, he compares Jesus with the greatest things in Israel's faith: the prophets, the angels through whom the law was given, Moses, Joshua, Aaron and the priesthood, the tabernacle, the covenant made at Sinai, and the sacrifices of the Day of Atonement. Each was good and God-given, and each was a shadow pointing ahead. Jesus is the Son through whom God has spoken last and best, a priest in the order of Melchizedek who offered himself once for all and now lives to intercede for his people.\n\nWoven through the argument are five solemn warnings not to drift, harden, fall away, or refuse the one who speaks, and just as many words of encouragement. The book ends with its great roll call of faith (chapter 11), a call to run the race looking to Jesus (chapter 12), and practical instructions for life together (chapter 13). Few books so thoroughly connect the Old Testament to Christ, and few speak so directly to people who are tired of believing.",
+  "overview": "Hebrews is the most sustained argument in the New Testament, and one of its most beautiful pieces of Greek. It begins without a greeting, like a sermon, and ends with personal news and greetings, like a letter. Its author calls it a word of exhortation (13:22). It was written to believers who had once suffered bravely for their faith but were now tired, drifting, and tempted to give up on Christ, most likely by turning back to the familiar world of the synagogue, its priesthood, and its sacrifices.\n\nThe author's answer is not simply to scold but to show them who Jesus is. Page after page, he compares Jesus with the greatest things in Israel's faith: the prophets, the angels through whom the law was given, Moses, Joshua, Aaron and the priesthood, the tabernacle, the covenant made at Sinai, and the sacrifices of the Day of Atonement. Each was good and God-given, and each was a shadow pointing ahead. Jesus is the Son through whom God has spoken last and best, a priest in the order of Melchizedek who offered himself once for all and now lives to intercede for his people.\n\nWoven through the argument are five solemn warnings not to drift, harden, fall away, or refuse the one who speaks, and just as many words of encouragement. The book ends with its great roll call of faith (chapter 11), a call to run the race looking to Jesus (chapter 12), and practical instructions for life together (chapter 13). It connects the Old Testament to Christ from start to finish, and it speaks to people who are tired of believing.",
   "author": "The author never gives a name, and no one knows for certain who wrote Hebrews. The writer was a skilled Greek stylist, knew the Greek Old Testament (the Septuagint, the translation made in Egypt in the centuries before Christ) intimately, was a second-generation believer who heard the gospel from those who had heard the Lord (2:3), and knew Timothy (13:23).\n\nIn the Greek-speaking East the letter was associated with Paul from an early date; the oldest surviving collection of Paul's letters, the papyrus known as P46 from around AD 200, places it right after Romans. Yet even there scholars noticed that its style differed from Paul's. Clement of Alexandria, as reported by the historian Eusebius, thought Paul wrote it in Hebrew and Luke translated it. Origen judged that the thoughts were Paul's but the wording someone else's, and concluded that only God knows who actually wrote it. In the West, Tertullian attributed it to Barnabas, a Levite (Acts 4:36) and Paul's companion, and the Latin churches were slow to accept it as Pauline or even as Scripture until the late fourth century. Martin Luther proposed Apollos, the eloquent Alexandrian Jew learned in the Scriptures (Acts 18:24). Adolf von Harnack in 1900 suggested Priscilla, which would explain the missing name. Others have proposed Luke, Silas, or Clement of Rome. Most scholars today, whatever their theology, take Origen's view: the author is unknown, and the letter's authority does not depend on the name.",
   "date": "Hebrews was known and used by Clement of Rome in the letter usually called 1 Clement, generally dated around AD 96, so it was written before then. Many scholars date it before AD 70, when the Romans destroyed the temple in Jerusalem. The author speaks of sacrifices in the present tense and argues that the old system is \"aging\" and will \"soon disappear\" (8:13); it would have been the strongest possible point to mention that the temple had already fallen, and he never does. Others date it in the 70s or 80s, noting that the author discusses the wilderness tabernacle rather than the Herodian temple, so the present tenses may be the vivid language of Scripture study rather than evidence that sacrifice was still being offered. The readers had suffered earlier but had not yet shed blood (10:32-34, 12:4), which some connect with the expulsion of Jews from Rome under the emperor Claudius around AD 49 and date the letter before Nero's persecution in AD 64. A date in the 60s is the most common view, with a range from about AD 60 to 90.",
   "setting": "The title To the Hebrews is not part of the text, but it is very old and reflects what the letter itself suggests: readers steeped in the Scriptures and the institutions of Israel, for whom the priesthood and sacrifices were a live alternative. Most interpreters think of a community of Jewish Christians, perhaps with Gentile members as well, who were tempted to retreat into the synagogue, which Roman authorities generally tolerated as an ancestral religion in a way they did not tolerate the new movement. Some scholars argue for a mainly Gentile audience drawn to Jewish practice.\n\nThe location is unknown. The greeting from \"those from Italy\" (13:24) most naturally means Italians abroad sending greetings home, which suggests a church in or near Rome, and the letter's early use in Rome by Clement fits. Jerusalem, Alexandria, and other cities have been proposed. The readers had suffered public insult, imprisonment, and the confiscation of property in their early days (10:32-34), had endured it joyfully, and now faced discouragement and perhaps a new wave of pressure.",
@@ -33,5 +33,338 @@
     { "ch": 9, "why": "The tabernacle and the Day of Atonement read as pointers to Christ's once-for-all sacrifice." },
     { "ch": 11, "why": "The great roll call of faith, from Abel to the unnamed martyrs." },
     { "ch": 12, "why": "Running the race with eyes fixed on Jesus, the discipline of the Father, and the unshakable kingdom." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Hebrews in a minute",
+        "body": "Hebrews is a long letter to believers in Jesus who were tired. It has 13 chapters and takes about forty-five minutes to read aloud. It begins without any greeting, like a sermon, and it ends with news and greetings, like a letter. The writer calls it “my word of exhortation” (13:22), which means a word of encouragement and urging.\n\nThe first readers had once been brave. In their early days they had been mocked and had lost their property, and they had stood by friends in prison (10:32-34). Now, years later, some were drifting. Some had stopped meeting with the other believers (10:25). The writer fears that they will slowly let go of Jesus, as a boat slips away from its harbour.\n\nHis answer is not mainly to scold. It is to show them who Jesus is. The letter opens with one of the greatest sentences in the Bible: God, who spoke in many ways through the prophets, “in these last days He has spoken to us by His Son” (1:2). Then, page after page, the writer takes the great gifts God gave Israel, the prophets, the angels, Moses, the priests, the tabernacle, the covenant and the sacrifices, and shows how each of them pointed to Jesus. Jesus is God's Son. He became fully human. He is the great high priest who offered himself once for all, and who now “always lives to intercede” for his people (7:25).\n\nRunning through the teaching are five solemn warnings not to drift or harden or turn away, and many warm words of hope. Near the end comes the great list of men and women of faith (chapter 11), the call to run the race with our eyes on Jesus (chapter 12), and plain instructions for life together (chapter 13).\n\nSome questions about this letter are hard. No one knows who wrote it. Readers differ over what its warnings mean for a believer. And for centuries some Christians misused its words about the old covenant to teach contempt for the Jewish people. These notes set out the main readings fairly and take no side where faithful Christians differ. On that last point they take a side, plainly: that misuse was wrong, and this site rejects it."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it: no one knows",
+        "body": "The letter never names its writer. No one knows for certain who wrote Hebrews, and it is honest to say so.\n\nThe letter itself tells us a little. The writer heard the gospel from those who had heard Jesus: the message “was confirmed to us by those who heard Him” (2:3). So he was not one of the first disciples. He wrote very fine Greek. He knew the Scriptures of Israel deeply, and he usually quoted them from the Greek translation of the Old Testament, made in Egypt in the centuries before Christ. And he knew Timothy, Paul's friend: “our brother Timothy has been released” (13:23).\n\nFrom early on, people made suggestions. In the Greek-speaking churches of the East the letter was linked with Paul. The oldest collection of Paul's letters that survives, a papyrus from around AD 200, places it right after Romans. Yet even then readers noticed that its style was not like Paul's. Clement of Alexandria, as the historian Eusebius reports, thought Paul wrote it in Hebrew and Luke turned it into Greek. Origen judged that the thoughts were Paul's but the wording someone else's, and concluded that only God knows who actually wrote it. In the West, Tertullian named Barnabas, a Levite (Acts 4:36) who travelled with Paul. Much later Martin Luther suggested Apollos, a Jew from Alexandria who was “well versed in the Scriptures” (Acts 18:24). In 1900 the scholar Adolf von Harnack suggested Priscilla, which would explain the missing name. Others have suggested Luke, Silas, or Clement of Rome.\n\nEach of these is a suggestion, and none can be proved. Most scholars today, whatever their beliefs, end where Origen did: the writer is unknown. These notes do not choose, and they call him ‘the writer’. One thing is plain from every page: whoever he was, he wrote as a Jew who loved Israel's Scriptures and believed that God had kept their promises in Jesus.\n\nThe church received the letter as Scripture because of what it says, not because of a famous name. In the West it took longer to be accepted than most books of the New Testament, until the late 300s."
+      },
+      {
+        "id": "readers",
+        "h": "Who it was written to, and when",
+        "body": "The title ‘To the Hebrews’ is not part of the letter itself, but it is very old. It fits what the letter shows. Its first readers knew Israel's Scriptures well. The writer can mention Melchizedek, the Day of Atonement, the tabernacle, and the wilderness generation without explaining who they are. For them the priests and the sacrifices were a real and living way to worship God. Most readers think they were Jewish believers in Jesus, perhaps with some Gentile believers among them. Some scholars think they were mostly Gentiles who had been drawn to Jewish practice.\n\nThe letter tells us more about their story than their place. They had come to faith years before (5:12). They had suffered for it in their early days: “Sometimes you were publicly exposed to ridicule and persecution; at other times you were partners with those who were so treated” (10:33). They had cared for prisoners and had their goods taken. But none of them had yet been killed for their faith: “you have not yet resisted to the point of shedding your blood” (12:4). Now they were weary, and some were tempted to drift back from following Jesus, perhaps to the worship they had known before, which was safer and more familiar.\n\nWhere were they? The letter does not say. Near the end the writer passes on a greeting: “Those from Italy send you greetings” (13:24). That could mean people living in Italy, or people from Italy living somewhere else and greeting friends back home. Many readers take the second, and think of a church in or near Rome. Others suggest Jerusalem, Alexandria or elsewhere. These notes do not choose.\n\nWhen was it written? It was known to Clement of Rome, who wrote a letter usually dated around AD 96, so it was written before then. Beyond that, readers differ. Many date it before AD 70, the year the Romans destroyed the temple in Jerusalem. They point out that the writer speaks of the sacrifices as if they were still going on, and that he never mentions the temple's fall, which would have helped his argument. Others date it in the 70s or 80s. They note that the writer always speaks of the tabernacle in the wilderness, not the temple, so his present tense may be the way a teacher speaks when he is explaining a passage of Scripture. A date in the 60s is the most common view, with a range from about AD 60 to 90. These notes do not choose."
+      },
+      {
+        "id": "built",
+        "h": "How it is built",
+        "body": "Hebrews is built like a sermon, with teaching and urging woven together. The teaching shows who Jesus is. The urging says: so hold on, draw near, and help one another.\n\nThe Son, greater than the angels (1:1 to 2:18). God has spoken finally in his Son, who made the universe and sat down at God's right hand. Seven passages from the Old Testament show that he is higher than the angels. Yet he became human, ‘a little lower than the angels’ (2:9), to suffer and die for us and to become a merciful high priest. The first warning: do not drift away (2:1-4).\n\nGreater than Moses: the rest that remains (3:1 to 4:13). Moses was faithful as a servant in God's house; Jesus is faithful as the Son over it. Psalm 95 warns against hardening our hearts, as Israel did in the wilderness. God's rest is still open: ‘Today’.\n\nA high priest like Melchizedek (4:14 to 7:28). Jesus is a high priest who knows our weakness. After a sharp warning (5:11 to 6:12), the writer shows that God's promise is sure, and that Jesus is a priest forever ‘in the order of Melchizedek’ (Psalm 110:4).\n\nA better covenant, sanctuary and sacrifice (8:1 to 10:18). Jesus serves in the true sanctuary in heaven. He brings the new covenant God promised through Jeremiah. The Day of Atonement pointed ahead to his one offering of himself.\n\nDraw near and keep going (10:19 to 12:29). So draw near to God, hold on, and keep meeting together. A warning against turning away (10:26-31). The great list of the faithful (chapter 11). Run the race looking to Jesus; accept the Father's training; you have come to Mount Zion.\n\nLife together, and farewell (chapter 13). Love, welcome strangers, remember prisoners, honour marriage, be content, remember your leaders, go to Jesus ‘outside the camp’. A blessing and greetings."
+      },
+      {
+        "id": "son",
+        "h": "The Son: truly God and truly man",
+        "body": "No book in the Bible says more about who Jesus is in so few words than the first chapters of Hebrews.\n\nHe is God's own Son. “The Son is the radiance of God’s glory and the exact representation of His nature, upholding all things by His powerful word” (1:3). God made the universe through him (1:2). And the writer applies to him a psalm that speaks to God: “Your throne, O God, endures forever and ever” (1:8, from Psalm 45:6).\n\nAnd he is fully human. “He had to be made like His brothers in every way” (2:17). He shared our ‘flesh and blood’ (2:14). He was tempted ‘in every way that we are, yet was without sin’ (4:15). He prayed “with loud cries and tears” (5:7).\n\nThe church confesses both together. The Nicene Creed confesses Jesus Christ as ‘God of God, Light of Light, very God of very God, begotten, not made, being of one substance with the Father’, who ‘came down from heaven’ and ‘was made man’. The Council of Chalcedon in AD 451 confessed him as one person, ‘truly God and truly man’, ‘in all things like unto us, without sin’, in two natures ‘without confusion, without change, without division, without separation’. These are not the site's own views. They are the faith of the church, and Hebrews is one of the places that faith comes from.\n\nTwo phrases in Hebrews puzzle many readers. ‘He learned obedience from what He suffered’ (5:8) does not mean he was ever disobedient. It means that as a man he came to know obedience from the inside, by doing it when it cost him everything. ‘Having been made perfect’ (5:9) does not mean he was once sinful or less than God. In Hebrews ‘perfect’ means ‘complete’, ‘brought to the goal’. By his suffering, death and rising, he was made complete for his work as our Saviour and high priest. The Son who was always God did not become more God. As a man, he finished what he came to do.\n\nWhy does it matter? Because only one who is God can save us, and only one who is truly human can stand in our place and know our weakness from inside. “For we do not have a high priest who is unable to sympathize with our weaknesses” (4:15). The doctrine study ‘The Incarnation’ says more."
+      },
+      {
+        "id": "priest",
+        "h": "A priest like Melchizedek",
+        "body": "In Israel the priests came from the tribe of Levi and the family of Aaron. Jesus came from the tribe of Judah, the tribe of the kings. So how can Hebrews call him a priest?\n\nThe answer comes from two short passages in the Old Testament. In Genesis 14, a king of Salem named Melchizedek, “priest of God Most High”, blesses Abraham, and Abraham gives him a tenth of everything (Genesis 14:18-20). Then, centuries later, a psalm about the king God seats at his right hand says, “The LORD has sworn and will not change His mind: ‘You are a priest forever in the order of Melchizedek’” (Psalm 110:4). The writer joins the two. Jesus is a priest not by birth into Levi's family, but by God's oath, as the psalm says, and forever.\n\nHebrews says Melchizedek was “Without father or mother or genealogy, without beginning of days or end of life” (7:3). Most readers take this as a point about what Genesis leaves unsaid. Genesis gives no parents, no family line, no birth and no death for him, though it usually gives these for important people. So, as Genesis tells him, he stands as a picture of a priest whose office does not come by family and does not end. Some readers, early and late, have taken the words more literally and thought Melchizedek was a heavenly being, or the Son of God himself appearing before he was born. Hebrews says he was ‘like the Son of God’ (7:3), and most take that as a likeness, not the same person. The notes on Genesis 14 and Psalm 110 say more, and say that it is wise not to say more than the text does.\n\nWhat does this priest do? He “always lives to intercede” for those who come to God through him (7:25). He offered himself, once for all (7:27). And he sat down, because the work was done (10:12)."
+      },
+      {
+        "id": "covenant",
+        "h": "The old covenant and the Jewish people",
+        "body": "This part must be read with the greatest care, because these chapters have been badly misused.\n\nStart with who is speaking. Hebrews was written by a Jew, most likely to Jewish believers in Jesus, in the language of Israel's Scriptures. Its argument is made from inside those Scriptures. When it calls the new covenant, the priesthood of Jesus and his sacrifice ‘better’, it is not stepping outside Israel's faith to look down on it. It is reading Israel's own prophets and psalms, above all Jeremiah 31 and Psalm 110, and saying that God has done in the Messiah what those Scriptures promised.\n\nThe letter honours what God gave. The law was God's word: “the message spoken by angels was binding” (2:2). The tabernacle was built to the pattern God himself showed Moses on the mountain (8:5). No priest took the honour on himself; ‘he must be called by God, just as Aaron was’ (5:4). Moses ‘was faithful as a servant in all God’s house’ (3:5). These were good gifts, and they served a real purpose: they taught Israel to come to God, and they pointed ahead to what God would do. Paul says the same of his own people: “Theirs is the adoption as sons; theirs the divine glory and the covenants; theirs the giving of the law, the temple worship, and the promises” (Romans 9:4).\n\nThen the hard words. “By speaking of a new covenant, He has made the first one obsolete” (8:13). Christ “takes away the first to establish the second” (10:9). These words are about a covenant arrangement, the covenant made at Sinai with its priesthood and its sacrifices, seen in the light of Christ's one offering. The writer's reason comes from Jeremiah, a prophet of Israel. God himself promised “a new covenant with the house of Israel and with the house of Judah” (Jeremiah 31:31). If God calls one covenant ‘new’, the writer argues, the earlier one is the older one. And notice where he puts the fault: “God found fault with the people” (8:8), not with his own law, just as Jeremiah said.\n\nThese words are not a verdict that God has rejected the Jewish people, that Jewish worship was false, or that Judaism is worthless. The New Testament says the opposite of rejection. “I ask then, did God reject His people? Certainly not!” (Romans 11:1). And “regarding election, they are loved on account of the patriarchs. For God’s gifts and His call are irrevocable” (Romans 11:28-29).\n\nHow Israel's ongoing place in God's purpose fits with Christ is a question Christians answer in different ways. Some hold that the church has taken Israel's place, a view often called replacement theology; others hold a milder view they call fulfilment, that God's promises to Israel are fulfilled in Christ and Israel and the church are one people of God in him. Others, in what is called covenant theology, stress one people of God across both Testaments, and many of them also expect a future turning of Jewish people to Christ. Others hold that God keeps a distinct future for the Jewish people beside the church. A few hold that Jews are in covenant with God through Moses and need not come to faith in Christ; most churches do not teach this. The site's notes on Romans 9 to 11 set out these views in their holders' terms. These notes do not choose.\n\nBut on one thing this site takes a side. For centuries some Christians used this letter, with other parts of the New Testament, to teach contempt for Jews and Judaism, and that contempt was used to justify expulsions and violence against Jews. That reading is false. This site rejects it, and the note on Acts 2:22-28 sets out why. Since the Holocaust, many churches have rejected teachings that fed hostility toward Jews. Hebrews is about God keeping his promises in Christ. It is not the condemnation of a people. And notice whom the letter warns. Its warnings are spoken to believers in Jesus, and the writer includes himself: “We must pay closer attention” (2:1)."
+      },
+      {
+        "id": "warnings",
+        "h": "The warning passages",
+        "body": "Five times the writer stops his teaching to warn his readers: do not drift away (2:1-4); do not harden your hearts (3:7 to 4:13); grow up, and do not fall away (5:11 to 6:12); do not go on sinning deliberately after knowing the truth (10:26-39); do not refuse the one who speaks (12:14-29). Some of these are among the most frightening words in the Bible. The sharpest begins, “It is impossible for those who have once been enlightened” (6:4), and speaks of people who “have fallen away” and cannot be “restored to repentance” (6:6).\n\nChristians read these warnings in more than one way, and each reading is held by faithful people.\n\nMuch of the Reformed and Baptist world holds that those truly saved are kept by God and cannot finally be lost. They read the warnings as real and serious, a means God uses to keep his people: true believers hear them and hold on. Some of them think the people described in 6:4-5 had come close to the faith, tasting its gifts, without being truly born again. Others think the warning describes what would happen if a believer fell away, in order to keep believers from it. They point to the writer's own words: “we are convinced of better things in your case—things that accompany salvation” (6:9).\n\nMuch of the Wesleyan, Arminian and Catholic world holds that a real believer can turn away from Christ and forfeit salvation. They read the warnings at face value: the people in 6:4-5 were truly enlightened and shared in the Holy Spirit, and the danger of falling away from Christ is real. Many of them add that the ‘impossible’ of 6:6 describes a settled turning away from Christ himself, not a believer who sins and repents.\n\nThese notes do not choose. The note on Romans 8:31-39 sets out both views, and so does the site's Honest Answer, ‘Can you lose your salvation?’ Both sides agree on much. The warnings are meant to be heard. They are about turning away from Christ, not about the ordinary sins and struggles of people who keep coming back to him. And the same letter is full of hope: Jesus “is able to save completely those who draw near to God through Him” (7:25).\n\nIf you are afraid that you have fallen away from God, that fear is not usually the mark of someone who has. Read Romans 8:38-39 slowly. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor can help too, and the Find Help page on this site lists places to turn."
+      },
+      {
+        "id": "faith",
+        "h": "Faith that looks ahead",
+        "body": "“Now faith is the assurance of what we hope for and the certainty of what we do not see” (11:1). In Hebrews, faith looks forward. It trusts God's promise before it can see it kept, and it keeps going when the going is hard.\n\nChapter 11 shows faith in people: Abel, Enoch, Noah, Abraham and Sarah, Moses, Rahab, Gideon, David and many more. The Old Testament shows them as they were, flaws and all. Abraham twice passed off his wife as his sister. Jacob deceived his father. Moses killed a man. Rahab was a prostitute, and Hebrews names her so (11:31). Gideon asked for sign after sign. Hebrews does not praise their sins. It praises their trust in God, and so it gives hope to everyone whose life is not tidy.\n\nThe chapter does not promise that faith always brings rescue. Some by faith “shut the mouths of lions” (11:33). But others “were tortured and refused their release” (11:35); they were stoned, killed and driven into the wilderness, “destitute, oppressed, and mistreated” (11:37). Both groups had faith. Some teachers say that strong enough faith will always bring health and wealth. That teaching is an error, and Hebrews 11 is one of the plainest answers to it. Many of the faithful “died in faith, without having received the things they were promised” (11:13).\n\nAt the end of the list stands Jesus himself: “Let us fix our eyes on Jesus, the author and perfecter of our faith, who for the joy set before Him endured the cross, scorning its shame” (12:2)."
+      },
+      {
+        "id": "old-testament",
+        "h": "Hebrews and the Old Testament",
+        "body": "Hebrews is a sermon on the Old Testament, and it quotes it on almost every page: Psalms 2, 8, 40, 45, 95, 102, 104 and 110; Genesis, Exodus and Deuteronomy; 2 Samuel 7; Isaiah; Jeremiah 31; Habakkuk 2; Haggai 2; Proverbs 3. It is good to read it with those passages open.\n\nThe writer usually quotes the Greek translation of the Old Testament, the Bible his readers knew. Most English Bibles, including the Berean Standard Bible used on this site, translate the Old Testament from the Hebrew. So sometimes the wording in Hebrews differs from the wording in your Old Testament. Psalm 40:6 in Hebrew says ‘my ears You have opened’; Hebrews, following the Greek, says “a body You prepared for Me” (10:5). Psalm 8:5 can be read ‘lower than God’ or ‘lower than the angels’; Hebrews follows the Greek, ‘angels’ (2:7). Habakkuk 2:3-4 and Genesis 47:31 are other examples. The chapter notes point these out and say what each passage meant in its own setting before saying how Hebrews reads it.\n\nThe writer reads the Old Testament as one story moving toward Christ. He often argues from the lesser to the greater: if the word spoken at Sinai was binding, how much more the word spoken by the Son. And he hears Scripture as God speaking now: “as the Holy Spirit says: ‘Today, if you hear His voice’” (3:7)."
+      },
+      {
+        "id": "themes",
+        "h": "The big themes",
+        "body": "God has spoken. God spoke through the prophets, and now finally through his Son (1:1-2). The question all through the letter is whether we will listen ‘Today’.\n\nJesus the great high priest. He was appointed by God, he knows our weakness, he offered himself, and he prays for his people forever.\n\nBetter things. ‘Better’ runs through the letter: a better hope, a better covenant, better promises, better sacrifices, a better country, a better resurrection. The old was ‘a copy and shadow’ (8:5), not because it was false, but because it pointed to what it could not itself give.\n\nOnce for all. Christ's sacrifice does not need to be repeated: “we have been sanctified through the sacrifice of the body of Jesus Christ once for all” (10:10).\n\nDrawing near. Because of Jesus, believers may “approach the throne of grace with confidence” (4:16).\n\nHolding on. The readers are tired. The letter calls them to keep going together, and to “encourage one another” (10:25).\n\nStrangers on the way. God's people are “strangers and exiles on the earth” (11:13), looking for “the city that is to come” (13:14)."
+      },
+      {
+        "id": "not",
+        "h": "What the letter is not",
+        "body": "It is not contempt for the Jewish people or for Judaism. It is a Jewish writer's argument from Israel's Scriptures that God has kept his promises in Jesus. Using it to look down on Jews is a misuse, and this site rejects it.\n\nIt is not a weapon to frighten tender consciences. The warnings are real, but they are about turning away from Christ, not about a believer who struggles, falls and comes back. The same letter calls Jesus a high priest who can ‘sympathize with our weaknesses’ (4:15).\n\nIt is not a promise of an easy life. Its heroes include people who were tortured, mocked and killed (11:35-38). Faith does not guarantee rescue in this life.\n\nIt is not a reason to call suffering a punishment. Chapter 12 speaks of God's discipline as a father's training. It never says that someone's illness, loss or pain is God punishing them, and it never excuses anyone who harms a child.\n\nIt is not a rule that leaders must be obeyed whatever they do. ‘Obey your leaders’ (13:17) speaks of leaders who ‘watch over your souls’ and ‘must give an account’. It is never a shield for abuse.\n\nAnd it is not a call to give up on the church. Its cry is ‘Let us not neglect meeting together’ (10:25), and it is written for weary people, to bring them home."
+      },
+      {
+        "id": "reading",
+        "h": "How to read Hebrews",
+        "body": "Read it as a sermon, ideally aloud and in one or two sittings. It was written to be heard.\n\nKeep your Old Testament open. Look up the psalms and passages it quotes, and read them in their own setting first. Then watch what the writer does with them.\n\nWatch for the words that return: ‘better’, ‘once for all’, ‘perfect’, ‘Today’, ‘draw near’, ‘hold fast’, ‘rest’. And watch the pattern: teaching about Jesus, then ‘therefore’, then a call to act.\n\nRead the warnings together, and read each one with the hope that comes right after it. After the sharpest warning comes “we are convinced of better things in your case” (6:9) and the anchor of hope (6:19).\n\nWhere readers differ, on who wrote it, on the warnings, on Israel's place in God's purpose, read more than one view before you settle, and hold your own view as one who may yet be taught.\n\nAnd let it ask you its questions. Are you drifting? Who are you meeting with? Where are you tired? And where are your eyes fixed?\n\nThe notes on each chapter go through it passage by passage in plain words."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 8,
+        "ref": "1:8-9",
+        "line": "‘Your throne, O God.’ A psalm for a king applied to the Son, and what the church confesses."
+      },
+      {
+        "ch": 2,
+        "v": 10,
+        "ref": "2:10",
+        "line": "‘Made perfect through suffering’ (2:10; 5:9). What it means, and what it does not mean."
+      },
+      {
+        "ch": 3,
+        "v": 3,
+        "ref": "3:1-6",
+        "line": "Moses honoured, not belittled: faithful as a servant, Jesus as the Son."
+      },
+      {
+        "ch": 4,
+        "v": 9,
+        "ref": "4:6-11",
+        "line": "‘A Sabbath rest remains.’ What the rest is, and how Christians differ on the Sabbath."
+      },
+      {
+        "ch": 5,
+        "v": 8,
+        "ref": "5:7-10",
+        "line": "Loud cries and tears; ‘He learned obedience’. No suggestion that he was ever sinful."
+      },
+      {
+        "ch": 6,
+        "v": 4,
+        "ref": "6:4-8",
+        "line": "‘It is impossible ... to be restored to repentance.’ The main readings, and a word to the afraid."
+      },
+      {
+        "ch": 7,
+        "v": 3,
+        "ref": "7:1-3",
+        "line": "Melchizedek, ‘without father or mother’: what Genesis leaves unsaid."
+      },
+      {
+        "ch": 8,
+        "v": 13,
+        "ref": "8:7-13",
+        "line": "‘Obsolete.’ A covenant arrangement, not a verdict on the Jewish people."
+      },
+      {
+        "ch": 9,
+        "v": 22,
+        "ref": "9:15-22",
+        "line": "Covenant and will; ‘without the shedding of blood there is no forgiveness’."
+      },
+      {
+        "ch": 10,
+        "v": 26,
+        "ref": "10:26-31",
+        "line": "‘If we deliberately go on sinning.’ Not about a believer who struggles and repents."
+      },
+      {
+        "ch": 11,
+        "v": 31,
+        "ref": "11:31",
+        "line": "Rahab the prostitute among the faithful, and saints who were not rescued."
+      },
+      {
+        "ch": 12,
+        "v": 6,
+        "ref": "12:5-11",
+        "line": "The Lord's discipline: a father's training, never a cover for abuse or a verdict on the suffering."
+      },
+      {
+        "ch": 12,
+        "v": 17,
+        "ref": "12:15-17",
+        "line": "Esau, who ‘could find no ground for repentance’."
+      },
+      {
+        "ch": 13,
+        "v": 17,
+        "ref": "13:17",
+        "line": "‘Obey your leaders.’ Trust in accountable shepherds, never a shield for abuse."
+      }
+    ],
+    "words": [
+      {
+        "word": "Radiance",
+        "line": "Greek apaugasma, brightness shining out from a source. The Son is the shining of God's own glory (1:3)."
+      },
+      {
+        "word": "Exact representation",
+        "line": "Greek charaktēr, the mark a stamp or seal leaves, like the image on a coin. To see the Son is to see what God is (1:3)."
+      },
+      {
+        "word": "Drift away",
+        "line": "Greek pararreō, to flow past, like a boat slipping past its harbour. The danger is slow, not sudden (2:1)."
+      },
+      {
+        "word": "Founder, or author",
+        "line": "Greek archēgos, one who goes first and opens a way for others (2:10; 12:2)."
+      },
+      {
+        "word": "Made perfect",
+        "line": "Greek teleioō, to complete, to bring to the goal. Never a hint that Jesus was once sinful (2:10; 5:9)."
+      },
+      {
+        "word": "Rest",
+        "line": "Greek katapausis, the rest God gives; and sabbatismos, a Sabbath rest, a word found only here in the Bible (4:9)."
+      },
+      {
+        "word": "High priest",
+        "line": "The priest who once a year entered the Most Holy Place on the Day of Atonement. Jesus is the great high priest (4:14)."
+      },
+      {
+        "word": "Melchizedek",
+        "line": "King of Salem and priest of God Most High, who blessed Abraham (Genesis 14). His name means ‘king of righteousness’ (7:2)."
+      },
+      {
+        "word": "Covenant",
+        "line": "Greek diathēkē, a binding relationship with promises and duties. In ordinary Greek it could also mean a will (8:6; 9:16)."
+      },
+      {
+        "word": "Copy and shadow",
+        "line": "The earthly tabernacle was real, but it pointed to something greater, as a shadow points to what casts it (8:5; 10:1)."
+      },
+      {
+        "word": "Once for all",
+        "line": "Greek ephapax, once and never again. Christ's sacrifice does not need repeating (7:27; 9:12; 10:10)."
+      },
+      {
+        "word": "Outside the camp",
+        "line": "Where unclean things were taken in Israel's wilderness camp, and where Jesus suffered, outside the city gate (13:12-13)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "The days of Abraham",
+        "what": "Melchizedek, king of Salem, blesses Abraham, and Abraham gives him a tenth (Genesis 14:18-20; Hebrews 7:1-2).",
+        "kind": "story"
+      },
+      {
+        "when": "The days of Moses",
+        "what": "God makes his covenant with Israel at Sinai and gives the pattern of the tabernacle (Exodus 19 to 25; Hebrews 8:5).",
+        "kind": "story"
+      },
+      {
+        "when": "Late 600s and early 500s BC",
+        "what": "Jeremiah prophesies in Judah and promises a new covenant (Jeremiah 31:31-34; Hebrews 8:8-12).",
+        "kind": "story"
+      },
+      {
+        "when": "587 or 586 BC",
+        "what": "The Babylonians destroy Jerusalem and its temple.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 49",
+        "what": "The emperor Claudius expels Jews from Rome. Some link the readers' early sufferings with this time (10:32-34).",
+        "kind": "world"
+      },
+      {
+        "when": "AD 64",
+        "what": "Nero's persecution of Christians in Rome. Some date the letter before it, since no reader had yet been killed (12:4).",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 60 to 90",
+        "what": "Hebrews is written, most often dated in the 60s. Readers differ on whether it comes before or after AD 70.",
+        "kind": "book"
+      },
+      {
+        "when": "AD 70",
+        "what": "The Romans destroy the temple in Jerusalem. The letter never mentions it.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 96",
+        "what": "Clement of Rome uses Hebrews in his letter, so it was written before then.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 200",
+        "what": "The oldest surviving collection of Paul's letters, a papyrus, places Hebrews right after Romans.",
+        "kind": "book"
+      },
+      {
+        "when": "The late 300s",
+        "what": "The Latin-speaking churches of the West come to accept Hebrews widely as Scripture.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "mediterranean",
+        "title": "The one place Hebrews names",
+        "places": [
+          {
+            "id": "italy",
+            "name": "Italy",
+            "lat": 40.6,
+            "lon": 16.0,
+            "refs": [
+              "13:24"
+            ],
+            "region": true,
+            "label": false,
+            "line": "‘Those from Italy send you greetings’ (13:24). It may mean people in Italy, or Italians living elsewhere greeting friends at home. The letter does not say where it was written from or to. Placed roughly."
+          }
+        ]
+      }
+    ],
+    "mapNote": "Hebrews names almost no places on earth. The one it gives is Italy: ‘Those from Italy send you greetings’ (13:24). The letter does not say where it was written from or to, and this map does not guess.",
+    "deeper": [
+      {
+        "href": "/study/bible/doctrines/incarnation",
+        "name": "The Incarnation",
+        "line": "Behind ‘made like His brothers in every way’ (2:17)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/offices",
+        "name": "Christ as Prophet, Priest, and King",
+        "line": "Behind the great high priest (4:14 to 7:28)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/atonement",
+        "name": "Sacrifice and Atonement",
+        "line": "Behind the Day of Atonement and ‘once for all’ (9:1 to 10:18)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/covenant",
+        "name": "Covenant",
+        "line": "Behind the new covenant of Jeremiah 31 (8:7-13)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/israel",
+        "name": "Israel in God's Purpose",
+        "line": "Behind the part on the old covenant and the Jewish people",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/perseverance",
+        "name": "Assurance and Perseverance",
+        "line": "Behind the warning passages (6:4-8; 10:26-31)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/temple",
+        "name": "Tabernacle, Temple, and God's Presence",
+        "line": "Behind the tabernacle and its copy and shadow (8:5; 9:1-10)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/faith",
+        "name": "Faith and Faithfulness",
+        "line": "Behind the great list of the faithful (chapter 11)",
+        "icon": "book"
+      }
+    ]
+  }
 }

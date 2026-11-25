@@ -1,0 +1,66 @@
+{
+  "slug": "abraham",
+  "n": 3,
+  "act": "abraham",
+  "title": "Abraham and the Promise",
+  "range": "Genesis 12 to 50",
+  "status": "finished",
+  "summary": {
+    "younger": "God chose Abraham and promised him a family as many as the stars, a land to live in, and a blessing for the whole world.",
+    "older": "God answers a scattered world by calling one man and making him a promise: a people, a land, and a blessing that will reach every family on earth."
+  },
+  "scene": "abraham",
+  "sceneLabel": "Night in the desert. Abraham stands outside his tent with his staff, looking up at a sky full of stars, with his sheep asleep nearby.",
+  "story": {
+    "younger": [
+      "After the flood, people spread out over the earth, but they still turned away from God. So God started something new with one man. His name was Abram, and God later called him Abraham.",
+      "God told Abram to leave his home and go to a land God would show him. Abram went, even though he did not know where he was going.",
+      "One night God took Abram outside and told him to look up and count the stars. His family would be as many as that, God said. Abram and his wife Sarah were old, and they had no children. But Abram believed God.",
+      "God kept his promise. When Abraham was a hundred years old, he and Sarah had a son named Isaac. Isaac's son Jacob had twelve sons, and their families became the people of Israel."
+    ],
+    "older": [
+      "The first eleven chapters of Genesis end badly. At Babel people are scattered, each nation going its own way. The next chapter is God's answer, and it is surprisingly small. He calls one man, an old man from Ur and Haran whose wife cannot have children, and he makes him a promise in three parts: a great nation, a land, and a blessing for “all the families of the earth” (Genesis 12:3).",
+      "Everything about the promise depends on God. Abraham is seventy-five when he sets out and a hundred when Isaac is born, so he waits twenty-five years. He believes God when there is nothing yet to see, and Genesis says that faith “was credited to him as righteousness” (Genesis 15:6). Paul builds on that sentence centuries later.",
+      "Abraham is no hero, though. Twice he passes Sarah off as his sister to save himself. His grandson Jacob is a cheat. His great-grandsons sell their brother Joseph into slavery. The promise survives them all, because it never rested on them. Genesis ends with the family alive in Egypt and the promise still waiting."
+    ]
+  },
+  "god": {
+    "younger": "God keeps his promises, even when it takes a long time. He wanted to bless the whole world, not just one family.",
+    "older": "God's plan was always for the whole world. He chooses one family not to shut everyone else out but to reach them through it, and he binds himself by his own word."
+  },
+  "verses": [
+    { "ref": "Genesis 12:2-3", "text": "I will make you into a great nation, and I will bless you; I will make your name great, so that you will be a blessing. I will bless those who bless you and curse those who curse you; and all the families of the earth will be blessed through you." },
+    { "ref": "Genesis 15:5-6", "text": "And the LORD took him outside and said, “Now look to the heavens and count the stars, if you are able.” Then He told him, “So shall your offspring be.” Abram believed the LORD, and it was credited to him as righteousness." }
+  ],
+  "read": [
+    { "label": "Genesis 12", "href": "/study/bible/genesis/12" },
+    { "label": "Genesis 15", "href": "/study/bible/genesis/15" },
+    { "label": "Genesis 21", "href": "/study/bible/genesis/21" }
+  ],
+  "question": {
+    "ask": "Why would God choose one family and not everyone?",
+    "answer": [
+      "The promise answers in its own words: Abraham is blessed so that all the families of the earth will be blessed through him. In the Bible, being chosen is usually being chosen for others, not against them. Paul reads the promise as the good news announced ahead of time, to Abraham (Galatians 3:8).",
+      "How God's choosing works is one of the places where faithful churches differ, and the site's Honest Answer sets out both main views without picking for you. All of them agree that God's choosing is for the sake of the world."
+    ]
+  },
+  "deeper": [
+    { "label": "Abraham's road: the map of his travels in Genesis, place by place", "href": "/study/explorer/abrahams-road" },
+    { "label": "Does God choose us, or do we choose him?", "href": "/answers/does-god-choose-us-or-do-we-choose-him" },
+    { "label": "What is a biblical covenant?", "href": "/resources/context/covenant-and-treaty" }
+  ],
+  "talk": {
+    "younger": "Abraham waited a long time for God's promise. What is something hard to wait for? Talk about it with a parent or a leader.",
+    "older": "Abraham trusted God when there was nothing yet to see. What would it look like to trust God like that in something you are waiting for now?"
+  },
+  "activity": {
+    "kind": "match",
+    "title": "Promises kept",
+    "prompt": "God made Abraham three promises. For each one, choose where the Bible shows God keeping it.",
+    "pairs": [
+      { "id": "nation", "promise": "I will make you into a great nation", "promiseRef": "Genesis 12:2", "kept": "In Egypt, Abraham's family grew so many that they filled the land.", "keptRef": "Exodus 1:7" },
+      { "id": "land", "promise": "go to the land I will show you", "promiseRef": "Genesis 12:1", "kept": "Under Joshua, God gave Israel all the land he had sworn to give their fathers.", "keptRef": "Joshua 21:43" },
+      { "id": "blessing", "promise": "all the families of the earth will be blessed through you", "promiseRef": "Genesis 12:3", "kept": "Peter tells a crowd that this blessing comes to them through Jesus.", "keptRef": "Acts 3:25-26" }
+    ]
+  }
+}

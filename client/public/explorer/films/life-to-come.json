@@ -1,0 +1,121 @@
+{
+  "slug": "life-to-come",
+  "title": "The life to come",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "life-to-come",
+  "line": {
+    "younger": "What Christians believe about dying, and about what God will do at the end. Seven gentle pictures, from a seed in the ground to a world made new.",
+    "older": "The Christian hope in seven pictures: death named honestly, the time between death and resurrection as Christians read it, the body raised, a just judgment, and all things made new."
+  },
+  "poster": "A field in the evening: a seed lies in the soil, shown in a cut through the ground, and far off a city wall stands with its gate open.",
+  "frames": [
+    {
+      "id": "real",
+      "name": "Death is real",
+      "still": "A tree in a field at evening, a few of its leaves falling to the ground.",
+      "younger": "Everyone dies one day, and when someone we love dies it is right to be sad. When his friend Lazarus died, Jesus cried.",
+      "older": "The Bible does not pretend that death is nothing. Paul calls it an enemy, the last one to be destroyed, and Jesus wept at his friend's grave. Christian hope does not skip the sadness; it speaks into it.",
+      "verse": {
+        "ref": "John 11:35",
+        "text": "Jesus wept."
+      }
+    },
+    {
+      "id": "not-the-end",
+      "name": "Not the end",
+      "still": "A seed lies in the dark soil, shown in a cut through the ground, under the tree.",
+      "younger": "But at that same grave Jesus said that he is the resurrection and the life. For those who belong to him, death is not the end.",
+      "older": "Standing at Lazarus' grave, Jesus said, “I am the resurrection and the life.” Christians trust those words because he was raised himself: the risen Christ is the firstfruits of all who belong to him.",
+      "verse": {
+        "ref": "John 11:25",
+        "text": "I am the resurrection and the life. Whoever believes in Me will live, even though he dies."
+      }
+    },
+    {
+      "id": "with-christ",
+      "name": "With Christ",
+      "still": "The seed rests in the soil, and above the ground a soft light falls across the field from beyond the top of the picture.",
+      "younger": "Christians believe that people who trust Jesus go to be with him when they die. Paul said that would be far better. Christians do not all describe that time the same way, but they all trust Jesus with it.",
+      "older": "Most Christian traditions read Jesus' words to the dying man beside him, “today you will be with Me in Paradise”, with Paul's wish to be “away from the body and at home with the Lord”, as a promise of being with Christ right after death. Others hold that the dead sleep until the resurrection. Christians still differ on how to describe that time.",
+      "verse": {
+        "ref": "Philippians 1:23",
+        "text": "I desire to depart and be with Christ, which is far better indeed."
+      }
+    },
+    {
+      "id": "raised",
+      "name": "Raised",
+      "still": "A shoot comes up from the seed, its root going down, through the soil and into the light, and grows into a tall stalk with a full ear of wheat.",
+      "younger": "One day Jesus will come back and raise the bodies of his people, new and whole, never to die again, like a seed that goes into the ground and comes up as a plant.",
+      "older": "The final hope is not a soul floating away but the body raised, as Jesus' body was. Paul compares the body to a seed: what is sown goes into the ground, and what comes up is the same life made new. The creed confesses ‘the resurrection of the body’.",
+      "verse": {
+        "ref": "1 Corinthians 15:42",
+        "text": "So will it be with the resurrection of the dead: What is sown is perishable; it is raised imperishable."
+      }
+    },
+    {
+      "id": "put-right",
+      "name": "Every wrong put right",
+      "still": "A pair of scales hangs level in the morning light, beside the field.",
+      "younger": "The Bible says God will judge the world fairly. Every wrong will be named and put right, and people who were hurt will not be forgotten.",
+      "older": "God will judge the world with justice, and that is part of the hope: every wrong will be named, and those who suffered will not be forgotten. Christians confess a real judgment, and they differ on how to understand what it will be like. The site's Honest Answer on hell says, ‘Whatever hell is, it isn't what God wants for anyone.’",
+      "verse": {
+        "ref": "Acts 17:31",
+        "text": "For He has set a day when He will judge the world with justice by the Man He has appointed."
+      }
+    },
+    {
+      "id": "new",
+      "name": "All things new",
+      "still": "A city wall with its gate standing open, light coming from the gate, a river running out of it and a tree on its bank.",
+      "younger": "Then God will make everything new: a new heaven and a new earth, where God lives with his people for ever.",
+      "older": "The Bible's last pages do not show people leaving the world for the sky. They show a new heaven and a new earth, and God making his home with people. Christians read the order and timing of the last events in different ways; all confess that Christ will come again, and no one knows the day or the hour.",
+      "verse": {
+        "ref": "Revelation 21:3",
+        "text": "Behold, the dwelling place of God is with man, and He will dwell with them. They will be His people, and God Himself will be with them as their God."
+      }
+    },
+    {
+      "id": "tears",
+      "name": "No more tears",
+      "still": "A grown-up and a child sit together by the river, in the light from the open gate, with trees on its banks.",
+      "younger": "God will wipe away every tear. No more dying, no more crying, no more pain. That is the promise for everyone who belongs to Jesus.",
+      "older": "The promise is not that grief does not matter. It is that grief will not have the last word. The God who wept at a grave will wipe away every tear himself.",
+      "verse": {
+        "ref": "Revelation 21:4",
+        "text": "‘He will wipe away every tear from their eyes,’ and there will be no more death or mourning or crying or pain, for the former things have passed away."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Who could you talk to if you feel sad or worried about someone dying?",
+    "older": "Paul calls death an enemy, and he also says that to depart and be with Christ is far better. How can both be true at once?"
+  },
+  "read": [
+    { "label": "John 11", "href": "/study/bible/john/11" },
+    { "label": "Luke 23", "href": "/study/bible/luke/23" },
+    { "label": "1 Corinthians 15", "href": "/study/bible/1-corinthians/15" },
+    { "label": "2 Corinthians 5", "href": "/study/bible/2-corinthians/5" },
+    { "label": "Philippians 1", "href": "/study/bible/philippians/1" },
+    { "label": "Revelation 21", "href": "/study/bible/revelation/21" }
+  ],
+  "stops": ["new-creation", "cross"],
+  "cards": ["life-to-come"],
+  "differ": {
+    "text": "Christians all confess that Christ will come again, raise the dead and make all things new. They differ on how to describe the time between death and the resurrection: most traditions read Jesus' promise to the dying man and Paul's words as being with Christ right after death, and others hold that the dead sleep until the resurrection. They also read the order and timing of the last events differently. This moving picture does not choose between them. The readings are set out in",
+    "links": [
+      { "label": "the Study Bible's notes on Luke 23", "href": "/study/bible/luke/23" },
+      { "label": "2 Corinthians 5", "href": "/study/bible/2-corinthians/5" },
+      { "label": "the end-times study guide", "href": "/studyguides/end-times" }
+    ]
+  },
+  "care": "If someone you love has died, or if thinking about death makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "The family catechism: what happens when we die?", "href": "/family/catechism#q70" },
+    { "label": "Is hell forever, or does it end?", "href": "/answers/is-hell-forever-or-does-it-end" },
+    { "label": "Did the resurrection actually happen?", "href": "/answers/did-the-resurrection-actually-happen" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "real", "verse": true}, {"id": "not-the-end", "verse": true}, {"id": "with-christ", "verse": true}, {"id": "raised", "verse": true}, {"id": "put-right", "verse": true}, {"id": "new", "verse": false}, {"id": "tears", "verse": true}]},
+  "end": { "label": "Go to the stop: The New Creation", "href": "/study/explorer/new-creation" }
+}

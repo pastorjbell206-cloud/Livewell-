@@ -1,0 +1,154 @@
+{
+  "slug": "kingdom",
+  "n": 7,
+  "act": "kingdom",
+  "title": "The Kingdom",
+  "range": "1 Samuel to 1 Kings 11, and the Psalms",
+  "status": "finished",
+  "summary": {
+    "younger": "God gave Israel kings. The greatest was David, a shepherd boy, and God promised that a king from his family would rule for ever.",
+    "older": "Israel asks for a king. Saul fails; David loves God and fails badly too; God promises him a son whose kingdom will never end. Solomon builds the temple."
+  },
+  "scene": "kingdom",
+  "sceneLabel": "Jerusalem on its hill, with a wall round the city and the temple going up at the top: one side still unfinished, with a ladder, cut stones and cedar beams waiting. In front, on a grassy slope with sheep, a shepherd's staff stands in the ground with a gold crown hung on its crook, and a harp leans against a rock: the shepherd who became king.",
+  "story": {
+    "younger": [
+      "For a long time Israel had no king. Then the people told Samuel, God's prophet, that they wanted a king “like all the other nations.” This was sad, because God himself was their king. Still, God gave them one. His name was Saul. He was tall and strong, but he did not trust God or obey him.",
+      "God sent Samuel to choose the next king from the sons of a man named Jesse. Samuel thought the tall oldest son must be the one. But God told him that people look at the outside, and “the LORD sees the heart.” God chose the youngest son, David, who was out looking after the sheep.",
+      "David played the harp and made songs to God, and many of the psalms have his name at the top. He trusted God when he faced the giant Goliath. When King Saul chased him, David would not hurt him. When David became king, he made Jerusalem his city and brought the ark of God there.",
+      "David wanted to build a house for God. Instead God made David a promise, the biggest promise in this stop: a king from David's family would rule for ever. Christians believe God kept that promise in Jesus, who was born into David's family.",
+      "But David did something very wrong. He took another man's wife, Bathsheba, for himself, and then he had her husband, Uriah, killed in battle to hide what he had done. God sent the prophet Nathan to tell David the truth. David said, “I have sinned against the LORD,” and God forgave him. But the harm he had done did not go away, and his family had much sorrow after that.",
+      "David's son Solomon became king. He asked God to make him wise, and he built the temple in Jerusalem. When it was finished, the cloud of God's glory filled it. But when Solomon was old, he turned away to other gods. Israel still needed a king who would never turn away."
+    ],
+    "older": [
+      "Judges ended with no king and everyone doing what was right in his own eyes. In 1 Samuel the people ask for one, for the wrong reason: “appoint a king to judge us like all the other nations” (1 Samuel 8:5). God tells Samuel that “they have rejected Me as their king” (1 Samuel 8:7), and still he gives them one. Saul looks the part, a head taller than anyone (1 Samuel 9:2), but under pressure he takes things into his own hands, and Samuel tells him that “obedience is better than sacrifice” (1 Samuel 15:22).",
+      "The next king is chosen against every outward sign. Jesse's sons pass before Samuel, and God says, “the LORD does not see as man does. For man sees the outward appearance, but the LORD sees the heart” (1 Samuel 16:7). The one chosen is the youngest, out with the sheep. David is a shepherd, a soldier and a poet, “the sweet psalmist of Israel” (2 Samuel 23:1), and many psalms carry his name. He takes Jerusalem and brings the ark of God into it (2 Samuel 5 and 6).",
+      "Then comes the center of this stop. David wants to build God a house, and God answers that he will build David a house instead: a line of kings. “I will raise up your descendant after you,” God says, and “I will establish the throne of his kingdom forever” (2 Samuel 7:12-13). God will discipline that son when he does wrong, but his loving devotion will never be taken away (2 Samuel 7:14-15). From here on, the Bible's hope has a shape: a son of David, a king whose throne will last. Jewish and Christian readers have both long heard in this promise the hope of a coming king from David's line, the Messiah. Christians believe that king is Jesus; Jewish tradition still waits for him.",
+      "The Bible does not hide what David did next. In the spring, when kings went out to war, David stayed in Jerusalem. He took Bathsheba, the wife of Uriah, one of his soldiers, and when she became pregnant he arranged for Uriah to be killed in battle (2 Samuel 11). The text puts the guilt where it belongs: “the thing that David had done was evil in the sight of the LORD” (2 Samuel 11:27). God sent Nathan with a story about a rich man who took a poor man's only lamb, and then Nathan said to David, “You are that man!” (2 Samuel 12:7). David confessed, “I have sinned against the LORD,” and Nathan answered, “The LORD has taken away your sin” (2 Samuel 12:13). He was forgiven, and the damage remained: from then on, violence ran through his own family (2 Samuel 12:10). Psalm 51 is headed as his prayer from that time.",
+      "Solomon begins well. Told to ask for anything, he asks for “an understanding heart” to govern God's people (1 Kings 3:9). He builds the temple, and when the ark is brought in, “the glory of the LORD filled the house of the LORD” (1 Kings 8:11). Yet Solomon himself prays, “Even heaven, the highest heaven, cannot contain You, much less this temple I have built” (1 Kings 8:27). In his old age his heart is turned after other gods (1 Kings 11:4), and the kingdom will split after him. Even the best kings fail. The promise to David waits for a son who will not."
+    ]
+  },
+  "god": {
+    "younger": "God looks at the heart, not at how big or important someone seems. He keeps his promises. And he forgives people who are truly sorry, even a king who has done something terrible.",
+    "older": "God is the true king of his people, and he looks at the heart (1 Samuel 16:7). He binds himself by a promise to David's line and does not take it back when David fails. His forgiveness is real, and so is his justice: Nathan names the sin plainly, and God forgives the one who confesses it."
+  },
+  "verses": [
+    {
+      "ref": "1 Samuel 16:7",
+      "text": "the LORD does not see as man does. For man sees the outward appearance, but the LORD sees the heart."
+    },
+    {
+      "ref": "2 Samuel 7:16",
+      "text": "Your house and kingdom will endure forever before Me, and your throne will be established forever."
+    }
+  ],
+  "read": [
+    {
+      "label": "1 Samuel 8",
+      "href": "/study/bible/1-samuel/8"
+    },
+    {
+      "label": "1 Samuel 16",
+      "href": "/study/bible/1-samuel/16"
+    },
+    {
+      "label": "2 Samuel 7",
+      "href": "/study/bible/2-samuel/7"
+    },
+    {
+      "label": "2 Samuel 12",
+      "href": "/study/bible/2-samuel/12"
+    },
+    {
+      "label": "1 Kings 8",
+      "href": "/study/bible/1-kings/8"
+    },
+    {
+      "label": "Psalm 23",
+      "href": "/study/bible/psalms/23"
+    },
+    {
+      "label": "Psalm 51",
+      "href": "/study/bible/psalms/51"
+    }
+  ],
+  "care": "This stop tells of a king who did something very wrong and hurt other people badly. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "question": {
+    "ask": "If David did something that terrible, why is he a hero?",
+    "answer": [
+      "The Bible never says David is a hero because he was good. It tells his worst sin in full, calls it evil, and shows the harm it did: to Uriah, who was killed; to Bathsheba, who mourned her husband (2 Samuel 11:26); and to David's own family. No one wrote 2 Samuel 11 to make David look good.",
+      "What sets David apart from Saul is not that he sinned less. It is what he did when the truth came out. Saul made excuses (1 Samuel 13:11-12). David said, “I have sinned against the LORD” (2 Samuel 12:13), and Psalm 51 shows a man asking God for “a clean heart,” not a clean reputation.",
+      "That is also why the story cannot stop with David. If even David could fall that far, the king the promise needs must be more than a better David. Matthew opens his Gospel by calling Jesus “the son of David” (Matthew 1:1), the king who keeps faith where David broke it."
+    ]
+  },
+  "deeper": [
+    {
+      "label": "Psalm 51: David's prayer after Nathan came",
+      "href": "/study/bible/psalms/51"
+    },
+    {
+      "label": "What kind of Messiah was Israel waiting for?",
+      "href": "/resources/context/messianic-expectation"
+    }
+  ],
+  "talk": {
+    "younger": "God chose David because of his heart, not because he looked big or strong. What do you think God sees when he looks at a heart?",
+    "older": "David was forgiven, and the harm he did still remained. Why do you think both of those can be true at once?"
+  },
+  "activity": {
+    "kind": "choose",
+    "title": "What makes a good king?",
+    "prompt": "Here are five moments from the kings' stories. For each one, choose: did the king trust God, or grab for himself? Then see what the Bible says.",
+    "options": {
+      "trust": "He trusted God",
+      "grasp": "He grabbed for himself"
+    },
+    "moments": [
+      {
+        "id": "saul",
+        "who": "King Saul",
+        "text": "Saul was told to wait for Samuel to come and offer the sacrifice. Samuel was late, the soldiers were slipping away, and Saul offered it himself.",
+        "answer": "grasp",
+        "why": "Saul grew afraid and took things into his own hands instead of keeping God's command. Samuel told him his kingdom would not last.",
+        "ref": "1 Samuel 13:8-14"
+      },
+      {
+        "id": "cave",
+        "who": "David, before he was king",
+        "text": "King Saul was hunting David to kill him. In a cave, David had the chance to kill Saul, and his men told him to do it.",
+        "answer": "trust",
+        "why": "David would not lift his hand against the king God had anointed. He left it to God to make him king in God's own time.",
+        "ref": "1 Samuel 24:3-10"
+      },
+      {
+        "id": "uriah",
+        "who": "King David",
+        "text": "King David took another man's wife for himself. Then, to hide what he had done, he had her husband Uriah put where he would be killed in battle.",
+        "answer": "grasp",
+        "why": "The Bible says this was evil in the sight of the LORD. God sent Nathan, David confessed his sin, and God forgave him. The harm still followed his family.",
+        "ref": "2 Samuel 11:27; 2 Samuel 12:13"
+      },
+      {
+        "id": "wisdom",
+        "who": "King Solomon",
+        "text": "God told young King Solomon to ask for whatever he wanted. He could have asked for riches or a long life.",
+        "answer": "trust",
+        "why": "Solomon asked for an understanding heart to lead God's people well, and God was pleased with what he asked.",
+        "ref": "1 Kings 3:5-12"
+      },
+      {
+        "id": "turn",
+        "who": "King Solomon, when he was old",
+        "text": "When Solomon was old, he built places to worship the gods of his many foreign wives.",
+        "answer": "grasp",
+        "why": "His heart turned away from the LORD, and God said the kingdom would be torn in two after him.",
+        "ref": "1 Kings 11:4-11"
+      }
+    ],
+    "end": {
+      "title": "The king who will not fail",
+      "text": "Every king in this stop trusted God some of the time and failed him too, even David. But God had promised David, “your throne will be established forever.” So the story waits for a son of David who always trusts God. The New Testament says that king is Jesus, and that “His kingdom will never end.”",
+      "ref": "2 Samuel 7:16; Luke 1:32-33"
+    }
+  }
+}

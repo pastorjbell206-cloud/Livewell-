@@ -1,0 +1,183 @@
+{
+  "slug": "spirit-in-a-believer",
+  "title": "The Holy Spirit in a believer",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "spirit-in-a-believer",
+  "line": {
+    "younger": "The Holy Spirit is God, and he lives in everyone who belongs to Jesus. Seven pictures of what he does there.",
+    "older": "What Christians everywhere confess about the Holy Spirit in a believer, in seven pictures: joined to Christ, children of God, fruit and gifts, help to pray, and where churches differ."
+  },
+  "poster": "Five people stand together under one small flame of light.",
+  "frames": [
+    {
+      "id": "lives-in",
+      "name": "God lives in his people",
+      "still": "Five people stand together under one small flame of light, and a faint line like breath runs out from it to each of them.",
+      "younger": "The Holy Spirit is God. Christians believe that he lives in everyone who belongs to Jesus, not only in a few special people.",
+      "older": "The family catechism calls the Holy Spirit the third person of the Trinity, fully God, who dwells in believers and gives them life with God. He is not a force or a feeling. He is God himself, living in his people.",
+      "verse": {
+        "ref": "Romans 8:9",
+        "text": "And if anyone does not have the Spirit of Christ, he does not belong to Christ."
+      }
+    },
+    {
+      "id": "vine",
+      "name": "Joined to Jesus",
+      "still": "A vine grows up from the ground, and its branches spread out to both sides.",
+      "younger": "Jesus said he is like a vine, and those who trust him are like its branches. The Spirit joins them to Jesus, so his life flows into them.",
+      "older": "The Spirit unites believers to Christ. Jesus' own picture is a vine and its branches: the branch lives because it is joined to the vine, and apart from him they can do nothing.",
+      "verse": {
+        "ref": "John 15:5",
+        "text": "I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing."
+      }
+    },
+    {
+      "id": "children",
+      "name": "God's children",
+      "still": "A child stands under the vine, and a light comes in from beyond the top of the picture.",
+      "younger": "The Spirit helps God's children know that they really belong to him, so that they can talk to God as their Father.",
+      "older": "To be adopted means God makes people his own children, with a sure place in his family. Paul says God sent the Spirit of his Son into their hearts, calling out to God as Father. Abba is the Aramaic word for father.",
+      "verse": {
+        "ref": "Galatians 4:6",
+        "text": "And because you are sons, God sent the Spirit of His Son into our hearts, crying out, “Abba, Father!”"
+      }
+    },
+    {
+      "id": "fruit",
+      "name": "Fruit that grows",
+      "still": "Nine round fruits hang among the vine's leaves.",
+      "younger": "The Spirit slowly grows good fruit in a person's life: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control.",
+      "older": "The catechism calls this the lifelong work of the Spirit by which believers grow to be more like Jesus. Paul names nine kinds of fruit. Fruit grows slowly, and it grows because the branch is joined to the vine.",
+      "verse": {
+        "ref": "Galatians 5:22-23",
+        "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control."
+      }
+    },
+    {
+      "id": "gifts",
+      "name": "Gifts for the church",
+      "still": "Under the vine, five people stand in a row, each holding something different: a book, a basket, a jug, a harp and a hammer.",
+      "younger": "The Spirit gives every believer gifts. They are not for showing off. They are for helping everyone else in the church.",
+      "older": "The Spirit gives gifts to each believer, and they are given for the good of all: teaching, serving, encouraging, giving, leading, showing mercy. Paul's picture is the body, where every part is needed.",
+      "verse": {
+        "ref": "1 Corinthians 12:7",
+        "text": "Now to each one the manifestation of the Spirit is given for the common good."
+      }
+    },
+    {
+      "id": "differ",
+      "name": "Where churches differ",
+      "still": "At the vine's foot stand three different church buildings on one ground, all under the one small flame.",
+      "younger": "All Christians agree that the Spirit lives in every believer and gives gifts to the church. Churches differ about some gifts, like speaking in tongues and healing, and about how the Spirit comes. They differ and still belong to one Lord.",
+      "older": "Christians agree that the Holy Spirit is God, gives new life, lives in every believer, and gives gifts to build up the church. Churches differ on whether some gifts, such as tongues, prophecy and healing, continue as they did in Acts, and on whether the baptism of the Spirit is a distinct experience after a person first believes. This moving picture does not choose between them."
+    },
+    {
+      "id": "pray",
+      "name": "Help to pray",
+      "still": "A person sits quietly under the vine, and a faint line like breath comes down to them from the small flame.",
+      "younger": "When we don't know what to say to God, the Spirit helps us pray. He helps people who feel weak, not only people who feel strong.",
+      "older": "Even prayer is not left to believers alone: when they do not know how to pray, the Spirit himself intercedes for them. The Spirit is not a reward for the strong. He is help for the weak.",
+      "verse": {
+        "ref": "Romans 8:26",
+        "text": "In the same way, the Spirit helps us in our weakness. For we do not know how we ought to pray, but the Spirit Himself intercedes for us"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Which of the nine kinds of fruit would you most like to see grow in your life? Ask a parent or a leader which one they pray for.",
+    "older": "Where have you seen the fruit of the Spirit in someone you know? Talk with a parent, a pastor or a leader about how they have seen the Spirit at work."
+  },
+  "read": [
+    {
+      "label": "John 15",
+      "href": "/study/bible/john/15"
+    },
+    {
+      "label": "Romans 8",
+      "href": "/study/bible/romans/8"
+    },
+    {
+      "label": "Galatians 5",
+      "href": "/study/bible/galatians/5"
+    },
+    {
+      "label": "1 Corinthians 12",
+      "href": "/study/bible/1-corinthians/12"
+    },
+    {
+      "label": "Acts 2",
+      "href": "/study/bible/acts/2"
+    }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [
+    "spirit"
+  ],
+  "differ": {
+    "text": "Christians agree that the Holy Spirit is God, gives new life, lives in every believer, and gives gifts to build up the church. Churches differ on whether some gifts, such as speaking in tongues, prophecy and healing, continue as they did in Acts, and on when and how a believer receives the Spirit, including whether the baptism of the Spirit is a distinct experience after a person first believes. This moving picture does not choose between them. The Study Bible sets out the different readings in its notes on",
+    "links": [
+      {
+        "label": "Acts 2",
+        "href": "/study/bible/acts/2"
+      },
+      {
+        "label": "Acts 8",
+        "href": "/study/bible/acts/8"
+      }
+    ]
+  },
+  "deeper": [
+    {
+      "label": "The Holy Spirit through the Bible (a moving picture)",
+      "href": "/study/explorer/watch/holy-spirit"
+    },
+    {
+      "label": "The family catechism: who is the Holy Spirit?",
+      "href": "/family/catechism#q41"
+    },
+    {
+      "label": "How can God be three and one?",
+      "href": "/answers/how-can-god-be-three-and-one"
+    }
+  ],
+  "share": {
+    "level": "younger",
+    "frames": [
+      {
+        "id": "lives-in",
+        "verse": true
+      },
+      {
+        "id": "vine",
+        "verse": false
+      },
+      {
+        "id": "children",
+        "verse": true
+      },
+      {
+        "id": "fruit",
+        "verse": false
+      },
+      {
+        "id": "gifts",
+        "verse": true
+      },
+      {
+        "id": "differ",
+        "verse": false
+      },
+      {
+        "id": "pray",
+        "verse": true
+      }
+    ]
+  },
+  "end": {
+    "label": "Go to the stop: The Church and the Spirit",
+    "href": "/study/explorer/church"
+  }
+}

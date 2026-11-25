@@ -6,6 +6,7 @@
 import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "wouter";
 
+import { glossParts } from "@/lib/bible";
 import { paragraphs } from "@/lib/bible-notes";
 import type { CatalogueItem } from "@/lib/catalogue";
 
@@ -21,7 +22,7 @@ export const card: CSSProperties = { background: "var(--card)", border: "1px sol
 export function Hero({ eyebrow, eyebrowHref, title, children, tone = "bone" }: { eyebrow: string; eyebrowHref?: string; title: ReactNode; children?: ReactNode; tone?: "bone" | "charcoal" }) {
   const dark = tone === "charcoal";
   return (
-    <section style={{ background: dark ? "var(--charcoal)" : "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
+    <section style={{ background: dark ? "var(--charcoal)" : "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-5)" }}>
       <div style={wrap}>
         <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>
           {eyebrowHref ? <Link href={eyebrowHref} style={{ color: "inherit", textDecoration: "none", backgroundImage: "none" }}>{eyebrow}</Link> : eyebrow}
@@ -42,8 +43,23 @@ export function Prose({ text, size = 17 }: { text: string | undefined; size?: nu
   return (
     <>
       {paragraphs(text).map((p, i) => (
-        <p key={i} style={{ ...prose, fontFamily: "var(--B)", fontSize: `${size}px`, lineHeight: 1.75, color: "var(--ink)", margin: "0 0 14px" }}>{p}</p>
+        <p key={i} style={{ ...prose, fontFamily: "var(--font-reading)", fontSize: `${size + 1}px`, lineHeight: 1.65, color: "var(--ink)", margin: "0 0 14px" }}>{p}</p>
       ))}
+    </>
+  );
+}
+
+/**
+ * A word-by-word meaning. The source's marks ("<the>", "[was]") are not
+ * printed: a word the original has and English leaves out, or one English has
+ * to add, is set in gray italic instead.
+ */
+export function Gloss({ text }: { text: string }) {
+  return (
+    <>
+      {glossParts(text).map((p, i) =>
+        p.supplied ? <span key={i} style={{ color: "var(--ink-muted)", fontStyle: "italic" }}>{p.text}</span> : <span key={i}>{p.text}</span>
+      )}
     </>
   );
 }
@@ -58,7 +74,7 @@ export function H3({ children }: { children: ReactNode }) {
 
 export function Band({ tone = "bone", children, id }: { tone?: "bone" | "warm"; children: ReactNode; id?: string }) {
   return (
-    <section id={id} style={{ background: tone === "warm" ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-6) var(--s-4)", scrollMarginTop: "70px" }}>
+    <section id={id} style={{ background: tone === "warm" ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-6) var(--gutter)", scrollMarginTop: "70px" }}>
       <div style={wrap}>{children}</div>
     </section>
   );
@@ -66,7 +82,7 @@ export function Band({ tone = "bone", children, id }: { tone?: "bone" | "warm"; 
 
 export function Pill({ href, children }: { href: string; children: ReactNode }) {
   return (
-    <Link href={href} style={{ display: "inline-flex", alignItems: "center", minHeight: "36px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", backgroundImage: "none", fontFamily: "var(--U)", fontSize: "13px" }}>
+    <Link href={href} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", backgroundImage: "none", fontFamily: "var(--U)", fontSize: "13px" }}>
       {children}
     </Link>
   );
@@ -85,7 +101,7 @@ export function Credits() {
 }
 
 export function Status({ children }: { children: ReactNode }) {
-  return <p role="status" style={{ ...wrap, padding: "var(--s-6) var(--s-4)", fontFamily: "var(--B)", color: "var(--ink-muted)" }}>{children}</p>;
+  return <p role="status" style={{ ...wrap, padding: "var(--s-6) var(--gutter)", fontFamily: "var(--B)", color: "var(--ink-muted)" }}>{children}</p>;
 }
 
 /**

@@ -1,0 +1,175 @@
+{
+  "slug": "god-with-his-people",
+  "title": "God with his people",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "god-with-his-people",
+  "line": {
+    "younger": "From the first page to the last, God wants to live with his people. Follow one light from place to place, in nine pictures.",
+    "older": "One light, followed from a garden to a tent, a temple, a person, a people and a whole new world: the Bible's long answer to whether God can live with his people."
+  },
+  "poster": "Along the top, a row of empty rings on one dotted line, the first holding the map's tree: the places the light will go. Below, a garden with its trees, and a gold light shining among them.",
+  "frames": [
+    {
+      "id": "garden",
+      "name": "The garden",
+      "still": "A garden with trees. The man and the woman stand among them, and the gold light is in the garden with them, close. Above, the first round picture on the line, the tree, is ringed.",
+      "younger": "God planted a garden and put the people he made there, close to him. He came to them there.",
+      "older": "God planted a garden and put the people he made there, close to him. Genesis pictures God walking in the garden, close enough to be heard (Genesis 3:8). This is what the whole Bible is about: God with his people.",
+      "say": {
+        "older": "God planted a garden and put the people he made there, close to him. Genesis pictures God walking in the garden, close enough to be heard. This is what the whole Bible is about: God with his people."
+      },
+      "verse": {
+        "ref": "Genesis 2:8",
+        "text": "And the LORD God planted a garden in Eden, in the east, where He placed the man He had formed."
+      }
+    },
+    {
+      "id": "shut",
+      "name": "The way shut",
+      "still": "The garden's gate, with a flaming sword across the way. The man and the woman stand outside it, small, on the road east. The light is still in the garden, seen through the gateway beyond the sword, and the line above turns to dots.",
+      "younger": "The man and the woman hid from God among the trees, and they were sent out of the garden. The closeness was lost.",
+      "older": "The man and the woman hid from God among the trees, and they were sent out of the garden. The way back to the tree of life was guarded (Genesis 3:24). From here on, the Bible asks how God and people can be together again.",
+      "say": {
+        "older": "The man and the woman hid from God among the trees, and they were sent out of the garden. The way back to the tree of life was guarded. From here on, the Bible asks how God and people can be together again."
+      },
+      "verse": {
+        "ref": "Genesis 3:8",
+        "text": "and they hid themselves from the presence of the LORD God among the trees of the garden."
+      }
+    },
+    {
+      "id": "tent",
+      "name": "A tent in the middle",
+      "still": "A camp of small tents round one larger tent in the middle, with a cloud standing over it. The gold light has come to rest inside the tent.",
+      "younger": "God told Israel to build a tent, the tabernacle, so that he could dwell among them, and his glory filled it. God's tent stood right in the middle of the camp.",
+      "older": "God told Israel to build a tent, the tabernacle, so that he could dwell among them, and his glory filled it: “the glory of the LORD filled the tabernacle” (Exodus 40:34). The tribes camped around it (Numbers 2:2). Only the high priest went into its most holy place, once a year (Hebrews 9:7).",
+      "say": {
+        "older": "God told Israel to build a tent, the tabernacle, so that he could dwell among them, and his glory filled it: “the glory of the LORD filled the tabernacle”. The tribes camped around it. Only the high priest went into its most holy place, once a year."
+      },
+      "verse": {
+        "ref": "Exodus 40:34",
+        "text": "Then the cloud covered the Tent of Meeting, and the glory of the LORD filled the tabernacle."
+      }
+    },
+    {
+      "id": "temple",
+      "name": "The temple filled",
+      "still": "The temple on its hill in Jerusalem, the cloud of glory resting on it, and the gold light in its open doorway.",
+      "younger": "Solomon built the temple in Jerusalem, and the cloud of God's glory filled it. It was so bright and heavy that the priests could not stay inside.",
+      "older": "Solomon built the temple in Jerusalem, and the cloud of God's glory filled it, so that the priests could not stand there to minister (1 Kings 8:10-11). For centuries this was the place where Israel came to pray, to sing the psalms and to offer sacrifices.",
+      "say": {
+        "older": "Solomon built the temple in Jerusalem, and the cloud of God's glory filled it, so that the priests could not stand there to minister. For centuries this was the place where Israel came to pray, to sing the psalms and to offer sacrifices."
+      },
+      "verse": {
+        "ref": "1 Kings 8:11",
+        "text": "so that the priests could not stand there to minister because of the cloud; for the glory of the LORD filled the house of the LORD."
+      }
+    },
+    {
+      "id": "leaves",
+      "name": "The glory leaves",
+      "still": "The temple is drawn now in a broken line. The gold light has moved out past its doorway and stands away to the east, over a hill. The line above turns to dots again.",
+      "younger": "The prophet Ezekiel saw God's glory leave the temple before Babylon destroyed it. It was one of the saddest days in the Bible. But Ezekiel also saw that the glory would come back.",
+      "older": "The prophet Ezekiel saw God's glory leave the temple before Babylon destroyed it: to the threshold, and then to the mountain east of the city (Ezekiel 10:18; 11:23). Yet he also saw “the glory of the LORD” come back into the temple (Ezekiel 43:4), and after the exile God promised, “I will fill this house with glory” (Haggai 2:7).",
+      "say": {
+        "older": "The prophet Ezekiel saw God's glory leave the temple before Babylon destroyed it: to the threshold, and then to the mountain east of the city. Yet he also saw “the glory of the LORD” come back into the temple, and after the exile God promised, “I will fill this house with glory”."
+      },
+      "verse": {
+        "ref": "Ezekiel 10:18",
+        "text": "Then the glory of the LORD moved away from the threshold of the temple and stood above the cherubim."
+      }
+    },
+    {
+      "id": "word",
+      "name": "The Word made his dwelling",
+      "still": "By a lake, Jesus stands among people, with the faint outline of a tent drawn round him, and the gold light is with him.",
+      "younger": "Jesus is God with us. The Word became flesh and made his dwelling among us. God came to live with his people as one of them.",
+      "older": "Jesus is God with us. The Word became flesh and made his dwelling among us. John's word for “made His dwelling” means ‘pitched his tent’ (the Study Bible's note on John 1:14). The God whose glory filled the tent now lives among people as one of them: “We have seen His glory” (John 1:14).",
+      "say": {
+        "older": "Jesus is God with us. The Word became flesh and made his dwelling among us. John's word for “made His dwelling” means ‘pitched his tent’ (the Study Bible's note on John chapter 1, verse 14). The God whose glory filled the tent now lives among people as one of them: “We have seen His glory”."
+      },
+      "verse": {
+        "ref": "John 1:14",
+        "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth."
+      }
+    },
+    {
+      "id": "curtain",
+      "name": "The curtain torn",
+      "still": "Inside the temple, the great curtain before the most holy place is torn in two from top to bottom. Its halves are drawn apart, and the gold light comes out through the gap.",
+      "younger": "When Jesus died, the curtain that closed off the most holy place in the temple tore from top to bottom. The way to God was open.",
+      "older": "When Jesus died, the curtain that closed off the most holy place in the temple tore from top to bottom (Mark 15:38). Torn from the top, it shows that God himself opened the way. Hebrews speaks of “the new and living way opened for us through the curtain of His body” (Hebrews 10:20).",
+      "say": {
+        "older": "When Jesus died, the curtain that closed off the most holy place in the temple tore from top to bottom. Torn from the top, it shows that God himself opened the way. Hebrews speaks of “the new and living way opened for us through the curtain of His body”."
+      },
+      "verse": {
+        "ref": "Mark 15:38",
+        "text": "And the veil of the temple was torn in two from top to bottom."
+      }
+    },
+    {
+      "id": "spirit",
+      "name": "God's temple, his people",
+      "still": "People stand side by side like the pillars of a temple, under its roof line, each with a small flame, and the gold light shines at the top of the roof.",
+      "younger": "God's Spirit came to live in his people. Paul tells the church that it is now God's temple. Wherever God's people are, God is with them.",
+      "older": "God's Spirit came to live in his people. Paul tells the church that it is now God's temple: “God's Spirit dwells in you” (1 Corinthians 3:16). The light is no longer in one building in one city. It lives in people, in every place.",
+      "say": {
+        "older": "God's Spirit came to live in his people. Paul tells the church that it is now God's temple: “God's Spirit dwells in you”. The light is no longer in one building in one city. It lives in people, in every place."
+      },
+      "verse": {
+        "ref": "1 Corinthians 3:16",
+        "text": "Do you not know that you yourselves are God's temple, and that God's Spirit dwells in you?"
+      }
+    },
+    {
+      "id": "city",
+      "name": "With them for ever",
+      "still": "A city with its gate open, a river running out from it toward us between trees, and people walking beside it. The gold light shines in the open gateway. Above, the line runs on, solid, to the last round picture.",
+      "younger": "At the end, God's dwelling place is with people, and he lives with them for ever. There is no temple in that city, because God himself is there.",
+      "older": "At the end, God's dwelling place is with people, and he lives with them for ever. John saw no temple in the city, “because the Lord God Almighty and the Lamb are its temple” (Revelation 21:22). What began in a garden ends in a whole world where God lives with his people.",
+      "say": {
+        "older": "At the end, God's dwelling place is with people, and he lives with them for ever. John saw no temple in the city, “because the Lord God Almighty and the Lamb are its temple”. What began in a garden ends in a whole world where God lives with his people."
+      },
+      "verse": {
+        "ref": "Revelation 21:3",
+        "text": "Behold, the dwelling place of God is with man, and He will dwell with them. They will be His people, and God Himself will be with them as their God."
+      }
+    }
+  ],
+  "think": {
+    "younger": "From the very first page, God wanted to live with his people. Where do you think God is with you today? Talk about it with a parent or a leader.",
+    "older": "The light moves from a garden, to a tent, to a temple, to a person, to a people. Why might God choose to live in people and not only in a building?"
+  },
+  "read": [
+    { "label": "Genesis 3", "href": "/study/bible/genesis/3" },
+    { "label": "Exodus 40", "href": "/study/bible/exodus/40" },
+    { "label": "1 Kings 8", "href": "/study/bible/1-kings/8" },
+    { "label": "Ezekiel 10", "href": "/study/bible/ezekiel/10" },
+    { "label": "John 1", "href": "/study/bible/john/1" },
+    { "label": "Mark 15", "href": "/study/bible/mark/15" },
+    { "label": "1 Corinthians 3", "href": "/study/bible/1-corinthians/3" },
+    { "label": "Revelation 21", "href": "/study/bible/revelation/21" }
+  ],
+  "stops": ["sinai", "creation", "fall", "kingdom", "exile", "jesus", "cross", "church", "new-creation"],
+  "cards": ["spirit"],
+  "deeper": [
+    { "label": "The thread on the whole map: God with his people", "href": "/study/explorer" },
+    { "label": "Walk into the tent (the Sinai stop)", "href": "/study/explorer/sinai" }
+  ],
+  "end": { "label": "See the thread on the whole map", "href": "/study/explorer" },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "garden", "verse": false },
+      { "id": "shut", "verse": false },
+      { "id": "tent", "verse": false },
+      { "id": "temple", "verse": false },
+      { "id": "leaves", "verse": false },
+      { "id": "word", "verse": false },
+      { "id": "curtain", "verse": true },
+      { "id": "spirit", "verse": false },
+      { "id": "city", "verse": true }
+    ]
+  }
+}

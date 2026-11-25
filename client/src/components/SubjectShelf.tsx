@@ -17,7 +17,7 @@ import { fetchStaticCatalog, type CatalogItem } from "@/lib/catalog";
 import { matchesSubject, type Subject } from "@/lib/subjects";
 
 /** Display order: read first, then go deeper, then the tools. */
-const GROUP_ORDER = ["Read", "Follow a path", "Work a study", "Books", "Tools"] as const;
+const GROUP_ORDER = ["Reading", "Follow a path", "Study guides", "Books", "Tools"] as const;
 type Group = (typeof GROUP_ORDER)[number];
 
 /** Map the catalog's type facet onto a reader-facing shelf. */
@@ -25,11 +25,11 @@ function groupFor(item: CatalogItem): Group | null {
   const t = (item.type || "").toLowerCase();
   const href = item.href || "";
   if (href.startsWith("/pathways/")) return "Follow a path";
-  if (t.includes("study") || href.startsWith("/studyguides/")) return "Work a study";
+  if (t.includes("study") || href.startsWith("/studyguides/")) return "Study guides";
   if (t.includes("book") || href.startsWith("/read/") || href.startsWith("/books/")) return "Books";
   if (t.includes("tool") || href.startsWith("/tools/")) return "Tools";
-  if (t.includes("essay") || t.includes("article") || t.includes("guide") || t.includes("domain")) return "Read";
-  return "Read";
+  if (t.includes("essay") || t.includes("article") || t.includes("guide") || t.includes("domain")) return "Reading";
+  return "Reading";
 }
 
 export default function SubjectShelf({

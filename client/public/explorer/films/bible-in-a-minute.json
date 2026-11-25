@@ -1,0 +1,92 @@
+{
+  "slug": "bible-in-a-minute",
+  "title": "The Bible in a minute",
+  "group": "story",
+  "status": "finished",
+  "mark": "bible-in-a-minute",
+  "line": {
+    "younger": "The whole Bible as one story, short enough to share, in eight pictures along one road.",
+    "older": "One book, one story: the whole Bible from creation to the new creation, short enough to share, in eight pictures along one road."
+  },
+  "poster": "A garden's great tree stands on the left and a walled city with its gate on the right, with a faint path between them. Along the foot of the picture a road runs from left to right, with a faint ring for each of its thirteen stops.",
+  "frames": [
+    {
+      "id": "made",
+      "name": "Made good",
+      "still": "A garden under the sun: a great tree, a palm, a river, sheep grazing, a bird in the air, and two people standing among the plants. On the road below, the first stop appears.",
+      "younger": "God made everything, and it was very good. He made people to know him and to take care of his world.",
+      "older": "Before anything else, there is God. He speaks the world into being, calls it good, and makes people in his image to care for it."
+    },
+    {
+      "id": "broken",
+      "name": "Broken",
+      "still": "The garden's wall, with its gate shut and a sword laid across it; the tree shows above the wall. Outside, on bare ground with thorns, two people walk away. The road reaches its second stop.",
+      "younger": "The first people did not trust God and did what he told them not to do. Sin and sadness came into the world.",
+      "older": "Adam and Eve reach for what God withheld, and the damage spreads. God judges, and he keeps showing mercy."
+    },
+    {
+      "id": "promise",
+      "name": "A promise",
+      "still": "Night. A tent among the hills under a sky full of stars; a woman stands at the tent, and a man with a staff looks up. The road reaches its third stop.",
+      "younger": "God chose Abraham and promised him a family as many as the stars, and a blessing for the whole world.",
+      "older": "God calls one man and makes him a promise: a people, a land, and a blessing that will reach every family on earth."
+    },
+    {
+      "id": "rescue",
+      "name": "A rescue",
+      "still": "Two panels. On the left, a dry path between two walls of water, with a family walking through. On the right, a mountain under a cloud, with the two tablets of the law at its foot. Two more stops appear on the road.",
+      "younger": "Abraham's family became slaves in Egypt. God set them free, led them through the sea, and gave them his good laws.",
+      "older": "Abraham's family has become a nation of slaves. God sets them free, opens a road through the sea, and gives the law at Sinai."
+    },
+    {
+      "id": "king",
+      "name": "A king",
+      "still": "Two panels. On the left, a house, a palm and standing grain in the land. On the right, a shepherd wearing a crown stands with his crook among his sheep. Two more stops appear on the road.",
+      "younger": "God brought his people into the land and gave them kings. He promised David that a king from his family would rule for ever.",
+      "older": "God gives the land, and Israel asks for a king. David loves God and fails badly too, and God promises him a son whose kingdom will never end."
+    },
+    {
+      "id": "exile",
+      "name": "Exile, and hope",
+      "still": "Two panels. On the left, a city wall broken open with smoke above it, and people walking away carrying bundles. On the right, a lamp burning in the dark, an open scroll, and a wall being built again. Two more stops appear on the road.",
+      "younger": "The people stopped listening to God and were taken far from home. Prophets promised that God would not give up on them.",
+      "older": "The kingdom falls and Babylon burns Jerusalem. Yet the prophets promise a new covenant and a coming king, and the Old Testament ends looking ahead."
+    },
+    {
+      "id": "jesus",
+      "name": "Jesus: the cross and the empty tomb",
+      "still": "Two panels. On the left, Jesus stands by the lake with his arms open, teaching people who sit on the shore; a boat is on the water. On the right, a hill with a cross, and beside it an open tomb with its stone rolled away and light above it. Two more stops appear on the road.",
+      "younger": "God the Son was born as Jesus. He died on a cross to take away the sin of the world, and on the third day God raised him from the dead.",
+      "older": "God keeps his promises in person. Jesus dies on a Roman cross, carrying the sin of the world, and on the third day God raises him bodily from the dead."
+    },
+    {
+      "id": "new",
+      "name": "The Spirit, and all things new",
+      "still": "A city with its gate standing open and light pouring down on it. A river runs out from the gate past a great tree, and people walk toward the gate. The road is finished, with a flame for the Spirit on it too: every stop stands on it, from the garden to the city.",
+      "younger": "Jesus sent the Holy Spirit, and his followers told the good news everywhere. One day he will come back and make everything new.",
+      "older": "The Spirit comes and the church spreads to every nation. Jesus returns, death is undone, and God makes his home with people for ever.",
+      "verse": {
+        "ref": "Revelation 21:5",
+        "text": "Behold, I make all things new."
+      }
+    }
+  ],
+  "think": {
+    "younger": "The road starts in a garden and ends in a city. What stays the same from the first stop to the last?",
+    "older": "Where would you put yourself on this road? What has already happened, and what are Christians still waiting for?"
+  },
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Genesis 12", "href": "/study/bible/genesis/12" },
+    { "label": "Luke 24", "href": "/study/bible/luke/24" },
+    { "label": "Revelation 21", "href": "/study/bible/revelation/21" }
+  ],
+  "stops": ["creation"],
+  "cards": [],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "The whole Bible in two minutes (the longer moving picture, in nine parts)", "href": "/study/explorer/watch/bible-two-minutes" },
+    { "label": "The Bible's story in eleven parts", "href": "/study/bible/story" }
+  ],
+  "end": { "label": "Walk the road: start at stop 1, Creation", "href": "/study/explorer/creation" }
+}

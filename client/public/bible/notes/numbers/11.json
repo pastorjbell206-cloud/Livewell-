@@ -31,7 +31,8 @@
   },
   "questions": [
     "The people remembered Egypt's food and forgot Egypt's slavery. What past do you tend to remember selectively when the present feels hard?",
-    "Moses told God the truth about his exhaustion, even asking to die, and God answered by sharing the load. What burden are you carrying alone that should be shared?",
+    "Moses told God the truth about his exhaustion, even asking to die, and God answered by sharing the load. What burden are you carrying alone that should be shared? If your own exhaustion has reached the point of wanting to die, tell someone you trust today (in the United States, call or text 988).",
     "Joshua wanted to stop Eldad and Medad, and Moses refused. When have you been tempted to guard your own role instead of welcoming God's work through others?"
-  ]
+  ],
+  "plain": true
 }

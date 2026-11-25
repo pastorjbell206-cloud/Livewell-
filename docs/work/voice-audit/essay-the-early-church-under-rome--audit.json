@@ -1,0 +1,82 @@
+{
+  "piece": "the-early-church-under-rome",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean and close to finished. Literal search finds no Forbidden Language, no em-dash, no exclamation point, no hedge, no connective filler, and no biography beyond 'the church I pastor'. The history carries the piece and the narration reads like a person who has lived with these sources. What earlier readers missed is small and sits almost entirely in the last two sections: one internal contradiction ('emperors who hunted it' against Trajan's rule that Christians were not to be hunted), a 'not X. It was Y.' used twice in one section, a run of three 'What ... is/was' cleft sentences with colon reveals in the closing section, one balanced sentence pair where only half does work, and one image ('plague wards') that is more literary than the plain thing the essay already described. The title is the least plain thing on the page and argues with the Decius section.",
+  "findings": [
+    {
+      "quote": "to pray for emperors who hunted it",
+      "tell": "Balanced-pair closer that overreaches its own evidence (symmetry chosen over accuracy)",
+      "why": "The sentence is built as a matched pair, 'neighbors who distrusted it' / 'emperors who hunted it', and the second half was picked for the rhythm. The essay itself reported Trajan's rule: 'Christians were not to be hunted.' A skeptic reading closely catches the essay contradicting its own account in a one-line paragraph near the end, which is where a machine-made flourish is most visible.",
+      "replacement": "to pray for emperors who persecuted it",
+      "severity": "should"
+    },
+    {
+      "quote": "The church was not in a hurry. It was forming people who could stand before a magistrate, because it knew that day might come.",
+      "tell": "'It is not X. It is Y.' antithesis used a second time in one movement; paragraph restating its own opening",
+      "why": "The same section already has 'Growth like that does not depend on crowds. It moves through networks of households and friendships.' three paragraphs earlier, and this paragraph opened with 'And the church was patient.' Saying 'not in a hurry' at the close repeats the opening as a slogan before the real point arrives.",
+      "replacement": "It was forming people who could stand before a magistrate, because it knew that day might come.",
+      "severity": "should"
+    },
+    {
+      "quote": "What we face is closer to the way things began in Lyon, before anyone was arrested, when the cost was being shut out of the houses and the baths and the market and being thought strange or dangerous by the neighbors.",
+      "tell": "Repeated sentence frame (three 'What ... is/was' clefts in the closing section, two with colon reveals)",
+      "why": "The closing section runs 'What is ending here is the cultural default:', then 'What we face is closer to', then 'What they refused was the pinch of incense:'. One is a natural spoken emphasis; three in five paragraphs is a template a careful reader hears. Changing the middle one breaks the run and leaves the two that sit at real hinges.",
+      "replacement": "Our situation is closer to the way things began in Lyon, before anyone was arrested, when the cost was being shut out of the houses and the baths and the market and being thought strange or dangerous by the neighbors.",
+      "severity": "should"
+    },
+    {
+      "quote": "Celsus read the Christians closely and despised them. Julian watched them feed his own people and complained of it.",
+      "tell": "Symmetrical sentence pair where only one half serves the argument",
+      "why": "The paragraph's claim is that the church's credibility came from its care for the poor and the sick. Julian is evidence for that. Celsus despising the Christians is not; he is there to give Julian a matching partner. The pair reads as built for balance.",
+      "replacement": "Julian watched them feed his own people and complained of it.",
+      "severity": "consider"
+    },
+    {
+      "quote": "and it came from the widows' rolls and the plague wards",
+      "tell": "Fresh literary image where he would use a plain phrase",
+      "why": "'Plague wards' suggests hospital wards the essay never described; what it described was a list of widows the church fed and Christians nursing the sick in a plague. The plain version is his register and stays inside what the sources say.",
+      "replacement": "and it came from the widows it fed and the sick it nursed",
+      "severity": "consider"
+    },
+    {
+      "quote": "If losing cultural standing feels like losing the faith, then more of our faith was resting on that standing than we knew.",
+      "tell": "Aphoristic closer stacked on a verdict line (faith/standing mirrored in both clauses)",
+      "why": "'That should embarrass us.' has already landed the paragraph as a short verdict. The next sentence then closes it a second time with a mirrored construction. The thought is real and worth keeping; said less symmetrically it sounds like him thinking, not like a line being polished.",
+      "replacement": "If losing cultural standing feels to us like losing the faith, we were leaning on that standing more than we knew.",
+      "severity": "consider"
+    },
+    {
+      "quote": "A church fighting to recover its place is not going to persuade a post-Christian America of anything.",
+      "tell": "A motif stamped through the piece",
+      "why": "'Post-Christian America' appears in the excerpt, the section heading, and three times in the body of the last section. The heading and the line 'That is the church a post-Christian America is going to need' carry it; here it is the stamp showing.",
+      "replacement": "A church fighting to recover its place is not going to persuade this country of anything.",
+      "severity": "consider"
+    },
+    {
+      "quote": "When the Church Had Nothing to Lose",
+      "tell": "A title that is literary rather than plain, and that the essay itself contradicts",
+      "why": "The brief asks for titles in the plain words people search. This one is a phrase, and the Decius section shows the opposite: Cyprian's Christians lapsed because they had estates, shops and families to lose. The essay's own closing claim is narrower (no position to protect). The plain title is the one the slug already uses. James approved this pilot, so this is his call.",
+      "replacement": "The Early Church Under Rome",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The opening is a governor's letter about firemen and a market for sacrificial animals, not a thesis. It reads as someone who knows the source telling it across a table.",
+    "Rome gets its strongest case. The pax deorum paragraph, Celsus's civic argument, and 'Put most of us in a magistrate's chair with a failed harvest ... and we would have seen it the way Celsus did' do the fair thing without announcing it.",
+    "Self-implication is done, not declared: 'If I had been a Christian merchant in Carthage in 250 ... I am not at all sure what I would have done' and 'that includes the church I pastor'. Neither uses biography as a credential.",
+    "Sources are qualified the way a careful person qualifies them: 'A bishop writing to his own flock is not a neutral witness', 'Historians argue about his figures, as they should', and the open question about whether Decius was aiming at Christians.",
+    "The first objection in the closing section is conceded outright ('The objection is right') and the application is scaled down to match it, with real numbers from Gallup and Pew.",
+    "Scripture works inside the argument: First Peter addressed to Bithynia a generation before Pliny, and Galerius asking for the prayer 1 Timothy 2 had already commanded. Neither is a decorative closer.",
+    "Galerius's edict paragraph and the Rhone ashes returning in the ending are earned echoes rather than recaps.",
+    "Headings are plain and descriptive. Contractions appear where speech would have them. Sentence and paragraph lengths vary."
+  ],
+  "for_james": [
+    "The closing says civic gestures will be asked of Christians 'from the left and from the right', but every concrete case in the essay points one way: Falwell after September 11, the church 'fighting to recover its place', calling the loss of deference persecution. That may be the right weighting for this subject, and your own standard refuses forced symmetry. If you have a real, specific example of a civic gesture pressed from the left that you would name, one sentence there would make the phrase more than a gesture. I did not supply one; it has to be yours.",
+    "Robert Louis Wilken's sentence says he 'took those critics seriously' and then the description of the church as a body with its own officers, fund and Lord is the essay's own (the ledger marks it as interpretation, not sourced to him). As written his name is close to decoration. If you remember a specific point of his you want credited, put it there; otherwise the sentence can stand as a short acknowledgment.",
+    "The title 'When the Church Had Nothing to Lose' is the one phrase on the page that sounds written rather than said, and the Decius section argues against it. You approved this pilot, so I have only flagged it. 'The Early Church Under Rome' is the plain alternative.",
+    "'The church I pastor' is the only personal line besides the Carthage merchant sentence. It works. If a real moment from your own church belongs near 'Many of us have called the loss of deference persecution', only you can add it; nothing should be invented to fill that space.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree, and I judged by the voice document. The profile asks for paragraphs of two to four sentences, a Greek or Hebrew word, a line built to be screenshotted, 'three specific questions' and 'one concrete practice', and 1,500 to 2,500 words. The voice document asks for developed paragraphs, one earned verdict, and no application box. This essay follows the voice document (about 3,900 words, no Monday list). I did not rewrite toward the profile.",
+    "The claims ledger still lists one routine check outstanding: running the Scripture quotations through the ESV API once your key exists. No replacement proposed here touches a quotation, date, name, number or reference."
+  ]
+}

@@ -2,11 +2,24 @@ import { useState, useMemo, useEffect } from "react";
 import { trpc } from "@/lib/trpc";
 import { Link } from "wouter";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import LoadFailed from "@/components/LoadFailed";
 import MinimalNav from "@/components/MinimalNav";
 import Footer from "@/components/Footer";
 import { SITE_URL } from "@/lib/site";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
+import { filterPublicPosts } from "@/lib/shelf";
+
+/** An essay the quiz recommends, as the server returns it. */
+type RecommendedArticle = {
+  slug: string;
+  title: string;
+  excerpt?: string | null;
+  pillar?: string | null;
+  readTime?: string | number | null;
+  createdAt?: unknown;
+  publishedAt?: unknown;
+};
 
 /* Session mirror (roadmap HS-5). One-sitting entry flow: answers, step, and
  * the results flag survive an accidental refresh via sessionStorage, and
@@ -89,7 +102,8 @@ export default function TheologyQuiz() {
     );
   }
 
-  if (questionsQuery.isError) {
+  // An answer with no questions in it is a failed load too, not "Question 1 of 0".
+  if (questionsQuery.isError || questions.length === 0) {
     return (
       <>
         <MinimalNav />
@@ -117,6 +131,15 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
   const recommendationsQuery = trpc.quiz.getRecommendations.useQuery(
     { answers },
     { enabled: showResults && answers.length > 0 }
+  );
+  // The server picks from the whole archive; only essays on the live shelf are
+  // offered, so a recommendation never lands on a retired essay's notice.
+  const recommendedArticles = useMemo(
+    () =>
+      filterPublicPosts(
+        (recommendationsQuery.data?.recommendedArticles ?? []) as RecommendedArticle[],
+      ),
+    [recommendationsQuery.data],
   );
 
   // Mirror the state on every change, with the question ids the answers were
@@ -165,28 +188,16 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
   return (
     <>
       <SEOMeta
-        title="Theological Position Quiz"
+        title="What Do You Believe? A 10-Question Quiz"
         description="A free quiz: ten questions about what you actually believe, about four minutes, and then the essays that meet you where your answers say you are."
         keywords="theology quiz, faith assessment, James Bell, theological position"
         url={`${SITE_URL}/quiz`}
       />
       <MinimalNav />
 
-      {/* Hero */}
-      <section style={{ background: "var(--ink)", padding: "60px 20px 40px", textAlign: "center" }}>
-        <div style={{ maxWidth: "700px", margin: "0 auto" }}>
-          <div style={{ fontSize: "12px", letterSpacing: "2px", color: "var(--gold)", fontWeight: "bold", marginBottom: "12px", textTransform: "uppercase" }}>FREE ASSESSMENT</div>
-          <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: "bold", color: "var(--paper)", fontFamily: "var(--F)", marginBottom: "16px" }}>
-            Where Do You Stand Theologically?
-          </h1>
-          <p style={{ fontSize: "16px", color: "rgba(255,255,255,0.75)", lineHeight: "1.7", margin: "0 0 12px" }}>
-            Answer plainly. At the end: the essays that meet you where your answers say you are.
-          </p>
-          <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: "1.7", margin: 0 }}>
-            Ten questions. About four minutes. No grade.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/theology-quiz" title="Where Do You Stand Theologically?" line="Answer plainly. At the end: the essays that meet you where your answers say you are." plate="compass">
+        <p className="pg-head__lede">Ten questions. About four minutes. No grade.</p>
+      </InnerHead>
 
       {/* Quiz Body */}
       <section style={{ background: "var(--paper)", padding: "60px 20px", minHeight: "60vh" }}>
@@ -314,17 +325,17 @@ function TheologyQuizBody({ questions }: { questions: QuizQuestionView[] }) {
                   </div>
 
                   {/* Recommended Articles */}
-                  {recommendationsQuery.data.recommendedArticles?.length > 0 && (
+                  {recommendedArticles.length > 0 && (
                     <div style={{ marginBottom: "40px" }}>
                       <h3 style={{ fontSize: "22px", fontWeight: "bold", color: "var(--ink)", fontFamily: "var(--F)", marginBottom: "24px" }}>Recommended Reading For You</h3>
                       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "20px" }}>
-                        {recommendationsQuery.data.recommendedArticles.slice(0, 4).map((article: any) => (
+                        {recommendedArticles.slice(0, 4).map((article) => (
                           <Link key={article.slug} href={"/writing/" + article.slug} style={{ textDecoration: "none" }}>
                             <div style={{ background: "var(--card)", borderRadius: "8px", border: "1px solid var(--bone-muted)", padding: "24px", cursor: "pointer", height: "100%" }}>
                               <div style={{ fontSize: "11px", fontWeight: "bold", color: "var(--gold)", marginBottom: "8px", textTransform: "uppercase" }}>{article.pillar}</div>
                               <h4 style={{ fontSize: "15px", fontWeight: "bold", color: "var(--ink)", marginBottom: "8px", lineHeight: "1.4" }}>{article.title}</h4>
                               <p style={{ fontSize: "13px", color: "var(--ink3)", lineHeight: "1.6", marginBottom: "12px" }}>{article.excerpt}</p>
-                              <span style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600" }}>{article.readTime} min read →</span>
+                              <span style={{ fontSize: "12px", color: "var(--gold)", fontWeight: "600" }}>{/min/i.test(String(article.readTime)) ? article.readTime : `${article.readTime} min read`} →</span>
                             </div>
                           </Link>
                         ))}

@@ -1,0 +1,93 @@
+{
+  "slug": "what-romans-13-says",
+  "lens": "Voice read, last reader before publishing. I read /home/user/livewell-land/client/public/essays/what-romans-13-says.json (title, excerpt as standfirst, Markdown body) against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list, the brief's stamps and the rulebook words literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I edited nothing. Scripture and fact verification belong to the integrity lens. No hard-rule failures turned up (forbidden language, em-dashes, exclamations, biography, stamps); everything below is about register and wording.",
+  "findings": [
+    {
+      "where": "Who Paul Was Writing To, last paragraph, last sentence: \"That fact cuts in both directions, and the rest of this essay is about why.\"",
+      "problem": "This is the essay talking about itself: a roadmap promise and an announced turn. It is the clearest piece of scaffolding in the essay. The next four sections show both directions without being told to.",
+      "fix": "Replace with: \"That fact cuts in both directions.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Romans 13 for Citizens Who Vote, paragraph 1: \"A Christian who cheers an official for ignoring the law because the official is on the right side has not obeyed Romans 13.\"",
+      "problem": "\"The right side\" is meant as \"the side he favors\", but in an essay that sets Christians on the right against Christians on the left (two paragraphs later), it reads as a jab at the political right. That is the one place where the political criticism seems to fire in only one direction, and it isn't meant to.",
+      "fix": "Replace \"because the official is on the right side\" with \"because the official is on his side\".",
+      "severity": "should"
+    },
+    {
+      "where": "How the Passage Has Been Used, last paragraph: \"Which of those uses looks faithful to you probably depends on how you vote. That is the trouble. A reading of Romans 13 that changes when the party in office changes isn't really a reading of Romans 13.\"",
+      "problem": "\"That is the trouble.\" is a stage direction pointing at the verdict that follows. The next sentence carries the point alone. (That verdict comes back in the last section as \"both are quoting it for the side they were already on\", so the essay doesn't need extra emphasis here.)",
+      "fix": "Delete \"That is the trouble.\" The paragraph reads: \"Which of those uses looks faithful to you probably depends on how you vote. A reading of Romans 13 that changes when the party in office changes isn't really a reading of Romans 13.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "What the Rest of Scripture Adds, Daniel paragraph, last sentence: \"He had disobeyed the decree, and he still honored the king.\"",
+      "problem": "This is the third paragraph to close on the same refused-but-honored sentence shape. The first is Polycarp (\"He would not swear, and he died for it, still honoring the office of the governor who let him be burned.\") and the second is the apostles (\"They refused the order, and they did not resist the beating.\"). The next paragraph then states the thesis outright (\"A Christian can refuse a command and still remain under the authority that gave it\"), so by then the motif is stamped. The Daniel quotations (\"O king, live forever!\" and \"before you, O king, I have done no harm\") already show the honor.",
+      "fix": "Delete \"He had disobeyed the decree, and he still honored the king.\" The paragraph ends on \"(6:22).\"",
+      "severity": "consider"
+    },
+    {
+      "where": "What the Rest of Scripture Adds, paragraph 4: \"A Christian can refuse a command and still remain under the authority that gave it, accepting its penalty instead of fleeing or fighting.\"",
+      "problem": "\"Fleeing\" overclaims. It suggests that escaping persecution falls outside biblical submission, but Jesus told his disciples to flee from one town to the next when persecuted (Matthew 10:23), and Paul escaped Damascus through a window in a basket (2 Corinthians 11:32-33). A pastor will catch it. It also tilts a sentence that should only describe Daniel and the apostles.",
+      "fix": "Replace \"accepting its penalty instead of fleeing or fighting.\" with \"accepting its penalty instead of fighting it.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Ending stack: \"Whoever takes office in January will be owed our taxes, our respect and our prayers, but not our worship or our conscience.\"",
+      "problem": "\"In January\" ties the essay's last turn to the November 2026 election. On a shelf meant to keep (CLAUDE.md: \"a piece that still matters in five years\"), the line goes stale within months, while everything else in the ending is timeless. It is also the most constructed sentence in the ending: a triplet followed by a balanced \"but not\" pair. That is acceptable once, but it shouldn't be dated as well. This is James's call: if he wants the election moment, leave it.",
+      "fix": "Replace \"Whoever takes office in January will be owed\" with \"Whoever holds office over us is owed\". The rest of the sentence stays, and \"Those belong to the One...\" still follows.",
+      "severity": "consider"
+    },
+    {
+      "where": "Opening section, paragraph 3: \"A skeptic watching from outside could fairly conclude that Christians will make the Bible say whatever their side needs that year.\"",
+      "problem": "\"Fairly\" certifies the concession instead of letting it stand, which is a mild case of rulebook leakage. It is the essay's only use of fair/honest, so it is within the brief's limit, but the next three words (\"Sometimes we have.\") already make the concession.",
+      "fix": "Replace \"could fairly conclude\" with \"could conclude\".",
+      "severity": "consider"
+    },
+    {
+      "where": "Romans 13 for Citizens Who Vote, end of paragraph 4: \"[The love of country Scripture assumes](/writing/what-christian-nationalism-is-and-is-not) knows the difference between honoring a government and belonging to it.\"",
+      "problem": "Read aloud, this trips: \"country Scripture\" parses as one noun before the sentence corrects itself.",
+      "fix": "Replace the link text with \"The love of country that Scripture assumes\", keeping the same href: \"[The love of country that Scripture assumes](/writing/what-christian-nationalism-is-and-is-not) knows the difference between honoring a government and belonging to it.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Opening section, paragraph 2: \"For a lot of Americans that week was the first time they noticed Romans 13 being used as a political weapon.\"",
+      "problem": "Read aloud, this parses first as \"Americans that week\", and the reader has to back up.",
+      "fix": "Replace with: \"For a lot of Americans, that week was the first time they noticed Romans 13 being used as a political weapon.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Romans 13 in Its Place in the Letter, paragraph 2: \"He has just taken vengeance out of the Christian's hands, and now he tells them where some of it has gone.\"",
+      "problem": "The singular \"the Christian's\" is followed by the plural \"them\", and the ear catches the mismatch.",
+      "fix": "Replace \"out of the Christian's hands\" with \"out of Christians' hands\".",
+      "severity": "consider"
+    },
+    {
+      "where": "Standfirst (excerpt): \"Romans 13 tells Christians to be subject to whoever governs, and read in its place in Paul's letter it also tells them what government is for.\"",
+      "problem": "This is one plain declarative sentence, additive rather than a balanced antithesis, so it passes the template check. But without commas, \"and read in its place\" can be heard as an imperative, and the reader has to back up.",
+      "fix": "Replace with: \"Romans 13 tells Christians to be subject to whoever governs, and, read in its place in Paul's letter, it also tells them what government is for.\"",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Forbidden Language, literal search of every word and phrase in CLAUDE.md (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic; in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed as adjective, gospel-centered, authentic community; hold space, your truth, do the work, your feelings are valid, lean into, showing up): zero hits. \"Bless\" appears only in quoted Romans 12:14 and as verbs (\"blessing the beast\", \"to bless even those\").",
+    "Em-dashes (U+2014) and en-dashes: none in the title, standfirst or body.",
+    "Exclamation points: one, inside verbatim quoted Scripture (\"O king, live forever!\", Daniel 6:21 ESV).",
+    "Brief stamps (Those of us who preach, pastors like me, This is not both-sidesism, Consider, none of this, the record, I don't exempt myself): none used. \"Consider\" appears only as \"Nero considered\".",
+    "Rulebook leakage words (steelman, verdict, indictment, self-implication): none. \"Honest\" zero times, \"fair\" once (\"fairly\", flagged as consider).",
+    "Biography: none. No title, years in ministry, book count, or Southern Baptist membership. The single first-person line (\"I can't tell you in advance where yours will draw that line\") is pastoral, not a credential.",
+    "Headings: all seven are plain and descriptive (Who Paul Was Writing To; Romans 13 in Its Place in the Letter; The Case for Obedience; The Case for Resistance; How the Passage Has Been Used; What the Rest of Scripture Adds; Romans 13 for Citizens Who Vote).",
+    "Title: in the plain words people search.",
+    "Standfirst: one declarative sentence, not a balanced antithesis (punctuation note above).",
+    "Scholar parade: none. The \"title plus year\" formula appears twice (Mayhew's 1750 Discourse, Spencer's 1850 sermon), and in both the date does work (the January 30 anniversary, the Fugitive Slave Act). Every other figure (Tacitus, Polycarp, Calvin, Boucher, Franklin, Barth, Althaus, Elert, King, Fife, MacArthur) is an actor in the argument, not a name-drop.",
+    "Political criticism fires both ways with the same instrument. Right: Sessions in 2018 and MacArthur's church in 2020. Left: the 1982 sanctuary movement and the defenders of the 2020 orders. The last section names both (\"Christians on the right ... Christians on the left ... Few of us can say we've never done it\"). One asymmetry is acceptable: the right's 2018 use opens the essay by name, while the left's 2020 use is unnamed. Do not invent a name to balance it.",
+    "Second-order questions are left open. The justice of the Revolution and whether America was founded as a Christian nation are explicitly named as questions faithful Christians answer differently. Obedience and resistance are each stated in their defenders' strongest form (Polycarp and Calvin; Mayhew and Calvin's lesser magistrates). The sanctuary movement and the 2020 worship closures are described without a verdict. Where conscience draws the line is left to the reader. Nothing here needs needs_james.",
+    "First-order matters are confessed plainly: Christ's lordship, the cross, the resurrection on the third day.",
+    "Self-implication is done, not announced: \"Sometimes we have\", \"Most of us discover the limits of Romans 13 when a law costs us something\", \"we shouldn't assume our own reading of Romans 13 sees everyone it ought to\", contempt that \"fills so much of our talk\", \"Few of us can say we've never done it\".",
+    "Ending: a short stack of plain lines that turns to the reader and lands on Christ before Pilate (John 19:11), the cross and the resurrection. It does not recap. The Closing Texts block matches the pilots' format (*\"Quote.\"* (Reference), one per line).",
+    "Crisis-facing: this is not a crisis-facing piece (the history of separation, persecution and execution is told, not addressed to a reader in crisis), so it needs no Find Help line.",
+    "Links: three /writing links (was-america-founded-as-a-christian-nation, what-christian-nationalism-is-and-is-not, the-early-church-under-rome), all in link-targets.json and within the two-to-four limit.",
+    "Register: paragraphs average about 87 words, on target. Sentences run slightly long (mean about 20.5 words, about 12% at 8 words or fewer by a rough split, against targets of 17 to 19 and about a quarter). That is not a fail at this length and needs no restructure. Contractions are light, and there is one semicolon in his own prose.",
+    "Divine pronouns are capitalized (He, Him, the One), matching the pilots."
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "slug": "prayer",
+  "title": "Prayer",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "prayer",
+  "line": {
+    "younger": "Prayer is talking with God, who is our Father. Seven pictures of what prayer is, and what to do when an answer is slow to come.",
+    "older": "What prayer is, in seven pictures: talking with God as Father, the prayer Jesus taught, thanks, asking, saying sorry, waiting, and the Spirit's help when words run out."
+  },
+  "poster": "A child sits on a mat by a window in the evening, with a lamp lit in the wall, and one thin line rises from them up past the top of the picture.",
+  "frames": [
+    {
+      "id": "talking",
+      "name": "Talking with God",
+      "still": "A child sits on a mat by a window in the evening, with a lamp lit in the wall, and one thin line rises from them up past the top of the picture.",
+      "younger": "Prayer is talking with God, who is our Father. You do not need special words or a special place. You can talk to him anywhere, out loud or quietly inside, and he hears.",
+      "older": "The family catechism calls prayer talking with God, who is our Father: bringing him worship, thanks, confession and requests, and trusting that he hears because of Jesus. It is not a way of getting things out of God. It is a child speaking to a father."
+    },
+    {
+      "id": "our-father",
+      "name": "Our Father",
+      "still": "On a hillside a man sits with his friends around him, and the same thin line rises from the group.",
+      "younger": "Jesus' friends asked him to teach them to pray. He gave them a prayer that begins, “Our Father in heaven.” Jesus lets us call God what he calls him: Father.",
+      "older": "When his disciples asked him to teach them to pray, Jesus gave them a pattern, the Lord's Prayer: God's name honored, his kingdom and his will first, then daily bread, forgiveness as we forgive, and protection from evil. Christians all over the world still pray it.",
+      "verse": {
+        "ref": "Matthew 6:9-10",
+        "text": "Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done, on earth as it is in heaven."
+      }
+    },
+    {
+      "id": "thanks",
+      "name": "Thank you",
+      "still": "A family is gathered at a low table with bread on it, two of them with their hands lifted, and the thin line rises from the table toward a light beyond the top of the picture.",
+      "younger": "Prayer can be saying thank you: for food, for the people we love, for the good world God made, and for who he is.",
+      "older": "Praise tells God who he is; thanks tells him what he has done. The psalms, the Bible's own book of prayers and songs, are full of both.",
+      "verse": {
+        "ref": "Psalm 100:4",
+        "text": "Enter His gates with thanksgiving and His courts with praise; give thanks to Him and bless His name."
+      }
+    },
+    {
+      "id": "asking",
+      "name": "Asking",
+      "still": "Three people pray apart: a woman at a well, a shepherd among his sheep, and a man kneeling beside a child. A thin line rises from each of them, all going up past the top of the picture.",
+      "younger": "We can ask God for what we need, big or small, and tell him what worries us. He wants to hear it.",
+      "older": "Paul tells worried people not to swallow their worry but to turn it into prayer, with thanks. Asking is not bothering God; it is what children do with a father who loves them.",
+      "verse": {
+        "ref": "Philippians 4:6",
+        "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God."
+      }
+    },
+    {
+      "id": "sorry",
+      "name": "Saying sorry",
+      "still": "A person kneels with head bowed to the ground, a heavy bundle set down beside them, and the thin line rises from them.",
+      "younger": "Prayer is also telling God the truth about what we have done wrong, and asking him to forgive us. He promises he will, because of Jesus.",
+      "older": "Confession is neither grovelling nor hiding. The catechism says that when we sin we confess it to God, who is faithful and just to forgive us because of Jesus, and we turn from it; there is no sin too big for the cross.",
+      "verse": {
+        "ref": "1 John 1:9",
+        "text": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+      }
+    },
+    {
+      "id": "waiting",
+      "name": "Yes, wait or no",
+      "still": "A person prays with lifted hands, and three thin lines rise: one reaches a small light, one keeps going as a dotted line, and one turns aside toward a young plant growing in the ground.",
+      "younger": "God always hears. Sometimes his answer is yes, sometimes it is wait, and sometimes it is no, like a good parent who can see further than we can. A no never means he has stopped caring.",
+      "older": "Prayer is not a promise that we will get what we ask. Jesus himself asked his Father in the garden to take the cup of suffering away, and added, “Yet not My will, but Yours be done.” Some prayers, even for someone to get better, are not answered the way we longed for, and that hurts. The Bible does not hide it: many of its prayers ask God, “How long, O LORD?”",
+      "verse": {
+        "ref": "Luke 22:42",
+        "text": "Father, if You are willing, take this cup from Me. Yet not My will, but Yours be done."
+      }
+    },
+    {
+      "id": "spirit-helps",
+      "name": "When words run out",
+      "still": "The child sits by the window again with no words, and a faint line still rises from them toward one small gold flame high above.",
+      "younger": "When you do not know what to say, the Holy Spirit helps you pray. Even a sigh can be a prayer.",
+      "older": "Paul says that when we do not know how we ought to pray, the Spirit himself prays for us, “with groans too deep for words.” Prayer does not depend on finding the right words. It rests on God, who wants to hear.",
+      "verse": {
+        "ref": "Romans 8:26",
+        "text": "In the same way, the Spirit helps us in our weakness. For we do not know how we ought to pray, but the Spirit Himself intercedes for us with groans too deep for words."
+      }
+    }
+  ],
+  "think": {
+    "younger": "What is one thing you could thank God for today, and one thing you could ask him for?",
+    "older": "Which of these is hardest for you: thanking, asking, saying sorry or waiting? Why do you think that is?"
+  },
+  "read": [
+    { "label": "Matthew 6", "href": "/study/bible/matthew/6" },
+    { "label": "Luke 11", "href": "/study/bible/luke/11" },
+    { "label": "Psalm 13", "href": "/study/bible/psalms/13" },
+    { "label": "Philippians 4", "href": "/study/bible/philippians/4" },
+    { "label": "Romans 8", "href": "/study/bible/romans/8" }
+  ],
+  "stops": ["jesus"],
+  "cards": [],
+  "care": "Some people have prayed for something, like someone they love getting better, and it did not happen. The Bible does not say that happens because of too little faith, and it is not because you prayed wrongly. If this is on your heart, talk with a parent or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "The family catechism: what is prayer?", "href": "/family/catechism#q53" },
+    { "label": "What does the Bible say about anxiety?", "href": "/answers/what-does-the-bible-say-about-anxiety" },
+    { "label": "Is it okay to be angry at God?", "href": "/answers/is-it-okay-to-be-angry-at-god" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "talking", "verse": false}, {"id": "our-father", "verse": true}, {"id": "thanks", "verse": false}, {"id": "asking", "verse": false}, {"id": "sorry", "verse": true}, {"id": "waiting", "verse": true}, {"id": "spirit-helps", "verse": true}]},
+  "end": { "label": "Go to the stop: Jesus Comes", "href": "/study/explorer/jesus" }
+}

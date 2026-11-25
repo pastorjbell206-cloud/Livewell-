@@ -1,0 +1,33 @@
+{
+  "piece": "what-render-unto-caesar-actually-means",
+  "human_score": 9,
+  "voice_score": 8.5,
+  "verdict": "Second read agrees with the first: clean. Literal search finds no Forbidden Language, no em-dash, no exclamation point outside Matthew 4:10, no hedges, no connective filler, no title, years, book count or denomination, and the party section tests right and left with the same question. Two of the four findings survive, one with a different replacement. The other two were 'consider' items on sentences that are doing their work. Nothing new found on the second pass.",
+  "keep": [
+    {
+      "quote": "When that happens, a congregation can become the religious wing of a political identity its members already had, without anyone intending it.",
+      "tell": "The same point made twice in the same shape (repeated paragraph closer)",
+      "why": "This paragraph ends on 'without anyone intending it', and two paragraphs later the Amos paragraph says 'A congregation can drift into that arrangement without ever deciding to.' Heard twice in about 250 words, in the same 'a congregation can ... without ...' frame, it sounds like a refrain. The first reader cut the second one; I cut the tail of the first, because the Amos sentence is the bridge from Amaziah's shrine to a present-day congregation and gives 'I notice it faster' something to point at. The Margolis finding is untouched (ledger line 153); the dropped clause was the essay's own gloss, and it is still said once.",
+      "replacement": "When that happens, a congregation can become the religious wing of a political identity its members already had.",
+      "severity": "should"
+    },
+    {
+      "quote": "Dostoevsky aimed the story at Rome.",
+      "tell": "Ambiguous term (clarity, not an AI tell)",
+      "why": "Everywhere else in the essay 'Rome' is the empire: the tax, the soldiers, the coin, and ten lines later 'Then Rome added an inscription of its own.' Here alone it means the Roman Catholic Church, and a reader stumbles. The ledger (line 152) rests this sentence on Garnett's 'the Roman Church', so the fix adds no fact.",
+      "replacement": "Dostoevsky aimed the story at the Roman church.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"That is where [the church before Constantine](/writing/the-early-church-under-rome) drew the line again and again: at worship.\" Dropped. One colon at the hinge of the section, landing the word the next three paragraphs depend on. It picks up the plain heading on purpose, and the proposed rewrite loses 'again and again', which is the historical claim.",
+    "\"It reads no more comfortably in any church that has decided it could do more good with the kingdoms than without them.\" Dropped. Slightly literary, but a person would say it, and the replacement ('just as hard to read') can be heard as 'hard to follow'. Not worth the edit.",
+    "First reader's replacement for the repeated-closer finding (deleting 'A congregation can drift into that arrangement without ever deciding to.') Not used: the finding is right, but that sentence carries the turn from Bethel to us. The duplicate clause is cut from the Margolis paragraph instead."
+  ],
+  "added": [],
+  "for_james": [
+    "The only personal sentence is 'I notice it faster in churches across the political aisle than in the church I serve.' If you have a real moment when you caught this in your own church or in yourself, one concrete sentence there would do more than any edit. None has been invented.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree in places, and this was judged by the voice document. The profile asks for 2-4 sentence paragraphs, 1,500-2,500 words, three Monday-morning questions with one practice, and a line built to be screenshotted; the voice document asks for developed paragraphs, the length the argument needs, and no clean application turn. The essay follows the voice document.",
+    "The closing lines ('Whose image is on you?' and 'Give God the things that are God's, which means all of you') are direct address in a preaching register. They fit the ending pattern in the brief and were left alone; whether that is how you'd end it on the page is your call."
+  ]
+}

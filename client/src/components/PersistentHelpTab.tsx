@@ -60,7 +60,7 @@ export default function PersistentHelpTab() {
           writingMode: "vertical-rl",
           textOrientation: "mixed",
           background: "var(--charcoal)",
-          color: "var(--bone)",
+          color: "var(--charcoal-fg)",
           textDecoration: "none",
           fontFamily: "var(--U)",
           fontSize: "12px",

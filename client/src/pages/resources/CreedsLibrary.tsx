@@ -2,92 +2,184 @@
  * Creeds, Confessions, and Classics (/resources/creeds). The full-text,
  * annotated companion to the survey at /theology/creeds. Driven by
  * client/public/creeds/documents-index.json (scripts/build-creeds-index.mjs).
+ *
+ * The page leads with the documents on one line of years, AD 100 to 2000,
+ * each a mark at the year the manifest gives it, coloured by its group.
+ * Touch a group (44px chips under the line) and its marks stand out, its
+ * span of years is named, and the cards below show that group alone. A card
+ * under the pointer or the keyboard lights its own mark. The cards are
+ * grouped as the manifest groups them, oldest first.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
+import { ArrowRight, BookOpenText, Droplets, History, Landmark, Newspaper, ScrollText, type LucideIcon } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { GeneratedCover } from "@/components/GeneratedCover";
-
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
+import { LoadFailed } from "@/components/LoadFailed";
+import PageHead from "@/components/art/PageHead";
+import SectionHead from "@/components/art/SectionHead";
+import { fetchJson } from "@/lib/fetch-json";
+import "../home/home.css";
+import "./libraries.css";
 
 interface Entry { slug: string; title: string; blurb: string; group: string; date: string }
+const isIndex = (x: unknown): x is { documents: Entry[] } => !!x && Array.isArray((x as { documents?: unknown }).documents);
 
-const GROUP_ORDER = [
-  "The Ecumenical Creeds",
-  "Reformation Confessions",
-  "Baptist and Free Church",
-  "The Early Classics",
+const GROUPS: { group: string; icon: LucideIcon; tone: string }[] = [
+  { group: "The Ecumenical Creeds", icon: Landmark, tone: "clay" },
+  { group: "Reformation Confessions", icon: BookOpenText, tone: "blue" },
+  { group: "Baptist and Free Church", icon: Droplets, tone: "olive" },
+  { group: "The Early Classics", icon: ScrollText, tone: "paper" },
+  { group: "Modern Confessions", icon: Newspaper, tone: "paper" },
 ];
+const groupOf = (g: string) => GROUPS.find((x) => x.group === g) ?? { group: g, icon: ScrollText, tone: "paper" };
+
+/** The first year the manifest's date names ("AD 325 / 381" is 325; "c. AD 200–700" is 200). */
+const yearOf = (date: string) => {
+  const m = date.match(/\d{2,4}/);
+  return m ? Number(m[0]) : NaN;
+};
+
+const FROM = 100;
+const TO = 2000;
+const TICKS = [100, 500, 1000, 1500, 2000];
+const at = (year: number) => ((Math.min(TO, Math.max(FROM, year)) - FROM) / (TO - FROM)) * 100;
 
 export default function CreedsLibrary() {
-  const [items, setItems] = useState<Entry[]>([]);
+  const [items, setItems] = useState<Entry[] | null>(null);
+  const [failed, setFailed] = useState(false);
+  const [nonce, setNonce] = useState(0);
+  const [cur, setCur] = useState<string | null>(null);
+  const [only, setOnly] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/creeds/documents-index.json")
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => d && setItems(d.documents || []))
-      .catch(() => {});
-  }, []);
+    let live = true;
+    fetchJson("/creeds/documents-index.json", isIndex)
+      .then((d) => { if (live) { setItems(d.documents); setFailed(false); } })
+      .catch(() => { if (live) setFailed(true); });
+    return () => { live = false; };
+  }, [nonce]);
 
+  const dated = useMemo(() => (items ?? []).filter((i) => Number.isFinite(yearOf(i.date))).sort((a, b) => yearOf(a.date) - yearOf(b.date)), [items]);
   const grouped = useMemo(() => {
-    const present = Array.from(new Set(items.map((i) => i.group)));
-    const order = GROUP_ORDER.filter((g) => present.includes(g)).concat(present.filter((g) => !GROUP_ORDER.includes(g)).sort());
-    return order.map((g) => [g, items.filter((i) => i.group === g)] as const);
+    const present = Array.from(new Set((items ?? []).map((i) => i.group)));
+    const order = GROUPS.map((g) => g.group).filter((g) => present.includes(g)).concat(present.filter((g) => !GROUPS.some((x) => x.group === g)).sort());
+    const byYear = (a: Entry, b: Entry) => (yearOf(a.date) || 9999) - (yearOf(b.date) || 9999);
+    return order.map((g) => [g, (items ?? []).filter((i) => i.group === g).sort(byYear)] as const);
   }, [items]);
+  const picked = dated.find((d) => d.slug === cur) ?? null;
+  const years = dated.filter((d) => d.group === only).map((d) => yearOf(d.date));
+  const span = only && years.length ? (years.length === 1 || years[0] === years[years.length - 1] ? `AD ${years[0]}` : `AD ${years[0]} to ${years[years.length - 1]}`) : null;
 
   return (
     <Layout>
       <SEOMeta
-        title="Creeds, Confessions, and Classics — Full Texts with Plain Notes"
+        title="The Creeds and Confessions, With Plain Notes"
         description="The Apostles' and Nicene Creeds, Chalcedon, the Reformation confessions, and the early classics: full public-domain texts with plain-language notes."
         url="https://www.livewellbyjamesbell.co/resources/creeds"
       />
+      {items === null && !failed && <span hidden data-lw-loading />}
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Resources · The church's memory</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5.2vw, 56px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "18px", maxWidth: "20ch" }}>
-            A church without memory repeats old errors
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch", marginBottom: "12px" }}>
-            Every generation thinks its questions are new. Most of them are not. The creeds and confessions are the church's answers, written in the middle of arguments that nearly tore her apart, paid for at councils and sometimes at stakes.
-          </p>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "64ch" }}>
-            These are the full texts, not summaries, with plain-language notes on what the loaded phrases meant to the people who wrote them. Read them slowly. They were written slowly.
-          </p>
-        </div>
-      </section>
+      <PageHead
+        door="History"
+        doorHref="/theology/history"
+        title="The creeds and confessions of the church"
+        line="The full texts, with plain notes on the words that mattered most."
+        plate="basilica"
+      />
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          {items.length === 0 ? (
-            <p style={{ fontFamily: "var(--B)", color: "var(--ink-muted)" }} role="status">Loading the library…</p>
+      <section className="home-sec home-sec--dark lib-sec" aria-labelledby="cr-line-title">
+        <div className="home-wrap">
+          <SectionHead dark icon={History} label="Nineteen centuries" title="When each was written." id="cr-line-title" />
+          {failed ? (
+            <LoadFailed what="The creeds" onRetry={() => setNonce((n) => n + 1)} backHref="/theology/history" backLabel="Back to church history" />
           ) : (
-            grouped.map(([g, entries]) => (
-              <div key={g} style={{ marginBottom: "var(--s-5)" }}>
-                <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "6px" }}>{g}</h2>
-                <div style={{ width: "36px", height: "2px", background: "var(--mustard)", marginBottom: "var(--s-3)" }} />
-                <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(280px, 100%), 1fr))", gap: "var(--s-3)" }}>
-                  {entries.map((e) => (
-                    <Link key={e.slug} href={`/resources/creeds/${e.slug}`} style={{ display: "flex", gap: "14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.08)", borderRadius: "var(--radius-sm)", overflow: "hidden", textDecoration: "none" }}>
-                      <div style={{ width: "78px", flexShrink: 0, alignSelf: "flex-start", aspectRatio: "3 / 4", overflow: "hidden" }}><GeneratedCover title={e.title} eyebrow="The Creeds" variant="dark" style={{ width: "100%", height: "100%" }} /></div>
-                      <div style={{ padding: "var(--s-3) var(--s-3) var(--s-3) 0" }}>
-                        <div style={{ fontFamily: "var(--U)", fontSize: "11px", fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--ink-muted)", marginBottom: "8px" }}>{e.date}</div>
-                        <div style={{ fontFamily: "var(--F)", fontSize: "20px", lineHeight: 1.25, color: "var(--ink)", marginBottom: "8px" }}>{e.title}</div>
-                        <div style={{ fontFamily: "var(--B)", fontSize: "13.5px", lineHeight: 1.55, color: "var(--ink-muted)" }}>{e.blurb}</div>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
+            <div className="cr-line">
+              <div className="cr-axis">
+                {TICKS.map((t) => (
+                  <span key={t} className="cr-tick" style={{ left: `${at(t)}%` }} aria-hidden="true">
+                    <i />
+                    <b>AD {t}</b>
+                  </span>
+                ))}
+                {dated.map((d, i) => {
+                  const g = groupOf(d.group);
+                  const dim = only !== null && d.group !== only;
+                  return (
+                    <span
+                      key={d.slug}
+                      aria-hidden="true"
+                      className={`cr-mark cr-tone--${g.tone}${dim ? " is-dim" : ""}${cur === d.slug ? " is-picked" : ""}`}
+                      style={{ left: `${at(yearOf(d.date))}%`, ["--lift" as string]: `${(i % 4) * 20}px` }}
+                    />
+                  );
+                })}
               </div>
-            ))
+              <div className="cr-groups" role="group" aria-label="Show one group">
+                {grouped.map(([g, entries]) => {
+                  const { tone } = groupOf(g);
+                  return (
+                    <button key={g} type="button" className="home-chip" aria-pressed={only === g} onClick={() => setOnly(only === g ? null : g)}>
+                      <i className={`cr-dot cr-tone--${tone}`} aria-hidden="true" />
+                      {g} <span className="cr-n">{entries.length}</span>
+                    </button>
+                  );
+                })}
+              </div>
+              <p className="cr-picked" aria-live="polite">
+                {picked ? (
+                  <>
+                    <b>{picked.date}</b>
+                    <span>{picked.title}</span>
+                  </>
+                ) : span ? (
+                  <>
+                    <b>{span}</b>
+                    <span>{only}</span>
+                  </>
+                ) : (
+                  <span>Touch a group to see where it falls.</span>
+                )}
+              </p>
+            </div>
           )}
-          <div style={{ marginTop: "var(--s-3)" }}>
-            <Link href="/theology/creeds" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The confessions surveyed, in the Theology section →</Link>
-          </div>
         </div>
       </section>
+
+      {items && (
+        <section className="home-sec lib-sec" aria-label="Every creed and confession">
+          <div className="home-wrap">
+            {grouped.filter(([g]) => only === null || g === only).map(([g, entries]) => {
+              const { icon: Icon, tone } = groupOf(g);
+              return (
+                <div key={g} className="lib-group">
+                  <h2 className="lib-group__h">
+                    <span className={`lib-group__icon cr-tone--${tone}`} aria-hidden="true"><Icon size={22} strokeWidth={1.75} /></span>
+                    {g}
+                  </h2>
+                  <ul className="cr-cards">
+                    {entries.map((e) => (
+                      <li key={e.slug}>
+                        <Link href={`/resources/creeds/${e.slug}`} className={`cr-card${cur === e.slug ? " is-picked" : ""}`} onFocus={() => setCur(e.slug)} onBlur={() => setCur(null)} onMouseEnter={() => setCur(e.slug)} onMouseLeave={() => setCur(null)}>
+                          <span className="cr-card__date">{e.date}</span>
+                          <span className="cr-card__t">{e.title}</span>
+                          <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+            <p className="lw-newline">
+              <ScrollText aria-hidden="true" size={22} strokeWidth={1.75} />
+              <span>
+                How they fit together: <Link href="/theology/creeds">the confessions, surveyed</Link>.
+              </span>
+            </p>
+          </div>
+        </section>
+      )}
     </Layout>
   );
 }

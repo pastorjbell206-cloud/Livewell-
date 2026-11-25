@@ -1,0 +1,179 @@
+{
+  "slug": "image-of-god",
+  "title": "Creation and the image of God",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "creation",
+  "line": {
+    "younger": "God made everything out of nothing, and he made people in his own image. Seven pictures of what that means for every person.",
+    "older": "Creation out of nothing, a world called very good, and people made in God's image: what that means, why it is a gift, and what Christians leave open. In seven pictures."
+  },
+  "poster": "A garden under light that comes from beyond the picture's edge, with a man and a woman standing in it.",
+  "frames": [
+    {
+      "id": "nothing",
+      "name": "Out of nothing",
+      "still": "Light comes from beyond the top of the picture, and under it the first lines of a world: a horizon, the sea, the land.",
+      "younger": "Before anything else, there was only God. Then God spoke, and the world began. He did not use anything that was already there: he made everything out of nothing.",
+      "older": "Genesis opens with God already there. Nothing comes before him, and nothing helps him. Christians confess that God made all things, seen and unseen, out of nothing, by the word of his power, as the family catechism puts it.",
+      "verse": {
+        "ref": "Genesis 1:1",
+        "text": "In the beginning God created the heavens and the earth."
+      }
+    },
+    {
+      "id": "good",
+      "name": "Very good",
+      "still": "The world is filled: trees and plants on the land, birds in the sky, fish in the sea and a sheep on the hill.",
+      "younger": "Day by day God filled his world: plants and trees, birds and fish, and every kind of animal. God looked at everything he had made, and it was very good.",
+      "older": "Day by day the empty world is given shape and then filled. Six times God calls what he made good; the seventh time, very good. The world is not a mistake or a prison. It is a gift.",
+      "verse": {
+        "ref": "Genesis 1:31",
+        "text": "And God looked upon all that He had made, and indeed, it was very good."
+      }
+    },
+    {
+      "id": "image",
+      "name": "In his image",
+      "still": "A man and a woman stand together in the garden, and the light from beyond the edge falls on them.",
+      "younger": "Last of all, God made people, a man and a woman. He made them in his own image. No other creature is like that.",
+      "older": "People come last, and they are different. In the ancient world a king could be called the image of a god. Genesis gives that dignity to every person, male and female, not only to kings.",
+      "verse": {
+        "ref": "Genesis 1:27",
+        "text": "So God created man in His own image; in the image of God He created him; male and female He created them."
+      }
+    },
+    {
+      "id": "know",
+      "name": "To know him",
+      "still": "The man and the woman stand in the light, and a still pool at their feet gives the light back.",
+      "younger": "Being made in God's image means you were made to know God and to show what he is like. God made you to love him and to be happy in him for ever.",
+      "older": "The family catechism says that being made in God's image means we were made to know him, to reflect his character, and to rule over and care for his world as those who answer to him. We were made for God himself.",
+      "verse": {
+        "ref": "Isaiah 43:7",
+        "text": "everyone called by My name and created for My glory, whom I have indeed formed and made."
+      }
+    },
+    {
+      "id": "care",
+      "name": "To care for his world",
+      "still": "The man plants a young tree and the woman carries a jar of water to it, with a sheep grazing beside them.",
+      "younger": "God also gave people work to do: to take care of his world and everything that lives in it, under him.",
+      "older": "Image and work arrive together. God blesses the man and the woman and gives them the earth to rule and to care for on his behalf: to tend it and keep it, not to spoil it for themselves.",
+      "verse": {
+        "ref": "Genesis 2:15",
+        "text": "Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it."
+      }
+    },
+    {
+      "id": "given",
+      "name": "Given, not earned",
+      "still": "A row of people stand side by side: a parent holding a baby, a child, a grown-up, an old man with a stick and a woman in a wheelchair, and the same light falls on each one.",
+      "younger": "Every person ever born carries God's image: babies and grandparents, people who are strong and people who are ill. It is God's gift, so nobody can earn it and nobody can lose it.",
+      "older": "The image is given, not earned. A newborn, a man with advanced dementia and the most gifted adult in the room have the same worth, because their worth was never a ranking of what they can do. Many who do not believe in God hold the same belief, and live it well.",
+      "verse": {
+        "ref": "Psalm 8:4-5",
+        "text": "what is man that You are mindful of him, or the son of man that You care for him? You made him a little lower than the angels; You crowned him with glory and honor."
+      }
+    },
+    {
+      "id": "open",
+      "name": "What Christians leave open",
+      "still": "An open book lies on the grass under a night sky full of stars.",
+      "younger": "All Christians agree that God made everything. They read the days of Genesis 1 in different ways, and they do not all agree on how long ago it happened or how God did it. A parent or a leader can help you look into that.",
+      "older": "That God created, that he created from nothing, and that humanity bears his image are what all Christians confess. The age of the earth and the way God created are open questions, and faithful Christians who love the same Bible have landed in different places. This moving picture takes no side on the age of the earth or on evolution."
+    }
+  ],
+  "think": {
+    "younger": "Every person you meet today was made in God's image. How could that change the way you treat someone who is hard to like? Talk about it with a parent or a leader.",
+    "older": "If every person carries God's image, what would change in the way you treat the person you find hardest to like, and in the way you think about yourself?"
+  },
+  "read": [
+    {
+      "label": "Genesis 1",
+      "href": "/study/bible/genesis/1"
+    },
+    {
+      "label": "Genesis 2",
+      "href": "/study/bible/genesis/2"
+    },
+    {
+      "label": "Psalm 8",
+      "href": "/study/bible/psalms/8"
+    },
+    {
+      "label": "Colossians 1",
+      "href": "/study/bible/colossians/1"
+    }
+  ],
+  "stops": [
+    "creation"
+  ],
+  "cards": [
+    "image"
+  ],
+  "differ": {
+    "text": "All Christians confess that God made everything out of nothing, that it was very good, and that every person bears his image. They read the days of Genesis 1 in different ways, and they differ on the age of the earth and on how God made living things. This moving picture takes no side on the age of the earth or on evolution. The main readings are set out in",
+    "links": [
+      {
+        "label": "the Honest Answer on Genesis 1",
+        "href": "/answers/how-should-a-christian-read-genesis-1"
+      },
+      {
+        "label": "the Honest Answer on faith and science",
+        "href": "/answers/do-i-have-to-choose-between-faith-and-science"
+      }
+    ]
+  },
+  "deeper": [
+    {
+      "label": "What makes us human in the age of AI? (an Honest Answer)",
+      "href": "/answers/what-makes-us-human-in-the-age-of-ai"
+    },
+    {
+      "label": "What does it mean to be made in God's image? (the family catechism)",
+      "href": "/family/catechism#q7"
+    },
+    {
+      "label": "Did God make dinosaurs, and how does science fit with the Bible? (the family catechism)",
+      "href": "/family/catechism#q71"
+    }
+  ],
+  "share": {
+    "level": "younger",
+    "frames": [
+      {
+        "id": "nothing",
+        "verse": true
+      },
+      {
+        "id": "good",
+        "verse": true
+      },
+      {
+        "id": "image",
+        "verse": true
+      },
+      {
+        "id": "know",
+        "verse": false
+      },
+      {
+        "id": "care",
+        "verse": true
+      },
+      {
+        "id": "given",
+        "verse": false
+      },
+      {
+        "id": "open",
+        "verse": true
+      }
+    ]
+  },
+  "end": {
+    "label": "Go to the stop: Creation",
+    "href": "/study/explorer/creation"
+  }
+}

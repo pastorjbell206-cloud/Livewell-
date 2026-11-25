@@ -1,0 +1,28 @@
+{
+  "piece": "the-historical-jesus",
+  "human_score": 9,
+  "voice_score": 8,
+  "keep": [
+    {
+      "quote": "among Jewish, Christian and secular scholars who agree on little else",
+      "tell": "Stock flourish that overclaims",
+      "replacement": "among Jewish, Christian and secular scholars alike",
+      "severity": "should",
+      "why": "'Who agree on little else' is a ready-made phrase, and the paragraph before it lists a dozen things these scholars agree on. The ledger verifies only that the consensus holds among Jewish, Christian and secular scholars; the essay's point (not built by believers) survives without the flourish."
+    },
+    {
+      "quote": "He reshaped Jesus into the Christ he had in mind in the same conversation in which he confessed him.",
+      "tell": "Fails the read-aloud test at a paragraph landing (not an AI tell)",
+      "replacement": "In the same conversation in which he confessed him, he reshaped Jesus into the Christ he had in mind.",
+      "severity": "should",
+      "why": "'in mind in the same conversation in which' stacks three 'in' phrases where the paragraph should land. Same words reordered; the sentence now ends on 'the Christ he had in mind', which is the point the next section picks up."
+    }
+  ],
+  "dropped": [
+    "\"The Jesus of the sources was crucified under a governor whose name the church still recites.\" (delete): dropped. The line is not only a recap. It sets the Jesus of the sources against 'the Jesus we already preferred' in the line before, and 'crucified' is what 'he did not stay dead' answers in the line after. Cut it and 'he' in the next line points back at 'the Jesus we already preferred'. It is one of the short plain closing lines the brief asks for.",
+    "\"That last question turns up more than you might expect.\" (consider): dropped. Plain spoken signposting, which is his habit; the proposed replacement refers to 'that awkward material' before the essay has called anything awkward, so it reads worse than the original."
+  ],
+  "added": [],
+  "literal_checks": "0 em-dashes; 1 exclamation point, inside Mark 8:33; 0 forbidden words or phrases; 0 hedges; no 'honest'/'fair' self-certification; no title, years, book count or denomination; criticism fires at both the fighting, voting Jesus and the gentle progressive Jesus; not a crisis piece.",
+  "for_james": "Second read found nothing the first reader missed. The essay has no first-person memory in it, which is fine for this subject; if you want it to be unmistakably yours, the one place a real sentence from you would fit is 'Christians confess that he did not stay dead, and I believe it.' Only you can supply that; nothing was invented. Note once: the saved Substack profile asks for 2-4 sentence paragraphs, three Monday-morning questions and a screenshot line; docs/VOICE-JAMES-BELL.md asks for developed paragraphs and one earned verdict, and the essay follows the latter. Not rewritten toward the profile."
+}

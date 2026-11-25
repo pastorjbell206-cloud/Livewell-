@@ -1,0 +1,2605 @@
+From 81072d56c83e7240f2ad0171a926ff90802121cd Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 17:44:26 +0000
+Subject: [PATCH 1/2] U25 Topics: the index and three pages
+
+/topics lists the hard questions people bring, in their own words, each
+opening the one best page the site already has (a topic page, a care page,
+an Honest Answer, a study guide, an essay). Three hand-built topic pages
+answer the questions no single page assembles: what post-Christian means and
+how to live in it, Christian nationalism and politics, and handing the faith
+to children in a secular age. Each holds the six parts of MASTER-PLAN 4.3:
+a short answer drawn from the lead essay or care page, the essay to read
+first (or its named stand-in until the pilot is public), Scripture read in
+its world with links into the Study Bible, a witness from church history, a
+devotion for the table, and what to use. The politics page asks the same
+question of both directions and carries the four public-square tools.
+
+Not the folded hubs: a hub was a category with thin pages under it; a topic
+page is one question answered once, only where no single page already does.
+No pathway is folded or redirected (question 6 is open); the topic pages
+link to them.
+
+- client/public/topics/<slug>.json (3) and index.json, built by
+  scripts/build-topics-index.mjs from scripts/data/topics-rows.json
+- scripts/validate-topics.mjs (section 4.4) and the both-directions check
+  for politics pages in validate-politics.mjs (scripts/lib/topics-politics.mjs);
+  both in the CI content gates with build-topics-index --check
+- pages/Topics.tsx, pages/Topic.tsx, lib/topics.ts, .tp- styles (tokens only)
+- route checklist 9.3: App.tsx, prerender LIBRARY_SOURCES and hub listing,
+  sitemap, site-routes, llms.txt
+- search: the topic pages join the catalog sources ("christian nationalism"
+  finds the topic first)
+- telemetry: topic_lead_open
+- /help/loneliness gains an FAQ on finding a church after a move or a hurt
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ .github/workflows/ci.yml                      |   2 +
+ client/public/llms.txt                        |  12 +
+ client/public/needs/loneliness.json           |   6 +-
+ .../topics/faith-politics-and-the-flag.json   | 133 ++++++++
+ client/public/topics/index.json               | 177 ++++++++++
+ .../topics/living-after-christendom.json      |  99 ++++++
+ .../raising-children-in-a-secular-age.json    | 116 +++++++
+ client/src/App.tsx                            |   4 +
+ client/src/index.css                          |  58 ++++
+ client/src/lib/catalog.ts                     |  19 +-
+ client/src/lib/telemetry.ts                   |  12 +
+ client/src/lib/topics.ts                      | 189 +++++++++++
+ client/src/pages/Topic.tsx                    | 298 +++++++++++++++++
+ client/src/pages/Topics.tsx                   |  99 ++++++
+ client/src/pages/topics.test.tsx              | 208 ++++++++++++
+ scripts/build-topics-index.mjs                |  36 +++
+ scripts/data/topics-rows.json                 |  89 ++++++
+ scripts/generate-sitemap.mjs                  |   4 +
+ scripts/lib/site-routes.mjs                   |   1 +
+ scripts/lib/topics-politics.mjs               |  59 ++++
+ scripts/lib/topics.mjs                        | 142 +++++++++
+ scripts/prerender-heads.mjs                   |  18 ++
+ scripts/validate-politics.mjs                 |   9 +
+ scripts/validate-topics.mjs                   | 301 ++++++++++++++++++
+ server/topics-gate.test.ts                    | 158 +++++++++
+ 25 files changed, 2246 insertions(+), 3 deletions(-)
+ create mode 100644 client/public/topics/faith-politics-and-the-flag.json
+ create mode 100644 client/public/topics/index.json
+ create mode 100644 client/public/topics/living-after-christendom.json
+ create mode 100644 client/public/topics/raising-children-in-a-secular-age.json
+ create mode 100644 client/src/lib/topics.ts
+ create mode 100644 client/src/pages/Topic.tsx
+ create mode 100644 client/src/pages/Topics.tsx
+ create mode 100644 client/src/pages/topics.test.tsx
+ create mode 100644 scripts/build-topics-index.mjs
+ create mode 100644 scripts/data/topics-rows.json
+ create mode 100644 scripts/lib/topics-politics.mjs
+ create mode 100644 scripts/lib/topics.mjs
+ create mode 100644 scripts/validate-topics.mjs
+ create mode 100644 server/topics-gate.test.ts
+
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index 5394def8..44bae3d3 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -53,6 +53,8 @@ jobs:
+           node scripts/build-family-index.mjs --check
+           node scripts/validate-grow-voice.mjs
+           node scripts/validate-verse-guides.mjs
++          node scripts/build-topics-index.mjs --check
++          node scripts/validate-topics.mjs
+           pnpm exec tsx scripts/validate-catalogue.mjs
+           pnpm exec tsx scripts/build-search-index.mjs --check
+           node scripts/validate-bible.mjs
+diff --git a/client/public/llms.txt b/client/public/llms.txt
+index db2c532b..75d93990 100644
+--- a/client/public/llms.txt
++++ b/client/public/llms.txt
+@@ -55,6 +55,18 @@ doors: Study, Essays, Books, Resources, and About.
+ - Honest answers to hard questions (short answers, with the essay or book that
+   goes further where one is on the site): https://www.livewellbyjamesbell.co/answers
+ 
++## Topics
++
++- Topics (the hard questions of faith in post-Christian America, in the words
++  people ask them; each question opens the one page on the site that answers
++  it best): https://www.livewellbyjamesbell.co/topics
++- What does it mean that America is post-Christian, and how do we live in it?
++  https://www.livewellbyjamesbell.co/topics/living-after-christendom
++- What is Christian nationalism, and how should a Christian think about
++  politics? https://www.livewellbyjamesbell.co/topics/faith-politics-and-the-flag
++- How do we hand the faith to our kids in a secular age?
++  https://www.livewellbyjamesbell.co/topics/raising-children-in-a-secular-age
++
+ ## Books
+ 
+ - Books (the titles on the shelf now, listed below): https://www.livewellbyjamesbell.co/books
+diff --git a/client/public/needs/loneliness.json b/client/public/needs/loneliness.json
+index 23c5c20f..c9d72e4b 100644
+--- a/client/public/needs/loneliness.json
++++ b/client/public/needs/loneliness.json
+@@ -234,6 +234,10 @@
+     {
+       "q": "Nobody checks on me. What should I do?",
+       "a": "You're not wrong to want someone to. David prayed \"no one cares for my soul\" (Psalm 142:4) and brought that very sentence to God. It may also help to know that people who don't check on others are often distracted rather than indifferent, or assume someone else has. That doesn't make it hurt less, but one honest message can change more than you'd expect: *I've been having a hard time and could really use a call.* Tell a pastor or group leader too. And if the silence has started to feel like proof that you don't matter, please reach someone tonight through the lines at the top of this page."
++    },
++    {
++      "q": "How do I find a church after a move, or after a church hurt me?",
++      "a": "Slowly, and more than once. After a move, pick two or three churches near enough to keep and give each a few Sundays. Ask the first week about the smaller room inside the big one, a class or a small group, since that's usually where people learn your name. After a church has hurt you, it's wise to go slower still and to tell one pastor what happened. Notice how its leaders handle questions and how they talk about people who've left. If a church leader abused you, that should be reported to the authorities, and [The church hurt me](/help/church-hurt) can help with what comes next."
+     }
+   ],
+   "related": [
+@@ -279,6 +283,6 @@
+   ],
+   "reviewed": {
+     "on": "2026-09-29",
+-    "notes": "Second-pass editorial review, full read from the top; validator clean (node scripts/validate-needs.mjs loneliness). Truth: Robert Putnam's Bowling Alone (2000; Harvard political scientist; more people bowling but fewer in leagues; the decline of clubs, fraternal lodges, unions, the PTA, card playing, entertaining at home, and religious participation) confirmed against Britannica and summaries of the book, stated without figures; Augustine's restless heart (Confessions 1.1) and C. S. Lewis's lovers face to face, friends side by side (The Four Loves, the Friendship chapter) confirmed and kept as paraphrase; the Hebrew behind families in Psalm 68:6 is bayit, house (baytah), confirmed; SAMHSA's 988 FAQ lists loneliness among the reasons people reach out and SAMHSA funds 988, confirmed; #BeThe1To and NIMH both state that asking about suicide does not increase suicidal thoughts; the Hotline's page advising against couples counseling with an abusive partner confirmed. These web sources were read through search excerpts because direct fetches were blocked here; re-open each before release. Scripture settings checked with scripts/bsb.mjs --verses: Genesis 2:18 as the first not good, before Genesis 3; Psalm 142's cave now cites both caves of David's flight from Saul (1 Samuel 22:1; 24:3), with Psalm 109:31 for the right hand; Gethsemane with Matthew 26:56 and Hebrews 4:15; 2 Timothy read as the letter presenting itself as Paul's last (1:16-17; 4:6, 13, 21); Psalm 68 as a processional (68:24-25) with Mark 10:30. Changes: the answer's signpost sentence replaced with one that carries the page's claim (much of the difficulty is not the reader's doing); the Hotline line in What's going on now says what the Hotline does (safety planning) instead of a cliché; the church FAQ now calls the Sunday hour built for worship rather than conversation (fair to pastors) and cites Ephesians 2:19 for household; the first FAQ rewritten to remove a four-sentence It... anaphora and to cite 2 Timothy 4:21; the repeated plainly trimmed; small overpromises softened (many, not all, will be glad someone asked; a pastor often, not usually, knows good counselors; the insurer directory made conditional on having insurance; church funds that some, not all, use for counseling); ask directly in the helper section; the reporting-law line now names children in the home. Kit: every label checked against its target; the plan label matches plans-index.json; the slow-drift essay's label shortened to an honest description, dropping the comparison with affairs in the essay's own title, which the page cannot verify. Care: no method or means; 988 and 911 in the answer, happening, signs, helping, and FAQ; safety before any joint counseling; do not raise it with the person feared; a teenager told to tell a teacher or school counselor. No statistics, no quotations but Scripture, no first-person events for James; three slots left for him. Read as the midnight reader on a phone, the skeptic, a pastor, and a licensed counselor. 2026-10-19, editor: the kit's tool is now the Connection Planner (/tools/connection-planner), in place of the Rule of Life Builder; it is built on this page's counsel of small, repeated steps toward the same people, carries this page's help lines (suicide and abuse) at its foot, and week 6 of the eight-week plan now links to it."
++    "notes": "Second-pass editorial review, full read from the top; validator clean (node scripts/validate-needs.mjs loneliness). Truth: Robert Putnam's Bowling Alone (2000; Harvard political scientist; more people bowling but fewer in leagues; the decline of clubs, fraternal lodges, unions, the PTA, card playing, entertaining at home, and religious participation) confirmed against Britannica and summaries of the book, stated without figures; Augustine's restless heart (Confessions 1.1) and C. S. Lewis's lovers face to face, friends side by side (The Four Loves, the Friendship chapter) confirmed and kept as paraphrase; the Hebrew behind families in Psalm 68:6 is bayit, house (baytah), confirmed; SAMHSA's 988 FAQ lists loneliness among the reasons people reach out and SAMHSA funds 988, confirmed; #BeThe1To and NIMH both state that asking about suicide does not increase suicidal thoughts; the Hotline's page advising against couples counseling with an abusive partner confirmed. These web sources were read through search excerpts because direct fetches were blocked here; re-open each before release. Scripture settings checked with scripts/bsb.mjs --verses: Genesis 2:18 as the first not good, before Genesis 3; Psalm 142's cave now cites both caves of David's flight from Saul (1 Samuel 22:1; 24:3), with Psalm 109:31 for the right hand; Gethsemane with Matthew 26:56 and Hebrews 4:15; 2 Timothy read as the letter presenting itself as Paul's last (1:16-17; 4:6, 13, 21); Psalm 68 as a processional (68:24-25) with Mark 10:30. Changes: the answer's signpost sentence replaced with one that carries the page's claim (much of the difficulty is not the reader's doing); the Hotline line in What's going on now says what the Hotline does (safety planning) instead of a cliché; the church FAQ now calls the Sunday hour built for worship rather than conversation (fair to pastors) and cites Ephesians 2:19 for household; the first FAQ rewritten to remove a four-sentence It... anaphora and to cite 2 Timothy 4:21; the repeated plainly trimmed; small overpromises softened (many, not all, will be glad someone asked; a pastor often, not usually, knows good counselors; the insurer directory made conditional on having insurance; church funds that some, not all, use for counseling); ask directly in the helper section; the reporting-law line now names children in the home. Kit: every label checked against its target; the plan label matches plans-index.json; the slow-drift essay's label shortened to an honest description, dropping the comparison with affairs in the essay's own title, which the page cannot verify. Care: no method or means; 988 and 911 in the answer, happening, signs, helping, and FAQ; safety before any joint counseling; do not raise it with the person feared; a teenager told to tell a teacher or school counselor. No statistics, no quotations but Scripture, no first-person events for James; three slots left for him. Read as the midnight reader on a phone, the skeptic, a pastor, and a licensed counselor. 2026-10-19, editor: the kit's tool is now the Connection Planner (/tools/connection-planner), in place of the Rule of Life Builder; it is built on this page's counsel of small, repeated steps toward the same people, carries this page's help lines (suicide and abuse) at its foot, and week 6 of the eight-week plan now links to it. 2026-10-27, U25 (topics): added the FAQ on finding a church after a move or after a church hurt you, since the topics index row \"I feel alone, even at church\" opens this page; abuse by a church leader is to be reported to the authorities, with the church hurt page for what comes next; no statistic, no quotation, no first person; not yet read by a second reviewer."
+   }
+ }
+diff --git a/client/public/topics/faith-politics-and-the-flag.json b/client/public/topics/faith-politics-and-the-flag.json
+new file mode 100644
+index 00000000..34908a6a
+--- /dev/null
++++ b/client/public/topics/faith-politics-and-the-flag.json
+@@ -0,0 +1,133 @@
++{
++  "slug": "faith-politics-and-the-flag",
++  "title": "What is Christian nationalism, and how should a Christian think about politics?",
++  "description": "What Christian nationalism is and is not, how it differs from the love of country Scripture assumes, and how a Christian can think about politics without fusing faith and nation.",
++  "askedAs": [
++    "christian nationalism",
++    "what is christian nationalism",
++    "is america a christian nation",
++    "faith and politics",
++    "christianity and politics",
++    "how should a christian think about politics",
++    "patriotism and faith",
++    "church and state",
++    "civil religion",
++    "a flag in church"
++  ],
++  "short": [
++    "Love of country isn't the problem. Scripture assumes it. Jeremiah told the exiles to seek the welfare of Babylon and pray for it, and Jesus wept over Jerusalem while He told the city the truth about itself. Christian nationalism is something else: a fusion of Christian faith and national belonging, held more as identity than as doctrine. It holds that the nation is Christian in a covenant sense, that its real people are Christians, that its laws and symbols should secure that status, and that its decline is a spiritual fall to be reversed by taking power back.",
++    "The test is where a person's love of country sits. Can it hear the nation criticized, by Scripture or by its own history, without treating that as an attack on God? Can a believer feel a deeper kinship with a Christian in Nigeria than with a neighbor who shares the flag but not the faith? Israel is the one nation Scripture calls chosen, and Amos told it that the covenant made it more accountable, not less.",
++    "The temptation to fuse a political cause with the kingdom of God belongs to no single party. On the right it fuses faith with the nation; on the left it can make a platform the measure of faithfulness just as easily. A Christian can vote, sing the anthem, and pray for whoever holds office, and still belong first to a people no president will ever govern."
++  ],
++  "essay": {
++    "href": "/writing/what-christian-nationalism-is-and-is-not",
++    "label": "What Christian Nationalism Is, and What It Is Not",
++    "line": "Christian nationalism is a fusion of Christian faith and national belonging, and it is a different thing from the love of country that Scripture assumes."
++  },
++  "essayStandIn": {
++    "href": "/writing/how-christian-nationalism-rewrites",
++    "label": "How Christian Nationalism Rewrites Doctrine",
++    "line": "The most dangerous heresies are not the ones that contradict the faith openly. They are the ones that rearrange it subtly."
++  },
++  "alsoEssays": [
++    {
++      "href": "/writing/was-america-founded-as-a-christian-nation",
++      "label": "Was America Founded as a Christian Nation?",
++      "line": "A deeply Protestant people built a national government that declined to call itself Christian, and some of the Christians most determined to keep it that way were Baptists."
++    },
++    {
++      "href": "/writing/when-the-church-married-empire",
++      "label": "When the Church Married Empire",
++      "line": "Why the church's alliance with empire began long before the modern culture wars."
++    }
++  ],
++  "bothWays": {
++    "right": {
++      "line": "When the cross gets conscripted into the flag",
++      "essay": { "href": "/writing/the-conservative-blind-spot", "label": "The Conservative Blind Spot" },
++      "path": { "href": "/pathways/christian-nationalism", "label": "Faith and the Flag" }
++    },
++    "left": {
++      "line": "When the gospel gets recruited to a cause",
++      "essay": { "href": "/writing/the-progressive-blind-spot", "label": "The Progressive Blind Spot" },
++      "path": { "href": "/pathways/progressive-captivity", "label": "Faith and the Cause" }
++    }
++  },
++  "scripture": [
++    {
++      "ref": "Luke 19:41-42",
++      "line": "Jesus wept over the city of His own people and still told it the truth about itself."
++    },
++    {
++      "ref": "Amos 3:2",
++      "line": "Israel's covenant made it more accountable to God, not less."
++    },
++    {
++      "ref": "2 Chronicles 7:14",
++      "line": "Spoken to Solomon and to Israel when the temple was dedicated. The wicked ways it names belong to the people doing the praying.",
++      "context": { "href": "/resources/context/2-chronicles-7-14-in-context", "label": "Is 2 Chronicles 7:14 a Promise to America?" }
++    },
++    {
++      "ref": "Romans 13:1",
++      "line": "Paul told a small church in Nero's Rome to submit to rulers. It never meant obeying every order.",
++      "context": { "href": "/resources/context/romans-13-1-in-context", "label": "Does Romans 13 Mean Christians Must Obey Every Government?" }
++    },
++    {
++      "ref": "John 18:36",
++      "line": "Before Pilate, Jesus said His kingdom is not of this world, or His servants would be fighting.",
++      "context": { "href": "/resources/context/the-kingdom-is-not-a-platform", "label": "Does the Kingdom of God Belong to a Political Party?" }
++    }
++  ],
++  "witness": {
++    "name": "Barmen, 1934",
++    "line": "When most German Protestants welcomed Hitler and a movement set out to merge church and regime, a minority met at Barmen and confessed that no other power or figure stands beside Christ as God's revelation. It defended the church's freedom, and it said nothing directly about the persecution of the Jews.",
++    "href": "/theology/history/the-global-church",
++    "label": "The Modern Church and the Global Shift"
++  },
++  "table": {
++    "devotion": "the-image-of-god",
++    "label": "Everyone You Meet",
++    "line": "Every person you meet carries the image of God, so every person matters, whoever they voted for."
++  },
++  "use": {
++    "study": {
++      "href": "/studyguides/christian-nationalism",
++      "label": "Christian Nationalism: An 8-Week Study",
++      "line": "For small groups, classes, and anyone tired of a phrase thrown like a rock in two directions who wants to know what it actually names."
++    },
++    "tools": [
++      {
++        "href": "/disruption/consistency",
++        "label": "The Consistency Check",
++        "line": "Do you hold your own side to the standard you hold the other side to? A mirror, not a weapon."
++      },
++      {
++        "href": "/tools/which-lens",
++        "label": "Which Lens Has You?",
++        "line": "Thirteen choices that name the lens doing your reading for you: the flag, the cause, the highlighter, the rearview, or the marketplace."
++      },
++      {
++        "href": "/nation/scorecard",
++        "label": "The Party Scorecard",
++        "line": "How close each party is to the Bible, theme by theme, and where your own side falls short."
++      },
++      {
++        "href": "/nation/policy",
++        "label": "If We Had a Biblical Government",
++        "line": "Jubilee, gleaning, and the warning against kings as policy, and why both parties would hate the result."
++      }
++    ]
++  },
++  "care": [
++    {
++      "href": "/help/politics",
++      "label": "Politics is tearing my family apart",
++      "line": "When the fight at the table is about the flag or the cause: an older allegiance than either."
++    }
++  ],
++  "politics": true,
++  "sensitive": false,
++  "folds": [],
++  "updated": "2026-10-27",
++  "reviewed": null
++}
+diff --git a/client/public/topics/index.json b/client/public/topics/index.json
+new file mode 100644
+index 00000000..ec1f4081
+--- /dev/null
++++ b/client/public/topics/index.json
+@@ -0,0 +1,177 @@
++{
++  "about": "Generated by scripts/build-topics-index.mjs from client/public/topics/<slug>.json and scripts/data/topics-rows.json. Do not edit by hand. pages: the topic pages (search, sitemap, prerendered heads). rows: the questions /topics lists, in order, each opening the one best page.",
++  "pages": [
++    {
++      "slug": "living-after-christendom",
++      "title": "What does it mean that America is post-Christian, and how do we live in it?",
++      "description": "What has ended in America is Christendom, not the faith. What that means, what the church is grieving, and how Jeremiah's letter to the exiles shows a way to live now.",
++      "blurb": "What has ended in America is Christendom, not the faith. What that means, what the church is grieving, and how Jeremiah's letter to the exiles shows a way to live now.",
++      "askedAs": [
++        "post-christian america",
++        "what does post-christian mean",
++        "is america post-christian",
++        "christendom",
++        "end of christian america",
++        "decline of christianity in america",
++        "secular age",
++        "christians as exiles",
++        "how to live as a christian in a secular culture",
++        "jeremiah 29 exile"
++      ],
++      "href": "/topics/living-after-christendom"
++    },
++    {
++      "slug": "faith-politics-and-the-flag",
++      "title": "What is Christian nationalism, and how should a Christian think about politics?",
++      "description": "What Christian nationalism is and is not, how it differs from the love of country Scripture assumes, and how a Christian can think about politics without fusing faith and nation.",
++      "blurb": "What Christian nationalism is and is not, how it differs from the love of country Scripture assumes, and how a Christian can think about politics without fusing faith and nation.",
++      "askedAs": [
++        "christian nationalism",
++        "what is christian nationalism",
++        "is america a christian nation",
++        "faith and politics",
++        "christianity and politics",
++        "how should a christian think about politics",
++        "patriotism and faith",
++        "church and state",
++        "civil religion",
++        "a flag in church"
++      ],
++      "href": "/topics/faith-politics-and-the-flag"
++    },
++    {
++      "slug": "raising-children-in-a-secular-age",
++      "title": "How do we hand the faith to our kids in a secular age?",
++      "description": "Faith at home when the culture no longer hands it on: start smaller than you think, welcome the questions, and start again when a night falls apart.",
++      "blurb": "Faith at home when the culture no longer hands it on: start smaller than you think, welcome the questions, and start again when a night falls apart.",
++      "askedAs": [
++        "raising children in the faith",
++        "how to raise christian kids",
++        "passing on the faith to children",
++        "raising kids in a secular culture",
++        "kids leaving the church",
++        "teaching kids about god",
++        "christian parenting",
++        "family worship",
++        "family devotions"
++      ],
++      "href": "/topics/raising-children-in-a-secular-age"
++    }
++  ],
++  "rows": [
++    {
++      "askedAs": "What does it mean that America is post-Christian, and how do we live in it?",
++      "href": "/topics/living-after-christendom",
++      "kind": "topic",
++      "line": "What has ended in America is Christendom, not the faith. What that means, what the church is grieving, and how Jeremiah's letter to the exiles shows a way to live now."
++    },
++    {
++      "askedAs": "What is Christian nationalism, and how should a Christian think about politics?",
++      "href": "/topics/faith-politics-and-the-flag",
++      "kind": "topic",
++      "line": "What Christian nationalism is and is not, how it differs from the love of country Scripture assumes, and how a Christian can think about politics without fusing faith and nation."
++    },
++    {
++      "askedAs": "How do we hand the faith to our kids in a secular age?",
++      "href": "/topics/raising-children-in-a-secular-age",
++      "kind": "topic",
++      "line": "Faith at home when the culture no longer hands it on: start smaller than you think, welcome the questions, and start again when a night falls apart."
++    },
++    {
++      "askedAs": "Is Christianity actually true?",
++      "href": "/answers",
++      "kind": "answer",
++      "line": "Short answers to the hardest questions a skeptic asks, each with the essay or book that goes further.",
++      "also": {
++        "href": "/tools/test-the-case",
++        "label": "Test the Case",
++        "line": "The case for the resurrection, one move at a time, with room to push back at every step."
++      }
++    },
++    {
++      "askedAs": "Can I trust the Bible, and how do I read it?",
++      "href": "/help/trust-the-bible",
++      "kind": "care",
++      "line": "How the Bible came to us, what the old copies show, and what trusting it does and doesn't ask of you."
++    },
++    {
++      "askedAs": "Can I trust the church after what it did?",
++      "href": "/help/church-hurt",
++      "kind": "care",
++      "line": "When the people who spoke for God did the wounding: naming it honestly, and what can be rebuilt."
++    },
++    {
++      "askedAs": "What are phones and AI doing to us and our kids?",
++      "href": "/studyguides/attention",
++      "kind": "study",
++      "line": "A Bible study on technology and distraction, for anyone who picks up the phone to check one thing and surfaces an hour later."
++    },
++    {
++      "askedAs": "Why are Sunday mornings still divided, and what did the church do about slavery?",
++      "href": "/writing/why-didnt-the-bible-ban-slavery",
++      "kind": "essay",
++      "line": "Why the Bible never bans slavery outright, and how the Christians who defended it passed over the texts that condemned what they were doing.",
++      "standIn": "/answers#why-didnt-the-bible-just-ban-slavery",
++      "standInKind": "answer"
++    },
++    {
++      "askedAs": "My neighbors believe something else. Is Christianity too narrow?",
++      "href": "/answers#is-jesus-the-only-way",
++      "kind": "answer",
++      "line": "Is Jesus really the only way to God? The objection taken at its strongest, and an answer."
++    },
++    {
++      "askedAs": "Why are there so many denominations?",
++      "href": "/theology/traditions",
++      "kind": "history",
++      "line": "A charitable guide to the major traditions, Catholic to Pentecostal: what each one treasures, and the deep core they share."
++    },
++    {
++      "askedAs": "I can't stop worrying",
++      "href": "/help/anxiety",
++      "kind": "care",
++      "line": "For the worry that won't switch off: what's happening, what Scripture says, and what to do tonight and this week."
++    },
++    {
++      "askedAs": "I'm afraid of where the country is going",
++      "href": "/help/fear-of-the-future",
++      "kind": "care",
++      "line": "For the dread that won't let go of tomorrow: what Scripture promises about the future, what it doesn't, and what to do this week."
++    },
++    {
++      "askedAs": "Why does God allow suffering?",
++      "href": "/help/suffering",
++      "kind": "care",
++      "line": "For the graveside and the hard argument alike: what the Bible says when God doesn't explain, and why the question is allowed."
++    },
++    {
++      "askedAs": "I'm grieving",
++      "href": "/help/grief",
++      "kind": "care",
++      "line": "For the fog of the first weeks and the long year after: grief without hurry, honest prayer, and a hope that lets you cry."
++    },
++    {
++      "askedAs": "I feel alone, even at church",
++      "href": "/help/loneliness",
++      "kind": "care",
++      "line": "Lonely in a crowd, a marriage, or a church? What Scripture says, why it's so hard now, and small steps that help this week."
++    },
++    {
++      "askedAs": "My marriage is in trouble",
++      "href": "/help/marriage",
++      "kind": "care",
++      "line": "For the marriage that's gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help."
++    },
++    {
++      "askedAs": "Money and work",
++      "href": "/help/money",
++      "kind": "care",
++      "line": "For debt, bills you can't cover, and fights about money: what Scripture says, what to do this week, and where to find real help.",
++      "also": {
++        "href": "/help/purpose",
++        "label": "What's the point of my life?",
++        "line": "For anyone asking who they are and what they're for."
++      }
++    }
++  ]
++}
+diff --git a/client/public/topics/living-after-christendom.json b/client/public/topics/living-after-christendom.json
+new file mode 100644
+index 00000000..2a613829
+--- /dev/null
++++ b/client/public/topics/living-after-christendom.json
+@@ -0,0 +1,99 @@
++{
++  "slug": "living-after-christendom",
++  "title": "What does it mean that America is post-Christian, and how do we live in it?",
++  "description": "What has ended in America is Christendom, not the faith. What that means, what the church is grieving, and how Jeremiah's letter to the exiles shows a way to live now.",
++  "askedAs": [
++    "post-christian america",
++    "what does post-christian mean",
++    "is america post-christian",
++    "christendom",
++    "end of christian america",
++    "decline of christianity in america",
++    "secular age",
++    "christians as exiles",
++    "how to live as a christian in a secular culture",
++    "jeremiah 29 exile"
++  ],
++  "short": [
++    "What has ended in America is Christendom: the arrangement in which the culture handed people the faith, or at least its vocabulary, along with their citizenship. The faith itself has not ended. Belief is still widespread here, and belonging is thinning. What has changed most is the condition of belief. Nobody is a Christian by default anymore. Faith is one live option among others, held beside neighbors who are neither foolish nor wicked and who chose otherwise.",
++    "The old arrangement had real goods in it, a shared moral vocabulary and churches that founded hospitals and colleges, and the people who grieve them aren't wrong to. But some of what is dying was the religion of being a decent American, dressed for church, and the church should not spend its strength trying to revive it.",
++    "Scripture has been here before. Jeremiah wrote to exiles in Babylon who were being promised a quick return, and told them to build houses, plant gardens, raise children, and seek the welfare of the city where God had sent them (Jeremiah 29:4-7). The church faces both temptations he refused: the promise of a quick restoration, one election away, and settling so comfortably into Babylon that it dissolves into the city. Lesslie Newbigin's answer was a congregation whose common life makes no sense unless the gospel is true."
++  ],
++  "essay": {
++    "href": "/writing/what-post-christian-means",
++    "label": "What \"Post-Christian\" Actually Means",
++    "line": "What has ended in America is Christendom, the old arrangement in which the culture handed people the faith, and Jeremiah's letter to the exiles shows the church how to live after it."
++  },
++  "essayStandIn": {
++    "href": "/writing/when-the-church-married-empire",
++    "label": "When the Church Married Empire",
++    "line": "Why the church's alliance with empire began long before the modern culture wars."
++  },
++  "section": {
++    "slug": "after-christendom",
++    "label": "After Christendom",
++    "line": "What it means to follow Christ now that Christian America is ending, and what the church learned the last time it lived without power."
++  },
++  "alsoEssays": [
++    {
++      "href": "/writing/the-early-church-under-rome",
++      "label": "When the Church Had Nothing to Lose",
++      "line": "For almost three centuries the church lived under an empire that could kill it whenever it chose, and how it lived and grew there is history a post-Christian America needs to learn."
++    }
++  ],
++  "scripture": [
++    {
++      "ref": "Jeremiah 29:4-7",
++      "line": "To exiles promised a quick return, God said to build houses, plant gardens, raise children, and seek the welfare of the city where He had sent them.",
++      "context": { "href": "/resources/context/exile-not-empire", "label": "What Does It Mean That Christians Are Exiles?" }
++    },
++    {
++      "ref": "Jeremiah 29:11",
++      "line": "A promise of a future and a hope, first sent to people most of whom would die in Babylon.",
++      "context": { "href": "/resources/context/jeremiah-29-11-in-context", "label": "What Does Jeremiah 29:11 Really Mean?" }
++    },
++    {
++      "ref": "Daniel 6:10",
++      "line": "Daniel kept praying toward Jerusalem three times a day, windows open, in the capital of an empire full of other gods."
++    },
++    {
++      "ref": "1 Peter 2:11-12",
++      "line": "Peter called scattered believers sojourners and exiles, and told them to live so that their neighbors would see their good deeds."
++    },
++    {
++      "ref": "Hebrews 13:14",
++      "line": "The church has no lasting city here. It seeks the city that is to come."
++    }
++  ],
++  "witness": {
++    "name": "The Letter to Diognetus",
++    "line": "An unnamed Christian of the second or third century tried to explain Christians to a curious pagan. They live in their own cities as sojourners, he wrote; every foreign land is a homeland to them, and every homeland a foreign land.",
++    "href": "/theology/history/apostolic-and-persecuted",
++    "label": "The Apostolic and Persecuted Church"
++  },
++  "table": {
++    "devotion": "being-sent",
++    "label": "You Are Not Just A Keeper",
++    "line": "Being sent mostly means living so the people around you, your school, your street, your team, get to see what Jesus is like."
++  },
++  "use": {
++    "study": {
++      "href": "/studyguides/after-christendom",
++      "label": "After Christendom: A Study on Post-Christian Faith",
++      "line": "For thoughtful Christians, pastors who feel the ground shifting, and small groups willing to look at the present honestly."
++    },
++    "tools": []
++  },
++  "care": [
++    {
++      "href": "/help/fear-of-the-future",
++      "label": "I'm scared about the future",
++      "line": "For the dread that won't let go of tomorrow: what Scripture promises about the future, what it doesn't, and what to do this week."
++    }
++  ],
++  "politics": false,
++  "sensitive": false,
++  "folds": [],
++  "updated": "2026-10-27",
++  "reviewed": null
++}
+diff --git a/client/public/topics/raising-children-in-a-secular-age.json b/client/public/topics/raising-children-in-a-secular-age.json
+new file mode 100644
+index 00000000..29789bd9
+--- /dev/null
++++ b/client/public/topics/raising-children-in-a-secular-age.json
+@@ -0,0 +1,116 @@
++{
++  "slug": "raising-children-in-a-secular-age",
++  "title": "How do we hand the faith to our kids in a secular age?",
++  "description": "Faith at home when the culture no longer hands it on: start smaller than you think, welcome the questions, and start again when a night falls apart.",
++  "askedAs": [
++    "raising children in the faith",
++    "how to raise christian kids",
++    "passing on the faith to children",
++    "raising kids in a secular culture",
++    "kids leaving the church",
++    "teaching kids about god",
++    "christian parenting",
++    "family worship",
++    "family devotions"
++  ],
++  "short": [
++    "Whatever faith our children keep as adults, they will hold it as a choice made among other live options, beside friends who chose otherwise. The culture around them isn't handing them the faith. It is forming them into something else, so formation can't be left to it, and it can't simply be left to the church down the hall either. Sunday school was a real gift, but a gift can become a substitute, and then faith at home starts to look like a small church service in the living room, forced because it's borrowed.",
++    "Scripture's picture is plainer: God's words spoken in the ordinary hours a family already has, at home and on the road, at bedtime and first thing in the morning (Deuteronomy 6:7). Start smaller than you think. Pick one meal or one bedtime, read a few verses aloud, ask one question you don't know the answer to, and pray, even one sentence. Little ones need a story and a song. Teenagers need you to hear their questions first and talk less. Scripture keeps picturing a child who asks (Exodus 12:26), so welcome the questions.",
++    "Being born of the Spirit, Jesus told Nicodemus, is like the wind, which blows where it wishes (John 3:8). We can't give our children faith. We can make sure they never have to guess what we loved, and when a night falls apart, we can start again at the next meal."
++  ],
++  "essay": null,
++  "essayStandIn": {
++    "href": "/help/family-devotions",
++    "label": "How do we do family devotions?",
++    "line": "Five minutes at the table or bedtime: a few verses, a question, a prayer. Faith at home, by age, without the guilt."
++  },
++  "alsoEssays": [],
++  "scripture": [
++    {
++      "ref": "Deuteronomy 6:5-7",
++      "line": "The teaching starts with the parent's own love for God, then reaches the children in the ordinary hours of a day."
++    },
++    {
++      "ref": "Exodus 12:26-27",
++      "line": "Scripture expects children to ask what the family's worship means, and it gives the parent a story to tell."
++    },
++    {
++      "ref": "Mark 10:13-16",
++      "line": "Jesus was indignant when His disciples rebuked the people bringing children to Him, and He made a child the picture of receiving the kingdom."
++    },
++    {
++      "ref": "Joshua 24:15",
++      "line": "Joshua told the story of what God had done before he set the choice before Israel. After his generation died, another rose up that did not know the Lord (Judges 2:10)."
++    },
++    {
++      "ref": "2 Timothy 1:5",
++      "line": "Timothy's faith lived first in his grandmother Lois and his mother Eunice."
++    }
++  ],
++  "witness": {
++    "name": "The catechumenate",
++    "line": "The early church grew in a culture that gave it nothing, and it made joining slow. A newcomer was taught for a season that commonly ran for years, learning the Scriptures and the way of life before baptism. Formation came before belonging.",
++    "href": "/theology/history/apostolic-and-persecuted",
++    "label": "The Apostolic and Persecuted Church"
++  },
++  "table": {
++    "devotion": "tonight",
++    "label": "Tonight at the table",
++    "line": "A passage, one idea to talk about, questions for the table, and a prayer, in about ten minutes. It follows the church year.",
++    "also": [
++      {
++        "href": "/family/catechism",
++        "label": "The family catechism",
++        "line": "Seventy-six questions and answers to learn together, with one for this week."
++      }
++    ]
++  },
++  "use": {
++    "plan": {
++      "href": "/plans/parenting",
++      "label": "Eight Weeks for the Worn-Out Parent",
++      "line": "Rest and help, the temper and the apology, the table and the bedside, the screens, and children you cannot control."
++    },
++    "study": {
++      "href": "/studyguides/raising-believers",
++      "label": "Raising Believers: A Bible Study for Christian Parents",
++      "line": "For parents, grandparents, and small groups of families who want their children to know God."
++    },
++    "tools": [
++      {
++        "href": "/tools/parent-teen-conversation",
++        "label": "The Parent and Teen Conversation",
++        "line": "A parent and a teenager each answer twelve short statements about home, then see where they see things differently."
++      },
++      {
++        "href": "/tools/parenting-guide",
++        "label": "Parenting Stage Guide",
++        "line": "What a child needs at each age, from toddlers to young adults, and how to talk about God."
++      }
++    ],
++    "paths": [
++      {
++        "href": "/pathways/parenting",
++        "label": "Raising Kids Who Keep the Faith",
++        "line": "Forming a child's heart, not just their behavior: two studies for parents."
++      }
++    ]
++  },
++  "care": [
++    {
++      "href": "/help/parenting",
++      "label": "Parenting is harder than anyone said",
++      "line": "For worn-out parents of little ones, of a teen who's gone quiet, or of a grown child who has left the faith."
++    },
++    {
++      "href": "/help/fatherless",
++      "label": "How do I be a dad when I never had one?",
++      "line": "For anyone raised without a father, or by one who hurt them, who is raising children now or is afraid to."
++    }
++  ],
++  "politics": false,
++  "sensitive": false,
++  "folds": [],
++  "updated": "2026-10-27",
++  "reviewed": null
++}
+diff --git a/client/src/App.tsx b/client/src/App.tsx
+index 17d8e66e..6d2bff49 100644
+--- a/client/src/App.tsx
++++ b/client/src/App.tsx
+@@ -166,6 +166,8 @@ const StudyBibleStory = lazy(() => import("./pages/StudyBibleStory"));
+ const StudyBibleDoctrines = lazy(() => import("./pages/StudyBibleDoctrines"));
+ const StudyBibleGuides = lazy(() => import("./pages/StudyBibleGuides"));
+ const Answers = lazy(() => import("./pages/Answers"));
++const Topics = lazy(() => import("./pages/Topics"));
++const Topic = lazy(() => import("./pages/Topic"));
+ const Assessments = lazy(() => import("./pages/Assessments"));
+ const FAQWhyArePeopleLeavingChurch = lazy(() => import("./pages/faq/WhyArePeopleLeavingChurch"));
+ const FAQWhatIsDeconstruction = lazy(() => import("./pages/faq/WhatIsDeconstruction"));
+@@ -626,6 +628,8 @@ function Router() {
+         <Route path="/church-history" component={ToChurchHistoryRedirect} />
+         <Route path="/historic-faith" component={ToStudyRedirect} />
+         <Route path="/answers" component={Answers} />
++        <Route path="/topics/:slug" component={Topic} />
++        <Route path="/topics" component={Topics} />
+         <Route path="/assessments" component={Assessments} />
+         <Route path="/church-hurt" component={ToHelpChurchHurtRedirect} />
+         <Route path="/honest-questions" component={ToAnswersRedirect} />
+diff --git a/client/src/index.css b/client/src/index.css
+index 56f1a10c..b324df98 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -555,6 +555,64 @@ img{display:block;max-width:100%}
+ .st-action:disabled:hover{background:var(--ink)}
+ .st-action--quiet:disabled:hover{background:transparent;border-color:var(--borderdk)}
+ 
++/* ─── TOPICS (.tp-) ──────────────────────────────────────────────────
++ * pages/Topics.tsx (/topics, one list of questions) and pages/Topic.tsx (one
++ * question, one assembled answer; MASTER-PLAN 4.3). One reading column on
++ * cream; hairlines between parts; mustard only on rules and link underlines.
++ * Tokens only. */
++.tp-index-page,.tp-page__body{background:var(--bone);padding:var(--s-3) 16px var(--s-7)}
++.tp-index-wrap{max-width:var(--w-content);margin:0 auto}
++.tp-index > li{flex-direction:column}
++.tp-index > li:first-child{border-top:0}
++.tp-index__q{font-size:clamp(1.3rem,1.15rem + .5vw,1.55rem)}
++.tp-also{align-self:flex-start;display:inline-flex;align-items:center;gap:.35em;min-height:44px;margin:-14px 0 14px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
++.tp-also:hover,.tp-also:focus-visible{text-decoration-color:currentColor}
++.tp-foot{font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted);margin:var(--s-4) 0 0}
++.tp-foot a,.tp-text a,.tp-companion a,.tp-ways__links a,.tp-witness__name a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
++.tp-status{font-family:var(--U);color:var(--ink-muted);text-align:center;padding:var(--s-6) 0;margin:0}
++.tp-col{max-width:var(--w-prose);margin:0 auto}
++.tp-missing{font-family:var(--F);font-size:clamp(30px,4vw,40px);font-weight:400;color:var(--ink);margin:var(--s-5) 0 12px}
++.tp-short{margin:0 0 var(--s-3)}
++.tp-short p{font-family:var(--B);font-size:clamp(17px,1.25vw,18.5px);line-height:1.75;color:var(--ink);margin:0 0 var(--s-2)}
++.tp-text{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0 0 var(--s-1)}
++.tp-note{font-family:var(--U);font-size:13px;line-height:1.6;color:var(--ink-muted);margin:var(--s-2) 0 0}
++.tp-section{padding:var(--s-4) 0 var(--s-3);border-top:1px solid var(--border);margin-top:var(--s-3)}
++.tp-section__title{font-family:var(--F);font-size:clamp(26px,3vw,32px);font-weight:500;line-height:1.15;color:var(--ink);margin:0 0 var(--s-2)}
++.tp-companion{color:var(--ink-muted);margin-bottom:var(--s-2)}
++.tp-lead{display:block;padding:var(--s-2) 0 var(--s-3);border-top:2px solid var(--mustard);text-decoration:none;color:inherit}
++.tp-lead .ed-kicker{margin:0 0 6px}
++.tp-lead__title{display:block;font-family:var(--F);font-size:clamp(1.5rem,1.25rem + .8vw,1.9rem);font-weight:500;line-height:1.2;color:var(--ink);text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
++.tp-lead:hover .tp-lead__title,.tp-lead:focus-visible .tp-lead__title{text-decoration-color:var(--mustard)}
++.tp-lead__line{display:block;font-family:var(--B);font-size:1rem;line-height:1.6;color:var(--ink-muted);margin:8px 0 0}
++.tp-lead__meta{display:block;font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:10px 0 0}
++.tp-ways{margin:var(--s-3) 0 0}
++.tp-ways__title{font-family:var(--F);font-size:clamp(1.3rem,1.1rem + .5vw,1.55rem);line-height:1.2;color:var(--ink);margin:0 0 var(--s-1)}
++.tp-ways__list{list-style:none;margin:0;padding:0}
++.tp-ways__list li{padding:14px 0;border-top:1px solid var(--border)}
++.tp-ways__line{font-family:var(--F);font-size:clamp(1.15rem,1rem + .4vw,1.3rem);font-weight:500;line-height:1.3;color:var(--ink);margin:0 0 6px}
++.tp-ways__links{font-family:var(--B);font-size:16px;line-height:1.7;color:var(--ink);margin:0}
++.tp-verses{list-style:none;margin:0;padding:0}
++.tp-verses li{padding:var(--s-2) 0;border-top:1px solid var(--border)}
++.tp-verses li:first-child{border-top:0;padding-top:0}
++.tp-verses__ref{font-family:var(--U);font-size:15px;font-weight:600;margin:0 0 4px}
++.tp-more{display:inline-flex;align-items:center;gap:.35em;min-height:44px;font-family:var(--U);font-size:14px;font-weight:600;color:var(--mustard-text);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;transition:text-decoration-color .2s var(--motion-ease)}
++.tp-more:hover,.tp-more:focus-visible{text-decoration-color:currentColor}
++.tp-witness__name{font-family:var(--F);font-size:clamp(1.3rem,1.1rem + .5vw,1.55rem);font-weight:500;line-height:1.2;color:var(--ink);margin:0 0 8px}
++.tp-actions{display:flex;flex-wrap:wrap;gap:12px;margin:var(--s-2) 0 var(--s-2)}
++.tp-table-also{color:var(--ink-muted);font-size:16px}
++.tp-back{padding-top:var(--s-3);border-top:1px solid var(--border);margin-top:var(--s-3)}
++@media print{
++  .tp-page .pg-head{padding:0}
++  .tp-page .pg-head__inner{max-width:100%;padding-bottom:6pt}
++  .tp-page .pg-head__title{font-size:20pt}
++  .tp-page__body{padding:0 !important}
++  .tp-col{max-width:100%}
++  .tp-section{padding:6pt 0 2pt;margin-top:4pt;break-inside:avoid}
++  .tp-section__title{font-size:13pt;margin-bottom:3pt}
++  .tp-short p,.tp-text{font-size:10pt;line-height:1.45;margin-bottom:4pt}
++  .tp-actions,.tp-note,.tp-back{display:none !important}
++}
++
+ /* ─── STUDY PRIMITIVES (.st-) ────────────────────────────────────────
+  * components/study/: Sheet and Stepper. Built just in time, each by the
+  * first unit that needs it (MASTER-PLAN 8.2). Tokens only; the reduced-motion
+diff --git a/client/src/lib/catalog.ts b/client/src/lib/catalog.ts
+index a46bdc17..2d8992ac 100644
+--- a/client/src/lib/catalog.ts
++++ b/client/src/lib/catalog.ts
+@@ -102,6 +102,17 @@ export const LIBRARY_SOURCES: LibrarySource[] = [
+     buildHref: (slug) => `/plans/${slug}`,
+     indexHref: "/plans",
+   },
++  {
++    // The topic pages (/topics/:slug), found by the question and the words
++    // people search for it (each page's askedAs), so "christian nationalism"
++    // opens the topic (scripts/build-topics-index.mjs).
++    url: "/topics/index.json",
++    listKey: "pages",
++    label: "Topics",
++    type: "Topic",
++    buildHref: (slug) => `/topics/${slug}`,
++    indexHref: "/topics",
++  },
+ ];
+ 
+ /** First value that is a non-empty string, else "". */
+@@ -123,6 +134,10 @@ export interface CatalogItem {
+   source: string;
+ }
+ 
++type ManifestRow = { slug: string; title: string; blurb?: unknown; excerpt?: unknown; summary?: unknown; subtitle?: unknown };
++const isManifestRow = (i: unknown): i is ManifestRow =>
++  !!i && typeof (i as ManifestRow).slug === "string" && typeof (i as ManifestRow).title === "string";
++
+ async function fetchLibrary(source: LibrarySource): Promise<CatalogItem[]> {
+   try {
+     const res = await fetch(source.url);
+@@ -131,8 +146,8 @@ async function fetchLibrary(source: LibrarySource): Promise<CatalogItem[]> {
+     const list = data?.[source.listKey];
+     if (!Array.isArray(list)) return [];
+     return list
+-      .filter((i: any) => i && typeof i.slug === "string" && typeof i.title === "string")
+-      .map((i: any) => ({
++      .filter(isManifestRow)
++      .map((i) => ({
+         title: i.title,
+         blurb: pickString(i.blurb, i.excerpt, i.summary, i.subtitle),
+         href: source.buildHref(i.slug),
+diff --git a/client/src/lib/telemetry.ts b/client/src/lib/telemetry.ts
+index 36b81ed2..bb77cd0c 100644
+--- a/client/src/lib/telemetry.ts
++++ b/client/src/lib/telemetry.ts
+@@ -25,6 +25,8 @@
+  *   - "group_guide_view"           — a discussion guide was opened.
+  *   - "family_devotion_complete"   — a family marked a devotion done
+  *                                    ("We did this tonight").
++ *   - "topic_lead_open"            — a reader opened a topic page's lead
++ *                                    (its essay, or the stand-in it shows).
+  */
+ import { track as vercelTrack } from "@vercel/analytics";
+ 
+@@ -94,6 +96,16 @@ export function trackFamilyDevotionComplete(id: string, mode: "table" | "page"):
+   track("family_devotion_complete", { id, mode });
+ }
+ 
++/**
++ * A reader opened the lead on a topic page (/topics/:slug): the essay to read
++ * first, or the stand-in the page shows until that essay is public. The topic
++ * slug, the lead's path, and whether it was the stand-in; nothing about the
++ * reader. Event: "topic_lead_open".
++ */
++export function trackTopicLeadOpen(topic: string, lead: string, standIn: boolean): void {
++  track("topic_lead_open", { topic, lead, stand_in: standIn });
++}
++
+ /** A returning reader was seen (a count only — no identity, no PII). */
+ export function trackReturnReader(): void {
+   track("return_reader");
+diff --git a/client/src/lib/topics.ts b/client/src/lib/topics.ts
+new file mode 100644
+index 00000000..a8688f17
+--- /dev/null
++++ b/client/src/lib/topics.ts
+@@ -0,0 +1,189 @@
++/**
++ * Topics (MASTER-PLAN 4): the hard questions of life in post-Christian
++ * America, each answered once.
++ *
++ * /topics is one list of questions in the words people type; each row opens
++ * the one best page the site has (a topic page, a care page, an Honest
++ * Answer, a study guide). A topic page (/topics/:slug) is one question with
++ * one assembled answer across formats: a short answer, the essay to read
++ * first, Scripture read in its world, a witness from church history, a
++ * devotion for the family table, and what to use.
++ *
++ * Data: client/public/topics/<slug>.json (hand-built, at most six) and
++ * client/public/topics/index.json (scripts/build-topics-index.mjs), held by
++ * scripts/validate-topics.mjs. An essay that is not public yet is never shown:
++ * the page shows its named stand-in until the shelf (lib/shelf) says it is.
++ */
++import type { CrisisTopic } from "@/components/CrisisBlock";
++import { isPublicEssayHref, overrideMeta } from "@/lib/shelf";
++
++export const TOPICS_INDEX_URL = "/topics/index.json";
++export const topicFileUrl = (slug: string) => `/topics/${encodeURIComponent(slug)}.json`;
++export const topicHref = (slug: string) => `/topics/${slug}`;
++
++export interface TopicLink {
++  href: string;
++  label: string;
++  line?: string;
++}
++
++export interface TopicPassage {
++  ref: string;
++  line: string;
++  /** The context guide that reads this passage in its world. */
++  context?: TopicLink;
++}
++
++export interface TopicSide {
++  line: string;
++  essay: TopicLink;
++  path: TopicLink;
++}
++
++export interface TopicCare extends TopicLink {
++  /** Shown as help lines only on a page flagged sensitive. */
++  crisis?: CrisisTopic[];
++}
++
++export interface Topic {
++  slug: string;
++  /** The question, as asked: the page's H1. */
++  title: string;
++  description: string;
++  askedAs: string[];
++  /** The short answer, 150 to 250 words, in paragraphs. */
++  short: string[];
++  /** The essay to read first, shown once it is public. */
++  essay: TopicLink | null;
++  /** What the page shows until then (or instead, when there is no essay). */
++  essayStandIn?: TopicLink;
++  alsoEssays: TopicLink[];
++  /** The shelf section this page is the companion to. */
++  section?: { slug: string; label: string; line: string };
++  /** On a politics page: the same test, asked of both directions. */
++  bothWays?: { right: TopicSide; left: TopicSide };
++  scripture: TopicPassage[];
++  witness: { name: string; line: string; href: string; label: string };
++  /** A family devotion id, or "tonight" for whatever tonight's devotion is. */
++  table: { devotion: string; label: string; line: string; also?: TopicLink[] };
++  use: { plan?: TopicLink; study?: TopicLink; tools: TopicLink[]; paths?: TopicLink[] };
++  care?: TopicCare[];
++  politics: boolean;
++  sensitive: boolean;
++}
++
++export interface TopicsIndexRow {
++  askedAs: string;
++  href: string;
++  kind: string;
++  line: string;
++  /** What the row opens while href (an essay) is not public. */
++  standIn?: string;
++  standInKind?: string;
++  /** A second door on the same row (Test the Case beside the Honest Answers). */
++  also?: TopicLink;
++}
++
++export interface TopicsIndex {
++  pages: { slug: string; title: string; description: string; askedAs: string[]; href: string }[];
++  rows: TopicsIndexRow[];
++}
++
++const isObject = (x: unknown): x is Record<string, unknown> => !!x && typeof x === "object" && !Array.isArray(x);
++const isText = (x: unknown): x is string => typeof x === "string" && x.trim().length > 0;
++const isLink = (x: unknown): x is TopicLink => isObject(x) && isText(x.href) && isText(x.label);
++
++export function isTopic(x: unknown): x is Topic {
++  if (!isObject(x)) return false;
++  return (
++    isText(x.slug) &&
++    isText(x.title) &&
++    Array.isArray(x.short) &&
++    x.short.every(isText) &&
++    (x.essay === null || isLink(x.essay)) &&
++    (x.essayStandIn === undefined || isLink(x.essayStandIn)) &&
++    Array.isArray(x.alsoEssays) &&
++    x.alsoEssays.every(isLink) &&
++    Array.isArray(x.scripture) &&
++    x.scripture.every((p) => isObject(p) && isText(p.ref) && isText(p.line)) &&
++    isObject(x.witness) &&
++    isText(x.witness.href) &&
++    isObject(x.table) &&
++    isText(x.table.devotion) &&
++    isObject(x.use) &&
++    Array.isArray(x.use.tools)
++  );
++}
++
++export function isTopicsIndex(x: unknown): x is TopicsIndex {
++  return (
++    isObject(x) &&
++    Array.isArray(x.pages) &&
++    Array.isArray(x.rows) &&
++    x.rows.every((r) => isObject(r) && isText(r.askedAs) && isText(r.href))
++  );
++}
++
++/** What kind of page an address opens (the same rule as scripts/lib/topics.mjs). */
++export function kindOf(href: string): string {
++  if (href.startsWith("/topics/")) return "topic";
++  if (href.startsWith("/help/") || href === "/help") return "care";
++  if (href.startsWith("/answers")) return "answer";
++  if (href.startsWith("/writing")) return "essay";
++  if (href.startsWith("/studyguides/")) return "study";
++  if (href.startsWith("/plans/")) return "plan";
++  if (href.startsWith("/theology/") || href.startsWith("/resources/creeds")) return "history";
++  if (href.startsWith("/tools/") || href.startsWith("/nation/") || href.startsWith("/disruption/")) return "tool";
++  if (href.startsWith("/pathways/")) return "path";
++  return "page";
++}
++
++/** The small label over a row: what the reader will land on. */
++export const KIND_LABEL: Record<string, string> = {
++  topic: "Topic",
++  care: "Find Help",
++  answer: "Honest answers",
++  essay: "Essay",
++  study: "Study guide",
++  plan: "Eight-week plan",
++  history: "Church history",
++  tool: "Tool",
++  path: "Guided path",
++  page: "",
++};
++
++export const kindLabel = (href: string) => KIND_LABEL[kindOf(href)] ?? "";
++
++/** Where a row goes now: its essay once public, else its stand-in. */
++export function rowTarget(row: TopicsIndexRow): string {
++  return row.standIn && !isPublicEssayHref(row.href) ? row.standIn : row.href;
++}
++
++/** The lead a topic page shows: its essay once public, else the stand-in. */
++export function leadOf(topic: Topic): { link: TopicLink; standIn: boolean } | null {
++  if (topic.essay && isPublicEssayHref(topic.essay.href)) return { link: withRewrite(topic.essay), standIn: false };
++  if (topic.essayStandIn) return { link: withRewrite(topic.essayStandIn), standIn: true };
++  return null;
++}
++
++/** Further essays, only the public ones. */
++export function publicEssays(links: TopicLink[]): TopicLink[] {
++  return links.filter((l) => isPublicEssayHref(l.href)).map(withRewrite);
++}
++
++/** The essay's slug, when the link is to an essay. */
++export function essaySlug(href: string): string | null {
++  const m = /^\/writing\/([^/?#]+)$/.exec(href);
++  return m ? decodeURIComponent(m[1]) : null;
++}
++
++/** A rewritten essay's own title and opening line win over the topic's copy of them. */
++function withRewrite(link: TopicLink): TopicLink {
++  const meta = overrideMeta(essaySlug(link.href));
++  return meta ? { ...link, label: meta.title || link.label, line: meta.excerpt || link.line } : link;
++}
++
++/** Minutes to read a rewritten essay's body (the essay page's own rule). */
++export function readingMinutes(body: string): number {
++  return Math.max(1, Math.round(body.split(/\s+/).filter(Boolean).length / 225));
++}
+diff --git a/client/src/pages/Topic.tsx b/client/src/pages/Topic.tsx
+new file mode 100644
+index 00000000..9c3db9b8
+--- /dev/null
++++ b/client/src/pages/Topic.tsx
+@@ -0,0 +1,298 @@
++/**
++ * One topic page (/topics/:slug): one question with one assembled answer
++ * across formats (MASTER-PLAN 4.3). Six parts, in order:
++ *
++ *   1. the question as H1, and a short answer drawn from the lead essay;
++ *   2. Read this first: the essay, or the stand-in shown until it is public,
++ *      with up to two more (on the politics page, the same test asked of both
++ *      directions);
++ *   3. what Scripture says, read in its world: each passage a link into the
++ *      Study Bible, with the context guide where there is one;
++ *   4. the church has been here before: one witness from church history;
++ *   5. at the table: the family devotion for this question;
++ *   6. use this: the plan, the study guide, the tools, the care pages.
++ *
++ * Not the folded subject hubs: a hub was a category with thin pages under it;
++ * a topic page is one question, answered once, and exists only where no
++ * single page on the site already answers it. Take it with you prints it.
++ *
++ * Verse references are links (VerseRef link mode): the page quotes no
++ * Scripture of its own, and the essays it leads to quote the ESV.
++ */
++import { useCallback, useEffect, useState, type ReactNode } from "react";
++import { Link, useParams } from "wouter";
++import { useQuery } from "@tanstack/react-query";
++import Layout from "@/components/Layout";
++import { SEOMeta } from "@/components/SEOMeta";
++import { PageHead } from "@/components/editorial/PageHead";
++import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
++import { CrisisBlock } from "@/components/CrisisBlock";
++import LoadFailed from "@/components/LoadFailed";
++import { TakeItWithYou } from "@/components/TakeItWithYou";
++import { RefText, VerseRef } from "@/components/VerseRef";
++import { fetchJson } from "@/lib/fetch-json";
++import { isEssayOverride, overrideMeta, overrideUrl, sectionHref, sectionBySlug } from "@/lib/shelf";
++import { devotionHref, tableHref } from "@/lib/familyTable";
++import { trackTopicLeadOpen } from "@/lib/telemetry";
++import {
++  TOPICS_INDEX_URL,
++  essaySlug,
++  isTopic,
++  isTopicsIndex,
++  kindLabel,
++  leadOf,
++  publicEssays,
++  readingMinutes,
++  topicFileUrl,
++  topicHref,
++  type Topic as TopicData,
++  type TopicLink,
++} from "@/lib/topics";
++
++const SITE = "https://www.livewellbyjamesbell.co";
++
++type State = { status: "loading" } | { status: "failed" } | { status: "missing" } | { status: "ready"; topic: TopicData };
++
++/** The page's data: the index says whether the topic exists, then its own file. */
++function useTopic(slug: string): { state: State; retry: () => void } {
++  const [nonce, setNonce] = useState(0);
++  const key = `${slug}#${nonce}`;
++  const [state, setState] = useState<{ key: string; value: State }>({ key: "", value: { status: "loading" } });
++  useEffect(() => {
++    let live = true;
++    const settle = (value: State) => live && setState({ key, value });
++    // Both requests start together; the index decides "not here" before the page file is needed.
++    const page = fetchJson(topicFileUrl(slug), isTopic);
++    page.catch(() => {});
++    fetchJson(TOPICS_INDEX_URL, isTopicsIndex)
++      .then(async (index) => {
++        if (!index.pages.some((p) => p.slug === slug)) return settle({ status: "missing" });
++        settle({ status: "ready", topic: await page });
++      })
++      .catch(() => settle({ status: "failed" }));
++    return () => {
++      live = false;
++    };
++  }, [slug, key]);
++  const retry = useCallback(() => setNonce((n) => n + 1), []);
++  return { state: state.key === key ? state.value : { status: "loading" }, retry };
++}
++
++export default function Topic() {
++  const { slug = "" } = useParams<{ slug: string }>();
++  const { state, retry } = useTopic(slug);
++
++  if (state.status !== "ready") {
++    return (
++      <Layout>
++        <section className="tp-page__body">
++          <div className="tp-col">
++            {state.status === "failed" ? (
++              <LoadFailed what="This topic" onRetry={retry} backHref="/topics" backLabel="All topics" />
++            ) : state.status === "missing" ? (
++              <>
++                <h1 className="tp-missing">That topic isn't here</h1>
++                <p className="tp-text">
++                  The address may be mistyped, or the page may have moved. <Link href="/topics">See all the topics</Link>.
++                </p>
++              </>
++            ) : (
++              <p role="status" className="tp-status">
++                Loading…
++              </p>
++            )}
++          </div>
++        </section>
++      </Layout>
++    );
++  }
++  return <TopicView topic={state.topic} />;
++}
++
++function Section({ id, title, children }: { id: string; title: string; children: ReactNode }) {
++  return (
++    <section className="tp-section" aria-labelledby={`tp-${id}`}>
++      <h2 id={`tp-${id}`} className="tp-section__title">
++        {title}
++      </h2>
++      {children}
++    </section>
++  );
++}
++
++const asItem = (l: TopicLink, kicker?: string): IndexItem => ({ href: l.href, title: l.label, dek: l.line ?? null, kicker: kicker ?? kindLabel(l.href) });
++
++function TopicView({ topic }: { topic: TopicData }) {
++  const lead = leadOf(topic);
++  const also = publicEssays(topic.alsoEssays);
++  const section = topic.section ? sectionBySlug(topic.section.slug) : null;
++  const use: IndexItem[] = [
++    ...(topic.use.plan ? [asItem(topic.use.plan)] : []),
++    ...(topic.use.study ? [asItem(topic.use.study)] : []),
++    ...topic.use.tools.map((t) => asItem(t, "Tool")),
++    ...(topic.use.paths ?? []).map((t) => asItem(t)),
++    ...(topic.care ?? []).map((t) => asItem(t)),
++  ];
++  const crisis = topic.sensitive ? Array.from(new Set((topic.care ?? []).flatMap((c) => c.crisis ?? []))) : [];
++
++  return (
++    <Layout>
++      <SEOMeta title={topic.title} description={topic.description} url={`${SITE}${topicHref(topic.slug)}`} type="article" />
++      <div className="tp-page">
++        <PageHead
++          eyebrow={
++            <Link href="/topics" style={{ color: "inherit" }}>
++              Topics
++            </Link>
++          }
++          title={topic.title}
++          width="var(--w-prose)"
++        />
++        <section className="tp-page__body">
++          <div className="tp-col print-paper">
++            <div className="tp-short">
++              {topic.short.map((p, i) => (
++                <p key={i}>
++                  <RefText text={p} mode="link" />
++                </p>
++              ))}
++            </div>
++            <div className="no-print">
++              <TakeItWithYou title={topic.title} kind="Topic" href={topicHref(topic.slug)} summary={topic.description} print />
++            </div>
++
++            <Section id="read" title="Read this first">
++              {topic.section && section && (
++                <p className="tp-text tp-companion">
++                  This page is a companion to the essays in{" "}
++                  <Link href={sectionHref(section)}>{topic.section.label}</Link>. {topic.section.line}
++                </p>
++              )}
++              {lead && <Lead topic={topic.slug} link={lead.link} standIn={lead.standIn} />}
++              {also.length > 0 && <EditorialIndex items={also.map((l) => asItem(l))} columns={1} compact label="More to read" />}
++              {topic.bothWays && (
++                <div className="tp-ways">
++                  <h3 className="tp-ways__title">Asked of both sides</h3>
++                  <ul className="tp-ways__list">
++                    {(["right", "left"] as const).map((side) => {
++                      const w = topic.bothWays![side];
++                      return (
++                        <li key={side}>
++                          <p className="tp-ways__line">{w.line}</p>
++                          <p className="tp-ways__links">
++                            Read <Link href={w.essay.href}>{w.essay.label}</Link>, or follow the guided path{" "}
++                            <Link href={w.path.href}>{w.path.label}</Link>.
++                          </p>
++                        </li>
++                      );
++                    })}
++                  </ul>
++                </div>
++              )}
++            </Section>
++
++            <Section id="scripture" title="What Scripture says, read in its world">
++              <ul className="tp-verses">
++                {topic.scripture.map((p) => (
++                  <li key={p.ref}>
++                    <p className="tp-verses__ref">
++                      <VerseRef reference={p.ref} mode="link" />
++                    </p>
++                    <p className="tp-text">
++                      <RefText text={p.line} mode="link" />
++                    </p>
++                    {p.context && (
++                      <Link href={p.context.href} className="tp-more">
++                        In its world: {p.context.label}
++                        <span aria-hidden>→</span>
++                      </Link>
++                    )}
++                  </li>
++                ))}
++              </ul>
++              <p className="tp-note">Each reference opens the passage in the Study Bible.</p>
++            </Section>
++
++            <Section id="history" title="The church has been here before">
++              <p className="tp-witness__name">{topic.witness.name}</p>
++              <p className="tp-text">{topic.witness.line}</p>
++              <Link href={topic.witness.href} className="tp-more">
++                Read it in {topic.witness.label}
++                <span aria-hidden>→</span>
++              </Link>
++            </Section>
++
++            <Section id="table" title="At the table">
++              <TableDevotion table={topic.table} />
++            </Section>
++
++            {(use.length > 0 || crisis.length > 0) && (
++              <Section id="use" title="Use this">
++                {use.length > 0 && <EditorialIndex items={use} columns={1} compact label="Use this" />}
++                {crisis.length > 0 && <CrisisBlock variant="compact" topics={crisis} />}
++              </Section>
++            )}
++
++            <nav className="tp-back no-print" aria-label="More topics">
++              <Link href="/topics" className="tp-more">
++                All topics
++                <span aria-hidden>→</span>
++              </Link>
++            </nav>
++          </div>
++        </section>
++      </div>
++    </Layout>
++  );
++}
++
++/** The one thing to read first: the essay with its minutes once public, or the stand-in. */
++function Lead({ topic, link, standIn }: { topic: string; link: TopicLink; standIn: boolean }) {
++  const slug = essaySlug(link.href);
++  const rewritten = Boolean(slug && overrideMeta(slug));
++  // A rewritten essay's minutes come from its own file, which the essay page reads too (same query key).
++  const body = useQuery({
++    queryKey: ["essay-rewrite", slug],
++    queryFn: () => fetchJson(overrideUrl(slug ?? ""), isEssayOverride),
++    enabled: rewritten,
++    staleTime: Infinity,
++  });
++  const minutes = body.data ? readingMinutes(body.data.body) : null;
++  return (
++    <Link href={link.href} className="tp-lead" onClick={() => trackTopicLeadOpen(topic, link.href, standIn)}>
++      <span className="ed-kicker">{kindLabel(link.href)}</span>
++      <span className="tp-lead__title">{link.label}</span>
++      {link.line && <span className="tp-lead__line">{link.line}</span>}
++      {minutes && <span className="tp-lead__meta">{minutes} min read</span>}
++    </Link>
++  );
++}
++
++/** Tonight's devotion, or the devotion this page names, with the way into table mode. */
++function TableDevotion({ table }: { table: TopicData["table"] }) {
++  const tonight = table.devotion === "tonight";
++  const page = tonight ? "/family/tonight" : devotionHref(table.devotion);
++  const start = tonight ? "/family/tonight?mode=table" : tableHref(table.devotion);
++  return (
++    <>
++      <p className="tp-witness__name">
++        <Link href={page}>{table.label}</Link>
++      </p>
++      <p className="tp-text">{table.line}</p>
++      <div className="tp-actions">
++        <Link href={start} className="pg-action">
++          Start at the table
++        </Link>
++        <Link href={page} className="pg-action pg-action--quiet">
++          Read it first
++        </Link>
++      </div>
++      {table.also?.map((l) => (
++        <p key={l.href} className="tp-text tp-table-also">
++          <Link href={l.href}>{l.label}</Link>
++          {l.line ? `: ${l.line}` : ""}
++        </p>
++      ))}
++    </>
++  );
++}
+diff --git a/client/src/pages/Topics.tsx b/client/src/pages/Topics.tsx
+new file mode 100644
+index 00000000..5eb281be
+--- /dev/null
++++ b/client/src/pages/Topics.tsx
+@@ -0,0 +1,99 @@
++/**
++ * /topics: the questions people are carrying, in their own words, each
++ * opening the one best page on the site (MASTER-PLAN 4.1, 4.2). A topic page
++ * where no single page assembles the answer; otherwise the care page, the
++ * Honest Answer, the study guide, or the essay that already does. Personal
++ * needs keep their home at Find Help, so those rows open the care page itself.
++ *
++ * The rows come from client/public/topics/index.json
++ * (scripts/build-topics-index.mjs). A row to an essay that is not public yet
++ * opens its named stand-in until the shelf says it is (lib/topics rowTarget).
++ */
++import { useCallback, useEffect, useState } from "react";
++import { Link } from "wouter";
++import Layout from "@/components/Layout";
++import { SEOMeta } from "@/components/SEOMeta";
++import { PageHead } from "@/components/editorial/PageHead";
++import LoadFailed from "@/components/LoadFailed";
++import { fetchJson } from "@/lib/fetch-json";
++import { TOPICS_INDEX_URL, isTopicsIndex, kindLabel, rowTarget, type TopicsIndex } from "@/lib/topics";
++
++type State = { status: "loading" } | { status: "failed" } | { status: "ready"; index: TopicsIndex };
++
++/** The index, with a retry (the fetch-json pattern: never "Loading…" forever). */
++function useTopicsIndex(): { state: State; retry: () => void } {
++  const [nonce, setNonce] = useState(0);
++  const [state, setState] = useState<{ nonce: number; value: State }>({ nonce: 0, value: { status: "loading" } });
++  useEffect(() => {
++    let live = true;
++    fetchJson(TOPICS_INDEX_URL, isTopicsIndex)
++      .then((index) => live && setState({ nonce, value: { status: "ready", index } }))
++      .catch(() => live && setState({ nonce, value: { status: "failed" } }));
++    return () => {
++      live = false;
++    };
++  }, [nonce]);
++  const retry = useCallback(() => setNonce((n) => n + 1), []);
++  return { state: state.nonce === nonce ? state.value : { status: "loading" }, retry };
++}
++
++export default function Topics() {
++  const { state, retry } = useTopicsIndex();
++  return (
++    <Layout>
++      <SEOMeta
++        title="Topics: The Hard Questions of Faith in Post-Christian America"
++        description="Christian nationalism, raising children in a secular age, living after Christendom, doubt, suffering, and more. Each question opens the one page on the site that answers it best."
++        url="https://www.livewellbyjamesbell.co/topics"
++      />
++      <PageHead
++        eyebrow="Topics"
++        title="Hard questions, and where to start"
++        lede="Each question opens the one page on this site that answers it best."
++        width="var(--w-content)"
++      />
++      <section className="tp-index-page">
++        <div className="tp-index-wrap">
++          {state.status === "failed" ? (
++            <LoadFailed what="The list of topics" onRetry={retry} backHref="/search" backLabel="Search the site" />
++          ) : state.status === "loading" ? (
++            <p role="status" className="tp-status">
++              Loading…
++            </p>
++          ) : (
++            <ul className="ed-index tp-index" aria-label="Questions">
++              {state.index.rows.map((row) => {
++                const href = rowTarget(row);
++                const kicker = kindLabel(href);
++                return (
++                  <li key={row.href}>
++                    <Link href={href} className="ed-row">
++                      <div>
++                        {kicker && <span className="ed-kicker">{kicker}</span>}
++                        <h2 className="ed-title tp-index__q">{row.askedAs}</h2>
++                        <p className="ed-dek">{row.line}</p>
++                      </div>
++                      <span className="ed-arrow" aria-hidden>
++                        →
++                      </span>
++                    </Link>
++                    {row.also && (
++                      <Link href={row.also.href} className="tp-also">
++                        Or: {row.also.label}
++                        <span aria-hidden>→</span>
++                      </Link>
++                    )}
++                  </li>
++                );
++              })}
++            </ul>
++          )}
++          <p className="tp-foot">
++            Not here? <Link href="/search">Search the site</Link>, or, if this is a hard season, go to{" "}
++            <Link href="/help">Find Help</Link>.
++          </p>
++        </div>
++      </section>
++    </Layout>
++  );
++}
+diff --git a/client/src/pages/topics.test.tsx b/client/src/pages/topics.test.tsx
+new file mode 100644
+index 00000000..84f4b85f
+--- /dev/null
++++ b/client/src/pages/topics.test.tsx
+@@ -0,0 +1,208 @@
++/**
++ * Topics (U25): /topics lists the questions in the reader's words, each row
++ * opening the one best page (a row to an essay that is not public yet opens
++ * its stand-in; Test the Case sits on the Honest Answers row); a topic page
++ * holds its six parts in order, shows the stand-in until the lead essay is
++ * public and only public essays after it, asks the politics question of both
++ * sides, makes every reference a link into the Study Bible, and sends one
++ * anonymous event when the lead is opened. Rendered from the committed data.
++ */
++import { describe, it, expect, vi, afterEach } from "vitest";
++import { screen, fireEvent, within } from "@testing-library/react";
++import { Route, Switch } from "wouter";
++import fs from "node:fs";
++import path from "node:path";
++import { track as vercelTrack } from "@vercel/analytics";
++
++import { renderWithProviders, offlineFetch } from "@/test/harness";
++import { leadOf, publicEssays, rowTarget, type Topic as TopicData, type TopicsIndex } from "@/lib/topics";
++import { trackTopicLeadOpen } from "@/lib/telemetry";
++import { LIBRARY_SOURCES } from "@/lib/catalog";
++import { libraryEntries, rankEntries } from "@/lib/siteSearch";
++import Topics from "./Topics";
++import Topic from "./Topic";
++
++vi.mock("@vercel/analytics", () => ({ track: vi.fn() }));
++
++const PUBLIC = path.resolve(__dirname, "../../public");
++const read = (name: string) => fs.readFileSync(path.join(PUBLIC, name), "utf8");
++const INDEX: TopicsIndex = JSON.parse(read("topics/index.json"));
++const topic = (slug: string): TopicData => JSON.parse(read(`topics/${slug}.json`));
++
++function serve(online = true) {
++  const base = offlineFetch();
++  vi.stubGlobal(
++    "fetch",
++    vi.fn(async (input: RequestInfo | URL, init?: RequestInit) => {
++      const name = String(input).replace(/^\//, "");
++      if (online && name.startsWith("topics/") && fs.existsSync(path.join(PUBLIC, name))) {
++        return new Response(read(name), { status: 200, headers: { "Content-Type": "application/json" } });
++      }
++      return base(input, init);
++    }),
++  );
++}
++
++function renderAt(url: string) {
++  window.history.pushState({}, "", url);
++  return renderWithProviders(
++    <Switch>
++      <Route path="/topics/:slug" component={Topic} />
++      <Route path="/topics" component={Topics} />
++    </Switch>,
++  );
++}
++
++afterEach(() => {
++  vi.unstubAllGlobals();
++  vi.mocked(vercelTrack).mockClear();
++  window.history.pushState({}, "", "/");
++});
++
++describe("/topics", () => {
++  it("lists every question, each a link to the page it opens today", async () => {
++    serve();
++    renderAt("/topics");
++    expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Hard questions, and where to start");
++    const list = await screen.findByRole("list", { name: "Questions" });
++    const rows = within(list).getAllByRole("listitem");
++    expect(rows).toHaveLength(INDEX.rows.length);
++    // The mission's central question first.
++    expect(within(rows[0]).getByRole("heading").textContent).toBe(topic("living-after-christendom").title);
++    const politics = within(list).getByRole("link", { name: /What is Christian nationalism/ });
++    expect(politics.getAttribute("href")).toBe("/topics/faith-politics-and-the-flag");
++    // A personal need opens its care page directly.
++    expect(within(list).getByRole("link", { name: /I can't stop worrying/ }).getAttribute("href")).toBe("/help/anxiety");
++  });
++
++  it("opens the stand-in while a row's essay is not public, and puts Test the Case on the Honest Answers row", async () => {
++    serve();
++    renderAt("/topics");
++    const list = await screen.findByRole("list", { name: "Questions" });
++    const slavery = within(list).getByRole("link", { name: /Sunday mornings/ });
++    expect(slavery.getAttribute("href")).toBe("/answers#why-didnt-the-bible-just-ban-slavery");
++    expect(within(slavery).getByText("Honest answers")).toBeTruthy();
++    const trueRow = within(list).getByRole("link", { name: /Is Christianity actually true/ }).closest("li")!;
++    expect(within(trueRow).getByRole("link", { name: /Test the Case/ }).getAttribute("href")).toBe("/tools/test-the-case");
++  });
++
++  it("says so, with a retry, when the list does not arrive", async () => {
++    serve(false);
++    renderAt("/topics");
++    expect(await screen.findByRole("alert")).toBeTruthy();
++    expect(screen.getByRole("button", { name: "Try again" })).toBeTruthy();
++  });
++});
++
++describe("/topics/:slug", () => {
++  it("holds the six parts in order, under the question", async () => {
++    serve();
++    renderAt("/topics/faith-politics-and-the-flag");
++    const h1 = await screen.findByRole("heading", { level: 1, name: topic("faith-politics-and-the-flag").title });
++    expect(h1).toBeTruthy();
++    const parts = screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent);
++    expect(parts).toEqual([
++      "Read this first",
++      "What Scripture says, read in its world",
++      "The church has been here before",
++      "At the table",
++      "Use this",
++    ]);
++    expect(screen.getByText(/Love of country isn't the problem/)).toBeTruthy();
++  });
++
++  it("shows the stand-in until the lead essay is public, and no essay that is not public", async () => {
++    serve();
++    renderAt("/topics/faith-politics-and-the-flag");
++    const lead = await screen.findByRole("link", { name: /How Christian Nationalism Rewrites Doctrine/ });
++    expect(lead.getAttribute("href")).toBe("/writing/how-christian-nationalism-rewrites");
++    expect(screen.queryByText(/What Christian Nationalism Is, and What It Is Not/)).toBeNull();
++    expect(screen.queryByText(/Was America Founded/)).toBeNull();
++    expect(screen.getByRole("link", { name: /When the Church Married Empire/ })).toBeTruthy();
++    fireEvent.click(lead);
++    expect(vi.mocked(vercelTrack)).toHaveBeenCalledWith("topic_lead_open", {
++      topic: "faith-politics-and-the-flag",
++      lead: "/writing/how-christian-nationalism-rewrites",
++      stand_in: true,
++    });
++  });
++
++  it("asks the politics question of both sides, and carries the four public-square tools", async () => {
++    serve();
++    renderAt("/topics/faith-politics-and-the-flag");
++    await screen.findByText("Asked of both sides");
++    for (const [essay, pathName, href] of [
++      ["The Conservative Blind Spot", "Faith and the Flag", "/pathways/christian-nationalism"],
++      ["The Progressive Blind Spot", "Faith and the Cause", "/pathways/progressive-captivity"],
++    ]) {
++      expect(screen.getByRole("link", { name: essay })).toBeTruthy();
++      expect(screen.getByRole("link", { name: pathName }).getAttribute("href")).toBe(href);
++    }
++    const use = screen.getByRole("list", { name: "Use this" });
++    for (const tool of ["The Consistency Check", "Which Lens Has You?", "The Party Scorecard", "If We Had a Biblical Government"]) {
++      expect(within(use).getByRole("link", { name: new RegExp(tool.replace(/[?]/g, "\\?")) })).toBeTruthy();
++    }
++  });
++
++  it("makes each passage, and each reference in the prose, a link into the Study Bible", async () => {
++    serve();
++    renderAt("/topics/raising-children-in-a-secular-age");
++    const passage = await screen.findByRole("link", { name: "Deuteronomy 6:5-7" });
++    expect(passage.getAttribute("href")).toMatch(/^\/study\/bible\/deuteronomy\/6/);
++    // In the short answer and in a passage's line.
++    expect(screen.getByRole("link", { name: "Deuteronomy 6:7" }).getAttribute("href")).toMatch(/^\/study\/bible\/deuteronomy\/6/);
++    expect(screen.getByRole("link", { name: "Judges 2:10" }).getAttribute("href")).toMatch(/^\/study\/bible\/judges\/2/);
++  });
++
++  it("opens tonight's devotion at the table when the page names tonight, and the care page when there is no essay", async () => {
++    serve();
++    renderAt("/topics/raising-children-in-a-secular-age");
++    expect((await screen.findByRole("link", { name: "Start at the table" })).getAttribute("href")).toBe("/family/tonight?mode=table");
++    expect(screen.getByRole("link", { name: /How do we do family devotions/ }).getAttribute("href")).toBe("/help/family-devotions");
++    expect(screen.getByRole("link", { name: /Raising Kids Who Keep the Faith/ }).getAttribute("href")).toBe("/pathways/parenting");
++  });
++
++  it("names its shelf section first on the post-Christian page, and a named devotion opens its own page", async () => {
++    serve();
++    renderAt("/topics/living-after-christendom");
++    expect((await screen.findByRole("link", { name: "After Christendom" })).getAttribute("href")).toBe("/writing?section=after-christendom");
++    expect(screen.getByRole("link", { name: "Start at the table" }).getAttribute("href")).toBe("/family/devotions/being-sent?mode=table");
++  });
++
++  it("answers an unknown topic plainly, and a failed load with a retry", async () => {
++    serve();
++    renderAt("/topics/no-such-topic");
++    expect(await screen.findByText("That topic isn't here")).toBeTruthy();
++    serve(false);
++    renderAt("/topics/faith-politics-and-the-flag");
++    expect(await screen.findByRole("alert")).toBeTruthy();
++  });
++});
++
++describe("lib/topics", () => {
++  it("leads with the essay once it is public, and drops further essays that are not", () => {
++    const t = topic("faith-politics-and-the-flag");
++    expect(leadOf(t)).toMatchObject({ standIn: true, link: { href: "/writing/how-christian-nationalism-rewrites" } });
++    expect(leadOf({ ...t, essay: { href: "/writing/when-the-church-married-empire", label: "x" } })).toMatchObject({ standIn: false });
++    expect(publicEssays(t.alsoEssays).map((l) => l.href)).toEqual(["/writing/when-the-church-married-empire"]);
++    const row = INDEX.rows.find((r) => r.standIn)!;
++    expect(rowTarget(row)).toBe(row.standIn);
++    expect(rowTarget({ ...row, href: "/writing/when-the-church-married-empire" })).toBe("/writing/when-the-church-married-empire");
++  });
++
++  it("sends topic_lead_open with the slugs only", () => {
++    trackTopicLeadOpen("a-topic", "/help/x", true);
++    expect(vi.mocked(vercelTrack)).toHaveBeenCalledWith("topic_lead_open", { topic: "a-topic", lead: "/help/x", stand_in: true });
++  });
++
++  it("is found by search: \"christian nationalism\" ranks the topic first", () => {
++    const source = LIBRARY_SOURCES.find((s) => s.url === "/topics/index.json")!;
++    const guides = LIBRARY_SOURCES.find((s) => s.url === "/studyguides/index.json")!;
++    const entries = [
++      ...libraryEntries(guides, JSON.parse(read("studyguides/index.json"))),
++      ...libraryEntries(source, INDEX),
++    ];
++    expect(rankEntries(entries, "christian nationalism")[0].href).toBe("/topics/faith-politics-and-the-flag");
++    expect(rankEntries(entries, "post christian")[0].href).toBe("/topics/living-after-christendom");
++  });
++});
+diff --git a/scripts/build-topics-index.mjs b/scripts/build-topics-index.mjs
+new file mode 100644
+index 00000000..0f806bc2
+--- /dev/null
++++ b/scripts/build-topics-index.mjs
+@@ -0,0 +1,36 @@
++#!/usr/bin/env node
++/**
++ * build-topics-index.mjs
++ *
++ * Writes client/public/topics/index.json, the index /topics and on-site search
++ * read: the topic pages (client/public/topics/<slug>.json) and the ordered rows
++ * of scripts/data/topics-rows.json (scripts/lib/topics.mjs). Run it after
++ * changing either, then run node scripts/validate-topics.mjs:
++ *
++ *   node scripts/build-topics-index.mjs           write the index
++ *   node scripts/build-topics-index.mjs --check   exit 1 if it is stale or cannot be built
++ */
++import fs from "node:fs";
++import path from "node:path";
++import { ROOT, INDEX_FILE, buildTopicsIndex, readRows, readTopicPages, renderTopicsIndex } from "./lib/topics.mjs";
++
++const CHECK = process.argv.includes("--check");
++const { index, problems } = buildTopicsIndex(readTopicPages(), readRows());
++if (problems.length) {
++  console.error("[topics-index] the index cannot be built:");
++  for (const p of problems) console.error(`  - ${p}`);
++  process.exit(1);
++}
++
++const out = path.join(ROOT, INDEX_FILE);
++const text = renderTopicsIndex(index);
++if (CHECK) {
++  const current = fs.existsSync(out) ? fs.readFileSync(out, "utf8") : "";
++  if (current !== text) {
++    console.error(`[topics-index] ${INDEX_FILE} is stale. Run: node scripts/build-topics-index.mjs`);
++    process.exit(1);
++  }
++} else {
++  fs.writeFileSync(out, text);
++}
++console.log(`[topics-index] ${CHECK ? "up to date" : "wrote"} ${INDEX_FILE}: ${index.pages.length} topic pages, ${index.rows.length} rows`);
+diff --git a/scripts/data/topics-rows.json b/scripts/data/topics-rows.json
+new file mode 100644
+index 00000000..8978935a
+--- /dev/null
++++ b/scripts/data/topics-rows.json
+@@ -0,0 +1,89 @@
++{
++  "$comment": "The topics index (/topics), in order: the rows people read, each in their own words, each opening the one best page on the site. A row naming a topic ({ \"topic\": slug }) takes its question and line from client/public/topics/<slug>.json. A row to an essay that is not public yet names a standIn the page opens until it is. scripts/build-topics-index.mjs writes client/public/topics/index.json from this file and the topic pages; scripts/validate-topics.mjs checks both. MASTER-PLAN 4.2.",
++  "rows": [
++    { "topic": "living-after-christendom" },
++    { "topic": "faith-politics-and-the-flag" },
++    { "topic": "raising-children-in-a-secular-age" },
++    {
++      "askedAs": "Is Christianity actually true?",
++      "href": "/answers",
++      "line": "Short answers to the hardest questions a skeptic asks, each with the essay or book that goes further.",
++      "also": {
++        "href": "/tools/test-the-case",
++        "label": "Test the Case",
++        "line": "The case for the resurrection, one move at a time, with room to push back at every step."
++      }
++    },
++    {
++      "askedAs": "Can I trust the Bible, and how do I read it?",
++      "href": "/help/trust-the-bible",
++      "line": "How the Bible came to us, what the old copies show, and what trusting it does and doesn't ask of you."
++    },
++    {
++      "askedAs": "Can I trust the church after what it did?",
++      "href": "/help/church-hurt",
++      "line": "When the people who spoke for God did the wounding: naming it honestly, and what can be rebuilt."
++    },
++    {
++      "askedAs": "What are phones and AI doing to us and our kids?",
++      "href": "/studyguides/attention",
++      "line": "A Bible study on technology and distraction, for anyone who picks up the phone to check one thing and surfaces an hour later."
++    },
++    {
++      "askedAs": "Why are Sunday mornings still divided, and what did the church do about slavery?",
++      "href": "/writing/why-didnt-the-bible-ban-slavery",
++      "standIn": "/answers#why-didnt-the-bible-just-ban-slavery",
++      "line": "Why the Bible never bans slavery outright, and how the Christians who defended it passed over the texts that condemned what they were doing."
++    },
++    {
++      "askedAs": "My neighbors believe something else. Is Christianity too narrow?",
++      "href": "/answers#is-jesus-the-only-way",
++      "line": "Is Jesus really the only way to God? The objection taken at its strongest, and an answer."
++    },
++    {
++      "askedAs": "Why are there so many denominations?",
++      "href": "/theology/traditions",
++      "line": "A charitable guide to the major traditions, Catholic to Pentecostal: what each one treasures, and the deep core they share."
++    },
++    {
++      "askedAs": "I can't stop worrying",
++      "href": "/help/anxiety",
++      "line": "For the worry that won't switch off: what's happening, what Scripture says, and what to do tonight and this week."
++    },
++    {
++      "askedAs": "I'm afraid of where the country is going",
++      "href": "/help/fear-of-the-future",
++      "line": "For the dread that won't let go of tomorrow: what Scripture promises about the future, what it doesn't, and what to do this week."
++    },
++    {
++      "askedAs": "Why does God allow suffering?",
++      "href": "/help/suffering",
++      "line": "For the graveside and the hard argument alike: what the Bible says when God doesn't explain, and why the question is allowed."
++    },
++    {
++      "askedAs": "I'm grieving",
++      "href": "/help/grief",
++      "line": "For the fog of the first weeks and the long year after: grief without hurry, honest prayer, and a hope that lets you cry."
++    },
++    {
++      "askedAs": "I feel alone, even at church",
++      "href": "/help/loneliness",
++      "line": "Lonely in a crowd, a marriage, or a church? What Scripture says, why it's so hard now, and small steps that help this week."
++    },
++    {
++      "askedAs": "My marriage is in trouble",
++      "href": "/help/marriage",
++      "line": "For the marriage that's gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help."
++    },
++    {
++      "askedAs": "Money and work",
++      "href": "/help/money",
++      "line": "For debt, bills you can't cover, and fights about money: what Scripture says, what to do this week, and where to find real help.",
++      "also": {
++        "href": "/help/purpose",
++        "label": "What's the point of my life?",
++        "line": "For anyone asking who they are and what they're for."
++      }
++    }
++  ]
++}
+diff --git a/scripts/generate-sitemap.mjs b/scripts/generate-sitemap.mjs
+index bbed66c7..f5113c00 100644
+--- a/scripts/generate-sitemap.mjs
++++ b/scripts/generate-sitemap.mjs
+@@ -138,6 +138,7 @@ const STATIC_PAGES = [
+   { url: "/family/catechism", priority: "0.7", changefreq: "monthly" },
+   { url: "/family/reading-plans", priority: "0.7", changefreq: "monthly" },
+   { url: "/answers", priority: "0.9", changefreq: "weekly" },
++  { url: "/topics", priority: "0.9", changefreq: "monthly" },
+   { url: "/assessments", priority: "0.85", changefreq: "monthly" },
+   { url: "/theology/history", priority: "0.75", changefreq: "monthly" },
+   { url: "/theology/questions", priority: "0.75", changefreq: "monthly" },
+@@ -286,6 +287,9 @@ function manifestPages() {
+     // A page per family devotion (/family/devotions/:id), from the family
+     // index (scripts/build-family-index.mjs), which keys each row by `id`.
+     { file: "client/public/family/index.json", key: "devotions", slugField: "id", prefix: "/family/devotions/" },
++    // The topic pages (/topics/:slug), from the topics index
++    // (scripts/build-topics-index.mjs).
++    { file: "client/public/topics/index.json", key: "pages", prefix: "/topics/" },
+   ];
+   for (const s of sources) {
+     try {
+diff --git a/scripts/lib/site-routes.mjs b/scripts/lib/site-routes.mjs
+index b89d0d8f..20f45415 100644
+--- a/scripts/lib/site-routes.mjs
++++ b/scripts/lib/site-routes.mjs
+@@ -68,6 +68,7 @@ function paramSources() {
+     "/group-guide/:slug": groupGuideSlugs(),
+     "/help/:slug": slugsFrom(needs),
+     "/family/devotions/:id": slugsFrom(json("client/public/family/index.json")?.devotions, "id"),
++    "/topics/:slug": slugsFrom(json("client/public/topics/index.json")?.pages),
+     "/study/bible/:book": new Set(books.keys()),
+   };
+ }
+diff --git a/scripts/lib/topics-politics.mjs b/scripts/lib/topics-politics.mjs
+new file mode 100644
+index 00000000..82730931
+--- /dev/null
++++ b/scripts/lib/topics-politics.mjs
+@@ -0,0 +1,59 @@
++/**
++ * topics-politics.mjs — the same instrument, on the topic pages (U25; run by
++ * validate-politics.mjs).
++ *
++ * A topic page flagged politics: true (client/public/topics/<slug>.json, the
++ * politics page first) names both directions: bothWays.right and
++ * bothWays.left, each a line, an essay, and a guided path, the two lines
++ * within the same 55% word band the gate applies to the disruption and
++ * justice topics, so neither side is a strawman by brevity. Its short answer
++ * names both (the words "right" and "left"), and its prose keeps the house
++ * style this gate checks everywhere: no exclamation point, no forbidden word.
++ */
++import fs from "node:fs";
++import path from "node:path";
++
++const wc = (s) => String(s ?? "").trim().split(/\s+/).filter(Boolean).length;
++
++/** Findings as [file, message] pairs, and how many politics pages were checked. */
++export function checkTopicPolitics({ publicDir, forbidden = [] }) {
++  const findings = [];
++  const dir = path.join(publicDir, "topics");
++  let pages = 0;
++  if (!fs.existsSync(dir)) return { findings, pages };
++  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".json") && x !== "index.json").sort()) {
++    const rel = `topics/${f}`;
++    let t;
++    try {
++      t = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
++    } catch (e) {
++      findings.push([rel, `unparseable JSON (${e.message})`]);
++      continue;
++    }
++    if (t?.politics !== true) continue;
++    pages++;
++    const both = t.bothWays || {};
++    for (const side of ["right", "left"]) {
++      const w = both[side];
++      if (!w) {
++        findings.push([rel, `bothWays is missing the ${side} side; the same-instrument rule requires both`]);
++        continue;
++      }
++      if (!w.line) findings.push([rel, `bothWays.${side} needs its line`]);
++      if (!w.essay?.href) findings.push([rel, `bothWays.${side} needs an essay`]);
++      if (!w.path?.href) findings.push([rel, `bothWays.${side} needs a guided path`]);
++    }
++    if (both.right?.line && both.left?.line) {
++      const r = wc(both.right.line);
++      const l = wc(both.left.line);
++      const max = Math.max(r, l);
++      if ((max - Math.min(r, l)) / max > 0.55) findings.push([rel, `bothWays imbalance: right/left lines ${r}/${l} words differ by more than 55%; one side reads as a strawman`]);
++    }
++    const short = Array.isArray(t.short) ? t.short.join(" ") : "";
++    if (!/\bright\b/i.test(short) || !/\bleft\b/i.test(short)) findings.push([rel, "the short answer names the temptation on the right and on the left"]);
++    const prose = JSON.stringify([t.title, t.short, t.bothWays, t.description]);
++    if (prose.includes("!")) findings.push([rel, "exclamation point"]);
++    for (const w of forbidden) if (new RegExp(`\\b${w}\\b`, "i").test(prose)) findings.push([rel, `forbidden word "${w}"`]);
++  }
++  return { findings, pages };
++}
+diff --git a/scripts/lib/topics.mjs b/scripts/lib/topics.mjs
+new file mode 100644
+index 00000000..205e2af0
+--- /dev/null
++++ b/scripts/lib/topics.mjs
+@@ -0,0 +1,142 @@
++/**
++ * topics.mjs — the topic pages (MASTER-PLAN 4): what they are on disk, and the
++ * index /topics reads.
++ *
++ *   client/public/topics/<slug>.json   one hand-built page per question (at most six)
++ *   scripts/data/topics-rows.json      the index, in order, in the reader's words
++ *   client/public/topics/index.json    generated: the pages (for search, the
++ *                                      sitemap, and the prerendered heads) and
++ *                                      the rows /topics shows
++ *
++ * A row opens the one best page for its question: a topic page, a care page,
++ * an Honest Answer, a study guide, an essay. A row to an essay that is not
++ * public yet names a standIn, which the page opens until the essay is.
++ *
++ * Read by scripts/build-topics-index.mjs (writes the index), validate-topics.mjs
++ * (the gate), and lib/topics-politics.mjs (validate-politics.mjs).
++ */
++import fs from "node:fs";
++import path from "node:path";
++import { fileURLToPath } from "node:url";
++
++export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
++export const TOPICS_DIR = "client/public/topics";
++export const INDEX_FILE = "client/public/topics/index.json";
++export const ROWS_FILE = "scripts/data/topics-rows.json";
++/** Three first; at most six until search data argues for more, and raising it is James's call. */
++export const MAX_PAGES = 6;
++
++/** What kind of page an address opens, for the row's label and the gate. */
++export function kindOf(href) {
++  const h = String(href ?? "");
++  if (h.startsWith("/topics/")) return "topic";
++  if (h.startsWith("/help/") || h === "/help") return "care";
++  if (h.startsWith("/answers")) return "answer";
++  if (h.startsWith("/writing")) return "essay";
++  if (h.startsWith("/studyguides/")) return "study";
++  if (h.startsWith("/plans/")) return "plan";
++  if (h.startsWith("/theology/") || h.startsWith("/resources/creeds")) return "history";
++  if (h.startsWith("/tools/") || h.startsWith("/nation/") || h.startsWith("/disruption/")) return "tool";
++  if (h.startsWith("/pathways/")) return "path";
++  return "page";
++}
++
++/** Every topic page in a folder, sorted by file name: [{ file, slug, data, error? }]. */
++export function readTopicPages(dir = path.join(ROOT, TOPICS_DIR)) {
++  if (!fs.existsSync(dir)) return [];
++  return fs
++    .readdirSync(dir)
++    .filter((f) => f.endsWith(".json") && f !== "index.json")
++    .sort()
++    .map((file) => {
++      const slug = file.replace(/\.json$/, "");
++      try {
++        return { file, slug, data: JSON.parse(fs.readFileSync(path.join(dir, file), "utf8")) };
++      } catch (err) {
++        return { file, slug, data: null, error: err.message };
++      }
++    });
++}
++
++export function readRows(file = path.join(ROOT, ROWS_FILE)) {
++  return JSON.parse(fs.readFileSync(file, "utf8"));
++}
++
++const text = (x) => (typeof x === "string" ? x.trim() : "");
++
++/**
++ * The index from the pages and the ordered rows. Returns { index, problems };
++ * problems are the things that stop it being built at all (a row naming a
++ * topic that has no page, a page no row lists). The gate checks the rest.
++ */
++export function buildTopicsIndex(pages, rowsSource) {
++  const problems = [];
++  const bySlug = new Map();
++  for (const p of pages) {
++    if (!p.data) {
++      problems.push(`${p.file}: not readable JSON (${p.error})`);
++      continue;
++    }
++    bySlug.set(p.slug, p.data);
++  }
++  const listed = new Set();
++  const rows = [];
++  for (const [i, r] of (Array.isArray(rowsSource?.rows) ? rowsSource.rows : []).entries()) {
++    if (r && typeof r.topic === "string") {
++      const t = bySlug.get(r.topic);
++      if (!t) {
++        problems.push(`rows[${i}]: no topic page "${r.topic}" in ${TOPICS_DIR}`);
++        continue;
++      }
++      if (listed.has(r.topic)) problems.push(`rows[${i}]: the topic "${r.topic}" is listed twice`);
++      listed.add(r.topic);
++      rows.push({ askedAs: text(t.title), href: `/topics/${r.topic}`, kind: "topic", line: text(t.description) });
++      continue;
++    }
++    const row = { askedAs: text(r?.askedAs), href: text(r?.href), kind: kindOf(r?.href), line: text(r?.line) };
++    if (r?.standIn) Object.assign(row, { standIn: text(r.standIn), standInKind: kindOf(r.standIn) });
++    if (r?.also) row.also = { href: text(r.also.href), label: text(r.also.label), line: text(r.also.line) };
++    rows.push(row);
++  }
++  for (const slug of bySlug.keys()) if (!listed.has(slug)) problems.push(`${slug}.json: no row in ${ROWS_FILE} lists this topic`);
++  const order = [...listed];
++  const index = {
++    about:
++      "Generated by scripts/build-topics-index.mjs from client/public/topics/<slug>.json and scripts/data/topics-rows.json. Do not edit by hand. pages: the topic pages (search, sitemap, prerendered heads). rows: the questions /topics lists, in order, each opening the one best page.",
++    pages: order.map((slug) => {
++      const t = bySlug.get(slug);
++      return {
++        slug,
++        title: text(t.title),
++        description: text(t.description),
++        blurb: text(t.description),
++        askedAs: Array.isArray(t.askedAs) ? t.askedAs.map(text).filter(Boolean) : [],
++        href: `/topics/${slug}`,
++      };
++    }),
++    rows,
++  };
++  return { index, problems };
++}
++
++export function renderTopicsIndex(index) {
++  return `${JSON.stringify(index, null, 2)}\n`;
++}
++
++/**
++ * Every reader-facing string in a topic page, with where it sits, for the
++ * style checks: [path, text]. Addresses, slugs, refs, and dates are left out.
++ */
++export function topicStrings(page) {
++  const out = [];
++  const SKIP = new Set(["slug", "href", "devotion", "updated", "ref", "folds", "reviewed", "politics", "sensitive", "crisis", "standIn"]);
++  const walk = (v, where) => {
++    if (typeof v === "string") out.push([where, v]);
++    else if (Array.isArray(v)) v.forEach((x, i) => walk(x, `${where}[${i}]`));
++    else if (v && typeof v === "object") for (const [k, x] of Object.entries(v)) if (!SKIP.has(k)) walk(x, where ? `${where}.${k}` : k);
++  };
++  walk(page, "");
++  return out;
++}
++
++export const words = (s) => String(s ?? "").trim().split(/\s+/).filter(Boolean).length;
+diff --git a/scripts/prerender-heads.mjs b/scripts/prerender-heads.mjs
+index e4a37b1e..2a39ea1a 100644
+--- a/scripts/prerender-heads.mjs
++++ b/scripts/prerender-heads.mjs
+@@ -491,6 +491,7 @@ const SECTION_BY_ROUTE = {
+   "/wisdom/": { name: "Wisdom", path: "/wisdom" },
+   "/help/": { name: "Find Help", path: "/help" },
+   "/family/devotions/": { name: "Family Devotions", path: "/family/devotions" },
++  "/topics/": { name: "Topics", path: "/topics" },
+ };
+ 
+ // ---------------------------------------------------------------------------
+@@ -514,6 +515,14 @@ const HUB_LISTINGS = {
+     { title: "The Monster in the Mirror", href: "/books/the-monster-in-the-mirror", blurb: "Why every generation gets the Bible wrong, and what to do about ours." },
+     { title: "Believe", href: "/books/believe", blurb: "Rational answers to the hardest questions skeptics ask, from a former atheist." },
+   ] },
++  // Every question on /topics, opening the page it opens today.
++  "/topics": { label: "Topics", cap: 40, load: () => {
++    const d = readJsonSafe("client/public/topics/index.json");
++    const shelf = loadEssayShelf(REPO_ROOT);
++    // A row to an essay not public yet opens its stand-in, as the page does.
++    const opens = (r) => (r.standIn && !shelf.isPublic(String(r.href).replace(/^\/writing\//, "")) ? r.standIn : r.href);
++    return ((d && d.rows) || []).map((r) => ({ title: r.askedAs, href: opens(r), blurb: r.line || "" }));
++  } },
+   "/studyguides": { label: "Study guides", cap: 80, load: () => {
+     const d = readJsonSafe("client/public/studyguides/index.json");
+     return ((d && d.guides) || []).map((g) => ({ title: g.title, href: `/studyguides/${g.slug}`, blurb: g.blurb || "" }));
+@@ -1022,6 +1031,15 @@ async function main() {
+     // "{title}: A Family Devotion"; the description is the big idea, or the
+     // opening of a daily reflection. Head only (no per-devotion content file).
+     { file: "client/public/family/index.json", key: "devotions", route: "/family/devotions/", ogPrefix: "family-devotions", slugField: "id", desc: "description", titleTemplate: "{title}: A Family Devotion" },
++    // The topic pages (/topics/:slug), from the topics index
++    // (scripts/build-topics-index.mjs). The title is the question, as the
++    // page's own SEOMeta has it; the page file's prose (the short answer and
++    // the lines under each part) is the crawlable body.
++    {
++      file: "client/public/topics/index.json", key: "pages", route: "/topics/", ogPrefix: "topics", desc: "description",
++      contentDir: "client/public/topics",
++      omitKeys: ["slug", "title", "description", "askedAs", "politics", "sensitive", "folds", "updated", "reviewed"],
++    },
+   ];
+   let withBody = 0;
+   for (const src of LIBRARY_SOURCES) {
+diff --git a/scripts/validate-politics.mjs b/scripts/validate-politics.mjs
+index 16f7360d..0716ca71 100644
+--- a/scripts/validate-politics.mjs
++++ b/scripts/validate-politics.mjs
+@@ -15,6 +15,9 @@
+  *  - nation essays: title/subtitle, >= 4 sections each >= 120 words, and
+  *    >= 3 furtherReading entries carrying BOTH a title and a real author
+  *    (citation integrity: this surface claims to be historical and factual).
++ *  - topic pages flagged politics: true (U25, scripts/lib/topics-politics.mjs):
++ *    bothWays.right and .left, each a line, an essay, and a guided path, the
++ *    lines within the same 55% word band; the short answer names both.
+  *  - disruption/justice topics with captureDetail: BOTH .right and .left
+  *    populated, each with whatItLooksLike/inThePast/now, and the two sides'
+  *    descriptions within a 55% word band (no side gets a strawman by
+@@ -24,6 +27,7 @@
+  *
+  * Exits non-zero with a findings list so CI fails loudly.
+  */
++import { checkTopicPolitics } from "./lib/topics-politics.mjs";
+ import fs from "node:fs";
+ import path from "node:path";
+ 
+@@ -86,6 +90,11 @@ if (fs.existsSync(NATION)) {
+   }
+ }
+ 
++/* ---------------- topic pages on politics (the same instrument on /topics) ---------------- */
++const topicPolitics = checkTopicPolitics({ publicDir: PUB, forbidden: FORBIDDEN_WORDS });
++for (const [file, msg] of topicPolitics.findings) note(file, msg);
++if (!topicPolitics.findings.length) console.log(`[validate-politics] ${topicPolitics.pages} politics topic page(s) hold both directions.`);
++
+ /* ---------------- disruption / justice topics (the symmetry gate) ---------------- */
+ for (const section of ["disruption", "justice"]) {
+   const dir = path.join(PUB, section, "topics");
+diff --git a/scripts/validate-topics.mjs b/scripts/validate-topics.mjs
+new file mode 100644
+index 00000000..2fa350f7
+--- /dev/null
++++ b/scripts/validate-topics.mjs
+@@ -0,0 +1,301 @@
++#!/usr/bin/env node
++/**
++ * validate-topics.mjs — the gate for the topic pages and the /topics index
++ * (MASTER-PLAN 4.4). A topic page is one question with one assembled answer
++ * across formats; this holds every page to that shape and to the house rules:
++ *
++ *   - every address resolves (scripts/lib/site-routes.mjs): a live route, a
++ *     public essay (the shelf, scripts/lib/shelf.mjs), or, where the essay is
++ *     not public yet, a named stand-in that is; never through a redirect; an
++ *     Honest Answer's #anchor exists;
++ *   - every Scripture reference parses with the shared parser (scripts/lib/bsb.mjs);
++ *   - no slot empty without a stand-in: the short answer (150 to 250 words),
++ *     a lead to read first, three to five passages, a witness from church
++ *     history, a devotion for the table, something to use;
++ *   - Forbidden Language (the full list), no em-dash, no exclamation point (a
++ *     topic page quotes no Scripture), no percentage or "N in 10" in a short
++ *     answer (the plan prints no statistics);
++ *   - a page flagged sensitive carries a care link with its crisis lines;
++ *     a page about politics is flagged politics (validate-politics.mjs then
++ *     holds it to both directions); at most two tools, the politics page the
++ *     four public-square instruments (7.4); at most six pages.
++ *
++ *   node scripts/validate-topics.mjs                     CI gate
++ *   node scripts/validate-topics.mjs --dir <folder>      check the pages in another folder (tests)
++ *
++ * Essays named before they are public (a pilot on its way to the shelf) are
++ * listed as waiting; the page shows the stand-in until they are.
++ */
++import fs from "node:fs";
++import path from "node:path";
++import { pathToFileURL } from "node:url";
++import { resolveHref } from "./lib/site-routes.mjs";
++import { loadEssayShelf } from "./lib/shelf.mjs";
++import { readRef } from "./lib/bsb.mjs";
++import { SCRIPTURE_REF_SOURCE } from "./lib/essay-text.mjs";
++import { forbiddenRe, setAsideAllowed } from "./lib/forbidden-language.mjs";
++import { MAX_PAGES, ROOT, ROWS_FILE, TOPICS_DIR, buildTopicsIndex, readRows, readTopicPages, topicStrings, words } from "./lib/topics.mjs";
++
++const CRISIS_TOPICS = new Set(["suicide", "abuse", "sexual-assault", "substance"]);
++const POLITICS_WORDS = /\b(politic\w*|nationalis\w*|partisan|election\w*|vote\w*|voting)\b/i;
++const STATISTIC = /\d\s*%|\bper\s?cent\b|\b(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten)\s+(?:in|out of)\s+(?:\d+|three|four|five|six|seven|eight|nine|ten)\b/i;
++const REFS = new RegExp(SCRIPTURE_REF_SOURCE, "g");
++const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
++
++/** What the gate reads besides the pages: the shelf, the family index, the Honest Answers' anchors. */
++export function loadContext(root = ROOT) {
++  const shelf = loadEssayShelf(root);
++  const family = JSON.parse(fs.readFileSync(path.join(root, "client/public/family/index.json"), "utf8"));
++  const devotions = new Map((family.devotions || []).map((d) => [d.id, d.title]));
++  const answersSrc = fs.readFileSync(path.join(root, "client/src/data/answers.ts"), "utf8");
++  const answers = new Set([...answersSrc.matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]));
++  return { shelf, devotions, answers };
++}
++
++/**
++ * Where an address stands: "ok", "waiting" (an essay not public yet), or a
++ * problem in words. `essayOk` allows an essay that is not public yet.
++ */
++function hrefStatus(href, ctx, { essayOk = false } = {}) {
++  if (typeof href !== "string" || !href.startsWith("/")) return "is not a site address";
++  const essay = href.match(/^\/writing\/([a-z0-9-]+)$/);
++  if (essay) {
++    const slug = essay[1];
++    if (ctx.shelf.isPublic(slug)) return "ok";
++    if (!essayOk) return `is an essay that is not public (${ctx.shelf.entries.has(slug) ? "pending on the shelf" : "not on the shelf"})`;
++    return "waiting";
++  }
++  const section = href.match(/^\/writing\?section=([a-z0-9-]+)$/);
++  if (section) {
++    const live = new Set(ctx.shelf.liveEssays().map((e) => e.section));
++    return live.has(section[1]) ? "ok" : `names a shelf section with no public essay ("${section[1]}")`;
++  }
++  const [base, anchor] = href.split("#");
++  if (anchor && base === "/answers" && !ctx.answers.has(anchor)) return `names an Honest Answer that does not exist (#${anchor})`;
++  const r = resolveHref(href);
++  if (r.status === "ok") return "ok";
++  if (r.status === "redirect") return `only works through a redirect (link ${r.to} instead)`;
++  return r.status === "missing" ? "goes nowhere" : `cannot be checked (${r.status})`;
++}
++
++const isText = (x) => typeof x === "string" && x.trim().length > 0;
++
++/** One topic page's problems, and the essays it names that are not public yet. */
++export function topicProblems(page, fileSlug, ctx) {
++  const problems = [];
++  const waiting = [];
++  const fail = (where, msg) => problems.push(`${fileSlug}.json${where ? ` ${where}` : ""}: ${msg}`);
++  if (!page || typeof page !== "object" || Array.isArray(page)) return { problems: [`${fileSlug}.json: not a JSON object`], waiting };
++
++  const link = (where, l, opts = {}) => {
++    if (!l || typeof l !== "object") return fail(where, "is missing");
++    if (!isText(l.label)) fail(where, "needs a label");
++    if (opts.line !== false && !isText(l.line)) fail(where, "needs a line");
++    const s = hrefStatus(l.href, ctx, opts);
++    if (s === "waiting") waiting.push(`${fileSlug}: ${l.href} (${where})`);
++    else if (s !== "ok") fail(where, `${l.href} ${s}`);
++    return s;
++  };
++
++  if (page.slug !== fileSlug) fail("slug", `"${page.slug}" does not match the file name`);
++  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(fileSlug)) fail("", "the file name is not a lowercase slug");
++  if (!isText(page.title) || !page.title.trim().endsWith("?")) fail("title", "is the question as asked, ending in a question mark");
++  if (!isText(page.description) || page.description.length < 60 || page.description.length > 200) fail("description", "needs 60 to 200 characters (the search snippet)");
++  if (!Array.isArray(page.askedAs) || page.askedAs.length < 3 || !page.askedAs.every(isText)) fail("askedAs", "needs at least three phrasings people search");
++
++  // 1. The short answer.
++  const short = Array.isArray(page.short) ? page.short : [];
++  if (short.length < 1 || !short.every(isText)) fail("short", "needs its paragraphs");
++  const n = words(short.join(" "));
++  if (n < 150 || n > 250) fail("short", `is ${n} words (150 to 250)`);
++  if (STATISTIC.test(short.join(" "))) fail("short", "carries a statistic (a percentage or \"N in 10\"); the short answer argues from Scripture, history, and the essay");
++
++  // 2. Read this first: the lead, or the stand-in that shows until it is public.
++  let leadPublic = false;
++  if (page.essay !== null) {
++    const s = link("essay", page.essay, { essayOk: true });
++    if (typeof page.essay?.href === "string" && !page.essay.href.startsWith("/writing/")) fail("essay", "is an essay (/writing/<slug>); another kind of lead goes in essayStandIn with essay null");
++    leadPublic = s === "ok";
++  }
++  if (!leadPublic) {
++    if (!page.essayStandIn) fail("essayStandIn", "is needed: the lead essay is not public, and no slot stays empty");
++    else if (link("essayStandIn", page.essayStandIn) !== "ok") fail("essayStandIn", "must be a live page");
++  } else if (page.essayStandIn) link("essayStandIn", page.essayStandIn);
++  const also = Array.isArray(page.alsoEssays) ? page.alsoEssays : [];
++  if (!Array.isArray(page.alsoEssays)) fail("alsoEssays", "is a list (empty is fine)");
++  if (also.length > 2) fail("alsoEssays", "holds at most two further essays");
++  also.forEach((e, i) => {
++    link(`alsoEssays[${i}]`, e, { essayOk: true });
++    if (typeof e?.href === "string" && !e.href.startsWith("/writing/")) fail(`alsoEssays[${i}]`, "is an essay (/writing/<slug>)");
++  });
++  if (page.section !== undefined) {
++    const sec = page.section;
++    if (!isText(sec?.slug) || !isText(sec?.label) || !isText(sec?.line)) fail("section", "needs slug, label, and line");
++    else {
++      const s = hrefStatus(`/writing?section=${sec.slug}`, ctx);
++      if (s !== "ok") fail("section", s);
++    }
++  }
++  if (page.bothWays !== undefined) {
++    for (const side of ["right", "left"]) {
++      const w = page.bothWays?.[side];
++      if (!w) continue; // validate-politics.mjs names a missing side
++      link(`bothWays.${side}.essay`, w.essay, { line: false });
++      link(`bothWays.${side}.path`, w.path, { line: false });
++    }
++  }
++
++  // 3. Scripture, read in its world.
++  const passages = Array.isArray(page.scripture) ? page.scripture : [];
++  if (passages.length < 3 || passages.length > 5) fail("scripture", `has ${passages.length} passages (three to five)`);
++  passages.forEach((p, i) => {
++    if (!readRef(p?.ref)) fail(`scripture[${i}]`, `"${p?.ref}" is not a reference the parser can read`);
++    if (!isText(p?.line)) fail(`scripture[${i}]`, "needs its one line");
++    if (p?.context !== undefined) {
++      link(`scripture[${i}].context`, p.context, { line: false });
++      if (typeof p.context?.href === "string" && !p.context.href.startsWith("/resources/context/")) fail(`scripture[${i}].context`, "is a context guide (/resources/context/<slug>)");
++    }
++  });
++
++  // 4. The church has been here before.
++  if (!page.witness || !isText(page.witness.name)) fail("witness", "needs one witness from church history, named");
++  else link("witness", page.witness);
++
++  // 5. At the table.
++  const table = page.table;
++  if (!table || !isText(table.devotion)) fail("table", "needs a family devotion (its id, or \"tonight\")");
++  else {
++    if (table.devotion !== "tonight") {
++      const title = ctx.devotions.get(table.devotion);
++      if (!title) fail("table.devotion", `"${table.devotion}" is not in client/public/family/index.json`);
++      else if (table.label !== title) fail("table.label", `is the devotion's own title ("${title}")`);
++    }
++    if (!isText(table.line)) fail("table", "needs a line");
++    (Array.isArray(table.also) ? table.also : []).forEach((l, i) => link(`table.also[${i}]`, l));
++  }
++
++  // 6. Use this.
++  const use = page.use || {};
++  if (use.plan) {
++    link("use.plan", use.plan);
++    if (!String(use.plan.href).startsWith("/plans/")) fail("use.plan", "is an eight-week plan (/plans/<slug>)");
++  }
++  if (use.study) {
++    link("use.study", use.study);
++    if (!String(use.study.href).startsWith("/studyguides/")) fail("use.study", "is a study guide (/studyguides/<slug>)");
++  }
++  const tools = Array.isArray(use.tools) ? use.tools : [];
++  const toolCap = page.politics === true ? 4 : 2;
++  if (tools.length > toolCap) fail("use.tools", `holds at most ${toolCap} tools`);
++  tools.forEach((t, i) => link(`use.tools[${i}]`, t));
++  const paths = Array.isArray(use.paths) ? use.paths : [];
++  paths.forEach((t, i) => {
++    link(`use.paths[${i}]`, t);
++    if (!String(t?.href).startsWith("/pathways/")) fail(`use.paths[${i}]`, "is a guided path (/pathways/<slug>)");
++  });
++  if (!use.plan && !use.study && !tools.length && !paths.length) fail("use", "needs something to use: a plan, a study guide, a tool, or a path");
++
++  // Care, and crisis care where the page is sensitive.
++  const care = page.care === undefined ? [] : page.care;
++  if (!Array.isArray(care) || care.length > 2) fail("care", "is a list of at most two care pages");
++  (Array.isArray(care) ? care : []).forEach((c, i) => {
++    link(`care[${i}]`, c);
++    if (!String(c?.href).startsWith("/help/")) fail(`care[${i}]`, "is a Find Help page (/help/<slug>)");
++    if (c?.crisis !== undefined && (!Array.isArray(c.crisis) || !c.crisis.every((t) => CRISIS_TOPICS.has(t)))) fail(`care[${i}].crisis`, `names crisis lines from ${[...CRISIS_TOPICS].join(", ")}`);
++  });
++  if (typeof page.sensitive !== "boolean") fail("sensitive", "is true or false");
++  if (page.sensitive === true && !(Array.isArray(care) && care.some((c) => Array.isArray(c?.crisis) && c.crisis.length))) fail("care", "a sensitive page carries a care link with its crisis lines");
++  if (typeof page.politics !== "boolean") fail("politics", "is true or false");
++  if (page.politics !== true && POLITICS_WORDS.test([page.title, ...(page.askedAs || [])].join(" "))) fail("politics", "the question is about politics, so the page is flagged politics: true (validate-politics.mjs holds it to both directions)");
++  if (page.politics === true && !page.bothWays) fail("bothWays", "a politics page names both directions (validate-politics.mjs)");
++
++  if (!Array.isArray(page.folds) || !page.folds.every((h) => typeof h === "string" && h.startsWith("/pathways/"))) fail("folds", "lists the /pathways/ pages this page retires (none until James says yes, question 6)");
++  if (!ISO_DATE.test(page.updated ?? "")) fail("updated", "is a date (YYYY-MM-DD)");
++  if (page.reviewed !== null && !(ISO_DATE.test(page.reviewed?.on ?? "") && isText(page.reviewed?.by))) fail("reviewed", "is null until read, then { on, by }");
++
++  // House style over every reader-facing string; every reference in them parses.
++  for (const [where, s] of topicStrings(page)) {
++    for (const m of setAsideAllowed(s).matchAll(forbiddenRe)) fail(where, `Forbidden Language: "${m[0]}"`);
++    if (/—/.test(s) || /\s–\s/.test(s) || /--/.test(s)) fail(where, "carries an em-dash (use a comma, colon, period, or parentheses)");
++    if (s.includes("!")) fail(where, "carries an exclamation point (a topic page quotes no Scripture, so none at all)");
++    for (const m of s.matchAll(REFS)) if (!readRef(m[0])) fail(where, `"${m[0]}" is not a reference the parser can read`);
++  }
++  return { problems, waiting };
++}
++
++/** The index rows, as built: each resolves, and an essay not public yet names a live stand-in. */
++export function rowProblems(rows, ctx) {
++  const problems = [];
++  const waiting = [];
++  rows.forEach((r, i) => {
++    const where = `index row ${i + 1} ("${r.askedAs}")`;
++    if (!isText(r.askedAs)) problems.push(`${where}: needs the question in the reader's words`);
++    if (!isText(r.line)) problems.push(`${where}: needs a line`);
++    if (r.kind === "topic") return;
++    const s = hrefStatus(r.href, ctx, { essayOk: true });
++    if (s === "waiting") {
++      if (!r.standIn) problems.push(`${where}: ${r.href} is not public yet and the row names no standIn`);
++      else waiting.push(`index: ${r.href}`);
++    } else if (s !== "ok") problems.push(`${where}: ${r.href} ${s}`);
++    if (r.standIn) {
++      const t = hrefStatus(r.standIn, ctx);
++      if (t !== "ok") problems.push(`${where}: standIn ${r.standIn} ${t}`);
++    }
++    if (r.also) {
++      const t = hrefStatus(r.also.href, ctx);
++      if (t !== "ok") problems.push(`${where}: also ${r.also.href} ${t}`);
++      if (!isText(r.also.label)) problems.push(`${where}: also needs a label`);
++    }
++    for (const str of [r.askedAs, r.line, r.also?.label, r.also?.line].filter(isText)) {
++      for (const m of setAsideAllowed(str).matchAll(forbiddenRe)) problems.push(`${where}: Forbidden Language: "${m[0]}"`);
++      if (/—/.test(str) || /--/.test(str)) problems.push(`${where}: carries an em-dash`);
++      if (str.includes("!")) problems.push(`${where}: carries an exclamation point`);
++    }
++  });
++  const seen = new Set();
++  for (const r of rows) {
++    if (seen.has(r.href)) problems.push(`index: ${r.href} is opened by two rows; one question, one best page`);
++    seen.add(r.href);
++  }
++  return { problems, waiting };
++}
++
++/** The whole gate: the pages in `dir`, and the index built from them and the rows file. */
++export function checkTopics({ dir = path.join(ROOT, TOPICS_DIR), rowsFile = path.join(ROOT, ROWS_FILE), ctx = loadContext() } = {}) {
++  const pages = readTopicPages(dir);
++  const problems = [];
++  const waiting = [];
++  if (pages.length > MAX_PAGES) problems.push(`${pages.length} topic pages; at most ${MAX_PAGES} until search data argues for more (James's call)`);
++  for (const p of pages) {
++    if (!p.data) {
++      problems.push(`${p.file}: not readable JSON (${p.error})`);
++      continue;
++    }
++    const r = topicProblems(p.data, p.slug, ctx);
++    problems.push(...r.problems);
++    waiting.push(...r.waiting);
++  }
++  const built = buildTopicsIndex(pages, readRows(rowsFile));
++  problems.push(...built.problems);
++  const rows = rowProblems(built.index.rows, ctx);
++  problems.push(...rows.problems);
++  waiting.push(...rows.waiting);
++  return { pages: pages.length, rows: built.index.rows.length, problems, waiting };
++}
++
++if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
++  const at = process.argv.indexOf("--dir");
++  const dir = at > 0 ? path.resolve(process.argv[at + 1] ?? "") : undefined;
++  const { pages, rows, problems, waiting } = checkTopics(dir ? { dir } : {});
++  if (problems.length) {
++    console.error(`\n[validate-topics] ${problems.length} problem(s):\n`);
++    for (const p of problems) console.error(`  - ${p}`);
++    console.error("\nMASTER-PLAN 4.3 and 4.4 say what each slot holds; CLAUDE.md holds the Forbidden Language list.\n");
++    process.exit(1);
++  }
++  console.log(`[validate-topics] clean: ${pages} topic pages, ${rows} index rows.`);
++  if (waiting.length) {
++    console.log(`[validate-topics] ${waiting.length} essay link(s) wait for the shelf; the page shows the named stand-in until each is public:`);
++    for (const w of waiting) console.log(`  - ${w}`);
++  }
++}
+diff --git a/server/topics-gate.test.ts b/server/topics-gate.test.ts
+new file mode 100644
+index 00000000..a8f22f84
+--- /dev/null
++++ b/server/topics-gate.test.ts
+@@ -0,0 +1,158 @@
++/**
++ * The topics gate (U25): scripts/validate-topics.mjs, build-topics-index.mjs,
++ * and the politics page's both-directions check in validate-politics.mjs
++ * (scripts/lib/topics-politics.mjs). They pass on the topics as committed,
++ * and fail a seeded bad page with the reason a writer can act on.
++ */
++import { describe, it, expect, beforeAll, afterAll } from "vitest";
++import { spawnSync } from "node:child_process";
++import fs from "node:fs";
++import os from "node:os";
++import path from "node:path";
++import { checkTopics, loadContext, rowProblems, topicProblems } from "../scripts/validate-topics.mjs";
++import { buildTopicsIndex, readRows, readTopicPages, renderTopicsIndex } from "../scripts/lib/topics.mjs";
++import { checkTopicPolitics } from "../scripts/lib/topics-politics.mjs";
++
++const ROOT = path.resolve(import.meta.dirname, "..");
++const TOPICS = path.join(ROOT, "client/public/topics");
++const run = (script: string, ...args: string[]) =>
++  spawnSync(process.execPath, [path.join(ROOT, "scripts", script), ...args], { cwd: ROOT, encoding: "utf8" });
++const page = (slug: string) => JSON.parse(fs.readFileSync(path.join(TOPICS, `${slug}.json`), "utf8"));
++/** A topic page as parsed JSON, edited freely by the seeded cases. */
++type Page = ReturnType<typeof page>;
++
++let ctx: ReturnType<typeof loadContext>;
++let tmp: string;
++beforeAll(() => {
++  ctx = loadContext();
++  tmp = fs.mkdtempSync(path.join(os.tmpdir(), "topics-gate-"));
++});
++afterAll(() => fs.rmSync(tmp, { recursive: true, force: true }));
++
++/** The problems the gate finds in one page, changed by `edit`. */
++function problemsAfter(slug: string, edit: (p: Page) => void): string {
++  const p = page(slug);
++  edit(p);
++  return topicProblems(p, slug, ctx).problems.join("\n");
++}
++
++describe("the topics as committed", () => {
++  it("pass the gate, the index check, and the politics gate", () => {
++    const gate = run("validate-topics.mjs");
++    expect(gate.status, gate.stderr).toBe(0);
++    expect(gate.stdout).toMatch(/clean: 3 topic pages/);
++    const index = run("build-topics-index.mjs", "--check");
++    expect(index.status, index.stderr).toBe(0);
++    const politics = run("validate-politics.mjs");
++    expect(politics.status, politics.stderr).toBe(0);
++    expect(politics.stdout).toMatch(/1 politics topic page\(s\) hold both directions/);
++  });
++
++  it("build the index the site reads, with every page once and the central question first", () => {
++    const { index, problems } = buildTopicsIndex(readTopicPages(), readRows());
++    expect(problems).toEqual([]);
++    expect(renderTopicsIndex(index)).toBe(fs.readFileSync(path.join(TOPICS, "index.json"), "utf8"));
++    expect(index.pages.map((p: { slug: string }) => p.slug)).toEqual(["living-after-christendom", "faith-politics-and-the-flag", "raising-children-in-a-secular-age"]);
++    expect(index.rows[0].href).toBe("/topics/living-after-christendom");
++  });
++});
++
++describe("a seeded bad page fails, with its reason", () => {
++  it("house style: em-dash, exclamation point, Forbidden Language", () => {
++    const out = problemsAfter("living-after-christendom", (p) => {
++      p.short[0] = p.short[0].replace("The faith itself has not ended.", "The faith itself has not ended — not at all!");
++      p.witness.line += " We have to navigate it.";
++    });
++    expect(out).toMatch(/short\[0\]: carries an em-dash/);
++    expect(out).toMatch(/short\[0\]: carries an exclamation point/);
++    expect(out).toMatch(/witness\.line: Forbidden Language: "navigate"/);
++  });
++
++  it("a statistic, or a short answer outside 150 to 250 words", () => {
++    expect(problemsAfter("living-after-christendom", (p) => (p.short[1] += " About three in ten adults now say so."))).toMatch(/carries a statistic/);
++    expect(problemsAfter("living-after-christendom", (p) => (p.short[1] += " Some 30% say so."))).toMatch(/carries a statistic/);
++    expect(problemsAfter("living-after-christendom", (p) => (p.short = [p.short[0]]))).toMatch(/short: is \d+ words \(150 to 250\)/);
++  });
++
++  it("an empty slot: a lead that is not public with no stand-in, too few passages, no witness", () => {
++    const out = problemsAfter("faith-politics-and-the-flag", (p) => {
++      delete p.essayStandIn;
++      p.scripture = p.scripture.slice(0, 2);
++      delete p.witness;
++    });
++    expect(out).toMatch(/essayStandIn: is needed: the lead essay is not public/);
++    expect(out).toMatch(/scripture: has 2 passages/);
++    expect(out).toMatch(/witness: needs one witness/);
++  });
++
++  it("a stand-in that is not live, a redirect, an address that goes nowhere, an Honest Answer that does not exist", () => {
++    const out = problemsAfter("faith-politics-and-the-flag", (p) => {
++      p.essayStandIn.href = "/writing/what-render-unto-caesar-actually-means";
++      p.witness.href = "/church-history";
++      p.use.study.href = "/studyguides/no-such-study";
++      p.care[0].href = "/help/no-such-need";
++    });
++    expect(out).toMatch(/essayStandIn: \/writing\/what-render-unto-caesar-actually-means is an essay that is not public/);
++    expect(out).toMatch(/witness: \/church-history only works through a redirect/);
++    expect(out).toMatch(/use\.study: \/studyguides\/no-such-study goes nowhere/);
++    const rows = rowProblems([{ askedAs: "Q?", href: "/answers#no-such-answer", kind: "answer", line: "A line." }], ctx).problems.join("\n");
++    expect(rows).toMatch(/names an Honest Answer that does not exist/);
++  });
++
++  it("a reference the parser cannot read, and a devotion that is not in the family index", () => {
++    const out = problemsAfter("raising-children-in-a-secular-age", (p) => {
++      p.scripture[0].ref = "Hezekiah 3:16";
++      p.scripture[1].line += " (John 99:1)";
++      p.table.devotion = "no-such-devotion";
++    });
++    expect(out).toMatch(/"Hezekiah 3:16" is not a reference the parser can read/);
++    expect(out).toMatch(/"John 99:1" is not a reference the parser can read/);
++    expect(out).toMatch(/"no-such-devotion" is not in client\/public\/family\/index\.json/);
++    expect(problemsAfter("living-after-christendom", (p) => (p.table.label = "Another Title"))).toMatch(/table\.label: is the devotion's own title/);
++  });
++
++  it("too many tools, a sensitive page with no crisis care, a politics question without the flag", () => {
++    const tools = (p: Page) => (p.use.tools = [1, 2, 3].map(() => ({ ...p.use.study })));
++    expect(problemsAfter("living-after-christendom", tools)).toMatch(/use\.tools: holds at most 2 tools/);
++    expect(problemsAfter("living-after-christendom", (p) => (p.sensitive = true))).toMatch(/a sensitive page carries a care link with its crisis lines/);
++    expect(problemsAfter("raising-children-in-a-secular-age", (p) => p.askedAs.push("how should christians vote"))).toMatch(/flagged politics: true/);
++  });
++
++  it("an essay row with no stand-in while the essay is not public", () => {
++    const rows = rowProblems([{ askedAs: "Q?", href: "/writing/why-didnt-the-bible-ban-slavery", kind: "essay", line: "A line." }], ctx).problems.join("\n");
++    expect(rows).toMatch(/is not public yet and the row names no standIn/);
++  });
++
++  it("a seventh topic page, and a page no row lists", () => {
++    const dir = path.join(tmp, "seven");
++    fs.mkdirSync(dir, { recursive: true });
++    const base = page("living-after-christendom");
++    for (let i = 1; i <= 7; i++) fs.writeFileSync(path.join(dir, `topic-${i}.json`), JSON.stringify({ ...base, slug: `topic-${i}` }));
++    const rowsFile = path.join(tmp, "rows.json");
++    fs.writeFileSync(rowsFile, JSON.stringify({ rows: [1, 2, 3, 4, 5, 6].map((i) => ({ topic: `topic-${i}` })) }));
++    const { problems } = checkTopics({ dir, rowsFile, ctx });
++    expect(problems.join("\n")).toMatch(/7 topic pages; at most 6/);
++    expect(problems.join("\n")).toMatch(/topic-7\.json: no row in scripts\/data\/topics-rows\.json lists this topic/);
++  });
++});
++
++describe("the politics page holds both directions (validate-politics.mjs)", () => {
++  function politicsFindings(edit: (p: Page) => void): string {
++    const dir = path.join(tmp, `politics-${Math.random().toString(36).slice(2)}`);
++    fs.mkdirSync(path.join(dir, "topics"), { recursive: true });
++    const p = page("faith-politics-and-the-flag");
++    edit(p);
++    fs.writeFileSync(path.join(dir, "topics", "faith-politics-and-the-flag.json"), JSON.stringify(p));
++    return checkTopicPolitics({ publicDir: dir, forbidden: ["leverage"] }).findings.map(([, m]: [string, string]) => m).join("\n");
++  }
++
++  it("passes as committed", () => {
++    expect(politicsFindings(() => {})).toBe("");
++  });
++
++  it("fails a missing side, a side made a strawman by brevity, and a short answer that names one side", () => {
++    expect(politicsFindings((p) => delete p.bothWays.left)).toMatch(/missing the left side/);
++    expect(politicsFindings((p) => (p.bothWays.left.line = "The cause"))).toMatch(/bothWays imbalance/);
++    expect(politicsFindings((p) => (p.short = p.short.map((s: string) => s.replace(/\bleft\b/g, "other side"))))).toMatch(/names the temptation on the right and on the left/);
++  });
++});
+-- 
+2.43.0
+

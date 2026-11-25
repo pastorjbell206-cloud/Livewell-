@@ -1,11 +1,13 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
 import { useState } from "react";
-import { ArrowLeft, BookOpen, AlertTriangle, Scale, Lightbulb, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowLeft, BookOpen, AlertTriangle, Scale, Lightbulb, ChevronDown, ChevronUp, Coins, Flame, Gem, HeartPulse, HandHeart, Hammer, Flower2, FlameKindling, Baby, Heart, CircleHelp, Users, Moon, MessageCircle, type LucideIcon } from "lucide-react";
 
+import NextStep from "@/components/NextStep";
 /* ─────────────────────────────────────────────────── types ── */
 
 interface Passage {
@@ -1064,34 +1066,31 @@ const TOPICS: Topic[] = [
 
 /* ─────────────────────────────────────────── icon component ── */
 
+const TOPIC_ICONS: Record<string, LucideIcon> = {
+  coins: Coins,
+  flame: Flame,
+  rings: Gem,
+  "heart-pulse": HeartPulse,
+  "hand-heart": HandHeart,
+  hammer: Hammer,
+  candle: Flower2,
+  "flame-kindling": FlameKindling,
+  baby: Baby,
+  heart: Heart,
+  scale: Scale,
+  "circle-help": CircleHelp,
+  shepherd: Users,
+  moon: Moon,
+  "message-circle": MessageCircle,
+};
+
 function TopicIcon({ icon, size = 32 }: { icon: string; size?: number }) {
-  const s: React.CSSProperties = {
-    width: size,
-    height: size,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: size * 0.55,
-    lineHeight: 1,
-  };
-  const map: Record<string, string> = {
-    coins: "\u{1FA99}",
-    flame: "\u{1F525}",
-    rings: "\u{1F48D}",
-    "heart-pulse": "\u{1FA76}",
-    "hand-heart": "\u{1FAF6}",
-    hammer: "\u{1F528}",
-    candle: "\u{1F56F}️",
-    "flame-kindling": "\u{1F4A2}",
-    baby: "\u{1F476}",
-    heart: "❤️",
-    scale: "⚖️",
-    "circle-help": "❓",
-    shepherd: "\u{1F9D1}‍\u{1F33E}",
-    moon: "\u{1F319}",
-    "message-circle": "\u{1F4AC}",
-  };
-  return <span style={s}>{map[icon] || "\u{1F4D6}"}</span>;
+  const Icon = TOPIC_ICONS[icon] ?? BookOpen;
+  return (
+    <span style={{ width: size, height: size, display: "flex", alignItems: "center", justifyContent: "center", color: "var(--ink)", flexShrink: 0 }}>
+      <Icon size={Math.round(size * 0.75)} strokeWidth={1.75} aria-hidden="true" />
+    </span>
+  );
 }
 
 /* ──────────────────────────────────────── passage accordion ── */
@@ -1339,7 +1338,7 @@ export default function BibleReference() {
   return (
     <Layout>
       <SEOMeta
-        title="What the Bible Actually Says About… -- Topical Scripture Reference"
+        title="Misread Bible Topics: What the Text Says"
         description="A comprehensive topical reference covering 15 life topics with full biblical data, interpretive range, and practical application. Not proof-texts. Context, common misuses, and what the passages actually teach."
         keywords="what the Bible says about money, Bible and suffering, Bible marriage, Bible anxiety, Bible forgiveness, topical Bible study, Scripture in context"
         structuredData={{
@@ -1355,58 +1354,7 @@ export default function BibleReference() {
       />
 
       {/* ── Hero ── */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--charcoal-fg)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "720px", margin: "0 auto" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 600,
-              letterSpacing: "0.18em",
-              textTransform: "uppercase",
-              color: "var(--mustard)",
-              fontFamily: "var(--sans)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE REFERENCE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(30px, 5vw, 52px)",
-              fontWeight: 400,
-              fontFamily: "var(--display)",
-              lineHeight: 1.12,
-              marginBottom: "20px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            What the Bible{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>Actually</em>{" "}
-            Says About…
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--sans)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Not proof-texts. Not devotional platitudes. The full biblical data on
-            15 life topics, with context, common misuses, interpretive range, and
-            what the passages actually teach.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/bible-says" title="Misused Bible Verses: What They Actually Mean" line="Not proof-texts. Not devotional platitudes. The full biblical data on 15 life topics, with context, common misuses, interpretive range, and what the passages actually teach." plate="book" />
 
       {/* ── Content ── */}
       <section
@@ -1531,6 +1479,7 @@ export default function BibleReference() {
                   color: "var(--ink-muted)",
                   marginBottom: "32px",
                   padding: 0,
+                  minHeight: "44px",
                 }}
               >
                 <ArrowLeft size={16} />
@@ -1699,6 +1648,8 @@ export default function BibleReference() {
                   {topic.takeaway}
                 </p>
               </div>
+
+              <NextStep id="study-bible" line="Read these passages in their whole chapter, with notes beside the text." />
 
               {/* Back to topics link at bottom */}
               <div style={{ textAlign: "center", marginTop: "48px" }}>

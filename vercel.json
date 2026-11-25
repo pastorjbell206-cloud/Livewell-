@@ -1,4 +1,9 @@
 {
+  "git": {
+    "deploymentEnabled": {
+      "claude/todo-implementation-hhp4bm": false
+    }
+  },
   "buildCommand": "pnpm run build:vercel",
   "outputDirectory": "dist/public",
   "trailingSlash": false,
@@ -6,7 +11,7 @@
   "functions": {
     "api/index.ts": {
       "maxDuration": 60,
-      "includeFiles": "api/{_ebooks,_data}/**"
+      "includeFiles": "{api/_data,content/held-downloads}/**"
     }
   },
   "headers": [
@@ -246,7 +251,7 @@
     },
     {
       "source": "/writing/the-monster-in-the-mirror",
-      "destination": "/books/the-monster-in-the-mirror",
+      "destination": "/books/blind-spots",
       "permanent": true
     },
     {
@@ -421,12 +426,12 @@
     },
     {
       "source": "/writing/five-biggest-mistakes-new-pastors",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/stopped-competing-church-across-town",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -436,22 +441,22 @@
     },
     {
       "source": "/writing/okay-to-see-counselor",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
       "source": "/writing/anxiety-perfectionism-pastor-breaking-cycle",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
       "source": "/writing/not-your-churchs-attendance-numbers",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/five-sermon-habits-shrinking-faith",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -461,37 +466,37 @@
     },
     {
       "source": "/writing/metrics-tell-church-healthy",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/when-fire-someone-with-integrity",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/staff-culture-no-burnout",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/healthy-pastor-referral-network",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/three-small-churches-coplanted",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/before-launch-ministry-ask-other-church",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/white-churches-wrong-about-diversity",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -506,7 +511,7 @@
     },
     {
       "source": "/writing/national-pastors-redefining-missionary",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -526,27 +531,27 @@
     },
     {
       "source": "/writing/delegation-is-not-weakness",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/vision-without-community-fantasy",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/pastors-authority-relational",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/conflict-is-not-failure",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/building-leadership-team",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -556,22 +561,22 @@
     },
     {
       "source": "/writing/courage-to-be-different",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/collaboration-across-denominations",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/church-response-to-culture",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/interior-life-of-pastor",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
@@ -661,7 +666,7 @@
     },
     {
       "source": "/writing/sabbatical-why-church-should-require",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
@@ -676,22 +681,22 @@
     },
     {
       "source": "/writing/revitalize-or-replant",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/give-feedback-changes-behavior",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/young-adults-coming-back-church",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/scandals-teaching-accountability",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -701,17 +706,17 @@
     },
     {
       "source": "/writing/church-split-surviving-learning-forward",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/city-wide-church-together",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
       "source": "/writing/unreached-people-groups-closest-to-you",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/writing",
       "permanent": true
     },
     {
@@ -745,6 +750,136 @@
       "permanent": true
     },
     {
+      "source": "/writing/reconstruction-manual",
+      "destination": "/writing/excavation-not-demolition",
+      "permanent": true
+    },
+    {
+      "source": "/writing/when-apologetics-isnt-enough",
+      "destination": "/writing/excavation-not-demolition",
+      "permanent": true
+    },
+    {
+      "source": "/writing/can-you-trust-the-bible",
+      "destination": "/writing/why-trust-the-bible",
+      "permanent": true
+    },
+    {
+      "source": "/writing/teen-can-you-actually-trust-the-bible",
+      "destination": "/writing/why-trust-the-bible",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-historical-jesus-without-the-shortcuts",
+      "destination": "/writing/did-the-resurrection-happen",
+      "permanent": true
+    },
+    {
+      "source": "/writing/apologetics-where-does-morality-come-from",
+      "destination": "/writing/can-you-be-good-without-god",
+      "permanent": true
+    },
+    {
+      "source": "/writing/morality-without-god-and-with-him",
+      "destination": "/writing/can-you-be-good-without-god",
+      "permanent": true
+    },
+    {
+      "source": "/writing/is-god-in-control",
+      "destination": "/writing/why-does-god-allow-suffering",
+      "permanent": true
+    },
+    {
+      "source": "/writing/natural-evil-and-animal-suffering",
+      "destination": "/writing/why-does-god-allow-suffering",
+      "permanent": true
+    },
+    {
+      "source": "/writing/apologetics-why-is-god-hidden",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/can-you-have-faith-and-doubt",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/emotional-doubter",
+      "destination": "/writing/why-does-god-feel-far-away",
+      "permanent": true
+    },
+    {
+      "source": "/writing/sexual-abuse-crisis-in-the-church",
+      "destination": "/writing/doubt-after-church-abuse",
+      "permanent": true
+    },
+    {
+      "source": "/writing/spiritual-abuse-how-good-theology-gets-weaponized",
+      "destination": "/writing/doubt-after-church-abuse",
+      "permanent": true
+    },
+    {
+      "source": "/writing/why-churches-close-and-what-comes-next",
+      "destination": "/writing/the-rise-of-the-nones",
+      "permanent": true
+    },
+    {
+      "source": "/writing/why-people-are-leaving-the-church",
+      "destination": "/writing/the-rise-of-the-nones",
+      "permanent": true
+    },
+    {
+      "source": "/writing/why-young-adults-arent-coming-back",
+      "destination": "/writing/the-rise-of-the-nones",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-church-captive-to-the-culture-war",
+      "destination": "/writing/what-render-unto-caesar-actually-means",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-third-temptation",
+      "destination": "/writing/what-render-unto-caesar-actually-means",
+      "permanent": true
+    },
+    {
+      "source": "/writing/church-abandoned-public-square",
+      "destination": "/writing/what-a-christian-owes-the-city",
+      "permanent": true
+    },
+    {
+      "source": "/writing/exile-is-not-the-end",
+      "destination": "/writing/what-a-christian-owes-the-city",
+      "permanent": true
+    },
+    {
+      "source": "/writing/jeremiah-letter-exiles",
+      "destination": "/writing/what-a-christian-owes-the-city",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-trinity-is-not-optional",
+      "destination": "/writing/the-council-of-nicaea-what-was-decided-in-325",
+      "permanent": true
+    },
+    {
+      "source": "/writing/six-verses-we-memorized",
+      "destination": "/writing/what-the-original-audience-heard",
+      "permanent": true
+    },
+    {
+      "source": "/writing/the-whole-counsel",
+      "destination": "/writing/what-the-original-audience-heard",
+      "permanent": true
+    },
+    {
+      "source": "/writing/what-dies-when-christendom-dies",
+      "destination": "/writing/the-persecution-we-invented",
+      "permanent": true
+    },
+    {
       "source": "/articles",
       "destination": "/writing",
       "permanent": true
@@ -771,7 +906,7 @@
     },
     {
       "source": "/resources-for-pastors",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
@@ -805,53 +940,108 @@
       "permanent": true
     },
     {
+      "source": "/books/when-god-bless-america",
+      "destination": "/books/a-higher-allegiance",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-monster-in-the-mirror",
+      "destination": "/books/blind-spots",
+      "permanent": true
+    },
+    {
       "source": "/books/raising-believers",
-      "destination": "/books",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/when-god-bless-america/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/believe/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/deconstruction-of-faith/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/raising-believers/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-monster-in-the-mirror/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/the-reliability-of-scripture/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/bible-and-homosexuality/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/bible-and-transgender-identity/thank-you",
+      "destination": "/downloads",
+      "permanent": true
+    },
+    {
+      "source": "/books/critical-race-theory-biblical/thank-you",
+      "destination": "/downloads",
       "permanent": true
     },
     {
       "source": "/leadership",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/leadership/:path*",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/pastors",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/for-leaders",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/for-pastors",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/sermon-series",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/study",
       "permanent": true
     },
     {
       "source": "/pastoral-burnout",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/help/pastors",
       "permanent": true
     },
     {
       "source": "/the-pastoral-angle",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
       "source": "/pastors-resource-wall",
-      "destination": "https://pastorsconnectionnetwork.com",
+      "destination": "/resources",
       "permanent": true
     },
     {
@@ -895,121 +1085,6 @@
       "permanent": true
     },
     {
-      "source": "/consider-the-birds",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/where-your-treasure-is",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/alone-in-a-crowded-church",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/covenant",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/babylon",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-read-the-bible",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/be-true-to-yourself",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/what-belongs-to-the-poor",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/rule-of-life",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/why-not-what",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/sermon-on-the-mount-as-politics",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/prophetic-justice-101",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/marriage-in-ministry",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/the-loneliness-of-the-pastor",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/healwell",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/born-again-from-atheism",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/the-god-who-is-not-nice",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/faith-after-deconstruction",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/ordinary-holiness",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/the-scandal-of-the-cross",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/heaven-is-not-your-reward",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/prayer-in-the-dark",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
-      "source": "/the-body-you-left",
-      "destination": "/books",
-      "permanent": true
-    },
-    {
       "source": "/writing/young-adults-leaving-faith",
       "destination": "/life/the-wayward-child",
       "permanent": true
@@ -1035,11 +1110,6 @@
       "permanent": true
     },
     {
-      "source": "/explore",
-      "destination": "/writing",
-      "permanent": true
-    },
-    {
       "source": "/library",
       "destination": "/writing",
       "permanent": true
@@ -1057,6 +1127,11 @@
     {
       "source": "/pathways",
       "destination": "/writing",
+      "permanent": true
+    },
+    {
+      "source": "/pathways/discipleship",
+      "destination": "/start",
       "permanent": true
     },
     {
@@ -1200,13 +1275,83 @@
       "permanent": true
     },
     {
+      "source": "/membership",
+      "destination": "/subscribe",
+      "permanent": true
+    },
+    {
+      "source": "/membership/:path*",
+      "destination": "/subscribe",
+      "permanent": true
+    },
+    {
+      "source": "/ebook/what-elders-are-for/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/qualified-elder/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/finding-installing-elders/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/when-elders-disagree/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/removing-an-elder/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/the-patient-pastor/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/changing-the-unchangeable/:path*",
+      "destination": "/resources/hard-issues-series",
+      "permanent": false
+    },
+    {
+      "source": "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.pdf",
+      "destination": "/ebook/the-monster-in-the-mirror/Blind-Spots.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ebook/the-monster-in-the-mirror/The-Monster-in-the-Mirror.epub",
+      "destination": "/ebook/the-monster-in-the-mirror/Blind-Spots.epub",
+      "permanent": true
+    },
+    {
+      "source": "/ebook/when-god-bless-america/When-God-Bless-America.pdf",
+      "destination": "/ebook/when-god-bless-america/A-Higher-Allegiance.pdf",
+      "permanent": true
+    },
+    {
+      "source": "/ebook/when-god-bless-america/When-God-Bless-America.epub",
+      "destination": "/ebook/when-god-bless-america/A-Higher-Allegiance.epub",
+      "permanent": true
+    },
+    {
+      "source": "/authors/:slug",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
       "source": "/work-with-james",
       "destination": "/speaking",
       "permanent": true
     },
     {
-      "source": "/connect",
-      "destination": "/about",
+      "source": "/james",
+      "destination": "/connect",
       "permanent": true
     },
     {
@@ -1247,6 +1392,11 @@
     {
       "source": "/church-hurt",
       "destination": "/help/church-hurt",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/my-library",
       "permanent": true
     }
   ],

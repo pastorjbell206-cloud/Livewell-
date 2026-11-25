@@ -1,0 +1,65 @@
+{
+  "piece": "did-christianity-copy-pagan-myths",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Clean. Read start to finish as the skeptic, this sounds like a person who went and read Plutarch, not a machine summarizing apologetics. Literal checks: zero em-dashes, zero exclamation points, zero Forbidden Language hits, no hedges from the list, no connective filler; the three semicolons are all inside quoted Scripture. Paragraphs average 87 words and range from 9 to 136, mean sentence 17.6 words, contractions throughout. It concedes before it answers (December 25, Gregory's letter, Adonis at Byblos, Mettinger against Smith), criticizes Christians as hard as the film, and ends on weight rather than recap. What is left is small: a few repeated verbal habits a careful ear would notice (five 'nobody' sentences, the 'that is a real parallel' concession formula three times, the method stated three times, a run of 'Name, a Nationality Discipline scholar,' appositives) and one sentence that reads like a fact-checker's compromise. The reason voice is 8 and not 10 is that the essay could have been written by any careful, fair-minded Christian historian; apart from 'my own side of the Reformation' James himself is not in it, and only he can supply that.",
+  "findings": [
+    {
+      "quote": "Nobody in the story imagines a virgin.",
+      "tell": "Repeated sentence frame (verbal tic)",
+      "why": "'Nobody' carries five sentences in the piece ('nobody believes in Horus anymore', 'Nobody in the story imagines a virgin', 'Nobody asks which year Osiris died', 'Nobody borrowing from the heroes would have chosen that', 'that nobody needs to check'), three of them as the short verdict that closes a point. Once or twice it is a man talking; five times a careful reader hears a stamp. Keep the Horus, Osiris and final-question uses, which are the strongest, and vary this one and the next.",
+      "replacement": "There's no virgin anywhere in the story.",
+      "severity": "should"
+    },
+    {
+      "quote": "Nobody borrowing from the heroes would have chosen that.",
+      "tell": "Repeated sentence frame (verbal tic) used as paragraph closer",
+      "why": "Same 'Nobody ...' verdict frame, fourth occurrence, again as the short closing line of a paragraph. The point is right and should stay; only the frame is worn by now.",
+      "replacement": "A writer borrowing from the heroes wouldn't have chosen that.",
+      "severity": "should"
+    },
+    {
+      "quote": "That is a real parallel. But it was written down about a century after Paul's letters",
+      "tell": "Concession formula repeated ('real parallel / real resemblances ... But')",
+      "why": "The essay concedes in the same words three times: 'Those are real resemblances, mostly in ritual. But no surviving source', 'That is a real parallel. But it was written down', and 'there are no real parallels at all. There are.' (plus 'The resemblances that are real' in the Ehrman paragraph). The concessions themselves are the best thing in the piece; the identical 'real X. But' wording makes the fairness sound like a procedure. Vary this one and leave the others.",
+      "replacement": "The likeness is there. But it was written down about a century after Paul's letters",
+      "severity": "consider"
+    },
+    {
+      "quote": "The way to answer it is to read what the old sources actually say.",
+      "tell": "Method announced (mild rulebook leakage), then announced again",
+      "why": "The plan is stated here, stated again at the end of the next section ('it has to be tested against what the ancient sources say about Horus, Mithras and the rest'), again in the heading 'Testing the Claims Against the Sources', and once more in the standfirst. One statement is his plain signposting; four is the prose describing its own method. Cutting this first one costs nothing, and the paragraph then ends on the skeptic's own line, 'nobody believes in Horus anymore', which is the stronger place to stop before the concessions begin.",
+      "replacement": "(delete the sentence; the paragraph ends at \"and nobody believes in Horus anymore.\")",
+      "severity": "consider"
+    },
+    {
+      "quote": "He also wrote that, as far as he was aware, there was no evidence, on the face of it, that the Christian proclamation of Jesus' death and resurrection had been built from those myths.",
+      "tell": "Essay voice where a person thinking should be (double-hedged, committee-shaped sentence)",
+      "why": "Two parenthetical hedges interrupt one sentence, and it reads like a fact-checker's compromise rather than a man explaining what Mettinger said. Both hedges are checked against the source (the ledger ties them to his 'as far as I am aware' and 'prima facie'), so both must stay; they can be carried in spoken word order.",
+      "replacement": "And he wrote that, so far as he knew, nothing on the face of it showed that the Christian proclamation of Jesus' death and resurrection had been built from those myths.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Ralph Woodrow, an evangelical writer, popularized Hislop in the 1960s in a book called *Babylon Mystery Religion*.",
+      "tell": "Templated introductions (Name, a Nationality Discipline scholar, verb), a soft form of the scholar parade",
+      "why": "Every witness enters the same way: 'Plutarch, a Greek writer and priest at Delphi,', 'Pausanias, a Greek traveler of the second century,', 'Tryggve Mettinger, a Swedish Old Testament scholar,', 'Tacitus, a Roman historian who despised the Christians,', 'Martin Hengel, a German New Testament scholar,', 'Alexander Hislop, a Scottish minister,', 'Ralph Woodrow, an evangelical writer,'. None is decoration (each name does work) and the identifications help a reader who has never heard of them, so this is not a parade. But Hislop and Woodrow arrive three paragraphs apart in the identical shape, and that is where the ear catches it. Turning one of them breaks the pattern.",
+      "replacement": "In the 1960s an evangelical writer named Ralph Woodrow popularized Hislop in a book called *Babylon Mystery Religion*.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The concessions are real and specific, not gestures: the calendar of 354, Gregory's letter to Mellitus, Bede on Eostre, Plutarch's solstice birth of Harpocrates, Adonis at Byblos. A skeptic can check each one and will find the essay told him the truth against its own side.",
+    "It refuses to claim more than the field does: Mettinger is set against Smith, Lewis is said to have leaned on Frazer more than specialists now would, and 'Mithras came later' is called too quick. That is the mature register's 'fair before sharp' done rather than announced.",
+    "'Where Christians Have Overstated Their Case' turns the mirror properly: Justin's demons, Hislop, Woodrow's retraction, and 'how many unchecked claims we have passed along because they made the faith look good.' The 'we' implicates without the stamp phrases the brief bans.",
+    "Sounds spoken: 'That's too quick.', 'There are.', 'this year and next year and every year', 'Ehrman doesn't believe Jesus rose. He just doesn't think copying explains why his followers said he did.' Contractions fall where speech would put them.",
+    "'A myth about the seasons has no use for a provincial governor.' is the one earned verdict line, and it is concrete rather than embroiderable.",
+    "Headings are plain and descriptive; no standfirst antithesis; no altar call; the ending passes through Acts 17 and Romans 6:9 and leaves a question on the reader instead of a recap.",
+    "Mechanically clean: no em-dashes, no exclamation points, no Forbidden Language, no hedges, no filler connectives, no stated title, years, book count or denomination, and no biography beyond 'my own side of the Reformation', which the ledger confirms as permitted."
+  ],
+  "for_james": [
+    "The one thing no editor can add: you came to faith from atheism, and this is an atheist's argument. If you met the Horus/Mithras list yourself before you believed (or a real person has brought it to you since), one plain sentence saying so, in the third paragraph or just before 'Where Christians Have Overstated Their Case', would make this unmistakably yours. Right now the essay is fair and exact but could have been written by any careful Christian historian. I have not written that sentence because it would have to be invented; only supply it if it is true.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree here, and I judged by VOICE-JAMES-BELL.md as instructed. The profile asks for 2-4 sentence paragraphs, 1,500-2,500 words, a Greek or Hebrew word, a real person in a real situation, three 'Monday morning' questions with a concrete practice, and a line built to be screenshotted. This essay runs about 3,600 words in developed 87-word paragraphs, has no application box and no engineered pull-line, which is what the mature register calls for. I did not push it toward the profile. If you want the Monday-morning questions back on essays like this one, say so.",
+    "All six findings are small wording changes; none touches a quotation, date, name, Scripture reference or checked claim in the ledger. The Mettinger rewording keeps both of his hedges ('as far as I am aware', 'prima facie') and should be accepted or declined by you, since it paraphrases a scholar.",
+    "The same fixes apply to the draft at /home/user/livewell-essays/docs/work/essays/did-christianity-copy-pagan-myths.md, which matches the published body."
+  ]
+}

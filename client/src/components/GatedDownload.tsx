@@ -9,6 +9,9 @@ import { Download, Loader2, Check } from "lucide-react";
 
 const GATE_KEY = "lw-toolkit-unlocked";
 
+/** Every control here is at least 44 px tall; the buttons were 39 (the walk's polish, 2026-11-23). Size only: whether it asks for an email waits for James. */
+const TARGET = "44px";
+
 function alreadyUnlocked(): boolean {
   try { return localStorage.getItem(GATE_KEY) === "1"; } catch { return false; }
 }
@@ -62,7 +65,7 @@ export default function GatedDownload({
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", textDecoration: "none", borderRadius: "2px" }}
+          style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: TARGET, fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", textDecoration: "none", borderRadius: "2px" }}
         >
           <Download size={15} /> {label}
         </a>
@@ -80,7 +83,7 @@ export default function GatedDownload({
       <button
         onClick={() => setOpen(true)}
         aria-expanded={open}
-        style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", border: "none", borderRadius: "2px", cursor: "pointer" }}
+        style={{ display: "inline-flex", alignItems: "center", gap: "8px", minHeight: TARGET, fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 18px", border: "none", borderRadius: "2px", cursor: "pointer" }}
       >
         <Download size={15} /> {label}
       </button>
@@ -97,12 +100,12 @@ export default function GatedDownload({
         onChange={(e) => setEmail(e.target.value)}
         placeholder="you@example.com"
         aria-label="Email to receive the toolkit"
-        style={{ flex: "1 1 200px", padding: "11px 12px", fontFamily: "var(--B)", fontSize: "16px", border: "1px solid var(--border)", borderRadius: "2px", background: "var(--card)", color: "var(--ink)", outline: "none" }}
+        style={{ flex: "1 1 200px", minHeight: TARGET, padding: "11px 12px", fontFamily: "var(--B)", fontSize: "16px", border: "1px solid var(--border)", borderRadius: "2px", background: "var(--card)", color: "var(--ink)", outline: "none" }}
       />
       <button
         type="submit"
         disabled={busy}
-        style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 16px", border: "none", borderRadius: "2px", cursor: busy ? "default" : "pointer" }}
+        style={{ display: "inline-flex", alignItems: "center", gap: "6px", minHeight: TARGET, fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600, color: "var(--bone)", background: "var(--ink)", padding: "11px 16px", border: "none", borderRadius: "2px", cursor: busy ? "default" : "pointer" }}
       >
         {busy ? <Loader2 size={15} className="animate-spin" /> : <Check size={15} />} Get the download
       </button>

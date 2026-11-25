@@ -1,10 +1,14 @@
 import Layout from "@/components/Layout";
 import { scrollBehavior } from "@/lib/motion";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import ScriptureNote from "@/components/ScriptureNote";
 import { Link } from "wouter";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { ArrowLeft, ArrowRight, ChevronRight, Printer, AlertTriangle } from "lucide-react";
+import { ResultNext } from "@/components/tool-shell";
+import { nextPagesFor } from "@/lib/toolNext";
 
 /* ── Types ─────────────────────────────────────────────────────── */
 
@@ -36,7 +40,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     id: "communication",
     label: "Communication Breakdown",
     description:
-      "When you and your spouse are talking past each other -- or have stopped talking at all. The silence that grows between two people who share a bed is louder than any argument.",
+      "When you and your spouse are talking past each other, or have stopped talking at all. The silence that grows between two people who share a bed is louder than any argument.",
     steps: [
       {
         number: 1,
@@ -45,11 +49,11 @@ const CONFLICT_TYPES: ConflictType[] = [
           "Before you can repair anything, you have to agree on what broke. Not your interpretation of it. Not the story you have been rehearsing in your head for three days. What actually happened, stripped of motive and accusation.",
         questions: [
           { text: "What specific moment or exchange triggered this conflict?" },
-          { text: "If a camera had recorded the conversation, what would it show -- without commentary?" },
+          { text: "If a camera had recorded the conversation, what would it show, without commentary?" },
           { text: "When did you first realize this was no longer a normal conversation?" },
         ],
         scripture: {
-          text: "Everyone should be quick to listen, slow to speak and slow to become angry.",
+          text: "My beloved brothers, understand this: Everyone should be quick to listen, slow to speak, and slow to anger...",
           reference: "James 1:19",
         },
         warning:
@@ -61,12 +65,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "There is a difference between 'You made me feel ignored' and 'I feel ignored.' The first is an accusation disguised as vulnerability. The second is honesty. The difference is one word, and it changes everything.",
         questions: [
-          { text: "What emotion did you feel during the exchange -- not what you thought, but what you felt in your body?" },
+          { text: "What emotion did you feel during the exchange, not what you thought, but what you felt in your body?" },
           { text: "Is this feeling familiar? Have you felt it before this relationship?" },
-          { text: "What is the emotion underneath the anger -- is it fear, grief, loneliness, or something else?" },
+          { text: "What is the emotion underneath the anger: is it fear, grief, loneliness, or something else?" },
         ],
         scripture: {
-          text: "Search me, God, and know my heart; test me and know my anxious thoughts.",
+          text: "Search me, O God, and know my heart; test me and know my concerns.",
           reference: "Psalm 139:23",
         },
         warning:
@@ -78,13 +82,13 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Most couples fight because they need something they have not asked for clearly. A vague sense of dissatisfaction is not a request. Your spouse is not a mind reader. They are a person who loves you and cannot hit a target they cannot see.",
         questions: [
-          { text: "What specific thing do you need from your spouse right now -- not in general, but this week?" },
+          { text: "What specific thing do you need from your spouse right now, not in general, but this week?" },
           { text: "Have you ever clearly stated this need, or have you been waiting for them to guess?" },
           { text: "Is what you are asking for something your spouse can actually give?" },
         ],
         scripture: {
-          text: "You do not have because you do not ask God.",
-          reference: "James 4:2b",
+          text: "You do not have, because you do not ask.",
+          reference: "James 4:2",
         },
         warning:
           "Do not confuse a need with a verdict. 'I need you to acknowledge that you were wrong' is a demand for a confession dressed as a need. A need sounds like: 'I need ten minutes of your full attention when I get home.'",
@@ -100,7 +104,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What part of their perspective, even a small part, do you recognize as true?" },
         ],
         scripture: {
-          text: "Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves.",
+          text: "Do nothing out of selfish ambition or empty pride, but in humility consider others more important than yourselves.",
           reference: "Philippians 2:3",
         },
         warning:
@@ -113,12 +117,12 @@ const CONFLICT_TYPES: ConflictType[] = [
           "One step. Not a ten-point plan. Not a sweeping promise that neither of you can keep. One concrete, verifiable action that you will both do this week. Marriages are not rebuilt in grand gestures. They are rebuilt in small, repeated faithfulness.",
         questions: [
           { text: "What is one thing each of you can commit to doing differently this week?" },
-          { text: "How will you check in with each other about this commitment -- when and where?" },
+          { text: "How will you check in with each other about this commitment, when and where?" },
           { text: "If this step works, what would it look like in your daily life together?" },
         ],
         scripture: {
-          text: "Therefore, if you are offering your gift at the altar and there remember that your brother or sister has something against you, leave your gift there in front of the altar. First go and be reconciled to them.",
-          reference: "Matthew 5:23--24",
+          text: "So if you are offering your gift at the altar and there remember that your brother has something against you, leave your gift there before the altar. First go and be reconciled to your brother; then come and offer your gift.",
+          reference: "Matthew 5:23-24",
         },
         warning:
           "Do not promise what you cannot deliver. 'I will never do that again' is a promise you will break. 'I will pause for ten seconds before I respond when I feel defensive' is a promise you can keep.",
@@ -149,7 +153,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           reference: "Matthew 6:21",
         },
         warning:
-          "Do not interrogate. This is not a deposition. If you treat your spouse like a defendant, they will act like one -- defensive, silent, or dishonest.",
+          "Do not interrogate. This is not a deposition. If you treat your spouse like a defendant, they will act like one: defensive, silent, or dishonest.",
       },
       {
         number: 2,
@@ -157,12 +161,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Financial conflict triggers some of the deepest emotions in a marriage because money is connected to survival. The anxiety you feel is real. It may also be older than this argument.",
         questions: [
-          { text: "What emotion surfaces when you think about this financial situation -- fear, anger, shame, helplessness?" },
+          { text: "What emotion surfaces when you think about this financial situation: fear, anger, shame, helplessness?" },
           { text: "Did your family of origin fight about money? How does that history shape your reaction now?" },
           { text: "Are you reacting to what happened, or to what you fear could happen?" },
         ],
         scripture: {
-          text: "Do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?",
+          text: "Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?",
           reference: "Matthew 6:25",
         },
         warning:
@@ -176,7 +180,7 @@ const CONFLICT_TYPES: ConflictType[] = [
         questions: [
           { text: "Do you need a shared budget, or do you need more communication about spending decisions?" },
           { text: "What financial boundary, if established, would give you peace?" },
-          { text: "What does financial partnership actually look like to you -- in specific terms, not principles?" },
+          { text: "What does financial partnership actually look like to you, in specific terms, not principles?" },
         ],
         scripture: {
           text: "Plans fail for lack of counsel, but with many advisers they succeed.",
@@ -189,14 +193,14 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 4,
         title: "Listen to their side",
         description:
-          "Your spouse's relationship with money was formed long before they met you. Their spending habits, their fears, their generosity or lack of it -- all of these were shaped by a family system you may not fully understand.",
+          "Your spouse's relationship with money was formed long before they met you. Their spending habits, their fears, their generosity or lack of it: all of these were shaped by a family system you may not fully understand.",
         questions: [
           { text: "What is your spouse's earliest memory of money? What did it teach them?" },
-          { text: "Is your spouse a spender or a saver -- and can you see how that came from their upbringing?" },
+          { text: "Is your spouse a spender or a saver, and can you see how that came from their upbringing?" },
           { text: "What financial stress is your spouse carrying that you may not know about?" },
         ],
         scripture: {
-          text: "Be completely humble and gentle; be patient, bearing with one another in love.",
+          text: "with all humility and gentleness, with patience, bearing with one another in love...",
           reference: "Ephesians 4:2",
         },
         warning:
@@ -208,12 +212,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Financial alignment in marriage does not happen in one conversation. It happens in a repeated rhythm of transparency and shared decision-making. Start with one practice.",
         questions: [
-          { text: "Can you agree to a weekly fifteen-minute conversation about money -- not a fight, a check-in?" },
+          { text: "Can you agree to a weekly fifteen-minute conversation about money, not a fight, a check-in?" },
           { text: "What spending threshold requires a conversation before the purchase? Name a specific number." },
           { text: "Would a shared budgeting tool or app reduce the friction?" },
         ],
         scripture: {
-          text: "Suppose one of you wants to build a tower. Will you not first sit down and estimate the cost to see if you have enough money to complete it?",
+          text: "Which of you, wishing to build a tower, does not first sit down and count the cost to see if he has the resources to complete it?",
           reference: "Luke 14:28",
         },
         warning:
@@ -228,7 +232,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     id: "parenting",
     label: "Parenting Conflict",
     description:
-      "When two parents disagree about how to raise their children, the argument is almost never about bedtimes or screen limits. It is about what kind of adults they are trying to form -- and they have not said that out loud.",
+      "When two parents disagree about how to raise their children, the argument is almost never about bedtimes or screen limits. It is about what kind of adults they are trying to form, and they have not said that out loud.",
     steps: [
       {
         number: 1,
@@ -241,7 +245,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Is this conflict about a one-time event, or an ongoing pattern of disagreement?" },
         ],
         scripture: {
-          text: "Start children off on the way they should go, and even when they are old they will not turn from it.",
+          text: "Train up a child in the way he should go, and when he is old he will not depart from it.",
           reference: "Proverbs 22:6",
         },
         warning:
@@ -253,12 +257,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Parenting conflicts hit a nerve that runs deeper than most people realize. When your spouse parents differently than you want, it can feel like an attack on your values, your family of origin, and your vision of who your children will become.",
         questions: [
-          { text: "What emotion did you feel in that moment -- fear for your child, anger at being overruled, or something else?" },
-          { text: "Does this conflict remind you of how you were parented -- either because you want to replicate it or escape it?" },
+          { text: "What emotion did you feel in that moment: fear for your child, anger at being overruled, or something else?" },
+          { text: "Does this conflict remind you of how you were parented, either because you want to replicate it or escape it?" },
           { text: "Are you afraid of a specific outcome for your child, or are you reacting to a loss of control?" },
         ],
         scripture: {
-          text: "Fathers, do not exasperate your children; instead, bring them up in the training and instruction of the Lord.",
+          text: "Fathers, do not provoke your children to wrath; instead, bring them up in the discipline and instruction of the Lord.",
           reference: "Ephesians 6:4",
         },
         warning:
@@ -268,14 +272,14 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 3,
         title: "Name what you need",
         description:
-          "What you need from your co-parent is usually not a different parenting style. It is alignment -- the confidence that you are on the same team, even when you disagree about tactics.",
+          "What you need from your co-parent is usually not a different parenting style. It is alignment: the confidence that you are on the same team, even when you disagree about tactics.",
         questions: [
           { text: "What specific parenting practice do you need to agree on right now?" },
           { text: "Do you need a unified front on discipline, or do you need to feel consulted before decisions are made?" },
           { text: "What would it look like for you and your spouse to parent as allies rather than opponents?" },
         ],
         scripture: {
-          text: "How good and pleasant it is when God's people live together in unity!",
+          text: "Behold, how good and pleasant it is when brothers live together in harmony!",
           reference: "Psalm 133:1",
         },
         warning:
@@ -285,14 +289,14 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 4,
         title: "Listen to their side",
         description:
-          "Your spouse's parenting instincts come from somewhere. Their strictness or leniency, their fears and hopes for your children -- all of it was formed before the children arrived. Understanding the source changes the conversation.",
+          "Your spouse's parenting instincts come from somewhere. Their strictness or leniency, their fears and hopes for your children: all of it was formed before the children arrived. Understanding the source changes the conversation.",
         questions: [
           { text: "What about your spouse's own upbringing shapes their approach to parenting?" },
           { text: "What fear is driving your spouse's parenting in this specific situation?" },
           { text: "Is there a legitimate strength in their approach that you have dismissed because it is different from yours?" },
         ],
         scripture: {
-          text: "My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry.",
+          text: "My beloved brothers, understand this: Everyone should be quick to listen, slow to speak, and slow to anger...",
           reference: "James 1:19",
         },
         warning:
@@ -302,7 +306,7 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 5,
         title: "Agree on one next step",
         description:
-          "Pick one parenting issue -- the one causing the most friction -- and create a shared approach. Not forever. For this week. See how it works. Adjust together.",
+          "Pick one parenting issue, the one causing the most friction, and create a shared approach. Not forever. For this week. See how it works. Adjust together.",
         questions: [
           { text: "What is the single most contentious parenting issue right now, and can you agree on one approach for this week?" },
           { text: "Can you commit to discussing parenting disagreements privately before presenting a decision to the children?" },
@@ -333,12 +337,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Intimacy conflicts are rarely about a single event. They are about the slow accumulation of distance. But something brought it to the surface. Name that moment.",
         questions: [
-          { text: "When did you first notice the distance between you -- was it a specific rejection, or a gradual withdrawal?" },
+          { text: "When did you first notice the distance between you: was it a specific rejection, or a gradual withdrawal?" },
           { text: "Is this about physical intimacy, emotional intimacy, or both?" },
-          { text: "Has something changed in your life circumstances that may have contributed -- stress, health, children, work?" },
+          { text: "Has something changed in your life circumstances that may have contributed: stress, health, children, work?" },
         ],
         scripture: {
-          text: "Do not deprive each other except perhaps by mutual consent and for a time, so that you may devote yourselves to prayer.",
+          text: "Do not deprive each other, except by mutual consent and for a time, so you may devote yourselves to prayer. Then come together again, so that Satan will not tempt you through your lack of self-control.",
           reference: "1 Corinthians 7:5",
         },
         warning:
@@ -350,12 +354,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Intimacy issues trigger some of the most painful emotions in a marriage: rejection, inadequacy, loneliness, shame. These emotions are real, and they will not go away because you refuse to name them.",
         questions: [
-          { text: "What do you feel when intimacy is absent -- rejected, undesirable, alone, angry?" },
-          { text: "Is the pain about this marriage specifically, or does it connect to something older -- a wound from before?" },
+          { text: "What do you feel when intimacy is absent: rejected, undesirable, alone, angry?" },
+          { text: "Is the pain about this marriage specifically, or does it connect to something older: a wound from before?" },
           { text: "Are you confusing the desire for sex with the desire to be known? They overlap, but they are not the same." },
         ],
         scripture: {
-          text: "The Lord God said, 'It is not good for the man to be alone. I will make a helper suitable for him.'",
+          text: "The LORD God also said, “It is not good for the man to be alone. I will make for him a suitable helper.”",
           reference: "Genesis 2:18",
         },
         warning:
@@ -367,12 +371,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "What you need is almost certainly more specific than 'more intimacy.' Break it down. Intimacy has a dozen dimensions, and your spouse cannot address a generality.",
         questions: [
-          { text: "Do you need more physical touch that is not sexual -- holding hands, a longer embrace, sitting close?" },
-          { text: "Do you need emotional vulnerability -- deeper conversations, less guarding, more honesty?" },
+          { text: "Do you need more physical touch that is not sexual: holding hands, a longer embrace, sitting close?" },
+          { text: "Do you need emotional vulnerability: deeper conversations, less guarding, more honesty?" },
           { text: "Do you need your spouse to initiate, or do you need them to be responsive when you do?" },
         ],
         scripture: {
-          text: "Let him kiss me with the kisses of his mouth -- for your love is more delightful than wine.",
+          text: "Let him kiss me with the kisses of his mouth! For your love is more delightful than wine.",
           reference: "Song of Solomon 1:2",
         },
         warning:
@@ -382,14 +386,14 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 4,
         title: "Listen to their side",
         description:
-          "Your spouse's withdrawal may have nothing to do with how they feel about you. Stress, exhaustion, body image, past trauma, hormonal changes, medication -- the reasons are numerous and most of them are not personal.",
+          "Your spouse's withdrawal may have nothing to do with how they feel about you. Stress, exhaustion, body image, past trauma, hormonal changes, medication: the reasons are numerous and most of them are not personal.",
         questions: [
           { text: "What is your spouse dealing with right now that might be affecting their desire or capacity for closeness?" },
-          { text: "Have you asked them what intimacy looks like from their perspective -- not what you wish it looked like?" },
+          { text: "Have you asked them what intimacy looks like from their perspective, not what you wish it looked like?" },
           { text: "Is there something you are doing that unintentionally creates distance rather than closeness?" },
         ],
         scripture: {
-          text: "Husbands, love your wives, just as Christ loved the church and gave himself up for her.",
+          text: "Husbands, love your wives, just as Christ loved the church and gave Himself up for her...",
           reference: "Ephesians 5:25",
         },
         warning:
@@ -402,11 +406,11 @@ const CONFLICT_TYPES: ConflictType[] = [
           "Intimacy is not rebuilt in a single night. It is rebuilt in small acts of closeness that accumulate over time. Start with one practice that both of you can sustain.",
         questions: [
           { text: "Can you commit to ten minutes of non-screen, face-to-face conversation every evening this week?" },
-          { text: "What is one small physical gesture -- a longer hug, holding hands during a walk -- that you can practice daily?" },
+          { text: "What is one small physical gesture (a longer hug, holding hands during a walk) that you can practice daily?" },
           { text: "Would it help to schedule a date night, or does the word 'schedule' make intimacy feel like a task?" },
         ],
         scripture: {
-          text: "Place me like a seal over your heart, like a seal on your arm; for love is as strong as death.",
+          text: "Set me as a seal over your heart, as a seal upon your arm. For love is as strong as death, its jealousy as unrelenting as Sheol. Its sparks are fiery flames, the fiercest blaze of all.",
           reference: "Song of Solomon 8:6",
         },
         warning:
@@ -421,7 +425,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     id: "inlaws",
     label: "In-Law Boundaries",
     description:
-      "When a third party -- parent, sibling, extended family -- has more influence over your marriage than they should. The problem is not that you have in-laws. The problem is that someone has not left.",
+      "When a third party (parent, sibling, extended family) has more influence over your marriage than they should. The problem is not that you have in-laws. The problem is that someone has not left.",
     steps: [
       {
         number: 1,
@@ -434,7 +438,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Does your spouse see it as a problem, or are they defending the behavior?" },
         ],
         scripture: {
-          text: "That is why a man leaves his father and mother and is united to his wife, and they become one flesh.",
+          text: "For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh.",
           reference: "Genesis 2:24",
         },
         warning:
@@ -451,7 +455,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Does this conflict make you feel like an outsider in your own marriage?" },
         ],
         scripture: {
-          text: "Above all, love each other deeply, because love covers over a multitude of sins.",
+          text: "Above all, love one another deeply, because love covers over a multitude of sins.",
           reference: "1 Peter 4:8",
         },
         warning:
@@ -468,11 +472,11 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What boundary, if honored, would allow you to have a healthy relationship with your in-laws?" },
         ],
         scripture: {
-          text: "Let your 'Yes' be 'Yes,' and your 'No,' 'No.'",
+          text: "Simply let your ‘Yes’ be ‘Yes,’ and your ‘No,’ ‘No.’ Anything more comes from the evil one.",
           reference: "Matthew 5:37",
         },
         warning:
-          "Do not set boundaries you are not willing to enforce. A boundary without a consequence is a suggestion. Decide in advance what you will do -- not what you will say -- if the boundary is violated.",
+          "Do not set boundaries you are not willing to enforce. A boundary without a consequence is a suggestion. Decide in advance what you will do, not what you will say, if the boundary is violated.",
       },
       {
         number: 4,
@@ -480,12 +484,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Your spouse is caught between the family that raised them and the family they are building. That tension is real, and dismissing it will not make your case stronger. It will make your spouse feel alone.",
         questions: [
-          { text: "What does your spouse's relationship with their parent mean to them -- what are they afraid of losing?" },
+          { text: "What does your spouse's relationship with their parent mean to them: what are they afraid of losing?" },
           { text: "Is your spouse aware of the problem and conflicted, or genuinely unable to see it?" },
           { text: "What cultural or family expectations is your spouse carrying that you may not fully understand?" },
         ],
         scripture: {
-          text: "Honor your father and your mother.",
+          text: "Honor your father and mother, so that your days may be long in the land that the LORD your God is giving you.",
           reference: "Exodus 20:12",
         },
         warning:
@@ -502,7 +506,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "What will you do together if the boundary is not respected?" },
         ],
         scripture: {
-          text: "If it is possible, as far as it depends on you, live at peace with everyone.",
+          text: "If it is possible on your part, live at peace with everyone.",
           reference: "Romans 12:18",
         },
         warning:
@@ -523,14 +527,14 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 1,
         title: "Name what happened",
         description:
-          "Usually there is not a single event. There is an accumulation -- the thousandth time you did the thing no one asked you to do, or the moment you realized you were carrying a load your spouse did not even see.",
+          "Usually there is not a single event. There is an accumulation: the thousandth time you did the thing no one asked you to do, or the moment you realized you were carrying a load your spouse did not even see.",
         questions: [
           { text: "What specific task or responsibility tipped you into frustration?" },
           { text: "Is the issue the task itself, or the fact that your spouse does not see it as their responsibility?" },
           { text: "If you listed every household task you do in a week, would your spouse be surprised by the length of the list?" },
         ],
         scripture: {
-          text: "Carry each other's burdens, and in this way you will fulfill the law of Christ.",
+          text: "Carry one another’s burdens, and in this way you will fulfill the law of Christ.",
           reference: "Galatians 6:2",
         },
         warning:
@@ -540,14 +544,14 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 2,
         title: "Name what you feel",
         description:
-          "Resentment about household labor is almost always about something deeper than dishes. It is about being seen. It is about whether your work -- the invisible, thankless, daily work of keeping a life running -- is noticed and valued.",
+          "Resentment about household labor is almost always about something deeper than dishes. It is about being seen. It is about whether your work (the invisible, thankless, daily work of keeping a life running) is noticed and valued.",
         questions: [
-          { text: "Do you feel invisible in this household -- as if your contribution is expected but never acknowledged?" },
+          { text: "Do you feel invisible in this household, as if your contribution is expected but never acknowledged?" },
           { text: "Is your resentment about the workload itself, or about the lack of gratitude?" },
           { text: "Do you feel like a partner in this home, or a servant in someone else's house?" },
         ],
         scripture: {
-          text: "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters.",
+          text: "Whatever you do, work at it with your whole being, for the Lord and not for men...",
           reference: "Colossians 3:23",
         },
         warning:
@@ -564,8 +568,8 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Are you willing to accept your spouse's way of doing a task, even if it is different from yours?" },
         ],
         scripture: {
-          text: "Two are better than one, because they have a good return for their labor: If either of them falls down, one can help the other up.",
-          reference: "Ecclesiastes 4:9--10",
+          text: "Two are better than one, because they have a good return for their labor. For if one falls down, his companion can lift him up; but pity the one who falls without another to help him up!",
+          reference: "Ecclesiastes 4:9-10",
         },
         warning:
           "Do not assign tasks and then criticize how they are done. If you re-do what your spouse just did, you have taught them that their effort does not matter. A dish washed differently is still a dish washed.",
@@ -594,11 +598,11 @@ const CONFLICT_TYPES: ConflictType[] = [
           "Create a visible, shared system. Not because your marriage should run like a corporation, but because invisible expectations produce invisible resentment.",
         questions: [
           { text: "Can you make a shared list of household tasks and divide them in a way that feels fair to both of you?" },
-          { text: "What is one task your spouse can own completely -- from noticing it needs doing to doing it -- starting this week?" },
+          { text: "What is one task your spouse can own completely, from noticing it needs doing to doing it, starting this week?" },
           { text: "Can you agree to revisit this division in two weeks to see if it is working?" },
         ],
         scripture: {
-          text: "And let us consider how we may spur one another on toward love and good deeds.",
+          text: "And let us consider how to spur one another on to love and good deeds.",
           reference: "Hebrews 10:24",
         },
         warning:
@@ -613,7 +617,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     id: "spiritual",
     label: "Spiritual Differences",
     description:
-      "When two people who share a life do not share a faith -- or share it at very different depths. This is not a minor disagreement. It touches the deepest questions of meaning, morality, and how you are raising your children.",
+      "When two people who share a life do not share a faith, or share it at very different depths. This is not a minor disagreement. It touches the deepest questions of meaning, morality, and how you are raising your children.",
     steps: [
       {
         number: 1,
@@ -623,10 +627,10 @@ const CONFLICT_TYPES: ConflictType[] = [
         questions: [
           { text: "What specific spiritual difference surfaced in this conflict?" },
           { text: "Has your spouse's faith changed since the beginning of your relationship, or has yours?" },
-          { text: "Is this about belief, or about practice -- what you do, or what you hold to be true?" },
+          { text: "Is this about belief, or about practice: what you do, or what you hold to be true?" },
         ],
         scripture: {
-          text: "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
+          text: "Now if any of you lacks wisdom, he should ask God, who gives generously to all without finding fault, and it will be given to him.",
           reference: "James 1:5",
         },
         warning:
@@ -638,12 +642,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Spiritual loneliness in a marriage is one of the most painful forms of isolation. You can share a home and feel utterly alone in the most important dimension of your life.",
         questions: [
-          { text: "Do you feel alone in your faith -- as if the most important part of you has no companion?" },
+          { text: "Do you feel alone in your faith, as if the most important part of you has no companion?" },
           { text: "Are you afraid for your spouse's soul, or are you frustrated by their indifference?" },
           { text: "Do you grieve the spiritual partnership you imagined but do not have?" },
         ],
         scripture: {
-          text: "My God, my God, why have you forsaken me? Why are you so far from saving me, so far from my cries of anguish?",
+          text: "My God, my God, why have You forsaken me? Why are You so far from saving me, so far from my words of groaning?",
           reference: "Psalm 22:1",
         },
         warning:
@@ -660,7 +664,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Can you distinguish between what you need from your spouse and what only God can give you?" },
         ],
         scripture: {
-          text: "But as for me and my household, we will serve the Lord.",
+          text: "As for me and my house, we will serve the LORD!",
           reference: "Joshua 24:15",
         },
         warning:
@@ -670,14 +674,14 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 4,
         title: "Listen to their side",
         description:
-          "Your spouse's spiritual position -- whether it is doubt, indifference, or a different tradition -- has a story. Understanding the story does not mean agreeing with it. It means taking them seriously as a person, not a project.",
+          "Your spouse's spiritual position (whether it is doubt, indifference, or a different tradition) has a story. Understanding the story does not mean agreeing with it. It means taking them seriously as a person, not a project.",
         questions: [
           { text: "What happened in your spouse's past that shaped their current relationship with faith?" },
           { text: "Has the church hurt your spouse in a way that makes their distance from it understandable?" },
           { text: "Are you willing to hear their honest questions without treating those questions as threats?" },
         ],
         scripture: {
-          text: "Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. But do this with gentleness and respect.",
+          text: "But in your hearts sanctify Christ as Lord. Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you. But respond with gentleness and respect...",
           reference: "1 Peter 3:15",
         },
         warning:
@@ -690,11 +694,11 @@ const CONFLICT_TYPES: ConflictType[] = [
           "You may not reach spiritual alignment this year. But you can agree on how to respect each other's positions while making decisions together about your home and your children.",
         questions: [
           { text: "Can you agree that both of you will speak respectfully about the other's spiritual position in front of your children?" },
-          { text: "Is there one spiritual practice -- a meal prayer, a moment of gratitude, a service project -- that you can share regardless of where each of you stands?" },
+          { text: "Is there one spiritual practice (a meal prayer, a moment of gratitude, a service project) that you can share regardless of where each of you stands?" },
           { text: "Can you schedule a monthly conversation about faith that is not an argument but an exchange?" },
         ],
         scripture: {
-          text: "Be devoted to one another in love. Honor one another above yourselves.",
+          text: "Be devoted to one another in brotherly love. Outdo yourselves in honoring one another.",
           reference: "Romans 12:10",
         },
         warning:
@@ -709,7 +713,7 @@ const CONFLICT_TYPES: ConflictType[] = [
     id: "trust",
     label: "Trust Repair",
     description:
-      "When trust has been broken -- by betrayal, dishonesty, or a pattern of broken promises. Trust is destroyed in moments and rebuilt in months. There is no shortcut. But there is a path.",
+      "When trust has been broken, by betrayal, dishonesty, or a pattern of broken promises. Trust is destroyed in moments and rebuilt in months. There is no shortcut. But there is a path.",
     steps: [
       {
         number: 1,
@@ -722,11 +726,11 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Has the behavior stopped completely, or is it ongoing?" },
         ],
         scripture: {
-          text: "Therefore each of you must put off falsehood and speak truthfully to your neighbor, for we are all members of one body.",
+          text: "Therefore each of you must put off falsehood and speak truthfully to his neighbor, for we are all members of one another.",
           reference: "Ephesians 4:25",
         },
         warning:
-          "Do not offer a partial confession. Trickle truth -- revealing the betrayal in stages -- causes more damage than the original breach. If you are going to confess, confess everything. Once.",
+          "Do not offer a partial confession. Trickle truth, revealing the betrayal in stages, causes more damage than the original breach. If you are going to confess, confess everything. Once.",
       },
       {
         number: 2,
@@ -734,12 +738,12 @@ const CONFLICT_TYPES: ConflictType[] = [
         description:
           "Betrayal produces a grief that is unlike any other, because the person who should be your source of comfort is also the source of your pain. Both people are in pain. Both realities are true.",
         questions: [
-          { text: "For the injured: what has this broken in you -- your sense of safety, your self-worth, your ability to believe what your spouse says?" },
-          { text: "For the one who broke trust: what do you feel -- guilt, shame, fear of consequences, relief that it is in the open?" },
+          { text: "For the injured: what has this broken in you, your sense of safety, your self-worth, your ability to believe what your spouse says?" },
+          { text: "For the one who broke trust: what do you feel, guilt, shame, fear of consequences, relief that it is in the open?" },
           { text: "Are either of you numb? Numbness is not the absence of feeling. It is feeling so much that the system shuts down." },
         ],
         scripture: {
-          text: "The Lord is close to the brokenhearted and saves those who are crushed in spirit.",
+          text: "The LORD is near to the brokenhearted; He saves the contrite in spirit.",
           reference: "Psalm 34:18",
         },
         warning:
@@ -749,14 +753,14 @@ const CONFLICT_TYPES: ConflictType[] = [
         number: 3,
         title: "Name what you need",
         description:
-          "Trust repair requires specific, concrete actions -- not promises. 'I will never do it again' is a prediction, not a plan. What does accountability actually look like in your daily life?",
+          "Trust repair requires specific, concrete actions, not promises. 'I will never do it again' is a prediction, not a plan. What does accountability actually look like in your daily life?",
         questions: [
-          { text: "What does the injured person need in order to feel safe -- transparency with devices, check-ins, access to accounts?" },
-          { text: "What professional help is needed -- a counselor, a pastor, a support group?" },
+          { text: "What does the injured person need in order to feel safe: transparency with devices, check-ins, access to accounts?" },
+          { text: "What professional help is needed: a counselor, a pastor, a support group?" },
           { text: "What is the timeline expectation, and is it realistic? Trust repair measured in weeks is almost always too fast." },
         ],
         scripture: {
-          text: "Produce fruit in keeping with repentance.",
+          text: "Produce fruit, then, in keeping with repentance.",
           reference: "Matthew 3:8",
         },
         warning:
@@ -770,10 +774,10 @@ const CONFLICT_TYPES: ConflictType[] = [
         questions: [
           { text: "For the injured: can you hear your spouse's remorse without dismissing it as performance?" },
           { text: "For the one who broke trust: can you hear the full weight of the damage without becoming defensive or shutting down?" },
-          { text: "Is there a third party -- a counselor, a pastor -- who can facilitate this conversation if it is too volatile for the two of you alone?" },
+          { text: "Is there a third party (a counselor, a pastor) who can facilitate this conversation if it is too volatile for the two of you alone?" },
         ],
         scripture: {
-          text: "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.",
+          text: "Bear with one another and forgive any complaint you may have against someone else. Forgive as the Lord forgave you.",
           reference: "Colossians 3:13",
         },
         warning:
@@ -790,7 +794,7 @@ const CONFLICT_TYPES: ConflictType[] = [
           { text: "Have you contacted a professional counselor? If not, can you make the call today?" },
         ],
         scripture: {
-          text: "See, I am doing a new thing! Now it springs up; do you not perceive it? I am making a way in the wilderness and streams in the wasteland.",
+          text: "Behold, I am about to do something new; even now it is coming. Do you not see it? Indeed, I will make a way in the wilderness and streams in the desert.",
           reference: "Isaiah 43:19",
         },
         warning:
@@ -806,11 +810,31 @@ const CONFLICT_TYPES: ConflictType[] = [
 
 /* ── Component ─────────────────────────────────────────────────── */
 
+/** The kind of conflict and the step the reader is on, kept on this device so a reload lands there. */
+const PROGRESS_KEY = "livewell-progress-conflict-guide";
+interface Place { type: string; step: number; savedAt: string }
+const isPlace = (x: unknown): x is Place => {
+  if (!x || typeof x !== "object") return false;
+  const v = x as Record<string, unknown>;
+  return typeof v.type === "string" && typeof v.step === "number" && Number.isInteger(v.step) && typeof v.savedAt === "string";
+};
+function savedPlace(): { type: string | null; step: number } {
+  const p = readStoredJSON<Place | null>(PROGRESS_KEY, isPlace, null);
+  const c = p ? CONFLICT_TYPES.find((t) => t.id === p.type) : undefined;
+  return c && p ? { type: c.id, step: Math.min(Math.max(0, p.step), c.steps.length - 1) } : { type: null, step: 0 };
+}
+
 export default function ConflictGuide() {
-  const [selectedType, setSelectedType] = useState<string | null>(null);
-  const [currentStep, setCurrentStep] = useState(0);
+  const [place] = useState(savedPlace);
+  const [selectedType, setSelectedType] = useState<string | null>(place.type);
+  const [currentStep, setCurrentStep] = useState(place.step);
 
   const conflict = CONFLICT_TYPES.find((c) => c.id === selectedType);
+
+  useEffect(() => {
+    if (selectedType) writeStoredJSON(PROGRESS_KEY, { type: selectedType, step: currentStep, savedAt: new Date().toISOString() });
+    else removeStoredJSON(PROGRESS_KEY);
+  }, [selectedType, currentStep]);
 
   const handleSelectType = (id: string) => {
     setSelectedType(id);
@@ -844,13 +868,13 @@ export default function ConflictGuide() {
   return (
     <Layout>
       <SEOMeta
-        title="Conflict Resolution Guide -- A Five-Step Process for Couples and Families"
+        title="Work Through a Fight in Five Steps"
         description="An interactive five-step guide to help couples and families work through conflict, from naming the issue to a concrete next step. Scripture-grounded."
         keywords="conflict resolution, marriage conflict, family conflict, communication, couples guide, relationship repair, Christian marriage"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Conflict Resolution Guide",
+          name: "Work Through a Fight in Five Steps",
           description:
             "An interactive five-step guide to help couples and families resolve conflict with honesty, Scripture, and concrete action.",
           url: "https://www.livewellbyjamesbell.co/tools/conflict-guide",
@@ -859,59 +883,7 @@ export default function ConflictGuide() {
         }}
       />
 
-      {/* Hero */}
-      <section
-        style={{
-          background: "var(--charcoal)",
-          color: "var(--bone)",
-          padding: "80px 32px 60px",
-          textAlign: "center",
-        }}
-      >
-        <div className="wrap" style={{ maxWidth: "700px" }}>
-          <div
-            style={{
-              fontSize: "11px",
-              fontWeight: 700,
-              letterSpacing: "0.2em",
-              color: "var(--mustard)",
-              fontFamily: "var(--U)",
-              marginBottom: "16px",
-            }}
-          >
-            FREE TOOL
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(32px, 5vw, 48px)",
-              fontWeight: 300,
-              fontFamily: "var(--F)",
-              lineHeight: 1.15,
-              marginBottom: "16px",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Conflict Resolution{" "}
-            <em style={{ fontStyle: "italic", color: "var(--mustard)" }}>
-              Guide
-            </em>
-          </h1>
-          <p
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.7,
-              opacity: 0.85,
-              fontFamily: "var(--B)",
-              maxWidth: "560px",
-              margin: "0 auto",
-            }}
-          >
-            Five steps. One conflict at a time. Not a formula for avoiding hard
-            conversations -- a framework for having them without destroying
-            what you are trying to protect.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/conflict-guide" title="Work Through a Fight in Five Steps" line="Five steps. One conflict at a time. Not a formula for avoiding hard conversations: a framework for having them without destroying what you are trying to protect." plate="sundial" />
 
       {/* Conflict Type Selection */}
       {!selectedType && (
@@ -1119,6 +1091,7 @@ export default function ConflictGuide() {
                   background: "none",
                   border: "none",
                   padding: 0,
+                  minHeight: "44px",
                 }}
               >
                 <ArrowLeft size={14} />
@@ -1296,7 +1269,7 @@ export default function ConflictGuide() {
                 >
                   {step.scripture.reference} — read the full passage
                 </Link>
-                <ScriptureNote rendering="unverified" />
+                <ScriptureNote rendering="bsb" />
               </div>
 
               {/* Warning */}
@@ -1372,6 +1345,7 @@ export default function ConflictGuide() {
                         : "var(--ink-muted)",
                     cursor: currentStep === 0 ? "default" : "pointer",
                     padding: "12px 0",
+                    minHeight: "44px",
                     background: "none",
                     border: "none",
                   }}
@@ -1489,6 +1463,12 @@ export default function ConflictGuide() {
                       />
                     </a>
                   ))}
+                </div>
+              )}
+              {/* Where to go next, from the kind of fight the couple chose (data/tool-next.json). */}
+              {isLastStep && (
+                <div className="no-print">
+                  <ResultNext steps={nextPagesFor("conflict-guide", conflict.id)} />
                 </div>
               )}
             </div>

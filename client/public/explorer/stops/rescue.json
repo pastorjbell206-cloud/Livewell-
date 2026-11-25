@@ -1,0 +1,69 @@
+{
+  "slug": "rescue",
+  "n": 4,
+  "act": "exodus",
+  "added": "Act Four (Exodus and Sinai) is two stops here: the rescue, then the law and the tent.",
+  "title": "The Rescue from Egypt",
+  "range": "Exodus 1 to 15",
+  "status": "finished",
+  "summary": {
+    "younger": "God's people were slaves in Egypt. God set them free on the night of the Passover and led them through the sea.",
+    "older": "Abraham's family has become a nation of slaves. God hears them, sends Moses, spares them by the blood of a lamb, and opens a road through the sea."
+  },
+  "scene": "rescue",
+  "sceneLabel": "Two pictures side by side. On the left, the door of a house at night, marked with the lamb's blood on the top and the sides of the doorframe. On the right, the sea pulled back into two walls of water, with God's people walking through on dry ground under a pillar of fire.",
+  "story": {
+    "younger": [
+      "Abraham's family grew into a big nation in Egypt. A new king of Egypt, called Pharaoh, was afraid of them, and he made them slaves. They cried out to God, and God heard them.",
+      "God sent Moses to tell Pharaoh, “Let My people go.” Pharaoh said no, again and again. So God sent plagues on Egypt, ten of them, to show that he is the true God.",
+      "Before the last plague, God told each family of his people to eat a special meal and to put the blood of a lamb on the doorframe of their home. That night was a night of great sadness in Egypt, because the firstborn son in each Egyptian home died. But God passed over every house marked by the lamb's blood. That is why it is called the Passover.",
+      "Then Pharaoh let the people go. Soon he changed his mind and chased them to the edge of the sea. But God pushed back the water and made a dry path, and his people walked across to freedom."
+    ],
+    "older": [
+      "Exodus says Israel lived in Egypt 430 years (Exodus 12:40). Abraham's family has become a nation, and Egypt has made them slaves. The book opens with Pharaoh ordering every Hebrew baby boy thrown into the Nile. Underneath the whole story runs one question: who is the real lord here, Pharaoh or the LORD?",
+      "God answers through Moses and through ten plagues. Exodus says that in them God brought judgment “against all the gods of Egypt” (Exodus 12:12). The last plague falls on the firstborn sons. Israel is not spared because its people are better. They are spared because a lamb dies in their place and its blood marks their door. That night becomes the Passover, and Israel keeps it every year so that children will ask what it means (Exodus 12:26-27).",
+      "At the sea God finishes it. People who could not save themselves walk through on dry ground, and Pharaoh's army is gone. Ever after, when the Bible wants to say who God is, it points back here: the LORD your God, “who brought you out of the land of Egypt, out of the house of slavery” (Exodus 20:2)."
+    ]
+  },
+  "god": {
+    "younger": "God hears people who are hurting. He is stronger than any king, and he rescues his people.",
+    "older": "God is not a distant idea. He sees, he hears, and he comes down to rescue (Exodus 3:7-8). The rescue is his work from start to finish, and he saves by a substitute: a lamb in the place of a son."
+  },
+  "verses": [
+    { "ref": "Exodus 12:13", "text": "The blood on the houses where you are staying will distinguish them; when I see the blood, I will pass over you." },
+    { "ref": "Exodus 14:13-14", "text": "Do not be afraid. Stand firm and you will see the LORD’s salvation, which He will accomplish for you today; for the Egyptians you see today, you will never see again. The LORD will fight for you; you need only to be still." }
+  ],
+  "read": [
+    { "label": "Exodus 3", "href": "/study/bible/exodus/3" },
+    { "label": "Exodus 12", "href": "/study/bible/exodus/12" },
+    { "label": "Exodus 14", "href": "/study/bible/exodus/14" }
+  ],
+  "care": "This part of the story has death and fear in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "question": {
+    "ask": "How could a good God let the firstborn of Egypt die?",
+    "answer": [
+      "It is one of the hardest nights in the Bible, and it should feel hard; the Bible does not ask anyone to read it lightly. Some things in the story matter, though. Pharaoh had ordered Israel's baby boys drowned. God called Israel his own firstborn son and warned Pharaoh from the very start what refusing to let that son go would cost (Exodus 4:22-23). Nine plagues came first, each a chance to stop.",
+      "In the Bible, judgment is God refusing to let evil go on for ever. Christians still feel the weight of this night, and the questions are honest ones. The story itself points ahead to another Passover, when God's own Son dies so that others can go free."
+    ]
+  },
+  "deeper": [
+    { "label": "Why is the Old Testament so violent? An honest look", "href": "/resources/context/the-violence-of-the-old-testament" },
+    { "label": "Are miracles believable?", "href": "/answers/are-miracles-believable" }
+  ],
+  "talk": {
+    "younger": "God heard his people when they cried out. What would you like to tell God? You can talk with a parent or a leader about it too.",
+    "older": "Israel told this story every year so their children would ask what it meant. What story about God would you want to be able to tell?"
+  },
+  "activity": {
+    "kind": "order",
+    "title": "Put the rescue in order",
+    "prompt": "These four things happened in the rescue from Egypt. Move them into the order they happened, then check.",
+    "items": [
+      { "id": "bush", "text": "God speaks to Moses from a burning bush.", "ref": "Exodus 3:1-10" },
+      { "id": "pharaoh", "text": "Moses asks Pharaoh to let the people go, and Pharaoh says no.", "ref": "Exodus 5:1-2" },
+      { "id": "passover", "text": "Families mark their doors with the lamb's blood on the night of the Passover.", "ref": "Exodus 12:21-23" },
+      { "id": "sea", "text": "God makes a dry path through the sea.", "ref": "Exodus 14:21-22" }
+    ],
+    "start": ["passover", "bush", "sea", "pharaoh"]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "piece": "excavation-not-demolition",
+  "human_score": 9,
+  "voice_score": 7.5,
+  "verdict": "Second read agrees with the first on the whole: mechanically clean (0 em-dashes, the one exclamation point is inside Mark 9:24, literal forbidden-language search returns nothing; 'truly' and 'perhaps' occur only inside the Chalcedon wording and the Celsus paraphrase). Four of nine findings survive. The essay is a good human piece and most of the first reader's 'consider' items would have over-edited it. The remaining gap is presence, which only James can supply.",
+  "keep": [
+    {
+      "quote": "Jesus healed the boy without waiting for him to finish believing.",
+      "tell": "Ambiguous pronoun in the sentence that carries the ending",
+      "replacement": "Jesus healed the boy without waiting for the father to finish believing.",
+      "severity": "should"
+    },
+    {
+      "quote": "More than a thousand years later the whole Western church went through something like it. Martin Luther's Ninety-five Theses of 1517 took aim at a specific thing",
+      "tell": "Vague framing sentence that repeats the section's opening stamp ('went through something like this') and makes a loose claim: the Reformation was not 'something like' one man's years of doubt",
+      "replacement": "More than a thousand years later Martin Luther did some tearing down of his own. His Ninety-five Theses of 1517 took aim at a specific thing",
+      "severity": "should"
+    },
+    {
+      "quote": "That is not a man offering a helpful way of seeing the world. It is a claim about something that happened, and it can be weighed the way other claims about the past are weighed.",
+      "tell": "'It is not X. It is Y.' two-sentence frame, the fourth use in the essay (after 'not usually rebels. They are grieving', 'not attacking Christianity. They are agreeing', and before 'didn't invent a faith of his own. He came to'). Each section has only one, so it is inside the letter of the rule, but the identical frame four times is audible. This is the one where the denial does the least new work; the first-commandment line is the true hinge and stays.",
+      "replacement": "Paul is making a claim about something that happened, and it can be weighed the way other claims about the past are weighed.",
+      "severity": "should"
+    },
+    {
+      "quote": "In January 2002 the Boston Globe began reporting how the Archdiocese of Boston had moved priests accused of abusing children from parish to parish.",
+      "tell": "Three consecutive 'In [month year]' sentence openers (January 2002, February 2021, May 2022), after 'In late July 2019' and 'In 2018' in the opening: reads as a compiled timeline",
+      "replacement": "The Boston Globe began reporting in January 2002 how the Archdiocese of Boston had moved priests accused of abusing children from parish to parish.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "'A faith rebuilt to agree with you about everything is just another idol.' Dropped: it is a plain spoken verdict, the next paragraph leans on it ('the new one also agrees with them'), and the proposed replacement ('one more of those gods') points at gods named two sections earlier, so it reads worse.",
+    "'Where does deconstruction usually start? What deserves to come down? And what is underneath when it does?' Dropped (consider): BRIEF.md names real questions in runs and plain signposting as his habits; cutting them removes a human move.",
+    "Abba Moses saying. Dropped (consider): the replacement adds an interpretive sentence and an aphoristic closer ('Staying put was the lesson.'), the very tell being hunted.",
+    "'The setting is narrower than ours, but the shape carries over.' Dropped (consider): 'shape' is ordinary enough; not worth an edit.",
+    "'and that loneliness is real' Dropped (consider): it names the feeling without validating despair, and the sentence around it is plain. Not something to stake the essay on."
+  ],
+  "added": [],
+  "for_james": [
+    "The essay carries no first-person presence beyond 'I don't know how Harris's story ends', 'I don't think the questions are the danger' and 'Which of mine would?'. On deconstruction a reader expects you in the room. One real sentence from you near 'I don't think the questions are the danger' (what an objection looked like from inside when you were an atheist) would lift the voice score more than any edit. Nothing was invented; it is yours to give or withhold.",
+    "'Pastors can tell you about people who found serious objections to the faith in the same season they found a reason to want out of it.' is generic as it stands. If you have watched this, saying so in the first person, with no one identifiable, would be stronger.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree: the profile asks for 1,500 to 2,500 words, 2 to 4 sentence paragraphs, a Greek or Hebrew word, three 'Monday morning' questions with a practice, a screenshot line and your own story in every piece; the mature register asks for developed paragraphs, one earned verdict and no application box. The essay follows VOICE-JAMES-BELL.md and was not rewritten toward the profile.",
+    "The Jeremiah section ends on the bare promise of 32:15. A skeptic may miss why buying a field in a besieged city matters; one plain sentence from you would settle it if you want it.",
+    "The Nicaea link stays withheld until that essay is public (ledger, final read change 13)."
+  ]
+}

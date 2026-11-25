@@ -1,0 +1,115 @@
+{
+  "area": "jesus",
+  "slug": "the-resurrection-accounts-disagree",
+  "status": "live",
+  "question": "The four Easter accounts disagree about who went to the tomb, how many angels were there and where Jesus appeared. Doesn't that show they can't be trusted?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Fourteenth run (2026-11-20): an independent editor's read of the science area, and the area \"The historical Jesus and the resurrection\"",
+    "key": "w"
+  },
+  "record": "docs/work/elite/apol-pilot/jesus/the-resurrection-accounts-disagree.md",
+  "objectionSource": {
+    "author": "Bart D. Ehrman",
+    "title": "Jesus, Interrupted",
+    "year": 2009
+  },
+  "shortAnswer": "The differences are real, and some of them can't be smoothed away. The Gospels name different women, report one messenger or two, and set the appearances in Galilee, in Jerusalem or both. But differences in detail are what historians expect when several people tell the same event, and ancient historians differ in just this way about events no one doubts: Tacitus and Suetonius disagree about where Nero was and what he did during the fire of Rome in 64. The evangelists also wrote by the conventions of ancient biography, which allowed compressing, simplifying and spotlighting one figure among several. On the core, all four agree: early on the first day of the week Mary Magdalene, with other women in three of the accounts, found the tomb empty and learned that Jesus had risen, and his followers then saw him alive, in Mark as the angel's promise. The differences tell against careless claims about the Gospels. They don't tell against that.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "The objection is old. Hermann Samuel Reimarus, in the fragments Gotthold Lessing published in the 1770s, pressed the contradictions in the Easter stories as evidence that they were invented. Its most widely read modern form is Bart Ehrman's *Jesus, Interrupted* (2009), which invites readers to do what most churchgoers never do: set the four accounts side by side rather than reading each on its own.\n\nRead that way, the differences pile up. When did the women come? \"Just after sunrise,\" says Mark (Mark 16:2, BSB); \"while it was still dark,\" says John (John 20:1, BSB). Who came? In Mark, Mary Magdalene, Mary the mother of James and Salome; in Matthew, Mary Magdalene and \"the other Mary\"; in Luke, Mary Magdalene, Joanna, Mary the mother of James and other women; in John, Mary Magdalene alone. Whom did they meet? Mark has \"a young man dressed in a white robe\" (Mark 16:5, BSB), Matthew an angel who rolled the stone away and sat on it, Luke \"two men in radiant apparel\" (Luke 24:4, BSB), John two angels inside the tomb. What did the women do? In Mark \"they did not say a word to anyone\" (Mark 16:8, BSB); in Matthew they \"ran to tell His disciples\" (Matthew 28:8, BSB). Where did Jesus appear? Mark's messenger and Matthew send the disciples to Galilee; in Luke Jesus tells them to \"remain in the city\" (Luke 24:49, BSB), and every appearance is in or near Jerusalem. And Luke's Gospel seems to have Jesus taken up to heaven on Easter evening, while Luke's own second volume says he appeared \"over a span of forty days\" (Acts 1:3, BSB).\n\nEhrman adds that harmonizing doesn't rescue the accounts. To say the women met two angels, one of whom Matthew and Mark chose to mention, is to tell a story that none of the Gospels actually tells.\n\nPut at full strength, the objection says that witnesses to a real event would agree on things this basic. Accounts that can't agree on who was there, what they saw or where it happened are the products of storytelling, and the more they are harmonized, the more obvious it becomes that each author shaped the story to his purpose."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "The differences are not inventions of skeptics, and Christians shouldn't talk as if they were. Some are easily reconciled; others have produced harmonizations so elaborate that they convince no one who didn't already want to be convinced. A reader who was told that the Gospels agree in every particular, and then reads them side by side, has been badly served, and may reasonably wonder what else was overstated.\n\nIt is also true that the evangelists shaped their accounts. Matthew and Luke used Mark and changed him, and each chose what to include and how to arrange it. That is not a modern discovery. Tatian wove the four into a single harmony shortly after 172, and Augustine wrote a whole book around 400 on how the Gospels agree, because the church had always known they differ. Eusebius discussed how Matthew's timing of the women's visit fits Mark's. The question was never whether the differences exist. It is what they show."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "Start with what historians expect. When two ancient writers report the same event, they often disagree in detail, and no one concludes the event didn't happen. Tacitus says that during the great fire of 64 Nero \"was at Antium, and did not return to Rome until the fire approached his house,\" and that \"a rumour had gone forth everywhere\" that he sang of the destruction of Troy on a private stage while the city burned (*Annals* 15.39-40, in the translation of Church and Brodribb). Suetonius says Nero \"beheld from a tower in the house of Mecaenas\" and sang \"a poem on the ruin of Troy, in the tragic dress he used on the stage\" (*Nero* 38, in Thomson's translation, revised by Forester). One has him away and reports the singing as rumor; the other has him watching and reports it as fact. Tacitus says the fire was stopped after five days and then broke out again; Suetonius says it raged for six days and seven nights. Historians weigh such accounts. They don't doubt that Rome burned.\n\nThen the kind of books the Gospels are. Richard Burridge argued in *What Are the Gospels?* (1992) that they belong to the genre of ancient biography, and that view is now widely held. Michael Licona, in *Why Are There Differences in the Gospels?* (2017), studied how Plutarch tells the same events in different *Lives*, and found him compressing time, conflating scenes, moving an event from one setting to another, simplifying, and spotlighting one person while leaving others in the shadows, the techniques taught in the rhetorical handbooks of the day. Applied to Easter, spotlighting explains how Mark and Matthew can name one messenger, the one who spoke, while Luke and John name two, and how John can bring Mary Magdalene forward alone while her \"we do not know where they have put Him\" (John 20:2, BSB) quietly assumes others were with her. Compression explains Luke's last chapter. The same author, writing to the same Theophilus, says in Acts that his first book covered all that Jesus did \"until the day He was taken up to heaven\" (Acts 1:2, BSB), and then tells of forty days. He didn't contradict himself in two books addressed to one reader. He compressed in the first and spread out in the second. Licona's approach has its critics, among them Craig Blomberg, who has argued that he reaches for these devices too readily where other explanations are available, but the conventions themselves are well attested.\n\nThen what all four agree on. Each says that Mary Magdalene came to the tomb early on the first day of the week, with other women in three of them; each says the stone was moved and the tomb was empty; in the first three a messenger or messengers announce that Jesus had risen, and in John the risen Jesus meets Mary himself; and each, or in Mark's case the angel's promise, has him meet his followers afterward. Paul's summary, older than any Gospel, agrees on the burial, the third day and the appearances, and adds witnesses the Gospels don't narrate. The agreement is on the claim that matters, and it doesn't read like collusion. Writers who had agreed on a story would have agreed on the names."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is an argument about what differences between accounts can and can't show.",
+      "steps": [
+        "The four Easter accounts differ in details: the hour, the names and number of the women, the number of messengers, what the women did next and where Jesus appeared, and some of these differences resist a full harmonization.",
+        "Ancient accounts of the same real event commonly differ in such details while agreeing on its core, as the accounts of the fire of Rome in 64 do, and the evangelists wrote by conventions of ancient biography, such as compression and spotlighting, that produce differences of this kind.",
+        "The four agree on the core: early on the first day of the week Mary Magdalene, with other women in three of the accounts, found the tomb empty and learned that Jesus had risen, and his followers then saw him alive, in Mark as the angel's promise."
+      ],
+      "conclusion": "So: the differences tell against any claim that the accounts were coordinated, and against readings of Scripture that ignore how ancient books were written, but they don't tell against the core of the Easter testimony. They are what several tellings of one event look like.",
+      "after": "The weight sits on the second step. If the comparison with other ancient writers fails, and the Gospels' differences are of a different kind from theirs, the argument loses its force, and a reader should press it there.",
+      "weightStep": 2
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply is that the comparison flatters the Gospels. Where Nero stood is a detail on the edge of the story. Whether the women told anyone, and whether the disciples were sent to Galilee or told to stay in Jerusalem, are part of the story itself. And Matthew and Luke aren't independent witnesses at all: they copied Mark and changed him. Their differences show editors altering a source, and an editor willing to move the appearances from Galilee to Jerusalem may have been willing to invent them.\n\nPart of that should be granted. Matthew and Luke did use Mark, and their changes are editorial, not independent memories. That cuts both ways, though. It means their agreement with Mark is not three witnesses but one, and it also means their differences are not evidence that the event was remembered inconsistently, only that it was told by writers who arranged it for their readers. Luke's choice to keep every appearance near Jerusalem fits his whole design, a Gospel that begins in the temple and a second book that goes out from Jerusalem to Rome. As for Mark's women who said nothing, some readers take their silence as the silence of fear on the road, before the message reached the disciples, and some scholars think Mark's original ending was lost; the Study Bible's note on Mark 16 sets out both views. The deeper reply is that the evangelists' freedom in arranging the story is not evidence that they invented its core, because the core is older than any of them. Paul handed on the burial, the third day and the appearances in a summary formed within a few years of the events. Freedom with the telling is one thing. Making up what the witnesses still living could deny is another."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "Some differences have no agreed solution, and honest readers on all sides admit it. How the appearances in Galilee and Jerusalem fit into one sequence is argued. Whether Mark ended at 16:8 is still disputed. How far Licona's devices explain the Gospels, and whether they sit easily with every Christian account of Scripture's truthfulness, is debated among evangelical scholars themselves. And no study of genre can tell a reader whether the event the four describe happened. That has to be weighed on the evidence the other pages in this area set out."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ here more than on most questions in this area. Many evangelical churches confess Scripture to be without error as first written, the position set out in the Chicago Statement of 1978, and read the Gospels' differences as compatible with that confession once ancient conventions are understood; some of them prefer harmonization where it can be done, and others accept Licona's account of compositional devices. Other Christians, who also confess Scripture as God's word, hold that the evangelists could err in minor details without loss to what Scripture teaches. This site takes no side among those positions. What none of them doubts is the testimony itself: that the tomb was empty, that Jesus was raised bodily and that he appeared to his witnesses. The four accounts disagree about who reached the tomb first. They agree about whom they did not find there."
+    }
+  ],
+  "otherSide": [
+    "Bart D. Ehrman, *Jesus, Interrupted* (2009).",
+    "Hermann Samuel Reimarus, the fragments published by Gotthold Lessing (1774 to 1778)."
+  ],
+  "further": [
+    "Michael R. Licona, *Why Are There Differences in the Gospels? What We Can Learn from Ancient Biography* (2017).",
+    "Richard A. Burridge, *What Are the Gospels?* (1992).",
+    "N. T. Wright, *The Resurrection of the Son of God* (2003)."
+  ],
+  "onSite": [
+    "The Study Bible's notes on John 20 (/study/bible/john/20), Luke 24 (/study/bible/luke/24) and Mark 16 (/study/bible/mark/16), which set out the differences and the views on each.",
+    "The argued answer \"Why would anyone trust the Bible?\" (/answers/why-would-anyone-trust-the-bible), on the Gospels as history.",
+    "The other questions in this area (/questions/jesus), on the burial and the appearances."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "john",
+        "chapter": 20
+      },
+      {
+        "book": "luke",
+        "chapter": 24
+      },
+      {
+        "book": "mark",
+        "chapter": 16
+      },
+      {
+        "book": "matthew",
+        "chapter": 28
+      }
+    ],
+    "answers": [
+      "why-would-anyone-trust-the-bible",
+      "did-the-resurrection-actually-happen"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The Gospels' accounts of the resurrection contradict one another, and harmonizing them only produces a story none of them tells",
+      "proponent": "Bart D. Ehrman",
+      "work": "Jesus, Interrupted",
+      "year": 2009
+    },
+    {
+      "claim": "The contradictions among the Easter stories show that they were invented",
+      "proponent": "Hermann Samuel Reimarus",
+      "work": "The fragments published by Gotthold Lessing",
+      "year": 1778
+    }
+  ]
+}

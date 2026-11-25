@@ -18,21 +18,36 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "wouter";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
+import SectionHead from "@/components/art/SectionHead";
+import { Signpost } from "lucide-react";
 import { CrisisBlock } from "@/components/CrisisBlock";
 import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
+import { followHash } from "@/lib/followHash";
 import { isPublicEssayHref } from "@/lib/shelf";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import { READER_STATES, searchNeeds, type NeedEntry, type NeedsIndex, type ReaderState } from "@/lib/needs";
+import { crisisTopicsFor } from "@/lib/siteSearch";
+// "What people bring most": the first twelve care pages by rank, written with
+// the index by scripts/build-needs-index.mjs. On the page from its first paint,
+// so the crisis lines under them never move when the index arrives.
+import HELP_CHIPS from "@/data/help-chips.json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const isIndex = (x: unknown): x is NeedsIndex => !!x && Array.isArray((x as NeedsIndex).needs);
 
+/**
+ * A care page in the list: the reader's own words, then the page's own title
+ * (its search title), which names the subject plainly, so someone scanning for
+ * "anxiety" or "grief" sees the word (the walk's polish, 2026-11-23).
+ */
 function needItem(n: NeedEntry, state?: ReaderState): IndexItem {
   return {
     href: `/help/${n.slug}${state === "helping" ? "#helping" : ""}`,
     title: n.title,
+    sub: n.seoTitle,
     dek: n.summary,
     kicker: n.sensitivity === "ordinary" ? "Care page" : "Care page · help first",
   };
@@ -103,14 +118,19 @@ export default function Help() {
   }, [nonce, asked, navigate]);
 
   // Pages link here as /help#help-now. The router does not scroll to a
-  // fragment on its own, so bring the help lines into view on arrival.
+  // fragment on its own, so bring the help lines into view on arrival, once
+  // the held page (the crisis line and the head, from the prerendered HTML)
+  // has given way to this one (lib/followHash waits for that).
   useEffect(() => {
     if (typeof window === "undefined" || window.location.hash !== "#help-now") return;
-    requestAnimationFrame(() => document.getElementById("help-now")?.scrollIntoView({ block: "start" }));
+    followHash("#help-now");
   }, []);
 
-  const results = useMemo(() => (needs ? searchNeeds(query, needs).slice(0, 6) : []), [needs, query]);
-  const chips = useMemo(() => (needs ? needs.filter((n) => n.page).slice(0, 12) : []), [needs]);
+  const results = useMemo(() => (needs ? searchNeeds(query, needs) : []), [needs, query]);
+  // A reader who types their trouble here ("I want to die") is shown how to
+  // reach a person before any page, as on /search.
+  const typedCrisis = useMemo(() => crisisTopicsFor(query), [query]);
+  const chips = HELP_CHIPS;
   const inState = useMemo(() => (needs ? needs.filter((n) => n.states.includes(state)) : []), [needs, state]);
   const pages = inState.filter((n) => n.page);
   const starters = inState.filter((n) => !n.page);
@@ -127,26 +147,31 @@ export default function Help() {
   return (
     <Layout>
       <SEOMeta
-        title="Find Help for What You Are Facing"
+        title="Find Help: Anxiety, Grief, Doubt, Marriage"
         description="Anxious, grieving, doubting, lonely, a marriage in trouble? Say it in your own words. Honest help, Scripture in context, and real people to call."
         url="https://www.livewellbyjamesbell.co/help"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-4) var(--s-4) var(--s-6)", color: "var(--charcoal-fg)" }}>
+      {/* The crisis lines first, unchanged, with nothing above them. */}
+      <section style={{ background: "var(--charcoal)", padding: "var(--s-3) var(--gutter)", color: "var(--charcoal-fg)" }}>
         <div style={wrap}>
-          <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, margin: "0 0 var(--s-4)", padding: "10px 14px", border: "1px solid var(--charcoal-soft)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", maxWidth: "70ch" }}>
+          <p style={{ fontFamily: "var(--U)", fontSize: "14px", lineHeight: 1.6, margin: 0, padding: "10px 14px", border: "1px solid var(--charcoal-soft)", borderLeft: "3px solid var(--mustard)", borderRadius: "var(--radius-sm)", maxWidth: "70ch" }}>
             In danger or thinking about ending your life? Call or text <a href="tel:988" style={{ color: "inherit", fontWeight: 700 }}>988</a>, text{" "}
             <a href="sms:741741?&body=HOME" style={{ color: "inherit", fontWeight: 700 }}>HOME to 741741</a>, or call <a href="tel:911" style={{ color: "inherit", fontWeight: 700 }}>911</a>.{" "}
             <a href="#help-now" style={{ color: "var(--mustard)", fontWeight: 600 }}>More lines below</a>
           </p>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "14px" }}>Find help</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(34px, 5.6vw, 58px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", margin: "0 0 16px", maxWidth: "18ch" }}>
-            What are you facing?
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17.5px", lineHeight: 1.7, color: "var(--charcoal-fg)", maxWidth: "60ch", margin: "0 0 var(--s-4)" }}>
-            Say it the way you would say it to a friend. Each page here starts with what you are carrying, reads Scripture in context, and ends with something you can do this week and people who can help.
-          </p>
+        </div>
+      </section>
 
+      <InnerHead path="/help" title="Find Help" line="What are you facing?" plate="lantern">
+        <p className="pg-head__lede">
+          Say it the way you would say it to a friend. Each page here starts with what you are carrying, reads Scripture in context, and ends with something you can do this week and people who can help.
+        </p>
+      </InnerHead>
+
+      {/* FIRST: say it in your own words. */}
+      <section className="home-sec--dark" style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--gutter)", color: "var(--charcoal-fg)" }}>
+        <div style={wrap}>
           <form
             role="search"
             onSubmit={(e) => { e.preventDefault(); if (results[0]) go(results[0]); }}
@@ -166,6 +191,11 @@ export default function Help() {
             />
           </form>
           <div aria-live="polite" style={{ maxWidth: "640px" }}>
+            {typedCrisis.length > 0 && (
+              <div style={{ marginTop: "12px" }}>
+                <CrisisBlock id="help-now-typed" topics={typedCrisis} heading="If you need help now" />
+              </div>
+            )}
             {query.trim().length >= 2 && needs && (
               results.length ? (
                 <div style={{ marginTop: "12px", background: "var(--card)", borderRadius: "var(--radius-sm)", padding: "4px 16px", color: "var(--ink)" }}>
@@ -176,6 +206,7 @@ export default function Help() {
                         <button type="button" onClick={() => go(n)} className="ed-row" style={{ width: "100%", padding: "12px 0", font: "inherit", textAlign: "left", cursor: "pointer", background: "none", border: 0 }}>
                           <span style={{ display: "block", minWidth: 0 }}>
                             <span className="ed-title" style={{ fontSize: "20px", fontWeight: 400 }}>{n.title}</span>
+                            {n.seoTitle && <span className="ed-sub" style={{ display: "block" }}>{n.seoTitle}</span>}
                             <span style={{ display: "block", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.5, color: "var(--ink-muted)", marginTop: "4px" }}>{n.summary}</span>
                           </span>
                           <span className="ed-arrow" aria-hidden>→</span>
@@ -209,18 +240,15 @@ export default function Help() {
         </div>
       </section>
 
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--gutter)" }}>
         <div style={{ maxWidth: "var(--w-content)", margin: "0 auto" }}>
           <CrisisBlock id="help-now" heading="If you're in trouble right now" topics={["suicide", "abuse", "sexual-assault", "substance"]} />
         </div>
       </section>
 
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
+      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--gutter) var(--s-7)" }}>
         <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "12px" }}>Where are you?</div>
-          <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(28px, 4vw, 40px)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.12, color: "var(--ink)", margin: "0 0 var(--s-3)", maxWidth: "24ch" }}>
-            Start from where you actually are.
-          </h2>
+          <SectionHead icon={Signpost} label="Where are you?" title="Start from where you actually are." id="help-where-title" />
           <div role="group" aria-label="Where are you?" style={{ display: "flex", flexWrap: "wrap", gap: "8px", margin: "0 0 var(--s-3)" }}>
             {READER_STATES.filter((s) => s.id !== "crisis").map((s) => {
               const on = s.id === state;
@@ -230,7 +258,7 @@ export default function Help() {
                   type="button"
                   aria-pressed={on}
                   onClick={() => setState(s.id)}
-                  style={{ minHeight: "44px", padding: "10px 16px", borderRadius: "var(--radius-pill)", border: `1px solid ${on ? "var(--charcoal)" : "var(--border)"}`, background: on ? "var(--charcoal)" : "var(--card)", color: on ? "var(--charcoal-fg)" : "var(--ink)", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 600, cursor: "pointer" }}
+                  className="lw-chip"
                 >
                   {s.label}
                 </button>

@@ -1,0 +1,1384 @@
+{
+ "piece": "family-devotions",
+ "human_score": 5,
+ "voice_score": 4,
+ "verdict": "Sound, kind and orthodox, and audibly machine-shaped: no contractions in 35,000 words meant to be spoken, an 'is not ... It is ...' pair in nearly half the pieces, a slogan at the end of most reflections, and one mould for all 72 devotions. Thanksgiving week shows what the library sounds like when it is his.",
+ "files": [
+  "/home/user/Livewell-/client/public/family-devotions.json",
+  "/home/user/Livewell-/client/public/family-devotions-2.json",
+  "/home/user/Livewell-/client/public/family-seasonal.json",
+  "/home/user/Livewell-/client/public/family-catechism.json"
+ ],
+ "patterns": [
+  {
+   "code": "A",
+   "name": "No contractions anywhere",
+   "note": "35,465 words of prose written to be read aloud to children contain zero contractions (\"do not\", \"cannot\", \"it is\", \"you are\" every time; \"cannot\" alone 67 times). This is the single loudest machine tell in the library. Fix as a pass, by ear, across reflection, questions, activity, prayer, grownups.line and catechism commentary. Leave passageText and scriptureText untouched, leave the formal catechism `answer` and `kidsAnswer` fields uncontracted (they are memorised), and keep a full \"do not\" or \"is not\" where the sentence leans on it. Roughly two in three should contract.",
+   "examples": [
+    {
+     "pattern": "A",
+     "file": "/home/user/Livewell-/client/public/family-devotions.json",
+     "id": "identity",
+     "field": "reflection",
+     "quote": "But you do not have to earn the right to exist.",
+     "replacement": "But you don't have to earn the right to exist.",
+     "severity": "must",
+     "tell": "No contractions in speech",
+     "why": "35,000 words meant to be read aloud to children hold not one contraction. No parent says \"you do not have to\" at the table; the ear hears a machine or a legal notice. VOICE-JAMES-BELL.md prefers contractions where they make prose sound spoken."
+    },
+    {
+     "pattern": "A",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "prayer",
+     "field": "reflection",
+     "quote": "You do not have to be fancy. You just have to be honest.",
+     "replacement": "You don't have to be fancy. You just have to be honest.",
+     "severity": "must",
+     "tell": "No contractions in speech",
+     "why": "35,000 words meant to be read aloud to children hold not one contraction. No parent says \"you do not have to\" at the table; the ear hears a machine or a legal notice. VOICE-JAMES-BELL.md prefers contractions where they make prose sound spoken."
+    },
+    {
+     "pattern": "A",
+     "file": "/home/user/Livewell-/client/public/family-catechism.json",
+     "id": "Q66",
+     "field": "commentary",
+     "quote": "You do not need to pretend you can prove every line.",
+     "replacement": "You don't need to pretend you can prove every line.",
+     "severity": "must",
+     "tell": "No contractions in speech",
+     "why": "35,000 words meant to be read aloud to children hold not one contraction. No parent says \"you do not have to\" at the table; the ear hears a machine or a legal notice. VOICE-JAMES-BELL.md prefers contractions where they make prose sound spoken."
+    }
+   ]
+  },
+  {
+   "code": "B",
+   "name": "\"X is not A. It is B.\" as the default gait",
+   "note": "115 two-sentence \"is not ... It is ...\" pairs across 86 of 188 pieces; 28 of 72 Big Ideas are built on \"not\"; a further 62 \", not ...\" tails and 48 \"not just/only\". Rule for the fixer: at most one per piece, at the real hinge. Where the Big Idea uses it, the reflection may not.",
+   "examples": [
+    {
+     "pattern": "B",
+     "file": "/home/user/Livewell-/client/public/family-devotions.json",
+     "id": "fear-and-anxiety",
+     "field": "reflection",
+     "quote": "Trust is not the absence of fear. Trust is what you do with your hands while your heart is still pounding.",
+     "replacement": "You can trust God while your heart is still pounding.",
+     "severity": "must",
+     "tell": "\"X is not A. It is B.\" as the default gait",
+     "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library. This piece has three in 130 words; keep the one about the promise."
+    },
+    {
+     "pattern": "B",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "heaven",
+     "field": "reflection",
+     "quote": "That is not an escape from the real world. It is the real world finally made the way it was always meant to be.",
+     "replacement": "That is the real world, finally made the way it was always meant to be.",
+     "severity": "should",
+     "tell": "\"X is not A. It is B.\" as the default gait",
+     "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library. The Big Idea and the first paragraph already used the move."
+    },
+    {
+     "pattern": "B",
+     "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+     "id": "advent.day18",
+     "field": "reflection",
+     "quote": "The wonder of Christmas is not just that a baby was born. It is that the One who made everything chose to become small enough to be held.",
+     "replacement": "The wonder of Christmas is that the One who made everything chose to become small enough to be held.",
+     "severity": "should",
+     "tell": "\"X is not A. It is B.\" as the default gait",
+     "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+    }
+   ]
+  },
+  {
+   "code": "C",
+   "name": "Aphoristic closers",
+   "note": "Most reflections end on a slogan that restates the paragraph. Cut the slogan and let the paragraph end on its last concrete sentence.",
+   "examples": [
+    {
+     "pattern": "C",
+     "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+     "id": "holyWeek.day8",
+     "field": "reflection",
+     "quote": "And because he lives, the worst thing is never the last thing.",
+     "replacement": "And because he lives, death will not keep anyone who belongs to him.",
+     "severity": "must",
+     "tell": "Uncredited stock line used as the Easter closer",
+     "why": "\"The worst thing is never the last thing\" is a well-known line usually credited to Frederick Buechner. Here it runs unattributed as James's own closing sentence, on the most important day in the library."
+    },
+    {
+     "pattern": "C",
+     "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+     "id": "holyWeek.day5",
+     "field": "reflection",
+     "quote": "If that is how the greatest one acted, then greatness in his family will always look like serving, never like being served. Real love kneels down.",
+     "replacement": "If that is how the greatest one acted, then greatness in his family will always look like serving, never like being served.",
+     "severity": "should",
+     "tell": "Aphoristic closer (pillow line)",
+     "why": "The reflection ends by restating itself as a slogan. Most of the 72 devotions and many Advent days close this way, so the ear learns to expect the bow."
+    },
+    {
+     "pattern": "C",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "the-fruit-of-the-spirit",
+     "field": "reflection",
+     "quote": "The question is less try harder and more stay connected. Healthy roots, good fruit.",
+     "replacement": "So the question to ask is whether you're staying connected, more than whether you're trying hard enough.",
+     "severity": "should",
+     "tell": "Aphoristic closer (pillow line)",
+     "why": "The reflection ends by restating itself as a slogan. Most of the 72 devotions and many Advent days close this way, so the ear learns to expect the bow. \"Healthy roots, good fruit\" is a verbless bumper sticker."
+    }
+   ]
+  },
+  {
+   "code": "D",
+   "name": "Fragment stacks",
+   "note": "Verbless one- to four-word sentences stacked for drama. Join them into the sentence they belong to.",
+   "examples": [
+    {
+     "pattern": "D",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "justice-and-the-poor",
+     "field": "reflection",
+     "quote": "Others have almost no voice at all. The poor. The forgotten. The ones who cannot fight for themselves.",
+     "replacement": "Others have almost no voice at all: the poor, the forgotten, the ones who can't fight for themselves.",
+     "severity": "should",
+     "tell": "Fragment stack",
+     "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+    },
+    {
+     "pattern": "D",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "the-new-creation",
+     "field": "reflection",
+     "quote": "The same world, healed. Mended. Made the way it was always supposed to be.",
+     "replacement": "It is the same world, healed and mended and made the way it was always supposed to be.",
+     "severity": "should",
+     "tell": "Fragment stack",
+     "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+    },
+    {
+     "pattern": "D",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "the-prodigal-son",
+     "field": "reflection",
+     "quote": "Not arms crossed. Arms open, running.",
+     "replacement": "His arms are not crossed. They are open, and He is running.",
+     "severity": "should",
+     "tell": "Fragment stack",
+     "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+    }
+   ]
+  },
+  {
+   "code": "E",
+   "name": "Patched tail clauses",
+   "note": "Big Ideas that end with a bolted-on denial (\"..., and there is nothing boring about that kind of strength\"). These look like antitheses rewritten by rule rather than by ear. Cut the tail.",
+   "examples": [
+    {
+     "pattern": "E",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "self-control",
+     "field": "bigIdea",
+     "quote": "Self control is being strong enough to choose what you do instead of just reacting, and there is nothing boring about that kind of strength.",
+     "replacement": "Self-control is being strong enough to choose what you do instead of just reacting.",
+     "severity": "must",
+     "tell": "Tail clause denying a point nobody raised",
+     "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought."
+    },
+    {
+     "pattern": "E",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "the-good-shepherd",
+     "field": "bigIdea",
+     "quote": "Jesus is a shepherd who leads us and would die to keep us safe, and a shepherd does not drive his sheep from behind.",
+     "replacement": "Jesus is a shepherd who leads us and would die to keep us safe.",
+     "severity": "must",
+     "tell": "Tail clause denying a point nobody raised",
+     "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought."
+    },
+    {
+     "pattern": "E",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "the-fruit-of-the-spirit",
+     "field": "bigIdea",
+     "quote": "Good character grows in you when the Spirit is at work, like fruit on a tree, and no one has ever forced a tree to bear.",
+     "replacement": "Good character grows in you when the Spirit is at work, like fruit on a tree.",
+     "severity": "must",
+     "tell": "Tail clause denying a point nobody raised",
+     "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought."
+    }
+   ]
+  },
+  {
+   "code": "F",
+   "name": "Announced wonder, announced turns, rulebook leakage",
+   "note": "\"Think about how amazing this is\", \"Here is the part that costs something\", \"So let us be honest\", \"here is the turn the whole catechism has been waiting for\". Delete the announcement; the next sentence already does the work.",
+   "examples": [
+    {
+     "pattern": "F",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "the-incarnation",
+     "field": "reflection",
+     "quote": "Think about how amazing this is. The God who made the entire universe",
+     "replacement": "The God who made the entire universe",
+     "severity": "should",
+     "tell": "Announced wonder or announced turn",
+     "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something."
+    },
+    {
+     "pattern": "F",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "gods-faithfulness",
+     "field": "reflection",
+     "quote": "What is amazing about this verse is where it shows up.",
+     "replacement": "Look at where this verse shows up.",
+     "severity": "should",
+     "tell": "Announced wonder or announced turn",
+     "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something."
+    },
+    {
+     "pattern": "F",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "wisdom",
+     "field": "reflection",
+     "quote": "The wonderful thing in this verse is how you get wisdom. You ask.",
+     "replacement": "The verse also tells you how to get wisdom. You ask.",
+     "severity": "should",
+     "tell": "Announced wonder or announced turn",
+     "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something."
+    }
+   ]
+  },
+  {
+   "code": "G",
+   "name": "Filler intensifiers",
+   "note": "\"actually\" 40, \"really\" 36, \"just\" 85, \"single\" 16, \"honest/honestly\" 28, \"on purpose\" 18. Delete on sight unless the word is doing contrastive work.",
+   "examples": [
+    {
+     "pattern": "G",
+     "file": "/home/user/Livewell-/client/public/family-devotions.json",
+     "id": "serving-others",
+     "field": "reflection",
+     "quote": "He did it because that is what love actually looks like when it stops talking and starts moving.",
+     "replacement": "He did it because that is what love looks like when it stops talking and starts moving.",
+     "severity": "should",
+     "tell": "Filler intensifier",
+     "why": "\"actually\" appears 40 times, \"really\" 36, \"just\" 85, \"single\" 16. Each asserts sincerity the sentence should carry by itself."
+    },
+    {
+     "pattern": "G",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "humility",
+     "field": "reflection",
+     "quote": "Humility is forgetting yourself long enough to actually see the people around you.",
+     "replacement": "Humility is forgetting yourself long enough to see the people around you.",
+     "severity": "should",
+     "tell": "Filler intensifier",
+     "why": "\"actually\" appears 40 times, \"really\" 36, \"just\" 85, \"single\" 16. Each asserts sincerity the sentence should carry by itself."
+    },
+    {
+     "pattern": "G",
+     "file": "/home/user/Livewell-/client/public/family-catechism.json",
+     "id": "Q49",
+     "field": "commentary",
+     "quote": "because they show children that he is actually there and actually near.",
+     "replacement": "because they show children that he is there and that he is near.",
+     "severity": "should",
+     "tell": "Filler intensifier",
+     "why": "\"actually\" appears 40 times, \"really\" 36, \"just\" 85, \"single\" 16. Each asserts sincerity the sentence should carry by itself."
+    }
+   ]
+  },
+  {
+   "code": "H",
+   "name": "Stacked superlatives",
+   "note": "\"deepest\" 9 times, \"most important\" 10, \"the strongest/hardest/most ... thing a person can do\" 4. Say the thing at its true size.",
+   "examples": [
+    {
+     "pattern": "H",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "loving-your-enemies",
+     "field": "reflection",
+     "quote": "It is the strongest, hardest, most God like thing a person can do.",
+     "replacement": "It is hard, and it is what God is like.",
+     "severity": "must",
+     "tell": "Stacked superlative",
+     "why": "\"The most/deepest/strongest thing a person can ...\" recurs (\"deepest\" 9 times, \"most important\" 10). Superlatives with no concrete case are the vague-intensifier tell, and a skeptic hears overclaim. Also a forced triplet and a missing hyphen."
+    },
+    {
+     "pattern": "H",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "waiting-on-god",
+     "field": "reflection",
+     "quote": "Waiting on God turns out to be one of the strongest things a person can do.",
+     "replacement": "That kind of waiting takes strength.",
+     "severity": "should",
+     "tell": "Stacked superlative",
+     "why": "\"The most/deepest/strongest thing a person can ...\" recurs (\"deepest\" 9 times, \"most important\" 10). Superlatives with no concrete case are the vague-intensifier tell, and a skeptic hears overclaim."
+    },
+    {
+     "pattern": "H",
+     "file": "/home/user/Livewell-/client/public/family-catechism.json",
+     "id": "Q43",
+     "field": "commentary",
+     "quote": "For anyone raised without a good father, this is the deepest healing there is.",
+     "replacement": "For anyone raised without a good father, this can heal a great deal.",
+     "severity": "should",
+     "tell": "Stacked superlative",
+     "why": "\"The most/deepest/strongest thing a person can ...\" recurs (\"deepest\" 9 times, \"most important\" 10). Superlatives with no concrete case are the vague-intensifier tell, and a skeptic hears overclaim. On this subject especially the line should not overpromise; see the note to James."
+    }
+   ]
+  },
+  {
+   "code": "I",
+   "name": "Accuracy, care, consistency and mechanics",
+   "note": "Individual defects: a misread passage, an overclaim, wording that does not match the printed passage, a typo, a self-contradiction between the Trinity activity and Q76, missing hyphens, a care gap, literary headings.",
+   "examples": [
+    {
+     "pattern": "I",
+     "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+     "id": "the-good-shepherd",
+     "field": "reflection",
+     "quote": "Most shepherds run when the wolf comes.",
+     "replacement": "The hired hand runs when the wolf comes.",
+     "severity": "must",
+     "tell": "Inaccurate handling of the passage",
+     "why": "John 10:12-13 says the hired hand runs, in contrast with the shepherd. \"Most shepherds run\" is not what Jesus said and undercuts his own image."
+    },
+    {
+     "pattern": "I",
+     "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+     "id": "holyWeek.day1",
+     "field": "reflection",
+     "quote": "By Friday the same crowd would turn on him.",
+     "replacement": "By Friday a crowd would be shouting for his death.",
+     "severity": "should",
+     "tell": "Overclaim stated as history",
+     "why": "The Gospels do not say the Palm Sunday crowd and the Friday crowd were the same people. A careful reader, or a skeptic, will catch it."
+    },
+    {
+     "pattern": "I",
+     "file": "/home/user/Livewell-/client/public/family-devotions.json",
+     "id": "gratitude",
+     "field": "reflection",
+     "quote": "The verse says give thanks in all circumstances, not for all circumstances.",
+     "replacement": "The verse says give thanks in every circumstance, not for every circumstance.",
+     "severity": "should",
+     "tell": "Quotes a different translation from the passage printed above it",
+     "why": "The passage text on the card reads \"in every circumstance\"; the reflection quotes other wording as \"the verse says\"."
+    }
+   ]
+  }
+ ],
+ "structural_pattern": "Every one of the 72 devotions is two paragraphs of about 60 to 80 words: paragraph one opens on an everyday image, paragraph two pivots with 'The verse ...' or 'This is ...', and the last sentence is a slogan. Read one a night and by the second week a family hears the mould. Thanksgiving week breaks the mould (one developed paragraph that follows the passage) and is far better for it. This cannot be fixed sentence by sentence; when pieces are revised, let some run as one paragraph, let some end on a question or on the passage, and vary where the verse comes in.",
+ "stamps": [
+  "'the last word' as a closer: the-empty-tomb, suffering, the-second-coming, thanksgiving.day6, Q51",
+  "'from a (safe) distance' / 'from far away': love, the-incarnation, advent.day19, Q26, Q65 (7 uses)",
+  "'small/close/near enough to be held': advent.day18, advent.day24, the-incarnation, Q25",
+  "'learned to walk': the-incarnation, advent.day19, Q26",
+  "'floating on clouds': heaven (Big Idea and reflection), the-new-creation, Q52",
+  "'on purpose' 18 times; 'Notice ...' as an opener 7 times; 'The verse ...' opening paragraph two 13 times; 'It is easy to ...' opening 7 pieces",
+  "Whole sentences reused: Q16 and the-fall (toddler / first honest step / cannot be helped until we admit); Q4, Q76 and the-trinity (God has always been love ... brought inside that love); Q18 and Q57 (rescued first, commanded second); the-second-coming and Q51 (history not spinning in circles ... the last word); fear-and-anxiety and advent.day7 (The promise is not that ... The promise is that ...)",
+  "Activities reused: 'secretly does one helpful thing' in serving-others, love and kindness",
+  "Paired devotions on the same subject with overlapping wording: forgiveness / when-someone-hurts-you; gratitude / thankfulness (same verse); why-we-pray / prayer; is-the-bible-true / the-bible; obedience / trusting-enough-to-obey"
+ ],
+ "ten_worst": [
+  {
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "fear-and-anxiety",
+   "field": "reflection (first paragraph)",
+   "quote": "Notice the psalm does not pretend fear away. The writer is scared and says so out loud. Then he does something small and brave. He hands the fear to God instead of carrying it alone in the dark. Trust is not the absence of fear. Trust is what you do with your hands while your heart is still pounding.",
+   "replacement": "Notice the psalm doesn't pretend fear away. The writer is scared and says so out loud. Then he does something small and brave. He hands the fear to God instead of carrying it alone in the dark. You can trust God while your heart is still pounding.",
+   "why": "Three antitheses in one short card (Big Idea, this pair, and the promise pair in paragraph two) plus a quotable epigram about trust and hands."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "holyWeek.day8",
+   "field": "reflection",
+   "quote": "He is alive. And because he lives, the worst thing is never the last thing.",
+   "replacement": "He is alive. And because he lives, death will not keep anyone who belongs to him.",
+   "why": "Easter ends on an uncredited line usually attributed to Frederick Buechner."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "loving-your-enemies",
+   "field": "reflection",
+   "quote": "It does not mean you let them hurt you. It means you refuse to become bitter. It is the strongest, hardest, most God like thing a person can do.",
+   "replacement": "It doesn't mean you let them hurt you, and if someone is hurting you, tell a grown-up you trust. It means you refuse to become bitter. It is hard, and it is what God is like.",
+   "why": "Forced superlative triplet, missing hyphen, and no path to help for a child who is being harmed."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-incarnation",
+   "field": "reflection (first paragraph)",
+   "quote": "Think about how amazing this is. The God who made the entire universe, who needs nothing, who was never born and never dies, chose to become a tiny baby. He had to be fed and held and taught to walk, just like you once were. The Maker of the stars learned to count them on his fingers.",
+   "replacement": "The God who made the entire universe, who needs nothing, who was never born and never dies, chose to become a tiny baby. He had to be fed and held and taught to walk, just like you once were.",
+   "why": "Announced amazement at the front and an invented, embroidered image at the back."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-fruit-of-the-spirit",
+   "field": "reflection (second paragraph, last two sentences)",
+   "quote": "The question is less try harder and more stay connected. Healthy roots, good fruit.",
+   "replacement": "So the question to ask is whether you're staying connected, more than whether you're trying hard enough.",
+   "why": "Slogan closer with no verb."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-prodigal-son",
+   "field": "reflection",
+   "quote": "That is the picture Jesus gives us of God. Not arms crossed. Arms open, running.",
+   "replacement": "That is the picture Jesus gives us of God. His arms are not crossed. They are open, and He is running.",
+   "why": "Fragment-stack kicker on one of the strongest pieces in the library."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "courage",
+   "field": "reflection",
+   "quote": "You can be scared and brave at the same time. In fact, that is the only kind of brave there is.",
+   "replacement": "You can be scared and brave at the same time.",
+   "why": "Epigram restating the title, the Big Idea and the previous sentence."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-good-shepherd",
+   "field": "bigIdea + reflection",
+   "quote": "Jesus is a shepherd who leads us and would die to keep us safe, and a shepherd does not drive his sheep from behind. [...] Most shepherds run when the wolf comes.",
+   "replacement": "Jesus is a shepherd who leads us and would die to keep us safe. [...] The hired hand runs when the wolf comes.",
+   "why": "A patched tail clause in the line a child repeats, and a misreading of John 10:12."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q33",
+   "field": "commentary",
+   "quote": "Calling Jesus Lord is not a polite religious phrase. It is a surrender. It means he gets a say in our money, our anger, our screens, our marriages.",
+   "replacement": "When we call Jesus Lord, we're giving him a say in our money, our anger, our screens, our marriages.",
+   "why": "Straw position, hard-period antithesis, one-word verdict."
+  },
+  {
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q66",
+   "field": "commentary",
+   "quote": "Welcome the question. A faith that cannot be questioned cannot be trusted.",
+   "replacement": "Welcome the question.",
+   "why": "Chiasmus epigram and a stock line, tacked on after the paragraph had already earned its point."
+  }
+ ],
+ "most_machine_sounding": [
+  "family-devotions.json: fear-and-anxiety, why-we-pray, who-is-jesus, obedience, serving-others",
+  "family-devotions-2.json: heaven, courage, rest-and-sabbath, the-cross, the-armor-of-god, goodness, the-new-creation, joy, kindness, the-beatitudes, loving-your-enemies",
+  "family-seasonal.json: advent.day7, advent.day18, advent.day3, holyWeek.day5, holyWeek.day8 (closing lines only)",
+  "family-catechism.json: Q3, Q33, Q40, Q58, Q62, Q66 commentary; and the repeated block Q53-Q64, which re-asks eight questions already answered in Q8-Q50"
+ ],
+ "most_his": [
+  "family-seasonal.json: the whole Thanksgiving week, above all thanksgiving.day4 (The Year the Fig Tree Did Not Bud), day5, day6 (The Empty Chair) and day7. Concrete, unhurried, no slogans, the family inside the hard thing. This is the register the rest should be brought to.",
+  "family-seasonal.json: advent.day1 (The Long Wait Begins), advent.day17 (Joseph Stays), holyWeek.day7 (Holy Saturday)",
+  "family-devotions-2.json: humility (second paragraph: one long sentence, then 'the parents need it at least as much as the children do'), stewardship (second paragraph: 'Parents, this lands on us first'), the-fear-of-the-lord (second paragraph), the-miracles-of-jesus (second paragraph), mercy (opening), suffering (apart from 'So let us be honest')",
+  "family-devotions.json: handling-anger ('most grown-ups are still working on it'), screens-and-attention ('Both kids and parents in this room know that feeling')",
+  "family-catechism.json: Q9, Q10, Q55, Q68, Q71, Q75 commentary"
+ ],
+ "findings": [
+  {
+   "pattern": "A",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "identity",
+   "field": "reflection",
+   "quote": "But you do not have to earn the right to exist.",
+   "replacement": "But you don't have to earn the right to exist.",
+   "severity": "must",
+   "tell": "No contractions in speech",
+   "why": "35,000 words meant to be read aloud to children hold not one contraction. No parent says \"you do not have to\" at the table; the ear hears a machine or a legal notice. VOICE-JAMES-BELL.md prefers contractions where they make prose sound spoken."
+  },
+  {
+   "pattern": "A",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "prayer",
+   "field": "reflection",
+   "quote": "You do not have to be fancy. You just have to be honest.",
+   "replacement": "You don't have to be fancy. You just have to be honest.",
+   "severity": "must",
+   "tell": "No contractions in speech",
+   "why": "35,000 words meant to be read aloud to children hold not one contraction. No parent says \"you do not have to\" at the table; the ear hears a machine or a legal notice. VOICE-JAMES-BELL.md prefers contractions where they make prose sound spoken."
+  },
+  {
+   "pattern": "A",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q66",
+   "field": "commentary",
+   "quote": "You do not need to pretend you can prove every line.",
+   "replacement": "You don't need to pretend you can prove every line.",
+   "severity": "must",
+   "tell": "No contractions in speech",
+   "why": "35,000 words meant to be read aloud to children hold not one contraction. No parent says \"you do not have to\" at the table; the ear hears a machine or a legal notice. VOICE-JAMES-BELL.md prefers contractions where they make prose sound spoken."
+  },
+  {
+   "pattern": "A",
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "advent.day12",
+   "field": "reflection",
+   "quote": "You are allowed to bring your real questions to God. He is not fragile.",
+   "replacement": "You're allowed to bring your real questions to God. He isn't fragile.",
+   "severity": "must",
+   "tell": "No contractions in speech",
+   "why": "35,000 words meant to be read aloud to children hold not one contraction. No parent says \"you do not have to\" at the table; the ear hears a machine or a legal notice. VOICE-JAMES-BELL.md prefers contractions where they make prose sound spoken."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "fear-and-anxiety",
+   "field": "reflection",
+   "quote": "Trust is not the absence of fear. Trust is what you do with your hands while your heart is still pounding.",
+   "replacement": "You can trust God while your heart is still pounding.",
+   "severity": "must",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library. This piece has three in 130 words; keep the one about the promise."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "heaven",
+   "field": "reflection",
+   "quote": "That is not an escape from the real world. It is the real world finally made the way it was always meant to be.",
+   "replacement": "That is the real world, finally made the way it was always meant to be.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library. The Big Idea and the first paragraph already used the move."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "advent.day18",
+   "field": "reflection",
+   "quote": "The wonder of Christmas is not just that a baby was born. It is that the One who made everything chose to become small enough to be held.",
+   "replacement": "The wonder of Christmas is that the One who made everything chose to become small enough to be held.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q33",
+   "field": "commentary",
+   "quote": "Calling Jesus Lord is not a polite religious phrase. It is a surrender. It means he gets a say in our money, our anger, our screens, our marriages.",
+   "replacement": "When we call Jesus Lord, we're giving him a say in our money, our anger, our screens, our marriages.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library. The denied position (\"a polite religious phrase\") is one nobody at the table holds."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "why-we-pray",
+   "field": "bigIdea",
+   "quote": "Prayer is not magic words. It is talking to a Father who is actually listening.",
+   "replacement": "When you pray, you are talking to a Father who is listening.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-cross",
+   "field": "reflection",
+   "quote": "The cross was not an accident or a defeat. It was a choice.",
+   "replacement": "Nobody forced the cross on Jesus.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "rest-and-sabbath",
+   "field": "reflection",
+   "quote": "Rest is not laziness. Rest is trusting that the world keeps spinning even when you stop pushing it.",
+   "replacement": "When you rest, you're trusting that the world keeps spinning even when you stop pushing it.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "serving-others",
+   "field": "reflection",
+   "quote": "Serving is not losing. It is the most like Jesus a person can be.",
+   "replacement": "Nobody is more like Jesus than the person doing the serving.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q3",
+   "field": "commentary",
+   "quote": "That is not a cold fact. It is the ground you stand on when everything else shifts.",
+   "replacement": "That is the ground you stand on when everything else shifts.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "advent.day7",
+   "field": "reflection",
+   "quote": "The promise is not that the dark is fake. The promise is that a light is coming into it, and the dark has never once been able to put it out.",
+   "replacement": "The promise is that a light is coming into it, and the dark has never once been able to put it out.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library. Same skeleton as fear-and-anxiety (\"The promise here is not that ... The promise is that ...\")."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-new-creation",
+   "field": "reflection",
+   "quote": "The story does not end with an escape. It ends with a homecoming, a world remade, where God lives with his people forever.",
+   "replacement": "The story ends with a homecoming, a world remade, where God lives with his people forever.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library. Third antithesis in this piece."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "joy",
+   "field": "reflection",
+   "quote": "That joy is not just a nice feeling. The Bible says it is our strength.",
+   "replacement": "The Bible says that joy is our strength.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "who-is-jesus",
+   "field": "reflection",
+   "quote": "He left us with a real decision, not a soft compliment.",
+   "replacement": "He left us with a real decision.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library. Also a two-beat epigram closer."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "who-is-jesus",
+   "field": "bigIdea",
+   "quote": "Jesus is not just a kind man from history. He is God you can actually see.",
+   "replacement": "Jesus is more than a kind man from history. He is God you can see.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "115 two-sentence \"is not ... It is ...\" pairs sit in 86 of the 188 pieces, and 28 of 72 Big Ideas are built on \"not\". One at a true hinge is his voice; at this rate it is the most recognisable machine rhythm in the library."
+  },
+  {
+   "pattern": "B",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q2",
+   "field": "commentary",
+   "quote": "For the skeptic at your table, the answer is not a clever argument but an invitation to look honestly at what is already speaking.",
+   "replacement": "The skeptic at your table needs an invitation to look at what is already speaking more than he needs an argument.",
+   "severity": "should",
+   "tell": "\"X is not A. It is B.\" as the default gait",
+   "why": "\"Clever\" twice in three sentences, a not/but pair, and \"honestly\" as a self-certifying adverb."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "holyWeek.day8",
+   "field": "reflection",
+   "quote": "And because he lives, the worst thing is never the last thing.",
+   "replacement": "And because he lives, death will not keep anyone who belongs to him.",
+   "severity": "must",
+   "tell": "Uncredited stock line used as the Easter closer",
+   "why": "\"The worst thing is never the last thing\" is a well-known line usually credited to Frederick Buechner. Here it runs unattributed as James's own closing sentence, on the most important day in the library."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "holyWeek.day5",
+   "field": "reflection",
+   "quote": "If that is how the greatest one acted, then greatness in his family will always look like serving, never like being served. Real love kneels down.",
+   "replacement": "If that is how the greatest one acted, then greatness in his family will always look like serving, never like being served.",
+   "severity": "should",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "The reflection ends by restating itself as a slogan. Most of the 72 devotions and many Advent days close this way, so the ear learns to expect the bow."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-fruit-of-the-spirit",
+   "field": "reflection",
+   "quote": "The question is less try harder and more stay connected. Healthy roots, good fruit.",
+   "replacement": "So the question to ask is whether you're staying connected, more than whether you're trying hard enough.",
+   "severity": "should",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "The reflection ends by restating itself as a slogan. Most of the 72 devotions and many Advent days close this way, so the ear learns to expect the bow. \"Healthy roots, good fruit\" is a verbless bumper sticker."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "courage",
+   "field": "reflection",
+   "quote": "You can be scared and brave at the same time. In fact, that is the only kind of brave there is.",
+   "replacement": "You can be scared and brave at the same time.",
+   "severity": "should",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "The reflection ends by restating itself as a slogan. Most of the 72 devotions and many Advent days close this way, so the ear learns to expect the bow."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "rest-and-sabbath",
+   "field": "reflection",
+   "quote": "A family that never stops is a family that forgets how to be glad together.",
+   "replacement": "A family that never stops forgets how to be glad together.",
+   "severity": "consider",
+   "tell": "Symmetrical \"A family that ... is a family that ...\" closer",
+   "why": "Perfect parallelism; the plain version says the same thing in a father's voice."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q66",
+   "field": "commentary",
+   "quote": "Welcome the question. A faith that cannot be questioned cannot be trusted.",
+   "replacement": "Welcome the question.",
+   "severity": "should",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "Chiasmus epigram and a familiar stock line. The paragraph has already made the point with evidence."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q58",
+   "field": "commentary",
+   "quote": "The law is a mirror before it is a map. It shows children their real need",
+   "replacement": "The law shows children their real need",
+   "severity": "should",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "Alliterative epigram used as an opener; Q22 already uses the mirror image properly."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q62",
+   "field": "commentary",
+   "quote": "again and again, that he gave himself for them. The gospel is something we eat, not only something we hear.",
+   "replacement": "again and again, that he gave himself for them.",
+   "severity": "should",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "The reflection ends by restating itself as a slogan. Most of the 72 devotions and many Advent days close this way, so the ear learns to expect the bow."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "kindness",
+   "field": "reflection",
+   "quote": "It is a gentle word when you could have said a sharp one. Kindness is just love made small enough to fit into an ordinary day.",
+   "replacement": "It is a gentle word when you could have said a sharp one.",
+   "severity": "should",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "The reflection ends by restating itself as a slogan. Most of the 72 devotions and many Advent days close this way, so the ear learns to expect the bow."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "advent.day13",
+   "field": "reflection",
+   "quote": "God is never late, even when he is slow enough to make us wonder if he forgot.",
+   "replacement": "God had not forgotten, even though he was slow enough to make people wonder.",
+   "severity": "consider",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "\"God is never late\" is a greeting-card commonplace."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "worship",
+   "field": "reflection",
+   "quote": "The question is never whether you worship. The question is what.",
+   "replacement": "So the question to ask is what you worship.",
+   "severity": "should",
+   "tell": "Aphoristic closer (pillow line)",
+   "why": "Balanced two-beat closer, and the paragraph's \"Everyone worships something\" premise is a much-quoted commonplace; the plain version keeps the point."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-incarnation",
+   "field": "reflection",
+   "quote": "He had to be fed and held and taught to walk, just like you once were. The Maker of the stars learned to count them on his fingers.",
+   "replacement": "He had to be fed and held and taught to walk, just like you once were.",
+   "severity": "should",
+   "tell": "Fresh literary image where a plain phrase would do",
+   "why": "An invented, cute image (the Gospels say nothing of it) performing wonder after the plain sentence already delivered it."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "serving-others",
+   "field": "prayer",
+   "quote": "Jesus, you took the towel when you could have taken the throne.",
+   "replacement": "Jesus, you knelt with a towel when you had every right to be served.",
+   "severity": "consider",
+   "tell": "Alliterative antithesis in a child's prayer",
+   "why": "Towel/throne is a preacher's slogan; no child prays in chiasmus."
+  },
+  {
+   "pattern": "C",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q51",
+   "field": "commentary",
+   "quote": "because the last word does not belong to cancer or war or death. It belongs to him.",
+   "replacement": "because Jesus will outlast cancer and war and death.",
+   "severity": "should",
+   "tell": "Duplicated closer across files",
+   "why": "Near-verbatim repeat of the-second-coming (\"The last word does not belong to sadness or death. It belongs to him.\"); \"the last word\" closes five pieces."
+  },
+  {
+   "pattern": "D",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "justice-and-the-poor",
+   "field": "reflection",
+   "quote": "Others have almost no voice at all. The poor. The forgotten. The ones who cannot fight for themselves.",
+   "replacement": "Others have almost no voice at all: the poor, the forgotten, the ones who can't fight for themselves.",
+   "severity": "should",
+   "tell": "Fragment stack",
+   "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+  },
+  {
+   "pattern": "D",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-new-creation",
+   "field": "reflection",
+   "quote": "The same world, healed. Mended. Made the way it was always supposed to be.",
+   "replacement": "It is the same world, healed and mended and made the way it was always supposed to be.",
+   "severity": "should",
+   "tell": "Fragment stack",
+   "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+  },
+  {
+   "pattern": "D",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-prodigal-son",
+   "field": "reflection",
+   "quote": "Not arms crossed. Arms open, running.",
+   "replacement": "His arms are not crossed. They are open, and He is running.",
+   "severity": "should",
+   "tell": "Fragment stack",
+   "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+  },
+  {
+   "pattern": "D",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "gods-faithfulness",
+   "field": "reflection",
+   "quote": "His mercies are new every morning. Even here. Even now.",
+   "replacement": "His mercies are new every morning, even here, even now.",
+   "severity": "should",
+   "tell": "Fragment stack",
+   "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+  },
+  {
+   "pattern": "D",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "goodness",
+   "field": "reflection",
+   "quote": "Keep going. Keep choosing right. The harvest is coming.",
+   "replacement": "So keep going, because the harvest is coming.",
+   "severity": "should",
+   "tell": "Fragment stack",
+   "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+  },
+  {
+   "pattern": "D",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-beatitudes",
+   "field": "reflection",
+   "quote": "The world has a list of who is winning. The rich. The strong. The ones who never need anything.",
+   "replacement": "The world has a list of who is winning: the rich, the strong, the ones who never need anything.",
+   "severity": "should",
+   "tell": "Fragment stack",
+   "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+  },
+  {
+   "pattern": "D",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-armor-of-god",
+   "field": "reflection",
+   "quote": "He gives us armor. Truth like a belt. Faith like a shield. The Bible like a sword.",
+   "replacement": "He gives us armor: truth like a belt, faith like a shield, the Bible like a sword.",
+   "severity": "consider",
+   "tell": "Fragment stack",
+   "why": "One-word and verbless sentences stacked for effect. VOICE-JAMES-BELL.md lists choppy one-sentence stacks first on the avoid list; read aloud they force a dramatic pause a parent would not make."
+  },
+  {
+   "pattern": "E",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "self-control",
+   "field": "bigIdea",
+   "quote": "Self control is being strong enough to choose what you do instead of just reacting, and there is nothing boring about that kind of strength.",
+   "replacement": "Self-control is being strong enough to choose what you do instead of just reacting.",
+   "severity": "must",
+   "tell": "Tail clause denying a point nobody raised",
+   "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought."
+  },
+  {
+   "pattern": "E",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-good-shepherd",
+   "field": "bigIdea",
+   "quote": "Jesus is a shepherd who leads us and would die to keep us safe, and a shepherd does not drive his sheep from behind.",
+   "replacement": "Jesus is a shepherd who leads us and would die to keep us safe.",
+   "severity": "must",
+   "tell": "Tail clause denying a point nobody raised",
+   "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought."
+  },
+  {
+   "pattern": "E",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-fruit-of-the-spirit",
+   "field": "bigIdea",
+   "quote": "Good character grows in you when the Spirit is at work, like fruit on a tree, and no one has ever forced a tree to bear.",
+   "replacement": "Good character grows in you when the Spirit is at work, like fruit on a tree.",
+   "severity": "must",
+   "tell": "Tail clause denying a point nobody raised",
+   "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought."
+  },
+  {
+   "pattern": "E",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "gentleness",
+   "field": "bigIdea",
+   "quote": "Gentleness is strength that chooses to be careful with people, and it takes more strength than shoving does.",
+   "replacement": "Gentleness is strength that chooses to be careful with people.",
+   "severity": "should",
+   "tell": "Tail clause denying a point nobody raised",
+   "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought."
+  },
+  {
+   "pattern": "E",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "when-someone-hurts-you",
+   "field": "bigIdea",
+   "quote": "Forgiving someone means you hand the debt to God instead of making them pay, and it never says that what they did was okay.",
+   "replacement": "Forgiving someone means you hand the debt to God instead of making them pay. You are not saying that what they did was okay.",
+   "severity": "should",
+   "tell": "Tail clause denying a point nobody raised",
+   "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought. Here the second half matters to a hurt child, so it stays, as its own plain sentence."
+  },
+  {
+   "pattern": "E",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q35",
+   "field": "commentary",
+   "quote": "and paid it while we were still his enemies, which is a long way from grading us on a curve.",
+   "replacement": "and paid it while we were still his enemies.",
+   "severity": "should",
+   "tell": "Tail clause denying a point nobody raised",
+   "why": "Reads as an \"X is not A, it is B\" sentence mechanically rewritten to dodge the antithesis rule: the denial was kept and bolted on the end. A Big Idea a child repeats back should be one plain thought."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-incarnation",
+   "field": "reflection",
+   "quote": "Think about how amazing this is. The God who made the entire universe",
+   "replacement": "The God who made the entire universe",
+   "severity": "should",
+   "tell": "Announced wonder or announced turn",
+   "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "gods-faithfulness",
+   "field": "reflection",
+   "quote": "What is amazing about this verse is where it shows up.",
+   "replacement": "Look at where this verse shows up.",
+   "severity": "should",
+   "tell": "Announced wonder or announced turn",
+   "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "wisdom",
+   "field": "reflection",
+   "quote": "The wonderful thing in this verse is how you get wisdom. You ask.",
+   "replacement": "The verse also tells you how to get wisdom. You ask.",
+   "severity": "should",
+   "tell": "Announced wonder or announced turn",
+   "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-holy-spirit",
+   "field": "reflection",
+   "quote": "But Jesus told them something amazing. It is actually better for you that I go, because I am going to send a Helper who will not just be near you, He will be in you.",
+   "replacement": "But Jesus told them it was better for them that He go, because He would send a Helper who would not just be near them. He would be in them.",
+   "severity": "should",
+   "tell": "Announced wonder or announced turn",
+   "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something. It also puts a loose first-person paraphrase in Jesus' mouth with no quotation marks; reported speech is safer."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "kindness-to-the-outsider",
+   "field": "reflection",
+   "quote": "Here is the part that costs something. Jesus says invite the people who cannot pay you back.",
+   "replacement": "Jesus says invite the people who cannot pay you back.",
+   "severity": "should",
+   "tell": "Announced wonder or announced turn",
+   "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something. \"Here is the part that\" is a cousin of the forbidden \"here's the thing\"."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "suffering",
+   "field": "reflection",
+   "quote": "So let us be honest. It does not say everything that happens is good.",
+   "replacement": "It does not say everything that happens is good.",
+   "severity": "should",
+   "tell": "Self-certifying \"honest\"",
+   "why": "Announces honesty instead of practising it; 'honest' appears 28 times across the library."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "obedience",
+   "field": "reflection",
+   "quote": "This is good news, actually. It means God is not trying to turn you into a robot who follows orders.",
+   "replacement": "That is good news. God is not trying to turn you into a robot who follows orders.",
+   "severity": "consider",
+   "tell": "Announced wonder or announced turn",
+   "why": "The prose tells the family that what follows is amazing, important or costly instead of saying it. Earlier judges flagged announced turns; children hear it as a grown-up selling something."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q24",
+   "field": "commentary",
+   "quote": "After all the bad news, here is the turn the whole catechism has been waiting for.",
+   "replacement": "After all the bad news, here is the good news.",
+   "severity": "should",
+   "tell": "Rulebook leakage",
+   "why": "The commentary describes the document's own structure (\"the turn\") to the parent."
+  },
+  {
+   "pattern": "F",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q68",
+   "field": "commentary",
+   "quote": "Hold the mystery and the urgency together, and do not resolve too quickly what God has left partly hidden.",
+   "replacement": "Let your child see both, and leave open what God has left partly hidden.",
+   "severity": "consider",
+   "tell": "Rulebook leakage",
+   "why": "\"Do not resolve too quickly\" is the editorial standard's own wording leaking into the prose, inside a balanced abstract pair."
+  },
+  {
+   "pattern": "G",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "serving-others",
+   "field": "reflection",
+   "quote": "He did it because that is what love actually looks like when it stops talking and starts moving.",
+   "replacement": "He did it because that is what love looks like when it stops talking and starts moving.",
+   "severity": "should",
+   "tell": "Filler intensifier",
+   "why": "\"actually\" appears 40 times, \"really\" 36, \"just\" 85, \"single\" 16. Each asserts sincerity the sentence should carry by itself."
+  },
+  {
+   "pattern": "G",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "humility",
+   "field": "reflection",
+   "quote": "Humility is forgetting yourself long enough to actually see the people around you.",
+   "replacement": "Humility is forgetting yourself long enough to see the people around you.",
+   "severity": "should",
+   "tell": "Filler intensifier",
+   "why": "\"actually\" appears 40 times, \"really\" 36, \"just\" 85, \"single\" 16. Each asserts sincerity the sentence should carry by itself."
+  },
+  {
+   "pattern": "G",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q49",
+   "field": "commentary",
+   "quote": "because they show children that he is actually there and actually near.",
+   "replacement": "because they show children that he is there and that he is near.",
+   "severity": "should",
+   "tell": "Filler intensifier",
+   "why": "\"actually\" appears 40 times, \"really\" 36, \"just\" 85, \"single\" 16. Each asserts sincerity the sentence should carry by itself."
+  },
+  {
+   "pattern": "H",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "loving-your-enemies",
+   "field": "reflection",
+   "quote": "It is the strongest, hardest, most God like thing a person can do.",
+   "replacement": "It is hard, and it is what God is like.",
+   "severity": "must",
+   "tell": "Stacked superlative",
+   "why": "\"The most/deepest/strongest thing a person can ...\" recurs (\"deepest\" 9 times, \"most important\" 10). Superlatives with no concrete case are the vague-intensifier tell, and a skeptic hears overclaim. Also a forced triplet and a missing hyphen."
+  },
+  {
+   "pattern": "H",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "waiting-on-god",
+   "field": "reflection",
+   "quote": "Waiting on God turns out to be one of the strongest things a person can do.",
+   "replacement": "That kind of waiting takes strength.",
+   "severity": "should",
+   "tell": "Stacked superlative",
+   "why": "\"The most/deepest/strongest thing a person can ...\" recurs (\"deepest\" 9 times, \"most important\" 10). Superlatives with no concrete case are the vague-intensifier tell, and a skeptic hears overclaim."
+  },
+  {
+   "pattern": "H",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q43",
+   "field": "commentary",
+   "quote": "For anyone raised without a good father, this is the deepest healing there is.",
+   "replacement": "For anyone raised without a good father, this can heal a great deal.",
+   "severity": "should",
+   "tell": "Stacked superlative",
+   "why": "\"The most/deepest/strongest thing a person can ...\" recurs (\"deepest\" 9 times, \"most important\" 10). Superlatives with no concrete case are the vague-intensifier tell, and a skeptic hears overclaim. On this subject especially the line should not overpromise; see the note to James."
+  },
+  {
+   "pattern": "H",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q52",
+   "field": "commentary",
+   "quote": "This is the hope you are handing your children, the deepest comfort there is, that the best is not behind us but ahead of us with him.",
+   "replacement": "This is the hope you are handing your children, that the best is ahead of us with him.",
+   "severity": "should",
+   "tell": "Stacked superlative",
+   "why": "\"The most/deepest/strongest thing a person can ...\" recurs (\"deepest\" 9 times, \"most important\" 10). Superlatives with no concrete case are the vague-intensifier tell, and a skeptic hears overclaim."
+  },
+  {
+   "pattern": "H",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q64",
+   "field": "commentary",
+   "quote": "This is the deepest thing your children can know about themselves, and it is worth a lifetime of saying.",
+   "replacement": "It is worth a lifetime of saying.",
+   "severity": "consider",
+   "tell": "Stacked superlative",
+   "why": "\"The most/deepest/strongest thing a person can ...\" recurs (\"deepest\" 9 times, \"most important\" 10). Superlatives with no concrete case are the vague-intensifier tell, and a skeptic hears overclaim."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-good-shepherd",
+   "field": "reflection",
+   "quote": "Most shepherds run when the wolf comes.",
+   "replacement": "The hired hand runs when the wolf comes.",
+   "severity": "must",
+   "tell": "Inaccurate handling of the passage",
+   "why": "John 10:12-13 says the hired hand runs, in contrast with the shepherd. \"Most shepherds run\" is not what Jesus said and undercuts his own image."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "holyWeek.day1",
+   "field": "reflection",
+   "quote": "By Friday the same crowd would turn on him.",
+   "replacement": "By Friday a crowd would be shouting for his death.",
+   "severity": "should",
+   "tell": "Overclaim stated as history",
+   "why": "The Gospels do not say the Palm Sunday crowd and the Friday crowd were the same people. A careful reader, or a skeptic, will catch it."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "gratitude",
+   "field": "reflection",
+   "quote": "The verse says give thanks in all circumstances, not for all circumstances.",
+   "replacement": "The verse says give thanks in every circumstance, not for every circumstance.",
+   "severity": "should",
+   "tell": "Quotes a different translation from the passage printed above it",
+   "why": "The passage text on the card reads \"in every circumstance\"; the reflection quotes other wording as \"the verse says\"."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "screens-and-attention",
+   "field": "reflection",
+   "quote": "do you feel more true, more noble, more lovely, or just more tired and a little emptier.",
+   "replacement": "do you feel more true, more honorable, more lovely, or just more tired and a little emptier?",
+   "severity": "should",
+   "tell": "Word not in the printed passage; question without a question mark",
+   "why": "The passage on the card says \"honorable\"; \"noble\" comes from another translation. The sentence is a question and ends on a period."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions.json",
+   "id": "serving-others",
+   "field": "reflection",
+   "quote": "He says greatness is measured by how many people you help, not how many help you.",
+   "replacement": "He says the one who wants to be great must be the one who serves.",
+   "severity": "should",
+   "tell": "Loose paraphrase put in Jesus' mouth",
+   "why": "Jesus did not measure greatness by a head count. The replacement stays with Mark 10:43-45 and drops another \"X, not Y\"."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q49",
+   "field": "answer",
+   "quote": "we pray in Jesus name with honest hearts",
+   "replacement": "we pray in Jesus' name with honest hearts",
+   "severity": "must",
+   "tell": "Typo",
+   "why": "Missing possessive apostrophe in a catechism answer children memorise."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q34",
+   "field": "commentary",
+   "quote": "This is the truth that split the church open in history and still sets hearts free today.",
+   "replacement": "This truth still sets people free.",
+   "severity": "should",
+   "tell": "Vague claim presented as history",
+   "why": "\"Split the church open in history\" gestures at an event without naming it. Name it or cut it; see the note to James."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-trinity",
+   "field": "activity",
+   "quote": "Look at one apple together and notice it has skin, fruit, and seeds, all one apple, then talk about how no picture fully shows the Trinity but God is still one God in three persons.",
+   "replacement": "Read Matthew 28:19 aloud and count together how many persons Jesus names and how many names he says, then talk about how no picture fully shows the Trinity but God is still one God in three persons.",
+   "severity": "should",
+   "tell": "The library contradicts itself",
+   "why": "Catechism Q76 tells parents \"every neat illustration eventually says something untrue\"; this activity is the neat illustration (three parts of an apple). A reader who uses both will notice."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "loving-your-enemies",
+   "field": "reflection",
+   "quote": "It does not mean you let them hurt you.",
+   "replacement": "It does not mean you let them hurt you, and if someone is hurting you, tell a grown-up you trust.",
+   "severity": "should",
+   "tell": "Care gap in a hard place",
+   "why": "A child who is being bullied or harmed hears \"love your enemies, pray for them\". The piece says it does not mean being hurt, with no next step. One plain line keeps the path to help visible."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "jealousy-and-comparison",
+   "field": "title",
+   "quote": "The Thief Of Glad",
+   "replacement": "Looking Sideways",
+   "severity": "consider",
+   "tell": "Literary heading built on an uncredited stock line",
+   "why": "Plays on \"comparison is the thief of joy\". \"Looking sideways\" is the piece's own image."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "worship",
+   "field": "title",
+   "quote": "What You Are Made Of",
+   "replacement": "What Gets The Center",
+   "severity": "consider",
+   "tell": "Heading does not match the piece",
+   "why": "The reflection is about what sits at the center of a life; nothing in it is about what you are made of."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-miracles-of-jesus",
+   "field": "title",
+   "quote": "A Glimpse Of The Mender",
+   "replacement": "What The Miracles Were For",
+   "severity": "consider",
+   "tell": "Literary heading",
+   "why": "\"The Mender\" is a coined title for Jesus; headings should be plain."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "self-control",
+   "field": "reflection",
+   "quote": "The proverb says a person without self control is like that.",
+   "replacement": "The proverb says a person without self-control is like that.",
+   "severity": "should",
+   "tell": "Missing hyphen",
+   "why": "Compound modifiers lost their hyphens in several pieces (self control, two way, white knuckle, empty handed, one time, world changing, God like, ninety nine), which reads as a scrub artefact."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "friendship",
+   "field": "reflection",
+   "quote": "But friendship is a two way thing.",
+   "replacement": "But friendship is a two-way thing.",
+   "severity": "should",
+   "tell": "Missing hyphen",
+   "why": "See self-control."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-devotions-2.json",
+   "id": "the-fruit-of-the-spirit",
+   "field": "reflection",
+   "quote": "not when we white knuckle our way into being nice.",
+   "replacement": "not when we white-knuckle our way into being nice.",
+   "severity": "should",
+   "tell": "Missing hyphen",
+   "why": "See self-control."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-seasonal.json",
+   "id": "advent.day4",
+   "field": "reflection",
+   "quote": "Every Christmas card with a manger in it is the answer to a promise made to a shepherd boy who became a king.",
+   "replacement": "The manger on every Christmas card is the answer to a promise made to a shepherd boy who became a king.",
+   "severity": "consider",
+   "tell": "Loose image",
+   "why": "The card is not the answer; the manger is."
+  },
+  {
+   "pattern": "I",
+   "file": "/home/user/Livewell-/client/public/family-catechism.json",
+   "id": "Q16",
+   "field": "commentary",
+   "quote": "This is not a reason for despair but the first honest step toward needing a Savior.",
+   "replacement": "That is hard to hear, and it is where needing a Savior starts.",
+   "severity": "consider",
+   "tell": "Sentence reused across files",
+   "why": "The toddler line and \"the first honest step toward needing a rescuer / We cannot be helped until we admit what is wrong\" appear almost word for word in the-fall (family-devotions-2.json)."
+  }
+ ],
+ "for_james": [
+  "These read as competent, warm, orthodox children's material, and almost none of it could only be yours. The Thanksgiving week is the exception and the model: it sounds like a father at a table. The surest way to lift the rest is for you to rewrite four or five of the devotions yourself, aloud, and let those set the ear for the others. No one else can supply the real remembered detail (a son's question at bedtime, what you actually say when one of the boys is afraid of the dark); I have not invented any and no fixer should.",
+  "Contractions: your Substack brief says 'contractions light'; VOICE-JAMES-BELL.md says prefer contractions where they make prose sound spoken. For pieces read aloud to children I have followed VOICE-JAMES-BELL.md and recommended contracting most of them. Say so if you want the family pages kept formal.",
+  "Your saved Substack profile and VOICE-JAMES-BELL.md disagree, and I have followed VOICE-JAMES-BELL.md: the profile asks for 2-4 sentence paragraphs, 'stacked landing lines', contrast lines and a line 'the reader screenshots', which is exactly the slogan-and-fragment habit that makes these devotions sound machine-made. I have not rewritten toward the profile.",
+  "Scripture translation: CLAUDE.md says ESV by default; every passage here is the Berean Standard Bible (the family validator enforces it, presumably for licensing). Nothing on the cards names the translation. Either name it once on the page or confirm the choice. Two reflections quote wording that is not in the BSB text printed above them (gratitude: 'in all circumstances'; screens-and-attention: 'noble'); fixes are in the findings.",
+  "Capital pronouns for God: family-devotions.json and the first forty or so of family-devotions-2.json write He/Him/His; from 'prayer' onward, and all of the seasonal file and the catechism, write he/him/his. It is a visible seam between two batches. Pick one. (The BSB text itself capitalises.)",
+  "Catechism structure: Part 5 (Q53-Q64) asks again, with different answers, eight questions already answered earlier (Q8/Q64 why God made you, Q11/Q56 what God requires, Q21/Q58 keeping the law, Q45/Q63 how the Spirit changes us, Q47/Q61 baptism, Q48/Q62 the Supper, Q49-50/Q53-54 prayer). A family memorising it will be asked the same question twice with two answers. Decide which answer stands.",
+  "Second-order doctrine in the catechism needs your eye. Baptism is called 'the sign God gives to mark his people' and a mark of 'God's covenant family' (Q47, Q61), which is covenantal language a Baptist reader may not expect; the Supper answers say 'we feed on him by faith' (Q48, Q62); Q9, Q39 and Q42 state sovereignty, perseverance and regeneration in their Reformed form. None of these says faithful churches differ. The Lord's Supper devotion does this well ('Christians have understood the Lord's Supper in different ways'); Q71 does it well for creation. Tell us where you land or we add one such line to each.",
+  "Q34 says grace alone 'split the church open in history'. If you mean the Reformation, say so in your own words ('This is the truth the Reformation was fought over'); I have only offered the cut, not the naming.",
+  "Q43: 'For anyone raised without a good father, this is the deepest healing there is.' I have softened the superlative. You are the one person who can say plainly what being told 'Abba' meant to a man raised without a father; one sentence from you here, if you want it there, would be worth more than any edit. It should not be written for you.",
+  "The Trinity devotion's apple activity (skin, fruit, seeds) is the kind of illustration your own Q76 warns parents against. I have proposed replacing it with reading and counting the names in Matthew 28:19.",
+  "Paths to help: the devotions on fear, anger, grief, suffering, church hurt and forgiveness carry a grown-ups link to /help. The seasonal file has no such field, so Thanksgiving day 6 (The Empty Chair), day 4 (which says 'there is no shame in asking for help' without saying where) and Advent day 7 have none; nor do catechism Q65, Q70 and Q75, which the commentary itself says are asked 'when a family is actually hurting'. That needs a small data and page change, not a wording change.",
+  "'Blessed' appears four times in the-beatitudes; all are the Beatitudes' own word, so I have left them. No other Forbidden Language word, no em-dash and no exclamation point occurs outside quoted Scripture. No biography, title, book count or one-directional politics appears anywhere in these four files.",
+  "Titles are in Title Case With Every Word Capitalised in the two devotion files and in ordinary title case in the seasonal file. Devotion ids are frozen; if any test or index matches on titles, the three title changes I suggest need the family index rebuilt."
+ ],
+ "apply_notes": [
+  "Every finding's quote was checked to occur exactly once in the named file, id and field. Replace only inside that field.",
+  "Never edit passageText or scriptureText.",
+  "After editing, rebuild the family index and run validate-family, validate-grow-voice and validate-no-emdash (not run by this audit, which was read-only).",
+  "Pattern A (contractions) and pattern G (intensifiers) are passes to make by ear across the files, not only the listed examples."
+ ]
+}

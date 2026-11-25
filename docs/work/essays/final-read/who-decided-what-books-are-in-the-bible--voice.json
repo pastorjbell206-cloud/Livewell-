@@ -1,0 +1,138 @@
+{
+ "slug": "who-decided-what-books-are-in-the-bible",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/who-decided-what-books-are-in-the-bible.json (title, excerpt as standfirst, Markdown body), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography, and James's 2026-10-28 instruction to publish this one open) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I compared it, by 5-word overlap, with every other landed essay in /home/user/livewell-land/client/public/essays/ to find lines repeated across the shelf. The closest neighbour is why-trust-the-bible, which links straight to this essay, so a reader often meets the two back to back. Every quoted string below occurs exactly once in the body. I applied all the fixes together on a scratch copy: each old string matched once, no em-dash or exclamation point was introduced, and the body comes to about 3,900 words. The one new Scripture line (Romans 15:4) was checked against the same local ESV copy the ledger uses (lguenth/mdbible, commit fd66568). All other fact and Scripture verification belongs to the integrity lens.",
+ "findings": [
+  {
+   "where": "Closing Texts, first line: *\"And we also thank God constantly for this, that when you received the word of God, which you heard from us, you accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers.\"* (1 Thessalonians 2:13)",
+   "problem": "The same verse is already quoted, and worked through, two paragraphs earlier (\"Paul thanked God that the Thessalonians ... 'accepted it not as the word of men but as what it really is, the word of God, which is at work in you believers' (1 Thessalonians 2:13)\"). Repeating it in full as a Closing Text makes the block read as a recap, not as Scripture carrying the weight out. The brief wants two or three Closing Texts, so the line should be replaced, not just deleted. Romans 15:4 carries the essay's own thread (Marcion, \"the Old Testament as much as the New\") and appears nowhere else on the shelf.",
+   "fix": "Replace the line with: *\"For whatever was written in former days was written for our instruction, that through endurance and through the encouragement of the Scriptures we might have hope.\"* (Romans 15:4)   (ESV wording checked against the local ESV copy, by_chapter/45_Romans/Chapter_15.md verse 4. Add it to the ledger. If the integrity lens cannot confirm it, delete the 1 Thessalonians line and leave John 10:27 alone.)",
+   "severity": "should"
+  },
+  {
+   "where": "So Who Decided?, paragraph 3, last sentence: \"Read Athanasius's letter, and then read a Gospel straight through in the [Study Bible](/study/bible).\"",
+   "problem": "This repeats the closing move of why-trust-the-bible almost exactly, and that essay links straight to this one (\"The longer story is in [Who Decided What Books Are in the Bible?]\"). Its last section reads: \"If you're a skeptic, I'd ask one thing of you. Read one Gospel whole ... The [Study Bible](/study/bible) is a good place to read it.\" Here it is the same again: \"If you're a skeptic\", then read a Gospel through, then the Study Bible link. Read back to back, it sounds like a shelf template. The invitation that belongs to this essay is to the primary sources it has just walked through.",
+   "fix": "Replace \"and then read a Gospel straight through in the [Study Bible](/study/bible).\" with \"and then read the books for yourself in the [Study Bible](/study/bible).\"",
+   "severity": "should"
+  },
+  {
+   "where": "Opening section, paragraph 4, last sentence: \"The real history is slower and untidier than most people have heard, and a good deal less sinister.\"",
+   "problem": "This is the essay's thesis line, and it repeats the thesis line of why-trust-the-bible's canon section (\"The real history is slower and less dramatic.\"). A reader who follows that essay's link here meets the same sentence frame in the first screen. \"Slow\" also comes back twice later (\"The tests worked slowly\", \"The process was slow and human\"), so it is starting to read as a motif.",
+   "fix": "Replace with: \"What really happened is untidier than most people have heard, and a good deal less sinister.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Gospels and Paul's Letters in Worship, paragraph 2: \"That is how a book became Scripture in practice.\"",
+   "problem": "This contradicts the essay's own conclusion. So Who Decided? says both Protestant and Catholic teaching \"describe the church as receiving these books, not making them Scripture\", and cites Vatican I that the books are sacred because they were inspired, not because the church approved them. Here, reading a book in church is what made it Scripture. A pastor deciding whether to hand this to a congregation will stop on it. A skeptic will quote it back as the essay's real view: the church made its Scripture by using it. \"In practice\" softens the claim but doesn't fix it.",
+   "fix": "Replace with: \"That is how the churches came to recognize a book as Scripture.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Marcion's Shorter Bible, paragraph 3, fourth sentence: \"We do it from the left and from the right.\"",
+   "problem": "The sentence before has already done the two-directional work with one instrument (red-letter Christians who set Paul aside, Paul-only readers who pass over the prophets on the poor). This line names the balance out loud, so it reads as rulebook leakage of \"criticize right and left with the same instrument\". It also reuses the phrase \"from the left and from the right\" from the approved pilot the-early-church-under-rome (\"asked of Christians as the price of respectability, from the left and from the right\"), which the brief forbids. The \"we\" must stay, because it puts \"We\" before the \"I\" that follows.",
+   "fix": "Replace with: \"Most of us do some version of it.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What Happened at Nicaea, paragraph 1, first sentence: \"Many people who think they know who chose the books learned it somewhere other than church.\"",
+   "problem": "\"Who think they know\" condescends to the reader before any evidence has been given. That reader is the skeptic, who may have learned his account from Ehrman rather than Dan Brown. He feels handled, not met, in the section's first line. The point the sentence actually needs, that people first met the story outside church (which quietly implicates the church), survives without the sneer.",
+   "fix": "Replace with: \"Many people first heard a story about who chose the books somewhere other than church.\"",
+   "severity": "should"
+  },
+  {
+   "where": "How the Churches Judged, paragraph 3, last sentence: \"The list they sent was the New Testament their churches had already been reading.\"",
+   "problem": "The reception thesis is stamped as a closer through the whole piece: \"He was reminding them of what they had been reading for generations\" (opening), this sentence, \"about books already read in worship for generations\" (Bart Ehrman section), \"The lists came after the reading\" and \"they wrote down what they had already received\" (ending). This one is nearly word for word why-trust-the-bible's \"what the churches had already been reading for generations\". It also comes straight after the council's own words, \"for these are the things which we have received from our fathers to be read in church\", which make the point better in a primary source.",
+   "fix": "Delete the sentence. The section then ends on the council's quotation: \"... for these are the things which we have received from our fathers to be read in church.\"",
+   "severity": "should"
+  },
+  {
+   "where": "So Who Decided?, paragraph 2, last sentence: \"The churches had found these books at work among them, Sunday after Sunday, and they wrote down what they had already received.\"",
+   "problem": "This is recap in the ending. Paragraph 1 of the same section has just said \"The churches recognized books that had already proved themselves in worship. The lists came after the reading.\" The last clause says it a third time, just before the stack that should leave weight. The first half, which ties the churches' experience to 1 Thessalonians 2:13's \"at work in you\", is the new thing and should stay.",
+   "fix": "Replace with: \"The churches had found these books at work among them, Sunday after Sunday.\"",
+   "severity": "should"
+  },
+  {
+   "where": "So Who Decided?, paragraph 3: \"It does mean the question can't be settled by blaming an emperor. It has to be settled with the books themselves.\"",
+   "problem": "\"Settled\" appears twice in a row. The second sentence also repeats the hand-off at the end of the Apocrypha section (\"A Christian who wants to settle it should read the books themselves\"). Once the fix above is in, the imperative that follows (\"read the books for yourself\") already says it.",
+   "fix": "Delete \"It has to be settled with the books themselves.\" The paragraph then reads: \"... It does mean the question can't be settled by blaming an emperor. Read Athanasius's letter, and then read the books for yourself in the [Study Bible](/study/bible).\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Case for Lost Christianities (Bart Ehrman's Case after the heading fix), paragraph 4, last sentence: \"They were made in the open, by churches that disagreed with each other and said so, about books already read in worship for generations.\"",
+   "problem": "This is the second \"for generations\" closer (after \"what they had been reading for generations\" in the opening) and another restatement of the reception thesis. The paragraph before has already made the point with evidence (\"By the end of the second century the four Gospels and Paul's letters were being read in churches from Gaul to Egypt\").",
+   "fix": "Replace \", about books already read in worship for generations.\" with \".\" so the sentence reads: \"They were made in the open, by churches that disagreed with each other and said so.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What Happened at Nicaea, paragraph 1, fourth sentence: \"Podcasts and online videos repeat some form of the story, usually set at the Council of Nicaea.\"",
+   "problem": "This repeats across the shelf. why-trust-the-bible has \"it is usually set at the Council of Nicaea in 325\" in its canon section, and that section links here.",
+   "fix": "Replace with: \"Podcasts and online videos repeat some form of the story, and most of them place it at the Council of Nicaea.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Case for Lost Christianities (Bart Ehrman's Case after the heading fix), paragraph 2, last sentence: \"Ehrman's work on how the manuscripts were copied is taken up in [Can You Trust the Bible?](/writing/why-trust-the-bible).\"",
+   "problem": "\"Is taken up in [Can You Trust the Bible?]\" is now a stock link formula on the shelf: the-historical-jesus has \"(How far the Gospels can be trusted is taken up in [Can You Trust the Bible?](/writing/why-trust-the-bible))\". Inside this essay it also has the same shape as the Marcion section's \"... is the subject of [How the Bible Gets Translated ...]\".",
+   "fix": "Replace with: \"[Can You Trust the Bible?](/writing/why-trust-the-bible) looks at Ehrman's work on how the manuscripts were copied.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Books Catholics and Orthodox Keep, paragraph 1, first sentence: \"This is where the churches still divide.\"",
+   "problem": "This is the \"This is where ...\" announced-turn template the judges caught (\"This is where it stops being about someone else\"). It sits directly under a heading that already says what the section is, and it never names what they divide over.",
+   "fix": "Replace with: \"The churches still divide over the Old Testament.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Marcion's Shorter Bible, paragraph 2: \"Either way, the church's answer is plain. He offered a shorter Bible, and the church kept a longer one:\"",
+   "problem": "\"The church's answer is plain\" announces a verdict and then gives it. The verdict line that follows lands on its own.",
+   "fix": "Replace \"Either way, the church's answer is plain. He offered a shorter Bible,\" with \"Either way, he offered a shorter Bible,\" so the sentence reads: \"Either way, he offered a shorter Bible, and the church kept a longer one: the whole Old Testament, read as Christian Scripture, four Gospels instead of one, and Paul's letters uncut.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Opening section, paragraph 3, third sentence: \"Where he sets out the list, he never mentions it.\"",
+   "problem": "The antecedent of \"it\" is unclear. The nearest nouns are \"the Bible\" and \"which books belonged\", and the reader has to reach back to \"that council\". The paragraph's whole argument depends on the reader knowing what Athanasius didn't mention. The verifier's narrowing (\"Where he sets out the list\") stays.",
+   "fix": "Replace with: \"Where he sets out the list, he never mentions the council.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Scriptures Jesus Read, paragraph 2, last sentence: \"Paul said it more briefly: \"the Jews were entrusted with the oracles of God\" (Romans 3:2).\"",
+   "problem": "The chronology is ambiguous. Placed after Josephus (\"around the year 100\"), \"Paul said it\" reads as if Paul came later or was replying. In fact Paul wrote Romans about forty years earlier. The brief lists ambiguous chronology among the AI tells.",
+   "fix": "Replace \"Paul said it more briefly:\" with \"Decades earlier, Paul had put it more briefly:\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What Happened at Nicaea, paragraph 3, last sentence: \"Judith isn't even in the Protestant Old Testament.\"",
+   "problem": "\"Even\" turns a fact into a kicker at the end of the paragraph. It assumes a Protestant reader. Catholic and Orthodox readers do have Judith in their Old Testament, and the essay treats them with care two sections later, so they will hear a small sniff at a book they count as Scripture. The fact does its work without the word.",
+   "fix": "Replace with: \"Judith isn't in the Protestant Old Testament.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Heading: \"## The Case for Lost Christianities\"",
+   "problem": "The heading borrows the title of Ehrman's book without italics or attribution. A reader who doesn't know the book reads it as a literary phrase (and an odd one: \"the case for\" lost Christianities?). Every other heading names its subject plainly, and the brief wants plain, descriptive headings. The section is Ehrman's argument and the answer to it, and the essay already uses \"case\" for each side (\"The Catholic and Orthodox case\", \"The Protestant case\").",
+   "fix": "Replace with: \"## Bart Ehrman's Case\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic; stems included), for the phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), for the therapy-speak (hold space, your truth, do the work, your feelings are valid, lean into, showing up), and for the signposting (here is what I mean, let me explain).",
+  "Em-dash: no U+2014 anywhere. The only en-dash is in the verse range 1 Corinthians 15:3–4.",
+  "Exclamation points: none, inside or outside Scripture.",
+  "Semicolons: five, all inside verbatim quotations (Josephus, Colossians 4:16, the Muratorian fragment, Serapion, Eusebius on 2 Peter). None in James's own prose.",
+  "Stamps: none of the brief's seven appears in James's prose. \"Consider\" occurs only inside Jerome's quotation (\"is considered to have counted\"), and \"the record\" only inside Josephus's (\"the records of all the past times\"). No stamp is used twice. \"None of them deals with the books of the Bible\" is not the \"none of this\" stamp.",
+  "\"Honest\" and \"fair\": zero uses. The rulebook words (steelman, verdict, indictment, self-implication): zero uses. The concessions are done, not announced: \"The rumor isn't wrong about everything.\", \"Much of that is true.\", \"Eusebius took a side.\"",
+  "Scholar parade: none. There are five modern names, each named once and doing work: Dan Brown (2003), Harnack (\"About a century ago\"), Hahneman (1992), Ehrman (no year, since the voice pass dropped it) and Bauer (1934). There is no repeated \"In *Title* (YEAR), X argued\" pattern. The ancient writers (Athanasius, Jerome, Eusebius, Justin, Irenaeus, Tertullian, Origen, Dionysius, Cyril, Serapion, Augustine) are primary witnesses, quoted inside the argument.",
+  "Biography: one first-person line, \"I have a shorter Bible of my own, and I could tell you which books are in it.\" It is a confession, not a credential, and it comes after \"we\". There is no title, no years in ministry, no book count, no church name, and no Southern Baptist reference. The 1677/1689 confession of the English Baptists is cited as history and says nothing about James's own membership.",
+  "Standfirst (excerpt): one plain declarative sentence (\"The New Testament was gathered over about three centuries as the churches read its books aloud in worship, and the letters and lists that show how it happened can still be read today.\"). It is not a balanced antithesis.",
+  "Headings: eight of nine are plain and descriptive (What Happened at Nicaea, The Scriptures Jesus Read, The Books Catholics and Orthodox Keep, The Gospels and Paul's Letters in Worship, Marcion's Shorter Bible, The Books That Were Argued Over, How the Churches Judged, So Who Decided?). The ninth is flagged above. The title uses the plain words people search.",
+  "Political criticism: it appears in one place, the Marcion mirror, and cuts both ways with the same instrument (readers who keep Jesus and set Paul aside, and readers who keep Paul and pass over the prophets on the poor). The fix above only removes the sentence that announces the balance. The present-day criticism of the church (\"Many American churches now read a few verses on a Sunday\") is not partisan, and it is turned on \"We\".",
+  "Contested second-order questions are left open. The Apocrypha/deuterocanon question gets both cases in their defenders' terms, is placed below the creeds (\"It sits below the creeds\"), and states no position for James. That matches his 2026-10-28 instruction in NOTES.md, \"Publish it open\". The pressure in the Catholic case (\"A Protestant who cites those councils ... owes some account\") is answered by the Protestant case that follows (Josephus, Jerome, Luther, the KJV, the Baptist confession), so the piece doesn't tilt either way. The authorship of 2 Peter (\"Scholars still argue\"), the authorship of Hebrews (Origen's \"God knows\"), the date of the Muratorian fragment (\"The question is still open\") and Marcion's influence (Harnack against the others) are also left open.",
+  "First-order matters are confessed plainly, not put to a vote: the resurrection (1 Corinthians 15:3–4, \"the voice of the risen Christ\") and Scripture as God's word received by the church (1 Thessalonians 2:13).",
+  "Tidy triplets: none forced. The three-part lists are real: Irenaeus's own four-fold reasons, the three tests of apostolicity, catholicity and the rule of faith (asked first as a run of questions, which is James's habit), and the three things Marcion cut.",
+  "Skeptic read: the strongest case is stated in its own terms, including its best point (\"the rule of faith is the winners' theology under a reverent name\"), and the concessions are real (the second century was varied, Eusebius took a side, the apostolic test was hard to apply, 2 Peter's authorship is argued). There is no altar call and no manufactured urgency. A skeptic is told plainly that \"the history won't make you believe.\"",
+  "Pastor read: a pastor can hand this to a congregation. Catholic and Orthodox readers are treated as brothers in a second-order dispute. Self-implication is done, not announced (\"what exactly have we been trusting?\", \"I have a shorter Bible of my own\", \"We will argue for every book in the canon and still hear very little of it read aloud\").",
+  "Ending: after the mirror (\"We will argue for every book in the canon ...\"), a short stack of plain lines lands on the risen Christ. It bookends Luke 24:44 from The Scriptures Jesus Read, and its last line answers Marcion (\"the Old Testament as much as the New\"). There is no clever kicker and no recap in the stack itself. The recap clause just before it is flagged above. The Closing Texts are in the right form, *\"Quote.\"* (Reference), one per line.",
+  "Crisis path: this is not a crisis-facing piece. Doubt appears only as a reader feeling \"shaken\", and that is met plainly. No self-harm or abuse is in view, so neither the Find Help link nor the 988 line is needed.",
+  "Links: there are three essay links (the-early-church-under-rome, how-the-bible-gets-translated-by, why-trust-the-bible), all in link-targets.json, plus /study/bible, which is within the two-to-four limit. why-trust-the-bible is now landed in /home/user/livewell-land/client/public/essays/, so the ledger's caveat that the lander should keep that link only once it is public is satisfied.",
+  "Register numbers: 42 body paragraphs averaging about 92 words. That is slightly above the 80–90 target, and four paragraphs run 140 to 172 words, but none is a wall that needs splitting. There are 222 sentences with a mean of 17.3 words, and 16 percent are 8 words or fewer. That is on the developed side of the quarter target, with no fragment stacks. Contractions are light and natural.",
+  "Scripture is used inside the argument, never as decoration: Luke 24:44 for the shape of Jesus' Bible, Romans 3:2, Hebrews 11:35 for the Maccabees echo, 1 Thessalonians 5:27 and Colossians 4:16 for letters read aloud, 1 Corinthians 15:3–4 for the age of the rule of faith, and 1 Thessalonians 2:13 for reception. I checked the quoted wording of Luke 24:44, Romans 3:2, Hebrews 11:35, 1 Thessalonians 2:13 and 5:27, Colossians 4:16, 1 Corinthians 15:3–4 and John 10:27 against the local ESV copy, and all are exact.",
+  "Cross-shelf repetition: the 5-word overlap with the other 20 landed essays turned up only what is flagged above, plus shared Scripture (1 Corinthians 15:3–4 also appears in did-the-resurrection-happen, excavation-not-demolition and did-christianity-copy-pagan-myths, which is legitimate in each context) and common phrases (\"in the middle of the\", \"the god of the old testament\"). No sentence or image is reused from an approved pilot except the \"from the left and from the right\" flagged above."
+ ]
+}

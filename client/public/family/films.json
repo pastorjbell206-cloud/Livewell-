@@ -1,0 +1,487 @@
+{
+ "about": "Written by scripts/build-family-films.mjs from the Bible Explorer films, the family index, the catechism and client/public/family-film-picks.json. Do not edit by hand.",
+ "devotions": {
+  "identity": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "who-is-jesus": {
+   "slug": "who-jesus-is",
+   "title": "Who Jesus is",
+   "minutes": 3,
+   "by": "name"
+  },
+  "why-we-pray": {
+   "slug": "prayer",
+   "title": "Prayer",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "is-the-bible-true": {
+   "slug": "is-the-bible-true",
+   "title": "Is the Bible true?",
+   "minutes": 2,
+   "by": "name"
+  },
+  "faith": {
+   "slug": "faith",
+   "title": "Faith: trusting the one who promised",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "caring-for-creation": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "the-church": {
+   "slug": "the-church",
+   "title": "What the church is",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "the-lords-supper": {
+   "slug": "baptism-and-supper",
+   "title": "Baptism and the Lord's Supper",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "heaven": {
+   "slug": "life-to-come",
+   "title": "The life to come",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "the-cross": {
+   "slug": "why-jesus-died",
+   "title": "Why did Jesus die?",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "the-empty-tomb": {
+   "slug": "the-resurrection",
+   "title": "The resurrection",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "the-holy-spirit": {
+   "slug": "holy-spirit",
+   "title": "The Holy Spirit through the Bible",
+   "minutes": 3,
+   "by": "passage"
+  },
+  "grace": {
+   "slug": "how-salvation-works",
+   "title": "How salvation works",
+   "minutes": 4,
+   "by": "pick"
+  },
+  "suffering": {
+   "slug": "why-bad-things-happen",
+   "title": "Why do bad things happen?",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "the-fruit-of-the-spirit": {
+   "slug": "spirit-in-a-believer",
+   "title": "The Holy Spirit in a believer",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "the-good-shepherd": {
+   "slug": "psalm-23",
+   "title": "Psalm 23: the LORD is my shepherd",
+   "minutes": 3,
+   "by": "passage"
+  },
+  "the-prodigal-son": {
+   "slug": "love-when-i-do-wrong",
+   "title": "Does God still love me when I do wrong?",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "the-image-of-god": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "prayer": {
+   "slug": "prayer",
+   "title": "Prayer",
+   "minutes": 2,
+   "by": "name"
+  },
+  "the-trinity": {
+   "slug": "who-god-is",
+   "title": "Who God is: Father, Son and Holy Spirit",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "creation": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "the-fall": {
+   "slug": "what-sin-is",
+   "title": "What sin is",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "the-incarnation": {
+   "slug": "who-jesus-is",
+   "title": "Who Jesus is",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "the-new-creation": {
+   "slug": "life-to-come",
+   "title": "The life to come",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "advent-4": {
+   "slug": "the-king",
+   "title": "The king",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "advent-10": {
+   "slug": "why-jesus-died",
+   "title": "Why did Jesus die?",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "advent-12": {
+   "slug": "god-silent",
+   "title": "Why does God seem silent sometimes?",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "advent-18": {
+   "slug": "who-jesus-is",
+   "title": "Who Jesus is",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "advent-19": {
+   "slug": "god-with-his-people",
+   "title": "God with his people",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "holy-week-6": {
+   "slug": "why-jesus-died",
+   "title": "Why did Jesus die?",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "holy-week-8": {
+   "slug": "the-resurrection",
+   "title": "The resurrection",
+   "minutes": 3,
+   "by": "pick"
+  }
+ },
+ "catechism": {
+  "1": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "2": {
+   "slug": "does-god-exist",
+   "title": "Does God exist?",
+   "minutes": 1,
+   "by": "pick"
+  },
+  "3": {
+   "slug": "who-made-god",
+   "title": "Who made God?",
+   "minutes": 2,
+   "by": "named"
+  },
+  "4": {
+   "slug": "who-god-is",
+   "title": "Who God is: Father, Son and Holy Spirit",
+   "minutes": 3,
+   "by": "named"
+  },
+  "5": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "6": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "7": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "named"
+  },
+  "8": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "10": {
+   "slug": "why-bad-things-happen",
+   "title": "Why do bad things happen?",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "12": {
+   "slug": "the-bible",
+   "title": "The Bible: how we got it",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "14": {
+   "slug": "what-sin-is",
+   "title": "What sin is",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "15": {
+   "slug": "what-sin-is",
+   "title": "What sin is",
+   "minutes": 2,
+   "by": "named"
+  },
+  "17": {
+   "slug": "what-sin-is",
+   "title": "What sin is",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "25": {
+   "slug": "who-jesus-is",
+   "title": "Who Jesus is",
+   "minutes": 3,
+   "by": "named"
+  },
+  "26": {
+   "slug": "who-jesus-is",
+   "title": "Who Jesus is",
+   "minutes": 3,
+   "by": "named"
+  },
+  "28": {
+   "slug": "who-jesus-is",
+   "title": "Who Jesus is",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "29": {
+   "slug": "why-jesus-died",
+   "title": "Why did Jesus die?",
+   "minutes": 3,
+   "by": "named"
+  },
+  "30": {
+   "slug": "why-jesus-died",
+   "title": "Why did Jesus die?",
+   "minutes": 3,
+   "by": "named"
+  },
+  "31": {
+   "slug": "the-resurrection",
+   "title": "The resurrection",
+   "minutes": 3,
+   "by": "named"
+  },
+  "34": {
+   "slug": "how-salvation-works",
+   "title": "How salvation works",
+   "minutes": 4,
+   "by": "named"
+  },
+  "35": {
+   "slug": "grace",
+   "title": "Grace: the gift no one earns",
+   "minutes": 3,
+   "by": "named"
+  },
+  "36": {
+   "slug": "how-salvation-works",
+   "title": "How salvation works",
+   "minutes": 4,
+   "by": "named"
+  },
+  "37": {
+   "slug": "how-salvation-works",
+   "title": "How salvation works",
+   "minutes": 4,
+   "by": "named"
+  },
+  "39": {
+   "slug": "love-when-i-do-wrong",
+   "title": "Does God still love me when I do wrong?",
+   "minutes": 3,
+   "by": "passage"
+  },
+  "41": {
+   "slug": "holy-spirit",
+   "title": "The Holy Spirit through the Bible",
+   "minutes": 3,
+   "by": "named"
+  },
+  "43": {
+   "slug": "spirit-in-a-believer",
+   "title": "The Holy Spirit in a believer",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "45": {
+   "slug": "spirit-in-a-believer",
+   "title": "The Holy Spirit in a believer",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "46": {
+   "slug": "the-church",
+   "title": "What the church is",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "47": {
+   "slug": "baptism-and-supper",
+   "title": "Baptism and the Lord's Supper",
+   "minutes": 3,
+   "by": "passage"
+  },
+  "48": {
+   "slug": "baptism-and-supper",
+   "title": "Baptism and the Lord's Supper",
+   "minutes": 3,
+   "by": "passage"
+  },
+  "49": {
+   "slug": "prayer",
+   "title": "Prayer",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "50": {
+   "slug": "prayer",
+   "title": "Prayer",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "52": {
+   "slug": "life-to-come",
+   "title": "The life to come",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "53": {
+   "slug": "prayer",
+   "title": "Prayer",
+   "minutes": 2,
+   "by": "named"
+  },
+  "54": {
+   "slug": "prayer",
+   "title": "Prayer",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "59": {
+   "slug": "what-sin-is",
+   "title": "What sin is",
+   "minutes": 2,
+   "by": "named"
+  },
+  "60": {
+   "slug": "the-church",
+   "title": "What the church is",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "61": {
+   "slug": "baptism-and-supper",
+   "title": "Baptism and the Lord's Supper",
+   "minutes": 3,
+   "by": "passage"
+  },
+  "62": {
+   "slug": "baptism-and-supper",
+   "title": "Baptism and the Lord's Supper",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "63": {
+   "slug": "spirit-in-a-believer",
+   "title": "The Holy Spirit in a believer",
+   "minutes": 2,
+   "by": "passage"
+  },
+  "64": {
+   "slug": "image-of-god",
+   "title": "Creation and the image of God",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "65": {
+   "slug": "why-bad-things-happen",
+   "title": "Why do bad things happen?",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "66": {
+   "slug": "is-the-bible-true",
+   "title": "Is the Bible true?",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "67": {
+   "slug": "why-cant-i-see-god",
+   "title": "Why can't I see God?",
+   "minutes": 3,
+   "by": "named"
+  },
+  "70": {
+   "slug": "when-we-die",
+   "title": "What happens when we die?",
+   "minutes": 3,
+   "by": "name"
+  },
+  "71": {
+   "slug": "science-and-the-bible",
+   "title": "Are science and the Bible enemies?",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "74": {
+   "slug": "love-when-i-do-wrong",
+   "title": "Does God still love me when I do wrong?",
+   "minutes": 3,
+   "by": "pick"
+  },
+  "75": {
+   "slug": "why-bad-things-happen",
+   "title": "Why do bad things happen?",
+   "minutes": 2,
+   "by": "pick"
+  },
+  "76": {
+   "slug": "who-god-is",
+   "title": "Who God is: Father, Son and Holy Spirit",
+   "minutes": 3,
+   "by": "named"
+  }
+ }
+}

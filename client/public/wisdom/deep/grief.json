@@ -1,0 +1,111 @@
+{
+  "id": "grief",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "John 11:35",
+      "context": "John 11:28-37",
+      "where": "Jesus arrives at Bethany four days after his friend Lazarus has died. He knows he is about to raise him. He weeps anyway, with Mary and the mourners. Knowing how the story ends did not make the grief false."
+    },
+    {
+      "ref": "John 11:25-26",
+      "context": "John 11:17-27",
+      "where": "Before he goes to the tomb, Jesus speaks to Martha, who has just told him her brother would not have died if he had come sooner. He does not argue with her grief. He gives her a promise about himself, and asks if she believes it."
+    },
+    {
+      "ref": "Psalm 6:6",
+      "context": "Psalm 6:1-7",
+      "where": "A psalm of David from a time of sickness and sorrow. He says he is worn out with groaning and weeps through the night. Israel kept this prayer in its worship book, tears and all."
+    },
+    {
+      "ref": "Psalm 31:9",
+      "context": "Psalm 31:9-13",
+      "where": "The psalmist describes sorrow that reaches the body as well as the soul, along with the loneliness of being avoided by people who used to be near. The Bible knows that grief is physical."
+    },
+    {
+      "ref": "Genesis 50:1",
+      "context": "Genesis 50:1-3",
+      "where": "When Jacob dies, his son Joseph, by then the most powerful man in Egypt, falls on his father's face and weeps. Egypt mourns for seventy days. Faith in God's promises did not cut the mourning short."
+    },
+    {
+      "ref": "Psalm 34:18",
+      "context": "Psalm 34:15-18",
+      "where": "A psalm that praises God for rescue says plainly that the righteous have many troubles, and that the LORD is near the brokenhearted. Nearness, not explanation, is what is promised."
+    },
+    {
+      "ref": "Matthew 5:4",
+      "context": "Matthew 5:3-12",
+      "where": "The second of the Beatitudes, at the start of the Sermon on the Mount. Jesus names mourners among those who belong to his kingdom, and promises them comfort that is still to come."
+    },
+    {
+      "ref": "1 Thessalonians 4:13-14",
+      "context": "1 Thessalonians 4:13-18",
+      "where": "A young church has buried some of its members and is unsure what happens to them. Paul does not forbid grief. He sets their grief beside the resurrection of Jesus, so that it is grief with hope rather than grief without it."
+    },
+    {
+      "ref": "1 Corinthians 15:54-55",
+      "context": "1 Corinthians 15:50-57",
+      "where": "At the end of his long argument for the resurrection, Paul quotes Isaiah and Hosea and taunts death itself. Death is treated as an enemy, not a friend or a natural doorway, and an enemy that will lose."
+    },
+    {
+      "ref": "Revelation 21:4",
+      "context": "Revelation 21:1-4",
+      "where": "John's vision of a new heaven and a new earth, where God dwells with his people. The tears are real enough that God himself wipes them away. The promise is that the causes of crying will end."
+    }
+  ],
+  "misread": [
+    {
+      "ref": "1 Thessalonians 4:13",
+      "context": "1 Thessalonians 4:13-18",
+      "taken": "This verse is sometimes quoted to grieving Christians as if strong grief showed weak faith: believers should not grieve, because their loved one is with the Lord.",
+      "says": "Paul does not forbid grief. He forbids grieving “like the rest, who are without hope.” In his world many people met death with resignation, as the end of everything. Paul sets the church's grief beside the resurrection of Jesus. The tears stay. What changes is what they are shed toward. Jesus himself wept at a grave he was about to open."
+    },
+    {
+      "ref": "Ecclesiastes 3:4",
+      "context": "Ecclesiastes 3:1-8",
+      "taken": "“A time to mourn” is sometimes used to tell a grieving person that their time is nearly up and they should be moving on.",
+      "says": "The poem names seasons; it does not give them lengths. Its point is that each of these things has its place under God, mourning included. It gives grief a rightful place, not a deadline."
+    }
+  ],
+  "whole": [
+    "Grief does not keep a schedule. It comes back in a grocery aisle, on a birthday, at the sound of a name. People in grief are often surprised by how physical it is, how tired they are, how hard it is to think, and how lonely it becomes once the funeral is over and others go back to ordinary life. Many Christians feel a second weight on top of the loss: a sense that their sorrow should be smaller if their faith were bigger.",
+    "Scripture lifts that second weight. Its people grieve loudly and for a long time. Abraham weeps for Sarah, Joseph for Jacob, David for Jonathan and for Absalom, and Jesus at the grave of his friend. The Bible's honesty about grief comes from what it believes about death. Death is not described as a natural doorway or a friend. It is the last enemy, an intruder in God's good world, and grief is the right response to an enemy that has taken someone you love.",
+    "That is also why Christian grief is not hopeless. The same Jesus who wept at Lazarus' tomb called him out of it, and then walked out of his own. Paul calls the resurrection of Jesus the firstfruits, the first of a harvest still to come. Hope does not hurry the mourning or make it smaller. It gives it somewhere to go. A grieving person can bring their tears to God in the words of the psalms, can let the church sit with them, and can wait for a day when the one who wept will wipe away every tear."
+  ],
+  "differ": {
+    "share": "Christians confess together that Jesus rose bodily from the dead, that those who die in him are with the Lord, and that the dead will be raised.",
+    "views": [
+      {
+        "name": "With the Lord at once",
+        "body": "Most Christians believe that those who die in Christ are with him at once, conscious and at rest, while they wait for the resurrection of the body (2 Corinthians 5:8, Philippians 1:23)."
+      },
+      {
+        "name": "Asleep until the resurrection",
+        "body": "Some Christians read the Bible's language of sleep to mean that the dead are not conscious until the resurrection, when they will wake to the life to come."
+      },
+      {
+        "name": "Praying for the dead",
+        "body": "The Catholic and Orthodox churches pray for the dead, and Catholic teaching includes purgatory. Most Protestant churches do not pray for the dead."
+      }
+    ],
+    "after": "All of them grieve with hope in the same risen Lord, and all of them look to the same last day."
+  },
+  "sit": "Who have you not let see your grief, and what would it cost you to let one person sit with it this week?",
+  "prayer": {
+    "ref": "Psalm 31:9, 14-15",
+    "lead": "Psalm 31 holds sorrow and trust in the same prayer. It is the psalm Jesus quoted on the cross: “Into Your hands I commit My spirit” (Luke 23:46)."
+  },
+  "next": [
+    { "kind": "Find Help", "label": "Grief", "href": "/help/grief" },
+    { "kind": "Study guide", "label": "Grief", "href": "/studyguides/grief" },
+    { "kind": "Study guide", "label": "Lament", "href": "/studyguides/lament" },
+    { "kind": "Reading", "label": "Grief and Loss", "href": "/life/grief-and-loss" }
+  ],
+  "careLines": [
+    { "from": "psalms/plain/6", "text": "But if your nights are like the nights in this psalm, please do not carry them alone." },
+    { "from": "psalms/plain/6", "text": "Tell someone you trust: a doctor, a pastor, or a friend." },
+    { "from": "psalms/plain/6", "text": "When grief or sadness lasts and starts taking sleep, appetite or work, seeing a doctor is wise, and it is not a failure of faith." },
+    { "from": "psalms/plain/6", "text": "If you have thoughts of hurting yourself, please speak to someone now: a doctor, a pastor, a trusted friend, or a crisis line." },
+    { "from": "psalms/plain/6", "text": "The Find Help page on this site lists places to turn." }
+  ]
+}

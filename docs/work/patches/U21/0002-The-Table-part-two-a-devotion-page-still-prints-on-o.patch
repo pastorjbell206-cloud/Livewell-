@@ -1,0 +1,78 @@
+From 79fbc594b50fdc30ca0fc2f463cdf388728afdc4 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 27 Oct 2026 16:43:42 +0000
+Subject: [PATCH 2/4] The Table, part two: a devotion page still prints on one
+ page with both age bands
+
+In print the younger and older questions sit side by side on a page with 1.3 cm margins, so all 112 devotion pages print as one page at Letter and A4; the three-nights links take the article's own underline.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+
+Claude-Session: https://claude.ai/code/session_01JuCQ8kZ25i9zRwNgk6bh4e
+---
+ client/src/index.css                      | 12 ++++++++++--
+ client/src/pages/family/DevotionParts.tsx | 15 +++++++++++++--
+ 2 files changed, 23 insertions(+), 4 deletions(-)
+
+diff --git a/client/src/index.css b/client/src/index.css
+index 3302b431..2fdeb0a7 100644
+--- a/client/src/index.css
++++ b/client/src/index.css
+@@ -672,8 +672,8 @@ img{display:block;max-width:100%}
+ .tb-bands__note{font-family:var(--U);font-size:13px;line-height:1.5;color:var(--ink-muted);margin:8px 0 0}
+ .tb-table .tb-bands__note{font-size:14px}
+ .tb-nights{font-family:var(--U);font-size:14px;line-height:1.7;color:var(--ink-muted);margin:var(--s-2) 0 0}
+-.tb-nights__link{color:var(--mustard-text);font-weight:600;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:.2em;padding:10px 0;transition:text-decoration-color .2s var(--motion-ease)}
+-.tb-nights__link:hover{text-decoration-color:currentColor}
++/* Links inside a sentence: the article's own mustard underline (brand-override.css) marks them. */
++.tb-nights__link{color:var(--mustard-text);font-weight:600}
+ .tb-grownups{margin:0 0 var(--s-2);padding:var(--s-3) 0 var(--s-2);border-top:1px solid var(--border)}
+ .tb-grownups__line{font-family:var(--B);font-size:17px;line-height:1.7;color:var(--ink);margin:0}
+ .tb-different__notes{display:grid;gap:var(--s-3) var(--s-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));margin:0 0 var(--s-3)}
+@@ -727,6 +727,14 @@ img{display:block;max-width:100%}
+   .tb-prayer{font-size:10.5pt;margin-bottom:2pt}
+   .tb-devotion p[style]{font-size:8pt !important;margin-bottom:2pt !important}
+   .tb-done,.tb-more,.tb-line{display:none !important}
++  /* Both age bands side by side, a little tighter, on a page with narrower
++   * margins than an essay's 2cm, so a devotion still prints on one page (U21). */
++  body:has(.tb-page){page:tb-card}
++  @page tb-card{margin:1.3cm 1.5cm}
++  .tb-section{padding:5pt 0 1pt}
++  .tb-asks--two{display:grid;grid-template-columns:1fr 1fr;gap:0 14pt}
++  .tb-asks--two .tb-questions{font-size:9pt;line-height:1.35;padding-left:1.2em;margin-bottom:2pt}
++  .tb-asks--two .tb-label{margin-bottom:1pt}
+ }
+ 
+ /* CARD */
+diff --git a/client/src/pages/family/DevotionParts.tsx b/client/src/pages/family/DevotionParts.tsx
+index 0d7376a5..46286714 100644
+--- a/client/src/pages/family/DevotionParts.tsx
++++ b/client/src/pages/family/DevotionParts.tsx
+@@ -139,11 +139,22 @@ export function AskPart({ devotion, ask }: { devotion: Devotion; ask?: AskChoice
+   const { bands } = devotion;
+   if (!bands) return <Questions label="Together" list={devotion.questions} />;
+   const band = ask?.band ?? "together";
++  // Both bands sit side by side on paper, so the page still prints as one card.
+   return (
+     <>
+       {ask && <BandSwitch {...ask} />}
+-      {band !== "older" && <Questions label="For younger children" list={bands.younger} />}
+-      {band !== "younger" && <Questions label="For older children" list={bands.older} />}
++      <div className={band === "together" ? "tb-asks tb-asks--two" : "tb-asks"}>
++        {band !== "older" && (
++          <div>
++            <Questions label="For younger children" list={bands.younger} />
++          </div>
++        )}
++        {band !== "younger" && (
++          <div>
++            <Questions label="For older children" list={bands.older} />
++          </div>
++        )}
++      </div>
+     </>
+   );
+ }
+-- 
+2.43.0
+

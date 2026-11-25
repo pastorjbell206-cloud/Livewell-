@@ -1,7 +1,8 @@
 /**
  * The Table's rules: tonight from the year map (every night on the map names
- * a devotion page that exists, including the nights a daily set does not
- * cover), the week of the year, where a devotion sits in its set, and what
+ * a devotion page that exists, including the nights Thanksgiving's set does
+ * not cover, but for the Advent weeks' nights outside the calendar's own
+ * dates, which have none), the week of the year, where a devotion sits in its set, and what
  * this device remembers (dates only, the same devotion twice in a night
  * counted once, a corrupt value ignored).
  */
@@ -20,7 +21,9 @@ import {
   placeOf,
   readFamilyProgress,
   recordDevotionDone,
+  saveFamilyBand,
   tonightOn,
+  tonightTitle,
   weekOfYear,
   whenSaid,
   withDone,
@@ -38,7 +41,8 @@ afterEach(() => {
 describe("the committed family index", () => {
   it("passes the page's own shape guard", () => {
     expect(isFamilyIndex(INDEX)).toBe(true);
-    expect(INDEX.weekly).toBe(INDEX.devotions.filter((r) => r.kind === "weekly").length);
+    // `weekly` counts the Foundations set; a live strand beside it is counted in `strands`.
+    expect(INDEX.weekly).toBe(INDEX.devotions.filter((r) => r.kind === "weekly" && (r.strand ?? "foundations") === "foundations").length);
   });
 });
 
@@ -58,18 +62,34 @@ describe("tonightOn", () => {
     expect(tonightOn("2027-03-28")?.id).toBe("holy-week-8");
   });
 
-  it("gives the nights a set's week does not cover the set's nearest day", () => {
+  it("gives the nights Thanksgiving's week does not cover the set's nearest day", () => {
     // The Friday and Saturday after Thanksgiving.
     expect(tonightOn("2026-11-27")?.id).toBe("thanksgiving-7");
     expect(tonightOn("2026-11-28")?.id).toBe("thanksgiving-7");
-    // Advent Sunday and Monday, before the calendar starts on December 1.
-    expect(tonightOn("2026-11-29")?.id).toBe("advent-1");
-    expect(tonightOn("2026-11-30")?.id).toBe("advent-1");
-    // The day after Christmas, still in Advent's last week.
-    expect(tonightOn("2026-12-26")?.id).toBe("advent-25");
   });
 
-  it("names a devotion page that exists on every night of the map", () => {
+  it("gives the Advent calendar's readings only to their own dates, December 1 to 25", () => {
+    // Advent Sunday and Monday, before the calendar starts on December 1 (the walk's polish, 2026-11-23).
+    expect(tonightOn("2026-11-29")).toBeNull();
+    expect(tonightOn("2026-11-30")).toBeNull();
+    expect(tonightOn("2026-12-26")?.set).toBeUndefined();
+  });
+
+  it("begins the next week's devotion early on the nights after Christmas in Advent's last week", () => {
+    // The day after Christmas 2026, a Saturday, takes the devotion of the week of December 27.
+    expect(tonightOn("2026-12-26")).toEqual({ id: weekOf("2026-12-27").devotion });
+    // A year with five such nights (December 25, 2028 is a Monday): each takes the week of December 31's.
+    for (const night of ["2028-12-26", "2028-12-27", "2028-12-28", "2028-12-29", "2028-12-30", "2028-12-31"]) {
+      expect(tonightOn(night)).toEqual({ id: weekOf("2028-12-31").devotion });
+    }
+    // No later week moves.
+    expect(tonightOn("2029-01-07")).toEqual({ id: weekOf("2029-01-07").devotion });
+    expect(weekOf("2029-01-07").devotion).not.toBe(weekOf("2028-12-31").devotion);
+    // Christmas Day itself keeps its reading.
+    expect(tonightOn("2028-12-25")?.id).toBe("advent-25");
+  });
+
+  it("names a devotion page that exists on every night of the map but the Advent weeks' nights before December 1", () => {
     const missing: string[] = [];
     const day = new Date(`${FAMILY_YEAR_FROM}T12:00:00Z`);
     const last = new Date(`${FAMILY_YEAR_THROUGH}T12:00:00Z`);
@@ -77,12 +97,31 @@ describe("tonightOn", () => {
     while (day <= last) {
       const iso = day.toISOString().slice(0, 10);
       const t = tonightOn(iso);
-      if (!t || !IDS.has(t.id)) missing.push(`${iso}: ${t?.id ?? "nothing"}`);
+      // In an Advent week, the only nights with no reading are the ones before the calendar's December 1.
+      const week = FAMILY_WEEKS[Math.floor((Date.parse(`${iso}T12:00:00Z`) - Date.parse(`${FAMILY_YEAR_FROM}T12:00:00Z`)) / 86_400_000 / 7)];
+      const beforeCalendar = week?.set === "advent" && iso.slice(5) < "12-01";
+      if (beforeCalendar ? t !== null : !t || !IDS.has(t.id)) missing.push(`${iso}: ${t?.id ?? "nothing"}`);
       nights += 1;
       day.setUTCDate(day.getUTCDate() + 1);
     }
     expect(nights).toBeGreaterThan(365 * 5);
     expect(missing).toEqual([]);
+  });
+
+  it("has tonight's title from the year map, the same as the index's, on every night", () => {
+    const titles = new Map(INDEX.devotions.map((r) => [r.id, r.title]));
+    const wrong: string[] = [];
+    const day = new Date(`${FAMILY_YEAR_FROM}T12:00:00Z`);
+    const last = new Date(`${FAMILY_YEAR_THROUGH}T12:00:00Z`);
+    while (day <= last) {
+      const iso = day.toISOString().slice(0, 10);
+      const t = tonightOn(iso);
+      if (t && tonightTitle(t) !== titles.get(t.id)) wrong.push(`${iso}: ${t.id} is "${tonightTitle(t)}"`);
+      day.setUTCDate(day.getUTCDate() + 1);
+    }
+    expect(wrong).toEqual([]);
+    expect(tonightTitle({ id: "advent-6", set: "advent", day: 6 })).toBe("A Child Is Given");
+    expect(tonightTitle({ id: "no-such-devotion" })).toBeNull();
   });
 
   it("is null off the map and for a date that cannot exist", () => {
@@ -109,6 +148,18 @@ describe("placeOf", () => {
     const advent6 = INDEX.devotions.find((r) => r.id === "advent-6")!;
     expect(placeOf(first, INDEX)).toEqual({ current: 1, total: INDEX.weekly });
     expect(placeOf(advent6, INDEX)).toEqual({ unit: "Day", current: 6, total: INDEX.sets.advent.days });
+  });
+
+  it("counts a weekly devotion within its own strand (U21)", () => {
+    const first = INDEX.devotions.find((r) => r.id === "identity")!;
+    expect(first.strand).toBe("foundations");
+    // Replace the committed world strand, if its flag is live, with a made-up count.
+    const withWorld: FamilyIndex = {
+      ...INDEX,
+      strands: [...(INDEX.strands ?? []).filter((s) => s.key !== "world"), { key: "world", label: "The world we live in", count: 12 }],
+    };
+    expect(placeOf({ ...first, strand: "world", n: 3 }, withWorld)).toEqual({ current: 3, total: 12 });
+    expect(placeOf(first, { ...INDEX, strands: undefined })).toEqual({ current: 1, total: INDEX.weekly });
   });
 });
 
@@ -157,6 +208,15 @@ describe("what this device remembers", () => {
     expect(recordDevotionDone("identity", "2026-11-03")).toMatchObject({ ok: true, already: true });
     expect(recordDevotionDone("identity", "2026-11-04").already).toBe(false);
     expect(readFamilyProgress().done).toHaveLength(2);
+  });
+
+  it("keeps the band a family chose beside its dates (U21)", () => {
+    recordDevotionDone("identity", "2026-11-03");
+    expect(saveFamilyBand("older")).toMatchObject({ ok: true, progress: { band: "older" } });
+    expect(readFamilyProgress()).toEqual({ v: 1, start: "2026-11-03", band: "older", done: [{ id: "identity", date: "2026-11-03" }] });
+    // Marking another night done keeps the band.
+    recordDevotionDone("faith", "2026-11-10");
+    expect(readFamilyProgress().band).toBe("older");
   });
 
   it("ignores a value of the wrong shape", () => {

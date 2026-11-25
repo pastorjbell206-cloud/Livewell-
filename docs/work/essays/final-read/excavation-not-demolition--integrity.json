@@ -1,0 +1,95 @@
+{
+  "slug": "excavation-not-demolition",
+  "lens": "Fact and integrity audit of /home/user/livewell-land/client/public/essays/excavation-not-demolition.json against its claims ledger /home/user/livewell-land/docs/work/essays/ledgers/excavation-not-demolition.md, the BSB chapter files in client/public/bible/ch/, and the integrity rules in docs/work/essays/BRIEF.md. Read-only; 15 web searches run on 2026-10-28 (search-engine summaries only, no page opened).",
+  "findings": [
+    {
+      "where": "Where It Usually Starts, The Great Dechurching paragraph: \"Jim Davis and Michael Graham, working with surveys run by the political scientists Ryan Burge and Paul Djupe, wrote *The Great Dechurching* (2023) about the millions of American adults who once went to church regularly and now almost never go.\"",
+      "problem": "Restoration (g). The ledger (first closing run, change 2) records the writer's original figure and the authors' definition, generalized only because no source had been seen. The second closing run then saw both (UnHerd, ChurchLeaders, WBUR, Equip.org, as summarized) but left them out. This run's search saw them again: ChurchLeaders' \"What 40 Million Dechurched Americans Say About Why They Left\", WBUR and the Equip.org review, as summarized, give about 40 million US adults and define a dechurched person as someone who used to go to church at least once per month but now goes less than once a year; the same summary confirms Davis and Graham worked with Ryan Burge and Paul Djupe. One summary notes the 40 million counts all faiths; the sentence attributes the estimate to the authors, so it stands as theirs.",
+      "fix": "Replace the sentence with: \"Jim Davis and Michael Graham, working with surveys run by the political scientists Ryan Burge and Paul Djupe, estimated in *The Great Dechurching* (2023) that about 40 million American adults who once went to church at least monthly now go less than once a year.\" Update ledger line 137 and the second-closing-run summary (line 17) to say the figure was restored.",
+      "severity": "should"
+    },
+    {
+      "where": "What Deserves to Come Down, first paragraph: \"built on a national survey of American teenagers and long interviews with some of them.\"",
+      "problem": "Restoration (g). The ledger (first closing run, change 3) records the writer's original \"a national survey of more than three thousand American teenagers and long interviews with more than two hundred of them\". The second closing run kept the general wording because two counts seemed to disagree (3,290 vs 3,370). This run's search reconciles them: the NSYR's baseline was a nationally representative telephone survey of 3,290 teenagers aged 13 to 17 and their parents, plus an oversample of 80 Jewish households, for 3,370 completed cases, and 267 in-person interviews (summary of religionlink.com, the Princeton DSS catalog entry and the NSYR's own news page). Either count is \"more than three thousand\"; 267 is \"more than two hundred\". The writer's rounded wording is confirmed on both readings.",
+      "fix": "Replace \"built on a national survey of American teenagers and long interviews with some of them.\" with \"built on a national survey of more than three thousand American teenagers and long interviews with more than two hundred of them.\" Update ledger line 145 and line 17.",
+      "severity": "should"
+    },
+    {
+      "where": "Where It Usually Starts, Guidepost paragraph: \"found that staff of the Southern Baptist Convention's Executive Committee had for years kept a private list of ministers accused of sexual abuse\"",
+      "problem": "Restoration (g). The ledger (first closing run, change 1) records the writer's \"for more than a decade\", generalized because no result had shown it; the second closing run says it was not seen. This run's search saw it: the summary of the AP story as carried by NBC affiliates, WABE/GPB, Religion News Service and bishop-accountability.org quotes the Guidepost report: \"Despite collecting these reports for more than 10 years, there is no indication that (Oldham and Boto) or anyone else, took any action\", and a Baptist Message / Baptist & Reflector summary says reports were submitted to Boto as early as 2007. The finding stays attributed to the investigation (Oldham disputes it, per Baptist Press; the essay names no one).",
+      "fix": "Replace \"had for years kept a private list of ministers accused of sexual abuse\" with \"had for more than a decade kept a private list of ministers accused of sexual abuse\". Update ledger line 127 and line 17.",
+      "severity": "should"
+    },
+    {
+      "where": "Opening paragraph, last sentence: \"he wrote that his faith in Jesus had gone through a massive shift, and added: \"The popular phrase for this is 'deconstruction,' the biblical phrase is 'falling away.'\"\"",
+      "problem": "Restoration (g). Correction 1 in the ledger turned Harris's first sentence into paraphrase because it rested on memory; the closing run then saw it quoted by Fox 5 Atlanta and other Fox affiliates, and this run's search saw it again (summary of ChurchLeaders, Fox 29, KTVU, Fox 5 Atlanta: \"I have undergone a massive shift in regard to my faith in Jesus,\" Harris wrote). Both sentences are now confirmed verbatim. Whether they sit side by side in the post was not printed in any summary (a search for the joined string returned the same Fox and ChurchLeaders pages, which suggests it but does not show it), so the restoration below keeps them as two quotations.",
+      "fix": "Replace with: \"he wrote, \"I have undergone a massive shift in regard to my faith in Jesus,\" and added: \"The popular phrase for this is 'deconstruction,' the biblical phrase is 'falling away.'\"\" (If a page is opened that shows the two sentences adjacent, the writer's original single quotation can be used instead: he wrote: \"I have undergone a massive shift in regard to my faith in Jesus. The popular phrase for this is 'deconstruction,' the biblical phrase is 'falling away.'\") Update ledger lines 117 and 87.",
+      "severity": "should"
+    },
+    {
+      "where": "Opening paragraph: \"Harris was still a young man when *I Kissed Dating Goodbye* came out in 1997\"",
+      "problem": "Restoration (g). Correction 2 replaced the writer's \"in his early twenties\" because it rested on an unchecked birth year. The closing run then saw a bookseller's description and 2018 coverage saying he wrote the book at 21; this run's search summary shows ChurchLeaders and NPR saying he was 21 when he wrote it and Exodus Books giving a 1974 birth year. 21 or 22 in 1996-97 is \"early twenties\" on any reading.",
+      "fix": "Replace \"Harris was still a young man when *I Kissed Dating Goodbye* came out in 1997\" with \"Harris was in his early twenties when *I Kissed Dating Goodbye* came out in 1997\". Update ledger line 113.",
+      "severity": "should"
+    },
+    {
+      "where": "What Deserves to Come Down, first paragraph: \"In 2005 the sociologist Christian Smith and Melinda Lundquist Denton published *Soul Searching*\"",
+      "problem": "Restoration (g). Correction 3 changed the writer's \"the sociologists Christian Smith and Melinda Lundquist Denton\" only because Denton's discipline was unverified. This run's search saw it: her University of Texas at San Antonio faculty profile and Springtide Research Institute bio, as summarized, list her as a professor of sociology at UTSA with a Ph.D. and M.A. in sociology from UNC-Chapel Hill and a co-investigator of the National Study of Youth and Religion. The singular also reads oddly, as if Denton's role were being withheld.",
+      "fix": "Replace \"the sociologist Christian Smith and Melinda Lundquist Denton\" with \"the sociologists Christian Smith and Melinda Lundquist Denton\". Update ledger line 144 and correction 3.",
+      "severity": "should"
+    },
+    {
+      "where": "What Deserves to Come Down, first paragraph: \"They gave the faith most of those teenagers actually held a name: moralistic therapeutic deism.\"",
+      "problem": "Mismatch (c) and a claim about living scholars (f). The ledger (line 146) has Smith and Denton calling it \"the de facto dominant religion\" among American teenagers. Smith's own statement, in his essay \"On 'Moralistic Therapeutic Deism' as U.S. Teenagers' Actual, Tacit, De Facto Religious Faith\" (catholiceducation.org summary in this run), offers it \"somewhat tentatively, as less than a conclusive fact but more than mere conjecture\": \"we suggest that the de facto dominant religion among contemporary teenagers in the United States is what we might call 'Moralistic Therapeutic Deism.'\" \"Dominant\" is not \"most\", and the essay drops the authors' own hedge, so it credits them with a stronger finding than they claimed.",
+      "fix": "Replace with: \"They gave a name to what they suggested was the dominant faith among those teenagers: moralistic therapeutic deism.\" (No quotation marks needed; the following \"Its creed, as they summarized it\" still reads.) Update ledger line 146 to record the wording.",
+      "severity": "should"
+    },
+    {
+      "where": "Augustine Took His Faith Apart Too, first paragraph: \"When their most famous teacher, Faustus, came to Carthage and could not answer his questions\"",
+      "problem": "No ledger line (a) for the superlative. Ledger line 201 covers only Faustus coming to Carthage and failing to answer (Confessions 5.3, 5.7). Confessions calls him a Manichee bishop whose coming Augustine had awaited for almost nine years; this run's search summary (Wikipedia, \"Faustus of Mileve\"; First Things) says the same and calls him charming and eloquent, but no source seen calls him the sect's most famous teacher.",
+      "fix": "Replace \"When their most famous teacher, Faustus, came to Carthage\" with \"When Faustus, a Manichee bishop he had waited years to meet, came to Carthage\". Add a ledger line citing Confessions 5.6 (\"for almost all those nine years\") for the wait.",
+      "severity": "consider"
+    },
+    {
+      "where": "Opening paragraph, \"Now, days after announcing that he and his wife were separating, he wrote...\", read together with Why Some Christians Are Worried: \"Some deconstruction is a decision already made, out looking for respectable reasons. Pastors can tell you about people who found serious objections to the faith in the same season they found a reason to want out of it.\"",
+      "problem": "Possible unfairness to a living person (f). Each sentence is accurate (the separation and the post are verified, ledger line 116, and this run's search again showed the mid-July separation and the late-July post). But the only named deconstructor in the essay is introduced with his marriage ending days earlier, and a later paragraph describes people whose objections arrived \"in the same season they found a reason to want out\". A reader can join the two into an insinuation about Harris's motives that the essay elsewhere refuses (\"it isn't ours to finish for him\"). The separation does no work in the argument.",
+      "fix": "Cut the clause: \"Now he wrote that his faith in Jesus had gone through a massive shift, and added: ...\" (or, with the Harris restoration above, \"Now he wrote, \"I have undergone a massive shift in regard to my faith in Jesus,\" and added: ...\"). Leave the later general sentence as it is. If James wants the chronology kept, no fact needs changing.",
+      "severity": "consider"
+    },
+    {
+      "where": "Why Some Christians Are Worried: \"she describes in *Another Gospel?* how a class at her own church\"",
+      "problem": "Restoration candidate (g) that the brief argues against. Correction 4 removed the writer's \"(2020)\" because the year could not be checked and does no work. This run's search confirms it: Tyndale Momentum, released October 6, 2020 (OverDrive; Publishers Weekly, ISBN 9781496441737). The year is now verified, but the brief says to give a year only when it matters, and the voice edit dropped the Wright and James K. A. Smith years for the same reason.",
+      "fix": "No essay change recommended. Record in ledger line 169 that the year is confirmed (Tyndale Momentum, October 2020). If James wants it, the restored text is \"she describes in *Another Gospel?* (2020) how a class at her own church\".",
+      "severity": "consider"
+    },
+    {
+      "where": "Ledger housekeeping (no essay change): ledger line 208, and ledger lines 192 and 239",
+      "problem": "Mismatch (c) between ledger and published text. Line 208 still says \"The year 384 itself is open (above)\", but line 203 records it verified in the second closing run (Christian History Institute timeline, The New Criterion). Lines 192 and 239 list the links [What Was Decided at the Council of Nicaea?](/writing/the-council-of-nicaea-what-was-decided-in-325) and [Doubt After Being Abused by a Church Leader](/writing/doubt-after-church-abuse), which are in docs/work/essays/excavation-not-demolition.md but not in the published JSON (both targets are \"pending\" in client/src/lib/shelf.json with no rewrite in client/public/essays/). The published JSON otherwise matches the .md body word for word.",
+      "fix": "In the ledger: change line 208's last sentence to \"The year 384 is verified (above).\" and note on lines 192 and 239 that the Nicaea and church-abuse links were withheld from the published JSON until those essays go public. No change to the essay.",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Scripture, all 12 body quotations and 3 Closing Texts: each is in ESV form with its reference beside it, and each matches the ledger's matched wording and punctuation (Jeremiah 1:10, 7:4, 32:15; Hebrews 3:12; Luke 8:13; 1 Corinthians 15:3-5, 15:17; 2 Corinthians 3:6; 1 Thessalonians 5:20-21; Luke 15:20; Isaiah 42:3; Mark 9:24; Closing Texts 1 Thessalonians 5:21, Isaiah 42:3, Mark 9:24). This run's searches printed the ESV wording of Luke 15:20 (esv.org verses page), 1 Corinthians 15:17 (esv.org) and confirmed 1 Corinthians 15:3-5 (esv.org, biblia.com), the three verses the second closing run had seen only partly printed.",
+    "Scripture sense against the BSB in client/public/bible/ch/: Jeremiah 1:1-2, 1:6, 1:10 (four of six verbs tear down: correct); 7:2, 7:4, 7:9-10; 26:2, 26:6, 26:8-11 (the essay's \"the priests and the prophets seized him and said he deserved to die\" is accurate, though 26:8 adds \"all the people\"); 32:1-2, 32:7-10, 32:14-15 (cousin Hanamel, court of the guard, deed before witnesses, clay jar); Hebrews 3:12; Luke 8:13; 1 Corinthians 15:3-5, 15:17; 2 Corinthians 3:6; Romans 13:13-14; 1 Thessalonians 5:19-21; Luke 15:18-22 (spoken confession stops before the hired-servant line); Isaiah 42:1, 42:3 with Matthew 12:17-20; Mark 9:18, 9:21, 9:24-27. Every reference matches its verse.",
+    "Mechanics: 0 em-dashes in the published JSON; 2 exclamation points, both inside verbatim Mark 9:24.",
+    "Harris: late July 2019 Instagram post; 1997 publication; October 2018 withdrawal and apology; separation announced mid-July and the faith post about a week later (this run: Premier July 19, WGCU July 21, Crosswalk's 'Friday' report updated July 29); the caption quotation matches the ledger word for word.",
+    "Derrida: the corrected \"in its modern sense\" wording and \"late 1960s\" match ledger line 122.",
+    "Boston Globe January 2002; Zacharias report February 2021 (Zacharias died in 2020, so not a living person); Guidepost May 2022, attributed to the investigation with no individual named.",
+    "The Great Dechurching: Davis and Graham, 2023, with Burge and Djupe, and the ordinary-reasons finding, all confirmed again in this run (WBUR, ChurchLeaders, Equip.org summary).",
+    "Soul Searching 2005; Smith a sociologist; MTD named by them; the five-point creed is unquoted paraphrase matching the published points; found across Catholic, mainline and evangelical (conservative Protestant) teens and learned from adults.",
+    "Alisa Childers (ZOEgirl; Another Gospel? summary of the church class and her way back; the vocabulary argument) fairly represented; the cross and resurrection examples are the essay's own and not put in her mouth as quotation.",
+    "Celsus late second century, \"perhaps one other\" (Against Celsus 2.55); Origen's reply in the mid-third century.",
+    "1 Corinthians in the mid-50s and before the Gospels; 15:3-5 as pre-Pauline tradition; N. T. Wright's argument summarized fairly.",
+    "Arius around 318 as an Alexandrian presbyter; the slogan given without quotation marks; Nicaea 325; \"begotten, not made,\" and homoousios; Constantinople 381; Chalcedon 451 with the four adverbs given without quotation marks.",
+    "Augustine: 354, Thagaste in present-day Algeria, Monica, nineteenth year and Cicero, nine years with the Manichees, the skeptics, 384 Milan, Ambrose and eloquence, 2 Corinthians 3:6, \"like a father\", summer 386 garden and \"take up and read\" (matches the ledger's source), Romans 13:13-14, Easter 387, more than a decade, preaching to the end, Monica's bishop paraphrased without quotation marks.",
+    "Luther: 1517 theses on indulgences, excommunication 1521, the wars that followed, the Apostles' and Nicene Creeds kept, Small Catechism 1529; \"more than a thousand years later\" (386 to 1517) holds.",
+    "James K. A. Smith's You Are What You Love summarized fairly; the Abba Moses saying is unquoted and introduced as attributed.",
+    "Most of the world's Christians in Africa, Asia and Latin America (Pew, ledger line 231); no figure given.",
+    "Crisis lines: 988 call or text for the Suicide and Crisis Lifeline; abuse by a church leader to be reported to police or civil authorities; Find Help link; not-counseling line present.",
+    "Biography: only \"I came to faith as an adult, from atheism\", which is on the confirmed list; no title, years, book count or Southern Baptist implication.",
+    "Second-order questions (baptism, millennium, women as pastors, Genesis 1) named as divisions among faithful churches with no position asserted.",
+    "Links in the published text: /writing/did-the-resurrection-happen (in link-targets.json and shelf.json, landing in the same commit) and /help (permitted by the brief).",
+    "Ledger: no line that supports a sentence in the published essay is still marked unverified, not checked or resting on memory (the 'not checked' notes on lines 96 and 161 concern facts that are not in the essay; line 208's stale 'open' is reported above)."
+  ]
+}

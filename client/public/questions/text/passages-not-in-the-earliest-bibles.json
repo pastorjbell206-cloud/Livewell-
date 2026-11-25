@@ -1,0 +1,133 @@
+{
+  "area": "text",
+  "slug": "passages-not-in-the-earliest-bibles",
+  "status": "live",
+  "question": "Two famous passages were not in the earliest Bibles: the ending of Mark and the woman caught in adultery. What else was added?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Tenth run (2026-11-20): the pilot area \"Can we trust the text of the New Testament?\", and the library map",
+    "key": "c"
+  },
+  "record": "docs/work/elite/apol-pilot/passages-added.md",
+  "objectionSource": {
+    "author": "Bart D. Ehrman",
+    "title": "Misquoting Jesus",
+    "year": 2005
+  },
+  "shortAnswer": "It's true. The last twelve verses of Mark (16:9-20) and the story of the woman caught in adultery (John 7:53 to 8:11) are missing from the oldest complete manuscripts, and most scholars, believers among them, think neither was part of the book as first written. A handful of shorter additions are known too: a verse in 1 John that the King James Version made famous, a verse in Acts, and a cluster of single verses elsewhere. Every one of them is known, modern Bibles mark them with brackets or notes, and this site's Study Bible explains each one in its notes. The list is short, and it is short because the evidence is so plentiful that additions of this kind show up. The hard question is the one the skeptic asks next: what about a change made before our earliest copies, which nothing could show? That question deserves a straight answer, and it gets one below.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "The objection usually begins with a feeling of betrayal. A reader learns that the story of Jesus telling a woman's accusers that the one without sin should throw the first stone, perhaps the best-loved story in the Gospels, was not in John's Gospel as John wrote it, and that his Bible has a note saying so in small print. Bart Ehrman uses this passage in *Misquoting Jesus* (2005) as a leading example of how scribes changed the text. Then the argument follows. If a passage this famous was added, and the church read it for centuries, how many other additions are there? And who decided which ones to keep? A skeptic can fairly say that a book whose contents were still moving in the fourth and fifth centuries is not the fixed word of God that preachers describe."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "The facts behind the objection are true, and the church is better served by learning them from its own Bibles than from a bestseller. The passages discussed here really were added, or are at least really doubtful. Some of them were read in churches for centuries. The King James Version prints them without any mark. And some Christians first meet this evidence as a shock because no one at church ever told them. That failure is ours, not the skeptic's."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence, passage by passage",
+      "body": "**The ending of Mark (16:9-20).** The two oldest complete manuscripts of the Gospels, Codex Sinaiticus and Codex Vaticanus, both from the fourth century, end Mark at 16:8, with the women at the empty tomb: \"they said nothing to anyone, for they were afraid.\" In the same century Eusebius of Caesarea, answering a question from a man named Marinus, said that almost all the copies of Mark he knew ended there, and Jerome later repeated it. On the other side, the great majority of all later manuscripts include verses 9 to 20, and the passage is old. Irenaeus, writing around 180, quotes Mark 16:19 as words from \"towards the conclusion\" of Mark's Gospel, which shows that some copies had the longer ending more than a century before Sinaiticus and Vaticanus were made. Most textual scholars, including many who hold a high view of Scripture, conclude that the verses were added early by another hand. They differ over whether Mark meant to end at verse 8 or whether his ending was lost. A minority defend the passage as Mark's. The ESV prints it in double brackets with a note. On this site the Study Bible's note on Mark 16 sets out the witnesses on both sides.\n\n**The woman caught in adultery (John 7:53 to 8:11).** The story is absent from the two earliest papyri of John, P66 and P75, usually dated around 200, and from Sinaiticus and Vaticanus. The first surviving Greek manuscript to contain it is Codex Bezae, copied around the fifth century. Yet the story was known early. Eusebius reports that Papias, a Christian writer of the second century whose work is now lost, told a story of a woman accused of many sins before the Lord, and most scholars think it is a form of this one, though the details may have differed. So the evidence points two ways at once: the passage wasn't part of John as first written, and it may well preserve an old and true memory of Jesus. The ESV prints it in double brackets, and the Study Bible's note on John 8 gives its whole history.\n\n**\"Three that bear record in heaven\" (1 John 5:7-8).** The King James Version reads: \"For there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one.\" The words came into the text through Latin copies and appear in only a handful of late Greek manuscripts, some in the margin. Erasmus left them out of his printed Greek New Testament in 1516 and put them into his third edition in 1522, and from there they passed into the King James. The Greek theologians of the fourth-century debates about the Trinity never quoted them, because their Bibles didn't have them. Most modern translations have taken them out, including those made by scholars who confess the Trinity. The ESV and the BSB read simply, \"For there are three that testify.\" The doctrine never rested on the verse.\n\n**The angel and the bloody sweat (Luke 22:43-44).** These two verses, in which an angel strengthens Jesus as he prays on the Mount of Olives and his sweat falls like drops of blood, are absent from P75, Vaticanus and Alexandrinus, but present in most later manuscripts, and early writers of the second century, Justin and Irenaeus among them, knew them. This is a harder case than the others, because the verses are so early. Ehrman and Mark Plunkett argued in 1983 that they were added to counter teachers who denied that Jesus had a real human body. Others argue that they are original and that some copyists dropped them. The standard critical edition brackets them. The BSB on this site prints them without a mark, and the Study Bible's note on Luke 22 sets out both arguments.\n\n**The eunuch's confession (Acts 8:37).** In the King James Version, before Philip baptizes the Ethiopian official, the man confesses that he believes Jesus Christ is the Son of God. The verse is absent from the early papyri P45 and P74 and from Sinaiticus and Vaticanus, appears in Old Latin copies and some later Greek ones, and came into the printed text through Erasmus. Most modern Bibles put it in a note. On this site the BSB leaves the verse number standing with the words \"[Not in the earliest manuscripts].\"\n\n**What else?** The honest answer to \"what else was added?\" is a short list. The Berean Standard Bible text on this site flags the two long passages (the end of Mark and John 7:53 to 8:11) as absent from the earliest manuscripts, and leaves sixteen single verse numbers empty for the same reason, Acts 8:37 among them. Beyond these, the differences are words and phrases, the kind discussed on the other pages in this area. No unknown Gospel episode, no lost letter of Paul and no rival creed is waiting in the manuscripts to be discovered."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is an argument from what the evidence shows to what it implies about the method that found it.",
+      "steps": [
+        "The passages that were added to the New Testament after it was first written can be identified because they are missing from early copies in some branches of the tradition and present in others.",
+        "Those additions were identified by scholars of every persuasion, and they are marked or footnoted in modern Bibles, including Bibles made by people who confess the doctrines some of the additions seemed to support.",
+        "A method that finds additions in the open, even when they are well loved or doctrinally welcome, is a method that would find others of the same kind.",
+        "The additions it has found are few, and none of them is the only ground for any teaching the creeds confess."
+      ],
+      "conclusion": "So: the fact that we know about the ending of Mark and the woman caught in adultery is evidence for the reliability of the method that found them, not against the text it has recovered.",
+      "after": "The third step carries the weight. A skeptic can test it by asking whether textual critics have ever spared a reading because it was convenient. The Comma is the best answer: the clearest Trinitarian verse in the King James Bible was removed by Trinitarian scholars because the evidence required it.",
+      "weightStep": 3
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply is this. Your method finds additions made after the branches of the tradition separated, because some branches escaped them. It can't find an addition made before that, while there was still only one line of copies, because every branch would have inherited it. So the shortness of your list proves only that late additions are rare. It says nothing about early ones.\n\nThat is correct as logic, and it should be granted without fuss. No method could detect a change made to every copy before the first surviving one. What can be said is how likely such a change is, and what it would have to look like. The passages we know were added are, in nearly every case, attested very early by some witness and missing from others. The longer ending of Mark was known by about 180, and still left traces of its absence two centuries later. The woman caught in adultery was known in some form to Papias in the early second century, and still failed to enter the oldest copies of John. Additions this early didn't spread everywhere. That doesn't prove nothing was added earlier still. It does show how hard it was for a change to cover every branch even in the second century, and it shifts the burden: a skeptic who proposes an undetectable early change needs evidence for it, beyond the fact that it would be undetectable. Questions about how a book was composed before it was published, which literary critics argue about, are a different kind of question from what the copyists did, and they are taken up elsewhere."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "Real questions remain. Did Mark end at 16:8 on purpose, with frightened women and a promise of meeting Jesus in Galilee (16:7), or was his ending lost? Scholars who share the same evidence answer differently. Are Luke 22:43-44 original? The arguments are close. How should a church read the woman caught in adultery, a story that is very likely true but not part of John as John wrote it? The evidence settles what was in the earliest copies. It doesn't settle what a church should do with an ancient passage it has read for centuries."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Faithful Christians and churches differ on these passages, and this page takes no side. Some treat a passage long received and read by the church as part of Scripture whatever its manuscript history. Some treat the woman caught in adultery as a true story about Jesus that may be taught with a clear note on its history but isn't Scripture in the full sense. Some defend the longer ending of Mark and the passage in John as original. And Christians differ, as the other pages in this area note, on which manuscripts deserve the most weight. On one point they can agree: no doctrine of the creeds depends on any of these passages alone. The resurrection appearances are told in Matthew, Luke, John and 1 Corinthians 15. Jesus' mercy to sinners runs through every Gospel. The Greek theologians who defended the Trinity in the fourth century did it with Bibles that had no Comma."
+    }
+  ],
+  "otherSide": [
+    "Bart D. Ehrman, *Misquoting Jesus* (2005).",
+    "Bart D. Ehrman, *The Orthodox Corruption of Scripture* (1993; 2nd ed., 2011)."
+  ],
+  "further": [
+    "Bruce M. Metzger, *A Textual Commentary on the Greek New Testament* (1971; 2nd ed., 1994). The reasoning of the committee behind the standard Greek text, passage by passage.",
+    "Bruce M. Metzger and Bart D. Ehrman, *The Text of the New Testament*, 4th ed. (2005).",
+    "Elijah Hixson and Peter J. Gurry, eds., *Myths and Mistakes in New Testament Textual Criticism* (2019)."
+  ],
+  "onSite": [
+    "The Study Bible's text and historical notes on Mark 16, John 7 and 8, Luke 22 and 1 John 5, which this page agrees with and which give the witnesses in full."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "mark",
+        "chapter": 16
+      },
+      {
+        "book": "john",
+        "chapter": 7
+      },
+      {
+        "book": "john",
+        "chapter": 8
+      },
+      {
+        "book": "luke",
+        "chapter": 22
+      },
+      {
+        "book": "acts",
+        "chapter": 8
+      },
+      {
+        "book": "1-john",
+        "chapter": 5
+      }
+    ],
+    "answers": [
+      "why-would-anyone-trust-the-bible"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The long ending of Mark",
+      "proponent": "Bart D. Ehrman",
+      "work": "Misquoting Jesus",
+      "year": 2005
+    },
+    {
+      "claim": "The woman caught in adultery",
+      "proponent": "Bart D. Ehrman",
+      "work": "Misquoting Jesus",
+      "year": 2005
+    },
+    {
+      "claim": "The Johannine Comma",
+      "proponent": "Bart D. Ehrman",
+      "work": "Misquoting Jesus",
+      "year": 2005
+    },
+    {
+      "claim": "Luke 22:43-44 added against docetism",
+      "proponent": "Bart D. Ehrman and Mark Plunkett",
+      "work": "Catholic Biblical Quarterly",
+      "year": 1983
+    }
+  ]
+}

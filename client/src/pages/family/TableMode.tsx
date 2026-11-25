@@ -14,8 +14,10 @@ import ScriptureNote from "@/components/ScriptureNote";
 import { SAVE_FAILED } from "@/components/TakeItWithYou";
 import { devotionHref, type CatechismLine } from "@/lib/familyTable";
 import { useWakeLock } from "@/lib/useWakeLock";
-import { PartBody, partsOf } from "./DevotionParts";
+import { PartBody, partsOf, type AskChoice } from "./DevotionParts";
 import type { Devotion } from "./useFamilyData";
+import type { FamilyFilm } from "@/lib/familyFilms";
+import WatchFirst from "./WatchFirst";
 
 export function TableFrame({ title, leaveHref, children }: { title: string; leaveHref: string; children: ReactNode }) {
   return (
@@ -39,6 +41,9 @@ export function TableFrame({ title, leaveHref, children }: { title: string; leav
 export default function TableMode({
   devotion,
   catechism,
+  own,
+  ask,
+  film,
   step,
   onStepChange,
   onFinish,
@@ -46,6 +51,12 @@ export default function TableMode({
 }: {
   devotion: Devotion;
   catechism: CatechismLine | null;
+  /** The question is the family's own place in the catechism, not the calendar's. */
+  own?: boolean;
+  /** Whose questions to ask, where the devotion has age bands (U21). */
+  ask?: AskChoice;
+  /** The Bible Explorer film this devotion offers, shown on the first screen before the passage. */
+  film?: FamilyFilm | null;
   /** Zero-based. */
   step: number;
   onStepChange: (index: number) => void;
@@ -67,7 +78,8 @@ export default function TableMode({
     title: part.title,
     content: (
       <>
-        <PartBody part={part} devotion={devotion} catechism={catechism} />
+        {part.id === "read" && film && <WatchFirst key={film.slug} film={film} backLabel="Back to the passage" />}
+        <PartBody part={part} devotion={devotion} catechism={catechism} ask={ask} own={own} />
         {part.id === "read" && <ScriptureNote rendering={devotion.rendering === "bsb" ? "bsb" : "paraphrase"} />}
       </>
     ),
@@ -86,6 +98,9 @@ export default function TableMode({
           <div className="tb-table__actions">
             <Link href="/family" className="st-action">
               Back to Family
+            </Link>
+            <Link href="/family/tonight" className="st-action st-action--quiet">
+              The rest of this week
             </Link>
           </div>
         </div>

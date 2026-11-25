@@ -16,14 +16,14 @@
     { "v": "39-40", "t": "Something better: made perfect together" }
   ],
   "doctrines": [
-    { "id": "faith", "note": "Faith in Hebrews is trust in God's promises when their fulfillment is still unseen. It is not a leap in the dark but confidence in the character of the God who promised: anyone who approaches him \"must believe that He exists and that He rewards those who earnestly seek Him\" (verse 6)." },
+    { "id": "faith", "note": "Faith in Hebrews is trust in God's promises when their fulfillment is still unseen. It is confidence in the character of the God who promised: anyone who approaches him \"must believe that He exists and that He rewards those who earnestly seek Him\" (verse 6)." },
     { "id": "hope", "note": "The heroes of faith looked forward: to a city with foundations, to a better country, to a better resurrection. Faith and hope are bound together, and both point beyond this life." },
     { "id": "suffering", "note": "The list does not end with victories but with the tortured, imprisoned, and destitute, of whom \"The world was not worthy\". Faith can mean deliverance, but it can also mean enduring loss without deliverance in this life." },
-    { "id": "creation", "note": "Faith begins with understanding that the universe was formed at God's command (verse 3). The visible world rests on the word of an invisible God." }
+    { "id": "creation", "note": "Faith begins with understanding that the universe was formed at God's command (verse 3)." }
   ],
   "words": [
     { "s": "G5287", "note": "Hupostasis, translated assurance in verse 1. It literally means what stands under, a foundation or underlying reality, and in 1:3 it described God's very being. Interpreters debate whether here it means the subjective confidence of the believer or the objective reality that faith grasps. Many see both: faith gives substance now to the things hoped for." },
-    { "s": "G1650", "note": "Elegchos, proof, evidence, or conviction, a word used of the argument that establishes a case. Faith is the certainty (the BSB's rendering) of what is not seen. It is not wishful thinking but a settled conviction grounded in God's word." },
+    { "s": "G1650", "note": "Elegchos, proof, evidence, or conviction, a word used of the argument that establishes a case. Faith is the certainty (the BSB's rendering) of what is not seen. It is a settled conviction grounded in God's word." },
     { "s": "G3927", "note": "Parepidemos, a temporary resident, sojourner, or exile. The patriarchs acknowledged they were strangers and exiles on the earth (verse 13), and 1 Peter uses the same word for Christians scattered through Asia Minor. It describes a people whose true home lies ahead." },
     { "s": "G4102G", "note": "Pistis, faith, trust, or faithfulness, used twenty-four times in this chapter. In Greek the word can mean both believing and being trustworthy, and in Hebrews faith is always active: it obeys, goes out, offers, refuses, endures." }
   ],
@@ -36,5 +36,6 @@
     "Faith is described as certainty about what we do not see. What unseen realities shape the way you live, and how firmly do you hold them?",
     "Many in this chapter died without receiving what was promised. How do you keep trusting God when the fulfillment of his promises seems far away?",
     "The list includes flawed and even disreputable people. What does that say about who God can use and about how he sees you?"
-  ]
+  ],
+  "plain": true
 }

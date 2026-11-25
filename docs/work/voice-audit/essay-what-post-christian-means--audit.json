@@ -1,0 +1,81 @@
+{
+  "piece": "what-post-christian-means",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean and close to the mature register: a patient, accumulating argument in developed paragraphs, fair before it is sharp, with Scripture carrying the diagnosis and an ending that leaves weight. Zero em-dashes, zero exclamation points, zero Forbidden Language hits on a literal search. What remains is small: one paragraph that runs the not-X/it-is-Y turn twice back to back, one piece of connective filler, one phrase of church-and-office jargon, and a few places where speech would contract or drop an intensifier. The gap between 8 and 10 on voice is not a wording problem; the essay has no moment only James could have written, and that can only come from him.",
+  "findings": [
+    {
+      "quote": "He meant that in a culture which no longer takes the Christian story for granted, people will not learn how to read the gospel mainly from arguments or campaigns. They will learn it from a community whose common life makes no sense unless the gospel is true.",
+      "tell": "Repeated antithesis (not X. Y.) twice in one paragraph",
+      "why": "The same paragraph opens with \"His answer was not a strategy for winning the culture back. It was a congregation.\" That one is the hinge of the section and should stay. Running the same two-sentence negative-then-positive shape again four sentences later makes the turn sound like a habit, which is the pattern VOICE-JAMES-BELL.md puts on the avoid list once its work is done.",
+      "replacement": "He meant that in a culture which no longer takes the Christian story for granted, people will learn how to read the gospel less from arguments or campaigns than from a community whose common life makes no sense unless the gospel is true.",
+      "severity": "should"
+    },
+    {
+      "quote": "The exile, in other words, was God's discipline rather than an accident of history or a sign that He had lost control of it, and in a way the exiles could not yet see, it was also His placement.",
+      "tell": "Connective filler (\"in other words\")",
+      "why": "\"In other words\" is on the list of predictable transitions and it marks the sentence as a restatement when it is in fact the new claim of the paragraph. Without it the sentence reads as a man drawing the inference himself.",
+      "replacement": "The exile was God's discipline rather than an accident of history or a sign that He had lost control of it, and in a way the exiles could not yet see, it was also His placement.",
+      "severity": "should"
+    },
+    {
+      "quote": "What it does mean is that Christian parents can no longer outsource formation to the surrounding culture, because the surrounding culture is forming our children into something else.",
+      "tell": "Jargon where a plain word belongs; essay voice instead of a father talking",
+      "why": "\"Outsource formation\" pairs an office word with a seminary word in the one paragraph where a father of five is speaking about his own children. The brief asks for the words a thoughtful neighbor uses, and this is the sentence a parent reading for help will slow down on.",
+      "replacement": "What it does mean is that Christian parents can no longer count on the surrounding culture to teach their children the faith, because that culture is teaching our children something else.",
+      "severity": "should"
+    },
+    {
+      "quote": "Jeremiah's answer is surprisingly ordinary, and that is the point of it.",
+      "tell": "Announced significance",
+      "why": "The tag tells the reader the ordinariness matters before the next three paragraphs show it. The paragraphs that follow make the point on their own, so the tag reads as the essay explaining its own method.",
+      "replacement": "Jeremiah's answer is surprisingly ordinary.",
+      "severity": "consider"
+    },
+    {
+      "quote": "## Where America Actually Stands",
+      "tell": "Repeated intensifier in a heading",
+      "why": "The title already uses \"Actually\" and the last section has \"the town where you actually live.\" In the heading the word adds nothing a plain descriptive heading needs, and the echo of the title is the kind of repetition a reader notices.",
+      "replacement": "## Where America Stands",
+      "severity": "consider"
+    },
+    {
+      "quote": "Much of it was simply the end of a subsidy we had not noticed we were living on.",
+      "tell": "Filler intensifier; no contraction where speech has one",
+      "why": "\"Simply\" appears three times in the essay and this is the verdict line of its paragraph, where it softens the landing. \"Had not noticed\" is the written form of what he would say aloud. The subsidy image itself is good and stays.",
+      "replacement": "Much of it was the end of a subsidy we hadn't noticed we were living on.",
+      "severity": "consider"
+    },
+    {
+      "quote": "I am not saying American Christians are in exile the way Judah was.",
+      "tell": "No contraction where speech would have one",
+      "why": "This is one of two places James speaks in the first person, and it is a conversational caution of the \"I have to be careful here\" kind. The full form makes it sound drafted. The short sentences after it (\"We have not been deported. No one has burned our temple.\") can keep their full forms for weight.",
+      "replacement": "I'm not saying American Christians are in exile the way Judah was.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The pastor preaches knowing that some of the people in the room are halfway out the door, and that the culture will not be sending anyone to replace them.",
+      "tell": "Generic type figure (\"The pastor\") beside a concrete one (\"A high school student\")",
+      "why": "The sentence before it gives a particular student with friends; this one switches to a definite-article type, which reads like an essay's stock figure. The indefinite article keeps the two examples parallel and adds nothing.",
+      "replacement": "A pastor preaches knowing that some of the people in the room are halfway out the door, and that the culture will not be sending anyone to replace them.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The thesis is earned and stated once: \"it is post-Christendom\" followed by the single line \"The faith itself is not.\" One verdict, at the true hinge, after three sections of evidence.",
+    "Plain, human observations that no template produces: \"And they seem to get along fine.\" \"We print that verse on graduation cards.\" \"they would have spent the rest of their lives living out of their bags.\" \"the religion of being a decent American, dressed for church.\"",
+    "The concessions are real and go to both sides. The grieving Christian gets the Lord's Prayer, the shared moral vocabulary and the hospitals; the skeptic gets Torcaso v. Watkins; the restoration temptation and the assimilation temptation each get a sentence on what their people rightly want.",
+    "The first-person caution \"I hold that loosely. It is an interpretation, not a finding.\" sounds like a man checking himself, and the exile paragraph (\"The analogy has limits\") refuses the persecution claim his own side likes to make.",
+    "Scholars are witnesses, not a parade: Taylor's three senses organize the middle of the essay, Herberg supplies the diagnosis of the 1950s, Newbigin supplies the congregation as hermeneutic, and each idea is named so the reader learns it.",
+    "Jeremiah 29 is read in context (Hananiah, the seventy years, who did the sending) and does the diagnostic work; the ending lands on God keeping His word to people who did not live to see it, with no recap.",
+    "Mechanics are clean: no em-dash, no exclamation point, no Forbidden Language word or phrase, no hedge stack, headings plain and descriptive, sentence and paragraph lengths varied."
+  ],
+  "for_james": [
+    "The one thing no editor can add: this essay has no sentence that only you could have written. Two places would take a real line from you, and only you can supply it. (1) \"A post-Christian society has heard of Jesus, decided it knows what the church is about, and moved on\" and Newbigin's point about neighbors reading the congregation: you were once the outsider doing that reading. One plain sentence of what you actually concluded about Christians before you believed would do more than any polish. (2) \"Those of us raising children in this country\": one concrete thing from your own house about a son holding the faith beside friends who don't. Nothing has been invented here; if you'd rather keep the essay impersonal, it stands as is.",
+    "\"The pastor preaches knowing that some of the people in the room are halfway out the door\": if this is your own experience, \"I preach knowing...\" is truer and more yours. Your call; I proposed only \"A pastor.\"",
+    "The paragraph beginning \"Build houses and live in them\" is the most generic in the piece (\"its schools and neighborhoods and local institutions\" could run on any church's page). A single real example of what staying has looked like where you live would fix it; I did not make one up.",
+    "Your saved Substack profile and VOICE-JAMES-BELL.md disagree on shape, and the essay follows VOICE-JAMES-BELL.md, which governs: the profile asks for 2 to 4 sentence paragraphs, a 1,500 to 2,500 word ceiling, a screenshot line, and a \"Monday Morning\" close of three questions and one practice; the mature register asks for developed paragraphs, as long as the argument requires, one earned verdict, and no clean application turn. I did not rewrite toward the profile. The profile's \"real person in a real situation\" layer is the one part the essay lacks, and it is the note above.",
+    "Still your call from the ledger, unchanged by this read: whether to keep the exact day of Lewis's lecture (\"on November 29, 1954\") and \"published in 2007\" for Taylor. Both are verified. To my ear the exact day reads as a checked fact rather than something you'd say across a table, and \"in 1954\" would sound more like you.",
+    "\"Those practices are what make the church a hermeneutic of the gospel rather than one more organization with opinions\" is the fourth negative contrast in the last section. I left it because the line sounds like you; if you want one fewer, end the sentence at \"a hermeneutic of the gospel.\""
+  ]
+}

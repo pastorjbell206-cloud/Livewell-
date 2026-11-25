@@ -1,0 +1,26 @@
+/* The gift sheet (components/DownloadGiftSheet.tsx). Tokens only. The amount
+ * buttons and the "another amount" row are the giving page's own
+ * (pages/support/support.css), so the two asks look like one. */
+.dg-overlay{position:fixed;inset:0;z-index:1000;background:color-mix(in srgb,var(--charcoal) 62%,transparent)}
+.dg-sheet{position:fixed;z-index:1001;left:50%;bottom:0;transform:translateX(-50%);width:min(100%,520px);max-height:92dvh;overflow-y:auto;padding:24px 20px 20px;background:var(--card);border-top:2px solid var(--mustard);border-radius:var(--radius-sm) var(--radius-sm) 0 0;box-shadow:0 -12px 40px color-mix(in srgb,var(--charcoal) 30%,transparent)}
+@media (min-width:640px){.dg-sheet{bottom:auto;top:50%;transform:translate(-50%,-50%);padding:32px;border-radius:var(--radius-sm)}}
+.dg-sheet:focus{outline:none}
+.dg-head{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;margin:0 36px var(--s-2) 0}
+.dg-cover{width:72px;height:auto;border-radius:2px;box-shadow:0 6px 16px color-mix(in srgb,var(--charcoal) 28%,transparent)}
+.dg-eyebrow{margin:0 0 6px;color:var(--mustard-text)}
+.dg-title{margin:0 0 6px;font-family:var(--F);font-size:24px;font-weight:500;line-height:1.15;letter-spacing:-.01em;color:var(--ink)}
+.dg-suggest{margin:0;font-family:var(--U);font-size:16px;line-height:1.4;color:var(--ink)}
+.dg-suggest strong{font-weight:600}
+.dg-line{margin:0 0 var(--s-2);font-family:var(--U);font-size:16px;line-height:1.55;color:var(--ink)}
+.dg-dollar{padding:0 4px 0 14px;font-family:var(--U);font-size:17px;color:var(--ink-muted)}
+.dg-input{flex:1;min-width:0;min-height:48px;padding:0 12px 0 2px;border:0;background:transparent;font-family:var(--U);font-size:17px;color:var(--ink)}
+.dg-input:focus{outline:none}
+.sp-other__row:focus-within{outline:2px solid var(--ink);outline-offset:3px}
+.dg-error{margin:0 0 var(--s-2);font-family:var(--U);font-size:15px;font-weight:500;line-height:1.45;color:var(--ink)}
+.dg-actions{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:var(--s-2) 0}
+.dg-give{width:100%;justify-content:center}
+.dg-give[disabled]{opacity:.7;cursor:progress}
+.dg-skip{display:inline-flex;align-items:center;min-height:44px;font-family:var(--U);font-size:16px;font-weight:500;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1.5px;text-underline-offset:.2em}
+.dg-small{margin:0;font-family:var(--U);font-size:13px;line-height:1.55;color:var(--ink-muted)}
+.dg-close{position:absolute;top:10px;right:10px;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:0;border-radius:var(--radius-sm);background:transparent;color:var(--ink);cursor:pointer}
+.dg-close:focus-visible{outline:2px solid var(--ink);outline-offset:2px}

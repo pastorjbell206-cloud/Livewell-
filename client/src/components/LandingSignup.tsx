@@ -3,11 +3,13 @@
  * landing pages. Replaces ten identical hand-rolled forms that set a
  * `submitted` flag without calling any API (the reader's email was silently
  * discarded). This one records the subscriber for real via
- * trpc.subscribers.subscribe and says only what actually happens.
+ * trpc.subscribers.subscribe and says only what actually happens: the email is
+ * saved here, and the subscription itself finishes on Substack.
  */
 import { useState } from "react";
 import { trpc } from "@/lib/trpc";
 import { trackNewsletterSignup } from "@/lib/telemetry";
+import { ConfirmOnSubstack } from "@/components/ConfirmOnSubstack";
 
 export function LandingSignup({ source }: { source: string }) {
   const [email, setEmail] = useState("");
@@ -35,9 +37,7 @@ export function LandingSignup({ source }: { source: string }) {
 
   if (subscribe.isSuccess) {
     return (
-      <p role="status" style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--mustard)" }}>
-        You're on the list. One essay a week, written slow.
-      </p>
+      <ConfirmOnSubstack email={subscribe.variables?.email ?? email} source={source} onDark style={{ maxWidth: "440px", margin: "0 auto" }} />
     );
   }
 

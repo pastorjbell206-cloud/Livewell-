@@ -1,0 +1,81 @@
+{
+  "id": "despair-and-hope",
+  "updated": "2026-11-20",
+  "passages": [
+    {
+      "ref": "Ezekiel 37:11",
+      "context": "Ezekiel 37:1-14",
+      "where": "Ezekiel sees a valley of very dry bones, and God explains them: they are his people in exile, repeating a saying of despair, that their bones are dried up, their hope has perished, they are cut off. God does not argue with the saying. He answers it by promising to open their graves and put his Spirit in them."
+    },
+    {
+      "ref": "Luke 24:21",
+      "context": "Luke 24:13-27",
+      "where": "Two disciples walk away from Jerusalem on the first Easter afternoon, telling a stranger that they had hoped Jesus was the one. Their hope is in the past tense. The stranger walking beside them is the risen Jesus, and they do not yet know it."
+    },
+    {
+      "ref": "Lamentations 3:31-33",
+      "context": "Lamentations 3:31-33",
+      "where": "Lamentations was written over the ruins of Jerusalem. In the middle of its grief the writer holds on to three things about God: he does not cast off forever, his compassion follows the grief, and he does not afflict from his heart. Hope is built from what God is like, not from what the day looks like."
+    },
+    {
+      "ref": "Isaiah 40:31",
+      "context": "Isaiah 40:27-31",
+      "where": "Israel in exile complains that its way is hidden from the LORD. Isaiah answers that the Creator never grows tired, and that even the strongest young people stumble. Those who wait for the LORD exchange their strength for his. The promise ends not with flying but with walking and not fainting."
+    },
+    {
+      "ref": "Romans 4:18",
+      "context": "Romans 4:18-21",
+      "where": "Paul describes Abraham, old and childless, facing a promise that his body and Sarah's could not fulfill. Against all hope, in hope he believed. Paul does not say Abraham ignored the facts; he says Abraham faced them and trusted the God who gives life to the dead."
+    },
+    {
+      "ref": "Job 19:25",
+      "context": "Job 19:23-27",
+      "where": "In the middle of his worst chapter, abandoned by family, friends and servants, Job wishes his words could be carved in rock forever. Then he says the thing he is most sure of: his Redeemer lives, and in the end he will see God with his own eyes. Hope here is not a mood but a claim held against everything around him."
+    },
+    {
+      "ref": "Romans 5:3-5",
+      "context": "Romans 5:1-5",
+      "where": "Paul writes to believers who already have peace with God. He traces a slow chain from suffering through endurance and character to hope, and says this hope does not disappoint. The reason is not our strength but the love God has already poured into our hearts by his Spirit."
+    },
+    {
+      "ref": "Romans 8:24-25",
+      "context": "Romans 8:22-25",
+      "where": "Paul has just described the whole creation groaning like a woman in labor, and believers groaning with it. Hope, he says, is for what is not yet seen. If it were already visible it would not be hope. So believers wait, patiently, while the groaning goes on."
+    },
+    {
+      "ref": "Hebrews 6:19-20",
+      "context": "Hebrews 6:17-20",
+      "where": "Hebrews pictures hope as an anchor, firm and secure, but fixed in an unexpected place: behind the curtain in the inner sanctuary, where Jesus has already gone ahead. An anchor holds a ship that is still being tossed. The hope is secure because of where it is fastened, not because the water is calm."
+    },
+    {
+      "ref": "1 Peter 1:3-5",
+      "context": "1 Peter 1:3-6",
+      "where": "Peter writes to scattered Christians facing trials, and opens by praising God for a living hope through the resurrection of Jesus. It is called living because it rests on someone who was dead and is alive. The letter does not deny their grief; it says they rejoice even while they are distressed by various trials."
+    }
+  ],
+  "whole": [
+    "If you have lost hope and are thinking of ending your life, please tell someone today, and if you are in danger, call your local emergency number. The Find Help page on this site lists places to turn. Hopelessness can make it feel as if nothing would help. That feeling is part of the hopelessness, not a fact about your future.",
+    "Hope can drain away slowly or all at once: a diagnosis, a marriage that ended, a prayer unanswered for years, a long struggle that never seems to change. People describe it as waking up and seeing no reason the day should be different from the last one. For Christians, losing hope often brings shame as well, because they believe they are supposed to be people of hope, and they no longer feel it.",
+    "The Bible is not surprised by this. God's own people in exile said our hope has perished, and he quoted them, not to rebuke them but to answer them. Two disciples on the road to Emmaus spoke of hope in the past tense while the risen Jesus walked beside them. Abraham believed against all hope. The biblical word for hope is not optimism. It is not the feeling that things will get better. It is confidence in a person, the God who raises the dead, held while the facts still look the same.",
+    "That is why hope can be held even when it cannot be felt. It is borrowed at first, from people who still have it, from the psalms, from the testimony of others who have walked this road. It is fastened to something outside you, like an anchor behind the curtain. It grows slowly, Paul says, through endurance, not in an instant. So do the next small thing: tell someone, eat, sleep, see a doctor if the darkness is lasting, let someone pray for you when you cannot. You are not asked to manufacture hope. You are invited to hold on to the one who has not let go of you."
+  ],
+  "sit": "Who in your life still has hope for you, and could you let them hold it for a while?",
+  "prayer": {
+    "ref": "Psalm 71:20-21",
+    "lead": "A prayer of an old believer who has seen many troubles and still expects to be brought back up. Pray it in the future tense, even if the present one is dark."
+  },
+  "next": [
+    { "kind": "Find Help", "label": "Find Help", "href": "/help" },
+    { "kind": "Find Help", "label": "Why would God let this happen?", "href": "/help/suffering" },
+    { "kind": "Reading", "label": "The Heavy Mind", "href": "/life/the-heavy-mind" },
+    { "kind": "Wisdom", "label": "When You Are Suffering", "href": "/wisdom/suffering" }
+  ],
+  "careLines": [
+    { "from": "psalms/plain/40", "text": "If you feel stuck and sinking, please tell someone you trust." },
+    { "from": "2-corinthians/plain/1", "text": "Despair is worth taking to a doctor, and doing so is not a lack of faith." },
+    { "from": "2-corinthians/plain/1", "text": "If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country." },
+    { "from": "2-corinthians/plain/1", "text": "If you are in danger right now, call your local emergency number." },
+    { "from": "2-corinthians/plain/1", "text": "The Find Help page on this site lists places to turn." }
+  ],
+  "notAdvice": "medicine"
+}

@@ -1,0 +1,98 @@
+{
+  "area": "authors",
+  "slug": "did-constantine-decide-the-bible",
+  "status": "live",
+  "question": "Didn't the emperor Constantine, or the Council of Nicaea in 325, decide which books went into the Bible?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Twenty-second run (2026-11-20): an independent editor's read of the five newest jesus pieces, and five more pieces in the area \"Who wrote the Gospels, when, and who chose the books\"",
+    "key": "bk"
+  },
+  "record": "docs/work/elite/apol-pilot/authors/did-constantine-decide-the-bible.md",
+  "objectionSource": {
+    "author": "Dan Brown",
+    "title": "The Da Vinci Code",
+    "year": 2003
+  },
+  "shortAnswer": "No. The Council of Nicaea in 325 dealt with Arius's teaching about the Son, with the date of Easter, with a schism in Egypt and with twenty rules of church order, and none of what survives from it mentions the books of Scripture. Constantine ordered copies of the Scriptures for his new city, and his letter names no books. The lists came from elsewhere and over a long time: a Roman list most scholars date to the late second century, the disputed books Constantine's own historian still recorded in the 320s, Athanasius's Easter letter of 367, and regional councils in North Africa in the 390s. The story that the emperor made the Bible is a novelist's fiction. But one thing in it is true and should be said: no single act closed the canon for every church. Its edges were argued for centuries, and Protestant, Catholic and Orthodox Bibles still differ in the Old Testament.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "Many people first meet the question in a novel. In Dan Brown's *The Da Vinci Code* (2003), as this site's essay on how the books were chosen summarizes it, a scholar tells the heroine that the emperor Constantine had a new Bible made and left out the gospels that showed Jesus as a mortal man, and retellings in podcasts and videos often place the deed at the Council of Nicaea. Stated that way the claim is easy to answer. But there is a serious argument underneath it, and it deserves its strongest form.\n\nIt runs like this. Before Constantine, Christians were a persecuted minority with no means of enforcing a common list. Constantine changed that. He called the bishops to Nicaea in 325, put the empire's public transport at their disposal, opened the council as its honorary president, and exiled the bishops who refused the creed it wrote. He ordered fifty copies of the Scriptures for the churches of his capital. The first list that matches our New Testament exactly comes from 367, forty years into the imperial church, from a bishop of Alexandria whose party had prevailed at Nicaea. The councils that adopted such lists, at Hippo in 393 and Carthage in 397, met in an empire whose rulers had made this form of Christianity their own. And the books left out were left out by the side that won. Bart Ehrman, in *Lost Christianities* (2003), argued, as this library's page on the four Gospels and the rest sets out his case, that the party he calls proto-orthodox compiled the canonical books and then told the story of its victory as if it had always been the faith of the majority. On this view it hardly matters whether Constantine named the books himself. The Bible is the library of the church that had the emperor's favor."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "Several things, and they should be said plainly. Constantine did call the council and attend it, and the emperors after him took a hand in the church's quarrels. The church that drew up the lists was the church of the empire. Exact lists are late: the first that names our twenty-seven books, and only those, is Athanasius's of 367. Books that some churches read with honor were left out: the Shepherd of Hermas, the Letter of Barnabas, the Apocalypse of Peter. Christians who say the New Testament was settled from the start, with nothing argued at its edges, are telling the story too neatly, as this library's page on the four Gospels and the rest already says.\n\nAnd the edges still differ. The twenty-seven books of the New Testament are shared by Catholic, Orthodox and Protestant Bibles, as the site's guide to the New Testament canon says. The Old Testament is not. Catholic Bibles include seven books, among them Tobit, Judith, Wisdom and the Maccabees, which Catholics call deuterocanonical; they point out that the African councils of 393 and 397 listed them, and the Council of Trent defined them as canonical in 1546. Orthodox Bibles carry these and more, books the Orthodox call \"things that are read.\" Protestant Bibles follow the shorter Hebrew canon and call these books the Apocrypha. The site's guide to the Apocrypha sets out each tradition's case in its own voice. Even Athanasius's list of 367 matches none of today's Old Testaments: it counts Baruch and the letter of Jeremiah with Jeremiah, and sets Esther, with Wisdom, Sirach, Judith and Tobit, among books \"not indeed included in the Canon, but appointed by the Fathers to be read by those who newly join us.\" That difference is real, and no honest answer can hide it."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "Begin with what Nicaea did. Of its acts, the *Catholic Encyclopedia*'s article on the council says, three pieces have reached us: the creed, the canons and the synodal decree. The creed answered Arius. The council also dealt, the article records, with the date of Easter and with the schism of Meletius in Egypt. The twenty canons regulate church order: who may be ordained, how the lapsed and excommunicated are to be received, that clergy may not lend at interest, that on the Lord's Day and in the days of Pentecost prayer is to be made standing. The first canon, in the translation of the *Nicene and Post-Nicene Fathers*, concerns clergy who had castrated themselves. Not one canon lists the books of Scripture or rules on them; the only one that quotes Scripture, the seventeenth, cites \"the divine Scripture\" against clergy who lend at interest. If the council had voted on the Bible, the vote has left no trace in anything it wrote.\n\nThen ask what Constantine did. His letter to Eusebius, bishop of Caesarea, preserved in Eusebius's *Life of Constantine* (4.36), orders \"fifty copies of the sacred Scriptures,\" and describes them as books \"the provision and use of which you know to be most needful for the instruction of the Church\" (in the *Nicene and Post-Nicene Fathers* translation). The emperor specified parchment, legible writing, a portable form and professional copyists. He named no books.\n\nNow read that bishop. Eusebius, who attended Nicaea and later wrote the emperor's life, set out in his *Church History* a catalogue of the books of the New Testament. Among the accepted writings he put \"the holy quaternion of the Gospels,\" Acts, the letters of Paul, 1 John and 1 Peter. Among the disputed books, \"which are nevertheless recognized by many,\" he put James, Jude, 2 Peter and 2 and 3 John. Among the rejected he put the Acts of Paul, the Shepherd, the Apocalypse of Peter, Barnabas and the Teaching of the Apostles. And Revelation he placed twice, with the accepted books \"if it really seem proper\" and with the rejected, since \"some ... reject\" it (3.25, in McGiffert's translation). Of the rejected books he adds that \"all these may be reckoned among the disputed books,\" and he sets apart a fourth group, the gospels and acts that heretics circulated under apostles' names, the Gospels of Peter and of Thomas among them, which are \"not to be placed even among the rejected writings.\" The last book of that history, as the *Catholic Encyclopedia* reckons, was finished between 323 and 326. Here is the emperor's own bishop, at the very time of Nicaea, reporting that the edges of the New Testament were still open. If Constantine or his council had closed them, Eusebius, who admired the emperor and wrote his life, had every reason to say so, and he doesn't.\n\nLook back before Constantine, too. The Muratorian fragment, an incomplete Latin list published by Ludovico Antonio Muratori in 1740 from an early medieval copy, already accepts the four Gospels (its first lines are lost, but it calls Luke \"the third book of the Gospel\"), Acts and thirteen letters of Paul; it says the Shepherd \"ought to be read; but it cannot be made public in the Church to the people\"; and it rejects letters \"forged under the name of Paul\" (in the *Ante-Nicene Fathers* translation). Its edges are not ours: it receives the Wisdom of Solomon and the Apocalypse of Peter, and it doesn't mention Hebrews, James or the letters of Peter. Most scholars date it to the late second century near Rome, though Albert Sundberg and Geoffrey Hahneman argued for the fourth century, as the Study Bible's guide to the canon records. So the core of the New Testament was already read as Scripture in Rome before any emperor was a Christian, and Eusebius found the same core accepted everywhere.\n\nThen the lists that did come. Athanasius's Easter letter of 367 names the twenty-seven books and says, \"These are fountains of salvation ... Let no man add to these, neither let him take ought from these\" (in the *Nicene and Post-Nicene Fathers* translation). Athanasius was no emperor's man; this site's essay on how the books were chosen records that he was driven out of his city five times, and the *Catholic Encyclopedia*'s article on him tells how emperors, Constantine first, sent him into exile. In North Africa, as the *Catholic Encyclopedia*'s article on the canon records, councils at Hippo in 393 and at Carthage in 397 and 419 drew up catalogues, regional gatherings of bishops, not imperial decrees. Even then the church did not speak with one voice. The same article records that the early East Syrian church had a New Testament without the Catholic Epistles or Revelation, and that in John Chrysostom's expositions at the end of the fourth century there is no clear trace of Revelation."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is a historical argument about who decided, and when.",
+      "steps": [
+        "Nicaea's surviving acts concern Arius, Easter, a schism and church order, and none of them concerns the books of Scripture.",
+        "The core of the New Testament was already read across the churches before Constantine, and after Nicaea his own bishop still recorded disputed books and left Revelation's place open, while the emperor's order for copies of the Scriptures named no books.",
+        "The lists that followed came from bishops and regional councils over decades, differed at the edges, and were not received everywhere at once."
+      ],
+      "conclusion": "So: neither Constantine nor the Council of Nicaea decided what went into the Bible; the New Testament's core was received before them, and its edges were settled slowly by the churches, which is why they were long unsettled and why the Old Testament still differs among Christian Bibles.",
+      "after": "The weight sits on the second step. If the edges had been closed by the emperor or his council, Eusebius's catalogue, written at that very time, would show a settled list, and it does not.",
+      "weightStep": 2
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply grants all of that and moves the charge. Not Constantine, then, but the bishops; not Nicaea, but Hippo and Carthage, and in the West, finally, Trent. Either way, the reply says, the Bible is what church authorities decided it was, and they decided against books that taught what they rejected.\n\nThat is fair as far as it goes, and the page has granted that churches made judgments, in public, over centuries. But the reply changes the question. The popular claim is that one man or one meeting made the Bible, and that is false. The serious claim is that the churches judged which books were Scripture, and that is true; the question is how they judged. The evidence is that they judged mostly by what they had already been reading for generations. The books every list includes, the four Gospels, Acts and Paul's letters, are the books Eusebius found accepted everywhere before any council met. The books that were argued over were argued over in the open, with reasons that survive: doubts about who wrote Hebrews and 2 Peter, about whether a book had been read from the beginning, about whether its teaching agreed with what the apostles taught. That last test, as this library's page on the other gospels concedes, is theological, and critics like Ehrman are right to say so. But a church that tests new books against the teaching it received from the apostles is not inventing its Scriptures. It is guarding them."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "The date of the Muratorian fragment is still debated. Why Revelation was long doubted in the East, and why the East Syrian church read a shorter New Testament, are explained in more than one way. And the deepest question is theological rather than historical: since no book of Scripture lists the others, how does a believer know with certainty which books God gave? The history can tell us what the churches did; it cannot by itself settle what they were doing."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ on the Old Testament's edges, as Catholic, Orthodox and Protestant Bibles show, and on the theology of the canon: some hold, as the site's guide to the New Testament canon sets out the view Michael Kruger argues in *Canon Revisited* (2012), that the books carry the marks of their divine Author and the church recognized them; Catholic teaching, as the same guide states it in its own voice, also holds that the books' authority comes from God who inspired them, not from the church's approval, but that the certain knowledge of which books they are is given through the church, and Orthodox Christians hold a view like it with their own accents. This page takes no side. What all who confess the historic faith hold is that the Scriptures are the authoritative witness God has given his church, and that the New Testament's twenty-seven books, the same in all three traditions, are among them."
+    }
+  ],
+  "otherSide": [
+    "Dan Brown, *The Da Vinci Code* (2003). A novel; its account of Constantine is the popular form of the objection.",
+    "Bart D. Ehrman, *Lost Christianities* (2003). The case that the winning party compiled the canon and wrote the history."
+  ],
+  "further": [
+    "Bruce Metzger, *The Canon of the New Testament* (1987).",
+    "F. F. Bruce, *The Canon of Scripture* (1988).",
+    "Michael Kruger, *Canon Revisited* (2012)."
+  ],
+  "onSite": [
+    "The essay \"Who Decided What Books Are in the Bible?\" (/writing/who-decided-what-books-are-in-the-bible) and the essay on what Nicaea decided (/writing/the-council-of-nicaea-what-was-decided-in-325), which this page agrees with.",
+    "The guides \"How We Got the New Testament\" (/theology/doctrine/nt-canon) and \"Why the Apocrypha Is Disputed\" (/theology/doctrine/apocrypha), and the Study Bible's guide to the canon (/study/bible/guides/canon).",
+    "\"Four Gospels and the rest\" (/questions/authors/four-gospels-and-the-rest), on the other gospels and why the four were received.",
+    "The other questions in this area (/questions/authors)."
+  ],
+  "links": {
+    "studyNotes": [],
+    "answers": [
+      "why-would-anyone-trust-the-bible"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The emperor Constantine had a new Bible made and left out the gospels that showed Jesus as a mortal man",
+      "proponent": "Dan Brown",
+      "work": "The Da Vinci Code",
+      "year": 2003
+    },
+    {
+      "claim": "The party that won compiled the canonical books and told the story of its victory",
+      "proponent": "Bart D. Ehrman",
+      "work": "Lost Christianities",
+      "year": 2003
+    }
+  ]
+}

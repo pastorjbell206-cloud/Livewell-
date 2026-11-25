@@ -79,3 +79,32 @@ function subscribe(l: () => void): () => void {
 export function useInstallPrompt(): boolean {
   return useSyncExternalStore(subscribe, () => deferred !== null, () => false);
 }
+
+function subscribeStandalone(l: () => void): () => void {
+  if (typeof window === "undefined" || typeof window.matchMedia !== "function") return () => {};
+  const mq = window.matchMedia("(display-mode: standalone)");
+  mq.addEventListener?.("change", l);
+  return () => mq.removeEventListener?.("change", l);
+}
+
+/**
+ * True while LiveWell runs opened from its icon (no browser bar). The app
+ * bar (components/AppBar.tsx) and the header's Back button show only then.
+ */
+export function useStandalone(): boolean {
+  return useSyncExternalStore(subscribeStandalone, isInstalled, () => false);
+}
+
+export type Device = "iphone" | "android" | "mac" | "windows";
+
+/** The reader's device, best guess from the browser: it picks which steps /app shows first. */
+export function guessDevice(): Device {
+  if (typeof navigator === "undefined") return "iphone";
+  const ua = navigator.userAgent || "";
+  const touch = ((navigator as Navigator & { maxTouchPoints?: number }).maxTouchPoints ?? 0) > 1;
+  if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && touch)) return "iphone";
+  if (/Android/.test(ua)) return "android";
+  if (/Macintosh|Mac OS X/.test(ua)) return "mac";
+  if (/Windows|CrOS|Linux/.test(ua)) return "windows";
+  return "iphone";
+}

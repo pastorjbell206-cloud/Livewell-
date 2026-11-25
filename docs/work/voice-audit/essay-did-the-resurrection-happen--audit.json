@@ -1,0 +1,72 @@
+{
+  "piece": "did-the-resurrection-happen",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean. Literal searches found no forbidden word or phrase, no em-dash, no stock connective or hedge, and one exclamation point, inside Acts 12:15. It reads as a person arguing patiently with a skeptic; what is left is a few repeated moves a careful ear would catch, one overclaimed plural, and two biography lines that are James's call.",
+  "findings": [
+    {
+      "quote": "He's right to warn them. Still, the theory has trouble with the rest of the evidence.",
+      "tell": "Concession opener repeated mechanically",
+      "why": "The paragraph before opens \"He had a point, and modern research strengthens it.\" Two consecutive paragraphs opening on the same short he-is-right beat (with \"That's a reasonable line to draw,\" \"Some of that is simply true\" and \"That is candid of him\" elsewhere) turns a real habit of his into a visible template. The Allison sentence just before already grants the warning.",
+      "replacement": "Even so, the theory has trouble with the rest of the evidence.",
+      "severity": "should"
+    },
+    {
+      "quote": "That doesn't prove anyone saw anything. It does mean the claim was not a late growth. It was being repeated, in fixed form, while the people it named were still alive to be asked.",
+      "tell": "\"It is not X. It is Y.\" antithesis as section closer, restating the paragraph above",
+      "why": "The previous paragraph already said the list \"doesn't have that shape. It is early.\" This one-paragraph closer says it again as a three-beat denial and affirmation, and two other sections close on the same shape (\"didn't say the body was still in the tomb. They argued about how it got out.\"; \"Nobody called James the messiah. They said God had raised Jesus.\"). Those two earn it; this one is the echo.",
+      "replacement": "That doesn't prove anyone saw anything, but it does mean the claim was being repeated, in fixed form, while the people it named were still alive to be asked.",
+      "severity": "should"
+    },
+    {
+      "quote": "Other Jewish messianic movements show the same thing from the outside.",
+      "tell": "Vague framing sentence / overclaim",
+      "why": "The plural promises several movements and the paragraph gives one, Bar Kokhba. A skeptic reading closely will notice the frame is bigger than the evidence under it.",
+      "replacement": "Another Jewish messianic movement shows the same thing from the outside.",
+      "severity": "should"
+    },
+    {
+      "quote": "Ghost, angel, spirit, vision: the ancient world had a full vocabulary for seeing the dead, and resurrection was not part of it.",
+      "tell": "Colon-then-reveal with a fronted list",
+      "why": "A stacked list of nouns, then a colon, then the point is an essayist's flourish, and this section has two more colon reveals within three paragraphs. Said the way he would say it across a table, the list goes inside the sentence.",
+      "replacement": "The ancient world had plenty of words for seeing the dead, ghost and angel and spirit and vision among them, and resurrection was not one of them.",
+      "severity": "consider"
+    },
+    {
+      "quote": "What they actually said had no precedent: one man had been raised bodily, ahead of everyone else, while the world went on. Paul reached for a farmer's word:",
+      "tell": "Back-to-back colon reveals",
+      "why": "Two consecutive sentences use the same set-up-colon-payoff shape. One of them is his; two in a row is a pattern.",
+      "replacement": "What they actually said had no precedent. One man had been raised bodily, ahead of everyone else, while the world went on. Paul reached for a farmer's word:",
+      "severity": "consider"
+    },
+    {
+      "quote": "I came to faith as an adult, out of atheism, so I don't assume that a skeptic reading this is simply being stubborn.",
+      "tell": "Biography used as a warrant",
+      "why": "The \"so\" makes the conversion the reason he should be trusted on skeptics, which is the credential use the brief rules out. The fact is confirmed and belongs here; it only needs to stand beside the claim, not prove it.",
+      "replacement": "I came to faith as an adult, out of atheism, and I don't assume that a skeptic reading this is simply being stubborn.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Evangelical churches, and Baptist churches like the one I pastor, tend to defend the empty tomb fiercely",
+      "tell": "Statement of denomination",
+      "why": "The audit standard asks that any statement of his denomination be flagged. The brief confirms he pastors a Baptist church, and the ledger (correction 11) chose this wording on purpose, so this is a decision for James, not an error. The line is also the essay's one real act of self-implication and should stay in some form.",
+      "replacement": "Evangelical churches, and churches like the one I pastor, tend to defend the empty tomb fiercely",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "Concedes real ground to the skeptic and means it: Ehrman's line between conviction and truth, Rees's widowhood study, Allison's group visions, the weak evidence for most apostles' deaths, the doubts about Matthew's guard story, and \"I also don't think history can prove the resurrection.\"",
+    "Every scholar does work. Take out Ehrman, Evans, Allison, Wright, Rees, Hume, Strauss or Borg and the argument loses a step, so there is no parade.",
+    "Plain, dry asides that sound like a person: \"which historians answer more firmly than the internet does\"; \"agree more than their popular writers let on\"; \"which is a real distance.\"",
+    "One earned verdict in the Hume section (\"You can't settle it by assuming the answer and calling the result skepticism\") and no slogan closers elsewhere.",
+    "Criticism lands on mainline and evangelical churches with the same instrument, and on his own church by name of kind.",
+    "The grief passage keeps a path to help, and the ending leaves weight on Mary at the tomb without a recap or an appeal."
+  ],
+  "for_james": [
+    "Your saved Substack profile and VOICE-JAMES-BELL.md disagree on several points, and this essay follows the voice document: the profile asks for 2 to 4 sentence paragraphs, a Greek or Hebrew word, one screenshot line, three Monday-morning questions, 1,500 to 2,500 words, and no exclamation marks ever. The essay has developed paragraphs, no word study, no takeaway questions, about 4,000 words (a little over the brief's 3,800 ceiling), and one exclamation point inside Acts 12:15. I did not rewrite toward the profile.",
+    "\"Baptist churches like the one I pastor\" names your denomination in print. It is true and the brief allows it; decide whether you want it said. The finding gives a version without it.",
+    "The essay is almost entirely exposition, and the only personal line is the one sentence about atheism. If you remember what the resurrection question was for you before you believed (which objection held you longest, or what first made you weigh the claim), one or two sentences of that beside the Hume section would do more than any edit I can propose. I can't supply it.",
+    "\"That covers the care given to a dying parent, the forgiveness that cost you something, the faithfulness in a marriage nobody applauds, and the years of raising children who may never thank you.\" This is sound but could run on any church's page. One real case from your own life or your church, if there is one you can tell, would make it yours.",
+    "The ending, \"She thought the gardener had moved the body. Then he said her name.\", is the most literary moment in the piece and gives no reference (John 20:16). I think it works and left it; if it sounds more like a writer than like you, say so and it can end one line earlier."
+  ]
+}

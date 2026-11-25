@@ -1,7 +1,9 @@
 import { Link } from "wouter";
+import { toolName } from "@/lib/toolsList";
 import { useEffect, useState } from "react";
 import { SEOMeta } from "@/components/SEOMeta";
 import MinimalNav from "@/components/MinimalNav";
+import Place from "@/components/art/Place";
 import Footer from "@/components/Footer";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CrisisBlock } from "@/components/CrisisBlock";
@@ -49,12 +51,12 @@ const QUESTIONS = [
  * "Books" moves the book ahead of the essays. `help` is where "In Crisis"
  * sends the reader first, before any reading. */
 const FIRST_STEPS: Record<string, { help: { href: string; label: string }; tool: { href: string; label: string }; daily: { href: string; label: string } }> = {
-  marriage: { help: { href: "/help/marriage", label: "My marriage is falling apart" }, tool: { href: "/tools/marriage-assessment", label: "The Marriage Assessment" }, daily: { href: "/plans/marriage", label: "Eight Weeks Toward Each Other" } },
-  parenting: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/parenting-guide", label: "The Parenting Stage Guide" }, daily: { href: "/tools/family-devotions", label: "The Family Devotion Builder" } },
-  doubt: { help: { href: "/help/doubt", label: "I'm not sure I believe anymore" }, tool: { href: "/tools/test-the-case", label: "Test the Case: Push Back at Every Step" }, daily: { href: "/plans/deconstruction", label: "Eight Weeks of Taking Your Questions Seriously" } },
-  calling: { help: { href: "/help/decisions", label: "How do I know what God wants me to do?" }, tool: { href: "/life/assessment", label: "The Whole-Life Assessment" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
-  justice: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/disruption/consistency", label: "The Consistency Check" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
-  pastoral: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/emotional-health", label: "The Emotional Health Self-Check" }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+  marriage: { help: { href: "/help/marriage", label: "My marriage is falling apart" }, tool: { href: "/tools/marriage-assessment", label: toolName("marriage") }, daily: { href: "/plans/marriage", label: "Eight Weeks Toward a Stronger Marriage" } },
+  parenting: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/parenting-guide", label: toolName("parenting-guide") }, daily: { href: "/tools/family-devotions", label: toolName("family-devotions") } },
+  doubt: { help: { href: "/help/doubt", label: "I'm not sure I believe anymore" }, tool: { href: "/tools/test-the-case", label: toolName("test-the-case") }, daily: { href: "/plans/deconstruction", label: "Eight Weeks of Taking Your Questions Seriously" } },
+  calling: { help: { href: "/help/decisions", label: "How do I know what God wants me to do?" }, tool: { href: "/life/assessment", label: toolName("whole-life") }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+  justice: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/disruption/consistency", label: toolName("consistency") }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
+  pastoral: { help: { href: "/help", label: "Find help for what you are facing" }, tool: { href: "/tools/emotional-health", label: toolName("emotional-health") }, daily: { href: "/plans/whole-life", label: "Eight Weeks Toward One Undivided Life" } },
 };
 
 /* Session mirror (roadmap HS-5). One-sitting entry flow: answers, step, and
@@ -71,7 +73,7 @@ export const READING_PATHS = {
     title: "Marriage Under Strain",
     pages: [
       { title: "My marriage is falling apart", href: "/help/marriage", kind: "Find Help" },
-      { title: "Eight Weeks Toward Each Other", href: "/plans/marriage", kind: "Eight-week plan" }
+      { title: "Eight Weeks Toward a Stronger Marriage", href: "/plans/marriage", kind: "Eight-week plan" }
     ],
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
@@ -84,14 +86,14 @@ export const READING_PATHS = {
     title: "Building Covenant Strength",
     pages: [
       { title: "Why Do Marriages Drift Apart, and How Do You Stop It?", href: "/life/marriage-the-long-covenant", kind: "Everyday Life" },
-      { title: "Eight Weeks Toward Each Other", href: "/plans/marriage", kind: "Eight-week plan" }
+      { title: "Eight Weeks Toward a Stronger Marriage", href: "/plans/marriage", kind: "Eight-week plan" }
     ],
     articles: [
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "What Are You Really Promising in Your Marriage Vows?", slug: "the-covenant-you-didnt-understand" },
       { title: "Why Do Married Couples Slowly Drift Apart?", slug: "the-slow-drift-that-ends-marriages" }
     ],
-    book: "The Monster in the Mirror"
+    book: "Blind Spots"
   },
   "parenting-crisis-articles": {
     title: "Parenting Through Uncertainty",
@@ -104,7 +106,7 @@ export const READING_PATHS = {
       { title: "How to Talk to Your Kids About Faith When You're Not Sure Yourself", slug: "how-to-talk-kids-faith-doubt" },
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" }
     ],
-    book: "When God Bless America Replaces Thy Kingdom Come"
+    book: "A Higher Allegiance"
   },
   "doubt-crisis-articles": {
     title: "Finding Faith in the Questions",
@@ -130,7 +132,7 @@ export const READING_PATHS = {
       { title: "Rest, Ambition, and the Idol of Success", slug: "rest-ambition-and-the-idol-of-success" },
       { title: "Who Pastors the Pastor When No One Checks In?", slug: "the-pastor-nobody-checks-on" }
     ],
-    book: "The Monster in the Mirror"
+    book: "Blind Spots"
   },
   "default": {
     title: "Essential LiveWell Collection",
@@ -143,7 +145,7 @@ export const READING_PATHS = {
       { title: "When Romance Left Covenant Remains", slug: "when-romance-left-covenant-remains" },
       { title: "Why a Frightened Church Wants a King", slug: "strongman-theology" }
     ],
-    book: "The Monster in the Mirror"
+    book: "Blind Spots"
   }
 };
 
@@ -266,16 +268,17 @@ export default function StartHereQuiz() {
   return (
     <div style={{ background: "var(--paper)", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <SEOMeta
-        title="Find Your Path | LiveWell by James Bell"
+        title="Where to Start on LiveWell"
         description="Find where to start. Tell us what is weighing on you and we point you toward the writing that meets you there."
         keywords="where to start, Christian writing, marriage, parenting, doubt, pastoral burnout, LiveWell, James Bell"
-        url="https://www.livewellbyjamesbell.co/start"
+        url="https://www.livewellbyjamesbell.co/start/quiz"
         type="webpage"
       />
 
+      <a href="#main" className="skip-link">Skip to content</a>
       <MinimalNav />
 
-      <section style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
+      <main id="main" style={{ flex: 1, padding: "40px 20px", maxWidth: "900px", margin: "0 auto", width: "100%" }}>
         {!isComplete ? (
           <>
             {/* QUICK PATHS — for the visitor who already knows what they need
@@ -302,6 +305,7 @@ export default function StartHereQuiz() {
               </div>
             </div>
 
+            <Place path="/start/quiz" />
             {/* PROGRESS BAR */}
             <div style={{ marginBottom: "40px" }}>
               <div style={{ display: "flex", gap: "8px", marginBottom: "16px" }}>
@@ -507,7 +511,7 @@ export default function StartHereQuiz() {
             </div>
           </>
         )}
-      </section>
+      </main>
 
       <Footer />
     </div>

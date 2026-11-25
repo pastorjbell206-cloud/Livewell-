@@ -9,6 +9,7 @@
  * the verse lists /bible/doctrine-verses/<id>.json, and the chapter lists
  * /bible/notes-index.json.
  */
+import FilmsHere from "@/components/FilmsHere";
 import { useMemo, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -45,8 +46,8 @@ export default function StudyBibleDoctrines() {
     <Layout>
       {!params && (
         <SEOMeta
-          title="The Doctrines of the Bible, Traced Verse by Verse"
-          description="What the whole Bible teaches about God, creation, sin, Christ, salvation, the Spirit, the church, and the last things: each doctrine studied through both testaments and the church's history, with every verse that teaches it."
+          title="What the Bible Teaches: 62 Doctrine Studies"
+          description="What the whole Bible teaches about God, creation, sin, Christ, salvation, the Spirit, the church, and the last things, with the verses that teach it."
           url="https://www.livewellbyjamesbell.co/study/bible/doctrines"
         />
       )}
@@ -117,7 +118,7 @@ function Toc({ items }: { items: { id: string; label: string }[] }) {
   return (
     <nav aria-label="On this page" style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "var(--s-4)" }}>
       {items.map((t) => (
-        <a key={t.id} href={`#${t.id}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "36px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px" }}>
+        <a key={t.id} href={`#${t.id}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px" }}>
           {t.label}
         </a>
       ))}
@@ -312,6 +313,10 @@ function DoctrinePage({ data, id }: { data: Data; id: string }) {
           <RelatedList items={related} />
         </Section>
       )}
+
+      <div style={{ ...wrap, padding: "0 var(--s-4)" }}>
+        <FilmsHere path={`/study/bible/doctrines/${d.id}`} />
+      </div>
 
       <nav aria-label="Doctrines" style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4)", borderTop: "1px solid var(--border)" }}>
         <div style={{ ...wrap, display: "flex", justifyContent: "space-between", gap: "12px", flexWrap: "wrap" }}>

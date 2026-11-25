@@ -52,5 +52,461 @@
     { "tier": "scholar", "author": "Raymond E. Brown", "title": "The Birth of the Messiah", "year": 1977, "note": "The standard study of the infancy narratives of Matthew and Luke, updated in 1993; indispensable for Luke 1 and 2." },
     { "tier": "scholar", "author": "Loveday Alexander", "title": "The Preface to Luke's Gospel", "series": "Society for New Testament Studies Monograph Series", "year": 1993, "note": "Compares Luke 1:1-4 and Acts 1:1 with ancient prefaces and argues that Luke's closest models are Greek technical treatises." },
     { "tier": "scholar", "author": "Mark Goodacre", "title": "The Case Against Q", "year": 2002, "note": "The fullest modern case for the Farrer hypothesis, that Luke used Mark and Matthew; read with a defense of the Two-Source view for balance." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Luke in a minute",
+        "body": "Luke is the third of the four Gospels, the books that tell the story of Jesus. It has 24 chapters and is the longest of the four. It is also the first half of a two-part work. The second half is the book of Acts, which tells what happened after Jesus rose.\n\nLuke begins like no other Gospel. Before any story, he writes one long, careful sentence about how he made his book. Many people had already written accounts. He has looked into everything from the beginning, and now he writes an orderly account for a man called Theophilus, “so that you may know the certainty of the things you have been taught” (1:4).\n\nThen the story opens in the temple in Jerusalem, with an old priest and a promise. It moves through the births of John the Baptist and Jesus, Jesus' work in Galilee, a long walk to Jerusalem, and his death, rising and going up to heaven.\n\nLuke's Gospel is full of people others passed over: the poor, widows, the sick, Samaritans, tax collectors, women, sinners. Many of its best-loved stories are found only here: the shepherds at the manger, the Good Samaritan, the lost son, Zacchaeus in the tree, the thief on the cross, the road to Emmaus. Jesus sums up the whole book in one line: “For the Son of Man came to seek and to save the lost” (19:10).\n\nIt ends where it began, in the temple, with the disciples “praising God continually” (24:53)."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and how we know",
+        "body": "The book does not name its writer. The name Luke comes from the early church, and the evidence comes in three kinds: what Paul's letters say, what the book of Acts suggests, and what early Christian writers report.\n\nPaul's letters. Paul names a Luke three times. He sends greetings from “Luke, the beloved physician” (Colossians 4:14). He lists Luke among “my fellow workers” (Philemon 24). And near the end of his life, in prison, he writes, “Only Luke is with me” (2 Timothy 4:11). So a Luke was a close friend of Paul, a travel companion, and a doctor.\n\nThe ‘we’ passages. Acts is written mostly about ‘they’. But in a few places the story suddenly says ‘we’: from Troas to Philippi (Acts 16:10-17), from Philippi to Jerusalem (Acts 20:5 to 21:18), and on the sea voyage to Rome (Acts 27:1 to 28:16). The plainest reading is that the writer was there, travelling with Paul. Some scholars think the writer used someone else's travel diary, or that ‘we’ was a way of telling sea stories. Others have answered that no such custom has been clearly shown. Most who accept the plain reading look for a companion of Paul who is not named in Acts, and Luke fits.\n\nThe early writers. Around AD 180, Irenaeus, a bishop in Gaul (modern France), wrote that Luke, the companion of Paul, set down in a book the gospel Paul preached (Against Heresies 3.1.1). Later in the same work he uses the ‘we’ passages to argue that Luke was Paul's constant companion (3.14.1). A Latin list of accepted books, called the Muratorian fragment, also names Luke the physician as the writer, says Paul took him along, and says Luke did not see the Lord in the flesh. Most date it to the late second century; a few scholars argue it is from the fourth. No other name was ever attached to this Gospel.\n\n‘The beloved physician’. In 1882 W. K. Hobart argued that Luke's Greek is full of medical words, which proved a doctor wrote it. Henry Cadbury answered him, from 1919 on. He showed that educated Greek writers who were not doctors used the same words, and that ancient doctors had hardly any special vocabulary of their own. Most scholars now agree with Cadbury. So the medical words do not prove the case. The case rests on Paul's letters, the ‘we’ passages and the early church's memory.\n\nWas Luke a Gentile? A Gentile is someone who is not Jewish. In Colossians 4:10-11 Paul names three men and says, “These are the only Jews among my fellow workers.” Luke is greeted after that, in verse 14. So many readers have concluded that Luke was a Gentile, and the only Gentile writer in the New Testament. Others reply that the Greek phrase behind ‘Jews’ there may mean a narrower group, the strictest keepers of the law, and that Luke's deep knowledge of the Jewish Scriptures fits a Jewish writer, or a Gentile who had long worshipped with Jews. Both views have careful defenders."
+      },
+      {
+        "id": "two-volumes",
+        "h": "One work in two volumes, for Theophilus",
+        "body": "Acts begins, “In my first book, O Theophilus, I wrote about all that Jesus began to do and to teach” (Acts 1:1). The ‘first book’ is Luke. The same man is named at the start of both. The same writer, the same style and the same themes run through both. Luke ends with Jesus going up to heaven, and Acts begins by telling it again. Henry Cadbury's study The Making of Luke-Acts (1927) treated the two as one project, and scholars often write ‘Luke-Acts’ for the pair.\n\nRead together, the two books make one long story. Luke moves toward Jerusalem. Acts moves out from Jerusalem ‘to the ends of the earth’, and ends with Paul preaching in Rome. Things begun in the first book are finished in the second: the promise of the Holy Spirit (Luke 24:49) is kept at Pentecost (Acts 2), and the word to ‘all nations’ (Luke 24:47) reaches them.\n\nIn the old copies, though, the two books did not travel together. Luke sits with the other Gospels; Acts usually came before the letters.\n\nWho was Theophilus? His name is Greek and means ‘friend of God’ or ‘loved by God’. Luke calls him “most excellent Theophilus” (1:3), and in Acts the same title is used for the Roman governors Felix and Festus (Acts 24:3, 26:25). So there are several views.\n\nMany think he was a real man of rank, perhaps a patron. Writers in the Roman world often dedicated a book to a supporter who paid for copies to be made and passed around. Others think he was a believer who had been taught the faith and needed firm ground under it, which fits 1:4. A few have suggested the name stands for every reader who loves God. Luke does not say more, and no one knows for sure."
+      },
+      {
+        "id": "preface",
+        "h": "The opening sentence: what kind of history",
+        "body": "Luke 1:1-4 is one long sentence in polished Greek. Nothing like it opens Matthew, Mark or John. Read it slowly, because Luke is telling you how to read the rest.\n\nMany people, he says, have already written accounts of “the things that have been fulfilled among us” (1:1). The word ‘fulfilled’ matters. These are not just events; they are promises coming true.\n\nThe accounts were “handed down to us by the initial eyewitnesses and servants of the word” (1:2). Luke does not claim to be an eyewitness himself. He claims to stand close to those who were.\n\nHe has “carefully investigated everything from the beginning” (1:3). He has done the work of checking.\n\nAnd he writes “an orderly account” (1:3). Orderly does not always mean in strict date order. It means arranged with care, so the story makes sense.\n\nWhy? “So that you may know the certainty of the things you have been taught” (1:4). Theophilus already believes. Luke writes so his faith can stand on solid ground.\n\nWhat kind of writing does this sound like? Greek historians often opened with a note about their sources and method, and many scholars think Luke wanted to be read alongside them. Loveday Alexander, in The Preface to Luke's Gospel (1993), argued that the closest matches are the short prefaces of Greek technical and scientific handbooks, written by working men for practical readers. Others think the line between those two kinds of preface is less sharp than she drew it. On any view, Luke is claiming something plain: this is an account of real events, gathered from people who saw them, checked and set in order."
+      },
+      {
+        "id": "when",
+        "h": "When it was written",
+        "body": "Luke gives no date. Since Acts calls Luke ‘my first book’, Luke was written first, and the two are usually dated together. The big question, as with Matthew, is whether Luke wrote before or after AD 70, when the Romans destroyed Jerusalem and its temple.\n\nThe case for after 70. Most scholars date Luke somewhere around AD 80 to 90. Their reasons are these. First, most think Luke used Mark, which is usually dated to the late 60s or about 70. Second, Luke's form of Jesus' warnings about Jerusalem is very concrete. Mark speaks of a coming horror; Luke says, “When you see Jerusalem surrounded by armies, you will know that her desolation is near” (21:20), and speaks of enemies building a barricade around the city (19:43). Many read that as written by someone who knew how the siege of 70 went.\n\nThe case for before 70. A smaller group of scholars, including John A. T. Robinson in Redating the New Testament (1976), date Luke and Acts in the early 60s. Their strongest point is the end of Acts. Acts ends with Paul under guard in Rome for “two full years” (Acts 28:30), still waiting for his trial. It never says how the trial ended, or that Paul died, or that Jerusalem fell. If Luke knew those things, why stop there? On this view he stopped because events had reached his own day. They add that siege language was common in Israel's prophets, so Luke 21:20 needs no hindsight.\n\nThe other side answers that Acts ends where it does on purpose. The story was always heading for Rome, and its last words show Paul preaching without hindrance: “Boldly and freely he proclaimed the kingdom of God” (Acts 28:31). The goal is reached; the book is done.\n\nA few scholars place Luke and Acts even later, early in the second century. That is a minority view.\n\nEach case has able defenders, and the site does not settle the question. Nothing in the faith hangs on the year."
+      },
+      {
+        "id": "sources",
+        "h": "Where Luke's material came from",
+        "body": "Luke tells us he used earlier accounts and what eyewitnesses handed down (1:1-2). Laying the Gospels side by side shows three kinds of material in Luke.\n\nMaterial shared with Mark. Much of Luke follows Mark, often in the same order and with many of the same words: the healings in Galilee, the feeding of the five thousand, Peter's confession, the last week in Jerusalem. Most scholars think Luke had Mark's Gospel in front of him.\n\nMaterial shared with Matthew but not Mark. Luke and Matthew share many sayings of Jesus that Mark does not have, such as the Lord's Prayer and the blessings that open Jesus' great sermon. How did that happen? As on Matthew's page, the answers are hypotheses, careful guesses from the evidence. The most common view is that Matthew and Luke each used Mark and also a lost collection of sayings that scholars call Q, from the German word Quelle, ‘source’. A second view, argued by Austin Farrer in 1955 and by Mark Goodacre in The Case Against Q (2002), has no Q: Luke used Matthew as well as Mark. A third view puts Matthew first and Luke second, with Mark drawing on both. Each has able defenders, and the site does not settle it.\n\nMaterial only in Luke. A large part of Luke is found in no other Gospel. Scholars sometimes call it ‘L’, a label for Luke's own material, not the name of a known document. Where did it come from? Luke's preface points to eyewitnesses. Some have noticed that the birth stories are told from Mary's side, and that Luke twice says Mary kept these things in her heart (2:19, 2:51). Others think Luke gathered stories from many people over many years. We do not know his sources by name.\n\nWhat matters most is what Luke says himself: he did not invent his story. He received it and checked it."
+      },
+      {
+        "id": "shape",
+        "h": "How Luke is built",
+        "body": "Luke's story moves toward one city. The outline at the top of this page draws it as a diagram you can tap. Here it is in words.\n\nThe opening (1:1-4). The preface to Theophilus.\n\nThe births (1:5 to 2:52). Two births are announced and told side by side, John's and Jesus'. Each has an angel, a song and a note on how the child grew. At the end the boy Jesus is found in the temple.\n\nGetting ready (3:1 to 4:13). John preaches in the wilderness. Jesus is baptized, his family line is traced back to Adam, and he is tested in the desert.\n\nGalilee (4:14 to 9:50). It begins with Jesus' sermon in his home town of Nazareth, where he reads from Isaiah and is nearly thrown off a cliff. Then come healings, the calling of disciples, teaching and the question of who he is.\n\nThe road to Jerusalem (9:51 to 19:27). This is the turning point: “As the day of His ascension approached, Jesus resolutely set out for Jerusalem” (9:51). Luke reminds the reader again and again where Jesus is heading (13:22, 17:11, 18:31). This long middle section holds much of what only Luke has: the Good Samaritan, the lost sheep, coin and son, the rich man and Lazarus, Zacchaeus. It is less a map of the route than a school for disciples on the way.\n\nJerusalem (19:28 to 24:53). Jesus enters the city, weeps over it, clears the temple and teaches there each day. Then come the last supper, his arrest, his trials before the council, Pilate and Herod, his death and burial, the empty tomb, the walk to Emmaus, and his going up to heaven from near Bethany.\n\nThe book begins and ends in the temple. In between, everything leans toward Jerusalem, where God's promises will be kept."
+      },
+      {
+        "id": "themes",
+        "h": "The big themes",
+        "body": "Good news to the poor. In his first sermon Jesus reads Isaiah: “He has anointed Me to preach good news to the poor” (4:18). Luke uses the words ‘poor’ and ‘rich’ more than any other Gospel. His Jesus is born in a feeding trough and visited by shepherds.\n\nThe great reversal. Mary sings that God “has brought down rulers from their thrones, but has exalted the humble” (1:52). Luke's Jesus blesses the poor and pronounces woes on the rich (6:20-26). The last become first; the proud are humbled.\n\nThe lost and the outsider. Tax collectors, sinners, Samaritans and lepers keep turning up, and Jesus welcomes them. Chapter 15 gives three stories in a row about something lost and found.\n\nWomen. Luke names women again and again: Elizabeth, Mary, Anna, the widow of Nain, the woman who weeps on Jesus' feet, Mary and Martha, and the women who travel with Jesus and support him from their own means (8:1-3). Women are the first to find the empty tomb (24:1-10).\n\nThe Holy Spirit. The Spirit fills Elizabeth, Zechariah and Simeon, comes on Jesus at his baptism, and leads him into the desert and back to Galilee. At the end Jesus promises the Spirit's power (24:49), and Acts tells how it came.\n\nPrayer. Luke shows Jesus praying at his baptism (3:21), before he chooses the twelve (6:12), when he is transfigured (9:29) and on the cross. Parables about prayer are found only here (11:5-8, 18:1-14).\n\nJoy. The angel brings ‘good news of great joy’ (2:10). Heaven rejoices over one sinner who repents (15:7). The book ends “with great joy” (24:52).\n\nThe table. Jesus is often at a meal: with tax collectors, with Pharisees, with Martha and Mary, with the crowd, with his disciples, and at Emmaus, where he is known “in the breaking of the bread” (24:35).\n\n‘Today’. Luke uses the word for the moment God's promise arrives: a Savior born today (2:11), Scripture fulfilled today (4:21), salvation come to Zacchaeus today (19:9), paradise today (23:43).\n\nSalvation for all nations. Simeon calls the child “a light for revelation to the Gentiles” (2:32). Luke traces Jesus' line back to Adam, the father of everyone (3:38). The last commission is for ‘all nations’ (24:47).\n\nJerusalem and the temple. The story starts with a priest at the altar, keeps heading for the city, and ends with the disciples in the temple courts. God keeps his promises to Israel first, in Israel's own house."
+      },
+      {
+        "id": "only-luke",
+        "h": "What only Luke has",
+        "body": "A large part of Luke is found in no other Gospel. Here are some of the best-known pieces.\n\nThe songs. Luke's first two chapters hold four songs that the church has sung ever since, each named from its first words in Latin. The Magnificat is Mary's song (1:46-55): “My soul magnifies the Lord.” The Benedictus is Zechariah's (1:68-79): “Blessed be the Lord, the God of Israel.” The Gloria is the angels' (2:14): “Glory to God in the highest.” The Nunc Dimittis is Simeon's (2:29-32): “You now dismiss Your servant in peace.”\n\nThe birth stories from Mary's side: the angel Gabriel's visit to Zechariah and to Mary, the shepherds, Simeon and Anna, and the boy Jesus in the temple.\n\nThe parables. The Good Samaritan (10:25-37). The friend at midnight (11:5-8). The rich fool (12:13-21). The lost coin and the lost son (15:8-32). The shrewd manager (16:1-9). The rich man and Lazarus (16:19-31). The widow and the unjust judge (18:1-8). The Pharisee and the tax collector (18:9-14).\n\nThe people. The widow of Nain, whose only son Jesus raises (7:11-17). The sinful woman who weeps at his feet (7:36-50). Mary and Martha (10:38-42). The ten lepers, of whom only the Samaritan comes back to say thank you (17:11-19). Zacchaeus, the short tax collector up a tree (19:1-10).\n\nAt the cross and after. Jesus weeps over Jerusalem (19:41-44). He prays “Father, forgive them” (23:34). He promises the dying criminal, “today you will be with Me in Paradise” (23:43). And on the road to Emmaus he walks with two sad disciples who do not know him until he breaks bread (24:13-35).\n\nWithout Luke, the church would not have most of its Christmas story, and some of the stories it loves best."
+      },
+      {
+        "id": "old-testament",
+        "h": "Luke and the Old Testament",
+        "body": "Luke quotes the Old Testament less often by name than Matthew does. But it sounds through his book from the first page.\n\nThe sound of chapters 1 and 2. After the polished preface, Luke's Greek changes. The birth stories read like the Greek translation of the Old Testament, called the Septuagint, which the first churches used. An old childless couple recalls Abraham and Sarah. Gabriel is the angel of the book of Daniel. Mary's song echoes Hannah's prayer in 1 Samuel 2. Most scholars think Luke chose this style on purpose, to show that Israel's story is starting up again. Some think he was using older Hebrew or Aramaic sources. Either way, the first readers would have heard their Bible in it.\n\nIsaiah 61 at Nazareth. Jesus' first sermon in Luke is a reading from the scroll of Isaiah: “The Spirit of the Lord is on Me, because He has anointed Me to preach good news to the poor. He has sent Me to proclaim liberty to the captives and recovery of sight to the blind, to release the oppressed, to proclaim the year of the Lord's favor” (4:18-19, from Isaiah 61:1-2 with a line from Isaiah 58:6). Then he sits down and says, “Today this Scripture is fulfilled in your hearing” (4:21). The rest of the Gospel shows him doing what he read.\n\nHe stops before Isaiah's next words, “the day of our God's vengeance” (Isaiah 61:2). Many readers have noticed this. In Luke this is a time of favour first.\n\nThe whole Scripture. At the end, the risen Jesus tells his disciples, “Everything must be fulfilled that is written about Me in the Law of Moses, the Prophets, and the Psalms” (24:44). Those are the three parts of the Jewish Bible. On the Emmaus road, “beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself” (24:27). Luke's claim is not that a few verses point to Jesus, but that the whole story does."
+      },
+      {
+        "id": "history",
+        "h": "Luke and the history of his day",
+        "body": "Luke ties his story to the wider world more than any other Gospel. He names emperors, governors and kings. That makes his account easier to check, and in one place it raises a real difficulty.\n\nThe rulers of 3:1-2. Luke dates the start of John's preaching with seven names: “the fifteenth year of the reign of Tiberius Caesar, while Pontius Pilate was governor of Judea, Herod tetrarch of Galilee, his brother Philip tetrarch of Ituraea and Trachonitis, and Lysanias tetrarch of Abilene, during the high priesthood of Annas and Caiaphas” (3:1-2). A tetrarch was a ruler of part of a kingdom. Most count Tiberius's fifteenth year as AD 28 or 29; some count from an earlier date, which gives about AD 26. Pilate governed Judea from about 26 to 36. In 1961 a stone found at Caesarea on the coast was seen to bear his name and the title ‘prefect of Judea’.\n\nLysanias was once called a mistake. Josephus speaks of a Lysanias who ruled a nearby land and was put to death about 36 BC, long before. But an inscription found at Abila, the chief town of Abilene, records a gift by a freed slave of ‘Lysanias the tetrarch’. Most date it to the reign of Tiberius, though its exact date is debated. So there seems to have been a later Lysanias, as Luke says.\n\nThe census of 2:1-2. Here the difficulty is real. Luke says Joseph went to Bethlehem because of a census ordered by Augustus, “the first census to take place while Quirinius was governor of Syria” (2:2). Luke and Matthew both place the birth while Herod the Great was alive, and most date Herod's death to 4 BC. But Quirinius became governor of Syria in AD 6, about ten years later. That year Judea came under direct Roman rule, and the Jewish historian Josephus describes the census Quirinius took then. No writer outside Luke tells of a Roman census in Herod's kingdom.\n\nSeveral explanations have been offered. Many scholars conclude that Luke joined the famous census of AD 6 to the time of the birth by mistake. Others think Quirinius held an earlier command in Syria; an inscription found near Tivoli in Italy speaks of an unnamed official who governed Syria a second time, and some read it as Quirinius while others assign it to another man. Others note that the Greek word for ‘first’ can sometimes mean ‘before’, giving ‘this census took place before Quirinius was governor’; most experts in Greek grammar find that reading strained. Others point out that Tertullian, writing around 200, tied a census in Judea to Sentius Saturninus, who governed Syria a few years before Herod died. And some suggest a count begun under Herod and finished later. Luke knows the famous census of AD 6 well (Acts 5:37), which some take as a sign he was not confused about it.\n\nThe question is about a date. It does not touch the confession that Jesus was born as a real man in real history. These notes do not settle it."
+      },
+      {
+        "id": "jews",
+        "h": "Luke and the Jewish people",
+        "body": "Luke's Gospel begins and ends in the Jewish temple. Its first scenes are full of faithful Jews: Zechariah and Elizabeth, ‘righteous in the sight of God’; Mary and Joseph, who keep the law of Moses; old Simeon, waiting for ‘the consolation of Israel’; Anna, praying in the temple night and day. Jesus is circumcised, presented in the temple and taken up to Jerusalem for Passover. His first followers are all Jews. After he rises, they return to Jerusalem and are “praising God continually in the temple” (24:53).\n\nLuke also tells of conflict. Jesus' own town tries to kill him (4:29). The chief priests and leaders plot against him, and some in the crowd call for his death. Luke is just as clear that many in Jerusalem grieve. A great crowd follows him to the cross, including women who mourn and wail for him (23:27). The crowds go home beating their chests (23:48).\n\nOver the centuries, Christians have misused Gospel passages to blame the whole Jewish people for Jesus' death, and called Jews ‘Christ-killers’. That reading fed contempt, expulsion and murder. It is wrong, and the site rejects it plainly, as on the pages for Mark, Matthew and John. Luke's own second book says that Herod and Pontius Pilate “conspired with the Gentiles and the people of Israel” against Jesus (Acts 4:27): Jew and Gentile, ruler and crowd, together. The Second Vatican Council's declaration Nostra Aetate (1965) taught that what happened in Christ's passion cannot be charged against all the Jews then living, nor against the Jews of today, and many Protestant churches have said the same.\n\n‘Father, forgive them’. Only Luke gives this prayer from the cross: “Father, forgive them, for they do not know what they are doing” (23:34). The line is missing from some of the oldest copies of Luke, including a papyrus called P75, copied around AD 200, Codex Vaticanus from the 300s, and Codex Bezae as first written. It is present in Codex Sinaiticus as first written and in most later copies. Scholars are divided. Some think it was added from an early story about Jesus. Others think some scribes left it out because they could not bear the thought of the Jews who rejected Jesus being forgiven. Many modern Bibles print it with a note or in brackets. Stephen, dying in Acts, prays in the same way: “Lord, do not hold this sin against them” (Acts 7:60).\n\nLuke does not give a verdict on the Jewish people. He tells of a Jewish Messiah, welcomed and refused by his own as prophets had been before, who prays for those who kill him."
+      },
+      {
+        "id": "money",
+        "h": "Luke and money",
+        "body": "No Gospel says more about money than Luke. It is worth being honest about how hard his words are.\n\nMary sings that God “has sent the rich away empty” (1:53). Jesus says, “Woe to you who are rich, for you have already received your comfort” (6:24). He tells of a farmer who builds bigger barns and dies that night (12:16-21). He tells of a rich man who feasted every day while a poor man named Lazarus lay at his gate, and the rich man ends in torment (16:19-31). He tells a ruler to sell everything and give to the poor, and says it is easier for a camel to go through the eye of a needle than for a rich man to enter the kingdom of God (18:22-25).\n\nThere are two easy ways out, and Luke closes both.\n\nThe first is to make money a sign of God's blessing, so that the rich are the most blessed and the poor must lack faith. This is often called the prosperity gospel. Luke turns it upside down. In his book, wealth is more often a danger than a reward.\n\nThe second is to despise the rich as if they were beyond God's reach. Luke does not do that either. Women of means support Jesus from what they own (8:3). Zacchaeus, a rich tax collector, is welcomed, and salvation comes to his house when he gives half his goods to the poor and repays those he cheated four times over (19:8-9). Joseph of Arimathea, a member of the Council, gives Jesus an honourable burial (23:50-53). When the disciples ask, “Who then can be saved?”, Jesus answers, “What is impossible with man is possible with God” (18:26-27).\n\nLuke's point is not that being poor makes anyone good, or that being rich makes anyone bad. It is that money is a rival master, “You cannot serve both God and money” (16:13), and that God has a special care for those who have nothing. Every reader, rich or poor by the world's standard, is asked where their treasure is."
+      },
+      {
+        "id": "church",
+        "h": "How the church has read Luke",
+        "body": "From the second century, Luke was read as the Gospel of Paul's companion. Irenaeus defended its place among the four Gospels against teachers, Marcion among them, who would not accept all of it.\n\nLuke's songs entered the church's daily prayer. In the church's old daily round of prayer, the Benedictus was sung at morning prayer, the Magnificat at evening prayer and the Nunc Dimittis at night prayer. The Book of Common Prayer kept them in Morning and Evening Prayer, and many churches still sing them every day. The angels' song became the Gloria of Christian worship, and Gabriel's greeting and Elizabeth's words to Mary (1:28, 1:42) became the opening of the Hail Mary.\n\nIn the art of the church each Gospel writer has a symbol, taken from the four living creatures of Ezekiel 1 and Revelation 4. Irenaeus gave Luke the calf, because his Gospel begins with Zechariah the priest at the altar, where calves were offered. Jerome, in 398, kept the calf for Luke for the same reason. So in old Bibles and church windows Luke is shown with an ox, often with wings.\n\nLuke's stories gave the world some of its most familiar words and pictures. ‘Good Samaritan’ became a name for anyone who helps a stranger. Rembrandt painted the lost son's return, and much of the church's Christmas music sets Luke 2.\n\nAbove all, Luke gave the church its picture of a Savior who goes looking for the lost, eats with sinners and prays for his enemies."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 2,
+        "v": 2,
+        "ref": "2:2",
+        "line": "The census ‘while Quirinius was governor of Syria’. A real historical difficulty, the main explanations, and why the notes take no side."
+      },
+      {
+        "ch": 4,
+        "v": 25,
+        "ref": "4:25",
+        "line": "Jesus reminds his home town that Elijah and Elisha were sent to outsiders, and they try to kill him. Why did that make them so angry?"
+      },
+      {
+        "ch": 6,
+        "v": 20,
+        "ref": "6:20",
+        "line": "‘Blessed are you who are poor’ and ‘woe to you who are rich’. Does Luke mean money, or the heart? Both, and how they fit."
+      },
+      {
+        "ch": 12,
+        "v": 49,
+        "ref": "12:49",
+        "line": "‘I have come to ignite a fire on the earth’ and to bring division. How does that fit the Prince of Peace?"
+      },
+      {
+        "ch": 14,
+        "v": 26,
+        "ref": "14:26",
+        "line": "Hate your father and mother? What the word meant in Jesus' way of speaking, and what it still demands."
+      },
+      {
+        "ch": 16,
+        "v": 8,
+        "ref": "16:8",
+        "line": "The master praises a dishonest manager. What is being praised, and what is not?"
+      },
+      {
+        "ch": 16,
+        "v": 19,
+        "ref": "16:19",
+        "line": "The rich man and Lazarus. Is this a picture of the life to come, a parable about wealth, or both?"
+      },
+      {
+        "ch": 17,
+        "v": 21,
+        "ref": "17:21",
+        "line": "Is the kingdom of God ‘within you’ or ‘in your midst’? What the Greek allows."
+      },
+      {
+        "ch": 22,
+        "v": 36,
+        "ref": "22:36",
+        "line": "‘Buy a sword’, and then ‘That is enough’. Was Jesus arming his disciples?"
+      },
+      {
+        "ch": 22,
+        "v": 43,
+        "ref": "22:43",
+        "line": "The angel and the sweat like drops of blood. Missing from some of the oldest copies; what that means."
+      },
+      {
+        "ch": 23,
+        "v": 34,
+        "ref": "23:34",
+        "line": "‘Father, forgive them’. A prayer missing from some early copies, and why scholars are divided."
+      },
+      {
+        "ch": 23,
+        "v": 43,
+        "ref": "23:43",
+        "line": "‘Today you will be with Me in Paradise’. What did Jesus promise the dying thief?"
+      }
+    ],
+    "words": [
+      {
+        "word": "Savior",
+        "line": "Greek sōtēr. One who rescues. The angels call Jesus ‘a Savior’ (2:11); Roman cities gave the same title to the emperor."
+      },
+      {
+        "word": "Good news",
+        "line": "Greek euangelizomai, to bring good news, the root of ‘gospel’ and ‘evangelist’. Luke's favourite verb for preaching (4:18, 8:1)."
+      },
+      {
+        "word": "Today",
+        "line": "Greek sēmeron. Luke's word for the moment God's promise arrives (2:11, 4:21, 19:9, 23:43)."
+      },
+      {
+        "word": "Kingdom of God",
+        "line": "God's rule, God putting the world right. It comes near in Jesus (10:9) and is ‘in your midst’ (17:21)."
+      },
+      {
+        "word": "Repentance",
+        "line": "Greek metanoia, a change of mind and life. Preached by John (3:3) and sent to all nations (24:47)."
+      },
+      {
+        "word": "The lost",
+        "line": "Those who have wandered from God, like a sheep, a coin or a son (chapter 15). Jesus came to seek them (19:10)."
+      },
+      {
+        "word": "The poor",
+        "line": "In Luke, people with little money and little power, often the ones who know they need God (4:18, 6:20)."
+      },
+      {
+        "word": "Holy Spirit",
+        "line": "God's own Spirit, who fills people to speak, rests on Jesus, and is promised to the disciples (3:22, 24:49)."
+      },
+      {
+        "word": "Must",
+        "line": "Greek dei, it is necessary. Luke's word for God's plan: the Son of Man must suffer and rise (9:22, 24:7)."
+      },
+      {
+        "word": "Son of Man",
+        "line": "Jesus' favourite name for himself, from Daniel 7:13; one who serves, suffers and will come in glory (19:10, 21:27)."
+      },
+      {
+        "word": "Theophilus",
+        "line": "The man Luke writes to; the name means ‘friend of God’ (1:3, Acts 1:1)."
+      },
+      {
+        "word": "Paradise",
+        "line": "A Persian word for a garden; used for the place of the righteous dead with God (23:43)."
+      },
+      {
+        "word": "Tetrarch",
+        "line": "A ruler of part of a kingdom under Rome, such as Herod Antipas in Galilee (3:1, 3:19)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "37 to 4 BC",
+        "what": "Herod the Great rules Judea as king under Rome. Luke begins ‘in the time of Herod king of Judea’ (1:5).",
+        "kind": "world"
+      },
+      {
+        "when": "27 BC to AD 14",
+        "what": "Augustus is the first Roman emperor. Luke names his decree for a census (2:1).",
+        "kind": "world"
+      },
+      {
+        "when": "About 9 BC",
+        "what": "Cities in the province of Asia call Augustus's birthday the beginning of good news for the world.",
+        "kind": "world"
+      },
+      {
+        "when": "Before 4 BC",
+        "what": "Jesus is born in Bethlehem, while Herod is still alive (1:5, 2:4-7).",
+        "kind": "story"
+      },
+      {
+        "when": "AD 6",
+        "what": "Judea comes under direct Roman rule. Quirinius, governor of Syria, takes a census (Acts 5:37).",
+        "kind": "world"
+      },
+      {
+        "when": "4 BC to AD 39",
+        "what": "Herod Antipas rules Galilee. He imprisons John and questions Jesus (3:19-20, 23:7-12).",
+        "kind": "world"
+      },
+      {
+        "when": "AD 14",
+        "what": "Tiberius becomes emperor. Luke dates John's preaching by his fifteenth year (3:1).",
+        "kind": "world"
+      },
+      {
+        "when": "AD 26 to about 36",
+        "what": "Pontius Pilate governs Judea. He tries Jesus and sends him to Herod (23:1-25).",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 28 or 29",
+        "what": "The fifteenth year of Tiberius on the usual count: John preaches and baptizes Jesus (3:1-22).",
+        "kind": "story"
+      },
+      {
+        "when": "AD 30 or 33",
+        "what": "The two dates most often proposed for the crucifixion.",
+        "kind": "world"
+      },
+      {
+        "when": "Forty days after Easter",
+        "what": "The risen Jesus is carried up into heaven near Bethany (24:50-51; Acts 1:3).",
+        "kind": "story"
+      },
+      {
+        "when": "About AD 60 to 62",
+        "what": "Paul under guard in Rome for two years, where Acts ends (Acts 28:30).",
+        "kind": "book"
+      },
+      {
+        "when": "AD 70",
+        "what": "The Romans destroy Jerusalem and its temple.",
+        "kind": "world"
+      },
+      {
+        "when": "About AD 80 to 90",
+        "what": "The date most scholars give for Luke. A smaller group argues for the early 60s.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 180",
+        "what": "Irenaeus writes that Luke, Paul's companion, set down the gospel Paul preached.",
+        "kind": "book"
+      },
+      {
+        "when": "Around AD 200",
+        "what": "The papyrus P75 is copied; it holds most of Luke and John.",
+        "kind": "book"
+      },
+      {
+        "when": "398",
+        "what": "Jerome gives Luke the calf as his symbol, because he begins with Zechariah the priest.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "id": "capernaum",
+        "name": "Capernaum",
+        "lat": 32.881,
+        "lon": 35.575,
+        "refs": [
+          "4:31",
+          "7:1"
+        ],
+        "line": "A fishing town on the north shore of the lake. Jesus teaches in its synagogue, and heals a centurion's servant here (7:1-10)."
+      },
+      {
+        "id": "nazareth",
+        "name": "Nazareth",
+        "lat": 32.7,
+        "lon": 35.3,
+        "refs": [
+          "1:26",
+          "2:39",
+          "4:16"
+        ],
+        "label": {
+          "dx": -10,
+          "dy": 4,
+          "anchor": "end"
+        },
+        "line": "A small village in the hills of Galilee. Gabriel comes to Mary here; Jesus grows up here and is nearly thrown off its hill (4:29)."
+      },
+      {
+        "id": "nain",
+        "name": "Nain",
+        "lat": 32.63,
+        "lon": 35.35,
+        "refs": [
+          "7:11"
+        ],
+        "line": "A village on the slope of the hill of Moreh, a few miles from Nazareth. Jesus raises a widow's only son (7:11-17)."
+      },
+      {
+        "id": "samaria",
+        "name": "Samaritan villages",
+        "lat": 32.42,
+        "lon": 35.32,
+        "refs": [
+          "9:52",
+          "17:11"
+        ],
+        "region": true,
+        "line": "The land between Galilee and Judea. A Samaritan village refuses Jesus (9:52); a Samaritan leper comes back to thank him (17:16). Placed roughly."
+      },
+      {
+        "id": "jericho",
+        "name": "Jericho",
+        "lat": 31.856,
+        "lon": 35.46,
+        "refs": [
+          "10:30",
+          "18:35",
+          "19:1"
+        ],
+        "label": {
+          "dx": 10,
+          "dy": 4,
+          "anchor": "start"
+        },
+        "line": "An oasis town near the Jordan, the last stop before the climb to Jerusalem. A blind man is healed and Zacchaeus climbs a tree here (19:1-10)."
+      },
+      {
+        "id": "emmaus",
+        "name": "Emmaus",
+        "lat": 31.83,
+        "lon": 35.04,
+        "refs": [
+          "24:13"
+        ],
+        "region": true,
+        "label": {
+          "dx": -10,
+          "dy": 4,
+          "anchor": "end"
+        },
+        "line": "Where two disciples know the risen Jesus at supper (24:13-35). Its site is uncertain: Nicopolis, Abu Ghosh, El-Qubeibeh and Motza are all proposed. Placed roughly."
+      },
+      {
+        "id": "jerusalem",
+        "name": "Jerusalem",
+        "lat": 31.778,
+        "lon": 35.235,
+        "refs": [
+          "2:22",
+          "9:51",
+          "19:41",
+          "24:52"
+        ],
+        "label": {
+          "dx": 3,
+          "dy": -16,
+          "anchor": "middle"
+        },
+        "line": "The city of the temple, where the book begins and ends. Jesus sets his face toward it (9:51), weeps over it, dies outside its walls and rises."
+      },
+      {
+        "id": "bethany",
+        "name": "Bethany",
+        "lat": 31.771,
+        "lon": 35.262,
+        "refs": [
+          "19:29",
+          "24:50"
+        ],
+        "label": {
+          "dx": 10,
+          "dy": 4,
+          "anchor": "start"
+        },
+        "line": "A village on the Mount of Olives near Jerusalem. From near here Jesus blesses his disciples and is carried up into heaven (24:50-51)."
+      },
+      {
+        "id": "bethlehem",
+        "name": "Bethlehem",
+        "lat": 31.705,
+        "lon": 35.2,
+        "refs": [
+          "2:4",
+          "2:15"
+        ],
+        "label": {
+          "dx": 10,
+          "dy": 8,
+          "anchor": "start"
+        },
+        "line": "David's town, a few miles south of Jerusalem. Jesus is born here and laid in a manger; shepherds come from the fields nearby (2:4-20)."
+      }
+    ],
+    "deeper": [
+      {
+        "href": "/resources/context/world/jewish-life-in-jesus-day",
+        "name": "Jewish life in Jesus's day",
+        "line": "The temple, the synagogue, the feasts and the Sabbath Luke's story keeps",
+        "icon": "people"
+      },
+      {
+        "href": "/resources/context/world/roman-world",
+        "name": "The Roman world",
+        "line": "The emperors, governors and kings Luke names, and the empire around them",
+        "icon": "world"
+      },
+      {
+        "href": "/resources/context/money-texts-we-explain-away",
+        "name": "What Does the Bible Say About Wealth and the Poor?",
+        "line": "The money texts Luke presses hardest, faced honestly",
+        "icon": "scroll"
+      },
+      {
+        "href": "/resources/context/hospitality-and-the-stranger",
+        "name": "What Did Hospitality Mean in the Ancient World?",
+        "line": "The welcome of strangers behind Luke's meals and the Good Samaritan",
+        "icon": "people"
+      },
+      {
+        "href": "/resources/context/women-in-the-ancient-world",
+        "name": "How Did the Bible Treat Women Compared to Its World?",
+        "line": "The world around the women Luke names",
+        "icon": "book"
+      }
+    ]
+  }
 }

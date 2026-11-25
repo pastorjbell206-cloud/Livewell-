@@ -24,8 +24,8 @@ export interface Channel {
 export const CHANNELS: Channel[] = [
   {
     id: "substack",
-    label: "The newsletter",
-    blurb: "New essays in your inbox, plus thinking that never makes it to the site.",
+    label: "Substack",
+    blurb: "New essays by email. Subscribe there, or read before you decide.",
     url: "https://substack.com/@jamesbell333289",
     live: true,
   },
@@ -38,23 +38,15 @@ export const CHANNELS: Channel[] = [
   },
   {
     id: "ends",
-    label: "ENDS",
-    blurb: "The initiative equipping pastors in remote regions around the world.",
-    // Given by James as "ends initiative dot org". Outbound requests are
-    // blocked in this environment, so it could not be opened to confirm.
+    label: "ENDS (Ends of the Earth Initiative)",
+    blurb: "James founded it. It trains local shepherds, sends them out, and helps the churches they plant do the same.",
+    // Confirmed by James on 2026-11-18 and read on that day. Link the home
+    // page only: ENDS is not taking gifts, and LiveWell sends no one to give.
     url: "https://endsinitiative.org",
     live: true,
   },
-  {
-    id: "podcast",
-    label: "Following the Way",
-    blurb: "The podcast. Conversations on theology and the weight of everyday life.",
-    // Given by James as http. Left exactly as provided: an http link follows a
-    // redirect to https where the host offers one, whereas guessing https
-    // breaks outright if it does not. Upgrade when the host is confirmed.
-    url: "http://followingthewaypodcast.com/",
-    live: true,
-  },
+  // The Following the Way podcast is off the site for now (James,
+  // 2026-11-18): it has no address yet. Add it back here when it has one.
 ];
 
 /** The channels with a real URL, in display order. */
@@ -62,8 +54,40 @@ export function liveChannels(): Channel[] {
   return CHANNELS.filter((c) => c.live && c.url.trim().length > 0);
 }
 
+/** The site's own feed of essays, for reader apps (api/index.ts rssLiveWell). */
+export const RSS_PATH = "/rss.xml";
+
+export interface FollowLink {
+  id: string;
+  label: string;
+  href: string;
+  /** false: a path on this site, opened in place. */
+  external: boolean;
+}
+
+/**
+ * The "Follow James" row (components/FollowRow.tsx), in order: Substack,
+ * Facebook, RSS. A channel joins the row only with a real https address.
+ * Links only: nothing from Facebook or Substack is
+ * imported or embedded on this site.
+ */
+export function followLinks(): FollowLink[] {
+  const live = liveChannels();
+  const pick = (id: string, label: string): FollowLink[] => {
+    const c = live.find((x) => x.id === id);
+    return c && c.url.startsWith("https://") ? [{ id, label, href: c.url, external: true }] : [];
+  };
+  return [
+    ...pick("substack", "Substack"),
+    ...pick("facebook", "Facebook"),
+    { id: "rss", label: "RSS", href: RSS_PATH, external: false },
+  ];
+}
+
+/** One channel's address, or null when it is not live. */
+export function channelUrl(id: string): string | null {
+  return liveChannels().find((c) => c.id === id)?.url ?? null;
+}
+
 /** Canonical external profiles, for the Person schema's sameAs. */
-export const SAME_AS: string[] = [
-  "https://pastorsconnectionnetwork.com",
-  ...liveChannels().map((c) => c.url),
-];
+export const SAME_AS: string[] = liveChannels().map((c) => c.url);

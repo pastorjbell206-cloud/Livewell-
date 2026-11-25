@@ -1,0 +1,116 @@
+{
+  "area": "text",
+  "slug": "king-james-and-the-missing-verses",
+  "status": "live",
+  "question": "Why do modern Bibles leave out verses the King James Version has? Have they taken words out of God's word?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Eleventh run (2026-11-20): five more pieces in the text area",
+    "key": "g"
+  },
+  "record": "docs/work/elite/apol-pilot/king-james-and-the-missing-verses.md",
+  "objectionSource": {
+    "author": "John William Burgon",
+    "title": "The Revision Revised",
+    "year": 1883
+  },
+  "shortAnswer": "They haven't taken anything out of the text as it was first written, though it's easy to see why it looks that way. The King James Version of 1611 was translated from the printed Greek New Testament of its day, the text later called the Textus Receptus, which goes back to Erasmus's editions from 1516 and rests on a small number of late medieval manuscripts. Since then thousands of manuscripts have been studied, many of them far older, and in a few dozen places they show that words the King James has were added by copyists over the centuries. Modern Bibles follow the older evidence, and most say so in a note. The differences run both ways: in places modern Bibles have words the King James lacks. No doctrine of the creeds depends on any of them. Christians who love the King James and keep to its text are brothers and sisters, and their concern for God's word deserves an answer, not a sneer.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "The worry usually starts with a Bible open on a kitchen table. A reader looks up Acts 8:37, where in the King James the Ethiopian official confesses that he believes Jesus Christ is the Son of God, and finds the verse number in his newer Bible followed by nothing, or by a footnote. He looks up 1 John 5:7 and finds that \"there are three that bear record in heaven, the Father, the Word, and the Holy Ghost: and these three are one\" is gone. He finds that the familiar end of the Lord's Prayer, \"for thine is the kingdom, and the power, and the glory, for ever\", has moved to a note. It's natural to ask who took these words out, and why.\n\nThe serious case behind that question is older than any modern controversy. When the Revised Version of the New Testament appeared in England in 1881, with a new Greek text behind it that leaned heavily on two fourth-century codices, Vaticanus and Sinaiticus, John William Burgon, the Dean of Chichester, answered it in a series of articles collected as *The Revision Revised* (1883). Burgon argued that the revisers' theory had no foundation in history, that their trust in the two codices was misplaced, and that the text the church had actually read for centuries, preserved in the great majority of manuscripts, was far more likely to be right than a few old copies that had sat unused.\n\nThose who defend the King James, its Greek text or the reading of most manuscripts make the case today in several forms. Some hold that the reading of the majority of manuscripts, the Byzantine text, is usually original, and Maurice Robinson and William Pierpont have edited a Greek New Testament on that principle (2005). Some, especially in Reformed churches, hold to the printed Greek text of the Reformation as the text God has kept, citing the Westminster Confession's statement that the Scriptures in their original languages have been \"kept pure in all ages\". Some hold that the King James translation itself is the preserved word of God in English. Under all of them lies one conviction: God promised to preserve his word, and it isn't credible that he left the church for centuries with a corrupted text, to be repaired by scholars from a handful of manuscripts."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "A good deal. The King James Version is a great translation, made with care by learned men, and its English has shaped the language. The conviction that God preserves his word is a Christian conviction, and those who hold it are right to take any change to the Bible they read with great seriousness. They are also right that some Christians first met these differences as a shock, because no one at church explained the brackets and notes in their new Bibles. That failure belongs to the church, not to the people who were troubled by it.\n\nBurgon was a learned man, and his main point is not foolish. The Byzantine text was the text of the Greek-speaking church for most of its history. And some defenders of modern texts have spoken as though age alone settled every question, which it doesn't. An old manuscript can carry an old mistake, and a later manuscript can preserve an older reading. Modern editors don't work by age alone, and the best of them would say so."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "Begin with where the King James's Greek text came from. Erasmus published the first printed Greek New Testament in 1516, from late medieval manuscripts. For Revelation he had one manuscript, borrowed from Johannes Reuchlin, which had lost its last page, and for the last six verses of the book he is widely held to have translated the Latin back into Greek, so that his wording there matches no known Greek manuscript. Some defenders of the Textus Receptus dispute this account. Erasmus left the Johannine Comma, the words about the three in heaven, out of his first two editions in 1516 and 1519 and put it into his third in 1522. Later printers, Robert Estienne (Stephanus) in 1550 and Theodore Beza in several editions, revised his text, and the King James translators worked from printed editions in this line. The name Textus Receptus comes later still, from the preface of an edition printed by the Elzevir firm in Leiden in 1633, which described its text as now received by all.\n\nThe King James translators didn't think their Greek text was beyond question. At Luke 17:36 the 1611 edition carries a note in its margin saying that the verse \"is wanting in most of the Greek copies\". They knew of variants and said so.\n\nThen look at the verses themselves. The Berean Standard Bible this site uses leaves sixteen verse numbers empty in the New Testament because the words are missing from the earliest manuscripts: Matthew 17:21, 18:11 and 23:14; Mark 7:16, 9:44, 9:46, 11:26 and 15:28; Luke 17:36 and 23:17; John 5:4; Acts 8:37, 15:34, 24:7 and 28:29; and Romans 16:24. It also flags the ending of Mark and the woman caught in adultery, which have their own page in this area. Look up any of them in the Study Bible's notes and a pattern appears. The words are absent from the oldest witnesses, often in several regions at once, and present in later ones. Many of them repeat words found elsewhere: Mark 9:44 and 9:46 repeat 9:48 word for word, and Matthew 18:11 echoes Luke 19:10, the kind of filling-in a copyist did when one Gospel reminded him of another. Some come from worship. The doxology of the Lord's Prayer is missing from Codex Sinaiticus, Codex Vaticanus and Codex Bezae, and early commentators on the prayer, Tertullian, Origen and Cyprian, don't have it. A closing word of praise was in use in the church's prayer very early, and it is easy to see how it came into the copies. The Comma came through Latin copies and appears in only a handful of late Greek manuscripts, some in the margin. The Greek theologians who defended the Trinity in the fourth century never quoted it.\n\nThe differences don't all run one way. In Matthew 24:36 the oldest manuscripts have Jesus say that not even the Son knows the day or hour, and the King James, following later manuscripts, lacks \"nor the Son\". Modern Bibles restore it. In John 1:18 the two earliest papyri, P66 and P75, call Jesus \"God\" where the King James, with the later manuscripts, has \"Son\". A theory that modern editors set out to lower Christ has to explain why they printed both."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is an argument about which text is earlier, set against what each side's evidence shows.",
+      "steps": [
+        "Words have been taken out of God's word only if they belonged to the text as first written, so the question is which reading is older, not which printed Bible is older.",
+        "For the verses at issue, the evidence is of one kind: absence from the oldest witnesses in several regions, presence in later ones, and in many cases a visible source for the addition, such as a parallel Gospel, the church's worship, or the Latin.",
+        "The King James translators worked from printed editions made between 1516 and 1611 from late manuscripts, before most of the oldest witnesses were known, and they themselves noted variants.",
+        "The changes modern editions make run in both directions and leave every doctrine of the creeds where it was."
+      ],
+      "conclusion": "So: modern Bibles haven't taken words out of God's word. They have followed older evidence that the King James translators didn't have, and the King James remains a faithful translation of the Greek text it had.",
+      "after": "The weight sits on the second step. It is the one a King James reader can test for himself: take any of the sixteen verses, read the Study Bible's note on it, and ask whether the witnesses and the likely source of the words are fairly described.",
+      "weightStep": 2
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply is Burgon's, sharpened by faith. God promised to preserve his word. The text the church actually read, copied and preached for a thousand years is the Byzantine text, found in the great majority of manuscripts. It isn't credible that God's providence would leave his people with a corrupted Bible all that time and then hand the true text back through a few old copies that the church itself had stopped using.\n\nThat conviction deserves a straight answer, because it is a conviction about God, not only about manuscripts. Two things can be said. First, nothing in a modern edition was restored from nowhere. The shorter readings were in the church's hands all along: in the oldest Greek copies, in the early translations, and in the quotations of early writers, some of whom, like Eusebius on the ending of Mark, commented on the differences. Providence kept the evidence. It didn't keep it in only one stream.\n\nSecond, the Textus Receptus is not the same as the majority of manuscripts, and its defenders have to choose between them. The Comma stands in a handful of late Greek copies against the whole Greek tradition. The last verses of Revelation in Erasmus's text, on the usual account, match no Greek manuscript at all. The printed editions differ among themselves, Erasmus's 1516 from his 1522, Stephanus from Beza. If God preserved his word in one printed edition, which one? A doctrine of preservation that points to the whole tradition, copied in many places and checked against itself, fits the evidence and the promise better than one that points to a single Reformation printing. Robinson and Pierpont's majority-text edition is a serious alternative to the critical text on just this ground, and the arguments between those two schools are real scholarly arguments. The claim that only the King James, or only the Textus Receptus, is God's word has the hardest case to make."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "Some of these passages are still argued. The ending of Mark has defenders among careful scholars, and Luke 22:43-44, the angel and the bloody sweat, which the King James has and the standard critical edition prints in brackets, is a close case. How much weight the majority of manuscripts should carry against the oldest is a real question between the critical-text and majority-text schools. And Christians who share the same evidence still differ on what God's promise to preserve his word guarantees: the substance of the text in the church's hands, or the very words in a particular printed form. None of these questions can be settled by calling the other side names, and none of them is settled here."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Faithful Christians hold every position described on this page, and this page takes no side among them. Some read the King James and believe it to be God's preserved word in English. Some keep to the printed Greek text of the Reformation as the text the church received. Some follow the majority of manuscripts. Most modern scholars, evangelicals among them, follow critical editions built on the oldest witnesses. Christians also differ, as the next page in this area takes up, on which English translation serves a church best. These are family arguments among people who all confess that the Scriptures are God's word. The King James reader who has worried over a missing verse is not an opponent to be won. He is a brother whose care for every word of Scripture the rest of the church could stand to learn."
+    }
+  ],
+  "otherSide": [
+    "John William Burgon, *The Revision Revised* (1883). The classic case against the Revised Version's Greek text.",
+    "Maurice Robinson and William Pierpont, *The New Testament in the Original Greek: Byzantine Textform* (2005).",
+    "Zane Hodges and Arthur Farstad, *The Greek New Testament According to the Majority Text*, 2nd ed. (1985)."
+  ],
+  "further": [
+    "James R. White, *The King James Only Controversy* (1995; 2nd ed., 2009).",
+    "D. A. Carson, *The King James Version Debate: A Plea for Realism* (1979).",
+    "Bruce M. Metzger, *A Textual Commentary on the Greek New Testament* (1971; 2nd ed., 1994). The evidence for each verse."
+  ],
+  "onSite": [
+    "\"Two famous passages were not in the earliest Bibles\" (/questions/text/passages-not-in-the-earliest-bibles), on the ending of Mark, John 7:53 to 8:11, the Comma, Luke 22:43-44 and Acts 8:37.",
+    "\"Who decides what the Greek New Testament says?\" (/questions/text/who-decides-what-the-text-says), on how an edition is made.",
+    "The Study Bible's notes on Matthew 6, Matthew 24, Luke 17 and 1 John 5, which give the witnesses for the passages above and which this page agrees with."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "matthew",
+        "chapter": 6
+      },
+      {
+        "book": "matthew",
+        "chapter": 24
+      },
+      {
+        "book": "luke",
+        "chapter": 17
+      },
+      {
+        "book": "1-john",
+        "chapter": 5
+      }
+    ],
+    "answers": [
+      "why-would-anyone-trust-the-bible"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "The Greek text behind the Revised Version and modern Bibles rests on a few corrupt manuscripts; the traditional text the church used is right",
+      "proponent": "John William Burgon",
+      "work": "The Revision Revised",
+      "year": 1883
+    },
+    {
+      "claim": "The reading of the majority of manuscripts, the Byzantine text, is usually original",
+      "proponent": "Maurice Robinson and William Pierpont",
+      "work": "The New Testament in the Original Greek: Byzantine Textform",
+      "year": 2005
+    }
+  ]
+}

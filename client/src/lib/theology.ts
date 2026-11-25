@@ -98,8 +98,8 @@ export const DOCTRINE_INDEX: DoctrineIndexEntry[] = [
   // Pillar 1 — Systematic theology
   { slug: "scripture", pillar: "Systematic", title: "What Is the Bible, and Can We Trust It?", blurb: "Revelation, inspiration, inerrancy and infallibility, and how the church received the canon.", triage: "second-order", ready: true },
   // The Doctrine of Scripture wave — eight worked doctrines that take the scripture overview deeper
-  { slug: "revelation", pillar: "Systematic", title: "How God Speaks", blurb: "General and special revelation, and how far the heavens can take you without a word.", triage: "second-order", ready: true },
-  { slug: "inspiration", pillar: "Systematic", title: "What Inspired Means", blurb: "Dictation, verbal-plenary, dynamic, and encounter. Four accounts of how the breath of God became human words.", triage: "second-order", ready: true },
+  { slug: "revelation", pillar: "Systematic", title: "How Does God Speak to Us?", blurb: "General and special revelation, and how far the heavens can take you without a word.", triage: "second-order", ready: true },
+  { slug: "inspiration", pillar: "Systematic", title: "What Does It Mean That the Bible Is Inspired?", blurb: "Dictation, verbal-plenary, dynamic, and encounter. Four accounts of how the breath of God became human words.", triage: "second-order", ready: true },
   { slug: "inerrancy", pillar: "Systematic", title: "Inerrancy and Its Spectrum", blurb: "The Chicago Statement, infallibility, and limited inerrancy. What the battle for the Bible was actually about.", triage: "second-order", ready: true },
   { slug: "ot-canon", pillar: "Systematic", title: "How We Got the Old Testament", blurb: "When the Hebrew canon closed, who says so, and how you would know.", triage: "second-order", ready: true },
   { slug: "nt-canon", pillar: "Systematic", title: "How We Got the New Testament", blurb: "The criteria, the Muratorian fragment, Athanasius in 367, and what Nicaea never decided.", triage: "second-order", ready: true },
@@ -131,5 +131,5 @@ export const DOCTRINE_INDEX: DoctrineIndexEntry[] = [
   { slug: "last-things", pillar: "Systematic", title: "How Does It End?", blurb: "Death, the return of Christ, the millennium, judgment, and the new creation.", triage: "third-order", ready: true },
   // Pillar 2 — Church history lives as its own narrative page at /theology/history
   // Pillar 3 — Biblical theology
-  { slug: "covenant-frameworks", pillar: "Biblical", title: "How the Whole Story Fits", blurb: "Covenant theology, dispensationalism, and progressive covenantalism as three ways to read the one story.", triage: "second-order", ready: true },
+  { slug: "covenant-frameworks", pillar: "Biblical", title: "How Does the Whole Bible Fit Together?", blurb: "Covenant theology, dispensationalism, and progressive covenantalism as three ways to read the one story.", triage: "second-order", ready: true },
 ];

@@ -1,0 +1,109 @@
+{
+  "slug": "baptism-and-supper",
+  "title": "Baptism and the Lord's Supper",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "baptism-and-supper",
+  "line": {
+    "younger": "Jesus gave his church two things to do: baptism with water, and a meal of bread and a cup. Seven pictures of what Christians share, and where churches do them differently.",
+    "older": "The two signs Jesus gave his church, in seven pictures: what every church shares in baptism and the Lord's Supper, and the questions on which faithful churches differ, set out without taking a side."
+  },
+  "poster": "A river runs between low banks, and on a table beside it lie a loaf of bread and a cup.",
+  "frames": [
+    {
+      "id": "water",
+      "name": "Water",
+      "still": "A river runs between low banks, its water moving.",
+      "younger": "Before he went back to his Father, Jesus told his friends to make disciples of every nation and to baptize them in the name of the Father, the Son and the Holy Spirit. Christians have baptized with water ever since.",
+      "older": "Jesus' last command to his disciples included baptism: make disciples of all nations, baptizing them in the name of the Father, the Son and the Holy Spirit. From the church's first day, those who received the message were baptized.",
+      "verse": {
+        "ref": "Matthew 28:19",
+        "text": "Therefore go and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Spirit,"
+      }
+    },
+    {
+      "id": "bread-and-cup",
+      "name": "Bread and cup",
+      "still": "The river has gone. On a plain table lie a loaf of bread, broken in two, and a cup.",
+      "younger": "On the night before he died, Jesus ate a meal with his friends. He broke bread, gave them a cup, and told them to keep doing this to remember him.",
+      "older": "Paul passes on what he received: on the night he was betrayed, the Lord Jesus took bread, gave thanks, broke it and said, “This is My body, which is for you; do this in remembrance of Me.” The cup, he said, is the new covenant in his blood.",
+      "verse": {
+        "ref": "1 Corinthians 11:26",
+        "text": "For as often as you eat this bread and drink this cup, you proclaim the Lord’s death until He comes."
+      }
+    },
+    {
+      "id": "shared",
+      "name": "What every church shares",
+      "still": "The river and the table stand side by side, and one gold line runs above both of them.",
+      "younger": "Both point to Jesus. Baptism pictures being joined to Jesus, as if buried with him and raised to a new life. The bread and cup remember his death, until he comes again. These belong to the whole church together.",
+      "older": "Both point to the same thing, Jesus' death and resurrection. Paul says believers were buried with Christ through baptism so that they may walk in newness of life, and that the Supper proclaims the Lord's death until he comes. Churches agree that repentance, faith and baptism belong together in the New Testament, and that the Supper is received with self-examination and love.",
+      "verse": {
+        "ref": "Romans 6:4",
+        "text": "We were therefore buried with Him through baptism into death, in order that, just as Christ was raised from the dead through the glory of the Father, we too may walk in newness of life."
+      }
+    },
+    {
+      "id": "who",
+      "name": "Who is baptized?",
+      "still": "Two scenes side by side: a parent holds a baby beside a bowl of water, and a grown person stands in a river.",
+      "younger": "Churches do not all agree on who should be baptized. Some baptize the babies of Christian families, as part of God's family from the start. Others baptize people when they are old enough to say for themselves that they trust Jesus.",
+      "older": "Some churches baptize the children of believers, pointing to Peter's promise to “you and your children”. Others, Baptists and many evangelicals among them, baptize only those who confess faith for themselves, noting that in Acts those who received the message were baptized. Both read the same chapters carefully.",
+      "verse": {
+        "ref": "Acts 2:39",
+        "text": "This promise belongs to you and your children and to all who are far off"
+      }
+    },
+    {
+      "id": "how",
+      "name": "How?",
+      "still": "Water is poured from a small jug over a person's head, and beside it a person goes down under the water of a river.",
+      "younger": "Churches also differ on how. Some pour or sprinkle water. Others take the person all the way under the water and up again. All of them use water, and the name of the Father, the Son and the Holy Spirit.",
+      "older": "Some churches pour or sprinkle water; others immerse, taking the person under the water and up again, a picture of burial and rising. Churches also differ on what baptism does. Catholic, Orthodox and Lutheran Christians hold it to be a sacrament through which God grants forgiveness and the Spirit; Reformed and Presbyterian churches call it a sign and seal of the covenant of grace; Baptists and many evangelicals call it an ordinance, the commanded public sign that follows faith."
+    },
+    {
+      "id": "supper",
+      "name": "What is the Supper?",
+      "still": "The bread and the cup on the table again, alone, with nothing else drawn.",
+      "younger": "Christians understand the bread and the cup in different ways. Some believe Jesus is present in a special way in the bread and wine; others see the meal most of all as remembering him. All of them eat it to remember his death until he comes.",
+      "older": "Roman Catholic teaching holds that the bread and wine become Christ's body and blood. Lutherans confess Christ's true body and blood present in, with and under the bread and wine. Reformed churches teach a real spiritual feeding on Christ by faith. Many Baptist and free churches stress a memorial meal of remembrance and proclamation. All agree that the meal proclaims the Lord's death until he comes."
+    },
+    {
+      "id": "one-lord",
+      "name": "One Lord",
+      "still": "The river and the table again, and above them one gold line joining them.",
+      "younger": "Churches that do these things differently still belong to one Lord. If you want to know how your church does them, and why, ask a parent or your pastor.",
+      "older": "Paul writes of one Lord, one faith, one baptism. Faithful churches differ on these questions while confessing that one Lord, and this moving picture does not choose between them. How your own church practices baptism and the Supper, and why, is a good question to bring to a parent or a pastor.",
+      "verse": {
+        "ref": "Ephesians 4:4-5",
+        "text": "There is one body and one Spirit, just as you were called to one hope when you were called; one Lord, one faith, one baptism"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Have you seen a baptism, or the Lord's Supper, at church? What did you notice?",
+    "older": "Both signs point away from the person taking part, to what Jesus did. Why do you think Jesus gave his church things to do with water, bread and a cup, and not only words?"
+  },
+  "read": [
+    { "label": "Matthew 28", "href": "/study/bible/matthew/28" },
+    { "label": "Acts 2", "href": "/study/bible/acts/2" },
+    { "label": "Romans 6", "href": "/study/bible/romans/6" },
+    { "label": "1 Corinthians 11", "href": "/study/bible/1-corinthians/11" },
+    { "label": "Ephesians 4", "href": "/study/bible/ephesians/4" }
+  ],
+  "stops": ["church"],
+  "cards": ["church"],
+  "differ": {
+    "text": "Christians share the command Jesus gave, to baptize in the name of the Father, the Son and the Holy Spirit, and the meal that proclaims the Lord's death until he comes. They differ on who should be baptized and how, on what baptism does, and on what happens in the Supper. This moving picture does not choose between them. Each view is set out in its own words in",
+    "links": [
+      { "label": "the Study Bible's notes on Acts 2", "href": "/study/bible/acts/2" },
+      { "label": "1 Corinthians 11", "href": "/study/bible/1-corinthians/11" }
+    ]
+  },
+  "deeper": [
+    { "label": "Where the traditions differ, and what they share", "href": "/theology/traditions" },
+    { "label": "Can you be a Christian without going to church?", "href": "/answers/can-you-be-a-christian-without-church" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "water", "verse": false}, {"id": "bread-and-cup", "verse": true}, {"id": "shared", "verse": false}, {"id": "who", "verse": true}, {"id": "how", "verse": false}, {"id": "supper", "verse": false}, {"id": "one-lord", "verse": false}]},
+  "end": { "label": "Go to the stop: The Church and the Spirit", "href": "/study/explorer/church" }
+}

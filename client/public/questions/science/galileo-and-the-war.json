@@ -1,0 +1,103 @@
+{
+  "area": "science",
+  "slug": "galileo-and-the-war",
+  "status": "live",
+  "question": "The church condemned Galileo. Hasn't religion always been at war with science?",
+  "ledger": {
+    "file": "docs/work/elite/apol-ledger.md",
+    "heading": "Thirteenth run (2026-11-20): an independent editor's read of the authors area, and the science area",
+    "key": "p"
+  },
+  "record": "docs/work/elite/apol-pilot/science/galileo-and-the-war.md",
+  "objectionSource": {
+    "author": "John William Draper",
+    "title": "History of the Conflict between Religion and Science",
+    "year": 1874
+  },
+  "shortAnswer": "The church did condemn Galileo, and it was wrong to. In 1616 Rome's theologians judged the claim that the sun stands at the center \"formally heretical,\" and in 1633 the Roman Inquisition found Galileo \"vehemently suspected of heresy,\" made him abjure, banned his book and confined him to his house until he died. Christians should say that plainly. But the case doesn't show a permanent war. Galileo was a believer who argued from Augustine; the earth's motion had not yet been demonstrated when he was tried; and the picture of science and religion as two armies was drawn in the nineteenth century, by John William Draper in 1874 and Andrew Dickson White in 1896, with history bent to fit it. Historians of science, believers and unbelievers alike, have spent fifty years taking that picture apart. What they found is neither war nor harmony but a long and mixed history, with real failures in it.",
+  "sections": [
+    {
+      "role": "objection",
+      "heading": "The objection at its strongest",
+      "body": "The objection has a famous history of its own. In 1874 John William Draper, a chemist and physician who had made some of the earliest photographs of the moon, published a *History of the Conflict between Religion and Science*. In 1896 Andrew Dickson White, the first president of Cornell University, followed with *A History of the Warfare of Science with Theology in Christendom*, two volumes running from astronomy and geology to medicine. Between them they gave the modern world its picture of two forces, one marching toward the light and the other holding it back.\n\nGalileo is the center of that picture, and the facts at its core are true. Galileo's telescope gave him reasons to think Copernicus right, that the earth moves around the sun. Opponents answered with Scripture, above all the day Joshua commanded the sun to stand still and \"the sun stood still\" (Joshua 10:12-13, BSB). The church's theologians judged the sun-centered view heresy, and when Galileo defended it anyway, the Inquisition tried him, forced him to his knees to renounce it, and kept him a prisoner in his own house for the rest of his life. His book stayed on the church's list of forbidden books for two centuries.\n\nPut at full strength, the objection says that this was no accident. A faith that holds its beliefs on authority must defend them against evidence, and when the evidence is about the world, the conflict is built in. Galileo was the clearest case, not the only one, and the pattern runs on into the fights over evolution. The modern sciences grew up by winning their independence from the church."
+    },
+    {
+      "role": "concessions",
+      "heading": "What is true in it",
+      "body": "The core facts should be granted without softening. On 24 February 1616 the theologians consulted by the Holy Office unanimously judged the proposition that the sun stands still at the center of the world false and absurd in philosophy and \"formally heretical,\" because it expressly contradicts Holy Scripture in many places, and the proposition that the earth moves at least erroneous in faith. On 5 March 1616 the Congregation of the Index suspended Copernicus's book until corrected and banned outright a book that defended the view from Scripture. Galileo was summoned to Cardinal Robert Bellarmine in February 1616 and warned not to hold or defend the view; what exactly he was told is disputed, because the Inquisition's minute records a strict order not to teach it in any way while Bellarmine's own certificate records only the warning.\n\nIn 1632 Galileo published his *Dialogue Concerning the Two Chief World Systems*, and in 1633 he was tried. On 22 June 1633 the Inquisition declared him \"vehemently suspected of heresy\" for holding that the sun is motionless at the center and the earth moves. He was made to abjure on his knees, his *Dialogue* was prohibited, and he was sentenced to formal imprisonment, which was changed the next day to house arrest. He lived under it, at Arcetri near Florence, until his death in 1642. The general ban on books teaching the earth's motion wasn't dropped until 1758, and Copernicus's book and Galileo's *Dialogue* were taken off the Index only in 1835.\n\nThe church's judges were not only defending astronomy. They were defending a way of reading Scripture as though its descriptions of the sky were a cosmology, and that was a mistake of theology before it was a mistake of science. Christians have repeated versions of it since."
+    },
+    {
+      "role": "evidence",
+      "heading": "The evidence",
+      "body": "Start with what the war story leaves out of the Galileo case itself. Galileo was not an unbeliever fighting the church from outside. In 1613 he wrote to his former student Benedetto Castelli, and in 1615 to the Grand Duchess Christina, arguing that Scripture speaks in the language of ordinary appearance and doesn't settle questions of astronomy. He quoted Augustine, who had written early in the fifth century, in *The Literal Meaning of Genesis*, that for an unbeliever to hear a Christian talk nonsense about the natural world was \"a disgraceful and dangerous thing.\" He repeated a saying he credited to a churchman of high rank, that Scripture teaches how one goes to heaven, not how the heavens go. The church that condemned him had forgotten one of its own best teachers, and he was reminding it.\n\nThen the state of the evidence in 1633. Galileo's telescope had shown that Venus has phases like the moon and that moons circle Jupiter, which damaged the old earth-centered system of Ptolemy. It did not prove that the earth moves. The decisive sign, a shift in the apparent positions of the nearer stars as the earth swings around the sun, was too small to measure for two more centuries; Friedrich Bessel first measured it convincingly in 1838. Bellarmine had written in 1615, to the Carmelite Paolo Foscarini, that if there were a true demonstration that the sun is at the center, the passages of Scripture that seemed to say otherwise would have to be interpreted with great care, but that he wouldn't believe such a demonstration existed until it was shown to him. That doesn't excuse the verdict. It does mean the case was a collision of authority, evidence still incomplete, the politics of the papal court and real theological error, not a simple battle of reason against faith.\n\nThen the details the legend added. Maurice Finocchiaro, a historian of the affair, examined the claim that Galileo was imprisoned and tortured in an essay for Ronald Numbers's *Galileo Goes to Jail and Other Myths about Science and Religion* (2009). Galileo was threatened with torture, but there is no evidence that he was tortured, and apart from perhaps three days in June 1633 he was not held in a prison. Finocchiaro also notes that for a long time after the trial the published documents made imprisonment look likely, so the myth had real roots.\n\nThen the wider history. The war picture needs other battles, and some of the most repeated turn out to be invented. Jeffrey Burton Russell showed in *Inventing the Flat Earth* (1991) that educated people in medieval Europe knew the earth was round, and that the story of Columbus overturning a flat-earth church was spread in the nineteenth century, by Washington Irving's 1828 life of Columbus among others, and found its widest use in the years of the fights over evolution. Numbers, described by one reviewer as a religious agnostic, called the idea of constant conflict \"the greatest myth in the history of science and religion.\" John Hedley Brooke, in *Science and Religion: Some Historical Perspectives* (1991), argued that the record shows no single pattern, of war or of harmony, but complexity, with religious belief playing many different parts in the history of science. Peter Harrison, in *The Territories of Science and Religion* (2015), argues that \"science\" and \"religion\" as two separate territories are themselves modern categories, which makes a war between them across every century hard even to state.\n\nAnd the people keep breaking the pattern. Gregor Mendel, whose experiments with peas began the science of genetics, was an Augustinian friar and became abbot of his monastery. Georges Lemaître, a Catholic priest, argued in 1927 that the universe is expanding and in 1931 that it began from what he called a primeval atom."
+    },
+    {
+      "role": "argument",
+      "heading": "The argument, laid out",
+      "intro": "This is a historical argument about whether one case, however grave, shows a permanent war.",
+      "steps": [
+        "The church's condemnation of Galileo was real and wrong: in 1616 and 1633 its authorities judged a true account of the heavens heretical and punished the man who defended it.",
+        "But the case turned on particular errors, chiefly reading Scripture's descriptions of the sky as cosmology, at a time when the earth's motion had not been demonstrated, and believers on both sides argued from the church's own tradition.",
+        "The wider claim of a constant war rests on a nineteenth-century account, Draper's and White's, whose examples historians of science have tested and found often mistaken or invented, and which they now replace with a picture of mixed and changing relations."
+      ],
+      "conclusion": "So: Galileo shows that the church can be gravely wrong about nature when it mistakes its reading of Scripture for Scripture, and that it should say so. It doesn't show that faith and science are enemies by nature. The war is a story about the history, not the history itself.",
+      "after": "The weight sits on the third step, because the objection's force comes from the pattern, not the single case. A reader can test it against the historians named here, most of whom have no stake in defending the church.",
+      "weightStep": 3
+    },
+    {
+      "role": "reply",
+      "heading": "The strongest reply, and an answer",
+      "body": "The strongest reply says that \"complexity\" is a polite way of hiding the pattern. Fine, the flat earth is a myth and Galileo wasn't tortured. But the church did condemn him, did ban the books for two centuries, and a pope addressed the case before the Pontifical Academy of Sciences only in 1992. Where a religion claims authority over truth, it will collide with inquiry whenever inquiry reaches a different answer. The details of Draper and White may be wrong; their instinct was right.\n\nThat deserves an honest answer, and part of it is a concession. Religious authority has resisted findings it disliked, in 1633 and since, and Christians in the fights over evolution have sometimes repeated the mistake of 1616. On 31 October 1992 Pope John Paul II, receiving the conclusions of a commission on the case, addressed it before the Pontifical Academy of Sciences, and many heard in it an admission that came three and a half centuries late.\n\nBut the reply's instinct proves less than it claims. The same tradition that condemned Galileo produced many of the people who did the work: Galileo himself, Mendel and Lemaître among them. The question isn't whether believers have ever resisted evidence. Everyone has, believers and unbelievers alike, scientists included. The question is whether Christian belief requires that resistance. The church's own best teachers say it doesn't. Augustine warned against it in the fifth century, and Galileo quoted him. Scripture itself gives the reason to search: \"It is the glory of God to conceal a matter and the glory of kings to search it out\" (Proverbs 25:2, BSB). A faith that confesses the world was made by a rational God has every reason to study it and none to fear what it finds there."
+    },
+    {
+      "role": "unresolved",
+      "heading": "What remains unresolved",
+      "body": "Historians still argue over many details of the affair: what Galileo was told in 1616, how far Pope Urban VIII's anger at the *Dialogue* shaped the trial, how to weigh the scientific arguments on each side in 1633. The 1616 consultors' report has even been argued over for its punctuation. The 1992 address is read differently, by some as an apology and by others as a defense of the church's intentions. And historians disagree about whether \"complexity\" is itself the best summary or only a refusal to summarize. None of those debates brings back the war thesis in its nineteenth-century form."
+    },
+    {
+      "role": "differ",
+      "heading": "Where Christians differ",
+      "body": "Christians differ on how to relate Scripture to the findings of science, and the site takes no side among the faithful positions. Some hold that where Scripture and a scientific consensus seem to disagree, the consensus should be questioned; others that Scripture speaks in the language of appearance and was never meant to settle such questions; most stand somewhere between, case by case. They differ too on the age of the earth and on evolution, questions the page on evolution and Genesis sets out without ranking. What none of them needs to hold, and what the church learned at great cost in Galileo's case, is that faithfulness to Scripture requires reading it as a textbook of astronomy."
+    }
+  ],
+  "otherSide": [
+    "John William Draper, *History of the Conflict between Religion and Science* (1874).",
+    "Andrew Dickson White, *A History of the Warfare of Science with Theology in Christendom* (1896)."
+  ],
+  "further": [
+    "Ronald L. Numbers, ed., *Galileo Goes to Jail and Other Myths about Science and Religion* (2009).",
+    "John Hedley Brooke, *Science and Religion: Some Historical Perspectives* (1991).",
+    "Jeffrey Burton Russell, *Inventing the Flat Earth: Columbus and Modern Historians* (1991).",
+    "Peter Harrison, *The Territories of Science and Religion* (2015)."
+  ],
+  "onSite": [
+    "\"Science keeps explaining what people once put down to God. Hasn't it made God unnecessary?\" (/questions/science/has-science-made-god-unnecessary), on the deeper form of the objection.",
+    "The argued answer \"Do I have to choose between faith and science?\" (/answers/do-i-have-to-choose-between-faith-and-science), which tells the Galileo case more briefly.",
+    "The Study Bible's notes on Joshua 10, on the day the sun stood still."
+  ],
+  "links": {
+    "studyNotes": [
+      {
+        "book": "joshua",
+        "chapter": 10
+      }
+    ],
+    "answers": [
+      "do-i-have-to-choose-between-faith-and-science"
+    ]
+  },
+  "claims": [
+    {
+      "claim": "Religion and science have been in conflict throughout history, with the church holding back the advance of knowledge",
+      "proponent": "John William Draper",
+      "work": "History of the Conflict between Religion and Science",
+      "year": 1874
+    },
+    {
+      "claim": "The history of science is a history of warfare with dogmatic theology",
+      "proponent": "Andrew Dickson White",
+      "work": "A History of the Warfare of Science with Theology in Christendom",
+      "year": 1896
+    }
+  ]
+}

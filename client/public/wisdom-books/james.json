@@ -1,0 +1,30 @@
+{
+ "book": "james",
+ "name": "James",
+ "chapters": 5,
+ "verses": 108,
+ "about": "Source of the Wisdom Books Explorer's James (/tools/wisdom-books). Each verse is tagged by hand with one or more themes fitted to this letter; 'heading' marks the greeting. Verse text is never typed here: scripts/build-wisdom-books-index.mjs fills it from the BSB. noteTheme names a theme in the Study Bible's introduction to James (client/public/bible/notes/james/intro.json), shown word for word. The teaching panel is the introduction's counsel on reading the letter, the hard question on James 2 (faith and deeds with Paul), and the hard question on Romans 4 (the same question from Paul's side), word for word.",
+ "teaching": { "hard": [2, { "book": "romans", "c": 4 }] },
+ "themes": [
+  { "id": "trials", "name": "Trials and endurance", "line": "Joy in trials of many kinds, the testing that grows perseverance, and the prophets and Job as examples of patience.", "noteTheme": "Trials and endurance", "deeper": ["suffering", "perseverance", "waiting-on-god"] },
+  { "id": "wisdom", "name": "Wisdom from above", "line": "Asking God for wisdom without doubting, and the wisdom from above set against jealousy and selfish ambition.", "noteTheme": "Wisdom from above", "deeper": ["decisions-and-guidance", "spiritual-pride"] },
+  { "id": "faith", "name": "Faith and deeds", "line": "Doers of the word and not hearers only, faith that is dead without deeds, and Abraham and Rahab.", "noteTheme": "Faith and deeds", "deeper": ["grace-and-works", "lukewarm-faith", "serving-others"] },
+  { "id": "rich", "name": "The poor and the rich", "line": "The lowly lifted and the rich brought low, favoritism in the assembly, wages withheld, and riches that rot.", "noteTheme": "The poor and the rich", "deeper": ["justice-and-the-poor", "money", "greed"] },
+  { "id": "tongue", "name": "The tongue", "line": "Quick to listen and slow to speak, the small fire of the tongue, slander and complaining, and a plain yes or no.", "noteTheme": "Speech", "deeper": ["gossip-and-the-tongue", "anger", "keeping-promises"] },
+  { "id": "law", "name": "The royal law and mercy", "line": "Love your neighbor as yourself, the law that gives freedom, care for orphans and widows, and mercy that triumphs over judgment.", "deeper": ["kindness", "forgiveness", "justice-and-the-poor"] },
+  { "id": "desire", "name": "Desire, temptation and sin", "line": "Temptation that comes from our own desires and not from God, and quarrels that come from passions at war within.", "deeper": ["temptation", "anger", "jealousy"] },
+  { "id": "prayer", "name": "Asking and praying", "line": "Asking in faith, asking with wrong motives, and the prayer of faith for the suffering, the sick and the sinner.", "deeper": ["prayer-struggles", "serious-illness", "doubt"] },
+  { "id": "humble", "name": "Humility and drawing near to God", "line": "God opposes the proud and gives grace to the humble: submit, draw near, grieve over sin, and confess it to one another.", "deeper": ["pride", "spiritual-pride", "forgiveness"] },
+  { "id": "world", "name": "The world and tomorrow", "line": "Friendship with the world, the rich who fade in their pursuits, and boasting about tomorrow when life is a mist.", "deeper": ["consumerism-and-stuff", "fear-of-the-future", "greed"] },
+  { "id": "giver", "name": "God the giver", "line": "The unchanging Father who gives every good gift and new birth, tempts no one, gives grace to the humble, and is full of compassion and mercy.", "deeper": ["gods-sovereignty", "gratitude", "assurance-of-faith"] },
+  { "id": "coming", "name": "The Lord's coming and his judgment", "line": "The crown of life, judgment without mercy for the merciless, the Judge at the door, and patience until the Lord comes.", "deeper": ["heaven-and-eternity", "hell-and-judgment", "patience"] },
+  { "id": "together", "name": "One another", "line": "No favoritism, care for a brother or sister in need, no slander or complaining, confession and prayer for each other, and bringing back the one who wanders.", "deeper": ["wayward-child", "finding-a-church", "serving-others"] }
+ ],
+ "tags": {
+  "1": [["1", "heading"], ["2-4", "trials"], ["5", "wisdom prayer giver"], ["6-8", "wisdom prayer"], ["9", "rich humble"], ["10-11", "rich world"], ["12", "trials giver coming"], ["13", "trials desire giver"], ["14-16", "desire"], ["17-18", "giver"], ["19-20", "tongue"], ["21", "humble desire"], ["22-24", "faith"], ["25", "faith law"], ["26", "tongue faith"], ["27", "law world"]],
+  "2": [["1-4", "rich together"], ["5", "rich giver"], ["6-7", "rich"], ["8", "law"], ["9", "law rich"], ["10-11", "law"], ["12-13", "law coming"], ["14", "faith"], ["15-16", "faith rich together"], ["17-18", "faith"], ["19", "faith giver"], ["20-26", "faith"]],
+  "3": [["1", "tongue coming"], ["2-12", "tongue"], ["13", "wisdom humble"], ["14", "wisdom desire"], ["15", "wisdom"], ["16", "wisdom desire"], ["17", "wisdom"], ["18", "wisdom together"]],
+  "4": [["1", "desire together"], ["2", "desire together prayer"], ["3", "desire prayer"], ["4-5", "world"], ["6", "humble giver"], ["7", "humble"], ["8", "humble giver"], ["9", "humble"], ["10", "humble giver"], ["11", "tongue law together"], ["12", "law giver coming"], ["13-15", "world"], ["16", "world humble"], ["17", "faith"]],
+  "5": [["1-3", "rich coming"], ["4", "rich"], ["5", "rich world"], ["6", "rich"], ["7-8", "trials coming"], ["9", "tongue together coming"], ["10", "trials"], ["11", "trials giver"], ["12", "tongue"], ["13", "prayer trials"], ["14", "prayer together"], ["15", "prayer together giver"], ["16", "prayer together humble"], ["17-18", "prayer"], ["19-20", "together"]]
+ }
+}

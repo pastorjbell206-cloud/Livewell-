@@ -1,0 +1,97 @@
+{
+  "slug": "gospel-in-a-minute",
+  "title": "The gospel in a minute",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "gospel-in-a-minute",
+  "line": {
+    "younger": "The good news of Jesus, short enough to share, in seven pictures: what went wrong, what God did about it, and the gift he gives.",
+    "older": "The gospel in seven pictures, short enough to share: made for God, broken from him, and brought back by God's own act in Christ, a gift received by faith."
+  },
+  "poster": "A wide land split by a deep gap. On the left, people stand at the edge and look across. On the right the ground rises into light, and a thin gold line already reaches out from the light over the gap.",
+  "frames": [
+    {
+      "id": "made",
+      "name": "Made for God",
+      "still": "One wide land with no break in it. A tree grows near the middle, people stand beside it, and a gold line runs from the light on the right down to the ground where the people stand, joining them to it.",
+      "younger": "God made people in his own image, to know him, to love him and to be happy with him for ever. In the beginning nothing stood between people and God.",
+      "older": "The story starts with a gift, not a problem. God made human beings in his own image, to know him and to love him for ever. Nothing stood between people and God."
+    },
+    {
+      "id": "turned",
+      "name": "We turned away",
+      "still": "The land has cracked in two. The left side, with the people on it, has slid away and down, and a deep, dark gap lies between it and the light. The gold line now stops short, in the air above God's side of the gap.",
+      "younger": "But people turned away from God and went their own way. The Bible calls that sin, and everyone has done it.",
+      "older": "People turned from God to their own way, and every one of us has followed. Sin is a break: with God, with each other, inside ourselves."
+    },
+    {
+      "id": "cannot",
+      "name": "We cannot mend it",
+      "still": "On the left, the people have piled up blocks at the edge of the gap to reach across. The pile leans out over the gap and stops far short of the other side, and one block tumbles down into the dark.",
+      "younger": "People have always tried to fix it themselves, by being good enough or by trying harder. It never reaches.",
+      "older": "Every age builds its towers: be good enough, try harder, earn your way back. The gap is too wide for us to cross."
+    },
+    {
+      "id": "comes",
+      "name": "God came to us",
+      "still": "From the light on the right, the gold line reaches all the way across the gap and comes down to the ground on the people's side. Where it lands, a new figure stands among the people: the Son, come to them.",
+      "younger": "So God came to us. The Father loved the world so much that he sent his Son. Jesus became a man and lived among us.",
+      "older": "Then God crosses the gap from his own side. The Father sends the Son because he loves the world, and the Son becomes one of us, fully God and fully man."
+    },
+    {
+      "id": "died-rose",
+      "name": "He died for our sins, and rose",
+      "still": "The two sides of the land have come back together; a thin line still shows where the break was. An empty cross stands on a small hill, and beside it a tomb cut in the rock has its round stone rolled away, with gold light in the doorway.",
+      "younger": "Jesus never did anything wrong, but he died on a cross for our sins. On the third day God raised him from the dead. He is alive.",
+      "older": "At the cross the break is mended, and God is the one who mends it. Jesus died for our sins, and on the third day he was raised, in his body.",
+      "verse": {
+        "ref": "1 Corinthians 15:3-4",
+        "text": "that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures"
+      }
+    },
+    {
+      "id": "gift",
+      "name": "A gift received",
+      "still": "One person on the joined land stands with hands open and raised. The gold line comes all the way down to where they stand. They have not climbed anywhere: the light has come to them.",
+      "younger": "This gift is received by trusting Jesus and turning back to God. Grace is God's love that you do not have to earn.",
+      "older": "The gift is received, not earned: turn around, and trust him. Faith is not a work that pays for anything. It is empty hands taking what is given."
+    },
+    {
+      "id": "for-ever",
+      "name": "With God for ever",
+      "still": "The whole land is one again. On the right a city gate stands open with gold light pouring from it, a river runs out toward us, and people walk in along the road.",
+      "younger": "Everyone who trusts Jesus is forgiven and given a new life with God, now and for ever. Read more at www.livewellbyjamesbell.co, or talk it over with a parent, a pastor or a leader you trust.",
+      "older": "Those who belong to Christ are forgiven, made God's children and given new life, now and in the life to come. Read more at www.livewellbyjamesbell.co, or talk it over with a pastor or someone you trust.",
+      "say": {
+        "younger": "Everyone who trusts Jesus is forgiven and given a new life with God, now and for ever. Read more at LiveWell by James Bell dot co, or talk it over with a parent, a pastor or a leader you trust.",
+        "older": "Those who belong to Christ are forgiven, made God's children and given new life, now and in the life to come. Read more at LiveWell by James Bell dot co, or talk it over with a pastor or someone you trust."
+      }
+    }
+  ],
+  "think": {
+    "younger": "God did not wait for people to climb back to him. He came all the way to them. What does that tell you about God? Talk about it with a parent, a pastor or a leader you trust.",
+    "older": "Which is harder to believe: that you need this gift, or that it is free? Talk it over with a parent, a pastor or a leader you trust."
+  },
+  "read": [
+    { "label": "John 3", "href": "/study/bible/john/3" },
+    { "label": "Romans 5", "href": "/study/bible/romans/5" },
+    { "label": "1 Corinthians 15", "href": "/study/bible/1-corinthians/15" },
+    { "label": "Ephesians 2", "href": "/study/bible/ephesians/2" }
+  ],
+  "stops": ["cross"],
+  "cards": ["cross"],
+  "differ": {
+    "text": "All Christians confess that sinners are saved by God's grace, through Jesus' death and resurrection, and not by their own good deeds. Churches differ on the place of baptism, on how God's choosing and our choosing fit together, and on whether a believer can fall away. This moving picture does not choose between them. The different views are set out in",
+    "links": [
+      { "label": "the Study Bible's note on Acts 2", "href": "/study/bible/acts/2" },
+      { "label": "the Honest Answer on God's choosing", "href": "/answers/does-god-choose-us-or-do-we-choose-him" },
+      { "label": "the Honest Answer on losing salvation", "href": "/answers/can-you-lose-your-salvation" }
+    ]
+  },
+  "care": "If this leaves you feeling too bad to be forgiven, or afraid, remember what Paul says: “While we were still sinners, Christ died for us” (Romans 5:8). Nobody has to carry that alone. Talk with a parent, a pastor or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "How salvation works (the longer moving picture, in nine parts)", "href": "/study/explorer/watch/how-salvation-works" },
+    { "label": "How are we saved? (the family catechism)", "href": "/family/catechism#q34" }
+  ],
+  "end": { "label": "Watch the longer film: How salvation works", "href": "/study/explorer/watch/how-salvation-works" }
+}

@@ -1,0 +1,474 @@
+{
+  "id": "roman-world",
+  "group": "The Greco-Roman World",
+  "title": "The Roman world",
+  "seoTitle": "The Roman World of Paul: What It Was Really Like",
+  "description": "A long, sourced portrait of the Roman world the first churches lived in: roads, ships and cities, Caesar and the law, the household and the patron, the gods and the emperor, clubs and meals, work and the crowded city, letters, and how the church looked from outside.",
+  "line": "The empire Paul crossed on foot and by ship: its roads and cities, its law and its gods, its households and its meals, with the evidence named as we go.",
+  "plate": "arch",
+  "updated": "2026-11-19",
+  "intro": [
+    "This is a portrait of the Roman world the first churches lived in, roughly from the reign of Augustus to the early second century: the world of Acts, of Paul's letters and of Revelation. It does not argue one point. It tries to show how people traveled, worked, ate, worshiped, wrote and were judged, so that the letters of the New Testament read like what they are: mail, carried down real roads to real cities, read aloud to people who lived in rented rooms and served in other people's houses.",
+    "Each part names its evidence as it goes. For this world there is a great deal of it: Roman historians and letter writers, laws, coins, thousands of inscriptions cut in stone, and papyrus letters from the dry sands of Egypt. Much of it was written by and for the rich, so it tells us more about senators than about the slaves and day laborers who filled most of the churches. Some of the best evidence also comes from a generation or two after Paul. Where a source is later, this portrait says so. Where historians disagree, or the evidence is thin, it says that too.",
+    "One more thing before the first part. \"Roman\" here doesn't mean one people. The empire held Greeks, Syrians, Egyptians, Jews, Gauls, Africans and many others, most of whom never saw Rome and few of whom were Roman citizens. Greek, not Latin, was the common language of the eastern cities where the churches began. The people in these pages are described as their own words and remains describe them: farmers, sailors, slaves, magistrates and parents with their own gods and their own fears, not painted villains or plaster saints."
+  ],
+  "parts": [
+    {
+      "id": "roads-ships-cities",
+      "title": "Roads, ships and cities",
+      "line": "An empire wrapped around one sea, crossed on foot at about thirty kilometers a day and by ship when the weather allowed.",
+      "icon": "map",
+      "body": [
+        "In Paul's day the empire ran from Spain to Syria and from the Rhine to the edge of the Sahara, and at its center lay not a city but a sea. Almost every place in the New Testament outside Galilee and Judea sits near the Mediterranean or on a road that leads to it. Rome held this ring of coasts with an army, a network of governors and a system of roads built first for soldiers and officials. Milestones marked the distances. Anyone could walk them: merchants, pilgrims, slaves sent on errands, and a traveling tentmaker with a few companions.",
+        "Walking was slow. The Stanford ORBIS project, a model of travel in the Roman world built by Walter Scheidel and Elijah Meeks, assumes about thirty kilometers a day on foot for an ordinary traveler, and its makers admit there is little direct evidence for the figure. At that pace the road from one city to the next could take a week, and a letter or a friend could be a month away. The road was also dangerous. Paul's own list of hardships includes rivers, bandits, the city and the open country (2 Corinthians 11:26). In Macedonia he followed one of the great roads of the empire, the Via Egnatia, which crossed the Balkans from the Adriatic toward the Aegean. Acts names its towns in order: Neapolis on the coast, Philippi, then Amphipolis and Apollonia on the way to Thessalonica (Acts 16:11-12; 17:1).",
+        "The sea was faster and cheaper, and it was where people died. Ships kept to a season. Vegetius, a Roman writer of the late fourth century, long after Paul, gives the rule sailors had inherited: the safest sailing ran from late May to mid-September, the risky months lay on either side, and from about 11 November to 10 March the sea was treated as closed. Some historians, such as Julian Beresford in The Ancient Sailing Season (2013), have shown that ships did sail in winter when profit or need pushed them, so the rule was a habit, not a law. Acts 27 shows the habit at work. The voyage to Rome was already dangerous \"because it was after the Fast,\" the Day of Atonement in the autumn, and Paul warned that pressing on would cost the ship and the cargo (Acts 27:9-10). The ship was an Alexandrian vessel bound for Italy, probably part of the grain trade that fed Rome, and it carried 276 people (Acts 27:6, 37). After the wreck on Malta the company waited three months and then sailed in another Alexandrian ship whose figurehead was the Twin Brothers, Castor and Pollux, the gods sailors prayed to in a storm (Acts 28:11).",
+        "The cities at the ends of these roads each had their own character. Corinth had been destroyed by Rome in 146 BC and lay mostly empty for a century until Julius Caesar refounded it in 44 BC as a Roman colony. The geographer Strabo says it was settled largely with freed slaves (Geography 8.6.23); Dorota Pawlak and others think the settlers were more mixed than that from the start. By Paul's day it was rich, new and status-hungry, with two harbors, Lechaeum on one gulf and Cenchreae on the other, which is where Phoebe served the church (Romans 16:1). Philippi was a colony of another kind. After the battle fought on its plain in 42 BC, Rome settled discharged soldiers there, and the city prided itself on being Rome in miniature. Acts calls it \"the Roman colony of Philippi,\" and the charge against Paul there was teaching customs \"unlawful for us Romans\" (Acts 16:12, 21).",
+        "Ephesus was the great city of the province of Asia, a port at the mouth of the Cayster river, home of the famous temple of Artemis. Its theater, cut into the side of a hill and enlarged in later centuries, held something over twenty thousand people at its largest by most modern estimates, and that is where the crowd ran shouting in Acts 19. Thessalonica, the capital of Macedonia, was a Greek city that ran its own affairs under its own magistrates. Luke calls its officials by an unusual title, politarchs (Acts 17:6, translated \"city officials\"), and inscriptions from Macedonia use the same title, among them one from an old arch over the Via Egnatia in Thessalonica, now in the British Museum, whose exact date is argued.",
+        "And then there was Rome itself, the largest city anyone in the empire had seen. Nobody counted its people. Estimates by modern historians run from about half a million to a million or more, many of them crowded into tall blocks of rented rooms. Augustus tried to limit new buildings along the public streets to seventy feet, according to Strabo (Geography 5.3.7), which says something about how high and unsafe they had grown. When Paul finally arrived as a prisoner, believers walked down the Appian Way to meet him at the Forum of Appius and the Three Taverns, two stopping places south of the city (Acts 28:15)."
+      ],
+      "read": [
+        {
+          "ref": "Acts 16:11-12",
+          "href": "/study/bible/acts/16#v11",
+          "text": "We sailed from Troas straight to Samothrace, and the following day on to Neapolis. From there we went to the Roman colony of Philippi, the leading city of that district of Macedonia. And we stayed there several days.",
+          "note": "Luke's travel notes read like a road log: Troas, the island of Samothrace, the port of Neapolis, then the colony of Philippi. A modern reader skims them. For the first readers they marked days at sea and days on foot along a Roman road, and they named a city that called itself Roman and would soon treat these travelers as foreigners."
+        },
+        {
+          "ref": "Acts 27:9-10",
+          "href": "/study/bible/acts/27#v9",
+          "text": "By now much time had passed, and the voyage had already become dangerous because it was after the Fast. So Paul advised them, “Men, I can see that our voyage will be filled with disaster and great loss, not only to ship and cargo, but to our own lives as well.”",
+          "note": "\"After the Fast\" is a date. It means autumn, when every sailor knew the safe season was ending. Paul's warning was the kind of judgment an experienced traveler would make, not a vision. The centurion trusted the pilot and the owner instead, which is what most people would have done, and the rest of the chapter is the cost."
+        },
+        {
+          "ref": "Acts 28:13-15",
+          "href": "/study/bible/acts/28#v13",
+          "text": "From there we weighed anchor and came to Rhegium. After one day, a south wind came up, and on the second day we arrived at Puteoli. There we found some brothers who invited us to spend the week with them. And so we came to Rome. The brothers there had heard about us and traveled as far as the Forum of Appius and the Three Taverns to meet us. When Paul saw them, he was encouraged and gave thanks to God.",
+          "note": "Puteoli was the great harbor where grain ships from Alexandria unloaded for Rome. From there the road ran north, and believers came out along it to meet a prisoner. In a world where travel was slow and costly, walking out to meet someone was a public act of honor. They gave it to a man in chains."
+        }
+      ]
+    },
+    {
+      "id": "caesar-and-the-law",
+      "title": "Caesar, governors and the law",
+      "line": "Who ruled, who judged, what a citizen could claim, and why the cross was kept for slaves and rebels.",
+      "icon": "landmark",
+      "body": [
+        "Five emperors span the New Testament. Augustus ruled from 27 BC to AD 14, Tiberius to 37, Gaius, known as Caligula, to 41, Claudius to 54 and Nero to 68. Most people in the provinces never saw any of them. What they saw was the governor. Some provinces were run by a proconsul, a senator chosen for a year, and Acts names two: Sergius Paulus on Cyprus and Gallio in Achaia, the province of Corinth (Acts 13:7; 18:12). Others were run by the emperor's own appointees, and small or troubled regions such as Judea had a prefect or procurator, which is why Paul was held for two years by Felix and then tried before Porcius Festus (Acts 24:27). Below the governor, each city ran its own business through its own council and magistrates, collected its own dues and kept its own peace. Rome stepped in when order or money was at stake.",
+        "One of those governors gives the New Testament its firmest date. At Delphi in Greece, fragments of a letter from the emperor Claudius were found cut in stone, and the letter names Gallio as proconsul. It was written during Claudius's twenty-sixth acclamation as emperor, a count the Romans kept, which falls between early AD 51 and the summer of 52. A proconsul usually served one year, so most scholars place Gallio in Corinth in 51 to 52; some argue for 50 to 51. Gallio was the brother of the philosopher Seneca. In Acts he refuses to judge a dispute he calls one of \"words and names and your own law\" and drives the accusers from his judgment seat (Acts 18:14-16).",
+        "Roman citizenship was a legal standing, not a nationality, and in the eastern provinces only a minority held it. It came by birth, by grant from an emperor or general, by finishing service in the auxiliary army, or by being freed by a citizen master. It protected the body. A citizen was not to be flogged or bound without trial, and he could appeal against a magistrate's sentence. How seriously Romans took this shows in Cicero's prosecution of Verres, a corrupt governor of Sicily, in 70 BC. Cicero tells how Verres had a man named Gavius beaten with rods in the forum of Messana while the only words he could say were that he was a Roman citizen, and then had him crucified, in a speech designed to make a Roman jury feel the outrage (Against Verres 2.5.161-170). In Philippi, Paul and Silas were stripped, beaten with rods and jailed by magistrates who had not asked, and the next morning those magistrates were \"alarmed\" to learn they had flogged citizens (Acts 16:22-23, 38).",
+        "How did anyone prove it? From the time of Augustus, from AD 4, a citizen could register a child's birth before an official and receive a wooden tablet, folded like a book, recording the declaration; the legal historian Fritz Schulz studied these in 1942. Registration wasn't compulsory, and Acts never says how Paul showed his status. It does show that status could be bought. The commander in Jerusalem tells Paul, \"I paid a high price for my citizenship,\" and Paul answers, \"But I was born a citizen\" (Acts 22:28). The historian Cassius Dio says that under Claudius citizenship was sold through the empress Messalina and the imperial freedmen, dear at first and later so cheap it became a joke (Roman History 60.17). The commander's name, Claudius Lysias (Acts 23:26), fits a man who took the emperor's name when he became a citizen, though that is an inference. Some scholars doubt Paul was a citizen at all, because his own letters never mention it. Many others, following A. N. Sherwin-White's Roman Society and Roman Law in the New Testament (1963), find that Acts gets the legal details of the period right.",
+        "The appeal to Caesar was the citizen's last protection. When Festus seemed ready to send Paul back to Jerusalem for trial, Paul said, \"I appeal to Caesar,\" and Festus, after consulting his council, answered, \"To Caesar you will go\" (Acts 25:11-12). About sixty years later the same practice appears in a governor's letter. Pliny the Younger, governing Bithynia around AD 112, wrote to the emperor Trajan that some accused Christians were Roman citizens, and that he had marked them to be sent to Rome (Letters 10.96).",
+        "At the bottom of Roman justice stood the cross. It was a punishment for slaves, for bandits and for rebels against Roman rule, a death meant to be slow, public and shaming. Martin Hengel's short book Crucifixion (1977) gathered the ancient evidence. After the slave revolt led by Spartacus was crushed in 71 BC, the historian Appian says six thousand captives were crucified along the road from Capua to Rome (Civil Wars 1.120). Cicero, defending a citizen in court, said the very word cross should be kept far from a Roman citizen's body, thoughts, eyes and ears (For Rabirius 16). Citizens condemned to death were usually executed by other means. That is the background to Paul's words that Christ took \"the form of a servant\" and became obedient to death, \"even death on a cross\" (Philippians 2:7-8). The phrase wasn't a pious ornament. It named the lowest death the empire knew."
+      ],
+      "read": [
+        {
+          "ref": "Acts 16:37",
+          "href": "/study/bible/acts/16#v37",
+          "text": "But Paul said to the officers, “They beat us publicly without a trial and threw us into prison, even though we are Roman citizens. And now do they want to send us away secretly? Absolutely not! Let them come themselves and escort us out!”",
+          "note": "Paul waits until morning to mention his citizenship, and then refuses to leave quietly. The magistrates of a proud Roman colony had broken Roman law in public. By making them come and escort him out, he protected the small church he was leaving behind, which would have to go on living in that city."
+        },
+        {
+          "ref": "Acts 22:27-28",
+          "href": "/study/bible/acts/22#v27",
+          "text": "The commander went to Paul and asked, “Tell me, are you a Roman citizen?” “Yes,” he answered. “I paid a high price for my citizenship,” said the commander. “But I was born a citizen,” Paul replied.",
+          "note": "Two men compare papers in a barracks. One bought his standing; the other was born to it. In a world that ranked everyone, the exchange matters, and Paul uses it. The same man would write that in Christ \"there is neither Jew nor Greek, slave nor free\" (Galatians 3:28). He used the empire's ranks when they could protect the gospel, and denied them any final weight."
+        },
+        {
+          "ref": "Acts 25:10-12",
+          "href": "/study/bible/acts/25#v10",
+          "text": "Paul replied, “I am standing before the judgment seat of Caesar, where I ought to be tried. I have done nothing wrong to the Jews, as you yourself know very well. If, however, I am guilty of anything worthy of death, I do not refuse to die. But if there is no truth to their accusations against me, no one has the right to hand me over to them. I appeal to Caesar!” Then Festus conferred with his council and replied, “You have appealed to Caesar. To Caesar you will go!”",
+          "note": "\"I appeal to Caesar\" is a legal formula, and it moved Paul's case out of a provincial court to the emperor's. It also carried him toward Rome, where he had long wanted to go. The empire's own law became the road the gospel traveled on, though no one in the room meant it that way."
+        }
+      ]
+    },
+    {
+      "id": "household-slaves-patrons",
+      "title": "The household: slaves, freedmen and patrons",
+      "line": "A house was a small society with a master at its head, slaves in every job, and a web of favors and debts running out into the street.",
+      "icon": "home",
+      "body": [
+        "When the New Testament says a whole household believed or was baptized, it means more than parents and children. The Greek and Roman household took in the master, his wife, their children, the slaves, often freed slaves who still worked for the family, and sometimes lodgers and dependents. Aristotle had described the household long before as three pairs, master and slave, husband and wife, father and child, and that pattern was still standard in Paul's day; it is the shape of the household codes in Ephesians and Colossians. The house was also a workplace. Lydia, \"a dealer in purple cloth from the city of Thyatira,\" ran a business, headed a household, was baptized with it, and then opened her house to Paul and his companions (Acts 16:14-15). Several of the first churches met in houses like hers: the church in the house of Prisca and Aquila, the church in Philemon's house (Romans 16:3-5; Philemon 1:2).",
+        "Slaves were everywhere, and they did almost everything. They worked fields and mines, but they also kept accounts, taught children, practiced medicine, copied books and ran shops for their owners. The ancient historian Walter Scheidel has estimated that slaves were about a tenth of the empire's whole population, and he calls that a lower limit; in Italy, where the great estates were, the share was much higher. People became slaves through capture in war, through being born to a slave mother, and through being abandoned as babies and taken in by others. Acts shows how ordinary the whole system was: in Philippi a slave girl earned \"a large income for her masters\" by fortune-telling, and they dragged Paul to court when that income stopped (Acts 16:16-19).",
+        "Slavery in Rome wasn't always for life, and that's one of its strangest features to modern readers. Roman masters freed slaves often, especially in the cities, sometimes as a reward, sometimes in a will, sometimes because the slave had saved enough to buy freedom. A slave freed formally by a citizen usually became a citizen, though the freed man or woman stayed bound to the former owner, who now became a patron owed respect and service. Freedmen could grow rich; whole towns, Corinth among them, were founded with them. But freedom was a favor given by the master, not a right. And the household of Caesar, which sends greetings in Philippians 4:22, was most likely made up of slaves and freedmen who served the emperor's vast estates and offices, not members of his family.",
+        "The letter to Philemon lives inside this world. Onesimus was a slave of Philemon who had come to Paul, and Paul sends him back with a letter asking Philemon to receive him \"no longer as a slave, but better than a slave, as a beloved brother\" (Philemon 1:16). About fifty years later Pliny the Younger wrote a short letter to a man named Sabinianus on behalf of a freedman who had angered him and had come to Pliny for help (Letters 9.21). Pliny asks for mercy, says the man is sorry, and urges Sabinianus to forgive him. The form is close. The difference is that Pliny asks a master to be lenient with a dependent, while Paul asks a master to receive his slave as a brother, and offers to pay whatever is owed himself.",
+        "Above the household ran a second web: patrons and clients. A man of means granted favors, such as a loan, a job, protection at law or a word to someone powerful, and the person who received them became his client, owing loyalty, gratitude and public honor. At Rome clients in their togas came to their patron's house at dawn for the morning greeting, the salutatio, and might leave with a small gift of food or money. The satirists Martial and Juvenal, writing late in the first century and early in the second, mock the whole business. The philosopher Seneca, Paul's contemporary, wrote a long treatise, On Benefits, about how to give and how to return a favor, and the site's guide on patronage and grace follows that thread into the word charis.",
+        "Women could stand in this web too, as patrons. Paul commends Phoebe, \"a servant of the church in Cenchrea,\" and asks the Roman believers to help her, because \"she has been a great help to many people, including me\" (Romans 16:1-2). The Greek word behind \"great help\" is prostatis, a word used of patrons and benefactors. Lynn Cohick, in Women in the World of the Earliest Christians (2009), shows how women of means owned property, ran businesses and acted as benefactors to cities and associations, even while the law and custom kept them under a male guardian in many matters. A church that met in a house belonged, in some sense, to the household that hosted it. That made the host a patron, and it made the church's meal a place where every rank of the household sat down together."
+      ],
+      "read": [
+        {
+          "ref": "Philemon 1:10-11",
+          "href": "/study/bible/philemon/1#v10",
+          "text": "I appeal to you for my child Onesimus, whose father I became while I was in chains. Formerly he was useless to you, but now he has become useful both to you and to me.",
+          "note": "Onesimus means useful, a common slave name. Paul's pun, useless then and useful now, is the kind of joke a master might make about a slave. Paul turns it into something else: he calls Onesimus \"my child,\" born to him in prison. The letter doesn't argue against slavery as a system. It makes the relationship between these two men impossible to run on the old terms."
+        },
+        {
+          "ref": "Romans 16:1-2",
+          "href": "/study/bible/romans/16#v1",
+          "text": "I commend to you our sister Phoebe, a servant of the church in Cenchrea. Welcome her in the Lord in a manner worthy of the saints, and assist her with anything she may need from you. For she has been a great help to many people, including me.",
+          "note": "Phoebe probably carried this letter to Rome, and a carrier often read and explained a letter on arrival. Paul asks the church to receive her \"in a manner worthy of the saints,\" the honor owed to a benefactor. The first readers of Romans may have heard it in the voice of a woman from the harbor town of Corinth."
+        },
+        {
+          "ref": "Colossians 4:1",
+          "href": "/study/bible/colossians/4#v1",
+          "text": "Masters, supply your slaves with what is right and fair, since you know that you also have a Master in heaven.",
+          "note": "Ancient handbooks on running a household told the master how to manage his slaves. This verse tells the master that he too has a Master, and that he owes his slaves \"what is right and fair.\" In a world where a slave had no claim at law against an owner, a duty owed to the slave was a new thought."
+        }
+      ]
+    },
+    {
+      "id": "gods-emperor-words",
+      "title": "Gods, the emperor and the words on the coins",
+      "line": "A world full of gods, where the emperor had temples, and where \"lord,\" \"savior\" and \"good news\" were already public words.",
+      "icon": "sparkles",
+      "body": [
+        "A Roman city was crowded with gods. Temples stood in the forum and along the main streets; altars stood at crossroads; statues of gods and emperors looked down from arches and fountains. Houses had their own small shrines, and many homes excavated at Pompeii kept a painted niche for the household gods, the Lares, where the family offered a little food, wine or incense. Paul walking through Athens found the city \"full of idols\" and noticed an altar inscribed \"TO AN UNKNOWN GOD\" (Acts 17:16, 23). At Lystra the crowd took Barnabas for Zeus and Paul for Hermes and the priest of Zeus brought bulls and wreaths to sacrifice (Acts 14:11-13). At Ephesus the crowd shouted \"Great is Artemis of the Ephesians\" for about two hours (Acts 19:34). Religion wasn't a private belief that a person chose. It was part of being a member of a family, a trade, a city and the empire, and refusing it looked like refusing all of them.",
+        "Into this crowded heaven came the emperor. Rome itself was cautious about calling a living emperor a god, but the Greek cities of the east had long honored kings with temples and were quick to do the same for Rome's rulers. In 29 BC Augustus allowed the province of Asia to build a temple at Pergamum to the goddess Roma and to himself, according to the historian Cassius Dio (Roman History 51.20). Ephesus later dedicated a temple to the emperors of the Flavian family, in AD 89 or 90 under Domitian, which earned the city the proud title of temple warden; Steven Friesen studied it in Twice Neokoros (1993). Simon Price's Rituals and Power (1984) showed how these cults were woven into the civic life of Asia Minor: festivals, games, processions, sacrifices, seats of honor. Revelation is addressed to seven cities in exactly that province. Its letter to Pergamum speaks of the place \"where the throne of Satan sits\" (Revelation 2:13). Interpreters disagree about what that means: the great altar of Zeus, the shrine of Asclepius and the city's temple to Rome and Augustus have all been proposed.",
+        "The emperor was also in every purse. A silver denarius of Tiberius, the coin traditionally called the tribute penny after the Gospels' question about paying tax to Caesar, carries his head and the words TI CAESAR DIVI AVG F AVGVSTVS: Tiberius Caesar Augustus, son of the divine Augustus. On the back is a seated woman, often identified as his mother Livia though that is uncertain, and the title PONTIF MAXIM, high priest.",
+        "The words the church used for Jesus were already in public use. In 48 BC, after Julius Caesar's victory at Pharsalus, the cities of Asia set up an inscription at Ephesus honoring him as a god made manifest and the common savior of human life; it is one of the earliest of many such honors for Roman rulers in the Greek east. Around 9 BC the proconsul of Asia, Paullus Fabius Maximus, proposed that the province begin its new year on Augustus's birthday, and the decree, found at Priene and in copies from other cities, praises Augustus as a savior and says the god's birthday was for the world the beginning of the good news, the euangelia, that came because of him. When Mark begins, \"This is the beginning of the gospel of Jesus Christ, the Son of God\" (Mark 1:1), he is using a word his world already knew. Whether he meant a deliberate challenge is debated.",
+        "\"Lord\" was a word of the same kind. In Greek, kyrios was an everyday word for a master or owner, and also a title for a ruler. Augustus himself refused the Latin title dominus, lord or master, as an insult, Suetonius says, and rebuked people who called him that (Augustus 53). His successors were less modest. By Nero's day papyri from Egypt call him the lord, and when Festus speaks of writing to Nero about Paul, the Greek of Acts 25:26 calls the emperor simply \"the lord,\" which the Berean Standard Bible renders \"our sovereign one.\" Later, Suetonius reports, Domitian liked to be addressed as \"lord and god\" (Domitian 13). In that world Paul wrote that there are \"many so-called gods and lords\" but for us \"one Lord, Jesus Christ\" (1 Corinthians 8:5-6).",
+        "How much the New Testament means these words as a challenge to Caesar is one of the live arguments in New Testament study, and it shouldn't be settled by a slogan in either direction. N. T. Wright, in Paul and the Faithfulness of God (2013), hears a deliberate counter-imperial note: if Jesus is Lord, Caesar is not. John Barclay has replied that Rome is strikingly marginal in Paul's letters, which tell a story about sin and death that is far older and larger than any empire. In 1 Thessalonians 5:3 Paul warns of people saying \"Peace and security\" just before sudden destruction. Jeffrey Weima argued in New Testament Studies (2012) that this echoes a Roman propaganda slogan; Joel White answered in the same journal (2013) that \"peace and security\" cannot be shown to have been an identifiable Roman slogan in Paul's time. Both sides agree that the vocabulary of lord, savior and good news had a public, imperial sound. They disagree about how loudly Paul meant it to sound."
+      ],
+      "read": [
+        {
+          "ref": "1 Corinthians 8:5-6",
+          "href": "/study/bible/1-corinthians/8#v5",
+          "text": "For even if there are so-called gods, whether in heaven or on earth (as there are many so-called gods and lords), yet for us there is but one God, the Father, from whom all things came and for whom we exist. And there is but one Lord, Jesus Christ, through whom all things came and through whom we exist.",
+          "note": "Paul doesn't deny that the city was full of beings called gods and lords. He says the Corinthians belong to one God and one Lord, and many scholars hear in his words an echo of Israel's Shema, the confession that the LORD is one. The sentence was spoken in a city where meat, dinners, trade guilds and civic festivals all ran through the temples. Saying it meant something at dinner time."
+        },
+        {
+          "ref": "Acts 25:26",
+          "href": "/study/bible/acts/25#v26",
+          "text": "I have nothing definite to write to our sovereign one about him. Therefore I have brought him before all of you, and especially before you, King Agrippa, so that after this inquiry I may have something to write.",
+          "note": "Festus calls Nero \"the lord\" without a second thought; it was the normal way to refer to the emperor. Luke records it in the same book that calls Jesus Lord from beginning to end. Neither Festus nor Luke comments on the clash. The reader is left to notice it."
+        },
+        {
+          "ref": "1 Thessalonians 5:3",
+          "href": "/study/bible/1-thessalonians/5#v3",
+          "text": "While people are saying, “Peace and security,” destruction will come upon them suddenly, like labor pains on a pregnant woman, and they will not escape.",
+          "note": "Whether or not \"peace and security\" was a Roman slogan, it was the kind of thing people say when the order around them seems stable. Paul tells a young church in a provincial capital that the stability isn't the last word. The warning works without settling the scholarly argument, and that's a reason not to build too much on the argument."
+        }
+      ]
+    },
+    {
+      "id": "clubs-and-meals",
+      "title": "Clubs, meals and the table",
+      "line": "Romans joined associations that met to eat, honor a god and bury their members. To outsiders, the church looked like one more.",
+      "icon": "users",
+      "body": [
+        "Ordinary people in a Roman city belonged to more than a household. They joined associations: groups of men, and sometimes women, of the same trade, the same neighborhood, the same home country or the same god. Some gathered people of one trade, some the worshipers of one god, some neighbors on one street, some immigrants from the same distant city. Many of their inscriptions survive. They show groups that chose officers, honored a patron, kept a common fund, celebrated a god's festival, and above all ate together. John Kloppenborg's Christ's Associations (Yale, 2019) sets the first churches beside these groups, and Richard Ascough's Paul's Macedonian Associations (2003) argued that the church in Thessalonica may have begun among a group of manual workers who knew one another through their trade. Not every scholar is persuaded, but the comparison helps explain how a church looked to a neighbor: like one more club that met in a house, ate a meal and honored its patron god.",
+        "One set of rules gives a close view, though it comes from about eighty years after Paul. In AD 136 a burial society at Lanuvium, south of Rome, devoted to the goddess Diana and to Antinous, carved its bylaws in stone. A new member paid an entrance fee of a hundred sesterces and an amphora of good wine, then five asses a month. When a member died with his dues paid, the society gave three hundred sesterces toward the funeral. Anyone six months behind lost his claim. The rules go on to arrange the society's dinners and keep order at its table.",
+        "The authorities watched such groups closely, because a club could become a faction. When fire destroyed much of Nicomedia in Bithynia, the governor Pliny asked the emperor Trajan whether he might form a fire brigade of about 150 men. Trajan said no. Men brought together for any purpose, he wrote, soon turn into political clubs, and that province had a history of them; better to supply fire equipment and tell property owners to use it (Pliny, Letters 10.33-34). In the same province Pliny later issued an order banning such clubs, the hetaeriae, and he reports that the Christians stopped gathering for their common meal after it (Letters 10.96). To a careful Roman official, a church meeting at night and sharing food looked exactly like the sort of association the law was afraid of.",
+        "Dinner itself was a lesson in rank. Well-off Romans ate reclining on couches arranged on three sides of a dining room, the triclinium. The best places went to the most honored guests, and hosts sometimes served better food and wine to some guests than to others, a habit the satirists complain about. In St. Paul's Corinth (1983), Jerome Murphy-O'Connor looked at the few villas excavated in and around Corinth, one at Anaploga, and found that among his comparisons the dining room averaged about 37 square meters and the atrium, the open court, about 74. A church meeting in such a house could not all recline in the dining room. Some ate there with the host; the rest sat in the court. David Horrell has argued that many Corinthian believers more likely met in shops and rented rooms, like those excavated east of the theater, than in villas. Either way, the shape of the room could sort the church by status before anyone said a word.",
+        "That is the setting of 1 Corinthians 11. Paul writes, with some heat, that \"each of you goes ahead without sharing his meal. While one remains hungry, another gets drunk\" (1 Corinthians 11:21). The Lord's Supper was at that time a real meal, and the Corinthians were eating it the way their city ate a dinner party, with the hosts' friends first and best and the slaves and late-arriving workers getting what was left. Paul says that this isn't the Lord's Supper at all.",
+        "Meat raised a second problem. Much of the meat in a Roman city came from animals sacrificed at a temple, and much of it was then sold in the market or eaten at feasts. Temples had dining rooms that could be used for meals, and invitations to such meals were ordinary. A papyrus from Oxyrhynchus in Egypt, from the second century, records an invitation from a man named Chaeremon to dine at the table of the lord Sarapis in the Sarapis temple, at the ninth hour (P.Oxy. 110). At Corinth the sanctuary of Asclepius had dining rooms, and John Fotopoulos, in Food Offered to Idols in Roman Corinth (2003), thinks it a likely setting for the meal in 1 Corinthians 8:10. Paul's word for the meat market in 1 Corinthians 10:25, makellon, is the Latin macellum written in Greek letters. His answer is careful: eat what is sold in the market, eat at an unbeliever's home, but do not eat in an idol's temple, and do not share \"the table of the Lord and the table of demons too\" (1 Corinthians 10:21)."
+      ],
+      "read": [
+        {
+          "ref": "1 Corinthians 11:20-22",
+          "href": "/study/bible/1-corinthians/11#v20",
+          "text": "Now then, when you come together, it is not the Lord’s Supper you eat. For as you eat, each of you goes ahead without sharing his meal. While one remains hungry, another gets drunk. Don’t you have your own homes in which to eat and drink? Or do you despise the church of God and humiliate those who have nothing? What can I say to you? Shall I praise you for this? No, I will not!",
+          "note": "Paul's question, \"Don't you have your own homes in which to eat and drink?\" is aimed at those who had homes and food enough. Those who \"have nothing\" were probably the slaves and the poor, who could only come after the day's work. A church that copied the dinner party's ranks had stopped eating the Lord's Supper, whatever words were said over the bread."
+        },
+        {
+          "ref": "1 Corinthians 8:10",
+          "href": "/study/bible/1-corinthians/8#v10",
+          "text": "For if someone with a weak conscience sees you who are well informed eating in an idol’s temple, will he not be encouraged to eat food sacrificed to idols?",
+          "note": "A believer with knowledge reasons that the gods are nothing, so a meal in a temple dining room is only a meal. Paul doesn't dispute the theology. He asks what the newer believer sees: a brother reclining at the god's table. In a city where dinners were where business and friendship were made, refusing those invitations cost something real."
+        },
+        {
+          "ref": "1 Corinthians 10:25-27",
+          "href": "/study/bible/1-corinthians/10#v25",
+          "text": "Eat anything sold in the meat market without raising questions of conscience, for, “The earth is the Lord’s, and the fullness thereof.” If an unbeliever invites you to a meal and you want to go, eat anything set before you without raising questions of conscience.",
+          "note": "This is practical advice for people who shopped in a market full of meat from the altars and were invited to dinner by neighbors. Paul quotes Psalm 24, \"The earth is the Lord's,\" and frees them to buy and eat. The same letter forbids the temple table. The line falls between ordinary life and worship of another god."
+        }
+      ]
+    },
+    {
+      "id": "work-money-city",
+      "title": "Work, money and the crowded city",
+      "line": "Workshops on the street, rented rooms above, fire and noise and the public bath: the city most believers actually lived in.",
+      "icon": "sun",
+      "body": [
+        "Most people in the Roman world worked with their hands, and most of the writing that survives was written by people who did not. The elite praised farming and despised the shop, the forge and the wage. Paul didn't fit their picture of a teacher, since he supported himself by a trade. Acts calls him a skenopoios, usually translated tentmaker, and says he worked with Aquila and Priscilla in Corinth \"because they were tentmakers by trade, just as he was\" (Acts 18:3). Ronald Hock, in The Social Context of Paul's Ministry: Tentmaking and Apostleship (1980), took the trade to mean leatherwork and argued that Paul's workshop was one of the places his mission happened, with conversations over the bench with customers and fellow workers. Paul reminds the Thessalonians that he \"worked night and day\" so as not to be a burden (1 Thessalonians 2:9), and tells the Corinthians, \"We work hard with our own hands\" (1 Corinthians 4:12).",
+        "Where did such people live? In the cities, many rented rooms in blocks the Romans called insulae: shops and workshops on the ground floor, opening onto the street, with stairs leading up to rooms and apartments above. The higher you climbed, the cheaper and more dangerous the room. The poet Juvenal, writing in the early second century, makes a character complain of Rome's houses propped up by their landlords and always about to fall, and of fires in which the man downstairs is already shouting for water and carrying out his things while the third floor burns, and the last to burn is the poor tenant up under the roof tiles, where the doves lay their eggs (Satires 3). Acts gives a small scene in such a building. At Troas, during a long night meeting in an upper room, a young man named Eutychus fell asleep in a window and fell from the third story (Acts 20:8-9).",
+        "Rome was the extreme case. The city lived on grain shipped from Egypt and North Africa, and the state gave free monthly grain to a fixed list of male citizens. Augustus, in his own account of his reign, says that one of his gifts of money went to the people then receiving public grain, a little more than two hundred thousand men (Res Gestae 15). Outside Rome there was no such handout. Bread was the center of every meal, with oil, wine, beans, cheese and whatever vegetables or fish could be had; meat was for festivals and the well off. A bad harvest or a delay in the ships meant prices rose and the poor went hungry, which is the fear behind Agabus's prophecy of a famine in the reign of Claudius and the collection the churches raised for Judea (Acts 11:28-29).",
+        "Even the rich lived close to the noise, and the public bath was where everyone met it. Bathing was a daily social habit, cheap enough for most free people, with warm and hot rooms, an exercise yard and a cold plunge. The philosopher Seneca, a contemporary of Paul, once lodged directly over a bath, and he describes what he heard in a letter (Moral Letters 56): the grunting of men lifting weights, the slap of the masseur's hand, the ball player counting his score aloud, the man who loves the sound of his own voice in the bath, people leaping into the pool, the hair plucker shrieking for customers, and the cries of sellers of snacks and drinks.",
+        "Money ran in many coins. The silver denarius of Rome and the Greek drachma were roughly equal in value, and both came in smaller bronze change. When the converts in Ephesus burned their books of magic, Luke reckons the value at \"fifty thousand drachmas\" (Acts 19:19), a fortune in a world where many families lived close to the edge. Taxes ran in layers: the tribute owed to Rome, tolls and customs on goods moving along roads and through ports, and the dues of each city. Paul tells the believers in Rome to pay \"taxes to whom taxes are due, revenue to whom revenue is due\" (Romans 13:7), two words for those layers.",
+        "A few believers were people of standing, and one may have left his name in the pavement. In 1929 excavators at Corinth found a paving stone near the theater with a Latin inscription: ERASTVS PRO AED S P STRAVIT, \"Erastus, in return for his aedileship, laid this at his own expense.\" An aedile was a city official in charge of streets, buildings and markets. Paul sends greetings from \"Erastus, the city treasurer\" of Corinth (Romans 16:23). Many scholars took the two to be the same man. Others doubt it: the Greek title in Romans, oikonomos, may be a lesser office than aedile, the name was not rare, and Steven Friesen has argued that the pavement dates from the second century, not the first. The stone is real, but the identification is uncertain. Either way, Paul could write that \"not many\" of the Corinthians were powerful or of noble birth (1 Corinthians 1:26). Not many, but some, and the letters show the strain of rich and poor learning to sit together."
+      ],
+      "read": [
+        {
+          "ref": "Acts 18:3",
+          "href": "/study/bible/acts/18#v3",
+          "text": "and he stayed and worked with them because they were tentmakers by trade, just as he was.",
+          "note": "The great missionary of the early church is introduced at his workbench. Paul found his first hosts in Corinth through his trade, not through a synagogue or a school. The church grew along the ordinary lines of the city: shared work, shared lodging, shared meals."
+        },
+        {
+          "ref": "Acts 20:9",
+          "href": "/study/bible/acts/20#v9",
+          "text": "And a certain young man named Eutychus, seated in the window, was sinking into a deep sleep as Paul talked on and on. When he was sound asleep, he fell from the third story and was picked up dead.",
+          "note": "The third floor of a crowded building, a window for air, a talk that ran past midnight: the scene is exactly the kind of place most believers lived and met. Luke tells it plainly, down to the lamps and the young man's sleepiness, and the gathering goes on afterward with a meal until dawn."
+        },
+        {
+          "ref": "Romans 16:23",
+          "href": "/study/bible/romans/16#v23",
+          "text": "Gaius, who has hosted me and all the church, sends you greetings. Erastus, the city treasurer, sends you greetings, as does our brother Quartus.",
+          "note": "One verse holds the range of the church at Corinth: Gaius, rich enough to host \"all the church,\" Erastus with his civic office, and \"our brother Quartus,\" about whom nothing is known but his name. Paul sends greetings from all three in the same breath."
+        }
+      ]
+    },
+    {
+      "id": "letters",
+      "title": "Letters: written, carried and read aloud",
+      "line": "No postal service for ordinary people, a secretary at the table, a friend on the road, and a room full of listeners at the other end.",
+      "icon": "scroll",
+      "body": [
+        "Most of the New Testament is letters, and a letter in the Roman world was a slow, costly, personal thing. There was no public post for private people. Augustus set up a courier service for the state, first young men posted at intervals along the military roads and later relays of vehicles, so that news from the provinces could reach him quickly (Suetonius, Augustus 49.3). That service carried official business. Everyone else sent letters by a slave, a friend or a traveler who happened to be going the right way. Paul's letters name their carriers or their companions: Tychicus, sent to tell the Colossians all the news and to encourage them (Colossians 4:7-8); Epaphroditus, the Philippians' own messenger, sent back home (Philippians 2:25); and very likely Phoebe for Romans (Romans 16:1-2). A carrier did more than deliver. He or she could answer questions and explain what the writer meant.",
+        "Thousands of ordinary letters survive on papyrus from Roman Egypt, where the dry sand preserved what was thrown away. They show the shape every letter took: the writer's name, the recipient's name, a greeting, often a wish for good health, the business, then farewells. Paul keeps the shape and changes the words. Where a Greek letter said \"greetings,\" chairein, Paul writes \"grace and peace to you from God our Father and the Lord Jesus Christ\" (Romans 1:7). The papyri also show how much a few lines could carry. In a letter of 1 BC from Oxyrhynchus, a man named Hilarion, working in Alexandria, writes to his wife Alis with tender greetings and the promise to send his wages, and then tells her that if the child she is carrying is a boy she should keep it, and if a girl, expose it (P.Oxy. 744; Chrys Caragounis reads the line as about a birth of more than one child, but the order is the same). Those few lines hold the ordinary love and the ordinary cruelty of that world side by side.",
+        "Paul's letters were long by any standard. E. Randolph Richards, in Paul and First-Century Letter Writing (2004), reckons that some fourteen thousand private letters on papyrus average about 87 words. Cicero's letters average about 295 words and Seneca's about 995. The thirteen letters that bear Paul's name average about 2,495, from 335 words in Philemon to more than seven thousand in Romans. Letters of that size took sheets of papyrus, ink, hours of a trained secretary's time and a trustworthy carrier.",
+        "Like other letter writers of his day, Paul used a secretary. One of them greets the readers in his own name: \"I, Tertius, who wrote down this letter, greet you in the Lord\" (Romans 16:22). How much freedom such a secretary had is debated; Richards discusses a range of practice, from taking dictation word for word to shaping a letter from the author's notes. At the end Paul often took the pen himself. \"See what large letters I am using to write to you with my own hand\" (Galatians 6:11). Several letters end with his own greeting in his own hand, a mark against forgeries and a personal touch the listeners would notice when the reader held up the sheet (1 Corinthians 16:21; Colossians 4:18; 2 Thessalonians 3:17).",
+        "Most of the people who received these letters could not read them. How many people could read in the Roman world is argued. William Harris, in Ancient Literacy (1989), estimated that the share rarely rose much above ten percent across the empire, higher among the elite and in cities. Others, such as the contributors to later studies of Roman literacy, think he set it too low, especially for basic reading in towns. Either way, a church heard its letters. Paul charges the Thessalonians \"to have this letter read to all the brothers\" (1 Thessalonians 5:27). He tells the Colossians to pass their letter on to Laodicea and to read the one coming from there (Colossians 4:16). Revelation pronounces a blessing on \"the one who reads aloud the words of this prophecy\" and on those who hear (Revelation 1:3).",
+        "Read aloud, in a crowded room, a letter worked differently from a page read alone. The listeners heard every name in the greetings: Phoebe, Prisca and Aquila, Andronicus and Junia, a list of slaves and freedmen and hosts in Romans 16, each one present or known to those present. Within a generation or two, 2 Peter could speak of \"all his letters\" and admit that \"some parts of his letters are hard to understand\" (2 Peter 3:16). The collection had begun."
+      ],
+      "read": [
+        {
+          "ref": "Romans 16:22",
+          "href": "/study/bible/romans/16#v22",
+          "text": "I, Tertius, who wrote down this letter, greet you in the Lord.",
+          "note": "This is the only place in Paul's letters where the secretary speaks. For a moment the reader sees the room in Corinth: Paul speaking, Tertius writing, Gaius the host nearby. A letter that has shaped the church's thought for two thousand years was written down by a man otherwise unknown, who wanted to add his own greeting."
+        },
+        {
+          "ref": "Galatians 6:11",
+          "href": "/study/bible/galatians/6#v11",
+          "text": "See what large letters I am using to write to you with my own hand!",
+          "note": "The large letters are Paul's own hand, after a secretary's practiced script. Some think his eyes were weak, some that he wrote large for emphasis; the text doesn't say. What the Galatians heard was the reader announcing that the apostle had picked up the pen himself, as if to sign his name under everything that came before."
+        },
+        {
+          "ref": "Colossians 4:16",
+          "href": "/study/bible/colossians/4#v16",
+          "text": "After this letter has been read among you, make sure that it is also read in the church of the Laodiceans, and that you in turn read the letter from Laodicea.",
+          "note": "Letters were meant to travel. This one was to be read aloud in Colossae and then sent the few miles to Laodicea, and a letter from Laodicea was to come the other way. That habit of reading, copying and passing on is how letters to single churches became Scripture for all of them."
+        }
+      ]
+    },
+    {
+      "id": "seen-from-outside",
+      "title": "How the church looked from outside",
+      "line": "What Roman writers said about the Christians in the first century after Jesus: little, late, and mostly hostile, which makes it worth hearing.",
+      "icon": "flame",
+      "body": [
+        "For most of the first century, Roman writers didn't notice the church at all. When they did, they noticed it briefly, from a distance and with contempt. That makes their words valuable. They show how the first believers looked to educated outsiders who had no reason to flatter them, and they are among the earliest mentions of Jesus outside the New Testament.",
+        "The first notice may be the most puzzling. In his life of Claudius, Suetonius writes that the emperor expelled the Jews from Rome because they were constantly making disturbances at the instigation of one Chrestus (Claudius 25.4). Most scholars think \"Chrestus\" is a garbled form of Christus, so that the disturbances were quarrels in Rome's synagogues over the claim that Jesus was the Messiah; some think Chrestus was a local agitator with a common name. Acts mentions the expulsion in passing: Aquila and Priscilla had come to Corinth \"because Claudius had ordered all the Jews to leave Rome\" (Acts 18:2). The usual date, AD 49, comes from Orosius, a Christian writer of the fifth century, and is disputed. Cassius Dio says that Claudius, early in his reign, did not expel the Jews but forbade them to meet (Roman History 60.6), and historians argue whether these are two events or one.",
+        "The second is grim. In July of AD 64 a fire broke out near the Circus Maximus and burned for days, destroying much of Rome. Tacitus, writing about fifty years later, says that rumor blamed Nero, and that to end the rumor Nero fastened the guilt on a group the crowd called Christians, hated for their crimes. He explains the name: Christus, from whom it came, had been executed in the reign of Tiberius by the procurator Pontius Pilate, per procuratorem Pontium Pilatum (Annals 15.44). Those arrested were convicted not so much of arson as of hatred of the human race, odio humani generis. Some were dressed in the skins of wild animals and torn by dogs; others were burned as lights at night in Nero's gardens, which he opened for the show. Tacitus despised the Christians and still records that the cruelty turned the crowd's feeling toward pity. He calls Pilate a procurator, though an inscription found at Caesarea in 1961 gives Pilate's title in his own day as prefect. A few historians have questioned whether the Christians were really blamed for the fire; most accept Tacitus's account.",
+        "Suetonius, in his life of Nero, gives the same event a single line in a list of the emperor's public measures: \"Punishment was inflicted on the Christians, a class of men given to a new and mischievous superstition\" (Nero 16.2, in J. C. Rolfe's translation). Christian tradition holds that both Peter and Paul died in Rome under Nero. The letter called 1 Clement, written from Rome and usually dated near the end of the first century, though its date is argued, speaks of both apostles as having died as witnesses. The tradition that Paul was beheaded, as a citizen might be, is later still.",
+        "The fullest outside account comes from about AD 112, from Pliny the Younger, governor of Bithynia and Pontus on the Black Sea, in a letter asking the emperor Trajan what to do (Letters 10.96). People were being accused of being Christians, and Pliny, a careful lawyer, didn't know whether the name itself was a crime. His practice was to ask the accused whether they were Christians, a second and a third time, warning them of the penalty, and to execute those who persisted, since their stubbornness alone deserved punishment; citizens he marked to be sent to Rome. Those who denied it he tested: they had to call on the gods, offer wine and incense to the emperor's image, and curse Christ, which, he had heard, real Christians could not be forced to do. From them he learned what the Christians did. They met before dawn on a fixed day and sang a hymn to Christ as to a god, carmen Christo quasi deo, and bound themselves by an oath not to commit crimes. Afterward they met again to eat food that was, he insists, ordinary and harmless, and they had stopped even that after his order against clubs. To be sure, he had two slave women, whom the Christians called ministrae, deacons, questioned under torture. He found nothing but a depraved and excessive superstition, superstitionem pravam et immodicam.",
+        "Trajan's reply is short (Letters 10.97). Christians are not to be hunted out, conquirendi non sunt. If they are accused and the charge is proved, they are to be punished, but anyone who denies it and proves it by worshiping the gods is to be pardoned. The New Testament already knows this world. Its later letters tell believers that they will be slandered as evildoers, that their neighbors will find it strange that they no longer join in, and that if they suffer \"as a Christian\" they should not be ashamed (1 Peter 2:12; 4:4, 16). What outsiders saw was a small group with odd hours, a crucified leader, a common meal, women and slaves in its offices, and a refusal to honor the gods everyone else honored. They called it a superstition. The believers called it the gospel."
+      ],
+      "read": [
+        {
+          "ref": "Acts 28:22",
+          "href": "/study/bible/acts/28#v22",
+          "text": "But we consider your views worth hearing, because we know that people everywhere are speaking against this sect.”",
+          "note": "The leaders of the Jewish community in Rome tell Paul that \"people everywhere are speaking against this sect.\" It is the same verdict, from inside a neighboring community, that Tacitus and Pliny would give from above. Luke doesn't hide it. He lets the reader see how small and suspect the movement looked when Paul reached the capital."
+        },
+        {
+          "ref": "1 Peter 4:3-4",
+          "href": "/study/bible/1-peter/4#v3",
+          "text": "For you have spent enough time in the past carrying out the same desires as the Gentiles: living in debauchery, lust, drunkenness, orgies, carousing, and detestable idolatry. Because of this, they consider it strange of you not to plunge with them into the same flood of reckless indiscretion, and they heap abuse on you.",
+          "note": "Pliny's informers said they had stopped meeting for meals once clubs were banned; 1 Peter says neighbors \"consider it strange\" that believers no longer join their drinking and feasts. Withdrawing from the shared life of the city was costly and visible. To outsiders it looked like contempt for everyone else, the \"hatred of the human race\" Tacitus names."
+        },
+        {
+          "ref": "1 Peter 4:16",
+          "href": "/study/bible/1-peter/4#v16",
+          "text": "But if you suffer as a Christian, do not be ashamed, but glorify God that you bear that name.",
+          "note": "\"Christian\" began as an outsider's label (Acts 11:26), and in Pliny's court the name alone was enough to condemn. This verse takes the label and tells believers to bear it without shame. A word meant as an accusation became the name the church carried."
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "ancient": [
+      {
+        "name": "Pliny the Younger, Letters",
+        "note": "Book 9.21 (to Sabinianus, for a freedman); 10.33-34 (the fire at Nicomedia and Trajan's refusal of a fire brigade); 10.96-97 (Pliny on the Christians of Bithynia and Pontus, about AD 112, and Trajan's reply)."
+      },
+      {
+        "name": "Tacitus, Annals",
+        "note": "15.38-44: the fire of AD 64 and Nero's punishment of the Christians. Written early in the second century."
+      },
+      {
+        "name": "Suetonius, Lives of the Caesars",
+        "note": "Augustus 49 (the state courier service) and 53 (refusing the title lord); Claudius 25.4 (the expulsion over Chrestus); Nero 16.2 (the Christians punished); Domitian 13 (\"lord and god\"). Written early in the second century."
+      },
+      {
+        "name": "Cassius Dio, Roman History",
+        "note": "51.20 (temples to Roma and Augustus, 29 BC); 60.6 (Claudius and the Jews of Rome); 60.17 (citizenship sold under Claudius). Written early in the third century."
+      },
+      {
+        "name": "Augustus, Res Gestae (The Deeds of the Divine Augustus)",
+        "note": "His own account of his reign; section 15 on gifts to the people receiving public grain."
+      },
+      {
+        "name": "Strabo, Geography",
+        "note": "5.3.7 (Augustus limits the height of buildings in Rome); 8.6.23 (Corinth refounded and settled with freed slaves)."
+      },
+      {
+        "name": "Cicero, Against Verres and For Rabirius",
+        "note": "Against Verres 2.5.161-170 (Gavius, a citizen, flogged and crucified at Messana, 70 BC); For Rabirius 16 (the word cross kept far from a citizen)."
+      },
+      {
+        "name": "Seneca, Moral Letters 56 and On Benefits",
+        "note": "The noise of a bath heard from the room above; the giving and returning of favors. Seneca died in AD 65."
+      },
+      {
+        "name": "Juvenal, Satires 3",
+        "note": "Fire and falling buildings in Rome, early second century."
+      },
+      {
+        "name": "Appian, Civil Wars 1.120",
+        "note": "Six thousand followers of Spartacus crucified along the road from Capua to Rome, 71 BC."
+      },
+      {
+        "name": "Vegetius, Epitome of Military Science 4.39",
+        "note": "The seasons for sailing. Late fourth century AD."
+      },
+      {
+        "name": "Orosius, Histories against the Pagans 7.6",
+        "note": "The date of Claudius's expulsion of the Jews. Fifth century AD."
+      },
+      {
+        "name": "1 Clement",
+        "note": "A letter from the church in Rome, usually dated near the end of the first century, on the deaths of Peter and Paul."
+      },
+      {
+        "name": "Inscriptions",
+        "note": "The Priene calendar decree (about 9 BC); the honors for Julius Caesar at Ephesus (48 BC); Claudius's letter naming Gallio at Delphi (AD 51 to 52); the Erastus pavement at Corinth (found 1929, date argued); the politarch inscription of Thessalonica (British Museum); the rules of the burial society at Lanuvium (AD 136); the Pilate inscription from Caesarea (found 1961)."
+      },
+      {
+        "name": "Papyri from Oxyrhynchus, Egypt",
+        "note": "P.Oxy. 744, Hilarion's letter to Alis (1 BC); P.Oxy. 110, an invitation to dine at the table of Sarapis (second century)."
+      },
+      {
+        "name": "Coins",
+        "note": "The silver denarius of Tiberius, \"son of the divine Augustus,\" with the title high priest."
+      }
+    ],
+    "modern": [
+      {
+        "author": "Fritz Schulz",
+        "title": "Roman Registers of Births and Birth Certificates",
+        "year": 1942,
+        "in": "Journal of Roman Studies 32"
+      },
+      {
+        "author": "A. N. Sherwin-White",
+        "title": "Roman Society and Roman Law in the New Testament",
+        "year": 1963
+      },
+      {
+        "author": "Martin Hengel",
+        "title": "Crucifixion in the Ancient World and the Folly of the Message of the Cross",
+        "year": 1977
+      },
+      {
+        "author": "Ronald F. Hock",
+        "title": "The Social Context of Paul's Ministry: Tentmaking and Apostleship",
+        "year": 1980
+      },
+      {
+        "author": "Jerome Murphy-O'Connor",
+        "title": "St. Paul's Corinth: Texts and Archaeology",
+        "year": 1983
+      },
+      {
+        "author": "S. R. F. Price",
+        "title": "Rituals and Power: The Roman Imperial Cult in Asia Minor",
+        "year": 1984
+      },
+      {
+        "author": "William V. Harris",
+        "title": "Ancient Literacy",
+        "year": 1989
+      },
+      {
+        "author": "Steven J. Friesen",
+        "title": "Twice Neokoros: Ephesus, Asia and the Cult of the Flavian Imperial Family",
+        "year": 1993
+      },
+      {
+        "author": "Walter Scheidel",
+        "title": "Quantifying the Sources of Slaves in the Early Roman Empire",
+        "year": 1997,
+        "in": "Journal of Roman Studies 87"
+      },
+      {
+        "author": "Bruce W. Winter",
+        "title": "After Paul Left Corinth: The Influence of Secular Ethics and Social Change",
+        "year": 2001
+      },
+      {
+        "author": "Richard S. Ascough",
+        "title": "Paul's Macedonian Associations: The Social Context of Philippians and 1 Thessalonians",
+        "year": 2003
+      },
+      {
+        "author": "John Fotopoulos",
+        "title": "Food Offered to Idols in Roman Corinth",
+        "year": 2003
+      },
+      {
+        "author": "Everett Ferguson",
+        "title": "Backgrounds of Early Christianity",
+        "year": 2003
+      },
+      {
+        "author": "E. Randolph Richards",
+        "title": "Paul and First-Century Letter Writing: Secretaries, Composition and Collection",
+        "year": 2004
+      },
+      {
+        "author": "David G. Horrell",
+        "title": "Domestic Space and Christian Meetings at Corinth: Imagining New Contexts and the Buildings East of the Theatre",
+        "year": 2004,
+        "in": "New Testament Studies 50"
+      },
+      {
+        "author": "Lynn H. Cohick",
+        "title": "Women in the World of the Earliest Christians",
+        "year": 2009
+      },
+      {
+        "author": "Jeffrey A. D. Weima",
+        "title": "\"Peace and Security\" (1 Thess 5.3): Prophetic Warning or Political Propaganda?",
+        "year": 2012,
+        "in": "New Testament Studies 58"
+      },
+      {
+        "author": "Joel R. White",
+        "title": "\"Peace and Security\" (1 Thessalonians 5.3): Is It Really a Roman Slogan?",
+        "year": 2013,
+        "in": "New Testament Studies 59"
+      },
+      {
+        "author": "Julian Beresford",
+        "title": "The Ancient Sailing Season",
+        "year": 2013
+      },
+      {
+        "author": "N. T. Wright",
+        "title": "Paul and the Faithfulness of God",
+        "year": 2013
+      },
+      {
+        "author": "John M. G. Barclay",
+        "title": "Paul and the Gift",
+        "year": 2015
+      },
+      {
+        "author": "John S. Kloppenborg",
+        "title": "Christ's Associations: Connecting and Belonging in the Ancient City",
+        "year": 2019
+      }
+    ]
+  }
+}

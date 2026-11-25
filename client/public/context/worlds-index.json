@@ -1,0 +1,36 @@
+{
+  "worlds": [
+    {
+      "id": "honor-and-shame",
+      "title": "Honor and shame",
+      "seoTitle": "Honor and Shame in the Bible's World: What It Was Really Like",
+      "group": "Honor, Shame, and Culture",
+      "blurb": "A long, sourced portrait of the values the Bible's first readers lived by: honor as a public verdict, challenge and envy, kin before self, gift and gratitude, the table and the guest, men and women in public, shame and vindication in Israel's Scriptures, and the cross that turned the scale over.",
+      "parts": 8
+    },
+    {
+      "id": "jewish-life-in-jesus-day",
+      "title": "Jewish life in Jesus's day",
+      "seoTitle": "Jewish Life in Jesus's Day: What It Was Really Like",
+      "group": "Second Temple Judaism",
+      "blurb": "A long, sourced portrait of the world Jesus lived in: the land and its rulers, a day and a year, the Temple, the synagogue, the groups, the hopes, and family, sickness and death.",
+      "parts": 7
+    },
+    {
+      "id": "old-testament-world",
+      "title": "The Old Testament's world",
+      "seoTitle": "The Old Testament's World: What It Was Really Like",
+      "group": "Ancient Near East",
+      "blurb": "A long, sourced portrait of the world the Old Testament was written in: the land between empires, the village and the house, kings and the Temple, the gods next door, covenant and law, scribes and prophets, and exile and return.",
+      "parts": 7
+    },
+    {
+      "id": "roman-world",
+      "title": "The Roman world",
+      "seoTitle": "The Roman World of Paul: What It Was Really Like",
+      "group": "The Greco-Roman World",
+      "blurb": "A long, sourced portrait of the Roman world the first churches lived in: roads, ships and cities, Caesar and the law, the household and the patron, the gods and the emperor, clubs and meals, work and the crowded city, letters, and how the church looked from outside.",
+      "parts": 8
+    }
+  ]
+}

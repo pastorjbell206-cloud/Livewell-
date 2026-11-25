@@ -1,0 +1,101 @@
+{
+  "slug": "is-it-wrong-to-love-your-country",
+  "lens": "Voice read, last reader before publishing. I read /home/user/livewell-land/client/public/essays/is-it-wrong-to-love-your-country.json (title, excerpt as standfirst, Markdown body, Closing Texts) against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list, the brief's stamps and the rulebook words literally, measured paragraphs and sentences, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation that includes veterans and their grandchildren. I edited nothing. Scripture and fact verification belong to the integrity lens; where a fix touches the ledger I say so. No hard-rule failures (forbidden language, em-dashes, exclamations outside Scripture, biography, brief stamps). The three 'should' findings are the ending's slogan line, one clause that files the younger reader under a failure while sparing the older one, and a year that the ledger says was removed but is back in the published text.",
+  "findings": [
+    {
+      "where": "Ending, the \"Jesus was born into a people\" paragraph, sentences 2 and 3: \"He spoke their language, kept their feasts and prayed their psalms. He was never ashamed of His nation, and He never worshiped it.\"",
+      "problem": "A tidy triplet (language, feasts, psalms) followed by a matched never/never antithesis: the aphoristic two-beat kicker the brief names, in the most exposed spot in the piece. \"Never ashamed of His nation\" is also a slogan a skeptic will test and find wanting: Jesus pronounced woes on the towns of Galilee and called His own generation evil and adulterous (Matthew 11:20-24; 12:39). The ledger lists the sentence only as \"Interpretation.\" Meanwhile the essay's controlling image (love of country that weeps: Nehemiah 1:4, Psalm 137:1, Douglass's \"I must mourn\") has its fulfillment in the Gospels and the ending never uses it. The limit on love of country is already carried by Matthew 10:37 and by the last paragraph (\"none of them will be its light\"), so the antithesis isn't needed.",
+      "fix": "Replace \"He spoke their language, kept their feasts and prayed their psalms. He was never ashamed of His nation, and He never worshiped it.\" with \"He kept their feasts and prayed their psalms, and when He drew near Jerusalem and saw the city, \"he wept over it\" (Luke 19:41).\" The paragraph then reads: \"Jesus was born into a people. He kept their feasts and prayed their psalms, and when He drew near Jerusalem and saw the city, \"he wept over it\" (Luke 19:41).\" (ESV Luke 19:41: \"And when he drew near and saw the city, he wept over it,\". The integrity reader confirms and adds a ledger line; ledger lines 175-176 change.) Fallback if no new verse may be added at this stage: delete \"He was never ashamed of His nation, and He never worshiped it.\" and replace \"He spoke their language, kept their feasts and prayed their psalms.\" with \"He kept their feasts and prayed their psalms.\"",
+      "severity": "should"
+    },
+    {
+      "where": "Two Ways to Get It Wrong, paragraph 2 (contempt), sentence 4: \"Today it shows up mostly on the left and among the young, but not only there.\"",
+      "problem": "The worship paragraph places its disorder \"mostly on the right, though not only there.\" The contempt paragraph adds \"and among the young.\" The essay opened by addressing two readers, an older patriot and a younger critic, and promised the younger one his unease \"is right about more than its elders usually admit.\" This clause files the younger reader under a failure while the older reader is never filed under the other one, so the older reader can finish the section safely judging the young. VOICE says never to leave a reader there. The criticism stops using the same instrument on both sides. The ledger's support is Gallup's pride figures (Gen Z 41 percent extremely or very proud), and low pride isn't contempt, so the clause also outruns its evidence.",
+      "fix": "Replace with: \"Today it shows up mostly on the left, but not only there.\" (Ledger line 155 changes to match.)",
+      "severity": "should"
+    },
+    {
+      "where": "Loving a Country Like a Family, paragraph 2, opening: \"In *Orthodoxy*, published in 1908, Chesterton asked\"",
+      "problem": "The published text and the record disagree. The ledger (header and line 165) says the voice edit removed this unchecked year, and the draft at docs/work/essays/is-it-wrong-to-love-your-country.md reads \"In *Orthodoxy* Chesterton asked\". The landed JSON prints \"published in 1908\" again. In voice terms it's the fifth title-plus-year in the essay (The Defendant 1901, The Need for Roots 1943, Resident Aliens 1989, Orthodoxy 1908), and here the year does no work. 1908 is in fact the publication year, but the ledger doesn't carry it as checked.",
+      "fix": "Replace \"In *Orthodoxy*, published in 1908, Chesterton asked\" with \"In *Orthodoxy* Chesterton asked\".",
+      "severity": "should"
+    },
+    {
+      "where": "Two Ways to Get It Wrong, last paragraph, sentences 1 and 2: \"The two disorders have not done equal damage, and it would be false to pretend they have. Worship of the nation has blessed armies, and in Douglass's America it lent slavery the language of worship.\"",
+      "problem": "Three small things in two sentences. (1) \"It would be false to pretend they have\" is a self-certifying fairness aside, a cousin of the \"This is not both-sidesism\" stamp. The first clause has already refused the false symmetry, and the evidence that follows carries it. (2) \"Has blessed armies\" counts blessing an army as harm in itself. That leans toward the pacifist side of a question the essay otherwise leaves open (Resident Aliens is described, not endorsed). It also lands on the veteran the essay addressed in its first paragraph (\"Perhaps you served, or your father did\"). The disorder is blessing wars without asking whether they are just. (3) \"Worship ... lent slavery the language of worship\" repeats the word. Ledger line 159 rests the claim on Douglass's \"your prayers and hymns\" line, so the sentence can say exactly that.",
+      "fix": "Replace with: \"The two disorders have not done equal damage. Worship of the nation has blessed wars without asking whether they were just, and in Douglass's America it offered prayers and hymns for a republic that held slaves.\" (Ledger line 159 changes to quote the new wording.)",
+      "severity": "should"
+    },
+    {
+      "where": "Ending, first paragraph, opening: \"So is it wrong to love your country? No.\"",
+      "problem": "Recap. It restates the title question and gives the one-word answer the introduction already gave (\"The short answer is yes\"). \"So is X? No.\" is the stock summary opener for a conclusion. The closing stack is stronger if it starts from the reason itself, then turns the mirror (\"But what does your love do when your country is wrong?\").",
+      "fix": "Delete \"So is it wrong to love your country? No. \". The paragraph then reads: \"God made every nation and gave each of us a place to be born and a people to be born among, and gratitude is the right first answer to a gift.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Introduction, paragraph 4, last sentence: \"The longer answer starts on the older reader's side of the question.\"",
+      "problem": "An announced roadmap. The heading directly below (\"Why Christians Have Defended Patriotism\") already does the work. \"The short answer is yes\" followed by \"The longer answer...\" is a stock two-step.",
+      "fix": "Delete the sentence. The paragraph then ends: \"May a Christian love a country at all? The short answer is yes.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Nehemiah, the Exiles and Ruth, paragraph 4 (\"Scripture keeps that verse\"), sentences 4 and 5: \"What the psalm does with the rage matters, though. The exile tells God the worst thing in him instead of acting on it\"",
+      "problem": "An announced turn (\"X matters, though\") that tells the reader something is coming before it arrives, the pattern the brief lists (\"Two details deserve more attention than they get\"). The next sentence makes the turn on its own.",
+      "fix": "Replace \"What the psalm does with the rage matters, though. The exile tells God\" with \"But the exile tells God\".",
+      "severity": "consider"
+    },
+    {
+      "where": "Nehemiah, the Exiles and Ruth, paragraph 2, last sentence: \"Before Nehemiah built anything, he wept and confessed.\"",
+      "problem": "A paragraph-end verdict that restates the previous paragraph's last line (\"Nehemiah grieved his people's ruin and told the truth about its cause, with his own family on the list\") and pre-empts the ending (\"Nehemiah sat down and wept, confessed ... and then went to build\") and \"That is how Nehemiah loved a city in ruins.\" Five of this section's five paragraphs end on a verdict line. The brief allows one per section.",
+      "fix": "Delete the sentence. The paragraph then ends: \"It was tied to a particular place and to the dead buried there, and years of faithful service to a foreign king never loosened it.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Nehemiah, the Exiles and Ruth, paragraph 5 (Ruth), last sentence: \"Israel's great king descended from a foreigner who chose them.\"",
+      "problem": "A second closer after the paragraph's real verdict. It restates the David fact given two sentences earlier as an epigram. Ruth's choosing is already on the page in her own words (\"Your people shall be my people\").",
+      "fix": "Delete the sentence. The paragraph then ends: \"Scripture honors loyalty to a people, and it refuses to make blood the boundary of that people.\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Heading: \"## Two Ways to Get It Wrong\"",
+      "problem": "A formula heading (count plus \"get it wrong\") that doesn't say what the section is about. The section's first sentence repeats it (\"There are two ways to fail at this love\"). Every other heading names its subject.",
+      "fix": "Replace with: \"## Worshiping a Country and Despising It\"",
+      "severity": "consider"
+    },
+    {
+      "where": "Why Other Christians Distrust Patriotism, paragraph 3, sentence 2: \"Stanley Hauerwas and William Willimon's 1989 book *Resident Aliens*\"",
+      "problem": "The year does no work (the argument isn't dated), and it adds to the title-plus-year run the brief calls the scholar parade. 1901 for The Defendant and 1943 for The Need for Roots earn their years (the Boer War, the occupation), so keep those.",
+      "fix": "Replace \"William Willimon's 1989 book *Resident Aliens*\" with \"William Willimon's book *Resident Aliens*\".",
+      "severity": "consider"
+    },
+    {
+      "where": "What Nations Are For, paragraph 1, sentence 5: \"In Paul's account a nation is one of the settings\"",
+      "problem": "Repeats \"On Paul's account the nations are God's own work\" from the first section. Along with \"On this view\" and \"on John's telling\" it's becoming a framing tic.",
+      "fix": "Replace \"In Paul's account a nation is one of the settings\" with \"For Paul a nation is one of the settings\".",
+      "severity": "consider"
+    }
+  ],
+  "clean_checks": [
+    "Forbidden Language, literal search of every word and phrase in CLAUDE.md (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic; in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed as adjective, gospel-centered, authentic community; hold space, your truth, do the work, your feelings are valid, lean into, showing up): zero hits. \"Blessed\" appears twice: inside quoted Psalm 137:9 and as a verb (\"has blessed armies\"), never as an adjective. The verb goes away if the fourth finding is applied.",
+    "Em-dashes (U+2014): none in the title, standfirst, body or Closing Texts. The only dash is an en-dash in the verse range \"(Psalm 137:3–5)\", which marks a range, not a clause break.",
+    "Exclamation points: three, all inside verbatim quoted ESV Scripture (Nehemiah 2:3 \"Let the king live forever!\"; Psalm 137:5; Psalm 137:9). None in the Douglass, Chesterton, Lewis or Weil quotations, and none in the prose.",
+    "Semicolons: none.",
+    "Brief stamps (Those of us who preach, pastors like me, This is not both-sidesism, Consider, none of this, the record, I don't exempt myself): none used.",
+    "Rulebook leakage words (steelman, verdict, indictment, self-implication, \"deserves to be stated\", \"fair place to begin\"): none. \"Honest\" zero times; \"fair\" only inside Chesterton's quotation (\"fairer than Florence\"). The one self-certifying aside (\"it would be false to pretend\") is in the fourth finding.",
+    "Biography: one line only, \"I'm raising five sons in this country\". It's a confirmed fact, used as a father's hope and an admission that he isn't sure how to teach this love, not as a credential. No invented scene. The ledger (line 170) asks James to confirm he's comfortable with it. No title, years in ministry, book count, church name or Southern Baptist reference. \"Elsewhere I have tried to describe\" points to a site essay, not a body of work.",
+    "Brand tie-ins: none (no \"living well\", no platform self-reference).",
+    "Title \"Is It Wrong to Love Your Country?\" is in the plain words people search.",
+    "Standfirst (excerpt): one declarative sentence (\"Scripture treats love of country as a real good, and the kind of love it honors grieves a country's sins and names them.\"). It's compound, not a balanced antithesis.",
+    "Headings: six of seven are plain and descriptive (Why Christians Have Defended Patriotism; Why Other Christians Distrust Patriotism; Nehemiah, the Exiles and Ruth; What Nations Are For; Frederick Douglass and Dietrich Bonhoeffer; Loving a Country Like a Family). None is literary. The seventh is a formula heading, in the findings.",
+    "Political criticism uses the same instrument on both sides. Worship is placed \"mostly on the right\" and contempt \"mostly on the left\", each \"not only there\", and both are measured against Nehemiah's confession and Chesterton's mother. The refusal of equal damage is argued from history (VOICE permits refusing false equivalence). The Gallup election-swing line applies to both parties, and the section turns inward (\"Most of us carry some of each ... I know that's true of me\"). The opening's two complaints are balanced too: the stage draped in red, white and blue, and the sermons calling patriotism the doorway to idolatry. The only asymmetries are the generational clause and the armies sentence, both in the findings.",
+    "Second-order questions: pacifism versus just war is described through Hauerwas and Willimon in their own terms and not endorsed (the armies wording leans slightly; see the fourth finding). Whether America was founded as a Christian nation is handed to the linked essay. Bonhoeffer's choice stays in his own paraphrased words. No contested doctrine (baptism, office, millennium and so on) is asserted. Nation-worship is treated as idolatry, which CLAUDE.md's guardrails make a first-order matter.",
+    "Scholar parade: none in substance. Lewis, Chesterton, Weil, Aquinas, Barth (with Harnack), Hauerwas and Willimon, Douglass and Bonhoeffer each carry a step of the argument, and Chesterton returns twice to do new work (the candid counsellor, Pimlico). Two years that do no work are in the findings.",
+    "Self-implication is done, not announced: \"we\" before \"I\" (\"shorter than we like to think\", \"Most of us carry some of each\", then \"I know that's true of me\", then the sons paragraph's admission of uncertainty).",
+    "Crisis-facing check: this isn't a crisis-facing piece. Psalm 137:9 is handled as lament, not as a model. No self-harm, abuse or despair is in view, so no Find Help or 988 line is needed.",
+    "Ending: a short stack that turns the mirror on the reader (\"But what does your love do when your country is wrong? ... Most of us let our love go quiet, or go cold.\") and lands on Christ and Revelation 21:23 (\"its lamp is the Lamb\"). It doesn't end on a recap; the one recap line and the one slogan line are in the findings. The Closing Texts block uses the brief's format (*\"Quote.\"* (Reference)) with three verses.",
+    "Links: three (what-christian-nationalism-is-and-is-not, when-patriotism-becomes-a-gospel, was-america-founded-as-a-christian-nation), all in link-targets.json and within the two-to-four limit. when-patriotism-becomes-a-gospel is \"live\" in client/src/lib/shelf.json.",
+    "Register measurements: 40 prose paragraphs averaging about 95 words. That's slightly above the 80 to 90 target; the longest run about 149 words, and none is a wall or a fragment stack. 217 sentences with a mean of about 17.5 words, about 20 percent at 8 words or fewer (a little under the ~25 percent target, not a problem). Contractions are light. Questions are real (the two readers' questions, \"Should a Christian love his country less, then, or love it differently?\"). Body length is about 3,850 words, at the top of the brief's range.",
+    "No sentence or image reused from the approved pilots. Barmen also appears in what-romans-13-says, in different words. Philippians 3:20 is a Closing Text in was-america-founded-as-a-christian-nation, and here it sits inside the argument.",
+    "Published JSON versus draft .md: besides the 1908 year (in the findings), the JSON gives fuller verse references \"(Nehemiah 2:3)\", \"(Psalm 137:3–5)\" and \"(Psalm 137:9)\" where the draft has \"(2:3)\", \"(137:3–5)\" and \"(137:9)\". That's harmless, and arguably better for the verse-reference links."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "piece": "why-does-god-allow-suffering",
+  "human_score": 8.5,
+  "voice_score": 8,
+  "verdict": "Clean and close to finished. Mechanical checks pass (0 em-dashes, 0 exclamation points, 0 forbidden words or brief stamps, paragraph lengths vary from 15 to 128 words, contractions natural). The one pattern a careful reader would hear is the essay's own thesis used as a sentence mould: 'not an explanation, but a promise / words / presence' is cast as a two-beat 'doesn't X. It Y.' about seven times, twice inside the Natural Evil section alone. Trim three of them and the earned one at the resurrection lands harder. The rest are small: one clause that reads bolted on by an editor, two self-certifying or vague framing sentences, one permission-language phrase. What keeps voice below 9 is that there is no moment only James could have written; that needs a real memory from him, not an edit.",
+  "findings": [
+    {
+      "quote": "The Bible doesn't look at earthquakes and parasites and call the world finished. It calls the present order subjected and bound, in labor and waiting.",
+      "tell": "'It is not X. It is Y.' antithesis as habit (second of two in one movement; the same section ends 'Rowe's fawn gets no explanation in this life. What Scripture supplies is a promise')",
+      "why": "The essay runs this two-beat denial-then-affirmation in Job, Romans 8:28, here twice, the Is God in Control close, the Psalms section and the resurrection. Two in one short section is where a reader starts to hear a mould instead of a man thinking.",
+      "replacement": "When the Bible looks at earthquakes and parasites, it calls the present order subjected and bound, in labor and waiting.",
+      "severity": "should"
+    },
+    {
+      "quote": "Whichever view a Christian holds, the doctrine was never an explanation to hand a widow at the graveside. It's a promise she may lean on later, that what happened to her husband has not slipped out of God's hands.",
+      "tell": "Motif stamped through the piece ('explanation' 8 times, 'promise' 6); antithesis past its work",
+      "why": "This is the fourth 'not an explanation, a promise' turn before the essay reaches the cross. The next sentence ('Said too early...') already carries the point about timing, so the denial half is doing no work here.",
+      "replacement": "Whichever view a Christian holds, the doctrine is something a widow may lean on later, a promise that what happened to her husband has not slipped out of God's hands.",
+      "severity": "should"
+    },
+    {
+      "quote": "His argument was that God cannot make creatures truly free and also guarantee what they will choose, a view of freedom many Christians in the Reformed tradition reject.",
+      "tell": "Bolted-on qualifying clause; committee voice",
+      "why": "The trailing appositive reads as an editor's safeguard stapled to a summary (the ledger confirms it was added in the final read). A person talking would say it as its own sentence. The fact and the fairness both stay.",
+      "replacement": "His argument was that God cannot make creatures truly free and also guarantee what they will choose. Many Christians in the Reformed tradition don't accept that view of freedom.",
+      "severity": "should"
+    },
+    {
+      "quote": "These aren't failed prayers. God gave them to his people to pray, which means grief and even anger are things a believer may bring to him.",
+      "tell": "'Not X. Y.' antithesis, second in the paragraph's movement (the section opens 'If the Bible doesn't give the sufferer an explanation, it gives him words')",
+      "why": "The section's opening sentence is the true hinge and should keep the construction. This one repeats the shape five sentences later.",
+      "replacement": "God gave these prayers to his people to pray, which means grief and even anger are things a believer may bring to him.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Christian thinkers have given several answers over the centuries, and they carry real weight.",
+      "tell": "Rulebook leakage: announcing fairness before doing it",
+      "why": "The essay certifies the answers' weight here and again three paragraphs later ('These answers are true as far as they go'). The second is the real concession; the first is the method showing.",
+      "replacement": "Christian thinkers have given several answers over the centuries.",
+      "severity": "consider"
+    },
+    {
+      "quote": "The Bible saw all of this long before Lisbon.",
+      "tell": "Vague framing sentence / mild overclaim",
+      "why": "'All of this' gestures at five paragraphs of philosophy without saying what the Bible saw. It reads like a section-opener written to bridge, and a skeptic will hear it as a boast.",
+      "replacement": "The Bible took up this question long before Lisbon.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Bring the question to God in whatever words you have; the psalms give you permission.",
+      "tell": "Permission-language (counseling register) and a semicolon where he would use a comma",
+      "why": "'Give you permission' is the idiom of a self-help page, in the one paragraph where the reader may be in real distress and most needs a person talking. The previous section already showed the psalms doing it.",
+      "replacement": "Bring the question to God in whatever words you have, the way the psalms do.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Baptists, my own tradition, have had churches on both sides since the seventeenth century.",
+      "tell": "Statement of denomination (audit checklist item)",
+      "why": "Not an AI tell, and the brief permits Baptist self-identification; it is flagged because this audit was asked to surface every statement of denomination. It is used here as self-implication, not as a credential, so keeping it is defensible. James decides.",
+      "replacement": "Baptists have had churches on both sides since the seventeenth century.",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The opening is concrete history with no hook: Lisbon, Malagrida, Voltaire and Rousseau each do argumentative work and return later (Malagrida as Job's friends, Voltaire agreeing with Paul).",
+    "Real verdict lines, one per section and earned: 'The theories work at the level of the whole world, and people suffer one at a time.' 'He can't raise the dead.' 'Then they start talking.'",
+    "The objection is given at full strength (Rowe's fawn, Ivan's ticket) and the essay concedes plainly that Job 'doesn't answer Rowe'. A skeptic can't accuse it of dishonesty.",
+    "Self-implication is done, not announced: 'Most of us who have stood with a grieving family have felt their pull', 'We make that mistake of timing all the time', 'knew the arguments in this essay better than I do'.",
+    "Criticism runs in every direction with one instrument: judgment preachers, prosperity preachers, happiness churches, and Kushner treated with respect before the disagreement.",
+    "Second-order questions (providence, age of the earth and animal death) are stated for each side and left open.",
+    "The crisis paragraph has the 988 line and the Find Help link and doesn't validate despair.",
+    "'The resurrection doesn't tell us why the child died. It tells us what God means to do about death.' is the antithesis the whole essay earns; keep it, and let the earlier ones yield to it.",
+    "The ending leaves weight: permission to ask, a question to the reader who isn't suffering, and one closing line on Christ's wounds. No recap."
+  ],
+  "for_james": [
+    "The essay has no moment only you could have written. It says 'Most of us who have stood with a grieving family' in general terms. One real, plain memory (a hospital room, a funeral, something you said too early and regretted) in the Job's-friends or Is God in Control section would move the voice score from 8 to 10. Nobody should invent it for you; it has to be yours.",
+    "'the father who walks out' sits in the list of human-caused suffering. It is the one place your own story touches the page, quietly and without being named. It works as it stands; tell us if you'd rather it not be there, or if you want it said in the first person.",
+    "'Baptists, my own tradition' states your denomination. The brief allows it and it reads as fairness rather than credential, but it's your call whether it stays.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree on several points, and this essay follows the voice doc: the profile asks for 1,500 to 2,500 words, 2-to-4-sentence paragraphs, a Greek or Hebrew word that changes the argument, a screenshot line, and a Monday Morning close of three questions and one practice; the voice doc asks for developed paragraphs, no decorative Greek or Hebrew, and no clean application turn. The essay is about 3,800 words in developed paragraphs with no word study and no takeaway list. I did not rewrite toward the profile.",
+    "Final line: 'The hands that will wipe away every tear still carry the marks of the nails.' It's the most literary sentence in the piece. I think it's earned and is the one memorable line your profile asks for, but read it aloud and decide whether it sounds like you or like a line written for you."
+  ]
+}

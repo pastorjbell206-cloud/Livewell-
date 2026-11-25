@@ -3,8 +3,10 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { readStoredJSON, removeStoredJSON, writeStoredJSON } from "@/lib/storage";
 import { isPublicEssayHref } from "@/lib/shelf";
+import { toolName } from "@/lib/toolsList";
 
 /**
  * Which Lens Has You? — the flagship diagnostic from the 2026 board audit
@@ -17,9 +19,11 @@ import { isPublicEssayHref } from "@/lib/shelf";
  * is public on the shelf.
  *
  * Scoring is normalized per lens (picked / available) so no lens wins merely
- * by appearing in more items. Mid-flow state survives a reload via
- * sessionStorage (the house pattern: nothing outlives the tab); the result
- * screen offers a non-destructive "Change my answers."
+ * by appearing in more items. The answers so far are kept on this device
+ * (key livewell-progress-which-lens, the livewell-progress-* pattern), so a
+ * reload or a closed tab comes back to the same question; an older tab-only
+ * save (livewell-which-lens-session) is picked up once. The result screen
+ * offers a non-destructive "Change my answers", and "Start over" clears.
  */
 
 type LensId = "flag" | "cause" | "highlighter" | "rearview" | "marketplace";
@@ -153,28 +157,31 @@ const LENSES: Record<LensId, {
     verdict: "Somewhere along the way, you became the customer — and the customer is always right.",
     body: "This is the lens the culture hands out free at the door: church as service provider, sermon as product, God as a very effective life coach. It is why 'fed' became the test of a congregation and 'fit' became the test of a faith. No one is sneered at here — the entire American religious economy was built to disciple us into this, and it worked on most of us, the writer included. The way out is not a better product. It is formation — the slow, unglamorous practices that turn a consumer back into a disciple.",
     ctaLabel: "Build a rule of life",
-    ctaName: "the Rule of Life Builder",
+    ctaName: toolName("rule-of-life"),
     ctaHref: "/tools/rule-of-life",
     alsoLabel: "Or read a chapter of Proverbs a day",
     alsoHref: "/tools/proverbs-31",
   },
 };
 
+const PROGRESS_KEY = "livewell-progress-which-lens";
+/** The tab-only save this tool used before 2026-11-18. */
 const SESSION_KEY = "livewell-which-lens-session";
 
 interface SessionState { answers: Record<number, "a" | "b">; step: number; savedAt: number }
 
+const isState = (v: unknown): v is SessionState =>
+  !!v && typeof v === "object" &&
+  typeof (v as SessionState).step === "number" &&
+  !!(v as SessionState).answers && typeof (v as SessionState).answers === "object" &&
+  Object.entries((v as SessionState).answers).every(([k, x]) => /^\d+$/.test(k) && Number(k) < QUESTIONS.length && (x === "a" || x === "b"));
+
 function readSession(): SessionState {
-  if (typeof window === "undefined") return { answers: {}, step: 0, savedAt: 0 };
-  return readStoredJSON<SessionState>(
-    SESSION_KEY,
-    (v): v is SessionState =>
-      !!v && typeof v === "object" &&
-      typeof (v as SessionState).step === "number" &&
-      typeof (v as SessionState).answers === "object",
-    { answers: {}, step: 0, savedAt: 0 },
-    window.sessionStorage,
-  );
+  const empty = { answers: {}, step: 0, savedAt: 0 };
+  if (typeof window === "undefined") return empty;
+  const kept = readStoredJSON<SessionState | null>(PROGRESS_KEY, isState, null);
+  if (kept) return kept;
+  return readStoredJSON<SessionState>(SESSION_KEY, isState, empty, window.sessionStorage);
 }
 
 export default function WhichLens() {
@@ -185,7 +192,7 @@ export default function WhichLens() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    writeStoredJSON(SESSION_KEY, { answers, step, savedAt: Date.now() }, window.sessionStorage);
+    writeStoredJSON(PROGRESS_KEY, { answers, step, savedAt: Date.now() });
   }, [answers, step]);
 
   const done = Object.keys(answers).length === QUESTIONS.length;
@@ -207,7 +214,10 @@ export default function WhichLens() {
   }, [done, answers]);
 
   const restart = () => {
-    if (typeof window !== "undefined") removeStoredJSON(SESSION_KEY, window.sessionStorage);
+    if (typeof window !== "undefined") {
+      removeStoredJSON(PROGRESS_KEY);
+      removeStoredJSON(SESSION_KEY, window.sessionStorage);
+    }
     setAnswers({});
     setStep(0);
     setReviewing(false);
@@ -218,23 +228,15 @@ export default function WhichLens() {
   return (
     <Layout>
       <SEOMeta
-        title="Which Lens Has You? — A Diagnostic"
+        title="What Shapes How You Read the Bible? A Self-Check"
         description="Thirteen honest choices. Five lenses that do your thinking before you do — the flag, the cause, the highlighter, the rearview, the marketplace. Named, then dismantled."
         url="https://www.livewellbyjamesbell.co/tools/which-lens"
       />
 
       {/* HEADER */}
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-3) var(--s-5)" }}>
-        <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "1.2rem" }}>A diagnostic</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(2rem, 4.4vw, 2.9rem)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", color: "var(--bone)", marginBottom: "1rem" }}>
-            Which lens has you?
-          </h1>
-          <p style={{ color: "var(--bone)", opacity: 0.75, fontSize: "1rem", lineHeight: 1.7, maxWidth: "58ch" }}>
-            Everyone reads the faith through something. Thirteen choices — none of them comfortable, most of them unfair, all of them honest. Pick the answer that is truer of you, not the one you approve of. Your answers stay in this browser tab and are seen by no one.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/tools/which-lens" title="What shapes how you read the Bible?" line="Which lens has you?" plate="lantern">
+        <p className="pg-head__lede">Everyone reads the faith through something. Thirteen choices — none of them comfortable, most of them unfair, all of them honest. Pick the answer that is truer of you, not the one you approve of. Your answers stay on this device, so you can stop and come back, and are seen by no one.</p>
+      </InnerHead>
 
       {/* BODY */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-3)", minHeight: "40vh" }}>
@@ -295,10 +297,10 @@ export default function WhichLens() {
                 )}
               </div>
               <div style={{ display: "flex", gap: "1.8rem", flexWrap: "wrap" }}>
-                <button onClick={() => setReviewing(true)} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--ink-muted)", padding: 0, textDecoration: "underline" }}>
+                <button onClick={() => setReviewing(true)} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--ink-muted)", padding: 0, minHeight: "44px", textDecoration: "underline" }}>
                   Change my answers
                 </button>
-                <button onClick={restart} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--ink-muted)", padding: 0, textDecoration: "underline" }}>
+                <button onClick={restart} style={{ background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "0.8rem", color: "var(--ink-muted)", padding: 0, minHeight: "44px", textDecoration: "underline" }}>
                   Start over
                 </button>
               </div>

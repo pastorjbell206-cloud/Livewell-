@@ -1,0 +1,102 @@
+{
+  "slug": "david-and-goliath",
+  "title": "David and Goliath",
+  "group": "stories",
+  "status": "finished",
+  "mark": "david-and-goliath",
+  "line": {
+    "younger": "A giant, a frightened army, and a shepherd boy with a sling. The story as the Bible tells it, in seven pictures, and what it is really about.",
+    "older": "1 Samuel 17 as the text itself tells it, in seven pictures: two armies, forty days of fear, a boy on an errand, a speech in the name of the LORD, one stone, and the question of who we are in the story."
+  },
+  "poster": "Two armies are camped on two hills with a valley and a brook between them. On the left are soldiers with spears beside blue tents; on the right, soldiers beside clay tents with a tall king among them.",
+  "frames": [
+    {
+      "id": "valley",
+      "name": "Two armies, one valley",
+      "still": "Two armies are camped on two hills with a valley and a brook between them. On the left are soldiers with spears beside blue tents; on the right, soldiers beside clay tents with a tall king among them.",
+      "younger": "Long ago, two armies faced each other across a valley. On one hill stood the Philistines. On the other stood Israel and its king, Saul. Between them lay the Valley of Elah, and nobody wanted to go down into it.",
+      "older": "Two armies face each other across the Valley of Elah, a corridor from the Philistine plain into the hills of Judah. Saul was made king to fight Israel's battles, and he stands a head taller than his own men. For forty days he does not move."
+    },
+    {
+      "id": "giant",
+      "name": "The champion",
+      "still": "A huge warrior in a helmet stands in the valley with a great spear. On the hill behind him, small against his size, Israel's soldiers draw back.",
+      "younger": "Every morning and every evening a giant named Goliath came out from the Philistine camp. He wore heavy bronze armor and carried a huge spear. He shouted for someone to come and fight him. Saul and all his soldiers were terrified.",
+      "older": "A champion comes out from Gath, in bronze from head to shin, with a spear like a weaver's beam. He taunts Israel morning and evening, and the storyteller makes us feel the weight of every piece of armor before anyone answers.",
+      "verse": {
+        "ref": "1 Samuel 17:11",
+        "text": "On hearing the words of the Philistine, Saul and all the Israelites were dismayed and greatly afraid."
+      }
+    },
+    {
+      "id": "errand",
+      "name": "A boy with bread",
+      "still": "A shepherd boy with a staff and a bundle on his back arrives at the camp. Three soldiers stand there, and one of them points at him angrily. Far off, the giant stands in the valley.",
+      "younger": "David was the youngest of eight brothers, and he looked after the sheep. His father sent him to the camp with bread for his big brothers. David heard the giant shouting, and he asked: who is this man, to defy the armies of the living God?",
+      "older": "David arrives as an errand boy, with grain and bread for his brothers. What the soldiers hear as a threat to Israel, David hears as an insult to the living God. His oldest brother is angry with him. David keeps asking.",
+      "verse": {
+        "ref": "1 Samuel 17:26",
+        "text": "that he should defy the armies of the living God?"
+      }
+    },
+    {
+      "id": "armor",
+      "name": "Not Saul's armor",
+      "still": "By the brook the boy kneels to choose stones from the water. Behind him stands the king, and a helmet and a coat of armor lie on the ground, taken off.",
+      "younger": "King Saul said, you are only a boy. David told him how God had saved him from a lion and a bear while he guarded the sheep. Saul gave David his own armor, but David could not walk in it, and he took it off. He chose five smooth stones from the stream.",
+      "older": "Saul objects that David is only a boy. David answers with memory: the LORD who delivered him from the lion and the bear will deliver him now. He tries the king's armor and takes it off. Faith here is memory put to work in a new danger.",
+      "verse": {
+        "ref": "1 Samuel 17:37",
+        "text": "The LORD, who delivered me from the claws of the lion and the bear, will deliver me from the hand of this Philistine."
+      }
+    },
+    {
+      "id": "name",
+      "name": "In the name of the LORD",
+      "still": "The boy stands in the valley with his staff and his sling, one hand lifted, facing the huge warrior with his spear. Light comes down from above between them.",
+      "younger": "Goliath looked down on David and mocked him. But David called back: you come against me with a sword and a spear, but I come in the name of the LORD. This battle belongs to him.",
+      "older": "The center of the chapter is a speech, not a stone. Goliath curses David by his gods. David answers that he comes in the name of the LORD of Hosts, so that the whole world will know there is a God in Israel. The contest is about whose God is real.",
+      "verse": {
+        "ref": "1 Samuel 17:47",
+        "text": "it is not by sword or spear that the LORD saves; for the battle is the LORD’s"
+      }
+    },
+    {
+      "id": "stone",
+      "name": "One stone",
+      "still": "A thin line arcs from the boy's sling across the valley. The giant has fallen facedown, his spear on the ground, and on the far hill his army runs.",
+      "younger": "David ran toward the giant. He put a stone in his sling and let it fly. It struck Goliath on the forehead, and the giant fell. The Philistine army ran away, and Israel was saved.",
+      "older": "David runs toward the battle line, slings one stone, and the champion falls facedown. There was no sword in David's hand. Israel, frozen for forty days, charges, and the Philistines flee. From here David's fame begins to grow, and so does Saul's jealousy.",
+      "verse": {
+        "ref": "1 Samuel 17:50",
+        "text": "Thus David prevailed over the Philistine with a sling and a stone"
+      }
+    },
+    {
+      "id": "who",
+      "name": "Who are we in the story?",
+      "still": "On the hillside Israel's soldiers lift their hands for joy as the boy walks back up toward them. Far away, on another hill in the morning sun, stands an empty cross.",
+      "younger": "It is easy to think this story says: be brave, and you can beat any giant. But most of us are like the frightened soldiers on the hill, saved by someone else who fought for us. Christians see in David a small picture of Jesus, who won the fight we could not win.",
+      "older": "The chapter is a battle story, not an allegory, yet readers have long seen its pattern filled out in Christ. David fights as the representative of a people too afraid to fight, and his victory becomes theirs. Most readers are not David here. They are the soldiers on the hillside, delivered by another."
+    }
+  ],
+  "think": {
+    "younger": "Why was David not afraid when everyone else was? What had he remembered about God?",
+    "older": "The Study Bible's note says most readers are not David in this story but the frightened soldiers. How does that change what the story asks of you?"
+  },
+  "read": [
+    { "label": "1 Samuel 16", "href": "/study/bible/1-samuel/16" },
+    { "label": "1 Samuel 17", "href": "/study/bible/1-samuel/17" }
+  ],
+  "stops": ["kingdom"],
+  "cards": [],
+  "care": "This part of the story has war and death in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "1 Samuel 17 in the Study Bible: the battle is the LORD's", "href": "/study/bible/1-samuel/17" },
+    { "label": "The king (a moving picture)", "href": "/study/explorer/watch/the-king" },
+    { "label": "Go to the stop: The Kingdom", "href": "/study/explorer/kingdom" },
+    { "label": "Courage and Fear: what the Bible says", "href": "/wisdom/courage" },
+    { "label": "When You Are Afraid: what the Bible says", "href": "/wisdom/fear-and-courage" }
+  ],
+  "end": { "label": "Read 1 Samuel 17 in the Study Bible", "href": "/study/bible/1-samuel/17" }
+}

@@ -128,6 +128,7 @@ function checkIntro(b, where) {
       for (const t of ["first", "pastor", "scholar"]) if (!fr.some((r) => r.tier === t)) fail(where, `furtherReading needs a ${t} title`);
     }
   }
+  if (d.teaching != null) checkTeaching(b, d.teaching, `${where}.teaching`);
   if (!Array.isArray(d.keyChapters) || d.keyChapters.length < 1) fail(where, "at least one key chapter");
   else for (const k of d.keyChapters) {
     if (!(k.ch >= 1 && k.ch <= b.chapters)) fail(where, `key chapter ${k.ch} out of range`);
@@ -326,7 +327,144 @@ function checkStudy(id, where) {
   else for (const [i, q] of d.questions.entries()) prose(`${where}.questions[${i}]`, q, 25, 400);
 }
 
-let intros = 0, notes = 0, verseFiles = 0, versesMissing = 0, studies = 0;
+/**
+ * The stretch of the world each map frame shows, in degrees. Keep in step
+ * with MAP_FRAMES in client/src/lib/bible-notes.ts (teaching.test.tsx checks).
+ */
+const MAP_FRAMES = {"israel":{"west":34.45,"east":36.3,"north":33.68,"south":31.6},"canaan":{"west":34.0,"east":36.4,"north":33.7,"south":30.8},"fertile-crescent":{"west":29,"east":49,"north":38,"south":28},"mediterranean":{"west":11.5,"east":37.6,"north":42.3,"south":30.6}};
+
+/**
+ * Optional: a book's teaching introduction (intro.json `teaching`), plain
+ * words in headed parts with lists for the hard passages, key words, a
+ * timeline and a map. Held to the same prose rules as every note.
+ */
+function checkTeaching(b, t, where) {
+  if (!Array.isArray(t.parts) || t.parts.length < 4) return fail(where, "at least four parts");
+  const ids = new Set();
+  for (const [i, p] of t.parts.entries()) {
+    if (!/^[a-z][a-z-]*$/.test(p.id ?? "") || ids.has(p.id)) fail(`${where}.parts[${i}]`, `bad or repeated id "${p.id}"`);
+    ids.add(p.id);
+    if (typeof p.h !== "string" || p.h.length < 3) fail(`${where}.parts[${i}]`, "missing heading");
+    prose(`${where}.parts[${i}].body`, p.body, 300, 6000);
+  }
+  for (const [i, h] of (t.hard ?? []).entries()) {
+    if (!(h.ch >= 1 && h.ch <= b.chapters) || !chapterData.get(`${b.slug}/${h.ch}`)?.verses.some((v) => v.v === h.v)) fail(`${where}.hard[${i}]`, `no verse ${h.ch}:${h.v}`);
+    prose(`${where}.hard[${i}].line`, h.line, 20, 300);
+  }
+  for (const [i, w] of (t.words ?? []).entries()) {
+    if (typeof w.word !== "string" || !w.word) fail(`${where}.words[${i}]`, "missing word");
+    prose(`${where}.words[${i}].line`, w.line, 20, 300);
+  }
+  for (const [i, x] of (t.timeline ?? []).entries()) {
+    if (!["world", "story", "book"].includes(x.kind)) fail(`${where}.timeline[${i}]`, "kind must be world, story or book");
+    if (typeof x.when !== "string" || !x.when) fail(`${where}.timeline[${i}]`, "missing when");
+    prose(`${where}.timeline[${i}].what`, x.what, 20, 400);
+  }
+  // The map: a bare list of places on the default frame, or named maps,
+  // each with a frame and a title. Every place must sit inside its frame.
+  const maps = Array.isArray(t.map) && t.map.length && t.map[0] && "places" in t.map[0] ? t.map : [{ frame: "israel", places: t.map ?? [], bare: true }];
+  const mapIds = new Set();
+  for (const [j, mp] of maps.entries()) {
+    const mw = mp.bare ? `${where}.map` : `${where}.map[${j}]`;
+    const fr = MAP_FRAMES[mp.frame];
+    if (!fr) { fail(mw, `unknown frame "${mp.frame}" (one of ${Object.keys(MAP_FRAMES).join(", ")})`); continue; }
+    if (!mp.bare && (typeof mp.title !== "string" || mp.title.length < 3)) fail(mw, "a named map needs a title");
+    if (!Array.isArray(mp.places) || mp.places.length < 1) { fail(mw, "at least one place"); continue; }
+    if (!mp.bare && mapIds.has(mp.frame)) fail(mw, `frame "${mp.frame}" used twice`);
+    mapIds.add(mp.frame);
+    for (const [i, m] of mp.places.entries()) {
+      const pw = mp.bare ? `${mw}[${i}]` : `${mw}.places[${i}]`;
+      if (!(m.lat > fr.south && m.lat < fr.north && m.lon > fr.west && m.lon < fr.east)) fail(pw, `${m.name ?? m.id} (${m.lat}, ${m.lon}) lies outside the "${mp.frame}" frame`);
+      if (!Array.isArray(m.refs) || m.refs.length < 1) fail(pw, "at least one reference");
+      for (const r of m.refs ?? []) {
+        const rm = String(r).match(/^(\d+):(\d+)/);
+        if (!rm || !chapterData.get(`${b.slug}/${rm[1]}`)?.verses.some((v) => String(v.v) === rm[2])) fail(pw, `no verse ${r}`);
+      }
+      prose(`${pw}.line`, m.line, 20, 300);
+      if (m.region != null && typeof m.region !== "boolean") fail(pw, "region must be true or false");
+      if (m.label != null && m.label !== false && !(Number.isFinite(m.label.dx) && Number.isFinite(m.label.dy) && ["start", "end", "middle"].includes(m.label.anchor) && (m.label.text == null || (typeof m.label.text === "string" && m.label.text.length > 0)))) fail(pw, "label is false (no name on the drawing) or needs dx, dy, an anchor of start, end or middle, and an optional short text");
+    }
+  }
+  if (t.mapNote != null) prose(`${where}.mapNote`, t.mapNote, 20, 400);
+  for (const [i, x] of (t.deeper ?? []).entries()) {
+    if (typeof x.href !== "string" || !x.href.startsWith("/")) fail(`${where}.deeper[${i}]`, "href must be a path on the site");
+    if (typeof x.name !== "string" || x.name.length < 3) fail(`${where}.deeper[${i}]`, "missing name");
+    if (x.icon != null && !["people", "world", "scroll", "book"].includes(x.icon)) fail(`${where}.deeper[${i}]`, "icon must be people, world, scroll or book");
+    prose(`${where}.deeper[${i}].line`, x.line, 10, 200);
+  }
+}
+
+/**
+ * Optional: a chapter in plain words, passage by passage
+ * (notes/<slug>/plain/<n>.json). The passages run from verse 1 to the last
+ * verse in order, and the chapter note says it has one ("plain": true).
+ */
+function checkPlain(b, c, where) {
+  const d = json(`notes/${b.slug}/plain/${c}.json`);
+  const data = chapterData.get(`${b.slug}/${c}`);
+  const last = data.verses[data.verses.length - 1].v;
+  if (!Array.isArray(d.passages) || d.passages.length < 1) return fail(where, "passages missing");
+  let next = 1;
+  for (const [i, p] of d.passages.entries()) {
+    const m = String(p.v ?? "").match(/^(\d+)(?:-(\d+))?$/);
+    if (!m || +m[1] !== next || +(m[2] ?? m[1]) < +m[1]) { fail(`${where}.passages[${i}]`, `range "${p.v}" out of order (expected to start at ${next})`); return; }
+    next = +(m[2] ?? m[1]) + 1;
+    if (typeof p.t !== "string" || p.t.length < 3) fail(`${where}.passages[${i}]`, "missing title");
+    prose(`${where}.passages[${i}].happening`, p.happening, 150, 3000);
+    prose(`${where}.passages[${i}].hearers`, p.hearers, 150, 4000);
+    // The third part: a New Testament passage has "The Old Testament behind
+    // it" (`ot`); an Old Testament passage has "Where the Bible takes this up"
+    // (`later`). Each testament uses only its own field.
+    const oldBook = b.testament === "OT";
+    if (oldBook && p.ot != null) fail(`${where}.passages[${i}].ot`, "an Old Testament book's passages use `later` (Where the Bible takes this up), not `ot`");
+    if (!oldBook && p.later != null) fail(`${where}.passages[${i}].later`, "only an Old Testament book's passages have `later`; a New Testament passage uses `ot`");
+    if (p.ot != null) prose(`${where}.passages[${i}].ot`, p.ot, 100, 3000);
+    if (p.later != null) prose(`${where}.passages[${i}].later`, p.later, 100, 3000);
+    if (p.hard != null) prose(`${where}.passages[${i}].hard`, p.hard, 100, 3000);
+    prose(`${where}.passages[${i}].asks`, p.asks, 80, 1500);
+    // Field order: every field can hold text and still sit under the wrong
+    // heading (a run once stored the hard question under "The Old Testament
+    // behind it"). So the Old Testament note must name an Old Testament book
+    // or the Law, the Prophets, the Psalms or Scripture, and "What it asks"
+    // must not be the only field that names one.
+    const key = `${b.slug}/${c} ${p.v}`;
+    if (oldBook) {
+      // An Old Testament passage: "Where the Bible takes this up" must name
+      // at least one other book of the Bible, and "What it asks" must not be
+      // the only field that does.
+      const other = otherBook(b);
+      if (typeof p.later === "string" && !other.test(p.later)) fail(`${where}.passages[${i}].later`, `names no other book of the Bible than ${b.name}: is this text under the right heading?`);
+      const naming = ["happening", "hearers", "later", "hard", "asks"].filter((k) => typeof p[k] === "string" && other.test(p[k]));
+      if (naming.length === 1 && naming[0] === "asks") fail(`${where}.passages[${i}].asks`, "is the only field naming another book of the Bible: is the later-Scripture note under the wrong heading?");
+      continue;
+    }
+    if (typeof p.ot === "string" && !OT_NAMED.test(p.ot) && !OT_FIELD_KNOWN.has(key)) fail(`${where}.passages[${i}].ot`, "names no Old Testament book, the Law, the Prophets, the Psalms or Scripture: is this text under the right heading?");
+    const naming = ["happening", "hearers", "ot", "hard", "asks"].filter((k) => typeof p[k] === "string" && OT_BOOK.test(p[k]));
+    if (naming.length === 1 && naming[0] === "asks") fail(`${where}.passages[${i}].asks`, "is the only field naming an Old Testament book: is the Old Testament note under the wrong heading?");
+  }
+  if (next !== last + 1) fail(where, `passages end at ${next - 1}, chapter ends at ${last}`);
+}
+const OT_BOOK = new RegExp(
+  `\\b(${[...new Set([...books.filter((x) => x.testament === "OT").map((x) => x.name.replace(/^\d\s/, "")), "Psalm", "Song of Songs"])]
+    .sort((a, z) => z.length - a.length)
+    .join("|")})\\b`,
+);
+// Every book of the Bible but the one given ("Psalm" and "Song of Songs"
+// count; "1 Kings" is matched as "Kings").
+const otherBook = (b) =>
+  new RegExp(
+    `\\b(${[...new Set([...books.filter((x) => x.slug !== b.slug).map((x) => x.name.replace(/^\d\s/, "")), ...(b.slug === "psalms" ? [] : ["Psalm"]), ...(b.slug === "song-of-solomon" ? [] : ["Song of Songs"])])]
+      .filter((n) => n !== b.name.replace(/^\d\s/, ""))
+      .sort((a, z) => z.length - a.length)
+      .join("|")})\\b`,
+  );
+const OT_NAMED = new RegExp(`${OT_BOOK.source}|\\b(the Law|the Prophets|the Psalms|Scriptures?|Old Testament)\\b`);
+// Passages whose Old Testament note names none of these, reported for a
+// writer to look at rather than changed by a script. Remove an entry once
+// its note is put right.
+const OT_FIELD_KNOWN = new Set([]);
+
+let intros = 0, notes = 0, verseFiles = 0, versesMissing = 0, studies = 0, plains = 0;
 for (const b of books) {
   if (partial && !only.includes(b.slug)) continue;
   const introPath = path.join(DIR, "notes", b.slug, "intro.json");
@@ -337,6 +475,10 @@ for (const b of books) {
     const p = path.join(DIR, "notes", b.slug, `${c}.json`);
     if (!fs.existsSync(p)) { if (!partial) fail(`${b.slug}/${c}`, "missing"); continue; }
     try { checkChapter(b, c, `${b.slug}/${c}`); notes++; } catch (e) { fail(`${b.slug}/${c}`, e.message); }
+    const pp = path.join(DIR, "notes", b.slug, "plain", `${c}.json`);
+    const flagged = json(`notes/${b.slug}/${c}.json`).plain === true;
+    if (fs.existsSync(pp) !== flagged) fail(`${b.slug}/${c}`, flagged ? "says plain: true but has no plain file" : "has a plain file but its note does not say plain: true");
+    if (fs.existsSync(pp)) { try { checkPlain(b, c, `${b.slug}/plain/${c}`); plains++; } catch (e) { fail(`${b.slug}/plain/${c}`, e.message); } }
     const vp = path.join(DIR, "notes", b.slug, "verses", `${c}.json`);
     if (!fs.existsSync(vp)) { versesMissing++; if (!partial && VERSES_COMPLETE) fail(`${b.slug}/verses/${c}`, "missing"); continue; }
     try { checkVerses(b, c, `${b.slug}/verses/${c}`); verseFiles++; } catch (e) { fail(`${b.slug}/verses/${c}`, e.message); }
@@ -412,4 +554,4 @@ if (errors.length) {
   for (const e of errors.slice(0, 200)) console.error("  " + e);
   process.exit(1);
 }
-console.log(`✓ bible notes: ${intros} introductions, ${notes} chapter notes, ${verseFiles} verse-note files, ${studies} doctrine studies, ${guides} guides${versesMissing && !VERSES_COMPLETE ? ` (${versesMissing} chapters still without verse notes)` : ""}${partial ? " (partial check)" : ", story path covers all 1,189 chapters"}`);
+console.log(`✓ bible notes: ${intros} introductions, ${notes} chapter notes, ${verseFiles} verse-note files, ${studies} doctrine studies, ${guides} guides${plains ? `, ${plains} chapters in plain words` : ""}${versesMissing && !VERSES_COMPLETE ? ` (${versesMissing} chapters still without verse notes)` : ""}${partial ? " (partial check)" : ", story path covers all 1,189 chapters"}`);

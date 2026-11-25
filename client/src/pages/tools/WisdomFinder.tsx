@@ -1,724 +1,617 @@
 /**
- * Wisdom Finder (/tools/wisdom-finder) — type in what you are struggling with,
- * and the tool surfaces what the Bible says about it: the verses, the cultural
- * world they were written in, how the church has understood them across
- * history, and the practical application to modern life. Topics load from
- * /wisdom/topics.json (built by scripts/build-wisdom-index.mjs from
- * client/public/wisdom/topics/*.json). Matching is keyword-based and entirely
- * client-side; no query leaves the browser.
+ * The Wisdom Finder (/tools/wisdom-finder): say what you are facing in your
+ * own words, or choose an area of life, and find the subjects of the wisdom
+ * library that bear on it. Each subject has its own page (/wisdom/:id).
  *
- * Beyond the finder itself: an A–Z browse of all topics with live filtering,
- * a saved list persisted on-device (livewell-wisdom-saved-v1), a deterministic
- * entry for today (the date picks it — no Math.random), per-verse and
- * whole-entry copy via the clipboard helper, and cross-references into the
- * pull-quote corpus (social-quotes.ts) linked back to their source works.
+ * Matching runs in the browser, from data only (lib/wisdom-match.ts over
+ * client/public/wisdom/finder.json); nothing typed leaves the device. Where
+ * nothing fits well the page says so and offers the areas and Find Help, and
+ * never forces a match. What the reader typed is kept only for this tab
+ * (sessionStorage, through the tool shell's useToolProgress); saved topics
+ * and verses live in the stores My Library reads (lib/wisdom.ts).
+ *
+ * When the best fit is weak or others are as close, the page asks "Is it one
+ * of these?" with the areas of life the words met, as plain buttons; picking
+ * one narrows the subjects to that area. A sentence that puts the help topic
+ * first for safety never gets this step. When the first subject's own page
+ * opens with the path to help (finder.json "help"), the Find Help line a
+ * safety result carries is shown under it too.
+ *
+ * Beside the search, "Or look by subject" (collapsed) lists the same areas,
+ * each opening its subjects written in full, for words the finder does not
+ * meet.
+ *
+ * The word vectors (lib/wisdom-vectors.ts, 3.4 MB) are fetched only once the
+ * reader starts to use the finder: a question in the address, the box focused
+ * or typed in, one of the sentences to try, or picking up an earlier
+ * question. A question asked before they arrive waits for them, up to
+ * VECTOR_WAIT_MS, so its results never change under the reader; past that, or
+ * if they cannot be had, it is matched on its words alone.
+ *
+ * Built on the tool shell (components/tool-shell): ToolHead, QuestionCard
+ * (the areas), useToolProgress, ResultActions.
  */
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Link } from "wouter";
+import { ArrowRight, Search } from "lucide-react";
 import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
 import { SEOMeta } from "@/components/SEOMeta";
-import { useEffect, useMemo, useState } from "react";
-import { Link } from "wouter";
-import {
-  Search,
-  Copy,
-  Check,
-  Globe,
-  Landmark,
-  Compass,
-  BookOpen,
-  Bookmark,
-  BookmarkCheck,
-  ArrowLeft,
-  Quote,
-} from "lucide-react";
-import { copyToClipboard } from "@/lib/clipboard";
-import ScriptureNote from "@/components/ScriptureNote";
-import { fetchJson } from "@/lib/fetch-json";
-import { readStoredJSON, writeStoredJSON, isArrayOf } from "@/lib/storage";
-import { SOCIAL_QUOTES, type SocialQuote } from "@/data/social-quotes";
+import { ToolHead, QuestionCard, ResultActions, useToolProgress, SAVE_FAILED } from "@/components/tool-shell";
+import { prepare, prepareVectors, findTopics, findInArea, type FinderTopic, type TopicVectors } from "@/lib/wisdom-match";
+import { fetchVectors } from "@/lib/wisdom-vectors";
+import { fetchFinder, readSavedTopics, verseForToday, type FinderFile } from "@/lib/wisdom";
+import { toolById } from "@/lib/toolsList";
+import "../wisdom/wisdom.css";
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
-// Default is AA-passing mustard-text (eyebrows on light sections); the one
-// dark-section usage ("Go deeper") overrides back to bright var(--mustard).
-const eyebrow = { fontFamily: "var(--U)", fontSize: "12px", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--mustard-text)" } as const;
-const chipStyle = (on: boolean) =>
-  ({
-    cursor: "pointer",
-    padding: "8px 14px",
-    background: on ? "var(--mustard)" : "var(--card)",
-    color: on ? "var(--charcoal)" : "var(--ink)",
-    border: "1px solid var(--line)",
-    fontFamily: "var(--U)",
-    fontWeight: 600,
-    fontSize: "13.5px",
-  }) as const;
-const smallActionStyle = {
-  cursor: "pointer",
-  display: "inline-flex",
-  alignItems: "center",
-  gap: "6px",
-  padding: "9px 16px",
-  background: "var(--charcoal)",
-  color: "var(--bone)",
-  border: "none",
-  fontFamily: "var(--U)",
-  fontWeight: 600,
-  fontSize: "13px",
-} as const;
-
-interface Verse { ref: string; text: string }
-interface Related { label: string; href: string }
-interface Topic {
-  id: string;
-  label: string;
-  keywords: string[];
-  framing: string;
-  cultural: string;
-  historical: string;
-  application: string;
-  verses: Verse[];
-  related?: Related[];
-  articles?: Related[];
+interface Place {
+  q: string;
+  area: string | null;
 }
-
-/** Versioned storage key for the saved-entries list (array of topic ids). */
-const SAVED_KEY = "livewell-wisdom-saved-v1";
-const isString = (x: unknown): x is string => typeof x === "string";
-const readSaved = (): string[] => readStoredJSON(SAVED_KEY, isArrayOf(isString), []);
-
-const SAVE_FAILED_MESSAGE =
-  "Couldn't save to this browser — your work here will not survive a reload.";
-
-function scoreTopic(t: Topic, words: string[]): number {
-  let score = 0;
-  const hay = (t.label + " " + t.keywords.join(" ") + " " + t.framing).toLowerCase();
-  for (const w of words) {
-    if (w.length < 3) continue;
-    // exact keyword match is strongest
-    if (t.keywords.some((k) => k.toLowerCase() === w)) score += 5;
-    else if (t.keywords.some((k) => k.toLowerCase().includes(w) || w.includes(k.toLowerCase()))) score += 3;
-    else if (hay.includes(w)) score += 1;
-  }
-  return score;
-}
-
-/** Deterministic entry for today: hash the local date string over the topic
- *  list. Same day, same entry, for everyone — no randomness. */
-function topicForToday(topics: Topic[]): Topic | null {
-  if (topics.length === 0) return null;
-  const d = new Date();
-  const key = `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
-  let h = 0;
-  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) | 0;
-  return topics[Math.abs(h) % topics.length];
-}
-
-/** Route a pull quote to its source work: essays under /writing, study
- *  guides under /studyguides (same mapping as the Quote Library). Book quotes
- *  return null — the free on-site library was retired with the shelf
- *  reduction, so the source is named without a link. */
-function quoteSourcePath(q: SocialQuote): string | null {
-  switch (q.sourceType) {
-    case "book":
-      return null;
-    case "studyguide":
-      return `/studyguides/${q.articleSlug}`;
-    default:
-      return `/writing/${q.articleSlug}`;
-  }
-}
-
-const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-
-/** Cross-reference the 401-quote corpus: find pull quotes whose text carries
- *  one of this topic's keywords (whole-word match, terms of five letters or
- *  more to keep the noise down). Deterministic; at most two. */
-function quotesForTopic(t: Topic): SocialQuote[] {
-  const terms = new Set<string>();
-  for (const k of t.keywords) if (k.length >= 5) terms.add(k.toLowerCase());
-  for (const w of t.label.toLowerCase().split(/[^a-z]+/)) if (w.length >= 5) terms.add(w);
-  const termList = Array.from(terms);
-  const scored: { q: SocialQuote; s: number }[] = [];
-  for (const q of SOCIAL_QUOTES) {
-    let s = 0;
-    for (const term of termList) {
-      if (new RegExp(`\\b${escapeRe(term)}\\b`, "i").test(q.text)) s += term.includes(" ") ? 3 : 1;
-    }
-    if (s > 0) scored.push({ q, s });
-  }
-  return scored.sort((a, b) => b.s - a.s).slice(0, 2).map((x) => x.q);
-}
-
-// The render needs an array of topics; anything else is a failed load.
-const isTopicsFile = (x: unknown): x is { topics: Topic[] } => {
-  const d = x as { topics?: unknown };
-  return !!d && typeof d === "object" && Array.isArray(d.topics);
+const isPlace = (x: unknown): x is Place => {
+  const p = x as Place;
+  return !!p && typeof p === "object" && typeof p.q === "string" && (p.area === null || typeof p.area === "string");
 };
 
-/** The full entry for one topic: framing, verses (each copyable), the three
- *  lenses, essay links, and cross-referenced pull quotes. Shared by the
- *  finder results, the browse view, and the saved view. */
-function TopicPanel({
-  topic,
-  saved,
-  onToggleSave,
-}: {
-  topic: Topic;
-  saved: boolean;
-  onToggleSave: (id: string) => void;
-}) {
-  const [copied, setCopied] = useState(false);
-  const [copyFailed, setCopyFailed] = useState(false);
-  const [copiedVerse, setCopiedVerse] = useState<string | null>(null);
-  const quotes = useMemo(() => quotesForTopic(topic), [topic]);
+/** How long a question waits for the word vectors before it is matched on its words alone. */
+const VECTOR_WAIT_MS = 4000;
 
-  async function copyWhole() {
-    const text = [
-      `WHAT THE BIBLE SAYS ABOUT ${topic.label.toUpperCase()}`,
-      "",
-      topic.framing,
-      "",
-      "VERSES:",
-      ...topic.verses.map((v) => `${v.ref} — ${v.text}`),
-      "",
-      `THE WORLD IT WAS WRITTEN IN: ${topic.cultural}`,
-      "",
-      `HOW THE CHURCH HAS UNDERSTOOD IT: ${topic.historical}`,
-      "",
-      `LIVING IT NOW: ${topic.application}`,
-    ].join("\n");
-    const ok = await copyToClipboard(text);
-    if (!ok) {
-      setCopyFailed(true);
-      return;
-    }
-    setCopyFailed(false);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  }
+/** Plain sentences a reader can try, the way people actually say these things. */
+const TRY = ["My son walked away from the faith", "I can't stop worrying", "We can't pay our bills", "I don't know if I believe anymore", "My husband and I fight all the time", "Why is this happening to me?"];
 
-  async function copyVerse(v: Verse) {
-    // The text is the whole passage, verbatim from the Berean Standard Bible
-    // (client/public/wisdom/topics/*.json), so it copies as a quotation.
-    const ok = await copyToClipboard(`"${v.text}" (${v.ref}, BSB)`);
-    if (!ok) {
-      setCopyFailed(true);
-      return;
-    }
-    setCopyFailed(false);
-    setCopiedVerse(v.ref);
-    setTimeout(() => setCopiedVerse(null), 2000);
-  }
-
-  return (
-    <div>
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", borderTop: "2px solid var(--mustard)", paddingTop: "var(--s-3)", marginBottom: "var(--s-3)" }}>
-        <h2 style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.4vw, 34px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)" }}>{topic.label}</h2>
-        <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-          <button
-            onClick={() => onToggleSave(topic.id)}
-            aria-pressed={saved}
-            aria-label={saved ? `Remove ${topic.label} from your saved entries` : `Save ${topic.label} to your entries on this device`}
-            style={{ ...smallActionStyle, background: saved ? "var(--mustard)" : "var(--card)", color: saved ? "var(--charcoal)" : "var(--ink)", border: "1px solid var(--line)" }}
-          >
-            {saved ? <BookmarkCheck size={15} /> : <Bookmark size={15} />} {saved ? "Saved" : "Save"}
-          </button>
-          <button onClick={copyWhole} aria-live="polite" aria-label={`Copy the whole entry on ${topic.label}`} style={smallActionStyle}>
-            {copied ? <Check size={15} /> : <Copy size={15} />} {copied ? "Copied" : "Copy"}
-          </button>
-        </div>
-      </div>
-      {copyFailed && (
-        <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
-          Copy failed — select and copy manually.
-        </p>
-      )}
-
-      <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "var(--ink)", marginBottom: "var(--s-4)" }}>{topic.framing}</p>
-
-      {/* verses */}
-      <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
-        <BookOpen size={16} style={{ color: "var(--mustard-text)" }} />
-        <span style={{ ...eyebrow, color: "var(--ink)" }}>What Scripture says</span>
-      </div>
-      {/* The passages are verbatim Berean Standard Bible; each reference opens
-          it in context. */}
-      <ScriptureNote rendering="bsb" />
-      <div style={{ display: "grid", gap: "8px", marginBottom: "var(--s-4)" }}>
-        {topic.verses.map((v) => (
-          <div key={v.ref} style={{ background: "var(--card)", borderLeft: "3px solid var(--mustard)", padding: "var(--s-3)" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
-              <Link href={`/theology/passage?ref=${encodeURIComponent(v.ref)}`} style={{ fontFamily: "var(--U)", fontSize: "12.5px", fontWeight: 600, letterSpacing: "0.06em", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{v.ref} →</Link>
-              <button
-                onClick={() => copyVerse(v)}
-                aria-live="polite"
-                aria-label={`Copy ${v.ref}`}
-                style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "5px", padding: "4px 10px", background: "none", color: "var(--ink-muted)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12px" }}
-              >
-                {copiedVerse === v.ref ? <Check size={12} /> : <Copy size={12} />} {copiedVerse === v.ref ? "Copied" : "Copy"}
-              </button>
-            </div>
-            <div style={{ fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.65, color: "var(--ink)" }}>{v.text}</div>
-          </div>
-        ))}
-      </div>
-
-      {/* the three lenses */}
-      {[
-        { icon: Globe, label: "The world it was written in", body: topic.cultural },
-        { icon: Landmark, label: "How the church has understood it", body: topic.historical },
-        { icon: Compass, label: "Living it now", body: topic.application },
-      ].map((lens) => (
-        <div key={lens.label} style={{ background: "var(--card)", border: "1px solid var(--line)", padding: "var(--s-3)", marginBottom: "10px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "8px" }}>
-            <lens.icon size={16} style={{ color: "var(--mustard-text)" }} />
-            <span style={{ ...eyebrow, color: "var(--ink)" }}>{lens.label}</span>
-          </div>
-          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.75, color: "var(--ink)" }}>{lens.body}</p>
-        </div>
-      ))}
-
-      {/* lines from the corpus, linked to their source works */}
-      {quotes.length > 0 && (
-        <div style={{ background: "var(--card)", border: "1px solid var(--line)", padding: "var(--s-3)", marginBottom: "10px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "10px" }}>
-            <Quote size={16} style={{ color: "var(--mustard-text)" }} />
-            <span style={{ ...eyebrow, color: "var(--ink)" }}>From the writing</span>
-          </div>
-          <div style={{ display: "grid", gap: "14px" }}>
-            {quotes.map((q) => (
-              <div key={`${q.articleSlug}-${q.text.slice(0, 24)}`}>
-                <blockquote style={{ fontFamily: "var(--F)", fontSize: "18px", lineHeight: 1.55, fontStyle: "italic", color: "var(--ink)", margin: "0 0 6px" }}>
-                  &ldquo;{q.text}&rdquo;
-                </blockquote>
-                <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
-                  — {q.author ?? "James Bell"},{" "}
-                  {quoteSourcePath(q) ? (
-                    <Link href={quoteSourcePath(q)!} style={{ color: "var(--ink)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "1px" }}>
-                    {q.articleTitle}
-                  </Link>
-                  ) : (
-                    <span style={{ color: "var(--ink)" }}>{q.articleTitle}</span>
-                  )}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* go deeper */}
-      {topic.related && topic.related.length > 0 && (
-        <div style={{ background: "var(--charcoal)", padding: "var(--s-3)", marginTop: "4px" }}>
-          <div style={{ ...eyebrow, color: "var(--mustard)", marginBottom: "10px" }}>Go deeper</div>
-          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            {topic.related.map((r) => (
-              <Link key={r.href} href={r.href} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-                {r.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* practical how-tos */}
-      {topic.articles && topic.articles.length > 0 && (
-        <div style={{ background: "var(--bone-warm)", padding: "var(--s-3)", marginTop: "8px" }}>
-          <div style={{ ...eyebrow, color: "var(--ink)", marginBottom: "10px" }}>Practical how-tos</div>
-          <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
-            {topic.articles.map((r) => (
-              <Link key={r.href} href={r.href} style={{ fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--mustard)", paddingBottom: "2px" }}>
-                {r.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
-  );
+function fromUrl(name: string): string {
+  if (typeof window === "undefined") return "";
+  return new URLSearchParams(window.location.search).get(name) ?? "";
 }
 
-type View = "find" | "browse" | "saved";
-
-/** Deep link: /tools/wisdom-finder?q=... prefills and runs the search. */
-function queryFromUrl(): string {
-  if (typeof window === "undefined") return "";
-  return new URLSearchParams(window.location.search).get("q") ?? "";
+function TopicRow({ t }: { t: FinderTopic }) {
+  return (
+    <li>
+      <Link href={`/wisdom/${t.id}`}>
+        <span className="wf-list__name">
+          {t.label}
+          {t.deep && <span className="wf-full">Written in full</span>}
+        </span>
+        <span className="wf-list__line">{t.line}</span>
+        <ArrowRight className="wf-list__arrow" size={18} strokeWidth={1.75} aria-hidden="true" />
+      </Link>
+    </li>
+  );
 }
 
 export default function WisdomFinder() {
-  // null = not loaded yet; [] = loaded but empty (distinct from loading)
-  const [topicsData, setTopicsData] = useState<Topic[] | null>(null);
-  const topics = useMemo(() => topicsData ?? [], [topicsData]);
-  const [view, setView] = useState<View>("find");
-  const [query, setQuery] = useState(() => queryFromUrl());
-  const [submitted, setSubmitted] = useState(() => queryFromUrl());
-  const [browseQuery, setBrowseQuery] = useState("");
-  const [letter, setLetter] = useState("All");
-  const [activeId, setActiveId] = useState<string | null>(null);
-  const [saved, setSaved] = useState<string[]>(() => readSaved());
-  const [saveFailed, setSaveFailed] = useState(false);
+  const tool = toolById("wisdom-finder");
+  const [data, setData] = useState<FinderFile | null>(null);
+  const [failed, setFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
-  // The attempt (retry nonce) that failed; deriving `loadError` from it means
-  // Retry clears the panel without extra state writes inside the effect.
-  const [failedNonce, setFailedNonce] = useState<number | null>(null);
-  const loadError = failedNonce === nonce;
-
-  const savedSet = useMemo(() => new Set(saved), [saved]);
-  const today = useMemo(() => topicForToday(topics), [topics]);
+  const place = useToolProgress<Place>("wisdom-finder", isPlace, { q: "", area: null }, "session");
+  const [urlQ] = useState(() => fromUrl("q"));
+  const [urlArea] = useState(() => fromUrl("area"));
+  const [draft, setDraft] = useState(() => urlQ || place.value.q);
+  const [asked, setAsked] = useState(urlQ);
+  const [filter, setFilter] = useState("");
+  // "Is it one of these?": the area of life the reader picked for this sentence, if any.
+  const [chosen, setChosen] = useState<{ q: string; area: string } | null>(null);
+  // "Or look by subject": the one area opened in the browse list beside the search.
+  const [browse, setBrowse] = useState<string | null>(null);
+  const areasRef = useRef<HTMLHeadingElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const resultsRef = useRef<HTMLHeadingElement>(null);
+  const [saved] = useState<string[]>(() => readSavedTopics());
+  // The word vectors: not wanted until the reader uses the finder (a question
+  // in the address counts as use).
+  const [vec, setVec] = useState<{ state: "idle" | "loading" | "ready" | "off"; tv: TopicVectors | null }>(() => ({
+    state: urlQ ? "loading" : "idle",
+    tv: null,
+  }));
+  const wantVectors = () => setVec((v) => (v.state === "idle" ? { state: "loading", tv: null } : v));
 
   useEffect(() => {
     let stale = false;
-    fetchJson("/wisdom/topics.json", isTopicsFile)
-      .then((d) => { if (!stale) setTopicsData(d.topics); })
-      .catch(() => { if (!stale) setFailedNonce(nonce); });
-    return () => { stale = true; };
+    fetchFinder()
+      .then((d) => {
+        if (!stale) setData(d);
+      })
+      .catch(() => {
+        if (!stale) setFailed(true);
+      });
+    return () => {
+      stale = true;
+    };
   }, [nonce]);
 
-  const ranked = useMemo(() => {
-    if (!submitted.trim()) return [];
-    const words = submitted.toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
-    return topics
-      .map((t) => ({ t, s: scoreTopic(t, words) }))
-      .filter((x) => x.s > 0)
-      .sort((a, b) => b.s - a.s)
-      .slice(0, 6)
-      .map((x) => x.t);
-  }, [submitted, topics]);
+  // ?area= (a topic page's area link) opens that area, once, on arrival.
+  useEffect(() => {
+    if (urlArea && place.value.area !== urlArea) place.set((p) => ({ ...p, area: urlArea }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  // In the finder, an unpicked search falls back to the top match; in browse
-  // and saved views only an explicit pick opens an entry.
-  const active = useMemo(() => {
-    if (activeId) return topics.find((t) => t.id === activeId) || null;
-    if (view === "find") return ranked[0] || null;
-    return null;
-  }, [activeId, ranked, topics, view]);
+  const prep = useMemo(() => (data ? prepare(data) : null), [data]);
 
-  const letters = useMemo(
-    () => ["All", ...Array.from(new Set(topics.map((t) => t.label[0]?.toUpperCase() ?? ""))).filter(Boolean).sort()],
-    [topics]
-  );
-
-  const browsed = useMemo(() => {
-    const q = browseQuery.trim().toLowerCase();
-    return topics.filter((t) => {
-      if (letter !== "All" && (t.label[0]?.toUpperCase() ?? "") !== letter) return false;
-      if (q && !t.label.toLowerCase().includes(q) && !t.keywords.some((k) => k.toLowerCase().includes(q))) return false;
-      return true;
+  useEffect(() => {
+    if (vec.state !== "loading" || !prep) return;
+    let stale = false;
+    fetchVectors().then((v) => {
+      if (!stale) setVec(v ? { state: "ready", tv: prepareVectors(prep, v) } : { state: "off", tv: null });
     });
-  }, [topics, browseQuery, letter]);
+    return () => {
+      stale = true;
+    };
+  }, [vec.state, prep]);
 
-  const savedTopics = useMemo(() => topics.filter((t) => savedSet.has(t.id)), [topics, savedSet]);
+  // A question asked while the vectors are on their way waits for them, up to
+  // VECTOR_WAIT_MS; then words alone, and vectors arriving later are not used
+  // on this visit, so the results shown never change under the reader.
+  const waiting = !!asked.trim() && vec.state === "loading";
+  useEffect(() => {
+    if (!waiting) return;
+    const timer = setTimeout(() => setVec((v) => (v.state === "loading" ? { state: "off", tv: null } : v)), VECTOR_WAIT_MS);
+    return () => clearTimeout(timer);
+  }, [waiting]);
+  const result = useMemo(() => (prep && asked.trim() && !waiting ? findTopics(prep, asked, 6, vec.tv) : null), [prep, asked, waiting, vec.tv]);
+  const byId = useMemo(() => new Map((data?.topics ?? []).map((t) => [t.id, t])), [data]);
+  const today = useMemo(() => (data ? verseForToday(data.daily) : null), [data]);
+  const area = data?.areas.find((a) => a.id === place.value.area) ?? null;
+  const areaTopics = useMemo(
+    () => (area?.topics ?? []).map((id) => byId.get(id)).filter((t): t is FinderTopic => !!t).sort((x, y) => x.label.localeCompare(y.label)),
+    [area, byId],
+  );
+  const az = useMemo(() => {
+    const q = filter.trim().toLowerCase();
+    return (data?.topics ?? []).filter((t) => !q || t.label.toLowerCase().includes(q) || t.keywords.some((k) => k.toLowerCase().includes(q)));
+  }, [data, filter]);
+  // The topics written in full in each area, for the browse list beside the search.
+  const written = useMemo(
+    () =>
+      new Map(
+        (data?.areas ?? []).map((a) => [
+          a.id,
+          a.topics
+            .map((id) => byId.get(id))
+            .filter((t): t is FinderTopic => !!t && !!t.deep)
+            .sort((x, y) => x.label.localeCompare(y.label)),
+        ]),
+      ),
+    [data, byId],
+  );
+  const writtenCount = Array.from(written.values()).reduce((n, list) => n + list.length, 0);
+  const savedTopics = saved.map((id) => byId.get(id)).filter((t): t is FinderTopic => !!t);
 
-  function run(q: string) {
-    setView("find");
-    setSubmitted(q);
-    setActiveId(null);
-  }
-
-  function switchView(v: View) {
-    setView(v);
-    setActiveId(null);
-  }
-
-  function toggleSave(id: string) {
-    setSaved((prev) => {
-      const next = prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id];
-      if (!writeStoredJSON(SAVED_KEY, next)) setSaveFailed(true);
-      return next;
+  const ask = (q: string) => {
+    wantVectors();
+    setDraft(q);
+    setAsked(q);
+    place.set((p) => ({ ...p, q }));
+    requestAnimationFrame(() => {
+      resultsRef.current?.focus({ preventScroll: true });
+      resultsRef.current?.scrollIntoView({ block: "start" });
     });
-  }
+  };
 
-  function openTopic(id: string, v: View) {
-    setView(v);
-    setActiveId(id);
-  }
-
-  const loadingLine = (
-    <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }} role="status">Loading the wisdom library…</p>
-  );
-  const loadFailedPanel = (
-    <LoadFailed what="The wisdom library" onRetry={() => setNonce((n) => n + 1)} backHref="/tools" backLabel="Back to the tools" />
-  );
-  const backToList = (label: string) => (
-    <button onClick={() => setActiveId(null)} style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "8px 14px", background: "none", color: "var(--ink)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13px", marginBottom: "var(--s-3)" }}>
-      <ArrowLeft size={14} /> {label}
-    </button>
-  );
+  const choices = useMemo(() => (data && result?.unsure ? result.areas.map((id) => data.areas.find((a) => a.id === id)).filter((a): a is NonNullable<typeof a> => !!a) : []), [data, result]);
+  const picked = chosen && chosen.q === asked ? (choices.find((a) => a.id === chosen.area) ?? null) : null;
+  const narrowed = useMemo(() => (prep && picked ? findInArea(prep, asked, picked.id, 6, vec.tv) : null), [prep, picked, asked, vec.tv]);
+  const confident = narrowed ? narrowed.length > 0 : (result?.confident ?? false);
+  const matches = narrowed ?? result?.matches ?? [];
+  const best = confident ? matches[0] : null;
+  // Two topics share a name (caregiving, caring-for-aging-parents): list a name once.
+  const seenLabels = new Set<string>(best ? [best.topic.label] : []);
+  // Topics scoring nearly as high as the first are shown beside it, not under it.
+  const close = (narrowed ? [] : (result?.close ?? [])).filter((m) => !seenLabels.has(m.topic.label) && seenLabels.add(m.topic.label)).slice(0, 2);
+  const closeIds = new Set(close.map((m) => m.topic.id));
+  const rest = (confident ? matches.slice(1) : matches.filter((m) => m.score >= 4))
+    .filter((m) => !closeIds.has(m.topic.id))
+    .filter((m) => !seenLabels.has(m.topic.label) && seenLabels.add(m.topic.label))
+    .slice(0, confident ? 5 : 3);
 
   return (
     <Layout>
       <SEOMeta
-        title="Wisdom Finder — Tell Us What You Are Facing, and What the Bible Says"
+        title="What Does the Bible Say About My Situation?"
         description="Type in what you are struggling with and find the Bible's wisdom for it: the verses, the world they were written in, and the practical application for now."
         url="https://www.livewellbyjamesbell.co/tools/wisdom-finder"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>Wisdom · Finder</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "18ch" }}>
-            What are you facing
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch", marginBottom: "22px" }}>
-            Tell us what you are struggling with, in your own words. We will find what the Bible says about it: the verses, the world they were written in, how the church has understood them across the centuries, and what they mean for your life now.
-          </p>
+      <ToolHead
+        path="/tools/wisdom-finder"
+        title={tool.name}
+        line={`Say what you are facing in your own words, or choose an area of life. Each of the ${data ? data.topics.length : 208} subjects has its own page: the passages that bear on it, each opening to the paragraph it sits in.`}
+        time={`About ${tool.time} to find a subject, then as long as you like to read`}
+        keeps="Subjects and verses you save stay in this browser, for My Library. What you type is kept only until you close this tab, and never leaves this device."
+        plate="book"
+      />
+
+      <section className="wf-ask" aria-labelledby="wf-ask-label">
+        <div className="wz-col wf-col">
           <form
-            onSubmit={(e) => { e.preventDefault(); run(query); }}
-            style={{ display: "flex", gap: "10px", flexWrap: "wrap", maxWidth: "640px" }}
+            onSubmit={(e) => {
+              e.preventDefault();
+              if (draft.trim()) ask(draft.trim());
+            }}
           >
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="I am anxious about money, my marriage is cold, I cannot forgive…"
-              aria-label="Describe what you are struggling with"
-              style={{ flex: "1 1 320px", padding: "14px 16px", fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink)", background: "var(--card)", border: "none", outline: "none" }}
-            />
-            <button type="submit" style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "8px", padding: "14px 22px", background: "var(--mustard)", color: "var(--charcoal)", border: "none", fontFamily: "var(--U)", fontWeight: 600, fontSize: "15px" }}>
-              <Search size={16} /> Find wisdom
-            </button>
+            <label id="wf-ask-label" htmlFor="wf-q" className="wf-ask__label">
+              What are you facing?
+            </label>
+            <p className="wf-ask__help" id="wf-q-help">
+              A sentence is best, the way you would say it to a friend.
+            </p>
+            <div className="wf-ask__form">
+              <input
+                ref={inputRef}
+                id="wf-q"
+                className="wf-ask__input"
+                type="search"
+                enterKeyHint="search"
+                autoComplete="off"
+                aria-describedby="wf-q-help"
+                value={draft}
+                onFocus={wantVectors}
+                onChange={(e) => {
+                  wantVectors();
+                  setDraft(e.target.value);
+                }}
+                placeholder="My daughter won't speak to me"
+              />
+              <button type="submit" className="btn btn--on-dark">
+                <Search size={18} strokeWidth={1.75} aria-hidden="true" /> Find
+              </button>
+            </div>
           </form>
+          {!asked && (
+            <>
+              <p className="wf-ask__help" style={{ margin: "18px 0 0" }}>
+                Or try one of these:
+              </p>
+              <ul className="wf-try">
+                {TRY.map((s) => (
+                  <li key={s}>
+                    <button type="button" onClick={() => ask(s)}>
+                      {s}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+          {/* For words the finder does not meet: every area, each opening its subjects written in full. Collapsed, so the first paint does not change. */}
+          <details className="wf-browse">
+            <summary>Or look by subject</summary>
+            {!data ? (
+              <p className="wf-ask__help" role="status">
+                Opening the library…
+              </p>
+            ) : (
+              <>
+                <p className="wf-ask__help">
+                  {writtenCount} of the {data.topics.length} subjects are written in full, in {data.areas.length} areas of life. Open an area to see its subjects.
+                </p>
+                <ul className="wf-browse__areas">
+                  {data.areas.map((a) => {
+                    const list = written.get(a.id) ?? [];
+                    const open = browse === a.id;
+                    return (
+                      <li key={a.id}>
+                        <button type="button" className="wf-browse__area" aria-expanded={open} aria-controls={`wf-browse-${a.id}`} onClick={() => setBrowse(open ? null : a.id)}>
+                          <span className="wf-browse__name">{a.name}</span>
+                          {/* So a screen reader says "name, 16 written in full of 16", not the two run together. */}
+                          <span className="sr-only">, </span>
+                          <span className="wf-browse__count">
+                            {list.length} written in full of {a.topics.length}
+                          </span>
+                        </button>
+                        <div id={`wf-browse-${a.id}`} className="wf-browse__panel" hidden={!open}>
+                          {list.length > 0 && (
+                            <ul className="wf-browse__topics" aria-label={`Subjects written in full in ${a.name}`}>
+                              {list.map((t) => (
+                                <li key={t.id}>
+                                  <Link href={`/wisdom/${t.id}`}>{t.label}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+                          <button
+                            type="button"
+                            className="wf-browse__all"
+                            onClick={() => {
+                              place.set((p) => ({ ...p, area: a.id }));
+                              requestAnimationFrame(() => {
+                                areasRef.current?.focus({ preventScroll: true });
+                                areasRef.current?.scrollIntoView({ block: "start" });
+                              });
+                            }}
+                          >
+                            All {a.topics.length} subjects in this area
+                          </button>
+                        </div>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </>
+            )}
+          </details>
+          {place.resumed && !asked && place.value.q && (
+            <p className="wf-resume">
+              Earlier in this tab you asked about &ldquo;{place.value.q}&rdquo;.
+              <button type="button" onClick={() => ask(place.value.q)}>
+                Pick up where you left off
+              </button>
+            </p>
+          )}
         </div>
       </section>
 
-      {/* An entry for today — the date picks it, deterministically */}
-      {today && !loadError && (
-        <section style={{ background: "var(--bone-warm)", padding: "var(--s-4) var(--s-4)" }}>
-          <div style={wrap}>
-            <div style={{ ...eyebrow, marginBottom: "10px" }}>An entry for today</div>
-            {/* Verbatim Berean Standard Bible; the reference opens the passage in context. */}
-            <p style={{ fontFamily: "var(--F)", fontSize: "clamp(19px, 2.6vw, 24px)", lineHeight: 1.5, fontStyle: "italic", color: "var(--ink)", margin: "0 0 10px", maxWidth: "68ch" }}>
-              {today.verses[0].text}
-            </p>
-            <p style={{ fontFamily: "var(--U)", fontSize: "13.5px", color: "var(--ink-muted)", margin: "0 0 14px" }}>
-              <Link href={`/theology/passage?ref=${encodeURIComponent(today.verses[0].ref)}`} style={{ color: "var(--mustard-text)", textDecoration: "none", borderBottom: "1px solid var(--line)" }}>{today.verses[0].ref} →</Link> · {today.label} · Berean Standard Bible
-            </p>
-            <button onClick={() => openTopic(today.id, "browse")} style={{ ...smallActionStyle }}>
-              Read the whole entry
-            </button>
+      {failed ? (
+        <div className="wz-band">
+          <div className="wz-col">
+            <LoadFailed
+              what="The wisdom library"
+              onRetry={() => {
+                setFailed(false);
+                setNonce((n) => n + 1);
+              }}
+              backHref="/tools"
+              backLabel="Back to the tools"
+            />
           </div>
-        </section>
-      )}
-
-      <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
-        <div style={wrap}>
-          {/* view toggle */}
-          <div role="group" aria-label="Choose between the finder, all topics, and your saved entries" style={{ display: "flex", gap: "8px", flexWrap: "wrap", marginBottom: "var(--s-4)" }}>
-            {([
-              { id: "find", label: "Find wisdom" },
-              { id: "browse", label: `All topics${topics.length ? ` (${topics.length})` : ""}` },
-              { id: "saved", label: `Saved (${saved.length})` },
-            ] as const).map((v) => {
-              const on = view === v.id;
-              return (
-                <button
-                  key={v.id}
-                  onClick={() => switchView(v.id)}
-                  aria-pressed={on}
-                  style={{ cursor: "pointer", padding: "8px 16px", background: on ? "var(--charcoal)" : "none", color: on ? "var(--bone)" : "var(--ink)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "13.5px" }}
-                >
-                  {v.label}
-                </button>
-              );
-            })}
-          </div>
-
-          {saveFailed && (
-            <p style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: "0 0 var(--s-3)" }}>
-              {SAVE_FAILED_MESSAGE}
-            </p>
-          )}
-
-          {/* ——— Find view ——— */}
-          {view === "find" && !submitted.trim() && (
-            <div>
-              <div style={{ ...eyebrow, color: "var(--ink)", marginBottom: "var(--s-2)" }}>Or start with a common struggle</div>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                {topics.slice(0, 16).map((t) => (
-                  <button key={t.id} onClick={() => run(t.label)} style={chipStyle(false)}>
-                    {t.label}
-                  </button>
-                ))}
-              </div>
-              {topicsData === null && !loadError && <div style={{ marginTop: "var(--s-3)" }}>{loadingLine}</div>}
-              {loadError && <div style={{ marginTop: "var(--s-3)" }}>{loadFailedPanel}</div>}
-              {topicsData !== null && topics.length === 0 && (
-                <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)", marginTop: "var(--s-3)" }}>No topics are available yet.</p>
-              )}
-            </div>
-          )}
-
-          {view === "find" && submitted.trim() !== "" && (
-            <div>
-              {loadError ? (
-                loadFailedPanel
-              ) : topicsData === null ? (
-                loadingLine
-              ) : ranked.length === 0 ? (
-                <div style={{ background: "var(--card)", border: "1px solid var(--line)", padding: "var(--s-4)" }}>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)" }}>
-                    We did not find a close match for that yet. Try naming the feeling or the situation in a word or two, anxiety, anger, money, marriage, loneliness, grief, doubt, or pick one below.
+        </div>
+      ) : (
+        <>
+          <section className="wz-band" aria-labelledby="wf-results-h" hidden={!asked}>
+            <div className="wz-col">
+              <h2 id="wf-results-h" className="wz-sec__title" tabIndex={-1} ref={resultsRef} style={{ scrollMarginTop: "84px" }}>
+                {asked ? <>For &ldquo;{asked}&rdquo;</> : "Results"}
+              </h2>
+              <p className="wf-results__count" role="status" aria-live="polite">
+                {!asked
+                  ? ""
+                  : !data
+                    ? "Opening the library…"
+                    : waiting
+                      ? "Finding the subjects that fit…"
+                      : (result?.confident ?? false)
+                      ? `${result?.matches.length} ${result?.matches.length === 1 ? "subject fits" : "subjects fit"} what you wrote, closest first.`
+                      : "Nothing in the library fits that well."}
+              </p>
+              {data && asked && choices.length > 0 && (
+                <div className="wf-choose" role="group" aria-labelledby="wf-choose-q">
+                  <p id="wf-choose-q" className="wf-choose__q">
+                    Is it one of these?
                   </p>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "var(--s-3)" }}>
-                    {topics.slice(0, 14).map((t) => (
-                      <button key={t.id} onClick={() => run(t.label)} style={{ ...chipStyle(false), background: "var(--bone-warm)", fontSize: "13px", padding: "7px 12px" }}>
-                        {t.label}
-                      </button>
+                  <ul className="wf-chips">
+                    {choices.map((a) => (
+                      <li key={a.id}>
+                        <button type="button" aria-pressed={picked?.id === a.id} onClick={() => setChosen(picked?.id === a.id ? null : { q: asked, area: a.id })}>
+                          {a.name}
+                        </button>
+                      </li>
                     ))}
-                  </div>
-                </div>
-              ) : (
-                <div>
-                  {/* matched topic chips */}
-                  {ranked.length > 1 && (
-                    <div style={{ marginBottom: "var(--s-4)" }}>
-                      <div style={{ ...eyebrow, color: "var(--ink-muted)", marginBottom: "8px" }}>Closest to what you said</div>
-                      <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                        {ranked.map((t) => (
-                          <button key={t.id} onClick={() => setActiveId(t.id)} style={chipStyle(active?.id === t.id)}>
-                            {t.label}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-                  {active && (
-                    <TopicPanel key={active.id} topic={active} saved={savedSet.has(active.id)} onToggleSave={toggleSave} />
-                  )}
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* ——— Browse view ——— */}
-          {view === "browse" && (
-            <div>
-              {loadError ? (
-                loadFailedPanel
-              ) : topicsData === null ? (
-                loadingLine
-              ) : active ? (
-                <div>
-                  {backToList("All topics")}
-                  <TopicPanel key={active.id} topic={active} saved={savedSet.has(active.id)} onToggleSave={toggleSave} />
-                </div>
-              ) : (
-                <div>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", alignItems: "center", marginBottom: "var(--s-3)" }}>
-                    <div style={{ position: "relative", flex: "1 1 240px", maxWidth: "420px" }}>
-                      <Search size={14} aria-hidden="true" style={{ position: "absolute", left: "12px", top: "50%", transform: "translateY(-50%)", color: "var(--ink-muted)", pointerEvents: "none" }} />
-                      <input
-                        type="search"
-                        value={browseQuery}
-                        onChange={(e) => setBrowseQuery(e.target.value)}
-                        placeholder="Filter the topics"
-                        aria-label="Filter topics by name or keyword"
-                        style={{ width: "100%", padding: "10px 14px 10px 34px", fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink)", background: "var(--card)", border: "1px solid var(--line)", outline: "none" }}
-                      />
-                    </div>
-                    <p role="status" style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)", margin: 0 }}>
-                      {browsed.length} topic{browsed.length !== 1 ? "s" : ""}
-                    </p>
-                  </div>
-                  <div role="group" aria-label="Filter topics by first letter" style={{ display: "flex", flexWrap: "wrap", gap: "4px", marginBottom: "var(--s-3)" }}>
-                    {letters.map((l) => {
-                      const on = letter === l;
-                      return (
-                        <button
-                          key={l}
-                          onClick={() => setLetter(l)}
-                          aria-pressed={on}
-                          style={{ cursor: "pointer", minWidth: "34px", padding: "6px 8px", background: on ? "var(--charcoal)" : "none", color: on ? "var(--bone)" : "var(--ink-muted)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "12.5px" }}
-                        >
-                          {l}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  {browsed.length === 0 ? (
-                    <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>
-                      No topics match. Clear the filter or try another word.
-                    </p>
-                  ) : (
-                    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 240px), 1fr))", gap: "8px" }}>
-                      {browsed.map((t) => (
-                        <button
-                          key={t.id}
-                          onClick={() => setActiveId(t.id)}
-                          style={{ cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "8px", padding: "12px 14px", background: "var(--card)", color: "var(--ink)", border: "1px solid var(--line)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", textAlign: "left" }}
-                        >
-                          <span>{t.label}</span>
-                          {savedSet.has(t.id) && <BookmarkCheck size={14} aria-label="Saved" style={{ color: "var(--mustard-text)", flexShrink: 0 }} />}
-                        </button>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          )}
-
-          {/* ——— Saved view ——— */}
-          {view === "saved" && (
-            <div>
-              {active ? (
-                <div>
-                  {backToList("Your saved entries")}
-                  <TopicPanel key={active.id} topic={active} saved={savedSet.has(active.id)} onToggleSave={toggleSave} />
-                </div>
-              ) : saved.length === 0 ? (
-                <div>
-                  <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink)", marginBottom: "var(--s-3)" }}>
-                    Nothing saved yet. The Save button on any entry keeps it here, on this device.
+                  </ul>
+                  {/* Announced, and takes no room, so the chips never move when one is picked. */}
+                  <p className="sr-only" role="status" aria-live="polite">
+                    {picked ? `Showing ${matches.length} ${matches.length === 1 ? "subject" : "subjects"} in ${picked.name}, closest first. Choose it again to see them all.` : ""}
                   </p>
-                  <button onClick={() => switchView("browse")} style={chipStyle(false)}>
-                    Browse all topics
-                  </button>
                 </div>
-              ) : loadError ? (
-                loadFailedPanel
-              ) : topicsData === null ? (
-                loadingLine
-              ) : savedTopics.length === 0 ? (
-                <p style={{ fontFamily: "var(--B)", fontSize: "15px", color: "var(--ink-muted)" }}>
-                  Your saved entries no longer match the current library.
+              )}
+              {data && asked && best && (
+                <>
+                  <Link href={`/wisdom/${best.topic.id}`} className="wf-best">
+                    <p className="wf-best__kicker">
+                      {picked ? `Closest in ${picked.name}` : close.length ? "Close to what you wrote" : "Closest to what you wrote"}
+                      {best.topic.deep ? " · written in full" : ""}
+                    </p>
+                    <h3 className="wf-best__title">{best.topic.label}</h3>
+                    <p className="wf-best__line">{best.topic.line}</p>
+                    <span className="wf-best__go">
+                      Read what the Bible says <ArrowRight size={18} strokeWidth={1.75} aria-hidden="true" />
+                    </span>
+                  </Link>
+                  {/* The same line under a safety result and under a topic whose own page opens with the path to help. */}
+                  {(best.safety || best.topic.help) && (
+                    <p className="wf-safety">
+                      If you are in danger or thinking of hurting yourself,{" "}
+                      <Link href="/help" className="wf-inline">
+                        Find Help
+                      </Link>{" "}
+                      lists places to turn now.
+                    </p>
+                  )}
+                  {close.length > 0 && (
+                    <>
+                      <h3 className="wz-sec__kicker" style={{ marginTop: "var(--s-3)" }}>
+                        Just as close
+                      </h3>
+                      <ul className="wf-close">
+                        {close.map((m) => (
+                          <li key={m.topic.id}>
+                            <Link href={`/wisdom/${m.topic.id}`} className="wf-best wf-best--close">
+                              <p className="wf-best__kicker">Also close to what you wrote{m.topic.deep ? " · written in full" : ""}</p>
+                              <h4 className="wf-best__title">{m.topic.label}</h4>
+                              <p className="wf-best__line">{m.topic.line}</p>
+                              <span className="wf-best__go">
+                                Read what the Bible says <ArrowRight size={18} strokeWidth={1.75} aria-hidden="true" />
+                              </span>
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                  {rest.length > 0 && (
+                    <>
+                      <h3 className="wz-sec__kicker" style={{ marginTop: "var(--s-3)" }}>
+                        Also close
+                      </h3>
+                      <ul className="wf-list">
+                        {rest.map((m) => (
+                          <TopicRow key={m.topic.id} t={m.topic} />
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </>
+              )}
+              {data && asked && !best && (
+                <div className="wf-none">
+                  <h3 className="wf-none__title">Nothing fits that well</h3>
+                  <p>Rather than guess, the finder leaves it here. Try saying it another way, in a plain sentence, or choose an area of life below.</p>
+                  <p>
+                    If you are in danger or thinking of hurting yourself,{" "}
+                    <Link href="/help" className="wf-inline">
+                      Find Help
+                    </Link>{" "}
+                    lists places to turn now.
+                  </p>
+                  {rest.length > 0 && (
+                    <>
+                      <h4 className="wz-sec__kicker" style={{ marginTop: "var(--s-2)" }}>
+                        These may be near it
+                      </h4>
+                      <ul className="wf-list">
+                        {rest.map((m) => (
+                          <TopicRow key={m.topic.id} t={m.topic} />
+                        ))}
+                      </ul>
+                    </>
+                  )}
+                </div>
+              )}
+              {asked && (
+                <ResultActions
+                  title={tool.name}
+                  kind="Tool"
+                  save={false}
+                  onChange={() => inputRef.current?.focus()}
+                  changeLabel="Change my words"
+                  onStartOver={() => {
+                    place.clear();
+                    setDraft("");
+                    setAsked("");
+                    requestAnimationFrame(() => inputRef.current?.focus());
+                  }}
+                  startOverClears="what you typed and the area you chose"
+                />
+              )}
+              {place.saveFailed && <p className="ts-save-failed">{SAVE_FAILED}</p>}
+            </div>
+          </section>
+
+          <section className="wz-band wz-band--warm" aria-labelledby="wf-areas-h">
+            <div className="wz-col">
+              <h2 id="wf-areas-h" className="wz-sec__title" tabIndex={-1} ref={areasRef} style={{ scrollMarginTop: "84px" }}>
+                Browse by area of life
+              </h2>
+              {!data ? (
+                <p className="wf-results__count" role="status">
+                  Opening the library…
                 </p>
               ) : (
-                <div style={{ display: "grid", gap: "10px" }}>
-                  {savedTopics.map((t) => (
-                    <div key={t.id} style={{ background: "var(--card)", border: "1px solid var(--line)", padding: "var(--s-3)", display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "12px" }}>
-                      <div style={{ flex: "1 1 260px" }}>
-                        <div style={{ fontFamily: "var(--F)", fontSize: "20px", color: "var(--ink)", marginBottom: "4px" }}>{t.label}</div>
-                        <div style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>
-                          {t.verses[0].ref} and {t.verses.length - 1} more
-                        </div>
-                      </div>
-                      <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-                        <button onClick={() => setActiveId(t.id)} style={smallActionStyle}>Open</button>
-                        <button
-                          onClick={() => toggleSave(t.id)}
-                          aria-label={`Remove ${t.label} from your saved entries`}
-                          style={{ ...smallActionStyle, background: "none", color: "var(--ink-muted)", border: "1px solid var(--line)" }}
-                        >
-                          Remove
-                        </button>
-                      </div>
+                <>
+                  <QuestionCard
+                    question="Which part of life is this about?"
+                    options={data.areas.map((a) => ({ value: a.id, label: a.name, hint: `${a.line} ${a.topics.length} subjects.` }))}
+                    value={place.value.area}
+                    onChange={(id) => place.set((p) => ({ ...p, area: id }))}
+                    columns={2}
+                    numbered={false}
+                  />
+                  {area && areaTopics.length > 0 && (
+                    <div aria-live="polite">
+                      <h3 className="wz-sec__kicker" style={{ marginTop: "var(--s-3)" }}>
+                        {areaTopics.length} subjects in {area.name}
+                      </h3>
+                      <ul className="wf-list">
+                        {areaTopics.map((t) => (
+                          <TopicRow key={t.id} t={t} />
+                        ))}
+                      </ul>
                     </div>
-                  ))}
-                </div>
+                  )}
+                </>
               )}
             </div>
-          )}
+          </section>
 
-          <div style={{ marginTop: "var(--s-5)", borderTop: "1px solid var(--line)", paddingTop: "var(--s-3)", display: "flex", gap: "var(--s-4)", flexWrap: "wrap" }}>
-            <Link href="/wisdom" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Wisdom for All of Life</Link>
-            <Link href="/life/wisdom-for-all-of-life" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The deep guide</Link>
-            <Link href="/tools/bible-on" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>Browse by topic</Link>
-            <Link href="/tools/quotes" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard-text)" }}>The Quote Library</Link>
-          </div>
-        </div>
-      </section>
+          <section className="wz-band" aria-labelledby="wf-more-h">
+            <div className="wz-col">
+              <h2 id="wf-more-h" className="wz-sec__title">
+                More ways in
+              </h2>
+              {savedTopics.length > 0 && (
+                <div className="wz-sec">
+                  <h3 className="wz-sec__kicker">Saved in this browser</h3>
+                  <ul className="wf-list">
+                    {savedTopics.map((t) => (
+                      <TopicRow key={t.id} t={t} />
+                    ))}
+                  </ul>
+                  <Link href="/my-library" className="wz-link">
+                    Everything in My Library
+                  </Link>
+                </div>
+              )}
+              {today && (
+                <div className="wz-sec wf-today">
+                  <h3 className="wz-sec__kicker">A verse for today</h3>
+                  <p className="wf-today__text">{today.text}</p>
+                  <p className="wf-today__ref">
+                    {today.ref}, from <Link href={`/wisdom/${today.id}`}>{today.label}</Link>
+                  </p>
+                </div>
+              )}
+              <div className="wz-sec">
+                <h3 className="wz-sec__kicker">Proverbs, Ecclesiastes and James by theme</h3>
+                <p className="wf-results__count" style={{ margin: "0 0 8px" }}>
+                  All 915 verses of Proverbs gathered under twenty themes, a chapter for each day of the month, all 222 verses of Ecclesiastes under sixteen themes of its own, and all 108 verses of the Letter of James under thirteen, with the Study Bible's notes beside each chapter.
+                </p>
+                <Link href="/tools/wisdom-books" className="wz-link">
+                  Open the Wisdom Books Explorer
+                </Link>
+              </div>
+              <div className="wz-sec">
+                <h3 className="wz-sec__kicker">A psalm to pray</h3>
+                <p className="wf-results__count" style={{ margin: "0 0 8px" }}>
+                  All 150 psalms, found by how you are today or by morning and evening, each with a guide to praying it drawn from the Study Bible's notes.
+                </p>
+                <Link href="/tools/pray-the-psalms" className="wz-link">
+                  Open Pray the Psalms
+                </Link>
+              </div>
+              {data && (
+                <details className="wf-az wz-sec">
+                  <summary>Every subject, A to Z ({data.topics.length})</summary>
+                  <label htmlFor="wf-az" className="sr-only">
+                    Filter the subjects
+                  </label>
+                  <input id="wf-az" className="wf-az__filter" type="search" placeholder="Filter the subjects" value={filter} onChange={(e) => setFilter(e.target.value)} />
+                  <p className="wf-results__count" role="status">
+                    {az.length} {az.length === 1 ? "subject" : "subjects"}
+                  </p>
+                  <ul className="wf-az__list">
+                    {az.map((t) => (
+                      <li key={t.id}>
+                        <Link href={`/wisdom/${t.id}`}>{t.label}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
+              <ul className="wf-foot">
+                <li>
+                  <Link href="/wisdom" className="wz-link">
+                    Wisdom for all of life
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/help" className="wz-link">
+                    Find Help
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </>
+      )}
     </Layout>
   );
 }

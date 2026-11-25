@@ -1,0 +1,120 @@
+{
+ "slug": "the-historical-jesus",
+ "lens": "Voice read, last reader before publishing. Read-only. Text checked: /home/user/livewell-land/client/public/essays/the-historical-jesus.json (title, excerpt as standfirst, Markdown body), read against /home/user/Livewell-/docs/work/essays/BRIEF.md, /home/user/Livewell-/docs/VOICE-JAMES-BELL.md, /home/user/Livewell-/docs/work/NOTES.md (biography) and the Forbidden Language list in /home/user/Livewell-/CLAUDE.md. I searched the list literally, then read the piece once as the skeptic and once as a pastor deciding whether to hand it to a congregation. I also searched the other landed essays in /home/user/livewell-land/client/public/essays/ for lines repeated across the shelf, especially the two Doubt essays this one sits beside (why-trust-the-bible, did-the-resurrection-happen). Every quoted string below occurs exactly once in the body. Scripture and fact verification belong to the integrity lens.",
+ "findings": [
+  {
+   "where": "What Outsiders Said, paragraph 2, second sentence: \"A Christian copyist would hardly have called his Lord \"the so-called Christ,\" and the story is about Ananus abusing his office.\"",
+   "problem": "A skeptic will catch this overclaim. The argument leans on the sneer in the English \"so-called\", which is McGiffert's rendering (the ledger notes that Whiston has \"who was called Christ\"). The Greek is the neutral \"who is called Christ\", and Matthew, a Christian, uses the same phrase of Jesus (Matthew 1:16, \"Jesus ... who is called Christ\"; again at 27:17 and 22). A reader who checks will find the essay doing what its own third paragraph warns against. The standard argument is stronger, and the essay has already set it up: Christians called James \"the Lord's brother\", as Paul does in Galatians 1:19, quoted one section earlier.",
+   "fix": "Replace with: \"A Christian copyist would more likely have called James \"the Lord's brother,\" as Paul did, and the story is about Ananus abusing his office.\" Leave the quoted Josephus passage as it is.",
+   "severity": "should"
+  },
+  {
+   "where": "Why the Portraits of Jesus Keep Changing, last paragraph: \"In others he's a gentle progressive who never says anything hard about money, sex or judgment.\"",
+   "problem": "The criticism fires in both directions, but the shot at the left misses on one count. The progressive portrait of Jesus is known for what he says about money (the rich young ruler, the woes on the rich). A progressive reader will hear \"never says anything hard about money\" as a caricature and stop trusting the mirror, which defeats the paragraph's purpose. The guardrail asks for the same instrument in both directions, and that includes accuracy. The cut also turns a tidy triplet into a true pair.",
+   "fix": "Replace with: \"In others he's a gentle progressive who never says anything hard about sex or judgment.\"",
+   "severity": "should"
+  },
+  {
+   "where": "The Question Jesus Asked Peter, paragraph 3, first sentence: \"That ought to change how a Christian hears the question of whether Jesus was real.\"",
+   "problem": "An announced turn. It tells the reader a turn is coming instead of making it. The next sentence makes the turn without help.",
+   "fix": "Delete the sentence. The paragraph then begins: \"The fact historians are surest of is the one Peter tried to talk Jesus out of.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Last body line: \"If it's true, his question was never a historian's question. He is asking it of you.\"",
+   "problem": "A stamp shared across the shelf, in the most exposed spot. The essay this one links to, did-the-resurrection-happen, ends: \"If he isn't, the question was never only whether the evidence is good enough for a historian. It's what you will do in a world where death has already been undone once.\" why-trust-the-bible ends: \"It isn't only whether the book was copied well ... It's whether the one it bears witness to is alive. If he is ...\". The three Doubt essays sit side by side, and a reader who follows the link meets the same closing move twice.",
+   "fix": "Replace with: \"If it's true, the question he asked Peter is still open, and he is asking it of you.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, third short paragraph: \"The harder question is the one he put to Peter, and most of us have been answering it with the Jesus we already preferred.\"",
+   "problem": "\"The harder question is\" has become a stock turn on the shelf. why-trust-the-bible uses it for its closing turn (\"the harder question is whether our lives show it\"), and what-christian-nationalism-is-and-is-not uses it for its own (\"The harder question is whether we can love it ...\"). Read as a set, it is a formula.",
+   "fix": "Replace with: \"Then there is the question he put to Peter, and most of us have been answering it with the Jesus we already preferred.\"",
+   "severity": "should"
+  },
+  {
+   "where": "What Historians Agree On, last paragraph, first sentence: \"Bart Ehrman, an agnostic and one of the best-known New Testament scholars in America, wrote *Did Jesus Exist?* in 2012 as an argument against the mythicists.\"",
+   "problem": "The sentence has two problems. First, it nearly repeats why-trust-the-bible (\"He became one of the best-known New Testament scholars in the country, and eventually an agnostic\"), and both essays introduce Ehrman. Second, it follows the Sanders paragraph's \"one of the most influential scholars of Jesus' Jewish world\" with the same kind of credential appositive, so the two paragraphs read as a scholar parade. The year 2012 does no work. \"Agnostic\" is the word the argument needs.",
+   "fix": "Replace with: \"Bart Ehrman, an agnostic New Testament scholar, wrote *Did Jesus Exist?* as an argument against the mythicists.\"",
+   "severity": "should"
+  },
+  {
+   "where": "Ending, fourth short paragraph: \"The Jesus of the sources flatters no one. He was crucified under a governor whose name the church still recites.\"",
+   "problem": "\"Flatters no one\" is an aphoristic one-liner, and \"flatter\" is becoming a shelf word: excavation-not-demolition, the-early-church-under-rome, was-america-founded-as-a-christian-nation and why-didnt-the-bible-ban-slavery all use it. The second sentence restates the creed paragraph two paragraphs up. It earns its place only as the creedal hinge into \"he did not stay dead\".",
+   "fix": "Replace with: \"The Jesus of the sources was crucified under a governor whose name the church still recites.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Question Jesus Asked Peter, paragraph 4, last sentence: \"Christianity has always made itself answerable to history.\"",
+   "problem": "An epigram that closes the paragraph after the Acts quotation has already made the point. \"Always\" is an overclaim a skeptic can puncture: the nineteenth-century lives this essay just described made the faith answerable to something else. The thought also sits beside why-trust-the-bible's \"the New Testament doesn't ask to be excused from history\" in the same section of the shelf. This section already has its verdict line (\"The fact historians are surest of is the one Peter tried to talk Jesus out of.\").",
+   "fix": "Delete the sentence. The paragraph then ends on Paul's \"for this has not been done in a corner\" (Acts 26:26).",
+   "severity": "consider"
+  },
+  {
+   "where": "What Paul Knew, first sentence: \"Begin with Paul, whose letters are older than any of the Gospels.\"",
+   "problem": "The previous section opens with \"Start with what is missing\", and the paragraph just before this heading already said \"Paul's letters answer part of that, and we'll come to them.\" Two imperative section openers in a row make a formula. \"Start with\" also opens sections in why-trust-the-bible, what-christian-nationalism-is-and-is-not and why-didnt-the-bible-ban-slavery.",
+   "fix": "Replace with: \"Paul's letters are older than any of the Gospels.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Why the Portraits of Jesus Keep Changing, last paragraph, first sentence: \"The same thing happens in our churches.\"",
+   "problem": "Two paragraphs earlier the essay says \"We Americans have done the same thing in our own way.\" The same connective twice in one section makes a ladder the ear can hear.",
+   "fix": "Replace with: \"It happens in our churches too.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Question Jesus Asked Peter, paragraph 2, last sentence: \"He reshaped Jesus into the Christ he already had in mind in the same conversation in which he confessed him.\"",
+   "problem": "\"Already\" is stamped through the final section: \"what we already believe\", \"a category people already had\", \"the Christ he already had in mind\", \"the Jesus we already preferred\". The idea is the essay's thesis and should stay. The word should land fully once, at the end.",
+   "fix": "Replace with: \"He reshaped Jesus into the Christ he had in mind in the same conversation in which he confessed him.\"",
+   "severity": "consider"
+  },
+  {
+   "where": "What Outsiders Said, paragraph 4: \"Tacitus despised the Christians.\"",
+   "problem": "did-the-resurrection-happen, which this essay links, introduces the same passage with \"the Roman historian Tacitus, who despised Christians\". The quotation (\"a most mischievous superstition\") and the paragraph's last sentence (\"a Roman historian with no sympathy for the movement\") already make the point.",
+   "fix": "Delete the sentence. The paragraph then reads on from \"... spreading from Judea to Rome itself.\" to \"Skeptics point out that he may only have been repeating ...\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Question Jesus Asked Peter, paragraph 3: \"the sage of the colored beads,\"",
+   "problem": "A literary tag where he would use a plain name. It reads as a writer's flourish in the essay's most serious paragraph.",
+   "fix": "Replace with: \"the Jesus Seminar's sage,\"",
+   "severity": "consider"
+  },
+  {
+   "where": "Ending, first short paragraph: \"Philip didn't argue. He said, \"Come and see\" (John 1:46).\"",
+   "problem": "A two-beat closer. \"Philip didn't argue\" also lands oddly at the end of an essay that has argued for 3,400 words, and a skeptic will hear it as a wink. John's own words carry the invitation.",
+   "fix": "Replace with: \"Philip said, \"Come and see\" (John 1:46).\"",
+   "severity": "consider"
+  },
+  {
+   "where": "The Case That Jesus Never Lived, last paragraph, last sentence: \"What matters is whether the sources we have are better explained by a real person or by a myth.\"",
+   "problem": "A framing formula. \"What matters\" opens framing sentences in why-trust-the-bible, excavation-not-demolition and can-you-be-good-without-god, and the why-trust-the-bible read already cut two of its \"matters here\" lines.",
+   "fix": "Replace with: \"The question is whether the sources we have are better explained by a real person or by a myth.\"",
+   "severity": "consider"
+  }
+ ],
+ "clean_checks": [
+  "Forbidden Language, searched literally in the title, excerpt and body: zero hits for all 14 words (delve, leverage, unlock, transformative, navigate, tapestry, foster, unpack, landscape, nuanced, multifaceted, authentic, journey, holistic), all 8 phrases (in today's world, now more than ever, here's the thing, I want to be real with you, God's got this, blessed, gospel-centered, authentic community), all 6 therapy-speak items (hold space, your truth, do the work, your feelings are valid, lean into, showing up) and the signposting phrases (here is what I mean, let me explain).",
+  "Em-dash: no U+2014 anywhere. The one en-dash is in the verse range Mark 8:27–29.",
+  "Exclamation points: one, inside the verbatim quotation of Mark 8:33 (\"Get behind me, Satan!\").",
+  "Semicolons: two, both inside the verbatim quotation of Mark 8:28.",
+  "The brief's stamps: none of the seven appears (\"Those of us who preach\", \"pastors like me\", \"This is not both-sidesism\", \"Consider ...\", \"none of this\", \"the record\", \"I don't exempt myself\").",
+  "Rulebook leakage: zero uses of steelman, verdict, indictment or self-implication; zero uses of \"honest\" or \"fair\"; no \"deserves to be stated\" formulas. The only announced turn is the one flagged above.",
+  "Biography: the only first person is \"and I believe it\" in the ending. No title, years in ministry, book count, Southern Baptist reference, PCN, atheism or family, and no biography used as a credential. \"A pastor writing to his church about a quarrel over money\" is a general analogy for Paul's letters, not a self-reference.",
+  "Standfirst (excerpt): one plain declarative sentence, two clauses joined by \"and\", not a balanced antithesis.",
+  "Title: plain search words (\"Was Jesus Real? What Historians Actually Know\").",
+  "Headings: all six are plain and descriptive (The Case That Jesus Never Lived; What Paul Knew; What Outsiders Said; What Historians Agree On; Why the Portraits of Jesus Keep Changing; The Question Jesus Asked Peter). \"Portraits\" is the field's ordinary word and literal for Sallman.",
+  "Second-order questions are not settled. The identity of Jesus' brothers (sons of Mary, sons of Joseph, or cousins) is left alone: the essay says \"brother\" as the sources do, and the argument holds on every reading. The Testimonium Flavianum is left open (\"The argument over its wording goes on\"). Mark's date is given as \"usually dated\". The first-order matter is confessed plainly: \"Christians confess that he did not stay dead, and I believe it.\"",
+  "Political criticism cuts both ways with the same instrument: Barton's businessman and the Jesus who \"would win a fight and vote the way the congregation votes\" on one side, the nineteenth-century liberal lives, the Jesus Seminar and the gentle progressive on the other. Only the \"money\" item is miscalibrated (flagged above).",
+  "Self-implication is done, not announced: \"Some of us have said the evidence for Jesus is better than the evidence for Julius Caesar\", \"We Americans have done the same thing\", \"Most of us hold on to the sayings that suit us\", \"we've usually stopped reading him\", \"most of us have been answering it with the Jesus we already preferred\".",
+  "Skeptic read: the concessions are real and come first. No document from Jesus' lifetime, no inscription or coin, every full account written by believers, Mark around 70, Paul's near-silence stated as Carrier would state it, the Caesar comparison and the \"no serious person doubted\" claim both disowned, Carrier's book placed with a biblical studies publisher, Tacitus possibly repeating Christians, the Testimonium admitted to be altered, and the consensus credited to non-believers. The one place a checking skeptic would push back is the Josephus \"so-called\" argument (flagged above).",
+  "Pastor read: it can be handed to a congregation. Christians who overclaimed are corrected without contempt, the congregational mirror cuts both ways, and the essay never asks a believer to fear the evidence.",
+  "Ending: a short stack of plain lines that answers the title, turns the question onto the reader and lands on the risen Christ. It does not resolve into a recap, apart from the restated creed line flagged above. Closing Texts: two verses, each on one line as *\"Quote.\"* (Reference). Hebrews 13:8 answers the changing portraits.",
+  "Crisis path: not a crisis-facing piece. No passage addresses a reader in distress, and self-harm and abuse are not in view, so no Find Help, 988 or reporting line is needed.",
+  "Links: two essay links (why-trust-the-bible, did-the-resurrection-happen), both in link-targets.json, both on the shelf and both landed in /home/user/livewell-land/client/public/essays/.",
+  "Register numbers: 37 body paragraphs (headings and Closing Texts excluded) averaging 92 words, the longest 150. 193 sentences with a mean of 17.6 words; 19 percent at 8 words or fewer, on the developed side of the quarter target. 3,450 words, inside the 2,500 to 3,800 band. No fragment stacks. Contractions are light and natural.",
+  "Historical arc: it opens at the 1910 Berlin debate, reaches back to Bauer and Reimarus, and runs forward through Schweitzer (1906), Barton (1925), Sallman (1940) and the Jesus Seminar (1985 and 1993). Years appear where the chronology is the point.",
+  "Scholar parade: otherwise clean. Drews, Bauer, Carrier, Josephus, Eusebius, Tacitus, Celsus, Origen, Sanders, Lessing, Reimarus, Schweitzer, Barton, Sallman, Funk and Hays each do work in the argument. The only parade is the Sanders and Ehrman pair of credential appositives (flagged above).",
+  "Scripture is used inside the argument, never as decoration: Galatians 4:4, Romans 1:3, 1 Corinthians 11:23, Galatians 1:19, 1 Corinthians 9:5 and Mark 6:3 as evidence about Jesus' life and family; Mark 3:22 on what ancient opponents conceded; Matthew 3:14, Mark 3:21, Mark 13:32 and Mark 10:18 with Matthew 19:17 as the embarrassing details; Deuteronomy 21:23 and 1 Corinthians 1:23 on the cross; Mark 8:27–33 as the controlling text; Acts 26:26 on publicness. The ESV wording matched where I compared it from memory. Verification belongs to the integrity lens."
+ ]
+}

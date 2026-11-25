@@ -1,0 +1,101 @@
+{
+  "slug": "love-when-i-do-wrong",
+  "title": "Does God still love me when I do wrong?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "love-when-i-do-wrong",
+  "line": {
+    "younger": "Everyone does wrong sometimes. Does God stop loving us then? Jesus answered with a story about a son who ran away and a father who ran too.",
+    "older": "An honest question answered with Jesus' own story of the lost son, in seven pictures, as the Study Bible's notes on Luke 15 read it: grace that runs ahead, and wrong that still matters."
+  },
+  "poster": "A house on a hill in the evening with one window lit, and a road winding down from it into the distance.",
+  "frames": [
+    {
+      "id": "question",
+      "name": "A real question",
+      "still": "A child sits alone on a step outside a house in the evening, and a broken cup lies on the ground beside them.",
+      "younger": "Everyone does wrong sometimes: a mean word, a lie, something broken and hidden. Afterwards it is easy to wonder whether God has stopped loving you. Jesus answered that question with a story.",
+      "older": "When you know you have done wrong, a heavy question follows: has God turned away? Some people complained that Jesus welcomed sinners and ate with them, and he answered with three stories of something lost and found. The last is about a father and two sons.",
+      "verse": {
+        "ref": "Luke 15:2",
+        "text": "This man welcomes sinners and eats with them."
+      }
+    },
+    {
+      "id": "left",
+      "name": "A son who left",
+      "still": "A house on a hill, and a road winding away from it to the far edge of the picture, where a small figure walks off carrying a bag.",
+      "younger": "In Jesus' story, a younger son asked his father for his share of the family's money. He left home for a faraway country and wasted every bit of it.",
+      "older": "A younger son asks for his share of the estate while his father is alive, gathers everything together and goes to a distant country, where he wastes it all. The request was unusual, and the waste was real. Nothing in the story pretends that what he did was small."
+    },
+    {
+      "id": "senses",
+      "name": "He came to his senses",
+      "still": "Far off on the left, pigs feed at a trough in a bare field, and the son sits alone beside them, the road home running away behind him.",
+      "younger": "When the money ran out, a famine came, and he ended up feeding pigs, so hungry that he wanted their food. Then he came to his senses. He would go home and say, “Father, I have sinned against heaven and against you.”",
+      "older": "Feeding pigs for a stranger in a foreign land and envying their food was the lowest point a Jewish son could imagine. He came to his senses and rehearsed a speech: he would confess, “Father, I have sinned against heaven and against you,” and ask to be taken on as a hired servant."
+    },
+    {
+      "id": "ran",
+      "name": "The father ran",
+      "still": "On the road below the house the father runs toward his son with his arms open, and the two meet on the road.",
+      "younger": "While the son was still far away, his father saw him. He did not wait, or fold his arms. He ran to his son, hugged him and kissed him, before the son had said a word.",
+      "older": "Before the son can begin his speech, the father sees him far off, is filled with compassion and runs to him. The Study Bible's note on Luke 15 puts it plainly: the father's love is moved before any confession.",
+      "verse": {
+        "ref": "Luke 15:20",
+        "text": "So he got up and went to his father. But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him."
+      }
+    },
+    {
+      "id": "home",
+      "name": "Home",
+      "still": "The house is lit; the son stands at the door in a new robe, and a table is set for a feast with people gathering round it.",
+      "younger": "The son began to say sorry, and his father did not even let him finish. He called for the best robe, a ring, sandals and a party. “For this son of mine was dead and is alive again!”",
+      "older": "The son starts his confession, but the father never lets him reach the request to be made a servant. Robe, ring, sandals and a feast answer the request he never finished making: restoration comes as a gift before the son can bargain for it. “He was lost and is found!”"
+    },
+    {
+      "id": "matters",
+      "name": "Wrong still matters",
+      "still": "Across the valley from the house, on the far hill, an empty cross stands in the morning light.",
+      "younger": "This does not mean that doing wrong is no big deal. Sin is serious, and it grieves God; that is why the cross was needed. But God did not wait for us to be good before he loved us. Jesus died for us while we were still doing wrong.",
+      "older": "Grace does not make sin small. The son's wrong was real, and so was his turning home: the note calls repentance the human side of being found by God, and says the father's welcome runs ahead of it. Sin is serious, and it grieves God; that is why the cross was needed. Paul says God proved his love in exactly this way.",
+      "verse": {
+        "ref": "Romans 5:8",
+        "text": "But God proves His love for us in this: While we were still sinners, Christ died for us."
+      }
+    },
+    {
+      "id": "nothing",
+      "name": "Nothing can separate",
+      "still": "The father and the son sit together at the lit door of the house as evening comes, and the road behind them is empty.",
+      "younger": "So when you do wrong, you can tell God the truth and say sorry, and he promises to forgive you because of Jesus. Nothing in all the world can take his love away from his children.",
+      "older": "The Study Bible's study of love says it plainly: God set his love on his people because he loved them, and nothing can separate them from it. Many find it easier to serve God than to believe he delights in them. The way home stays open: “If we confess our sins, He is faithful and just to forgive us our sins.”",
+      "verse": {
+        "ref": "Romans 8:38-39",
+        "text": "nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."
+      }
+    }
+  ],
+  "think": {
+    "younger": "In the story, what did the father do before the son could say sorry? What does that tell you about God?",
+    "older": "Jesus' story ends with the older brother outside the party, deciding whether to go in. Why do you think Jesus left it open?"
+  },
+  "read": [
+    { "label": "Luke 15", "href": "/study/bible/luke/15" },
+    { "label": "Romans 5", "href": "/study/bible/romans/5" },
+    { "label": "Romans 8", "href": "/study/bible/romans/8" },
+    { "label": "1 John 1", "href": "/study/bible/1-john/1" },
+    { "label": "Deuteronomy 7", "href": "/study/bible/deuteronomy/7" }
+  ],
+  "stops": ["fall", "cross"],
+  "cards": ["sin"],
+  "care": "Thinking about sin can bring up guilt or fear. Nobody is too bad to be forgiven, and nobody has to carry it alone. Talk with a parent, a pastor or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Luke 15 in the Study Bible: lost and found", "href": "/study/bible/luke/15" },
+    { "label": "Love: what the Bible teaches", "href": "/study/bible/doctrines/love" },
+    { "label": "The family catechism: will God ever stop loving me if I am bad?", "href": "/family/catechism#q74" },
+    { "label": "What sin is (a moving picture)", "href": "/study/explorer/watch/what-sin-is" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "question", "verse": false}, {"id": "left", "verse": false}, {"id": "senses", "verse": false}, {"id": "ran", "verse": true}, {"id": "home", "verse": false}, {"id": "matters", "verse": false}, {"id": "nothing", "verse": false}]},
+  "end": { "label": "Read Luke 15 in the Study Bible", "href": "/study/bible/luke/15" }
+}

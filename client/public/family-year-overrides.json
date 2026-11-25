@@ -1,4 +1,7 @@
 {
   "about": "Hand overrides for the family year map (client/src/lib/familyYear.generated.ts). Each entry pins one devotion, by its id in any client/public/family-devotions*.json file, to the week that begins on the given Sunday (a week the rotation serves, not one a daily seasonal set serves), for example { \"week\": \"2027-01-10\", \"devotion\": \"forgiveness\", \"note\": \"why this week\" }. A pinned week does not use up a slot in the rotation. After editing, run: node scripts/build-family-year.mjs",
-  "weeks": []
+  "weeks": [
+    { "week": "2026-11-08", "devotion": "grown-ups-voted-differently", "note": "The week after the November 3 vote, when the results come to dinner (U11). Waits until family-devotions-world.json is live." },
+    { "week": "2026-11-15", "devotion": "praying-for-leaders", "note": "The second week after the vote (U11). Waits until family-devotions-world.json is live." }
+  ]
 }

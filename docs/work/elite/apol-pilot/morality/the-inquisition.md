@@ -1,0 +1,79 @@
+---
+area: morality
+slug: the-inquisition
+status: live (James, 2026-11-20: "publish all of this when ready")
+question: "Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?"
+ledger: docs/work/elite/apol-ledger.md, "Nineteenth run", key "at"
+---
+
+# Christians tortured and burned people for what they believed. How can a faith that ran the Inquisition claim to be good?
+
+## The short answer
+
+It can't claim innocence, and it shouldn't try. For centuries Catholic and Protestant authorities alike put people to death for heresy, and some of the church's greatest teachers wrote the arguments that justified it: Augustine defended forcing the Donatists back into the church, and Thomas Aquinas wrote that convicted heretics deserve death. The Spanish Inquisition, founded in 1478, fell hardest on Jews who had been baptized and on their descendants. Protestant Geneva burned Michael Servetus, and Protestant Zurich drowned Felix Manz. What can be said, and is argued below, is that persecution contradicted the church's own Scriptures and its own earliest teachers, that the case against it was made from inside the faith before it won elsewhere, and that the church has since repented of it in its own words. That is a judgment on the church. It is not a defense of what was done.
+
+## The objection at its strongest
+
+Thomas Paine made the charge in *The Age of Reason* (1795) as plainly as anyone has. Christians, he wrote, like to say their faith was not spread by force, but "no sooner were the professors of Christianity sufficiently powerful to employ the sword than they did so, and the stake and faggot too." He traced the cause to belief in revelation itself: the "bloody persecutions, and tortures unto death and religious wars, that since that time have laid Europe in blood and ashes" came, he argued, from the conviction that God has spoken and that his word must be obeyed.
+
+At full strength the objection runs like this. A religion that claims to possess the one saving truth, revealed by God, will treat dissent as a danger to souls worse than any danger to bodies. Given power, it will punish dissent, and it did, for more than a thousand years, with the approval of its bishops and the arguments of its theologians. The record is not a matter of a few bad men. Popes established inquisitions, kings enforced them, and scholars defended them in the church's most honored books. If Christianity were what it claims, the people closest to its center would have been the first to see that burning a person for an opinion is evil. Instead it took the Enlightenment, and thinkers like Paine, to make religious freedom the rule. The faith that ran the Inquisition is therefore not a reliable guide to goodness.
+
+## What is true in it
+
+The facts are largely as Paine says, and the hardest of them come from the church's own best minds. Augustine of Hippo at first held that no one should be coerced into unity, as the Study Bible's notes on Luke 14 record, but around 408 he changed his mind. In his letter to the tribune Boniface, written about 417 and later known as *The Correction of the Donatists*, he read Jesus' parable of the banquet, "compel them to come in" (Luke 14:23, BSB), as a warrant for imperial force, and asked: "Why, therefore, should not the Church use force in compelling her lost sons to return, if the lost sons compelled others to their destruction?" He opposed putting Donatists to death, and the law he defended imposed fines and exile, not execution, but his reading became the standard proof text for coercion.
+
+Thomas Aquinas went further. Asked whether heretics ought to be tolerated, he answered that by their sin "they deserve not only to be separated from the Church by excommunication, but also to be severed from the world by death," and he reasoned that "it is a much graver matter to corrupt the faith which quickens the soul, than to forge money" (*Summa Theologiae* II-II, q. 11, a. 3, in the English Dominican translation). He met Jesus' parable of the wheat and the weeds by saying it forbids uprooting heretics only where the wheat would be harmed.
+
+The Spanish Inquisition was established in 1478 and abolished only in 1834. In its early decades it fell above all on *conversos*, Jews who had been baptized, many of them under threat, and their descendants, suspected of keeping Jewish practices in secret, and it burned men and women for that alone. In 1492 Ferdinand and Isabella ordered the Jews of their kingdoms who would not be baptized to leave them. How many the Inquisition put to death is disputed among historians, and this page gives no figure. And Protestants did not refuse the logic when they held power. Felix Manz was drowned in Zurich in 1527 for baptizing adults; Luther, who had preached in 1525 that heretics must not be burned, later signed a memorandum of 1536 allowing death for Anabaptists; and Michael Servetus, condemned to burning by Catholic authorities in Vienne, escaped and was then condemned and burned in Calvin's Geneva on 27 October 1553.
+
+## The evidence
+
+The question the objection raises is whether persecution flows from the faith or contradicts it, and the earliest Christian writers answered before anyone was in a position to persecute. Tertullian wrote to Scapula, a Roman official who was persecuting the church, that "it is a fundamental human right, a privilege of nature, that every man should worship according to his own convictions," and that "It is assuredly no part of religion to compel religion" (*To Scapula* 2, in the Ante-Nicene Fathers). Lactantius, in his *Divine Institutes*, wrote that "religion cannot be imposed by force; the matter must be carried on by words rather than by blows," and that "religion is to be defended, not by putting to death, but by dying" (book 5, chapter 20).
+
+Their ground was the New Testament. Jesus rebuked the disciples who wanted fire on a Samaritan village (Luke 9:55). His parable of the wheat and the weeds says, "Let both grow together until the harvest" (Matthew 13:30, BSB). Paul told Timothy that the Lord's servant "must gently reprove those who oppose him, in the hope that God may grant them repentance" (2 Timothy 2:25, BSB). The arguments that later justified the stake had to work around these texts: Augustine's reading of a host's urgent invitation as a command to use soldiers, and Aquinas's limit on the parable.
+
+When the case against persecution came back, it came largely from Christians and from these same texts. The Study Bible's note on Matthew 13 records that Balthasar Hubmaier wrote *Concerning Heretics and Those Who Burn Them* in 1524, that Roger Williams argued in *The Bloudy Tenent of Persecution* (1644) that because the field in the parable is the world, rulers must leave dissenters and unbelievers alone until God's harvest, and that Williams's reading helped shape the American tradition of religious liberty. In 1686 the French Protestant exile Pierre Bayle, writing as his people were being forced into the Catholic Church, argued that any reading of Scripture that commands such crimes must be false. And the Catholic Church taught at the Second Vatican Council, in *Dignitatis Humanae* (1965), that no one may be forced to act against conscience in religious matters, as the note on Luke 14 records. The Enlightenment pressed the case too, and Paine deserves credit for pressing it. But the argument he made was older than he was.
+
+## The argument, laid out
+
+This is an argument about whether persecution belongs to the faith or contradicts it. It takes the record as the objection gives it.
+
+1. The New Testament forbids using force to make or keep believers, and the church's earliest teachers, writing under persecution, said so explicitly.
+2. The church's later practice of coercing and killing dissenters rested on readings of Scripture that contradict those texts, adopted after the church had gained the backing of the state.
+3. The case against persecution was renewed from within the faith, from the same Scriptures, and the churches that persecuted have since condemned persecution in their own teaching.
+
+So: the Inquisition and the Protestant executions were a grave corruption the church took on with power and later repented of by its own standard; they indict the church that did them, and they don't show that the faith requires persecution.
+
+The weight sits on the second step. Paine's deeper claim is that persecution is not a misreading but the natural fruit of believing that God has spoken. If that is right, the second step fails, and that is where the argument should be tested.
+
+## The strongest reply, and an answer
+
+The strongest reply presses Paine's point. Augustine and Aquinas were not careless readers. They believed, as every orthodox Christian believes, that eternal life depends on the truth about God, and they reasoned that if counterfeiters are punished for corrupting money, those who corrupt the faith that saves souls deserve worse. Their conclusion followed from their premises. If Christians abandoned it, the reply says, they did so because the Enlightenment shamed them, not because their Scriptures taught them better.
+
+The answer begins by granting that the reasoning was sincere and that its premise, that the truth about God matters more than anything, is one Christians still hold. What failed was the step from that premise to the sword. The New Testament ties saving faith to the free answer of a person to God, which is why Lactantius could say that a forced religion is not defended but "polluted and profaned," and why Tertullian called compulsion "no part of religion." Coercion can produce conformity; it can't produce faith. The persecutors' own Scriptures told them so, and the churches have since said that they were wrong in terms drawn from those Scriptures, not merely from the Enlightenment.
+
+Paine himself supplies a second answer, and it should be stated with care. He began *The Age of Reason* in France in 1793, and he wrote in its preface that the persecuting spirit had not died with the church's power: "The intolerant spirit of church persecution had transferred itself into politics; the tribunals, stiled Revolutionary, supplied the place of an Inquisition." He saw his own friends destroyed by those tribunals. That does not lessen by one life what the church did. It shows only that the will to destroy dissenters is not peculiar to believers in revelation, and that the right and the left, the throne and the revolution, have each claimed the truth and burned for it. The cure has to reach the human heart, not one kind of creed.
+
+## What remains unresolved
+
+How many people the inquisitions put to death is not known with any precision, and estimates have changed as historians have worked through the surviving records; the figures for Spain differ widely between the early decades and the centuries after. How far the Spanish Inquisition was an instrument of the church and how far of the crown is argued, since it was established at the request of Ferdinand and Isabella and governed through a royal council. And how a church that holds that its teaching is true should live beside those who reject it, without either coercion or indifference, is a question Christians are still learning to answer in practice.
+
+## Where Christians differ
+
+Christians differ on how the state should relate to the church. Some traditions keep established churches; others, Baptists and Anabaptists among them, hold that the state has no authority over conscience at all. They differ on how to judge Augustine and Aquinas, some reading them as men of their age whose principles can be kept without their conclusions, others thinking the error ran deeper. What all can confess is what the Catholic Church taught in 1965 and what Williams argued in 1644: that no one may be forced to believe, that faith forced is not faith, and that the church that once persecuted must say so without excuse. "There is neither Jew nor Greek, slave nor free, male nor female, for you are all one in Christ Jesus" (Galatians 3:28, BSB) was never a warrant to make anyone one by force.
+
+## Read the other side
+
+- Thomas Paine, *The Age of Reason*, part 2 (1795).
+- Henry Charles Lea, *A History of the Inquisition of the Middle Ages* (1888).
+
+## Read further
+
+- Roger Williams, *The Bloudy Tenent of Persecution* (1644).
+- Pierre Bayle, *Philosophical Commentary on These Words of Jesus Christ, Compel Them to Come In* (1686).
+
+## On the site
+
+- The Study Bible's notes on Luke 14 (/study/bible/luke/14), on "compel them to come in," and on Matthew 13 (/study/bible/matthew/13), on the wheat and the weeds.
+- Church history on this site (/theology/history).
+- "Galileo and the war," this library's page on the church's condemnation of Galileo (/questions/science/galileo-and-the-war).

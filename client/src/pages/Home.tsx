@@ -1,204 +1,356 @@
 /**
- * Home: one calm page.
+ * Home: the front door, drawn as a gallery.
  *
- * Who James is and why the site exists, in his own words from /about; then
- * three doors (the Study Bible, the essays, the books); three essays from the
- * shelf to start with; the books; one newsletter form; and a quiet way to
- * help for a reader in a hard season. Everything here is committed data
- * (positioning.ts, shelf.json, bookShelf.ts), so the page paints in full
- * without waiting on the API, and it imports nothing heavy.
+ * The first screen is Plate I (the road), James's headline, the one sentence
+ * that says what the site is for, and Find (one field: a passage or a
+ * question), with tonight's family devotion under it. On a phone the plate
+ * runs edge to edge above the headline. Then ten ways in as picture
+ * cards, and the things a visitor can touch: the 66 books on one shelf, a
+ * hard question asked straight, tonight at the table, and two thousand
+ * years of church history on one line. Then the latest writing and the
+ * books, and the ways to find James, with Find Help beside them. No
+ * photograph of James here (his standing note); /about has it.
+ *
+ * Everything in the first screen is committed data (positioning.ts, the
+ * Road plate), so the page paints without waiting on the API. The pictures
+ * below it come from one lazy module (components/art/plates.tsx) into frames
+ * that already hold their size, and each interactive piece is its own lazy
+ * chunk (React.lazy) in a box that holds its height (home.css), so nothing
+ * moves while they arrive and the entry script carries none of them.
  *
  * The hero's markup and classes (index.css, .home-hero*) are mirrored by the
  * static hero scripts/prerender-heads.mjs writes into "/", so the first paint
  * is the real hero and React's mount moves nothing.
  */
+import { lazy, Suspense, useEffect, useState, type ReactNode } from "react";
 import { Link } from "wouter";
+import { ArrowRight, Globe, LifeBuoy, Mail, Mic, Smartphone, UserRound } from "lucide-react";
 
-import AdventAtTheTable from "@/components/AdventAtTheTable";
 import Layout from "@/components/Layout";
+import FollowRow from "@/components/FollowRow";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { SEOMeta, getOrganizationSchema, getWebSiteSchema } from "@/components/SEOMeta";
+import RoadPlate from "@/components/art/RoadPlate";
+import PlateFrame from "@/components/art/PlateFrame";
+import Plate, { type PlateName } from "@/components/art/Plate";
+import DoorCard from "@/components/art/DoorCard";
+import { useNear } from "@/components/art/useNear";
 import { BOOK_SHELF } from "@/lib/bookShelf";
-import {
-  HOME_HEADLINE,
-  HOME_WHO,
-  HOME_WHY,
-  META_DESCRIPTION,
-  PORTRAIT_URL,
-} from "@/lib/positioning";
-import { START_WITH, cleanExcerpt, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
+import { liveChannels } from "@/lib/channels";
+import { HOME_HEADLINE, HOME_LINE, HOME_WHO, HOME_LINKED_HREF, HOME_LINKED_WORD, META_DESCRIPTION } from "@/lib/positioning";
+import { START_WITH, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
+import { followHash } from "@/lib/followHash";
+import HomeFind from "./home/HomeFind";
+import TonightSlot, { readShellLines } from "./home/TonightSlot";
+import { ROAD_CHIPS } from "./home/roadChips";
+import HomeLatest from "./home/HomeLatest";
+import "./home/home.css";
 
-/** The three doors, in the order the site is built around. */
-const DOORS = [
-  {
-    title: "Study the Bible",
-    href: "/study/bible",
-    note: "An introduction to every book, notes on all 1,189 chapters, and the one story that runs from Genesis to Revelation.",
-  },
-  {
-    title: "Read the essays",
-    href: "/writing",
-    note: "A short shelf on the church after Christendom, the long history of the faith, and reading the Bible in its world.",
-  },
-  {
-    title: "The books",
-    href: "/books",
-    note: "The books James wrote himself. The opening of each is free to read.",
-  },
-];
+/*
+ * The tonight line (pages/home/HomeTonight) reads the family year map with
+ * its titles, the Advent calendar, and this device's progress for Continue:
+ * about 45 kB that every route's entry script would otherwise carry. It loads
+ * on its own, starting as this module runs on "/", into a slot at the foot of
+ * the hero's text (index.css, .home-tonight--slot) that holds the room the
+ * line will take, so nothing moves when it arrives: the static shell writes
+ * the line's words into its slot unseen, and this slot draws the same
+ * (home/TonightSlot, read once here, before the app replaces the shell).
+ */
+const SHELL_LINES = typeof document === "undefined" ? undefined : readShellLines();
+type TonightModule = typeof import("./home/HomeTonight");
+let tonightModule: TonightModule | null = null;
+let tonightLoading: Promise<TonightModule> | null = null;
+function loadTonight(): Promise<TonightModule> {
+  tonightLoading ??= import("./home/HomeTonight").then(
+    (m) => (tonightModule = m),
+    (e) => {
+      tonightLoading = null;
+      throw e;
+    },
+  );
+  return tonightLoading;
+}
+if (typeof window !== "undefined" && window.location.pathname === "/") loadTonight().catch(() => {});
 
-/** The shelf's "Start with these", resolved to titles and lines; only public essays. */
-function startEssays() {
-  return START_WITH.filter((slug) => isPublicEssay(slug))
-    .slice(0, 3)
-    .map((slug) => {
-      const entry = shelfEntry(slug);
-      const rewrite = overrideMeta(slug);
-      return {
-        slug,
-        title: rewrite?.title ?? entry?.title ?? slug,
-        line: cleanExcerpt(rewrite?.excerpt ?? entry?.blurb ?? ""),
-      };
-    });
+function Tonight() {
+  const [loaded, setLoaded] = useState(tonightModule);
+  useEffect(() => {
+    if (loaded) return;
+    let live = true;
+    loadTonight().then(
+      (m) => live && setLoaded(m),
+      () => {},
+    );
+    return () => {
+      live = false;
+    };
+  }, [loaded]);
+  if (!loaded) return <TonightSlot lines={SHELL_LINES} />;
+  const HomeTonight = loaded.default;
+  return <HomeTonight />;
 }
 
-const gutter = "clamp(16px, 4vw, var(--s-4))";
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
-const sectionTitle = {
-  fontFamily: "var(--F)",
-  fontSize: "clamp(28px, 3.6vw, 38px)",
-  fontWeight: 400,
-  letterSpacing: "-0.015em",
-  lineHeight: 1.1,
-  margin: 0,
-} as const;
-const quietLink = {
-  fontFamily: "var(--U)",
-  fontSize: "14px",
-  fontWeight: 500,
-  textDecoration: "none",
-  borderBottom: "1px solid var(--mustard)",
-  paddingBottom: "2px",
-} as const;
+/* The things to touch, each its own chunk. */
+const BibleShelf = lazy(() => import("./home/BibleShelf"));
+const QuestionPicker = lazy(() => import("./home/QuestionPicker"));
+const TonightTable = lazy(() => import("./home/TonightTable"));
+const HistoryStrip = lazy(() => import("./home/HistoryStrip"));
+
+/** A box that holds the piece's height (home.css) until the piece arrives. */
+function Piece({ name, children }: { name: string; children: ReactNode }) {
+  // Loaded as it nears the screen, so a first visit spends its first seconds on the first screen.
+  const [ref, near] = useNear<HTMLDivElement>();
+  return (
+    <div ref={ref} className={`home-piece home-piece--${name}`}>
+      {near && <Suspense fallback={null}>{children}</Suspense>}
+    </div>
+  );
+}
+
+interface Door {
+  title: string;
+  href: string;
+  plate: PlateName;
+  note?: string;
+}
+
+/** The first five doors: the large one, then four beside it. */
+const DOORS: Door[] = [
+  { title: "Read the Study Bible", href: "/study/bible", plate: "book", note: "Notes on every chapter" },
+  { title: "Church history", href: "/theology/history", plate: "basilica", note: "From Pentecost to today" },
+  { title: "Hard questions", href: "/topics", plate: "lantern", note: "Straight answers" },
+  { title: "Family", href: "/family", plate: "house", note: "Tonight's devotion" },
+  // /start has a way in for every reader, not only someone new (walk 2026-11, finding 24).
+  { title: "Start here", href: "/start", plate: "tree", note: "Wherever you are" },
+];
+
+/**
+ * The other five, smaller. The first was "Context and creeds" on /study, from
+ * when that page held both; the creeds now sit under History, so the card
+ * takes the context half under its one name, Bible background (lib/siteCatalog),
+ * and opens that page (the walk of 2026-11-23, finding 3).
+ */
+const MORE_DOORS: Door[] = [
+  { title: "Bible background", href: "/resources/context", plate: "jar" },
+  { title: "Tools", href: "/tools", plate: "compass" },
+  { title: "Essays", href: "/writing", plate: "quill" },
+  { title: "Books", href: "/books", plate: "books" },
+  { title: "Find James", href: "/connect", plate: "letter" },
+];
+
+/**
+ * "Start where you are": the choices of /start as one quiet row of chips
+ * (home/roadChips.ts). A road opens on /start; the doubter's and the pastor's
+ * chips open their one page.
+ */
+function RoadChips() {
+  return (
+    <nav className="home-roads" aria-labelledby="home-roads-label">
+      <p id="home-roads-label" className="home-roads__label">
+        Start where you are
+      </p>
+      <ul className="home-roads__list">
+        {ROAD_CHIPS.map((r) => (
+          <li key={r.id}>
+            <Link href={r.href} className="home-road" onClick={() => followHash(r.href)}>
+              {r.chip}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
+/** The first public essay the shelf says to start with, for the desk. */
+function leadEssay() {
+  const slug = START_WITH.find((s) => isPublicEssay(s));
+  if (!slug) return null;
+  const rewrite = overrideMeta(slug);
+  return { slug, title: rewrite?.title ?? shelfEntry(slug)?.title ?? slug };
+}
+
+const two = (n: number) => String(n).padStart(2, "0");
+
+function SectionHead({ eyebrow, title, link, id }: { eyebrow: string; title: string; link?: { href: string; label: string }; id: string }) {
+  return (
+    <div className="home-head">
+      <div>
+        <p className="home-eyebrow">{eyebrow}</p>
+        <h2 id={id} className="home-h2">
+          {title}
+        </h2>
+      </div>
+      {link && (
+        <Link href={link.href} className="home-tlink">
+          {link.label} <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+        </Link>
+      )}
+    </div>
+  );
+}
+
+const WAYS = [
+  { href: "/contact", label: "Write to James", Icon: Mail },
+  { href: "/speaking", label: "Speaking", Icon: Mic },
+  { href: "/about", label: "About James", Icon: UserRound },
+];
+
+/** ENDS, as lib/channels.ts names and describes it. Absent when the channel is not live. */
+const ENDS = liveChannels().find((c) => c.id === "ends");
 
 export default function Home() {
-  const essays = startEssays();
+  const lead = leadEssay();
+  // "post-Christian" in the headline opens the page that explains it.
+  // A dash keeps to the word before it, so no line of the headline opens on one.
+  const [headBefore, headAfter = ""] = HOME_HEADLINE.replace(/ \u2014/g, "\u00A0\u2014").split(HOME_LINKED_WORD);
 
   return (
     <Layout>
       <SEOMeta
-        title="LiveWell by James Bell"
+        title="Study the Bible, Church History, Family Devotions | LiveWell"
         description={META_DESCRIPTION}
         url="https://www.livewellbyjamesbell.co"
         type="website"
         structuredData={[getOrganizationSchema(), getWebSiteSchema()]}
       />
 
-      {/* WHO AND WHY. Mirrored by the static hero in prerender-heads.mjs. */}
+      {/* THE HEADLINE, FIND, AND PLATE I. Mirrored by the static hero in prerender-heads.mjs. */}
       <section className="home-hero">
         <div className="home-hero__inner">
-          <div className="home-hero__byline">
-            <img
-              className="home-hero__portrait"
-              src={PORTRAIT_URL}
-              alt="James Bell"
-              width={168}
-              height={210}
-              decoding="async"
-              fetchPriority="low"
-            />
-            <div>
-              <p className="home-hero__name">James Bell</p>
-              <Link href="/about" className="home-hero__about">
-                About James
-              </Link>
-            </div>
+          <div className="home-hero__words">
+            <h1 className="home-hero__title">
+              {headBefore}
+              <Link href={HOME_LINKED_HREF}>{HOME_LINKED_WORD}</Link>
+              {headAfter}
+            </h1>
+            {/* What the site is for, in James's own sentence (the end of HOME_WHY). */}
+            <p className="home-hero__line">{HOME_LINE}</p>
+            <HomeFind />
+            {/* Tonight's devotion, Continue, and the Advent line; empty when there is nothing to show. */}
+            <Tonight />
+            {/* The choices of /start, one chip each: five roads, and the doubter's and the pastor's page. */}
+            <RoadChips />
           </div>
-          <div>
-            <h1 className="home-hero__title">{HOME_HEADLINE}</h1>
-            <p className="home-hero__text">{HOME_WHY}</p>
-            <p className="home-hero__text">{HOME_WHO}</p>
-          </div>
+          <PlateFrame className="home-hero__art" ratio={null} number="Plate I" title="The road">
+            <RoadPlate />
+          </PlateFrame>
         </div>
       </section>
 
-      {/* THE THREE DOORS: set like a book's contents page. */}
-      <section style={{ background: "var(--bone)", padding: `var(--s-5) ${gutter} var(--s-6)` }}>
-        <div style={wrap}>
-          {/* From the Sunday before Advent Sunday to Christmas only; empty otherwise. */}
-          <AdventAtTheTable variant="line" />
-          <h2 id="home-doors-title" className="sr-only">
-            Where to begin
-          </h2>
-          <ul style={{ listStyle: "none", margin: 0, padding: 0 }}>
-            {DOORS.map((door) => (
-              <li key={door.href} className="home-door">
-                <Link href={door.href} className="home-door__link">
-                  <span className="home-door__title">{door.title}</span>
-                  <span className="home-door__note">{door.note}</span>
-                </Link>
+      {/* TEN WAYS IN. Not called doors: the menu's seven doors are the site's doors. */}
+      <section className="home-sec home-sec--doors" aria-labelledby="home-doors-title">
+        <div className="home-wrap">
+          <SectionHead id="home-doors-title" eyebrow="Ten ways in" title="Where to begin." link={{ href: "/explore", label: "See everything on LiveWell" }} />
+          <ul className="home-doors">
+            {DOORS.map((d, i) => (
+              <li key={d.href} className={i === 0 ? "home-doors__lead" : undefined}>
+                <DoorCard {...d} number={two(i + 1)} variant={i === 0 ? "lead" : undefined} />
               </li>
             ))}
           </ul>
-          {/* Not a fourth door: one quiet line to the things people use. */}
-          <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.6, color: "var(--ink-muted)", margin: "var(--s-4) 0 0" }}>
-            Also here, all free:{" "}
-            <Link href="/resources" style={{ ...quietLink, fontSize: "16px", color: "var(--ink)" }}>
-              tools, eight-week plans, and printables
-            </Link>
-            .
-          </p>
+          <ul className="home-doors-more">
+            {MORE_DOORS.map((d, i) => (
+              <li key={d.href}>
+                <DoorCard {...d} number={two(i + DOORS.length + 1)} variant="row" />
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      {/* START WITH THESE: three essays from the shelf, chosen by hand. */}
-      {essays.length > 0 && (
-        <section style={{ background: "var(--bone-warm)", padding: `var(--s-6) ${gutter}` }}>
-          <div style={wrap}>
-            <div className="home-row-head">
-              <h2 style={{ ...sectionTitle, color: "var(--ink)" }}>Start with these</h2>
-              <Link href="/writing" style={{ ...quietLink, color: "var(--ink)" }}>
-                All the essays
-              </Link>
-            </div>
-            <ul className="home-essays">
-              {essays.map((e) => (
-                <li key={e.slug}>
-                  <Link href={`/writing/${e.slug}`} className="home-essay">
-                    <span className="home-essay__title">{e.title}</span>
-                    {e.line && <span className="home-essay__line">{e.line}</span>}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-      )}
+      {/* THE STUDY BIBLE: all 66 books on one shelf. */}
+      <section className="home-sec home-sec--dark" aria-labelledby="home-shelf-title">
+        <div className="home-wrap">
+          <SectionHead
+            id="home-shelf-title"
+            eyebrow="The Study Bible"
+            title="The whole Bible on one shelf."
+            link={{ href: "/study/bible", label: "Open the Study Bible" }}
+          />
+          <Piece name="shelf">
+            <BibleShelf />
+          </Piece>
+        </div>
+      </section>
 
-      {/* THE BOOKS */}
-      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: `var(--s-6) ${gutter}` }}>
-        <div style={wrap}>
-          <div className="home-row-head">
-            <h2 style={{ ...sectionTitle, color: "var(--charcoal-fg)" }}>The books</h2>
-            <Link href="/books" style={{ ...quietLink, color: "var(--charcoal-fg)" }}>
-              Read the opening of each, free
-            </Link>
+      {/* A HARD QUESTION, ASKED STRAIGHT */}
+      <section className="home-sec" aria-labelledby="home-ask-title">
+        <div className="home-wrap home-two">
+          <PlateFrame className="home-two__art">
+            <Plate name="tomb" />
+          </PlateFrame>
+          <div>
+            <p className="home-eyebrow">Hard questions</p>
+            <h2 id="home-ask-title" className="home-h2">
+              Ask it straight.
+            </h2>
+            <Piece name="ask">
+              <QuestionPicker />
+            </Piece>
+          </div>
+        </div>
+      </section>
+
+      {/* TONIGHT AT THE TABLE */}
+      <section className="home-sec home-sec--warm" aria-labelledby="home-table-title">
+        <div className="home-wrap home-two home-two--flip">
+          <div>
+            <p className="home-eyebrow">Tonight at the table</p>
+            <Piece name="table">
+              <TonightTable />
+            </Piece>
+          </div>
+          <PlateFrame className="home-two__art">
+            <Plate name="table" />
+          </PlateFrame>
+        </div>
+      </section>
+
+      {/* CHURCH HISTORY: two thousand years on one line. */}
+      <section className="home-sec home-sec--dark" aria-labelledby="home-history-title">
+        <div className="home-wrap">
+          <SectionHead
+            id="home-history-title"
+            eyebrow="Church history"
+            title="Two thousand years on one line."
+            link={{ href: "/theology/history", label: "The whole course" }}
+          />
+          <Piece name="history">
+            <HistoryStrip />
+          </Piece>
+        </div>
+      </section>
+
+      {/* THE DESK: one essay to start with, the latest with dates, and the books. */}
+      <section className="home-sec" aria-labelledby="home-desk-title">
+        <div className="home-wrap">
+          <SectionHead
+            id="home-desk-title"
+            eyebrow="Essays and books"
+            title="From the desk."
+            link={{ href: "/writing", label: "All the essays" }}
+          />
+          <div className="home-desk">
+            {lead && (
+              <Link href={`/writing/${lead.slug}`} className="home-desk__lead">
+                <PlateFrame ratio="16 / 9">
+                  <Plate name="arch" decorative />
+                </PlateFrame>
+                <span className="home-eyebrow home-desk__kind">Start with this one</span>
+                <span className="home-desk__title">{lead.title}</span>
+              </Link>
+            )}
+            <div>
+              <h3 className="eyebrow home-h3">Latest writing</h3>
+              <HomeLatest />
+            </div>
           </div>
           <ul className="home-books">
             {BOOK_SHELF.map((b) => (
               <li key={b.slug}>
                 <Link href={b.href} className="home-book">
-                  <img
-                    src={b.thumb}
-                    alt=""
-                    width={150}
-                    height={240}
-                    loading="lazy"
-                    decoding="async"
-                    className="home-book__cover"
-                  />
-                  <span className="home-book__title">{b.title}</span>
-                  <span className="home-book__sub">{b.sub}</span>
+                  <img src={b.thumb} alt={b.title} width={150} height={225} loading="lazy" decoding="async" className="home-book__cover" />
                 </Link>
               </li>
             ))}
@@ -206,67 +358,70 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE NEWSLETTER: the one form in the page itself. */}
-      <section style={{ background: "var(--bone)", padding: `var(--s-6) ${gutter}` }}>
-        <div style={{ maxWidth: "560px", margin: "0 auto" }}>
-          <NewsletterSignup
-            variant="inline"
-            source="home"
-            title="One serious essay a week"
-            description="Serious theology, written for the week you are actually living. No filler, no funnel, and you can leave whenever you like."
-          />
+      {/* FIND JAMES, and help in a hard season. */}
+      <section className="home-sec home-sec--warm" aria-labelledby="home-james-title">
+        <div className="home-wrap home-james">
+          <PlateFrame className="home-james__art">
+            <Plate name="letter" />
+          </PlateFrame>
+          <div>
+            <p className="home-eyebrow">Find James</p>
+            <h2 id="home-james-title" className="home-h2">
+              Where he writes. How to reach him.
+            </h2>
+            {/* Who is writing, in James's own confirmed words (positioning.ts). */}
+            <p className="home-who">{HOME_WHO}</p>
+            <ul className="home-ways">
+              {WAYS.map(({ href, label, Icon }) => (
+                <li key={href}>
+                  <Link href={href} className="home-way">
+                    <Icon aria-hidden="true" size={22} strokeWidth={1.5} />
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            {/* Where else James writes: links only (lib/channels.ts). */}
+            <FollowRow style={{ marginTop: "var(--s-2)" }} />
+            {/* The one real signup (the footer's form), where a reader has just met James. */}
+            <div className="home-signup">
+              <p className="home-signup__label">Essays by email (Substack)</p>
+              <NewsletterSignup variant="minimal" source="home-find-james" />
+            </div>
+            <p className="home-helpbar">
+              <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.5} />
+              <span>
+                In a hard season?{" "}
+                <Link href="/help" className="home-helpbar__link">
+                  Find help for what you are facing
+                </Link>
+              </span>
+            </p>
+            {/* The mission work, linked home page only: LiveWell sends no one to give (lib/channels.ts). */}
+            {ENDS && (
+              <p className="home-appline home-endsline">
+                <Globe aria-hidden="true" size={20} strokeWidth={1.75} />
+                <span>
+                  <a href={ENDS.url} target="_blank" rel="noopener noreferrer" className="home-helpbar__link">
+                    {ENDS.label}
+                  </a>
+                  . {ENDS.blurb}
+                </span>
+              </p>
+            )}
+            {/* One quiet line: LiveWell from an icon (/app). */}
+            <p className="home-appline">
+              <Smartphone aria-hidden="true" size={20} strokeWidth={1.75} />
+              <span>
+                Reading on a phone?{" "}
+                <Link href="/app" className="home-helpbar__link">
+                  Put LiveWell on your phone or computer
+                </Link>
+              </span>
+            </p>
+          </div>
         </div>
       </section>
-
-      {/* IN A HARD SEASON: quiet, and always here. */}
-      <section style={{ background: "var(--bone-warm)", padding: `var(--s-4) ${gutter}` }}>
-        <p
-          style={{
-            ...wrap,
-            fontFamily: "var(--B)",
-            fontSize: "16px",
-            lineHeight: 1.6,
-            color: "var(--ink-muted)",
-          }}
-        >
-          In a hard season?{" "}
-          <Link href="/help" style={{ ...quietLink, fontSize: "16px", color: "var(--ink)" }}>
-            Find help for what you are facing
-          </Link>
-          .
-        </p>
-      </section>
-
-      <style>{HOME_CSS}</style>
     </Layout>
   );
 }
-
-/* Below-the-fold layout for the doors, the essays, and the books. The hero's
-   styles live in index.css because the prerendered HTML needs them too. */
-const HOME_CSS = `
-.home-door{border-top:1px solid var(--border)}
-.home-door:last-child{border-bottom:1px solid var(--border)}
-.home-door__link{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:var(--s-2) var(--s-5);align-items:baseline;padding:var(--s-3) 0;text-decoration:none;color:var(--ink)}
-.home-door__title{font-family:var(--F);font-weight:400;font-size:clamp(32px,4.6vw,56px);line-height:1.05;letter-spacing:-0.02em;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:1px;text-underline-offset:0.14em;transition:text-decoration-color var(--dur) var(--ease)}
-.home-door__link:hover .home-door__title,.home-door__link:focus-visible .home-door__title{text-decoration-color:var(--mustard)}
-.home-door__note{font-family:var(--B);font-size:16px;line-height:1.65;color:var(--ink-muted);max-width:46ch}
-.home-row-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:var(--s-4)}
-.home-essays{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-4)}
-.home-essay{display:block;border-top:1px solid var(--borderdk);padding-top:var(--s-2);text-decoration:none;color:var(--ink)}
-.home-essay__title{display:block;font-family:var(--F);font-weight:500;font-size:24px;line-height:1.2;letter-spacing:-0.005em;margin-bottom:8px}
-.home-essay:hover .home-essay__title,.home-essay:focus-visible .home-essay__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.16em}
-.home-essay__line{display:block;font-family:var(--B);font-size:15px;line-height:1.65;color:var(--ink-muted)}
-.home-books{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-4)}
-.home-book{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--charcoal-fg)}
-.home-book__cover{width:150px;height:auto;border-radius:var(--radius-sm);margin-bottom:var(--s-1)}
-.home-book__title{font-family:var(--F);font-weight:500;font-size:22px;line-height:1.2;max-width:24ch}
-.home-book:hover .home-book__title,.home-book:focus-visible .home-book__title{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:0.16em}
-.home-book__sub{font-family:var(--B);font-size:14px;line-height:1.55;color:var(--charcoal-fg-muted);max-width:34ch}
-@media (max-width:760px){
-  .home-door__link{grid-template-columns:minmax(0,1fr);gap:6px}
-  .home-essays,.home-books{grid-template-columns:minmax(0,1fr)}
-  .home-book{display:grid;grid-template-columns:88px minmax(0,1fr);column-gap:var(--s-2);align-items:start}
-  .home-book__cover{width:88px;grid-row:span 2;margin:0}
-}
-`;

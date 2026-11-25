@@ -15,6 +15,8 @@ import type { CSSProperties, ReactNode } from "react";
 export interface IndexItem {
   href: string;
   title: string;
+  /** A short plain line under the title (Find Help: the page's own title, which names its subject). */
+  sub?: string | null;
   dek?: string | null;
   kicker?: string | null;
   meta?: ReactNode;
@@ -77,6 +79,7 @@ export function EditorialIndex({
                 {numbered && <span className="ed-num">{i + 1}</span>}{numbered && " "}
                 {it.title}
               </Heading>
+              {it.sub && <p className="ed-sub">{it.sub}</p>}
               {it.dek && <p className="ed-dek">{it.dek}</p>}
               {(it.meta || it.read) && (
                 <div className="ed-meta">

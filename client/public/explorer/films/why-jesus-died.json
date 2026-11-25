@@ -1,0 +1,163 @@
+{
+  "slug": "why-jesus-died",
+  "title": "Why did Jesus die?",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "why-jesus-died",
+  "line": {
+    "younger": "What happened on the cross, and the Bible's own pictures of what it did for us, in eight pictures.",
+    "older": "What happened at the cross, and six pictures the Bible itself uses for what it did, held together, in eight moving pictures."
+  },
+  "poster": "A far hill with one empty cross on it, small against the sky. Around the hill stand six small round pictures: a lamb, an open door, a lifted load, a fallen gate, a light, and a table.",
+  "frames": [
+    {
+      "id": "happened",
+      "name": "What happened",
+      "still": "A city wall, and beyond it a far hill with three empty crosses on it, small against an evening sky.",
+      "younger": "Some of the leaders in Jerusalem wanted to get rid of Jesus. One of his own friends, Judas, helped them arrest him at night. They handed him over to Pilate, the Roman governor, and Pilate had him put to death on a cross. Jesus had done nothing wrong.",
+      "older": "The creed says he ‘was crucified also for us under Pontius Pilate’. The chief priests and their council handed him over; Pilate, the Roman governor, condemned him; Roman soldiers crucified him. Jesus himself, his disciples and the first church were Jews, and blaming the Jewish people for his death is a lie that Christians must reject plainly. The New Testament places all of us inside the guilt.",
+      "verse": {
+        "ref": "1 Corinthians 15:3",
+        "text": "that Christ died for our sins according to the Scriptures"
+      }
+    },
+    {
+      "id": "lamb",
+      "name": "The Passover lamb",
+      "still": "A house at night with a lamb standing by its door and a lamp shining in its window.",
+      "younger": "At the first Passover, long ago, a lamb died so that God's people could be saved and set free from Egypt. John the Baptist called Jesus “the Lamb of God, who takes away the sin of the world.”",
+      "older": "At the first Passover a lamb died in the place of the firstborn, and Israel went free (Exodus 12). John the Baptist points at Jesus: “Look, the Lamb of God, who takes away the sin of the world!” (John 1:29). Jesus died at Passover, and Paul says, “Christ, our Passover lamb, has been sacrificed” (1 Corinthians 5:7).",
+      "say": {
+        "older": "At the first Passover a lamb died in the place of the firstborn, and Israel went free (Exodus 12). John the Baptist points at Jesus: “Look, the Lamb of God, who takes away the sin of the world!” Jesus died at Passover, and Paul says, “Christ, our Passover lamb, has been sacrificed”."
+      },
+      "verse": {
+        "ref": "1 Corinthians 5:7",
+        "text": "For Christ, our Passover lamb, has been sacrificed."
+      }
+    },
+    {
+      "id": "ransom",
+      "name": "A ransom",
+      "still": "A walled yard with its door standing open. Chains lie open on the ground, and people walk out along the road into the light.",
+      "younger": "A ransom is a price paid to set a prisoner free. Jesus said he came to give his life as a ransom for many. We were stuck in sin and could not get ourselves out, and he paid the price to set us free.",
+      "older": "A ransom was the price paid to set a slave or a prisoner free. Jesus said he came “to give His life as a ransom for many” (Mark 10:45). Peter says the price was not “silver or gold” but Christ himself, “a lamb without blemish or spot” (1 Peter 1:18-19). He paid it with his own life, freely given.",
+      "say": {
+        "older": "A ransom was the price paid to set a slave or a prisoner free. Jesus said he came “to give His life as a ransom for many”. Peter says the price was not “silver or gold” but Christ himself, “a lamb without blemish or spot”. He paid it with his own life, freely given."
+      },
+      "verse": {
+        "ref": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+      }
+    },
+    {
+      "id": "place",
+      "name": "In our place",
+      "still": "People who were bowed under heavy dark bundles stand up straight. The bundles have been carried away from them to the cross on the far hill, and they are gone.",
+      "younger": "Our sin deserved punishment, and Jesus took it in our place. The Bible says, “the punishment that brought us peace was upon Him.” Nobody forced him. The Father sent the Son because he loves us, and the Son gave himself freely.",
+      "older": "Isaiah saw a servant who suffered for others: “the punishment that brought us peace was upon Him” (Isaiah 53:5), and Peter says Jesus “bore our sins in His body on the tree” (1 Peter 2:24). This is not an angry Father against an unwilling Son. Jesus said, “I lay it down of My own accord” (John 10:18). The one who bears it is God himself in the Son.",
+      "say": {
+        "older": "Isaiah saw a servant who suffered for others: “the punishment that brought us peace was upon Him”, and Peter says Jesus “bore our sins in His body on the tree”. This is not an angry Father against an unwilling Son. Jesus said, “I lay it down of My own accord”. The one who bears it is God himself in the Son."
+      },
+      "verse": {
+        "ref": "Isaiah 53:5",
+        "text": "the punishment that brought us peace was upon Him, and by His stripes we are healed."
+      }
+    },
+    {
+      "id": "victory",
+      "name": "Victory",
+      "still": "A great dark gate has fallen flat off its hinges. Light comes through the open way, and a road runs out of it.",
+      "younger": "On the cross Jesus fought sin, death and the devil, and he won. Death is like a prison gate that has been broken down: it cannot hold God's people for ever.",
+      "older": "Many early Christian writers loved this picture. By his death Jesus broke the power of the one “who holds the power of death, that is, the devil”, and set free those “held in slavery by their fear of death” (Hebrews 2:14-15). He disarmed the powers, “triumphing over them by the cross” (Colossians 2:15).",
+      "say": {
+        "older": "Many early Christian writers loved this picture. By his death Jesus broke the power of the one “who holds the power of death, that is, the devil”, and set free those “held in slavery by their fear of death”. He disarmed the powers, “triumphing over them by the cross”."
+      },
+      "verse": {
+        "ref": "Colossians 2:15",
+        "text": "And having disarmed the powers and authorities, He made a public spectacle of them, triumphing over them by the cross."
+      }
+    },
+    {
+      "id": "love",
+      "name": "Love shown",
+      "still": "Light spreads out from a cross on a hill over the roofs of a sleeping town at night.",
+      "younger": "The cross shows what God is like. God did not wait for us to be good first. While we were still doing wrong, Jesus died for us. That is how much God loves us.",
+      "older": "Paul says the cross is where God proves his love (Romans 5:8). The Study Bible's note puts it plainly: ‘The cross does not change God's heart toward us; it shows it.’ Some Christians put this picture at the centre: the love seen at the cross changes those who see it.",
+      "say": {
+        "older": "Paul says the cross is where God proves his love. The Study Bible's note puts it plainly: ‘The cross does not change God's heart toward us; it shows it.’ Some Christians put this picture at the centre: the love seen at the cross changes those who see it."
+      },
+      "verse": {
+        "ref": "Romans 5:8",
+        "text": "But God proves His love for us in this: While we were still sinners, Christ died for us."
+      }
+    },
+    {
+      "id": "friends",
+      "name": "Enemies made friends",
+      "still": "A long table in a lit house with its door open. A wall that once stood across the room lies in pieces, and people sit together at the table.",
+      "younger": "Sin had made us God's enemies. But God did not leave it that way. Through Jesus' death he made peace with us and made us his friends again. The Bible calls this being reconciled.",
+      "older": "‘Reconciled’ was the word for making peace between people at war. Here the one who was wronged, God, makes peace and pays the cost himself. Paul says that “when we were enemies of God, we were reconciled to Him through the death of His Son” (Romans 5:10). “God was reconciling the world to Himself in Christ” (2 Corinthians 5:19).",
+      "say": {
+        "older": "‘Reconciled’ was the word for making peace between people at war. Here the one who was wronged, God, makes peace and pays the cost himself. Paul says that “when we were enemies of God, we were reconciled to Him through the death of His Son”. “God was reconciling the world to Himself in Christ”."
+      },
+      "verse": {
+        "ref": "2 Corinthians 5:19",
+        "text": "that God was reconciling the world to Himself in Christ, not counting men’s trespasses against them."
+      }
+    },
+    {
+      "id": "together",
+      "name": "Not the end of the story",
+      "still": "The cross on its hill stands in the middle, with the six small pictures round it: the lamb, the open door, the lifted load, the fallen gate, the light and the table. Beside the hill, a tomb stands open at dawn.",
+      "younger": "Christians hold all these pictures together. Each one shows something true about what Jesus did for us. And the cross is not the end of the story: on the third day, God raised Jesus from the dead.",
+      "older": "No one picture says it all. Christians hold them together, and some traditions put one at the centre. The creed does not choose a theory; it says he came ‘for us men and for our salvation’. And the cross is not the end of the story. On the third day the tomb was empty.",
+      "verse": {
+        "ref": "1 Corinthians 15:4",
+        "text": "that He was buried, that He was raised on the third day according to the Scriptures"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Which of the pictures helps you most to understand what Jesus did? Talk about it with a parent or a leader.",
+    "older": "Why might the Bible need so many pictures for one event? Which one do you find hardest, and which the most beautiful?"
+  },
+  "read": [
+    { "label": "Exodus 12", "href": "/study/bible/exodus/12" },
+    { "label": "Isaiah 53", "href": "/study/bible/isaiah/53" },
+    { "label": "Mark 10", "href": "/study/bible/mark/10" },
+    { "label": "Mark 15", "href": "/study/bible/mark/15" },
+    { "label": "Romans 3", "href": "/study/bible/romans/3" },
+    { "label": "Romans 5", "href": "/study/bible/romans/5" },
+    { "label": "Colossians 2", "href": "/study/bible/colossians/2" },
+    { "label": "Hebrews 2", "href": "/study/bible/hebrews/2" }
+  ],
+  "stops": ["cross"],
+  "cards": ["cross", "jesus"],
+  "differ": {
+    "text": "All Christians confess that Christ died for our sins and was raised, and that the cross is God's own act of love. They explain how the cross saves in more than one way: some put Christ bearing our punishment at the centre, some his victory over sin, death and the devil, some the love it shows. Isaiah's servant is read by Christians as Jesus and by many Jewish readers as the people of Israel. This moving picture does not choose between the ways of explaining the cross. They are set out in",
+    "links": [
+      { "label": "the Study Bible's note on Romans 3", "href": "/study/bible/romans/3" },
+      { "label": "its note on Isaiah 53", "href": "/study/bible/isaiah/53" }
+    ]
+  },
+  "care": "This moving picture tells of a real death, and of our sin. If it brings up fear, sadness or guilt, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Why did Jesus have to die? (the family catechism)", "href": "/family/catechism#q29" },
+    { "label": "What happened on the cross? (the family catechism)", "href": "/family/catechism#q30" },
+    { "label": "Did the resurrection actually happen? (an Honest Answer)", "href": "/answers/did-the-resurrection-actually-happen" }
+  ],
+  "end": { "label": "The cross is not the end of the story: go to the stop, The Cross and the Empty Tomb", "href": "/study/explorer/cross" },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "happened", "verse": false },
+      { "id": "lamb", "verse": false },
+      { "id": "ransom", "text": "A ransom is a price paid to set a prisoner free. Jesus said he came to give his life as a ransom for many.", "verse": false },
+      { "id": "place", "verse": false },
+      { "id": "victory", "text": "On the cross Jesus fought sin, death and the devil, and he won.", "verse": false },
+      { "id": "love", "verse": true },
+      { "id": "friends", "verse": false },
+      { "id": "together", "verse": false }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "piece": "why-didnt-the-bible-ban-slavery",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Clean. Read start to finish as the skeptic, this sounds like a pastor thinking through a hard question, with the concessions made before the answer and no slogan doing the work of an argument. Literal search: no Forbidden Language, no exclamation points, one em-dash and it is inside the ESV's Philemon 16. Five small findings, none a must: one doubled antithesis in a single paragraph, one seam left by an earlier fact-check insertion, and three word-level choices. What keeps voice below 10 is not a machine tell: nothing here could only have come from James, and only he can supply that.",
+  "findings": [
+    {
+      "quote": "This isn't a modern sensibility pressed back onto an ancient text. It's the canon interpreting itself:",
+      "tell": "\"It is not X. It is Y.\" antithesis, second in the same paragraph, ending in a colon-then-reveal",
+      "why": "The paragraph already opens on a contrast (\"Paul doesn't issue an order there, but ... he does something that reaches further\"). A second not-this-but-that four sentences later, in two matched short sentences, is the one place in the essay where the rhythm sounds generated instead of spoken. VOICE-JAMES-BELL.md puts repeated antithesis on the avoid list once its work is done.",
+      "replacement": "Nobody had to press a modern sensibility back onto the ancient text to get there, because the canon interprets itself:",
+      "severity": "should"
+    },
+    {
+      "quote": "The Fugitive Slave Act of 1850, which required Americans to help return escaped slaves, points the opposite way.",
+      "tell": "Edit seam: a sentence that lost its referent (ambiguous framing)",
+      "why": "The fact check inserted \"Many readers, slavery's American defenders among them, have read it as speaking of a slave who had fled into Israel from a foreign master\" just before this line. \"The opposite way\" now seems to answer that reading instead of Deuteronomy 23:15-16, and the reader stumbles. It reads as patched, which a careful reader hears as not one person talking.",
+      "replacement": "The Fugitive Slave Act of 1850, which required Americans to help return escaped slaves, points the opposite way from Israel's law.",
+      "severity": "should"
+    },
+    {
+      "quote": "The church had both and looked past them for a very long time.",
+      "tell": "Wording drift against a checked fact (overclaim)",
+      "why": "The ledger (change 8) replaced \"skipped\" and \"passed over\" with \"explained away\" because the defenders quoted Exodus 21:16 and answered it. \"Looked past\" brings the corrected claim back in the essay's summing-up. The essay's own phrase two paragraphs earlier, \"read around,\" says what the sources show.",
+      "replacement": "The church had both and read around them for a very long time.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Abolition had other engines.",
+      "tell": "Literary image where he would use a plain word, then extended (\"the Christian engine of abolition was real. It ran on the same texts\")",
+      "why": "An engine that \"ran on\" texts is a worked metaphor carried across three sentences in an essay that is otherwise plain. It is mild, and it is the only one, so it is his call. If he wants the plain version, change this sentence and the pair below it: \"But the Christian part in abolition was real. It drew on the same texts the slaveholders had to read around:\"",
+      "replacement": "Abolition had other causes.",
+      "severity": "consider"
+    },
+    {
+      "quote": "Some of the law meets a hard-hearted people where they are and restrains the damage they'll do",
+      "tell": "Stock church phrase (\"meets people where they are\")",
+      "why": "It is the one phrase in the piece that could run on any church's page, and it sits in the sentence carrying the essay's central theological claim. A plainer verb keeps the claim and loses the cliche.",
+      "replacement": "Some of the law takes a hard-hearted people as they are and restrains the damage they'll do",
+      "severity": "consider"
+    }
+  ],
+  "strengths": [
+    "The concession is real and comes first: \"Most of that is true, and the church doesn't help itself by pretending otherwise. The history is worse than the texts.\" A skeptic relaxes there.",
+    "He refuses his own side's stock answer in his own words (\"I have to be careful here, because this is exactly where a great deal of Christian apologetics likes to stop\") and lands it plainly: \"He has picked the verses that help him.\"",
+    "The hardness-of-heart section declines to be pleased with itself: \"a Christian who offers this answer shouldn't sound pleased with himself for having found it.\" No machine writes that sentence.",
+    "Dry, human asides: \"though he gives it about divorce\"; the Act's defenders \"spent less time on what Paul asked Philemon to do once he arrived.\"",
+    "Sources work as witnesses, not decoration: Noll carries an idea, Gregory of Nyssa a sermon, Douglass his own words. No scholar parade.",
+    "Contractions throughout, varied paragraph lengths (60 to 170 words), plain descriptive headings, real questions in pairs, and an ending that turns on \"us\" without recapping or pressing for a decision.",
+    "The one verdict line per section is earned (\"The missing sentence was never the problem.\"; \"The gospel had already erased it.\")."
+  ],
+  "for_james": [
+    "The essay has no memory of yours in it, and that is the only thing between it and a 10 for voice. You came to faith from atheism: if this was an objection you yourself raised, or one a particular person put to you, one plain sentence saying so (near \"The skeptic looks at a year like that\") would make the piece unmistakably yours. Nobody else can supply it, and nothing was invented to fill the gap.",
+    "\"I pastor a Baptist church, and Baptists don't get to tell this story from a safe distance.\" This states your denomination. The essay brief allows it and it works as self-implication, not a credential, but it sits beside the Southern Baptist Convention's 1845 founding and 1995 repentance. Keep it only if you are comfortable with readers drawing that line to your church.",
+    "\"The slaveholder I wrote about in The Monster in the Mirror kept a Bible on his desk. He was a sincere man...\" The ledger says this is the book's composite figure. In an essay where every other person is a documented one, a skeptic may take him for a historical individual. If he is a composite, consider saying so in your own words (for instance, \"the slaveholder I describe in...\"), or confirm he is a real man. It is also the essay's one mention of your own book; your call whether it belongs.",
+    "Your saved Substack profile and VOICE-JAMES-BELL.md disagree here, and the essay follows VOICE-JAMES-BELL.md, which governs: the profile asks for 1,500 to 2,500 words, paragraphs of two to four sentences, 3 to 6 Scripture references, a 'Monday morning' block of three questions and one practice, and a line built to be screenshotted; this essay runs about 3,500 words in developed paragraphs with 26 Scripture quotations, ends on two questions and no practice box, and has no slogan. I did not rewrite toward the profile. (The profile also names livewellbyjamesbell.com; the site is .co.)",
+    "Carried over from the ledger, unchanged by this read: Noll's argument is checked against reviews, not his pages, and the Wilberforce diary entry stays a paraphrase until the 1838 Life can be opened."
+  ]
+}

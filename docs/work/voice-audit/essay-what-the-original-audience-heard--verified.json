@@ -1,0 +1,47 @@
+{
+  "piece": "what-the-original-audience-heard",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read agrees with the first: clean. Literal search of the body finds no Forbidden Language word or phrase, no em-dash, no exclamation point, no connective filler, no announced-turn phrase, and no hedge (both 'in many ways' hits are Hebrews 1:1 quoted verbatim). No title, years in ministry, book count or denomination; the one first-person line stays inside the confirmed facts; right and left are criticized in adjacent paragraphs with the skipped verses quoted for each; the piece is not crisis-facing. Three of the five findings are kept, all 'should' and all one-sentence changes: the pillow-shaped one-line paragraph in the closing stack (deleted, not folded), the stock 'What would it look like' bridge, and the school-paper 'the subject of this essay'. Two 'consider' items are dropped. Nothing new was found on the second pass; every quotation, number, name and reference is untouched by the three replacements.",
+  "keep": [
+    {
+      "quote": "Most of those who received it before us heard something harder than we usually let ourselves hear.\n\nThat should make us slower readers, and humbler ones.",
+      "tell": "Aphoristic one-line paragraph that restates the section as a slogan",
+      "why": "It is the one line in the closing stack that could be embroidered. The section already said it two paragraphs up ('Mostly it means slowing down'), and the trailing 'and humbler ones' is the tidy balanced tail a generator reaches for. The lines around it (coming late, the Son at Nazareth, weeping before feasting) carry the weight, and the last paragraph supplies the humility by showing it. The first reader offered 'delete or fold'; deleting is the smaller change and leaves the two-sentence paragraph before it standing as written.",
+      "replacement": "Most of those who received it before us heard something harder than we usually let ourselves hear.",
+      "severity": "should"
+    },
+    {
+      "quote": "What would it look like to read this way? Mostly it means slowing down.",
+      "tell": "Stock self-posed question answered at once (announced turn)",
+      "why": "'What would it look like to...?' is the standard bridge into an application paragraph in sermons and in machine prose alike. His real questions in this essay belong to the reader (the farmer with an English Bible); this one belongs to nobody. The heading above it already says 'Reading With the First Hearers', so the plain statement follows without a seam.",
+      "replacement": "Reading this way mostly means slowing down.",
+      "severity": "should"
+    },
+    {
+      "quote": "That loss is the subject of this essay.",
+      "tell": "Essay voice where a person thinking should be; the prose naming itself",
+      "why": "Plain signposting is his habit, but 'the subject of this essay' is a school-paper sentence, and the final read of 2026-10-28 already removed the same self-reference once ('Nearly everything this essay has said' became 'we have seen'). This is the last one left. The replacement keeps the signpost and puts a person behind it; it adds no fact.",
+      "replacement": "That loss is what I want to look at here.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    {
+      "quote": "Hearing changes what a text is.",
+      "reason": "A 'consider' item. It is a six-word topic sentence that the paragraph then demonstrates with 1 Corinthians 3:16; a short declaration before the evidence is his register. The proposed replacement ('A letter that is heard is not the same as a letter that is read alone') adds a not-the-same antithesis and duplicates the very next sentence ('A letter read aloud to a room is heard whole')."
+    },
+    {
+      "quote": "church people reach for it too, usually against whoever is correcting them",
+      "reason": "A 'consider' item. Repeating an ordinary idiom twice in an essay is what people do; no careful reader would hear a machine in it, and 'use it' is flatter than what is there."
+    }
+  ],
+  "added": [],
+  "for_james": [
+    "The only first-person line is 'Preachers build those lists one sermon at a time, and I have built one too.' Any preacher could sign it. If you'll name the verse you know you've over-preached or the chapter you've avoided, one sentence there would make the essay yours. No editor should invent it.",
+    "The essay never draws on coming to the Bible as an adult from atheism, which is where a first reading of an unfamiliar book would naturally belong. If you have a real memory of meeting one of these verses without the church's usual hearing of it, it fits the opening section. If not, leave it out.",
+    "The sentence about preachers who defended American slavery sits abruptly between your own confession and Paul at Miletus. Not a machine tell; read it aloud and decide whether you want a connecting clause.",
+    "Your saved Substack profile disagrees with docs/VOICE-JAMES-BELL.md in several places, and this essay follows the voice standard: the profile asks for 2-4 sentence paragraphs, 1,500-2,500 words, a Greek or Hebrew word, a 'screenshot' line and a Monday-morning block of three questions and one practice; it also says no exclamation marks ever (the site allows them inside verbatim Scripture) and names the domain as .com. Nothing was rewritten toward the profile.",
+    "Still open from the fact check: Philippians 4:11's commas turn on your ESV API check."
+  ]
+}

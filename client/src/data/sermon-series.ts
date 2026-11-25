@@ -481,7 +481,7 @@ export const SERMON_SERIES: SermonSeriesData[] = [
           point1:
             "The warfare thesis debunked: the 'conflict model' (Draper 1874, White 1896) was ideological propaganda, not historical scholarship — most historians of science have abandoned it (see Numbers, Harrison, Brooke)",
           point2:
-            "The Christians who built science: Copernicus (canon lawyer), Kepler (Lutheran who described astronomy as 'thinking God's thoughts after him'), Newton (wrote more theology than physics), Faraday (elder in the Sandemanian church), Lemaitre (the priest who proposed the Big Bang)",
+            "The Christians who built science: Copernicus (canon lawyer), Kepler (a Lutheran who saw his work as studying God's creation), Newton (wrote more theology than physics), Faraday (elder in the Sandemanian church), Lemaitre (the priest who proposed the Big Bang)",
           point3:
             "How to hold science and faith together: not by making the Bible a science textbook but by recognizing that Scripture answers 'why' and science answers 'how' — different questions, not competing answers",
         },

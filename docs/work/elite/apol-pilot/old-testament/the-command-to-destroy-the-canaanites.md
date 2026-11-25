@@ -1,0 +1,75 @@
+---
+area: old-testament
+slug: the-command-to-destroy-the-canaanites
+status: live (James, 2026-11-20: "publish all of this when ready")
+question: "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?"
+ledger: docs/work/elite/apol-ledger.md, "Sixteenth run", key "af"
+---
+
+# Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?
+
+## The short answer
+
+The command is in the text, and the moral objection to it is one Scripture itself teaches a reader to feel: "Fathers shall not be put to death for their children, nor children for their fathers" (Deuteronomy 24:16, BSB). Christians who receive these books as God's word read the command in several ways. Some read its language of total destruction as the stock idiom of ancient war, which the same books qualify. Some read it as judgment on named evil after long patience. Some read it as God accommodating himself to the understanding of an ancient world, to be seen through Christ. Some ground it in God's unique right over life. Each answers the objection at a different point, and each has a cost the reader should see. Under all of them two things hold: the command was tied to one land and one moment, and it gives no one today any warrant for violence.
+
+## The objection at its strongest
+
+The command is plain. "In the cities of the nations that the LORD your God is giving you as an inheritance, you must not leave alive anything that breathes" (Deuteronomy 20:16, BSB). Joshua reports it carried out, at Jericho, Ai and Hazor and across the south, where Joshua "devoted to destruction everything that breathed, just as the LORD, the God of Israel, had commanded" (Joshua 10:40, BSB). Saul is told of the Amalekites: "Do not spare them, but put to death men and women, children and infants" (1 Samuel 15:3, BSB).
+
+The objection has two parts. The first is moral, and its most careful modern statement came in 2009 in the Christian philosophy journal *Philosophia Christi*, where the philosopher Wes Morriston pressed it in "Did God Command Genocide? A Challenge to the Biblical Inerrantist." In the site's own words rather than his, it runs like this. A perfectly good God would not command the killing of children unless he had a reason that justified it. It is very hard to believe that any such reason existed. So either God is not perfectly good, or the texts are mistaken in saying he commanded it.
+
+The second part is about knowledge, and it is older. Immanuel Kant, in *The Conflict of the Faculties* (1798), wrote of Abraham's call to sacrifice Isaac that Abraham should have answered the voice that he was quite certain he ought not to kill his good son, but not certain, and could never become certain, that the voice was God's. The point reaches beyond Abraham. We are more sure that killing a child for what its parents did is wrong than we can ever be that an ancient text, or a voice, speaks for God. When the two collide, the reasonable course is to doubt the text. And a Christian who grants that God once commanded such a thing has a harder time explaining why anyone who hears such a command today is mad rather than obedient.
+
+## What is true in it
+
+The moral premise is true, and Scripture teaches it. Ezekiel says, "A son will not bear the iniquity of his father" (Ezekiel 18:20, BSB), and Abraham asked God over Sodom, "Will not the Judge of all the earth do what is right?" (Genesis 18:25, BSB). A reader who is troubled by "children and infants" is reading with a conscience the Bible formed. The epistemic point is also real. People have killed while claiming God's command, and some have done it with Scripture open: in 1637, after the burning of the Pequot village near the Mystic River, the English captain John Underhill wrote that "sometimes the Scripture declareth women and children must perish with their parents" (*Newes from America*, 1638), as the Honest Answer on this question records. And Christians have sometimes answered the objection too quickly, as if "they deserved it" or "God can do what he likes" ended the matter. Neither does.
+
+## The evidence
+
+Begin with what the command is in its own setting. The word behind "devote to destruction" is *herem*, the ban: a city and its people given over wholly to a god, with no plunder for the victors. Israel did not invent it. The Moabite king Mesha, around 840 BC, boasted on his monument that he devoted the Israelite town of Nebo to his god, using the same term, as the Study Bible's note on Joshua 6 records. In Israel the ban came with stated reasons, and they are not ethnic. Deuteronomy gives the purpose "so that they cannot teach you to do all the detestable things they do for their gods" (Deuteronomy 20:18, BSB), and it denies that Israel was chosen for its goodness: "It is not because of your righteousness or uprightness of heart that you are going in to possess their land, but it is because of their wickedness" (Deuteronomy 9:5, BSB). The judgment is described as late. Abraham is told his descendants must wait, "for the iniquity of the Amorites is not yet complete" (Genesis 15:16, BSB). And the same standard falls on Israel. Leviticus warns, "if you defile the land, it will vomit you out as it spewed out the nations before you" (Leviticus 18:28, BSB), and Deuteronomy 13 commands the same ban against an Israelite town that turns to other gods.
+
+Then the limits the books themselves set. The command applies to "the cities of the nations that the LORD your God is giving you"; for "the cities that are far away from you," Israel is to "make an offer of peace" first (Deuteronomy 20:10, 15, BSB). Rahab of Jericho and her household are spared, "So she has lived among the Israelites to this day" (Joshua 6:25, BSB), and the Gibeonites make a treaty and live (Joshua 9:15). The same chapter that commands destruction forbids intermarriage, "Do not intermarry with them" (Deuteronomy 7:3, BSB), which assumes they will still be there. Exodus speaks not of slaughter but of displacement over time: "Little by little I will drive them out ahead of you" (Exodus 23:30, BSB). Joshua's own summaries of total conquest sit beside its admissions that "very much of the land remains to be possessed" (Joshua 13:1, BSB), as this area's page on Jericho and the conquest sets out, and the archaeology of Canaan does not show the wholesale destruction of its cities.
+
+## The argument, laid out
+
+This is an argument about what the objection establishes and what it doesn't. It doesn't choose among the Christian readings; it asks what each must carry.
+
+1. The moral premise of the objection is true and biblical: it is wrong to kill children for what their parents did, and a God who commanded it without a justifying reason would not be good.
+2. The texts limit the command to particular peoples in one land at one moment, give reasons of judgment and of protecting Israel from its neighbors' worship, apply the same judgment to Israel, record survivors and a long displacement, and are never renewed in the New Testament.
+3. The main Christian readings each answer the objection at a different point: the war-idiom reading questions what the command required, the accommodation reading questions what the texts show of God, and the judgment and life-giver readings deny that no justifying reason could exist.
+
+So: the objection shows that these chapters can't be read as a template or explained away, and that every Christian reading of them carries a real cost; it doesn't show that confessing the God of Israel as good is incoherent, since each reading meets it at a different premise, and none of them licenses any human command to kill.
+
+The weight sits on the third step. If none of the readings can be held without giving up something Christians must keep, the objection stands at full strength, and that is where a reader should test it.
+
+## The strongest reply, and an answer
+
+The strongest reply presses each reading at its weak point, and then presses Kant. The war-idiom reading eases the scale but not the substance: an exaggerated report of a massacre is still a report of a massacre, and First Samuel 15:3 still says infants. The judgment reading has no answer for the child, who had sacrificed to no god. The accommodation reading, which Eric Seibert and Greg Boyd have set out in different forms, has to decide which portraits of God are to be trusted, and its critics say it moves toward Marcion, who rejected the Old Testament's God. The life-giver reading, which Augustine and Aquinas held and William Lane Craig defends, may show that God may take a life; it doesn't show that he may order men to take it, and it leaves Kant's question untouched: how would anyone know such a command had come from God?
+
+That is a fair statement of the costs, and the Honest Answer on this question names them in the same way. But the reply asks something no reading claims. None says these chapters are easy, and the readings are not alternatives a Christian chooses to avoid the difficulty; they are the church's long attempts to hold together three things it can't give up, that God is good, that he spoke in Israel's history, and that these texts are part of Scripture. Kant's question also has a Christian answer, though not one that dissolves it. The church does not hold that God's command can come to anyone by private voice today. It holds that the revelation of God's will has its center and its measure in Christ, who told his disciples to "love your enemies and pray for those who persecute you" (Matthew 5:44, BSB), who rebuked the disciples who wanted fire on a Samaritan village (Luke 9:55), and who said, "all who draw the sword will die by the sword" (Matthew 26:52, BSB). The killing at Mystic was not obedience to Scripture. It was a misreading the church has to name as its own sin.
+
+## What remains unresolved
+
+Which reading, or which combination, best fits the texts is unresolved, and Christians who share the same confession hold different ones. How the command relates to what happened in history is argued, since the archaeology of the period is itself disputed. What the books' writers understood the ban to require is debated among scholars of the ancient Near East. And the hardest question, what could justify the death of a child, is one no reading answers in a way that makes the grief go away. Abraham's question is still asked, and the Bible does not rebuke him for asking it.
+
+## Where Christians differ
+
+Christians differ on how these commands are to be read, and the site takes no side among them. Some hold the traditional reading, that God commanded what the text says as just judgment and that he alone has the right over life. Some read the language of total destruction as the idiom of ancient war, describing the end of Canaan's religious order and the removal of its peoples. Some read the portraits as God accommodating himself to his people's understanding, to be read in the light of Christ. Many hold more than one of these together. What all confess, with the church that rejected Marcion in the second century, is that the God of Joshua is the Father of Jesus Christ; that "the Judge of all the earth" does what is right; that he takes no pleasure in the death of the wicked (Ezekiel 18:23); and that no one may take up these chapters as a warrant for violence against anyone.
+
+## Read the other side
+
+- Wes Morriston, "Did God Command Genocide? A Challenge to the Biblical Inerrantist," *Philosophia Christi* (2009).
+- Immanuel Kant, *The Conflict of the Faculties* (1798).
+- Eric A. Seibert, *Disturbing Divine Behavior* (2009), a Christian reading against the traditional view.
+
+## Read further
+
+- Paul Copan and Matthew Flannagan, *Did God Really Command Genocide?* (2014).
+- Gregory A. Boyd, *The Crucifixion of the Warrior God* (2017).
+- Michael Bergmann, Michael J. Murray and Michael C. Rea, eds., *Divine Evil? The Moral Character of the God of Abraham* (2011), essays by critics and defenders with replies.
+
+## On the site
+
+- The argued answer "Did God command genocide in the Old Testament?" (/answers/did-god-command-genocide), which sets out the four readings with the strength and the hard question of each.
+- The Study Bible's notes on Joshua 6 (/study/bible/joshua/6) and Deuteronomy 20 (/study/bible/deuteronomy/20).
+- "Archaeologists found no walled city at Jericho when Joshua would have come, and Ai was already a ruin. Wasn't the conquest of Canaan a legend?" (/questions/old-testament/jericho-and-the-conquest), on what archaeology shows of the conquest.

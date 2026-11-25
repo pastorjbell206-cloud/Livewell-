@@ -7,19 +7,23 @@
     "shame-and-the-hiding-self", "infertility-and-childlessness", "the-wayward-child",
     "anger-and-the-hot-heart", "health-illness-and-pain", "unemployment-and-the-lost-job",
     "friendship-against-isolation", "waiting-and-unanswered-prayer", "marriage-the-long-covenant",
-    "identity-and-worth"
+    "identity-and-worth", "sex-and-the-body"
   ],
   "lifeTopics": {
     "anger-and-the-hot-heart": ["abuse"],
     "divorce-and-its-aftermath": ["abuse"],
     "marriage-the-long-covenant": ["abuse"],
-    "addiction-and-the-long-road-back": ["substance"]
+    "addiction-and-the-long-road-back": ["substance"],
+    "sex-and-the-body": ["abuse", "sexual-assault"]
   },
   "studyguides": [
     "grief", "lament", "anxiety", "mental-health", "suffering", "doubt", "deconstruction",
     "marriage", "anger", "forgiveness", "alone-in-a-crowded-church", "pastoral-health",
     "youth-who-am-i", "addiction-and-recovery", "divorce-and-blended-families", "when-our-parents-grow-old",
-    "forty-days", "waiting-for-the-light"
+    "forty-days", "waiting-for-the-light",
+    "aging-and-legacy", "the-church", "heaven-and-hell", "identity", "the-image-of-god",
+    "sermon-on-the-mount", "prayer", "the-lords-prayer", "the-psalms", "fatherhood",
+    "gratitude", "fruit-of-the-spirit"
   ],
   "studyguideTopics": {
     "addiction-and-recovery": ["substance", "abuse"],
@@ -29,7 +33,41 @@
     "forgiveness": ["abuse"],
     "youth-who-am-i": ["abuse"],
     "forty-days": ["substance"],
-    "waiting-for-the-light": ["abuse"]
+    "waiting-for-the-light": ["abuse"],
+    "deconstruction": ["abuse", "sexual-assault"],
+    "doubt": ["abuse", "sexual-assault"],
+    "the-church": ["abuse", "sexual-assault"],
+    "identity": ["abuse"],
+    "the-image-of-god": ["abuse"],
+    "sermon-on-the-mount": ["abuse"],
+    "prayer": ["abuse"],
+    "the-lords-prayer": ["abuse"],
+    "the-psalms": ["abuse", "sexual-assault"],
+    "fatherhood": ["abuse"]
+  },
+  "howtos": {
+    "ss-how-to-grieve-well": [],
+    "ss-how-to-hold-onto-faith-in-the-dark": [],
+    "ss-how-to-keep-going-through-depression": [],
+    "ss-how-to-find-hope-when-nothing-changes": [],
+    "ss-how-to-pray-when-falling-apart": [],
+    "ss-how-to-practice-lament": [],
+    "ss-how-to-face-a-hard-diagnosis": [],
+    "ss-how-to-care-for-a-dying-loved-one": [],
+    "ss-how-to-help-a-friend-through-loss": [],
+    "ss-how-to-sit-with-someone-suffering": [],
+    "rel-how-to-handle-loneliness": [],
+    "rel-how-to-handle-a-breakup": [],
+    "sf-how-to-fight-anxiety-with-scripture": [],
+    "parenting-how-to-help-an-anxious-child": [],
+    "body-how-to-live-with-chronic-pain": [],
+    "marriage-how-to-actually-forgive": ["abuse"],
+    "marriage-how-to-know-when-to-get-help": ["abuse"],
+    "marriage-how-to-love-a-cold-spouse": ["abuse"],
+    "marriage-how-to-money-conversation": ["abuse"],
+    "sf-how-to-deal-with-anger": ["abuse"],
+    "rel-how-to-love-a-difficult-family-member": ["abuse"],
+    "rel-how-to-forgive-someone-who-has-not-apologized": ["abuse"]
   },
   "wisdom": {
     "lead": {
@@ -57,7 +95,10 @@
       "wayward-child": ["suicide"],
       "terminal-diagnosis": ["suicide"],
       "facing-death": ["suicide"],
-      "serious-illness": ["suicide"]
+      "serious-illness": ["suicide"],
+      "self-pity": ["suicide"],
+      "difficult-family": ["abuse"],
+      "submitting-to-leaders": ["abuse", "sexual-assault"]
     }
   }
 }

@@ -1,0 +1,84 @@
+---
+area: old-testament
+slug: the-god-of-the-old-testament
+status: live (James, 2026-11-20: "publish all of this when ready")
+question: "The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?"
+ledger: docs/work/elite/apol-ledger.md, "Twenty-third run", key "bn"
+---
+
+# The God of the Old Testament sends floods and plagues and commands wars, and the God Jesus called Father is love. Isn't the God of the Old Testament angry and the God of the New loving, and aren't they really two different gods?
+
+## The short answer
+
+The contrast is old, popular and false. It was taught in the second century by Marcion, who, as Irenaeus records, developed the teaching of an earlier man named Cerdo and set the God of the Jews against the Father of Jesus, and the church rejected it. The Old Testament's most repeated description of God begins with mercy: "compassionate and gracious, slow to anger, abounding in loving devotion" (Exodus 34:6, BSB). The commandments Jesus called greatest are quotations from the Torah. And judgment is not missing from the New Testament: some of its sharpest words about hell are Jesus' own. The hard passages are real, in both Testaments, and they deserve honest answers. But they are hard questions about one God, not evidence of two. The contrast has also fed contempt for Jews and their Scriptures, and that should be said plainly and refused.
+
+## The objection at its strongest
+
+The objection has an ancient form and a modern one. The ancient form belongs to Marcion of Pontus, who taught in Rome in the middle of the second century and, Irenaeus says, succeeded an earlier teacher, Cerdo, and developed his doctrine. His book setting the two Testaments against each other, the *Antithesis*, is lost, but his opponents describe his teaching. Irenaeus says that Marcion declared the God "proclaimed as God by the law and the prophets" to be "the author of evils, to take delight in war, to be infirm of purpose, and even to be contrary to Himself," while Jesus came from a higher Father, "abolishing the prophets and the law" (*Against Heresies* 1.27.2, in the *Ante-Nicene Fathers* translation). Tertullian sums up Marcion's two gods: "one judicial, harsh, mighty in war; the other mild, placid, and simply good and excellent" (*Against Marcion* 1.6, same series). Marcion cut his Bible to match, keeping, in the *Catholic Encyclopedia*'s summary, parts of Luke and of Paul's letters, "edited so as to disparage the Old Testament."
+
+The modern form needs no second god. Richard Dawkins, in the second chapter of *The God Delusion* (2006), judges the God of the Old Testament to be perhaps the most unpleasant character in all of fiction, and he lists the charges: that this God is jealous and proud of it, petty, unjust, unforgiving and controlling, vindictive, bloodthirsty, and a cleanser of peoples. And a great scholar of the early church took Marcion's side on the Bible itself. Adolf von Harnack, in *Marcion* (1921), wrote, as the *Orthodox Encyclopedia*'s article on Harnack reports him, that rejecting the Old Testament in the second century would have been a mistake the great church rightly rejected, that keeping it in the sixteenth century was a fate the Reformation could not escape, but that keeping it as canonical in nineteenth-century Protestantism was the result of religious and churchly inertia. At full strength the objection says that the God of the flood, the plagues and the conquest cannot be the God of the Sermon on the Mount, and that Christians who keep both are holding two pictures that don't fit.
+
+## What is true in it
+
+The Old Testament does speak often of God's anger, and it tells of judgments that trouble every serious reader: the flood, the death of Egypt's firstborn, the commands to destroy the Canaanites, which this library's page on that command treats at length. The same verse that proclaims God's mercy goes on, "Yet He will by no means leave the guilty unpunished; He will visit the iniquity of the fathers on their children and grandchildren to the third and fourth generations" (Exodus 34:7, BSB). A reader who stops there has not misread the words.
+
+And Christians have sometimes told the story Marcion's way without his name, as if the Old Testament were a book of wrath, its Torah a burden, and the New a book of grace. Solomon Schechter answered the scholars of his own day who called the Law "a most terrible burden" with "the testimony of a literature extending over about twenty-five centuries" to "the bliss and happiness of living and dying under it" (*Studies in Judaism*, 1896). The Study Bible's note on Exodus 34 warns against the error that "quotes only verse 6 and stops, as if the God of Exodus were only kind," and against its opposite. The contrast between an angry God of the Jews and a loving God of the Christians has also fed contempt for Jews. In Marcion it was already a way of separating Christ from "the God of the Jews," in the *Catholic Encyclopedia*'s phrase for his teaching, and of keeping Christianity "untrammeled and undefiled by association with Judaism." Whenever Christians have described Judaism as the religion of a harsh God and themselves as the people of a kind one, they have repeated his error and slandered their neighbors. That contrast is false, and this site rejects it.
+
+## The evidence
+
+Start with the Old Testament's own creed about God. When the LORD passes before Moses after the golden calf, he proclaims his name: "The LORD, the LORD God, is compassionate and gracious, slow to anger, abounding in loving devotion and faithfulness, maintaining loving devotion to a thousand generations, forgiving iniquity, transgression, and sin" (Exodus 34:6-7, BSB). The proportion is the point: love to a thousand generations, judgment to the third and fourth. The Study Bible's note on the chapter records that these phrases "reappear more than any other description of God in the Old Testament," in Numbers 14:18, Nehemiah 9:17, Psalms 86:15, 103:8 and 145:8, Joel 2:13, Jonah 4:2 and Nahum 1:3. Jonah even complains about it: "I knew that You are a gracious and compassionate God, slow to anger, abounding in loving devotion" (Jonah 4:2, BSB), because it meant God would spare his enemies in Nineveh.
+
+The prophets who speak most of God's anger speak most of his grief. "How could I give you up, O Ephraim? How could I surrender you, O Israel?" (Hosea 11:8, BSB). "Do I take any pleasure in the death of the wicked? declares the Lord GOD. Wouldn't I prefer that he turn from his ways and live?" (Ezekiel 18:23, BSB). And the anger the law describes is often anger on behalf of the weak: "You must not mistreat any widow or orphan. If you do mistreat them, and they cry out to Me in distress, I will surely hear their cry. My anger will be kindled" (Exodus 22:22-24, BSB). Jewish tradition has read the same God the same way. Solomon Schechter, gathering the rabbis' teaching in his *Studies in Judaism* (1896), wrote of God that "even in the time of His anger He remembers His graciousness, and often suppresses His attribute of judgment before His attribute of mercy."
+
+Now the New Testament. When Jesus is asked for the greatest commandment, he answers with the Torah: "Hear O Israel, the Lord our God, the Lord is One. Love the Lord your God with all your heart" (Mark 12:29-30, BSB), from Deuteronomy 6, and "Love your neighbor as yourself" (Mark 12:31, BSB), from Leviticus 19:18. The same chapter of Leviticus commands Israel to "love him as yourself" of the foreigner living among them (Leviticus 19:34, BSB). The God Jesus called Father is the God of the Shema.
+
+And judgment doesn't disappear. Jesus tells his disciples, "fear the One who can destroy both soul and body in hell" (Matthew 10:28, BSB); he says to those who told him of Galileans whom Pilate had killed, "unless you repent, you too will all perish" (Luke 13:3, BSB); his parable of the nations ends, "they will go away into eternal punishment, but the righteous into eternal life" (Matthew 25:46, BSB). Paul writes that "The wrath of God is being revealed from heaven against all the godlessness and wickedness of men" (Romans 1:18, BSB) and tells his readers, "Take notice, therefore, of the kindness and severity of God" (Romans 11:22, BSB). Revelation speaks of "the wrath of the Lamb" (Revelation 6:16, BSB). Some of the New Testament's sharpest words of judgment are Jesus' own.
+
+Finally, the church's answer to Marcion. Irenaeus argued that "there is one and the same God the Father, who was declared by the prophets, but made manifest by Christ" (*Against Heresies* 5.25.5, in the *Ante-Nicene Fathers* translation), and the Study Bible's guide to reading the law records that against Marcion writers such as Irenaeus "insisted that one God gave both covenants." The creeds begin with the same confession: one God, "Maker of heaven and earth," the Father of Jesus Christ.
+
+## The argument, laid out
+
+This is an argument from the texts: what each Testament says about God's mercy and judgment.
+
+1. The Old Testament's most repeated description of God puts mercy first and gives it the greater reach, and its prophets speak of God's anger as the anger of a grieved and faithful love, often roused on behalf of the oppressed.
+2. The New Testament identifies the Father of Jesus with the God of Israel, takes its two greatest commandments from the Torah, and keeps judgment and wrath, most sharply in Jesus' own teaching.
+3. A contrast that finds only wrath in the one Testament and only love in the other has to leave out large parts of both.
+
+So: the claim that the Old Testament's God is angry and the New Testament's God is loving doesn't describe the texts; both describe God as merciful and just, the New names the Father of Jesus as the God of Israel, and the hard passages, which remain, are questions about that one God, not evidence of two.
+
+The weight sits on the first step. If the Old Testament's descriptions of mercy were rare exceptions in a book dominated by a God of wrath, the contrast would be a fair summary even if not a complete one, and the argument would show less than it claims.
+
+## The strongest reply, and an answer
+
+The strongest reply grants the verses and presses the proportions and the deeds. Exodus 34 is a creed, the critic says, but the stories are what God does: he floods the earth, kills the firstborn, and commands Israel to leave nothing alive in the cities of Canaan. Nothing in the New Testament commands God's people to make war. Even Christians speak of "progressive revelation." So whatever the Old Testament says about God's mercy, its picture of him changes, and Dawkins's indictment is aimed at what the stories show.
+
+Part of that should be granted. The New Testament gives no command to fight for God, and Christians do read the Old in the light of the New: "On many past occasions and in many different ways, God spoke to our fathers through the prophets. But in these last days He has spoken to us by His Son" (Hebrews 1:1-2, BSB). Christians who share the church's confession read the commands of war in more than one way, as this library's page on the conquest sets out, and none of those readings is easy.
+
+But the reply has to carry two burdens it usually drops. The first is that the New Testament's judgment is not milder but more final. The flood ends with a promise and a rainbow; Jesus speaks of "eternal punishment." If the God of the flood is too severe to be the Father of Jesus, the Father of Jesus is too severe as well. The second is that the New Testament's answer to wrath is not to deny it but to bear it. Paul says God presented Christ "as the atoning sacrifice" in order "to be just and to justify the one who has faith in Jesus" (Romans 3:25-26, BSB), and John writes that "love consists in this: not that we loved God, but that He loved us and sent His Son as the atoning sacrifice for our sins" (1 John 4:10, BSB). Jewish tradition, as Schechter's words above show, has held God's mercy and his judgment together in its own way. Christians confess that at the cross the mercy of Exodus 34:6 and the justice of 34:7 meet in one act, and there Christian faith sees most clearly that the God of both Testaments is one: the same God who will not clear the guilty carries their guilt himself.
+
+Dawkins's list fails in its own terms at one point that matters. "Unforgiving" is the one word the Old Testament's creed contradicts most directly: "forgiving iniquity, transgression, and sin."
+
+## What remains unresolved
+
+How to read the Old Testament's narratives of judgment and its commands of war is unresolved, and the readings differ in what they make of the texts' history and their language. How to speak of anger in God, whom many of the church's teachers have confessed is not moved as creatures are, is argued among theologians. And how far revelation unfolds over time without contradicting itself is a question the church has answered in more than one way.
+
+## Where Christians differ
+
+Christians differ on how to read the conquest commands and the other judgment narratives, on how literally to take the language of divine anger and regret, and on how to describe the movement from the Old Testament to the New, as fulfillment, as progressive revelation, or in other terms. This page takes no side among them. What the church confesses together, against Marcion then and now, is that there is one God, the Father Almighty, Maker of heaven and earth, who spoke by the prophets and has spoken by his Son, and that the Scriptures of Israel are Christian Scripture.
+
+## Read the other side
+
+- Richard Dawkins, *The God Delusion* (2006), chapter 2.
+- Adolf von Harnack, *Marcion: Das Evangelium vom fremden Gott* (1921), a sympathetic study of Marcion, as the *Orthodox Encyclopedia*'s article on Harnack describes it.
+
+## Read further
+
+- Irenaeus, *Against Heresies*, in the *Ante-Nicene Fathers*, vol. 1 (1885), book 1, chapter 27, and book 5.
+- Solomon Schechter, *Studies in Judaism* (1896), for the rabbis' teaching on God's mercy and judgment.
+
+## On the site
+
+- The Study Bible's notes on Exodus 34 (/study/bible/exodus/34), Hosea 11 (/study/bible/hosea/11) and Mark 12 (/study/bible/mark/12), and its guide to reading the law (/study/bible/guides/reading-law).
+- The argued answer "Did God command genocide in the Old Testament?" (/answers/did-god-command-genocide).
+- "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan. How can a good God command that, and how can anyone know he did?" (/questions/old-testament/the-command-to-destroy-the-canaanites).
+- The other questions in this area (/questions/old-testament).

@@ -86,15 +86,18 @@ describe("/family", () => {
     expect(within(card).getByText(`${tonight.passage} · About ten minutes`)).toBeInTheDocument();
     expect(within(card).getByText(`Week ${weekOfYear("2026-11-03")} of the year`, { exact: false })).toBeInTheDocument();
     expect(within(card).getByText(`Last time: ${row("identity").title}, Friday`, { exact: false })).toBeInTheDocument();
-    expect(within(card).getByRole("link", { name: "Start" })).toHaveAttribute("href", "/family/devotions/goodness?mode=table");
+    expect(within(card).getByRole("link", { name: "Start tonight's devotion" })).toHaveAttribute("href", "/family/devotions/goodness?mode=table");
     expect(within(card).getByRole("link", { name: "Read it first" })).toHaveAttribute("href", "/family/devotions/goodness");
 
-    const q = INDEX.catechism[catechismWeekIndex(when, INDEX.catechism.length)];
-    expect(screen.getByText(`The catechism · Question ${q.number}`)).toBeInTheDocument();
-    expect(screen.getByText(q.question)).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /Thanksgiving week\s*November 20 to 26/ })).toHaveAttribute("href", "/family/devotions?tab=thanksgiving");
+    // A family starts the catechism at question 1, not at the calendar's question (audit 2026-11, F4).
+    const q = INDEX.catechism[0];
+    expect(catechismWeekIndex(when, INDEX.catechism.length)).not.toBe(0);
+    // The week at a glance: the family's question, and the season's sets.
+    const week = screen.getByRole("list", { name: "This week" });
+    expect(within(week).getByRole("link", { name: new RegExp(`Your question 1\\s*${q.question.replace(/[?]/g, "\\?")}`) })).toHaveAttribute("href", "/family/catechism");
+    expect(within(week).getByRole("link", { name: /Thanksgiving week\s*November 20 to 26/ })).toHaveAttribute("href", "/family/devotions?tab=thanksgiving");
 
-    expect(screen.getByRole("heading", { level: 1, name: "Disciple your whole family, in one place." })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "Faith at the family table" })).toBeInTheDocument();
     expect(requests.some((u) => u.includes("posts.listPublished"))).toBe(false);
     expect(requests.some((u) => u.includes("/family-devotions"))).toBe(false); // the card reads the index alone
   });
@@ -103,12 +106,23 @@ describe("/family", () => {
     at(new Date(2026, 11, 6, 18)); // Sunday, December 6, 2026: Advent, day 6
     serveFamily();
     renderAt("/family");
-    const start = await screen.findByRole("link", { name: "Start" });
+    const start = await screen.findByRole("link", { name: "Start tonight's devotion" });
     expect(start).toHaveAttribute("href", "/family/devotions/advent-6?mode=table");
     fireEvent.click(start);
     expect(await screen.findByRole("heading", { level: 2, name: "Read" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { level: 1, name: row("advent-6").title })).toBeInTheDocument();
     expect(screen.getByText("1 of 5")).toBeInTheDocument(); // Read, Talk, Ask, Remember, Pray
+  });
+
+  it("offers Bible Explorer's films straight from the rooms, not only its map", async () => {
+    // The walk of 2026-11-23, finding 21: the films sat six phone screens down the map's page.
+    at(new Date(2026, 10, 3, 19));
+    serveFamily();
+    renderAt("/family");
+    const rooms = await screen.findByRole("region", { name: "Everything for the table." });
+    expect(within(rooms).getByRole("link", { name: "Bible Explorer" })).toHaveAttribute("href", "/study/explorer");
+    expect(within(rooms).getByRole("link", { name: "Watch and learn" })).toHaveAttribute("href", "/study/explorer#watch");
+    expect(rooms).toHaveTextContent("Watch and learn, its short films to watch together.");
   });
 
   it("says so when the index does not arrive, and loads on a retry", async () => {
@@ -180,7 +194,7 @@ describe("/family/devotions/:id", () => {
     renderAt("/family/devotions/identity");
     expect(await screen.findByRole("heading", { level: 1, name: row("identity").title })).toBeInTheDocument();
     for (const t of ["Read", "Talk", "Ask", "Do", "Remember", "Pray"]) expect(screen.getByRole("heading", { level: 2, name: t })).toBeInTheDocument();
-    expect(screen.getByText("1 of 72 · Weekly devotions")).toBeInTheDocument();
+    expect(screen.getByText("1 of 72 · Foundations")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Start at the table" })).toHaveAttribute("href", "/family/devotions/identity?mode=table");
     expect(screen.getByRole("button", { name: "Print" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: `Next: ${INDEX.devotions[1].title}` })).toHaveAttribute("href", `/family/devotions/${INDEX.devotions[1].id}`);
@@ -205,13 +219,17 @@ describe("/family/devotions/:id", () => {
     scrollTo.mockRestore();
   });
 
-  it("gives a day of a daily set its own page, named as the paraphrase it is", async () => {
+  it("gives a day of a daily set its own page, with the Bible text named and the retelling marked as one", async () => {
     at(new Date(2026, 10, 3, 19));
     serveFamily();
     renderAt("/family/devotions/advent-6");
     expect(await screen.findByRole("heading", { level: 1, name: row("advent-6").title })).toBeInTheDocument();
     expect(screen.getByText("Day 6 of 25 · Advent")).toBeInTheDocument();
-    expect(screen.getByText(/The wording here is a paraphrase/)).toBeInTheDocument();
+    // The passage is the Berean Standard Bible from the site's own Bible data (audit 2026-11, F5).
+    expect(screen.getByText(/^For unto us a child is born, unto us a son is given/)).toBeInTheDocument();
+    expect(screen.getByText(/Scripture quoted from the Berean Standard Bible/)).toBeInTheDocument();
+    expect(screen.queryByText(/The wording here is a paraphrase/)).toBeNull();
+    expect(screen.getByText("In other words (a retelling, not a quotation)")).toBeInTheDocument();
     expect(screen.queryByRole("heading", { level: 2, name: "Do" })).toBeNull();
     expect(screen.getByRole("link", { name: `Next: ${row("advent-7").title}` })).toBeInTheDocument();
   });

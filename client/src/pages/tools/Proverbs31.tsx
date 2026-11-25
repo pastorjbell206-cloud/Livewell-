@@ -7,6 +7,7 @@
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { useState } from "react";
 import { Link } from "wouter";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -68,32 +69,22 @@ export default function Proverbs31() {
   return (
     <Layout>
       <SEOMeta
-        title="Proverbs in 31 Days — A Chapter a Day for the Wise Life"
+        title="Proverbs in 31 Days: A Chapter a Day"
         description="A chapter of Proverbs a day, matched to the date. A theme, a verse worth knowing, and a reflection that runs the chapter into a real decision."
         url="https://www.livewellbyjamesbell.co/tools/proverbs-31"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ color: "var(--mustard)", marginBottom: "16px" }}>A tool · Integrated Life</div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(30px, 5vw, 50px)", fontWeight: 400, lineHeight: 1.06, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "16ch" }}>
-            Proverbs in 31 days
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.75, color: "rgba(245,240,230,0.82)", maxWidth: "62ch" }}>
-            Proverbs has thirty-one chapters and most months have thirty-one days, which makes it simple to read one a day, matched to the date. Do not study it. Live in it, and let one line follow you into the day's decisions.
-          </p>
-          <RemindMe
-            title="Proverbs in 31 days"
-            details="Today's chapter of Proverbs, matched to the date, with one line to carry into the day."
-            href="/tools/proverbs-31"
-            freq="DAILY"
-            count={31}
-            schedule="every day for thirty-one days"
-            defaultTime="morning"
-            onDark
-          />
-        </div>
-      </section>
+      <InnerHead path="/tools/proverbs-31" title="Proverbs in 31 days" line="Proverbs has thirty-one chapters and most months have thirty-one days, which makes it simple to read one a day, matched to the date. Do not study it. Live in it, and let one line follow you into the day's decisions." plate="sundial">
+        <RemindMe
+          title="Proverbs in 31 days"
+          details="Today's chapter of Proverbs, matched to the date, with one line to carry into the day."
+          href="/tools/proverbs-31"
+          freq="DAILY"
+          count={31}
+          schedule="every day for thirty-one days"
+          defaultTime="morning"
+        />
+      </InnerHead>
 
       <section style={{ background: "var(--bone)", padding: "var(--s-5) var(--s-4) var(--s-6)" }}>
         <div style={{ ...wrap, maxWidth: "720px" }}>
@@ -102,7 +93,7 @@ export default function Proverbs31() {
             <button
               onClick={() => setDay((d) => (d > 1 ? d - 1 : 31))}
               aria-label="Previous day"
-              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
+              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
             >
               <ChevronLeft size={16} /> Prev
             </button>
@@ -113,7 +104,7 @@ export default function Proverbs31() {
             <button
               onClick={() => setDay((d) => (d < 31 ? d + 1 : 1))}
               aria-label="Next day"
-              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
+              style={{ cursor: "pointer", display: "inline-flex", alignItems: "center", gap: "6px", minHeight: "44px", padding: "10px 14px", background: "var(--card)", border: "1px solid rgba(20,17,12,0.12)", fontFamily: "var(--U)", fontWeight: 600, fontSize: "14px", color: "var(--ink)" }}
             >
               Next <ChevronRight size={16} />
             </button>

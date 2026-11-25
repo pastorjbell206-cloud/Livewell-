@@ -2,23 +2,62 @@
 /**
  * build-wisdom-index.mjs
  *
- * Merges client/public/wisdom/topics/*.json (each an array of wisdom topics)
- * into client/public/wisdom/topics.json, the dataset the Wisdom Finder tool
- * (/tools/wisdom-finder) loads. Run after adding or editing any topic file:
+ * Builds the wisdom library (the Wisdom Finder at /tools/wisdom-finder and the
+ * topic pages at /wisdom/:id) from its sources:
  *
- *   node scripts/build-wisdom-index.mjs
+ *   client/public/wisdom/topics/*.json   the 208 topics (arrays), as before
+ *   client/public/wisdom/deep/<id>.json  a topic written to the full standard:
+ *                                        its passages read in context, the
+ *                                        "often misread" layer, the whole
+ *                                        Bible's wisdom, where Christians
+ *                                        differ, a question to sit with, a
+ *                                        prayer from a psalm, where to go next
+ *   client/public/wisdom/matching.json   the finder's hand-written matching
+ *                                        data and the areas of life
  *
- * Topic shape (per object):
- *   { id, label, keywords[], framing, cultural, historical, application,
- *     verses: [{ ref, text }] }
+ * and writes:
+ *
+ *   client/public/wisdom/topics.json     every topic in the old shape (the
+ *                                        search index, the passage index, the
+ *                                        sitemap, the prerender and /wisdom
+ *                                        read it); a deep topic's verses are
+ *                                        its passages
+ *   client/public/wisdom/finder.json     what the finder needs to match and
+ *                                        list (no verse text), with term
+ *                                        weights for the topics written in
+ *                                        full; fetched only by the finder
+ *   client/public/wisdom/entry/<id>.json one file per topic page: everything
+ *                                        the page shows, Scripture filled in
+ *                                        from the Berean Standard Bible
+ *
+ * Scripture in a deep file is a reference only; its words come from
+ * client/public/bible/ch/ (scripts/lib/bsb.mjs), never typed by hand.
+ *
+ *   node scripts/build-wisdom-index.mjs           write
+ *   node scripts/build-wisdom-index.mjs --check   fail if any output is stale (CI)
+ *
+ * Topic shape (topics/*.json): { id, label, keywords[], framing, cultural,
+ * historical, application, verses: [{ ref, text }], related?, articles? }.
+ * The deep shape is checked by scripts/validate-wisdom.mjs.
  */
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { passage, readingText, readRef } from "./lib/bsb.mjs";
+import { contentWords } from "./lib/wisdom-words.mjs";
 
-const DIR = "client/public/wisdom/topics";
-const OUT = "client/public/wisdom/topics.json";
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+const W = path.join(ROOT, "client/public/wisdom");
+const DIR = path.join(W, "topics");
+const DEEP = path.join(W, "deep");
+const OUT = path.join(W, "topics.json");
+const FINDER = path.join(W, "finder.json");
+const ENTRY = path.join(W, "entry");
+const SENSITIVE = path.join(ROOT, "client/src/data/sensitive-pages.json");
 const REQUIRED = ["id", "label", "keywords", "framing", "cultural", "historical", "application", "verses"];
+const CHECK = process.argv.includes("--check");
 
+const readJson = (f) => JSON.parse(fs.readFileSync(f, "utf8"));
 const files = fs.existsSync(DIR) ? fs.readdirSync(DIR).filter((f) => f.endsWith(".json")).sort() : [];
 const byId = new Map();
 let problems = 0;
@@ -26,7 +65,7 @@ let problems = 0;
 for (const f of files) {
   let arr;
   try {
-    arr = JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8"));
+    arr = readJson(path.join(DIR, f));
   } catch (e) {
     console.error(`[wisdom] ${f}: invalid JSON: ${e.message}`);
     problems++;
@@ -59,8 +98,244 @@ for (const f of files) {
   }
 }
 
+// The deep layer, one file per topic.
+const deep = new Map();
+for (const f of fs.existsSync(DEEP) ? fs.readdirSync(DEEP).filter((x) => x.endsWith(".json")).sort() : []) {
+  const d = readJson(path.join(DEEP, f));
+  if (!byId.has(d.id) || `${d.id}.json` !== f) {
+    console.error(`[wisdom] deep/${f}: id "${d.id}" is not a topic, or the file is not named for it`);
+    problems++;
+    continue;
+  }
+  deep.set(d.id, d);
+}
+
+const matching = readJson(path.join(W, "matching.json"));
+const sensitive = readJson(SENSITIVE).wisdom;
+const careFor = (id) => sensitive.lead[id] ?? sensitive.end[id] ?? null;
+const careLead = (id) => Boolean(sensitive.lead[id]);
+/**
+ * A topic whose own page puts the path to help first: a heavy subject
+ * (sensitive-pages.json), or a topic written in full whose whole-Bible section
+ * names Find Help in its opening three sentences. The finder shows the Find
+ * Help line under such a topic when it comes first.
+ */
+const opensWithHelp = (d) => Boolean(d?.whole?.[0]?.split(/(?<=[.?])\s+/).slice(0, 3).some((s) => s.includes("Find Help")));
+const helpFirst = (id) => Boolean(careFor(id)) || opensWithHelp(deep.get(id));
+const areaOf = new Map();
+for (const a of matching.areas) for (const id of a.topics) areaOf.set(id, a.id);
+/** The topic before and the topic after, in its own area's order (matching.json "areas"): the page's "what's next". */
+const turnOf = new Map();
+for (const a of matching.areas) a.topics.forEach((id, i) => turnOf.set(id, { prev: a.topics[i - 1] ?? null, next: a.topics[i + 1] ?? null }));
+
+/** Where a reference sits: book slug, chapter, first and last verse in that chapter. */
+function place(ref) {
+  const r = readRef(ref);
+  if (!r) throw new Error(`cannot read reference "${ref}"`);
+  const p = r.parts[0];
+  const last = r.parts[r.parts.length - 1];
+  const v2 = last.c2 === p.c1 && Number.isFinite(last.v2) ? last.v2 : p.v1;
+  return { slug: r.book.slug, chapter: p.c1, v1: p.v1, v2 };
+}
+
+/** A verse that ends its sentence can stand alone (the verse of the day draws only from these). */
+const endsSentence = (text) => /[.?!][”’"')]*$/.test(text.trim());
+
+/** The passage opens a sentence: a capital first, and the verse before it (if any) ended its own sentence. */
+function startsSentence(v) {
+  if (!/^[\u201c\u2018"']?[A-Z]/.test(v.text)) return false;
+  if (v.v1 <= 1) return true;
+  const book = readRef(v.ref)?.book.name;
+  try {
+    return endsSentence(passage(`${book} ${v.chapter}:${v.v1 - 1}`).text);
+  } catch {
+    return false;
+  }
+}
+
+const firstSentence = (s) => {
+  const m = s.match(/^.*?[.?!](?=\s|$)/);
+  return (m ? m[0] : s).trim();
+};
+
+// The verse's words exactly; a psalm quoted from verse 1 drops its heading ("For the choirmaster. A Psalm of David."), as the Study Bible's reading text does.
+const fill = (ref) => {
+  const r = readRef(ref);
+  return r && r.book.slug === "psalms" && r.parts[0].v1 === 1 ? readingText(ref) : passage(ref).text;
+};
+const placeFields = (ref) => {
+  const at = place(ref);
+  return { slug: at.slug, chapter: at.chapter, v1: at.v1, v2: at.v2 };
+};
+
 const topics = Array.from(byId.values()).sort((a, b) => a.label.localeCompare(b.label));
-fs.mkdirSync(path.dirname(OUT), { recursive: true });
-fs.writeFileSync(OUT, JSON.stringify({ topics }, null, 2) + "\n");
-console.log(`[wisdom] wrote ${topics.length} topics to ${OUT} (${problems} problem(s))`);
+const outTopics = [];
+const finderTopics = [];
+const daily = [];
+const entries = new Map();
+
+for (const t of topics) {
+  const d = deep.get(t.id);
+  const m = matching.topics[t.id] ?? {};
+  try {
+    const verses = d ? d.passages.map((p) => ({ ref: p.ref, text: fill(p.ref) })) : t.verses.map((v) => ({ ref: v.ref, text: v.text }));
+    // Same keys in the same order as the source, so a topic without a deep file is written unchanged.
+    outTopics.push(Object.fromEntries(Object.entries(t).map(([k, v]) => [k, k === "verses" ? verses : v])));
+
+    finderTopics.push({
+      id: t.id,
+      label: t.label,
+      area: areaOf.get(t.id) ?? "",
+      line: firstSentence(t.framing),
+      keywords: t.keywords,
+      phrases: m.phrases ?? [],
+      not: m.not ?? [],
+      related: m.related ?? [],
+      framing: t.framing,
+      ...(d ? { deep: true } : {}),
+      ...(careFor(t.id) ? { care: true } : {}),
+      ...(helpFirst(t.id) ? { help: true } : {}),
+    });
+
+    const source = d ? d.passages : t.verses;
+    const versesOut = source.map((p, i) => ({
+      ref: p.ref,
+      text: verses[i].text,
+      ...placeFields(p.ref),
+      whole: endsSentence(verses[i].text),
+      ...(p.context ? { context: p.context, contextAt: placeFields(p.context) } : {}),
+      ...(p.where ? { where: p.where } : {}),
+    }));
+    // The verse of the day draws only from passages that are a whole sentence: they open on a capital
+    // (after any quotation mark) and end their sentence, so one is never cut mid-sentence. Short ones only.
+    const whole = versesOut.find((v) => v.whole && startsSentence(v) && v.text.length <= 240);
+    if (whole) daily.push({ id: t.id, label: t.label, ref: whole.ref, text: whole.text });
+    const entry = {
+      id: t.id,
+      label: t.label,
+      area: areaOf.get(t.id) ?? "",
+      framing: t.framing,
+      cultural: t.cultural,
+      historical: t.historical,
+      application: t.application,
+      keywords: t.keywords.slice(0, 10),
+      verses: versesOut,
+      related: (m.related ?? []).filter((id) => byId.has(id)).map((id) => ({ id, label: byId.get(id).label })),
+      links: [...(t.related ?? []), ...(t.articles ?? [])],
+      care: careFor(t.id) ? { topics: careFor(t.id), lead: careLead(t.id) } : null,
+      turn: {
+        prev: byId.has(turnOf.get(t.id)?.prev) ? { id: turnOf.get(t.id).prev, label: byId.get(turnOf.get(t.id).prev).label } : null,
+        next: byId.has(turnOf.get(t.id)?.next) ? { id: turnOf.get(t.id).next, label: byId.get(turnOf.get(t.id).next).label } : null,
+      },
+    };
+    if (d) {
+      entry.deep = {
+        updated: d.updated,
+        misread: (d.misread ?? []).map((x) => ({ ...x, text: fill(x.ref), ...placeFields(x.ref) })),
+        whole: d.whole,
+        differ: d.differ ?? null,
+        sit: d.sit,
+        prayer: { ...d.prayer, text: readingText(d.prayer.ref) },
+        next: d.next ?? [],
+        careLines: d.careLines ?? [],
+        notAdvice: d.notAdvice ?? null,
+      };
+    }
+    entries.set(t.id, entry);
+  } catch (e) {
+    console.error(`[wisdom] ${t.id}: ${e.message}`);
+    problems++;
+  }
+}
+
+/**
+ * Term weights for the topics written in full (BM25 over each topic's own
+ * page): its title (counted three times), its everyday phrasings (twice), and
+ * once each the "where it stands" of every passage, the often-misread layer
+ * and the whole-Bible section. A word counts more when it is frequent in one
+ * topic and rare across the others. The finder adds this, at a low weight, to
+ * its phrase score, so a word a page already uses ("roommate", "army") can
+ * find the page though no phrasing names it. Each topic keeps its strongest
+ * TERMS_PER_TOPIC words; weights are rounded to tenths. Shape: { stem: "i w
+ * i w ..." }, i the topic's place in finder.topics.
+ */
+const BM25 = { k1: 1.2, b: 0.75 };
+const TERMS_PER_TOPIC = 160;
+function termWeights(list) {
+  const docs = [];
+  list.forEach((ft, i) => {
+    const d = deep.get(ft.id);
+    if (!d) return;
+    const tf = new Map();
+    const count = (text, w) => contentWords(text).forEach((x) => tf.set(x, (tf.get(x) ?? 0) + w));
+    count(ft.label, 3);
+    (matching.topics[ft.id]?.phrases ?? []).forEach((p) => count(p, 2));
+    d.passages.forEach((p) => count(p.where ?? "", 1));
+    (d.misread ?? []).forEach((m) => count(`${m.taken ?? ""} ${m.says ?? ""}`, 1));
+    (d.whole ?? []).forEach((para) => count(para, 1));
+    docs.push({ i, tf, len: Array.from(tf.values()).reduce((a, b) => a + b, 0) });
+  });
+  const n = docs.length;
+  const avg = docs.reduce((a, d) => a + d.len, 0) / (n || 1);
+  const df = new Map();
+  for (const d of docs) for (const t of d.tf.keys()) df.set(t, (df.get(t) ?? 0) + 1);
+  const out = new Map();
+  for (const d of docs) {
+    const w = [];
+    for (const [t, f] of d.tf) {
+      const idf = Math.log(1 + (n - df.get(t) + 0.5) / (df.get(t) + 0.5));
+      const v = (idf * f * (BM25.k1 + 1)) / (f + BM25.k1 * (1 - BM25.b + (BM25.b * d.len) / avg));
+      if (v >= 0.5 && t.length > 1) w.push([t, Math.round(v * 10) / 10]);
+    }
+    w.sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1));
+    for (const [t, v] of w.slice(0, TERMS_PER_TOPIC)) out.set(t, [...(out.get(t) ?? []), d.i, v]);
+  }
+  return Object.fromEntries(Array.from(out.keys()).sort().map((t) => [t, out.get(t).join(" ")]));
+}
+
+const finder = {
+  about: "Built by scripts/build-wisdom-index.mjs from topics/*.json, deep/*.json and matching.json. Do not edit by hand.",
+  rewrites: matching.rewrites,
+  synonyms: matching.synonyms,
+  concepts: matching.concepts ?? [],
+  safety: matching.safety ?? {},
+  safetyPairs: matching.safetyPairs ?? [],
+  areas: matching.areas,
+  topics: finderTopics,
+  weights: termWeights(finderTopics),
+  daily,
+};
+
+const outputs = new Map();
+outputs.set(OUT, JSON.stringify({ topics: outTopics }, null, 2) + "\n");
+outputs.set(FINDER, JSON.stringify(finder) + "\n");
+for (const [id, e] of entries) outputs.set(path.join(ENTRY, `${id}.json`), JSON.stringify(e) + "\n");
+
+if (CHECK) {
+  let stale = 0;
+  for (const [f, body] of outputs) {
+    const now = fs.existsSync(f) ? fs.readFileSync(f, "utf8") : null;
+    if (now !== body) {
+      console.error(`[wisdom] stale: ${path.relative(ROOT, f)}`);
+      stale++;
+    }
+  }
+  for (const f of fs.existsSync(ENTRY) ? fs.readdirSync(ENTRY) : []) {
+    if (!entries.has(f.replace(/\.json$/, ""))) {
+      console.error(`[wisdom] stale: entry/${f} has no topic`);
+      stale++;
+    }
+  }
+  if (stale || problems) {
+    console.error(`[wisdom] ${stale} stale file(s), ${problems} problem(s). Run: node scripts/build-wisdom-index.mjs`);
+    process.exit(1);
+  }
+  console.log(`[wisdom] up to date: ${outTopics.length} topics (${deep.size} written in full), finder.json, ${entries.size} entry files`);
+  process.exit(0);
+}
+
+fs.mkdirSync(ENTRY, { recursive: true });
+for (const f of fs.readdirSync(ENTRY)) if (!entries.has(f.replace(/\.json$/, ""))) fs.unlinkSync(path.join(ENTRY, f));
+for (const [f, body] of outputs) fs.writeFileSync(f, body);
+console.log(`[wisdom] wrote ${outTopics.length} topics to topics.json (${deep.size} written in full), finder.json, ${entries.size} entry files (${problems} problem(s))`);
 process.exit(problems ? 1 : 0);

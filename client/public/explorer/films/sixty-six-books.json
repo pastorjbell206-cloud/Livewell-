@@ -1,0 +1,85 @@
+{
+  "slug": "sixty-six-books",
+  "title": "How the 66 books fit together",
+  "group": "story",
+  "status": "finished",
+  "mark": "sixty-six-books",
+  "line": {
+    "younger": "The Bible is a whole library. Watch the books find their shelves, and see how they tell one story.",
+    "older": "The Bible as a library of sixty-six books in seven pictures: two testaments, the kinds of writing on each shelf, and the one story that runs through them all."
+  },
+  "poster": "Sixty-six books stand jumbled in a long row on the floor, thick and thin, in three colours.",
+  "frames": [
+    {
+      "id": "library",
+      "name": "One book, many books",
+      "still": "Sixty-six books stand jumbled in a long row on the floor, thick and thin, in three colours.",
+      "younger": "The Bible looks like one book, but open it and you find a whole library. Many different people wrote its books, and many of the books do not say who wrote them.",
+      "older": "The Bible is a library. The Protestant Bible, the one most English readers hold, contains sixty-six books. Roman Catholic and Orthodox Bibles include further books in the Old Testament, and the Study Bible's guide sets out the difference."
+    },
+    {
+      "id": "two",
+      "name": "Two parts",
+      "still": "Two empty bookcases appear above the row of books, each with four shelves: one on the left and one on the right.",
+      "younger": "The library has two parts. The Old Testament tells the story before Jesus came, and the New Testament tells of Jesus and the first churches.",
+      "older": "There are thirty-nine books in the Old Testament and twenty-seven in the New, written in three languages: Hebrew, a little Aramaic, and Greek."
+    },
+    {
+      "id": "law-history",
+      "name": "Law and history",
+      "still": "Five books go up onto the top shelf of the left case, and twelve onto the shelf below.",
+      "younger": "On the first shelves: five books of God's law, Genesis to Deuteronomy, and then the history books, Joshua to Esther, the story of Israel over many hundreds of years.",
+      "older": "The Christian order groups the books by kind: five books of law, Genesis through Deuteronomy, then the historical books from Joshua to Esther."
+    },
+    {
+      "id": "poetry-prophets",
+      "name": "Poetry and the prophets",
+      "still": "Five books go up onto the third shelf of the left case, and seventeen onto the bottom shelf. The left case is full.",
+      "younger": "Next come songs and wise sayings, Job to the Song of Solomon, and then the prophets, who spoke God's word to his people, Isaiah to Malachi.",
+      "older": "Then the poetic and wisdom books from Job to the Song of Solomon, and the prophets, with the four long books before the twelve short ones. A Hebrew Bible holds the same books in a different order, in three parts: the Law, the Prophets and the Writings."
+    },
+    {
+      "id": "gospels-acts",
+      "name": "The Gospels and Acts",
+      "still": "Four books go up onto the top shelf of the right case, and one onto the shelf below it.",
+      "younger": "The New Testament begins with four Gospels, Matthew, Mark, Luke and John, each telling the life of Jesus. Then Acts tells how the good news spread.",
+      "older": "First come the four Gospels, each a portrait of the life, teaching, death and resurrection of Jesus. Then Acts carries the story from Jerusalem to Rome."
+    },
+    {
+      "id": "letters",
+      "name": "Letters and Revelation",
+      "still": "Twenty-one books go up onto the third shelf of the right case, and one onto the bottom shelf. Both cases are full and the floor is empty.",
+      "younger": "Then come letters, Romans to Jude, written to churches and to friends. Last of all is Revelation, a vision of how the story ends.",
+      "older": "Third come the letters, Romans through Jude: thirteen that name Paul as their writer, then Hebrews, whose author is not named, and seven more. Last stands Revelation, an apocalyptic vision."
+    },
+    {
+      "id": "one-story",
+      "name": "One story",
+      "still": "A gold thread runs across the spines of every book, shelf after shelf, from the left case to the right.",
+      "younger": "Many kinds of books, but one story, from creation to the new creation, and at its center is Jesus. After he rose, he showed his friends how the whole library spoke about him.",
+      "older": "Different kinds of writing, read in different ways, tell one story. The New Testament writers quote the Old on nearly every page and claim that its story reaches its goal in Jesus of Nazareth.",
+      "verse": {
+        "ref": "Luke 24:27",
+        "text": "And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Which shelf would you like to read from first? Ask a parent or a leader to help you choose a book from it.",
+    "older": "Why do you think it matters to know what kind of writing you are reading, a poem, a letter or a history, before you read it?"
+  },
+  "read": [
+    { "label": "Luke 24", "href": "/study/bible/luke/24" },
+    { "label": "Psalm 119", "href": "/study/bible/psalms/119" },
+    { "label": "2 Timothy 3", "href": "/study/bible/2-timothy/3" },
+    { "label": "Hebrews 1", "href": "/study/bible/hebrews/1" }
+  ],
+  "stops": ["creation", "new-creation"],
+  "cards": ["bible"],
+  "deeper": [
+    { "label": "What the Bible is: the library, its order, and how Jewish, Protestant, Catholic and Orthodox Bibles differ", "href": "/study/bible/guides/what-is-the-bible" },
+    { "label": "How the books were chosen", "href": "/study/bible/guides/canon" },
+    { "label": "Guides to reading each kind of writing", "href": "/study/bible/guides" }
+  ],
+  "end": { "label": "Read the guide: What the Bible is", "href": "/study/bible/guides/what-is-the-bible" }
+}

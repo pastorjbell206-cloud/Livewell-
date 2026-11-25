@@ -1,0 +1,121 @@
+{
+  "slug": "exile-and-home",
+  "title": "Exile and coming home",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "exile-and-home",
+  "line": {
+    "younger": "Again and again in the Bible, God's people are far from home, and again and again God brings them back. Seven pictures follow one road, from the garden gate to a city whose gates are never shut.",
+    "older": "Exile and homecoming through the whole Bible in seven pictures: the garden, Egypt, Babylon, the return, Jesus, believers as foreigners on the way, and the city at the end."
+  },
+  "poster": "A road leaving a garden gate and running away across the hills toward a city far off on the horizon, its gate open and lit.",
+  "frames": [
+    {
+      "id": "garden",
+      "name": "Sent out of the garden",
+      "still": "The garden behind a wall with its gate closed and a flame across the way in; two people walk away from it along a road that runs to the left edge of the picture.",
+      "younger": "In the beginning, home was the garden, where people lived close to God. After they turned away from him, they had to leave, and the way back was guarded. But God did not stop caring for them. The Bible's story of being far from home starts here.",
+      "older": "In Scripture home is the place where God dwells with his people. After the first sin, God sent the man out of the garden and set cherubim and a flaming sword to guard the way to the tree of life. Exile is what sin does: separation from God and from the place of blessing. The Bible runs from a garden with a guarded gate to a city whose gates are never shut.",
+      "verse": {
+        "ref": "Genesis 3:24",
+        "text": "So He drove out the man and stationed cherubim on the east side of the Garden of Eden, along with a whirling sword of flame to guard the way to the tree of life."
+      }
+    },
+    {
+      "id": "egypt",
+      "name": "Out of Egypt",
+      "still": "Low brick buildings and a hot sun on the right; along the road from them a long line of people walks out toward open hills on the left.",
+      "younger": "Abraham's family went down to Egypt, and in time they were made slaves there, far from the land God had promised. They cried out, and God heard them. He brought them out of Egypt and led them toward a home of their own.",
+      "older": "Abraham himself lived as a foreigner in the land of promise, and his family went down to Egypt, where they became slaves. God said, “I have indeed seen the affliction of My people in Egypt,” and he came down to rescue them. The exodus became Israel's great homecoming, the pattern for every rescue after it.",
+      "verse": {
+        "ref": "Exodus 3:7",
+        "text": "The LORD said, “I have indeed seen the affliction of My people in Egypt. I have heard them crying out because of their oppressors, and I am aware of their sufferings."
+      }
+    },
+    {
+      "id": "babylon",
+      "name": "By the rivers of Babylon",
+      "still": "A river with willows, two harps hung in the branches of one, and two people sitting together on the bank; far off on the horizon, a broken city wall.",
+      "younger": "Years later, God's people stopped listening to God, and they were taken far from home to Babylon. By its rivers they sat and cried. But God had not left them. He told them to pray for the city where they lived, and he promised that one day they would come home.",
+      "older": "The prophets and the histories say the exile was the cost of turning from God; the Bible does not hurry past the grief of it. “How can we sing a song of the LORD in a foreign land?” Yet God went with them: “I have been a sanctuary for them in the countries to which they have gone.” Jeremiah told the exiles to seek the good of the city where they lived and to pray for it, and promised that they would return.",
+      "verse": {
+        "ref": "Psalm 137:1",
+        "text": "By the rivers of Babylon we sat and wept when we remembered Zion."
+      }
+    },
+    {
+      "id": "return",
+      "name": "The long road back",
+      "still": "A line of people with bundles and a cart climbing a road up a hill toward a small, plain temple and a half-built wall.",
+      "younger": "God kept his promise. A new king let the people go home to Jerusalem and build God's house again. Some people shouted for joy and some cried, because the new temple was so small. They were home, but they were still waiting for more of what God had promised.",
+      "older": "Cyrus of Persia let the exiles go home, to fulfill the word spoken through Jeremiah, and they rebuilt the altar and the temple. Many shouted for joy; many of the old, who had seen the first temple, wept. The return was real, but partial: Nehemiah could still pray, “here we are today as slaves in the land You gave our fathers.” The people were home, and still waiting.",
+      "verse": {
+        "ref": "Ezra 1:3",
+        "text": "Whoever among you belongs to His people, may his God be with him, and may he go to Jerusalem in Judah and build the house of the LORD"
+      }
+    },
+    {
+      "id": "jesus",
+      "name": "The way home opened",
+      "still": "A house on a hill with a lit window, and down the road from it an older man running with open arms toward a young man coming home.",
+      "younger": "Then Jesus came. He told a story about a son who went far from home and wasted everything, and a father who saw him coming and ran to welcome him. Jesus came to gather God's scattered children, and to bring people back to God.",
+      "older": "Mark opens with Isaiah's words to the exiles, “Prepare the way for the Lord”: the gospel begins as the news that God is coming back to his people. Jesus told of a son who went to a distant country and a father who ran to meet him, and John writes that Jesus would die “for the scattered children of God, to gather them together into one.”",
+      "verse": {
+        "ref": "Luke 15:20",
+        "text": "But while he was still in the distance, his father saw him and was filled with compassion. He ran to his son, embraced him, and kissed him."
+      }
+    },
+    {
+      "id": "strangers",
+      "name": "Foreigners on the way",
+      "still": "A small town with a garden being tended and a house being built; a road runs on past it over the hill, and two people walk along it.",
+      "younger": "People who follow Jesus are at home with God, and they are also still on the way home. So they live where they are, build, plant and care for their neighbors, and they keep looking ahead to the home God is getting ready.",
+      "older": "Peter writes to believers “as foreigners and exiles,” and Hebrews says that the faithful “acknowledged that they were strangers and exiles on the earth.” Believers are at home with God through Christ and still away from the home he is preparing. This is not a longing to escape the world, and not a reason to treat any nation as the promised home. Like Jeremiah's exiles they build, plant and seek the good of the city where they live.",
+      "verse": {
+        "ref": "Hebrews 13:14",
+        "text": "For here we do not have a permanent city, but we are looking for the city that is to come."
+      }
+    },
+    {
+      "id": "city",
+      "name": "Home at last",
+      "still": "A city on a hill with its gate standing open and light pouring out of it; roads come in from every side, with people walking home along them.",
+      "younger": "At the end of the Bible, God's people are home for ever. God lives with them in a city whose gates are never shut. Nobody there is a stranger any more.",
+      "older": "Revelation brings the pattern to its end. The voice from the throne says that “the dwelling place of God is with man,” and the tree of life, guarded since Genesis, stands by the river. The exile from Eden ends not with a return to the garden but with a garden city where God lives with his people, and its gates are never shut. As Paul writes, “you are no longer strangers and foreigners.”",
+      "verse": {
+        "ref": "Revelation 21:25",
+        "text": "Its gates will never be shut at the end of the day, because there will be no night there."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Have you ever been far from home, or felt far from God? What does this moving picture say God does for people who are far away?",
+    "older": "Believers are at home with God and still on the way home. What would it look like to seek the good of the place where you live while you wait?"
+  },
+  "read": [
+    { "label": "Genesis 3", "href": "/study/bible/genesis/3" },
+    { "label": "Exodus 3", "href": "/study/bible/exodus/3" },
+    { "label": "Psalm 137", "href": "/study/bible/psalms/137" },
+    { "label": "Jeremiah 29", "href": "/study/bible/jeremiah/29" },
+    { "label": "Ezekiel 11", "href": "/study/bible/ezekiel/11" },
+    { "label": "Ezra 1", "href": "/study/bible/ezra/1" },
+    { "label": "Nehemiah 9", "href": "/study/bible/nehemiah/9" },
+    { "label": "Mark 1", "href": "/study/bible/mark/1" },
+    { "label": "Luke 15", "href": "/study/bible/luke/15" },
+    { "label": "John 11", "href": "/study/bible/john/11" },
+    { "label": "1 Peter 2", "href": "/study/bible/1-peter/2" },
+    { "label": "Hebrews 11", "href": "/study/bible/hebrews/11" },
+    { "label": "Ephesians 2", "href": "/study/bible/ephesians/2" },
+    { "label": "Revelation 21", "href": "/study/bible/revelation/21" }
+  ],
+  "stops": ["fall", "rescue", "exile", "return", "jesus", "new-creation"],
+  "cards": [],
+  "care": "If you have had to leave a home, or have lost someone or something you loved, it is right to feel sad, and you do not have to carry it alone. Feeling far from God is not the same as being far from him. Talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Exile: what the Bible teaches", "href": "/study/bible/doctrines/exile" },
+    { "label": "Feeling far from God", "href": "/wisdom/feeling-far-from-god" },
+    { "label": "Follow the thread God with his people through every stop on the map", "href": "/study/explorer?thread=dwelling" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "garden", "text": "In the beginning, home was the garden, where people lived close to God. After they turned away from him, they had to leave, and the way back was guarded.", "verse": false}, {"id": "egypt", "verse": false}, {"id": "babylon", "text": "Years later, God's people stopped listening to God, and they were taken far from home to Babylon. By its rivers they sat and cried. But God had not left them.", "verse": true}, {"id": "return", "text": "God kept his promise. A new king let the people go home to Jerusalem and build God's house again. They were home, but they were still waiting for more of what God had promised.", "verse": false}, {"id": "jesus", "verse": false}, {"id": "strangers", "verse": false}, {"id": "city", "verse": true}]},
+  "end": { "label": "Go to the stop: The Prophets and Exile", "href": "/study/explorer/exile" }
+}

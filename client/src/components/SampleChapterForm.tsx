@@ -43,7 +43,7 @@ export function SampleChapterForm({
       } else {
         addToast?.({
           type: "success",
-          title: "You're on the list",
+          title: "Your email is saved",
           message: "No online sample for this one yet. It will appear here when it's up.",
         });
         setEmail("");
@@ -183,8 +183,8 @@ export function SampleChapterForm({
         }}
       >
         Leave your email and the opening of <em>{bookTitle}</em> appears right
-        here. You'll also get the weekly essay. No spam — you read the sample,
-        you decide if you want more.
+        here. Your email is saved on this site. The essays go out through
+        Substack, and only if you sign up there.
       </p>
       <form
         onSubmit={handleSubmit}

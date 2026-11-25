@@ -12,6 +12,7 @@ import { SEOMeta } from "@/components/SEOMeta";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchGuide, fetchGuideIndex, type Guide, type GuideIndex } from "@/lib/bible-notes";
 import { refHref } from "@/lib/scripture-ref";
+import { PLAN_PATH } from "@/lib/storyPlan";
 import { Band, Credits, H2, Hero, Lede, Prose, Status, card, kicker, quietLink, useLoad, wrap } from "@/pages/study-bible/shared";
 
 export default function StudyBibleGuides() {
@@ -22,7 +23,7 @@ export default function StudyBibleGuides() {
       {!params && (
         <SEOMeta
           title="Guides to Reading the Bible"
-          description="Start here if you are new to the Bible: what it is, how the books were chosen, how we got the text, why translations differ, how to read each kind of writing, and reference tables for the ancient world."
+          description="Start here if you are new to the Bible: what it is, how the books were chosen, how we got the text, why translations differ, and how to read it."
           url="https://www.livewellbyjamesbell.co/study/bible/guides"
         />
       )}
@@ -49,6 +50,10 @@ function GuideIndexPage({ index }: { index: GuideIndex }) {
         <Lede>
           The Bible is a library written over a thousand years in three languages. These guides give you what a first-year seminary course would: where the books came from, how the text reached us, how to read each kind of writing, and the facts of the ancient world the writers took for granted.
         </Lede>
+        <p style={{ margin: "var(--s-3) 0 0", fontFamily: "var(--U)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)" }}>
+          A plan for the new year:{" "}
+          <Link href={PLAN_PATH} style={quietLink}>Read the Bible in a year (2027)</Link>, every chapter of the Bible in the order the story happened.
+        </p>
       </Hero>
       {index.groups.map((g, i) => (
         <Band key={g.id} tone={i % 2 === 0 ? "warm" : "bone"}>
@@ -91,7 +96,7 @@ function GuidePage({ id, index }: { id: string; index: GuideIndex }) {
         {guide.sections.length > 3 && (
           <nav aria-label="On this page" style={{ display: "flex", flexWrap: "wrap", gap: "6px", marginTop: "var(--s-4)" }}>
             {guide.sections.map((s, n) => (
-              <a key={n} href={`#s${n}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "36px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px" }}>{s.h}</a>
+              <a key={n} href={`#s${n}`} style={{ display: "inline-flex", alignItems: "center", minHeight: "44px", padding: "0 14px", border: "1px solid var(--border)", borderRadius: "999px", background: "var(--card)", color: "var(--ink)", textDecoration: "none", fontFamily: "var(--U)", fontSize: "13px" }}>{s.h}</a>
             ))}
           </nav>
         )}

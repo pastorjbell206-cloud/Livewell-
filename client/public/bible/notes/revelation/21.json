@@ -14,7 +14,7 @@
   ],
   "doctrines": [
     { "id": "creation", "note": "God does not abandon the world he made; he makes all things new. Christians differ on whether the new creation is the old one purified and renewed (often pointing to Romans 8:21) or a wholly fresh creation after the first passes away (often pointing to 2 Peter 3:10-13). Both confess a real, physical new creation, not a disembodied heaven." },
-    { "id": "hope", "note": "The Christian hope is resurrection life in a renewed world where God himself will wipe away every tear. The promise is not that suffering was unreal but that it will be ended and answered." },
+    { "id": "hope", "note": "The Christian hope is resurrection life in a renewed world where God himself will wipe away every tear. Suffering was real, and the promise is that it will be ended and answered." },
     { "id": "god", "note": "The goal of the whole story is God with us: “the dwelling place of God is with man” (verse 3). The city has no temple because God and the Lamb are its temple, and the covenant promise reaches its fullest form." },
     { "id": "church", "note": "The people of God, Israel's twelve tribes and the Lamb's twelve apostles, are one city and one bride, built by God and adorned for him." }
   ],
@@ -22,7 +22,7 @@
     { "s": "G2537", "note": "Kainos, new. Greek had another common word for new in the sense of recent. Kainos often carries the sense of new in kind or quality, renewed and fresh. Many scholars think that shade matters here: the new creation is the world made new rather than simply a second, unrelated world, though the word alone can't settle the question." },
     { "s": "G4633", "note": "Skene, tent or tabernacle, translated dwelling place in verse 3. It recalls the tabernacle of Exodus, where God's glory lived among Israel, and John 1:14, where the Word “made His dwelling among us,” using the related verb. What began in the wilderness tent and came in Jesus now reaches all creation." },
     { "s": "G3565", "note": "Numphe, bride. The city is “prepared as a bride adorned for her husband” (verse 2) and called “the bride, the wife of the Lamb” (verse 9). The image joins the marriage of 19:7 with the city of chapter 21: the new Jerusalem is not mainly a place but a people united to God." },
-    { "s": "G3485", "note": "Naos, temple or sanctuary, the inner shrine where a deity was thought to dwell. John sees no naos in the city (verse 22), which is startling for a vision of Jerusalem. The reason is not that worship has ended but that God's presence now fills everything; there is no longer any need for a separate holy place." }
+    { "s": "G3485", "note": "Naos, temple or sanctuary, the inner shrine where a deity was thought to dwell. John sees no naos in the city (verse 22), which is startling for a vision of Jerusalem. The reason is that God's presence now fills everything; there is no longer any need for a separate holy place." }
   ],
   "christ": "Christ is present throughout the city as the Lamb: the bride is “the wife of the Lamb” (verse 9), the apostles on the foundations are the Lamb's apostles, the Lamb is the temple together with God (verse 22) and is its lamp (verse 23), and the names of the citizens are written in “the Lamb's Book of Life” (verse 27). The title the Alpha and the Omega, spoken by God in verse 6, is spoken by Jesus in 22:13, so that the beginning and end of all things is identified with him. The promise that God will dwell with his people fulfills what began when the Word became flesh and dwelt among us (John 1:14), and Jesus' promise to prepare a place for his disciples (John 14:2-3) finds its answer here. The one who died and rose bodily is the firstfruits of this new creation; the renewed world is his resurrection extended to everything.",
   "hard": {
@@ -30,8 +30,9 @@
     "a": "Readers take the city in different ways. Some expect a literal city of the dimensions given, the capital of the new earth. Many others, noting that the dimensions, materials, and numbers are all symbolic (a cube like the Most Holy Place, twelves for the people of God, a street of gold as clear as glass), read the city as a picture of the people of God perfected and filled with his presence, since the city is also called the bride. Many hold elements of both: a real new creation, described in symbols that convey more than a map could.\n\nOn the fate of this world, Christians also differ. Some stress continuity: creation will be set free from its bondage to decay (Romans 8:21), purified rather than annihilated, and even the glory and honor of the nations will be brought into the city (verse 26). Others stress discontinuity, noting that the first heaven and earth pass away (verse 1) and that 2 Peter 3 speaks of the elements dissolving. Most interpreters across traditions agree on the central point: the Christian hope is embodied, earthly in the renewed sense, and shared, not an escape of souls from matter."
   },
   "questions": [
-    "The Bible ends with God coming down to dwell with people, not people escaping to somewhere else. How does that change the way you think about heaven and about this world?",
+    "The Bible ends with God coming down to dwell with people, not people escaping to somewhere else. What does that do to the way you picture heaven, and this world?",
     "Verse 4 promises that God will wipe away every tear. What grief in your life or someone else's do you long to see answered this way?",
     "The glory of the nations is brought into the city. What good work, culture, or beauty in this world might you hope to see redeemed rather than discarded?"
-  ]
+  ],
+  "plain": true
 }

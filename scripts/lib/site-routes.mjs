@@ -12,6 +12,8 @@
  */
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { builtFrom } from "./built-files.mjs";
+import { liveQuestionPaths } from "./questions.mjs";
+import { loadEssayShelf } from "./shelf.mjs";
 import { join } from "node:path";
 
 const ROOT = new URL("../..", import.meta.url).pathname;
@@ -36,6 +38,11 @@ function essaySlugs() {
   // essay the database has no post for yet (client/src/lib/shelf.ts).
   const rewrites = join(ROOT, "client/public/essays");
   if (existsSync(rewrites)) for (const f of readdirSync(rewrites)) if (f.endsWith(".json")) out.add(f.slice(0, -5));
+  // A public essay on the shelf (client/src/lib/shelf.json) is a page even
+  // when its text lives only in the database (James's Substack chapters), as
+  // validate-links.mjs and the sitemap already count it.
+  const shelf = loadEssayShelf();
+  for (const e of shelf.data?.essays || []) if (e?.slug && shelf.visibility(e.slug) === "shelf") out.add(e.slug);
   return out;
 }
 
@@ -43,6 +50,13 @@ function groupGuideSlugs() {
   const p = "client/src/data/discussion-guides.ts";
   if (!existsSync(join(ROOT, p))) return new Set();
   return new Set([...read(p).matchAll(/\bslug:\s*["']([a-z0-9-]+)["']/g)].map((m) => m[1]));
+}
+
+/** The Honest Answers' slugs, read from client/src/data/answers.ts. */
+function answerSlugs() {
+  const p = "client/src/data/answers.ts";
+  if (!existsSync(join(ROOT, p))) return new Set();
+  return new Set([...read(p).matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]));
 }
 
 function bibleBooks() {
@@ -64,6 +78,7 @@ function paramSources() {
     "/pathways/:slug": slugsFrom(json("client/public/pathways/index.json")),
     "/reading-paths/:slug": slugsFrom(json("client/public/reading-paths/index.json")),
     "/resources/context/:slug": slugsFrom(json("client/public/context/guides-index.json")),
+    "/resources/context/world/:id": slugsFrom(json("client/public/context/worlds-index.json"), "id"),
     "/resources/creeds/:slug": slugsFrom(json("client/public/creeds/documents-index.json")),
     "/theology/doctrine/:slug": slugsFrom(json("client/public/theology/index.json")),
     "/theology/history/:slug": slugsFrom(json("client/public/history/essays-index.json")),
@@ -72,6 +87,12 @@ function paramSources() {
     "/group-guide/:slug": groupGuideSlugs(),
     "/help/:slug": slugsFrom(needs),
     "/family/devotions/:id": slugsFrom(json("client/public/family/index.json")?.devotions, "id"),
+    "/topics/:slug": slugsFrom(json("client/public/topics/index.json")?.pages),
+    "/answers/:slug": answerSlugs(),
+    // The Bible Explorer: a stop has its own page once it is finished.
+    // Watch and learn: a moving picture has its own page once it is made.
+    "/study/explorer/watch/:slug": new Set((json("client/public/explorer/index.json")?.films || []).filter((f) => f.status === "finished").map((f) => f.slug)),
+    "/study/explorer/:slug": new Set((json("client/public/explorer/index.json")?.stops || []).filter((s) => s.status === "finished").map((s) => s.slug)),
     "/study/bible/:book": new Set(books.keys()),
   };
 }
@@ -128,6 +149,11 @@ export function resolveHref(rawHref) {
       else if (pp[i] !== parts[i]) { ok = false; break; }
     }
     if (!ok) continue;
+    // The questions library: an area or a piece is a page once it is live
+    // (scripts/lib/questions.mjs); a pending one is not linked from anywhere.
+    if (pattern === "/questions/:area" || pattern === "/questions/:area/:slug") {
+      return liveQuestionPaths(ROOT).includes(href) ? { status: "ok" } : { status: "missing" };
+    }
     if (pattern === "/study/bible/:book/:chapter") {
       const n = books.get(vals[":book"]);
       return n && +vals[":chapter"] >= 1 && +vals[":chapter"] <= n ? { status: "ok" } : { status: "missing" };

@@ -1,0 +1,498 @@
+{
+  "slug": "deeper",
+  "title": "Study, history, doctrine",
+  "for": "I want to go deeper",
+  "road": "deeper",
+  "subtitle": "Twelve short sessions for someone who wants to go deeper: read whole books, learn how each kind reads, follow a doctrine through, and meet the creeds, the councils and where Christians differ.",
+  "intro": [
+    "This track is for someone who already reads the Bible and wants to read it better: whole books instead of single verses, each kind of writing on its own terms, and the faith the church has confessed for two thousand years. It has twelve sessions of about ten minutes each, and each one opens a part of this site made for study. Take them a week apart, and do the reading each session asks for in between.",
+    "Each session works the same way. You read a few short paragraphs, then open one page and use it, then come back to one question, one thing to do, and one verse. The first half is about reading Scripture well. The second half follows what the church has made of it: its creeds, its councils, and the questions faithful Christians still answer differently. Each session ends with a guide for a group."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through Study, history, doctrine. The group is for people who already read the Bible and want to read it better, and to know what the church has made of it over two thousand years. It suits a group that has met for a while and is ready for more than a devotional. The leader's task is to keep the group close to the text and fair to the church's long argument, and to make room for the person who has never studied like this before.",
+      "Each person reads the session, opens its page, and does the reading it asks for before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week or once a fortnight, for twelve meetings, and keep the end time you promised. The sessions ask for reading between meetings, a whole book in the first, Romans 8 in the third, a doctrine and a creed later on, so say so at the start and let each person do what they can. A leader doesn't need to be a scholar. A leader needs to have done the reading, and to be willing to admit not knowing."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open in front of everyone, in print or on a phone, and paper for notes. Make it plain at the first meeting that anyone may pass on any question, that the group will disagree about some things and that this is allowed, and that no one has to pray aloud. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the verse aloud, and the passage around it, while the others follow.",
+          "Thirty-five minutes: the three questions to talk over, in order. Ask where each answer is found, in the text or on the page.",
+          "Ten minutes: what each person found in the reading the session asked for, and one question it raised.",
+          "Five minutes: the prayer prompt, in your own words.",
+          "Five minutes: name the next session, the page it opens and the reading it asks for, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "This track goes where Christians disagree, so hard questions are part of it. When a disputed question comes up, first ask what order it is: essential to the faith itself, dividing faithful churches but not the faith, or a question with room for both views inside one congregation. The page on where Christians differ marks each one. Then let each view be stated in a form its own defenders would accept before anyone argues against it. If no one knows the answer, write the question down and bring it back the next week.",
+          "Hold the line where the creeds hold it, and keep an open hand where faithful Christians have long differed. If the group has people from different churches, that is a gift. Let each explain their own church's view, and thank them for it, even where the group leans another way."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A study group is never only study. The doctrine of providence can land on someone who has just lost a child, and a passage about assurance can land on someone afraid that they have fallen away. When the study touches someone's life, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry back to the argument. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group. Never press anyone to forgive quickly, or to stay where they are being hurt."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: grief that has taken their sleep or appetite for weeks, fear or guilt that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Read a whole book",
+      "minutes": 10,
+      "teaching": [
+        "Most people meet the Bible in pieces: a verse on a card, a chapter on a Sunday, a line quoted in an argument. But its books were written to be read whole. Paul's letters were read aloud to gathered churches, and he asked for them to be passed on: “After this letter has been read among you, make sure that it is also read in the church of the Laodiceans” (Colossians 4:16). A verse read alone can be made to say almost anything. A verse read inside its whole book usually says one thing, and says it better.",
+        "The Study Bible on this site sets the Berean Standard Bible beside notes on every chapter, and each of the sixty-six books opens with an introduction: who wrote it, when, for whom, and why. Choose one book and read it straight through before you read anything about it. A short letter is a good place to begin. Philippians has four chapters, and its introduction says it can be read aloud in about fifteen minutes. Then read the introduction, and read the book again."
+      ],
+      "open": {
+        "kind": "bible",
+        "label": "The Study Bible",
+        "href": "/study/bible",
+        "why": "The Berean Standard Bible with notes on every chapter, an introduction to every book, and the Hebrew and Greek beneath each word."
+      },
+      "also": [
+        {
+          "kind": "book",
+          "label": "Open Philippians in the Study Bible",
+          "href": "/study/bible/philippians",
+          "why": "Paul's warmest letter, written from prison: four chapters, with an introduction on who wrote it, when, and why."
+        }
+      ],
+      "question": "Which book of the Bible have you only ever read in pieces, and what might you see if you read it whole?",
+      "do": "Read Philippians, or another short book, straight through in one sitting. Then read its introduction in the Study Bible, and read the book again. Write down one thing you saw the second time that you missed the first.",
+      "verse": {
+        "ref": "Psalm 119:18",
+        "text": "Open my eyes that I may see wondrous things from Your law."
+      },
+      "group": {
+        "open": "Is there a book, of any kind, that changed for you when you read it a second time?",
+        "discuss": [
+          "Why do you think Paul wanted his letters read aloud to whole churches, and passed from one church to the next?",
+          "What did you notice in reading a book straight through that you would have missed reading a verse at a time?",
+          "Philippians was written from prison. How does knowing that change the way its words about joy sound?"
+        ],
+        "pray": "Ask God, in your own words, to open each person's eyes to what is in the book they are reading, and give thanks for the people who copied and kept these books."
+      }
+    },
+    {
+      "n": 2,
+      "title": "How each kind of book reads",
+      "minutes": 10,
+      "teaching": [
+        "The Bible is not one kind of book. It is a library, and a library holds stories, laws, songs, proverbs, prophecies, letters and visions. Each kind asks to be read in its own way. A proverb says how things usually go, and it is not a promise. A psalm is a prayer, and its pictures are not a map. A letter answers questions its first readers asked, and you are reading someone else's mail. Reading every page in the same way is an easy way to get it wrong.",
+        "The guides this session opens take each kind in turn: how biblical stories work and why their heroes are rarely models, what the law was for, how Hebrew poetry works in parallel lines rather than rhyme, what a proverb is and is not, how to read a prophet in his own time, and how Daniel and Revelation use symbols. Before them come guides on what the Bible is and how it reached us. Paul's charge to Timothy still fits every reader: “Make every effort to present yourself approved to God, an unashamed workman who accurately handles the word of truth” (2 Timothy 2:15)."
+      ],
+      "open": {
+        "kind": "bible",
+        "label": "Guides to reading the Bible",
+        "href": "/study/bible/guides",
+        "why": "How the Bible came to us, and how to read each kind of writing in it: stories, law, poetry, wisdom, prophets, Gospels, parables and letters."
+      },
+      "question": "Which kind of writing in the Bible do you find hardest to read, and what do you think makes it hard?",
+      "do": "Choose the guide for the kind of book you are reading now, and read it. Then read one chapter of that book with the guide's advice in mind, and note one thing the guide helped you see.",
+      "verse": {
+        "ref": "2 Timothy 2:15",
+        "text": "Make every effort to present yourself approved to God, an unashamed workman who accurately handles the word of truth."
+      },
+      "group": {
+        "open": "What is the strangest part of the Bible you have ever read?",
+        "discuss": [
+          "Why might it matter whether a passage is a story, a law, a song or a letter?",
+          "The guide on stories says the heroes are rarely models. Which biblical character were you taught to copy whose story is more troubling when you read it whole?",
+          "What happens when someone reads a proverb as a promise?"
+        ],
+        "pray": "Give thanks for the many kinds of writing in the Scriptures, and ask for patience to read each part as it was meant to be read."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Seven steps on a hard chapter",
+      "minutes": 15,
+      "teaching": [
+        "Any chapter can be studied in the same seven steps. Read it whole. Notice who is speaking, to whom, what comes back again, and what surprises you. Learn its setting from the book's introduction. Look closely at its key words, and at the Hebrew or Greek behind them. Read the other places in Scripture that each verse points to. Face the hard question a thoughtful reader would ask. Then ask what it asks of you. The guided study on this site walks you through those steps on any chapter, one screen at a time.",
+        "Romans 8 rewards all seven. It opens with “There is now no condemnation for those who are in Christ Jesus” (Romans 8:1), and it ends with nothing in all creation able to separate us from God's love. Between them come the Spirit's help in prayer, a creation groaning to be set free, and some of the most argued-over sentences Paul wrote, on God foreknowing and predestining. The notes don't settle what the church has not settled. They set out how Christians read those verses differently, and leave you to weigh it."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "The guided study of Romans 8",
+        "href": "/study/bible/romans/8?study=walk",
+        "why": "Seven steps on one of Paul's richest and most argued-over chapters, one screen at a time. Closing it shows the way back to this session."
+      },
+      "also": [
+        {
+          "kind": "study",
+          "label": "How to study the Bible",
+          "href": "/study/how-to-study",
+          "why": "The seven steps that work on any chapter, each one explained, with the questions a careful reader asks."
+        },
+        {
+          "kind": "chapter",
+          "label": "Romans 8, passage by passage",
+          "href": "/study/bible/romans/8#plain",
+          "why": "Each passage of the chapter in plain words, with the hard questions it raises and where Christians read it differently."
+        }
+      ],
+      "question": "Which of the seven steps did you find hardest to take slowly, and what did the chapter show you when you did?",
+      "do": "Work through Romans 8 in the guided study, all seven steps, in one sitting or two. Write down the hard question the study asks, and your own answer, before you read the one it gives.",
+      "verse": {
+        "ref": "Romans 8:38-39",
+        "text": "For I am convinced that neither death nor life, neither angels nor principalities, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord."
+      },
+      "care": [
+        "If you are afraid that you have lost God's love, read verses 38 and 39 slowly. That fear is not usually the mark of someone who has fallen away. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When you study something carefully, a recipe, a contract, a map, what do you do first?",
+        "discuss": [
+          "Romans 8 begins with no condemnation and ends with nothing able to separate us from God's love. How does everything in between hang on those two ends?",
+          "The notes set out three ways Christians read the foreknowing and predestining in verses 29 and 30. Why is it worth knowing the other readings, even after you have chosen one?",
+          "Which of the seven steps do you skip most often when you read the Bible on your own?"
+        ],
+        "pray": "Pray with Paul's confidence in verses 38 and 39, in your own words, for anyone in the group afraid that they have lost God's love."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The whole story",
+      "minutes": 10,
+      "teaching": [
+        "The Bible is a library of sixty-six books written over more than a thousand years, in three languages, by kings, shepherds, priests, fishermen and a tax collector. It is also one story. It runs from a good world made by God, through a catastrophe that broke it, through God's long and costly work to mend it by choosing one family, then one nation, then one king, and finally through Jesus of Nazareth, to a new creation where God lives with his people for good.",
+        "The page this session opens tells that story in eleven parts, and places every chapter of the Bible in the part where it happened: a prophet in the reign he names, a letter during Paul's travels. Where a date is debated, it says so. Reading this way helps with the parts that seem to stand alone. A psalm makes more sense beside the event it remembers, and a prophet makes more sense when you know which king he was speaking to. Jesus read the Scriptures this way himself, “beginning with Moses and all the Prophets” (Luke 24:27)."
+      ],
+      "open": {
+        "kind": "bible",
+        "label": "The Bible's story in eleven parts",
+        "href": "/study/bible/story",
+        "why": "The whole Bible as one story, from creation to the new creation, with every chapter placed in the part of the story where it happened."
+      },
+      "also": [
+        {
+          "kind": "plan",
+          "label": "The whole story in 2027",
+          "href": "/study/bible/guides/whole-story-2027",
+          "why": "Every chapter of the Bible in a year, beginning January 1, 2027, in the order of the story."
+        }
+      ],
+      "question": "Where do you find yourself in the Bible's story, and which part of it do you know least?",
+      "do": "Read the story's opening page and the summary of each of its eleven parts. Choose the part you know least, and read its first three chapters in the order the page gives.",
+      "verse": {
+        "ref": "Luke 24:27",
+        "text": "And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself."
+      },
+      "group": {
+        "open": "What is a story you know so well that you could tell it from memory?",
+        "discuss": [
+          "Which of the eleven parts of the story was taught least in the churches you have known?",
+          "How does it change a psalm or a prophecy to know where it sits in the story?",
+          "Jesus explained the Scriptures to two followers as being about himself. How might that change the way you read the Old Testament?"
+        ],
+        "pray": "Give thanks that the story runs toward a new creation, and ask to see where your own life sits inside it."
+      }
+    },
+    {
+      "n": 5,
+      "title": "The world it was written in",
+      "minutes": 10,
+      "teaching": [
+        "The Bible was not written in English, or in this century, or to readers like you. Its first readers lived under kings and emperors, in a world of patrons and clients, temples and treaties, where the community's verdict was the heaviest thing a person carried. Knowing that world doesn't replace reading the text. It lets you hear what the first readers heard. The guides on this site to the world behind the Bible show the difference it makes, and the one this session opens takes a verse nearly everyone knows.",
+        "“I can do all things through Christ who gives me strength” (Philippians 4:13) is written on wristbands and gym walls. Read in its place, it sits in a thank-you note from a prisoner, straight after a sentence about hunger: “I know how to live humbly, and I know how to abound” (Philippians 4:12). The guide shows that the all things are hunger and plenty, chains included, and that the verse promises Christ's strength for the life you actually have, not the win. Then it reads the next verse, where Paul thanks the church for sharing his trouble."
+      ],
+      "open": {
+        "kind": "context",
+        "label": "What does Philippians 4:13 really mean?",
+        "href": "/resources/context/philippians-4-13-in-context",
+        "why": "One of the most quoted verses, read where Paul set it: in chains, inside a thank-you note, straight after a sentence about hunger."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "The world the Bible was written in",
+          "href": "/resources/context",
+          "why": "Guides to the world behind the Bible: law codes and treaties, temple and synagogue, honour and shame, and the verses everyone quotes."
+        }
+      ],
+      "question": "What verse have you heard quoted so often that you have never read it in its chapter?",
+      "do": "Read Philippians 4:4-20 in one sitting. Then choose another verse you know by heart, read the whole chapter around it, and write down whether it says what you thought it said.",
+      "verse": {
+        "ref": "Philippians 4:13",
+        "text": "I can do all things through Christ who gives me strength."
+      },
+      "group": {
+        "open": "What is something you misunderstood as a child because you didn't know the world it came from?",
+        "discuss": [
+          "Why do you think Philippians 4:13 travels so far from its chapter?",
+          "The guide says the verse promises Christ's strength, not the outcome. What difference does that make in a hospital, or after a loss?",
+          "Paul had learned contentment, and the church sent him help anyway. What does that say about how Christians should treat someone in need?"
+        ],
+        "pray": "Pray for anyone in the group facing hunger or plenty this week, for strength in either, and for the generosity the Philippians showed."
+      }
+    },
+    {
+      "n": 6,
+      "title": "One doctrine, followed through",
+      "minutes": 10,
+      "teaching": [
+        "A doctrine is what the whole Bible teaches on one subject, gathered from every place it speaks. Reading that way guards against two easy mistakes: building a belief on one verse, and ignoring the verses that pull the other way. The studies this session opens follow each subject from the Old Testament to the New, show how the church has confessed it, say where Christians differ, and name the misunderstandings the church has rejected.",
+        "Choose one doctrine and follow it all the way through. Take the resurrection of Jesus, or union with Christ, or the Holy Spirit, and read its study from beginning to end, then read two of its key texts in their own chapters. The point is not to collect opinions. It is to watch a teaching grow across the whole Bible, the way a river is fed by many streams. Jesus said of the Scriptures, “These are the very words that testify about Me” (John 5:39), and the doctrines, followed far enough, keep leading back to him."
+      ],
+      "open": {
+        "kind": "bible",
+        "label": "The doctrines of the Bible",
+        "href": "/study/bible/doctrines",
+        "why": "What the whole Bible teaches on one subject at a time, from the Old Testament to the New, with how the church has confessed it and where Christians differ."
+      },
+      "question": "Which doctrine do you hold most firmly, and how many places in the Bible could you show it from?",
+      "do": "Choose one doctrine from the list and read its whole study, from what it is to why it matters. Then read two of its key texts in their chapters, and write the doctrine in two sentences of your own.",
+      "verse": {
+        "ref": "Acts 20:27",
+        "text": "For I did not shrink back from declaring to you the whole will of God."
+      },
+      "group": {
+        "open": "What did you believe about God as a child that you now hold differently?",
+        "discuss": [
+          "Why is it risky to build a belief on a single verse?",
+          "What did the doctrine you chose look like in the Old Testament, before the New Testament said more?",
+          "The studies name misunderstandings the church has rejected. Why might it help to know what a doctrine does not mean?"
+        ],
+        "pray": "Give thanks for what the doctrine you studied shows you about God, and ask to hold it humbly and to live by it."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The words the church confessed",
+      "minutes": 10,
+      "teaching": [
+        "Christians have always summed up their faith in words they could say together. The New Testament already holds some of them, like “Jesus is Lord” (Romans 10:9), and the church went on writing them when its faith was challenged. In the early fourth century a teacher named Arius taught that the Son of God was the highest of creatures, glorious but made. In 325 the bishops at Nicaea answered him with one Greek word: the Son is of one substance with the Father. Not similar. The same God.",
+        "The creed said today is the form adopted at Constantinople in 381, and it is the most widely confessed statement of faith in Christian history: Orthodox, Catholic and most Protestant churches confess it. The library this session opens holds it with the Apostles' Creed, the Chalcedonian Definition and the confessions of the Reformation, each with notes on what its words were answering. A creed doesn't add to Scripture. It is the church saying, at a costly moment, what it heard Scripture say."
+      ],
+      "open": {
+        "kind": "creed",
+        "label": "Creeds and confessions",
+        "href": "/resources/creeds",
+        "why": "The full texts, from the Apostles' and Nicene Creeds to the confessions of the Reformation, with plain notes on the words that mattered most."
+      },
+      "also": [
+        {
+          "kind": "creed",
+          "label": "The Nicene Creed",
+          "href": "/resources/creeds/nicene-creed",
+          "why": "The creed of 381, with notes on Arius, the one Greek word that answered him, and the later Western addition that still divides East and West."
+        }
+      ],
+      "question": "If you had to say what you believe in three sentences, what would you keep, and what would you leave out?",
+      "do": "Read the Nicene Creed and its notes slowly. Mark the phrases about the Son, and look up one passage of Scripture behind them. Then read the creed aloud once.",
+      "verse": {
+        "ref": "1 Timothy 3:16",
+        "text": "By common confession, the mystery of godliness is great: He appeared in the flesh, was vindicated by the Spirit, was seen by angels, was proclaimed among the nations, was believed in throughout the world, was taken up in glory."
+      },
+      "group": {
+        "open": "Have you ever been asked to say what Christians believe in a few words? What did you say?",
+        "discuss": [
+          "Why did one Greek word matter so much at Nicaea? What would be lost if the Son were the highest of creatures?",
+          "Orthodox, Catholic and most Protestant churches all confess the Nicene Creed. What does that tell you about what Christians share?",
+          "How is saying a creed together different from reading it alone?"
+        ],
+        "pray": "Give thanks for the people who kept the faith's words clear at great cost, and ask to know the Son the creed confesses."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Two thousand years",
+      "minutes": 10,
+      "teaching": [
+        "The faith you hold reached you through two thousand years of other people. They copied the Scriptures, argued over them, gave their lives for them, and sometimes betrayed them. Knowing their story makes you less likely to mistake the habits of your own century for the faith itself, and more likely to recognize an old error when it comes back under a new name. The course this session opens takes that story in fourteen lessons, from Pentecost to the church since 1900.",
+        "It tells the story honestly. The martyrs and the monks are there, and so are the crusades, the inquisition, and the revival preachers who made their peace with slavery. The councils that wrote the creeds are told as a human story, with the pastoral and political pressures behind them, and the Reformation with both its recovery and its violence and division. By the end you can see where your own church came from, and what it inherited, good and bad."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "Church history",
+        "href": "/theology/history",
+        "why": "Two thousand years on one line, and a course of fourteen lessons in order, from Pentecost to the church since 1900."
+      },
+      "also": [
+        {
+          "kind": "history",
+          "label": "Nicaea to Chalcedon: the councils that wrote the creeds",
+          "href": "/theology/history/the-great-councils",
+          "why": "The pastoral and political pressures behind the church's defining decisions about Christ and God, told as a human story."
+        }
+      ],
+      "question": "Which part of the church's story do you know least, and why do you think no one taught it to you?",
+      "do": "Take one lesson of the course this week, the one nearest to where your own church came from. Write down one thing it inherited that you are grateful for, and one thing it would do well to repent of.",
+      "verse": {
+        "ref": "Hebrews 13:7",
+        "text": "Remember your leaders who spoke the word of God to you. Consider the outcome of their way of life and imitate their faith."
+      },
+      "group": {
+        "open": "Who first told you about Jesus, and who told them?",
+        "discuss": [
+          "Which lesson of the course surprised you most, and why?",
+          "What habits of our own century might we be mistaking for the faith itself?",
+          "How should Christians speak about the failures in their own history, without excusing them or despising the people involved?"
+        ],
+        "pray": "Give thanks for the people who handed the faith on, by name where you know them, and ask forgiveness where the church has done harm in Christ's name."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Where Christians differ",
+      "minutes": 10,
+      "teaching": [
+        "Not every disagreement among Christians matters in the same way, and the page this session opens marks each question by how much it matters. Some are of the first order, essential to the faith itself, like the Trinity. Some are of the second order: they divide faithful churches without dividing the faith, like baptism, or how God's rule and human freedom fit together. And some are of the third order, with room for both views inside one congregation, like the age of the earth.",
+        "Knowing which is which is a large part of wisdom. It keeps you from treating a second-order question as if the gospel stood or fell on it, and from treating a first-order one as a matter of taste. The page sets each view out side by side, in the opening of its own statement, with its case, its advocates and its key texts. Read the view you disagree with until you could state it in a way its own defenders would accept."
+      ],
+      "open": {
+        "kind": "compare",
+        "label": "Compare the views",
+        "href": "/theology/compare",
+        "why": "Pick a contested doctrine and lay its views side by side, each with its case, its advocates and its key texts."
+      },
+      "also": [
+        {
+          "kind": "compare",
+          "label": "Christian traditions",
+          "href": "/theology/traditions",
+          "why": "Why there are so many churches, and where each of them came from, from Catholic to Pentecostal."
+        }
+      ],
+      "question": "Which disagreement among Christians have you treated as more important, or less important, than it really is?",
+      "do": "Choose one doctrine on the page and read every view in its row. Then write the strongest case for the view you hold least, in two sentences its own defenders would sign.",
+      "verse": {
+        "ref": "Ephesians 4:2-3",
+        "text": "with all humility and gentleness, with patience, bearing with one another in love, and with diligence to preserve the unity of the Spirit through the bond of peace."
+      },
+      "group": {
+        "open": "Have you ever seen a friendship or a church strained by a disagreement about the faith?",
+        "discuss": [
+          "What makes a question first-order, and who decides?",
+          "Why might Christians who agree on the first-order questions still find it hard to share one church?",
+          "What does it look like to disagree about baptism or the end times and still treat one another as family?"
+        ],
+        "pray": "Pray by name for churches near you that differ from your own, and ask for humility about the questions you care about most."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Where you lean, and why",
+      "minutes": 10,
+      "teaching": [
+        "Most people hold their views on disputed questions the way they hold an accent: from the people who raised them, without ever choosing. That isn't wrong, but it is worth knowing. The page this session opens asks a few plain questions on one contested doctrine and shows which view you currently lean toward. It calls itself a mirror, not a verdict, and that is the right way to use it.",
+        "The aim is not a label to defend. It is to know why you hold what you hold, so that you can test it against Scripture and hold it with the right weight: firmly where the creeds are firm, and with an open hand where faithful Christians have long disagreed. Paul's word to the church in Rome, which was divided over food and holy days, still fits: “Each one should be fully convinced in his own mind” (Romans 14:5). In the same chapter he tells them not to look down on one another (Romans 14:3)."
+      ],
+      "open": {
+        "kind": "compare",
+        "label": "Where do you lean, and why?",
+        "href": "/theology/which-view",
+        "why": "Pick a contested doctrine, answer a few plain questions, and see which view you lean toward now. A mirror, not a verdict."
+      },
+      "question": "On the doctrine you chose, did you choose where you lean, or did you inherit it?",
+      "do": "Take the questions for one contested doctrine and see where you lean. Then read the full doctrine page, both for the view you lean toward and for the one furthest from it.",
+      "verse": {
+        "ref": "1 Thessalonians 5:21",
+        "text": "but test all things. Hold fast to what is good."
+      },
+      "group": {
+        "open": "What view did you hold firmly at twenty that you hold differently now?",
+        "discuss": [
+          "Did the result surprise you? What does it say about where your views came from?",
+          "Paul tells a divided church that each should be fully convinced in his own mind. Why does conviction matter even on second-order questions?",
+          "How do you hold a view firmly and still learn from people who hold another?"
+        ],
+        "pray": "Ask God for honesty about where your views came from, and for charity toward those who lean the other way."
+      }
+    },
+    {
+      "n": 11,
+      "title": "A rule of life",
+      "minutes": 10,
+      "teaching": [
+        "Study that never reaches the week becomes a hobby. The old practice of a rule of life is one way to keep that from happening. A rule, in this sense, is not a list of demands to fail at. The tool this session opens calls it a trellis: a few chosen rhythms you keep returning to, so that the life of God can grow up them. It might hold a fixed time of prayer, a little Scripture each day, a weekly day of rest, and one friend who knows the truth about you.",
+        "The first Christians in Jerusalem kept such rhythms: “They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer” (Acts 2:42). Going deeper is not only knowing more. You are formed by what you repeatedly do, as the tool puts it. So choose what you can actually sustain, and begin small. A rule kept for a year will do more than an ambitious one kept for a week."
+      ],
+      "open": {
+        "kind": "tool",
+        "label": "Build a rule of life",
+        "href": "/tools/rule-of-life",
+        "why": "Choose a few rhythms of prayer, Scripture, rest, community and generosity that you can keep. It remembers your choices on this device."
+      },
+      "question": "Which one rhythm, kept for a year, would change you most?",
+      "do": "Build a rule in the tool with no more than one rhythm in each area. Keep it where you will see it each morning, and look at it again in a month.",
+      "verse": {
+        "ref": "1 Timothy 4:8",
+        "text": "For physical exercise is of limited value, but godliness is valuable in every way, holding promise for the present life and for the one to come."
+      },
+      "group": {
+        "open": "What is one habit you kept for years without thinking about it?",
+        "discuss": [
+          "Why might a few rhythms kept faithfully do more than many begun with zeal?",
+          "Which of the tool's areas is weakest in your life now: prayer, Scripture, rest, community or generosity?",
+          "Who could you ask to hold you to your rule, and to tell you the truth about how it is going?"
+        ],
+        "pray": "Pray for each person's chosen rhythms by name, and give thanks that growth is God's work in us and not our achievement."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Hand it on",
+      "minutes": 10,
+      "teaching": [
+        "Going deeper was never meant to end with you. Paul told Timothy to hand on what he had learned: “And the things that you have heard me say among many witnesses, entrust these to faithful men who will be qualified to teach others as well” (2 Timothy 2:2). That is four links of a chain in one sentence: Paul, Timothy, faithful men, and others after them. Every Christian who has learned the faith learned it from someone who did this.",
+        "You don't need to be a scholar to lead a few people through a study. You need to have done the reading, to ask good questions, and to be willing to admit not knowing. The study guides this session opens each come with a leader's guide that has the answer behind every question, and each of the tracks on this site has a leader's guide too. Choose one, and choose two or three people to take through it."
+      ],
+      "open": {
+        "kind": "guide",
+        "label": "Small group study guides",
+        "href": "/studyguides",
+        "why": "Free study guides for a group or for one person reading alone, each with a leader's guide that has the answer behind every question."
+      },
+      "question": "Who taught you the faith, and who could you teach it to?",
+      "do": "Choose a study guide or a track, and ask one to three people to go through it with you. Set the date of the first meeting before the week is out.",
+      "verse": {
+        "ref": "2 Timothy 2:2",
+        "text": "And the things that you have heard me say among many witnesses, entrust these to faithful men who will be qualified to teach others as well."
+      },
+      "group": {
+        "open": "Who taught you something that you have since taught someone else?",
+        "discuss": [
+          "Paul names four links in the chain in one verse. Who are the links in yours?",
+          "What keeps people from leading a study, and which of those reasons are real?",
+          "What has this track given you that you would most want to hand on?"
+        ],
+        "pray": "Give thanks by name for the people who taught you the faith, and pray for the people each of you might take through a study next."
+      }
+    }
+  ]
+}

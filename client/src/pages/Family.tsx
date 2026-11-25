@@ -1,93 +1,188 @@
 /**
- * Family (/family): tonight's devotion first, then this week's catechism
- * question and the season's daily sets, then (from the Sunday before Advent
- * Sunday to Christmas) the Advent calendar card, then the library, the
- * catechism, reading plans, and the tools for the home.
+ * /family: the Family door, built the way /study is (components/art/README.md,
+ * "How a door's page is built").
  *
+ * 1. The page top: PageHead at the door size, with the house plate. Its
+ *    one action is tonight's card, straight under it.
+ * 2. The one thing to do first: tonight's devotion (TonightCard, with "Done
+ *    this week" once this device has it marked), beside the table plate, with
+ *    the weekly reminder under it. "A different night?" opens the three-tap
+ *    chooser (TonightChooser) in place; a link to /family#choose opens it.
+ * 3. The week at a glance (WeekGlance): the week's devotion, the family's
+ *    catechism question, today's reading, the season's daily sets. The Advent
+ *    card follows it in its window.
+ * 4. The rooms as picture cards: All family devotions, The family catechism,
+ *    Family reading plans.
+ * 5. The "How to" shelf (four groups, every link kept) and the teen years as
+ *    tiles; then the rest of the home (a table that looks different,
+ *    parenting, marriage, the tools) as four closed rows, every link kept.
+ *    The path to help stays open at the foot.
+ *
+ * The page was fifteen phone screens long. The two pull-quote bands and the
+ * long card descriptions are gone; no link and no path to help was removed.
  * Tonight comes from the static year map and the reader's own calendar
- * (lib/familyTable); the titles and this week's question come from the family
- * index (client/public/family/index.json, scripts/build-family-index.mjs).
- * The page no longer downloads the published-posts list: the four essay rows
- * it fed (teen-, apologetics-, parenting-, marriage-) were empty.
+ * (lib/familyTable); titles and the week's question from the family index.
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
+import {
+  Baby,
+  BookHeart,
+  CalendarRange,
+  ChevronDown,
+  Compass,
+  HeartHandshake,
+  Home as HomeIcon,
+  LifeBuoy,
+  Lightbulb,
+  MessagesSquare,
+  Sprout,
+  UsersRound,
+  Map as MapIcon,
+  Wrench,
+  type LucideIcon,
+} from "lucide-react";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import AdventAtTheTable from "@/components/AdventAtTheTable";
+import { RemindMe } from "@/components/RemindMe";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import { PageHead } from "@/components/editorial/PageHead";
-import { PullQuote, StatementBand, SectionArt } from "@/components/EditorialBlocks";
-import { CardGrid } from "@/components/editorial/CardGrid";
-import { SectionHead } from "@/components/editorial/SectionHead";
+import PageHead from "@/components/art/PageHead";
+import SectionHead from "@/components/art/SectionHead";
+import DoorCard from "@/components/art/DoorCard";
+import IconTile from "@/components/art/IconTile";
+import PlateFrame from "@/components/art/PlateFrame";
+import Plate, { type PlateName } from "@/components/art/Plate";
+import { followHash } from "@/lib/followHash";
 import { isPublicEssayHref } from "@/lib/shelf";
-import SubjectShelf from "@/components/SubjectShelf";
-import { subjectById } from "@/lib/subjects";
-import { localISODate } from "@/lib/familyYear";
-import { FAMILY_SETS } from "@/lib/familyYear.generated";
-import { catechismThisWeek, type FamilyIndex } from "@/lib/familyTable";
+import { entryById } from "@/lib/siteCatalog";
+import { toolName } from "@/lib/toolsList";
 import TonightCard from "./family/TonightCard";
+import TonightChooser from "./family/TonightChooser";
+import TableLooksDifferent from "./family/TableLooksDifferent";
+import WeekGlance from "./family/WeekGlance";
 import { useFamilyIndex } from "./family/useFamilyData";
+import "./home/home.css";
 
-const card = {
-  background: "var(--card)", border: "1px solid var(--border)",
-  borderRadius: "var(--radius-sm)", padding: "var(--s-4)", textDecoration: "none",
-  color: "inherit", display: "block",
-} as const;
+/** Bible Explorer's films, by the name every menu gives them (lib/siteCatalog). */
+const WATCH = entryById("bible.explorer-watch") ?? { name: "Watch and learn", href: "/study/explorer#watch" };
 
-/** The library tab for each daily set, and its name until the index says it (scripts/lib/family-index.mjs). */
-const SET_TAB = { thanksgiving: "thanksgiving", advent: "advent", holyWeek: "holy-week" } as const;
-const SET_NAME = { thanksgiving: "Thanksgiving week", advent: "Advent", holyWeek: "Holy Week" } as const;
+/** The rooms of the Family door, after Tonight, in the map's order. */
+const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] = [
+  { title: "All family devotions", note: "A year of weekly devotions, and the seasons", href: "/family/devotions", plate: "book" },
+  { title: "The family catechism", note: "One question and answer at a time", href: "/family/catechism", plate: "quill" },
+  { title: "Family reading plans", note: "A passage a day, together", href: "/family/reading-plans", plate: "sundial" },
+];
 
-const MONTH = new Intl.DateTimeFormat("en-US", { month: "long", timeZone: "UTC" });
-const dateParts = (iso: string) => ({ y: Number(iso.slice(0, 4)), m: MONTH.format(new Date(`${iso}T12:00:00Z`)), d: Number(iso.slice(8, 10)) });
+/**
+ * The "How to" shelf (audit 2026-11, F8): the first questions a parent asks,
+ * each answered by pieces that already exist. Titles are the pieces' own.
+ */
+const HOW_TO: { title: string; icon: LucideIcon; links: { href: string; label: string }[] }[] = [
+  {
+    title: "If you've never done this",
+    icon: Sprout,
+    links: [
+      { href: "/how-tos/parenting-how-to-start-family-worship", label: "How to Start Family Worship in Five Minutes" },
+      { href: "/how-tos/fam-how-to-start-family-worship", label: "How to Start Family Worship (and Keep It When It Falls Apart)" },
+      { href: "/how-tos/fam-how-to-pray-with-your-kids-at-bedtime", label: "How to Pray With Your Kids at Bedtime" },
+      { href: "/how-tos/fam-how-to-use-a-family-catechism", label: "How to Use a Family Catechism" },
+    ],
+  },
+  {
+    title: "If a child won't sit still",
+    icon: Baby,
+    links: [
+      { href: "/how-tos/fam-how-to-read-the-bible-with-young-children", label: "How to Read the Bible With Young Children" },
+      { href: "/help/family-devotions", label: "How do we do family devotions? For little ones, school-age kids, and teens" },
+    ],
+  },
+  {
+    title: "If you have a teenager",
+    icon: MessagesSquare,
+    links: [
+      { href: "/how-tos/fam-how-to-disciple-teenagers-at-home", label: "How to Disciple Teenagers at Home" },
+      { href: "/how-tos/parenting-how-to-stay-close-to-a-pulling-away-teenager", label: "How to Stay Close to a Teenager Who Is Pulling Away" },
+      { href: "/how-tos/parenting-how-to-answer-hard-questions-about-god", label: "How to Answer Your Child's Hard Questions About God" },
+    ],
+  },
+  {
+    title: "If your spouse doesn't believe",
+    icon: HeartHandshake,
+    links: [
+      { href: "/help/family-devotions", label: "My spouse isn't a Christian. Can I still do devotions with our kids?" },
+      { href: "/study/bible/1-corinthians/7", label: "1 Corinthians 7 in the Study Bible, with notes" },
+    ],
+  },
+];
 
-/** "November 20 to 26", "March 29 to April 5", with the year when it is not this one. */
-function spanSaid(start: string, end: string, thisYear: number): string {
-  const a = dateParts(start);
-  const b = dateParts(end);
-  const tail = b.y !== thisYear ? `, ${b.y}` : "";
-  return a.m === b.m ? `${a.m} ${a.d} to ${b.d}${tail}` : `${a.m} ${a.d} to ${b.m} ${b.d}${tail}`;
-}
+/** The teen years: the pieces written for them (audit 2026-11, F7). */
+const TEENS = [
+  { href: "/family/devotions", name: "Older questions on every devotion", line: "Choose Older at the Ask step", icon: MessagesSquare },
+  { href: "/tools/parent-teen-conversation", name: toolName("parent-teen"), line: "Answer apart, then talk", icon: UsersRound },
+  { href: "/how-tos/fam-how-to-disciple-teenagers-at-home", name: "How to disciple teenagers at home", line: "A guide for parents", icon: Compass },
+  { href: "/how-tos/parenting-how-to-stay-close-to-a-pulling-away-teenager", name: "Stay close to a teen pulling away", line: "A guide for parents", icon: HeartHandshake },
+  { href: "/tools/family-devotions", name: toolName("family-devotions"), line: "Pick Teens (12-18) and a theme", icon: BookHeart },
+  ...(SKEPTIC_TRACK_LIVE ? [{ href: "/skeptic-track", name: "Start here if you're a skeptic", line: "Seven essays, in order", icon: Lightbulb }] : []),
+  { href: "/answers", name: "On doubt and hard questions", line: "Read them together", icon: Lightbulb },
+];
 
-/** This week's catechism question, and the daily sets running now or next (from the static year map, so they need no network). */
-function ThisWeek({ index }: { index: FamilyIndex | null }) {
-  const [today] = useState(() => localISODate());
-  const line = index ? catechismThisWeek(index.catechism) : null;
-  const sets = FAMILY_SETS.filter((w) => w.end >= today).slice(0, 2);
-  const year = Number(today.slice(0, 4));
+/** The rest of the home, each a closed row of links. */
+const MORE: { title: string; icon: LucideIcon; links: { href: string; label: string }[] }[] = [
+  {
+    title: "Parenting",
+    icon: Baby,
+    links: [
+      { href: "/wisdom/parenting-struggles", label: "What the Bible says about parenting" },
+      { href: "/help/parenting", label: "When parenting is hard" },
+      { href: "/tools/parenting-guide", label: toolName("parenting-guide") },
+      { href: "/writing/what-fatherhood-requires", label: "What fatherhood requires" },
+      { href: "/life/raising-children-in-grace", label: "Raising children in grace" },
+      { href: "/life/the-home-and-the-family", label: "The home and the family" },
+    ].filter((l) => isPublicEssayHref(l.href)),
+  },
+  {
+    title: "Marriage",
+    icon: HeartHandshake,
+    links: [
+      { href: "/help/marriage", label: "When a marriage is in trouble" },
+      { href: "/tools/marriage-assessment", label: toolName("marriage") },
+      { href: "/writing/covenant-vs-contract-what-marriage-is", label: "Covenant vs. contract" },
+      { href: "/life/marriage-the-long-covenant", label: "Marriage: the long covenant" },
+    ].filter((l) => isPublicEssayHref(l.href)),
+  },
+  {
+    title: "Tools for the home",
+    icon: Wrench,
+    links: [
+      { href: "/tools/wisdom-finder", label: toolName("wisdom-finder") },
+      { href: "/tools/family-devotions", label: toolName("family-devotions") },
+      { href: "/tools/prayer-generator", label: toolName("prayer-generator") },
+      { href: "/tools/rule-of-life", label: toolName("rule-of-life") },
+      { href: "/tools", label: "Every tool" },
+    ],
+  },
+];
+
+/** "A different night?": the three-tap chooser, opened in place, or by a link to #choose. */
+function DifferentNight({ index }: { index: Parameters<typeof TonightChooser>[0]["index"] }) {
+  const [open, setOpen] = useState(() => typeof window !== "undefined" && window.location.hash === "#choose");
+  useEffect(() => {
+    const onHash = () => {
+      if (window.location.hash === "#choose") setOpen(true);
+    };
+    window.addEventListener("hashchange", onHash);
+    return () => window.removeEventListener("hashchange", onHash);
+  }, []);
   return (
-    <div className="tb-week">
-      <div>
-        <h2 className="tb-section__title">This week</h2>
-        {line && (
-          <>
-            <p className="tb-label">The catechism · Question {line.number}</p>
-            <p className="tb-week__q">{line.question}</p>
-            <Link href="/family/catechism" className="tb-link">
-              Learn it together
-            </Link>
-          </>
-        )}
-      </div>
-      <div>
-        <h2 className="tb-section__title">The season</h2>
-        {sets.length > 0 && (
-          <ul className="tb-sets">
-            {sets.map((w) => (
-              <li key={w.start}>
-                <Link href={`/family/devotions?tab=${SET_TAB[w.set]}`}>
-                  <span className="tb-sets__name">{index?.sets[w.set]?.label ?? SET_NAME[w.set]}</span>
-                  <span className="tb-sets__when">
-                    {spanSaid(w.start, w.end, year)}
-                    {w.start <= today ? " · now" : ""}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        )}
+    <div className="fm-other">
+      <button type="button" className="fm-other__btn" aria-expanded={open} aria-controls="fm-choose" onClick={() => setOpen((o) => !o)}>
+        <Compass aria-hidden="true" size={20} strokeWidth={1.75} />
+        A different night? Choose in three taps
+        <ChevronDown aria-hidden="true" size={18} strokeWidth={1.75} className="fm-chev" />
+      </button>
+      <div id="fm-choose" hidden={!open}>
+        {open && <TonightChooser index={index} />}
       </div>
     </div>
   );
@@ -100,158 +195,170 @@ export default function Family() {
   return (
     <Layout>
       <SEOMeta
-        title="Family Discipleship — Devotions, Apologetics, and Parenting"
-        description="Everything a family needs to grow in faith together: devotions you can do with your kids, teen apologetics on why we believe, parenting Scripture, and marriage."
+        title="Family Devotions and Discipling Your Kids"
+        description="For a family growing in faith together: devotions to do with your kids, a catechism, reading plans, help for teenagers' questions, and marriage."
         url="https://www.livewellbyjamesbell.co/family"
       />
 
-      <PageHead eyebrow="Family" title="Disciple your whole family, in one place." lede="Devotions you can actually do with your kids." />
+      <PageHead
+        size="door"
+        door="Family"
+        title="Faith at the family table"
+        line="A devotion for tonight, a question to learn, a passage to read together."
+        plate="house"
+      />
 
-      {/* TONIGHT */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-4) 16px var(--s-5)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <TonightCard index={state} retry={retry} />
+      {/* FIRST: tonight's devotion, beside the table plate. */}
+      <section className="home-sec home-sec--warm fm-tonight" aria-label="Tonight">
+        <div className="home-wrap fm-two">
+          <div>
+            <TonightCard index={state} retry={retry} />
+            {/* A weekly reminder in the family's own calendar, back to tonight's devotion (U21). */}
+            <RemindMe
+              title="Family devotion"
+              details="Tonight's family devotion: a passage, a question to talk about, and a prayer, in about ten minutes."
+              href="/family/tonight"
+              freq="WEEKLY"
+              count={52}
+              schedule="once a week for a year"
+            />
+            <DifferentNight index={index} />
+          </div>
+          <PlateFrame className="fm-two__art" ratio={null}>
+            <Plate name="table" decorative />
+          </PlateFrame>
         </div>
       </section>
 
-      {/* THIS WEEK AND THE SEASON */}
+      {/* THE WEEK AT A GLANCE */}
       {state.status !== "failed" && (
-        <section style={{ background: "var(--bone-warm)", padding: "var(--s-5) 16px" }}>
-          <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-            <ThisWeek index={index} />
+        <section className="home-sec fm-week" aria-labelledby="fm-week-title">
+          <div className="home-wrap">
+            <SectionHead icon={CalendarRange} label="This week" title="The week at a glance." id="fm-week-title" />
+            <WeekGlance index={index} />
           </div>
         </section>
       )}
 
-      {/* ADVENT: from the Sunday before Advent Sunday to Christmas only. It
-          reads the year map, not the index, so it shows even if that fails. */}
+      {/* ADVENT: from the Sunday before Advent Sunday to Christmas only. */}
       <AdventAtTheTable variant="card" />
 
-      {/* CATECHISM — featured */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) 0" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <Link href="/family/catechism" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)" }}>
-            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Learn the faith together</div>
-            <div style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>
-              The Family Catechism
-            </div>
-            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "12px" }}>
-              Seventy-six questions, one a week, in the New City Catechism tradition. An answer for the grown-ups and one for the little ones, a verse, a short reflection, and a prayer. The oldest way a family has ever learned the faith.
-            </p>
-            <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
-              Start the catechism <ArrowRight size={14} />
+      {/* THE ROOMS */}
+      <section className="home-sec home-sec--warm" aria-labelledby="fm-rooms-title">
+        <div className="home-wrap">
+          <SectionHead icon={HomeIcon} label="The rooms" title="Everything for the table." id="fm-rooms-title" />
+          <ul className="lw-rooms">
+            {ROOMS.map((r) => (
+              <li key={r.href}>
+                <DoorCard {...r} />
+              </li>
+            ))}
+          </ul>
+          <p className="lw-newline">
+            <MapIcon aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              For ages 7 to 16: <Link href="/study/explorer">Bible Explorer</Link>, the whole Bible as one story on one illustrated map, and{" "}
+              {/* Its films sit six phone screens down the map's page, so the line goes straight to them (walk 2026-11, finding 21). */}
+              <Link href={WATCH.href} onClick={() => followHash(WATCH.href)}>
+                {WATCH.name}
+              </Link>
+              , its short films to watch together.
             </span>
-          </Link>
+          </p>
         </div>
       </section>
 
-      {/* FAMILY DEVOTIONS: the library, a page per devotion */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead eyebrow="Do this together" title="Family devotions" intro="Short devotions for the table or the couch: a passage, a question that starts a conversation, something to do together, and a prayer a child can pray." />
-          <CardGrid
-            label="Family devotions"
-            items={[
-              { href: "/family/devotions", title: "Every family devotion", dek: "Seventy-two weekly devotions, more than a year of them, plus daily readings for Thanksgiving week, Advent, and Holy Week. Each has its own page to send or print." },
-              { href: "/tools/family-devotions", title: "Build a family devotion", dek: "Pick your kids' ages and a theme and get a complete 15-minute devotion with Scripture, teaching, an activity, and a prayer." },
-            ]}
-          />
-        </div>
-      </section>
-
-      <StatementBand tone="dark" eyebrow="The oldest classroom">
-        The faith is handed down on purpose, at the table, or it is not handed down at all.
-      </StatementBand>
-
-      {/* READING PLANS */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) 0" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <Link href="/family/reading-plans" style={{ ...card, borderTop: "2px solid var(--mustard)", padding: "var(--s-5)" }}>
-            <div className="eyebrow" style={{ color: "var(--mustard-text)", marginBottom: "10px" }}>Read it together</div>
-            <div style={{ fontFamily: "var(--F)", fontSize: "clamp(24px, 3.5vw, 32px)", fontWeight: 400, letterSpacing: "-0.02em", color: "var(--ink)", marginBottom: "10px" }}>
-              Family Bible reading plans
-            </div>
-            <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "64ch", marginBottom: "12px" }}>
-              A passage a day and a short prompt. Walk the life of Jesus, the great Old Testament story for kids, the Psalms, or a starter plan if your family is beginning or beginning again.
-            </p>
-            <span style={{ fontFamily: "var(--U)", fontSize: "13px", fontWeight: 600, color: "var(--mustard-text)", display: "inline-flex", alignItems: "center", gap: "6px" }}>
-              Browse the plans <ArrowRight size={14} />
+      {/* HOW TO: the first questions a parent asks, every link kept. */}
+      <section className="home-sec" aria-labelledby="fm-howto-title">
+        <div className="home-wrap">
+          <SectionHead icon={Lightbulb} label="How to" title="Help for the hard parts." id="fm-howto-title" />
+          <ul className="fm-howto">
+            {HOW_TO.map(({ title, icon: Icon, links }) => (
+              <li key={title}>
+                <h3 className="fm-howto__title">
+                  <span className="lw-tile__icon" aria-hidden="true">
+                    <Icon size={22} strokeWidth={1.75} />
+                  </span>
+                  {title}
+                </h3>
+                <ul className="fm-links">
+                  {links.map((l) => (
+                    <li key={l.label}>
+                      <Link href={l.href}>{l.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+          <p className="lw-newline">
+            <Sprout aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              Why it matters: <Link href="/topics/raising-children-in-a-secular-age">How do we hand the faith to our kids in a secular age?</Link>
             </span>
-          </Link>
+          </p>
         </div>
       </section>
 
-      {/* TEEN APOLOGETICS */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead eyebrow="For teenagers" title="Why we believe" intro="Faith does not survive on what alone. A teenager needs the why. Honest answers to the hard questions — the resurrection, the Bible, suffering, science, other religions, and doubt itself." />
-          <CardGrid
-            min={440}
-            items={[
-              ...(SKEPTIC_TRACK_LIVE
-                ? [{ href: "/skeptic-track", title: "Start here if you're a skeptic", dek: "Seven essays in argument order, for anyone working out whether this is true." }]
-                : []),
-              { href: "/answers", title: "On doubt and hard questions", dek: "Doubt is not the enemy of faith. Short, honest answers to the questions." },
-            ]}
-          />
+      {/* THE TEEN YEARS */}
+      <section className="home-sec home-sec--warm" aria-labelledby="fm-teens-title">
+        <div className="home-wrap">
+          <SectionHead icon={MessagesSquare} label="For teenagers" title="The teen years." id="fm-teens-title" />
+          <ul className="lw-tiles">
+            {TEENS.map((t) => (
+              <li key={t.name}>
+                <IconTile {...t} />
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
-      <PullQuote>The household is the first church a child ever attends.</PullQuote>
-
-      {/* PARENTING */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead eyebrow="Raising them in the faith" title="Parenting" intro="The work no one applauds, done where no congregation watches. Scripture for the real moments, plus writing and tools for the long obedience of raising children who can carry weight." />
-          <CardGrid
-            label="Parenting guides and tools"
-            items={[
-              { href: "/tools/parenting-verses", title: "Parenting Bible verses", dek: "Scripture for fear, anger, identity, obedience, screens, and doubt — each with a short note for the parent." },
-              { href: "/help/parenting", title: "When parenting is hard", dek: "For worn-out parents of little ones, of a teen who has gone quiet, or of a grown child who has left the faith." },
-              { href: "/tools/parenting-guide", title: "Parenting stage guide", dek: "Age-specific guidance from toddlers to young adults, and one practice to start this week." },
-              { href: "/writing/what-fatherhood-requires", title: "What fatherhood requires", dek: "On the inheritance you pass down, and the one you choose to break." },
-              { href: "/life/raising-children-in-grace", title: "Raising children in grace", dek: "The deep guide: discipline that reaches the heart, faith, screens, and the teen years. You cannot save your children, and you were never meant to." },
-              { href: "/life/the-home-and-the-family", title: "The home and the family", dek: "The household as a school of grace: the table, family worship, and the open door." },
-            ].filter((item) => isPublicEssayHref(item.href))}
-          />
+      {/* THE REST OF THE HOME, closed until opened; every link kept. Then help. */}
+      <section className="home-sec" aria-labelledby="fm-more-title">
+        <div className="home-wrap">
+          <SectionHead icon={HomeIcon} label="More for the home" title="For every kind of home." id="fm-more-title" />
+          <div className="fm-more">
+            <details className="fm-fold">
+              <summary>
+                <span className="lw-tile__icon" aria-hidden="true">
+                  <UsersRound size={22} strokeWidth={1.75} />
+                </span>
+                If your table looks different
+                <ChevronDown aria-hidden="true" size={18} strokeWidth={1.75} className="fm-chev" />
+              </summary>
+              <div className="fm-fold__body">
+                <TableLooksDifferent />
+              </div>
+            </details>
+            {MORE.map(({ title, icon: Icon, links }) => (
+              <details key={title} className="fm-fold">
+                <summary>
+                  <span className="lw-tile__icon" aria-hidden="true">
+                    <Icon size={22} strokeWidth={1.75} />
+                  </span>
+                  {title}
+                  <ChevronDown aria-hidden="true" size={18} strokeWidth={1.75} className="fm-chev" />
+                </summary>
+                <ul className="fm-links fm-fold__body">
+                  {links.map((l) => (
+                    <li key={l.href}>
+                      <Link href={l.href}>{l.label}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            ))}
+          </div>
+          <p className="lw-newline fm-help">
+            <LifeBuoy aria-hidden="true" size={22} strokeWidth={1.75} />
+            <span>
+              A hard season at home? <Link href="/help">Find help for what you are facing</Link>. If you are afraid of someone at home,{" "}
+              <Link href="/help#help-now">the help lines are here</Link>.
+            </span>
+          </p>
         </div>
       </section>
-
-      {/* MARRIAGE */}
-      <section style={{ background: "var(--bone-warm)", padding: "var(--s-6) var(--s-4) var(--s-5)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionHead eyebrow="The center of the home" title="Marriage" intro="A home is built on a covenant before it is built on anything else. Writing and a real assessment for the marriage your family is standing on." />
-          <CardGrid
-            min={440}
-            label="Marriage guides and tools"
-            items={[
-              { href: "/help/marriage", title: "When a marriage is in trouble", dek: "For the marriage that has gone cold, loud, or broken, and for anyone afraid at home: safety first, then real help." },
-              { href: "/tools/marriage-assessment", title: "Marriage health assessment", dek: "A 15-question diagnostic across communication, trust, conflict, and shared vision." },
-              { href: "/writing/covenant-vs-contract-what-marriage-is", title: "Covenant vs. contract", dek: "What marriage actually is, and why the difference holds it together." },
-              { href: "/life/marriage-the-long-covenant", title: "Marriage: the long covenant", dek: "The deep guide: the slow drift, conflict, money, desire, and the daily work of staying married well." },
-            ].filter((item) => isPublicEssayHref(item.href))}
-          />
-        </div>
-      </section>
-
-      {/* TOOLS */}
-      <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
-        <div style={{ maxWidth: "var(--w-default)", margin: "0 auto" }}>
-          <SectionArt seed="family-tools" />
-          <SectionHead eyebrow="For the home" title="Tools" intro="Practical tools to use around the table and through the week." />
-          <CardGrid
-            label="Tools for the home"
-            items={[
-              { href: "/tools/verse-finder", title: "Bible verse finder", dek: "Find Scripture for any season — anxiety, grief, hope, courage — and share it." },
-              { href: "/tools/family-devotions", title: "Family devotion builder", dek: "Build a 15-minute devotion by your kids' ages and a theme." },
-              { href: "/tools/bible-study", title: "Bible study guide", dek: "Study any book of the Bible with themes, questions, and reading strategies." },
-              { href: "/tools/prayer-generator", title: "Prayer generator", dek: "Guided prayers for morning, evening, strength, guidance, and gratitude." },
-              { href: "/tools/rule-of-life", title: "Rule of life builder", dek: "Build a sustainable rhythm of prayer, Scripture, rest, community, and mission you can actually keep." },
-            ]}
-          />
-        </div>
-      </section>
-      {subjectById("family") && <SubjectShelf subject={subjectById("family")!} />}
     </Layout>
   );
 }

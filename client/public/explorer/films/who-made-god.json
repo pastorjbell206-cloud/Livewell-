@@ -1,0 +1,84 @@
+{
+  "slug": "who-made-god",
+  "title": "Who made God?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "creation",
+  "line": {
+    "younger": "A real question, taken seriously, in six pictures: everything we know came from something, so where did God come from?",
+    "older": "A child's honest question, taken seriously in six pictures: why anything is here at all, and why the Bible says God has no beginning."
+  },
+  "poster": "A row of rings joined like a chain: a tree, the seed it grew from, another tree, the earth and the sun, running back to the left into a ring with a question mark. A small gold ring sits above the first tree.",
+  "frames": [
+    {
+      "id": "from-something",
+      "name": "From something",
+      "still": "A tree in a ring on the right. Beside it, joined to it like the next link of a chain, the seed it grew from. A small gold ring has moved from the tree to the seed.",
+      "younger": "Everything we know of came from something. You came from your parents. A tree came from a seed, and the seed came from another tree.",
+      "older": "Start with what everyone sees. Everything we meet has an explanation outside itself: you have parents, the tree had a seed, the seed had a tree."
+    },
+    {
+      "id": "back",
+      "name": "Follow it back",
+      "still": "The chain runs back to the left: the seed, another tree, the earth, the sun, and then dots running off the edge of the picture. The gold ring has gone all the way to the dots.",
+      "younger": "Follow it back. The seed came from a tree. The tree grew on the earth. The earth goes round the sun, and the sun is part of the whole universe. Each one depends on something before it.",
+      "older": "Follow the line back and it keeps going: seed and tree, the earth, the sun, the whole universe of space, time, matter and energy. Every link depends on something else."
+    },
+    {
+      "id": "why-anything",
+      "name": "Why anything at all?",
+      "still": "The whole chain, made smaller, now sits inside a frame in the middle of an empty page.",
+      "younger": "Here is the big question. The whole chain, the whole universe, did not have to be here at all. So why is there anything at all, instead of nothing?",
+      "older": "Now step back and look at the whole chain. The universe could have been different, or not been at all. In 1714 Leibniz called this the first question we have a right to ask: why is there something rather than nothing? Even a chain that went back for ever would not answer it. A longer chain is still a chain that needs explaining."
+    },
+    {
+      "id": "not-a-link",
+      "name": "Not one more link",
+      "still": "Light comes into the picture from beyond its top edge, and the framed chain rests in it. The light is not one of the links, and it has no edge inside the picture.",
+      "younger": "So the answer cannot be one more thing in the chain, or we would ask where that came from too. Christians believe God is not the first link in the chain. He is the one who made there be a chain at all. Nothing made him.",
+      "older": "That is why asking who made God is a fair question about the wrong kind of answer. Every account of the world has to stop somewhere. The universe could have not been. God is the one who could not fail to be. He is not a very large thing inside the universe, needing a maker in his turn; he is the reason there is anything at all."
+    },
+    {
+      "id": "everlasting",
+      "name": "No beginning, no end",
+      "still": "Mountains rise along the bottom of the picture. A line of gold light runs right across it and off both edges, with no start and no end. The framed chain rests in the light above the mountains.",
+      "younger": "The family catechism says it simply: God is the Spirit who never began and never ends. Long before the mountains, before the earth, God was there, and he always will be.",
+      "older": "The Bible says the same in its own words. Before the mountains were born, God already is. God does not get older, and nothing keeps him going. He is not made of anything, because nothing made him.",
+      "verse": {
+        "ref": "Psalm 90:2",
+        "text": "Before the mountains were born or You brought forth the earth and the world, from everlasting to everlasting You are God."
+      }
+    },
+    {
+      "id": "i-am",
+      "name": "I AM",
+      "still": "In front of the mountains a small bush is on fire with a gold flame, and it is not burning up. The framed chain is still above.",
+      "younger": "When Moses asked God his name, God said, “I AM WHO I AM.” God simply is. It is all right if that is hard to imagine. God is bigger than our minds can hold, and that is part of the wonder.",
+      "older": "At the burning bush, which burned and was not burned up, Moses asks for God's name, and the answer is “I AM WHO I AM” (Exodus 3:14). Thinkers have argued about these questions for a very long time, and careful people still disagree. It is all right for this to be hard to imagine. A God we could picture easily would be one more thing in the chain.",
+      "say": {
+        "older": "At the burning bush, which burned and was not burned up, Moses asks for God's name, and the answer is “I AM WHO I AM”. Thinkers have argued about these questions for a very long time, and careful people still disagree. It is all right for this to be hard to imagine. A God we could picture easily would be one more thing in the chain."
+      },
+      "verse": {
+        "ref": "Exodus 3:14",
+        "text": "God said to Moses, “I AM WHO I AM. This is what you are to say to the Israelites: ‘I AM has sent me to you.’”"
+      }
+    }
+  ],
+  "think": {
+    "younger": "What is the hardest part of this to imagine? Ask a parent or a leader what they think.",
+    "older": "Every explanation has to stop somewhere. Where do you think it stops, and why?"
+  },
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Exodus 3", "href": "/study/bible/exodus/3" },
+    { "label": "Psalm 90", "href": "/study/bible/psalms/90" },
+    { "label": "Acts 17", "href": "/study/bible/acts/17" }
+  ],
+  "stops": ["creation"],
+  "cards": ["god"],
+  "deeper": [
+    { "label": "Does God actually exist? (an Honest Answer, with the case against at its strongest)", "href": "/answers/does-god-actually-exist" },
+    { "label": "What is God? (the family catechism)", "href": "/family/catechism#q3" }
+  ],
+  "end": { "label": "Go to the stop: Creation", "href": "/study/explorer/creation" }
+}

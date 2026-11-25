@@ -17,6 +17,19 @@ import STATIC_LIBRARY from "./static-library.generated.js";
 // (client/src/lib/shelf.ts reads the same file). Only the RSS feed consults it
 // here; the listings are filtered on the client and in the build scripts.
 import SHELF_DATA from "../client/src/lib/shelf.json" with { type: "json" };
+// The committed index of essay files (client/public/essays), for the feed.
+import { ESSAY_OVERRIDES } from "../client/src/lib/essayOverrides.generated.js";
+// The newest Substack titles (substack.latest): titles, dates and links only,
+// [] on any failure. Pure and dependency-free; the dev router uses the same file.
+import { createSubstackCache } from "../shared/substackLatest.js";
+// Gifts (/support): the amounts, the one check and the Stripe request, shared
+// with the dev router (server/giving-router.ts); and the page's own switch.
+import { GIVING_CLOSED_MESSAGE, checkGift, giftCheckoutParams } from "../shared/giving.js";
+import GIVING_FACTS from "../client/src/lib/giving.json" with { type: "json" };
+// Suggested gifts on downloads: the amounts, the check and the Stripe request
+// (shared with the dev router), and the list of what can be downloaded.
+import { checkDownloadGift, downloadGiftCheckoutParams } from "../shared/downloads.js";
+import DOWNLOAD_ITEMS from "../shared/download-items.json" with { type: "json" };
 import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import Stripe from "stripe";
@@ -541,7 +554,7 @@ const EBOOK_CATALOG: Array<{ slug: string; title: string; description: string; c
   { slug: "sermon-on-the-mount-as-politics", title: "The Sermon on the Mount as Politics", description: "The Sermon read as the constitution of the kingdom, not private inner life. Power, money, enemies, truth, and the poor.", cover: "/books/sermon-on-the-mount-as-politics.svg", url: "/sermon-on-the-mount-as-politics" },
   { slug: "prophetic-justice-101", title: "Prophetic Justice 101", description: "Mishpat, tsedaqah, Micah 6:8, and what the church owes its neighborhood. The prophetic tradition recovered, never partisan.", cover: "/books/prophetic-justice-101.svg", url: "/prophetic-justice-101" },
   { slug: "marriage-in-ministry", title: "Marriage in Ministry", description: "Protecting the covenant when the church demands everything, and the pressures the parsonage puts on a marriage.", cover: "/books/marriage-in-ministry.svg", url: "/marriage-in-ministry" },
-  { slug: "the-loneliness-of-the-pastor", title: "The Loneliness of the Pastor", description: "Why pastors quit, and the brotherhood that could let them stay. The book the Pastors Connection Network was built around.", cover: "/books/the-loneliness-of-the-pastor.svg", url: "/the-loneliness-of-the-pastor" },
+  { slug: "the-loneliness-of-the-pastor", title: "The Loneliness of the Pastor", description: "Why pastors quit, and the brotherhood that could let them stay.", cover: "/books/the-loneliness-of-the-pastor.svg", url: "/the-loneliness-of-the-pastor" },
   { slug: "healwell", title: "HealWell: 52 Weeks in Costly Hope", description: "A year of honest devotionals for tired believers, written from inside the wound and pointed toward a costly hope.", cover: "/books/healwell.svg", url: "/healwell" },
   { slug: "why-not-what", title: "Why Not What", description: "How theology starts with the right question. Why before what, the order the whole Bible insists on.", cover: "/books/why-not-what.svg", url: "/why-not-what" },
   { slug: "covenant", title: "Covenant", description: "Why marriage is a promise, not a deal. The culture sold us a contract and called it romance.", cover: "/books/covenant.svg", url: "/covenant" },
@@ -1321,6 +1334,34 @@ async function trpcListPosts(): Promise<any[]> {
   return listSlimPosts();
 }
 
+// posts.listPublished's optional input: { slugs?: string[], since?: ISO date }.
+// With either field, only the rows named by slug, or whose essay date
+// (publishedAt, else createdAt: the shelf's Latest rule) is at or after
+// `since`, come back, in the listing's order; /writing asks for its shelf this
+// way instead of every published row. With neither, the full listing, as
+// before. The dev router applies the same rule (server/posts-listing.ts), and
+// server/posts-listing.test.ts holds the two runtimes to it. Malformed fields
+// are ignored, as this file treats loose input elsewhere. Exported for that
+// test only; the handler is still the default export.
+export function pickListing<T extends { slug?: unknown; publishedAt?: unknown; createdAt?: unknown }>(
+  rows: T[],
+  input: unknown
+): T[] {
+  const ask = (input && typeof input === "object" ? input : {}) as { slugs?: unknown; since?: unknown };
+  const slugs = Array.isArray(ask.slugs) ? (ask.slugs as unknown[]) : null;
+  const since = typeof ask.since === "string" ? Date.parse(ask.since) : NaN;
+  if (!slugs && !Number.isFinite(since)) return rows;
+  const wanted = new Set((slugs ?? []).filter((x): x is string => typeof x === "string"));
+  const time = (d: unknown): number =>
+    d instanceof Date ? d.getTime() : typeof d === "number" ? d : typeof d === "string" && d ? Date.parse(d) : NaN;
+  return rows.filter((r) => {
+    if (typeof r?.slug === "string" && wanted.has(r.slug)) return true;
+    if (!Number.isFinite(since)) return false;
+    const published = time(r?.publishedAt);
+    return (Number.isFinite(published) ? published : time(r?.createdAt)) >= since;
+  });
+}
+
 // Slim list for index/listing pages — identical shape to trpcListPosts.
 async function trpcListPostsForIndex(): Promise<any[]> {
   return listSlimPosts();
@@ -1385,7 +1426,6 @@ async function trpcGetRelated(slug: string, pillar?: string): Promise<any[]> {
 const FALLBACK_BOOKS = [
     { id: 1, slug: "the-monster-in-the-mirror", title: "The Monster in the Mirror", subtitle: "How Culture Shapes the God We Think We See", status: "published", pillar: "Prophetic Disruption", coverImage: null, description: "The monster is never in the mirror. That is the problem. A book that names six American cultural lenses distorting Scripture â and shows what reading against our own assumptions looks like.", releaseDate: "2025-09-01", createdAt: "2025-09-01T00:00:00Z" },
     { id: 2, slug: "when-god-bless-america-replaces-thy-kingdom-come", title: "When God Bless America Replaces Thy Kingdom Come", subtitle: "How Patriotism Became Our Practical Savior", status: "in-development", pillar: "Prophetic Justice", coverImage: null, description: "Civil religion is idolatry with a flag for a shroud. America is not Israel. The new covenant is made with people through Christ's blood â not with nations.", releaseDate: "2026-11-01", createdAt: "2026-01-01T00:00:00Z" },
-    { id: 3, slug: "why-we-need-each-other", title: "Why We Need Each Other", subtitle: "Pastor Loneliness and the Case for Brotherhood", status: "in-development", pillar: "Leadership Formation", coverImage: null, description: "Pastor loneliness is a crisis. Brotherhood is the answer. The case for the Pastors Connection Network and the men it was built to carry.", releaseDate: "2026-06-01", createdAt: "2026-02-01T00:00:00Z" },
     { id: 4, slug: "healwell-devotionals", title: "HealWell: 52 Weeks in Costly Hope", subtitle: "A Year of Honest Devotionals for Tired Believers", status: "in-development", pillar: "Integrated Life", coverImage: null, description: "Fifty-two weeks of devotionals for people who have stopped pretending. Written from the room where people fall apart and the room where they find their footing.", releaseDate: "2026-12-01", createdAt: "2026-03-01T00:00:00Z" },
 ];
 
@@ -1602,8 +1642,12 @@ const MUTATION_PROCS = new Set<string>([
   "feedSync.syncAll", "feedSync.syncSource",
   "adminNotifications.markAsRead",
   "stripe.createMembershipCheckout", "stripe.createCheckoutSession",
+  "giving.createCheckout", "giving.createDownloadCheckout",
   "files.upload", "files.updateDescription", "files.delete",
 ]);
+
+// substack.latest: one feed fetch an hour per warm instance (shared/substackLatest.ts).
+const substackLatest = createSubstackCache();
 
 async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string) {
   try {
@@ -1654,8 +1698,16 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         res.setHeader("Set-Cookie", logoutCookie);
         return trpcOk(res, { ok: true });
       }
+      case "substack.latest": {
+        // Titles, dates and substack.com links only; [] on any failure.
+        const items = await substackLatest();
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
+        res.setHeader("Cache-Control", items.length ? "public, s-maxage=3600, stale-while-revalidate=600" : "public, s-maxage=300");
+        res.status(200).send(JSON.stringify([{ result: { data: superjson.serialize(items) } }]));
+        return;
+      }
       case "posts.listPublished": {
-        const data = await trpcListPosts();
+        const data = pickListing(await trpcListPosts(), input);
         return trpcOk(res, data);
       }
       case "posts.listAll": {
@@ -2345,6 +2397,57 @@ async function trpcHandler(req: VercelRequest, res: VercelResponse, proc: string
         return trpcOk(res, { success: true, sessionUrl: session.url || "", sessionId: session.id });
       }
 
+      // ─── Gifts (/support). Mirrors server/giving-router.ts. ─────────
+      // Two gates: the switch in client/src/lib/giving.json and a real
+      // STRIPE_SECRET_KEY. Nothing is stored and nothing about the giver or
+      // the gift is logged; Stripe holds the record.
+      case "giving.status": {
+        return trpcOk(res, { open: GIVING_FACTS.open === true && stripeConfigured() });
+      }
+      case "giving.createCheckout": {
+        const stripe = getStripe();
+        if (GIVING_FACTS.open !== true || !stripe || !stripeConfigured()) {
+          return trpcErr(res, "BAD_REQUEST", GIVING_CLOSED_MESSAGE, 400);
+        }
+        const checked = checkGift(input);
+        if (!checked.ok) return trpcErr(res, "BAD_REQUEST", checked.error, 400);
+        let sessionUrl = "";
+        try {
+          // The site's own address comes from the request, never from the page's input.
+          const session = await stripe.checkout.sessions.create(giftCheckoutParams(checked.gift, siteOrigin(req)));
+          sessionUrl = session.url || "";
+        } catch {
+          console.error("[giving] the checkout could not be started");
+        }
+        if (!sessionUrl) return trpcErr(res, "INTERNAL_SERVER_ERROR", "The gift could not be started. Nothing was charged.", 500);
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
+        res.setHeader("Cache-Control", "no-store");
+        return res.status(200).send(JSON.stringify([{ result: { data: superjson.serialize({ sessionUrl }) } }]));
+      }
+      // A gift given with a download. Mirrors server/giving-router.ts: the
+      // same two gates, the download looked up by id in
+      // shared/download-items.json (never a file path or a return address
+      // from the page), nothing stored and nothing logged.
+      case "giving.createDownloadCheckout": {
+        const stripe = getStripe();
+        if (GIVING_FACTS.open !== true || !stripe || !stripeConfigured()) {
+          return trpcErr(res, "BAD_REQUEST", GIVING_CLOSED_MESSAGE, 400);
+        }
+        const checked = checkDownloadGift(input, DOWNLOAD_ITEMS as Record<string, string>);
+        if (!checked.ok) return trpcErr(res, "BAD_REQUEST", checked.error, 400);
+        let sessionUrl = "";
+        try {
+          const session = await stripe.checkout.sessions.create(downloadGiftCheckoutParams(checked.gift, siteOrigin(req)));
+          sessionUrl = session.url || "";
+        } catch {
+          console.error("[giving] the checkout could not be started");
+        }
+        if (!sessionUrl) return trpcErr(res, "INTERNAL_SERVER_ERROR", "The gift could not be started. Nothing was charged.", 500);
+        res.setHeader("Content-Type", "application/json; charset=utf-8");
+        res.setHeader("Cache-Control", "no-store");
+        return res.status(200).send(JSON.stringify([{ result: { data: superjson.serialize({ sessionUrl }) } }]));
+      }
+
       // ─── Files (admin; scoped to the admin user) ───────────────────
       case "files.list": {
         if (!authedSession(req)) return trpcErr(res, "UNAUTHORIZED", "unauthorized", 401);
@@ -2560,7 +2663,7 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
       return { result: { data: superjson.serialize({ ok: true }) } };
     }
     case "posts.listPublished":
-      return { result: { data: superjson.serialize(await trpcListPosts()) } };
+      return { result: { data: superjson.serialize(pickListing(await trpcListPosts(), input)) } };
     case "posts.listAll": {
       if (!authedSession(req)) return { error: { message: "unauthorized", code: -32603, data: { code: "UNAUTHORIZED", httpStatus: 401 } } };
       return { result: { data: superjson.serialize(await trpcListPosts()) } };
@@ -2715,6 +2818,9 @@ async function processProc(req: VercelRequest, res: VercelResponse, proc: string
         await withConn(async (c) => { await c.execute("DELETE FROM comments WHERE id = ?", [input?.id ?? input]); });
         return { result: { data: superjson.serialize({ ok: true }) } };
       } catch (e: any) { return { error: { message: String(e?.message), code: -32603, data: { code: "INTERNAL_SERVER_ERROR", httpStatus: 500 } } }; }
+    case "substack.latest":
+      // Titles, dates and substack.com links only; [] on any failure.
+      return { result: { data: superjson.serialize(await substackLatest()) } };
     case "feedSync.getStatus":
       return { result: { data: superjson.serialize({ sources: [{ name: "Substack", url: "https://jamesbell333289.substack.com/feed", lastSync: null, status: "idle" }], schedule: "Manual" }) } };
     case "feedSync.syncAll":
@@ -2919,9 +3025,11 @@ function escapeXml(s: string): string {
 // The feed syndicates only what the essay shelf makes public: the live shelf
 // essays, and posts not on the shelf that went out at or after the shelf's
 // cutoff (publishedAt, else createdAt; the rule in client/src/lib/shelf.ts).
-// Retired essays stay out. A pending shelf essay stays out even once its
-// rewrite exists: the rewrite lives in client/public/essays/, not in the row
-// this feed reads, so syndicating the row would send the old text.
+// Retired essays stay out. An essay with a rewrite in client/public/essays/
+// (a shelf essay, live or pending; the file is what makes a pending one
+// public) is listed from the committed index of those files, with the file's
+// title, excerpt and date. Its database row is never sent, because the row
+// holds the old text.
 const SHELF_FILE: { latestCutoff: string; essays: { slug: string; status: string }[] } = SHELF_DATA;
 const RSS_LIVE_SLUGS: string[] = SHELF_FILE.essays.filter((e) => e.status === "live").map((e) => e.slug);
 const RSS_SHELF_SLUGS = new Set(SHELF_FILE.essays.map((e) => e.slug));
@@ -2934,37 +3042,74 @@ function rssShelfPublic(row: RssRow): boolean {
   return Number.isFinite(when) && when >= RSS_LATEST_CUTOFF.getTime();
 }
 
+type RssItem = { slug: string; title: string; excerpt: string; date: Date; body: string | null };
+type RssPostRow = RssRow & { title?: string | null; excerpt?: string | null; body?: string | null; updatedAt?: Date | string | null };
+
+/**
+ * The feed's items, newest first: every essay file on the shelf, then the
+ * database rows the shelf makes public, less any row a file replaces. A file
+ * item has no body (null): the feed sends its excerpt and the link.
+ */
+export function rssItems(
+  rows: RssPostRow[],
+  overrides: { slug: string; title: string; excerpt: string; updated: string }[] = ESSAY_OVERRIDES,
+  limit = 100,
+): RssItem[] {
+  const files = overrides.filter((o) => RSS_SHELF_SLUGS.has(o.slug));
+  const fromFiles = new Set(files.map((o) => o.slug));
+  const items: RssItem[] = [
+    ...files.map((o) => ({ slug: o.slug, title: o.title, excerpt: o.excerpt, date: new Date(o.updated), body: null })),
+    ...rows
+      .filter((p) => !fromFiles.has(p.slug) && rssShelfPublic(p))
+      .map((p) => ({
+        slug: p.slug,
+        title: String(p.title ?? ""),
+        excerpt: p.excerpt || String(p.body || "").slice(0, 280),
+        date: new Date(p.publishedAt || p.createdAt || p.updatedAt || Date.now()),
+        body: p.body || "",
+      })),
+  ];
+  const time = (d: Date) => (Number.isFinite(d.getTime()) ? d.getTime() : 0);
+  return items.sort((x, y) => time(y.date) - time(x.date) || x.slug.localeCompare(y.slug)).slice(0, limit);
+}
+
 async function rssLiveWell(_req: VercelRequest, res: VercelResponse) {
   const SITE_URL = "https://www.livewellbyjamesbell.co";
   const SITE_NAME = "LiveWell by James Bell";
   const DESC = "Theology that carries the weight of everyday life. Essays on faith, justice, marriage, parenting, and pastoral ministry by James Bell.";
   try {
-    const rows: any[] = await withConn(async (c) => {
-      const liveIn = RSS_LIVE_SLUGS.length ? `slug IN (${RSS_LIVE_SLUGS.map(() => "?").join(", ")})` : "FALSE";
-      const [posts]: any = await c.query(
-        `SELECT slug, title, excerpt, body, publishedAt, createdAt, updatedAt
-           FROM posts
-          WHERE published = true
-            AND (${liveIn} OR COALESCE(publishedAt, createdAt) >= ?)
-          ORDER BY COALESCE(publishedAt, createdAt) DESC, updatedAt DESC
-          LIMIT 50`,
-        [...RSS_LIVE_SLUGS, RSS_LATEST_CUTOFF]
-      );
-      return (Array.isArray(posts) ? posts : []).filter(rssShelfPublic);
-    });
+    // The essay files need no database, so a database failure still leaves a
+    // feed of them instead of an error in every reader app.
+    let rows: any[] = [];
+    try {
+      rows = await withConn(async (c) => {
+        const liveIn = RSS_LIVE_SLUGS.length ? `slug IN (${RSS_LIVE_SLUGS.map(() => "?").join(", ")})` : "FALSE";
+        const [posts]: any = await c.query(
+          `SELECT slug, title, excerpt, body, publishedAt, createdAt, updatedAt
+             FROM posts
+            WHERE published = true
+              AND (${liveIn} OR COALESCE(publishedAt, createdAt) >= ?)
+            ORDER BY COALESCE(publishedAt, createdAt) DESC, updatedAt DESC
+            LIMIT 100`,
+          [...RSS_LIVE_SLUGS, RSS_LATEST_CUTOFF]
+        );
+        return Array.isArray(posts) ? posts : [];
+      });
+    } catch (dbErr: any) {
+      console.error("[rss] posts query failed; serving the essay files only:", dbErr?.message || dbErr);
+    }
     const buildDate = new Date().toUTCString();
-    const items = rows
+    const items = rssItems(rows)
       .map((p) => {
         const url = `${SITE_URL}/writing/${p.slug}`;
-        const pubDate = new Date(p.publishedAt || p.createdAt || p.updatedAt || Date.now()).toUTCString();
-        const excerpt = p.excerpt || (p.body || "").slice(0, 280);
+        const pubDate = (Number.isFinite(p.date.getTime()) ? p.date : new Date()).toUTCString();
+        const content = p.body === null ? "" : `\n      <content:encoded><![CDATA[${p.body}]]></content:encoded>`;
         return `    <item>
       <title>${escapeXml(p.title)}</title>
       <link>${escapeXml(url)}</link>
       <guid isPermaLink="true">${escapeXml(url)}</guid>
       <pubDate>${pubDate}</pubDate>
-      <description>${escapeXml(excerpt)}</description>
-      <content:encoded><![CDATA[${p.body || ""}]]></content:encoded>
+      <description>${escapeXml(p.excerpt)}</description>${content}
       <dc:creator>James Bell</dc:creator>
     </item>`;
       })
@@ -2998,15 +3143,19 @@ ${items}
 // ---------------------------------------------------------------------------
 // LiveWell-series ebooks: Stripe Checkout + gated PDF delivery.
 //
-// The PDFs live in api/_ebooks/ (referenced via new URL(..., import.meta.url) so
-// Vercel's file tracer bundles them into the function) and are NEVER served as
-// static assets — the only way to fetch one is through /api/download with a
-// Stripe session that is actually paid. Price IDs come from env so flipping
-// test -> live keys needs no code change.
+// No ebook is sold now (James, 2026-11-18); this code stays, unused by any
+// page, as the membership code does. None of these 23 books is on the site:
+// seven name the Pastors Connection Network and wait for James's corrected
+// files, and the sixteen older ones are off for now ("Keep them off for now",
+// 2026-11-18). Their PDFs live in content/held-downloads/ (referenced via
+// new URL(..., import.meta.url) and bundled by vercel.json's includeFiles),
+// are never served as static files, and reach only a past buyer through
+// /api/download with a Stripe session that is actually paid.
 // ---------------------------------------------------------------------------
 interface EbookConfig {
   title: string;
   priceEnv: string;
+  /** The held file (content/held-downloads/), for past buyers only. */
   file: URL;
   filename: string;
 }
@@ -3015,139 +3164,139 @@ const EBOOKS: Record<string, EbookConfig> = {
   "consider-the-birds": {
     title: "Consider the Birds",
     priceEnv: "STRIPE_PRICE_CONSIDER_THE_BIRDS",
-    file: new URL("./_ebooks/consider-the-birds.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/consider-the-birds.pdf", import.meta.url),
     filename: "Consider-the-Birds.pdf",
   },
   "where-your-treasure-is": {
     title: "Where Your Treasure Is",
     priceEnv: "STRIPE_PRICE_WHERE_YOUR_TREASURE_IS",
-    file: new URL("./_ebooks/where-your-treasure-is.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/where-your-treasure-is.pdf", import.meta.url),
     filename: "Where-Your-Treasure-Is.pdf",
   },
   "alone-in-a-crowded-church": {
     title: "Alone in a Crowded Church",
     priceEnv: "STRIPE_PRICE_ALONE_IN_A_CROWDED_CHURCH",
-    file: new URL("./_ebooks/alone-in-a-crowded-church.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/alone-in-a-crowded-church.pdf", import.meta.url),
     filename: "Alone-in-a-Crowded-Church.pdf",
   },
   "covenant": {
     title: "Covenant",
     priceEnv: "STRIPE_PRICE_COVENANT",
-    file: new URL("./_ebooks/covenant.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/covenant.pdf", import.meta.url),
     filename: "Covenant.pdf",
   },
   "babylon": {
     title: "Babylon",
     priceEnv: "STRIPE_PRICE_BABYLON",
-    file: new URL("./_ebooks/babylon.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/babylon.pdf", import.meta.url),
     filename: "Babylon.pdf",
   },
   "how-to-read-the-bible": {
     title: "How to Read the Bible",
     priceEnv: "STRIPE_PRICE_HOW_TO_READ_THE_BIBLE",
-    file: new URL("./_ebooks/how-to-read-the-bible.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/how-to-read-the-bible.pdf", import.meta.url),
     filename: "How-to-Read-the-Bible.pdf",
   },
   "be-true-to-yourself": {
     title: "Be True to Yourself",
     priceEnv: "STRIPE_PRICE_BE_TRUE_TO_YOURSELF",
-    file: new URL("./_ebooks/be-true-to-yourself.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/be-true-to-yourself.pdf", import.meta.url),
     filename: "Be-True-to-Yourself.pdf",
   },
   "what-belongs-to-the-poor": {
     title: "What Belongs to the Poor",
     priceEnv: "STRIPE_PRICE_WHAT_BELONGS_TO_THE_POOR",
-    file: new URL("./_ebooks/what-belongs-to-the-poor.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/what-belongs-to-the-poor.pdf", import.meta.url),
     filename: "What-Belongs-to-the-Poor.pdf",
   },
   "rule-of-life": {
     title: "Rule of Life",
     priceEnv: "STRIPE_PRICE_RULE_OF_LIFE",
-    file: new URL("./_ebooks/rule-of-life.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/rule-of-life.pdf", import.meta.url),
     filename: "Rule-of-Life.pdf",
   },
   "why-not-what": {
     title: "Why Not What",
     priceEnv: "STRIPE_PRICE_WHY_NOT_WHAT",
-    file: new URL("./_ebooks/why-not-what.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/why-not-what.pdf", import.meta.url),
     filename: "Why-Not-What.pdf",
   },
   "sermon-on-the-mount-as-politics": {
     title: "The Sermon on the Mount as Politics",
     priceEnv: "STRIPE_PRICE_SERMON_ON_THE_MOUNT_AS_POLITICS",
-    file: new URL("./_ebooks/sermon-on-the-mount-as-politics.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/sermon-on-the-mount-as-politics.pdf", import.meta.url),
     filename: "The-Sermon-on-the-Mount-as-Politics.pdf",
   },
   "prophetic-justice-101": {
     title: "Prophetic Justice 101",
     priceEnv: "STRIPE_PRICE_PROPHETIC_JUSTICE_101",
-    file: new URL("./_ebooks/prophetic-justice-101.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/prophetic-justice-101.pdf", import.meta.url),
     filename: "Prophetic-Justice-101.pdf",
   },
   "marriage-in-ministry": {
     title: "Marriage in Ministry",
     priceEnv: "STRIPE_PRICE_MARRIAGE_IN_MINISTRY",
-    file: new URL("./_ebooks/marriage-in-ministry.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/marriage-in-ministry.pdf", import.meta.url),
     filename: "Marriage-in-Ministry.pdf",
   },
   "the-loneliness-of-the-pastor": {
     title: "The Loneliness of the Pastor",
     priceEnv: "STRIPE_PRICE_THE_LONELINESS_OF_THE_PASTOR",
-    file: new URL("./_ebooks/the-loneliness-of-the-pastor.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/the-loneliness-of-the-pastor.pdf", import.meta.url),
     filename: "The-Loneliness-of-the-Pastor.pdf",
   },
   "healwell": {
     title: "HealWell",
     priceEnv: "STRIPE_PRICE_HEALWELL",
-    file: new URL("./_ebooks/healwell.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/healwell.pdf", import.meta.url),
     filename: "HealWell.pdf",
   },
   "born-again-from-atheism": {
     title: "Born Again From Atheism",
     priceEnv: "STRIPE_PRICE_BORN_AGAIN_FROM_ATHEISM",
-    file: new URL("./_ebooks/born-again-from-atheism.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/born-again-from-atheism.pdf", import.meta.url),
     filename: "Born-Again-from-Atheism.pdf",
   },
   "the-god-who-is-not-nice": {
     title: "The God Who Is Not Nice",
     priceEnv: "STRIPE_PRICE_THE_GOD_WHO_IS_NOT_NICE",
-    file: new URL("./_ebooks/the-god-who-is-not-nice.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/the-god-who-is-not-nice.pdf", import.meta.url),
     filename: "The-God-Who-Is-Not-Nice.pdf",
   },
   "faith-after-deconstruction": {
     title: "Faith After Deconstruction",
     priceEnv: "STRIPE_PRICE_FAITH_AFTER_DECONSTRUCTION",
-    file: new URL("./_ebooks/faith-after-deconstruction.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/faith-after-deconstruction.pdf", import.meta.url),
     filename: "Faith-after-Deconstruction.pdf",
   },
   "ordinary-holiness": {
     title: "Ordinary Holiness",
     priceEnv: "STRIPE_PRICE_ORDINARY_HOLINESS",
-    file: new URL("./_ebooks/ordinary-holiness.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/ordinary-holiness.pdf", import.meta.url),
     filename: "Ordinary-Holiness.pdf",
   },
   "the-scandal-of-the-cross": {
     title: "The Scandal of the Cross",
     priceEnv: "STRIPE_PRICE_THE_SCANDAL_OF_THE_CROSS",
-    file: new URL("./_ebooks/the-scandal-of-the-cross.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/the-scandal-of-the-cross.pdf", import.meta.url),
     filename: "The-Scandal-of-the-Cross.pdf",
   },
   "heaven-is-not-your-reward": {
     title: "Heaven Is Not Your Reward",
     priceEnv: "STRIPE_PRICE_HEAVEN_IS_NOT_YOUR_REWARD",
-    file: new URL("./_ebooks/heaven-is-not-your-reward.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/heaven-is-not-your-reward.pdf", import.meta.url),
     filename: "Heaven-Is-Not-Your-Reward.pdf",
   },
   "prayer-in-the-dark": {
     title: "Prayer in the Dark",
     priceEnv: "STRIPE_PRICE_PRAYER_IN_THE_DARK",
-    file: new URL("./_ebooks/prayer-in-the-dark.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/prayer-in-the-dark.pdf", import.meta.url),
     filename: "Prayer-in-the-Dark.pdf",
   },
   "the-body-you-left": {
     title: "The Body You Left",
     priceEnv: "STRIPE_PRICE_THE_BODY_YOU_LEFT",
-    file: new URL("./_ebooks/the-body-you-left.pdf", import.meta.url),
+    file: new URL("../content/held-downloads/the-body-you-left.pdf", import.meta.url),
     filename: "The-Body-You-Left.pdf",
   },
 };
@@ -3183,6 +3332,9 @@ async function ebookCheckout(req: VercelRequest, res: VercelResponse) {
     const slug = String(body?.slug || "");
     const book = EBOOKS[slug];
     if (!book) return json(res, 400, { error: "Unknown book." });
+    // Nothing is sold as an ebook now (2026-11-18): every one of these books
+    // is held off the site.
+    if (book.file) return json(res, 503, { error: "This book is not on sale." });
     const priceId = await resolveEbookPriceId(slug, book.priceEnv);
     if (!priceId) return json(res, 503, { error: "This book is not on sale yet." });
     const origin = siteOrigin(req);

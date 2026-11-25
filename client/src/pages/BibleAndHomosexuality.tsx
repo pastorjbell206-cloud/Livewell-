@@ -1,20 +1,27 @@
 /**
- * What Does the Bible Really Say About Homosexuality? — dedicated ebook product
- * + purchase page.
+ * OFF THE SHELF (2026-11-17): the Books page says three books and that the
+ * rest were taken down. This page stays reachable at its address, says
+ * noindex and is out of the sitemap. On 2026-11-18 James made every ebook
+ * free, so the book is listed on /downloads with its free download.
  *
- * Self-contained (not DB-backed) so it deploys with the code. The Buy button
- * points at the Stripe Payment Link; Stripe redirects to
- * /books/bible-and-homosexuality/thank-you on success, where the EPUB and PDF
- * download links live.
+ * What Does the Bible Really Say About Homosexuality?: the book's own page
+ * and its free download.
+ *
+ * Self-contained (not DB-backed) so it deploys with the code. Every ebook is
+ * free (James, 2026-11-18): the PDF and EPUB are static files listed in
+ * data/ebooks.ts, and the old /thank-you address redirects to /downloads.
  */
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import { BookNextSteps } from "@/components/BookNextSteps";
-import { StripeBuyButton } from "@/components/StripeBuyButton";
+import { FreeEbookButtons } from "@/components/FreeEbookButtons";
+import { freeEbook } from "@/data/ebooks";
+import { EbookLabel, OfferLine, OfferMeta } from "@/components/BookOffer";
 import { SITE_URL } from "@/lib/site";
 
-const COVER = "/books/bible-and-homosexuality.jpg";
-const PAYMENT_LINK = "https://buy.stripe.com/28E5kDcjQ3xs8hEeHEa3u06";
+const COVER = "/covers/bible-and-homosexuality-800.webp";
+const SHARE = "/covers/bible-and-homosexuality.jpg";
+const EBOOK = freeEbook("bible-and-homosexuality")!;
 
 const eyebrow: React.CSSProperties = {
   fontFamily: "var(--U)", fontSize: "0.75rem", fontWeight: 500, textTransform: "uppercase",
@@ -25,20 +32,21 @@ export default function BibleAndHomosexuality() {
   return (
     <Layout>
       <SEOMeta
-        title="What Does the Bible Really Say About Homosexuality? — by James C. Bell"
+        title="What Does the Bible Really Say About Homosexuality?"
         description="Scripture, same-sex relationships, and the church's Christ-centered response — a pastoral reading that refuses the false choice between truth and love."
-        image={`${SITE_URL}${COVER}`}
+        image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/bible-and-homosexuality`}
         type="book"
+        noindex
       />
 
       {/* HERO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div className="book-detail-hero" style={{ maxWidth: "var(--w-content)", margin: "0 auto", display: "grid", gap: "var(--s-5)", alignItems: "center" }}>
-          <img src={COVER} alt="What Does the Bible Really Say About Homosexuality? — cover" width={1600} height={2560}
+          <img src={COVER} alt="What Does the Bible Really Say About Homosexuality? — cover" width={800} height={1200}
             style={{ width: "100%", height: "auto", borderRadius: "var(--radius-sm)", boxShadow: "0 16px 48px rgba(0,0,0,.45)" }} />
           <div>
-            <div style={{ ...eyebrow, color: "var(--mustard)" }}>New Book · Ebook Available Now</div>
+            <div style={{ ...eyebrow, color: "var(--mustard)" }}><EbookLabel /></div>
             <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 4.6vw, 52px)", fontWeight: 400, lineHeight: 1.08, letterSpacing: "-0.02em", margin: "16px 0 12px" }}>
               What Does the Bible Really Say About Homosexuality?
             </h1>
@@ -49,9 +57,9 @@ export default function BibleAndHomosexuality() {
               James C. Bell
             </p>
             <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
-              <StripeBuyButton paymentLink={PAYMENT_LINK} />
+              <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
               <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "rgba(245,240,230,.65)" }}>
-                EPUB + PDF · instant download · secure checkout by Stripe
+                <OfferMeta pdf={EBOOK.pdf} />
               </span>
             </div>
           </div>
@@ -73,17 +81,17 @@ export default function BibleAndHomosexuality() {
       </section>
 
       {/* BUY + BIO */}
-      <section style={{ background: "var(--ink)", color: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>
+      <section style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "var(--s-6) var(--s-4)" }}>
         <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontFamily: "var(--F)", fontSize: "30px", fontWeight: 400, margin: "0 0 14px" }}>Read it now</h2>
           <p style={{ fontFamily: "var(--B)", fontSize: "16px", lineHeight: 1.7, color: "rgba(245,240,230,.8)", maxWidth: "52ch", margin: "0 auto 28px" }}>
-            $8.99 for the complete ebook — EPUB for your e-reader and PDF for everything else, delivered the moment you check out.
+            <OfferLine />
           </p>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <StripeBuyButton paymentLink={PAYMENT_LINK} />
+            <FreeEbookButtons title={EBOOK.title} pdf={EBOOK.pdf} epub={EBOOK.epub} band="charcoal" />
           </div>
           <p style={{ fontFamily: "var(--B)", fontSize: "14px", lineHeight: 1.7, color: "rgba(245,240,230,.6)", maxWidth: "56ch", margin: "44px auto 0", borderTop: "1px solid rgba(245,240,230,.18)", paddingTop: "28px" }}>
-            James Bell is the Lead Pastor of First Baptist Church of Fenton, founder of the Pastors Connection Network, and the author of more than twenty books. He came to faith from atheism and writes for the reader whose faith has outgrown the answers they were given.
+            James Bell is a pastor and a writer. He came to faith from atheism, and he writes for the reader whose faith has outgrown the answers they were given.
           </p>
         </div>
       </section>
@@ -92,7 +100,7 @@ export default function BibleAndHomosexuality() {
         slug="bible-and-homosexuality"
         related={[
           { href: "/books/bible-and-transgender-identity", title: "What Does the Bible Say About Transgender Identity?" },
-          { href: "/books/the-monster-in-the-mirror", title: "The Monster in the Mirror" },
+          { href: "/books/blind-spots", title: "Blind Spots" },
           { href: "/books/critical-race-theory-biblical", title: "Is Critical Race Theory Biblical?" },
         ]}
       />

@@ -1,0 +1,110 @@
+{
+  "slug": "the-church",
+  "title": "What the church is",
+  "group": "beliefs",
+  "status": "finished",
+  "mark": "the-church",
+  "line": {
+    "younger": "The church is not first a building. It is people, gathered by God's Spirit around Jesus. Seven pictures of what that means.",
+    "older": "What the church is, in seven pictures: a people, one body, living stones, a family, gathered and sent, and what churches share where they differ."
+  },
+  "poster": "A crowd of people stands in front of the faint dotted outline of a church building.",
+  "frames": [
+    {
+      "id": "people",
+      "name": "People, not a building",
+      "still": "A crowd of people stands in front of the faint dotted outline of a church building.",
+      "younger": "When people say church, they often mean a building. But the church is people: the whole company of God's people, gathered by the Spirit around Christ.",
+      "older": "The family catechism answers the question in one sentence: the church is the whole company of God's people, gathered by the Spirit around Christ, called to worship God, love one another, and make him known to the world. A building is only where some of them meet."
+    },
+    {
+      "id": "body",
+      "name": "One body, many parts",
+      "still": "The building outline is gone. One line runs from person to person, joining every one of them.",
+      "younger": "Paul says the church is like a body. A body has many parts, hands and feet and eyes, and each one is needed. Every person who belongs to Jesus has a part.",
+      "older": "Paul's picture is a body: many parts, different gifts, one life. No part can say it does not need the others, and none is a spare.",
+      "verse": {
+        "ref": "1 Corinthians 12:12",
+        "text": "The body is a unit, though it is composed of many parts. And although its parts are many, they all form one body. So it is with Christ."
+      }
+    },
+    {
+      "id": "stones",
+      "name": "Living stones",
+      "still": "Stones are laid course on course into the shape of a house under a roof line. On each stone is a small person.",
+      "younger": "Peter uses another picture: living stones, built together into a house where God lives. Each stone is a person, and Jesus is the one the whole house rests on.",
+      "older": "Peter's picture is a house of living stones: God is building his people into a dwelling for himself, and the stone the whole house rests on is Christ.",
+      "verse": {
+        "ref": "1 Peter 2:5",
+        "text": "you also, like living stones, are being built into a spiritual house to be a holy priesthood, offering spiritual sacrifices acceptable to God through Jesus Christ."
+      }
+    },
+    {
+      "id": "family",
+      "name": "A family",
+      "still": "A house with a lamp lit in its window, and people seated together at a long table beside it.",
+      "younger": "The church is also a family. God does not save people to live alone; he brings them into a family, with brothers and sisters to help them follow Jesus.",
+      "older": "God saves us into a family, not alone, as the catechism says. Strangers become members of one household, brothers and sisters who help one another follow Jesus all the way home."
+    },
+    {
+      "id": "gathered",
+      "name": "Gathered",
+      "still": "On the table lie an open book, a loaf of bread and a cup.",
+      "younger": "From the very first, the church met together to learn from the apostles' teaching, to share life, to break bread and to pray.",
+      "older": "The first church in Jerusalem gathered for the apostles' teaching, the fellowship, the breaking of bread and prayer. Christians still gather to worship God, hear his Word, share the Lord's Supper and help one another.",
+      "verse": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      }
+    },
+    {
+      "id": "sent",
+      "name": "Sent out",
+      "still": "Roads run from the house out to both edges of the picture, and people walk along them.",
+      "younger": "The church does not only gather. Jesus sends his people out to every nation, to make disciples, and he promised to be with them always.",
+      "older": "The church is gathered to be sent. Jesus' last command was to make disciples of all nations, and his last promise was his own presence to the end of the age.",
+      "verse": {
+        "ref": "Matthew 28:19-20",
+        "text": "Therefore go and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Spirit, and teaching them to obey all that I have commanded you. And surely I am with you always, even to the end of the age."
+      }
+    },
+    {
+      "id": "one-lord",
+      "name": "One Lord, many churches",
+      "still": "Three different buildings stand on one ground, a pointed roof, a tall front with a small tower, and a low hall, joined by paths, with one gold flame above them all.",
+      "younger": "There are many churches, and they do some things differently. But all who trust Jesus belong to his one church, with one Lord.",
+      "older": "Churches share the confession of one Lord and the command to baptize in the name of the Father, the Son and the Holy Spirit. They differ on who should be baptized and how, and on how churches are led. Faithful churches differ on these while confessing one Lord, and this moving picture does not choose between them.",
+      "verse": {
+        "ref": "Ephesians 4:4-5",
+        "text": "There is one body and one Spirit, just as you were called to one hope when you were called; one Lord, one faith, one baptism"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Who are some of the people in your church family? What part could you play in the body?",
+    "older": "Paul says no part of the body can say it does not need the others. Where do you find that hard to believe, about yourself or about someone else?"
+  },
+  "read": [
+    { "label": "Acts 2", "href": "/study/bible/acts/2" },
+    { "label": "1 Corinthians 12", "href": "/study/bible/1-corinthians/12" },
+    { "label": "Ephesians 2", "href": "/study/bible/ephesians/2" },
+    { "label": "1 Peter 2", "href": "/study/bible/1-peter/2" },
+    { "label": "Matthew 28", "href": "/study/bible/matthew/28" }
+  ],
+  "stops": ["church"],
+  "cards": ["church"],
+  "differ": {
+    "text": "Churches share the command Jesus gave, to baptize in the name of the Father, the Son and the Holy Spirit, and they confess one Lord. They differ on who should be baptized (those old enough to confess faith, or also the children of believers) and how (by going under the water, or by pouring or sprinkling it), and on how churches are led (by bishops, by elders, or by the congregation deciding together). This moving picture does not choose between them. Each view is set out in",
+    "links": [
+      { "label": "the Study Bible's notes on Acts 2", "href": "/study/bible/acts/2" }
+    ]
+  },
+  "care": "If you have been hurt in a church, or by someone at church, what was done to you was wrong, and it was not your fault. You do not have to keep it to yourself. Talk with a parent or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Can you be a Christian without going to church?", "href": "/answers/can-you-be-a-christian-without-church" },
+    { "label": "What if I'm done with church but not with Jesus?", "href": "/answers/done-with-church-but-not-jesus" },
+    { "label": "The family catechism: what is the church?", "href": "/family/catechism" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "people", "verse": true}, {"id": "body", "verse": true}, {"id": "stones", "verse": true}, {"id": "family", "verse": true}, {"id": "gathered", "verse": true}, {"id": "sent", "verse": false}, {"id": "one-lord", "verse": true}]},
+  "end": { "label": "Go to the stop: The Church and the Spirit", "href": "/study/explorer/church" }
+}

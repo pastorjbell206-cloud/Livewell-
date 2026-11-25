@@ -9,6 +9,7 @@ import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import InnerHead from "@/components/art/InnerHead";
 import { Prose } from "@/lib/prose";
 import { StatementBand } from "@/components/EditorialBlocks";
 
@@ -46,19 +47,9 @@ export default function TheologyTraditions() {
         url="https://www.livewellbyjamesbell.co/theology/traditions"
       />
 
-      <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
-        <div style={wrap}>
-          <div className="eyebrow" style={{ marginBottom: "16px", color: "var(--mustard)" }}>
-            <Link href="/study" style={{ color: "inherit" }}>Study</Link> · The traditions
-          </div>
-          <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 52px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
-            Why are there so many churches?
-          </h1>
-          <p style={{ fontFamily: "var(--B)", fontSize: "18px", lineHeight: 1.7, color: "rgba(245,240,230,0.78)", maxWidth: "62ch" }}>
-            It is one of the first things a new believer notices, and one of the most confusing. Here is the honest answer, with each great tradition described the way its own faithful members would want, and the deep core they all hold in common named first.
-          </p>
-        </div>
-      </section>
+      <InnerHead path="/theology/traditions" title="Christian traditions" line="Why are there so many churches?" plate="basilica">
+        <p className="pg-head__lede">It is one of the first things a new believer notices, and one of the most confusing. Here is the honest answer, with each great tradition described the way its own faithful members would want, and the deep core they all hold in common named first.</p>
+      </InnerHead>
 
       {!data && (
         <section style={{ background: "var(--bone)", padding: "var(--s-7) var(--s-4)" }}>

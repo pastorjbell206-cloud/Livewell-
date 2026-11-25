@@ -112,6 +112,140 @@ export function expandGrammar(lang: "H" | "G", code: string, dict: Record<string
   return segs.map((s) => dict[s] ?? s);
 }
 
+/** One row of a word's grammar: "Stem", "Qal", and what the form implies ("action: simple; voice: active"). */
+export interface GrammarRow {
+  k: string;
+  v: string;
+  hence?: string;
+}
+
+/**
+ * An expansion from the grammar dictionary as rows. The source writes Hebrew
+ * verbs as "Stem=Qal (hence Action=Simple; Voice=Active); Form=Perfect (hence
+ * Tense=Past/present; Mood=Indicative)": the semicolons inside the brackets
+ * belong to the row they sit in, so the split keeps to the top level.
+ */
+export function grammarRows(expansion: string): GrammarRow[] {
+  const parts: string[] = [];
+  let depth = 0;
+  let cur = "";
+  for (const ch of expansion) {
+    if (ch === "(") depth++;
+    if (ch === ")") depth = Math.max(0, depth - 1);
+    if (ch === ";" && depth === 0) { parts.push(cur); cur = ""; } else cur += ch;
+  }
+  parts.push(cur);
+  const rows: GrammarRow[] = [];
+  for (const part of parts) {
+    const eq = part.indexOf("=");
+    if (eq < 0) continue;
+    const k = part.slice(0, eq).trim();
+    const rest = part.slice(eq + 1).trim();
+    if (!k || !rest) continue;
+    const m = rest.match(/^(.*?)\s*\(hence\s+([^)]*)\)\s*$/);
+    if (!m) { rows.push({ k, v: rest }); continue; }
+    const hence = m[2]
+      .split(";")
+      .map((pair) => pair.split("=").map((x) => x.trim()))
+      .filter((kv) => kv.length === 2 && kv[0] && kv[1])
+      .map(([hk, hv]) => `${hk.toLowerCase()}: ${hv.toLowerCase()}`)
+      .join("; ");
+    rows.push(hence ? { k, v: m[1].trim(), hence } : { k, v: m[1].trim() });
+  }
+  return rows;
+}
+
+/**
+ * A word-by-word meaning in pieces. The source marks a word the original has
+ * and English leaves out as "<the>" or "<obj.>", and a word English has to add
+ * as "[was]". Each marked piece comes back without its brackets and flagged,
+ * so the page can print it gray; brackets inside brackets ("[is [the] one]
+ * who") lose every bracket and stay one piece.
+ */
+export function glossParts(gloss: string): { text: string; supplied: boolean }[] {
+  const out: { text: string; supplied: boolean }[] = [];
+  const push = (text: string, supplied: boolean) => {
+    if (!text) return;
+    const last = out[out.length - 1];
+    if (last && last.supplied === supplied) last.text += text;
+    else out.push({ text, supplied });
+  };
+  let depth = 0;
+  let cur = "";
+  for (const ch of gloss) {
+    if (ch === "<" || ch === "[") {
+      if (depth === 0) { push(cur, false); cur = ""; }
+      depth++;
+    } else if ((ch === ">" || ch === "]") && depth > 0) {
+      depth--;
+      if (depth === 0) { push(cur, true); cur = ""; }
+    } else cur += ch;
+  }
+  push(cur, depth > 0);
+  return out;
+}
+
+/** A meaning with its marks removed, for a label read aloud. */
+export const plainGloss = (gloss: string): string => glossParts(gloss).map((p) => p.text).join("");
+
+/** The build lists at most this many verses for a word (scripts/build-bible.mjs, addOcc). */
+export const OCCURRENCE_LIST_CAP = 60;
+
+/**
+ * How often a word appears, said truthfully. The list holds one line for each
+ * verse, so a word used 53 times in 45 verses has a complete list of 45; only
+ * a list that reached the cap is cut short.
+ */
+export function occurrenceLine(n: number, listed: number, lang: "H" | "G"): string {
+  const where = lang === "H" ? "the Hebrew Old Testament" : "the Greek New Testament";
+  const times = n === 1 ? "Once" : `${n.toLocaleString("en-US")} times`;
+  if (n <= 1 || listed <= 0) return `${times} in ${where}.`;
+  if (listed >= OCCURRENCE_LIST_CAP && n > listed) return `${times} in ${where}. The first ${listed} verses are listed.`;
+  return `${times} in ${listed === 1 ? "one verse" : `${listed.toLocaleString("en-US")} verses`} of ${where}.`;
+}
+
+/**
+ * Chapters set as poetry, one verse to a block and one clause to a line:
+ * Psalms, Proverbs, Song of Solomon, Lamentations, and the speeches of Job
+ * (chapters 3 to 41; its opening and closing are told in prose).
+ */
+const POETRY = new Set(["psalms", "proverbs", "song-of-solomon", "lamentations"]);
+export const isPoetry = (slug: string, chapter: number): boolean =>
+  POETRY.has(slug) || (slug === "job" && chapter >= 3 && chapter <= 41);
+
+/**
+ * A verse of poetry in lines. The Bible text in this repo carries no line
+ * breaks, so the lines follow the translation's own punctuation: a new line
+ * after each sentence and after each semicolon or colon, with any closing
+ * quotation mark kept on the line it closes.
+ */
+export function poetryLines(text: string): string[] {
+  // No lookbehind: older Safari cannot parse one, and a parse error would take the chunk with it.
+  return text
+    .replace(/([.;:!?][”’"']*)\s+/g, "$1\n")
+    .split("\n")
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+/** What "Copy verse" puts on the clipboard: the words, then the reference and the translation's name. */
+export const BIBLE_TRANSLATION = "Berean Standard Bible";
+export const verseCopyText = (text: string, bookName: string, chapter: number, verse: number): string =>
+  `${text}\n${bookName} ${chapter}:${verse}, ${BIBLE_TRANSLATION}`;
+
+/**
+ * A range in a book's outline ("3-4" in a one-chapter book, "1:10-14",
+ * "5-7" in a longer one) as the chapter and verse it opens at. A one-chapter
+ * book counts its outline in verses, so "3-4" in Jude is verses 3 to 4.
+ */
+export function outlineTarget(range: string, chapters: number): { chapter: number; verse?: number } {
+  const cv = range.match(/^(\d+):(\d+)/);
+  if (cv) return { chapter: +cv[1], verse: +cv[2] };
+  const first = parseInt(range, 10);
+  if (!Number.isFinite(first)) return { chapter: 1 };
+  return chapters === 1 ? { chapter: 1, verse: first } : { chapter: first };
+}
+
 /** "Jhn.3.16" or "Jhn.3.16-18" -> a link target and a readable label. */
 export function parseRef(ref: string, books: BibleBook[]): { slug: string; chapter: number; verse: number; label: string } | null {
   const m = ref.match(/^([1-3]?[A-Za-z]{2,3})\.(\d+)\.(\d+)(?:-(\d+))?$/);
@@ -122,6 +256,10 @@ export function parseRef(ref: string, books: BibleBook[]): { slug: string; chapt
   const verse = +m[3];
   return { slug: book.slug, chapter, verse, label: `${book.name} ${chapter}:${verse}${m[4] ? `–${m[4]}` : ""}` };
 }
+
+/** The book's name before a chapter number: "Psalm 23", not "Psalms 23". */
+export const chapterBookName = (book: { slug: string; name: string }) =>
+  book.slug === "psalms" ? "Psalm" : book.name;
 
 export const chapterHref = (slug: string, chapter: number, verse?: number) =>
   `/study/bible/${slug}/${chapter}${verse ? `#v${verse}` : ""}`;

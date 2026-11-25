@@ -15,7 +15,8 @@
  *                    library exactly as the API merges it. Without
  *                    DATABASE_URL (local, CI, previews) the static library
  *                    alone stands in, and the output says so.
- *   books          → the eight book pages routed in App.tsx
+ *   books          → the three shelf books (client/src/lib/bookShelf.ts)
+ *   ebooks         → client/src/data/ebooks.ts (every ebook, free since 2026-11-18)
  *   booklets       → client/src/data/booklets.ts (free PDF + EPUB)
  *   every library  → the manifests under client/public/* the site itself reads
  *   answers, argument cases, group guides → their data modules
@@ -35,7 +36,9 @@ import { ANSWERS } from "../client/src/data/answers.ts";
 import { ARGUMENT_CASES } from "../client/src/data/argumentCases.ts";
 import { DISCUSSION_GUIDES } from "../client/src/data/discussion-guides.ts";
 import { BOOKLETS } from "../client/src/data/booklets.ts";
+import { FREE_EBOOKS } from "../client/src/data/ebooks.ts";
 import { essayDate, loadEssayShelf } from "./lib/shelf.mjs";
+import { devotionsIn } from "./lib/family-devotion-file.mjs";
 
 dotenv.config();
 
@@ -47,6 +50,7 @@ export const OUTPUT = path.join(PUB, "catalogue/index.json");
 export const KIND_ORDER = [
   "Essay",
   "Book",
+  "Ebook",
   "Booklet",
   "Study guide",
   "Answer",
@@ -230,24 +234,28 @@ function essayItems(dbRows, staticRows) {
 // ── books and booklets ─────────────────────────────────────────────────────
 
 /**
- * The eight book pages routed in App.tsx. Titles and summaries are the pages'
- * own SEOMeta strings (the " — by James Bell" suffix dropped). The ebook files
- * behind them are sold, so no file is listed here.
+ * The three books on the /books shelf (client/src/lib/bookShelf.ts). Titles and summaries are the pages'
+ * own SEOMeta strings (the " — by James Bell" suffix dropped). Every ebook is
+ * free (James, 2026-11-18), so each lists its PDF and EPUB from data/ebooks.ts.
  */
 export const BOOKS = [
-  ["when-god-bless-america", "When God Bless America Replaces Thy Kingdom Come", "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary."],
-  ["the-monster-in-the-mirror", "The Monster in the Mirror", "Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots."],
+  ["a-higher-allegiance", "A Higher Allegiance", "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary."],
+  ["blind-spots", "Blind Spots", "Why every generation gets the Bible wrong, why yours is no different, and what to do about it. A pastoral reckoning with our own blind spots."],
   ["believe", "Believe: The Rational Case for Christian Faith", "Rational answers to the hardest questions skeptics ask about God, the Bible, the resurrection, suffering, and hell, from a pastor who was once an atheist."],
-  ["deconstruction-of-faith", "The Deconstruction of Faith", "An honest reckoning with why people are leaving the church, what the church owes them, and where faith goes from here. Not a defense and not a surrender."],
-  ["the-reliability-of-scripture", "The Reliability of Scripture", "Why we can trust the Bible we have — the manuscripts, the canon, the archaeology, and the difference between what inerrancy claims and what its critics attack."],
-  ["bible-and-homosexuality", "What Does the Bible Really Say About Homosexuality?", "Scripture, same-sex relationships, and the church's Christ-centered response — a pastoral reading that refuses the false choice between truth and love."],
-  ["bible-and-transgender-identity", "What Does the Bible Say About Transgender Identity?", "Gender, the body, and the church's Christ-centered response — a pastoral reading where clarity and compassion occupy the same room."],
-  ["critical-race-theory-biblical", "Is Critical Race Theory Biblical?", "Race, justice, and what the church actually owes the world — a Scripture-first reckoning that refuses both wholesale adoption and reflexive dismissal."],
 ];
+
+const ebookFiles = (e) => (e ? [file("PDF", e.pdf), ...(e.epub ? [file("EPUB", e.epub)] : [])] : []);
 
 function bookItems() {
   return BOOKS.map(([slug, title, summary]) =>
-    item({ kind: "Book", title, summary: clip(summary), href: `/books/${slug}`, access: "paid" })
+    item({ kind: "Book", title, summary: clip(summary), href: `/books/${slug}`, files: ebookFiles(FREE_EBOOKS.find((e) => e.slug === slug)), access: "free" })
+  );
+}
+
+/** Every other free ebook: its own page where it has one, else the free ebooks on /downloads. */
+function ebookItems() {
+  return FREE_EBOOKS.filter((e) => e.group !== "james").map((e) =>
+    item({ kind: "Ebook", title: e.title, summary: clip(e.line), href: e.page ?? "/downloads", files: ebookFiles(e), access: "free" })
   );
 }
 
@@ -461,7 +469,7 @@ export const LIBRARIES = {
         return item({ kind: "Nation", title: n.title, summary: clip(n.subtitle), href: `/nation/${n.slug ?? f.replace(/\.json$/, "")}` });
       }),
   family: () => {
-    const devotions = [...list("family-devotions.json"), ...list("family-devotions-2.json")].length;
+    const devotions = ["family-devotions.json", "family-devotions-2.json"].flatMap((f) => devotionsIn(readJson(f)).devotions).length;
     return [
       item({ kind: "Family", title: "Family Catechism", summary: clip("A 76-question family catechism in the New City Catechism tradition. Each week: a question, answers for adults and children, a verse, a reflection, a prayer."), href: "/family/catechism", period: `${list("family-catechism.json").length} questions` }),
       item({
@@ -486,7 +494,7 @@ export const LIBRARIES = {
 
 function answerItems() {
   return ANSWERS.map((a) =>
-    item({ kind: "Answer", title: a.question, summary: clip(a.paragraphs?.[0]), href: `/answers#${a.slug}` })
+    item({ kind: "Answer", title: a.question, summary: clip(a.paragraphs?.[0]), href: `/answers/${a.slug}` })
   );
 }
 
@@ -510,6 +518,7 @@ export function assemble(dbRows) {
   const parts = {
     essays: essayItems(dbRows, staticEssays),
     books: bookItems(),
+    ebooks: ebookItems(),
     booklets: bookletItems(),
     answers: answerItems(),
     arguments: argumentItems(),

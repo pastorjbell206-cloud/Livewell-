@@ -1,0 +1,83 @@
+/* Pray the Psalms (/tools/pray-the-psalms). Tokens only. On the shell's
+ * bands and columns; these are its own parts: the psalm cards, the day and
+ * psalm grids, the open psalm with its guide and care, the slow reading, the
+ * psalms kept. Mustard marks only the one thing that matters on a screen. */
+.pp-help-line a{color:var(--ink);font-weight:600;text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.pp-results{margin-top:var(--s-4)}
+.pp-sub{display:flex;align-items:center;gap:8px;font-family:var(--U);font-size:14px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:var(--s-3) 0 10px}
+.pp-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.pp-card{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"kicker arrow" "title arrow" "line arrow";gap:3px 14px;align-items:center;width:100%;min-height:56px;padding:14px 16px;text-align:left;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;color:var(--ink)}
+.pp-card:hover{border-color:var(--borderdk)}
+.pp-card:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.pp-card__kicker{grid-area:kicker;font-family:var(--U);font-size:12.5px;font-weight:600;color:var(--ink-muted)}
+.pp-card__kept{color:var(--mustard-text)}
+.pp-card__title{grid-area:title;font-family:var(--F);font-size:clamp(1.2rem,1.1rem + .3vw,1.35rem);font-weight:500;line-height:1.25}
+.pp-card__line{grid-area:line;font-family:var(--B);font-size:15px;line-height:1.55;color:var(--ink-muted)}
+.pp-card__arrow{grid-area:arrow;color:var(--ink-muted)}
+.pp-days,.pp-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(48px,1fr));gap:8px}
+.pp-num{position:relative;width:100%;min-height:48px;display:inline-flex;align-items:center;justify-content:center;font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer}
+.pp-num:hover{border-color:var(--borderdk)}
+.pp-num:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.pp-num[aria-pressed="true"]{background:var(--ink);color:var(--bone);border-color:var(--ink);box-shadow:inset 0 -2px 0 var(--mustard)}
+.pp-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--mustard-text)}
+.pp-num__kept{position:absolute;top:5px;left:5px}
+.pp-num__prayed{position:absolute;top:4px;right:4px;color:var(--ink-muted)}
+.pp-num[aria-pressed="true"] .pp-num__prayed{color:var(--bone)}
+.pp-filter{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 12px}
+.pp-filter label{font-family:var(--U);font-size:14px;font-weight:600;color:var(--ink)}
+.pp-filter select{min-height:44px;max-width:100%;padding:8px 12px;font-family:var(--U);font-size:15px;color:var(--ink);background:var(--card);border:1px solid var(--borderdk);border-radius:var(--radius-sm)}
+.pp-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:0 0 12px}
+.pp-legend>span{display:inline-flex;align-items:center;gap:6px}
+.pp-view{scroll-margin-top:64px}
+.pp-kicker{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:0 0 6px}
+.pp-source{font-family:var(--U);font-size:13px;color:var(--ink-muted);margin:-6px 0 var(--s-3)}
+.pp-care{margin:0 0 var(--s-3)}
+.pp-care .pp-care__h{font-family:var(--U);font-size:14px;font-weight:600;line-height:1.4;letter-spacing:0;color:var(--ink);margin:0 0 8px}
+#pp-view-h:focus{outline:none;box-shadow:none}
+.pp-slow{scroll-margin-top:72px}
+.pp-guide p{font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 .6em;max-width:var(--w-read)}
+.pp-guide .pp-sub{margin-top:var(--s-2)}
+.pp-why{list-style:none;margin:var(--s-2) 0 0;padding:0;max-width:var(--w-read)}
+.pp-why li{font-family:var(--U);font-size:13.5px;line-height:1.55;color:var(--ink-muted);margin:0 0 4px}
+.pp-why strong{color:var(--ink);font-weight:600}
+.pp-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:var(--s-3) 0;padding:var(--s-2) 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.pp-actions .btn{gap:8px;min-height:44px}
+.pp-actions .btn[aria-pressed="true"]{border-color:var(--ink)}
+.pp-prayed{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);cursor:pointer}
+.pp-prayed input{width:20px;height:20px;accent-color:var(--ink)}
+.pp-cursing{margin:0 0 var(--s-3);padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm);max-width:var(--w-read)}
+.pp-cursing summary{min-height:32px;font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink);cursor:pointer}
+.pp-cursing p{font-family:var(--font-reading);font-size:calc(var(--fs-read) - 1px);line-height:var(--lh-read);color:var(--ink);margin:.8em 0 0}
+.pp-text{margin-top:var(--s-3)}
+.pp-stanza{margin:0 0 var(--s-3)}
+.pp-stanza__title{font-family:var(--F);font-size:clamp(1.2rem,1.1rem + .4vw,1.4rem);font-weight:500;line-height:1.3;color:var(--ink);margin:0 0 8px}
+.pp-verse{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:0 8px;font-family:var(--font-reading);font-size:var(--fs-read);line-height:var(--lh-read);color:var(--ink);margin:0 0 .45em;max-width:var(--w-read)}
+.pp-verse__n{font-family:var(--U);font-size:12.5px;font-weight:600;color:var(--ink-muted);padding-top:.4em;text-align:right}
+.pp-ending{margin:var(--s-3) 0 0;padding:12px 16px;border-left:3px solid var(--ink);max-width:var(--w-read)}
+.pp-ending p:not(.pp-source){font-family:var(--font-reading);font-size:calc(var(--fs-read) - 1px);line-height:var(--lh-read);color:var(--ink);margin:0 0 .6em}
+.pp-ending .pp-source{margin:0 0 8px}
+.pp-print-only{display:none}
+/* The slow reading: one stanza at a time, large type, no timer. */
+.pp-slow{margin:var(--s-3) 0;padding:var(--s-4) clamp(16px,4vw,40px);background:var(--card);border:1px solid var(--border);border-radius:var(--radius-sm)}
+.pp-slow__where{font-family:var(--U);font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--ink-muted);margin:0 0 8px}
+.pp-slow__title{font-family:var(--F);font-size:clamp(1.4rem,1.2rem + .8vw,1.9rem);font-weight:500;line-height:1.25;color:var(--ink);margin:0 0 var(--s-3);outline:none;scroll-margin-top:84px}
+.pp-slow__cont{font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink-muted)}
+.pp-slow__text p{font-family:var(--font-reading);font-size:clamp(1.3rem,1.15rem + .7vw,1.65rem);line-height:1.65;color:var(--ink);margin:0 0 .7em;max-width:34em}
+.pp-slow__n{font-family:var(--U);font-size:.55em;font-weight:600;color:var(--ink-muted);vertical-align:.35em;margin-right:4px}
+.pp-slow__nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:var(--s-4) 0 0;padding-top:var(--s-3);border-top:1px solid var(--border)}
+.pp-slow__nav .btn{gap:8px;min-height:48px;padding:0 22px}
+.pp-slow__keys{font-family:var(--U);font-size:13px;line-height:1.6;color:var(--ink-muted);margin:12px 0 0}
+.pp-slow__keys .btn--text{display:inline-flex;align-items:center;gap:4px;font-size:13px}
+.pp-kept{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.pp-kept li{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;border-bottom:1px solid var(--border)}
+.pp-kept__drop{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;color:var(--ink-muted);background:none;border:1px solid transparent;border-radius:var(--radius-pill);cursor:pointer}
+.pp-kept__drop:hover{border-color:var(--border)}
+.pp-kept__drop:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.pp-teach .pp-cursing{margin-top:var(--s-3)}
+@media print{
+  .pp-pick,.pp-teach,.pp-actions,.pp-slow,.pp-help-line,.pp-cursing{display:none !important}
+  .pp-print-only{display:block}
+  .pp-verse{font-size:10.5pt;line-height:1.4;margin:0 0 2pt}
+  .pp-guide p,.pp-care p,.pp-ending p{font-size:10.5pt;line-height:1.4}
+  .pp-stanza{margin:0 0 6pt;break-inside:avoid-page}
+}

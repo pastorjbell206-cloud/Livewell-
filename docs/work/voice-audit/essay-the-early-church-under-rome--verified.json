@@ -1,0 +1,50 @@
+{
+  "piece": "the-early-church-under-rome",
+  "human_score": 8.5,
+  "voice_score": 8.5,
+  "verdict": "The first reader's scores hold. The essay reads as a person who knows the sources telling the story; nothing in the first five sections needs touching. Four small edits survive, all in the last two sections. Four findings are dropped as over-editing or as James's call. A second full read found nothing new worth an edit.",
+  "keep": [
+    {
+      "quote": "to pray for emperors who hunted it",
+      "tell": "Balanced closing pair where the second half contradicts the essay's own account",
+      "why": "The Pliny section reports Trajan's rule that 'Christians were not to be hunted', and says so again of the next century and a half. The matched pair 'neighbors who distrusted it' / 'emperors who hunted it' picks the stronger verb for the rhythm. A skeptic reading closely catches it in a one-line paragraph near the end.",
+      "replacement": "to pray for emperors who persecuted it",
+      "severity": "should"
+    },
+    {
+      "quote": "The church was not in a hurry. It was forming people who could stand before a magistrate, because it knew that day might come.",
+      "tell": "Second 'not X. It was Y.' in one section; paragraph restating its own opening as a slogan",
+      "why": "The same section already has 'Growth like that does not depend on crowds. It moves through networks of households and friendships.' and this paragraph opens 'And the church was patient.' Saying 'not in a hurry' at the close repeats the opening. The first reader's cut left 'It' pointing at 'A church order', so the subject is restored.",
+      "replacement": "The church was forming people who could stand before a magistrate, because it knew that day might come.",
+      "severity": "should"
+    },
+    {
+      "quote": "What we face is closer to the way things began in Lyon, before anyone was arrested, when the cost was being shut out of the houses and the baths and the market and being thought strange or dangerous by the neighbors.",
+      "tell": "Repeated sentence frame: three 'What ... is/was' clefts in the closing section, two of them back to back",
+      "why": "'What is ending here is the cultural default:' sits a few lines above, and 'What they refused was the pinch of incense:' follows three paragraphs later. Those two are at real hinges. The middle one makes the frame audible as a template. The first reader's 'Our situation is' is stiffer than speech; 'We are closer to' is what a person would say.",
+      "replacement": "We are closer to the way things began in Lyon, before anyone was arrested, when the cost was being shut out of the houses and the baths and the market and being thought strange or dangerous by the neighbors.",
+      "severity": "should"
+    },
+    {
+      "quote": "A church fighting to recover its place is not going to persuade a post-Christian America of anything.",
+      "tell": "A motif stamped through the piece",
+      "why": "'A post-Christian America' is in the excerpt, the section heading, and three sentences of the closing section. The heading and 'That is the church a post-Christian America is going to need' carry it. Here the plain word reads better, and the next sentence's 'If anything persuades it' still has its antecedent.",
+      "replacement": "A church fighting to recover its place is not going to persuade this country of anything.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"Celsus read the Christians closely and despised them. Julian watched them feed his own people and complained of it.\" Dropped. Both are hostile witnesses who watched the church up close, which is the paragraph's point about where its credibility came from. Cutting Celsus loses a real half of the evidence.",
+    "\"and it came from the widows' rolls and the plague wards\" Dropped. 'Wards' is a slight stretch, but the phrase is concrete shorthand for two things the essay documented (Cornelius's list, Dionysius's plague), and the proposed replacement ('the widows it fed and the sick it nursed') is a more symmetrical pair than the original.",
+    "\"If losing cultural standing feels like losing the faith, then more of our faith was resting on that standing than we knew.\" Dropped. This is the earned thought of the paragraph, and the rewrite changes little beyond the wording.",
+    "Title \"When the Church Had Nothing to Lose\" Dropped as an edit. James approved it with the pilot. The tension with the Decius section is real and goes to for_james."
+  ],
+  "added": [],
+  "for_james": [
+    "The title is the one phrase that sounds written, and the Decius section argues against it (Cyprian's Christians had estates and shops to lose). You approved it, so it stands unless you say otherwise. The plain alternative is 'The Early Church Under Rome'.",
+    "'From the left and from the right' has no concrete case from the left anywhere in the essay; every named example points one way (Falwell, the loss of deference called persecution). Your standard refuses forced symmetry, so this may be right as it is. If you have a real example in mind, one sentence there would make the phrase more than a gesture. None was supplied.",
+    "Wilken's sentence credits him with taking the critics seriously, and the description that follows is the essay's own. If you remember a specific point of his, it belongs there.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree (short 2-4 sentence paragraphs, a Greek or Hebrew word, a screenshot line, three questions and a practice, 1,500 to 2,500 words, against developed paragraphs, one earned verdict and no application box). This essay follows the voice document, and it was judged by that. Nothing was rewritten toward the profile.",
+    "No replacement touches a quotation, date, name, number or Scripture reference. Checked against the claims ledger."
+  ]
+}

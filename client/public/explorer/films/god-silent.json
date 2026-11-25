@@ -1,0 +1,105 @@
+{
+  "slug": "god-silent",
+  "title": "Why does God seem silent sometimes?",
+  "group": "questions",
+  "status": "finished",
+  "mark": "god-silent",
+  "line": {
+    "younger": "When you pray and nothing seems to happen, you are in good company. Seven pictures of people in the Bible who felt it too, and what God did.",
+    "older": "The felt silence of God, in seven pictures: the psalms of lament, Elijah at the mountain and Jesus' own cry from the cross, as the Study Bible and the site's page on feeling far from God read them."
+  },
+  "poster": "A person sits alone on a rock on a dark hillside under a sky full of stars.",
+  "frames": [
+    {
+      "id": "quiet",
+      "name": "When God seems quiet",
+      "still": "A person sits alone on a rock on a dark hillside under a sky full of stars.",
+      "younger": "Sometimes people pray and it feels as if nobody is listening. Nothing seems to happen, and God seems very quiet. If you have felt that, you are in good company: the Bible is full of people who felt it too.",
+      "older": "Many people who pray know the moment when heaven seems shut: no answer, no sign, only quiet. The site's page on feeling far from God begins with a sentence worth holding on to. Feeling far from God is not the same as being far from him."
+    },
+    {
+      "id": "how-long",
+      "name": "How long?",
+      "still": "The same dark hillside; a small harp now stands against the rock beside the person.",
+      "younger": "King David once prayed, “How long, O LORD? Will You forget me forever?” He said it straight to God, and God kept his words in the Bible for us, so we can pray them too.",
+      "older": "Scripture is full of people who felt forsaken at the very moment they were being held. The psalms of lament pray the absence out loud, with no embarrassment. When David cried, “How long will You hide Your face from me?” he was not doubting that God was there. He was protesting an absence he felt. The lament was an act of faith, not its collapse."
+    },
+    {
+      "id": "trust",
+      "name": "Trust in the dark",
+      "still": "Still night on the hillside, but along the far hills a thin line of light shows.",
+      "younger": "David's prayer does not stay stuck. Before it ends, while nothing has changed yet and it is still dark, he tells God he trusts him.",
+      "older": "Psalm 13 is six verses long, and it traces the whole road from despair to praise. The Study Bible notes that David declares his trust without any change in his circumstances being reported. The psalm teaches that the language of complaint and the language of trust can sit in the same prayer.",
+      "verse": {
+        "ref": "Psalm 13:5",
+        "text": "But I have trusted in Your loving devotion; my heart will rejoice in Your salvation."
+      }
+    },
+    {
+      "id": "elijah",
+      "name": "Elijah under the tree",
+      "still": "In a dry land a person lies asleep in the thin shade of a small desert tree; beside them on a stone are a loaf of bread and a jar of water.",
+      "younger": "The prophet Elijah once ran away into the desert, so tired and afraid that he told God, “I have had enough, LORD.” God did not scold him. He let Elijah sleep, gave him bread and water, and then let him sleep and eat again.",
+      "older": "After his greatest day, Elijah ran for his life into the wilderness and told God, “I have had enough, LORD.” The Study Bible notes that the Bible does not criticize him for that prayer or hide it, and that God's response comes in a striking order: rest, food, water and a second meal before any words.",
+      "verse": {
+        "ref": "1 Kings 19:5",
+        "text": "Then he lay down under the broom tree and fell asleep."
+      }
+    },
+    {
+      "id": "whisper",
+      "name": "A still, small voice",
+      "still": "A mountain with a cave in its side. Broken rocks lie at its foot where a great wind has passed, and a person stands quietly at the mouth of the cave.",
+      "younger": "Then God sent Elijah to a mountain. A great wind tore at the rocks, then came an earthquake, then a fire, but God was not in any of them. After that came “a still, small voice”. God spoke to Elijah gently, told him he was not alone, and gave him work to do.",
+      "older": "At the mountain the LORD passed by, but not in the wind, the earthquake or the fire. After the fire came “a still, small voice.” The Study Bible notes what followed: a question that invites Elijah to speak, then a quiet presence, and finally new purpose and the news that he is not alone. God was not in the loud things that day.",
+      "verse": {
+        "ref": "1 Kings 19:12",
+        "text": "After the earthquake there was a fire, but the LORD was not in the fire. And after the fire came a still, small voice."
+      }
+    },
+    {
+      "id": "cross",
+      "name": "Even Jesus",
+      "still": "A hill under a darkened sky, and on it a cross with no one drawn on it.",
+      "younger": "Even Jesus knew what this feels like. On the cross he cried out with the words of a psalm, “My God, My God, why have You forsaken Me?” But that was not the end. Three days later God raised him from the dead.",
+      "older": "On the cross Jesus prayed the first line of Psalm 22, Israel's fullest prayer for the moment when God seems gone. The Son of God took that cry onto his own lips. The darkness of that afternoon was not the end: on the third day he was raised. And Psalm 22 itself, at its lowest point, breaks off with the declaration that God has answered.",
+      "verse": {
+        "ref": "Mark 15:34",
+        "text": "My God, My God, why have You forsaken Me?"
+      }
+    },
+    {
+      "id": "near",
+      "name": "Near, though unseen",
+      "still": "Morning on the hillside: light comes over the hills from beyond the top of the picture, and the person stands up from the rock.",
+      "younger": "So if God seems quiet, keep talking to him, and tell someone you trust how you feel. Feeling far from God is not the same as being far from him.",
+      "older": "The site's page on feeling far from God gives plain advice: do not measure God's nearness by your feelings, which rise and fall with sleep, grief and the weather; keep the practices when the warmth is gone; tell one honest believer where you are; and read the psalms of absence, written by people who felt exactly this and were not cast off.",
+      "verse": {
+        "ref": "Psalm 34:18",
+        "text": "The LORD is near to the brokenhearted; He saves the contrite in spirit."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Have you ever prayed and felt that God was quiet? Which words from David's prayer could you use to tell God about it?",
+    "older": "Psalm 13 holds complaint and trust in the same prayer. Why might God want honest complaint from his people more than polite silence?"
+  },
+  "read": [
+    { "label": "Psalm 13", "href": "/study/bible/psalms/13" },
+    { "label": "1 Kings 19", "href": "/study/bible/1-kings/19" },
+    { "label": "Psalm 22", "href": "/study/bible/psalms/22" },
+    { "label": "Mark 15", "href": "/study/bible/mark/15" },
+    { "label": "Psalm 34", "href": "/study/bible/psalms/34" }
+  ],
+  "stops": ["return", "cross"],
+  "cards": ["god"],
+  "care": "Waiting can be hard, especially waiting for something to get better at home, or for a prayer to be answered. If you are carrying a long wait, you do not have to carry it alone. Talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Feeling far from God", "href": "/wisdom/feeling-far-from-god" },
+    { "label": "Psalm 13 in the Study Bible: from forsakenness to song", "href": "/study/bible/psalms/13" },
+    { "label": "1 Kings 19 in the Study Bible: the still, small voice", "href": "/study/bible/1-kings/19" },
+    { "label": "Prayer (a moving picture)", "href": "/study/explorer/watch/prayer" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "quiet", "verse": false}, {"id": "how-long", "verse": false}, {"id": "trust", "verse": true}, {"id": "elijah", "verse": false}, {"id": "whisper", "verse": false}, {"id": "cross", "verse": false}, {"id": "near", "verse": true}]},
+  "end": { "label": "Read Psalm 13 in the Study Bible", "href": "/study/bible/psalms/13" }
+}

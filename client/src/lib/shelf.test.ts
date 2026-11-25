@@ -45,7 +45,7 @@ import {
 } from "../../../scripts/lib/shelf.mjs";
 
 const LIVE_KEEP = "when-the-church-married-empire";
-const PENDING = "what-render-unto-caesar-actually-means";
+const PENDING = "when-god-bless-america-replaces-thy-kingdom-come";
 const RETIRED = "the-atheist-in-the-pulpit";
 const BEFORE = "2026-07-08T01:06:22.000Z";
 const AFTER = "2026-10-20T15:00:00.000Z";
@@ -61,11 +61,11 @@ describe("shelf.json", () => {
     }
   });
 
-  it("holds the 60 planned essays: 15 live, 45 pending, each filed to a real section", () => {
-    expect(SHELF_ESSAYS).toHaveLength(60);
-    expect(new Set(SHELF_ESSAYS.map((e) => e.slug)).size).toBe(60);
-    expect(SHELF_ESSAYS.filter((e) => e.status === "live")).toHaveLength(15);
-    expect(SHELF_ESSAYS.filter((e) => e.status === "pending")).toHaveLength(45);
+  it("holds the 104 shelf essays: 55 live, 49 pending, each filed to a real section", () => {
+    expect(SHELF_ESSAYS).toHaveLength(104);
+    expect(new Set(SHELF_ESSAYS.map((e) => e.slug)).size).toBe(104);
+    expect(SHELF_ESSAYS.filter((e) => e.status === "live")).toHaveLength(55);
+    expect(SHELF_ESSAYS.filter((e) => e.status === "pending")).toHaveLength(49);
     const sections = new Set(SHELF_SECTIONS.map((s) => s.slug));
     for (const e of SHELF_ESSAYS) {
       expect(sections.has(e.section), e.slug).toBe(true);
@@ -157,7 +157,7 @@ describe("essay visibility", () => {
 
   it("orders the live shelf by section, then shelf order", () => {
     const live = liveShelfEssays();
-    expect(live).toHaveLength(20);
+    expect(live).toHaveLength(80);
     expect(live[0].slug).toBe("every-generation-was-sure-it-was");
     const ranks = live.map((e) => SHELF_SECTIONS.findIndex((s) => s.slug === e.section));
     expect([...ranks].sort((a, b) => a - b)).toEqual(ranks);
@@ -168,8 +168,11 @@ describe("essay visibility", () => {
       "the-mirror",
       "faith-and-power",
       "after-christendom",
+      "american-church",
       "ancient-church",
       "bible-in-its-world",
+      "doubt",
+      "ordinary-faithfulness",
     ]);
   });
 });
@@ -179,10 +182,11 @@ describe("nearest section", () => {
     expect(nearestSection(PENDING)?.slug).toBe("faith-and-power");
   });
 
-  it("never points at a section with nothing in it", () => {
-    // Doubt and Hard Questions has no public essay yet.
-    expect(nearestSection("did-the-resurrection-happen")).toBeNull();
-    expect(nearestSection(RETIRED, "doubt")).toBeNull();
+  it("points at a section once it holds a public essay, and never at a track with no section", () => {
+    // Every section now holds a public essay; The American Church was the last to get one.
+    expect(nearestSection("doctrine-of-discovery")?.slug).toBe("american-church");
+    expect(nearestSection(RETIRED, "prophetic-justice")?.slug).toBe("american-church");
+    expect(nearestSection(RETIRED, "pastoral-ministry")).toBeNull();
   });
 
   it("routes a retired essay by its track", () => {

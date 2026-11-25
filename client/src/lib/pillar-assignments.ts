@@ -1663,5 +1663,212 @@ export const PILLAR_ASSIGNMENTS: Record<string, PillarAssignment> = {
       "practices"
     ],
     "confidence": "high"
+  },
+  "did-god-choose-me-or-did-i-choose-god": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-jesus-wont-fit-in-either-party": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-women-preach": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-hell-real-and-is-it-forever": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "can-a-christian-be-rich": {
+    "pillar": 6,
+    "subThemes": [
+      "vocation-work",
+      "practices"
+    ],
+    "confidence": "high"
+  },
+  "what-the-church-got-wrong-about-race": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-does-god-let-children-suffer": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "divorce-remarriage-and-the-church": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant"
+    ],
+    "confidence": "high"
+  },
+  "can-a-nation-be-christian": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "babies-or-believers-why-christians-baptize-differently": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-ever-go-to-war": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "can-a-christian-lose-their-salvation": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "do-the-gifts-of-the-spirit-still-happen": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-happens-to-people-who-never-hear-the-gospel": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "christianity-was-never-western": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-christianity-good-for-women": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "what-is-the-lords-supper": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-the-bible-reliable-enough-to-build-a-life-on": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "does-prayer-change-anything": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-are-there-so-many-denominations": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-hell-real-and-is-it-fair": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "did-god-choose-who-would-be-saved": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-divorce-ever-right-and-may-a-divorced-person-remarry": {
+    "pillar": 6,
+    "subThemes": [
+      "marriage-covenant"
+    ],
+    "confidence": "high"
+  },
+  "should-the-church-stay-out-of-politics": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "why-does-god-allow-evil": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-jesus-the-only-way": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "does-science-disprove-god": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "did-jesus-really-rise-from-the-dead": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-drink-alcohol": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-money-the-root-of-all-evil": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-the-church-responsible-for-antisemitism": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "are-catholics-and-protestants-both-christians": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-support-the-death-penalty": {
+    "pillar": 3,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-depression-a-spiritual-failure": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "do-i-have-to-go-to-church-to-be-a-christian": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-the-god-of-the-old-testament-the-god-of-jesus": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "should-christians-keep-the-sabbath": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "does-god-have-a-plan-for-my-life": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "is-gambling-a-sin": {
+    "pillar": 6,
+    "subThemes": [],
+    "confidence": "high"
+  },
+  "can-i-trust-my-feelings-about-god": {
+    "pillar": 5,
+    "subThemes": [],
+    "confidence": "high"
   }
 };

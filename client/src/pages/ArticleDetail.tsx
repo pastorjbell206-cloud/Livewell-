@@ -5,20 +5,22 @@
  * - Fetches the post by slug (was: full listPublished + .find())
  * - Related articles uses the relatedArticles router
  * - Emits Article schema + Open Graph via SEOMeta (React 19 head JSX)
- * - Body width is 680px (var(--w-prose)) per CLAUDE.md
- * - Save and send (TakeItWithYou) sit under the byline, on a phone's first
- *   screen, and again after the essay; Save is My Library (lib/library), the
- *   one save store, which also reads the page's older bookmarks
- * - Listen (the device's own voice), Text size, and Focus sit above the body;
- *   Focus mode keeps every action reachable
+ * - The body is one centered reading column (var(--w-read)) set in the
+ *   reading face (--font-reading); its size is the --fs-read token scaled by
+ *   the reader's own choice (--read-scale)
+ * - The head is the title block alone. Two controls sit above the body:
+ *   Listen (the device's own voice) and "Aa" (text size and Focus). One row
+ *   follows the essay: Save (My Library, lib/library, the one save store),
+ *   Share (Copy link, Facebook, Cite, Send to my phone, the three notes, the
+ *   group guide) and Print. Focus mode keeps every action reachable
  * - Printing gives the title, byline, and text; the rest is .no-print
- * - On a phone the essay's first sentence is on the first screen (U04): a 16px
- *   gutter and tighter air (.essay-* in index.css), the reading tools in one
- *   row, the contents card closed under 760px, and no art before the text. A
- *   real cover sits after the opening section; generated art is not drawn.
+ * - The essay's first sentence is on the first screen of a phone (U04): a
+ *   16px gutter and tighter air (.essay-* in index.css), the contents line
+ *   closed on every screen, and no art before the text. A real cover sits
+ *   after the opening section; generated art is not drawn.
  * - Crossway's notice follows an essay that quotes the ESV (lib/esv)
  */
-import { useEffect, useRef, useState } from "react";
+import { useDeferredValue, useEffect, useId, useRef, useState } from "react";
 import { scrollBehavior } from "@/lib/motion";
 import { createPortal } from "react-dom";
 import { Link, useLocation, useParams } from "wouter";
@@ -26,10 +28,12 @@ import { useQuery } from "@tanstack/react-query";
 import { DISCUSSION_GUIDES } from "@/data/discussion-guides";
 import { Markdown } from "@/components/Markdown";
 import { recordReadEvent } from "@/components/ReadDepthBeacon";
-import { ArrowLeft, BookOpen, Share2, User } from "lucide-react";
+import { Bookmark, BookmarkCheck, BookOpen, ChevronDown, Printer, Share2 } from "lucide-react";
 
 import Layout from "@/components/Layout";
-import { TakeItWithYou } from "@/components/TakeItWithYou";
+import { SAVE_FAILED, SendButton, takeButton } from "@/components/TakeItWithYou";
+import { libraryPath, removeFromLibrary, saveToLibrary, useLibrary } from "@/lib/library";
+import { smartQuotes } from "@/lib/smartQuotes";
 import { ListenButton } from "@/components/ListenButton";
 import { TextSize, useTextSize } from "@/components/TextSize";
 import { shareTrigger } from "@/components/AudienceShare";
@@ -37,14 +41,11 @@ import { LoadFailed } from "@/components/LoadFailed";
 import PageEndNav from "@/components/PageEndNav";
 import ReadingProgressBar from "@/components/ReadingProgressBar";
 import { SEOMeta, getArticleSchema, getBreadcrumbSchema } from "@/components/SEOMeta";
-import { AuthorBio } from "@/components/AuthorBio";
-import ChannelLine from "@/components/ChannelLine";
+import { EssayShare } from "@/components/EssayShare";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { CitationCopy } from "@/components/CitationCopy";
 import { AudienceShare } from "@/components/AudienceShare";
-import { KeepReadingBook } from "@/components/KeepReadingBook";
-import { RelatedEssays } from "@/components/RelatedEssays";
-import ArticleNextSteps, { isArticleOnPath } from "@/components/ArticleNextSteps";
+import { NextEssay } from "@/components/RelatedEssays";
 import { trpc } from "@/lib/trpc";
 import { pillarToTrack } from "@/lib/taxonomy";
 import { ESV_NOTICE, owesEsvNotice } from "@/lib/esv";
@@ -246,13 +247,6 @@ export function splitAtFirstSection(markdown: string): [opening: string, rest: s
   return [markdown.slice(0, heading.index), markdown.slice(heading.index)];
 }
 
-/** The contents card starts closed on a phone, where it would push the first sentence off the screen. */
-const PHONE_WIDTH = "(max-width: 760px)";
-function contentsOpenAtFirst(): boolean {
-  if (typeof window === "undefined" || typeof window.matchMedia !== "function") return true;
-  return !window.matchMedia(PHONE_WIDTH).matches;
-}
-
 function slugifyHeading(text: string, index: number) {
   const base = text
     .toLowerCase()
@@ -264,7 +258,9 @@ function slugifyHeading(text: string, index: number) {
 }
 
 /**
- * TableOfContents — a slim, collapsible "In this essay" card for long pieces.
+ * TableOfContents: one closed line, "In this essay", for long pieces. It
+ * starts closed on every screen, so the essay's first sentence is never
+ * pushed down the page by a list of its own headings.
  *
  * Reads the section headings the Markdown renderer put into the body, assigns stable
  * anchor ids, and links to them. Renders nothing on short essays (fewer than
@@ -280,7 +276,7 @@ function TableOfContents({
   contentKey: string;
 }) {
   const [items, setItems] = useState<{ id: string; text: string }[]>([]);
-  const [open, setOpen] = useState(contentsOpenAtFirst);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const root = bodyRef.current;
@@ -313,29 +309,21 @@ function TableOfContents({
   };
 
   return (
-    <nav aria-label="In this essay" className="essay-contents" style={{ maxWidth: "var(--w-prose)" }}>
-      <details
-        open={open}
-        onToggle={e => setOpen(e.currentTarget.open)}
-        style={{
-          background: "var(--card)",
-          border: "1px solid var(--border)",
-          borderLeft: "2px solid var(--mustard)",
-          borderRadius: "var(--radius-sm)",
-        }}
-      >
-        {/* The card's padding sits on the summary, so the whole closed card
-            is the tap target (it starts closed on a phone), not one line of
-            11px text. */}
+    <nav aria-label="In this essay" className="essay-contents" style={{ maxWidth: "var(--w-read)" }}>
+      <details open={open} onToggle={e => setOpen(e.currentTarget.open)}>
+        {/* The whole closed line is the tap target (44px), not its 12px label. */}
         <summary
           style={{
-            padding: "16px 20px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            minHeight: "44px",
             fontFamily: "var(--U)",
-            fontSize: "11px",
+            fontSize: "12px",
             fontWeight: 600,
             textTransform: "uppercase",
             letterSpacing: "0.18em",
-            color: "var(--mustard-text)",
+            color: "var(--ink-muted)",
             cursor: "pointer",
           }}
         >
@@ -344,11 +332,11 @@ function TableOfContents({
         <ol
           style={{
             listStyle: "none",
-            margin: "0 20px 16px",
+            margin: "4px 0 16px",
             padding: 0,
             display: "flex",
             flexDirection: "column",
-            gap: "10px",
+            gap: "2px",
           }}
         >
           {items.map(item => (
@@ -357,6 +345,9 @@ function TableOfContents({
                 href={`#${item.id}`}
                 onClick={e => handleJump(e, item.id)}
                 style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  minHeight: "44px",
                   fontFamily: "var(--B)",
                   fontSize: "15px",
                   lineHeight: 1.4,
@@ -376,6 +367,132 @@ function TableOfContents({
         </ol>
       </details>
     </nav>
+  );
+}
+
+/**
+ * EssayTools: the one row above an essay, two controls only (WAVE-1, "Essay
+ * chrome"): Listen (the device's own voice) and "Aa", which opens the
+ * reader's text size and Focus in place. Set quietly between two hairlines
+ * (.essay-tools in index.css) so nothing here competes with the first
+ * sentence. Save, Share and Print wait at the end of the essay.
+ */
+function EssayTools({
+  title,
+  author,
+  bodyRef,
+  measure,
+  textSize,
+  focus,
+  onFocus,
+}: {
+  title: string;
+  author: string;
+  bodyRef: React.RefObject<HTMLDivElement | null>;
+  measure: string;
+  textSize: ReturnType<typeof useTextSize>;
+  focus: boolean;
+  onFocus: () => void;
+}) {
+  const [open, setOpen] = useState(false);
+  const panelId = useId();
+  return (
+    <div className="no-print essay-tools" role="group" aria-label="Reading tools" style={{ maxWidth: measure }}>
+      <div className="essay-tools__row">
+        <ListenButton target={bodyRef} title={title} byline={`By ${author}`} />
+        <div className="essay-tools__set">
+          <button type="button" className="essay-aa" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-controls={panelId} style={shareTrigger}>
+            <span aria-hidden="true">Aa</span>
+            <span className="sr-only">Text size and focus</span>
+          </button>
+        </div>
+      </div>
+      <div id={panelId} hidden={!open} className="essay-aa__panel">
+        <TextSize size={textSize.size} onChange={textSize.setSize} saveFailed={textSize.saveFailed} />
+        <button type="button" onClick={onFocus} aria-pressed={focus} style={shareTrigger}>
+          <BookOpen size={16} aria-hidden />
+          {focus ? "Exit focus" : "Focus"}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * EssayEnd: one row after the essay: Save, Share, Print. Share opens in place
+ * and holds every way to pass the essay on that the page had before: Copy
+ * link and Share on Facebook, Cite this, Send to my phone, the three notes
+ * (a skeptic, a pastor, a spouse), and the small-group guide where one
+ * exists. Save writes to My Library on this device and says so, or says
+ * plainly that it could not.
+ */
+function EssayEnd({
+  title,
+  author,
+  path,
+  url,
+  summary,
+  date,
+  groupGuide,
+  measure,
+}: {
+  title: string;
+  author: string;
+  path: string;
+  url: string;
+  summary?: string;
+  date: string;
+  groupGuide: string | null;
+  measure: string;
+}) {
+  const lib = libraryPath(path);
+  const saved = useLibrary().some((i) => i.href === lib);
+  const [status, setStatus] = useState<"" | "saved" | "removed" | "failed">("");
+  const [open, setOpen] = useState(false);
+  const panelId = useId();
+  const toggleSave = () => {
+    const ok = saved ? removeFromLibrary(lib) : saveToLibrary({ href: lib, title, kind: "Essay", date: date || undefined });
+    setStatus(ok ? (saved ? "removed" : "saved") : "failed");
+  };
+  return (
+    <div className="no-print essay-end" role="group" aria-label="Keep or pass on this essay" style={{ maxWidth: measure }}>
+      <div className="essay-end__row">
+        <button type="button" onClick={toggleSave} aria-pressed={saved} style={takeButton}>
+          {saved ? <BookmarkCheck size={16} aria-hidden /> : <Bookmark size={16} aria-hidden />}
+          {saved ? "Saved" : "Save"}
+        </button>
+        <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} aria-controls={panelId} style={takeButton}>
+          <Share2 size={16} aria-hidden />
+          Share
+          <ChevronDown size={16} aria-hidden style={{ transform: open ? "rotate(180deg)" : "none" }} />
+        </button>
+        <button type="button" onClick={() => window.print()} style={takeButton}>
+          <Printer size={16} aria-hidden /> Print
+        </button>
+      </div>
+      <p aria-live="polite" className="essay-tools__status essay-end__status">
+        {status === "saved" && (
+          <>
+            Saved to <Link href="/my-library">My Library</Link>, in this browser.
+          </>
+        )}
+        {status === "removed" && "Removed from My Library."}
+        {status === "failed" && SAVE_FAILED}
+      </p>
+      <div id={panelId} hidden={!open} className="essay-end__share" role="region" aria-label="Share this essay">
+        {/* Plain sharing first: the link itself, and Facebook by name. */}
+        <EssayShare url={url} />
+        <CitationCopy title={title} url={url} publishedDate={date} author={author} />
+        <SendButton title={title} href={path} summary={summary} label="Send to my phone" />
+        {/* Three-audience share: a skeptic, a pastor, a spouse */}
+        <AudienceShare title={title} url={url} />
+        {groupGuide && (
+          <Link href={groupGuide} style={{ ...shareTrigger, color: "var(--ink)" }}>
+            Use this with your small group
+          </Link>
+        )}
+      </div>
+    </div>
   );
 }
 
@@ -416,8 +533,13 @@ export default function ArticleDetail() {
     enabled: Boolean(slug && rewrite),
   });
 
-  const dbPost = postQuery.data ?? null;
-  const rewritten = rewriteQuery.data ?? null;
+  // Drawn as a transition when it arrives, so React renders the essay in
+  // slices: straight from the query it was one task of 141 ms on a desktop
+  // machine, about four times that on the phone Lighthouse simulates. Until
+  // that first draw is done the loading line (or the prerendered text) stays.
+  const dbPost = useDeferredValue(postQuery.data ?? null);
+  const rewritten = useDeferredValue(rewriteQuery.data ?? null);
+  const arriving = dbPost !== (postQuery.data ?? null) || rewritten !== (rewriteQuery.data ?? null);
   const post: EssayView | null = rewritten
     ? {
         slug: rewritten.slug,
@@ -518,9 +640,10 @@ export default function ArticleDetail() {
     );
   }
 
-  // With a rewrite, wait for the file and for the database row (its pillar and
-  // dates); a missing or failed row does not hold the rewrite back.
-  if (postQuery.isLoading || rewriteQuery.isLoading) {
+  // An essay with a rewrite shows as soon as its file loads. The database row
+  // (its pillar, dates and cover image) fills in when the server answers, and
+  // a slow, missing or failed row never holds the essay back.
+  if ((rewrite ? rewriteQuery.isLoading : postQuery.isLoading) || (arriving && !post)) {
     return (
       <Layout>
         <div style={{ padding: "var(--s-6) var(--s-4)", textAlign: "center" }}>
@@ -623,8 +746,9 @@ export default function ArticleDetail() {
   // My Library however the reader arrived (?path=, #section).
   const essayPath = `/writing/${post.slug}`;
   const summary = post.excerpt ?? undefined;
-  const measure = focus ? "68ch" : "var(--w-prose)";
-  const bodySize = Math.round((focus ? 20 : 18) * textSize.scale);
+  // The reading column. The type's own size is a token (--fs-read) scaled by
+  // the reader's choice (--read-scale), so a phone and a desk each get theirs.
+  const measure = focus ? "36em" : "var(--w-read)";
 
   return (
     <Layout>
@@ -663,48 +787,12 @@ export default function ArticleDetail() {
       {/* print-paper: printed, the essay is ink on paper whatever the screen's
           theme (index.css, end of file). */}
       <article className={focus ? "lw-reading-focus print-paper" : "print-paper"}>
-        {/* BACK BUTTON — hidden in reading-focus mode (breadcrumb chrome) */}
-        {!focus && (
-        <div className="no-print essay-back" style={{ borderBottom: "1px solid var(--border)" }}>
-          <button
-            type="button"
-            onClick={() => navigate("/writing")}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "8px",
-              minHeight: "44px",
-              background: "transparent",
-              border: "none",
-              color: "var(--ink-muted)",
-              cursor: "pointer",
-              fontFamily: "var(--U)",
-              fontSize: "13px",
-              fontWeight: 600,
-              padding: 0,
-              transition: "color 0.2s",
-            }}
-            onMouseEnter={e => (e.currentTarget.style.color = "var(--ink)")}
-            onMouseLeave={e =>
-              (e.currentTarget.style.color = "var(--ink-muted)")
-            }
-          >
-            <ArrowLeft size={16} aria-hidden />
-            All essays
-          </button>
-        </div>
-        )}
-
-        {/* HEADER — centered editorial. On a phone, a 16px gutter and less
-            air (.essay-head in index.css), so save and send and then the
-            essay's first sentence land on the first screen. */}
-        <section
-          className="essay-head"
-          style={{
-            background: "var(--bone)",
-            borderBottom: "1px solid var(--border)",
-          }}
-        >
+        {/* HEADER: the title block of a publication, centered on the page.
+            Section, title, one line under it, then name, minutes and date.
+            Nothing to press here: the reading tools are one quiet row at the
+            top of the column below, and the way back to the shelf is the
+            section name above the title (.essay-head in index.css). */}
+        <section className="essay-head" style={{ background: "var(--bone)" }}>
           <div
             style={{
               maxWidth: "var(--w-prose)",
@@ -740,14 +828,14 @@ export default function ArticleDetail() {
               className={post.excerpt ? "essay-title" : "essay-title essay-title--alone"}
               style={{
                 fontFamily: "var(--F)",
-                fontSize: "clamp(36px, 5vw, 56px)",
+                fontSize: "var(--fs-h1)",
                 fontWeight: 400,
-                lineHeight: 1.1,
+                lineHeight: 1.08,
                 letterSpacing: "-0.02em",
                 color: "var(--ink)",
               }}
             >
-              {post.title}
+              {smartQuotes(post.title)}
             </h1>
 
             {/* Standfirst / dek (size and air in .essay-dek) */}
@@ -761,7 +849,7 @@ export default function ArticleDetail() {
                   maxWidth: "32em",
                 }}
               >
-                {post.excerpt}
+                {smartQuotes(post.excerpt)}
               </p>
             )}
 
@@ -789,10 +877,7 @@ export default function ArticleDetail() {
                 color: "var(--ink-muted)",
               }}
             >
-              <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
-                <User size={14} aria-hidden />
-                {author}
-              </span>
+              <span style={{ color: "var(--ink)", fontWeight: 500 }}>{author}</span>
               <span aria-hidden style={{ opacity: 0.5 }}>·</span>
               <span>{post.readingTimeMinutes ?? 5} min read</span>
               {post.publishedAt && (
@@ -808,14 +893,6 @@ export default function ArticleDetail() {
                 </>
               )}
             </div>
-
-            {/* SAVE AND SEND — under the byline, so a reader on a phone can
-                keep the essay or send it to themselves before scrolling.
-                Shown in Focus mode too. The wrapper centers the bar and lets
-                its panel's text sit flush left. */}
-            <div className="essay-actions" style={{ display: "flex", justifyContent: "center", textAlign: "left" }}>
-              <TakeItWithYou title={post.title} kind="Essay" href={essayPath} summary={summary} date={publishedIso} print align="center" />
-            </div>
           </div>
         </section>
 
@@ -825,61 +902,27 @@ export default function ArticleDetail() {
 
         {/* BODY */}
         <section className="essay-main">
-          {/* Reading tools, above the measure so they are reachable in both
-              modes: Listen (the device's own voice reads the body), Text size
-              (kept on this device), and the Focus toggle (board rec #10),
-              which doubles as "Exit focus" since the body is never hidden.
-              One row on a phone: .essay-tools drops the visible "Text size"
-              word there (the group keeps it as its name). */}
-          <div
-            className="no-print essay-tools"
-            role="group"
-            aria-label="Reading tools"
-            style={{
-              maxWidth: measure,
-              display: "flex",
-              flexWrap: "wrap",
-              alignItems: "center",
-              justifyContent: "space-between",
-              gap: "12px",
-            }}
-          >
-            {/* Keyed by essay: moving to another essay stops the voice. */}
-            <ListenButton key={post.slug} target={bodyRef} title={post.title} byline={`By ${author}`} />
-            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "12px" }}>
-              <TextSize size={textSize.size} onChange={textSize.setSize} saveFailed={textSize.saveFailed} />
-              <button
-                type="button"
-                onClick={toggleFocus}
-                aria-pressed={focus}
-                style={{ ...shareTrigger, transition: "color 0.2s, border-color 0.2s" }}
-                onMouseEnter={e => {
-                  e.currentTarget.style.color = "var(--ink)";
-                  e.currentTarget.style.borderColor = "var(--mustard)";
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.color = "var(--ink-muted)";
-                  e.currentTarget.style.borderColor = "var(--border)";
-                }}
-              >
-                <BookOpen size={16} aria-hidden />
-                {focus ? "Exit focus" : "Focus"}
-              </button>
-            </div>
-          </div>
+          {/* One quiet row of reading tools between two hairlines: Listen
+              (the device's own voice reads the body), text size and Save
+              (both kept on this device), and Focus, which doubles as "Exit
+              focus" since the body is never hidden. Send, Print and Cite
+              wait at the end of the essay. */}
+          <EssayTools
+            key={post.slug}
+            title={post.title}
+            author={author}
+            bodyRef={bodyRef}
+            measure={measure}
+            textSize={textSize}
+            focus={focus}
+            onFocus={toggleFocus}
+          />
           <QuoteSelectionShare title={post.title} url={canonical} bodyRef={bodyRef} />
           {!focus && <TableOfContents bodyRef={bodyRef} contentKey={post.slug} />}
           <div
             className={dropCap ? "article-body" : "article-body prose-section"}
             ref={bodyRef}
-            style={{
-              maxWidth: measure,
-              margin: "0 auto",
-              fontFamily: "var(--B)",
-              fontSize: `${bodySize}px`,
-              lineHeight: focus ? 1.9 : 1.75,
-              color: "var(--ink)",
-            }}
+            style={{ maxWidth: measure, margin: "0 auto", "--read-scale": textSize.scale } as React.CSSProperties}
           >
             {post.body ? (
               <>
@@ -940,82 +983,41 @@ export default function ArticleDetail() {
               admin dashboard's "Essays finished" tile. */}
           <div ref={bodyEndRef} aria-hidden style={{ height: 1 }} />
 
-          {/* Reader actions after the essay, in both modes: save and send
-              (the same My Library entry as the bar under the byline), then
-              cite, send to someone else, and the small-group guide. */}
-          <div
-            className="no-print"
-            style={{
-              maxWidth: measure,
-              margin: "var(--s-5) auto 0",
-              paddingTop: "var(--s-4)",
-              borderTop: "1px solid var(--border)",
-            }}
-          >
-            <TakeItWithYou
-              title={post.title}
-              kind="Essay"
-              href={essayPath}
-              summary={summary}
-              date={publishedIso}
-              print
-              extra={
-                <>
-                  <CitationCopy title={post.title} url={canonical} publishedDate={publishedIso} author={author} />
-                  {/* Three-audience share: a skeptic, a pastor, a spouse */}
-                  <AudienceShare title={post.title} url={canonical} />
-                  {/* Pastor distribution: hand this essay to a whole small group */}
-                  {post.slug && DISCUSSION_GUIDES[post.slug] && (
-                    <Link href={`/group-guide/${post.slug}`} style={{ ...shareTrigger, color: "var(--ink)" }}>
-                      Use this with your small group
-                    </Link>
-                  )}
-                </>
-              }
-            />
-          </div>
+          {/* After the essay, in both modes: Save, Share (Copy link, Facebook,
+              Cite, Send to my phone, the three notes, the group guide) and Print. */}
+          <EssayEnd
+            key={post.slug}
+            title={post.title}
+            author={author}
+            path={essayPath}
+            url={canonical}
+            summary={summary}
+            date={publishedIso}
+            groupGuide={post.slug && DISCUSSION_GUIDES[post.slug] ? `/group-guide/${post.slug}` : null}
+            measure={measure}
+          />
         </section>
 
-        {/* POST-BODY CHROME — hidden in reading-focus mode, and never printed.
-            The book that carries this essay's argument, then a quiet list of
-            other essays (board rec #9), then the newsletter CTA, author bio,
-            and end nav. */}
+        {/* AFTER THE ESSAY: hidden in reading-focus mode, and never printed.
+            One next essay and one Substack box, then the way back to the
+            shelf (AUDIT 2026-11, decision 14). The book card, the tool card,
+            the list of four essays, the author card and the line of other
+            channels used to sit here too; six asks read as none. The footer
+            still carries the Follow James row on every page. */}
         {!focus && (
           <div className="no-print">
-            {/* NEXT STEPS — the matched tool and reading path for this essay
-                (built long ago, never imported; revived by QW-16) */}
-            {/* ONE PRIMARY NEXT STEP. A reader at the end of an essay is at
-                peak intent, so exactly one ask leads, chosen by where they
-                are: mid-path, the next essay in that path; otherwise the book
-                that carries the argument. The other demotes to a quiet line. */}
-            {isArticleOnPath(post.slug ?? "") ? (
-              <>
-                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
-                <KeepReadingBook post={post} quiet />
-              </>
-            ) : (
-              <>
-                <KeepReadingBook post={post} />
-                <ArticleNextSteps articleSlug={post.slug ?? ""} articlePillar={post.pillar ?? ""} />
-              </>
-            )}
-            <RelatedEssays post={post} />
+            <NextEssay post={post} />
 
-            {/* NEWSLETTER (single CTA — no fake form) */}
             <section
               style={{
                 background: "var(--bone-warm)",
-                padding: "var(--s-6) var(--s-4)",
+                padding: "var(--s-5) var(--s-4)",
               }}
             >
               <div style={{ maxWidth: "var(--w-prose)", margin: "0 auto" }}>
                 <NewsletterSignup variant="inline" source="article" />
               </div>
             </section>
-
-            {/* AUTHOR BIO */}
-            <AuthorBio author={author} />
-            <ChannelLine />
 
             <PageEndNav back={{ href: "/writing", label: "All essays" }} />
           </div>

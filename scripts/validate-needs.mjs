@@ -21,7 +21,7 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { passage, quotesPassage, normalize } from "./lib/bsb.mjs";
 import { resolveHref } from "./lib/site-routes.mjs";
-import { buildNeedsIndex, serialize } from "./build-needs-index.mjs";
+import { HELP_CHIPS, buildNeedsIndex, helpChips, serialize } from "./build-needs-index.mjs";
 
 const ROOT = new URL("..", import.meta.url).pathname;
 const NEEDS = join(ROOT, "client/public/needs");
@@ -221,6 +221,8 @@ for (const f of files) {
 if (!only.length && !DRAFTS) {
   const committed = existsSync(join(DIR, "index.json")) ? readFileSync(join(DIR, "index.json"), "utf8") : "";
   if (committed !== serialize(buildNeedsIndex())) fail("index.json", "out of date: run node scripts/build-needs-index.mjs");
+  const chips = existsSync(HELP_CHIPS) ? readFileSync(HELP_CHIPS, "utf8") : "";
+  if (chips !== serialize(helpChips(buildNeedsIndex()))) fail("client/src/data/help-chips.json", "out of date: run node scripts/build-needs-index.mjs");
 
   const crisis = JSON.parse(readFileSync(join(ROOT, "client/src/data/crisis-resources.json"), "utf8"));
   const checked = new Date(crisis.checked);

@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 import { Link, useRoute } from "wouter";
 import { isPublicEssayHref } from "@/lib/shelf";
 import Layout from "@/components/Layout";
+import Place from "@/components/art/Place";
 import { SEOMeta } from "@/components/SEOMeta";
 import LoadFailed from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
@@ -80,6 +81,10 @@ export default function TopicPathway() {
       ? `${href}${href.includes("?") ? "&" : "?"}path=${encodeURIComponent(slug)}`
       : href;
   const itemSlug = (href: string) => href.split("?")[0].split("/").filter(Boolean).pop() ?? "";
+  // Where the reader left off: the first step not yet read, once one has been.
+  const steps = (data?.movements ?? []).flatMap((m) => m.items.filter((it) => isPublicEssayHref(it.href)));
+  const readCount = steps.filter((it) => readSet.has(itemSlug(it.href))).length;
+  const nextStep = readCount > 0 ? steps.find((it) => !readSet.has(itemSlug(it.href))) : undefined;
 
   return (
     <Layout>
@@ -92,9 +97,7 @@ export default function TopicPathway() {
       {/* HERO */}
       <section style={{ background: "var(--charcoal)", padding: "var(--s-6) var(--s-4) var(--s-5)", color: "var(--bone)" }}>
         <div style={wrap}>
-          <div style={{ ...eyebrow, color: "var(--mustard)", marginBottom: "14px" }}>
-            Topic Pathway
-          </div>
+          <Place path={`/pathways/${slug ?? ""}`} after="Topic pathway" dark />
           <h1 style={{ fontFamily: "var(--F)", fontSize: "clamp(32px, 5vw, 54px)", fontWeight: 400, lineHeight: 1.05, letterSpacing: "-0.025em", marginBottom: "16px", maxWidth: "20ch" }}>
             {data ? data.title : "A guided route"}
           </h1>
@@ -129,6 +132,16 @@ export default function TopicPathway() {
       ) : (
         <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4) var(--s-7)" }}>
           <div style={wrap}>
+            {nextStep && (
+              <p style={{ margin: "0 0 var(--s-5)", display: "flex", flexWrap: "wrap", alignItems: "center", gap: "12px 16px" }}>
+                <Link href={stepHref(nextStep.href)} className="btn">
+                  Continue: {nextStep.label}
+                </Link>
+                <span style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)" }}>
+                  {readCount} of {steps.length} read on this device
+                </span>
+              </p>
+            )}
             {data.movements.map((m, i) => (
               <div key={i} style={{ marginBottom: i === data.movements.length - 1 ? 0 : "var(--s-6)" }}>
                 {/* Movement header — a numbered step */}

@@ -148,6 +148,25 @@ describe("VerseRef, sheet mode", () => {
     expect(await screen.findByText("[Not in the earliest manuscripts]")).toBeInTheDocument();
   });
 
+  it("marks where Mark 16:9-20 begins and ends, and leaves verse 8 as it was", async () => {
+    const user = userEvent.setup();
+    renderAt(<VerseRef reference="Mark 16:7-20" />);
+    await user.click(screen.getByRole("link", { name: "Mark 16:7-20" }));
+    const dialog = await screen.findByRole("dialog", { name: "Mark 16:7–20" });
+    const notes = await within(dialog).findAllByRole("note");
+    expect(notes.map((n) => n.textContent)).toEqual(["[The earliest manuscripts do not include Mark 16:9-20.]", "[End of Mark 16:9-20.]"]);
+    expect(within(dialog).getByText(/did not say a word to anyone/)).toBeInTheDocument();
+  });
+
+  it("does not close a passage the sheet shows only part of", async () => {
+    const user = userEvent.setup();
+    renderAt(<VerseRef reference="Mark 16:9-11" />);
+    await user.click(screen.getByRole("link", { name: "Mark 16:9-11" }));
+    const dialog = await screen.findByRole("dialog", { name: "Mark 16:9–11" });
+    const notes = await within(dialog).findAllByRole("note");
+    expect(notes.map((n) => n.textContent)).toEqual(["[The earliest manuscripts do not include Mark 16:9-20.]"]);
+  });
+
   it("sends a passage longer than three chapters to the Study Bible without fetching it", async () => {
     const user = userEvent.setup();
     renderAt(<VerseRef reference="Genesis 1-4" />);
@@ -323,11 +342,14 @@ describe("the other pages that gain live references (real data)", () => {
   it("the catechism: the verse is printed, so its reference links to the chapter", async () => {
     const user = userEvent.setup();
     page(<FamilyCatechism />, "/family/catechism");
-    // Question 1 in the list (the "this week" card above may hold another).
+    // Question 1 in the list. A family starts at question 1, so the card for
+    // its own place above holds the same question and opens with it.
     const buttons = await screen.findAllByRole("button", { name: /Who made you\?/ });
     await user.click(buttons[buttons.length - 1]);
-    const link = await screen.findByRole("link", { name: "Genesis 1:1" });
-    expect(link).toHaveAttribute("href", "/study/bible/genesis/1#v1");
-    expect(link).not.toHaveAttribute("aria-haspopup");
+    const links = await screen.findAllByRole("link", { name: "Genesis 1:1" });
+    for (const link of links) {
+      expect(link).toHaveAttribute("href", "/study/bible/genesis/1#v1");
+      expect(link).not.toHaveAttribute("aria-haspopup");
+    }
   });
 });

@@ -1,0 +1,40 @@
+{
+  "piece": "what-post-christian-means",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read agrees with the first: the essay is clean and in the mature register. Literal search confirms zero em-dashes, zero exclamation points, zero Forbidden Language hits, no hedge or filler words beyond one 'in other words'. Three of the eight findings are kept; five are dropped as over-editing sound human sentences. Nothing new was added on the second pass.",
+  "keep": [
+    {
+      "quote": "He meant that in a culture which no longer takes the Christian story for granted, people will not learn how to read the gospel mainly from arguments or campaigns. They will learn it from a community whose common life makes no sense unless the gospel is true.",
+      "tell": "Repeated antithesis: a second negative-then-positive sentence pair in the same paragraph as \"His answer was not a strategy for winning the culture back. It was a congregation.\"",
+      "replacement": "He meant that in a culture which no longer takes the Christian story for granted, people will learn how to read the gospel less from arguments or campaigns than from a community whose common life makes no sense unless the gospel is true.",
+      "severity": "should"
+    },
+    {
+      "quote": "The exile, in other words, was God's discipline rather than an accident of history or a sign that He had lost control of it, and in a way the exiles could not yet see, it was also His placement.",
+      "tell": "Connective filler (\"in other words\") on a sentence that is the paragraph's new claim, not a restatement",
+      "replacement": "The exile was God's discipline rather than an accident of history or a sign that He had lost control of it, and in a way the exiles could not yet see, it was also His placement.",
+      "severity": "should"
+    },
+    {
+      "quote": "The pastor preaches knowing that some of the people in the room are halfway out the door, and that the culture will not be sending anyone to replace them.",
+      "tell": "Stock type figure (\"The pastor\") set beside a particular one (\"A high school student\")",
+      "replacement": "A pastor preaches knowing that some of the people in the room are halfway out the door, and that the culture will not be sending anyone to replace them.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"can no longer outsource formation to the surrounding culture\": dropped. \"Outsource\" is a plain spoken word with bite, and the replacement (\"teach their children the faith ... teaching our children something else\") flattens \"forming our children into something else\", which is the claim of the sentence.",
+    "\"Jeremiah's answer is surprisingly ordinary, and that is the point of it.\": dropped (consider). A mild spoken aside, used once; not a pattern.",
+    "\"## Where America Actually Stands\": dropped (consider). Plain descriptive heading; the echo of the title is deliberate and the final read already cut two other uses of \"actually\".",
+    "\"Much of it was simply the end of a subsidy we had not noticed we were living on.\": dropped (consider). The ledger's final read kept this sentence on purpose; BRIEF.md asks for light contractions, and \"simply\" three times in the essay is not a tell.",
+    "\"I am not saying American Christians are in exile the way Judah was.\": dropped (consider). The full form carries emphasis at a deliberate caution; the essay already contracts where speech would."
+  ],
+  "added": [],
+  "for_james": [
+    "The first reader's notes to you stand: the essay has no line only you could have written. One sentence of what you concluded about Christians before you believed (near the Lewis or Newbigin paragraphs), or one concrete thing from your own house in the paragraph on raising children, would lift voice from 8 toward 10. Nobody but you can supply it, and nothing was invented.",
+    "If \"The pastor preaches knowing ...\" is your own experience, \"I preach knowing ...\" is truer; the kept edit only changes \"The\" to \"A\".",
+    "Your saved Substack profile asks for 2 to 4 sentence paragraphs, a 1,500 to 2,500 word ceiling, a screenshot line and a Monday Morning close of three questions and one practice. VOICE-JAMES-BELL.md asks for developed paragraphs, length as the argument requires, and no clean application turn. The essay follows VOICE-JAMES-BELL.md, which governs, and was not rewritten toward the profile.",
+    "Still your call (both verified): the exact day of Lewis's lecture (\"on November 29, 1954\") and \"published in 2007\" for Taylor."
+  ]
+}

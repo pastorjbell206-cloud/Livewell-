@@ -1,0 +1,35 @@
+{
+  "piece": "can-you-be-good-without-god",
+  "human_score": 9,
+  "voice_score": 8,
+  "verdict": "Second read agrees with the first: this essay is clean and close to the mature register. Literal search finds no forbidden word, no em-dash, no exclamation point, no connective filler, no title, years, book count or denomination, and no one-directional politics. Two of the seven findings survive. The other five were 'consider' items whose replacements either changed a claim, removed content, or sanded off plain signposting that the brief lists as one of his habits. Nothing new was found on the second pass.",
+  "keep": [
+    {
+      "quote": "Jesus didn't despise the man's goodness. He told him the one thing he lacked, which was to sell what he had, give to the poor, and come and follow him.",
+      "tell": "Paragraph opener that restates the paragraph before it",
+      "why": "The previous paragraph already says 'By any ordinary measure he was a good man. Jesus did not dispute it,' and then quotes Mark 10:21. 'Jesus didn't despise the man's goodness' makes the same point a third time in the same 'Jesus did not / Jesus didn't' frame. Checked against the ledger: the paraphrase of Mark 10:21 is untouched.",
+      "replacement": "Then he told him the one thing he lacked, which was to sell what he had, give to the poor, and come and follow him.",
+      "severity": "should"
+    },
+    {
+      "quote": "The hope of the gospel is that the only one who is good came looking for people who were not.",
+      "tell": "Labelled closer",
+      "why": "The last three lines of the essay each open with a label ('The question is', 'there is a second question', 'The hope of the gospel is that'). The sentence under the third label is the strongest in the essay and Luke 19:10 follows it immediately, so the caption is not needed. No other essay on the shelf uses the phrase, so this is a small gain, not a stamp; James may prefer to keep the label as a courtesy that marks the line as Christian confession.",
+      "replacement": "The only one who is good came looking for people who were not.",
+      "severity": "should"
+    }
+  ],
+  "dropped": [
+    "\"That isn't a proof, and Christians shouldn't sell it as one. It is a question about which account makes better sense of what all of us already know.\" Dropped: the replacement ('But it does make better sense') turns a question left open for the skeptic into an assertion, which changes the claim. The concession is his voice and the two antitheses in the section do different work.",
+    "\"It's a real objection, and the answer is that every account stops somewhere, as Wielenberg himself argues.\" Dropped: plain signposting after a voiced objection is a habit the brief names as his; a reader hears a person answering, not a machine.",
+    "\"He presses until it hurts:\" Dropped: a spoken, slightly rough phrase that introduces Romans 2:21; not a machine pattern, and 'He keeps pressing' is flatter without being more his.",
+    "\"Paul's argument arrives where it was heading from the start:\" Dropped: it tells the reader that Romans 3:23 is the conclusion of the Romans 1 to 2 argument, which is real work; the replacement adds 'in the next chapter' and I would not stake the essay on the change.",
+    "\"a Christian who is cruel, dishonest or contemptuous of unbelievers\" Dropped: 'dishonest' is not filler; it answers 'more truthful' in the opening section and 'do you not teach yourself' in the verse just quoted. Cutting it removes content."
+  ],
+  "added": [],
+  "for_james": [
+    "You appear in one sentence: 'I was an atheist before I was a Christian, so the person on the other side of this question is someone I used to be.' It is used well. If you remember what you thought, as an atheist, when a Christian told you that you couldn't be good without God, one or two true sentences there would make the essay unmistakably yours. None has been invented.",
+    "Your saved Substack profile and docs/VOICE-JAMES-BELL.md disagree on paragraph length, word count, original-language words and the closing application box. The voice document governs and this essay follows it.",
+    "The two Nietzsche sentences are Walter Kaufmann's translation, confirmed by search matches and not from the book. If you own The Portable Nietzsche, check pages 515 to 516; the ledger holds the public-domain Ludovici wording as an alternative."
+  ]
+}

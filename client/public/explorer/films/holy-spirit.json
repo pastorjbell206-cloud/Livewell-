@@ -1,0 +1,154 @@
+{
+  "slug": "holy-spirit",
+  "title": "The Holy Spirit through the Bible",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "church",
+  "line": {
+    "younger": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force.",
+    "older": "From the waters of Genesis 1 to the last invitation of Revelation 22, in eight pictures. The Holy Spirit is God, a person, not a force."
+  },
+  "poster": "One long line, like a breath of wind, runs across the page with a small flame at its end. Below it, small, are the places it will pass: dark water, a crowd of people, and a city with its gate open.",
+  "frames": [
+    {
+      "id": "waters",
+      "name": "Over the waters",
+      "still": "Dark water fills the bottom of the picture under a dark sky. A long line, like breath or wind, hovers over the water, with the small flame at its end.",
+      "younger": "Before there was anything alive, the Spirit of God was there, hovering over the waters. The Holy Spirit is not a new idea at the end of the Bible. He is on the very first page.",
+      "older": "The Bible's first page already names him. Before light, land or life, the Spirit of God is hovering over the dark waters. The Spirit was not made along with the world. He is God, and he was there before it.",
+      "verse": {
+        "ref": "Genesis 1:2",
+        "text": "And the Spirit of God was hovering over the surface of the waters."
+      }
+    },
+    {
+      "id": "few",
+      "name": "On a few, for a task",
+      "still": "Three people stand on three hills: one blowing a ram's horn, one with a horn of oil over his head, one holding a scroll. A line comes down from the sky on each of them in turn, and the flame rests over the one in the middle.",
+      "younger": "In the Old Testament the Spirit came on particular people for particular jobs. He came on Gideon to lead God's people (Judges 6:34), and on David from the day he was anointed to be king.",
+      "older": "For centuries the Spirit comes on chosen people for chosen tasks: on Gideon, who blows the ram's horn and rallies the people (Judges 6:34); on David from the day Samuel anoints him (1 Samuel 16:13); and on the prophets, who spoke “as they were carried along by the Holy Spirit” (2 Peter 1:21).",
+      "say": {
+        "younger": "In the Old Testament the Spirit came on particular people for particular jobs. He came on Gideon to lead God's people, and on David from the day he was anointed to be king.",
+        "older": "For centuries the Spirit comes on chosen people for chosen tasks: on Gideon, who blows the ram's horn and rallies the people; on David from the day Samuel anoints him; and on the prophets, who spoke “as they were carried along by the Holy Spirit”."
+      },
+      "verse": {
+        "ref": "1 Samuel 16:13",
+        "text": "and the Spirit of the LORD rushed upon David from that day forward."
+      }
+    },
+    {
+      "id": "promise",
+      "name": "A new heart, for all people",
+      "still": "On the left a heart of grey stone, cracked, becomes a heart of flesh with the flame inside it. On the right a crowd of people, tall and small, old and young, stand under a wide line pouring down on all of them.",
+      "younger": "Then God made a bigger promise. One day he would take away hearts of stone, give his people new hearts, and put his own Spirit inside them. And he would pour out his Spirit on all people, not just a few.",
+      "older": "The prophets look past the few to the many. God promises to remove the heart of stone, give a heart of flesh, and put his own Spirit within his people (Ezekiel 36:26-27). Through Joel he promises to pour out his Spirit on all people: sons and daughters, old and young (Joel 2:28).",
+      "say": {
+        "older": "The prophets look past the few to the many. God promises to remove the heart of stone, give a heart of flesh, and put his own Spirit within his people. Through Joel he promises to pour out his Spirit on all people: sons and daughters, old and young."
+      },
+      "verse": {
+        "ref": "Joel 2:28",
+        "text": "And afterward, I will pour out My Spirit on all people."
+      }
+    },
+    {
+      "id": "jordan",
+      "name": "At the Jordan",
+      "still": "Jesus stands in the river with green banks on each side. Above him the sky is torn open, and the Spirit comes down on him like a dove, shining.",
+      "younger": "When Jesus was baptized, the sky broke open, the Spirit came down on him like a dove, and the Father's voice said, “You are My beloved Son.” The Father, the Son and the Holy Spirit are all there together.",
+      "older": "At the Jordan the Bible shows the three together: the Son comes up out of the water, the Spirit descends on him like a dove, and the Father speaks from heaven, “You are My beloved Son; in You I am well pleased.” Christians confess one God in three persons. No picture can hold that, and this one does not try. It only shows what Mark tells.",
+      "verse": {
+        "ref": "Mark 1:10",
+        "text": "As soon as Jesus came up out of the water, He saw the heavens breaking open and the Spirit descending on Him like a dove."
+      }
+    },
+    {
+      "id": "advocate",
+      "name": "Another Advocate",
+      "still": "Jesus stands at a table with his friends sitting round it and a lamp burning. Above them a dotted line comes down from the flame, which waits, outlined, in the top corner: the Spirit promised, not yet given.",
+      "younger": "On the night before he died, Jesus promised that the Father would send the Holy Spirit to be with his friends for ever. Jesus called him “another Advocate”: someone who stands with you and speaks for you. Jesus did not speak of the Spirit as a thing. He said “Him”.",
+      "older": "On the night before he died, Jesus promises “another Advocate to be with you forever”, “the Spirit of truth.” He speaks of the Spirit as “Him”, who abides with them and will be in them. The Holy Spirit is God, a person, not a force: as much a person as the Father and the Son.",
+      "verse": {
+        "ref": "John 14:17",
+        "text": "But you do know Him, for He abides with you and will be in you."
+      }
+    },
+    {
+      "id": "pentecost",
+      "name": "Pentecost",
+      "still": "A house with its upper room open, full of people sitting close together. A line of wind sweeps in from outside. One flame shines above them, and flames like it rest on each person.",
+      "younger": "At the feast of Pentecost, Jesus' friends were together in one house. A sound like a rushing wind filled the house, flames like fire rested on each of them, and they were all filled with the Holy Spirit. God's promise had come true.",
+      "older": "At Pentecost the promise is kept. A sound like a mighty rushing wind fills the house, tongues like flames of fire separate and come to rest on each of them, and they are all filled with the Holy Spirit (Acts 2:1-4). Peter tells the crowd that this is what the prophet Joel spoke of (Acts 2:16-17).",
+      "say": {
+        "older": "At Pentecost the promise is kept. A sound like a mighty rushing wind fills the house, tongues like flames of fire separate and come to rest on each of them, and they are all filled with the Holy Spirit. Peter tells the crowd that this is what the prophet Joel spoke of."
+      },
+      "verse": {
+        "ref": "Acts 2:3-4",
+        "text": "They saw tongues like flames of fire that separated and came to rest on each of them. And they were all filled with the Holy Spirit"
+      }
+    },
+    {
+      "id": "temple",
+      "name": "God's temple",
+      "still": "People stand side by side under the roof line of a temple, as if they were its pillars, each with a small flame. The flame shines at the top of the roof.",
+      "younger": "Now the Holy Spirit lives in everyone who belongs to Jesus. And all of them together, the church, are God's temple: the place where God lives.",
+      "older": "The Spirit who raised Jesus from the dead lives in every believer (Romans 8:9-11), and the church together is God's temple: “God's Spirit dwells in you” (1 Corinthians 3:16). The tent and the temple of the Old Testament pointed to this. Churches differ on how some of the Spirit's gifts work today, and on when and how a believer receives the Spirit. All of them confess that the Spirit lives in everyone who belongs to Christ.",
+      "say": {
+        "older": "The Spirit who raised Jesus from the dead lives in every believer, and the church together is God's temple: “God's Spirit dwells in you”. The tent and the temple of the Old Testament pointed to this. Churches differ on how some of the Spirit's gifts work today, and on when and how a believer receives the Spirit. All of them confess that the Spirit lives in everyone who belongs to Christ."
+      },
+      "verse": {
+        "ref": "1 Corinthians 3:16",
+        "text": "Do you not know that you yourselves are God's temple, and that God's Spirit dwells in you?"
+      }
+    },
+    {
+      "id": "come",
+      "name": "“Come”",
+      "still": "A city wall with its gate open. A river runs out of the gate toward us, people walk beside it, and the line runs out along the river with the flame at its end, near us.",
+      "younger": "On the Bible's last page the Spirit is still speaking. The Spirit and the bride, all God's people, say “Come!” to anyone who is thirsty.",
+      "older": "The Bible's last invitation is spoken by the Spirit and the church together: “Come!” The Spirit who hovered over the first waters now offers “the water of life” freely. From the first page to the last, the Spirit gives life.",
+      "verse": {
+        "ref": "Revelation 22:17",
+        "text": "The Spirit and the bride say, “Come!” Let the one who hears say, “Come!” And let the one who is thirsty come, and the one who desires the water of life drink freely."
+      }
+    }
+  ],
+  "think": {
+    "younger": "The Bible says the Holy Spirit lives in everyone who belongs to Jesus. What difference could that make on an ordinary day?",
+    "older": "Jesus spoke of the Spirit as “Him”, a person, not a thing. What changes if the Spirit is someone, and not a force?"
+  },
+  "read": [
+    { "label": "Genesis 1", "href": "/study/bible/genesis/1" },
+    { "label": "Ezekiel 36", "href": "/study/bible/ezekiel/36" },
+    { "label": "Mark 1", "href": "/study/bible/mark/1" },
+    { "label": "John 14", "href": "/study/bible/john/14" },
+    { "label": "Acts 2", "href": "/study/bible/acts/2" },
+    { "label": "Romans 8", "href": "/study/bible/romans/8" }
+  ],
+  "stops": ["church"],
+  "cards": ["spirit"],
+  "differ": {
+    "text": "Christians agree that the Holy Spirit is God, gives new life, lives in every believer, and gives gifts to build up the church. Churches differ on whether some gifts, such as speaking in tongues, prophecy and healing, continue as they did in Acts, and on when and how a believer receives the Spirit. This moving picture does not choose between them. The Study Bible sets out the different readings in its notes on",
+    "links": [
+      { "label": "Acts 2", "href": "/study/bible/acts/2" },
+      { "label": "Acts 8", "href": "/study/bible/acts/8" }
+    ]
+  },
+  "deeper": [
+    { "label": "How can God be three and one? (an Honest Answer)", "href": "/answers/how-can-god-be-three-and-one" },
+    { "label": "Who is the Holy Spirit? (the family catechism)", "href": "/family/catechism#q41" }
+  ],
+  "end": { "label": "Go to the stop: The Church and the Spirit", "href": "/study/explorer/church" },
+  "share": {
+    "level": "younger",
+    "frames": [
+      { "id": "waters", "verse": true },
+      { "id": "few", "verse": false },
+      { "id": "promise", "verse": false },
+      { "id": "jordan", "verse": false },
+      { "id": "advocate", "text": "On the night before he died, Jesus promised that the Father would send the Holy Spirit to be with his friends for ever. Jesus called him “another Advocate”: someone who stands with you and speaks for you.", "verse": false },
+      { "id": "pentecost", "verse": false },
+      { "id": "temple", "verse": false },
+      { "id": "come", "verse": false }
+    ]
+  }
+}

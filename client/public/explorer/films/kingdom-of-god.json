@@ -1,0 +1,122 @@
+{
+  "slug": "kingdom-of-god",
+  "title": "The kingdom of God",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "kingdom-of-god",
+  "line": {
+    "younger": "Jesus said the kingdom of God is like a tiny seed that grows into a great tree. Seven pictures watch it grow, from God's rule over all to the day it comes in full.",
+    "older": "The kingdom of God in seven pictures: God's rule over all, the kingdom come near in Jesus, its signs, the mustard seed, the order turned upside down, a kingdom not of this world, and already and not yet."
+  },
+  "poster": "A small gold seed lying on dark soil at the foot of a wide field, under a light from beyond the top of the picture.",
+  "frames": [
+    {
+      "id": "rule",
+      "name": "God rules over all",
+      "still": "A wide field under a light from beyond the top of the picture, and on the soil in front one small gold seed.",
+      "younger": "God has always been King. He made everything, and he rules over all of it. But people turned away from his good rule, and the Bible's story is about God setting his rule right again.",
+      "older": "In one sense God has always been king: “His kingdom rules over all.” But the Bible's story is about that rule being refused by his creatures and then reclaimed, first in Israel and its king, then decisively in Jesus, and finally over the whole creation. The kingdom of God is God's rule breaking into a world in rebellion against him to set it right.",
+      "verse": {
+        "ref": "Psalm 103:19",
+        "text": "The LORD has established His throne in heaven, and His kingdom rules over all."
+      }
+    },
+    {
+      "id": "near",
+      "name": "The kingdom has come near",
+      "still": "By a lake a man stands speaking to a few people sitting on the shore; in front, the gold seed has split and a small green shoot has come up.",
+      "younger": "When Jesus began to teach, his first news was this: the kingdom of God has come near. God's good rule was arriving in Jesus himself.",
+      "older": "Jesus began his public ministry by announcing that “the kingdom of God is near.” The Greek word most often means kingship or reign, the active exercise of royal power. So the news was that God had begun to act as king, not that a new territory had appeared on a map.",
+      "verse": {
+        "ref": "Mark 1:15",
+        "text": "“The time is fulfilled,” He said, “and the kingdom of God is near. Repent and believe in the gospel!”"
+      }
+    },
+    {
+      "id": "signs",
+      "name": "Signs of the kingdom",
+      "still": "A man walks home carrying his rolled-up mat, people share bread at a table, and the young plant in front has grown a stem and its first leaves.",
+      "younger": "You could see the kingdom in what Jesus did. He healed people who were sick, fed people who were hungry, forgave people's sins, and welcomed people others kept away. That is what it looks like when God is King.",
+      "older": "Jesus taught that the kingdom was present in his own person and work: in his healings, in his casting out of demons, and in his welcome of sinners. The kingdom healed the sick, fed the hungry and forgave sinners. It was never a private feeling with nothing to say about bodies or the world.",
+      "verse": {
+        "ref": "Matthew 12:28",
+        "text": "But if I drive out demons by the Spirit of God, then the kingdom of God has come upon you."
+      }
+    },
+    {
+      "id": "seed",
+      "name": "Like a mustard seed",
+      "still": "A sower walks his field scattering seed; behind him the plant has become a young tree with spreading branches, and two small birds fly toward it.",
+      "younger": "Jesus said the kingdom is like a mustard seed, the smallest of seeds. It starts tiny, but it grows into the largest of garden plants, big enough for birds to make their nests in its shade.",
+      "older": "Jesus' parables describe the kingdom's hidden and surprising character: seed that grows while the farmer sleeps, a tiny mustard seed that becomes a tree, leaven hidden in flour until all of it is leavened. It begins small and quietly, and it grows by God's power, not by force.",
+      "verse": {
+        "ref": "Mark 4:30-32",
+        "text": "It is like a mustard seed, which is the smallest of all seeds sown upon the earth. But after it is planted, it grows to be the largest of all garden plants and puts forth great branches, so that the birds of the air nest in its shade."
+      }
+    },
+    {
+      "id": "children",
+      "name": "Upside down",
+      "still": "A man kneels low with small children close round him, while two grown-ups stand back at either side; behind them the tree has grown taller.",
+      "younger": "In God's kingdom, the people who seem least important are welcome first. When grown-ups tried to keep children away, Jesus said, “Let the little children come to Me.” In his kingdom the greatest are the ones who serve.",
+      "older": "The kingdom turns the world's order upside down. It belongs to the poor in spirit, the mourning and the meek, and it must be received “like a little child.” Greatness in it means service, because the Son of Man came not to be served but to serve.",
+      "verse": {
+        "ref": "Mark 10:14",
+        "text": "“Let the little children come to Me, and do not hinder them! For the kingdom of God belongs to such as these."
+      }
+    },
+    {
+      "id": "not-of-this-world",
+      "name": "Not of this world",
+      "still": "At the foot of a mountain a crowd waits, and far up the path one man walks on alone toward the top; the tree stands on the right.",
+      "younger": "Once a crowd wanted to grab Jesus and make him their king by force, and he went away up a mountain alone. God's kingdom is not a country, a party or a nation. Nobody can make it grow by fighting for it, and it belongs to no side.",
+      "older": "When a crowd came to make Jesus king by force, he withdrew to a mountain by himself, and he told Pilate, “My kingdom is not of this world”: it does not come from the world's sources of power or advance by its weapons. The church has rejected any teaching that makes God's kingdom a nation, an empire, a party or a political program, whichever way that program leans. It has equally rejected the opposite error, which shrinks the kingdom to a private feeling.",
+      "verse": {
+        "ref": "John 18:36",
+        "text": "My kingdom is not of this world"
+      }
+    },
+    {
+      "id": "already",
+      "name": "Already, and not yet",
+      "still": "The tree is full grown, with birds nesting in its branches and people resting in its shade; far off on the horizon a city stands with its gate open and lit.",
+      "younger": "God's kingdom has already begun in Jesus, and it is growing wherever people follow him. But it is not finished yet. That is why Christians pray, “Your kingdom come.” One day, when Jesus comes again, God's good rule will fill everything.",
+      "older": "Scholars often call this ‘already and not yet’: the kingdom has come in Christ, is present now wherever his rule is received, and will be complete only when he returns. That is why Jesus taught his followers to pray, “Your kingdom come.” The church confesses in the Nicene Creed that his kingdom will have no end. Because it has come, there is no need to despair; because it is not yet complete, there is no need to pretend.",
+      "verse": {
+        "ref": "Matthew 6:10",
+        "text": "Your kingdom come, Your will be done, on earth as it is in heaven."
+      }
+    }
+  ],
+  "think": {
+    "younger": "What do you think it looks like when God is King in a home, a classroom or a team? What is one small seed of his kingdom you could plant this week?",
+    "older": "Why do you think people keep trying to make God's kingdom into a country or a party, on every side? What does Jesus' kingdom ask of people instead?"
+  },
+  "read": [
+    { "label": "Psalm 103", "href": "/study/bible/psalms/103" },
+    { "label": "Mark 1", "href": "/study/bible/mark/1" },
+    { "label": "Matthew 12", "href": "/study/bible/matthew/12" },
+    { "label": "Mark 4", "href": "/study/bible/mark/4" },
+    { "label": "Matthew 13", "href": "/study/bible/matthew/13" },
+    { "label": "Mark 10", "href": "/study/bible/mark/10" },
+    { "label": "Matthew 5", "href": "/study/bible/matthew/5" },
+    { "label": "John 6", "href": "/study/bible/john/6" },
+    { "label": "John 18", "href": "/study/bible/john/18" },
+    { "label": "Matthew 6", "href": "/study/bible/matthew/6" }
+  ],
+  "stops": ["jesus", "kingdom", "new-creation"],
+  "cards": [],
+  "differ": {
+    "text": "Christians all pray for God's kingdom to come, and confess that Christ will come again and that his kingdom will have no end. They differ on how the kingdom and the church are related now, and on how its coming in full will unfold. This moving picture does not choose between them. The views are set out in",
+    "links": [
+      { "label": "the Study Bible's study of the kingdom of God", "href": "/study/bible/doctrines/kingdom" }
+    ]
+  },
+  "deeper": [
+    { "label": "The kingdom of God: what the Bible teaches, and where Christians differ", "href": "/study/bible/doctrines/kingdom" },
+    { "label": "The king (a moving picture)", "href": "/study/explorer/watch/the-king" },
+    { "label": "Follow the king thread through every stop on the map", "href": "/study/explorer?thread=king" }
+  ],
+  "share": {"level": "younger", "frames": [{"id": "rule", "verse": false}, {"id": "near", "verse": true}, {"id": "signs", "verse": false}, {"id": "seed", "verse": false}, {"id": "children", "verse": false}, {"id": "not-of-this-world", "verse": false}, {"id": "already", "verse": true}]},
+  "end": { "label": "Go to the stop: Jesus Comes", "href": "/study/explorer/jesus" }
+}
