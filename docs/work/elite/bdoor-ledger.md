@@ -20908,3 +20908,24 @@ Cut in chapter 10: Ephesians 6:12, which the New Testament does not draw from th
 | The hard note: the critical, traditional (Jerome) and dispensational readings; no present-day person, nation or movement named | 36-45 `hard` | daniel/11.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 11: nothing beyond the policy on lines to Christ. The scan's list of royal names with numerals was extended (Xerxes, Seleucus, Ptolemy, Antiochus, Cleopatra and others) so that a numeral I is not read as a first-person word. No care line is needed in this chapter.
+
+## The plain notes on Daniel 12 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1-4 (12:1's clauses either side of its dashes) | 1-4 | BSB | BSB text |
+| The question left by 11:33-35; 12:2 the clearest Old Testament text; the critical and traditional settings; 2 Maccabees 7; the book in heaven; the wise as the maskilim; sealing | 1-4 | daniel/12.json `story`, `historical` | Repository |
+| Isaiah 26:19; John 5:28-29; Matthew 13:43 | 1-4 `later` | daniel/12.json `hard` (John 5:28-29); BSB | BSB text |
+| The hard note: many as limited or inclusive; John 5:28-29; first-order confession; how much Daniel 12 teaches left open; no person's eternal state named | 1-4 `hard` | daniel/12.json `hard` | Repository; both readings in their holders' terms |
+| 12:5-10 | 5-10 | BSB | BSB text |
+| How long again; three and a half; the doubled oath; Daniel not understanding | 5-10 | daniel/12.json `historical` | Repository |
+| Revelation 12:14; Revelation 22:10 | 5-10 `later` | bible/guides/reading-apocalyptic.json (sealed and unsealed); BSB | BSB text |
+| 12:11-13 | 11-13 | BSB | BSB text |
+| The 1,290 and 1,335 days and the readings; December 164 BC; the book's ending | 11-13 | daniel/12.json `historical`, `story` | Repository |
+| Isaiah 26:19; Revelation 20:12 | 11-13 `later` | BSB | BSB text |
+| The hard note: no date; every date set has passed; Matthew 24:36; the one who waits | 11-13 `hard` | bible/guides/reading-apocalyptic.json | Repository |
+| Care line ("If you are suffering now...") | 11-13 `hard` | Reused byte for byte from job/intro.json | care.mjs |
+
+Cut in chapter 12: nothing beyond the policy on lines to Christ.
