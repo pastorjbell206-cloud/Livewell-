@@ -595,6 +595,446 @@
     }
    ]
   },
+  "book-genesis": {
+   "title": {
+    "file": "book-genesis/title.mp3",
+    "hash": "65afba358ed3ebbf8c09",
+    "seconds": 2.97,
+    "bytes": 18356
+   },
+   "younger": [
+    {
+     "id": "beginnings",
+     "file": "book-genesis/younger/01-beginnings.mp3",
+     "hash": "b24ca10301bbc71cc8b7",
+     "seconds": 22.35,
+     "bytes": 134708
+    },
+    {
+     "id": "layout",
+     "file": "book-genesis/younger/02-layout.mp3",
+     "hash": "9bd8a7563b7b78a5b9a6",
+     "seconds": 24.4,
+     "bytes": 146948
+    },
+    {
+     "id": "image",
+     "file": "book-genesis/younger/03-image.mp3",
+     "hash": "82a24136f4400e7ac3ce",
+     "seconds": 27,
+     "bytes": 162500
+    },
+    {
+     "id": "wrong",
+     "file": "book-genesis/younger/04-wrong.mp3",
+     "hash": "5d427abd48e32007318a",
+     "seconds": 20.62,
+     "bytes": 124340
+    },
+    {
+     "id": "promise",
+     "file": "book-genesis/younger/05-promise.mp3",
+     "hash": "919fe3b39c6d56579da1",
+     "seconds": 23.59,
+     "bytes": 142052
+    },
+    {
+     "id": "faithful",
+     "file": "book-genesis/younger/06-faithful.mp3",
+     "hash": "961f2edf794334e4cc70",
+     "seconds": 25.09,
+     "bytes": 151124
+    },
+    {
+     "id": "start",
+     "file": "book-genesis/younger/07-start.mp3",
+     "hash": "db2a73035d344b0ad44a",
+     "seconds": 25.2,
+     "bytes": 151700
+    }
+   ],
+   "older": [
+    {
+     "id": "beginnings",
+     "file": "book-genesis/older/01-beginnings.mp3",
+     "hash": "d3909b23c9436e7da499",
+     "seconds": 25.62,
+     "bytes": 154292
+    },
+    {
+     "id": "layout",
+     "file": "book-genesis/older/02-layout.mp3",
+     "hash": "5865c57611b8e876f4d4",
+     "seconds": 29.17,
+     "bytes": 175604
+    },
+    {
+     "id": "image",
+     "file": "book-genesis/older/03-image.mp3",
+     "hash": "bea278bbcb64021e90ea",
+     "seconds": 30.51,
+     "bytes": 183668
+    },
+    {
+     "id": "wrong",
+     "file": "book-genesis/older/04-wrong.mp3",
+     "hash": "4def124fd26f8a8c62eb",
+     "seconds": 25.05,
+     "bytes": 150836
+    },
+    {
+     "id": "promise",
+     "file": "book-genesis/older/05-promise.mp3",
+     "hash": "d24b98d9767f8415f45b",
+     "seconds": 23.53,
+     "bytes": 141764
+    },
+    {
+     "id": "faithful",
+     "file": "book-genesis/older/06-faithful.mp3",
+     "hash": "6680c95f724719c602da",
+     "seconds": 26.13,
+     "bytes": 157316
+    },
+    {
+     "id": "start",
+     "file": "book-genesis/older/07-start.mp3",
+     "hash": "e33776c88c306ef23c35",
+     "seconds": 30.3,
+     "bytes": 182372
+    }
+   ]
+  },
+  "book-psalms": {
+   "title": {
+    "file": "book-psalms/title.mp3",
+    "hash": "20b8b961c2a2ffa1772d",
+    "seconds": 3.01,
+    "bytes": 18644
+   },
+   "younger": [
+    {
+     "id": "prayer-book",
+     "file": "book-psalms/younger/01-prayer-book.mp3",
+     "hash": "23b517851364f1478072",
+     "seconds": 25.58,
+     "bytes": 154004
+    },
+    {
+     "id": "layout",
+     "file": "book-psalms/younger/02-layout.mp3",
+     "hash": "00878114c7fad872f31a",
+     "seconds": 27.64,
+     "bytes": 166388
+    },
+    {
+     "id": "lament",
+     "file": "book-psalms/younger/03-lament.mp3",
+     "hash": "d4fcea701fdf9640a446",
+     "seconds": 25.38,
+     "bytes": 152852
+    },
+    {
+     "id": "praise",
+     "file": "book-psalms/younger/04-praise.mp3",
+     "hash": "8ba51f36169a6713d5be",
+     "seconds": 21.91,
+     "bytes": 131972
+    },
+    {
+     "id": "king",
+     "file": "book-psalms/younger/05-king.mp3",
+     "hash": "c4be8755ce369abe69c3",
+     "seconds": 20.3,
+     "bytes": 122324
+    },
+    {
+     "id": "jesus",
+     "file": "book-psalms/younger/06-jesus.mp3",
+     "hash": "5b67b22bc393e195418a",
+     "seconds": 20.43,
+     "bytes": 123188
+    },
+    {
+     "id": "start",
+     "file": "book-psalms/younger/07-start.mp3",
+     "hash": "a206dd8f25e9dd8c388e",
+     "seconds": 21.21,
+     "bytes": 127796
+    }
+   ],
+   "older": [
+    {
+     "id": "prayer-book",
+     "file": "book-psalms/older/01-prayer-book.mp3",
+     "hash": "85e7c2d26800ef5ab340",
+     "seconds": 24.44,
+     "bytes": 147236
+    },
+    {
+     "id": "layout",
+     "file": "book-psalms/older/02-layout.mp3",
+     "hash": "3c7bd75fbd876ea19c60",
+     "seconds": 27.38,
+     "bytes": 164804
+    },
+    {
+     "id": "lament",
+     "file": "book-psalms/older/03-lament.mp3",
+     "hash": "42428ba4b32ebc88b713",
+     "seconds": 29.38,
+     "bytes": 176900
+    },
+    {
+     "id": "praise",
+     "file": "book-psalms/older/04-praise.mp3",
+     "hash": "d23b04bf4ecdd7060a69",
+     "seconds": 22.8,
+     "bytes": 137444
+    },
+    {
+     "id": "king",
+     "file": "book-psalms/older/05-king.mp3",
+     "hash": "81b9356329e0ea8b949d",
+     "seconds": 26.2,
+     "bytes": 157748
+    },
+    {
+     "id": "jesus",
+     "file": "book-psalms/older/06-jesus.mp3",
+     "hash": "5ba7ea9763a2f34f51e4",
+     "seconds": 24.02,
+     "bytes": 144644
+    },
+    {
+     "id": "start",
+     "file": "book-psalms/older/07-start.mp3",
+     "hash": "e8bb2ef367b47385a655",
+     "seconds": 24.62,
+     "bytes": 148244
+    }
+   ]
+  },
+  "book-john": {
+   "title": {
+    "file": "book-john/title.mp3",
+    "hash": "06394104b2d3d7d30614",
+    "seconds": 2.45,
+    "bytes": 15332
+   },
+   "younger": [
+    {
+     "id": "word",
+     "file": "book-john/younger/01-word.mp3",
+     "hash": "f45611050fe0c20497a5",
+     "seconds": 21.23,
+     "bytes": 127940
+    },
+    {
+     "id": "layout",
+     "file": "book-john/younger/02-layout.mp3",
+     "hash": "2e457e850e6f35a8198b",
+     "seconds": 23.89,
+     "bytes": 143924
+    },
+    {
+     "id": "signs",
+     "file": "book-john/younger/03-signs.mp3",
+     "hash": "f5758c8d79a6623ce228",
+     "seconds": 26.61,
+     "bytes": 160196
+    },
+    {
+     "id": "i-am",
+     "file": "book-john/younger/04-i-am.mp3",
+     "hash": "8f4284f865cb0eef5f86",
+     "seconds": 21.37,
+     "bytes": 128804
+    },
+    {
+     "id": "believe",
+     "file": "book-john/younger/05-believe.mp3",
+     "hash": "f8f7deddbf312c50ca4a",
+     "seconds": 26.98,
+     "bytes": 162500
+    },
+    {
+     "id": "hour",
+     "file": "book-john/younger/06-hour.mp3",
+     "hash": "f4bc61efed2a53c8e1a1",
+     "seconds": 25.29,
+     "bytes": 152276
+    },
+    {
+     "id": "start",
+     "file": "book-john/younger/07-start.mp3",
+     "hash": "d8558620827400b95237",
+     "seconds": 27.08,
+     "bytes": 163076
+    }
+   ],
+   "older": [
+    {
+     "id": "word",
+     "file": "book-john/older/01-word.mp3",
+     "hash": "cc1862b792ea928c8b0f",
+     "seconds": 22.85,
+     "bytes": 137588
+    },
+    {
+     "id": "layout",
+     "file": "book-john/older/02-layout.mp3",
+     "hash": "97d1438da2155caa05ae",
+     "seconds": 25.63,
+     "bytes": 154436
+    },
+    {
+     "id": "signs",
+     "file": "book-john/older/03-signs.mp3",
+     "hash": "1f2e66399349995d75c9",
+     "seconds": 24.77,
+     "bytes": 149108
+    },
+    {
+     "id": "i-am",
+     "file": "book-john/older/04-i-am.mp3",
+     "hash": "5c953cb7b7a9c25ed655",
+     "seconds": 22.47,
+     "bytes": 135428
+    },
+    {
+     "id": "believe",
+     "file": "book-john/older/05-believe.mp3",
+     "hash": "fb34c1068cb51e44f151",
+     "seconds": 27.03,
+     "bytes": 162788
+    },
+    {
+     "id": "hour",
+     "file": "book-john/older/06-hour.mp3",
+     "hash": "c7f5ef35939c45bfbfca",
+     "seconds": 26.24,
+     "bytes": 158036
+    },
+    {
+     "id": "start",
+     "file": "book-john/older/07-start.mp3",
+     "hash": "2ff713a1b77f39fe9683",
+     "seconds": 31.92,
+     "bytes": 192164
+    }
+   ]
+  },
+  "book-romans": {
+   "title": {
+    "file": "book-romans/title.mp3",
+    "hash": "7a9bc30d96653e07a65b",
+    "seconds": 3.02,
+    "bytes": 18644
+   },
+   "younger": [
+    {
+     "id": "letter",
+     "file": "book-romans/younger/01-letter.mp3",
+     "hash": "93d7cb2092c8b7962ee0",
+     "seconds": 26.56,
+     "bytes": 159908
+    },
+    {
+     "id": "layout",
+     "file": "book-romans/younger/02-layout.mp3",
+     "hash": "cae3467769c53e3da35d",
+     "seconds": 25.74,
+     "bytes": 155012
+    },
+    {
+     "id": "wrong",
+     "file": "book-romans/younger/03-wrong.mp3",
+     "hash": "6ffe0ae2379680d0399a",
+     "seconds": 21.03,
+     "bytes": 126788
+    },
+    {
+     "id": "gift",
+     "file": "book-romans/younger/04-gift.mp3",
+     "hash": "9246fc8c3a90f09e2f26",
+     "seconds": 26.42,
+     "bytes": 159044
+    },
+    {
+     "id": "life",
+     "file": "book-romans/younger/05-life.mp3",
+     "hash": "936c037e30f91799ac18",
+     "seconds": 21.45,
+     "bytes": 129236
+    },
+    {
+     "id": "one-people",
+     "file": "book-romans/younger/06-one-people.mp3",
+     "hash": "a3792c9e74910bed788a",
+     "seconds": 23.26,
+     "bytes": 140180
+    },
+    {
+     "id": "start",
+     "file": "book-romans/younger/07-start.mp3",
+     "hash": "d1ce7b13c59871bdd4f9",
+     "seconds": 25.45,
+     "bytes": 153284
+    }
+   ],
+   "older": [
+    {
+     "id": "letter",
+     "file": "book-romans/older/01-letter.mp3",
+     "hash": "bdc00a6859bd6a458990",
+     "seconds": 27.25,
+     "bytes": 164084
+    },
+    {
+     "id": "layout",
+     "file": "book-romans/older/02-layout.mp3",
+     "hash": "ba4463ef92ec59196caf",
+     "seconds": 26.62,
+     "bytes": 160340
+    },
+    {
+     "id": "wrong",
+     "file": "book-romans/older/03-wrong.mp3",
+     "hash": "3b8aac41a49ede797265",
+     "seconds": 27.28,
+     "bytes": 164228
+    },
+    {
+     "id": "gift",
+     "file": "book-romans/older/04-gift.mp3",
+     "hash": "6b7bbca729d0fcf0f239",
+     "seconds": 23.96,
+     "bytes": 144356
+    },
+    {
+     "id": "life",
+     "file": "book-romans/older/05-life.mp3",
+     "hash": "66c0a3292db4c1eee296",
+     "seconds": 22.4,
+     "bytes": 134996
+    },
+    {
+     "id": "one-people",
+     "file": "book-romans/older/06-one-people.mp3",
+     "hash": "1843e87bb38968a1e32e",
+     "seconds": 25.42,
+     "bytes": 153140
+    },
+    {
+     "id": "start",
+     "file": "book-romans/older/07-start.mp3",
+     "hash": "e384388adc6af8e34919",
+     "seconds": 27.48,
+     "bytes": 165524
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

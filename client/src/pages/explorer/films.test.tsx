@@ -719,10 +719,11 @@ describe("Listen with the recorded files", () => {
 });
 
 describe("the data", () => {
-  it("lists the six groups, and every finished film in the catalogue's own order", () => {
+  it("lists the seven groups, and every finished film in the catalogue's own order", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "stories",
+      "books",
       "ideas",
       "beliefs",
       "verses",
@@ -1710,6 +1711,10 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "light-and-darkness",
     "never-heard",
     "temple-destroyed",
+    "book-genesis",
+    "book-psalms",
+    "book-john",
+    "book-romans",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -1742,7 +1747,11 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
   it("none of them speaks in the first person, presses for a decision, or dates the earth", () => {
     for (const slug of NEW) {
       const f = filmFile(slug);
-      const own = captions(f).replace(/“[^”]*”/g, " ");
+      // What a film quotes is set aside, and so is "I am", which the film
+      // on John names as Jesus' own words.
+      const own = captions(f)
+        .replace(/“[^”]*”/g, " ")
+        .replace(/\bI am\b/g, " ");
       expect(own, slug).not.toMatch(/\b(I|I'm|I've|my|me|we|our|us)\b/);
       expect(text(f), slug).not.toMatch(
         /pray this prayer|decide today|right now, before|before it is too late/i
@@ -1821,7 +1830,9 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
       // readers, the hardest question it faces.
       expect(fr.verse, fr.id).toBeTruthy();
       expect(fr.older, fr.id).toContain("Its hardest question is");
-      expect(fr.younger, fr.id).not.toMatch(/\b(right|wrong|best|true) answer\b/i);
+      expect(fr.younger, fr.id).not.toMatch(
+        /\b(right|wrong|best|true) answer\b/i
+      );
     }
     // No answer gets much more to say than another (older level).
     const lengths = views.map(fr => fr.older.length);
@@ -1851,9 +1862,9 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(links.pages["/answers/what-about-those-who-never-heard"]).toContain(
       "never-heard"
     );
-    expect(
-      links.pages["/questions/religions/those-who-never-heard"]
-    ).toContain("never-heard");
+    expect(links.pages["/questions/religions/those-who-never-heard"]).toContain(
+      "never-heard"
+    );
   });
 
   it("Why did God let his temple be destroyed? gives the prophets' answer, blames no people, and calls no one's loss today a punishment", () => {
@@ -1899,5 +1910,206 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
       /soldier|sword|spear|flame|fire|blood|bod(y|ies)/i
     );
+  });
+
+  // ── Books of the Bible: one film for one whole book ─────────────────────
+  // These hold for every book film there is or will be, with no list here:
+  // the films are found by their own "book".
+  const BOOKS = JSON.parse(
+    fs.readFileSync(path.join(PUBLIC, "bible/books.json"), "utf8")
+  ) as { slug: string; name: string; chapters: number }[];
+  const BOOK_FILMS = READY.map(f => filmFile(f.slug)).filter(f => f.book);
+
+  it("a book film is named for its book, shows only that book's verses, and sends the reader into it", () => {
+    expect(BOOK_FILMS.length).toBeGreaterThan(0);
+    for (const f of BOOK_FILMS) {
+      const book = BOOKS.find(b => b.slug === f.book)!;
+      expect(book, f.slug).toBeTruthy();
+      expect(f.slug).toBe(`book-${book.slug}`);
+      expect(f.group).toBe("books");
+      expect(f.frames.length).toBe(7);
+      expect(f.title.startsWith(book.name), f.slug).toBe(true);
+      for (const fr of f.frames)
+        if (fr.verse)
+          expect(
+            fr.verse.ref.replace(/^Psalm /, "Psalms ").startsWith(book.name),
+            `${f.slug} ${fr.verse.ref}`
+          ).toBe(true);
+      expect(f.end.href.startsWith(`/study/bible/${book.slug}/`)).toBe(true);
+      // The same three jobs in every book film: what it is, how it is laid
+      // out, and where to start.
+      expect(f.frames[1].id).toBe("layout");
+      expect(f.frames[1].name).toBe("How it is laid out");
+      expect(f.frames[6].id).toBe("start");
+      expect(f.frames[6].name).toBe("Where to start");
+      // Its book page is where its words come from, and is linked.
+      expect(
+        fs.existsSync(path.join(PUBLIC, `bible/notes/${book.slug}/intro.json`))
+      ).toBe(true);
+      expect(f.deeper?.some(d => d.href === `/study/bible/${book.slug}`)).toBe(
+        true
+      );
+    }
+  });
+
+  it("a book film's second picture is the book's own shape: its parts add up to the book's chapters", async () => {
+    for (const f of BOOK_FILMS) {
+      const book = BOOKS.find(b => b.slug === f.book)!;
+      const scene = (await FILM_SCENES[f.slug]()) as unknown as {
+        LAYOUT?: number[];
+      };
+      expect(Array.isArray(scene.LAYOUT), f.slug).toBe(true);
+      expect(scene.LAYOUT!.length).toBeGreaterThanOrEqual(2);
+      expect(
+        scene.LAYOUT!.reduce((s, n) => s + n, 0),
+        `${f.slug} layout`
+      ).toBe(book.chapters);
+    }
+  });
+
+  it("a book film is offered on its book's page and on every chapter of the book, from its own data", () => {
+    const links = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/film-links.json"), "utf8")
+    ) as { pages: Record<string, string[]> };
+    for (const f of BOOK_FILMS) {
+      const book = BOOKS.find(b => b.slug === f.book)!;
+      expect(links.pages[`/study/bible/${book.slug}`], f.slug).toContain(
+        f.slug
+      );
+      for (const c of [1, Math.ceil(book.chapters / 2), book.chapters]) {
+        const chapter = fs.readFileSync(
+          path.join(PUBLIC, `index/chapters/${book.slug}/${c}.json`),
+          "utf8"
+        );
+        expect(chapter, `${book.slug} ${c}`).toContain(
+          `/study/explorer/watch/${f.slug}`
+        );
+      }
+    }
+    // And on no other book's page.
+    for (const [page, slugs] of Object.entries(links.pages)) {
+      const m = page.match(/^\/study\/bible\/([a-z0-9-]+)$/);
+      if (!m || m[1] === "doctrines") continue;
+      for (const s of slugs)
+        if (s.startsWith("book-")) expect(s).toBe(`book-${m[1]}`);
+    }
+  });
+
+  it("Genesis takes no side on how to read its first chapters, and makes no heroes of the patriarchs", () => {
+    const f = filmFile("book-genesis");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect(f.differ?.links?.[0].href).toBe(
+      "/answers/how-should-a-christian-read-genesis-1"
+    );
+    const t = text(f);
+    expect(t).toContain("flawed people carried by a faithful God");
+    expect(t).toContain("They are not heroes to copy.");
+    expect(t).not.toMatch(/evolution|six literal|24-hour|myth\b/i);
+    const fall = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/fall.json"), "utf8")
+    ) as { care: string };
+    expect(f.care).toBe(fall.care);
+  });
+
+  it("Psalms is laid out as its own book page lays it out, keeps the laments, and keeps help in view", async () => {
+    const f = filmFile("book-psalms");
+    const intro = JSON.parse(
+      fs.readFileSync(
+        path.join(PUBLIC, "bible/notes/psalms/intro.json"),
+        "utf8"
+      )
+    ) as { structure: { range: string }[]; keyChapters: { ch: number }[] };
+    // The second picture's seven panels are the book page's seven parts.
+    const scene = (await FILM_SCENES["book-psalms"]()) as unknown as {
+      LAYOUT: number[];
+    };
+    expect(scene.LAYOUT).toEqual(
+      intro.structure.map(p => {
+        const [a, b] = p.range.split("-").map(Number);
+        return b - a + 1;
+      })
+    );
+    const t = text(f);
+    expect(t).toContain("The largest group of psalms are laments.");
+    expect(t).toContain("Protest can be a form of faith.");
+    expect(t).toContain("So you may pray that way too.");
+    // The key psalms it names are the book page's own, in order.
+    expect(f.frames[6].older).toContain(
+      intro.keyChapters
+        .map(k => k.ch)
+        .join(", ")
+        .replace(/, (\d+)$/, " and $1")
+    );
+    // It names Jesus' death on the cross: the films' own care line, whole.
+    expect(f.care).toBe(filmFile("the-king").care);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /\bcross\b|blood/i
+    );
+  });
+
+  it("John names the book's own cautions: a faith of doing, and no contempt for Jewish people", async () => {
+    const f = filmFile("book-john");
+    const intro = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "bible/notes/john/intro.json"), "utf8")
+    ) as { keyChapters: { ch: number }[]; reading: string };
+    const t = text(f);
+    expect(t).toContain("Believing is something you do");
+    expect(t).toContain(
+      "when John speaks of the Jews, he usually means the Jerusalem authorities"
+    );
+    expect(t).toContain("Jesus and nearly everyone in the story are Jews.");
+    // The book page gives the same caution; the film does not go past it.
+    expect(intro.reading).toContain(
+      "the term usually names the Jerusalem authorities"
+    );
+    expect(captions(f)).not.toMatch(
+      /the Jews (killed|rejected|hated|wanted)|Jews (killed|murdered|crucified)/i
+    );
+    expect(f.frames[6].older).toContain(
+      intro.keyChapters
+        .map(k => k.ch)
+        .join(", ")
+        .replace(/, (\d+)$/, " and $1")
+    );
+    const scene = (await FILM_SCENES["book-john"]()) as unknown as {
+      LAYOUT: number[];
+    };
+    expect(scene.LAYOUT).toEqual([1, 11, 8, 1]);
+    expect(f.care).toBe(filmFile("the-king").care);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /\bcross\b|blood/i
+    );
+  });
+
+  it("Romans takes no side on Paul's disputed phrases, and does not say God has finished with Israel", async () => {
+    const f = filmFile("book-romans");
+    const intro = JSON.parse(
+      fs.readFileSync(
+        path.join(PUBLIC, "bible/notes/romans/intro.json"),
+        "utf8"
+      )
+    ) as { keyChapters: { ch: number }[]; reading: string };
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect(f.differ?.links?.[0].href).toBe("/study/bible/romans");
+    const t = text(f);
+    expect(t).toContain("Faith means trust.");
+    expect(t).toContain("It is not a good deed that earns a reward.");
+    expect(t).toContain("Chapters 9 to 11 are not a detour.");
+    expect(t).toContain("God's word has not failed");
+    expect(intro.reading).toContain("chapters 9 to 11 are not a detour");
+    expect(t).not.toMatch(
+      /replaced Israel|rejected (Israel|the Jews|his people)|new Israel|God is finished with/i
+    );
+    expect(f.frames[6].older).toContain(
+      intro.keyChapters
+        .map(k => k.ch)
+        .join(", ")
+        .replace(/, (\d+)$/, " and $1")
+    );
+    const scene = (await FILM_SCENES["book-romans"]()) as unknown as {
+      LAYOUT: number[];
+    };
+    expect(scene.LAYOUT).toEqual([3, 2, 3, 3, 4, 1]);
+    expect(f.care).toBe(filmFile("the-king").care);
   });
 });
