@@ -30,7 +30,9 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Three: The Canon Question — How We Got These Books and Not Others | 1,247 | 1,247 | +0.0% | 16 (12.8) | 0 (0.0) | 36 (28.9) | 20 (16.0) | 11 | PASS |
 | Chapter Four: The Dead Sea Scrolls and What They Proved | 1,166 | 1,166 | +0.0% | 23 (19.7) | 0 (0.0) | 38 (32.6) | 15 (12.9) | 13 | PASS |
 | Chapter Five: The New Testament Under Fire — Evidence, Eyewitnesses, and Early Dating | 1,136 | 1,136 | +0.0% | 16 (14.1) | 0 (0.0) | 23 (20.2) | 9 (7.9) | 12 | PASS |
-| **All 6** | 7,447 | 7,447 | +0.0% | 110 (14.8) | 2 (0.3) | 196 (26.3) | 89 (12.0) | 79 | |
+| Chapter Six: What the Archaeologist's Spade Found | 1,491 | 1,491 | +0.0% | 16 (10.7) | 0 (0.0) | 37 (24.8) | 21 (14.1) | 11 | PASS |
+| Chapter Seven: The Hard Sayings — Living with Difficulty | 1,259 | 1,259 | +0.0% | 15 (11.9) | 0 (0.0) | 28 (22.2) | 14 (11.1) | 10 | PASS |
+| **All 8** | 10,197 | 10,197 | +0.0% | 141 (13.8) | 2 (0.2) | 261 (25.6) | 124 (12.2) | 100 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -162,3 +164,47 @@ Five pairs, taken at even intervals through the chapter:
    After: The Apostolic Fathers (Clement, Ignatius, Polycarp, writing between 95 and 120 AD) quote from and allude to New Testament documents extensively.
 5. Before: What early dating means is that the New Testament documents were produced while eyewitnesses to the events they describe were still alive — and that is not a circumstance in which legendary embellishment flourishes.
    After: What early dating means is that the New Testament documents were produced while eyewitnesses to the events they describe were still alive, and that is not a circumstance in which legendary embellishment flourishes.
+
+
+## Chapter Six: What the Archaeologist's Spade Found (`sec07.xhtml`)
+
+Words 1,491 to 1,491. Em-dashes in his prose 16 to 0 (10.7 to 0.0 per 1,000 words). Tells 37 to 21 (24.8 to 14.1 per 1,000). Mean sentence 23.1 words to 23.1; sentences of eight words or fewer 22.2% to 22.2%; of five or fewer 12.7% to 12.7%. 11 edits; paragraphs 18 to 18. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 16 to 0, isnt_its 1 to 1, triplet 9 to 9, anaphora 7 to 7, intens 1 to 1, short_close 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 7 quoted strings, 27 Scripture references, 2 years, 23 numbers in digits, 37 number words, proper names by count, and 28 hedge words (after: 28) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: For most of the nineteenth and early twentieth century, the patriarchal narratives — the stories of Abraham, Isaac, Jacob, and their families — were considered legendary.
+   After: For most of the nineteenth and early twentieth century, the patriarchal narratives, the stories of Abraham, Isaac, Jacob, and their families, were considered legendary.
+2. Before: But it proved that the social world described in their stories belonged to the period those stories claim — a period that ended more than a thousand years before the critical scholars assumed the texts were composed.
+   After: But it proved that the social world described in their stories belonged to the period those stories claim, a period that ended more than a thousand years before the critical scholars assumed the texts were composed.
+3. Before: The stele also contains a reference that most scholars read as a mention of the "House of David" — different from the Tel Dan inscription but consistent with it.
+   After: The stele also contains a reference that most scholars read as a mention of the "House of David," different from the Tel Dan inscription but consistent with it.
+4. Before: Luke refers to the rulers of Thessalonica as "politarchs" (Acts 17:6), a precise administrative title that appeared in no other ancient literary source known to scholars, who initially cited the word as evidence of Luke's inaccuracy — until archaeological excavations produced inscriptions from Thessalonica using exactly this title.
+   After: Luke refers to the rulers of Thessalonica as "politarchs" (Acts 17:6), a precise administrative title that appeared in no other ancient literary source known to scholars, who initially cited the word as evidence of Luke's inaccuracy, until archaeological excavations produced inscriptions from Thessalonica using exactly this title.
+5. Before: The Exodus narrative and the Egyptian evidence remain one of the more contested areas — the question of which pharaoh, what route, and what archaeological signature the Exodus should have left in the record has generated more scholarly heat than any single topic in biblical archaeology.
+   After: The Exodus narrative and the Egyptian evidence remain one of the more contested areas: the question of which pharaoh, what route, and what archaeological signature the Exodus should have left in the record has generated more scholarly heat than any single topic in biblical archaeology.
+
+
+## Chapter Seven: The Hard Sayings — Living with Difficulty (`sec08.xhtml`)
+
+Words 1,259 to 1,259. Em-dashes in his prose 15 to 0 (11.9 to 0.0 per 1,000 words). Tells 28 to 14 (22.2 to 11.1 per 1,000). Mean sentence 22.9 words to 22.9; sentences of eight words or fewer 20.0% to 20.0%; of five or fewer 9.1% to 9.1%. 10 edits; paragraphs 18 to 18. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 15 to 0, not_but 4 to 4, triplet 4 to 5, anaphora 1 to 1, intens 1 to 1, short_close 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 17 Scripture references, 0 years, 8 numbers in digits, 18 number words, proper names by count, and 25 hedge words (after: 25) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Some are morally difficult — the commands to exterminate Canaanite peoples in Joshua, the imprecatory psalms that call for violent revenge on enemies, the Levitical laws whose logic is not immediately apparent to modern readers.
+   After: Some are morally difficult: the commands to exterminate Canaanite peoples in Joshua, the imprecatory psalms that call for violent revenge on enemies, the Levitical laws whose logic is not immediately apparent to modern readers.
+2. Before: the writers are recording two different occasions when Jesus taught related material — Jesus almost certainly repeated his teachings in different forms for different audiences, as any traveling teacher does.
+   After: the writers are recording two different occasions when Jesus taught related material; Jesus almost certainly repeated his teachings in different forms for different audiences, as any traveling teacher does.
+3. Before: The Temple cleansing — placed by the Synoptics near the end of Jesus's ministry and by John near the beginning — is a genuine difficulty that has been discussed by scholars for centuries.
+   After: The Temple cleansing, placed by the Synoptics near the end of Jesus's ministry and by John near the beginning, is a genuine difficulty that has been discussed by scholars for centuries.
+4. Before: the Canaanite religious practices that the texts cite as the reason for destruction — child sacrifice, fertility cult prostitution, practices that would corrupt the covenant community Israel was called to be — were not invented as later justification but are documented in ancient Near Eastern sources.
+   After: the Canaanite religious practices that the texts cite as the reason for destruction (child sacrifice, fertility cult prostitution, practices that would corrupt the covenant community Israel was called to be) were not invented as later justification but are documented in ancient Near Eastern sources.
+5. Before: A text that is easy is a text that asks nothing of you, and what we have is a text that asks everything — including the willingness to sit inside difficulty without resolving it prematurely.
+   After: A text that is easy is a text that asks nothing of you, and what we have is a text that asks everything, including the willingness to sit inside difficulty without resolving it prematurely.
