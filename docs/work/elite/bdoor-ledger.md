@@ -17228,3 +17228,21 @@ Cut in chapter 6: the deep note's lines to Christ (the temple Jesus taught in an
 | The king's grant of power with heavy penalties: a Persian decree recorded as the empire's grant; the empire's practice; the book's weight on teaching and thanks; not a pattern for any government or church today; no warrant to force faith by threat or harm | 25-28 `hard` | ezra/7.json `words` (dat), `doctrines` (law); bible/guides/reading-narrative.json (description is not recommendation); 1-samuel/intro.json and 2-samuel/intro.json `teaching` (no warrant for violence) | Repository; as the site's notes state it |
 
 Cut in chapter 7: the deep note's lines to Christ (Matthew 13:52 and the scribe trained for the kingdom, Matthew 5:17, and Jesus as the one in whom study, practice and teaching are perfectly lived; the note calls the link thematic); the BSB's own word for Ezra's trip in verse 9, kept out of the note's prose as on earlier runs; the word blessing outside quoted Scripture (caught by the scan and changed to praise before commit).
+
+## The plain notes on Ezra 8 (2026-11-25)
+
+`client/public/bible/notes/ezra/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The list shaped like chapter 2 (priests, David's line, lay families with numbers); twelve family groups, perhaps the twelve tribes; about 1,500 men and several thousand in all; the first month of the seventh year, spring 458 BC on the traditional dating; the second return told in the first person | 1-14 | ezra/8.json `literary`, `historical`, `story` | Repository |
+| From 28 to 300 men a family (verses 11 and 5) | 1-14 | BSB (the figures as printed) | BSB text |
+| 1 Chronicles 3:22 and a Hattush among Shecaniah's descendants in David's line after the exile | 1-14 | BSB | BSB text (a link within the Old Testament read from the two verses) |
+| Ahava a canal in Babylonia, location unknown; Casiphia unknown; the suggestion of a center of Jewish religious life, unconfirmed by the text; thirty-eight Levites and 220 temple servants | 15-23 | ezra/8.json `historical`; BSB | Repository; BSB text |
+| Few Levites in chapter 2 (74); bandits on the roads; envoys normally escorted; Nehemiah's escort (Nehemiah 2:9); Ezra's refusal a matter of consistency, not principle; fasting as humbling oneself, not forcing God's hand; anah as on the Day of Atonement (Leviticus 16:29) | 15-23 | ezra/8.json `cultural`, `words` (tsom, anah); BSB | Repository; BSB text |
+| Ezra and Nehemiah not differing in belief but in situation; trusting God not passivity; Nehemiah praying and posting a guard | 15-23 `hard` | ezra/8.json `cultural`; bible/doctrines/providence.json (Nehemiah 4:9) | Repository |
+| The weighing as ancient practice and integrity (coins fairly new, wealth by weight, weighed in Babylon and again in Jerusalem); shaqal four times; the holy treasure carried by holy people; the three days' rest matching Ahava; twelve bulls, twelve goats, ninety-six rams as eight times twelve; satraps as governors of the great provinces; the commission's legal side completed | 24-36 | ezra/8.json `cultural`, `literary`, `story`, `words` (shaqal, qodesh); bible/guides/empires.json (satrapies) | Repository |
+| 2 Corinthians 8:20 | 24-36 | ezra/8.json `christ` (Paul's care with the collection as an echo); BSB | Repository; BSB text (a likeness of conduct, no line to Christ) |
+| The amounts: 650 talents over twenty tons by the usual estimate; inflated in copying, a lighter talent, or as they stand | 24-36 `hard` | ezra/8.json `historical` | Repository; the views in their holders' terms |
+
+Cut in chapter 8: the deep note's lines to Christ (Jesus fasting in the wilderness, John 17:12 and John 10:27-29, and the shepherd who brings his flock home; the note calls the link thematic); the BSB's word for the trip in verse 21, kept out of the note's prose; the two-word quotation of ‘with me’ (it would leave a first-person word in the prose; the sentence was rewritten before commit).
