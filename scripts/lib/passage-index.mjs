@@ -291,6 +291,8 @@ function bookChapters(slug) {
   return book ? Array.from({ length: book.chapters }, (_, i) => i + 1) : [];
 }
 
+const bookName = (slug) => readJson("bible/books.json").find((b) => b.slug === slug)?.name ?? "";
+
 /**
  * The Bible Explorer's moving pictures: a finished film is offered on each
  * chapter one of its pictures quotes, and on the chapters it sends the reader
@@ -308,7 +310,8 @@ function films() {
         return m ? [{ slug: m[1], chapter: +m[2], label: r.label }] : [];
       });
       // A film for one whole book of the Bible is offered on every chapter of it.
-      const whole = bookChapters(film.book).map((chapter) => ({ slug: film.book, chapter, label: f.title }));
+      // The line under its title says what it covers there: the whole book.
+      const whole = bookChapters(film.book).map((chapter) => ({ slug: film.book, chapter, label: `The whole book of ${bookName(film.book)}` }));
       return {
         kind: "film",
         title: f.title,
