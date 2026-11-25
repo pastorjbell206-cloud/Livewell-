@@ -19177,3 +19177,17 @@ Cut in chapter 30: the deep note's lines to Christ (Mark 14:65, 15:19 and 15:34 
 | The hard note: not sinless (9:2; 14:4; 13:26); denying the guilt that would explain his disaster; verse 33; the high standard; confidence that God owed him an answer (40:8); innocent of the charges | 35-40 | job/31.json `hard` | Repository |
 
 Cut in chapter 31: the deep note's lines to Christ (Matthew 5:28, 5:44, 25:35-36 and Hebrews 4:15; the note calls them thematic); the Egyptian Book of the Dead (not needed). The note's judgment on the curse of verse 10 (that it is not a picture to approve) is a plain-words comment on the text, not a claim of fact.
+
+## The plain notes on Job 32 (2026-11-25)
+
+`client/public/bible/notes/job/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| God expected, Elihu instead; six chapters unanswered; the first prose since chapter 2; the fullest family line; Buz, Nahor and Uz (Jeremiah 25:23); nothing known outside the book; absent from prologue and epilogue; aph four times | 1-5 | job/32.json `story`, `historical`, `literary`, `words` (aph) | Repository |
+| Genesis 22:21 | 1-5 | job/32.json `historical`; BSB | Repository; BSB text |
+| Age and wisdom (15:10); ruach; the wineskin; the self-referential speech read as pompous or as courtesy | 6-22 | job/32.json `cultural`, `literary`, `words` (ruach, kanah) | Repository; each reading in its holders' terms |
+| Joel 2:28 | 6-22 | job/32.json `christ` (Joel 2:28 on the Spirit given regardless of age); BSB | Repository; BSB text |
+| The hard note: the four readings (a wise voice not rebuked at 42:7-9; a repetition ignored by God; a later addition; deliberately mixed); no side | 6-22 | job/32.json `hard` | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 32: the deep note's lines to Christ (Luke 2:46-47, John 7:15 and Acts 2:17; the note says none is predicted in Job 32); Mark 2:22 on wineskins (not drawn from Job).
