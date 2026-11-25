@@ -20638,3 +20638,22 @@ Cut in chapter 6: the deep note's lines to Christ (Jesus as the opposite of the 
 | Solomon led astray (1 Kings 11:1-4); Nehemiah 13:26 (its first sentence) | 24-27 | the chapter data's cross-references for 7:26 (1 Kings 11:1-2; Nehemiah 13:26); BSB | Repository; BSB text |
 
 Cut in chapter 7: the deep note's lines to Christ (Hebrews 4:15 and Jesus tempted without sin; the temptation in the wilderness, Matthew 4:1-11, set against the young man); 2 Timothy 2:22 (not needed). The scene is told without the woman's explicit invitation (7:18) and without lingering.
+
+## The plain notes on Proverbs 8 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1; her places (8:2-3); 8:4; 8:5; 8:10; 8:11 (its first clause); 8:13; 8:15; 8:17; riches and fruit (8:18-19); justice and treasuries (8:20-21) | 1-21 | BSB | BSB text; 8:4 quoted from inside the speech, with no inner mark in the span |
+| Answering chapter 7 in daylight; the heights, crossroads and gates; public and for everyone; silver, gold and rubies as the most prized goods; kings ruling by wisdom across the ancient Near East; Solomon's prayer (1 Kings 3:9); wisdom bound to hating evil | 1-21 | proverbs/8.json `story`, `cultural`, `historical`, `literary` | Repository |
+| 1 Kings 3:28 (its last clause); Psalm 19:10 (its first clause); Isaiah 55:6 (its first clause) | 1-21 | proverbs/8.json `historical` (1 Kings 3:9); the chapter data's cross-references for 8:11 (Psalm 19:10) and 8:17 (Isaiah 55:6); BSB | Repository; BSB text |
+| 8:22; 8:23; brought forth (8:24-25); 8:27; clouds, sea and foundations (8:28-29); 8:30-31 | 22-31 | BSB | BSB text |
+| The high point of chapters 1 to 9; personification; creation made wisely; backward and forward movement; reshit and Genesis 1:1; the ancient picture of deep, springs, circle and boundary; the sea as a restless power (Job 38:8-11); wisdom as God's delight, not a rival; amon and its three readings | 22-31 | proverbs/8.json `story`, `literary`, `cultural`, `words` (reshit, amon) | Repository; each reading in its holders' terms |
+| Genesis 1:1; Job 38:11 (its quoted words, in part); John 1:3 (its first clause); Colossians 1:17; the shaping of the apostles' language, ‘though the chapter itself is a poetic personification, not a prophecy’ | 22-31 | proverbs/8.json `cultural` (Job 38:8-11), `words` (reshit), `christ`; proverbs/intro.json `christ` (the site's book page wording, kept); BSB | Repository; BSB text; the line to Christ only as the site's book page already draws it |
+| The hard note: Arius and the Greek of verse 22; qanah and the translations; brought forth as birth language; personification and God never without wisdom; the confession resting on John 1:1, Colossians 1:15-20 and Hebrews 1; Athanasius and Nicaea; background filled and surpassed, or read directly of the Son; both rejecting Arius | 22-31 `hard` | proverbs/8.json `hard`, `historical`, `words` (qanah); guides/reading-wisdom.json section 7 | Repository; each reading in its holders' terms |
+| 8:32; 8:33; 8:34; 8:35; 8:36 | 32-36 | BSB | BSB text |
+| The return to direct appeal; watching daily at the doors; two ways, life and death | 32-36 | proverbs/8.json `literary` | Repository |
+| Psalm 119:2; Proverbs 9:1-6 named | 32-36 | the chapter data's cross-references for 8:32 (Psalm 119:1-2); BSB | Repository; BSB text |
+
+Cut in chapter 8: the deep note's further lines to Christ (Hebrews 1:2-3; Luke 7:35 and Matthew 11:19; the Son fulfilling and surpassing the chapter), beyond the one line the site's book page already draws. No care line is needed in this chapter.
