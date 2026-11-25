@@ -81,10 +81,11 @@ export interface Card {
 
 // ── Watch and learn: the moving pictures ─────────────────────────────────
 
-/** The four groups the moving pictures are listed under, in this order. */
+/** The groups the moving pictures are listed under, in this order. */
 export type FilmGroup =
   | "story"
   | "stories"
+  | "books"
   | "ideas"
   | "beliefs"
   | "verses"
@@ -103,6 +104,8 @@ export interface FilmSummary {
   /** The stops and "Why we believe" cards it belongs to. */
   stops?: string[];
   cards?: string[];
+  /** A film for one whole book of the Bible: that book's slug (client/public/bible/books.json). */
+  book?: string;
 }
 
 export interface FilmGroupInfo {
@@ -138,6 +141,13 @@ export interface Film {
   title: string;
   group: FilmGroup;
   status: "finished";
+  /**
+   * A film for one whole book of the Bible (the group "books"): that book's
+   * slug. Its words come from the book's own page (bible/notes/<book>/intro.json)
+   * and chapter notes; it is offered on the book's page and on each of its
+   * chapters from this one field.
+   */
+  book?: string;
   line: Leveled;
   /** Its small picture: "road" or a stop's slug. */
   mark: string;

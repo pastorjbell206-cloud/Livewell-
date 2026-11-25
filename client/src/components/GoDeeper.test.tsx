@@ -52,11 +52,13 @@ describe("Go deeper", () => {
     expect(within(doctrine).getByRole("button", { name: /Show fewer/ }).getAttribute("aria-expanded")).toBe("true");
   });
 
-  it("draws nothing for a chapter with nothing (Genesis 36), and asks for no file it lacks", async () => {
-    const { container } = render(<GoDeeper slug="genesis" chapter={36} label="Genesis 36" />);
+  // Genesis 36 was this test's empty chapter until Genesis had a film of its
+  // own (2026-11-25), which is offered on every chapter of the book.
+  it("draws nothing for a chapter with nothing (Exodus 38), and asks for no file it lacks", async () => {
+    const { container } = render(<GoDeeper slug="exodus" chapter={38} label="Exodus 38" />);
     await waitFor(() => expect(container.innerHTML).toBe(""));
     expect(screen.queryByText("Go deeper")).toBeNull();
-    expect(requested).not.toContain("/index/chapters/genesis/36.json");
+    expect(requested).not.toContain("/index/chapters/exodus/38.json");
   });
 
   it("asks for no file for Matthew 8 or 17, which the list leaves out (no 404 in the console)", async () => {
