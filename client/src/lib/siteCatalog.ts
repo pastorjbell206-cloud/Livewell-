@@ -122,6 +122,7 @@ export const DOORS: Door[] = [
         inside: [
           { id: "bible.passage", name: "Read any verse in context", line: "Type a verse and see the passage around it.", href: "/theology/passage", icon: "FileText" },
           { id: "bible.timeline", name: "The Bible's timeline", line: "Every date the book pages give, on one line of time.", href: "/study/timeline", icon: "Hourglass" },
+          { id: "bible.atlas", name: "The Bible atlas", line: "Every place the book pages put on a map, and the chapters that name it.", href: "/study/atlas", icon: "Map" },
         ],
       },
       { id: "bible.search", name: "Search the Bible", line: "Find every verse that holds a word or phrase.", href: "/study/bible/search", icon: "Search" },
