@@ -18702,3 +18702,17 @@ Cut in chapter 15: the deep note's lines to Christ (Colossians 1:15-17 and John 
 | The hard note: the three readings of the witness (God himself; a heavenly figure, 5:1 and 33:23; Job's own cry); verse 20 read two ways; Christians reading it of Christ, Job not knowing Jesus, the New Testament not quoting it | 18-22 | job/16.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 16: the deep note's lines to Christ (1 John 2:1, Hebrews 7:25, Matthew 26:67 and Hebrews 12:24; the note calls them thematic); the Greek versions' word for comforters and its later use (not drawn by the New Testament from Job).
+
+## The plain notes on Job 17 (2026-11-25)
+
+`client/public/bible/notes/job/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The rise and fall after chapter 16; the guarantor and striking hands (Proverbs 6:1-5; 17:18; 22:26); asking God against God; the byword (Deuteronomy 28:37) as a sign of punishment in popular thought; spitting (Deuteronomy 25:9; Numbers 12:14); public shame as real suffering; verse 9 | 1-9 | job/17.json `story`, `historical`, `cultural`, `literary`, `words` (arav, taqa, meshol), `doctrines` | Repository |
+| Genesis 43:9 | 1-9 | job/17.json `historical`, `words` (arav); BSB | Repository; BSB text |
+| Verse 12 obscure; the grave as kin in verse 14; a family gone; tiqvah twice and chapter 14 | 10-16 | job/17.json `literary`, `cultural`, `words` (tiqvah) | Repository |
+| The hard note: the low point, or hope remaining (verses 3 and 9); hope lost in the visible, not in God; chapter 19 | 10-16 | job/17.json `hard` | Repository; each reading in its holders' terms |
+| The self-harm line, handled as 1 Kings 19 was | 10-16 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 17: the deep note's lines to Christ (Hebrews 7:22 and Mark 15:19 beside Job's guarantor and shame; the note calls them thematic, and the New Testament does not draw them from Job).
