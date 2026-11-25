@@ -33,7 +33,8 @@ His limit for em-dashes is 2 to 3 per 500 words, which is 4 to 6 per 1,000. Head
 | Chapter 10: What Humility Actually Looks Like | 4,610 | 4,611 | +0.0% | 64 (13.9) | 9 (2.0) | 129 (28.0) | 75 (16.3) | 46 | PASS |
 | Conclusion: The Question You Have to Answer | 2,573 | 2,570 | -0.1% | 30 (11.7) | 6 (2.3) | 87 (33.8) | 55 (21.4) | 22 | PASS |
 | Appendix A: The Verses We Got Wrong | 6,912 | 6,913 | +0.0% | 92 (13.3) | 7 (1.0) | 173 (25.0) | 92 (13.3) | 62 | PASS |
-| **All 13** | 56,289 | 56,262 | -0.0% | 791 (14.1) | 140 (2.5) | 1676 (29.8) | 983 (17.5) | 552 | |
+| Appendix B: How to Read the Bible | 2,768 | 2,767 | -0.0% | 24 (8.7) | 4 (1.4) | 57 (20.6) | 36 (13.0) | 14 | PASS |
+| **All 14** | 59,057 | 59,029 | -0.0% | 815 (13.8) | 144 (2.4) | 1733 (29.3) | 1019 (17.3) | 566 | |
 
 ## Introduction: Every Generation Was Convinced (`sec01.xhtml`)
 
@@ -345,3 +346,27 @@ Five pairs:
    After: Felix Manz, the first Anabaptist martyr, was drowned, with bitter irony, by Protestant authorities who viewed his baptismal theology as seditious.
 
 Left alone, and why. The appendix surveys contested doctrines (women's ministry, the papacy, the Supper, election, baptism, inerrancy, the millennium, same-sex relationships) and its fairness lives in its exact wording, so it took punctuation only, with one exception: the stack "Six verses. Three major eschatological systems. Centuries of ..." became one sentence. Every statement of a tradition's position, every "may", "possibly" and "is genuinely contested", every Greek and Hebrew word and every reference is as it was. Where two positions are set side by side (transubstantiation and the Real Presence; the Anabaptist and the Reformed and Lutheran readings; the three millennial views; the traditional and revisionist readings), both took the same punctuation, so neither gained or lost. The headings keep their dashes (22 of them, outside the count). Seven dashes stay in the prose.
+
+
+## Appendix B: How to Read the Bible (`sec17.xhtml`)
+
+Words 2,768 to 2,767. Em-dashes in his prose 24 to 4 (8.7 to 1.4 per 1,000 words). Tells 57 to 36 (20.6 to 13.0 per 1,000). Mean sentence 21.2 words to 21.1; sentences of eight words or fewer 16.2% to 16.2%; of five or fewer 6.2% to 6.2%. 14 edits; paragraphs 27 to 27.
+
+By kind (before to after): emdash 24 to 4, not_but 8 to 8, not_just 1 to 1, NotX.Y 2 to 2, isnt_its 1 to 1, triplet 15 to 15, anaphora 1 to 1, intens 5 to 4.
+
+Fact diff: **PASS**. Fixed blocks (headings, subtitle, pull quote, block quotes and their references) identical; 5 quoted strings, 17 Scripture references, 0 years, 9 numbers in digits, 25 number words, proper names by count, and 35 hedge words (after: 35) compared.
+
+Five pairs:
+
+1. Before: The goal is to hear what the text is actually saying — which is not always what you want it to say, what your tradition has said it says, or what it would need to say for your community's commitments to be vindicated.
+   After: The goal is to hear what the text is actually saying, which is not always what you want it to say, what your tradition has said it says, or what it would need to say for your community's commitments to be vindicated.
+2. Before: The Old Testament's teaching on many subjects — violence, slavery, the status of Gentiles, the nature of the afterlife — is developed, clarified, and in some cases corrected by the New Testament's teaching.
+   After: The Old Testament's teaching on many subjects (violence, slavery, the status of Gentiles, the nature of the afterlife) is developed, clarified, and in some cases corrected by the New Testament's teaching.
+3. Before: Reading entire books of the Bible — reading Paul's letters as letters, reading the Gospels as narratives, reading the prophets as extended poetic arguments — produces a different and more accurate sense of what the texts are doing than reading isolated verses ever can.
+   After: Reading entire books of the Bible (reading Paul's letters as letters, reading the Gospels as narratives, reading the prophets as extended poetic arguments) produces a different and more accurate sense of what the texts are doing than reading isolated verses ever can.
+4. Before: The texts that produce that discomfort are precisely the ones to sit with longest.
+   After: The texts that produce that discomfort are the ones to sit with longest.
+5. Before: The reader who has arrived at a final, settled interpretation of every text — who no longer approaches Scripture as something that might say something she hasn't heard before — has stepped off the spiral.
+   After: The reader who has arrived at a final, settled interpretation of every text, who no longer approaches Scripture as something that might say something she hasn't heard before, has stepped off the spiral.
+
+Left alone, and why. This appendix was already the plainest writing in the book (24 dashes, the fewest tells per thousand words), and it is a manual: its short imperative openers ("Read the whole before the part.", "Ask what the text demands.", "Read with people unlike you.") are headings in all but name, and the list of common errors is a list. Its statement on progressive revelation and its closing word on the authority of Scripture are his positions and took a dash at most. One "precisely" went. Four dashes stay.
