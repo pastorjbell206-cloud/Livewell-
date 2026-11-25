@@ -20834,3 +20834,22 @@ Cut in chapter 1: the deep note's lines to 1 Thessalonians 5:2, 2 Peter 3:10, Lu
 | The hard note: three answers (Luke 23:44-45; prophetic imagery and Isaiah 13:10; begun at Pentecost, completed at the return); overlapping; the age of the Spirit; Peter's stress | 28-32 `hard` | joel/2.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 2: nothing drawn to the New Testament beyond Acts 2:16 and Romans 10:13, which quote the chapter. The question of 2:17 and the opening of 2:12, both inner quotations, are paraphrased or quoted in part.
+
+## The plain notes on Joel 3 (2026-11-25)
+
+`client/public/bible/notes/joel/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 paraphrased; 3:2 (its clause); 3:3 paraphrased; 3:4-5 paraphrased; 3:6; 3:7-8 paraphrased | 1-8 | BSB | BSB text |
+| Chapter 4 in Hebrew; the lens widened; the Day turned on the oppressors; restore the fortunes; Jehoshaphat as the LORD judges; Tyre and Sidon, trade in people; Philistia; the Greeks from the eighth century and the date; the Sabeans of Sheba; lots for captives; children as currency; temples or palaces; the treasures as trophies | 1-8 | joel/3.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Amos 1:6-10; Ezekiel 27:13 | 1-8 | joel/3.json `historical` | Repository |
+| The hard note: the judgment God's, not Judah's; specific crimes; 3:8 as repayment mirroring the crime, not approval of slavery; Isaiah 19:23-25; the Spirit for all; atrocities not left standing; no warrant for hatred of any people; no statement about any modern nation or conflict | 1-8 `hard` | joel/3.json `hard`; joel/intro.json `reading`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+| 3:9-11 paraphrased (3:9's and 3:10's inner quotations not quoted); 3:10 (its first sentence); 3:12 (its clause); 3:13 (its first clause); 3:14 (in double quotes, for its exclamation); 3:15 paraphrased; 3:16 (its first clause) | 9-16 | BSB | BSB text |
+| A courtroom and battlefield; the mocking summons; 3:10 reversing Isaiah 2:4 and Micah 4:3; sickle and winepress; the overflowing vat as wickedness ripe; the valley of decision; 3:16 and Amos 1:2 | 9-16 | joel/3.json `literary`, `cultural` | Repository |
+| Isaiah 2:4 (its clause); Micah 4:3; Amos 1:2 | 9-16 | joel/3.json `literary`; BSB | Repository; BSB text |
+| 3:17 (its first sentence); 3:18 (its first sentence; the rest paraphrased); 3:19-20 paraphrased; 3:21 (its last words) | 17-21 | BSB | BSB text |
+| From stripped vines to dripping wine; God dwelling in Zion; the Valley of Acacias as a dry wadi; Egypt (Shishak in the tenth century; Neco and Josiah in 609 BC); Edom at Jerusalem's fall in 587 or 586 BC; the date debated | 17-21 | joel/3.json `story`, `cultural`, `historical` | Repository |
+| Ezekiel 47:1-12; Zechariah 14:8 paraphrased; Obadiah 10-14 | 17-21 | joel/3.json `story`, `historical` | Repository |
+
+Cut in chapter 3: the deep note's lines to Revelation's harvest and river, which the New Testament does not draw from this chapter as a quotation. The words of 3:3 are given as the BSB has them, without dwelling on them. The phrase of 3:1 is paraphrased so that no first-person words stand in the prose.
