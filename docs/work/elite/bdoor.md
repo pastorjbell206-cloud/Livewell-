@@ -9108,3 +9108,31 @@ My checks in `/home/user/bdoor-scratch/ezra/` (quotations strict, single-quote, 
 ### Next
 
 The Psalms already have a book page; Proverbs, Ecclesiastes and the Song of Songs are the wisdom books still without one. As with Job, each new book page needs the explore indexes rebuilt in its own commit (`build-bible-timeline-index.mjs`, `-atlas-`, `-words-`, `-hard-`, and now `-keys-`, `-themes-`, `-glance-` where its data changes).
+
+## 1 Chronicles: the book page and every chapter (2026-11-25)
+
+1 Chronicles is complete: a teaching introduction on the book page and all 29 chapters in plain words, in the shape of 1 and 2 Kings. Each chapter note gained only `"plain": true` at its end. There is one commit for the book page and one per chapter, each with its ledger rows and only that chapter's files, plus one follow-up commit that corrected an inexact paraphrase of Galatians 3:8 in chapter 1.
+
+### The book page (`/study/bible/1-chronicles`, same address)
+
+Data only, in `client/public/bible/notes/1-chronicles/intro.json`, field `teaching`. Fourteen parts (3,510 words): 1 Chronicles in a minute; Where it sits in the story; Who wrote it, and when; The world it was written for; How 1 Chronicles is built; Nine chapters of names; Saul falls, and all Israel makes David king; The ark comes to Jerusalem; A house for David; Wars, a census, and a threshing floor; Preparing for the temple; Reading Chronicles beside Samuel and Kings; How the New Testament reads 1 Chronicles; How to read 1 Chronicles. Then 23 hard passages, 14 key words, 16 timeline entries, a `canaan` map of eight places already placed on the site (Gilead roughly, as a region), and ten Go deeper pages, all live. Two care lines are reused byte for byte: the self-harm line where Saul's death is named, and the word of care after Uzzah.
+
+### The chapters
+
+Chapters 1 to 9, the genealogies, are kept short: each says what the list is for and who to notice (one passage for chapter 8, two for the rest, 548 to 928 words). Chapters 10 to 29 run 725 to 1,975 words, two or three passages each. Where Chronicles tells an event differently from Samuel or Kings, the notes say so and give each reading in its own terms: who incited the census (21:1 against 2 Samuel 24:1); the census numbers and the price of the threshing floor; Elhanan and Goliath (20:5 against 2 Samuel 21:19); David's seven sons or eight; Saul's failure to inquire; Bathsheba, Absalom and Adonijah left out; the reason David could not build (22:8 against 1 Kings 5:3 and 2 Samuel 7). The site's numbers page is named and no side is taken beyond it. Care lines, reused byte for byte: grief (chapter 7), self-harm (chapter 10), the word of care (chapters 13 and 21). Lines to the New Testament only where it draws them: Matthew 1 and the line of kings, Hebrews 1:5 at 17:13, Luke 1:32, Luke 1:5 at the division of Abijah (24:10), and Jesus' words about Solomon.
+
+## 2 Chronicles: the book page and every chapter (2026-11-25)
+
+2 Chronicles is complete: a teaching introduction on the book page and all 36 chapters in plain words. One commit for the book page, one per chapter, and one follow-up for the map labels after the walk of the served build found Bethel and Jericho overlapping.
+
+### The book page (`/study/bible/2-chronicles`, same address)
+
+Data only, in `client/public/bible/notes/2-chronicles/intro.json`, field `teaching`. Fifteen parts (4,103 words): 2 Chronicles in a minute; Where it sits in the story; Who wrote it, and when; The world it was written for; How 2 Chronicles is built; Solomon's temple, and the prayer it answers; The kingdom divides, and a king humbled; Kings who seek, and kings who stop; Athaliah, Joash, and a murdered prophet; Ahaz shuts the doors, Hezekiah opens them; Manasseh's repentance, and Josiah; The fall of Jerusalem, and a decree; Reading Chronicles beside Kings; How the New Testament reads 2 Chronicles; How to read 2 Chronicles. Then 24 hard passages, 14 key words, 16 timeline entries (Thiele's dates from the site's guide to the kings), a `canaan` map of eight places already placed on the site (Samaria roughly, as a region), and eleven Go deeper pages, all live, first among them the context guide Is 2 Chronicles 7:14 a Promise to America?, which the page and chapter 7 agree with and link. Three care lines are reused byte for byte: illness (Asa), not protected by a parent (Manasseh), and the disaster line (the fall of Jerusalem).
+
+### The chapters
+
+Each chapter has one to three passages (589 to 1,791 words). The hard notes that matter most: 7:14 read in its setting and as the site's guide reads it, a promise God's people may pray and no promise to any nation; Zechariah's murder (24:20-22) with Matthew 23:35, the Berechiah difficulty set out as the notes on Matthew 23 set it out, and no blame on the Jewish people; Manasseh's repentance (33) against 2 Kings 21, each reading in its own terms; the fall of Jerusalem (36) as 2 Kings 25 was handled, Judah's own Scripture and no key for anyone's suffering. Child sacrifice (28:3; 33:6) is named, never described, with the parent care line. Asa's, Jehoram's and Uzziah's illnesses carry the illness line and are never presented as a reader's punishment. Violence (25:12; 36:17) is named in a line.
+
+### What was run, for both books
+
+The 2 Kings scripts, copied and pointed at each book, after every commit: validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden-word, signposting and first-person scans, the care-line check, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks (0 problems each). Every five to eight chapters: the 61 content gates, `pnpm check` and `pnpm test`. Before each push, the full order on the merged tree and a walk of the served build at 390 and 1440. The gate results and the push ranges are in the hand-back.
