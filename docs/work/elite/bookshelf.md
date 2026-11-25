@@ -482,8 +482,8 @@ elite and professional". Both books were rebuilt from their own text.
 ### How it is made
 
 `content/books-src/<id>/` holds each book's text: the chapter files of its
-original EPUB (`sec01.xhtml` and on; byte for byte for A Higher Allegiance,
-edited at James's instruction for Blind Spots, see "The edit" below), and
+original EPUB (`sec01.xhtml` and on, since edited at James's instruction for both
+books, see "The edit" below), and
 `book.json` (the
 author's name as the file has it, the EPUB identifier, the copyright notice,
 the served and original file names). The title and subtitle come from
@@ -542,8 +542,8 @@ original EPUB's text. What an edit kept is proved elsewhere, by the fact
 diff against the original. The originals stay untouched in
 `content/held-downloads/originals/`.
 
-What the script does to the text, each counted on every run (the Blind
-Spots column is the edited text, 2026-11-25):
+What the script does to the text, each counted on every run (both columns
+are the edited texts, 2026-11-25):
 
 | Change | Blind Spots | A Higher Allegiance |
 |---|---|---|
@@ -561,7 +561,7 @@ Spots column is the edited text, 2026-11-25):
 | A reference at the end of a quotation set on its own line (no word moved) | 0 | 53 |
 | LORD, written in capitals in the source, set in small capitals | 12 | 0 |
 | First three words of a chapter set in small capitals by the stylesheet | 15 | 11 |
-| Soft hyphens at a line break (PDF only, invisible elsewhere) | 85 | 63 |
+| Soft hyphens at a line break (PDF only, invisible elsewhere) | 85 | 61 |
 
 Widows and orphans are held to two lines; headings keep with what follows.
 
@@ -613,16 +613,40 @@ What `--verify` proves now, on the rebuilt files:
   removed 705 dashes and 28 words);
 - the PDF's pages, from the first chapter on, carry the same text character
   for character: 338,523 characters against 338,523;
-- A Higher Allegiance, not yet edited, is still held to its original: 56,548
-  words in the source folder against 56,548 in the original EPUB, no
-  difference.
+- A Higher Allegiance, not yet edited when Blind Spots was rebuilt, was
+  still held to its original: 56,548 words in the source folder against
+  56,548 in the original EPUB, no difference.
 
 The PDF is still 244 pages (so `client/src/data/ebooks.ts` is unchanged),
 1.8 MB; the EPUB is 409 KB. The contents, a chapter opening, a spread and
 the last pages were looked at as images after the rebuild.
 
-A Higher Allegiance's source folder is still its original's text. When it is
-edited, give its `book.json` an `edited` entry the same way.
+**A Higher Allegiance was the second book, the same day.** Its profile is
+the reverse of Blind Spots: almost no long dashes, but the most runs of very
+short sentences of any of his books and many one-line paragraphs in a row.
+Its chapter files in `content/books-src/when-god-bless-america/` were edited
+the same way, one commit a chapter, and its `book.json` carries `edited`.
+The record is `docs/work/elite/voice-books/a-higher-allegiance.md`. In
+short: 344 edits; his prose went from 985 paragraphs to 826 and from 174
+paragraphs of fifteen words or fewer to 76 (none now next to another); runs
+of three fragments fell from 62 to 11; length moved by less than half a
+percent (45,246 words to 45,053); ten words from CLAUDE.md's Forbidden
+Language list were replaced with the plain word. Every paired criticism of
+right and left is word for word. The end matter of every chapter (Key
+Takeaways, Reflection Questions, Practices, Sources & Notes) is identical to
+the original. The fact diff passed on all eleven chapters.
+
+`--verify` on its rebuilt files: the EPUB carries exactly the source
+folder's text with the listed typesetting (56,225 words compared after the
+list marks are set aside, no difference); the PDF's pages carry the same
+text character for character (286,910 against 286,910). The PDF is 207
+pages (it was 212; `client/src/data/ebooks.ts` now says 207), 1.7 MB; the
+EPUB is 353 KB. The contents, a chapter opening, two spreads and a page of
+Sources & Notes were looked at as images.
+
+Both books are now edited, so no book is at present held to its original by
+`--verify`; the check stays in the script for the next book that is typeset
+before it is edited.
 
 ### The apparatus
 
@@ -674,7 +698,8 @@ Left exactly as written:
 | Blind Spots, 2026-11-23 | 244 | 1.7 MB | 399 KB |
 | Blind Spots, edited, 2026-11-25 | 244 | 1.8 MB | 409 KB |
 | A Higher Allegiance, before | 495 | 767 KB | 733 KB |
-| A Higher Allegiance, now | 212 | 1.7 MB | 345 KB |
+| A Higher Allegiance, 2026-11-23 | 212 | 1.7 MB | 345 KB |
+| A Higher Allegiance, edited, 2026-11-25 | 207 | 1.7 MB | 353 KB |
 
 The old PDFs were set loosely (A Higher Allegiance at about 115 words a
 page); the new ones at about 270. The new PDFs are larger: they carry the

@@ -55,3 +55,36 @@ export function useStaged(): boolean {
   }, []);
   return all;
 }
+
+/**
+ * Go to a heading further down a long page and put the keyboard there. The
+ * far lists are laid out only as they near the screen (.bx-far), so the
+ * heading's place can move while the page gets there; this looks again for a
+ * few frames until it has stopped moving.
+ */
+export function jumpTo(id: string) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  window.history.replaceState(null, "", `#${id}`);
+  const UNDER_MASTHEAD = 90;
+  let tries = 0;
+  let steady = 0;
+  const go = () => {
+    const off = el.getBoundingClientRect().top - UNDER_MASTHEAD;
+    // At once: the page's own smooth scrolling would never settle while the lists above are still finding their height.
+    if (Math.abs(off) > 2) {
+      steady = 0;
+      window.scrollTo({ top: window.scrollY + off, behavior: "instant" as ScrollBehavior });
+    } else steady++;
+    if (++tries < 20 && steady < 3) window.setTimeout(go, 60);
+    else el.focus({ preventScroll: true });
+  };
+  go();
+}
+
+/** A link's click handler for jumpTo: a plain click only, so a new tab still works. */
+export const onJump = (id: string) => (e: { preventDefault: () => void; metaKey?: boolean; ctrlKey?: boolean; shiftKey?: boolean }) => {
+  if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+  e.preventDefault();
+  jumpTo(id);
+};
