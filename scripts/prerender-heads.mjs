@@ -1109,6 +1109,23 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // Themes of the Bible: every theme the book pages name, A to Z, each with
+  // each book's own paragraph and the link to the book
+  // (client/public/bible/explore/themes.json).
+  "/study/themes": async () => {
+    const d = readJsonSafe("client/public/bible/explore/themes.json");
+    if (!d?.themes?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const theme = (t) => `<li id="${escapeHtml(t.id)}"><h2>${escapeHtml(t.title)}</h2>\n${t.entries.map((e) => `<p><a href="/study/bible/${e.book}"><strong>${escapeHtml(books.get(e.book)?.name ?? e.book)}.</strong></a> ${escapeHtml(e.body)}</p>`).join("\n")}</li>`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Themes of the Bible</h1>`,
+        `<p class="pre-subtitle">Every theme the book pages name, each in its own book's words. Search them, or go by letter.</p>`,
+        ...Array.from({ length: Math.ceil(d.themes.length / 30) }, (_, k) => `<ul${k ? ' class="pre-far"' : ""}>\n${d.themes.slice(k * 30, k * 30 + 30).map(theme).join("\n")}\n</ul>`),
+      ]),
+    };
+  },
   // Paul's travels: every trip's places in order with what happened there and
   // its Acts reference, then the churches and the letters written to them
   // (client/public/explorer/travels.json; places named as the Acts book page
