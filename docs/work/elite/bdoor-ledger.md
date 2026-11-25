@@ -17920,3 +17920,19 @@ Cut in chapter 10: the deep note's lines to Christ (Jeremiah 31 and the new cove
 | Joshua 14:2 | 25-36 | nehemiah/11.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 11: the deep note's lines to Christ (the heavenly Jerusalem in Hebrews 12:22 and Revelation 21, Hebrews 11:13-16; the note calls them thematic); Beersheba called Abraham's town (not stated in this form in the repository; cut before commit); the 1 Chronicles 9:2 quotation corrected to the BSB's words before commit.
+
+## The plain notes on Nehemiah 12 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The lists connecting the generations; the high priests from Jeshua to Jaddua (12:10-11); Eliashib Nehemiah's contemporary; the Elephantine letter of 407 BC and Johanan; Darius the Persian as Darius II or Darius III; the singers in two sections as David prescribed | 1-26 | nehemiah/12.json `story`, `historical`, `cultural` | Repository |
+| Ezra 2:2; 1 Chronicles 25:1 | 1-26 | nehemiah/12.json `cultural` (1 Chronicles 15-16; 25); BSB | Repository; BSB text |
+| Lists running past Nehemiah: compiled from sources after his death; the memoir his; Ezra credited by some with the compiling; Darius II and a generation's updating; the Bible not claiming every line his | 1-26 `hard` | nehemiah/12.json `hard` | Repository |
+| The high point; dedication as a religious act, chanukkah; purification of priests, people, gates and wall; the two choirs, Ezra leading and Nehemiah following; joy five times in verse 43; heard from afar and the neighbors who mocked; Ezra 3's sound of joy and weeping | 27-43 | nehemiah/12.json `story`, `cultural`, `literary`, `words` (chanukkah, todah, simchah, taher); ezra/3.json `literary` | Repository |
+| Psalm 147:2; Ezra 3:13 | 27-43 | psalms/plain/147.json (Nehemiah 12:27); BSB | Repository; BSB text |
+| The storerooms and the portions for those without land; David and Asaph; Zerubbabel and Nehemiah side by side; chapter 13's slip | 44-47 | nehemiah/12.json `cultural`, `literary`; BSB | Repository; BSB text |
+| Numbers 18:21; Malachi 3:10 | 44-47 | nehemiah/13.json `historical` (Malachi 3:8-10); BSB | Repository; BSB text |
+
+Cut in chapter 12: the deep note's lines to Christ (John 2:19-21, Revelation 21:22, Hebrews 7:23-25; the note calls them thematic); Psalm 122 (not needed).
