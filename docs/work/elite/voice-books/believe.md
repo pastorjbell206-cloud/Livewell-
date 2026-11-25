@@ -30,7 +30,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Chapter 5: If God Is Good, Why Is There So Much Suffering? | 3,640 | 3,640 | +0.0% | 38 (10.4) | 3 (0.8) | 104 (28.6) | 70 (19.2) | 28 | PASS |
 | Chapter 6: How Could a Loving God Send People to Hell? | 3,493 | 3,493 | +0.0% | 62 (17.7) | 4 (1.1) | 118 (33.8) | 63 (18.0) | 40 | PASS |
 | Chapter 7: Christianity and Science | 2,269 | 2,269 | +0.0% | 26 (11.5) | 1 (0.4) | 63 (27.8) | 38 (16.7) | 20 | PASS |
-| **All 8** | 26,198 | 26,198 | +0.0% | 342 (13.1) | 22 (0.8) | 761 (29.0) | 459 (17.5) | 248 | |
+| Chapter 8: What About People Who've Never Heard? | 2,701 | 2,701 | +0.0% | 35 (13.0) | 2 (0.7) | 68 (25.2) | 35 (13.0) | 24 | PASS |
+| **All 9** | 28,899 | 28,899 | +0.0% | 377 (13.0) | 24 (0.8) | 829 (28.7) | 494 (17.1) | 272 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -222,3 +223,27 @@ Five pairs:
    After: They are two eyes seeing the same reality: close one and you lose depth, use both and the world becomes three-dimensional.
 
 Left alone, and why. The three positions on creation (young-earth, old-earth, evolutionary creationism) are a second-order question, and the chapter states each in its own terms and declines to choose ("Which view to hold is not the point here"). Those four paragraphs were not touched at all. The popular Galileo story and the god-of-the-gaps objection are stated before they are answered, word for word. Every name, date and title in the history of the conflict thesis is unchanged. "There is one problem. It is not true.", "The problem is not the lake. It is the net." and "The warfare is a myth. The partnership is the reality." are verdicts. One dash stays.
+
+
+## Chapter 8: What About People Who've Never Heard? (`sec09.xhtml`)
+
+Words 2,701 to 2,701. Em-dashes in his prose 35 to 2 (13.0 to 0.7 per 1,000 words). Tells 68 to 35 (25.2 to 13.0 per 1,000). Mean sentence 30.0 words to 30.0; sentences of eight words or fewer 12.2% to 12.2%; of five or fewer 7.8% to 7.8%. 24 edits; paragraphs 29 to 29. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 35 to 2, not_but 10 to 10, not_just 2 to 2, NotX.Y 2 to 2, triplet 16 to 16, intens 2 to 2, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 15 Scripture references, 0 years, 16 numbers in digits, 26 number words, proper names by count, and 26 hedge words (after: 26) compared.
+
+Five pairs:
+
+1. Before: if the God of Christianity were running that game — staking eternal destiny on whether a missionary happened through a village before the villager died — he would not be worth worshiping, and the scenario feels unjust precisely because it would be unjust.
+   After: if the God of Christianity were running that game (staking eternal destiny on whether a missionary happened through a village before the villager died), he would not be worth worshiping, and the scenario feels unjust precisely because it would be unjust.
+2. Before: The Greek is graptos — written, inscribed — and the point is that the law of God was not only handed down at Sinai on tablets of stone but etched into the human conscience itself.
+   After: The Greek is graptos (written, inscribed), and the point is that the law of God was not only handed down at Sinai on tablets of stone but etched into the human conscience itself.
+3. Before: Ruth the Moabitess, from a nation under judgment, binds herself to Naomi's God — your people shall be my people, and your God my God — and enters the line of Christ.
+   After: Ruth the Moabitess, from a nation under judgment, binds herself to Naomi's God (your people shall be my people, and your God my God) and enters the line of Christ.
+4. Before: Paul's verdict on him is the foundation of the entire doctrine of justification — he believed God, and it was counted to him as righteousness — and so Abraham was justified by faith, the same faith by which every Christian is justified.
+   After: Paul's verdict on him is the foundation of the entire doctrine of justification (he believed God, and it was counted to him as righteousness), and so Abraham was justified by faith, the same faith by which every Christian is justified.
+5. Before: And whatever he does with the one who never heard, he does in light of the cross, which is not the answer for those with the gospel only but the payment for everyone whose faith — however dim, however limited — rests on the mercy of God alone.
+   After: And whatever he does with the one who never heard, he does in light of the cross, which is not the answer for those with the gospel only but the payment for everyone whose faith, however dim, however limited, rests on the mercy of God alone.
+
+Left alone, and why. The fate of those who never heard is a question faithful Christians answer differently, and this chapter is his answer. It took punctuation only: 24 dashes recast, no word changed. The objection is granted "its full force" in his words, and the two truths he holds together (Christ the only way; God just) are word for word, as are the limits he sets on his own view ("None of this proves that anyone is saved apart from Christ; the claim is the reverse."; "This is not universalism."; "That is not a loophole."). The case for missions keeps every step. Two dashes stay.
