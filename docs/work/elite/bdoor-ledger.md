@@ -17746,3 +17746,22 @@ Cut in chapter 10: the deep note's contrast between Jehu and Jesus (John 2:17 an
 | The hard note: told in single verses; a usurper's end and not in the LORD's house; Mattan and the temple of Baal; the emphasis on covenant and peace; no warrant to overthrow a ruler by force in God's name or harm anyone over religion; no sword for the church | 13-21 `hard` | 2-kings/11.json `literary`; 2-kings/23.json `hard`; 1-kings/plain/18.json (30-40, `hard`); the brief | Repository |
 
 Cut in chapter 11: the deep note's parallels to Herod and the flight to Egypt (Matthew 2:13-18), which it calls thematic rather than predictions; Matthew's genealogy, which passes over Joash by name, is left to the book page. Two quotations first nested a speech inside a narrative quotation (11:12; 11:15), and two short exclamations (‘Treason! Treason!’) stood outside the checked quotations; all were paraphrased or recast before they reached the repository.
+
+## The plain notes on 2 Kings 12 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Joash in Jehu's seventh year, forty years, Zibiah of Beersheba (12:1); 12:2; the high places (12:3); the three kinds of money and the repairs (12:4-5, paraphrased); nothing by the twenty-third year (12:6); 12:7 (the question quoted, the order paraphrased); 12:8 | 1-8 | 2-kings/12.json `summary`; BSB | Repository; BSB text |
+| About 835 to 796 BC; Jehu and Jehoahaz; Hazael dominant; repair after covenant renewal; Athaliah's sons and the holy things (2 Chronicles 24:7); the temple over a century old; census money (Exodus 30:12-16), vow money (Leviticus 27), freewill gifts; each priest's worshipers; borrowed faith; bedeq repeated; the quiet criticism | 1-8 | 2-kings/12.json `story`, `historical`, `cultural`, `literary`, `words` (bedeq), `doctrines` (faith); bible/guides/kings-of-israel-and-judah.json (Joash 835 to 796) | Repository |
+| Haggai 1:4 | 1-8 | BSB; haggai/intro.json | BSB text; set beside a temple left in ruins |
+| The chest and its place (12:9); the counting (12:10); the supervisors and the workers (12:11-12); no vessels, all to the work (12:13-14); 12:15; the guilt and sin offering money (12:16) | 9-16 | 2-kings/12.json `summary`; BSB | Repository; BSB text |
+| No coins, weighed silver, counted and bagged; the chest as public and accountable; aron and the ark; emunah, God's faithfulness and Habakkuk 2:4; the priests' share (Leviticus 5:16; 7:7); shared work and honest stewardship | 9-16 | 2-kings/12.json `cultural`, `words` (aron, emunah), `doctrines` (church) | Repository |
+| Exodus 30:12; 2 Corinthians 8:21 | 9-16 | 2-kings/12.json `cultural` (Exodus 30:12-16); BSB | Repository; BSB text; Paul's own words on handling a gift honestly |
+| Hazael takes Gath and turns to Jerusalem (12:17); the treasures sent (12:18); the conspiracy at Beth-millo and the two names (12:20-21); Amaziah | 17-21 | 2-kings/12.json `summary`; BSB | Repository; BSB text |
+| Gath at Tell es-Safi, the siege trench and destruction layer linked to Hazael by the excavators; twenty-five miles; two uses of sacred treasures; the abrupt ending; Beth-millo and Silla uncertain | 17-21 | 2-kings/12.json `historical`, `literary` | Repository |
+| 2 Chronicles 24:21; Luke 11:51 and the identification many interpreters make | 17-21 | 2-kings/12.json `hard`, `christ` (Luke 11:51; Matthew 23:35; 2 Chronicles 24:20-22); BSB | Repository; BSB text; Jesus' own words, with the identification stated as interpreters make it |
+| The hard note: Kings' account and 2 Chronicles 24; complementary readings; Kings' selection and the wording of 12:2; the Chronicler's moral shape; other sources or theological interpretation; the shared main shape | 17-21 `hard` | 2-kings/12.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 12: the deep note's thematic links (Jesus' body as the temple, John 2:19-21; the widow at the treasury, Mark 12:41-44); Luke 11:51 is kept because Jesus names Zechariah himself. A quotation of 2 Corinthians 8:21 first dropped a comma; the check caught it before it reached the repository. No care line is needed in this chapter.
