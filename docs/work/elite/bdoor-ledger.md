@@ -19235,3 +19235,17 @@ Cut in chapter 34: the deep note's lines to Christ (the Gospels and Romans 3:26 
 | Psalm 42:8 | 9-16 | the notes setting Psalm 42:8 beside Job 35:10; BSB | Repository; BSB text |
 
 Cut in chapter 35: the deep note's lines to Christ (Acts 17:25, Mark 14:26 and the cross; the note calls the link thematic).
+
+## The plain notes on Job 36 (2026-11-25)
+
+`client/public/bible/notes/job/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The fourth and longest speech; its themes gathered; the claim of verse 4 read as arrogance or as soundness (37:16); verse 15 as the heart; chains and captivity in war or for debt | 1-15 | job/36.json `story`, `cultural`, `historical`, `words` (oni, musar) | Repository; each reading in its holders' terms |
+| Psalm 119:71 | 1-15 | job/36.json `hard`; BSB | Repository; BSB text |
+| Verses 16-20 notoriously difficult; the pointed application to Job; verse 17 as the friends' charge | 16-21 | job/36.json `literary` | Repository |
+| The hard note: teaching through affliction, true in many lives; the danger of a universal explanation; the prologue; no one entitled to tell another sufferer God's lesson | 16-21 | job/36.json `hard` | Repository |
+| Two cries of greatness and two panels; the rainy season and hunger; the storm that terrifies and feeds; the storm gathering toward chapter 38 | 22-33 | job/36.json `literary`, `historical`, `story` | Repository |
+
+Cut in chapter 36: the deep note's lines to Christ (Hebrews 12:5-11 and 5:8; the note says Elihu is not speaking of the Messiah); the meaning of qedeshim in verse 14 (not needed for plain words, and the scholarly question is left in the deep note).
