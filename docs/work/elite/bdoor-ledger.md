@@ -18936,3 +18936,19 @@ Cut in chapter 13: the deep note's contrast between Uzzah and those who touched 
 | 2 Samuel 5:21 (its last clause); Deuteronomy 7:5 (its last clause) | 8-17 | 1-chronicles/14.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 14: the deep note's line from David's asking to Jesus' prayer and John 5:19, which it calls a pattern. The note's point that 2 Samuel 5:25 reads Geba is left out, since the BSB of 2 Samuel itself reads Gibeon there. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 15 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The houses, place and tent (15:1); 15:2; the assembly by clans (15:3-11); consecration (15:12); 15:13; 15:14 (its first clause); 15:15 (to 'commanded'); 15:16 (its phrase); the singers, instruments, Chenaniah, gatekeepers and trumpets (15:17-24) | 1-24 | 1-chronicles/15.json `summary`, `outline`; BSB | Repository; BSB text |
+| The difference between the attempts; the new cart and 1 Samuel 6; the law (Numbers 4; 7:9; 4:15); Levites and priests; mishpat; darash and 10:14; qadash; the lists as evidence; Alamoth and Sheminith (Psalm 46; Psalms 6 and 12), uncertain | 1-24 | 1-chronicles/15.json `story`, `cultural`, `literary`, `words` (mishpat, qadash, darash) | Repository |
+| Numbers 7:9 (its last clause) | 1-24 | 1-chronicles/15.json `cultural` (Numbers 7:9); BSB | Repository; BSB text |
+| The hard note: Uzzah's death felt as harsh; David's verdict (15:13); the whole leadership; the known penalty; a founding moment and Leviticus 10; responsibility taken | 1-24 `hard` | 1-chronicles/15.json `hard` | Repository; the readings in their holders' terms |
+| 15:25; 15:26 (its first clause) and the sacrifices; the linen robe and ephod (15:27); 15:28 (its first clause) and the instruments; 15:29 | 25-29 | 1-chronicles/15.json `summary`; BSB | Repository; BSB text |
+| Jerusalem as religious center; the tabernacle at Gibeon (16:39); the first readers after the exile and their roots; simchah; the ephod as taking part, not priesthood; 2 Samuel 6:16 kept and 6:20-23 left out; contempt from Saul's house | 25-29 | 1-chronicles/15.json `historical`, `cultural`, `literary`, `words` (simchah) | Repository |
+| 2 Samuel 6:14 (its last clause); Psalm 100:2 | 25-29 | 1-chronicles/15.json `literary`; BSB | Repository; BSB text |
+
+Cut in chapter 15: the deep note's lines to John 1:14 and Hebrews' high priest, which it calls thematic and typological. A first-person gloss in the questions was rewritten before it reached the repository. No care line is needed in this chapter.
