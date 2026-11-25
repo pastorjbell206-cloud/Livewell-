@@ -20584,3 +20584,19 @@ Cut in chapter 3: the deep note's lines to Christ (Jesus as the Son who learned 
 | Deuteronomy 5:32 (its last clause); Hebrews 12:13 | 20-27 | the chapter data's cross-references for 4:27 (Deuteronomy 5:32) and 4:26 (Hebrews 12:13); hebrews/plain/12.json (12-17 `ot`: ‘Verse 13 echoes Proverbs’); BSB | Repository; BSB text; the New Testament's own echo |
 
 Cut in chapter 4: the deep note's lines to Christ (Luke 2:52 as the language of Proverbs used of the boy Jesus; Mark 7:20-23 as a direct echo of verse 23; Jesus as the light of the world, John 8:12, set beside verse 18; the note calls them thematic). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 5 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1; 5:3-4; 5:5; 5:8; vigor, years and wealth lost (5:9-10); 5:12-14 | 1-14 | BSB | BSB text |
+| Chapters 5 to 7 as the most developed practical subject; the seventh commandment; zarah, outside one's marriage whatever her nation; adultery and inheritance, property and households; Leviticus 20:10 and Deuteronomy 22:22, and Proverbs' silence on the penalty; natural consequences; the assembly at the gate; wormwood; the future self's speech as a device | 1-14 | proverbs/5.json `story`, `historical`, `cultural`, `literary`, `words` (zur, musar) | Repository |
+| Exodus 20:14; Hebrews 13:4 | 1-14 | proverbs/5.json `story` (Exodus 20:14); the chapter data's cross-references for 5:15 (Hebrews 13:4); BSB | Repository; BSB text |
+| The hard note: addressed to a son; the frame, not a claim of guilt; the weight on the young man (verse 8; verses 21-23); hard words for violent and deceitful men; wise women and chapter 31; the warning applied both ways; protecting marriages and households | 1-14 `hard` | proverbs/5.json `hard` | Repository |
+| 5:15; the springs (5:16); 5:17; 5:18; 5:19 paraphrased, without its explicit line (the verse holds a dash); 5:20; 5:21; 5:22; 5:23 | 15-23 | BSB | BSB text |
+| Seasonal rain, cisterns, a household's well; restraint in speaking of sexual love; a celebration as well as a warning; the wife of your youth and early marriage; the doe and fawn in love poetry; shagah in verses 19, 20 and 23; God's sight of every path; sin as a tightening cord | 15-23 | proverbs/5.json `cultural`, `literary`, `words` (shagah), `doctrines` (family, sin, attributes) | Repository |
+| Song of Songs 4:15; Ecclesiastes 9:9 (its first sentence, in part, before the dash); Job 31:4 | 15-23 | proverbs/5.json `cultural` (Song of Songs 4:12-15); the chapter data's cross-references for 5:18 (Ecclesiastes 9:9; Song 4:15) and 5:21 (Job 31:4); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (Matthew 5:27-28 as Jesus deepening this chapter; Ephesians 5:25-32 and Christ the bridegroom set beside the husband's faithfulness; Hosea 2 and 3; 1 Corinthians 6:9-11 set beside those who have walked this path). Verse 19 is told with restraint, not quoted in full. No care line is needed in this chapter.
