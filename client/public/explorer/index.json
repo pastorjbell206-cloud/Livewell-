@@ -1467,6 +1467,24 @@
       "book": "matthew"
     },
     {
+      "slug": "book-mark",
+      "title": "Mark: the story at a run",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The shortest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Mark as a whole book: its speed, its hinge at Peter's answer, the question of who Jesus is, the way of the cross, failure and grace, the centurion at the cross, and where to begin."
+      },
+      "mark": "book-mark",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "mark"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

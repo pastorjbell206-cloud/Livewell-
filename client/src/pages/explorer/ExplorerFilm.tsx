@@ -333,6 +333,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole Gospel of Matthew in seven moving pictures: what it is, its five great blocks of teaching, promises kept, the kingdom of heaven, who Jesus is, Israel and all nations, and where to start reading.",
     },
+    "book-mark": {
+      title: "Mark: the story at a run: Bible Explorer",
+      description:
+        "The whole Gospel of Mark in seven moving pictures: what it is, its two halves, the question of who Jesus is, the way of the cross, friends who fail, the centurion at the cross, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

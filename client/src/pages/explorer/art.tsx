@@ -871,6 +871,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M52,10l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
     </>
   ),
+  /* Mark: a fishing boat on the lake, and a gold sun. */
+  "book-mark": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M62,26a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M62,26a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M44,66V26M44,30L62,36" />
+      <Shape d="M44,32C50,40 50,54 44,62Z" off={0.8} />
+      <Shape d="M14,66C26,80 68,80 82,64L76,62H20Z" tone="c" off={1} />
+      <path className="pl-f" d="M12,76q5,-4 10,0t10,0M40,80q5,-4 10,0t10,0M68,76q5,-4 10,0t10,0" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

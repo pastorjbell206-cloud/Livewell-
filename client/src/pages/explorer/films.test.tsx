@@ -1719,6 +1719,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-proverbs",
     "book-isaiah",
     "book-matthew",
+    "book-mark",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2204,6 +2205,27 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.care).toBe(filmFile("the-king").care);
     expect(f.frames.map(fr2 => fr2.still).join(" ")).not.toMatch(
       /\bcross\b|blood/i
+    );
+  });
+
+  it("Mark, Luke and the other Gospel films draw no cross, blame no people, and carry the cross's care line", () => {
+    for (const slug of ["book-mark", "book-luke"]) {
+      if (!READY.some(f => f.slug === slug)) continue;
+      const f = filmFile(slug);
+      expect(f.care, slug).toBe(filmFile("the-king").care);
+      expect(f.frames.map(fr => fr.still).join(" "), slug).not.toMatch(
+        /\bcross\b|blood|nail/i
+      );
+      expect(captions(f), slug).not.toMatch(
+        /\bthe Jews\b|Jews (killed|murdered|crucified)|Jewish leaders killed/i
+      );
+    }
+    const mark = filmFile("book-mark");
+    expect(text(mark)).toContain(
+      "the message at the tomb names Peter in particular"
+    );
+    expect(text(mark)).toContain(
+      "The oldest complete copies end with the women at the tomb."
     );
   });
 });
