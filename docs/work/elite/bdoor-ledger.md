@@ -19766,3 +19766,18 @@ Cut in chapter 23: the deep note's lines to Colossians 2:9, John 1:14, 1 Peter 2
 | Proverbs 16:33 | 20-31 | BSB | BSB text |
 
 Cut in chapter 24: the deep note's contrast with Hebrews 7:23-27, which does not cite this chapter. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 25 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 25:1 (its phrase); the fathers under the king (25:2-3, 6); 25:3 (its clause); 25:5 (its phrases); 25:7 (its phrase) | 1-7 | BSB | BSB text |
+| Building on chapters 15 and 16; sacrifice and song; the three clans (6:31-47); the psalm headings (Psalm 50; 73-83; 88; 39, 62, 77); Jeduthun as Ethan; the headings and the guilds; prophesy's wider range (1 Samuel 10:5-6; 2 Kings 3:15); chozeh and Gad; a large family as honor; the nine names of 25:4 read as a prayer, given in paraphrase, and the debate | 1-7 | 1-chronicles/25.json `historical`, `cultural`, `literary`, `words` (naba, chozeh) | Repository |
+| Ezra 3:10 (its clause); 2 Kings 3:15 (its first sentence) | 1-7 | BSB | BSB text |
+| 25:8; the twenty-four lots (25:9-31); 25:31 (its words before the dash) | 8-31 | BSB | BSB text |
+| One formula twenty-four times; 288; matching chapter 24; the lot and rank; singers of Asaph after the exile (Ezra 2:41; 3:10) | 8-31 | 1-chronicles/25.json `historical`, `cultural`, `literary`, `words` (goral) | Repository |
+| Ezra 2:41 | 8-31 | BSB | BSB text |
+
+Cut in chapter 25: the deep note's lines to Ephesians 5:18-19 and Colossians 3:16 and the church's reading of these psalms, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
