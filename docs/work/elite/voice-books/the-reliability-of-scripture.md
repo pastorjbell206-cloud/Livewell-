@@ -55,7 +55,11 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Twenty-Eight: The Church Under Pressure — How Persecution Tested and Confirmed the Text | 620 | 620 | +0.0% | 7 (11.3) | 0 (0.0) | 15 (24.2) | 8 (12.9) | 6 | PASS |
 | Chapter Twenty-Nine: What Kind of Book Is This? — The Unity of Scripture | 845 | 845 | +0.0% | 16 (18.9) | 0 (0.0) | 24 (28.4) | 8 (9.5) | 12 | PASS |
 | Chapter Thirty: The Reader in the Story — Why This Matters for Your Life | 707 | 707 | +0.0% | 15 (21.2) | 0 (0.0) | 27 (38.2) | 13 (18.4) | 12 | PASS |
-| **All 31** | 32,419 | 32,419 | +0.0% | 430 (13.3) | 2 (0.1) | 854 (26.3) | 437 (13.5) | 302 | |
+| Chapter 31: What the Scrolls in the Desert Proved | 776 | 776 | +0.0% | 13 (16.8) | 1 (1.3) | 23 (29.6) | 12 (15.5) | 7 | PASS |
+| Chapter 32: When Luke Was Wrong — and Then He Wasn't | 761 | 761 | +0.0% | 8 (10.5) | 0 (0.0) | 18 (23.7) | 10 (13.1) | 7 | PASS |
+| Chapter 33: The Problem of Alleged Contradictions | 836 | 836 | +0.0% | 9 (10.8) | 0 (0.0) | 22 (26.3) | 14 (16.7) | 7 | PASS |
+| Chapter 34: Why Scribes Changed the Text — and What They Changed | 802 | 802 | +0.0% | 11 (13.7) | 0 (0.0) | 29 (36.2) | 18 (22.4) | 7 | PASS |
+| **All 35** | 35,594 | 35,594 | +0.0% | 471 (13.2) | 3 (0.1) | 946 (26.6) | 491 (13.8) | 330 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -733,3 +737,91 @@ Five pairs, taken at even intervals through the chapter:
    After: This is why the reliability of Scripture, which we have argued for at length on historical and textual grounds, also has a phenomenological dimension: the dimension of lived testimony.
 5. Before: A story — the ongoing story of a God who made the world and will not give it up, who entered it in human flesh and changed everything, and who continues to call people into the story by speaking through the text that has survived every century's attempts to silence it.
    After: A story: the ongoing story of a God who made the world and will not give it up, who entered it in human flesh and changed everything, and who continues to call people into the story by speaking through the text that has survived every century's attempts to silence it.
+
+
+## Chapter 31: What the Scrolls in the Desert Proved (`sec32.xhtml`)
+
+Words 776 to 776. Em-dashes in his prose 13 to 1 (16.8 to 1.3 per 1,000 words). Tells 23 to 12 (29.6 to 15.5 per 1,000). Mean sentence 21.5 words to 21.5; sentences of eight words or fewer 25.0% to 25.0%; of five or fewer 19.4% to 19.4%. 7 edits; paragraphs 8 to 8. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 13 to 1, not_just 1 to 1, NotX.Y 2 to 2, triplet 4 to 5, anaphora 2 to 2, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 1 quoted strings, 4 Scripture references, 3 years, 13 numbers in digits, 22 number words, proper names by count, and 17 hedge words (after: 17) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Eventually word reached scholars, and eventually scholars reached the caves, and what came out of those caves — nearly 900 documents, fragments of approximately 220 different manuscripts, recovered across eleven separate caves over the next decade — is the most significant manuscript discovery in the history of biblical scholarship.
+   After: Eventually word reached scholars, and eventually scholars reached the caves, and what came out of those caves (nearly 900 documents, fragments of approximately 220 different manuscripts, recovered across eleven separate caves over the next decade) is the most significant manuscript discovery in the history of biblical scholarship.
+2. Before: The Great Isaiah Scroll — found in Cave 1, dated by paleographic analysis to approximately 125 BC — is essentially the same text as the medieval Masoretic Isaiah that had been the basis of every Old Testament translation for centuries.
+   After: The Great Isaiah Scroll (found in Cave 1, dated by paleographic analysis to approximately 125 BC) is essentially the same text as the medieval Masoretic Isaiah that had been the basis of every Old Testament translation for centuries.
+3. Before: a text copied and recopied by hand for eleven centuries, across political upheavals and dispersions and persecutions and the destruction of the Temple, arrived at 1008 AD in essentially the same condition it existed in 125 BC, because the copyists — the Masoretes, who developed elaborate counting systems to catch every error — had done their work with extraordinary fidelity.
+   After: a text copied and recopied by hand for eleven centuries, across political upheavals and dispersions and persecutions and the destruction of the Temple, arrived at 1008 AD in essentially the same condition it existed in 125 BC, because the copyists (the Masoretes, who developed elaborate counting systems to catch every error) had done their work with extraordinary fidelity.
+4. Before: But the variants in Isaiah are minor — spelling, minor phrasing, occasional transpositions — nothing that affects doctrine, nothing that affects the storyline, nothing that changes the meaning of a single significant passage.
+   After: But the variants in Isaiah are minor (spelling, minor phrasing, occasional transpositions), nothing that affects doctrine, nothing that affects the storyline, nothing that changes the meaning of a single significant passage.
+5. Before: And what they show us is that the early Christian movement's reading of the Old Testament — the claim that Jesus fulfilled the messianic prophecies — was not an invented retrospective reading imposed centuries later.
+   After: And what they show us is that the early Christian movement's reading of the Old Testament (the claim that Jesus fulfilled the messianic prophecies) was not an invented retrospective reading imposed centuries later.
+
+
+## Chapter 32: When Luke Was Wrong — and Then He Wasn't (`sec33.xhtml`)
+
+Words 761 to 761. Em-dashes in his prose 8 to 0 (10.5 to 0.0 per 1,000 words). Tells 18 to 10 (23.7 to 13.1 per 1,000). Mean sentence 18.5 words to 18.5; sentences of eight words or fewer 41.5% to 41.5%; of five or fewer 22.0% to 22.0%. 7 edits; paragraphs 11 to 11. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 8 to 0, NotX.Y 1 to 1, triplet 1 to 1, anaphora 1 to 1, intens 1 to 1, short_close 6 to 6.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 3 quoted strings, 24 Scripture references, 0 years, 6 numbers in digits, 23 number words, proper names by count, and 11 hedge words (after: 11) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: He planned to prove Luke unreliable through archaeology — to dig up the evidence, examine it against Luke's claims, and demonstrate conclusively that Luke was not a first-rate historian.
+   After: He planned to prove Luke unreliable through archaeology: to dig up the evidence, examine it against Luke's claims, and demonstrate conclusively that Luke was not a first-rate historian.
+2. Before: Consider the title "politarch," meaning ruler of the city, which Luke uses in Acts 17:6 for the officials in Thessalonica — a title critics said Luke had invented.
+   After: Consider the title "politarch," meaning ruler of the city, which Luke uses in Acts 17:6 for the officials in Thessalonica, a title critics said Luke had invented.
+3. Before: The precise sequence of Roman administrative titles Luke uses across Acts — proconsul, propraetor, praetor, tetrarch — matched the administrative structures of the specific provinces he described at the specific times he describes them, in a period when those structures were in constant flux.
+   After: The precise sequence of Roman administrative titles Luke uses across Acts (proconsul, propraetor, praetor, tetrarch) matched the administrative structures of the specific provinces he described at the specific times he describes them, in a period when those structures were in constant flux.
+4. Before: That is not a small claim from a rigorous archaeologist who had begun as a skeptic and followed the evidence to a different conclusion — Ramsay was not a credulous believer looking to confirm his faith.
+   After: That is not a small claim from a rigorous archaeologist who had begun as a skeptic and followed the evidence to a different conclusion; Ramsay was not a credulous believer looking to confirm his faith.
+5. Before: Not that Luke was divinely inspired — that is a theological claim.
+   After: Not that Luke was divinely inspired; that is a theological claim.
+
+
+## Chapter 33: The Problem of Alleged Contradictions (`sec34.xhtml`)
+
+Words 836 to 836. Em-dashes in his prose 9 to 0 (10.8 to 0.0 per 1,000 words). Tells 22 to 14 (26.3 to 16.7 per 1,000). Mean sentence 20.3 words to 20.3; sentences of eight words or fewer 19.5% to 19.5%; of five or fewer 4.9% to 4.9%. 7 edits; paragraphs 10 to 10. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 9 to 0, isnt_its 2 to 2, triplet 1 to 1, stock 3 to 3, intens 5 to 5, colon_reveal 0 to 1, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 15 Scripture references, 0 years, 4 numbers in digits, 20 number words, proper names by count, and 15 hedge words (after: 15) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: You know the one — it circulates online, in skeptical forums, in books written to dismantle faith, sometimes fifty items long, sometimes a hundred, sometimes three hundred, all of it building toward a single devastating implication:
+   After: You know the one: it circulates online, in skeptical forums, in books written to dismantle faith, sometimes fifty items long, sometimes a hundred, sometimes three hundred, all of it building toward a single devastating implication:
+2. Before: When Matthew and Luke give different genealogies for Jesus, they are tracing different lines — Matthew the legal lineage through Joseph, Luke the biological lineage through Mary, or Matthew Joseph's line and Luke a collateral one.
+   After: When Matthew and Luke give different genealogies for Jesus, they are tracing different lines: Matthew the legal lineage through Joseph, Luke the biological lineage through Mary, or Matthew Joseph's line and Luke a collateral one.
+3. Before: The numbers in Chronicles and Kings sometimes differ from one another — and this is real.
+   After: The numbers in Chronicles and Kings sometimes differ from one another, and this is real.
+4. Before: The inspired original — what scholars call the autograph — is what the doctrine of inerrancy describes; the transmission is what the discipline of textual criticism addresses.
+   After: The inspired original (what scholars call the autograph) is what the doctrine of inerrancy describes; the transmission is what the discipline of textual criticism addresses.
+5. Before: Every ancient document of any complexity has difficult passages, and the difficulty of a passage does not mean the document is false — it means the reader has more work to do.
+   After: Every ancient document of any complexity has difficult passages, and the difficulty of a passage does not mean the document is false; it means the reader has more work to do.
+
+
+## Chapter 34: Why Scribes Changed the Text — and What They Changed (`sec35.xhtml`)
+
+Words 802 to 802. Em-dashes in his prose 11 to 0 (13.7 to 0.0 per 1,000 words). Tells 29 to 18 (36.2 to 22.4 per 1,000). Mean sentence 19.1 words to 19.1; sentences of eight words or fewer 33.3% to 33.3%; of five or fewer 26.2% to 26.2%. 7 edits; paragraphs 11 to 11. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 11 to 0, isnt_its 1 to 1, triplet 6 to 6, anaphora 3 to 3, stock 3 to 3, intens 2 to 2, short_close 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 8 Scripture references, 0 years, 7 numbers in digits, 9 number words, proper names by count, and 17 hedge words (after: 17) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: This is the popular version of the claim, and it generates real anxiety in people who have never thought about textual criticism — which is most people.
+   After: This is the popular version of the claim, and it generates real anxiety in people who have never thought about textual criticism, which is most people.
+2. Before: This finding is not a crisis; it is the textual tradition working as it should — preserving the early evidence, allowing scholars to identify later additions, and giving the reader access to the full picture.
+   After: This finding is not a crisis; it is the textual tradition working as it should: preserving the early evidence, allowing scholars to identify later additions, and giving the reader access to the full picture.
+3. Before: The story is absent from the earliest manuscripts, and it appears in different places in different manuscript traditions — some insert it after Luke 21:38 rather than in John — so the evidence strongly suggests it was not in John's original Gospel.
+   After: The story is absent from the earliest manuscripts, and it appears in different places in different manuscript traditions (some insert it after Luke 21:38 rather than in John), so the evidence strongly suggests it was not in John's original Gospel.
+4. Before: When scholars identify likely scribal changes — additions, harmonizations, theological adjustments — those findings actually demonstrate the reliability of the textual tradition, not its corruption.
+   After: When scholars identify likely scribal changes (additions, harmonizations, theological adjustments), those findings actually demonstrate the reliability of the textual tradition, not its corruption.
+5. Before: The deity of Christ, the resurrection, the atonement, the commands of Jesus, the mission of the church — none of these depend on the longer ending of Mark, or the Pericope Adulterae, or the Comma Johanneum, the disputed Trinitarian formula in 1 John 5:7-8.
+   After: The deity of Christ, the resurrection, the atonement, the commands of Jesus, the mission of the church: none of these depend on the longer ending of Mark, or the Pericope Adulterae, or the Comma Johanneum, the disputed Trinitarian formula in 1 John 5:7-8.
