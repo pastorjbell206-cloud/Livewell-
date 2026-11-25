@@ -1695,6 +1695,116 @@
     }
    ]
   },
+  "book-acts": {
+   "title": {
+    "file": "book-acts/title.mp3",
+    "hash": "e2195977bf71736ce19e",
+    "seconds": 2.61,
+    "bytes": 16196
+   },
+   "younger": [
+    {
+     "id": "next",
+     "file": "book-acts/younger/01-next.mp3",
+     "hash": "2b52a7d880eb4f67d7ca",
+     "seconds": 26.46,
+     "bytes": 159332
+    },
+    {
+     "id": "layout",
+     "file": "book-acts/younger/02-layout.mp3",
+     "hash": "ae178d41e1ecaca1d7d6",
+     "seconds": 25.23,
+     "bytes": 151988
+    },
+    {
+     "id": "spirit",
+     "file": "book-acts/younger/03-spirit.mp3",
+     "hash": "92a9956eca88cdb158e2",
+     "seconds": 23.29,
+     "bytes": 140324
+    },
+    {
+     "id": "witness",
+     "file": "book-acts/younger/04-witness.mp3",
+     "hash": "6efad37a7c1ec823b4c6",
+     "seconds": 25.37,
+     "bytes": 152852
+    },
+    {
+     "id": "lines",
+     "file": "book-acts/younger/05-lines.mp3",
+     "hash": "44b2b6105478aaacf36e",
+     "seconds": 25.08,
+     "bytes": 150980
+    },
+    {
+     "id": "paul",
+     "file": "book-acts/younger/06-paul.mp3",
+     "hash": "9c695c7fb3aecae1d741",
+     "seconds": 27.45,
+     "bytes": 165236
+    },
+    {
+     "id": "start",
+     "file": "book-acts/younger/07-start.mp3",
+     "hash": "1a0b3e94846ca587fa7d",
+     "seconds": 23.68,
+     "bytes": 142628
+    }
+   ],
+   "older": [
+    {
+     "id": "next",
+     "file": "book-acts/older/01-next.mp3",
+     "hash": "c278b424213c643b7556",
+     "seconds": 26.71,
+     "bytes": 160772
+    },
+    {
+     "id": "layout",
+     "file": "book-acts/older/02-layout.mp3",
+     "hash": "811e6073b79e0d15bf72",
+     "seconds": 23.77,
+     "bytes": 143204
+    },
+    {
+     "id": "spirit",
+     "file": "book-acts/older/03-spirit.mp3",
+     "hash": "16f940810b346fd8b56e",
+     "seconds": 26.06,
+     "bytes": 156884
+    },
+    {
+     "id": "witness",
+     "file": "book-acts/older/04-witness.mp3",
+     "hash": "8226185581d05d3b23b9",
+     "seconds": 23.9,
+     "bytes": 143924
+    },
+    {
+     "id": "lines",
+     "file": "book-acts/older/05-lines.mp3",
+     "hash": "5ea3d75abdbdb7dc779a",
+     "seconds": 29.03,
+     "bytes": 174740
+    },
+    {
+     "id": "paul",
+     "file": "book-acts/older/06-paul.mp3",
+     "hash": "c23b5dbb6fe066c7397e",
+     "seconds": 27.97,
+     "bytes": 168404
+    },
+    {
+     "id": "start",
+     "file": "book-acts/older/07-start.mp3",
+     "hash": "e3d77d4bdbd68afd54fb",
+     "seconds": 26.52,
+     "bytes": 159620
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

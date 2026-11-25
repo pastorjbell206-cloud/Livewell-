@@ -343,6 +343,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole Gospel of Luke in seven moving pictures: what it is, the long road to Jerusalem, people others passed over, the lost found, prayer, salvation today and joy, and where to start reading.",
     },
+    "book-acts": {
+      title: "Acts: to the ends of the earth: Bible Explorer",
+      description:
+        "The whole book of Acts in seven moving pictures: what it is, the road from Jerusalem to Rome, the Holy Spirit, witnesses and what it cost, every line crossed, Saul who became Paul, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

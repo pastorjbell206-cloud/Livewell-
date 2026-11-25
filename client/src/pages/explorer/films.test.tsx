@@ -1721,6 +1721,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-matthew",
     "book-mark",
     "book-luke",
+    "book-acts",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2227,6 +2228,28 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     );
     expect(text(mark)).toContain(
       "The oldest complete copies end with the women at the tomb."
+    );
+  });
+
+  it("Acts tells Stephen's death without drawing it, carries the caution at both levels, and takes no side on the Spirit's gifts", () => {
+    const f = filmFile("book-acts");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/rescue.json"), "utf8")
+    ) as { care: string };
+    expect(f.care).toBe(stop.care);
+    expect(f.differ?.text).toMatch(/takes no side/);
+    const paul = f.frames.find(x => x.id === "paul")!;
+    expect(paul.older).toContain(
+      "faith in Jesus fulfills Israel's hope and does not replace it"
+    );
+    expect(paul.younger).toContain(
+      "Jesus, Paul and all the first believers were Jews."
+    );
+    expect(captions(f)).not.toMatch(
+      /\bthe Jews\b|Jews (killed|stoned|murdered)|stoned by/i
+    );
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /ston(e|ed|es|ing)|blood|dead|bod(y|ies)|prison|chains|crowd/i
     );
   });
 });

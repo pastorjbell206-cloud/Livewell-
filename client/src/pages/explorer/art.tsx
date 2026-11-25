@@ -896,6 +896,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M40,76V84M62,76V84" />
     </>
   ),
+  /* Acts: a road running out from a city gate to the far edge, and one gold flame over the gate. */
+  "book-acts": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M14,84V56h6v-6h6v6h8v-6h6v6h6V84Z" tone="c" off={1} />
+      <path className="pl-k" d="M26,84V72c0,-8 10,-8 10,0V84Z" />
+      <path className="pl-l" d="M46,84C60,76 74,70 92,60M46,76C58,70 72,62 92,50" />
+      <path className="pl-m" d="M30,42C38,32 40,24 35,12C26,22 23,32 30,42Z" />
+      <path className="pl-l" d="M30,42C38,32 40,24 35,12C26,22 23,32 30,42Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

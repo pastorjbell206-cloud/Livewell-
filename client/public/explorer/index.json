@@ -1503,6 +1503,23 @@
       "book": "luke"
     },
     {
+      "slug": "book-acts",
+      "title": "Acts: to the ends of the earth",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book that tells what happened after Jesus rose: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Acts as a whole book: Luke's second volume, the road from Jerusalem to Rome, the Holy Spirit, witness and its cost, a gospel that crosses every line, and where to begin."
+      },
+      "mark": "book-acts",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "acts"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
