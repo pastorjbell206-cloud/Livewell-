@@ -17129,3 +17129,24 @@ Cut in chapter 1: the deep note's lines to Christ (Luke 1:68 and Jesus as the gr
 | The totals: 29,818 and 31,089 against 42,360; about half the entries differing; copying, unlisted groups (other tribes, women, those without proof), registered and arrived; none certain; agreement on shape, families and total | 59-70 `hard` | ezra/2.json `hard`, `historical`; bible/guides/reading-genealogies.json | Repository; the explanations in their holders' terms |
 
 Cut in chapter 2: the deep note's link from the uncertain priests to believers' names written in heaven and to Jesus as a priest by the power of an indestructible life (it calls the link thematic, not a line the New Testament draws to this chapter); Barzillai the Gileadite of verse 61 set beside David's friend in 2 Samuel 17 and 19 (a likeness the repository's notes do not draw); the conversion of the darics and minas into modern weights (not needed).
+
+## The plain notes on Ezra 3 (2026-11-25)
+
+`client/public/bible/notes/ezra/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The seventh month, Tishri, in September and October, probably 538 or 537 BC, the season of the autumn feasts | 1-6 | ezra/3.json `historical` | Repository |
+| About fifty years without regular sacrifice as the law commanded; the altar first; the community defined by worship | 1-6 | ezra/3.json `story` | Repository |
+| The morning and evening burnt offerings as the heartbeat of worship, Israel offering itself daily; Tabernacles as seven days in shelters remembering the wilderness, its sacrifices numbered for each day | 1-6 | ezra/3.json `cultural`; bible/guides/calendar-and-festivals.json (Tabernacles) | Repository |
+| Things done as the law had written (verses 2 and 4); Jeshua for the priesthood and Zerubbabel for David's house; the fear of verse 3 hinting at chapter 4 | 1-6 | ezra/3.json `literary`, `historical`, `story` | Repository |
+| Exodus 29:39; Numbers 29:1; Nehemiah 8:17 | 1-6 | ezra/3.json `cultural` (Exodus 29:38-42; Numbers 28 and 29), `words` (teruah: Numbers 29:1); leviticus/plain/23.json (`later`: Nehemiah 8:17); BSB | Repository; BSB text |
+| The second month of the second year, likely 537 or 536 BC | 7-9 | ezra/3.json `historical` | Repository |
+| The echo of Solomon's building: Tyre and Sidon paid in food and oil for cedar floated down the coast, the route to Joppa; Levites from twenty years (Chronicles) and singers as David prescribed; rebuilding on the old foundations; Cyrus's authorization | 7-9 | ezra/3.json `cultural`; BSB | Repository; BSB text |
+| 1 Kings 5:9; 2 Chronicles 2:16; 1 Kings 6:1 | 7-9 | ezra/3.json `cultural` (1 Kings 5:6-11; 2 Chronicles 2:16); BSB (1 Kings 6:1, the second month) | Repository; BSB text |
+| The refrain of verse 11 in Psalms 106, 107, 118 and 136, at the ark's coming and at Solomon's dedication; chesed as covenant love to the unfaithful; teruah as war cry, trumpet blast and shout of praise | 10-13 | ezra/3.json `literary`, `words` (chesed, teruah) | Repository |
+| The old men who had seen the first temple, burned about fifty years before; the two sounds together and heard from afar; chapter 4 showing who heard it | 10-13 | ezra/3.json `literary`, `story`; ezra/4.json `story` | Repository |
+| 2 Chronicles 5:13; Haggai 2:3 and 2:9; Zechariah 4:10 | 10-13 | ezra/3.json `literary` (2 Chronicles 5:13), `christ` (Haggai 2:9); bible/doctrines/exile.json (Haggai 2:3); BSB | Repository; BSB text |
+| Who laid the foundation: the second year under Zerubbabel and Jeshua; Sheshbazzar in 5:16; Haggai 2:18 and Zechariah 4:9 in 520 BC; work from different periods drawn together, or Sheshbazzar and Zerubbabel together with a fresh start in 520 BC; yasad as founding or restoring | 10-13 `hard` | ezra/3.json `historical`, `words` (yasad) | Repository; the readings in their holders' terms |
+
+Cut in chapter 3: the deep note's lines to Christ (John 1:14 and 2:19-21 set beside the second temple, and Hebrews 10:11-14 beside the daily sacrifices; the note calls them connections of fulfillment, not lines the New Testament draws to this chapter); the exact verses of 1 Chronicles 23 for the Levites' age (the pattern is named without quoting it); the phrase ‘as it is written’ quoted as a repeated refrain (verse 4 words it differently, so the note says it in plain words instead).
