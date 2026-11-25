@@ -20728,3 +20728,24 @@ Cut in chapter 11: nothing further; the New Testament line kept is Matthew 2:15.
 | Leviticus 19:35-36; Deuteronomy 25:13-16; Genesis 29:20 paraphrased; Deuteronomy 18:15 (its first sentence) | 7-14 | hosea/12.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 12: the deep note's lines to John 1:51 and Acts 3:22, which the New Testament does not draw from this chapter; Deuteronomy 18:15 is given in its own place as the law's word about a prophet like Moses. Jacob's blessing at the Jabbok is told without the bless family of words.
+
+## The plain notes on Hosea 13 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 13:1; 13:2-3 paraphrased (13:2's inner quotation not quoted); 13:4; 13:5 paraphrased; 13:6; 13:7-8 paraphrased (the words of 13:8 not quoted) | 1-8 | BSB | BSB text |
+| Ephraim first among the tribes; Joshua and Jeroboam I; Ahab and Jezebel and Baal; kissing an idol as homage; the unclear phrase on human sacrifice, two readings; mist, dew, chaff and smoke; no chimneys; Deuteronomy 8 echoed; the wilderness and the pasture; lion, leopard and bear; the robbed mother bear proverbial | 1-8 | hosea/13.json `historical`, `cultural`, `literary` | Repository; both readings of 13:2 in their holders' terms |
+| Deuteronomy 8:14 (its clause); Isaiah 43:11 (after its first words) | 1-8 | hosea/13.json `literary`; BSB | Repository; BSB text |
+| 13:9 (its first sentence); 13:10 paraphrased (its inner quotation not quoted); 13:11; 13:12-13 paraphrased; 13:14 | 9-14 | BSB | BSB text |
+| A king and princes and 1 Samuel 8; the turnover of kings; kings given in anger and taken in wrath; the child who does not come to birth; Sheol; 13:14 set between judgments | 9-14 | hosea/13.json `historical`, `literary`, `cultural` | Repository |
+| 1 Samuel 8:5 (its clause); 1 Corinthians 15:55 and the Greek form | 9-14 | hosea/13.json `historical`, `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| The hard note: promises or questions; the BSB's reading and the threatening reading; the last line and the context; Hosea's turns to hope (11:8-9; 14:4) and Paul; both held together; the church hearing good news | 9-14 `hard` | hosea/13.json `hard` | Repository; the readings in their holders' terms |
+| 13:15 paraphrased; 13:16 (its first two sentences); the rest of 13:16 named and not quoted or described | 15-16 | BSB | BSB text; the atrocities named, not described |
+| The east wind; 13:16 numbered 14:1 in Hebrew; the fall in 722 BC after about three years under Shalmaneser V, deportations under Sargon II; the guide's 723 or 722 (Thiele); such cruelties common in conquest and named as crimes by the prophets | 15-16 | hosea/13.json `historical`; bible/guides/kings-of-israel-and-judah.json (Hoshea 732/731 to 723/722) | Repository. Sources differ and the note says so |
+| 2 Kings 17:6 (its first clause); Amos 1:13 named | 15-16 | BSB | BSB text |
+| The hard note: not approving; a theological reading of a political disaster; Israel's own Scripture; no warrant to call any people's suffering deserved or to point it at anyone; never a reason to blame the Jewish people | 15-16 `hard` | the brief; 2-kings/plain/17.json `hard` (the same handling) | Repository; stated as the brief asks |
+| The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 15-16 `hard` | genesis/plain/6.json; 2-kings/plain/17.json and 25.json | Reused whole, word for word; Find Help named; no phone number |
+
+Cut in chapter 13: the deep note's line that naming Jesus as Savior confesses him one with the God of Israel, which the New Testament does not draw from this chapter. The cruelties of 13:16 and the words of 13:8 are named and not quoted.
