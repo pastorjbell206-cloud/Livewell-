@@ -20600,3 +20600,22 @@ Cut in chapter 4: the deep note's lines to Christ (Luke 2:52 as the language of 
 | Song of Songs 4:15; Ecclesiastes 9:9 (its first sentence, in part, before the dash); Job 31:4 | 15-23 | proverbs/5.json `cultural` (Song of Songs 4:12-15); the chapter data's cross-references for 5:18 (Ecclesiastes 9:9; Song 4:15) and 5:21 (Job 31:4); BSB | Repository; BSB text |
 
 Cut in chapter 5: the deep note's lines to Christ (Matthew 5:27-28 as Jesus deepening this chapter; Ephesians 5:25-32 and Christ the bridegroom set beside the husband's faithfulness; Hosea 2 and 3; 1 Corinthians 6:9-11 set beside those who have walked this path). Verse 19 is told with restraint, not quoted in full. No care line is needed in this chapter.
+
+## The plain notes on Proverbs 6 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1; trapped by words (6:2); 6:3 (its last sentence); 6:5; 6:6; no commander (6:7); 6:8; 6:9; 6:10-11 | 1-11 | BSB | BSB text |
+| The chapter stepping aside to money, work and speech; security and what a guarantor could lose; striking hands as sealing a contract; arav and 11:15, 17:18, 22:26-27; no interest from the poor and the cloak by nightfall; harvester ants and their stores; no overseer; atsel as stock character; poverty from small choices | 1-11 | proverbs/6.json `story`, `historical`, `cultural`, `words` (arav, atsel) | Repository |
+| Deuteronomy 15:8; Proverbs 30:25; Romans 12:11 (its first clause) | 1-11 | proverbs/6.json `hard` (Deuteronomy 15:7-8); the chapter data's cross-references for 6:6 (Proverbs 30:25; Romans 12:11); BSB | Repository; BSB text |
+| The hard note: proverbs describe patterns; rash pledges, especially for a stranger; Deuteronomy 15:7-8 and Psalm 37:26; guarantees you cannot afford or made in haste; laziness often, not always, leading to want; 13:23; kindness to the poor; no hardening against people in need | 1-11 `hard` | proverbs/6.json `hard` | Repository |
+| 6:12-13; 6:14; sudden ruin (6:15); 6:16; 6:17-19 | 12-19 | BSB | BSB text |
+| Gestures as signals of mockery or plotting; the numerical pattern in Proverbs and the prophets (Amos 1 and 2); the list down the body to the false witness and the climax tying back to verse 14; to'evah and its use in the law; pride, lying and division as offenses against God | 12-19 | proverbs/6.json `cultural`, `literary`, `story`, `words` (to'evah) | Repository |
+| Amos 1:3 (its quoted words, in part); Exodus 20:16 | 12-19 | proverbs/6.json `literary` (Amos 1 and 2); the ninth commandment; BSB | BSB text |
+| 6:20; binding (6:21); 6:22; 6:23 (in part); 6:25; 6:27-28; 6:29; the thief (6:30-31); 6:32; wounds, disgrace and a husband's fury (6:33-35) | 20-35 | BSB | BSB text |
+| Deuteronomy 6 behind verses 21-22; the law of theft (Exodus 22:1-4); sevenfold as completeness; the thief can make restitution, the adulterer cannot; the husband's anger described, not commended | 20-35 | proverbs/6.json `historical`, `literary`; the chapter data's cross-references for 6:21 (Deuteronomy 6:8) | Repository |
+| Psalm 119:105; Exodus 22:1 (its consequence clause) | 20-35 | proverbs/6.json `doctrines` (law: Psalm 119:105), `historical` (Exodus 22:1-4); BSB | Repository; BSB text |
+
+Cut in chapter 6: the deep note's lines to Christ (Jesus as the opposite of the seven things, Ephesians 2:14-16; the false witnesses at his trial, Mark 14:55-59, set beside verse 19). No care line is needed in this chapter.
