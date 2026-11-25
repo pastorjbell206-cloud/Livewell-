@@ -19796,3 +19796,18 @@ Cut in chapter 25: the deep note's lines to Ephesians 5:18-19 and Colossians 3:1
 | 2 Chronicles 19:11 (its sentence); Joshua 6:19 | 20-32 | BSB | BSB text |
 
 Cut in chapter 26: the deep note's lines to John 10:7-9, Ephesians 2:18 and Matthew 6:19-21, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 27 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 27:1 (its last sentence); the commanders (27:2-15); 27:7 (its clause); the tribal leaders (27:16-22); 27:21 (its clause); 27:23; 27:24 | 1-24 | BSB | BSB text |
+| Chapters 23 to 27 as a pause; a working kingdom; the rotating militia; eleph and the two readings; machaloqet shared with the temple courses; the commanders among the mighty men (chapter 11; 2 Samuel 23); Asahel killed by Abner (2 Samuel 2); Jaasiel and Saul's house; Gad and Asher left out; the census recalled | 1-24 | 1-chronicles/27.json `story`, `historical`, `cultural`, `literary`, `words` (machaloqet) | Repository |
+| Genesis 15:5 (both sentences, each quoted alone) | 1-24 | BSB | BSB text |
+| The stewards (27:25-31); 27:32 (its second clause, the first paraphrased); 27:33 (its second sentence, the first paraphrased); 27:34 | 25-34 | BSB | BSB text |
+| The royal economy; the Shephelah and Sharon; Obil and Jaziz; Ahithophel and Hushai in Absalom's revolt (2 Samuel 15-17); re'a as a court position; the Book of the Chronicles of King David | 25-34 | 1-chronicles/27.json `historical`, `cultural`, `literary`, `words` (re'a, ya'ats) | Repository |
+| 2 Samuel 16:23 (its clause) | 25-34 | BSB | BSB text |
+
+Cut in chapter 27: the deep note's thematic line to the church as one body, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
