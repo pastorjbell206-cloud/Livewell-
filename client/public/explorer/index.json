@@ -1474,7 +1474,19 @@
       "slug": "all-nations",
       "title": "A blessing for all nations",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God chose one family so that every family on earth could be blessed. Follow that promise from a tower left unfinished to a crowd no one can count.",
+        "older": "From Babel's scattering to the multitude before the throne: how the promise to Abraham, a blessing for all the families of the earth, runs through the whole Bible."
+      },
+      "mark": "all-nations",
+      "frames": 7,
+      "stops": [
+        "abraham",
+        "church",
+        "new-creation"
+      ],
+      "cards": []
     },
     {
       "slug": "kingdom-of-god",

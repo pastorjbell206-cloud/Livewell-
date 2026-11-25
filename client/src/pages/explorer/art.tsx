@@ -722,6 +722,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M30,66l-4,10M46,66l-4,10M62,66l-4,10" />
     </>
   ),
+  /* A blessing for all nations: three people of different dress side by side, one gold star over them. */
+  "all-nations": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M14,84C14,62 18,54 26,54C34,54 38,62 38,84Z" tone="b" off={1} />
+      <Shape d="M38,84C38,56 43,46 50,46C57,46 62,56 62,84Z" tone="c" off={1} />
+      <Shape d="M62,84C62,62 66,54 74,54C82,54 86,62 86,84Z" tone="g" off={1} />
+      <Shape d="M20,46a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM44,38a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM68,46a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" off={0.8} />
+      <path className="pl-m" d="M50,6l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
+      <path className="pl-l" d="M50,6l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

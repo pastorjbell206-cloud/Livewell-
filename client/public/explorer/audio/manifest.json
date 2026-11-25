@@ -1407,6 +1407,116 @@
     }
    ]
   },
+  "all-nations": {
+   "title": {
+    "file": "all-nations/title.mp3",
+    "hash": "bd25b03f1b863191e8ba",
+    "seconds": 2.5,
+    "bytes": 15620
+   },
+   "younger": [
+    {
+     "id": "babel",
+     "file": "all-nations/younger/01-babel.mp3",
+     "hash": "d31ca75eb2e8d427dcf7",
+     "seconds": 22.8,
+     "bytes": 137444
+    },
+    {
+     "id": "abraham",
+     "file": "all-nations/younger/02-abraham.mp3",
+     "hash": "ab545961758f28e872f0",
+     "seconds": 23.28,
+     "bytes": 140324
+    },
+    {
+     "id": "ruth",
+     "file": "all-nations/younger/03-ruth.mp3",
+     "hash": "160f14c52b6be34e548a",
+     "seconds": 24.9,
+     "bytes": 149972
+    },
+    {
+     "id": "nineveh",
+     "file": "all-nations/younger/04-nineveh.mp3",
+     "hash": "b2c4c8c69bfb0c6ab3f4",
+     "seconds": 27.84,
+     "bytes": 167684
+    },
+    {
+     "id": "magi",
+     "file": "all-nations/younger/05-magi.mp3",
+     "hash": "4a8d10c425f5cf5a309f",
+     "seconds": 23.59,
+     "bytes": 142052
+    },
+    {
+     "id": "pentecost",
+     "file": "all-nations/younger/06-pentecost.mp3",
+     "hash": "94923b4f6692c9638a47",
+     "seconds": 30.25,
+     "bytes": 182084
+    },
+    {
+     "id": "multitude",
+     "file": "all-nations/younger/07-multitude.mp3",
+     "hash": "d1205797800145f2de44",
+     "seconds": 25.56,
+     "bytes": 153860
+    }
+   ],
+   "older": [
+    {
+     "id": "babel",
+     "file": "all-nations/older/01-babel.mp3",
+     "hash": "c50979685f08b9c525ca",
+     "seconds": 22.2,
+     "bytes": 133844
+    },
+    {
+     "id": "abraham",
+     "file": "all-nations/older/02-abraham.mp3",
+     "hash": "946d24dfc058592394fb",
+     "seconds": 25.01,
+     "bytes": 150692
+    },
+    {
+     "id": "ruth",
+     "file": "all-nations/older/03-ruth.mp3",
+     "hash": "776782670e16e945da30",
+     "seconds": 24.35,
+     "bytes": 146660
+    },
+    {
+     "id": "nineveh",
+     "file": "all-nations/older/04-nineveh.mp3",
+     "hash": "fcef469a9eb3ae42b80a",
+     "seconds": 28.66,
+     "bytes": 172580
+    },
+    {
+     "id": "magi",
+     "file": "all-nations/older/05-magi.mp3",
+     "hash": "f29bcad93dc6da4df185",
+     "seconds": 25.02,
+     "bytes": 150692
+    },
+    {
+     "id": "pentecost",
+     "file": "all-nations/older/06-pentecost.mp3",
+     "hash": "d7c5bd12e04e2cbb30c4",
+     "seconds": 27.94,
+     "bytes": 168260
+    },
+    {
+     "id": "multitude",
+     "file": "all-nations/older/07-multitude.mp3",
+     "hash": "8423be8eee4650713847",
+     "seconds": 24.96,
+     "bytes": 150404
+    }
+   ]
+  },
   "kingdom-of-god": {
    "title": {
     "file": "kingdom-of-god/title.mp3",

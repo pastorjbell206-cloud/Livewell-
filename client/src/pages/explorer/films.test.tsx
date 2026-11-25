@@ -719,7 +719,7 @@ describe("Listen with the recorded files", () => {
 });
 
 describe("the data", () => {
-  it("lists the six groups and the forty-three finished films", () => {
+  it("lists the six groups, and every finished film in the catalogue's own order", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "stories",
@@ -728,51 +728,37 @@ describe("the data", () => {
       "verses",
       "questions",
     ]);
-    expect(READY.map(f => f.slug)).toEqual([
-      "bible-two-minutes",
-      "bible-in-a-minute",
-      "sixty-six-books",
-      "the-exodus",
-      "david-and-goliath",
-      "holy-spirit",
-      "god-with-his-people",
-      "the-king",
-      "covenant",
-      "the-lamb",
-      "why-blood",
-      "exile-and-home",
-      "kingdom-of-god",
-      "who-god-is",
-      "image-of-god",
-      "what-sin-is",
-      "who-jesus-is",
-      "why-jesus-died",
-      "the-resurrection",
-      "how-salvation-works",
-      "grace",
-      "faith",
-      "gospel-in-a-minute",
-      "spirit-in-a-believer",
-      "the-church",
-      "baptism-and-supper",
-      "the-bible",
-      "prayer",
-      "life-to-come",
-      "john-3-16",
-      "psalm-23",
-      "romans-8-28",
-      "who-made-god",
-      "does-god-exist",
-      "why-cant-i-see-god",
-      "why-bad-things-happen",
-      "is-the-bible-true",
-      "did-jesus-come-back-to-life",
-      "when-we-die",
-      "so-many-churches",
-      "love-when-i-do-wrong",
-      "god-silent",
-      "science-and-the-bible",
-    ]);
+    // The catalogue (films.json) is the one list: the index copies it, and a
+    // film is finished there only when it has its file and its drawing.
+    const catalogue = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/films.json"), "utf8")
+    ) as { films: { slug: string; status: string }[] };
+    expect(READY.map(f => f.slug)).toEqual(
+      catalogue.films.filter(f => f.status === "finished").map(f => f.slug)
+    );
+    expect(READY.length).toBeGreaterThanOrEqual(44);
+    // Found from outside the Explorer too: each finished film is in the site
+    // search (scripts/build-search-index.mjs reads the catalogue) and in
+    // llms.txt.
+    const search = fs.readFileSync(
+      path.join(PUBLIC, "search-index.json"),
+      "utf8"
+    );
+    const llms = fs.readFileSync(path.join(PUBLIC, "llms.txt"), "utf8");
+    for (const f of READY) {
+      expect(search, f.slug).toContain(`/study/explorer/watch/${f.slug}"`);
+      expect(llms, f.slug).toContain(
+        `https://www.livewellbyjamesbell.co/study/explorer/watch/${f.slug}\n`
+      );
+    }
+    for (const f of READY) {
+      expect(FILM_SCENES[f.slug], f.slug).toBeTruthy();
+      expect(FILM_META[f.slug], f.slug).toBeTruthy();
+      expect(
+        fs.existsSync(path.join(PUBLIC, `explorer/films/${f.slug}.json`)),
+        f.slug
+      ).toBe(true);
+    }
   });
 
   it("the three films cut for sharing are short, stand alone, and end by pointing to the site, never pressing", () => {
@@ -1711,5 +1697,80 @@ describe("the eight films of 2026-11-22: doctrines, stories and verses, each wit
     );
     expect(f.care).toBe(filmFile("why-bad-things-happen").care);
     expect(f.differ?.text).toMatch(/takes no side/);
+  });
+});
+
+describe("the films of 2026-11-25: the four that were announced, and the first books of the Bible", () => {
+  const NEW = ["all-nations"];
+  const AUDIO = JSON.parse(
+    fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
+  ) as {
+    films: Record<
+      string,
+      Record<"younger" | "older", { id: string; seconds: number }[]>
+    >;
+  };
+  const text = (f: Film) => JSON.stringify(f);
+  const captions = (f: Film) =>
+    f.frames.map(fr => `${fr.younger} ${fr.older}`).join(" ");
+
+  it("each has seven pictures, a drawing, and a narrated length between 1:45 and 3:15 at both levels", () => {
+    for (const slug of NEW) {
+      const f = filmFile(slug);
+      expect(f.frames.length, slug).toBe(7);
+      expect(FILM_SCENES[slug], slug).toBeTruthy();
+      for (const level of ["younger", "older"] as const) {
+        const rows = AUDIO.films[slug][level];
+        expect(rows.map(r => r.id)).toEqual(f.frames.map(fr => fr.id));
+        const seconds =
+          rows.reduce((s, r) => s + r.seconds, 0) + 0.7 * (rows.length - 1);
+        expect(seconds, `${slug} ${level}`).toBeGreaterThanOrEqual(105);
+        expect(seconds, `${slug} ${level}`).toBeLessThanOrEqual(195);
+      }
+    }
+  });
+
+  it("none of them speaks in the first person, presses for a decision, or dates the earth", () => {
+    for (const slug of NEW) {
+      const f = filmFile(slug);
+      const own = captions(f).replace(/“[^”]*”/g, " ");
+      expect(own, slug).not.toMatch(/\b(I|I'm|I've|my|me|we|our|us)\b/);
+      expect(text(f), slug).not.toMatch(
+        /pray this prayer|decide today|right now, before|before it is too late/i
+      );
+      expect(text(f), slug).not.toMatch(
+        /years ago|million|billion|young earth|old earth/i
+      );
+    }
+  });
+
+  it("A blessing for all nations follows the Explorer's own thread, names no modern state, and holds no people in contempt", () => {
+    const f = filmFile("all-nations");
+    const thread = (
+      JSON.parse(
+        fs.readFileSync(path.join(PUBLIC, "explorer/threads.json"), "utf8")
+      ) as { threads: { id: string; stops: Record<string, { ref: string }> }[] }
+    ).threads.find(t => t.id === "nations")!;
+    const refs = Object.values(thread.stops)
+      .map(s => s.ref)
+      .join("; ");
+    // Every verse the film shows is from a chapter the thread itself cites.
+    for (const fr of f.frames) {
+      const chapter = fr.verse!.ref.replace(/:.*$/, "");
+      expect(refs, fr.verse!.ref).toContain(chapter);
+    }
+    expect(f.frames[1].verse?.text).toBe(
+      "all the families of the earth will be blessed through you."
+    );
+    expect(f.end.href).toBe("/study/explorer?thread=nations");
+    const t = text(f);
+    expect(t).not.toMatch(
+      /\b(Iraq|Iran|Syria|Jordan today|modern|Palestin|State of Israel)\b/i
+    );
+    expect(t).not.toMatch(/pagan|heathen|savage|wicked city/i);
+    // The stills name people by what they do and wear, never by a look.
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /skin|dark-|darker|lighter|race/i
+    );
   });
 });

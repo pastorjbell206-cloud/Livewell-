@@ -273,6 +273,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "1 Samuel 17 as the text tells it, in seven moving pictures: two armies, a champion, a shepherd boy, a speech in the name of the LORD, one stone, and who we are in the story.",
     },
+    "all-nations": {
+      title: "A blessing for all nations: Bible Explorer",
+      description:
+        "God's promise to bless every family on earth, in seven moving pictures: Babel, Abraham under the stars, Rahab and Ruth, Jonah and Nineveh, the Magi, Pentecost, and a crowd no one can count.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
