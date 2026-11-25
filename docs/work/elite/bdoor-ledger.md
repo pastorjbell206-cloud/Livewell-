@@ -17954,6 +17954,182 @@ Cut in chapter 12: the deep note's lines to Christ (John 2:19-21, Revelation 21:
 | The care line (‘If you are being hurt, at home, at work or in a church, tell someone you trust and get help...’ to ‘...lists places to turn.’) | 23-31 `hard` | deuteronomy/plain/5.json (16-21), 13.json, 21.json, 22.json and 27.json; exodus/plain/21.json (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 13: the deep note's lines to Christ (John 2:13-17, Hebrews 7:26, Mark 2:28, Ephesians 2:11-22; the note calls them the New Testament's own reading of the story, not drawn to this chapter); the means of the harm in verse 25 beyond the text's own words (not lingered over); a draft sentence that began to quote 13:17 across its dash (rewritten before commit).
+
+## Esther's book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/esther/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Seventeenth book, ten chapters; Susa under Xerxes, called Ahasuerus; Vashti deposed; Esther the orphan raised by Mordecai; Haman and the decree by lot; Esther before the king uncalled; the day reversed; Purim, the pur, the scroll read aloud; God never named in the Hebrew text; the timing; 4:14 | in-a-minute | bible/books.json; esther/intro.json `tagline`, `overview`; bible/guides/calendar-and-festivals.json (Purim); BSB | Repository; BSB text |
+| Beside Ezra and Nehemiah; those who stayed in the east; 539 or 538 BC; between Ezra 6 (515 BC) and Ezra 7 (about 458 BC); the Writings, the five scrolls, the Megillah; last among the histories in Christian Bibles; Mordecai a Benjaminite descended from Kish (2:5) and Haman an Agagite (3:1), the old enmity with Amalek as most readers hear it | story | esther/intro.json `story`, `setting`, `overview`; bible/guides/what-is-the-bible.json (the five scrolls); BSB | Repository; BSB text; the Agag link given as most readers' reading |
+| No named author; the Talmud and the men of the Great Assembly; Mordecai suggested and 9:20; an unknown writer of the eastern communities; written after Xerxes (1:1); the late Persian period or the third or second century BC and the reasons; the Greek version with six additions by the first century BC, prayers naming God, Catholic and Orthodox and Protestant and Jewish Bibles; no side | who, timeline | esther/intro.json `author`, `date`, `reading`; BSB | Repository; each view in its holders' terms |
+| The fit with the Persian court; the French excavations at Susa and the columned hall; Herodotus and Amestris; no outside record of Vashti, Esther or Haman; the Marduka tablet, unproven; the three answers (Vashti as Amestris, incomplete Greek sources, a historical novella); no side | history | esther/1.json `hard`, `historical`; esther/10.json `historical`; esther/intro.json `setting`, `reading` | Repository; each view in its holders' terms |
+| Xerxes about 486 to 465 BC; the third year about 483 BC; Salamis 480 and Plataea 479; the seventh year about 479 or 478 BC (2:16); the twelfth year about 474 BC (3:7); the counter-decree two months later (8:9); Adar about 473 BC; Xerxes killed in a palace plot in 465 BC; the dates approximate | dates, timeline | esther/1.json to 9.json `historical`; bible/guides/empires.json (Xerxes I) | Repository |
+| Banquets and mishteh; dat about twenty times; the reversals and 9:1; the book arranged around chapter 6, as many scholars see it; telling and hiding | built | esther/intro.json `reading`, `themes`; esther/1.json `words` (dat, mishteh); esther/6.json `literary`; esther/9.json `words` (haphakh); esther/2.json `words` (nagad) | Repository |
+| God never named, with the Song of Songs; 4:14; the readings of the silence (deliberate hiddenness; reserve at a festival or under empire; another place as a reverent pointer or a human source); the Greek prayers; absent from the Dead Sea Scrolls; rabbis into the second century debating its place; kept in the canon | hidden | esther/4.json `hard`; bible/guides/canon.json (every book but Esther at Qumran); theology/ot-canon.json (the rabbis' debate); bible/guides/reading-narrative.json | Repository; the readings in their holders' terms |
+| The feasts of chapter 1 (1:1; 1:11; 1:22) and the satire; Vashti's reasons unstated, defiant or rightly refusing degradation; the harem: taken (2:8), no choice to go or leave, the year of treatments, one night and the house of the concubines; Esther one of many young women; God working through a situation that was not right | vashti | esther/1.json `cultural`, `literary`, `words` (maen); esther/2.json `cultural`, `doctrines` (suffering); BSB | Repository; BSB text |
+| The care line (‘A word for anyone who has been sold, traded, or forced to work or to do sexual acts...’ to ‘...lists places to turn.’) | vashti | judges/plain/21.json (15-25); acts/plain/16.json; genesis/plain/37.json; numbers/plain/31.json (`hard`) | Reused whole, word for word; Find Help named |
+| Haman's promotion, Mordecai's refusal and its one clue; 3:6; the lot a year away; the manipulation of 3:8 (half-truth, lie, interest); ten thousand talents; the king not asking; the decree for the thirteenth of Adar; 3:15; hatred written into law; never a reason to blame the Jewish people | haman | esther/3.json `summary`, `historical`, `cultural`, `literary`; esther/intro.json `purpose` (hatred of the Jews written into law); BSB | Repository; BSB text |
+| The mourning; the law of the inner court and the thirty days; 4:14; 4:16; Esther giving the orders; concealment's end as courage | such-a-time | esther/4.json `summary`, `historical`, `literary`; esther/intro.json `themes`; BSB | Repository; BSB text |
+| 5:2; half the kingdom; the two banquets; the gallows; 6:1 and the records; 6:6; 7:4; 7:6; 7:10; no miracle and everything on time | reversal | esther/5.json, 6.json and 7.json `summary`, `literary`; BSB | Repository; BSB text |
+| The decree that could not be revoked and the counter-decree repeating its words; 9:1; the fighting told briefly; the plunder refused three times; the second day in Susa; the readings (defense under decree; survival not gain; the second day ending a threat or going too far; stylized numbers or history, the versions differing); faithful readers differing; no pattern | purim | esther/8.json and 9.json `summary`, `literary`, `hard` | Repository; the readings in their holders' terms; no side |
+| No warrant today to harm anyone or take revenge on any people; Romans 12:19 | purim | esther/9.json `hard` (Romans 12:19); esther/intro.json `reading` (not a license for revenge) | As the site's notes state it |
+| Purim established by letters (9:22); not commanded in the law; the fourteenth and fifteenth of Adar; the scroll read and Haman's name drowned out | purim | esther/9.json `historical`, `cultural`; bible/guides/calendar-and-festivals.json (Purim); BSB | Repository; BSB text |
+| The New Testament never quoting Esther; Mark 6:23 and the royal formula; Revelation 11:10 and the gifts of a festival; the book's own introduction calling its links patterns and Esther not a picture of Christ in any detailed sense; no line to Christ; never a reason to blame the Jewish people | new-testament | theology/ot-canon.json (the New Testament never quotes Esther); mark/plain/6.json (Esther 5:3); revelation/plain/11.json (Purim); esther/intro.json `christ`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: one sitting; the banquets, reversals and silence (4:14; 4:16; 6:1); Esther and Mordecai not flawless models and Vashti not a villain; chapter 9 not a license for revenge; beside Ezra and Nehemiah | readers | esther/intro.json `reading` | Repository |
+| Hard passages (16), key words (15) and timeline (16): each drawn from the parts above and the chapter notes; pur (3.json); dat and mishteh (1.json); chen (2.json and 5.json); Agagi and shamad (3.json); hatstsalah, et and tsum (4.json); yeqar (6.json); haphakh (9.json); mishneh and shalom (10.json); Hadassah (2.json `historical`); the Megillah (intro `overview`); 2 Maccabees and Mordecai's day (9.json); Athanasius in 367 (bible/guides/canon.json) | lists | the notes named above; BSB | Repository; BSB text |
+| The map: Jerusalem alone, at the point used on the site's other maps; 2:6 | map | the points already used on the site's maps; BSB | Repository; Susa, Babylon and the empire from India to Cush left off and the note says so; no borders; no claim about any border today |
+| Go deeper: nine pages | deeper | bible/guides/calendar-and-festivals.json, empires.json, reading-narrative.json, canon.json; bible/doctrines/providence.json, sovereignty.json; questions/evil/the-hiddenness-of-god.json (status live; named by a short form of its own question); context/guides/women-in-the-ancient-world.json; context/worlds/honor-and-shame.json | Repository; every page live |
+
+Cut from the book page: the deep notes' lines to Christ (Mark 10:45 and the king who serves, Galatians 3:16 and 4:4, Hebrews 4:16 and Esther as a mediator, Philippians 2:8-9, Colossians 2:15 and Haman's gallows, the third day of 5:1, the decree on the eve of Passover set beside the Last Supper; the book's own introduction and the notes call these patterns or thematic links); the old introduction's sentence that without the Jews there would have been no people for the Messiah to come from (the deep note's, not the New Testament's); Xerxes' sleepless night tied to God by the narrator (the page says the book leaves it to the reader); the method of execution behind the word for gallows (not lingered over).
+
+## The plain notes on Esther 1 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The palace setting, no Jew and no mention of God; Xerxes about 486 to 465 BC, Ahasuerus and Khshayarsha; India to Cush; the 127 provinces smaller than the satrapies; Susa and the excavated hall; the third year about 483 BC and Herodotus on the gathering before 480 BC, not stated by the text; royal banquets; reclining; mishteh from the verb to drink | 1-9 | esther/1.json `story`, `historical`, `cultural`, `words` (mishteh) | Repository |
+| Daniel 6:8; Ezra 4:6 | 1-9 | esther/1.json `cultural` (Daniel 6:8); bible/guides/empires.json (Ezra 4:6); BSB | Repository; BSB text |
+| The satire; the eunuchs and the seven princes; the queen shown only at the king's command and treated as a possession; the unrepealable decree (1:19); letters in every script and language, Aramaic common; dat's first appearance | 10-22 | esther/1.json `cultural`, `literary`, `words` (dat) | Repository |
+| Esther 8:8; Daniel 6:8 | 10-22 | esther/1.json `cultural`; BSB | Repository; BSB text |
+| Vashti's reasons unstated; defiance or a right refusal of degradation; the cost; the decree saying more of the king; no blame on Vashti | 10-22 `hard` | esther/1.json `words` (maen), `cultural`; esther/intro.json `reading`, `themes` (a queen deposed for refusing to be displayed) | Repository; the readings in their holders' terms |
+| The care line (‘A word for anyone who is being pressured for sex, or for anything else...’ to ‘...lists places to turn.’) | 10-22 `hard` | genesis/plain/39.json (11-18, `hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 1: the deep note's line to Christ by contrast (Mark 10:45 and Galatians 3:16; the note calls it contrast and pattern); the hard question of Esther's history (left to the book page); the variant readings of 1:8 (not needed).
+
+## The plain notes on Esther 2 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Four years between chapters 1 and 2; Salamis and Plataea in Greek sources, unmentioned; the king remembering Vashti and the decree; harems taken, not asked | 1-4 | esther/2.json `historical`, `cultural`; esther/1.json `historical` | Repository |
+| Daniel 1:7 | 1-4 | esther/2.json `historical` (Daniel 1:6-7); BSB | Repository; BSB text |
+| The tenth month of the seventh year, about 479 or 478 BC; Kish and Saul; the exile with Jeconiah in 597 BC and the great-grandfather; Mordecai and Marduk, Esther and star or Ishtar, Hadassah myrtle; the harem without romance; one night and the house of the concubines; adoption and Mordecai's daily care; the identity hidden twice (verses 10, 20) | 5-18 | esther/2.json `historical`, `cultural`, `literary`, `doctrines` (family) | Repository |
+| 2 Kings 24:12; 1 Samuel 9:1 | 5-18 | esther/2.json `historical`; esther/intro.json `story` (Kish); BSB | Repository; BSB text |
+| The coercion named: taken (verse 8), no choice, refusal fatal; Esther and Daniel compared; compromise or prudence; the text restrained; not calling it right; God's hand in the whole without approving every step | 5-18 `hard` | esther/2.json `hard`, `doctrines` (suffering) | Repository; the readings in their holders' terms |
+| The care line (‘A word for anyone who has been sold, traded, or forced to work or to do sexual acts...’ to ‘...lists places to turn.’) | 5-18 `hard` | judges/plain/21.json (15-25); acts/plain/16.json; genesis/plain/37.json; numbers/plain/31.json (`hard`) | Reused whole, word for word; Find Help named |
+| The gate as an official post; the real danger of plots and Xerxes killed in 465 BC; the unrewarded deed recorded; Herodotus on royal benefactors | 19-23 | esther/2.json `cultural`; esther/6.json `historical` | Repository |
+| Acts 23:16 | 19-23 | acts/plain/23.json (Esther 2:21-23); BSB | Repository; BSB text |
+
+Cut in chapter 2: the deep note's lines to Christ (Genesis 50:20, Galatians 4:4, the hidden identity; the note says Esther is not a type of Christ); the Persepolis tablets naming a Marduka (left to the book page and chapter 10); a quotation of 1 Samuel 9:1 and of 2 Kings 24:12 corrected to the BSB's words before commit.
+
+## The plain notes on Esther 3 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Haman promoted after Mordecai's unrewarded deed; the Agagite and Agag, as most readers hear it; Amalek's attack and the old war; Mordecai of Kish; bowing as ordinary courtesy; the one clue; a slight turned to a plan in one verse | 1-6 | esther/3.json `story`, `cultural`, `literary`, `words` (Agagi, shachah) | Repository |
+| Exodus 17:16; 1 Samuel 15:8; no people today is Amalek | 1-6 | esther/3.json `cultural`; 1-samuel/intro.json `teaching` and exodus/plain/17.json (`hard`: no people living today is Amalek); BSB | Repository; BSB text |
+| Why Mordecai would not bow: honor due God (with the Greek additions' prayer); Benjaminite and Agagite; pride; the clue of verse 4; the response monstrous whatever the motive | 1-6 `hard` | esther/3.json `hard` | Repository; the readings in their holders' terms |
+| The twelfth year, about 474 BC; the lot a year away; pur and the Akkadian word; lots for lucky days; Haman's manipulation; ten thousand talents; the signet ring; the thirteenth of Nisan, the eve of Passover; 3:15; the decree not lingered over | 7-15 | esther/3.json `historical`, `cultural`, `literary`, `words` (pur) | Repository |
+| Proverbs 16:33 | 7-15 | esther/3.json `doctrines` (sovereignty: Proverbs 16:33); BSB | Repository; BSB text |
+| The decree to destroy a people: hatred written into law and exposed; the threat to the people of the promises; never a reason to blame the Jewish people or to harm anyone | 7-15 `hard` | esther/intro.json `purpose`, `story`; esther/3.json `doctrines` (sin, covenant) | Repository; the readings in their holders' terms |
+
+Cut in chapter 3: the deep note's lines to Christ (Exodus 1, 2 Kings 11 and Matthew 2:16 as one conflict reaching the cross, and the eve of Passover set beside Luke 22; the note says the New Testament does not cite Esther and the link is thematic); the inscribed die from Assyria (not needed); the words of the decree's list of victims (not lingered over).
+
+## The plain notes on Esther 4 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sackcloth and ashes; mourning kept from the king's gate; the women's quarters and the eunuchs; Hathach; the exchange of messages | 1-9 | esther/4.json `cultural`, `literary` | Repository |
+| Daniel 9:3 | 1-9 | jeremiah context guide and exile doctrine (Daniel 9:2-3); BSB | Repository; BSB text |
+| Grief not a lack of faith; the people's mourning named | 1-9 `hard` | esther/4.json `cultural` | Repository; the readings in their holders' terms |
+| The care line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 1-9 `hard` | 1-samuel/plain/1.json (1-8); 2-samuel/plain/21.json; deuteronomy/plain/7.json, 28.json and 34.json; leviticus/plain/26.json (`hard`) | Reused whole, word for word; Find Help named |
+| The hinge: Esther deciding; the law of the inner court and Greek writers; the Persepolis reliefs; thirty days and the real risk; 4:14 never naming God; hatstsalah found only here; et as a fitting moment; the severe fast and prayer assumed; the Fast of Esther | 10-17 | esther/4.json `story`, `historical`, `cultural`, `words` (hatstsalah, et, tsum) | Repository |
+| Genesis 43:14; Acts 25:11 | 10-17 | genesis/plain/43.json (Esther 4:16); acts/plain/25.json (Esther 4:16); BSB | Repository; BSB text |
+| The silence about God and prayer: with the Song of Songs; deliberate hiddenness; reserve; another place read two ways; the Greek prayers | 10-17 `hard` | esther/4.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 4: the deep note's lines to Christ (Esther as a mediator beside Christ, Hebrews 4:16; the note calls the link thematic); the Talmud's picture of Esther speaking Psalm 22 (left to the Psalms notes).
+
+## The plain notes on Esther 5 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The danger passing in two verses; the audience hall facing the entrance; half the kingdom as a formula; the banquet as diplomacy and a trap; patience and discretion | 1-8 | esther/5.json `story`, `historical`, `cultural`, `doctrines` (wisdom) | Repository |
+| Mark 6:23 | 1-8 | mark/plain/6.json (Esther 5:3); esther/5.json `historical`; BSB | Repository; BSB text |
+| Honor's visible measures; one grudge emptying all (shavah); the gallows fifty cubits, about seventy-five feet; ets as tree or wood, a pole more than a rope; not lingered over; the irony | 9-14 | esther/5.json `cultural`, `historical`, `literary`, `words` (shavah, ets) | Repository |
+| Psalm 7:15 | 9-14 | esther/7.json `doctrines` (judgment: Psalm 7:15-16); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (the third day of 5:1, which the note itself says should not be pressed; Luke 1:52 and Christ's humbling; the note calls them thematic); the Behistun inscription and impalement (not lingered over).
+
+## The plain notes on Esther 6 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The one night between the banquets; the sleep that fled (nadad) and no reason given; the royal records; rewards for benefactors; five years unrewarded; everything on time | 1-5 | esther/6.json `story`, `historical`, `words` (nadad) | Repository |
+| Esther 2:23; Psalm 121:4 | 1-5 | esther/2.json `literary`; BSB | Repository; BSB text |
+| Providence or coincidence: the text silent; the crowding of coincidence as the point; Jewish and Christian readers; the advisers; providence seen looking back | 1-5 `hard` | esther/6.json `hard` | Repository; the readings in their holders' terms |
+| Honor public; the robe and horse; Joseph honored; Haman's private thought; the repeated phrase; the head covered; fall twice; the chapter as the center, as many scholars see it | 6-14 | esther/6.json `cultural`, `literary`, `words` (yeqar, chaphets, naphal) | Repository |
+| Genesis 41:43; Luke 1:52 | 6-14 | esther/6.json `cultural` (Genesis 41:42-43); esther/5.json `christ` (Luke 1:52 on reversal); BSB | Repository; BSB text |
+
+Cut in chapter 6: the deep note's lines to Christ (Philippians 2:8-9 and the humbled exalted; the note calls it thematic; Luke 1:52 is kept as Mary's song on God's reversals, with no line drawn from Esther to Christ); a draft 'later' that quoted Genesis 41:43 across its inner quotation (rewritten before commit).
+
+## The plain notes on Esther 7 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The third asking; Esther's plea framed: her life, then her people's, Haman's words, sold; the king learning his queen is among them; the adversary and enemy | 1-6 | esther/7.json `literary`, `historical`, `words` (makar, tsar) | Repository |
+| Esther 3:13; Genesis 37:28 | 1-6 | esther/7.json `words` (makar); BSB | Repository; BSB text |
+| Reclining at banquets; contact with the king's women; the charge as possible misreading; the covered face; falling; told briefly; the decree still standing | 7-10 | esther/7.json `cultural`, `literary`, `story` | Repository |
+| Psalm 7:15; Proverbs 26:27 | 7-10 | esther/7.json `doctrines` (judgment: Psalm 7:15-16); BSB | Repository; BSB text |
+| Esther's silence as Haman begs: what he had done; the decision the king's; no power to overrule; reported without comment; love of enemies and just punishment; a judgment recorded, no invitation to revenge | 7-10 `hard` | esther/7.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 7: the deep note's lines to Christ (Colossians 2:15 and the cross as reversal, Christ's intercession; the note says Haman is not a figure of Christ); Harbonah's words beyond verse 9 and the means of execution (not lingered over).
+
+## The plain notes on Esther 8 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The signet ring and Joseph; the unrevocable decree and Daniel; a second decree as the way out; Esther weeping for her kindred | 1-8 | esther/8.json `cultural`, `summary` | Repository |
+| Genesis 41:42 | 1-8 | esther/8.json `cultural`; BSB | Repository; BSB text |
+| The date about two months later, about 474 BC, nine months before Adar; the mirror of chapter 3; the couriers; light, gladness, joy and honor and the later ritual use; yahad found only here and its debated sense | 9-17 | esther/8.json `historical`, `literary`, `words` (orah, yahad) | Repository |
+| Esther 3:15; Psalm 30:11 | 9-17 | esther/8.json `literary`; BSB | Repository; BSB text |
+| Women and children in 8:11: two readings of the grammar; chapter 9's men counted and no plunder; defense against a legal order for destruction; no warrant today to harm anyone | 9-17 `hard` | esther/8.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 8: the deep note's line to Christ (the irrevocable sentence answered by a new decree of life, read as a picture of the gospel; the note calls it thematic, not predictive); naqam and vengeance (the note's word study, left out to keep the decree's sense to its hard question).
+
+## The plain notes on Esther 9 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| About 473 BC; haphakh overturned and turned to joy; the decree of defense; those who sought harm and hated; plunder refused three times and Saul's failure; told briefly | 1-10 | esther/9.json `historical`, `literary`, `words` (haphakh, bizzah) | Repository |
+| 1 Samuel 15:9 | 1-10 | esther/9.json `words` (bizzah: Saul in 1 Samuel 15); BSB | Repository; BSB text |
+| The fourteenth and fifteenth; Shushan Purim and walled cities; the versions differing (15,000 and 75,000); the rest dwelt on | 11-19 | esther/9.json `cultural`, `historical` | Repository |
+| Revelation 11:10 | 11-19 | revelation/plain/11.json (Purim and gifts); BSB | Repository; BSB text |
+| The killing: defense under decree; not neutral neighbors; plunder refused; the second day read two ways; stylized numbers or history; description not approval; faithful readers differing; no side; Romans 12:19; no warrant to harm anyone or take revenge on any people | 11-19 `hard` | esther/9.json `hard`; bible/guides/reading-narrative.json | Repository; the readings in their holders' terms |
+| Pur from the Akkadian; Purim not commanded in the law and established by the community; 2 Maccabees and Mordecai's day; the customs of verse 22; the scroll read and Haman's name drowned out, a later development; remembrance as active; all who join them (9:27) | 20-32 | esther/9.json `cultural`, `historical`, `words` (pur, zakhar); bible/guides/calendar-and-festivals.json; BSB | Repository; BSB text |
+| Psalm 30:11 | 20-32 | BSB (a link within the Old Testament) | Repository; BSB text |
+| A feast without a command in the law: established by the people; received and kept; remembering, thanks and care for the poor; not adding to the law | 20-32 `hard` | esther/9.json `historical` | Repository; the readings in their holders' terms |
+
+Cut in chapter 9: the deep note's line to Christ (the day of destruction turned to rescue read beside the cross and resurrection and John 16:20; the note calls it the Christian reading, not a line the New Testament draws to this chapter); the list of Haman's sons and the column layout of the scroll (not needed); the numbers of the dead in Susa and the provinces stated only once, by the text's own words in its quotations (not lingered over); the claim that Purim is the only feast the people established (not stated in the repository; narrowed before commit).
+
+## The plain notes on Esther 10 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The epilogue like the closing notices in Kings; the frame with chapter 1; tribute as the state's backbone and the Persepolis reliefs; the lost chronicles; the Marduka tablet unproven; second to the king, Joseph and Daniel; seeking good and speaking shalom | 1-3 | esther/10.json `historical`, `cultural`, `literary`, `words` (mishneh, shalom, darash, mas) | Repository |
+| 1 Kings 11:41; Genesis 41:40 | 1-3 | esther/10.json `cultural` (the formula of Kings; Joseph); BSB | Repository; BSB text |
+
+Cut in chapter 10: the deep note's line to Christ (Mordecai's exaltation as a pattern fulfilled in Jesus; the note says the book does not present Mordecai as a messianic figure); 1 Kings 11:41 quoted only after its dashes.
+
 ## 2 Kings' book page (teaching introduction, 2026-11-25)
 
 Every claim in `client/public/bible/notes/2-kings/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested-quote check (0 problems each) and by `validate-bible-notes.mjs`.
