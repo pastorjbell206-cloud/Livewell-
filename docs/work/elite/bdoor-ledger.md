@@ -18264,3 +18264,22 @@ Cut in chapter 12: the deep note's thematic links (Jesus' body as the temple, Jo
 | Exodus 2:24; Psalm 103:13; Luke 1:72 | 22-25 | 2-kings/13.json `christ` (Mary's and Zechariah's songs on God's mercy to Abraham); BSB | Repository; BSB text; Zechariah's own words on God remembering his covenant |
 
 Cut in chapter 13: the deep note's line from Elisha's bones to Jesus walking out of his tomb, the firstborn from the dead, which it calls a pattern and not a prediction. The first draft's later field for verses 14-21 named only Kings; Hebrews 11:35 was added before it reached the repository. No care line is needed in this chapter.
+
+## The plain notes on 2 Kings 14 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Amaziah at twenty-five, twenty-nine years (14:1-2); 14:3; the high places (14:4); his father's killers executed (14:5); 14:6 (the law, quoted in double quotes as the narrator quotes it); Edom and Sela (14:7) | 1-7 | 2-kings/14.json `summary`; BSB | Repository; BSB text |
+| About 796 to 767 BC and the overlap; the graded verdict; bamah; the killers' families usually wiped out; Deuteronomy 24:16 obeyed; the law limiting kings and protecting the innocent | 1-7 | 2-kings/14.json `historical`, `cultural`, `literary`, `words` (bamah), `doctrines` (law); bible/guides/kings-of-israel-and-judah.json (Amaziah 796 to 767) | Repository |
+| Deuteronomy 24:16; Ezekiel 18:20 | 1-7 | 2-kings/14.json `cultural`; BSB | Repository; BSB text |
+| 14:8; the fable (14:9, paraphrased around its inner quotation); 14:10; Beth-shemesh and the rout (14:11-12); the capture, the wall and the treasures (14:13-14); Jehoash's death and fifteen years (14:15-17); the conspiracy, Lachish, burial and Azariah at sixteen (14:19-21); Elath (14:22) | 8-22 | 2-kings/14.json `summary`; BSB | Repository; BSB text |
+| The overreach and the old split (1 Kings 12); the challenge to battle; the fable form and Jotham's (Judges 9); choach and the cedar; pride and the lifted heart; victory turned to arrogance; four hundred cubits, about 180 meters or 600 feet; humiliation and hostages | 8-22 | 2-kings/14.json `story`, `cultural`, `literary`, `words` (choach), `doctrines` (sin) | Repository |
+| Proverbs 16:18; Judges 9:8 | 8-22 | 2-kings/14.json `cultural` (Judges 9); BSB | Repository; BSB text |
+| Jeroboam forty-one years, evil (14:23-24); 14:25; 14:26 (to its first sentence's end and the next clause); 14:27 paraphrased; Zechariah (14:29) | 23-29 | 2-kings/14.json `summary`; BSB | Repository; BSB text |
+| About 793 to 753 BC, perhaps with his father; Aram weakened and Assyria weak; room to grow; a few verses and mercy; Deuteronomy 32:36; machah and 21:13; Amos and Hosea dated to him; the Samaria ostraca; the Shema seal from Megiddo, often but not always assigned to him; Jonah son of Amittai and his book; six kings in about thirty years | 23-29 | 2-kings/14.json `historical`, `literary`, `words` (machah), `story`; bible/guides/kings-of-israel-and-judah.json (Jeroboam II 793/792 to 753) | Repository |
+| Amos 6:4; Jonah 1:1; Matthew 12:39 | 23-29 | 2-kings/14.json `historical` (Amos), `christ` (Matthew 12:39-41); BSB | Repository; BSB text; Jesus' own words about the prophet Jonah, not a claim about this chapter |
+| The hard note: the tension not hidden; the calves and the widest borders; mercy for a suffering people, not reward; prosperity not proof of approval (Amos); patience with a purpose; the prosperity gone within a generation | 23-29 `hard` | 2-kings/14.json `hard` | Repository |
+
+Cut in chapter 14: the deep note's thematic links (Jonah's three days as Jesus' sign; God saving the helpless as the pattern of the gospel; Amaziah's partial righteousness keeping the reader waiting for a son of David). A gloss quoting Amaziah's challenge was rewritten to avoid a first-person form before it reached the repository. No care line is needed in this chapter.
