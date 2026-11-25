@@ -26,7 +26,11 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 |---|---|---|---|---|---|---|---|---|---|
 | Introduction: The Question in the Room | 978 | 978 | +0.0% | 15 (15.3) | 2 (2.0) | 38 (38.9) | 24 (24.5) | 11 | PASS |
 | Chapter One: Three Questions We Confuse for One | 1,313 | 1,313 | +0.0% | 16 (12.2) | 0 (0.0) | 25 (19.0) | 9 (6.9) | 14 | PASS |
-| **All 2** | 2,291 | 2,291 | +0.0% | 31 (13.5) | 2 (0.9) | 63 (27.5) | 33 (14.4) | 25 | |
+| Chapter Two: Scribes, Scrolls, and Centuries — The Manuscript Trail | 1,607 | 1,607 | +0.0% | 24 (14.9) | 0 (0.0) | 36 (22.4) | 12 (7.5) | 18 | PASS |
+| Chapter Three: The Canon Question — How We Got These Books and Not Others | 1,247 | 1,247 | +0.0% | 16 (12.8) | 0 (0.0) | 36 (28.9) | 20 (16.0) | 11 | PASS |
+| Chapter Four: The Dead Sea Scrolls and What They Proved | 1,166 | 1,166 | +0.0% | 23 (19.7) | 0 (0.0) | 38 (32.6) | 15 (12.9) | 13 | PASS |
+| Chapter Five: The New Testament Under Fire — Evidence, Eyewitnesses, and Early Dating | 1,136 | 1,136 | +0.0% | 16 (14.1) | 0 (0.0) | 23 (20.2) | 9 (7.9) | 12 | PASS |
+| **All 6** | 7,447 | 7,447 | +0.0% | 110 (14.8) | 2 (0.3) | 196 (26.3) | 89 (12.0) | 79 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -70,3 +74,91 @@ Five pairs, taken at even intervals through the chapter:
    After: It means that the process of transmission has preserved the original content with sufficient accuracy that we can be confident we are reading what was originally written: that variations exist at the margins, not the center, that copyists preserved rather than invented, that the text has a coherent identity across centuries and languages and cultures.
 5. Before: It is the most reliably transmitted document from the ancient world — not by a small margin, but by a margin that makes every other comparison look thin. That is the argument this book will make, and we will make it with evidence. Not with assertion, not with appeals to authority, but with the data that scholars across the ideological spectrum — believing and skeptical, Christian and secular — have produced by doing the actual work of manuscript study and archaeology and historical reconstruction.
    After: It is the most reliably transmitted document from the ancient world, not by a small margin, but by a margin that makes every other comparison look thin. That is the argument this book will make, and we will make it with evidence: not with assertion, not with appeals to authority, but with the data that scholars across the ideological spectrum (believing and skeptical, Christian and secular) have produced by doing the actual work of manuscript study and archaeology and historical reconstruction.
+
+
+## Chapter Two: Scribes, Scrolls, and Centuries — The Manuscript Trail (`sec03.xhtml`)
+
+Words 1,607 to 1,607. Em-dashes in his prose 24 to 0 (14.9 to 0.0 per 1,000 words). Tells 36 to 12 (22.4 to 7.5 per 1,000). Mean sentence 25.5 words to 25.5; sentences of eight words or fewer 12.7% to 12.7%; of five or fewer 6.3% to 6.3%. 18 edits; paragraphs 16 to 16. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 24 to 0, not_but 1 to 1, NotX.Y 1 to 1, isnt_its 1 to 1, triplet 6 to 6, anaphora 1 to 1, stock 1 to 1, intens 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 9 Scripture references, 3 years, 42 numbers in digits, 42 number words, proper names by count, and 43 hedge words (after: 43) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Those are the three metrics of textual reliability — quantity of manuscripts, earliness of manuscripts, and agreement between manuscripts — and by all three measures the New Testament stands alone in the ancient world.
+   After: Those are the three metrics of textual reliability (quantity of manuscripts, earliness of manuscripts, and agreement between manuscripts), and by all three measures the New Testament stands alone in the ancient world.
+2. Before: The John Rylands Papyrus, known as P52, is a small fragment containing portions of John 18, and it dates to approximately 125 AD — perhaps as little as thirty years after the Gospel of John was originally composed.
+   After: The John Rylands Papyrus, known as P52, is a small fragment containing portions of John 18, and it dates to approximately 125 AD, perhaps as little as thirty years after the Gospel of John was originally composed.
+3. Before: Another 15 to 20 percent of variations involve minor grammatical or stylistic differences — word order variations, the presence or absence of the Greek definite article, the addition or omission of connecting particles — that do not affect meaning, since Greek word order is flexible enough that rearranging words in a sentence often changes nothing about what the sentence communicates.
+   After: Another 15 to 20 percent of variations involve minor grammatical or stylistic differences (word order variations, the presence or absence of the Greek definite article, the addition or omission of connecting particles) that do not affect meaning, since Greek word order is flexible enough that rearranging words in a sentence often changes nothing about what the sentence communicates.
+4. Before: A thousand years of copying, across political upheaval, exile, persecution, and cultural transformation — how could the text not have changed substantially?
+   After: A thousand years of copying, across political upheaval, exile, persecution, and cultural transformation: how could the text not have changed substantially?
+5. Before: It is a story of a community that took its sacred text seriously enough to develop systematic methods for preserving it — and those methods worked.
+   After: It is a story of a community that took its sacred text seriously enough to develop systematic methods for preserving it, and those methods worked.
+
+
+## Chapter Three: The Canon Question — How We Got These Books and Not Others (`sec04.xhtml`)
+
+Words 1,247 to 1,247. Em-dashes in his prose 16 to 0 (12.8 to 0.0 per 1,000 words). Tells 36 to 20 (28.9 to 16.0 per 1,000). Mean sentence 20.7 words to 20.7; sentences of eight words or fewer 20.0% to 20.0%; of five or fewer 8.3% to 8.3%. 11 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 16 to 0, not_but 1 to 1, isnt_its 1 to 1, triplet 10 to 10, anaphora 5 to 5, short_close 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 1 quoted strings, 16 Scripture references, 1 years, 22 numbers in digits, 47 number words, proper names by count, and 18 hedge words (after: 18) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Not who decided them — most people know, vaguely, that there was a council somewhere.
+   After: Not who decided them; most people know, vaguely, that there was a council somewhere.
+2. Before: It names real institutions — the Council of Nicaea, Constantine's involvement in church affairs — and it appeals to the instinct that power corrupts; it has been told and retold in popular books and films until it feels like established fact.
+   After: It names real institutions (the Council of Nicaea, Constantine's involvement in church affairs), and it appeals to the instinct that power corrupts; it has been told and retold in popular books and films until it feels like established fact.
+3. Before: Justin Martyr, writing around 150 AD, describes the regular practice of reading "the memoirs of the apostles" in Christian worship — these are the Gospels.
+   After: Justin Martyr, writing around 150 AD, describes the regular practice of reading "the memoirs of the apostles" in Christian worship; these are the Gospels.
+4. Before: The councils that produced formal canonical lists — Hippo in 393 AD and Carthage in 397 and 419 AD — were not inventing a canon.
+   After: The councils that produced formal canonical lists (Hippo in 393 AD and Carthage in 397 and 419 AD) were not inventing a canon.
+5. Before: The Gospel of Peter contains a literally cosmic resurrection scene — a cross that walks out of the tomb and speaks — that reads nothing like any first-century source.
+   After: The Gospel of Peter contains a literally cosmic resurrection scene (a cross that walks out of the tomb and speaks) that reads nothing like any first-century source.
+
+
+## Chapter Four: The Dead Sea Scrolls and What They Proved (`sec05.xhtml`)
+
+Words 1,166 to 1,166. Em-dashes in his prose 23 to 0 (19.7 to 0.0 per 1,000 words). Tells 38 to 15 (32.6 to 12.9 per 1,000). Mean sentence 24.3 words to 24.3; sentences of eight words or fewer 25.5% to 25.5%; of five or fewer 14.9% to 14.9%. 13 edits; paragraphs 15 to 15. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 23 to 0, not_but 1 to 1, NotX.Y 1 to 1, triplet 6 to 6, anaphora 2 to 2, intens 2 to 2, colon_reveal 1 to 1, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 17 Scripture references, 5 years, 13 numbers in digits, 34 number words, proper names by count, and 17 hedge words (after: 17) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: William Foxwell Albright was, at the time, America's leading biblical archaeologist — a figure of towering authority in the field — and when he received photographs from John Trever, a graduate student who had managed to photograph several of the Qumran scrolls before they were dispersed to various buyers, he was looking at something he understood instantly.
+   After: William Foxwell Albright was, at the time, America's leading biblical archaeologist, a figure of towering authority in the field, and when he received photographs from John Trever, a graduate student who had managed to photograph several of the Qumran scrolls before they were dispersed to various buyers, he was looking at something he understood instantly.
+2. Before: One hundred twenty-five years before Christ — more than eleven hundred years before the Leningrad Codex, which had been the oldest available Hebrew Old Testament manuscript before the Qumran discovery.
+   After: One hundred twenty-five years before Christ, more than eleven hundred years before the Leningrad Codex, which had been the oldest available Hebrew Old Testament manuscript before the Qumran discovery.
+3. Before: The thousand-year gap between the Qumran scrolls and the Masoretic text — a gap spanning the destruction of Jerusalem, the dispersion of the Jewish people, the rise and fall of empires, the emergence of Christianity and Islam — was crossed by scribes who preserved the text with extraordinary fidelity.
+   After: The thousand-year gap between the Qumran scrolls and the Masoretic text (a gap spanning the destruction of Jerusalem, the dispersion of the Jewish people, the rise and fall of empires, the emergence of Christianity and Islam) was crossed by scribes who preserved the text with extraordinary fidelity.
+4. Before: Chapter 53 of Isaiah — the Suffering Servant passage that Christians understand as a prophecy of Christ's atoning death — is essentially identical in the Dead Sea Scrolls Isaiah and the Masoretic text.
+   After: Chapter 53 of Isaiah, the Suffering Servant passage that Christians understand as a prophecy of Christ's atoning death, is essentially identical in the Dead Sea Scrolls Isaiah and the Masoretic text.
+5. Before: The Dead Sea Scrolls contain some variations that align with the Septuagint — the Greek translation of the Old Testament — rather than with the Masoretic text, which suggests that multiple textual traditions of the Hebrew Bible were in circulation in the Second Temple period, and that the Masoretic tradition, though dominant, was not the only version.
+   After: The Dead Sea Scrolls contain some variations that align with the Septuagint, the Greek translation of the Old Testament, rather than with the Masoretic text, which suggests that multiple textual traditions of the Hebrew Bible were in circulation in the Second Temple period, and that the Masoretic tradition, though dominant, was not the only version.
+
+
+## Chapter Five: The New Testament Under Fire — Evidence, Eyewitnesses, and Early Dating (`sec06.xhtml`)
+
+Words 1,136 to 1,136. Em-dashes in his prose 16 to 0 (14.1 to 0.0 per 1,000 words). Tells 23 to 9 (20.2 to 7.9 per 1,000). Mean sentence 22.5 words to 22.5; sentences of eight words or fewer 20.0% to 20.0%; of five or fewer 8.0% to 8.0%. 12 edits; paragraphs 12 to 12. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 16 to 0, not_but 1 to 1, NotX.Y 1 to 1, triplet 2 to 4, q_answered 1 to 1, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 3 quoted strings, 19 Scripture references, 1 years, 21 numbers in digits, 20 number words, proper names by count, and 24 hedge words (after: 24) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The case against the New Testament's historical reliability has been made in many forms across two centuries of critical scholarship, but its most recent popular form — Bart Ehrman's Misquoting Jesus and the broader cultural narrative it represents — has been enormously influential.
+   After: The case against the New Testament's historical reliability has been made in many forms across two centuries of critical scholarship, but its most recent popular form, Bart Ehrman's Misquoting Jesus and the broader cultural narrative it represents, has been enormously influential.
+2. Before: What Paul includes in chapter fifteen is what scholars across the spectrum recognize as a pre-Pauline creed — a formulaic statement of the core gospel that existed before he wrote it down:
+   After: What Paul includes in chapter fifteen is what scholars across the spectrum recognize as a pre-Pauline creed, a formulaic statement of the core gospel that existed before he wrote it down:
+3. Before: This means we possess a formalized statement of the resurrection — naming specific witnesses, making specific claims about the sequence of appearances — within three to eight years of the crucifixion.
+   After: This means we possess a formalized statement of the resurrection (naming specific witnesses, making specific claims about the sequence of appearances) within three to eight years of the crucifixion.
+4. Before: The Apostolic Fathers — Clement, Ignatius, Polycarp, writing between 95 and 120 AD — quote from and allude to New Testament documents extensively.
+   After: The Apostolic Fathers (Clement, Ignatius, Polycarp, writing between 95 and 120 AD) quote from and allude to New Testament documents extensively.
+5. Before: What early dating means is that the New Testament documents were produced while eyewitnesses to the events they describe were still alive — and that is not a circumstance in which legendary embellishment flourishes.
+   After: What early dating means is that the New Testament documents were produced while eyewitnesses to the events they describe were still alive, and that is not a circumstance in which legendary embellishment flourishes.
