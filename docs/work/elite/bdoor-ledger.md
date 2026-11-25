@@ -20306,3 +20306,16 @@ Cut in chapter 25: the deep note's line to Matthew 4:8-10, which does not cite t
 | The hard note: deliberate defiance after warning; Leviticus 10 and Numbers 16; the fitting judgment; the honest difficulty | 16-23 `hard` | 2-chronicles/26.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 26: the deep note's lines to Psalm 110:4, Zechariah 6:13 and Hebrews as the meeting of king and priest, which the New Testament does not draw from this chapter.
+
+## The plain notes on 2 Chronicles 27 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Twenty-five and sixteen years (27:1); 27:2; the building (27:3-4); the Ammonites and tribute (27:5); 27:6; death and succession (27:8-9) | 1-9 | BSB | BSB text |
+| A quiet relief; shachat and Genesis 6:12; a king cannot turn a nation's heart; regent then king, about 750 to 735 BC; 2 Kings 15:37 (Rezin and Pekah); Isaiah 1:1, Hosea 1:1, Micah 1:1 and the prophets' charges; Tiglath-pileser the Third around 745 BC; the Upper Gate and Ophel; the cor; three years of tribute; kun and derekh | 1-9 | 2-chronicles/27.json `story`, `historical`, `cultural`, `literary`, `words` | Repository |
+| Micah 1:1 (its clause) | 1-9 | BSB | BSB text |
+| The hard note: sixteen years and 2 Kings 15:30's twentieth year; regency and overlap; Thiele; other explanations | 1-9 `hard` | 2-chronicles/27.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 27: the deep note's line to Isaiah 9:6-7 as fulfilled, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
