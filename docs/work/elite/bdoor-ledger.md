@@ -20118,3 +20118,20 @@ Cut in chapter 14: the deep note's lines to Luke 1:52 and 1 Corinthians 1:27, wh
 | The hard note on 15:13: Deuteronomy 13:6-10 and 17:2-7; covenant as constitution; the curse of the oath; not a pattern for the church (Matthew 26:52; John 18:36); the church's repentance for coercion | 8-19 `hard` | 2-chronicles/15.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 15: the deep note's lines to Matthew 7:7, John 14:9 and Mark 12:29-30, which do not cite this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 16 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 16:1 (its clause); the payment and message (16:2-3); Ben-hadad's attack, Geba and Mizpah (16:4-6); 16:7 (Hanani's first sentence); the Cushites recalled (16:8); 16:9 (its first sentence); 16:10 | 1-10 | BSB | BSB text |
+| The second half; sha'an three times; a good beginning not a guarantee; 1 Kings 15:16-22 and what Chronicles adds; Ramah; the northern towns near the Jordan's sources; buying help condemned (Isaiah 31:1); the date puzzle (1 Kings 16:8) and the two explanations; shut; sakal | 1-10 | 2-chronicles/16.json `story`, `historical`, `cultural`, `literary`, `words` (sha'an, shut, sakal) | Repository |
+| Isaiah 31:1 (its first clause and last sentence) | 1-10 | BSB | BSB text |
+| 16:12; Asa's death (16:13); 16:14 (its last clause) and the burial | 11-14 | BSB | BSB text |
+| Seeking to seeking only humans; rapha and Exodus 15:26; physicians not wrong; the magic guess not built on; the fire not cremation (Jeremiah 34:5; 21:19); 1 Kings 15:23; the illness not called a punishment | 11-14 | 2-chronicles/16.json `cultural`, `literary`, `words` (rapha), `hard`; BSB of 1 Kings 15:23 and 2 Chronicles 16:12 | Repository; BSB text |
+| Care line ("It needs to be said plainly. The Bible does not teach that sickness...") | 11-14 | Reused byte for byte from the site's existing plain notes and the 2 Chronicles book page | care.mjs |
+| 2 Kings 20:7 (Isaiah's words); Colossians 4:14 (its phrase) | 11-14 | 2-chronicles/16.json `hard`; BSB | Repository; BSB text |
+| The hard note: medicine not condemned; only the physicians; 2 Kings 20:7; Luke the physician; medical care and seeking God together | 11-14 `hard` | 2-chronicles/16.json `hard` | Repository |
+
+Cut in chapter 16: the deep note's lines to Luke 19:10 and James 5:14-15, which do not cite this chapter; and a closing imperative about doctors, which read as advice the notes should not give.
