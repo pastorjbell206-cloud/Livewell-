@@ -771,8 +771,18 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   stop carrying the old titles and look "elite and professional". Both were
   rebuilt by `scripts/build-book-files.mjs` (run by hand, not in CI) from the
   original EPUBs' own chapter files, kept in `content/books-src/<id>/`; the
-  author's words are unchanged, and `--verify` proves it against the
-  originals, which stay unserved in `content/held-downloads/originals/`. The
+  typesetter adds nothing, and `--verify` proves the built PDF and EPUB are,
+  word for word, the source folder's text. The originals stay untouched and
+  unserved in `content/held-downloads/originals/`. Until 2026-11-25 the
+  source folder had to be the original's text; then James asked for his
+  books to be edited ("i also want you to go through all the book, pdfs, and
+  downloadable content to make it sound human and like me"; and, of
+  fragments, "use full paragraphs in the books too", so
+  `docs/VOICE-JAMES-BELL.md` governs the books as well). Blind Spots is
+  edited (`edited` in its `book.json`): the proof of what the edit kept is
+  the fact diff against the original, chapter by chapter, in
+  `docs/work/elite/voice-books/blind-spots.md`. A Higher Allegiance is not
+  yet edited, and `--verify` still holds its source to its original. The
   files take the new names in the same folders (`Blind-Spots.pdf`,
   `A-Higher-Allegiance.pdf` and their EPUBs); each old file address 301s
   once to its new file. `docs/work/elite/bookshelf.md` section 8 has the
