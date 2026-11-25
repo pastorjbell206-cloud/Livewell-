@@ -1,10 +1,15 @@
 {
-  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/, which a rename never changes; the title and subtitle come from client/src/data/book-names.json. The sec*.xhtml files are the author's text, taken unchanged from the original EPUB kept in content/held-downloads/originals/: one block to a line. Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs the-monster-in-the-mirror --verify`. `copyright` is the notice as the original PDF printed it, without its unfilled ISBN line.",
+  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/, which a rename never changes; the title and subtitle come from client/src/data/book-names.json. The sec*.xhtml files are the author's text, one block to a line: taken from the original EPUB kept (untouched) in content/held-downloads/originals/, then edited at his instruction (see `edited`). Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs the-monster-in-the-mirror --verify`. `copyright` is the notice as the original PDF printed it, without its unfilled ISBN line.",
   "id": "the-monster-in-the-mirror",
   "author": "James Bell",
   "identifier": "urn:livewell:monster-v1",
   "language": "en",
-  "modified": "2026-11-23T00:00:00Z",
+  "modified": "2026-11-25T00:00:00Z",
+  "edited": {
+    "date": "2026-11-25",
+    "instruction": "James: \"i also want you to go through all the book, pdfs, and downloadable content to make it sound human and like me\"; and, the same day, \"use full paragraphs in the books too\".",
+    "record": "docs/work/elite/voice-books/blind-spots.md"
+  },
   "copyright": [
     "Copyright © 2026 by James Bell. All rights reserved. No part of this book may be reproduced in any form without written permission, except for brief quotations in reviews.",
     "Published by LiveWell by James Bell. livewellbyjamesbell.co",
