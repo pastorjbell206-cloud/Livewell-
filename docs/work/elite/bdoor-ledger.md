@@ -20022,3 +20022,19 @@ Cut in chapter 8: nothing from a line to Christ was needed. No care line is need
 | The hard note: 1 Kings 11 left out; whitewashing; the deliberate focus; Ahijah in 9:29; chapter 10; the founders of worship; Deuteronomy 17:16-17; both readings | 13-31 `hard` | 2-chronicles/9.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 9: the deep note's lines from Solomon's throne and the nations' gifts to Christ beyond Matthew 12:42. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 10 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shechem (10:1); 10:4; 10:7; the young men (10:8-10); 10:11 (its first sentence); the harsh answer (10:12-14); 10:15 | 1-15 | BSB | BSB text |
+| The bill for Solomon's splendor; the turning point, about 931 BC; the north still called Israel; 1 Kings 12 followed and 1 Kings 11 left out (Ahijah's cloak); verse 15 assuming Kings; Jeroboam over the labor, fled to Shishak; Shechem and Joshua 24; kingship as covenant (2 Samuel 5:3); etsah; the shepherd ideal; ol seven times; the crude reply and the scorpions | 1-15 | 2-chronicles/10.json `story`, `historical`, `cultural`, `words` (ol, etsah); kings guide (931) | Repository |
+| Proverbs 15:1; 1 Kings 11:31 (God's words) | 1-15 | BSB | BSB text |
+| The hard note: nesibbah; both truths held; the two theological explanations; Joseph (Genesis 50:20) and the crucifixion in Acts (Acts 2:23) | 1-15 `hard` | 2-chronicles/10.json `hard`, `words` (nesibbah) | Repository; the readings in their holders' terms |
+| 10:16; Judah's cities (10:17); Hadoram (10:18); 10:19 | 16-19 | BSB | BSB text |
+| Sheba's cry (2 Samuel 20:1); cheleq; to this day from Kings | 16-19 | 2-chronicles/10.json `cultural`, `literary`, `words` (cheleq) | Repository |
+| 2 Samuel 20:1 (the shout) | 16-19 | BSB | BSB text |
+
+Cut in chapter 10: the deep note's thematic contrast with Mark 10:45 and Matthew 11:28-30, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
