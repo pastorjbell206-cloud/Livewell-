@@ -18612,3 +18612,18 @@ Cut in chapter 8: the deep note's lines to Christ (John 9:1-3, Luke 13:1-5, Matt
 | The self-harm line, handled as 1 Kings 19 was | 13-22 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 10: the deep note's lines to Christ (John 1:3, 14 and Hebrews 4:15 as the answer to 10:4; the note calls it thematic); Khnum and the Mesopotamian creation stories (not needed).
+
+## The plain notes on Job 11 (2026-11-25)
+
+`client/public/bible/notes/job/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Zophar from Naamah, probably Edom or northern Arabia, unknown; the most impatient; Job called guilty outright; his case as he would sign it; the irony of wishing God would speak (42:7); two sides as a hidden dimension | 1-6 | job/11.json `story`, `historical`, `words` (tushiyyah), `doctrines` (wisdom) | Repository |
+| Psalm 103:10 | 1-6 | job/11.json `hard`; BSB | Repository; BSB text |
+| The hard note: a true idea; its false use against a blameless man; chapters 1 and 2; 42:7; true teaching spoken falsely; no one may say a sufferer deserves worse | 1-6 | job/11.json `hard` | Repository |
+| The hymn by the four directions; beautiful, and anticipating chapter 38; the irony; verse 12 as a folk saying, the wild donkey as a byword | 7-12 | job/11.json `literary`, `cultural`, `doctrines` (attributes) | Repository |
+| Genesis 16:12 | 7-12 | job/11.json `cultural`; BSB | Repository; BSB text |
+| Lifted hands as a posture of prayer; clean hands; sound counsel and beautiful promises; the pattern of the friends' endings; cruel only by its assumption; the hint in verse 20 | 13-20 | job/11.json `cultural`, `literary`, `doctrines` (repentance), `words` (tiqvah) | Repository |
+
+Cut in chapter 11: the deep note's lines to Christ (Romans 11:33 beside Zophar's hymn and 1 Corinthians 1:23-24 and 2:7; Paul quotes Job 41:11 in Romans 11:35, which is kept for chapter 41, but not Job 11); Mesopotamian prayers to reveal an unknown sin (not needed).
