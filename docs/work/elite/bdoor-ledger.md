@@ -19990,3 +19990,19 @@ Cut in chapter 6: the deep note's lines from the anointed one and the hearing Go
 | The hard note on 7:14: the verse's public use and those who love it heard first; the three readings (Israel only; a broader principle; the church fully, the nation left to God); the site's guide and its reading (concrete to Israel; God's people in every nation, owned by none; God hears humble prayer; no promise of national revival or political victory; humbling brought mercy, not greatness; praying for one's country right; the error when a nation takes the place of God's people); the demand beginning with God's people and their own wicked ways | 12-22 `hard` | 2-chronicles/7.json `hard`; context/guides/2-chronicles-7-14-in-context.json sections 0, 3 and 4 | Repository; agrees with the guide |
 
 Cut in chapter 7: the guide's first-person line about who made the signs, and its naming of particular political sides, left to the guide itself. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 8 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Twenty years (8:1); 8:2; the cities (8:3-6); the conscripted peoples (8:7-8); 8:9; 8:11 (Solomon's words) | 1-11 | BSB | BSB text |
+| Seven and thirteen years, about 950 BC; 1 Kings 9 and its differences; Hazor, Megiddo, Gezer, Yadin and the ninth-century dating; Tadmor as Palmyra and Tamar in 1 Kings 9:18; store and chariot cities; forced labor reported; no Israelite enslaved; the treaty marriage and the holiness of the ark's places | 1-11 | 2-chronicles/8.json `historical`, `cultural` | Repository |
+| 1 Kings 9:11 | 1-11 | BSB | BSB text |
+| The hard note: 8:2 against 1 Kings 9:10-14; the three explanations; 120 talents; the returned towns widely held | 1-11 `hard` | 2-chronicles/8.json `hard` | Repository; the readings in their holders' terms |
+| The offerings and feasts (8:12-13); 8:14 (its first sentence); the gatekeepers; 8:16 (its last sentence); Ezion-geber, Eloth and Ophir (8:17-18) | 12-18 | BSB | BSB text |
+| Worship at the center; mitsvah three times; chag and hajj; gatekeepers; the building story closed from 1 Chronicles 22; Ophir's proposed places | 12-18 | 2-chronicles/8.json `story`, `words` | Repository |
+| Deuteronomy 16:16 (its first clause) | 12-18 | BSB | BSB text |
+
+Cut in chapter 8: nothing from a line to Christ was needed. No care line is needed in this chapter.
