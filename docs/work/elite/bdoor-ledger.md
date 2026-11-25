@@ -21039,3 +21039,23 @@ Cut in chapter 19: the deep note's lines to Christ (Luke 6:35 and Matthew 25:40 
 | Romans 12:19 (its first sentence); Ecclesiastes 5:5 | 22-30 | proverbs/20.json `historical` (Ecclesiastes 5:4-5), `christ` (Romans 12:17-19 as Paul's own use of the saying); BSB | Repository; BSB text |
 
 Cut in chapter 20: the deep note's lines to Christ (1 Peter 2:23 and Jesus' non-retaliation beside verse 22; John 1:14 and Christ as the king of verse 28); Romans 3:23 (Romans 3:10 kept in the hard note).
+
+## The plain notes on Proverbs 21 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 21:1; 21:2; 21:3; 21:4 paraphrased (it holds dashes); 21:5; 21:6; 21:7; 21:8 | 1-8 | BSB | BSB text |
+| Irrigation channels turned by foot or hoe (Deuteronomy 11:10); the king's heart turned as easily; plans under God's rule (16:1, 9; 19:21; 20:24) carried to the king and to war; verse 3 in the language of the prophets and Samuel; sacrifice no substitute for justice | 1-8 | proverbs/21.json `cultural`, `story`, `historical` | Repository |
+| Ezra 1:1 (in part); Micah 6:8 | 1-8 | proverbs/21.json `christ` (Ezra 1:1), `historical` (Micah 6:6-8); BSB | Repository; BSB text |
+| 21:9; 21:10; 21:13; 21:14; 21:15; 21:17; 21:18; 21:19 | 9-19 | BSB | BSB text |
+| Flat roofs and their uses; the roof and the desert as exaggerations; 19:13, 25:24, 27:15; not a comment on women in general (19:14); angry men warned against (22:24; 29:22); no license for contempt; verse 13's warning; verse 14 as description, Jacob's gifts to Esau (Genesis 32:20), 17:23 | 9-19 | proverbs/21.json `cultural`, `literary`; proverbs/19.json `cultural`; proverbs/18.json `cultural` (Jacob's gifts) | Repository |
+| Care line (‘If you are being hurt, at home, at work or in a church, tell someone you trust and get help...’ to ‘...lists places to turn.’) | 9-19 | tracks/family.json, deuteronomy/plain/13.json and 27.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| Isaiah 58:9 (its first clause); Esther 7:10 (its first sentence) | 9-19 | the chapter data's cross-references for 21:13 (Isaiah 58:9) and 21:18 (by way of 11:8); proverbs/21.json `hard` (Esther 7:10); BSB | Repository; BSB text |
+| The hard note: the puzzle of a ransom; 11:8 and the reversal; Haman and Mordecai; ransom used loosely; the guilty bearing the penalty they sought (Deuteronomy 19:19) | 9-19 `hard` | proverbs/21.json `hard` | Repository |
+| 21:20; 21:21; 21:22; 21:23; 21:25; 21:26; 21:27 paraphrased (it holds a dash); 21:30; 21:31 | 20-31 | BSB | BSB text |
+| Verses 25-26 as a pair, grasping and giving; verse 27 sharpening verse 3, a sacrifice to buy favor for a planned wrong; war horses and chariots; Deuteronomy 17:16 and Solomon's chariots (1 Kings 10:26-29); preparation not trusted; verse 30's triple no | 20-31 | proverbs/21.json `literary`, `historical` | Repository |
+| Psalm 20:7; Psalm 33:17 (its first clause) | 20-31 | proverbs/21.json `historical` (Psalm 20:7); the chapter data's cross-references for 21:31 (Psalm 33:17); BSB | Repository; BSB text |
+
+Cut in chapter 21: the deep note's lines to Christ (Acts 4:27-28 as the deepest example of verse 1; Matthew 9:13 and 12:7 beside verse 3; 1 Corinthians 15:57 as verse 31 fulfilled; Mark 10:45 and 1 Peter 3:18 set in contrast with verse 18, which the note says is not what the proverb means).
