@@ -25,7 +25,8 @@ His limit for em-dashes is 2 to 3 per 500 words, which is 4 to 6 per 1,000. Head
 | Chapter 2: How the Bible Gets Translated by the Room You're In | 4,482 | 4,482 | +0.0% | 67 (14.9) | 13 (2.9) | 135 (30.1) | 78 (17.4) | 49 | PASS |
 | Chapter 3: The Monster Is Never the One in the Mirror | 4,447 | 4,439 | -0.2% | 62 (13.9) | 11 (2.5) | 145 (32.6) | 90 (20.3) | 48 | PASS |
 | Chapter 4: The Organized Blind Spot | 5,139 | 5,134 | -0.1% | 65 (12.6) | 17 (3.3) | 134 (26.1) | 82 (16.0) | 46 | PASS |
-| **All 5** | 21,013 | 20,990 | -0.1% | 293 (13.9) | 61 (2.9) | 675 (32.1) | 417 (19.9) | 225 | |
+| Chapter 5: When Fear Becomes Theology | 4,513 | 4,514 | +0.0% | 67 (14.8) | 13 (2.9) | 137 (30.4) | 80 (17.7) | 40 | PASS |
+| **All 6** | 25,526 | 25,504 | -0.1% | 360 (14.1) | 74 (2.9) | 812 (31.8) | 497 (19.5) | 265 | |
 
 ## Introduction: Every Generation Was Convinced (`sec01.xhtml`)
 
@@ -145,3 +146,27 @@ Five pairs:
    After: The community drifts, not because any individual decides to move, but because the feedback loops within the community amplify certain signals and dampen others, and over time the community's sense of where the center is has shifted significantly from where the broader world's center is, without the community being aware that any movement has occurred. This happens in political communities, in academic communities, and in media ecosystems. And it happens, with particular intensity and particular consequences, in religious communities, because religious communities have available to them the additional conviction that their location, however far it may have drifted, is the location of truth.
 
 Left alone, and why. "The homogeneous community is not less intelligent than the heterogeneous one. It is less correctable.", "Peter was not being dishonest. He was being tribal." and "You are held by a tribe." are the chapter's verdicts. The paragraph on McGavran is fair to him ("describing a sociological reality, not prescribing an ideal") and took one comma for a dash. The refrain "you have simply never been formed by Amos ... you have simply never encountered it" keeps every "simply"; one earlier "simply" that was filler went. The balanced paragraph on conservative evangelical and progressive mainline formation ("Neither is doing anything unusual or dishonest.") took one comma. Seventeen dashes stay, most around an aside that carries its own list (Peter in Galatians 2; the global church; "if no evidence, no argument, no testimony ..."). One joining phrase was added to turn four fragments into a sentence ("It shapes what counts as evidence, ...").
+
+
+## Chapter 5: When Fear Becomes Theology (`sec08.xhtml`)
+
+Words 4,513 to 4,514. Em-dashes in his prose 67 to 13 (14.8 to 2.9 per 1,000 words). Tells 137 to 80 (30.4 to 17.7 per 1,000). Mean sentence 23.8 words to 24.4; sentences of eight words or fewer 22.1% to 18.9%; of five or fewer 7.4% to 4.9%. 40 edits; paragraphs 47 to 47.
+
+By kind (before to after): emdash 67 to 13, not_but 8 to 9, not_just 1 to 1, NotX.Y 6 to 4, isnt_its 11 to 11, triplet 12 to 13, anaphora 10 to 8, intens 10 to 9, q_answered 1 to 1, colon_reveal 4 to 4, short_close 7 to 7.
+
+Fact diff: **PASS**. Fixed blocks (headings, subtitle, pull quote, block quotes and their references) identical; 0 quoted strings, 15 Scripture references, 0 years, 7 numbers in digits, 34 number words, proper names by count, and 74 hedge words (after: 74) compared.
+
+Five pairs:
+
+1. Before: The person who believed the threat was ultimate was not performing alarm — they felt it — and the feeling of ultimate alarm is extraordinarily resistant to ordinary moral reasoning, because ordinary moral reasoning appears, from inside the alarm, as naive, as insufficient to the moment, as the kind of response that comfortable people offer when they do not understand what is at stake.
+   After: The person who believed the threat was ultimate was not performing alarm; they felt it, and the feeling of ultimate alarm is extraordinarily resistant to ordinary moral reasoning, because ordinary moral reasoning appears, from inside the alarm, as naive, as insufficient to the moment, as the kind of response that comfortable people offer when they do not understand what is at stake.
+2. Before: Babylon was the enemy — the power that had destroyed Jerusalem, killed their people, and carried them from their land — and the prophet's word was to pray for it, to seek its welfare.
+   After: Babylon was the enemy, the power that had destroyed Jerusalem, killed their people, and carried them from their land, and the prophet's word was to pray for it, to seek its welfare.
+3. Before: The martyrs were urgent — they refused to compromise what mattered most, at enormous personal cost — but their urgency was oriented toward God and toward the people around them, not toward the defeat of the enemy.
+   After: The martyrs were urgent; they refused to compromise what mattered most, at enormous personal cost. But their urgency was oriented toward God and toward the people around them, not toward the defeat of the enemy.
+4. Before: That is the difference. Not the presence or absence of fear. Not the presence or absence of urgency. But whether the fear governs, or whether something larger than the fear governs. The community in which fear has become the governing orientation — in which the shared alarm is what holds the community together, in which the magnitude of the threat is the primary driver of the community's theology and practice — that community is in a theological condition that 2 Timothy calls not of God, and that 1 John calls not yet perfected in love.
+   After: That is the difference: not the presence or absence of fear, not the presence or absence of urgency, but whether the fear governs, or whether something larger than the fear governs. The community in which fear has become the governing orientation, in which the shared alarm is what holds the community together, in which the magnitude of the threat is the primary driver of the community's theology and practice — that community is in a theological condition that 2 Timothy calls not of God, and that 1 John calls not yet perfected in love.
+5. Before: It may be sincere. It may be passionate. It may cite Scripture from morning to night.
+   After: It may be sincere, it may be passionate, and it may cite Scripture from morning to night.
+
+Left alone, and why. The opening build ("It is not greed ... It is not pride ... It is fear.") is the chapter's first hinge and stays. So do "They are not stupid. They are frightened.", "They are not companions. They are competitors." and the Psalm 56 pair ("The psalmist is not pretending to be unafraid. He is refusing to let the fear be the governor."). The passage the pull quote echoes ("It feels like clarity.") was not touched. The concession that some fears named real dangers, the paragraph granting that the prophets were urgent too, and the sentence that fear's compression of prophecy "appears in progressive and conservative communities alike, in charismatic and cessationist communities alike" are word for word apart from punctuation. The three "catastrophizing logic" sentences (inquisitor, German Christian, slaveholder) are a deliberate parallel and were left. Thirteen dashes stay.
