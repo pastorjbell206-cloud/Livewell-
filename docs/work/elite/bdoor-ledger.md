@@ -18745,3 +18745,17 @@ Cut in chapter 18: the deep note's lines to Christ (Hebrews 2:14-15, 1 Corinthia
 | The hard note: the Redeemer as God himself (16:19) or a heavenly figure; Christians reading it of Christ, Job not knowing Jesus, the New Testament not quoting it; in my flesh or apart from the flesh; the timing; three readings (resurrection; vindication after death; seeing God before death, as in chapter 42); no side; Job's certainty | 23-29 | job/19.json `hard`, `christ` (the New Testament does not quote this verse) | Repository; each reading in its holders' terms; no side |
 
 Cut in chapter 19: the deep note's lines to Christ (Hebrews 2:14, Ephesians 1:7, 1 Peter 1:18-19, 1 Corinthians 15:20-23 and 1 John 3:2 as the answer to 19:25-27; the note itself says the Christian reading should be held with care and that the New Testament does not quote the verse); Handel and funerals (not needed).
+
+## The plain notes on Job 20 (2026-11-25)
+
+`client/public/bible/notes/job/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Zophar hearing only the warning of chapter 19; his last speech, no third turn; his case as he would sign it; the ancient consensus; chaneph | 1-11 | job/20.json `story`, `historical`, `words` (chaneph) | Repository |
+| Psalm 37:35-36 | 1-11 | job/20.json `hard` (Psalms 37 and 73); BSB | Repository; BSB text |
+| The eating images; venom and gall; honey and cream; the crime of verse 19 and the prophets; no direct address and no repentance, the door of chapter 11 closed; portion and inheritance turned bitter | 12-29 | job/20.json `cultural`, `literary`, `words` (cheleq, nachalah, bala) | Repository |
+| Psalm 16:5 | 12-29 | job/20.json `words` (cheleq: the LORD as the faithful's portion in the Psalms); BSB | Repository; BSB text |
+| The hard note: the real difficulty; timing; application; compassion; 42:7 | 12-29 | job/20.json `hard`, `doctrines` | Repository; each answer in its holders' terms |
+
+Cut in chapter 20: the deep note's lines to Christ (the mockers at the cross, Isaiah 53 and the rich fool of Luke 12:16-21; the note calls the link thematic).
