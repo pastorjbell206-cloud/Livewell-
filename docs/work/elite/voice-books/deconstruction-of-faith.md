@@ -489,9 +489,9 @@ Five pairs, taken at even intervals through the chapter:
 
 All twenty files were edited. In his running prose: 44,834 words before and after; em-dashes 477 before, 0 after (10.6 to 0.0 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all twenty.
 
-**Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets, or joins fragments. No word was added, removed or replaced. One fragment stack was joined: "Not atheist. Not agnostic. None." is "Not atheist, not agnostic: none." (chapter 1, sec01).
+**Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets, or joins fragments. No word was added, removed or replaced. One fragment stack was joined: "Not atheist. Not agnostic. None." is "Not atheist, not agnostic: none." (introduction).
 
-**Left alone, and why.** "Name the teachings. Name the books. Name the conferences." (the chapter on purity culture) are three imperatives, full sentences, and stay. Every line about Ravi Zacharias, the Southern Baptist Convention, Mars Hill and Hillsong is as he wrote it.
+**Left alone, and why.** "Name the teachings. Name the books. Name the conferences." (chapter 12) are three imperatives, full sentences, and stay. Every line about Ravi Zacharias, the Southern Baptist Convention, Mars Hill and Hillsong is as he wrote it.
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
@@ -500,7 +500,7 @@ All twenty files were edited. In his running prose: 44,834 words before and afte
 The chapters were not read whole for this list. It comes from reading every block quotation against its reference and attribution, and from searching for statements of his ministry, statistics and studies. The book states no figure for his years in ministry or his books.
 
 1. ★ The block quotation "Prayer doesn't change God. It changes me." is "attributed to C. S. Lewis". It is not in Lewis's writings; it comes from the film Shadowlands (1993). The attribution says "attributed", but the sentence is better given to the film or dropped.
-2. ★ "the share of Americans who identify as Christian has fallen from roughly eighty percent at the turn of the century to somewhere near sixty-five percent today, and the curve is accelerating rather than leveling off" (sec01). Pew's series begins at 78 percent in 2007 and stood near 62 to 63 percent in its 2023-24 study, which reported that the decline had levelled off since about 2019; "accelerating" says the opposite of Pew's latest finding.
+2. ★ "the share of Americans who identify as Christian has fallen from roughly eighty percent at the turn of the century to somewhere near sixty-five percent today, and the curve is accelerating rather than leveling off" (introduction). Pew's series begins at 78 percent in 2007 and stood near 62 to 63 percent in its 2023-24 study, which reported that the decline had levelled off since about 2019; "accelerating" says the opposite of Pew's latest finding.
 3. "Tom Holland ... wrote a seven-hundred-page book called Dominion": the first edition runs to a little over six hundred pages.
 4. **Translation.** The copyright page names the ESV. Acts 17:11 ("of more noble character than the Thessalonians"), John 20:27 ("Stop doubting and believe") and 1 Corinthians 15:14-15 ("useless ... false witnesses") are the NIV's wording; Genesis 1:27 is the King James's ("in the image of God created he him").
 5. The block quotation "If what we think the Bible teaches conflicts with what we can demonstrate about the world ..." is marked "after Augustine, De Genesi ad litteram". It is a paraphrase, and is marked as one; listed only so that no one quotes it as Augustine's words.
@@ -509,3 +509,7 @@ The chapters were not read whole for this list. It comes from reading every bloc
 
 1. Keep the Shadowlands line, give it to the film, or drop it?
 2. Bring the NIV and King James quotations to the ESV, or name the translations used?
+
+## The files
+
+Rebuilt after the last chapter: still 180 pages (`client/src/data/ebooks.ts` says 180), PDF 1.3 MB, EPUB 338 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,777 words compared, no difference); the PDF's pages carry the same text character for character (227,704 against 227,704). A chapter's second page (a heading at its top) was looked at as an image.

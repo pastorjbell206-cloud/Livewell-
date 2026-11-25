@@ -849,6 +849,9 @@ differ in is said under each book. Each was then edited (records in
   heading at the top of the first page after the opening page therefore set
   one line lower and the chapter ran a page long. That first block now has
   no top margin (`.rest > :first-child`).
+  Then edited (`deconstruction-of-faith.md`): 477 dashes in his prose to 0,
+  every edit punctuation, fact diff passed on all twenty files; rebuilt,
+  still 180 pages, `--verify` identical (47,777 words; 227,704 characters).
 
 ### The apparatus
 
