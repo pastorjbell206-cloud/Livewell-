@@ -19326,3 +19326,18 @@ Cut in chapter 38: the deep note's lines to Christ (John 1:3, Colossians 1:16-17
 | The hard note: enlarging Job's world; the wild order beyond reward and punishment; the tenderness of God's attention for a bereaved father | 26-30 | job/39.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 39: the deep note's line to Christ (Matthew 10:29-31; the note says the chapter is not a prophecy and should not be read as allegory).
+
+## The plain notes on Job 40 (2026-11-25)
+
+`client/public/bible/notes/job/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The exchange between the two speeches; yissor and its irony; the hand over the mouth as silence before a greater (29:9); the honor culture; no confession of the friends' charges; verse 5 paraphrased (it holds a dash) | 1-5 | job/40.json `literary`, `cultural`, `words` (yissor), `hard` | Repository |
+| The same opening; mishpat and verse 8; kingship, majesty and humbling the proud; the right hand; justice as God's work | 6-14 | job/40.json `literary`, `cultural`, `words` (mishpat, tsadaq) | Repository |
+| The hard note: a limited rebuke; verse 8; no charge of the friends' sins; the prologue's verdict kept; 42:7; the two reconciliations; protest not sin, judging God the line; silence and repentance as recognition | 6-14 | job/40.json `hard` | Repository; each reading in its holders' terms |
+| Behemoth the beast of beasts and the foremost of God's works; made along with Job; the hippopotamus, the Nile, Egyptian hunts; the Jordan as any surging river; power beyond Job's reach | 15-24 | job/40.json `historical`, `literary`, `words` (Behemoth) | Repository |
+| Proverbs 8:22 | 15-24 | job/40.json `words` (Behemoth: Proverbs 8:22); BSB | Repository; BSB text |
+| The hard note: hippopotamus; elephant or water buffalo; a real animal in mythic language; the dinosaur proposal and the tail; no side | 15-24 | job/40.json `historical` | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 40: the deep note's lines to Christ (Philippians 2:6-11 and Luke 1:51-52 beside God's challenge; the note calls the connection thematic).
