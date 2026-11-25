@@ -22,7 +22,7 @@ import { LoadFailed } from "@/components/LoadFailed";
 import { chapterBookName, chapterHref } from "@/lib/bible";
 import { fetchTimeline, nameList, type ExploreBook, type TimelineData, type TimelineEntry, type TimelineKind } from "@/lib/bibleExplore";
 import { Band, Status, useLoad } from "../study-bible/shared";
-import { NotYet, TestamentChips, useStaged, type Testament } from "./shared";
+import { NotYet, TestamentChips, onJump, useStaged, type Testament } from "./shared";
 import "../study-bible/bible.css";
 import "./explore.css";
 
@@ -189,7 +189,7 @@ export function TimelineView({ data, initialBook = "" }: { data: TimelineData; i
                     </span>
                   </>
                 );
-                return <li key={b.id}>{n ? <a href={`#${b.id}`}>{row}</a> : <span className="bx-line__row">{row}</span>}</li>;
+                return <li key={b.id}>{n ? <a href={`#${b.id}`} onClick={onJump(b.id)}>{row}</a> : <span className="bx-line__row">{row}</span>}</li>;
               })}
             </ol>
           </nav>
@@ -213,7 +213,7 @@ export function TimelineView({ data, initialBook = "" }: { data: TimelineData; i
             </div>
             <ol className={`bk-tl bx-tl${i ? " bx-far" : ""}`}>{rows(b.id)}</ol>
             <p className="bx-top">
-              <a href="#line">Back to the line of time</a>
+              <a href="#line" onClick={onJump("line")}>Back to the line of time</a>
               {narrowed && (
                 <>
                   {" "}

@@ -778,11 +778,12 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   books to be edited ("i also want you to go through all the book, pdfs, and
   downloadable content to make it sound human and like me"; and, of
   fragments, "use full paragraphs in the books too", so
-  `docs/VOICE-JAMES-BELL.md` governs the books as well). Blind Spots is
-  edited (`edited` in its `book.json`): the proof of what the edit kept is
-  the fact diff against the original, chapter by chapter, in
-  `docs/work/elite/voice-books/blind-spots.md`. A Higher Allegiance is not
-  yet edited, and `--verify` still holds its source to its original. The
+  `docs/VOICE-JAMES-BELL.md` governs the books as well). Both books
+  are edited (`edited` in each `book.json`): the proof of what an edit kept
+  is the fact diff against the original, chapter by chapter, in
+  `docs/work/elite/voice-books/blind-spots.md` and
+  `a-higher-allegiance.md`. A book with no `edited` entry is still held to
+  its original by `--verify`. The
   files take the new names in the same folders (`Blind-Spots.pdf`,
   `A-Higher-Allegiance.pdf` and their EPUBs); each old file address 301s
   once to its new file. `docs/work/elite/bookshelf.md` section 8 has the
@@ -918,6 +919,20 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   from the Bible files by `scripts/build-memory-verses.mjs` (drift-checked),
   never typed; a verse returns after 1, 3, 7, 14 and 30 days. No second
   memorizing tool: the existing address was rebuilt.
+- **Four pages across the book pages (James, 2026-11-25: "more content and
+  videos and interactive pages than bible project")**: the Bible's timeline
+  (/study/timeline), the Bible atlas (/study/atlas), Key words of the Bible
+  (/study/words) and Hard passages (/study/hard-passages), all inside "Read
+  the Study Bible". Each reads one file under `client/public/bible/explore/`,
+  written by `scripts/build-bible-<timeline|atlas|words|hard>-index.mjs`
+  (rules in `scripts/lib/bible-explore.mjs`; `--check` is a content gate)
+  from the book pages' own `teaching` data, word for word: no page adds a
+  claim. So: change a book's intro.json, then rerun the four scripts. A date
+  is never chosen between books (the same-event list is
+  `scripts/bible-timeline-same.json`, judgments only); a language is named
+  only where a book's sentence names it; hard passages have no kinds because
+  the data has none, and each keeps its link to its note and Find Help in
+  reach. `docs/work/elite/interactive.md` has the rules and the run.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.
