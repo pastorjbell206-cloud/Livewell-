@@ -802,6 +802,21 @@ one by stylesheet rules added for later books, never in a word). `--verify`
 passes for each as before, and their page counts are unchanged (244, 207,
 191).
 
+**Then edited, the same day.** The Reliability of Scripture was the fourth
+book edited at James's word, by Believe's method; its `book.json` carries
+`edited`, and the record is
+`docs/work/elite/voice-books/the-reliability-of-scripture.md` (per chapter,
+the counts, the fact diff's result and five pairs; the whole book; a list of
+things that look wrong, none changed, with where this book and Believe
+disagree; and questions for him). In short: 406 edits in 45 of its 47 files,
+every one punctuation; em-dashes in his prose fell from 579 to 4 (13.1 to
+0.1 per 1,000 words); no word was added, removed or replaced, and the word
+count of every chapter is unchanged; the fact diff passed on every edited
+file. `--verify` on the rebuilt files: the EPUB carries exactly the source
+folder's text (48,545 words compared, no difference), the PDF's pages the
+same text character for character (251,607 against 251,607). Still 241
+pages, so `client/src/data/ebooks.ts` is unchanged; PDF 1.6 MB, EPUB 345 KB.
+
 ### The apparatus
 
 - The new title and subtitle are on the cover, half-title, title page,
@@ -859,6 +874,7 @@ Left exactly as written:
 | Believe, edited, 2026-11-25 | 191 | 1.4 MB | 300 KB |
 | The Reliability of Scripture, before | 261 | 665 KB | 253 KB |
 | The Reliability of Scripture, typeset, 2026-11-25 (no word changed) | 241 | 1.6 MB | 345 KB |
+| The Reliability of Scripture, edited, 2026-11-25 | 241 | 1.6 MB | 345 KB |
 
 The old PDFs were set loosely (A Higher Allegiance at about 115 words a
 page); the new ones at about 270. The new PDFs are larger: they carry the
