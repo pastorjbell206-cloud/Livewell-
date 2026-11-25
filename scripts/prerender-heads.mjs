@@ -615,6 +615,11 @@ const paras = (text) =>
   String(text ?? "").split(/\n{2,}/).map((x) => x.trim()).filter(Boolean).map((x) => `<p>${inline(x)}</p>`).join("\n");
 const sec = (heading, body) => (body ? `<section><h2>${escapeHtml(heading)}</h2>\n${body}</section>` : "");
 const article = (parts) => `<article>\n${parts.filter(Boolean).join("\n")}\n</article>`;
+// A section of a very long list (the cross-book Bible pages hold several
+// hundred entries). All but the first are marked so the browser lays them out
+// only as they near the screen (.pre-far in index.css); the words are all in
+// the file for a reader without scripts.
+const far = (i, heading, body) => (body ? `<section${i ? ' class="pre-far"' : ""}><h2>${escapeHtml(heading)}</h2>\n${body}</section>` : "");
 
 /** An argued answer's parts and sources (answers.ts `sections`, `sources`), as plain HTML. */
 function argued(a) {
@@ -985,6 +990,28 @@ const PAGE_BODIES = {
         `<p class="pre-subtitle">Seven steps that work on any chapter. Learn them here, then try them on a real one.</p>`,
         sec("Seven steps, in order", `<ol>\n${STUDY_STEPS.map((s) => `<li><strong>${escapeHtml(s.title)}.</strong> ${escapeHtml(s.what)}</li>`).join("\n")}\n</ol>\n<p>${escapeHtml(KEPT_HERE)}</p>`),
         `<p><a href="/study/bible/john/3?study=walk">Try it on John 3</a></p>`,
+      ]),
+    };
+  },
+  // The Bible's timeline: every book page's timeline entries, by the stretch of
+  // years each is listed in, in the book's own words, with the way to its book
+  // (client/public/bible/explore/timeline.json, built from the book pages).
+  "/study/timeline": async () => {
+    const d = readJsonSafe("client/public/bible/explore/timeline.json");
+    if (!d?.entries?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const row = (e) => {
+      const b = books.get(e.book);
+      const href = e.ch ? `/study/bible/${b.slug}/${e.ch}${e.v ? `#v${e.v}` : ""}` : `/study/bible/${b.slug}`;
+      const name = e.ch ? `${b.slug === "psalms" ? "Psalm" : b.name} ${e.ch}${e.v ? `:${e.v}` : ""}` : b.name;
+      return `<li><strong>${escapeHtml(e.when)}.</strong> ${escapeHtml(e.what)} <a href="${href}">${escapeHtml(name)}</a></li>`;
+    };
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>The Bible's timeline</h1>`,
+        `<p class="pre-subtitle">Every date the book pages give, on one line of time. Each entry opens its book.</p>`,
+        ...d.bands.map((band, i) => far(i, band.name, `<ol>\n${d.entries.filter((e) => e.band === band.id).map(row).join("\n")}\n</ol>`)),
       ]),
     };
   },

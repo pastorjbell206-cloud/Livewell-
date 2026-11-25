@@ -489,14 +489,15 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (54
+On every PR, five blocking steps: `pnpm check` → the content-gates step (58
 commands, the workflow file is the list; among them: 25 validators: scripture, design, life, studyguides, pathways,
 theology, politics, no-emdash, essays, content-integrity, skeptic-track,
 answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
 workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
 bible-notes; the history-source verifier `verify-sources`; and the `--check`
 drift checks for the family year map, family index, topics index, search
-index, passage index, Bible text, Bible word search, the 2027 story plan,
+index, passage index, the four cross-book Bible indexes (timeline, atlas,
+key words, hard passages), Bible text, Bible word search, the 2027 story plan,
 the family film map, the memory verses and the Bible Explorer films'
 recorded voice) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
