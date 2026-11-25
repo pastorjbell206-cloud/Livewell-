@@ -838,6 +838,10 @@ function WordStudy({ books, lang, word, sel, setSel }: { books: BibleBook[]; lan
               ) : null;
             })}
           </p>
+          {/* The word's own page: a bar for each book that uses it, and every verse (pages/bible-explore/StudyWord.tsx). */}
+          <p style={{ margin: "8px 0 0", fontFamily: "var(--U)", fontSize: "13.5px" }}>
+            <Link href={`/study/word/${lex.key}`} style={{ ...quietLink, display: "inline-flex", alignItems: "center", minHeight: "44px" }}>Study this word: its books and all its verses</Link>
+          </p>
         </>
       )}
 

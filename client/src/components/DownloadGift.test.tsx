@@ -140,8 +140,8 @@ describe("held: a download is the plain link it always was", () => {
     expect(window.localStorage.getItem(ASKED_KEY)).toBeNull();
   });
 
-  it("the committed switch is off, so this is what ships", () => {
-    expect(GIVING.open).toBe(false);
+  it("the committed switch is on (James, 2026-11-25), so the sheet is what ships", () => {
+    expect(GIVING.open).toBe(true);
   });
 });
 
