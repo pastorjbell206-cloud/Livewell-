@@ -18673,3 +18673,17 @@ Cut in chapter 13: the deep note's lines to Christ (1 Peter 2:23, Luke 23:46, Ac
 | The self-harm line, handled as 1 Kings 19 was | 13-22 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 14: the deep note's lines to Christ (John 11:25, 1 Corinthians 15:20, 53-54, and Isaiah 11:1 read as fulfilled in Jesus set beside Job's tree; the New Testament does not draw them from Job); Egyptian and Mesopotamian beliefs about the dead (not needed).
+
+## The plain notes on Job 15 (2026-11-25)
+
+`client/public/bible/notes/job/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The second round and its hardening; no promise, only the fate of the wicked; the east wind; born before the hills; the council of God; the irony that the reader saw it; tanchum and 16:2; yirah and 1:1 | 1-16 | job/15.json `story`, `cultural`, `words` (sod, tanchum, yirah), `doctrines` (revelation) | Repository |
+| Proverbs 8:25 | 1-16 | job/15.json `cultural`; BSB | Repository; BSB text |
+| Teman's wise men; ancestral wisdom pure and unmixed; the oldest teaching thought most reliable; the portrait's movement; the vine and the olive; aimed at Job without naming him | 17-35 | job/15.json `historical`, `cultural`, `literary` | Repository |
+| Psalm 7:14; Psalm 73:3 | 17-35 | job/15.json `literary` (Psalm 7:14), `doctrines` (judgment: Psalm 73), `hard`; BSB | Repository; BSB text |
+| The hard note: much matching Scripture; a rule in this life; chapter 21; Psalm 73; true of final judgment, false of every visible life; 42:7; never held up to a sufferer | 17-35 | job/15.json `hard` | Repository |
+
+Cut in chapter 15: the deep note's lines to Christ (Colossians 1:15-17 and John 1:18 beside Eliphaz's mocking questions; the note calls it thematic and says Eliphaz means nothing of the kind); Obadiah 8 (not needed).
