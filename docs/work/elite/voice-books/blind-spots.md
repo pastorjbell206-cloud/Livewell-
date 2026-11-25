@@ -34,7 +34,8 @@ His limit for em-dashes is 2 to 3 per 500 words, which is 4 to 6 per 1,000. Head
 | Conclusion: The Question You Have to Answer | 2,573 | 2,570 | -0.1% | 30 (11.7) | 6 (2.3) | 87 (33.8) | 55 (21.4) | 22 | PASS |
 | Appendix A: The Verses We Got Wrong | 6,912 | 6,913 | +0.0% | 92 (13.3) | 7 (1.0) | 173 (25.0) | 92 (13.3) | 62 | PASS |
 | Appendix B: How to Read the Bible | 2,768 | 2,767 | -0.0% | 24 (8.7) | 4 (1.4) | 57 (20.6) | 36 (13.0) | 14 | PASS |
-| **All 14** | 59,057 | 59,029 | -0.0% | 815 (13.8) | 144 (2.4) | 1733 (29.3) | 1019 (17.3) | 566 | |
+| Appendix C: Recommended Reading | 2,436 | 2,436 | +0.0% | 38 (15.6) | 4 (1.6) | 65 (26.7) | 32 (13.1) | 24 | PASS |
+| **All 15** | 61,493 | 61,465 | -0.0% | 853 (13.9) | 148 (2.4) | 1798 (29.2) | 1051 (17.1) | 590 | |
 
 ## Introduction: Every Generation Was Convinced (`sec01.xhtml`)
 
@@ -370,3 +371,27 @@ Five pairs:
    After: The reader who has arrived at a final, settled interpretation of every text, who no longer approaches Scripture as something that might say something she hasn't heard before, has stepped off the spiral.
 
 Left alone, and why. This appendix was already the plainest writing in the book (24 dashes, the fewest tells per thousand words), and it is a manual: its short imperative openers ("Read the whole before the part.", "Ask what the text demands.", "Read with people unlike you.") are headings in all but name, and the list of common errors is a list. Its statement on progressive revelation and its closing word on the authority of Scripture are his positions and took a dash at most. One "precisely" went. Four dashes stay.
+
+
+## Appendix C: Recommended Reading (`sec18.xhtml`)
+
+Words 2,436 to 2,436. Em-dashes in his prose 38 to 4 (15.6 to 1.6 per 1,000 words). Tells 65 to 32 (26.7 to 13.1 per 1,000). Mean sentence 17.9 words to 17.9; sentences of eight words or fewer 22.8% to 22.8%; of five or fewer 12.5% to 12.5%. 24 edits; paragraphs 38 to 38.
+
+By kind (before to after): emdash 38 to 4, not_but 3 to 3, triplet 13 to 14, stock 1 to 1, intens 1 to 1, q_answered 1 to 1, short_close 6 to 6, one_line_para 1 to 1, forbidden 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (headings, subtitle, pull quote, block quotes and their references) identical; 4 quoted strings, 5 Scripture references, 37 years, 48 numbers in digits, 22 number words, proper names by count, and 44 hedge words (after: 44) compared.
+
+Five pairs:
+
+1. Before: Festinger's central finding — that disconfirmed predictions tend to strengthen rather than weaken belief among committed group members — is the empirical foundation for much of what this book argues about community-shaped self-deception.
+   After: Festinger's central finding, that disconfirmed predictions tend to strengthen rather than weaken belief among committed group members, is the empirical foundation for much of what this book argues about community-shaped self-deception.
+2. Before: Bonhoeffer's critique of cheap grace — the grace that costs nothing and changes nothing — is one of the twentieth century's most important theological arguments.
+   After: Bonhoeffer's critique of cheap grace, the grace that costs nothing and changes nothing, is one of the twentieth century's most important theological arguments.
+3. Before: Pelikan's own trajectory — from Lutheran to Eastern Orthodox — is itself a demonstration of the argument that every tradition's reading is revisable.
+   After: Pelikan's own trajectory, from Lutheran to Eastern Orthodox, is itself a demonstration of the argument that every tradition's reading is revisable.
+4. Before: A rigorously researched account of how German Protestants responded — or failed to respond — to the Nazi state.
+   After: A rigorously researched account of how German Protestants responded, or failed to respond, to the Nazi state.
+5. Before: McKnight's argument — that every Christian picks and chooses from Scripture, and that the question is not whether you do so but by what principles — is the popular-level version of the hermeneutical argument this book makes at a more theoretical level.
+   After: McKnight's argument, that every Christian picks and chooses from Scripture, and that the question is not whether you do so but by what principles, is the popular-level version of the hermeneutical argument this book makes at a more theoretical level.
+
+Left alone, and why. A reading list: every author, title, edition, year and volume is as it was, and so is every judgment of a book ("Essential.", "Dense but worth the effort.", "Useful counterweight to McLaren."). The annotations are notes, and their fragments are the form of a note, so none was joined. All 24 edits are dashes recast; no word changed. Four dashes stay. The title of Christopher Wright's book carries a word on the Forbidden Language list ("Unlocking"); it is a title and stays.
