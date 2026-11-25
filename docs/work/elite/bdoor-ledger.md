@@ -17159,3 +17159,18 @@ A note on the chapter 2 rows: the source given there as ‘judges (Ehud)’ for 
 | Proverbs 1:1; Proverbs 6:6; Matthew 6:29 | 29-34 | 1-kings/4.json `words` (mashal: Proverbs 1:1), `christ` (Matthew 6:29); matthew/plain/6.json (25-34, `hearers`); BSB | Repository; BSB text; Matthew 6:29 is Jesus' own word about Solomon |
 
 Cut in chapter 4: Psalm 72 and Revelation 7:9 set beside the nations coming to Solomon (the deep note calls the links thematic, not lines the New Testament draws to this chapter); the names of all twelve governors and their towns (the list is summarized, not repeated); 4:24 paraphrased because it carries a dash.
+
+## The plain notes on 1 Kings 5 (2026-11-25)
+
+`client/public/bible/notes/1-kings/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hiram's envoys and his friendship with David (5:1); 5:4; 5:5 (quoted inside its inner quotation); 5:6; the story of David's house moving toward the temple and the play on house in 2 Samuel 7; Tyre and the Phoenicians; Josephus on Tyrian records mentioning Hiram; Lebanon's cedar prized and boasted of by Egyptian and Mesopotamian kings; Sidonians as a general name; David's wars here and his bloodshed in Chronicles; rest on every side from Deuteronomy | 1-6 | 1-kings/5.json `story`, `historical`, `words` (banah); BSB | Repository; BSB text |
+| Deuteronomy 12:10-11; 1 Chronicles 22:8 (quoted inside its inner quotation) | 1-6 | 1-kings/5.json `story` (Deuteronomy 12:10-11; 1 Chronicles 22:8); BSB | Repository; BSB text |
+| Hiram's praise (5:7, paraphrased: it carries ‘Blessed’ and an exclamation); the terms (5:8-9); 5:10; wheat and oil (5:11); 5:12 as the hinge; the exchange of royal messages; the complementary economies; Joppa in Chronicles; a foreign king praising the LORD and the prayer for foreigners (8:41-43) | 7-12 | 1-kings/5.json `historical`, `literary`, `doctrines` (providence); BSB | Repository; BSB text |
+| 2 Chronicles 2:16; Acts 12:20 | 7-12 | 1-kings/5.json `historical` (2 Chronicles 2:16); acts/plain/12.json (20-25, `ot`: 1 Kings 5:11); BSB | Repository; BSB text |
+| The levy (5:13-14); porters, stonecutters and foremen (5:15-16); 5:17; the builders and the men of Gebal (5:18); temple-building as a king's highest act and the royal inscriptions; the house for the Name, God present and not contained (8:27); forced labor common, the rotation, the huge numbers; 9:20-22 beside 5:13-14, permanent slavery and temporary service as many interpreters distinguish them; the resentment in chapter 12; Gebal as Byblos | 13-18 | 1-kings/5.json `cultural`, `historical`, `literary`, `words` (mas, shem); BSB | Repository; BSB text; the readings in their holders' terms |
+| Exodus 1:11 and mas; Joshua 16:10 | 13-18 | exodus/plain/1.json (8-14, `hearers`); joshua/plain/16.json (5-10, `later`); BSB | Repository; BSB text |
+
+Cut in chapter 5: John 1:14, John 2:19-21, 1 Peter 2:5, Ephesians 2:21-22, Psalm 118:22 and Mark 10:45 set beside the temple and its builders (the deep note calls them thematic connections, not lines the New Testament draws to this chapter); that the men of Gebal were known as builders (not stated in the repository; cut before commit).
