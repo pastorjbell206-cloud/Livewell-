@@ -20812,3 +20812,25 @@ Cut from the book page: the introduction's lines from 3:13 to Jesus' teaching on
 | The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 15-20 `hard` | genesis/plain/6.json; 2-kings/plain/17.json; 2-chronicles/plain/36.json and others | Reused whole, word for word; Find Help named; no phone number |
 
 Cut in chapter 1: the deep note's lines to 1 Thessalonians 5:2, 2 Peter 3:10, Luke 19:41-44 and Mark 13:8, which the New Testament does not draw from this chapter.
+
+## The plain notes on Joel 2 (2026-11-25)
+
+`client/public/bible/notes/joel/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (its last clause before the dash; the rest paraphrased); 2:2-10 paraphrased; 2:11 (its first sentence and its question) | 1-11 | BSB | BSB text |
+| Chapter 1 to the Day in full view; the ram's horn for alarm and assembly; three readings of the army (locusts as army, details fitting swarms; a northern human invader and 2:20; an end-time force); blurred on purpose; the army the LORD's own | 1-11 | joel/2.json `story`, `historical`, `cultural` | Repository; the readings in their holders' terms |
+| Amos 5:18 (its last sentence); Isaiah 13:10 | 1-11 | joel/2.json `hard` (Isaiah 13:10); BSB | Repository; BSB text |
+| 2:12 (its first words; the rest paraphrased); 2:13; 2:14 (its first sentences; the rest paraphrased, without its 'blessing'); 2:15-17 paraphrased (2:17's inner quotations not quoted) | 12-17 | BSB | BSB text |
+| The turning point; not too late; tearing clothes as a sign kept but made inward; Exodus 34:6 quoted in 2:13, also in the psalms and Jonah; infants and newlyweds and Deuteronomy 24:5; between the porch and the altar; the horn of 2:15 for worship | 12-17 | joel/2.json `story`, `cultural`, `literary`, `historical` | Repository |
+| Exodus 34:6 (its quoted words); Jonah 4:2 named; Deuteronomy 24:5 | 12-17 | joel/2.json `literary`, `historical`; BSB | Repository; BSB text |
+| 2:18; 2:19-24 and 2:26 paraphrased; 2:25 (to its dash); 2:27 (its phrase) | 18-27 | BSB | BSB text |
+| The hinge at 2:18; chapter 1 reversed point by point; the four locust names again; the autumn and spring rains and their months; the word that can mean teacher; the Eastern and Western Seas; the stench and dead swarms | 18-27 | joel/2.json `literary`, `cultural` | Repository; both readings of 2:23 in their holders' terms |
+| Deuteronomy 11:14 (its clause); Hosea 2:21-22 | 18-27 | BSB | BSB text |
+| 2:28; 2:29; 2:30-31 paraphrased; 2:32 (its first clause; the rest paraphrased) | 28-32 | BSB | BSB text |
+| The Spirit on particular people for tasks; all kinds of people; afterward after the restoration; the wonders as the prophets' language; the Hebrew chapter 3 | 28-32 | joel/2.json `literary`; joel/intro.json `themes` (the Spirit for all) | Repository |
+| Numbers 11:29 (its clause); Acts 2:16; Romans 10:13 | 28-32 | joel/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+| The hard note: three answers (Luke 23:44-45; prophetic imagery and Isaiah 13:10; begun at Pentecost, completed at the return); overlapping; the age of the Spirit; Peter's stress | 28-32 `hard` | joel/2.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 2: nothing drawn to the New Testament beyond Acts 2:16 and Romans 10:13, which quote the chapter. The question of 2:17 and the opening of 2:12, both inner quotations, are paraphrased or quoted in part.
