@@ -18854,3 +18854,21 @@ Cut in chapter 8: the deep note's reading of David's kindness to Mephibosheth as
 | Leviticus 24:8; Psalm 84:10 (its second sentence) | 17-44 | 1-chronicles/9.json `cultural` (Leviticus 24:5-9); BSB | Repository; BSB text |
 
 Cut in chapter 9: the deep note's lines to Jesus as the door, the bread of life and the temple of his body, which it calls thematic. A quotation of 9:11 was first given in the words of 2 Chronicles 31; the cited check caught it before it reached the repository. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 10 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 10:1; the sons killed and Saul wounded (10:2-3); his death and his armor-bearer's named, not described (10:4-5); 10:6; the towns abandoned (10:7); the stripping, armor and head, the news (10:8-10); Jabesh-gilead and 10:12 (its last words) | 1-12 | 1-chronicles/10.json `summary`; BSB | Repository; BSB text; 10:4-5 not quoted |
+| The story beginning with an ending; Saul's reign passed over; the chapter's purpose; about 1010 BC; 1 Samuel 31 followed, Beth-shan and Dagon; Gilboa and the Jezreel Valley; the Philistines cutting off the north; a king's body as trophy; burial and disgrace; Jabesh and 1 Samuel 11; seven days of mourning | 1-12 | 1-chronicles/10.json `story`, `historical`, `cultural` | Repository |
+| 1 Samuel 31:13 | 1-12 | 1-chronicles/10.json `historical`; BSB | Repository; BSB text |
+| The hard note: named in a verse, not described; the Bible's few such deaths reported without long comment and never honorable; sorrow, not contempt; the burial; Christian traditions differing, grace and compassion; a tragedy to grieve | 1-12 `hard` | 1-samuel/plain/31.json (1-6, `hard`) | Repository; as the site's note on 1 Samuel 31 states it |
+| The care line (‘If you have thoughts of hurting yourself...’ to ‘...lists places to turn.’) | 1-12 `hard` | 1-samuel/plain/31.json; 1-kings/plain/16.json and the other files named in the 1 Kings rows | Reused whole, word for word; Find Help named |
+| 10:13; 10:14 | 13-14 | 1-chronicles/10.json `summary`; BSB | Repository; BSB text |
+| The Chronicler's verdict; ma'al and 9:1; the word not kept; the medium (Leviticus 19:31; Deuteronomy 18:10-12; 1 Samuel 28:3); darash and the measure of later kings; shaal and Saul's name | 13-14 | 1-chronicles/10.json `literary`, `cultural`, `words` (darash, maal, shaal, ov) | Repository |
+| Deuteronomy 18:11 (its phrase) | 13-14 | 1-chronicles/10.json `cultural`; BSB | Repository; BSB text |
+| The hard note: 1 Samuel 28:6 and 10:14; shaal and darash; asking without seeking; the medium; a verdict on a whole reign; not denying the inquiry | 13-14 `hard` | 1-chronicles/10.json `hard` | Repository; the views in their holders' terms |
+
+Cut in chapter 10: the deep note's contrast between Saul and Jesus (Matthew 26:39), which it calls a connection of theme and not a prediction. The words of 10:4-5 are not quoted.
