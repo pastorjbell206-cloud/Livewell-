@@ -18743,3 +18743,19 @@ Cut in chapter 1: the deep note's line from the narrowing of the chapter to the 
 | Ruth 4:22 | 18-55 | 1-chronicles/2.json `historical` (Ruth 4); BSB | Repository; BSB text |
 
 Cut in chapter 2: the deep note's lines beyond the New Testament's own (the shape of the family God works through set beside Jesus). No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 3 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 (its first words); the six Hebron sons and mothers (3:1-3); 3:4 (two phrases); 3:5 (its phrase); nine more sons (3:6-8); 3:9 (its last sentence) | 1-9 | 1-chronicles/3.json `summary`, `outline`; BSB | Repository; BSB text |
+| The spine of hope; large royal households and alliance marriage; Maacah and Geshur; mothers named for succession; Bath-shua and Ammiel against Eliam (2 Samuel 11:3); Solomon last; shalom; Amnon, Absalom, Adonijah and Tamar as 2 Samuel tells them, not told here | 1-9 | 1-chronicles/3.json `story`, `cultural`, `literary`, `words` (Solomon); 2-samuel plain notes (13, 15 to 18); 1-kings/plain/1.json and 2.json | Repository |
+| 2 Samuel 5:5 | 1-9 | 1-chronicles/3.json `historical`; BSB | Repository; BSB text |
+| The kings from Solomon to Josiah (3:10-14); Josiah's sons, Jeconiah (3:15-16); 3:17; Shealtiel and Pedaiah (3:18); 3:19 (its first sentence); Zerubbabel's line (3:19-24) | 10-24 | 1-chronicles/3.json `summary`, `outline`; BSB | Repository; BSB text |
+| Four centuries; Athaliah passed over (2 Kings 11); the chain breaking; Jeconiah taken in 597 BC; the Babylonian ration tablets; assir; Zerubbabel about 520 BC and the temple (Ezra 3; Haggai 1); the line to the Chronicler's time; the promise not cancelled; Hasadiah | 10-24 | 1-chronicles/3.json `story`, `historical`, `cultural`, `literary`, `words` (assir, Zerubbabel); 2-kings/intro.json `setting` (the ration tablets) | Repository |
+| Jeremiah 22:30; Haggai 2:23; Matthew 1:11; Luke 3:31 | 10-24 | 1-chronicles/3.json `words` (Zerubbabel: Haggai 2:23 and Jeremiah 22:24), `christ` (Matthew 1:6-12; Luke 3:31); BSB | Repository; BSB text; the Gospels' own genealogies |
+| The hard note: Pedaiah and Shealtiel (Ezra 3:2; Haggai 1:1; Matthew 1:12); brothers; levirate marriage (Deuteronomy 25:5-6); raised as heir; the Greek reading; Jeconiah's grandson in all sources | 10-24 `hard` | 1-chronicles/3.json `hard` | Repository; the views in their holders' terms |
+
+Cut in chapter 3: the deep note's line that the heir has come, beyond the Gospels' own genealogies, which are quoted. Tamar's story is named, not told; the site's plain note on 2 Samuel 13 tells it with its care line. No care line is used in this chapter.
