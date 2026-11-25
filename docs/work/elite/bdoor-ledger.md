@@ -20838,3 +20838,28 @@ Cut in chapter 7: Hebrews 11:35 and Luke 12:32, first drafted as later lines, we
 | Daniel 11:21; Daniel 2:34; Psalm 2:4 (added when the validator asked for a book beyond Daniel) | 23-27 `later` | BSB | BSB text |
 
 Cut in chapter 8: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Daniel 9 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1-3 | 1-3 | BSB | BSB text |
+| 539 or 538 BC; the old Daniel; Scripture as the starting point; the seventy years counted two ways (605 to 539 or 538; 587 or 586 to 516 or 515); sackcloth and ashes | 1-3 | daniel/9.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Jeremiah 29:10; Ezra 1:1 | 1-3 `later` | BSB | BSB text |
+| 9:4-14 | 4-14 | BSB | BSB text |
+| Deuteronomy 7:9 and Nehemiah 1:5; Solomon's prayer (1 Kings 8:47); the verbs and the contrast; confession in the plural (Leviticus 26:40); the LORD eight times; a known prayer adapted | 4-14 | daniel/9.json `cultural`, `literary` | Repository |
+| 1 Kings 8:47 (inside the BSB's speech marks); Nehemiah 1:6; Ezra 9:6 | 4-14 `later` | BSB | BSB text |
+| 9:15-19 (9:19 in double quotes for its exclamations) | 15-19 | BSB | BSB text |
+| Ours to yours; God's name and character; Baruch and the Qumran prayers | 15-19 | daniel/9.json `literary`, `historical` | Repository |
+| Exodus 32:11-12 named; Numbers 6:25 and Psalm 80:3 (the first typed inexactly, caught and corrected) | 15-19 `later` | BSB | BSB text |
+| 9:20-23 | 20-23 | BSB | BSB text |
+| The evening sacrifice and the temple in ruins; prayer at that hour (Ezra 9:5; Psalm 141:2); the answer at the beginning; highly precious | 20-23 | daniel/9.json `cultural` | Repository |
+| Psalm 141:2; Isaiah 65:24 (first typed inexactly, caught and corrected) | 20-23 `later` | BSB | BSB text |
+| 9:24-27 | 24-27 | BSB | BSB text |
+| Sevens, sabbath years and jubilee (Leviticus 25); 490 years; six purposes; the dark turn; the BSB's Messiah and the article; the return not the end | 24-27 | daniel/9.json `literary`, `cultural`, `story`, `hard` | Repository |
+| Matthew 24:15; Leviticus 25:10 | 24-27 `later` | BSB | BSB text |
+| The hard note: the Jewish readings (Seder Olam, Rashi), the critical reading (Onias III), the traditional Christian reading (Young, Calvin), the dispensational reading, the symbolic reading; Jerome's refusal; no side, no date calculated | 24-27 `hard` | daniel/9.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 9: the deep note's lines to Christ beyond the stated readings. No care line is needed in this chapter.
