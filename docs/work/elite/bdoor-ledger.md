@@ -19896,3 +19896,19 @@ Cut from the book page: the introduction's line from Jesus' body as the temple (
 | The hard note: the law for kings; the two readings (seeds of later trouble; the promise kept); the minority view of Egypt near Kue; faults left to Kings | 14-17 `hard` | 2-chronicles/1.json `hard`; 2-chronicles/9.json | Repository; the readings in their holders' terms |
 
 Cut in chapter 1: the deep note's lines to Isaiah 11:1-2 and 1 Corinthians 1:24, 30 as fulfillments, and Christ as the wise king whose wisdom never failed, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 2 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; the conscription (2:2); the letter (2:3-4); 2:5; 2:6 (its first question); the requests and payment (2:7-10) | 1-10 | BSB | BSB text |
+| From plan to site; chapters 3 to 7; Tyre and its trade; Hiram and David's cedar; Lebanon's cedar prized; 1 Kings 5's payment and the two parts; the heavens of heavens; the worship of the second temple | 1-10 | 2-chronicles/2.json `story`, `historical`, `cultural`, `literary`, `words` (shamayim) | Repository |
+| 2 Chronicles 6:18 (its first sentence); Acts 7:48 (its first sentence) | 1-10 | BSB | BSB text |
+| 2:11; 2:12 (its clause); Huram-abi (2:13-14); 2:16 paraphrased; 2:17; 2:18 paraphrased | 11-18 | BSB | BSB text |
+| Ahavah; Huram-abi as a second Oholiab (Exodus 31:6); the tabernacle colors and Phoenician purple; chakham six times; Joppa and thirty-five miles; the chapter numbering | 11-18 | 2-chronicles/2.json `historical`, `cultural`, `literary`, `words` (chakham, ahavah) | Repository |
+| Leviticus 19:34 (its first sentence); Jeremiah 22:13 (its clauses) | 11-18 | BSB | BSB text |
+| The hard note: 1 Kings 9 and 2 Chronicles 8; the levy of 1 Kings 5; 1 Kings 12; corvée reported, not commended; the law's memory of Egypt; ger; the prophets (Jeremiah 22:13); chapter 10 | 11-18 `hard` | 2-chronicles/2.json `hard`, `words` (ger) | Repository |
+
+Cut in chapter 2: nothing from the deep note's line to Christ was needed. No care line is needed in this chapter.
