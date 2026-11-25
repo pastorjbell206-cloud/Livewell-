@@ -18727,3 +18727,19 @@ Cut from the book page: the introduction's line from Jesus' body as the temple (
 | Genesis 12:3; Galatians 3:8 (cited) | 28-54 | 1-chronicles/1.json `christ` (the promise to Abraham); BSB | Repository; BSB text |
 
 Cut in chapter 1: the deep note's line from the narrowing of the chapter to the gospel going to every nation, which it calls the story's shape and not a prediction. The later field for verses 28-54 was first under the validator's minimum, and Galatians 3:8, Paul's own reading of the promise, was added before it reached the repository. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 2 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; the twelve sons (2:1-2); 2:3; Tamar, Perez and Zerah (2:4); 2:7; Ram's line to Jesse (2:10-12); 2:15; Zeruiah and Abigail, Amasa's Ishmaelite father (2:16-17) | 1-17 | 1-chronicles/2.json `summary`, `outline`; BSB | Repository; BSB text |
+| Judah first for David's sake; the name David here first; Genesis 38 and 46, Ruth 4, Joshua 7, 1 Samuel as sources; Achar and akar; ma'al and its later uses (10:13; 9:1); shadows in the line; chosen, not spotless; Bath-shua the Canaanite; Amasa | 1-17 | 1-chronicles/2.json `story`, `historical`, `cultural`, `words` (maal, akar, David) | Repository |
+| Matthew 1:3; Hebrews 7:14 | 1-17 | 1-chronicles/2.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+| The hard note: seven sons and eight (1 Samuel 16:10-11; 17:12); a brother left out; seven as fullness; a relative counted; not settled; the youngest chosen | 1-17 `hard` | 1-chronicles/2.json `hard` | Repository; the views in their holders' terms |
+| Caleb's and Jerahmeel's clans (2:18-55); 2:34; 2:35; the line going on; the scribes and Kenites (2:55) | 18-55 | 1-chronicles/2.json `summary`, `outline`; BSB | Repository; BSB text |
+| Found nowhere else; other records; the south and the Negev; the Jerahmeelites (1 Samuel 27:10; 30:29); the Calebites and Hebron (Joshua 14:13-14); the two Calebs uncertain; towns with fathers (Tekoa, Ziph, Mareshah, Hebron, Beth-zur, Kiriath-jearim, Bethlehem); the Persian-period province and Edomite land; a family without a son | 18-55 | 1-chronicles/2.json `historical`, `cultural` | Repository |
+| Ruth 4:22 | 18-55 | 1-chronicles/2.json `historical` (Ruth 4); BSB | Repository; BSB text |
+
+Cut in chapter 2: the deep note's lines beyond the New Testament's own (the shape of the family God works through set beside Jesus). No care line is needed in this chapter.
