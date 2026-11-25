@@ -20696,3 +20696,22 @@ Cut in chapter 9: the deep note's lines to Christ (the parable of the wedding fe
 | The hard note: verses 3, 27 and 30 false as guarantees; Job; Ecclesiastes 9:11 (its first clause after the colon); the psalms; the genre; 26:4-5; the final outcome reading and the this-life reading; no formula, and no reason to think the hungry or grieving deserved it | 22-32 `hard` | proverbs/10.json `hard`; BSB | Repository; BSB text; each reading in its holders' terms |
 
 Cut in chapter 10: the deep note's lines to Christ (Matthew 12:42 and Jesus' sayings as mashal; the two builders, Matthew 7:24-27, set beside verse 25; 1 Corinthians 1:24; the love that covers as the cross). The 375-verse count is left to the book page. No care line is needed in this chapter.
+
+## The plain notes on Proverbs 11 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 11:1; 11:2; 11:3; 11:4; 11:10 (its first clause); 11:11; 11:13; 11:14 | 1-14 | BSB | BSB text |
+| From home to public square; weighed silver before coins; stone weights in a bag and a hand balance; inscribed weights from Judah that vary; two sets of weights forbidden (Deuteronomy 25:13-16; Leviticus 19:35-36); the prophets (Amos 8:5; Micah 6:11); to'evah; elders at the gate and kings' advisers | 1-14 | proverbs/11.json `story`, `historical`, `literary`, `words` (to'evah) | Repository |
+| Deuteronomy 25:15 (its first clause); Micah 6:11 | 1-14 | proverbs/11.json `historical`; BSB | Repository; BSB text |
+| 11:15; 11:16; 11:17; 11:18; 11:20 (its second clause, the first paraphrased); 11:22 | 15-23 | BSB | BSB text |
+| Surety and what could be lost; not a ban on generosity (verses 24-25); pigs unclean (Leviticus 11:7); the nose ring and Rebekah (Genesis 24:47); the grotesque picture; beauty not condemned but wasted; abomination and delight bracketing verses 1 and 20 | 15-23 | proverbs/11.json `cultural`, `literary` | Repository |
+| 2 Corinthians 9:6 (its second sentence, from ‘Whoever’) | 15-23 | the chapter data's cross-references for 11:25 (2 Corinthians 9:6) and 11:18 (Galatians 6:8); BSB | Repository; BSB text |
+| 11:24; 11:25; 11:26; 11:28; 11:30; 11:31 (set in double quotes, as it ends with an exclamation) | 24-31 | BSB | BSB text |
+| Verses 24-26 as a cluster; the grain dealer in a lean year; the tree of life and Eden; the how-much-more argument | 24-31 | proverbs/11.json `historical`, `literary` | Repository |
+| 1 Timothy 6:17 (from ‘not to put’); 1 Peter 4:18 quoting verse 31 in its Greek form, applied to believers suffering for Christ's name | 24-31 | the chapter data's cross-references for 11:28 (1 Timothy 6:17); proverbs/11.json `christ` (1 Peter 4:18 and the Septuagint); 1-peter/plain/4.json `ot`; BSB | Repository; BSB text; the New Testament's own quotation |
+| The hard note: the Hebrew ‘takes lives’ and 1:19; the three readings (winning people toward life; the Greek reading of violence; a wordplay); a saying about the influence of the righteous, not a technical instruction; a fair extension without overbuilding | 24-31 `hard` | proverbs/11.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 11: the deep note's lines set beside Jesus (Luke 6:38 beside verses 24-25; the rich fool, Luke 12:16-21, as verse 28 told as a story; the tree of life and Revelation 22:2; the note calls them thematic). No care line is needed in this chapter.
