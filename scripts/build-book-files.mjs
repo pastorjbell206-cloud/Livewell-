@@ -841,6 +841,7 @@ h2{margin:22.5pt 0 7.5pt;font:600 13.6pt/${PAGE.lead}pt "Cormorant Garamond";tex
 p.pull{margin:22.5pt 30pt;font:italic 400 15pt/22.5pt "Cormorant Garamond";text-indent:0;text-align:center;hyphens:none;text-wrap:balance;break-inside:avoid}
 .ch-head + p.pull{margin-top:0}
 p.pull + h2{margin-top:0}
+.rest > :first-child{margin-top:0}
 blockquote{margin:${PAGE.lead}pt 0 ${PAGE.lead}pt 18pt;padding-right:18pt}
 blockquote.short{break-inside:avoid}
 blockquote.cut-a{margin-bottom:0}
@@ -955,7 +956,9 @@ function printHtml(book, plan) {
       } else target.push(printBlock(b, prev, { greedy }));
       prev = b.t;
     });
-    if (cut) html.push(`<div style="page:open">${open.join("\n")}</div>`, `<div style="page:c${s.n}">${rest.join("\n")}</div>`);
+    // The rest begins at the top of a page after a forced break, where Chromium keeps a block's top margin;
+    // on the measuring pass that page began after an unforced break, where the margin is dropped.
+    if (cut) html.push(`<div style="page:open">${open.join("\n")}</div>`, `<div class="rest" style="page:c${s.n}">${rest.join("\n")}</div>`);
     else html.push(`<div style="page:c${s.n}">${rest.join("\n")}</div>`);
     out.push(`<section id="s${s.n}">${html.join("\n")}</section>`);
   }
@@ -1206,7 +1209,10 @@ async function buildPdf(book, outFile, keep) {
     book.stats.softHyphensAtBreaks = SOFT_KEEP.size;
     SOFT_KEEP = null;
     const finalTexts = pageTexts(raw);
-    if (finalTexts.length !== total) fail(`${book.id}: the second pass has ${finalTexts.length} pages, the plan ${total}`);
+    if (finalTexts.length !== total) {
+      const moved = book.sections.find((s) => sectionStarts(book, finalTexts, 6)[s.n] !== plan.start[s.n]);
+      fail(`${book.id}: the second pass has ${finalTexts.length} pages, the plan ${total}${moved ? ` (first moved: "${moved.title}")` : ""}`);
+    }
     const finalStarts = sectionStarts(book, finalTexts, 6);
     for (const s of book.sections) {
       if (finalStarts[s.n] !== plan.start[s.n]) fail(`${book.id}: "${s.title}" starts on page ${finalStarts[s.n] + 1}, the plan said ${plan.start[s.n] + 1}`);

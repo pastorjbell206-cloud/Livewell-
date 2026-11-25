@@ -101,7 +101,7 @@ export const FREE_EBOOKS: Ebook[] = [
     title: "The Deconstruction of Faith",
     sub: "Why People Are Leaving the Church, and What Comes After",
     line: "An honest reckoning with why people are leaving the church, what the church owes them, and where faith goes from here. Not a defense and not a surrender.",
-    pages: 391,
+    pages: 180,
     cover: "/covers/deconstruction-of-faith-400.webp",
     pdf: "/ebook/deconstruction-of-faith/The-Deconstruction-of-Faith.pdf",
     epub: "/ebook/deconstruction-of-faith/The-Deconstruction-of-Faith.epub",

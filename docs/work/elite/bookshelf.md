@@ -838,6 +838,17 @@ differ in is said under each book. Each was then edited (records in
   his prose to 0, every edit punctuation, fact diff passed on all fifteen
   files; rebuilt at 161 pages (`client/src/data/ebooks.ts` says 161),
   `--verify` identical (47,089 words; 214,892 characters).
+- **The Deconstruction of Faith** (`deconstruction-of-faith`). The PDF and
+  EPUB carry the same text, letter for letter (221,772 letters), with four
+  places where the PDF's text extraction reads a pull quote in a different
+  order; no word differs. 391 pages became 180 (`client/src/data/ebooks.ts`
+  says 180). `--verify`: identical. **The typesetter learned one thing**: a
+  chapter's pages after its opening page begin after a forced page break,
+  where Chromium keeps a heading's top margin, while on the measuring pass the
+  same page began after an ordinary break, where the margin is dropped; a
+  heading at the top of the first page after the opening page therefore set
+  one line lower and the chapter ran a page long. That first block now has
+  no top margin (`.rest > :first-child`).
 
 ### The apparatus
 
