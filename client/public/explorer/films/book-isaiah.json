@@ -1,0 +1,116 @@
+{
+  "slug": "book-isaiah",
+  "title": "Isaiah: the Holy One who comforts",
+  "group": "books",
+  "status": "finished",
+  "book": "isaiah",
+  "mark": "book-isaiah",
+  "line": {
+    "younger": "The longest book of the prophets: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Isaiah as a whole book: its three parts, the Holy One of Israel, trust or ruin, judgment and a remnant, the king and the Servant, a new creation, and where to begin."
+  },
+  "poster": "Inside a great house a man bows low to the ground. Smoke rises in the room, and a gold light shines down from above and beyond the picture.",
+  "frames": [
+    {
+      "id": "holy",
+      "name": "The Holy One of Israel",
+      "still": "Inside a great house a man bows low to the ground. Smoke rises in the room, and a gold light shines down from above and beyond the picture.",
+      "younger": "Isaiah is the longest book of the prophets. A prophet is someone God sends to speak his word. Isaiah saw a vision of God as king, and heard voices call out that God is holy. The whole book grows out of that day.",
+      "older": "Isaiah spoke to the kings of Judah in the days of the Assyrian empire. His signature name for God comes from his vision: the Holy One of Israel. Holiness exposes human pride, and it also means God's commitment to his people.",
+      "verse": {
+        "ref": "Isaiah 6:3",
+        "text": "Holy, holy, holy is the LORD of Hosts; all the earth is full of His glory."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in three panels, with a city wall, a road through hills and a young tree over them. A gold rule lies under the second panel, the road home.",
+      "younger": "Isaiah has three big parts. The first speaks to God's people in their own land, with hard warnings and bright promises. The second brings comfort to people who have been taken far from home. The third looks ahead to a world made new.",
+      "older": "The book has three major parts. The first speaks to Judah in the prophet's own day: judgment, threaded with promise. From chapter 40 the voice speaks comfort to a people in exile. The last chapters speak to a community back in the land, still waiting.",
+      "verse": {
+        "ref": "Isaiah 40:1",
+        "text": "“Comfort, comfort My people,” says your God."
+      }
+    },
+    {
+      "id": "trust",
+      "name": "Watch for: trust or ruin",
+      "still": "A king sits on his seat with a far line of spears on the hill behind him. Before him a prophet with a staff holds out a hand, and a gold sun stands in the sky.",
+      "younger": "Watch for a choice. Again and again the kings must choose what to lean on: armies and stronger kings, or God. One king, Hezekiah, prays, and his city is kept safe.",
+      "older": "Again and again the kings of Judah must choose between trusting God and trusting military power or foreign alliances. Ahaz chooses Assyria. Hezekiah prays. The book's verdict is that faith is the only real security.",
+      "verse": {
+        "ref": "Isaiah 7:9",
+        "text": "If you do not stand firm in your faith, then you will not stand at all."
+      }
+    },
+    {
+      "id": "remnant",
+      "name": "Watch for: judgment, and what is left",
+      "still": "A great tree has been cut down to a stump on a bare hill. From the stump one green shoot is growing.",
+      "younger": "Watch for hard words, and for what comes after. Isaiah tells his own people, and every nation, that God sees the wrong they do. But that is not where the book ends. Like a new shoot from a tree stump, something is left, and it grows.",
+      "older": "God's judgment in Isaiah is real and severe, and it falls on Judah and on every nation alike. It is not where the book ends. Through it God preserves a remnant, a people who will return to him.",
+      "verse": {
+        "ref": "Isaiah 1:18",
+        "text": "Though your sins are like scarlet, they will be as white as snow"
+      }
+    },
+    {
+      "id": "servant",
+      "name": "Watch for: the king and the Servant",
+      "still": "Night. A shepherd family stands on a hillside and looks toward a small town, where a gold star stands over one house.",
+      "younger": "Watch for someone who is coming. Isaiah speaks of a child who will be king and bring peace. He speaks of a Servant who suffers for others. Hundreds of years later, the first Christians read those words and said: this is Jesus.",
+      "older": "Isaiah gives three portraits of the one through whom God will act: a royal child from David's line, a Servant who suffers for others, and an anointed messenger of good news. Jewish interpreters have often read the Servant as Israel. The New Testament sees all three in Jesus.",
+      "verse": {
+        "ref": "Isaiah 53:5",
+        "text": "But He was pierced for our transgressions"
+      }
+    },
+    {
+      "id": "new",
+      "name": "Watch for: a world made new",
+      "still": "People of many lands climb a road toward a city on a hill. Beside the road a man beats a sword into a plough blade, and a gold sun stands over the city.",
+      "younger": "Watch for where it is all going. Isaiah sees people from every nation coming to learn God's ways, and swords made into ploughs. At the end he sees a new heaven and a new earth.",
+      "older": "Isaiah sees Zion becoming the place where all nations come to learn God's ways, so that Israel's calling turns out to be for the sake of the whole world. The last chapters reach beyond Israel's history to new heavens and a new earth.",
+      "verse": {
+        "ref": "Isaiah 65:17",
+        "text": "For behold, I will create new heavens and a new earth."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? Isaiah is a long book, and most of it is poetry, so read it slowly. Start with chapter six, where Isaiah sees God. Then read chapter forty, where the comfort begins.",
+      "older": "Isaiah is mostly poetry. Keep three horizons in view: the prophet's own day, the exile and return, and the far future. The book's page marks eight key chapters: 1, 6, 7, 9, 37, 40, 53 and 65.",
+      "verse": {
+        "ref": "Isaiah 40:8",
+        "text": "the word of our God stands forever."
+      }
+    }
+  ],
+  "think": {
+    "younger": "The kings had to choose what to lean on. When you are worried, what do you lean on first?",
+    "older": "Isaiah holds together what people tend to pull apart: God's fearful holiness and his tender comfort. Which of the two do you find it harder to believe?"
+  },
+  "read": [
+    { "label": "Isaiah 6", "href": "/study/bible/isaiah/6" },
+    { "label": "Isaiah 9", "href": "/study/bible/isaiah/9" },
+    { "label": "Isaiah 40", "href": "/study/bible/isaiah/40" },
+    { "label": "Isaiah 53", "href": "/study/bible/isaiah/53" },
+    { "label": "Isaiah 65", "href": "/study/bible/isaiah/65" }
+  ],
+  "stops": [
+    "exile"
+  ],
+  "cards": [],
+  "care": "This stop tells of people who lost their home and were taken far away. If you have had to leave a home, or have lost someone or something you loved, it is right to feel sad, and you do not have to carry it alone. Talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Isaiah in the Study Bible: the whole book", "href": "/study/bible/isaiah" },
+    { "label": "The Prophets and Exile: the stop on the map", "href": "/study/explorer/exile" },
+    { "label": "Why did God let his temple be destroyed? (a moving picture)", "href": "/study/explorer/watch/temple-destroyed" },
+    { "label": "Sacrifice and the Lamb (a moving picture)", "href": "/study/explorer/watch/the-lamb" },
+    { "label": "Light and darkness (a moving picture)", "href": "/study/explorer/watch/light-and-darkness" }
+  ],
+  "end": { "label": "Start reading: Isaiah 6", "href": "/study/bible/isaiah/6" }
+}
