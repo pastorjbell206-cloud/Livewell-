@@ -29,7 +29,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Chapter 4: Did Jesus Really Rise from the Dead? | 3,577 | 3,577 | +0.0% | 34 (9.5) | 3 (0.8) | 96 (26.8) | 67 (18.7) | 24 | PASS |
 | Chapter 5: If God Is Good, Why Is There So Much Suffering? | 3,640 | 3,640 | +0.0% | 38 (10.4) | 3 (0.8) | 104 (28.6) | 70 (19.2) | 28 | PASS |
 | Chapter 6: How Could a Loving God Send People to Hell? | 3,493 | 3,493 | +0.0% | 62 (17.7) | 4 (1.1) | 118 (33.8) | 63 (18.0) | 40 | PASS |
-| **All 7** | 23,929 | 23,929 | +0.0% | 316 (13.2) | 21 (0.9) | 698 (29.2) | 421 (17.6) | 228 | |
+| Chapter 7: Christianity and Science | 2,269 | 2,269 | +0.0% | 26 (11.5) | 1 (0.4) | 63 (27.8) | 38 (16.7) | 20 | PASS |
+| **All 8** | 26,198 | 26,198 | +0.0% | 342 (13.1) | 22 (0.8) | 761 (29.0) | 459 (17.5) | 248 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -197,3 +198,27 @@ Five pairs:
    After: Read it line by line against the Passion narratives (the silence before his accusers, the crushing, the numbering with transgressors, the grave assigned with the wicked and the burial with the rich, the justification of many by his knowledge), and these are not coincidences gathered after the fact.
 
 Left alone, and why. Hell is a contested doctrine, and the chapter does what CLAUDE.md asks of one: it states three positions, names who holds each, and says where he lands and with what reserve. So it took punctuation only (40 dashes recast, no word changed), and the three views were given the same treatment: each keeps its holders, its texts and its wording, and the two that named their holders between dashes now name them in brackets alike. The paragraph "Where, then, to stand." is his position and was not touched at all, dashes included ("it should be held with trembling, not triumph"). The four atonement theories each keep "this is true" and "but alone". The critics' phrase "cosmic child abuse" is as he gave it. "Tetelestai was not a lie.", "Not reduced. Not deferred. Settled." and the last three sentences are verdicts; both pull quotes stand. Four dashes stay.
+
+
+## Chapter 7: Christianity and Science (`sec08.xhtml`)
+
+Words 2,269 to 2,269. Em-dashes in his prose 26 to 1 (11.5 to 0.4 per 1,000 words). Tells 63 to 38 (27.8 to 16.7 per 1,000). Mean sentence 24.8 words to 24.8; sentences of eight words or fewer 22.0% to 22.0%; of five or fewer 11.0% to 11.0%. 20 edits; paragraphs 34 to 34. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 26 to 1, not_but 7 to 7, NotX.Y 1 to 1, isnt_its 3 to 3, triplet 15 to 15, anaphora 2 to 2, intens 1 to 1, short_close 7 to 7, one_line_para 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 6 quoted strings, 9 Scripture references, 6 years, 9 numbers in digits, 54 number words, proper names by count, and 23 hedge words (after: 23) compared.
+
+Five pairs:
+
+1. Before: Ronald Numbers — a distinguished historian at the University of Wisconsin, and no friend of fundamentalism — edited Galileo Goes to Jail and Other Myths about Science and Religion, which systematically takes apart the central stories the conflict thesis depends on; his colleague David Lindberg has written extensively on the cooperative relationship between medieval Christianity and the natural philosophy that became modern science; and John Hedley Brooke, formerly of Oxford, documented in Science and Religion:
+   After: Ronald Numbers, a distinguished historian at the University of Wisconsin, and no friend of fundamentalism, edited Galileo Goes to Jail and Other Myths about Science and Religion, which systematically takes apart the central stories the conflict thesis depends on; his colleague David Lindberg has written extensively on the cooperative relationship between medieval Christianity and the natural philosophy that became modern science; and John Hedley Brooke, formerly of Oxford, documented in Science and Religion:
+2. Before: In 1992, Pope John Paul II formally acknowledged that the church had been wrong in its handling of Galileo — one of the few instances in history where an institution publicly admitted a four-hundred-year-old mistake — and it is worth remembering that the very era in which Galileo was being disciplined produced Jesuit astronomers at the Roman College who confirmed his observations and were among the first to adopt heliocentric cosmology in their own work.
+   After: In 1992, Pope John Paul II formally acknowledged that the church had been wrong in its handling of Galileo (one of the few instances in history where an institution publicly admitted a four-hundred-year-old mistake), and it is worth remembering that the very era in which Galileo was being disciplined produced Jesuit astronomers at the Roman College who confirmed his observations and were among the first to adopt heliocentric cosmology in their own work.
+3. Before: The statement "only scientific claims are real knowledge" is not itself a scientific claim but a philosophical one — so that if it were true, it would be false, because its own claim to truth could not be verified by any experiment. Science answers "how" questions — how did the universe expand, how does DNA replicate, how do stars form — but it does not answer "why" questions.
+   After: The statement "only scientific claims are real knowledge" is not itself a scientific claim but a philosophical one, so that if it were true, it would be false, because its own claim to truth could not be verified by any experiment. Science answers "how" questions (how did the universe expand, how does DNA replicate, how do stars form), but it does not answer "why" questions.
+4. Before: Gould's formulation is overstated — the two domains do overlap in places, especially on whether the universe had a beginning — but his basic point holds, for science and religion are not asking the same questions.
+   After: Gould's formulation is overstated (the two domains do overlap in places, especially on whether the universe had a beginning), but his basic point holds, for science and religion are not asking the same questions.
+5. Before: They are two eyes seeing the same reality — close one and you lose depth, use both and the world becomes three-dimensional.
+   After: They are two eyes seeing the same reality: close one and you lose depth, use both and the world becomes three-dimensional.
+
+Left alone, and why. The three positions on creation (young-earth, old-earth, evolutionary creationism) are a second-order question, and the chapter states each in its own terms and declines to choose ("Which view to hold is not the point here"). Those four paragraphs were not touched at all. The popular Galileo story and the god-of-the-gaps objection are stated before they are answered, word for word. Every name, date and title in the history of the conflict thesis is unchanged. "There is one problem. It is not true.", "The problem is not the lake. It is the net." and "The warfare is a myth. The partnership is the reality." are verdicts. One dash stays.
