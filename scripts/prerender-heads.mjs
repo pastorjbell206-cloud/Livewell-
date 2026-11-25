@@ -988,6 +988,28 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // The Bible's timeline: every book page's timeline entries, by the stretch of
+  // years each is listed in, in the book's own words, with the way to its book
+  // (client/public/bible/explore/timeline.json, built from the book pages).
+  "/study/timeline": async () => {
+    const d = readJsonSafe("client/public/bible/explore/timeline.json");
+    if (!d?.entries?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const row = (e) => {
+      const b = books.get(e.book);
+      const href = e.ch ? `/study/bible/${b.slug}/${e.ch}${e.v ? `#v${e.v}` : ""}` : `/study/bible/${b.slug}`;
+      const name = e.ch ? `${b.slug === "psalms" ? "Psalm" : b.name} ${e.ch}${e.v ? `:${e.v}` : ""}` : b.name;
+      return `<li><strong>${escapeHtml(e.when)}.</strong> ${escapeHtml(e.what)} <a href="${href}">${escapeHtml(name)}</a></li>`;
+    };
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>The Bible's timeline</h1>`,
+        `<p class="pre-subtitle">Every date the book pages give, on one line of time. Each entry opens its book.</p>`,
+        ...d.bands.map((band) => sec(band.name, `<ol>\n${d.entries.filter((e) => e.band === band.id).map(row).join("\n")}\n</ol>`)),
+      ]),
+    };
+  },
   // Paul's travels: every trip's places in order with what happened there and
   // its Acts reference, then the churches and the letters written to them
   // (client/public/explorer/travels.json; places named as the Acts book page
