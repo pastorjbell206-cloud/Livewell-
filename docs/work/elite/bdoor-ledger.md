@@ -20747,3 +20747,25 @@ Cut in chapter 3: the deep note's lines to Christ that the New Testament does no
 | Daniel 5:22; Proverbs 3:34 (first typed inexactly, caught and corrected) | 34-37 `later` | BSB | BSB text |
 
 Cut in chapter 4: the deep note's lines that the New Testament does not draw (James 4:6, Luke 1:52 and Philippians 2 set beside the chapter). A claim that ‘Heaven rules’ is the Old Testament's only use of heaven for God's name was cut before commit, as unsourced.
+
+## The plain notes on Daniel 5 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1-9 | 1-9 | BSB | BSB text |
+| Belshazzar son of Nabonidus; known once only from Daniel; the nineteenth-century texts; ten years at Tema; third place; the vessels and mockery | 1-9 | daniel/5.json `historical`, `cultural` | Repository |
+| Isaiah 21:9 (in double quotes for its exclamations, inside the BSB's speech marks); Psalm 62:9 | 1-9 `later` | BSB | BSB text |
+| 5:10-16 | 10-16 | BSB | BSB text |
+| The queen mother; Daniel forgotten; father and son in ancient usage (Jehu son of Omri); both views | 10-16 | daniel/5.json `cultural`, `hard` | Repository; both views |
+| Genesis 41:38; Daniel 4:9 | 10-16 `later` | BSB | BSB text |
+| 5:17-28 | 17-28 | BSB | BSB text |
+| Daniel's sharper word; knew and did not humble himself; mina, shekel, half-mina; read as verbs; peres and Persia; divine scales | 17-28 | daniel/5.json `literary`, `cultural`, `words` | Repository |
+| Job 31:6; Luke 12:20 | 17-28 `later` | daniel/5.json `words` (Job 31:6), `christ`; BSB | BSB text |
+| 5:29-31 | 29-31 | BSB | BSB text |
+| The abrupt ending; the first change of empire; October 539 BC without a battle; Herodotus and Xenophon; 5:31 numbered 6:1 in Aramaic | 29-31 | daniel/5.json `historical`, `literary`, `story` | Repository |
+| Jeremiah 51:31; Isaiah 13:19 | 29-31 `later` | BSB | BSB text |
+| The hard note: Darius the Mede, Ugbaru or Gubaru, Cyrus (Wiseman), a figure from traditions of Darius I (Isaiah 13:17; Jeremiah 51:11); no agreement | 29-31 `hard` | daniel/6.json `hard`; bible/guides/empires.json | Repository; each view in its holders' terms |
+
+Cut in chapter 5: the deep note's lines to Christ that the New Testament does not draw (Christ bearing the judgment written on the wall). Revelation 18:2 was not used, since it takes up Isaiah 21:9 rather than this chapter. No care line is needed in this chapter.
