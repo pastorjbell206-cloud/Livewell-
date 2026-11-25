@@ -19781,3 +19781,18 @@ Cut in chapter 24: the deep note's contrast with Hebrews 7:23-27, which does not
 | Ezra 2:41 | 8-31 | BSB | BSB text |
 
 Cut in chapter 25: the deep note's lines to Ephesians 5:18-19 and Colossians 3:16 and the church's reading of these psalms, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 26 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The divisions (26:1-11); 26:5 (its last sentence); sixty-two (26:8); Shimri (26:10); 26:13; 26:14; the other gates and watches (26:15-19) | 1-19 | BSB | BSB text |
+| The order of chapters 23 to 27; Obed-edom and 13:14; the Korahites and Kohath; the Asaph of 26:1 and Ebiasaph (9:19; 6:37); the gatekeepers' duties; the east gate; shaar; chayil; the wise counselor and Shimri as notes on character | 1-19 | 1-chronicles/26.json `story`, `historical`, `cultural`, `literary`, `words` (shaar, chayil) | Repository |
+| Psalm 84:10 (its second sentence); Ezra 2:42 (its first words) | 1-19 | BSB | BSB text |
+| 26:20; Shelomith and the gifts (26:26); 26:27; 26:28 (its first part); 26:29; 26:30 (its phrase); 26:31-32 | 20-32 | BSB | BSB text |
+| Temples as treasuries; otsar; qadash; the list of givers; the fortieth year; Jazer in Gilead east of the Jordan; Levites as officers and judges (2 Chronicles 19:8-11); worship and government together; gatekeepers after the exile | 20-32 | 1-chronicles/26.json `historical`, `cultural`, `literary`, `words` (otsar, qadash) | Repository |
+| 2 Chronicles 19:11 (its sentence); Joshua 6:19 | 20-32 | BSB | BSB text |
+
+Cut in chapter 26: the deep note's lines to John 10:7-9, Ephesians 2:18 and Matthew 6:19-21, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
