@@ -31,7 +31,8 @@ His limit for em-dashes is 2 to 3 per 500 words, which is 4 to 6 per 1,000. Head
 | Chapter 8: The Bible Assumes You Will Be Wrong | 4,148 | 4,142 | -0.1% | 44 (10.6) | 12 (2.9) | 102 (24.6) | 66 (15.9) | 29 | PASS |
 | Chapter 9: The Prophetic Voice and Why You Need It | 4,486 | 4,488 | +0.0% | 71 (15.8) | 10 (2.2) | 141 (31.4) | 72 (16.0) | 51 | PASS |
 | Chapter 10: What Humility Actually Looks Like | 4,610 | 4,611 | +0.0% | 64 (13.9) | 9 (2.0) | 129 (28.0) | 75 (16.3) | 46 | PASS |
-| **All 11** | 46,804 | 46,779 | -0.1% | 669 (14.3) | 127 (2.7) | 1416 (30.3) | 836 (17.9) | 468 | |
+| Conclusion: The Question You Have to Answer | 2,573 | 2,570 | -0.1% | 30 (11.7) | 6 (2.3) | 87 (33.8) | 55 (21.4) | 22 | PASS |
+| **All 12** | 49,377 | 49,349 | -0.1% | 699 (14.2) | 133 (2.7) | 1503 (30.4) | 891 (18.1) | 490 | |
 
 ## Introduction: Every Generation Was Convinced (`sec01.xhtml`)
 
@@ -295,3 +296,27 @@ Five pairs:
    After: Not easy; this book has not argued that it is easy. Not comfortable; the comfort it produces is not the comfort of safety but the deeper comfort of integrity, of a community whose public face and private reality are not two different things. Not without cost; it will cost what it costs, and that cost is real, and the communities that have paid it know that it is real.
 
 Left alone, and why. "That is not humility. That is cowardice dressed in the vocabulary of humility — and it is considerably more comfortable than the real thing.", "The instinct is defense. The discipline is reception." and the pull quote's two sentences ("... It is weaker faith, masquerading as strength.") stay word for word. The section "Humility Without Relativism" states his position (some readings are more faithful than others; no community can exempt itself), so it took dashes only. The sentence that names the old title ("the place where the book's title finds its full meaning. The monster in the mirror is not a dramatic horror ...") took a comma for a dash and nothing else; whether to change it under the new title is still his (bookshelf.md, section 8, question 1). The fragment "Not to be changed by the examination necessarily, but to be informed by it." and the closing "Not the question about other people's blind spots. The question about your own." are hinges. The five paragraphs that open "The community that practices genuine humility ..." are a deliberate list. Nine dashes stay.
+
+
+## Conclusion: The Question You Have to Answer (`sec15.xhtml`)
+
+Words 2,573 to 2,570. Em-dashes in his prose 30 to 6 (11.7 to 2.3 per 1,000 words). Tells 87 to 55 (33.8 to 21.4 per 1,000). Mean sentence 19.2 words to 20.2; sentences of eight words or fewer 37.3% to 33.9%; of five or fewer 21.6% to 18.1%. 22 edits; paragraphs 29 to 29.
+
+By kind (before to after): emdash 30 to 6, not_but 9 to 9, NotX.Y 1 to 1, isnt_its 2 to 2, triplet 5 to 5, frag3 2 to 0, anaphora 19 to 14, stock 1 to 1, intens 6 to 5, q_answered 2 to 2, colon_reveal 2 to 2, short_close 7 to 7, one_line_para 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (headings, subtitle, pull quote, block quotes and their references) identical; 0 quoted strings, 1 Scripture references, 0 years, 1 numbers in digits, 29 number words, proper names by count, and 65 hedge words (after: 65) compared.
+
+Five pairs:
+
+1. Before: We began with three portraits — a slaveholder who knelt at the same altar his enslaved workers were forbidden to approach, a German pastor who signed the forms and kept the congregation quiet, a Pharisee who voted to crucify the one whose coming he had spent his whole life anticipating.
+   After: We began with three portraits: a slaveholder who knelt at the same altar his enslaved workers were forbidden to approach, a German pastor who signed the forms and kept the congregation quiet, a Pharisee who voted to crucify the one whose coming he had spent his whole life anticipating.
+2. Before: He needed Nathan. He needed Amos.
+   After: He needed Nathan and Amos.
+3. Before: Not the question about the slaveholder — that answer is settled. Not the question about the German Christians — that verdict is in.
+   After: Not the question about the slaveholder; that answer is settled. Not the question about the German Christians; that verdict is in.
+4. Before: Not in order to be changed by it automatically — the prophetic word requires discernment, and not every challenge is prophetic — but in order to let it do what voices from outside the comfortable center have always done in the biblical narrative:
+   After: Not in order to be changed by it automatically (the prophetic word requires discernment, and not every challenge is prophetic), but in order to let it do what voices from outside the comfortable center have always done in the biblical narrative:
+5. Before: And neither can you, not fully, not yet — not because you are worse than they were or better than they were, but because the conditions of history are the conditions of history, and the face-to-face has not yet come. What has come — what the biblical witness offers in the meantime — is the practice. The accountability structures. The prophetic voice. The second question. The outside challenge. The willingness to inhabit the history honestly.
+   After: And neither can you, not fully, not yet, not because you are worse than they were or better than they were, but because the conditions of history are the conditions of history, and the face-to-face has not yet come. What has come, what the biblical witness offers in the meantime, is the practice: the accountability structures, the prophetic voice, the second question, the outside challenge, the willingness to inhabit the history honestly.
+
+Left alone, and why. The conclusion is where his short sentences are most plainly verdicts, so most stay: "They are not the villains of the story. They are the story.", "People do.", "The pattern is the context. The person is where the choice gets made." (the pull quote), "The clarity was there. The failure was the refusal to see it.", "The mechanism is real. It is not the only thing that is real.", "It ends with the face.", "Start there. And do not stop." The refrain "The slaveholder could not see his face. The German pastor could not see his face. The Pharisee could not see his face. And neither can you" is the book's last turn of the mirror and was not joined. The whole section "What This Book Has Not Said" is his position, stated four times over, and took nothing. The opening paragraph, which gives the ending in advance, was left as it is. The four fragments naming the voices you have avoided are a list. Joined: the list of practices in the last section, and "He needed Nathan. He needed Amos." (and its pair for Barth and Bonhoeffer). Six dashes stay.
