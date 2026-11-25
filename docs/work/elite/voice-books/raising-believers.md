@@ -397,3 +397,7 @@ The chapters were not read whole for this list. It comes from reading every bloc
 1. Fifteen or twenty years, and how does either sit with the 16 years on the site?
 2. Psalm 68:5-6: which wording do you want?
 3. Bring the NIV quotations to the ESV, or have the copyright page name both?
+
+## The files
+
+Rebuilt after the last chapter: 161 pages (163 as first typeset; `client/src/data/ebooks.ts` now says 161), PDF 1.2 MB, EPUB 306 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,089 words compared, no difference); the PDF's pages carry the same text character for character (214,892 against 214,892). A chapter opening and a body page with a block quotation were looked at as images.

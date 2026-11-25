@@ -831,8 +831,11 @@ differ in is said under each book. Each was then edited (records in
 `docs/work/elite/voice-books/<id>.md`).
 
 - **Raising Believers** (`raising-believers`). The PDF and EPUB carry the
-  same text, letter for letter (208,778 letters). 357 pages became 163
-  (`client/src/data/ebooks.ts` says 163). `--verify`: identical.
+  same text, letter for letter (208,778 letters). 357 pages became 163,
+  `--verify` identical. Then edited (`raising-believers.md`): 516 dashes in
+  his prose to 0, every edit punctuation, fact diff passed on all fifteen
+  files; rebuilt at 161 pages (`client/src/data/ebooks.ts` says 161),
+  `--verify` identical (47,089 words; 214,892 characters).
 
 ### The apparatus
 
