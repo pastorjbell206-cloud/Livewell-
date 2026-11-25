@@ -19974,3 +19974,19 @@ Cut in chapter 5: the deep note's lines from the glory to Christ, which the New 
 | The hard note: 6:2 and 6:18; the apparent contradiction and the development view; transcendence and presence held together; the Name; the prophets' warning | 12-42 `hard` | 2-chronicles/6.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 6: the deep note's lines from the anointed one and the hearing God to Christ, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 7 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1; 7:2 paraphrased; 7:3 (the song); the sacrifices (7:4-5); the Levites and priests (7:6); 7:8 (its phrase); 7:10 (its clause) | 1-11 | BSB | BSB text |
+| The two answers; the fire as the Chronicler's addition, Leviticus 9:24 and 1 Chronicles 21:26; Carmel (1 Kings 18:38); peace offerings and a feast; the courtyard consecrated; the seventh month and the days; Lebo-hamath and the Brook of Egypt | 1-11 | 2-chronicles/7.json `story`, `historical`, `cultural` | Repository |
+| Leviticus 9:24 | 1-11 | BSB | BSB text |
+| 7:12 (God's words); 7:13; 7:14; 7:15; the promise to Solomon (7:17-18); 7:20 (its first sentence); the rubble and the answer (7:21-22) | 12-22 | BSB | BSB text |
+| The shape of the speech; 7:13 and 6:26-28; the four verbs and three; healing after forgiveness; 7:13-15 only in Chronicles; kana; Rehoboam, Manasseh and Zedekiah as tests; treaty curses and Deuteronomy 29:24-28; the readers on the far side of the warning | 12-22 | 2-chronicles/7.json `story`, `historical`, `cultural`, `literary`, `words` (kana); context/guides/2-chronicles-7-14-in-context.json sections 1 and 2 | Repository |
+| Acts 15:17 (its clause); 1 John 1:9 | 12-22 | context guide section 3 (Acts 15:17; 1 John 1:9); BSB | Repository; the New Testament's own use; BSB text |
+| The hard note on 7:14: the verse's public use and those who love it heard first; the three readings (Israel only; a broader principle; the church fully, the nation left to God); the site's guide and its reading (concrete to Israel; God's people in every nation, owned by none; God hears humble prayer; no promise of national revival or political victory; humbling brought mercy, not greatness; praying for one's country right; the error when a nation takes the place of God's people); the demand beginning with God's people and their own wicked ways | 12-22 `hard` | 2-chronicles/7.json `hard`; context/guides/2-chronicles-7-14-in-context.json sections 0, 3 and 4 | Repository; agrees with the guide |
+
+Cut in chapter 7: the guide's first-person line about who made the signs, and its naming of particular political sides, left to the guide itself. No care line is needed in this chapter.
