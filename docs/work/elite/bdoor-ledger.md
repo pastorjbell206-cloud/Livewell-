@@ -18711,3 +18711,19 @@ Every claim in `client/public/bible/notes/1-chronicles/intro.json`, field `teach
 Also in this commit: `teaching.test.tsx` lists 1 Chronicles among the books with a teaching guide and names its frame (`canaan`); the Bible explore indexes (timeline, atlas, words, hard passages), built from the book pages, were rebuilt to take in this page (their `--check` gates).
 
 Cut from the book page: the introduction's line from Jesus' body as the temple (John 2:19-21), which the New Testament does not draw to this book; the deep notes' other lines to Christ, left to the chapters. Saul's death is named, not described. Jabez's prayer is quoted in double quotes for its exclamation, after the validator asked for it.
+
+## The plain notes on 1 Chronicles 1 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; Adam to Noah and his sons; Japheth, Ham and Shem; 1:27; 1:10; 1:19 | 1-27 | 1-chronicles/1.json `summary`, `outline`; BSB | Repository; BSB text |
+| Beginning with Adam; adam as human being; Israel inside humanity; Genesis 5, 10 and 11 shortened; peoples and places (Javan, Mizraim, Cush, Asshur, Aram); father as founder; genealogy as a claim (Ezra 2:62); a longer line than any empire's; palag read two ways | 1-27 | 1-chronicles/1.json `story`, `historical`, `cultural`, `words` (Adam, palag) | Repository; both readings in their holders' terms |
+| Luke 3:38 | 1-27 | 1-chronicles/1.json `christ`; BSB | Repository; BSB text; Luke's own genealogy |
+| The hard note: the lists as an argument for identity; Rodanites and Dodanim (Genesis 10:4), d and r, the Greek Rhodians; spelling and copying; the reliability view; the Chronicler following Genesis | 1-27 `hard` | 1-chronicles/1.json `hard` | Repository; the views in their holders' terms |
+| 1:28; Ishmael and Keturah (1:29-33); 1:34; Esau and Seir (1:35-42); 1:43; Edom's chiefs (1:51-54) | 28-54 | 1-chronicles/1.json `summary`, `outline`; BSB | Repository; BSB text |
+| The pattern of lines set aside first; not rejection but narrowing; Edom's place and bitter history, Edomites in southern Judah; Esau as brother; kings in Edom before Israel (Genesis 36:31); widest circle to narrowest; kings and chiefs looking ahead | 28-54 | 1-chronicles/1.json `cultural`, `historical`, `literary`, `words` (alluph) | Repository |
+| Genesis 12:3; Galatians 3:8 (cited) | 28-54 | 1-chronicles/1.json `christ` (the promise to Abraham); BSB | Repository; BSB text |
+
+Cut in chapter 1: the deep note's line from the narrowing of the chapter to the gospel going to every nation, which it calls the story's shape and not a prediction. The later field for verses 28-54 was first under the validator's minimum, and Galatians 3:8, Paul's own reading of the promise, was added before it reached the repository. No care line is needed in this chapter.
