@@ -702,6 +702,31 @@ Not made, and why (also in the ledger): the Holy Spirit, the Trinity, the kingdo
 
 **Not verified.** No person has listened to the narration end to end, or to any file: its sound, its stress and its names are unheard, and no file was transcribed by machine. The two remade frames of David and Goliath were checked only by their hash and their length (each about 0.8 s shorter, as the removed words would make). No real phone, and so no iPhone, where a file must be started by a tap. No screen reader by ear. The motion was seen in stills and in the video's frames, not watched at speed in the browser.
 
+## The four announced films, and Books of the Bible (2026-11-25)
+
+James (2026-11-25): "did you finish the videos? i want more content and videos and interactive pages than bible project." Forty-three films were finished and narrated; four were listed as coming; and no film took one book of the Bible as its subject. This run finishes the four and begins a seventh group, Books of the Bible. Nothing here copies another ministry's films, diagrams, wording or scripts: every picture is drawn with the art kit's stage set and every caption comes from the site's own pages, named row by row in the ledger.
+
+### The voice, rebuilt
+
+The machine had been replaced, so the speech model was gone. It was rebuilt outside the repository in `/home/user/film-voice/`: a Python environment (`venv/`) with kokoro-onnx 0.6.1, onnxruntime, numpy, soundfile and pyloudnorm, and the two model files `kokoro-v1.0.onnx` and `voices-v1.0.bin` from github.com/thewh1teagle/kokoro-onnx, release model-files-v1.0. Nothing of it is committed. The one setting, `scripts/film-audio.config.json`, is unchanged (`bm_lewis`), and no earlier film's file was made again: `build-film-audio.mjs --check` passes with the 663 earlier files as they were. Each new film was made with `node scripts/build-film-audio.mjs <slug> --python /home/user/film-voice/venv/bin/python --models /home/user/film-voice --threads 2`.
+
+### Batch 1: the four announced films
+
+Each has seven pictures drawn with the stage set, captions at both levels, a `still` for every frame, BSB verses, "Think about it", chapters, deeper links, its emblem, its page, a share poster, the recorded voice at both levels, tests and ledger rows. With these, every film in `films.json` is finished; none is listed as coming.
+
+1. **A blessing for all nations** (Big ideas), from the Explorer's own thread "A blessing for every nation": Babel, Abraham under the stars, Rahab and Ruth, Jonah and Nineveh, the Magi, Pentecost, the multitude no one can count. Every verse is from a chapter the thread cites. Measured: younger 3:02.4, older 3:02.3.
+2. **Light and darkness** (Big ideas), from the Study Bible's notes on the passages it uses: the first light, light in Egypt's darkness, the pillar of fire, the lamps in the tent, Isaiah's great light, the light of the world, the city with no night. The one gold mark is the light, larger in each picture; darkness is never a people. Measured: younger 2:59.7, older 3:03.0.
+3. **What about people who never heard?** (Good questions), from the site's essay, its Honest Answer and its page on the question. What all Christians confess; what the Bible says and does not say; then three answers, each with its own picture, its own verse and, at the older level, the hardest question it faces, in the wording those pages use for it. No side is taken, and nothing is said of any person's eternal state. Care line: The life to come's, whole. Measured: younger 2:58.9, older 3:04.5.
+4. **Why did God let his temple be destroyed?** (Good questions), the Prophets and Exile stop's own question and answer, with the notes on 1 Kings 8, Jeremiah 7, Ezekiel 10, 2 Kings 25, Lamentations 3 and Ezra 6. No people is blamed; "not every loss is a punishment" is said at both levels in Jesus' words; the one date is the stop's own, at the older level only; no battle or flame is drawn. Care line: the Exile stop's, whole. Measured: younger 3:02.2, older 3:10.7.
+
+Each film's captions were shortened once or twice before any voice was made, against an estimate fitted to the 663 recorded files (seconds per letter, plus the pauses), so that no file had to be made twice for length. One file set was made again: the younger level of the never-heard film, after its last caption was found to say "tells us" (the films never speak as "we" or "us").
+
+### Found and mended on the way
+
+- **Search and llms.txt.** The eight films of 2026-11-22 were in neither the site search nor `llms.txt`, though the record of that run says they were: the search builder's films were a typed list that stopped at 35. `scripts/build-search-index.mjs` now reads the catalogue, so every finished film is found by its own title and line with no second list to keep; `llms.txt` lists all of them; and `films.test.tsx` holds every finished film to both.
+- **The catalogue test** typed all 43 slugs in order. It now reads `films.json`, and checks that each finished film has its file, its drawing and its page head.
+- **A film still coming.** Two tests assumed at least one. They now hold for none or any.
+
 ## Questions only James can answer
 
 1. Is "Bible Explorer" the name he wants, everywhere?
