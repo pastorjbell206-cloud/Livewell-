@@ -20354,3 +20354,19 @@ Cut in chapter 28: the deep note's line from Ahaz's refusal to the promise of Is
 | The hard note: sacrifice as the language of worship; what it taught (Leviticus 17:11); shared feasts; Isaiah 1:11-17; Jewish practice after AD 70; Christians and Hebrews; not about God needing meat | 20-36 `hard` | 2-chronicles/29.json `hard` | Repository; each view in its holders' terms |
 
 Cut in chapter 29: the deep note's picture of the goats as a substitute pointing to Christ, beyond the Christian view the hard note names. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 30 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 30:1; the second month (30:2-3); Beersheba to Dan (30:5); 30:6 (the letter's opening); 30:9 (its last sentence); 30:10 (its last clause); 30:11-12 paraphrased | 1-12 | BSB | BSB text |
+| The north apart since Solomon; deportations; all Israel around one house; Tiglath-pileser and Galilee and Gilead around 732 BC; Samaria 722 BC; the two datings and the remnant; bold couriers; shuv repeated; channun and Exodus 34:6; mockery, humility, one heart | 1-12 | 2-chronicles/30.json `story`, `historical`, `cultural`, `literary`, `words` (shuv, channun) | Repository |
+| Exodus 34:6 (God's words) | 1-12 | BSB | BSB text |
+| The assembly (30:13); the altars to the Kidron (30:14); the Levites' slaughter (30:17); 30:18 (its clause and Hezekiah's words); 30:19 (its clause); 30:20; fourteen days (30:21-23); 30:26; 30:27 (its clause) | 13-27 | BSB | BSB text |
+| Passover and Unleavened Bread (Exodus 12); the late Passover (Numbers 9:9-11) applied to all; purity and its causes; the Levites for the northerners; 2 Kings 23:22 and the three explanations; two prayers heard and Solomon's prayer; rapha | 13-27 | 2-chronicles/30.json `historical`, `cultural`, `literary`, `words` (rapha, levav) | Repository |
+| Numbers 9:10 (its clause) | 13-27 | BSB | BSB text |
+| The hard note: contrary to what was written; pardon for the seeking heart; Hosea 6:6; an exceptional mercy at a time of need; 1 Samuel 16:7; the tension kept | 13-27 `hard` | 2-chronicles/30.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 30: the deep note's lines to 1 Corinthians 5:7 and to the Gospels' gathering, which the New Testament does not draw from this chapter. The priests' blessing is told without the bless family of words. No care line is needed in this chapter.
