@@ -19942,3 +19942,19 @@ Cut in chapter 3: the deep note's typological lines from the temple to Christ be
 | 2 Kings 25:13 (its clauses) | 11-22 | BSB | BSB text |
 
 Cut in chapter 4: the deep note's lines from the washing and the bread to Christ, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 5 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The gifts (5:1); 5:2 (its clause); the feast (5:3); the procession (5:4-6); 5:7; the poles (5:8-9); 5:10 | 1-10 | BSB | BSB text |
+| The ark's wanderings; the Festival of Booths (Leviticus 23:33-43); the seventh and eighth months and the open question; no image; the footstool; Horeb; the poles (Exodus 25:15); to this day copied from Kings; the ark lost, the empty inner room, legends not evidence | 1-10 | 2-chronicles/5.json `story`, `historical`, `cultural` | Repository |
+| Hebrews 9:4 (its second sentence) | 1-10 | BSB | BSB text |
+| The hard note: Exodus 16:33-34; Numbers 17:10; Hebrews 9:4; 1 Kings 8:9; the two explanations; the covenant law at the center | 1-10 `hard` | 2-chronicles/5.json `hard` | Repository; the readings in their holders' terms |
+| The priests (5:11); the singers and trumpets (5:12); 5:13 (its first sentence, the song and its last clause); 5:14 | 11-14 | BSB | BSB text |
+| The singers added to 1 Kings 8; the three guilds; silver trumpets; the climax arranged; Psalm 136 and 1 Chronicles 16:34; kavod; anan; halal | 11-14 | 2-chronicles/5.json `historical`, `cultural`, `literary`, `words` | Repository |
+| Exodus 40:34; 1 Chronicles 16:34 | 11-14 | BSB | BSB text |
+
+Cut in chapter 5: the deep note's lines from the glory to Christ, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
