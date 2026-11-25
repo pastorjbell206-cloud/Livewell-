@@ -20999,3 +20999,23 @@ Cut in chapter 17: the deep note's lines to Christ (John 15:13-15 and Hebrews 2:
 | Care line (‘Nothing in this passage asks anyone to stay where they or their children are in danger...’ to ‘...not legal advice.’) | 22-24 `hard` | colossians/plain/3.json (12-17 and 18-19 `hard`) | Reused byte for byte; no phone number |
 
 Cut in chapter 18: the deep note's lines to Christ (Acts 2:21, Romans 10:13 and Acts 4:12 beside the name of verse 10; the friend of verse 24 as Christ, which the note calls a devotional application; Matthew 28:20); James 3:5-6 (used in chapter 12).
+
+## The plain notes on Proverbs 19 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 19:1; 19:2 (its first clause); 19:3; 19:4; 19:6; 19:7 paraphrased (the verse holds a dash); 19:5 and 19:9 (their first clause); 19:11; 19:12 paraphrased; 19:13; 19:14 | 1-14 | BSB | BSB text |
+| Who is valued and abandoned; social reality under God's care; folly blaming God; verse 7's three lines and the lost half; leaking clay roofs and the dripping (27:15); not a comment on women in general, with 19:14; a home without peace; the lion's roar and summer dew | 1-14 | proverbs/19.json `story`, `literary`, `cultural` | Repository |
+| Job 6:15 (its first clause); Psalm 38:11; Colossians 3:13 (its first sentence) | 1-14 | the chapter data's cross-references for 19:4 (Job 6:15), 19:7 (Psalm 38:11) and 19:11 (Colossians 3:13); BSB | Repository; BSB text |
+| 19:15; 19:16 (its first clause); 19:17; 19:18; 19:19; 19:20; 19:21; 19:22; 19:23 (its first clause) | 15-23 | BSB | BSB text |
+| Lending without interest (Exodus 22:25; Leviticus 25:35-37; Deuteronomy 15:7-11) and the seventh-year release; loans often lost and reframed as a loan to the LORD; verse 18's two readings; no warrant to harm a child; 16:1 and 16:9 | 15-23 | proverbs/19.json `historical`, `literary` | Repository; each reading in its holders' terms |
+| Care line (‘Abuse of a child is a crime...’ to ‘...lists places to turn.’) | 15-23 | colossians/plain/3.json, ephesians/plain/6.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| Exodus 22:25 (its first sentence); Psalm 33:11 | 15-23 | proverbs/19.json `historical` (Exodus 22:25); the chapter data's cross-references for 19:21 (Psalm 33:10-11); BSB | Repository; BSB text |
+| The hard note: laziness and want (15, 24); not the only explanation; injustice (13:23), oppression (14:31; 22:16, 22), dishonesty, misfortune; verse 1 and verse 17; warnings for the reader's own conduct, not a tool for judging the poor; God defends the poor | 15-23 `hard` | proverbs/19.json `hard` | Repository |
+| 19:24; 19:25 paraphrased; 19:26; 19:27; 19:28 (its first clause); 19:29 paraphrased | 24-29 | BSB | BSB text |
+| The shared dish and bread as a scoop; exaggeration (22:13; 26:13-15); no pensions, parents' dependence, the commandment's weight, a widowed mother destitute (Exodus 21:15, 17 not quoted); the father's direct address in verse 27 | 24-29 | proverbs/19.json `cultural`, `historical`, `story` | Repository |
+| Exodus 20:12 (its first clause, in part) | 24-29 | proverbs/19.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 19: the deep note's lines to Christ (Luke 6:35 and Matthew 25:40 beside verse 17; Acts 4:27-28 beside verse 21; Matthew 18:21-22 beside verse 11; the note calls them thematic).
