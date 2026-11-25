@@ -59,7 +59,12 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter 32: When Luke Was Wrong — and Then He Wasn't | 761 | 761 | +0.0% | 8 (10.5) | 0 (0.0) | 18 (23.7) | 10 (13.1) | 7 | PASS |
 | Chapter 33: The Problem of Alleged Contradictions | 836 | 836 | +0.0% | 9 (10.8) | 0 (0.0) | 22 (26.3) | 14 (16.7) | 7 | PASS |
 | Chapter 34: Why Scribes Changed the Text — and What They Changed | 802 | 802 | +0.0% | 11 (13.7) | 0 (0.0) | 29 (36.2) | 18 (22.4) | 7 | PASS |
-| **All 35** | 35,594 | 35,594 | +0.0% | 471 (13.2) | 3 (0.1) | 946 (26.6) | 491 (13.8) | 330 | |
+| Chapter 35: The Bible That Endured Everything | 749 | 749 | +0.0% | 10 (13.4) | 0 (0.0) | 16 (21.4) | 6 (8.0) | 7 | PASS |
+| Chapter 36: What You Do with What You Now Know | 772 | 772 | +0.0% | 12 (15.5) | 1 (1.3) | 26 (33.7) | 15 (19.4) | 8 | PASS |
+| Chapter 37: Letters Written Under Pressure — Paul and the Corinthians | 761 | 761 | +0.0% | 10 (13.1) | 0 (0.0) | 23 (30.2) | 13 (17.1) | 6 | PASS |
+| Chapter 38: The Question Behind All the Questions | 718 | 718 | +0.0% | 10 (13.9) | 0 (0.0) | 23 (32.0) | 13 (18.1) | 8 | PASS |
+| Conclusion: After the Questions, Before the Answer | 822 | 822 | +0.0% | 11 (13.4) | 0 (0.0) | 28 (34.1) | 17 (20.7) | 9 | PASS |
+| **All 40** | 39,416 | 39,416 | +0.0% | 524 (13.3) | 4 (0.1) | 1062 (26.9) | 555 (14.1) | 368 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -825,3 +830,113 @@ Five pairs, taken at even intervals through the chapter:
    After: When scholars identify likely scribal changes (additions, harmonizations, theological adjustments), those findings actually demonstrate the reliability of the textual tradition, not its corruption.
 5. Before: The deity of Christ, the resurrection, the atonement, the commands of Jesus, the mission of the church — none of these depend on the longer ending of Mark, or the Pericope Adulterae, or the Comma Johanneum, the disputed Trinitarian formula in 1 John 5:7-8.
    After: The deity of Christ, the resurrection, the atonement, the commands of Jesus, the mission of the church: none of these depend on the longer ending of Mark, or the Pericope Adulterae, or the Comma Johanneum, the disputed Trinitarian formula in 1 John 5:7-8.
+
+
+## Chapter 35: The Bible That Endured Everything (`sec36.xhtml`)
+
+Words 749 to 749. Em-dashes in his prose 10 to 0 (13.4 to 0.0 per 1,000 words). Tells 16 to 6 (21.4 to 8.0 per 1,000). Mean sentence 21.3 words to 21.3; sentences of eight words or fewer 28.6% to 28.6%; of five or fewer 20.0% to 20.0%. 7 edits; paragraphs 11 to 11. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 10 to 0, not_just 1 to 1, NotX.Y 1 to 1, triplet 3 to 3, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 0 Scripture references, 0 years, 2 numbers in digits, 12 number words, proper names by count, and 6 hedge words (after: 6) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The targeting of the Bible by its enemies is itself a form of testimony; you do not dedicate imperial resources to destroying a document you consider irrelevant, and the campaigns against the Bible have always been predicated on the belief that it is dangerous — that what it says, believed by people who act on it, changes things in ways incompatible with the power structures that wish to remain unchanged.
+   After: The targeting of the Bible by its enemies is itself a form of testimony; you do not dedicate imperial resources to destroying a document you consider irrelevant, and the campaigns against the Bible have always been predicated on the belief that it is dangerous: that what it says, believed by people who act on it, changes things in ways incompatible with the power structures that wish to remain unchanged.
+2. Before: Imperial soldiers conducted raids on churches and private homes, confiscating and burning what they found; Christians who surrendered their copies to avoid death were called traditores — the Latin root of our word "traitor.
+   After: Imperial soldiers conducted raids on churches and private homes, confiscating and burning what they found; Christians who surrendered their copies to avoid death were called traditores, the Latin root of our word "traitor.
+3. Before: They failed not just in the obvious sense that Christianity survived — though that is remarkable enough — but in the deeper sense that the campaign of destruction left the textual tradition more robust, not weaker. Because Christianity spread across multiple linguistic communities — Greek, Latin, Syriac, Coptic, Armenian, Gothic, Ethiopian — and the scriptures were translated into each of those languages early, no single political campaign could touch all of it.
+   After: They failed not just in the obvious sense that Christianity survived (though that is remarkable enough) but in the deeper sense that the campaign of destruction left the textual tradition more robust, not weaker. Because Christianity spread across multiple linguistic communities (Greek, Latin, Syriac, Coptic, Armenian, Gothic, Ethiopian), and the scriptures were translated into each of those languages early, no single political campaign could touch all of it.
+4. Before: When scholars today reconstruct the New Testament text, they work not just from Greek manuscripts but from the ancient translations — the Latin Vulgate, the Syriac Peshitta, the Coptic versions, the Armenian, the Gothic.
+   After: When scholars today reconstruct the New Testament text, they work not just from Greek manuscripts but from the ancient translations: the Latin Vulgate, the Syriac Peshitta, the Coptic versions, the Armenian, the Gothic.
+5. Before: evidence of a kind that the book's content predicted — that the word of the Lord endures forever, that no weapon formed against it would succeed, that the gates of Hades would not prevail.
+   After: evidence of a kind that the book's content predicted, that the word of the Lord endures forever, that no weapon formed against it would succeed, that the gates of Hades would not prevail.
+
+
+## Chapter 36: What You Do with What You Now Know (`sec37.xhtml`)
+
+Words 772 to 772. Em-dashes in his prose 12 to 1 (15.5 to 1.3 per 1,000 words). Tells 26 to 15 (33.7 to 19.4 per 1,000). Mean sentence 17.9 words to 17.9; sentences of eight words or fewer 38.1% to 38.1%; of five or fewer 19.0% to 19.0%. 8 edits; paragraphs 10 to 10. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 12 to 1, NotX.Y 1 to 1, isnt_its 1 to 1, triplet 5 to 5, anaphora 1 to 1, q_answered 3 to 3, colon_reveal 1 to 1, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 3 quoted strings, 2 Scripture references, 0 years, 0 numbers in digits, 11 number words, proper names by count, and 15 hedge words (after: 15) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: No single piece of it is decisive in isolation; the manuscript comparison with other ancient documents, the Dead Sea Scrolls, the archaeological confirmations, the eyewitness testimony structure, the early dating of the documents, the prophecy and fulfillment pattern, the campaign to destroy it — none of these, standing alone, requires you to bow your knee.
+   After: No single piece of it is decisive in isolation; the manuscript comparison with other ancient documents, the Dead Sea Scrolls, the archaeological confirmations, the eyewitness testimony structure, the early dating of the documents, the prophecy and fulfillment pattern, the campaign to destroy it: none of these, standing alone, requires you to bow your knee.
+2. Before: that you take the Bible seriously enough to read it the way you would read any important historical document — with attention to authorship, dating, sources, genre, and the question of what the author was trying to say, to whom, and why.
+   After: that you take the Bible seriously enough to read it the way you would read any important historical document, with attention to authorship, dating, sources, genre, and the question of what the author was trying to say, to whom, and why.
+3. Before: Not a naive yes; a studied yes — a yes that has looked at the manuscript tradition, the archaeological confirmations, the historical corroboration, the structure of eyewitness testimony, and the extraordinary survival of the text against sustained campaigns of destruction, and concluded that the evidence, honestly assessed, supports the reliability of the document we hold in our hands.
+   After: Not a naive yes; a studied yes, a yes that has looked at the manuscript tradition, the archaeological confirmations, the historical corroboration, the structure of eyewitness testimony, and the extraordinary survival of the text against sustained campaigns of destruction, and concluded that the evidence, honestly assessed, supports the reliability of the document we hold in our hands.
+4. Before: It is a book about the claims the book makes — about God, about human beings, about the nature of our condition and the nature of our rescue.
+   After: It is a book about the claims the book makes: about God, about human beings, about the nature of our condition and the nature of our rescue.
+5. Before: The obstacles — the manuscript myths, the archaeology dismissals, the conspiracy theories about canon — were real, and they deserved real answers.
+   After: The obstacles (the manuscript myths, the archaeology dismissals, the conspiracy theories about canon) were real, and they deserved real answers.
+
+
+## Chapter 37: Letters Written Under Pressure — Paul and the Corinthians (`sec38.xhtml`)
+
+Words 761 to 761. Em-dashes in his prose 10 to 0 (13.1 to 0.0 per 1,000 words). Tells 23 to 13 (30.2 to 17.1 per 1,000). Mean sentence 19.3 words to 19.3; sentences of eight words or fewer 23.7% to 23.7%; of five or fewer 13.2% to 13.2%. 6 edits; paragraphs 11 to 11. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 10 to 0, NotX.Y 3 to 3, isnt_its 1 to 1, triplet 3 to 3, anaphora 2 to 2, stock 1 to 1, short_close 2 to 2, one_line_para 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 5 Scripture references, 0 years, 8 numbers in digits, 15 number words, proper names by count, and 19 hedge words (after: 19) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Paul wrote it from Ephesus, probably in the mid-50s AD, to a church he had founded in the city of Corinth roughly three years earlier — and the church he was writing to was a mess.
+   After: Paul wrote it from Ephesus, probably in the mid-50s AD, to a church he had founded in the city of Corinth roughly three years earlier, and the church he was writing to was a mess.
+2. Before: He writes that Jesus appeared to Cephas — Peter — then to the twelve; then to more than five hundred brothers at once, most of whom, Paul says parenthetically, are still alive, though some have died; then to James; then to all the apostles; and last of all to Paul himself, in what he describes as an abnormal birth, a late appearance granted to the one who persecuted the church before his conversion. That parenthetical — "most of whom are still alive" — is extraordinary.
+   After: He writes that Jesus appeared to Cephas (Peter), then to the twelve; then to more than five hundred brothers at once, most of whom, Paul says parenthetically, are still alive, though some have died; then to James; then to all the apostles; and last of all to Paul himself, in what he describes as an abnormal birth, a late appearance granted to the one who persecuted the church before his conversion. That parenthetical ("most of whom are still alive") is extraordinary.
+3. Before: Bart Ehrman, who does not accept the resurrection, acknowledges that Paul's creedal formula in the opening verses of the chapter — "that Christ died for our sins according to the Scriptures, that he was buried, that he was raised on the third day" — is among the earliest Christian texts we possess, probably formulated within a few years of the crucifixion and certainly within the lifetimes of eyewitnesses; Ehrman dates Paul's reception of this formula to within two to five years of the event itself.
+   After: Bart Ehrman, who does not accept the resurrection, acknowledges that Paul's creedal formula in the opening verses of the chapter ("that Christ died for our sins according to the Scriptures, that he was buried, that he was raised on the third day") is among the earliest Christian texts we possess, probably formulated within a few years of the crucifixion and certainly within the lifetimes of eyewitnesses; Ehrman dates Paul's reception of this formula to within two to five years of the event itself.
+4. Before: The core claim of Christianity — death, burial, resurrection — is attested in a document written by a man who knew the eyewitnesses, within a generation of the events, in a culture where those events were recent enough that public refutation was possible.
+   After: The core claim of Christianity (death, burial, resurrection) is attested in a document written by a man who knew the eyewitnesses, within a generation of the events, in a culture where those events were recent enough that public refutation was possible.
+5. Before: Paul was writing under pressure — to a community that was fracturing, that was questioning his authority, that was in doctrinal confusion.
+   After: Paul was writing under pressure, to a community that was fracturing, that was questioning his authority, that was in doctrinal confusion.
+
+
+## Chapter 38: The Question Behind All the Questions (`sec39.xhtml`)
+
+Words 718 to 718. Em-dashes in his prose 10 to 0 (13.9 to 0.0 per 1,000 words). Tells 23 to 13 (32.0 to 18.1 per 1,000). Mean sentence 19.4 words to 19.4; sentences of eight words or fewer 21.6% to 21.6%; of five or fewer 16.2% to 16.2%. 8 edits; paragraphs 13 to 13. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 10 to 0, not_but 1 to 1, NotX.Y 1 to 1, isnt_its 3 to 3, triplet 1 to 1, anaphora 2 to 2, q_answered 1 to 1, short_close 4 to 4.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 0 Scripture references, 0 years, 0 numbers in digits, 6 number words, proper names by count, and 7 hedge words (after: 7) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Every question this book has addressed — about manuscripts, archaeology, prophecy, eyewitness testimony, canon, textual criticism — is a proxy for a single deeper question, the one that sits beneath all the others and waits for them to clear:
+   After: Every question this book has addressed (about manuscripts, archaeology, prophecy, eyewitness testimony, canon, textual criticism) is a proxy for a single deeper question, the one that sits beneath all the others and waits for them to clear:
+2. Before: The person who cannot take the Bible seriously because they have heard that archaeology has discredited it can, after careful investigation, set that concern aside as well — the archaeology has not discredited it, and in significant cases it has confirmed it.
+   After: The person who cannot take the Bible seriously because they have heard that archaeology has discredited it can, after careful investigation, set that concern aside as well; the archaeology has not discredited it, and in significant cases it has confirmed it.
+3. Before: The reliability question is, in one sense, a way of deferring those demands — if the book is unreliable, I do not have to engage with what it says; if the transmission is corrupt, I can set it aside.
+   After: The reliability question is, in one sense, a way of deferring those demands: if the book is unreliable, I do not have to engage with what it says; if the transmission is corrupt, I can set it aside.
+4. Before: The documents come to us from witnesses with access to the events they describe — which means the demands deserve engagement.
+   After: The documents come to us from witnesses with access to the events they describe, which means the demands deserve engagement.
+5. Before: It is a carefully transmitted, archaeologically confirmed, historically grounded collection of documents written by people who believed they were speaking for God — and who paid for that belief with their lives.
+   After: It is a carefully transmitted, archaeologically confirmed, historically grounded collection of documents written by people who believed they were speaking for God, and who paid for that belief with their lives.
+
+
+## Conclusion: After the Questions, Before the Answer (`sec40.xhtml`)
+
+Words 822 to 822. Em-dashes in his prose 11 to 0 (13.4 to 0.0 per 1,000 words). Tells 28 to 17 (34.1 to 20.7 per 1,000). Mean sentence 18.3 words to 18.3; sentences of eight words or fewer 44.4% to 44.4%; of five or fewer 17.8% to 17.8%. 9 edits; paragraphs 13 to 13. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 11 to 0, not_but 1 to 1, NotX.Y 4 to 4, triplet 1 to 1, anaphora 2 to 2, stock 2 to 2, colon_reveal 2 to 2, short_close 4 to 4, one_line_para 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 1 Scripture references, 0 years, 0 numbers in digits, 15 number words, proper names by count, and 11 hedge words (after: 11) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The first time was at eighteen, when a Christian roommate sat with my atheist questions and did not flinch — when he answered them rather than deflecting them, when the case he made was stronger than I had assumed any case for Christianity could be.
+   After: The first time was at eighteen, when a Christian roommate sat with my atheist questions and did not flinch, when he answered them rather than deflecting them, when the case he made was stronger than I had assumed any case for Christianity could be.
+2. Before: Not in the cheap sense — life is hard, prayer is sometimes silent, faithfulness does not guarantee comfortable outcomes — but in the sense that the text's account of what human beings are, what they need, what restores them, what breaks them, and what holds them in the worst moments proved more accurate than any alternative account I encountered.
+   After: Not in the cheap sense (life is hard, prayer is sometimes silent, faithfulness does not guarantee comfortable outcomes), but in the sense that the text's account of what human beings are, what they need, what restores them, what breaks them, and what holds them in the worst moments proved more accurate than any alternative account I encountered.
+3. Before: These things cannot be proven in the way that mathematical propositions can be proven or that chemical reactions can be observed; they belong to a different domain of human knowing — the domain in which the evidence supports a conclusion that only a willed response can fully appropriate.
+   After: These things cannot be proven in the way that mathematical propositions can be proven or that chemical reactions can be observed; they belong to a different domain of human knowing: the domain in which the evidence supports a conclusion that only a willed response can fully appropriate.
+4. Before: I have followed the argument, the evidence is stronger than I expected, the case is more compelling than the culture suggested, and now I am going to do what evidence alone cannot do for me — I am going to trust.
+   After: I have followed the argument, the evidence is stronger than I expected, the case is more compelling than the culture suggested, and now I am going to do what evidence alone cannot do for me: I am going to trust.
+5. Before: But whether, at the end of the argument, standing at the edge of what the evidence can establish, you are willing to say yes — I love you, I trust you, I will follow.
+   After: But whether, at the end of the argument, standing at the edge of what the evidence can establish, you are willing to say yes: I love you, I trust you, I will follow.
