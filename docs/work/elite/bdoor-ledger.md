@@ -21019,3 +21019,23 @@ Cut in chapter 18: the deep note's lines to Christ (Acts 2:21, Romans 10:13 and 
 | Exodus 20:12 (its first clause, in part) | 24-29 | proverbs/19.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 19: the deep note's lines to Christ (Luke 6:35 and Matthew 25:40 beside verse 17; Acts 4:27-28 beside verse 21; Matthew 18:21-22 beside verse 11; the note calls them thematic).
+
+## The plain notes on Proverbs 20 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 20:1; 20:2 (its first clause); 20:3; 20:4; 20:5; 20:6; 20:7; 20:8 paraphrased; 20:9 paraphrased (it holds an inner quotation) | 1-9 | BSB | BSB text |
+| Wine as normal and a good gift (Psalm 104:15); shekar as beer or fermented drink; no ban, a vivid warning; 23:29-35; humility about self-knowledge (5, 6, 9, 24); the wise who know what they cannot see | 1-9 | proverbs/20.json `cultural`, `story` | Repository |
+| Care line (‘If drinking has become hard to control, you do not have to face it alone...’ to ‘...lists places to turn.’) | 1-9 | ephesians/plain/5.json and 1-timothy/plain/5.json | Reused byte for byte (care.mjs); Find Help named; no phone number |
+| Psalm 104:15 (its first clause); Ecclesiastes 7:20; 1 John 1:8 (its first clause); 1 John 1:9 | 1-9 | proverbs/20.json `cultural` (Psalm 104:15), `christ` (1 John 1:8-9 as the New Testament's own words on confession); the chapter data's cross-references for 20:9 (Ecclesiastes 7:20; 1 John 1:8); BSB | Repository; BSB text |
+| The hard note: two uses of ‘righteous’; not sinless but turned toward God; David and Psalm 51; a direction, not a record; Romans 3:10 and righteousness as a gift through faith in Christ; called to live righteously; traditions differ in terms; verse 9 rules out self-righteousness | 1-9 `hard` | proverbs/20.json `hard` | Repository |
+| Weights (20:10) paraphrased (the verse holds a dash); 20:11 and 20:12 paraphrased (each holds a dash); 20:13; the buyer (20:14) with its last clause quoted; 20:15; 20:17; 20:18 (its first clause); 20:19 paraphrased; 20:20; 20:21 | 10-21 | BSB | BSB text |
+| The buyer's haggling; collateral and the cloak by sunset (Exodus 22:26-27); the rash guarantor as poor risk; verses 10 and 23 framing, with 11:1 and 16:11; the lamp and a household's end | 10-21 | proverbs/20.json `cultural`, `literary`; proverbs/13.json `cultural` (the lamp) | Repository |
+| Exodus 22:26 | 10-21 | proverbs/20.json `cultural`; BSB | Repository; BSB text |
+| 20:22 (its second sentence; the first, with an inner quotation, paraphrased); 20:23 paraphrased; 20:24; 20:25; the threshing (20:26) paraphrased; 20:27; 20:28; 20:29; 20:30 paraphrased | 22-30 | BSB | BSB text |
+| No personal revenge; vows and their keeping (Deuteronomy 23:21-23; Numbers 30:2); Jephthah (Judges 11); the king as highest court; the threshing wheel (Isaiah 28:27-28); loving devotion and faithfulness holding a throne; kings who fell; the lamp searching the depths of verse 5; verse 30 with the king's justice, no warrant to harm, nothing in favor of cruelty | 22-30 | proverbs/20.json `historical`, `cultural`, `literary` | Repository |
+| Romans 12:19 (its first sentence); Ecclesiastes 5:5 | 22-30 | proverbs/20.json `historical` (Ecclesiastes 5:4-5), `christ` (Romans 12:17-19 as Paul's own use of the saying); BSB | Repository; BSB text |
+
+Cut in chapter 20: the deep note's lines to Christ (1 Peter 2:23 and Jesus' non-retaliation beside verse 22; John 1:14 and Christ as the king of verse 28); Romans 3:23 (Romans 3:10 kept in the hard note).
