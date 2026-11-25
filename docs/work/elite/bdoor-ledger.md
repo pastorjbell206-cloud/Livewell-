@@ -20006,3 +20006,19 @@ Cut in chapter 7: the guide's first-person line about who made the signs, and it
 | Deuteronomy 16:16 (its first clause) | 12-18 | BSB | BSB text |
 
 Cut in chapter 8: nothing from a line to Christ was needed. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 9 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1 (its first sentence); the questions answered (9:2-4); 9:5; 9:6 (its last sentence); 9:8 (its phrases); the gifts (9:9-12) | 1-12 | BSB | BSB text |
+| The summit and end of Solomon's story; Sheba as Saba in Yemen, the incense routes, later inscriptions with no named queen; the Kebra Nagast legend; diplomatic visits; chidah; wisdom and legitimacy; 1 Kings 10:9 against 9:8, the LORD's throne; mishpat and tsedaqah | 1-12 | 2-chronicles/9.json `story`, `historical`, `cultural`, `words` (chidah, mishpat, kisse); BSB of 1 Kings 10:9 | Repository; BSB text |
+| Matthew 12:42 | 1-12 | 2-chronicles/1.json `christ` (Matthew 12:42); BSB | Repository; the New Testament's own use; BSB text |
+| The gold, shields and throne (9:13-19); 9:22; 9:23; the horses and silver (9:25-28); 9:29 (its records); 9:30; 9:31 paraphrased | 13-31 | BSB | BSB text |
+| 1 Kings 10 and 11:41-43 adapted; the throne and lions; ivory at Assyrian palaces and Samaria; the House of the Forest of Lebanon; Shishak and the shields; Ahijah and Jeroboam (1 Kings 11:29-31) | 13-31 | 2-chronicles/9.json `historical`, `cultural`, `hard`; BSB | Repository; BSB text |
+| 1 Kings 11:4 | 13-31 | BSB | BSB text |
+| The hard note: 1 Kings 11 left out; whitewashing; the deliberate focus; Ahijah in 9:29; chapter 10; the founders of worship; Deuteronomy 17:16-17; both readings | 13-31 `hard` | 2-chronicles/9.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 9: the deep note's lines from Solomon's throne and the nations' gifts to Christ beyond Matthew 12:42. No care line is needed in this chapter.
