@@ -20257,3 +20257,19 @@ Cut in chapter 22: the deep note's pattern from Joash to Matthew 2:13-16, which 
 | The hard note: restoration, not rebellion; Athaliah's murders; Deuteronomy 13; the violence felt; not a model; Romans 12:17-21; the tyrant debate | 12-21 `hard` | 2-chronicles/23.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 23: the deep note's lines to Acts 2:30-36 and the new covenant, which do not cite this chapter. Athaliah's death is told in the text's own words. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 24 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 24:1 (its first sentence); 24:2; 24:4; the slow Levites (24:5); the chest and the proclamation (24:8-9); 24:9 (its phrase); 24:10; the work and vessels (24:12-14); 24:15; 24:16 | 1-16 | BSB | BSB text |
+| Forty years, about 835 to 796 BC; the diptych; the tax and Exodus 30:12-16; the chest and the safeguard (2 Kings 12:9); burial with the kings | 1-16 | 2-chronicles/24.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Exodus 30:12 (its first sentence) | 1-16 | BSB | BSB text |
+| 24:17; 24:18 (its first sentence); 24:19; 24:20 (its first clause and God's words); 24:21; 24:22 (its first sentence and Zechariah's words); the small army (24:23-24); 24:25 (its clause) and the burial | 17-27 | BSB | BSB text |
+| The reversal; azav twice and in 24:24; lavash; 2 Kings 12:17-18 and what Chronicles adds; the few and the many; desecration of the court; innocent blood (Genesis 4:10); chesed forgotten; the priest with the kings | 17-27 | 2-chronicles/24.json `historical`, `cultural`, `literary`, `words` (azav, chesed, lavash) | Repository |
+| Matthew 23:35; Luke 11:51 (its clause) | 17-27 | 2-chronicles/24.json `christ`; BSB | Repository; the New Testament's own use; BSB text |
+| The hard note: Berechiah and Jehoiada; Zechariah 1:1; the skeptics' charge and the merging view; Jerome around 398 and the Nazarenes' gospel; the manuscript lacking the words; a second name or a grandfather; the later Zechariah and why most reject him; no side chosen; Abel to Zechariah, first and last in the Hebrew order; Jesus speaking to leaders of his own day; Deuteronomy 24:16; the false reading of blame, rejected plainly | 17-27 `hard` | 2-chronicles/24.json `hard`; matthew/plain/23.json (the hard question on verse 35 and the note on blame); matthew/23.json | Repository; agrees with the site's notes on Matthew 23 |
+
+Cut in chapter 24: the deep note's line from the murdered prophets to Jesus' own death, beyond the words Jesus himself spoke. The stoning is named, not described. No care line is needed in this chapter.
