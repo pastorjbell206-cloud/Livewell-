@@ -22,7 +22,7 @@
  * (components/DownloadGiftHost.tsx). While giving is held the page reads and
  * behaves as it did: every file a plain, free download.
  */
-import { useEffect, useMemo, useState } from "react";
+import { startTransition, useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
 import { BookMarked, CalendarDays, FileText, House, Layers, Library, LifeBuoy, Map as MapIcon, Milestone, NotebookPen, PenLine, Search, Users, type LucideIcon } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -143,8 +143,11 @@ export default function Downloads() {
 
   useEffect(() => {
     let stale = false;
+    // As a transition, so React renders the shelves (some 8,000 elements) in
+    // slices the browser can answer between. Set plainly, they were one task
+    // of 120 to 140 ms on a desktop machine, four times that on a phone.
     fetchCatalogue()
-      .then((c) => { if (!stale) setCatalogue(c); })
+      .then((c) => { if (!stale) startTransition(() => setCatalogue(c)); })
       .catch(() => { if (!stale) setFailed(true); });
     return () => { stale = true; };
   }, [nonce]);

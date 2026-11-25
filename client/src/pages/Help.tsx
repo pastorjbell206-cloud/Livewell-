@@ -25,10 +25,15 @@ import { CrisisBlock } from "@/components/CrisisBlock";
 import { EditorialIndex, type IndexItem } from "@/components/editorial/EditorialIndex";
 import { LoadFailed } from "@/components/LoadFailed";
 import { fetchJson } from "@/lib/fetch-json";
+import { followHash } from "@/lib/followHash";
 import { isPublicEssayHref } from "@/lib/shelf";
 import { SKEPTIC_TRACK_LIVE } from "@/lib/skepticTrack";
 import { READER_STATES, searchNeeds, type NeedEntry, type NeedsIndex, type ReaderState } from "@/lib/needs";
 import { crisisTopicsFor } from "@/lib/siteSearch";
+// "What people bring most": the first twelve care pages by rank, written with
+// the index by scripts/build-needs-index.mjs. On the page from its first paint,
+// so the crisis lines under them never move when the index arrives.
+import HELP_CHIPS from "@/data/help-chips.json";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const isIndex = (x: unknown): x is NeedsIndex => !!x && Array.isArray((x as NeedsIndex).needs);
@@ -113,17 +118,19 @@ export default function Help() {
   }, [nonce, asked, navigate]);
 
   // Pages link here as /help#help-now. The router does not scroll to a
-  // fragment on its own, so bring the help lines into view on arrival.
+  // fragment on its own, so bring the help lines into view on arrival, once
+  // the held page (the crisis line and the head, from the prerendered HTML)
+  // has given way to this one (lib/followHash waits for that).
   useEffect(() => {
     if (typeof window === "undefined" || window.location.hash !== "#help-now") return;
-    requestAnimationFrame(() => document.getElementById("help-now")?.scrollIntoView({ block: "start" }));
+    followHash("#help-now");
   }, []);
 
   const results = useMemo(() => (needs ? searchNeeds(query, needs) : []), [needs, query]);
   // A reader who types their trouble here ("I want to die") is shown how to
   // reach a person before any page, as on /search.
   const typedCrisis = useMemo(() => crisisTopicsFor(query), [query]);
-  const chips = useMemo(() => (needs ? needs.filter((n) => n.page).slice(0, 12) : []), [needs]);
+  const chips = HELP_CHIPS;
   const inState = useMemo(() => (needs ? needs.filter((n) => n.states.includes(state)) : []), [needs, state]);
   const pages = inState.filter((n) => n.page);
   const starters = inState.filter((n) => !n.page);
