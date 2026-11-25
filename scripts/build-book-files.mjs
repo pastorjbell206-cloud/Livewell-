@@ -4,7 +4,7 @@
  *
  *   node scripts/build-book-files.mjs <id>            build one book
  *   node scripts/build-book-files.mjs --all           build every book that has a source folder
- *   node scripts/build-book-files.mjs <id> --verify   also prove the text is the author's
+ *   node scripts/build-book-files.mjs <id> --verify   also prove the files carry the source folder's text
  *   ... --out <dir>     write there instead of client/public/ebook/<id>/
  *   ... --keep <dir>    keep the print HTML and the passes there (to look at)
  *
@@ -21,15 +21,43 @@
  * from the tokens in client/src/index.css. So a rename is: change
  * book-names.json, run sync-book-names and build-covers as before, then this.
  *
- * THE ONE RULE: the author's words do not change. This script is a
- * typesetter. What it does to the text is listed in TYPESETTING below and
- * counted on every run; --verify takes the original EPUB kept in
- * content/held-downloads/originals/, applies only those listed changes, and
- * fails unless the result is, word for word, the text in the new EPUB and
- * the text on the pages of the new PDF.
+ * THE ONE RULE: the typesetter adds nothing. This script sets the words in
+ * content/books-src/<id>/ and changes none of them. What it does to the text
+ * is listed in TYPESETTING below and counted on every run; --verify takes the
+ * source folder's text, applies only those listed changes, and fails unless
+ * the result is, word for word, the text in the new EPUB and the text on the
+ * pages of the new PDF.
+ *
+ * WHOSE WORDS THE SOURCE FOLDER HOLDS. Until 2026-11-25 the rule was that
+ * the source folder was the original EPUB's text, unchanged, and --verify
+ * proved that too. On 2026-11-25 James asked for his books to be edited: "i
+ * also want you to go through all the book, pdfs, and downloadable content to
+ * make it sound human and like me", and, of fragments, "use full paragraphs
+ * in the books too". So a book whose book.json has an `edited` entry (its
+ * date, his instruction and where the record is kept) is no longer compared
+ * with its original EPUB: its source folder is the edited text, and the proof
+ * of what the edit kept (every quotation, Scripture reference, year, number,
+ * name, heading and hedge) is the fact diff recorded in the file `edited`
+ * names, run chapter by chapter against the original. A book without an
+ * `edited` entry is still held to the old rule: its source folder must be
+ * the original EPUB's text, word for word. The originals stay untouched in
+ * content/held-downloads/originals/ either way.
+ *
+ * WHEN THE ORIGINAL PDF AND EPUB DIFFER. A book's two original files may not
+ * carry the same things (Believe's PDF had a dedication and four part pages
+ * its EPUB lacked; the EPUB had two appendices the PDF lacked). Nothing of
+ * the author's is dropped: book.json may give a `dedication` (set on its own
+ * page after the copyright page) and may name, in `fromOriginalPdf`, section
+ * files whose words come from the original PDF. --verify leaves those
+ * sections out of the comparison with the original EPUB and instead checks
+ * that their words, and the dedication's, are in the original PDF letter for
+ * letter. A source paragraph marked `class="first"` (the first under a
+ * heading) is read as a paragraph; the typesetter sets its own indents.
  *
  * TYPESETTING (each is counted in the run's report):
  *   - straight quotation marks and apostrophes set as curly ones;
+ *   - a character reference the source escaped twice, so that it printed as
+ *     its code ("Bo&#287;azk&#246;y"), set as the character it names;
  *   - unrendered Markdown removed: *Label* headings, "1\." list numbers, the
  *     backslashes in "\_\_\_" and "\...", one stray "*";
  *   - end-of-chapter lists that the source ran together with double spaces,
@@ -38,6 +66,11 @@
  *     chapter's sources are set alike;
  *   - a reference written at the end of a quotation ("... —Hosea 2:5") set
  *     on its own line; the source's empty <cite></cite> elements dropped;
+ *   - in a section book.json lists under `entries` (a reading list, a
+ *     glossary), each paragraph under a heading set as an entry with a hanging
+ *     indent, like a source in "Sources & Notes";
+ *   - a label the source writes all in capitals ("APPENDIX A") set in capitals
+ *     and small letters in the contents and the bookmarks;
  *   - LORD, where the source has it in capitals, set in small capitals;
  *   - the first three words of a chapter and its labels set in capitals by
  *     the stylesheet (the words in the file are unchanged);
@@ -143,7 +176,7 @@ function parseSection(file) {
     else if ((m = /^<h2>(.*)<\/h2>$/.exec(line))) blocks.push({ t: "h2", text: text(m[1]) });
     else if (line === '<hr class="rule"/>') blocks.push({ t: "rule" });
     else if ((m = /^<blockquote><p>(.*)<\/p><cite>(.*)<\/cite><\/blockquote>$/.exec(line))) blocks.push({ t: "bq", text: text(m[1]), cite: text(m[2]) });
-    else if ((m = /^<p>(.*)<\/p>$/.exec(line))) blocks.push({ t: "p", text: text(m[1]) });
+    else if ((m = /^<p(?: class="first")?>(.*)<\/p>$/.exec(line))) blocks.push({ t: "p", text: text(m[1]) });
     else fail(`${file}: a line this script does not know how to set: ${line.slice(0, 120)}`);
   }
   return blocks;
@@ -200,6 +233,8 @@ function typeset(blocks, stats) {
   let mode = null;
   const clean = (text) => {
     let s = text;
+    // A character reference the source escaped twice ("Bo&amp;#287;azk&amp;#246;y", which printed as "Bo&#287;azk&#246;y"): the character it names.
+    s = s.replace(/&#(\d+);/g, (m, d) => (stats.characterReferences++, String.fromCodePoint(Number(d))));
     s = s.replace(/([.!?])\*(?= |$)/g, (m, p) => (stats.strayAsterisk++, p));
     s = s.replace(/\\([._])/g, (m, p) => (stats.markdownEscapes++, p));
     if (/[*\\]/.test(s)) fail(`an asterisk or backslash this script does not know how to set: ${s.slice(0, 100)}`);
@@ -328,11 +363,22 @@ function loadBook(id) {
   const formerly = named?.was?.length ? named.was[named.was.length - 1].title : "";
   const stats = {
     quotes: 0, apostrophes: 0, markdownLabels: 0, markdownNumbers: 0, markdownEscapes: 0, strayAsterisk: 0, listSeparators: 0, doubleSpaces: 0,
-    hyphensToBullets: 0, sourceHyphensDropped: 0, emptyCites: 0, referenceLines: 0, leadIns: 0, lordSmallCaps: 0, softHyphensAtBreaks: 0,
+    hyphensToBullets: 0, sourceHyphensDropped: 0, emptyCites: 0, referenceLines: 0, entries: 0, characterReferences: 0, leadIns: 0, lordSmallCaps: 0, softHyphensAtBreaks: 0,
   };
   const sections = meta.sections.map((file, i) => {
     const source = parseSection(path.join(dir, file));
     const set = typeset(source, stats);
+    // A reading list or a glossary: every paragraph under a heading is an entry, set with a hanging indent.
+    if ((meta.entries ?? []).includes(file)) {
+      let under = false;
+      for (const b of set) {
+        if (b.t === "h2") under = true;
+        else if (under && b.t === "p") {
+          b.t = "src";
+          stats.entries++;
+        }
+      }
+    }
     const part = set.find((b) => b.t === "part");
     const head = set.find((b) => b.t === "head");
     if (!part && !head) fail(`${id}/${file}: neither a part page nor a chapter`);
@@ -340,7 +386,8 @@ function loadBook(id) {
     const kind = part ? "part" : /^introduction/i.test(eyebrow) ? "introduction" : /^conclusion/i.test(eyebrow) ? "conclusion" : /^appendix/i.test(eyebrow) ? "appendix" : "chapter";
     return { file, n: i + 1, kind, eyebrow, title: part ? part.name : head.title, source, set };
   });
-  return { id, dir, meta, title, subtitle, formerly, cover, sections, stats, author: meta.author };
+  const dedication = (meta.dedication ?? []).map((l) => curl(l, stats));
+  return { id, dir, meta, title, subtitle, formerly, cover, sections, stats, dedication, author: meta.author };
 }
 
 /** A chapter's number as the contents page prints it. */
@@ -428,6 +475,8 @@ p.src{margin:0 0 .45em;padding-left:1.4em;text-indent:-1.4em}
 .titlepage .art img{width:100%;height:auto}
 .titlepage .author{margin-top:1.5em;font-size:.85em;letter-spacing:.3em;text-transform:uppercase;text-indent:0}
 .copyright p{margin:0 0 1em;font-size:.85em;text-indent:0}
+.dedication{margin-top:20%;text-align:center}
+.dedication p{margin:0 0 1em;font-style:italic;text-indent:0}
 nav ol{margin:0;padding:0;list-style:none}
 nav li{margin:.55em 0}
 nav ol ol{margin-left:1.4em}
@@ -495,7 +544,10 @@ function contentsTree(book) {
   return items;
 }
 
-const tocLabel = (s) => (s.kind === "part" ? `${s.eyebrow}: ${s.title}` : s.kind === "chapter" ? `${chapterNumber(s.eyebrow)}. ${s.title}` : `${s.eyebrow}: ${s.title}`);
+/** A label the source writes all in capitals ("APPENDIX A"), in capitals and small letters for the contents and bookmarks. */
+const labelCase = (e) => (/[a-z]/.test(e) ? e : e.replace(/[A-Z]{2,}/g, (w) => w[0] + w.slice(1).toLowerCase()));
+
+const tocLabel = (s) => (s.kind === "part" ? `${labelCase(s.eyebrow)}: ${s.title}` : s.kind === "chapter" ? `${chapterNumber(s.eyebrow)}. ${s.title}` : `${labelCase(s.eyebrow)}: ${s.title}`);
 
 async function buildEpub(book, outFile) {
   const files = [];
@@ -522,6 +574,8 @@ async function buildEpub(book, outFile) {
     "application/xhtml+xml"
   );
 
+  if (book.dedication.length) add("dedication.xhtml", xhtml("Dedication", `<section epub:type="dedication" class="dedication">${book.dedication.map((l) => `<p>${inline(l)}</p>`).join("\n")}</section>`), "application/xhtml+xml");
+
   const items = contentsTree(book);
   const navLi = (li) => `<li><a href="${li.s.file}">${esc(tocLabel(li.s))}</a>${li.kids.length ? `<ol>${li.kids.map(navLi).join("")}</ol>` : ""}</li>`;
   const firstBody = book.sections[0].file;
@@ -543,7 +597,7 @@ async function buildEpub(book, outFile) {
   );
 
   const idOf = (name) => (name === "toc.ncx" ? "ncx" : name === "cover.jpg" ? "cover-image" : name.replace(/\.[a-z0-9]+$/, "").replace(/[^A-Za-z0-9]+/g, "-").replace(/^(\d)/, "x$1"));
-  const spine = ["cover.xhtml", "title.xhtml", "copyright.xhtml", "nav.xhtml", ...book.sections.map((s) => s.file)];
+  const spine = ["cover.xhtml", "title.xhtml", "copyright.xhtml", ...(book.dedication.length ? ["dedication.xhtml"] : []), "nav.xhtml", ...book.sections.map((s) => s.file)];
   const opf = `<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="bid" xml:lang="${book.meta.language}">
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
@@ -718,6 +772,8 @@ body{margin:0}
 .tp .art svg{display:block;width:100%;height:auto}
 .tp .a{font:400 9pt/12pt "Source Serif 4";letter-spacing:.3em;text-transform:uppercase;padding-bottom:6pt}
 .cr{justify-content:flex-end;text-align:left}
+.ded{justify-content:flex-start;padding-top:132pt}
+.ded p{margin:0 auto 13pt;max-width:236pt;font:italic 400 12.5pt/17.5pt "Cormorant Garamond";text-indent:0;text-align:center;hyphens:none;text-wrap:balance}
 .cr p{max-width:262pt;margin:0 0 9.5pt;font-size:8.2pt;line-height:11.6pt;text-indent:0;text-align:left;hyphens:none}
 .toc{page:fmtoc}
 .toc h1{margin:0;padding-top:30pt;font:400 27pt/30pt "Cormorant Garamond";text-align:center}
@@ -822,12 +878,13 @@ function printHtml(book, plan) {
   out.push(`<div class="fm-blank"></div>`);
   out.push(`<div class="fm tp"><div class="t">${esc(book.title)}</div>${book.subtitle ? `<div class="s">${esc(book.subtitle)}</div>` : ""}<div class="rule"></div><div class="art">${artSvg(book).svg}</div><div class="a">${esc(book.author)}</div></div>`);
   out.push(`<div class="fm cr"><p>${esc(full)}</p>${copyrightLines(book).map((l) => `<p>${esc(l)}</p>`).join("")}</div>`);
+  if (book.dedication.length) out.push(`<div class="fm ded">${book.dedication.map((l) => `<p>${inline(l)}</p>`).join("")}</div>`, `<div class="fm-blank"></div>`);
 
   const rows = book.sections.map((s) => {
     const pn = final ? plan.folio[s.n] : "000";
     if (s.kind === "part") return `<div class="pt">${esc(s.eyebrow)} · ${esc(s.title)}</div>`;
     const no = s.kind === "chapter" ? chapterNumber(s.eyebrow) : "";
-    const lab = s.kind === "chapter" ? "" : `<span class="lab">${esc(s.eyebrow)}</span> `;
+    const lab = s.kind === "chapter" ? "" : `<span class="lab">${esc(labelCase(s.eyebrow))}</span> `;
     return `<div class="row"><span class="no">${no}</span><span class="tt">${lab}${esc(s.title)}</span><span class="pn">${pn}</span></div>`;
   });
   out.push(`<div class="toc"><h1>Contents</h1><div class="rule"></div>${rows.join("")}</div>`);
@@ -1257,19 +1314,39 @@ function epubBodyWords(entries, sectionFiles, { markers }) {
 }
 
 /**
- * The proof. The original EPUB's words, changed only by the listed
+ * The proof. The source folder's words, changed only by the listed
  * typesetting rules, must be the new EPUB's words; and the same words,
- * squeezed, must be the text on the new PDF's pages.
+ * squeezed, must be the text on the new PDF's pages. A book that has not
+ * been edited (no `edited` in its book.json) must also have a source folder
+ * that is, word for word, its original EPUB.
  */
 function verify(book, epubFile, pdfInfo) {
   const original = path.join(ORIGINALS, book.meta.original.epub);
   const oldEntries = unzip(fs.readFileSync(original));
   const files = book.sections.map((s) => s.file);
-  const oldWords = epubBodyWords(oldEntries, files, { markers: false });
+  // Sections (and a dedication) that the original PDF carried and the original EPUB did not.
+  const fromPdf = new Set(book.meta.fromOriginalPdf ?? []);
+  const oldWords = epubBodyWords(oldEntries, files.filter((f) => !fromPdf.has(f)), { markers: false });
   const srcWords = book.sections.flatMap((s) => sourceWords(s.source));
-  const report = { book: book.id, original: path.relative(ROOT, original), oldEpubWords: oldWords.length, differences: [] };
-  // 1. The source folder is the original EPUB's text.
-  if (oldWords.join(" ") !== srcWords.join(" ")) report.differences.push("content/books-src is not the text of the original EPUB");
+  const srcEpubWords = book.sections.filter((s) => !fromPdf.has(s.file)).flatMap((s) => sourceWords(s.source));
+  const edited = book.meta.edited ?? null;
+  const report = { book: book.id, source: `content/books-src/${book.id}`, sourceWords: srcWords.length, original: path.relative(ROOT, original), oldEpubWords: oldWords.length, differences: [] };
+  // 1. An unedited book's source folder is the original EPUB's text. An edited book's is not, by the author's
+  //    instruction; what the edit kept is proved by the fact diff in the record `edited` names.
+  if (edited) {
+    if (!edited.date || !edited.instruction || !edited.record || !fs.existsSync(path.join(ROOT, edited.record))) fail(`${book.id}: book.json's \`edited\` needs a date, the instruction and a record that exists`);
+    report.edited = { ...edited, sourceIsOriginal: oldWords.join(" ") === srcEpubWords.join(" ") };
+  } else if (oldWords.join(" ") !== srcEpubWords.join(" ")) report.differences.push("content/books-src is not the text of the original EPUB, and book.json records no edit");
+  // 1b. What the source takes from the original PDF (part pages, a dedication) is in that PDF, letter for letter.
+  if (fromPdf.size || (book.meta.dedication ?? []).length) {
+    const letters = (t) => t.normalize("NFKD").replace(/[^A-Za-z0-9]/g, "").toLowerCase();
+    const oldPdf = letters(execFileSync("pdftotext", ["-raw", path.join(ORIGINALS, book.meta.original.pdf), "-"], { encoding: "utf8", maxBuffer: 1 << 28 }));
+    const missing = [];
+    for (const s of book.sections) if (fromPdf.has(s.file) && !oldPdf.includes(letters(sourceWords(s.source).join(" ")))) missing.push(s.file);
+    if ((book.meta.dedication ?? []).length && !oldPdf.includes(letters(book.meta.dedication.join(" ")))) missing.push("the dedication");
+    if (missing.length) report.differences.push(`not found in the original PDF: ${missing.join(", ")}`);
+    report.fromOriginalPdf = { sections: [...fromPdf], dedication: (book.meta.dedication ?? []).length > 0, found: missing.length === 0 };
+  }
   // 2. The set text is the source text with only the listed changes.
   const expected = book.sections.flatMap((s) => setWords(s.set));
   const rules = (w) =>
@@ -1278,22 +1355,23 @@ function verify(book, epubFile, pdfInfo) {
       .replace(/(^| )\*(Key Takeaways|Reflection Questions|Practices|Sources & Notes)\*(?= |$)/g, "$1$2")
       .replace(/\\([._])/g, "$1")
       .replace(/([.!?])\*(?= )/g, "$1")
+      .replace(/&#(\d+);/g, (m, d) => String.fromCodePoint(Number(d)))
       .split(" ");
   // Marks at the head of a list item are compared apart from the words.
   const isMark = (w) => w === "-" || w === "•";
-  const a = rules(oldWords).map(straight).filter((w) => !isMark(w));
+  const a = rules(srcWords).map(straight).filter((w) => !isMark(w));
   const b = expected.map(straight).filter((w) => !isMark(w));
   report.wordsCompared = a.length;
   for (let i = 0; i < Math.max(a.length, b.length); i++) {
     if (a[i] !== b[i]) {
-      report.differences.push(`original and typeset text part at word ${i}: "${a.slice(i, i + 8).join(" ")}" against "${b.slice(i, i + 8).join(" ")}"`);
+      report.differences.push(`source and typeset text part at word ${i}: "${a.slice(i, i + 8).join(" ")}" against "${b.slice(i, i + 8).join(" ")}"`);
       break;
     }
   }
-  const marksOld = rules(oldWords).filter(isMark).length;
+  const marksOld = rules(srcWords).filter(isMark).length;
   const marksNew = expected.filter(isMark).length;
-  if (marksOld - book.stats.sourceHyphensDropped !== marksNew) report.differences.push(`list marks: ${marksOld} in the original, ${book.stats.sourceHyphensDropped} dropped, ${marksNew} set`);
-  report.listMarks = { original: marksOld, droppedBeforeSources: book.stats.sourceHyphensDropped, set: marksNew };
+  if (marksOld - book.stats.sourceHyphensDropped !== marksNew) report.differences.push(`list marks: ${marksOld} in the source, ${book.stats.sourceHyphensDropped} dropped, ${marksNew} set`);
+  report.listMarks = { source: marksOld, droppedBeforeSources: book.stats.sourceHyphensDropped, set: marksNew };
   // 3. The new EPUB carries exactly the set text.
   if (epubFile) {
     const newWords = epubBodyWords(unzip(fs.readFileSync(epubFile)), files, { markers: true });

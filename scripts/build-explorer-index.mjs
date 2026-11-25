@@ -81,6 +81,7 @@ export function buildIndex() {
       frames: film.frames.length,
       stops: film.stops,
       cards: film.cards,
+      ...(film.book ? { book: film.book } : {}),
     };
   });
   return {
@@ -99,8 +100,9 @@ export function buildIndex() {
  * film's own data points to (its deeper links, where churches differ, and
  * where it sends the reader at the end), turned round, so that an Honest
  * Answer, a /questions piece, a doctrine study or a wisdom topic can show the
- * films that belong on it (components FilmsHere). Study Bible chapters are
- * left to the passage index, and the family pages to their own data. A
+ * films that belong on it (components FilmsHere). A film for one whole book
+ * of the Bible (its "book") is offered on that book's page. Study Bible
+ * chapters are left to the passage index, and the family pages to their own data. A
  * wisdom topic the site marks as heavy (client/src/data/sensitive-pages.json)
  * keeps the path to help and nothing beside it, as with the tools, so no film
  * is offered there; a film may still link to it.
@@ -125,9 +127,12 @@ export function buildFilmLinks() {
       ...(film.differ?.links ?? []),
       ...(film.end ? [film.end] : []),
     ].map(l => String(l.href ?? "").replace(/[#?].*$/, ""));
+    // A film for one whole book is offered on that book's own page.
+    if (film.book) hrefs.push(`/study/bible/${film.book}`);
     let used = false;
     for (const h of new Set(hrefs)) {
-      if (!OFFERED_ON.test(h) || HEAVY.has(h)) continue;
+      const bookPage = film.book && h === `/study/bible/${film.book}`;
+      if ((!OFFERED_ON.test(h) && !bookPage) || HEAVY.has(h)) continue;
       (pages[h] ??= []).push(f.slug);
       used = true;
     }

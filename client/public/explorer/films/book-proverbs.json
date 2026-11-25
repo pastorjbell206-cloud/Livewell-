@@ -1,0 +1,114 @@
+{
+  "slug": "book-proverbs",
+  "title": "Proverbs: skill for ordinary days",
+  "group": "books",
+  "status": "finished",
+  "book": "proverbs",
+  "mark": "book-proverbs",
+  "line": {
+    "younger": "The Bible's book of wise sayings: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Proverbs as a whole book: a collection of collections, the fear of the LORD, two ways, Wisdom's call, words, work and the poor, and how to read a proverb."
+  },
+  "poster": "A father sits with his son at the door of their house, one hand raised as he teaches, and a gold sun stands over the town behind them.",
+  "frames": [
+    {
+      "id": "wisdom",
+      "name": "Skill for ordinary days",
+      "still": "A father sits with his son at the door of their house, one hand raised as he teaches, and a gold sun stands over the town behind them.",
+      "younger": "Proverbs is the Bible's book of wise sayings. Being wise is not the same as being clever. It means knowing how to live well in God's world, on an ordinary day. And it starts with God.",
+      "older": "Wisdom in Proverbs is not cleverness or book learning. It is skill in living, the ability to see how God's world works and to act in step with it. Its motto comes in its first chapter.",
+      "verse": {
+        "ref": "Proverbs 1:7",
+        "text": "The fear of the LORD is the beginning of knowledge"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in five panels, with a house, a crown, a lamp, a second crown and a woman's spindle over them. A gold rule lies under the first panel, the father's teaching.",
+      "younger": "Proverbs is a collection of collections. It begins with nine chapters where a father teaches his son. Then come hundreds of short sayings. It ends with a poem about a wise and strong woman.",
+      "older": "Proverbs is a collection of collections: nine chapters of longer poems, the proverbs of Solomon, the words of the wise, a second collection copied by Hezekiah's men, and the words of Agur and Lemuel.",
+      "verse": {
+        "ref": "Proverbs 1:8",
+        "text": "Listen, my son, to your father’s instruction"
+      }
+    },
+    {
+      "id": "two-ways",
+      "name": "Watch for: two ways",
+      "still": "A traveller stands where a road divides. One path climbs toward a gold dawn. The other goes down between dark rocks.",
+      "younger": "Watch for two roads. Proverbs says life is like a road that splits. Small choices, a friend, a lie, a look, set you walking one way or the other. The book teaches you to see where a road ends before you step onto it.",
+      "older": "Proverbs pictures life as a road with two paths. Choices that look small, a companion, a loan, a glance, a lie, set a person on one road or the other. The book trains the reader to see where a path ends before stepping onto it.",
+      "verse": {
+        "ref": "Proverbs 4:18",
+        "text": "The path of the righteous is like the first gleam of dawn"
+      }
+    },
+    {
+      "id": "call",
+      "name": "Watch for: Wisdom's call",
+      "still": "In a busy street a woman stands on a step and calls with her arms open, and people passing turn to listen. Behind her is a house with seven pillars, a lamp with a gold flame at its door.",
+      "younger": "Watch for a woman called Wisdom. The book pictures wisdom as a woman who calls out in the street and invites everyone to her table. So being wise is more than keeping rules. It is saying yes to an invitation.",
+      "older": "In chapters 1, 8 and 9, wisdom speaks as a woman who calls in public places and was present with God when he made the world. Her rival, Folly, also calls. To choose wisdom is to accept an invitation, not only to master a set of rules.",
+      "verse": {
+        "ref": "Proverbs 1:20",
+        "text": "Wisdom calls out in the street, she lifts her voice in the square"
+      }
+    },
+    {
+      "id": "words",
+      "name": "Watch for: words",
+      "still": "Two neighbours face each other across a low wall. One leans forward with a hand raised in anger. The other stands quietly with an open hand held out.",
+      "younger": "Watch for what the book says about words. It talks about the tongue more than almost anything else. Honest words or lies. Gentle answers or harsh ones. Words can build up a home, or tear it down.",
+      "older": "Few subjects get more attention in Proverbs than the tongue: honest and lying lips, gentle and harsh answers, gossip and discretion, flattery and faithful rebuke. Restraint in speech is treated again and again as a mark of wisdom.",
+      "verse": {
+        "ref": "Proverbs 15:1",
+        "text": "A gentle answer turns away wrath, but a harsh word stirs up anger."
+      }
+    },
+    {
+      "id": "work",
+      "name": "Watch for: work, money and the poor",
+      "still": "At the gate of a town a woman hands a loaf of bread to a man who sits by the wall. Behind them a farmer comes in from the wheat field with his load, under a gold sun.",
+      "younger": "Watch for work and money. Proverbs likes hard work and warns the lazy. But it also warns people not to trust in money, and never to cheat or push down the poor. Being kind to someone poor, it says, is like lending to God.",
+      "older": "Proverbs praises diligence and warns the sluggard, but it also warns against trusting riches and against oppressing the poor. Wealth is a real good in the book, but always a lesser one than wisdom, righteousness and a good name.",
+      "verse": {
+        "ref": "Proverbs 19:17",
+        "text": "Kindness to the poor is a loan to the LORD"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter one. Read slowly, a few sayings at a time. And remember: a proverb tells you how life usually goes. It is not a promise for every time.",
+      "older": "Read Proverbs as proverbs. A proverb is a compressed observation about how life usually goes under God, not a guarantee for every case. Start with chapter 1. The book's page marks seven key chapters: 1, 3, 8, 9, 10, 22 and 31.",
+      "verse": {
+        "ref": "Proverbs 3:5",
+        "text": "Trust in the LORD with all your heart, and lean not on your own understanding"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Think of one small choice you made today. Which road did it put you on?",
+    "older": "Proverbs 26 puts two sayings side by side that give opposite advice. Why would a book of wisdom do that, and what does it ask of the reader?"
+  },
+  "read": [
+    { "label": "Proverbs 1", "href": "/study/bible/proverbs/1" },
+    { "label": "Proverbs 3", "href": "/study/bible/proverbs/3" },
+    { "label": "Proverbs 8", "href": "/study/bible/proverbs/8" },
+    { "label": "Proverbs 15", "href": "/study/bible/proverbs/15" },
+    { "label": "Proverbs 31", "href": "/study/bible/proverbs/31" }
+  ],
+  "stops": [
+    "kingdom"
+  ],
+  "cards": [],
+  "deeper": [
+    { "label": "Proverbs in the Study Bible: the whole book", "href": "/study/bible/proverbs" },
+    { "label": "The Wisdom Books Explorer: every verse of Proverbs by theme", "href": "/tools/wisdom-books" },
+    { "label": "Psalms: the prayer book of the Bible (a moving picture)", "href": "/study/explorer/watch/book-psalms" },
+    { "label": "How the 66 books fit together (a moving picture)", "href": "/study/explorer/watch/sixty-six-books" }
+  ],
+  "end": { "label": "Start reading: Proverbs 1", "href": "/study/bible/proverbs/1" }
+}

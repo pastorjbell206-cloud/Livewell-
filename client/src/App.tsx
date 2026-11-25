@@ -172,6 +172,13 @@ const StudyBibleYear = lazy(() => import("./pages/StudyBibleYear"));
 const BiblePlans = lazy(() => import("./pages/BiblePlans"));
 const StudyBibleSearch = lazy(() => import("./pages/StudyBibleSearch"));
 const HowToStudy = lazy(() => import("./pages/HowToStudy"));
+const BibleTimeline = lazy(() => import("./pages/bible-explore/BibleTimeline"));
+const BibleAtlas = lazy(() => import("./pages/bible-explore/BibleAtlas"));
+const BibleWords = lazy(() => import("./pages/bible-explore/BibleWords"));
+const BibleHardPassages = lazy(() => import("./pages/bible-explore/BibleHardPassages"));
+const BooksAtAGlance = lazy(() => import("./pages/bible-explore/BooksAtAGlance"));
+const KeyChapters = lazy(() => import("./pages/bible-explore/KeyChapters"));
+const BibleThemes = lazy(() => import("./pages/bible-explore/BibleThemes"));
 // Tracks: a few numbered sessions in order, each using a page the site already has (lib/tracks.ts).
 const Tracks = lazy(() => import("./pages/tracks/Tracks"));
 const Track = lazy(() => import("./pages/tracks/Track"));
@@ -626,6 +633,14 @@ function Router() {
         <Route path="/study/bible/:book" component={StudyBible} />
         <Route path="/study/bible" component={StudyBible} />
         <Route path="/study/how-to-study" component={HowToStudy} />
+        {/* The book pages, explored across the whole Bible (scripts/lib/bible-explore.mjs). */}
+        <Route path="/study/timeline" component={BibleTimeline} />
+        <Route path="/study/atlas" component={BibleAtlas} />
+        <Route path="/study/words" component={BibleWords} />
+        <Route path="/study/hard-passages" component={BibleHardPassages} />
+        <Route path="/study/books-at-a-glance" component={BooksAtAGlance} />
+        <Route path="/study/key-chapters" component={KeyChapters} />
+        <Route path="/study/themes" component={BibleThemes} />
         <Route path="/tracks" component={Tracks} />
         <Route path="/tracks/:slug" component={Track} />
         {/* A track's leader's guide and the whole track to print, before a session number. */}

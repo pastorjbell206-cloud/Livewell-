@@ -5,8 +5,9 @@
  * data names the pages it points to (its deeper links, where churches differ,
  * where it sends the reader at the end), and scripts/build-explorer-index.mjs
  * turns that round into client/public/explorer/film-links.json. An Honest
- * Answer, a /questions piece, a doctrine study or a wisdom topic passes its
- * own address and shows whatever films point at it; with none, or if the
+ * Answer, a /questions piece, a doctrine study, a wisdom topic or a book of
+ * the Bible's own page (for the film made for that book) passes its own
+ * address and shows whatever films point at it; with none, or if the
  * small file cannot be read, it shows nothing at all.
  */
 import { useEffect, useId, useState } from "react";

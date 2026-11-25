@@ -310,7 +310,29 @@ function mainPages() {
   const typed = [...MAIN_PAGES, ...supportSearchPages()].map((p) => ({ ...p, title: catalog.get(p.href) ?? tools.get(p.href) ?? p.title }));
   const have = new Set(typed.map((p) => p.href.split("#")[0]));
   const rest = catalogEntries().filter((e) => !have.has(e.href) && !tools.has(e.href));
-  return [...typed, ...rest];
+  return [...typed, ...rest, ...films().filter((f) => !have.has(f.href))];
+}
+
+/**
+ * The Bible Explorer's moving pictures: every finished film in the catalogue
+ * (client/public/explorer/films.json) that MAIN_PAGES does not already name,
+ * under its own title and its own line, so a film is found the day it is
+ * finished, with no second list to keep.
+ */
+function films() {
+  const { films: list, groups } = readJson("explorer/films.json");
+  const groupName = new Map(groups.map((g) => [g.id, str(g.name)]));
+  return list
+    .filter((f) => f.status === "finished" && fs.existsSync(path.join(PUB, `explorer/films/${f.slug}.json`)))
+    .map((f) => {
+      const film = readJson(`explorer/films/${f.slug}.json`);
+      return {
+        title: str(f.title),
+        href: `/study/explorer/watch/${f.slug}`,
+        blurb: clip(film.line?.older ?? film.line?.younger),
+        keywords: `kids children teens moving picture animation video watch explorer ${groupName.get(f.group) ?? ""} ${(film.frames ?? []).map((fr) => str(fr.name)).join(" ")}`.toLowerCase(),
+      };
+    });
 }
 
 /** The Study Bible beyond its chapters: each book's introduction, the reading guides, the acts of the story. */

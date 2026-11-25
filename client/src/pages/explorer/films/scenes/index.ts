@@ -51,6 +51,22 @@ export const FILM_SCENES: Record<
   "john-3-16": () => import("./john-3-16"),
   "psalm-23": () => import("./psalm-23"),
   "romans-8-28": () => import("./romans-8-28"),
+  "all-nations": () => import("./all-nations"),
+  "light-and-darkness": () => import("./light-and-darkness"),
+  "never-heard": () => import("./never-heard"),
+  "temple-destroyed": () => import("./temple-destroyed"),
+  "book-genesis": () => import("./book-genesis"),
+  "book-psalms": () => import("./book-psalms"),
+  "book-john": () => import("./book-john"),
+  "book-romans": () => import("./book-romans"),
+  "book-exodus": () => import("./book-exodus"),
+  "book-proverbs": () => import("./book-proverbs"),
+  "book-isaiah": () => import("./book-isaiah"),
+  "book-matthew": () => import("./book-matthew"),
+  "book-mark": () => import("./book-mark"),
+  "book-luke": () => import("./book-luke"),
+  "book-acts": () => import("./book-acts"),
+  "book-revelation": () => import("./book-revelation"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

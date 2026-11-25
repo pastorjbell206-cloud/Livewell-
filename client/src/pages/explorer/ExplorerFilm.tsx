@@ -273,6 +273,86 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "1 Samuel 17 as the text tells it, in seven moving pictures: two armies, a champion, a shepherd boy, a speech in the name of the LORD, one stone, and who we are in the story.",
     },
+    "all-nations": {
+      title: "A blessing for all nations: Bible Explorer",
+      description:
+        "God's promise to bless every family on earth, in seven moving pictures: Babel, Abraham under the stars, Rahab and Ruth, Jonah and Nineveh, the Magi, Pentecost, and a crowd no one can count.",
+    },
+    "light-and-darkness": {
+      title: "Light and darkness: Bible Explorer",
+      description:
+        "One light followed through the whole Bible, in seven moving pictures: the first word of creation, light in Egypt's darkness, the pillar of fire, the lamp in the tent, Isaiah's great light, the light of the world, and the city with no night.",
+    },
+    "never-heard": {
+      title: "What about people who never heard?: Bible Explorer",
+      description:
+        "A hard question in seven moving pictures: what all Christians confess, what the Bible says and does not say about those who never heard of Jesus, and the three main answers Christians give, with no side taken.",
+    },
+    "temple-destroyed": {
+      title: "Why did God let his temple be destroyed?: Bible Explorer",
+      description:
+        "The prophets' own answer, in seven moving pictures: a temple that never held God, prophet after prophet, Jeremiah at the gate, the glory leaving, the day it fell, grief kept in Scripture, and a promise larger than what was lost.",
+    },
+    "book-genesis": {
+      title: "Genesis: the book of beginnings: Bible Explorer",
+      description:
+        "The whole book of Genesis in seven moving pictures: what it is, its two halves, the image of God, the first sin, the promise to Abraham, a faithful God with a flawed family, and where to start reading.",
+    },
+    "book-psalms": {
+      title: "Psalms: the prayer book of the Bible: Bible Explorer",
+      description:
+        "The whole book of Psalms in seven moving pictures: what it is, its gateway and five books, honest prayer, praise, the LORD as king, the prayers Jesus prayed, and where to start reading.",
+    },
+    "book-john": {
+      title: "John: the Word made flesh: Bible Explorer",
+      description:
+        "The whole Gospel of John in seven moving pictures: what it is, how it is built, the signs, the seven I am sayings, believing and life, the last evening and the glory of the cross, and where to start reading.",
+    },
+    "book-romans": {
+      title: "Romans: the good news, set out: Bible Explorer",
+      description:
+        "The whole letter to the Romans in seven moving pictures: what it is, its large blocks, what is wrong, what God has done, the new life, one people from Jew and Gentile, and where to start reading.",
+    },
+    "book-exodus": {
+      title: "Exodus: out of slavery, to God: Bible Explorer",
+      description:
+        "The whole book of Exodus in seven moving pictures: what it is, its two halves, the name of God, the Passover and the sea, a law given to people already rescued, the tent where God comes to live, and where to start reading.",
+    },
+    "book-proverbs": {
+      title: "Proverbs: skill for ordinary days: Bible Explorer",
+      description:
+        "The whole book of Proverbs in seven moving pictures: what it is, a collection of collections, two ways, Wisdom's call, words, work and the poor, and how to read a proverb.",
+    },
+    "book-isaiah": {
+      title: "Isaiah: the Holy One who comforts: Bible Explorer",
+      description:
+        "The whole book of Isaiah in seven moving pictures: what it is, its three parts, the Holy One of Israel, trust or ruin, judgment and a remnant, the king and the Servant, a world made new, and where to start reading.",
+    },
+    "book-matthew": {
+      title: "Matthew: God with us: Bible Explorer",
+      description:
+        "The whole Gospel of Matthew in seven moving pictures: what it is, its five great blocks of teaching, promises kept, the kingdom of heaven, who Jesus is, Israel and all nations, and where to start reading.",
+    },
+    "book-mark": {
+      title: "Mark: the story at a run: Bible Explorer",
+      description:
+        "The whole Gospel of Mark in seven moving pictures: what it is, its two halves, the question of who Jesus is, the way of the cross, friends who fail, the centurion at the cross, and where to start reading.",
+    },
+    "book-luke": {
+      title: "Luke: good news for the lost: Bible Explorer",
+      description:
+        "The whole Gospel of Luke in seven moving pictures: what it is, the long road to Jerusalem, people others passed over, the lost found, prayer, salvation today and joy, and where to start reading.",
+    },
+    "book-acts": {
+      title: "Acts: to the ends of the earth: Bible Explorer",
+      description:
+        "The whole book of Acts in seven moving pictures: what it is, the road from Jerusalem to Rome, the Holy Spirit, witnesses and what it cost, every line crossed, Saul who became Paul, and where to start reading.",
+    },
+    "book-revelation": {
+      title: "Revelation: the Lamb on the throne: Bible Explorer",
+      description:
+        "The whole book of Revelation in seven moving pictures, with nothing to frighten: what it is, how it is laid out, the throne, the Lamb, the ways Christians read its visions, all things made new, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

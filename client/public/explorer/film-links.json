@@ -9,6 +9,54 @@
    "title": "David and Goliath",
    "line": "A giant, a frightened army, and a shepherd boy with a sling. The story as the Bible tells it, in seven pictures, and what it is really about."
   },
+  "book-genesis": {
+   "title": "Genesis: the book of beginnings",
+   "line": "The first book of the Bible: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-psalms": {
+   "title": "Psalms: the prayer book of the Bible",
+   "line": "The Bible's book of prayers and songs: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-john": {
+   "title": "John: the Word made flesh",
+   "line": "One of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-romans": {
+   "title": "Romans: the good news, set out",
+   "line": "Paul's longest letter: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-exodus": {
+   "title": "Exodus: out of slavery, to God",
+   "line": "The second book of the Bible: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-proverbs": {
+   "title": "Proverbs: skill for ordinary days",
+   "line": "The Bible's book of wise sayings: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-isaiah": {
+   "title": "Isaiah: the Holy One who comforts",
+   "line": "The longest book of the prophets: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-matthew": {
+   "title": "Matthew: God with us",
+   "line": "The first book of the New Testament: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-mark": {
+   "title": "Mark: the story at a run",
+   "line": "The shortest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-luke": {
+   "title": "Luke: good news for the lost",
+   "line": "The longest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-acts": {
+   "title": "Acts: to the ends of the earth",
+   "line": "The book that tells what happened after Jesus rose: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-revelation": {
+   "title": "Revelation: the Lamb on the throne",
+   "line": "The last book of the Bible: what it is, how it is put together, what to watch for, and where to start reading."
+  },
   "holy-spirit": {
    "title": "The Holy Spirit through the Bible",
    "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
@@ -36,6 +84,10 @@
   "kingdom-of-god": {
    "title": "The kingdom of God",
    "line": "Jesus said the kingdom of God is like a tiny seed that grows into a great tree. Seven pictures watch it grow, from God's rule over all to the day it comes in full."
+  },
+  "light-and-darkness": {
+   "title": "Light and darkness",
+   "line": "The Bible begins in the dark and ends in a city with no night. Follow one light all the way through."
   },
   "who-god-is": {
    "title": "Who God is: Father, Son and Holy Spirit",
@@ -145,6 +197,14 @@
    "title": "Why are there so many churches?",
    "line": "There are so many different churches on so many signs. Seven pictures of how one church became many, and the one root they still share."
   },
+  "never-heard": {
+   "title": "What about people who never heard?",
+   "line": "Many people have lived without ever hearing about Jesus. What does the Bible say, and what do Christians believe? An honest look at a hard question."
+  },
+  "temple-destroyed": {
+   "title": "Why did God let his temple be destroyed?",
+   "line": "God's people had a beautiful temple, and one day it was burned. Why would God let that happen? What the prophets said, and how the story went on."
+  },
   "love-when-i-do-wrong": {
    "title": "Does God still love me when I do wrong?",
    "line": "Everyone does wrong sometimes. Does God stop loving us then? Jesus answered with a story about a son who ran away and a father who ran too."
@@ -197,12 +257,14 @@
    "spirit-in-a-believer"
   ],
   "/answers/how-should-a-christian-read-genesis-1": [
+   "book-genesis",
    "image-of-god",
    "science-and-the-bible"
   ],
   "/answers/if-god-is-good-why-suffering": [
    "romans-8-28",
-   "why-bad-things-happen"
+   "why-bad-things-happen",
+   "temple-destroyed"
   ],
   "/answers/is-faith-irrational": [
    "faith"
@@ -213,11 +275,15 @@
   "/answers/is-it-okay-to-be-angry-at-god": [
    "prayer"
   ],
+  "/answers/is-jesus-the-only-way": [
+   "never-heard"
+  ],
   "/answers/was-jesus-just-a-good-teacher": [
    "who-jesus-is"
   ],
   "/answers/what-about-those-who-never-heard": [
-   "john-3-16"
+   "john-3-16",
+   "never-heard"
   ],
   "/answers/what-does-the-bible-say-about-anxiety": [
    "prayer"
@@ -231,6 +297,12 @@
   "/answers/why-would-anyone-trust-the-bible": [
    "the-bible",
    "is-the-bible-true"
+  ],
+  "/questions/religions/those-who-never-heard": [
+   "never-heard"
+  ],
+  "/study/bible/acts": [
+   "book-acts"
   ],
   "/study/bible/doctrines/atonement": [
    "the-lamb",
@@ -280,6 +352,39 @@
   "/study/bible/doctrines/sin": [
    "what-sin-is"
   ],
+  "/study/bible/exodus": [
+   "book-exodus"
+  ],
+  "/study/bible/genesis": [
+   "book-genesis"
+  ],
+  "/study/bible/isaiah": [
+   "book-isaiah"
+  ],
+  "/study/bible/john": [
+   "book-john"
+  ],
+  "/study/bible/luke": [
+   "book-luke"
+  ],
+  "/study/bible/mark": [
+   "book-mark"
+  ],
+  "/study/bible/matthew": [
+   "book-matthew"
+  ],
+  "/study/bible/proverbs": [
+   "book-proverbs"
+  ],
+  "/study/bible/psalms": [
+   "book-psalms"
+  ],
+  "/study/bible/revelation": [
+   "book-revelation"
+  ],
+  "/study/bible/romans": [
+   "book-romans"
+  ],
   "/wisdom/assurance-of-faith": [
    "faith"
   ],
@@ -291,6 +396,7 @@
   ],
   "/wisdom/fear-and-courage": [
    "david-and-goliath",
+   "light-and-darkness",
    "psalm-23"
   ],
   "/wisdom/feeling-far-from-god": [

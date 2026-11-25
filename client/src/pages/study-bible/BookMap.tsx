@@ -869,7 +869,7 @@ export function frameGeometry(frameId: MapFrameId) {
   const y = (lat: number) => +((b.north - lat) * KM_LAT * f.k).toFixed(1);
   const pts = (list: LatLon[]) =>
     list.map(([la, lo]) => `${x(lo)},${y(la)}`).join(" ");
-  return { W, H, x, y, pts };
+  return { W, H, x, y, pts, half: f.mark ?? 5, sketch: f.sketch };
 }
 
 /**
@@ -920,7 +920,7 @@ export function FrameArt({
 }
 
 /** Which side of its mark each name sits on, so close places do not collide. */
-const LABEL: Record<
+export const LABEL: Record<
   string,
   { dx: number; dy: number; anchor: "start" | "end" | "middle" }
 > = {

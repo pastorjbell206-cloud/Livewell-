@@ -21,7 +21,8 @@
   "advent-18": { "film": "who-jesus-is", "why": "John 1:1, which the film quotes: the Word was God." },
   "advent-19": { "film": "god-with-his-people", "why": "John 1:14, which the film quotes: the Word made his dwelling among us." },
   "holy-week-6": { "film": "why-jesus-died", "why": "Good Friday, and what the cross did." },
-  "holy-week-8": { "film": "the-resurrection", "why": "Easter morning: he is not here." }
+  "holy-week-8": { "film": "the-resurrection", "why": "Easter morning: he is not here." },
+  "gods-faithfulness": { "film": null, "why": "The rule matched Why did God let his temple be destroyed? by Lamentations 3:22-23. The devotion is about a promise kept, not the fall of Jerusalem; unsure, so no film." }
  },
  "catechism": {
   "1": { "film": "image-of-god", "why": "Genesis 1:1, which the film quotes: God made everything, and made us." },
@@ -40,7 +41,9 @@
   "64": { "film": "image-of-god", "why": "Isaiah 43:7, which the film quotes." },
   "65": { "film": "why-bad-things-happen", "why": "The same question." },
   "66": { "film": "is-the-bible-true", "why": "The same question." },
+  "68": { "film": "never-heard", "why": "The same question; the film opens with this question's own verse, Genesis 18:25." },
   "71": { "film": "science-and-the-bible", "why": "Science and the Bible; the film names this question." },
+  "73": { "film": null, "why": "Other religions. The rule matched What about people who never heard? by Acts 4:12, a different question." },
   "74": { "film": "love-when-i-do-wrong", "why": "The same question; the film names it." },
   "75": { "film": "why-bad-things-happen", "why": "The same question." }
  }

@@ -1215,6 +1215,11 @@
       "line": "Stories of the Bible, told as the text itself tells them."
     },
     {
+      "id": "books",
+      "name": "Books of the Bible",
+      "line": "One book at a time: what it is, how it is laid out, what to watch for, and where to start."
+    },
+    {
       "id": "ideas",
       "name": "Big ideas",
       "line": "Themes that run from the first page to the last."
@@ -1319,6 +1324,217 @@
         "kingdom"
       ],
       "cards": []
+    },
+    {
+      "slug": "book-genesis",
+      "title": "Genesis: the book of beginnings",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The first book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Genesis as a whole book: its two halves, its ten headings, the image of God, the first sin, the promise to Abraham, a faithful God with a flawed family, and where to begin."
+      },
+      "mark": "book-genesis",
+      "frames": 7,
+      "stops": [
+        "creation",
+        "fall",
+        "abraham"
+      ],
+      "cards": [],
+      "book": "genesis"
+    },
+    {
+      "slug": "book-psalms",
+      "title": "Psalms: the prayer book of the Bible",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The Bible's book of prayers and songs: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "The Psalms as a whole book: a gateway, five books and a last Hallelujah; lament, praise, the LORD as king, the prayers Jesus prayed, and where to begin."
+      },
+      "mark": "book-psalms",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": [],
+      "book": "psalms"
+    },
+    {
+      "slug": "book-john",
+      "title": "John: the Word made flesh",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "One of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "The Gospel of John as a whole book: its opening, its signs, the seven “I am” sayings, believing and life, the hour and the glory, and where to begin."
+      },
+      "mark": "book-john",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "john"
+    },
+    {
+      "slug": "book-romans",
+      "title": "Romans: the good news, set out",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "Paul's longest letter: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Romans as a whole letter: its theme, its large blocks, what is wrong, what God has done, the new life, one people from Jew and Gentile, and where to begin."
+      },
+      "mark": "book-romans",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "romans"
+    },
+    {
+      "slug": "book-exodus",
+      "title": "Exodus: out of slavery, to God",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The second book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Exodus as a whole book: its two halves, the name of God, the Passover and the sea, a law given to people already rescued, the tent where God comes to live, and where to begin."
+      },
+      "mark": "book-exodus",
+      "frames": 7,
+      "stops": [
+        "rescue",
+        "sinai"
+      ],
+      "cards": [],
+      "book": "exodus"
+    },
+    {
+      "slug": "book-proverbs",
+      "title": "Proverbs: skill for ordinary days",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The Bible's book of wise sayings: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Proverbs as a whole book: a collection of collections, the fear of the LORD, two ways, Wisdom's call, words, work and the poor, and how to read a proverb."
+      },
+      "mark": "book-proverbs",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": [],
+      "book": "proverbs"
+    },
+    {
+      "slug": "book-isaiah",
+      "title": "Isaiah: the Holy One who comforts",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The longest book of the prophets: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Isaiah as a whole book: its three parts, the Holy One of Israel, trust or ruin, judgment and a remnant, the king and the Servant, a new creation, and where to begin."
+      },
+      "mark": "book-isaiah",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "isaiah"
+    },
+    {
+      "slug": "book-matthew",
+      "title": "Matthew: God with us",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The first book of the New Testament: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Matthew as a whole book: the son of David and of Abraham, five great blocks of teaching, fulfillment, the kingdom of heaven, the way of the cross, all nations, and where to begin."
+      },
+      "mark": "book-matthew",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "matthew"
+    },
+    {
+      "slug": "book-mark",
+      "title": "Mark: the story at a run",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The shortest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Mark as a whole book: its speed, its hinge at Peter's answer, the question of who Jesus is, the way of the cross, failure and grace, the centurion at the cross, and where to begin."
+      },
+      "mark": "book-mark",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "mark"
+    },
+    {
+      "slug": "book-luke",
+      "title": "Luke: good news for the lost",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The longest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Luke as a whole book: an orderly account, the long road to Jerusalem, good news to the poor, the lost found, prayer, salvation today, and where to begin."
+      },
+      "mark": "book-luke",
+      "frames": 7,
+      "stops": [
+        "jesus",
+        "cross"
+      ],
+      "cards": [],
+      "book": "luke"
+    },
+    {
+      "slug": "book-acts",
+      "title": "Acts: to the ends of the earth",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book that tells what happened after Jesus rose: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Acts as a whole book: Luke's second volume, the road from Jerusalem to Rome, the Holy Spirit, witness and its cost, a gospel that crosses every line, and where to begin."
+      },
+      "mark": "book-acts",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "acts"
+    },
+    {
+      "slug": "book-revelation",
+      "title": "Revelation: the Lamb on the throne",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The last book of the Bible: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Revelation as a whole book: letters to seven churches, a throne, a Lamb who was slain, the ways Christians read its visions, the making new of all things, and where to begin."
+      },
+      "mark": "book-revelation",
+      "frames": 7,
+      "stops": [
+        "new-creation"
+      ],
+      "cards": [],
+      "book": "revelation"
     },
     {
       "slug": "holy-spirit",
@@ -1474,7 +1690,19 @@
       "slug": "all-nations",
       "title": "A blessing for all nations",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God chose one family so that every family on earth could be blessed. Follow that promise from a tower left unfinished to a crowd no one can count.",
+        "older": "From Babel's scattering to the multitude before the throne: how the promise to Abraham, a blessing for all the families of the earth, runs through the whole Bible."
+      },
+      "mark": "all-nations",
+      "frames": 7,
+      "stops": [
+        "abraham",
+        "church",
+        "new-creation"
+      ],
+      "cards": []
     },
     {
       "slug": "kingdom-of-god",
@@ -1498,7 +1726,18 @@
       "slug": "light-and-darkness",
       "title": "Light and darkness",
       "group": "ideas",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "The Bible begins in the dark and ends in a city with no night. Follow one light all the way through.",
+        "older": "From “Let there be light” to the city that needs no sun: the Bible's light followed through Egypt, the wilderness, the tent, Isaiah's promise and the words of Jesus."
+      },
+      "mark": "light-and-darkness",
+      "frames": 7,
+      "stops": [
+        "creation",
+        "new-creation"
+      ],
+      "cards": []
     },
     {
       "slug": "who-god-is",
@@ -1998,13 +2237,35 @@
       "slug": "never-heard",
       "title": "What about people who never heard?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "Many people have lived without ever hearing about Jesus. What does the Bible say, and what do Christians believe? An honest look at a hard question.",
+        "older": "What Christians confess together, what the Bible says and does not say, and the three main answers faithful Christians give, each in its own words, with no side taken."
+      },
+      "mark": "never-heard",
+      "frames": 7,
+      "stops": [
+        "abraham",
+        "church"
+      ],
+      "cards": []
     },
     {
       "slug": "temple-destroyed",
       "title": "Why did God let his temple be destroyed?",
       "group": "questions",
-      "status": "coming"
+      "status": "finished",
+      "line": {
+        "younger": "God's people had a beautiful temple, and one day it was burned. Why would God let that happen? What the prophets said, and how the story went on.",
+        "older": "The prophets' own answer, as the Bible gives it: long warnings, a temple that never held God, real grief kept in Scripture, and a promise larger than what was lost."
+      },
+      "mark": "temple-destroyed",
+      "frames": 7,
+      "stops": [
+        "exile",
+        "return"
+      ],
+      "cards": []
     },
     {
       "slug": "love-when-i-do-wrong",

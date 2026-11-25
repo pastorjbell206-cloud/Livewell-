@@ -356,6 +356,14 @@ function manifestPages() {
       pages.push({ url: `/study/bible/story/${a.id}`, priority: "0.8", changefreq: "monthly" });
     pages.push({ url: "/study/bible/search", priority: "0.6", changefreq: "monthly" });
     pages.push({ url: "/study/how-to-study", priority: "0.8", changefreq: "monthly" });
+    // The book pages explored across the whole Bible (scripts/lib/bible-explore.mjs).
+    pages.push({ url: "/study/timeline", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/atlas", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/words", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/hard-passages", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/books-at-a-glance", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/key-chapters", priority: "0.8", changefreq: "monthly" });
+    pages.push({ url: "/study/themes", priority: "0.8", changefreq: "monthly" });
     // The Bible Explorer: the map, and each stop once it is finished (a stop
     // still being drawn has no link and no place in the sitemap).
     pages.push({ url: "/study/explorer", priority: "0.8", changefreq: "monthly" });

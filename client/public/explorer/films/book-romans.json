@@ -1,0 +1,122 @@
+{
+  "slug": "book-romans",
+  "title": "Romans: the good news, set out",
+  "group": "books",
+  "status": "finished",
+  "book": "romans",
+  "mark": "book-romans",
+  "line": {
+    "younger": "Paul's longest letter: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Romans as a whole letter: its theme, its large blocks, what is wrong, what God has done, the new life, one people from Jew and Gentile, and where to begin."
+  },
+  "poster": "Night. A man sits writing on a scroll at a low table, with a lamp burning beside him and a far city seen through the window.",
+  "frames": [
+    {
+      "id": "letter",
+      "name": "A letter to Rome",
+      "still": "Night. A man sits writing on a scroll at a low table, with a lamp burning with a gold flame beside him and a far city seen through the window.",
+      "younger": "Romans is a letter. A man named Paul wrote it to the followers of Jesus in Rome, the biggest city of his world. He had never met them. So he wrote ahead, to tell them the good news he preached.",
+      "older": "Romans is a letter, the longest Paul wrote. He sent it to the Christians in Rome, Jewish and Gentile believers he had not yet met, to introduce himself and the gospel he preached. He states his theme early.",
+      "verse": {
+        "ref": "Romans 1:16",
+        "text": "I am not ashamed of the gospel, because it is the power of God for salvation to everyone who believes"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The letter drawn as one long scroll in six panels, with a storm cloud, a gift, a green shoot, an olive tree, a table and a small scroll over them. A gold rule lies under the second panel, the gift.",
+      "younger": "Romans is built like steps. First, what is wrong with the world. Then what God has done about it. Then the new life that follows. Then God and his people Israel. Then how to live together.",
+      "older": "Romans moves in large blocks: what is wrong with the whole human race, what God has done about it, the new life that follows, God and Israel, and the life of a people shaped by mercy. The first great turn is two words.",
+      "verse": {
+        "ref": "Romans 3:21",
+        "text": "But now, apart from the law, the righteousness of God has been revealed"
+      }
+    },
+    {
+      "id": "wrong",
+      "name": "Watch for: what is wrong",
+      "still": "Under a dark sky people of many kinds stand side by side on one level ground: a soldier, a teacher with a scroll, a mother and child, a traveller, a workman and a king. No one stands higher than another.",
+      "younger": "Watch for what is wrong. Paul says the whole world has turned away from God. People who never had God's law, and people who did. No one can look down on anyone else.",
+      "older": "Paul first shows that the whole human race, Gentile and Jew, stands guilty before God. Romans treats sin as more than wrong acts. It is a power that reigns. So people need more than self-improvement. They need to be rescued.",
+      "verse": {
+        "ref": "Romans 3:23",
+        "text": "for all have sinned and fall short of the glory of God"
+      }
+    },
+    {
+      "id": "gift",
+      "name": "Watch for: the gift",
+      "still": "A person stands with empty hands held open. Light comes down from a gold sun above.",
+      "younger": "Watch for the gift. God puts people right with himself, and he does it for free, through Jesus, who died for them. Nobody earns it. Faith means trust. It is how a person takes what God gives.",
+      "older": "God sets people right with himself freely, by grace, through Jesus' death, and they receive it by faith. Faith means trust. It is not a good deed that earns a reward.",
+      "verse": {
+        "ref": "Romans 3:24",
+        "text": "justified freely by His grace through the redemption that is in Christ Jesus."
+      }
+    },
+    {
+      "id": "life",
+      "name": "Watch for: the new life",
+      "still": "Morning. A person walks out through an open doorway into the light of a gold sun. A broken chain lies on the ground behind.",
+      "younger": "Watch for the new life. God's Spirit gives life and makes people God's own children. And Paul is sure of this: nothing in all the world can pull them away from God's love.",
+      "older": "Grace does not mean going on in sin. Believers have died with Christ and live a new life. The Spirit gives life, makes them God's children, and holds them in a love nothing can break.",
+      "verse": {
+        "ref": "Romans 8:1",
+        "text": "there is now no condemnation for those who are in Christ Jesus."
+      }
+    },
+    {
+      "id": "one-people",
+      "name": "Watch for: one people",
+      "still": "Evening. People in different dress sit together at one low table and share a meal, and a lamp with a gold flame burns among them.",
+      "younger": "Watch for one people. In Rome, Jewish believers and believers from other nations found it hard to get along. Paul tells them that God has kept his promises to Israel, and that they must welcome one another.",
+      "older": "Chapters 9 to 11 are not a detour. Paul asks whether God has kept his promises to Israel, and answers that God's word has not failed. Then he tells a church of Jewish and Gentile believers to welcome one another.",
+      "verse": {
+        "ref": "Romans 15:7",
+        "text": "Accept one another, then, just as Christ accepted you"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? Romans is not an easy book, and that is all right. Start with chapter one, where Paul says what his letter is about. Then try chapter eight. It is best read out loud.",
+      "older": "Start with chapter 1, and read it aloud, in large sections. Many famous verses mean more inside their paragraph than on a poster. The book's page marks eight key chapters: 1, 3, 4, 5, 6, 8, 9 and 12.",
+      "verse": {
+        "ref": "Romans 1:7",
+        "text": "To all in Rome who are loved by God and called to be saints: Grace and peace to you"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Paul says God's gift is free, and that nobody earns it. Why is that hard for people to believe?",
+    "older": "Romans asks three questions: what is wrong with us, what God has done about it, and what kind of people that makes us. Which of the three do you most need an answer to?"
+  },
+  "read": [
+    { "label": "Romans 1", "href": "/study/bible/romans/1" },
+    { "label": "Romans 3", "href": "/study/bible/romans/3" },
+    { "label": "Romans 8", "href": "/study/bible/romans/8" },
+    { "label": "Romans 12", "href": "/study/bible/romans/12" },
+    { "label": "Romans 15", "href": "/study/bible/romans/15" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that God sets people right with himself by grace, through Christ. They read some of Paul's phrases in more than one way: what he means by “works of the law”, and whether one phrase means faith in Christ or the faithfulness of Christ. This moving picture takes no side; the readings are set out on",
+    "links": [
+      { "label": "the Romans page of the Study Bible", "href": "/study/bible/romans" }
+    ]
+  },
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Romans in the Study Bible: the whole letter, taught from the start", "href": "/study/bible/romans" },
+    { "label": "Romans 8:28: what it promises, and what it does not (a moving picture)", "href": "/study/explorer/watch/romans-8-28" },
+    { "label": "Grace: the gift no one earns (a moving picture)", "href": "/study/explorer/watch/grace" },
+    { "label": "Faith: trusting the one who promised (a moving picture)", "href": "/study/explorer/watch/faith" },
+    { "label": "Paul's travels: a map that draws itself", "href": "/study/explorer/pauls-travels" }
+  ],
+  "end": { "label": "Start reading: Romans 1", "href": "/study/bible/romans/1" }
+}

@@ -121,6 +121,13 @@ export const DOORS: Door[] = [
         id: "bible.read", name: "Read the Study Bible", line: "Every book and chapter, with notes beside the text.", href: "/study/bible", icon: "BookOpen", count: { n: 66, of: "books" },
         inside: [
           { id: "bible.passage", name: "Read any verse in context", line: "Type a verse and see the passage around it.", href: "/theology/passage", icon: "FileText" },
+          { id: "bible.timeline", name: "The Bible's timeline", line: "Every date the book pages give, on one line of time.", href: "/study/timeline", icon: "Hourglass" },
+          { id: "bible.atlas", name: "The Bible atlas", line: "Every place the book pages put on a map, and the chapters that name it.", href: "/study/atlas", icon: "Map" },
+          { id: "bible.words", name: "Key words of the Bible", line: "The words the book pages explain, in one list you can search.", href: "/study/words", icon: "BookMarked" },
+          { id: "bible.hard-passages", name: "Hard passages", line: "The places where readers stop and ask, each with the way to its note.", href: "/study/hard-passages", icon: "MessageCircleQuestion" },
+          { id: "bible.glance", name: "The 66 books at a glance", line: "Every book drawn as one band, part by part.", href: "/study/books-at-a-glance", icon: "Library" },
+          { id: "bible.key-chapters", name: "Where to start in every book", line: "The key chapters of all 66 books, each with its book's reason.", href: "/study/key-chapters", icon: "Signpost" },
+          { id: "bible.themes", name: "Themes of the Bible", line: "Every theme the book pages name, in one list you can search.", href: "/study/themes", icon: "Lightbulb" },
         ],
       },
       { id: "bible.search", name: "Search the Bible", line: "Find every verse that holds a word or phrase.", href: "/study/bible/search", icon: "Search" },

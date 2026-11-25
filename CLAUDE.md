@@ -489,14 +489,15 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (54
+On every PR, five blocking steps: `pnpm check` → the content-gates step (61
 commands, the workflow file is the list; among them: 25 validators: scripture, design, life, studyguides, pathways,
 theology, politics, no-emdash, essays, content-integrity, skeptic-track,
 answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
 workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
 bible-notes; the history-source verifier `verify-sources`; and the `--check`
 drift checks for the family year map, family index, topics index, search
-index, passage index, Bible text, Bible word search, the 2027 story plan,
+index, passage index, the seven cross-book Bible indexes (timeline, atlas,
+key words, hard passages, books at a glance, key chapters, themes), Bible text, Bible word search, the 2027 story plan,
 the family film map, the memory verses and the Bible Explorer films'
 recorded voice) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
@@ -774,8 +775,24 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   stop carrying the old titles and look "elite and professional". Both were
   rebuilt by `scripts/build-book-files.mjs` (run by hand, not in CI) from the
   original EPUBs' own chapter files, kept in `content/books-src/<id>/`; the
-  author's words are unchanged, and `--verify` proves it against the
-  originals, which stay unserved in `content/held-downloads/originals/`. The
+  typesetter adds nothing, and `--verify` proves the built PDF and EPUB are,
+  word for word, the source folder's text. The originals stay untouched and
+  unserved in `content/held-downloads/originals/`. Until 2026-11-25 the
+  source folder had to be the original's text; then James asked for his
+  books to be edited ("i also want you to go through all the book, pdfs, and
+  downloadable content to make it sound human and like me"; and, of
+  fragments, "use full paragraphs in the books too", so
+  `docs/VOICE-JAMES-BELL.md` governs the books as well). Both books
+  are edited (`edited` in each `book.json`): the proof of what an edit kept
+  is the fact diff against the original, chapter by chapter, in
+  `docs/work/elite/voice-books/blind-spots.md` and
+  `a-higher-allegiance.md`. A book with no `edited` entry is still held to
+  its original by `--verify`. Believe was brought in the same way the same
+  day (`content/books-src/believe/`): built once unchanged and verified
+  against its originals, then edited (`voice-books/believe.md`). Its old PDF
+  and EPUB did not carry the same things, so its `book.json` also holds the
+  dedication and names the four part pages taken from the PDF
+  (`fromOriginalPdf`) and the two appendices set as lists (`entries`). The
   files take the new names in the same folders (`Blind-Spots.pdf`,
   `A-Higher-Allegiance.pdf` and their EPUBs); each old file address 301s
   once to its new file. `docs/work/elite/bookshelf.md` section 8 has the
@@ -911,6 +928,27 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   from the Bible files by `scripts/build-memory-verses.mjs` (drift-checked),
   never typed; a verse returns after 1, 3, 7, 14 and 30 days. No second
   memorizing tool: the existing address was rebuilt.
+- **Seven pages across the book pages (James, 2026-11-25: "more content and
+  videos and interactive pages than bible project")**: the Bible's timeline
+  (/study/timeline), the Bible atlas (/study/atlas), Key words of the Bible
+  (/study/words) and Hard passages (/study/hard-passages), all inside "Read
+  the Study Bible". Each reads one file under `client/public/bible/explore/`,
+  written by `scripts/build-bible-<timeline|atlas|words|hard>-index.mjs`
+  (rules in `scripts/lib/bible-explore.mjs`; `--check` is a content gate)
+  from the book pages' own `teaching` data, word for word: no page adds a
+  claim. So: change a book's intro.json, then rerun the four scripts. A date
+  is never chosen between books (the same-event list is
+  `scripts/bible-timeline-same.json`, judgments only); a language is named
+  only where a book's sentence names it; hard passages have no kinds because
+  the data has none, and each keeps its link to its note and Find Help in
+  reach, in the notes' own care lines, copied whole (`CARE_LINES`). Three
+  more (2026-11-25) read what all 66 book pages have: The 66 books at a
+  glance (/study/books-at-a-glance, each book's `structure` as the book
+  page's own band), Where to start in every book (/study/key-chapters,
+  `keyChapters`, never ranked: "one chapter" is the first a book lists) and
+  Themes of the Bible (/study/themes, joined only where books give the same
+  title; no taxonomy). Seven scripts in all, each a gate.
+  `docs/work/elite/interactive.md` has the rules and the run.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.

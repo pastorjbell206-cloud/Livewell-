@@ -615,6 +615,11 @@ const paras = (text) =>
   String(text ?? "").split(/\n{2,}/).map((x) => x.trim()).filter(Boolean).map((x) => `<p>${inline(x)}</p>`).join("\n");
 const sec = (heading, body) => (body ? `<section><h2>${escapeHtml(heading)}</h2>\n${body}</section>` : "");
 const article = (parts) => `<article>\n${parts.filter(Boolean).join("\n")}\n</article>`;
+// A section of a very long list (the cross-book Bible pages hold several
+// hundred entries). All but the first are marked so the browser lays them out
+// only as they near the screen (.pre-far in index.css); the words are all in
+// the file for a reader without scripts.
+const far = (i, heading, body) => (body ? `<section${i ? ' class="pre-far"' : ""}><h2>${escapeHtml(heading)}</h2>\n${body}</section>` : "");
 
 /** An argued answer's parts and sources (answers.ts `sections`, `sources`), as plain HTML. */
 function argued(a) {
@@ -985,6 +990,139 @@ const PAGE_BODIES = {
         `<p class="pre-subtitle">Seven steps that work on any chapter. Learn them here, then try them on a real one.</p>`,
         sec("Seven steps, in order", `<ol>\n${STUDY_STEPS.map((s) => `<li><strong>${escapeHtml(s.title)}.</strong> ${escapeHtml(s.what)}</li>`).join("\n")}\n</ol>\n<p>${escapeHtml(KEPT_HERE)}</p>`),
         `<p><a href="/study/bible/john/3?study=walk">Try it on John 3</a></p>`,
+      ]),
+    };
+  },
+  // The Bible's timeline: every book page's timeline entries, by the stretch of
+  // years each is listed in, in the book's own words, with the way to its book
+  // (client/public/bible/explore/timeline.json, built from the book pages).
+  "/study/timeline": async () => {
+    const d = readJsonSafe("client/public/bible/explore/timeline.json");
+    if (!d?.entries?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const row = (e) => {
+      const b = books.get(e.book);
+      const href = e.ch ? `/study/bible/${b.slug}/${e.ch}${e.v ? `#v${e.v}` : ""}` : `/study/bible/${b.slug}`;
+      const name = e.ch ? `${b.slug === "psalms" ? "Psalm" : b.name} ${e.ch}${e.v ? `:${e.v}` : ""}` : b.name;
+      return `<li><strong>${escapeHtml(e.when)}.</strong> ${escapeHtml(e.what)} <a href="${href}">${escapeHtml(name)}</a></li>`;
+    };
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>The Bible's timeline</h1>`,
+        `<p class="pre-subtitle">Every date the book pages give, on one line of time. Each entry opens its book.</p>`,
+        ...d.bands.map((band, i) => far(i, band.name, `<ol>\n${d.entries.filter((e) => e.band === band.id).map(row).join("\n")}\n</ol>`)),
+      ]),
+    };
+  },
+  // The Bible atlas: every place the book pages place, A to Z, with each book's
+  // own sentence about it and the chapters that book names
+  // (client/public/bible/explore/atlas.json, built from the book pages).
+  "/study/atlas": async () => {
+    const d = readJsonSafe("client/public/bible/explore/atlas.json");
+    if (!d?.places?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const refHref = (slug, r) => { const m = r.match(/^(\d+):(\d+)/); return m ? `/study/bible/${slug}/${m[1]}#v${m[2]}` : `/study/bible/${slug}`; };
+    const place = (p) => `<li id="${escapeHtml(p.id)}"><h2>${escapeHtml(p.name)}</h2>\n${p.books.map((b) => {
+      const name = books.get(b.slug)?.name ?? b.slug;
+      return `<p><a href="/study/bible/${b.slug}"><strong>${escapeHtml(name)}.</strong></a> ${escapeHtml(b.line)} ${b.refs.map((r) => `<a href="${refHref(b.slug, r)}">${escapeHtml(`${b.slug === "psalms" ? "Psalm" : name} ${r}`)}</a>`).join(", ")}</p>`;
+    }).join("\n")}</li>`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>The Bible atlas</h1>`,
+        `<p class="pre-subtitle">Every place the book pages put on a map. Choose one to see the books and chapters that name it.</p>`,
+        `<ul>\n${d.places.map(place).join("\n")}\n</ul>`,
+      ]),
+    };
+  },
+  // Key words of the Bible: every word the book pages explain, A to Z, with
+  // each book's own explanation (client/public/bible/explore/words.json).
+  "/study/words": async () => {
+    const d = readJsonSafe("client/public/bible/explore/words.json");
+    if (!d?.words?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const word = (w) => `<li id="${escapeHtml(w.id)}"><h2>${escapeHtml(w.word)}</h2>\n${w.entries.map((e) => `<p>${escapeHtml(e.line)} <a href="/study/bible/${e.book}">${escapeHtml(books.get(e.book)?.name ?? e.book)}</a></p>`).join("\n")}</li>`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Key words of the Bible</h1>`,
+        `<p class="pre-subtitle">The words the book pages stop to explain, in one list. Search it, or go by language.</p>`,
+        ...Array.from({ length: Math.ceil(d.words.length / 60) }, (_, k) => `<ul${k ? ' class="pre-far"' : ""}>\n${d.words.slice(k * 60, k * 60 + 60).map(word).join("\n")}\n</ul>`),
+      ]),
+    };
+  },
+  // Hard passages: every passage the book pages list as hard, book by book,
+  // each with the link to the chapter where its note faces the question, and
+  // the way to Find Help first (client/public/bible/explore/hard-passages.json).
+  "/study/hard-passages": async () => {
+    const d = readJsonSafe("client/public/bible/explore/hard-passages.json");
+    if (!d?.books?.length) return null;
+    const help = catalogEntries().find((e) => e.href === "/help");
+    const book = (b, i) => far(i, b.name, `<ul>\n${b.items.map((h) => `<li><a href="/study/bible/${b.slug}/${h.ch}#v${h.v}">${escapeHtml(`${b.slug === "psalms" ? "Psalm" : b.name} ${h.ref}`)}</a>: ${escapeHtml(h.line)}</li>`).join("\n")}\n</ul>`);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Hard passages</h1>`,
+        `<p class="pre-subtitle">The places where readers stop and ask. Each one opens the chapter where its note faces the question.</p>`,
+        // The notes' own care lines, whole, with Find Help in them made the link (the page does the same).
+        ...(d.care?.length ? d.care.map((c) => `<p>${escapeHtml(c).replace("Find Help", `<a href="/help">Find Help</a>`)}</p>`) : [help ? `<p><a href="/help">${escapeHtml(help.title)}</a>: ${escapeHtml(help.blurb)}</p>` : ""]),
+        ...d.books.map(book),
+      ]),
+    };
+  },
+  // The 66 books at a glance: every book's own outline, part by part, each
+  // part with its title, its range, its summary and the chapter it opens
+  // (client/public/bible/explore/books-at-a-glance.json).
+  "/study/books-at-a-glance": async () => {
+    const d = readJsonSafe("client/public/bible/explore/books-at-a-glance.json");
+    if (!d?.books?.length) return null;
+    const open = (b, range) => {
+      const cv = range.match(/^(\d+):(\d+)/);
+      if (cv) return `/study/bible/${b.slug}/${cv[1]}${+cv[2] > 1 ? `#v${cv[2]}` : ""}`;
+      const first = parseInt(range, 10) || 1;
+      return b.chapters === 1 ? `/study/bible/${b.slug}/1#v${first}` : `/study/bible/${b.slug}/${first}`;
+    };
+    const book = (b, i) => far(i, b.name, `<ol>\n${b.parts.map((p) => `<li><a href="${open(b, p.range)}"><strong>${escapeHtml(p.title)}</strong></a> (${escapeHtml(`${b.name} ${p.range.replace(/-/g, "\u2013")}`)}). ${escapeHtml(p.summary)}</li>`).join("\n")}\n</ol>`);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>The 66 books at a glance</h1>`,
+        `<p class="pre-subtitle">Every book drawn as one band, part by part. Choose a part to open its chapter.</p>`,
+        ...d.books.map(book),
+      ]),
+    };
+  },
+  // Where to start in every book: each book's key chapters, each with the
+  // book's own reason and the link that opens the chapter
+  // (client/public/bible/explore/key-chapters.json).
+  "/study/key-chapters": async () => {
+    const d = readJsonSafe("client/public/bible/explore/key-chapters.json");
+    if (!d?.books?.length) return null;
+    const book = (b, i) => far(i < 4 ? 0 : i, b.name, `<ul>\n${b.chapters.map((c) => `<li><a href="/study/bible/${b.slug}/${c.ch}">${escapeHtml(`${b.slug === "psalms" ? "Psalm" : b.name} ${c.ch}`)}</a>: ${escapeHtml(c.why)}</li>`).join("\n")}\n</ul>`);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Where to start in every book</h1>`,
+        `<p class="pre-subtitle">The key chapters of all 66 books, each with its book's own reason. Choose one to open it.</p>`,
+        ...d.books.map(book),
+      ]),
+    };
+  },
+  // Themes of the Bible: every theme the book pages name, A to Z, each with
+  // each book's own paragraph and the link to the book
+  // (client/public/bible/explore/themes.json).
+  "/study/themes": async () => {
+    const d = readJsonSafe("client/public/bible/explore/themes.json");
+    if (!d?.themes?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const theme = (t) => `<li id="${escapeHtml(t.id)}"><h2>${escapeHtml(t.title)}</h2>\n${t.entries.map((e) => `<p><a href="/study/bible/${e.book}"><strong>${escapeHtml(books.get(e.book)?.name ?? e.book)}.</strong></a> ${escapeHtml(e.body)}</p>`).join("\n")}</li>`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Themes of the Bible</h1>`,
+        `<p class="pre-subtitle">Every theme the book pages name, each in its own book's words. Search them, or go by letter.</p>`,
+        ...Array.from({ length: Math.ceil(d.themes.length / 30) }, (_, k) => `<ul${k ? ' class="pre-far"' : ""}>\n${d.themes.slice(k * 30, k * 30 + 30).map(theme).join("\n")}\n</ul>`),
       ]),
     };
   },

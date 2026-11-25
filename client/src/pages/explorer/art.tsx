@@ -722,6 +722,205 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M30,66l-4,10M46,66l-4,10M62,66l-4,10" />
     </>
   ),
+  /* A blessing for all nations: three people of different dress side by side, one gold star over them. */
+  "all-nations": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M14,84C14,62 18,54 26,54C34,54 38,62 38,84Z" tone="b" off={1} />
+      <Shape d="M38,84C38,56 43,46 50,46C57,46 62,56 62,84Z" tone="c" off={1} />
+      <Shape d="M62,84C62,62 66,54 74,54C82,54 86,62 86,84Z" tone="g" off={1} />
+      <Shape d="M20,46a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM44,38a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM68,46a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" off={0.8} />
+      <path className="pl-m" d="M50,6l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
+      <path className="pl-l" d="M50,6l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
+    </>
+  ),
+  /* Light and darkness: a small clay lamp on dark ground, its flame gold, rays above it. */
+  "light-and-darkness": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path fill={h} d="M8,8H92V84H8Z" />
+      <path className="pl-paper" d="M50,10a30,30 0 1,0 0.1,0Z" />
+      <path className="pl-f" d="M50,14V22M32,22l5,6M68,22l-5,6M24,40h8M76,40h-8" />
+      <Shape d="M26,70C26,80 38,84 50,84C64,84 76,80 78,70L70,68C60,64 38,62 26,70Z" tone="c" off={1} />
+      <path className="pl-m" d="M50,62C58,52 60,44 54,32C44,42 42,52 50,62Z" />
+      <path className="pl-l" d="M50,62C58,52 60,44 54,32C44,42 42,52 50,62Z" />
+    </>
+  ),
+  /* What about people who never heard?: a small far house on a hill, a long road up to it, a gold sun. */
+  "never-heard": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M8,84V66C30,54 60,50 92,58V84Z" tone="g" off={1} />
+      <Shape d="M60,54V40H80V54Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M57,40H83M68,54V46h5v8" />
+      <path className="pl-f" d="M14,84C30,76 40,74 46,68C52,62 60,60 66,55M26,84C40,78 50,76 54,70" />
+      <path className="pl-m" d="M18,26a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M18,26a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-f" d="M27,10V5M27,42V47M11,26H6M43,26H48" />
+    </>
+  ),
+  /* Why did God let his temple be destroyed?: two pillars, one standing and one broken, a gold dawn between them. */
+  "temple-destroyed": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M36,84a14,14 0 0,1 28,0Z" />
+      <path className="pl-l" d="M36,84a14,14 0 0,1 28,0" />
+      <path className="pl-f" d="M50,62V54M34,68l-5,-5M66,68l5,-5" />
+      <Shape d="M18,84V24H32V84Z" tone="c" off={1} />
+      <path className="pl-l" d="M14,24H36M14,18H36" />
+      <Shape d="M68,84V56L74,48L78,58L82,50V84Z" tone="c" off={1} />
+      <Shape d="M62,84L88,78L90,84Z" off={0.8} />
+    </>
+  ),
+  /* Genesis: an open scroll, and a gold sun rising over it. */
+  "book-genesis": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M36,46a14,14 0 0,1 28,0Z" />
+      <path className="pl-l" d="M36,46a14,14 0 0,1 28,0" />
+      <path className="pl-f" d="M50,24V16M34,30l-5,-5M66,30l5,-5" />
+      <Shape d="M22,80V50H78V80Z" off={1} />
+      <Shape d="M16,46h8v38h-8ZM76,46h8v38h-8Z" tone="c" off={0.8} />
+      <path className="pl-f" d="M30,58H70M30,65H70M30,72H58" />
+    </>
+  ),
+  /* Psalms: a small harp, and a gold sun behind it. */
+  "book-psalms": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M56,30a13,13 0 1,0 26,0a13,13 0 1,0 -26,0Z" />
+      <path className="pl-l" d="M56,30a13,13 0 1,0 26,0a13,13 0 1,0 -26,0Z" />
+      <Shape d="M30,84C22,58 30,34 52,24L57,31C42,40 36,60 40,84Z" tone="c" off={1} />
+      <path className="pl-l" d="M30,84H66M55,28L62,84" />
+      <path className="pl-f" d="M38,74L60,70M37,62L59,56M39,50L58,44M44,40L56,34" />
+    </>
+  ),
+  /* John: a tent pitched under the stars, a gold light in its door. */
+  "book-john": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path fill={h} d="M8,8H92V84H8Z" />
+      <path className="pl-l" d="M24,18l2,5l5,2l-5,2l-2,5l-2,-5l-5,-2l5,-2ZM74,14l1.5,4l4,1.5l-4,1.5l-1.5,4l-1.5,-4l-4,-1.5l4,-1.5Z" />
+      <Shape d="M14,84L26,58L46,42L62,46L78,58L88,84Z" tone="c" off={1} />
+      <path className="pl-m" d="M40,84L45,60H59L64,84Z" />
+      <path className="pl-l" d="M40,84L45,60H59L64,84M26,58H78" />
+    </>
+  ),
+  /* Romans: a letter rolled and sealed, the seal gold. */
+  "book-romans": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M22,74V34H78V74Z" off={1} />
+      <Shape d="M14,30h8v48h-8ZM78,30h8v48h-8Z" tone="c" off={0.8} />
+      <path className="pl-f" d="M30,44H70M30,52H70M30,60H52" />
+      <path className="pl-m" d="M56,64a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M56,64a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M30,84H70" />
+    </>
+  ),
+  /* Exodus: a bush that burns and is not burned up, its flame gold. */
+  "book-exodus": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M50,84V64M50,72L38,60M50,70L62,58" />
+      <Shape d="M26,66C20,50 32,38 42,42C46,30 64,30 66,44C78,42 84,56 76,66Z" tone="g" off={1} />
+      <path className="pl-m" d="M50,42C60,30 62,20 56,8C46,18 42,30 50,42Z" />
+      <path className="pl-l" d="M50,42C60,30 62,20 56,8C46,18 42,30 50,42Z" />
+    </>
+  ),
+  /* Proverbs: a road that divides, and a gold dawn at the end of one way. */
+  "book-proverbs": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M58,36a12,12 0 0,1 24,0Z" />
+      <path className="pl-l" d="M58,36a12,12 0 0,1 24,0" />
+      <Shape d="M8,84V60C30,48 60,40 92,38V84Z" tone="g" off={1} />
+      <path className="pl-l" d="M40,84C44,70 52,60 60,54C66,48 68,44 70,38M52,84C54,72 60,64 66,58M40,84C32,72 24,66 14,64" />
+    </>
+  ),
+  /* Isaiah: a stump with one green shoot, and a gold sun rising behind it. */
+  "book-isaiah": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M52,40a14,14 0 1,0 28,0a14,14 0 1,0 -28,0Z" />
+      <path className="pl-l" d="M52,40a14,14 0 1,0 28,0a14,14 0 1,0 -28,0Z" />
+      <Shape d="M28,84C32,74 34,66 34,58H62C62,66 64,74 68,84Z" tone="c" off={1} />
+      <path className="pl-l" d="M46,58C45,46 47,36 50,26" />
+      <Shape d="M50,26c-9,-3 -14,3 -12,11c7,1 12,-3 12,-11ZM48,42c9,-5 16,0 15,8c-8,2 -14,-1 -15,-8Z" tone="g" off={0.6} />
+    </>
+  ),
+  /* Matthew: a hill for the sermon, and a gold star over it. */
+  "book-matthew": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M8,84C28,84 34,48 52,48C70,48 76,84 92,84Z" tone="g" off={1} />
+      <path className="pl-f" d="M30,76H74M38,66H66" />
+      <path className="pl-m" d="M52,10l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+      <path className="pl-l" d="M52,10l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+    </>
+  ),
+  /* Mark: a fishing boat on the lake, and a gold sun. */
+  "book-mark": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M62,26a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M62,26a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M44,66V26M44,30L62,36" />
+      <Shape d="M44,32C50,40 50,54 44,62Z" off={0.8} />
+      <Shape d="M14,66C26,80 68,80 82,64L76,62H20Z" tone="c" off={1} />
+      <path className="pl-f" d="M12,76q5,-4 10,0t10,0M40,80q5,-4 10,0t10,0M68,76q5,-4 10,0t10,0" />
+    </>
+  ),
+  /* Luke: one sheep found, and a gold light over it. */
+  "book-luke": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M50,8l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+      <path className="pl-l" d="M50,8l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+      <Shape d="M30,68C24,56 36,46 46,52C50,42 68,44 68,54C80,54 80,70 70,72C66,80 38,80 34,72C28,72 28,70 30,68Z" off={1} />
+      <Shape d="M68,56c8,-4 14,2 12,8c-4,4 -10,2 -12,-8Z" tone="c" off={0.6} />
+      <path className="pl-l" d="M40,76V84M62,76V84" />
+    </>
+  ),
+  /* Acts: a road running out from a city gate to the far edge, and one gold flame over the gate. */
+  "book-acts": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M14,84V56h6v-6h6v6h8v-6h6v6h6V84Z" tone="c" off={1} />
+      <path className="pl-k" d="M26,84V72c0,-8 10,-8 10,0V84Z" />
+      <path className="pl-l" d="M46,84C60,76 74,70 92,60M46,76C58,70 72,62 92,50" />
+      <path className="pl-m" d="M30,42C38,32 40,24 35,12C26,22 23,32 30,42Z" />
+      <path className="pl-l" d="M30,42C38,32 40,24 35,12C26,22 23,32 30,42Z" />
+    </>
+  ),
+  /* Revelation: a lamb standing on a hill, gold light behind it. */
+  "book-revelation": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M30,50a20,20 0 0,1 40,0Z" />
+      <path className="pl-l" d="M30,50a20,20 0 0,1 40,0" />
+      <path className="pl-f" d="M50,22V14M30,30l-5,-5M70,30l5,-5" />
+      <Shape d="M10,84C24,56 76,56 90,84Z" tone="g" off={1} />
+      <Shape d="M40,58C36,50 44,44 50,47C53,41 64,42 64,49C72,49 72,60 66,61C63,66 46,66 44,61C39,61 39,60 40,58Z" off={0.8} />
+      <path className="pl-l" d="M47,63V70M61,63V70" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

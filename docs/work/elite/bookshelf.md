@@ -484,7 +484,9 @@ elite and professional". Both books were rebuilt from their own text.
 ### How it is made
 
 `content/books-src/<id>/` holds each book's text: the chapter files of its
-original EPUB, byte for byte (`sec01.xhtml` and on), and `book.json` (the
+original EPUB (`sec01.xhtml` and on, since edited at James's instruction for both
+books, see "The edit" below), and
+`book.json` (the
 author's name as the file has it, the EPUB identifier, the copyright notice,
 the served and original file names). The title and subtitle come from
 `client/src/data/book-names.json`, the cover from `client/public/covers/`, the
@@ -528,15 +530,27 @@ reader's own font, size and night mode apply; Cormorant Garamond is embedded
 for headings (SIL Open Font License, which allows it; the font files carry
 their copyright and licence address).
 
-### The one rule: the text is the author's
+### The one rule: the typesetter adds nothing
 
-The script is a typesetter. What it does to the text, each counted on every
-run:
+The script is a typesetter: it sets the words in the source folder and
+changes none of them. When this section was written (2026-11-23) the rule
+went further, that the source folder was the original EPUB's text and the
+author's words did not change at all. On 2026-11-25 James asked for his
+books to be edited (see "The edit" below), so the rule now has two halves.
+`--verify` proves that the built PDF and EPUB are, word for word, the source
+folder's text with only the typesetting listed here. And for a book whose
+`book.json` records no edit, it still proves the source folder is the
+original EPUB's text. What an edit kept is proved elsewhere, by the fact
+diff against the original. The originals stay untouched in
+`content/held-downloads/originals/`.
+
+What the script does to the text, each counted on every run (both columns
+are the edited texts, 2026-11-25):
 
 | Change | Blind Spots | A Higher Allegiance |
 |---|---|---|
 | Straight double quotation marks set as curly ones | 298 | 1,090 |
-| Straight apostrophes and single quotation marks set as curly ones | 646 | 494 |
+| Straight apostrophes and single quotation marks set as curly ones | 652 | 494 |
 | Double hyphens set as dashes | 0 (none in the text) | 0 (none in the text) |
 | Markdown asterisks around an end-of-chapter label removed, the label set as a heading (Key Takeaways, Reflection Questions, Practices, Sources & Notes) | 0 | 32 labels |
 | Markdown backslashes removed from list numbers ("1\\." to "1.") | 0 | 42 |
@@ -549,12 +563,13 @@ run:
 | A reference at the end of a quotation set on its own line (no word moved) | 0 | 53 |
 | LORD, written in capitals in the source, set in small capitals | 12 | 0 |
 | First three words of a chapter set in small capitals by the stylesheet | 15 | 11 |
-| Soft hyphens at a line break (PDF only, invisible elsewhere) | 89 | 63 |
+| Soft hyphens at a line break (PDF only, invisible elsewhere) | 85 | 61 |
 
 Widows and orphans are held to two lines; headings keep with what follows.
 
-**The proof** (`--verify`, and an independent check written apart from the
-script). The old EPUB's chapter text and the new EPUB's were compared word by
+**The proof as first run, 2026-11-23, before any edit** (`--verify`, and an
+independent check written apart from the script). The old EPUB's chapter text
+and the new EPUB's were compared word by
 word with only whitespace and quotation-mark shapes normalised, the list
 markers a reader's software draws put back: Blind Spots 65,747 words against
 65,747, no difference at all; A Higher Allegiance 56,548 against 56,531, and
@@ -571,6 +586,163 @@ and punctuation; case, spacing and quotation-mark shapes set aside), the two
 old files of each book carry the same text. The one difference: the old A
 Higher Allegiance PDF printed a lone dash under each of its 133 quotations
 whose citation was empty in the EPUB. Nothing had to be reconciled.
+
+### The edit (2026-11-25)
+
+James, 2026-11-25: "i also want you to go through all the book, pdfs, and
+downloadable content to make it sound human and like me". And, the same day,
+on whether a book keeps its fragments: "use full paragraphs in the books
+too", so `docs/VOICE-JAMES-BELL.md` governs the books as well as the site.
+
+Blind Spots was the first book. Its chapter files in
+`content/books-src/the-monster-in-the-mirror/` were edited as exact old/new
+pairs, one commit a chapter; `book.json` now carries `edited` (the date, his
+words, and where the record is). The record is
+`docs/work/elite/voice-books/blind-spots.md`: per chapter, the counts, the
+fact diff's result, five pairs, and what was left alone and why. In short:
+em-dashes in his prose fell from 853 to 148 (13.9 to 2.4 per 1,000 words;
+his limit is 4 to 6; headings, subtitles and block quotes keep theirs), fragment stacks were joined into
+sentences, a few filler words went, and nothing else changed. The fact diff
+passed on all fifteen chapters: every heading, subtitle, pull quote and block
+quote identical; every quotation, Scripture reference, year, number, name
+and hedge word by count.
+
+What `--verify` proves now, on the rebuilt files:
+
+- the EPUB carries exactly the source folder's text with the listed
+  typesetting: 65,014 words against 65,014, no difference (the original had
+  65,747 by the same count, which counts a spaced dash as a word; the edit
+  removed 705 dashes and 28 words);
+- the PDF's pages, from the first chapter on, carry the same text character
+  for character: 338,523 characters against 338,523;
+- A Higher Allegiance, not yet edited when Blind Spots was rebuilt, was
+  still held to its original: 56,548 words in the source folder against
+  56,548 in the original EPUB, no difference.
+
+The PDF is still 244 pages (so `client/src/data/ebooks.ts` is unchanged),
+1.8 MB; the EPUB is 409 KB. The contents, a chapter opening, a spread and
+the last pages were looked at as images after the rebuild.
+
+**A Higher Allegiance was the second book, the same day.** Its profile is
+the reverse of Blind Spots: almost no long dashes, but the most runs of very
+short sentences of any of his books and many one-line paragraphs in a row.
+Its chapter files in `content/books-src/when-god-bless-america/` were edited
+the same way, one commit a chapter, and its `book.json` carries `edited`.
+The record is `docs/work/elite/voice-books/a-higher-allegiance.md`. In
+short: 344 edits; his prose went from 985 paragraphs to 826 and from 174
+paragraphs of fifteen words or fewer to 76 (none now next to another); runs
+of three fragments fell from 62 to 11; length moved by less than half a
+percent (45,246 words to 45,053); ten words from CLAUDE.md's Forbidden
+Language list were replaced with the plain word. Every paired criticism of
+right and left is word for word. The end matter of every chapter (Key
+Takeaways, Reflection Questions, Practices, Sources & Notes) is identical to
+the original. The fact diff passed on all eleven chapters.
+
+`--verify` on its rebuilt files: the EPUB carries exactly the source
+folder's text with the listed typesetting (56,225 words compared after the
+list marks are set aside, no difference); the PDF's pages carry the same
+text character for character (286,910 against 286,910). The PDF is 207
+pages (it was 212; `client/src/data/ebooks.ts` now says 207), 1.7 MB; the
+EPUB is 353 KB. The contents, a chapter opening, two spreads and a page of
+Sources & Notes were looked at as images.
+
+Both books are now edited, so neither is held to its original by `--verify`
+any longer; the check stays in the script, and the next book (Believe,
+below) was held to it on its first build, before any edit.
+
+### Believe, brought into the typesetter (2026-11-25)
+
+Believe: The Rational Case for Christian Faith (id `believe`) was the third
+book. It had no source folder, so before any word was edited it was brought
+in as the other two were: the original PDF and EPUB are kept, untouched, in
+`content/held-downloads/originals/` (`Believe.pdf`, `Believe.epub`), the
+EPUB's fifteen chapter files are in `content/books-src/believe/` byte for
+byte, and the book was built once with no edit and verified against the
+original.
+
+**Its two original files did not carry the same things.** Compared letter by
+letter, the old PDF's text from the introduction to chapter 12 is the old
+EPUB's, with these differences:
+
+- the PDF had a dedication ("For Susanna ... For five sons ... For the
+  atheist I was ...") and four part pages (Part One, Foundation, "Can we
+  know anything at all?"; Part Two, The Person, "Who was Jesus, really?";
+  Part Three, The Hard Questions, "What about the things that make belief
+  hard?"; Part Four, The Verdict, "What will you do with what you now
+  know?"). The EPUB had neither;
+- the EPUB had two appendices (A, Recommended Reading; B, Greek & Hebrew
+  Glossary). The PDF had neither;
+- the PDF's title page said "The Rational Case for Christian Faith", the
+  site's subtitle; the EPUB's said "The Evidence for God, the Reliability
+  of the Bible, and the Case That Jesus Rose from the Dead".
+
+Nothing of his was dropped: the new PDF and EPUB both carry the dedication,
+the four part pages and the two appendices, and both use the site's
+subtitle. The typesetter was changed for this in general terms, not for
+this book alone (each is in the script's header):
+
+- `book.json` may give a `dedication`, set on its own page after the
+  copyright page (and as its own file in the EPUB);
+- `book.json` may name, in `fromOriginalPdf`, section files whose words come
+  from the original PDF (here `part1.xhtml` to `part4.xhtml`). `--verify`
+  leaves them out of the comparison with the original EPUB and checks
+  instead that their words, and the dedication's, are in the original PDF
+  letter for letter;
+- `book.json` may name, in `entries`, sections whose paragraphs under a
+  heading are entries of a list (the reading list and the glossary): each
+  is set with a hanging indent, as a source is in "Sources & Notes" (80
+  entries);
+- a source paragraph marked `class="first"` is read as a paragraph (this
+  EPUB marks the first paragraph under each heading; the typesetter sets
+  its own indents);
+- a label the source writes all in capitals ("APPENDIX A", "INTRODUCTION")
+  is set in capitals and small letters in the contents and bookmarks.
+
+**The proof, before any edit.** `--verify`: the source folder's EPUB-derived
+text is the original EPUB's, 49,624 words against 49,624, no difference; the
+part pages and the dedication are in the original PDF; the new EPUB carries
+exactly the set text (49,667 words, the 43 more being the part pages); the
+new PDF's pages carry the same text character for character (235,684
+against 235,684). Typesetting counted: 82 straight double quotation marks
+and 206 apostrophes set curly, 80 entries, 15 lead-ins, 67 soft hyphens at
+line breaks. The two earlier books were built again with the changed script
+(into a scratch folder; their served files were not touched) and verify as
+before: Blind Spots 244 pages, A Higher Allegiance 207, both identical.
+
+**The files.** The old PDF was 392 small-type pages; the new one is 191
+pages in the same 6 by 9 design as the other two (`client/src/data/ebooks.ts`
+now says 191). The names did not change (`Believe.pdf`, `Believe.epub`), so
+no redirect was needed. The dedication, the contents, a part page, a
+chapter opening, a spread with a block quotation, the reading list and the
+glossary were looked at as images.
+
+**Three words that printed as their codes.** In chapter 2 the original
+printed "Bo&#287;azk&#246;y", "L&#252;demann" and "trustworthy&#8230;",
+because the source escaped those character references twice. The typesetter
+now sets a doubly escaped reference as the character it names (Boğazköy,
+Lüdemann, an ellipsis) and counts it (4 characters in this book, none in the
+other two). The source files are unchanged; `--verify` applies the same rule
+to the source before comparing.
+
+**The edit.** After that first build was committed, Believe was edited as
+the other two were, one commit a chapter; the record is
+`docs/work/elite/voice-books/believe.md` and `book.json` carries `edited`.
+This book's fault was the dash: 589 in the 43,575 words of his prose, 13.5
+per 1,000, the most of any of his books. All 417 edits are punctuation; no
+word was added, removed or replaced, and the word count of every chapter is
+the same before and after. Dashes fell to 38 (0.9 per 1,000). It is
+apologetics, so the rule was stricter: every statement of an objection,
+every scholar's position and every quotation is word for word, and the fact
+diff passed on all thirteen chapters. The appendices were not edited.
+`--verify` on the rebuilt files: EPUB 49,116 words against 49,116 (the
+count falls from 49,667 because a spaced dash counts as a word); PDF
+235,731 characters against 235,731. Still 191 pages.
+
+**Left as found, for James.** In Appendix A, under "The Problem of Evil and
+Suffering: Best Books", four entries are run together in one paragraph with
+no space between them ("... (Intro)Lewis, C. S. A Grief Observed. ...
+wife's death.Moltmann, Jürgen. ..."). That is how the original EPUB has it,
+and the typesetter does not change his text.
 
 ### The apparatus
 
@@ -619,9 +791,14 @@ Left exactly as written:
 | | Pages | PDF | EPUB |
 |---|---|---|---|
 | Blind Spots, before | 274 | 756 KB | 274 KB |
-| Blind Spots, now | 244 | 1.7 MB | 399 KB |
+| Blind Spots, 2026-11-23 | 244 | 1.7 MB | 399 KB |
+| Blind Spots, edited, 2026-11-25 | 244 | 1.8 MB | 409 KB |
 | A Higher Allegiance, before | 495 | 767 KB | 733 KB |
-| A Higher Allegiance, now | 212 | 1.7 MB | 345 KB |
+| A Higher Allegiance, 2026-11-23 | 212 | 1.7 MB | 345 KB |
+| A Higher Allegiance, edited, 2026-11-25 | 207 | 1.7 MB | 353 KB |
+| Believe, before | 392 | 636 KB | 180 KB |
+| Believe, typeset, 2026-11-25 (no word changed) | 191 | 1.4 MB | 300 KB |
+| Believe, edited, 2026-11-25 | 191 | 1.4 MB | 300 KB |
 
 The old PDFs were set loosely (A Higher Allegiance at about 115 words a
 page); the new ones at about 270. The new PDFs are larger: they carry the
