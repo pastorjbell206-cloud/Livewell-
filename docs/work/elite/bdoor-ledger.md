@@ -19811,3 +19811,18 @@ Cut in chapter 26: the deep note's lines to John 10:7-9, Ephesians 2:18 and Matt
 | 2 Samuel 16:23 (its clause) | 25-34 | BSB | BSB text |
 
 Cut in chapter 27: the deep note's thematic line to the church as one body, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 28 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The summons (28:1); 28:2 (its first two sentences); 28:3 paraphrased; 28:5 (its clause); 28:7 (its clause); 28:8 (its phrase); 28:9; 28:10 (its last sentence) | 1-10 | BSB | BSB text |
+| The ceremony after the lists; around 970 BC; 1 Kings 1 (Adonijah, Nathan, Bathsheba) and the Chronicler's choice; hadom and the cherubim; the kingdom of the LORD; the promise in 17:11-14 without a condition and 28:7's condition; darash; azav in 28:9 and 28:20 | 1-10 | 1-chronicles/28.json `historical`, `cultural`, `words` (hadom, darash, azav); BSB of 17:11-14 | Repository; BSB text |
+| Isaiah 66:1 (its first two sentences of speech); Jeremiah 29:13 | 1-10 | BSB | BSB text |
+| The plans (28:11-17); 28:18 (its clause); 28:19 (its words); 28:20; the people ready (28:21) | 11-21 | BSB | BSB text |
+| Tavnit and Exodus 25:9, 40; metals by weight; the furnishings echoing Exodus 25-30; the chariot of the cherubim and Ezekiel 1 and 10; the Moses and Joshua echo (Deuteronomy 31:7-8; Joshua 1:6-9); the first readers' modest temple | 11-21 | 1-chronicles/28.json `historical`, `cultural`, `literary`, `words` (tavnit) | Repository |
+| Exodus 25:9; Psalm 132:7 | 11-21 | BSB | BSB text |
+
+Cut in chapter 28: the deep note's line from 28:6 to Hebrews 1:5, already given at 17:13 where the words first stand. No care line is needed in this chapter.
