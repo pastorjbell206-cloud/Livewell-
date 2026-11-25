@@ -19614,3 +19614,21 @@ Cut in chapter 14: the deep note's line from David's asking to Jesus' prayer and
 | 2 Samuel 6:14 (its last clause); Psalm 100:2 | 25-29 | 1-chronicles/15.json `literary`; BSB | Repository; BSB text |
 
 Cut in chapter 15: the deep note's lines to John 1:14 and Hebrews' high priest, which it calls thematic and typological. A first-person gloss in the questions was rewritten before it reached the repository. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 16 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 16:1; the king's blessing (16:2); 16:3 (its phrase); 16:4; Asaph and the instruments (16:5-6); the song given (16:7) | 1-7 | 1-chronicles/16.json `summary`; BSB | Repository; BSB text |
+| A pattern of praise, not one celebration; burnt and peace offerings; the meal extended to all; the king's rule under God's; yadah; zakar | 1-7 | 1-chronicles/16.json `story`, `cultural`, `words` (yadah, zakar) | Repository |
+| 2 Chronicles 5:13 (its phrase); Nehemiah 12:46 | 1-7 | BSB | BSB text |
+| 16:8; 16:15; 16:16-18; 16:19; 16:20-22; 16:23; 16:26; 16:33 (its phrase); 16:34; 16:35-36 | 8-36 | BSB | BSB text |
+| The three stages; the match with Psalm 105:1-15, Psalm 96 and Psalm 106:1, 47-48; the two views of their relation; the first readers under Persian rule, scattered; chesed; berit and the ark's name | 8-36 | 1-chronicles/16.json `historical`, `literary`, `words` (chesed, berit) | Repository |
+| Psalm 105:1; Psalm 106:47 | 8-36 | BSB | BSB text |
+| 16:37; 16:38; 16:39; 16:40; 16:41; 16:43 | 37-43 | BSB | BSB text |
+| Worship at two sites; Gibeon about six miles north-west; Zadok and Asaph; until Solomon's temple; gatekeepers; the refrain through Chronicles | 37-43 | 1-chronicles/16.json `historical`, `cultural`, `literary` | Repository |
+| 1 Kings 3:4 (its phrase); Ezra 3:11 | 37-43 | 1-chronicles/16.json `historical` (1 Kings 3:4); BSB | Repository; BSB text |
+
+Cut in chapter 16: the deep note's Christian reading of the psalm (Galatians 3, the nations, the return of Christ), because these verses are not quoted by the New Testament. No care line is needed in this chapter.
