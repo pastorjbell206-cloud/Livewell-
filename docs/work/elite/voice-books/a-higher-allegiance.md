@@ -23,7 +23,8 @@ Three scripts, kept outside the repo in `/home/user/vs2/` (`apply.py`, `factdiff
 | Introduction: Not Persecuted—Seduced | 1,758 | 1,734 | -1.4% | 3 (1.7) | 0 (0.0) | 89 (50.6) | 52 (30.0) | 25 | PASS |
 | Chapter 1: Zanah | 3,729 | 3,719 | -0.3% | 1 (0.3) | 0 (0.0) | 136 (36.5) | 75 (20.2) | 36 | PASS |
 | Chapter 2: Chariots Aren't Evil—But They Aren't Ultimate | 4,249 | 4,208 | -1.0% | 3 (0.7) | 0 (0.0) | 123 (28.9) | 91 (21.6) | 42 | PASS |
-| **All 3** | 9,736 | 9,661 | -0.8% | 7 (0.7) | 0 (0.0) | 348 (35.7) | 218 (22.6) | 103 | |
+| Chapter 3: The Messiah You Want vs. the Messiah You Need | 4,105 | 4,090 | -0.4% | 3 (0.7) | 0 (0.0) | 155 (37.8) | 103 (25.2) | 46 | PASS |
+| **All 4** | 13,841 | 13,751 | -0.7% | 10 (0.7) | 0 (0.0) | 503 (36.3) | 321 (23.3) | 149 | |
 
 ## Introduction: Not Persecuted—Seduced (`sec01.xhtml`)
 
@@ -95,3 +96,27 @@ Five pairs:
    After: They engaged politics without worshiping it and used the chariot without trusting it. They participated in civic life without making civic life ultimate, held political convictions with deep seriousness and loose hands, and cared about outcomes without being defined by them.
 
 Left alone, and why. "Every idol begins as a gift.", "And God condemns it.", "We have forgotten our Exodus. And we are running back to Egypt." and "Trust Him. And hold the chariot loosely." are verdicts on their own lines. His answer to "Are you saying Christians shouldn't be involved?" is his position and took paragraph joins only. The concession that some fears are legitimate ("Moral decline is real. Cultural hostility to Christianity is real. Legal threats to religious liberty are real. ...") is a fair statement of what the reader he is correcting sees, and stays in its four sentences. The six diagnostic questions were not touched. The six "It looks like ..." sentences were six paragraphs and are one; no word changed. "Precisely" went twice.
+
+
+## Chapter 3: The Messiah You Want vs. the Messiah You Need (`sec04.xhtml`)
+
+Words 4,105 to 4,090. Em-dashes in his prose 3 to 0 (0.7 to 0.0 per 1,000 words). Tells 155 to 103 (37.8 to 25.2 per 1,000). Mean sentence 11.5 words to 14.9; sentences of eight words or fewer 49.3% to 33.6%; of five or fewer 29.2% to 15.5%. 46 edits; paragraphs 110 to 79. Paragraphs of fifteen words or fewer 27 to 9; runs of three fragments 9 to 2.
+
+By kind (before to after): emdash 3 to 0, not_but 7 to 14, NotX.Y 18 to 3, isnt_its 0 to 1, triplet 18 to 24, frag3 9 to 2, anaphora 33 to 22, stock 4 to 3, intens 5 to 4, q_answered 1 to 1, colon_reveal 3 to 3, short_close 26 to 17, one_line_para 27 to 9, forbidden 1 to 0.
+
+Fact diff: **PASS**. Fixed blocks (headings, pull quote, block quotes, and the end matter: Key Takeaways, Reflection Questions, Practices, Sources & Notes) identical; 26 quoted strings, 22 Scripture references, 0 years, 14 numbers in digits, 40 number words, proper names by count, and 38 hedge words (after: 38) compared.
+
+Five pairs:
+
+1. Before: When Jesus arrived, He was not what they expected. He did not raise an army. He did not storm Herod's palace. He did not negotiate with Rome. He did not organize a political movement. Instead, He washed feet. He touched lepers. He ate with tax collectors and prostitutes. He welcomed children. He confronted the religious establishment. He wept over Jerusalem. He told parables about seeds and soil instead of strategy and siege warfare.
+   After: When Jesus arrived, He was not what they expected. He did not raise an army, storm Herod's palace, negotiate with Rome, or organize a political movement. Instead, He washed feet and touched lepers. He ate with tax collectors and prostitutes and welcomed children. He confronted the religious establishment, wept over Jerusalem, and told parables about seeds and soil instead of strategy and siege warfare.
+2. Before: Suffer. Be rejected. Be killed. Rise again. That is the messianic program. That is the plan. Not political conquest. Not military victory. Not cultural dominance. Suffering, rejection, death, and resurrection.
+   After: Suffer, be rejected, be killed, rise again: that is the messianic program. That is the plan, not political conquest or military victory or cultural dominance, but suffering, rejection, death, and resurrection.
+3. Before: Jesus calls Peter "Satan." Not an enemy. A disciple. Not someone who denies Christ. Someone who confesses Christ, and then tries to edit the kind of Christ he is willing to follow.
+   After: Jesus calls Peter "Satan": not an enemy but a disciple, not someone who denies Christ but someone who confesses Christ, and then tries to edit the kind of Christ he is willing to follow.
+4. Before: a non-anxious presence. Not indifferent to the crises around us. Not naive about the real threats and real suffering in our culture. But refusing to let anxiety set the agenda. Refusing to let fear rewrite our theology. Refusing to let the temperature of the political moment determine the posture of the people of God.
+   After: a non-anxious presence, not indifferent to the crises around us or naive about the real threats and real suffering in our culture, but refusing to let anxiety set the agenda, refusing to let fear rewrite our theology, refusing to let the temperature of the political moment determine the posture of the people of God.
+5. Before: That is the messiah the crowd wanted. That is the messiah Peter demanded. That is the messiah Satan offered in the wilderness.
+   After: That is the messiah the crowd wanted, the messiah Peter demanded, the messiah Satan offered in the wilderness.
+
+Left alone, and why. "Jesus ran from the crown.", "And Jesus said no.", "The crowd is celebrating. Jesus is weeping.", "Peter is not rejecting Jesus. He is editing Jesus." and "They chose the strongman over the servant. And they have not stopped choosing." are verdicts. The tempter's speech ("All the kingdoms. All the power. ... Skip all of that. Take the shortcut.") is speech and keeps its beat; so do the crowd's and Peter's thoughts. The paired contrasts of Palm Sunday ("They think He is coming to conquer. He knows He is coming to die.") are the passage's hinge. The answer to "What about justice?" is his position: paragraph joins and semicolons only. The four "anxious church / non-anxious church" pairs and the three "first messiah / second" pairs were one-line paragraphs and are now a paragraph each, word for word. The stock turn "Let that sink in." was taken out ("Let the audacity of this sink in." stays: it says what should sink in). Forbidden list: "the most transformative thing a leader can do" is now "the most powerful thing". One "precisely" went.
