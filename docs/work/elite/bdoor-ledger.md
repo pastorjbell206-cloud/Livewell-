@@ -20700,3 +20700,27 @@ Cut in chapter 1: the deep note's lines to Christ that the New Testament does no
 | The hard note: the four kingdoms in the traditional, critical and futurist readings; 5:31, 6:28 and 8:20; no side, no present-day nation | 36-49 `hard` | daniel/2.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 2: the deep note's lines that the New Testament does not draw (the stone as Jesus' parables of small beginnings). No care line is needed in this chapter.
+
+## The plain notes on Daniel 3 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1-7 | 1-7 | BSB | BSB text |
+| The statue after chapter 2; its size and form; Dura unknown; loyalty ceremonies; the commandments; repetition; the Greek instrument names in both datings | 1-7 | daniel/3.json `story`, `historical`, `cultural`, `literary` | Repository; both views |
+| Exodus 20:5; Revelation 14:9, in a book drawing on Daniel | 1-7 `later` | daniel/3.json `christ`; bible/guides/reading-apocalyptic.json; BSB | BSB text |
+| 3:8-18 | 8-18 | BSB | BSB text |
+| Rivals at court; the question of 3:15; the two translations of 3:17; the model for later readers | 8-18 | daniel/3.json `literary`, `story` | Repository |
+| Isaiah 43:2; Psalm 66:12 | 8-18 `later` | daniel/3.json `christ` (Isaiah 43:2); BSB | BSB text |
+| The hard note: not always rescued; 11:33 and 12:2; no one's suffering read as lack of trust; the accusation of the Jews and no warrant for suspicion of the Jewish people | 8-18 `hard` | daniel/intro.json `purpose`, `themes`; the brief | Repository; stated as the brief asks |
+| Care line ("If you are suffering now...") | 8-18 `hard` | Reused byte for byte from job/intro.json | care.mjs |
+| 3:19-27 | 19-27 | BSB | BSB text |
+| Execution by fire (Jeremiah 29:22); brick kilns; the clothing; the soldiers' deaths told in a verse | 19-27 | daniel/3.json `cultural` | Repository |
+| Jeremiah 29:22 named; Hebrews 11:34 | 19-27 `later` | BSB | BSB text |
+| The hard note: son of the gods; angel or the Son before his birth; the King James rendering; no side | 19-27 `hard` | daniel/3.json `hard` | Repository; both readings in their holders' terms |
+| 3:28-30 | 28-30 | BSB | BSB text |
+| Shezav; the king's threats unchanged; pelach | 28-30 | daniel/3.json `words` | Repository |
+| Daniel 6:26 (first typed inexactly, caught and corrected); Daniel 4:34 named; Psalm 34:7 (added when the validator asked for a book beyond Daniel) | 28-30 `later` | BSB | BSB text |
+
+Cut in chapter 3: the deep note's lines to Christ that the New Testament does not draw (Immanuel and the fire; the fourth figure as Christ beyond the stated readings).
