@@ -20405,3 +20405,23 @@ Cut in chapter 31: the deep note's lines to 1 Corinthians 9:13-14 and Acts 4:34-
 | 2 Kings 20:12 | 24-33 | BSB | BSB text |
 
 Cut in chapter 32: the deep note's lines to 1 John 4:4 and to the Son of David surrounded and mocked, which do not cite this chapter. No care line is needed in this chapter; Hezekiah's illness is not presented as a punishment.
+
+## The plain notes on 2 Chronicles 33 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 33:1; 33:2; the high places, altars and host of heaven (33:3-5); 33:6 (its first sentence), named and not described; the image (33:7); 33:9 (its clause); 33:10 | 1-10 | BSB | BSB text |
+| The worst begins; the abominations; fifty-five years, about 697 to 642 BC, the co-regency; Esarhaddon and Ashurbanipal and their lists naming Manasseh; a loyal vassal; the host of heaven; Deuteronomy 18:10-12; semel and Asherah (2 Kings 21:7) | 1-10 | 2-chronicles/33.json `historical`, `cultural`, `words` (semel); 2-kings/plain/21.json (1-9 `hard`) | Repository |
+| Care line ("A word for anyone who was not protected by a parent...") | 1-10 | Reused byte for byte; found whole in 11 places, among them 2-kings/intro.json and 2-kings/plain/21.json | care.mjs |
+| 2 Kings 21:16 (its clause) | 1-10 | BSB | BSB text |
+| 33:11; 33:12; 33:13; the wall and commanders (33:14); 33:15; 33:16 paraphrased; 33:17; the records (33:18-19); the burial (33:20) | 11-20 | BSB | BSB text |
+| Reversal; verse 10 as hinge; the hook and shackles, Assyrian reliefs, Isaiah 37:29; a restored vassal; kana, atar, yada; 7:14 acted out; the readers in Babylon; the Prayer of Manasseh, later and not the cited text | 11-20 | 2-chronicles/33.json `story`, `cultural`, `literary`, `words`, `historical` | Repository |
+| 2 Kings 24:3 (its clause); 2 Kings 24:4 (its clause) | 11-20 | BSB | BSB text |
+| The hard note: Kings and Chronicles for different purposes; Kings' blame and unwillingness to forgive as a verdict on the city, not a limit on mercy; Chronicles' lesson; a reliable source and the seers' records; the Assyrian vassal lists; the 650s BC revolt suggestion, with caution; the shaped-lesson reading; both together, the cost to the nation and the mercy to the man; agreement with the 2 Kings 21 notes | 11-20 `hard` | 2-chronicles/33.json `hard`, `historical`; kings guide section 7; 2-kings/intro.json part "manasseh-josiah"; 2-kings/plain/21.json (10-18 `hard`) and 2-kings/plain/24.json | Repository; each view in its holders' terms |
+| 33:21; Amon's evil (33:22); 33:23; the conspiracy and Josiah (33:24-25) | 21-25 | BSB | BSB text |
+| The mirror; about 642 to 640 BC; each generation on its own account | 21-25 | 2-chronicles/33.json `story`, `historical`, `literary`; 2-chronicles/intro.json `reading` | Repository |
+| 2 Kings 21:23 | 21-25 | BSB | BSB text |
+
+Cut in chapter 33: the deep note's lines to 1 Timothy 1:15-16 and Luke 15:11-24, which do not cite this chapter. Child sacrifice is named, never described.
