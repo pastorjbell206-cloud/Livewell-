@@ -125,7 +125,8 @@ export interface KeyWord {
   /** The languages its books' own sentences name; empty when they name none. */
   langs: WordLang[];
   testaments: ("OT" | "NT")[];
-  entries: { book: string; word?: string; line: string; refs: { ch: number; v?: number }[] }[];
+  /** `strong`: the Study Bible word the sentence names, when it names exactly one (scripts/lib/bible-explore.mjs, strongMatcher). */
+  entries: { book: string; word?: string; line: string; refs: { ch: number; v?: number }[]; strong?: string }[];
 }
 
 export interface WordsData {
