@@ -18858,3 +18858,18 @@ Cut in chapter 26: the deep note's lines to Christ (Mark 4:41 and the stilling o
 | Lamentations 2:15 | 13-23 | job/27.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 27: the deep note's lines to Christ (1 Peter 2:22-23 and Jesus before the high priest and Pilate; the note calls it a pattern, not a prediction).
+
+## The plain notes on Job 28 (2026-11-25)
+
+`client/public/bible/notes/job/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The debate ended without agreement; a calm poem; mining by lamplight and rope; Timna and Faynan in the Arabah; dangerous and difficult; admiration of human skill | 1-11 | job/28.json `story`, `historical`, `literary` | Repository |
+| The refrain of verses 12 and 20; wisdom in the ancient world; the question of meaning; the friends thought they had it; Ophir and Cush; the stones uncertain; the deep, the sea, Abaddon and Death given voices | 12-22 | job/28.json `literary`, `cultural`, `historical`, `words` (chokmah) | Repository |
+| Proverbs 8:11 | 12-22 | the proverbs notes (Job 28 uses the same comparison); BSB | Repository; BSB text |
+| God alone knows the way; wisdom built into creation; received, not discovered; yirah as reverent trust, not terror; Adonai only here in Job; the return to 1:1 | 23-28 | job/28.json `literary`, `story`, `doctrines`, `words` (yirah, binah) | Repository |
+| Proverbs 1:7 and 9:10 | 23-28 | the notes setting Proverbs 1:7 and 9:10 beside Job 28:28 (the fear of the LORD); BSB | Repository; BSB text |
+| The hard note: Job as speaker in the text as it stands; the change of tone and chapters 29 to 31; the three readings (the narrator's interlude; Job's moment of insight; a preview of God's speeches); no side; the book's deepest theme | 23-28 | job/28.json `hard` | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 28: the deep note's lines to Christ (1 Corinthians 1:24, Colossians 2:3 and John 1:3 beside the poem; the note calls them parallels of the wisdom tradition, and the New Testament does not quote Job 28); the Egyptian expeditions in Sinai (not needed).
