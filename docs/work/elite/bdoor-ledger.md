@@ -18304,3 +18304,23 @@ Cut in chapter 14: the deep note's thematic links (Jonah's three days as Jesus' 
 | Micah 1:1; Isaiah 1:1 (cited) | 32-38 | bible/guides/kings-of-israel-and-judah.json (Micah and Isaiah under these kings); BSB | Repository; BSB text |
 
 Cut in chapter 15: the deep note's line from Galilee's darkness to the light of the true king, beyond Matthew's own quotation of Isaiah; the words of 15:16 are not quoted. The later field for verses 32-38 was first two characters under the validator's minimum, and Isaiah 1:1 was added before it reached the repository.
+
+## The plain notes on 2 Kings 16 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ahaz at twenty, sixteen years (16:1-2); 16:2; 16:3; high places, hills and green trees (16:4) | 1-4 | 2-kings/16.json `summary`; BSB | Repository; BSB text |
+| The 730s and 720s BC, about 735 to 715 BC, contested; the first king of Judah in about a century judged without qualification; a hinge to chapters 17 to 20; the law forbidding child sacrifice (Deuteronomy 18:10) | 1-4 | 2-kings/16.json `story`, `historical`, `cultural`; bible/guides/kings-of-israel-and-judah.json (Ahaz 735 with Jotham to 716/715) | Repository |
+| Deuteronomy 18:10; Jeremiah 7:31 | 1-4 | 2-kings/16.json `cultural`, `hard` (Jeremiah 7:31); BSB | Repository; BSB text |
+| The hard note: pass through the fire; the dedication-ritual view; the majority reading and its reasons (2 Chronicles 28:3; Deuteronomy 12:31; the prophets and innocent blood); the BSB following it; named and not described; Moab in chapter 3; Ahaz turning to the nations and Assyria; not softened; the promise kept by God's faithfulness | 1-4 `hard` | 2-kings/16.json `hard` | Repository; the readings in their holders' terms |
+| The care line (‘A word for anyone who was not protected by a parent...’ to ‘...lists places to turn.’) | 1-4 `hard` | 1-kings/plain/16.json; 1-samuel/plain/25.json; 2-samuel/plain/13.json and two more | Reused whole, word for word; Find Help named |
+| Rezin and Pekah besiege Ahaz (16:5); Elath (16:6); 16:7; the treasures sent (16:8); Damascus taken, Kir, Rezin killed (16:9) | 5-9 | 2-kings/16.json `summary`; BSB | Repository; BSB text |
+| The Syro-Ephraimite war, about 734 to 732 BC; the coalition and the plan to replace Ahaz (Isaiah 7:6); vassal language; the king as God's son (2 Samuel 7:14; Psalm 2:7); shochad and Exodus 23:8; Damascus taken in 732 BC; the inscription naming Jehoahaz of Judah; Kir and Amos 9:7, 1:5 | 5-9 | 2-kings/16.json `historical`, `cultural`, `words` (shochad) | Repository |
+| Isaiah 7:9; Isaiah 7:14 and the debated word; Matthew 1:23 (cited) | 5-9 | 2-kings/16.json `christ` (Isaiah 7:14; Matthew 1:23), `doctrines` (faith: Isaiah 7); BSB | Repository; BSB text; Matthew's own reading of Isaiah's sign, with the word's meaning stated as debated |
+| Ahaz in Damascus, the model and plans (16:10); Uriah builds it (16:11); the king's offerings (16:12-13); the bronze altar moved (16:14); the orders and 16:15 (its last sentence); Uriah obeys (16:16); the stands, basins and Sea (16:17); 16:18 (its opening words); his death (16:20) | 10-20 | 2-kings/16.json `summary`; BSB | Repository; BSB text |
+| Aramean or Assyrian style debated; Assyria generally not requiring its worship, as many scholars now think; the great altar and the bronze altar; the metal for tribute; tavnit (Exodus 25:9, 40; 1 Chronicles 28:11); demut (Genesis 1:26); the inventory-like detail; 'on account of the king of Assyria'; the center of gravity moved | 10-20 | 2-kings/16.json `cultural`, `literary`, `words` (tavnit, demut), `doctrines` (idolatry) | Repository; both views in their holders' terms |
+| Exodus 25:9 | 10-20 | 2-kings/16.json `words` (tavnit); BSB | Repository; BSB text |
+
+Cut in chapter 16: the deep note's contrast between Ahaz's sonship to Assyria and the promised son, and its line from the remodeled altar to Christ's one sacrifice, beyond Matthew's own use of Isaiah 7:14. Uriah's identification with Isaiah's witness (Isaiah 8:2), which the note says cannot be proved, is left out.
