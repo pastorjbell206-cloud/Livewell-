@@ -20038,3 +20038,19 @@ Cut in chapter 9: the deep note's lines from Solomon's throne and the nations' g
 | 2 Samuel 20:1 (the shout) | 16-19 | BSB | BSB text |
 
 Cut in chapter 10: the deep note's thematic contrast with Mark 10:45 and Matthew 11:28-30, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 11 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The army (11:1); 11:4 (God's words and the last sentence); 11:5; the cities (11:6-12) | 1-12 | BSB | BSB text |
+| Good years, brief; seventeen years, about 931 to 913 BC; 1 Kings 12 and what only Chronicles has; the fifteen cities and their regions; the north unfortified; the dating debate and Egypt; chazaq | 1-12 | 2-chronicles/11.json `story`, `historical`, `literary`, `words` (chazaq) | Repository |
+| 1 Kings 12:24 (God's words) | 1-12 | BSB | BSB text |
+| 11:14; 11:15 (its phrase); 11:16 (its first part); 11:17 (its clause); the wives (11:18-21); 11:21 (its second sentence); Abijah (11:22); 11:23 (its first sentence) | 13-23 | BSB | BSB text |
+| Levites and pasturelands (Numbers 35); Dan and Bethel (1 Kings 12:28-31); sa'ir and Leviticus 17:7; baqash and darash; alliances, sons and authority; Maacah daughter of Absalom | 13-23 | 2-chronicles/11.json `cultural`, `literary`, `words` (baqash, sa'ir) | Repository |
+| Leviticus 17:7 (its first sentence) | 13-23 | BSB | BSB text |
+| The hard note: wise as political shrewdness; Deuteronomy 17:17 and 1 Kings 11; the two readings | 13-23 `hard` | 2-chronicles/11.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 11: the deep note's lines to Mark 10:29-30 and to a coming son of David, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
