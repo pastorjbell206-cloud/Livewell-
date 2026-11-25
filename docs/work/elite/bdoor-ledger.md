@@ -18775,3 +18775,19 @@ Cut in chapter 3: the deep note's line that the heir has come, beyond the Gospel
 | Joshua 19:9 (its last sentence) | 24-43 | 1-chronicles/4.json `historical` (Joshua 19); BSB | Repository; BSB text |
 
 Cut in chapter 4: the deep note's line from Jabez to Jesus bearing griefs and Revelation 21:4, which it calls thematic. A first draft quoted Philippians 4:6 and Joshua 19 from memory and set Jabez's prayer inside a narrative quotation; the checks caught all three before they reached the repository, and 'blessing' was rewritten. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 5 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 (two quotations); 5:2; Reuben's descendants and the leader taken by Tiglath-pileser, the lands (5:3-10); Gad in Bashan and Gilead, registered under Jotham and Jeroboam (5:11-17) | 1-17 | 1-chronicles/5.json `summary`, `outline`, `historical`; BSB | Repository; BSB text |
+| East of the Jordan; the birthright (Deuteronomy 21:17) to Joseph's sons, leadership through Judah; Reuben's act (Genesis 35:22; 49:3-4) as a bid for his father's place; Sihon and Og; Aroer, Nebo and Baal-meon on the Moabite Stone, about 840 BC; a frontier | 1-17 | 1-chronicles/5.json `story`, `historical`, `cultural`, `words` (bekorah) | Repository |
+| Genesis 49:4 (its second part) | 1-17 | 1-chronicles/5.json `cultural`; BSB | Repository; BSB text |
+| 44,760 men and the Hagrites (5:18-19); 5:20; 5:22 (its last two sentences); Manasseh toward Hermon (5:23-24); 5:25 (its second sentence's first words); 5:26 (to its first clause's end) | 18-26 | 1-chronicles/5.json `summary`, `outline`; BSB | Repository; BSB text |
+| The pattern of the book; the mirrored stories; batach; ma'al; Tiglath-pileser III about 745 to 727 BC and Pul; 733 to 732 BC (2 Kings 15:29); prostitution as the prophets' image of idolatry; ur and Cyrus (2 Chronicles 36:22) | 18-26 | 1-chronicles/5.json `story`, `historical`, `cultural`, `literary`, `words` (batach, maal, ur) | Repository |
+| Psalm 20:7; 2 Chronicles 36:22 (its phrase) | 18-26 | 1-chronicles/5.json `words` (batach, ur); BSB | Repository; BSB text |
+| The hard note: the numbers (5:18, 21); exact counts; eleph as clan or unit; rounding or enlarging; defenders of each; the point not depending on it; war and captives in ancient records' language; no warrant for war in God's name | 18-26 `hard` | 1-chronicles/5.json `hard`; the brief | Repository; the views in their holders' terms |
+
+Cut in chapter 5: the deep note's lines to Jesus as the one faithful son and to John 10:16, which it calls thematic. No care line is needed in this chapter.
