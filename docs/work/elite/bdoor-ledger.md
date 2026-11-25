@@ -17753,3 +17753,18 @@ Every claim in `client/public/bible/notes/nehemiah/intro.json`, field `teaching`
 | Go deeper: eleven pages | deeper | bible/guides/empires.json, between-the-testaments.json, reading-genealogies.json, calendar-and-festivals.json; bible/doctrines/prayer.json, covenant.json, justice-poor.json, sabbath.json, providence.json; context/worlds/old-testament-world.json; needs/money.json (page: true) | Repository; every page live; the Find Help page named by its own title |
 
 Cut from the book page: the deep notes' lines to Christ (Jesus weeping over Jerusalem, John 17, Philippians 2:6-8, Matthew 23:37 and John 11:52 beside chapter 1; Matthew 16:18, Ephesians 2:22 and Luke 23:2 beside chapter 2; the living stones beside chapter 3; Colossians 2:15 beside chapter 4; 2 Corinthians 8:9 beside chapter 5; Mark 15:30-31 beside chapter 6; John 6:31-35 and 1 Corinthians 10:4 beside chapter 9; the heavenly Jerusalem beside chapters 11 and 12; John 2:13-17 beside chapter 13; the book's own introduction calls these thematic); the claim that the New Testament never quotes Nehemiah (not stated in the repository; the page says it says little); the date of the second term given as fact (the page says the book does not say how long Nehemiah was away).
+
+## The plain notes on Nehemiah 1 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chislev of the twentieth year, late 446 BC; nearly a century after the first return and about thirteen years after Ezra; the temple standing and the city defenseless; Susa a royal capital and winter residence, Darius I's palace; the citadel; Esther in the same city | 1-4 | nehemiah/1.json `historical`, `story` | Repository |
+| The broken wall as old damage or after Ezra 4:23, many favoring the second; Jerusalem as the city chosen for God's name and the graves of Nehemiah's fathers; a city without walls; the patterns of mourning and prayer | 1-4 | nehemiah/1.json `historical`, `cultural` | Repository |
+| Psalm 137:5; Ezra 4:23 | 1-4 | BSB (a link within the Old Testament); nehemiah/1.json `story` | Repository; BSB text |
+| Chislev before Nisan: accession years, an autumn year, or the nineteenth year; the story unchanged | 1-4 `hard` | nehemiah/1.json `historical` | Repository; the readings in their holders' terms |
+| The prayer built from Scripture (Deuteronomy 7:9, Daniel 9:4, Leviticus 26 and Deuteronomy 28, Deuteronomy 30:1-4, Deuteronomy 12:5); praise, confession, promise, request; himself and his father's house; zakar as covenant plea and the book's signature; this man; the cupbearer's trust and access | 5-11 | nehemiah/1.json `literary`, `cultural`, `words` (zakar), `doctrines` | Repository |
+| Deuteronomy 7:9; Deuteronomy 30:4; Daniel 9:4; Genesis 40:21 | 5-11 | nehemiah/1.json `literary`; genesis/plain/40.json (Nehemiah's post as cupbearer); BSB | Repository; BSB text |
+
+Cut in chapter 1: the deep note's lines to Christ (Luke 19:41-44, John 17, Philippians 2:6-8, Matthew 23:37, John 11:52; the note calls them patterns, not predictions); the grief care line (not needed: the passage's grief is for a city, and the hard question is about the calendar).
