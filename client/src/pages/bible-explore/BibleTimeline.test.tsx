@@ -119,8 +119,11 @@ describe("the timeline page", () => {
     const box = document.getElementById(first)!.closest(".bx-same") as HTMLElement;
     expect(box.hasAttribute("data-differ")).toBe(true);
     expect(within(box).getByText(/They do not date it alike\. Each is shown as its own book gives it/)).toBeTruthy();
-    expect(within(box).getByText("About AD 30")).toBeTruthy();
-    expect(within(box).getAllByText("AD 30 or 33").length).toBeGreaterThan(1);
+    const whens = Array.from(box.querySelectorAll(".bk-tl__when")).map((w) => w.lastChild?.textContent);
+    expect(whens).toContain("About AD 30");
+    expect(whens.filter((w) => w === "AD 30 or 33").length).toBeGreaterThan(1);
+    // Each entry says whose words it is.
+    expect(Array.from(box.querySelectorAll(".bx-entry__book")).map((b) => b.textContent)).toContain("Psalms");
     const alike = document.querySelectorAll(".bx-same:not([data-differ])");
     expect(alike.length).toBe(DATA.groups.filter((g) => !g.differ).length);
   });

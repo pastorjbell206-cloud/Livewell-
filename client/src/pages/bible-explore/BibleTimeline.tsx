@@ -39,7 +39,10 @@ const KIND_NAME: Record<TimelineKind, string> = { story: "The story", world: "Th
 function Entry({ e, book }: { e: TimelineEntry; book: ExploreBook }) {
   return (
     <li data-kind={e.kind} id={e.id}>
-      <span className="bk-tl__when">{e.when}</span>
+      <span className="bk-tl__when">
+        <span className="bx-entry__book">{book.name}</span>
+        {e.when}
+      </span>
       <span className="bk-tl__what">
         <span className="sr-only">{KIND_NAME[e.kind]}. </span>
         {e.what}
