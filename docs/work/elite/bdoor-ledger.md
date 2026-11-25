@@ -20150,3 +20150,22 @@ Cut in chapter 16: the deep note's lines to Luke 19:10 and James 5:14-15, which 
 | 1 Chronicles 29:9 (its clause); Judges 5:2 (its clauses) | 10-19 | BSB | BSB text |
 
 Cut in chapter 17: the deep note's lines to Matthew 9:35, Matthew 28:19-20 and Jeremiah 31:34 as fulfilled, which do not cite this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 18 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 18:1; Samaria and the request (18:2-3); 18:3 (Jehoshaphat's answer); 18:4; the prophets (18:5) and their words; 18:6; 18:7 (Ahab's answer); Zedekiah's horns (18:9-11) | 1-11 | BSB | BSB text |
+| The shadow of the marriage (21:6; 2 Kings 8:18); Ahab and Jezebel; 1 Kings 22 and the changed frame; Ahab about 874 to 853 BC; the Kurkh Monolith and Qarqar, 853 BC; Ramoth-gilead; court prophets in the LORD's name; Jehoshaphat's distrust; the sign act and horns | 1-11 | 2-chronicles/18.json `story`, `historical`, `cultural` | Repository |
+| Jeremiah 23:16 (its words) | 1-11 | BSB | BSB text |
+| The messenger (18:12); 18:13; the echo and the demand (18:14-15); 18:16 (its first sentence); 18:18 (its vision); the council (18:19-21); 18:22; Zedekiah and the prison (18:23-26); 18:27 (its first sentence) | 12-27 | BSB | BSB text |
+| Four hundred and one; the sarcasm; the two visions; the shepherd picture; patah; ruach; emet | 12-27 | 2-chronicles/18.json `cultural`, `literary`, `words` | Repository |
+| 1 Kings 22:8 (Ahab's words) | 12-27 | BSB | BSB text |
+| The hard note: the two readings (a real council and permitted deception, Job 1-2, 2 Thessalonians 2:11; a vision in prophetic form); the warning given; Ahab responsible | 12-27 `hard` | 2-chronicles/18.json `hard` | Repository; the readings in their holders' terms |
+| The disguise and robes (18:29); the order (18:30); 18:31 (its clause); 18:33 (its first sentence); 18:34 (its last sentence) | 28-34 | BSB | BSB text |
+| No plan escapes the word; the irony; the dogs left out; the help added; azar | 28-34 | 2-chronicles/18.json `historical`, `literary`, `words` (azar) | Repository |
+| 1 Kings 22:34 (its first sentence) | 28-34 | BSB | BSB text |
+
+Cut in chapter 18: the deep note's lines to Matthew 9:36, Mark 6:34, John 10:11 and Matthew 7, which do not cite this chapter. Ahab's death is told in the text's own few words. No care line is needed in this chapter.
