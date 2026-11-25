@@ -18518,3 +18518,19 @@ Cut in chapter 3: the deep note's lines to Christ (Matthew 27:46 and Psalm 22 be
 | Genesis 2:7 | 12-21 | job/4.json `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 4: the deep note's line to John 9:2-3 and the cross (the note calls it pattern, not prophecy; the New Testament does not draw it from Job).
+
+## The plain notes on Job 5 (2026-11-25)
+
+`client/public/bible/notes/job/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The holy ones as intercessors and Job's later longing (9:33; 16:19); in the gate; the sparks and Resheph; amal and 3:10; the fool's sons said to a bereaved father | 1-7 | job/5.json `cultural`, `historical`, `words` (amal); context/guides/psalm-91-in-context.json (Eliphaz's promises to a man whose children had died) | Repository |
+| Ecclesiastes 1:3 | 1-7 | job/5.json `words` (amal runs through Ecclesiastes); BSB | Repository; BSB text |
+| The hymn of what God does; true descriptions of God; good advice in general; true wisdom misapplied | 8-16 | job/5.json `literary`, `doctrines` (sovereignty, wisdom) | Repository |
+| 1 Corinthians 3:19 quoting 5:13; Psalm 107:42 and 5:16 | 8-16 | job/5.json `doctrines` (wisdom), `christ`; psalms/107.json `historical` (verse 42 like Job 5:16); BSB | Repository; BSB text; a line the New Testament draws |
+| Discipline from the family; musar; Shaddai; six and seven; the promises as a list of Job's losses; Eliphaz's confidence | 17-27 | job/5.json `cultural`, `literary`, `words` (musar, Shaddai), `historical` | Repository |
+| Proverbs 3:11-12 | 17-27 | job/5.json `cultural`; BSB | Repository; BSB text |
+| The hard note: Scripture teaches discipline; not all suffering is discipline; Job's case; promises to a bereaved father; no one may announce God's reasons in another's pain; 42:7 | 17-27 | job/5.json `doctrines` (suffering), `words` (musar); context/guides/psalm-91-in-context.json | Repository |
+
+Cut in chapter 5: the deep note's lines to Christ (Isaiah 53:5 and 1 Peter 2:24 beside 5:18, which the note calls thematic; Hebrews 12:5-6, which takes up Proverbs 3 and not Job).
