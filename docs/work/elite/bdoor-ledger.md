@@ -21080,3 +21080,24 @@ Cut in chapter 21: the deep note's lines to Christ (Acts 4:27-28 as the deepest 
 | Deuteronomy 27:17 (the curse); James 2:5 (from ‘Has not God’) | 17-29 | proverbs/22.json `cultural` (Deuteronomy 27:17), `christ` (James 2:1-7); BSB | Repository; BSB text |
 
 Cut in chapter 22: the deep note's lines (2 Corinthians 9:7 and the Greek addition after verse 8, which the note says Paul ‘appears to draw on’, not certain enough to state; Acts 17:28-31 and Colossians 2:3 as connections of practice and theme).
+
+## The plain notes on Proverbs 23 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 23:1; restraint (23:2) paraphrased; 23:3; 23:4; 23:5; the stingy host (23:6-7) paraphrased (verse 7 holds an inner quotation); 23:9; 23:10-11; 23:12 | 1-12 | BSB | BSB text |
+| Commands with reasons; the closeness to Amenemope through verse 11; the ruler's table and its strings; wealth's wings; family land, widows and orphans at the gate, the quiet theft; go'el and Boaz; God as the orphan's Redeemer | 1-12 | proverbs/23.json `cultural`, `literary`, `words` (ga'al); proverbs/22.json `historical` | Repository |
+| Exodus 22:22-23; Psalm 68:5 | 1-12 | the chapter data's cross-references for 23:11 (Exodus 22:22, 24) and 23:10 (Psalm 68:5 by way of the fatherless); BSB | Repository; BSB text |
+| 23:13; 23:14; 23:15; 23:17; 23:18; 23:20; poverty and rags (23:21); 23:22; buying truth (23:23) paraphrased (it holds a dash); 23:25 (its exclamation not quoted: the quotation ends before it) | 13-25 | BSB | BSB text |
+| Musar as teaching and correction (verses 12-13); teachable and correctable as one virtue; physical correction universal in that world and the greater fear of a neglected child; Sheol; envy and hope; aging parents' dependence | 13-25 | proverbs/23.json `words` (musar, tiqvah), `cultural`; proverbs/19.json `historical` (no pensions) | Repository |
+| Psalm 73:3; Ephesians 6:4 | 13-25 | the chapter data's cross-references for 23:17 (Psalm 73 by way of envy); proverbs/13.json `hard` (Ephesians 6:4); BSB | Repository; BSB text |
+| The hard note on 23:13-14: the readings, each fairly; physical discipline in love and self-control, never in anger or to injure; the rod as any firm correction, the risk of abuse, Ephesians 6:4 and Colossians 3:21; dividing faithful parents without dividing anyone from Christ; no side; no license for harshness; neglect as a failure of love; read as a proverb, ‘he will not die’ and Sheol as the ordinary fruit, not a formula; parents not solely responsible; no warrant to harm a child; anger or injury not discipline | 13-25 `hard` | proverbs/23.json `hard`; proverbs/13.json `hard`; needs/parenting.json `faq`; wisdom/deep/parenting-struggles.json | Repository; each reading in its holders' terms; no side |
+| Care line (‘Abuse of a child is a crime...’ to ‘...lists places to turn.’) | 13-25 `hard` | colossians/plain/3.json, ephesians/plain/6.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| 23:26; the adulteress (23:27-28) paraphrased; 23:29; 23:30; 23:31-32; strange things and the mast (23:33-34) paraphrased; 23:35 (its last sentence) | 26-35 | BSB | BSB text |
+| The poem's six questions and one answer; attraction to death; mixed drinks; the drunkard's own last words; a habit become a trap, not mocked | 26-35 | proverbs/23.json `literary`, `cultural` | Repository |
+| Care line (‘If drinking has become hard to control, you do not have to face it alone...’ to ‘...lists places to turn.’) | 26-35 | ephesians/plain/5.json and 1-timothy/plain/5.json | Reused byte for byte; Find Help named; no phone number |
+| Isaiah 5:11; Ephesians 5:18 | 26-35 | the chapter data's cross-references for 23:29-30 (Isaiah 5:11; Ephesians 5:18); BSB | Repository; BSB text |
+
+Cut in chapter 23: the deep note's lines to Christ (Jesus as the Redeemer of the fatherless; any line beside verse 26). The drunkard's beating is told in his own words and not dwelt on.
