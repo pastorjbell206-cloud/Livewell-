@@ -18641,3 +18641,19 @@ Cut in chapter 11: the deep note's lines to Christ (Romans 11:33 beside Zophar's
 | The hard note: not that God lies; both under God's rule; Isaiah 19:14 and 1 Kings 22:19-23; Numbers 23:19 and Titus 1:2; the two readings; no scheme outside God's rule | 13-25 | job/12.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 12: the deep note's lines to Christ (1 Corinthians 1:20, 27, Luke 1:52, Philippians 2:8-9 and Colossians 2:3, which the note calls thematic); the dates of Nineveh's fall and Babylon's (not needed for a poem that names no event).
+
+## The plain notes on Job 13 (2026-11-25)
+
+`client/public/bible/notes/job/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ancient medicine and smear as plastering over; the false witness's penalty applied to the friends as God's advocates; defending the gods thought pleasing; false comfort in God's name a sin; proverbs of ashes, defenses of clay | 1-12 | job/13.json `cultural`, `historical`, `doctrines` (revelation), `words` (mashal) | Repository |
+| Deuteronomy 19:18-19; 42:7 | 1-12 | job/13.json `historical` (Deuteronomy 19:16-19); BSB | Repository; BSB text |
+| The turning point from chapter 9 to chapters 23, 31 and 38; the idiom of risk; Exodus 33:20; preparing a case as ranks drawn up; verse 16 and appearing before God; yeshuah and Joshua | 13-19 | job/13.json `story`, `cultural`, `historical`, `doctrines` (faith, salvation), `words` (yeshuah) | Repository |
+| Philippians 1:19 repeating Job 13:16 in the Greek Old Testament; Paul expecting vindication | 13-19 | philippians/1.json `literary`; BSB | Repository; BSB text; a line the New Testament itself draws, as the site's Philippians note states it |
+| The hard note: ketiv and qere, lo as not and as in him; the Vulgate and most English translations; many modern scholars; hope or defiance; verse 18 | 13-19 | job/13.json `hard`, `words` (yachal); the notes on the two readings of Job 13:15 | Repository; each reading in its holders' terms; no side |
+| Two requests; verse 23 not a claim to be sinless; the stocks and the uncertain marking; the moth-eaten garment leading into chapter 14 | 20-28 | job/13.json `literary`, `cultural` | Repository |
+| Psalm 10:1 | 20-28 | needs/suffering.json `faq` (Job 13:24 beside Psalm 10:1); BSB | Repository; BSB text |
+
+Cut in chapter 13: the deep note's lines to Christ (1 Peter 2:23, Luke 23:46, Acts 2:23-24, 1 Timothy 3:16 and Hebrews 4:16; the note says none is predicted in Job).
