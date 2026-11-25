@@ -24,7 +24,8 @@ Three scripts, kept outside the repo in `/home/user/vs2/` (`apply.py`, `factdiff
 | Chapter 1: Zanah | 3,729 | 3,719 | -0.3% | 1 (0.3) | 0 (0.0) | 136 (36.5) | 75 (20.2) | 36 | PASS |
 | Chapter 2: Chariots Aren't Evil—But They Aren't Ultimate | 4,249 | 4,208 | -1.0% | 3 (0.7) | 0 (0.0) | 123 (28.9) | 91 (21.6) | 42 | PASS |
 | Chapter 3: The Messiah You Want vs. the Messiah You Need | 4,105 | 4,090 | -0.4% | 3 (0.7) | 0 (0.0) | 155 (37.8) | 103 (25.2) | 46 | PASS |
-| **All 4** | 13,841 | 13,751 | -0.7% | 10 (0.7) | 0 (0.0) | 503 (36.3) | 321 (23.3) | 149 | |
+| Chapter 4: "Jesus Is Lord" | 4,674 | 4,661 | -0.3% | 2 (0.4) | 0 (0.0) | 125 (26.7) | 88 (18.9) | 31 | PASS |
+| **All 5** | 18,515 | 18,412 | -0.6% | 12 (0.6) | 0 (0.0) | 628 (33.9) | 409 (22.2) | 180 | |
 
 ## Introduction: Not Persecuted—Seduced (`sec01.xhtml`)
 
@@ -120,3 +121,27 @@ Five pairs:
    After: That is the messiah the crowd wanted, the messiah Peter demanded, the messiah Satan offered in the wilderness.
 
 Left alone, and why. "Jesus ran from the crown.", "And Jesus said no.", "The crowd is celebrating. Jesus is weeping.", "Peter is not rejecting Jesus. He is editing Jesus." and "They chose the strongman over the servant. And they have not stopped choosing." are verdicts. The tempter's speech ("All the kingdoms. All the power. ... Skip all of that. Take the shortcut.") is speech and keeps its beat; so do the crowd's and Peter's thoughts. The paired contrasts of Palm Sunday ("They think He is coming to conquer. He knows He is coming to die.") are the passage's hinge. The answer to "What about justice?" is his position: paragraph joins and semicolons only. The four "anxious church / non-anxious church" pairs and the three "first messiah / second" pairs were one-line paragraphs and are now a paragraph each, word for word. The stock turn "Let that sink in." was taken out ("Let the audacity of this sink in." stays: it says what should sink in). Forbidden list: "the most transformative thing a leader can do" is now "the most powerful thing". One "precisely" went.
+
+
+## Chapter 4: "Jesus Is Lord" (`sec05.xhtml`)
+
+Words 4,674 to 4,661. Em-dashes in his prose 2 to 0 (0.4 to 0.0 per 1,000 words). Tells 125 to 88 (26.7 to 18.9 per 1,000). Mean sentence 13.6 words to 16.3; sentences of eight words or fewer 33.7% to 25.1%; of five or fewer 19.6% to 13.1%. 31 edits; paragraphs 87 to 80. Paragraphs of fifteen words or fewer 8 to 5; runs of three fragments 6 to 1.
+
+By kind (before to after): emdash 2 to 0, not_but 13 to 14, not_just 1 to 1, NotX.Y 13 to 1, triplet 25 to 29, frag3 6 to 1, anaphora 27 to 11, stock 1 to 1, intens 9 to 9, colon_reveal 2 to 2, short_close 17 to 14, one_line_para 8 to 5, forbidden 1 to 0.
+
+Fact diff: **PASS**. Fixed blocks (headings, pull quote, block quotes, and the end matter: Key Takeaways, Reflection Questions, Practices, Sources & Notes) identical; 53 quoted strings, 22 Scripture references, 0 years, 5 numbers in digits, 32 number words, proper names by count, and 52 hedge words (after: 52) compared.
+
+Five pairs:
+
+1. Before: We say it in worship songs. We print it on coffee mugs. We embroider it on throw pillows. We post it on social media with sunset backgrounds and curated fonts.
+   After: We say it in worship songs, print it on coffee mugs, embroider it on throw pillows, and post it on social media with sunset backgrounds and curated fonts.
+2. Before: They understood the gospel perfectly. Better, in fact, than many modern Christians do. The accusation is that the early Christians are proclaiming a rival king. Not a rival spiritual guru. Not a rival moral teacher. Not a rival source of personal peace and inner fulfillment. A rival king, one whose authority supersedes Caesar's, whose kingdom renders the Roman Empire penultimate, whose decrees override the decrees of the most powerful government on earth.
+   After: They understood the gospel perfectly, better, in fact, than many modern Christians do. The accusation is that the early Christians are proclaiming a rival king: not a rival spiritual guru, not a rival moral teacher, not a rival source of personal peace and inner fulfillment, but a rival king, one whose authority supersedes Caesar's, whose kingdom renders the Roman Empire penultimate, whose decrees override the decrees of the most powerful government on earth.
+3. Before: They were not forming a political party. They were not running candidates. They were not lobbying for legislative influence. They were not building a voting bloc. They were not making alliances with sympathetic Roman officials in exchange for protection and cultural power. They were worshiping. They were sharing meals. They were caring for the poor. They were telling the truth about who was actually in charge.
+   After: They were not forming a political party, running candidates, lobbying for legislative influence, or building a voting bloc. They were not making alliances with sympathetic Roman officials in exchange for protection and cultural power. They were worshiping, sharing meals, caring for the poor, and telling the truth about who was actually in charge.
+4. Before: Because if Jesus is truly Lord, then nothing else can be. Not America. Not a party. Not a candidate. Not a movement. Not an ideology. And if nothing else can be Lord, then you are free. Free from the tyranny of political tribalism. Free from the fear that the wrong election will undo the Kingdom of God. Free from the desperate need to control the levers of power in order to feel safe.
+   After: Because if Jesus is truly Lord, then nothing else can be: not America, not a party, not a candidate, not a movement, not an ideology. And if nothing else can be Lord, then you are free: free from the tyranny of political tribalism, free from the fear that the wrong election will undo the Kingdom of God, free from the desperate need to control the levers of power in order to feel safe.
+5. Before: He has already conquered. He has already been exalted. He has already been given the name above every name.
+   After: He has already conquered, already been exalted, already been given the name above every name.
+
+Left alone, and why. The paired contrasts in the Philippians section ("Rome said greatness comes through power. Paul says greatness comes through service." and the five after it) are the argument's form and stay as pairs. "Every knee will bow. Every tongue will confess. Jesus Christ is Lord." is the hymn's own cadence. "And everything changed.", "The domestication is complete. And it is killing us.", "He won by losing. He reigned by serving." and the last three sentences are verdicts. The test he sets both ways ("If "Jesus is Lord" does not challenge your politics, it is not functioning. If it only challenges the other side's politics, it is being weaponized, not confessed.") is word for word. The history of the Reformers ("Luther depended on German princes ...") is three statements of fact, left as three. Forbidden list: "did not leverage it for power" is now "did not exploit it for power".
