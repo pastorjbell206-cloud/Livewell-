@@ -60,6 +60,47 @@ describe("the key words' data", () => {
   });
 });
 
+describe("the way from a key word to the Study Bible's word", () => {
+  const lex = (key: string) => json(`bible/lex/${key[0]}/${Math.floor(parseInt(key.slice(1, 5), 10) / 250)}.json`)[key] as { tr: string } | undefined;
+  const letters = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z]/g, "");
+
+  it("is given only where the sentence names the word's own transliteration after its language, and the book uses the word", () => {
+    const linked = DATA.words.flatMap((w) => w.entries.filter((e) => e.strong).map((e) => ({ w, e })));
+    expect(linked.length).toBeGreaterThan(50);
+    for (const { w, e } of linked) {
+      const entry = lex(e.strong!);
+      expect(entry, `${w.word}: ${e.strong}`).toBeTruthy();
+      const lang = e.strong![0] === "G" ? "Greek" : "(?:Hebrew|Aramaic)";
+      const named = Array.from(e.line.matchAll(new RegExp(`\\b${lang} ([\\p{Ll}][\\p{L}\\p{M}'ʾʿ’.-]*)`, "gu"))).map((m) => letters(m[1]));
+      expect(named, `${w.word} in ${e.book}`).toContain(letters(entry!.tr));
+      // The Study Bible's own text uses that word in that very book.
+      const at = BOOKS.findIndex((b) => b.slug === e.book);
+      const use = json(`bible/words/occ/${e.strong![0]}/${Math.floor(parseInt(e.strong!.slice(1, 5), 10) / 100)}.json`)[e.strong!] as { b: [number, number][] };
+      expect(use.b.some(([b]) => b === at), `${e.strong} in ${e.book}`).toBe(true);
+    }
+  });
+
+  it("is withheld where two dictionary words are spelled alike, however likely one of them looks", () => {
+    // Every linked transliteration belongs to one dictionary word only.
+    const all = new Map<string, number>();
+    for (const lang of ["H", "G"]) {
+      for (const f of fs.readdirSync(path.join(PUBLIC, "bible/lex", lang))) {
+        for (const [k, e] of Object.entries(json(`bible/lex/${lang}/${f}`) as Record<string, { tr: string }>)) all.set(`${k[0]}:${letters(e.tr)}`, (all.get(`${k[0]}:${letters(e.tr)}`) ?? 0) + 1);
+      }
+    }
+    for (const w of DATA.words) for (const e of w.entries) if (e.strong) expect(all.get(`${e.strong[0]}:${letters(lex(e.strong)!.tr)}`), `${w.word}: ${e.strong}`).toBe(1);
+  });
+
+  it("is a link on the page, by the word's number", () => {
+    renderWithProviders(<WordsView data={DATA} />);
+    const gospel = DATA.words.find((w) => w.entries.some((e) => e.strong))!;
+    const e = gospel.entries.find((x) => x.strong)!;
+    const card = document.getElementById(gospel.id)!;
+    const link = within(card).getAllByRole("link", { name: /^Study this word/ })[0];
+    expect(link.getAttribute("href")).toBe(`/study/word/${e.strong}`);
+  });
+});
+
 describe("the key words page", () => {
   it("lists every word under its group, with the way to its book", () => {
     renderWithProviders(<WordsView data={DATA} />);

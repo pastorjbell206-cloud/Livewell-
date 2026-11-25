@@ -1145,6 +1145,46 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // Study a Bible word: the finder, with the counts the word index holds
+  // (client/public/bible/words/index.json). A word's own page is found from
+  // here; it is not prerendered (some 17,000 of them).
+  "/study/word": async () => {
+    const d = readJsonSafe("client/public/bible/words/index.json");
+    if (!d?.words) return null;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Study a Bible word</h1>`,
+        `<p class="pre-subtitle">Look up a Hebrew or Greek word: its dictionary entry, the books that use it, and its verses.</p>`,
+        `<p>${escapeHtml(`${d.words.H.toLocaleString("en-US")} Hebrew and Aramaic words and ${d.words.G.toLocaleString("en-US")} Greek words, every one the Study Bible's text uses.`)}</p>`,
+        `<p>Find a word by its English meaning, its transliteration or its Strong's number. Each has its dictionary entry, the books that use it and its verses.</p>`,
+        `<p>Not sure which word? <a href="/study/words">Key words of the Bible</a> lists the words the book pages explain.</p>`,
+      ]),
+    };
+  },
+  // Follow a verse through the Bible: the verses the most other verses link
+  // to, with their words and counts, as places to start
+  // (client/public/bible/xref/examples.json, counted from the chapter files).
+  "/study/cross-references": async () => {
+    const d = readJsonSafe("client/public/bible/xref/examples.json");
+    const books = readJsonSafe("client/public/bible/books.json");
+    if (!d?.examples?.length || !books) return null;
+    const label = (ref) => {
+      const [code, c, v] = ref.split(".");
+      const b = books.find((x) => x.code === code);
+      return b ? `${b.slug === "psalms" ? "Psalm" : b.name} ${c}:${v}` : ref;
+    };
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Follow a verse through the Bible</h1>`,
+        `<p class="pre-subtitle">Choose a verse and see the verses the Study Bible links from it, book by book.</p>`,
+        `<p>${escapeHtml(`${d.links.toLocaleString("en-US")} links between verses, from ${d.verses.toLocaleString("en-US")} verses.`)}</p>`,
+        `<p>${escapeHtml(`Name a verse, or start from one of these: the ${d.examples.length} verses the most other verses link to, by the Study Bible's own count.`)}</p>`,
+        `<ol>\n${d.examples.map((x) => `<li><a href="/study/cross-references?ref=${escapeHtml(x.ref)}"><strong>${escapeHtml(label(x.ref))}</strong></a> ${escapeHtml(x.t)} ${x.into} verses link to it.</li>`).join("\n")}\n</ol>`,
+      ]),
+    };
+  },
   // Paul's travels: every trip's places in order with what happened there and
   // its Acts reference, then the churches and the letters written to them
   // (client/public/explorer/travels.json; places named as the Acts book page
