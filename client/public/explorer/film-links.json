@@ -61,6 +61,10 @@
    "title": "Ruth: loyal love in a hard time",
    "line": "A short story of two women, a field and a kind man: what it is, how it is put together, what to watch for, and where to start reading."
   },
+  "book-jonah": {
+   "title": "Jonah: the prophet who ran from mercy",
+   "line": "A short book about a prophet who ran away, a storm, a great fish and a great city: what it is, how it is put together, what to watch for, and where to start reading."
+  },
   "holy-spirit": {
    "title": "The Holy Spirit through the Bible",
    "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
@@ -367,6 +371,9 @@
   ],
   "/study/bible/john": [
    "book-john"
+  ],
+  "/study/bible/jonah": [
+   "book-jonah"
   ],
   "/study/bible/luke": [
    "book-luke"

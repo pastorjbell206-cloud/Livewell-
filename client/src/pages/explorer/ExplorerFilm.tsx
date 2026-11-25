@@ -358,6 +358,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Ruth in seven moving pictures: what it is, how its four scenes are laid out, loyal love, God at work in ordinary days, the redeemer, the surprise at the end, and where to start reading.",
     },
+    "book-jonah": {
+      title: "Jonah: the prophet who ran from mercy: Bible Explorer",
+      description:
+        "The whole book of Jonah in seven moving pictures: what it is, how its four chapters are laid out, a God whom wind and sea obey, down and up again, the city that turned, the question at the end, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

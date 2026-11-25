@@ -1724,6 +1724,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-acts",
     "book-revelation",
     "book-ruth",
+    "book-jonah",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2314,5 +2315,22 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     );
     expect(f.think.older).toContain("the book lets her say it");
     expect((f.deeper ?? []).map(d => d.href)).toContain("/wisdom/grief");
+  });
+
+  it("Jonah gives the ways Christians read it and takes none, and holds no people in contempt", () => {
+    const f = filmFile("book-jonah");
+    expect(f.care).toBe(filmFile("book-exodus").care);
+    const start = f.frames.find(x => x.id === "start")!;
+    // History, a teaching story, or both: at both levels, none taken.
+    expect(start.younger).toContain("as things that happened");
+    expect(start.younger).toContain("as a story told to teach");
+    expect(start.younger).toContain("some as both");
+    expect(start.older).toContain("Many read Jonah as history, many as a teaching story, some as both.");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect(f.differ?.text).toContain("A third group holds both.");
+    const t = text(f);
+    expect(t).not.toMatch(/pagan|heathen|savage|brutal|cruel|wicked city|\bIraq\b|modern/i);
+    // Jonah's wish to die (4:3, 8) is not told to children.
+    expect(captions(f)).not.toMatch(/wish(ed)? to die|take my life|better for me to die/i);
   });
 });

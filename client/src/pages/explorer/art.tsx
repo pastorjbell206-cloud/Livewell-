@@ -934,6 +934,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M20,40l-3,-8M26,40l-1,-9M33,40l1,-9M40,40l3,-8M46,32l-3,-8M53,32l-1,-9M61,32l1,-9M68,32l3,-8" />
     </>
   ),
+  /* Jonah: a great fish under the waves, and a gold sun over the sea. */
+  "book-jonah": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M62,22a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M62,22a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-f" d="M10,42q6,-5 12,0t12,0t12,0t12,0t12,0t12,0t12,0" />
+      <Shape d="M24,64C34,50 62,48 78,60C80,63 80,65 78,67C62,78 34,76 24,64Z" tone="b" off={0.8} />
+      <Shape d="M24,64L12,54C14,60 14,68 12,74Z" tone="b" off={0.8} />
+      <path className="pl-k" d="M70,61a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

@@ -1554,6 +1554,23 @@
       "book": "ruth"
     },
     {
+      "slug": "book-jonah",
+      "title": "Jonah: the prophet who ran from mercy",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short book about a prophet who ran away, a storm, a great fish and a great city: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Jonah as a whole book: a prophet who runs, a God whom wind and sea obey, a city that turns, an angry prophet, the question the book ends on, and the ways Christians read it."
+      },
+      "mark": "book-jonah",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "jonah"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

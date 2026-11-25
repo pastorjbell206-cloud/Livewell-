@@ -1,0 +1,120 @@
+{
+  "slug": "book-jonah",
+  "title": "Jonah: the prophet who ran from mercy",
+  "group": "books",
+  "status": "finished",
+  "book": "jonah",
+  "mark": "book-jonah",
+  "line": {
+    "younger": "A short book about a prophet who ran away, a storm, a great fish and a great city: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Jonah as a whole book: a prophet who runs, a God whom wind and sea obey, a city that turns, an angry prophet, the question the book ends on, and the ways Christians read it."
+  },
+  "poster": "A small ship sails away across a wide sea toward the setting sun, while far behind it, on the other shore, stands a great walled city.",
+  "frames": [
+    {
+      "id": "ran",
+      "name": "A prophet who ran",
+      "still": "A small ship sails away across a wide sea toward the setting sun, while far behind it, on the other shore, stands a great walled city.",
+      "younger": "Jonah is a book about a prophet who ran away. God told Jonah to go to Nineveh, a great city of Assyria, the enemy of his people. Jonah went the other way. He found a ship sailing as far from Nineveh as a ship could go.",
+      "older": "Jonah is unlike the other prophets: it is almost all story, with one short sentence of prophecy. God sends Jonah to Nineveh, a great city of Assyria, Israel's enemy. Jonah boards a ship for Tarshish, at the far end of the known world.",
+      "verse": {
+        "ref": "Jonah 1:3",
+        "text": "Jonah, however, got up to flee to Tarshish, away from the presence of the LORD."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in four equal panels, with a ship, a great fish, a city wall and a small leafy plant over them. A gold rule lies under the last panel, the plant.",
+      "younger": "Four short chapters. Jonah runs, and a storm comes. He prays from inside a great fish. He preaches, and the whole city turns to God. Then he is angry, and God asks him a question. That last chapter is the heart of the book.",
+      "older": "Four chapters: Jonah runs, and the sailors fear the LORD; his prayer from the depths; Nineveh turns; Jonah's anger and God's question. The last chapter is the real climax, and the book ends on a question that Jonah never answers.",
+      "verse": {
+        "ref": "Jonah 1:2",
+        "text": "Go to the great city of Nineveh"
+      }
+    },
+    {
+      "id": "obey",
+      "name": "Watch for: all of it obeys",
+      "still": "A ship rides a calm sea under a clearing sky, and far below the waves a great fish swims down into the deep among the weeds. A gold sun breaks through the clouds.",
+      "younger": "Watch who obeys God in this story. The wind obeys him, and so does the sea. God sends a great fish, then a plant, a worm and a hot wind, and each one does what God says. Only one does not obey: God's own prophet.",
+      "older": "Jonah confesses the LORD as the God who made the sea and the dry land, and the book shows it. God appoints a storm, a fish, a plant, a worm and an east wind. Everything in the book obeys God except his prophet.",
+      "verse": {
+        "ref": "Jonah 1:17",
+        "text": "Now the LORD had appointed a great fish to swallow Jonah"
+      }
+    },
+    {
+      "id": "down",
+      "name": "Watch for: down, and up again",
+      "still": "A man stands on a sandy shore with his arms lifted, and behind him the great fish turns back into the sea. A gold sun rises over the water.",
+      "younger": "Watch how Jonah keeps going down, into the ship and into the deep water. From inside the fish he prays, and God brings him up onto dry land. Jesus said Jonah's three days in the fish were a sign of his own death and rising.",
+      "older": "Jonah goes down to the port, down into the ship, down to the roots of the mountains. From the fish he prays a psalm of thanks, and God brings him up. Jesus took this as the sign of Jonah, a picture of his own death, burial and resurrection.",
+      "verse": {
+        "ref": "Jonah 2:6",
+        "text": "But You raised my life from the pit, O LORD my God!"
+      }
+    },
+    {
+      "id": "turn",
+      "name": "Watch for: the city that turned",
+      "still": "Before the long wall of a great city, people sit on the ground in rough cloth, a ruler among them with his fine robe laid on the ground beside him. Sheep stand near, and one gold lamp burns on the wall.",
+      "younger": "Watch the people who are not from Israel. The sailors in the storm pray to the LORD. In Nineveh everyone stops eating and turns from doing wrong, from the king down to the animals. And God is kind to them.",
+      "older": "The sailors, a king and a whole city respond to God more readily than his prophet does. Jonah's warning offers no mercy, yet Nineveh turns, and God relents. His warnings of judgment are meant to lead people to turn.",
+      "verse": {
+        "ref": "Jonah 3:10",
+        "text": "He relented from the disaster He had threatened to bring upon them."
+      }
+    },
+    {
+      "id": "question",
+      "name": "Watch for: the question at the end",
+      "still": "On a hill outside the city a man sits alone in a small shelter, beside a plant that has withered. Below him the city's roofs spread out, and one gold star shines over it.",
+      "younger": "Watch Jonah at the end. He is angry that God was kind to Nineveh. God gives him a plant for shade, then takes it away, and asks him: should God not care about a great city full of people and animals?",
+      "older": "Jonah is furious, and he explains why he ran: he knew God was gracious and compassionate. God gives him a plant, then takes it away, and ends the book with a question that Jonah never answers. It is asked of the reader too.",
+      "verse": {
+        "ref": "Jonah 4:2",
+        "text": "I knew that You are a gracious and compassionate God, slow to anger"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter one, and read all four. Some Christians read Jonah as things that happened, some as a story told to teach, and some as both. Whichever way you read it, do not miss the question at the end.",
+      "older": "Start with chapter 1 and read all four. Watch the words great, down and appointed. Many read Jonah as history, many as a teaching story, some as both. The worst misreading argues about the fish and misses the question about mercy.",
+      "verse": {
+        "ref": "Jonah 4:11",
+        "text": "So should I not care about the great city of Nineveh"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Jonah was glad when God was kind to him, and angry when God was kind to Nineveh. Why do you think that was?",
+    "older": "The book ends on God's question, and Jonah never answers it. Is there anyone you would rather God did not show mercy to?"
+  },
+  "read": [
+    { "label": "Jonah 1", "href": "/study/bible/jonah/1" },
+    { "label": "Jonah 2", "href": "/study/bible/jonah/2" },
+    { "label": "Jonah 3", "href": "/study/bible/jonah/3" },
+    { "label": "Jonah 4", "href": "/study/bible/jonah/4" }
+  ],
+  "stops": [
+    "exile"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians read Jonah as Scripture with one message: God's compassion reaches even the people his own prophet feared. They differ on what kind of book it is. Many readers, Jewish and Christian, take it as history: Jonah is a real prophet named in 2 Kings 14:25, and Jesus speaks of him and of the people of Nineveh as he speaks of others in the past. Many others, including some who hold a high view of Scripture, read it as a teaching story, pointing to its balance, its humor and its exaggeration. A third group holds both. Whatever position a reader takes, the book's message is the same. This moving picture takes no side; the readings are set out on",
+    "links": [
+      { "label": "the Jonah page of the Study Bible", "href": "/study/bible/jonah" }
+    ]
+  },
+  "care": "This part of the story has death and fear in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Jonah in the Study Bible: the whole book", "href": "/study/bible/jonah" },
+    { "label": "Matthew 12: the sign of Jonah", "href": "/study/bible/matthew/12" },
+    { "label": "A blessing for all nations (a moving picture)", "href": "/study/explorer/watch/all-nations" },
+    { "label": "The Prophets and Exile: a stop on the map", "href": "/study/explorer/exile" }
+  ],
+  "end": { "label": "Start reading: Jonah 1", "href": "/study/bible/jonah/1" }
+}
