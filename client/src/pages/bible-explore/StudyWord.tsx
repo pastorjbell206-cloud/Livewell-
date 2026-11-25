@@ -150,6 +150,19 @@ function Verses({ strong, use, books }: { strong: string; use: WordUse; books: B
   const [paged, setPaged] = useState<{ key: string; rows: WordRow[] } | null>(null);
   const [failed, setFailed] = useState(false);
   const [nonce, setNonce] = useState(0);
+  // The verses' chapters are asked for only once the entry has painted, so the
+  // entry (the page's largest text) is not held behind twenty small fetches.
+  const [painted, setPainted] = useState(false);
+  useEffect(() => {
+    let t = 0;
+    const f = requestAnimationFrame(() => {
+      t = window.setTimeout(() => setPainted(true), 0);
+    });
+    return () => {
+      cancelAnimationFrame(f);
+      clearTimeout(t);
+    };
+  }, []);
   const page = 300;
 
   // Where the wanted verses sit among the word's rows.
@@ -163,7 +176,7 @@ function Verses({ strong, use, books }: { strong: string; use: WordUse; books: B
   const key = `${strong}:${book}:${want}`;
 
   useEffect(() => {
-    if (use.v || want === 0) return;
+    if (use.v || want === 0 || !painted) return;
     let stale = false;
     const first = Math.floor(start / page);
     const last = Math.floor((start + want - 1) / page);
@@ -175,7 +188,7 @@ function Verses({ strong, use, books }: { strong: string; use: WordUse; books: B
     };
     // `key` names everything this reads.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [key, nonce]);
+  }, [key, nonce, painted]);
 
   const rows = use.v ? (book === null ? use.v : use.v.filter((r) => r[0] === book)).slice(0, want) : paged?.key === key ? paged.rows : null;
   const most = Math.max(1, ...use.b.map(([, n]) => n));
@@ -235,7 +248,7 @@ function Verses({ strong, use, books }: { strong: string; use: WordUse; books: B
               setNonce((n) => n + 1);
             }}
           />
-        ) : rows === null ? (
+        ) : rows === null || !painted ? (
           <Status>Loading the verses…</Status>
         ) : (
           <ol className="bx-verses">
