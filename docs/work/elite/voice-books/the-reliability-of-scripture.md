@@ -34,7 +34,10 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Seven: The Hard Sayings — Living with Difficulty | 1,259 | 1,259 | +0.0% | 15 (11.9) | 0 (0.0) | 28 (22.2) | 14 (11.1) | 10 | PASS |
 | Chapter Eight: Dating, Authorship, and the Documentary Hypothesis | 996 | 996 | +0.0% | 14 (14.1) | 0 (0.0) | 26 (26.1) | 12 (12.0) | 8 | PASS |
 | Chapter Nine: What the Church Has Always Believed — A History of the Doctrine of Scripture | 1,007 | 1,007 | +0.0% | 10 (9.9) | 0 (0.0) | 23 (22.8) | 13 (12.9) | 7 | PASS |
-| **All 10** | 12,200 | 12,200 | +0.0% | 165 (13.5) | 2 (0.2) | 310 (25.4) | 149 (12.2) | 115 | |
+| Chapter Ten: When the Culture Says All Texts Are Suspect | 884 | 884 | +0.0% | 12 (13.6) | 0 (0.0) | 25 (28.3) | 14 (15.8) | 8 | PASS |
+| Chapter Eleven: Reading the Bible Right — Genre, Hermeneutics, and Honest Interpretation | 1,116 | 1,116 | +0.0% | 12 (10.8) | 0 (0.0) | 25 (22.4) | 14 (12.5) | 9 | PASS |
+| Chapter Twelve: The Internal Testimony — What Scripture Claims About Itself | 942 | 942 | +0.0% | 13 (13.8) | 0 (0.0) | 25 (26.5) | 12 (12.7) | 10 | PASS |
+| **All 13** | 15,142 | 15,142 | +0.0% | 202 (13.3) | 2 (0.1) | 385 (25.4) | 189 (12.5) | 142 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -254,3 +257,69 @@ Five pairs, taken at even intervals through the chapter:
    After: The Statement explicitly acknowledges "the use of round numbers, free citations, topical arrangements of material, variant selections of material" as fully compatible with inerrancy, and it treats phenomenological language (speaking of the "sun rising," describing events from the observer's perspective) as not implying a false cosmology.
 5. Before: if the text can be errant in historical detail, we need a principle for determining where it errs, and that principle, inevitably, becomes our own judgment — our contemporary knowledge, our current moral sensibilities, our cultural framework.
    After: if the text can be errant in historical detail, we need a principle for determining where it errs, and that principle, inevitably, becomes our own judgment: our contemporary knowledge, our current moral sensibilities, our cultural framework.
+
+
+## Chapter Ten: When the Culture Says All Texts Are Suspect (`sec11.xhtml`)
+
+Words 884 to 884. Em-dashes in his prose 12 to 0 (13.6 to 0.0 per 1,000 words). Tells 25 to 14 (28.3 to 15.8 per 1,000). Mean sentence 20.3 words to 20.3; sentences of eight words or fewer 25.6% to 25.6%; of five or fewer 18.6% to 18.6%. 8 edits; paragraphs 12 to 12. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 12 to 0, isnt_its 2 to 2, triplet 4 to 4, intens 4 to 4, q_answered 1 to 1, colon_reveal 1 to 2, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 3 quoted strings, 0 Scripture references, 0 years, 2 numbers in digits, 8 number words, proper names by count, and 12 hedge words (after: 12) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: It is more like a humidity — the climate in which all other ideas form.
+   After: It is more like a humidity: the climate in which all other ideas form.
+2. Before: The postmodern critic occupies a social position as surely as the bishop defending orthodoxy; their critique of power presupposes a standpoint from which they can see the power dynamics — but where does that standpoint come from?
+   After: The postmodern critic occupies a social position as surely as the bishop defending orthodoxy; their critique of power presupposes a standpoint from which they can see the power dynamics, but where does that standpoint come from?
+3. Before: Taylor argues that the secular age — the age in which religious belief has become optional rather than default — is not the result of evidence establishing that religious claims are false; it is the result of a long series of philosophical moves that created what Taylor calls "the immanent frame":
+   After: Taylor argues that the secular age, the age in which religious belief has become optional rather than default, is not the result of evidence establishing that religious claims are false; it is the result of a long series of philosophical moves that created what Taylor calls "the immanent frame":
+4. Before: But the immanent frame is itself a construction — a particular way of seeing that became so habitual it stopped seeming like a choice.
+   After: But the immanent frame is itself a construction, a particular way of seeing that became so habitual it stopped seeming like a choice.
+5. Before: A genuine historicism — one that follows the evidence wherever it leads rather than excluding categories of evidence on philosophical grounds — must be open to the possibility that unusual events occurred, and then ask what the evidence says about whether they did.
+   After: A genuine historicism, one that follows the evidence wherever it leads rather than excluding categories of evidence on philosophical grounds, must be open to the possibility that unusual events occurred, and then ask what the evidence says about whether they did.
+
+
+## Chapter Eleven: Reading the Bible Right — Genre, Hermeneutics, and Honest Interpretation (`sec12.xhtml`)
+
+Words 1,116 to 1,116. Em-dashes in his prose 12 to 0 (10.8 to 0.0 per 1,000 words). Tells 25 to 14 (22.4 to 12.5 per 1,000). Mean sentence 20.7 words to 20.7; sentences of eight words or fewer 11.1% to 11.1%; of five or fewer 1.9% to 1.9%. 9 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 12 to 0, not_but 1 to 1, isnt_its 2 to 2, triplet 6 to 7, stock 1 to 1, intens 2 to 2, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 16 Scripture references, 0 years, 8 numbers in digits, 12 number words, proper names by count, and 14 hedge words (after: 14) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The trouble begins when modern Western readers bring a single posture to the entire Bible and apply it uniformly — either the novel posture, which assumes the text is imaginative rather than factual, or the newspaper posture, which assumes modern precision throughout.
+   After: The trouble begins when modern Western readers bring a single posture to the entire Bible and apply it uniformly: either the novel posture, which assumes the text is imaginative rather than factual, or the newspaper posture, which assumes modern precision throughout.
+2. Before: When Psalm 98 calls on the rivers to clap their hands, nobody — not the psalmist, not the original audience, not the responsible modern reader — believes rivers have hands.
+   After: When Psalm 98 calls on the rivers to clap their hands, nobody, not the psalmist, not the original audience, not the responsible modern reader, believes rivers have hands.
+3. Before: The imagery is meant to communicate reality — but through symbol, not through literal report.
+   After: The imagery is meant to communicate reality, but through symbol, not through literal report.
+4. Before: Its closest parallels in the ancient Near East are texts like Enuma Elish, the Babylonian creation account — and yet Genesis 1 is not simply another ancient Near Eastern cosmogony.
+   After: Its closest parallels in the ancient Near East are texts like Enuma Elish, the Babylonian creation account, and yet Genesis 1 is not simply another ancient Near Eastern cosmogony.
+5. Before: Not entirely — there are genuine exegetical and theological questions on all sides.
+   After: Not entirely; there are genuine exegetical and theological questions on all sides.
+
+
+## Chapter Twelve: The Internal Testimony — What Scripture Claims About Itself (`sec13.xhtml`)
+
+Words 942 to 942. Em-dashes in his prose 13 to 0 (13.8 to 0.0 per 1,000 words). Tells 25 to 12 (26.5 to 12.7 per 1,000). Mean sentence 21.3 words to 22.3; sentences of eight words or fewer 15.9% to 9.5%; of five or fewer 9.1% to 2.4%. 10 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 2 to 2; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 13 to 0, not_but 2 to 2, isnt_its 1 to 1, triplet 3 to 3, intens 2 to 2, short_close 2 to 2, one_line_para 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 4 quoted strings, 8 Scripture references, 0 years, 6 numbers in digits, 5 number words, proper names by count, and 13 hedge words (after: 13) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: We attend to it because understanding what the text claims about itself is prerequisite to evaluating the claim — and you cannot assess whether a document's self-description is accurate if you have not first determined what the self-description is.
+   After: We attend to it because understanding what the text claims about itself is prerequisite to evaluating the claim, and you cannot assess whether a document's self-description is accurate if you have not first determined what the self-description is.
+2. Before: The claim that Scripture is "God-breathed" places the origin of the text in the same category as that divine creative activity — not a human invention that God later endorsed, but a text whose origin is in God's own utterance.
+   After: The claim that Scripture is "God-breathed" places the origin of the text in the same category as that divine creative activity, not a human invention that God later endorsed, but a text whose origin is in God's own utterance.
+3. Before: The theological category that holds both divine authorship and human diversity together is concursive inspiration — the idea that God superintended the human process of writing in such a way that what was produced was precisely what God intended, without overriding the writers' personalities, experiences, or literary gifts.
+   After: The theological category that holds both divine authorship and human diversity together is concursive inspiration, the idea that God superintended the human process of writing in such a way that what was produced was precisely what God intended, without overriding the writers' personalities, experiences, or literary gifts.
+4. Before: If Jesus rose from the dead — if the resurrection testimony is early, multiple, and circumstantially specific in the way we have established — then his claims deserve a level of epistemic confidence different from the claims of anyone who has not demonstrated that kind of authority.
+   After: If Jesus rose from the dead, if the resurrection testimony is early, multiple, and circumstantially specific in the way we have established, then his claims deserve a level of epistemic confidence different from the claims of anyone who has not demonstrated that kind of authority.
+5. Before: But now that we have established the credibility of the text by external means — manuscript evidence, early dating, archaeological confirmation — the internal testimony carries its full weight.
+   After: But now that we have established the credibility of the text by external means (manuscript evidence, early dating, archaeological confirmation), the internal testimony carries its full weight.
