@@ -23,7 +23,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Chapter | Words before | after | change | Em-dashes before (per 1,000) | after | Tells before (per 1,000) | after | Edits | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|
 | Introduction: The Case for a Reasonable Faith | 1,692 | 1,692 | +0.0% | 25 (14.8) | 2 (1.2) | 53 (31.3) | 31 (18.3) | 18 | PASS |
-| **All 1** | 1,692 | 1,692 | +0.0% | 25 (14.8) | 2 (1.2) | 53 (31.3) | 31 (18.3) | 18 | |
+| Chapter 1: Why Is There Something Rather Than Nothing? | 4,582 | 4,582 | +0.0% | 44 (9.6) | 4 (0.9) | 116 (25.3) | 79 (17.2) | 37 | PASS |
+| **All 2** | 6,274 | 6,274 | +0.0% | 69 (11.0) | 6 (1.0) | 169 (26.9) | 110 (17.5) | 55 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -47,3 +48,27 @@ Five pairs:
    After: To the doubting Christian reading from inside the house rather than outside it, where the sermons stopped landing and the prayers felt like talking to the ceiling, one distinction is worth more than any reassurance:
 
 Left alone, and why. "Christianity has answers. Atheism has attitudes." is the pull quote and stays in both places. "Not a feeling. Not a tradition. A case." is the verdict the second reader is promised. "Doubt is not the opposite of faith. Certainty is." and the last three sentences are verdicts. The promise to the skeptic and the list of what the reader is owed took punctuation only. Two dashes stay, each the turn of its sentence ("alive again — and on the strength of that testimony"; "buried those claims forever — and it did not").
+
+
+## Chapter 1: Why Is There Something Rather Than Nothing? (`sec02.xhtml`)
+
+Words 4,582 to 4,582. Em-dashes in his prose 44 to 4 (9.6 to 0.9 per 1,000 words). Tells 116 to 79 (25.3 to 17.2 per 1,000). Mean sentence 21.1 words to 21.0; sentences of eight words or fewer 32.7% to 32.6%; of five or fewer 20.1% to 19.1%. 37 edits; paragraphs 58 to 58. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 2 to 2.
+
+By kind (before to after): emdash 44 to 4, not_but 13 to 13, not_just 1 to 1, NotX.Y 2 to 2, isnt_its 2 to 2, triplet 18 to 20, frag3 2 to 2, anaphora 3 to 3, stock 5 to 5, intens 3 to 3, q_answered 1 to 1, colon_reveal 1 to 2, short_close 20 to 20, one_line_para 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 6 quoted strings, 4 Scripture references, 4 years, 9 numbers in digits, 98 number words, proper names by count, and 53 hedge words (after: 53) compared.
+
+Five pairs:
+
+1. Before: It is a mind. Personal, intelligent, powerful, moral.
+   After: It is a mind: personal, intelligent, powerful, moral.
+2. Before: The constants in the equations — the strength of gravity, the mass of the electron, the cosmological constant, the ratio of the electromagnetic force to gravity, and on it goes — could, as far as anyone knows, have taken any value at all; and shift them even slightly and life as we know it would be not merely difficult but impossible.
+   After: The constants in the equations (the strength of gravity, the mass of the electron, the cosmological constant, the ratio of the electromagnetic force to gravity, and on it goes) could, as far as anyone knows, have taken any value at all; and shift them even slightly and life as we know it would be not merely difficult but impossible.
+3. Before: A man does not call a line crooked unless he carries some idea of a straight one, and complaining about injustice requires a standard of justice — so where did that standard originate?
+   After: A man does not call a line crooked unless he carries some idea of a straight one, and complaining about injustice requires a standard of justice. So where did that standard originate?
+4. Before: Every atheistic regime — Stalin, Mao, Pol Pot — produced body counts that make the Spanish Inquisition look like a committee meeting.
+   After: Every atheistic regime (Stalin, Mao, Pol Pot) produced body counts that make the Spanish Inquisition look like a committee meeting.
+5. Before: And the thing they converge upon is not a force — a force does not begin to act in time, a force does not choose to design, a force is not a lawgiver.
+   After: And the thing they converge upon is not a force: a force does not begin to act in time, a force does not choose to design, a force is not a lawgiver.
+
+Left alone, and why. Every scientist's name, year and figure is as it was (the fact diff holds 1927, 1929, 1965, 2003 and the powers of ten by count). The skeptic's objections are in his words: the quantum objection, the multiverse ("The honest objection is the multiverse"), the young Lewis's argument from injustice ("The world is cruel. Children die. Evil flourishes."), and "Blind faith. A leap in the dark." Each took a comma for a dash at most. "It has been dodged. It has been reframed. It has not been answered." is his claim about the Kalam and stays as three sentences. "Every dial. At once. That is fine-tuning.", "He was reading his equations." and "It is a witness to a Lawgiver." are verdicts; the passage the pull quote condenses was not touched. Four dashes stay.
