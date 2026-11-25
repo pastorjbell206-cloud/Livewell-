@@ -18838,3 +18838,19 @@ Cut in chapter 7: the deep note's line from Joshua's name to Jesus' name beyond 
 | The hard note: baal as owner, lord, husband and the god's title; a title for the LORD in Saul's day, or Canaanite influence; the word tainted later; bosheth in Samuel; authors or copyists debated; Chronicles keeping the older forms | 1-40 `hard` | 1-chronicles/8.json `hard`, `cultural` (Hosea 2:16-17) | Repository; the views in their holders' terms |
 
 Cut in chapter 8: the deep note's reading of David's kindness to Mephibosheth as a pattern of the gospel, which it says the New Testament does not draw. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 9 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1; 9:2; Judah, Benjamin, Ephraim and Manasseh in Jerusalem (9:3-9); the priests and 9:11 (its phrase); the Levites (9:14-16) | 1-16 | 1-chronicles/9.json `summary`, `outline`; BSB | Repository; BSB text |
+| The line under the genealogies; the returned community; ma'al and emunah paired (9:22, 26); northern tribes in Jerusalem; the first returnees after 539 or 538 BC; netinim (Ezra 2:43-58) | 1-16 | 1-chronicles/9.json `story`, `historical`, `cultural`, `literary`, `words` (maal, emunah, netinim) | Repository |
+| Nehemiah 11:1 (its first part) | 1-16 | 1-chronicles/9.json `historical` (Nehemiah 11); BSB | Repository; BSB text |
+| The hard note: the shared names; Uthai and Athaiah; Azariah and Seraiah; 956 and 928; Ephraim and Manasseh only here; a common record, different moments, copying; the main point agreed | 1-16 `hard` | 1-chronicles/9.json `hard` | Repository; the views in their holders' terms |
+| The gatekeepers (9:17-21); 9:22 (two quotations); the four sides (9:24); seven-day turns (9:25); the treasuries and 9:27; the vessels, supplies and bread (9:28-32); 9:33 (its last clause); Saul's family repeated (9:35-44) | 17-44 | 1-chronicles/9.json `summary`, `outline`; BSB | Repository; BSB text |
+| The temple as treasury, storehouse and precinct; gatekeepers responsible for holiness and safety; Phinehas (Numbers 25:7-13); David and Samuel; heirs of an old order; the Sabbath bread (Leviticus 24:5-9) and the twelve tribes; rotation and farming; musicians day and night; the slowed pace; the hinge to chapter 10 | 17-44 | 1-chronicles/9.json `historical`, `cultural`, `literary`, `words` (shoer) | Repository |
+| Leviticus 24:8; Psalm 84:10 (its second sentence) | 17-44 | 1-chronicles/9.json `cultural` (Leviticus 24:5-9); BSB | Repository; BSB text |
+
+Cut in chapter 9: the deep note's lines to Jesus as the door, the bread of life and the temple of his body, which it calls thematic. A quotation of 9:11 was first given in the words of 2 Chronicles 31; the cited check caught it before it reached the repository. No care line is needed in this chapter.
