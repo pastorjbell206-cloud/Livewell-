@@ -48,7 +48,10 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Twenty-One: The Septuagint, the Apocrypha, and the Boundaries of the Canon | 864 | 864 | +0.0% | 13 (15.0) | 0 (0.0) | 19 (22.0) | 7 (8.1) | 9 | PASS |
 | Chapter Twenty-Two: The Bible and Science — Where the Conflict Is Real and Where It Isn't | 885 | 885 | +0.0% | 14 (15.8) | 0 (0.0) | 23 (26.0) | 9 (10.2) | 8 | PASS |
 | Chapter Twenty-Three: Objections Answered — The Most Persistent Challenges to Biblical Reliability | 1,270 | 1,270 | +0.0% | 14 (11.0) | 0 (0.0) | 26 (20.5) | 13 (10.2) | 9 | PASS |
-| **All 24** | 26,773 | 26,773 | +0.0% | 347 (13.0) | 2 (0.1) | 689 (25.7) | 354 (13.2) | 243 | |
+| Chapter Twenty-Four: Practicing the Trust — Scripture as Daily Bread | 1,008 | 1,008 | +0.0% | 19 (18.8) | 0 (0.0) | 39 (38.7) | 20 (19.8) | 11 | PASS |
+| Chapter Twenty-Five: A Final Word — To the Skeptic Who Made It This Far | 673 | 673 | +0.0% | 5 (7.4) | 0 (0.0) | 18 (26.7) | 13 (19.3) | 4 | PASS |
+| Chapter Twenty-Six: The Bible's Self-Understanding Through History — From Desert to Diaspora | 1,043 | 1,043 | +0.0% | 15 (14.4) | 0 (0.0) | 32 (30.7) | 17 (16.3) | 9 | PASS |
+| **All 27** | 29,497 | 29,497 | +0.0% | 386 (13.1) | 2 (0.1) | 778 (26.4) | 404 (13.7) | 267 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -574,3 +577,67 @@ Five pairs, taken at even intervals through the chapter:
    After: This raises a real issue: the Bible's relationship to slavery is complex, and parts of the Old Testament and even the New Testament have been read as permitting or regulating rather than condemning the institution.
 5. Before: The canon as a whole presents a God whose fundamental character is love — who pursues rebellious creation with extraordinary patience, who is "slow to anger and abounding in steadfast love," who sends his own Son to die for the people who reject him.
    After: The canon as a whole presents a God whose fundamental character is love, who pursues rebellious creation with extraordinary patience, who is "slow to anger and abounding in steadfast love," who sends his own Son to die for the people who reject him.
+
+
+## Chapter Twenty-Four: Practicing the Trust — Scripture as Daily Bread (`sec25.xhtml`)
+
+Words 1,008 to 1,008. Em-dashes in his prose 19 to 0 (18.8 to 0.0 per 1,000 words). Tells 39 to 20 (38.7 to 19.8 per 1,000). Mean sentence 21.4 words to 21.4; sentences of eight words or fewer 27.7% to 27.7%; of five or fewer 19.1% to 19.1%. 11 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 2 to 2.
+
+By kind (before to after): emdash 19 to 0, not_but 5 to 5, not_just 1 to 1, NotX.Y 2 to 2, isnt_its 1 to 1, triplet 3 to 3, frag3 2 to 2, intens 2 to 2, short_close 4 to 4.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 3 Scripture references, 0 years, 1 numbers in digits, 14 number words, proper names by count, and 6 hedge words (after: 6) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The manuscript evidence, the archaeological confirmation, the canon history, the early dating, the eyewitness testimony, the fulfilled prophecy, the resurrection case — all of it is prologue; the event it points toward is the event of a person sitting down with this text, reading it, and allowing it to do what it does.
+   After: The manuscript evidence, the archaeological confirmation, the canon history, the early dating, the eyewitness testimony, the fulfilled prophecy, the resurrection case: all of it is prologue; the event it points toward is the event of a person sitting down with this text, reading it, and allowing it to do what it does.
+2. Before: The practice of reading Scripture — what the tradition calls lectio divina, what the Reformers called reading Scripture meditatively, what contemporary Christianity calls quiet time or devotional reading — is not a technique.
+   After: The practice of reading Scripture (what the tradition calls lectio divina, what the Reformers called reading Scripture meditatively, what contemporary Christianity calls quiet time or devotional reading) is not a technique.
+3. Before: The reading of a child receiving a letter from a parent — not passive, since children ask questions, push back, and admit when they do not understand, but oriented toward trust, shaped by the prior conviction that what comes from this source is trustworthy, that the difficulty is not evidence of error but invitation to deeper understanding.
+   After: The reading of a child receiving a letter from a parent: not passive, since children ask questions, push back, and admit when they do not understand, but oriented toward trust, shaped by the prior conviction that what comes from this source is trustworthy, that the difficulty is not evidence of error but invitation to deeper understanding.
+4. Before: The privatization of Scripture reading — the assumption that the individual alone with the text is the normative mode — is a relatively recent development, and it has produced its share of distortions.
+   After: The privatization of Scripture reading (the assumption that the individual alone with the text is the normative mode) is a relatively recent development, and it has produced its share of distortions.
+5. Before: And discover — as people in every century, in every culture, in every language have discovered — that the ground holds.
+   After: And discover, as people in every century, in every culture, in every language have discovered, that the ground holds.
+
+
+## Chapter Twenty-Five: A Final Word — To the Skeptic Who Made It This Far (`sec26.xhtml`)
+
+Words 673 to 673. Em-dashes in his prose 5 to 0 (7.4 to 0.0 per 1,000 words). Tells 18 to 13 (26.7 to 19.3 per 1,000). Mean sentence 19.8 words to 19.8; sentences of eight words or fewer 38.2% to 38.2%; of five or fewer 29.4% to 29.4%. 4 edits; paragraphs 10 to 10. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 2 to 2.
+
+By kind (before to after): emdash 5 to 0, not_but 2 to 2, NotX.Y 1 to 1, triplet 1 to 1, frag3 2 to 2, anaphora 3 to 3, stock 1 to 1, intens 1 to 1, colon_reveal 1 to 1, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 4 Scripture references, 0 years, 2 numbers in digits, 6 number words, proper names by count, and 5 hedge words (after: 5) compared.
+
+4 pairs (all there are), taken at even intervals through the chapter:
+
+1. Before: Read the Gospel of Mark — it is the shortest of the four Gospels, perhaps two hours of reading — with a single question in mind:
+   After: Read the Gospel of Mark (it is the shortest of the four Gospels, perhaps two hours of reading) with a single question in mind:
+2. Before: Notice the specific details — the location of the events, the names of the people, the frank portrayal of the disciples' failures, the way Jesus's emotions are described.
+   After: Notice the specific details: the location of the events, the names of the people, the frank portrayal of the disciples' failures, the way Jesus's emotions are described.
+3. Before: On the other side is a world that has its Maker present within it — a world in which you are not an accident but a creature made in the image of God, with dignity that nothing can take and purpose that nothing can erase, a world in which the worst things that have been done, by others to you and by you to others, have been addressed, at cost, by the one with the authority to address them.
+   After: On the other side is a world that has its Maker present within it, a world in which you are not an accident but a creature made in the image of God, with dignity that nothing can take and purpose that nothing can erase, a world in which the worst things that have been done, by others to you and by you to others, have been addressed, at cost, by the one with the authority to address them.
+4. Before: The door to it is the acknowledgment that Jesus is who he claimed to be — Lord of the universe, risen from the dead, the word through whom all things were made and the bread by which they are sustained.
+   After: The door to it is the acknowledgment that Jesus is who he claimed to be: Lord of the universe, risen from the dead, the word through whom all things were made and the bread by which they are sustained.
+
+
+## Chapter Twenty-Six: The Bible's Self-Understanding Through History — From Desert to Diaspora (`sec27.xhtml`)
+
+Words 1,043 to 1,043. Em-dashes in his prose 15 to 0 (14.4 to 0.0 per 1,000 words). Tells 32 to 17 (30.7 to 16.3 per 1,000). Mean sentence 24.3 words to 24.3; sentences of eight words or fewer 11.6% to 11.6%; of five or fewer 7.0% to 7.0%. 9 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 15 to 0, not_but 4 to 4, not_just 1 to 1, triplet 6 to 6, anaphora 2 to 2, intens 2 to 2, short_close 1 to 1, one_line_para 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 10 Scripture references, 1 years, 6 numbers in digits, 5 number words, proper names by count, and 9 hedge words (after: 9) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: In Mesopotamia, the great religious texts — the creation account Enuma Elish, the Epic of Gilgamesh, the hymns to the great gods — were preserved primarily by temple scribal schools whose function was as much administrative as religious.
+   After: In Mesopotamia, the great religious texts (the creation account Enuma Elish, the Epic of Gilgamesh, the hymns to the great gods) were preserved primarily by temple scribal schools whose function was as much administrative as religious.
+2. Before: Not all of them were direct divine speech — most of the narrative texts are not — but the community understood the entire corpus as standing under divine authority in a way that demanded a fidelity no other ancient culture applied to its texts.
+   After: Not all of them were direct divine speech (most of the narrative texts are not), but the community understood the entire corpus as standing under divine authority in a way that demanded a fidelity no other ancient culture applied to its texts.
+3. Before: The Sabbath reading of Torah portions, the annual cycle through the entire Torah, the careful rules governing the preparation and handling of Torah scrolls — all of it was the lived theology of a community that believed the text was sacred.
+   After: The Sabbath reading of Torah portions, the annual cycle through the entire Torah, the careful rules governing the preparation and handling of Torah scrolls: all of it was the lived theology of a community that believed the text was sacred.
+4. Before: Jesus's frequent citations of the Old Testament, his engagement with the precise wording of specific texts, his statement that not the smallest letter would pass from the Law until all was accomplished — all of it signals a community for whom the exact words mattered profoundly.
+   After: Jesus's frequent citations of the Old Testament, his engagement with the precise wording of specific texts, his statement that not the smallest letter would pass from the Law until all was accomplished: all of it signals a community for whom the exact words mattered profoundly.
+5. Before: The scrolls show that across the entire span from the Second Temple through the medieval period — more than a thousand years — the essential content of the text remained stable, not because the scribes were infallible but because the community had organized its whole institutional life around the faithful transmission of the words of God. The history of the text's transmission is, at its core, the story of communities for whom the exact words mattered — not as a fetish for letterism, not as a substitute for living faith, but because the words were the medium through which the living God addressed his people.
+   After: The scrolls show that across the entire span from the Second Temple through the medieval period (more than a thousand years), the essential content of the text remained stable, not because the scribes were infallible but because the community had organized its whole institutional life around the faithful transmission of the words of God. The history of the text's transmission is, at its core, the story of communities for whom the exact words mattered, not as a fetish for letterism, not as a substitute for living faith, but because the words were the medium through which the living God addressed his people.
