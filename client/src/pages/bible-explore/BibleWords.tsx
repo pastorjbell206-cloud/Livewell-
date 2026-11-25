@@ -20,6 +20,7 @@ import InnerHead from "@/components/art/InnerHead";
 import { LoadFailed } from "@/components/LoadFailed";
 import { chapterBookName, chapterHref } from "@/lib/bible";
 import { fetchWords, type ExploreBook, type KeyWord, type WordsData } from "@/lib/bibleExplore";
+import { strongLabel, wordHref } from "@/lib/bibleStudy";
 import { Band, Status, useLoad } from "../study-bible/shared";
 import { NotYet, TestamentChips, useStaged, type Testament } from "./shared";
 import "../study-bible/bible.css";
@@ -52,6 +53,7 @@ function Word({ w, books, id }: { w: KeyWord; books: Map<string, ExploreBook>; i
             <p className="bx-entry__meta">
               <Link href={`/study/bible/${b.slug}#key-words`}>On the {b.name} page</Link>
               {e.word && <span>as {e.word}</span>}
+              {e.strong && <Link href={wordHref(e.strong)}>Study this word ({strongLabel(e.strong)})</Link>}
               {e.refs.map((r) => (
                 <Link key={`${r.ch}:${r.v ?? ""}`} href={chapterHref(b.slug, r.ch, r.v)}>
                   {chapterBookName(b)} {r.ch}

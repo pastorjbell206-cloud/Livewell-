@@ -179,6 +179,8 @@ const BibleHardPassages = lazy(() => import("./pages/bible-explore/BibleHardPass
 const BooksAtAGlance = lazy(() => import("./pages/bible-explore/BooksAtAGlance"));
 const KeyChapters = lazy(() => import("./pages/bible-explore/KeyChapters"));
 const BibleThemes = lazy(() => import("./pages/bible-explore/BibleThemes"));
+const StudyWord = lazy(() => import("./pages/bible-explore/StudyWord"));
+const FollowVerse = lazy(() => import("./pages/bible-explore/FollowVerse"));
 // Tracks: a few numbered sessions in order, each using a page the site already has (lib/tracks.ts).
 const Tracks = lazy(() => import("./pages/tracks/Tracks"));
 const Track = lazy(() => import("./pages/tracks/Track"));
@@ -641,6 +643,10 @@ function Router() {
         <Route path="/study/books-at-a-glance" component={BooksAtAGlance} />
         <Route path="/study/key-chapters" component={KeyChapters} />
         <Route path="/study/themes" component={BibleThemes} />
+        {/* The Study Bible's own words and links (scripts/lib/bible-study.mjs). A word's own page is noindex and not in the sitemap. */}
+        <Route path="/study/word/:strong" component={StudyWord} />
+        <Route path="/study/word" component={StudyWord} />
+        <Route path="/study/cross-references" component={FollowVerse} />
         <Route path="/tracks" component={Tracks} />
         <Route path="/tracks/:slug" component={Track} />
         {/* A track's leader's guide and the whole track to print, before a session number. */}

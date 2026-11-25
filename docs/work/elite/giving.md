@@ -20,6 +20,17 @@ What is still outstanding is only the payment account: the production Stripe
 key could not be confirmed from the build machine, so the page stays held
 until it is set.
 
+## Opened 2026-11-25
+
+James said the Stripe key is set in Vercel and asked for the downloads to
+suggest a gift. `open` is now `true`. He also said where the money goes:
+gifts still come to him personally, and everything beyond what LiveWell costs
+to run goes to planting churches around the world through the Ends Initiative
+and Gather Church. `recipientLine` says so; the tax line is unchanged. The key
+could not be read from the build machine, so the first live gift is still to
+be checked by hand. The sections below describe the held state as it was
+built.
+
 ## What was built
 
 | Part | Where |

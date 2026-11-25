@@ -363,7 +363,7 @@ Not warm in the coffee-shop sense. Not dark in the luxury-brand sense. The feeli
 ## Strategic Reminders
 
 - The Pastors Connection Network stays outside this site (James, 2026-11-17): no link to it, no ask to support it, no redirect that leaves for it. Pastors are still readers here (`/help/pastors`).
-- No membership fee (James, 2026-11-17). No one is charged or blocked: every ebook, the three shelf books included, is a plain download listed in `client/src/data/ebooks.ts` and shown on `/downloads`. The ebooks and the printables are how the work is supported (James, 2026-11-22): each download carries a suggested gift the reader can change or skip ("Download without giving"), on everything downloadable except the Find Help printables and the care plans. The amounts are one data file, `shared/downloads.ts`; it is held behind the giving switch, so until that opens every download is the plain free link it was. Say "Suggested gift", never "price"; never call a download free beside the ask. The seven whose files name the Pastors Connection Network wait in `content/held-downloads/` for his corrected files. The sixteen older titles he took down to rewrite in his own hand stay there too, off the site and unlisted (James, 2026-11-18: "Keep them off for now").
+- No membership fee (James, 2026-11-17). No one is charged or blocked: every ebook, the three shelf books included, is a plain download listed in `client/src/data/ebooks.ts` and shown on `/downloads`. The ebooks and the printables are how the work is supported (James, 2026-11-22): each download carries a suggested gift the reader can change or skip ("Download without giving"), on everything downloadable except the Find Help printables and the care plans. The amounts are one data file, `shared/downloads.ts`; it sits behind the giving switch, which James opened on 2026-11-25; with the switch off every download is the plain free link it was. Say "Suggested gift", never "price"; never call a download free beside the ask. The seven whose files name the Pastors Connection Network wait in `content/held-downloads/` for his corrected files. The sixteen older titles he took down to rewrite in his own hand stay there too, off the site and unlisted (James, 2026-11-18: "Keep them off for now").
 - The homepage is strong; inner pages need the same design system applied.
 - Facebook following (facebook.com/james.bell.609252) is the existing audience. Substack is the newsletter channel, and is called Substack by name. Both are linked from `/connect`, never imported or embedded; the one list of outside channels is `client/src/lib/channels.ts`.
 - Contact forms save to `contact_messages` for James to read; nothing is emailed until a mail sender exists.
@@ -489,7 +489,7 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (61
+On every PR, five blocking steps: `pnpm check` → the content-gates step (63
 commands, the workflow file is the list; among them: 25 validators: scripture, design, life, studyguides, pathways,
 theology, politics, no-emdash, essays, content-integrity, skeptic-track,
 answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
@@ -497,7 +497,8 @@ workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
 bible-notes; the history-source verifier `verify-sources`; and the `--check`
 drift checks for the family year map, family index, topics index, search
 index, passage index, the seven cross-book Bible indexes (timeline, atlas,
-key words, hard passages, books at a glance, key chapters, themes), Bible text, Bible word search, the 2027 story plan,
+key words, hard passages, books at a glance, key chapters, themes), the
+Study Bible's word index and cross-reference index, Bible text, Bible word search, the 2027 story plan,
 the family film map, the memory verses and the Bible Explorer films'
 recorded voice) → `pnpm test` →
 `pnpm build` → the canonical audit (sitemap +
@@ -724,10 +725,10 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   nav), /help, and every tool, all still registered in /tools.
   `client/src/lib/site-structure.test.ts` holds this shape. `taxonomy.ts` and
   `pillar-assignments.ts` still file content but no longer drive navigation.
-  The Support page is built and held (see "Support this work" below).
+  The Support page is built and open (see "Support this work" below).
 - **Payments**: no membership (James, 2026-11-17). /membership redirects to
   /subscribe; the Stripe membership procedures and settings remain in the
-  code, unused by any page. No giving link anywhere while /support is held.
+  code, unused by any page. Giving opened on 2026-11-25 (see "Support this work" below).
   **No ebook is sold (James, 2026-11-18; the seven naming the network "Hold
   them back")**: a book's old thank-you address 301s to /downloads, the
   Stripe ebook code stays unused (checkout refuses), and a past buyer of a
@@ -747,7 +748,11 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   plans and the worksheets for grief and abuse never ask. Held behind the
   same switch and key as `/support`: while either is off, nothing mounts.
   `docs/work/elite/bookshelf.md` has the ladder, the wording and the steps.
-- **Support this work, built and held (James, 2026-11-21: "let's do the
+- **Support this work, opened 2026-11-25 (James: the Stripe key is set;
+  gifts still come to him personally, and all beyond what LiveWell costs to
+  run goes to planting churches around the world through the Ends Initiative
+  and Gather Church; that sentence is `recipientLine` in `giving.json` and
+  is the only place the two names are written). Built 2026-11-21 (James: "let's do the
   Bible Project way"; "gifts go to keep the work going"; "gifts go to me
   personally")**: `/support` takes a one-time or monthly gift through Stripe
   Checkout (`giving.status`, `giving.createCheckout` in both runtimes; one
@@ -945,6 +950,19 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   Themes of the Bible (/study/themes, joined only where books give the same
   title; no taxonomy). Seven scripts in all, each a gate.
   `docs/work/elite/interactive.md` has the rules and the run.
+- **Study a Bible word, and follow a verse (2026-11-25)**: /study/word
+  (finder) and /study/word/<strong> (a word: its dictionary entry through
+  `safeDefinition`, a bar for each book, its verses in the BSB) read
+  `client/public/bible/words/`; /study/cross-references reads
+  `client/public/bible/xref/`. Both are written from the Study Bible's own
+  chapter files and lexicon by `scripts/build-bible-word-index.mjs` and
+  `scripts/build-bible-xref-index.mjs` (rules in `scripts/lib/bible-study.mjs`;
+  each `--check` is a content gate), in small files, so rerun both after
+  `build-bible.mjs`. No commentary is written on either page. A word's own
+  page is noindex and not in the sitemap (some 17,000 of them); the finder
+  is. A key word links to its word page only where its sentence names one
+  dictionary word unambiguously (`strongMatcher`); never by guess. The
+  verses offered to start from are the most linked-to, by count.
 - **Lighthouse is pinned** to 13.6.0 in `scripts/lighthouse-median.mjs`, and
   the `quality` job runs on Node 22 (Lighthouse 13 needs it), so CI and a
   local run measure alike.
