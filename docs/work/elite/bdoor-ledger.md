@@ -19735,3 +19735,19 @@ Cut in chapter 21: the deep note's typological lines to John 10:11 and John 2:19
 | Deuteronomy 4:29 | 17-19 | BSB | BSB text |
 
 Cut in chapter 22: the deep note's lines to 1 Peter 2:5, Ephesians 2:21-22, Isaiah 9:6, Hebrews 4 and John 17:4, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 23 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 23:1; the gathering and the count (23:2-5); the three lines and family heads (23:6-23); 23:13 (its clause); 23:14 | 1-23 | BSB | BSB text |
+| Chapters 23 to 27 and their subjects; the Levites and Aaron's line; the three clans in Numbers 3-4; Moses' sons without privilege; Eleazar's daughters and Zelophehad (Numbers 27; 36) | 1-23 | 1-chronicles/23.json `story`, `historical`, `cultural` | Repository |
+| 1 Kings 1: the aged David, Adonijah's bid, Solomon anointed; chapters 28-29 as the public handing over | 1-23 | 1-kings/plain/1.json; 1-chronicles/23.json `story` | Repository |
+| 1 Kings 1:1 | 1-23 | BSB | BSB text |
+| The count from twenty (23:24); 23:25; 23:26; the duties (23:28-29); 23:30; the feasts (23:31) | 24-32 | BSB | BSB text |
+| Nuach; shakan, mishkan and Shekinah; the carriers reassigned; the age of service in Numbers 4:3, Numbers 8:24, 23:3, 23:24, 23:27 and Ezra 3:8, and the two readings; avodah; the showbread | 24-32 | 1-chronicles/23.json `historical`, `cultural`, `literary`, `words` (avodah, nuach, shakan) | Repository |
+| Numbers 4:3 (its phrase); Ezra 3:8 (its last sentence) | 24-32 | BSB | BSB text |
+
+Cut in chapter 23: the deep note's lines to Colossians 2:9, John 1:14, 1 Peter 2:5 and Hebrews 13:15, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
