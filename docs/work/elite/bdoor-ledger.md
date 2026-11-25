@@ -18804,3 +18804,18 @@ Cut in chapter 22: the deep note's lines to Christ (Luke 23:34 and Hebrews 7:25 
 | Psalm 88:14 | 13-17 | job/23.json `hard` (Psalm 88); BSB | Repository; BSB text |
 
 Cut in chapter 23: the deep note's lines to Christ (John 1:18, Hebrews 4:14-16 and Mark 15:34; the note calls them thematic).
+
+## The plain notes on Job 24 (2026-11-25)
+
+`client/public/bible/notes/job/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| From his own longing to the social order; the answer to 22:6-9; the agrarian world, land and credit, debt and servitude, the law and the prophets; boundary stones; gleaning as the only means of life; laborers hungry; tiphlah echoing 1:22 | 1-12 | job/24.json `story`, `historical`, `cultural`, `words` (tiphlah, ani, gazal) | Repository |
+| Deuteronomy 19:14 | 1-12 | job/24.json `historical`; BSB | Repository; BSB text |
+| The city at night; mud-brick walls dug through; marad; sin social and personal | 13-17 | job/24.json `cultural`, `words` (marad), `doctrines` (sin) | Repository |
+| Exodus 22:2 | 13-17 | job/24.json `cultural` (Exodus 22:2); exodus notes (the thief breaking in); BSB | Repository; BSB text |
+| The debated section; verse 23; verse 25 as challenge | 18-25 | job/24.json `literary`, `outline` | Repository |
+| The hard note: no agreement; the four readings (a friend's words, the third round short; a quotation; wishes; death as common to all); no side; the question pressed | 18-25 | job/24.json `hard`, `literary` | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 24: the deep note's lines to Christ (Luke 4:18-19 and Acts 17:31 as the answer to verse 1; the note calls the link thematic).
