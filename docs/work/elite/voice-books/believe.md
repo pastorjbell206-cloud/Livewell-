@@ -25,7 +25,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Introduction: The Case for a Reasonable Faith | 1,692 | 1,692 | +0.0% | 25 (14.8) | 2 (1.2) | 53 (31.3) | 31 (18.3) | 18 | PASS |
 | Chapter 1: Why Is There Something Rather Than Nothing? | 4,582 | 4,582 | +0.0% | 44 (9.6) | 4 (0.9) | 116 (25.3) | 79 (17.2) | 37 | PASS |
 | Chapter 2: Can We Actually Trust the Bible? | 3,616 | 3,616 | +0.0% | 58 (16.0) | 2 (0.6) | 107 (29.6) | 56 (15.5) | 41 | PASS |
-| **All 3** | 9,890 | 9,890 | +0.0% | 127 (12.8) | 8 (0.8) | 276 (27.9) | 166 (16.8) | 96 | |
+| Chapter 3: Who Did Jesus Think He Was? | 3,329 | 3,329 | +0.0% | 55 (16.5) | 3 (0.9) | 104 (31.2) | 55 (16.5) | 40 | PASS |
+| **All 4** | 13,219 | 13,219 | +0.0% | 182 (13.8) | 11 (0.8) | 380 (28.7) | 221 (16.7) | 136 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -97,3 +98,27 @@ Five pairs:
    After: Four tests: transmission, archaeology, prophecy, honesty.
 
 Left alone, and why. The skeptic's bundle of objections, the telephone-game objection, the late-dating move and "The honest objection is that the specific events of Jesus's life have no independent record outside Christian documents" are in his words, with a bracket or comma for a dash. What Ehrman says and what he concedes took punctuation only, so that he is neither strengthened nor weakened. Every manuscript count, date and scholar's name is unchanged (the fact diff holds 42 references and every number word). "It is a fine story. It is also false.", "Jesus did not fulfill eight. He fulfilled more than three hundred." and "Not after Jesus. A century and a half before him." are verdicts. One stack was joined ("Four tests. Transmission, archaeology, prophecy, honesty."). Two dashes stay.
+
+
+## Chapter 3: Who Did Jesus Think He Was? (`sec04.xhtml`)
+
+Words 3,329 to 3,329. Em-dashes in his prose 55 to 3 (16.5 to 0.9 per 1,000 words). Tells 104 to 55 (31.2 to 16.5 per 1,000). Mean sentence 24.3 words to 24.3; sentences of eight words or fewer 27.0% to 27.0%; of five or fewer 8.0% to 8.0%. 40 edits; paragraphs 43 to 43. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 55 to 3, not_but 11 to 11, not_just 1 to 1, NotX.Y 2 to 2, isnt_its 5 to 5, triplet 15 to 16, anaphora 3 to 3, stock 1 to 1, intens 2 to 2, colon_reveal 3 to 5, short_close 6 to 6.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 17 Scripture references, 0 years, 0 numbers in digits, 66 number words, proper names by count, and 38 hedge words (after: 38) compared.
+
+Five pairs:
+
+1. Before: The phrase — ego eimi — is the Greek Old Testament's rendering of the name God gave Moses at the burning bush, I am who I am, so that Jesus does not claim merely to predate Abraham but takes the unspeakable name of God onto his own lips.
+   After: The phrase, ego eimi, is the Greek Old Testament's rendering of the name God gave Moses at the burning bush, I am who I am, so that Jesus does not claim merely to predate Abraham but takes the unspeakable name of God onto his own lips.
+2. Before: There is a habit in popular preaching of dividing the names of Jesus into halves — Son of God for his deity, Son of Man for his humanity — and it is a tidy distinction that happens to be almost exactly backward, because the title Jesus used of himself more than any other was not a confession of his frailty but the boldest claim he ever made.
+   After: There is a habit in popular preaching of dividing the names of Jesus into halves (Son of God for his deity, Son of Man for his humanity), and it is a tidy distinction that happens to be almost exactly backward, because the title Jesus used of himself more than any other was not a confession of his frailty but the boldest claim he ever made.
+3. Before: The radiance of the glory of God — not a reflection of it but the shining-out of the thing itself. The exact imprint of his nature — the very stamp of what God is. He upholds the universe by the word of his power — so that holding all things in being is not a feat he performs but the ordinary exercise of who he is.
+   After: The radiance of the glory of God: not a reflection of it but the shining-out of the thing itself. The exact imprint of his nature: the very stamp of what God is. He upholds the universe by the word of his power, so that holding all things in being is not a feat he performs but the ordinary exercise of who he is.
+4. Before: Madness leaves fingerprints — incoherence, grandiosity cut loose from reality, a self coming apart at the edges — and the Gospels record the opposite:
+   After: Madness leaves fingerprints (incoherence, grandiosity cut loose from reality, a self coming apart at the edges), and the Gospels record the opposite:
+5. Before: The third party — the admirers who keep the teaching and discard the teacher — was never in the room.
+   After: The third party, the admirers who keep the teaching and discard the teacher, was never in the room.
+
+Left alone, and why. All 40 edits are dashes recast; no word changed. The Lewis quotation and its dashes are untouched. The liar and lunatic options and "the modern escape", legend, are each stated before they are answered, and each is word for word. The verdict lines stay as he wrote them: "They were right about what he was saying. They were wrong only about what to do with it.", "That is not the timescale of legend. It is the timescale of memory.", the four-sentence summation ("The claims are explicit. The mind behind them is sound. ...") and "He did not leave it open to them. He did not intend to.", which answers Lewis. Three dashes stay.
