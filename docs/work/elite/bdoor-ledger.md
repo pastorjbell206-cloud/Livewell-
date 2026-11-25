@@ -18345,3 +18345,22 @@ Cut in chapter 16: the deep note's contrast between Ahaz's sonship to Assyria an
 | The hard note: later Jewish use against the Samaritans; the Samaritans' own account and Mount Gerizim; both elements real; not an ethnic history; the theological concern; the harshest words at Israel and Judah; the Samaritans of Jesus' day and the New Testament; no contempt toward any people | 24-41 `hard` | 2-kings/17.json `hard` | Repository; both accounts in their holders' terms |
 
 Cut in chapter 17: the deep note's lines from the chapter to Jesus and the Samaritan woman (John 4), the parable (Luke 10) and Acts 1:8, and to the new covenant in Jesus' blood; Acts 8:5 is kept as Luke's own record of the gospel reaching Samaria. A first draft named this book's introduction as a third source for the date and used a gendered phrase; both were rewritten before they reached the repository.
+
+## The plain notes on 2 Kings 18 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Hezekiah at twenty-five, twenty-nine years; 18:3; the high places, pillars and poles; 18:4; 18:5; the LORD with him, the rebellion, Gaza (18:7-8); Samaria's fall retold (18:9-11); 18:12 | 1-12 | 2-kings/18.json `summary`; BSB | Repository; BSB text |
+| Judah facing the same empire; Ahaz's way and Hezekiah's; the highest praise since David; the fall retold as a foil; Isaiah 36 to 39; the two synchronisms (727 and 715 BC) and the ways of solving them; the guide's 716 or 715 to 687 or 686 BC; the bronze snake (Numbers 21:8-9) and its worship; Nehushtan and the dismissive label; a gift turned idol; batach | 1-12 | 2-kings/18.json `story`, `historical`, `cultural`, `words` (batach, Nehushtan), `doctrines` (idolatry); bible/guides/kings-of-israel-and-judah.json (Hezekiah) | Repository. Sources differ, and the note says so: the chapter note gives an accession near 727 or 715 and death about 686; the guide 716/715 to 687/686 |
+| Numbers 21:9; John 3:14 | 1-12 | 2-kings/18.json `cultural`, `christ` (John 3:14-15); BSB | Repository; BSB text; Jesus' own words about the bronze snake |
+| 18:13; 18:14 (the message quoted, the sums paraphrased); the silver (18:15); the gold from the doors (18:16) | 13-16 | 2-kings/18.json `summary`; BSB | Repository; BSB text |
+| Sennacherib 705 to 681 BC; the vassals' revolt; 701 BC; the clay prisms; forty-six cities, the bird in a cage, thirty talents of gold, more silver; no claim of Jerusalem; Lachish, the reliefs at Nineveh, the siege ramp and destruction layer | 13-16 | 2-kings/18.json `historical` | Repository; the annals paraphrased, not quoted |
+| Isaiah 36:1 | 13-16 | 2-kings/18.json `story`; BSB | Repository; BSB text |
+| The hard note: the payment after the praise; a lapse like Ahaz's or a king sparing an overrun land; no comment; safety not bought; rescue by prayer in chapter 19 | 13-16 `hard` | 2-kings/18.json `hard` | Repository; both readings in their holders' terms |
+| The three officers and the upper pool (18:17); the three officials (18:18); 18:19; strategy empty; 18:21; the high places twisted (18:22); the horses (18:23); the claim of the LORD's sending (18:25); the request for Aramaic (18:26); 18:29; vine and fig tree and deportation (18:31-32); 18:33; 18:35; 18:36 (to its first clause) and the king's order paraphrased; the torn clothes (18:37) | 17-37 | 2-kings/18.json `summary`; BSB | Repository; BSB text; 18:27 not quoted |
+| The titles; psychological war; Aramaic as the language of diplomacy; the shrewd speech; Egypt; the reform twisted; Isaiah 10:5; vine and fig tree as Israel's picture of peace (1 Kings 4:25; Micah 4:4); every hope closed off; natsal; the gods of Hamath and Arpad; the silence | 17-37 | 2-kings/18.json `cultural`, `literary`, `words` (natsal) | Repository |
+| Psalm 20:7; Micah 4:4 | 17-37 | 2-kings/18.json `cultural` (Micah 4:4); BSB | Repository; BSB text |
+
+Cut in chapter 18: the deep note's line from Hezekiah's mocked trust to Jesus mocked on the cross (Matthew 27:43), which the New Testament does not draw to this chapter; John 3:14 is kept as Jesus' own word about the snake. The coarse words of 18:27 are not quoted. A first draft set the king's order inside the quotation of 18:36; the sentence was rewritten before it reached the repository. No care line is needed in this chapter.
