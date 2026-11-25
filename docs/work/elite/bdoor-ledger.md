@@ -20754,3 +20754,22 @@ Cut in chapter 12: the deep note's lines to Christ (Matthew 12:34-37 joined to t
 | Care line (‘Abuse of a child is a crime...’ to ‘...lists places to turn.’) | 21-25 `hard` | colossians/plain/3.json (20-21), ephesians/plain/6.json (1-4) and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
 
 Cut in chapter 13: the deep note's lines to Christ (2 Corinthians 1:20 and Revelation 22:2 beside verse 12; Mark 10:45 beside the ransom of verse 8; Hebrews 12 is drawn by the New Testament from Proverbs 3, not this verse, and is left to chapter 3); the deep note's mention of modern research on physical punishment (no source named in the repository).
+
+## The plain notes on Proverbs 14 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 14:1; 14:4; witnesses and the mocker (14:5-6); 14:7; 14:10; 14:12; 14:13 | 1-14 | BSB | BSB text |
+| Wisdom's and Folly's houses (9:1, 13) brought down to ordinary life; the ox and the messy, fruitful life; the heart's hidden bitterness; self-deception; 14:12 repeated at 16:25 | 1-14 | proverbs/14.json `story`, `cultural`, `literary` | Repository |
+| 1 Samuel 1:10 | 1-14 | the chapter data's cross-references for 14:10 (1 Samuel 1:10); BSB | Repository; BSB text |
+| 14:15; 14:16; 14:17 (its first clause); 14:20; 14:21; 14:22; 14:23 | 15-24 | BSB | BSB text |
+| The simple and prudent (15-18); verse 22 as a rare question; verses 20 and 21 read together | 15-24 | proverbs/14.json `literary`, `hard` | Repository |
+| Job 19:14; 1 John 3:17 | 15-24 | the chapter data's cross-references for 14:20 (Job 19:13-14) and 14:21 (1 John 3:17); BSB | Repository; BSB text |
+| The hard note: observation, not command; 19:4, 7; the verdict of verse 21; description and instruction; 17:8; no reason to look down on the poor | 15-24 `hard` | proverbs/14.json `hard` | Repository |
+| 14:25 (its first clause); 14:26; 14:27; 14:29; 14:30; 14:31; 14:32 (its second clause); 14:34; 14:35 (its first clause) | 25-35 | BSB | BSB text |
+| Verse 31 rooted in Genesis 1; 17:5 and 22:2; a king's splendor in his people; officials; le'ummim as general; a word about any nation's conduct, not a promise to one | 25-35 | proverbs/14.json `cultural`, `historical` | Repository |
+| Genesis 1:27 (its first clause); James 1:19 (from ‘Everyone’) | 25-35 | proverbs/14.json `cultural` (Genesis 1); the chapter data's cross-references for 14:29 (James 1:19); BSB | Repository; BSB text |
+
+Cut in chapter 14: the deep note's lines to Christ (Matthew 7:13-14 and John 14:6 beside verse 12; the sheep and the goats, Matthew 25:31-46, beside verse 31; the wise builder, Matthew 7:24-25, beside verse 1; the note calls them thematic). No care line is needed in this chapter.
