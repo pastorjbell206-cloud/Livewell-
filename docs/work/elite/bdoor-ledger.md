@@ -18401,3 +18401,24 @@ Cut in chapter 19: the deep note's line from Hezekiah's prayer for the nations t
 | The hard note: verse 19 debated; self-centered or humble acceptance with relief; both words and thought given; the best king flattered and thinking of his own days | 12-21 `hard` | 2-kings/20.json `hard`, `literary` | Repository; both readings in their holders' terms |
 
 Cut in chapter 20: the deep note's line from Hezekiah's third day and tears to Jesus (Hebrews 5:7) and his resurrection, which it calls thematic. A first draft's title put the LORD's words in first person; it was retitled before it reached the repository.
+
+## The plain notes on 2 Kings 21 (2026-11-25)
+
+`client/public/bible/notes/2-kings/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Manasseh at twelve, fifty-five years (21:1); evil (21:2); high places, Baal, Asherah, the host of heaven (21:3); altars in the temple and the LORD's word (21:4, quoted in double quotes); altars in both courts (21:5); 21:6; the Asherah pole in the temple (21:7, paraphrased); 21:9 | 1-9 | 2-kings/21.json `summary`; BSB | Repository; BSB text |
+| From Hezekiah's best to loss; the Ahab of Judah; the point of no return (23:26; 24:3); about 697 to 642 BC and the co-regency; the longest reign; Esarhaddon and Ashurbanipal; Assyrian inscriptions naming Manasseh; a loyal vassal; the heavenly bodies or old Canaanite practices; Deuteronomy's prohibitions (18:10-12); the host of heaven; mediums and spiritists; Asherah; each sin reversing the past; the LORD's promises quoted against the king; the sacrifice named and not described | 1-9 | 2-kings/21.json `story`, `historical`, `cultural`, `literary`; bible/guides/kings-of-israel-and-judah.json (Manasseh 697/696 with Hezekiah to 643/642) | Repository; the views in their holders' terms |
+| Deuteronomy 18:11; Jeremiah 15:4 | 1-9 | 2-kings/21.json `cultural`; BSB | Repository; BSB text |
+| The hard note: named plainly and not dwelt on; with his grandfather Ahaz; innocent blood; among the reasons for the fall; not softened | 1-9 `hard` | 2-kings/16.json `hard`; 2-kings/21.json `doctrines` (sin); the brief | Repository |
+| The care line (‘A word for anyone who was not protected by a parent...’ to ‘...lists places to turn.’) | 1-9 `hard` | 1-kings/plain/16.json; 1-samuel/plain/25.json; 2-samuel/plain/13.json and two more | Reused whole, word for word; Find Help named |
+| The prophets' word (21:10-12, paraphrased); 21:13 (quoted before its dash); the remnant forsaken (21:14); 21:15 (its last words); 21:16; burial in the garden of Uzza (21:18) | 10-18 | 2-kings/21.json `summary`; BSB | Repository; BSB text |
+| Qav and the plumb line; the same standard as Samaria; the chosen city's sins weighing more; the bowl; machah and 14:27 and the flood (Genesis 7:23); naqi and Deuteronomy 19:10; bloodshed with idolatry; the garden burial, reason not given | 10-18 | 2-kings/21.json `cultural`, `literary`, `words` (qav, machah, naqi), `doctrines` (judgment) | Repository |
+| Isaiah 28:17; 2 Chronicles 33:12; 2 Chronicles 33:13 (its last sentence) | 10-18 | 2-kings/21.json `words` (qav: Isaiah 28:17), `hard` (Chronicles); BSB | Repository; BSB text |
+| The hard note: Kings silent on the repentance; Chronicles' account; a real episode or the Chronicler's theme; late repentance and Amon; no innocent punished for another's guilt; the people followed (21:9) and provoked the LORD (21:15); the decisive example, not the whole cause; Jeremiah and Ezekiel on each generation; no right to blame a whole people for one ruler or punish children for parents | 10-18 `hard` | 2-kings/21.json `hard`; bible/guides/kings-of-israel-and-judah.json (Manasseh in Assyrian records); the brief | Repository; the readings in their holders' terms |
+| Amon at twenty-two, two years (21:19); his father's ways (21:20-22); the conspiracy (21:23); 21:24; the garden of Uzza (21:26) | 19-26 | 2-kings/21.json `summary`; BSB | Repository; BSB text |
+| About 642 to 640 BC; the pattern repeated; the people of the land as landowning citizens, as after Athaliah (11:14-20) | 19-26 | 2-kings/21.json `historical`, `literary`; bible/guides/kings-of-israel-and-judah.json (Amon 643/642 to 641/640) | Repository |
+| Matthew 1:10 | 19-26 | 2-kings/21.json `christ` (Matthew 1:10); BSB | Repository; BSB text; Matthew's own genealogy |
+
+Cut in chapter 21: the deep note's line from Manasseh's repentance to grace in Christ's innocent blood, which it calls thematic; the later Jewish tradition of Isaiah's death under Manasseh, which the note says is not in the Bible. A first draft called Ahaz Manasseh's father; it was corrected to grandfather before it reached the repository.
