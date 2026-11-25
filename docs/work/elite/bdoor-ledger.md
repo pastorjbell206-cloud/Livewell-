@@ -18807,3 +18807,21 @@ Cut in chapter 5: the deep note's lines to Jesus as the one faithful son and to 
 | Numbers 18:20 (its last sentence); Hebrews 7:27 (its last sentence); Colossians 3:16 (its phrase) | 31-81 | 1-chronicles/6.json `cultural`, `christ` (Hebrews 7; Colossians 3:16); BSB | Repository; BSB text; the New Testament's own words about priesthood and song |
 
 Cut in chapter 6: the deep note's reading of the whole chapter as a pattern pointing forward to Christ, beyond Hebrews' own words, which are quoted. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 7 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Issachar and 7:2 (its phrase); Benjamin numbered (7:1-12); Naphtali in a verse (7:13); Manasseh and its women (7:14-19) | 1-19 | 1-chronicles/7.json `summary`, `outline`, `literary`; BSB | Repository; BSB text |
+| The northern heartland, 722 BC; scattered for centuries; all twelve tribes; muster rolls; registers of David's kingdom (chapters 21 and 27); mighty men of valor; eleph; Issachar in the Jezreel Valley, Naphtali by Galilee | 1-19 | 1-chronicles/7.json `story`, `historical`, `cultural`, `words` (gibbor, eleph) | Repository |
+| Numbers 27:7 (its first sentence) | 1-19 | 1-chronicles/7.json `literary` (Zelophehad's daughters); BSB | Repository; BSB text |
+| The hard note: Dan and Zebulun missing; lost sources; copying and the Hushites (Genesis 46:23); Dan's idolatry (Judges 18) weakened by Zebulun and by 12:33, 35; uncertain; all twelve (2:1-2) | 1-19 `hard` | 1-chronicles/7.json `hard`, `historical` | Repository; the views in their holders' terms |
+| 7:21 (its last sentence); 7:22; 7:23 (its last sentence); 7:24 (its first part); 7:27; the towns (7:28-29); Asher (7:30-40) | 20-40 | 1-chronicles/7.json `summary`, `outline`, `historical`; BSB | Repository; BSB text |
+| One story among the lists; raiding as a hazard; Beriah's name; nacham and Isaiah 40:1; Sheerah as a woman builder; Beth-horon on the road; Joshua as a hopeful close; the Canaanite cities (Judges 1:27) | 20-40 | 1-chronicles/7.json `cultural`, `literary`, `historical`, `words` (nacham, banah) | Repository |
+| Job 2:13 (its first part); Hebrews 4:8 | 20-40 | 1-chronicles/7.json `cultural` (Job 2:11-13), `christ` (Hebrews 4:8-10); BSB | Repository; BSB text; Hebrews' own line about Joshua |
+| The hard note: the deaths not explained or blamed; the new son not a replacement; mourning and comfort recorded; grief written into the record | 20-40 `hard` | 1-chronicles/7.json `cultural`, `literary` | Repository |
+| The care line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 20-40 `hard` | 1-kings/plain/14.json; 2-kings/plain/4.json and 6.json and the other files named there | Reused whole, word for word; Find Help named |
+
+Cut in chapter 7: the deep note's line from Joshua's name to Jesus' name beyond Hebrews' own line, and its reading of Ephraim's grief-to-hope as part of the wider story. 
