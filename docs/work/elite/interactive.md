@@ -79,9 +79,16 @@ transliterated word such as Chesed sits there until its book's sentence says
 data has no kinds, so the page has none and says so. A passage is listed
 only when the chapter it opens has a note (the build would leave out and
 report any that did not; none do today). The items carry no care lines of
-their own, so the page's care is its own: the way to Find Help, in the
-catalogue's words, at the top of the list and after each testament, beside
-the site's standing Find Help tab.
+their own, and the site's rule is that a care line is never newly written.
+So the page carries the Study Bible notes' two standing lines, whole and
+byte for byte: the one for despair ("If you have thoughts of hurting
+yourself, speak to someone today...") and the one for violence and abuse
+("If you are being hurt, at home, at work or in a church..."), each said in
+more than ten chapters' notes and each naming Find Help, which the page
+makes the link. The build copies them from the notes that say them
+(`CARE_LINES` in `scripts/lib/bible-explore.mjs`); the page's test holds
+them equal to their source. They stand at the top of the list and after
+each testament, beside the site's standing Find Help tab.
 
 ## Where the data was thin
 
@@ -119,11 +126,13 @@ SEO), with layout shift 0.000 on every page:
 | /study/words | 96, 100, 96, 100 |
 | /study/hard-passages | 93, 100, 96, 100 |
 
-The timeline's 96 for accessibility in the last run is one finding, a link
-"with contrast 1.08" far down the page. The link is ink on cream like every
-other; it sits in a list not yet laid out (`.bx-far`), and the checker read
-the wrong background for it. The first run, before more books arrived, read
-100. Worth a second look in CI against a preview.
+The timeline's 96 for accessibility in the last run was one finding: a link
+far down the page "with contrast 1.08, #14110c on #1a1a1a". It is not real.
+Measured as rendered, before and after scrolling to it, the link is ink
+(rgb 20, 17, 12) on the white of its box (rgb 255, 255, 255), about 18 to 1.
+The checker met it in a list not yet laid out (`.bx-far`), where its place
+on the page is an estimate, and read the charcoal of the footer behind that
+place. Nothing was changed for it.
 
 What the measuring changed: a list of several hundred entries is drawn in two
 steps (its top and first group at once, the rest in a transition:

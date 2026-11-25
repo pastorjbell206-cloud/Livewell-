@@ -163,6 +163,8 @@ export interface HardItem {
 
 export interface HardData {
   v: number;
+  /** Care lines the Study Bible notes already say, copied whole from them (scripts/lib/bible-explore.mjs, CARE_LINES). */
+  care: string[];
   books: (ExploreBook & { items: HardItem[] })[];
   without: string[];
 }
@@ -170,11 +172,73 @@ export interface HardData {
 export const isHard = (x: unknown): x is HardData =>
   obj(x) &&
   list(x.without) &&
+  list(x.care) &&
+  x.care.every(str) &&
   list(x.books) &&
   x.books.length > 0 &&
   x.books.every(
     (b) => isBook(b) && list((b as unknown as { items: unknown }).items) && (b as unknown as { items: unknown[] }).items.every((i) => obj(i) && typeof i.ch === "number" && typeof i.v === "number" && str(i.ref) && str(i.line)),
   );
+
+/* The 66 books at a glance ------------------------------------------- */
+
+export interface GlanceBook extends ExploreBook {
+  chapters: number;
+  /** The book's own outline (intro.json `structure`), part by part in its own words. */
+  parts: { range: string; title: string; summary: string }[];
+}
+
+export interface GlanceData {
+  v: number;
+  books: GlanceBook[];
+}
+
+export const isGlance = (x: unknown): x is GlanceData =>
+  obj(x) &&
+  list(x.books) &&
+  x.books.length > 0 &&
+  x.books.every((b) => isBook(b) && typeof (b as unknown as GlanceBook).chapters === "number" && list((b as unknown as GlanceBook).parts) && (b as unknown as GlanceBook).parts.every((p) => obj(p) && str(p.range) && str(p.title) && str(p.summary)));
+
+/* Key chapters -------------------------------------------------------- */
+
+export interface KeyChaptersBook extends ExploreBook {
+  /** The book's own key chapters (intro.json `keyChapters`), in its own order, each with its own reason. */
+  chapters: { ch: number; why: string }[];
+}
+
+export interface KeyChaptersData {
+  v: number;
+  books: KeyChaptersBook[];
+}
+
+export const isKeyChapters = (x: unknown): x is KeyChaptersData =>
+  obj(x) &&
+  list(x.books) &&
+  x.books.length > 0 &&
+  x.books.every((b) => isBook(b) && list((b as unknown as KeyChaptersBook).chapters) && (b as unknown as KeyChaptersBook).chapters.every((c) => obj(c) && typeof c.ch === "number" && str(c.why)));
+
+/* Themes -------------------------------------------------------------- */
+
+export interface Theme {
+  id: string;
+  title: string;
+  /** Each book that names this theme: the book's own paragraph, whole (and its own casing of the title where it differs). */
+  entries: { book: string; title?: string; body: string }[];
+}
+
+export interface ThemesData {
+  v: number;
+  books: ExploreBook[];
+  themes: Theme[];
+}
+
+export const isThemes = (x: unknown): x is ThemesData =>
+  obj(x) &&
+  list(x.books) &&
+  x.books.every(isBook) &&
+  list(x.themes) &&
+  x.themes.length > 0 &&
+  x.themes.every((t) => obj(t) && str(t.id) && str(t.title) && list(t.entries) && t.entries.length > 0 && t.entries.every((e) => obj(e) && str(e.book) && str(e.body)));
 
 /* Fetching ----------------------------------------------------------- */
 
@@ -183,12 +247,18 @@ export const EXPLORE_FILES = {
   atlas: "/bible/explore/atlas.json",
   words: "/bible/explore/words.json",
   hard: "/bible/explore/hard-passages.json",
+  glance: "/bible/explore/books-at-a-glance.json",
+  keys: "/bible/explore/key-chapters.json",
+  themes: "/bible/explore/themes.json",
 } as const;
 
 export const fetchTimeline = () => fetchJson(EXPLORE_FILES.timeline, isTimeline);
 export const fetchAtlas = () => fetchJson(EXPLORE_FILES.atlas, isAtlas);
 export const fetchWords = () => fetchJson(EXPLORE_FILES.words, isWords);
 export const fetchHard = () => fetchJson(EXPLORE_FILES.hard, isHard);
+export const fetchGlance = () => fetchJson(EXPLORE_FILES.glance, isGlance);
+export const fetchKeyChapters = () => fetchJson(EXPLORE_FILES.keys, isKeyChapters);
+export const fetchThemes = () => fetchJson(EXPLORE_FILES.themes, isThemes);
 
 /** "Mark, Luke and John": a list of names in a sentence. */
 export function nameList(names: string[]): string {

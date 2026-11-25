@@ -1065,7 +1065,30 @@ const PAGE_BODIES = {
         `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
         `<h1>Hard passages</h1>`,
         `<p class="pre-subtitle">The places where readers stop and ask. Each one opens the chapter where its note faces the question.</p>`,
-        help ? `<p><a href="/help">${escapeHtml(help.title)}</a>: ${escapeHtml(help.blurb)}</p>` : "",
+        // The notes' own care lines, whole, with Find Help in them made the link (the page does the same).
+        ...(d.care?.length ? d.care.map((c) => `<p>${escapeHtml(c).replace("Find Help", `<a href="/help">Find Help</a>`)}</p>`) : [help ? `<p><a href="/help">${escapeHtml(help.title)}</a>: ${escapeHtml(help.blurb)}</p>` : ""]),
+        ...d.books.map(book),
+      ]),
+    };
+  },
+  // The 66 books at a glance: every book's own outline, part by part, each
+  // part with its title, its range, its summary and the chapter it opens
+  // (client/public/bible/explore/books-at-a-glance.json).
+  "/study/books-at-a-glance": async () => {
+    const d = readJsonSafe("client/public/bible/explore/books-at-a-glance.json");
+    if (!d?.books?.length) return null;
+    const open = (b, range) => {
+      const cv = range.match(/^(\d+):(\d+)/);
+      if (cv) return `/study/bible/${b.slug}/${cv[1]}${+cv[2] > 1 ? `#v${cv[2]}` : ""}`;
+      const first = parseInt(range, 10) || 1;
+      return b.chapters === 1 ? `/study/bible/${b.slug}/1#v${first}` : `/study/bible/${b.slug}/${first}`;
+    };
+    const book = (b, i) => far(i, b.name, `<ol>\n${b.parts.map((p) => `<li><a href="${open(b, p.range)}"><strong>${escapeHtml(p.title)}</strong></a> (${escapeHtml(`${b.name} ${p.range.replace(/-/g, "\u2013")}`)}). ${escapeHtml(p.summary)}</li>`).join("\n")}\n</ol>`);
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>The 66 books at a glance</h1>`,
+        `<p class="pre-subtitle">Every book drawn as one band, part by part. Choose a part to open its chapter.</p>`,
         ...d.books.map(book),
       ]),
     };
