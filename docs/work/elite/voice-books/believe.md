@@ -34,7 +34,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Chapter 9: Why Christianity and Not Other Religions? | 3,216 | 3,216 | +0.0% | 48 (14.9) | 3 (0.9) | 105 (32.6) | 61 (19.0) | 33 | PASS |
 | Chapter 10: Why Atheism Can't Sustain the Human Heart | 3,877 | 3,877 | +0.0% | 54 (13.9) | 3 (0.8) | 101 (26.1) | 55 (14.2) | 38 | PASS |
 | Chapter 11: Every Objection Answered | 5,236 | 5,236 | +0.0% | 71 (13.6) | 5 (1.0) | 154 (29.4) | 88 (16.8) | 47 | PASS |
-| **All 12** | 41,228 | 41,228 | +0.0% | 550 (13.3) | 35 (0.8) | 1189 (28.8) | 698 (16.9) | 390 | |
+| Chapter 12: What Does God Actually Want From You? | 2,347 | 2,347 | +0.0% | 39 (16.6) | 3 (1.3) | 81 (34.5) | 47 (20.0) | 27 | PASS |
+| **All 13** | 43,575 | 43,575 | +0.0% | 589 (13.5) | 38 (0.9) | 1270 (29.1) | 745 (17.1) | 417 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -322,3 +323,27 @@ Five pairs:
    After: The person who, having considered the full case, concludes against Christianity has done so for some reason other than the evidence: a prior commitment, a relational wound, a cultural inheritance, a moral preference, something not empirical.
 
 Left alone, and why. The chapter's promise is to state each objection "in its strongest form", and each statement of an objection (violence, slavery, wishful thinking, repression, faith without evidence, miracles and Hume, free inquiry, regress, genocide, "wrong about slavery", prayer, hypocrisy, the unbearable loss) is word for word, with a bracket or comma for a dash at most. So are his concessions: "It is not unblemished.", "some of those sermons were shaming and did real harm", "Is that the whole story? No", and the fourth point on the conquest ("this is the honest part: features remain in these narratives that resist full comprehension, and there is no use pretending otherwise"). The section on the grieving reader ("This is the hardest, and it is not an argument. It is a wound.") keeps its short sentences and its "Go to the cross. Stand there."; nothing in it was made more confident. Huxley's and Nagel's quotations are identical. All 47 edits are dashes recast; no word changed. Five dashes stay.
+
+
+## Chapter 12: What Does God Actually Want From You? (`sec13.xhtml`)
+
+Words 2,347 to 2,347. Em-dashes in his prose 39 to 3 (16.6 to 1.3 per 1,000 words). Tells 81 to 47 (34.5 to 20.0 per 1,000). Mean sentence 26.1 words to 26.1; sentences of eight words or fewer 25.6% to 25.6%; of five or fewer 13.3% to 13.3%. 27 edits; paragraphs 28 to 28. Paragraphs of fifteen words or fewer 4 to 4; runs of three fragments 1 to 1.
+
+By kind (before to after): emdash 39 to 3, not_but 6 to 6, not_just 2 to 2, NotX.Y 1 to 1, isnt_its 4 to 4, triplet 12 to 13, frag3 1 to 1, anaphora 4 to 4, stock 1 to 1, colon_reveal 1 to 2, short_close 6 to 6, one_line_para 4 to 4.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 8 Scripture references, 0 years, 6 numbers in digits, 31 number words, proper names by count, and 12 hedge words (after: 12) compared.
+
+Five pairs:
+
+1. Before: The Hebrew word at the center of Old Testament faith is aman — to be firm, to hold steady, to lean on — and it gives us the English word amen, so that to say amen is to say, I rest my weight here.
+   After: The Hebrew word at the center of Old Testament faith is aman (to be firm, to hold steady, to lean on), and it gives us the English word amen, so that to say amen is to say, I rest my weight here.
+2. Before: Whatever you have trusted to carry your identity — the work, the marriage, the moral record, the family name, the political tribe — you now hold for what it is and no more, because the center has moved to Christ.
+   After: Whatever you have trusted to carry your identity (the work, the marriage, the moral record, the family name, the political tribe), you now hold for what it is and no more, because the center has moved to Christ.
+3. Before: Deny is aparneomai — to disown, to say no to — and not the self as a unit, but the self as the one who runs the show.
+   After: Deny is aparneomai (to disown, to say no to), and not the self as a unit, but the self as the one who runs the show.
+4. Before: Holman Hunt painted it — Christ standing before an overgrown door with no handle on the outside, a door that opens only from within — and the detail was deliberate, because he does not break the door down.
+   After: Holman Hunt painted it (Christ standing before an overgrown door with no handle on the outside, a door that opens only from within), and the detail was deliberate, because he does not break the door down.
+5. Before: Talk to him — not to a pastor, not to a priest, to him — and tell him you are done running, or done earning, or done pretending you have it managed; tell him you believe he died for you and rose for you, and ask him to take everything you have been trying to manage yourself.
+   After: Talk to him, not to a pastor, not to a priest, to him, and tell him you are done running, or done earning, or done pretending you have it managed; tell him you believe he died for you and rose for you, and ask him to take everything you have been trying to manage yourself.
+
+Left alone, and why. This is the invitation, and its short sentences are doing what short sentences are for: "This last chapter is about the door.", "Same root. A change of form.", "Confess. Believe.", "You have to turn. You have to lean.", "He is waiting.", "The book is finished. The argument is made. The door is open." None was joined. The word for the reader who is not ready ("do not manufacture a conversion or pray words you do not mean") is exactly as he wrote it; nothing in the appeal was made more pressing. The pull quote stands. The Greek and Hebrew words and their glosses are unchanged; the glosses that sat between dashes now sit in brackets. All 27 edits are dashes recast; no word changed. Three dashes stay.
