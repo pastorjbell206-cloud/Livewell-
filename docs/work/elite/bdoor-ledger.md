@@ -18844,3 +18844,17 @@ Cut in chapter 25: the deep note's lines to Christ (Romans 3:21-26 and Psalm 22 
 | The hard note: the astronomical reading; the pillars and the horizon of the ancient picture; resting on God's power; the middle position; worship as the purpose, verse 14 | 5-14 | job/26.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 26: the deep note's lines to Christ (Mark 4:41 and the stilling of the storm, Colossians 1:16-17; the note says it is not a prediction); verse 5 quoted only in part (the verse holds a dash).
+
+## The plain notes on Job 27 (2026-11-25)
+
+`client/public/bible/notes/job/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The new opening; the closing statement to the friends; the first of two oaths (chapter 31); the oath by God's life and its use where no evidence was available; the paradox of swearing by the God who denied justice; tummah (2:3; 2:9); the breath of God and Genesis 2:7; verses 2 and 13 quoted in part (both hold dashes) | 1-12 | job/27.json `story`, `historical`, `literary`, `doctrines` (faith, humanity), `words` (tummah, tsedaqah) | Repository; BSB text |
+| Exodus 22:11 | 1-12 | job/27.json `historical` (Exodus 22:10-11); BSB | Repository; BSB text |
+| The hard note: pride heard by some (32:2; 40:8); right on the central point (1:8; 2:3; 42:7); refusing to lie; both held; corrected for judging God, not for keeping his innocence | 1-12 | job/27.json `hard` | Repository; each reading in its holders' terms |
+| Verse 13 repeating 20:29; the readings of verses 13 to 23 (Zophar's missing speech; a quotation; a wish on enemies, verse 7; God's judgment in the end); judgment affirmed, suffering not always its sign; clothing as wealth; the watchman's hut (Isaiah 1:8); the east wind; clapping and hissing | 13-23 | job/27.json `literary`, `cultural`, `historical`, `doctrines` (judgment), `words` (qadim) | Repository; each reading in its holders' terms |
+| Lamentations 2:15 | 13-23 | job/27.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 27: the deep note's lines to Christ (1 Peter 2:22-23 and Jesus before the high priest and Pilate; the note calls it a pattern, not a prediction).
