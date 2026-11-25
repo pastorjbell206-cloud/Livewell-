@@ -41,6 +41,22 @@
    "title": "Matthew: God with us",
    "line": "The first book of the New Testament: what it is, how it is put together, what to watch for, and where to start reading."
   },
+  "book-mark": {
+   "title": "Mark: the story at a run",
+   "line": "The shortest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-luke": {
+   "title": "Luke: good news for the lost",
+   "line": "The longest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-acts": {
+   "title": "Acts: to the ends of the earth",
+   "line": "The book that tells what happened after Jesus rose: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-revelation": {
+   "title": "Revelation: the Lamb on the throne",
+   "line": "The last book of the Bible: what it is, how it is put together, what to watch for, and where to start reading."
+  },
   "holy-spirit": {
    "title": "The Holy Spirit through the Bible",
    "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
@@ -285,6 +301,9 @@
   "/questions/religions/those-who-never-heard": [
    "never-heard"
   ],
+  "/study/bible/acts": [
+   "book-acts"
+  ],
   "/study/bible/doctrines/atonement": [
    "the-lamb",
    "why-blood"
@@ -345,6 +364,12 @@
   "/study/bible/john": [
    "book-john"
   ],
+  "/study/bible/luke": [
+   "book-luke"
+  ],
+  "/study/bible/mark": [
+   "book-mark"
+  ],
   "/study/bible/matthew": [
    "book-matthew"
   ],
@@ -353,6 +378,9 @@
   ],
   "/study/bible/psalms": [
    "book-psalms"
+  ],
+  "/study/bible/revelation": [
+   "book-revelation"
   ],
   "/study/bible/romans": [
    "book-romans"

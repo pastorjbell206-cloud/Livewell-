@@ -871,6 +871,56 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M52,10l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
     </>
   ),
+  /* Mark: a fishing boat on the lake, and a gold sun. */
+  "book-mark": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M62,26a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M62,26a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M44,66V26M44,30L62,36" />
+      <Shape d="M44,32C50,40 50,54 44,62Z" off={0.8} />
+      <Shape d="M14,66C26,80 68,80 82,64L76,62H20Z" tone="c" off={1} />
+      <path className="pl-f" d="M12,76q5,-4 10,0t10,0M40,80q5,-4 10,0t10,0M68,76q5,-4 10,0t10,0" />
+    </>
+  ),
+  /* Luke: one sheep found, and a gold light over it. */
+  "book-luke": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M50,8l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+      <path className="pl-l" d="M50,8l3,8l8,3l-8,3l-3,8l-3,-8l-8,-3l8,-3Z" />
+      <Shape d="M30,68C24,56 36,46 46,52C50,42 68,44 68,54C80,54 80,70 70,72C66,80 38,80 34,72C28,72 28,70 30,68Z" off={1} />
+      <Shape d="M68,56c8,-4 14,2 12,8c-4,4 -10,2 -12,-8Z" tone="c" off={0.6} />
+      <path className="pl-l" d="M40,76V84M62,76V84" />
+    </>
+  ),
+  /* Acts: a road running out from a city gate to the far edge, and one gold flame over the gate. */
+  "book-acts": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M14,84V56h6v-6h6v6h8v-6h6v6h6V84Z" tone="c" off={1} />
+      <path className="pl-k" d="M26,84V72c0,-8 10,-8 10,0V84Z" />
+      <path className="pl-l" d="M46,84C60,76 74,70 92,60M46,76C58,70 72,62 92,50" />
+      <path className="pl-m" d="M30,42C38,32 40,24 35,12C26,22 23,32 30,42Z" />
+      <path className="pl-l" d="M30,42C38,32 40,24 35,12C26,22 23,32 30,42Z" />
+    </>
+  ),
+  /* Revelation: a lamb standing on a hill, gold light behind it. */
+  "book-revelation": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M30,50a20,20 0 0,1 40,0Z" />
+      <path className="pl-l" d="M30,50a20,20 0 0,1 40,0" />
+      <path className="pl-f" d="M50,22V14M30,30l-5,-5M70,30l5,-5" />
+      <Shape d="M10,84C24,56 76,56 90,84Z" tone="g" off={1} />
+      <Shape d="M40,58C36,50 44,44 50,47C53,41 64,42 64,49C72,49 72,60 66,61C63,66 46,66 44,61C39,61 39,60 40,58Z" off={0.8} />
+      <path className="pl-l" d="M47,63V70M61,63V70" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

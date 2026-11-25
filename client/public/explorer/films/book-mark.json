@@ -1,0 +1,118 @@
+{
+  "slug": "book-mark",
+  "title": "Mark: the story at a run",
+  "group": "books",
+  "status": "finished",
+  "book": "mark",
+  "mark": "book-mark",
+  "line": {
+    "younger": "The shortest of the four books about Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Mark as a whole book: its speed, its hinge at Peter's answer, the question of who Jesus is, the way of the cross, failure and grace, the centurion at the cross, and where to begin."
+  },
+  "poster": "By a lake two fishermen have left their boat and their nets on the shore and walk after Jesus, who goes ahead along the beach under a gold sun.",
+  "frames": [
+    {
+      "id": "fast",
+      "name": "The story at a run",
+      "still": "By a lake two fishermen have left their boat and their nets on the shore and walk after Jesus, who goes ahead along the beach under a gold sun.",
+      "younger": "Mark is the shortest of the four books about Jesus, and it starts fast. There is no Christmas story and no family tree. Within a few pages Jesus is calling fishermen, healing the sick, and sending evil away.",
+      "older": "Mark is the shortest of the four Gospels, and it moves at speed. There is no birth story and no long sermon. The word translated “immediately” appears more than forty times. Its first line works as a title.",
+      "verse": {
+        "ref": "Mark 1:1",
+        "text": "This is the beginning of the gospel of Jesus Christ, the Son of God."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in five panels, with a boat, a road, a city gate, a hill and an open tomb over them. A gold rule lies under the second panel, the road.",
+      "younger": "Mark has two halves. In the first, Jesus is in Galilee, by the lake, and everyone asks who he is. Then Peter gives an answer, and the story turns toward Jerusalem, the cross and the empty tomb.",
+      "older": "The first half is set in Galilee, full of authority and questions. Its hinge is Peter's confession. From there the story walks the road to Jerusalem, tells the passion by the hour, and ends at an empty tomb.",
+      "verse": {
+        "ref": "Mark 1:15",
+        "text": "“The time is fulfilled,” He said, “and the kingdom of God is near."
+      }
+    },
+    {
+      "id": "who",
+      "name": "Watch for: who is this man?",
+      "still": "A fishing boat lies on calm water under a clearing sky. Jesus stands in the boat with one hand raised, and his friends crouch low and look at him.",
+      "younger": "Watch for one question: who is this man? Crowds wonder. His friends ask it after he calms a storm. You, the reader, know the answer from the first line. The fun is watching everyone else work it out.",
+      "older": "The question of Jesus' identity runs through the whole book. The reader knows the answer from the first line, and the drama lies in watching the characters struggle toward it, often getting the words right and the meaning wrong.",
+      "verse": {
+        "ref": "Mark 4:41",
+        "text": "Who is this, that even the wind and the sea obey Him?"
+      }
+    },
+    {
+      "id": "way",
+      "name": "Watch for: the way of the cross",
+      "still": "Jesus walks ahead up a road toward a far city on a hill, and his friends follow a few steps behind. A gold sun stands over the city.",
+      "younger": "Watch for the road. Three times on the way to Jerusalem, Jesus tells his friends that he will suffer, die, and rise again. Each time he teaches them the same thing: the greatest person is the one who serves.",
+      "older": "On the road to Jerusalem Jesus three times predicts his death and resurrection, and each time teaches what following him means: deny yourself, be the servant of all. The Messiah's path runs through suffering.",
+      "verse": {
+        "ref": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+      }
+    },
+    {
+      "id": "grace",
+      "name": "Watch for: friends who fail",
+      "still": "Night in a courtyard. One man bows low to the ground, alone, turned away from a small fire where others sit. A window above them shows the first gold of morning.",
+      "younger": "Watch his friends. Mark does not make them look good. They misunderstand, they fall asleep, and they run away. Peter says three times that he does not know Jesus. And still, at the end, the message is sent to Peter by name.",
+      "older": "Mark does not flatter the disciples. They misunderstand, fall asleep in Gethsemane, and flee, and Peter denies Jesus three times. Yet the message at the tomb names Peter in particular.",
+      "verse": {
+        "ref": "Mark 16:7",
+        "text": "But go, tell His disciples and Peter"
+      }
+    },
+    {
+      "id": "centurion",
+      "name": "Watch for: who sees it first",
+      "still": "A hill under a dark sky. A soldier stands alone at the foot of the hill, his helmet on the ground beside him, and looks toward its top, where a gold light breaks through the cloud.",
+      "younger": "Watch who gives the answer out loud. It is not one of his friends. It is a Roman soldier, standing by the cross as Jesus dies. In Mark, the cross is where people finally see who Jesus is. And on the third day, the tomb is empty.",
+      "older": "The first human being in Mark to call Jesus the Son of God is a Roman centurion at the foot of the cross, at the moment of his death. Mark holds authority and suffering together: the Son of God is recognized fully only at the cross.",
+      "verse": {
+        "ref": "Mark 15:39",
+        "text": "Truly this man was the Son of God!"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter one, and keep going. Mark is short enough to read aloud in about the time it takes to watch a film. Read it in one go if you can.",
+      "older": "Read Mark in one sitting if you can. Its force comes from its pace. The book's page marks seven key chapters: 1, 4, 8, 10, 13, 15 and 16. The oldest complete copies end with the women at the tomb.",
+      "verse": {
+        "ref": "Mark 8:29",
+        "text": "“Who do you say I am?” Peter answered, “You are the Christ.”"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Jesus asked his friends, who do you say I am? What would you say?",
+    "older": "The message at the tomb is sent to the disciples \"and Peter\", the one who had denied him. Why do you think Mark kept those two words?"
+  },
+  "read": [
+    { "label": "Mark 1", "href": "/study/bible/mark/1" },
+    { "label": "Mark 4", "href": "/study/bible/mark/4" },
+    { "label": "Mark 8", "href": "/study/bible/mark/8" },
+    { "label": "Mark 10", "href": "/study/bible/mark/10" },
+    { "label": "Mark 15", "href": "/study/bible/mark/15" },
+    { "label": "Mark 16", "href": "/study/bible/mark/16" }
+  ],
+  "stops": [
+    "jesus",
+    "cross"
+  ],
+  "cards": [],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Mark in the Study Bible: the whole book, taught from the start", "href": "/study/bible/mark" },
+    { "label": "Deep in one: the Gospel of Mark (a track of short sessions)", "href": "/tracks/mark" },
+    { "label": "Who Jesus is (a moving picture)", "href": "/study/explorer/watch/who-jesus-is" },
+    { "label": "Why did Jesus die? (a moving picture)", "href": "/study/explorer/watch/why-jesus-died" },
+    { "label": "Matthew: God with us (a moving picture)", "href": "/study/explorer/watch/book-matthew" }
+  ],
+  "end": { "label": "Start reading: Mark 1", "href": "/study/bible/mark/1" }
+}
