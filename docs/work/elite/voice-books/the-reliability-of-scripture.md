@@ -37,7 +37,9 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Ten: When the Culture Says All Texts Are Suspect | 884 | 884 | +0.0% | 12 (13.6) | 0 (0.0) | 25 (28.3) | 14 (15.8) | 8 | PASS |
 | Chapter Eleven: Reading the Bible Right — Genre, Hermeneutics, and Honest Interpretation | 1,116 | 1,116 | +0.0% | 12 (10.8) | 0 (0.0) | 25 (22.4) | 14 (12.5) | 9 | PASS |
 | Chapter Twelve: The Internal Testimony — What Scripture Claims About Itself | 942 | 942 | +0.0% | 13 (13.8) | 0 (0.0) | 25 (26.5) | 12 (12.7) | 10 | PASS |
-| **All 13** | 15,142 | 15,142 | +0.0% | 202 (13.3) | 2 (0.1) | 385 (25.4) | 189 (12.5) | 142 | |
+| Chapter Thirteen: Why It Still Matters — Living from the Authority of Scripture | 1,556 | 1,556 | +0.0% | 16 (10.3) | 0 (0.0) | 51 (32.8) | 35 (22.5) | 11 | PASS |
+| Chapter Fourteen: Eyewitness Testimony and the Four Gospels | 1,233 | 1,233 | +0.0% | 15 (12.2) | 0 (0.0) | 24 (19.5) | 11 (8.9) | 11 | PASS |
+| **All 15** | 17,931 | 17,931 | +0.0% | 233 (13.0) | 2 (0.1) | 460 (25.7) | 235 (13.1) | 164 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -323,3 +325,47 @@ Five pairs, taken at even intervals through the chapter:
    After: If Jesus rose from the dead, if the resurrection testimony is early, multiple, and circumstantially specific in the way we have established, then his claims deserve a level of epistemic confidence different from the claims of anyone who has not demonstrated that kind of authority.
 5. Before: But now that we have established the credibility of the text by external means — manuscript evidence, early dating, archaeological confirmation — the internal testimony carries its full weight.
    After: But now that we have established the credibility of the text by external means (manuscript evidence, early dating, archaeological confirmation), the internal testimony carries its full weight.
+
+
+## Chapter Thirteen: Why It Still Matters — Living from the Authority of Scripture (`sec14.xhtml`)
+
+Words 1,556 to 1,556. Em-dashes in his prose 16 to 0 (10.3 to 0.0 per 1,000 words). Tells 51 to 35 (32.8 to 22.5 per 1,000). Mean sentence 17.3 words to 17.3; sentences of eight words or fewer 33.3% to 33.3%; of five or fewer 22.2% to 22.2%. 11 edits; paragraphs 17 to 17. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 16 to 0, not_but 6 to 6, NotX.Y 4 to 4, isnt_its 1 to 1, triplet 5 to 5, anaphora 14 to 14, stock 1 to 1, intens 2 to 2, q_answered 1 to 1, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 1 Scripture references, 0 years, 0 numbers in digits, 13 number words, proper names by count, and 22 hedge words (after: 22) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: She is older now, and the sharp clarity of that college classroom moment — the excitement of having found the questions nobody in her church could answer — has been replaced by something more complicated.
+   After: She is older now, and the sharp clarity of that college classroom moment, the excitement of having found the questions nobody in her church could answer, has been replaced by something more complicated.
+2. Before: The evidence we have examined for the past twelve chapters has been building toward this question — not toward a library project, but toward a life.
+   After: The evidence we have examined for the past twelve chapters has been building toward this question, not toward a library project, but toward a life.
+3. Before: If the text is unreliable — if it is a human document produced by ordinary processes subject to ordinary errors and ordinary corruption — then it is a book among books, useful perhaps, interesting certainly, but not the kind of foundation on which a life can actually be built.
+   After: If the text is unreliable, if it is a human document produced by ordinary processes subject to ordinary errors and ordinary corruption, then it is a book among books, useful perhaps, interesting certainly, but not the kind of foundation on which a life can actually be built.
+4. Before: It is the hardest thing the Bible asks of us — not to let it say what we want it to say, but to let it say what it actually says.
+   After: It is the hardest thing the Bible asks of us: not to let it say what we want it to say, but to let it say what it actually says.
+5. Before: But what the Bible also says — and what the lives of people who have built on it have demonstrated, across twenty centuries, in every culture and every language — is that this costly life is the only life that corresponds to the truth of what you are.
+   After: But what the Bible also says (and what the lives of people who have built on it have demonstrated, across twenty centuries, in every culture and every language) is that this costly life is the only life that corresponds to the truth of what you are.
+
+
+## Chapter Fourteen: Eyewitness Testimony and the Four Gospels (`sec15.xhtml`)
+
+Words 1,233 to 1,233. Em-dashes in his prose 15 to 0 (12.2 to 0.0 per 1,000 words). Tells 24 to 11 (19.5 to 8.9 per 1,000). Mean sentence 24.1 words to 24.1; sentences of eight words or fewer 12.8% to 12.8%; of five or fewer 2.1% to 2.1%. 11 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 15 to 0, not_but 2 to 2, not_just 1 to 1, triplet 5 to 6, colon_reveal 0 to 1, short_close 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 1 quoted strings, 22 Scripture references, 1 years, 11 numbers in digits, 14 number words, proper names by count, and 19 hedge words (after: 19) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Bauckham argued that the four Gospels are not folk literature — the product of anonymous traditions passed through communities over generations, losing historical particularity and gaining theological embellishment as they traveled.
+   After: Bauckham argued that the four Gospels are not folk literature, the product of anonymous traditions passed through communities over generations, losing historical particularity and gaining theological embellishment as they traveled.
+2. Before: Jairus, the synagogue ruler whose daughter Jesus raises, is named in Mark 5:22 and Luke 8:41 but unnamed in Matthew 9:18 — a variation Bauckham argues reflects Matthew's practice of dropping the name once the individual was no longer available to confirm the account.
+   After: Jairus, the synagogue ruler whose daughter Jesus raises, is named in Mark 5:22 and Luke 8:41 but unnamed in Matthew 9:18, a variation Bauckham argues reflects Matthew's practice of dropping the name once the individual was no longer available to confirm the account.
+3. Before: Throughout the Gospel narratives a pattern emerges in which Jesus is accompanied by a small group of disciples, and within that group an even smaller inner circle of three — Peter, James, and John — present at moments others are not. Peter is consistently the most active character in the narratives, constantly speaking, acting, failing, recovering; in Mark in particular, his behavior is narrated with a frankness that borders on embarrassing — his impetuous speech, his misunderstanding of key moments, his denial.
+   After: Throughout the Gospel narratives a pattern emerges in which Jesus is accompanied by a small group of disciples, and within that group an even smaller inner circle of three (Peter, James, and John) present at moments others are not. Peter is consistently the most active character in the narratives, constantly speaking, acting, failing, recovering; in Mark in particular, his behavior is narrated with a frankness that borders on embarrassing: his impetuous speech, his misunderstanding of key moments, his denial.
+4. Before: It is the independent accounts — different in incidental detail but consistent in substance — that carry the marks of genuine independent witness.
+   After: It is the independent accounts, different in incidental detail but consistent in substance, that carry the marks of genuine independent witness.
+5. Before: They are, at their core, the testimony of people who were there — filtered through the theological and literary purposes of the evangelists, shaped by the communities in which they were produced, but grounded in the actual history of what Jesus did and said.
+   After: They are, at their core, the testimony of people who were there, filtered through the theological and literary purposes of the evangelists, shaped by the communities in which they were produced, but grounded in the actual history of what Jesus did and said.
