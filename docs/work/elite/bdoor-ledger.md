@@ -18596,3 +18596,19 @@ Cut in chapter 9: the deep note's lines to Christ (1 Timothy 2:5, Hebrews 7:25, 
 | Psalm 144:4 | 8-22 | exodus and psalms notes (the shadow as what is brief: Psalm 144:4; Job 8:9); BSB | Repository; BSB text |
 
 Cut in chapter 8: the deep note's lines to Christ (John 9:1-3, Luke 13:1-5, Matthew 27:41-43 and the cross breaking Bildad's equation; the New Testament does not draw them from Job); the Babylonian Theodicy (dated only roughly in the note; not needed).
+
+## The plain notes on Job 10 (2026-11-25)
+
+`client/public/bible/notes/job/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Speaking anyway after chapter 9; nearly all to God; the right to know the charge; God's eyes and days unlike a human judge's | 1-7 | job/10.json `story`, `historical`, `literary` | Repository |
+| Milk, cheese and weaving as pictures of the womb; Genesis 2:7; chomer and the potter (Isaiah 64:8; Jeremiah 18:1-6); chesed given and seemingly withdrawn | 8-12 | job/10.json `cultural`, `historical`, `words` (chomer, chesed, sakhakh) | Repository |
+| Psalm 139:13; Genesis 3:19 | 8-12 | job/10.json `cultural` (Psalm 139:13-16), `historical` (Genesis 3:19), `words` (sakhakh); BSB | Repository; BSB text |
+| A life from womb to grave spoken to God; Sheol without light or order; without order as creation undone; tsalmavet | 13-22 | job/10.json `literary`, `cultural`, `words` (tsalmavet) | Repository |
+| Psalm 88:12 | 13-22 | job/3.json `hard` (Psalm 88 among the dark laments); BSB | Repository; BSB text |
+| The hard note: the hunter; suffering distorting perception; the two emphases; neither indifferent nor hostile; verses 1 and 18-19 recorded as a cry, not counsel | 13-22 | job/10.json `hard` | Repository |
+| The self-harm line, handled as 1 Kings 19 was | 13-22 | 1-kings/plain/19.json (1-8) and 2-samuel/plain/17.json (15-23) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 10: the deep note's lines to Christ (John 1:3, 14 and Hebrews 4:15 as the answer to 10:4; the note calls it thematic); Khnum and the Mesopotamian creation stories (not needed).
