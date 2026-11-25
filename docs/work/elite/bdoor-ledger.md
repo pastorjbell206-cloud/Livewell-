@@ -19278,3 +19278,20 @@ Cut in chapter 37: the deep note's line to Christ (Mark 4:41 and the stilling of
 | The hard note: real animal or myth; the speech's real creatures; Psalm 74:14, Isaiah 27:1 and Litan at Ugarit; the middle path; no side; a creature God made and delights in | 25-34 | job/41.json `hard`, `historical` | Repository; each reading in its holders' terms; no side |
 
 Cut in chapter 41: the deep note's line from Isaiah 27:1 to Revelation's dragon and the victory of Christ (the New Testament does not draw it from Job 41); Sobek (not needed).
+
+## The plain notes on Job 42 (2026-11-25)
+
+`client/public/bible/notes/job/plain/42.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Job's last reply quoting 38:2-3 and 40:7; verse 5 as the hinge; dust and ashes (30:19) and Abraham | 1-6 | job/42.json `literary`; the genesis notes (afar va'efer) | Repository |
+| Genesis 18:27 (in part: the verse holds a dash) | 1-6 | the genesis notes on afar va'efer (Job 30:19; 42:6); BSB | Repository; BSB text |
+| The hard note: maas without an object and the translations; nacham as repent or be comforted; the BSB's traditional reading; no confession of the friends' charges; 42:7; words without knowledge taken back, innocence kept | 1-6 | job/42.json `words` (nacham, maas, kun); job/40.json `hard` | Repository; each reading in its holders' terms |
+| The epilogue mirroring the prologue; my servant Job four times (1:8); kun; the costly offering; the accused praying for the accusers; 22:30 fulfilled the other way; Elihu unmentioned | 7-9 | job/42.json `literary`, `cultural`, `words` (kun); job/22.json `christ` (verse 30 and 42:8); job/32.json `hard` | Repository |
+| Shevut and the restoration after exile; the relatives' return (19:13-19); the qesitah (Genesis 33:19; Joshua 24:32); double livestock (1:3), same children; the daughters named and their meanings; the inheritance beyond Numbers 27:1-11 | 10-17 | job/42.json `historical`, `cultural`, `words` (shevut) | Repository |
+| James 5:11; Genesis 25:8 and the phrase old and full of years | 10-17 | job/42.json `christ` (James 5:11), `literary` (Genesis 25:8); BSB | Repository; BSB text; a line the New Testament draws |
+| The hard note: the unease; an older story kept, or restoration as free gift after the demand was let go; God's freedom; the first children not erased or replaced; the doubled livestock and same number of children, an inference interpreters differ on; four generations; no promise of the same ending for every sufferer | 10-17 | job/42.json `hard` | Repository; each reading in its holders' terms |
+| The child-loss line | 10-17 | 2-samuel/plain/12.json (15-25), 1-kings/plain/3.json (16-28), 2-kings/plain/4.json (18-37) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 42: the deep note's lines to Christ (Luke 23:34, Hebrews 7:25 and the resurrection as vindication beside Job's prayer and restoration; the note says the New Testament does not call Job a prophecy of Christ); the Greek postscript identifying Job with Jobab of Genesis 36:33 (later speculation, not needed).
