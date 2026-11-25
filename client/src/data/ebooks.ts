@@ -113,7 +113,7 @@ export const FREE_EBOOKS: Ebook[] = [
     title: "The Reliability of Scripture",
     sub: "Why We Can Trust the Bible We Have",
     line: "Why we can trust the Bible we have — the manuscripts, the canon, the archaeology, and the difference between what inerrancy claims and what its critics attack.",
-    pages: 241,
+    pages: 243,
     cover: "/covers/the-reliability-of-scripture-400.webp",
     pdf: "/ebook/the-reliability-of-scripture/The-Reliability-of-Scripture.pdf",
     epub: "/ebook/the-reliability-of-scripture/The-Reliability-of-Scripture.epub",
