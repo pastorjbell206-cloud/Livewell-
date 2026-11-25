@@ -1725,6 +1725,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-revelation",
     "book-ruth",
     "book-jonah",
+    "book-daniel",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2332,5 +2333,28 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(t).not.toMatch(/pagan|heathen|savage|brutal|cruel|wicked city|\bIraq\b|modern/i);
     // Jonah's wish to die (4:3, 8) is not told to children.
     expect(captions(f)).not.toMatch(/wish(ed)? to die|take my life|better for me to die/i);
+  });
+
+  it("Daniel states the datings and the readings of its visions fairly, predicts nothing, names no one of today, and tells the furnace and the lions gently", () => {
+    const f = filmFile("book-daniel");
+    expect(f.care).toBe(filmFile("book-isaiah").care);
+    const vision = f.frames.find(x => x.id === "son-of-man")!;
+    expect(vision.older).toContain("Babylon, Media-Persia, Greece and Rome");
+    expect(vision.older).toContain("Babylon, Media, Persia and Greece");
+    expect(f.differ?.text).toContain("in the sixth century BC");
+    expect(f.differ?.text).toContain("in the 160s BC");
+    expect(f.differ?.text).toContain("or by stages");
+    expect(f.differ?.text).toMatch(/takes no side and predicts no date/);
+    const t = text(f);
+    expect(t).not.toMatch(/antichrist|rapture|tribulation|end times|seventy weeks|\b(19|20)\d\d\b|soon|any day now/i);
+    expect(t).not.toMatch(/Russia|China|America|United States|European|Iran|Iraq|pope|president|Israel today/i);
+    // Ages 7 to 11: no burning, no one eaten, no one killed.
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|eat(en)?\b|kill|die|dead|beast|blood/i);
+    expect(f.frames.find(x => x.id === "bow")!.younger).toContain("they walk out unhurt");
+    expect(f.frames.find(x => x.id === "window")!.younger).toContain("in the morning he comes out safe");
+    // No figure is drawn in the clouds; the statue is never gold.
+    expect(vision.still).toContain("No one is drawn.");
+    expect(f.frames.find(x => x.id === "bow")!.still).not.toMatch(/gold(en)? statue/i);
   });
 });

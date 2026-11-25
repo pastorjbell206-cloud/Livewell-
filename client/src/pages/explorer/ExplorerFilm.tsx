@@ -363,6 +363,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Jonah in seven moving pictures: what it is, how its four chapters are laid out, a God whom wind and sea obey, down and up again, the city that turned, the question at the end, and where to start reading.",
     },
+    "book-daniel": {
+      title: "Daniel: the Most High rules: Bible Explorer",
+      description:
+        "The whole book of Daniel in seven moving pictures, told gently: what it is, how it is laid out, the Most High who rules the kingdoms, faith that will not bow, Daniel at his window, one like a son of man, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

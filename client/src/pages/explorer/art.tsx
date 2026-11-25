@@ -947,6 +947,20 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-k" d="M70,61a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z" />
     </>
   ),
+  /* Daniel: an open window looking toward far hills, and the gold of morning in it. */
+  "book-daniel": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M20,84V16H80V84Z" tone="c" off={1} />
+      <path className="pl-paper" d="M32,70V28H68V70Z" />
+      <path className="pl-m" d="M40,62a10,10 0 0 1 20,0Z" />
+      <path className="pl-l" d="M40,62a10,10 0 0 1 20,0" />
+      <path className="pl-l" d="M32,62C40,56 46,58 50,62C56,56 62,56 68,60" />
+      <path className="pl-l" d="M32,70V28H68V70ZM50,28V44" />
+      <path className="pl-f" d="M26,76H74" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

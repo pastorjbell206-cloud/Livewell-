@@ -2135,6 +2135,116 @@
     }
    ]
   },
+  "book-daniel": {
+   "title": {
+    "file": "book-daniel/title.mp3",
+    "hash": "c93abe3175c4b909c9ab",
+    "seconds": 2.53,
+    "bytes": 15764
+   },
+   "younger": [
+    {
+     "id": "two",
+     "file": "book-daniel/younger/01-two.mp3",
+     "hash": "7a218ad124bed595c11d",
+     "seconds": 25.44,
+     "bytes": 153140
+    },
+    {
+     "id": "layout",
+     "file": "book-daniel/younger/02-layout.mp3",
+     "hash": "ba0a407a04e28bf912a1",
+     "seconds": 27.63,
+     "bytes": 166388
+    },
+    {
+     "id": "rules",
+     "file": "book-daniel/younger/03-rules.mp3",
+     "hash": "3265abc76c41f9051373",
+     "seconds": 24.77,
+     "bytes": 149252
+    },
+    {
+     "id": "bow",
+     "file": "book-daniel/younger/04-bow.mp3",
+     "hash": "db79dbcda4299b9b073b",
+     "seconds": 25.81,
+     "bytes": 155444
+    },
+    {
+     "id": "window",
+     "file": "book-daniel/younger/05-window.mp3",
+     "hash": "bddb398b4751749dfb8c",
+     "seconds": 22.6,
+     "bytes": 136148
+    },
+    {
+     "id": "son-of-man",
+     "file": "book-daniel/younger/06-son-of-man.mp3",
+     "hash": "524c3712ce108878a3ef",
+     "seconds": 26.22,
+     "bytes": 157892
+    },
+    {
+     "id": "start",
+     "file": "book-daniel/younger/07-start.mp3",
+     "hash": "1dcfbcdac7ebc10ef70b",
+     "seconds": 25.33,
+     "bytes": 152564
+    }
+   ],
+   "older": [
+    {
+     "id": "two",
+     "file": "book-daniel/older/01-two.mp3",
+     "hash": "1f47f2dc77768d7cadcb",
+     "seconds": 26.7,
+     "bytes": 160772
+    },
+    {
+     "id": "layout",
+     "file": "book-daniel/older/02-layout.mp3",
+     "hash": "558d287277d4c89e2728",
+     "seconds": 26,
+     "bytes": 156596
+    },
+    {
+     "id": "rules",
+     "file": "book-daniel/older/03-rules.mp3",
+     "hash": "b444b5f07e0563194939",
+     "seconds": 23.68,
+     "bytes": 142628
+    },
+    {
+     "id": "bow",
+     "file": "book-daniel/older/04-bow.mp3",
+     "hash": "726eccecb02085d36d3c",
+     "seconds": 26.81,
+     "bytes": 161348
+    },
+    {
+     "id": "window",
+     "file": "book-daniel/older/05-window.mp3",
+     "hash": "4af62a28c4b1c3ebe0f1",
+     "seconds": 23.73,
+     "bytes": 142916
+    },
+    {
+     "id": "son-of-man",
+     "file": "book-daniel/older/06-son-of-man.mp3",
+     "hash": "87f2ef4ad5efd49c90c9",
+     "seconds": 29.7,
+     "bytes": 178772
+    },
+    {
+     "id": "start",
+     "file": "book-daniel/older/07-start.mp3",
+     "hash": "5e4caeb0f1b7f5ab6d39",
+     "seconds": 27.73,
+     "bytes": 166964
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",
