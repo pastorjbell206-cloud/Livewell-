@@ -19695,3 +19695,24 @@ Cut in chapter 19: the deep note's thematic contrast with Colossians 1:20, which
 | 1 Samuel 17:45 | 4-8 | BSB | BSB text |
 
 Cut in chapter 20: the deep note's thematic line to Colossians 2:15 and Romans 8:37, which the New Testament does not draw from this chapter. Polydactyly as a named condition is left out. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 21 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 21:1; 21:2 (its clause); 21:3 (Joab's questions); 21:4 (its first clause); 21:5; 21:6 (its clause); 21:7; 21:8 | 1-8 | BSB | BSB text |
+| The one sin told at length; the site chosen in sin, repentance and mercy; 22:1; census for taxes or conscription; the king's control; the ransom of Exodus 30:12; Joab's objection; why the census was sinful unstated, the three suggestions; the numbers against 2 Samuel 24:9; Levi and Benjamin; the site's numbers page, no side taken | 1-8 | 1-chronicles/21.json `story`, `historical`, `cultural`, `hard`; 1-chronicles book page part "census"; questions/contradictions/numbers-in-samuel-kings-and-chronicles.json | Repository |
+| Exodus 30:12 (its clauses) | 1-8 | BSB | BSB text |
+| The hard note: 2 Samuel 24:1 against 21:1; the three readings (two levels, as in Job; a later development naming the adversary; satan as a human adversary, the article); David's responsibility (21:8); agreement with the 2 Samuel 24 notes | 1-8 `hard` | 1-chronicles/21.json `hard`, `words` (satan); 2-samuel/plain/24.json (1-9 `hard`); the book page part "census" | Repository; the readings in their holders' terms |
+| The three choices (21:9-12); 21:13; 21:14; 21:15 (its clause and the LORD's words); the angel and sackcloth (21:16); 21:17 | 9-17 | BSB | BSB text |
+| Rachamim; nacham of God; sackcloth; 2 Samuel 24:13, seven years in the Hebrew and three in the Septuagint, the BSB following the latter; David at his worst and best | 9-17 | 1-chronicles/21.json `historical`, `cultural`, `literary`, `words` (rachamim, nacham); BSB of 2 Samuel 24:13 | Repository; BSB text |
+| 2 Samuel 24:17 (its first two sentences) | 9-17 | BSB | BSB text |
+| The hard note: David's protest stands; 2 Samuel's opening anger against Israel; the king's act as the people's act; the plague cut short; God's rule, responsibility and mercy held together | 9-17 `hard` | 2-samuel/plain/24.json (10-17 `hard`); 1-chronicles/21.json `literary` | Repository |
+| Care line ("A word of care. This story must not be used...") | 9-17 `hard` | Reused byte for byte; found whole in 13 places, among them 2-samuel/plain/24.json and 1-chronicles/plain/13.json | care.mjs |
+| The angel's order (21:18); Ornan and his sons (21:20); Ornan's offer (21:23); 21:24 (David's reason); 21:25; 21:26 (its clause); the sword sheathed (21:27); 21:30 (its clause) | 18-30 | BSB | BSB text |
+| Threshing floors and sledges; Ornan as Araunah, a Jebusite; goren five times; fire as acceptance (Leviticus 9:24; 1 Kings 18:38); why this altar and not Gibeon's; 2 Samuel 24:24's price and the two explanations; Mount Moriah and Abraham | 18-30 | 1-chronicles/21.json `historical`, `cultural`, `literary`, `words` (goren) | Repository |
+| 2 Chronicles 3:1 (its clauses); Genesis 22:2 (its phrase) | 18-30 | BSB | BSB text |
+
+Cut in chapter 21: the deep note's typological lines to John 10:11 and John 2:19-21, which the New Testament does not draw from this chapter, and Moriah as a figure of a substitute provided by God. No key is offered for reading anyone's suffering.
