@@ -852,6 +852,16 @@ differ in is said under each book. Each was then edited (records in
   Then edited (`deconstruction-of-faith.md`): 477 dashes in his prose to 0,
   every edit punctuation, fact diff passed on all twenty files; rebuilt,
   still 180 pages, `--verify` identical (47,777 words; 227,704 characters).
+- **What Does the Bible Really Say About Homosexuality?**
+  (`bible-and-homosexuality`). The PDF and EPUB carry the same text: the
+  letter-for-letter comparison found nothing but the PDF's running heads,
+  page numbers and repeated block-quotation references, which the comparison
+  sets aside, and a few places where text extraction reads a pull quote out of
+  order. The PDF's copyright notice is the fuller one (it adds "No part of
+  this book may be reproduced ..." and the site's address) and the new files
+  use it; both originals print "James C. Bell" there, and so do the new
+  files. 189 pages became 167 (`client/src/data/ebooks.ts` says 167).
+  `--verify`: identical (45,417 words; 233,792 characters).
 
 ### The apparatus
 

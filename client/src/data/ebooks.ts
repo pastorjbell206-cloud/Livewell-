@@ -125,7 +125,7 @@ export const FREE_EBOOKS: Ebook[] = [
     title: "What Does the Bible Really Say About Homosexuality?",
     sub: "Scripture, Same-Sex Relationships, and the Church's Christ-Centered Response",
     line: "Scripture, same-sex relationships, and the church's Christ-centered response — a pastoral reading that refuses the false choice between truth and love.",
-    pages: 189,
+    pages: 167,
     cover: "/covers/bible-and-homosexuality-400.webp",
     pdf: "/ebook/bible-and-homosexuality/What-the-Bible-Says-About-Homosexuality.pdf",
     epub: "/ebook/bible-and-homosexuality/What-the-Bible-Says-About-Homosexuality.epub",
