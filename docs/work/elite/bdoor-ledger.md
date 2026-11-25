@@ -20289,3 +20289,20 @@ Cut in chapter 24: the deep note's line from the murdered prophets to Jesus' own
 | The hard note: the atrocity reported without praise; not commanded; ancient practice; the corrupting success; numbers as units; the verdict on pride and idolatry | 14-28 `hard` | 2-chronicles/25.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 25: the deep note's line to Matthew 4:8-10, which does not cite this chapter. No care line is needed in this chapter; the killing of captives is named, not described.
+
+## The plain notes on 2 Chronicles 26 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 26:1 paraphrased; Eloth (26:2); fifty-two years (26:3); 26:5; the wars and tribute (26:6-8); the towers, cisterns and lands (26:9-10); 26:10 (its phrase); the army (26:11-14); 26:15 | 1-15 | BSB | BSB text |
+| Azariah in 2 Kings 14:21-15:7; the pattern of Joash and Amaziah; the most prosperous since Solomon; the co-regencies, about 792 to 740 BC; Jeroboam the Second; Assyria weak, Aram pushed back; Amos, Hosea and the earthquake; success as God's gift; Eloth and the Red Sea; the devices and the catapult question; the frame of help | 1-15 | 2-chronicles/26.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Amos 1:1 (its phrase); Zechariah 14:5 (its phrase) | 1-15 | BSB | BSB text |
+| 26:16; the priests (26:17); 26:18 (its first two sentences); the rage and the disease (26:19); 26:20 (its last sentence); 26:21; the burial (26:23) paraphrased | 16-23 | BSB | BSB text |
+| The turned word; gavah; ma'al; kingship and priesthood separate (Exodus 30:7-8; Numbers 16); neighboring priest-kings; tsara and Hansen's disease; Leviticus 13:45-46; the house of separateness; 2 Kings 15:5; the Uzziah plaque in the Israel Museum; the judgment on one king's defiance, not a key for anyone's illness | 16-23 | 2-chronicles/26.json `historical`, `cultural`, `literary`, `words` (ma'al, gavah, tsara, chophshut) | Repository |
+| Care line ("It needs to be said plainly. The Bible does not teach that sickness...") | 16-23 | Reused byte for byte from the site's existing plain notes and the 2 Chronicles book page | care.mjs |
+| Isaiah 6:1 | 16-23 | BSB | BSB text |
+| The hard note: deliberate defiance after warning; Leviticus 10 and Numbers 16; the fitting judgment; the honest difficulty | 16-23 `hard` | 2-chronicles/26.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 26: the deep note's lines to Psalm 110:4, Zechariah 6:13 and Hebrews as the meeting of king and priest, which the New Testament does not draw from this chapter.
