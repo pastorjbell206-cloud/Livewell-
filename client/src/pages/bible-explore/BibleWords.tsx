@@ -140,7 +140,7 @@ export function WordsView({ data }: { data: WordsData }) {
               {g.words.length} {g.words.length === 1 ? "word" : "words"}. {g.note}
             </p>
           </div>
-          <ul className="bk-words bx-words">
+          <ul className={`bk-words bx-words${i ? " bx-far" : ""}`}>
             {g.words.map((w) => {
               const first = !placed.has(w.id);
               placed.add(w.id);

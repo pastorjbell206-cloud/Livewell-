@@ -62,7 +62,8 @@ export default function AtlasMap({
     const order = [...places].sort((a, b) => Number(b.id === selected) - Number(a.id === selected) || b.books.length - a.books.length);
     for (const p of order) {
       const given = p.frames.find((f) => f.frame === frame)?.label;
-      const on = p.id === selected;
+      // The chosen place and Jerusalem (the drawing's one mustard mark) always carry their names.
+      const on = p.id === selected || p.ids.includes("jerusalem");
       if (given === false && !on) continue;
       const first: Side = (given || undefined) ?? p.ids.map((i) => LABEL[i]).find(Boolean) ?? DEFAULT;
       const text = first.text ?? shortName(p.name);

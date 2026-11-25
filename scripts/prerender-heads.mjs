@@ -1036,6 +1036,22 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // Key words of the Bible: every word the book pages explain, A to Z, with
+  // each book's own explanation (client/public/bible/explore/words.json).
+  "/study/words": async () => {
+    const d = readJsonSafe("client/public/bible/explore/words.json");
+    if (!d?.words?.length) return null;
+    const books = new Map(d.books.map((b) => [b.slug, b]));
+    const word = (w) => `<li id="${escapeHtml(w.id)}"><h2>${escapeHtml(w.word)}</h2>\n${w.entries.map((e) => `<p>${escapeHtml(e.line)} <a href="/study/bible/${e.book}">${escapeHtml(books.get(e.book)?.name ?? e.book)}</a></p>`).join("\n")}</li>`;
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Key words of the Bible</h1>`,
+        `<p class="pre-subtitle">The words the book pages stop to explain, in one list. Search it, or go by language.</p>`,
+        ...Array.from({ length: Math.ceil(d.words.length / 60) }, (_, k) => `<ul${k ? ' class="pre-far"' : ""}>\n${d.words.slice(k * 60, k * 60 + 60).map(word).join("\n")}\n</ul>`),
+      ]),
+    };
+  },
   // Paul's travels: every trip's places in order with what happened there and
   // its Acts reference, then the churches and the letters written to them
   // (client/public/explorer/travels.json; places named as the Acts book page

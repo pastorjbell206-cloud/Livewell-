@@ -67,7 +67,7 @@ export function jumpTo(id: string) {
   if (!el) return;
   window.history.replaceState(null, "", `#${id}`);
   let tries = 0;
-  let last = NaN;
+  let last = Infinity;
   const go = () => {
     // Under the fixed masthead, and at once: the page's own smooth scrolling would never settle here.
     window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 90, behavior: "instant" as ScrollBehavior });

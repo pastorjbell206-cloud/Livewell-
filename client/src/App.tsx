@@ -174,6 +174,7 @@ const StudyBibleSearch = lazy(() => import("./pages/StudyBibleSearch"));
 const HowToStudy = lazy(() => import("./pages/HowToStudy"));
 const BibleTimeline = lazy(() => import("./pages/bible-explore/BibleTimeline"));
 const BibleAtlas = lazy(() => import("./pages/bible-explore/BibleAtlas"));
+const BibleWords = lazy(() => import("./pages/bible-explore/BibleWords"));
 // Tracks: a few numbered sessions in order, each using a page the site already has (lib/tracks.ts).
 const Tracks = lazy(() => import("./pages/tracks/Tracks"));
 const Track = lazy(() => import("./pages/tracks/Track"));
@@ -631,6 +632,7 @@ function Router() {
         {/* The book pages, explored across the whole Bible (scripts/lib/bible-explore.mjs). */}
         <Route path="/study/timeline" component={BibleTimeline} />
         <Route path="/study/atlas" component={BibleAtlas} />
+        <Route path="/study/words" component={BibleWords} />
         <Route path="/tracks" component={Tracks} />
         <Route path="/tracks/:slug" component={Track} />
         {/* A track's leader's guide and the whole track to print, before a session number. */}
