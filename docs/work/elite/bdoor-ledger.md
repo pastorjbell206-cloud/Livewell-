@@ -20546,3 +20546,23 @@ Cut in chapter 1: the deep note's lines to Christ (Matthew 11:19 and wisdom vind
 | The hard note: the covenant pattern; how things tend to go and will finally be set right; not a promise that the righteous never lose a home; the Psalms and Job; Daniel and Ezekiel in exile; true as a direction and a final outcome; no reason to judge someone by their losses | 20-22 `hard` | proverbs/2.json `hard`; the brief's crisis rules | Repository |
 
 Cut in chapter 2: the deep note's lines to Christ (the treasure in the field and the pearl, Matthew 13:44-46; Colossians 2:3 as Christ the treasure this chapter tells the young to seek; the note calls the connection thematic); the widening of the land into the renewed earth (not needed). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 3 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:2; 3:3; 3:5-6; 3:7; the firstfruits and full barns (3:9-10); 3:11-12 | 1-12 | BSB | BSB text |
+| From the heart to money, hardship and neighbor; wisdom as Israel's faith lived out; the neck and the tablet, ornaments and writing tablets, visible and inward; Deuteronomy 6; chesed and emet, Exodus 34:6; batach and leaning as putting weight on a support; firstfruits (Exodus 23:19; Deuteronomy 26:1-11); yakach, correction for the son's good | 1-12 | proverbs/3.json `story`, `historical`, `cultural`, `words` (batach, chesed, yakach) | Repository |
+| Deuteronomy 8:5 (from ‘just as’); Hebrews 12:6 (its first clause, the Greek wording); Hebrews 12:11 | 1-12 | proverbs/3.json `historical`, `christ` (Hebrews 12:5-11); hebrews/plain/12.json `ot`; the chapter data's cross-references for 3:12 (Deuteronomy 8:5); BSB | Repository; BSB text; the New Testament's own quotation |
+| The hard note: verses 2, 9-10 and 16 read as guarantees; proverbs, not contracts; the usual pattern; the discipline of verses 11-12; the faithful who were poor, sick or died young; Job, Ecclesiastes, the psalms; no promise that any faithful life is free of loss; the formula that wounds; Hebrews using verse 12 to say believers belong, not that pain is a penalty | 1-12 `hard` | proverbs/3.json `hard`; hebrews/plain/12.json (4-11 `hard`) | Repository |
+| Care line (‘It needs to be said plainly. The Bible does not teach that sickness comes from too little faith...’ to ‘...lists places to turn.’) | 1-12 `hard` | 2-kings/plain/15.json (1-7 `hard`) and the other notes care.mjs names | Reused byte for byte; Find Help named |
+| 3:13; 3:14; 3:15; 3:16; 3:17; 3:18 (its first clause); 3:19; the depths and dew (3:20) | 13-20 | BSB | BSB text |
+| Rubies and fine gold as luxury goods; the tree of life and Eden (Genesis 2 and 3); 11:30, 13:12, 15:4; creation by wisdom pointing to chapter 8; living in step with the order of creation | 13-20 | proverbs/3.json `cultural`, `story`, `literary`, `doctrines` (wisdom); the chapter data's cross-references for 3:18 | Repository |
+| Psalm 104:24 (its first two sentences); Revelation 22:2 (its last sentence) | 13-20 | the chapter data's cross-references for 3:19 (Psalm 104:24) and 3:18 (Revelation 22:2); proverbs/3.json `christ` (Revelation 22:2); BSB | Repository; BSB text |
+| 3:21; safety (3:23); 3:24; 3:26; 3:27; 3:28 paraphrased (it holds an inner quotation and a dash); 3:29-30 paraphrased; 3:31; 3:32 (its clause); 3:33; 3:34 | 21-35 | BSB | BSB text |
+| The village of mutual dependence; tomorrow as hardship for a day laborer; wages paid the same day; the trusting neighbor unguarded; the closing contrasts; verse 34 much quoted | 21-35 | proverbs/3.json `cultural`, `literary`, `historical` | Repository |
+| Deuteronomy 24:15 (its first clause); James 4:6 and 1 Peter 5:5 quoting 3:34 in its Greek form | 21-35 | proverbs/3.json `cultural` (Deuteronomy 24:14-15), `historical` (James 4:6; 1 Peter 5:5); BSB | Repository; BSB text; the New Testament's own quotation |
+
+Cut in chapter 3: the deep note's lines to Christ (Jesus as the Son who learned obedience, Hebrews 5:8, as the fullest picture of verse 5; the tree of life open to those redeemed by the Lamb; creation by wisdom as all things made through Christ, John 1:3 and 1 Corinthians 1:24, set beside verse 19; the note calls them developments, not predictions).
