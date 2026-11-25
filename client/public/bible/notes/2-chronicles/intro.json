@@ -413,7 +413,12 @@
               "7:12",
               "36:19"
             ],
-            "line": "Solomon built the temple on Mount Moriah (3:1), the place God chose (7:12). Babylon burned it (36:19)."
+            "line": "Solomon built the temple on Mount Moriah (3:1), the place God chose (7:12). Babylon burned it (36:19).",
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
           },
           {
             "id": "hebron",
@@ -444,7 +449,12 @@
             "refs": [
               "13:19"
             ],
-            "line": "A town of the north, one of the cities Abijah took from Jeroboam (13:19)."
+            "line": "A town of the north, one of the cities Abijah took from Jeroboam (13:19).",
+            "label": {
+              "dx": -10,
+              "dy": 5,
+              "anchor": "end"
+            }
           },
           {
             "id": "jericho",
@@ -454,7 +464,12 @@
             "refs": [
               "28:15"
             ],
-            "line": "‘The City of Palms’, where the men of Ephraim brought back the captives from Judah (28:15)."
+            "line": "‘The City of Palms’, where the men of Ephraim brought back the captives from Judah (28:15).",
+            "label": {
+              "dx": 4,
+              "dy": -12,
+              "anchor": "start"
+            }
           },
           {
             "id": "samaria",
@@ -488,7 +503,12 @@
               "24:23",
               "28:5"
             ],
-            "line": "The Aramean capital. Asa bought its king's help with the temple's silver (16:2), and its armies later struck Judah (24:23; 28:5)."
+            "line": "The Aramean capital. Asa bought its king's help with the temple's silver (16:2), and its armies later struck Judah (24:23; 28:5).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
           }
         ]
       }

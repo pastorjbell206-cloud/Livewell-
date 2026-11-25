@@ -20169,3 +20169,7 @@ Cut in chapter 17: the deep note's lines to Matthew 9:35, Matthew 28:19-20 and J
 | 1 Kings 22:34 (its first sentence) | 28-34 | BSB | BSB text |
 
 Cut in chapter 18: the deep note's lines to Matthew 9:36, Mark 6:34, John 10:11 and Matthew 7, which do not cite this chapter. Ahab's death is told in the text's own few words. No care line is needed in this chapter.
+
+## 2 Chronicles' book page: map labels (2026-11-25)
+
+The walk of the served build at 390 and 1440 found the Bethel and Jericho labels overlapping on the 2 Chronicles map. The label offsets for Jerusalem, Bethel, Jericho and Damascus are now the ones the 1 Kings map already uses for the same places. No words changed.
