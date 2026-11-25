@@ -111,7 +111,7 @@ describe("The crisis lines on Find Help", () => {
     const src = fs.readFileSync(path.resolve(__dirname, "../../../scripts/prerender-heads.mjs"), "utf8");
     const body = src.slice(src.indexOf('"/help": async () => {'), src.indexOf("// The Wisdom Finder: its head"));
     const held = document.createElement("div");
-    held.innerHTML = [...body.matchAll(/^\s*`(<(?:p|h1)\b.*<\/(?:p|h1)>)`,$/gm)].map((m) => m[1]).join("");
+    held.innerHTML = Array.from(body.matchAll(/^\s*`(<(?:p|h1)\b.*<\/(?:p|h1)>)`,$/gm), (m) => m[1]).join("");
     expect(body).toContain('readJsonSafe("client/src/data/help-chips.json")');
     expect(body).not.toContain("help-now-heading");
 
@@ -121,12 +121,12 @@ describe("The crisis lines on Find Help", () => {
     const line = screen.getByText(/In danger or thinking about ending your life\?/);
     const heldLine = held.querySelector("p")!;
     expect(words(heldLine)).toBe(words(line));
-    expect([...heldLine.querySelectorAll("a")].map((a) => [a.textContent, a.getAttribute("href")])).toEqual(
-      [...line.querySelectorAll("a")].map((a) => [a.textContent, a.getAttribute("href")]),
+    expect(Array.from(heldLine.querySelectorAll("a"), (a) => [a.textContent, a.getAttribute("href")])).toEqual(
+      Array.from(line.querySelectorAll("a"), (a) => [a.textContent, a.getAttribute("href")]),
     );
     expect(words(held.querySelector("h1"))).toBe(words(screen.getByRole("heading", { level: 1 })));
     // The head's line, then the lede under it (InnerHead sets both as .pg-head__lede).
-    const head = [...document.querySelectorAll(".pg-head__lede")].map(words);
+    const head = Array.from(document.querySelectorAll(".pg-head__lede"), words);
     expect([words(held.querySelector(".pre-subtitle")), words(held.querySelector(".pre-lede"))]).toEqual(head);
   });
 });
