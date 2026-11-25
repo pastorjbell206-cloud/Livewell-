@@ -20580,3 +20580,27 @@ Cut in chapter 2: the deep note's lines to Christ that the New Testament does no
 | Isaiah 41:10 (its clauses); Psalm 142:5 (the psalmist's words, inside the BSB's quotation marks); Romans 12:19 (its clause) | 55-66 `later` | BSB | BSB text |
 
 Cut in chapter 3: the deep note's lines to Christ that the New Testament does not draw (the man under the rod as a pattern of Jesus; verse 30 beside Matthew 5:39; the mercies grounded in the cross and the empty tomb). The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Lamentations 4 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (in double quotes for its exclamation, and its last sentence); 4:2 (its clause, before the exclamation); 4:3; 4:4 (its last sentence); 4:5 (its clauses); 4:6 (its clause); 4:7 (its clause); 4:8 (its clauses); 4:9 (its clause); 4:10 named, not quoted; 4:11 (its clauses and the rest) | 1-11 | BSB | BSB text |
+| A year and a half; the famine (Jeremiah 52:6); gold, clay, skin as signs of rank; the jackal and the ostrich (Job 39:13-16); Sodom overthrown in an instant; Deuteronomy 28:53-57 repeated; two-line acrostic, shorter and quieter; the survivors looking again | 1-11 | lamentations/4.json `historical`, `cultural`, `literary`, `story`, `doctrines` | Repository |
+| Job 39:16 (its clause); Ezekiel 16:48 (its clause) | 1-11 `later` | lamentations/4.json `cultural` (Job 39), `hard` (Ezekiel 16:48); BSB | BSB text |
+| The hard note: Sodom in Genesis 19; longer suffering, not necessarily worse sin; more asked of those given more; verse 10 a cry of horror, not a lesson; Judah's own Scripture, not a key, no warrant to call any people's suffering deserved | 1-11 `hard` | lamentations/4.json `hard`; 2-kings/plain/25.json (8-21 `hard`) | Repository; agrees with the 2 Kings 25 notes |
+| Care line, the disaster line ("A word for anyone who has lived through a flood...") | 1-11 `hard` | Reused byte for byte from 2-kings/plain/25.json (first typed with a variant ending, caught by the care check and replaced by the exact line read by script) | care.mjs |
+| 4:12; 4:13; 4:14 (its clause); 4:15 paraphrased around its inner quotations; 4:16 (its first sentence and the rest) | 12-16 | BSB | BSB text |
+| The temple as a supposed guarantee (Jeremiah 7:4); leaders' duty and failure; the cry of Leviticus 13:45 turned on the priests; leaders' corruption bringing ruin on the whole | 12-16 | lamentations/4.json `cultural`, `doctrines`; bible/guides/reading-prophets.json (the temple treated as a guarantee) | Repository |
+| Jeremiah 23:11 (the LORD's words, inside the BSB's quotation marks); Leviticus 13:45 (its clause, before the inner quotation) | 12-16 `later` | BSB | BSB text |
+| 4:17 (its last sentence); 4:18 (its clause, before the exclamation); 4:19 (its first clause and the rest); 4:20 (its first sentence; the rest paraphrased around its inner quotation) | 17-20 | BSB | BSB text |
+| Egypt the nation that could not save; the siege lifted and resumed (Jeremiah 37:5-11); the flight toward the Arabah and the capture near Jericho (Jeremiah 52:7-11; 2 Kings 25:4-5); Riblah; not dwelt on; mashiach and anointing; the breath of their life and the view that Jeremiah would not have shared the hope | 17-20 | lamentations/4.json `historical`, `words`, `doctrines`; lamentations/intro.json `author`; 2-kings/plain/25.json (1-7) | Repository; the view on Jeremiah stated as some scholars' |
+| Jeremiah 37:7 (its clause); Psalm 89:38 (its clauses); Jeremiah 23:5 (its clause) | 17-20 `later` | lamentations/4.json `christ` (Jeremiah 23:5-6); BSB | BSB text |
+| 4:21 (two clauses, and the rest); 4:22 (its first sentence, and the rest) | 21-22 | BSB | BSB text |
+| Edom to the southeast; Jacob and Esau; Edom's gloating and its help to the invaders (Obadiah 11-14; Psalm 137:7); Uz and Job; the cup of wrath (Jeremiah 25:15-29); the first word of an end; avon twice | 21-22 | lamentations/4.json `historical`, `cultural`, `words`, `doctrines`, `hard` | Repository |
+| Isaiah 40:2 (its clauses); Obadiah 1:10 (its clause); Jeremiah 49:12 named | 21-22 `later` | lamentations/4.json `doctrines` (Isaiah 40:2); BSB | BSB text |
+| The hard note: Edom's conduct; God's justice for all; judgment handed to God; Edom an ancient nation; no people of the present day identified with it; no warrant to wish ruin on any people | 21-22 `hard` | lamentations/4.json `hard`; the brief | Repository; stated as the brief asks |
+
+Cut in chapter 4: the deep note's lines to Christ that the New Testament does not draw (the anointed of verse 20 and Jesus captured and handed over; the cup of verse 21 and Mark 14:36). A sentence guessing what the first hearers remembered of persecuted prophets was cut before commit, as unsourced. The phone number in the deep note's hard answer was not repeated.
