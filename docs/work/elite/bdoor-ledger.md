@@ -20533,3 +20533,26 @@ Cut from the book page: the introduction's lines to Christ that the New Testamen
 | Care line, the grief line ("Grief is not a lack of faith...") | 18-22 `hard` | Reused byte for byte; found whole in 18 places, among them 1-samuel/plain/1.json | care.mjs |
 
 Cut in chapter 1: the deep note's lines to Christ that the New Testament does not draw (verse 12 on the lips of Christ, the mocking passers-by of Mark 15:29, the Comforter of John 14:16). The claim that Jerusalem sat on the roads between Egypt and Mesopotamia was cut before commit, as unsourced for the city itself. The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Lamentations 2 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (in double quotes for its exclamation, and its last clause); 2:2 (its first sentence); 2:3; 2:4 (its first clause); 2:5 (its first sentence); 2:6; 2:7 (two clauses); 2:8; 2:9 (its last clause); 2:10 (its first sentence and the rest) | 1-10 | BSB | BSB text |
+| Who did this; the Lord as subject; covenant and prophets; the footstool and its use for the ark and temple; the soldiers' shout; the feasts and Sabbaths stopped; Zedekiah blinded and taken; the mourning rites; sackcloth of goat hair; elders in the gate | 1-10 | lamentations/2.json `story`, `historical`, `cultural`; lamentations/5.json `cultural` (elders in the gate) | Repository |
+| Psalm 74:1; Amos 8:11 (its clause, after the dash) | 1-10 `later` | lamentations/2.json `words` (chazon and Amos 8:11-12); BSB | BSB text |
+| The hard note: a simile from inside the disaster; covenant judgment, not caprice (2:17); 3:33 and 3:22; sovereignty or consequences, both readings; Judah's own Scripture, not a key for anyone's suffering, no warrant to call any people's suffering deserved, never a reason to blame the Jewish people | 1-10 `hard` | lamentations/2.json `hard`; 2-kings/plain/25.json (8-21 `hard`); the brief | Repository; the readings in their holders' terms; agrees with the 2 Kings 25 notes |
+| 2:11 (two clauses); the children's cry paraphrased around its inner quotation; 2:12 (its last clause); 2:13 (its last two sentences); 2:14 (its first sentence); 2:15 (its first sentence; the mockers' words paraphrased); 2:16 paraphrased; 2:17 (its first sentence) | 11-17 | BSB | BSB text |
+| Siege as the most feared war, the weak first; Hananiah and two years (Jeremiah 28:1-4); peace, peace (Jeremiah 6:14); the gestures of scorn; days of old and Deuteronomy 28 | 11-17 | lamentations/2.json `historical`, `cultural`, `doctrines` | Repository |
+| Jeremiah 6:14 (its clause, before the inner quotation); Jeremiah 9:1 (its last sentence); Psalm 48:2 (its clause) | 11-17 `later` | BSB | BSB text |
+| The hard note: judgment falls on the innocent; tears, not justification; no warrant to read a child's suffering or death as punishment | 11-17 `hard` | lamentations/2.json `doctrines` (suffering), `hard` | Repository |
+| Care line, the child-loss line ("If you carry grief or guilt about a pregnancy...") | 11-17 `hard` | Reused byte for byte; found whole in 2-kings/plain/4.json and 2-samuel/plain/12.json | care.mjs |
+| 2:18 (two clauses); 2:19 (its second sentence and last sentence, and its first); 2:20 (its first sentence; the rest named, not quoted or described); 2:21 (its first sentence); 2:22 (its last sentence) | 18-22 | BSB | BSB text |
+| The watches of the night; lifted hands; priests and prophets killed (2 Chronicles 36:17); the day of his anger framing the poem; honest protest as prayer; Deuteronomy 28:53 and 2 Kings 6:28-29 | 18-22 | lamentations/2.json `historical`, `cultural`, `literary`, `doctrines`; mark/plain notes (the watches of the night); job notes (lifted hands as prayer) | Repository |
+| Psalm 62:8 (its clause); Isaiah 51:17 (its clause) | 18-22 `later` | BSB | BSB text |
+| The hard note: lament is not unbelief; the psalms and Job; spoken to God; horror, not lesson; permission to protest | 18-22 `hard` | lamentations/2.json `hard`; lamentations/3.json `hard` | Repository |
+| Care lines, the grief line and the self-harm line | 18-22 `hard` | Reused byte for byte; found whole in 18 and 34 places | care.mjs |
+
+Cut in chapter 2: the deep note's lines to Christ that the New Testament does not draw (Jesus bearing the wrath the chapter describes; the head-shaking of Mark 15:29; Luke 19:41-44 and AD 70 set beside the chapter). The acts in 2:20 are named, not quoted or described. The phone number in the deep note's hard answer was not repeated.
