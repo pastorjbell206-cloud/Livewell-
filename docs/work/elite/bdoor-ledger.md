@@ -19751,3 +19751,18 @@ Cut in chapter 22: the deep note's lines to 1 Peter 2:5, Ephesians 2:21-22, Isai
 | Numbers 4:3 (its phrase); Ezra 3:8 (its last sentence) | 24-32 | BSB | BSB text |
 
 Cut in chapter 23: the deep note's lines to Colossians 2:9, John 1:14, 1 Peter 2:5 and Hebrews 13:15, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 24 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 24:1 (its first sentence); Nadab and Abihu (24:2); Zadok and Ahimelech, sixteen and eight (24:3-4); 24:5 (its first clause); the scribe (24:6); 24:10; 24:19 (its first clause) | 1-19 | BSB | BSB text |
+| The rotation by week and at festivals; Leviticus 10:1-2; Abiathar removed (1 Kings 2:26-27) and Zadok's line; lots (Proverbs 16:33); goral; rivalry and favoritism prevented; Nehemiah 12; Jehoiarib and Mattathias, second century BC (1 Maccabees 2:1); the two views of the system's date | 1-19 | 1-chronicles/24.json `historical`, `cultural`, `words` (goral) | Repository |
+| Luke 1:5 (its clause); Luke 1:8-9; the angel and John's birth (Luke 1:5-13) | 1-19 | 1-chronicles/24.json `historical`, `christ`; BSB | Repository; the New Testament's own use; BSB text |
+| The further list (24:20-30); 24:31 (its first part) | 20-31 | BSB | BSB text |
+| The list repeating and extending chapter 23; the younger brothers alike; records of descent after the exile (Ezra 2:61-62) | 20-31 | 1-chronicles/24.json `cultural`, `literary` | Repository |
+| Proverbs 16:33 | 20-31 | BSB | BSB text |
+
+Cut in chapter 24: the deep note's contrast with Hebrews 7:23-27, which does not cite this chapter. No care line is needed in this chapter.
