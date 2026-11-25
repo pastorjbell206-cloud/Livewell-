@@ -20570,3 +20570,22 @@ Cut in chapter 2: the deep note's lines to the bridegroom in John 3:29, Mark 2:1
 | 1 Kings 12:16 (paraphrased); Amos 9:11; Jeremiah 30:9; Ezekiel 34:23-24 | 4-5 | hosea/3.json `historical`, `christ` | Repository |
 
 Cut in chapter 3: the deep note's lines to Jesus as son of David (Matthew 1:1; Luke 1:32-33), to redemption bought at a price (1 Corinthians 6:20; 1 Peter 1:18-19) and to Romans 5:8, which the New Testament does not draw from this chapter. Verse 1 is quoted only up to its inner quotation's first sentence, so that no quotation holds another.
+
+## The plain notes on Hosea 4 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (to its colon; the charge paraphrased); 4:2; 4:3 paraphrased | 1-3 | BSB | BSB text |
+| From household to public preaching; chapters 4 to 14 as undated oracles; an opening statement in court; the years around the end of Jeroboam II; riv as lawsuit, God as party and judge; truth, hesed and daat; the crimes echo the Ten Commandments; the land suffers | 1-3 | hosea/4.json `story`, `historical`, `cultural`, `words` (riv, daat, hesed) | Repository |
+| Isaiah 1:2 (its opening); Micah 6:1-2 paraphrased; Exodus 20:13-16 | 1-3 | hosea/4.json `cultural`; BSB | Repository; BSB text |
+| 4:4-5 paraphrased; 4:6; 4:7-8 paraphrased; 4:9 (its first sentence); 4:10 paraphrased | 4-10 | BSB | BSB text |
+| Royal shrines at Bethel and Gilgal; Jeroboam I's priests and calves; the priests' task to teach; 4:6 misquoted as about education; verse 8 and the sin offerings (offered as a possibility); punishment matching sin; like people, like priest; the hard Hebrew of verse 4 | 4-10 | hosea/4.json `historical`, `cultural`, `literary`, `words` (daat) | Repository |
+| Leviticus 10:11; Deuteronomy 33:10; Malachi 2:7 (its first clause); Amos 7:10-13 | 4-10 | hosea/4.json `cultural`, `historical`; BSB | Repository; BSB text |
+| 4:11 paraphrased; 4:12 (its clause); 4:13 (its clause); 4:14-15 paraphrased; 4:16 (its first sentence); 4:17-19 paraphrased | 11-19 | BSB | BSB text |
+| Open-air shrines and fertility religion; idols and divining rods; qedeshah as consecrated woman; older scholarship and the doubt about sacred prostitution; sexual immorality with worship led by the men; Gilgal near Jericho; Beth-aven and Bethel; the stubborn heifer | 11-19 | hosea/4.json `cultural`, `historical`, `words` (qedeshah) | Repository; both scholarly views in their holders' terms |
+| Joshua 4:19-20; 1 Samuel 11:14-15; Deuteronomy 12:2; Deuteronomy 23:17 | 11-19 | hosea/4.json `historical`, `cultural`, `words` | Repository |
+| The hard note: verse 14 and the double standard turned around; two settings (rites at the shrines; a general collapse); those who lead judged more strictly | 11-19 `hard` | hosea/4.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 4: the deep note's lines to Luke 11:52, John 5:39-40, John 1:18 and 17:3, Jeremiah 31:34 in Hebrews 8:11, and Hebrews 7:26-28, which the New Testament does not draw from this chapter; and the hard note's reference to James 3:1, which the New Testament does not draw from Hosea. The verse with an inner quotation (4:15) is paraphrased; its word ‘journey’ is not quoted.
