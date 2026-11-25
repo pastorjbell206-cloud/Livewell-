@@ -18791,3 +18791,19 @@ Cut in chapter 4: the deep note's line from Jabez to Jesus bearing griefs and Re
 | The hard note: the numbers (5:18, 21); exact counts; eleph as clan or unit; rounding or enlarging; defenders of each; the point not depending on it; war and captives in ancient records' language; no warrant for war in God's name | 18-26 `hard` | 1-chronicles/5.json `hard`; the brief | Repository; the views in their holders' terms |
 
 Cut in chapter 5: the deep note's lines to Jesus as the one faithful son and to John 10:16, which it calls thematic. No care line is needed in this chapter.
+
+## The plain notes on 1 Chronicles 6 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Levi's sons; the high priestly line from Aaron (6:1-14); 6:15 (its words); the three clans (6:16-30); Samuel and his sons (6:28) | 1-30 | 1-chronicles/6.json `summary`, `outline`; BSB | Repository; BSB text |
+| Levi at the center; worship at the heart; the Hebrew numbering (5:27 to 6:66); Zadok (2 Samuel 8:17; 1 Kings 2:35); Hilkiah (2 Kings 22); Seraiah (2 Kings 25:18-21); Jehozadak and Joshua (Haggai 1:1; Ezra 3:2); a bridge between the temples; the list selective (Jehoiada; Eli's house) | 1-30 | 1-chronicles/6.json `story`, `historical` | Repository |
+| 2 Kings 22:8 (its phrase); Ezra 3:2 (its phrase) | 1-30 | 1-chronicles/6.json `historical`; BSB | Repository; BSB text |
+| The hard note: Samuel a Kohathite here and 'an Ephraimite' in 1 Samuel 1:1; residence; Levitical towns in Ephraim (6:66); counted among the Levites for his service; the Chronicler's terms; the first view's defenders | 1-30 `hard` | 1-chronicles/6.json `hard`; BSB | Repository; the views in their holders' terms |
+| 6:31; 6:32 paraphrased; the singers' trees and the choir arrangement (6:33-47); 6:48; 6:49 (to its first purpose); the towns and pasturelands (6:54-81) | 31-81 | 1-chronicles/6.json `summary`, `outline`; BSB | Repository; BSB text |
+| Trees running backward; Heman, Asaph and Ethan; music as an office (chapter 25); kipper as God's provision; avodah as labor and worship; no tribal land, the LORD their portion (Numbers 18:20-24); towns in every tribe; Joshua 21 and Numbers 35:1-8; cities of refuge (Numbers 35; Joshua 20), Hebron and Shechem | 31-81 | 1-chronicles/6.json `historical`, `cultural`, `literary`, `words` (kipper, shir, migrash, avodah) | Repository |
+| Numbers 18:20 (its last sentence); Hebrews 7:27 (its last sentence); Colossians 3:16 (its phrase) | 31-81 | 1-chronicles/6.json `cultural`, `christ` (Hebrews 7; Colossians 3:16); BSB | Repository; BSB text; the New Testament's own words about priesthood and song |
+
+Cut in chapter 6: the deep note's reading of the whole chapter as a pattern pointing forward to Christ, beyond Hebrews' own words, which are quoted. No care line is needed in this chapter.
