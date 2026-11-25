@@ -20425,3 +20425,19 @@ Cut in chapter 32: the deep note's lines to 1 John 4:4 and to the Son of David s
 | 2 Kings 21:23 | 21-25 | BSB | BSB text |
 
 Cut in chapter 33: the deep note's lines to 1 Timothy 1:15-16 and Luke 15:11-24, which do not cite this chapter. Child sacrifice is named, never described.
+
+## The plain notes on 2 Chronicles 34 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 34:1; 34:2; 34:3; the purge to the north (34:4-7); the repairs and Levite overseers (34:8-13) | 1-13 | BSB | BSB text |
+| The last reformer; two stages; the last light; about 640 to 609 BC; 632, 628 and 622 BC; Assyria's collapse, Ashurbanipal around 631 BC, Nineveh 612 BC; Jeremiah 1:2 and Zephaniah 1:1; 2 Kings 22-23 and the order; the bones on the altars | 1-13 | 2-chronicles/34.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Jeremiah 1:2 (its clause) | 1-13 | BSB | BSB text |
+| 34:14; 34:15 (Hilkiah's words); the report and reading (34:16-18); 34:19; 34:21 (its last sentence); Huldah (34:22-26); 34:27 (its clause); 34:28 (its last sentence); the reading and covenant (34:29-31); 34:33 (its last sentence) | 14-33 | BSB | BSB text |
+| Lost scrolls; the understatement; sefer ten times; torn clothes; Huldah in the Second District, received without remark; the two-part oracle; rakhakh; kana and 7:14; covenant renewals (Exodus 24:7; Joshua 24; 23:16) | 14-33 | 2-chronicles/34.json `cultural`, `literary`, `words` | Repository |
+| Exodus 24:7 (its clauses) | 14-33 | BSB | BSB text |
+| The hard note: the book lost; Deuteronomy and the matching emphases; the traditional view; the critical view from the early nineteenth century; the middle view; the response demanded | 14-33 `hard` | 2-chronicles/34.json `hard`, `historical` | Repository; each view in its holders' terms |
+
+Cut in chapter 34: the deep note's lines to Jeremiah 31:31-34 and the new covenant in Luke 22:20 and Hebrews 8, which do not cite this chapter. No care line is needed in this chapter.
