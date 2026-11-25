@@ -20724,3 +20724,26 @@ Cut in chapter 2: the deep note's lines that the New Testament does not draw (th
 | Daniel 6:26 (first typed inexactly, caught and corrected); Daniel 4:34 named; Psalm 34:7 (added when the validator asked for a book beyond Daniel) | 28-30 `later` | BSB | BSB text |
 
 Cut in chapter 3: the deep note's lines to Christ that the New Testament does not draw (Immanuel and the fire; the fourth figure as Christ beyond the stated readings).
+
+## The plain notes on Daniel 4 (2026-11-25)
+
+`client/public/bible/notes/daniel/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1-18 | 1-18 | BSB | BSB text |
+| The lesson reaching the king; the letter form; the verse numbering; the world tree and Ezekiel 31; the watchers; the heavenly council (1 Kings 22; Job 1); the banded stump; 4:17 as the refrain | 1-18 | daniel/4.json `story`, `cultural`, `literary`, `words` (ir) | Repository |
+| Ezekiel 31:6; 31:10 (its clause, after the inner quotation mark); Matthew 13:32 | 1-18 `later` | daniel/4.json `cultural`, `christ`; BSB | BSB text; the parable's wording only |
+| 4:19-27 | 19-27 | BSB | BSB text |
+| Daniel troubled for the king; righteousness and mercy to the oppressed (4:27); Perhaps | 19-27 | daniel/4.json `literary` | Repository |
+| Micah 6:8; Proverbs 16:18 | 19-27 `later` | BSB | BSB text |
+| 4:28-33 | 28-33 | BSB | BSB text |
+| Nebuchadnezzar's building inscriptions; the shift to the third person; the illness not the text's medical interest; the records' silence; the Prayer of Nabonidus | 28-33 | daniel/4.json `historical`, `cultural`, `literary`, `hard` | Repository |
+| Isaiah 14:14; Daniel 5:20 | 28-33 `later` | BSB | BSB text |
+| The hard note: the evidence in each view; one king's judgment, never a reading of anyone's illness | 28-33 `hard` | daniel/4.json `hard`; the brief | Repository |
+| Care line ("It needs to be said plainly. The Bible does not teach that sickness...") | 28-33 `hard` | Reused byte for byte from 2-kings/plain/15.json | care.mjs |
+| 4:34-37 | 34-37 | BSB | BSB text |
+| Looking up; the growing confession; shephal | 34-37 | daniel/4.json `literary`, `words` (shephal) | Repository |
+| Daniel 5:22; Proverbs 3:34 (first typed inexactly, caught and corrected) | 34-37 `later` | BSB | BSB text |
+
+Cut in chapter 4: the deep note's lines that the New Testament does not draw (James 4:6, Luke 1:52 and Philippians 2 set beside the chapter). A claim that ‘Heaven rules’ is the Old Testament's only use of heaven for God's name was cut before commit, as unsourced.
