@@ -482,7 +482,9 @@ elite and professional". Both books were rebuilt from their own text.
 ### How it is made
 
 `content/books-src/<id>/` holds each book's text: the chapter files of its
-original EPUB, byte for byte (`sec01.xhtml` and on), and `book.json` (the
+original EPUB (`sec01.xhtml` and on; byte for byte for A Higher Allegiance,
+edited at James's instruction for Blind Spots, see "The edit" below), and
+`book.json` (the
 author's name as the file has it, the EPUB identifier, the copyright notice,
 the served and original file names). The title and subtitle come from
 `client/src/data/book-names.json`, the cover from `client/public/covers/`, the
@@ -526,15 +528,27 @@ reader's own font, size and night mode apply; Cormorant Garamond is embedded
 for headings (SIL Open Font License, which allows it; the font files carry
 their copyright and licence address).
 
-### The one rule: the text is the author's
+### The one rule: the typesetter adds nothing
 
-The script is a typesetter. What it does to the text, each counted on every
-run:
+The script is a typesetter: it sets the words in the source folder and
+changes none of them. When this section was written (2026-11-23) the rule
+went further, that the source folder was the original EPUB's text and the
+author's words did not change at all. On 2026-11-25 James asked for his
+books to be edited (see "The edit" below), so the rule now has two halves.
+`--verify` proves that the built PDF and EPUB are, word for word, the source
+folder's text with only the typesetting listed here. And for a book whose
+`book.json` records no edit, it still proves the source folder is the
+original EPUB's text. What an edit kept is proved elsewhere, by the fact
+diff against the original. The originals stay untouched in
+`content/held-downloads/originals/`.
+
+What the script does to the text, each counted on every run (the Blind
+Spots column is the edited text, 2026-11-25):
 
 | Change | Blind Spots | A Higher Allegiance |
 |---|---|---|
 | Straight double quotation marks set as curly ones | 298 | 1,090 |
-| Straight apostrophes and single quotation marks set as curly ones | 646 | 494 |
+| Straight apostrophes and single quotation marks set as curly ones | 652 | 494 |
 | Double hyphens set as dashes | 0 (none in the text) | 0 (none in the text) |
 | Markdown asterisks around an end-of-chapter label removed, the label set as a heading (Key Takeaways, Reflection Questions, Practices, Sources & Notes) | 0 | 32 labels |
 | Markdown backslashes removed from list numbers ("1\\." to "1.") | 0 | 42 |
@@ -547,12 +561,13 @@ run:
 | A reference at the end of a quotation set on its own line (no word moved) | 0 | 53 |
 | LORD, written in capitals in the source, set in small capitals | 12 | 0 |
 | First three words of a chapter set in small capitals by the stylesheet | 15 | 11 |
-| Soft hyphens at a line break (PDF only, invisible elsewhere) | 89 | 63 |
+| Soft hyphens at a line break (PDF only, invisible elsewhere) | 85 | 63 |
 
 Widows and orphans are held to two lines; headings keep with what follows.
 
-**The proof** (`--verify`, and an independent check written apart from the
-script). The old EPUB's chapter text and the new EPUB's were compared word by
+**The proof as first run, 2026-11-23, before any edit** (`--verify`, and an
+independent check written apart from the script). The old EPUB's chapter text
+and the new EPUB's were compared word by
 word with only whitespace and quotation-mark shapes normalised, the list
 markers a reader's software draws put back: Blind Spots 65,747 words against
 65,747, no difference at all; A Higher Allegiance 56,548 against 56,531, and
@@ -569,6 +584,45 @@ and punctuation; case, spacing and quotation-mark shapes set aside), the two
 old files of each book carry the same text. The one difference: the old A
 Higher Allegiance PDF printed a lone dash under each of its 133 quotations
 whose citation was empty in the EPUB. Nothing had to be reconciled.
+
+### The edit (2026-11-25)
+
+James, 2026-11-25: "i also want you to go through all the book, pdfs, and
+downloadable content to make it sound human and like me". And, the same day,
+on whether a book keeps its fragments: "use full paragraphs in the books
+too", so `docs/VOICE-JAMES-BELL.md` governs the books as well as the site.
+
+Blind Spots was the first book. Its chapter files in
+`content/books-src/the-monster-in-the-mirror/` were edited as exact old/new
+pairs, one commit a chapter; `book.json` now carries `edited` (the date, his
+words, and where the record is). The record is
+`docs/work/elite/voice-books/blind-spots.md`: per chapter, the counts, the
+fact diff's result, five pairs, and what was left alone and why. In short:
+em-dashes in his prose fell from 853 to 148 (13.9 to 2.4 per 1,000 words;
+his limit is 4 to 6; headings, subtitles and block quotes keep theirs), fragment stacks were joined into
+sentences, a few filler words went, and nothing else changed. The fact diff
+passed on all fifteen chapters: every heading, subtitle, pull quote and block
+quote identical; every quotation, Scripture reference, year, number, name
+and hedge word by count.
+
+What `--verify` proves now, on the rebuilt files:
+
+- the EPUB carries exactly the source folder's text with the listed
+  typesetting: 65,014 words against 65,014, no difference (the original had
+  65,747 by the same count, which counts a spaced dash as a word; the edit
+  removed 705 dashes and 28 words);
+- the PDF's pages, from the first chapter on, carry the same text character
+  for character: 338,523 characters against 338,523;
+- A Higher Allegiance, not yet edited, is still held to its original: 56,548
+  words in the source folder against 56,548 in the original EPUB, no
+  difference.
+
+The PDF is still 244 pages (so `client/src/data/ebooks.ts` is unchanged),
+1.8 MB; the EPUB is 409 KB. The contents, a chapter opening, a spread and
+the last pages were looked at as images after the rebuild.
+
+A Higher Allegiance's source folder is still its original's text. When it is
+edited, give its `book.json` an `edited` entry the same way.
 
 ### The apparatus
 
@@ -617,7 +671,8 @@ Left exactly as written:
 | | Pages | PDF | EPUB |
 |---|---|---|---|
 | Blind Spots, before | 274 | 756 KB | 274 KB |
-| Blind Spots, now | 244 | 1.7 MB | 399 KB |
+| Blind Spots, 2026-11-23 | 244 | 1.7 MB | 399 KB |
+| Blind Spots, edited, 2026-11-25 | 244 | 1.8 MB | 409 KB |
 | A Higher Allegiance, before | 495 | 767 KB | 733 KB |
 | A Higher Allegiance, now | 212 | 1.7 MB | 345 KB |
 
