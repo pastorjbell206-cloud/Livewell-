@@ -144,3 +144,51 @@ paint.
 Pushes: the timeline alone (8d7c3e36..372cd185); then the atlas, key words
 and hard passages together, because the shared branch moved between every
 run and each full run took twenty minutes or more on the shared machine.
+
+## Three more pages, from what all 66 book pages have
+
+The first four pages read `teaching`, which 43 books have. These three read
+`structure`, `keyChapters` and `themes`, which every book page has, so they
+are complete from the start. Same contract: no new claim, one generated file
+each with `--check` in the content gates (61 commands now), the catalogue
+inside "Read the Study Bible", words in the prerender, tokens only, a test
+file beside each page.
+
+| Page | Address | Reads | Built by |
+|------|---------|-------|----------|
+| The 66 books at a glance | /study/books-at-a-glance | `bible/explore/books-at-a-glance.json` | `scripts/build-bible-glance-index.mjs` |
+| Where to start in every book | /study/key-chapters | `bible/explore/key-chapters.json` | `scripts/build-bible-keys-index.mjs` |
+| Themes of the Bible | /study/themes | `bible/explore/themes.json` | `scripts/build-bible-themes-index.mjs` |
+
+**The 66 books at a glance.** 387 parts of 66 books. Each book is the book
+page's own band (`.bg-band`, `.bg-part`) with the book page's own rule for a
+part's width (`outlineBand` in `pages/study-bible/bookFacts.ts`), so a book
+looks the same here as on its own page. On the book page a part of the band
+is a button that shows its summary; here every summary is already beside the
+band, so a part is a link that opens the chapter it starts at. The band is
+kept out of the tab order and the reading order: the list beside it has the
+same links with their titles, ranges and summaries.
+
+**Where to start in every book.** 367 key chapters, one to eight a book. The
+book pages list them in order through the book, not by rank. So "One
+chapter" is the first a book lists and "Three chapters" the first three, and
+the page says so in a sentence and beside each book ("1 of the 8 the Genesis
+page lists"). It ranks nothing.
+
+**Themes of the Bible.** 318 themes, 325 paragraphs. Only four titles are
+shared between books (the Day of the LORD, holiness, false security, the
+Holy Spirit); those stand under one title with each book's paragraph whole
+and apart. Titles are matched as written, letter case aside. Nothing else is
+joined and there is no scheme: the order is the alphabet.
+
+Lighthouse, median of three, layout shift 0.000:
+
+| Page | Score |
+|------|-------|
+| /study/books-at-a-glance | 96, 100, 96, 100 |
+| /study/key-chapters | 98, 100, 96, 100 |
+| /study/themes | 100, 100, 96, 100 |
+
+Pushes in this second run: the fixes (3eb4c9ea..b39908cb), the glance page
+(b39908cb..08eabd07), then key chapters and themes together, because the
+shared branch had moved again when key chapters was ready to go.
