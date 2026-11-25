@@ -17905,3 +17905,18 @@ Cut in chapter 9: the deep note's lines to Christ (John 6:31-35, 1 Corinthians 1
 | The pledges differing from the law (a third of a shekel, wood by lot, no Sabbath trade): shekel standards, a reduction, a new gift; applications of the law; not adding to God's word | 28-39 `hard` | nehemiah/10.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 10: the deep note's lines to Christ (Jeremiah 31 and the new covenant in Luke 22:20 and Hebrews 8, Hebrews 10:11-14; the note says the New Testament does not refer to this chapter).
+
+## The plain notes on Nehemiah 11 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Chapter 7's empty city resumed; Persian-period Jerusalem small; preferring the towns and land; casting lots, God directing; the land divided by lot; one in ten and the tithe, as some interpreters see it; the volunteers and nadav | 1-2 | nehemiah/11.json `story`, `historical`, `cultural`, `words` (nadav, goral) | Repository |
+| Proverbs 16:33; Isaiah 52:1 | 1-2 | nehemiah/11.json `cultural` (Proverbs 16:33), `words` (qodesh: Isaiah 52:1); BSB | Repository; BSB text |
+| The list by groups and its numbers; the holy city at the start and middle; 1 Chronicles 9 as a parallel; the king's command about the singers, Persian king or David; Pethahiah the king's agent | 3-24 | nehemiah/11.json `literary`, `historical`; BSB | Repository; BSB text |
+| 1 Chronicles 9:2 | 3-24 | nehemiah/11.json `historical`; BSB | Repository; BSB text |
+| The towns: Kiriath-arba the old name of Hebron, Beersheba, Bethel, Anathoth, Ramah; from Beersheba to the Valley of Hinnom; actual settlement or a claim to the old land; no side and no claim about any border today | 25-36 | nehemiah/11.json `cultural` | Repository |
+| Joshua 14:2 | 25-36 | nehemiah/11.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 11: the deep note's lines to Christ (the heavenly Jerusalem in Hebrews 12:22 and Revelation 21, Hebrews 11:13-16; the note calls them thematic); Beersheba called Abraham's town (not stated in this form in the repository; cut before commit); the 1 Chronicles 9:2 quotation corrected to the BSB's words before commit.
