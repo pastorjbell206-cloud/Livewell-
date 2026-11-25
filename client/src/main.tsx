@@ -87,8 +87,7 @@ const trpcClient = trpc.createClient({
 mountAfterStaticHero(() => {
   // A chapter, an essay or a guide keeps its prerendered text on screen until
   // the real page is ready (lib/prerender-hold.ts). The prerender puts that
-  // text just before #root (scripts/prerender-heads.mjs; not yet on /start,
-  // which other work is changing).
+  // text just before #root (scripts/prerender-heads.mjs).
   const shell = document.getElementById("lw-shell");
   const textInPlace = !!shell && shell.nextElementSibling === document.getElementById("root");
   const held = holdPrerenderedPage();

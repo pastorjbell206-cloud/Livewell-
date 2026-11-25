@@ -50,14 +50,13 @@ describe("holdPrerenderedPage", () => {
     expect(root.classList.contains(WAIT_CLASS)).toBe(true);
   });
 
-  it("is written before #root on /downloads, so its first shelf of covers is painted once", () => {
-    // Lifted out of #root when the app started, the shelf was painted again,
+  it("is written before #root on every held page, /downloads and /start included, so its text is painted once", () => {
+    // Lifted out of #root when the app started, the text was painted again,
     // and that second paint, after the app's code, was the largest
-    // (Lighthouse on a phone: 4.3 s, 2026-11-25).
+    // (Lighthouse on a phone, 2026-11-25: /downloads 4.3 s, /start 3.5 s).
     const src = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
-    const stays = src.match(/const SHELL_STAYS_IN_ROOT = new Set\((\[[^\]]*\])\)/);
-    expect(stays).not.toBeNull();
-    expect(JSON.parse(stays![1])).not.toContain("/downloads");
+    expect(src).not.toMatch(/SHELL_STAYS_IN_ROOT/);
+    expect(src).toMatch(/if \(body && !isHome\) html = shellBeforeRoot\(html\);/);
   });
 
   it("preloads none of the page's own code on a page that opens on a picture, as /downloads does", () => {

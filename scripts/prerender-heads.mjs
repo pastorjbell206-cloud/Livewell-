@@ -1424,7 +1424,7 @@ function writeRoute(template, route, head, bodyHtml = "") {
   // At the reading size (.prerender-content--read) where the shell stays in
   // place: the real page sets its text larger than the old 17px, and a larger
   // paragraph painted when it arrived became the page's largest paint again.
-  const inPlace = !isHome && !SHELL_STAYS_IN_ROOT.has(route.path);
+  const inPlace = !isHome;
   const body = bodyHtml ? `\n        <div class="prerender-content${inPlace ? " prerender-content--read" : ""}">\n${bodyHtml}\n        </div>` : "";
   // The static hero paints from the HTML on the front page only; every other
   // route drops the marker so a deep link never flashes the home hero.
@@ -1433,7 +1433,7 @@ function writeRoute(template, route, head, bodyHtml = "") {
   } else if (body) {
     html = html.replace('<div id="root">', () => `<div id="root">${body}`);
   }
-  if (body && !isHome && !SHELL_STAYS_IN_ROOT.has(route.path)) html = shellBeforeRoot(html);
+  if (body && !isHome) html = shellBeforeRoot(html);
   fs.writeFileSync(target, html);
   return target;
 }
@@ -1457,8 +1457,6 @@ function shellBeforeRoot(html) {
   const shell = html.slice(shellAt, rootClose).trimEnd();
   return `${html.slice(0, at)}${shell}\n    ${open}</div>${html.slice(rootClose + "</div>".length)}`;
 }
-/** Pages other work is changing as this lands (2026-11-23); the shell still moves there at run time, as before. */
-const SHELL_STAYS_IN_ROOT = new Set(["/start"]);
 
 /**
  * The Study Bible (client/public/bible/*): every book, every chapter, the
