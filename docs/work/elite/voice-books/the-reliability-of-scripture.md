@@ -32,7 +32,9 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter Five: The New Testament Under Fire — Evidence, Eyewitnesses, and Early Dating | 1,136 | 1,136 | +0.0% | 16 (14.1) | 0 (0.0) | 23 (20.2) | 9 (7.9) | 12 | PASS |
 | Chapter Six: What the Archaeologist's Spade Found | 1,491 | 1,491 | +0.0% | 16 (10.7) | 0 (0.0) | 37 (24.8) | 21 (14.1) | 11 | PASS |
 | Chapter Seven: The Hard Sayings — Living with Difficulty | 1,259 | 1,259 | +0.0% | 15 (11.9) | 0 (0.0) | 28 (22.2) | 14 (11.1) | 10 | PASS |
-| **All 8** | 10,197 | 10,197 | +0.0% | 141 (13.8) | 2 (0.2) | 261 (25.6) | 124 (12.2) | 100 | |
+| Chapter Eight: Dating, Authorship, and the Documentary Hypothesis | 996 | 996 | +0.0% | 14 (14.1) | 0 (0.0) | 26 (26.1) | 12 (12.0) | 8 | PASS |
+| Chapter Nine: What the Church Has Always Believed — A History of the Doctrine of Scripture | 1,007 | 1,007 | +0.0% | 10 (9.9) | 0 (0.0) | 23 (22.8) | 13 (12.9) | 7 | PASS |
+| **All 10** | 12,200 | 12,200 | +0.0% | 165 (13.5) | 2 (0.2) | 310 (25.4) | 149 (12.2) | 115 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -208,3 +210,47 @@ Five pairs, taken at even intervals through the chapter:
    After: the Canaanite religious practices that the texts cite as the reason for destruction (child sacrifice, fertility cult prostitution, practices that would corrupt the covenant community Israel was called to be) were not invented as later justification but are documented in ancient Near Eastern sources.
 5. Before: A text that is easy is a text that asks nothing of you, and what we have is a text that asks everything — including the willingness to sit inside difficulty without resolving it prematurely.
    After: A text that is easy is a text that asks nothing of you, and what we have is a text that asks everything, including the willingness to sit inside difficulty without resolving it prematurely.
+
+
+## Chapter Eight: Dating, Authorship, and the Documentary Hypothesis (`sec09.xhtml`)
+
+Words 996 to 996. Em-dashes in his prose 14 to 0 (14.1 to 0.0 per 1,000 words). Tells 26 to 12 (26.1 to 12.0 per 1,000). Mean sentence 26.9 words to 26.9; sentences of eight words or fewer 5.4% to 5.4%; of five or fewer 0.0% to 0.0%. 8 edits; paragraphs 12 to 12. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 14 to 0, not_but 1 to 1, triplet 8 to 8, anaphora 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 15 Scripture references, 1 years, 12 numbers in digits, 28 number words, proper names by count, and 13 hedge words (after: 13) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: the Pentateuch — the first five books of the Old Testament — was not written by Moses but compiled from four separate literary sources, designated J, E, D, and P, each composed at a different period in Israelite history and stitched together by later editors into the final document.
+   After: the Pentateuch, the first five books of the Old Testament, was not written by Moses but compiled from four separate literary sources, designated J, E, D, and P, each composed at a different period in Israelite history and stitched together by later editors into the final document.
+2. Before: By the 1970s, scholars like Rolf Rendtorff and Erhard Blum were arguing that the classic four-source division was not supportable, because the criteria Wellhausen used to identify the sources — the divine names, doublets in the narrative, vocabulary differences — turned out to be unreliable indicators.
+   After: By the 1970s, scholars like Rolf Rendtorff and Erhard Blum were arguing that the classic four-source division was not supportable, because the criteria Wellhausen used to identify the sources (the divine names, doublets in the narrative, vocabulary differences) turned out to be unreliable indicators.
+3. Before: The conservative position — that Moses composed the substantive core of the Pentateuch, with possible later editorial additions — is not maintained by ignoring the scholarship.
+   After: The conservative position (that Moses composed the substantive core of the Pentateuch, with possible later editorial additions) is not maintained by ignoring the scholarship.
+4. Before: If you exclude supernatural prediction as a category, then you must explain the second half of Isaiah as composed after the events it appears to foretell — because it names Cyrus of Persia specifically.
+   After: If you exclude supernatural prediction as a category, then you must explain the second half of Isaiah as composed after the events it appears to foretell, because it names Cyrus of Persia specifically.
+5. Before: The Pauline authorship questions — regarding 1 and 2 Timothy, Titus, Ephesians, Colossians, and 2 Thessalonians — involve genuine scholarly debate about vocabulary statistics, theological emphases, and historical setting.
+   After: The Pauline authorship questions (regarding 1 and 2 Timothy, Titus, Ephesians, Colossians, and 2 Thessalonians) involve genuine scholarly debate about vocabulary statistics, theological emphases, and historical setting.
+
+
+## Chapter Nine: What the Church Has Always Believed — A History of the Doctrine of Scripture (`sec10.xhtml`)
+
+Words 1,007 to 1,007. Em-dashes in his prose 10 to 0 (9.9 to 0.0 per 1,000 words). Tells 23 to 13 (22.8 to 12.9 per 1,000). Mean sentence 19.3 words to 19.3; sentences of eight words or fewer 27.3% to 27.3%; of five or fewer 11.4% to 11.4%. 7 edits; paragraphs 12 to 12. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 10 to 0, NotX.Y 3 to 3, isnt_its 1 to 1, triplet 5 to 5, colon_reveal 1 to 1, short_close 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 9 quoted strings, 0 Scripture references, 3 years, 3 numbers in digits, 17 number words, proper names by count, and 12 hedge words (after: 12) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Origen, writing in the third century, articulates a doctrine in which the Holy Spirit is the ultimate author of Scripture and the human writers are instruments — and the implication of divine authorship is the impossibility of error, since it would be unworthy of the Spirit to speak falsely.
+   After: Origen, writing in the third century, articulates a doctrine in which the Holy Spirit is the ultimate author of Scripture and the human writers are instruments, and the implication of divine authorship is the impossibility of error, since it would be unworthy of the Spirit to speak falsely.
+2. Before: Martin Luther, who believed the church needed reformation in many things, did not believe the doctrine of Scripture's authority needed reformation; for Luther, Scripture was the norma normans — the norming norm — the standard by which all other claims were evaluated and by which the church stood or fell.
+   After: Martin Luther, who believed the church needed reformation in many things, did not believe the doctrine of Scripture's authority needed reformation; for Luther, Scripture was the norma normans (the norming norm), the standard by which all other claims were evaluated and by which the church stood or fell.
+3. Before: It is the consistent position of the church across its entire history — East and West, pre-Reformation and post-Reformation.
+   After: It is the consistent position of the church across its entire history: East and West, pre-Reformation and post-Reformation.
+4. Before: The Statement explicitly acknowledges "the use of round numbers, free citations, topical arrangements of material, variant selections of material" as fully compatible with inerrancy, and it treats phenomenological language — speaking of the "sun rising," describing events from the observer's perspective — as not implying a false cosmology.
+   After: The Statement explicitly acknowledges "the use of round numbers, free citations, topical arrangements of material, variant selections of material" as fully compatible with inerrancy, and it treats phenomenological language (speaking of the "sun rising," describing events from the observer's perspective) as not implying a false cosmology.
+5. Before: if the text can be errant in historical detail, we need a principle for determining where it errs, and that principle, inevitably, becomes our own judgment — our contemporary knowledge, our current moral sensibilities, our cultural framework.
+   After: if the text can be errant in historical detail, we need a principle for determining where it errs, and that principle, inevitably, becomes our own judgment: our contemporary knowledge, our current moral sensibilities, our cultural framework.
