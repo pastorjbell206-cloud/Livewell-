@@ -69,7 +69,8 @@ export function jumpTo(id: string) {
   let tries = 0;
   let last = NaN;
   const go = () => {
-    el.scrollIntoView?.({ block: "start", behavior: "instant" as ScrollBehavior });
+    // Under the fixed masthead, and at once: the page's own smooth scrolling would never settle here.
+    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 90, behavior: "instant" as ScrollBehavior });
     const top = el.getBoundingClientRect().top;
     if (tries++ < 8 && Math.abs(top - last) > 1) {
       last = top;

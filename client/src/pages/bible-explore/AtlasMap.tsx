@@ -71,7 +71,9 @@ export default function AtlasMap({
       const sides: Side[] = [first, { dx: half + 5, dy: 4, anchor: "start" }, { dx: -(half + 5), dy: 4, anchor: "end" }, { dx: 0, dy: -(half + 6), anchor: "middle" }, { dx: 0, dy: half + size, anchor: "middle" }];
       const free = sides.find((sd) => {
         const b = nameBox(x(p.lon), y(p.lat), sd, text, size);
-        return b[0] >= 0 && b[2] <= W && b[1] >= 0 && b[3] <= H && !taken.some((t, i) => i !== own && hits(t, b));
+        // A mark that all but sits on this one (Bethany beside Jerusalem) cannot be cleared on any side, so it does not count.
+        const beside = (i: number) => i < places.length && Math.hypot(x(places[i].lon) - x(p.lon), y(places[i].lat) - y(p.lat)) < 16;
+        return b[0] >= 0 && b[2] <= W && b[1] >= 0 && b[3] <= H && !taken.some((t, i) => i !== own && !beside(i) && hits(t, b));
       });
       if (!free && !on) continue;
       const side = free ?? first;

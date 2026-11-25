@@ -65,11 +65,13 @@
 /* The atlas: the book map's own parts (.bk-map), four sheets, one card. */
 .bk-tl__chips.bx-sheets{margin:0 0 var(--s-4)}
 .bx-sheets__n{font-size:12.5px;opacity:.75;font-variant-numeric:tabular-nums}
-.bx-atlas__hold{max-width:100%}
-.bx-atlas__hold[data-frame="israel"]{height:600px;aspect-ratio:348/462}
-.bx-atlas__hold[data-frame="canaan"]{height:600px;aspect-ratio:338/483}
+.bx-atlas .bk-map__fig{min-width:0;max-width:100%}
+.bx-atlas__hold{--bx-h:600px;max-width:100%}
+.bx-atlas__hold[data-frame="israel"]{width:calc(var(--bx-h) * 348 / 462);aspect-ratio:348/462}
+.bx-atlas__hold[data-frame="canaan"]{width:calc(var(--bx-h) * 338 / 483);aspect-ratio:338/483}
 .bx-atlas__hold[data-frame="fertile-crescent"]{width:620px;aspect-ratio:521/311}
 .bx-atlas__hold[data-frame="mediterranean"]{width:620px;aspect-ratio:523/292}
+.bx-atlas .bx-atlas__hold svg{width:100%;height:auto}
 .bx-atlas .bk-map__fig figcaption{max-width:520px}
 .bx-atlas[data-frame="israel"] .bk-map__fig figcaption,.bx-atlas[data-frame="canaan"] .bk-map__fig figcaption{max-width:430px}
 .bx-atlas__find{margin:0 0 6px}
@@ -86,7 +88,7 @@
 .bx-atlas__books h3 span{font-weight:400;color:var(--ink-muted)}
 .bx-atlas__books a:focus-visible{outline:2px solid var(--mustard);outline-offset:2px}
 @media (max-width:720px){
-  .bx-atlas__hold[data-frame="israel"],.bx-atlas__hold[data-frame="canaan"]{height:min(560px,140vw)}
+  .bx-atlas__hold{--bx-h:min(560px,140vw)}
   .bx-atlas__hold[data-frame="fertile-crescent"],.bx-atlas__hold[data-frame="mediterranean"]{width:100%}
   .bx-atlas .bk-map__list{max-height:none;overflow:visible}
 }
