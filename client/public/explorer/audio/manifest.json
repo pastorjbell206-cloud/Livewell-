@@ -2245,6 +2245,116 @@
     }
    ]
   },
+  "book-1-corinthians": {
+   "title": {
+    "file": "book-1-corinthians/title.mp3",
+    "hash": "f6356d357317b3c3e3b2",
+    "seconds": 4.32,
+    "bytes": 26564
+   },
+   "younger": [
+    {
+     "id": "letter",
+     "file": "book-1-corinthians/younger/01-letter.mp3",
+     "hash": "c16dc725d9f80a239ac9",
+     "seconds": 25.65,
+     "bytes": 154436
+    },
+    {
+     "id": "layout",
+     "file": "book-1-corinthians/younger/02-layout.mp3",
+     "hash": "1fdb075bfc76ace66c1a",
+     "seconds": 23.41,
+     "bytes": 141044
+    },
+    {
+     "id": "cross",
+     "file": "book-1-corinthians/younger/03-cross.mp3",
+     "hash": "e29b0d49922703f1e2b3",
+     "seconds": 26.19,
+     "bytes": 157748
+    },
+    {
+     "id": "body",
+     "file": "book-1-corinthians/younger/04-body.mp3",
+     "hash": "35de00b9bb97e6222ec9",
+     "seconds": 27.11,
+     "bytes": 163220
+    },
+    {
+     "id": "love",
+     "file": "book-1-corinthians/younger/05-love.mp3",
+     "hash": "aae319fcebc1c76af758",
+     "seconds": 21.79,
+     "bytes": 131252
+    },
+    {
+     "id": "raised",
+     "file": "book-1-corinthians/younger/06-raised.mp3",
+     "hash": "fb99208ca69b11ede7f8",
+     "seconds": 25.55,
+     "bytes": 153860
+    },
+    {
+     "id": "start",
+     "file": "book-1-corinthians/younger/07-start.mp3",
+     "hash": "3b26f64b89c2307fe0a9",
+     "seconds": 23.24,
+     "bytes": 140036
+    }
+   ],
+   "older": [
+    {
+     "id": "letter",
+     "file": "book-1-corinthians/older/01-letter.mp3",
+     "hash": "6e3e23f261fb36e9426c",
+     "seconds": 27.34,
+     "bytes": 164660
+    },
+    {
+     "id": "layout",
+     "file": "book-1-corinthians/older/02-layout.mp3",
+     "hash": "a49f0e0e4e7ead6a6e0f",
+     "seconds": 24.66,
+     "bytes": 148532
+    },
+    {
+     "id": "cross",
+     "file": "book-1-corinthians/older/03-cross.mp3",
+     "hash": "389bbed9d5f57f96db6a",
+     "seconds": 25.9,
+     "bytes": 156020
+    },
+    {
+     "id": "body",
+     "file": "book-1-corinthians/older/04-body.mp3",
+     "hash": "778f50e79e562cb29263",
+     "seconds": 25.52,
+     "bytes": 153716
+    },
+    {
+     "id": "love",
+     "file": "book-1-corinthians/older/05-love.mp3",
+     "hash": "b3a95aa9795596c44e77",
+     "seconds": 24.85,
+     "bytes": 149684
+    },
+    {
+     "id": "raised",
+     "file": "book-1-corinthians/older/06-raised.mp3",
+     "hash": "a643c9e96e9e3b3a6477",
+     "seconds": 24.16,
+     "bytes": 145508
+    },
+    {
+     "id": "start",
+     "file": "book-1-corinthians/older/07-start.mp3",
+     "hash": "744317447867c37edb84",
+     "seconds": 28.14,
+     "bytes": 169412
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

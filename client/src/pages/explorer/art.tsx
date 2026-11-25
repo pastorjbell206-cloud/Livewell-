@@ -961,6 +961,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M26,76H74" />
     </>
   ),
+  /* 1 Corinthians: one loaf on one table, reached for from every side, under a gold lamp. */
+  "book-1-corinthians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M50,8V20" />
+      <path className="pl-m" d="M42,24h16l-3,8h-10Z" />
+      <path className="pl-l" d="M42,24h16l-3,8h-10Z" />
+      <Shape d="M18,66H82V72H18Z" tone="c" off={0.8} />
+      <Shape d="M36,66c0,-16 28,-16 28,0Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M24,72V84M76,72V84M14,58l12,6M86,58l-12,6M30,48l8,10M70,48l-8,10" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

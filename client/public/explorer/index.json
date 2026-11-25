@@ -1588,6 +1588,23 @@
       "book": "daniel"
     },
     {
+      "slug": "book-1-corinthians",
+      "title": "1 Corinthians: a gifted church, coming apart",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A letter to a church that was gifted, proud and quarrelling: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Corinthians as a whole letter: a real church with real trouble, two halves, the wisdom of the cross, one body, the way of love, the resurrection, and the hard passages where faithful churches differ."
+      },
+      "mark": "book-1-corinthians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-corinthians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

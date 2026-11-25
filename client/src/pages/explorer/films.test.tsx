@@ -1726,6 +1726,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-ruth",
     "book-jonah",
     "book-daniel",
+    "book-1-corinthians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2356,5 +2357,19 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     // No figure is drawn in the clouds; the statue is never gold.
     expect(vision.still).toContain("No one is drawn.");
     expect(f.frames.find(x => x.id === "bow")!.still).not.toMatch(/gold(en)? statue/i);
+  });
+
+  it("1 Corinthians names the hard passages of chapters 7, 11 and 14 as places where faithful churches differ, and takes no side", () => {
+    const f = filmFile("book-1-corinthians");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const start = f.frames.find(x => x.id === "start")!;
+    expect(start.older).toContain("in chapters 7, 11 and 14, are hard, and faithful churches reach different answers");
+    expect(start.younger).toContain("Christians who love Jesus read them in different ways");
+    expect(f.differ?.text).toContain("(chapter 7)");
+    expect(f.differ?.text).toContain("(11:2-16)");
+    expect(f.differ?.text).toContain("(chapters 12 to 14)");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    // No caption rules on marriage, head coverings, tongues or women's roles.
+    expect(captions(f)).not.toMatch(/head covering|tongues|women (must|should|may)|divorce|silent/i);
   });
 });
