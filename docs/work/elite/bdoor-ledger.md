@@ -18030,3 +18030,19 @@ Cut in chapter 2: the deep note's lines to Christ (Genesis 50:20, Galatians 4:4,
 | The decree to destroy a people: hatred written into law and exposed; the threat to the people of the promises; never a reason to blame the Jewish people or to harm anyone | 7-15 `hard` | esther/intro.json `purpose`, `story`; esther/3.json `doctrines` (sin, covenant) | Repository; the readings in their holders' terms |
 
 Cut in chapter 3: the deep note's lines to Christ (Exodus 1, 2 Kings 11 and Matthew 2:16 as one conflict reaching the cross, and the eve of Passover set beside Luke 22; the note says the New Testament does not cite Esther and the link is thematic); the inscribed die from Assyria (not needed); the words of the decree's list of victims (not lingered over).
+
+## The plain notes on Esther 4 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sackcloth and ashes; mourning kept from the king's gate; the women's quarters and the eunuchs; Hathach; the exchange of messages | 1-9 | esther/4.json `cultural`, `literary` | Repository |
+| Daniel 9:3 | 1-9 | jeremiah context guide and exile doctrine (Daniel 9:2-3); BSB | Repository; BSB text |
+| Grief not a lack of faith; the people's mourning named | 1-9 `hard` | esther/4.json `cultural` | Repository; the readings in their holders' terms |
+| The care line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 1-9 `hard` | 1-samuel/plain/1.json (1-8); 2-samuel/plain/21.json; deuteronomy/plain/7.json, 28.json and 34.json; leviticus/plain/26.json (`hard`) | Reused whole, word for word; Find Help named |
+| The hinge: Esther deciding; the law of the inner court and Greek writers; the Persepolis reliefs; thirty days and the real risk; 4:14 never naming God; hatstsalah found only here; et as a fitting moment; the severe fast and prayer assumed; the Fast of Esther | 10-17 | esther/4.json `story`, `historical`, `cultural`, `words` (hatstsalah, et, tsum) | Repository |
+| Genesis 43:14; Acts 25:11 | 10-17 | genesis/plain/43.json (Esther 4:16); acts/plain/25.json (Esther 4:16); BSB | Repository; BSB text |
+| The silence about God and prayer: with the Song of Songs; deliberate hiddenness; reserve; another place read two ways; the Greek prayers | 10-17 `hard` | esther/4.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 4: the deep note's lines to Christ (Esther as a mediator beside Christ, Hebrews 4:16; the note calls the link thematic); the Talmud's picture of Esther speaking Psalm 22 (left to the Psalms notes).
