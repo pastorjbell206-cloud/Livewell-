@@ -4,7 +4,7 @@
  *
  *   node scripts/build-book-files.mjs <id>            build one book
  *   node scripts/build-book-files.mjs --all           build every book that has a source folder
- *   node scripts/build-book-files.mjs <id> --verify   also prove the text is the author's
+ *   node scripts/build-book-files.mjs <id> --verify   also prove the files carry the source folder's text
  *   ... --out <dir>     write there instead of client/public/ebook/<id>/
  *   ... --keep <dir>    keep the print HTML and the passes there (to look at)
  *
@@ -21,12 +21,27 @@
  * from the tokens in client/src/index.css. So a rename is: change
  * book-names.json, run sync-book-names and build-covers as before, then this.
  *
- * THE ONE RULE: the author's words do not change. This script is a
- * typesetter. What it does to the text is listed in TYPESETTING below and
- * counted on every run; --verify takes the original EPUB kept in
- * content/held-downloads/originals/, applies only those listed changes, and
- * fails unless the result is, word for word, the text in the new EPUB and
- * the text on the pages of the new PDF.
+ * THE ONE RULE: the typesetter adds nothing. This script sets the words in
+ * content/books-src/<id>/ and changes none of them. What it does to the text
+ * is listed in TYPESETTING below and counted on every run; --verify takes the
+ * source folder's text, applies only those listed changes, and fails unless
+ * the result is, word for word, the text in the new EPUB and the text on the
+ * pages of the new PDF.
+ *
+ * WHOSE WORDS THE SOURCE FOLDER HOLDS. Until 2026-11-25 the rule was that
+ * the source folder was the original EPUB's text, unchanged, and --verify
+ * proved that too. On 2026-11-25 James asked for his books to be edited: "i
+ * also want you to go through all the book, pdfs, and downloadable content to
+ * make it sound human and like me", and, of fragments, "use full paragraphs
+ * in the books too". So a book whose book.json has an `edited` entry (its
+ * date, his instruction and where the record is kept) is no longer compared
+ * with its original EPUB: its source folder is the edited text, and the proof
+ * of what the edit kept (every quotation, Scripture reference, year, number,
+ * name, heading and hedge) is the fact diff recorded in the file `edited`
+ * names, run chapter by chapter against the original. A book without an
+ * `edited` entry is still held to the old rule: its source folder must be
+ * the original EPUB's text, word for word. The originals stay untouched in
+ * content/held-downloads/originals/ either way.
  *
  * TYPESETTING (each is counted in the run's report):
  *   - straight quotation marks and apostrophes set as curly ones;
@@ -1257,9 +1272,11 @@ function epubBodyWords(entries, sectionFiles, { markers }) {
 }
 
 /**
- * The proof. The original EPUB's words, changed only by the listed
+ * The proof. The source folder's words, changed only by the listed
  * typesetting rules, must be the new EPUB's words; and the same words,
- * squeezed, must be the text on the new PDF's pages.
+ * squeezed, must be the text on the new PDF's pages. A book that has not
+ * been edited (no `edited` in its book.json) must also have a source folder
+ * that is, word for word, its original EPUB.
  */
 function verify(book, epubFile, pdfInfo) {
   const original = path.join(ORIGINALS, book.meta.original.epub);
@@ -1267,9 +1284,14 @@ function verify(book, epubFile, pdfInfo) {
   const files = book.sections.map((s) => s.file);
   const oldWords = epubBodyWords(oldEntries, files, { markers: false });
   const srcWords = book.sections.flatMap((s) => sourceWords(s.source));
-  const report = { book: book.id, original: path.relative(ROOT, original), oldEpubWords: oldWords.length, differences: [] };
-  // 1. The source folder is the original EPUB's text.
-  if (oldWords.join(" ") !== srcWords.join(" ")) report.differences.push("content/books-src is not the text of the original EPUB");
+  const edited = book.meta.edited ?? null;
+  const report = { book: book.id, source: `content/books-src/${book.id}`, sourceWords: srcWords.length, original: path.relative(ROOT, original), oldEpubWords: oldWords.length, differences: [] };
+  // 1. An unedited book's source folder is the original EPUB's text. An edited book's is not, by the author's
+  //    instruction; what the edit kept is proved by the fact diff in the record `edited` names.
+  if (edited) {
+    if (!edited.date || !edited.instruction || !edited.record || !fs.existsSync(path.join(ROOT, edited.record))) fail(`${book.id}: book.json's \`edited\` needs a date, the instruction and a record that exists`);
+    report.edited = { ...edited, sourceIsOriginal: oldWords.join(" ") === srcWords.join(" ") };
+  } else if (oldWords.join(" ") !== srcWords.join(" ")) report.differences.push("content/books-src is not the text of the original EPUB, and book.json records no edit");
   // 2. The set text is the source text with only the listed changes.
   const expected = book.sections.flatMap((s) => setWords(s.set));
   const rules = (w) =>
@@ -1281,19 +1303,19 @@ function verify(book, epubFile, pdfInfo) {
       .split(" ");
   // Marks at the head of a list item are compared apart from the words.
   const isMark = (w) => w === "-" || w === "•";
-  const a = rules(oldWords).map(straight).filter((w) => !isMark(w));
+  const a = rules(srcWords).map(straight).filter((w) => !isMark(w));
   const b = expected.map(straight).filter((w) => !isMark(w));
   report.wordsCompared = a.length;
   for (let i = 0; i < Math.max(a.length, b.length); i++) {
     if (a[i] !== b[i]) {
-      report.differences.push(`original and typeset text part at word ${i}: "${a.slice(i, i + 8).join(" ")}" against "${b.slice(i, i + 8).join(" ")}"`);
+      report.differences.push(`source and typeset text part at word ${i}: "${a.slice(i, i + 8).join(" ")}" against "${b.slice(i, i + 8).join(" ")}"`);
       break;
     }
   }
-  const marksOld = rules(oldWords).filter(isMark).length;
+  const marksOld = rules(srcWords).filter(isMark).length;
   const marksNew = expected.filter(isMark).length;
-  if (marksOld - book.stats.sourceHyphensDropped !== marksNew) report.differences.push(`list marks: ${marksOld} in the original, ${book.stats.sourceHyphensDropped} dropped, ${marksNew} set`);
-  report.listMarks = { original: marksOld, droppedBeforeSources: book.stats.sourceHyphensDropped, set: marksNew };
+  if (marksOld - book.stats.sourceHyphensDropped !== marksNew) report.differences.push(`list marks: ${marksOld} in the source, ${book.stats.sourceHyphensDropped} dropped, ${marksNew} set`);
+  report.listMarks = { source: marksOld, droppedBeforeSources: book.stats.sourceHyphensDropped, set: marksNew };
   // 3. The new EPUB carries exactly the set text.
   if (epubFile) {
     const newWords = epubBodyWords(unzip(fs.readFileSync(epubFile)), files, { markers: true });
