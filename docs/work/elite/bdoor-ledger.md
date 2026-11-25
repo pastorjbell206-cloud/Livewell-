@@ -18921,3 +18921,18 @@ Cut in chapter 12: the deep note's line to 1 Corinthians 12:3 and its reading of
 | The care line (‘A word of care. This story must not be used to say that a sudden death...’ to ‘...lists places to turn.’) | 9-14 `hard` | 1-kings/plain/13.json and 17.json; 2-kings/plain/5.json and 7.json; 1-chronicles/intro.json `teaching` | Reused whole, word for word; Find Help named |
 
 Cut in chapter 13: the deep note's contrast between Uzzah and those who touched Jesus (Mark 5:25-34), and Hebrews 4:16 and 10:19-22, which it presents as connections the New Testament suggests, not lines it draws to this chapter. A first draft misquoted 1 Samuel 7:2 and used 'bless'; both were corrected before they reached the repository.
+
+## The plain notes on 1 Chronicles 14 (2026-11-25)
+
+`client/public/bible/notes/1-chronicles/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 14:1; 14:2; more wives and children (14:3); the names, Solomon among them (14:4-7) | 1-7 | 1-chronicles/14.json `summary`; BSB | Repository; BSB text |
+| Between the two attempts; moved from 2 Samuel 5; God not turned against David; Tyre, cedar and Lebanon; diplomacy; the cedar palace; Hiram and Solomon (1 Kings 5) and the date unsettled; for the sake of God's people; many wives and Deuteronomy 17:17 | 1-7 | 1-chronicles/14.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Psalm 127:1 (its first clause) | 1-7 | BSB; psalms/plain/127.json | BSB text |
+| The Philistines search and raid (14:8-9); 14:10 (David's question, quoted alone); go; Baal-perazim and 14:11 (David's words); 14:12 (its last clause); the second raid and question (14:13-14); 14:15 (to 'before you'); Gibeon to Gezer (14:16); 14:17 | 8-17 | 1-chronicles/14.json `summary`; BSB | Repository; BSB text |
+| The Philistine cities; tolerated, then a threat; the Valley of Rephaim near Jerusalem; the two-battle pattern; asking again; shaal and Saul's name; images carried into battle; 2 Samuel 5:21 and burning (Deuteronomy 7:5, 25); Baal-perazim and chapter 13's parats; the tree uncertain | 8-17 | 1-chronicles/14.json `historical`, `cultural`, `literary`, `words` (shaal, parats) | Repository |
+| 2 Samuel 5:21 (its last clause); Deuteronomy 7:5 (its last clause) | 8-17 | 1-chronicles/14.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 14: the deep note's line from David's asking to Jesus' prayer and John 5:19, which it calls a pattern. The note's point that 2 Samuel 5:25 reads Geba is left out, since the BSB of 2 Samuel itself reads Gibeon there. No care line is needed in this chapter.
