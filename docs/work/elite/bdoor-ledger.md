@@ -20642,3 +20642,22 @@ Cut in chapter 6: the deep note's picture of Jesus as Israel's representative ex
 | 1 Kings 18:28; Deuteronomy 14:1 | 13-16 | hosea/7.json `cultural` | Repository |
 
 Cut in chapter 7: the deep note's lines to Luke 13:34 and 19:41-44, to the true king, and to Matthew 6:31-33, which the New Testament does not draw from this chapter. The cutting of 7:14 is named as a worship practice and not described.
+
+## The plain notes on Hosea 8 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1 (its clause); 8:2-3 paraphrased (8:2's inner quotation not quoted); 8:4 (its first two sentences); 8:5 (its last sentence); 8:6 (after the dash) | 1-6 | BSB | BSB text |
+| The ram's horn; eagle or vulture; the house of the LORD as the land and people; kings and idols paired; the years after 753 BC and the kingdom's origin; the division about 930 BC and the calves at Bethel and Dan; the calf of Samaria as Bethel's or Samaria's own; the irony | 1-6 | hosea/8.json `cultural`, `historical`, `literary` | Repository; both views in their holders' terms |
+| 1 Kings 12:28 and Exodus 32:4; 2 Kings 17:21-22 | 1-6 | hosea/8.json `historical`; BSB | Repository; BSB text |
+| The hard note: the calves tied to the LORD; pedestals like the cherubim; images of the LORD; Baal's symbols; Hosea's judgment not depending on it; 13:2; the LORD's name kept over idolatry | 1-6 `hard` | hosea/8.json `hard` | Repository; the readings in their holders' terms |
+| 8:7 (its first sentence; the rest paraphrased); 8:8 and 8:10 paraphrased; 8:9 (its clause) | 7-10 | BSB | BSB text |
+| The farming proverb; wind as emptiness; tsemach and qemach; hired lovers reversed; Menahem's thousand talents to Tiglath-pileser III; king of princes and king of kings | 7-10 | hosea/8.json `cultural`, `literary`, `historical` | Repository |
+| 2 Kings 15:19-20; Proverbs 22:8 (its first clause) | 7-10 | hosea/8.json `historical`; BSB | Repository; BSB text |
+| 8:11; 8:12-13 paraphrased and the last clause of 8:13; 8:14 (its first clause; the rest paraphrased) | 11-14 | BSB | BSB text |
+| Altars multiplied; the written law made strange; the return to Egypt as a picture (9:3; 11:5); the fire in the Assyrian campaigns to 722 BC and Sennacherib's invasion of 701 BC | 11-14 | hosea/8.json `cultural`, `historical` | Repository |
+| 2 Kings 18:13 paraphrased; Amos 2:5 | 11-14 | BSB | BSB text |
+
+Cut in chapter 8: the deep note's lines to John 6:15, Galatians 6:7-8 and Luke 19:10, which the New Testament does not draw from this chapter; Proverbs 22:8 stands in their place as the Bible's own proverb of sowing and reaping. The cry of 8:2, an inner quotation, is paraphrased.
