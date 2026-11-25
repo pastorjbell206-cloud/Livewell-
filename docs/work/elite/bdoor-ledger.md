@@ -20677,3 +20677,22 @@ Cut in chapter 8: the deep note's further lines to Christ (Hebrews 1:2-3; Luke 7
 | Deuteronomy 30:19 (from ‘I have set before you’, before its last clause) | 13-18 | proverbs/9.json `literary` (two ways); the Two Ways theme (proverbs/intro.json `themes`); BSB | Repository; BSB text |
 
 Cut in chapter 9: the deep note's lines to Christ (the parable of the wedding feast, Matthew 22:1-10 and Luke 14:16-24, which the note says does not cite this chapter; the bread of life, John 6; the Lord's Supper beside verse 5, which the note calls an application; Matthew 7:13-14 beside the two feasts); the resurrection as the answer to verse 11 (left to the New Testament's own pages).
+
+## The plain notes on Proverbs 10 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 10:1 (the heading and the saying); 10:2; 10:3; 10:4; 10:5; 10:7; 10:9; 10:11 | 1-11 | BSB | BSB text |
+| The poems over and the contents of Wisdom's house; small pieces to 22:16; pondering one saying at a time; antithetical parallelism; tsaddiq and rasha; verses 6 and 11 ending alike; harvest seasons and winter survival; the disgraceful son; honor and shame, the name that rots as a second death | 1-11 | proverbs/10.json `story`, `literary`, `cultural`, `words` (tsaddiq) | Repository |
+| Psalm 112:6; Psalm 49:6 | 1-11 | the chapter data's cross-references for 10:7 (Psalm 112:6) and 10:2 (Psalm 49:6); BSB | Repository; BSB text |
+| 10:12; 10:13 (its first clause); 10:14; 10:18; 10:19; 10:20 (its first clause); 10:21; 10:15; 10:17 | 12-21 | BSB | BSB text |
+| Word as contract, testimony and reputation; instruction by mouth at meals, fields and gate; kasah, to cover, not pretending; verse 15 as observation, not praise; the clusters on speech (18-21) | 12-21 | proverbs/10.json `cultural`, `literary`, `words` (kasah) | Repository |
+| 1 Peter 4:8 (its clause); James 3:2 (its first two sentences, in part) | 12-21 | the chapter data's cross-references for 10:12 (1 Peter 4:8) and 10:19 (James 3:2); 1-peter/plain/4.json (‘Love covers’ and 10:12); BSB | Repository; BSB text; the New Testament's own echo |
+| 10:22; 10:23; 10:25; 10:26 (its picture); 10:27; 10:28 (its first clause); 10:29 (its first clause); 10:30; 10:32 | 22-32 | BSB | BSB text |
+| The LORD four times in the chapter; the shared form of ancient sayings rooted in the LORD; verses 27-30 on lasting security; the whirlwind; vinegar and smoke | 22-32 | proverbs/10.json `historical`, `literary` | Repository |
+| Psalm 125:1 (after its heading); Ecclesiastes 7:15 (its second sentence) | 22-32 | the chapter data's cross-references for 10:30 (Psalm 125:1); proverbs/10.json `hard` (Ecclesiastes on the righteous perishing); BSB | Repository; BSB text |
+| The hard note: verses 3, 27 and 30 false as guarantees; Job; Ecclesiastes 9:11 (its first clause after the colon); the psalms; the genre; 26:4-5; the final outcome reading and the this-life reading; no formula, and no reason to think the hungry or grieving deserved it | 22-32 `hard` | proverbs/10.json `hard`; BSB | Repository; BSB text; each reading in its holders' terms |
+
+Cut in chapter 10: the deep note's lines to Christ (Matthew 12:42 and Jesus' sayings as mashal; the two builders, Matthew 7:24-27, set beside verse 25; 1 Corinthians 1:24; the love that covers as the cross). The 375-verse count is left to the book page. No care line is needed in this chapter.
