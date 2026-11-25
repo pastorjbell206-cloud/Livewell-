@@ -18452,3 +18452,21 @@ Every claim in `client/public/bible/notes/job/intro.json`, field `teaching`. No 
 | Go deeper: eleven pages | deeper | bible/guides/reading-wisdom.json, reading-poetry.json; bible/doctrines.json (suffering, angels, prayer, wisdom); the Honest Answer on suffering; questions/evil; studyguides/lament.json; needs/grief.json, needs/suffering.json (titles as the pages give them) | Repository; every page live in the search index |
 
 Cut from the book page: the old introduction's and the deep notes' lines to Christ that the New Testament does not draw (the mediator, witness and Redeemer as Jesus, Psalm 22 and the cross, the accuser of Revelation 12:10, the cross as the answer to the heavenly court, the seven days as the incarnation, Philippians 2 and the right hand that saves, Christ as wisdom from 1 Corinthians 1:24 set beside chapter 28, Job's prayer for his friends and Luke 23:34); Handel's Messiah and funerals (not needed); the Ludlul and Babylonian Theodicy dates (not in the repository; left out of the timeline); a sentence calling James's word ‘perseverance’ not patience (not in the repository).
+
+## The plain notes on Job 1 (2026-11-25)
+
+`client/public/bible/notes/job/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Outside Israel's story; Uz, Lamentations 4:21 and Edom, or toward Aram; the patriarchal setting; Job as priest of his household, as Noah, Abraham and Jacob; the burnt offering; tam as whole, not sinless; the reader told it is not punishment; covering hidden sin | 1-5 | job/1.json `story`, `historical`, `cultural`, `words` (tam), `doctrines` (suffering) | Repository |
+| Ezekiel 14:14 (in part: the verse holds dashes) | 1-5 | job/intro.json `date`; job/42.json `historical`; BSB | Repository; BSB text |
+| The heavenly council and the sons of God; ha-satan with the definite article; chinnam and the hinge of the book; the accuser proposes, the LORD permits and limits; the gap between reader and Job | 6-12 | job/1.json `cultural`, `literary`, `words` (satan, chinnam), `doctrines` (sovereignty, faith), `story` | Repository |
+| 1 Kings 22:19; Zechariah 3:1 | 6-12 | 1-kings/plain/11.json `later` (God's council: 1 Kings 22:19; Psalm 82:1; Job 1:6); bible/doctrines/angels.json and the notes naming Zechariah 3:1 beside Job 1 to 2; BSB | Repository; BSB text |
+| The hard note: the two readings of the accuser (prosecutor, 1 Samuel 29:4; Satan, as most Christian interpreters read); under God's authority with hostile intent; the dialogue real or a device; the scene explains Job's loss and no other's; reasons hidden from sufferers; no one may tell a sufferer they are being tested or failing | 6-12 | job/1.json `hard`, `words` (satan); job/intro.json `christ`; the brief's crisis rules | Repository; each view in its holders' terms; no side |
+| The four messengers and the refrain; human and natural forces; the Sabeans and Sheba; the Chaldeans as tribal raiders before the later kings; the rites of mourning; worship inside grief; 1:22 | 13-22 | job/1.json `historical`, `cultural`, `literary` | Repository |
+| James 5:11 | 13-22 | job/1.json `christ`; james/plain/5.json; BSB | Repository; BSB text |
+| The hard note: no explanation given to Job; worship and anguish held together (3:3); the children not dying for anything they did; the new children not replacing the first (42:13) | 13-22 | job/1.json `doctrines`; job/42.json `hard` | Repository |
+| The grief line and the child-loss line | 13-22 | 1-samuel/plain/1.json (1-8); 2-samuel/plain/12.json (15-25), 1-kings/plain/3.json (16-28), 2-kings/plain/4.json (18-37) (`hard`) | Reused whole, word for word; Find Help named |
+
+Cut in chapter 1: the deep note's lines to Christ (Jesus as the innocent one whose loyalty was tested; Revelation 12:10 and the accuser thrown down, set beside Job 1; the note calls the link thematic); the Christian reading of the heavenly court as part of the conflict the cross resolves.
