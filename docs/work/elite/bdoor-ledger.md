@@ -18101,3 +18101,20 @@ Cut in chapter 7: the deep note's lines to Christ (Colossians 2:15 and the cross
 | Women and children in 8:11: two readings of the grammar; chapter 9's men counted and no plunder; defense against a legal order for destruction; no warrant today to harm anyone | 9-17 `hard` | esther/8.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 8: the deep note's line to Christ (the irrevocable sentence answered by a new decree of life, read as a picture of the gospel; the note calls it thematic, not predictive); naqam and vengeance (the note's word study, left out to keep the decree's sense to its hard question).
+
+## The plain notes on Esther 9 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| About 473 BC; haphakh overturned and turned to joy; the decree of defense; those who sought harm and hated; plunder refused three times and Saul's failure; told briefly | 1-10 | esther/9.json `historical`, `literary`, `words` (haphakh, bizzah) | Repository |
+| 1 Samuel 15:9 | 1-10 | esther/9.json `words` (bizzah: Saul in 1 Samuel 15); BSB | Repository; BSB text |
+| The fourteenth and fifteenth; Shushan Purim and walled cities; the versions differing (15,000 and 75,000); the rest dwelt on | 11-19 | esther/9.json `cultural`, `historical` | Repository |
+| Revelation 11:10 | 11-19 | revelation/plain/11.json (Purim and gifts); BSB | Repository; BSB text |
+| The killing: defense under decree; not neutral neighbors; plunder refused; the second day read two ways; stylized numbers or history; description not approval; faithful readers differing; no side; Romans 12:19; no warrant to harm anyone or take revenge on any people | 11-19 `hard` | esther/9.json `hard`; bible/guides/reading-narrative.json | Repository; the readings in their holders' terms |
+| Pur from the Akkadian; Purim not commanded in the law and established by the community; 2 Maccabees and Mordecai's day; the customs of verse 22; the scroll read and Haman's name drowned out, a later development; remembrance as active; all who join them (9:27) | 20-32 | esther/9.json `cultural`, `historical`, `words` (pur, zakhar); bible/guides/calendar-and-festivals.json; BSB | Repository; BSB text |
+| Psalm 30:11 | 20-32 | BSB (a link within the Old Testament) | Repository; BSB text |
+| A feast without a command in the law: established by the people; received and kept; remembering, thanks and care for the poor; not adding to the law | 20-32 `hard` | esther/9.json `historical` | Repository; the readings in their holders' terms |
+
+Cut in chapter 9: the deep note's line to Christ (the day of destruction turned to rescue read beside the cross and resurrection and John 16:20; the note calls it the Christian reading, not a line the New Testament draws to this chapter); the list of Haman's sons and the column layout of the scroll (not needed); the numbers of the dead in Susa and the provinces stated only once, by the text's own words in its quotations (not lingered over); the claim that Purim is the only feast the people established (not stated in the repository; narrowed before commit).
