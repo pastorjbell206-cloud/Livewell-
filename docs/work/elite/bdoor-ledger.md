@@ -20508,3 +20508,22 @@ Every claim in `client/public/bible/notes/proverbs/intro.json`, field `teaching`
 | Go deeper: eleven pages | deeper | guides/reading-wisdom.json, reading-poetry.json; /tools/wisdom-books; bible/doctrines.json (wisdom, family, wealth, justice-poor, work); wisdom/entry/parenting-struggles.json; wisdom/entry/gossip-and-the-tongue.json; needs/parenting.json (titles as the pages give them) | Repository; every page live in the search index |
 
 Cut from the book page: the old introduction's line that Christians see in Jesus the one who lived the life Proverbs describes and who is himself the wisdom the father urges (a line the New Testament does not draw from Proverbs); the chapter 31 note's reading of Jesus as the king who speaks for the voiceless, and of the woman as the church (lines the New Testament does not draw); the deep note's mention of modern research on physical punishment (no source named in the repository); the Waltke and Fox commentaries (not needed). The explore indexes (timeline, atlas, words, hard passages) were rebuilt in the same commit, and `teaching.test.tsx` names Proverbs among the books with a teaching guide, on the `canaan` frame.
+
+## The plain notes on Proverbs 1 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2; the purposes (1:3-4); 1:5; 1:7 | 1-7 | BSB | BSB text |
+| Solomon remembered for wisdom and 1 Kings 4:32; later headings; the prologue as preface to the whole book; mashal and how to read it; peti, open like a door, able to go either way; the wise still learning; yirah as reverence and trust shown in obedience; the beginning as first principle; wisdom moral and religious before practical | 1-7 | proverbs/1.json `story`, `historical`, `words` (mashal, yirah, peti), `doctrines` (wisdom) | Repository |
+| 1 Kings 3:9 (its first sentence, in part); Psalm 111:10 (its first clause); Ecclesiastes 12:13 (its second sentence) | 1-7 | proverbs/1.json `story` (1 Kings 3); the chapter data's cross-references for 1:7 (Psalm 111:10; Ecclesiastes 12:13); BSB | Repository; BSB text |
+| 1:8; 1:9; 1:10; the gang's pitch (1:11-14) with 1:13 quoted; 1:15; 1:16; 1:18; 1:19 | 8-19 | BSB | BSB text; 1:14 (with a dash) not quoted |
+| Wisdom taught at home and court; the father-to-son form and the Egyptian texts; the mother's teaching honored; righteousness as the goal; garland and pendant as marks of honor; exposed roads and bands of robbers; easy money and belonging; the trap turned on the trappers; greed carrying its own ruin | 8-19 | proverbs/1.json `cultural`, `historical`, `literary`, `doctrines` (family, sin) | Repository |
+| Psalm 1:1 (in part); Isaiah 59:7 (its first sentence); 1 Timothy 6:9 (its first clause); 1 Timothy 6:10 (in part) | 8-19 | the chapter data's cross-references for 1:10, 1:15, 1:16 and 1:13; BSB | Repository; BSB text |
+| 1:20; the city gates (1:21); 1:22; 1:23; 1:24 (its clause); the storm and no answer (1:26-27); 1:28; 1:31 (its first clause); 1:33 | 20-33 | BSB | BSB text |
+| Wisdom as a personification; the invitation to a relationship; the street, square, concourse and gate; elders, merchants and news; not hidden in temple or school; a prophet's oracle form; the simple, the scoffer, the fool | 20-33 | proverbs/1.json `cultural`, `literary`; proverbs/intro.json `themes` (wisdom personified) | Repository |
+| Isaiah 65:2 (its first clause); Romans 10:21 named; Galatians 6:7 (its last sentence) | 20-33 | the chapter data's cross-references for 1:24 (Romans 10:21; Isaiah 65:12 beside 65:2) and 1:31 (Galatians 6:7); BSB | Repository; BSB text |
+| The hard note: poetry in the style of a prophetic warning; consequences that cannot be undone; the mocking reversing the scoffers' own (1:22); spoken now, while there is time; the outstretched hand; God welcoming the repentant and warning against delay; 1:33 as a pattern, not a promise that the wise never suffer; Job and Ecclesiastes | 20-33 `hard` | proverbs/1.json `hard` | Repository |
+
+Cut in chapter 1: the deep note's lines to Christ (Matthew 11:19 and wisdom vindicated by her deeds; Matthew 23:37 and Jesus' lament over Jerusalem set beside verse 22; 1 Corinthians 1:24 set beside this chapter; the note calls the links thematic). No care line is needed in this chapter.
