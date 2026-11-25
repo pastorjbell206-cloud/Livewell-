@@ -19191,3 +19191,18 @@ Cut in chapter 31: the deep note's lines to Christ (Matthew 5:28, 5:44, 25:35-36
 | The hard note: the four readings (a wise voice not rebuked at 42:7-9; a repetition ignored by God; a later addition; deliberately mixed); no side | 6-22 | job/32.json `hard` | Repository; each reading in its holders' terms; no side |
 
 Cut in chapter 32: the deep note's lines to Christ (Luke 2:46-47, John 7:15 and Acts 2:17; the note says none is predicted in Job 32); Mark 2:22 on wineskins (not drawn from Job).
+
+## The plain notes on Job 33 (2026-11-25)
+
+`client/public/bible/notes/job/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Elihu turning to Job; 9:33 and 16:19-21 taken up; a fellow creature of clay; the breath of the Almighty; Job's words quoted (13:24, 27), selectively as some note; innocent of the charges, not sinless | 1-13 | job/33.json `story`, `cultural`, `literary`, `hard`; job/31.json `hard` | Repository |
+| Genesis 2:7 | 1-13 | job/27.json `doctrines` (humanity: Genesis 2:7); job/32.json `words` (ruach); BSB | Repository; BSB text |
+| Dreams as warning; Eliphaz's vision (4:12-17) taken gently; illness before modern medicine, read as displeasure; shachat five times | 14-22 | job/33.json `cultural`, `words` (shachat) | Repository |
+| The hard note: not the friends' idea; teaching through hardship; no one can tell God's purpose in a given case; 1:19 and the children; Elihu not knowing the prologue; no one may tell the sick their illness is God's warning | 14-22 | job/33.json `hard`; job/37.json `hard` | Repository |
+| Luts as go-between; the messenger as angel, teacher or undefined; kopher found, not produced; the small drama; verse 32 | 23-33 | job/33.json `words` (luts, kopher, malak), `literary` | Repository; each reading in its holders' terms |
+| Genesis 42:23; Exodus 30:12 | 23-33 | job/33.json `words` (luts: Genesis 42:23; kopher: Exodus 21:30, 30:12); BSB | Repository; BSB text |
+
+Cut in chapter 33: the deep note's lines to Christ (1 Timothy 2:5-6 and Mark 10:45 beside the messenger and the ransom; the note itself says the passage should not be read as a coded prophecy); parallels of protective spirits in the region (not needed).
