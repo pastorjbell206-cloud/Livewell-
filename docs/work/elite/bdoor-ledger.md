@@ -20370,3 +20370,19 @@ Cut in chapter 29: the deep note's picture of the goats as a substitute pointing
 | The hard note: contrary to what was written; pardon for the seeking heart; Hosea 6:6; an exceptional mercy at a time of need; 1 Samuel 16:7; the tension kept | 13-27 `hard` | 2-chronicles/30.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 30: the deep note's lines to 1 Corinthians 5:7 and to the Gospels' gathering, which the New Testament does not draw from this chapter. The priests' blessing is told without the bless family of words. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 31 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The idols broken (31:1); the divisions and the king's gift (31:2-3); 31:4; 31:5 (its first sentence); the heaps (31:6-7); 31:10 (Azariah's clause) | 1-10 | BSB | BSB text |
+| Making the reform last; 2 Kings 18:4 and the bronze serpent; 2 Kings 18:22; Beersheba and Arad, disputed; Ephraim and Manasseh under Assyria; the worshipers' act; no tribal land (Numbers 18:20-24); maaser; Nehemiah 13:10; reshit; the third and seventh months | 1-10 | 2-chronicles/31.json `story`, `historical`, `cultural`, `words` (maaser, reshit) | Repository |
+| Nehemiah 13:10 (its clause) | 1-10 | BSB | BSB text |
+| The storerooms and stewards (31:11-19); 31:20; 31:21 | 11-21 | BSB | BSB text |
+| Emunah three times; named, accountable stewards; terumah; genealogies and households; the commendation and chapter 32 | 11-21 | 2-chronicles/31.json `cultural`, `literary`, `words` (emunah, terumah) | Repository |
+| Leviticus 27:30 | 11-21 | BSB | BSB text |
+| The hard note on tithing: Genesis 14:20; 2 Corinthians 9:6-7; the shared ground; a second-order question | 11-21 `hard` | 2-chronicles/31.json `hard` | Repository; each view in its holders' terms |
+
+Cut in chapter 31: the deep note's lines to 1 Corinthians 9:13-14 and Acts 4:34-35, which do not cite this chapter. No care line is needed in this chapter.
