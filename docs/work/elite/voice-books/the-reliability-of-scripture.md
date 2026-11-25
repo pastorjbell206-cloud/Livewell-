@@ -64,7 +64,12 @@ Three scripts, kept outside the repo in `/home/user/vs4/` (`apply.py`, `factdiff
 | Chapter 37: Letters Written Under Pressure — Paul and the Corinthians | 761 | 761 | +0.0% | 10 (13.1) | 0 (0.0) | 23 (30.2) | 13 (17.1) | 6 | PASS |
 | Chapter 38: The Question Behind All the Questions | 718 | 718 | +0.0% | 10 (13.9) | 0 (0.0) | 23 (32.0) | 13 (18.1) | 8 | PASS |
 | Conclusion: After the Questions, Before the Answer | 822 | 822 | +0.0% | 11 (13.4) | 0 (0.0) | 28 (34.1) | 17 (20.7) | 9 | PASS |
-| **All 40** | 39,416 | 39,416 | +0.0% | 524 (13.3) | 4 (0.1) | 1062 (26.9) | 555 (14.1) | 368 | |
+| A PASTORAL NOTE ON BIBLICAL LITERACY IN THE CONGREGATION | 404 | 404 | +0.0% | 4 (9.9) | 0 (0.0) | 12 (29.7) | 8 (19.8) | 3 | PASS |
+| Appendix A: The Major Manuscript Families — A Primer for Careful Readers | 577 | 577 | +0.0% | 11 (19.1) | 0 (0.0) | 23 (39.9) | 12 (20.8) | 7 | PASS |
+| Appendix B: Key Archaeological Sites and What They Proved | 717 | 717 | +0.0% | 9 (12.6) | 0 (0.0) | 13 (18.1) | 4 (5.6) | 8 | PASS |
+| Appendix D: A Reading Plan for the Serious Inquirer | 584 | 584 | +0.0% | 10 (17.1) | 0 (0.0) | 15 (25.7) | 6 (10.3) | 7 | PASS |
+| Appendix E: Frequently Asked Questions — Brief Answers to Common Objections | 1,187 | 1,187 | +0.0% | 21 (17.7) | 0 (0.0) | 39 (32.9) | 20 (16.8) | 13 | PASS |
+| **All 45** | 42,885 | 42,885 | +0.0% | 579 (13.5) | 4 (0.1) | 1164 (27.1) | 605 (14.1) | 406 | |
 
 ## Introduction: The Question in the Room (`sec01.xhtml`)
 
@@ -940,3 +945,109 @@ Five pairs, taken at even intervals through the chapter:
    After: I have followed the argument, the evidence is stronger than I expected, the case is more compelling than the culture suggested, and now I am going to do what evidence alone cannot do for me: I am going to trust.
 5. Before: But whether, at the end of the argument, standing at the edge of what the evidence can establish, you are willing to say yes — I love you, I trust you, I will follow.
    After: But whether, at the end of the argument, standing at the edge of what the evidence can establish, you are willing to say yes: I love you, I trust you, I will follow.
+
+
+## A PASTORAL NOTE ON BIBLICAL LITERACY IN THE CONGREGATION (`sec42.xhtml`)
+
+Words 404 to 404. Em-dashes in his prose 4 to 0 (9.9 to 0.0 per 1,000 words). Tells 12 to 8 (29.7 to 19.8 per 1,000). Mean sentence 19.2 words to 19.2; sentences of eight words or fewer 47.6% to 47.6%; of five or fewer 23.8% to 23.8%. 3 edits; paragraphs 6 to 6. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 4 to 0, not_just 1 to 1, triplet 3 to 3, anaphora 1 to 1, short_close 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 0 Scripture references, 0 years, 0 numbers in digits, 3 number words, proper names by count, and 2 hedge words (after: 2) compared.
+
+3 pairs (all there are), taken at even intervals through the chapter:
+
+1. Before: The single most important investment you can make in the long-term faith of your congregation, your small group, or your family is biblical literacy — not merely the ability to read the Bible but the capacity to understand what is being read, to ask the right questions of the text, to know the context of the passages you encounter, to recognize the genre you are standing in.
+   After: The single most important investment you can make in the long-term faith of your congregation, your small group, or your family is biblical literacy: not merely the ability to read the Bible but the capacity to understand what is being read, to ask the right questions of the text, to know the context of the passages you encounter, to recognize the genre you are standing in.
+2. Before: So invest in your congregation's theological education — not at the expense of the devotional life, because the two must go together, but theological education that enables people to engage their culture's questions with confidence rather than anxiety.
+   After: So invest in your congregation's theological education, not at the expense of the devotional life, because the two must go together, but theological education that enables people to engage their culture's questions with confidence rather than anxiety.
+3. Before: The congregation that has been preached through the whole Bible — all of it, the comfortable and the difficult, the clear and the complex — is the congregation that has some handle on what the text actually says, and it is harder to destabilize by critics who quote one verse without context, because it already knows the context.
+   After: The congregation that has been preached through the whole Bible (all of it, the comfortable and the difficult, the clear and the complex) is the congregation that has some handle on what the text actually says, and it is harder to destabilize by critics who quote one verse without context, because it already knows the context.
+
+
+## Appendix A: The Major Manuscript Families — A Primer for Careful Readers (`sec43.xhtml`)
+
+Words 577 to 577. Em-dashes in his prose 11 to 0 (19.1 to 0.0 per 1,000 words). Tells 23 to 12 (39.9 to 20.8 per 1,000). Mean sentence 24.7 words to 24.7; sentences of eight words or fewer 21.7% to 21.7%; of five or fewer 13.0% to 13.0%. 7 edits; paragraphs 7 to 7. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 11 to 0, not_but 1 to 1, not_just 2 to 2, isnt_its 1 to 1, triplet 4 to 4, anaphora 1 to 1, q_answered 1 to 1, short_close 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 2 quoted strings, 4 Scripture references, 1 years, 6 numbers in digits, 9 number words, proper names by count, and 16 hedge words (after: 16) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: New Testament manuscripts are not catalogued at random; they are grouped into text-types — also called manuscript families — based on the patterns of similarity they display.
+   After: New Testament manuscripts are not catalogued at random; they are grouped into text-types (also called manuscript families) based on the patterns of similarity they display.
+2. Before: The Byzantine text-type is represented by the vast majority of existing New Testament manuscripts, approximately 80 to 85 percent of the total — a figure that reflects not superior antiquity but the dominance of the Byzantine church in medieval manuscript production.
+   After: The Byzantine text-type is represented by the vast majority of existing New Testament manuscripts, approximately 80 to 85 percent of the total, a figure that reflects not superior antiquity but the dominance of the Byzantine church in medieval manuscript production.
+3. Before: That lineage explains why the KJV includes certain passages absent from newer translations based on Alexandrian manuscripts — the longer ending of Mark (16:9-20) and the story of the woman caught in adultery (John 7:53-8:11) among them, both present in Byzantine manuscripts but absent in the earliest Alexandrian ones.
+   After: That lineage explains why the KJV includes certain passages absent from newer translations based on Alexandrian manuscripts: the longer ending of Mark (16:9-20) and the story of the woman caught in adultery (John 7:53-8:11) among them, both present in Byzantine manuscripts but absent in the earliest Alexandrian ones.
+4. Before: It is characterized by paraphrase, by an expansion of narratives — most strikingly in Acts, where the Western text runs about 10 percent longer than the Alexandrian — and by occasional conflation of readings drawn from other traditions.
+   After: It is characterized by paraphrase, by an expansion of narratives (most strikingly in Acts, where the Western text runs about 10 percent longer than the Alexandrian), and by occasional conflation of readings drawn from other traditions.
+5. Before: When your Bible's footnote says "some manuscripts do not include this verse" or "other ancient authorities read... — that is the apparatus of textual criticism making itself available to the ordinary reader, and the transparency is itself evidence of the tradition's integrity.
+   After: When your Bible's footnote says "some manuscripts do not include this verse" or "other ancient authorities read...," that is the apparatus of textual criticism making itself available to the ordinary reader, and the transparency is itself evidence of the tradition's integrity.
+
+
+## Appendix B: Key Archaeological Sites and What They Proved (`sec44.xhtml`)
+
+Words 717 to 717. Em-dashes in his prose 9 to 0 (12.6 to 0.0 per 1,000 words). Tells 13 to 4 (18.1 to 5.6 per 1,000). Mean sentence 33.1 words to 33.1; sentences of eight words or fewer 9.5% to 9.5%; of five or fewer 4.8% to 4.8%. 8 edits; paragraphs 9 to 9. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 9 to 0, not_but 1 to 1, NotX.Y 1 to 1, triplet 2 to 2.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 6 quoted strings, 16 Scripture references, 4 years, 27 numbers in digits, 27 number words, proper names by count, and 9 hedge words (after: 9) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The Tel Dan Stele, a ninth-century BC basalt monument erected by an Aramean king in northern Israel, carries the phrase "House of David" — the first extra-biblical reference to the Davidic dynasty, and one that confirms the historical existence of David's royal line within roughly a hundred and fifty years of his reign.
+   After: The Tel Dan Stele, a ninth-century BC basalt monument erected by an Aramean king in northern Israel, carries the phrase "House of David," the first extra-biblical reference to the Davidic dynasty, and one that confirms the historical existence of David's royal line within roughly a hundred and fifty years of his reign.
+2. Before: The tunnel itself stands among the most impressive surviving engineering works from the biblical period — not a fragment of pottery but a passage you can still walk, hewn through stone, ending in an inscription that says it was finished.
+   After: The tunnel itself stands among the most impressive surviving engineering works from the biblical period, not a fragment of pottery but a passage you can still walk, hewn through stone, ending in an inscription that says it was finished.
+3. Before: They record legal and social customs that match the world of the Genesis patriarchs, and in doing so they anchor the authenticity of the patriarchal narratives to the second millennium BC — the period the text itself claims.
+   After: They record legal and social customs that match the world of the Genesis patriarchs, and in doing so they anchor the authenticity of the patriarchal narratives to the second millennium BC, the period the text itself claims.
+4. Before: The Pilate Inscription, a first-century stone discovered at Caesarea Maritima in 1961, bears the name "Pontius Pilatus" and identifies him as "Prefect of Judaea" — direct archaeological confirmation of Pilate's existence and title, matching the New Testament's references.
+   After: The Pilate Inscription, a first-century stone discovered at Caesarea Maritima in 1961, bears the name "Pontius Pilatus" and identifies him as "Prefect of Judaea," direct archaeological confirmation of Pilate's existence and title, matching the New Testament's references.
+5. Before: The Erastus Inscription, a first-century stone pavement in Corinth, records that "Erastus, in return for his aedileship, laid the pavement at his own expense" — and Paul names Erastus as a Corinthian associate in Romans 16:23, so the inscription offers a potential confirmation of that individual.
+   After: The Erastus Inscription, a first-century stone pavement in Corinth, records that "Erastus, in return for his aedileship, laid the pavement at his own expense," and Paul names Erastus as a Corinthian associate in Romans 16:23, so the inscription offers a potential confirmation of that individual.
+
+
+## Appendix D: A Reading Plan for the Serious Inquirer (`sec46.xhtml`)
+
+Words 584 to 584. Em-dashes in his prose 10 to 0 (17.1 to 0.0 per 1,000 words). Tells 15 to 6 (25.7 to 10.3 per 1,000). Mean sentence 19.5 words to 19.5; sentences of eight words or fewer 20.0% to 20.0%; of five or fewer 6.7% to 6.7%. 7 edits; paragraphs 10 to 10. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 10 to 0, not_but 1 to 1, isnt_its 1 to 1, triplet 2 to 3, intens 1 to 1.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 7 Scripture references, 1 years, 2 numbers in digits, 7 number words, proper names by count, and 9 hedge words (after: 9) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: Read Mark in one sitting — it takes about two hours — then read John, then Matthew, then Luke-Acts as the two-volume work it was written to be.
+   After: Read Mark in one sitting (it takes about two hours), then read John, then Matthew, then Luke-Acts as the two-volume work it was written to be.
+2. Before: Kitchen, On the Reliability of the Old Testament — at least the introduction and the chapters on the periods you are most interested in.
+   After: Kitchen, On the Reliability of the Old Testament, at least the introduction and the chapters on the periods you are most interested in.
+3. Before: Read Michael Kruger, The Question of Canon — scholarly but accessible.
+   After: Read Michael Kruger, The Question of Canon (scholarly but accessible).
+4. Before: Wright, The Resurrection of the Son of God — the most thorough historical treatment of the question in modern scholarship, written by a scholar who is both rigorously historical and committed to the resurrection's reality.
+   After: Wright, The Resurrection of the Son of God, the most thorough historical treatment of the question in modern scholarship, written by a scholar who is both rigorously historical and committed to the resurrection's reality.
+5. Before: But the list gives you a path through the scholarship — from accessible introductions to thorough academic treatments — that will equip you to engage the questions with confidence.
+   After: But the list gives you a path through the scholarship (from accessible introductions to thorough academic treatments) that will equip you to engage the questions with confidence.
+
+
+## Appendix E: Frequently Asked Questions — Brief Answers to Common Objections (`sec47.xhtml`)
+
+Words 1,187 to 1,187. Em-dashes in his prose 21 to 0 (17.7 to 0.0 per 1,000 words). Tells 39 to 20 (32.9 to 16.8 per 1,000). Mean sentence 19.9 words to 19.9; sentences of eight words or fewer 21.1% to 21.1%; of five or fewer 8.8% to 8.8%. 13 edits; paragraphs 13 to 13. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 21 to 0, not_but 1 to 1, isnt_its 2 to 2, triplet 5 to 6, anaphora 3 to 3, stock 3 to 3, intens 1 to 1, colon_reveal 0 to 1, short_close 3 to 3.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 7 quoted strings, 4 Scripture references, 0 years, 2 numbers in digits, 11 number words, proper names by count, and 22 hedge words (after: 22) compared.
+
+Five pairs, taken at even intervals through the chapter:
+
+1. Before: The Council of Nicaea, meeting in 325 AD, addressed the theological question of the nature of Christ — specifically the Arian controversy — and produced the Nicene Creed; it did not vote on the biblical canon.
+   After: The Council of Nicaea, meeting in 325 AD, addressed the theological question of the nature of Christ, specifically the Arian controversy, and produced the Nicene Creed; it did not vote on the biblical canon.
+2. Before: the biblical texts on these topics require careful contextual reading, an understanding of the literary genres involved, attention to the trajectory of biblical ethics — from permission to prohibition in the case of slavery — and a willingness to distinguish between what a text describes, what it commands, what it permits, and what it condemns.
+   After: the biblical texts on these topics require careful contextual reading, an understanding of the literary genres involved, attention to the trajectory of biblical ethics (from permission to prohibition in the case of slavery), and a willingness to distinguish between what a text describes, what it commands, what it permits, and what it condemns.
+3. Before: The core claims of historic Christianity — the deity and humanity of Christ, the atonement, the resurrection, the authority of Scripture — have been essentially consistent across the major Christian traditions for two thousand years.
+   After: The core claims of historic Christianity (the deity and humanity of Christ, the atonement, the resurrection, the authority of Scripture) have been essentially consistent across the major Christian traditions for two thousand years.
+4. Before: Where a finding is contested — where scholars disagree about what an artifact proves — this book has tried to represent the spectrum of scholarly opinion rather than presenting the most favorable interpretation as settled fact.
+   After: Where a finding is contested, where scholars disagree about what an artifact proves, this book has tried to represent the spectrum of scholarly opinion rather than presenting the most favorable interpretation as settled fact.
+5. Before: What they are is honest — the best reading of the best evidence available by someone who has followed the argument where it leads.
+   After: What they are is honest: the best reading of the best evidence available by someone who has followed the argument where it leads.
