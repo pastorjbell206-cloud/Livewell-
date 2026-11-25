@@ -27,7 +27,8 @@ Three scripts, kept outside the repo in `/home/user/vs3/` (`apply.py`, `factdiff
 | Chapter 2: Can We Actually Trust the Bible? | 3,616 | 3,616 | +0.0% | 58 (16.0) | 2 (0.6) | 107 (29.6) | 56 (15.5) | 41 | PASS |
 | Chapter 3: Who Did Jesus Think He Was? | 3,329 | 3,329 | +0.0% | 55 (16.5) | 3 (0.9) | 104 (31.2) | 55 (16.5) | 40 | PASS |
 | Chapter 4: Did Jesus Really Rise from the Dead? | 3,577 | 3,577 | +0.0% | 34 (9.5) | 3 (0.8) | 96 (26.8) | 67 (18.7) | 24 | PASS |
-| **All 5** | 16,796 | 16,796 | +0.0% | 216 (12.9) | 14 (0.8) | 476 (28.3) | 288 (17.1) | 160 | |
+| Chapter 5: If God Is Good, Why Is There So Much Suffering? | 3,640 | 3,640 | +0.0% | 38 (10.4) | 3 (0.8) | 104 (28.6) | 70 (19.2) | 28 | PASS |
+| **All 6** | 20,436 | 20,436 | +0.0% | 254 (12.4) | 17 (0.8) | 580 (28.4) | 358 (17.5) | 188 | |
 
 ## Introduction: The Case for a Reasonable Faith (`sec01.xhtml`)
 
@@ -147,3 +148,27 @@ Five pairs:
    After: If the resurrection happened, every claim Jesus made about himself is vindicated (the deity, the forgiveness, the authority, the promise of return), and all of it rides on that morning.
 
 Left alone, and why. Each of the five alternative theories (hallucination, swoon, stolen body, legend, wrong tomb) is stated in its own terms before it is answered, and those statements are word for word; so is the caution that dying for a belief "proves sincerity, not truth". The claim itself is stated with its hedge intact and only a colon added ("The resurrection is the best explanation: not the only conceivable one, but the only one that does justice to all the evidence at once."). "Something changed.", "These do.", "Not spiritual. Not metaphorical. Bodily." and "He is risen. He is alive. He is at the door." are verdicts. Both pull quotes and the sentences near them are untouched. Three dashes stay.
+
+
+## Chapter 5: If God Is Good, Why Is There So Much Suffering? (`sec06.xhtml`)
+
+Words 3,640 to 3,640. Em-dashes in his prose 38 to 3 (10.4 to 0.8 per 1,000 words). Tells 104 to 70 (28.6 to 19.2 per 1,000). Mean sentence 23.8 words to 23.6; sentences of eight words or fewer 26.1% to 26.0%; of five or fewer 17.0% to 16.9%. 28 edits; paragraphs 44 to 44. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+
+By kind (before to after): emdash 38 to 3, not_but 19 to 19, NotX.Y 1 to 1, isnt_its 4 to 4, triplet 19 to 20, anaphora 2 to 2, stock 1 to 1, intens 8 to 8, colon_reveal 1 to 1, short_close 11 to 11.
+
+Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 3 quoted strings, 17 Scripture references, 2 years, 3 numbers in digits, 41 number words, proper names by count, and 41 hedge words (after: 41) compared.
+
+Five pairs:
+
+1. Before: The logical problem, as it turns out, has a surprisingly strong reply — one largely conceded by professional philosophy — while the emotional problem has an answer of a different kind, and it is better than anything atheism can offer.
+   After: The logical problem, as it turns out, has a surprisingly strong reply, one largely conceded by professional philosophy, while the emotional problem has an answer of a different kind, and it is better than anything atheism can offer.
+2. Before: Ivan does not deny God; he grants God, and grants even the final harmony — the day when every tear is wiped away and every cruelty is somehow folded into a great cosmic resolution — and he simply refuses to attend.
+   After: Ivan does not deny God; he grants God, and grants even the final harmony (the day when every tear is wiped away and every cruelty is somehow folded into a great cosmic resolution), and he simply refuses to attend.
+3. Before: The book opens by telling the reader, in God's own voice, what it will never tell Job — that Job is righteous, and that his ruin is not punishment — and then, for reasons disclosed to the reader and forever withheld from the sufferer, everything is stripped away:
+   After: The book opens by telling the reader, in God's own voice, what it will never tell Job (that Job is righteous, and that his ruin is not punishment), and then, for reasons disclosed to the reader and forever withheld from the sufferer, everything is stripped away:
+4. Before: The free will defense reaches the evil that human freedom causes — the Holocaust, slavery, rape, war — because a world capable of real love must be a world capable of real hatred, and God has judged that love is worth the risk of its opposite.
+   After: The free will defense reaches the evil that human freedom causes (the Holocaust, slavery, rape, war), because a world capable of real love must be a world capable of real hatred, and God has judged that love is worth the risk of its opposite.
+5. Before: Paul writes the theology of joy from a prison cell, Peter writes to Christians under persecution, Revelation is composed in exile on Patmos, and the Psalms of lament — the raw, unanswered, fist-shaking ones — are the single largest category in the Psalter.
+   After: Paul writes the theology of joy from a prison cell, Peter writes to Christians under persecution, Revelation is composed in exile on Patmos, and the Psalms of lament, the raw, unanswered, fist-shaking ones, are the single largest category in the Psalter.
+
+Left alone, and why. This chapter states the hardest objection in the book and the rule was at its strictest here: all 28 edits are dashes recast, and no word changed. The chain of the logical problem, the evidential problem with its list of horrors, and above all Ivan Karamazov's rebellion ("the most humane objection to Christianity ever framed") are word for word; Ivan's paragraph took one pair of brackets. The admissions that the answer is incomplete also stay exactly: "It is no full answer to why children die", "No theodicy answers Ivan", "This is not the whole answer. The agony of a mother at a graveside is not met by a syllogism." The care for a reader in grief is untouched: nothing here was made brisker or more confident. "Not all new things. All things new." and the last five sentences are verdicts. Three dashes stay.
