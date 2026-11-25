@@ -540,10 +540,11 @@ const HUB_LISTINGS = {
     ];
   } },
   // Every track on /tracks, each of its sessions, its leader's guide when it has one, and the whole track to print, from the tracks index (scripts/build-tracks-index.mjs).
+  // A track's description whole, at the size its card sets it (dek: .pre-dek in index.css).
   "/tracks": { label: "Tracks", cap: 120, load: () => {
     const d = readJsonSafe("client/public/tracks/index.json") || {};
     return (d.tracks || []).flatMap((t) => [
-      { title: t.title, href: `/tracks/${t.slug}`, blurb: t.subtitle },
+      { title: t.title, href: `/tracks/${t.slug}`, blurb: t.subtitle, dek: true },
       ...t.sessions.map((x) => ({ title: `Session ${x.n}: ${x.title}`, href: `/tracks/${t.slug}/${x.n}`, blurb: `About ${x.minutes} minutes. Opens: ${x.opens}.` })),
       ...(t.leader ? [{ title: `Leader's guide: ${t.title}`, href: `/tracks/${t.slug}/leader`, blurb: "How to run a small group through the track, and each session's group guide in order." }] : []),
       { title: `${t.title}: the whole track, to print`, href: `/tracks/${t.slug}/print`, blurb: "Every session on one page, a session to a sheet." },
@@ -880,6 +881,26 @@ const PAGE_BODIES = {
       `<p>Ask in your own words, or type a passage like John 3:16. Find Help, the essays, the answers, the plans, the guides, the family devotions, and the tools are all in here.</p>`,
     ]),
   }),
+  // Find Help: the crisis line first, word for word as the page has it
+  // (pages/Help.tsx), so 988, the Crisis Text Line and 911 can be called or
+  // texted from the first paint, before the app has loaded, and without it;
+  // then the page's head and the needs most people bring, the same twelve
+  // (client/src/data/help-chips.json). The crisis section is not held: it
+  // comes with the page, under the chips, where it stays. No search box, so
+  // nothing typed into a held copy is lost.
+  "/help": async () => {
+    const chips = readJsonSafe("client/src/data/help-chips.json") ?? [];
+    if (!chips.length) return null;
+    return {
+      html: article([
+        `<p>In danger or thinking about ending your life? Call or text <a href="tel:988">988</a>, text <a href="sms:741741?&amp;body=HOME">HOME to 741741</a>, or call <a href="tel:911">911</a>. <a href="#help-now">More lines below</a></p>`,
+        `<h1>Find Help</h1>`,
+        `<p class="pre-subtitle">What are you facing?</p>`,
+        `<p class="pre-lede">Say it the way you would say it to a friend. Each page here starts with what you are carrying, reads Scripture in context, and ends with something you can do this week and people who can help.</p>`,
+        `<section><h2 class="pre-kicker">What people bring most</h2>\n<ul>\n${chips.map((c) => `<li><a href="/help/${escapeHtml(c.slug)}">${escapeHtml(c.title)}</a></li>`).join("\n")}\n</ul></section>`,
+      ]),
+    };
+  },
   // The Wisdom Finder: its head in the page's own words (ToolHead in
   // pages/tools/WisdomFinder.tsx, the name from lib/toolsList.ts), then the
   // areas of life, each opening that area on the page (finder.json).
@@ -1148,7 +1169,10 @@ function hubListingHtml(routePath) {
   try { items = cfg.load(); } catch { return ""; }
   if (!items || !items.length) return "";
   const rows = items.slice(0, cfg.cap).map((it) => {
-    const blurb = it.blurb ? `<p>${escapeHtml(String(it.blurb).slice(0, 160))}</p>` : "";
+    // A row whose line the real page sets as a card's description (dek) keeps
+    // it whole, at the card's size: the card's own, painted when the page
+    // arrives, was the larger paint (/tracks, 2026-11-25).
+    const blurb = !it.blurb ? "" : it.dek ? `<p class="pre-dek">${escapeHtml(it.blurb)}</p>` : `<p>${escapeHtml(String(it.blurb).slice(0, 160))}</p>`;
     return `<li><a href="${escapeHtml(it.href)}">${escapeHtml(it.title)}</a>${blurb}</li>`;
   }).join("\n");
   return `<nav aria-label="${escapeHtml(cfg.label)}"><h2>${escapeHtml(cfg.label)}</h2><ul>\n${rows}\n</ul></nav>`;
@@ -1405,7 +1429,13 @@ function writeRoute(template, route, head, bodyHtml = "") {
     ? path.join(DIST_DIR, "index.html")
     : path.join(DIST_DIR, route.path.replace(/^\//, ""), "index.html");
   fs.mkdirSync(path.dirname(target), { recursive: true });
-  const preloads = isHome ? "" : chunkPreloads(route.path, template);
+  // Not on a page whose held text opens on a picture (the first cover on
+  // /downloads): a picture is the page's largest paint, and Lighthouse counts
+  // every file fetched before it is drawn. Preloaded from the head, the page's
+  // own code (two dozen files) arrived first and was counted, 600 ms of a phone's
+  // largest paint; the app fetches it when it starts, behind the held page.
+  const opensOnPicture = /<img\b[^>]*\bfetchpriority="high"/.test(bodyHtml);
+  const preloads = isHome || opensOnPicture ? "" : chunkPreloads(route.path, template);
   let html = rewriteIndexHtml(template, preloads ? `${head}\n    ${preloads}` : head);
   // The front page's head also carries the script that fills the hero's tonight slot, early (homeSlotScript).
   if (isHome) html = withSlotScript(html, homeSlotScript());
@@ -1418,7 +1448,7 @@ function writeRoute(template, route, head, bodyHtml = "") {
   // At the reading size (.prerender-content--read) where the shell stays in
   // place: the real page sets its text larger than the old 17px, and a larger
   // paragraph painted when it arrived became the page's largest paint again.
-  const inPlace = !isHome && !SHELL_STAYS_IN_ROOT.has(route.path);
+  const inPlace = !isHome;
   const body = bodyHtml ? `\n        <div class="prerender-content${inPlace ? " prerender-content--read" : ""}">\n${bodyHtml}\n        </div>` : "";
   // The static hero paints from the HTML on the front page only; every other
   // route drops the marker so a deep link never flashes the home hero.
@@ -1427,7 +1457,7 @@ function writeRoute(template, route, head, bodyHtml = "") {
   } else if (body) {
     html = html.replace('<div id="root">', () => `<div id="root">${body}`);
   }
-  if (body && !isHome && !SHELL_STAYS_IN_ROOT.has(route.path)) html = shellBeforeRoot(html);
+  if (body && !isHome) html = shellBeforeRoot(html);
   fs.writeFileSync(target, html);
   return target;
 }
@@ -1451,8 +1481,6 @@ function shellBeforeRoot(html) {
   const shell = html.slice(shellAt, rootClose).trimEnd();
   return `${html.slice(0, at)}${shell}\n    ${open}</div>${html.slice(rootClose + "</div>".length)}`;
 }
-/** Pages other work is changing as this lands (2026-11-23); the shell still moves there at run time, as before. */
-const SHELL_STAYS_IN_ROOT = new Set(["/start", "/downloads"]);
 
 /**
  * The Study Bible (client/public/bible/*): every book, every chapter, the
