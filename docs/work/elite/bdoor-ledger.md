@@ -18687,3 +18687,18 @@ Cut in chapter 14: the deep note's lines to Christ (John 11:25, 1 Corinthians 15
 | The hard note: much matching Scripture; a rule in this life; chapter 21; Psalm 73; true of final judgment, false of every visible life; 42:7; never held up to a sufferer | 17-35 | job/15.json `hard` | Repository |
 
 Cut in chapter 15: the deep note's lines to Christ (Colossians 1:15-17 and John 1:18 beside Eliphaz's mocking questions; the note calls it thematic and says Eliphaz means nothing of the kind); Obadiah 8 (not needed).
+
+## The plain notes on Job 16 (2026-11-25)
+
+`client/public/bible/notes/job/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The comforter's role; the seven days (2:13); nacham returning with irony; shaking the head as contempt; verse 5 as what they should have done; verse 6 | 1-6 | job/16.json `cultural`, `literary`; job/2.json `words` (nacham) | Repository |
+| Job 2:11; Romans 12:15 | 1-6 | needs/suffering.json `helping` (Romans 12:15 and the friends' first week); BSB | Repository; BSB text |
+| The violent images and breach upon breach; he and You; the body as witness against him; the cheek and honor; sackcloth sewn on; the horn in the dust; hands clean and prayer pure | 7-17 | job/16.json `historical`, `cultural`, `literary`, `doctrines` | Repository |
+| Abel and innocent blood (Numbers 35:33); the turn from chapter 9 to a witness; ed and sahed; the thread to chapter 19 | 18-22 | job/16.json `historical`, `words` (ed, sahed, dam), `story` | Repository |
+| Genesis 4:10 | 18-22 | job/16.json `historical`, `words` (dam); BSB | Repository; BSB text |
+| The hard note: the three readings of the witness (God himself; a heavenly figure, 5:1 and 33:23; Job's own cry); verse 20 read two ways; Christians reading it of Christ, Job not knowing Jesus, the New Testament not quoting it | 18-22 | job/16.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 16: the deep note's lines to Christ (1 John 2:1, Hebrews 7:25, Matthew 26:67 and Hebrews 12:24; the note calls them thematic); the Greek versions' word for comforters and its later use (not drawn by the New Testament from Job).
