@@ -28,5 +28,547 @@
     { "ch": 6, "why": "Darius confirms Cyrus's decree, the temple is finished and dedicated in 515 BC, and the returned exiles keep the Passover." },
     { "ch": 7, "why": "Ezra is introduced as a scribe devoted to studying, practicing, and teaching the law, and Artaxerxes commissions him." },
     { "ch": 9, "why": "Ezra's prayer of confession, in which the leader stands with his guilty people, is one of the great prayers of the Old Testament." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Ezra in a minute",
+        "body": "Ezra is the fifteenth book of the Bible. It has ten chapters, and it tells how some of the Jewish exiles in Babylon came home to Jerusalem under Persian rule and rebuilt the temple of the LORD, and how, many years later, a priest and scribe named Ezra came to teach them God's law.\n\nThe book has two halves. Chapters 1 to 6 begin in 538 BC, when the Persian king Cyrus lets the exiles go home. The first to return build an altar, lay the temple's foundation, meet years of opposition from their neighbors, and finish the house of God in 515 BC, urged on by the prophets Haggai and Zechariah. Chapters 7 to 10 jump ahead nearly sixty years. Ezra comes from Babylon with a second group and a letter from King Artaxerxes, and he finds that many of the returned exiles have married women from the peoples around them. The book ends with a painful public reckoning over those marriages.\n\nSome of its scenes stay with readers: a foreign emperor's proclamation, sent because ‘the LORD stirred the spirit of Cyrus king of Persia’ (1:1); a crowd at the temple's foundation where ‘The people could not distinguish the shouts of joy from the sound of weeping’ (3:13); and Ezra on his knees before the house of God, praying for a people whose guilt he counts as his own.\n\nThere is no king on David's throne in this book, no independence, and no miracle on the scale of the exodus. There are decrees, letters, building permits, lists of names and a great deal of paperwork. The book's claim is that God is at work in exactly those things. Again and again it says that ‘the hand of the LORD his God was upon him’ (7:6), and it means a king's goodwill, a safe road and a finished house.\n\nIt is a small beginning, and the book knows it. But it is a real one."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Ezra begins where the Bible's histories of the kings leave off. Second Kings ends with Jerusalem burned in 587 or 586 BC and the people of Judah carried off to Babylon. Second Chronicles ends with Cyrus's decree, in the same words that open Ezra (2 Chronicles 36:22-23), so that the two books join like links in a chain.\n\nIn the Hebrew Bible, Ezra and Nehemiah are one book. It stands among the Writings, the third part of the Hebrew Bible, which counts twenty-four books in all. Christian Bibles divide it in two and place it among the books of history, after Chronicles. The division into two books appears first in Christian tradition, and it entered Hebrew manuscripts and printed Hebrew Bibles only in the fifteenth and sixteenth centuries.\n\nNehemiah carries the story on, about 445 BC, with the rebuilding of Jerusalem's walls. The prophets Haggai and Zechariah belong to the years of Ezra 5 and 6, and Malachi probably speaks to the same community some decades later. The book of Esther tells a story of Jews who stayed in Persia in the same era, and its events fall in the gap between Ezra 6 and Ezra 7.\n\nAfter Ezra and Nehemiah the Old Testament's story falls silent. When it opens again in the Gospels, some four centuries later, Judea is ruled by Rome. The temple that stands in Jerusalem then, rebuilt on a grand scale by Herod the Great, descends from the one whose building fills the first half of this book."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and how it was put together",
+        "body": "The book does not name its author. A Jewish tradition recorded in the Babylonian Talmud (Baba Bathra 15a) holds that Ezra wrote his own book, and parts of it are plainly his. From 7:27 to the end of chapter 9 Ezra speaks in the first person, in what scholars call the Ezra Memoir. Other parts speak of Ezra in the third person, and the book also holds lists of returnees and official letters, which point to a compiler who gathered and arranged sources.\n\nSome of those sources are in Aramaic, not Hebrew. Aramaic was the common language of the Persian empire's business, and the passages from 4:8 to 6:18 and from 7:12 to 7:26 are mostly official letters to and from the Persian court, quoted in the language the empire used.\n\nFor much of the modern period, scholars treated Ezra, Nehemiah and Chronicles as one work by a single writer or school, often called the Chronicler. They pointed to shared interests, such as the temple, the Levites and family records, and to the way 2 Chronicles ends with the verses that open Ezra. Since the 1960s and 1970s, scholars such as Sara Japhet and H. G. M. Williamson have argued from differences of language and outlook that Ezra and Nehemiah form a separate work from Chronicles, and many now hold that view. Others still see a close relationship.\n\nThe finished book of Ezra and Nehemiah was probably put together in the late fifth or the fourth century BC. Its lists of priests reach to a Jaddua and a Johanan (Nehemiah 12:11, 22), which suggests a date no earlier than about 400 BC for its final form.\n\nChristians who receive Ezra as God's word hold more than one of these views, and these notes take no side among them. On every view, the finished book is carefully shaped from its sources."
+      },
+      {
+        "id": "dates",
+        "h": "When it happened, and the order of Ezra and Nehemiah",
+        "body": "The first half of the book is unusually well dated. Cyrus took Babylon in 539 BC, and in his first year as its king, 538 BC, he issued his decree (1:1). The altar was rebuilt in the seventh month, probably in 538 or 537 BC (3:1-6), and the foundation was laid in the second year, likely 537 or 536 BC (3:8-10). Then the work stopped. It began again in 520 BC, the second year of Darius I, when Haggai and Zechariah urged the builders on (5:1-2; Haggai 1:1, 15). The temple was finished in the sixth year of Darius (6:15), early in 515 BC, though some count 516.\n\nThe second half opens ‘Many years later’ (7:1). Ezra came to Jerusalem ‘in the seventh year of King Artaxerxes’ (7:7). If this is Artaxerxes I, who reigned from 465 to 424 BC, which is the traditional view and still the most widely held, Ezra arrived in 458 BC, thirteen years before Nehemiah. Some scholars, following Albin van Hoonacker in the 1890s, argue that the king was Artaxerxes II, which would place Ezra in 398 BC, after Nehemiah. A smaller group proposes reading the thirty-seventh year of Artaxerxes I, about 428 BC.\n\nThe arguments turn on details. Nehemiah 8 and 12 show Ezra and Nehemiah together in Jerusalem. In Ezra 10, Ezra goes to the chamber of ‘Jehohanan son of Eliashib’ (10:6), and the high priest of Nehemiah's day was named Eliashib (Nehemiah 3:1), with a Johanan among his descendants (Nehemiah 12:22-23). A letter from the Jewish community at Elephantine in Egypt, dated 407 BC, names a high priest called Johanan in Jerusalem. Scholars who put Ezra after Nehemiah think these are the same man. Others reply that both names were common, and that the chamber may have been named after an earlier Jehohanan.\n\nCareful readers hold each of these views, and these notes take no side. The dates in the timeline below are approximate, and the ones that depend on this debate say so."
+      },
+      {
+        "id": "world",
+        "h": "The Persian world",
+        "body": "Cyrus II, called Cyrus the Great, united the Medes and Persians in the 550s BC, conquered the wealthy kingdom of Lydia in Asia Minor, and took Babylon in 539 BC. His empire, named the Achaemenid empire after its royal family, became the largest the world had yet seen, stretching from Egypt and the Aegean Sea to the Indus River.\n\nPersia governed differently from Assyria and Babylon. It divided the empire into large provinces called satrapies, ruled through local leaders, used Aramaic for its business, and allowed, even paid for, the worship of local gods. The Cyrus Cylinder, a clay cylinder found in the ruins of Babylon in 1879 and now in the British Museum, records Cyrus returning captured gods to their shrines and letting deported peoples go home. It does not mention the Jews, and it concerns cities in Mesopotamia, but it shows the kind of policy under which the decree of Ezra 1 makes sense.\n\nJudah was now a small province, called Yehud, inside the great satrapy that the book's letters call the region ‘west of the Euphrates’ (5:3). The returned exiles found a small, poor land, with neighbors in Samaria, Ammon and elsewhere who had their own claims on it.\n\nMost of the exiles did not come home. Many had settled in Babylonia, as Jeremiah had told them to (Jeremiah 29:4-7). Clay tablets from a village called Al-Yahudu, which means Judah-town, published in 2014, record Judean families there buying, leasing and paying taxes across several generations.\n\nThe kings in Ezra are Cyrus, Darius I (522 to 486 BC), Xerxes (486 to 465 BC) and Artaxerxes I (465 to 424 BC). The book shows their world from the inside: letters in proper official form, royal archives searched, taxes counted, and a king who wanted every people's prayers ‘for the lives of the king and his sons’ (6:10)."
+      },
+      {
+        "id": "built",
+        "h": "How Ezra is built",
+        "body": "The book has two halves, and they are shaped alike. In each, a Persian king gives his permission (chapter 1; chapter 7), a list names the people who went (chapter 2; 8:1-14), gifts for the house of God travel with them, and they arrive and offer sacrifice. Then trouble comes: opposition from outside in the first half (chapter 4), and unfaithfulness from inside in the second (chapters 9 and 10).\n\nBetween the two halves lie nearly sixty years, and the story of Esther, set under Xerxes, takes place elsewhere in the empire in that gap.\n\nThe book is built from sources, and it does not hide its seams. It gives Cyrus's decree in Hebrew (1:2-4) and again as an archive record in Aramaic (6:3-5). It quotes letters to and from the Persian court in full. In chapter 4 it steps out of the order of time: verses 6 to 23 jump forward to later kings to show that the opposition went on for generations, and verse 24 comes back to the reign of Darius. And from 7:27 to the end of chapter 9, the voice is Ezra's own.\n\nA refrain runs through the second half. ‘The hand of the LORD his God was upon him’ (7:6). ‘The gracious hand of his God was upon him’ (7:9). ‘The hand of our God was upon us’ (8:31). It is the book's way of seeing God at work through ordinary events.\n\nAnd the book loves lists. They name returnees by family and by town, and priests, Levites, singers, gatekeepers and temple servants, and at the end, the men who had married foreign women. The lists are the book's way of saying that every family counted. The book's last verse is the last line of a list, and nothing comes after it."
+      },
+      {
+        "id": "cyrus",
+        "h": "Home under Cyrus",
+        "body": "The book opens with a date and a promise kept: ‘In the first year of Cyrus king of Persia, to fulfill the word of the LORD spoken through Jeremiah, the LORD stirred the spirit of Cyrus king of Persia to send a proclamation throughout his kingdom’ (1:1). Jeremiah had said that Babylon's rule would last seventy years, and that God would then bring his people back (Jeremiah 29:10). Isaiah had named Cyrus as the LORD's shepherd, the king who would say of Jerusalem, ‘She will be rebuilt’ (Isaiah 44:28).\n\nCyrus's decree calls the LORD ‘the God of heaven’ (1:2), a title used in the Persian period for the supreme god. Persian kings were used to honoring the gods of their subject peoples, and on the Cyrus Cylinder Cyrus credits the Babylonian god Marduk with choosing him. So the decree does not mean that Cyrus became a worshiper of the LORD. The book's point lies elsewhere. Whatever Cyrus thought he was doing, it was the LORD who stirred him.\n\nThe same verb comes back four verses later. Family heads, priests and Levites, ‘everyone whose spirit God had stirred’ (1:5), get ready to go. Their neighbors send them off with silver and gold, goods and livestock, as Israel once left Egypt carrying silver and gold from its neighbors. And Cyrus hands back the vessels of the temple that Nebuchadnezzar had carried off to the temple of his own gods. They come home counted, in the care of Sheshbazzar, ‘the prince of Judah’ (1:8).\n\nChapter 2 names the people who went: their leaders, among them Zerubbabel, a descendant of King David, and Jeshua the priest; their families and their towns; the priests, Levites, singers, gatekeepers and temple servants. ‘The whole assembly numbered 42,360’ (2:64), besides servants, singers and animals. The separate figures add up to less than that total, here and in the copy of the list in Nehemiah 7, and the chapter's notes give the explanations scholars offer.\n\nSome families could not prove their descent from Israel, and some priests could not find their names in the records. The priests were not cast off. They were kept from the most holy food ‘until there was a priest to consult the Urim and Thummim’ (2:63), the sacred lots by which God's answer was sought. Their case was left open for God to settle."
+      },
+      {
+        "id": "altar",
+        "h": "An altar, a foundation, and a long delay",
+        "body": "The first thing the returnees build is not a wall or a house but an altar. In the seventh month the people gather in Jerusalem ‘as one man’ (3:1), set up the altar on its old foundation, and offer the morning and evening sacrifices again, ‘as it is written in the Law of Moses the man of God’ (3:2). They keep the Feast of Tabernacles. For about fifty years there had been no regular sacrifice there as the law commanded. By restoring it before anything else, the community says what it is: a people gathered around the worship of the LORD.\n\nIn the second year they lay the temple's foundation. The priests blow trumpets, the Levites clash cymbals, and they sing a refrain from the psalms: “For He is good; for His loving devotion to Israel endures forever” (3:11). Then the old men weep. Many of them had seen Solomon's temple, and this beginning was so much smaller. ‘Still, many others shouted joyfully’ (3:12), and no one could tell the joy from the weeping. The book ends its first great scene with both sounds together, and it does not choose between them.\n\nThen the neighbors come. They offer to help, saying, “like you, we seek your God and have been sacrificing to Him since the time of King Esar-haddon of Assyria, who brought us here” (4:2). Zerubbabel and Jeshua refuse. These were peoples the Assyrians had settled in the north after Samaria fell in 722 BC, and Second Kings says of them, ‘these nations worshiped the LORD but also served their idols’ (2 Kings 17:41). Whether the refusal was right is taken up in the notes on chapter 4.\n\nYears of discouragement follow, with counselors hired against the builders and accusations sent to the king. The chapter gathers opposition from about ninety years into one account: under Cyrus and Darius (4:1-5), under Xerxes (4:6), and under Artaxerxes, whose officials warn him that Jerusalem is ‘that rebellious and wicked city’ (4:12), and who orders the rebuilding of the city stopped. The temple itself stood unfinished ‘until the second year of the reign of Darius king of Persia’ (4:24). Faithful work, the book admits, can stall for years."
+      },
+      {
+        "id": "finished",
+        "h": "Prophets, the archives, and a finished house",
+        "body": "The work starts again because two prophets speak. In 520 BC Haggai asked the people, “Is it a time for you yourselves to live in your paneled houses, while this house lies in ruins?” (Haggai 1:4). Zechariah promised that the hands that had laid the foundation would finish the house (Zechariah 4:9). Ezra records it simply: ‘the prophets of God were with them, helping them’ (5:2).\n\nThe Persian governor of the province, Tattenai, comes to ask who gave permission for the building. The elders answer him honestly. They tell a foreign official that the first temple fell ‘since our fathers angered the God of heaven’ (5:12), and then they point to Cyrus's decree. Tattenai writes to King Darius and asks for the archives to be searched, and in the meantime ‘the eye of their God was on the elders of the Jews’ (5:5), so the work did not stop.\n\nThe search finds Cyrus's memorandum, not in Babylon but in the fortress of Ecbatana in Media (6:2), an old capital where the Persian kings spent their summers. Darius confirms it. He orders Tattenai to leave the work alone and to pay for it from the province's taxes, with animals for the sacrifices given daily. The inquiry meant to check the builders ends with the empire funding them.\n\nThe house is finished ‘on the third day of the month of Adar, in the sixth year of the reign of King Darius’ (6:15). It is dedicated with joy, and with sacrifices that are modest beside Solomon's, among them twelve goats, ‘one for each tribe of Israel’ (6:17). Then the returned exiles keep the Passover. With them at the meal are ‘all who had separated themselves from the uncleanness of the peoples of the land to seek the LORD, the God of Israel’ (6:21). Outsiders who turned to Israel's God were welcome at the table.\n\nOne thing is missing. When Solomon's temple was dedicated, ‘the glory of the LORD filled the house of the LORD’ (1 Kings 8:11). Ezra reports sacrifice, priests in their divisions and great joy, and no cloud. The prophets of those years looked ahead instead. Haggai's word was, ‘The latter glory of this house will be greater than the former’ (Haggai 2:9)."
+      },
+      {
+        "id": "scribe",
+        "h": "Ezra the scribe",
+        "body": "Only in chapter 7, more than halfway through, does the man the book is named for appear. He is a priest whose family line runs back to Aaron (7:1-5), and he is ‘a scribe skilled in the Law of Moses’ (7:6). A scribe in the ancient world was more than a copyist. Scribes were trained in writing, law and administration, and they served temples and royal courts. In Ezra the word gains a new sense: a scholar of Scripture whose skill lies in understanding and teaching it. The scribes of the Gospels, the experts in the law, look back to him.\n\nOne verse gives the heart of the man: ‘For Ezra had set his heart to study the Law of the LORD, to practice it, and to teach its statutes and ordinances in Israel’ (7:10). The order matters. Study leads to practice, and practice to teaching.\n\nKing Artaxerxes sends him with a letter in Aramaic (7:12-26). It lets any Israelites who wish go with him, sends silver and gold from the king and his counselors for the temple, frees the temple's servants from royal taxes, and gives Ezra authority to appoint judges and to teach God's laws ‘to anyone who does not know them’ (7:25). It sets ‘the law of your God and the law of the king’ side by side (7:26), with heavy penalties for breaking them. Persian kings supported local temples and sometimes gave local laws the backing of the crown, and the letter fits that practice.\n\nEzra gathers his company by a canal at a place called Ahava, finds no Levites among them, and sends for ministers for the temple (8:15-20). Then he does something unexpected. He had told the king that God's hand protects those who seek him, and so he was ‘ashamed to ask the king for an escort of soldiers’ (8:22). He calls a fast instead, and the people pray. They set out with an enormous treasure, weighed out to the priests and Levites who would carry it, and after about four months on the road it is weighed again in Jerusalem, every piece accounted for (8:33-34)."
+      },
+      {
+        "id": "marriages",
+        "h": "The marriages: the hardest chapters",
+        "body": "A few months after Ezra arrives, leaders bring him a report. Many of the returned exiles, priests, Levites and officials among them, have married women from the peoples around them, peoples ‘whose abominations are like those of the Canaanites’ (9:1). The list of peoples is drawn from the law (Deuteronomy 7:1-4; 23:3-8), though most of those Canaanite nations no longer existed in Ezra's day. It names the danger the law had warned of: ‘they will turn your sons away from following Me to serve other gods’ (Deuteronomy 7:4). Solomon's foreign wives had turned his heart (1 Kings 11:1-8), and the prophets had tied the nation's fall to its worship of other gods.\n\nEzra tears his clothes, pulls hair from his head and beard, and sits in horror until the evening sacrifice. Then he kneels and prays one of the great prayers of confession in the Bible. He had no part in the marriages, yet he prays as one of the guilty people, that ‘our iniquities are higher than our heads’ (9:6), and he ends with nothing to plead: “Here we are before You in our guilt, though because of it no one can stand before You” (9:15).\n\nThe people weep with him. A man named Shecaniah proposes a covenant ‘to send away all the foreign wives and their children’ (10:3). An assembly is called, and on a winter day, in heavy rain, the men of Judah and Benjamin sit in the square before the temple and agree. Over three months the cases are heard, town by town, and the book ends with the names of a little over a hundred men who had married foreign women.\n\nThis is one of the most troubling scenes in the Old Testament, and it should be read as one. Women and children who had done nothing wrong themselves were sent away, and the text says nothing about what became of them. Readers weigh it in two main ways. Some read the reform as a painful but necessary act of faithfulness at a moment when the small community could have been absorbed into the religions around it, as the northern kingdom had been. They note that the law forbade such marriages, that the peoples are named by their abominations, and that the cases were heard one by one. Others hold that the book records what happened without holding it up as a model, and that the rest of Scripture points another way: Ruth the Moabite, whose God became Israel's God; Isaiah's welcome for ‘the foreigners who join themselves to the LORD’ (Isaiah 56:6); and Malachi, who in the same century tells the men of Judah, ‘do not break faith with the wife of your youth’ (Malachi 2:15). Many readers hold something of both.\n\nReaders also differ over how far these chapters draw a line by birth as well as by faith. Both readings agree that the text is concerned with faithfulness to God, and all agree that it must never be used to justify shutting people out because of their ancestry. The New Testament gives Christians a different instruction for a mixed marriage: if an unbelieving wife is willing to stay, ‘he must not divorce her’ (1 Corinthians 7:12).\n\nNothing in Ezra 9 and 10 gives anyone today a warrant to break up a marriage or a family.\n\nA word to anyone who has been hurt by a church's discipline, or shunned by a church or a family. What happened to you may have been wrong, and it is not wrong to grieve it. “The LORD is near to the brokenhearted” (Psalm 34:18). If this still weighs on you, please talk with someone you trust, a pastor, a friend or a counsellor. The Find Help page on this site lists places to turn."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads Ezra",
+        "body": "The New Testament says little about Ezra, and it is wise to keep to the few lines it does draw.\n\nIt names Zerubbabel, who led the first return, in both family lines of Jesus: ‘Shealtiel the father of Zerubbabel’ (Matthew 1:12), and ‘the son of Zerubbabel, the son of Shealtiel’ (Luke 3:27). The line of David survived the exile in people like those counted in Ezra 2.\n\nThe temple of the Gospels is the house finished in Ezra 6, rebuilt and enlarged by Herod the Great. When people in Jerusalem tell Jesus, “This temple took forty-six years to build” (John 2:20), they are speaking of the work Herod began about 20 or 19 BC.\n\nThe scribes of the Gospels, the experts in the law, look back to Ezra the scribe. The turn toward Scripture as the center of the people's common life, which begins in this book and in Nehemiah 8, shaped Judaism and the world into which Jesus was born.\n\nAnd Paul's ruling on mixed marriages goes a different way from Ezra 10. Ezra led men who had married foreign wives to send them away. Paul tells believers not to send away an unbelieving partner who is willing to stay, because ‘the unbelieving wife is sanctified through her believing husband’ (1 Corinthians 7:14).\n\nSome Christians have read Ezra, the priest who confessed his people's sins as his own, as a picture of Christ. The New Testament does not draw that line, and these notes do not draw it either. Nothing in the book, or in the New Testament's use of it, is a reason to blame or look down on the Jewish people, or on the Samaritans, whose ancestors appear in this book as Judah's neighbors and opponents."
+      },
+      {
+        "id": "readers",
+        "h": "How to read Ezra",
+        "body": "A few habits will help a new reader.\n\nRead it with the documents in mind. It is history written by a believing community from lists, royal letters and Ezra's own memoir. Do not skip the lists. They are the book's way of saying that every family and every returnee counted.\n\nWatch for the hand of God (7:6, 9, 28; 8:18, 22, 31). The book shows almost no miracles, but it keeps saying that God was at work through ordinary events.\n\nRead chapter 4 as a pattern, not a sequence. It gathers opposition from several reigns into one place.\n\nRead the prophets beside the story. Haggai and Zechariah belong inside chapters 5 and 6, and Psalm 126 sings the homecoming of chapters 1 and 2: ‘When the LORD restored the captives of Zion, we were like dreamers’ (Psalm 126:1).\n\nRead chapters 9 and 10 slowly and in context, with Ruth, Isaiah 56, Malachi 2 and 1 Corinthians 7 open beside them. They raise real moral questions, and the rest of Scripture helps a reader think them through. They give no one a pattern for breaking up a family today.\n\nAnd notice how small the book is willing to be. Its temple makes old men weep. Its people are a remnant under a foreign king, and its last chapter ends without a resolution. Zechariah's question fits the whole book: “For who has despised the day of small things?” (Zechariah 4:10)."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 2,
+        "ref": "1:1-4",
+        "line": "A Persian king who speaks of the LORD as the God who appointed him to build a temple, and what the Cyrus Cylinder shows."
+      },
+      {
+        "ch": 1,
+        "v": 11,
+        "ref": "1:9-11",
+        "line": "The vessels counted out add up to 2,499, and the total given is 5,400."
+      },
+      {
+        "ch": 2,
+        "v": 64,
+        "ref": "2:1-70",
+        "line": "The list of those who came home: its figures add up to less than its total, and differ from the copy in Nehemiah 7."
+      },
+      {
+        "ch": 2,
+        "v": 62,
+        "ref": "2:59-63",
+        "line": "Families and priests who could not prove their descent, and a question left open for God to settle."
+      },
+      {
+        "ch": 3,
+        "v": 12,
+        "ref": "3:10-13",
+        "line": "Shouts of joy and loud weeping at the new foundation, and no one could tell them apart."
+      },
+      {
+        "ch": 5,
+        "v": 16,
+        "ref": "5:13-16",
+        "line": "Who laid the foundation: Zerubbabel and Jeshua (3:8-10), Sheshbazzar (5:16), or the builders of 520 BC (Haggai 2:18)?"
+      },
+      {
+        "ch": 4,
+        "v": 3,
+        "ref": "4:1-5",
+        "line": "Help refused from neighbors who said they worshiped the same God."
+      },
+      {
+        "ch": 4,
+        "v": 6,
+        "ref": "4:6-23",
+        "line": "A leap forward in time to Xerxes and Artaxerxes, and a letter that stopped the rebuilding of the city."
+      },
+      {
+        "ch": 6,
+        "v": 11,
+        "ref": "6:6-12",
+        "line": "Darius's threat against anyone who interferes: a Persian king's decree, recorded and not commanded by God."
+      },
+      {
+        "ch": 7,
+        "v": 7,
+        "ref": "7:1-10",
+        "line": "When Ezra came: 458, 428 or 398 BC, and whether he came before Nehemiah or after."
+      },
+      {
+        "ch": 7,
+        "v": 26,
+        "ref": "7:25-26",
+        "line": "A foreign king's letter gives Ezra power to enforce God's law with heavy penalties."
+      },
+      {
+        "ch": 8,
+        "v": 22,
+        "ref": "8:21-23",
+        "line": "Ezra will not ask for soldiers to guard the road, though Nehemiah later travels with them."
+      },
+      {
+        "ch": 9,
+        "v": 2,
+        "ref": "9:1-2",
+        "line": "‘The holy seed has been mixed’: a line drawn by faith, by birth, or both?"
+      },
+      {
+        "ch": 9,
+        "v": 6,
+        "ref": "9:6-15",
+        "line": "A prayer that confesses the people's guilt as the speaker's own and asks for nothing."
+      },
+      {
+        "ch": 10,
+        "v": 3,
+        "ref": "10:1-17",
+        "line": "A covenant to send away foreign wives and their children: what the text says, how readers weigh it, and why it gives no one today a warrant to break up a family."
+      },
+      {
+        "ch": 10,
+        "v": 15,
+        "ref": "10:15",
+        "line": "Four men who opposed the plan, or who oversaw it: the Hebrew can be read both ways."
+      },
+      {
+        "ch": 10,
+        "v": 44,
+        "ref": "10:18-44",
+        "line": "The book ends with a list of names, and with a last verse whose Hebrew is hard to read."
+      }
+    ],
+    "words": [
+      {
+        "word": "Exiles",
+        "line": "In Hebrew golah, the exile or the body of exiles. It becomes a name for the returned community, the people carried away and brought back (1:11; 10:8)."
+      },
+      {
+        "word": "Stir",
+        "line": "The Hebrew ur, to rouse, as one wakes a sleeper. The LORD stirs the spirit of Cyrus (1:1) and of everyone who goes up to build (1:5)."
+      },
+      {
+        "word": "The God of heaven",
+        "line": "A title for the LORD in the Persian period, used in Cyrus's decree (1:2) and in the king's letter to Ezra (7:12, 21, 23)."
+      },
+      {
+        "word": "Loving devotion",
+        "line": "The Hebrew chesed: faithful, covenant-keeping love, even to the unfaithful. The singers praise it as the foundation is laid (3:11)."
+      },
+      {
+        "word": "Foundation",
+        "line": "The Hebrew yasad, to found, or to restore. Its range helps explain why the book and the prophets speak of the foundation being laid at different times (3:10; 5:16)."
+      },
+      {
+        "word": "Temple servants",
+        "line": "In Hebrew netinim, those given: workers given to the temple's service. They came home, and they are listed by family (2:43; 8:20)."
+      },
+      {
+        "word": "West of the Euphrates",
+        "line": "The Persian province of which Judah was a small part, the lands beyond the river as seen from Persia (4:10; 5:3)."
+      },
+      {
+        "word": "Scribe",
+        "line": "The Hebrew sopher: an official in charge of documents (4:8), and in Ezra a scholar and teacher of the law of Moses (7:6)."
+      },
+      {
+        "word": "Study",
+        "line": "The Hebrew darash, to seek or inquire. Ezra set his heart to seek, that is to study, the law of the LORD (7:10). Later Jewish tradition took its word midrash, interpretation of Scripture, from this root."
+      },
+      {
+        "word": "The hand of God",
+        "line": "The Hebrew yad, hand, meaning power and favor. The refrain says it was on Ezra (7:6, 9, 28) and on his company on the road (8:18, 22, 31)."
+      },
+      {
+        "word": "Law",
+        "line": "Two words stand side by side in the king's letter: the law of God, and dat, a Persian word for a king's decree (7:26)."
+      },
+      {
+        "word": "Dedication",
+        "line": "The Aramaic chanukkah. The house of God was dedicated with joy (6:16). The same word later gave its name to Hanukkah, which remembers this temple's rededication in 164 BC."
+      },
+      {
+        "word": "Remnant",
+        "line": "The Hebrew peletah, those who escaped. Ezra's prayer calls the returned community a remnant spared by grace (9:8, 15)."
+      },
+      {
+        "word": "Unfaithfulness",
+        "line": "The Hebrew maal, breaking faith with someone owed loyalty. Ezra 9 and 10 use it to name what the marriages meant (9:2; 10:10)."
+      },
+      {
+        "word": "Separate",
+        "line": "The Hebrew badal, to separate, the verb of Genesis 1. Outsiders separated themselves from impurity to join Israel (6:21), and the men are told to separate from the peoples of the land (10:11)."
+      },
+      {
+        "word": "Hope",
+        "line": "The Hebrew miqveh. After Ezra's prayer of utter guilt, it is a layman, Shecaniah, who says ‘there is hope for Israel’ (10:2)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "722 BC",
+        "what": "Samaria falls to Assyria, which settles other peoples in the north (2 Kings 17:24). Their descendants are among the neighbors of Ezra 4.",
+        "kind": "world"
+      },
+      {
+        "when": "587 or 586 BC",
+        "what": "The Babylonians burn Jerusalem and its temple and carry the people of Judah into exile (2 Kings 25).",
+        "kind": "world"
+      },
+      {
+        "when": "539 BC",
+        "what": "Cyrus of Persia takes Babylon, almost without a fight.",
+        "kind": "world"
+      },
+      {
+        "when": "538 BC",
+        "what": "In his first year over Babylon, Cyrus decrees that the house of the LORD be rebuilt, and the first exiles go home (chapters 1 and 2).",
+        "kind": "story"
+      },
+      {
+        "when": "538 or 537 BC",
+        "what": "The altar is rebuilt in the seventh month, and the Feast of Tabernacles is kept (3:1-6).",
+        "kind": "story"
+      },
+      {
+        "when": "537 or 536 BC",
+        "what": "The temple's foundation is laid, with shouts of joy and loud weeping (3:8-13).",
+        "kind": "story"
+      },
+      {
+        "when": "About 536 to 520 BC",
+        "what": "Opposition and discouragement; the work on the temple stands still (4:4-5, 24).",
+        "kind": "story"
+      },
+      {
+        "when": "522 BC",
+        "what": "Darius I takes the Persian throne and spends his first years putting down revolts.",
+        "kind": "world"
+      },
+      {
+        "when": "520 BC",
+        "what": "Haggai and Zechariah urge the builders on, and the work begins again in Darius's second year (5:1-2; Haggai 1:1, 15).",
+        "kind": "story"
+      },
+      {
+        "when": "515 BC (some count 516)",
+        "what": "The temple is finished on the third day of Adar in Darius's sixth year and dedicated with joy, and the Passover is kept (6:15-22).",
+        "kind": "story"
+      },
+      {
+        "when": "486 to 465 BC",
+        "what": "Xerxes I reigns. An accusation is lodged against Judah (4:6), and the story of Esther takes place in his court.",
+        "kind": "story"
+      },
+      {
+        "when": "465 to 424 BC",
+        "what": "Artaxerxes I reigns. His officials persuade him to stop the rebuilding of Jerusalem's walls (4:7-23).",
+        "kind": "story"
+      },
+      {
+        "when": "458 BC, on the traditional dating",
+        "what": "Ezra comes from Babylon in Artaxerxes' seventh year (7:7-9). In the ninth month the assembly meets in the rain over the marriages (10:9).",
+        "kind": "story"
+      },
+      {
+        "when": "445 BC",
+        "what": "Nehemiah comes to Jerusalem as governor in Artaxerxes' twentieth year (Nehemiah 2:1).",
+        "kind": "story"
+      },
+      {
+        "when": "407 BC",
+        "what": "Jews at Elephantine in Egypt write to the governor of Judah. Their letter names a high priest Johanan in Jerusalem, a clue in the debate over Ezra's date.",
+        "kind": "world"
+      },
+      {
+        "when": "398 BC, on another view",
+        "what": "If the king of 7:7 was Artaxerxes II, Ezra came in this year, after Nehemiah.",
+        "kind": "story"
+      },
+      {
+        "when": "About 400 BC or later",
+        "what": "Ezra and Nehemiah, one book, reach their final form. Their lists of priests run to Jaddua (Nehemiah 12:11, 22).",
+        "kind": "book"
+      },
+      {
+        "when": "164 BC",
+        "what": "The temple of Ezra 6, desecrated under the Seleucid king Antiochus IV, is rededicated, the origin of Hanukkah.",
+        "kind": "world"
+      },
+      {
+        "when": "1879",
+        "what": "The Cyrus Cylinder is found in the ruins of Babylon. It is now in the British Museum.",
+        "kind": "world"
+      },
+      {
+        "when": "The fifteenth and sixteenth centuries",
+        "what": "Hebrew manuscripts and printed Hebrew Bibles begin to divide Ezra and Nehemiah into two books, as Christian Bibles long had.",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "Judah after the exile, and its neighbors",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "3:1",
+              "6:15",
+              "7:8"
+            ],
+            "line": "The city of the house of God. The returnees rebuilt the altar here (3:1-3) and finished the temple (6:15), and Ezra arrived in the fifth month (7:8).",
+            "label": {
+              "dx": -10,
+              "dy": -9,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "bethlehem",
+            "name": "Bethlehem",
+            "lat": 31.705,
+            "lon": 35.2,
+            "refs": [
+              "2:21"
+            ],
+            "line": "David's town. Its men are counted among the first to come home, 123 of them (2:21).",
+            "label": {
+              "dx": -10,
+              "dy": 10,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "2:28"
+            ],
+            "line": "‘The men of Bethel and Ai’ came home, 223 of them (2:28).",
+            "label": {
+              "dx": 0,
+              "dy": -10,
+              "anchor": "middle"
+            }
+          },
+          {
+            "id": "jericho",
+            "name": "Jericho",
+            "lat": 31.871,
+            "lon": 35.444,
+            "refs": [
+              "2:34"
+            ],
+            "line": "Its men are on the list of returnees, 345 of them (2:34).",
+            "label": {
+              "dx": 4,
+              "dy": -12,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "lod",
+            "name": "Lod",
+            "lat": 31.951,
+            "lon": 34.888,
+            "refs": [
+              "2:33"
+            ],
+            "line": "The town later called Lydda. ‘The men of Lod, Hadid, and Ono’ numbered 725 (2:33).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "joppa",
+            "name": "Joppa",
+            "lat": 32.054,
+            "lon": 34.752,
+            "refs": [
+              "3:7"
+            ],
+            "line": "The port, today's Jaffa. Cedar logs from Lebanon were brought here by sea for the temple (3:7).",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "samaria",
+            "name": "Samaria",
+            "lat": 32.4,
+            "lon": 35.42,
+            "refs": [
+              "4:10",
+              "4:17"
+            ],
+            "region": true,
+            "line": "The province to the north. Peoples the Assyrians had settled ‘in the cities of Samaria’ opposed the rebuilding (4:10), and the king's reply went to his officials there (4:17). Drawn roughly."
+          },
+          {
+            "id": "tyre",
+            "name": "Tyre",
+            "lat": 33.27,
+            "lon": 35.2,
+            "refs": [
+              "3:7"
+            ],
+            "line": "With Sidon, its people were paid in food, drink and oil to bring cedar from Lebanon for the temple (3:7)."
+          },
+          {
+            "id": "sidon",
+            "name": "Sidon",
+            "lat": 33.56,
+            "lon": 35.37,
+            "refs": [
+              "3:7"
+            ],
+            "line": "The other port city of Phoenicia. Its people, with those of Tyre, shipped the cedar (3:7)."
+          }
+        ]
+      }
+    ],
+    "mapNote": "Only nine places are drawn, each placed elsewhere on this site; Samaria roughly, as a region, and Lod at the point used for Lydda, its later name. Babylon, the Ahava Canal, Casiphia, Ecbatana and Susa lie far to the east and are not placed in this site's records, and most towns of chapter 2 are left off too. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/empires",
+        "name": "The Empires Around Israel",
+        "line": "Persia from Cyrus to Artaxerxes, with the dates and the debate over when Ezra came",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-genealogies",
+        "name": "Reading Genealogies and Lists",
+        "line": "For the lists of chapters 2, 8 and 10, and why the figures differ from Nehemiah 7",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-narrative",
+        "name": "Reading the Stories",
+        "line": "Why a story that describes what happened does not by that fact recommend it",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/calendar-and-festivals",
+        "name": "The Calendar and Festivals",
+        "line": "The Feast of Tabernacles (chapter 3), the Passover (chapter 6) and the month names Ezra uses",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/doctrines/exile",
+        "name": "Exile and Restoration",
+        "line": "Behind the return under Cyrus and the prayers that answer the exile with confession",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/temple",
+        "name": "Tabernacle, Temple, and God's Presence",
+        "line": "Behind the altar and the second temple (chapters 3 to 6)",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/providence",
+        "name": "Providence",
+        "line": "Behind a Persian king stirred by the LORD (1:1) and the hand of God on Ezra",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/repentance",
+        "name": "Repentance and Forgiveness",
+        "line": "Behind Ezra's prayer of confession (chapter 9)",
+        "icon": "book"
+      },
+      {
+        "href": "/resources/context/world/old-testament-world",
+        "name": "The Old Testament's world",
+        "line": "The Cyrus Cylinder, Persian rule and the letters from Elephantine",
+        "icon": "world"
+      },
+      {
+        "href": "/resources/context/jeremiah-29-11-in-context",
+        "name": "What Does Jeremiah 29:11 Really Mean?",
+        "line": "The letter to the exiles, and the seventy years Ezra 1:1 says were fulfilled",
+        "icon": "world"
+      },
+      {
+        "href": "/help/divorce",
+        "name": "My marriage has ended",
+        "line": "For anyone whose marriage has ended or is ending, and for their children: the Find Help page",
+        "icon": "people"
+      }
+    ]
+  }
 }
