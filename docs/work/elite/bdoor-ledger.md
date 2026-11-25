@@ -20604,3 +20604,26 @@ Cut in chapter 3: the deep note's lines to Christ that the New Testament does no
 | The hard note: Edom's conduct; God's justice for all; judgment handed to God; Edom an ancient nation; no people of the present day identified with it; no warrant to wish ruin on any people | 21-22 `hard` | lamentations/4.json `hard`; the brief | Repository; stated as the brief asks |
 
 Cut in chapter 4: the deep note's lines to Christ that the New Testament does not draw (the anointed of verse 20 and Jesus captured and handed over; the cup of verse 21 and Mark 14:36). A sentence guessing what the first hearers remembered of persecuted prophets was cut before commit, as unsourced. The phone number in the deep note's hard answer was not repeated.
+
+## The plain notes on Lamentations 5 (2026-11-25)
+
+`client/public/bible/notes/lamentations/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 (its first sentence, and its second in double quotes for its exclamation); 5:2; 5:3; 5:4; 5:5 paraphrased; 5:6; 5:7; 5:8; 5:9 paraphrased; 5:10 paraphrased | 1-10 | BSB | BSB text |
+| Some time after the fall; Babylonian control; the family land and the law (Leviticus 25:23); free water and wood; orphans and widows; slaves as the officials; alliances with Assyria and Egypt (Hosea 7:11; Jeremiah 2:18); the generation of the exile; twenty-two verses without the acrostic | 1-10 | lamentations/5.json `historical`, `cultural`, `literary`, `story` | Repository |
+| Hosea 7:11 (its clause, after the dash); Jeremiah 31:30 (its clause); Ezekiel 18:20 (its clause) | 1-10 `later` | lamentations/5.json `historical` (Jeremiah 31:29-30 and Ezekiel 18); BSB | BSB text |
+| The hard note: a cry, not a doctrine; a nation's choices shape its children; Deuteronomy 24:16; Jeremiah 31:29-30 and Ezekiel 18; 5:16; no warrant to read a child's suffering as a parent's punishment | 1-10 `hard` | lamentations/5.json `historical`; BSB | Repository; BSB text |
+| 5:11 named in paraphrase; 5:12; 5:13; 5:14; 5:15; 5:16 (in double quotes for its exclamation); 5:17 paraphrased (it holds a dash); 5:18 (its clause) | 11-18 | BSB | BSB text |
+| The cruelties named in a line each; millstones and Samson (Judges 16:21); the city gate; the crown; foxes and time passed; the people's own confession | 11-18 | lamentations/5.json `historical`, `cultural`, `doctrines` | Repository |
+| Psalm 137:1; Psalm 30:11 (its clause); Zechariah 1:16 (the LORD's words, inside the BSB's quotation marks) | 11-18 `later` | BSB | BSB text |
+| The hard note: a lament naming a horror; no blame on the women and no shame theirs; no making such violence anything but evil | 11-18 `hard` | lamentations/5.json `summary`; the brief | Repository; stated as the brief asks |
+| Care line ("A word for anyone who has been sexually assaulted...") | 11-18 `hard` | Reused byte for byte from judges/plain/19.json, read by script | care.mjs |
+| 5:19; 5:20; 5:21; 5:22 | 19-22 | BSB | BSB text |
+| God's throne untouched; shuv twice; God acting first; chadash and 3:23; the three readings of 5:22; the synagogue custom of repeating 5:21 and its use for other books | 19-22 | lamentations/5.json `literary`, `words`, `doctrines`, `cultural`, `hard` | Repository; the readings in their holders' terms |
+| Psalm 80:3; Psalm 102:12 (its clause); Jeremiah 33:26 (its last sentence) | 19-22 `later` | lamentations/5.json `words` (Jeremiah 33:26); BSB | BSB text |
+| The hard note: the ending meant to unsettle; a prayer not yet answered; the custom; the prophets' promises and the return in Ezra and Nehemiah | 19-22 `hard` | lamentations/5.json `hard`; lamentations/intro.json `story` | Repository |
+| Care line ("If you are suffering now, for your faith or for any other reason...") | 19-22 `hard` | Reused byte for byte from job/intro.json, read by script | care.mjs |
+
+Cut in chapter 5: the deep note's lines to Christ that the New Testament does not draw (Romans 11:1 as Paul's answer to verse 22; Jesus as heir of the fallen crown and bearer of the rejection). The phone number in the deep note's hard answer was not repeated.
