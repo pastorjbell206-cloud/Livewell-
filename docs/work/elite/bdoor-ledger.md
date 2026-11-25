@@ -20319,3 +20319,22 @@ Cut in chapter 26: the deep note's lines to Psalm 110:4, Zechariah 6:13 and Hebr
 | The hard note: sixteen years and 2 Kings 15:30's twentieth year; regency and overlap; Thiele; other explanations | 1-9 `hard` | 2-chronicles/27.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 27: the deep note's line to Isaiah 9:6-7 as fulfilled, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on 2 Chronicles 28 (2026-11-25)
+
+`client/public/bible/notes/2-chronicles/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 28:1; the Baals (28:2); 28:3, named and not described; the high places (28:4); Aram and Israel (28:5-6); 28:6 (its clause); the captives (28:8) | 1-8 | BSB | BSB text |
+| The lowest point; reaching for every help; about 735 to 715 BC, the debated chronology; 2 Kings 16 and Isaiah 7; Rezin and Pekah around 734 BC; child sacrifice in the Valley of Hinnom (Leviticus 18:21; Deuteronomy 18:10), Molech, crisis rites; Ge-Hinnom and Gehenna | 1-8 | 2-chronicles/28.json `story`, `historical`, `cultural` | Repository |
+| Care line ("A word for anyone who was not protected by a parent...") | 1-8 | Reused byte for byte; found whole in 2-kings/intro.json and the 2 Chronicles book page | care.mjs |
+| Leviticus 18:21 (its first clause); 2 Kings 16:3 (its clause) | 1-8 | BSB | BSB text |
+| 28:9 (its first sentence); Oded's charge (28:9-11); 28:10 (its question); the leaders (28:12); 28:13 (its last sentence); 28:14; 28:15 (its first two sentences) and Jericho | 9-15 | BSB | BSB text |
+| Godly northerners; ashmah four times; the striking kindness; 722 BC; the resemblance to the good Samaritan, debated and not cited by the Gospel | 9-15 | 2-chronicles/28.json `story`, `historical`, `cultural`, `literary`, `words` (ashmah), `christ` | Repository |
+| Luke 10:34 (its first sentence); Leviticus 19:17 (its first sentence) | 9-15 | BSB | BSB text |
+| 28:16; Edom and the Philistines (28:17-18); 28:19; 28:20; 28:21 (its clause); 28:22; 28:23 (Ahaz's words and the narrator's sentence); 28:24 (its clause); the burial (28:27) | 16-27 | BSB | BSB text |
+| Azar as the thread; ma'al three times; king of Israel; Tiglath-pileser and Damascus 732 BC; the tribute inscriptions naming Jehoahaz; vassalage; gods proved by success; 2 Kings 16:9 against 28:20 and the two readings; the doors shut and chapter 29 | 16-27 | 2-chronicles/28.json `historical`, `cultural`, `literary`, `words` (azar, ma'al), `hard` | Repository; the readings in their holders' terms |
+| Isaiah 7:4 (its first sentences); 2 Kings 16:9 (its first sentence) | 16-27 | BSB | BSB text |
+
+Cut in chapter 28: the deep note's line from Ahaz's refusal to the promise of Isaiah 7:14, which the New Testament draws from Isaiah, not from this chapter. Child sacrifice is named, never described.
