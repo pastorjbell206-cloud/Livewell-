@@ -17174,3 +17174,21 @@ Cut in chapter 4: Psalm 72 and Revelation 7:9 set beside the nations coming to S
 | Exodus 1:11 and mas; Joshua 16:10 | 13-18 | exodus/plain/1.json (8-14, `hearers`); joshua/plain/16.json (5-10, `later`); BSB | Repository; BSB text |
 
 Cut in chapter 5: John 1:14, John 2:19-21, 1 Peter 2:5, Ephesians 2:21-22, Psalm 118:22 and Mark 10:45 set beside the temple and its builders (the deep note calls them thematic connections, not lines the New Testament draws to this chapter); that the men of Gebal were known as builders (not stated in the repository; cut before commit).
+
+## The plain notes on 1 Kings 6 (2026-11-25)
+
+`client/public/bible/notes/1-kings/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The date (6:1); 6:2; porch, windows and side rooms (6:3-6); 6:7; cedar roofing (6:9); the goal of the exodus and the tabernacle giving way to a house; the cubit about eighteen inches and the building about ninety, thirty and forty-five feet; the plan like Ain Dara and Tell Tayinat; nothing excavated, the Temple Mount closed and built over; Ziv in spring and an old Canaanite month name; the quiet site and the law of uncut altar stones | 1-10 | 1-kings/6.json `story`, `historical`, `cultural`, `literary`; context/worlds/old-testament-world.json (Ain Dara; Tell Tayinat); BSB | Repository; BSB text |
+| Exodus 25:8; Exodus 20:25 | 1-10 | 1-kings/6.json `story` (Exodus 25:8), `cultural` (Exodus 20:25); BSB | Repository; BSB text |
+| The 480 years: the early date about 1446 BC and Judges 11:26; the later date, Rameses (Exodus 1:11), twelve generations of forty, a real generation nearer twenty-five years; both held by careful scholars; the temple tied to the exodus; the site's page on the exodus | 1-10 `hard` | 1-kings/6.json `hard`, `historical`; questions/old-testament/did-the-exodus-happen.json (status live) | Repository (live page); both views in their holders' terms |
+| The word of the LORD (6:11-13) set in the middle and interrupting the report; presence tied to faithfulness, not cedar and gold; shakan, mishkan and shekinah; azav and Israel's forsaking; the temple standing nearly four hundred years until 587 or 586 BC; the first readers and a presence never dependent on the building | 11-13 | 1-kings/6.json `story`, `literary`, `words` (shakan, azav), `doctrines` (covenant); BSB | Repository; BSB text |
+| Exodus 29:45 | 11-13 | 1-kings/6.json `words` (shakan); BSB | Repository; BSB text (a thematic line within the Old Testament) |
+| Cedar and cypress (6:15); the inner room (6:16); the hall forty cubits (6:17); 6:18; the room for the ark (6:19); 6:20; the gold (6:20-22); the cherubim of olive wood (6:23-28); the temple as a god's house, the courts, priests and the high priest once a year; zones of holiness; devir, the cube; cherubim as guardians of God's throne, about fifteen feet tall, not infants; no statue in Israel's inner room | 14-28 | 1-kings/6.json `cultural`, `literary`, `words` (devir, keruv), `doctrines` (holiness); context/worlds/old-testament-world.json (no statue); BSB | Repository; BSB text |
+| Exodus 25:20; Leviticus 16:34; Revelation 21:16 and the cube | 14-28 | 1-kings/6.json `cultural` (Exodus 25:18-22; Leviticus 16); revelation/plain/21.json (15-21, `ot`: 1 Kings 6:20 and the cube); BSB | Repository; BSB text; the Revelation note draws the shape, which is not a line to Christ |
+| Carvings and gold (6:29-30); the doors (6:31-35); the court (6:36); 6:37-38; the garden and the echo of Eden many interpreters see; the builder's record, built and finished (6:9, 14, 38); Bul in autumn, a Canaanite month name | 29-38 | 1-kings/6.json `cultural`, `literary`, `historical`; BSB | Repository; BSB text |
+| Genesis 3:24 | 29-38 | 1-kings/6.json `cultural` (Genesis 3:24); BSB | Repository; BSB text |
+
+Cut in chapter 6: John 1:14, John 2:19-21, Matthew 27:51 and Hebrews 10:19-20 set beside the house and its curtain (the deep note calls these the New Testament's own connections, but none is drawn to this chapter, and the curtain is not in it); that the narrator rounds seven and a half years to seven (arithmetic from the text, not stated in the repository; cut before commit); 6:27 paraphrased for length.
