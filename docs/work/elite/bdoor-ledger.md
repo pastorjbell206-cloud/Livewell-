@@ -17998,3 +17998,20 @@ Cut from the book page: the deep notes' lines to Christ (Mark 10:45 and the king
 | The care line (‘A word for anyone who is being pressured for sex, or for anything else...’ to ‘...lists places to turn.’) | 10-22 `hard` | genesis/plain/39.json (11-18, `hard`) | Reused whole, word for word; Find Help named |
 
 Cut in chapter 1: the deep note's line to Christ by contrast (Mark 10:45 and Galatians 3:16; the note calls it contrast and pattern); the hard question of Esther's history (left to the book page); the variant readings of 1:8 (not needed).
+
+## The plain notes on Esther 2 (2026-11-25)
+
+`client/public/bible/notes/esther/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Four years between chapters 1 and 2; Salamis and Plataea in Greek sources, unmentioned; the king remembering Vashti and the decree; harems taken, not asked | 1-4 | esther/2.json `historical`, `cultural`; esther/1.json `historical` | Repository |
+| Daniel 1:7 | 1-4 | esther/2.json `historical` (Daniel 1:6-7); BSB | Repository; BSB text |
+| The tenth month of the seventh year, about 479 or 478 BC; Kish and Saul; the exile with Jeconiah in 597 BC and the great-grandfather; Mordecai and Marduk, Esther and star or Ishtar, Hadassah myrtle; the harem without romance; one night and the house of the concubines; adoption and Mordecai's daily care; the identity hidden twice (verses 10, 20) | 5-18 | esther/2.json `historical`, `cultural`, `literary`, `doctrines` (family) | Repository |
+| 2 Kings 24:12; 1 Samuel 9:1 | 5-18 | esther/2.json `historical`; esther/intro.json `story` (Kish); BSB | Repository; BSB text |
+| The coercion named: taken (verse 8), no choice, refusal fatal; Esther and Daniel compared; compromise or prudence; the text restrained; not calling it right; God's hand in the whole without approving every step | 5-18 `hard` | esther/2.json `hard`, `doctrines` (suffering) | Repository; the readings in their holders' terms |
+| The care line (‘A word for anyone who has been sold, traded, or forced to work or to do sexual acts...’ to ‘...lists places to turn.’) | 5-18 `hard` | judges/plain/21.json (15-25); acts/plain/16.json; genesis/plain/37.json; numbers/plain/31.json (`hard`) | Reused whole, word for word; Find Help named |
+| The gate as an official post; the real danger of plots and Xerxes killed in 465 BC; the unrewarded deed recorded; Herodotus on royal benefactors | 19-23 | esther/2.json `cultural`; esther/6.json `historical` | Repository |
+| Acts 23:16 | 19-23 | acts/plain/23.json (Esther 2:21-23); BSB | Repository; BSB text |
+
+Cut in chapter 2: the deep note's lines to Christ (Genesis 50:20, Galatians 4:4, the hidden identity; the note says Esther is not a type of Christ); the Persepolis tablets naming a Marduka (left to the book page and chapter 10); a quotation of 1 Samuel 9:1 and of 2 Kings 24:12 corrected to the BSB's words before commit.
