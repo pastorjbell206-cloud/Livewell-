@@ -17844,3 +17844,17 @@ Cut in chapter 5: the deep note's lines to Christ (2 Corinthians 8:9, Luke 4:18-
 | Nehemiah 12:27; Psalm 147:2 | 15-19 | psalms/plain/147.json (Nehemiah 12:27); bible/story.json (Psalm 147 at the dedication); BSB | Repository; BSB text |
 
 Cut in chapter 6: the deep note's lines to Christ (Mark 15:30-31 and the charge of King of the Jews; the note calls them thematic); Numbers 18:7's last clause (not quoted, to avoid dwelling on death).
+
+## The plain notes on Nehemiah 7 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The walled city needing people, completed in chapter 11; gates shut until the sun is hot; residents guarding near their homes; gatekeepers, singers and Levites together; 7:5 as God's prompting | 1-5 | nehemiah/7.json `story`, `cultural`, `doctrines` (providence) | Repository |
+| Ezra 2:1 | 1-5 | nehemiah/7.json `literary`; BSB | Repository; BSB text |
+| The register from the early return, almost identical to Ezra 2, several waves; who belongs; records, priestly descent, the Urim and Thummim and the question left open; the Persian title and the darics and minas; verse 73 leading into chapter 8 as Ezra 2 into Ezra 3 | 6-73 | nehemiah/7.json `historical`, `cultural`, `literary` | Repository |
+| Ezra 3:1 | 6-73 | nehemiah/7.json `literary`; BSB | Repository; BSB text |
+| The figures (about 31,089 and 29,818 against 42,360); copies at different stages, copying errors, unlisted people; none certain; the writers not smoothing differences | 6-73 `hard` | nehemiah/7.json `hard`; ezra/2.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 7: the deep note's lines to Christ (Matthew 1, Bethlehem and the Messiah, Luke 10:20, Revelation 21:27, Hebrews 7:16; the note calls them later developments of the theme).
