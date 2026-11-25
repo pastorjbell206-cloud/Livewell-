@@ -192,3 +192,69 @@ Lighthouse, median of three, layout shift 0.000:
 Pushes in this second run: the fixes (3eb4c9ea..b39908cb), the glance page
 (b39908cb..08eabd07), then key chapters and themes together, because the
 shared branch had moved again when key chapters was ready to go.
+
+## Two pages from the Study Bible's own data
+
+These read `client/public/bible/` itself: the chapter files (every word's
+Strong's number and word-for-word meaning, every verse's cross-references)
+and the lexicon. Rules and file shapes: `scripts/lib/bible-study.mjs`. Two
+more content gates (63 commands now). No commentary is written on either
+page; each ends with the Study Bible's own source credits (`Credits`).
+
+**Study a Bible word** (/study/word, /study/word/<strong>). The lexicon gives
+a word's entry, its count and its first 60 verses; 937 words are used in
+more verses than that, and it has no count by book. So
+`scripts/build-bible-word-index.mjs` counts the chapters themselves into
+`bible/words/`: a bucket file for every 100 Strong's numbers (each word's
+count, its count by book, its verses with the meanings it has in each),
+pages of 300 verses for the 199 words used in more than 300, and a list of
+words for every pair of opening letters, for the finder. 1,178 files, none
+over 100 KB (most a few KB), so no fetch is large; the index lists which
+files exist, so none is asked for and not found.
+
+- 16,931 words: 11,388 Hebrew and Aramaic, 5,543 Greek. The lexicon has 4,301
+  more entries whose words the chapters do not hold (89 uses by its count);
+  their pages show the entry and say the chapters hold no verse.
+- For 112 words the lexicon's count is higher than the chapters' by a few
+  (words the build of the Study Bible counted but did not place in a verse).
+  The page shows what the chapters hold and states both numbers.
+- The entry is shown through `safeDefinition`, as the Study Bible shows it.
+- "With the word marked": the Berean Standard Bible's sentence is not aligned
+  word by word with the Hebrew or Greek. What the data holds is the Study
+  Bible's word-for-word meaning of the word in that verse ("he created"). So
+  a word of that meaning is marked where the sentence holds it whole
+  ("created"), small words aside, and nothing is marked where it does not
+  ("kindness" for "loyalty"). The meaning is printed under every verse either
+  way, and the page says how the marking works.
+- A word's own page is not prerendered, is marked noindex, and is not in the
+  sitemap: there are some 17,000, each a dictionary entry and a list. The
+  finder (/study/word) is prerendered, indexed and in the sitemap. The static
+  shell a word page is first served carries the site's default robots line;
+  the noindex is added when the page runs.
+- The Study Bible's word panel now ends with "Study this word", and a key
+  word on /study/words links to its word page where its sentence says
+  "Greek x" or "Hebrew x", exactly one dictionary word of that language is
+  transliterated x, and the Study Bible's text uses that word in that book:
+  165 of 543 key-word entries. A spelling the dictionary writes another way,
+  or two dictionary words spelled alike, gets no link.
+
+**Follow a verse through the Bible** (/study/cross-references).
+`scripts/build-bible-xref-index.mjs` copies each verse's links out of its
+chapter file into `bible/xref/<book>/<n>.json` (1,189 files of a few KB;
+John 3's chapter file is 42 KB) and counts, for `xref/examples.json`, the
+verses the most other verses link to. 273,169 links from 29,323 verses. No
+verse has more than twelve links, and more than half have exactly twelve,
+so "the verses with the most links" would have picked nothing out; the
+verses most linked to do (1 Peter 2:9, by 123 verses, is first). The page
+shows a chosen verse's links grouped by book in the Bible's order, each with
+its words and the way to its chapter; "One step further" opens that verse's
+own links in place (the Study Bible's own list, `CrossRefList`), and no
+further. It says nothing about why two verses are linked: the data does not.
+
+Lighthouse, median of three, layout shift 0.000:
+
+| Page | Score |
+|------|-------|
+| /study/word | LH_WORD |
+| /study/word/G0026 | LH_WORD2 |
+| /study/cross-references | LH_XREF |
