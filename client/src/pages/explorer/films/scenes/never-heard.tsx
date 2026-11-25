@@ -118,7 +118,15 @@ const film: FilmDrawing = {
           cloak="c"
           head="veil"
         />
-        <Person x={274} y={378} s={1.05} pose="sit" robe="c" child head="bare" />
+        <Person
+          x={274}
+          y={378}
+          s={1.05}
+          pose="sit"
+          robe="c"
+          child
+          head="bare"
+        />
         <Grass
           at={[
             [130, 380],
@@ -155,7 +163,15 @@ const film: FilmDrawing = {
         <Village x={700} y={372} s={1.1} />
         <Fade frame={frame} on={1} off={2} from="up" at={7}>
           <Person x={250} y={470} s={1.1} pose="walk" robe="b" cloak="c" />
-          <Person x={610} y={476} s={1.1} pose="walk" face={-1} robe="g" head="veil" />
+          <Person
+            x={610}
+            y={476}
+            s={1.1}
+            pose="walk"
+            face={-1}
+            robe="g"
+            head="veil"
+          />
           <Person x={438} y={486} s={1.1} pose="walk" robe="c" staff="staff" />
         </Fade>
       </Scene>
@@ -218,7 +234,15 @@ const film: FilmDrawing = {
           head="veil"
         />
         <Fade frame={frame} on={2} off={3} from="up" at={7}>
-          <Person x={218} y={480} s={0.95} pose="sit" robe="g" child head="bare" />
+          <Person
+            x={218}
+            y={480}
+            s={0.95}
+            pose="sit"
+            robe="g"
+            child
+            head="bare"
+          />
         </Fade>
       </Scene>
 
@@ -306,13 +330,25 @@ const film: FilmDrawing = {
       {/* 5. The third answer: an open door. No one is drawn. */}
       <Scene frame={frame} k={5}>
         <Ink d="M-10,400V60H810V400Z" tone="c" hatch={h.hs} />
-        <path className="pl-f" d="M0,170H800M0,290H800M160,60V170M520,170V290M660,60V170M220,290V400M620,290V400" />
+        <path
+          className="pl-f"
+          d="M0,170H800M0,290H800M160,60V170M520,170V290M660,60V170M220,290V400M620,290V400"
+        />
         <Ink d="M-10,510V400H810V510Z" tone="g" />
-        <path className="pl-f" d="M330,500C350,460 366,430 372,400M470,500C450,460 434,430 428,400" />
-        <path className="pl-paper" d="M340,400V210C340,150 460,150 460,210V400Z" />
+        <path
+          className="pl-f"
+          d="M330,500C350,460 366,430 372,400M470,500C450,460 434,430 428,400"
+        />
+        <path
+          className="pl-paper"
+          d="M340,400V210C340,150 460,150 460,210V400Z"
+        />
         <Fade frame={frame} on={5} off={6} at={3}>
           <Ambient frame={frame} on={5} off={6} kind="glow">
-            <path className="pl-m" d="M356,400V214C356,170 444,170 444,214V400Z" />
+            <path
+              className="pl-m"
+              d="M356,400V214C356,170 444,170 444,214V400Z"
+            />
           </Ambient>
         </Fade>
         <path className="pl-l" d="M340,400V210C340,150 460,150 460,210V400" />
@@ -358,7 +394,15 @@ const film: FilmDrawing = {
             cloak="c"
             staff="staff"
           />
-          <Person x={500} y={424} s={1.1} pose="walk" robe="c" cloak="b" bundle />
+          <Person
+            x={500}
+            y={424}
+            s={1.1}
+            pose="walk"
+            robe="c"
+            cloak="b"
+            bundle
+          />
         </Fade>
       </Scene>
     </>

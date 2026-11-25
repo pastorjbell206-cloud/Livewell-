@@ -73,8 +73,16 @@ describe("FilmsHere", () => {
     expect(again.container.innerHTML).toBe("");
   });
 
-  it("the file is each film's own links turned round: answers, questions, doctrine studies and wisdom topics only", () => {
+  it("the file is each film's own links turned round: answers, questions, doctrine studies and wisdom topics, and a book's page for that book's film only", () => {
     for (const [page, slugs] of Object.entries(LINKS.pages)) {
+      // A film for one whole book of the Bible names its book ("book") and
+      // is offered on that book's page; no other film is offered on one.
+      const bookPage = page.match(/^\/study\/bible\/([a-z0-9-]+)$/);
+      if (bookPage) {
+        expect(slugs, page).toEqual([`book-${bookPage[1]}`]);
+        expect(filmFile(slugs[0]).book).toBe(bookPage[1]);
+        continue;
+      }
       expect(page).toMatch(
         /^\/(answers|questions\/[a-z0-9-]+|study\/bible\/doctrines|wisdom)\/[a-z0-9-]+$/
       );
