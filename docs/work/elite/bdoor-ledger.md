@@ -20694,3 +20694,22 @@ Cut in chapter 9: the deep note's mention of 13:16 beside 9:13, so that the atro
 | The hard note: siege warfare named, not described; not commended; a remembered massacre; the prophets condemn such crimes in other nations (Amos 1:13); two emphases (human agents responsible; no romance about war); Israel's own Scripture; no warrant for violence; no key for any people's suffering | 9-15 `hard` | hosea/10.json `hard`; the brief | Repository; the emphases in their holders' terms; stated as the brief asks |
 
 Cut in chapter 10: the deep note's line from the vine of 10:1 to John 15:1, which the New Testament does not draw from Hosea. The words of 10:14 and of Amos 1:13 are named and not quoted.
+
+## The plain notes on Hosea 11 (2026-11-25)
+
+`client/public/bible/notes/hosea/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 11:1; 11:2 paraphrased; 11:3; 11:4 | 1-4 | BSB | BSB text |
+| God's own voice, a parent's speech; marriage to parent and child; the exodus as sonship; the wilderness, the land and the Baals; the toddler taught, carried and fed; the ox led with cords, the yoke eased; God stooping | 1-4 | hosea/11.json `literary`, `historical`, `cultural` | Repository |
+| Exodus 4:22 (its clause); Matthew 2:15 (its quotation of 11:1) | 1-4 | hosea/11.json `historical`, `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| The hard note: a past event, not a prediction; the charge of misuse; typological fulfillment; the new exodus of 11:10-11; Matthew not claiming foresight | 1-4 `hard` | hosea/11.json `hard` | Repository; the readings in their holders' terms |
+| 11:5; 11:6-7 paraphrased | 5-7 | BSB | BSB text |
+| Assyria under Tiglath-pileser III, 745 to 727 BC, and after; Egypt as a symbol of slavery and Assyrian rule; some may have fled to Egypt; Hoshea and Egypt (2 Kings 17:4); the turn of words | 5-7 | hosea/11.json `historical`; hosea/intro.json `themes` (shuv) | Repository |
+| 2 Kings 17:4-6; Deuteronomy 28:68 paraphrased | 5-7 | BSB | BSB text |
+| 11:8 (its four questions; the rest paraphrased); 11:9 (its first sentence; the rest paraphrased); 11:10-12 paraphrased | 8-12 | BSB | BSB text |
+| Admah and Zeboiim as bywords; the sentence God will not carry out; the heart turned over with the verb of Sodom's overthrow; holiness as the reason; the lion's roar as a call home; the Hebrew numbering 12:1 | 8-12 | hosea/11.json `cultural`, `literary` | Repository |
+| Deuteronomy 29:23 paraphrased; Isaiah 11:11 (its phrase) | 8-12 | hosea/11.json `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 11: nothing further; the New Testament line kept is Matthew 2:15. The title of verses 8-12 does not quote 11:8, so that no first-person words stand outside quoted Scripture.
