@@ -9181,3 +9181,46 @@ Every line the deep notes draw from Lamentations to Christ that the New Testamen
 ### What was run
 
 The 2 Kings checks, copied to `/home/user/bdoor-scratch/major-prophets/` and pointed at these books (the book page's check reads only the `teaching` field; the care corpus leaves out all five of this run's books): validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden-word, signposting and first-person scans, the care-line check, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks, after the book page and each chapter, each exit 0 at commit. `teaching.test.tsx` passed (33 of 33) after the book page. The push's gates are in the hand-back.
+
+## Daniel: the book page and every chapter (2026-11-25)
+
+Daniel is complete: a teaching introduction on the book page and all twelve chapters in plain words, in the same shape as Lamentations. One commit for the book page (with the four rebuilt explore indexes, and `teaching.test.tsx` listing Daniel with its frame, `canaan`) and one per chapter. The chapters were drafted and checked in the scratch folder's stage while the first push's heavy gates waited on the machine's load, then copied in, checked again in place and committed in order.
+
+### The book page (`/study/bible/daniel`, same address)
+
+Data only, in `client/public/bible/notes/daniel/intro.json`, field `teaching`. Thirteen parts (3,636 words): Daniel in a minute; Where it sits in the story; Who wrote it, and when; Babylon, Persia, and the Greek kings; How Daniel is built; Faithful in a foreign court; Dreams, a humbled king, and writing on the wall; Four beasts, and one like a son of man; The ram, the goat, and the little horn; Daniel's prayer and the seventy weeks; The last vision, and the dead who will awake; How the New Testament reads Daniel; How to read Daniel. Then 17 hard passages, 15 key words, 16 timeline entries and eleven Go deeper pages, all live. The map draws only Jerusalem: Babylon, Dura, Susa and the Ulai, the Tigris, Media, Persia, Greece and Egypt are not yet placed anywhere in the site's records, and the note says so (a question for James is in the hand-back).
+
+Contested matters are given in their holders' terms with no side taken: the date (the traditional sixth-century view, Young, Baldwin, Miller; the critical view of 167 to 164 BC, Collins, with Porphyry and Jerome; mediating views); the four kingdoms (Jerome's Babylon, Medo-Persia, Greece, Rome; the critical Babylon, Media, Persia, Greece with Antiochus IV; futurist readings); the one like a son of man (a people, an angel, an individual, with the Jewish witnesses the site's notes name); the seventy weeks (Jewish, critical, traditional Christian, dispensational and symbolic readings, with Jerome's refusal to choose); Darius the Mede; the king of 11:36-45. No date is calculated from any of the book's numbers, and no person, nation or movement of the present day is identified with any beast, horn or king.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 4 | 1,974 | 7 | 4 | 2,634 |
+| 2 | 4 | 2,275 | 8 | 4 | 2,003 |
+| 3 | 4 | 2,125 | 9 | 5 | 2,470 |
+| 4 | 4 | 2,146 | 10 | 3 | 1,547 |
+| 5 | 4 | 1,708 | 11 | 5 | 2,570 |
+| 6 | 4 | 1,933 | 12 | 3 | 1,649 |
+| | | | **Total** | **48** | **25,034** |
+
+### The hard places, and how they are stated
+
+- **The king's death sentence on the wise men (2:12-13):** not approved; Daniel pleads for them.
+- **Even if he does not (3:18):** faith not dependent on rescue; the book's own martyrs (11:33) and resurrection hope; no one's suffering read as lack of trust; the accusation of the Jews and no warrant for suspicion of the Jewish people; the line for anyone suffering now.
+- **The fourth figure in the furnace (3:25):** an angel, or the Son before his birth; no side.
+- **Nebuchadnezzar's madness (4):** one king's judgment for pride, never a reading of anyone's illness; the illness line.
+- **The accusers' wives and children (6:24):** the king's command, forbidden by Deuteronomy 24:16, reported and not a model; the line for anyone not protected by a parent.
+- **The visions (7 to 12):** every reading in its holders' terms; refining under persecution (11:35) never a word to say to another sufferer; no present-day identification; no date set; the line for anyone suffering now (12).
+
+### Care lines
+
+Reused whole, byte for byte, read by script from their sources, each naming Find Help, none with a phone number, no new care sentence: the line for anyone suffering now (book page; 3; 12); the illness line (4); the line for anyone not protected by a parent (6).
+
+### Cut or narrowed
+
+Every line the deep notes draw to Christ that the New Testament does not draw (the faithful-servant pattern of chapter 1; the stone as the parables of small beginnings; Immanuel in the furnace; James 4:6, Luke 1:52 and Philippians 2 beside chapter 4; Christ bearing the judgment on the wall; the sealed tomb of Matthew 27:66 beside the den; Ephesians 6:12 beside chapter 10). The New Testament's own lines kept: Mark 14:62, Mark 13:26 and Acts 7:56 with 7:13; Matthew 24:15; Mark 1:15; Hebrews 11:33-34; Luke 1:19 (Gabriel); Revelation's beasts, Michael (Revelation 12:7; Jude 1:9) and 22:10; John 5:28-29 and Matthew 13:43 with 12:2-3; 2 Thessalonians 2:4's wording beside 11:36; Luke 20:18 as an echo many interpreters hear; the wording of Matthew 13:32. Unsourced sentences caught before commit were cut and are recorded in each chapter's ledger.
+
+### What was run
+
+As for Lamentations, after the book page and each chapter, each exit 0 at commit. The validator asked for a book beyond Daniel in three `later` fields (3:28-30, 6:25-28, 8:23-27); a psalm was added to each and the ledger says so. The push's gates are in the hand-back.
