@@ -17796,3 +17796,19 @@ Cut in chapter 2: the deep note's lines to Christ (Matthew 16:18, Ephesians 2:22
 | Ezra 8:33; Nehemiah 12:31-40 | 15-32 | nehemiah/3.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 3: the deep note's lines to Christ (1 Corinthians 12, 1 Peter 2:5, the Sheep Gate and the Lamb of God; the note calls them thematic and warns against allegory); the landmark names first written loosely and corrected to the BSB's own before commit.
+
+## The plain notes on Nehemiah 4 (2026-11-25)
+
+`client/public/bible/notes/nehemiah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Burnt stones crumbling and the fox; ridicule as a weapon in an honor culture; the short prayers in the memoir; the wall at half its height | 1-6 | nehemiah/4.json `cultural`, `literary` | Repository |
+| Psalm 123:3; Jeremiah 18:23 | 1-6 | psalms/plain/123.json (Nehemiah 4:4); nehemiah/4.json `hard` (Jeremiah 18:23); BSB | Repository; BSB text |
+| The prayer against the enemies: vengeance handed to God, defense only, contempt for God's work, the imprecatory psalms and Jeremiah; Christians differing (a cry for justice still prayed, or a pre-Christian response transformed); handing a wrong to God better than paying it back | 1-6 `hard` | nehemiah/4.json `hard` | Repository; the readings in their holders' terms |
+| The allies on every side; 4:9 and prayer with planning; verse 10 a lament; families stationed; zakar as remembering that shapes action | 7-14 | nehemiah/4.json `historical`, `literary`, `cultural`, `doctrines`, `words` (zakar) | Repository |
+| Acts 27:31 and the promise of survival | 7-14 | bible/doctrines/providence.json (Nehemiah 4:9 and Paul insisting the sailors stay); acts/plain/27.json; BSB | Repository; BSB text |
+| God frustrating the plot and the builders still armed; the shofar; the builders from outside staying in the city; weapons for defense; the closing picture; the old confession | 15-23 | nehemiah/4.json `doctrines`, `cultural`, `literary`, `words` (lacham) | Repository |
+| Exodus 14:14 | 15-23 | nehemiah/4.json `words` (lacham: Exodus 14:14); BSB | Repository; BSB text |
+
+Cut in chapter 4: the deep note's lines to Christ (the servant-leader, Ephesians 2 and 6, Colossians 2:15; the note calls them thematic); the phrase 'the rhythm of a work song' for verse 10 (not stated in the repository; cut before commit).
