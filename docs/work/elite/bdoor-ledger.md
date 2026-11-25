@@ -19310,3 +19310,19 @@ Cut in chapter 42: the deep note's lines to Christ (Luke 23:34, Hebrews 7:25 and
 | Amos 5:8 (in part: the verse holds a dash); Psalm 147:9 | 31-41 | job/38.json `words` (kimah: Amos 5:8); the notes setting Psalm 147:9 beside Job 38:41; BSB | Repository; BSB text |
 
 Cut in chapter 38: the deep note's lines to Christ (John 1:3, Colossians 1:16-17, Luke 12:24 and the stilling of the storm; the New Testament does not quote Job 38); the BSB's word ‘journeyed’ in verse 16 is not quoted.
+
+## The plain notes on Job 39 (2026-11-25)
+
+`client/public/bible/notes/job/plain/39.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The first speech continuing; the narrowed focus; still questions, still silent on the test; the ibex near En Gedi; the onager; re'em as the aurochs, extinct, and the unicorn of older Bibles; the wild chosen over the tame; freedom as God's gift; the months counted | 1-12 | job/39.json `story`, `historical`, `cultural`, `words` (reem, pere) | Repository |
+| Genesis 16:12 | 1-12 | job/39.json `words` (pere); BSB | Repository; BSB text |
+| The ostrich as humor and delight, and the modern naturalists' note; the war horse, chariots and mounted troops, the great powers; the shofar | 13-25 | job/39.json `cultural`, `historical`, `literary`, `words` (renen) | Repository |
+| Deuteronomy 17:16 (in part: the verse holds an inner quotation) | 13-25 | job/39.json `historical`; BSB | Repository; BSB text |
+| Nesher as eagle or griffon vulture; the pairs; the stark close; 40:1-2 next | 26-30 | job/39.json `words` (nesher), `literary`, `story` | Repository |
+| Isaiah 40:31 | 26-30 | job/39.json `words` (nesher: Exodus 19:4; Isaiah 40:31); BSB | Repository; BSB text |
+| The hard note: enlarging Job's world; the wild order beyond reward and punishment; the tenderness of God's attention for a bereaved father | 26-30 | job/39.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 39: the deep note's line to Christ (Matthew 10:29-31; the note says the chapter is not a prophecy and should not be read as allegory).
