@@ -17169,3 +17169,21 @@ Cut in chapter 3: the deep note's lines to Christ (John 1:14 and 2:19-21 set bes
 | Nehemiah 1:3; Haggai 1:1 | 17-24 | ezra/4.json `historical` (Nehemiah 1:3); ezra/5.json `historical` (Haggai 1:1); BSB | Repository; BSB text |
 
 Cut in chapter 4: the deep note's lines to Christ (the Samaritan woman, the parable and Acts 1:8 read as the next chapter of the story, and Jesus accused of rebellion before a Roman governor as a likeness of this false accusation; the note calls them a pattern, not lines the New Testament draws to this chapter); the thought that some readers re-identify the kings to keep the chapter in order (not stated in the repository; cut before commit).
+
+## The plain notes on Ezra 5 (2026-11-25)
+
+`client/public/bible/notes/ezra/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Darius I seizing the throne in 522 BC after revolt and putting down rebellions; his second year 520 BC; Haggai's first message and the work resumed within the month (Haggai 1:1, 15); Zechariah two months later (Zechariah 1:1); the rebuke over paneled houses and the promise of God's presence | 1-5 | ezra/5.json `historical`; BSB | Repository; BSB text |
+| The work restarted by prophets, not by a change of circumstances | 1-5 | ezra/5.json `story`, `doctrines` (revelation) | Repository |
+| Tattenai governor of the province west of the Euphrates; the Babylonian document naming a Tattannu, very likely the same man; his inquiry as a careful official's after the revolts; royal permission for temples and fortifications; names recorded for accountability | 1-5 | ezra/5.json `historical`, `cultural` | Repository |
+| The eye of their God as the hinge, the official watching and God watching more closely | 1-5 | ezra/5.json `literary`, `words` (ayin) | Repository |
+| Haggai 1:4; Haggai 1:14 and the verb stir; Psalm 33:18 | 1-5 | ezra/5.json `historical`, `words` (ayin: Psalm 33:18); ezra/1.json `words` (ur); BSB | Repository; BSB text |
+| The report unlike chapter 4's letter; the great God and the work prospering; timber courses between stone courses, as for Solomon's inner court and in Cyrus's specifications (6:4); the Aramaic section; the elders as the gray-haired, leadership by heads of families | 6-10 | ezra/5.json `cultural`, `literary`, `words` (siv) | Repository |
+| 1 Kings 6:36 | 6-10 | ezra/5.json `cultural`; BSB | Repository; BSB text |
+| The elders' answer as a compact history (Solomon's temple, sin, Nebuchadnezzar, Cyrus, the vessels, the foundation); the book's own account heard through an official; the confession that the exile was God's judgment and not a failure of their God; the appeal to Cyrus's decree; Cyrus as king of Babylon after 539 BC; Sheshbazzar named for the foundation and the notes on chapter 3; the suspense until chapter 6 | 11-17 | ezra/5.json `literary`, `cultural`, `story`, `doctrines` (repentance); ezra/3.json `historical` | Repository |
+| Nehemiah 9:33; 1 Kings 6:14 | 11-17 | bible/doctrines/exile.json (Nehemiah 9 answering the exile with confession); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (the church as a spiritual house on the foundation of the apostles and prophets, Ephesians 2:19-22 and 1 Peter 2:4-5, and Zechariah 6:12-13 read as fulfilled in Jesus; the note calls the first a development of the temple theme, not a line the New Testament draws to this chapter); Zechariah 6:12-13 and the Branch (not needed here; left to the Zechariah notes).
