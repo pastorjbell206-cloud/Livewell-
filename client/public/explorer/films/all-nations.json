@@ -1,0 +1,120 @@
+{
+  "slug": "all-nations",
+  "title": "A blessing for all nations",
+  "group": "ideas",
+  "status": "finished",
+  "mark": "all-nations",
+  "line": {
+    "younger": "God chose one family so that every family on earth could be blessed. Follow that promise from a tower left unfinished to a crowd no one can count.",
+    "older": "From Babel's scattering to the multitude before the throne: how the promise to Abraham, a blessing for all the families of the earth, runs through the whole Bible."
+  },
+  "poster": "On a wide plain a half-built tower of brick stands empty, and small groups of people walk away from it in every direction.",
+  "frames": [
+    {
+      "id": "babel",
+      "name": "Scattered",
+      "still": "On a wide plain a half-built tower of brick stands empty, and small groups of people walk away from it in every direction.",
+      "younger": "God blessed the first people and told them to fill the earth. But at a place called Babel, people built a tall tower to make a name for themselves. So God mixed up their languages, and they stopped building.",
+      "older": "God's first word to human beings was a blessing. But at Babel people built a tower to “make a name for ourselves.” The LORD confused their language, and the nations went their own ways.",
+      "verse": {
+        "ref": "Genesis 11:8",
+        "text": "So the LORD scattered them from there over the face of all the earth"
+      }
+    },
+    {
+      "id": "abraham",
+      "name": "One family, for every family",
+      "still": "Night. An old man with a staff stands outside his tent and looks up at a sky full of stars, one of them gold.",
+      "younger": "What God did next looks small. He chose one old man, Abram, and promised him a great family. But the promise was never only for that family. God chose one family for the sake of every family.",
+      "older": "The next chapter is God's answer, and it is surprisingly small. He calls one old man whose wife cannot have children, and promises him a great nation, a land and a blessing. God chose one family for the sake of every family.",
+      "verse": {
+        "ref": "Genesis 12:3",
+        "text": "all the families of the earth will be blessed through you."
+      }
+    },
+    {
+      "id": "ruth",
+      "name": "Rahab and Ruth",
+      "still": "On a road through barley fields a young woman walks beside an older woman, away from the hills behind them and toward a small town.",
+      "younger": "From the start, people from other nations joined God's people. Rahab came from Jericho. Ruth came from Moab, and she would not leave Naomi, her husband's mother. Ruth became the great-grandmother of King David.",
+      "older": "When Israel left Egypt, others went with them, and God's law told Israel to love the foreigner. Rahab of Jericho joined God's people. So did Ruth, from Moab, who became the great-grandmother of David.",
+      "verse": {
+        "ref": "Ruth 1:16",
+        "text": "your people will be my people, and your God will be my God."
+      }
+    },
+    {
+      "id": "nineveh",
+      "name": "The great city",
+      "still": "A man sits alone on a hill under a withered plant, his back to a great walled city on the plain below, where people and their animals stand at the gate.",
+      "younger": "God sent a prophet named Jonah to Nineveh, a great city far from Israel. Jonah ran the other way, and later he was angry when God spared it. But God cared about that city.",
+      "older": "God sent Jonah to Nineveh, a foreign city, and Jonah was furious when God spared it. The book ends with God's question. Isaiah heard God promise a servant who would be “a light for the nations.”",
+      "verse": {
+        "ref": "Jonah 4:11",
+        "text": "So should I not care about the great city of Nineveh, which has more than 120,000 people who cannot tell their right hand from their left"
+      }
+    },
+    {
+      "id": "magi",
+      "name": "Visitors from the east",
+      "still": "Night. Three travellers in long robes, one leading a donkey, walk toward a small house in a town. A gold star stands above the house.",
+      "younger": "When Jesus was born, visitors called Magi came from far away in the east. They had followed a star, and they came to worship the child. An old man named Simeon called the baby a light for the other nations.",
+      "older": "Magi from the east came to worship the child Jesus and went home by another road. In the temple old Simeon took the child in his arms and called him “a light for revelation to the Gentiles, and for glory to Your people Israel.”",
+      "verse": {
+        "ref": "Matthew 2:2",
+        "text": "We saw His star in the east and have come to worship Him."
+      }
+    },
+    {
+      "id": "pentecost",
+      "name": "Every language",
+      "still": "In a city street people in the dress of many lands stand close together, listening to a few speakers on the steps of a house. One small gold flame burns above the speakers.",
+      "younger": "The risen Jesus sent his friends to make disciples of all nations. Then, at Pentecost, God's Spirit came. Visitors from many lands heard about God, each in his own language. At Babel, languages pulled people apart. Here, people of many languages heard one message.",
+      "older": "The risen Jesus sent his friends to “make disciples of all nations.” At Pentecost the confusion of languages at Babel is answered: people of many languages hear one message. Soon Peter learned that God “welcomes those from every nation who fear Him.”",
+      "verse": {
+        "ref": "Acts 2:11",
+        "text": "we hear them declaring the wonders of God in our own tongues!"
+      }
+    },
+    {
+      "id": "multitude",
+      "name": "Every tribe and tongue",
+      "still": "A great crowd of people in white robes, palm branches in their hands, stands on every side of a tree by a river, in the light of a gold sun.",
+      "younger": "On the Bible's last pages, John sees where the promise ends. People from every nation stand together before God, more than anyone could count. The promise to one family has reached the whole world.",
+      "older": "John sees one people drawn from every nation. The promise to Abraham's family has become a people from the whole world. And the leaves of the tree of life are “for the healing of the nations.”",
+      "verse": {
+        "ref": "Revelation 7:9",
+        "text": "a multitude too large to count, from every nation and tribe and people and tongue"
+      }
+    }
+  ],
+  "think": {
+    "younger": "God's plan was always for people from every country. Who do you know from another country or another language, and what would it look like to welcome them?",
+    "older": "Jonah knew God was kind and was angry about it when that kindness reached his enemies. Is there anyone you would find it hard to see God bless?"
+  },
+  "read": [
+    { "label": "Genesis 11", "href": "/study/bible/genesis/11" },
+    { "label": "Genesis 12", "href": "/study/bible/genesis/12" },
+    { "label": "Ruth 1", "href": "/study/bible/ruth/1" },
+    { "label": "Jonah 4", "href": "/study/bible/jonah/4" },
+    { "label": "Acts 2", "href": "/study/bible/acts/2" },
+    { "label": "Revelation 7", "href": "/study/bible/revelation/7" }
+  ],
+  "stops": [
+    "abraham",
+    "church",
+    "new-creation"
+  ],
+  "cards": [],
+  "deeper": [
+    { "label": "A blessing for every nation: the thread on the map", "href": "/study/explorer?thread=nations" },
+    { "label": "Isaiah 49 in the Study Bible: a light for the nations", "href": "/study/bible/isaiah/49" },
+    { "label": "Matthew 2 in the Study Bible: the Magi", "href": "/study/bible/matthew/2" },
+    { "label": "Luke 2 in the Study Bible: Simeon", "href": "/study/bible/luke/2" },
+    { "label": "Matthew 28 in the Study Bible: all nations", "href": "/study/bible/matthew/28" },
+    { "label": "Acts 10 in the Study Bible: Peter and Cornelius", "href": "/study/bible/acts/10" },
+    { "label": "Revelation 22 in the Study Bible: the healing of the nations", "href": "/study/bible/revelation/22" },
+    { "label": "Exile and coming home (a moving picture)", "href": "/study/explorer/watch/exile-and-home" }
+  ],
+  "end": { "label": "Follow the blessing for every nation on the map", "href": "/study/explorer?thread=nations" }
+}

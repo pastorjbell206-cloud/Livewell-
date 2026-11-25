@@ -37,6 +37,10 @@
    "title": "The kingdom of God",
    "line": "Jesus said the kingdom of God is like a tiny seed that grows into a great tree. Seven pictures watch it grow, from God's rule over all to the day it comes in full."
   },
+  "light-and-darkness": {
+   "title": "Light and darkness",
+   "line": "The Bible begins in the dark and ends in a city with no night. Follow one light all the way through."
+  },
   "who-god-is": {
    "title": "Who God is: Father, Son and Holy Spirit",
    "line": "There is one God, the Father, the Son, and the Holy Spirit. Eight pictures of what the Bible shows, and why every other picture breaks."
@@ -145,6 +149,14 @@
    "title": "Why are there so many churches?",
    "line": "There are so many different churches on so many signs. Seven pictures of how one church became many, and the one root they still share."
   },
+  "never-heard": {
+   "title": "What about people who never heard?",
+   "line": "Many people have lived without ever hearing about Jesus. What does the Bible say, and what do Christians believe? An honest look at a hard question."
+  },
+  "temple-destroyed": {
+   "title": "Why did God let his temple be destroyed?",
+   "line": "God's people had a beautiful temple, and one day it was burned. Why would God let that happen? What the prophets said, and how the story went on."
+  },
   "love-when-i-do-wrong": {
    "title": "Does God still love me when I do wrong?",
    "line": "Everyone does wrong sometimes. Does God stop loving us then? Jesus answered with a story about a son who ran away and a father who ran too."
@@ -202,7 +214,8 @@
   ],
   "/answers/if-god-is-good-why-suffering": [
    "romans-8-28",
-   "why-bad-things-happen"
+   "why-bad-things-happen",
+   "temple-destroyed"
   ],
   "/answers/is-faith-irrational": [
    "faith"
@@ -213,11 +226,15 @@
   "/answers/is-it-okay-to-be-angry-at-god": [
    "prayer"
   ],
+  "/answers/is-jesus-the-only-way": [
+   "never-heard"
+  ],
   "/answers/was-jesus-just-a-good-teacher": [
    "who-jesus-is"
   ],
   "/answers/what-about-those-who-never-heard": [
-   "john-3-16"
+   "john-3-16",
+   "never-heard"
   ],
   "/answers/what-does-the-bible-say-about-anxiety": [
    "prayer"
@@ -231,6 +248,9 @@
   "/answers/why-would-anyone-trust-the-bible": [
    "the-bible",
    "is-the-bible-true"
+  ],
+  "/questions/religions/those-who-never-heard": [
+   "never-heard"
   ],
   "/study/bible/doctrines/atonement": [
    "the-lamb",
@@ -291,6 +311,7 @@
   ],
   "/wisdom/fear-and-courage": [
    "david-and-goliath",
+   "light-and-darkness",
    "psalm-23"
   ],
   "/wisdom/feeling-far-from-god": [

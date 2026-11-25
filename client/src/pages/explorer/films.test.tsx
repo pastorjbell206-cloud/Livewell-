@@ -719,7 +719,7 @@ describe("Listen with the recorded files", () => {
 });
 
 describe("the data", () => {
-  it("lists the six groups and the forty-three finished films", () => {
+  it("lists the six groups, and every finished film in the catalogue's own order", () => {
     expect(INDEX.filmGroups?.map(g => g.id)).toEqual([
       "story",
       "stories",
@@ -728,51 +728,37 @@ describe("the data", () => {
       "verses",
       "questions",
     ]);
-    expect(READY.map(f => f.slug)).toEqual([
-      "bible-two-minutes",
-      "bible-in-a-minute",
-      "sixty-six-books",
-      "the-exodus",
-      "david-and-goliath",
-      "holy-spirit",
-      "god-with-his-people",
-      "the-king",
-      "covenant",
-      "the-lamb",
-      "why-blood",
-      "exile-and-home",
-      "kingdom-of-god",
-      "who-god-is",
-      "image-of-god",
-      "what-sin-is",
-      "who-jesus-is",
-      "why-jesus-died",
-      "the-resurrection",
-      "how-salvation-works",
-      "grace",
-      "faith",
-      "gospel-in-a-minute",
-      "spirit-in-a-believer",
-      "the-church",
-      "baptism-and-supper",
-      "the-bible",
-      "prayer",
-      "life-to-come",
-      "john-3-16",
-      "psalm-23",
-      "romans-8-28",
-      "who-made-god",
-      "does-god-exist",
-      "why-cant-i-see-god",
-      "why-bad-things-happen",
-      "is-the-bible-true",
-      "did-jesus-come-back-to-life",
-      "when-we-die",
-      "so-many-churches",
-      "love-when-i-do-wrong",
-      "god-silent",
-      "science-and-the-bible",
-    ]);
+    // The catalogue (films.json) is the one list: the index copies it, and a
+    // film is finished there only when it has its file and its drawing.
+    const catalogue = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/films.json"), "utf8")
+    ) as { films: { slug: string; status: string }[] };
+    expect(READY.map(f => f.slug)).toEqual(
+      catalogue.films.filter(f => f.status === "finished").map(f => f.slug)
+    );
+    expect(READY.length).toBeGreaterThanOrEqual(44);
+    // Found from outside the Explorer too: each finished film is in the site
+    // search (scripts/build-search-index.mjs reads the catalogue) and in
+    // llms.txt.
+    const search = fs.readFileSync(
+      path.join(PUBLIC, "search-index.json"),
+      "utf8"
+    );
+    const llms = fs.readFileSync(path.join(PUBLIC, "llms.txt"), "utf8");
+    for (const f of READY) {
+      expect(search, f.slug).toContain(`/study/explorer/watch/${f.slug}"`);
+      expect(llms, f.slug).toContain(
+        `https://www.livewellbyjamesbell.co/study/explorer/watch/${f.slug}\n`
+      );
+    }
+    for (const f of READY) {
+      expect(FILM_SCENES[f.slug], f.slug).toBeTruthy();
+      expect(FILM_META[f.slug], f.slug).toBeTruthy();
+      expect(
+        fs.existsSync(path.join(PUBLIC, `explorer/films/${f.slug}.json`)),
+        f.slug
+      ).toBe(true);
+    }
   });
 
   it("the three films cut for sharing are short, stand alone, and end by pointing to the site, never pressing", () => {
@@ -847,7 +833,8 @@ describe("the data", () => {
   });
 
   it("has no file for a film not made yet", () => {
-    expect(COMING.length).toBeGreaterThan(0);
+    // Every film announced so far is finished (2026-11-25), so this holds
+    // for whichever film is announced next.
     for (const f of COMING)
       expect(
         fs.existsSync(path.join(PUBLIC, `explorer/films/${f.slug}.json`)),
@@ -1714,5 +1701,203 @@ describe("the eight films of 2026-11-22: doctrines, stories and verses, each wit
     );
     expect(f.care).toBe(filmFile("why-bad-things-happen").care);
     expect(f.differ?.text).toMatch(/takes no side/);
+  });
+});
+
+describe("the films of 2026-11-25: the four that were announced, and the first books of the Bible", () => {
+  const NEW = [
+    "all-nations",
+    "light-and-darkness",
+    "never-heard",
+    "temple-destroyed",
+  ];
+  const AUDIO = JSON.parse(
+    fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
+  ) as {
+    films: Record<
+      string,
+      Record<"younger" | "older", { id: string; seconds: number }[]>
+    >;
+  };
+  const text = (f: Film) => JSON.stringify(f);
+  const captions = (f: Film) =>
+    f.frames.map(fr => `${fr.younger} ${fr.older}`).join(" ");
+
+  it("each has seven pictures, a drawing, and a narrated length between 1:45 and 3:15 at both levels", () => {
+    for (const slug of NEW) {
+      const f = filmFile(slug);
+      expect(f.frames.length, slug).toBe(7);
+      expect(FILM_SCENES[slug], slug).toBeTruthy();
+      for (const level of ["younger", "older"] as const) {
+        const rows = AUDIO.films[slug][level];
+        expect(rows.map(r => r.id)).toEqual(f.frames.map(fr => fr.id));
+        const seconds =
+          rows.reduce((s, r) => s + r.seconds, 0) + 0.7 * (rows.length - 1);
+        expect(seconds, `${slug} ${level}`).toBeGreaterThanOrEqual(105);
+        expect(seconds, `${slug} ${level}`).toBeLessThanOrEqual(195);
+      }
+    }
+  });
+
+  it("none of them speaks in the first person, presses for a decision, or dates the earth", () => {
+    for (const slug of NEW) {
+      const f = filmFile(slug);
+      const own = captions(f).replace(/“[^”]*”/g, " ");
+      expect(own, slug).not.toMatch(/\b(I|I'm|I've|my|me|we|our|us)\b/);
+      expect(text(f), slug).not.toMatch(
+        /pray this prayer|decide today|right now, before|before it is too late/i
+      );
+      expect(text(f), slug).not.toMatch(
+        /years ago|million|billion|young earth|old earth/i
+      );
+    }
+  });
+
+  it("A blessing for all nations follows the Explorer's own thread, names no modern state, and holds no people in contempt", () => {
+    const f = filmFile("all-nations");
+    const thread = (
+      JSON.parse(
+        fs.readFileSync(path.join(PUBLIC, "explorer/threads.json"), "utf8")
+      ) as { threads: { id: string; stops: Record<string, { ref: string }> }[] }
+    ).threads.find(t => t.id === "nations")!;
+    const refs = Object.values(thread.stops)
+      .map(s => s.ref)
+      .join("; ");
+    // Every verse the film shows is from a chapter the thread itself cites.
+    for (const fr of f.frames) {
+      const chapter = fr.verse!.ref.replace(/:.*$/, "");
+      expect(refs, fr.verse!.ref).toContain(chapter);
+    }
+    expect(f.frames[1].verse?.text).toBe(
+      "all the families of the earth will be blessed through you."
+    );
+    expect(f.end.href).toBe("/study/explorer?thread=nations");
+    const t = text(f);
+    expect(t).not.toMatch(
+      /\b(Iraq|Iran|Syria|Jordan today|modern|Palestin|State of Israel)\b/i
+    );
+    expect(t).not.toMatch(/pagan|heathen|savage|wicked city/i);
+    // The stills name people by what they do and wear, never by a look.
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /skin|dark-|darker|lighter|race/i
+    );
+  });
+
+  it("Light and darkness follows one light, never ties darkness to a people, and makes no second power of it", () => {
+    const f = filmFile("light-and-darkness");
+    expect(f.frames.map(fr => fr.verse?.ref)).toEqual([
+      "Genesis 1:3",
+      "Exodus 10:23",
+      "Exodus 13:21",
+      "Exodus 27:20",
+      "Isaiah 9:2",
+      "John 8:12",
+      "Revelation 22:5",
+    ]);
+    const t = text(f);
+    expect(t).toContain("light and darkness are not two equal powers");
+    expect(t).toContain(
+      "“The Light shines in the darkness, and the darkness has not overcome it.”"
+    );
+    // Darkness is night, water or shadow over a land: never a people.
+    expect(t).not.toMatch(
+      /dark(er)? (people|skin|race|nations?|hearts? of the Egyptians)|people of darkness|sons of darkness/i
+    );
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/skin|race/i);
+    // No date for the exodus, as in the other films.
+    expect(t).not.toMatch(/\b1[2-5]\d\d\b|\bBC\b/);
+  });
+
+  it("What about people who never heard? gives three answers the same room, takes no side, and says nothing of any person's end", () => {
+    const f = filmFile("never-heard");
+    const views = f.frames.slice(3, 6);
+    expect(views.map(fr => fr.id)).toEqual([
+      "hear-and-believe",
+      "his-work-reaches",
+      "everyone-meets",
+    ]);
+    for (const fr of views) {
+      // Each answer has its own picture, its own verse, and, for older
+      // readers, the hardest question it faces.
+      expect(fr.verse, fr.id).toBeTruthy();
+      expect(fr.older, fr.id).toContain("Its hardest question is");
+      expect(fr.younger, fr.id).not.toMatch(/\b(right|wrong|best|true) answer\b/i);
+    }
+    // No answer gets much more to say than another (older level).
+    const lengths = views.map(fr => fr.older.length);
+    expect(Math.max(...lengths) - Math.min(...lengths)).toBeLessThan(70);
+    expect(f.differ?.text).toMatch(/takes no side among them/);
+    expect(f.differ?.links?.map(l => l.href)).toEqual([
+      "/questions/religions/those-who-never-heard",
+      "/answers/what-about-those-who-never-heard",
+    ]);
+    const t = text(f);
+    expect(t).toContain(
+      "None of the three says that God condemns anyone for an accident of birth"
+    );
+    expect(t).toContain("He was shown who the Judge is.");
+    // Nothing on any person's or people's eternal state.
+    expect(captions(f)).not.toMatch(
+      /\b(is|are|was|were|will be|went|go|goes) (lost|damned|in hell|to hell|in heaven|to heaven|saved anyway)\b/i
+    );
+    expect(t).not.toMatch(/\bhell\b|\bdamn/i);
+    expect(f.frames[5].still).toContain("No one is drawn.");
+    // It touches death and the dead: a care line already on the site, whole.
+    expect(f.care).toBe(filmFile("life-to-come").care);
+    // Offered, through its own links, on the pages that set the views out.
+    const links = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/film-links.json"), "utf8")
+    ) as { pages: Record<string, string[]> };
+    expect(links.pages["/answers/what-about-those-who-never-heard"]).toContain(
+      "never-heard"
+    );
+    expect(
+      links.pages["/questions/religions/those-who-never-heard"]
+    ).toContain("never-heard");
+  });
+
+  it("Why did God let his temple be destroyed? gives the prophets' answer, blames no people, and calls no one's loss today a punishment", () => {
+    const f = filmFile("temple-destroyed");
+    const stop = JSON.parse(
+      fs.readFileSync(path.join(PUBLIC, "explorer/stops/exile.json"), "utf8")
+    ) as { care: string; story: { older: string[] } };
+    // It tells of a city burned and a people carried off: the stop's own care line, whole.
+    expect(f.care).toBe(stop.care);
+    const t = text(f);
+    // The one date is the stop's own, worded as the stop words it.
+    expect(stop.story.older.join(" ")).toContain(
+      "In 587 or 586 BC (historians give either year)"
+    );
+    expect(f.frames[4].older).toContain(
+      "In 587 or 586 BC (historians give either year)"
+    );
+    expect(
+      f.frames.map(fr => fr.younger).join(" ") + f.line.younger
+    ).not.toMatch(/\bBC\b|\bAD\b|\d{3}/);
+    expect(t.replace(/587 or 586 BC/g, "")).not.toMatch(
+      /\b\d{3,4} (BC|AD)\b|AD \d|\b70\b|Roman/
+    );
+    // Not every loss is a punishment, at both levels, in Jesus' own words.
+    expect(f.frames[5].older).toContain("But not every loss is a punishment.");
+    expect(f.frames[5].older).toContain(
+      "“Neither this man nor his parents sinned.”"
+    );
+    expect(f.frames[5].younger).toContain(
+      "But not every sad thing is a punishment."
+    );
+    expect(t).not.toMatch(
+      /deserved|God punished them|punished the Jews|your (sin|fault)|happens? to you because/i
+    );
+    // No people is blamed: the captions name kings, prophets and "the
+    // people", never "the Jews", and no nation of today.
+    expect(captions(f)).not.toMatch(/\bJews?\b|\bJewish\b|Israelis?\b|Iraq/);
+    expect(t).not.toMatch(/modern|today's (Israel|Jerusalem)|temple mount/i);
+    // The grief is kept, and the promise.
+    expect(t).toContain("The Bible does not treat the grief as small.");
+    expect(f.frames[6].verse?.ref).toBe("Jeremiah 31:33");
+    // No battle and no flame in any picture.
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /soldier|sword|spear|flame|fire|blood|bod(y|ies)/i
+    );
   });
 });

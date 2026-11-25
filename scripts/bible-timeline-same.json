@@ -1,0 +1,202 @@
+{
+  "about": "Timeline entries that tell of one event in more than one book page (client/public/bible/notes/<book>/intro.json, teaching.timeline). Read by scripts/lib/bible-explore.mjs for /study/timeline, which sets them side by side in each book's own words and says so when their dates are not worded alike. This file holds judgments only (which entries are the same event); it adds no words to the site. An entry is named by its book, its exact 'when', and a few words its 'what' holds. Only entries that plainly tell of the same event belong here; when unsure, leave it out.",
+  "groups": [
+    { "id": "hammurabi", "entries": [
+      { "book": "genesis", "when": "About 1754 BC", "has": "Hammurabi" },
+      { "book": "numbers", "when": "About 1750 BC", "has": "Hammurabi" } ] },
+    { "id": "exodus", "entries": [
+      { "book": "exodus", "when": "About 1446 BC, on the early date", "has": "Israel leaves Egypt" },
+      { "book": "exodus", "when": "1200s BC, on the later date", "has": "Israel leaves Egypt" },
+      { "book": "numbers", "when": "About 1446 BC, or the 1200s BC", "has": "exodus" },
+      { "book": "deuteronomy", "when": "About 1446 BC, or the 1200s BC", "has": "exodus" } ] },
+    { "id": "merneptah", "entries": [
+      { "book": "genesis", "when": "About 1208 BC", "has": "Merneptah" },
+      { "book": "exodus", "when": "About 1208 BC", "has": "Merneptah" },
+      { "book": "joshua", "when": "About 1208 BC", "has": "Merneptah" },
+      { "book": "judges", "when": "About 1208 BC", "has": "Merneptah" } ] },
+    { "id": "philistines-settle", "entries": [
+      { "book": "judges", "when": "The 1100s BC", "has": "Philistines settle" },
+      { "book": "1-samuel", "when": "The early 1100s BC", "has": "Philistines settle" } ] },
+    { "id": "saul-dies", "entries": [
+      { "book": "1-samuel", "when": "About 1010 BC", "has": "Mount Gilboa" },
+      { "book": "2-samuel", "when": "About 1010 BC", "has": "Mount Gilboa" } ] },
+    { "id": "david-dies", "entries": [
+      { "book": "2-samuel", "when": "About 970 BC", "has": "David dies" },
+      { "book": "1-kings", "when": "About 970 BC", "has": "David dies" } ] },
+    { "id": "temple-begun", "entries": [
+      { "book": "exodus", "when": "About 966 BC", "has": "Solomon begins the temple" },
+      { "book": "1-kings", "when": "About 966 BC", "has": "building of the temple begins" },
+      { "book": "psalms", "when": "Tenth century BC", "has": "Solomon builds the temple" } ] },
+    { "id": "kingdom-divides", "entries": [
+      { "book": "2-samuel", "when": "Around 931 BC", "has": "the kingdom splits" },
+      { "book": "1-kings", "when": "About 931 or 930 BC", "has": "the kingdom divides" } ] },
+    { "id": "mesha-stone", "entries": [
+      { "book": "numbers", "when": "The ninth century BC", "has": "Mesha" },
+      { "book": "deuteronomy", "when": "About 840 BC", "has": "Mesha" },
+      { "book": "joshua", "when": "About 840 BC", "has": "Mesha" },
+      { "book": "ruth", "when": "The 800s BC", "has": "Mesha" },
+      { "book": "1-kings", "when": "About 840 BC", "has": "Mesha" } ] },
+    { "id": "tel-dan", "entries": [
+      { "book": "1-samuel", "when": "The second half of the 800s BC", "has": "Tel Dan" },
+      { "book": "2-samuel", "when": "The second half of the 800s BC", "has": "Tel Dan" } ] },
+    { "id": "ketef-hinnom", "entries": [
+      { "book": "leviticus", "when": "About 600 BC", "has": "Ketef Hinnom" },
+      { "book": "numbers", "when": "About 600 BC", "has": "Ketef Hinnom" } ] },
+    { "id": "jerusalem-falls-to-babylon", "entries": [
+      { "book": "leviticus", "when": "587 or 586 BC", "has": "Jerusalem falls to Babylon" },
+      { "book": "2-samuel", "when": "587 or 586 BC", "has": "Babylon destroys Jerusalem" },
+      { "book": "psalms", "when": "587 or 586 BC", "has": "Babylon destroys Jerusalem" },
+      { "book": "hebrews", "when": "587 or 586 BC", "has": "destroy Jerusalem" },
+      { "book": "1-peter", "when": "587 or 586 BC", "has": "Babylon destroys Jerusalem" } ] },
+    { "id": "torah-in-greek", "entries": [
+      { "book": "genesis", "when": "From the 200s BC", "has": "translated into Greek" },
+      { "book": "exodus", "when": "From the 200s BC", "has": "translated into Greek" } ] },
+    { "id": "antiochus", "entries": [
+      { "book": "leviticus", "when": "About 167 BC", "has": "Antiochus IV" },
+      { "book": "2-thessalonians", "when": "167 BC", "has": "Antiochus IV" } ] },
+    { "id": "nash-papyrus", "entries": [
+      { "book": "exodus", "when": "Second or first century BC", "has": "Nash Papyrus" },
+      { "book": "deuteronomy", "when": "The second or first century BC", "has": "Nash Papyrus" } ] },
+    { "id": "jesus-born", "entries": [
+      { "book": "matthew", "when": "About 6 to 4 BC", "has": "Jesus is born in Bethlehem" },
+      { "book": "luke", "when": "Before 4 BC", "has": "Jesus is born in Bethlehem" } ] },
+    { "id": "archelaus-removed", "entries": [
+      { "book": "matthew", "when": "AD 6", "has": "Archelaus" },
+      { "book": "luke", "when": "AD 6", "has": "direct Roman rule" } ] },
+    { "id": "tiberius", "entries": [
+      { "book": "matthew", "when": "AD 14", "has": "Tiberius becomes emperor" },
+      { "book": "mark", "when": "AD 14", "has": "Tiberius becomes emperor" },
+      { "book": "luke", "when": "AD 14", "has": "Tiberius becomes emperor" } ] },
+    { "id": "john-the-baptist", "entries": [
+      { "book": "matthew", "when": "Late 20s", "has": "John the Baptist preaches" },
+      { "book": "mark", "when": "Late 20s", "has": "John the Baptist preaches" },
+      { "book": "luke", "when": "About AD 28 or 29", "has": "John preaches" } ] },
+    { "id": "crucifixion", "entries": [
+      { "book": "psalms", "when": "About AD 30", "has": "On the cross" },
+      { "book": "matthew", "when": "AD 30 or 33", "has": "crucified" },
+      { "book": "mark", "when": "AD 30 or 33", "has": "crucified" },
+      { "book": "luke", "when": "AD 30 or 33", "has": "crucifixion" },
+      { "book": "john", "when": "AD 30 or 33", "has": "crucifixion" },
+      { "book": "acts", "when": "AD 30 or 33", "has": "death and rising" },
+      { "book": "galatians", "when": "AD 30 or 33", "has": "death and rising" } ] },
+    { "id": "first-churches-in-galatia", "entries": [
+      { "book": "galatians", "when": "Late 40s", "has": "Pisidian Antioch" },
+      { "book": "2-timothy", "when": "Late 40s", "has": "Pisidian Antioch" } ] },
+    { "id": "claudius-expels", "entries": [
+      { "book": "acts", "when": "About AD 49, disputed", "has": "Claudius expels Jews" },
+      { "book": "romans", "when": "About AD 49, disputed", "has": "Claudius expels Jews" },
+      { "book": "1-corinthians", "when": "About AD 49, disputed", "has": "Claudius expels Jews" },
+      { "book": "hebrews", "when": "About AD 49", "has": "Claudius expels Jews" } ] },
+    { "id": "jerusalem-council", "entries": [
+      { "book": "galatians", "when": "About AD 48 to 50", "has": "The meeting in Jerusalem of Acts 15" },
+      { "book": "james", "when": "About AD 49", "has": "The council in Jerusalem" } ] },
+    { "id": "paul-meets-timothy", "entries": [
+      { "book": "1-timothy", "when": "About AD 49 or 50", "has": "Paul meets Timothy" },
+      { "book": "2-timothy", "when": "About AD 49 or 50", "has": "Paul meets Timothy" } ] },
+    { "id": "thessalonica-begins", "entries": [
+      { "book": "1-thessalonians", "when": "About AD 49 or 50", "has": "come to Thessalonica" },
+      { "book": "2-thessalonians", "when": "About AD 49 or 50", "has": "found the church in Thessalonica" } ] },
+    { "id": "first-thessalonians-written", "entries": [
+      { "book": "1-thessalonians", "when": "About AD 50 or 51", "has": "Paul writes 1 Thessalonians" },
+      { "book": "2-thessalonians", "when": "About AD 50 or 51", "has": "Paul writes 1 Thessalonians" } ] },
+    { "id": "corinth-begins", "entries": [
+      { "book": "1-corinthians", "when": "About AD 50 to 52", "has": "Paul in Corinth for a year and a half" },
+      { "book": "2-corinthians", "when": "About AD 50 to 52", "has": "Paul in Corinth for a year and a half" } ] },
+    { "id": "gallio", "entries": [
+      { "book": "acts", "when": "About AD 51 to 52", "has": "Gallio" },
+      { "book": "romans", "when": "About AD 51 to 52", "has": "Gallio" },
+      { "book": "1-corinthians", "when": "About AD 51 to 52", "has": "Gallio" },
+      { "book": "2-corinthians", "when": "About AD 51 to 52", "has": "Gallio" },
+      { "book": "1-thessalonians", "when": "About AD 51 to 52", "has": "Gallio" } ] },
+    { "id": "paul-in-ephesus", "entries": [
+      { "book": "1-corinthians", "when": "About AD 52 to 55", "has": "Paul teaches at Ephesus" },
+      { "book": "ephesians", "when": "The mid-50s", "has": "Paul in Ephesus" },
+      { "book": "colossians", "when": "The mid-50s", "has": "Paul teaches in Ephesus" },
+      { "book": "1-timothy", "when": "The mid-50s", "has": "in Ephesus" },
+      { "book": "philemon", "when": "The mid-50s", "has": "Paul in Ephesus" } ] },
+    { "id": "first-corinthians-written", "entries": [
+      { "book": "1-corinthians", "when": "About AD 53 to 55", "has": "Paul writes 1 Corinthians" },
+      { "book": "2-corinthians", "when": "About AD 53 to 55", "has": "Paul writes 1 Corinthians" } ] },
+    { "id": "three-months-in-greece", "entries": [
+      { "book": "romans", "when": "About AD 57", "has": "Paul writes Romans" },
+      { "book": "1-corinthians", "when": "About AD 57", "has": "three months in Greece" },
+      { "book": "2-corinthians", "when": "About AD 57", "has": "three months in Greece" },
+      { "book": "galatians", "when": "About AD 57", "has": "Paul writes Romans" } ] },
+    { "id": "paul-at-caesarea", "entries": [
+      { "book": "ephesians", "when": "About AD 57 to 59", "has": "Caesarea" },
+      { "book": "philippians", "when": "About AD 57 to 59", "has": "Caesarea" },
+      { "book": "colossians", "when": "About AD 57 to 59", "has": "Caesarea" },
+      { "book": "philemon", "when": "About AD 57 to 59", "has": "Caesarea" } ] },
+    { "id": "laodicea-earthquake", "entries": [
+      { "book": "colossians", "when": "About AD 60", "has": "Laodicea" },
+      { "book": "revelation", "when": "About AD 60", "has": "Laodicea" } ] },
+    { "id": "paul-in-rome", "entries": [
+      { "book": "luke", "when": "About AD 60 to 62", "has": "under guard in Rome" },
+      { "book": "acts", "when": "About AD 60 to 62", "has": "under guard in Rome" },
+      { "book": "romans", "when": "About AD 60 to 62", "has": "Paul reaches Rome" },
+      { "book": "ephesians", "when": "About AD 60 to 62", "has": "under guard in Rome" },
+      { "book": "philippians", "when": "About AD 60 to 62", "has": "under guard in Rome" },
+      { "book": "colossians", "when": "About AD 60 to 62", "has": "under guard in Rome" },
+      { "book": "1-timothy", "when": "About AD 60 to 62", "has": "under guard in Rome" },
+      { "book": "2-timothy", "when": "About AD 60 to 62", "has": "under guard in Rome" },
+      { "book": "titus", "when": "About AD 60 to 62", "has": "under guard in Rome" },
+      { "book": "philemon", "when": "About AD 60 to 62", "has": "under guard in Rome" } ] },
+    { "id": "james-stoned", "entries": [
+      { "book": "acts", "when": "About AD 62", "has": "James, the brother of Jesus" },
+      { "book": "james", "when": "About AD 62", "has": "James the brother of Jesus stoned" } ] },
+    { "id": "fire-of-rome", "entries": [
+      { "book": "mark", "when": "AD 64", "has": "Fire burns much of Rome" },
+      { "book": "acts", "when": "July 64", "has": "great fire of Rome" },
+      { "book": "romans", "when": "July 64", "has": "great fire of Rome" },
+      { "book": "2-timothy", "when": "July 64", "has": "great fire of Rome" },
+      { "book": "1-peter", "when": "AD 64", "has": "great fire of Rome" },
+      { "book": "2-peter", "when": "AD 64", "has": "great fire of Rome" },
+      { "book": "revelation", "when": "AD 64", "has": "great fire of Rome" } ] },
+    { "id": "temple-destroyed", "entries": [
+      { "book": "exodus", "when": "AD 70", "has": "temple in Jerusalem is destroyed" },
+      { "book": "leviticus", "when": "AD 70", "has": "destroy the temple" },
+      { "book": "luke", "when": "AD 70", "has": "destroy Jerusalem" },
+      { "book": "john", "when": "AD 70", "has": "destroy Jerusalem" },
+      { "book": "acts", "when": "AD 70", "has": "destroy Jerusalem" },
+      { "book": "2-thessalonians", "when": "AD 70", "has": "destroy the temple" },
+      { "book": "hebrews", "when": "AD 70", "has": "destroy the temple" },
+      { "book": "1-peter", "when": "AD 70", "has": "destroys Jerusalem" },
+      { "book": "1-john", "when": "AD 70", "has": "destroy Jerusalem" },
+      { "book": "2-john", "when": "AD 70", "has": "destroy Jerusalem" },
+      { "book": "3-john", "when": "AD 70", "has": "destroy Jerusalem" },
+      { "book": "revelation", "when": "AD 70", "has": "destroy Jerusalem" } ] },
+    { "id": "pastorals-later-date", "entries": [
+      { "book": "1-timothy", "when": "About AD 80 to 110, on another view", "has": "Pastoral Letters" },
+      { "book": "2-timothy", "when": "About AD 80 to 110, on another view", "has": "Pastoral Letters" },
+      { "book": "titus", "when": "About AD 80 to 110, on another view", "has": "Pastoral Letters" } ] },
+    { "id": "clement-on-paul", "entries": [
+      { "book": "1-timothy", "when": "About AD 96", "has": "limit of the west" },
+      { "book": "2-timothy", "when": "About AD 96", "has": "limit of the west" } ] },
+    { "id": "pliny-and-trajan", "entries": [
+      { "book": "1-timothy", "when": "About AD 112", "has": "Pliny" },
+      { "book": "1-peter", "when": "About AD 110 to 112", "has": "Pliny" } ] },
+    { "id": "mishnah", "entries": [
+      { "book": "leviticus", "when": "About AD 200", "has": "The Mishnah is compiled" },
+      { "book": "numbers", "when": "About AD 200", "has": "The Mishnah is compiled" },
+      { "book": "deuteronomy", "when": "About AD 200", "has": "The Mishnah is compiled" } ] },
+    { "id": "p72", "entries": [
+      { "book": "2-peter", "when": "The 200s or 300s", "has": "P72" },
+      { "book": "jude", "when": "The 200s or 300s", "has": "P72" } ] },
+    { "id": "great-codices", "entries": [
+      { "book": "matthew", "when": "300s", "has": "Codex Sinaiticus and Codex Vaticanus" },
+      { "book": "mark", "when": "300s", "has": "Codex Sinaiticus and Codex Vaticanus" } ] },
+    { "id": "athanasius-list", "entries": [
+      { "book": "james", "when": "367", "has": "Athanasius" },
+      { "book": "2-peter", "when": "367", "has": "Athanasius" },
+      { "book": "2-john", "when": "367", "has": "Athanasius" },
+      { "book": "3-john", "when": "367", "has": "Athanasius" } ] },
+    { "id": "noth", "entries": [
+      { "book": "joshua", "when": "1943", "has": "Martin Noth" },
+      { "book": "judges", "when": "1943", "has": "Martin Noth" },
+      { "book": "1-samuel", "when": "1943", "has": "Martin Noth" },
+      { "book": "2-samuel", "when": "1943", "has": "Martin Noth" } ] },
+    { "id": "khirbet-qeiyafa", "entries": [
+      { "book": "1-samuel", "when": "From 2007", "has": "Khirbet Qeiyafa" },
+      { "book": "2-samuel", "when": "From 2007", "has": "Khirbet Qeiyafa" } ] }
+  ]
+}

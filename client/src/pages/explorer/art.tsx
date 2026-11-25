@@ -722,6 +722,60 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M30,66l-4,10M46,66l-4,10M62,66l-4,10" />
     </>
   ),
+  /* A blessing for all nations: three people of different dress side by side, one gold star over them. */
+  "all-nations": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M14,84C14,62 18,54 26,54C34,54 38,62 38,84Z" tone="b" off={1} />
+      <Shape d="M38,84C38,56 43,46 50,46C57,46 62,56 62,84Z" tone="c" off={1} />
+      <Shape d="M62,84C62,62 66,54 74,54C82,54 86,62 86,84Z" tone="g" off={1} />
+      <Shape d="M20,46a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM44,38a6,6 0 1,0 12,0a6,6 0 1,0 -12,0ZM68,46a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" off={0.8} />
+      <path className="pl-m" d="M50,6l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
+      <path className="pl-l" d="M50,6l3,7l7,3l-7,3l-3,7l-3,-7l-7,-3l7,-3Z" />
+    </>
+  ),
+  /* Light and darkness: a small clay lamp on dark ground, its flame gold, rays above it. */
+  "light-and-darkness": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path fill={h} d="M8,8H92V84H8Z" />
+      <path className="pl-paper" d="M50,10a30,30 0 1,0 0.1,0Z" />
+      <path className="pl-f" d="M50,14V22M32,22l5,6M68,22l-5,6M24,40h8M76,40h-8" />
+      <Shape d="M26,70C26,80 38,84 50,84C64,84 76,80 78,70L70,68C60,64 38,62 26,70Z" tone="c" off={1} />
+      <path className="pl-m" d="M50,62C58,52 60,44 54,32C44,42 42,52 50,62Z" />
+      <path className="pl-l" d="M50,62C58,52 60,44 54,32C44,42 42,52 50,62Z" />
+    </>
+  ),
+  /* What about people who never heard?: a small far house on a hill, a long road up to it, a gold sun. */
+  "never-heard": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M8,84V66C30,54 60,50 92,58V84Z" tone="g" off={1} />
+      <Shape d="M60,54V40H80V54Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M57,40H83M68,54V46h5v8" />
+      <path className="pl-f" d="M14,84C30,76 40,74 46,68C52,62 60,60 66,55M26,84C40,78 50,76 54,70" />
+      <path className="pl-m" d="M18,26a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M18,26a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-f" d="M27,10V5M27,42V47M11,26H6M43,26H48" />
+    </>
+  ),
+  /* Why did God let his temple be destroyed?: two pillars, one standing and one broken, a gold dawn between them. */
+  "temple-destroyed": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M36,84a14,14 0 0,1 28,0Z" />
+      <path className="pl-l" d="M36,84a14,14 0 0,1 28,0" />
+      <path className="pl-f" d="M50,62V54M34,68l-5,-5M66,68l5,-5" />
+      <Shape d="M18,84V24H32V84Z" tone="c" off={1} />
+      <path className="pl-l" d="M14,24H36M14,18H36" />
+      <Shape d="M68,84V56L74,48L78,58L82,50V84Z" tone="c" off={1} />
+      <Shape d="M62,84L88,78L90,84Z" off={0.8} />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
