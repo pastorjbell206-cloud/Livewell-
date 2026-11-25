@@ -20734,3 +20734,23 @@ Cut in chapter 11: the deep note's lines set beside Jesus (Luke 6:38 beside vers
 | Isaiah 50:4 (its clause); 1 Peter 3:10 (the quoted words) | 24-28 | the chapter data's cross-references for 12:25 (Isaiah 50:4); 1-peter/plain/3.json (Peter quoting the psalm); BSB | Repository; BSB text |
 
 Cut in chapter 12: the deep note's lines to Christ (Matthew 12:34-37 joined to these sayings; John 1:14 and 14:6 beside verse 19; Mark 13:31; the Gospels' healing word beside verse 18); Jesus as an example in the hard note (left to the Gospels). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 13 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 13:1; 13:3; 13:4; 13:7; 13:8; 13:9; 13:10; 13:11 | 1-11 | BSB | BSB text |
+| Time added to the picture; thinking in generations; nephesh across verses 2-4; verse 8 and the costs of wealth, poverty not praised; the clay lamp and a household's end (20:20; 24:20) | 1-11 | proverbs/13.json `story`, `literary`, `cultural` | Repository |
+| Psalm 37:16 | 1-11 | the chapter data's cross-references (Psalm 37:16 by way of 12:27, and 13:11); BSB | BSB text |
+| 13:12; 13:14; 13:15; 13:17; 13:18; 13:19 (its first clause); 13:20 | 12-20 | BSB | BSB text |
+| Verse 12's honesty about longing; the tree of life; verse 19 returning to it; couriers and envoys; the company that shapes a person | 12-20 | proverbs/13.json `literary`, `cultural` | Repository |
+| Psalm 119:63; 1 Corinthians 15:33 (the quoted saying) | 12-20 | the chapter data's cross-references for 13:20; BSB | Repository; BSB text |
+| 13:21; 13:22; 13:23; 13:24; 13:25 | 21-25 | BSB | BSB text |
+| Land held by families (Leviticus 25:23); Naboth (1 Kings 21:3); grandchildren and a family's place; verse 23 and injustice by neighbors, courts and creditors; Amos, Isaiah and Micah (Isaiah 5:8; Micah 2:2); poverty not always one's own fault; the son of verse 1 become the father of verse 24; shevet and its range (10:13; 26:3) | 21-25 | proverbs/13.json `historical`, `literary`, `words` (shevet) | Repository |
+| Isaiah 5:8; Ephesians 6:4 | 21-25 | proverbs/13.json `historical` (Isaiah 5:8), `hard` (Ephesians 6:4); BSB | Repository; BSB text |
+| The hard note: two readings, each fairly; measured physical discipline given calmly, never in anger or to injure, with 22:15, 23:13-14 and 29:15; the rod as correction in general, adult fools, the methods of its culture, consequences, teaching and relationship, Ephesians 6:4 and Colossians 3:21; dividing faithful parents without dividing anyone from Christ; no side; what both agree; the parent who never corrects; anger or injury is not discipline; no warrant to harm a child; the Bible condemning injury and abuse | 21-25 `hard` | proverbs/13.json `hard`, `words` (shevet); needs/parenting.json `faq` (Is spanking biblical?); wisdom/deep/parenting-struggles.json `misread`, `differ` | Repository; each reading in its holders' terms; no side |
+| Care line (‘Abuse of a child is a crime...’ to ‘...lists places to turn.’) | 21-25 `hard` | colossians/plain/3.json (20-21), ephesians/plain/6.json (1-4) and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+
+Cut in chapter 13: the deep note's lines to Christ (2 Corinthians 1:20 and Revelation 22:2 beside verse 12; Mark 10:45 beside the ransom of verse 8; Hebrews 12 is drawn by the New Testament from Proverbs 3, not this verse, and is left to chapter 3); the deep note's mention of modern research on physical punishment (no source named in the repository).
