@@ -72,14 +72,24 @@ describe("tonightOn", () => {
     // Advent Sunday and Monday, before the calendar starts on December 1 (the walk's polish, 2026-11-23).
     expect(tonightOn("2026-11-29")).toBeNull();
     expect(tonightOn("2026-11-30")).toBeNull();
-    // The day after Christmas, still in Advent's last week.
-    expect(tonightOn("2026-12-26")).toBeNull();
-    // A year with five such nights after Christmas (December 25, 2028 is a Monday).
-    for (const night of ["2028-12-26", "2028-12-30"]) expect(tonightOn(night)).toBeNull();
-    expect(tonightOn("2028-12-31")).toEqual({ id: weekOf("2028-12-31").devotion });
+    expect(tonightOn("2026-12-26")?.set).toBeUndefined();
   });
 
-  it("names a devotion page that exists on every night of the map but the Advent weeks' nights outside the calendar", () => {
+  it("begins the next week's devotion early on the nights after Christmas in Advent's last week", () => {
+    // The day after Christmas 2026, a Saturday, takes the devotion of the week of December 27.
+    expect(tonightOn("2026-12-26")).toEqual({ id: weekOf("2026-12-27").devotion });
+    // A year with five such nights (December 25, 2028 is a Monday): each takes the week of December 31's.
+    for (const night of ["2028-12-26", "2028-12-27", "2028-12-28", "2028-12-29", "2028-12-30", "2028-12-31"]) {
+      expect(tonightOn(night)).toEqual({ id: weekOf("2028-12-31").devotion });
+    }
+    // No later week moves.
+    expect(tonightOn("2029-01-07")).toEqual({ id: weekOf("2029-01-07").devotion });
+    expect(weekOf("2029-01-07").devotion).not.toBe(weekOf("2028-12-31").devotion);
+    // Christmas Day itself keeps its reading.
+    expect(tonightOn("2028-12-25")?.id).toBe("advent-25");
+  });
+
+  it("names a devotion page that exists on every night of the map but the Advent weeks' nights before December 1", () => {
     const missing: string[] = [];
     const day = new Date(`${FAMILY_YEAR_FROM}T12:00:00Z`);
     const last = new Date(`${FAMILY_YEAR_THROUGH}T12:00:00Z`);
@@ -87,10 +97,10 @@ describe("tonightOn", () => {
     while (day <= last) {
       const iso = day.toISOString().slice(0, 10);
       const t = tonightOn(iso);
-      // In an Advent week, a night with no reading of its own is outside December 1 to 25.
+      // In an Advent week, the only nights with no reading are the ones before the calendar's December 1.
       const week = FAMILY_WEEKS[Math.floor((Date.parse(`${iso}T12:00:00Z`) - Date.parse(`${FAMILY_YEAR_FROM}T12:00:00Z`)) / 86_400_000 / 7)];
-      const outsideCalendar = week?.set === "advent" && !(iso.slice(5, 7) === "12" && Number(iso.slice(8)) <= 25);
-      if (outsideCalendar ? t !== null : !t || !IDS.has(t.id)) missing.push(`${iso}: ${t?.id ?? "nothing"}`);
+      const beforeCalendar = week?.set === "advent" && iso.slice(5) < "12-01";
+      if (beforeCalendar ? t !== null : !t || !IDS.has(t.id)) missing.push(`${iso}: ${t?.id ?? "nothing"}`);
       nights += 1;
       day.setUTCDate(day.getUTCDate() + 1);
     }
