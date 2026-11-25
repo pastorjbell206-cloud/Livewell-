@@ -1,5 +1,9 @@
+import fs from "node:fs";
+import path from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { HELD_ID, WAIT_CLASS, holdPrerenderedPage, pageIsReady } from "./prerender-hold";
+
+const ROOT = path.resolve(__dirname, "../../..");
 
 function setPage(withText: boolean) {
   document.body.innerHTML = `<div id="root"><div id="lw-shell">
@@ -44,6 +48,16 @@ describe("holdPrerenderedPage", () => {
     expect(document.getElementById(HELD_ID)).toBe(shell);
     expect(shell.nextElementSibling).toBe(root);
     expect(root.classList.contains(WAIT_CLASS)).toBe(true);
+  });
+
+  it("is written before #root on /downloads, so its first shelf of covers is painted once", () => {
+    // Lifted out of #root when the app started, the shelf was painted again,
+    // and that second paint, after the app's code, was the largest
+    // (Lighthouse on a phone: 4.3 s, 2026-11-25).
+    const src = fs.readFileSync(path.join(ROOT, "scripts/prerender-heads.mjs"), "utf8");
+    const stays = src.match(/const SHELL_STAYS_IN_ROOT = new Set\((\[[^\]]*\])\)/);
+    expect(stays).not.toBeNull();
+    expect(JSON.parse(stays![1])).not.toContain("/downloads");
   });
 
   it("never holds the front page, which has its own static hero", () => {

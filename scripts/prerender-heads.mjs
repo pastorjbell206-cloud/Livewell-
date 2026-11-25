@@ -1452,7 +1452,7 @@ function shellBeforeRoot(html) {
   return `${html.slice(0, at)}${shell}\n    ${open}</div>${html.slice(rootClose + "</div>".length)}`;
 }
 /** Pages other work is changing as this lands (2026-11-23); the shell still moves there at run time, as before. */
-const SHELL_STAYS_IN_ROOT = new Set(["/start", "/downloads"]);
+const SHELL_STAYS_IN_ROOT = new Set(["/start"]);
 
 /**
  * The Study Bible (client/public/bible/*): every book, every chapter, the
