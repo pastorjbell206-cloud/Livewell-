@@ -23676,3 +23676,23 @@ Cut in chapter 7: the deep note's line that the gospel announces the undoing of 
 | Isaiah 7:23 (its clause); Song of Songs 1:6 (its clause) | 8-14 | song-of-solomon/8.json `historical` (Isaiah 7:23); BSB | Repository; BSB text |
 
 Cut in chapter 8: the deep note's lines to Christ (Ephesians 5:25 and Romans 8:38-39 beside love as strong as death; Ephesians 1:13 and the Spirit's seal beside verse 6; the note calls them connections of theme). The explicit lines (8:1, 8:5b, 8:8a, 8:10a) are told with restraint. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 41 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/41.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 41:1-7 (41:4's last words after the dash; first drafted across the dash and corrected) | 1-7 | BSB | BSB text |
+| The public test; Cyrus named in 44 and 45; the Medes and Persians in the 550s, Lydia in the 540s, Babylon in 539; the gate court; the frightened craftsmen | 1-7 | isaiah/41.json `story`, `cultural`; bible/guides/empires.json (Cyrus) | Repository |
+| Revelation 1:17 (inside the BSB's speech marks) | 1-7 `later` | BSB | BSB text |
+| 41:8-20 (41:8 before its dash) | 8-20 | BSB | BSB text |
+| Servant first used here, of the whole people; Abraham the friend; the worm; the threshing sledge; the desert road | 8-20 | isaiah/41.json `story`, `cultural` | Repository |
+| James 2:23 (its clause); 2 Chronicles 20:7 (its clause) | 8-20 `later` | BSB | BSB text; James's own words |
+| 41:21-29 (41:25 paraphrased around its dash) | 21-29 | BSB | BSB text |
+| Prediction as the test; Babylonian divination; the consecrated image; the silence of the idols; Cyrus from the north and east (an unsourced claim about his armies' route narrowed before commit) | 21-29 | isaiah/41.json `cultural`, `hard` | Repository |
+| Isaiah 46:10 (its first sentence) | 21-29 `later` | BSB | BSB text |
+| The hard note: the deity in the image; the claim attacked at its root; silence; Israel's own leaders; 45:22; no leave for contempt toward people of other faiths | 21-29 `hard` | isaiah/41.json `hard`; the brief | Repository |
+| Psalm 115:5 (its clause), added so the passage's `later` names a book other than Isaiah | 21-29 `later` | BSB | BSB text |
+
+Cut in chapter 41: nothing. No care line is needed in this chapter.
