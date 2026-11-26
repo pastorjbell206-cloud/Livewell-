@@ -24823,3 +24823,22 @@ Every claim in `client/public/bible/notes/ezekiel/intro.json`, field `teaching`.
 | Go deeper: nine pages | deeper | bible/guides (reading-prophets, reading-apocalyptic, empires, kings-of-israel-and-judah); bible/doctrines.json (The Glory of God; Exile and Restoration; Tabernacle, Temple, and God's Presence; New Birth); /help/abuse | Repository; every page live |
 
 Cut from the book page: John 7:37-39 and John 1:14 as fulfillments of Ezekiel, which the New Testament does not draw from Ezekiel (left out, with John 10 kept only as a reading).
+
+## The plain notes on Ezekiel 1 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A priest among the exiles: the text paraphrased; quoted clauses at verses 1, 2, 3 | 1-3 | BSB | BSB text |
+| Background in `hearers` | 1-3 | ezekiel/1.json `historical`, `cultural`, `literary` | Repository |
+| Later: Numbers 4:3; Jeremiah 29:4-7 | 1-3 `later` | BSB | BSB text |
+| The storm, the living creatures and the wheels: the text paraphrased; quoted clauses at verses 4, 5-6, 10, 12-14, 16, 20, 24 | 4-25 | BSB | BSB text |
+| Background in `hearers` | 4-25 | ezekiel/1.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 19:16; Revelation 4:6-7 | 4-25 `later` | BSB | BSB text |
+| The likeness of the glory of the LORD: the text paraphrased; quoted clauses at verses 26, 27, 28 | 26-28 | BSB | BSB text |
+| Background in `hearers` | 26-28 | ezekiel/1.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 24:10; Genesis 9:13 | 26-28 `later` | BSB | BSB text |
+| The hard note: What exactly did Ezekiel see, and how should a modern reader picture it? The readings in their holders' terms | 26-28 `hard` | ezekiel/1.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 1: the deep note's lines to John 1:14 and 18, 2 Corinthians 4:6 and Revelation 1, which the New Testament does not draw from Ezekiel 1; the figure on the throne is left as a Christian reading. Irenaeus's four faces and four Gospels, left out.
