@@ -1809,6 +1809,74 @@
       "book": "1-john"
     },
     {
+      "slug": "book-leviticus",
+      "title": "Leviticus: living near a holy God",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of how God's people could live near him: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Leviticus as a whole book: the question it answers, six parts, gifts brought near, holy and clean, the Day of Atonement, love of neighbor, and where to begin."
+      },
+      "mark": "book-leviticus",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "leviticus"
+    },
+    {
+      "slug": "book-numbers",
+      "title": "Numbers: forty years in the wilderness",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a long walk through the desert, with God leading the way: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Numbers as a whole book: two generations, God at the center of the camp, the refusal at Kadesh, Balaam's blessing, the new generation, and where to begin."
+      },
+      "mark": "book-numbers",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "numbers"
+    },
+    {
+      "slug": "book-deuteronomy",
+      "title": "Deuteronomy: love the LORD with all your heart",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of Moses saying goodbye to God's people: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Deuteronomy as a whole book: Moses' farewell, three addresses, the Shema, chosen in love, laws that take the side of the weak, the call to choose life, and where to begin."
+      },
+      "mark": "book-deuteronomy",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "deuteronomy"
+    },
+    {
+      "slug": "book-2-samuel",
+      "title": "2 Samuel: the king and the promise",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of King David, God's great promise, and a family torn apart: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "2 Samuel as a whole book: the highest and most honest picture of a king, a crown not seized, the promise of a house, Nathan's word, the sword in David's house, and where to begin."
+      },
+      "mark": "book-2-samuel",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": [],
+      "book": "2-samuel"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

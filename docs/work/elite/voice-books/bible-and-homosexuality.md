@@ -359,6 +359,62 @@ All fourteen files were edited (the introduction, twelve chapters and the conclu
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
+## Whole read (2026-11-26)
+
+The first pass, recorded above, recast every dash by a fixed rule and judged each proposal in its own sentence. This second pass read every chapter whole, as the first four books were read, in the text as the rule left it, with each place the rule had changed marked in the reading copy. The edits are punctuation and capital letters only: no word was added, removed or replaced. The fact diff (`/home/user/vb/factdiff.py`, against the typesetter's original text, ed5c8080) now also holds the book's words equal to the original's, counted as a list, and it passes on all fourteen files.
+
+**On a contested subject the rule was narrower still.** Every statement of the traditional position and of the affirming position (Brownson, Vines, Boswell, Side B, Sprinkle) keeps its punctuation as the first pass left it unless that punctuation was broken. Where the book sets the two sides in parallel sentences, both took the same change or neither did:
+
+- "The traditionalist says no: …" / "The affirming interpreter says yes: …" (chapter 2);
+- "The affirming tradition says no: …" / "The traditional position says yes: …" (chapter 7);
+- the paired "Not: …" sentences in chapter 1, which now both take a semicolon.
+
+Chapter 6, the affirming case at full strength, took no edit at all.
+
+What the whole read changed, in 53 edits:
+
+- **A semicolon or comma before a gloss or a list.** It is now a colon ("the third way: churches that hold a traditional sexual ethic …"; "the message has been clear: if your child is gay …").
+- **A comma that joined two sentences.** It is now a semicolon or a colon ("is not the first conversation; that is a later conversation").
+- **An aside the rule left in bare commas,** which read as a run-on. It now takes brackets: "why does Leviticus prohibit same-sex male behavior (note that female same-sex behavior is not addressed in the same way), and what do we do …" (chapter 3); "once a right is recognized (access to public accommodations), you cannot …" (chapter 10).
+- **A closing bracket that needed a comma after it** (chapters 2, 5, 9 and 10).
+- **Nothing near a sentence about suicide, conversion therapy or a family's rejection.** None of these was touched, beyond the plain repairs listed in the table.
+
+Five pairs:
+
+1. Chapter 3. Before: "There is a larger question underneath the vocabulary: why does Leviticus prohibit same-sex male behavior, note that female same-sex behavior is not addressed in the same way, and what do we do with Old Testament law codes as Christians?" After: "… why does Leviticus prohibit same-sex male behavior (note that female same-sex behavior is not addressed in the same way), and what do we do with Old Testament law codes as Christians?"
+2. Chapter 2. Before: "The traditionalist says no; the created design stands regardless of how people experience orientation. The affirming interpreter says yes, without the category of orientation, the ancient author was not addressing the modern question." After: "The traditionalist says no: the created design stands … The affirming interpreter says yes: without the category of orientation, …"
+3. Chapter 8. Before: "Not always explicitly, but the message has been clear, if your child is gay, you are responsible for getting them to repent …" After: "… but the message has been clear: if your child is gay, …"
+4. Chapter 10. Before: "Different states have answered differently, some have passed Religious Freedom Restoration Acts that provide broad exemptions, while others have interpreted civil rights law more strictly." After: "Different states have answered differently: some have passed …"
+5. Chapter 12. Before: "Some churches are beginning to explore what might be called the "third way", churches that hold a traditional sexual ethic …" After: "… the "third way": churches that hold a traditional sexual ethic …"
+
+The counts below are for his running prose, the rule-pass text against the text now. Semicolons, colons and brackets are counted outside quotations.
+
+| Chapter | Words | Edits | Semicolons | Colons | Brackets | Fact diff |
+|---|---|---|---|---|---|---|
+| The Conversation the Church Keeps Getting Wrong | 3,726 | 1 | 27 → 26 | 15 → 16 | 5 → 5 | PASS |
+| What the Bible Actually Says About Homosexuality | 3,840 | 3 | 33 → 34 | 46 → 48 | 9 → 9 | PASS |
+| Sodom and Gomorrah | 2,931 | 5 | 28 → 26 | 17 → 21 | 7 → 7 | PASS |
+| Leviticus 18 and 20 | 2,223 | 5 | 22 → 19 | 23 → 25 | 1 → 2 | PASS |
+| Romans 1:26-27 Explained | 3,311 | 4 | 36 → 33 | 36 → 40 | 3 → 3 | PASS |
+| Arsenokoitai | 2,690 | 4 | 16 → 16 | 24 → 24 | 9 → 9 | PASS |
+| The Affirming Theology Case | 2,911 | 0 | 38 → 38 | 17 → 17 | 6 → 6 | PASS |
+| The Traditional Theology Case | 3,915 | 3 | 40 → 40 | 31 → 33 | 9 → 9 | PASS |
+| The Church's Catastrophic Failure | 2,897 | 4 | 20 → 22 | 21 → 23 | 2 → 2 | PASS |
+| Can You Be Gay and Christian? | 2,794 | 4 | 30 → 30 | 17 → 19 | 3 → 3 | PASS |
+| Same-Sex Marriage and the Law | 2,748 | 9 | 28 → 28 | 16 → 22 | 2 → 3 | PASS |
+| What to Say When Someone You Love Comes Out | 3,822 | 2 | 33 → 33 | 30 → 31 | 4 → 4 | PASS |
+| Building a Church That Tells the Truth and Loves Like Jesus | 3,994 | 8 | 30 → 29 | 27 → 34 | 8 → 8 | PASS |
+| The Table Is Bigger Than the Argument | 1,706 | 1 | 19 → 19 | 12 → 13 | 0 → 0 | PASS |
+| **All 14** | 43,508 | 53 | 400 → 393 | 332 → 366 | 68 → 70 | |
+
+The files were rebuilt with `node scripts/build-book-files.mjs bible-and-homosexuality --verify`. Still 167 pages, so `client/src/data/ebooks.ts` is unchanged. The EPUB carries exactly the source folder's text (45,183 words compared, no difference), and the PDF's pages carry it character for character (233,813 against 233,813). The page with the repaired Leviticus question (page 40 of the book, page 48 of the file) was looked at as an image.
+
+Noticed in the whole read and not changed; add them to the list below:
+
+- Chapter 12 says Bridgetown Church in Portland is "under the leadership of Keith Giles". Bridgetown's pastors have been John Mark Comer and, after him, Tyler Staton, so the name needs checking, and so does the account of the church's practice that follows.
+- Chapter 11 recommends "the Evangelical Council for the Homosexuality" for families who hold traditional theology. No organisation of that name is known; the sentence needs the real name or should come out.
+- Chapter 2 gives "Roy Gagnon" where chapter 1 has Robert Gagnon. This adds to item 1 below.
+
 ## For James: things that look wrong, none of them changed
 
 The chapters were not read whole for this list. It comes from reading every block quotation against its reference, every scholar's name where it occurs, and searches for statements of his ministry, statistics and studies. In a book on a contested subject these matter more than usual: a reader on either side who finds a scholar misnamed will stop trusting the steelman.
