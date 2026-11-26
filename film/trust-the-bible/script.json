@@ -1,0 +1,84 @@
+{
+  "title": "Can you trust the Bible?",
+  "note": "Written fresh on 2026-11-26 at James's word: \"I want you to have liberty to write the scripts. You don't have to copy verbatim what's on the website.\" Not recorded. Every fact is listed with where to check it in facts.md beside this file. Scripture is the Berean Standard Bible, copied from client/public/bible/text/. Field names and `gap` follow James's description of the Gather scripts; match them to film/beliefs/script.json on the Mac.",
+  "page": "/books/the-reliability-of-scripture",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "telephone",
+      "kicker": "The objection",
+      "level": 0.2,
+      "lines": [
+        "You've probably heard it. The Bible was copied by hand for so long that nobody knows what it first said.",
+        "Like a game of telephone."
+      ]
+    },
+    {
+      "id": "copies",
+      "kicker": "Not one line. Thousands.",
+      "level": 0.35,
+      "lines": [
+        "But telephone is one whisper passed down one line.",
+        "The Bible was copied in many places and many languages, and thousands of those copies still exist.",
+        "So we can lay them side by side and see exactly where they differ."
+      ]
+    },
+    {
+      "id": "scrolls",
+      "kicker": "1947, by the Dead Sea",
+      "level": 0.55,
+      "lines": [
+        "In 1947, shepherds found clay jars in a cave near the Dead Sea.",
+        "Inside was a scroll of Isaiah about a thousand years older than any Hebrew copy we had.",
+        "A thousand years of copying by hand. Small differences in spelling and wording. The same book."
+      ]
+    },
+    {
+      "id": "stone",
+      "kicker": "1993, northern Israel",
+      "level": 0.7,
+      "lines": [
+        "Then there's the ground itself. For years, some scholars said King David was only a legend.",
+        "In 1993, archaeologists dug up a broken stone. Carved on it: the House of David."
+      ]
+    },
+    {
+      "id": "limit",
+      "kicker": "What evidence can't do",
+      "level": 0.85,
+      "lines": [
+        "None of this proves that God has spoken.",
+        "Evidence can show you the words are old and the history is real. It can't make you trust the one they're about."
+      ]
+    },
+    {
+      "id": "claim",
+      "kicker": "What it says about itself",
+      "level": 0.9,
+      "lines": [
+        "The Bible makes its own claim, and it's a big one.",
+        "All Scripture is God-breathed."
+      ],
+      "scripture": {
+        "reference": "2 Timothy 3:16",
+        "translation": "Berean Standard Bible",
+        "text": "All Scripture is God-breathed",
+        "spoken": true
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "So bring your hardest questions. This book has been answering them for a long time.",
+        "Then read it for yourself."
+      ],
+      "titleCard": [
+        "Bring your hardest questions.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

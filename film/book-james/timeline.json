@@ -1,0 +1,162 @@
+{
+ "length": 135.1,
+ "chapters": [
+  {
+   "id": "sayings",
+   "kicker": "Sharp, practical sayings",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 19.86,
+   "lines": [
+    {
+     "text": "James reads less like an argument than a string of sharp, practical sayings from a pastor who has watched faith go soft.",
+     "start": 2.6,
+     "end": 9.88
+    },
+    {
+     "text": "The church has long held that its writer was the brother of Jesus, who once did not believe and became a leader in Jerusalem.",
+     "start": 10.56,
+     "end": 18.96
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 19.06,
+   "end": 37.8,
+   "lines": [
+    {
+     "text": "Look for threads rather than a tidy outline: trials, wisdom, wealth, speech, faith and deeds, taken up again and again from new angles.",
+     "start": 19.96,
+     "end": 29.62
+    },
+    {
+     "text": "It sounds like Proverbs, and still more like the Sermon on the Mount.",
+     "start": 30.2,
+     "end": 33.48
+    },
+    {
+     "text": "Be doers of the word, and not hearers only.",
+     "start": 34.18,
+     "end": 36.9
+    }
+   ]
+  },
+  {
+   "id": "trials",
+   "kicker": "Watch for: trials",
+   "level": 0.5,
+   "start": 37.0,
+   "end": 56.04,
+   "lines": [
+    {
+     "text": "James opens by calling trials an occasion for joy. Not because suffering is good, but because tested faith produces perseverance, and perseverance leads to maturity.",
+     "start": 37.9,
+     "end": 48.6
+    },
+    {
+     "text": "He's honest that trials hurt, and he insists that God tempts no one and gives only good gifts.",
+     "start": 49.3,
+     "end": 55.14
+    }
+   ]
+  },
+  {
+   "id": "faith",
+   "kicker": "Watch for: faith and deeds",
+   "level": 0.7,
+   "start": 55.24,
+   "end": 84.24,
+   "lines": [
+    {
+     "text": "Faith that does nothing is dead. It's the faith of bare words, which tells the hungry to keep warm and gives nothing.",
+     "start": 56.14,
+     "end": 63.3
+    },
+    {
+     "text": "So too, faith by itself, if it does not result in action, is dead.",
+     "start": 63.94,
+     "end": 69.0
+    },
+    {
+     "text": "Paul and James both teach that God saves by grace and that true faith is alive. They use faith, works, and justify in different senses. Christians relate the two in several ways, and this film takes no side.",
+     "start": 69.78,
+     "end": 83.34
+    }
+   ]
+  },
+  {
+   "id": "wealth",
+   "kicker": "Watch for: wealth",
+   "level": 0.8,
+   "start": 83.44,
+   "end": 98.56,
+   "lines": [
+    {
+     "text": "Few books speak so sharply about wealth. James condemns giving the best seats to the rich, warns the rich that they fade like a flower, and pronounces woe on those who hold back wages.",
+     "start": 84.34,
+     "end": 95.52
+    },
+    {
+     "text": "God has chosen the poor.",
+     "start": 96.18,
+     "end": 97.66
+    }
+   ]
+  },
+  {
+   "id": "tongue",
+   "kicker": "Watch for: the tongue",
+   "level": 0.7,
+   "start": 97.76,
+   "end": 113.18,
+   "lines": [
+    {
+     "text": "Every chapter touches the tongue. A small spark sets a great forest ablaze. Speech is the clearest test of whether faith has reached the whole person.",
+     "start": 98.66,
+     "end": 107.56
+    },
+    {
+     "text": "Everyone should be quick to listen, slow to speak, and slow to anger.",
+     "start": 108.26,
+     "end": 112.28
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 112.38,
+   "end": 126.1,
+   "lines": [
+    {
+     "text": "Read all five chapters at one sitting. It takes about fifteen minutes. Watch the threads, and read it beside the Sermon on the Mount.",
+     "start": 113.28,
+     "end": 121.0
+    },
+    {
+     "text": "The key chapters are one, two, three, and five.",
+     "start": 121.64,
+     "end": 125.2
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 125.3,
+   "end": 128.995,
+   "lines": [
+    {
+     "text": "James wants a faith that works.",
+     "start": 126.2,
+     "end": 128.095
+    }
+   ]
+  }
+ ]
+}

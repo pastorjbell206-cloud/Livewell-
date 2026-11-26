@@ -1,0 +1,7 @@
+{
+  "name": "livewell-film-tools",
+  "private": true,
+  "type": "module",
+  "description": "Tools that draw and render the narrated LiveWell films. Not part of the site build.",
+  "dependencies": { "playwright-core": "^1.56.0" }
+}

@@ -1,0 +1,136 @@
+{
+  "title": "1 John: so that you may know",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-1-john",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "steady",
+      "kicker": "A letter to steady people",
+      "level": 0.2,
+      "lines": [
+        "First John reads like a sermon written down, with no greeting and no named writer.",
+        "A group had left these churches, taking a new teaching about Jesus, and those who stayed wondered whether they really knew God. John writes to steady them."
+      ],
+      "scripture": {
+        "reference": "1 John 2:19",
+        "text": "They went out from us, but they did not belong to us.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "John works like a composer with a few themes: light, love, truth, obedience, and belief. He comes back to each from a new angle.",
+        "God is light, and in Him there is no darkness at all."
+      ],
+      "scripture": {
+        "reference": "1 John 1:5",
+        "text": "God is light, and in Him there is no darkness at all.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "flesh",
+      "kicker": "Watch for: come in the flesh",
+      "level": 0.5,
+      "lines": [
+        "The letter begins with witnesses who heard, saw, and touched the Word of life. Against teachers who said the divine Christ only seemed to have a body, John insists he came in the flesh.",
+        "A spirituality that despises the body soon despises the neighbor."
+      ],
+      "scripture": {
+        "reference": "1 John 1:1",
+        "text": "which we have seen with our own eyes, which we have gazed upon and touched with our own hands",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "marks",
+      "kicker": "Watch for: three marks",
+      "level": 0.65,
+      "lines": [
+        "Three marks keep returning: believing the truth about Jesus, keeping God's commands, and loving one another. John won't let them be pulled apart.",
+        "They were written to steady people, not to make tender consciences anxious."
+      ],
+      "scripture": {
+        "reference": "1 John 2:3",
+        "text": "By this we can be sure that we have come to know Him: if we keep His commandments.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "sin",
+      "kicker": "Watch for: two truths",
+      "level": 0.8,
+      "lines": [
+        "John holds two truths together. Anyone who says he has no sin deceives himself, and God forgives and cleanses those who confess.",
+        "He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.",
+        "Yet a child of God doesn't settle into sin. Don't deny your sin, and don't make peace with it."
+      ],
+      "scripture": {
+        "reference": "1 John 1:9",
+        "text": "He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "love",
+      "kicker": "Watch for: love",
+      "level": 0.9,
+      "lines": [
+        "God is love, and love is defined by what God did: he sent his Son. So love is concrete, laying down one's life and opening the hand to a brother in need.",
+        "Perfect love drives out the dread of judgment."
+      ],
+      "scripture": {
+        "reference": "1 John 4:8",
+        "text": "Whoever does not love does not know God, because God is love.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "Christians differ on who wrote the letter, on how to read the words that a child of God does not keep on sinning, and on how assurance works. This film takes no side.",
+        "The letter's antichrists were teachers who denied that Jesus is the Christ come in the flesh, and this film names no one living today."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read it in one sitting, aloud if you can, with John's Gospel open beside it. Remember the split behind it.",
+        "And let it ask where your confidence before God rests."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "John writes so that you may know that you have eternal life."
+      ],
+      "scripture": {
+        "reference": "1 John 5:13",
+        "text": "so that you may know that you have eternal life.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "So that you may know.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

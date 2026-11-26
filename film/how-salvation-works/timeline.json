@@ -1,0 +1,200 @@
+{
+ "length": 163.82,
+ "chapters": [
+  {
+   "id": "gift",
+   "kicker": "It starts with a gift",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 16.8,
+   "lines": [
+    {
+     "text": "The story starts with a gift, not a problem. God made human beings in his own image, to know him and show what he is like, and to love him and be happy in him forever.",
+     "start": 2.6,
+     "end": 13.52
+    },
+    {
+     "text": "Nothing stood between people and God.",
+     "start": 14.1,
+     "end": 15.9
+    }
+   ]
+  },
+  {
+   "id": "break",
+   "kicker": "The break",
+   "level": 0.4,
+   "start": 16.0,
+   "end": 29.4,
+   "lines": [
+    {
+     "text": "People turned from God to their own way, and every one of us has followed.",
+     "start": 16.9,
+     "end": 20.7
+    },
+    {
+     "text": "Sin is more than a list of wrong things done. It's a break: with God, with each other, inside ourselves.",
+     "start": 21.32,
+     "end": 28.5
+    }
+   ]
+  },
+  {
+   "id": "towers",
+   "kicker": "The towers we build",
+   "level": 0.5,
+   "start": 28.6,
+   "end": 50.24,
+   "lines": [
+    {
+     "text": "Every age builds its towers: be good enough, try harder, earn your way back. The Bible says plainly that the gap is too wide.",
+     "start": 29.5,
+     "end": 38.02
+    },
+    {
+     "text": "Salvation is the gift of God, not by works, so that no one can boast.",
+     "start": 38.6,
+     "end": 43.44
+    },
+    {
+     "text": "That's hard news for anyone who likes to earn things, and good news for anyone who knows they can't.",
+     "start": 44.18,
+     "end": 49.34
+    }
+   ]
+  },
+  {
+   "id": "sends",
+   "kicker": "God crosses the gap",
+   "level": 0.65,
+   "start": 49.44,
+   "end": 73.26,
+   "lines": [
+    {
+     "text": "Then God crosses the gap from his own side. The Father sends the Son, not to win over an unwilling God, but because he already loves the world.",
+     "start": 50.34,
+     "end": 59.2
+    },
+    {
+     "text": "For God so loved the world that He gave His one and only Son, that everyone who believes in Him shall not perish but have eternal life.",
+     "start": 59.88,
+     "end": 67.64
+    },
+    {
+     "text": "The eternal Son becomes one of us, fully God and fully man.",
+     "start": 68.42,
+     "end": 72.36
+    }
+   ]
+  },
+  {
+   "id": "cross",
+   "kicker": "The cross",
+   "level": 0.8,
+   "start": 72.46,
+   "end": 88.08,
+   "lines": [
+    {
+     "text": "At the cross the break is mended, and God is the one who mends it. The Father and the Son are not on opposite sides here.",
+     "start": 73.36,
+     "end": 80.34
+    },
+    {
+     "text": "For Christ also suffered for sins once for all, the righteous for the unrighteous, to bring you to God.",
+     "start": 81.0,
+     "end": 87.18
+    }
+   ]
+  },
+  {
+   "id": "raised",
+   "kicker": "Raised",
+   "level": 0.85,
+   "start": 87.28,
+   "end": 98.5,
+   "lines": [
+    {
+     "text": "He was buried, and on the third day he was raised, in his body, not as an idea.",
+     "start": 88.18,
+     "end": 93.32
+    },
+    {
+     "text": "The resurrection is God's sign that the cross did what it set out to do.",
+     "start": 93.96,
+     "end": 97.6
+    }
+   ]
+  },
+  {
+   "id": "receive",
+   "kicker": "Received, not earned",
+   "level": 0.7,
+   "start": 97.7,
+   "end": 112.44,
+   "lines": [
+    {
+     "text": "The gift is received, not earned. Jesus said to repent and believe in the gospel: turn around, and trust him.",
+     "start": 98.6,
+     "end": 106.24
+    },
+    {
+     "text": "Faith is not a work that pays for anything. It's empty hands taking what is given.",
+     "start": 106.84,
+     "end": 111.54
+    }
+   ]
+  },
+  {
+   "id": "new",
+   "kicker": "More than a clean record",
+   "level": 0.75,
+   "start": 111.64,
+   "end": 126.3,
+   "lines": [
+    {
+     "text": "God gives more than a clean record. Those who belong to Christ are forgiven, adopted as God's children, given the Holy Spirit, and joined to his people.",
+     "start": 112.54,
+     "end": 121.8
+    },
+    {
+     "text": "If anyone is in Christ, he is a new creation.",
+     "start": 122.42,
+     "end": 125.4
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where churches differ",
+   "level": 0.55,
+   "start": 125.5,
+   "end": 145.68,
+   "lines": [
+    {
+     "text": "All Christians confess that sinners are saved by God's grace, through Jesus' death and resurrection, and not by their own good deeds.",
+     "start": 126.4,
+     "end": 134.04
+    },
+    {
+     "text": "Churches differ on the place of baptism, on how God's choosing and our choosing fit together, and on whether a believer can fall away. This film doesn't choose between them.",
+     "start": 134.72,
+     "end": 144.78
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.4,
+   "start": 144.88,
+   "end": 157.723,
+   "lines": [
+    {
+     "text": "The story ends where it began, with God and his people together, and more than before. Christians differ on many details of the last things. On this hope they speak together.",
+     "start": 145.78,
+     "end": 156.823
+    }
+   ]
+  }
+ ]
+}

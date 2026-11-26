@@ -1,0 +1,131 @@
+{
+  "title": "1 Samuel: the heart God sees",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-1-samuel",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "three",
+      "kicker": "Three lives",
+      "level": 0.2,
+      "lines": [
+        "First Samuel carries Israel from the judges to the kings through three lives. Samuel, the answer to a childless woman's prayer. Saul, the first king. And David, anointed in secret.",
+        "It's a book about power: who holds it, and how it's given."
+      ],
+      "scripture": {
+        "reference": "1 Samuel 2:7",
+        "text": "The LORD sends poverty and wealth; He humbles and He exalts.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "It moves in seven stages. Samuel's birth and call. The ark lost and returned. Israel asks for a king. Saul's reign and rejection. David at Saul's court. David the fugitive. And the end of Saul.",
+        "The three lives overlap, and the handover is never clean."
+      ],
+      "scripture": {
+        "reference": "1 Samuel 7:12",
+        "text": "Thus far the LORD has helped us.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "listening",
+      "kicker": "Watch for: the boy who listens",
+      "level": 0.5,
+      "lines": [
+        "The book begins when the word of the LORD was rare, and it becomes the story of a prophet through whom God speaks.",
+        "Speak, for Your servant is listening.",
+        "Kings stand or fall by whether they listen. Hearing and obeying count above sacrifice."
+      ],
+      "scripture": {
+        "reference": "1 Samuel 3:10",
+        "text": "Speak, for Your servant is listening.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "king",
+      "kicker": "Watch for: give us a king",
+      "level": 0.65,
+      "lines": [
+        "The elders ask for a king like all the nations. God calls it a rejection of his own rule, and then gives them one all the same.",
+        "Readers weigh why. The question the book asks is whether the king will rule as a servant under the word of God."
+      ],
+      "scripture": {
+        "reference": "1 Samuel 8:7",
+        "text": "they have rejected Me as their king.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "heart",
+      "kicker": "Watch for: the heart",
+      "level": 0.8,
+      "lines": [
+        "People keep judging by what they can see. Saul is a head taller than anyone. Samuel is taken with Jesse's tall eldest son. God looks somewhere else.",
+        "For man sees the outward appearance, but the LORD sees the heart.",
+        "And David is chosen from the sheepfold."
+      ],
+      "scripture": {
+        "reference": "1 Samuel 16:7",
+        "text": "For man sees the outward appearance, but the LORD sees the heart.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "loyal",
+      "kicker": "Watch for: loyal love",
+      "level": 0.85,
+      "lines": [
+        "Jonathan, Saul's heir, gives up his claim out of love for David and trust in God's choice. And twice David has Saul in his power and won't harm him.",
+        "It teaches restraint and trust in God's timing. It doesn't teach silence before injustice."
+      ],
+      "scripture": {
+        "reference": "1 Samuel 18:1",
+        "text": "Jonathan loved him as himself.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "The hard chapter",
+      "level": 0.55,
+      "lines": [
+        "The command against Amalek in chapter fifteen is read in more than one way, and none of them makes it easy.",
+        "On every reading, no people living today is Amalek, and no one may use this chapter to justify violence or contempt toward any person or people."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with Hannah's song in chapter two, slowly. Then the key chapters: three, four, eight, fifteen, sixteen, seventeen, and twenty-four.",
+        "Don't take its heroes as models in everything."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Then read Second Samuel. The promise to David is still ahead."
+      ],
+      "titleCard": [
+        "The LORD sees the heart.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

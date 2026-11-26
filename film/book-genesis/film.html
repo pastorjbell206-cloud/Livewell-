@@ -1,0 +1,206 @@
+<!doctype html>
+<!-- "Genesis: the book of beginnings". The template for the book films: a strip of the book's chapters
+     (fifty ticks here) runs along the foot of the picture for the whole film, and each scene hangs from it.
+     A scroll and the five beginnings; the two halves and the ten headings (at their real chapters);
+     a king's pillar and a ring over every person; a crack from chapter 3; two alike books where readers
+     differ; a hinge at chapter 12; a tangle with one straight line through it; the eight key chapters.
+     God is never drawn. The murder and the flood are abstract marks only.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Genesis: the book of beginnings</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const B0 = S("beginnings", 0), B1 = S("beginnings", 1), B2 = S("beginnings", 2), BE = E("beginnings");
+  const L0 = S("layout", 0), L0E = E("layout", 0), L1 = S("layout", 1), LE = E("layout");
+  const I0 = S("image", 0), I0E = E("image", 0), I1 = S("image", 1), W0 = S("wrong", 0), W0E = E("wrong", 0), W1 = S("wrong", 1), WE = E("wrong");
+  const D0 = S("differ", 0), DE = E("differ"), P0 = S("promise", 0), PE = E("promise");
+  const A0 = S("faithful", 0), A0E = E("faithful", 0), A1 = S("faithful", 1), A2 = S("faithful", 2), AE = E("faithful");
+  const K0 = S("start", 0), K0E = E("start", 0), K1 = S("start", 1), KE = E("start"), C0 = S("close", 0), END = F.VOICE_END;
+  const R = rng(50), CHAPTERS = 50, SY = 520, X = (c) => 140 + (c - 1) * (1000 / (CHAPTERS - 1));
+  const at = (a, b, f) => a + (b - a) * f;
+
+  // a verse from script.json, wrapped onto balanced lines, with its reference under it
+  const verse = (id, y, size, max, quote = true) => { const s = SC[id].scripture, g = el("g", {}, world); if (/[\u201C\u201D]/.test(s.text)) quote = false; const full = (quote ? "“" : "") + s.text + (quote ? "”" : "");
+    const n = Math.ceil(full.length / max), target = full.length / n, rows = [""]; full.split(" ").forEach((w) => { const cur = rows[rows.length - 1]; if (cur && cur.length + w.length / 2 > target && rows.length < n) rows.push(w); else rows[rows.length - 1] = cur ? cur + " " + w : w; });
+    const lh = Math.round(size * 1.18); rows.forEach((r, i) => txt(g, "disp", 640, y + i * lh, r, size));
+    const ref = txt(g, "lab", 640, y + (rows.length - 1) * lh + Math.round(size * 0.55) + 16, `${s.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, size < 34 ? 13 : 17); return { g, ref }; };
+
+  // ================= the chapter strip (the whole film) =================
+  const gStrip = el("g", {}, world);
+  const base = line(gStrip, `M${X(1)} ${SY} H${X(50)}`, { stroke: LINE, "stroke-width": 2 });
+  const gold = line(gStrip, `M${X(1)} ${SY} H1320`, { stroke: MUSTARD, "stroke-width": 4 });
+  const ticks = [...Array(CHAPTERS)].map((_, i) => el("line", { x1: X(i + 1), x2: X(i + 1), y1: SY - 7, y2: SY + 7, stroke: INK, "stroke-width": 2, "stroke-linecap": "round" }, gStrip));
+  const KEYS = [1, 3, 9, 12, 15, 22, 32, 50], EDGE = [1, 11, 12, 50];
+  const nums = {}; [...new Set([...KEYS, ...EDGE])].forEach((c) => { nums[c] = txt(gStrip, "lab", X(c) + (c === 11 ? -9 : c === 12 ? 9 : 0), SY + 30, String(c), 15); });
+  const keyRings = KEYS.map((c) => el("circle", { cx: X(c), cy: SY, r: 9, fill: BONE, stroke: MUSTARD, "stroke-width": 3 }, gStrip));
+  const brA = line(gStrip, `M${X(1)} ${SY - 20} V${SY - 30} H${X(11)} V${SY - 20}`, { stroke: STONE, "stroke-width": 2 }), brB = line(gStrip, `M${X(12)} ${SY - 20} V${SY - 30} H${X(50)} V${SY - 20}`, { stroke: STONE, "stroke-width": 2 });
+  // the ten headings, at their real chapters (2:4, 5:1, 6:9, 10:1, 11:10, 11:27, 25:12, 25:19, 36:1, 37:2); pairs nudged apart
+  const HEADS = [[2, 0], [5, 0], [6, 0], [10, 0], [11, -6], [11, 6], [25, -6], [25, 6], [36, 0], [37, 0]];
+  const heads = HEADS.map(([c, dx]) => el("path", { d: "M0 -9 L7 0 L0 9 L-7 0 Z", fill: MUSTARD }, gStrip));
+  const hinge = el("g", {}, gStrip); el("circle", { cx: X(12), cy: SY, r: 10, fill: BONE, stroke: MUSTARD, "stroke-width": 3.5 }, hinge); const pin = line(hinge, `M${X(12)} ${SY - 12} V150`, { stroke: MUSTARD, "stroke-width": 2.5 });
+  const ch3 = el("circle", { cx: X(3), cy: SY, r: 8, fill: INK }, gStrip);
+
+  // ================= 1: the scroll and the five beginnings =================
+  const gScroll = el("g", {}, world);
+  const parch = el("rect", { y: -52, height: 104, fill: WARM, stroke: INK, "stroke-width": 2.5 }, gScroll), sLines = [-26, -9, 9, 26].map((dy) => el("line", { y1: dy, y2: dy, stroke: STONE, "stroke-width": 4, "stroke-linecap": "round" }, gScroll));
+  const rolL = el("rect", { y: -62, width: 22, height: 124, rx: 9, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, gScroll), rolR = el("rect", { y: -62, width: 22, height: 124, rx: 9, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, gScroll);
+  const v11 = verse("beginnings", 176, 50, 60);
+  const ICX = [300, 470, 640, 810, 980], ICY = 232, icons = ICX.map(() => el("g", {}, world));
+  // the world: a sun over a horizon
+  el("circle", { cy: -8, r: 26, fill: MUSTARD }, icons[0]); el("rect", { x: -60, y: 4, width: 120, height: 40, fill: BONE }, icons[0]); el("path", { d: "M-60 4 Q-20 -8 10 4 T60 2", fill: "none", stroke: INK, "stroke-width": 3.5, "stroke-linecap": "round" }, icons[0]);
+  // people
+  el("circle", { cx: -20, r: 19, fill: INK }, icons[1]); el("circle", { cx: 22, r: 19, fill: BONE, stroke: INK, "stroke-width": 4 }, icons[1]);
+  // sin and death: a crack
+  el("path", { d: "M-6 -46 L8 -18 L-10 0 L10 22 L-4 46", fill: "none", stroke: INK, "stroke-width": 4, "stroke-linejoin": "round", "stroke-linecap": "round" }, icons[2]);
+  // the nations
+  [[-40, -22], [0, -34], [40, -20], [-30, 24], [12, 14], [46, 30]].forEach(([x, y]) => [[0, 0], [11, 3], [5, 11]].forEach(([a, b]) => el("circle", { cx: x + a, cy: y + b, r: 5, fill: STONE }, icons[3])));
+  // the people of Israel: one tent
+  const tentD = "M-58 40 L0 -44 L58 40 Z M0 -44 L10 -58 M0 -44 L-10 -58 M-14 40 L0 8 L14 40";
+  el("path", { d: tentD, fill: WARM, stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round", "stroke-linecap": "round" }, icons[4]);
+
+  // ================= 2: two halves, one family =================
+  const gHalves = el("g", {}, world);
+  const worldRing = el("circle", { cx: 250, cy: 300, r: 112, fill: WARM, stroke: INK, "stroke-width": 3.5 }, gHalves), horizon = el("path", { d: "M142 318 Q200 296 252 316 T358 310", fill: "none", stroke: INK, "stroke-width": 3 }, gHalves);
+  const worldDots = [...Array(16)].map(() => { const a = R() * 6.28, r = 20 + R() * 74; return el("circle", { cx: 250 + r * Math.cos(a), cy: 300 + r * Math.sin(a) * 0.9, r: 4.5, fill: STONE }, gHalves); });
+  const famLine = line(gHalves, "M600 300 H1000", { stroke: INK, "stroke-width": 3.5 });
+  const fam = [["ABRAHAM", 600], ["JACOB", 800], ["JOSEPH", 1000]].map(([n, x]) => ({ d: el("circle", { cx: x, cy: 300, r: 24, fill: INK }, gHalves), l: txt(gHalves, "lab", x, 358, n) }));
+  const stemA = line(gHalves, `M${X(6)} ${SY - 32} V420`, { stroke: STONE, "stroke-width": 2 }), stemB = line(gHalves, `M800 ${SY - 32} V384`, { stroke: STONE, "stroke-width": 2 });
+  const vHead = verse("layout", 250, 76, 40);
+
+  // ================= 3: the king's image, and every person =================
+  const gImage = el("g", {}, world), pillar = el("g", {}, gImage);
+  el("rect", { x: 262, y: 244, width: 76, height: 216, fill: MUTED, stroke: INK, "stroke-width": 3 }, pillar); el("rect", { x: 238, y: 460, width: 124, height: 18, fill: MUTED, stroke: INK, "stroke-width": 3 }, pillar); el("rect", { x: 250, y: 232, width: 100, height: 14, fill: MUTED, stroke: INK, "stroke-width": 3 }, pillar);
+  const crown = el("path", { d: "M-34 0 L-34 -30 L-17 -12 L0 -36 L17 -12 L34 -30 L34 0 Z", fill: MUSTARD }, gImage);
+  const crowd = []; for (let r = 0; r < 4; r++) for (let c = 0; c < 6; c++) { const x = 520 + c * 104 + (r % 2) * 40 + (R() - 0.5) * 16, y = 262 + r * 62 + (R() - 0.5) * 10; crowd.push({ x, y, d: el("circle", { cx: x, cy: y, r: 15, fill: (r + c) % 3 ? INK : STONE }, gImage), ring: el("circle", { cx: x, cy: y, r: 23, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gImage) }); }
+  const v127 = verse("image", 140, 29, 58);
+
+  // ================= 4: what went wrong =================
+  const gWrong = el("g", {}, world), ROOT = [X(3), SY - 10];
+  const trunk = line(gWrong, `M${ROOT[0]} ${ROOT[1]} L196 448 L176 408 L226 372 L250 344`, { "stroke-width": 4 });
+  const ENDS = [[390, 300], [650, 276], [930, 300]];
+  const branch = [line(gWrong, "M250 344 L300 350 L330 316 L390 318", { "stroke-width": 3.5 }), line(gWrong, "M250 344 L330 286 L420 300 L500 262 L590 290", { "stroke-width": 3.5 }), line(gWrong, "M250 344 L300 392 L420 380 L540 410 L680 372 L780 388 L868 330", { "stroke-width": 3.5 })];
+  const marks = ENDS.map(() => el("g", {}, gWrong));
+  el("line", { x1: -44, x2: 44, y1: 26, y2: 26, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, marks[0]); el("circle", { cx: 0, cy: 6, r: 18, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 5" }, marks[0]);
+  const waves = [-16, 4, 24].map((dy) => el("path", { fill: "none", stroke: INK, "stroke-width": 3.5, "stroke-linecap": "round" }, marks[1]));
+  [[-34, 68, 22], [-27, 54, 0], [-20, 40, -22], [-13, 26, -44]].forEach(([x, w, y]) => el("rect", { x, y, width: w, height: 20, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, marks[2]));
+  const back = branch.map(() => el("circle", { r: 6, fill: INK }, gWrong));
+  const shoot = el("g", {}, gWrong), stem = line(shoot, `M${ROOT[0] + 22} ${SY - 12} q-4 -30 6 -58`, { stroke: MUSTARD, "stroke-width": 4 }), leafA = el("path", { d: "M0 0 q-26 -6 -30 -30 q26 2 30 30 Z", fill: MUSTARD }, shoot), leafB = el("path", { d: "M0 0 q26 -10 26 -34 q-24 6 -26 34 Z", fill: MUSTARD }, shoot);
+  const v39 = verse("wrong", 150, 32, 70);
+
+  // ================= 5: where readers differ (two books, treated exactly alike) =================
+  const gDiffer = el("g", {}, world), pageD = (s) => `M0 -50 C${-40 * s} -70 ${-110 * s} -70 ${-150 * s} -55 L${-150 * s} 55 C${-110 * s} 40 ${-40 * s} 40 0 60 Z`;
+  const books = [430, 850].map((x) => { const g = el("g", {}, gDiffer); const pages = [1, -1].map((s) => el("path", { d: pageD(s), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round", pathLength: 1, "stroke-dasharray": 1 }, g));
+    const rows = []; [1, -1].forEach((s) => [-28, -10, 8, 26].forEach((dy) => rows.push(line(g, `M${-22 * s} ${dy - 8} C${-60 * s} ${dy - 20} ${-100 * s} ${dy - 20} ${-132 * s} ${dy - 10}`, { stroke: STONE, "stroke-width": 2.2 })))); return { g, x, pages, rows }; });
+  const concern = [["WHO GOD IS", 330], ["WHO WE ARE", 640], ["HOW GOD KEEPS HIS WORD", 950]].map(([w, x]) => txt(gDiffer, "lab", x, 446, w));
+  const concernRule = line(gDiffer, "M200 412 H1080", { stroke: LINE, "stroke-width": 2 });
+
+  // ================= 6: the hinge at chapter 12 =================
+  const gPromise = el("g", {}, world), HX = X(12);
+  const oldWorld = el("g", {}, gPromise); el("circle", { cx: -140, cy: 0, r: 104, fill: WARM, stroke: INK, "stroke-width": 3.5 }, oldWorld); el("path", { d: "M-240 16 Q-190 -4 -140 14 T-40 8", fill: "none", stroke: INK, "stroke-width": 3 }, oldWorld);
+  const tent = el("g", {}, gPromise); el("path", { d: tentD, fill: WARM, stroke: INK, "stroke-width": 2.2, "stroke-linejoin": "round", "stroke-linecap": "round" }, tent);
+  const TX = 590, TY = 330, nation = [...Array(12)].map((_, i) => el("circle", { cx: TX - 100 + (i % 6) * 40 + (R() - 0.5) * 10, cy: TY + 96 + Math.floor(i / 6) * 26, r: 7, fill: INK }, gPromise));
+  const FAMS = [[800, 250], [960, 232], [1110, 300], [1030, 400], [860, 440], [760, 356], [1150, 430], [940, 330]];
+  const fams = FAMS.map(([x, y]) => ({ l: line(gPromise, `M${TX + 60} ${TY - 10} Q${(TX + x) / 2 + 30} ${Math.min(TY, y) - 40} ${x - 14} ${y}`, { stroke: MUSTARD, "stroke-width": 2 }), g: el("g", {}, gPromise), x, y }));
+  fams.forEach((f) => [[0, 0], [15, 5], [6, 16]].forEach(([a, b]) => el("circle", { cx: f.x + a, cy: f.y + b, r: 6.5, fill: STONE }, f.g)));
+  const v123 = verse("promise", 150, 34, 70);
+
+  // ================= 7: a faithful God with a tangled family =================
+  const gTangle = el("g", {}, world), pts = [...Array(34)].map((_, i) => [340 + R() * 600, 190 + R() * 250]);
+  let td = `M${pts[0][0].toFixed(0)} ${pts[0][1].toFixed(0)}`; for (let i = 1; i < pts.length - 1; i++) td += ` Q${pts[i][0].toFixed(0)} ${pts[i][1].toFixed(0)} ${((pts[i][0] + pts[i + 1][0]) / 2).toFixed(0)} ${((pts[i][1] + pts[i + 1][1]) / 2).toFixed(0)}`;
+  const tangle = line(gTangle, td, { "stroke-width": 3 }), straight = line(gTangle, "M150 316 H1130", { stroke: MUSTARD, "stroke-width": 6 });
+  const v5020 = verse("faithful", 172, 48, 36);
+
+  // ================= 8: where to start =================
+  const gStart = el("g", {}, world), bigNum = KEYS.map((c) => txt(gStart, "disp", 640, 372, String(c), 210));
+  const gAct = el("g", {}, world);
+  const frameA = line(gAct, "M330 220 H530 V380 H330 Z", { "stroke-width": 3 }), mini = el("path", { d: td, fill: "none", stroke: INK, "stroke-width": 9, "stroke-linecap": "round", transform: "translate(430 300) scale(0.24) translate(-640 -315)" }, gAct);
+  const stamp = el("circle", { cx: 850, cy: 300, r: 78, fill: "none", stroke: INK, "stroke-width": 3 }, gAct), tick = line(gAct, "M812 302 L840 330 L890 270", { "stroke-width": 6 });
+  const neq = txt(gAct, "disp", 640, 326, "≠", 96), labD = txt(gAct, "lab", 430, 420, "DESCRIBING"), labA = txt(gAct, "lab", 850, 420, "APPROVING");
+  // ================= 9: close =================
+  const walkers = [...Array(5)].map((_, i) => el("circle", { cy: SY - 16, r: 8 - (i % 2) * 2, fill: INK }, world));
+
+  F.title("Genesis");
+  F.endCard(SC.close.titleCard, END + 0.7);
+
+  const drawStrip = (t) => {
+    const out = 1 - up(t, END + 0.5, 0.7); op(gStrip, up(t, B0 - 0.4, 0.5) * out);
+    draw(base, up(t, B0 - 0.3, 1.6)); ticks.forEach((k, i) => { op(k, up(t, B0 + i * 0.03, 0.4)); const c = i + 1, lit = KEYS.includes(c) && t > keyAt(c); k.setAttribute("stroke", lit ? MUSTARD : INK); });
+    draw(brA, up(t, L0 + 1.2, 0.8)); draw(brB, up(t, at(L0, L0E, 0.44), 0.9)); const bo = 1 - up(t, I0 - 0.4, 0.6); op(brA, bo); op(brB, bo);
+    Object.entries(nums).forEach(([c, e]) => { c = Number(c); const edge = EDGE.includes(c) ? span(t, L0 + 1.0 + (c > 11 ? at(0, L0E - L0, 0.4) : 0), K0 - 0.3, 0.5) : 0, key = KEYS.includes(c) ? up(t, keyAt(c), 0.4) : 0; op(e, Math.max(edge, key) * out); e.setAttribute("style", `font-size:15px;fill:${key > 0.5 ? "#7A6010" : STONE}`); });
+    heads.forEach((h, i) => { const a = at(L1, LE, 0.36) + i * 0.24, k = up(t, a, 0.9); op(h, up(t, a, 0.3) * (1 - up(t, I0 + 0.6, 0.8))); move(h, X(HEADS[i][0]) + HEADS[i][1], mix(300, SY - 16, k)); });
+    keyRings.forEach((r, i) => { const k = up(t, keyAt(KEYS[i]), 0.45); op(r, k * out); r.setAttribute("r", (9 + 5 * span(t, keyAt(KEYS[i]), keyAt(KEYS[i]) + 0.9, 0.3)).toFixed(2)); });
+    op(ch3, span(t, W0 - 0.2, D0, 0.5)); ch3.setAttribute("r", (8 + 2 * Math.sin(t * 2.2)).toFixed(2));
+    const hv = span(t, P0 - 0.2, A0 - 0.2, 0.5, 0.7); op(hinge, hv); draw(pin, up(t, P0, 1.2));
+    const g = t < K0 ? 0 : 1; op(gold, g * out); draw(gold, t < C0 ? 0.0001 : up(t, C0 + 0.2, 3.4));
+  };
+  const KF = [0.13, 0.43, 0.5, 0.57, 0.65, 0.74, 0.84, 0.94];   // where in the line each key chapter is named
+  const keyAt = (c) => { const i = KEYS.indexOf(c); return i === 0 ? at(K0, K0E, KF[0]) : at(K0, K0E, KF[i]); };
+
+  const drawBeginnings = (t) => {
+    const v = up(t, B0 - 0.4, 0.5) * (1 - up(t, L0 - 0.7, 0.7)); op(gScroll, v);
+    if (v > 0) { const hw = mix(0, 270, up(t, B0 - 0.2, 1.8)), y = mix(300, 400, up(t, B1 - 0.9, 1.0)); move(gScroll, 640, y + 1.5 * Math.sin(t * 0.8));
+      set(parch, { x: -hw, width: hw * 2 }); set(rolL, { x: -hw - 22 }); set(rolR, { x: hw }); sLines.forEach((l, i) => { set(l, { x1: -Math.max(0, hw - 26), x2: Math.max(0, hw - 26 - (i === 3 ? 90 : 0)) }); op(l, hw > 40 ? 1 : 0); }); }
+    const vv = span(t, B1 - 0.3, B2 - 0.1, 0.4, 0.5); op(v11.g, vv); op(v11.ref, up(t, B1 + 1.2, 0.6));
+    [0.34, 0.47, 0.57, 0.74, 0.86].forEach((f, i) => { const a = at(B2, BE, f) - 0.25, k = up(t, a, 0.9); op(icons[i], up(t, a, 0.4) * (1 - up(t, L0 - 0.7, 0.6))); move(icons[i], mix(640, ICX[i], k), mix(380, ICY, k) + 2 * Math.sin(t * 0.9 + i), mix(0.4, 1, k)); });
+  };
+  const drawLayout = (t) => {
+    const dim = 1 - up(t, L1 - 0.5, 0.7), v = up(t, L0 + 0.3, 0.5) * dim; op(gHalves, v);
+    if (v > 0) { op(worldRing, up(t, L0 + 1.3, 0.8)); op(horizon, up(t, L0 + 1.8, 0.6)); worldDots.forEach((d, i) => op(d, up(t, L0 + 2.0 + i * 0.09, 0.4))); draw(stemA, up(t, L0 + 1.5, 0.7));
+      gHalves.setAttribute("transform", `translate(0 ${(1.5 * Math.sin(t * 0.7)).toFixed(2)})`);
+      draw(stemB, up(t, at(L0, L0E, 0.46), 0.7)); [0.7, 0.83, 0.92].forEach((f, i) => { const a = at(L0, L0E, f) - 0.2; op(fam[i].d, up(t, a, 0.45)); op(fam[i].l, up(t, a + 0.2, 0.5)); }); draw(famLine, clamp((t - at(L0, L0E, 0.7)) / ((L0E - L0) * 0.24))); }
+    const hv = span(t, L1 - 0.2, I0 - 0.1, 0.5, 0.6); op(vHead.g, hv); op(vHead.ref, up(t, at(L1, LE, 0.3), 0.6)); vHead.g.setAttribute("transform", `translate(0 ${(-8 * up(t, L1, 3)).toFixed(2)})`);
+  };
+  const drawImage = (t) => {
+    const v = up(t, I0 - 0.2, 0.5) * (1 - up(t, W0 - 0.6, 0.7)); op(gImage, v);
+    if (v > 0) { const rise = up(t, I0 + 0.4, 2.2); pillar.setAttribute("transform", `translate(0 ${(240 * (1 - rise)).toFixed(1)})`); op(pillar, up(t, I0 + 0.3, 0.6));
+      const cdrop = up(t, at(I0, I0E, 0.3), 0.9); op(crown, cdrop); move(crown, 300, mix(150, 230, cdrop) + 240 * (1 - rise));
+      const share = at(I0, I0E, 0.62); crowd.forEach((c, i) => { op(c.d, up(t, I0 + 1.0 + i * 0.05, 0.5)); op(c.ring, up(t, share + i * 0.11, 0.45)); c.d.setAttribute("cy", (c.y + 1.5 * Math.sin(t * 0.9 + i)).toFixed(1)); c.ring.setAttribute("cy", (c.y + 1.5 * Math.sin(t * 0.9 + i)).toFixed(1)); c.ring.setAttribute("r", (23 + 1.5 * Math.sin(t * 1.4 + i)).toFixed(2)); }); }
+    const vv = span(t, I0 + 0.6, W0 - 0.3, 0.6, 0.5); op(v127.g, vv);
+  };
+  const drawWrong = (t) => {
+    const v = up(t, I1 - 0.1, 0.4) * (1 - up(t, D0 - 0.5, 0.7)); op(gWrong, v);
+    if (v > 0) { draw(trunk, t < W0 ? up(t, I1, 2.2) * 0.45 : 0.45 + 0.55 * up(t, W0, 2.4));
+      [0.66, 0.79, 0.9].forEach((f, i) => { const a = at(W0, W0E, f) - 0.5; draw(branch[i], up(t, a, 1.0)); op(marks[i], up(t, a + 0.7, 0.6)); move(marks[i], ENDS[i][0] + (i === 2 ? 0 : 0), ENDS[i][1] + 1.5 * Math.sin(t + i), 1.25);
+        const bk = up(t, W1 + 0.4 + i * 0.25, 2.0), L = branch[i].getTotalLength(), p = branch[i].getPointAtLength(L * (1 - bk)); set(back[i], { cx: p.x, cy: p.y }); op(back[i], span(t, W1 + 0.4 + i * 0.25, W1 + 2.5 + i * 0.25, 0.3)); });
+      waves.forEach((w, i) => w.setAttribute("d", `M-40 ${[-16, 4, 24][i]} q10 ${(-9 * Math.sin(t * 1.6 + i)).toFixed(1)} 20 0 t20 0 t20 0 t20 0`));
+      const hope = at(W1, WE, 0.62); op(shoot, up(t, hope, 0.3)); draw(stem, up(t, hope, 1.1)); const lk = up(t, hope + 0.7, 0.9); move(leafA, ROOT[0] + 24, SY - 62, lk); move(leafB, ROOT[0] + 27, SY - 66, lk); op(leafA, lk); op(leafB, lk); }
+    const vv = span(t, W0 + 0.4, D0 - 0.3, 0.6, 0.5); op(v39.g, vv);
+  };
+  const drawDiffer = (t) => {
+    const v = span(t, D0 - 0.3, P0 - 0.2, 0.5, 0.7); op(gDiffer, v); if (v <= 0) return;
+    books.forEach((b) => { move(b.g, b.x, 290 + 2 * Math.sin(t * 0.8), 1.15); b.pages.forEach((p) => { draw(p, up(t, D0 - 0.2, 1.6)); p.setAttribute("fill-opacity", up(t, D0 + 0.6, 0.8)); }); b.rows.forEach((r, i) => draw(r, up(t, D0 + 1.0 + i * 0.1, 0.8))); });
+    draw(concernRule, up(t, at(D0, DE, 0.46), 1.0)); [0.6, 0.72, 0.82].forEach((f, i) => op(concern[i], up(t, at(D0, DE, f) - 0.2, 0.5)));
+  };
+  const drawPromise = (t) => {
+    const v = span(t, P0 - 0.3, A0 - 0.1, 0.5, 0.7); op(gPromise, v); op(v123.g, v * up(t, at(P0, PE, 0.7), 0.7)); if (v <= 0) return;
+    const swing = up(t, P0 + 2.0, 2.4), a = Math.cos(Math.PI * swing);
+    op(oldWorld, a > 0 ? 1 : 0); oldWorld.setAttribute("transform", `translate(${HX} 310) scale(${Math.max(0.001, a).toFixed(3)} 1)`);
+    op(tent, a < 0 ? 1 : 0); tent.setAttribute("transform", `translate(${HX} 0) scale(${Math.max(0.001, -a).toFixed(3)} 1) translate(${TX - HX} ${(TY + 2 * Math.sin(t * 0.8)).toFixed(1)}) scale(1.55)`);
+    const d = PE - P0; nation.forEach((n, i) => op(n, up(t, at(P0, PE, 0.6) + i * 0.07, 0.4)));
+    fams.forEach((f, i) => { const s = at(P0, PE, 0.74) + i * 0.16; op(f.g, up(t, P0 + 5.2 + i * 0.12, 0.5)); draw(f.l, up(t, s, 0.9)); f.g.setAttribute("transform", `translate(0 ${(1.5 * Math.sin(t + i)).toFixed(2)})`); });
+  };
+  const drawFaithful = (t) => {
+    const v = span(t, A0 - 0.3, K0 + 0.2, 0.4, 0.8); op(gTangle, v);
+    if (v > 0) { const sh = up(t, A1 - 0.2, 1.4), down = up(t, K0 - 0.6, 1.2); gTangle.setAttribute("transform", `translate(640 ${mix(mix(316, 400, sh), SY, down).toFixed(1)}) scale(${mix(1, 0.56, sh).toFixed(3)} ${mix(mix(1, 0.56, sh), 0.02, down).toFixed(3)}) translate(-640 -316)`);
+      draw(tangle, up(t, A0 - 0.2, 5.0)); tangle.setAttribute("stroke-width", mix(3, 4.5, sh)); draw(straight, up(t, at(A0, A0E, 0.56), 2.2)); }
+    const vv = span(t, A2 - 0.3, K0 - 0.1, 0.4, 0.6); op(v5020.g, vv); op(v5020.ref, up(t, at(A2, AE, 0.7), 0.6));
+  };
+  const drawStart = (t) => {
+    const v = span(t, K0 - 0.1, K1 + 0.2, 0.4, 0.5); op(gStart, v);
+    if (v > 0) KEYS.forEach((c, i) => { const a = keyAt(c), b = i < KEYS.length - 1 ? keyAt(KEYS[i + 1]) : K1 + 0.3; const o = span(t, a - 0.1, Math.max(b, a + 0.5), 0.2); op(bigNum[i], o * 0.92); bigNum[i].setAttribute("y", (372 + 14 * (1 - up(t, a - 0.1, 0.5))).toFixed(1)); });
+    const av = span(t, K1 - 0.1, C0 - 0.1, 0.5, 0.6); op(gAct, av);
+    if (av > 0) { draw(frameA, up(t, K1, 1.0)); op(mini, up(t, K1 + 0.5, 0.6)); op(labD, up(t, at(K1, KE, 0.36), 0.5)); op(neq, up(t, at(K1, KE, 0.52), 0.5)); op(stamp, up(t, at(K1, KE, 0.62), 0.6)); draw(tick, up(t, at(K1, KE, 0.72), 0.7)); op(labA, up(t, at(K1, KE, 0.8), 0.5)); }
+    const wv = up(t, C0, 0.6) * (1 - up(t, END + 0.5, 0.6)); walkers.forEach((w, i) => { op(w, wv); w.setAttribute("cx", (X(46) - i * 26 + 150 * up(t, C0, 6.5) + 0).toFixed(1)); w.setAttribute("cy", (SY - 18 - 2.5 * Math.abs(Math.sin(t * 3.2 + i * 1.3))).toFixed(1)); });
+  };
+  // the close: the tent and its families come back above the open end of the strip
+  const closeTent = el("g", {}, world); el("path", { d: tentD, fill: WARM, stroke: INK, "stroke-width": 2.4, "stroke-linejoin": "round", "stroke-linecap": "round" }, closeTent);
+  const stars = [...Array(26)].map(() => ({ x: 180 + R() * 920, y: 130 + R() * 190, ph: R() * 6, e: el("circle", { r: 2.2 + R() * 2, fill: STONE }, world) }));
+  const drawClose = (t) => { const v = up(t, C0 - 0.1, 0.8) * (1 - up(t, END + 0.5, 0.6)); op(closeTent, v); move(closeTent, 640, 390 + 2 * Math.sin(t * 0.7), 1.5);
+    stars.forEach((s, i) => { op(s.e, v * up(t, C0 + 0.3 + i * 0.09, 0.6) * (0.55 + 0.4 * Math.sin(t * 1.3 + s.ph))); set(s.e, { cx: s.x, cy: s.y }); }); };
+
+  return (t) => { drawStrip(t); drawBeginnings(t); drawLayout(t); drawImage(t); drawWrong(t); drawDiffer(t); drawPromise(t); drawFaithful(t); drawStart(t); drawClose(t); };
+});
+</script>
+</body></html>

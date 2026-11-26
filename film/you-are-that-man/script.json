@@ -1,0 +1,87 @@
+{
+  "title": "You are that man",
+  "note": "Written fresh on 2026-11-26 at James's word: \"I want you to have liberty to write the scripts.\" Not recorded, and James has not read it yet. Every fact is listed with where to check it in facts.md beside this file. Scripture is the Berean Standard Bible, copied word for word from client/public/bible/text/; an exclamation mark appears only where the verse has one. Field names and `gap` follow James's description of the Gather scripts; match them to film/beliefs/script.json on the Mac.",
+  "page": "/books/blind-spots",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "king",
+      "kicker": "A king and a cover-up",
+      "level": 0.2,
+      "lines": [
+        "A king takes another man's wife. Then he has the man killed to cover it up.",
+        "The king's name is David. And for a while, nothing happens."
+      ]
+    },
+    {
+      "id": "story",
+      "kicker": "Nathan tells a story",
+      "level": 0.4,
+      "lines": [
+        "Then a prophet named Nathan walks in. He doesn't accuse the king. He tells him a story.",
+        "A rich man owns huge flocks. A poor man owns one little lamb, raised like a daughter.",
+        "A guest shows up. And the rich man takes the poor man's lamb for dinner."
+      ]
+    },
+    {
+      "id": "anger",
+      "kicker": "The king is furious",
+      "level": 0.6,
+      "lines": [
+        "David is furious. That man deserves to die, he says."
+      ]
+    },
+    {
+      "id": "turn",
+      "kicker": "Four words",
+      "level": 0.8,
+      "lines": [
+        "Nathan looks at him and says four words.",
+        "You are that man!"
+      ],
+      "scripture": {
+        "reference": "2 Samuel 12:7",
+        "translation": "Berean Standard Bible",
+        "text": "You are that man!",
+        "spoken": true
+      }
+    },
+    {
+      "id": "teach",
+      "kicker": "Why the story worked",
+      "level": 0.9,
+      "lines": [
+        "Here's why the story worked. David could see the sin clearly, as long as it belonged to somebody else.",
+        "So can we. We're experts on other people's faults and strangers to our own."
+      ]
+    },
+    {
+      "id": "confess",
+      "kicker": "Six words back",
+      "level": 0.7,
+      "lines": [
+        "A king could have had Nathan killed. David says six words instead.",
+        "I have sinned against the LORD."
+      ],
+      "scripture": {
+        "reference": "2 Samuel 12:13",
+        "translation": "Berean Standard Bible",
+        "text": "I have sinned against the LORD.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The way out of a blind spot starts when you let someone tell you the truth."
+      ],
+      "titleCard": [
+        "Let someone tell you the truth.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

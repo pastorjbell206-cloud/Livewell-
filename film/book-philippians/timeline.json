@@ -1,0 +1,172 @@
+{
+ "length": 129.12,
+ "chapters": [
+  {
+   "id": "warm",
+   "kicker": "A letter between friends",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 19.54,
+   "lines": [
+    {
+     "text": "Philippians is Paul's warmest letter. He writes from prison, facing a trial that could end in his death.",
+     "start": 2.6,
+     "end": 8.7
+    },
+    {
+     "text": "He writes to the church that had stood by him from the start, and had just sent him a gift by the hand of Epaphroditus.",
+     "start": 9.44,
+     "end": 15.54
+    },
+    {
+     "text": "I thank my God every time I remember you.",
+     "start": 16.16,
+     "end": 18.64
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 18.74,
+   "end": 34.62,
+   "lines": [
+    {
+     "text": "Thanks and news from prison. A call to stand together, with the hymn to Christ at its center. Knowing Christ, and pressing on. Then last appeals and thanks.",
+     "start": 19.64,
+     "end": 30.56
+    },
+    {
+     "text": "The hymn of chapter two shapes all that follows.",
+     "start": 31.18,
+     "end": 33.72
+    }
+   ]
+  },
+  {
+   "id": "joy",
+   "kicker": "Watch for: joy",
+   "level": 0.5,
+   "start": 33.82,
+   "end": 52.02,
+   "lines": [
+    {
+     "text": "Words for joy come more than a dozen times in a letter written in chains.",
+     "start": 34.72,
+     "end": 38.6
+    },
+    {
+     "text": "Rejoice in the Lord always. I will say it again: Rejoice!",
+     "start": 39.14,
+     "end": 43.48
+    },
+    {
+     "text": "Paul's joy rests not on his circumstances but on the Lord. It has looked at suffering and death and not been undone.",
+     "start": 44.08,
+     "end": 51.12
+    }
+   ]
+  },
+  {
+   "id": "hymn",
+   "kicker": "Watch for: the hymn",
+   "level": 0.7,
+   "start": 51.22,
+   "end": 69.7,
+   "lines": [
+    {
+     "text": "At the letter's heart stands what many think was an early hymn. Christ, in the form of God, emptied himself, took the form of a servant, and was obedient to death on a cross. And God exalted him.",
+     "start": 52.12,
+     "end": 64.58
+    },
+    {
+     "text": "Humility here is the free choice to use one's place for others.",
+     "start": 65.22,
+     "end": 68.8
+    }
+   ]
+  },
+  {
+   "id": "press",
+   "kicker": "Watch for: pressing on",
+   "level": 0.85,
+   "start": 68.9,
+   "end": 87.72,
+   "lines": [
+    {
+     "text": "Paul counts his impressive credentials as loss, to gain Christ and a righteousness from God through faith.",
+     "start": 69.8,
+     "end": 75.88
+    },
+    {
+     "text": "I count all things as loss compared to the surpassing excellence of knowing Christ Jesus my Lord.",
+     "start": 76.56,
+     "end": 82.1
+    },
+    {
+     "text": "He has not arrived. Like a runner, he presses on toward the goal.",
+     "start": 82.76,
+     "end": 86.82
+    }
+   ]
+  },
+  {
+   "id": "content",
+   "kicker": "Watch for: a famous line",
+   "level": 0.7,
+   "start": 86.92,
+   "end": 103.56,
+   "lines": [
+    {
+     "text": "Paul calls the church to pray instead of worrying. Then comes a much quoted line.",
+     "start": 87.82,
+     "end": 92.58
+    },
+    {
+     "text": "I can do all things through Christ who gives me strength.",
+     "start": 93.14,
+     "end": 96.02
+    },
+    {
+     "text": "In context it's not a promise of success. It's the strength to be content in hunger and in plenty.",
+     "start": 96.64,
+     "end": 102.66
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 102.76,
+   "end": 119.06,
+   "lines": [
+    {
+     "text": "Read it whole, as a letter between friends. It takes about fifteen minutes aloud. Watch the words joy, gospel, partnership, and mind.",
+     "start": 103.66,
+     "end": 112.94
+    },
+    {
+     "text": "Read chapter two slowly, and the famous line of chapter four with the verses around it.",
+     "start": 113.6,
+     "end": 118.16
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 118.26,
+   "end": 123.017,
+   "lines": [
+    {
+     "text": "It's a letter about joy, written in chains.",
+     "start": 119.16,
+     "end": 122.117
+    }
+   ]
+  }
+ ]
+}

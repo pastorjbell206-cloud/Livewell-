@@ -1,0 +1,196 @@
+{
+ "length": 147.13,
+ "chapters": [
+  {
+   "id": "church",
+   "kicker": "A real church",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 16.34,
+   "lines": [
+    {
+     "text": "First Corinthians is a real letter to a real church with real trouble. The church in Corinth was young, rich in gifts and eloquent speech, and coming apart.",
+     "start": 2.6,
+     "end": 12.38
+    },
+    {
+     "text": "Paul neither gives up on it nor flatters it.",
+     "start": 13.02,
+     "end": 15.44
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 15.54,
+   "end": 31.18,
+   "lines": [
+    {
+     "text": "Chapters one to six answer what Paul has heard by report. Chapters seven to sixteen answer the questions the Corinthians wrote to him, many marked by the words now about.",
+     "start": 16.44,
+     "end": 26.38
+    },
+    {
+     "text": "The letter begins with the cross and ends with the resurrection.",
+     "start": 27.06,
+     "end": 30.28
+    }
+   ]
+  },
+  {
+   "id": "cross",
+   "kicker": "Watch for: the cross",
+   "level": 0.5,
+   "start": 30.38,
+   "end": 50.4,
+   "lines": [
+    {
+     "text": "Corinth prized eloquence, knowledge, and status. Paul answers with a crucified Messiah, which looked like foolishness.",
+     "start": 31.28,
+     "end": 38.5
+    },
+    {
+     "text": "For I resolved to know nothing while I was with you except Jesus Christ and Him crucified.",
+     "start": 39.04,
+     "end": 44.34
+    },
+    {
+     "text": "The cross doesn't only save. It reorders what counts as strength and wisdom.",
+     "start": 45.04,
+     "end": 49.5
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "kicker": "Watch for: one body",
+   "level": 0.65,
+   "start": 49.6,
+   "end": 67.5,
+   "lines": [
+    {
+     "text": "The Spirit gives varied gifts to one body for the common good. Division is not a matter of taste. It's an attack on what God is building.",
+     "start": 50.5,
+     "end": 58.08
+    },
+    {
+     "text": "Now you are the body of Christ, and each of you is a member of it.",
+     "start": 58.66,
+     "end": 62.2
+    },
+    {
+     "text": "Unity is not sameness, and the weaker members are indispensable.",
+     "start": 62.82,
+     "end": 66.6
+    }
+   ]
+  },
+  {
+   "id": "love",
+   "kicker": "Watch for: love",
+   "level": 0.8,
+   "start": 66.7,
+   "end": 84.36,
+   "lines": [
+    {
+     "text": "Chapter thirteen is often read at weddings. In its setting it's a rebuke to a church competing over spiritual gifts.",
+     "start": 67.6,
+     "end": 74.16
+    },
+    {
+     "text": "Love is patient, love is kind.",
+     "start": 74.74,
+     "end": 76.8
+    },
+    {
+     "text": "Knowledge puffs up. Love builds up. Without love, even the most impressive gifts amount to nothing.",
+     "start": 77.34,
+     "end": 83.46
+    }
+   ]
+  },
+  {
+   "id": "raised",
+   "kicker": "Watch for: the resurrection",
+   "level": 0.9,
+   "start": 83.56,
+   "end": 101.3,
+   "lines": [
+    {
+     "text": "Some in Corinth denied that the dead rise. Paul restates the gospel. Christ died, was buried, was raised on the third day, and appeared to many.",
+     "start": 84.46,
+     "end": 93.84
+    },
+    {
+     "text": "But Christ has indeed been raised from the dead.",
+     "start": 94.5,
+     "end": 96.74
+    },
+    {
+     "text": "His rising is the firstfruits of all who belong to him.",
+     "start": 97.3,
+     "end": 100.4
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where churches differ",
+   "level": 0.55,
+   "start": 100.5,
+   "end": 127.42,
+   "lines": [
+    {
+     "text": "Some passages are hard, and faithful churches reach different answers: marriage, singleness, and divorce in chapter seven, head coverings in worship in chapter eleven, and gifts like tongues and the place of women in leading worship in chapters twelve to fourteen.",
+     "start": 101.4,
+     "end": 117.0
+    },
+    {
+     "text": "Readers weigh whether Paul grounds his words in creation, the gospel, or the custom of the day, and they weigh them differently. This film takes no side.",
+     "start": 117.68,
+     "end": 126.52
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 126.62,
+   "end": 136.36,
+   "lines": [
+    {
+     "text": "Start with chapters one to four, read as one piece.",
+     "start": 127.52,
+     "end": 130.56
+    },
+    {
+     "text": "Ask of each chapter: what has the crucified and risen Lord to do with this?",
+     "start": 131.14,
+     "end": 135.46
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 135.56,
+   "end": 141.033,
+   "lines": [
+    {
+     "text": "Paul's counsel near the end is short.",
+     "start": 136.46,
+     "end": 138.26
+    },
+    {
+     "text": "Do everything in love.",
+     "start": 138.8,
+     "end": 140.133
+    }
+   ]
+  }
+ ]
+}

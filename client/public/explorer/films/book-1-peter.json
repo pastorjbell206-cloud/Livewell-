@@ -1,0 +1,158 @@
+{
+  "slug": "book-1-peter",
+  "title": "1 Peter: hope for strangers",
+  "group": "books",
+  "status": "finished",
+  "book": "1-peter",
+  "mark": "book-1-peter",
+  "line": {
+    "younger": "A letter of hope to people who felt like strangers in their own towns: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "1 Peter as a whole book: a letter to strangers, a living hope, God's people, doing good without striking back, casting every care on God, and where to begin."
+  },
+  "poster": "In a town square people dance in a ring at a festival, while a small family walks away from it down a side street.",
+  "frames": [
+    {
+      "id": "strangers",
+      "name": "Strangers in their own towns",
+      "still": "In a town square people dance in a ring at a festival, while a small family walks away from it down a side street.",
+      "younger": "First Peter is a letter of hope. It was written to followers of Jesus who had become strangers in their own towns. When they stopped going to the old feasts and parties, their neighbours turned against them.",
+      "older": "First Peter is a letter of hope to believers who had become strangers in their own towns. They had left the festivals that held town life together, and were insulted and slandered. They had not lost their homes, but they had lost their place.",
+      "verse": {
+        "ref": "1 Peter 2:11",
+        "text": "as foreigners and exiles"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in four panels, with two people, a house, a sunrise and a shepherd's crook over them. A gold rule lies under the first panel.",
+      "younger": "The letter has four parts. Who you are. How to live among your neighbours. How to suffer for doing good. And a last word to the church's leaders, and to everyone.",
+      "older": "Four movements: who you are; how to live among neighbours who slander you; suffering for doing good; and a word to elders and to all. One pattern runs through it, first for Christ and then for his people: suffering now, and glory after.",
+      "verse": {
+        "ref": "1 Peter 5:10",
+        "text": "after you have suffered for a little while, the God of all grace"
+      }
+    },
+    {
+      "id": "hope",
+      "name": "Watch for: a living hope",
+      "still": "Travellers walk a long road toward the hills as the sun rises gold over them.",
+      "younger": "Watch for hope. Peter says God has given his people a living hope, because Jesus rose from the dead. Hard times test their faith the way gold is tested. And something waits for them that can never spoil or fade.",
+      "older": "God has given new birth into a living hope through the resurrection of Jesus. An inheritance waits that cannot spoil. Trials test faith, more precious than gold, and they are a short time before glory.",
+      "verse": {
+        "ref": "1 Peter 1:3",
+        "text": "a living hope through the resurrection of Jesus Christ from the dead"
+      }
+    },
+    {
+      "id": "people",
+      "name": "Watch for: God's own people",
+      "still": "A house of stone rises course by course, two builders carry stones to it, and the cornerstone at its foot is gold.",
+      "younger": "Watch for the names Peter gives them. They had lost their place in their towns, but they belong to God's people. Peter, a Jew, gives them names from Israel's own Bible, and welcomes them in.",
+      "older": "Peter gives a mostly Gentile church the titles God gave Israel at Sinai. He is a Jew, writing in Israel's own Scriptures to welcome Gentiles into Israel's blessings. Using the New Testament to justify contempt for Jews is false.",
+      "verse": {
+        "ref": "1 Peter 2:9",
+        "text": "But you are a chosen people, a royal priesthood, a holy nation"
+      }
+    },
+    {
+      "id": "good",
+      "name": "Watch for: do good, and do not strike back",
+      "still": "At the door of her house a woman holds out bread to a neighbour, while two others watch from across the street.",
+      "younger": "Watch what Peter says to do when people are unkind. Do not pay them back. Do good to them, and bless them. Jesus did not strike back when people hurt him. And be ready to explain, gently, why you have hope.",
+      "older": "To suffer for doing good, without striking back, is to walk where Christ walked. Peter's readers neither retaliate nor retreat. They do good and give a gentle answer. These chapters never say that someone being harmed must stay and bear it.",
+      "verse": {
+        "ref": "1 Peter 2:23",
+        "text": "When they heaped abuse on Him, He did not retaliate"
+      }
+    },
+    {
+      "id": "cares",
+      "name": "Watch for: God cares for you",
+      "still": "A shepherd stands among his sheep on a hillside, a lamb at his side, and a gold sun stands over the hill.",
+      "younger": "Watch the end of the letter. Peter tells the church's leaders to care for their people like shepherds. And he tells everyone to give all their worries to God, because he cares for them.",
+      "older": "Elders are to shepherd God's flock willingly, as examples. Everyone is to be humble, and to cast every anxiety on God. Peter does not tell sufferers to carry it alone. After a little while, the God of all grace will restore them.",
+      "verse": {
+        "ref": "1 Peter 5:7",
+        "text": "Cast all your anxiety on Him, because He cares for you."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? Read the whole letter at once. It takes about twenty minutes. Begin with chapter 1, about the living hope.",
+      "older": "Read it in one sitting, as a real letter to frightened people. Read the household passages beside the picture of Christ in chapter 2. Where churches differ, read more than one view before you settle.",
+      "verse": {
+        "ref": "1 Peter 3:15",
+        "text": "the reason for the hope that is in you."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Peter says to bless people who are unkind instead of paying them back. What is one way to be kind to someone who has not been kind to you?",
+    "older": "Peter asks his readers for the reason for the hope that is in them. If someone asked you, what would you say?"
+  },
+  "read": [
+    {
+      "label": "1 Peter 1",
+      "href": "/study/bible/1-peter/1"
+    },
+    {
+      "label": "1 Peter 2",
+      "href": "/study/bible/1-peter/2"
+    },
+    {
+      "label": "1 Peter 3",
+      "href": "/study/bible/1-peter/3"
+    },
+    {
+      "label": "1 Peter 4",
+      "href": "/study/bible/1-peter/4"
+    },
+    {
+      "label": "1 Peter 5",
+      "href": "/study/bible/1-peter/5"
+    }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess the living hope of the risen Christ. They differ on who wrote the letter, Peter himself as it says, with Silvanus's help, or a follower in his name; on how to understand God's choosing; on how Israel and the church fit together in God's purpose; on Christ's preaching to the spirits in prison; on how baptism and salvation are joined; and on how the words to wives and husbands apply today. On one thing the site takes a side: Peter is a Jew writing in Israel's own words, and using the New Testament to justify contempt for Jews is false. Using Peter's words to slaves to defend slavery was a misuse, and it was wrong. Nothing in its words to wives or slaves asks anyone to remain where they or their children are being harmed. If you are in an abusive marriage, seek safety first. Otherwise this moving picture takes no side; the readings are set out on",
+    "links": [
+      {
+        "label": "the 1 Peter page of the Study Bible",
+        "href": "/study/bible/1-peter"
+      },
+      {
+        "label": "Find Help",
+        "href": "/help"
+      }
+    ]
+  },
+  "care": "If something hard is happening to you or to someone you love, you do not have to carry it alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "1 Peter in the Study Bible: the whole book",
+      "href": "/study/bible/1-peter"
+    },
+    {
+      "label": "Why do bad things happen? (a moving picture)",
+      "href": "/study/explorer/watch/why-bad-things-happen"
+    },
+    {
+      "label": "Hebrews: hold on to Jesus (a moving picture)",
+      "href": "/study/explorer/watch/book-hebrews"
+    },
+    {
+      "label": "The Church and the Spirit: a stop on the map",
+      "href": "/study/explorer/church"
+    }
+  ],
+  "end": {
+    "label": "Start reading: 1 Peter 1",
+    "href": "/study/bible/1-peter/1"
+  }
+}

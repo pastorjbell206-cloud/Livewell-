@@ -16,6 +16,7 @@ import { roadById, roadHref } from "@/lib/startRoads";
 import { TRACKS_PATH, fetchTrack, kindLabel, leaderHref, nextSession, printHref, sessionHref, trackHref, withoutTrack } from "@/lib/tracks";
 import { ProgressBar, useLoad, useTracksProgress } from "./parts";
 import "./tracks.css";
+import NarratedFilm from "@/components/NarratedFilm";
 
 export default function Track() {
   const [, params] = useRoute("/tracks/:slug");
@@ -58,6 +59,8 @@ export default function Track() {
                 ) : undefined
               }
             />
+
+            <NarratedFilm page={trackHref(slug)} />
 
             <section className="tk-sec" aria-labelledby="tk-sessions">
               <div className="tk-col">

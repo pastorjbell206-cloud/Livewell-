@@ -1,0 +1,137 @@
+{
+  "title": "Romans: the good news, set out",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-romans",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "letter",
+      "kicker": "A letter to Rome",
+      "level": 0.2,
+      "lines": [
+        "Romans is a letter, the longest Paul wrote. He sent it to the Christians in Rome, Jewish and Gentile believers he had not yet met, to introduce himself and the gospel he preached. He states his theme early.",
+        "I am not ashamed of the gospel, because it is the power of God for salvation to everyone who believes."
+      ],
+      "scripture": {
+        "reference": "Romans 1:16",
+        "text": "I am not ashamed of the gospel, because it is the power of God for salvation to everyone who believes",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Romans moves in large blocks. What is wrong with the whole human race. What God has done about it. The new life that follows. God and Israel. And the life of a people shaped by mercy.",
+        "The first great turn is two words: but now."
+      ],
+      "scripture": {
+        "reference": "Romans 3:21",
+        "text": "But now, apart from the law, the righteousness of God has been revealed",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "sin",
+      "kicker": "Watch for: what is wrong",
+      "level": 0.5,
+      "lines": [
+        "Paul first shows that the whole human race, Gentile and Jew, stands guilty before God.",
+        "For all have sinned and fall short of the glory of God.",
+        "Romans treats sin as more than wrong acts. It's a power that reigns. So people need more than self-improvement. They need to be rescued."
+      ],
+      "scripture": {
+        "reference": "Romans 3:23",
+        "text": "for all have sinned and fall short of the glory of God",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "grace",
+      "kicker": "Watch for: set right, freely",
+      "level": 0.7,
+      "lines": [
+        "God sets people right with himself freely, by grace, through Jesus' death, and they receive it by faith.",
+        "Faith means trust. It isn't a good deed that earns a reward."
+      ],
+      "scripture": {
+        "reference": "Romans 3:24",
+        "text": "justified freely by His grace through the redemption that is in Christ Jesus.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "life",
+      "kicker": "Watch for: the new life",
+      "level": 0.85,
+      "lines": [
+        "Grace doesn't mean going on in sin. Believers have died with Christ and live a new life.",
+        "There is now no condemnation for those who are in Christ Jesus.",
+        "The Spirit gives life, makes them God's children, and holds them in a love nothing can break."
+      ],
+      "scripture": {
+        "reference": "Romans 8:1",
+        "text": "there is now no condemnation for those who are in Christ Jesus.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "israel",
+      "kicker": "Watch for: God and Israel",
+      "level": 0.7,
+      "lines": [
+        "Chapters nine to eleven are not a detour. Paul asks whether God has kept his promises to Israel, and he answers that God's word has not failed.",
+        "Then he tells a church of Jewish and Gentile believers to welcome one another."
+      ],
+      "scripture": {
+        "reference": "Romans 15:7",
+        "text": "Accept one another, then, just as Christ accepted you",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "All Christians confess that God sets people right with himself by grace, through Christ. They read some of Paul's phrases in more than one way: what he means by works of the law, and whether one phrase means faith in Christ or the faithfulness of Christ.",
+        "This film takes no side."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter one, and read it aloud, in large sections. Many famous verses mean more inside their paragraph than on a poster.",
+        "The key chapters are one, three, four, five, six, eight, nine, and twelve."
+      ],
+      "scripture": {
+        "reference": "Romans 1:7",
+        "text": "To all in Rome who are loved by God and called to be saints: Grace and peace to you",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Romans is the good news, set out for people Paul had not yet met."
+      ],
+      "titleCard": [
+        "The power of God for salvation.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

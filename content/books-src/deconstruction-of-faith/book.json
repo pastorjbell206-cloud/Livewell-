@@ -1,0 +1,48 @@
+{
+  "_about": "The source of this book's PDF and EPUB (scripts/build-book-files.mjs). The folder is named by the book's id, its folder under client/public/ebook/; the title and subtitle come from client/src/data/covers.json. The sec*.xhtml files are the author's text, one block to a line: taken from the original EPUB kept (untouched) in content/held-downloads/originals/, built once unchanged and verified against it, then edited at his instruction (see `edited`). The original PDF and EPUB carry the same text (compared letter by letter; the PDF adds only its running heads). Correct the text there, change `modified`, and run `node scripts/build-book-files.mjs deconstruction-of-faith --verify`. `copyright` is the notice the original files printed, without the PDF's unfilled ISBN line.",
+  "id": "deconstruction-of-faith",
+  "author": "James Bell",
+  "identifier": "urn:livewell:decon-v2",
+  "language": "en",
+  "date": "2026",
+  "modified": "2026-11-26T12:00:00Z",
+  "edited": {
+    "date": "2026-11-25",
+    "instruction": "James: \"i also want you to go through all the book, pdfs, and downloadable content to make it sound human and like me\"; and, the same day, \"use full paragraphs in the books too\".",
+    "record": "docs/work/elite/voice-books/deconstruction-of-faith.md"
+  },
+  "copyright": [
+    "Copyright © 2026 by James Bell. All rights reserved.",
+    "Published by LiveWell by James Bell. Unless otherwise noted, Scripture quotations are from the English Standard Version (ESV)."
+  ],
+  "files": {
+    "pdf": "The-Deconstruction-of-Faith.pdf",
+    "epub": "The-Deconstruction-of-Faith.epub"
+  },
+  "original": {
+    "pdf": "The-Deconstruction-of-Faith.pdf",
+    "epub": "The-Deconstruction-of-Faith.epub"
+  },
+  "sections": [
+    "sec01.xhtml",
+    "sec02.xhtml",
+    "sec03.xhtml",
+    "sec04.xhtml",
+    "sec05.xhtml",
+    "sec06.xhtml",
+    "sec07.xhtml",
+    "sec08.xhtml",
+    "sec09.xhtml",
+    "sec10.xhtml",
+    "sec11.xhtml",
+    "sec12.xhtml",
+    "sec13.xhtml",
+    "sec14.xhtml",
+    "sec15.xhtml",
+    "sec16.xhtml",
+    "sec17.xhtml",
+    "sec18.xhtml",
+    "sec19.xhtml",
+    "sec20.xhtml"
+  ]
+}

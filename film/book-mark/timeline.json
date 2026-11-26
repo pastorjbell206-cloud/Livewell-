@@ -1,0 +1,162 @@
+{
+ "length": 120.88,
+ "chapters": [
+  {
+   "id": "fast",
+   "kicker": "The story at a run",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 21.22,
+   "lines": [
+    {
+     "text": "Mark is the shortest of the four Gospels, and it moves at speed. There's no birth story and no long sermon. The word translated immediately appears more than forty times.",
+     "start": 2.6,
+     "end": 13.56
+    },
+    {
+     "text": "Its first line works as a title.",
+     "start": 14.1,
+     "end": 15.86
+    },
+    {
+     "text": "This is the beginning of the gospel of Jesus Christ, the Son of God.",
+     "start": 16.46,
+     "end": 20.32
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 20.42,
+   "end": 34.88,
+   "lines": [
+    {
+     "text": "The first half is set in Galilee, full of authority and questions. Its hinge is Peter's confession.",
+     "start": 21.32,
+     "end": 27.26
+    },
+    {
+     "text": "From there the story walks the road to Jerusalem, tells the passion by the hour, and ends at an empty tomb.",
+     "start": 27.84,
+     "end": 33.98
+    }
+   ]
+  },
+  {
+   "id": "who",
+   "kicker": "Watch for: who is this man?",
+   "level": 0.5,
+   "start": 34.08,
+   "end": 47.74,
+   "lines": [
+    {
+     "text": "The question of who Jesus is runs through the whole book. You know the answer from the first line.",
+     "start": 34.98,
+     "end": 40.5
+    },
+    {
+     "text": "The drama is in watching the characters struggle toward it, often getting the words right and the meaning wrong.",
+     "start": 41.08,
+     "end": 46.84
+    }
+   ]
+  },
+  {
+   "id": "way",
+   "kicker": "Watch for: the way of the cross",
+   "level": 0.7,
+   "start": 46.94,
+   "end": 67.02,
+   "lines": [
+    {
+     "text": "On the road to Jerusalem, Jesus predicts his death and resurrection three times. And each time he teaches what following him means: deny yourself, and be the servant of all.",
+     "start": 47.84,
+     "end": 59.0
+    },
+    {
+     "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.",
+     "start": 59.58,
+     "end": 66.12
+    }
+   ]
+  },
+  {
+   "id": "grace",
+   "kicker": "Watch for: friends who fail",
+   "level": 0.8,
+   "start": 66.22,
+   "end": 80.72,
+   "lines": [
+    {
+     "text": "Mark doesn't flatter the disciples. They misunderstand. They fall asleep in Gethsemane. They flee. And Peter denies Jesus three times.",
+     "start": 67.12,
+     "end": 76.36
+    },
+    {
+     "text": "Yet the message at the tomb names Peter in particular.",
+     "start": 76.94,
+     "end": 79.82
+    }
+   ]
+  },
+  {
+   "id": "centurion",
+   "kicker": "Watch for: who sees it first",
+   "level": 0.9,
+   "start": 79.92,
+   "end": 96.14,
+   "lines": [
+    {
+     "text": "The first human being in Mark to call Jesus the Son of God is a Roman centurion at the foot of the cross, at the moment of his death.",
+     "start": 80.82,
+     "end": 88.46
+    },
+    {
+     "text": "Truly this man was the Son of God!",
+     "start": 89.08,
+     "end": 91.36
+    },
+    {
+     "text": "The Son of God is recognized fully only at the cross.",
+     "start": 92.0,
+     "end": 95.24
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 95.34,
+   "end": 111.18,
+   "lines": [
+    {
+     "text": "Read Mark in one sitting if you can. Its force comes from its pace. The key chapters are one, four, eight, ten, thirteen, fifteen, and sixteen.",
+     "start": 96.24,
+     "end": 106.86
+    },
+    {
+     "text": "The oldest complete copies end with the women at the tomb.",
+     "start": 107.42,
+     "end": 110.28
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 110.38,
+   "end": 114.78,
+   "lines": [
+    {
+     "text": "Mark holds authority and suffering together.",
+     "start": 111.28,
+     "end": 113.88
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<!-- "Psalms: the prayer book of the Bible". A strip of 150 ticks, one per psalm, runs along the bottom for the
+     whole film. Above it: a book that receives words from above and prayers from below; the collection laid
+     out as a gateway, five books and a closing Hallelujah; tiles sorting so the laments stand out, and two
+     paths of lament, one that turns and one that stays low; three reasons for praise and a crowd joining one
+     voice; a crown in the dust and a ring set high; a bare cross with the same thin voice-lines rising.
+     People are dots. God and Christ are never drawn. The piles of tiles are not a count.
+     Book boundaries (client/public/bible/notes/psalms/intro.json, and the closing blessings at 41:13, 72:19,
+     89:52, 106:48 in the site's text): gateway 1-2 inside Book One 1-41; 42-72; 73-89; 90-106; 107-150, whose
+     last five psalms, 146-150, are the closing Hallelujah.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Psalms: the prayer book of the Bible</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const A0 = S("prayer-book", 0), A0E = E("prayer-book", 0), A1 = S("prayer-book", 1), AE = E("prayer-book");
+  const B0 = S("layout", 0), B0E = E("layout", 0), B1 = S("layout", 1), BE = E("layout");
+  const C0 = S("lament", 0), C0E = E("lament", 0), C1 = S("lament", 1), C2 = S("lament", 2), CE = E("lament");
+  const D0 = S("praise", 0), D0E = E("praise", 0), D1 = S("praise", 1), D2 = S("praise", 2), DE = E("praise");
+  const K0 = S("king", 0), K1 = S("king", 1), KE = E("king");
+  const J0 = S("jesus", 0), J1 = S("jesus", 1), J2 = S("jesus", 2), JE = E("jesus");
+  const ST = S("start", 0), STE = E("start"), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(150);
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), rows = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); rows.push(cur);
+    const lh = Math.round(size * 1.18), ts = rows.map((r, i) => txt(g, big ? "disp" : "ital", cx, y + i * lh, r, size));
+    const ref = txt(g, "lab", cx, y + (rows.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 13); return { g, ts, ref }; };
+  // thin voice-lines: the same mark for every prayer in the film
+  const voices = (parent, n, seed) => { const r = rng(seed); return [...Array(n)].map(() => ({ ph: r(), sp: 0.26 + r() * 0.14, dx: (r() - 0.5), e: el("path", { stroke: STONE, "stroke-width": 2.2, "stroke-linecap": "round" }, parent) })); };
+  const speak = (vs, t, x, y, top, spread, a, dir = -1) => vs.forEach((v) => { const k = (t * v.sp + v.ph) % 1, yy = dir < 0 ? mix(y, top, k) : mix(top, y, k), w = 6 * Math.sin(k * 8 + v.ph * 6);
+    v.e.setAttribute("d", `M${(x + v.dx * spread + w).toFixed(1)} ${yy.toFixed(1)} q7 -11 0 -22`); v.e.setAttribute("opacity", (a * 0.75 * Math.sin(Math.PI * k)).toFixed(3)); });
+
+  // ================= the strip: 150 psalms =================
+  const BOOKS = [[1, 41], [42, 72], [73, 89], [90, 106], [107, 150]], KEY = [1, 2, 22, 23, 51, 73, 89, 110];
+  const gStrip = el("g", {}, world), SX = (n) => 189 + (n - 1) * 6.05, SY = 532;
+  const ticks = [...Array(150)].map((_, i) => el("line", { x1: SX(i + 1), x2: SX(i + 1), y1: SY - 9, y2: SY + 3, stroke: STONE, "stroke-width": 2, "stroke-linecap": "round" }, gStrip));
+  const s1 = txt(gStrip, "lab", SX(1), SY + 24, "1", 12), s150 = txt(gStrip, "lab", SX(150), SY + 24, "150", 12);
+  const keyNums = KEY.map((n, i) => txt(gStrip, "lab", SX(n) + (n === 2 ? 9 : n === 23 ? 9 : n === 1 ? -3 : n === 22 ? -7 : 0), SY - 17, String(n), 12, { fill: "#7A6010" }));
+  const bigNum = txt(world, "disp", 640, 330, "", 170);
+
+  // ================= 1: the book =================
+  const gBook = el("g", {}, world), pageD = (s) => `M0 -70 C${-50 * s} -96 ${-150 * s} -96 ${-205 * s} -76 L${-205 * s} 78 C${-150 * s} 58 ${-50 * s} 58 0 84 Z`;
+  const pgL = el("path", { d: pageD(1), fill: PAPER, stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round", pathLength: 1, "stroke-dasharray": 1 }, gBook), pgR = el("path", { d: pageD(-1), fill: PAPER, stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round", pathLength: 1, "stroke-dasharray": 1 }, gBook);
+  const pLines = []; [1, -1].forEach((s) => [-44, -22, 0, 22, 44].forEach((dy) => pLines.push(line(gBook, `M${-28 * s} ${dy - 8} C${-80 * s} ${dy - 24} ${-140 * s} ${dy - 24} ${-184 * s} ${dy - 10}`, { stroke: STONE, "stroke-width": 2.6 }))));
+  const reader = el("rect", { x: -184, y: -40, width: 0, height: 9, rx: 4.5, fill: MUSTARD, opacity: 0.55 }, gBook);
+  const gDown = el("g", {}, world), down = voices(gDown, 9, 3); down.forEach((v) => v.e.setAttribute("stroke", MUSTARD));
+  const gUp = el("g", {}, world), upV = voices(gUp, 12, 5);
+  const crowdA = [...Array(22)].map((_, i) => el("circle", { cx: 420 + (i % 11) * 44 + (R() - 0.5) * 10, cy: 470 - Math.floor(i / 11) * 26 + (R() - 0.5) * 6, r: 8, fill: INK }, world));
+  const counter = txt(world, "disp", 1010, 320, "0", 110), counterLab = txt(world, "lab", 1010, 360, "POEMS");
+  const vA = verse(SC["prayer-book"], 640, 118, 22, 90, false);
+
+  // ================= 2: the collection laid out (also used for the king) =================
+  const gRow = el("g", {}, world), RX = (n) => 150 + (n - 1) * 6.6, RY = 330;
+  const bars = [...Array(150)].map((_, i) => el("rect", { x: RX(i + 1) - 1.8, y: RY - 46, width: 3.6, height: 92, rx: 1.8, fill: STONE }, gRow));
+  const gate = line(gRow, `M${RX(1) - 8} ${RY + 52} V${RY - 66} H${RX(2) + 8} V${RY + 52}`, { stroke: MUSTARD, "stroke-width": 4 });
+  const NAMES = ["BOOK ONE", "BOOK TWO", "BOOK THREE", "BOOK FOUR", "BOOK FIVE"];
+  const brackets = BOOKS.map(([a, b], i) => ({ br: line(gRow, `M${RX(a) - 2} ${RY + 60} V${RY + 70} H${RX(b) + 2} V${RY + 60}`, { stroke: INK, "stroke-width": 2.2 }), lab: txt(gRow, "lab", (RX(a) + RX(b)) / 2, RY + (i % 2 ? 120 : 96), NAMES[i], 14) }));
+  const hal = txt(gRow, "lab", RX(148), RY - 78, "HALLELUJAH", 14, { fill: "#7A6010", "text-anchor": "end" }), halBox = el("rect", { x: RX(146) - 5, y: RY - 54, width: RX(150) - RX(146) + 10, height: 108, rx: 5, fill: "none", stroke: MUSTARD, "stroke-width": 2.5 }, gRow);
+  const bless = BOOKS.slice(0, 4).map(([, b]) => el("circle", { cx: RX(b), cy: RY - 62, r: 6, fill: MUSTARD }, gRow));
+  const vB = verse(SC.layout, 640, 150, 24, 90, false);
+  const crown = el("path", { d: "M-26 0 L-26 -24 L-13 -10 L0 -30 L13 -10 L26 -24 L26 0 Z", fill: INK }, world), dust = line(world, "M0 0 h70", { stroke: LINE, "stroke-width": 3 });
+  const ringK = el("circle", { r: 34, fill: "none", stroke: MUSTARD, "stroke-width": 5 }, world), steady = line(world, "M110 480 H1170", { stroke: MUSTARD, "stroke-width": 4 });
+  const vK = verse(SC.king, 640, 132, 26, 90, false);
+
+  // ================= 3: laments =================
+  const gTiles = el("g", {}, world), PILES = [20, 14, 11, 8, 7], PX = [330, 485, 640, 795, 950], tiles = [];
+  PILES.forEach((n, p) => { for (let k = 0; k < n; k++) tiles.push({ p, k }); });
+  const order = tiles.map((_, i) => i).sort((a, b) => ((a * 37) % 60) - ((b * 37) % 60));
+  order.forEach((ti, slot) => { const tl = tiles[ti]; tl.gx = 436 + (slot % 12) * 34 + 4; tl.gy = 196 + Math.floor(slot / 12) * 34; tl.px = PX[tl.p] + ((tl.k % 3) - 1) * 34 - 13; tl.py = 410 - Math.floor(tl.k / 3) * 34 - 13; tl.e = el("rect", { width: 26, height: 26, rx: 4 }, gTiles); });
+  const lamLab = txt(gTiles, "lab", 330, 462, "LAMENTS");
+  const gRain = el("g", {}, world), rain = [...Array(40)].map(() => ({ x: R() * 1280, ph: R(), sp: 0.22 + R() * 0.12, len: 16 + R() * 14, e: el("line", { stroke: STONE, "stroke-width": 1.6, "stroke-linecap": "round" }, gRain) }));
+  const gPray = el("g", {}, world), prayV = voices(gPray, 7, 9), prayDot = el("circle", { cx: 640, cy: 452, r: 16, fill: INK }, world);
+  const vC = verse(SC.lament, 640, 222, 56, 30, true);
+  const gPaths = el("g", {}, world);
+  const pathA = line(gPaths, "M200 250 C320 250 380 430 520 430 S760 380 860 310 S1010 196 1090 190", { stroke: INK, "stroke-width": 3.5 }), pathB = line(gPaths, "M200 330 C300 330 360 478 500 478 S760 470 900 474", { stroke: INK, "stroke-width": 3.5 });
+  const endA = el("circle", { cx: 1090, cy: 190, r: 12, fill: BONE, stroke: MUSTARD, "stroke-width": 4 }, gPaths), endB = el("circle", { cx: 900, cy: 474, r: 12, fill: BONE, stroke: INK, "stroke-width": 4 }, gPaths);
+  const labA = txt(gPaths, "lab", 1090, 158, "TRUST"), labB = txt(gPaths, "lab", 1000, 480, "PSALM 88"), walkA = el("circle", { r: 13, fill: INK }, gPaths), walkB = el("circle", { r: 13, fill: INK }, gPaths);
+
+  // ================= 4: praise =================
+  const gP = el("g", {}, world);
+  const p1 = el("g", {}, gP); el("circle", { cx: 0, cy: -44, r: 30, fill: "none", stroke: MUSTARD, "stroke-width": 5 }, p1); el("path", { d: "M-110 40 Q-60 -30 -10 20 Q40 -40 110 40 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, p1);
+  const p2 = el("g", {}, gP), seaL = [], seaR = []; [-40, -20, 0, 20, 40].forEach((dy) => { seaL.push(el("path", { fill: "none", stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, p2)); seaR.push(el("path", { fill: "none", stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, p2)); });
+  const seaRoad = line(p2, "M0 52 V-52", { stroke: INK, "stroke-width": 4 });
+  const p3 = el("g", {}, gP); el("path", { d: "M-100 -30 H-44 V52 H44 V-30 H100", fill: "none", stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round" }, p3); const lifted = el("circle", { r: 13, fill: INK }, p3), liftLine = line(p3, "M0 -96 V30", { stroke: MUSTARD, "stroke-width": 3 });
+  [p1, p2, p3].forEach((g, i) => move(g, 320 + i * 320, 320, 1.15));
+  const gChoir = el("g", {}, world), choirV = voices(gChoir, 26, 21), soloV = voices(gChoir, 5, 23);
+  const choir = [...Array(30)].map((_, i) => el("circle", { cx: 250 + (i % 15) * 56 + (R() - 0.5) * 12, cy: 468 - Math.floor(i / 15) * 30 + (R() - 0.5) * 6, r: 9, fill: i === 7 ? INK : STONE }, gChoir));
+  const vD = verse(SC.praise, 640, 200, 56, 28, true);
+
+  // ================= 6: the cross =================
+  const gCross = el("g", {}, world);
+  el("path", { d: "M330 470 Q640 350 950 470 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gCross);
+  const cross = line(gCross, "M640 412 V236 M590 290 H690", { stroke: INK, "stroke-width": 7 });
+  const crossV = voices(gCross, 7, 31), crowdV = voices(gCross, 16, 33);
+  const crowdJ = [...Array(16)].map((_, i) => el("circle", { cx: (i < 8 ? 150 : 1010) + (i % 8) * 17 + (R() - 0.5) * 8, cy: 462 - (i % 2) * 22, r: 8, fill: INK }, gCross));
+  const vJ = verse(SC.jesus, 640, 150, 52, 44, true);
+  const you = el("circle", { cx: 640, cy: 470, r: 14, fill: INK }, world);
+
+  const KF = [0.2, 0.47, 0.52, 0.6, 0.68, 0.76, 0.84, 0.93];   // where each key psalm falls in the spoken line (first: "Psalm one")
+  F.title("Psalms");
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => {
+    // ---- strip ----
+    const stripIn = up(t, A0, A0E - A0 - 0.4);
+    ticks.forEach((tk, i) => { const n = i + 1, on = clamp(stripIn * 150 - i) * (1 - up(t, END + 0.5, 0.6)); let col = STONE, w = 2, grow = 0;
+      const gw = span(t, B0 + 1.0, B0 + 3.4, 0.4) + span(t, ST + 0.2, ST + (STE - ST) * 0.2, 0.3); if (n <= 2 && gw > 0.3) { col = MUSTARD; w = 3; }
+      const ki = KEY.indexOf(n); if (ki >= 0 && t > ST + (STE - ST) * KF[ki]) { col = MUSTARD; w = 3.4; grow = 7 * up(t, ST + (STE - ST) * KF[ki], 0.4); }
+      set(tk, { stroke: col, "stroke-width": w, y1: SY - 9 - grow }); op(tk, on); });
+    op(s1, stripIn); op(s150, up(t, A0E - 0.6, 0.5) * (1 - up(t, END + 0.5, 0.6))); op(s1, stripIn * (1 - up(t, END + 0.5, 0.6)));
+    keyNums.forEach((k, i) => op(k, up(t, ST + (STE - ST) * KF[i], 0.4) * (1 - up(t, END + 0.5, 0.6))));
+    let bn = "", bo = 0; KEY.forEach((n, i) => { if (!i) return; const a = ST + (STE - ST) * KF[i], b = i < 7 ? ST + (STE - ST) * KF[i + 1] : STE + 0.5, v = span(t, a - 0.05, b + 0.1, 0.22); if (v > bo) { bo = v; bn = String(n); } });
+    if (bigNum.textContent !== bn) bigNum.textContent = bn; op(bigNum, bo);
+
+    // ---- 1: the book (returns for the close) ----
+    const back = up(t, CL - 0.5, 1.0), bookV = Math.max(up(t, A0 - 0.6, 0.5) * (1 - up(t, B0 - 0.5, 0.7)), back * (1 - up(t, END + 0.5, 0.6))); op(gBook, bookV);
+    if (bookV > 0) { const d = up(t, A0 - 0.5, 1.6); draw(pgL, Math.max(d, back)); draw(pgR, Math.max(d, back)); move(gBook, 640, (back ? 290 : 300) + 2 * Math.sin(t * 0.8), back ? 1.25 : 1.2);
+      pLines.forEach((l, i) => { draw(l, Math.max(up(t, A1 + 0.3 + i * 0.22, 0.7), back)); l.setAttribute("stroke", !back && t > A1 + (AE - A1) * 0.5 + i * 0.3 ? INK : STONE); });
+      const rk = up(t, CL + 0.3, END - CL - 0.2); set(reader, { x: -184, y: -68, width: (156 * rk).toFixed(1) }); op(reader, back ? 1 : 0); }
+    const half = A1 + (AE - A1) * 0.42;
+    const dv = span(t, A1 - 0.1, half + 0.6, 0.5, 0.7); op(gDown, dv); if (dv > 0) speak(down, t, 640, 228, 96, 330, dv, 1);
+    const uv = span(t, half, B0 - 0.3, 0.6, 0.6); op(gUp, uv); if (uv > 0) speak(upV, t, 640, 436, 384, 460, uv);
+    crowdA.forEach((c, i) => op(c, up(t, half - 0.3 + i * 0.04, 0.4) * (1 - up(t, B0 - 0.5, 0.5))));
+    const cnt = Math.round(150 * stripIn); if (counter.textContent !== String(cnt)) counter.textContent = String(cnt);
+    op(counter, span(t, A0 + 0.5, A1 + 0.2, 0.5)); op(counterLab, span(t, A0E - 1.2, A1 + 0.2, 0.5));
+    op(vA.g, span(t, A1 + 0.4, B0 - 0.2, 0.6));
+
+    // ---- 2: the row of 150, its gateway, five books and Hallelujah; and again for the king ----
+    const rowS = span(t, ST - 0.6, ST + (STE - ST) * 0.44, 0.5, 0.5), rowB = span(t, B0 - 0.3, C0 - 0.2, 0.5, 0.6), rowK = span(t, K1 - 0.5, J0 - 0.4, 0.6, 0.6), rv = Math.max(rowB, rowK, rowS); op(gRow, rv);
+    if (rv > 0) { const d = B0E - B0, bk = [0.42, 0.47, 0.52, 0.57, 0.62];
+      bars.forEach((b, i) => { const n = i + 1, bi = BOOKS.findIndex(([a, z]) => n >= a && n <= z); let col = STONE, o = up(t, B0 - 0.3 + i * 0.006, 0.4);
+        if (rowB > 0) { if (n <= 2 && t > B0 + 1.2) col = MUSTARD; else if (t > B0 + d * bk[bi] + 0.2) col = bi % 2 ? CHAR : INK; if (n >= 146 && t > B0 + d * 0.78) col = MUSTARD; }
+        else if (rowS > 0) { o = 1; col = n <= 2 ? MUSTARD : LINE; if (n === 1 && t > ST + (STE - ST) * KF[0]) col = INK; }
+        else { o = 1; col = bi === 2 && t < K1 + (KE - K1) * 0.55 ? INK : bi === 3 && t > K1 + (KE - K1) * 0.55 ? INK : LINE; }
+        b.setAttribute("fill", col); op(b, o); });
+      draw(gate, up(t, B0 + 1.0, 1.2)); op(gate, Math.max(rowB, rowS));
+      brackets.forEach((b, i) => { const a = B0 + d * bk[i]; draw(b.br, up(t, a, 0.6)); op(b.br, rowB); op(b.br, rowS > 0 && rowB <= 0 ? 0 : rowB); op(b.lab, rowB > 0 ? up(t, a + 0.1, 0.4) : rowS > 0 ? 0 : (i === 2 || i === 3 ? rowK : 0)); });
+      op(hal, rowB * up(t, B0 + d * 0.78, 0.5)); op(halBox, rowB * up(t, B0 + d * 0.78, 0.5));
+      bless.forEach((b, i) => { op(b, rowB * up(t, B1 + 0.5 + i * 0.5, 0.4)); b.setAttribute("r", (6 + 2 * span(t, B1 + 0.5 + i * 0.5, B1 + 1.6 + i * 0.5, 0.3)).toFixed(2)); }); }
+    op(vB.g, span(t, B1 - 0.2, C0 - 0.3, 0.5));
+    // the king: a steady line, a crown in the dust, a ring set high
+    const kv = span(t, K0 - 0.5, J0 - 0.4, 0.4, 0.6); op(steady, kv); draw(steady, up(t, K0 - 0.4, 1.6));
+    const d2 = KE - K1, cv = span(t, K1 + 0.8, K1 + d2 * 0.62, 0.6, 0.8), fall = up(t, K1 + 1.0, 1.4); op(crown, cv); op(dust, cv);
+    move(crown, RX(89) - 4, mix(RY - 150, RY - 58, fall), 1.5, mix(0, 68, fall)); dust.setAttribute("d", `M${RX(89) - 50} ${RY - 50} h92`);
+    const rk2 = up(t, K1 + d2 * 0.56, 1.2) * (1 - up(t, J0 - 0.6, 0.6)); op(ringK, rk2); set(ringK, { cx: (RX(90) + RX(106)) / 2, cy: mix(RY - 80, RY - 128, rk2) + 2 * Math.sin(t * 1.2) });
+    op(vK.g, span(t, K0 + 0.2, K1 + d2 * 0.5, 0.6));
+
+    // ---- 3: laments ----
+    const tv = span(t, C0 - 0.2, C1 - 0.3, 0.5, 0.6); op(gTiles, tv);
+    if (tv > 0) { const d = C0E - C0; tiles.forEach((tl, i) => { const k = up(t, C0 + 0.5 + (i % 9) * 0.07, 1.5), named = t > C0 + 2.2;
+      set(tl.e, { x: (mix(tl.gx, tl.px, k) + 1.2 * Math.sin(t * 0.8 + i)).toFixed(1), y: (mix(tl.gy, tl.py, k) - 18 * Math.sin(Math.PI * k)).toFixed(1), fill: tl.p === 0 ? (named ? INK : STONE) : (k > 0.6 ? MUTED : STONE) }); op(tl.e, up(t, C0 - 0.2 + ((i * 7) % 60) * 0.01, 0.4)); });
+      op(lamLab, up(t, C0 + 2.2, 0.5)); }
+    const rnv = span(t, C1 - 0.6, CE + 0.2, 0.8, 0.9); op(gRain, rnv);
+    if (rnv > 0) rain.forEach((r) => { const k = (t * r.sp + r.ph) % 1, y = mix(96, 500, k); set(r.e, { x1: r.x.toFixed(1), y1: y.toFixed(1), x2: (r.x - 3).toFixed(1), y2: (y + r.len).toFixed(1), opacity: (0.5 * Math.sin(Math.PI * k)).toFixed(3) }); });
+    const pv = span(t, C1 - 0.5, C2 - 0.1, 0.5, 0.5); op(prayDot, pv); op(gPray, pv); if (pv > 0) speak(prayV, t, 640, 424, 330, 84, pv);
+    op(vC.g, span(t, C1 - 0.2, C2 - 0.2, 0.4, 0.5));
+    const pav = span(t, C2 - 0.2, D0 - 0.3, 0.5, 0.6); op(gPaths, pav);
+    if (pav > 0) { const d = CE - C2, ka = up(t, C2, d * 0.42), kb = up(t, C2 + d * 0.45, d * 0.3); draw(pathA, ka); draw(pathB, kb);
+      const la = pathA.getTotalLength(), lb = pathB.getTotalLength(), pa = pathA.getPointAtLength(la * ka), pb = pathB.getPointAtLength(lb * kb);
+      set(walkA, { cx: pa.x, cy: pa.y - 20 }); set(walkB, { cx: pb.x, cy: pb.y - 20 }); op(walkB, up(t, C2 + d * 0.43, 0.4));
+      op(endA, up(t, C2 + d * 0.36, 0.4)); op(labA, up(t, C2 + d * 0.38, 0.4)); op(endB, up(t, C2 + d * 0.7, 0.4)); op(labB, up(t, C2 + d * 0.62, 0.4)); }
+
+    // ---- 4: praise ----
+    const d4 = D0E - D0, pv3 = span(t, D0 - 0.5, D1 - 0.2, 0.5, 0.6); op(gP, pv3);
+    if (pv3 > 0) { [0.04, 0.48, 0.72].forEach((f, i) => op([p1, p2, p3][i], up(t, D0 + d4 * f - 0.3, 0.6)));
+      const part = up(t, D0 + d4 * 0.5, 1.6); [-40, -20, 0, 20, 40].forEach((dy, i) => { const gap = 14 + 46 * part, w = 5 * Math.sin(t * 2 + i);
+        seaL[i].setAttribute("d", `M-104 ${dy} q14 ${-7 + w * 0.4} 28 0 t28 0 t${Math.max(4, 48 - gap)} 0`); seaR[i].setAttribute("d", `M${gap} ${dy} q14 ${-7 - w * 0.4} 28 0 t28 0 t${Math.max(4, 48 - gap)} 0`); });
+      draw(seaRoad, part); const lf = up(t, D0 + d4 * 0.76, 1.6); set(lifted, { cy: mix(34, -52, lf) }); draw(liftLine, up(t, D0 + d4 * 0.72, 0.7)); }
+    const chv = span(t, D1 - 0.3, K0 - 0.3, 0.5, 0.6); op(gChoir, chv);
+    if (chv > 0) { const join = up(t, D1 + (D2 - D1) * 0.45, 1.6); choir.forEach((c, i) => { op(c, i === 7 ? 1 : 0.35 + 0.65 * join); c.setAttribute("fill", i === 7 || join > 0.5 ? INK : STONE); });
+      soloV.forEach((v) => { const k = (t * v.sp + v.ph) % 1; v.e.setAttribute("d", `M${(250 + 7 * 56 + v.dx * 30).toFixed(1)} ${mix(430, 300, k).toFixed(1)} q7 -11 0 -22`); v.e.setAttribute("opacity", (0.8 * Math.sin(Math.PI * k)).toFixed(3)); });
+      speak(choirV, t, 640, 424, t > D2 - 0.4 ? 330 : 290, 840, join); }
+    op(vD.g, span(t, D2 - 0.25, K0 - 0.3, 0.4, 0.5));
+
+    // ---- 6: the cross ----
+    const jv = span(t, J0 - 0.7, ST - 0.3, 0.5, 0.7); op(gCross, jv);
+    if (jv > 0) { draw(cross, up(t, J0 + 0.6, 2.2)); const cva = up(t, J1 - 0.6, 0.8); speak(crossV, t, 640, 226, 120, 150, cva);
+      const cj = up(t, J2 + 0.3, 1.2); crowdJ.forEach((c, i) => op(c, up(t, J2 + 0.2 + i * 0.05, 0.4)));
+      crowdV.forEach((v, i) => { const k = (t * v.sp + v.ph) % 1, x = (i < 8 ? 210 : 1070) + v.dx * 150; v.e.setAttribute("d", `M${x.toFixed(1)} ${mix(424, 250, k).toFixed(1)} q7 -11 0 -22`); v.e.setAttribute("opacity", (cj * 0.75 * Math.sin(Math.PI * k)).toFixed(3)); }); }
+    op(vJ.g, span(t, J1 - 0.25, J2 + 0.4, 0.4, 0.6));
+
+    // ---- 8: one reader ----
+    op(you, back * (1 - up(t, END + 0.5, 0.6)));
+  };
+});
+</script>
+</body></html>

@@ -51,6 +51,7 @@ import { WATCH_ID } from "./Watch";
 import type { ExportShape } from "./films/FilmExport";
 import "./explorer.css";
 import "./films/film.css";
+import NarratedFilm from "@/components/NarratedFilm";
 
 /**
  * Each finished film's search title and description, written out so the
@@ -355,6 +356,126 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Revelation in seven moving pictures, with nothing to frighten: what it is, how it is laid out, the throne, the Lamb, the ways Christians read its visions, all things made new, and where to start reading.",
     },
+    "book-ruth": {
+      title: "Ruth: loyal love in a hard time: Bible Explorer",
+      description:
+        "The whole book of Ruth in seven moving pictures: what it is, how its four scenes are laid out, loyal love, God at work in ordinary days, the redeemer, the surprise at the end, and where to start reading.",
+    },
+    "book-jonah": {
+      title: "Jonah: the prophet who ran from mercy: Bible Explorer",
+      description:
+        "The whole book of Jonah in seven moving pictures: what it is, how its four chapters are laid out, a God whom wind and sea obey, down and up again, the city that turned, the question at the end, and where to start reading.",
+    },
+    "book-daniel": {
+      title: "Daniel: the Most High rules: Bible Explorer",
+      description:
+        "The whole book of Daniel in seven moving pictures, told gently: what it is, how it is laid out, the Most High who rules the kingdoms, faith that will not bow, Daniel at his window, one like a son of man, and where to start reading.",
+    },
+    "book-1-corinthians": {
+      title: "1 Corinthians: a gifted church, coming apart: Bible Explorer",
+      description:
+        "The whole of 1 Corinthians in seven moving pictures: a real letter to a real church, its two halves, the wisdom of the cross, one body with many parts, the way of love, raised from the dead, and where to start reading.",
+    },
+    "book-ephesians": {
+      title: "Ephesians: one new people in Christ: Bible Explorer",
+      description:
+        "The whole letter to the Ephesians in seven moving pictures: what it is, its two halves, grace, one new people from Jew and Gentile, a worthy walk, standing firm, and where to start reading, with the household passages as churches read them.",
+    },
+    "book-philippians": {
+      title: "Philippians: joy in chains: Bible Explorer",
+      description:
+        "The whole letter to the Philippians in seven moving pictures: a thank-you letter from prison, its four chapters, joy, the mind of Christ, all counted as loss, contentment in want and in plenty, and where to start reading.",
+    },
+    "book-hebrews": {
+      title: "Hebrews: hold on to Jesus: Bible Explorer",
+      description:
+        "The whole book of Hebrews in seven moving pictures: a sermon for tired believers, how it is laid out, the Son, the old covenant honored as a gift that pointed ahead, the great high priest, hold on and run, and where to start reading.",
+    },
+    "book-james": {
+      title: "James: faith that works: Bible Explorer",
+      description:
+        "The whole letter of James in seven moving pictures: sharp, practical sayings, the threads it keeps returning to, trials, faith that is alive and how it fits with Paul, the poor and the rich, the power of words, and where to start reading.",
+    },
+    "book-joshua": {
+      title: "Joshua: a promise kept: Bible Explorer",
+      description:
+        "The whole book of Joshua in seven moving pictures: the promised land, its four movements, the river crossed, the hardest chapters faced plainly, who belongs, rest and a choice, and where to start reading.",
+    },
+    "book-judges": {
+      title: "Judges: a people coming apart: Bible Explorer",
+      description:
+        "The whole book of Judges in seven moving pictures: the dark years after Joshua, how it is laid out, the wheel that runs downhill, unlikely deliverers, gifts that are not goodness, no king in Israel, and where to start reading.",
+    },
+    "book-1-samuel": {
+      title: "1 Samuel: the heart God sees: Bible Explorer",
+      description:
+        "The whole of 1 Samuel in seven moving pictures: three lives, seven stages, the boy who listens, a people asking for a king, the heart God sees, loyal love, and where to start reading.",
+    },
+    "book-jeremiah": {
+      title: "Jeremiah: the prophet who wept: Bible Explorer",
+      description:
+        "The whole book of Jeremiah in seven moving pictures: a prophet in the last days of Judah, how the book is laid out, false safety, honest prayer, a letter to the exiles, the new covenant, and where to start reading.",
+    },
+    "book-galatians": {
+      title: "Galatians: nothing added to Christ: Bible Explorer",
+      description:
+        "The whole letter to the Galatians in seven moving pictures: an urgent letter, how it is laid out, who belongs, Abraham and the law, one table, what freedom is for, and where to start reading.",
+    },
+    "book-colossians": {
+      title: "Colossians: complete in Christ: Bible Explorer",
+      description:
+        "The whole letter to the Colossians in seven moving pictures: a letter to a church Paul never saw, how it is laid out, the song of Christ, fullness, new clothes, life in the Lord, and where to start reading.",
+    },
+    "book-1-peter": {
+      title: "1 Peter: hope for strangers: Bible Explorer",
+      description:
+        "The whole of 1 Peter in seven moving pictures: strangers in their own towns, how it is laid out, a living hope, God's own people, doing good without striking back, God's care, and where to start reading.",
+    },
+    "book-1-john": {
+      title: "1 John: so that you may know: Bible Explorer",
+      description:
+        "The whole of 1 John in seven moving pictures: churches that had been shaken, how it is laid out, hands that touched, three marks of knowing God, sin and forgiveness, God is love, and where to start reading.",
+    },
+    "book-leviticus": {
+      title: "Leviticus: living near a holy God: Bible Explorer",
+      description:
+        "The whole book of Leviticus in seven moving pictures: the question it answers, how it is laid out, gifts brought near, holy and clean, the Day of Atonement, love of neighbor, and where to start reading.",
+    },
+    "book-numbers": {
+      title: "Numbers: forty years in the wilderness: Bible Explorer",
+      description:
+        "The whole book of Numbers in seven moving pictures: the wilderness, two generations, God at the center of the camp, the refusal at Kadesh, Balaam's blessing, the new generation, and where to start reading.",
+    },
+    "book-deuteronomy": {
+      title: "Deuteronomy: love the LORD with all your heart: Bible Explorer",
+      description:
+        "The whole book of Deuteronomy in seven moving pictures: Moses' farewell, three addresses, the Shema, chosen in love, laws that take the side of the weak, the call to choose life, and where to start reading.",
+    },
+    "book-2-samuel": {
+      title: "2 Samuel: the king and the promise: Bible Explorer",
+      description:
+        "The whole of 2 Samuel in seven moving pictures: King David, five parts, a crown not seized, the promise of a house, Nathan's word to the king, the sword in David's house, and where to start reading.",
+    },
+    "book-nehemiah": {
+      title: "Nehemiah: rebuilding the walls, and a people: Bible Explorer",
+      description:
+        "The whole book of Nehemiah in seven moving pictures: the king's cupbearer, how it is laid out, pray and keep watch, justice for the poor, the law read with joy, an ending without triumph, and where to start reading.",
+    },
+    "book-amos": {
+      title: "Amos: let justice roll on like a river: Bible Explorer",
+      description:
+        "The whole book of Amos in seven moving pictures: a herdsman sent north, how it is laid out, the trap, justice like a river, the plumb line, the fallen tent restored, and where to start reading.",
+    },
+    "book-2-corinthians": {
+      title: "2 Corinthians: power in weakness: Bible Explorer",
+      description:
+        "The whole of 2 Corinthians in seven moving pictures: a hurt pastor's letter, three parts, treasure in jars of clay, made friends again, the grace of giving, power in weakness, and where to start reading.",
+    },
+    "book-1-thessalonians": {
+      title: "1 Thessalonians: hope that does not give up: Bible Explorer",
+      description:
+        "The whole of 1 Thessalonians in seven moving pictures: a young church, two halves, turned from idols, hope in grief, the Lord's coming, life together, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
@@ -498,6 +619,8 @@ function FilmPage({
           word is under the picture, and Listen reads it aloud.
         </p>
       </PageHead>
+
+      <NarratedFilm page={filmHref(film.slug)} />
 
       <section className="ex-sec ex-sec--tight" aria-label="Reading level">
         <div className="ex-wrap">

@@ -1,0 +1,174 @@
+{
+  "slug": "book-deuteronomy",
+  "title": "Deuteronomy: love the LORD with all your heart",
+  "group": "books",
+  "status": "finished",
+  "book": "deuteronomy",
+  "mark": "book-deuteronomy",
+  "line": {
+    "younger": "The book of Moses saying goodbye to God's people: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Deuteronomy as a whole book: Moses' farewell, three addresses, the Shema, chosen in love, laws that take the side of the weak, the call to choose life, and where to begin."
+  },
+  "poster": "An old man with a staff stands on a rise and speaks to a great crowd gathered on a plain, with a river and far hills behind them.",
+  "frames": [
+    {
+      "id": "farewell",
+      "name": "Moses says goodbye",
+      "still": "An old man with a staff stands on a rise and speaks to a great crowd gathered on a plain, with a river and far hills behind them.",
+      "younger": "Deuteronomy is Moses saying goodbye. At the end of his life he stands before God's people by the river and preaches. They are the children of those who left Egypt. Moses is not going with them, so he tells them everything again.",
+      "older": "Deuteronomy is almost all speech: Moses at the end of his life, on the plains of Moab, preaching to the children of the generation that left Egypt. He tells the story again, gives the law again, and pleads with them to hold on to God when he is gone.",
+      "verse": {
+        "ref": "Deuteronomy 1:1",
+        "text": "These are the words that Moses spoke to all Israel"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in six panels, with a road, two tablets, a house, two mountains, an open hand and a high mountain over them. A gold rule lies under the second panel.",
+      "younger": "The book is three long talks by Moses, and then his goodbye. First he looks back. Then he gives the laws, starting with the Ten Commandments. Then he asks the people to choose. Last, he blesses them and climbs a mountain.",
+      "older": "Three addresses and a farewell: Moses looks back on the road; at the center he repeats the Ten Commandments and sets out the laws for the land; he renews the covenant; and he blesses the tribes. One small word holds it together: today.",
+      "verse": {
+        "ref": "Deuteronomy 5:3",
+        "text": "with all of us who are alive here today."
+      }
+    },
+    {
+      "id": "shema",
+      "name": "Watch for: the Shema",
+      "still": "Inside the doorway of a home a parent sits with a child, talking, and a small case is fixed to the doorpost. The case is gold.",
+      "younger": "Watch for the most important words in the book: “Hear, O Israel: The LORD our God, the LORD is One.” Love him with all your heart. Jewish people still say these words every morning and evening. Jesus called this the greatest command.",
+      "older": "At the center stand two verses, the Shema: one God, loved with heart, soul and strength. Love here is a settled loyalty, shown in listening and obeying, and the words are to fill ordinary life. Jews have said them morning and evening for more than two thousand years.",
+      "verse": {
+        "ref": "Deuteronomy 6:5",
+        "text": "And you shall love the LORD your God with all your heart"
+      }
+    },
+    {
+      "id": "chosen",
+      "name": "Watch for: chosen in love",
+      "still": "A family stands on a hill at sunset and looks back along the long road through the desert they have travelled. The sun is gold.",
+      "younger": "Watch why God chose them. Not because they were big, and not because they were good. Only because he loved them. So they must remember what he did, and love the stranger, because they had been strangers in Egypt.",
+      "older": "God chose Israel not for its size or its goodness, but because he loved them. To be chosen is a task, never a licence to look down on anyone, and God loves the foreigner. So the great duty of the book is to remember.",
+      "verse": {
+        "ref": "Deuteronomy 7:8",
+        "text": "But because the LORD loved you"
+      }
+    },
+    {
+      "id": "laws",
+      "name": "Watch for: whose side the laws take",
+      "still": "At the edge of a field at sunset a farmer puts wages into a worker's hand, while a widow and her child gather what the harvest left. A gold sun is low.",
+      "younger": "Watch whose side the laws take: the widow, the orphan, the stranger, the worker paid before sunset. Some chapters about wars are hard to read. No one may use these chapters to justify violence against any person or people.",
+      "older": "The laws take the side of the powerless: widow, orphan, foreigner, debtor, worker. The command against the peoples of Canaan is the hardest page, read in more than one way. No one may use these chapters to justify violence against any person or people.",
+      "verse": {
+        "ref": "Deuteronomy 24:15",
+        "text": "You are to pay his wages each day before sunset"
+      }
+    },
+    {
+      "id": "choose",
+      "name": "Watch for: choose life",
+      "still": "An old man stands alone on a mountaintop with his staff, looking out over a wide green land and a river below.",
+      "younger": "Watch for a choice. Moses sets two ways before the people, and says, “Therefore choose life.” He promises that one day God himself will change their hearts. Then Moses climbs a mountain and looks at the land he will not enter.",
+      "older": "The blessings and curses of chapter 28 speak to a nation about a land, never God's verdict on one person's illness or loss. Then comes the promise that God will change the heart itself, and the plea to choose life. Moses sees the land he will not enter.",
+      "verse": {
+        "ref": "Deuteronomy 30:19",
+        "text": "I have set before you life and death, blessing and cursing."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter 6, the great command. Then chapter 30, the choice, and chapter 34, the goodbye. It reads best out loud.",
+      "older": "Start with chapters 6 and 30, then the key chapters: 1, 4, 8, 12, 18 and 34. Read it as preaching, aloud. Keep the order straight: God's love comes first, and obedience answers it.",
+      "verse": {
+        "ref": "Deuteronomy 8:3",
+        "text": "man does not live on bread alone"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Moses told parents to talk about God at home, on walks, at bedtime and in the morning. When could your family talk about God?",
+    "older": "Deuteronomy says God's love comes first and obedience answers it. What changes if you have that order the wrong way round?"
+  },
+  "read": [
+    {
+      "label": "Deuteronomy 1",
+      "href": "/study/bible/deuteronomy/1"
+    },
+    {
+      "label": "Deuteronomy 4",
+      "href": "/study/bible/deuteronomy/4"
+    },
+    {
+      "label": "Deuteronomy 5",
+      "href": "/study/bible/deuteronomy/5"
+    },
+    {
+      "label": "Deuteronomy 6",
+      "href": "/study/bible/deuteronomy/6"
+    },
+    {
+      "label": "Deuteronomy 7",
+      "href": "/study/bible/deuteronomy/7"
+    },
+    {
+      "label": "Deuteronomy 8",
+      "href": "/study/bible/deuteronomy/8"
+    },
+    {
+      "label": "Deuteronomy 24",
+      "href": "/study/bible/deuteronomy/24"
+    },
+    {
+      "label": "Deuteronomy 30",
+      "href": "/study/bible/deuteronomy/30"
+    },
+    {
+      "label": "Deuteronomy 34",
+      "href": "/study/bible/deuteronomy/34"
+    }
+  ],
+  "stops": [
+    "sinai"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Christians who receive Deuteronomy as God's word read the command about the peoples of Canaan in more than one way: as God's judgment on particular peoples at one moment, after long patience, and never a general rule; as the common idiom of ancient reports of war, which the same books qualify; or as God meeting an ancient people within the limits of their world, to be read in the light of Christ. Each reading has a cost. On every reading the command was tied to one land and one time, names no modern nation, people or conflict, and is never renewed in the New Testament; no one may use these chapters to justify violence against any person or people, and the death penalties of chapters 13 and 17 are not given to the church. Readers also differ on the prophet like Moses, on who wrote the book and when, and on how the Shema fits with the confession of Father, Son and Spirit, which Jewish readers have long heard it ruling out. The curses of chapter 28 never explain the sufferings of the Jewish people; that reading is false. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      {
+        "label": "the Deuteronomy page of the Study Bible",
+        "href": "/study/bible/deuteronomy"
+      },
+      {
+        "label": "the question of the command to destroy the Canaanites",
+        "href": "/questions/old-testament/the-command-to-destroy-the-canaanites"
+      }
+    ]
+  },
+  "care": "This part of the story has war and death in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "Deuteronomy in the Study Bible: the whole book",
+      "href": "/study/bible/deuteronomy"
+    },
+    {
+      "label": "Sinai and the Tent: a stop on the map",
+      "href": "/study/explorer/sinai"
+    },
+    {
+      "label": "Numbers: forty years in the wilderness (a moving picture)",
+      "href": "/study/explorer/watch/book-numbers"
+    },
+    {
+      "label": "Joshua: a promise kept (a moving picture)",
+      "href": "/study/explorer/watch/book-joshua"
+    }
+  ],
+  "end": {
+    "label": "Start reading: Deuteronomy 6",
+    "href": "/study/bible/deuteronomy/6"
+  }
+}

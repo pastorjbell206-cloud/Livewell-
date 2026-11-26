@@ -1,0 +1,83 @@
+{
+  "title": "The gospel in a minute",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/gospel-in-a-minute",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "gift",
+      "kicker": "A gift",
+      "level": 0.2,
+      "lines": [
+        "The story starts with a gift, not a problem. God made human beings in his own image, to know him and to love him forever. Nothing stood between people and God."
+      ]
+    },
+    {
+      "id": "break",
+      "kicker": "A break",
+      "level": 0.4,
+      "lines": [
+        "People turned from God to their own way, and every one of us has followed. Sin is a break: with God, with each other, inside ourselves."
+      ]
+    },
+    {
+      "id": "towers",
+      "kicker": "Our towers",
+      "level": 0.5,
+      "lines": [
+        "Every age builds its towers: be good enough, try harder, earn your way back. The gap is too wide for us to cross."
+      ]
+    },
+    {
+      "id": "sends",
+      "kicker": "God crosses the gap",
+      "level": 0.65,
+      "lines": [
+        "Then God crosses the gap from his own side. The Father sends the Son because he loves the world, and the Son becomes one of us, fully God and fully man."
+      ]
+    },
+    {
+      "id": "cross",
+      "kicker": "The cross and the empty tomb",
+      "level": 0.85,
+      "lines": [
+        "At the cross the break is mended, and God is the one who mends it. Jesus died for our sins, and on the third day he was raised, in his body."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 15:3-4",
+        "text": "that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "receive",
+      "kicker": "Received, not earned",
+      "level": 0.7,
+      "lines": [
+        "The gift is received, not earned. Turn around, and trust him. Faith is not a work that pays for anything. It's empty hands taking what is given."
+      ]
+    },
+    {
+      "id": "new",
+      "kicker": "New life",
+      "level": 0.75,
+      "lines": [
+        "Those who belong to Christ are forgiven, made God's children, and given new life, now and in the life to come."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Read more on LiveWell, or talk it over with a pastor or someone you trust."
+      ],
+      "titleCard": [
+        "The gospel in a minute.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

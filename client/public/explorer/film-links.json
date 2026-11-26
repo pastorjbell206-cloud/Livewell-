@@ -57,6 +57,102 @@
    "title": "Revelation: the Lamb on the throne",
    "line": "The last book of the Bible: what it is, how it is put together, what to watch for, and where to start reading."
   },
+  "book-ruth": {
+   "title": "Ruth: loyal love in a hard time",
+   "line": "A short story of two women, a field and a kind man: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-jonah": {
+   "title": "Jonah: the prophet who ran from mercy",
+   "line": "A short book about a prophet who ran away, a storm, a great fish and a great city: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-daniel": {
+   "title": "Daniel: the Most High rules",
+   "line": "A book of brave stories and strange visions: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-1-corinthians": {
+   "title": "1 Corinthians: a gifted church, coming apart",
+   "line": "A letter to a church that was gifted, proud and quarrelling: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-ephesians": {
+   "title": "Ephesians: one new people in Christ",
+   "line": "A letter from prison about God's great plan and one family made from two: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-philippians": {
+   "title": "Philippians: joy in chains",
+   "line": "A thank-you letter from a prisoner to his friends: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-hebrews": {
+   "title": "Hebrews: hold on to Jesus",
+   "line": "A long letter to believers who were tired of believing: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-james": {
+   "title": "James: faith that works",
+   "line": "A short letter of sharp, practical sayings from the brother of Jesus: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-joshua": {
+   "title": "Joshua: a promise kept",
+   "line": "The book of a river crossed and a land given: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-judges": {
+   "title": "Judges: a people coming apart",
+   "line": "The book of the years when Israel kept forgetting God: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-1-samuel": {
+   "title": "1 Samuel: the heart God sees",
+   "line": "The book of a boy who heard God, a tall king and a shepherd: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-jeremiah": {
+   "title": "Jeremiah: the prophet who wept",
+   "line": "The book of a prophet who warned his city and kept speaking when no one listened: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-galatians": {
+   "title": "Galatians: nothing added to Christ",
+   "line": "An urgent letter about who belongs to God's family: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-colossians": {
+   "title": "Colossians: complete in Christ",
+   "line": "A short letter about how great Jesus is: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-1-peter": {
+   "title": "1 Peter: hope for strangers",
+   "line": "A letter of hope to people who felt like strangers in their own towns: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-1-john": {
+   "title": "1 John: so that you may know",
+   "line": "A short letter from an old pastor to churches that had been shaken: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-leviticus": {
+   "title": "Leviticus: living near a holy God",
+   "line": "The book of how God's people could live near him: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-numbers": {
+   "title": "Numbers: forty years in the wilderness",
+   "line": "The book of a long walk through the desert, with God leading the way: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-deuteronomy": {
+   "title": "Deuteronomy: love the LORD with all your heart",
+   "line": "The book of Moses saying goodbye to God's people: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-2-samuel": {
+   "title": "2 Samuel: the king and the promise",
+   "line": "The book of King David, God's great promise, and a family torn apart: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-nehemiah": {
+   "title": "Nehemiah: rebuilding the walls, and a people",
+   "line": "The book of a man who prayed, went home and rebuilt a city's walls: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-amos": {
+   "title": "Amos: let justice roll on like a river",
+   "line": "The book of a herdsman God sent to a rich kingdom that forgot the poor: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-2-corinthians": {
+   "title": "2 Corinthians: power in weakness",
+   "line": "Paul's most personal letter, to a church he loved and that had hurt him: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-1-thessalonians": {
+   "title": "1 Thessalonians: hope that does not give up",
+   "line": "A warm letter to a young church that had lost friends and was afraid: what it is, how it is put together, what to watch for, and where to start reading."
+  },
   "holy-spirit": {
    "title": "The Holy Spirit through the Bible",
    "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
@@ -298,11 +394,52 @@
    "the-bible",
    "is-the-bible-true"
   ],
+  "/questions/old-testament/jericho-and-the-conquest": [
+   "book-joshua"
+  ],
+  "/questions/old-testament/the-command-to-destroy-the-canaanites": [
+   "book-joshua",
+   "book-numbers",
+   "book-deuteronomy"
+  ],
   "/questions/religions/those-who-never-heard": [
    "never-heard"
   ],
+  "/study/bible/1-corinthians": [
+   "book-1-corinthians"
+  ],
+  "/study/bible/1-john": [
+   "book-1-john"
+  ],
+  "/study/bible/1-peter": [
+   "book-1-peter"
+  ],
+  "/study/bible/1-samuel": [
+   "book-1-samuel"
+  ],
+  "/study/bible/1-thessalonians": [
+   "book-1-thessalonians"
+  ],
+  "/study/bible/2-corinthians": [
+   "book-2-corinthians"
+  ],
+  "/study/bible/2-samuel": [
+   "book-2-samuel"
+  ],
   "/study/bible/acts": [
    "book-acts"
+  ],
+  "/study/bible/amos": [
+   "book-amos"
+  ],
+  "/study/bible/colossians": [
+   "book-colossians"
+  ],
+  "/study/bible/daniel": [
+   "book-daniel"
+  ],
+  "/study/bible/deuteronomy": [
+   "book-deuteronomy"
   ],
   "/study/bible/doctrines/atonement": [
    "the-lamb",
@@ -352,17 +489,44 @@
   "/study/bible/doctrines/sin": [
    "what-sin-is"
   ],
+  "/study/bible/ephesians": [
+   "book-ephesians"
+  ],
   "/study/bible/exodus": [
    "book-exodus"
+  ],
+  "/study/bible/galatians": [
+   "book-galatians"
   ],
   "/study/bible/genesis": [
    "book-genesis"
   ],
+  "/study/bible/hebrews": [
+   "book-hebrews"
+  ],
   "/study/bible/isaiah": [
    "book-isaiah"
   ],
+  "/study/bible/james": [
+   "book-james"
+  ],
+  "/study/bible/jeremiah": [
+   "book-jeremiah"
+  ],
   "/study/bible/john": [
    "book-john"
+  ],
+  "/study/bible/jonah": [
+   "book-jonah"
+  ],
+  "/study/bible/joshua": [
+   "book-joshua"
+  ],
+  "/study/bible/judges": [
+   "book-judges"
+  ],
+  "/study/bible/leviticus": [
+   "book-leviticus"
   ],
   "/study/bible/luke": [
    "book-luke"
@@ -372,6 +536,15 @@
   ],
   "/study/bible/matthew": [
    "book-matthew"
+  ],
+  "/study/bible/nehemiah": [
+   "book-nehemiah"
+  ],
+  "/study/bible/numbers": [
+   "book-numbers"
+  ],
+  "/study/bible/philippians": [
+   "book-philippians"
   ],
   "/study/bible/proverbs": [
    "book-proverbs"
@@ -384,6 +557,9 @@
   ],
   "/study/bible/romans": [
    "book-romans"
+  ],
+  "/study/bible/ruth": [
+   "book-ruth"
   ],
   "/wisdom/assurance-of-faith": [
    "faith"

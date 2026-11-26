@@ -1,0 +1,210 @@
+<!doctype html>
+<!-- "2 Samuel: the king and the promise". A strip of the book's 24 chapters runs along the bottom for the whole
+     film. Above it: a crown lowered onto one dot; two portraits of the same king held in one book; five parts;
+     a crown David does not pick up, and the ark coming up to the city; a house planned, turned round, and a
+     line of crowns running off the frame; the hinge; a house with a crack through it; the same crown and the
+     same line on both sides of chapter 11; Nathan's dot facing the king.
+     People are dots; David is a dot with a small crown. God is never drawn.
+     THIS FILM NAMES SEXUAL VIOLENCE AND MURDER. The voice names them; the picture never shows, hints at or
+     stands for them. Bathsheba is not drawn at all. Uriah is one labelled dot that fades to an empty ring.
+     Tamar is not drawn; there is no figure, room or interior. The "sword" is a crack in a plain house outline
+     and its four stages carry no labels. Nothing in the picture puts blame on anyone but the king.
+     The five parts follow the book page's own structure (client/public/bible/notes/2-samuel/intro.json):
+     1 to 4, 5 to 10, 11 to 12, 13 to 20, 21 to 24.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>2 Samuel: the king and the promise</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", GOLD = "#B08A12", SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const K0 = S("king", 0), K1 = S("king", 1), KE = E("king"), L0 = S("layout", 0), L0E = E("layout", 0), L1 = S("layout", 1), LE = E("layout");
+  const C0 = S("crown", 0), C0E = E("crown", 0), C1 = S("crown", 1), CE = E("crown"), H0 = S("house", 0), H0E = E("house", 0), H1 = S("house", 1), H2 = S("house", 2), HE = E("house");
+  const N0 = S("nathan", 0), N0E = E("nathan", 0), N1 = S("nathan", 1), N2 = S("nathan", 2), N3 = S("nathan", 3), NE = E("nathan");
+  const W0 = S("sword", 0), W0E = E("sword", 0), W1 = S("sword", 1), WE = E("sword"), ST = S("start", 0), STE = E("start"), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(210), CROWN = "M-22 0 L-22 -19 L-11 -8 L0 -23 L11 -8 L22 -19 L22 0 Z";
+  const crown = (parent, fill) => el("path", { d: CROWN, fill: fill || MUSTARD }, parent);
+  // the moment a word is spoken: its place among the words of its line
+  const word = (id, k, n) => { const l = F.TL.chapters.find((c) => c.id === id).lines[k], tot = l.text.split(" ").length; return l.start + (l.end - l.start) * n / tot; };
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), rows = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); rows.push(cur);
+    const lh = Math.round(size * 1.18), ts = rows.map((r, i) => txt(g, big ? "disp" : "ital", cx, y + i * lh, r, size));
+    const ref = txt(g, "lab", cx, y + (rows.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 13); return { g, ts, ref }; };
+  const showVerse = (v, t, a, b, big) => { const o = span(t, a, b, 0.6, 0.6); op(v.g, o); if (o > 0) { v.ts.forEach((e, i) => op(e, up(t, a + i * (big ? 0.5 : 0.25), 0.6))); op(v.ref, up(t, a + (big ? 1.0 : 0.7), 0.6)); } };
+
+  // ================= 1: the crown, the crowd, the two portraits =================
+  const gKing = el("g", { transform: "translate(640 340) scale(1.35) translate(-640 -340)" }, world);
+  const crowd = [...Array(27)].map((_, i) => { const r = Math.floor(i / 9), c = i % 9; return { x: 392 + c * 62 + (r % 2) * 31 + (R() - 0.5) * 10, y: 366 + r * 30 + (R() - 0.5) * 6, e: el("circle", { r: 8.5, fill: STONE }, gKing) }; });
+  const kDot = el("circle", { cx: 640, cy: 300, r: 24, fill: INK }, gKing), kCrown = crown(gKing);
+  const gPort = el("g", {}, world), frameD = "M-118 -150 H118 V150 H-118 Z";
+  const pL = el("g", {}, gPort), pR = el("g", {}, gPort);
+  el("path", { d: frameD, fill: PAPER, stroke: INK, "stroke-width": 3 }, pL); const pLring = el("circle", { cy: 20, r: 62, fill: "none", stroke: MUSTARD, "stroke-width": 4 }, pL); el("circle", { cy: 20, r: 38, fill: INK }, pL); move(crown(pL), 0, -22, 1.7);
+  el("path", { d: frameD, fill: PAPER, stroke: INK, "stroke-width": 3 }, pR); el("circle", { cy: 20, r: 38, fill: STONE }, pR); move(crown(pR, STONE), 0, -22, 1.7);
+  const spine = line(gPort, "M640 138 V462", { stroke: INK, "stroke-width": 4 }), cover = line(gPort, "M396 138 H884 M396 462 H884", { stroke: INK, "stroke-width": 4 });
+  const v1 = verse(SC.king, 640, 128, 25, 84, false);
+
+  // ================= 2: five parts =================
+  const PARTS = [[1, 4, "King over Judah"], [5, 10, "The kingdom established"], [11, 12, "David’s sin and Nathan’s rebuke"], [13, 20, "The troubles in David’s house"], [21, 24, "A closing collection"]];
+  const PW = [word("layout", 0, 4), word("layout", 0, 7), word("layout", 0, 17), word("layout", 0, 22), word("layout", 0, 27)];
+  const gParts = el("g", {}, world), five = txt(gParts, "disp", 640, 300, "five parts", 96);
+  const partName = PARTS.map(([a, b, n]) => txt(gParts, "disp", 640, 292, n, 60)), partSub = PARTS.map(([a, b]) => txt(gParts, "lab", 640, 346, `CHAPTERS ${a} TO ${b}`, 15));
+  const partRule = el("rect", { y: 372, height: 3, fill: MUSTARD }, gParts);
+  const hinge = txt(gParts, "disp", 640, 292, "Chapters 11 and 12", 72), hingeLab = txt(gParts, "lab", 640, 346, "THE HINGE", 17);
+
+  // ================= 3: a crown not seized; the ark comes to the city =================
+  const gGrasp = el("g", { transform: "translate(640 400) scale(1.25) translate(-640 -400)" }, world), GY = 420;
+  const ground = line(gGrasp, "M120 420 H1160", { stroke: INK, "stroke-width": 3 });
+  const gone = [880, 950].map((x) => ({ dot: el("circle", { cx: x, cy: GY - 18, r: 16, fill: INK }, gGrasp), ring: el("circle", { cx: x, cy: GY - 18, r: 16, fill: "none", stroke: STONE, "stroke-width": 2.2, "stroke-dasharray": "4 5" }, gGrasp) }));
+  const reach = el("path", { d: "M430 380 Q520 300 610 380", fill: "none", stroke: STONE, "stroke-width": 2, "stroke-dasharray": "3 8" }, gGrasp);
+  const dDot = el("circle", { r: 20, fill: INK }, gGrasp), dRing = el("circle", { r: 29, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gGrasp);
+  const bringers = [0, 1].map(() => el("circle", { r: 15, fill: STONE }, gGrasp)), lying = crown(gGrasp);
+  const gArkScene = el("g", {}, world);
+  const hill = line(gArkScene, "M100 448 C380 448 520 440 700 372 S960 300 1180 300", { stroke: INK, "stroke-width": 3 });
+  const city = line(gArkScene, "M900 322 V226 H924 V204 H948 V226 H972 V204 H996 V226 H1020 V204 H1044 V226 H1068 V204 H1092 V226 H1116 V302", { stroke: INK, "stroke-width": 3 }), gate = line(gArkScene, "M984 316 V270 Q984 250 1006 250 Q1028 250 1028 270 V309", { stroke: INK, "stroke-width": 3 });
+  const dance = el("path", { fill: "none", stroke: MUSTARD, "stroke-width": 2.5, "stroke-linecap": "round", "stroke-linejoin": "round" }, gArkScene);
+  const gArk = el("g", {}, gArkScene); el("line", { x1: -40, x2: 40, y1: -6, y2: -6, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gArk); el("line", { x1: -40, x2: 40, y1: 9, y2: 9, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gArk);
+  el("rect", { x: -20, y: -17, width: 40, height: 36, rx: 3, fill: PAPER, stroke: INK, "stroke-width": 3.5 }, gArk); [[-40, -6], [40, -6], [-40, 9], [40, 9]].forEach(([x, y]) => el("circle", { cx: x, cy: y, r: 8.5, fill: INK }, gArk));
+  const dancer = el("g", {}, gArkScene); el("circle", { r: 15, fill: INK }, dancer); move(crown(dancer), 0, -17, 0.75);
+  const v3 = verse(SC.crown, 640, 128, 25, 84, false);
+  let HILL = 0; const hillAt = (u) => hill.getPointAtLength(HILL * clamp(u));
+
+  // ================= 4: a house for David =================
+  const gHouse = el("g", {}, world), LY = 412;
+  const plan = el("g", {}, gHouse), planLine = line(plan, "M-120 80 V-40 L0 -120 L120 -40 V80 Z", { stroke: INK, "stroke-width": 3 }), planArk = el("rect", { x: -20, y: 28, width: 40, height: 34, rx: 3, fill: "none", stroke: INK, "stroke-width": 2.5 }, plan);
+  const fromAbove = line(gHouse, "M640 104 V206", { stroke: MUSTARD, "stroke-width": 4 });
+  const promise = line(gHouse, `M300 ${LY} H920`, { stroke: MUSTARD, "stroke-width": 5 }), onward = line(gHouse, `M920 ${LY} H1300`, { stroke: MUSTARD, "stroke-width": 5 });
+  const forkA = line(gHouse, `M920 ${LY} C1040 ${LY} 1140 ${LY - 26} 1300 ${LY - 64}`, { stroke: MUSTARD, "stroke-width": 4 }), forkB = line(gHouse, `M920 ${LY} C1040 ${LY} 1140 ${LY + 26} 1300 ${LY + 64}`, { stroke: MUSTARD, "stroke-width": 4 });
+  const kings = [430, 560, 690, 820, 950, 1080, 1210].map((x) => { const g = el("g", {}, gHouse); move(crown(g, INK), 0, 0, 1.8); return { g, x }; });
+  const pulse = el("circle", { cy: LY, r: 9, fill: BONE, stroke: MUSTARD, "stroke-width": 4 }, gHouse);
+  const hDav = el("g", {}, gHouse); el("circle", { r: 22, fill: INK }, hDav); move(crown(hDav), 0, -24, 1);
+  const v4 = verse(SC.house, 640, 172, 56, 30, true);
+
+  // ================= 5: the hinge. Only the king, one dot that fades, a cover, and Nathan =================
+  const gNathan = el("g", { transform: "translate(640 372) scale(1.2) translate(-640 -372)" }, world), KX = 640, KY = 372;
+  const uRing = el("circle", { cx: 944, cy: 380, r: 17, fill: "none", stroke: STONE, "stroke-width": 2.2, "stroke-dasharray": "4 5" }, gNathan), uDot = el("circle", { cx: 944, cy: 380, r: 17, fill: INK }, gNathan), uLab = txt(gNathan, "lab", 944, 432, "URIAH", 15);
+  const pall = el("rect", { x: 896, width: 96, height: 96, rx: 6, fill: WARM, stroke: LINE, "stroke-width": 2 }, gNathan);
+  const whole = el("circle", { cx: KX, cy: KY - 28, r: 104, fill: "none", stroke: INK, "stroke-width": 3.5, pathLength: 1, "stroke-dasharray": 1, transform: `rotate(-90 ${KX} ${KY - 28})` }, gNathan), wholeLab = txt(gNathan, "lab", KX, 468, "THE WHOLE RESPONSIBILITY", 13);
+  const nKing = el("circle", { cx: KX, cy: KY, r: 28, fill: INK }, gNathan), nCrown = crown(gNathan);
+  const nLine = line(gNathan, `M356 380 L${KX - 50} ${KY - 52}`, { stroke: INK, "stroke-width": 3.5 }), nDot = el("circle", { r: 15, fill: STONE }, gNathan), nLab = txt(gNathan, "lab", 0, 432, "NATHAN", 15);
+  const v5 = verse(SC.nathan, 640, 186, 60, 40, true);
+
+  // ================= 6: the house, and the crack through it =================
+  const gSword = el("g", {}, world);
+  const house = line(gSword, "M450 440 V262 L640 160 L830 262 V440 Z", { stroke: INK, "stroke-width": 3.5 });
+  const cracks = ["M640 160 L622 206 L650 234", "M650 234 L618 276 L642 308", "M642 308 L666 342 L630 380", "M630 380 L652 410 L640 440"].map((d) => line(gSword, d, { stroke: INK, "stroke-width": 4 }));
+  const father = el("circle", { cx: 968, r: 17, fill: INK }, gSword), fGround = line(gSword, "M360 440 H1060", { stroke: INK, "stroke-width": 3 });
+  const v6 = verse(SC.sword, 640, 128, 25, 84, false);
+  const gBoth = el("g", {}, world);
+  const both = [0, 1].map(() => { const g = el("g", {}, gBoth); el("circle", { r: 24, fill: INK }, g); move(crown(g), 0, -26, 1.15); return g; });
+  const bothLine = line(gBoth, "M200 448 H1080", { stroke: MUSTARD, "stroke-width": 5 }), mark11 = line(gBoth, "M0 250 V470", { stroke: INK, "stroke-width": 3 });
+
+  // ================= 7 and 8: where to start; Nathan facing the king =================
+  const gStart = el("g", {}, world), big = ["7", "11", "12"].map((s) => txt(gStart, "disp", 640, 330, s, 170));
+  const psBar = el("rect", { height: 16, rx: 8, fill: MUSTARD }, gStart), psLine = line(gStart, "M0 0", { stroke: GOLD, "stroke-width": 2 }), psLab = txt(gStart, "lab", 0, 0, "PSALM 51", 15), psBig = txt(gStart, "disp", 640, 300, "Psalm 51", 110);
+  const gClose = el("g", { transform: "translate(640 372) scale(1.35) translate(-640 -372)" }, world), cLine = line(gClose, "M452 372 H770", { stroke: INK, "stroke-width": 3.5 }), cN = el("circle", { cx: 430, r: 16, fill: STONE }, gClose), cK = el("g", {}, gClose); el("circle", { r: 30, fill: INK }, cK); move(crown(cK), 0, -32, 1.4);
+
+  // ================= the strip of twenty-four chapters =================
+  const gStrip = el("g", {}, world), N = 24, X = (c) => 200 + (c - 1) * (880 / (N - 1)), SY = 528;
+  const partBar = PARTS.map(([a, b]) => el("rect", { x: X(a) - 12, y: SY - 15, width: X(b) - X(a) + 24, height: 30, rx: 6, fill: MUTED }, gStrip));
+  const hingeBar = el("rect", { x: X(11) - 12, y: SY - 15, width: X(12) - X(11) + 24, height: 30, rx: 6, fill: MUSTARD }, gStrip);
+  const ticks = [...Array(N)].map((_, i) => ({ c: i + 1, e: el("line", { stroke: INK, "stroke-linecap": "round" }, gStrip), n: txt(gStrip, "lab", X(i + 1), SY + 33, String(i + 1), 13, { "letter-spacing": "0.5" }) }));
+  const KEYS = { 7: word("start", 0, 3), 11: word("start", 0, 7), 12: word("start", 0, 9) }, PS = word("start", 0, 11);
+
+  const drawStrip = (t) => {
+    const on = up(t, K0 - 0.6, 0.8) * (1 - up(t, END + 0.6, 0.6)); op(gStrip, on); if (on <= 0) return;
+    PARTS.forEach((p, i) => op(partBar[i], span(t, PW[i] - 0.1, i < 4 ? PW[i + 1] + 0.3 : L0E + 0.5, 0.4, 0.5) * 0.9));
+    const hi = Math.max(span(t, L1 - 0.3, C0 + 0.2, 0.5, 0.6), span(t, N0 - 0.2, N0 + 3.2, 0.5, 0.8), span(t, W1 - 0.2, ST - 0.2, 0.5, 0.6), up(t, KEYS[11] - 0.1, 0.4) * (1 - up(t, CL + 1.2, 0.8)));
+    op(hingeBar, hi * 0.85);
+    ticks.forEach((k) => { const key = KEYS[k.c], lit = key ? up(t, key, 0.4) * (1 - up(t, CL + 1.2, 0.8)) : 0, isH = k.c === 11 || k.c === 12, h = 9 + 7 * lit + 2 * Math.sin(t * 0.9 + k.c * 0.5) * 0.4;
+      set(k.e, { x1: X(k.c), x2: X(k.c), y1: (SY - h).toFixed(1), y2: (SY + h).toFixed(1), stroke: lit > 0.5 && !isH ? GOLD : INK, "stroke-width": (2 + 2 * lit).toFixed(2) });
+      op(k.n, k.c === 1 || k.c === N ? 1 : Math.max(lit, isH ? hi : 0)); });
+  };
+  const drawKing = (t) => {
+    const v = up(t, K0 - 0.6, 0.6) * (1 - up(t, K1 + 0.2, 0.9)); op(gKing, v);
+    if (v > 0) { crowd.forEach((c, i) => { op(c.e, up(t, K0 - 0.5 + (i % 9) * 0.07, 0.5)); set(c.e, { cx: c.x.toFixed(1), cy: (c.y + 1.6 * Math.sin(t * 0.9 + i)).toFixed(1) }); });
+      const low = up(t, K0 + 0.3, 2.4); op(kCrown, up(t, K0 + 0.2, 0.6)); move(kCrown, 640, mix(150, 274, low) + 1.2 * Math.sin(t), 1.25); set(kDot, { cy: (300 + 1.2 * Math.sin(t)).toFixed(1) }); }
+    showVerse(v1, t, K0 + 2.6, K1 + 0.3, false);
+    const pv = up(t, K1 + 0.4, 0.5) * (1 - up(t, L0 - 0.5, 0.7)); op(gPort, pv);
+    if (pv > 0) { const join = up(t, word("king", 1, 22), 1.6), a = up(t, K1 + 0.5, 1.0), b = up(t, word("king", 1, 12), 1.0);
+      op(pL, a); move(pL, mix(448, 520, join), 300 + 14 * (1 - a) + 2 * Math.sin(t * 0.7)); op(pR, b); move(pR, mix(832, 760, join), 300 + 14 * (1 - b) + 2 * Math.sin(t * 0.7 + 1));
+      pLring.setAttribute("r", (62 + 3 * Math.sin(t * 1.4)).toFixed(2)); draw(spine, up(t, word("king", 1, 22) + 0.9, 0.9)); draw(cover, up(t, word("king", 1, 22) + 1.2, 1.2)); }
+  };
+  const drawParts = (t) => {
+    const v = span(t, L0 - 0.3, C0 + 0.1, 0.4, 0.6); op(gParts, v); if (v <= 0) return;
+    op(five, span(t, L0 - 0.2, PW[0] + 0.1, 0.4, 0.4)); let rw = 0;
+    PARTS.forEach((p, i) => { const o = span(t, PW[i], i < 4 ? PW[i + 1] + 0.05 : L0E + 0.45, 0.35, 0.35); op(partName[i], o); op(partSub[i], o * up(t, PW[i] + 0.4, 0.4)); partName[i].setAttribute("y", (292 + 8 * (1 - up(t, PW[i], 0.6))).toFixed(1)); if (o > 0) rw = Math.max(rw, up(t, PW[i] + 0.2, 0.9)); });
+    const hv = span(t, L1 - 0.2, C0 + 0.1, 0.4, 0.5); op(hinge, hv); op(hingeLab, hv * up(t, L1 + 0.5, 0.5)); rw = Math.max(rw, hv);
+    const w = 110 * rw * (0.85 + 0.15 * Math.sin(t * 1.3)); set(partRule, { x: (640 - w / 2).toFixed(1), width: w.toFixed(1) }); op(partRule, t > PW[0] ? 1 : 0);
+  };
+  const drawCrown = (t) => {
+    const v = up(t, C0 - 0.4, 0.5) * (1 - up(t, C1 - 0.5, 0.8)); op(gGrasp, v);
+    if (v > 0) { draw(ground, up(t, C0 - 0.4, 1.2)); const mourn = span(t, word("crown", 0, 10), word("crown", 0, 15) + 0.4, 0.6, 0.8);
+      set(dDot, { cx: 400, cy: (GY - 22 + 9 * mourn + 1.4 * Math.sin(t * 0.9)).toFixed(1) }); set(dRing, { cx: 400, cy: (GY - 22 + 9 * mourn + 1.4 * Math.sin(t * 0.9)).toFixed(1), r: (29 + 2 * Math.sin(t * 1.5)).toFixed(2) });
+      op(reach, span(t, C0 + 0.4, word("crown", 0, 10), 0.5, 0.5) * 0.9); reach.setAttribute("stroke-dashoffset", (-t * 8).toFixed(1));
+      const g1 = word("crown", 0, 10); gone.forEach((g, i) => { op(g.dot, up(t, C0 - 0.2, 0.5) * (1 - up(t, g1 - 0.4 + i * 0.3, 0.9))); op(g.ring, up(t, g1 + i * 0.3, 0.7)); });
+      // two men each bring him the crown, and each is turned away
+      const b0 = word("crown", 0, 15), bd = (C0E - b0) / 2; let cx = 640, cy = GY - 2, cr = -16;
+      bringers.forEach((b, i) => { const a = b0 + i * bd, come = up(t, a, bd * 0.3), carry = up(t, a + bd * 0.28, bd * 0.3), back = up(t, a + bd * 0.62, bd * 0.36), x = mix(mix(1180, 660, come), 470, carry) + back * 0; const bx = mix(x, 1220, back);
+        op(b, Math.min(up(t, a, 0.3), 1 - up(t, a + bd * 0.8, bd * 0.2))); set(b, { cx: bx.toFixed(1), cy: (GY - 17 - 2 * Math.abs(Math.sin(t * 5)) * (come < 1 || back > 0 ? 1 : 0)).toFixed(1) });
+        if (t > a + bd * 0.28 && t < a + bd * 0.66) { cx = mix(640, 500, carry); cy = GY - 2 - 34 * Math.sin(Math.PI * Math.min(1, carry)) - 30 * carry; cr = -16 * (1 - carry); }
+        if (t >= a + bd * 0.66 && t < a + bd) { const d = up(t, a + bd * 0.66, bd * 0.3); cx = mix(500, 640, d); cy = mix(GY - 32, GY - 2, d); cr = -16 * d; } });
+      move(lying, cx, cy, 1.5, cr); op(lying, up(t, C0 - 0.2, 0.6)); }
+    const av = up(t, C1 - 0.6, 0.7) * (1 - up(t, H0 - 0.5, 0.7)); op(gArkScene, av);
+    if (av > 0) { if (!HILL) HILL = hill.getTotalLength(); draw(hill, up(t, C1 - 0.6, 1.4)); draw(city, up(t, C1 - 0.2, 1.6)); draw(gate, up(t, C1 + 0.6, 0.9));
+      const k = up(t, C1 - 0.3, CE - C1 + 1.4), au = mix(0.18, 0.66, k), ap = hillAt(au); move(gArk, ap.x, ap.y - 24 + 1.5 * Math.sin(t * 3), 1, -8 * k);
+      let d = ""; const steps = 60; for (let i = 0; i <= steps * k; i++) { const u = i / steps, p = hillAt(mix(0.3, 0.8, u)), ang = u * Math.PI * 12; d += `${i ? "L" : "M"}${(p.x + 26 * Math.sin(ang)).toFixed(1)} ${(p.y - 58 - 22 * Math.cos(ang)).toFixed(1)}`; }
+      dance.setAttribute("d", d || "M0 0"); op(dance, 0.75); const dp = hillAt(mix(0.3, 0.8, k)), da = k * Math.PI * 12; move(dancer, dp.x + 26 * Math.sin(da), dp.y - 58 - 22 * Math.cos(da)); }
+    showVerse(v3, t, C1 + 0.3, H0 - 0.2, false);
+  };
+  const drawHouse = (t) => {
+    showVerse(v4, t, H1 - 0.2, H2 + 0.2, true);
+    const v = up(t, H0 - 0.4, 0.5) * (1 - up(t, N0 - 0.5, 0.7)); op(gHouse, v); if (v <= 0) return;
+    const turn = up(t, word("house", 0, 7) + 0.6, 1.5), pv = up(t, H0, 0.3) * (1 - up(t, word("house", 0, 12), 0.9));
+    op(plan, pv); move(plan, 640, 292, 1 - 0.25 * turn, 180 * turn); draw(planLine, up(t, H0 + 0.1, 1.8)); op(planArk, up(t, H0 + 1.4, 0.5));
+    draw(fromAbove, up(t, word("house", 0, 7) - 0.1, 0.9)); op(fromAbove, 1 - up(t, word("house", 0, 12) + 0.3, 0.8));
+    const p0 = word("house", 0, 12), lk = up(t, p0, 3.6), fork = up(t, word("house", 2, 15), 1.6);
+    draw(promise, lk / 0.62); draw(onward, (lk - 0.62) / 0.38); op(onward, 1 - fork); draw(forkA, fork); draw(forkB, fork);
+    kings.forEach((kk, i) => { const o = up(t, p0 + 0.5 + i * 0.5, 0.6) * (i > 3 ? 1 - fork : 1), beat = Math.max(0, Math.sin(t * 1.6 - i * 0.9)); op(kk.g, o); move(kk.g, kk.x, LY - 18 - 3 * beat, 1); });
+    move(hDav, 300, LY - 24 + 1.3 * Math.sin(t * 0.9)); op(hDav, up(t, H0 - 0.3, 0.5));
+    const run = t > H2 - 0.2 && fork < 0.05 ? ((t - H2) * 0.3) % 1 : -1; op(pulse, run >= 0 ? Math.sin(Math.PI * run) : 0); if (run >= 0) pulse.setAttribute("cx", mix(310, 1280, run).toFixed(1));
+  };
+  const drawNathan = (t) => {
+    showVerse(v5, t, N2 - 0.25, W0 - 0.3, true);
+    const v = up(t, N0 - 0.4, 0.5) * (1 - up(t, W0 - 0.5, 0.7)); op(gNathan, v); if (v <= 0) return;
+    const said = up(t, N2 + 0.5, 1.4), cx = mix(KX, KX + 74, said), cy = mix(KY - 32, KY + 22, said);
+    set(nKing, { cy: (KY + 1.2 * Math.sin(t * 0.8) + 8 * said).toFixed(1) }); op(nCrown, up(t, N0 - 0.2, 0.6)); move(nCrown, cx, cy + 1.2 * Math.sin(t * 0.8), mix(2.3, 1.5, said), 22 * said);
+    const u0 = word("nathan", 0, 6), u1 = word("nathan", 0, 11);
+    op(uDot, up(t, u0, 0.6) * (1 - up(t, u1 + 0.2, 1.1))); op(uRing, up(t, u1 + 0.5, 0.8)); op(uLab, up(t, u0 + 0.3, 0.5) * (1 - up(t, u1 + 0.9, 0.6)));
+    const cv = up(t, u1 + 1.3, 1.0), lift = up(t, N2 + 0.9, 1.3); op(pall, cv * (1 - lift)); pall.setAttribute("y", (mix(240, 332, cv) - 70 * lift).toFixed(1));
+    const w0 = word("nathan", 0, 14); draw(whole, up(t, w0, 2.2)); op(whole, 1 - up(t, N1 - 0.3, 0.8)); op(wholeLab, span(t, w0 + 1.0, N1 - 0.1, 0.5, 0.6));
+    const enter = up(t, N1 - 0.2, 1.6), nx = mix(140, 340, enter); op(nDot, up(t, N1 - 0.2, 0.4)); set(nDot, { cx: nx.toFixed(1), cy: (380 - 2 * Math.abs(Math.sin(t * 4.5)) * (enter < 1 ? 1 : 0)).toFixed(1) }); set(nLab, { x: nx.toFixed(1) }); op(nLab, up(t, N1 + 0.9, 0.5) * (1 - up(t, N2 - 0.4, 0.6)));
+    draw(nLine, up(t, word("nathan", 1, 9), 1.3)); op(nLine, 1 - up(t, N2 + 0.6, 0.9));
+  };
+  const drawSword = (t) => {
+    const v = up(t, W0 - 0.4, 0.5) * (1 - up(t, W1 - 0.4, 0.8)); op(gSword, v);
+    if (v > 0) { draw(house, up(t, W0 - 0.3, 2.6)); draw(fGround, up(t, W0 - 0.3, 1.6));
+      const at = [word("sword", 0, 9), word("sword", 0, 13), word("sword", 0, 16), word("sword", 0, 18)]; cracks.forEach((c, i) => draw(c, up(t, at[i], 1.0)));
+      const f = up(t, at[3] + 0.5, 0.9); op(father, f); set(father, { cy: (423 + 6 * up(t, at[3] + 1.4, 1.6) + 1.2 * Math.sin(t * 0.8)).toFixed(1) }); }
+    showVerse(v6, t, word("sword", 0, 18) + 1.0, W1 + 0.1, false);
+    const bv = span(t, W1 - 0.2, ST - 0.1, 0.6, 0.6); op(gBoth, bv);
+    if (bv > 0) { const hx = (X(11) + X(12)) / 2; mark11.setAttribute("transform", `translate(${hx} 0)`); draw(mark11, up(t, W1, 0.9)); draw(bothLine, up(t, W1 + 1.6, 2.6));
+      both.forEach((g, i) => { op(g, up(t, W1 + 0.5 + i * 1.0, 0.7)); move(g, i ? X(18) : X(5), 396 + 1.5 * Math.sin(t * 0.9 + i * 2)); }); }
+  };
+  const drawStart = (t) => {
+    const v = span(t, ST - 0.3, CL + 0.1, 0.4, 0.6); op(gStart, v); if (v <= 0) return;
+    op(big[0], span(t, KEYS[7] - 0.3, KEYS[11] - 0.1, 0.4, 0.3)); op(big[1], span(t, KEYS[11] - 0.1, KEYS[12], 0.3, 0.25)); op(big[2], span(t, KEYS[12], PS - 0.1, 0.25, 0.3));
+    big.forEach((b, i) => b.setAttribute("y", (330 + 6 * Math.sin(t * 0.9 + i)).toFixed(1)));
+    const p = up(t, PS, 0.8), hx = (X(11) + X(12)) / 2; op(psBig, up(t, PS - 0.05, 0.5)); psBig.setAttribute("y", (300 + 8 * (1 - p)).toFixed(1));
+    set(psBar, { x: (hx - 60 * p).toFixed(1), y: SY - 62, width: (120 * p).toFixed(1) }); op(psBar, p); psLine.setAttribute("d", `M${hx} ${SY - 46} V${SY - 18}`); draw(psLine, up(t, PS + 0.3, 0.6)); set(psLab, { x: hx, y: SY - 72 }); op(psLab, up(t, PS + 0.5, 0.5));
+  };
+  const drawClose = (t) => {
+    const v = up(t, CL - 0.2, 0.7) * (1 - up(t, END + 0.5, 0.7)); op(gClose, v); if (v <= 0) return;
+    set(cN, { cy: (372 + 1.4 * Math.sin(t * 0.9)).toFixed(1) }); move(cK, 808, 366 + 1.4 * Math.sin(t * 0.8 + 1)); draw(cLine, up(t, CL + 0.5, 1.6)); cLine.setAttribute("stroke-width", (3.5 + 0.6 * Math.sin(t * 1.5)).toFixed(2));
+  };
+
+  F.title("2 Samuel");
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => { drawStrip(t); drawKing(t); drawParts(t); drawCrown(t); drawHouse(t); drawNathan(t); drawSword(t); drawStart(t); drawClose(t); };
+});
+</script>
+</body></html>

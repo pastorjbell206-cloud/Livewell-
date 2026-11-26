@@ -1,0 +1,167 @@
+{
+ "length": 130.42,
+ "chapters": [
+  {
+   "id": "what",
+   "kicker": "Talking with God",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 18.16,
+   "lines": [
+    {
+     "text": "Prayer is talking with God, who is our Father: bringing him worship, thanks, confession, and requests, and trusting that he hears because of Jesus.",
+     "start": 2.6,
+     "end": 12.42
+    },
+    {
+     "text": "It's not a way of getting things out of God. It's a child speaking to a father.",
+     "start": 13.04,
+     "end": 17.26
+    }
+   ]
+  },
+  {
+   "id": "pattern",
+   "kicker": "The pattern Jesus gave",
+   "level": 0.4,
+   "start": 17.36,
+   "end": 40.78,
+   "lines": [
+    {
+     "text": "When his disciples asked him to teach them to pray, Jesus gave them a pattern, the Lord's Prayer. God's name honored. His kingdom and his will first. Then daily bread, forgiveness as we forgive, and protection from evil.",
+     "start": 18.26,
+     "end": 32.26
+    },
+    {
+     "text": "Your kingdom come, Your will be done, on earth as it is in heaven.",
+     "start": 32.94,
+     "end": 37.14
+    },
+    {
+     "text": "Christians all over the world still pray it.",
+     "start": 37.82,
+     "end": 39.88
+    }
+   ]
+  },
+  {
+   "id": "praise",
+   "kicker": "Praise and thanks",
+   "level": 0.55,
+   "start": 39.98,
+   "end": 50.54,
+   "lines": [
+    {
+     "text": "Praise tells God who he is. Thanks tells him what he has done.",
+     "start": 40.88,
+     "end": 44.84
+    },
+    {
+     "text": "The psalms, the Bible's own book of prayers and songs, are full of both.",
+     "start": 45.48,
+     "end": 49.64
+    }
+   ]
+  },
+  {
+   "id": "ask",
+   "kicker": "Asking",
+   "level": 0.65,
+   "start": 49.74,
+   "end": 69.24,
+   "lines": [
+    {
+     "text": "Paul tells worried people not to swallow their worry but to turn it into prayer, with thanks.",
+     "start": 50.64,
+     "end": 55.9
+    },
+    {
+     "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God.",
+     "start": 56.58,
+     "end": 63.62
+    },
+    {
+     "text": "Asking is not bothering God. It's what children do with a father who loves them.",
+     "start": 64.28,
+     "end": 68.34
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "Confessing",
+   "level": 0.6,
+   "start": 68.44,
+   "end": 82.54,
+   "lines": [
+    {
+     "text": "Confession is neither groveling nor hiding. When we sin we confess it to God, who is faithful and just to forgive us because of Jesus, and we turn from it.",
+     "start": 69.34,
+     "end": 78.94
+    },
+    {
+     "text": "There is no sin too big for the cross.",
+     "start": 79.54,
+     "end": 81.64
+    }
+   ]
+  },
+  {
+   "id": "notyet",
+   "kicker": "When the answer is not what we asked",
+   "level": 0.75,
+   "start": 81.74,
+   "end": 107.38,
+   "lines": [
+    {
+     "text": "Prayer is not a promise that we will get what we ask. Jesus himself asked his Father in the garden to take the cup of suffering away, and added these words.",
+     "start": 82.64,
+     "end": 91.76
+    },
+    {
+     "text": "Yet not My will, but Yours be done.",
+     "start": 92.3,
+     "end": 94.76
+    },
+    {
+     "text": "Some prayers, even for someone to get better, are not answered the way we longed for, and that hurts. The Bible doesn't hide it. Many of its prayers ask God: how long, O LORD?",
+     "start": 95.44,
+     "end": 106.48
+    }
+   ]
+  },
+  {
+   "id": "spirit",
+   "kicker": "When there are no words",
+   "level": 0.7,
+   "start": 106.58,
+   "end": 121.28,
+   "lines": [
+    {
+     "text": "Paul says that when we don't know how we ought to pray, the Spirit himself prays for us, with groans too deep for words.",
+     "start": 107.48,
+     "end": 114.54
+    },
+    {
+     "text": "Prayer doesn't depend on finding the right words. It rests on God, who wants to hear.",
+     "start": 115.24,
+     "end": 120.38
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 120.48,
+   "end": 124.32,
+   "lines": [
+    {
+     "text": "It's a child speaking to a father.",
+     "start": 121.38,
+     "end": 123.42
+    }
+   ]
+  }
+ ]
+}

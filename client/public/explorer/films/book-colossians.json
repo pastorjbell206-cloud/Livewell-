@@ -1,0 +1,121 @@
+{
+  "slug": "book-colossians",
+  "title": "Colossians: complete in Christ",
+  "group": "books",
+  "status": "finished",
+  "book": "colossians",
+  "mark": "book-colossians",
+  "line": {
+    "younger": "A short letter about how great Jesus is: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Colossians as a whole book: a letter to a church Paul never saw, the song of Christ, fullness, putting off and putting on, life in the Lord, and where to begin."
+  },
+  "poster": "A traveller walks a road along a river valley toward a small town, and two larger cities stand on the hills beyond.",
+  "frames": [
+    {
+      "id": "letter",
+      "name": "A letter to a church Paul never saw",
+      "still": "A traveller walks a road along a river valley toward a small town, and two larger cities stand on the hills beyond.",
+      "younger": "Colossians is a letter Paul wrote from prison to a small church he had never visited. A man named Epaphras had started it in his own home town. Some people there were saying that Jesus was a good start, but not enough.",
+      "older": "Colossians was written from prison to a small church Paul had never seen. Epaphras, one of its own people, had carried the gospel home. Now some teaching promised more: visions, food rules, holy days, and attention to angels and powers.",
+      "verse": {
+        "ref": "Colossians 1:7",
+        "text": "You learned it from Epaphras, our beloved fellow servant"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in two equal panels, with a sun and stars over the first and a house over the second. A gold rule lies under the first panel.",
+      "younger": "The letter has two halves. Chapters 1 and 2 show who Jesus is. Chapters 3 and 4 show how his people live, at home and everywhere. The second half grows out of the first.",
+      "older": "The first two chapters are about who Christ is, and the last two about how believers live. The turn comes at the start of chapter 3. The commands of the second half grow out of the gifts of the first.",
+      "verse": {
+        "ref": "Colossians 3:1",
+        "text": "since you have been raised with Christ, strive for the things above"
+      }
+    },
+    {
+      "id": "song",
+      "name": "Watch for: the song of Christ",
+      "still": "Inside one great ring a sun, stars, hills, the sea, a tree and a field are all drawn together. The sun is gold. No one is drawn.",
+      "younger": "Watch for the song about Jesus in chapter 1. Everything was made through him and for him: the stars, the sea, everything you can see and everything you can't. And he holds it all together.",
+      "older": "Christ is the image of the invisible God; all things were made through him and for him, and in him all things hold together. Firstborn means the heir with first place, not the first thing made, as the church confessed at Nicaea.",
+      "verse": {
+        "ref": "Colossians 1:17",
+        "text": "He is before all things, and in Him all things hold together."
+      }
+    },
+    {
+      "id": "fullness",
+      "name": "Watch for: full",
+      "still": "A tree stands in full sun, and its long shadow falls across the path where people walk. The sun is gold.",
+      "younger": "Watch for the word full. Some people said you needed special rules and visions to be close to God. Paul says that if you have Jesus, you have everything. The old rules about food and holy days were like a shadow, and Jesus is the real thing.",
+      "older": "All the fullness of God dwells in Christ, and believers are complete in him. Israel's feasts and Sabbaths were good gifts, a shadow pointing ahead, not a lie. The powers people feared were disarmed at the cross.",
+      "verse": {
+        "ref": "Colossians 2:17",
+        "text": "These are a shadow of the things to come, but the body that casts it belongs to Christ."
+      }
+    },
+    {
+      "id": "clothes",
+      "name": "Watch for: new clothes",
+      "still": "A man stands over an old, torn cloak lying on the ground, wearing a new one, and a friend reaches out to him. A gold sash is tied over it.",
+      "younger": "Watch for clothes. Paul says to take off the old ways like old clothes: anger, lies and greed. Then put on new ones: kindness, patience and forgiving each other. And over everything, put on love.",
+      "older": "Believers put off the old self, with its anger, greed and lies, and put on compassion, kindness, patience and forgiveness, and over them all, love. In the renewed self there is no Greek or Jew, slave or free. Christ is all.",
+      "verse": {
+        "ref": "Colossians 3:14",
+        "text": "And over all these virtues put on love, which is the bond of perfect unity."
+      }
+    },
+    {
+      "id": "home",
+      "name": "Watch for: in the Lord",
+      "still": "Beside a house a family sits at a meal, and nearby a man works at his bench in the evening light.",
+      "younger": "Watch for home. Paul says Jesus is Lord at home and at work too. Whatever you do, do it with your whole heart, for the Lord. Be thankful, and be kind and wise toward people outside the church.",
+      "older": "Paul puts every relationship in the Lord, speaking to the weaker first and laying duties, not privileges, on the stronger. Churches read the words to wives and husbands differently, and all agree they give no one a licence to control or harm another.",
+      "verse": {
+        "ref": "Colossians 3:23",
+        "text": "Whatever you do, work at it with your whole being, for the Lord and not for men"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? Read the whole letter at once. It takes about fifteen minutes. Then read the song about Jesus in chapter 1 again, slowly.",
+      "older": "Read it in one sitting, aloud if you can, then the song of Christ slowly, more than once. Let it ask whether you have treated Christ as a good beginning, and looked elsewhere for the rest.",
+      "verse": {
+        "ref": "Colossians 2:10",
+        "text": "And you have been made complete in Christ"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Paul says to put on kindness and forgiveness like new clothes. Who could you be kind to, or forgive, this week?",
+    "older": "The teaching at Colossae offered something more than Christ. What do people today look to for the rest, after Christ?"
+  },
+  "read": [
+    { "label": "Colossians 1", "href": "/study/bible/colossians/1" },
+    { "label": "Colossians 2", "href": "/study/bible/colossians/2" },
+    { "label": "Colossians 3", "href": "/study/bible/colossians/3" },
+    { "label": "Colossians 4", "href": "/study/bible/colossians/4" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess the Son as the one through whom all things were made, and that in him believers lack nothing. They differ on who wrote the letter: Paul himself, as the letter says and the early church received it; a follower of Paul after his death, as many scholars since the 1800s have argued; or Timothy during Paul's life, with his approval. They differ on where and when it was written, and on what the teaching at Colossae drew on. Churches today read the words to wives and husbands differently, and all agree that they call for love and give no one a licence to control or harm another. Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first. The words to slaves were misused for centuries to defend slavery. That misuse was wrong. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      { "label": "the Colossians page of the Study Bible", "href": "/study/bible/colossians" },
+      { "label": "Find Help", "href": "/help" }
+    ]
+  },
+  "care": "If something hard is happening to you or to someone you love, you do not have to carry it alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Colossians in the Study Bible: the whole book", "href": "/study/bible/colossians" },
+    { "label": "Ephesians: one new people in Christ (a moving picture)", "href": "/study/explorer/watch/book-ephesians" },
+    { "label": "Philippians: joy in chains (a moving picture)", "href": "/study/explorer/watch/book-philippians" },
+    { "label": "The Church and the Spirit: a stop on the map", "href": "/study/explorer/church" }
+  ],
+  "end": { "label": "Start reading: Colossians 1", "href": "/study/bible/colossians/1" }
+}

@@ -1,0 +1,129 @@
+{
+  "title": "Faith: trusting the one who promised",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/faith",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "trust",
+      "kicker": "What faith is",
+      "level": 0.2,
+      "lines": [
+        "Faith, in the Bible's sense, is trust in God and in what he has promised. It's not a leap in the dark, and it doesn't grow stronger the less evidence it has.",
+        "It's the answer a person gives to someone who has spoken and has proved reliable."
+      ],
+      "scripture": {
+        "reference": "Hebrews 11:1",
+        "text": "Now faith is the assurance of what we hope for and the certainty of what we do not see.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "abraham",
+      "kicker": "Abraham",
+      "level": 0.4,
+      "lines": [
+        "Abraham is the pattern. Old and childless, he was told his family would be like the stars, and he believed, centuries before the law.",
+        "Abram believed the LORD, and it was credited to him as righteousness.",
+        "The same Abraham also doubted and schemed. Biblical faith is not a flawless mood. It's reliance that is tested and deepened."
+      ],
+      "scripture": {
+        "reference": "Genesis 15:6",
+        "text": "Abram believed the LORD, and it was credited to him as righteousness.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "seed",
+      "kicker": "A mustard seed",
+      "level": 0.55,
+      "lines": [
+        "In the Gospels, faith is not a force the believer generates. It's reliance on Jesus himself, which is why a mustard seed of it is enough.",
+        "Its strength was never in the believing. It's in the one believed."
+      ],
+      "scripture": {
+        "reference": "Hebrews 12:2",
+        "text": "Let us fix our eyes on Jesus, the author and perfecter of our faith",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "doubt",
+      "kicker": "An honest prayer",
+      "level": 0.7,
+      "lines": [
+        "A father brought his suffering son to Jesus, and prayed one of the most honest prayers in the Gospels.",
+        "I do believe; help my unbelief!",
+        "His faith was mixed and struggling, and Jesus answered it. Doubt brought to Jesus is still coming to Jesus."
+      ],
+      "scripture": {
+        "reference": "Mark 9:24",
+        "text": "I do believe; help my unbelief!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "hearing",
+      "kicker": "How faith grows",
+      "level": 0.6,
+      "lines": [
+        "Faith grows the way trust between persons grows: by hearing and remembering what the other has said and done.",
+        "That's why Scripture keeps retelling the exodus, and why Paul ties faith to hearing the word."
+      ],
+      "scripture": {
+        "reference": "Romans 10:17",
+        "text": "Consequently, faith comes by hearing, and hearing by the word of Christ.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "faithful",
+      "kicker": "Faith and faithfulness",
+      "level": 0.65,
+      "lines": [
+        "The Bible's word for faith is also its word for faithfulness, so trust doesn't stay private. It obeys, endures, and keeps its promises.",
+        "Churches describe the link between faith and works in different words, and none of them teaches that faith earns salvation. This film takes no side."
+      ],
+      "scripture": {
+        "reference": "James 2:17",
+        "text": "So too, faith by itself, if it does not result in action, is dead.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "walk",
+      "kicker": "Walking on",
+      "level": 0.8,
+      "lines": [
+        "Hebrews eleven is a list of people who acted on what God had said without seeing the outcome. Many died still waiting.",
+        "Faith doesn't deny the darkness. It holds to the one who has spoken in it, and walks on.",
+        "For we walk by faith, not by sight."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 5:7",
+        "text": "For we walk by faith, not by sight.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Its strength is in the one believed."
+      ],
+      "titleCard": [
+        "Trusting the one who promised.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+<!doctype html>
+<!-- "The Bible: how we got it". A film about objects: scrolls, pens, sheets, copies, books, shelves.
+     God is never drawn: only a faint mustard light over the whole work. People are dots, all alike, told
+     apart by one small object beside each. Nothing is ever drawn across a scroll or a book of Scripture.
+     Languages are shown as line textures, never as letters. The shelves take no side.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>The Bible: how we got it</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", GY = 520;
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const G = (p) => el("g", {}, p || world);
+  const dot = (p, x, y, r = 9) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const gnd = (p, a = 60, b = 1220) => el("line", { x1: a, x2: b, y1: GY, y2: GY, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, p);
+  const verse = (ch, cx, y, size, max, big) => { const g = G(), words = `“${ch.scripture.text}”`.split(" "), rows = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); rows.push(cur);
+    const lh = Math.round(size * 1.18); rows.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (rows.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+
+  // ---- line textures: never letters, only the look of a written line ----
+  const tex = (kind, x, y, w, f, R) => { let d = "";
+    if (kind === "lat") { let cx = x; const e = x + w * f; while (cx < e - 6) { const len = Math.min(14 + R() * 26, e - cx); d += `M${cx.toFixed(1)} ${y}h${len.toFixed(1)}`; cx += len + 8; } }
+    else if (kind === "heb") { let cx = x + w; const e = x + w * (1 - f); while (cx > e + 6) { const len = Math.min(10 + R() * 16, cx - e); d += `M${cx.toFixed(1)} ${y}h${(-len).toFixed(1)}`; cx -= len + 7; } }
+    else if (kind === "grk") { const n = Math.max(2, Math.floor(w * f / 12)); d = `M${x} ${y}q6 -6 12 0` + "t12 0".repeat(n - 1); }
+    else if (kind === "syr") { const n = Math.max(2, Math.floor(w * f / 16)); d = `M${x + w} ${y}q-8 6 -16 0` + "t-16 0".repeat(n - 1); }
+    else if (kind === "cop") { let cx = x, i = 0; const e = x + w * f; while (cx < e) { d += `M${cx.toFixed(1)} ${y - 5}v10`; cx += (++i % 4 === 0) ? 17 : 9; } }
+    return d; };
+  const SW = { lat: 3, heb: 5, grk: 3, syr: 3, cop: 3 }, CAP = { heb: "butt", cop: "butt" };
+  // a sheet with n written rows; returns { g, rows }
+  const page = (p, x, y, w, h, kind, n, seed, o = {}) => { const g = G(p), R = rng(seed), rows = [];
+    el("rect", { x, y, width: w, height: h, rx: 3, fill: PAPER, stroke: INK, "stroke-width": 3 }, g);
+    const m = o.m ?? 22, gap = (h - 2 * m - 8) / Math.max(1, n - 1);
+    for (let i = 0; i < n; i++) rows.push(line(g, tex(kind, x + m, y + m + 4 + i * gap, w - 2 * m, i === n - 1 ? 0.55 : 0.78 + R() * 0.22, R), { stroke: o.stroke || STONE, "stroke-width": SW[kind], "stroke-linecap": CAP[kind] || "round" }));
+    return { g, rows, x, y, w, h, m, gap }; };
+  const rods = (p, x, y, w, h) => { [y - 9, y + h - 5].forEach((yy) => el("rect", { x: x - 12, y: yy, width: w + 24, height: 14, rx: 7, fill: WARM, stroke: INK, "stroke-width": 3 }, p)); };
+  const shelf = (p, x, y, w, h, seed) => { const g = G(p), R = rng(seed); let cx = x + 4;
+    while (cx < x + w - 10) { const bw = 7 + R() * 9, bh = h * (0.74 + R() * 0.24); el("rect", { x: cx.toFixed(1), y: (y + h - bh).toFixed(1), width: bw.toFixed(1), height: bh.toFixed(1), fill: [PAPER, WARM, MUTED][Math.floor(R() * 3)], stroke: INK, "stroke-width": 2 }, g); cx += bw + 1.5; }
+    el("line", { x1: x - 12, x2: x + w + 12, y1: y + h, y2: y + h, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g); return g; };
+  const openBook = (p, cx, y, w, h, seed, n = 4) => { const g = G(p), R = rng(seed), hw = w / 2, rows = [];
+    [-1, 1].forEach((s) => { el("path", { d: `M${cx} ${y + 10} q${s * hw / 2} -22 ${s * hw} 0 v${h} q${-s * hw / 2} -22 ${-s * hw} 0 Z`, fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g);
+      for (let i = 0; i < n; i++) { const x0 = s < 0 ? cx - hw + 16 : cx + 16; rows.push(line(g, tex("lat", x0, y + 26 + i * ((h - 34) / n), hw - 32, 0.75 + R() * 0.25, R), { stroke: STONE, "stroke-width": 2.5 })); } });
+    rows.forEach((r) => r.setAttribute("stroke-dashoffset", 0)); return g; };
+  const miniBook = (p, x, y, w, h) => { const g = G(p); el("rect", { x: x - w / 2, y, width: w, height: h, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, g); el("path", { d: `M${x} ${y} V${y + h} M${x - w / 2 + 6} ${y + h * 0.36} H${x - 6} M${x - w / 2 + 6} ${y + h * 0.66} H${x - 6} M${x + 6} ${y + h * 0.36} H${x + w / 2 - 6} M${x + 6} ${y + h * 0.66} H${x + w / 2 - 6}`, fill: "none", stroke: STONE, "stroke-width": 2, "stroke-linecap": "round" }, g); return g; };
+  const bag = (p, x, handle) => { const g = G(p); if (handle) el("path", { d: `M${x + 70} 342 Q${x + 170} 232 ${x + 270} 342`, fill: "none", stroke: INK, "stroke-width": 5, "stroke-linecap": "round" }, g); const back = G(g);
+    const front = el("path", { d: `M${x} ${GY} V362 Q${x} 342 ${x + 20} 342 H${x + 320} Q${x + 340} 342 ${x + 340} 362 V${GY} Z`, fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g);
+    el("path", { d: `M${x + 24} 392 H${x + 316}`, stroke: LINE, "stroke-width": 3, "stroke-linecap": "round" }, g); return { g, back, front }; };
+
+  // times
+  const A0 = S("many", 0), A1 = S("many", 1), An = at("many", 1, 0.56), Ag = at("many", 1, 0.72);
+  const B0 = S("scribes", 0), B1 = S("scribes", 1), B2 = S("scribes", 2);
+  const C0 = S("materials", 0), C1 = S("materials", 1), Cb = at("materials", 1, 0.68);
+  const D0 = S("copies", 0), D1 = S("copies", 1);
+  const E0 = S("codex", 0), E1 = S("codex", 1), Eb = at("codex", 1, 0.24), Ec = at("codex", 1, 0.42), Ed = at("codex", 1, 0.76);
+  const F0 = S("received", 0), F1 = S("received", 1), F2 = S("received", 2);
+  const G0 = S("translate", 0), G1 = S("translate", 1), Gb = at("translate", 1, 0.55), G2 = S("translate", 2), H0 = S("close", 0);
+
+  // ================= 1: many hands, many centuries =================
+  const gA1 = G(), tl = line(gA1, "M90 370 H1190", { "stroke-width": 3 });
+  [...Array(12)].forEach((_, i) => el("line", { x1: 130 + i * 94, x2: 130 + i * 94, y1: 370, y2: 382, stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gA1));
+  const early = [...Array(6)].map((_, i) => { const g = G(gA1), x = 150 + i * 190; el("rect", { x: x - 20, y: 326, width: 40, height: 22, rx: 5, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, g); el("rect", { x: x - 26, y: 322, width: 9, height: 30, rx: 4.5, fill: WARM, stroke: INK, "stroke-width": 2.5 }, g); return g; });
+  const sets = [G(gA1), G(gA1), G(gA1), G(gA1)];
+  el("path", { d: "M120 268 L220 216 L320 268 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, sets[0]); el("rect", { x: 128, y: 268, width: 184, height: 14, fill: WARM, stroke: INK, "stroke-width": 3 }, sets[0]);
+  [146, 196, 244, 294].forEach((x) => el("rect", { x: x - 9, y: 282, width: 18, height: 88, fill: PAPER, stroke: INK, "stroke-width": 3 }, sets[0]));
+  el("path", { d: "M392 370 L490 236 L588 370 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, sets[1]); el("path", { d: "M490 236 V214 M490 370 L470 318 L490 290 L510 318 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round", "stroke-linecap": "round" }, sets[1]);
+  el("rect", { x: 676, y: 228, width: 176, height: 142, fill: WARM, stroke: INK, "stroke-width": 3 }, sets[2]); el("rect", { x: 728, y: 262, width: 72, height: 72, fill: CHAR }, sets[2]);
+  [746, 764, 782].forEach((x) => el("line", { x1: x, x2: x, y1: 262, y2: 334, stroke: BONE, "stroke-width": 5 }, sets[2]));
+  el("path", { d: "M950 370 Q1010 318 1050 286 Q1082 262 1128 240 L1148 240 Q1112 270 1090 300 Q1060 338 1050 370 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, sets[3]);
+  el("path", { d: "M1004 366 l8 -14 M1030 336 l8 -12 M1060 306 l8 -10 M1094 276 l8 -8", stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, sets[3]); el("rect", { x: 1150, y: 338, width: 16, height: 32, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, sets[3]);
+  const setAt = [0.46, 0.6, 0.72, 0.88].map((f) => at("many", 0, f) - 0.5);
+
+  const gA2 = G(); gnd(gA2);
+  const wx = (i) => 150 + i * 140, writers = [];
+  const obj = [
+    (g, x) => el("path", { d: `M${x - 20} 476 v-24 l10 13 l10 -18 l10 18 l10 -13 v24 Z`, fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g),
+    (g, x) => { el("path", { d: `M${x - 16} 462 q16 22 32 0 Z`, fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); el("path", { d: `M${x} 456 q-9 -10 0 -20 t0 -20`, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, g); },
+    (g, x) => el("path", { d: `M${x + 24} 516 V436 q0 -16 -14 -16`, fill: "none", stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g),
+    (g, x) => { el("rect", { x: x - 17, y: 434, width: 34, height: 44, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 3 }, g); el("path", { d: `M${x - 9} 446 h18 M${x - 9} 455 h18`, stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, g); el("rect", { x: x - 6, y: 462, width: 12, height: 10, fill: MUSTARD }, g); },
+    (g, x) => { el("path", { d: `M${x - 26} 468 h52 M${x - 19} 468 v22 M${x + 19} 468 v22`, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, g); [[x - 14, 3], [x + 2, 2]].forEach(([cx, n]) => { for (let i = 0; i < n; i++) el("rect", { x: cx, y: 461 - i * 6, width: 13, height: 5, rx: 2, fill: MUTED, stroke: INK, "stroke-width": 1.5 }, g); }); },
+    (g, x) => el("path", { d: `M${x - 9} 436 h18 v8 q13 7 13 22 q0 12 -9 12 h-26 q-9 0 -9 -12 q0 -15 13 -22 Z`, fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g),
+    (g, x) => el("path", { d: `M${x - 28} 444 q28 44 56 0 M${x - 14} 458 q14 16 28 0 M${x - 12} 448 v20 M${x} 450 v24 M${x + 12} 448 v20`, fill: "none", stroke: INK, "stroke-width": 2.5, "stroke-linecap": "round" }, g),
+    (g, x) => { el("rect", { x: x - 22, y: 448, width: 44, height: 26, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, g); el("rect", { x: x - 28, y: 444, width: 10, height: 34, rx: 5, fill: WARM, stroke: INK, "stroke-width": 2.5 }, g); },
+  ];
+  [0.1, 0.16, 0.21, 0.27, 0.35, 0.41, 0.47, 0.53].forEach((f, i) => { const g = G(gA2), x = wx(i); obj[i](g, x); if (i === 6) { dot(g, x - 13, 509, 8); dot(g, x + 13, 509, 8); } else dot(g, x, 509); writers.push({ g, at: at("many", 1, f) - 0.25 }); });
+  const gA3 = G(), nameless = [0, 1, 2, 3, 4].map((i) => { const g = G(gA3), x = 190 + i * 200 + (i % 2) * 6, y = 240 + (i % 2) * 14; const p = page(g, x, y, 100, 116, "lat", 4, 30 + i, { m: 16 }); rods(g, x, y, 100, 116);
+    p.rows.forEach((r) => r.setAttribute("stroke-dashoffset", 0)); p.rows[0].setAttribute("display", "none"); el("rect", { x: x + 16, y: y + 14, width: 50, height: 12, fill: "none", stroke: LINE, "stroke-width": 2, "stroke-dasharray": "4 5" }, g); return g; });
+  const glowA = el("rect", { x: 70, y: 208, width: 1140, height: 340, rx: 60, fill: MUSTARD }, world);
+
+  // ================= 2: speakers and writers =================
+  const gB1 = G(); gnd(gB1);
+  dot(gB1, 230, 509); dot(gB1, 420, 509); txt(gB1, "lab", 230, 556, "JEREMIAH", 15); txt(gB1, "lab", 420, 556, "BARUCH", 15);
+  const say1 = [0, 1, 2].map((i) => el("path", { d: `M${264 + i * 24} ${458 - i * 8} q${14 + i * 3} ${22 + i * 8} 0 ${44 + i * 16}`, fill: "none", stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, gB1));
+  el("path", { d: "M480 470 H780 M500 470 V520 M760 470 V520", fill: "none", stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, gB1);
+  const penB = el("line", { x1: 436, y1: 498, x2: 500, y2: 440, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, gB1);
+  const emptyB = el("rect", { x: 540, y: 250, width: 180, height: 212, fill: "none", stroke: LINE, "stroke-width": 2.5, "stroke-dasharray": "7 8" }, gB1);
+  const sc1g = G(gB1), sc1 = page(sc1g, 540, 250, 180, 212, "lat", 8, 51); rods(sc1g, 540, 250, 180, 212);
+  const sc2g = G(gB1), sc2 = page(sc2g, 540, 196, 180, 266, "lat", 10, 52); rods(sc2g, 540, 196, 180, 266);
+  const braz = G(gB1); el("path", { d: "M930 438 q64 70 128 0 Z", fill: CHAR }, braz); el("path", { d: "M950 470 L936 520 M1038 470 L1052 520 M994 474 V520", stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, braz);
+  const sparks = [...Array(7)].map((_, i) => ({ e: el("path", { d: "M0 -6 L5 0 L0 6 L-5 0 Z", fill: MUSTARD }, braz), x: 950 + (i * 37) % 92, ph: i * 0.37 }));
+  const gB2 = G(); gnd(gB2);
+  dot(gB2, 150, 509); dot(gB2, 268, 509); txt(gB2, "lab", 150, 556, "PAUL", 15); const terLab = txt(gB2, "lab", 268, 556, "TERTIUS", 15);
+  const say2 = [0, 1].map((i) => el("path", { d: `M${180 + i * 22} ${466 - i * 8} q${14 + i * 3} ${20 + i * 8} 0 ${40 + i * 16}`, fill: "none", stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, gB2));
+  el("line", { x1: 284, y1: 498, x2: 344, y2: 446, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, gB2);
+  const letter = page(gB2, 350, 184, 300, 320, "lat", 9, 61, { m: 28 });
+  const Rg = rng(62), greet = line(gB2, tex("grk", 378, 470, 244, 0.7, Rg), { stroke: INK, "stroke-width": 5 });
+  letter.rows[8].setAttribute("display", "none");
+  const signRow = line(gB2, letter.rows[7].getAttribute("d"), { stroke: MUSTARD, "stroke-width": 4 });
+
+  // ================= 3: scroll, ink and language =================
+  const gC1 = G(); gnd(gC1);
+  const plant = G(gC1); el("line", { x1: 160, x2: 160, y1: GY, y2: 300, stroke: INK, "stroke-width": 5, "stroke-linecap": "round" }, plant);
+  [-66, -44, -22, 0, 22, 44, 66].forEach((a) => el("line", { x1: 160, y1: 300, x2: 160 + 86 * Math.sin(a * Math.PI / 180), y2: 300 - 86 * Math.cos(a * Math.PI / 180), stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, plant));
+  const pap = G(gC1); el("rect", { x: 262, y: 300, width: 150, height: 200, fill: PAPER, stroke: INK, "stroke-width": 3 }, pap);
+  const papV = [...Array(9)].map((_, i) => line(pap, `M${277 + i * 15} 302 V498`, { stroke: LINE, "stroke-width": 2.5 })), papH = [...Array(12)].map((_, i) => line(pap, `M264 ${316 + i * 15.5} H410`, { stroke: MUTED, "stroke-width": 2.5 }));
+  const frame = G(gC1); el("rect", { x: 478, y: 300, width: 190, height: 206, fill: "none", stroke: INK, "stroke-width": 6 }, frame);
+  el("path", { d: "M506 332 Q572 318 640 334 Q650 402 642 474 Q574 490 504 476 Q496 402 506 332 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, frame);
+  el("path", { d: "M506 332 L480 302 M640 334 L666 302 M642 474 L666 504 M504 476 L480 504 M573 322 V302 M573 486 V504 M499 402 H480 M648 402 H666", stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, frame);
+  const parch = G(gC1); el("path", { d: "M712 330 H836 V478 Q836 500 814 500 H712 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, parch); el("path", { d: "M836 478 Q816 478 814 500", fill: "none", stroke: INK, "stroke-width": 2.5 }, parch);
+  const ink = G(gC1); el("path", { d: "M912 520 V478 Q912 462 928 462 H934 V446 H966 V462 H972 Q988 462 988 478 V520 Z", fill: CHAR, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, ink);
+  const reed = G(gC1); el("line", { x1: 1040, y1: 514, x2: 1136, y2: 316, stroke: INK, "stroke-width": 8, "stroke-linecap": "round" }, reed); el("path", { d: "M1040 514 L1034 532 L1050 520 Z", fill: INK }, reed);
+  const gC2 = G(); gnd(gC2);
+  const ot = page(gC2, 190, 196, 360, 308, "heb", 9, 71, { m: 28 }), nt = page(gC2, 770, 250, 280, 254, "grk", 7, 72, { m: 26 });
+  txt(gC2, "lab", 370, 556, "HEBREW", 17); const grkLab = txt(gC2, "lab", 910, 556, "GREEK", 17);
+  const aram = G(gC2); [5, 6].forEach((i) => el("rect", { x: 562, y: ot.y + ot.m + 4 + i * ot.gap - 5, width: 22, height: 10, fill: MUSTARD }, aram)); txt(aram, "lab", 650, ot.y + ot.m + 4 + 5.5 * ot.gap + 6, "ARAMAIC", 15);
+  const gC3 = G(); gnd(gC3);
+  const bagC = bag(gC3, 470);
+  [[520, 96], [578, 124], [636, 84]].forEach(([x, h]) => { el("rect", { x, y: 344 - h, width: 42, height: h + 60, rx: 8, fill: PAPER, stroke: INK, "stroke-width": 3 }, bagC.back); el("rect", { x: x - 5, y: 338 - h, width: 52, height: 12, rx: 6, fill: WARM, stroke: INK, "stroke-width": 2.5 }, bagC.back); });
+  const fold = G(gC3); el("rect", { x: 694, y: 268, width: 108, height: 76, rx: 10, fill: MUSTARD, opacity: 0.16 }, fold); el("path", { d: "M702 280 H794 V338 H702 Z M702 309 H794", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, fold);
+
+  // ================= 4: copies =================
+  const gD1 = G(); gnd(gD1);
+  [[150, 509], [186, 509], [222, 509], [168, 487], [204, 487], [1058, 509], [1094, 509], [1130, 509], [1076, 487], [1112, 487]].forEach(([x, y]) => dot(gD1, x, y));
+  const mini = (p, seed) => { const g = G(p); const pg = page(g, -30, -38, 60, 76, "lat", 4, seed, { m: 11 }); pg.rows.forEach((r) => r.setAttribute("stroke-dashoffset", 0)); return g; };
+  const L0 = mini(gD1, 81), L1 = mini(gD1, 81), R0 = mini(gD1, 82), R1 = mini(gD1, 82);
+  const arcs = [line(gD1, "M186 400 Q640 60 1094 400", { stroke: LINE, "stroke-width": 2.5, "stroke-dasharray": "0.012 0.012" }), line(gD1, "M1094 420 Q640 250 186 420", { stroke: LINE, "stroke-width": 2.5, "stroke-dasharray": "0.012 0.012" })];
+  const gD2 = G(); gnd(gD2);
+  const px = [140, 400, 660, 920], diffRow = [2, 5, 1, 4], cps = px.map((x, i) => { const g = G(gD2), pg = page(g, x, 206, 220, 256, "lat", 7, 90, { m: 24 });
+    const bold = pg.rows.map((r, k) => k === diffRow[i] ? null : line(g, r.getAttribute("d"), { stroke: INK, "stroke-width": 3.5 }));
+    const yy = pg.y + pg.m + 4 + diffRow[i] * pg.gap, mk = G(g); el("line", { x1: x + 172 + i * 4, x2: x + 184 + i * 4, y1: yy, y2: yy, stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, mk); el("path", { d: `M${x - 20} ${yy - 7} L${x - 8} ${yy} L${x - 20} ${yy + 7} Z`, fill: MUSTARD }, mk);
+    dot(g, x + 96, 509); el("line", { x1: x + 110, y1: 500, x2: x + 138, y2: 470, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g); return { g, pg, bold, mk }; });
+  const cmp = []; [0, 1, 2].forEach((i) => { for (let k = 0; k < 7; k++) { const yy = 206 + 24 + 4 + k * cps[0].pg.gap; cmp.push(line(gD2, `M${px[i] + 226} ${yy} H${px[i + 1] - 6}`, { stroke: STONE, "stroke-width": 2 })); } });
+
+  // ================= 5: from scroll to book =================
+  const gE1 = G(); gnd(gE1);
+  const lscroll = G(gE1); el("rect", { x: 130, y: 300, width: 430, height: 130, fill: PAPER, stroke: INK, "stroke-width": 3 }, lscroll); const Rs = rng(101);
+  [0, 1, 2, 3].forEach((i) => line(lscroll, tex("lat", 160, 326 + i * 26, 370, 0.9, Rs), { stroke: STONE, "stroke-width": 3 }).setAttribute("stroke-dashoffset", 0));
+  [118, 548].forEach((x) => el("rect", { x, y: 284, width: 24, height: 162, rx: 12, fill: WARM, stroke: INK, "stroke-width": 3 }, lscroll)); txt(gE1, "lab", 345, 492, "THE SCROLL", 16);
+  const sheets = [0, 1, 2, 3].map((i) => el("path", { d: `M${770 + i * 7} ${304 - i * 9} L900 ${330 - i * 9} L${1030 - i * 7} ${304 - i * 9} V${444 - i * 9} L900 ${470 - i * 9} L${770 + i * 7} ${444 - i * 9} Z M900 ${330 - i * 9} V${470 - i * 9}`, fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gE1)).reverse();
+  const stitch = [0, 1, 2, 3, 4].map((i) => el("line", { x1: 900, x2: 900, y1: 344 + i * 26, y2: 358 + i * 26, stroke: MUSTARD, "stroke-width": 5, "stroke-linecap": "round" }, gE1)); const cdxLab = txt(gE1, "lab", 900, 496, "THE CODEX", 16);
+  const gE2 = G(); gnd(gE2);
+  const flip = [400, 880].map((cx, j) => { const g = G(gE2), R1 = rng(110 + j), R2 = rng(120 + j); el("rect", { x: cx - 100, y: 236, width: 200, height: 250, fill: PAPER, stroke: INK, "stroke-width": 3 }, g);
+    const front = G(g), back = G(g); for (let i = 0; i < 7; i++) { line(front, tex("lat", cx - 76, 266 + i * 31, 152, 0.8 + R1() * 0.2, R1), { stroke: STONE, "stroke-width": 3 }).setAttribute("stroke-dashoffset", 0); if (j) line(back, tex("lat", cx - 76, 266 + i * 31, 152, 0.8 + R2() * 0.2, R2), { stroke: STONE, "stroke-width": 3 }).setAttribute("stroke-dashoffset", 0); }
+    if (!j) rods(g, cx - 100, 236, 200, 250); else [0, 1, 2, 3, 4].forEach((i) => el("line", { x1: cx - 100, x2: cx - 100, y1: 266 + i * 46, y2: 282 + i * 46, stroke: MUSTARD, "stroke-width": 5, "stroke-linecap": "round" }, g));
+    return { g, front, back, cx }; });
+  const gE3 = G(); gnd(gE3);
+  const longS = G(gE3); el("rect", { x: -19, y: -330, width: 38, height: 330, rx: 10, fill: PAPER, stroke: INK, "stroke-width": 3 }, longS); el("rect", { x: -25, y: -338, width: 50, height: 12, rx: 6, fill: WARM, stroke: INK, "stroke-width": 2.5 }, longS); longS.setAttribute("transform", "translate(596 520) rotate(13)");
+  const bagE = bag(gE3, 200); const slip = G(bagE.back); el("rect", { x: 300, y: 0, width: 92, height: 150, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, slip); el("line", { x1: 314, x2: 314, y1: 0, y2: 150, stroke: INK, "stroke-width": 3 }, slip);
+  const findB = openBook(gE3, 930, 268, 380, 210, 131, 5); const tick = el("path", { d: "M1140 360 L1164 346 V374 Z", fill: MUSTARD }, gE3);
+  const gE4 = G(); gnd(gE4);
+  const thin = [0, 1, 2, 3].map((i) => { const g = G(gE4); el("rect", { x: -30, y: 232, width: 60, height: 232, rx: 3, fill: [PAPER, WARM, PAPER, MUTED][i], stroke: INK, "stroke-width": 3 }, g); el("line", { x1: -30, x2: 30, y1: 264, y2: 264, stroke: INK, "stroke-width": 2 }, g); return g; });
+  const thick = G(gE4); el("rect", { x: 530, y: 222, width: 220, height: 244, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3.5 }, thick); el("path", { d: "M530 258 H750 M530 430 H750", stroke: INK, "stroke-width": 2.5 }, thick);
+  const lab4 = txt(gE4, "lab", 640, 200, "ALL FOUR GOSPELS", 16), lab1 = txt(gE4, "lab", 640, 200, "IN ONE VOLUME", 16);
+  const rowsE = [shelf(gE4, 120, 452, 400, 68, 141), shelf(gE4, 760, 452, 400, 68, 142)];
+
+  // ================= 6: which books =================
+  const gF1 = G(); gnd(gF1);
+  const t1 = G(gF1); el("rect", { x: 118, y: 344, width: 62, height: 190, rx: 31, fill: MUSTARD, opacity: 0.12 }, t1); el("rect", { x: 140, y: 364, width: 18, height: 156, rx: 4, fill: MUSTARD }, t1);
+  [[214, 509], [250, 509], [286, 509], [268, 487]].forEach(([x, y]) => dot(t1, x, y)); const t1line = line(t1, "M300 478 Q336 420 372 436", { stroke: STONE, "stroke-width": 3 });
+  const bk1 = G(gF1); el("rect", { x: 372, y: 392, width: 78, height: 128, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, bk1); el("line", { x1: 386, x2: 386, y1: 392, y2: 520, stroke: INK, "stroke-width": 3 }, bk1);
+  const t2 = G(gF1); const teach = line(t2, "M506 376 H844", { stroke: MUSTARD, "stroke-width": 4 });
+  [540, 630, 720, 810].forEach((x, i) => { miniBook(t2, x, 392 + (i % 2) * 6, 60, 40); [[-16, 509], [16, 509], [0, 488]].forEach(([dx, y]) => dot(t2, x + dx, y, 8)); });
+  const t3 = G(gF1), stands = [[950, 520], [1070, 430], [1176, 520]].map(([x, y], i) => { const g = G(t3); el("path", { d: `M${x} ${y} V${y - 60}`, stroke: INK, "stroke-width": 5, "stroke-linecap": "round" }, g); el("path", { d: `M${x - 34} ${y - 52} L${x + 34} ${y - 76} V${y - 66} L${x - 34} ${y - 42} Z`, fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); el("path", { d: `M${x - 26} ${y - 60} L${x + 26} ${y - 78} V${y - 104} L${x - 26} ${y - 86} Z M${x} ${y - 69} V${y - 95}`, fill: PAPER, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, g);
+    if (y < 500) el("line", { x1: x - 60, x2: x + 60, y1: y, y2: y, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, g); [[-44, -11], [-26, -11], [36, -11]].forEach(([dx, dy]) => dot(g, x + dx, y + dy, 7)); return g; });
+  const gF2 = G(); gnd(gF2);
+  const glowF = el("rect", { x: 400, y: 252, width: 730, height: 290, rx: 50, fill: MUSTARD }, gF2); shelf(gF2, 430, 290, 670, 190, 171);
+  const turn = [[150, 509], [192, 509], [234, 509], [276, 509], [171, 485], [255, 485]].map(([x, y]) => { dot(gF2, x, y); return { x, y, e: el("line", { stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, gF2) }; });
+  const gF3 = G();
+  const shA = shelf(gF3, 300, 222, 560, 108, 181), shB = G(gF3); shelf(shB, 300, 398, 560, 108, 181); shelf(shB, 866, 398, 96, 108, 183);
+
+  // ================= 7: translation =================
+  const gG1 = G(); gnd(gG1);
+  const gp = page(gG1, 430, 190, 420, 316, "grk", 9, 191, { m: 30 }); txt(gG1, "lab", 640, 556, "GREEK", 17);
+  const arm = G(gG1); [[3, 250, 90], [6, 100, 70]].forEach(([k, dx, w]) => { const yy = gp.y + gp.m + 4 + k * gp.gap + 12; el("rect", { x: 460 + dx, y: yy, width: w, height: 5, rx: 2.5, fill: MUSTARD }, arm); }); txt(arm, "lab", 960, gp.y + gp.m + 4 + 4.5 * gp.gap + 6, "ARAMAIC", 15);
+  el("path", { d: `M874 ${gp.y + gp.m + 4 + 3 * gp.gap + 14} H898 M874 ${gp.y + gp.m + 4 + 6 * gp.gap + 14} H898 M898 ${gp.y + gp.m + 4 + 3 * gp.gap + 14} V${gp.y + gp.m + 4 + 6 * gp.gap + 14}`, fill: "none", stroke: MUSTARD, "stroke-width": 3, "stroke-linecap": "round" }, arm);
+  const gG2 = G(); gnd(gG2);
+  const hp = page(gG2, 250, 236, 230, 250, "heb", 7, 201), gk2 = page(gG2, 780, 236, 230, 250, "grk", 7, 202); txt(gG2, "lab", 365, 218, "HEBREW", 16); const g2lab = txt(gG2, "lab", 895, 218, "GREEK", 16);
+  const arrG = line(gG2, "M510 360 H742 M722 342 L746 360 L722 378", { stroke: MUSTARD, "stroke-width": 4 });
+  const firstCh = [790, 825, 860, 895, 930, 965, 1000].map((x) => dot(gG2, x, 507, 8));
+  const gG3 = G(); gnd(gG3);
+  const tp = [["grk", 110, "GREEK"], ["lat", 390, "LATIN"], ["syr", 670, "SYRIAC"], ["cop", 950, "COPTIC"]].map(([k, x, name], i) => { const g = G(gG3), pg = page(g, x, 232 + (i % 2) * 12, 210, 230, k, 7, 210 + i); txt(g, "lab", x + 105, 214 + (i % 2) * 12, name, 16); return { g, pg }; });
+  const fan = line(gG3, "M215 462 V496 H1055 V474 M495 496 V474 M775 496 V486", { stroke: MUSTARD, "stroke-width": 3.5 });
+  const gG4 = G();
+  const bibs = [[330, 372, 260, 150, 221], [660, 250, 300, 170, 222], [985, 392, 230, 140, 223]].map(([cx, y, w, h, s]) => { openBook(gG4, cx, y, w, h, s, 4); return [cx, y + h + 22]; });
+  dot(gG4, 640, 560); const gaze = el("line", { x1: 640, y1: 548, stroke: MUSTARD, "stroke-width": 3.5, "stroke-linecap": "round" }, gG4);
+
+  // ================= 8: close =================
+  const gH = G(); el("rect", { x: 100, y: 300, width: 1080, height: 280, rx: 60, fill: MUSTARD, opacity: 0.1 }, gH);
+  shelf(gH, 140, 430, 1000, 118, 231); openBook(gH, 640, 324, 250, 84, 232, 3);
+
+  const vA = verse(SC.many, 640, 128, 24, 72, false), vB = verse(SC.scribes, 950, 286, 42, 22, true), vC = verse(SC.materials, 640, 140, 26, 70, false);
+  const vD = verse(SC.copies, 640, 128, 24, 72, false), vH = verse(SC.close, 640, 150, 34, 52, true);
+
+  F.title("The Bible: how we got it", 68);
+  F.endCard(SC.close.titleCard, END + 0.7);
+  const rise = (g, k, dy = 26) => { op(g, k); g.setAttribute("transform", `translate(0 ${((1 - k) * dy).toFixed(1)})`); };
+  const rowsIn = (rows, t, a, d) => rows.forEach((r, i) => draw(r, up(t, a + (d * i) / rows.length, Math.max(0.5, d / rows.length * 1.6))));
+
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.3, 0.6);
+    // ----- 1 -----
+    op(gA1, span(t, A0 - 0.6, An + 0.1, 0.7)); draw(tl, up(t, A0 - 0.6, 3));
+    early.forEach((g, i) => rise(g, up(t, A0 - 0.2 + i * 0.4, 0.5) * (1 - up(t, setAt[0] - 0.3, 0.6)), 10));
+    sets.forEach((g, i) => rise(g, up(t, setAt[i], 0.9)));
+    op(gA2, span(t, A1 - 0.3, B0 - 0.45, 0.6)); writers.forEach((w) => rise(w.g, up(t, w.at, 0.6), 14));
+    op(gA3, span(t, An - 0.2, B0 - 0.45, 0.7)); nameless.forEach((g, i) => { const k = up(t, An - 0.1 + i * 0.3, 0.7); g.setAttribute("opacity", k.toFixed(3)); g.setAttribute("transform", `translate(0 ${((1 - k) * 16 + 2 * Math.sin(t * 0.9 + i)).toFixed(1)})`); });
+    op(glowA, 0.1 * up(t, Ag - 0.3, 1.6) * (1 - up(t, B0 - 0.7, 0.5)) * (0.85 + 0.15 * Math.sin(t * 1.3)));
+    op(vA, span(t, A1 + 0.4, B0 - 0.45, 0.6));
+    // ----- 2 -----
+    op(gB1, span(t, B0 - 0.45, B1 - 0.25, 0.6));
+    const burn = at("scribes", 0, 0.58), again = at("scribes", 0, 0.8), dict = (t < burn - 0.2 || t > again) ? 1 : 0.15;
+    say1.forEach((e, i) => op(e, dict * (0.35 + 0.65 * Math.abs(Math.sin(t * 2.6 - i * 0.7)))));
+    penB.setAttribute("transform", `translate(${(3 * Math.sin(t * 7)).toFixed(1)} ${(2 * Math.cos(t * 6)).toFixed(1)})`);
+    rowsIn(sc1.rows, t, at("scribes", 0, 0.16), 3.2); const gone = up(t, burn, 0.8); op(sc1g, up(t, B0 - 0.3, 0.6) * (1 - gone)); sc1g.setAttribute("transform", `translate(${(gone * 60).toFixed(1)} ${(-gone * 20).toFixed(1)})`);
+    op(emptyB, gone * (1 - up(t, again - 0.2, 0.6)));
+    op(braz, span(t, burn - 0.5, again + 1.2, 0.6)); sparks.forEach((s) => { const u = ((t * 0.55 + s.ph) % 1); move(s.e, s.x + 8 * Math.sin(t * 3 + s.ph * 9), 432 - u * 120, 0.6 + 0.5 * (1 - u)); op(s.e, span(t, burn, again + 0.6, 0.4) * (1 - u)); });
+    op(sc2g, up(t, again - 0.2, 0.6)); rowsIn(sc2.rows, t, again, 2.0);
+    op(gB2, span(t, B1 - 0.25, C0 - 0.45, 0.6));
+    say2.forEach((e, i) => op(e, (t < at("scribes", 1, 0.6) ? 1 : 0.15) * (0.35 + 0.65 * Math.abs(Math.sin(t * 2.6 - i * 0.7)))));
+    rowsIn(letter.rows, t, B1, 4.2); draw(greet, up(t, at("scribes", 1, 0.42), 1.4));
+    draw(signRow, up(t, at("scribes", 1, 0.74), 1.2)); op(terLab, up(t, B2 - 0.3, 0.6)); op(vB, span(t, B2 - 0.3, C0 - 0.45, 0.6));
+    // ----- 3 -----
+    op(gC1, span(t, C0 - 0.45, C1 - 0.25, 0.6));
+    rise(plant, up(t, C0 - 0.3, 0.8)); plant.setAttribute("transform", `rotate(${(1.6 * Math.sin(t * 1.4)).toFixed(2)} 160 520)`);
+    op(pap, up(t, at("materials", 0, 0.12), 0.6)); papV.forEach((e, i) => draw(e, up(t, at("materials", 0, 0.14) + i * 0.06, 0.6))); papH.forEach((e, i) => draw(e, up(t, at("materials", 0, 0.26) + i * 0.05, 0.6)));
+    rise(frame, up(t, at("materials", 0, 0.38), 0.7)); rise(parch, up(t, at("materials", 0, 0.54), 0.7)); rise(ink, up(t, at("materials", 0, 0.66), 0.6));
+    const rk = up(t, at("materials", 0, 0.8), 0.7); op(reed, rk); reed.setAttribute("transform", `translate(${((1 - rk) * 30).toFixed(1)} ${((1 - rk) * -20 + 3 * Math.sin(t * 2)).toFixed(1)})`);
+    op(gC2, span(t, C1 - 0.25, Cb - 0.1, 0.6)); rowsIn(ot.rows, t, C1 - 0.1, 2.0); op(aram, up(t, at("materials", 1, 0.2), 0.7)); rowsIn(nt.rows, t, at("materials", 1, 0.48), 1.6); op(nt.g, up(t, at("materials", 1, 0.44), 0.6)); op(grkLab, up(t, at("materials", 1, 0.5), 0.6));
+    op(gC3, span(t, Cb - 0.1, D0 - 0.45, 0.6)); const fk = up(t, at("materials", 1, 0.86), 1.0); op(fold, up(t, at("materials", 1, 0.84), 0.5)); fold.setAttribute("transform", `translate(0 ${((1 - fk) * -46).toFixed(1)})`);
+    bagC.g.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 1.5)).toFixed(1)})`); op(vC, span(t, Cb + 0.2, D0 - 0.45, 0.6));
+    // ----- 4 -----
+    op(gD1, span(t, D0 - 0.45, D1 - 0.25, 0.6));
+    move(L0, 186, 438); op(L0, up(t, D0 - 0.3, 0.6)); move(R0, 1094, 438); op(R0, up(t, D0 + 0.2, 0.6));
+    const k1 = up(t, at("copies", 0, 0.3), 2.6), k2 = up(t, at("copies", 0, 0.72), 2.0);
+    op(L1, up(t, at("copies", 0, 0.08), 0.5)); move(L1, mix(232, 1022, k1), 438 - 170 * Math.sin(Math.PI * k1) - 40 * k1, 1, 8 * Math.sin(Math.PI * k1) + 7 * k1);
+    op(R1, up(t, at("copies", 0, 0.66), 0.5)); move(R1, mix(1030, 258, k2), 438 - 92 * Math.sin(Math.PI * k2) - 40 * k2, 1, -8 * Math.sin(Math.PI * k2) - 7 * k2);
+    op(arcs[0], 0.7 * up(t, at("copies", 0, 0.26), 0.6)); arcs[0].setAttribute("stroke-dashoffset", (-t * 0.02).toFixed(4)); op(arcs[1], 0.7 * up(t, at("copies", 0, 0.68), 0.6)); arcs[1].setAttribute("stroke-dashoffset", (-t * 0.02).toFixed(4));
+    op(vD, span(t, D0 + 0.4, D1 - 0.25, 0.6));
+    op(gD2, span(t, D1 - 0.25, E0 - 0.45, 0.6));
+    const diffAt = at("copies", 1, 0.4), cmpAt = at("copies", 1, 0.72);
+    cps.forEach((c, i) => { const a = D1 - 0.2 + [0, 0.9, 1.8, 1.8][i], k = up(t, a, 0.7); op(c.g, k); c.g.setAttribute("transform", `translate(${((1 - k) * -60).toFixed(1)} 0)`); rowsIn(c.pg.rows, t, a + 0.1, 1.4); op(c.mk, up(t, diffAt + i * 0.25, 0.5)); c.bold.forEach((b) => b && draw(b, up(t, cmpAt + 0.5, 1.4))); });
+    cmp.forEach((e, i) => draw(e, up(t, cmpAt + (i % 7) * 0.08, 0.7)));
+    // ----- 5 -----
+    op(gE1, span(t, E0 - 0.45, E1 - 0.25, 0.6)); lscroll.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 1.3)).toFixed(1)})`);
+    sheets.forEach((e, i) => { const k = up(t, at("codex", 0, 0.34) + i * 0.3, 0.6); op(e, k); e.setAttribute("transform", `translate(0 ${((1 - k) * -30).toFixed(1)})`); });
+    stitch.forEach((e, i) => op(e, up(t, at("codex", 0, 0.6) + i * 0.18, 0.35))); op(cdxLab, up(t, at("codex", 0, 0.3), 0.6));
+    op(gE2, span(t, E1 - 0.25, Eb, 0.5)); const fl = up(t, E1 + 1.0, 1.3), sx = Math.max(0.03, Math.abs(Math.cos(Math.PI * fl)));
+    flip.forEach((f) => { f.g.setAttribute("transform", `translate(${f.cx} 0) scale(${sx.toFixed(3)} 1) translate(${-f.cx} 0)`); op(f.front, fl < 0.5 ? 1 : 0); op(f.back, fl < 0.5 ? 0 : 1); });
+    op(gE3, span(t, Eb, Ec, 0.5)); const sk = up(t, Eb + 0.2, 1.0); slip.setAttribute("transform", `translate(0 ${mix(150, 300, sk).toFixed(1)})`); op(tick, up(t, at("codex", 1, 0.34), 0.4)); tick.setAttribute("transform", `translate(${(4 * Math.sin(t * 4)).toFixed(1)} 0)`);
+    op(gE4, span(t, Ec, F0 - 0.45, 0.5)); const mg = up(t, at("codex", 1, 0.6), 1.2);
+    thin.forEach((g, i) => { g.setAttribute("transform", `translate(${mix(400 + i * 160, 565 + i * 50, mg).toFixed(1)} 0)`); op(g, up(t, Ec + i * 0.25, 0.5) * (1 - up(t, at("codex", 1, 0.6) + 0.9, 0.5))); });
+    op(thick, up(t, at("codex", 1, 0.6) + 0.8, 0.6)); op(lab4, span(t, Ec + 0.3, at("codex", 1, 0.6) + 0.6, 0.4)); op(lab1, up(t, at("codex", 1, 0.6) + 0.9, 0.5));
+    rowsE.forEach((g, i) => { const k = up(t, Ed + i * 0.4, 0.9); op(g, k); g.setAttribute("transform", `translate(${((1 - k) * (i ? 60 : -60)).toFixed(1)} 0)`); });
+    // ----- 6 -----
+    op(gF1, span(t, F0 - 0.45, F1 - 0.25, 0.6)); rise(bk1, up(t, F0 - 0.3, 0.7));
+    op(t1, up(t, at("received", 0, 0.05), 0.8)); draw(t1line, up(t, at("received", 0, 0.2), 1.0));
+    op(t2, up(t, at("received", 0, 0.44), 0.8)); draw(teach, up(t, at("received", 0, 0.5), 1.6));
+    stands.forEach((g, i) => rise(g, up(t, at("received", 0, 0.72) + i * 0.45, 0.7), 18));
+    op(gF2, span(t, F1 - 0.25, F2 - 0.25, 0.6)); op(glowF, 0.13 * (0.85 + 0.15 * Math.sin(t * 1.4)));
+    const tk = up(t, at("received", 1, 0.42), 1.2); turn.forEach((d, i) => { const dir = mix(-1, 1, clamp(tk * 1.4 - i * 0.06)); set(d.e, { x1: d.x + 14 * dir, x2: d.x + 30 * dir, y1: d.y - 3, y2: d.y - 6 }); });
+    op(gF3, span(t, F2 - 0.25, G0 - 0.45, 0.6)); op(shA, up(t, F2 - 0.1, 0.7)); op(shB, up(t, at("received", 2, 0.34), 0.8));
+    // ----- 7 -----
+    op(gG1, span(t, G0 - 0.45, G1 - 0.25, 0.6)); rowsIn(gp.rows, t, G0 - 0.2, 2.2); op(arm, up(t, at("translate", 0, 0.52), 0.7));
+    op(gG2, span(t, G1 - 0.25, Gb, 0.6)); rowsIn(hp.rows, t, G1 - 0.1, 1.2); draw(arrG, up(t, at("translate", 1, 0.1), 1.2)); op(gk2.g, up(t, at("translate", 1, 0.16), 0.6)); op(g2lab, up(t, at("translate", 1, 0.16), 0.6)); rowsIn(gk2.rows, t, at("translate", 1, 0.18), 1.4);
+    firstCh.forEach((d, i) => op(d, up(t, at("translate", 1, 0.34) + i * 0.1, 0.4)));
+    op(gG3, span(t, Gb, G2 - 0.25, 0.6)); tp.forEach((p, i) => { const a = i ? at("translate", 1, [0, 0.66, 0.76, 0.86][i]) : Gb + 0.1; op(p.g, up(t, a, 0.6)); rowsIn(p.pg.rows, t, a + 0.1, 1.0); }); draw(fan, up(t, at("translate", 1, 0.6), 2.4));
+    op(gG4, span(t, G2 - 0.25, H0 - 0.45, 0.6)); const ph = (t - G2) * 0.9, wA = Math.max(0, Math.cos(ph)), wB = Math.max(0, Math.cos(ph - 2.1)), wC = Math.max(0, Math.cos(ph - 4.2)), ws = wA + wB + wC || 1;
+    set(gaze, { x2: ((bibs[0][0] * wA + bibs[1][0] * wB + bibs[2][0] * wC) / ws).toFixed(1), y2: ((bibs[0][1] * wA + bibs[1][1] * wB + bibs[2][1] * wC) / ws).toFixed(1) });
+    // ----- 8 -----
+    op(gH, up(t, H0 - 0.45, 0.8) * outAll); op(vH, up(t, H0, 0.9) * outAll);
+  };
+});
+</script>
+</body></html>

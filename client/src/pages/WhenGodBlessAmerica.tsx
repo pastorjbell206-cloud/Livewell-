@@ -13,6 +13,7 @@ import { FreeEbookButtons, earlierLine } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
 import { OfferLine, OfferMeta, useEbookLabel } from "@/components/BookOffer";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
+import NarratedFilm from "@/components/NarratedFilm";
 
 const COVER = "/covers/when-god-bless-america-800.webp";
 const SHARE = "/covers/when-god-bless-america.jpg";
@@ -84,6 +85,8 @@ export default function WhenGodBlessAmerica() {
           </div>
         </div>
       </section>
+
+      <NarratedFilm page="/books/a-higher-allegiance" band="warm" />
 
       {/* PITCH */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>

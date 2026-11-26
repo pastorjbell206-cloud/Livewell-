@@ -1537,6 +1537,414 @@
       "book": "revelation"
     },
     {
+      "slug": "book-ruth",
+      "title": "Ruth: loyal love in a hard time",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short story of two women, a field and a kind man: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Ruth as a whole book: four scenes, loyal love, a God who works through ordinary days, the kinsman-redeemer, an outsider brought in, and an ending that reaches to David."
+      },
+      "mark": "book-ruth",
+      "frames": 7,
+      "stops": [
+        "land"
+      ],
+      "cards": [],
+      "book": "ruth"
+    },
+    {
+      "slug": "book-jonah",
+      "title": "Jonah: the prophet who ran from mercy",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short book about a prophet who ran away, a storm, a great fish and a great city: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Jonah as a whole book: a prophet who runs, a God whom wind and sea obey, a city that turns, an angry prophet, the question the book ends on, and the ways Christians read it."
+      },
+      "mark": "book-jonah",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "jonah"
+    },
+    {
+      "slug": "book-daniel",
+      "title": "Daniel: the Most High rules",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A book of brave stories and strange visions: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Daniel as a whole book: court stories and visions, two languages, the Most High who rules the kingdoms, faith that will not bow, the Son of Man, and the ways readers date it and read its visions."
+      },
+      "mark": "book-daniel",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "daniel"
+    },
+    {
+      "slug": "book-1-corinthians",
+      "title": "1 Corinthians: a gifted church, coming apart",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A letter to a church that was gifted, proud and quarrelling: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Corinthians as a whole letter: a real church with real trouble, two halves, the wisdom of the cross, one body, the way of love, the resurrection, and the hard passages where faithful churches differ."
+      },
+      "mark": "book-1-corinthians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-corinthians"
+    },
+    {
+      "slug": "book-ephesians",
+      "title": "Ephesians: one new people in Christ",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A letter from prison about God's great plan and one family made from two: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Ephesians as a whole letter: praise that turns into teaching, grace, one new people from Jew and Gentile, a worthy walk, the armor of God, and the household passages as churches read them."
+      },
+      "mark": "book-ephesians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "ephesians"
+    },
+    {
+      "slug": "book-philippians",
+      "title": "Philippians: joy in chains",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A thank-you letter from a prisoner to his friends: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Philippians as a whole letter: thanks from prison, four short chapters, joy that sits beside chains, the mind of Christ, all counted as loss to know him, contentment, and where to begin."
+      },
+      "mark": "book-philippians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "philippians"
+    },
+    {
+      "slug": "book-hebrews",
+      "title": "Hebrews: hold on to Jesus",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A long letter to believers who were tired of believing: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Hebrews as a whole book: a sermon for tired believers, the Son through whom God has spoken, the old covenant honored as God's gift, the great high priest, warnings and hope, and where to begin."
+      },
+      "mark": "book-hebrews",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "hebrews"
+    },
+    {
+      "slug": "book-james",
+      "title": "James: faith that works",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short letter of sharp, practical sayings from the brother of Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "James as a whole letter: wisdom in the form of a letter, trials, faith that is alive, how James and Paul fit together, the poor and the rich, the power of speech, and where to begin."
+      },
+      "mark": "book-james",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "james"
+    },
+    {
+      "slug": "book-joshua",
+      "title": "Joshua: a promise kept",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a river crossed and a land given: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Joshua as a whole book: four movements, the crossing, the hardest chapters faced plainly, who belongs, rest and a choice, and where to begin."
+      },
+      "mark": "book-joshua",
+      "frames": 7,
+      "stops": [
+        "land"
+      ],
+      "cards": [],
+      "book": "joshua"
+    },
+    {
+      "slug": "book-judges",
+      "title": "Judges: a people coming apart",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of the years when Israel kept forgetting God: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Judges as a whole book: the wheel that runs downhill, unlikely and flawed deliverers, the darkest chapters named plainly, no king in Israel, and where to begin."
+      },
+      "mark": "book-judges",
+      "frames": 7,
+      "stops": [
+        "land"
+      ],
+      "cards": [],
+      "book": "judges"
+    },
+    {
+      "slug": "book-1-samuel",
+      "title": "1 Samuel: the heart God sees",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a boy who heard God, a tall king and a shepherd: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Samuel as a whole book: three lives, seven stages, a word that returns, a people asking for a king, the heart God sees, loyal love, and where to begin."
+      },
+      "mark": "book-1-samuel",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": [],
+      "book": "1-samuel"
+    },
+    {
+      "slug": "book-jeremiah",
+      "title": "Jeremiah: the prophet who wept",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a prophet who warned his city and kept speaking when no one listened: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Jeremiah as a whole book: forty years of warning, false security, honest prayer, a letter to the exiles, the new covenant, and where to begin."
+      },
+      "mark": "book-jeremiah",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "jeremiah"
+    },
+    {
+      "slug": "book-galatians",
+      "title": "Galatians: nothing added to Christ",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "An urgent letter about who belongs to God's family: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Galatians as a whole book: an urgent letter, the question of who belongs, Abraham and the law, one table, freedom and the fruit of the Spirit, and where to begin."
+      },
+      "mark": "book-galatians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "galatians"
+    },
+    {
+      "slug": "book-colossians",
+      "title": "Colossians: complete in Christ",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short letter about how great Jesus is: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Colossians as a whole book: a letter to a church Paul never saw, the song of Christ, fullness, putting off and putting on, life in the Lord, and where to begin."
+      },
+      "mark": "book-colossians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "colossians"
+    },
+    {
+      "slug": "book-1-peter",
+      "title": "1 Peter: hope for strangers",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A letter of hope to people who felt like strangers in their own towns: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Peter as a whole book: a letter to strangers, a living hope, God's people, doing good without striking back, casting every care on God, and where to begin."
+      },
+      "mark": "book-1-peter",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-peter"
+    },
+    {
+      "slug": "book-1-john",
+      "title": "1 John: so that you may know",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short letter from an old pastor to churches that had been shaken: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 John as a whole book: a sermon to shaken churches, themes that circle back, hands that touched, three marks of knowing God, sin and forgiveness, God is love, and where to begin."
+      },
+      "mark": "book-1-john",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-john"
+    },
+    {
+      "slug": "book-leviticus",
+      "title": "Leviticus: living near a holy God",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of how God's people could live near him: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Leviticus as a whole book: the question it answers, six parts, gifts brought near, holy and clean, the Day of Atonement, love of neighbor, and where to begin."
+      },
+      "mark": "book-leviticus",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "leviticus"
+    },
+    {
+      "slug": "book-numbers",
+      "title": "Numbers: forty years in the wilderness",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a long walk through the desert, with God leading the way: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Numbers as a whole book: two generations, God at the center of the camp, the refusal at Kadesh, Balaam's blessing, the new generation, and where to begin."
+      },
+      "mark": "book-numbers",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "numbers"
+    },
+    {
+      "slug": "book-deuteronomy",
+      "title": "Deuteronomy: love the LORD with all your heart",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of Moses saying goodbye to God's people: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Deuteronomy as a whole book: Moses' farewell, three addresses, the Shema, chosen in love, laws that take the side of the weak, the call to choose life, and where to begin."
+      },
+      "mark": "book-deuteronomy",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "deuteronomy"
+    },
+    {
+      "slug": "book-2-samuel",
+      "title": "2 Samuel: the king and the promise",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of King David, God's great promise, and a family torn apart: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "2 Samuel as a whole book: the highest and most honest picture of a king, a crown not seized, the promise of a house, Nathan's word, the sword in David's house, and where to begin."
+      },
+      "mark": "book-2-samuel",
+      "frames": 7,
+      "stops": [
+        "kingdom"
+      ],
+      "cards": [],
+      "book": "2-samuel"
+    },
+    {
+      "slug": "book-nehemiah",
+      "title": "Nehemiah: rebuilding the walls, and a people",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a man who prayed, went home and rebuilt a city's walls: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Nehemiah as a whole book: a memoir of prayer and work, the wall in fifty-two days, justice for the poor, the law read with joy, promises broken, and where to begin."
+      },
+      "mark": "book-nehemiah",
+      "frames": 7,
+      "stops": [
+        "return"
+      ],
+      "cards": [],
+      "book": "nehemiah"
+    },
+    {
+      "slug": "book-amos",
+      "title": "Amos: let justice roll on like a river",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a herdsman God sent to a rich kingdom that forgot the poor: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Amos as a whole book: a herdsman in a prosperous kingdom, the trap that closes on Israel, justice like a river, the plumb line, the fallen tent restored, and where to begin."
+      },
+      "mark": "book-amos",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "amos"
+    },
+    {
+      "slug": "book-2-corinthians",
+      "title": "2 Corinthians: power in weakness",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "Paul's most personal letter, to a church he loved and that had hurt him: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "2 Corinthians as a whole book: a pastor hurt by people he loves, treasure in jars of clay, a new creation, the grace of giving, power in weakness, and where to begin."
+      },
+      "mark": "book-2-corinthians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "2-corinthians"
+    },
+    {
+      "slug": "book-1-thessalonians",
+      "title": "1 Thessalonians: hope that does not give up",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A warm letter to a young church that had lost friends and was afraid: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Thessalonians as a whole book: Paul's oldest letter, a church turned from idols, hope in grief, the Lord's coming without a date, life together, and where to begin."
+      },
+      "mark": "book-1-thessalonians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-thessalonians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

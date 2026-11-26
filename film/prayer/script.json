@@ -1,0 +1,123 @@
+{
+  "title": "Prayer",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/prayer",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "what",
+      "kicker": "Talking with God",
+      "level": 0.2,
+      "lines": [
+        "Prayer is talking with God, who is our Father: bringing him worship, thanks, confession, and requests, and trusting that he hears because of Jesus.",
+        "It's not a way of getting things out of God. It's a child speaking to a father."
+      ]
+    },
+    {
+      "id": "pattern",
+      "kicker": "The pattern Jesus gave",
+      "level": 0.4,
+      "lines": [
+        "When his disciples asked him to teach them to pray, Jesus gave them a pattern, the Lord's Prayer. God's name honored. His kingdom and his will first. Then daily bread, forgiveness as we forgive, and protection from evil.",
+        "Your kingdom come, Your will be done, on earth as it is in heaven.",
+        "Christians all over the world still pray it."
+      ],
+      "scripture": {
+        "reference": "Matthew 6:10",
+        "text": "Your kingdom come, Your will be done, on earth as it is in heaven.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "praise",
+      "kicker": "Praise and thanks",
+      "level": 0.55,
+      "lines": [
+        "Praise tells God who he is. Thanks tells him what he has done.",
+        "The psalms, the Bible's own book of prayers and songs, are full of both."
+      ],
+      "scripture": {
+        "reference": "Psalm 100:4",
+        "text": "Enter His gates with thanksgiving and His courts with praise",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "ask",
+      "kicker": "Asking",
+      "level": 0.65,
+      "lines": [
+        "Paul tells worried people not to swallow their worry but to turn it into prayer, with thanks.",
+        "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God.",
+        "Asking is not bothering God. It's what children do with a father who loves them."
+      ],
+      "scripture": {
+        "reference": "Philippians 4:6",
+        "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "confess",
+      "kicker": "Confessing",
+      "level": 0.6,
+      "lines": [
+        "Confession is neither groveling nor hiding. When we sin we confess it to God, who is faithful and just to forgive us because of Jesus, and we turn from it.",
+        "There is no sin too big for the cross."
+      ],
+      "scripture": {
+        "reference": "1 John 1:9",
+        "text": "If we confess our sins, He is faithful and just to forgive us our sins",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "notyet",
+      "kicker": "When the answer is not what we asked",
+      "level": 0.75,
+      "lines": [
+        "Prayer is not a promise that we will get what we ask. Jesus himself asked his Father in the garden to take the cup of suffering away, and added these words.",
+        "Yet not My will, but Yours be done.",
+        "Some prayers, even for someone to get better, are not answered the way we longed for, and that hurts. The Bible doesn't hide it. Many of its prayers ask God: how long, O LORD?"
+      ],
+      "scripture": {
+        "reference": "Luke 22:42",
+        "text": "Yet not My will, but Yours be done.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "spirit",
+      "kicker": "When there are no words",
+      "level": 0.7,
+      "lines": [
+        "Paul says that when we don't know how we ought to pray, the Spirit himself prays for us, with groans too deep for words.",
+        "Prayer doesn't depend on finding the right words. It rests on God, who wants to hear."
+      ],
+      "scripture": {
+        "reference": "Romans 8:26",
+        "text": "the Spirit Himself intercedes for us with groans too deep for words.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "It's a child speaking to a father."
+      ],
+      "titleCard": [
+        "A child speaking to a father.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

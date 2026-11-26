@@ -1,0 +1,232 @@
+<!doctype html>
+<!-- "Revelation: the Lamb on the throne". A strip of the book's 22 chapters runs along the bottom for the whole
+     film. Above it: a curtain drawn aside from seven gatherings; lampstands, an open door, an empty lit seat, a
+     sealed scroll, a new horizon; the lit seat above the tilting towers; the word LION and, where it was
+     announced, a bare cross; one book and four ways of reading it; a garden-city with its gates open.
+     God and Christ are never drawn: the throne is an empty seat with light on it, the Lamb is a bare cross in
+     light. No beasts, no battle, no judgment shown (one dark band passes and is gone), nothing tied to any
+     nation, person, number or date. People are dots, all alike.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Revelation: the Lamb on the throne</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const U0 = S("unveil", 0), U1 = S("unveil", 1), U2 = S("unveil", 2), UE = E("unveil");
+  const L0 = S("layout", 0), L1 = S("layout", 1), LE = E("layout"), T0 = S("throne", 0), T1 = S("throne", 1), TE = E("throne");
+  const B0 = S("lamb", 0), B1 = S("lamb", 1), B2 = S("lamb", 2), BE = E("lamb"), D0 = S("differ", 0), D0E = E("differ", 0), D1 = S("differ", 1), DE = E("differ");
+  const N0 = S("new", 0), N1 = S("new", 1), NE = E("new"), ST0 = S("start", 0), ST0E = E("start", 0), ST1 = S("start", 1), STE = E("start"), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(22);
+  const dot = (p, x, y, r = 8.5) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const FLAME = "M0 0 C-9 -9 -4 -19 0 -28 C4 -19 9 -9 0 0 Z";
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), rows = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); rows.push(cur);
+    const lh = Math.round(size * 1.18), ts = rows.map((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    const ref = txt(g, "lab", cx, y + (rows.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return { g, ts, ref }; };
+
+  // ================= 1: the curtain, and seven gatherings =================
+  const gCh = el("g", {}, world), KIND = ["d", "c", "d", "n", "c", "d", "c"];
+  const groundU = line(gCh, "M70 452 H1210", {});
+  const churches = KIND.map((kind, i) => { const cx = 175 + i * 155, g = el("g", { transform: `translate(${cx} 452) scale(1.38) translate(${-cx} -452)` }, gCh), o = { kind, cx, g };
+    o.cush = kind === "c" ? el("rect", { x: cx - 52, y: 438, width: 104, height: 14, rx: 7, fill: MUTED, stroke: INK, "stroke-width": 2 }, g) : null;
+    o.dots = [-36, -12, 12, 36].map((dx) => dot(g, cx + dx, kind === "c" ? 430 : 442));
+    el("path", { d: `M${cx} 418 V372 M${cx - 13} 372 H${cx + 13} M${cx - 10} 418 H${cx + 10}`, stroke: INK, "stroke-width": 3, "stroke-linecap": "round", fill: "none" }, g);
+    o.glow = el("circle", { cx, cy: 356, r: 30, fill: MUSTARD, opacity: 0 }, g); o.fl = el("path", { d: FLAME, fill: MUSTARD }, g);
+    o.jabs = kind === "d" ? [-1, 1].flatMap((s) => [0, 1, 2].map((j) => ({ s, j, e: el("line", { stroke: CHAR, "stroke-width": 5, "stroke-linecap": "round" }, g) }))) : []; return o; });
+  const gSee = el("g", {}, world), seeArc = line(gSee, "M140 150 Q640 76 1140 150", { stroke: MUSTARD, "stroke-width": 5 });
+  const seeGlow = el("path", { d: "M140 150 Q640 76 1140 150 L1140 176 Q640 104 140 176 Z", fill: MUSTARD, opacity: 0.16 }, gSee);
+  const rays = churches.map((c) => el("line", { stroke: MUSTARD, "stroke-width": 2, "stroke-linecap": "round" }, gSee));
+  const gCur = el("g", {}, world), curtain = el("path", { fill: WARM, stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round" }, gCur), folds = [0.2, 0.42, 0.62, 0.82].map((f) => ({ f, e: el("line", { stroke: LINE, "stroke-width": 3, "stroke-linecap": "round" }, gCur) }));
+  const rod = el("line", { x1: 50, x2: 1230, y1: 100, y2: 100, stroke: INK, "stroke-width": 6, "stroke-linecap": "round" }, gCur);
+  const v1 = verse(SC.unveil, 640, 198, 44, 30, true);
+
+  // ================= 2: how the book is laid out =================
+  const gLay = el("g", {}, world);
+  const stands = [...Array(7)].map((_, i) => { const x = 116 + i * 36, g = el("g", {}, gLay); el("path", { d: `M${x} 440 V${372 - (i % 2) * 14} M${x - 11} ${372 - (i % 2) * 14} H${x + 11} M${x - 9} 440 H${x + 9}`, stroke: INK, "stroke-width": 3, "stroke-linecap": "round", fill: "none" }, g); const fl = el("path", { d: FLAME, fill: MUSTARD }, g); return { x, y: 366 - (i % 2) * 14, g, fl }; });
+  const among = line(gLay, "M224 446 V250", { stroke: MUSTARD, "stroke-width": 6 });
+  const gDoor = el("g", {}, gLay); el("rect", { x: 392, y: 214, width: 76, height: 138, fill: MUSTARD, opacity: 0.55 }, gDoor); el("rect", { x: 392, y: 214, width: 76, height: 138, fill: "none", stroke: INK, "stroke-width": 4 }, gDoor);
+  const leaf = el("path", { fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gDoor);
+  el("path", { d: "M370 372 q22 -16 44 0 q20 -14 42 0 q16 -10 34 0", fill: "none", stroke: LINE, "stroke-width": 3, "stroke-linecap": "round" }, gDoor);
+  const doorBeam = line(gLay, "M470 300 C520 300 520 330 566 344", { stroke: MUSTARD, "stroke-width": 3 });
+  const gSeat2 = el("g", {}, gLay); el("circle", { cx: 640, cy: 300, r: 86, fill: MUSTARD, opacity: 0.14 }, gSeat2);
+  [[548, 414, 184, 30], [570, 386, 140, 28], [592, 360, 96, 26]].forEach(([x, y, w, h]) => el("rect", { x, y, width: w, height: h, fill: WARM, stroke: INK, "stroke-width": 3 }, gSeat2));
+  el("path", { d: "M612 360 V290 Q612 262 640 262 Q668 262 668 290 V360 Z", fill: PAPER, stroke: INK, "stroke-width": 3 }, gSeat2); el("rect", { x: 606, y: 336, width: 68, height: 24, fill: MUSTARD, stroke: INK, "stroke-width": 3 }, gSeat2);
+  const gScroll = el("g", {}, gLay); el("rect", { x: 772, y: 290, width: 132, height: 64, fill: PAPER, stroke: INK, "stroke-width": 3 }, gScroll); [764, 902].forEach((x) => el("rect", { x, y: 280, width: 12, height: 84, rx: 5, fill: MUTED, stroke: INK, "stroke-width": 3 }, gScroll));
+  [306, 322, 338].forEach((y) => el("line", { x1: 788, x2: 890, y1: y, y2: y, stroke: LINE, "stroke-width": 2.5 }, gScroll));
+  const seals = [...Array(7)].map((_, i) => el("rect", { x: 783 + i * 16, y: 354, width: 10, height: 16, rx: 2, fill: CHAR }, gScroll));
+  const panels = [[944, 262], [994, 318], [1044, 244]].map(([x, y]) => { const g = el("g", {}, gLay); const f = el("rect", { x, y, width: 42, height: 62, fill: MUSTARD }, g); el("rect", { x, y, width: 42, height: 62, fill: "none", stroke: INK, "stroke-width": 3 }, g); return { g, f }; });
+  const gNewH = el("g", {}, gLay); el("path", { d: "M1118 440 A42 42 0 0 1 1202 440 Z", fill: MUSTARD, opacity: 0.6 }, gNewH);
+  const newSky = line(gNewH, "M1092 440 Q1160 300 1228 440", { stroke: INK, "stroke-width": 3 }), newGround = line(gNewH, "M1084 440 H1236", { stroke: INK, "stroke-width": 3.5 });
+  const v2 = verse(SC.layout, 640, 150, 28, 70, false);
+
+  // ================= 3: the seat above the towers =================
+  const gThr = el("g", {}, world), thrGlow = [150, 112, 76].map((r) => el("circle", { cx: 640, cy: 216, r, fill: MUSTARD }, gThr));
+  const thrRays = [...Array(9)].map((_, i) => { const a = (-160 + i * 17.5) * Math.PI / 180; return el("line", { x1: 640 + 96 * Math.cos(a), y1: 214 + 96 * Math.sin(a), x2: 640 + 134 * Math.cos(a), y2: 214 + 134 * Math.sin(a), stroke: MUSTARD, "stroke-width": 4, "stroke-linecap": "round" }, gThr); });
+  const floor = line(gThr, "M110 384 H1170", { stroke: STONE, "stroke-width": 2.5 });
+  [[440, 348, 400, 36], [480, 316, 320, 32], [520, 286, 240, 30]].forEach(([x, y, w, h]) => el("rect", { x, y, width: w, height: h, fill: WARM, stroke: INK, "stroke-width": 3.5 }, gThr));
+  el("path", { d: "M584 286 V182 Q584 150 640 150 Q696 150 696 182 V286 Z", fill: PAPER, stroke: INK, "stroke-width": 3.5 }, gThr); const seatLight = el("rect", { x: 574, y: 252, width: 132, height: 34, fill: MUSTARD, stroke: INK, "stroke-width": 3.5 }, gThr);
+  const wors = [];
+  [[150, 373], [165, 349]].forEach(([x0, y], row) => { for (let i = 0; i < 9 - row; i++) { [x0 + i * 31, 1280 - x0 - i * 31].forEach((x) => wors.push({ x, y, e: dot(gThr, x, y, 8) })); } });
+  const dn = [...Array(9)].map((_, i) => el("rect", { x: 876 + i * 32, y: 150, width: 26, height: 26, rx: 3, stroke: INK, "stroke-width": 2 }, gThr));
+  const gChaos = el("g", {}, world), towers = [...Array(8)].map((_, i) => { const g = el("g", {}, gChaos), h = 78 + R() * 44, w = 30 + R() * 10; el("rect", { x: -w / 2, y: -h, width: w, height: h, fill: MUTED, stroke: INK, "stroke-width": 3 }, g); el("rect", { x: -w / 2 - 7, y: -h - 12, width: w + 14, height: 12, fill: MUTED, stroke: INK, "stroke-width": 3 }, g); [-w / 6, w / 6].forEach((x) => el("line", { x1: x, x2: x, y1: -h + 6, y2: -6, stroke: STONE, "stroke-width": 2 }, g)); return { g, x: 150 + i * 140, tilt: (R() - 0.5) * 56, ph: R() * 6 }; });
+  const scrib = [...Array(7)].map(() => ({ x: 130 + R() * 1020, y: 250 + R() * 150, ph: R() * 6, e: el("path", { fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gChaos) }));
+  const groundT = line(world, "M70 452 H1210", {});
+  const v3 = verse(SC.throne, 256, 150, 25, 24, false);
+
+  // ================= 4: the Lion announced, the Lamb seen =================
+  const gLamb = el("g", {}, world), groundB = line(gLamb, "M70 452 H1210", {});
+  const lambGlow = [170, 120, 74].map((r) => el("circle", { cx: 640, cy: 306, r, fill: MUSTARD }, gLamb));
+  const hill = line(gLamb, "M500 452 Q640 396 780 452", {}), crossV = line(gLamb, "M640 426 V214", { stroke: INK, "stroke-width": 11, "stroke-linecap": "butt" }), crossH = line(gLamb, "M572 284 H708", { stroke: INK, "stroke-width": 11, "stroke-linecap": "butt" });
+  const john = dot(gLamb, 170, 440, 11), sight = el("line", { x1: 186, y1: 432, stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "3 9", "stroke-linecap": "round" }, gLamb);
+  const lionW = txt(gLamb, "disp", 640, 336, "LION", 128), lambW = txt(gLamb, "disp", 962, 338, "LAMB", 96);
+  const foll = [...Array(10)].map((_, i) => { const x = i < 5 ? 262 + i * 46 : 834 + (i - 5) * 46; return { x, i, e: dot(gLamb, x, 441), gift: el("rect", { width: 12, height: 12, rx: 2, fill: MUSTARD }, gLamb) }; });
+  const strikes = [-1, 1].flatMap((s) => [0, 1, 2].map((j) => ({ s, j, e: el("line", { stroke: CHAR, "stroke-width": 6, "stroke-linecap": "round" }, gLamb) })));
+  const v4 = verse(SC.lamb, 640, 150, 48, 60, true);
+
+  // ================= 5: one book, four ways of reading =================
+  const gDif = el("g", {}, world);
+  el("path", { d: "M640 258 L536 240 V362 L640 380 Z", fill: PAPER, stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round" }, gDif); el("path", { d: "M640 258 L744 240 V362 L640 380 Z", fill: PAPER, stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round" }, gDif);
+  [0, 1, 2, 3, 4].forEach((i) => { el("line", { x1: 552, x2: 626, y1: 262 + i * 20, y2: 275 + i * 20, stroke: LINE, "stroke-width": 2.5 }, gDif); el("line", { x1: 654, x2: 728, y1: 275 + i * 20, y2: 262 + i * 20, stroke: LINE, "stroke-width": 2.5 }, gDif); });
+  const VIEWS = [{ x: 236, y: 226, rx: 392, ry: 238, rr: 30, bx: 566, by: 286, lab: "FULFILLED IN THE FIRST CENTURIES", f: 0.22 }, { x: 300, y: 408, rx: 432, ry: 380, rr: 19, bx: 580, by: 340, lab: "CHURCH HISTORY", f: 0.5 }, { x: 1044, y: 322, rx: 884, ry: 318, rr: 25, bx: 712, by: 306, lab: "STILL TO COME", f: 0.67 }, { x: 952, y: 432, rx: 836, ry: 412, rr: 16, bx: 700, by: 350, lab: "EVERY AGE", f: 0.835 }];
+  VIEWS.forEach((v) => { v.g = el("g", {}, gDif); v.ln = line(v.g, `M${v.x + (v.x < 640 ? 44 : -44)} ${v.y - 6} L${v.bx} ${v.by}`, { stroke: STONE, "stroke-width": 2 }); v.ring = el("circle", { cx: v.rx, cy: v.ry, r: v.rr, fill: BONE, stroke: INK, "stroke-width": 3 }, v.g);
+    v.d = [-28, 0, 28].map((dx) => dot(v.g, v.x + dx, v.y)); v.t = txt(v.g, "lab", v.x + (v.f < 0.3 ? 14 : 0), v.y + (v.f < 0.3 ? -22 : 32), v.lab, 13); v.u = line(gDif, `M${v.x - 42} ${v.y + 14} H${v.x + 42}`, { stroke: MUSTARD, "stroke-width": 4 }); });
+  const comb = [line(gDif, "M196 250 C150 300 190 370 262 396", { stroke: STONE, "stroke-width": 2, "stroke-dasharray": "0.02 0.03" }), line(gDif, "M1082 344 C1100 390 1050 420 994 426", { stroke: STONE, "stroke-width": 2, "stroke-dasharray": "0.02 0.03" })];
+  const cal = el("g", {}, gDif); el("rect", { x: 1084, y: 124, width: 112, height: 84, fill: PAPER, stroke: INK, "stroke-width": 3 }, cal); el("rect", { x: 1084, y: 124, width: 112, height: 16, fill: MUTED, stroke: INK, "stroke-width": 3 }, cal);
+  [1, 2, 3, 4].forEach((i) => el("line", { x1: 1084 + i * 22.4, x2: 1084 + i * 22.4, y1: 140, y2: 208, stroke: LINE, "stroke-width": 2 }, cal)); [1, 2].forEach((i) => el("line", { x1: 1084, x2: 1196, y1: 140 + i * 22.6, y2: 140 + i * 22.6, stroke: LINE, "stroke-width": 2 }, cal));
+  const v5 = verse(SC.differ, 640, 132, 26, 70, false);
+
+  // ================= 6: all things new =================
+  const band = el("rect", { y: 100, width: 250, height: 372, fill: CHAR }, world);
+  const gNew = el("g", {}, world), groundN = line(gNew, "M40 452 H1240", {});
+  const river = [0, 1].map((i) => el("path", { fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gNew));
+  const gTree = el("g", {}, gNew); el("path", { d: "M1092 452 V336", stroke: INK, "stroke-width": 9, "stroke-linecap": "round", fill: "none" }, gTree);
+  [[-58, -34, -52, 1], [-30, -62, -24, 0], [0, -74, 0, 1], [30, -62, 24, 0], [58, -34, 52, 1]].forEach(([dx, dy, rot, gold], k) => { const y0 = 372 - k % 2 * 14; el("path", { d: `M1092 ${y0} Q${1092 + dx * 0.5} ${y0 + dy * 0.2} ${1092 + dx} ${336 + dy}`, stroke: INK, "stroke-width": 5, "stroke-linecap": "round", fill: "none" }, gTree);
+    el("path", { d: "M0 0 Q-13 -17 0 -38 Q13 -17 0 0 Z", fill: gold ? MUSTARD : MUTED, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round", transform: `translate(${1092 + dx} ${336 + dy}) rotate(${rot})` }, gTree); });
+  const wall = el("rect", { x: 290, y: 342, width: 700, height: 110, fill: WARM, stroke: INK, "stroke-width": 3.5 }, gNew);
+  const GATES = [[372, 376, 80], [596, 360, 88], [828, 376, 80]], gates = GATES.map(([x, y, w]) => { const lit = el("rect", { x, y, width: w, height: 452 - y, fill: MUSTARD }, gNew); el("rect", { x, y, width: w, height: 452 - y, fill: "none", stroke: INK, "stroke-width": 3.5 }, gNew);
+    const l1 = el("path", { d: `M${x} ${y} L${x - 22} ${y + 14} V452 H${x} Z`, fill: PAPER, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, gNew), l2 = el("path", { d: `M${x + w} ${y} L${x + w + 22} ${y + 14} V452 H${x + w} Z`, fill: PAPER, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, gNew); return { x: x + w / 2, lit, l1, l2 }; });
+  const floorLight = el("rect", { x: 292, y: 444, width: 696, height: 7, fill: MUSTARD }, gNew);
+  const comers = [...Array(14)].map((_, i) => { const left = i % 2 === 0, gi = [0, 1, 2][i % 3]; return { left, tx: gates[gi].x, sx: left ? 30 - (i * 24) : 1250 + (i * 24), a: 9.2 + i * 0.32, e: dot(gNew, 0, 441, 8) }; });
+  const drops = [330, 424, 528, 752, 856, 950].map((x, i) => ({ x, i, e: el("path", { d: "M0 0 C-7 9 -7 18 0 20 C7 18 7 9 0 0 Z", fill: STONE }, gNew) }));
+  const v6 = verse(SC.new, 640, 150, 44, 30, true);
+
+  // ================= 7: where to start =================
+  const KEYS = [1, 2, 5, 12, 13, 20, 21, 22], KF = [0.36, 0.43, 0.5, 0.57, 0.66, 0.75, 0.84, 0.94], KW = KF.map((f) => ST0 + (ST0E - ST0) * f - 0.15);
+  const gNum = el("g", {}, world), nums = KEYS.map((k, i) => txt(gNum, "disp", 220 + i * 120, 326, String(k), 92));
+  const gOT = el("g", {}, world); el("rect", { x: 196, y: 238, width: 208, height: 176, fill: PAPER, stroke: INK, "stroke-width": 3.5 }, gOT); [184, 398].forEach((x) => el("rect", { x, y: 226, width: 18, height: 200, rx: 8, fill: MUTED, stroke: INK, "stroke-width": 3.5 }, gOT));
+  [0, 1, 2, 3, 4, 5].forEach((i) => el("line", { x1: 222, x2: 378, y1: 264 + i * 25, y2: 264 + i * 25, stroke: LINE, "stroke-width": 3 }, gOT)); const otLab = txt(gOT, "lab", 300, 458, "THE OLD TESTAMENT", 15);
+  el("rect", { x: 524, y: 230, width: 176, height: 196, fill: PAPER, stroke: INK, "stroke-width": 3.5 }, gOT); [0, 1, 2, 3, 4, 5].forEach((i) => el("line", { x1: 546, x2: 678, y1: 262 + i * 27, y2: 262 + i * 27, stroke: LINE, "stroke-width": 3 }, gOT));
+  const threads = [[264, 262], [314, 316], [364, 370]].map(([a, b]) => line(gOT, `M382 ${a} C450 ${a} 470 ${b} 544 ${b}`, { stroke: MUSTARD, "stroke-width": 3 }));
+  const symU = [262, 316, 370].map((y) => line(gOT, `M546 ${y + 4} H640`, { stroke: MUSTARD, "stroke-width": 4 }));
+  const grid = el("g", {}, world); el("rect", { x: -62, y: -50, width: 124, height: 100, fill: PAPER, stroke: STONE, "stroke-width": 2.5 }, grid); [1, 2, 3].forEach((i) => el("line", { x1: -62 + i * 31, x2: -62 + i * 31, y1: -50, y2: 50, stroke: LINE, "stroke-width": 2 }, grid)); [1, 2, 3, 4].forEach((i) => el("line", { x1: -62, x2: 62, y1: -50 + i * 20, y2: -50 + i * 20, stroke: LINE, "stroke-width": 2 }, grid));
+  const WORDS = ["WORSHIP", "ENDURANCE", "HOPE"], wds = WORDS.map((w, i) => ({ t: txt(world, "lab", 900, 276 + i * 58, w, 24), u: line(world, `M${900 - 62} ${290 + i * 58} H${900 + 62}`, { stroke: MUSTARD, "stroke-width": 4 }) }));
+
+  // ================= 8: the open door =================
+  const gEnd = el("g", {}, world), endGlow = [150, 104].map((r) => el("circle", { cx: 640, cy: 356, r, fill: MUSTARD }, gEnd));
+  const endFan = el("path", { d: "M596 452 L506 500 H774 L684 452 Z", fill: MUSTARD, opacity: 0.22 }, gEnd);
+  el("rect", { x: 596, y: 262, width: 88, height: 190, fill: MUSTARD, opacity: 0.7 }, gEnd); el("rect", { x: 596, y: 262, width: 88, height: 190, fill: "none", stroke: INK, "stroke-width": 4.5 }, gEnd);
+  const endLeaf = el("path", { fill: PAPER, stroke: INK, "stroke-width": 3.5, "stroke-linejoin": "round" }, gEnd);
+  el("path", { d: "M520 470 q30 -20 60 0 q26 -18 56 0 q24 -16 52 0 q22 -14 48 0", fill: "none", stroke: LINE, "stroke-width": 3, "stroke-linecap": "round" }, gEnd);
+  const v8 = verse(SC.close, 640, 172, 60, 40, true);
+
+  // ================= the strip of twenty-two chapters =================
+  const gStrip = el("g", {}, world), SX = (c) => 160 + (c - 1) * (960 / 21), SY = 528;
+  const shades = [[1, 3, STONE], [4, 5, MUSTARD], [6, 20, STONE], [21, 22, MUSTARD]].map(([a, b, f]) => ({ a, b, e: el("rect", { x: SX(a) - 10, y: SY - 15, width: SX(b) - SX(a) + 20, height: 30, rx: 5, fill: f }, gStrip) }));
+  const ticks = [...Array(22)].map((_, i) => ({ c: i + 1, e: el("line", { stroke: INK, "stroke-linecap": "round" }, gStrip), n: txt(gStrip, "lab", SX(i + 1), SY + 30, String(i + 1), 13, { "letter-spacing": "0.5" }) }));
+
+  const drawStrip = (t) => {
+    op(gStrip, up(t, U0 - 0.6, 0.8) * (1 - up(t, END + 0.5, 0.7)));
+    ticks.forEach((k) => { const ki = KEYS.indexOf(k.c), lit = ki >= 0 ? up(t, KW[ki], 0.4) : 0, one = k.c === 1 ? up(t, ST0 + 0.4, 0.4) : 0, m = Math.max(lit, one), x = SX(k.c), h = 7 + 8 * m + 3 * up(t, U0 - 0.5 + k.c * 0.04, 0.4);
+      set(k.e, { x1: x, x2: x, y1: (SY - h).toFixed(1), y2: (SY + h).toFixed(1), stroke: m > 0.5 ? "#B08A12" : INK, "stroke-width": (2 + 2.2 * m).toFixed(2) });
+      const ends = (k.c === 1 || k.c === 22) ? up(t, U0, 0.6) : 0, four = k.c === 4 ? span(t, L0 + 4.4, T0 - 0.4, 0.5) : 0; op(k.n, Math.max(ends, four, m)); });
+    const lt = [L0 + 1.6, L0 + 6.0, L1 + 0.1, L1 + 2.1], lo = [0.2, 0.38, 0.12, 0.42]; shades.forEach((s, i) => op(s.e, span(t, lt[i], T0 - 0.4, 0.6) * lo[i]));
+  };
+  const drawUnveil = (t) => {
+    const v = up(t, U0 - 0.8, 0.6) * (1 - up(t, L0 - 0.6, 0.6)); op(gCh, v);
+    const hv = up(t, U1 + 6.7, 1.4), vk = up(t, U2 - 0.4, 0.8);
+    if (v > 0) { draw(groundU, 1); gCh.setAttribute("transform", `translate(640 452) scale(${mix(1, 0.82, hv).toFixed(4)}) translate(-640 ${(-452 + mix(0, 0, hv)).toFixed(1)})`);
+      churches.forEach((c, i) => { const low = c.kind === "c" ? mix(1, 0.45, up(t, U1 + 4.8, 1.0)) : 1, s = low * (0.92 + 0.1 * Math.sin(t * 3 + i * 1.7)) * mix(1, 1.25, vk);
+        c.fl.setAttribute("transform", `translate(${c.cx} 370) scale(${s.toFixed(3)})`); c.glow.setAttribute("opacity", (0.3 * vk + 0.12 * hv).toFixed(3));
+        if (c.cush) op(c.cush, up(t, U1 + 4.6 + i * 0.1, 0.6));
+        c.jabs.forEach((j) => { const k = up(t, U1 + 3.3 + j.j * 0.12, 0.5) * (1 - up(t, U1 + 6.9, 0.9)), push = 6 * Math.sin(t * 5 + j.j * 2 + i), x1 = c.cx + j.s * (50 + j.j * 2), y1 = 296 + j.j * 22, x2 = c.cx + j.s * (36 + j.j * 2 - push * 0.4), y2 = 316 + j.j * 22; set(j.e, { x1, y1, x2: x2.toFixed(1), y2 }); op(j.e, k); }); }); }
+    const sv = hv * (1 - up(t, L0 - 0.6, 0.6)); op(gSee, sv);
+    if (sv > 0) { draw(seeArc, up(t, U1 + 6.7, 1.3)); rays.forEach((r, i) => { const x = 640 + (churches[i].cx - 640) * 0.82, tt = (x - 140) / 1000, y0 = 150 * (1 - tt) * (1 - tt) + 152 * tt * (1 - tt) + 150 * tt * tt; set(r, { x1: x, x2: x, y1: (y0 + 8).toFixed(1), y2: (y0 + 8 + 150 * up(t, U1 + 7.3 + i * 0.08, 0.9)).toFixed(1) }); op(r, 0.7 * (1 - vk)); }); }
+    const cv = up(t, U0 - 0.7, 0.5) * (1 - up(t, U1 + 2.2, 1.2)); op(gCur, cv);
+    if (cv > 0) { const b = mix(50, 1196, up(t, U0 + 0.5, 4.2)), a = mix(50, 1150, up(t, U0 + 1.5, 4.4)); curtain.setAttribute("d", `M${a.toFixed(1)} 100 H1230 V474 H${b.toFixed(1)} Q${((a + b) / 2 - 50 * Math.sin(Math.PI * clamp((b - 50) / 1146))).toFixed(1)} 300 ${a.toFixed(1)} 100 Z`);
+      folds.forEach((f) => { const x = mix(Math.max(a, b) + 6, 1224, f.f); set(f.e, { x1: x.toFixed(1), x2: (x + 4 * Math.sin(t * 1.3 + f.f * 9)).toFixed(1), y1: 108, y2: 466 }); op(f.e, b < 1180 ? 1 : 0.4); }); }
+    const vv = span(t, U2 - 0.3, L0 - 0.5, 0.5, 0.5); op(v1.g, vv); if (vv > 0) { v1.ts.forEach((x, i) => op(x, up(t, U2 - 0.2 + i * 1.4, 0.6))); op(v1.ref, up(t, U2 + 2.0, 0.5)); }
+  };
+  const drawLayout = (t) => {
+    const v = up(t, L0 - 0.5, 0.6) * (1 - up(t, T0 - 0.5, 0.6)); op(gLay, v); if (v <= 0) { op(v2.g, 0); return; }
+    stands.forEach((s, i) => { op(s.g, up(t, L0 + 1.5 + i * 0.22, 0.5)); s.fl.setAttribute("transform", `translate(${s.x} ${s.y}) scale(${(0.9 + 0.12 * Math.sin(t * 3.2 + i * 1.3)).toFixed(3)})`); });
+    draw(among, up(t, L0 - 0.2, 1.4)); among.setAttribute("opacity", (0.75 + 0.2 * Math.sin(t * 2)).toFixed(2));
+    const dk = up(t, L0 + 4.2, 0.6), sw = up(t, L0 + 4.8, 1.2); op(gDoor, dk); leaf.setAttribute("d", `M468 214 L${(468 + mix(-76, 34, sw)).toFixed(1)} ${(214 + 16 * sw).toFixed(1)} V${(352 + 16 * sw).toFixed(1)} L468 352 Z`);
+    draw(doorBeam, up(t, L0 + 5.6, 0.9)); op(gSeat2, up(t, L0 + 6.0, 0.8)); gSeat2.setAttribute("transform", `translate(0 ${(14 * (1 - up(t, L0 + 6.0, 0.9))).toFixed(1)})`);
+    op(gScroll, up(t, L0 + 7.3, 0.7)); const so = up(t, L0 + 8.4, 0.8); seals.forEach((s, i) => { if (i === 0) { s.setAttribute("fill", so > 0.3 ? MUSTARD : CHAR); s.setAttribute("y", (354 + 20 * so).toFixed(1)); s.setAttribute("transform", `rotate(${(-28 * so).toFixed(1)} 788 ${362 + 20 * so})`); } });
+    panels.forEach((p, i) => { op(p.g, up(t, L1 - 0.1 + i * 0.5, 0.5)); p.f.setAttribute("opacity", (0.18 + 0.2 * (0.5 + 0.5 * Math.sin(t * 2.2 + i * 2.1))).toFixed(3)); });
+    op(gNewH, up(t, L1 + 2.0, 0.7)); draw(newGround, up(t, L1 + 2.0, 0.8)); draw(newSky, up(t, L1 + 2.5, 1.1));
+    op(v2.g, span(t, L0 + 1.2, T0 - 0.5, 0.6, 0.5));
+  };
+  const drawThrone = (t) => {
+    const cv = up(t, T0 - 0.5, 0.6) * (1 - up(t, B0 - 0.5, 0.6)); op(gChaos, cv); op(groundT, cv); draw(groundT, 1);
+    const rise = up(t, T0 + 4.2, 1.6), strain = span(t, T1 - 0.1, TE + 0.4, 0.9, 0.8);
+    if (cv > 0) { const sc = mix(1, 0.46, rise); towers.forEach((w, i) => { const tilt = w.tilt * (1 - 0.75 * rise) + 5 * Math.sin(t * 1.6 + w.ph) * (1 - rise) - w.tilt * 0.25 * strain; w.g.setAttribute("transform", `translate(${w.x} 452) rotate(${tilt.toFixed(2)}) scale(${sc.toFixed(4)} ${(sc * (1 + 0.06 * strain * (0.6 + 0.4 * Math.sin(t * 3 + i)))).toFixed(4)})`); });
+      scrib.forEach((s) => { const y = s.y + 8 * Math.sin(t * 1.1 + s.ph); s.e.setAttribute("d", `M${s.x} ${y.toFixed(1)} q10 -14 20 0 t20 0 t20 0`); s.e.setAttribute("opacity", (0.7 * up(t, T0 + 1.6, 1.0) * (1 - rise)).toFixed(3)); }); }
+    const v = rise * (1 - up(t, B0 - 0.5, 0.6)); op(gThr, v); if (v <= 0) { op(v3.g, 0); return; }
+    gThr.setAttribute("transform", `translate(0 ${(40 * (1 - rise)).toFixed(1)})`); draw(floor, up(t, T0 + 4.4, 1.4));
+    thrGlow.forEach((g, i) => g.setAttribute("opacity", ([0.07, 0.1, 0.16][i] * (1 + 0.2 * Math.sin(t * 1.5 + i))).toFixed(3))); thrRays.forEach((r, i) => r.setAttribute("opacity", (0.45 + 0.4 * Math.sin(t * 2.1 + i * 0.9)).toFixed(2)));
+    wors.forEach((w, i) => { const k = up(t, T0 + 6.2 + Math.abs(w.x - 640) * 0.003, 0.5), bow = 7 * Math.max(0, Math.sin(t * 2.4 - Math.abs(w.x - 640) * 0.016)); op(w.e, k); w.e.setAttribute("cy", (w.y + bow).toFixed(1)); });
+    dn.forEach((d, i) => { const k = up(t, T0 + 7.6 + i * 0.05, 0.4), dark = Math.floor(i + t * 1.6) % 2 === 0; op(d, k); d.setAttribute("fill", dark ? CHAR : MUSTARD); d.setAttribute("fill-opacity", dark ? 1 : 0.55); });
+    op(v3.g, span(t, T0 + 5.4, B0 - 0.5, 0.6, 0.5));
+  };
+  const drawLamb = (t) => {
+    const v = up(t, B0 - 0.5, 0.6) * (1 - up(t, D0 - 0.5, 0.6)); op(gLamb, v); if (v <= 0) { op(v4.g, 0); return; }
+    draw(groundB, 1); const look = up(t, B0 + 3.1, 0.9), see = up(t, B0 + 3.9, 1.0);
+    op(john, up(t, B0 - 0.3, 0.5)); const sx = mix(mix(300, 470, up(t, B0 + 0.6, 1.0)), 556, look), sy = mix(mix(420, 330, up(t, B0 + 0.6, 1.0)), 316, look); set(sight, { x2: sx.toFixed(1), y2: sy.toFixed(1) }); op(sight, up(t, B0 + 0.5, 0.5) * (1 - up(t, B2 - 0.4, 0.6)));
+    op(lionW, up(t, B0 + 1.0, 0.6) * (1 - up(t, B0 + 3.3, 1.0)));
+    lambGlow.forEach((g, i) => g.setAttribute("opacity", (see * [0.06, 0.09, 0.15][i] * (1 + 0.2 * Math.sin(t * 1.5 + i))).toFixed(3)));
+    draw(hill, up(t, B0 + 3.6, 0.8)); draw(crossV, up(t, B0 + 3.9, 0.9)); draw(crossH, up(t, B0 + 4.6, 0.6));
+    op(lambW, up(t, B0 + 4.6, 0.6) * (1 - up(t, B2 - 0.5, 0.6)));
+    foll.forEach((f) => { const k = up(t, B2 + 1.6 + f.i * 0.08, 0.5); op(f.e, k); const n = f.i % 5 < 4 ? 46 : 0, u = ((t - B2 - 2.4) * 0.6 + f.i * 0.13) % 1; if (n && t > B2 + 2.4) { set(f.gift, { x: (f.x + n * u - 6).toFixed(1), y: (424 - 26 * Math.sin(Math.PI * u) - 6).toFixed(1) }); op(f.gift, Math.sin(Math.PI * u) * (1 - up(t, D0 - 0.6, 0.5))); } else op(f.gift, 0); });
+    strikes.forEach((s) => { const k = span(t, B2 + 2.0 + s.j * 0.1, BE + 0.6, 0.4, 0.6), jab = 12 * Math.max(0, Math.sin(t * 5 + s.j * 2 + (s.s > 0 ? 1 : 0))), x0 = 640 + s.s * 560, x1 = 640 + s.s * (462 - jab); set(s.e, { x1: x0, x2: x1.toFixed(1), y1: 380 + s.j * 22, y2: 398 + s.j * 18 }); op(s.e, k); });
+    const vv = span(t, B1 - 0.3, B2 + 1.2, 0.5, 0.6); op(v4.g, vv); if (vv > 0) op(v4.ref, up(t, B1 + 1.2, 0.5));
+  };
+  const drawDiffer = (t) => {
+    const v = up(t, D0 - 0.5, 0.6) * (1 - up(t, N0 - 0.5, 0.6)); op(gDif, v); if (v <= 0) { op(v5.g, 0); return; }
+    VIEWS.forEach((w, i) => { const a = D0 + (D0E - D0) * w.f - 0.3, k = up(t, a, 0.6); op(w.g, k); draw(w.ln, up(t, a + 0.3, 0.9)); w.ring.setAttribute("r", (w.rr * (0.9 + 0.06 * Math.sin(t * 1.4 + i * 1.7))).toFixed(2)); w.d.forEach((d, j) => d.setAttribute("cy", (w.y + 1.5 * Math.sin(t * 1.1 + i + j)).toFixed(1))); draw(w.u, up(t, D1 + 1.7, 0.7)); });
+    comb.forEach((c, i) => { c.setAttribute("stroke-dashoffset", 0); op(c, span(t, D1 - 0.1 + i * 0.3, N0 - 0.5, 0.6)); });
+    op(cal, span(t, D1 + 3.9, D1 + 6.3, 0.5, 0.9));
+    op(v5.g, span(t, D0 + 0.4, N0 - 0.5, 0.6, 0.5));
+  };
+  const drawNew = (t) => {
+    const bx = mix(-300, 1330, clamp((t - (N0 - 0.3)) / 4.2)); band.setAttribute("x", bx.toFixed(1)); op(band, t > N0 - 0.6 && t < N0 + 4.2 ? 0.9 * up(t, N0 - 0.5, 0.4) : 0);
+    const v = up(t, N0 + 3.4, 0.9) * (1 - up(t, ST0 - 0.5, 0.6)); op(gNew, v); if (v <= 0) { op(v6.g, 0); return; }
+    draw(groundN, up(t, N0 + 3.4, 1.4)); const wk = up(t, N0 + 4.9, 0.9); op(wall, wk); op(gTree, up(t, N0 + 5.6, 0.9)); gTree.setAttribute("transform", `translate(0 ${(16 * (1 - up(t, N0 + 5.6, 1.0))).toFixed(1)})`);
+    const lit = up(t, N0 + 7.2, 1.2); gates.forEach((g, i) => { op(g.lit, wk * (0.12 + 0.5 * lit * (1 + 0.12 * Math.sin(t * 1.8 + i)))); op(g.l1, wk); op(g.l2, wk); }); op(floorLight, lit * 0.8);
+    river.forEach((r, i) => { let d = ""; const len = 560 * up(t, N0 + 6.0, 2.4); for (let x = 640; x <= 640 + len; x += 12) d += `${d ? "L" : "M"}${x} ${(463 + i * 9 + 3 * Math.sin(x * 0.05 - t * 2 + i)).toFixed(1)}`; r.setAttribute("d", d || "M0 0"); });
+    comers.forEach((c) => { const a = N0 + c.a, k = clamp((t - a) / 5.5), x = mix(c.sx, c.tx, ease(k)); set(c.e, { cx: x.toFixed(1), cy: (441 - 1.5 * Math.abs(Math.sin(t * 5 + c.a * 3))).toFixed(1) }); op(c.e, t > a && x > 10 && x < 1270 ? 1 - up(t, a + 4.9, 0.6) : 0); });
+    drops.forEach((d) => { const a = N1 - 2.4 + d.i * 0.22, k = clamp((t - a) / 2.2), y = 262 + 52 * (1 - Math.pow(1 - k, 2.2)); d.e.setAttribute("transform", `translate(${d.x} ${y.toFixed(1)}) scale(${(1 - 0.3 * k).toFixed(3)})`); op(d.e, t > a ? Math.min(1, (t - a) * 3) * (1 - up(t, a + 1.5, 0.9)) : 0); });
+    const vv = span(t, N1 - 0.3, ST0 - 0.5, 0.5, 0.5); op(v6.g, vv); if (vv > 0) { v6.ts.forEach((x, i) => op(x, up(t, N1 - 0.2 + i * 1.3, 0.6))); op(v6.ref, up(t, N1 + 1.9, 0.5)); }
+  };
+  const drawStart = (t) => {
+    const nv = up(t, ST0 - 0.4, 0.5) * (1 - up(t, ST1 - 0.5, 0.6)); op(gNum, nv);
+    if (nv > 0) nums.forEach((n, i) => { const a = i === 0 ? ST0 + 0.3 : KW[i], k = up(t, a, 0.5); op(n, k); n.setAttribute("y", (326 + 12 * (1 - k)).toFixed(1)); });
+    const ov = up(t, ST1 - 0.4, 0.6) * (1 - up(t, CL - 0.5, 0.5)); op(gOT, ov);
+    if (ov > 0) { threads.forEach((th, i) => draw(th, up(t, ST1 + 0.7 + i * 0.35, 0.9))); symU.forEach((u, i) => draw(u, up(t, ST1 + 1.4 + i * 0.35, 0.6))); op(otLab, up(t, ST1 + 1.2, 0.5)); }
+    const d = STE - ST1, ga = ST1 + d * 0.47, aside = up(t, ST1 + d * 0.62, 0.9); op(grid, ov * up(t, ga, 0.5) * mix(1, 0.3, aside)); move(grid, mix(900, 1130, aside), mix(320, 404, aside), mix(1.25, 0.62, aside), 8 * aside);
+    wds.forEach((w, i) => { const a = ST1 + d * [0.71, 0.81, 0.92][i] - 0.2; op(w.t, ov * up(t, a, 0.5)); draw(w.u, up(t, a + 0.3, 0.5)); op(w.u, ov); });
+  };
+  const drawClose = (t) => {
+    const v = up(t, CL - 0.4, 0.6) * (1 - up(t, END + 0.5, 0.7)); op(gEnd, v); if (v <= 0) { op(v8.g, 0); return; }
+    const sw = up(t, CL - 0.3, 1.6); endLeaf.setAttribute("d", `M684 262 L${(684 + mix(-88, 44, sw)).toFixed(1)} ${(262 + 20 * sw).toFixed(1)} V${(452 + 20 * sw).toFixed(1)} L684 452 Z`);
+    endGlow.forEach((g, i) => g.setAttribute("opacity", (sw * [0.1, 0.16][i] * (1 + 0.2 * Math.sin(t * 1.6 + i))).toFixed(3))); endFan.setAttribute("opacity", (0.22 * sw).toFixed(3));
+    const vv = up(t, CL - 0.2, 0.6) * (1 - up(t, END + 0.5, 0.7)); op(v8.g, vv); op(v8.ref, up(t, CL + 0.9, 0.5));
+  };
+
+  F.title("Revelation", 96);
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => { drawUnveil(t); drawLayout(t); drawThrone(t); drawLamb(t); drawDiffer(t); drawNew(t); drawStart(t); drawClose(t); drawStrip(t); };
+});
+</script>
+</body></html>

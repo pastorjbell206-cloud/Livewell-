@@ -19,6 +19,7 @@ import PageEndNav from "@/components/PageEndNav";
 import { isPublicEssay } from "@/lib/shelf";
 import { TakeItWithYou } from "@/components/TakeItWithYou";
 import { refHref } from "@/lib/scripture-ref";
+import NarratedFilm from "@/components/NarratedFilm";
 
 const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
 const prose = { maxWidth: "var(--w-prose)", margin: "0 auto" } as const;
@@ -351,6 +352,7 @@ export default function StudyGuide() {
               <ScriptureNote rendering="bsb" />
             </div>
           )}
+          {slug && <NarratedFilm page={`/studyguides/${slug}`} />}
           {slug && SENSITIVE_GUIDES.has(slug) && <CrisisBlock variant="compact" topics={["suicide", ...(GUIDE_TOPICS[slug] ?? [])]} />}
           {slug && <HelpForThisGuide slug={slug} />}
           {slug && <MoreOnThis href={`/studyguides/${slug}`} />}

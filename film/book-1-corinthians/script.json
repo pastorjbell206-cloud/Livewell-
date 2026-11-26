@@ -1,0 +1,140 @@
+{
+  "title": "1 Corinthians: a gifted church, coming apart",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-1-corinthians",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "church",
+      "kicker": "A real church",
+      "level": 0.2,
+      "lines": [
+        "First Corinthians is a real letter to a real church with real trouble. The church in Corinth was young, rich in gifts and eloquent speech, and coming apart.",
+        "Paul neither gives up on it nor flatters it."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 1:2",
+        "text": "To the church of God in Corinth, to those sanctified in Christ Jesus and called to be holy",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Chapters one to six answer what Paul has heard by report. Chapters seven to sixteen answer the questions the Corinthians wrote to him, many marked by the words now about.",
+        "The letter begins with the cross and ends with the resurrection."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 7:1",
+        "text": "Now for the matters you wrote about",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "cross",
+      "kicker": "Watch for: the cross",
+      "level": 0.5,
+      "lines": [
+        "Corinth prized eloquence, knowledge, and status. Paul answers with a crucified Messiah, which looked like foolishness.",
+        "For I resolved to know nothing while I was with you except Jesus Christ and Him crucified.",
+        "The cross doesn't only save. It reorders what counts as strength and wisdom."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 2:2",
+        "text": "For I resolved to know nothing while I was with you except Jesus Christ and Him crucified.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "body",
+      "kicker": "Watch for: one body",
+      "level": 0.65,
+      "lines": [
+        "The Spirit gives varied gifts to one body for the common good. Division is not a matter of taste. It's an attack on what God is building.",
+        "Now you are the body of Christ, and each of you is a member of it.",
+        "Unity is not sameness, and the weaker members are indispensable."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 12:27",
+        "text": "Now you are the body of Christ, and each of you is a member of it.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "love",
+      "kicker": "Watch for: love",
+      "level": 0.8,
+      "lines": [
+        "Chapter thirteen is often read at weddings. In its setting it's a rebuke to a church competing over spiritual gifts.",
+        "Love is patient, love is kind.",
+        "Knowledge puffs up. Love builds up. Without love, even the most impressive gifts amount to nothing."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 13:4",
+        "text": "Love is patient, love is kind.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "raised",
+      "kicker": "Watch for: the resurrection",
+      "level": 0.9,
+      "lines": [
+        "Some in Corinth denied that the dead rise. Paul restates the gospel. Christ died, was buried, was raised on the third day, and appeared to many.",
+        "But Christ has indeed been raised from the dead.",
+        "His rising is the firstfruits of all who belong to him."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 15:20",
+        "text": "But Christ has indeed been raised from the dead",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where churches differ",
+      "level": 0.55,
+      "lines": [
+        "Some passages are hard, and faithful churches reach different answers: marriage, singleness, and divorce in chapter seven, head coverings in worship in chapter eleven, and gifts like tongues and the place of women in leading worship in chapters twelve to fourteen.",
+        "Readers weigh whether Paul grounds his words in creation, the gospel, or the custom of the day, and they weigh them differently. This film takes no side."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapters one to four, read as one piece.",
+        "Ask of each chapter: what has the crucified and risen Lord to do with this?"
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Paul's counsel near the end is short.",
+        "Do everything in love."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 16:14",
+        "text": "Do everything in love.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "Do everything in love.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

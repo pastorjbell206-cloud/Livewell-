@@ -1,0 +1,170 @@
+{
+  "slug": "book-leviticus",
+  "title": "Leviticus: living near a holy God",
+  "group": "books",
+  "status": "finished",
+  "book": "leviticus",
+  "mark": "book-leviticus",
+  "line": {
+    "younger": "The book of how God's people could live near him: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Leviticus as a whole book: the question it answers, six parts, gifts brought near, holy and clean, the Day of Atonement, love of neighbor, and where to begin."
+  },
+  "poster": "A tent stands in the middle of a great camp of tents, and a soft gold light rests over it. No one is drawn in the light.",
+  "frames": [
+    {
+      "id": "near",
+      "name": "The question it answers",
+      "still": "A tent stands in the middle of a great camp of tents, and a soft gold light rests over it. No one is drawn in the light.",
+      "younger": "Leviticus answers one big question. God has come to live in a tent in the middle of his people's camp. But God is holy, and the people are not. How can they live near him? This book is God's own answer.",
+      "older": "Leviticus begins where Exodus ends: the tent is built and God's glory fills it, so that even Moses cannot go in. How can a holy God live among a people who are not holy, and the people live? The book is God's own answer.",
+      "verse": {
+        "ref": "Leviticus 26:12",
+        "text": "I will walk among you and be your God, and you will be My people."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in six panels, with a basket, a lamp, a basin, a curtain, a sheaf of grain and a jar over them. A gold rule lies under the narrow fourth panel, the center.",
+      "younger": "The book has six parts. Gifts brought to God. The first priests. Clean and unclean. One special day each year, right in the middle. Holy living in every part of life. And promises made to God.",
+      "older": "Six parts: the offerings; the priests ordained; clean and unclean; the Day of Atonement at the center; holiness in all of life; and vows. The first half is about how to come near to God, the second about how to live near him.",
+      "verse": {
+        "ref": "Leviticus 19:2",
+        "text": "Be holy because I, the LORD your God, am holy."
+      }
+    },
+    {
+      "id": "gifts",
+      "name": "Watch for: gifts brought near",
+      "still": "At the entrance of the tent a woman holds out a small bowl of flour to a priest in white. Behind them the courtyard is quiet.",
+      "younger": "Watch for the gifts. The Hebrew word for an offering means something brought near. People brought gifts to God to come close to him. And the poor were not left out: they could bring something small, even a little flour.",
+      "older": "An offering, qorban, is something brought near. There were five kinds, from the burnt offering given whole to the peace offering shared at a family meal. God himself gives the means of atonement, and the poor could bring two birds, or flour.",
+      "verse": {
+        "ref": "Leviticus 4:31",
+        "text": "the priest will make atonement for him, and he will be forgiven."
+      }
+    },
+    {
+      "id": "clean",
+      "name": "Watch for: holy and clean",
+      "still": "In the evening a woman washes her hands at a basin of clear water outside her tent, and the sun is low and gold.",
+      "younger": "Watch for the words clean and unclean. Unclean does not mean bad. A new mother was unclean for a while, and so was someone who had lost a parent. It passed with time and washing. Nobody should use this book to call another person dirty.",
+      "older": "Clean and unclean are about being fit to come near the holy place. Unclean is not sinful: a new mother or a mourner had done nothing wrong, and it ended with time and washing. No one should use this book to call another person dirty.",
+      "verse": {
+        "ref": "Leviticus 10:10",
+        "text": "You must distinguish between the holy and the common"
+      }
+    },
+    {
+      "id": "atonement",
+      "name": "Watch for: the Day of Atonement",
+      "still": "A priest in plain white linen stands before a great curtain, a cloud of incense rising, and a line of gold light shows at the curtain's edge. No one is drawn behind it.",
+      "younger": "Watch for the most important day of the year. Only on this day did the high priest go behind the curtain into the innermost room, and a goat carried the people's wrongs far away. Jewish people still keep this day.",
+      "older": "Once a year the high priest, in plain linen, went behind the curtain into the Most Holy Place, and a goat carried the people's confessed sins into the wilderness. Jews keep the day still as Yom Kippur. Christians read it in the light of Jesus, as Hebrews does.",
+      "verse": {
+        "ref": "Leviticus 16:30",
+        "text": "because on this day atonement will be made for you to cleanse you"
+      }
+    },
+    {
+      "id": "neighbor",
+      "name": "Watch for: love your neighbor",
+      "still": "At harvest the edges of a field are left standing, and a poor woman and a traveller from far away gather there. A gold sun is over the field.",
+      "younger": "Watch for holiness in everyday life. Leave the edges of your field for the poor. Pay workers on time. Love the stranger. And love your neighbor as yourself. Jesus called it one of the two greatest commands.",
+      "older": "Holiness leaves the tent for the field, the court and the shop: leave the edges of the field for the poor, pay wages the same day, judge fairly, and love the foreigner, for Israel had been foreigners in Egypt. At its center: love your neighbor.",
+      "verse": {
+        "ref": "Leviticus 19:18",
+        "text": "love your neighbor as yourself. I am the LORD."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter 19, holy living in everyday life. Then chapter 16, the special day. Read the rest slowly, with a grown-up who can help with the hard parts.",
+      "older": "Start with chapters 16 and 19, then the key chapters: 1, 10, 11, 17, 25 and 26. Read it as the working rules of a sacred house. It asks what it would mean for a whole life to belong to God.",
+      "verse": {
+        "ref": "Leviticus 19:34",
+        "text": "love him as yourself, for you were foreigners in the land of Egypt."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Leviticus says to leave some of the harvest for people who are poor or far from home. What could you share with someone who needs it?",
+    "older": "Leviticus will not separate worship from how people treat one another. Where are those two pulled apart in your own life?"
+  },
+  "read": [
+    {
+      "label": "Leviticus 1",
+      "href": "/study/bible/leviticus/1"
+    },
+    {
+      "label": "Leviticus 10",
+      "href": "/study/bible/leviticus/10"
+    },
+    {
+      "label": "Leviticus 11",
+      "href": "/study/bible/leviticus/11"
+    },
+    {
+      "label": "Leviticus 16",
+      "href": "/study/bible/leviticus/16"
+    },
+    {
+      "label": "Leviticus 17",
+      "href": "/study/bible/leviticus/17"
+    },
+    {
+      "label": "Leviticus 19",
+      "href": "/study/bible/leviticus/19"
+    },
+    {
+      "label": "Leviticus 25",
+      "href": "/study/bible/leviticus/25"
+    },
+    {
+      "label": "Leviticus 26",
+      "href": "/study/bible/leviticus/26"
+    }
+  ],
+  "stops": [
+    "sinai"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians read Leviticus as God's word, and none offers its sacrifices, because Christ offered one sacrifice for sins for all time. They differ on how its laws apply now: as moral, ceremonial and civil laws, of which the moral still bind; as law and gospel; or as a covenant ended in Christ, with believers under the law of Christ. Some keep the food laws or the feasts by choice, and Paul asked believers who differ over food and days not to judge one another. Two verses in chapters 18 and 20 are read in more than one way, and the chapter notes set out the readings in the words of those who hold them; on any reading nothing here gives anyone a reason for contempt toward any person. The words on slaves in chapter 25 were misused to defend slavery, and that was wrong. The covenant's curses are never God's verdict on any one person's illness or loss. A word for anyone who has been made to feel unclean, by an illness, by your body or by your past. That is not what this book says of you. Your worth to God does not rise or fall with your body. If the weight of it is heavy, please share it with someone you trust: a friend, a pastor, a doctor. The Find Help page on this site lists places to turn. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      {
+        "label": "the Leviticus page of the Study Bible",
+        "href": "/study/bible/leviticus"
+      },
+      {
+        "label": "Find Help",
+        "href": "/help"
+      }
+    ]
+  },
+  "care": "Thinking about sin can bring up guilt or fear. Nobody is too bad to be forgiven, and nobody has to carry it alone. Talk with a parent, a pastor or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "Leviticus in the Study Bible: the whole book",
+      "href": "/study/bible/leviticus"
+    },
+    {
+      "label": "Sinai and the Tent: a stop on the map",
+      "href": "/study/explorer/sinai"
+    },
+    {
+      "label": "Exodus: out of slavery, to God (a moving picture)",
+      "href": "/study/explorer/watch/book-exodus"
+    },
+    {
+      "label": "Hebrews: hold on to Jesus (a moving picture)",
+      "href": "/study/explorer/watch/book-hebrews"
+    }
+  ],
+  "end": {
+    "label": "Start reading: Leviticus 19",
+    "href": "/study/bible/leviticus/19"
+  }
+}

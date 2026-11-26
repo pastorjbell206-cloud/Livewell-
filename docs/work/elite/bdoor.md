@@ -9136,3 +9136,607 @@ Each chapter has one to three passages (589 to 1,791 words). The hard notes that
 ### What was run, for both books
 
 The 2 Kings scripts, copied and pointed at each book, after every commit: validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden-word, signposting and first-person scans, the care-line check, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks (0 problems each). Every five to eight chapters: the 61 content gates, `pnpm check` and `pnpm test`. Before each push, the full order on the merged tree and a walk of the served build at 390 and 1440. The gate results and the push ranges are in the hand-back.
+
+## Lamentations: the book page and every chapter (2026-11-25)
+
+Lamentations is complete: a teaching introduction on the book page and all five chapters in plain words, in the shape of Job and 2 Kings. Each passage's third part is `later`; each chapter note gained only `"plain": true` at its end; one commit for the book page (with the four rebuilt explore indexes and `teaching.test.tsx`, which now lists Lamentations among the books with a teaching guide and names its frame, `canaan`) and one per chapter, each with its ledger rows.
+
+### The book page (`/study/bible/lamentations`, same address)
+
+Data only, in `client/public/bible/notes/lamentations/intro.json`, field `teaching`. Twelve parts (3,317 words): Lamentations in a minute; Where it sits in the story; Who wrote it, and when; The fall of Jerusalem; How Lamentations is built; A widow with no one to comfort her; The Lord like an enemy; The man who has seen affliction; Gold grown dim; Remember, O LORD; How Lamentations has been read; How to read Lamentations. Then 15 hard passages, 15 key words, 10 timeline entries, a `canaan` map of two places (Jerusalem, and Sodom roughly as a region, each where the site's other maps place it; Edom, Uz, Egypt, Assyria and Babylon left off and the note says so), and eleven Go deeper pages, all live. Dates follow the book's introduction and the site's guides; where they differ the page says so (the fall in 587 or 586 BC, Thiele's 586 in the guide to the kings, 587 preferred by many historians; the siege begun in 588 or 587). Authorship is given in each view's own terms (the Septuagint's preface and Jeremiah; the modern doubts; the reply), with no side taken.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words |
+|---|---|---|
+| 1 | 4 | 2,350 |
+| 2 | 3 | 2,278 |
+| 3 | 4 | 2,512 |
+| 4 | 4 | 2,175 |
+| 5 | 3 | 1,861 |
+| **Total** | **18** | **11,176** |
+
+### The hard places, and how they are stated
+
+- **The city pictured as a woman exposed (1:8-10):** a prophetic picture of a city and its fall; the poem grieves and does not mock; no warrant for any man to shame or harm a woman; the line for anyone being hurt.
+- **Zion's prayer against her enemies (1:21-22; 3:64-66):** equal justice handed to God, read two ways; Matthew 5:44 and Romans 12:19.
+- **The Lord like an enemy (2:1-10):** a simile from inside the disaster; covenant judgment; 3:33 and 3:22 beside it; sovereignty or consequences, both readings; Judah's own Scripture, no key for anyone's suffering, no warrant to call any people's suffering deserved, never a reason to blame the Jewish people.
+- **The starving children (2:11-12, 2:20, 4:10):** named, never described; 2:20's second question and 4:10 are not quoted; a horror and not a lesson; no child's suffering read as punishment; the child-loss, grief and self-harm lines.
+- **God shuts out prayer (3:1-20):** lament is not unbelief; the self-harm line.
+- **Adversity and good from the Most High (3:37-39):** both readings; 3:39 as the city's confession, never a word to another sufferer.
+- **Greater than Sodom (4:6):** longer suffering, not necessarily worse sin; the disaster line.
+- **Edom (4:21-22):** an ancient nation named for what it did; no people of the present day identified with it.
+- **The fathers' sins (5:7):** a cry, answered by Deuteronomy 24:16, Jeremiah 31:29-30 and Ezekiel 18.
+- **Women violated (5:11):** named in a line, no blame on the women; the line for anyone sexually assaulted.
+- **The unanswered ending (5:22):** the three readings; the synagogue's repeating of 5:21; the line for anyone suffering now.
+
+### Care lines
+
+Reused whole, byte for byte, each naming Find Help, none with a phone number, and no new care sentence: the grief line (book page; 1, 2); the self-harm line (book page; 2, 3); the line for anyone being hurt (1); the child-loss line (2); the disaster line (4); the line for anyone sexually assaulted (5, from judges/plain/19.json); the line for anyone suffering now (5, from job/intro.json). From chapter 4 on, care lines are read by script from their sources (`carelines.json` in the scratch folder) after the care check caught one typed with a variant ending. The introduction's and deep notes' older fields name a United States phone number; these notes do not repeat it.
+
+### Cut or narrowed
+
+Every line the deep notes draw from Lamentations to Christ that the New Testament does not draw: verse 1:12 on the lips of Christ, the head-shaking passers-by of Mark 15:29, the Comforter of John 14:16, Jesus bearing the wrath of chapter 2, Luke 19:41-44 set beside the chapter, verse 3:30 beside Matthew 5:39, the anointed of 4:20 and Jesus, the cup of 4:21 and Mark 14:36, Romans 11:1 as the answer to 5:22. The New Testament does not name Lamentations, and the book page says so; Holy Week reading is given as the church's reading, as the introduction gives it. Two unsourced sentences were cut before commit (Jerusalem on the trade roads; what the first hearers may have remembered of persecuted prophets).
+
+### What was run
+
+The 2 Kings checks, copied to `/home/user/bdoor-scratch/major-prophets/` and pointed at these books (the book page's check reads only the `teaching` field; the care corpus leaves out all five of this run's books): validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden-word, signposting and first-person scans, the care-line check, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks, after the book page and each chapter, each exit 0 at commit. `teaching.test.tsx` passed (33 of 33) after the book page. The push's gates are in the hand-back.
+
+## The Minor Prophets, Hosea to Nahum: book pages and every chapter (2026-11-26)
+
+Seven of the twelve shorter prophets are complete: Hosea, Joel, Amos, Obadiah, Jonah, Micah and Nahum, each with a teaching introduction on its book page and every chapter in plain words (41 chapters, 109 passages). Each passage's third part is `later`. Each chapter note gained only `"plain": true` at its end. There is one commit for each book page (with its ledger rows, the rebuilt explore indexes, and its line in `teaching.test.tsx`, frame `canaan`) and one per chapter. Habakkuk, Zephaniah, Haggai, Zechariah and Malachi are in the next section.
+
+### The book pages
+
+| Book | Parts | Words | Hard passages | Key words | Timeline | Places | Go deeper |
+|---|---|---|---|---|---|---|---|
+| Hosea | 13 | 3,426 | 14 | 13 | 13 | 4 | 11 |
+| Joel | 11 | 2,289 | 8 | 11 | 5 | 3 | 10 |
+| Amos | 12 | 2,342 | 12 | 12 | 8 | 8 | 10 |
+| Obadiah | 9 | 1,501 | 5 | 11 | 5 | 3 | 8 |
+| Jonah | 11 | 1,917 | 7 | 12 | 7 | 1 | 8 |
+| Micah | 11 | 1,926 | 10 | 12 | 8 | 4 | 9 |
+| Nahum | 10 | 1,583 | 6 | 11 | 7 | 1 | 8 |
+
+Every place is drawn at a point already used on the site's maps. Jonah's and Nahum's maps use the `fertile-crescent` frame: Joppa (the Acts point) or Jerusalem, and Nineveh, drawn at its ruin mounds, Kuyunjik and Nebi Yunus, opposite Mosul (about 36.36 N, 43.15 E, a location supplied by the coordinator on 2026-11-26, since the repository placed it nowhere). Tarshish is left off, and the note says its location is disputed. Each map note says what is left off and why. Dates come from the site's guide to the kings and each book's own introduction, and where they differ the page gives both (Hosea 755 to 715 or about 755 to about 725; Micah 735 to 700 or about 740 to about 700; Samaria 722, or 723 or 722 on Thiele's count; Amos's earthquake at Hazor, which the guide dates to about 760 and the introduction calls a probable link). No side is taken on the dates of Joel and Obadiah, on Jonah as history, parable or both, on who Gomer was, or on the millennial readings of Micah 4.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Hard in |
+|---|---|---|---|
+| Hosea 1 | 3 | 1760 | 1-3, 4-9 |
+| Hosea 2 | 3 | 1730 | 1-5 |
+| Hosea 3 | 2 | 1101 | 1-3 |
+| Hosea 4 | 3 | 1332 | 11-19 |
+| Hosea 5 | 2 | 1091 | 8-15 |
+| Hosea 6 | 3 | 1263 | 1-3 |
+| Hosea 7 | 3 | 1084 | none |
+| Hosea 8 | 3 | 1160 | 1-6 |
+| Hosea 9 | 2 | 1156 | 10-17 |
+| Hosea 10 | 2 | 1036 | 9-15 |
+| Hosea 11 | 3 | 1163 | 1-4 |
+| Hosea 12 | 2 | 864 | none |
+| Hosea 13 | 3 | 1493 | 9-14, 15-16 |
+| Hosea 14 | 3 | 1057 | none |
+| Joel 1 | 3 | 1428 | 15-20 |
+| Joel 2 | 4 | 1764 | 28-32 |
+| Joel 3 | 3 | 1389 | 1-8 |
+| Amos 1 | 3 | 1235 | 11-15 |
+| Amos 2 | 3 | 1323 | 6-8 |
+| Amos 3 | 2 | 1091 | 1-8 |
+| Amos 4 | 3 | 1382 | 1-3, 6-13 |
+| Amos 5 | 3 | 1481 | 18-27 |
+| Amos 6 | 2 | 957 | 1-7 |
+| Amos 7 | 2 | 1067 | 1-9 |
+| Amos 8 | 3 | 1243 | 7-14 |
+| Amos 9 | 3 | 1474 | 7-10, 11-15 |
+| Obadiah 1 | 3 | 1411 | 15-21 |
+| Jonah 1 | 3 | 1247 | 1-3 |
+| Jonah 2 | 2 | 876 | 1-6 |
+| Jonah 3 | 2 | 928 | 5-10 |
+| Jonah 4 | 2 | 1067 | 1-4, 5-11 |
+| Micah 1 | 2 | 996 | 1-7 |
+| Micah 2 | 3 | 1165 | 1-5 |
+| Micah 3 | 3 | 1092 | 9-12 |
+| Micah 4 | 3 | 1259 | 1-5 |
+| Micah 5 | 2 | 1137 | 1-6 |
+| Micah 6 | 3 | 1254 | 6-8 |
+| Micah 7 | 3 | 1417 | 14-20 |
+| Nahum 1 | 2 | 997 | 1-8 |
+| Nahum 2 | 2 | 830 | 1-10 |
+| Nahum 3 | 3 | 1482 | 1-7, 14-19 |
+
+### The hard places, and how they are stated
+
+- **Hosea's marriage (1 to 3):** the readings of Gomer stated in their holders' terms; the stripping of 2:3 and 2:10 named and not quoted; each chapter says plainly that this is a prophetic picture of God and a nation and gives no warrant for any man to shame or harm a wife, with the site's line for anyone in an abusive marriage. The book page carries the same line.
+- **Atrocities named by the prophets as crimes** (Hosea 9:11-16, 10:14, 13:16; Amos 1:3 and 1:13; Nahum 3:3 and 3:10; Micah 3:2-3): named, never described or quoted.
+- **Judgment on Israel and Judah** (Hosea 13; Amos; Micah 1): Israel's own Scripture spoken to its own people; no key for anyone's suffering, then or now; never a reason to blame the Jewish people. The disaster line where God sends drought, plague or storm (Joel 1; Amos 3 and 4; Hosea 13).
+- **The nations judged** (Joel 3; Obadiah; Amos 9; Micah 4 and 5): the judgment is God's, not a model for revenge; no people a code for any modern nation; no claim about any modern state or border; Amos and Micah read by their covenant standard, not any party's program, and the Go deeper lists point both ways (the left and right lenses guide).
+- **Nahum:** no gloating; the fall of Nineveh no key to any people's suffering and no warrant to wish destruction on anyone; 3:5 a city's disgrace, no warrant to shame any woman, with the line for anyone being hurt.
+- **Jonah 4:** the prayer to die recorded honestly and met with God's patience, with the self-harm line.
+- **Hosea 9:** the prayer for childlessness, never a reading of any family's loss, with the line for grief over a pregnancy or a child.
+
+### Care lines
+
+Each is reused whole, word for word, names Find Help and has no phone number: for an abusive marriage (Hosea book page; Hosea 1, 2, 3); for anyone who has lived through a disaster (Joel 1; Amos 3, 4; Hosea 13); for grief over a pregnancy or a child (Hosea 9); for anyone being hurt at home, at work or in a church (Amos 2; Nahum 3); the self-harm line (Jonah book page; Jonah 4). No new care sentence stands in the data.
+
+### Cut or narrowed
+
+Lines that the deep notes draw to Christ, but the New Testament does not, were left out throughout (among them Ephesians 5:25 beside Hosea's marriage, John 15 beside the vine, Galatians 6:7 beside sowing the wind, Matthew 23:23 beside Amos, John 10 beside Micah 5:4, Revelation 18 beside Nahum). The New Testament's own lines were kept: Matthew 2:15, 9:13, 12:7; Romans 9:25-26; 1 Peter 2:10; 1 Corinthians 15:55; Luke 23:30; Hebrews 13:15's phrase; Acts 2:16-21 and Romans 10:13; Acts 15:16-17 and 7:42; Matthew 12:39-41 and Luke 11:30; Matthew 2:5-6, John 7:42 and Matthew 10:36. Obadiah and Nahum are never quoted in the New Testament, and their pages say so. Unsourced sentences caught before commit were cut (Sepharad's location; a reading of Micah 2:12-13; the identity of Nahum's messengers). Each chapter's ledger names its cuts.
+
+### What was run
+
+The 2 Kings checks, copied to `/home/user/bdoor-scratch/prophets/`, now take the book as a setting, read only a book page's `teaching` field, and leave all twelve books' new plain chapters and teaching fields out of the care corpus; the first-person scan treats Not My People as a name. After every book page and chapter: validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden, signposting and first-person scans, the care-line check, no-emdash, the search and passage index checks, validate-politics, the seven explore-index checks and validate-bible (0 problems each). Hosea 11 gaining plain words broke one test in `WisdomTopic.test.tsx`, which named it as a chapter without them; it now names Ezekiel 18. The gates and pushes are in the hand-back.
+## Ezekiel: the book page and every chapter (2026-11-26)
+
+Ezekiel has a teaching introduction on its book page and all 48 chapters in plain words (95 passages), the same shape as the Minor Prophets: `later` as each passage's third part, `"plain": true` at the end of each chapter note, one commit for the book page (with its ledger rows, the rebuilt explore indexes and its line in `teaching.test.tsx`, frames `fertile-crescent` and `canaan`) and one per chapter. Two later commits corrected the book page (Babylon at the shared point after the merge; Tyre's label and the line on 2 Corinthians 6:16).
+
+### The book page
+
+| Parts | Words in the parts | Hard passages | Key words | Timeline | Places | Go deeper |
+|---|---|---|---|---|---|---|
+| 14 | 2,338 | 16 | 15 | 8 | 9 on two maps | 9 |
+
+The `fertile-crescent` map draws Babylon, Jerusalem and Tyre; the `canaan` map draws Jerusalem, Samaria (a region), Sodom, Tyre, Sidon and Damascus. Babylon is at the branch's shared point (id `babylon`, 32.54 N, 44.42 E, the ruins near Hillah), the same point Jeremiah's map uses; every other place was already on the site's maps. Tel-abib, the Kebar canal, Edom, Ammon, Moab, Egypt's cities and the borders of chapters 47 and 48 are left off, and the map note says so. Dates come from the book's introduction and its chapter notes (593, 592, 588, 587 or 586, 585, 573 and 571 BC).
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Hard in |
+|---|---|---|---|
+| Ezekiel 1 | 3 | 1040 | 26-28 |
+| Ezekiel 2 | 2 | 658 | 1-7 |
+| Ezekiel 3 | 2 | 814 | 16-27 |
+| Ezekiel 4 | 2 | 811 | 1-8 |
+| Ezekiel 5 | 2 | 784 | 5-17 |
+| Ezekiel 6 | 2 | 720 | 8-14 |
+| Ezekiel 7 | 2 | 588 | none |
+| Ezekiel 8 | 2 | 770 | 7-18 |
+| Ezekiel 9 | 2 | 752 | 5-11 |
+| Ezekiel 10 | 2 | 600 | none |
+| Ezekiel 11 | 2 | 750 | 1-13 |
+| Ezekiel 12 | 2 | 586 | none |
+| Ezekiel 13 | 2 | 741 | 1-16 |
+| Ezekiel 14 | 2 | 773 | 1-11 |
+| Ezekiel 15 | 1 | 460 | 1-8 |
+| Ezekiel 16 | 3 | 1371 | 15-43 |
+| Ezekiel 17 | 2 | 779 | 11-24 |
+| Ezekiel 18 | 2 | 938 | 1-20 |
+| Ezekiel 19 | 2 | 565 | none |
+| Ezekiel 20 | 2 | 857 | 1-26 |
+| Ezekiel 21 | 2 | 858 | 1-17 |
+| Ezekiel 22 | 2 | 807 | 17-31 |
+| Ezekiel 23 | 3 | 1332 | 22-35 |
+| Ezekiel 24 | 2 | 897 | 15-27 |
+| Ezekiel 25 | 2 | 697 | 12-17 |
+| Ezekiel 26 | 2 | 801 | 1-14 |
+| Ezekiel 27 | 2 | 581 | none |
+| Ezekiel 28 | 2 | 860 | 11-26 |
+| Ezekiel 29 | 2 | 794 | 1-16 |
+| Ezekiel 30 | 2 | 531 | none |
+| Ezekiel 31 | 2 | 688 | 10-18 |
+| Ezekiel 32 | 2 | 744 | 17-32 |
+| Ezekiel 33 | 2 | 923 | 1-20 |
+| Ezekiel 34 | 2 | 807 | 17-31 |
+| Ezekiel 35 | 1 | 515 | 1-15 |
+| Ezekiel 36 | 2 | 925 | 22-38 |
+| Ezekiel 37 | 2 | 951 | 1-14 |
+| Ezekiel 38 | 2 | 844 | 1-16 |
+| Ezekiel 39 | 2 | 785 | 1-20 |
+| Ezekiel 40 | 2 | 861 | 1-27 |
+| Ezekiel 41 | 1 | 361 | none |
+| Ezekiel 42 | 1 | 319 | none |
+| Ezekiel 43 | 2 | 895 | 13-27 |
+| Ezekiel 44 | 2 | 759 | 1-14 |
+| Ezekiel 45 | 2 | 755 | 13-25 |
+| Ezekiel 46 | 2 | 662 | none |
+| Ezekiel 47 | 2 | 928 | 1-12 |
+| Ezekiel 48 | 2 | 826 | 30-35 |
+
+### The hard places, and how they are stated
+
+- **Chapters 16 and 23:** the image named plainly and described without detail; a picture of a city and a covenant; the interpreters' weighings set out as in Hosea 2 (metaphor for a city spoken to male leaders; the frame of grace; feminist and trauma-informed readings that call for critical reading and lament); all agreeing that using the chapters to justify the mistreatment of women is a grave misuse; no warrant for any man to shame, strip, threaten or harm a wife, or anyone. The book page carries the same lines.
+- **Chapter 18:** each person answers to God; the call to turn, never a way of reading anyone's suffering as deserved; Jesus' refusal of that reasoning (John 9:2-3) in the hard note.
+- **Chapters 5, 9, 21 and 24:** the siege hunger, the killing in the vision and the sword named, not described; Israel's own Scripture, never a reason to blame the Jewish people; the death of Ezekiel's wife read with the readings of foreknowledge and of God's act, and grief not forbidden.
+- **Chapters 25 to 32 and 35:** the judgment is God's and no model for revenge; no people is a stand-in for any modern nation; no ongoing curse on any people; Tyre's siege and the forty years of Egypt set out with the readings, and Ezekiel's own later word (29:17-20) kept.
+- **Chapter 28:** the king in Eden read as a human king in the language of the fall, or as Satan's fall (Tertullian, Origen), no side taken.
+- **Chapter 37:** the vision as Israel's revival; the resurrection kept as a reading, since the New Testament does not quote the chapter.
+- **Chapters 38 and 39 (Gog and Magog):** the futurist, symbolic, early-apocalyptic and past-fulfillment readings in their holders' terms; Revelation 20:8's use of the names; no identification with any modern nation, person or event; no date.
+- **Chapters 40 to 48:** the future-temple, symbolic, fulfilled-in-Christ-and-the-church, and program-for-the-return readings, each in its holders' terms; the sacrifices of chapter 43 set beside Hebrews 10:12 as a second-order question; no claim about any modern state, temple or border; the foreigner's share in 47:22-23.
+
+### Care lines
+
+Each is reused whole, word for word, names Find Help and has no phone number: for an abusive marriage (Ezekiel 16; 23); the shorter sexual-assault line (Ezekiel 23); for anyone being hurt (the book page). The deep notes' hotline telephone numbers in chapters 16 and 23 were not carried over. No new care sentence stands in the data.
+
+### Cut or narrowed
+
+The New Testament's own uses kept: Revelation 4 (the living creatures), 10:9-10 (the scroll), 20:8 (Gog and Magog), 21:10-12 (the measured city and its gates), 22:1-2 (the river); John 10:11, the new heart beside the Spirit, the dry bones beside the resurrection and 2 Corinthians 6:16 given only as readings. Cut: John 1:14 and 18, 2 Corinthians 4:6, Revelation 1 and Irenaeus beside chapter 1; Acts 20:26-27 beside the watchman; Revelation 7:3 beside the mark; 2 Peter 3:4 beside the scoffers; Ephesians 5 and Revelation 19 beside chapter 16; Romans 1:24 and 12:19, Luke 1:32-33 and 52, James 1:22, John 3:5, John 4 and 7:37-39, Ephesians 2:13 and 6:12 beside their chapters; Matthew 21:12-13, Luke 24:50-51 and Acts 1:12 beside the glory. Unsourced sentences cut before commit: an Isaiah quotation trimmed to its own words; a reading of 23:48; a gloss on Nebuchadnezzar's soldiers. Each chapter's ledger names its cuts.
+
+### What was run
+
+After the book page and every chapter: validate-bible-notes, the four quotation checks, the forbidden, signposting and first-person scans, the care-line check, no-emdash, the search and passage index checks, validate-politics, the seven explore-index checks and validate-bible (0 problems each). The pushes and the full test run are in the hand-back.
+
+## The Minor Prophets, Habakkuk to Malachi: book pages and every chapter (2026-11-26)
+
+The last five of the twelve shorter prophets are complete, so all twelve now have a teaching introduction and every chapter in plain words. These five add 26 chapters and 61 passages, with the same shape as Hosea to Nahum: `later` as each passage's third part, `"plain": true` at the end of each chapter note, one commit for each book page (its ledger rows, the rebuilt explore indexes and its line in `teaching.test.tsx`) and one per chapter.
+
+### The book pages
+
+| Book | Parts | Words in the parts | Hard passages | Key words | Timeline | Places | Go deeper |
+|---|---|---|---|---|---|---|---|
+| Habakkuk | 9 | 1,493 | 6 | 11 | 7 | 1 | 9 |
+| Zephaniah | 9 | 1,376 | 7 | 11 | 7 | 4 | 8 |
+| Haggai | 9 | 1,339 | 5 | 10 | 7 | 1 | 7 |
+| Zechariah | 11 | 2,182 | 14 | 15 | 8 | 8 | 9 |
+| Malachi | 11 | 1,971 | 8 | 14 | 6 | 1 | 8 |
+
+Every place is drawn at a point the site's maps already use. Zephaniah has two maps, `canaan` (Jerusalem, Ashdod) and `fertile-crescent` (Nineveh at its ruin mounds, Jerusalem); the others use `canaan`. Each map note names what is left off. Dates come from each book's introduction and the site's guide to the kings. No side is taken on the date of Habakkuk, on who wrote Zechariah 9 to 14, on the name Malachi, on the millennial readings of Zechariah 14, on how far Romans 9 reaches, on the grounds for divorce, on tithing today, or on a further coming of Elijah.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Hard in |
+|---|---|---|---|
+| Habakkuk 1 | 3 | 1130 | 12-17 |
+| Habakkuk 2 | 3 | 1235 | 1-5 |
+| Habakkuk 3 | 3 | 1290 | 3-15, 16-19 |
+| Zephaniah 1 | 3 | 1192 | 1-6 |
+| Zephaniah 2 | 3 | 1092 | 4-12 |
+| Zephaniah 3 | 3 | 1212 | 14-20 |
+| Haggai 1 | 2 | 873 | 1-11 |
+| Haggai 2 | 3 | 1315 | 1-9 |
+| Zechariah 1 | 2 | 853 | 7-21 |
+| Zechariah 2 | 2 | 714 | 6-13 |
+| Zechariah 3 | 2 | 797 | 6-10 |
+| Zechariah 4 | 2 | 724 | 11-14 |
+| Zechariah 5 | 2 | 681 | 5-11 |
+| Zechariah 6 | 2 | 772 | 9-15 |
+| Zechariah 7 | 2 | 735 | 1-7 |
+| Zechariah 8 | 2 | 743 | none |
+| Zechariah 9 | 2 | 855 | 9-17 |
+| Zechariah 10 | 2 | 633 | none |
+| Zechariah 11 | 2 | 868 | 7-17 |
+| Zechariah 12 | 2 | 1018 | 1-9, 10-14 |
+| Zechariah 13 | 2 | 847 | 1-6 |
+| Zechariah 14 | 2 | 1006 | 1-11 |
+| Malachi 1 | 2 | 893 | 1-5 |
+| Malachi 2 | 3 | 1212 | 1-9, 10-16 |
+| Malachi 3 | 3 | 1380 | 1-5, 6-12 |
+| Malachi 4 | 2 | 881 | 1-3, 4-6 |
+
+### The hard places, and how they are stated
+
+- **Zechariah 14:** the readings of the last battle (dispensational and other premillennial, amillennial, and both) stated in their holders' terms; the atrocity of 14:2 and the plague of 14:12 named, not described; no warrant for violence and no claim about any modern state, city or border.
+- **Zechariah 12 and 13:** the mourning for the pierced one is spoken of Israel's own house and never a reason to blame the Jewish people; the textual question of 12:10 told in the third person; 13:3 read as hyperbole and no rule for any family, with the line for anyone not protected by a parent.
+- **Malachi 2:16:** both readings of the Hebrew; aimed at men breaking covenant, not at the abandoned; never a reason to stay where anyone is being harmed, with the line for anyone being hurt.
+- **Malachi 3:10:** no promise of wealth; the two Christian views of tithing; no prosperity teaching.
+- **Malachi 1:2-3 and 4:3:** Jacob and Esau as choosing, with Romans 9's readings left open; the ashes under the feet as God's justice, not vengeance, with Ezekiel 33:11.
+- **Habakkuk and Zephaniah:** God's use of Babylon not his approval of it; the judgment on the nations God's, not a model for revenge.
+
+### Care lines
+
+Reused whole, word for word, naming Find Help, with no phone number: for anyone being hurt at home, at work or in a church (Malachi book page; Malachi 2); for anyone sexually assaulted, the site's shorter form found in ten other places (Zechariah 14); for anyone not protected by a parent (Zechariah 13). No new care sentence stands in the data.
+
+### Cut or narrowed
+
+The New Testament's own lines were kept, and no others. Habakkuk: Romans 1:17, Galatians 3:11, Hebrews 10:38, Acts 13:41. Haggai: Hebrews 12:26; Zerubbabel in Matthew 1 and Luke 3. Zechariah, only where the New Testament quotes it: 9:9 (Matthew 21:5, John 12:15), 11:12-13 (Matthew 27:9-10), 12:10 (John 19:37, Revelation 1:7), 13:7 (Matthew 26:31, Mark 14:27). Malachi: Mark 1:2, Matthew 11:10 and 11:14, Luke 1:17, John 1:21, Matthew 17:11-12, Romans 9:13. Cut: Revelation 11:4 beside Zechariah 4, Luke 1:78 beside Malachi 4:2, Matthew 21:12-13 beside Malachi 1, 1 Peter 2:9 beside Malachi 3:17, John 2:19-21 beside Haggai 2, and the Didache and Wesley's hymn beside Malachi. Unsourced sentences cut before commit: the reading of Zephaniah 3:17 as silent in love; the bronze mountains of Zechariah 6 as gates; Jerusalem's one small spring; parable for the sign-acts of Zechariah 11, which the deep notes call sign-acts. Each chapter's ledger names its cuts.
+
+### What was run
+
+The same checks as Hosea to Nahum, after every book page and chapter (0 problems each). Before the third push (Hosea to Haggai, on the merged tree): the 63 content gates, `pnpm check`, `pnpm test` (207 files passed, 7 skipped), build, sitemap, prerender and `audit:canonicals` (0 failures), and a served walk at 390 and 1440 of the Jonah and Nahum book pages (Nineveh drawn, no label overlap) and every Habakkuk, Zephaniah and Haggai page (every part, list and paragraph shown, no sideways scroll, no console errors). The gates and the last push are in the hand-back.
+
+## Proverbs: the book page and every chapter (2026-11-25)
+
+Proverbs is whole: a teaching introduction on the book page and all thirty-one chapters in plain words, in the shape Job and 2 Kings use (`later` as the third part; `"plain": true` appended to each chapter note; one commit for the book page and one per chapter, each with its ledger rows and only that chapter's files). The book page's commit also rebuilt the explore indexes (timeline, atlas, words, hard passages) and added Proverbs to `teaching.test.tsx` (the books with a teaching guide, and its frame, `canaan`).
+
+### The book page (`/study/bible/proverbs`, same address)
+
+Data only, in `client/public/bible/notes/proverbs/intro.json`, field `teaching`. Fifteen parts (4,199 words): Proverbs in a minute; Where it sits in the story; Who wrote it, and when; Wisdom among Israel's neighbors; How Proverbs is built; What a proverb is, and is not; The fear of the LORD; A father's voice, and two invitations; Wisdom beside God at creation; The sayings: words, work, money and friends; The poor, and the God who made them; Children, correction and the home; Agur, Lemuel, and the woman of strength; How the New Testament reads Proverbs; How to read Proverbs. Then 16 hard passages, 15 key words, 13 timeline entries, a `canaan` map of one place (Jerusalem, for the kings the headings name; Egypt and Massa left off and the note says so), and eleven Go deeper pages, all live.
+
+Contested matters are stated in their holders' terms and no side is taken: Solomon's authorship (the core from Solomon, or the headings honoring him as patron of a tradition of scribes); the date of the final form (before the exile, or the fifth or fourth century BC); Amenemope (adaptation, or a common source) and the word in 22:20; the rod. Proverbs 8 is handled only as the site's book page already handled it: the chapter shaped the New Testament's language for Christ as the one through whom all things were made, and is itself a poetic personification, not a prophecy; the Arian controversy is told, with the church's confession resting on the New Testament's own teaching.
+## Daniel: the book page and every chapter (2026-11-25)
+
+Daniel is complete: a teaching introduction on the book page and all twelve chapters in plain words, in the same shape as Lamentations. One commit for the book page (with the four rebuilt explore indexes, and `teaching.test.tsx` listing Daniel with its frame, `canaan`) and one per chapter. The chapters were drafted and checked in the scratch folder's stage while the first push's heavy gates waited on the machine's load, then copied in, checked again in place and committed in order.
+
+### The book page (`/study/bible/daniel`, same address)
+
+Data only, in `client/public/bible/notes/daniel/intro.json`, field `teaching`. Thirteen parts (3,636 words): Daniel in a minute; Where it sits in the story; Who wrote it, and when; Babylon, Persia, and the Greek kings; How Daniel is built; Faithful in a foreign court; Dreams, a humbled king, and writing on the wall; Four beasts, and one like a son of man; The ram, the goat, and the little horn; Daniel's prayer and the seventy weeks; The last vision, and the dead who will awake; How the New Testament reads Daniel; How to read Daniel. Then 17 hard passages, 15 key words, 16 timeline entries and eleven Go deeper pages, all live. The map draws only Jerusalem: Babylon, Dura, Susa and the Ulai, the Tigris, Media, Persia, Greece and Egypt are not yet placed anywhere in the site's records, and the note says so (a question for James is in the hand-back).
+
+Contested matters are given in their holders' terms with no side taken: the date (the traditional sixth-century view, Young, Baldwin, Miller; the critical view of 167 to 164 BC, Collins, with Porphyry and Jerome; mediating views); the four kingdoms (Jerome's Babylon, Medo-Persia, Greece, Rome; the critical Babylon, Media, Persia, Greece with Antiochus IV; futurist readings); the one like a son of man (a people, an angel, an individual, with the Jewish witnesses the site's notes name); the seventy weeks (Jewish, critical, traditional Christian, dispensational and symbolic readings, with Jerome's refusal to choose); Darius the Mede; the king of 11:36-45. No date is calculated from any of the book's numbers, and no person, nation or movement of the present day is identified with any beast, horn or king.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 3 | 1,525 | 17 | 3 | 1,391 |
+| 2 | 3 | 1,310 | 18 | 3 | 1,386 |
+| 3 | 3 | 1,648 | 19 | 3 | 1,439 |
+| 4 | 3 | 1,193 | 20 | 3 | 1,520 |
+| 5 | 2 | 1,137 | 21 | 3 | 1,364 |
+| 6 | 3 | 1,382 | 22 | 3 | 1,768 |
+| 7 | 3 | 1,401 | 23 | 3 | 1,642 |
+| 8 | 3 | 1,491 | 24 | 3 | 1,335 |
+| 9 | 3 | 1,266 | 25 | 3 | 1,299 |
+| 10 | 3 | 1,436 | 26 | 3 | 1,290 |
+| 11 | 3 | 1,382 | 27 | 3 | 1,081 |
+| 12 | 3 | 1,411 | 28 | 3 | 1,304 |
+| 13 | 3 | 1,447 | 29 | 3 | 1,341 |
+| 14 | 3 | 1,219 | 30 | 3 | 1,625 |
+| 15 | 3 | 1,249 | 31 | 3 | 1,548 |
+| 16 | 3 | 1,479 | **Total** | **92** | **43,309** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part.
+
+### The hard places, and how they are stated
+
+The discipline sayings (13:24; 22:15; 23:13-14; with 19:18 and 29:15, 17) each state the two readings faithful parents hold, measured physical discipline given calmly and never in anger or to injure, or the rod as a picture of correction in general with Ephesians 6:4 and Colossians 3:21, say that the question divides faithful parents without dividing anyone from Christ, take no side, and say plainly that correction in anger or that injures is not discipline and that nothing in the verse gives anyone a warrant to harm a child; each carries the site's line that abuse of a child is a crime. 22:6 is read as a pattern, not a promise, and no grieving parent is blamed. The sayings on the quarrelsome wife (19:13; 21:9, 19; 25:24; 27:15-16) are read with 19:14 as a picture of a home without peace, not a comment on women, with the book's warnings about angry men, and with the line for anyone being hurt; 11:22 and the forbidden woman of chapters 5 to 7 carry no contempt for women. The sayings on poverty and laziness (6:9-11; 10:4; 19:15; 28:27) are warnings to the reader about his own habits, never a verdict on the poor (13:23; 14:31; 22:2). Proverbs 31 is praise, not a burden laid on any woman. Promises of long life and plenty (3:2, 9-10; 9:11; 10:3, 27; 12:21; 24:16) are patterns, not guarantees, with the illness line in chapter 3 and the grief line in chapter 9. 3:11-12 keeps Hebrews 12's own use. The two drinking poems (20:1; 23:29-35) and Lemuel's mother (31:4-7) carry the line about drinking that has become hard to control.
+
+### Care lines
+
+Reused whole, word for word, each naming Find Help, none with a phone number, and no new care sentence: the line that abuse of a child is a crime (book page; 13, 19, 22, 23, 29; from colossians/plain/3.json and ephesians/plain/6.json); the line for anyone being hurt at home, at work or in a church (21; from the Deuteronomy notes and tracks/family.json); the line for an abusive marriage (18; from colossians/plain/3.json); the illness line (3; from 2-kings/plain/15.json); the grief line (9; from 1-samuel/plain/1.json); the line for lasting sadness (18; from 1-samuel/plain/16.json); the drinking line (20, 23, 31; from ephesians/plain/5.json).
+
+### Cut or narrowed
+
+Every line the deep notes draw from Proverbs to Christ that the New Testament does not itself draw (Wisdom's call as Jesus' lament; the treasure in the field; the two builders; the rich fool; the sheep and the goats; Jesus as the just king, the faithful friend, the good shepherd, the bread of life; the cross as the answer to 17:15 and 21:18; the woman of chapter 31 as the church). The New Testament lines kept: Hebrews 12:5-6 (3:11-12); James 4:6 and 1 Peter 5:5 (3:34); Romans 12:20 (25:21-22); 1 Peter 4:18 (11:31); 2 Peter 2:22 (26:11); 1 Peter 4:8 (10:12); Hebrews 12:13 (4:26); James 4:14 (27:1); Luke 14:10 beside 25:6-7, as the site's Luke note has it; Proverbs 8 as the book page has it. The deep note's mention of research on physical punishment is cut (no source named). Verses with dashes or inner quotations are quoted in part or paraphrased; exclamations are quoted only in double quotes; ‘bless’ appears only inside quoted Scripture. Each chapter's ledger names its cuts.
+
+### What was run
+
+The Job checks (in `/home/user/bdoor-scratch/ezra/`), copied to `/home/user/bdoor-scratch/wisdom-books/` and pointed at Proverbs, Ecclesiastes and the Song: the strict, single-quote, cited-verse and nested quotation checks; the forbidden-word, signposting and first-person scans; the care-line check (the three books left out of its corpus, so every care line must already stand elsewhere on the site). Three small changes were made and tested: the reference parser now reads ‘Song of Songs’; the phone-number scan no longer mistakes a reference such as Psalm 112:6 for a number; and the cited-verse check reads only the new layer (the teaching and the plain notes), leaving the old introduction fields to the strict check. After the book page and after each chapter: validate-bible-notes, those checks, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks, each exit 0; after the book page, `teaching.test.tsx` (33 of 33). Chapters 16 to 31 were drafted and checked in a staging folder while the gates for the first push ran, then written, checked and committed in order.
+
+The first push (the book page and chapters 1 to 15) followed a merge of the shared branch: the 63 content gates (63 of 63), `pnpm check` (exit 0), `pnpm test` (207 files and 2,585 tests passed, 7 files and 73 tests skipped; two earlier runs each failed one timing test under a load near 13, in files this work does not touch, and each passed alone), `pnpm build`, sitemap, prerender and `audit:canonicals` (each exit 0; every audited page canonicalises to itself), and the served build on port 4607 at 390 and 1440 (the book page's 15 parts, 16 hard passages, 15 words, 13 timeline entries and its place, no overlap, no sideways scroll; chapters 1 to 15, 44 passages and 190 fields, 0 problems). The branch moved during the run; after a second merge (both sides kept in the ledger and `teaching.test.tsx`, the explore indexes rebuilt), the 63 content gates, `pnpm check`, the scans and `teaching.test.tsx` passed again before the push.
+| 1 | 4 | 1,974 | 7 | 4 | 2,634 |
+| 2 | 4 | 2,275 | 8 | 4 | 2,003 |
+| 3 | 4 | 2,125 | 9 | 5 | 2,470 |
+| 4 | 4 | 2,146 | 10 | 3 | 1,547 |
+| 5 | 4 | 1,708 | 11 | 5 | 2,570 |
+| 6 | 4 | 1,933 | 12 | 3 | 1,649 |
+| | | | **Total** | **48** | **25,034** |
+
+### The hard places, and how they are stated
+
+- **The king's death sentence on the wise men (2:12-13):** not approved; Daniel pleads for them.
+- **Even if he does not (3:18):** faith not dependent on rescue; the book's own martyrs (11:33) and resurrection hope; no one's suffering read as lack of trust; the accusation of the Jews and no warrant for suspicion of the Jewish people; the line for anyone suffering now.
+- **The fourth figure in the furnace (3:25):** an angel, or the Son before his birth; no side.
+- **Nebuchadnezzar's madness (4):** one king's judgment for pride, never a reading of anyone's illness; the illness line.
+- **The accusers' wives and children (6:24):** the king's command, forbidden by Deuteronomy 24:16, reported and not a model; the line for anyone not protected by a parent.
+- **The visions (7 to 12):** every reading in its holders' terms; refining under persecution (11:35) never a word to say to another sufferer; no present-day identification; no date set; the line for anyone suffering now (12).
+
+### Care lines
+
+Reused whole, byte for byte, read by script from their sources, each naming Find Help, none with a phone number, no new care sentence: the line for anyone suffering now (book page; 3; 12); the illness line (4); the line for anyone not protected by a parent (6).
+
+### Cut or narrowed
+
+Every line the deep notes draw to Christ that the New Testament does not draw (the faithful-servant pattern of chapter 1; the stone as the parables of small beginnings; Immanuel in the furnace; James 4:6, Luke 1:52 and Philippians 2 beside chapter 4; Christ bearing the judgment on the wall; the sealed tomb of Matthew 27:66 beside the den; Ephesians 6:12 beside chapter 10). The New Testament's own lines kept: Mark 14:62, Mark 13:26 and Acts 7:56 with 7:13; Matthew 24:15; Mark 1:15; Hebrews 11:33-34; Luke 1:19 (Gabriel); Revelation's beasts, Michael (Revelation 12:7; Jude 1:9) and 22:10; John 5:28-29 and Matthew 13:43 with 12:2-3; 2 Thessalonians 2:4's wording beside 11:36; Luke 20:18 as an echo many interpreters hear; the wording of Matthew 13:32. Unsourced sentences caught before commit were cut and are recorded in each chapter's ledger.
+
+### What was run
+
+As for Lamentations, after the book page and each chapter, each exit 0 at commit. The validator asked for a book beyond Daniel in three `later` fields (3:28-30, 6:25-28, 8:23-27); a psalm was added to each and the ledger says so. The push's gates are in the hand-back.
+
+## Ecclesiastes: the book page and every chapter (2026-11-25)
+
+Ecclesiastes is whole: a teaching introduction on the book page and all twelve chapters in plain words, in the same shape (one commit for the book page, with the explore indexes rebuilt and `teaching.test.tsx` naming the book on the `canaan` frame, and one commit per chapter).
+
+### The book page (`/study/bible/ecclesiastes`, same address)
+
+Data only, in `client/public/bible/notes/ecclesiastes/intro.json`, field `teaching`. Fifteen parts (3,325 words): Ecclesiastes in a minute; Where it sits in the story; Who wrote it, and when; Hevel: breath, vapor, futility; How Ecclesiastes is built; A king tests everything; A time for everything; Oppression, and the darkest words in the book; Wisdom tested, and its limits; Eat, drink, and enjoy: the gift of God; Death, the great leveler; The Teacher's voice, and the epilogue; A book the rabbis argued over; How the New Testament reads Ecclesiastes; How to read Ecclesiastes. Then 16 hard passages, 15 key words, 10 timeline entries, a `canaan` map of Jerusalem alone, and eleven Go deeper pages, all live.
+
+Contested matters in their holders' terms, no side taken: Solomon's authorship (tradition and Duane Garrett, or a royal persona and late Hebrew, roughly 450 to 250 BC); the meaning of hevel (emptiness, brevity, enigma); the Teacher's voice and the epilogue (a later softening, as Crenshaw argued; a frame by design, after Fox, with Longman reading the narrator as weighing the Teacher; Whybray's preacher of joy; Kidner's life under the sun), with the observation that the fear of God (5:7) and judgment (3:17; 11:9) are already the Teacher's own. The New Testament section keeps the site's book page's own lines: Romans 8:20-21 and the Greek word for hevel, and 1 Corinthians 15:58 as a thematic answer.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 2 | 1,090 | 7 | 3 | 1,444 |
+| 2 | 3 | 1,373 | 8 | 3 | 1,256 |
+| 3 | 3 | 1,339 | 9 | 3 | 1,486 |
+| 4 | 3 | 1,199 | 10 | 3 | 1,171 |
+| 5 | 3 | 1,275 | 11 | 2 | 948 |
+| 6 | 2 | 1,039 | 12 | 2 | 1,150 |
+| | | | **Total** | **32** | **14,770** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part.
+
+### The hard places, and how they are stated
+
+The cries of despair are recorded as cries, never as counsel: 2:17 (hated life), 4:2-3 (the dead better off), 9:2-10 (one fate, the dead know nothing). Each is read with the book's own answer (9:4; 12:7; 12:14), says that nothing in it calls anyone better off dead, and carries the self-harm line whole. 6:3 (the stillborn better off) is a cry about joyless years, not a judgment on any child or parent, with the line for the loss of a child. 3:18-21 and 9:5-10 are not denials of life after death; the Teacher admits what he cannot see, and Daniel 12:2 and the resurrection hope of the New Testament are named only as the wider canon's answer. 7:26-29 is set out in four readings, with Genesis 1:27 and no license for contempt toward women. 8:2-4 is counsel for life under absolute power, not a teaching that rulers are always right. 10:2's right and left have nothing to do with modern political labels.
+
+### Care lines
+
+Reused whole, word for word, each naming Find Help, none with a phone number: the self-harm line (book page twice; 2, 4, 9; from job/plain/3.json and the 1 Kings 19 notes); the grief line (3, 7; from 1-samuel/plain/1.json); the child-loss line (6; from pray-psalms/psalm/139.json and job/plain/42.json).
+
+### Cut or narrowed
+
+The deep notes' lines to Christ that the New Testament does not draw (the rich fool; Jesus as the Comforter's sender beside 4:1; John 3:8 beside 11:5; the good shepherd beside 12:11; the judgment of Christ beside 12:14; the poor wise man as Christ; the Lord's Supper beside 9:7). The deep note's suggestion of named readings of 7:16 was narrowed to the verse's own neighbors (7:17, 7:20).
+
+### What was run
+
+The same checks after the book page and after each chapter, each exit 0, and `teaching.test.tsx` after the book page (33 of 33). The chapters were drafted and checked in the staging folder while the Proverbs pushes ran their gates, then written, checked and committed in order. The gates for this push are recorded in the hand-back.
+
+## The Song of Songs: the book page and every chapter (2026-11-25)
+
+The Song is whole: a teaching introduction on the book page and all eight chapters in plain words, in the same shape (one commit for the book page, with the explore indexes rebuilt and `teaching.test.tsx` naming the book on the `canaan` frame, and one commit per chapter).
+
+### The book page (`/study/bible/song-of-solomon`, same address)
+
+Data only, in `client/public/bible/notes/song-of-solomon/intro.json`, field `teaching`. Fourteen parts (2,965 words): The Song of Songs in a minute; Where it sits in the story; Who wrote it, and when; Human love, God's love, or both; Who is speaking; How the Song is built; Longing, and dark yet lovely; Spring, and a search by night; The wedding, and a garden locked up; Absence, the watchmen, and praise; The right time, and love freely given; Love as strong as death; How the New Testament reads the Song; How to read the Song. Then 14 hard passages, 15 key words, 10 timeline entries, a `canaan` map of three places already placed on the site (Jerusalem, Gilead roughly as a region, Damascus; Lebanon, Hermon, En-gedi, Sharon, Carmel, Tirzah and the rest left off and the note says so), and ten Go deeper pages, all live.
+
+Contested matters in their holders' terms, no side taken: Solomon as author or as a figure in the poems, and the dates from the tenth to the third century BC (pardes; Tirzah before about 880 BC); the three readings, allegorical (the Targum, Akiva, Origen, Bernard), natural, and both together; two characters or three; the charge's meaning. The New Testament section keeps the site's book page's wording: the Song is never quoted, and any link to Christ comes from the wider picture of God as bridegroom (Mark 2:19; John 3:29; Ephesians 5:32; Revelation 19:7).
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 2 | 1,042 | 5 | 3 | 1,236 |
+| 2 | 2 | 977 | 6 | 3 | 1,169 |
+| 3 | 2 | 969 | 7 | 2 | 1,014 |
+| 4 | 2 | 997 | 8 | 3 | 1,325 |
+| | | | **Total** | **19** | **8,729** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part.
+
+### The hard places, and how they are stated
+
+The Song is told with dignity and without explicitness: the most physical lines (1:13; 4:5-6; 7:1-3, 7-9; 8:1, 8, 10) are told in a phrase or left unquoted, and the notes say the language is veiled and full of images. Love is shown as freely given by both, and the notes say plainly that nothing in the Song gives anyone a right to pressure or force another (2:7; 4:16; 7:10; 8:12), and that the brothers of 8:8-9 have no right to control a woman's life. 5:7, the watchmen, is set out in three readings (a dream of loss; a real injustice recorded without approval; the allegorical reading), with no warrant for violence and the line for anyone being hurt. 1:5-6 is about skin darkened by work, not ethnicity, as the deep note says.
+
+### Care lines
+
+Reused whole, word for word, naming Find Help, no phone number: the line for anyone being hurt at home, at work or in a church (book page; 5).
+
+### Cut or narrowed
+
+The deep notes' lines to Christ through the chapters (the kiss as God's word; Revelation 3:20 beside the knock; ‘altogether lovely’ in later preaching; the seal and Ephesians 1:13; Ephesians 5:25 and Romans 8:38-39 beside 8:6-7; the reversal of Genesis 3:16 as the gospel's undoing of the curse), all left to the book page's one paragraph on the bridegroom.
+
+### What was run
+
+The same checks after the book page and after each chapter, each exit 0, and `teaching.test.tsx` after the book page (33 of 33). Two chapters were first refused by validate-bible-notes for an exclamation set inside single quotation marks (2:8 and 6:13); both were set in double quotation marks, as Scripture with an exclamation must be, and passed. The gates for the last push are recorded in the hand-back.
+
+### Next
+
+The wisdom books are now whole, from Job to the Song. The Song's and Ecclesiastes' book pages are shorter than the plan's 3,500 words (2,965 and 3,325), in proportion to books of eight and twelve chapters; either can be lengthened if James wants. Questions only James can answer are in the hand-back.
+
+## Isaiah: the book page and every chapter (2026-11-26)
+
+Isaiah is complete: a teaching introduction on the book page and all sixty-six chapters in plain words, in the same shape as Lamentations and Daniel. One commit for the book page (with the rebuilt explore indexes, and `teaching.test.tsx` listing Isaiah with its frame, `canaan`) and one per chapter, sixty-seven in all. Chapters were drafted and checked in the scratch folder's stage while the heavy gates waited on the machine's load, then copied in, checked again in place and committed in order.
+
+### The book page (`/study/bible/isaiah`, same address)
+
+Data only, in `client/public/bible/notes/isaiah/intro.json`, field `teaching`. Fourteen parts (3,987 words): Isaiah in a minute; Where it sits in the story; Who wrote it, and when; Assyria, Babylon and Cyrus; How Isaiah is built; The Holy One of Israel; Ahaz, Immanuel, and the promised king; The nations, and a feast for all peoples; Trust or ruin: Hezekiah and Assyria; Comfort for the exiles; The Servant of the LORD; Zion restored, and new heavens and a new earth; How the New Testament reads Isaiah; How to read Isaiah. Then 27 hard passages, 15 key words, 15 timeline entries and eleven Go deeper pages, all live. The map draws six places where the site's other maps already place them (Jerusalem; Samaria, roughly, as a region; the Jordan; Damascus; Tyre; Sidon). Galilee, Moab, Edom and Bozrah, Philistia, Lachish, Egypt, Assyria and Babylon are left off because the site's records do not place them, and the note says so.
+
+Contested matters are given in their holders' terms with no side taken: one author or more (the traditional view and the critical view, as the deep notes give them); the word of 7:14, stated as debated, with Matthew 1:23; the Servant (Israel, the remnant, the prophet, an individual, the Messiah), with the Jewish readings the site's chapter 53 note gives; the millennium in 65:20 as a second-order question.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 4 | 1,815 | 34 | 2 | 1,159 |
+| 2 | 3 | 1,486 | 35 | 2 | 767 |
+| 3 | 3 | 1,410 | 36 | 3 | 1,529 |
+| 4 | 3 | 1,158 | 37 | 4 | 1,796 |
+| 5 | 4 | 1,753 | 38 | 3 | 1,394 |
+| 6 | 3 | 1,383 | 39 | 2 | 801 |
+| 7 | 3 | 1,740 | 40 | 3 | 1,341 |
+| 8 | 3 | 1,444 | 41 | 3 | 1,394 |
+| 9 | 3 | 1,593 | 42 | 3 | 1,466 |
+| 10 | 4 | 1,662 | 43 | 4 | 1,532 |
+| 11 | 3 | 1,400 | 44 | 3 | 1,389 |
+| 12 | 2 | 675 | 45 | 3 | 1,360 |
+| 13 | 3 | 1,421 | 46 | 2 | 724 |
+| 14 | 3 | 1,523 | 47 | 3 | 1,463 |
+| 15 | 2 | 891 | 48 | 3 | 1,461 |
+| 16 | 3 | 1,152 | 49 | 4 | 1,879 |
+| 17 | 3 | 1,218 | 50 | 3 | 1,437 |
+| 18 | 2 | 718 | 51 | 3 | 1,611 |
+| 19 | 3 | 1,397 | 52 | 3 | 1,364 |
+| 20 | 2 | 861 | 53 | 4 | 2,437 |
+| 21 | 3 | 1,211 | 54 | 2 | 1,174 |
+| 22 | 2 | 1,260 | 55 | 2 | 1,023 |
+| 23 | 3 | 1,209 | 56 | 2 | 1,049 |
+| 24 | 2 | 1,232 | 57 | 2 | 1,216 |
+| 25 | 3 | 1,203 | 58 | 3 | 1,162 |
+| 26 | 3 | 1,236 | 59 | 3 | 1,338 |
+| 27 | 3 | 1,075 | 60 | 3 | 1,418 |
+| 28 | 4 | 1,650 | 61 | 3 | 1,203 |
+| 29 | 3 | 1,394 | 62 | 3 | 1,045 |
+| 30 | 4 | 1,715 | 63 | 3 | 1,526 |
+| 31 | 2 | 784 | 64 | 2 | 1,122 |
+| 32 | 3 | 1,057 | 65 | 3 | 1,760 |
+| 33 | 3 | 1,374 | 66 | 3 | 1,576 |
+| | | | **Total** | **191** | **88,016** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part naming a book beyond Isaiah.
+
+### The hard places, and how they are stated
+
+- **The New Testament's own lines, and only those:** 7:14 with Matthew 1:23, the word stated as debated; 40:3 with the Gospels; 52:13 to 53:12 as Acts 8 and 1 Peter 2 read it, with the Jewish readings set beside the Christian one (Rashi, Ibn Ezra, Kimhi and most Jewish interpreters today; the remnant; the prophet; the Christian answer from 49:5-6, 53:8-9 and 40:2; the Targum's messianic reading without a dying Messiah); 61:1-2 with Luke 4, and why Jesus stopped reading. Every other line the deep notes draw to Christ, where the New Testament does not draw it, is cut, and each chapter's ledger names it.
+- **One person's suffering for another (53:10-12):** the objection in its strongest form (Ezekiel 18:20; Socinus; Brown and Parker), the song's own answers, faithful Christians differing on the mechanism; the cross gives no warrant to hurt anyone or to stay where one is harmed.
+- **Illness read as punishment (53:4):** the speakers were wrong; John 9:3; the illness line.
+- **Cities pictured as women stripped or shamed (3:16-4:1; 47:1-4; 57:3-10):** a prophetic picture of a city, never a warrant for any man to shame or harm a woman, with the line for anyone being hurt.
+- **The Servant beaten (50:6):** suffering for his calling, not a pattern for staying in abuse, with the same line.
+- **Judgment on Judah and on the nations (47:6; 48:1-8; 51:17-23; 63:1-6; 65:2):** never a reason to blame the Jewish people, never a key for calling any people's suffering deserved; Edom identifies no present-day people; Romans 10:21 read with Romans 11:1-2; chapter 60's kings and nations give no people a warrant to claim power over others in God's name.
+- **The barren woman (54:1):** a city, not a promise of a child to any one person; childlessness no verdict, with the grief line; the infant of 65:20 with the line for loss of a child.
+
+### Care lines
+
+Reused whole, byte for byte, each naming Find Help, none with a phone number, no new care sentence: the line for anyone being hurt at home, at work or in a church (3, 47, 50, 53, 57); the grief line (8, 25, 51, 54); the line for anyone sexually assaulted (13); the illness line (33, 38, 53); the line for loss of a child (65); the line for anyone suffering now (book page). The care check found every care paragraph already standing elsewhere on the site.
+
+### Cut or narrowed
+
+Each chapter's ledger in `bdoor-ledger.md` names its cuts. In outline: every deep-note line to Christ the New Testament does not itself draw; Romans 2:24 beside 52:5; Stephen's charge (Acts 7:51) beside 48:4, replaced by Hebrews 3:8; a sentence on the Christian use of chapter 53 against Jews, cut for want of a source; unsourced lines caught before commit (45). Verses with dashes or inner speech marks are quoted in part or paraphrased; exclamations are quoted only in double quotes; one verse (49:23) is paraphrased because validate-bible-notes holds a word in it to the Forbidden Language list.
+
+### What was run
+
+After the book page and each chapter, each exit 0 at commit: validate-bible-notes; the strict, single-quote, cited-verse and nested quotation checks; the forbidden-word, signposting and first-person scans; the care-line check; no-emdash; the search-index and passage-index checks; validate-politics; the eight explore-index checks. Three `later` fields that named only Isaiah (5, 10 and 41) gained a psalm or another book, and two short ones (1 and 17) were lengthened; the ledger says which.
+
+Four pushes, each after a merge of the shared branch and the full gate order on the merged tree: the 63 content gates, `pnpm check`, `pnpm test`, `pnpm build`, sitemap, prerender and `audit:canonicals`, then the served build on port 4611 at 390 and 1440 (the book page's 14 parts, 27 hard passages, 15 timeline entries and 6 places; no overlap, no sideways scroll; every chapter's passages and fields, 0 problems). The push of the book page and chapters 1 to 20 met one failing timing test in `BibleTimeline.test.tsx` under a load near 14; it passed alone and passed in the later full runs. When the branch moved during a run, the merge was made again (ledger conflicts kept both sides; the explore indexes rebuilt), and the content gates, `pnpm check`, the scans and `teaching.test.tsx` passed again before the push.
+
+### Maps widened for Isaiah and Daniel (2026-11-26)
+
+At the coordinator's direction, ancient sites whose location is not in doubt are now drawn at their ruin mounds, and the great powers as regions with a name only. Isaiah's first map adds Philistia, Moab and Edom as regions; a second map (`fertile-crescent`) draws Jerusalem, Egypt and Assyria as regions, Nineveh (36.36 N, 43.15 E, the point the Jonah, Nahum and Zephaniah maps already use) and Babylon (32.54 N, 44.42 E, the ruins near Hillah). Daniel gains a second map with Jerusalem, Babylon, Susa (32.19 N, 48.26 E, Shush) and Egypt as a region. Each map note says that ancient sites are placed at their ruin mounds, and Edom's line says no people of the present day is meant. `teaching.test.tsx` now lists both books with the frames `canaan` and `fertile-crescent`.
+
+## Jeremiah: the book page and every chapter (2026-11-26)
+
+Jeremiah is complete: a teaching introduction on the book page and all fifty-two chapters in plain words, in the same shape as Isaiah. One commit for the book page (with the rebuilt explore indexes, and `teaching.test.tsx` listing Jeremiah with the frames `canaan` and `fertile-crescent`) and one per chapter. Chapters were drafted and checked in the scratch folder's stage while the heavy gates waited on the machine's load, then copied in, checked again in place and committed in order.
+
+### The book page (`/study/bible/jeremiah`, same address)
+
+Data only, in `client/public/bible/notes/jeremiah/intro.json`, field `teaching`. Fourteen parts: Jeremiah in a minute; Where it sits in the story; Who wrote it, and when; Two editions of one book; Josiah, the kings after him, and Babylon; How Jeremiah is built; A covenant broken, and false security; The prophet's own prayers; True and false prophets; Seek the peace of the city; Rachel's tears and the new covenant; The nations, and Babylon's turn; How the New Testament reads Jeremiah; How to read Jeremiah. Then 24 hard passages, 15 key words, 15 timeline entries and eleven Go deeper pages, all live. Two maps: Judah and its neighbors (Jerusalem, Bethlehem, Jericho, Bethel, Shechem, Tyre and Damascus at the points the site's other maps use; Gilead, Philistia, Moab and Edom as regions), and the empires (Jerusalem, Egypt as a region, Babylon at its ruin mounds near Hillah). The note names what is left off (Anathoth, Mizpah, Ramah, Lachish, Tahpanhes, Carchemish, Elam) and says that ancient sites are placed at their ruin mounds.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 3 | 1,266 | 27 | 2 | 997 |
+| 2 | 3 | 1,365 | 28 | 2 | 930 |
+| 3 | 3 | 1,405 | 29 | 2 | 1,033 |
+| 4 | 3 | 1,295 | 30 | 2 | 1,046 |
+| 5 | 3 | 1,301 | 31 | 3 | 1,974 |
+| 6 | 3 | 1,271 | 32 | 2 | 1,205 |
+| 7 | 3 | 1,365 | 33 | 2 | 1,078 |
+| 8 | 2 | 1,077 | 34 | 2 | 961 |
+| 9 | 2 | 1,141 | 35 | 2 | 855 |
+| 10 | 2 | 1,053 | 36 | 2 | 1,043 |
+| 11 | 2 | 1,017 | 37 | 2 | 800 |
+| 12 | 2 | 931 | 38 | 2 | 1,173 |
+| 13 | 2 | 1,096 | 39 | 2 | 1,003 |
+| 14 | 2 | 1,093 | 40 | 2 | 855 |
+| 15 | 2 | 1,054 | 41 | 2 | 981 |
+| 16 | 2 | 1,025 | 42 | 2 | 1,024 |
+| 17 | 3 | 1,241 | 43 | 2 | 861 |
+| 18 | 3 | 1,242 | 44 | 2 | 1,084 |
+| 19 | 2 | 998 | 45 | 1 | 560 |
+| 20 | 3 | 1,231 | 46 | 2 | 1,009 |
+| 21 | 2 | 824 | 47 | 1 | 553 |
+| 22 | 3 | 1,392 | 48 | 2 | 1,030 |
+| 23 | 3 | 1,500 | 49 | 3 | 1,200 |
+| 24 | 2 | 843 | 50 | 2 | 1,127 |
+| 25 | 2 | 1,032 | 51 | 3 | 1,520 |
+| 26 | 2 | 957 | 52 | 2 | 1,064 |
+| | | | **Total** | **117** | **56,981** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part naming a book beyond Jeremiah.
+
+### The hard places, and how they are stated
+
+- **The New Testament's own lines, and only those:** 31:31-34 with Luke 22:20 and Hebrews 8 (and Hebrews 10:16-17), with the Jewish and critical objection stated first (Kimhi), the Reformed, dispensational and Christ-centred readings set out without choosing, the question named second-order, 31:35-37's bond to Israel's descendants granted, and Romans 11:28 against any contempt; Hebrews 8:13's word obsolete is not quoted. Also 7:11 with Matthew 21:13; 31:15 with Matthew 2:18, with the objection about Matthew's use stated; 9:23-24 with 1 Corinthians 1:31; 51:45 and the sinking stone with Revelation 18; 49's Edom with Amos 9:12 as Acts 15:17 quotes it. The Branch of 23:5-6 and 33:15-16 is given as a Christian reading, not a New Testament citation. Every other line the deep notes draw to Christ is cut, and each chapter's ledger names it.
+- **Pictures of Judah as an unfaithful wife and a woman exposed (2; 3:1-13; 13:20-27):** named, never described, stated as a prophetic picture of a city and a covenant that gives no warrant for any man to shame or harm any woman, with the abusive-marriage line (3) and the line for anyone being hurt (2, 13). The women of 44 are not singled out; the note says the chapter is no judgment on women.
+- **Jeremiah 20:14-18:** handled as Job 3 was, the despair named as prayer, Moses and Elijah beside it, the story going on, with the self-harm line.
+- **The horrors of the siege (19:9; 9:21; 39:6-7; 41; 52:9-11):** named, not described; no child's suffering a verdict on the child; the line for loss of a child, the grief line, the line for a sudden death.
+- **Child sacrifice (7:31; 19:5; 32:35):** named as evil that never entered God's mind, with the site's line that abuse of a child is a crime.
+- **Surrender to Babylon (21; 27; 38):** a word for one judgment at one time, not a rule that anyone must submit to oppression; no line drawn to any nation or war today.
+- **The words against the nations (25:15-38; 46 to 51):** poetry of judgment on ancient powers; Egypt, the Philistines, Moab, Edom and Babylon identified with no people, place, nation or state of the present day; 48:10 and 51 give no one a warrant for violence; Gaza and the Philistines are ancient places and peoples.
+- **Judgment on Judah (2 to 25; 44):** never a reason to blame the Jewish people, never a key for calling any people's suffering deserved.
+- **29:11:** a promise to a people in exile, not a guarantee of personal success.
+- **Prophecy and dates:** the seventy years read three ways with no date calculated; the time of Jacob's distress (30:7) given in its readings with no date set and no present event named.
+
+### Care lines
+
+Reused whole, byte for byte, each naming Find Help, none with a phone number, no new care sentence: the line for loss of a child (1, 19, 31); the line for anyone being hurt at home, at work or in a church (2, 13); the abusive-marriage line from hosea/plain/2.json (3); the line that abuse of a child is a crime, from colossians/plain/3.json (7, 32); the grief line (8, 9, 39); the disaster line (14); the line for anyone suffering now (15, 45, book page); the self-harm line (20); the line for a sudden death (41). The care check found every care paragraph already standing elsewhere on the site.
+
+### Cut or narrowed
+
+Each chapter's ledger in `bdoor-ledger.md` names its cuts. In outline: every deep-note line to Christ the New Testament does not itself draw (John 4 and 7 beside 2:13, Galatians 3 beside 4:2, Luke 19 and Mark 2 beside 8:22, Matthew 4:19 beside 16:16, Matthew 6:33 beside 45, Acts 2:9 beside 49, Matthew 10:16 beside 40, Acts 28 beside 37, Hebrews 11 beside 20); unsourced claims caught before commit (the word for worthless, the law on thieves, Anathoth's motives, the palace as the forest of 21:14, why the slaves were freed, whom the deportation figures counted, Caphtor's place, Gibeon's position); seal impressions whose finding or identification the deep notes call uncertain. Verses with dashes or inner speech marks are quoted in part or paraphrased; exclamations are quoted only in double quotes.
+
+### What was run
+
+After the book page and each chapter, each exit 0 at commit: validate-bible-notes; the strict, single-quote, cited-verse and nested quotation checks; the forbidden-word, signposting and first-person scans; the care-line check; no-emdash; the search-index and passage-index checks; validate-politics; the eight explore-index checks. Before commit each staged chapter was also checked for the validator's limits (length, a `later` naming another book, no exclamation outside double quotes, passages covering every verse).
+
+Pushes after the maps and the book page with chapters 1 to 4, after 22, after 37 and after 52, each after a merge of the shared branch and the full gate order on the merged tree: the 63 content gates, `pnpm check`, `pnpm test`, `pnpm build`, sitemap, prerender and `audit:canonicals`, then the served build on port 4611 at 390 and 1440 (the book page's 14 parts, 24 hard passages, 15 timeline entries and 14 places on two maps; no overlap, no sideways scroll; every chapter's passages and fields, 0 problems). When the branch moved during a run, the merge was made again (ledger conflicts kept both sides; the explore indexes rebuilt) and the content gates, `pnpm check`, the scans and `teaching.test.tsx` passed again before the push.

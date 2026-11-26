@@ -1,0 +1,168 @@
+<!doctype html>
+<!-- "Nehemiah: rebuilding the walls, and a people". A strip of the book's 13 chapters runs along the bottom
+     for the whole film. The wall is one ring seen from above, in twelve sections, and it stays on screen
+     nearly the whole time: broken, rebuilt in fifty-two days, guarded, dimmed while the poor lose their
+     fields, a faint backdrop while the law is read, and whole at the end while the people inside drift apart.
+     People are dots. God is never drawn. The wall's opponents are plain dots with no mark of who they are.
+     THE ENDING: no striking and no confrontation is shown. Only pledge marks fading, one dot walking back in
+     through the gate, and the wall standing whole.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Nehemiah: rebuilding the walls, and a people</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", GOLD = "#B08A12", SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const A0 = S("cupbearer", 0), A0E = E("cupbearer", 0), A1 = S("cupbearer", 1), AE = E("cupbearer");
+  const L0 = S("layout", 0), L1 = S("layout", 1), LE = E("layout"), W0 = S("wall", 0), W0E = E("wall", 0), W1 = S("wall", 1), W2 = S("wall", 2), WE = E("wall");
+  const P0 = S("poor", 0), P0E = E("poor", 0), P1 = S("poor", 1), PE = E("poor"), T0 = S("law", 0), T0E = E("law", 0), T1 = S("law", 1), TE = E("law");
+  const R0 = S("remember", 0), R0E = E("remember", 0), R1 = S("remember", 1), R2 = S("remember", 2), RE = E("remember");
+  const ST = S("start", 0), STE = E("start"), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(13), N = 13, TX = (c) => 320 + (c - 1) * (640 / 12), TY = 520;
+  // keyframes: [[time, value], ...], eased between
+  const kf = (t, ks) => { if (t <= ks[0][0]) return ks[0][1]; for (let i = 1; i < ks.length; i++) if (t <= ks[i][0]) return mix(ks[i - 1][1], ks[i][1], ease((t - ks[i - 1][0]) / (ks[i][0] - ks[i - 1][0]))); return ks.at(-1)[1]; };
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), rows = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); rows.push(cur);
+    const lh = Math.round(size * 1.18), ts = rows.map((r, i) => txt(g, big ? "disp" : "ital", cx, y + i * lh, r, size));
+    const ref = txt(g, "lab", cx, y + (rows.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 13); return { g, ts, ref }; };
+  const showVerse = (v, t, a, b, big) => { const o = span(t, a, b, 0.6, 0.6); op(v.g, o); if (o > 0) { v.ts.forEach((e, i) => op(e, up(t, a + i * (big ? 0.5 : 0.25), 0.6))); op(v.ref, up(t, a + (big ? 1.0 : 0.7), 0.6)); } };
+
+  // ================= the strip of thirteen chapters =================
+  const gStrip = el("g", {}, world), ticks = [...Array(N)].map((_, i) => el("line", { x1: TX(i + 1), x2: TX(i + 1), y1: TY - 9, y2: TY + 9, stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gStrip));
+  const nums = [...Array(N)].map((_, i) => txt(gStrip, "lab", TX(i + 1), TY + 30, String(i + 1), 13));
+  const stripLine = line(gStrip, `M${TX(1)} ${TY} H${TX(13)}`, { stroke: LINE, "stroke-width": 1.5 });
+  const turnMark = el("circle", { cx: TX(8), cy: TY, r: 13, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gStrip);
+  const partMarks = [1.5, 4.5, 9, 12, 13].map((c) => el("circle", { cx: TX(c), cy: TY - 26, r: 6, fill: INK }, gStrip));
+  const KEY = [1, 2, 5, 8, 9, 13], KF = [0.13, 0.2, 0.36, 0.4, 0.44, 0.5], keyAt = (i) => ST + (STE - ST) * KF[i];
+
+  // ================= the law read (drawn under the ring's faint backdrop) =================
+  const gLaw = el("g", {}, world);
+  const sunPath = { x0: 330, y0: 330, x1: 640, y1: 132 }, sun = el("circle", { r: 20, fill: "none", stroke: MUSTARD, "stroke-width": 4 }, gLaw);
+  const plat = el("g", {}, gLaw); el("rect", { x: 560, y: 300, width: 160, height: 24, rx: 4, fill: WARM, stroke: INK, "stroke-width": 3 }, plat); el("circle", { cx: 610, cy: 282, r: 14, fill: INK }, plat);
+  el("rect", { x: 636, y: 256, width: 62, height: 40, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, plat); [266, 276, 286].forEach((y) => el("line", { x1: 644, x2: 690, y1: y, y2: y, stroke: STONE, "stroke-width": 2 }, plat));
+  const table = el("rect", { x: 500, y: 296, width: 280, height: 30, rx: 6, fill: WARM, stroke: INK, "stroke-width": 3 }, gLaw);
+  const crowd = [...Array(32)].map((_, i) => { const c = i % 8, r = Math.floor(i / 8), x = 416 + c * 64 + (r % 2) * 30 + (R() - 0.5) * 12, y = 366 + r * 34 + (R() - 0.5) * 8, helper = i % 7 === 3;
+    return { x, y, helper, e: el("circle", { cx: x, cy: y, r: 9, fill: INK }, gLaw), ring: helper ? el("circle", { cx: x, cy: y, r: 15, fill: "none", stroke: MUSTARD, "stroke-width": 2.5 }, gLaw) : null,
+      drop: el("path", { d: "M0 -8 Q6 2 0 6 Q-6 2 0 -8 Z", fill: STONE }, gLaw), loaf: el("ellipse", { rx: 11, ry: 6.5, fill: PAPER, stroke: INK, "stroke-width": 2 }, gLaw) }; });
+  const sheet = el("g", {}, gLaw); el("rect", { x: 968, y: 176, width: 150, height: 190, fill: PAPER, stroke: INK, "stroke-width": 3 }, sheet);
+  const sigs = [...Array(15)].map((_, i) => line(sheet, `M${984 + (i % 3) * 42} ${204 + Math.floor(i / 3) * 34} q8 -10 14 0 t14 0`, { stroke: INK, "stroke-width": 2.2 }));
+
+  // ================= the wall: one ring of twelve sections, seen from above =================
+  const gRing = el("g", {}, world), RR = 100;
+  const sect = [...Array(12)].map((_, i) => { const a0 = (i * 30 + 3 - 90) * Math.PI / 180, a1 = ((i + 1) * 30 - 3 - 90) * Math.PI / 180, d = `M${(RR * Math.cos(a0)).toFixed(2)} ${(RR * Math.sin(a0)).toFixed(2)} A${RR} ${RR} 0 0 1 ${(RR * Math.cos(a1)).toFixed(2)} ${(RR * Math.sin(a1)).toFixed(2)}`;
+    const mid = ((i + 0.5) * 30 - 90) * Math.PI / 180; return { i, mid, old: [0, 3, 4, 7, 10].includes(i), e: line(gRing, d, { stroke: INK, "stroke-width": 9, "stroke-linecap": "butt" }), hi: el("path", { d, fill: "none", stroke: MUSTARD, "stroke-width": 9 }, gRing),
+      rub: el("rect", { x: -6, y: -4, width: 12, height: 8, fill: MUTED, transform: `translate(${(118 * Math.cos(mid)).toFixed(1)} ${(118 * Math.sin(mid)).toFixed(1)}) rotate(${i * 37})` }, gRing) }; });
+  // the gate: two posts on the left of the ring
+  const gate = el("g", {}, gRing); el("rect", { x: -108, y: -13, width: 16, height: 26, fill: BONE }, gate); [-13, 13].forEach((y) => el("circle", { cx: -100, cy: y, r: 6.5, fill: INK }, gate));
+  // builders inside the wall: two dots by each section; in the wall scene half of them stand watch
+  const builders = sect.flatMap((s) => [0, 1].map((k) => ({ s, k, e: el("circle", { r: 5, fill: INK }, gRing) })));
+  // opponents outside: plain dots, and the lines that come at the wall and stop
+  const foes = [22, 158, 202, 338, 180, 0].map((deg, i) => { const a = deg * Math.PI / 180, c = Math.cos(a), s = Math.sin(a), px = -s, py = c; let d = `M${152 * c} ${152 * s}`;
+    [143, 134, 125, 117].forEach((r, j) => { const o = (j % 2 ? -7 : 7); d += ` L${(r * c + o * px).toFixed(1)} ${(r * s + o * py).toFixed(1)}`; }); d += ` L${111 * c} ${111 * s}`;
+    return { e: el("circle", { cx: 162 * c, cy: 162 * s, r: 6, fill: STONE }, gRing), l: line(gRing, d, { stroke: STONE, "stroke-width": 2.2 }) }; });
+  // the poor: small plots and small dots, and the few larger dots they pass to
+  const poorIn = [...Array(8)].map((_, i) => { const a = (i / 8) * Math.PI * 2 + 0.3, hx = 58 * Math.cos(a) - 14, hy = 58 * Math.sin(a), fx = 46 + (i % 3) * 13 - 6, fy = -20 + Math.floor(i / 3) * 16;
+    return { hx, hy, fx, fy, plot: el("rect", { x: -7, y: -7, width: 14, height: 14, fill: WARM, stroke: INK, "stroke-width": 1.6 }, gRing), dot: el("circle", { r: 4.2, fill: STONE }, gRing) }; });
+  const nobles = [[52, -40], [72, -6], [50, 30]].map(([x, y]) => el("circle", { cx: x, cy: y, r: 9, fill: INK }, gRing));
+  // the people at the end: together, then drifting apart
+  const drift = [...Array(14)].map((_, i) => { const a = (i / 14) * Math.PI * 2, r0 = 14 + (i % 3) * 9, r1 = 44 + (i % 4) * 12; return { a, r0, r1, e: el("circle", { r: 4.6, fill: INK }, gRing) }; });
+  const neh = el("g", {}, world); el("circle", { r: 20, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, neh); el("circle", { r: 12, fill: INK }, neh);
+  const prayers = [...Array(4)].map(() => el("path", { fill: "none", stroke: GOLD, "stroke-width": 2.4, "stroke-linecap": "round" }, world));
+  const nehLab = txt(world, "lab", 0, 0, "NEHEMIAH", 14);
+
+  // ================= 1: the court, the road, the days =================
+  const gCourt = el("g", {}, world);
+  el("path", { d: "M150 372 V236 Q150 212 174 212 H206 Q230 212 230 236 V318 H262 V372 M150 318 H230", fill: "none", stroke: INK, "stroke-width": 4, "stroke-linejoin": "round", "stroke-linecap": "round" }, gCourt);
+  el("path", { d: "M286 372 V326 H352 V372 M278 326 H360", fill: "none", stroke: INK, "stroke-width": 3.5, "stroke-linecap": "round" }, gCourt);
+  el("path", { d: "M306 298 H332 L328 318 Q319 324 310 318 Z M319 322 V326", fill: PAPER, stroke: INK, "stroke-width": 2.6, "stroke-linejoin": "round" }, gCourt);
+  el("line", { x1: 130, x2: 420, y1: 372, y2: 372, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gCourt);
+  const courtLab = txt(gCourt, "lab", 270, 410, "PERSIAN COURT");
+  const road = line(world, "M420 372 C520 372 560 300 660 300 S760 320 808 300", { stroke: LINE, "stroke-width": 3 });
+  const year = txt(world, "disp", 600, 230, "445 BC", 70), jeruLab = txt(world, "lab", 930, 446, "JERUSALEM");
+  const dayN = txt(world, "disp", 930, 308, "0", 78), dayLab = txt(world, "lab", 930, 342, "DAYS", 14);
+  const cityLab = txt(world, "lab", 410, 462, "THE CITY"), peopleLab = txt(world, "lab", 880, 462, "THE PEOPLE");
+  const gPeople = el("g", {}, world), people = [...Array(26)].map((_, i) => { const a = (i / 26) * Math.PI * 2, rr = 18 + (i % 4) * 17; return { x0: 720 + R() * 330, y0: 170 + R() * 230, x1: 880 + rr * Math.cos(a * 3 + i), y1: 290 + rr * Math.sin(a * 3 + i), e: el("circle", { r: 7, fill: INK }, gPeople) }; });
+  const v1 = verse(SC.cupbearer, 640, 128, 25, 84, false), v2 = verse(SC.layout, 640, 128, 25, 84, false), v3 = verse(SC.wall, 640, 156, 42, 44, true);
+  const v4 = verse(SC.poor, 640, 128, 25, 84, false), v5 = verse(SC.law, 640, 122, 23, 96, false), v6 = verse(SC.remember, 640, 170, 50, 50, true);
+  // the ending: pledge marks, most of them fading
+  const gPledge = el("g", {}, world), pledges = [...Array(9)].map((_, i) => ({ keep: i === 2 || i === 6, e: el("path", { d: `M${416 + i * 56} 124 q8 -12 14 0 t14 0`, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gPledge) }));
+  // where to start, and the close
+  const bigNum = txt(world, "disp", 300, 330, "", 130), gNames = el("g", {}, world), nameRows = [...Array(6)].map((_, i) => line(gNames, `M900 ${226 + i * 26} H${990 + ((i * 37) % 60)}`, { stroke: STONE, "stroke-width": 5 }));
+  const gDays = el("g", {}, world), dayMarks = [...Array(7)].map((_, i) => el("circle", { cx: 460 + i * 60, cy: 468, r: 9, fill: "none", stroke: INK, "stroke-width": 2.6 }, gDays)), promise = el("circle", { r: 9, fill: MUSTARD }, gDays);
+
+  F.title("Nehemiah");
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => {
+    // ----- strip -----
+    op(gStrip, up(t, A0 - 0.6, 0.8) * (1 - up(t, END + 0.5, 0.7))); draw(stripLine, up(t, A0 - 0.6, 1.4));
+    const turn = span(t, L0 + 0.6, LE + 0.3, 0.5, 0.6); op(turnMark, turn);
+    partMarks.forEach((m, i) => op(m, span(t, L1 + (LE - L1) * [0.03, 0.26, 0.46, 0.72, 0.86][i], LE + 0.4, 0.4, 0.6)));
+    ticks.forEach((tk, i) => { const k = KEY.indexOf(i + 1), lit = k >= 0 && t > keyAt(k) - 0.1, c8 = i === 7 && turn > 0.5; set(tk, { stroke: lit || c8 ? MUSTARD : STONE, "stroke-width": lit ? 4.5 : 2.5 });
+      op(nums[i], i === 0 || i === 12 ? 1 : c8 ? turn : lit ? up(t, keyAt(k) - 0.1, 0.4) : 0); });
+    // ----- the ring's place, size and strength -----
+    const rx = kf(t, [[A0, 930], [L0 - 0.9, 930], [L0 + 0.5, 410], [W0 - 0.9, 410], [W0 + 0.5, 640]]), ry = kf(t, [[A0, 290], [L0 - 0.9, 290], [L0 + 0.5, 312], [W0 - 0.9, 312], [W0 + 0.5, 300], [W2 - 1.1, 300], [W2 - 0.1, 384], [WE + 0.2, 384], [P0 + 0.6, 326], [T0 - 0.6, 326], [T0 + 0.8, 330], [R0 - 0.7, 330], [R0 + 0.7, 316], [R2 - 1.1, 316], [R2 - 0.1, 372], [RE + 0.1, 372], [ST + 0.9, 290], [CL - 0.6, 290], [CL + 0.6, 270]]);
+    const rs = kf(t, [[A0, 1.15], [L0 - 0.9, 1.15], [L0 + 0.5, 1.15], [W0 - 0.9, 1.15], [W0 + 0.5, 1.45], [W2 - 1.1, 1.45], [W2 - 0.1, 0.95], [WE + 0.2, 0.95], [P0 + 0.6, 1.4], [T0 - 0.6, 1.4], [T0 + 0.8, 1.95], [R0 - 0.7, 1.95], [R0 + 0.7, 1.5], [R2 - 1.1, 1.5], [R2 - 0.1, 0.95], [RE + 0.1, 0.95], [ST + 0.9, 1.3], [CL - 0.6, 1.3], [CL + 0.6, 1.4]]);
+    const dimPoor = up(t, P0 + 2.4, 2.6) * (1 - up(t, P1 + 3.0, 2.4));
+    const ro = up(t, A0 + 0.9, 0.9) * (1 - 0.62 * dimPoor) * kf(t, [[T0 - 0.6, 1], [T0 + 0.8, 0.12], [R0 - 0.7, 0.12], [R0 + 0.7, 1]]) * (1 - up(t, END + 0.5, 0.7));
+    op(gRing, ro); move(gRing, rx, ry, rs, 0.6 * Math.sin(t * 0.4));
+    const built = (i) => up(t, A0 + 5.6 + i * 0.3, 0.9), allBuilt = up(t, A0E - 0.6, 0.6);
+    const wk = (W0E - W0), grpAt = (i) => W0 + wk * [0.36, 0.44, 0.52, 0.6][Math.floor(i / 3)] + (i % 3) * 0.18;
+    sect.forEach((s) => { const b = s.old ? 1 : built(s.i); draw(s.e, b); op(s.e, b > 0.02 ? 1 : 0); op(s.rub, (s.old ? 0 : 1) * (1 - b) * up(t, A0 + 1.0, 0.6));
+      const hi = span(t, grpAt(s.i), grpAt(s.i) + 1.5, 0.3, 0.7) + (t < L0 - 0.5 && !s.old ? span(t, A0 + 5.6 + s.i * 0.3, A0 + 7.2 + s.i * 0.3, 0.3, 0.6) : 0) + span(t, L0 + 0.8 + s.i * 0.32, L0 + 1.8 + s.i * 0.32, 0.3, 0.5); op(s.hi, clamp(hi)); });
+    op(gate, up(t, R0 - 0.4, 0.8) * (1 - up(t, ST + 0.4, 0.8)));
+    const inWall = t > W0 - 0.6 && t < P0 + 0.9, watch = up(t, W1 - 0.2, 1.4);
+    builders.forEach((b, j) => { const v = inWall ? up(t, grpAt(b.s.i) - 0.3, 0.5) * (1 - up(t, P0 - 0.2, 0.9)) : 0; op(b.e, v); if (v <= 0) return;
+      const a = b.s.mid + (b.k ? 0.13 : -0.13), guard = b.k === 1, r = guard ? mix(72, 88, watch) : 74 + 3 * Math.sin(t * 5 + j) * (1 - 0.5 * watch); set(b.e, { cx: (r * Math.cos(a)).toFixed(1), cy: (r * Math.sin(a)).toFixed(1), r: guard ? mix(5, 6.2, watch) : 5 }); });
+    foes.forEach((f, i) => { const a = W0 + wk * 0.76 + i * 0.22, v = span(t, a, W2 - 0.4, 0.5, 0.7); op(f.e, v); op(f.l, v); draw(f.l, up(t, a + 0.2, 1.0)); });
+    const pv = span(t, P0 - 0.1, PE + 0.5, 0.6, 0.6), toFew = up(t, P0 + 2.6, 3.4), back = up(t, P1 + 2.8, 3.0);
+    poorIn.forEach((p, i) => { op(p.plot, pv); op(p.dot, pv); const k = toFew * (1 - back), wob = 1.5 * Math.sin(t * 1.2 + i); move(p.plot, mix(p.hx, p.fx + 22, k), mix(p.hy - 9, p.fy, k) + wob); set(p.dot, { cx: p.hx.toFixed(1), cy: (p.hy + 8 + wob).toFixed(1), fill: k > 0.5 ? MUTED : STONE }); });
+    nobles.forEach((n, i) => op(n, pv * up(t, P0 + 1.6 + i * 0.2, 0.6)));
+    const dv = span(t, R0 + 0.3, ST + 0.2, 0.7, 0.7) + up(t, CL - 0.3, 0.8), apart = up(t, R0 + 1.2, RE - R0 - 2) * (t < CL - 1 ? 1 : 0);
+    drift.forEach((d, i) => { op(d.e, clamp(dv)); const r = mix(d.r0, d.r1, apart) + 1.5 * Math.sin(t * 0.7 + i); set(d.e, { cx: (r * Math.cos(d.a)).toFixed(1), cy: (r * Math.sin(d.a)).toFixed(1) }); });
+    // ----- 1: court, road, days -----
+    const cv = span(t, A0 - 0.5, L0 - 0.3, 0.7, 0.8); op(gCourt, cv); op(courtLab, up(t, A0 + 1.3, 0.6)); draw(road, up(t, A0 + 3.3, 2.0)); op(road, cv);
+    op(year, span(t, A0 + 3.6, A1 + 0.4, 0.6, 0.6)); op(jeruLab, span(t, A0 + 5.0, L0 - 0.3, 0.6, 0.6));
+    const days = Math.round(52 * up(t, A0 + 5.8, A0E - A0 - 6.0)); if (dayN.textContent !== String(days)) dayN.textContent = String(days);
+    op(dayN, span(t, A0 + 5.6, L0 - 0.4, 0.5, 0.6)); op(dayLab, span(t, A0 + 6.0, L0 - 0.4, 0.5, 0.6));
+    showVerse(v1, t, A1 + 0.6, AE + 0.5, false);
+    // ----- 2: the turn at chapter eight -----
+    op(cityLab, span(t, L0 + 1.0, LE + 0.3, 0.6, 0.6)); op(peopleLab, span(t, L0 + 2.4, LE + 0.3, 0.6, 0.6));
+    const pp = span(t, L0 + 1.6, LE + 0.3, 0.6, 0.7), gather = up(t, L0 + 2.4, LE - L0 - 3.2); op(gPeople, pp);
+    if (pp > 0) people.forEach((p, i) => set(p.e, { cx: (mix(p.x0, p.x1, gather) + 2 * Math.sin(t * 0.9 + i)).toFixed(1), cy: (mix(p.y0, p.y1, gather) + 2 * Math.cos(t * 0.8 + i * 2)).toFixed(1) }));
+    showVerse(v2, t, L1 + 1.0, LE + 0.4, false);
+    // ----- 3 to 6: verses -----
+    showVerse(v3, t, W2 - 0.4, WE + 0.7, true); showVerse(v4, t, P0 + 2.0, PE + 0.3, false); showVerse(v5, t, T0 + 4.2, T1 + 2.6, false); showVerse(v6, t, R2 - 0.4, RE + 0.6, true);
+    // ----- 5: the law read with joy -----
+    const lv = span(t, T0 - 0.2, R0 - 0.1, 0.8, 0.8); op(gLaw, lv);
+    if (lv > 0) { const d1 = T0E - T0, d2 = TE - T1, sk = up(t, T0 + d1 * 0.42, d1 * 0.38), feast = up(t, T1 + 0.3, 1.2);
+      set(sun, { cx: mix(sunPath.x0, sunPath.x1, sk).toFixed(1), cy: (mix(sunPath.y0, sunPath.y1, sk) - 60 * Math.sin(Math.PI * sk)).toFixed(1) }); op(sun, span(t, T0 + d1 * 0.36, T1 + 0.6, 0.6, 0.8));
+      op(plat, up(t, T0 + 1.6, 0.8) * (1 - feast)); op(table, feast * (1 - up(t, T1 + d2 * 0.68, 0.8)));
+      crowd.forEach((c, i) => { op(c.e, up(t, T0 + 2.0 + (i % 8) * 0.07, 0.6)); if (c.ring) op(c.ring, span(t, T0 + d1 * 0.7, T1 + 0.4, 0.5, 0.6));
+        const weep = span(t, T0 + d1 * 0.84 + (i % 5) * 0.08, T1 + 0.5, 0.4, 0.6); op(c.drop, weep * 0.9); move(c.drop, c.x, c.y - 22 + 6 * ((t * 0.9 + i * 0.37) % 1));
+        const lk = up(t, T1 + 1.0 + (i % 8) * 0.16, 1.6); op(c.loaf, feast * (lk > 0 ? 1 : 0) * (1 - up(t, T1 + d2 * 0.68, 0.8))); move(c.loaf, mix(640, c.x, lk), mix(300, c.y - 20, lk)); });
+      op(sheet, up(t, T1 + d2 * 0.66, 0.8)); sigs.forEach((s, i) => draw(s, up(t, T1 + d2 * 0.72 + i * 0.1, 0.5))); }
+    // ----- 6: an ending without triumph -----
+    const plv = span(t, R0 + 1.0, R2 - 0.6, 0.7, 0.6); op(gPledge, plv); pledges.forEach((p, i) => op(p.e, p.keep ? 1 : 1 - 0.88 * up(t, R0 + 4.6 + i * 0.3, 1.3)));
+    // ----- Nehemiah's dot -----
+    let nx = 372, ny = 352, nv = 0, ns = 1;
+    if (t < L0) { const go = up(t, A0 + 4.2, 2.6), pt = road.getPointAtLength(road.getTotalLength() * go), inn = up(t, A0 + 6.6, 1.2); nx = go > 0 ? mix(pt.x, 930, inn) : 372; ny = go > 0 ? mix(pt.y, 200, inn) : 352; nv = up(t, A0 + 0.6, 0.6) * (1 - up(t, L0 - 0.8, 0.6)); ns = mix(1, 0.7, inn); }
+    else if (t < P0 - 0.4) { nx = rx; ny = ry; nv = span(t, W0 + 0.8, W2 - 0.9, 0.6, 0.6); ns = 0.85; }
+    else if (t < T0) { nx = rx + 12 * rs; ny = ry - 4 * rs; nv = span(t, P1 - 0.2, PE + 0.4, 0.7, 0.6); ns = 0.85; }
+    else if (t < ST) { const walk = up(t, R0 + 1.8, 3.6); nx = mix(rx - 290, rx - 30 * rs, walk); ny = ry; nv = span(t, R0 + 1.4, R2 - 0.9, 0.6, 0.7); ns = 0.8; }
+    else { nx = rx; ny = ry; nv = span(t, ST + 0.9, CL - 0.3, 0.6, 0.6); ns = 0.85; }
+    op(neh, nv); move(neh, nx, ny + 1.5 * Math.sin(t * 0.9), ns);
+    const labV = t < L0 ? span(t, A0 + 1.0, A0 + 4.4, 0.5, 0.5) : 0; op(nehLab, labV); set(nehLab, { x: nx + 6, y: ny - 34 });
+    const praying = (t > A1 && t < AE + 0.4 ? 1 : 0) + (t > ST + (STE - ST) * 0.56 && t < STE + 0.3 ? 1 : 0) + (t > W1 - 0.2 && t < W2 - 1 ? 1 : 0);
+    prayers.forEach((p, i) => { const k = ((t * 0.5 + i * 0.25) % 1), y = ny - 26 - 54 * k, x = nx + (i - 1.5) * 9; p.setAttribute("d", `M${x.toFixed(1)} ${y.toFixed(1)} v-14`); op(p, praying * nv * Math.sin(Math.PI * k)); });
+    // ----- 7: where to start -----
+    let cur = -1; KEY.forEach((_, i) => { if (t > keyAt(i) - 0.1) cur = i; });
+    const bn = cur >= 0 ? String(KEY[cur]) : ""; if (bigNum.textContent !== bn) bigNum.textContent = bn;
+    op(bigNum, cur >= 0 ? Math.min(up(t, keyAt(cur) - 0.1, 0.3), 1 - up(t, ST + (STE - ST) * 0.6, 0.6)) : 0);
+    const nmv = span(t, ST + (STE - ST) * 0.8, CL - 0.3, 0.6, 0.6); op(gNames, nmv); nameRows.forEach((r, i) => draw(r, up(t, ST + (STE - ST) * 0.8 + i * 0.14, 0.6)));
+    // ----- 8: ordinary weeks -----
+    const cl = up(t, CL - 0.2, 0.8) * (1 - up(t, END + 0.5, 0.7)); op(gDays, cl);
+    if (cl > 0) { const day = clamp((t - CL) / (END + 0.6 - CL)) * 6, i0 = Math.floor(day), f = ease(day - i0); set(promise, { cx: (460 + (i0 + f) * 60).toFixed(1), cy: (468 - 22 * Math.sin(Math.PI * f)).toFixed(1) }); }
+  };
+});
+</script>
+</body></html>

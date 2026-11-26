@@ -1,0 +1,162 @@
+{
+ "length": 123.86,
+ "chapters": [
+  {
+   "id": "prayer-book",
+   "kicker": "The prayer book of the Bible",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 15.44,
+   "lines": [
+    {
+     "text": "The Psalms are the prayer book of the Bible: a hundred and fifty poems.",
+     "start": 2.6,
+     "end": 6.52
+    },
+    {
+     "text": "Other parts of the Bible are God's word to his people. The Psalms are also his people's words to him, which he has taken into Scripture.",
+     "start": 7.14,
+     "end": 14.54
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 14.64,
+   "end": 28.18,
+   "lines": [
+    {
+     "text": "They aren't one long list. Two gateway psalms open the collection. Five books follow. And five psalms of Hallelujah close it.",
+     "start": 15.54,
+     "end": 23.6
+    },
+    {
+     "text": "Each of the first four books ends with a short blessing of God.",
+     "start": 24.14,
+     "end": 27.28
+    }
+   ]
+  },
+  {
+   "id": "lament",
+   "kicker": "Watch for: honest prayer",
+   "level": 0.5,
+   "start": 27.38,
+   "end": 49.9,
+   "lines": [
+    {
+     "text": "The largest group of psalms are laments. They complain to God about enemies, about guilt, and about God's own apparent absence, and they do it inside the covenant.",
+     "start": 28.28,
+     "end": 38.1
+    },
+    {
+     "text": "How long, O LORD? Will You forget me forever?",
+     "start": 38.58,
+     "end": 41.78
+    },
+    {
+     "text": "Most turn toward trust. A few, like Psalm eighty-eight, never do. Protest can be a form of faith.",
+     "start": 42.4,
+     "end": 49.0
+    }
+   ]
+  },
+  {
+   "id": "praise",
+   "kicker": "Watch for: praise",
+   "level": 0.65,
+   "start": 49.1,
+   "end": 65.88,
+   "lines": [
+    {
+     "text": "Praise in the Psalms is a response. To God's work in creation. To his rescue of Israel. To his help in one crisis.",
+     "start": 50.0,
+     "end": 57.6
+    },
+    {
+     "text": "One person's rescue becomes the whole community's reason to worship.",
+     "start": 58.1,
+     "end": 61.6
+    },
+    {
+     "text": "Let everything that has breath praise the LORD!",
+     "start": 62.06,
+     "end": 64.98
+    }
+   ]
+  },
+  {
+   "id": "king",
+   "kicker": "Watch for: the king",
+   "level": 0.8,
+   "start": 65.08,
+   "end": 81.76,
+   "lines": [
+    {
+     "text": "Under every lament and every hymn lies one conviction: the LORD reigns.",
+     "start": 65.98,
+     "end": 71.22
+    },
+    {
+     "text": "Book Three ends by asking how God's covenant with David can stand when the crown lies in the dust. Book Four answers by proclaiming that the LORD is king.",
+     "start": 71.78,
+     "end": 80.86
+    }
+   ]
+  },
+  {
+   "id": "jesus",
+   "kicker": "Watch for: the prayers of Jesus",
+   "level": 0.9,
+   "start": 80.96,
+   "end": 101.78,
+   "lines": [
+    {
+     "text": "The Gospels show Jesus praying the psalms in his suffering. From the cross he cries the opening of Psalm twenty-two.",
+     "start": 81.86,
+     "end": 89.56
+    },
+    {
+     "text": "My God, my God, why have You forsaken me?",
+     "start": 89.8,
+     "end": 92.62
+    },
+    {
+     "text": "Christians since the early church have prayed the Psalms both as their own prayers and as the prayers of Christ.",
+     "start": 93.26,
+     "end": 100.88
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 100.98,
+   "end": 113.38,
+   "lines": [
+    {
+     "text": "Start at the gateway, with Psalm one. The key psalms are one, two, twenty-two, twenty-three, fifty-one, seventy-three, eighty-nine, and a hundred and ten.",
+     "start": 101.88,
+     "end": 112.48
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 112.58,
+   "end": 117.759,
+   "lines": [
+    {
+     "text": "Read each one whole, slowly, and out loud.",
+     "start": 113.48,
+     "end": 116.859
+    }
+   ]
+  }
+ ]
+}

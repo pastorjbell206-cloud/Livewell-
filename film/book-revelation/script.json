@@ -1,0 +1,128 @@
+{
+  "title": "Revelation: the Lamb on the throne",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-revelation",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "unveil",
+      "kicker": "An unveiling",
+      "level": 0.2,
+      "lines": [
+        "Revelation is the last book of the Bible. Its title means an unveiling.",
+        "It was written to real churches under real pressure, some in danger, some comfortable and compromised. It shows them their world as heaven sees it.",
+        "Do not be afraid. I am the First and the Last."
+      ],
+      "scripture": {
+        "reference": "Revelation 1:17",
+        "text": "Do not be afraid. I am the First and the Last",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "John sees the risen Christ and receives messages for seven churches. Then a door opens in heaven: God's throne, and a Lamb who opens a sealed scroll.",
+        "A sequence of visions follows, and the book ends with a new heaven and a new earth."
+      ],
+      "scripture": {
+        "reference": "Revelation 1:3",
+        "text": "Blessed is the one who reads aloud the words of this prophecy",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "throne",
+      "kicker": "Watch for: the throne",
+      "level": 0.5,
+      "lines": [
+        "The throne is the book's central image. Whatever chaos appears on earth, the vision of chapter four shows the One seated on the throne, worshiped day and night.",
+        "The empires that claim ultimate power are not ultimate."
+      ],
+      "scripture": {
+        "reference": "Revelation 4:8",
+        "text": "Holy, Holy, Holy, is the Lord God Almighty, who was and is and is to come!",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "lamb",
+      "kicker": "Watch for: the Lamb",
+      "level": 0.7,
+      "lines": [
+        "John hears of the Lion of the tribe of Judah. He looks, and sees a Lamb who was slain. That reversal defines the book.",
+        "Worthy is the Lamb, who was slain.",
+        "Christ conquers by sacrifice, and his people overcome the same way."
+      ],
+      "scripture": {
+        "reference": "Revelation 5:12",
+        "text": "Worthy is the Lamb, who was slain",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "Readers follow four main approaches. Some read most of it as fulfilled in the first centuries. Some as a map of church history. Some as events still to come. Some as the conflict of every age.",
+        "Many combine them, and faithful Christians hold each. This film takes no side and names no date."
+      ],
+      "scripture": {
+        "reference": "Revelation 14:12",
+        "text": "Here is a call for the perseverance of the saints",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "new",
+      "kicker": "Watch for: all things new",
+      "level": 0.85,
+      "lines": [
+        "Revelation doesn't flinch from judgment on evil, but it doesn't end there. The goal is a renewed creation in which God dwells with his people, death is gone, and the nations walk in the light of the Lamb.",
+        "He will wipe away every tear from their eyes."
+      ],
+      "scripture": {
+        "reference": "Revelation 21:4",
+        "text": "He will wipe away every tear from their eyes",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter one. The key chapters are one, two, five, twelve, thirteen, twenty, twenty-one, and twenty-two.",
+        "Read its symbols by the Old Testament. The book's own interest is less in timetables than in worship, endurance, and hope."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Come, Lord Jesus!"
+      ],
+      "scripture": {
+        "reference": "Revelation 22:20",
+        "text": "Come, Lord Jesus!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "The Lamb on the throne.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

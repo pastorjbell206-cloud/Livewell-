@@ -1,0 +1,138 @@
+{
+ "length": 74.76,
+ "chapters": [
+  {
+   "id": "caesar",
+   "kicker": "Rome, the first century",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 13.42,
+   "lines": [
+    {
+     "text": "Two thousand years ago, the most powerful man on earth was called Caesar.",
+     "start": 2.6,
+     "end": 6.72
+    },
+    {
+     "text": "His face was on the coins. His armies were on the roads. And people called him lord.",
+     "start": 7.3,
+     "end": 12.52
+    }
+   ]
+  },
+  {
+   "id": "three-words",
+   "kicker": "Three words",
+   "level": 0.4,
+   "start": 12.62,
+   "end": 27.5,
+   "lines": [
+    {
+     "text": "Then a small group of people started saying three words. Jesus is Lord.",
+     "start": 13.52,
+     "end": 18.06
+    },
+    {
+     "text": "Today that sounds like something you'd hear in church. Back then it could get you killed.",
+     "start": 18.78,
+     "end": 23.28
+    },
+    {
+     "text": "Because if Jesus is Lord, Caesar isn't.",
+     "start": 23.88,
+     "end": 26.6
+    }
+   ]
+  },
+  {
+   "id": "prayer",
+   "kicker": "The prayer Jesus taught",
+   "level": 0.6,
+   "start": 26.7,
+   "end": 35.9,
+   "lines": [
+    {
+     "text": "Jesus taught his followers to pray like this.",
+     "start": 27.6,
+     "end": 29.8
+    },
+    {
+     "text": "Your kingdom come, Your will be done, on earth as it is in heaven.",
+     "start": 30.32,
+     "end": 35.0
+    }
+   ]
+  },
+  {
+   "id": "notice",
+   "kicker": "Look at what it asks",
+   "level": 0.75,
+   "start": 35.1,
+   "end": 45.48,
+   "lines": [
+    {
+     "text": "Look at what that prayer asks. It doesn't ask God to bless my side.",
+     "start": 36.0,
+     "end": 39.84
+    },
+    {
+     "text": "It asks for his kingdom to come. Which means mine has to make room.",
+     "start": 40.34,
+     "end": 44.58
+    }
+   ]
+  },
+  {
+   "id": "gift",
+   "kicker": "A gift, not a god",
+   "level": 0.9,
+   "start": 44.68,
+   "end": 57.42,
+   "lines": [
+    {
+     "text": "Every nation is tempted to borrow God for its own story. Ours is too. So am I.",
+     "start": 45.58,
+     "end": 50.9
+    },
+    {
+     "text": "You can love your country. It's a good gift. But a good gift makes a terrible god.",
+     "start": 51.52,
+     "end": 56.52
+    }
+   ]
+  },
+  {
+   "id": "lasts",
+   "kicker": "The one that lasts",
+   "level": 0.95,
+   "start": 56.62,
+   "end": 64.4,
+   "lines": [
+    {
+     "text": "Nations rise and nations fall. Rome did.",
+     "start": 57.52,
+     "end": 59.66
+    },
+    {
+     "text": "His kingdom is the one that can't be shaken.",
+     "start": 60.2,
+     "end": 63.5
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 63.6,
+   "end": 68.662,
+   "lines": [
+    {
+     "text": "So here's the question. Whose kingdom are you praying for?",
+     "start": 64.5,
+     "end": 67.762
+    }
+   ]
+  }
+ ]
+}

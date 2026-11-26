@@ -1,0 +1,121 @@
+{
+  "title": "Nehemiah: rebuilding the walls, and a people",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-nehemiah",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "cupbearer",
+      "kicker": "The king's cupbearer",
+      "level": 0.2,
+      "lines": [
+        "Nehemiah was a Jewish official at the Persian court. In 445 BC he came to Jerusalem and rebuilt its broken walls in fifty-two days.",
+        "Much of the book is his own account, full of quick prayers and strong feeling. He's a layman for whom prayer and planning are partners."
+      ],
+      "scripture": {
+        "reference": "Nehemiah 1:4",
+        "text": "When I heard these words, I sat down and wept.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The book turns at chapter eight, from building the city to building the people.",
+        "First the burden and the night ride. Then the wall rebuilt against opposition. Then the law read and the covenant renewed, the wall dedicated, and the last reforms."
+      ],
+      "scripture": {
+        "reference": "Nehemiah 2:18",
+        "text": "and they set their hands to this good work.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "wall",
+      "kicker": "Watch for: pray, and keep watch",
+      "level": 0.5,
+      "lines": [
+        "Chapter three names who built each section: priests, goldsmiths, perfumers, a ruler with his daughters. Then come mockery, threats, and plots.",
+        "Nehemiah's answer is the book in one sentence.",
+        "So we prayed to our God and posted a guard against them day and night."
+      ],
+      "scripture": {
+        "reference": "Nehemiah 4:9",
+        "text": "So we prayed to our God and posted a guard against them day and night.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "poor",
+      "kicker": "Watch for: justice for the poor",
+      "level": 0.65,
+      "lines": [
+        "In the middle of the work, poor families cry out. Famine, debt, and the king's tax have cost them their fields and even their children.",
+        "Nehemiah confronts the nobles, and they give back what they took. A rebuilt city with an unjust economy isn't a restored city."
+      ],
+      "scripture": {
+        "reference": "Nehemiah 5:9",
+        "text": "What you are doing is not right.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "law",
+      "kicker": "Watch for: the law read with joy",
+      "level": 0.9,
+      "lines": [
+        "The high point isn't the wall. It's the reading of the law. Ezra reads from daybreak until noon, the Levites explain it, and the people weep.",
+        "They're told to feast and share, because the joy of the LORD is their strength. Confession and a signed pledge follow."
+      ],
+      "scripture": {
+        "reference": "Nehemiah 8:8",
+        "text": "explaining it and giving insight, so that the people could understand what was being read.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "remember",
+      "kicker": "Watch for: an ending without triumph",
+      "level": 0.7,
+      "lines": [
+        "The ending has no triumph. Nehemiah comes back to find nearly every promise broken, and he acts, sometimes harshly. The text reports it without comment.",
+        "Nothing in it gives anyone today a warrant to strike or harm anyone. Walls can't make a people faithful by themselves.",
+        "Remember me, O my God, with favor."
+      ],
+      "scripture": {
+        "reference": "Nehemiah 13:31",
+        "text": "Remember me, O my God, with favor.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapters one and two. Then the key chapters: five, eight, nine, and thirteen. Listen for Nehemiah's quick prayers, and don't skip the lists of names."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Promises made in a great assembly have to be kept in ordinary weeks."
+      ],
+      "titleCard": [
+        "Promises have to be kept in ordinary weeks.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

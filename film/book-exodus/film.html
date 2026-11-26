@@ -1,0 +1,180 @@
+<!doctype html>
+<!-- "Exodus: out of slavery, to God". A strip of the book's 40 chapters runs along the bottom for the whole
+     film. Above it: a wall of bricks and the groaning that rises from it; the road out and the one mountain;
+     the bush and the name; a marked doorway and a sea standing open; two tablets given after the rescue; a
+     tent that the calf nearly ends, and the glow that fills it.
+     People are dots. God is never drawn. The deaths of the Passover night and at the sea are named by the
+     voice and never shown. Chapter boundaries (checked in client/public/bible/text/exodus/): Sinai from 19:1-2;
+     the tabernacle in chapters 25 to 31 and 35 to 40; the calf in 32.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Exodus: out of slavery, to God</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const R0 = S("rescue", 0), R1 = S("rescue", 1), R2 = S("rescue", 2), L0 = S("layout", 0), L1 = S("layout", 1), LE = E("layout");
+  const N0 = S("name", 0), N1 = S("name", 1), N2 = S("name", 2), NE = E("name"), P0 = S("passover", 0), P1 = S("passover", 1), PE = E("passover");
+  const W0 = S("law", 0), W1 = S("law", 1), WE = E("law"), T0 = S("tent", 0), T1 = S("tent", 1), T2 = S("tent", 2), TE = E("tent");
+  const ST0 = S("start", 0), ST0E = E("start", 0), ST1 = S("start", 1), STE = E("start"), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(40);
+  // a verse from script.json, wrapped, with its reference under it
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), rows = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { rows.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); rows.push(cur);
+    const lh = Math.round(size * 1.18), ts = rows.map((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    const ref = txt(g, "lab", cx, y + (rows.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return { g, ts, ref }; };
+
+  // ================= the mountain and the land (layout, law) =================
+  const gLand = el("g", {}, world);
+  const mtn = el("path", { d: "M650 452 L792 236 L832 276 L876 176 L936 262 L972 236 L1092 452 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gLand);
+  const sinaiLab = txt(gLand, "lab", 872, 490, "SINAI");
+  const ground = line(world, "M-20 452 H1300", { stroke: INK, "stroke-width": 3 });
+
+  // ================= 1: the bricks, the loads, the groaning =================
+  const gWall = el("g", {}, world), bricks = [];
+  for (let r = 0; r < 5; r++) for (let c = 0; c < 15; c++) { const x = 180 + c * 62 + (r % 2) * 31 - 15, y = 420 - r * 30; if (x > 1090 || x < 165) continue; bricks.push({ r, c, e: el("rect", { x, y, width: 58, height: 26, rx: 2, fill: WARM, stroke: INK, "stroke-width": 2 }, gWall) }); }
+  const egyptLab = txt(world, "lab", 356, 490, "EGYPT");
+  const gCarry = el("g", {}, world), carriers = [...Array(8)].map((_, j) => { const g = el("g", {}, gCarry); el("rect", { x: -9, y: -31, width: 18, height: 14, fill: WARM, stroke: INK, "stroke-width": 2 }, g); el("circle", { r: 9, cy: -9, fill: INK }, g); return { g, j }; });
+  const gGroan = el("g", {}, world), groans = [...Array(16)].map(() => ({ x: 200 + R() * 880, ph: R(), sp: 0.2 + R() * 0.1, e: el("path", { stroke: STONE, "stroke-width": 2, "stroke-linecap": "round" }, gGroan) }));
+  const answer = line(world, "M1150 96 V452", { stroke: MUSTARD, "stroke-width": 5 });
+  const v1 = verse(SC.rescue, 620, 166, 46, 48, true);
+
+  // ================= 2: the road out =================
+  const gRoad = el("g", {}, world), road = line(gRoad, "M352 446 C420 446 430 400 492 404 S560 440 612 426 S650 440 668 446", { stroke: INK, "stroke-width": 3 });
+  const dunes = [[440, 440], [520, 424], [585, 444]].map(([x, y]) => line(gRoad, `M${x - 34} ${y} Q${x} ${y - 22} ${x + 34} ${y}`, { stroke: LINE, "stroke-width": 2.5 }));
+
+  // ================= 3: the bush and the name =================
+  const gBush = el("g", {}, world), flames = [[-52, -62, 1], [-8, -96, 1.3], [38, -70, 1.1], [70, -30, 0.8], [-78, -22, 0.8]].map(([x, y, s]) => ({ x, y, s, e: el("path", { d: "M0 0 C-22 -22 -10 -46 0 -70 C10 -46 22 -22 0 0 Z", fill: MUSTARD }, gBush) }));
+  el("path", { d: "M-6 70 L-10 20 L10 20 L6 70 Z", fill: INK }, gBush);
+  [[-48, -6, 40], [0, -34, 46], [48, -8, 40], [-22, 16, 36], [26, 18, 36]].forEach(([x, y, r]) => el("circle", { cx: x, cy: y, r, fill: CHAR }, gBush));
+  const gName = el("g", {}, world), nameT = txt(gName, "disp", 640, 286, `“${SC.name.scripture.text}”`, 118), nameR = txt(gName, "lab", 640, 340, `${SC.name.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`);
+  const gPh = el("g", {}, world); el("path", { d: "M-22 -22 L-15 -86 L15 -86 L22 -22 Z", fill: INK }, gPh); el("rect", { x: -17, y: -60, width: 34, height: 7, fill: MUSTARD }, gPh); el("circle", { r: 27, fill: INK }, gPh);
+  const phQ = txt(world, "disp", 1010, 330, "?", 110, { fill: STONE }), phLab = txt(world, "lab", 930, 490, "PHARAOH");
+  const plagues = [...Array(10)].map((_, i) => el("rect", { x: 452 + i * 36, width: 10, height: 44, rx: 5, fill: INK }, world));
+
+  // ================= 4: the marked door, the open sea =================
+  const gDoor = el("g", {}, world);
+  el("path", { d: "M176 452 V214 H444 V452", fill: "none", stroke: LINE, "stroke-width": 2.5 }, gDoor);
+  const doorFrame = line(gDoor, "M250 452 V262 H370 V452", { stroke: INK, "stroke-width": 4 });
+  const marks = [line(gDoor, "M250 262 H370", { stroke: MUSTARD, "stroke-width": 9 }), line(gDoor, "M250 268 V350", { stroke: MUSTARD, "stroke-width": 9 }), line(gDoor, "M370 268 V350", { stroke: MUSTARD, "stroke-width": 9 })];
+  const stars = [...Array(16)].map(() => el("circle", { cx: 120 + R() * 1040, cy: 112 + R() * 90, r: 1.5 + R() * 1.6, fill: STONE }, gDoor));
+  const gSea = el("g", {}, world), seaRows = [...Array(7)].map(() => [el("path", { stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gSea), el("path", { stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gSea)]);
+  const wallL = el("line", { stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gSea), wallR = el("line", { stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gSea);
+  const gWalk = el("g", {}, world), walkers = [...Array(12)].map((_, j) => ({ j, e: el("circle", { r: 8.5, fill: INK }, gWalk) }));
+  const v4 = verse(SC.passover, 640, 148, 31, 80, false);
+
+  // ================= 5: the law, given second; one word, two masters =================
+  const gLaw = el("g", {}, world);
+  [[150, 200], [262, 312]].forEach(([a, b]) => el("rect", { x: a, y: 342, width: b - a, height: 110, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, gLaw));
+  const camp5 = [...Array(12)].map((_, i) => el("circle", { cx: 452 + (i % 6) * 30 + (R() - 0.5) * 8, cy: 438 - Math.floor(i / 6) * 26, r: 8.5, fill: INK }, gLaw));
+  const pathIn = line(gLaw, "M206 446 H436", { stroke: STONE, "stroke-width": 2 });
+  const tablets = [0, 1].map((i) => { const g = el("g", {}, gLaw); el("path", { d: "M-36 60 V-30 Q-36 -62 0 -62 Q36 -62 36 -30 V60 Z", fill: PAPER, stroke: INK, "stroke-width": 3 }, g); [-28, -10, 8, 26].forEach((y) => el("line", { x1: -20, x2: 20, y1: y, y2: y, stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, g)); move(g, 498 + i * 84, 296); return g; });
+  const rescLab = txt(gLaw, "lab", 300, 490, "ALREADY RESCUED"), lawLab = txt(gLaw, "lab", 540, 490, "THEN THE LAW");
+  const ladder = el("g", {}, gLaw); el("path", { d: "M704 452 L770 250 M740 452 L806 250", fill: "none", stroke: INK, "stroke-width": 3.5, "stroke-linecap": "round" }, ladder); [0.15, 0.35, 0.55, 0.75, 0.92].forEach((k) => el("line", { x1: 704 + 66 * k, y1: 452 - 202 * k, x2: 740 + 66 * k, y2: 452 - 202 * k, stroke: INK, "stroke-width": 3 }, ladder));
+  const noLadder = line(gLaw, "M690 300 L822 408", { stroke: MUSTARD, "stroke-width": 5 });
+  const v5 = verse(SC.law, 640, 140, 29, 62, false);
+  const gChain = el("g", {}, world), sideLinks = [-2, -1, 1, 2].map((i) => el("ellipse", { cx: 640 + i * 118, cy: 320, rx: 74, ry: 40, fill: "none", stroke: INK, "stroke-width": 9 }, gChain));
+  const shackle = el("path", { fill: "none", "stroke-width": 11, "stroke-linecap": "round" }, gChain), serveLab = txt(gChain, "lab", 640, 424, "TO SERVE", 20);
+
+  // ================= 6 to 8: the tent =================
+  const gTent = el("g", {}, world), gCampT = el("g", {}, world);
+  const glow = [0, 1, 2].map((i) => el("rect", { x: -120 - i * 26, y: -66 - i * 22, width: 240 + i * 52, height: 132 + i * 44, rx: 12 + i * 10, fill: MUSTARD }, gTent));
+  const court = [...Array(30)].map((_, i) => { const per = 2 * (460 + 220), d = (i / 30) * per; let x, y; if (d < 460) { x = -230 + d; y = -110; } else if (d < 680) { x = 230; y = -110 + (d - 460); } else if (d < 1140) { x = 230 - (d - 680); y = 110; } else { x = -230; y = 110 - (d - 1140); } return el("circle", { cx: x, cy: y, r: 5, fill: INK }, gTent); });
+  const courtLine = line(gTent, "M-230 -110 H230 V110 H-230 Z", { stroke: STONE, "stroke-width": 1.8 });
+  const tentBox = el("rect", { x: -120, y: -66, width: 240, height: 132, fill: PAPER, stroke: INK, "stroke-width": 3.5 }, gTent), tentWall = line(gTent, "M44 -66 V66", { stroke: INK, "stroke-width": 3 });
+  const cloth = [-36, 0, 36].map((y) => line(gTent, `M-120 ${y} H120`, { stroke: LINE, "stroke-width": 2 })), inner = el("rect", { x: 46, y: -64, width: 72, height: 128, fill: MUSTARD }, gTent);
+  const campT = [...Array(28)].map((_, i) => { const a = (i / 28) * Math.PI * 2; return { a, e: el("circle", { r: 7.5, fill: INK }, gCampT) }; });
+  const calf = el("g", {}, world); el("path", { d: "M-30 -6 H22 L30 -22 L40 -20 L38 -2 L30 2 V26 H22 V8 H-16 V26 H-24 V6 Q-34 4 -30 -6 Z", fill: MUSTARD, stroke: INK, "stroke-width": 2, "stroke-linejoin": "round" }, calf);
+  const moses = el("circle", { r: 13, fill: INK }, world), mosesLab = txt(world, "lab", 1040, 474, "MOSES");
+  const pleas = [...Array(5)].map((_, i) => ({ dx: (i - 2) * 12, ph: R(), e: el("path", { stroke: STONE, "stroke-width": 2.2, "stroke-linecap": "round" }, world) }));
+  const v6 = verse(SC.tent, 640, 146, 50, 60, true);
+
+  // ================= the strip of forty chapters =================
+  const gStrip = el("g", {}, world), SX = (c) => 160 + (c - 1) * (960 / 39), SY = 528;
+  const shadeA = el("rect", { y: SY - 15, height: 30, rx: 5, fill: STONE }, gStrip), shadeB = [[25, 31], [35, 40]].map(([a, b]) => ({ a, b, e: el("rect", { y: SY - 15, height: 30, rx: 5, fill: MUSTARD }, gStrip) }));
+  const ticks = [...Array(40)].map((_, i) => ({ c: i + 1, e: el("line", { stroke: INK, "stroke-linecap": "round" }, gStrip), n: txt(gStrip, "lab", 0, SY + 30, String(i + 1), 13, { "letter-spacing": "0.5" }) }));
+  const KEYS = [3, 12, 14, 19, 20, 32, 34, 40], KW = [8, 9, 10, 11, 12, 13, 14, 16].map((w) => ST0 + (ST0E - ST0) * (w / 17) - 0.15);
+
+  const drawStrip = (t) => {
+    op(gStrip, up(t, R0 - 0.6, 0.8) * (1 - up(t, END + 0.5, 0.7)));
+    const gap = 16 * span(t, L0 + 0.2, N0 - 0.3, 0.8), X = (c) => SX(c) + (c >= 19 ? gap : -gap) * 0.5;
+    ticks.forEach((k) => { const ki = KEYS.indexOf(k.c), lit = ki >= 0 ? up(t, KW[ki], 0.4) : 0, one = k.c === 1 ? up(t, ST0 + 0.6, 0.4) : 0, x = X(k.c), h = 7 + 8 * Math.max(lit, one) + 3 * up(t, R0 - 0.5 + k.c * 0.03, 0.4);
+      set(k.e, { x1: x.toFixed(1), x2: x.toFixed(1), y1: (SY - h).toFixed(1), y2: (SY + h).toFixed(1), stroke: Math.max(lit, one) > 0.5 ? "#B08A12" : INK, "stroke-width": (2 + 2.2 * Math.max(lit, one)).toFixed(2) });
+      const ends = (k.c === 1 || k.c === 40) ? up(t, R0, 0.6) : 0, mid = (k.c === 18 || k.c === 19) ? span(t, L0 + 0.8, N0 - 0.3, 0.5) : 0;
+      k.n.setAttribute("x", x.toFixed(1)); op(k.n, Math.max(ends, mid, lit, one)); });
+    const sa = span(t, L1 - 0.1, N0 - 0.3, 0.6) * 0.22; op(shadeA, sa); set(shadeA, { x: (X(1) - 9).toFixed(1), width: (X(18) - X(1) + 18).toFixed(1) });
+    shadeB.forEach((s) => { const o = Math.max(span(t, L1 + 0.9, N0 - 0.3, 0.6) * 0.42, span(t, ST1 + 0.2, CL + 1.5, 0.6, 0.9) * (0.4 + 0.12 * Math.sin(t * 2.2))); op(s.e, o); set(s.e, { x: (X(s.a) - 9).toFixed(1), width: (X(s.b) - X(s.a) + 18).toFixed(1) }); });
+  };
+  const drawRescue = (t) => {
+    draw(ground, up(t, R0 - 0.9, 1.6)); op(ground, 1 - up(t, T0 - 0.6, 0.8));
+    const shrink = up(t, L0 - 0.4, 1.4), wv = (1 - up(t, N0 - 0.7, 0.6)); op(gWall, t < N0 ? wv : 0);
+    if (wv > 0) { gWall.setAttribute("transform", `translate(180 446) scale(${mix(1, 0.38, shrink).toFixed(4)}) translate(-180 -446)`);
+      bricks.forEach((b) => op(b.e, up(t, R0 - 0.4 + b.r * 1.0 + b.c * 0.11, 0.35))); }
+    op(egyptLab, span(t, L0 + 1.0, N0 - 0.5, 0.6));
+    const cv = up(t, R0 + 0.8, 0.8) * (1 - up(t, L0 - 0.3, 0.8)); op(gCarry, cv);
+    if (cv > 0) carriers.forEach((c) => { const u = ((t * 0.045 + c.j / 8) % 1); move(c.g, 170 + u * 940, 452 - 1.5 * Math.abs(Math.sin(t * 4 + c.j))); op(c.g, Math.min(1, u * 9, (1 - u) * 9)); });
+    const gv = up(t, R1 - 0.2, 0.8) * (1 - up(t, L0 - 0.4, 0.8)); op(gGroan, gv);
+    if (gv > 0) { const top = mix(110, 300, up(t, R2 - 0.5, 0.9)); groans.forEach((g) => { const k = (t * g.sp + g.ph) % 1, y = mix(300, top, k) + (top > 200 ? 0 : 0), w = 8 * Math.sin(k * 8 + g.ph * 6);
+      const yy = t < R2 - 0.5 ? mix(300, 110, k) : mix(300, 286, k); g.e.setAttribute("d", `M${(g.x + w).toFixed(1)} ${yy.toFixed(1)} q7 -12 0 -24`); g.e.setAttribute("opacity", (0.7 * Math.sin(Math.PI * k) * (t < R2 - 0.5 ? 1 : 1 - up(t, R2 - 0.5, 0.8))).toFixed(3)); }); }
+    const av = t > R2 && t < L0 + 1.2; op(answer, av ? 1 - up(t, L0 - 0.3, 0.9) : 0); if (av) draw(answer, up(t, R2 + 0.6, 2.6));
+    const vv = span(t, R2 - 0.3, L0 - 0.1, 0.5, 0.6); op(v1.g, vv); if (vv > 0) { v1.ts.forEach((x, i) => op(x, up(t, R2 - 0.2 + i * 2.2, 0.7))); op(v1.ref, up(t, R2 + 3.6, 0.6)); }
+  };
+  const drawLayout = (t) => {
+    const a = span(t, L0 + 2.6, N0 - 0.5, 0.9, 0.6), b = span(t, W0 - 0.5, W1 - 0.1, 0.8, 0.7); op(gLand, Math.max(a, b)); mtn.setAttribute("transform", `translate(0 ${(26 * (1 - Math.max(up(t, L0 + 2.6, 1.2) * (t < N0 ? 1 : 0), up(t, W0 - 0.5, 1.1) * (t > N0 ? 1 : 0)))).toFixed(1)})`);
+    op(sinaiLab, Math.max(span(t, L0 + 6.6, N0 - 0.5, 0.6), span(t, W0 + 0.6, W1 - 0.3, 0.6)));
+    const rv = span(t, L0 + 1.2, N0 - 0.5, 0.4, 0.6); op(gRoad, rv); if (rv > 0) { draw(road, up(t, L0 + 1.4, 3.0)); dunes.forEach((d, i) => draw(d, up(t, L0 + 3.0 + i * 0.4, 0.8))); }
+  };
+  const drawName = (t) => {
+    const bv = up(t, N0 - 0.5, 0.8) * (1 - up(t, P0 - 0.7, 0.6)); op(gBush, bv);
+    if (bv > 0) { const big = up(t, N1 - 0.5, 0.9), side = up(t, N2 - 0.3, 1.2);
+      move(gBush, mix(640, 300, side), mix(mix(340, 418, big), 372, side), mix(mix(1.5, 0.52, big), 0.85, side) * (0.6 + 0.4 * up(t, N0 - 0.5, 1.4)));
+      flames.forEach((f, i) => { const s = f.s * (0.85 + 0.2 * Math.sin(t * 3.1 + i * 1.9)) * up(t, N0 + 0.3 + i * 0.2, 0.8); f.e.setAttribute("transform", `translate(${(f.x + 3 * Math.sin(t * 2.3 + i)).toFixed(1)} ${f.y}) scale(${s.toFixed(3)} ${(s * (1 + 0.12 * Math.sin(t * 4 + i))).toFixed(3)})`); }); }
+    const nv = span(t, N1 - 0.25, N2 + 0.3, 0.4, 0.6); op(gName, nv); if (nv > 0) { nameT.setAttribute("y", (286 + 10 * (1 - up(t, N1 - 0.25, 0.7))).toFixed(1)); op(nameR, up(t, N1 + 0.7, 0.5)); }
+    const pv = up(t, N2 + 0.1, 0.7) * (1 - up(t, P0 - 0.7, 0.6)); op(gPh, pv); move(gPh, 930, 420 + 1.5 * Math.sin(t * 0.9), 1.25); op(phLab, pv * up(t, N2 + 0.6, 0.5));
+    op(phQ, up(t, N2 + 0.9, 0.6) * (1 - up(t, N2 + 5.6, 1.0)) * (t < P0 ? 1 : 0)); phQ.setAttribute("y", (330 + 5 * Math.sin(t * 1.3)).toFixed(1));
+    plagues.forEach((p, i) => { const a = N2 + 3.5 + i * 0.3, k = up(t, a, 0.5); op(p, k * (1 - up(t, P0 - 0.7, 0.6))); p.setAttribute("y", (mix(250, 392, k)).toFixed(1)); });
+  };
+  const drawPassover = (t) => {
+    const dv = up(t, P0 - 0.5, 0.7) * (1 - up(t, W0 - 0.7, 0.7)); op(gDoor, dv);
+    if (dv > 0) { draw(doorFrame, up(t, P0 - 0.3, 1.2)); marks.forEach((m, i) => draw(m, up(t, P0 + 0.8 + i * 0.3, 0.8))); stars.forEach((s, i) => s.setAttribute("opacity", ((0.45 + 0.4 * Math.sin(t * 1.4 + i * 2.1)) * (1 - up(t, P1 - 0.6, 0.6))).toFixed(2))); }
+    const sv = up(t, P0 + 3.0, 1.0) * (1 - up(t, W0 - 0.7, 0.7)); op(gSea, sv);
+    if (sv > 0) { const o = up(t, P0 + 5.0, 1.6), xl = mix(900, 808, o), xr = mix(900, 992, o);
+      seaRows.forEach(([a, b], i) => { const y = 296 + i * 26; let da = "", db = "";
+        for (let x = 690; x <= xl; x += 10) da += `${da ? "L" : "M"}${x} ${(y + 4 * Math.sin(x * 0.06 + t * 1.6 + i)).toFixed(1)}`; for (let x = xr; x <= 1110; x += 10) db += `${db ? "L" : "M"}${x.toFixed(0)} ${(y + 4 * Math.sin(x * 0.06 + t * 1.6 + i)).toFixed(1)}`;
+        a.setAttribute("d", da || "M0 0"); b.setAttribute("d", db || "M0 0"); });
+      set(wallL, { x1: xl + 4, x2: xl + 4, y1: 288, y2: 452 }); set(wallR, { x1: xr - 4, x2: xr - 4, y1: 288, y2: 452 }); op(wallL, o); op(wallR, o); }
+    walkers.forEach((w) => { const a = P0 + 2.3 + w.j * 0.27, x = 310 + (t - a) * 150; op(w.e, t > a ? Math.min(1, (t - a) * 2.5) * clamp((1190 - x) / 60) : 0); set(w.e, { cx: Math.min(x, 1200).toFixed(1), cy: (441 - 1.5 * Math.abs(Math.sin(t * 5 + w.j))).toFixed(1) }); });
+    const vv = span(t, P1 - 0.3, W0 - 0.5, 0.6, 0.6); op(v4.g, vv);
+  };
+  const drawLaw = (t) => {
+    const v = span(t, W0 - 0.5, W1 - 0.1, 0.7, 0.7); op(gLaw, v);
+    if (v > 0) { draw(pathIn, up(t, W0 - 0.3, 1.0)); camp5.forEach((c, i) => op(c, up(t, W0 - 0.2 + i * 0.06, 0.5))); op(rescLab, up(t, W0 + 0.5, 0.6));
+      tablets.forEach((g, i) => { const k = up(t, W0 + 1.5 + i * 0.3, 0.9); op(g, k); move(g, 498 + i * 84, 296 + 16 * (1 - k) + 1.5 * Math.sin(t * 0.9 + i)); }); op(lawLab, 0);
+      op(ladder, up(t, W0 + 3.4, 0.7) * (1 - 0.72 * up(t, W0 + 5.2, 0.8))); draw(noLadder, up(t, W0 + 4.8, 0.7)); }
+    op(v5.g, span(t, W0 + 5.6, W1 - 0.2, 0.6, 0.6));
+    const cv = span(t, W1 - 0.2, T0 - 0.4, 0.6, 0.6); op(gChain, cv);
+    if (cv > 0) { const d = WE - W1, openK = up(t, W1 + d * 0.45, 1.1), ring = up(t, W1 + d * 0.72, 1.3), a = Math.max(0.035, (46 * openK * (1 - ring)) * Math.PI / 180), rx = mix(74, 62, ring), ry = mix(40, 62, ring);
+      const p = (ang) => `${(640 + rx * Math.cos(ang)).toFixed(1)} ${(320 + ry * Math.sin(ang)).toFixed(1)}`;
+      shackle.setAttribute("d", `M${p(a)} A${rx.toFixed(1)} ${ry.toFixed(1)} 0 1 1 ${p(-a - 0.001)}`); shackle.setAttribute("stroke", ring > 0.5 ? MUSTARD : INK);
+      sideLinks.forEach((l, i) => op(l, (1 - up(t, W1 + d * 0.4 + (i === 1 || i === 2 ? 0.25 : 0), 0.9)))); op(serveLab, up(t, W1 + d * 0.12, 0.6)); gChain.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 0.8)).toFixed(2)})`); }
+  };
+  const drawTent = (t) => {
+    const v = up(t, T0 - 0.4, 0.6) * (1 - up(t, END + 0.5, 0.7)); op(gTent, v); op(gCampT, v * up(t, T0 + 0.8, 0.8));
+    if (v <= 0) { op(calf, 0); op(moses, 0); op(mosesLab, 0); pleas.forEach((p) => op(p.e, 0)); op(v6.g, 0); return; }
+    const threat = span(t, T0 + 3.0, T0 + 7.6, 0.8, 1.0), small = up(t, ST0 - 0.4, 1.2) * (1 - up(t, CL - 0.3, 1.2)), sc = mix(1, 0.8, small), cy = mix(334, 322, small);
+    move(gTent, 640, cy, sc); gTent.setAttribute("opacity", (v * (1 - 0.66 * threat)).toFixed(3));
+    draw(courtLine, up(t, T0 - 0.2, 1.6)); court.forEach((c, i) => op(c, up(t, T0 - 0.1 + i * 0.045, 0.4))); op(tentBox, up(t, T0 + 0.9, 0.7)); draw(tentWall, up(t, T0 + 1.5, 0.6)); cloth.forEach((c, i) => draw(c, up(t, T0 + 1.3 + i * 0.15, 0.7)));
+    const g = up(t, T2 - 0.3, 1.6); op(inner, 0.85 * g); glow.forEach((r, i) => op(r, g * [0.2, 0.11, 0.06][i] * (1 + 0.25 * Math.sin(t * 1.5 + i))));
+    campT.forEach((c, i) => set(c.e, { cx: (640 + (300 + (i % 2) * 34) * sc * Math.cos(c.a) * 1.12 + 2 * Math.sin(t * 0.8 + i)).toFixed(1), cy: (cy + (146 + (i % 2) * 20) * sc * Math.sin(c.a) + 2 * Math.cos(t * 0.7 + i)).toFixed(1), opacity: (Math.sin(c.a) > 0.9 || Math.sin(c.a) < -0.75 ? 0 : 1) }));
+    op(calf, span(t, T0 + 2.7, T0 + 7.2, 0.6, 0.9)); move(calf, 226, 410, 1.5);
+    const mv = span(t, T0 + 4.6, T1 + 0.2, 0.6, 0.8); op(moses, mv); set(moses, { cx: 1040, cy: (428 + 1.5 * Math.sin(t)).toFixed(1) }); op(mosesLab, mv);
+    pleas.forEach((p) => { const k = (t * 0.32 + p.ph) % 1, y = mix(400, 240, k); p.e.setAttribute("d", `M${(1040 + p.dx + 6 * Math.sin(k * 8)).toFixed(1)} ${y.toFixed(1)} q6 -11 0 -22`); p.e.setAttribute("opacity", (0.75 * Math.sin(Math.PI * k) * span(t, T0 + 4.9, T0 + 8.0, 0.5, 0.7)).toFixed(3)); });
+    const vv = span(t, T2 - 0.3, ST0 + 0.1, 0.5, 0.7); op(v6.g, vv); if (vv > 0) { v6.ts[0].setAttribute("y", (146 + 10 * (1 - up(t, T2 - 0.3, 0.8))).toFixed(1)); op(v6.ref, up(t, T2 + 1.0, 0.6)); }
+  };
+
+  F.title("Exodus", 96);
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => { drawRescue(t); drawLayout(t); drawName(t); drawPassover(t); drawLaw(t); drawTent(t); drawStrip(t); };
+});
+</script>
+</body></html>

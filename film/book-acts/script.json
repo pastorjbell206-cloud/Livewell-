@@ -1,0 +1,138 @@
+{
+  "title": "Acts: to the ends of the earth",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-acts",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "next",
+      "kicker": "The story goes on",
+      "level": 0.2,
+      "lines": [
+        "Acts picks up where the Gospel of Luke leaves off. Luke's first book was about all that Jesus began to do and to teach. That suggests Acts is about what Jesus continues to do, through his Spirit and his people.",
+        "You will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth."
+      ],
+      "scripture": {
+        "reference": "Acts 1:8",
+        "text": "you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Acts moves outward from Jerusalem. First the city. Then Judea and Samaria. Then the door to the nations.",
+        "The second half belongs largely to Paul, and it ends with him in Rome under guard, still teaching."
+      ],
+      "scripture": {
+        "reference": "Acts 28:31",
+        "text": "Boldly and freely he proclaimed the kingdom of God",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "spirit",
+      "kicker": "Watch for: the Spirit",
+      "level": 0.5,
+      "lines": [
+        "The Spirit is the driving force of Acts. He comes at Pentecost, fills believers for bold speech, guides decisions, and sets apart messengers.",
+        "I will pour out My Spirit on all people.",
+        "And he falls on Samaritans and Gentiles in ways that force the church to recognize them as full members."
+      ],
+      "scripture": {
+        "reference": "Acts 2:17",
+        "text": "I will pour out My Spirit on all people.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "witness",
+      "kicker": "Watch for: witness",
+      "level": 0.65,
+      "lines": [
+        "The key word of the book is witness. Stephen's witness costs him his life.",
+        "Lord, do not hold this sin against them.",
+        "Almost every advance in Acts comes through opposition, and Luke presents none of it as defeat. Persecution scatters the church, and so spreads the word."
+      ],
+      "scripture": {
+        "reference": "Acts 7:60",
+        "text": "Lord, do not hold this sin against them.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "lines",
+      "kicker": "Watch for: every line crossed",
+      "level": 0.8,
+      "lines": [
+        "Acts traces the good news across line after line: Samaritans, an official from Ethiopia, a Roman centurion. Each crossing is contested.",
+        "The council in Jerusalem settles the central question. Gentiles are saved by grace, as Jews are."
+      ],
+      "scripture": {
+        "reference": "Acts 10:34",
+        "text": "I now truly understand that God does not show favoritism",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "saul",
+      "kicker": "Watch for: Israel's hope",
+      "level": 0.9,
+      "lines": [
+        "Saul, the church's fiercest opponent, meets the risen Jesus and becomes its messenger.",
+        "Saul, Saul, why do you persecute Me?",
+        "Acts insists that faith in Jesus fulfills Israel's hope and does not replace it. The first believers are Jews, and Paul on trial says he stands accused because of the hope of Israel."
+      ],
+      "scripture": {
+        "reference": "Acts 9:4",
+        "text": "Saul, Saul, why do you persecute Me?",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "All Christians confess that the Holy Spirit is given to the church. They differ on how much of the pattern in Acts is meant for every church: the order of faith, baptism, and receiving the Spirit, and whether speaking in tongues is a regular sign of the Spirit's coming.",
+        "This film takes no side."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter one, and read for the large movement, from Jerusalem outward. Not every event in Acts is a rule for every church.",
+        "The key chapters are one, two, seven, nine, ten, fifteen, seventeen, and twenty-eight."
+      ],
+      "scripture": {
+        "reference": "Acts 1:1",
+        "text": "I wrote about all that Jesus began to do and to teach",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Acts ends in Rome, with Paul under guard and still teaching."
+      ],
+      "titleCard": [
+        "To the ends of the earth.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

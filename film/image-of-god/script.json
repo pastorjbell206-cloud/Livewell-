@@ -1,0 +1,121 @@
+{
+  "title": "Creation and the image of God",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/image-of-god",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "beginning",
+      "kicker": "In the beginning",
+      "level": 0.2,
+      "lines": [
+        "In the beginning God created the heavens and the earth.",
+        "Genesis opens with God already there. Nothing comes before him, and nothing helps him.",
+        "Christians confess that God made all things, seen and unseen, out of nothing, by the word of his power."
+      ],
+      "scripture": {
+        "reference": "Genesis 1:1",
+        "text": "In the beginning God created the heavens and the earth.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "good",
+      "kicker": "Very good",
+      "level": 0.4,
+      "lines": [
+        "Day by day the empty world is given shape and then filled. Six times God calls what he made good. The seventh time, very good.",
+        "The world is not a mistake or a prison. It's a gift."
+      ],
+      "scripture": {
+        "reference": "Genesis 1:31",
+        "text": "And God looked upon all that He had made, and indeed, it was very good.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "image",
+      "kicker": "In his image",
+      "level": 0.6,
+      "lines": [
+        "People come last, and they are different. In the ancient world a king could be called the image of a god. Genesis gives that dignity to every person, male and female, not only to kings.",
+        "So God created man in His own image; in the image of God He created him; male and female He created them."
+      ],
+      "scripture": {
+        "reference": "Genesis 1:27",
+        "text": "So God created man in His own image; in the image of God He created him; male and female He created them.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "for",
+      "kicker": "Made for God",
+      "level": 0.7,
+      "lines": [
+        "Being made in God's image means we were made to know him, to reflect his character, and to rule over and care for his world as those who answer to him.",
+        "We were made for God himself."
+      ],
+      "scripture": {
+        "reference": "Isaiah 43:7",
+        "text": "everyone called by My name and created for My glory, whom I have indeed formed and made.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "work",
+      "kicker": "Image and work",
+      "level": 0.6,
+      "lines": [
+        "Image and work arrive together. God blesses the man and the woman and gives them the earth to rule and to care for on his behalf.",
+        "To tend it and keep it, not to spoil it for themselves."
+      ],
+      "scripture": {
+        "reference": "Genesis 2:15",
+        "text": "Then the LORD God took the man and placed him in the Garden of Eden to cultivate and keep it.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "worth",
+      "kicker": "Given, not earned",
+      "level": 0.8,
+      "lines": [
+        "The image is given, not earned. A newborn, a man with advanced dementia, and the most gifted adult in the room have the same worth, because their worth was never a ranking of what they can do.",
+        "Many who don't believe in God hold the same belief, and live it well."
+      ],
+      "scripture": {
+        "reference": "Psalm 8:5",
+        "text": "You crowned him with glory and honor.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "That God created, that he created from nothing, and that humanity bears his image are what all Christians confess.",
+        "The age of the earth and the way God created are open questions, and faithful Christians who love the same Bible have landed in different places. This film takes no side on the age of the earth or on evolution."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "We were made for God himself."
+      ],
+      "titleCard": [
+        "Made in the image of God.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

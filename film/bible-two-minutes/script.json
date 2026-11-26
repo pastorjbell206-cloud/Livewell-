@@ -1,0 +1,149 @@
+{
+  "title": "The whole Bible in two minutes",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions and its rows of docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/bible-two-minutes",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "made",
+      "kicker": "Made good",
+      "level": 0.2,
+      "lines": [
+        "The Bible starts with God. He speaks, and there's a world.",
+        "He calls it good. And he makes people in his image, to look after it for him."
+      ],
+      "scripture": {
+        "reference": "Genesis 1:31",
+        "text": "And God looked upon all that He had made, and indeed, it was very good.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "broken",
+      "kicker": "Broken",
+      "level": 0.35,
+      "lines": [
+        "Then the first people reach for the one thing God held back. And the damage spreads. Shame. Blame. A murder. A flood. A tower built to reach the sky.",
+        "God judges it. And he keeps showing mercy."
+      ]
+    },
+    {
+      "id": "promise",
+      "kicker": "A promise",
+      "level": 0.45,
+      "lines": [
+        "So God picks one man, Abraham, and makes him a promise. A people. A land. And a blessing meant for every family on earth."
+      ],
+      "scripture": {
+        "reference": "Genesis 12:3",
+        "text": "all the families of the earth will be blessed through you.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "rescued",
+      "kicker": "Rescued, and given God's law",
+      "level": 0.55,
+      "lines": [
+        "Abraham's family grows into a nation, and the nation ends up as slaves in Egypt. God hears them. He spares them by the blood of a lamb and opens a road through the sea.",
+        "At Mount Sinai he makes a covenant with them, gives them his law, and has them build a tent so he can live among them."
+      ],
+      "scripture": {
+        "reference": "Exodus 20:2",
+        "text": "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "kingdom",
+      "kicker": "A land and a king",
+      "level": 0.65,
+      "lines": [
+        "God gives them the land. But they keep turning away, and each round is worse than the last.",
+        "They ask for a king. Saul fails. David loves God and fails badly too. And God promises David a son whose kingdom will never end."
+      ],
+      "scripture": {
+        "reference": "2 Samuel 7:16",
+        "text": "your throne will be established forever.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "exile",
+      "kicker": "Exile, and promises in the dark",
+      "level": 0.75,
+      "lines": [
+        "The kingdom splits. The kings lead the people to idols, the prophets call them back, and they won't come. Babylon burns Jerusalem.",
+        "But in the dark, the prophets promise a new covenant and a coming king. Some of the exiles come home and rebuild. No son of David sits on the throne. The Old Testament ends looking ahead."
+      ],
+      "scripture": {
+        "reference": "Jeremiah 31:33",
+        "text": "I will put My law in their minds and inscribe it on their hearts.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "jesus",
+      "kicker": "Jesus comes, dies and rises",
+      "level": 0.9,
+      "lines": [
+        "Then God keeps his promises in person. Jesus says God's kingdom has come near. He heals, he forgives, and he speaks with an authority that belongs to God alone.",
+        "He dies on a Roman cross at Passover, carrying the sin of the world. And on the third day God raises him bodily from the dead."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 15:3-4",
+        "text": "that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "church",
+      "kicker": "The Spirit, and the church",
+      "level": 0.8,
+      "lines": [
+        "Fifty days later the Spirit comes. The church starts in Jerusalem and spreads, Jews and Gentiles together, until the news about Jesus reaches Rome."
+      ],
+      "scripture": {
+        "reference": "Acts 1:8",
+        "text": "you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "new",
+      "kicker": "All things new",
+      "level": 0.95,
+      "lines": [
+        "And the story ends where it began, with God and his people together. Only now the garden has become a city.",
+        "Jesus returns. Death is undone. And God makes his home with people forever.",
+        "Behold, I make all things new."
+      ],
+      "scripture": {
+        "reference": "Revelation 21:5",
+        "text": "Behold, I make all things new.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "That's the whole Bible, from the garden to the city. And you're living somewhere on that road."
+      ],
+      "titleCard": [
+        "You're living somewhere on that road.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

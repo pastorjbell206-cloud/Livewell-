@@ -1,0 +1,128 @@
+{
+  "title": "The resurrection",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/the-resurrection",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "buried",
+      "kicker": "He was buried",
+      "level": 0.2,
+      "lines": [
+        "Christians confess that Jesus died and was buried. Joseph of Arimathea, a disciple, laid the body in his own new tomb cut into the rock, and rolled a great stone across the entrance.",
+        "The summary Paul passed on puts the burial between the death and the rising, because the one who was raised is the one who was buried."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 15:4",
+        "text": "that He was buried, that He was raised on the third day according to the Scriptures",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "empty",
+      "kicker": "The empty tomb",
+      "level": 0.45,
+      "lines": [
+        "Very early on the first day of the week, the women came with the spices they had prepared. They found the stone rolled away, and they did not find the body. All four Gospels tell of the empty tomb that morning.",
+        "The question they were asked is the whole story in one sentence.",
+        "Why do you look for the living among the dead? He is not here; He has risen!"
+      ],
+      "scripture": {
+        "reference": "Luke 24:5-6",
+        "text": "Why do you look for the living among the dead? He is not here; He has risen!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "mary",
+      "kicker": "News to be carried",
+      "level": 0.6,
+      "lines": [
+        "John tells of Mary Magdalene weeping outside the tomb. She took the risen Jesus for the gardener until he said her name. He sent her to his brothers with a message, and she went and told the disciples.",
+        "I have seen the Lord!",
+        "The first news of Easter was a message to be carried."
+      ],
+      "scripture": {
+        "reference": "John 20:18",
+        "text": "I have seen the Lord!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "body",
+      "kicker": "The same body, made new",
+      "level": 0.7,
+      "lines": [
+        "The risen Jesus is not a ghost or a memory. He told his frightened friends to look at his hands and feet, and he ate broiled fish in front of them.",
+        "Yet his body was also changed. He came among them behind locked doors, and he was not always recognized at first. Christians confess that God raised the same body that had been buried, now made new."
+      ],
+      "scripture": {
+        "reference": "Luke 24:39",
+        "text": "Look at My hands and My feet. It is I Myself.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "different",
+      "kicker": "Not back, but through",
+      "level": 0.75,
+      "lines": [
+        "Jesus had called Lazarus out of his tomb, still bound in strips of linen, back to the life he had before. Jesus' own rising was different. He was raised into a life on the far side of death.",
+        "Death no longer has dominion over Him."
+      ],
+      "scripture": {
+        "reference": "Romans 6:9",
+        "text": "death no longer has dominion over Him.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "firstfruits",
+      "kicker": "The first sheaf",
+      "level": 0.85,
+      "lines": [
+        "Under the law, Israel brought the first sheaf of the harvest to the priest: the first sheaf, and the promise of the rest. Paul uses that picture for Easter.",
+        "But Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 15:20",
+        "text": "But Christ has indeed been raised from the dead, the firstfruits of those who have fallen asleep.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "matters",
+      "kicker": "Why it matters",
+      "level": 0.7,
+      "lines": [
+        "Paul says that if Christ has not been raised, faith is futile. Because he was raised, the forgiveness won at the cross is sealed, death is not the final word over anyone who belongs to him, and the body and the world God made matter.",
+        "Every Sunday gathering is a small Easter. It doesn't take away grief. It gives grief a hope."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Because I live, you also will live."
+      ],
+      "scripture": {
+        "reference": "John 14:19",
+        "text": "Because I live, you also will live.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "Because I live, you also will live.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

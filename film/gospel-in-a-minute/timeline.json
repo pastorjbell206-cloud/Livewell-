@@ -1,0 +1,117 @@
+{
+ "length": 83.28,
+ "chapters": [
+  {
+   "id": "gift",
+   "kicker": "A gift",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 13.88,
+   "lines": [
+    {
+     "text": "The story starts with a gift, not a problem. God made human beings in his own image, to know him and to love him forever. Nothing stood between people and God.",
+     "start": 2.6,
+     "end": 12.98
+    }
+   ]
+  },
+  {
+   "id": "break",
+   "kicker": "A break",
+   "level": 0.4,
+   "start": 13.08,
+   "end": 24.16,
+   "lines": [
+    {
+     "text": "People turned from God to their own way, and every one of us has followed. Sin is a break: with God, with each other, inside ourselves.",
+     "start": 13.98,
+     "end": 23.26
+    }
+   ]
+  },
+  {
+   "id": "towers",
+   "kicker": "Our towers",
+   "level": 0.5,
+   "start": 23.36,
+   "end": 33.06,
+   "lines": [
+    {
+     "text": "Every age builds its towers: be good enough, try harder, earn your way back. The gap is too wide for us to cross.",
+     "start": 24.26,
+     "end": 32.16
+    }
+   ]
+  },
+  {
+   "id": "sends",
+   "kicker": "God crosses the gap",
+   "level": 0.65,
+   "start": 32.26,
+   "end": 43.8,
+   "lines": [
+    {
+     "text": "Then God crosses the gap from his own side. The Father sends the Son because he loves the world, and the Son becomes one of us, fully God and fully man.",
+     "start": 33.16,
+     "end": 42.9
+    }
+   ]
+  },
+  {
+   "id": "cross",
+   "kicker": "The cross and the empty tomb",
+   "level": 0.85,
+   "start": 43.0,
+   "end": 53.68,
+   "lines": [
+    {
+     "text": "At the cross the break is mended, and God is the one who mends it. Jesus died for our sins, and on the third day he was raised, in his body.",
+     "start": 43.9,
+     "end": 52.78
+    }
+   ]
+  },
+  {
+   "id": "receive",
+   "kicker": "Received, not earned",
+   "level": 0.7,
+   "start": 52.88,
+   "end": 64.16,
+   "lines": [
+    {
+     "text": "The gift is received, not earned. Turn around, and trust him. Faith is not a work that pays for anything. It's empty hands taking what is given.",
+     "start": 53.78,
+     "end": 63.26
+    }
+   ]
+  },
+  {
+   "id": "new",
+   "kicker": "New life",
+   "level": 0.75,
+   "start": 63.36,
+   "end": 72.06,
+   "lines": [
+    {
+     "text": "Those who belong to Christ are forgiven, made God's children, and given new life, now and in the life to come.",
+     "start": 64.26,
+     "end": 71.16
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 71.26,
+   "end": 77.179,
+   "lines": [
+    {
+     "text": "Read more on LiveWell, or talk it over with a pastor or someone you trust.",
+     "start": 72.16,
+     "end": 76.279
+    }
+   ]
+  }
+ ]
+}

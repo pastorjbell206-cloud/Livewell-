@@ -819,6 +819,118 @@ folder's text (48,545 words compared, no difference), the PDF's pages the
 same text character for character (251,607 against 251,607). Still 241
 pages, so `client/src/data/ebooks.ts` is unchanged; PDF 1.6 MB, EPUB 345 KB.
 
+### The other eight books, brought into the typesetter (2026-11-25)
+
+The remaining eight ebooks came in the same way as The Reliability of
+Scripture, one at a time: the original PDF and EPUB kept, untouched, in
+`content/held-downloads/originals/`; the EPUB's chapter files copied byte for
+byte into `content/books-src/<id>/`; a `book.json` with the copyright notice
+the files printed (without the PDF's unfilled ISBN line); one build with no
+word changed and `--verify`. The two original files of each book were
+compared letter by letter (all letters and digits, from the first chapter to
+the end, the PDF's running heads and page numbers set aside); what they
+differ in is said under each book. Each was then edited (records in
+`docs/work/elite/voice-books/<id>.md`).
+
+- **Raising Believers** (`raising-believers`). The PDF and EPUB carry the
+  same text, letter for letter (208,778 letters). 357 pages became 163,
+  `--verify` identical. Then edited (`raising-believers.md`): 516 dashes in
+  his prose to 1, every edit punctuation, fact diff passed on all fifteen
+  files; rebuilt at 161 pages (`client/src/data/ebooks.ts` says 161),
+  `--verify` identical (47,090 words; 214,899 characters).
+- **The Deconstruction of Faith** (`deconstruction-of-faith`). The PDF and
+  EPUB carry the same text, letter for letter (221,772 letters), with four
+  places where the PDF's text extraction reads a pull quote in a different
+  order; no word differs. 391 pages became 180 (`client/src/data/ebooks.ts`
+  says 180). `--verify`: identical. **The typesetter learned one thing**: a
+  chapter's pages after its opening page begin after a forced page break,
+  where Chromium keeps a heading's top margin, while on the measuring pass the
+  same page began after an ordinary break, where the margin is dropped; a
+  heading at the top of the first page after the opening page therefore set
+  one line lower and the chapter ran a page long. That first block now has
+  no top margin (`.rest > :first-child`).
+  Then edited (`deconstruction-of-faith.md`): 477 dashes in his prose to 0,
+  every edit punctuation, fact diff passed on all twenty files; rebuilt,
+  still 180 pages, `--verify` identical (47,777 words; 227,712 characters).
+- **What Does the Bible Really Say About Homosexuality?**
+  (`bible-and-homosexuality`). The PDF and EPUB carry the same text: the
+  letter-for-letter comparison found nothing but the PDF's running heads,
+  page numbers and repeated block-quotation references, which the comparison
+  sets aside, and a few places where text extraction reads a pull quote out of
+  order. The PDF's copyright notice is the fuller one (it adds "No part of
+  this book may be reproduced ..." and the site's address) and the new files
+  use it; both originals print "James C. Bell" there, and so do the new
+  files. 189 pages became 167 (`client/src/data/ebooks.ts` says 167).
+  `--verify`: identical (45,417 words; 233,792 characters).
+  Then edited (`bible-and-homosexuality.md`): 438 dashes in his prose to 2
+  (both inside words the book puts in a parent's mouth), every edit
+  punctuation, every position and steelman word for word, fact diff passed
+  on all fourteen files; rebuilt, still 167 pages, `--verify` identical
+  (45,183 words; 233,806 characters).
+- **What Does the Bible Say About Transgender Identity?**
+  (`bible-and-transgender-identity`). The PDF and EPUB carry the same text:
+  the comparison found only the PDF's running heads, page numbers and
+  block-quotation references (printed in capitals, and repeated), which it
+  sets aside, and pull quotes read out of order; the PDF's fuller copyright
+  notice is used ("James C. Bell", as both originals print it). 201 pages
+  became 181 (`client/src/data/ebooks.ts` says 181). `--verify`: identical
+  (49,166 words; 246,013 characters).
+  Then edited (`bible-and-transgender-identity.md`): 459 dashes in his
+  prose to 7 (five inside quotations, two after a question), every edit
+  punctuation, every position and steelman word for word, fact diff passed on
+  all thirteen edited files; rebuilt, still 181 pages, `--verify` identical
+  (49,255 words; 246,023 characters).
+- **Is Critical Race Theory Biblical?** (`critical-race-theory-biblical`).
+  The PDF and EPUB carry the same text: the comparison found only running
+  heads, page numbers, repeated block-quotation references (the four "Letter
+  from Birmingham Jail" lines among them) and pull quotes read out of order;
+  the PDF's fuller copyright notice is used ("James C. Bell", as both
+  originals print it). 206 pages became 193 (`client/src/data/ebooks.ts`
+  says 193). `--verify`: identical (47,295 words; 243,250 characters).
+  Then edited (`critical-race-theory-biblical.md`): 437 dashes in his prose
+  to 3, every edit punctuation, every account of CRT, every concession and
+  every criticism word for word, fact diff passed on all twenty files;
+  rebuilt, still 193 pages, `--verify` identical (47,244 words; 243,255
+  characters).
+- **Change Without Casualties** (`change-without-casualties`), the first of
+  the three Hard Issues booklets. The PDF and EPUB carry the same text: the
+  comparison found only running heads (here a chapter's title), page numbers,
+  the repeated "REFLECTION QUESTIONS" label and pull quotes out of order. As
+  in the original PDF, each chapter's file ends with the next chapter's
+  label ("CHAPTER ONE" closes the introduction) and the closing Scripture
+  line is set as a paragraph; the typesetter carries both as they are. The
+  PDF's fuller copyright notice is used. 37 pages became 40
+  (`client/src/data/booklets.ts` says 40). `--verify`: identical (6,466
+  words; 34,332 characters).
+  Then edited (`change-without-casualties.md`): 68 dashes in his prose to 2
+  (both before a Scripture reference), every edit punctuation, fact diff
+  passed on all nine files; rebuilt, still 40 pages, `--verify` identical
+  (6,411 words; 34,333 characters).
+- **Church Governance That Works** (`church-governance`), the second
+  booklet. The PDF and EPUB carry the same text (the comparison found only
+  running heads, page numbers, the repeated "REFLECTION QUESTIONS" label and
+  one table read in a different order); the same stray chapter labels as
+  Change Without Casualties, carried as they are; the appendix's decision
+  matrix is a run of short paragraphs in the source and is set so. The PDF's
+  fuller copyright notice is used. 43 pages became 44
+  (`client/src/data/booklets.ts` says 44). `--verify`: identical (6,764
+  words; 39,393 characters).
+  Then edited (`church-governance.md`): 64 dashes in his prose to 2 (both
+  before a Scripture reference), every edit punctuation, fact diff passed on
+  the eight edited files; rebuilt, still 44 pages, `--verify` identical (6,703
+  words; 39,393 characters).
+- **Deacon Qualifications and Selection** (`deacon-qualifications`), the
+  third booklet. The PDF and EPUB carry the same text (the comparison found
+  only running heads, page numbers, the repeated "REFLECTION QUESTIONS" label
+  and the appendix's assessment form read in a different order); the same
+  stray chapter labels, carried as they are. The PDF's fuller copyright
+  notice is used. 41 pages became 43 (`client/src/data/booklets.ts` says
+  43). `--verify`: identical (7,168 words; 38,378 characters).
+  Then edited (`deacon-qualifications.md`): 59 dashes in his prose to 3, every
+  edit punctuation, both readings of 1 Timothy 3:11 word for word, fact diff
+  passed on all nine files; rebuilt, still 43 pages, `--verify` identical
+  (7,112 words; 38,379 characters).
+
 ### The apparatus
 
 - The new title and subtitle are on the cover, half-title, title page,
