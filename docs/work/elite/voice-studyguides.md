@@ -37,7 +37,7 @@ Scripts outside the repository, in `/home/user/voice-sg/`:
   The counts include real verdicts and the initials of names split by the counter ("C. S. Lewis"), so read them as direction, not a grade.
 - **The site's gates, after each guide:** `validate-studyguides.mjs`, `validate-no-emdash.mjs`, `validate-grow-voice.mjs`, `validate-grow-links.mjs`, the topics index check and `validate-topics.mjs`, `validate-catalogue.mjs`, the studyguides index rebuilt (`build-studyguides-index.mjs`, unchanged unless a guide's top summary changed), the search index check, and a forbidden-word and exclamation scan of each changed field.
 
-## The guides done (17)
+## The guides done (34)
 
 | Guide | Words before | after | Short sentences before | after | Runs before | after | Not X. Y. before | after | Edits | Fields changed | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -58,7 +58,24 @@ Scripts outside the repository, in `/home/user/voice-sg/`:
 | Deep Roots: A Bible Study on the Basics of the Faith | 13,667 | 13,668 | 87 | 81 | 8 | 5 | 12 | 12 | 3 | 3 | PASS |
 | Divorce and Blended Families: A Bible Study for Starting Over | 14,043 | 14,044 | 39 | 37 | 2 | 1 | 3 | 3 | 1 | 1 | PASS |
 | Doubt: A Bible Study for When Faith Has Questions | 11,047 | 11,047 | 80 | 75 | 9 | 6 | 16 | 14 | 4 | 4 | PASS |
-| **17 guides** | 200,808 | 200,839 | 1546 | 1393 | 171 | 91 | 300 | 286 | 86 | | |
+| Money, Work and the Poor: A Five-Session Bible Study | 15,981 | 15,982 | 161 | 153 | 15 | 11 | 17 | 14 | 4 | 4 | PASS |
+| The End Times: A Bible Study on How the Story Ends | 13,084 | 13,086 | 108 | 101 | 14 | 11 | 17 | 17 | 3 | 2 | PASS |
+| Fatherhood: A Bible Study for Men Without a Blueprint | 14,682 | 14,683 | 115 | 112 | 3 | 2 | 17 | 17 | 1 | 1 | PASS |
+| Forgiveness: A Bible Study on the Hardest Word | 11,887 | 11,888 | 80 | 72 | 9 | 5 | 16 | 15 | 4 | 2 | PASS |
+| Lent: A Bible Study for the Forty Days | 13,999 | 13,999 | 42 | 40 | 2 | 1 | 4 | 3 | 1 | 1 | PASS |
+| Friendship: A Bible Study on the Love We Forgot | 12,281 | 12,281 | 75 | 64 | 12 | 7 | 9 | 7 | 6 | 4 | PASS |
+| The Fruit of the Spirit: A Bible Study on Growth | 12,937 | 12,938 | 92 | 80 | 8 | 2 | 16 | 12 | 6 | 6 | PASS |
+| Generosity: A Bible Study on Giving | 12,841 | 12,843 | 107 | 93 | 8 | 1 | 27 | 25 | 7 | 6 | PASS |
+| Gratitude: A Bible Study on Thanksgiving and Grace | 11,460 | 11,461 | 92 | 86 | 10 | 7 | 30 | 30 | 3 | 3 | PASS |
+| Grief: A Bible Study on Loss and the God Who Wept | 10,078 | 10,078 | 103 | 103 | 12 | 12 | 15 | 15 | 0 | 0 | PASS |
+| Spiritual Habits: A Bible Study on Formation | 13,225 | 13,227 | 87 | 76 | 7 | 1 | 16 | 15 | 6 | 5 | PASS |
+| Heaven and Hell: A Bible Study on the Life to Come | 11,565 | 11,566 | 126 | 114 | 28 | 22 | 20 | 19 | 6 | 6 | PASS |
+| The Holy Spirit: A Bible Study on the Forgotten God | 11,819 | 11,819 | 112 | 99 | 17 | 10 | 21 | 17 | 7 | 7 | PASS |
+| Hospitality: A Bible Study on the Open Door | 12,932 | 12,932 | 86 | 72 | 11 | 4 | 15 | 14 | 7 | 6 | PASS |
+| Identity: A Bible Study on Who You Actually Are | 12,183 | 12,183 | 81 | 73 | 8 | 4 | 17 | 15 | 5 | 3 | PASS |
+| The Trinity: A Bible Study on Knowing God | 13,033 | 13,033 | 100 | 98 | 10 | 9 | 25 | 25 | 1 | 1 | PASS |
+| Lament: A Bible Study on Praying Your Pain | 8,478 | 8,478 | 80 | 77 | 8 | 6 | 18 | 18 | 2 | 2 | PASS |
+| **34 guides** | 413,273 | 413,316 | 3193 | 2906 | 353 | 206 | 600 | 564 | 155 | | |
 
 ## Five typical pairs
 
@@ -67,6 +84,26 @@ Scripts outside the repository, in `/home/user/voice-sg/`:
 3. Attention, session 4 practice. Before: "Read it more than once. Turn it over. Ask what each word is doing." After: "Read it more than once, turn it over, and ask what each word is doing."
 4. Aging and Legacy, session 2, the answer to an objection. Before: "The body does break down. The mind can cloud. Friends die one after another until the phone stops ringing with the old voices." After: "The body does break down, the mind can cloud, and friends die one after another until the phone stops ringing with the old voices."
 5. Church and Empire, session 2 teaching. Before: "The surveys back them up. Attendance falls. The number of people who claim no religion grows." After: "The surveys back them up: attendance falls, and the number of people who claim no religion grows."
+
+
+## Guides with no edit, and the shape of what was left
+
+Four guides needed no edit: Grief, Marriage, Money, and When Our Parents Grow Old. Every run of short sentences in them is one of four things:
+
+- the commonplaces people say at funerals, quoted in order to be examined ("It was her time. He's at peace now.");
+- a verdict ("You're allowed to hate death. God hates it too."; "He doesn't say we shouldn't. He says we can't.");
+- a step in a practice a grieving reader is asked to take;
+- a care line, among them the 988 line in When Our Parents Grow Old.
+
+Across all sixty-eight guides, the runs left alone are of the same kinds, plus:
+
+- the confession at the center of End Times;
+- the litanies built on Scripture (Jeremiah 29, the armor of Ephesians 6, "Plant. Water. Love.");
+- the closing prayers;
+- the objectors' own words;
+- the facilitator scripts' first-person welcomes where they lead into a care line.
+
+Where one sentence pair recurs in a guide ("Hope doesn't cancel grief. It changes its color."; "Jesus isn't naming an amount. He's naming a master."), every occurrence got the same change.
 
 ## For James
 

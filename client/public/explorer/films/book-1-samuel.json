@@ -1,0 +1,174 @@
+{
+  "slug": "book-1-samuel",
+  "title": "1 Samuel: the heart God sees",
+  "group": "books",
+  "status": "finished",
+  "book": "1-samuel",
+  "mark": "book-1-samuel",
+  "line": {
+    "younger": "The book of a boy who heard God, a tall king and a shepherd: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "1 Samuel as a whole book: three lives, seven stages, a word that returns, a people asking for a king, the heart God sees, loyal love, and where to begin."
+  },
+  "poster": "A woman kneels in prayer before a tent shrine on a hill, and an old priest sits by its doorpost watching her.",
+  "frames": [
+    {
+      "id": "three",
+      "name": "Three lives",
+      "still": "A woman kneels in prayer before a tent shrine on a hill, and an old priest sits by its doorpost watching her.",
+      "younger": "First Samuel tells how Israel got its first kings. It follows three lives. Samuel, the boy who heard God's voice. Saul, the tall king who came apart. And David, the shepherd God chose.",
+      "older": "First Samuel carries Israel from the judges to the kings through three lives: Samuel, the answer to a childless woman's prayer; Saul, the first king; and David, anointed in secret. It is a book about power: who holds it, and how it is given.",
+      "verse": {
+        "ref": "1 Samuel 2:7",
+        "text": "The LORD sends poverty and wealth; He humbles and He exalts."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in seven panels, with a lamp, a chest, a crown, a torn cloak, a harp, a cave and a mountain over them. A gold rule lies under the third panel.",
+      "younger": "The book has seven parts. Samuel grows up. The ark is lost and comes home. The people ask for a king. Saul goes wrong. David comes to Saul's court. David runs and hides. And Saul's reign ends.",
+      "older": "It moves in seven stages: Samuel's birth and call; the ark lost and returned; Israel asks for a king; Saul's reign and rejection; David at Saul's court; David the fugitive; and the end of Saul. The three lives overlap, and the handover is never clean.",
+      "verse": {
+        "ref": "1 Samuel 7:12",
+        "text": "Thus far the LORD has helped us."
+      }
+    },
+    {
+      "id": "listening",
+      "name": "Watch for: the boy who listens",
+      "still": "At night a boy sits up on his mat inside the tent shrine, near a lamp with a gold flame. Across the tent an old man sits with his head bowed in sleep.",
+      "younger": "Watch for listening. In those days God's word was rare. One night the boy Samuel hears his name called. He thinks it is old Eli. The third time, Eli tells him what to say. Samuel answers, “Speak, for Your servant is listening.”",
+      "older": "The book begins when the word of the LORD was rare, and becomes the story of a prophet through whom God speaks. Kings stand or fall by whether they listen. Hearing and obeying count above sacrifice, which is worthless when it is used to cover disobedience.",
+      "verse": {
+        "ref": "1 Samuel 3:19",
+        "text": "And Samuel grew, and the LORD was with him"
+      }
+    },
+    {
+      "id": "king",
+      "name": "Watch for: “Give us a king”",
+      "still": "A group of elders stands before an old man at the door of his house, one of them pointing away toward the far hills.",
+      "younger": "Watch what the people ask for. They want a king, like all the other nations. God tells Samuel that they are turning away from God as their king. But he gives them one anyway. His name is Saul, and he is taller than anyone.",
+      "older": "The elders ask for a king like all the nations, and God calls it a rejection of his own rule, then gives them one all the same. Readers weigh why. The question the book asks is whether the king will rule as a servant under the word of God.",
+      "verse": {
+        "ref": "1 Samuel 8:7",
+        "text": "they have rejected Me as their king."
+      }
+    },
+    {
+      "id": "heart",
+      "name": "Watch for: the heart",
+      "still": "Four tall young men stand in a row before an old man holding up a horn of oil, while a small shepherd boy comes in from the sheep. The horn is gold.",
+      "younger": "Watch for the heart. Samuel comes to anoint a new king among Jesse's sons. He is sure it is the tall eldest one. But God says no. The youngest is out with the sheep, and nobody called him in. He is David.",
+      "older": "People keep judging by what they can see: Saul is a head taller than anyone, and Samuel is taken with Jesse's tall eldest. God looks elsewhere. David is chosen from the sheepfold, and the Spirit of the LORD rushes upon him from that day.",
+      "verse": {
+        "ref": "1 Samuel 16:7",
+        "text": "For man sees the outward appearance, but the LORD sees the heart."
+      }
+    },
+    {
+      "id": "loyal",
+      "name": "Watch for: loyal love",
+      "still": "Two young men stand face to face in a field, their hands joined in a promise. A gold sun is low behind them.",
+      "younger": "Watch for loyal love. Jonathan, the king's son, loves David as himself. When jealous Saul hunts David, David has two chances to harm him, and both times he will not. He waits for God's time.",
+      "older": "Jonathan, Saul's heir, gives up his claim out of love for David and trust in God's choice. Twice David has Saul in his power and will not harm the LORD's anointed. It teaches restraint and trust in God's timing, not silence before injustice.",
+      "verse": {
+        "ref": "1 Samuel 18:1",
+        "text": "Jonathan loved him as himself."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter 3, where God calls the boy Samuel in the night. Then read chapters 16 and 17, about David. Read the hard chapters with a grown-up you trust.",
+      "older": "Start with Hannah's song in chapter 2, slowly, then the key chapters: 3, 4, 8, 15, 16, 17 and 24. Do not take its heroes as models in everything. Then read 2 Samuel. The promise to David is still ahead.",
+      "verse": {
+        "ref": "1 Samuel 3:10",
+        "text": "“Speak, for Your servant is listening.”"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Samuel said, “Speak, for Your servant is listening.” When could you stop and listen for what God says in the Bible?",
+    "older": "Everyone in 1 Samuel judges by what they can see, and God looks at the heart. Where do you judge people by their height, their looks or their place?"
+  },
+  "read": [
+    {
+      "label": "1 Samuel 2",
+      "href": "/study/bible/1-samuel/2"
+    },
+    {
+      "label": "1 Samuel 3",
+      "href": "/study/bible/1-samuel/3"
+    },
+    {
+      "label": "1 Samuel 4",
+      "href": "/study/bible/1-samuel/4"
+    },
+    {
+      "label": "1 Samuel 7",
+      "href": "/study/bible/1-samuel/7"
+    },
+    {
+      "label": "1 Samuel 8",
+      "href": "/study/bible/1-samuel/8"
+    },
+    {
+      "label": "1 Samuel 15",
+      "href": "/study/bible/1-samuel/15"
+    },
+    {
+      "label": "1 Samuel 16",
+      "href": "/study/bible/1-samuel/16"
+    },
+    {
+      "label": "1 Samuel 17",
+      "href": "/study/bible/1-samuel/17"
+    },
+    {
+      "label": "1 Samuel 18",
+      "href": "/study/bible/1-samuel/18"
+    },
+    {
+      "label": "1 Samuel 24",
+      "href": "/study/bible/1-samuel/24"
+    }
+  ],
+  "stops": [
+    "kingdom"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Readers weigh why the request for a king counts as a rejection of God: a wrong motive and timing, grasping before God's time and his chosen man, or older accounts warm and wary toward kings set side by side. They read the spirit that troubled Saul, and the night at Endor, in more than one way, and they differ on how the book was written. The command against Amalek in chapter 15 is read as judgment after long patience, as the stock language of ancient war, as resting on God's unique right over life, or as God stooping to an ancient people, and none makes it easy. On every reading no people living today is Amalek, and no one may use this chapter to justify violence or contempt toward any person or people. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      {
+        "label": "the 1 Samuel page of the Study Bible",
+        "href": "/study/bible/1-samuel"
+      }
+    ]
+  },
+  "care": "This part of the story has war and death in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "1 Samuel in the Study Bible: the whole book",
+      "href": "/study/bible/1-samuel"
+    },
+    {
+      "label": "The Kingdom: a stop on the map",
+      "href": "/study/explorer/kingdom"
+    },
+    {
+      "label": "David and Goliath (a moving picture)",
+      "href": "/study/explorer/watch/david-and-goliath"
+    },
+    {
+      "label": "The king (a moving picture)",
+      "href": "/study/explorer/watch/the-king"
+    }
+  ],
+  "end": {
+    "label": "Start reading: 1 Samuel 3",
+    "href": "/study/bible/1-samuel/3"
+  }
+}

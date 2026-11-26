@@ -1,0 +1,162 @@
+{
+  "slug": "book-jeremiah",
+  "title": "Jeremiah: the prophet who wept",
+  "group": "books",
+  "status": "finished",
+  "book": "jeremiah",
+  "mark": "book-jeremiah",
+  "line": {
+    "younger": "The book of a prophet who warned his city and kept speaking when no one listened: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Jeremiah as a whole book: forty years of warning, false security, honest prayer, a letter to the exiles, the new covenant, and where to begin."
+  },
+  "poster": "A young man stands under a blossoming almond tree on a hillside, looking across a valley at a walled city on the far hill.",
+  "frames": [
+    {
+      "id": "prophet",
+      "name": "A prophet in the last days",
+      "still": "A young man stands under a blossoming almond tree on a hillside, looking across a valley at a walled city on the far hill.",
+      "younger": "Jeremiah is the book of a prophet who watched his city fall. God called him when he was young. For about forty years he warned the people of Judah to turn back to God. Most of them would not listen.",
+      "older": "Jeremiah lived through the end of the world as his people knew it. Called as a young man, he spoke for about forty years while Judah slid from reform into denial, and from denial into ruin. Then everything he had said came true.",
+      "verse": {
+        "ref": "Jeremiah 1:5",
+        "text": "Before I formed you in the womb I knew you"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in seven panels of very different widths, with an almond branch, a clay jar, a yoke, a young shoot, a scroll, a row of towers and a small lamp over them. A gold rule lies under the fourth panel.",
+      "younger": "The book is long, and it is not told in time order. It begins with God calling Jeremiah. Then come many warnings, and the trouble Jeremiah gets into. In the middle is a small book of comfort. And at the end the city's fall is told again.",
+      "older": "It is not a tidy life story. Poems of judgment, sermons, stories of arrests, acted signs, letters and raw private prayers are gathered in seven parts. At its heart, in chapters 30 to 33, stands a small book of comfort.",
+      "verse": {
+        "ref": "Jeremiah 1:10",
+        "text": "to build and plant."
+      }
+    },
+    {
+      "id": "temple",
+      "name": "Watch for: false safety",
+      "still": "A man stands in a gateway of the temple courts, speaking to a crowd going in. The great building rises behind them.",
+      "younger": "Watch for what the people trusted. They thought God's temple would keep them safe, whatever they did. Jeremiah stood at its gate and said no. Trusting a building is not the same as trusting God.",
+      "older": "Jeremiah attacks what Judah trusted instead of God: the temple as a charm, prophets who promised peace, and ritual without obedience. He calls the temple a den of robbers, words Jesus later used. The forms of faith can become a hiding place from God.",
+      "verse": {
+        "ref": "Jeremiah 7:4",
+        "text": "Do not trust in deceptive words"
+      }
+    },
+    {
+      "id": "prayer",
+      "name": "Watch for: honest prayer",
+      "still": "A man sits alone at the bottom of a deep pit, and light falls on him from the opening far above.",
+      "younger": "Watch Jeremiah's own prayers. He was called a traitor and locked up, and once he was put in a muddy pit. He told God how much it hurt. God did not send him away for it, and Jeremiah kept speaking God's word.",
+      "older": "No other prophet lets a reader hear so much of his own pain. Jeremiah accuses God of deceiving him and curses the day he was born, yet he cannot hold the word in. Faithfulness can include lament and protest brought straight to God.",
+      "verse": {
+        "ref": "Jeremiah 20:9",
+        "text": "His message becomes a fire burning in my heart, shut up in my bones"
+      }
+    },
+    {
+      "id": "letter",
+      "name": "Watch for: a letter to the exiles",
+      "still": "Far from home, by a wide river, a man works at a new house while a woman and a child plant a garden. A gold sun stands over them.",
+      "younger": "Watch for a letter. Jeremiah writes to people taken far away to Babylon. Build houses, he says. Plant gardens. Pray for the city where you live. God has not forgotten you, but the wait will be long.",
+      "older": "He writes to the exiles: build houses, seek the welfare of Babylon, and wait. The famous promise of plans to give a future and a hope was spoken to people facing seventy years of exile. It is a promise through suffering, not a guarantee of success.",
+      "verse": {
+        "ref": "Jeremiah 29:11",
+        "text": "to give you a future and a hope."
+      }
+    },
+    {
+      "id": "covenant",
+      "name": "Watch for: a new covenant",
+      "still": "A man stands in a field beside an old tree stump, and a young shoot grows from it, gold. A clay jar sits at his feet.",
+      "younger": "Watch for the promise in the middle of the book. God says a day is coming when he will make a new covenant. He will write his law on his people's hearts, and forgive their sins. Jesus spoke of this new covenant at his last supper.",
+      "older": "In chapter 31 God promises a new covenant: his law written on the heart, and sin forgiven. The New Testament claims it as fulfilled, from the cup Jesus calls the new covenant to the letter to the Hebrews. Judgment is not God's last word.",
+      "verse": {
+        "ref": "Jeremiah 31:33",
+        "text": "I will put My law in their minds and inscribe it on their hearts."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter 1, where God calls Jeremiah. Then read chapter 31, the promise of the new covenant. Much of the book is sad, so read it with a grown-up you trust.",
+      "older": "Start at chapter 1, then the key chapters: 7, 20, 29, 31, 36 and 52. Keep a map of its parts and the kings' names in mind. Its call to surrender to Babylon was a word for one moment, not a rule about politics.",
+      "verse": {
+        "ref": "Jeremiah 1:8",
+        "text": "Do not be afraid of them, for I am with you to deliver you"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Jeremiah told God honestly how sad and hurt he felt. What would you want to tell God honestly?",
+    "older": "Judah trusted the temple instead of the God it belonged to. What forms of faith could become a hiding place from God?"
+  },
+  "read": [
+    {
+      "label": "Jeremiah 1",
+      "href": "/study/bible/jeremiah/1"
+    },
+    {
+      "label": "Jeremiah 7",
+      "href": "/study/bible/jeremiah/7"
+    },
+    {
+      "label": "Jeremiah 20",
+      "href": "/study/bible/jeremiah/20"
+    },
+    {
+      "label": "Jeremiah 29",
+      "href": "/study/bible/jeremiah/29"
+    },
+    {
+      "label": "Jeremiah 31",
+      "href": "/study/bible/jeremiah/31"
+    },
+    {
+      "label": "Jeremiah 36",
+      "href": "/study/bible/jeremiah/36"
+    },
+    {
+      "label": "Jeremiah 52",
+      "href": "/study/bible/jeremiah/52"
+    }
+  ],
+  "stops": [
+    "exile"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Jeremiah survives in two editions. The Greek translation is about one-seventh shorter than the traditional Hebrew text, and it places the words against the nations in a different order. Many scholars think the Greek reflects an earlier Hebrew edition that was later expanded; others think the Greek translator or his source shortened it. English Bibles follow the longer Hebrew text. This moving picture takes no side; the question is set out on",
+    "links": [
+      {
+        "label": "the Jeremiah page of the Study Bible",
+        "href": "/study/bible/jeremiah"
+      }
+    ]
+  },
+  "care": "This stop tells of people who lost their home and were taken far away. If you have had to leave a home, or have lost someone or something you loved, it is right to feel sad, and you do not have to carry it alone. Talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "Jeremiah in the Study Bible: the whole book",
+      "href": "/study/bible/jeremiah"
+    },
+    {
+      "label": "The Prophets and Exile: a stop on the map",
+      "href": "/study/explorer/exile"
+    },
+    {
+      "label": "Why did God let his temple be destroyed? (a moving picture)",
+      "href": "/study/explorer/watch/temple-destroyed"
+    },
+    {
+      "label": "Exile and coming home (a moving picture)",
+      "href": "/study/explorer/watch/exile-and-home"
+    }
+  ],
+  "end": {
+    "label": "Start reading: Jeremiah 1",
+    "href": "/study/bible/jeremiah/1"
+  }
+}
