@@ -1,0 +1,127 @@
+{
+  "title": "Matthew: God with us",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-matthew",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "immanuel",
+      "kicker": "God with us",
+      "level": 0.2,
+      "lines": [
+        "Matthew tells the story of Jesus with Israel's Scriptures always in view. It opens with a genealogy that traces him through King David to Abraham.",
+        "Its Jesus is the promised Messiah, the teacher greater than Moses, and Immanuel, which means God with us."
+      ],
+      "scripture": {
+        "reference": "Matthew 1:23",
+        "text": "they will call Him Immanuel” (which means, “God with us”).",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Matthew alternates story and speech. Five long discourses, beginning with the Sermon on the Mount, each close with the same formula.",
+        "They make this the fullest collection of Jesus' words among the Gospels."
+      ],
+      "scripture": {
+        "reference": "Matthew 7:28",
+        "text": "When Jesus had finished saying these things",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "fulfill",
+      "kicker": "Watch for: promises kept",
+      "level": 0.5,
+      "lines": [
+        "Matthew sees Jesus as the goal of Israel's Scriptures. The fulfillment formulas, the genealogy, and the patterns that echo Moses and the exodus present his story as the completion of Israel's story.",
+        "I have not come to abolish them, but to fulfill them."
+      ],
+      "scripture": {
+        "reference": "Matthew 5:17",
+        "text": "I have not come to abolish them, but to fulfill them.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "kingdom",
+      "kicker": "Watch for: the kingdom of heaven",
+      "level": 0.65,
+      "lines": [
+        "The kingdom of heaven means God's reign, arriving in Jesus' own person and work.",
+        "It's present in his healings and teaching. It's hidden and growing, like a mustard seed. And it's still to come in fullness."
+      ],
+      "scripture": {
+        "reference": "Matthew 4:17",
+        "text": "Repent, for the kingdom of heaven is near.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "who",
+      "kicker": "Watch for: who he is",
+      "level": 0.8,
+      "lines": [
+        "In the middle of the book, Peter confesses who Jesus is.",
+        "You are the Christ, the Son of the living God.",
+        "From that time, Jesus begins to show his disciples that he must suffer, be killed, and on the third day be raised. The story turns toward Jerusalem and the cross."
+      ],
+      "scripture": {
+        "reference": "Matthew 16:16",
+        "text": "You are the Christ, the Son of the living God.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "nations",
+      "kicker": "Watch for: Israel and all nations",
+      "level": 0.85,
+      "lines": [
+        "Matthew is a deeply Jewish book. Its sharp words against scribes and Pharisees belong to an argument among Jews about Israel's Scriptures. They are no verdict on the Jewish people.",
+        "Jesus is sent first to Israel, and the Gospel ends with all nations."
+      ],
+      "scripture": {
+        "reference": "Matthew 28:19",
+        "text": "Therefore go and make disciples of all nations",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter one. The key chapters are one, five, six, thirteen, sixteen, twenty-six, and twenty-eight."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The Gospel opens with the name Immanuel, and it closes with the risen Jesus keeping it.",
+        "And surely I am with you always, even to the end of the age."
+      ],
+      "scripture": {
+        "reference": "Matthew 28:20",
+        "text": "And surely I am with you always, even to the end of the age.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "God with us.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

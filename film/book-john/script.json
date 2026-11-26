@@ -1,0 +1,130 @@
+{
+  "title": "John: the Word made flesh",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-john",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "word",
+      "kicker": "The Word made flesh",
+      "level": 0.2,
+      "lines": [
+        "John is the fourth of the four Gospels. It tells the same story as Matthew, Mark, and Luke from a different height.",
+        "It begins before the world was made. And soon comes the sentence the whole book hangs on.",
+        "The Word became flesh and made His dwelling among us."
+      ],
+      "scripture": {
+        "reference": "John 1:14",
+        "text": "The Word became flesh and made His dwelling among us.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "John is built with care. An opening poem. A first half built around signs. And a second half that slows almost to a stop: five chapters are given to one evening.",
+        "Then come the cross, the resurrection, and a closing scene by the lake."
+      ],
+      "scripture": {
+        "reference": "John 13:1",
+        "text": "Jesus knew that His hour had come",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "signs",
+      "kicker": "Watch for: the signs",
+      "level": 0.5,
+      "lines": [
+        "John calls Jesus' miracles signs, because each one points beyond itself to who he is. The first half is built around seven of them.",
+        "Signs can start faith. But faith that only wants miracles is thin."
+      ],
+      "scripture": {
+        "reference": "John 2:11",
+        "text": "Jesus performed this, the first of His signs, at Cana in Galilee.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "i-am",
+      "kicker": "Watch for: I am",
+      "level": 0.65,
+      "lines": [
+        "Seven times Jesus says I am, and adds a picture. Bread. Light. A gate. A shepherd. Resurrection and life. The way. The true vine.",
+        "I am the bread of life.",
+        "Each one takes something people can't live without and says: this is what I am for you."
+      ],
+      "scripture": {
+        "reference": "John 6:35",
+        "text": "I am the bread of life.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "believe",
+      "kicker": "Watch for: believing",
+      "level": 0.8,
+      "lines": [
+        "The verb believe comes ninety-eight times in John, and the noun faith never does. Believing is something you do: coming to Jesus, trusting him, staying with him.",
+        "And eternal life, in John, is life with God that begins now."
+      ],
+      "scripture": {
+        "reference": "John 1:12",
+        "text": "to those who believed in His name, He gave the right to become children of God",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "hour",
+      "kicker": "Watch for: the last evening",
+      "level": 0.9,
+      "lines": [
+        "The second half opens when Jesus knows his hour has come. He washes his disciples' feet and gives them a new command.",
+        "A new commandment I give you: Love one another.",
+        "In John, the glory of God is seen most clearly at the cross. Then come the empty tomb and the risen Jesus."
+      ],
+      "scripture": {
+        "reference": "John 13:34",
+        "text": "A new commandment I give you: Love one another.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start at chapter one and read slowly. The key chapters are one, three, six, eleven, thirteen, seventeen, and twenty.",
+        "One caution. When John speaks of the Jews, he usually means the Jerusalem authorities. Jesus and nearly everyone in the story are Jews."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "John tells you plainly why he wrote.",
+        "These are written so that you may believe that Jesus is the Christ, the Son of God."
+      ],
+      "scripture": {
+        "reference": "John 20:31",
+        "text": "these are written so that you may believe that Jesus is the Christ, the Son of God",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "The Word made flesh.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
