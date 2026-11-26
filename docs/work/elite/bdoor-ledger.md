@@ -21746,3 +21746,22 @@ Cut in chapter 4: the deep note's lines to Christ that the New Testament does no
 | Isaiah 10:5; Isaiah 10:12 named; Nahum 1:15 (added when the validator asked for a book beyond Isaiah; first drafted across the BSB's dash and corrected) | 26-30 `later` | BSB | BSB text |
 
 Cut in chapter 5: the deep note's line to John 15 that the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 6 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1-4 | 1-4 | BSB | BSB text |
+| Uzziah's fifty-two years and death about 740 (742 to 734); 2 Chronicles 26:16-21; the ark and cherubim; the robe; seraphim and burning ones; the triple holy; the call placed in chapter 6 | 1-4 | isaiah/6.json `historical`, `cultural`, `literary`, `words` | Repository |
+| Revelation 4:8 (in double quotes for its exclamation); John 12:41 | 1-4 `later` | isaiah/6.json `christ`; BSB | BSB text; the New Testament's own lines |
+| 6:5-8 (6:8's answer in double quotes for its exclamation) | 5-8 | BSB | BSB text |
+| Unclean lips; the incense altar; kaphar; the heavenly council and Micaiah; the call pattern | 5-8 | isaiah/6.json `cultural`, `literary`, `words` | Repository |
+| Jeremiah 1:6; Luke 5:8 (its clause) | 5-8 `later` | BSB | BSB text |
+| 6:9-13 (6:9's words inside the BSB's inner quotation marks) | 9-13 | BSB | BSB text |
+| The chiasm; the years ahead to 587 or 586; the stump | 9-13 | isaiah/6.json `literary`, `historical` | Repository |
+| Matthew 13:14-15 and Acts 28:26-27 named; Romans 11:25; Romans 11:26 | 9-13 `later` | isaiah/6.json `christ`, `hard`; BSB | BSB text |
+| The hard note: result or purpose; judicial hardening; Pharaoh; limited hardening; Romans 11:25-26; the mystery; never a label for any people, never a reason to blame the Jewish people | 9-13 `hard` | isaiah/6.json `hard`; the brief | Repository |
+
+Cut in chapter 6: the deep note's lines beyond what the New Testament draws (the threefold holy and the Trinity; the coal and a greater cleansing). No care line is needed in this chapter.
