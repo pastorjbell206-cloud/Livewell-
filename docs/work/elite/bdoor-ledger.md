@@ -22108,3 +22108,23 @@ Cut in chapter 7: the deep note's lines to Christ (Christ as the righteousness t
 | Romans 11:33 (in double quotes, as it holds exclamations); Job 11:7 | 16-17 | ecclesiastes/8.json `christ` (Romans 11:33 echoing the chapter's conclusion); the chapter data's cross-references for 8:17 (Job 11:7 by way of 3:11); BSB | Repository; BSB text |
 
 Cut in chapter 8: the deep note's lines to Christ (John 10:17-18 and Hebrews 2:14-15 beside verse 8; 2 Peter 3:9 and Acts 17:31 beside delayed justice; the note calls them thematic). No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 9 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1 (its clause; the rest paraphrased); 9:2 (its first two sentences); 9:3 (its first sentence); 9:4; 9:5; 9:6 paraphrased | 1-6 | BSB | BSB text |
+| What follows from chapter 8; the pairs of opposites; miqreh; the dog and the lion; Sheol and Daniel 12:2 | 1-6 | ecclesiastes/9.json `story`, `literary`, `cultural`, `words` (miqreh, Sheol) | Repository |
+| Daniel 12:2; Ecclesiastes 12:7 (its last clause) | 1-6 | ecclesiastes/9.json `hard`, `cultural` (Daniel 12:2); BSB | Repository; BSB text |
+| The hard note: verses 5, 6 and 10 and the unconscious-dead teaching; under the sun and absence from this world; limited light growing to Daniel 12:2, and the New Testament's hope in the resurrection of Jesus; 12:7 and 12:14; Christians differing on the intermediate state; the confession of the resurrection of the body; nothing here says anyone is better off dead, and the living have hope | 1-6 `hard` | ecclesiastes/9.json `hard`; bible/doctrines.json (intermediate); the brief's crisis rules | Repository |
+| The self-harm line (‘If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country...’ to ‘...lists places to turn.’) | 1-6 `hard` | job/plain/3.json and the 1 Kings 19 and 2 Samuel 17 notes (`hard`) | Reused byte for byte; Find Help named; no phone number |
+| 9:7 (before its colon); 9:8; 9:9 (its first clause, before the dash, and its last sentence); 9:10 | 7-10 | BSB | BSB text |
+| White garments and oil as festivity (Psalm 23:5; 104:15); the Old Babylonian Gilgamesh and Siduri's counsel; the different setting, God's approval and gift; cheleq; verse 10 as wholehearted work, not despair | 7-10 | ecclesiastes/9.json `cultural`, `words` (cheleq); ecclesiastes/intro.json `setting` | Repository |
+| Psalm 104:15 (its first two clauses); Psalm 23:5 (its second sentence) | 7-10 | ecclesiastes/9.json `cultural`; BSB | Repository; BSB text |
+| 9:11 (in double quotes); 9:12 paraphrased; 9:14; 9:15; 9:16 paraphrased (it holds an inner quotation); 9:17; 9:18 | 11-18 | BSB | BSB text |
+| Skill and effort without guarantee; siege ramps, Assyrian reliefs, Lachish in 701 BC; the story perhaps a parable; the wise woman of Abel Beth-maacah (2 Samuel 20:14-22) and the different ending; the double-edged last verse | 11-18 | ecclesiastes/9.json `historical`, `literary` | Repository |
+| 2 Samuel 20:22 (its first clause); Ecclesiastes 7:19 | 11-18 | ecclesiastes/9.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 9: the deep note's lines to Christ (1 Corinthians 15:20 and 15:58 as the answer to verse 5, left to the book page's wording; 2 Corinthians 8:9 and Isaiah 53:3 beside the poor wise man, which the note says is not a prophecy of Christ; the Lord's Supper beside verse 7, which it calls thematic).
