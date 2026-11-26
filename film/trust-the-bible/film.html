@@ -90,7 +90,7 @@ Film.make((F) => {
   const cave = el("path", { d: "M936 392 Q936 304 1005 304 Q1074 304 1074 392 Z", fill: CHAR }, gLand);
   const jarD = "M-34 -95 L34 -95 L34 -80 Q34 -70 46 -60 Q72 -30 72 10 Q72 70 44 95 L-44 95 Q-72 70 -72 10 Q-72 -30 -46 -60 Q-34 -70 -34 -80 Z";
   const smallJars = [[968, 366, 0.24], [1006, 362, 0.28], [1043, 367, 0.23]].map(([x, y, s]) => { const j = el("path", { d: jarD, fill: MUTED, stroke: BONE, "stroke-width": 5 }, gLand); move(j, x, y, s); return j; });
-  const look = line(gLand, "M1012 214 V300", { stroke: STONE, "stroke-width": 1.5, "stroke-dasharray": "0.04 0.05" });
+  const look = line(gLand, "M1012 214 V300", { stroke: STONE, "stroke-width": 1.5, "stroke-dasharray": "0.04 0.05", "stroke-dashoffset": 0 });
   const flock = [...Array(4)].map(() => el("circle", { r: 6.5, fill: BONE, stroke: INK, "stroke-width": 2 }, gLand));
   const shepherd = el("g", {}, gLand); el("circle", { r: 11, cy: -12, fill: INK }, shepherd); el("line", { x1: 16, y1: -36, x2: 16, y2: 0, stroke: INK, "stroke-width": 2.5, "stroke-linecap": "round" }, shepherd);
   // the big jar and the scroll that comes out of it
@@ -125,7 +125,7 @@ Film.make((F) => {
       const walk = up(t, C0 + 0.2, 3.0), sx = mix(1262, 1012, walk);
       move(shepherd, sx, 203 - 1.2 * Math.abs(Math.sin(t * 4.2)) * (walk < 1 ? 1 : 0));
       flock.forEach((f, i) => set(f, { cx: (sx + 36 + i * 20 + 3 * Math.sin(t * 1.3 + i)).toFixed(1), cy: (196 - 1.5 * Math.abs(Math.sin(t * 4 + i * 1.7))).toFixed(1) }));
-      draw(look, up(t, C0 + 2.0, 0.8)); smallJars.forEach((j, i) => op(j, up(t, C0 + 2.3 + i * 0.25, 0.5))); }
+      op(look, up(t, C0 + 2.0, 0.7)); smallJars.forEach((j, i) => op(j, up(t, C0 + 2.3 + i * 0.25, 0.5))); }
     const v = t > C1 - 0.6 && t < D0 + 0.9; op(gScroll, v ? 1 : 0);
     if (v) {
       const zoom = up(t, C1 - 0.5, 1.2), jo = (1 - up(t, C1 + 1.6, 0.8)) * up(t, C1 - 0.5, 0.4);
