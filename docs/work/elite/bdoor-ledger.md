@@ -21175,3 +21175,22 @@ Cut in chapter 26: the deep note's lines to Christ (Jesus' words on careless spe
 | 1 Peter 5:2 (its first clause) | 23-27 | the chapter data's cross-references for 27:23 (1 Peter 5:2); BSB | Repository; BSB text |
 
 Cut in chapter 27: the deep note's lines to Christ (the rich fool beside verse 1; Jesus as the friend whose wounds are faithful; the good shepherd beside verses 23-27; the note calls them thematic). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 28 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 28:1; 28:2; 28:3 paraphrased; 28:4; 28:5; 28:6; 28:8 paraphrased; 28:9; 28:11 | 1-11 | BSB | BSB text |
+| Torah in verses 4, 7, 9; rulers and the people; the Hezekiah collection shaped for rulers, kept by royal scribes; the northern kingdom's short dynasties before 722 BC; interest forbidden (Exodus 22:25; Leviticus 25:35-37; Deuteronomy 23:19-20) and debt slavery; verse 3's storm and the alternative reading | 1-11 | proverbs/28.json `story`, `historical`, `cultural`, `literary`, `words` (torah) | Repository; each reading in its holders' terms |
+| Leviticus 25:36; Psalm 27:1 (its first clause, before the dash) | 1-11 | proverbs/28.json `historical` (Leviticus 25:35-37); the chapter data's cross-references for 28:8 (Leviticus 25:36) and 28:1 (Psalm 27:1); BSB | Repository; BSB text |
+| 28:12; 28:13; 28:14; 28:15; 28:16 (its second clause); the bloodguilty man (28:17) paraphrased; 28:18 (its first clause) | 12-18 | BSB | BSB text |
+| Verse 13's rare directness, confession and turning, and mercy; verses 12 and 28 as a pair; the lion and bear | 12-18 | proverbs/28.json `literary`, `words` (kasah, racham) | Repository |
+| Psalm 32:3; Psalm 32:5 (its first sentence, in part); 1 John 1:9 | 12-18 | the chapter data's cross-references for 28:13 (Psalm 32:3, 5; 1 John 1:8, 10); proverbs/28.json `christ` (1 John 1:9 as the New Testament's own promise); BSB | Repository; BSB text |
+| 28:19; 28:20; 28:21; 28:23; 28:24 paraphrased (it holds an inner quotation); 28:26; 28:27; 28:28 | 19-28 | BSB | BSB text |
+| Justice bought for bread; rebuke and flattery at court; the son who robs his parents, early inheritance or failing to support them; hiding one's eyes | 19-28 | proverbs/28.json `cultural` | Repository |
+| Psalm 41:1 (from ‘Blessed’, in double quotes) | 19-28 | the chapter data's cross-references for 28:27 (Psalm 41:1, 3); BSB | Repository; BSB text |
+| The hard note: not a prosperity formula; a proverb; generous people helped in turn; the faithful poor and the widow who gave all; verse 6; giving not a loss in God's economy; no one who gave and still struggles gave wrongly | 19-28 `hard` | proverbs/28.json `hard` | Repository |
+
+Cut in chapter 28: the deep note's lines to Christ (the righteous ruler of the chapter as Jesus; the note calls them links of theme and hope); Jesus' words in Mark 7:9-13 beside verse 24 (not needed). No care line is needed in this chapter.
