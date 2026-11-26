@@ -25584,3 +25584,18 @@ Cut in chapter 34: a draft guess at why the slaves were freed, which no reposito
 | 2 Kings 10:15, Psalm 104:15, Mark 7:8, Proverbs 20:1 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 35: nothing.
+
+## The plain notes on Jeremiah 36 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 36:1-32 (verses 5-22 and 25-31 partly summarized) | all | BSB | BSB text |
+| 605 BC and Carchemish; winter of 604 BC; the fast | 1-19 | jeremiah/36.json `historical` | Repository |
+| Shaphan's family: Shaphan (2 Kings 22), Ahikam (26:24), Gemariah, Micaiah | 1-19 | jeremiah/36.json `historical` | Repository |
+| Columns cut and burned; torn garments as the contrast with Josiah; the second scroll | 20-32 | jeremiah/36.json `cultural`; BSB | Repository, BSB text |
+| Jehoiakim's successor and burial: 2 Kings 24:8-15, 22:30, 22:19 | 20-32 `hard` | jeremiah/36.json `hard` | Repository |
+| 2 Kings 22:11, Isaiah 40:8 (clauses); Jeremiah 26:22 and 26:24 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 36: nothing.
