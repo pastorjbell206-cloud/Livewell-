@@ -26058,3 +26058,15 @@ Cut in chapter 39: the deep note's mention of modern materials that burn; no dat
 | Later: Exodus 25:9; 1 Kings 2:35 | 28-49 `later` | BSB | BSB text |
 
 Cut in chapter 40: Revelation 11:1 beside the measuring, left out. No claim about any modern state, temple or border; the readings of the temple vision in their holders' terms, as the coordinator asked.
+
+## The plain notes on Ezekiel 41 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/41.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sanctuary and the Most Holy Place: the text paraphrased; quoted clauses at verses 1-2, 4, 5-11, 12, 18-19, 22, 23-26 | 1-26 | BSB | BSB text |
+| Background in `hearers` | 1-26 | ezekiel/41.json `historical`, `cultural`, `literary` | Repository |
+| Later: 1 Kings 6:20; Leviticus 16:2 | 1-26 `later` | BSB | BSB text |
+
+Cut in chapter 41: nothing.
