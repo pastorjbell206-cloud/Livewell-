@@ -33,5 +33,657 @@
     { "ch": 31, "why": "The promise of a new covenant written on the heart, the Old Testament passage the New Testament most clearly claims as fulfilled in Christ." },
     { "ch": 36, "why": "King Jehoiakim burns Jeremiah's scroll, and the word of God is written again, a vivid picture of how the book itself came to be." },
     { "ch": 52, "why": "The fall of Jerusalem retold, closing with the release of the exiled king as a small sign that God's promise to David is not dead." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Jeremiah in a minute",
+        "body": "Jeremiah is the book of a prophet who lived through the end of the world as his people knew it. He was called as a young man in the reign of King Josiah and spoke for about forty years while the kingdom of Judah slid from reform into denial, from denial into rebellion, and from rebellion into ruin. He warned that an army would come from the north, that the temple would not save a people who broke the covenant, and that the only way to live was to surrender to Babylon. For saying so he was beaten, put in the stocks, jailed, dropped into a muddy cistern and called a traitor. Then in 587 or 586 BC the Babylonians burned the temple and carried the people into exile, and everything he had said came true.\n\nThe book is not a tidy biography. It gathers poems of judgment, prose sermons, stories of the prophet's arrests and trials, acted signs such as a ruined linen belt, a smashed clay jar and a wooden yoke, letters to the exiles, oracles against the nations, and a handful of raw private prayers in which Jeremiah argues with God.\n\nAt its heart, in chapters 30 to 33, stands a small book of comfort. It promises restoration after judgment, and in 31:31-34 a new covenant in which God will write his law on his people's hearts and forgive their sins. Jeremiah refuses both cheap hope and final despair. It tells the truth about sin and its cost without flinching, and it lets a faithful man weep, doubt and complain in God's presence."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Jeremiah stands at the hinge of the Old Testament story, where the kingdom of Judah ends and the exile begins. Behind him lie the promises to Abraham, the covenant at Sinai with its promises and curses in Deuteronomy 28, and the long history of kings told in Samuel and Kings. His ministry overlaps with Zephaniah and Habakkuk, and in its later years with Ezekiel, who prophesied among the exiles in Babylon. Lamentations, which follows Jeremiah in the Christian Old Testament, mourns the fallen city.\n\nWhat Jeremiah announces, Kings and Chronicles narrate. Daniel, Ezra and Nehemiah pick up the story of exile and return, and both Ezra 1:1 and 2 Chronicles 36:22 present the decree of Cyrus as the fulfillment of the word spoken through Jeremiah. Daniel reads Jeremiah's seventy years in his own prayer in Daniel 9.\n\nThe book's last chapter retells the fall of Jerusalem in words close to 2 Kings 24 and 25, and it ends with a small light: the exiled King Jehoiachin is released from prison in Babylon and eats at the king's table. The line of David is humbled, but it has not ended."
+      },
+      {
+        "id": "who-when",
+        "h": "Who wrote it, and when",
+        "body": "The book names its prophet as Jeremiah son of Hilkiah, from a priestly family in Anathoth, a village in the land of Benjamin a few miles north of Jerusalem (1:1). It also tells how his words came to be written. In the fourth year of King Jehoiakim, about 605 BC, Jeremiah dictated his oracles to Baruch son of Neriah, a scribe, who read the scroll in the temple. When the king cut it up and burned it, Jeremiah dictated a second scroll with many words added (chapter 36). Baruch appears as Jeremiah's companion, witness and secretary, and many scholars think he, or scribes like him, gave the book much of its shape.\n\nModern study has long noticed three kinds of material in the book: poetic oracles, prose stories told about Jeremiah, and prose sermons whose style is close to Deuteronomy and Kings. Sigmund Mowinckel's sorting of these into three sources in 1914 framed much later discussion. Some scholars give the prose sermons to later editors during the exile. Others argue they keep Jeremiah's own preaching in the formal prose of his day. Most agree that the book grew from the prophet's words, gathered by those close to him, and reached its final form after his death.\n\nJeremiah's ministry began in the thirteenth year of Josiah (1:2), about 627 BC, and continued past the fall of Jerusalem into his last days in Egypt. The last chapter reports the release of Jehoiachin in about 561 BC, so the book was completed no earlier than that."
+      },
+      {
+        "id": "two-editions",
+        "h": "Two editions of one book",
+        "body": "Jeremiah survives in two forms. The Greek translation, the Septuagint, made by Jews in the last centuries BC, is about one seventh shorter than the traditional Hebrew text. It lacks some passages entirely, such as 33:14-26, and it places the oracles against the nations after 25:13, in a different order. Fragments among the Dead Sea Scrolls include copies that match each form.\n\nMany scholars, following Emanuel Tov and others, think the Greek reflects an earlier Hebrew edition that was later expanded. Others think the Greek translator or his source shortened the book. English Bibles follow the longer Hebrew text, and so do these notes.\n\nThe two editions show that the book was still being copied and arranged in more than one form for some time. They do not change its message. Both tell the same story of warning, ruin and promise. They are a reminder that the prophet's words were treasured and handed on by a community that kept working with them, much as the burned scroll of chapter 36 was written again with words added."
+      },
+      {
+        "id": "kings-and-empires",
+        "h": "Josiah, the kings after him, and Babylon",
+        "body": "Jeremiah lived through the collapse of one empire and the rise of another. When he was called, Assyria was failing. Josiah, king of Judah from about 640 to 609 BC, used the moment to clear away idolatry and gather worship to Jerusalem, a reform that gathered force after a book of the law was found in the temple in 622 BC. Nineveh fell to the Babylonians and Medes in 612 BC. In 609 Josiah was killed at Megiddo confronting Pharaoh Necho II, and Egypt briefly controlled Judah, replacing Josiah's son Jehoahaz with his brother Jehoiakim.\n\nIn 605 BC Nebuchadnezzar of Babylon defeated Egypt at Carchemish on the Euphrates (46:2), and Judah became Babylon's subject. Jehoiakim, who reigned from 609 to 598 BC, rebelled and died as the Babylonians came. His son Jehoiachin surrendered Jerusalem in 597 BC, and the Babylonian Chronicle, a cuneiform record of the period, records the city's capture. Jehoiachin, the royal family and many leading citizens, Ezekiel among them, were taken away.\n\nNebuchadnezzar set up Zedekiah, who reigned from 597 to 586 BC, and Jeremiah urged him to submit. Zedekiah rebelled, trusting Egypt, and the Babylonians besieged Jerusalem, broke through and burned the city and temple. Clay letters found at Lachish in the 1930s, written by a Judean officer in those last months, give a glimpse of the collapse. Afterward Babylon appointed Gedaliah governor. His murder drove a remnant to flee to Egypt, taking Jeremiah with them."
+      },
+      {
+        "id": "built",
+        "h": "How Jeremiah is built",
+        "body": "The book moves in large blocks rather than in strict order of time. Chapter 1 is the call: God appoints Jeremiah over nations and kingdoms ‘to uproot and tear down, to destroy and overthrow, to build and plant’ (1:10). Those six verbs are the book in small. Four of them tear down, and two build.\n\nChapters 2 to 25 are warnings and judgment on Judah: poems and sermons that expose the people's unfaithfulness, attack false trust in the temple and announce disaster from the north. The prophet's private prayers, the acted signs and words to the kings run through them, and the section ends with the cup of God's wrath and seventy years under Babylon.\n\nChapters 26 to 29 tell of conflict with priests and prophets: Jeremiah on trial for his temple sermon, the yoke he wore, his clash with the prophet Hananiah, and his letter telling the exiles to settle in Babylon. Chapters 30 to 33 are the book of comfort. Chapters 34 to 45 tell the last days of Jerusalem and after, closing with a word to Baruch. Chapters 46 to 51 are oracles against the nations, ending with Babylon. Chapter 52 retells the fall of the city.\n\nWatch for the shifts between poetry, usually God's voice or the prophet's lament, and prose, the sermons and stories. Notice how often the speaker blurs, so that God, the prophet and the ruined land seem to weep with one voice."
+      },
+      {
+        "id": "covenant-broken",
+        "h": "A covenant broken, and false security",
+        "body": "Jeremiah reads Judah's history through the covenant made at Sinai. The people have broken it by worshiping other gods and by injustice, and the curses Deuteronomy warned of are falling. God's charge in chapter 2 sets the tone: ‘They have forsaken Me, the fountain of living water, and they have dug their own cisterns’ (2:13).\n\nAgain and again Jeremiah attacks what Judah trusted instead of God. The temple was the first of these. In the temple sermon of chapter 7 he warns, ‘Do not trust in deceptive words’ (7:4), and asks whether God's house has become a den of robbers (7:11). Alliances with Egypt were another. So were the soothing words of prophets who promised peace when there was no peace, and religious ritual without obedience.\n\nThe book is a long warning that the forms of faith can become a hiding place from God himself. That warning is not aimed at a people outside the faith. It was spoken by a priest's son to his own people in the temple courts, and every generation of believers stands under it. These notes read Jeremiah's judgments on Judah as Judah's own Scripture, never as a reason to blame the Jewish people, and never as a key for calling any people's suffering deserved."
+      },
+      {
+        "id": "confessions",
+        "h": "The prophet's own prayers",
+        "body": "No other prophet lets readers hear so much of his own pain. Scattered through chapters 11 to 20 are five private prayers, often called the confessions of Jeremiah (11:18-12:6; 15:10-21; 17:14-18; 18:18-23; 20:7-18). In them Jeremiah asks why the wicked prosper, complains that he has become a man of strife, calls God a deceptive brook, prays harsh prayers against those who plot to kill him, and finally curses the day he was born.\n\nThey are not models of calm faith, and the book does not present them that way. They are permitted, honest prayer. In them a faithful man brings his anger and despair straight to God, and God answers, sometimes with comfort and sometimes with a call to stand firm and speak again. In chapter 20 Jeremiah says that when he tries to keep silent, God's word becomes ‘a fire burning in my heart, shut up in my bones’ (20:9).\n\nThe last confession ends in darkness, and the plain notes on chapter 20 handle it with the same care as the notes on Job 3.\n\nIf you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn."
+      },
+      {
+        "id": "true-false",
+        "h": "True and false prophets",
+        "body": "Jeremiah is surrounded by prophets who say what kings and crowds want to hear. They promise peace, a quick return from exile and the broken power of Babylon. Chapter 23 attacks them for speaking visions from their own minds, and chapter 28 tells of Hananiah, who broke the wooden yoke from Jeremiah's neck and promised that the exiles would be home within two years.\n\nThe book presses the question of how to tell a true word from a false one, and its answer has several parts. A true prophet calls people to turn from evil, while false prophets strengthen the hands of evildoers. A true prophet stands in the LORD's council and does not simply repeat what the listeners want. And in the end, a word is shown to be true when it comes to pass. Both kinds of prophet said ‘declares the LORD’, so the hearers had to weigh the message itself.\n\nJeremiah's lonely faithfulness against popular religion is one of the book's central dramas. It is not a story of a good outsider against bad insiders. Jeremiah was a priest's son and spoke in the temple courts. The struggle was within the people of God."
+      },
+      {
+        "id": "seek-the-city",
+        "h": "Seek the peace of the city",
+        "body": "In 597 BC many of Judah's leaders were already in Babylon. Prophets there promised a quick return. Jeremiah wrote them a letter (chapter 29) telling them to build houses, plant gardens, marry and have children, and ‘Seek the prosperity of the city to which I have sent you as exiles’ (29:7). They were to pray for Babylon, because their own welfare was bound up with it. God would bring them home, but only after seventy years.\n\nThe same letter holds the most quoted verse in the book: ‘For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope’ (29:11). It was spoken to a whole community facing seventy years of exile, most of whom would die before it came true. It is a promise to God's people through suffering, not a guarantee of an individual's success, and it does not promise anyone that hardship will not come.\n\nJeremiah's call to surrender to Babylon was a word for a particular moment, given to particular kings. It is not a general rule about politics, and it is not a rule that God always wants submission to an oppressor. The book itself turns to judge Babylon in chapters 50 and 51."
+      },
+      {
+        "id": "new-covenant",
+        "h": "Rachel's tears and the new covenant",
+        "body": "Chapters 30 to 33 are a small book of comfort set in the middle of the book of ruin. Jeremiah hears Rachel, the mother of Joseph and Benjamin, weeping in Ramah for her children who are gone, and God tells her to stop weeping, because they will come back (31:15-17). While the Babylonian army surrounds Jerusalem, Jeremiah buys a field in Anathoth and seals the deed in a clay jar, a sign that houses and fields will again be bought in the land (chapter 32).\n\nThen comes the promise the New Testament claims more directly than almost any other. God will make a new covenant with the house of Israel and the house of Judah, not like the one they broke. ‘I will put My law in their minds and inscribe it on their hearts. And I will be their God, and they will be My people’ (31:33). Everyone will know the LORD, and he will forgive their sins.\n\nJesus took the cup at the Last Supper and called it ‘the new covenant in My blood’ (Luke 22:20), and Hebrews 8 quotes the promise in full. Christians differ on how the promise to Israel and Judah reaches the church, and Jewish readers have read it as the covenant of Sinai at last kept faithfully. The plain notes on chapter 31 set out those readings. None of them gives anyone room for contempt toward the Jewish people, to whom the promise was first made."
+      },
+      {
+        "id": "nations",
+        "h": "The nations, and Babylon's turn",
+        "body": "Jeremiah was appointed a prophet to the nations (1:5), and chapters 46 to 51 speak to them: Egypt, the Philistines, Moab, Ammon, Edom, Damascus, Kedar, Elam, and at greatest length Babylon itself. The God of little Judah governs empires. Babylon is his servant for a season, the nations drink the cup of his wrath, and then Babylon falls.\n\nThese oracles are hard reading. Some call for whole armies to be destroyed, and some picture God's judgment as a sacrifice or a harvest. They are poetry of judgment on ancient powers for their pride and cruelty. Yet the same chapters show God weeping for Moab (48:31-36) and promising to restore Moab, Ammon and Elam in later days.\n\nThe oracles against Babylon close with a scroll tied to a stone and thrown into the Euphrates, a sign that Babylon would sink and never rise (51:63-64). Babylon was taken by Cyrus in 539 BC almost without a battle, and the plain notes on chapters 50 and 51 say how readers have weighed that against the poems.\n\nThese words concern Egypt, Moab, Edom and Babylon as ancient nations. These notes draw no line from them to any nation or state of the present day."
+      },
+      {
+        "id": "nt",
+        "h": "How the New Testament reads Jeremiah",
+        "body": "The New Testament draws on Jeremiah in a few clear places. The new covenant of 31:31-34 is the plainest. Jesus speaks of the cup as the new covenant in his blood (Luke 22:20; 1 Corinthians 11:25), and Hebrews 8 quotes the promise in full as the covenant Christ mediates, and returns to it in Hebrews 10.\n\nWhen Jesus cleared the temple, he joined Isaiah's house of prayer with Jeremiah's den of robbers (7:11; Matthew 21:13). Matthew reads Rachel weeping in Ramah beside the grief of Bethlehem's mothers when Herod killed their children (31:15; Matthew 2:17-18). Paul takes up the one thing worth boasting in, to know the LORD (9:24), when he writes, ‘Let him who boasts boast in the Lord’ (1 Corinthians 1:31).\n\nSome in Jesus' day wondered whether he was Jeremiah (Matthew 16:14). Readers have long noticed the likeness: a prophet who wept over Jerusalem, warned that the temple had become a den of robbers, and was rejected by his own people. The New Testament does not call that likeness a prediction, and these notes draw no line from Jeremiah to Christ that the New Testament does not draw itself."
+      },
+      {
+        "id": "how-to-read",
+        "h": "How to read Jeremiah",
+        "body": "Jeremiah is long and not strictly in order of time, so read with a map of its parts and the kings' names in mind: Josiah, Jehoahaz, Jehoiakim, Jehoiachin and Zedekiah. When a chapter gives a date, use it to place the chapter in the story.\n\nRead the poems slowly, and let the pictures work: the broken cisterns, the almond branch, the potter's wheel, the balm in Gilead. Read the prose stories as stories, with their tension and their cost. Read the confessions as prayer, not as doctrine.\n\nSome passages are very hard. Jeremiah's poems picture faithless Judah as an unfaithful wife and a woman exposed. These are pictures of a city and a covenant, and they give no warrant for any man to shame or harm any woman. Some passages name the horrors of the siege, and these notes name them without describing them. The oracles against the nations call for judgment on ancient powers, and they draw no line to any people today.\n\nAbove all, read Jeremiah as the book of a man who would not stop telling the truth, and of a God who, after uprooting and tearing down, promised to build and to plant."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 5,
+        "ref": "1:5",
+        "line": "Known before he was formed in the womb: whether God plans every detail of every life, and what the verse does and does not say."
+      },
+      {
+        "ch": 3,
+        "v": 1,
+        "ref": "3:1-13",
+        "line": "Judah pictured as a faithless wife: a picture of a city and a covenant, never a warrant to shame or harm a woman."
+      },
+      {
+        "ch": 4,
+        "v": 10,
+        "ref": "4:10",
+        "line": "Jeremiah says God deceived the people by promising peace. Does God deceive?"
+      },
+      {
+        "ch": 7,
+        "v": 22,
+        "ref": "7:21-23",
+        "line": "Did God never command sacrifice? How the temple sermon sets obedience above offerings."
+      },
+      {
+        "ch": 10,
+        "v": 3,
+        "ref": "10:1-16",
+        "line": "Idols mocked as wood and metal: a word against idolatry, not leave for contempt toward people of other faiths."
+      },
+      {
+        "ch": 11,
+        "v": 14,
+        "ref": "11:14",
+        "line": "Why God forbids Jeremiah to pray for the people."
+      },
+      {
+        "ch": 12,
+        "v": 1,
+        "ref": "12:1-6",
+        "line": "Why do the wicked prosper? God's answer that is not quite an answer."
+      },
+      {
+        "ch": 13,
+        "v": 22,
+        "ref": "13:20-27",
+        "line": "A city pictured as a woman exposed: never a warrant to shame or harm any woman."
+      },
+      {
+        "ch": 15,
+        "v": 18,
+        "ref": "15:15-21",
+        "line": "Jeremiah calls God a deceptive brook, and God calls him to turn back."
+      },
+      {
+        "ch": 16,
+        "v": 2,
+        "ref": "16:1-9",
+        "line": "No wife, no children, no funeral: a life made into a sign."
+      },
+      {
+        "ch": 18,
+        "v": 21,
+        "ref": "18:19-23",
+        "line": "A prophet prays for his enemies' children to starve: a prayer the Bible records, not a pattern."
+      },
+      {
+        "ch": 19,
+        "v": 9,
+        "ref": "19:9",
+        "line": "The horror of siege named, not described: no child's suffering is a verdict on the child."
+      },
+      {
+        "ch": 20,
+        "v": 14,
+        "ref": "20:14-18",
+        "line": "Jeremiah curses the day he was born: honest despair, met with care, with a path to help."
+      },
+      {
+        "ch": 21,
+        "v": 9,
+        "ref": "21:8-10",
+        "line": "Was Jeremiah a traitor for telling his people to surrender?"
+      },
+      {
+        "ch": 22,
+        "v": 30,
+        "ref": "22:24-30",
+        "line": "No descendant of Coniah on David's throne, and Matthew's genealogy."
+      },
+      {
+        "ch": 25,
+        "v": 11,
+        "ref": "25:11-12",
+        "line": "How the seventy years add up, and how to read the number."
+      },
+      {
+        "ch": 27,
+        "v": 12,
+        "ref": "27:12-15",
+        "line": "Submit to Babylon: a word for one moment, not a rule that God wants submission to every oppressor."
+      },
+      {
+        "ch": 29,
+        "v": 11,
+        "ref": "29:11",
+        "line": "Plans to prosper you: a promise to a people in exile, not a guarantee of personal success."
+      },
+      {
+        "ch": 31,
+        "v": 31,
+        "ref": "31:31-34",
+        "line": "A new covenant with Israel and Judah: Jewish and Christian readings, with no room for contempt."
+      },
+      {
+        "ch": 32,
+        "v": 35,
+        "ref": "32:35",
+        "line": "Child sacrifice in the Valley of Hinnom, something God says never entered his mind."
+      },
+      {
+        "ch": 44,
+        "v": 17,
+        "ref": "44:15-19",
+        "line": "The Queen of Heaven: when experience seems to argue against God."
+      },
+      {
+        "ch": 48,
+        "v": 10,
+        "ref": "48:10",
+        "line": "A curse on whoever holds back the sword, while God weeps for Moab."
+      },
+      {
+        "ch": 50,
+        "v": 39,
+        "ref": "50:39-40",
+        "line": "Babylon never inhabited again, though Cyrus took it almost without a battle."
+      },
+      {
+        "ch": 51,
+        "v": 20,
+        "ref": "51:20-24",
+        "line": "Calls for Babylon's destruction: judgment on an ancient empire, no line to any nation today."
+      }
+    ],
+    "words": [
+      {
+        "word": "Covenant (berit)",
+        "line": "The binding bond between God and his people, broken at Sinai's terms and promised new in 31:31-34."
+      },
+      {
+        "word": "Return (shuv)",
+        "line": "Jeremiah's key word, used for turning back to God and for coming home from exile (3:12; 30:3)."
+      },
+      {
+        "word": "Peace (shalom)",
+        "line": "Well-being; the false prophets cried peace when there was none (6:14), and the exiles were to seek the city's peace (29:7)."
+      },
+      {
+        "word": "Uproot and plant",
+        "line": "The six verbs of Jeremiah's call, four to tear down and two to build (1:10), echoed through the book (31:28)."
+      },
+      {
+        "word": "Heart (lev)",
+        "line": "The seat of will and thought: deceitful above all things (17:9), and the place where the new covenant is written (31:33)."
+      },
+      {
+        "word": "Stubbornness of heart",
+        "line": "Jeremiah's phrase for walking by one's own plans instead of God's word (7:24; 9:14)."
+      },
+      {
+        "word": "Lie (sheqer)",
+        "line": "Falsehood, Jeremiah's word for false prophets and false trust (7:4; 28:15)."
+      },
+      {
+        "word": "Cistern",
+        "line": "A pit cut to hold rainwater; Judah dug broken ones (2:13), and Jeremiah was dropped into one (38:6)."
+      },
+      {
+        "word": "Branch (tsemach)",
+        "line": "The righteous shoot God will raise up for David, whose name says the LORD is his people's righteousness (23:5-6; 33:15)."
+      },
+      {
+        "word": "The north",
+        "line": "The direction of the coming disaster, a boiling pot tilting from the north (1:13-14)."
+      },
+      {
+        "word": "Remnant",
+        "line": "Those left after judgment, whom God will gather again (23:3)."
+      },
+      {
+        "word": "Yoke",
+        "line": "The wooden bar Jeremiah wore as a sign of submission to Babylon, broken by Hananiah (27:2; 28:10)."
+      },
+      {
+        "word": "Balm in Gilead",
+        "line": "A healing resin from Gilead; the prophet asks why his people are not healed (8:22)."
+      },
+      {
+        "word": "Seventy years",
+        "line": "The time of Babylon's rule (25:11; 29:10), read again by Daniel (Daniel 9:2)."
+      },
+      {
+        "word": "Cup of wrath",
+        "line": "The picture of judgment handed to the nations to drink (25:15)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 640 BC",
+        "what": "Josiah becomes king of Judah as a boy.",
+        "kind": "world"
+      },
+      {
+        "when": "About 627 BC",
+        "what": "In Josiah's thirteenth year, the word of the LORD comes to Jeremiah (1:2).",
+        "kind": "story"
+      },
+      {
+        "when": "622 BC",
+        "what": "A book of the law is found in the temple, and Josiah's reform gathers force (2 Kings 22 and 23).",
+        "kind": "world"
+      },
+      {
+        "when": "612 BC",
+        "what": "Nineveh, Assyria's capital, falls to the Babylonians and Medes.",
+        "kind": "world"
+      },
+      {
+        "when": "609 BC",
+        "what": "Josiah is killed at Megiddo confronting Pharaoh Necho II; Egypt puts Jehoiakim on the throne.",
+        "kind": "world"
+      },
+      {
+        "when": "605 BC",
+        "what": "Nebuchadnezzar defeats Egypt at Carchemish (46:2). Jeremiah dictates his scroll to Baruch, and Jehoiakim burns it (chapter 36).",
+        "kind": "story"
+      },
+      {
+        "when": "597 BC",
+        "what": "Jehoiachin surrenders Jerusalem; the king, the royal family and many leaders, Ezekiel among them, are taken to Babylon.",
+        "kind": "world"
+      },
+      {
+        "when": "After 597 BC",
+        "what": "Jeremiah writes to the exiles to settle in Babylon and seek its peace (chapter 29), and confronts Hananiah (chapter 28).",
+        "kind": "story"
+      },
+      {
+        "when": "588 to 587 BC",
+        "what": "Babylon besieges Jerusalem. Jeremiah buys a field at Anathoth (chapter 32) and is thrown into a cistern (chapter 38).",
+        "kind": "story"
+      },
+      {
+        "when": "587 or 586 BC",
+        "what": "Jerusalem falls; the city and temple are burned (chapters 39 and 52).",
+        "kind": "world"
+      },
+      {
+        "when": "1930s",
+        "what": "Letters on clay found at Lachish, written by a Judean officer in the last months, are published.",
+        "kind": "book"
+      },
+      {
+        "when": "After 586 BC",
+        "what": "Gedaliah governs at Mizpah and is murdered; a remnant flees to Egypt, taking Jeremiah (chapters 40 to 43).",
+        "kind": "story"
+      },
+      {
+        "when": "About 561 BC",
+        "what": "The exiled King Jehoiachin is released from prison in Babylon (52:31); the book is completed no earlier than this.",
+        "kind": "book"
+      },
+      {
+        "when": "539 BC",
+        "what": "Cyrus of Persia takes Babylon.",
+        "kind": "world"
+      },
+      {
+        "when": "538 BC",
+        "what": "Cyrus allows the exiles to return; Ezra 1:1 calls it the fulfillment of the word spoken through Jeremiah.",
+        "kind": "story"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "Judah and its neighbors in Jeremiah's day",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "7:2",
+              "39:8"
+            ],
+            "line": "The city of the temple sermon (7:2), besieged and burned (39:8).",
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "bethlehem",
+            "name": "Bethlehem",
+            "lat": 31.705,
+            "lon": 35.2,
+            "refs": [
+              "41:17"
+            ],
+            "line": "The survivors stopped near Bethlehem on their way to Egypt (41:17).",
+            "label": {
+              "dx": -10,
+              "dy": 8,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "jericho",
+            "name": "Jericho",
+            "lat": 31.871,
+            "lon": 35.444,
+            "refs": [
+              "39:5"
+            ],
+            "line": "Zedekiah was overtaken in the plains of Jericho as he fled (39:5).",
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "bethel",
+            "name": "Bethel",
+            "lat": 31.93,
+            "lon": 35.22,
+            "refs": [
+              "48:13"
+            ],
+            "line": "The northern shrine whose trust shamed Israel (48:13).",
+            "label": {
+              "dx": -10,
+              "dy": -2,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "shechem",
+            "name": "Shechem",
+            "lat": 32.213,
+            "lon": 35.282,
+            "refs": [
+              "41:5"
+            ],
+            "line": "Mourners came from Shechem, Shiloh and Samaria to bring offerings after the fall (41:5).",
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "gilead",
+            "name": "Gilead",
+            "lat": 32.4,
+            "lon": 35.82,
+            "refs": [
+              "8:22",
+              "22:6"
+            ],
+            "line": "The land east of the Jordan known for its balm: ‘Is there no balm in Gilead?’ (8:22). Drawn roughly, as a region.",
+            "region": true
+          },
+          {
+            "id": "philistia",
+            "name": "Philistia",
+            "lat": 31.6,
+            "lon": 34.55,
+            "refs": [
+              "47:1"
+            ],
+            "line": "The Philistine coast of chapter 47. Drawn roughly, as a region with its name only.",
+            "region": true,
+            "label": {
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "moab",
+            "name": "Moab",
+            "lat": 31.45,
+            "lon": 35.8,
+            "refs": [
+              "48:1"
+            ],
+            "line": "The land east of the Dead Sea, judged and wept over in chapter 48. Drawn roughly, as a region with its name only.",
+            "region": true,
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "edom",
+            "name": "Edom",
+            "lat": 30.95,
+            "lon": 35.6,
+            "refs": [
+              "49:7"
+            ],
+            "line": "The land south and east of the Dead Sea (49:7-22). Drawn roughly, as a region with its name only; no people of the present day is meant.",
+            "region": true,
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "tyre",
+            "name": "Tyre",
+            "lat": 33.27,
+            "lon": 35.2,
+            "refs": [
+              "47:4"
+            ],
+            "line": "The Phoenician port named with Sidon in the word against the Philistines (47:4)."
+          },
+          {
+            "id": "damascus",
+            "name": "Damascus",
+            "lat": 33.513,
+            "lon": 36.27,
+            "refs": [
+              "49:23"
+            ],
+            "line": "Capital of Aram, the subject of 49:23-27.",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          }
+        ]
+      },
+      {
+        "frame": "fertile-crescent",
+        "title": "From Egypt to Babylon",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "1:3",
+              "52:12"
+            ],
+            "line": "Judah's capital, between the two powers.",
+            "label": {
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "egypt",
+            "name": "Egypt",
+            "lat": 30.2,
+            "lon": 31.2,
+            "region": true,
+            "refs": [
+              "2:18",
+              "43:7"
+            ],
+            "line": "The power Judah kept turning to (2:18), where the last survivors fled with Jeremiah (43:7). Drawn roughly, as a region with its name only.",
+            "label": {
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "babylon",
+            "name": "Babylon",
+            "lat": 32.54,
+            "lon": 44.42,
+            "refs": [
+              "29:7",
+              "51:64"
+            ],
+            "line": "The city whose peace the exiles were to seek (29:7), and which would sink and never rise (51:64). Drawn at its ruin mounds near Hillah.",
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
+          }
+        ]
+      }
+    ],
+    "mapNote": "Ancient sites are placed at their ruin mounds; Gilead, Philistia, Moab, Edom and Egypt are drawn roughly, as regions with names only. Anathoth, Mizpah, Ramah, Lachish, Tahpanhes, Carchemish and Elam are left off, because the site's records do not place them. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-prophets",
+        "name": "Reading the Prophets",
+        "line": "True and false prophets, and how prophecy speaks to its own day",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-poetry",
+        "name": "Reading Hebrew Poetry",
+        "line": "For the poems of judgment and lament",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "Josiah to Zedekiah, and how their dates are worked out",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/empires",
+        "name": "The Empires Around Israel",
+        "line": "Egypt, Assyria and Babylon, and what their own records say",
+        "icon": "world"
+      },
+      {
+        "href": "/study/bible/guides/how-we-got-the-old-testament",
+        "name": "How We Got the Old Testament",
+        "line": "The two editions of Jeremiah and the Dead Sea Scrolls",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/doctrines/covenant",
+        "name": "Covenant",
+        "line": "The covenant broken at Sinai's terms, and the new covenant of chapter 31",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/repentance",
+        "name": "Repentance",
+        "line": "Jeremiah's call to return",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/exile",
+        "name": "Exile and Restoration",
+        "line": "Seventy years, and the promise of return",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/suffering",
+        "name": "Suffering",
+        "line": "The prophet's own prayers, and faith in the dark",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/prophecy",
+        "name": "Prophecy",
+        "line": "How a true word is known",
+        "icon": "book"
+      },
+      {
+        "href": "/help/suffering",
+        "name": "Why would God let this happen?",
+        "line": "The Find Help page, for a reader carrying the book's hard questions",
+        "icon": "people"
+      }
+    ]
+  }
 }

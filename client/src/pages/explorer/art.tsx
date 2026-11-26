@@ -1069,6 +1069,53 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M50,62c0,-14 -2,-24 2,-34c-8,2 -14,-4 -14,-10c8,0 14,4 15,9c2,-8 8,-12 16,-11c0,7 -6,12 -15,12c-2,10 -1,20 -1,34Z" />
     </>
   ),
+  /* Galatians: an open gate in a wall, with a gold light beyond. */
+  "book-galatians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M12,84V40H88V84Z" tone="c" off={0.8} />
+      <path className="pl-paper" d="M36,84V56c0,-18 28,-18 28,0V84Z" />
+      <path className="pl-m" d="M44,62a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" />
+      <path className="pl-l" d="M36,84V56c0,-18 28,-18 28,0V84ZM44,62a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" />
+      <path className="pl-l" d="M12,40h8v-6h8v6h8v-6h8M56,40h8v-6h8v6h8v-6h8v6" />
+    </>
+  ),
+  /* Colossians: one ring holding a sun, the hills and the sea, the sun gold. */
+  "book-colossians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M18,48a32,32 0 1,0 64,0a32,32 0 1,0 -64,0Z" />
+      <path className="pl-m" d="M43,32a7,7 0 1,0 14,0a7,7 0 1,0 -14,0Z" />
+      <path className="pl-l" d="M43,32a7,7 0 1,0 14,0a7,7 0 1,0 -14,0Z" />
+      <path className="pl-l" d="M24,54C32,44 40,46 48,52C56,44 66,44 76,54" />
+      <path className="pl-f" d="M28,64q5,-4 10,0t10,0t10,0t10,0t8,0" />
+    </>
+  ),
+  /* 1 Peter: a house of stones on its cornerstone, the cornerstone gold. */
+  "book-1-peter": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M22,84V40H78V84Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M22,73H78M22,62H78M22,51H78M36,84V73M50,84V73M64,84V73M43,73V62M57,73V62M71,73V62M36,62V51M50,62V51M64,62V51" />
+      <path className="pl-m" d="M22,84V73H36V84Z" />
+      <path className="pl-l" d="M22,84V73H36V84Z" />
+      <path className="pl-l" d="M16,40H84L50,18Z" />
+    </>
+  ),
+  /* 1 John: a lamp burning at night among stars, its flame gold. */
+  "book-1-john": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M20,24l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1ZM78,30l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1Z" />
+      <Shape d="M28,70c0,10 14,12 26,12c14,0 24,-4 26,-12l-8,-2c-10,-2 -30,-4 -44,2Z" tone="c" off={0.8} />
+      <path className="pl-m" d="M70,64c6,-8 8,-14 4,-22c-6,6 -10,12 -4,22Z" />
+      <path className="pl-l" d="M70,64c6,-8 8,-14 4,-22c-6,6 -10,12 -4,22ZM28,72c-10,-2 -10,10 2,6" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

@@ -1741,6 +1741,74 @@
       "book": "jeremiah"
     },
     {
+      "slug": "book-galatians",
+      "title": "Galatians: nothing added to Christ",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "An urgent letter about who belongs to God's family: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Galatians as a whole book: an urgent letter, the question of who belongs, Abraham and the law, one table, freedom and the fruit of the Spirit, and where to begin."
+      },
+      "mark": "book-galatians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "galatians"
+    },
+    {
+      "slug": "book-colossians",
+      "title": "Colossians: complete in Christ",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short letter about how great Jesus is: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Colossians as a whole book: a letter to a church Paul never saw, the song of Christ, fullness, putting off and putting on, life in the Lord, and where to begin."
+      },
+      "mark": "book-colossians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "colossians"
+    },
+    {
+      "slug": "book-1-peter",
+      "title": "1 Peter: hope for strangers",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A letter of hope to people who felt like strangers in their own towns: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Peter as a whole book: a letter to strangers, a living hope, God's people, doing good without striking back, casting every care on God, and where to begin."
+      },
+      "mark": "book-1-peter",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-peter"
+    },
+    {
+      "slug": "book-1-john",
+      "title": "1 John: so that you may know",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short letter from an old pastor to churches that had been shaken: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 John as a whole book: a sermon to shaken churches, themes that circle back, hands that touched, three marks of knowing God, sin and forgiveness, God is love, and where to begin."
+      },
+      "mark": "book-1-john",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-john"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

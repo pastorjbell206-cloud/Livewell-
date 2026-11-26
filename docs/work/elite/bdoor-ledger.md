@@ -25015,3 +25015,95 @@ Cut in chapter 11: the deep note's lines to Luke 24:50-51 and Acts 1:12 beside t
 | Later: Habakkuk 2:3; Isaiah 5:19 | 17-28 `later` | BSB | BSB text |
 
 Cut in chapter 12: 2 Peter 3:4 beside the scoffers' proverb, replaced with Isaiah 5:19.
+
+## Isaiah and Daniel maps widened (2026-11-26)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Babylon 32.54 N, 44.42 E; Susa 32.19 N, 48.26 E; regions with names only; ruin-mound note | Isaiah and Daniel maps | the coordinator's direction | validate-bible-notes |
+| Nineveh 36.36 N, 43.15 E | Isaiah map | jonah, nahum and zephaniah intro.json | Repository |
+| Place lines' references (Isaiah 11:14, 14:29, 15:1, 16:6, 34:6, 63:1, 19:1, 30:2, 10:5, 37:37, 13:19, 39:1-6, 47:1; Daniel 1:1, 9:2, 4:30, 5:30, 8:2, 11:8, 11:42) | map lines | BSB | BSB text |
+
+## The Jeremiah book page (2026-11-26)
+
+`client/public/bible/notes/jeremiah/intro.json`, field `teaching`. No web searches. Every quotation is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Overview, the end of Judah, the acted signs, the confessions, the book of comfort | parts 1, 6, 8 | jeremiah/intro.json `overview`, `structure`, `reading`, `themes` | Repository |
+| Hinge of the story; Zephaniah, Habakkuk, Ezekiel; Ezra 1:1 and 2 Chronicles 36:22; Daniel 9:2; Jehoiachin at the king's table (52:33) | part 2 | jeremiah/intro.json `story`; BSB | Repository, BSB text |
+| Hilkiah, Anathoth, Baruch, the scroll of about 605 BC; Mowinckel 1914; editors; 627 BC; about 561 BC | part 3 | jeremiah/intro.json `author`, `date` | Repository |
+| The two editions; one seventh shorter; 33:14-26; oracles after 25:13; Dead Sea fragments; Tov | part 4 | jeremiah/intro.json `reading` | Repository |
+| Josiah 640 to 609; 622; 612; Megiddo, Necho II; Carchemish 605; Jehoiakim 609 to 598; 597 and the Babylonian Chronicle; Zedekiah 597 to 586; Lachish letters 1930s; Gedaliah; Egypt | part 5, timeline | jeremiah/intro.json `setting` | Repository |
+| Six verbs (1:10); the blocks of the book | part 6 | BSB; jeremiah/intro.json `structure` | BSB text, Repository |
+| 2:13, 7:4, 7:11, 20:9, 29:7, 29:11, 31:33, Luke 22:20 | parts 7 to 11 | BSB | BSB text |
+| 29:11 as a promise to a people in exile; surrender a word for one moment | part 10 | jeremiah/intro.json `reading` | Repository |
+| Jewish and Christian readings of 31:31-34 | part 11 | jeremiah/31.json `hard` | Repository |
+| Moab, Ammon and Elam restored (48:47; 49:6; 49:39); God wails for Moab (48:31); 51:63-64; 539 BC | part 12 | BSB; jeremiah/50.json `hard` | BSB text, Repository |
+| Luke 22:20, 1 Corinthians 11:25, Hebrews 8 and 10, Matthew 21:13, Matthew 2:17-18, 1 Corinthians 1:31, Matthew 16:14 | part 13 | BSB; jeremiah/intro.json `christ` | BSB text |
+| The SUFFERING care line, byte for byte | part 8 | carelines.json (from the site) | care.mjs |
+| Hard passages: each from that chapter's deep note `hard` | hard list | jeremiah/<n>.json | Repository |
+| Map: Jerusalem, Bethlehem, Jericho, Bethel, Shechem, Tyre, Damascus, Gilead at the site's points; Philistia, Moab, Edom, Egypt as regions; Babylon at its ruin mounds (32.54 N, 44.42 E) | map | the site's other maps; the coordinator's direction; BSB for each reference | Repository, BSB text |
+
+Cut on the book page: a claim that Jeremiah uses the word for falsehood more than any other book (no source). The New Testament lines drawn are only those the New Testament draws itself.
+
+## The plain notes on Jeremiah 1 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1-19 (verse 12 paraphrased around the BSB's speech marks) | all | BSB | BSB text |
+| 627 to 587 or 586 BC; Josiah about 640 to 609, 622 BC; the kings; Anathoth a priests' village | 1-3 | jeremiah/1.json `historical` | Repository |
+| The word for child; age and standing; the touched mouth, Isaiah 6:7, Deuteronomy 18:18; almond and shaqed; armies from the north | 4-19 | jeremiah/1.json `cultural` | Repository |
+| Reformed and other readings of verse 5; Psalm 139 | 4-10 `hard` | jeremiah/1.json `hard` | Repository |
+| The CHILDLOSS care line, byte for byte | 4-10 `hard` | carelines.json (from the site) | care.mjs |
+| Ezra 1:1, Deuteronomy 18:18, Galatians 1:15, Joshua 1:5 (clauses); Jeremiah 38:13 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 1: the deep note's lines to Christ the New Testament does not draw (Acts 3:22-23 and John 1:14 beside the call); Galatians 1:15 is given only as Paul's own words about his call.
+
+## The plain notes on Jeremiah 2 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1-37 (verse 27's cry paraphrased around inner speech marks) | all | BSB | BSB text |
+| Early preaching under Josiah; Assyria before 609 BC; Ahaz and later kings; Memphis and Tahpanhes; the shaved head | 1-28 | jeremiah/2.json `historical` | Repository |
+| Springs and cisterns; Baal, hill shrines, poles and stones; the lawsuit form | 1-28 | jeremiah/2.json `cultural`, `summary` | Repository |
+| The city-and-covenant statement; the HURT care line, byte for byte | 14-28 `hard` | the coordinator's direction; carelines.json | care.mjs |
+| Hosea 2:15, Psalm 115:8, Isaiah 30:2, 1 John 1:8, Ezekiel 29:6 (clauses); Psalm 80:8 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 2: John 4 and John 7 on living water, which the New Testament does not tie to 2:13; a claim about the word for worthless and a clause about the law on thieves, both unsourced, cut before commit.
+
+## The plain notes on Jeremiah 3 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1-25 (verses 1, 19 and 22 partly paraphrased around inner speech marks) | all | BSB | BSB text |
+| Deuteronomy 24:1-4; spring rains; Baal and rain; Josiah about 640 to 609; 722 BC; Bethel; pretense | 1-10 | jeremiah/3.json `cultural`, `historical` | Repository |
+| The feminist objection and the answer; the whole nation and its male leaders | 1-10 `hard` | jeremiah/3.json `hard` | Repository |
+| The city-and-covenant statement; the abusive-marriage care line, byte for byte | 1-10 `hard` | the coordinator's direction; hosea/plain/2.json | care.mjs |
+| Call to the north; shuv; man after God's heart; the ark disappearing | 11-18 | jeremiah/3.json `historical`, `christ` | Repository |
+| Boshet for Baal, Eshbaal and Ish-bosheth | 19-25 | jeremiah/3.json `cultural` | Repository |
+| Deuteronomy 24:4, 2 Kings 23:15 (named), 1 Samuel 13:14, Isaiah 2:2, Hosea 14:2, Luke 15:21 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 3: John 10:11 and the deep note's other lines to Christ, which the New Testament does not draw from this chapter.
+
+## The plain notes on Jeremiah 4 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1-31 (verses 2 and 31 partly paraphrased) | all | BSB | BSB text |
+| Circumcision of the heart, Deuteronomy 10:16; shofar and signal flag; sackcloth | 1-9 | jeremiah/4.json `cultural` | Repository |
+| The unnamed foe; Scythians and Herodotus; Babylon by the northern road; Dan and Ephraim | 1-22 | jeremiah/4.json `historical` | Repository |
+| The sirocco and winnowing | 10-22 | jeremiah/4.json `cultural` | Repository |
+| Two readings of verse 10; 14:13-15, 23:16-17, 1 Kings 22, 2 Thessalonians 2:11 | 10-22 `hard` | jeremiah/4.json `hard` | Repository |
+| Genesis 1:2 behind verse 23; no full end | 23-31 | jeremiah/4.json `summary`; BSB | BSB text |
+| Deuteronomy 10:16, Romans 2:29, Romans 9:2, Genesis 1:2 (clauses); Isaiah 41:16 and 13:8 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 4: Galatians 3:8 and 14 beside verse 2, which the New Testament does not draw from this chapter.

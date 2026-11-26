@@ -1735,6 +1735,10 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-judges",
     "book-1-samuel",
     "book-jeremiah",
+    "book-galatians",
+    "book-colossians",
+    "book-1-peter",
+    "book-1-john",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2507,5 +2511,52 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     const younger = f.frames.map(fr => fr.younger).join(" ");
     expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|army/i);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/siege|fire|flame|ruin|army|soldier|burn/i);
+  });
+
+  it("Galatians says at both levels that the quarrel was among Jewish believers, holds no people in contempt, and takes no side on its debated phrases", () => {
+    const f = filmFile("book-galatians");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const table = f.frames.find(x => x.id === "table")!;
+    expect(table.younger).toContain("It was a quarrel among Jewish believers, not between Christians and Jews.");
+    expect(table.older).toContain("It was a quarrel among Jewish believers in Jesus, not between Christians and Jews.");
+    expect(f.frames.find(x => x.id === "abraham")!.younger).toContain("the law was still God's good gift");
+    expect(f.differ?.text).toContain("the use of New Testament words to justify contempt for Jews is false");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const t = text(f);
+    expect(t).not.toMatch(/Judaizer|legalis|Jews rejected|Christ.?killers|dead religion|works.righteous Jews/i);
+  });
+
+  it("Colossians names the household passage only as the book page does, with its care on abuse and its verdict on slavery, and draws no one in the song", () => {
+    const f = filmFile("book-colossians");
+    expect(f.care).toBe(filmFile("book-ephesians").care);
+    expect(f.frames.find(x => x.id === "home")!.older).toContain("give no one a licence to control or harm another");
+    expect(f.differ?.text).toContain("Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first.");
+    expect(f.differ?.text).toContain("The words to slaves were misused for centuries to defend slavery. That misuse was wrong.");
+    expect(f.differ?.links?.map(l => l.href)).toContain("/help");
+    expect(f.frames.find(x => x.id === "song")!.still).toContain("No one is drawn.");
+    expect(f.frames.find(x => x.id === "fullness")!.older).toContain("a shadow pointing ahead, not a lie");
+  });
+
+  it("1 Peter rejects contempt for the Jewish people, never tells anyone to stay where they are harmed, and takes no side where churches differ", () => {
+    const f = filmFile("book-1-peter");
+    expect(f.care).toBe(filmFile("book-ephesians").care);
+    const people = f.frames.find(x => x.id === "people")!;
+    expect(people.younger).toContain("Peter, a Jew, gives them names from Israel's own Bible");
+    expect(people.older).toContain("Using the New Testament to justify contempt for Jews is false.");
+    expect(f.frames.find(x => x.id === "good")!.older).toContain("These chapters never say that someone being harmed must stay and bear it.");
+    expect(f.differ?.text).toContain("If you are in an abusive marriage, seek safety first.");
+    expect(f.differ?.text).toContain("Using Peter's words to slaves to defend slavery was a misuse, and it was wrong.");
+    expect(text(f)).not.toMatch(/replaced Israel|new Israel|Christ.?killers|Jews rejected/i);
+  });
+
+  it("1 John is written for assurance, names no one of today as an antichrist, and takes no side where readers differ", () => {
+    const f = filmFile("book-1-john");
+    expect(f.care).toBe(filmFile("grace").care);
+    expect(f.frames.find(x => x.id === "marks")!.younger).toContain("to help them feel sure, not afraid");
+    expect(f.frames.find(x => x.id === "start")!.verse?.text).toBe("so that you may know that you have eternal life.");
+    expect(f.differ?.text).toContain("names no one living today");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(text(f)).not.toMatch(/\b(pope|emperor|sultan|president|dictator|Rome is)\b/i);
+    expect(f.frames.find(x => x.id === "touched")!.still).toContain("No one is drawn in the light.");
   });
 });
