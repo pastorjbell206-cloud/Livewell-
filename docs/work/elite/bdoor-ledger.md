@@ -25696,3 +25696,19 @@ Cut in chapter 30: nothing.
 | The hard note: Egypt was not destroyed like Assyria. Did this prophecy fail? The readings in their holders' terms | 10-18 `hard` | ezekiel/31.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 31: nothing.
+
+## The plain notes on Ezekiel 32 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A lament for Pharaoh, the monster in the seas: the text paraphrased; quoted clauses at verses 2, 3-6, 7, 7-8, 11, 12-16 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/32.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 10:21-22; Isaiah 14:9 | 1-16 `later` | BSB | BSB text |
+| The nations in the Pit: the text paraphrased; quoted clauses at verses 18, 21, 22-30, 31, 32 | 17-32 | BSB | BSB text |
+| Background in `hearers` | 17-32 | ezekiel/32.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 14:10; Daniel 12:2 | 17-32 `later` | BSB | BSB text |
+| The hard note: Does this chapter teach what the afterlife is like? The readings in their holders' terms | 17-32 `hard` | ezekiel/32.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 32: nothing drawn to the New Testament.
