@@ -1,0 +1,142 @@
+{
+ "length": 103.78,
+ "chapters": [
+  {
+   "id": "library",
+   "kicker": "One book, many books",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 15.7,
+   "lines": [
+    {
+     "text": "The Bible isn't really one book. It's a library.",
+     "start": 2.6,
+     "end": 5.82
+    },
+    {
+     "text": "The Protestant Bible, the one most English readers hold, has sixty-six books. Catholic and Orthodox Bibles include more in the Old Testament.",
+     "start": 6.32,
+     "end": 14.8
+    }
+   ]
+  },
+  {
+   "id": "two",
+   "kicker": "Two parts",
+   "level": 0.35,
+   "start": 14.9,
+   "end": 26.26,
+   "lines": [
+    {
+     "text": "It comes in two parts. Thirty-nine books in the Old Testament and twenty-seven in the New, written in three languages: Hebrew, a little Aramaic, and Greek.",
+     "start": 15.8,
+     "end": 25.36
+    }
+   ]
+  },
+  {
+   "id": "law-history",
+   "kicker": "Law and history",
+   "level": 0.5,
+   "start": 25.46,
+   "end": 35.86,
+   "lines": [
+    {
+     "text": "The books are shelved by kind. First come five books of law, Genesis through Deuteronomy. Then the history books, Joshua through Esther.",
+     "start": 26.36,
+     "end": 34.96
+    }
+   ]
+  },
+  {
+   "id": "poetry-prophets",
+   "kicker": "Poetry and the prophets",
+   "level": 0.6,
+   "start": 35.06,
+   "end": 48.34,
+   "lines": [
+    {
+     "text": "Next come poetry and wisdom, Job through the Song of Solomon. Then the prophets, the long books first and the twelve short ones after.",
+     "start": 35.96,
+     "end": 44.22
+    },
+    {
+     "text": "A Hebrew Bible holds the same books in a different order.",
+     "start": 44.74,
+     "end": 47.44
+    }
+   ]
+  },
+  {
+   "id": "gospels-acts",
+   "kicker": "The Gospels and Acts",
+   "level": 0.75,
+   "start": 47.54,
+   "end": 61.5,
+   "lines": [
+    {
+     "text": "The New Testament opens with four Gospels. Each one is a portrait of Jesus: his life, his teaching, his death, and his resurrection.",
+     "start": 48.44,
+     "end": 57.22
+    },
+    {
+     "text": "Then Acts carries the story from Jerusalem to Rome.",
+     "start": 57.9,
+     "end": 60.6
+    }
+   ]
+  },
+  {
+   "id": "letters",
+   "kicker": "Letters and Revelation",
+   "level": 0.85,
+   "start": 60.7,
+   "end": 74.6,
+   "lines": [
+    {
+     "text": "After that come the letters, Romans through Jude. Thirteen name Paul as their writer. Hebrews doesn't name its author. Seven more follow.",
+     "start": 61.6,
+     "end": 70.44
+    },
+    {
+     "text": "Last stands Revelation, a book of visions.",
+     "start": 71.0,
+     "end": 73.7
+    }
+   ]
+  },
+  {
+   "id": "one-story",
+   "kicker": "One story",
+   "level": 0.95,
+   "start": 73.8,
+   "end": 93.26,
+   "lines": [
+    {
+     "text": "These are different kinds of writing, and you read each kind differently. A poem isn't a law. A letter isn't a history. But together they tell one story.",
+     "start": 74.7,
+     "end": 84.5
+    },
+    {
+     "text": "The New Testament writers quote the Old on nearly every page, and they claim its story reaches its goal in Jesus of Nazareth.",
+     "start": 85.16,
+     "end": 92.36
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 92.46,
+   "end": 97.68,
+   "lines": [
+    {
+     "text": "So before you read a page, ask what shelf it came from.",
+     "start": 93.36,
+     "end": 96.78
+    }
+   ]
+  }
+ ]
+}

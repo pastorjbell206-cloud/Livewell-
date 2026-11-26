@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- "The Bible in a minute". One ink line that never leaves the screen: it draws each chapter's emblem,
+     then lets go of it from the tail while its head is already drawing the next one. A tree in a circle,
+     the circle cracked, a tent under a sky of dots, the sea parted, two tablets, a crown, a broken wall with
+     one point of light, a bare cross, an open tomb, a city with its gate open, a book.
+     The burning of Jerusalem and the crucifixion are named by the voice and never shown.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>The Bible in a minute</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, R = rng(41);
+  const T = { made: S("made"), broken: S("broken"), promise: S("promise"), rescue: S("rescue"), king: S("king"), exile: S("exile"), jesus: S("jesus"), new: S("new"), verse: S("new", 1), close: S("close") };
+  const D = (id) => E(id, 0) - S(id, 0);
+  const law = T.rescue + D("rescue") * 0.62, third = T.jesus + D("jesus") * 0.6, city = T.new + D("new") * 0.42;
+
+  // ---------- the one line: every emblem starts where the last one ended (A or B on the ground line) ----------
+  const stage = el("g", {}, world);
+  const EMB = [
+    { k: "tree", at: T.made - 0.6, dur: 3.4, off: T.promise - 0.5, d: "M380 470 H600 Q640 470 640 450 A150 150 0 1 1 640 150 A150 150 0 1 1 640 450 V345 C584 356 540 306 578 272 C566 216 636 196 652 238 C704 206 756 262 712 300 C744 344 694 356 640 345 V450 Q640 470 680 470 H900" },
+    { k: "tent", at: T.promise - 1.0, dur: 2.4, off: T.rescue - 0.5, d: "M900 470 H800 L630 196 L640 214 L650 196 L480 470 H380" },
+    { k: "sea", at: T.rescue - 1.0, dur: 2.4, off: law - 0.3, d: "M380 470 Q396 396 440 400 Q416 326 480 320 Q466 246 540 240 Q560 208 575 240 V470 H705 V240 Q720 208 740 240 Q814 246 800 320 Q864 326 840 400 Q884 396 900 470" },
+    { k: "law", at: law - 1.1, dur: 1.9, off: T.king - 0.5, d: "M900 470 H800 V280 A70 70 0 0 0 660 280 V470 H620 V280 A70 70 0 0 0 480 280 V470 H380" },
+    { k: "crown", at: T.king - 1.0, dur: 2.4, off: T.exile - 0.7, d: "M380 470 H460 V270 L540 380 L640 220 L740 380 L820 270 V470 H900" },
+    { k: "wall", at: T.exile - 0.9, dur: 2.4, off: T.jesus - 0.5, d: "M900 470 H830 V300 H780 V335 H730 V300 H690 L672 372 L640 346 L612 420 L584 398 L556 470 H380" },
+    { k: "cross", at: T.jesus - 1.0, dur: 3.0, off: third - 0.3, d: "M380 470 C480 470 560 432 640 420 V170 V252 H556 H724 H640 V420 C720 432 800 470 900 470" },
+    { k: "tomb", at: third - 1.0, dur: 1.9, off: T.new + 0.4, d: "M900 470 H840 C840 300 770 220 640 220 C510 220 440 300 440 470 H380" },
+    { k: "city", at: city - 0.9, dur: 2.8, off: T.close - 0.5, d: "M380 470 V300 h40 v-30 h40 v30 h40 v-30 h40 v30 h40 v-30 h40 v30 h40 v-30 h40 v30 h40 v-30 h40 v30 h40 v-30 h40 v30 h40 V470" },
+    { k: "book", at: T.close - 1.0, dur: 2.0, off: 1e9, d: "M900 470 H800 V236 H500 Q470 236 470 266 V440 Q470 470 500 470 H380" },
+  ];
+  EMB.forEach((e) => { e.g = el("g", {}, stage); e.p = line(e.g, e.d, { "stroke-width": 4.5 }); });
+  const G = Object.fromEntries(EMB.map((e) => [e.k, e]));
+  const strokes = (t, e, eraseDur = 1.4) => { const d = up(t, e.at, e.dur), x = up(t, e.off, eraseDur); e.p.setAttribute("stroke-dashoffset", (1 - d - x).toFixed(4)); op(e.g, d > 0 && x < 1 ? 1 : 0); return { d, x, on: up(t, e.at + e.dur * 0.7, 0.6) * (1 - up(t, e.off - 0.1, 0.5)) }; };
+  const extra = (k, d, attrs) => line(G[k].g, d, { "stroke-width": 3.5, ...(attrs || {}) });
+
+  // extras that belong to an emblem
+  const cracks = ["M640 150 L622 214 L654 262 L628 330 L650 392 L640 450", "M492 300 L548 286 L590 318 L636 300", "M650 286 L706 318 L748 296 L790 312"].map((d) => extra("tree", d, { "stroke-width": 3 }));
+  const door = extra("tent", "M604 470 L640 396 L676 470");
+  const sky = [...Array(46)].map(() => { let x, y; do { x = 150 + R() * 980; y = 112 + R() * 330; } while (x > 440 && x < 840 && y > 170); return { x, y, ph: R() * 6, r: 2.4 + R() * 2.6, e: el("circle", { fill: INK }, G.tent.g) }; });
+  const walkers = [...Array(7)].map((_, i) => ({ i, e: el("circle", { fill: INK }, G.sea.g) }));
+  const words = []; [570, 750].forEach((cx) => [300, 332, 364, 396, 428].forEach((y, j) => words.push(extra("law", `M${cx - 44} ${y} H${cx + (j === 4 ? 6 : 44)}`, { stroke: STONE, "stroke-width": 3 }))));
+  const jewels = [[460, 270], [640, 220], [820, 270]].map(([x, y]) => el("circle", { cx: x, cy: y - 16, r: 9, fill: INK }, G.crown.g));
+  const stones = [[500, 452, 12], [452, 458, -18], [540, 440, 30], [418, 462, 6]].map(([x, y, r]) => { const s = el("rect", { x: -17, y: -11, width: 34, height: 22, fill: BONE, stroke: INK, "stroke-width": 3 }, G.wall.g); s._ = [x, y, r]; return s; });
+  const hope = el("circle", { r: 9, fill: MUSTARD }, world);
+  const mouth = el("path", { d: "M584 470 V376 Q584 322 640 322 Q696 322 696 376 V470 Z", fill: CHAR }, G.tomb.g), stone = el("circle", { r: 66, fill: WARM, stroke: INK, "stroke-width": 4 }, G.tomb.g);
+  const gate = extra("city", "M580 470 V372 A60 60 0 0 1 700 372 V470", { "stroke-width": 4 }), tree2 = extra("city", "M640 470 V410 C606 410 598 366 640 356 C682 366 674 410 640 410", { "stroke-width": 3.5 });
+  const spine = extra("book", "M530 236 V470"), bTitle = [extra("book", "M600 312 H740", { stroke: STONE }), extra("book", "M620 344 H720", { stroke: STONE })], ribbon = el("path", { d: "M700 470 V512 L712 500 L724 512 V470 Z", fill: MUSTARD }, G.book.g);
+
+  // the church spreading: dots that start in the middle and go out to every edge
+  const gSpread = el("g", {}, world), spread = [...Array(64)].map((_, i) => { const a = (i / 64) * Math.PI * 2 + R() * 0.3, rr = 0.45 + R() * 0.55; return { tx: 640 + Math.cos(a) * 600 * rr, ty: 320 + Math.sin(a) * 215 * rr, w: R() * 0.9, e: el("circle", { r: 4.5, fill: INK }, gSpread) }; });
+
+  // the verse
+  const gV = el("g", {}, world), sc = SC.new.scripture;
+  const verse = txt(gV, "disp", 640, 188, `“${sc.text}”`, 60), ref = txt(gV, "lab", 640, 234, `${sc.reference.toUpperCase()} · ${sc.translation.toUpperCase()}`);
+
+  // eight ticks: how far through the story
+  const gTicks = el("g", {}, world), CH = ["made", "broken", "promise", "rescue", "king", "exile", "jesus", "new"];
+  const ticks = CH.map((id, i) => ({ at: T[id], ring: el("circle", { cx: 514 + i * 36, cy: 532, r: 6, fill: "none", stroke: LINE, "stroke-width": 2 }, gTicks), dot: el("circle", { cx: 514 + i * 36, cy: 532, r: 6, fill: INK }, gTicks) }));
+
+  F.title("The Bible in a minute");
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => {
+    stage.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 0.7)).toFixed(2)})`);
+    // made, broken
+    let s = strokes(t, G.tree); const bd = D("broken");
+    G.tree.g.setAttribute("transform", `rotate(${(-2.5 * up(t, T.broken + bd * 0.3, 1.5)).toFixed(2)} 640 470)`);
+    cracks.forEach((c, i) => { const k = up(t, T.broken + bd * (0.2 + i * 0.16), 1.0) - up(t, G.tree.off, 0.9); c.setAttribute("stroke-dashoffset", (1 - clamp(k)).toFixed(4)); });
+    // promise
+    s = strokes(t, G.tent); door.setAttribute("stroke-dashoffset", (1 - s.on).toFixed(4));
+    sky.forEach((d, i) => { const a = up(t, T.promise + D("promise") * 0.45 + (i % 12) * 0.12, 0.6) * (1 - up(t, G.tent.off - 0.2 + (i % 5) * 0.08, 0.6)); op(d.e, a * (0.6 + 0.4 * Math.sin(t * 1.7 + d.ph))); set(d.e, { cx: d.x.toFixed(1), cy: d.y.toFixed(1), r: d.r.toFixed(2) }); });
+    // rescue: the sea, then the law
+    s = strokes(t, G.sea, 1.2);
+    walkers.forEach((w) => { const k = ((t - (T.rescue + 1.8)) * 0.22 + w.i / 7) % 1, a = t > T.rescue + 1.8 ? Math.sin(Math.PI * clamp(k)) * (1 - up(t, G.sea.off - 0.3, 0.5)) : 0; op(w.e, a); set(w.e, { cx: (640 + (w.i % 3 - 1) * 26 * (1 - 0.6 * k)).toFixed(1), cy: mix(462, 286, k).toFixed(1), r: mix(9, 3.5, k).toFixed(2) }); });
+    s = strokes(t, G.law); words.forEach((w, i) => w.setAttribute("stroke-dashoffset", (1 - Math.min(up(t, G.law.at + 1.2 + i * 0.12, 0.5), 1 - up(t, G.law.off - 0.2, 0.5))).toFixed(4)));
+    // king, exile: the crown tips as the line lets go of it
+    s = strokes(t, G.crown, 1.7); G.crown.g.setAttribute("transform", `rotate(${(16 * up(t, G.crown.off - 0.5, 1.9)).toFixed(2)} 900 470)`); jewels.forEach((j, i) => op(j, Math.min(up(t, G.crown.at + 1.4 + i * 0.2, 0.4), 1 - up(t, G.crown.off - 0.4, 0.5))));
+    s = strokes(t, G.wall); stones.forEach((st, i) => { const a = up(t, G.wall.at + 1.3 + i * 0.25, 0.8); op(st, a * (1 - up(t, G.wall.off - 0.2, 0.5))); move(st, st._[0], mix(st._[1] - 70, st._[1], a), 1, mix(st._[2] - 60, st._[2], a)); });
+    // the promise that outlives the kingdom: one point of light
+    const hv = up(t, T.king + D("king") * 0.66, 0.8) * (1 - up(t, T.jesus + 1.6, 1.2)); op(hope, hv);
+    if (hv > 0) set(hope, { cx: mix(640, 640, 0).toFixed(1), cy: (mix(150, 132, up(t, T.exile - 0.6, 1.6)) + 3 * Math.sin(t * 1.3)).toFixed(1), r: (9 + 1.6 * Math.sin(t * 2.1)).toFixed(2) });
+    // jesus: the cross, then the open tomb
+    s = strokes(t, G.cross, 1.2);
+    s = strokes(t, G.tomb); const roll = up(t, third + 1.1, 1.6); op(mouth, s.on); op(stone, s.on); move(stone, mix(640, 930, roll), 404, 1, 260 * roll);
+    // new: the church spreads, then the city
+    const sv = up(t, T.new - 0.7, 0.5) * (1 - up(t, city + 0.6, 1.4)); op(gSpread, sv);
+    if (sv > 0) spread.forEach((d) => { const k = up(t, T.new - 0.6 + d.w, 2.8); set(d.e, { cx: (mix(640, d.tx, k) + 2 * Math.sin(t + d.w * 9)).toFixed(1), cy: (mix(392, d.ty, k) + 2 * Math.cos(t * 0.9 + d.w * 7)).toFixed(1) }); d.e.setAttribute("opacity", up(t, T.new - 0.6 + d.w, 0.5).toFixed(2)); });
+    s = strokes(t, G.city); gate.setAttribute("stroke-dashoffset", (1 - Math.min(up(t, G.city.at + 1.6, 0.9), 1 - up(t, G.city.off - 0.2, 0.6))).toFixed(4)); tree2.setAttribute("stroke-dashoffset", (1 - Math.min(up(t, G.city.at + 2.3, 1.1), 1 - up(t, G.city.off - 0.3, 0.6))).toFixed(4));
+    const vv = span(t, T.verse - 0.35, T.close - 0.3, 0.5, 0.6); op(gV, vv); verse.setAttribute("y", (188 + 8 * (1 - up(t, T.verse - 0.35, 0.8))).toFixed(1)); op(ref, up(t, T.verse + 0.9, 0.6));
+    // close: the book
+    s = strokes(t, G.book); op(G.book.g, (up(t, G.book.at, 0.1)) * (1 - up(t, END + 0.5, 0.7)));
+    const bo = up(t, G.book.at + 1.5, 0.7); spine.setAttribute("stroke-dashoffset", (1 - bo).toFixed(4)); bTitle.forEach((b, i) => b.setAttribute("stroke-dashoffset", (1 - up(t, G.book.at + 1.8 + i * 0.2, 0.6)).toFixed(4))); op(ribbon, up(t, G.book.at + 2.0, 0.6));
+    // ticks
+    op(gTicks, up(t, T.made - 0.4, 0.8) * (1 - up(t, END + 0.4, 0.6))); ticks.forEach((k) => { const a = up(t, k.at - 0.2, 0.6); op(k.dot, a); k.dot.setAttribute("r", (6 * a + 2 * span(t, k.at, k.at + 1.4, 0.4)).toFixed(2)); });
+  };
+});
+</script>
+</body></html>

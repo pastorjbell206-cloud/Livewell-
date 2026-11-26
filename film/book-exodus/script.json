@@ -1,0 +1,117 @@
+{
+  "title": "Exodus: out of slavery, to God",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions and its rows of docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-exodus",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "rescue",
+      "kicker": "The book of the rescue",
+      "level": 0.2,
+      "lines": [
+        "Exodus opens where Genesis ended. Jacob's family has become a nation, and the nation has become slaves.",
+        "The rescue doesn't begin with their faith. It begins with God's attention.",
+        "So God heard their groaning, and He remembered His covenant with Abraham, Isaac, and Jacob."
+      ],
+      "scripture": {
+        "reference": "Exodus 2:24",
+        "text": "So God heard their groaning, and He remembered His covenant with Abraham, Isaac, and Jacob.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The book has two halves. The first tells the rescue from Egypt and the road through the wilderness. The second takes place almost entirely at one mountain, Sinai.",
+        "Exodus gives as much space to where God will live as to how Israel got free."
+      ]
+    },
+    {
+      "id": "name",
+      "kicker": "Watch for: the name of God",
+      "level": 0.5,
+      "lines": [
+        "The book turns on a name. At the bush, God tells Moses who he is.",
+        "I AM WHO I AM.",
+        "Pharaoh begins by asking who the LORD is, that he should obey him. The plagues are sent so that Egypt and Israel will know."
+      ],
+      "scripture": {
+        "reference": "Exodus 3:14",
+        "text": "I AM WHO I AM.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "passover",
+      "kicker": "Watch for: the Passover and the sea",
+      "level": 0.7,
+      "lines": [
+        "Israel keeps the first Passover and goes free, on a night of great sadness in Egypt. At the sea, God makes a way.",
+        "This is the Old Testament's defining act of salvation. The rest of the Bible keeps coming back to it."
+      ],
+      "scripture": {
+        "reference": "Exodus 15:2",
+        "text": "The LORD is my strength and my song, and He has become my salvation.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "law",
+      "kicker": "Watch for: a law for rescued people",
+      "level": 0.8,
+      "lines": [
+        "Then comes the law, and the order matters. The laws aren't a ladder for earning God's favor. They're given to people he has already rescued.",
+        "In Hebrew, one word means both to serve as a slave and to serve God in worship. Exodus is a change of masters."
+      ],
+      "scripture": {
+        "reference": "Exodus 20:2",
+        "text": "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "tent",
+      "kicker": "Watch for: God comes to live with them",
+      "level": 0.9,
+      "lines": [
+        "The last third of the book is about a tent. The golden calf nearly ends that hope. Moses pleads for the people, and God renews the covenant.",
+        "And the book ends at the goal the whole story has been moving toward.",
+        "The glory of the LORD filled the tabernacle."
+      ],
+      "scripture": {
+        "reference": "Exodus 40:34",
+        "text": "the glory of the LORD filled the tabernacle.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter one. The key chapters are three, twelve, fourteen, nineteen, twenty, thirty-two, thirty-four, and forty.",
+        "And don't hurry through the tabernacle chapters. Their length is part of the point."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "God didn't only bring his people out. He came to live with them."
+      ],
+      "titleCard": [
+        "Out of slavery, to God.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

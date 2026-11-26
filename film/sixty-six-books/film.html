@@ -1,0 +1,106 @@
+<!doctype html>
+<!-- "How the 66 books fit together". Exactly sixty-six spines, each one followed for the whole film: a jumbled
+     row on the floor, two groups (39 and 27), then two bookcases whose shelves fill in step with the voice.
+     Old Testament: law 5, history 12, poetry and wisdom 5, prophets 17 (the twelve short ones drawn shorter).
+     New Testament: Gospels 4, Acts 1, letters 21 (13, then 1, then 7), Revelation 1.
+     The Hebrew order is the same 39 spines regrouped as 5, 21 and 13, then put back.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>How the 66 books fit together</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const A0 = S("library", 0), A1 = S("library", 1), TW = S("two", 0), TWE = E("two"), LH = S("law-history", 0), LHE = E("law-history");
+  const PP0 = S("poetry-prophets", 0), PP1 = S("poetry-prophets", 1), PPE = E("poetry-prophets"), GA0 = S("gospels-acts", 0), GA1 = S("gospels-acts", 1);
+  const LT0 = S("letters", 0), LT1 = S("letters", 1), OS0 = S("one-story", 0), OS1 = S("one-story", 1), OSE = E("one-story"), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(66), FLOOR = 404, FL = [204, 304, 404, 504], OTX = [110, 640], NTX = [700, 1170], GREY = "#8A8478";
+  const lab = (parent, x, y, s, size, anchor) => { const e = txt(parent, "lab", x, y, s, size); if (anchor) e.style.textAnchor = anchor; return e; };
+
+  const gLib = el("g", {}, world);
+  const floor = el("line", { y1: FLOOR, y2: FLOOR, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gLib);
+  const caseD = ([a, b]) => `M${a} 110 H${b} V504 H${a} Z M${a} 204 H${b} M${a} 304 H${b} M${a} 404 H${b}`;
+  const caseOT = line(gLib, caseD(OTX), { "stroke-width": 3 }), caseNT = line(gLib, caseD(NTX), { "stroke-width": 3 });
+
+  // ---------- the sixty-six ----------
+  // shelf: [testament, shelf row, how many, when its books go up]
+  const SHELVES = [
+    { key: "law", t: 0, row: 0, n: 5, at: LH + 2.5, label: "LAW" },
+    { key: "history", t: 0, row: 1, n: 12, at: LH + 5.6, label: "HISTORY" },
+    { key: "poetry", t: 0, row: 2, n: 5, at: PP0 + 0.3, label: "POETRY AND WISDOM" },
+    { key: "prophets", t: 0, row: 3, n: 17, at: PP0 + 4.2, label: "THE PROPHETS" },
+    { key: "gospels", t: 1, row: 0, n: 4, at: GA0 + 0.9, label: "THE GOSPELS" },
+    { key: "acts", t: 1, row: 1, n: 1, at: GA1 - 0.1, label: "ACTS" },
+    { key: "letters", t: 1, row: 2, n: 21, at: LT0 + 0.5, label: "LETTERS" },
+    { key: "revelation", t: 1, row: 3, n: 1, at: LT1 + 0.1, label: "REVELATION" },
+  ];
+  const HEB_PROPHETS = [5, 6, 8, 9, 10, 11, 22, 23, 25, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38];   // Joshua, Judges, Samuel, Kings, Isaiah, Jeremiah, Ezekiel, the Twelve
+  const HEB_WRITINGS = [7, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 24, 26];                                // Ruth, Chronicles, Ezra, Nehemiah, Esther, Job to Song, Lamentations, Daniel
+  const TONES = [INK, STONE, CHAR, GREY];
+  const books = []; let n = 0;
+  SHELVES.forEach((sh) => { for (let k = 0; k < sh.n; k++, n++) {
+    const X0 = (sh.t ? NTX : OTX)[0]; let gap = 0, h = 40 + Math.round(R() * 16), at = sh.at + k * 0.07;
+    if (sh.key === "prophets") { if (k >= 5) { gap = 14; h = 28 + Math.round(R() * 6); at = sh.at + 1.7 + (k - 5) * 0.07; } else h = 52 + Math.round(R() * 5); }
+    if (sh.key === "letters") { if (k >= 14) { gap = 28; at = LT0 + 6.9 + (k - 14) * 0.07; } else if (k === 13) { gap = 14; at = LT0 + 5.2; } else at = LT0 + 2.6 + k * 0.06; }
+    const b = { i: n, sh, k, h, at, fill: sh.key === "gospels" ? [INK, GREY, CHAR, STONE][k] : TONES[Math.floor(R() * 4)], sx: X0 + 26 + k * 16 + gap, sy: FL[sh.row],
+      x0: 164 + n * 14.6 + (R() - 0.5) * 6, r0: (R() - 0.5) * 30, x1: sh.t ? 760 + (n - 39) * 13 : 122 + n * 13 };
+    books.push(b);
+  } });
+  books.forEach((b) => { if (b.i < 39) { const hp = HEB_PROPHETS.indexOf(b.i), hw = HEB_WRITINGS.indexOf(b.i); b.hx = hp >= 0 ? OTX[0] + 26 + hp * 16 : hw >= 0 ? OTX[0] + 26 + hw * 16 : b.sx; b.hy = hp >= 0 ? FL[1] : hw >= 0 ? FL[2] : b.sy; } });
+  books.forEach((b) => { b.g = el("g", {}, gLib); b.e = el("rect", { x: -5, y: -b.h, width: 10, height: b.h, rx: 2, fill: b.fill }, b.g); });
+  const labels = SHELVES.map((sh) => lab(gLib, (sh.t ? NTX : OTX)[0] + 20, FL[sh.row] - 72, sh.label, 13, "start"));
+  const roadY = FL[1] - 26, road = line(gLib, `M${NTX[0] + 48} ${roadY} H${NTX[1] - 24}`, { stroke: STONE, "stroke-width": 2 }), roadDot = el("circle", { cy: roadY, r: 5, fill: INK }, gLib);
+  const jer = lab(gLib, NTX[0] + 48, roadY + 20, "JERUSALEM", 11, "start"), rome = lab(gLib, NTX[1] - 24, roadY + 20, "ROME", 11, "end");
+  // the one thread, through every spine in order, shelf by shelf
+  let d = "", px = 0, py = 0; SHELVES.forEach((sh) => { const bs = books.filter((b) => b.sh === sh), y = FL[sh.row] - 22, xa = bs[0].sx - 12, xb = bs.at(-1).sx + 12;
+    d += d ? ` C${px + 26} ${py} ${xa - 26} ${y} ${xa} ${y}` : `M${xa} ${y}`; d += ` L${xb} ${y}`; px = xb; py = y; });
+  const thread = line(gLib, d, { stroke: MUSTARD, "stroke-width": 3.5 });
+
+  // the further books some Bibles hold: hollow spines that stand beside the row for a moment (no count is claimed in words)
+  const more = [...Array(5)].map((_, i) => el("rect", { opacity: 1 - i * 0.18, x: 114 - i * 13, y: FLOOR - 44 - (i % 3) * 5, width: 9, height: 44 + (i % 3) * 5, rx: 2, fill: "none", stroke: STONE, "stroke-width": 1.6, "stroke-dasharray": "3 3" }, gLib));
+  // ---------- words ----------
+  const counter = txt(world, "disp", 640, 250, "0", 120);
+  const n39 = txt(world, "disp", 375, 262, "39", 92), n27 = txt(world, "disp", 935, 262, "27", 92);
+  const lOT = lab(world, 375, 306, "OLD TESTAMENT"), lNT = lab(world, 935, 306, "NEW TESTAMENT");
+  const heb = lab(world, 290, 462, "HEBREW"), ara = lab(world, 470, 462, "ARAMAIC", 12), grk = lab(world, 935, 462, "GREEK");
+  const gVerse = el("g", {}, world), vt = "“" + SC["one-story"].scripture.text + "”", vLines = []; { let cur = ""; vt.split(" ").forEach((w) => { if ((cur + " " + w).length > 50 && cur) { vLines.push(cur); cur = w; } else cur = cur ? cur + " " + w : w; }); vLines.push(cur); }
+  const vEls = vLines.map((s, i) => txt(gVerse, "disp", 640, 152 + i * 48, s, 40)), vRef = lab(gVerse, 640, 152 + vLines.length * 48 - 4, `${SC["one-story"].scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`);
+  const CHOSEN = books[18];   // Psalms, on the poetry and wisdom shelf
+
+  F.title("How the 66 books fit together", 62);
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => {
+    // the library shrinks to make room for the verse, then comes back
+    const small = up(t, OS1 - 0.8, 1.3) * (1 - up(t, CL - 0.6, 1.2)), sc = mix(1, 0.56, small);
+    gLib.setAttribute("transform", `translate(640 ${mix(307, 440, small).toFixed(1)}) scale(${sc.toFixed(4)}) translate(-640 -307)`); op(gLib, 1 - up(t, END + 0.5, 0.6));
+    // floor line, then the bookcases
+    const fk = up(t, A0 - 1.2, 1.4); set(floor, { x1: mix(mix(640 - 520 * fk, 640 + 0, 0), 700, up(t, LH - 0.2, 0.9)).toFixed(1), x2: (640 + 520 * fk).toFixed(1) }); op(floor, up(t, A0 - 1.2, 0.4) * (1 - up(t, GA0 - 0.3, 0.7)));
+    draw(caseOT, up(t, LH - 0.2, 2.0)); draw(caseNT, up(t, GA0 - 0.3, 1.4));
+    // spines
+    const shuffle = span(t, PP1 - 0.2, PPE + 1.0, 0.9, 0.9); let landed = 0;
+    books.forEach((b) => {
+      const fall = up(t, A0 - 0.5 + b.i * 0.045, 0.9), two = up(t, TW + 0.2 + (b.i % 13) * 0.03, 1.4), go = up(t, b.at, 1.2); if (fall > 0.9) landed++;
+      let x = mix(mix(b.x0, b.x1, two), b.sx, go), y = mix(FLOOR, b.sy, go) - 34 * Math.sin(Math.PI * go) - 260 * (1 - fall) * (1 - fall), rot = b.r0 * (1 - two) + (1 - fall) * 60 * (b.i % 2 ? 1 : -1);
+      if (b.i < 39 && shuffle > 0) { x = mix(x, b.hx, shuffle); y = mix(y, b.hy, shuffle) - 22 * Math.sin(Math.PI * shuffle) * (b.hy !== b.sy ? 1 : 0); }
+      let s = 1; if (b === CHOSEN) { const out = up(t, CL + 0.9, 1.4); s = mix(1, 1.9, out); y += 6 * out; b.e.setAttribute("fill", out > 0.5 ? INK : b.fill); }
+      y += 1.2 * Math.sin(t * 0.9 + b.i * 0.7) * (1 - two);
+      op(b.g, fall > 0 ? Math.min(1, fall * 3) : 0); move(b.g, x, y, s, rot);
+    });
+    more.forEach((m, i) => { const v = span(t, A1 + (TW - 1 - A1) * 0.62 + i * 0.1, TW + 0.4, 0.5, 0.6); op(m, v * (1 - i * 0.19)); m.setAttribute("transform", `translate(${(-24 * (1 - v)).toFixed(1)} 0)`); });
+    // counter and the two halves
+    const cnt = String(landed); if (counter.textContent !== cnt) counter.textContent = cnt; op(counter, span(t, A0 - 0.3, TW - 0.2, 0.5));
+    const d2 = TWE - TW, out2 = 1 - up(t, LH - 0.6, 0.6);
+    op(n39, up(t, TW + d2 * 0.17, 0.6) * out2); op(lOT, up(t, TW + d2 * 0.2, 0.6) * out2); op(n27, up(t, TW + d2 * 0.38, 0.6) * out2); op(lNT, up(t, TW + d2 * 0.41, 0.6) * out2);
+    op(heb, up(t, TW + d2 * 0.7, 0.5) * out2); op(ara, up(t, TW + d2 * 0.79, 0.5) * out2); op(grk, up(t, TW + d2 * 0.92, 0.5) * out2);
+    // shelf labels
+    SHELVES.forEach((sh, i) => { const on = up(t, sh.at - 0.2, 0.6) * (sh.t === 0 ? 1 - 0.8 * shuffle : 1); op(labels[i], on); labels[i].style.fill = sh === CHOSEN.sh && t > CL + 1.2 ? "#B08A12" : ""; });
+    // Acts: from Jerusalem to Rome
+    const rv = up(t, GA1 - 0.1, 0.4) * (1 - up(t, OS0 - 0.4, 0.8)), rk = up(t, GA1 + 0.1, 2.4); op(road, rv); draw(road, rk); op(roadDot, rv); set(roadDot, { cx: mix(NTX[0] + 48, NTX[1] - 24, rk).toFixed(1) }); op(jer, rv * up(t, GA1 + 0.3, 0.5)); op(rome, rv * up(t, GA1 + 1.6, 0.5));
+    // the thread and the verse
+    draw(thread, up(t, OS0 + 0.3, (OS1 - OS0) * 0.86)); op(thread, t > OS0 ? 1 : 0);
+    const vv = span(t, OS1 - 0.2, CL + 0.1, 0.5, 0.7); op(gVerse, vv);
+    if (vv > 0) { const dv = OSE - OS1; vEls.forEach((e, i) => { op(e, up(t, OS1 - 0.1 + i * dv * 0.22, 0.7)); e.setAttribute("y", (152 + i * 48 + 8 * (1 - up(t, OS1 - 0.1 + i * dv * 0.22, 0.9))).toFixed(1)); }); op(vRef, up(t, OS1 + dv * 0.75, 0.7)); }
+  };
+});
+</script>
+</body></html>
