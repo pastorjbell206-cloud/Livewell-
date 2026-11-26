@@ -22163,3 +22163,19 @@ Cut in chapter 10: the deep note's lines to Christ (Matthew 12:42 and 12:36 besi
 | The hard note: verse 9 as apparent permission; Numbers 15:39 and the tension; the judgment clause added at once; energy and delight, accountable to God; judgment as the frame that makes joy responsible; verse 10; gift and trust held together | 7-10 `hard` | ecclesiastes/11.json `hard` | Repository |
 
 Cut in chapter 11: the deep note's line to Christ (John 3:8 beside verse 5, which the note says Jesus does not quote); 2 Corinthians 9:6 kept as Paul's own picture of sowing. No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 12 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1 (its first clause; the rest, with an inner quotation, paraphrased); 12:2-4 paraphrased; 12:5 (its last clause, after the dash; the rest paraphrased); 12:6; 12:7; 12:8 (with its inner quotation kept as the BSB has it) | 1-8 | BSB | BSB text |
+| Chapter 11 running on; ‘remember’; one long sentence held by ‘before’; the allegory of the aging body (arms, legs, teeth, eyes, white hair, stiff walk); the household or town at a death, or a storm; both together; the breaking cord, bowl, pitcher and wheel; Genesis 2:7 and 3:19; dignity, not dread | 1-8 | ecclesiastes/12.json `story`, `cultural`, `literary` | Repository; each reading in its holders' terms |
+| Genesis 2:7 (its first clause); Psalm 90:12 | 1-8 | ecclesiastes/12.json `cultural` (Genesis 2:7); the chapter data's cross-references for 12:1 (Psalm 90:12 by way of the call to remember); BSB | Repository; BSB text |
+| 12:9; 12:10; 12:11; 12:12; 12:13-14 (in double quotes) | 9-14 | BSB | BSB text |
+| The third-person epilogue and the narrator of 1:1; addressing the reader as a son; goads and nails; the single Shepherd as God, or Solomon, or the human teacher; the warning about books; an ending in the fear of God and judgment | 9-14 | ecclesiastes/12.json `literary`, `cultural`, `historical`, `christ` (the Shepherd's readings), `words` (dorvan) | Repository; each reading in its holders' terms |
+| Proverbs 1:7 (its first clause); Job 28:28 named | 9-14 | guides/reading-wisdom.json section 6 (Proverbs, Job and Ecclesiastes sharing the fear of the LORD); BSB | Repository; BSB text |
+| The hard note: a later softening; Fox and the frame by design; distance or endorsement (verses 9-10); the fear of God (5:7) and judgment (3:17; 11:9) already in the Teacher; the search's direction named; an open question, no side; read with its conclusion | 9-14 `hard` | ecclesiastes/12.json `hard`; guides/reading-wisdom.json section 5 | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 12: the deep note's lines to Christ (Romans 8:20-21 and 1 Corinthians 15:58, left to the book page's wording; John 10:11 and the good shepherd beside the single Shepherd, which the note calls thematic; 2 Corinthians 5:10 and the judgment of Christ beside verse 14). No care line is needed in this chapter; old age and death are told with dignity.
