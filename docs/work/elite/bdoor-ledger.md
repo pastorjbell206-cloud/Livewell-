@@ -24055,3 +24055,24 @@ Cut in chapter 57: Philippians 2 and Matthew 5, which the deep note calls themat
 | Deuteronomy 5:14 (its clause); Mark 2:27 | 13-14 `later` | BSB; isaiah/58.json `christ` for the Sabbath conflicts | BSB text |
 
 Cut in chapter 58: Matthew 25:31-46, which the deep note ties to verse 7, is left out, because the New Testament does not quote this chapter there.
+
+## The plain notes on Isaiah 59 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/59.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 59:1-8 | 1-8 | BSB | BSB text |
+| Answers a deeper complaint; echoes 50:2 | 1-8 | isaiah/59.json `story` | Repository |
+| Moral collapse; after the return under Persian rule; Haggai, Zechariah, Malachi; the traditional reading and Micah 3 | 1-8 | isaiah/59.json `historical` | Repository |
+| Viper eggs and webs; the list of body parts | 1-8 | isaiah/59.json `cultural`, `literary` | Repository |
+| Romans 3:15 (its words); Micah 3 (named) | 1-8 `later` | BSB; isaiah/59.json `christ`, `historical` | BSB text |
+| 59:9-15 | 9-15 | BSB | BSB text |
+| The voice turns to confession; Ezra 9, Nehemiah 9, Daniel 9; the public square by the gate; mishpat five times, always missing | 9-15 | isaiah/59.json `literary`, `historical`, `cultural`, `words` | Repository |
+| Ezra 9:6 (its clause); Daniel 9:5 (its clause) | 9-15 `later` | BSB | BSB text |
+| 59:16-21 (verses 20 and 21 paraphrased, since their BSB text holds speech marks) | 16-21 | BSB | BSB text |
+| Intercede as in 53:12; armor; Exodus 15:3; qualities not metal; go'el; the line moral not ethnic; 51:16 and 61:1 | 16-21 | isaiah/59.json `words`, `cultural`, `literary`, `hard` | Repository |
+| Romans 11:26 (its inner quotation); Ephesians 6:14 (its clause) | 16-21 `later` | BSB; isaiah/59.json `christ` | BSB text |
+| Vengeance and love; Romans 12:19 | 16-21 `hard` | isaiah/59.json `hard` | Repository |
+
+Cut in chapter 59: Deuteronomy 32:35 is left to the deep note. No care line is needed in this chapter.
