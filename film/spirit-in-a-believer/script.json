@@ -1,0 +1,123 @@
+{
+  "title": "The Holy Spirit in a believer",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/spirit-in-a-believer",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "who",
+      "kicker": "God, living in his people",
+      "level": 0.2,
+      "lines": [
+        "The Holy Spirit is the third person of the Trinity, fully God, who dwells in believers and gives them life with God.",
+        "He is not a force or a feeling. He is God himself, living in his people."
+      ],
+      "scripture": {
+        "reference": "Romans 8:9",
+        "text": "And if anyone does not have the Spirit of Christ, he does not belong to Christ.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "vine",
+      "kicker": "Joined to Christ",
+      "level": 0.4,
+      "lines": [
+        "The Spirit unites believers to Christ. Jesus' own picture is a vine and its branches. The branch lives because it is joined to the vine.",
+        "I am the vine and you are the branches.",
+        "Apart from him they can do nothing."
+      ],
+      "scripture": {
+        "reference": "John 15:5",
+        "text": "I am the vine and you are the branches.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "adopted",
+      "kicker": "Adopted",
+      "level": 0.55,
+      "lines": [
+        "To be adopted means God makes people his own children, with a sure place in his family.",
+        "Paul says God sent the Spirit of his Son into their hearts, calling out to God as Father. Abba is the Aramaic word for father."
+      ],
+      "scripture": {
+        "reference": "Galatians 4:6",
+        "text": "God sent the Spirit of His Son into our hearts",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "fruit",
+      "kicker": "Fruit",
+      "level": 0.7,
+      "lines": [
+        "This is the lifelong work of the Spirit, by which believers grow to be more like Jesus. Paul names nine kinds of fruit.",
+        "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control.",
+        "Fruit grows slowly, and it grows because the branch is joined to the vine."
+      ],
+      "scripture": {
+        "reference": "Galatians 5:22-23",
+        "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "gifts",
+      "kicker": "Gifts",
+      "level": 0.7,
+      "lines": [
+        "The Spirit gives gifts to each believer, and they are given for the good of all: teaching, serving, encouraging, giving, leading, showing mercy.",
+        "Paul's picture is the body, where every part is needed."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 12:7",
+        "text": "Now to each one the manifestation of the Spirit is given for the common good.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where churches differ",
+      "level": 0.55,
+      "lines": [
+        "Christians agree that the Holy Spirit is God, gives new life, lives in every believer, and gives gifts to build up the church.",
+        "Churches differ on whether some gifts, such as tongues, prophecy, and healing, continue as they did in Acts, and on whether the baptism of the Spirit is a distinct experience after a person first believes. This film doesn't choose between them."
+      ]
+    },
+    {
+      "id": "weak",
+      "kicker": "Help for the weak",
+      "level": 0.8,
+      "lines": [
+        "Even prayer is not left to believers alone. When they don't know how to pray, the Spirit himself intercedes for them.",
+        "The Spirit helps us in our weakness.",
+        "The Spirit is not a reward for the strong. He is help for the weak."
+      ],
+      "scripture": {
+        "reference": "Romans 8:26",
+        "text": "the Spirit helps us in our weakness.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "He is God himself, living in his people."
+      ],
+      "titleCard": [
+        "Help for the weak.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

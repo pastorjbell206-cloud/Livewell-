@@ -1,0 +1,167 @@
+{
+ "length": 178.15,
+ "chapters": [
+  {
+   "id": "many",
+   "kicker": "Many hands, many centuries",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 25.92,
+   "lines": [
+    {
+     "text": "The Bible's books were written over many centuries, in palaces and in exile, in prison cells and on the road.",
+     "start": 2.6,
+     "end": 9.7
+    },
+    {
+     "text": "Their writers include kings, priests, prophets, court officials, a tax collector, a physician, fishermen, and a former Pharisee. Many books name no author at all. Christians believe God was at work in the whole of it.",
+     "start": 10.26,
+     "end": 25.02
+    }
+   ]
+  },
+  {
+   "id": "scribes",
+   "kicker": "Speakers and writers",
+   "level": 0.4,
+   "start": 25.12,
+   "end": 50.38,
+   "lines": [
+    {
+     "text": "Prophets spoke and helpers wrote. Baruch wrote on a scroll all the words Jeremiah dictated, and when the king burned that scroll, Jeremiah dictated it again.",
+     "start": 26.02,
+     "end": 35.96
+    },
+    {
+     "text": "Paul usually dictated his letters to a secretary and added a greeting in his own hand. One of those secretaries signs his own name in Romans.",
+     "start": 36.68,
+     "end": 44.92
+    },
+    {
+     "text": "I, Tertius, who wrote down this letter, greet you in the Lord.",
+     "start": 45.58,
+     "end": 49.48
+    }
+   ]
+  },
+  {
+   "id": "materials",
+   "kicker": "Scroll, ink and language",
+   "level": 0.5,
+   "start": 49.58,
+   "end": 69.44,
+   "lines": [
+    {
+     "text": "Books were written on scrolls of papyrus or of prepared animal skin, in ink, with a reed pen.",
+     "start": 50.48,
+     "end": 56.42
+    },
+    {
+     "text": "The Old Testament is in Hebrew, with a small part in Aramaic, a related language. The New Testament is in Greek. Paul once asked a friend to bring him his scrolls, especially the parchments.",
+     "start": 57.08,
+     "end": 68.54
+    }
+   ]
+  },
+  {
+   "id": "copies",
+   "kicker": "Copies",
+   "level": 0.6,
+   "start": 68.64,
+   "end": 87.42,
+   "lines": [
+    {
+     "text": "Copies were made almost at once. Paul asked one church to pass its letter on to another, and to read the one sent there.",
+     "start": 69.54,
+     "end": 76.4
+    },
+    {
+     "text": "Every copy was made by hand until printing came, and every hand-made copy differs from every other in small ways. That's why scholars compare the copies.",
+     "start": 77.06,
+     "end": 86.52
+    }
+   ]
+  },
+  {
+   "id": "codex",
+   "kicker": "From scroll to book",
+   "level": 0.65,
+   "start": 86.62,
+   "end": 110.02,
+   "lines": [
+    {
+     "text": "From very early on, Christians preferred the codex, a book of folded sheets stitched at the spine, to the scroll.",
+     "start": 87.52,
+     "end": 94.28
+    },
+    {
+     "text": "It was cheaper, since it used both sides of the sheet. It was easier to carry and to search. And it could hold all four Gospels, or all of Paul's letters, in one volume. Nearly all early Christian copies are books of this kind.",
+     "start": 94.9,
+     "end": 109.12
+    }
+   ]
+  },
+  {
+   "id": "received",
+   "kicker": "Which books",
+   "level": 0.6,
+   "start": 109.22,
+   "end": 138.24,
+   "lines": [
+    {
+     "text": "The churches received as Scripture the books that came from the apostles and their circle, taught the faith handed on in all the churches, and were read in worship across the Christian world.",
+     "start": 110.12,
+     "end": 120.44
+    },
+    {
+     "text": "Behind those tests was the conviction that the church was recognizing books that had already proved themselves.",
+     "start": 121.18,
+     "end": 127.14
+    },
+    {
+     "text": "Christians of different traditions account for this differently, and Catholic and Orthodox Bibles include further books in the Old Testament. This film doesn't choose between them.",
+     "start": 127.78,
+     "end": 137.34
+    }
+   ]
+  },
+  {
+   "id": "translate",
+   "kicker": "Translation",
+   "level": 0.7,
+   "start": 137.44,
+   "end": 163.14,
+   "lines": [
+    {
+     "text": "Translation is part of the Bible's own story. The New Testament itself puts some of Jesus' Aramaic words into Greek.",
+     "start": 138.34,
+     "end": 145.26
+    },
+    {
+     "text": "Jews made the Greek translation of the Hebrew Scriptures that the first churches outside Judea read, and the New Testament was in Latin, Syriac, and Coptic by the third century.",
+     "start": 146.02,
+     "end": 156.92
+    },
+    {
+     "text": "Every translation is a set of decisions, which is why it helps to read more than one.",
+     "start": 157.6,
+     "end": 162.24
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 162.34,
+   "end": 172.05,
+   "lines": [
+    {
+     "text": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness.",
+     "start": 163.24,
+     "end": 171.15
+    }
+   ]
+  }
+ ]
+}
