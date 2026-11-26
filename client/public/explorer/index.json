@@ -1741,6 +1741,23 @@
       "book": "jeremiah"
     },
     {
+      "slug": "book-galatians",
+      "title": "Galatians: nothing added to Christ",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "An urgent letter about who belongs to God's family: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Galatians as a whole book: an urgent letter, the question of who belongs, Abraham and the law, one table, freedom and the fruit of the Spirit, and where to begin."
+      },
+      "mark": "book-galatians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "galatians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

@@ -1069,6 +1069,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M50,62c0,-14 -2,-24 2,-34c-8,2 -14,-4 -14,-10c8,0 14,4 15,9c2,-8 8,-12 16,-11c0,7 -6,12 -15,12c-2,10 -1,20 -1,34Z" />
     </>
   ),
+  /* Galatians: an open gate in a wall, with a gold light beyond. */
+  "book-galatians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M12,84V40H88V84Z" tone="c" off={0.8} />
+      <path className="pl-paper" d="M36,84V56c0,-18 28,-18 28,0V84Z" />
+      <path className="pl-m" d="M44,62a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" />
+      <path className="pl-l" d="M36,84V56c0,-18 28,-18 28,0V84ZM44,62a6,6 0 1,0 12,0a6,6 0 1,0 -12,0Z" />
+      <path className="pl-l" d="M12,40h8v-6h8v6h8v-6h8M56,40h8v-6h8v6h8v-6h8v6" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

@@ -3235,6 +3235,116 @@
     }
    ]
   },
+  "book-galatians": {
+   "title": {
+    "file": "book-galatians/title.mp3",
+    "hash": "4c1718c5e83b3674156b",
+    "seconds": 3.42,
+    "bytes": 21092
+   },
+   "younger": [
+    {
+     "id": "letter",
+     "file": "book-galatians/younger/01-letter.mp3",
+     "hash": "0522c14867c7713cc121",
+     "seconds": 28.25,
+     "bytes": 170132
+    },
+    {
+     "id": "layout",
+     "file": "book-galatians/younger/02-layout.mp3",
+     "hash": "d80c1178298b926a113c",
+     "seconds": 26.03,
+     "bytes": 156740
+    },
+    {
+     "id": "question",
+     "file": "book-galatians/younger/03-question.mp3",
+     "hash": "4170a202b2f594c28e11",
+     "seconds": 26.37,
+     "bytes": 158756
+    },
+    {
+     "id": "abraham",
+     "file": "book-galatians/younger/04-abraham.mp3",
+     "hash": "28ceab65b00e963adcbd",
+     "seconds": 26.35,
+     "bytes": 158612
+    },
+    {
+     "id": "table",
+     "file": "book-galatians/younger/05-table.mp3",
+     "hash": "6cfd9d44e9b983e71e66",
+     "seconds": 25.71,
+     "bytes": 154868
+    },
+    {
+     "id": "fruit",
+     "file": "book-galatians/younger/06-fruit.mp3",
+     "hash": "1511db51fa187880cf47",
+     "seconds": 26.71,
+     "bytes": 160916
+    },
+    {
+     "id": "start",
+     "file": "book-galatians/younger/07-start.mp3",
+     "hash": "7bd7d2789d0fb83181a9",
+     "seconds": 19.24,
+     "bytes": 115988
+    }
+   ],
+   "older": [
+    {
+     "id": "letter",
+     "file": "book-galatians/older/01-letter.mp3",
+     "hash": "53e1938c0462e7b4b627",
+     "seconds": 27.25,
+     "bytes": 164084
+    },
+    {
+     "id": "layout",
+     "file": "book-galatians/older/02-layout.mp3",
+     "hash": "3e2cfa8e086217789096",
+     "seconds": 24.26,
+     "bytes": 146084
+    },
+    {
+     "id": "question",
+     "file": "book-galatians/older/03-question.mp3",
+     "hash": "af32b005e558cf053f78",
+     "seconds": 29.79,
+     "bytes": 179348
+    },
+    {
+     "id": "abraham",
+     "file": "book-galatians/older/04-abraham.mp3",
+     "hash": "ba01ebc76a06dff0423f",
+     "seconds": 27.22,
+     "bytes": 163940
+    },
+    {
+     "id": "table",
+     "file": "book-galatians/older/05-table.mp3",
+     "hash": "2cb235cd146245cbb82c",
+     "seconds": 26.57,
+     "bytes": 160052
+    },
+    {
+     "id": "fruit",
+     "file": "book-galatians/older/06-fruit.mp3",
+     "hash": "6766c164ca7e742a1f16",
+     "seconds": 24.27,
+     "bytes": 146228
+    },
+    {
+     "id": "start",
+     "file": "book-galatians/older/07-start.mp3",
+     "hash": "756ec03441bb86162929",
+     "seconds": 22.99,
+     "bytes": 138452
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

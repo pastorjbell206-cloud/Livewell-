@@ -413,6 +413,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Jeremiah in seven moving pictures: a prophet in the last days of Judah, how the book is laid out, false safety, honest prayer, a letter to the exiles, the new covenant, and where to start reading.",
     },
+    "book-galatians": {
+      title: "Galatians: nothing added to Christ: Bible Explorer",
+      description:
+        "The whole letter to the Galatians in seven moving pictures: an urgent letter, how it is laid out, who belongs, Abraham and the law, one table, what freedom is for, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

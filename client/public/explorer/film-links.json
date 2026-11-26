@@ -105,6 +105,10 @@
    "title": "Jeremiah: the prophet who wept",
    "line": "The book of a prophet who warned his city and kept speaking when no one listened: what it is, how it is put together, what to watch for, and where to start reading."
   },
+  "book-galatians": {
+   "title": "Galatians: nothing added to Christ",
+   "line": "An urgent letter about who belongs to God's family: what it is, how it is put together, what to watch for, and where to start reading."
+  },
   "holy-spirit": {
    "title": "The Holy Spirit through the Bible",
    "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
@@ -420,6 +424,9 @@
   ],
   "/study/bible/exodus": [
    "book-exodus"
+  ],
+  "/study/bible/galatians": [
+   "book-galatians"
   ],
   "/study/bible/genesis": [
    "book-genesis"

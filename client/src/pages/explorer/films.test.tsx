@@ -1735,6 +1735,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-judges",
     "book-1-samuel",
     "book-jeremiah",
+    "book-galatians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2507,5 +2508,18 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     const younger = f.frames.map(fr => fr.younger).join(" ");
     expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|army/i);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/siege|fire|flame|ruin|army|soldier|burn/i);
+  });
+
+  it("Galatians says at both levels that the quarrel was among Jewish believers, holds no people in contempt, and takes no side on its debated phrases", () => {
+    const f = filmFile("book-galatians");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const table = f.frames.find(x => x.id === "table")!;
+    expect(table.younger).toContain("It was a quarrel among Jewish believers, not between Christians and Jews.");
+    expect(table.older).toContain("It was a quarrel among Jewish believers in Jesus, not between Christians and Jews.");
+    expect(f.frames.find(x => x.id === "abraham")!.younger).toContain("the law was still God's good gift");
+    expect(f.differ?.text).toContain("the use of New Testament words to justify contempt for Jews is false");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const t = text(f);
+    expect(t).not.toMatch(/Judaizer|legalis|Jews rejected|Christ.?killers|dead religion|works.righteous Jews/i);
   });
 });

@@ -1,0 +1,158 @@
+{
+  "slug": "book-galatians",
+  "title": "Galatians: nothing added to Christ",
+  "group": "books",
+  "status": "finished",
+  "book": "galatians",
+  "mark": "book-galatians",
+  "line": {
+    "younger": "An urgent letter about who belongs to God's family: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Galatians as a whole book: an urgent letter, the question of who belongs, Abraham and the law, one table, freedom and the fruit of the Spirit, and where to begin."
+  },
+  "poster": "A man sits at a low table by lamplight, writing a letter in large strokes. The lamp's flame is gold.",
+  "frames": [
+    {
+      "id": "letter",
+      "name": "An urgent letter",
+      "still": "A man sits at a low table by lamplight, writing a letter in large strokes. The lamp's flame is gold.",
+      "younger": "Galatians is a letter. Paul wrote it to churches in Galatia, and it is his most urgent one. In most letters he begins by thanking God for his readers. Here he does not. He is afraid of losing people he loves.",
+      "older": "Galatians is the most urgent of Paul's letters. Where a thanksgiving would go, he writes that he is amazed how quickly they are turning to a different gospel. It is a short, fierce letter from a man afraid of losing people he loved.",
+      "verse": {
+        "ref": "Galatians 1:6",
+        "text": "I am amazed how quickly you are deserting the One who called you by the grace of Christ"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in three equal panels, with a walking man, a night of stars and a fruit tree over them. A gold rule lies under the middle panel.",
+      "younger": "The letter has three parts, two chapters each. Paul tells his own story. Then he argues from the Bible, and from what the Galatians had seen. Last, he shows what freedom in Christ looks like in daily life.",
+      "older": "Three parts, with an opening and a closing in Paul's own hand: first his own story, then the argument from the Scriptures and from what the Galatians had seen, and last, freedom lived out.",
+      "verse": {
+        "ref": "Galatians 2:16",
+        "text": "a man is not justified by works of the law, but by faith in Jesus Christ."
+      }
+    },
+    {
+      "id": "question",
+      "name": "Watch for: who belongs",
+      "still": "A wide gate stands open in a wall, and people of many kinds walk through it toward a gold light beyond.",
+      "younger": "Watch for the question. Other teachers came who, like Paul, were Jewish followers of Jesus. They said believers who were not Jewish must keep the law of Moses too. Paul says no. Nothing has to be added to Jesus.",
+      "older": "Other teachers came, Jewish believers in Jesus as Paul was, sincere in their faithfulness to God's word. They said Gentile believers must be circumcised and keep the law. Paul answers that adding anything to Christ as the price of belonging changes the good news.",
+      "verse": {
+        "ref": "Galatians 2:21",
+        "text": "For if righteousness comes through the law, Christ died for nothing."
+      }
+    },
+    {
+      "id": "abraham",
+      "name": "Watch for: Abraham",
+      "still": "An old man stands outside his tent at night, looking up at a sky full of stars. One star is gold.",
+      "younger": "Watch for Abraham. Long before God gave the law, Abraham trusted God's promise, and God counted him right. Paul says everyone who trusts Jesus belongs to Abraham's family. And the law was still God's good gift.",
+      "older": "Paul argues from Israel's own Scriptures. Abraham believed God and was counted righteous, centuries before the law. The law is God's good gift, a guardian until Christ came. Now all who belong to Christ are Abraham's heirs.",
+      "verse": {
+        "ref": "Galatians 3:6",
+        "text": "“Abraham believed God, and it was credited to him as righteousness.”"
+      }
+    },
+    {
+      "id": "table",
+      "name": "Watch for: one table",
+      "still": "People in many kinds of clothes sit together at one long table, sharing bread. One loaf in the middle is gold.",
+      "younger": "Watch for a table. In Antioch, followers of Jesus from different peoples ate together. When Peter stopped eating with those who were not Jewish, Paul said he was wrong. It was a quarrel among Jewish believers, not between Christians and Jews.",
+      "older": "At Antioch Peter stopped eating with Gentile believers, and Paul challenged him in front of everyone. For Paul the gospel is at stake when believers refuse to eat together. It was a quarrel among Jewish believers in Jesus, not between Christians and Jews.",
+      "verse": {
+        "ref": "Galatians 3:28",
+        "text": "for you are all one in Christ Jesus."
+      }
+    },
+    {
+      "id": "fruit",
+      "name": "Watch for: what freedom is for",
+      "still": "Under a fruit tree two people carry one heavy load between them, and a third holds out a hand to help. One fruit on the tree is gold.",
+      "younger": "Watch what freedom is for. Being free does not mean doing whatever you want. It means serving one another in love. Paul names the fruit the Spirit grows, like love, joy, peace and kindness. And he says, carry each other's burdens.",
+      "older": "Freedom is for serving one another in love, not for self-indulgence. Paul sets the works of the flesh beside the fruit of the Spirit, and tells the churches to restore those who fall, gently, and to carry each other's burdens.",
+      "verse": {
+        "ref": "Galatians 5:22",
+        "text": "the fruit of the Spirit is love, joy, peace"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? Read the whole letter at once, out loud if you can. It takes about twenty minutes. Listen for how Paul feels as he writes.",
+      "older": "Read it in one sitting, aloud if you can, with Genesis open for chapters 3 and 4. Do not stop at chapter 4. The letter asks what you are adding to Christ, quietly, as the price of belonging.",
+      "verse": {
+        "ref": "Galatians 5:1",
+        "text": "It is for freedom that Christ has set us free."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Paul says that everyone who trusts Jesus belongs to God's family. Who might feel left out, and how could you welcome them?",
+    "older": "The letter asks who you would rather not eat with. What would it look like to share a table with that person?"
+  },
+  "read": [
+    {
+      "label": "Galatians 1",
+      "href": "/study/bible/galatians/1"
+    },
+    {
+      "label": "Galatians 2",
+      "href": "/study/bible/galatians/2"
+    },
+    {
+      "label": "Galatians 3",
+      "href": "/study/bible/galatians/3"
+    },
+    {
+      "label": "Galatians 4",
+      "href": "/study/bible/galatians/4"
+    },
+    {
+      "label": "Galatians 5",
+      "href": "/study/bible/galatians/5"
+    },
+    {
+      "label": "Galatians 6",
+      "href": "/study/bible/galatians/6"
+    }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that no one is set right with God by circumcision or by the law, and that Gentiles who trust Christ belong to God's people without becoming Jews. They read Paul's phrase works of the law in more than one way: as everything a person does to obey the law in order to stand right with God, as the traditional Protestant reading holds, or above all as the practices that marked Jews off from other peoples, as the new perspective on Paul holds; many take something from both. They differ on whether the faith of Christ means trust placed in Christ or Christ's own faithfulness, on which Galatia Paul wrote to, and on when. This letter is not against the Jewish people: the quarrel was among Jewish believers in Jesus, and the use of New Testament words to justify contempt for Jews is false. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      {
+        "label": "the Galatians page of the Study Bible",
+        "href": "/study/bible/galatians"
+      }
+    ]
+  },
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "Galatians in the Study Bible: the whole book",
+      "href": "/study/bible/galatians"
+    },
+    {
+      "label": "Romans: the good news, set out (a moving picture)",
+      "href": "/study/explorer/watch/book-romans"
+    },
+    {
+      "label": "Grace: the gift no one earns (a moving picture)",
+      "href": "/study/explorer/watch/grace"
+    },
+    {
+      "label": "Faith: trusting the one who promised (a moving picture)",
+      "href": "/study/explorer/watch/faith"
+    }
+  ],
+  "end": {
+    "label": "Start reading: Galatians 1",
+    "href": "/study/bible/galatians/1"
+  }
+}
