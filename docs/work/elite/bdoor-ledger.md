@@ -25712,3 +25712,19 @@ Cut in chapter 31: nothing.
 | The hard note: Does this chapter teach what the afterlife is like? The readings in their holders' terms | 17-32 `hard` | ezekiel/32.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 32: nothing drawn to the New Testament.
+
+## The plain notes on Ezekiel 33 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The watchman, and a people asking how to live: the text paraphrased; quoted clauses at verses 6, 7, 10, 11, 12-16, 17-20 | 1-20 | BSB | BSB text |
+| Background in `hearers` | 1-20 | ezekiel/33.json `historical`, `cultural`, `literary` | Repository |
+| Later: Lamentations 5:7; Isaiah 45:22 | 1-20 `later` | BSB | BSB text |
+| The hard note: Is God really fair if one sin can cancel a lifetime of righteousness, and one turn can cancel a lifetime of wickedness? The readings in their holders' terms | 1-20 `hard` | ezekiel/33.json `hard` | Repository; the site takes no side |
+| The city has been taken: the text paraphrased; quoted clauses at verses 21, 22, 24, 25-26, 27-29, 31, 32, 33 | 21-33 | BSB | BSB text |
+| Background in `hearers` | 21-33 | ezekiel/33.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 25:12; Isaiah 51:2 | 21-33 `later` | BSB | BSB text |
+
+Cut in chapter 33: James 1:22 beside hearers who do not obey, which the New Testament does not draw from Ezekiel 33.
