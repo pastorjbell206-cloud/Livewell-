@@ -25557,3 +25557,17 @@ Cut in chapter 32: the seal impression of Berechiah son of Neriah named in the d
 | Ezra 3:11 (named), Psalm 136:1, Psalm 89:35 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 33: nothing.
+
+## The plain notes on Jeremiah 34 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 34:1-22 (verses 2-5 and 17-22 partly paraphrased) | all | BSB | BSB text |
+| The siege dates; Lachish and Azekah; the Lachish letter on the fire signals | 1-7 | jeremiah/34.json `historical` | Repository |
+| Zedekiah's peaceful death: conditional, narrow, softened | 1-7 `hard` | jeremiah/34.json `hard` | Repository |
+| Debt servitude and the seventh year; Hophra's army and the lull (37:5; 44:30); the cut calf | 8-22 | jeremiah/34.json `historical`, `cultural` | Repository |
+| 2 Chronicles 36:12, Deuteronomy 15:12, Genesis 15:17 (clauses); 2 Kings 25:6-7 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 34: a draft guess at why the slaves were freed, which no repository source states.
