@@ -23790,3 +23790,27 @@ Cut in chapter 45: an unsourced line about conquerors demanding ransom, cut befo
 | Romans 3:21 (its clause); Psalm 33:11 (its clause) | 8-13 `later` | BSB | BSB text |
 
 Cut in chapter 46: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 47 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/47.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 47:1-4 (verse 4 paraphrased around its last clause, since the BSB sets the name between dashes) | 1-4 | BSB | BSB text |
+| Nebuchadnezzar II, about 605 to 562 BC; walls, Ishtar Gate, Marduk's temple; 597 and 587 or 586 BC | 1-4 | isaiah/47.json `historical` | Repository |
+| Royal women veiled; slave women at millstones; wading rivers as captives; the reversal | 1-4 | isaiah/47.json `cultural` | Repository |
+| A taunt song like chapter 14; verse 4 as Israel's interruption | 1-4 | isaiah/47.json `literary` | Repository |
+| Exodus 11:5 (its clause); Luke 14:11 (its clause) | 1-4 `later` | BSB | BSB text |
+| The city-picture statement and the target being the empire, not women | 1-4 `hard` | isaiah/47.json `hard` | Repository |
+| The HURT care line, byte for byte | 1-4 `hard` | 2-kings/plain/9.json and two wisdom files | care.mjs |
+| 47:5-11 | 5-11 | BSB | BSB text |
+| Instrument still accountable, Isaiah 10 | 5-11 | isaiah/47.json `hard` | Repository |
+| Widowhood and loss of children as the two great fears; Babylon's words echo chapter 45 | 5-11 | isaiah/47.json `cultural`, `literary` | Repository |
+| 539 BC, Cyrus, little resistance, not destroyed, empire ended | 5-11 | isaiah/47.json `historical` | Repository |
+| Revelation 18:7 (its first clause); Isaiah 45:5 (its clause) | 5-11 `later` | BSB; isaiah/47.json `christ` for the link | BSB text |
+| 47:12-15 | 12-15 | BSB | BSB text |
+| Babylon's diviners, omen collections, sky, livers, new moon, spells | 12-15 | isaiah/47.json `cultural` | Repository |
+| Deuteronomy 18:10 (its clause); Daniel 2:27 (its clause) | 12-15 `later` | BSB; isaiah/47.json `words` for Deuteronomy 18 | BSB text |
+
+Cut in chapter 47: nothing. The hard note in 5-11 adds the brief's line that judgment on Judah is no reason to blame the Jewish people.
