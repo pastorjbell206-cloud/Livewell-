@@ -220,6 +220,50 @@ All nine files were edited. In his running prose (before the reflection question
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
+## Whole read (2026-11-26)
+
+The first pass, recorded above, recast every dash by a fixed rule and judged each proposal in its own sentence. This second pass read every file whole, as the first four books were read, in the text as the rule left it, with each place the rule had changed marked in the reading copy. The edits are punctuation and capital letters only: no word was added, removed or replaced. The fact diff (`/home/user/vb/factdiff.py`, against the typesetter's original text, e8c784ac) now also holds the booklet's words equal to the original's, counted as a list, and it passes on every file.
+
+What the whole read changed, in 15 edits:
+
+- **A comma where the second half spells out the first.** It is now a colon ("spent primarily in isolation: in personal research and elder consultation"; "genuinely welcome: that this is the beginning of a process"; "the person others will watch").
+- **A semicolon before an explanation.** It is now a colon ("in its most fragile state: the early adopters are engaged …").
+- **Fragment stacks joined.** The three people a coalition needs in chapter 3 ("The longtime deacon. The matriarch …. The small group leader …") are now one list after a colon. The two "The phase in which …" fragments in chapter 2 now follow the sentence they explain. Three "Not … But …" fragments now join the sentence before them (one in chapter 5, two in chapter 6).
+- **An aside in bare commas** now takes brackets ("Not manufactured crisis (the fabrication or exaggeration of problems …). But …").
+- **A closing bracket that needed a comma after it** (the conclusion).
+
+Left alone, and why:
+
+- The introduction's catalogue of failed changes ("The new service time that made perfect sense … The worship style transition … The building campaign … The small groups initiative …") stays as four separate fragments: each is long, and it is a deliberate list of scenes.
+- The verdicts stay ("The plan was right. The communication was wrong.").
+
+Five pairs:
+
+1. Chapter 3. Before: "… to the most skeptical segments of the congregation. The longtime deacon. The matriarch whose family represents three generations of membership. The small group leader who is known for asking hard questions …" After: "… segments of the congregation: the longtime deacon; the matriarch whose family represents three generations of membership; the small group leader who is known for asking hard questions …"
+2. Chapter 6. Before: "… deserves to be told specifically and gratefully what they did. Not in a way that declares final victory before the change has been fully consolidated. But in a way that marks genuine milestones …" After: "… what they did: not in a way that declares final victory before the change has been fully consolidated, but in a way that marks genuine milestones …"
+3. Chapter 2. Before: "… what might be called productive urgency, a genuine, appropriately sized sense of why the current state cannot continue indefinitely. Not manufactured crisis, the fabrication or exaggeration of problems …" After: "… productive urgency: a genuine, appropriately sized sense … Not manufactured crisis (the fabrication or exaggeration of problems in order to justify a change the congregation would not otherwise accept). But …"
+4. Chapter 3. Before: "… much more credible to that same group of longtime members. Because if he can see it, they can consider it." After: "… that same group of longtime members, because if he can see it, they can consider it."
+5. Chapter 1. Before: "The six months the pastor spent developing the plan were spent primarily in isolation, in personal research and elder consultation." After: "… spent primarily in isolation: in personal research and elder consultation."
+
+The counts below are for his running prose, the rule-pass text against the text now. Semicolons, colons and brackets are counted outside quotations.
+
+| Chapter | Words | Edits | Semicolons | Colons | Brackets | Fact diff |
+|---|---|---|---|---|---|---|
+| Introduction: The Way You Introduce It Is the Change | 355 | 0 | 0 → 0 | 2 → 2 | 0 → 0 | PASS |
+| Why Good Ideas Fail | 774 | 1 | 0 → 0 | 6 → 7 | 0 → 0 | PASS |
+| Building the Case: Why Before What | 929 | 4 | 0 → 0 | 1 → 3 | 1 → 2 | PASS |
+| Building Your Coalition | 735 | 3 | 1 → 3 | 3 → 5 | 1 → 1 | PASS |
+| The Announcement and Rollout | 746 | 1 | 0 → 0 | 3 → 4 | 2 → 2 | PASS |
+| Handling Resistance | 728 | 2 | 0 → 0 | 4 → 5 | 2 → 2 | PASS |
+| Evaluating and Celebrating the Change | 751 | 3 | 1 → 0 | 2 → 5 | 5 → 5 | PASS |
+| Conclusion: The Change That Changes You | 295 | 1 | 0 → 0 | 2 → 2 | 2 → 2 | PASS |
+| Appendix: The Change Communication Template | 253 | 0 | 1 → 1 | 5 → 5 | 4 → 4 | PASS |
+| **All 9** | 5,566 | 15 | 3 → 4 | 28 → 38 | 17 → 18 | |
+
+The files were rebuilt with `node scripts/build-book-files.mjs change-without-casualties --verify`. It passed: the EPUB holds 6,411 words, word for word the source, and the PDF's 34,335 body characters on its pages are exactly the source's. The page count is unchanged at 40 (`client/src/data/booklets.ts` needs no change). Page 22 of the PDF, where chapter 3's coalition list falls, was rendered and looked at.
+
+One more item for the list below, noticed in the whole read and not changed: in chapter 5 the reply a pastor might give ("I hear that this is difficult for you. … and we are going to continue moving forward with it.") opens a quotation that is never closed. The original prints it the same way. Closing it changes a quotation, so it is his call.
+
 ## For James: things that look wrong, none of them changed
 
 The booklet was read for this list in its dash contexts and searched for references, statistics and cross-references.
