@@ -24969,3 +24969,18 @@ Cut in chapter 8: nothing; Jaazaniah's family named only as many scholars' view.
 | The hard note: How can God command the killing of old and young, women and children, even in a vision? The readings in their holders' terms | 5-11 `hard` | ezekiel/9.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 9: the early Christian reading of the tav as the cross, kept as a later reflection; Revelation 7:3, a parallel the New Testament does not draw from Ezekiel; the killing named, not described.
+
+## The plain notes on Ezekiel 10 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Burning coals for the city: the text paraphrased; quoted clauses at verses 1, 2, 4, 5, 6-7 | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | ezekiel/10.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 25:9; Isaiah 6:6-7 | 1-8 `later` | BSB | BSB text |
+| The cherubim, and the glory at the east gate: the text paraphrased; quoted clauses at verses 10, 13, 15, 18, 19, 20 | 9-22 | BSB | BSB text |
+| Background in `hearers` | 9-22 | ezekiel/10.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 80:1; 1 Kings 6:23-28 | 9-22 `later` | BSB | BSB text |
+
+Cut in chapter 10: nothing drawn to the New Testament.
