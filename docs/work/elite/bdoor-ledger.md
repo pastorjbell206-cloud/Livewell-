@@ -22612,3 +22612,19 @@ Every claim in `client/public/bible/notes/song-of-solomon/intro.json`, field `te
 | Go deeper: ten pages | deeper | guides/reading-poetry.json, reading-wisdom.json; bible/doctrines.json (family, creation, covenant); wisdom/entry/marriage-intimacy.json, sexual-purity.json, singleness.json, longing-for-marriage.json; needs/marriage.json (titles as the pages give them) | Repository; every page live in the search index |
 
 Cut from the book page: the deep notes' lines to Christ through the chapters (the seal and Ephesians 1:13; the reversal of Genesis 3:16 as the gospel's undoing of the curse; the church as the bride in each scene); the old introduction's line naming Puritan preachers by name (none named in the repository; ‘many Puritan preachers’ kept as the introduction gives it); The explore indexes were rebuilt in the same commit, and `teaching.test.tsx` names the Song among the books with a teaching guide, on the `canaan` frame.
+
+## The plain notes on the Song of Songs 1 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its second sentence; the first, an exclamation, paraphrased); 1:3 (its first two clauses); 1:4 paraphrased (it holds a dash); 1:5; 1:6; 1:7-8 paraphrased | 1-8 | BSB | BSB text |
+| No narrator; the speakers and the two worlds; the joining word read ‘and’ or ‘but’; sun-darkened skin from work, not ethnicity; pale skin and leisure; the brothers and her own vineyard as herself; Kedar's black goat-hair tents and Solomon's curtains; king and shepherd as two views of one beloved, as in other ancient love poems; the veiled woman mistaken among shepherds | 1-8 | song-of-solomon/1.json `story`, `summary`, `cultural`, `historical`, `words` (shachor) | Repository |
+| Psalm 120:5 (before its exclamation); Genesis 2:25 | 1-8 | song-of-solomon/1.json `historical` (Kedar), `hard` (Genesis 2); the chapter data's cross-references; BSB | Repository; BSB text |
+| The hard note: allegory and Akiva in the early second century AD according to the Mishnah; human love as part of the good creation and wisdom for it; Genesis 2; faithfulness, exclusivity and patience; both answers held | 1-8 `hard` | song-of-solomon/1.json `hard` | Repository; each reading in its holders' terms |
+| 1:9; 1:10; ornaments (1:11) paraphrased; her delight (1:12-14), with 1:14's clause quoted and 1:13 not quoted; 1:15 and 1:16 (in double quotes, as each holds exclamations); 1:17 | 9-17 | BSB | BSB text |
+| Pharaoh's chariots and Solomon's ties to Egypt (1 Kings 3:1; 10:28-29); luxury perfumes; En-gedi on the Dead Sea's western shore; speaker by gender of Hebrew words and the headings as judgments; mutual praise as the book's pattern; the outdoor house | 9-17 | song-of-solomon/1.json `historical`, `cultural`, `literary` | Repository |
+| 1 Kings 10:28 (its first clause); 1 Samuel 24:1 named, the wilderness of En-gedi | 9-17 | song-of-solomon/1.json `historical` (1 Kings 10:28-29); the chapter data's cross-references for 1:14; BSB | Repository; BSB text |
+
+Cut in chapter 1: the deep note's readings of the kiss as God's words and of the woman as the church or soul, and its link to Isaiah 62:5 and Mark 2:19-20 (left to the book page's own wording on the bridegroom). The chapter is told without its explicit line (1:13). No care line is needed in this chapter.
