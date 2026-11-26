@@ -23172,3 +23172,22 @@ Every claim in `client/public/bible/notes/habakkuk/intro.json`, field `teaching`
 | Go deeper: nine pages | deeper | bible/guides/reading-prophets.json, empires.json, kings-of-israel-and-judah.json; bible/doctrines.json (Faith and Faithfulness; Justification; Suffering and Evil; Prayer and Lament); the lament study guide; needs/suffering.json (page: true) | Repository; every page live |
 
 Cut from the book page: the introduction's line that the book's question is answered at the cross, which the New Testament does not draw from Habakkuk. 1:2's inner cry is paraphrased.
+
+## The plain notes on Habakkuk 1 (2026-11-26)
+
+`client/public/bible/notes/habakkuk/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its clause; the cry paraphrased); 1:3 (its questions); 1:4 | 1-4 | BSB | BSB text |
+| After Josiah's death in 609 BC; Jehoiakim and Jeremiah's charge; the law-court language; torah paralyzed; justice at the gate; the lament form | 1-4 | habakkuk/1.json `historical`, `cultural`, `literary` | Repository |
+| Psalm 13:1 (its questions, after its heading); Jeremiah 22:13 (its clause) | 1-4 | habakkuk/1.json `historical`; BSB | Repository; BSB text |
+| 1:5 (its clause; the command paraphrased around its dash); 1:6 (its first clause); 1:7-10 paraphrased; 1:11 (its last sentence) | 5-11 | BSB | BSB text |
+| The Chaldeans of the south; Nabopolassar in 626 BC; Nineveh 612; Carchemish 605; a time before Babylon's power was plain; leopards, wolves, vulture, siege ramps | 5-11 | habakkuk/1.json `historical`, `cultural` | Repository |
+| Acts 13:41 (its clause) | 5-11 | habakkuk/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| 1:12 (its first question); 1:13 (its clauses); 1:14-17 paraphrased | 12-17 | BSB | BSB text |
+| Who God is against what he allows; the scribal tradition on we will not die (paraphrased); fishing on the Nile and in Mesopotamia; the complaint into 2:1 | 12-17 | habakkuk/1.json `literary`, `cultural` | Repository |
+| Isaiah 10:5-12; Jeremiah 16:16 | 12-17 | habakkuk/1.json `hard`; BSB | Repository; BSB text |
+| The hard note: not approval (Isaiah 10; Habakkuk 2); not arbitrary; human responsibility; enough or a remainder of mystery; God not absent; no way to read any people's suffering as God's verdict | 12-17 `hard` | habakkuk/1.json `hard`; the brief | Repository; the readings in their holders' terms |
+
+Cut in chapter 1: nothing further.
