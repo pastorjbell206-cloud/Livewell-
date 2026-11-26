@@ -25923,3 +25923,17 @@ Cut in chapter 44: nothing. The hard note adds that the chapter is no judgment o
 | Psalm 131:1, Jeremiah 39:18 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 45: Matthew 6:33, which the New Testament does not tie to this chapter; replaced by Jeremiah 39:18.
+
+## The plain notes on Jeremiah 46 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/46.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 46:1-28 (largely paraphrased) | all | BSB | BSB text |
+| Carchemish 605 BC; Neco II; the Babylonian Chronicle; Hamath | 1-12 | jeremiah/46.json `historical` | Repository |
+| Battle as sacrifice; Isaiah 34:6, Zephaniah 1:7; Egypt's boast; two emphases | 1-12 `hard` | jeremiah/46.json `hard`; the coordinator's direction | Repository |
+| Tabor and Carmel; heifer and gadfly; Amon of Thebes; Egypt inhabited again; 30:10-11 repeated | 13-28 | jeremiah/46.json `cultural`; BSB | Repository, BSB text |
+| Zephaniah 1:7, 2 Kings 24:7, Isaiah 19:25 (clauses); Jeremiah 30:10 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 46: nothing. The hard note adds that no war today is to be called God's sacrifice.
