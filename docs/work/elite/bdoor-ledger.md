@@ -21530,3 +21530,22 @@ Every claim in `client/public/bible/notes/obadiah/intro.json`, field `teaching`.
 | Go deeper: eight pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json, empires.json; bible/doctrines.json (Judgment and Justice; The Kingdom of God; Exile and Restoration); context/guides/the-violence-of-the-old-testament.json, left-lens-right-lens.json | Repository; every page live |
 
 Cut from the book page: the introduction's lines to Mark 1:15, to the deliverers as a pattern fulfilled in the one Savior, and to Philippians 2:5-11, which the New Testament does not draw from Obadiah; and the chapter note's line to Luke 10:30-37.
+
+## The plain notes on Obadiah 1 (2026-11-25)
+
+`client/public/bible/notes/obadiah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1 (its first words; the rest paraphrased, its inner quotation not quoted); 1:2; 1:3 (its first clause); 1:4; 1:5-9 paraphrased | 1-9 | BSB | BSB text |
+| Edom's high country; Esau; David and the ninth-century revolt; sela and Sela (2 Kings 14:7), Petra uncertain; Teman's wisdom and Eliphaz; those who eat your bread; Jeremiah 49 and three explanations; height brought low and plunder complete | 1-9 | obadiah/1.json `historical`, `cultural`, `literary` | Repository; the readings in their holders' terms |
+| Jeremiah 49:16 (its clauses); Jeremiah 49:7; Job 2:11 | 1-9 | obadiah/1.json `cultural`; BSB | Repository; BSB text |
+| 1:10; 1:11 (its last clause; the rest paraphrased); 1:12-13 paraphrased; 1:14 | 10-14 | BSB | BSB text |
+| Most date after 587 or 586 BC; Psalm 137:7, Lamentations and Ezekiel; the minority's Jehoram about 848 to 841 BC; no side taken; from standing by to joining in; brotherhood; lots; the crossroads; day repeated | 10-14 | obadiah/1.json `historical`, `cultural`, `literary` | Repository; each view in its holders' terms |
+| Psalm 137:7 (its clause); Ezekiel 25:12-14; 2 Kings 8:20-22 | 10-14 | obadiah/1.json `historical`; BSB | Repository; BSB text |
+| 1:15; 1:16 paraphrased; 1:17 (its first clause); 1:18-20 paraphrased; 1:21 | 15-21 | BSB | BSB text |
+| The Day for all nations; the punishment matching the crime and the cup of judgment; Zarephath of Sidon (1 Kings 17:9); Sepharad named nowhere else in the Bible; Edom's decline, Malachi and Idumea; the kingdom belonging to the LORD | 15-21 | obadiah/1.json `historical`; obadiah/intro.json `literary`; the BSB (Sepharad searched across the whole BSB) | Repository; BSB text |
+| Malachi 1:2-4; Amos 9:12 (its clause) | 15-21 | obadiah/1.json `historical`; obadiah/intro.json `story`; BSB | Repository; BSB text |
+| The hard note: specific and moral; God's vengeance, not Judah's; Amos and Israel; the Day for all nations; God's kingship; the tension with loving enemies, two readings; Edom not a code for a modern nation; no warrant for hatred or violence; no claim about any modern state or border | 15-21 `hard` | obadiah/1.json `hard`; obadiah/intro.json `reading`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+
+Cut in chapter 1: the deep note's lines to Mark 1:15, Herod and Romans 9 (kept on the book page only as history and the New Testament's own use of Malachi), and Luke 10:30-37, which the New Testament does not draw from Obadiah. An unsourced suggestion for Sepharad's location was cut before commit.
