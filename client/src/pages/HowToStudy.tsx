@@ -18,6 +18,7 @@ import SectionHead from "@/components/art/SectionHead";
 import { readLastChapter } from "@/lib/bible-desk";
 import { KEPT_HERE, STUDY_STEPS, walkHref, type StudyStep } from "@/lib/study-method";
 import "./how-to-study.css";
+import NarratedFilm from "@/components/NarratedFilm";
 
 const ICONS: Record<StudyStep["icon"], typeof BookOpen> = { BookOpen, Eye, Compass, Languages, Link2, CircleHelp, Footprints };
 
@@ -51,6 +52,8 @@ export default function HowToStudy() {
           </>
         }
       />
+
+      <NarratedFilm page="/study/how-to-study" />
 
       <section className="hts-sec" aria-labelledby="hts-steps">
         <div className="hts-in">

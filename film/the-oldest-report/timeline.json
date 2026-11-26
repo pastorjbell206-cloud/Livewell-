@@ -1,0 +1,118 @@
+{
+ "length": 71.54,
+ "chapters": [
+  {
+   "id": "start",
+   "kicker": "Start here",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 8.14,
+   "lines": [
+    {
+     "text": "Did Jesus really rise from the dead? Start with the oldest report we have.",
+     "start": 2.6,
+     "end": 7.24
+    }
+   ]
+  },
+  {
+   "id": "letter",
+   "kicker": "A letter to Corinth",
+   "level": 0.35,
+   "start": 7.34,
+   "end": 18.42,
+   "lines": [
+    {
+     "text": "A little over twenty years after the cross, Paul writes a letter to the church in Corinth.",
+     "start": 8.24,
+     "end": 12.64
+    },
+    {
+     "text": "And in it he quotes something older. Something he says was handed on to him.",
+     "start": 13.28,
+     "end": 17.52
+    }
+   ]
+  },
+  {
+   "id": "creed",
+   "kicker": "What was handed on",
+   "level": 0.55,
+   "start": 17.62,
+   "end": 30.18,
+   "lines": [
+    {
+     "text": "That Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures, and that He appeared to Cephas and then to the Twelve.",
+     "start": 18.52,
+     "end": 29.28
+    }
+   ]
+  },
+  {
+   "id": "early",
+   "kicker": "How early",
+   "level": 0.7,
+   "start": 29.38,
+   "end": 35.8,
+   "lines": [
+    {
+     "text": "Cephas is Peter. Many scholars think Paul received these words very early.",
+     "start": 30.28,
+     "end": 34.9
+    }
+   ]
+  },
+  {
+   "id": "ask",
+   "kicker": "Go and ask them",
+   "level": 0.85,
+   "start": 35.0,
+   "end": 46.5,
+   "lines": [
+    {
+     "text": "Then Paul adds something bold. More than five hundred people saw him at once, he says, and most of them are still alive.",
+     "start": 35.9,
+     "end": 43.16
+    },
+    {
+     "text": "In other words, go and ask them.",
+     "start": 43.84,
+     "end": 45.6
+    }
+   ]
+  },
+  {
+   "id": "rules-out",
+   "kicker": "What this rules out",
+   "level": 0.9,
+   "start": 45.7,
+   "end": 59.7,
+   "lines": [
+    {
+     "text": "None of that forces anyone to believe. But it does rule out one idea. That the resurrection was a legend that grew slowly over centuries.",
+     "start": 46.6,
+     "end": 54.76
+    },
+    {
+     "text": "The claim was there at the start, from people who said they saw him.",
+     "start": 55.36,
+     "end": 58.8
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 58.9,
+   "end": 65.44,
+   "lines": [
+    {
+     "text": "So the real question isn't when the story began. It's whether they were telling the truth.",
+     "start": 59.8,
+     "end": 64.54
+    }
+   ]
+  }
+ ]
+}

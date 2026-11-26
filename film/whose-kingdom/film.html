@@ -1,0 +1,151 @@
+<!doctype html>
+<!-- "Whose kingdom?" One continuous picture: Caesar's coin and his roads, a small group and three words,
+     the prayer, a great arc coming down while a small flag makes room, a row of flags reaching for the
+     arc, one flag lifted too high, the flags falling, the arc that stays.
+     No faces and no real flags: every flag is a plain pennant. God and Christ are not drawn.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Whose kingdom?</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const A0 = S("caesar", 0), A1 = S("caesar", 1);
+  const B0 = S("three-words", 0), B1 = S("three-words", 1), B2 = S("three-words", 2);
+  const C0 = S("prayer", 0), C1 = S("prayer", 1), CE = E("prayer");
+  const D0 = S("notice", 0), D1 = S("notice", 1);
+  const G0 = S("gift", 0), G1 = S("gift", 1);
+  const L0 = S("lasts", 0), L1 = S("lasts", 1);
+  const Z0 = S("close", 0), END = F.VOICE_END;
+  const R = rng(23), GROUND = 505, RA = 880;
+
+  // ================= the arc: the kingdom the prayer asks for (a line, never a figure) =================
+  const gArc = el("g", {}, world), specks = [...Array(16)].map(() => ({ x: 190 + R() * 900, ph: R(), sp: 0.07 + R() * 0.05, e: el("circle", { r: 2.6, fill: MUSTARD }, gArc) }));
+  const arc = el("circle", { cx: 640, r: RA, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gArc);
+  const arcBottom = (t) => { let b = 140;                                   // where the lowest point of the arc sits, by scene
+    b = mix(b, 432, up(t, D1 + 0.1, 3.2)); b = mix(b, 190, up(t, G0 - 0.7, 1.5)); b = mix(b, 252, up(t, L1 - 0.3, 1.6)); return b; };
+  const arcY = (x, b) => b - RA + Math.sqrt(RA * RA - (x - 640) * (x - 640));
+
+  // ================= 1: Caesar's coin, his roads, his crowd =================
+  const gRome = el("g", {}, world), gRoads = el("g", {}, gRome), gCrowd = el("g", {}, gRome), gCoin = el("g", {}, gRome);
+  const CX = 640, CY = 318;
+  const roads = [-158, -118, -62, -22, 24, 68, 152].map((deg, i) => { const a = deg * Math.PI / 180, ex = CX + 470 * Math.cos(a), ey = CY + 196 * Math.sin(a), mx = (CX + ex) / 2 - 42 * Math.sin(a) * (i % 2 ? 1 : -1), my = (CY + ey) / 2 + 42 * Math.cos(a) * (i % 2 ? 1 : -1);
+    const p = line(gRoads, `M${CX} ${CY} Q${mx.toFixed(1)} ${my.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`, { stroke: LINE, "stroke-width": 3 });
+    return { p, len: 0, town: el("g", {}, gRoads), men: [...Array(9)].map(() => el("rect", { x: -3.5, y: -3.5, width: 7, height: 7, fill: INK }, gRoads)) }; });
+  roads.forEach((r) => { el("circle", { r: 11, fill: WARM, stroke: INK, "stroke-width": 2.2 }, r.town); el("circle", { r: 3, fill: INK }, r.town); });
+  const crowd = [...Array(38)].map((_, i) => { let x, y; do { x = CX + (R() - 0.5) * 900; y = CY + (R() - 0.5) * 380; } while (Math.hypot((x - CX) / 2.2, y - CY) < 95); const a = (i / 38) * Math.PI * 2;
+    return { x, y, tx: CX + (104 + (i % 2) * 24) * Math.cos(a), ty: CY + (104 + (i % 2) * 24) * Math.sin(a), e: el("circle", { r: 5.5, fill: STONE }, gCrowd) }; });
+  const rim = el("circle", { r: 122, fill: WARM, stroke: INK, "stroke-width": 4, pathLength: 1, "stroke-dasharray": 1, transform: "rotate(-90)" }, gCoin);
+  const rim2 = el("circle", { r: 106, fill: "none", stroke: INK, "stroke-width": 1.5 }, gCoin);
+  const leaves = []; [1, -1].forEach((side) => { for (let k = 0; k < 10; k++) { const deg = 28 + k * 15, a = deg * Math.PI / 180;
+    const leaf = el("ellipse", { rx: 4.6, ry: 12.5, fill: INK }, gCoin); leaf.setAttribute("transform", `translate(${(side * 80 * Math.sin(a)).toFixed(1)} ${(-80 * Math.cos(a)).toFixed(1)}) rotate(${(side * (deg + 90 - 58)).toFixed(1)})`); leaves.push({ e: leaf, k: 9 - k }); } });
+  const cName = txt(gCoin, "disp", 0, 11, "CAESAR", 27, { "letter-spacing": "4" });
+  const lordSay = el("text", { class: "disp", x: CX, y: 152, style: "font-size:46px" }, gRome);
+  const ls1 = el("tspan", {}, lordSay); ls1.textContent = "Caesar "; const ls2 = el("tspan", {}, lordSay); ls2.textContent = "is lord";
+  const strike = line(gRome, `M${CX + 14} 140 H${CX + 142}`, { stroke: MUSTARD, "stroke-width": 3.5 });
+
+  // ================= 2: a small group, three words =================
+  const gFew = el("g", {}, world), gMarch = el("g", {}, world), gWords = el("g", {}, world);
+  const few = [[-34, -8], [0, -26], [34, -10], [-48, 26], [-14, 14], [20, 20], [52, 30]].map(([dx, dy], i) => ({ dx, dy, i, e: el("circle", { r: 9.5, fill: MUSTARD }, gFew) }));
+  const church = line(gWords, "M778 452 V222 L960 140 L1142 222 V452", { stroke: STONE, "stroke-width": 2.2 }), cross = line(gWords, "M960 140 V104 M947 117 H973", { stroke: STONE, "stroke-width": 2.2 });
+  const say = el("text", { class: "disp", x: 960, y: 252, style: "font-size:58px" }, gWords);
+  const sayW = ["Jesus ", "is ", "Lord."].map((w) => { const s = el("tspan", {}, say); s.textContent = w; return s; });
+  const march = [...Array(12)].map((_, i) => { const a = (118 + (i % 6) * 19) * Math.PI / 180, rr = 150 + Math.floor(i / 6) * 24; return { x0: 600 + (i % 3) * 22, y0: 262 + Math.floor(i / 3) * 34, x1: 960 + rr * Math.cos(a), y1: 366 + rr * Math.sin(a) * 0.8, e: el("rect", { x: -5, y: -5, width: 10, height: 10, fill: INK }, gMarch) }; });
+
+  // ================= 3: the prayer =================
+  const gEarth = el("g", {}, world), gPrayer = el("g", {}, world);
+  const earth = el("path", { fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gEarth);
+  const pr1 = el("text", { class: "disp", x: 640, y: 236, style: "font-size:54px" }, gPrayer), pr2 = el("text", { class: "disp", x: 640, y: 300, style: "font-size:54px" }, gPrayer);
+  const ph = [["“Your kingdom come, ", pr1], ["Your will be done,", pr1], ["on earth as it is in heaven.”", pr2]].map(([w, p]) => { const s = el("tspan", {}, p); s.textContent = w; return s; });
+  const prRef = txt(gPrayer, "lab", 640, 350, "MATTHEW 6:10 · BEREAN STANDARD BIBLE");
+
+  // ================= 4: my side, and making room =================
+  const gCamps = el("g", {}, world);
+  const campL = [...Array(9)].map((_, i) => ({ x: 262 + (i % 3) * 30 + (R() - 0.5) * 8, y: GROUND - 14 - Math.floor(i / 3) * 24, s: (i % 3) - 1, e: el("circle", { r: 8, fill: INK }, gCamps) }));
+  const campR = [...Array(9)].map((_, i) => ({ x: 950 + (i % 3) * 30 + (R() - 0.5) * 8, y: GROUND - 14 - Math.floor(i / 3) * 24, e: el("circle", { r: 7, fill: BONE, stroke: INK, "stroke-width": 2 }, gCamps) }));
+  const flag = (parent, x, fill) => { const g = el("g", {}, parent), pole = el("line", { x1: 0, x2: 0, y1: 0, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, g), pen = el("path", { fill }, g);
+    return { g, x, put(h, base = GROUND, s = 1, t = 0) { move(g, x, base, s); pole.setAttribute("y2", (-h).toFixed(1)); const w = 3 * Math.sin(t * 2.2 + x * 0.02), k = clamp(h / 30);
+      pen.setAttribute("d", `M0 ${(-h).toFixed(1)} Q${(24 * k).toFixed(1)} ${(-h + 4 + w).toFixed(1)} ${(46 * k).toFixed(1)} ${(-h + 13 + w * 0.6).toFixed(1)} Q${(24 * k).toFixed(1)} ${(-h + 20 - w).toFixed(1)} 0 ${(-h + 27 * k).toFixed(1)} Z`); } }; };
+  const myFlag = flag(gCamps, 322, INK), sideLab = txt(gCamps, "lab", 300, 548, "MY SIDE");
+
+  // ================= 5 and 6: every nation's flag, the gift lifted too high, the fall =================
+  const gFlags = el("g", {}, world), gRopes = el("g", {}, gFlags), gCol = el("g", {}, gFlags);
+  const TONES = [CHAR, STONE, INK, STONE, INK, CHAR, STONE, INK, CHAR];
+  const column = el("rect", { x: 616, width: 48, fill: WARM, stroke: INK, "stroke-width": 2.5 }, gCol);
+  const flags = [...Array(9)].map((_, i) => { const x = 160 + i * 120, f = flag(gFlags, x, TONES[i]); f.i = i; f.rope = line(gRopes, "M0 0", { stroke: STONE, "stroke-width": 1.6 }); return f; });
+  const me = el("circle", { cx: 672, cy: GROUND - 12, r: 10, fill: INK }, gFlags), meRing = el("circle", { cx: 672, cy: GROUND - 12, r: 19, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gFlags);
+  const giftLab = txt(gFlags, "lab", 640, 548, "A GOOD GIFT"), godLab = txt(gFlags, "lab", 640, 548, "A TERRIBLE GOD");
+  const coinClip = el("clipPath", { id: "aboveGround" }, gFlags); el("rect", { x: 0, y: 0, width: 1280, height: GROUND - 1.5 }, coinClip);
+  const gSink = el("g", { "clip-path": "url(#aboveGround)" }, gFlags), oldCoin = el("g", {}, gSink);
+  el("circle", { r: 36, fill: WARM, stroke: INK, "stroke-width": 3 }, oldCoin); el("circle", { r: 29, fill: "none", stroke: INK, "stroke-width": 1.2 }, oldCoin); txt(oldCoin, "disp", 0, 5, "CAESAR", 13, { "letter-spacing": "2" });
+  const gLast = el("g", {}, world);
+  const last = txt(gLast, "disp", 640, 404, "“we are receiving an unshakable kingdom”", 50), lastRef = txt(gLast, "lab", 640, 450, "HEBREWS 12:28 · BEREAN STANDARD BIBLE");
+  const you = el("circle", { cx: 640, cy: GROUND - 15, r: 13, fill: INK }, world), yourFlag = flag(world, 560, STONE);
+
+  const drawRome = (t) => {
+    const v = 1 - up(t, C0 - 0.9, 1.1); op(gRome, t < C0 + 0.3 ? v : 0); if (v <= 0) return;
+    const shift = up(t, B0 - 0.4, 1.5), small = up(t, A1 - 0.1, 1.2);
+    gRome.setAttribute("transform", `translate(${mix(0, -245, shift).toFixed(1)} ${mix(0, 8, shift).toFixed(1)}) translate(${CX} ${CY}) scale(${mix(1, 0.78, shift).toFixed(4)}) translate(${-CX} ${-CY})`);
+    move(gCoin, CX, CY, mix(1, 0.62, small), 2.2 * Math.sin(t * 0.5));
+    draw(rim, up(t, A0 - 0.1, 1.8)); rim.setAttribute("fill-opacity", up(t, A0 + 0.9, 1)); op(rim2, up(t, A0 + 1.5, 0.6));
+    leaves.forEach((l) => op(l.e, up(t, A0 + 1.0 + l.k * 0.16, 0.45) * (1 - 0.75 * up(t, B2 + 1.3, 1.0)))); op(cName, up(t, A0 + 2.5, 0.7));
+    roads.forEach((r, i) => { if (!r.len) r.len = r.p.getTotalLength(); const d = up(t, A1 + 0.5 + i * 0.1, 1.8); draw(r.p, d);
+      const tk = up(t, A1 + 0.3 + i * 0.12, 1.7), tp = r.p.getPointAtLength(r.len * 0.52 * tk); move(r.town, tp.x, tp.y); op(r.town, up(t, A1 + 0.3 + i * 0.12, 0.4));
+      r.men.forEach((m, j) => { const u = ((t * 0.075 + i * 0.13 + Math.floor(j / 3) * 0.333 + (j % 3) * 0.022) % 1), p = r.p.getPointAtLength(r.len * u); move(m, p.x, p.y);
+        op(m, up(t, A1 + 1.6, 0.8) * Math.min(1, u * 8, (1 - u) * 6) * (u < d ? 1 : 0) * (1 - up(t, B1 + 2.0, 0.8))); }); });
+    const gather = up(t, A1 + 3.3, 1.9);
+    crowd.forEach((c, i) => { op(c.e, up(t, A1 + 2.6 + (i % 7) * 0.08, 0.6)); set(c.e, { cx: (mix(c.x, c.tx, gather) + 2 * Math.sin(t * 0.7 + i)).toFixed(1), cy: (mix(c.y, c.ty, gather) + 2 * Math.cos(t * 0.6 + i * 2)).toFixed(1) }); });
+    op(lordSay, up(t, A1 + 3.6, 0.8)); const no = up(t, B2 + 1.2, 0.8); draw(strike, no); ls2.setAttribute("fill-opacity", (1 - 0.6 * no).toFixed(2));
+  };
+  const drawFew = (t) => {
+    const v = up(t, B0 + 0.3, 0.6) * (1 - up(t, G0 - 0.7, 0.8)); op(gFew, v);
+    if (v > 0) { const down = up(t, C0 - 0.6, 1.5); few.forEach((f) => { const bx = 640 + (f.i - 3) * 36, by = GROUND - 14 - 9 * Math.cos(((f.i - 3) / 3) * Math.PI / 2);
+      op(f.e, up(t, B0 + 0.3 + f.i * 0.18, 0.5)); set(f.e, { cx: (mix(960 + f.dx, bx, down) + 1.6 * Math.sin(t * 0.9 + f.i)).toFixed(1), cy: (mix(350 + f.dy, by, down) + 1.6 * Math.cos(t * 0.8 + f.i * 1.4) * (1 - down)).toFixed(1) }); }); }
+    const wv = span(t, B0 + 2.6, C0 - 0.2, 0.3, 0.7); op(gWords, wv);
+    if (wv > 0) { sayW.forEach((s, i) => s.setAttribute("fill-opacity", up(t, B0 + 2.95 + i * 0.42, 0.4).toFixed(2))); sayW[2].setAttribute("fill", t > B2 + 0.6 ? "#B08A12" : INK);
+      const cv = span(t, B1, B1 + 2.9, 0.4, 0.6); op(church, cv); op(cross, cv); draw(church, up(t, B1, 1.5)); draw(cross, up(t, B1 + 1.2, 0.6)); }
+    const mv = span(t, B1 + 2.3, C0 - 0.2, 0.5, 0.8); op(gMarch, mv);
+    if (mv > 0) { const k = up(t, B1 + 2.5, 1.9); march.forEach((m, i) => move(m.e, mix(m.x0, m.x1, k), mix(m.y0, m.y1, k) + 1.5 * Math.sin(t * 5 + i) * (k < 1 ? 1 : 0))); }
+  };
+  const drawPrayer = (t) => {
+    const ev = up(t, C0 - 0.6, 0.4) * (1 - up(t, END + 0.6, 0.7)); op(gEarth, ev);
+    if (ev > 0) { const k = up(t, C0 - 0.6, 1.8), shake = span(t, L0 - 0.2, L1 + 2.2, 0.8, 1.2); let d = ""; const x1 = 640 - 700 * k, x2 = 640 + 700 * k;
+      for (let x = x1; x <= x2 + 1; x += 28) d += `${d ? "L" : "M"}${x.toFixed(1)} ${(GROUND + shake * 3.2 * Math.sin(x * 0.045 + t * 2.4)).toFixed(2)}`; earth.setAttribute("d", d || "M0 0"); }
+    const av = up(t, C0 + 0.1, 1.2) * (1 - up(t, END + 0.6, 0.7)); op(gArc, av);
+    if (av > 0) { const b = arcBottom(t); arc.setAttribute("cy", (b - RA).toFixed(2)); arc.setAttribute("stroke-width", mix(3, 5.5, up(t, L1 - 0.2, 1.6)).toFixed(2));
+      specks.forEach((s) => { const u = ((t * s.sp + s.ph) % 1), y0 = arcY(s.x, b), y = mix(y0, GROUND - 4, u); set(s.e, { cx: (s.x + 5 * Math.sin(u * 6 + s.ph * 9)).toFixed(1), cy: y.toFixed(1), opacity: (0.6 * Math.sin(Math.PI * u) * (y0 < GROUND - 30 ? 1 : 0)).toFixed(3) }); }); }
+    const pv = span(t, C1 - 0.3, D0 + 0.5, 0.3, 0.8); op(gPrayer, pv);
+    if (pv > 0) { const d = CE - C1; [0, 0.28, 0.52].forEach((f, i) => ph[i].setAttribute("fill-opacity", up(t, C1 - 0.1 + f * d, 0.5).toFixed(2))); op(prRef, up(t, C1 + d * 0.72, 0.7)); }
+  };
+  const drawCamps = (t) => {
+    const v = span(t, D0 + 0.3, G0 - 0.1, 0.4, 0.8); op(gCamps, v); if (v <= 0) return;
+    const room = up(t, D1 + 1.7, 2.0);
+    campL.forEach((c, i) => { op(c.e, up(t, D0 + 0.4 + i * 0.06, 0.5)); set(c.e, { cx: (c.x - 70 * room + c.s * 16 * room).toFixed(1), cy: (c.y + 1.2 * Math.sin(t + i)).toFixed(1) }); });
+    campR.forEach((c, i) => { op(c.e, up(t, D0 + 0.6 + i * 0.06, 0.5)); set(c.e, { cx: c.x.toFixed(1), cy: (c.y + 1.2 * Math.sin(t * 0.9 + i * 2)).toFixed(1) }); });
+    myFlag.x = 322 - 70 * room; myFlag.put(mix(0, 96, up(t, D0 + 1.7, 1.2)) * (1 - 0.72 * room), GROUND, 1, t); op(myFlag.g, up(t, D0 + 1.65, 0.3));
+    op(sideLab, span(t, D0 + 2.3, D1 + 2.0, 0.5));
+  };
+  const drawFlags = (t) => {
+    const v = up(t, G0 - 0.3, 0.4) * (1 - up(t, Z0 - 0.2, 0.8)); op(gFlags, v); if (v <= 0) return;
+    const b = arcBottom(t), ours = up(t, G0 + 3.0, 0.7), lift = up(t, G1 + 2.7, 1.9) * (1 - up(t, L0 - 0.6, 1.3)), fall = up(t, L0 + 0.9, 1.3);
+    flags.forEach((f) => { const c = f.i === 4, grow = up(t, G0 - 0.2 + f.i * 0.11, 1.0);
+      let h = 84 * grow + (c ? 10 * ours : 0); h += 26 * Math.sin(t * 2.6 - f.i * 0.8) * span(t, L0 - 0.1, L0 + 1.6, 0.5, 0.6); h = mix(h, 9, fall);
+      const base = c ? GROUND - 205 * lift : GROUND; f.put(h, base, c ? mix(1, 1.5, lift) : 1, t);
+      op(f.g, c ? 1 : mix(1, 0.38, ours) * mix(1, 0.6, up(t, G1, 0.8)));
+      const top = base - h * (c ? mix(1, 1.5, lift) : 1), ay = arcY(f.x, b); f.rope.setAttribute("d", `M${f.x} ${top.toFixed(1)} V${ay.toFixed(1)}`);
+      draw(f.rope, up(t, G0 + 0.8 + f.i * 0.13, 1.0)); op(f.rope, 1 - up(t, G1 - 0.3, 0.8)); });
+    set(column, { y: (GROUND - 205 * lift).toFixed(1), height: (205 * lift).toFixed(1) }); op(column, lift > 0.01 ? 1 : 0);
+    const mv = up(t, G0 + 4.2, 0.5) * (1 - up(t, G1 + 2.4, 0.6)); op(me, mv); op(meRing, mv); meRing.setAttribute("r", (19 + 2 * Math.sin(t * 1.8)).toFixed(2));
+    op(giftLab, span(t, G1 + 1.3, G1 + 3.2, 0.5)); op(godLab, span(t, G1 + 3.4, L0 - 0.1, 0.6));
+    const cv = up(t, L0 + 0.9, 0.5); op(gSink, cv); move(oldCoin, 820, GROUND - 40 + 96 * up(t, L0 + 1.5, 1.6), 1, -24 * up(t, L0 + 1.5, 1.6));
+  };
+  const drawLast = (t) => {
+    const v = span(t, L1 + 0.5, Z0 + 0.4, 0.8, 0.7); op(gLast, v); if (v > 0) { last.setAttribute("y", (404 + 8 * (1 - up(t, L1 + 0.5, 1.2))).toFixed(1)); op(lastRef, up(t, L1 + 1.5, 0.7)); }
+    const yv = up(t, Z0 + 0.2, 0.7) * (1 - up(t, END + 0.6, 0.7)); op(you, yv); op(yourFlag.g, yv * up(t, Z0 + 1.5, 0.4)); yourFlag.put(52 * up(t, Z0 + 1.5, 1.1), GROUND, 1, t);
+  };
+
+  F.title("Whose kingdom?");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.7);
+  return (t) => { drawPrayer(t); drawRome(t); drawFew(t); drawCamps(t); drawFlags(t); drawLast(t); };
+});
+</script>
+</body></html>

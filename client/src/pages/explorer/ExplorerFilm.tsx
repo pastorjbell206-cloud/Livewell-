@@ -49,6 +49,7 @@ import { WATCH_ID } from "./Watch";
 import type { ExportShape } from "./films/FilmExport";
 import "./explorer.css";
 import "./films/film.css";
+import NarratedFilm from "@/components/NarratedFilm";
 
 /**
  * Each finished film's search title and description, written out so the
@@ -616,6 +617,8 @@ function FilmPage({
           word is under the picture, and Listen reads it aloud.
         </p>
       </PageHead>
+
+      <NarratedFilm page={filmHref(film.slug)} />
 
       <section className="ex-sec ex-sec--tight" aria-label="Reading level">
         <div className="ex-wrap">

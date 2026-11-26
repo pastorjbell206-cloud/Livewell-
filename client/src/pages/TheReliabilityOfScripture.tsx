@@ -17,6 +17,7 @@ import { FreeEbookButtons } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
 import { EbookLabel, OfferLine, OfferMeta } from "@/components/BookOffer";
 import { SITE_URL } from "@/lib/site";
+import NarratedFilm from "@/components/NarratedFilm";
 
 const COVER = "/covers/the-reliability-of-scripture-800.webp";
 const SHARE = "/covers/the-reliability-of-scripture.jpg";
@@ -64,6 +65,8 @@ export default function TheReliabilityOfScripture() {
           </div>
         </div>
       </section>
+
+      <NarratedFilm page="/books/the-reliability-of-scripture" band="warm" />
 
       {/* PITCH */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>

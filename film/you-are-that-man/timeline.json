@@ -1,0 +1,133 @@
+{
+ "length": 70.1,
+ "chapters": [
+  {
+   "id": "king",
+   "kicker": "A king and a cover-up",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 12.7,
+   "lines": [
+    {
+     "text": "A king takes another man's wife. Then he has the man killed to cover it up.",
+     "start": 2.6,
+     "end": 7.24
+    },
+    {
+     "text": "The king's name is David. And for a while, nothing happens.",
+     "start": 7.9,
+     "end": 11.8
+    }
+   ]
+  },
+  {
+   "id": "story",
+   "kicker": "Nathan tells a story",
+   "level": 0.4,
+   "start": 11.9,
+   "end": 29.46,
+   "lines": [
+    {
+     "text": "Then a prophet named Nathan walks in. He doesn't accuse the king. He tells him a story.",
+     "start": 12.8,
+     "end": 17.84
+    },
+    {
+     "text": "A rich man owns huge flocks. A poor man owns one little lamb, raised like a daughter.",
+     "start": 18.46,
+     "end": 24.04
+    },
+    {
+     "text": "A guest shows up. And the rich man takes the poor man's lamb for dinner.",
+     "start": 24.64,
+     "end": 28.56
+    }
+   ]
+  },
+  {
+   "id": "anger",
+   "kicker": "The king is furious",
+   "level": 0.6,
+   "start": 28.66,
+   "end": 34.42,
+   "lines": [
+    {
+     "text": "David is furious. That man deserves to die, he says.",
+     "start": 29.56,
+     "end": 33.52
+    }
+   ]
+  },
+  {
+   "id": "turn",
+   "kicker": "Four words",
+   "level": 0.8,
+   "start": 33.62,
+   "end": 39.64,
+   "lines": [
+    {
+     "text": "Nathan looks at him and says four words.",
+     "start": 34.52,
+     "end": 36.6
+    },
+    {
+     "text": "You are that man!",
+     "start": 37.12,
+     "end": 38.74
+    }
+   ]
+  },
+  {
+   "id": "teach",
+   "kicker": "Why the story worked",
+   "level": 0.9,
+   "start": 38.84,
+   "end": 51.62,
+   "lines": [
+    {
+     "text": "Here's why the story worked. David could see the sin clearly, as long as it belonged to somebody else.",
+     "start": 39.74,
+     "end": 45.52
+    },
+    {
+     "text": "So can we. We're experts on other people's faults and strangers to our own.",
+     "start": 45.98,
+     "end": 50.72
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "Six words back",
+   "level": 0.7,
+   "start": 50.82,
+   "end": 59.22,
+   "lines": [
+    {
+     "text": "A king could have had Nathan killed. David says six words instead.",
+     "start": 51.72,
+     "end": 55.86
+    },
+    {
+     "text": "I have sinned against the LORD.",
+     "start": 56.46,
+     "end": 58.32
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 58.42,
+   "end": 63.995,
+   "lines": [
+    {
+     "text": "The way out of a blind spot starts when you let someone tell you the truth.",
+     "start": 59.32,
+     "end": 63.095
+    }
+   ]
+  }
+ ]
+}

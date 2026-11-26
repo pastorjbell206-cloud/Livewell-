@@ -1,0 +1,92 @@
+{
+  "title": "The Bible in a minute",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions and its rows of docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/bible-in-a-minute",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "made",
+      "kicker": "Made good",
+      "level": 0.2,
+      "lines": [
+        "Before anything else, there's God. He speaks a world into being and calls it good. He makes people in his image to care for it."
+      ]
+    },
+    {
+      "id": "broken",
+      "kicker": "Broken",
+      "level": 0.35,
+      "lines": [
+        "The first people reach for what God held back, and the damage spreads. God judges. He also keeps showing mercy."
+      ]
+    },
+    {
+      "id": "promise",
+      "kicker": "A promise",
+      "level": 0.45,
+      "lines": [
+        "He calls one man, Abraham, and promises him a people, a land, and a blessing for every family on earth."
+      ]
+    },
+    {
+      "id": "rescue",
+      "kicker": "A rescue",
+      "level": 0.55,
+      "lines": [
+        "That family becomes a nation of slaves. God sets them free, opens a road through the sea, and gives them his law at Sinai."
+      ]
+    },
+    {
+      "id": "king",
+      "kicker": "A king",
+      "level": 0.65,
+      "lines": [
+        "He gives them the land, and they ask for a king. David loves God and still fails badly. God promises him a son whose kingdom will never end."
+      ]
+    },
+    {
+      "id": "exile",
+      "kicker": "Exile, and hope",
+      "level": 0.75,
+      "lines": [
+        "The kingdom falls. Babylon burns Jerusalem. But the prophets promise a new covenant and a coming king."
+      ]
+    },
+    {
+      "id": "jesus",
+      "kicker": "The cross and the empty tomb",
+      "level": 0.9,
+      "lines": [
+        "Then God keeps his promises in person. Jesus dies on a Roman cross, carrying the sin of the world. On the third day God raises him bodily from the dead."
+      ]
+    },
+    {
+      "id": "new",
+      "kicker": "The Spirit, and all things new",
+      "level": 0.95,
+      "lines": [
+        "The Spirit comes, and the church spreads to every nation. One day Jesus returns, death is undone, and God makes his home with people forever.",
+        "Behold, I make all things new."
+      ],
+      "scripture": {
+        "reference": "Revelation 21:5",
+        "text": "Behold, I make all things new.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "One book. One story. Go read it."
+      ],
+      "titleCard": [
+        "One book. One story.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

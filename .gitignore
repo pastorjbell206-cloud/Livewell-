@@ -142,3 +142,9 @@ client/public/og/
 .claude/worktrees/
 client/public/sitemap.xml
 design-audit-out/
+
+# narrated films: finished videos, audio and scratch files stay out of git
+film/out/
+film/*/audio/
+film/shots/
+film/package-lock.json

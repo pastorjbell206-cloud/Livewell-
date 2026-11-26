@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- "The oldest report" (1 Corinthians 15). One continuous picture on one timeline: a plain cross marks the
+     start, later reports sit along the line, one of them opens into Paul's letter, a block inside it is
+     boxed and handed back down the line, the block opens into the words themselves, settles near the
+     start, a crowd of more than five hundred gathers, and a slow "legend" curve gives way to a claim that
+     was there at the start. No dates, no faces. Christ is not drawn.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>The oldest report</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", DEEP = "#B08A12";
+  const ST = S("start", 0), A0 = S("letter", 0), A1 = S("letter", 1);
+  const C0 = S("creed", 0), CE = E("creed"), Y0 = S("early", 0), YE = E("early");
+  const G0 = S("ask", 0), G1 = S("ask", 1), R0 = S("rules-out", 0), R1 = S("rules-out", 1), Z0 = S("close", 0), END = F.VOICE_END;
+  const R = rng(31), TY = 490, X0 = 150, XL = 520;
+  const scr = window.SCRIPT.chapters.find((c) => c.id === "creed").scripture;
+  const barRow = (g, x0, y, widths, h, fill, gap = 8) => { let x = x0; return widths.map((w) => { const r = el("rect", { x, y: y - h / 2, width: w, height: h, rx: h / 2, fill }, g); x += w + gap; return r; }); };
+  const rowW = (total) => { const a = []; let s = 0; while (s < total - 30) { const w = 16 + Math.round(R() * 30); a.push(Math.min(w, total - s)); s += w + 8; } return a; };
+
+  // ================= the timeline =================
+  const gLine = el("g", {}, world);
+  const base = line(gLine, `M${X0 - 20} ${TY} H1160`, { stroke: INK, "stroke-width": 3 });
+  const cross = line(gLine, `M${X0} ${TY} V${TY - 62} M${X0 - 15} ${TY - 44} H${X0 + 15}`, { stroke: INK, "stroke-width": 4 });
+  const runner = el("circle", { cy: TY, r: 5, fill: MUSTARD }, gLine);
+  const ticks = [...Array(9)].map((_, i) => el("line", { x1: 262 + i * 110, x2: 262 + i * 110, y1: TY - 9, y2: TY + 9, stroke: INK, "stroke-width": 2.5, "stroke-linecap": "round" }, gLine));
+  const bracket = line(gLine, `M${X0} ${TY + 14} V${TY + 22} H${XL} V${TY + 14}`, { stroke: STONE, "stroke-width": 1.8 });
+  const years = txt(gLine, "lab", (X0 + XL) / 2, TY + 50, "A LITTLE OVER 20 YEARS");
+  const marker = el("circle", { cy: TY, r: 8, fill: INK }, gLine);
+  const hand = [470, 420, 370, 320, 270, 220].map((x, i, a) => ({ x, dot: el("circle", { cx: x, cy: TY, r: 5.5, fill: STONE }, gLine), arc: line(gLine, `M${i ? a[i - 1] : XL} ${TY - 12} Q${((i ? a[i - 1] : XL) + x) / 2} ${TY - 44} ${x} ${TY - 12}`, { stroke: STONE, "stroke-width": 1.8 }) }));
+  const early = txt(gLine, "lab", 262, TY + 37, "VERY EARLY"), stem = line(gLine, `M262 ${TY - 2} V${TY - 26}`, { stroke: MUSTARD, "stroke-width": 2 });
+
+  // ================= later reports along the line; one opens into Paul's letter =================
+  const sheet = (parent, rows) => { const g = el("g", {}, parent); el("rect", { x: -115, y: -125, width: 230, height: 250, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, g);
+    const bars = [...Array(rows)].map((_, i) => barRow(g, -92, -96 + i * 24, rowW(184), 8, INK)); return { g, bars }; };
+  const gIcons = el("g", {}, world), icons = [1070, 887, 703].map((x) => { const s = sheet(gIcons, 9); s.x = x; el("rect", { x: -115, y: -125, width: 230, height: 250, fill: "none", stroke: INK, "stroke-width": 9 }, s.g); return s; });
+  const letter = sheet(world, 9), letterEdge = el("rect", { x: -115, y: -125, width: 230, height: 250, fill: "none", stroke: INK, "stroke-width": 9 }, letter.g);
+  const letterLab = txt(world, "lab", XL, 150, "PAUL'S LETTER TO CORINTH");
+  const box = el("rect", { x: -102, y: -36, width: 204, height: 96, rx: 5, fill: "none", stroke: MUSTARD, "stroke-width": 3.5 }, letter.g);
+  // the block that is lifted out and handed on
+  const gBlock = el("g", {}, world); el("rect", { x: -102, y: -48, width: 204, height: 96, rx: 5, fill: PAPER, stroke: MUSTARD, "stroke-width": 3.5 }, gBlock);
+  [...Array(4)].forEach((_, i) => barRow(gBlock, -92, -36 + i * 24, rowW(184), 8, INK));
+
+  // ================= the words themselves =================
+  const gVerse = el("g", {}, world), quoteBar = el("rect", { x: 128, width: 5, fill: MUSTARD }, gVerse);
+  const clauses = scr.text.split(/(?<=,) (?=(?:and )?that )/);                 // the verse's own words, split at its commas
+  const cStart = clauses.map((_, i) => clauses.slice(0, i).join(" ").length / scr.text.length);
+  const VY = [204, 258, 312, 366], cEls = clauses.map((c, i) => { const t = el("text", { class: "disp", x: 640, y: VY[i], style: "font-size:40px" }, gVerse);
+    c.split(/(Cephas)/).forEach((part) => { if (!part) return; const s = el("tspan", {}, t); s.textContent = part; if (part === "Cephas") t._name = s; }); return t; });
+  const ref = txt(gVerse, "lab", 640, 412, `${scr.reference.toUpperCase()} · ${scr.translation.toUpperCase()}`);
+  const peter = txt(world, "lab", 640, 448, "CEPHAS = PETER", null, { fill: DEEP });
+
+  // ================= more than five hundred =================
+  const gCrowd = el("g", {}, world), COLS = 34, ROWS = 15;
+  const crowd = [...Array(COLS * ROWS)].map((_, i) => { const c = i % COLS, r = Math.floor(i / COLS), a = i * 2.39996, rr = 46 * Math.sqrt((i + 0.5) / (COLS * ROWS));
+    return { x: 172 + c * 19.1 + (R() - 0.5) * 5, y: 128 + r * 19 + (R() - 0.5) * 5, at: 1.3 + (c / COLS) * 2.6 + R() * 0.5, hollow: R() < 0.13, ht: R() * 1.5, cx: 232 + rr * Math.cos(a), cy: 418 + rr * Math.sin(a), ph: R() * 6.28, e: el("circle", { fill: INK, stroke: INK, "stroke-width": 1.4 }, gCrowd) }; });
+  const letter2 = sheet(world, 9), asker = el("circle", { r: 9, fill: MUSTARD }, world);
+
+  // ================= a legend that grew slowly, and the claim at the start =================
+  const gCurve = el("g", {}, world), curve = line(gCurve, `M${X0 + 110} ${TY - 8} C620 ${TY - 14} 900 420 1150 196`, { stroke: STONE, "stroke-width": 3 });
+  const legend = txt(gCurve, "lab", 790, 262, "A LEGEND THAT GREW SLOWLY");
+  const claimRing = el("circle", { cx: 232, cy: 418, fill: "none", stroke: MUSTARD, "stroke-width": 4 }, world), claim = txt(world, "lab", 470, 330, "THE CLAIM, AT THE START", null, { fill: DEEP });
+  const claimLine = line(world, "M284 382 L326 342", { stroke: MUSTARD, "stroke-width": 2 });
+
+  const drawLine = (t) => {
+    const gone = 1 - up(t, END + 0.6, 0.7); op(gLine, up(t, ST - 0.3, 0.3) * gone);
+    const dk = up(t, ST - 0.2, 2.8); draw(base, dk); draw(cross, up(t, ST + 2.1, 0.9));
+    const far = up(t, R0 + 0.4, 2.2), creed = span(t, C0 + 0.3, YE - 0.2, 0.8, 0.8);
+    base.setAttribute("stroke-width", mix(3, 1.6, creed).toFixed(2));
+    // a small light runs the line while it draws, then carries the eye to the letter's place
+    const rk = up(t, A0, 1.9); set(runner, { cx: (t < A0 ? mix(X0 - 20, 1160, dk) : mix(X0, XL, rk)).toFixed(1) }); op(runner, t < A0 ? span(t, ST - 0.1, ST + 2.9, 0.3) : span(t, A0, A0 + 2.3, 0.3));
+    op(marker, up(t, A0 + 1.7, 0.4)); marker.setAttribute("cx", mix(XL, X0 + 30, far).toFixed(1));
+    draw(bracket, up(t, A0 + 1.9, 0.8)); op(bracket, 1 - up(t, A1 + 1.4, 0.6)); op(years, span(t, A0 + 2.1, A1 + 1.9, 0.5));
+    hand.forEach((h, i) => { const at = A1 + 2.1 + i * 0.32, v = (1 - 0.55 * creed) * (1 - up(t, Y0 + 2.2 + (5 - i) * 0.12, 0.5)); op(h.dot, up(t, at + 0.25, 0.3) * v); draw(h.arc, up(t, at, 0.32)); op(h.arc, (1 - up(t, C0 - 0.2, 0.8)) * (t > at ? 1 : 0)); });
+    const ev = up(t, Y0 + 3.0, 0.6) * (1 - up(t, R0 - 0.2, 0.8)); op(early, ev); op(stem, ev); draw(stem, up(t, Y0 + 2.9, 0.5));
+    ticks.forEach((k, i) => op(k, up(t, R0 + 0.8 + i * 0.16, 0.5)));
+  };
+  const drawLetter = (t) => {
+    // the reports along the line arrive right to left; the last one is the oldest
+    icons.forEach((s, i) => { const v = up(t, ST + 2.4 + i * 0.45, 0.5) * (1 - up(t, A0 + 0.9 + (2 - i) * 0.2, 0.7)); op(s.g, v); move(s.g, s.x, TY - 50 - 6 * (1 - v) + 1.5 * Math.sin(t * 1.1 + i), 0.3); });
+    const lv = up(t, ST + 3.8, 0.5) * (1 - up(t, C0 - 0.5, 0.9)); op(letter.g, lv);
+    if (lv > 0) { const open = up(t, A0 + 1.8, 1.5); move(letter.g, XL, mix(TY - 50, 304, open) + 1.5 * Math.sin(t * 1.1 + 3) * (1 - open), mix(0.3, 1, open)); op(letterEdge, 1 - open);
+      letter.bars.forEach((row, i) => row.forEach((b, k) => b.setAttribute("opacity", (1 - 0.6 * up(t, A1 + 0.3, 0.8) * (i >= 3 && i <= 6 ? 0 : 1)).toFixed(2))));
+      box.setAttribute("stroke-dasharray", "600"); box.setAttribute("stroke-dashoffset", (600 * (1 - up(t, A1 + 0.3, 1.1))).toFixed(1)); op(box, t > A1 + 0.3 ? 1 - up(t, A1 + 1.9, 0.4) : 0); }
+    op(letterLab, span(t, A0 + 3.0, A1 + 2.2, 0.5));
+    // the block: lifted out, handed back down the line, opened into the words, then settled near the start
+    const bv = up(t, A1 + 1.8, 0.3) * (1 - up(t, R0 - 0.2, 0.8)); const openV = up(t, C0 - 0.3, 1.1), back = up(t, Y0 + 1.5, 1.3);
+    op(gBlock, bv * (t < Y0 ? 1 - openV : up(t, Y0 + 2.1, 0.6)));
+    if (bv > 0) { const k = up(t, A1 + 2.0, 2.2); let x = mix(XL, 250, k), y = mix(316, 404, k) - 16 * Math.abs(Math.sin(k * 6 * Math.PI)) * (k < 1 ? 1 : 0), s = mix(1, 0.6, k);
+      x = mix(x, 640, openV); y = mix(y, 290, openV); s = mix(s, 3.2, openV);
+      x = mix(x, 262, back); y = mix(y, TY - 49, back); s = mix(s, 0.45, back); move(gBlock, x, y + 1.5 * Math.sin(t * 0.9) * back, s); }
+  };
+  const drawVerse = (t) => {
+    const v = span(t, C0 - 0.1, Y0 + 2.4, 0.4, 0.9); op(gVerse, v); if (v <= 0) { op(peter, 0); return; }
+    const d = CE - C0, back = up(t, Y0 + 1.5, 1.2);
+    gVerse.setAttribute("transform", `translate(${mix(0, 262 - 640 * 0.12, back).toFixed(1)} ${mix(0, TY - 49 - 290 * 0.12, back).toFixed(1)}) scale(${mix(1, 0.12, back).toFixed(4)})`);
+    cEls.forEach((c, i) => { const k = up(t, C0 - 0.1 + cStart[i] * d, 0.7); c.setAttribute("opacity", k.toFixed(3)); c.setAttribute("y", (VY[i] + 7 * (1 - k)).toFixed(1)); if (c._name) c._name.setAttribute("fill", t > Y0 - 0.1 ? DEEP : INK); });
+    const last = up(t, C0 - 0.1 + cStart.at(-1) * d, 0.9); if (!quoteBar._x) { quoteBar._x = 640 - Math.max(...cEls.map((c) => c.getComputedTextLength())) / 2 - 24; quoteBar.setAttribute("x", quoteBar._x.toFixed(1)); }
+    set(quoteBar, { y: 170, height: (mix(40, 208, up(t, C0 + 0.2, d * 0.8))).toFixed(1) }); op(quoteBar, up(t, C0, 0.5));
+    op(ref, up(t, C0 + d * 0.86, 0.8) * (1 - back)); op(peter, span(t, Y0 - 0.05, Y0 + 1.7, 0.35));
+  };
+  const drawCrowd = (t) => {
+    const v = t > G0 + 1.0 ? 1 - up(t, END + 0.6, 0.7) : 0; op(gCrowd, v);
+    if (v > 0) { const k = up(t, R0 - 0.3, 2.0);
+      crowd.forEach((c) => { const o = up(t, G0 + c.at, 0.45); if (o <= 0.002) { c.e.setAttribute("display", "none"); return; } c.e.removeAttribute("display");
+        const hollow = c.hollow && t > G0 + 5.3 + c.ht;
+        set(c.e, { cx: (mix(c.x, c.cx, k) + 1.1 * Math.sin(t * 0.8 + c.ph) * (1 - k)).toFixed(1), cy: (mix(c.y, c.cy, k) + 1.1 * Math.cos(t * 0.7 + c.ph)).toFixed(1), r: mix(4.1, 1.7, k).toFixed(2), opacity: o.toFixed(2), fill: hollow ? BONE : INK, "stroke-width": mix(1.4, 0.7, k).toFixed(2) }); }); }
+    const lv = span(t, G0 + 0.2, R0 + 0.3, 0.6, 0.8); op(letter2.g, lv); if (lv > 0) move(letter2.g, 1030, 286 + 2 * Math.sin(t * 0.8), 0.56);
+    const av = span(t, G1 - 0.5, R0 + 0.2, 0.4, 0.6); op(asker, av); if (av > 0) { const k = up(t, G1 - 0.3, 2.0); set(asker, { cx: mix(950, 838, k).toFixed(1), cy: (286 - 5 * Math.abs(Math.sin(k * 5 * Math.PI)) * (k < 1 ? 1 : 0)).toFixed(1) }); }
+  };
+  const drawLegend = (t) => {
+    const v = up(t, R0 + 1.4, 0.4) * (1 - up(t, END + 0.6, 0.7)); op(gCurve, v);
+    if (v > 0) { draw(curve, up(t, R0 + 1.6, 5.2)); const ghost = up(t, R1 - 0.2, 1.2); curve.setAttribute("opacity", mix(1, 0.2, ghost).toFixed(2)); op(legend, up(t, R0 + 4.4, 0.8) * mix(1, 0.4, ghost)); }
+    const cv = up(t, R1 + 0.1, 0.8) * (1 - up(t, END + 0.6, 0.7)); op(claimRing, cv); op(claim, up(t, R1 + 0.7, 0.8) * (1 - up(t, END + 0.6, 0.7))); op(claimLine, cv); draw(claimLine, up(t, R1 + 0.5, 0.6));
+    claimRing.setAttribute("r", (mix(90, 60, up(t, R1 + 0.1, 1.1)) + 2.5 * Math.sin(t * 1.5)).toFixed(2));
+  };
+
+  F.title("The oldest report");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.7);
+  return (t) => { drawLine(t); drawLetter(t); drawVerse(t); drawCrowd(t); drawLegend(t); };
+});
+</script>
+</body></html>

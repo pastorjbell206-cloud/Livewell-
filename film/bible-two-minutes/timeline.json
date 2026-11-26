@@ -1,0 +1,185 @@
+{
+ "length": 152.69,
+ "chapters": [
+  {
+   "id": "made",
+   "kicker": "Made good",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 12.28,
+   "lines": [
+    {
+     "text": "The Bible starts with God. He speaks, and there's a world.",
+     "start": 2.6,
+     "end": 6.44
+    },
+    {
+     "text": "He calls it good. And he makes people in his image, to look after it for him.",
+     "start": 7.02,
+     "end": 11.38
+    }
+   ]
+  },
+  {
+   "id": "broken",
+   "kicker": "Broken",
+   "level": 0.35,
+   "start": 11.48,
+   "end": 28.5,
+   "lines": [
+    {
+     "text": "Then the first people reach for the one thing God held back. And the damage spreads. Shame. Blame. A murder. A flood. A tower built to reach the sky.",
+     "start": 12.38,
+     "end": 24.16
+    },
+    {
+     "text": "God judges it. And he keeps showing mercy.",
+     "start": 24.84,
+     "end": 27.6
+    }
+   ]
+  },
+  {
+   "id": "promise",
+   "kicker": "A promise",
+   "level": 0.45,
+   "start": 27.7,
+   "end": 38.04,
+   "lines": [
+    {
+     "text": "So God picks one man, Abraham, and makes him a promise. A people. A land. And a blessing meant for every family on earth.",
+     "start": 28.6,
+     "end": 37.14
+    }
+   ]
+  },
+  {
+   "id": "rescued",
+   "kicker": "Rescued, and given God's law",
+   "level": 0.55,
+   "start": 37.24,
+   "end": 56.26,
+   "lines": [
+    {
+     "text": "Abraham's family grows into a nation, and the nation ends up as slaves in Egypt. God hears them. He spares them by the blood of a lamb and opens a road through the sea.",
+     "start": 38.14,
+     "end": 48.24
+    },
+    {
+     "text": "At Mount Sinai he makes a covenant with them, gives them his law, and has them build a tent so he can live among them.",
+     "start": 48.9,
+     "end": 55.36
+    }
+   ]
+  },
+  {
+   "id": "kingdom",
+   "kicker": "A land and a king",
+   "level": 0.65,
+   "start": 55.46,
+   "end": 72.16,
+   "lines": [
+    {
+     "text": "God gives them the land. But they keep turning away, and each round is worse than the last.",
+     "start": 56.36,
+     "end": 61.78
+    },
+    {
+     "text": "They ask for a king. Saul fails. David loves God and fails badly too. And God promises David a son whose kingdom will never end.",
+     "start": 62.36,
+     "end": 71.26
+    }
+   ]
+  },
+  {
+   "id": "exile",
+   "kicker": "Exile, and promises in the dark",
+   "level": 0.75,
+   "start": 71.36,
+   "end": 93.6,
+   "lines": [
+    {
+     "text": "The kingdom splits. The kings lead the people to idols, the prophets call them back, and they won't come. Babylon burns Jerusalem.",
+     "start": 72.26,
+     "end": 80.6
+    },
+    {
+     "text": "But in the dark, the prophets promise a new covenant and a coming king. Some of the exiles come home and rebuild. No son of David sits on the throne. The Old Testament ends looking ahead.",
+     "start": 81.2,
+     "end": 92.7
+    }
+   ]
+  },
+  {
+   "id": "jesus",
+   "kicker": "Jesus comes, dies and rises",
+   "level": 0.9,
+   "start": 92.8,
+   "end": 113.62,
+   "lines": [
+    {
+     "text": "Then God keeps his promises in person. Jesus says God's kingdom has come near. He heals, he forgives, and he speaks with an authority that belongs to God alone.",
+     "start": 93.7,
+     "end": 104.38
+    },
+    {
+     "text": "He dies on a Roman cross at Passover, carrying the sin of the world. And on the third day God raises him bodily from the dead.",
+     "start": 105.06,
+     "end": 112.72
+    }
+   ]
+  },
+  {
+   "id": "church",
+   "kicker": "The Spirit, and the church",
+   "level": 0.8,
+   "start": 112.82,
+   "end": 124.14,
+   "lines": [
+    {
+     "text": "Fifty days later the Spirit comes. The church starts in Jerusalem and spreads, Jews and Gentiles together, until the news about Jesus reaches Rome.",
+     "start": 113.72,
+     "end": 123.24
+    }
+   ]
+  },
+  {
+   "id": "new",
+   "kicker": "All things new",
+   "level": 0.95,
+   "start": 123.34,
+   "end": 140.52,
+   "lines": [
+    {
+     "text": "And the story ends where it began, with God and his people together. Only now the garden has become a city.",
+     "start": 124.24,
+     "end": 130.84
+    },
+    {
+     "text": "Jesus returns. Death is undone. And God makes his home with people forever.",
+     "start": 131.44,
+     "end": 136.62
+    },
+    {
+     "text": "Behold, I make all things new.",
+     "start": 137.22,
+     "end": 139.62
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 139.72,
+   "end": 146.595,
+   "lines": [
+    {
+     "text": "That's the whole Bible, from the garden to the city. And you're living somewhere on that road.",
+     "start": 140.62,
+     "end": 145.695
+    }
+   ]
+  }
+ ]
+}

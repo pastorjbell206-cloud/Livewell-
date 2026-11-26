@@ -1,0 +1,88 @@
+{
+  "title": "How the 66 books fit together",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions and its rows of docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/sixty-six-books",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "library",
+      "kicker": "One book, many books",
+      "level": 0.2,
+      "lines": [
+        "The Bible isn't really one book. It's a library.",
+        "The Protestant Bible, the one most English readers hold, has sixty-six books. Catholic and Orthodox Bibles include more in the Old Testament."
+      ]
+    },
+    {
+      "id": "two",
+      "kicker": "Two parts",
+      "level": 0.35,
+      "lines": [
+        "It comes in two parts. Thirty-nine books in the Old Testament and twenty-seven in the New, written in three languages: Hebrew, a little Aramaic, and Greek."
+      ]
+    },
+    {
+      "id": "law-history",
+      "kicker": "Law and history",
+      "level": 0.5,
+      "lines": [
+        "The books are shelved by kind. First come five books of law, Genesis through Deuteronomy. Then the history books, Joshua through Esther."
+      ]
+    },
+    {
+      "id": "poetry-prophets",
+      "kicker": "Poetry and the prophets",
+      "level": 0.6,
+      "lines": [
+        "Next come poetry and wisdom, Job through the Song of Solomon. Then the prophets, the long books first and the twelve short ones after.",
+        "A Hebrew Bible holds the same books in a different order."
+      ]
+    },
+    {
+      "id": "gospels-acts",
+      "kicker": "The Gospels and Acts",
+      "level": 0.75,
+      "lines": [
+        "The New Testament opens with four Gospels. Each one is a portrait of Jesus: his life, his teaching, his death, and his resurrection.",
+        "Then Acts carries the story from Jerusalem to Rome."
+      ]
+    },
+    {
+      "id": "letters",
+      "kicker": "Letters and Revelation",
+      "level": 0.85,
+      "lines": [
+        "After that come the letters, Romans through Jude. Thirteen name Paul as their writer. Hebrews doesn't name its author. Seven more follow.",
+        "Last stands Revelation, a book of visions."
+      ]
+    },
+    {
+      "id": "one-story",
+      "kicker": "One story",
+      "level": 0.95,
+      "lines": [
+        "These are different kinds of writing, and you read each kind differently. A poem isn't a law. A letter isn't a history. But together they tell one story.",
+        "The New Testament writers quote the Old on nearly every page, and they claim its story reaches its goal in Jesus of Nazareth."
+      ],
+      "scripture": {
+        "reference": "Luke 24:27",
+        "text": "And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "So before you read a page, ask what shelf it came from."
+      ],
+      "titleCard": [
+        "Ask what shelf it came from.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

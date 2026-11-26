@@ -1,0 +1,154 @@
+<!doctype html>
+<!-- Music for "Gather Church, the whole story", written as code and rendered by Chrome's audio engine
+     (no outside recordings, nothing to license). It follows the film's chapters: each chapter has an
+     energy level, and the parts come in and drop out with it. Run: node film/explainer/make-music.mjs -->
+<html><head><meta charset="utf-8"><title>music</title></head><body>
+<script>
+window.makeMusic = async (TL, RATE = 48000) => {
+  const LENGTH = TL.length;
+  const ctx = new OfflineAudioContext(2, Math.ceil(LENGTH * RATE), RATE);
+  const BEAT = 0.5, BAR = 2, CH = 2 * BAR;   // 120 beats a minute; each chord lasts two bars
+  const hz = (n) => 440 * Math.pow(2, (n - 69) / 12);
+  const LEVEL = Object.fromEntries(TL.chapters.filter((c) => c.level != null).map((c) => [c.id, c.level]));
+  const LEVEL0 = { crossroads: 0.15, presence: 0.22, sunday: 0.5, homes: 0.52, week: 0.62, hub: 0.72, multiply: 0.92, nations: 1.0, team: 0.35, invite: 0.58 };
+  const pts = [[0, 0.08]];
+  TL.chapters.forEach((c) => { pts.push([c.start - 0.4, null]); pts.push([c.start + 1.2, LEVEL[c.id] ?? LEVEL0[c.id] ?? 0.5]); });
+  const lastLine = TL.chapters.at(-1).lines.at(-1);
+  pts.push([lastLine.start - 0.5, null]); pts.push([lastLine.start + 0.8, 0.12]); pts.push([LENGTH, 0]);
+  for (let i = 1; i < pts.length; i++) if (pts[i][1] === null) pts[i][1] = pts[i - 1][1];
+  const energy = (t) => { for (let i = 1; i < pts.length; i++) if (t <= pts[i][0]) { const [a, ea] = pts[i - 1], [b, eb] = pts[i]; return ea + (eb - ea) * Math.max(0, Math.min(1, (t - a) / (b - a || 1))); } return 0; };
+
+  // ---- busses ----
+  const master = ctx.createGain(); master.gain.value = 0.9;
+  const comp = ctx.createDynamicsCompressor(); comp.threshold.value = -16; comp.ratio.value = 3; comp.attack.value = 0.01; comp.release.value = 0.2;
+  master.connect(comp).connect(ctx.destination);
+  const verb = ctx.createConvolver(); const ir = ctx.createBuffer(2, RATE * 4, RATE);
+  for (let c = 0; c < 2; c++) { const d = ir.getChannelData(c); for (let i = 0; i < d.length; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / d.length, 3.2); }
+  verb.buffer = ir; const verbOut = ctx.createGain(); verbOut.gain.value = 0.5; verb.connect(verbOut).connect(master);
+  const echoIn = ctx.createGain();
+  const dl = ctx.createDelay(2), dr = ctx.createDelay(2); dl.delayTime.value = 0.375; dr.delayTime.value = 0.375;
+  const fb = ctx.createGain(); fb.gain.value = 0.42; const tone = ctx.createBiquadFilter(); tone.type = "lowpass"; tone.frequency.value = 3200;
+  const panL = ctx.createStereoPanner(); panL.pan.value = -0.7; const panR = ctx.createStereoPanner(); panR.pan.value = 0.7;
+  echoIn.connect(dl); dl.connect(panL).connect(master); dl.connect(dr); dr.connect(panR).connect(master); dr.connect(tone).connect(fb).connect(dl);
+  panL.connect(verb); panR.connect(verb);
+  const pump = ctx.createGain(); pump.gain.value = 1; pump.connect(master);
+
+  const CHORDS = [
+    { root: 47, pad: [59, 62, 66, 73], arp: [71, 74, 78, 73, 74, 78] },
+    { root: 43, pad: [55, 59, 62, 66], arp: [67, 71, 74, 78, 74, 71] },
+    { root: 50, pad: [57, 62, 66, 64], arp: [69, 74, 78, 76, 74, 78] },
+    { root: 45, pad: [57, 61, 64, 69], arp: [69, 73, 76, 74, 73, 76] },
+  ];
+  const chordAt = (t) => CHORDS[Math.floor(t / CH) % 4];
+
+  // ---- pad, its filter opening with the energy ----
+  const padF = ctx.createBiquadFilter(); padF.type = "lowpass"; padF.Q.value = 0.7;
+  const padG = ctx.createGain();
+  for (let t = 0; t <= LENGTH; t += 0.25) {
+    const e = energy(t);
+    padF.frequency.linearRampToValueAtTime(380 + e * 2400, t);
+    padG.gain.linearRampToValueAtTime(Math.min(1, t / 3) * Math.min(1, (LENGTH - t) / 4) * (0.085 - 0.02 * e), t);
+  }
+  padF.connect(padG); padG.connect(pump); padG.connect(verb);
+  for (let t0 = 0; t0 < LENGTH; t0 += CH) {
+    chordAt(t0).pad.forEach((n, j) => [-9, 0, 8].forEach((cents, k) => {
+      const o = ctx.createOscillator(); o.type = "sawtooth"; o.frequency.value = hz(n); o.detune.value = cents;
+      const g = ctx.createGain(); const p = ctx.createStereoPanner(); p.pan.value = (k - 1) * 0.6 + (j % 2 ? 0.1 : -0.1);
+      g.gain.setValueAtTime(0, t0); g.gain.linearRampToValueAtTime(0.33, t0 + 0.6); g.gain.setValueAtTime(0.33, t0 + CH - 0.1); g.gain.linearRampToValueAtTime(0, t0 + CH + 0.5);
+      o.connect(g).connect(p).connect(padF); o.start(t0); o.stop(t0 + CH + 0.6);
+    }));
+  }
+
+  // ---- pluck with the echo ----
+  const pluckBus = ctx.createGain(); pluckBus.connect(master); pluckBus.connect(echoIn); pluckBus.connect(verb);
+  for (let t = 0, step = 0; t < LENGTH; t += BEAT, step++) {
+    const e = energy(t); if (e < 0.14) continue; if (e < 0.4 && step % 2) continue;
+    const n = chordAt(t).arp[step % 6], amp = 0.11 * Math.min(1, (e - 0.14) * 3);
+    const o = ctx.createOscillator(); o.type = "triangle"; o.frequency.value = hz(n);
+    const o2 = ctx.createOscillator(); o2.type = "sine"; o2.frequency.value = hz(n + 12);
+    const f = ctx.createBiquadFilter(); f.type = "lowpass"; f.frequency.setValueAtTime(5000, t); f.frequency.exponentialRampToValueAtTime(700, t + 0.3);
+    const g = ctx.createGain(); g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(amp, t + 0.005); g.gain.exponentialRampToValueAtTime(0.0005, t + 0.45);
+    const g2 = ctx.createGain(); g2.gain.value = 0.25;
+    o.connect(f); o2.connect(g2).connect(f); f.connect(g).connect(pluckBus); o.start(t); o2.start(t); o.stop(t + 0.5); o2.stop(t + 0.5);
+  }
+
+  // ---- felt piano at the opening, the pull-back, and the close ----
+  const piano = (t, n, v = 0.14) => [1, 2, 3].forEach((h, i) => {
+    const o = ctx.createOscillator(); o.type = "sine"; o.frequency.value = hz(n) * h;
+    const g = ctx.createGain(); const a = v / (1 + i * 2.5);
+    g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(a, t + 0.01); g.gain.exponentialRampToValueAtTime(0.0001, t + 3.2 - i * 0.8);
+    o.connect(g); g.connect(master); g.connect(verb); g.connect(echoIn); o.start(t); o.stop(t + 3.3);
+  });
+  const phrase = (t0) => [[0, 71], [1.5, 74], [4, 78], [5.4, 76], [8, 74], [9.5, 71]].forEach(([d, n]) => piano(t0 + d, n));
+  phrase(0.6);
+  const team = TL.chapters.find((c) => c.id === "team" || c.id === "close"); if (team && team.id === "team") phrase(team.start + 0.4);
+  const tEnd = lastLine.start; [[0, 62], [0, 66], [0.6, 74], [2.1, 78], [4, 67], [4, 71], [4.6, 74], [6.2, 79]].forEach(([d, n]) => { if (tEnd + d < LENGTH - 1) piano(tEnd + d, n, 0.16); });
+
+  // ---- bass ----
+  const bassF = ctx.createBiquadFilter(); bassF.type = "lowpass"; bassF.frequency.value = 220; bassF.connect(pump);
+  for (let t = 0, s = 0; t < LENGTH; t += BEAT / 2, s++) {
+    const e = energy(t); if (e < 0.42) continue; if (e < 0.8 && s % 2) continue;
+    const n = chordAt(t).root - 12, len = e < 0.8 ? 0.45 : 0.22, amp = 0.22 * Math.min(1, (e - 0.42) * 4);
+    const o = ctx.createOscillator(); o.type = "sawtooth"; o.frequency.value = hz(n);
+    const s2 = ctx.createOscillator(); s2.type = "sine"; s2.frequency.value = hz(n);
+    const g = ctx.createGain(); g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(amp, t + 0.01); g.gain.exponentialRampToValueAtTime(0.002, t + len);
+    o.connect(g); s2.connect(g); g.connect(bassF); o.start(t); s2.start(t); o.stop(t + len + 0.05); s2.stop(t + len + 0.05);
+  }
+
+  // ---- drums ----
+  const noise = ctx.createBuffer(1, RATE, RATE); { const d = noise.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1; }
+  const drums = ctx.createGain(); drums.connect(master);
+  const kick = (t, v) => {
+    const o = ctx.createOscillator(); o.frequency.setValueAtTime(140, t); o.frequency.exponentialRampToValueAtTime(42, t + 0.12);
+    const g = ctx.createGain(); g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(0.001, t + 0.42);
+    o.connect(g).connect(drums); o.start(t); o.stop(t + 0.45);
+    pump.gain.setValueAtTime(0.35, t); pump.gain.linearRampToValueAtTime(1, t + 0.32);
+  };
+  const hit = (t, type, freq, q, len, v, pan = 0, toVerb = 0) => {
+    const s = ctx.createBufferSource(); s.buffer = noise;
+    const f = ctx.createBiquadFilter(); f.type = type; f.frequency.value = freq; f.Q.value = q;
+    const g = ctx.createGain(); g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(0.001, t + len);
+    const p = ctx.createStereoPanner(); p.pan.value = pan;
+    s.connect(f).connect(g).connect(p).connect(drums); if (toVerb) { const r = ctx.createGain(); r.gain.value = toVerb; g.connect(r).connect(verb); }
+    s.start(t, Math.random() * 0.5); s.stop(t + len + 0.02);
+  };
+  const clap = (t, v) => [0, 0.011, 0.023].forEach((d, i) => hit(t + d, "bandpass", 1600, 1.2, i === 2 ? 0.18 : 0.03, v, 0, i === 2 ? 0.5 : 0));
+  for (let t = 0, s = 0; t < LENGTH; t += BEAT / 2, s++) {
+    const e = energy(t), onBeat = s % 2 === 0, inBar = (s / 2) % 4;
+    if (e >= 0.46 && e < 0.6) { if (onBeat && inBar === 0) kick(t, 0.72); if (onBeat && inBar === 2) clap(t, 0.2); }
+    else if (e >= 0.6 && e < 0.82) { if (onBeat && (inBar === 0 || inBar === 2)) kick(t, 0.8); if (onBeat && (inBar === 1 || inBar === 3)) clap(t, 0.27); hit(t, "highpass", 8000, 0.7, 0.04, onBeat ? 0.05 : 0.09, 0.3); }
+    else if (e >= 0.82) { if (onBeat) kick(t, 0.88); if (onBeat && (inBar === 1 || inBar === 3)) clap(t, 0.31); hit(t, "highpass", 7500, 0.7, onBeat ? 0.04 : 0.11, onBeat ? 0.06 : 0.12, onBeat ? -0.3 : 0.3); }
+  }
+
+  // ---- a rising sweep before each lift, a deep hit where it pulls back ----
+  const riser = (end, len) => {
+    const s = ctx.createBufferSource(); s.buffer = noise; s.loop = true;
+    const f = ctx.createBiquadFilter(); f.type = "bandpass"; f.Q.value = 2;
+    f.frequency.setValueAtTime(300, end - len); f.frequency.exponentialRampToValueAtTime(7000, end);
+    const g = ctx.createGain(); g.gain.setValueAtTime(0.0001, end - len); g.gain.exponentialRampToValueAtTime(0.14, end - 0.02); g.gain.linearRampToValueAtTime(0, end);
+    s.connect(f).connect(g); g.connect(master); g.connect(verb); s.start(end - len); s.stop(end + 0.05);
+  };
+  const boom = (t) => {
+    const o = ctx.createOscillator(); o.frequency.setValueAtTime(90, t); o.frequency.exponentialRampToValueAtTime(35, t + 1.5);
+    const g = ctx.createGain(); g.gain.setValueAtTime(0.6, t); g.gain.exponentialRampToValueAtTime(0.001, t + 2.5);
+    o.connect(g); g.connect(master); g.connect(verb); o.start(t); o.stop(t + 2.6);
+  };
+  const lv0 = (id) => LEVEL[id] ?? LEVEL0[id] ?? 0.5; let prev = lv0(TL.chapters[0].id);
+  TL.chapters.slice(1).forEach((c) => { const lv = lv0(c.id); if (lv - prev > 0.15) riser(c.start + 1.2, 2.5); if (prev - lv > 0.3) boom(c.start + 0.2); prev = lv; });
+  boom(lastLine.start - 0.2);
+
+  const buf = await ctx.startRendering();
+  const n = buf.length, L = buf.getChannelData(0), R = buf.getChannelData(1);
+  let peak = 0; for (let i = 0; i < n; i++) peak = Math.max(peak, Math.abs(L[i]), Math.abs(R[i]));
+  const gain = 0.95 / peak;
+  const out = new DataView(new ArrayBuffer(44 + n * 4));
+  const str = (o, s) => [...s].forEach((c, i) => out.setUint8(o + i, c.charCodeAt(0)));
+  str(0, "RIFF"); out.setUint32(4, 36 + n * 4, true); str(8, "WAVEfmt "); out.setUint32(16, 16, true); out.setUint16(20, 1, true); out.setUint16(22, 2, true);
+  out.setUint32(24, RATE, true); out.setUint32(28, RATE * 4, true); out.setUint16(32, 4, true); out.setUint16(34, 16, true); str(36, "data"); out.setUint32(40, n * 4, true);
+  for (let i = 0; i < n; i++) { out.setInt16(44 + i * 4, Math.max(-1, Math.min(1, L[i] * gain)) * 32767, true); out.setInt16(46 + i * 4, Math.max(-1, Math.min(1, R[i] * gain)) * 32767, true); }
+  const bytes = new Uint8Array(out.buffer); let bin = ""; for (let i = 0; i < bytes.length; i += 32768) bin += String.fromCharCode(...bytes.subarray(i, i + 32768));
+  return { b64: bin.length ? btoa(bin) : "", peak };
+};
+document.title = "ready";
+</script>
+</body></html>

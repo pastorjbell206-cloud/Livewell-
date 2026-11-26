@@ -14,6 +14,7 @@ export default [
       "patches/**",
       "content/**",
       "docs/work/**",
+      "film/**",
       "drizzle/migrations/**",
     ],
   },

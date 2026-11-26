@@ -1,0 +1,148 @@
+{
+ "length": 84.95,
+ "chapters": [
+  {
+   "id": "telephone",
+   "kicker": "The objection",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 11.14,
+   "lines": [
+    {
+     "text": "You've probably heard it. The Bible was copied by hand for so long that nobody knows what it first said.",
+     "start": 2.6,
+     "end": 8.58
+    },
+    {
+     "text": "Like a game of telephone.",
+     "start": 9.14,
+     "end": 10.24
+    }
+   ]
+  },
+  {
+   "id": "copies",
+   "kicker": "Not one line. Thousands.",
+   "level": 0.35,
+   "start": 10.34,
+   "end": 25.38,
+   "lines": [
+    {
+     "text": "But telephone is one whisper passed down one line.",
+     "start": 11.24,
+     "end": 14.06
+    },
+    {
+     "text": "The Bible was copied in many places and many languages, and thousands of those copies still exist.",
+     "start": 14.68,
+     "end": 20.42
+    },
+    {
+     "text": "So we can lay them side by side and see exactly where they differ.",
+     "start": 20.94,
+     "end": 24.48
+    }
+   ]
+  },
+  {
+   "id": "scrolls",
+   "kicker": "1947, by the Dead Sea",
+   "level": 0.55,
+   "start": 24.58,
+   "end": 43.4,
+   "lines": [
+    {
+     "text": "In 1947, shepherds found clay jars in a cave near the Dead Sea.",
+     "start": 25.48,
+     "end": 29.94
+    },
+    {
+     "text": "Inside was a scroll of Isaiah about a thousand years older than any Hebrew copy we had.",
+     "start": 30.56,
+     "end": 35.68
+    },
+    {
+     "text": "A thousand years of copying by hand. Small differences in spelling and wording. The same book.",
+     "start": 36.38,
+     "end": 42.5
+    }
+   ]
+  },
+  {
+   "id": "stone",
+   "kicker": "1993, northern Israel",
+   "level": 0.7,
+   "start": 42.6,
+   "end": 56.18,
+   "lines": [
+    {
+     "text": "Then there's the ground itself. For years, some scholars said King David was only a legend.",
+     "start": 43.5,
+     "end": 48.66
+    },
+    {
+     "text": "In 1993, archaeologists dug up a broken stone. Carved on it: the House of David.",
+     "start": 49.32,
+     "end": 55.28
+    }
+   ]
+  },
+  {
+   "id": "limit",
+   "kicker": "What evidence can't do",
+   "level": 0.85,
+   "start": 55.38,
+   "end": 65.38,
+   "lines": [
+    {
+     "text": "None of this proves that God has spoken.",
+     "start": 56.28,
+     "end": 58.22
+    },
+    {
+     "text": "Evidence can show you the words are old and the history is real. It can't make you trust the one they're about.",
+     "start": 58.8,
+     "end": 64.48
+    }
+   ]
+  },
+  {
+   "id": "claim",
+   "kicker": "What it says about itself",
+   "level": 0.9,
+   "start": 64.58,
+   "end": 71.52,
+   "lines": [
+    {
+     "text": "The Bible makes its own claim, and it's a big one.",
+     "start": 65.48,
+     "end": 68.2
+    },
+    {
+     "text": "All Scripture is God-breathed.",
+     "start": 68.8,
+     "end": 70.62
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 70.72,
+   "end": 78.846,
+   "lines": [
+    {
+     "text": "So bring your hardest questions. This book has been answering them for a long time.",
+     "start": 71.62,
+     "end": 76.1
+    },
+    {
+     "text": "Then read it for yourself.",
+     "start": 76.62,
+     "end": 77.946
+    }
+   ]
+  }
+ ]
+}

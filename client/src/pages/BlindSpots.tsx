@@ -13,6 +13,7 @@ import { FreeEbookButtons, earlierLine } from "@/components/FreeEbookButtons";
 import { freeEbook } from "@/data/ebooks";
 import { OfferLine, OfferMeta, useEbookLabel } from "@/components/BookOffer";
 import { AUTHOR_BIO, SITE_URL } from "@/lib/site";
+import NarratedFilm from "@/components/NarratedFilm";
 
 const COVER = "/covers/the-monster-in-the-mirror-800.webp";
 const SHARE = "/covers/the-monster-in-the-mirror.jpg";
@@ -59,6 +60,8 @@ export default function BlindSpots() {
           </div>
         </div>
       </section>
+
+      <NarratedFilm page="/books/blind-spots" band="warm" />
 
       {/* PITCH */}
       <section style={{ background: "var(--bone)", padding: "var(--s-6) var(--s-4)" }}>

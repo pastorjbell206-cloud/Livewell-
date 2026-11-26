@@ -1,0 +1,85 @@
+<!doctype html>
+<!-- "How long?" (Psalm 13). One person is one dot. A lid presses down on the dot's voice and then opens.
+     The psalms are small tiles that sort into piles by kind, the largest pile being the laments (no count
+     is claimed: the piles only show "more than any other kind"). A lament is a path with four stops; rain
+     falls the whole way and does not stop when the dot reaches trust.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>How long?</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const A0 = S("idea", 0), B0 = S("prayer", 0), BE = E("prayer"), C0 = S("book", 0), C1 = S("book", 1), P0 = S("path", 0), PE = E("path");
+  const T0 = S("turn", 0), T1 = S("turn", 1), TE = E("turn"), F0 = S("faith", 0), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(17), REF = (ch) => `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`;
+
+  // ---------- rain: it is there before the turn and still there after it ----------
+  const gRain = el("g", {}, world), rain = [...Array(46)].map(() => ({ x: R() * 1320 - 20, ph: R(), sp: 0.22 + R() * 0.12, len: 16 + R() * 14, e: el("line", { stroke: STONE, "stroke-width": 1.6, "stroke-linecap": "round" }, gRain) }));
+  // ---------- the voice: thin lines rising from the dot ----------
+  const gVoice = el("g", {}, world), voice = [...Array(7)].map((_, i) => ({ dx: (i - 3) * 13 + (R() - 0.5) * 8, ph: R(), sp: 0.3 + R() * 0.14, e: el("path", { stroke: STONE, "stroke-width": 2.2, "stroke-linecap": "round" }, gVoice) }));
+  const speak = (t, x, y, top, a) => { op(gVoice, a); if (a <= 0) return; voice.forEach((v) => { const k = (t * v.sp + v.ph) % 1, yy = mix(y - 26, top, k), w = 7 * Math.sin(k * 8 + v.ph * 6);
+    v.e.setAttribute("d", `M${(x + v.dx + w).toFixed(1)} ${yy.toFixed(1)} q7 -11 0 -22`); v.e.setAttribute("opacity", (0.75 * Math.sin(Math.PI * k)).toFixed(3)); }); };
+
+  // ---------- 1: the lid ----------
+  const gLid = el("g", {}, world), lidL = el("rect", { x: 0, y: -8, width: 160, height: 16, rx: 5, fill: INK }, gLid), lidR = el("rect", { x: -160, y: -8, width: 160, height: 16, rx: 5, fill: INK }, gLid);
+
+  // ---------- 2: the prayer ----------
+  const gV1 = el("g", {}, world), s1 = SC.prayer.scripture.text.split(/(?<=\?)\s+/);
+  const a1 = el("text", { class: "disp", x: 640, y: 206, style: "font-size:50px" }, gV1), a2 = el("text", { class: "disp", x: 640, y: 268, style: "font-size:50px" }, gV1);
+  const q = s1.map((sent, i) => { const tsp = el("tspan", {}, i < s1.length - 1 ? a1 : a2); tsp.textContent = (i === 0 ? "“" : "") + sent + (i === s1.length - 1 ? "”" : " "); return tsp; });
+  const r1 = txt(gV1, "lab", 640, 318, REF(SC.prayer));
+
+  // ---------- 3: the prayer book, sorted by kind ----------
+  const gTiles = el("g", {}, world), PILES = [20, 14, 11, 8, 7], PX = [340, 490, 640, 790, 940], tiles = [];
+  PILES.forEach((n, p) => { for (let k = 0; k < n; k++) tiles.push({ p, k }); });
+  const order = tiles.map((_, i) => i).sort((a, b) => ((a * 37) % 60) - ((b * 37) % 60));
+  order.forEach((ti, slot) => { const tl = tiles[ti]; tl.gx = 436 + (slot % 12) * 34 + 4; tl.gy = 208 + Math.floor(slot / 12) * 34; tl.px = PX[tl.p] + ((tl.k % 3) - 1) * 34 - 13; tl.py = 420 - Math.floor(tl.k / 3) * 34 - 13; tl.e = el("rect", { width: 26, height: 26, rx: 4 }, gTiles); });
+  const first = tiles[4], psalmsLab = txt(gTiles, "lab", 640, 178, "THE PSALMS"), lamLab = txt(gTiles, "lab", 340, 474, "LAMENTS");
+
+  // ---------- 4 to 6: the path of a lament ----------
+  const gPath = el("g", {}, world), PD = "M220 300 C330 300 400 440 520 440 S760 400 860 340 S1010 222 1090 216";
+  const path = line(gPath, PD, { stroke: INK, "stroke-width": 3.5 }), gold = line(gPath, PD, { stroke: MUSTARD, "stroke-width": 5 });
+  const U = [0.03, 0.4, 0.7, 1], NAMES = ["TURN TO GOD", "TELL HIM WHAT'S WRONG", "ASK HIM TO ACT", "TRUST HIM"], OFF = [-40, 52, 44, -34];
+  let LEN = 0, PT = null; const stops = U.map((u, i) => ({ u, ring: el("circle", { r: 12, fill: BONE, stroke: INK, "stroke-width": 3.5 }, gPath), lab: txt(gPath, "lab", 0, 0, NAMES[i]) }));
+  const gV2 = el("g", {}, world), s2 = SC.turn.scripture.text.split(/(?<=;)\s+/);
+  const b1 = txt(gV2, "disp", 640, 164, "“" + s2[0], 46), b2 = txt(gV2, "disp", 640, 220, s2[1] + "”", 46), r2 = txt(gV2, "lab", 640, 264, REF(SC.turn));
+  const dot = el("circle", { r: 16, fill: INK }, world);
+
+  return ((d) => { F.title("How long?"); F.endCard(SC.close.titleCard, END + 0.7); return d; })((t) => {
+    if (!LEN) { LEN = path.getTotalLength(); PT = (u) => path.getPointAtLength(LEN * clamp(u)); stops.forEach((s, i) => { const p = PT(s.u); set(s.ring, { cx: p.x, cy: p.y }); set(s.lab, { x: p.x + [70, 0, 118, -6][i], y: p.y + OFF[i] }); }); }
+    // rain
+    const rv = up(t, P0 + 2.4, 2.0) * (1 - up(t, CL + 0.4, 2.2)); op(gRain, rv);
+    if (rv > 0) rain.forEach((r) => { const k = (t * r.sp + r.ph) % 1, y = mix(90, 580, k); set(r.e, { x1: r.x.toFixed(1), y1: y.toFixed(1), x2: (r.x - 3).toFixed(1), y2: (y + r.len).toFixed(1), opacity: (0.5 * Math.sin(Math.PI * k)).toFixed(3) }); });
+    // lid
+    const lv = up(t, A0 - 0.5, 0.6) * (1 - up(t, B0 - 0.5, 0.6)), open = up(t, A0 + 3.2, 1.3), press = 10 * Math.sin(Math.min(1, (t - A0) / 2.6) * Math.PI) * (t > A0 ? 1 : 0);
+    op(gLid, lv); move(lidL, 480, 384 + press * (1 - open), 1, -72 * open); move(lidR, 800, 384 + press * (1 - open), 1, 72 * open);
+    // prayer
+    const v1 = span(t, B0 - 0.3, C0 + 0.1, 0.4, 0.6); op(gV1, v1);
+    if (v1 > 0) { const d = BE - B0, words = s1.map((x) => x.split(" ").length), tot = words.reduce((a, b) => a + b, 0); let acc = 0; q.forEach((ts, i) => { ts.setAttribute("fill-opacity", up(t, B0 - 0.15 + d * acc / tot, 0.5).toFixed(2)); acc += words[i]; }); op(r1, up(t, B0 + d * 0.8, 0.6)); }
+    // tiles
+    const tv = up(t, C0 - 0.2, 0.5) * (1 - up(t, P0 - 0.2, 0.7)); op(gTiles, tv);
+    if (tv > 0) { const sort = (i) => up(t, C0 + 4.3 + (i % 9) * 0.07, 1.5), named = up(t, C1 - 0.1, 0.6);
+      tiles.forEach((tl, i) => { const k = sort(i); set(tl.e, { x: (mix(tl.gx, tl.px, k) + 1.2 * Math.sin(t * 0.8 + i)).toFixed(1), y: (mix(tl.gy, tl.py, k) - 18 * Math.sin(Math.PI * k)).toFixed(1), fill: tl === first ? MUSTARD : tl.p === 0 ? (named > 0.5 ? INK : STONE) : (k > 0.6 ? MUTED : STONE) }); op(tl.e, up(t, C0 - 0.1 + ((i * 7) % 60) * 0.012, 0.4)); });
+      op(psalmsLab, span(t, C0 + 1.2, C0 + 4.6, 0.5)); op(lamLab, named); }
+    // path
+    const d = PE - P0, at = (f) => P0 + d * f, pv = up(t, P0 - 0.3, 0.5) * (1 - up(t, CL + 0.6, 1.4)), down = 60 * up(t, T0 + 0.2, 1.4);
+    op(gPath, pv); gPath.setAttribute("transform", `translate(0 ${down.toFixed(1)})`);
+    if (pv > 0) { draw(path, up(t, P0 - 0.2, d * 0.24 + 0.2)); const when = [at(0.21), at(0.36), at(0.59), at(0.78)];
+      stops.forEach((s, i) => { op(s.ring, up(t, when[i] - 0.2, 0.5)); s.ring.setAttribute("stroke", (i === 3 && t > T1 + 3.0) || t > F0 + 0.4 + s.u * 2.2 ? MUSTARD : INK); s.ring.setAttribute("r", (12 + 3 * span(t, when[i], when[i] + 1.4, 0.4)).toFixed(2)); op(s.lab, up(t, when[i], 0.5) * (1 - up(t, T0 - 0.2, 0.7))); });
+      draw(gold, up(t, F0 + 0.3, 2.4)); op(gold, t > F0 ? 1 : 0); }
+    // the second verse
+    const v2 = span(t, T1 - 0.3, F0 + 0.1, 0.4, 0.7); op(gV2, v2);
+    if (v2 > 0) { op(b1, up(t, T1 - 0.2, 0.6)); op(b2, up(t, T1 + (TE - T1) * 0.5, 0.6)); op(r2, up(t, T1 + (TE - T1) * 0.78, 0.6)); }
+    // the dot and its voice
+    let u = mix(0, U[0], up(t, at(0.05), d * 0.16)); u = mix(u, U[1], up(t, at(0.36), d * 0.2)); u = mix(u, U[2], up(t, at(0.59), d * 0.17)); u = mix(u, 1, up(t, T1 + 0.3, 3.2));
+    const onPath = t > P0 - 0.3, pp = PT(u), home = up(t, CL + 0.5, 1.8);
+    const x = onPath ? mix(pp.x, 640, home) : 640, y = onPath ? mix(pp.y + down - 22, 420, home) : 470;
+    op(dot, Math.min(up(t, A0 - 0.6, 0.6), t < P0 - 0.3 ? 1 - up(t, C0 - 0.3, 0.5) : up(t, P0 - 0.1, 0.5)) * (1 - up(t, END + 0.6, 0.6)));
+    set(dot, { cx: x.toFixed(1), cy: (y + 1.5 * Math.sin(t * 0.9)).toFixed(1), fill: INK });
+    const blocked = t < A0 + 3.2, sp1 = t < C0 ? up(t, A0 + 0.2, 0.5) * (1 - up(t, C0 - 0.4, 0.5)) : 0, sp2 = t > F0 ? up(t, F0 + 0.2, 0.8) * (1 - up(t, END + 0.5, 0.6)) : up(t, at(0.36), 0.5) * (1 - up(t, at(0.59), 0.5));
+    speak(t, x, y, t < C0 ? (blocked ? 398 : mix(398, t > B0 - 0.4 ? 340 : 150, open)) : y - 150, Math.max(sp1, sp2));
+  });
+});
+</script>
+</body></html>

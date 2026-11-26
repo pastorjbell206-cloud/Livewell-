@@ -1,0 +1,149 @@
+<!doctype html>
+<!-- "One story". One continuous picture: sixty-six spines on one thread, the thread curling into a good
+     world, the world cracking, one family and a promise, a long road with its waymarks, the thread coming
+     down into the road, a plain cross and an open tomb, the world closing up again, a book with you in it.
+     God and Christ are never drawn: only a thread. Scripture text is read from script.json, never retyped.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>One story</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", R = rng(5);
+  const A0 = S("books", 0), A1 = S("books", 1);
+  const B0 = S("good", 0), B1 = S("good", 1), BE = E("good");
+  const C0 = S("crack", 0), CE = E("crack");
+  const P0 = S("promise", 0), P1 = S("promise", 1), PE = E("promise");
+  const W0 = S("wait", 0), WE = E("wait");
+  const U0 = S("author", 0), U1 = S("author", 1), U2 = S("author", 2), UE = E("author");
+  const N0 = S("new", 0), N1 = S("new", 1), NE = E("new");
+  const Z0 = S("close", 0), END = F.VOICE_END;
+  const scr = Object.fromEntries(window.SCRIPT.chapters.filter((c) => c.scripture).map((c) => [c.id, c.scripture]));
+  // a verse set on one or two lines, in curly quotes, with its reference under it
+  const verse = (parent, cx, y, s, size) => { const g = el("g", {}, parent), full = "“" + s.text + "”", words = full.split(" "); let rows = [full];
+    if (full.length > 34) { let best = null; for (let i = 1; i < words.length; i++) { const a = words.slice(0, i).join(" "), b = words.slice(i).join(" "), sc = Math.max(a.length, b.length); if (!best || sc < best[2]) best = [a, b, sc]; } rows = [best[0], best[1]]; }
+    const lines = rows.map((r, i) => txt(g, "disp", cx, y + i * size * 1.16, r, size));
+    const ref = txt(g, "lab", cx, y + rows.length * size * 1.16 + 4, (s.reference + " · " + s.translation).toUpperCase());
+    return { g, show(t, at, d = 0.7) { lines.forEach((l, i) => op(l, up(t, at + i * d * 0.8, 0.6))); op(ref, up(t, at + rows.length * d * 0.8 + 0.2, 0.6)); } }; };
+
+  // ================= 1: sixty-six spines, one thread =================
+  const gSpines = el("g", {}, world), TONES = [INK, STONE, CHAR, INK, STONE];
+  const spines = [...Array(66)].map((_, i) => ({ x: 112 + i * 16, h: 46 + Math.round(R() * 78), e: el("rect", { width: 11, rx: 3, fill: TONES[Math.floor(R() * 5)] }, gSpines) }));
+  const thread = el("line", { stroke: MUSTARD, "stroke-width": 4, "stroke-linecap": "round" }, world);
+
+  // ================= 2, 3, 7: the world (good, cracked, made new) =================
+  const gWorld = el("g", {}, world), wClip = el("clipPath", { id: "globe" }, gWorld); el("circle", { r: 150 }, wClip);
+  const inside = el("g", { "clip-path": "url(#globe)" }, gWorld);
+  const sky = el("circle", { r: 150, fill: PAPER }, inside);
+  const land = el("path", { d: "M-160 34 C-90 4 -30 44 30 26 S120 0 160 22 V160 H-160 Z", fill: WARM }, inside), hill = el("path", { d: "M-160 78 C-100 46 -40 92 20 70 S110 52 160 84 V160 H-160 Z", fill: MUTED }, inside);
+  const horizon = line(inside, "M-160 34 C-90 4 -30 44 30 26 S120 0 160 22", { stroke: INK, "stroke-width": 2.5 });
+  const trees = [[-84, 22, 34], [-50, 30, 24], [58, 22, 40], [96, 14, 28]].map(([x, y, h]) => { const g = el("g", {}, inside); el("line", { x1: 0, y1: 0, x2: 0, y2: -h, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, g); el("circle", { cy: -h, r: h * 0.36, fill: INK }, g); return { g, x, y }; });
+  const stars = [[-70, -86], [-18, -112], [44, -78], [88, -100], [4, -58], [-104, -40]].map(([x, y]) => el("circle", { cx: x, cy: y, r: 3, fill: STONE }, inside));
+  const folk = [[-24, 62], [2, 70], [24, 60], [-64, 98], [70, 104]].map(([x, y]) => ({ x, y, e: el("circle", { r: 6.5, fill: INK }, inside) }));
+  const ring = el("circle", { r: 150, fill: "none", stroke: MUSTARD, "stroke-width": 4.5, pathLength: 1, "stroke-dasharray": 1, transform: "rotate(-90)" }, gWorld);
+  const cracks = ["M-22 -168 L-4 -104 L-30 -44 L-8 26 L-34 92 L-12 168", "M-168 -28 L-92 -12 L-42 -44 L30 -18 L96 -50 L168 -24", "M-160 124 L-74 78 L-22 104 L62 60 L158 92"].map((d) => line(gWorld, d, { stroke: BONE, "stroke-width": 0, "stroke-linecap": "butt" }));
+  const crackInk = ["M-22 -168 L-4 -104 L-30 -44 L-8 26 L-34 92 L-12 168", "M-168 -28 L-92 -12 L-42 -44 L30 -18 L96 -50 L168 -24", "M-160 124 L-74 78 L-22 104 L62 60 L158 92"].map((d) => line(gWorld, d, { stroke: STONE, "stroke-width": 1.2 }));
+  const v1 = verse(world, 890, 300, scr.good, 44), v7 = verse(world, 890, 318, scr.new, 50);
+
+  // ================= 4: one family, and all the families =================
+  const gFam = el("g", {}, world), gReach = el("g", {}, gFam);
+  const TX = 640, TY = 452;
+  const fams = [[400, 330], [450, 500], [790, 520], [870, 350], [985, 470], [1075, 335], [1160, 500], [1190, 400], [560, 330], [300, 480]].map(([x, y], i) => ({ x, y, l: line(gReach, `M${TX} ${TY - 30} Q${(TX + x) / 2} ${Math.min(TY, y) - 60} ${x} ${y}`, { stroke: MUSTARD, "stroke-width": 1.8 }), d: [[-9, 4], [8, 6], [0, -8]].map(([dx, dy]) => el("circle", { cx: x + dx, cy: y + dy, r: 5, fill: STONE }, gFam)) }));
+  const tent = el("g", {}, gFam); el("path", { d: "M-44 0 L0 -58 L44 0 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, tent); el("path", { d: "M-9 0 L0 -26 L9 0 Z", fill: INK }, tent);
+  const kin = [[-70, -8], [-56, -8], [58, -8], [72, -6]].map(([dx, dy]) => el("circle", { r: 7, fill: INK }, gFam));
+  const famLab = txt(gFam, "lab", TX, TY + 34, "ONE FAMILY");
+  const v4 = verse(world, 700, 168, scr.promise, 40);
+
+  // ================= 5: the long road and its waymarks =================
+  const gRoad = el("g", {}, world);
+  const road = line(gRoad, "M110 446 C380 426 680 466 900 444 S1100 392 1196 336", { stroke: INK, "stroke-width": 3 });
+  const mark = (x, y, lab) => { const g = el("g", {}, gRoad); move(g, x, y); const l = txt(gRoad, "lab", x, 506, lab); return { g, l }; };
+  const mChain = mark(330, 372, "RESCUED"), mLand = mark(560, 380, "A LAND"), mCrown = mark(760, 378, "KINGS"), mExile = mark(985, 372, "EXILE");
+  [[-40, 0, 0], [-10, 0, 0], [30, -4, -24]].forEach(([x, y, r]) => { const o = el("ellipse", { rx: 17, ry: 10, stroke: INK, "stroke-width": 3.2 }, mChain.g); move(o, x, y, 1, r); });
+  el("path", { d: "M-54 26 Q0 -44 54 26", stroke: INK, "stroke-width": 3, fill: WARM }, mLand.g); el("line", { x1: 0, y1: -9, x2: 0, y2: -38, stroke: INK, "stroke-width": 2.6 }, mLand.g); el("path", { d: "M0 -38 L20 -31 L0 -24 Z", fill: MUSTARD }, mLand.g);
+  el("path", { d: "M-30 20 L-30 -14 L-15 6 L0 -22 L15 6 L30 -14 L30 20 Z", stroke: INK, "stroke-width": 3, "stroke-linejoin": "round", fill: WARM }, mCrown.g);
+  [-34, -17, 0, 17, 34].forEach((y) => el("line", { x1: 0, y1: y, x2: 0, y2: y + 9, stroke: STONE, "stroke-width": 2.6, "stroke-linecap": "round" }, mExile.g));
+  const walkers = [...Array(4)].map(() => el("circle", { r: 7, fill: INK }, gRoad));
+  let roadLen = 0;
+
+  // ================= 6: the author steps in =================
+  const gStep = el("g", {}, world);
+  const ground = line(gStep, "M90 440 H1200", { stroke: INK, "stroke-width": 3 }), waiter = el("circle", { cx: 210, cy: 431, r: 8, fill: INK }, gStep);
+  const hillG = el("g", {}, gStep); el("path", { d: "M540 440 Q640 360 740 440 Z", fill: WARM, stroke: INK, "stroke-width": 3 }, hillG); el("path", { d: "M640 400 V318 M616 342 H664", stroke: INK, "stroke-width": 5, "stroke-linecap": "round" }, hillG);
+  const tombG = el("g", {}, gStep); el("path", { d: "M826 440 Q826 352 900 352 Q974 352 974 440 Z", fill: WARM, stroke: INK, "stroke-width": 3 }, tombG); el("circle", { cx: 900, cy: 408, r: 30, fill: CHAR }, tombG);
+  const stone = el("circle", { cy: 408, r: 32, fill: MUTED, stroke: INK, "stroke-width": 3 }, tombG);
+  const fall = line(gStep, "M330 96 V440", { stroke: MUSTARD, "stroke-width": 4 });
+  const run = line(gStep, "M330 440 H540 Q590 400 640 400 Q690 400 740 440 H1200", { stroke: MUSTARD, "stroke-width": 4.5 });
+  const v6 = verse(world, 700, 196, scr.author, 42);
+
+  // ================= 8: the book, and you between its pages =================
+  const gBook = el("g", {}, world);
+  const pageD = (s) => `M0 -50 C${-40 * s} -70 ${-110 * s} -70 ${-150 * s} -55 L${-150 * s} 55 C${-110 * s} 40 ${-40 * s} 40 0 60 Z`;
+  const pages = [1, -1].map((s) => el("path", { d: pageD(s), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round", pathLength: 1, "stroke-dasharray": 1 }, gBook));
+  const pRings = [-86, 86].map((x) => el("circle", { cx: x, cy: -8, r: 24, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gBook));
+  const bThread = line(gBook, "M-62 -8 H62", { stroke: MUSTARD, "stroke-width": 3 });
+  const you = el("circle", { cy: -8, r: 11, fill: INK }, gBook), youLab = txt(gBook, "lab", 0, 104, "");
+
+  const WX = (t) => mix(mix(mix(360, 640, up(t, BE + 0.2, 1.4)), 236, up(t, P0 - 0.5, 1.4)), 360, t > PE ? 1 : 0);
+  const drawWorld = (t) => {
+    // spines
+    const sv = t < B0 + 0.6; op(gSpines, sv ? 1 : 0);
+    if (sv) { const settle = up(t, A1 - 0.1, 1.2), away = up(t, B0 - 0.7, 1.0);
+      spines.forEach((s, i) => { const grow = up(t, A0 - 0.5 + i * 0.045, 0.7), h = s.h * grow * (1 - away) + 4 * Math.sin(t * 1.6 + i * 0.4) * grow * (1 - settle) * (1 - away), cy = mix(380 - h / 2, 330, settle);
+        set(s.e, { x: s.x - 5.5, y: (cy - h / 2).toFixed(1), height: Math.max(0, h).toFixed(1) }); op(s.e, grow > 0 && h > 0.6 ? 1 : 0); }); }
+    // the thread: drawn through the books, then gathered up to the top of the world's ring
+    const tv = t > A1 - 0.2 && t < B0 + 1.3; op(thread, tv ? 1 : 0);
+    if (tv) { const d = up(t, A1 - 0.15, 1.2), g = up(t, B0 - 0.5, 1.5); set(thread, { x1: mix(96, 360, g).toFixed(1), x2: mix(mix(96, 1184, d), 360, g).toFixed(1), y1: mix(330, 180, g).toFixed(1), y2: mix(330, 180, g).toFixed(1) }); }
+    // the world
+    const first = t < W0 + 0.2, wv = first ? up(t, B0 + 0.3, 0.4) * (1 - up(t, W0 - 0.9, 0.9)) : up(t, N0 - 0.4, 1.0) * (1 - up(t, Z0 - 0.5, 0.8)); op(gWorld, wv);
+    if (wv > 0) { const small = first ? up(t, P0 - 0.5, 1.4) : 0, heal = up(t, N1 - 0.2, 2.0), born = first ? B0 : -99;
+      move(gWorld, WX(t), mix(330, 340, small) + 2 * Math.sin(t * 0.6), mix(1, 0.62, small));
+      draw(ring, up(t, born + 0.4, 1.6)); op(sky, up(t, born + 1.0, 0.8)); op(land, up(t, born + 1.2, 0.8)); op(hill, up(t, born + 1.5, 0.8)); draw(horizon, up(t, born + 1.1, 1.2));
+      trees.forEach((tr, i) => { const k = first ? up(t, born + 1.9 + i * 0.3, 0.9) : 1, lean = first ? up(t, C0 + (CE - C0) * 0.8, 1.0) : 1 - heal; move(tr.g, tr.x, tr.y, k, (i % 2 ? 1 : -1) * 16 * lean + 1.5 * Math.sin(t * 1.1 + i)); op(tr.g, k > 0.02 ? 1 : 0); });
+      stars.forEach((s, i) => op(s, up(t, born + 2.4 + i * 0.2, 0.5) * (0.6 + 0.4 * Math.sin(t * 1.4 + i * 2))));
+      const takes = first ? up(t, C0 + 0.3, 2.4) : 0;
+      folk.forEach((f, i) => { op(f.e, first ? up(t, C0 - 0.7 + i * 0.12, 0.5) : 1); const up1 = i === 1 ? takes : 0, apart = first ? up(t, C0 + (CE - C0) * 0.62, 1.2) : 1 - heal;
+        set(f.e, { cx: (f.x + (f.x < 0 ? -10 : 10) * apart * (i === 1 ? 0 : 1) + 1.2 * Math.sin(t + i)).toFixed(1), cy: (mix(f.y, -128, up1) + (f.y > 80 ? 6 * apart : 0)).toFixed(1) }); });
+      [0.44, 0.62, 0.8].forEach((f, i) => { const k = first ? up(t, C0 + (CE - C0) * f, 0.9) : 1, w = (first ? k : 1 - heal) * 11; draw(cracks[i], k); cracks[i].setAttribute("stroke-width", w.toFixed(2)); draw(crackInk[i], k); op(crackInk[i], first ? 1 : 1 - heal); }); }
+    const g1 = span(t, B1 - 0.3, C0 - 0.2, 0.3, 0.6); op(v1.g, g1); if (g1 > 0) v1.show(t, B1 - 0.2);
+    const g7 = span(t, N1 - 0.3, Z0 - 0.3, 0.3, 0.7); op(v7.g, g7); if (g7 > 0) v7.show(t, N1 - 0.2);
+  };
+  const drawFamily = (t) => {
+    const v = up(t, P0 + 0.9, 0.5) * (1 - up(t, W0 - 0.8, 0.8)); op(gFam, v);
+    if (v > 0) { move(tent, TX, TY, 1.3 * up(t, P0 + 1.0, 0.9)); kin.forEach((k, i) => { op(k, up(t, P0 + 1.9 + i * 0.2, 0.5)); set(k, { cx: (TX + [-88, -72, 72, 88][i] + 1.2 * Math.sin(t * 0.9 + i)).toFixed(1), cy: TY - 8 }); });
+      op(famLab, span(t, P0 + 2.4, W0 - 0.6, 0.6));
+      fams.forEach((f, i) => { const at = P1 - 0.3 + i * 0.12; draw(f.l, up(t, at, 1.0)); f.d.forEach((d, j) => op(d, up(t, at + 0.6 + j * 0.1, 0.5))); }); }
+    const g4 = span(t, P1 - 0.3, W0 - 0.5, 0.3, 0.7); op(v4.g, g4); if (g4 > 0) v4.show(t, P1 - 0.2, 0.5);
+  };
+  const drawRoad = (t) => {
+    const v = up(t, W0 - 1.1, 0.5) * (1 - up(t, U0 - 0.4, 1.0)); op(gRoad, v); if (v <= 0) return;
+    if (!roadLen) roadLen = road.getTotalLength();
+    const d = WE - W0, slide = up(t, U0 - 0.4, 1.2); gRoad.setAttribute("transform", `translate(${(-260 * slide).toFixed(1)} 0)`);
+    draw(road, up(t, W0 - 1.1, 2.2));
+    const T = [0, 0.36, 0.52, 0.64, 0.79, 0.93, 1.2], U = [0.02, 0.21, 0.42, 0.6, 0.8, 0.985, 0.985], f = (t - W0) / d; let u = U[0];
+    for (let i = 1; i < T.length; i++) if (f >= T[i - 1]) u = mix(U[i - 1], U[i], ease((f - T[i - 1]) / (T[i] - T[i - 1])));
+    const alone = up(t, W0 + d * 0.86, 0.9);
+    walkers.forEach((w, i) => { const p = road.getPointAtLength(roadLen * Math.max(0, u - i * 0.016 * (1 + 2 * alone))); set(w, { cx: p.x.toFixed(1), cy: (p.y - 9 - 1.6 * Math.abs(Math.sin(t * 4 + i))).toFixed(1) }); op(w, up(t, W0 - 0.7, 0.5) * (i === 0 ? 1 : 1 - alone)); });
+    [[mChain, 0.3], [mLand, 0.48], [mCrown, 0.6], [mExile, 0.74]].forEach(([m, at]) => { const k = up(t, W0 + d * at, 0.6); op(m.g, k); op(m.l, up(t, W0 + d * at + 0.2, 0.5)); });
+  };
+  const drawStep = (t) => {
+    const g6 = span(t, U1 - 0.3, U2 - 0.1, 0.3, 0.6); op(v6.g, g6); if (g6 > 0) v6.show(t, U1 - 0.2, 0.6);
+    const v = up(t, U0 - 0.3, 0.6) * (1 - up(t, N0 - 0.8, 0.9)); op(gStep, v); if (v <= 0) return;
+    draw(ground, up(t, U0 - 0.3, 1.6)); op(waiter, up(t, U0 + 0.4, 0.6)); waiter.setAttribute("cx", (210 + 2 * Math.sin(t * 1.2)).toFixed(1));
+    draw(fall, up(t, U0 + 0.5, 4.2));
+    op(hillG, up(t, U2 - 0.5, 0.8)); op(tombG, up(t, U2 + (UE - U2) * 0.3, 0.8));
+    const d = UE - U2, a = up(t, U2 + 0.1, d * 0.3), b = up(t, U2 + d * 0.64, d * 0.36);
+    draw(run, 0.37 * a + 0.63 * b); stone.setAttribute("cx", mix(900, 972, up(t, U2 + d * 0.62, 1.2)).toFixed(1));
+  };
+  const drawBook = (t) => {
+    const v = up(t, Z0 - 0.3, 0.5) * (1 - up(t, END + 0.6, 0.7)); op(gBook, v); if (v <= 0) return;
+    move(gBook, 640, 330 + 2 * Math.sin(t * 0.8), 1.25); const d = up(t, Z0 - 0.3, 1.4); pages.forEach((p) => { draw(p, d); p.setAttribute("fill-opacity", up(t, Z0 + 0.3, 0.8)); });
+    pRings.forEach((r, i) => op(r, up(t, Z0 + 0.6 + i * 0.5, 0.6))); draw(bThread, up(t, Z0 + 1.0, 1.2)); op(you, up(t, Z0 + 1.6, 0.6)); you.setAttribute("r", (11 + 1.2 * Math.sin(t * 2)).toFixed(2)); op(youLab, up(t, Z0 + 2.2, 0.6));
+  };
+
+  F.title("One story");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.7);
+  return (t) => { drawWorld(t); drawFamily(t); drawRoad(t); drawStep(t); drawBook(t); };
+});
+</script>
+</body></html>

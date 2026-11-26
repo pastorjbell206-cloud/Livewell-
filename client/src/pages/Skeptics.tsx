@@ -26,6 +26,7 @@ import { isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
 import { entryById } from "@/lib/siteCatalog";
 import { SKEPTIC_STOPS } from "@/lib/skepticTrack";
 import "./home/home.css";
+import NarratedFilm from "@/components/NarratedFilm";
 
 /** The case for the faith, under the name and line every menu gives it. */
 const CASE = entryById("questions.case");
@@ -75,6 +76,8 @@ export default function Skeptics() {
           </Link>
         }
       />
+
+      <NarratedFilm page="/skeptics" />
 
       <section className="home-sec home-sec--dark" aria-labelledby="sk-case-title">
         <div className="home-wrap">

@@ -9,3 +9,8 @@ None of these was checked against a primary source in this session. Each is stan
 - **"You are that man!":** 2 Samuel 12:7, four words, with the verse's own exclamation mark.
 - **"I have sinned against the LORD.":** 2 Samuel 12:13, six words.
 - **For James:** the teaching line ("experts on other people's faults and strangers to our own") is new wording for the idea of Blind Spots, not a quotation from it.
+
+## Checked on 2026-11-26, before recording
+
+- Scripture: 2 Samuel 12:7 ("You are that man!", four words) and 12:13 ("I have sinned against the LORD.", six words) match `client/public/bible/text/2-samuel/12.json`. "Raised like a daughter" rests on 12:3; "deserves to die" on 12:5.
+- Picture: people are dots. The killing is named by the voice and never shown (a dot fades to an empty ring). Labels on screen beyond the script: DAVID, THAT MAN, SOMEBODY ELSE'S, HIS OWN.

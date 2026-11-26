@@ -1,0 +1,129 @@
+{
+  "title": "Genesis: the book of beginnings",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions and its rows of docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-genesis",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "beginnings",
+      "kicker": "The book of beginnings",
+      "level": 0.2,
+      "lines": [
+        "Genesis is the first book of the Bible. Its name means origin, or birth.",
+        "In the beginning God created the heavens and the earth.",
+        "It tells how things began: the world, people, sin and death, the nations, and the people of Israel."
+      ],
+      "scripture": {
+        "reference": "Genesis 1:1",
+        "text": "In the beginning God created the heavens and the earth.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The book has two halves. Chapters one to eleven tell the story of the whole world. Chapters twelve to fifty narrow down to one family: Abraham, then Jacob, then Joseph.",
+        "One phrase works like a heading. This is the account of. It opens each of the book's ten sections."
+      ],
+      "scripture": {
+        "reference": "Genesis 2:4",
+        "text": "This is the account of",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "image",
+      "kicker": "Watch for: God's image",
+      "level": 0.5,
+      "lines": [
+        "Watch what chapter one says about people. In the ancient world, a king set up his image to show his rule. Genesis gives that dignity to every person, not only kings.",
+        "And the image isn't lost after the first sin."
+      ],
+      "scripture": {
+        "reference": "Genesis 1:27",
+        "text": "So God created man in His own image; in the image of God He created him; male and female He created them.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "wrong",
+      "kicker": "Watch for: what went wrong",
+      "level": 0.65,
+      "lines": [
+        "Chapter three tells the first disobedience and what came of it. The damage spreads: a murder, a flood, a proud tower.",
+        "Everything that goes wrong in the Bible's story traces back here. So does the first hint of hope."
+      ],
+      "scripture": {
+        "reference": "Genesis 3:9",
+        "text": "But the LORD God called out to the man, “Where are you?”",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where readers differ",
+      "level": 0.55,
+      "lines": [
+        "Christians differ on how literally to read chapters one to eleven. The book's own concern is who God is, who we are, and how God keeps his word."
+      ]
+    },
+    {
+      "id": "promise",
+      "kicker": "Watch for: the promise",
+      "level": 0.8,
+      "lines": [
+        "Chapter twelve is the hinge the whole Bible turns on, from the world's story to Israel's. God calls Abram and promises him a great nation, a great name, and blessing for all the families of the earth."
+      ],
+      "scripture": {
+        "reference": "Genesis 12:3",
+        "text": "all the families of the earth will be blessed through you.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "faithful",
+      "kicker": "Watch for: a faithful God",
+      "level": 0.9,
+      "lines": [
+        "The people of Genesis lie, scheme, play favorites, and betray each other. God works through all of it without excusing any of it.",
+        "Joseph says so to the brothers who sold him.",
+        "What you intended against me for evil, God intended for good."
+      ],
+      "scripture": {
+        "reference": "Genesis 50:20",
+        "text": "what you intended against me for evil, God intended for good",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter one. The key chapters are one, three, nine, twelve, fifteen, twenty-two, thirty-two, and fifty.",
+        "And keep this in mind as you read. Describing an act isn't the same as approving it."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Genesis ends with the promise alive, but not yet kept. So keep reading."
+      ],
+      "titleCard": [
+        "The promise is alive, but not yet kept.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

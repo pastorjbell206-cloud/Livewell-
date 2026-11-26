@@ -30,6 +30,7 @@ import IconTile from "@/components/art/IconTile";
 import { useNear } from "@/components/art/useNear";
 import type { PlateName } from "@/components/art/Plate";
 import "./home/home.css";
+import NarratedFilm from "@/components/NarratedFilm";
 
 const BibleShelf = lazy(() => import("./home/BibleShelf"));
 
@@ -97,6 +98,8 @@ export default function Study() {
           </Link>
         }
       />
+
+      <NarratedFilm page="/study" />
 
       {/* FIRST: open the Bible, on the shelf of 66 books. */}
       <section className="home-sec home-sec--dark study-shelf" aria-labelledby="study-shelf-title">

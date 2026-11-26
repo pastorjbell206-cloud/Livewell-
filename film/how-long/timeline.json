@@ -1,0 +1,113 @@
+{
+ "length": 60.21,
+ "chapters": [
+  {
+   "id": "idea",
+   "kicker": "A common idea",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 8.26,
+   "lines": [
+    {
+     "text": "Some people think faith means never complaining to God. The Bible disagrees.",
+     "start": 2.6,
+     "end": 7.36
+    }
+   ]
+  },
+  {
+   "id": "prayer",
+   "kicker": "A prayer in the Bible",
+   "level": 0.4,
+   "start": 7.46,
+   "end": 14.9,
+   "lines": [
+    {
+     "text": "How long, O LORD? Will You forget me forever? How long will You hide Your face from me?",
+     "start": 8.36,
+     "end": 14.0
+    }
+   ]
+  },
+  {
+   "id": "book",
+   "kicker": "The Bible's prayer book",
+   "level": 0.5,
+   "start": 14.1,
+   "end": 25.2,
+   "lines": [
+    {
+     "text": "That's a prayer. It's in the Bible's own prayer book, and it isn't alone. More psalms sound like this than any other kind.",
+     "start": 15.0,
+     "end": 22.54
+    },
+    {
+     "text": "They're called laments.",
+     "start": 23.06,
+     "end": 24.3
+    }
+   ]
+  },
+  {
+   "id": "path",
+   "kicker": "The path of a lament",
+   "level": 0.7,
+   "start": 24.4,
+   "end": 34.18,
+   "lines": [
+    {
+     "text": "And they follow a path. Turn to God. Tell him what's wrong, plainly. Ask him to act. Then choose to trust him.",
+     "start": 25.3,
+     "end": 33.28
+    }
+   ]
+  },
+  {
+   "id": "turn",
+   "kicker": "The turn",
+   "level": 0.9,
+   "start": 33.38,
+   "end": 44.42,
+   "lines": [
+    {
+     "text": "Watch David make that turn. Nothing around him has changed yet.",
+     "start": 34.28,
+     "end": 37.92
+    },
+    {
+     "text": "But I have trusted in Your loving devotion; my heart will rejoice in Your salvation.",
+     "start": 38.58,
+     "end": 43.52
+    }
+   ]
+  },
+  {
+   "id": "faith",
+   "kicker": "What faith sounds like",
+   "level": 0.8,
+   "start": 43.62,
+   "end": 49.94,
+   "lines": [
+    {
+     "text": "Lament isn't the opposite of faith. It's what faith sounds like when it hurts.",
+     "start": 44.52,
+     "end": 49.04
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 49.14,
+   "end": 54.108,
+   "lines": [
+    {
+     "text": "You can bring him the whole truth. He already knows it.",
+     "start": 50.04,
+     "end": 53.208
+    }
+   ]
+  }
+ ]
+}
