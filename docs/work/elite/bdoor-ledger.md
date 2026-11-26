@@ -24528,3 +24528,19 @@ Cut in chapter 2: John 4 and John 7 on living water, which the New Testament doe
 | Deuteronomy 24:4, 2 Kings 23:15 (named), 1 Samuel 13:14, Isaiah 2:2, Hosea 14:2, Luke 15:21 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 3: John 10:11 and the deep note's other lines to Christ, which the New Testament does not draw from this chapter.
+
+## The plain notes on Jeremiah 4 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1-31 (verses 2 and 31 partly paraphrased) | all | BSB | BSB text |
+| Circumcision of the heart, Deuteronomy 10:16; shofar and signal flag; sackcloth | 1-9 | jeremiah/4.json `cultural` | Repository |
+| The unnamed foe; Scythians and Herodotus; Babylon by the northern road; Dan and Ephraim | 1-22 | jeremiah/4.json `historical` | Repository |
+| The sirocco and winnowing | 10-22 | jeremiah/4.json `cultural` | Repository |
+| Two readings of verse 10; 14:13-15, 23:16-17, 1 Kings 22, 2 Thessalonians 2:11 | 10-22 `hard` | jeremiah/4.json `hard` | Repository |
+| Genesis 1:2 behind verse 23; no full end | 23-31 | jeremiah/4.json `summary`; BSB | BSB text |
+| Deuteronomy 10:16, Romans 2:29, Romans 9:2, Genesis 1:2 (clauses); Isaiah 41:16 and 13:8 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 4: Galatians 3:8 and 14 beside verse 2, which the New Testament does not draw from this chapter.
