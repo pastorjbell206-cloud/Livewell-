@@ -23975,3 +23975,19 @@ New Testament lines in chapter 2: none drawn. Cut in chapter 2: nothing.
 | The hard note: What is the stone with seven eyes in verse 9? The readings in their holders' terms | 6-10 `hard` | zechariah/3.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 3: none drawn. Cut in chapter 3: nothing.
+
+## The plain notes on Zechariah 4 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Not by might nor by power, but by the Spirit: the text paraphrased, its quoted verses (in single or double quotes) | 1-10 | BSB | BSB text |
+| Background in `hearers` | 1-10 | zechariah/4.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 25:31-37 | 1-10 `later` | BSB | BSB text |
+| The two anointed ones: the text paraphrased, its quoted verses (in single or double quotes) | 11-14 | BSB | BSB text |
+| Background in `hearers` | 11-14 | zechariah/4.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 27:20; Exodus 30:30 | 11-14 `later` | BSB | BSB text |
+| The hard note: Who are the two olive trees, the two anointed ones? The readings in their holders' terms | 11-14 `hard` | zechariah/4.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 4: none drawn. Cut in chapter 4: Revelation 11:4 in the `later` field, since the New Testament does not quote Zechariah 4; replaced with Exodus 27:20 and 30:30.
