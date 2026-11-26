@@ -21765,3 +21765,22 @@ Cut in chapter 5: the deep note's line to John 15 that the New Testament does no
 | The hard note: result or purpose; judicial hardening; Pharaoh; limited hardening; Romans 11:25-26; the mystery; never a label for any people, never a reason to blame the Jewish people | 9-13 `hard` | isaiah/6.json `hard`; the brief | Repository |
 
 Cut in chapter 6: the deep note's lines beyond what the New Testament draws (the threefold holy and the Trinity; the coal and a greater cleansing). No care line is needed in this chapter.
+
+## The plain notes on Isaiah 7 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1-9 | 1-9 | BSB | BSB text |
+| The Syro-Ephraimite war about 734 to 732; the son of Tabeal; Kings and Chronicles; Ahaz's tribute; the Assyrian list naming Jehoahaz of Judah; the water supply; Shear-jashub; the heads of 8-9; the wordplay; 36:2 | 1-9 | isaiah/7.json `historical`, `cultural`, `literary`, `story` | Repository |
+| 2 Kings 16:7 (inside the BSB's speech marks); Isaiah 36:2; 2 Chronicles 20:20 | 1-9 `later` | BSB | BSB text |
+| 7:10-17 (7:17's clause before the dash) | 10-17 | BSB | BSB text |
+| Signs and divination; Deuteronomy 6:16; the plural you; Immanuel; curds and honey; 732 and 722 BC; 701 BC | 10-17 | isaiah/7.json `cultural`, `hard` | Repository |
+| Matthew 1:22; Matthew 1:23 (and its gloss, God with us); Isaiah 8:8 | 10-17 `later` | BSB | BSB text; the New Testament's own line |
+| The hard note: almah and betulah; the timetable; Trypho and Hezekiah; Rashi; Brown; the Greek and the Hebrew; Young and Motyer (the article, the sign, 8:8 and 9:6); the double fulfillment; Matthew 2:15 and Hosea 11:1; parthenos before Christianity; the confession resting on the Gospels | 10-17 `hard` | isaiah/7.json `hard` (both answers); bible/guides/reading-prophets.json | Repository; every reading in its holders' terms |
+| 7:18-25 (7:20's clauses either side of its dashes) | 18-25 | BSB | BSB text |
+| Egypt and Assyria; the hired razor; shaving as humiliation; curds and honey of a ruined land | 18-25 | isaiah/7.json `literary` | Repository |
+| 2 Chronicles 28:20 (first typed inexactly, caught and corrected); Isaiah 10:5 | 18-25 `later` | BSB | BSB text |
+
+Cut in chapter 7: nothing beyond the policy on lines to Christ; Matthew's line is the New Testament's own. No care line is needed in this chapter.
