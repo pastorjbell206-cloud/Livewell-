@@ -22608,3 +22608,23 @@ Cut in chapter 34: the narrowing above. No care line is needed in this chapter.
 | Isaiah 51:11 named; Matthew 11:5 | 5-10 `later` | isaiah/29.json `christ` (Matthew 11:4-5 and Isaiah 35); BSB | BSB text |
 
 Cut in chapter 35: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 36 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 36:1-3 | 1-3 | BSB | BSB text |
+| Chapters 36 to 39 as the hinge; the parallel with 2 Kings 18:13 to 20:19 and 2 Chronicles 32; what Isaiah leaves out and adds; the views on which came first; Sennacherib 705 to 681 and 701 BC; the annals (forty-six cities, the bird in a cage, the tribute, Jerusalem not claimed); Lachish, the Nineveh reliefs in the British Museum, the siege ramp; the upper pool and chapter 7 | 1-3 | isaiah/36.json `story`, `historical` | Repository |
+| 2 Kings 18:13; Isaiah 7:3 | 1-3 `later` | BSB | BSB text |
+| The hard note: the fourteenth year and 715 against 727; the proposed solutions; the guide's Thiele dates and Galil's beside them; 701 secure from Assyria's records | 1-3 `hard` | isaiah/36.json `historical`; bible/guides/kings-of-israel-and-judah.json; 2-kings/intro.json `teaching` | Repository. Sources differ, and the note says so |
+| 36:4-10 (the Rabshakeh's words, inside the BSB's speech marks; 36:8's offer paraphrased around its dash) | 4-10 | BSB | BSB text |
+| The Rabshakeh as a title; the propaganda; the reform and the local shrines; Kings' verdict; the book's question in the enemy's mouth | 4-10 | isaiah/36.json `hard`, `story`; 2-kings/intro.json `teaching` (Rabshakeh) | Repository |
+| 2 Kings 18:5; Isaiah 30:7 | 4-10 `later` | BSB | BSB text |
+| The hard note: propaganda; the reform praised in Kings (Deuteronomy 12); the Arad altar debated; obedience twisted into doubt | 4-10 `hard` | isaiah/36.json `hard` | Repository; both views |
+| 36:11-22 (36:13 in double quotes for its exclamation; 36:21's clause; 36:12 paraphrased, not quoted) | 11-22 | BSB | BSB text |
+| Aramaic and Hebrew; deportation dressed as reward; Samaria's people; the LORD set beside the gods of the cities; silence; torn clothes | 11-22 | isaiah/36.json `summary`, `cultural` | Repository |
+| 2 Kings 18:26-37 named; Psalm 20:7 | 11-22 `later` | BSB | BSB text |
+
+Cut in chapter 36: nothing. No care line is needed in this chapter.
