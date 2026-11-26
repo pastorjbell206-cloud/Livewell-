@@ -9,6 +9,7 @@ import { screen, fireEvent, within } from "@testing-library/react";
 
 import { renderWithProviders } from "@/test/harness";
 import { allEntries } from "@/lib/siteCatalog";
+import { HOME_WHY } from "@/lib/positioning";
 import PreviewHome, { DISCIPLINES } from "./PreviewHome";
 
 const CATALOGUE = new Set(allEntries().map((e) => e.href));
@@ -71,6 +72,14 @@ describe("/preview/home", () => {
         ["/tracks", "/tools", "/family", "/studyguides", "/writing", "/subscribe", "/about", "/support", "/explore", "/help", "/help/doubt", "/study/films", "/study/bible", "/theology/history"].includes(href);
       expect(real, href).toBe(true);
     }
+  });
+
+  it("sets James's own words large, and adds none to them", () => {
+    renderWithProviders(<PreviewHome />);
+    const why = screen.getByRole("region", { name: "Why LiveWell exists" });
+    const said = Array.from(why.querySelectorAll("p")).map((p) => p.textContent).join(" ");
+    expect(said.length).toBeGreaterThan(80);
+    expect(HOME_WHY.startsWith(said)).toBe(true);
   });
 
   it("names planned Academy paths without linking any of them", () => {

@@ -36,6 +36,7 @@ import { followHash } from "@/lib/followHash";
 import HomeFind from "./home/HomeFind";
 import HomeLatest from "./home/HomeLatest";
 import { ROAD_CHIPS } from "./home/roadChips";
+import { HOME_LINE, HOME_WHY } from "@/lib/positioning";
 import "./home/home.css";
 import "./preview/preview.css";
 
@@ -73,6 +74,23 @@ const PATHS: { name: string; href: string; who: string }[] = [
 const PATHS_PLANNED = ["Old Testament survey", "New Testament survey", "Systematic theology", "Christian ethics", "Church leadership"];
 
 const TOOLS = ["bible.search", "bible.word", "bible.cross-references", "bible.timeline", "bible.atlas", "questions.which-view"];
+
+/** Why the site exists, in James's own words: HOME_WHY without its last sentence (the live hero's line). */
+const WHY = HOME_WHY.replace(HOME_LINE, "").trim();
+const [WHY_ASKS, ...WHY_ANSWERS] = WHY.split(/(?<=\?)\s+/);
+
+/** The page's sections, for the rail that shows where a reader is. */
+const RAIL: [string, string][] = [
+  ["explore", "Eight ways in"],
+  ["films", "Films"],
+  ["paths", "Learning paths"],
+  ["ask", "Hard questions"],
+  ["shelf", "The Study Bible"],
+  ["tools", "Bible tools"],
+  ["history", "Church history"],
+  ["desk", "Essays and books"],
+  ["together", "Families and churches"],
+];
 
 const count = (e: CatalogEntry) => (e.count ? `${e.count.n} ${e.count.of}` : "");
 
@@ -163,6 +181,39 @@ function PreviewNav() {
           ))}
         </ul>
       </div>
+    </nav>
+  );
+}
+
+/** A quiet rail on wide screens: the page's sections, the one in view marked. */
+function Rail() {
+  const [at, setAt] = useState("");
+  useEffect(() => {
+    if (typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) if (e.isIntersecting) setAt(e.target.id);
+      },
+      { rootMargin: "-45% 0px -50% 0px" },
+    );
+    for (const [id] of RAIL) {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    }
+    return () => io.disconnect();
+  }, []);
+  return (
+    <nav aria-label="On this page" className="pv-rail">
+      <ol>
+        {RAIL.map(([id, name]) => (
+          <li key={id}>
+            <a href={`#${id}`} aria-current={at === id ? "true" : undefined}>
+              <span className="pv-rail__name">{name}</span>
+              <span className="pv-rail__tick" aria-hidden="true" />
+            </a>
+          </li>
+        ))}
+      </ol>
     </nav>
   );
 }
@@ -272,12 +323,14 @@ export default function PreviewHome() {
 
       {/* THE HERO: the brief's promise, Find, the roads, and Plate I. */}
       <section className="pv-hero" aria-labelledby="pv-title">
+        <div className="pv-hero__top">
+          <p className="home-eyebrow">Christian education for everyday life</p>
+          <h1 id="pv-title" className="pv-hero__title">
+            <span>Know what you believe.</span> <span>Understand why.</span> <span>Learn to live it.</span>
+          </h1>
+        </div>
         <div className="pv-hero__inner">
           <div className="pv-hero__words">
-            <p className="home-eyebrow">Christian education for everyday life</p>
-            <h1 id="pv-title" className="pv-hero__title">
-              Know what you believe. Understand why. Learn to live it.
-            </h1>
             <p className="pv-hero__line">
               The Bible, theology, church history and life's hardest questions, taught carefully and honestly by a pastor who came to faith from atheism. Free to read, with nothing to sign up for.
             </p>
@@ -314,6 +367,19 @@ export default function PreviewHome() {
         </ul>
       </section>
 
+      {/* WHY: James's own words (lib/positioning.ts, HOME_WHY), set large. */}
+      <section className="pv-why" aria-label="Why LiveWell exists">
+        <blockquote className="pv-why__in">
+          <p className="pv-why__asks">{WHY_ASKS}</p>
+          <p className="pv-why__answers">{WHY_ANSWERS.join(" ")}</p>
+          <footer>
+            <Link href="/about">James Bell</Link>
+          </footer>
+        </blockquote>
+      </section>
+
+      <Rail />
+
       {/* THE ATLAS: eight disciplines, one open at a time. */}
       <section id="explore" className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-explore">
         <div className="home-wrap">
@@ -329,7 +395,7 @@ export default function PreviewHome() {
       </section>
 
       {/* THE FILMS */}
-      <section className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-films">
+      <section id="films" className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-films">
         <div className="home-wrap">
           <Head id="pv-films" eyebrow="Bible films" title="Press play on the whole story" lede="Short narrated films in the site's engraved hand: the big story, the books, the big ideas and the questions children ask." />
           <Piece name="reel">
@@ -361,7 +427,7 @@ export default function PreviewHome() {
       </section>
 
       {/* A HARD QUESTION, ASKED STRAIGHT */}
-      <section className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-ask">
+      <section id="ask" className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-ask">
         <div className="home-wrap home-two">
           <PlateFrame className="home-two__art">
             <Plate name="tomb" />
@@ -379,7 +445,7 @@ export default function PreviewHome() {
       </section>
 
       {/* THE STUDY BIBLE: all 66 books on one shelf. */}
-      <section className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-shelf">
+      <section id="shelf" className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-shelf">
         <div className="home-wrap">
           <Head id="pv-shelf" eyebrow="The Study Bible" title="The whole Bible on one shelf" link={{ href: "/study/bible", label: "Open the Study Bible" }} />
           <Piece name="shelf">
@@ -389,7 +455,7 @@ export default function PreviewHome() {
       </section>
 
       {/* TOOLS */}
-      <section className="home-sec pv-sec" aria-labelledby="pv-tools">
+      <section id="tools" className="home-sec pv-sec" aria-labelledby="pv-tools">
         <div className="home-wrap">
           <Head id="pv-tools" eyebrow="Bible tools" title="Study the text yourself" link={{ href: "/tools", label: "Every tool" }} />
           <ul className="pv-tools">
@@ -412,7 +478,7 @@ export default function PreviewHome() {
       </section>
 
       {/* CHURCH HISTORY */}
-      <section className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-history">
+      <section id="history" className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-history">
         <div className="home-wrap">
           <Head id="pv-history" eyebrow="Church history" title="Two thousand years on one line" link={{ href: "/theology/history", label: "The whole course" }} />
           <Piece name="history">
@@ -422,7 +488,7 @@ export default function PreviewHome() {
       </section>
 
       {/* PUBLISHING: the latest essays and the books. */}
-      <section className="home-sec pv-sec" aria-labelledby="pv-desk">
+      <section id="desk" className="home-sec pv-sec" aria-labelledby="pv-desk">
         <div className="home-wrap">
           <Head id="pv-desk" eyebrow="Publishing" title="Essays and books" link={{ href: "/writing", label: "All the essays" }} />
           <div className="pv-desk">
@@ -445,7 +511,7 @@ export default function PreviewHome() {
       </section>
 
       {/* FAMILIES AND CHURCHES */}
-      <section className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-together">
+      <section id="together" className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-together">
         <div className="home-wrap">
           <Head id="pv-together" eyebrow="Families and churches" title="For the table and the room" />
           <div className="pv-pair">

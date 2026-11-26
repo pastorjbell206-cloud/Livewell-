@@ -26,12 +26,43 @@
 .pv-nav__dn{display:block;font-family:var(--F);font-size:22px;line-height:1.1;letter-spacing:-.01em}
 .pv-nav__dl{display:block;margin-top:4px;font-family:var(--U);font-size:13px;line-height:1.45;color:var(--ink-muted)}
 
-/* The hero. */
-.pv-hero{background:var(--bone);color:var(--ink);padding:var(--s-6) var(--gutter) 0}
-.pv-hero__inner{max-width:var(--w-default);margin:0 auto;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s-6);align-items:center}
-.pv-hero__title{font-family:var(--F);font-weight:400;font-size:var(--fs-display);line-height:.98;letter-spacing:-.025em;margin:14px 0 var(--s-3);max-width:15ch;text-wrap:balance}
+/* The hero: three sentences, three lines; then the words beside Plate I. */
+.pv-hero{background:var(--bone);color:var(--ink);padding:var(--s-6) var(--gutter) 0;overflow:hidden}
+.pv-hero__top,.pv-hero__inner{max-width:var(--w-default);margin:0 auto}
+.pv-hero__title{font-family:var(--F);font-weight:400;font-size:clamp(2.5rem,1rem + 6.4vw,6.25rem);line-height:.95;letter-spacing:-.03em;margin:16px 0 0}
+.pv-hero__title span{display:block}
+.pv-hero__title span:nth-child(2){padding-left:.9em}
+.pv-hero__title span:nth-child(3){padding-left:1.8em}
+.pv-hero__inner{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s-6);align-items:end;margin-top:var(--s-5)}
 .pv-hero__line{font-family:var(--font-reading);font-size:clamp(1.0625rem,1rem + .3vw,1.25rem);line-height:1.55;color:var(--ink);max-width:40ch;margin:0 0 var(--s-3)}
 .pv-hero .home-find{margin-top:0}
+.pv-hero__art .lw-frame__in{aspect-ratio:1200 / 640}
+/* The one moment of the page: the sun comes up over the town, once. */
+.pv-hero__art .pl-m,.pv-hero__art .pl-m+.pl-l{animation:pv-sunrise 2.6s var(--ease) .2s both}
+.pv-hero__art path:has(+.pl-m){animation:pv-rays 1.6s ease-out 1.9s both}
+@keyframes pv-sunrise{from{transform:translateY(96px)}to{transform:none}}
+@keyframes pv-rays{from{opacity:0}to{opacity:1}}
+
+/* Why: his words, large, on the dark. */
+.pv-why{background:var(--charcoal);color:var(--charcoal-fg);padding:var(--s-7) var(--gutter)}
+.pv-why__in{max-width:var(--w-content);margin:0 auto;padding:0 0 0 var(--s-4);border:0;border-left:2px solid var(--mustard);background:none;font-style:normal;display:flex;flex-direction:column;gap:var(--s-3)}
+.pv-why__asks{font-family:var(--F);font-weight:400;font-size:clamp(1.75rem,1.2rem + 2.4vw,3.25rem);line-height:1.08;letter-spacing:-.02em;font-style:normal;margin:0;padding:0;text-wrap:balance}
+.pv-why__answers{padding:0;font-family:var(--F);font-style:italic;font-size:clamp(1.375rem,1.1rem + 1.2vw,2.125rem);line-height:1.2;color:var(--charcoal-fg-muted);margin:0}
+.pv-why footer{margin:0;padding:0;font-style:normal;font-family:var(--U);font-size:14px;font-weight:500}
+.pv-why footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--charcoal-fg);text-decoration-color:var(--mustard);text-underline-offset:.25em}
+
+/* The rail: where you are on the page (wide screens only). */
+.pv-rail{display:none}
+@media (min-width:1500px){
+  .pv-rail{display:block;position:fixed;left:18px;top:50%;transform:translateY(-50%);z-index:20;mix-blend-mode:difference}
+  .pv-rail ol{list-style:none;margin:0;padding:0}
+  .pv-rail a{display:flex;flex-direction:row-reverse;justify-content:flex-end;align-items:center;gap:10px;height:26px;color:var(--charcoal-fg);text-decoration:none}
+  .pv-rail__tick{display:block;width:14px;height:2px;background:currentColor;opacity:.45;transition:width .3s var(--ease),opacity .3s var(--ease)}
+  .pv-rail__name{font-family:var(--U);font-size:12px;font-weight:500;opacity:0;transform:translateX(-6px);transition:opacity .25s var(--ease),transform .25s var(--ease)}
+  .pv-rail a[aria-current] .pv-rail__tick{width:30px;opacity:1}
+  .pv-rail a[aria-current] .pv-rail__name,.pv-rail:hover .pv-rail__name,.pv-rail a:focus-visible .pv-rail__name{opacity:1;transform:none}
+}
+
 .pv-ledger{max-width:var(--w-default);margin:var(--s-6) auto 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1.5px solid var(--ink)}
 .pv-ledger li+li{border-left:1px solid var(--border)}
 .pv-ledger__item{display:flex;flex-direction:column;height:100%;padding:18px 18px 26px;color:var(--ink);text-decoration:none}
@@ -74,13 +105,14 @@
 .pv-reel__n{font-size:12px;opacity:.7}
 .pv-reel__about{font-family:var(--font-reading);font-size:17px;line-height:1.5;color:var(--charcoal-fg-muted);margin:var(--s-2) 0 var(--s-3)}
 .pv-reel__body{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s-5);align-items:start}
-.pv-reel__lead{display:block;color:var(--charcoal-fg);text-decoration:none}
-.pv-reel__screen{position:relative;display:grid;place-items:center;aspect-ratio:4 / 3;background:var(--art-paper);border:1.5px solid var(--charcoal-fg);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.pv-reel__lead{display:block;color:var(--charcoal-fg)}
+.pv-reel__body[hidden]{display:none}
+.pv-reel__screen{position:relative;display:grid;place-items:center;width:100%;padding:0;cursor:pointer;aspect-ratio:4 / 3;background:var(--art-paper);border:1.5px solid var(--charcoal-fg);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
 .pv-reel__screen .lw-roundel{width:58%}
-.pv-reel__lead:hover .pv-reel__screen,.pv-reel__lead:focus-visible .pv-reel__screen{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--mustard)}
+.pv-reel__screen:hover,.pv-reel__screen:focus-visible{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--mustard)}
 .pv-reel__play{position:absolute;right:16px;bottom:16px;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--charcoal);color:var(--charcoal-fg);border:2px solid var(--mustard)}
 .pv-reel__play svg{margin-left:3px}
-.pv-reel__title{display:block;font-family:var(--F);font-size:clamp(1.75rem,1.3rem + 1.4vw,2.5rem);line-height:1.05;letter-spacing:-.015em;margin-top:var(--s-3)}
+.pv-reel__title{display:block;color:inherit;text-decoration:none;font-family:var(--F);font-size:clamp(1.75rem,1.3rem + 1.4vw,2.5rem);line-height:1.05;letter-spacing:-.015em;margin-top:var(--s-3)}
 .pv-reel__line{display:block;font-family:var(--font-reading);font-size:17px;line-height:1.5;color:var(--charcoal-fg-muted);margin-top:10px}
 .pv-reel__list{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--charcoal-fg)}
 .pv-reel__row{display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-bottom:1px solid var(--charcoal-line);color:var(--charcoal-fg);text-decoration:none}
@@ -88,7 +120,17 @@
 .pv-reel__rtitle{display:block;font-family:var(--F);font-size:22px;line-height:1.15}
 .pv-reel__rline{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;font-family:var(--U);font-size:13.5px;line-height:1.45;color:var(--charcoal-fg-muted);margin-top:2px}
 .pv-reel__row:hover .pv-reel__rtitle,.pv-reel__row:focus-visible .pv-reel__rtitle{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.pv-reel__title:hover{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.14em}
+.pv-reel__play{transition:transform .3s var(--ease)}
+.pv-reel__screen:hover .pv-reel__play{transform:scale(1.1)}
 .pv-reel__all{margin-top:var(--s-4)}
+/* A film playing in place: the Explorer's player on its own paper. */
+.pv-screening{background:var(--bone);color:var(--ink);border:1.5px solid var(--charcoal-fg);box-shadow:8px 8px 0 var(--mustard);padding:clamp(14px,2.4vw,28px);outline:none;animation:pv-open .45s var(--ease)}
+.pv-screening__bar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:var(--s-2)}
+.pv-screening__now{font-family:var(--U);font-size:13px;font-weight:500;color:var(--ink-muted)}
+.pv-screening__close{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;background:none;border:1.5px solid var(--borderdk);border-radius:var(--radius-pill);font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink);cursor:pointer}
+.pv-screening__status{font-family:var(--U);font-size:15px;color:var(--ink-muted);min-height:320px}
+.pv-screening__own{display:inline-flex;align-items:center;min-height:44px;margin-top:var(--s-2);font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink);text-decoration-color:var(--mustard);text-underline-offset:.2em}
 
 /* The road of learning paths. */
 .pv-road{list-style:none;margin:var(--s-2) 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));position:relative}
@@ -136,7 +178,7 @@
 .pv-close__help a{display:inline-flex;align-items:center;min-height:44px;color:var(--charcoal-fg);font-weight:500;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 
 @media (prefers-reduced-motion:reduce){
-  .pv-atlas__spread{animation:none}
+  .pv-atlas__spread,.pv-screening,.pv-hero__art .pl-m,.pv-hero__art .pl-m+.pl-l,.pv-hero__art path:has(+.pl-m){animation:none}
   .pv-atlas__tab,.pv-road__dot,.pv-reel__screen,.pv-nav__plate,.pv-tool__icon{transition:none}
 }
 
@@ -157,11 +199,17 @@
   .pv-nav__d{grid-template-columns:48px minmax(0,1fr)}
   .pv-nav__plate{width:48px}
   .pv-nav__dn{font-size:20px}
-  .pv-hero{padding-top:var(--s-4)}
-  .pv-hero__inner{grid-template-columns:minmax(0,1fr);gap:var(--s-4)}
-  .pv-hero__art{order:-1;margin:0 calc(var(--gutter) * -1)}
+  .pv-hero{padding-top:0;display:flex;flex-direction:column}
+  .pv-hero__top{order:2;margin:var(--s-3) 0 0;width:100%}
+  .pv-hero__inner{display:contents}
+  .pv-hero__art{order:1;margin:0 calc(var(--gutter) * -1)}
   .pv-hero__art .lw-cap{display:none}
-  .pv-hero__title{max-width:none}
+  .pv-hero__words{order:3;margin-top:var(--s-3)}
+  .pv-hero__title span:nth-child(n){padding-left:0}
+  .pv-ledger{order:4;width:100%}
+  .pv-screening{box-shadow:4px 4px 0 var(--mustard)}
+  .pv-why{padding:var(--s-6) var(--gutter)}
+  .pv-why__in{padding-left:var(--s-3)}
   .pv-ledger{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:var(--s-5)}
   .pv-ledger li{border-left:0!important}
   .pv-ledger li:nth-child(even){border-left:1px solid var(--border)!important}
