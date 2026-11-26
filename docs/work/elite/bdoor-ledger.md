@@ -21850,3 +21850,24 @@ Cut in chapter 1: nothing drawn from Nahum to the New Testament.
 | Isaiah 5:29 paraphrased; Ezekiel 29:3 (its formula) | 11-13 | BSB | BSB text |
 
 Cut in chapter 2: an unsourced line identifying the messengers of 2:13 was cut before commit. The scene of the captive women (2:7) is told in the BSB's own words and not dwelt on.
+
+## The plain notes on Nahum 3 (2026-11-25)
+
+`client/public/bible/notes/nahum/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; 3:2-6 paraphrased (the dead of 3:3 not described); 3:7 (its last question) | 1-7 | BSB | BSB text |
+| Hoy as a funeral cry; nouns without verbs; harlot and sorceress as alliances and divination; 3:5 and public shaming and stripped captives; the prophets' vocabulary of disgrace; Isaiah 47:2-3 | 1-7 | nahum/3.json `cultural`, `literary` | Repository |
+| Isaiah 47:2-3; Nahum 2:13 (its formula) | 1-7 | nahum/3.json `cultural`; BSB | Repository; BSB text |
+| The hard note: a city's disgrace; painful for readers who have known abuse; a picture of an empire brought low; no warrant to shame, strip or harm a woman, or anyone | 1-7 `hard` | nahum/3.json `cultural`; the brief | Repository; stated as the brief asks |
+| The care line ('If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn.') | 1-7 `hard` | deuteronomy/plain/13.json and nine more | Reused whole, word for word; Find Help named; no phone number |
+| 3:8; 3:9 paraphrased; 3:10 (its first sentence; the rest named and not described); 3:11-13 paraphrased | 8-13 | BSB | BSB text; the atrocities named, not described |
+| No-Amon and Amun; Thebes the religious capital; the Cushite dynasty; Put and Libya; Ashurbanipal's sack about 663 BC in Assyrian inscriptions; Assyria's own records of such treatment; the question as a mirror | 8-13 | nahum/3.json `historical` | Repository |
+| Jeremiah 46:25; Ezekiel 30:14-16 | 8-13 | BSB | BSB text |
+| 3:14 (in double quotes, for its exclamation); 3:15-17 paraphrased; 3:18 (its first sentence); 3:19 | 14-19 | BSB | BSB text |
+| Siege water and mud brick; the locust pictures turned twice; locusts on the walls; the closing question beside Jonah's; 612 BC and no mourning; the empire gone within a generation | 14-19 | nahum/3.json `cultural`, `literary`, `historical` | Repository |
+| Jonah 4:11 (its clause); Ezekiel 18:23 (its question) | 14-19 | nahum/3.json `hard`, `literary`; BSB | Repository; BSB text |
+| The hard note: the deliberate difference from Jonah; a later time, spoken to the victims; both sides of Sinai's words; the applause from the nations, not God's pleasure; Ezekiel 18:23; the question as a weighing; the canon's pairing; no gloating; no key to any people's suffering; no warrant to wish destruction; the warning to every power | 14-19 `hard` | nahum/3.json `hard`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+
+Cut in chapter 3: the deep note's line to Revelation 18, which the New Testament does not draw from Nahum.
