@@ -25059,3 +25059,18 @@ Cut in chapter 14: nothing.
 | 1 Samuel 12:23, 2 Kings 21:16, Ezekiel 3:3, Psalm 88:14 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 15: nothing.
+
+## The plain notes on Jeremiah 16 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 16:1-21 (verses 14-15 paraphrased around inner speech marks) | all | BSB | BSB text |
+| Marriage expected; the unmarried prophet as a sign; funeral meal and cup | 1-13 | jeremiah/16.json `cultural` | Repository |
+| Undated, Jehoiakim; fulfilled in 588 to 586 BC | 1-13 | jeremiah/16.json `historical` | Repository |
+| Why the commands; mercy; not a rule for others | 1-13 `hard` | jeremiah/16.json `hard` | Repository |
+| The new exodus; Cyrus 539 BC; scattered communities and fuller fulfillment | 14-21 | jeremiah/16.json `historical` | Repository |
+| 1 Corinthians 7:26, Jeremiah 7:34, Isaiah 43:18 (clauses); Deuteronomy 14:1 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 16: nothing. The fishermen of verse 16 are left without Matthew 4:19, which the New Testament does not tie to this verse.
