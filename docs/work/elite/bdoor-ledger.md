@@ -24498,3 +24498,17 @@ Cut on the book page: a claim that Jeremiah uses the word for falsehood more tha
 | Ezra 1:1, Deuteronomy 18:18, Galatians 1:15, Joshua 1:5 (clauses); Jeremiah 38:13 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 1: the deep note's lines to Christ the New Testament does not draw (Acts 3:22-23 and John 1:14 beside the call); Galatians 1:15 is given only as Paul's own words about his call.
+
+## The plain notes on Jeremiah 2 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1-37 (verse 27's cry paraphrased around inner speech marks) | all | BSB | BSB text |
+| Early preaching under Josiah; Assyria before 609 BC; Ahaz and later kings; Memphis and Tahpanhes; the shaved head | 1-28 | jeremiah/2.json `historical` | Repository |
+| Springs and cisterns; Baal, hill shrines, poles and stones; the lawsuit form | 1-28 | jeremiah/2.json `cultural`, `summary` | Repository |
+| The city-and-covenant statement; the HURT care line, byte for byte | 14-28 `hard` | the coordinator's direction; carelines.json | care.mjs |
+| Hosea 2:15, Psalm 115:8, Isaiah 30:2, 1 John 1:8, Ezekiel 29:6 (clauses); Psalm 80:8 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 2: John 4 and John 7 on living water, which the New Testament does not tie to 2:13; a claim about the word for worthless and a clause about the law on thieves, both unsourced, cut before commit.
