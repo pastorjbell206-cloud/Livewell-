@@ -1,0 +1,174 @@
+{
+  "slug": "book-2-samuel",
+  "title": "2 Samuel: the king and the promise",
+  "group": "books",
+  "status": "finished",
+  "book": "2-samuel",
+  "mark": "book-2-samuel",
+  "line": {
+    "younger": "The book of King David, God's great promise, and a family torn apart: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "2 Samuel as a whole book: the highest and most honest picture of a king, a crown not seized, the promise of a house, Nathan's word, the sword in David's house, and where to begin."
+  },
+  "poster": "A king in a gold crown stands before a walled city on a hill, its gate open, with people coming up the road to it.",
+  "frames": [
+    {
+      "id": "king",
+      "name": "King David",
+      "still": "A king in a gold crown stands before a walled city on a hill, its gate open, with people coming up the road to it.",
+      "younger": "Second Samuel tells the story of King David. The shepherd becomes king, and God makes him a wonderful promise. Then David does something very wrong, and his own family is torn apart.",
+      "older": "Second Samuel tells David's reign, from the day after Saul's death to his last years. It gives the Bible both its highest picture of a king and its most honest: a king whom God chose and loved, and a book that will not hide what he did with his power.",
+      "verse": {
+        "ref": "2 Samuel 5:3",
+        "text": "And they anointed him king over Israel."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in five panels, with a harp, a city wall, a crown, a torn cloak and a scroll of songs over them. A gold rule lies under the narrow middle panel.",
+      "younger": "The book has five parts. David becomes king. His kingdom grows strong, and God makes him a promise. Then, in the middle, David's great sin. After it come troubles in his family. And last, songs and stories from his life.",
+      "older": "Five parts: king over Judah; the kingdom established, with Jerusalem, the ark and the promise; David's sin and Nathan's rebuke; the troubles in David's house; and a closing collection. Chapters 11 and 12 are the hinge.",
+      "verse": {
+        "ref": "2 Samuel 8:15",
+        "text": "David reigned over all Israel and administered justice and righteousness"
+      }
+    },
+    {
+      "id": "crown",
+      "name": "Watch for: a crown not seized",
+      "still": "Priests carry the gold-covered chest up a road toward the city, and in front of it a man in a plain linen garment dances with his arms raised.",
+      "younger": "Watch how David becomes king. He does not grab the crown. He even weeps for Saul, the king who chased him. And when God's ark comes to Jerusalem, David dances with all his might.",
+      "older": "The throne comes to David without his grasping: he mourns Saul and Jonathan, and each man who kills a rival to win his favor is rebuked. When the ark comes to Jerusalem, David dances with all his might before the LORD.",
+      "verse": {
+        "ref": "2 Samuel 6:14",
+        "text": "And David, wearing a linen ephod, danced with all his might before the LORD"
+      }
+    },
+    {
+      "id": "house",
+      "name": "Watch for: a house for David",
+      "still": "At night a king kneels outside a tent under the stars. One star is gold.",
+      "younger": "Watch for a promise. David wants to build a house for God. But God says he will build David a house: a family of kings that will last forever. Christians believe this promise comes true in Jesus, the son of David.",
+      "older": "David wants to build God a house, and God turns the offer around: he will build David a house, a line of kings, its throne established forever. Jews before Christ read it of a son of David to come; Christians confess it kept in Jesus, and the two part over how.",
+      "verse": {
+        "ref": "2 Samuel 7:16",
+        "text": "Your house and kingdom will endure forever before Me"
+      }
+    },
+    {
+      "id": "nathan",
+      "name": "Watch for: “You are that man!”",
+      "still": "In a palace hall a prophet stands and points at a king seated on his throne. The king's crown is gold.",
+      "younger": "Watch for the turning point. At the height of his power, David does something very wrong and tries to hide it. God sends a prophet named Nathan, who tells a story and says, “You are that man!” David does not argue. He says he has sinned.",
+      "older": "David takes Bathsheba, the wife of Uriah, and has Uriah killed; the text places the whole responsibility on David. Nathan, with nothing but a word from God, names the king's crime to his face. David confesses, and is forgiven.",
+      "verse": {
+        "ref": "2 Samuel 12:13",
+        "text": "Then David said to Nathan, “I have sinned against the LORD.”"
+      }
+    },
+    {
+      "id": "sword",
+      "name": "Watch for: the sword in David's house",
+      "still": "A king walks barefoot up a hillside path with his head covered, weeping, and his people follow him with their heads covered too.",
+      "younger": "Watch what happens next. David's sin sets loose great sadness in his own family. His son Absalom turns against him, and David has to leave his city, weeping. Even so, he still loves his son.",
+      "older": "After it, the sword never leaves David's house: the rape of Tamar, a son murdered, Absalom's revolt, and a father weeping for the son who tried to take his throne. The same king, the same God and the same promise stand on both sides of chapter 11.",
+      "verse": {
+        "ref": "2 Samuel 18:33",
+        "text": "“O my son Absalom! My son, my son Absalom!"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter 7, God's promise to David. Then chapter 12, where Nathan speaks to the king. Read the hard chapters with a grown-up you trust.",
+      "older": "Start with chapter 7, slowly, then chapters 11 and 12, with Psalm 51 beside them. The book gives no leader a shield against correction. Its own prophet named the king's sin.",
+      "verse": {
+        "ref": "2 Samuel 22:2",
+        "text": "The LORD is my rock, my fortress, and my deliverer."
+      }
+    }
+  ],
+  "think": {
+    "younger": "When Nathan told David the truth, David said, “I have sinned.” Why is it hard to say sorry, and why does it matter?",
+    "older": "A prophet with nothing but a word from God named the king's crime to his face. Who has the courage to tell you the truth, and do you let them?"
+  },
+  "read": [
+    {
+      "label": "2 Samuel 1",
+      "href": "/study/bible/2-samuel/1"
+    },
+    {
+      "label": "2 Samuel 5",
+      "href": "/study/bible/2-samuel/5"
+    },
+    {
+      "label": "2 Samuel 6",
+      "href": "/study/bible/2-samuel/6"
+    },
+    {
+      "label": "2 Samuel 7",
+      "href": "/study/bible/2-samuel/7"
+    },
+    {
+      "label": "2 Samuel 8",
+      "href": "/study/bible/2-samuel/8"
+    },
+    {
+      "label": "2 Samuel 11",
+      "href": "/study/bible/2-samuel/11"
+    },
+    {
+      "label": "2 Samuel 12",
+      "href": "/study/bible/2-samuel/12"
+    },
+    {
+      "label": "2 Samuel 18",
+      "href": "/study/bible/2-samuel/18"
+    },
+    {
+      "label": "2 Samuel 22",
+      "href": "/study/bible/2-samuel/22"
+    }
+  ],
+  "stops": [
+    "kingdom"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Readers weigh several of the book's stories in more than one way: David's words for Jonathan, heard by most as covenant friendship and by some as a romantic bond; Uzzah's death; and how the promise of a throne forever stood after the exile. Jewish and Christian readers part over how the promise to David is fulfilled. Readers have asked whether Bathsheba was willing or a victim of the king's power; the text places the whole responsibility on David, and nothing in the story blames her. A word for anyone who has been sexually assaulted. What was done to you was wrong, and it was not your fault. Where you were, what you wore, whether you fought back: none of it makes it your fault. Please tell someone you trust and get help. The Find Help page on this site lists places to turn. The book gives no nation, party or leader a warrant for violence against anyone, and no leader a shield against correction. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      {
+        "label": "the 2 Samuel page of the Study Bible",
+        "href": "/study/bible/2-samuel"
+      },
+      {
+        "label": "Find Help",
+        "href": "/help"
+      }
+    ]
+  },
+  "care": "This stop tells of a king who did something very wrong and hurt other people badly. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "2 Samuel in the Study Bible: the whole book",
+      "href": "/study/bible/2-samuel"
+    },
+    {
+      "label": "The Kingdom: a stop on the map",
+      "href": "/study/explorer/kingdom"
+    },
+    {
+      "label": "1 Samuel: the heart God sees (a moving picture)",
+      "href": "/study/explorer/watch/book-1-samuel"
+    },
+    {
+      "label": "The king (a moving picture)",
+      "href": "/study/explorer/watch/the-king"
+    }
+  ],
+  "end": {
+    "label": "Start reading: 2 Samuel 7",
+    "href": "/study/bible/2-samuel/7"
+  }
+}

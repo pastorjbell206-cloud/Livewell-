@@ -1116,6 +1116,51 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M70,64c6,-8 8,-14 4,-22c-6,6 -10,12 -4,22ZM28,72c-10,-2 -10,10 2,6" />
     </>
   ),
+  /* Leviticus: a tent in the middle of a camp, a gold light over it. */
+  "book-leviticus": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M38,30c0,-8 10,-10 14,-6c4,-6 14,-4 14,2c8,0 10,8 4,10c-10,2 -28,2 -32,-6Z" />
+      <path className="pl-l" d="M38,30c0,-8 10,-10 14,-6c4,-6 14,-4 14,2c8,0 10,8 4,10c-10,2 -28,2 -32,-6Z" />
+      <Shape d="M28,84L36,58L50,48L64,58L72,84Z" tone="b" off={0.8} />
+      <path className="pl-paper" d="M45,84l3,-18h4l3,18Z" />
+      <path className="pl-l" d="M45,84l3,-18h4l3,18ZM10,84l6,-14l6,14M78,84l6,-14l6,14" />
+    </>
+  ),
+  /* Numbers: a tall cloud over a line of tents in the desert, a gold star. */
+  "book-numbers": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M78,14l2,6l6,2l-6,2l-2,6l-2,-6l-6,-2l6,-2Z" />
+      <path className="pl-l" d="M78,14l2,6l6,2l-6,2l-2,6l-2,-6l-6,-2l6,-2Z" />
+      <path className="pl-l" d="M30,52c-8,0 -10,-10 -2,-12c-2,-10 10,-14 14,-6c4,-8 16,-6 16,2c8,0 8,10 0,12c-8,2 -20,2 -28,4Z" />
+      <Shape d="M12,84l8,-14l8,14ZM34,84l8,-14l8,14ZM56,84l8,-14l8,14Z" tone="c" off={0.8} />
+    </>
+  ),
+  /* Deuteronomy: a doorpost with the words fixed to it, the case gold. */
+  "book-deuteronomy": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M24,84V24H76V84H62V38H38V84Z" tone="c" off={0.8} />
+      <path className="pl-m" d="M30,46h5v18h-5Z" />
+      <path className="pl-l" d="M30,46h5v18h-5Z" />
+      <path className="pl-l" d="M24,24L50,12L76,24" />
+    </>
+  ),
+  /* 2 Samuel: a crown over a harp, the crown gold. */
+  "book-2-samuel": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M34,30v-14l8,8l8,-12l8,12l8,-8v14Z" />
+      <path className="pl-l" d="M34,30v-14l8,8l8,-12l8,12l8,-8v14Z" />
+      <Shape d="M32,84L36,42C50,36 62,44 68,56L60,84Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M40,82l2,-36M48,82l1,-34M56,82l0,-26" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

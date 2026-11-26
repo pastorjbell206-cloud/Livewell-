@@ -433,6 +433,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole of 1 John in seven moving pictures: churches that had been shaken, how it is laid out, hands that touched, three marks of knowing God, sin and forgiveness, God is love, and where to start reading.",
     },
+    "book-leviticus": {
+      title: "Leviticus: living near a holy God: Bible Explorer",
+      description:
+        "The whole book of Leviticus in seven moving pictures: the question it answers, how it is laid out, gifts brought near, holy and clean, the Day of Atonement, love of neighbor, and where to start reading.",
+    },
+    "book-numbers": {
+      title: "Numbers: forty years in the wilderness: Bible Explorer",
+      description:
+        "The whole book of Numbers in seven moving pictures: the wilderness, two generations, God at the center of the camp, the refusal at Kadesh, Balaam's blessing, the new generation, and where to start reading.",
+    },
+    "book-deuteronomy": {
+      title: "Deuteronomy: love the LORD with all your heart: Bible Explorer",
+      description:
+        "The whole book of Deuteronomy in seven moving pictures: Moses' farewell, three addresses, the Shema, chosen in love, laws that take the side of the weak, the call to choose life, and where to start reading.",
+    },
+    "book-2-samuel": {
+      title: "2 Samuel: the king and the promise: Bible Explorer",
+      description:
+        "The whole of 2 Samuel in seven moving pictures: King David, five parts, a crown not seized, the promise of a house, Nathan's word to the king, the sword in David's house, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

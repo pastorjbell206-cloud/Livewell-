@@ -1739,6 +1739,10 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-colossians",
     "book-1-peter",
     "book-1-john",
+    "book-leviticus",
+    "book-numbers",
+    "book-deuteronomy",
+    "book-2-samuel",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2558,5 +2562,66 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toMatch(/takes no side among the readings/);
     expect(text(f)).not.toMatch(/\b(pope|emperor|sultan|president|dictator|Rome is)\b/i);
     expect(f.frames.find(x => x.id === "touched")!.still).toContain("No one is drawn in the light.");
+  });
+
+  it("Leviticus draws no animal or blood, shames no one's body, and leaves the contested laws to the book page", () => {
+    const f = filmFile("book-leviticus");
+    expect(f.care).toBe(filmFile("grace").care);
+    const stills = f.frames.map(fr => fr.still).join(" ");
+    expect(stills).not.toMatch(/blood|goat|bull|lamb|ram\b|animal|altar|knife|fire|smoke|leper|sore|skin/i);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/blood|kill|die|dead|death|burn|flame|sex|discharge|leprosy|skin disease/i);
+    expect(f.frames.find(x => x.id === "clean")!.younger).toContain("Unclean does not mean bad.");
+    expect(f.frames.find(x => x.id === "clean")!.older).toContain("Unclean is not sinful");
+    expect(text(f)).not.toMatch(/abomination|detestable|18:22|20:13|homosexual|sodomy|unclean (people|person is a sinner)/i);
+    expect(f.differ?.text).toContain("nothing here gives anyone a reason for contempt toward any person");
+    expect(f.differ?.text).toContain("Your worth to God does not rise or fall with your body.");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(f.frames.find(x => x.id === "atonement")!.still).toContain("No one is drawn behind it.");
+  });
+
+  it("Numbers names its wars and draws none, and says at both levels in the book page's words that no page of it is a reason for violence", () => {
+    const f = filmFile("book-numbers");
+    expect(f.care).toBe(filmFile("book-joshua").care);
+    const line = "no one may use any page of this book as a reason for violence against anyone";
+    const nw = f.frames.find(x => x.id === "new")!;
+    expect(nw.younger).toContain("No one may use any page of this book as a reason for violence against anyone.");
+    expect(nw.older).toContain(line);
+    expect(f.differ?.text).toContain("they name no modern nation, people or conflict");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|spear|plague|snake|slaughter/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/spear|battle|plague|snake|serpent|body|bodies|sword|fire/i);
+    expect(text(f)).not.toMatch(/\b(Palestin|Gaza|State of Israel|Israel today|America|Iran)/i);
+  });
+
+  it("Deuteronomy names its hardest page at both levels in the book page's words, draws no war, and reads no one's loss as a curse", () => {
+    const f = filmFile("book-deuteronomy");
+    expect(f.care).toBe(filmFile("book-joshua").care);
+    const laws = f.frames.find(x => x.id === "laws")!;
+    expect(laws.younger).toContain("No one may use these chapters to justify violence against any person or people.");
+    expect(laws.older).toContain("No one may use these chapters to justify violence against any person or people.");
+    expect(f.frames.find(x => x.id === "choose")!.older).toContain("never God's verdict on one person's illness or loss");
+    expect(f.differ?.text).toContain("names no modern nation, people or conflict");
+    expect(f.differ?.text).toContain("The curses of chapter 28 never explain the sufferings of the Jewish people; that reading is false.");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|destroy/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|battle|army|fire|body|grave/i);
+  });
+
+  it("2 Samuel names Bathsheba, Tamar and Absalom at the older level only, in the book page's words, carries its word for anyone assaulted, and draws none of it", () => {
+    const f = filmFile("book-2-samuel");
+    expect(f.care).toBe(JSON.parse(fs.readFileSync(path.join(PUBLIC, "explorer/stops/kingdom.json"), "utf8")).care);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/Bathsheba|Uriah|Tamar|Amnon|rape|adultery|kill|murder|die|dead|death|blood|sword/i);
+    const older = f.frames.map(fr => fr.older).join(" ");
+    expect(older).toContain("the text places the whole responsibility on David");
+    expect(older).toContain("the rape of Tamar");
+    expect(older).not.toMatch(/bathing|roof|slept with|lay with|violated|forced|concubines/i);
+    expect(f.differ?.text).toContain("A word for anyone who has been sexually assaulted. What was done to you was wrong, and it was not your fault.");
+    expect(f.differ?.text).toContain("nothing in the story blames her");
+    expect(f.differ?.links?.map(l => l.href)).toContain("/help");
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/Bathsheba|bath|roof|Tamar|sword|battle|body|caught in/i);
   });
 });

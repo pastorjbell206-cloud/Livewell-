@@ -3675,6 +3675,446 @@
     }
    ]
   },
+  "book-leviticus": {
+   "title": {
+    "file": "book-leviticus/title.mp3",
+    "hash": "ab6519332c0e4209a2ed",
+    "seconds": 3.43,
+    "bytes": 21236
+   },
+   "younger": [
+    {
+     "id": "near",
+     "file": "book-leviticus/younger/01-near.mp3",
+     "hash": "e31a4eca8d0e2ab15462",
+     "seconds": 25.59,
+     "bytes": 154148
+    },
+    {
+     "id": "layout",
+     "file": "book-leviticus/younger/02-layout.mp3",
+     "hash": "0454c9c8920ac82e9ab7",
+     "seconds": 26.05,
+     "bytes": 156884
+    },
+    {
+     "id": "gifts",
+     "file": "book-leviticus/younger/03-gifts.mp3",
+     "hash": "a11c6081b5e7fb2d42b7",
+     "seconds": 24.66,
+     "bytes": 148532
+    },
+    {
+     "id": "clean",
+     "file": "book-leviticus/younger/04-clean.mp3",
+     "hash": "9b63a8bb26179ee23774",
+     "seconds": 26.75,
+     "bytes": 161060
+    },
+    {
+     "id": "atonement",
+     "file": "book-leviticus/younger/05-atonement.mp3",
+     "hash": "589fab04fea71736af1a",
+     "seconds": 24.63,
+     "bytes": 148388
+    },
+    {
+     "id": "neighbor",
+     "file": "book-leviticus/younger/06-neighbor.mp3",
+     "hash": "8f075e56b7f62e593ab2",
+     "seconds": 26.81,
+     "bytes": 161492
+    },
+    {
+     "id": "start",
+     "file": "book-leviticus/younger/07-start.mp3",
+     "hash": "3478202bf4a197daf6df",
+     "seconds": 24.15,
+     "bytes": 145508
+    }
+   ],
+   "older": [
+    {
+     "id": "near",
+     "file": "book-leviticus/older/01-near.mp3",
+     "hash": "edeba973c0ea817d4f72",
+     "seconds": 26.88,
+     "bytes": 161924
+    },
+    {
+     "id": "layout",
+     "file": "book-leviticus/older/02-layout.mp3",
+     "hash": "2ba5be203e441e412b52",
+     "seconds": 25.6,
+     "bytes": 154148
+    },
+    {
+     "id": "gifts",
+     "file": "book-leviticus/older/03-gifts.mp3",
+     "hash": "1667a8ff939915ed3033",
+     "seconds": 25.95,
+     "bytes": 156308
+    },
+    {
+     "id": "clean",
+     "file": "book-leviticus/older/04-clean.mp3",
+     "hash": "f2d8750de2f437a02ee4",
+     "seconds": 25.4,
+     "bytes": 152996
+    },
+    {
+     "id": "atonement",
+     "file": "book-leviticus/older/05-atonement.mp3",
+     "hash": "8016363fc869b53cfc89",
+     "seconds": 28.22,
+     "bytes": 169844
+    },
+    {
+     "id": "neighbor",
+     "file": "book-leviticus/older/06-neighbor.mp3",
+     "hash": "fb05fe34c74712c6bf95",
+     "seconds": 27.39,
+     "bytes": 164948
+    },
+    {
+     "id": "start",
+     "file": "book-leviticus/older/07-start.mp3",
+     "hash": "bd49466e27413d5baf2e",
+     "seconds": 28.12,
+     "bytes": 169268
+    }
+   ]
+  },
+  "book-numbers": {
+   "title": {
+    "file": "book-numbers/title.mp3",
+    "hash": "888fca3c394769f5471e",
+    "seconds": 3.45,
+    "bytes": 21236
+   },
+   "younger": [
+    {
+     "id": "wilderness",
+     "file": "book-numbers/younger/01-wilderness.mp3",
+     "hash": "c3f34756d1e810bc33f4",
+     "seconds": 23.27,
+     "bytes": 140180
+    },
+    {
+     "id": "layout",
+     "file": "book-numbers/younger/02-layout.mp3",
+     "hash": "5dbbbb84ef51f1bf30a2",
+     "seconds": 23.75,
+     "bytes": 143060
+    },
+    {
+     "id": "camp",
+     "file": "book-numbers/younger/03-camp.mp3",
+     "hash": "a26057c7c22eef634f5e",
+     "seconds": 15.03,
+     "bytes": 90788
+    },
+    {
+     "id": "kadesh",
+     "file": "book-numbers/younger/04-kadesh.mp3",
+     "hash": "faa31a8058acd4e5fceb",
+     "seconds": 25.72,
+     "bytes": 154868
+    },
+    {
+     "id": "balaam",
+     "file": "book-numbers/younger/05-balaam.mp3",
+     "hash": "c25c912ac353727362dd",
+     "seconds": 24.35,
+     "bytes": 146660
+    },
+    {
+     "id": "new",
+     "file": "book-numbers/younger/06-new.mp3",
+     "hash": "06ac8f8d25fcf85c1205",
+     "seconds": 26.02,
+     "bytes": 156596
+    },
+    {
+     "id": "start",
+     "file": "book-numbers/younger/07-start.mp3",
+     "hash": "bf1ac0a068a657b627c4",
+     "seconds": 20.87,
+     "bytes": 125780
+    }
+   ],
+   "older": [
+    {
+     "id": "wilderness",
+     "file": "book-numbers/older/01-wilderness.mp3",
+     "hash": "0d17bb39036198fa2f40",
+     "seconds": 27.2,
+     "bytes": 163796
+    },
+    {
+     "id": "layout",
+     "file": "book-numbers/older/02-layout.mp3",
+     "hash": "11f1ca479fac0d1c27fe",
+     "seconds": 22.63,
+     "bytes": 136436
+    },
+    {
+     "id": "camp",
+     "file": "book-numbers/older/03-camp.mp3",
+     "hash": "def04321884c9d951bd2",
+     "seconds": 24.14,
+     "bytes": 145364
+    },
+    {
+     "id": "kadesh",
+     "file": "book-numbers/older/04-kadesh.mp3",
+     "hash": "8a4ebbd71dacfd67ceae",
+     "seconds": 25.54,
+     "bytes": 153860
+    },
+    {
+     "id": "balaam",
+     "file": "book-numbers/older/05-balaam.mp3",
+     "hash": "0778d1825f432f4eb45d",
+     "seconds": 27.68,
+     "bytes": 166676
+    },
+    {
+     "id": "new",
+     "file": "book-numbers/older/06-new.mp3",
+     "hash": "ba842bf41ff610391f1d",
+     "seconds": 27,
+     "bytes": 162500
+    },
+    {
+     "id": "start",
+     "file": "book-numbers/older/07-start.mp3",
+     "hash": "0a50aa99575ec1e8d1e6",
+     "seconds": 28.11,
+     "bytes": 169268
+    }
+   ]
+  },
+  "book-deuteronomy": {
+   "title": {
+    "file": "book-deuteronomy/title.mp3",
+    "hash": "e14c9b5f59125a6b2cd5",
+    "seconds": 3.87,
+    "bytes": 23828
+   },
+   "younger": [
+    {
+     "id": "farewell",
+     "file": "book-deuteronomy/younger/01-farewell.mp3",
+     "hash": "6faf579db666e6de7020",
+     "seconds": 25.62,
+     "bytes": 154292
+    },
+    {
+     "id": "layout",
+     "file": "book-deuteronomy/younger/02-layout.mp3",
+     "hash": "767bd4f404d658785b3f",
+     "seconds": 24.86,
+     "bytes": 149828
+    },
+    {
+     "id": "shema",
+     "file": "book-deuteronomy/younger/03-shema.mp3",
+     "hash": "9a3ccc62207d3fbacaf1",
+     "seconds": 26.23,
+     "bytes": 157892
+    },
+    {
+     "id": "chosen",
+     "file": "book-deuteronomy/younger/04-chosen.mp3",
+     "hash": "3433c3759704aed2edac",
+     "seconds": 23.07,
+     "bytes": 139028
+    },
+    {
+     "id": "laws",
+     "file": "book-deuteronomy/younger/05-laws.mp3",
+     "hash": "8c715808e8469a61474b",
+     "seconds": 26.64,
+     "bytes": 160484
+    },
+    {
+     "id": "choose",
+     "file": "book-deuteronomy/younger/06-choose.mp3",
+     "hash": "859daa52a382b65bc63d",
+     "seconds": 26.26,
+     "bytes": 158180
+    },
+    {
+     "id": "start",
+     "file": "book-deuteronomy/younger/07-start.mp3",
+     "hash": "a68555fb9383597f0f61",
+     "seconds": 19.32,
+     "bytes": 116420
+    }
+   ],
+   "older": [
+    {
+     "id": "farewell",
+     "file": "book-deuteronomy/older/01-farewell.mp3",
+     "hash": "e5d70f2c23c0590815ef",
+     "seconds": 26.68,
+     "bytes": 160628
+    },
+    {
+     "id": "layout",
+     "file": "book-deuteronomy/older/02-layout.mp3",
+     "hash": "25588a0c8343d014be3e",
+     "seconds": 25.58,
+     "bytes": 154004
+    },
+    {
+     "id": "shema",
+     "file": "book-deuteronomy/older/03-shema.mp3",
+     "hash": "980423e08f01a7d9ba5b",
+     "seconds": 28.31,
+     "bytes": 170420
+    },
+    {
+     "id": "chosen",
+     "file": "book-deuteronomy/older/04-chosen.mp3",
+     "hash": "7185aa170b5e917aad98",
+     "seconds": 23.47,
+     "bytes": 141476
+    },
+    {
+     "id": "laws",
+     "file": "book-deuteronomy/older/05-laws.mp3",
+     "hash": "147228f48dbf5151964a",
+     "seconds": 28.57,
+     "bytes": 172004
+    },
+    {
+     "id": "choose",
+     "file": "book-deuteronomy/older/06-choose.mp3",
+     "hash": "9124b0febaaca0292de9",
+     "seconds": 28.7,
+     "bytes": 172724
+    },
+    {
+     "id": "start",
+     "file": "book-deuteronomy/older/07-start.mp3",
+     "hash": "d08ac538a4732ec2f428",
+     "seconds": 23.63,
+     "bytes": 142340
+    }
+   ]
+  },
+  "book-2-samuel": {
+   "title": {
+    "file": "book-2-samuel/title.mp3",
+    "hash": "91111f6ee1f4ae3241cf",
+    "seconds": 3.23,
+    "bytes": 19940
+   },
+   "younger": [
+    {
+     "id": "king",
+     "file": "book-2-samuel/younger/01-king.mp3",
+     "hash": "f5bdadd6db57e758dbcd",
+     "seconds": 21.48,
+     "bytes": 129524
+    },
+    {
+     "id": "layout",
+     "file": "book-2-samuel/younger/02-layout.mp3",
+     "hash": "7004bbf0d4577a2c4134",
+     "seconds": 28.31,
+     "bytes": 170420
+    },
+    {
+     "id": "crown",
+     "file": "book-2-samuel/younger/03-crown.mp3",
+     "hash": "0027ad3f3ba6e9a94930",
+     "seconds": 24.17,
+     "bytes": 145508
+    },
+    {
+     "id": "house",
+     "file": "book-2-samuel/younger/04-house.mp3",
+     "hash": "50e4ccb875b87f858afc",
+     "seconds": 25.27,
+     "bytes": 152132
+    },
+    {
+     "id": "nathan",
+     "file": "book-2-samuel/younger/05-nathan.mp3",
+     "hash": "0005a69697a89d667e65",
+     "seconds": 27.4,
+     "bytes": 164948
+    },
+    {
+     "id": "sword",
+     "file": "book-2-samuel/younger/06-sword.mp3",
+     "hash": "2f84b360953701c556e1",
+     "seconds": 25.64,
+     "bytes": 154436
+    },
+    {
+     "id": "start",
+     "file": "book-2-samuel/younger/07-start.mp3",
+     "hash": "9a74310d8ff9acb779cd",
+     "seconds": 22,
+     "bytes": 132548
+    }
+   ],
+   "older": [
+    {
+     "id": "king",
+     "file": "book-2-samuel/older/01-king.mp3",
+     "hash": "df0fb6c667ad6103c045",
+     "seconds": 25.82,
+     "bytes": 155444
+    },
+    {
+     "id": "layout",
+     "file": "book-2-samuel/older/02-layout.mp3",
+     "hash": "c45861e280189575920f",
+     "seconds": 27.25,
+     "bytes": 164084
+    },
+    {
+     "id": "crown",
+     "file": "book-2-samuel/older/03-crown.mp3",
+     "hash": "880357d9ac29804aa63f",
+     "seconds": 26.27,
+     "bytes": 158180
+    },
+    {
+     "id": "house",
+     "file": "book-2-samuel/older/04-house.mp3",
+     "hash": "6e61803d7f923352cb1e",
+     "seconds": 28.38,
+     "bytes": 170852
+    },
+    {
+     "id": "nathan",
+     "file": "book-2-samuel/older/05-nathan.mp3",
+     "hash": "b967bdc73efddd13b952",
+     "seconds": 27.38,
+     "bytes": 164948
+    },
+    {
+     "id": "sword",
+     "file": "book-2-samuel/older/06-sword.mp3",
+     "hash": "af9c3056e9b44b114e78",
+     "seconds": 28.52,
+     "bytes": 171716
+    },
+    {
+     "id": "start",
+     "file": "book-2-samuel/older/07-start.mp3",
+     "hash": "c3515ad6a5baef3c9e34",
+     "seconds": 23.6,
+     "bytes": 142196
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",
