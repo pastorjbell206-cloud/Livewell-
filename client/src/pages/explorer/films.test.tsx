@@ -1734,6 +1734,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-joshua",
     "book-judges",
     "book-1-samuel",
+    "book-jeremiah",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2492,5 +2493,19 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toMatch(/takes no side among the readings/);
     expect(f.frames.find(x => x.id === "heart")!.verse?.text).toBe("For man sees the outward appearance, but the LORD sees the heart.");
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|sling|battle|giant|body/i);
+  });
+
+  it("Jeremiah draws no siege or ruin, ties nothing to a nation of today, and reads 29:11 as the book page does", () => {
+    const f = filmFile("book-jeremiah");
+    expect(f.care).toBe(filmFile("temple-destroyed").care);
+    const t = text(f);
+    expect(t).not.toMatch(/\b(America|United States|Russia|China|Iran|Iraq|Europe|State of Israel|Israel today|our nation|this nation|modern)/i);
+    expect(t).not.toMatch(/\b(19|20)\d\d\b/);
+    const letter = f.frames.find(x => x.id === "letter")!;
+    expect(letter.older).toContain("It is a promise through suffering, not a guarantee of success.");
+    expect(f.frames.find(x => x.id === "start")!.older).toContain("was a word for one moment, not a rule about politics");
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|army/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/siege|fire|flame|ruin|army|soldier|burn/i);
   });
 });

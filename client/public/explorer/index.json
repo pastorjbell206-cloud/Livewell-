@@ -1724,6 +1724,23 @@
       "book": "1-samuel"
     },
     {
+      "slug": "book-jeremiah",
+      "title": "Jeremiah: the prophet who wept",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a prophet who warned his city and kept speaking when no one listened: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Jeremiah as a whole book: forty years of warning, false security, honest prayer, a letter to the exiles, the new covenant, and where to begin."
+      },
+      "mark": "book-jeremiah",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "jeremiah"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

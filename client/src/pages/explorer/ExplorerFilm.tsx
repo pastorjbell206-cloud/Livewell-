@@ -408,6 +408,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole of 1 Samuel in seven moving pictures: three lives, seven stages, the boy who listens, a people asking for a king, the heart God sees, loyal love, and where to start reading.",
     },
+    "book-jeremiah": {
+      title: "Jeremiah: the prophet who wept: Bible Explorer",
+      description:
+        "The whole book of Jeremiah in seven moving pictures: a prophet in the last days of Judah, how the book is laid out, false safety, honest prayer, a letter to the exiles, the new covenant, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

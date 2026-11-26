@@ -3125,6 +3125,116 @@
     }
    ]
   },
+  "book-jeremiah": {
+   "title": {
+    "file": "book-jeremiah/title.mp3",
+    "hash": "3077feff233cbcae22b2",
+    "seconds": 3.01,
+    "bytes": 18644
+   },
+   "younger": [
+    {
+     "id": "prophet",
+     "file": "book-jeremiah/younger/01-prophet.mp3",
+     "hash": "41cc73c1102a145397d9",
+     "seconds": 22.26,
+     "bytes": 134132
+    },
+    {
+     "id": "layout",
+     "file": "book-jeremiah/younger/02-layout.mp3",
+     "hash": "3566347e62055086ed66",
+     "seconds": 25.05,
+     "bytes": 150836
+    },
+    {
+     "id": "temple",
+     "file": "book-jeremiah/younger/03-temple.mp3",
+     "hash": "b2a5e93267379f9fd6da",
+     "seconds": 21.55,
+     "bytes": 129956
+    },
+    {
+     "id": "prayer",
+     "file": "book-jeremiah/younger/04-prayer.mp3",
+     "hash": "fa01f078b9357c381a19",
+     "seconds": 26.12,
+     "bytes": 157316
+    },
+    {
+     "id": "letter",
+     "file": "book-jeremiah/younger/05-letter.mp3",
+     "hash": "854c53139f976e803b54",
+     "seconds": 24.08,
+     "bytes": 145076
+    },
+    {
+     "id": "covenant",
+     "file": "book-jeremiah/younger/06-covenant.mp3",
+     "hash": "3895730d90ace983f04f",
+     "seconds": 26.25,
+     "bytes": 158036
+    },
+    {
+     "id": "start",
+     "file": "book-jeremiah/younger/07-start.mp3",
+     "hash": "27c5a8d0eac5df415b51",
+     "seconds": 23.17,
+     "bytes": 139604
+    }
+   ],
+   "older": [
+    {
+     "id": "prophet",
+     "file": "book-jeremiah/older/01-prophet.mp3",
+     "hash": "994de68a39c3ed36c26b",
+     "seconds": 24.07,
+     "bytes": 145076
+    },
+    {
+     "id": "layout",
+     "file": "book-jeremiah/older/02-layout.mp3",
+     "hash": "e8618e3b2968bd4c7d63",
+     "seconds": 24.6,
+     "bytes": 148100
+    },
+    {
+     "id": "temple",
+     "file": "book-jeremiah/older/03-temple.mp3",
+     "hash": "cf36109134688a2e3a58",
+     "seconds": 27.14,
+     "bytes": 163364
+    },
+    {
+     "id": "prayer",
+     "file": "book-jeremiah/older/04-prayer.mp3",
+     "hash": "1271bae6e0e0271db3e8",
+     "seconds": 27.61,
+     "bytes": 166244
+    },
+    {
+     "id": "letter",
+     "file": "book-jeremiah/older/05-letter.mp3",
+     "hash": "faa2cacc98a41df0c581",
+     "seconds": 26.52,
+     "bytes": 159764
+    },
+    {
+     "id": "covenant",
+     "file": "book-jeremiah/older/06-covenant.mp3",
+     "hash": "1729975639d7bb71cc36",
+     "seconds": 28.67,
+     "bytes": 172580
+    },
+    {
+     "id": "start",
+     "file": "book-jeremiah/older/07-start.mp3",
+     "hash": "d29c0eb875401947f211",
+     "seconds": 27.94,
+     "bytes": 168260
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

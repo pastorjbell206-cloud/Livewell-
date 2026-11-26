@@ -1058,6 +1058,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M26,60c-2,4 -2,8 0,10M30,62c-2,4 -2,8 0,10" />
     </>
   ),
+  /* Jeremiah: an old stump with a new shoot, the shoot gold. */
+  "book-jeremiah": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M30,84V62c0,-8 40,-8 40,0V84Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M34,64c10,4 22,4 32,0" />
+      <path className="pl-m" d="M50,62c0,-14 -2,-24 2,-34c-8,2 -14,-4 -14,-10c8,0 14,4 15,9c2,-8 8,-12 16,-11c0,7 -6,12 -15,12c-2,10 -1,20 -1,34Z" />
+      <path className="pl-l" d="M50,62c0,-14 -2,-24 2,-34c-8,2 -14,-4 -14,-10c8,0 14,4 15,9c2,-8 8,-12 16,-11c0,7 -6,12 -15,12c-2,10 -1,20 -1,34Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
