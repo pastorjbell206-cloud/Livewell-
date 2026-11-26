@@ -24984,3 +24984,19 @@ Cut in chapter 9: the early Christian reading of the tav as the cross, kept as a
 | Later: Psalm 80:1; 1 Kings 6:23-28 | 9-22 `later` | BSB | BSB text |
 
 Cut in chapter 10: nothing drawn to the New Testament.
+
+## The plain notes on Ezekiel 11 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The pot and the meat: the text paraphrased; quoted clauses at verses 1, 3, 6-7, 9-11, 13 | 1-13 | BSB | BSB text |
+| Background in `hearers` | 1-13 | ezekiel/11.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 24:5; Jeremiah 24:8 | 1-13 `later` | BSB | BSB text |
+| The hard note: Did Pelatiah really die because of Ezekiel's prophecy, and why would God strike him down? The readings in their holders' terms | 1-13 `hard` | ezekiel/11.json `hard` | Repository; the site takes no side |
+| A sanctuary for the exiles, and a new heart: the text paraphrased; quoted clauses at verses 15, 16, 17-18, 19, 20, 23, 24-25 | 14-25 | BSB | BSB text |
+| Background in `hearers` | 14-25 | ezekiel/11.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 31:33; Psalm 90:1 | 14-25 `later` | BSB | BSB text |
+
+Cut in chapter 11: the deep note's lines to Luke 24:50-51 and Acts 1:12 beside the Mount of Olives, which the New Testament does not draw from Ezekiel.
