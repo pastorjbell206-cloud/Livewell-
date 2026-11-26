@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- "Mark in a minute." One continuous picture: four bars (Mark the shortest), the word "immediately"
+     streaming past, a line walking out of the wilderness, the sixteen chapters as a strip that fills to
+     the middle, the question turned round, the strip tilting into a road up to a bare cross, one soldier
+     at the foot of the hill, and the question left with the viewer.
+     Jesus is never drawn: his way is the mustard line. The cross is two bare lines, no figure.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Mark in a minute</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const A0 = S("fast", 0), A1 = S("fast", 1);
+  const B0 = S("who", 0), B1 = S("who", 1);
+  const C0 = S("question", 0), C1 = S("question", 1), C2 = S("question", 2), CE = E("question");
+  const D0 = S("road", 0), D1 = S("road", 1), DE = E("road");
+  const E0 = S("soldier", 0), E1 = S("soldier", 1);
+  const Z0 = S("close", 0), END = F.VOICE_END;
+  const R = rng(41), SC = Object.fromEntries(window.SCRIPT.chapters.filter((c) => c.scripture).map((c) => [c.id, c.scripture]));
+  const refLab = (s) => `${s.reference.toUpperCase()} · ${s.translation.toUpperCase()}`;
+  const wrapTo = (s, n) => { const out = []; let cur = ""; for (const w of s.split(" ")) { if (cur && (cur + " " + w).length > n) { out.push(cur); cur = w; } else cur = cur ? cur + " " + w : w; } if (cur) out.push(cur); return out; };
+
+  // ================= 1: four Gospels, Mark the shortest; one word keeps streaming past =================
+  const gBars = el("g", {}, world), gStream = el("g", {}, world);
+  const GOSPELS = [["MATTHEW", 22193], ["MARK", 13823], ["LUKE", 23879], ["JOHN", 18418]];
+  const bars = GOSPELS.map(([name, words], i) => { const y = 196 + i * 62, w = 600 * words / 23879;
+    return { i, w, lab: txt(gBars, "lab", 330, y + 6, name, 17, { style: "font-size:17px;text-anchor:end" }), bar: el("rect", { x: 356, y: y - 9, width: 0, height: 18, rx: 9, fill: INK }, gBars) }; });
+  const streams = [...Array(9)].map((_, i) => { const size = 30 + Math.round(R() * 46); return { y: 150 + i * 44 + (R() - 0.5) * 14, size, sp: 250 + R() * 330, off: R() * 1700, e: txt(gStream, "ital", 0, 0, "immediately", size, { style: `font-size:${size}px;fill:${i % 4 === 1 ? "#B08A12" : STONE}` }) }; });
+
+  // ================= the world: wilderness, the strip of sixteen chapters, the road, the hill =================
+  const gW = el("g", {}, world);
+  const hill = el("path", { fill: WARM }, gW);
+  const dunes = el("path", { d: "M-40 500 Q20 436 96 476 Q160 424 232 480 Q268 462 300 500 Z", fill: WARM, stroke: STONE, "stroke-width": 1.6, "stroke-linejoin": "round" }, gW);
+  const base = el("path", { fill: "none", stroke: INK, "stroke-width": 2.2, "stroke-linecap": "round", "stroke-linejoin": "round" }, gW);
+  const PX = (i) => 300 + (i - 1) * (800 / 15);
+  const lift = (t) => up(t, D0 - 0.2, 2.0);
+  const PY = (i, t) => 500 - lift(t) * Math.max(0, i - 8) / 8 * 132;
+  const ticks = [...Array(16)].map((_, k) => ({ i: k + 1, tick: el("line", { stroke: INK, "stroke-width": 1.4 }, gW), num: txt(gW, "lab", 0, 0, String(k + 1), 15, { style: "font-size:15px;letter-spacing:0" }) }));
+  const way = el("path", { fill: "none", stroke: MUSTARD, "stroke-width": 5, "stroke-linecap": "round", "stroke-linejoin": "round" }, gW);
+  const ripples = [0, 1, 2].map(() => el("path", { fill: "none", stroke: MUSTARD, "stroke-width": 1.4, "stroke-linecap": "round" }, gW));
+  const marker = el("circle", { fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gW);
+  const crossV = line(gW, "M1100 368 V236", { "stroke-width": 6, "stroke-linecap": "butt" }), crossH = line(gW, "M1062 274 H1138", { "stroke-width": 6, "stroke-linecap": "butt" });
+  const soldier = el("rect", { x: -8, y: -16, width: 16, height: 16, fill: INK }, gW);
+  const you = el("circle", { cx: 440, cy: 486, r: 13, fill: INK }, gW);
+
+  // ================= 2: "Who is this?" The questions gather; three deeds =================
+  const gQ = el("g", {}, world), gDeeds = el("g", { transform: "translate(640 380) scale(1.45) translate(-640 -376)" }, world);
+  const qs = [...Array(11)].map((_, i) => { const a = R() * Math.PI * 2, rr = 26 + R() * 96; return { at: i < 5 ? B0 + 0.5 + i * 0.62 : B1 + 0.9 + (i - 5) * 0.82, x0: 640 + (R() - 0.5) * 900, y0: 150 + R() * 120, x: 640 + rr * 1.9 * Math.cos(a), y: 216 + rr * 0.55 * Math.sin(a), size: 40 + Math.round(R() * 34), e: txt(gQ, "disp", 0, 0, "?", 60) }; });
+  qs.forEach((q) => q.e.setAttribute("style", `font-size:${q.size}px;fill:${STONE}`));
+  const bigQ = txt(gQ, "disp", 0, 0, "?", 230);
+  const sea = [0, 1, 2].map(() => el("path", { fill: "none", stroke: INK, "stroke-width": 2.6, "stroke-linecap": "round" }, gDeeds));
+  const sick = el("circle", { cx: 640, r: 15 }, gDeeds), bed = el("line", { x1: 606, x2: 674, y1: 404, y2: 404, stroke: LINE, "stroke-width": 2.4, "stroke-linecap": "round" }, gDeeds);
+  const man = el("circle", { cx: 920, cy: 388, r: 15, fill: INK }, gDeeds), weight = el("rect", { x: 898, width: 44, height: 26, rx: 3, fill: CHAR }, gDeeds);
+
+  // ================= 3, 4, 5: the three verses, word for word from the script =================
+  const gV1 = el("g", {}, world), gV2 = el("g", {}, world), gV3 = el("g", {}, world);
+  const v1 = SC.question.text.split(/(?<=\.) (?=“)|(?<=\?”) (?=Peter)/);
+  const v1L = v1.map((s, i) => txt(gV1, "disp", 640, 178 + i * 56, s, v1.length > 3 ? 40 : 48)), v1Ref = txt(gV1, "lab", 640, 178 + v1.length * 56 - 8, refLab(SC.question));
+  const v2 = wrapTo("“" + SC.road.text + "”", 40);
+  const v2L = v2.map((s, i) => txt(gV2, "disp", 540, 166 + i * 54, s, 45)), v2Ref = txt(gV2, "lab", 540, 166 + v2.length * 54 - 6, refLab(SC.road));
+  const v3 = txt(gV3, "disp", 540, 236, "“" + SC.soldier.text + "”", 60), v3Ref = txt(gV3, "lab", 540, 284, refLab(SC.soldier));
+  const say = line(gV3, "M1010 372 Q900 356 836 300", { stroke: MUSTARD, "stroke-width": 2 });
+  const lastQ = txt(world, "disp", 620, 398, "?", 250, { style: `font-size:250px;fill:${MUSTARD}` });
+
+  const drawBars = (t) => {
+    const v = span(t, A0 - 0.2, A0 + 4.2, 0.4, 0.8); op(gBars, v);
+    if (v > 0) bars.forEach((b) => { set(b.bar, { width: (b.w * up(t, A0 - 0.1 + b.i * 0.12, 1.2)).toFixed(1) }); const fade = b.i === 1 ? 0 : up(t, A0 + 1.5, 0.8); b.bar.setAttribute("fill-opacity", mix(1, 0.2, fade).toFixed(2)); b.lab.setAttribute("fill-opacity", mix(1, 0.4, fade).toFixed(2)); });
+    const sv = span(t, A0 + 3.5, A1 + 1.3, 0.7, 1.0); op(gStream, sv);
+    if (sv > 0) streams.forEach((s) => { const x = ((t - A0) * s.sp + s.off) % 1900 - 300; s.e.setAttribute("x", x.toFixed(1)); s.e.setAttribute("y", s.y.toFixed(1)); s.e.setAttribute("opacity", (0.3 + 0.5 * (s.size / 76)).toFixed(2)); });
+  };
+  const drawWorld = (t) => {
+    const v = up(t, A1 - 0.1, 0.7) * (1 - up(t, END + 0.6, 0.7)); op(gW, v); if (v <= 0) return;
+    const k = up(t, B0 - 1.0, 1.9), z = mix(2.4, 1, k); gW.setAttribute("transform", `translate(${mix(280, 0, k).toFixed(2)} ${mix(-738, 0, k).toFixed(2)}) scale(${z.toFixed(4)})`);
+    const quiet = 1 - 0.55 * up(t, Z0 - 0.2, 1.0);
+    // the ground: first the wilderness floor, then the sixteen chapters, then (from chapter 8) a road going up
+    const g0 = up(t, A1 + 0.1, 1.6), ext = 1 + 15 * up(t, B0 - 0.8, 1.7), ly = lift(t);
+    let d = `M-40 500 L${mix(-40, 300, g0).toFixed(1)} 500`;
+    for (let i = 2; i <= 16; i++) { if (i <= ext) d += ` L${PX(i).toFixed(1)} ${PY(i, t).toFixed(1)}`; else { const f = ext - (i - 1); if (f > 0) d += ` L${mix(PX(i - 1), PX(i), f).toFixed(1)} ${mix(PY(i - 1, t), PY(i, t), f).toFixed(1)}`; break; } }
+    base.setAttribute("d", d); op(dunes, mix(1, 0.5, k) * quiet);
+    // how far the way has come, in chapters: out of the wilderness, to the middle, then on to the end
+    const walk = up(t, A1 + 1.9, 4.6), p = 1 + 7 * up(t, B0 + 0.2, C0 + 0.7 - B0 - 0.2) + 8 * up(t, D0 + 0.8, E0 + 0.9 - D0 - 0.8);
+    ticks.forEach((c) => { const o = clamp(ext - c.i + 0.6) * (t > B0 - 0.8 ? 1 : 0), x = PX(c.i), y = PY(c.i, t), reached = clamp(p - c.i + 0.5);
+      op(c.tick, o); op(c.num, o * mix(0.45, 1, reached) * quiet); set(c.tick, { x1: x.toFixed(1), x2: x.toFixed(1), y1: (y - 7).toFixed(1), y2: (y + 7).toFixed(1) }); set(c.num, { x: x.toFixed(1), y: (y + 32).toFixed(1) }); });
+    let w = `M70 500 L${mix(70, 300, walk).toFixed(1)} 500`, tipX = mix(70, 300, walk), tipY = 500;
+    for (let i = 2; i <= 16 && walk >= 1; i++) { if (i <= p) { w += ` L${PX(i).toFixed(1)} ${PY(i, t).toFixed(1)}`; tipX = PX(i); tipY = PY(i, t); } else { const f = p - (i - 1); if (f > 0) { tipX = mix(PX(i - 1), PX(i), f); tipY = mix(PY(i - 1, t), PY(i, t), f); w += ` L${tipX.toFixed(1)} ${tipY.toFixed(1)}`; } break; } }
+    way.setAttribute("d", w); op(way, up(t, A1 + 1.8, 0.4)); way.setAttribute("stroke-width", mix(2.4, 5, k).toFixed(2));
+    ripples.forEach((r, i) => { const u = ((t * 0.55 + i / 3) % 1), rr = 6 + 30 * u; r.setAttribute("d", `M${(tipX + rr * 0.7).toFixed(1)} ${(tipY - rr * 0.72).toFixed(1)} A${rr.toFixed(1)} ${rr.toFixed(1)} 0 0 1 ${(tipX + rr).toFixed(1)} ${(tipY - 1).toFixed(1)}`);
+      op(r, span(t, A1 + 4.3, B0 - 0.2, 0.6, 0.6) * Math.sin(Math.PI * u) * 0.9); });
+    const mv = up(t, C0 + 0.5, 0.6) * (1 - up(t, D0 + 0.6, 0.8)); op(marker, mv); set(marker, { cx: PX(8), cy: 500, r: (13 + 2.2 * Math.sin(t * 2)).toFixed(2) });
+    // the hill and its bare cross
+    const hv = up(t, D0 + 0.3, 1.4); op(hill, hv * quiet); hill.setAttribute("d", `M${PX(8)} 500 L1100 ${(500 - ly * 132).toFixed(1)} Q1215 ${(500 - ly * 126).toFixed(1)} 1300 ${(500 - ly * 40).toFixed(1)} L1300 500 Z`);
+    draw(crossV, up(t, D0 + 2.2, 1.3)); draw(crossH, up(t, D0 + 3.2, 0.9)); op(crossV, t > D0 + 2.1 ? quiet : 0); op(crossH, t > D0 + 3.1 ? quiet : 0);
+    const sv = up(t, E0 + 0.5, 0.6); op(soldier, sv * quiet); const sk = up(t, E0 + 0.5, 2.2), sx = mix(900, 1034, sk); move(soldier, sx, 500 - 132 * (sx - PX(8)) / (1100 - PX(8)) - 2 + 1.2 * Math.abs(Math.sin(t * 5)) * (sk < 1 ? 1 : 0), 1, -17);
+    op(you, up(t, Z0 + 0.3, 0.8));
+  };
+  const drawWho = (t) => {
+    const v = t > B0 && t < C1 + 1.2; op(gQ, v ? 1 : 0);
+    if (v) { const join = up(t, C0 + 0.1, 1.3);
+      qs.forEach((q, i) => { const a = up(t, q.at, 1.2), o = up(t, q.at, 0.5) * (1 - join); op(q.e, o * 0.85); if (o > 0) move(q.e, mix(mix(q.x0, q.x, a), 640, join) + 3 * Math.sin(t * 0.9 + i), mix(mix(q.y0, q.y, a), 290, join) + 3 * Math.cos(t * 0.8 + i * 2)); });
+      // one large question, first facing away, then swung round to face the viewer; then it comes to rest over chapter 8
+      const turn = up(t, C0 + 1.3, 1.5), rest = up(t, C1 - 0.6, 1.1), sx = -Math.cos(Math.PI * turn), s = mix(1, 0.36, rest);
+      op(bigQ, up(t, C0 + 0.5, 0.9) * (1 - up(t, C1 + 0.4, 0.7)));
+      bigQ.setAttribute("transform", `translate(${mix(640, PX(8), rest).toFixed(1)} ${mix(382, 470, rest).toFixed(1)}) scale(${(sx * s).toFixed(4)} ${s.toFixed(4)})`); }
+    const dv = span(t, B1 - 0.1, C0 + 0.3, 0.4, 0.7); op(gDeeds, dv);
+    if (dv > 0) { const calm = up(t, B1 + 0.2, 1.7);
+      sea.forEach((s, i) => { const amp = mix(15, 0.6, calm), y0 = 352 + i * 22; let d = ""; for (let x = 286; x <= 434; x += 8) d += `${d ? "L" : "M"}${x} ${(y0 + amp * Math.sin(x * 0.085 + t * 5 + i * 1.3)).toFixed(1)}`; s.setAttribute("d", d); op(s, up(t, B1 - 0.1 + i * 0.1, 0.4)); });
+      const heal = up(t, B1 + 2.1, 1.4); set(sick, { cy: mix(389, 368, heal).toFixed(1), fill: heal > 0.5 ? INK : STONE, "fill-opacity": mix(0.35, 1, heal).toFixed(2) }); op(sick, up(t, B1 + 1.6, 0.5)); op(bed, up(t, B1 + 1.6, 0.5) * (1 - 0.6 * heal));
+      const free = up(t, B1 + 3.9, 1.6); op(man, up(t, B1 + 3.2, 0.5)); op(weight, up(t, B1 + 3.2, 0.5) * (1 - free)); weight.setAttribute("y", mix(346, 286, free).toFixed(1)); man.setAttribute("cy", mix(392, 384, free).toFixed(1)); }
+  };
+  const drawVerses = (t) => {
+    const a = span(t, C1 - 0.2, D0 - 0.1, 0.3, 0.6); op(gV1, a);
+    if (a > 0) { const at = [C1 - 0.1, C1 + (CE - C2 > 0 ? 1.15 : 1.0), C2 + 0.55]; v1L.forEach((l, i) => op(l, up(t, at[Math.min(i, at.length - 1)], 0.5))); op(v1Ref, up(t, C2 + 1.2, 0.6)); }
+    const b = span(t, D1 - 0.3, E0 - 0.1, 0.3, 0.6); op(gV2, b);
+    if (b > 0) { const d = DE - D1; v2L.forEach((l, i) => op(l, up(t, D1 - 0.15 + (i / v2L.length) * d * 0.86, 0.6))); op(v2Ref, up(t, D1 + d * 0.8, 0.7)); }
+    const c = span(t, E1 - 0.3, Z0 + 0.2, 0.3, 0.7); op(gV3, c);
+    if (c > 0) { v3.setAttribute("y", (236 + 8 * (1 - up(t, E1 - 0.3, 1.0))).toFixed(1)); op(v3Ref, up(t, E1 + 0.9, 0.6)); draw(say, up(t, E1 - 0.5, 0.8)); }
+    const q = up(t, Z0 + 1.3, 1.0) * (1 - up(t, END + 0.6, 0.7)); op(lastQ, q); lastQ.setAttribute("y", (398 + 10 * (1 - up(t, Z0 + 1.3, 1.6)) + 2 * Math.sin(t * 0.9)).toFixed(1));
+  };
+
+  F.title("Mark in a minute");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.7);
+  return (t) => { drawBars(t); drawWorld(t); drawWho(t); drawVerses(t); };
+});
+</script>
+</body></html>

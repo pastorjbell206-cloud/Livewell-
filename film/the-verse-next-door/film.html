@@ -1,0 +1,101 @@
+<!doctype html>
+<!-- "Read the verse next door" (Philippians 4:12-13). The verse hangs as a poster on a gym wall, then shrinks
+     back to its real place: one line on the page of a letter, with the line above it lit. A prison window
+     and a chain say where the letter was written. Days are bars above and below a level line: full days up,
+     hungry days down, and one steady line through all of them.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Read the verse next door</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const A0 = S("famous", 0), A1 = S("famous", 1), B0 = S("sounds", 0), B1 = S("sounds", 1), C0 = S("prison", 0), C1 = S("prison", 1);
+  const D0 = S("next-door", 0), DE = E("next-door"), M0 = S("means", 0), P0 = S("better", 0), P1 = S("better", 1), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(31);
+  const REF = (ch) => `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`;
+
+  // ---------- the page of the letter (drawn first, so the poster can shrink onto it) ----------
+  const gPage = el("g", {}, world);
+  el("rect", { x: 400, y: 104, width: 480, height: 440, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, gPage);
+  const ROWY = (i) => 138 + i * 31, VR = 7;
+  const rows = [...Array(14)].map((_, i) => { const g = el("g", {}, gPage); let x = 428; const end = i === 13 ? 640 : 852;
+    while (x < end - 30) { const w = Math.min(end - x, 30 + Math.round(R() * 60)); el("rect", { x, y: ROWY(i) - 4.5, width: w, height: 9, rx: 4.5, fill: i === VR ? INK : STONE }, g); x += w + 10; } return g; });
+  const hi = el("rect", { fill: "none", stroke: MUSTARD, "stroke-width": 3, rx: 8 }, gPage);
+  const halo = [6, 8, 5, 9].map((i) => el("rect", { x: 414, y: ROWY(i) - 13, width: 452, height: 26, rx: 8, fill: "none", stroke: MUSTARD, "stroke-width": 2.2 }, gPage));
+  const n13 = txt(gPage, "lab", 362, ROWY(VR) + 6, "4:13"), n12 = txt(gPage, "lab", 362, ROWY(VR - 1) + 6, "4:12");
+  const doorLine = line(gPage, `M882 ${ROWY(VR - 1)} H926`, { stroke: MUSTARD, "stroke-width": 2 }), doorLab = txt(gPage, "lab", 1058, ROWY(VR - 1) + 6, "THE VERSE NEXT DOOR");
+
+  // ---------- 1: the gym wall ----------
+  const gGym = el("g", {}, world);
+  const floor = line(gGym, "M-20 452 H1300", { stroke: INK, "stroke-width": 3 });
+  const bell = el("g", {}, gGym); el("rect", { x: -52, y: -5, width: 104, height: 10, rx: 4, fill: INK }, bell); [-58, -42, 30, 46].forEach((x, i) => el("rect", { x, y: i % 3 === 0 ? -22 : -30, width: 12, height: i % 3 === 0 ? 44 : 60, rx: 4, fill: INK }, bell));
+  const lockers = [0, 1, 2].map((i) => { const g = el("g", {}, gGym), x = 944 + i * 64; el("rect", { x, y: 190, width: 58, height: 260, fill: WARM, stroke: INK, "stroke-width": 2.5 }, g); [212, 224, 236].forEach((y) => el("line", { x1: x + 14, x2: x + 44, y1: y, y2: y, stroke: INK, "stroke-width": 2, "stroke-linecap": "round" }, g)); el("circle", { cx: x + 46, cy: 322, r: 4, fill: INK }, g); return g; });
+  const poster = el("rect", { fill: PAPER, stroke: INK, "stroke-width": 3 }, world);
+  const gVerse = el("g", {}, world), vt = SC.famous.scripture.text, cut = vt.indexOf(" who ");
+  const pv1 = txt(gVerse, "disp", 560, 258, "“" + vt.slice(0, cut), 42), pv2 = txt(gVerse, "disp", 560, 312, vt.slice(cut + 1) + "”", 42), pref = txt(gVerse, "lab", 560, 360, REF(SC.famous), 14);
+  const trophy = el("g", {}, world);
+  el("path", { d: "M-40 -40 Q-70 -40 -64 -12 Q-58 8 -34 4 M40 -40 Q70 -40 64 -12 Q58 8 34 4", fill: "none", stroke: INK, "stroke-width": 5, "stroke-linecap": "round" }, trophy);
+  el("path", { d: "M-40 -52 H40 V-20 Q40 20 0 24 Q-40 20 -40 -20 Z M-8 22 V44 H-28 V56 H28 V44 H8 V22 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, trophy);
+  const tStrike = line(world, "M0 0", { stroke: STONE, "stroke-width": 3 }), wantLab = txt(world, "lab", 1064, 262, "WHAT YOU WANT");
+
+  // ---------- 3: where the letter was written ----------
+  const gCell = el("g", {}, world);
+  const windowP = line(gCell, "M930 150 H1070 V300 H930 Z", { "stroke-width": 3 }), bars = [958, 986, 1014, 1042].map((x) => line(gCell, `M${x} 150 V300`, { "stroke-width": 3 }));
+  const paul = el("circle", { cx: 950, cy: 424, r: 17, fill: INK }, gCell), links = [...Array(6)].map((_, i) => el("ellipse", { cx: 984 + i * 22, cy: 432 + (i % 2) * 5, rx: 13, ry: 7.5, fill: "none", stroke: INK, "stroke-width": 3 }, gCell));
+  const bolt = el("circle", { cx: 1118, cy: 437, r: 7, fill: INK }, gCell);
+
+  // ---------- 4: one sentence earlier ----------
+  const gNext = el("g", {}, world), nt = SC["next-door"].scripture.text, ncut = nt.indexOf(", to having");
+  const nv1 = txt(gNext, "disp", 640, 214, "“" + nt.slice(0, ncut + 1), 48), nv2 = txt(gNext, "disp", 640, 272, nt.slice(ncut + 2) + "”", 48), nref = txt(gNext, "lab", 640, 322, REF(SC["next-door"]));
+  const bowl = (x, full) => { const g = el("g", {}, gNext); if (full) el("path", { d: "M-34 0 Q0 -44 34 0 Z", fill: STONE }, g); el("path", { d: "M-44 0 H44 Q40 40 0 40 Q-40 40 -44 0 Z", fill: full ? INK : BONE, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); move(g, x, 430); return g; };
+  const coins = (x, n) => { const g = el("g", {}, gNext); for (let i = 0; i < Math.max(n, 1); i++) el("ellipse", { cx: (i % 2) * 6 - 3, cy: 34 - i * 13, rx: 34, ry: 10, fill: n ? MUTED : "none", stroke: n ? INK : STONE, "stroke-width": n ? 2.5 : 2, ...(n ? {} : { "stroke-dasharray": "4 5" }) }, g); move(g, x, 430); return g; };
+  const icons = [bowl(400, true), bowl(560, false), coins(720, 5), coins(880, 0)];
+
+  // ---------- 5 and 6: full days, hungry days, one level line ----------
+  const gDays = el("g", {}, world), BASE = 330;
+  const H = [90, 52, -64, 112, -42, -92, 72, 34, -112, 62, -52, 102, -72, 44];
+  const dayBars = H.map((h, i) => el("rect", { x: 262 + i * 56, width: 30, rx: 3, fill: h > 0 ? INK : BONE, stroke: INK, "stroke-width": 2.5 }, gDays));
+  const level = line(gDays, "M236 330 H1044", { stroke: MUSTARD, "stroke-width": 5 }), steady = el("circle", { cy: BASE, r: 11, fill: MUSTARD, stroke: BONE, "stroke-width": 3 }, gDays);
+  const enough = txt(gDays, "lab", 1112, 336, "ENOUGH"), labFull = txt(gDays, "lab", 180, 262, "FULL DAYS"), labHungry = txt(gDays, "lab", 180, 408, "HUNGRY DAYS");
+
+  const rowBox = (i) => ({ x: 414, y: ROWY(i) - 13, w: 452, h: 26 });
+  return ((draw0) => { F.title("Read the verse next door", 68); F.endCard(SC.close.titleCard, END + 0.7); return draw0; })((t) => {
+    // gym
+    const gv = 1 - up(t, B0 - 0.5, 0.6); op(gGym, t < B0 + 0.2 ? gv : 0);
+    if (gv > 0) { draw(floor, up(t, A0 - 0.6, 1.4)); op(bell, up(t, A0 + 1.3, 0.6)); move(bell, mix(60, 150, up(t, A0 + 1.3, 1.0)), 420, 1, 0); lockers.forEach((l, i) => { op(l, up(t, A0 + 2.4 + i * 0.15, 0.5)); l.setAttribute("transform", `translate(${(30 * (1 - up(t, A0 + 2.4 + i * 0.15, 0.9))).toFixed(1)} 0)`); }); }
+    // poster, which becomes the highlighted line on the page
+    const k = up(t, B1 + 0.2, 1.6), b = rowBox(VR), sway = 1.2 * Math.sin(t * 0.7) * (1 - k);
+    const pvis = up(t, A0 - 0.3, 0.7) * (1 - up(t, B1 + 1.5, 0.5)); op(poster, pvis);
+    set(poster, { x: mix(215, b.x, k).toFixed(1), y: (mix(170, b.y, k) + sway).toFixed(1), width: mix(690, b.w, k).toFixed(1), height: mix(226, b.h, k).toFixed(1), "fill-opacity": (1 - k).toFixed(2) });
+    const tv = span(t, A1 - 0.3, B1 + 0.6, 0.5, 0.5); op(gVerse, tv); gVerse.setAttribute("transform", `translate(0 ${sway.toFixed(2)})`); op(pref, up(t, A1 + 1.4, 0.6));
+    // trophy: what it sounds like; later set aside
+    const t1 = span(t, B0 - 0.2, B1 + 0.6, 0.5, 0.6), t2 = up(t, M0 - 0.2, 0.6) * (1 - up(t, CL - 0.4, 0.6)), aside = up(t, M0 + 1.0, 1.2);
+    op(trophy, Math.max(t1, t2 * mix(1, 0.4, aside))); const tx = t < M0 - 0.5 ? 1062 : mix(640, 1064, aside), ty = t < M0 - 0.5 ? 320 - 10 * up(t, B0 - 0.2, 1.5) : mix(300, 172, aside), ts = t < M0 - 0.5 ? 1.5 : mix(1.5, 0.62, aside);
+    move(trophy, tx, ty + 2 * Math.sin(t * 0.9), ts);
+    tStrike.setAttribute("d", `M${tx - 52 * ts} ${ty + 44 * ts} L${tx + 52 * ts} ${ty - 44 * ts}`); op(tStrike, t2 > 0 ? t2 * up(t, M0 + 0.7, 0.3) : 0); draw(tStrike, up(t, M0 + 0.7, 0.7));
+    op(wantLab, span(t, P0 + 2.2, CL - 0.3, 0.5));
+    // page
+    const cellK = up(t, C0 - 0.5, 1.2) * (1 - up(t, D0 - 0.6, 0.6)), back = up(t, CL - 0.5, 0.8);
+    const pg = Math.max(up(t, B1 + 0.3, 0.9) * (1 - up(t, D0 - 0.6, 0.6)), back); op(gPage, pg);
+    if (pg > 0) { gPage.setAttribute("transform", `translate(${(-190 * up(t, C0 - 0.5, 1.2) * (1 - back)).toFixed(1)} ${(1.5 * Math.sin(t * 0.6)).toFixed(2)})`);
+      rows.forEach((r, i) => op(r, Math.max(up(t, B1 + 0.5 + Math.abs(i - VR) * 0.09, 0.5), back)));
+      const upRow = up(t, C1 + 0.7, 1.1) * (1 - back), hb = rowBox(VR); set(hi, { x: hb.x, y: (hb.y - 31 * upRow).toFixed(1), width: hb.w, height: hb.h }); op(hi, Math.max(up(t, B1 + 1.5, 0.4), back));
+      const nd = span(t, B1 + 2.3, C0 - 0.3, 0.5); op(halo[0], Math.max(nd, back * up(t, CL + 0.9, 0.5))); op(halo[1], back * up(t, CL + 1.1, 0.5)); op(halo[2], back * up(t, CL + 1.6, 0.5)); op(halo[3], back * up(t, CL + 1.8, 0.5));
+      op(n13, Math.max(up(t, B1 + 1.7, 0.5), back)); op(n12, Math.max(up(t, B1 + 2.5, 0.5), back)); draw(doorLine, up(t, B1 + 2.5, 0.5)); op(doorLine, nd); op(doorLab, nd); }
+    // prison
+    op(gCell, cellK);
+    if (cellK > 0) { draw(windowP, up(t, C0 - 0.2, 1.0)); bars.forEach((x, i) => draw(x, up(t, C0 + 0.5 + i * 0.15, 0.7))); op(paul, up(t, C0 + 0.6, 0.5)); links.forEach((l, i) => { op(l, up(t, C0 + 1.5 + i * 0.13, 0.35)); l.setAttribute("transform", `translate(0 ${(1.5 * Math.sin(t * 1.6 + i * 0.9)).toFixed(2)})`); }); op(bolt, up(t, C0 + 2.3, 0.4)); }
+    // the verse next door, word for word
+    const nv = span(t, D0 - 0.3, M0 - 0.1, 0.5, 0.6); op(gNext, nv);
+    if (nv > 0) { const d = DE - D0; op(nv1, up(t, D0 - 0.2, 0.6)); op(nv2, up(t, D0 + d * 0.48, 0.6)); op(nref, up(t, D0 + d * 0.75, 0.6));
+      icons.forEach((g, i) => { const a = D0 + d * [0.04, 0.26, 0.52, 0.76][i]; op(g, up(t, a, 0.5)); move(g, 400 + i * 160, 430 + 10 * (1 - up(t, a, 0.8)) + 1.5 * Math.sin(t * 1.2 + i)); }); }
+    // days
+    const dv = up(t, M0 + 1.2, 0.4) * (1 - up(t, CL - 0.5, 0.6)); op(gDays, dv);
+    if (dv > 0) { dayBars.forEach((bar, i) => { const g = up(t, M0 + 1.4 + i * 0.15, 0.6), h = Math.abs(H[i]) * g; set(bar, { y: (H[i] > 0 ? BASE - h : BASE).toFixed(1), height: h.toFixed(1) }); op(bar, g > 0.02 ? 1 : 0); });
+      op(labFull, up(t, M0 + 1.8, 0.5)); op(labHungry, up(t, M0 + 2.8, 0.5));
+      const lk = up(t, M0 + 3.8, 2.0); draw(level, lk); const go = ((t - (M0 + 3.8)) * 0.11) % 1; set(steady, { cx: mix(240, 1040, lk < 1 ? lk : (go < 0 ? 0 : 0.5 - 0.5 * Math.cos(go * Math.PI * 2))).toFixed(1) }); op(steady, up(t, M0 + 3.8, 0.4)); op(enough, up(t, P1 + 0.6, 0.6)); }
+  });
+});
+</script>
+</body></html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<!-- "You are that man" (2 Samuel 12). People are dots: the king wears a small crown, Nathan is the grey dot.
+     Nathan's story plays inside a framed panel; the accusing line the king draws at the rich man comes
+     back to the king himself. The killing is named by the voice and never shown: a dot fades to an empty ring.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>You are that man</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c]));
+  const A0 = S("king", 0), A1 = S("king", 1), B0 = S("story", 0), B1 = S("story", 1), B2 = S("story", 2), AN = S("anger", 0);
+  const T0 = S("turn", 0), T1 = S("turn", 1), TE0 = S("teach", 0), TE1 = S("teach", 1), CF0 = S("confess", 0), CF1 = S("confess", 1), CL = S("close", 0), END = F.VOICE_END;
+  const R = rng(5);
+  const verseBlock = (ch, y, size) => { const g = el("g", {}, world); const v = txt(g, "disp", 640, y, `“${ch.scripture.text}”`, size); const r = txt(g, "lab", 640, y + Math.round(size * 0.72), `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`); return { g, v, r }; };
+
+  // ---------- 1: the king, the pair, the cover-up ----------
+  const gOpen = el("g", { transform: "translate(640 320) scale(1.5) translate(-640 -320)" }, world);
+  const manGone = el("circle", { cx: 900, cy: 330, r: 16, fill: "none", stroke: STONE, "stroke-width": 2, "stroke-dasharray": "4 5" }, gOpen);
+  const man = el("circle", { cx: 900, cy: 330, r: 16, fill: INK }, gOpen), wife = el("circle", { cy: 330, r: 15, fill: BONE, stroke: INK, "stroke-width": 3.5 }, gOpen);
+  const bond = el("path", { fill: "none", stroke: STONE, "stroke-width": 2 }, gOpen);
+  const cover = el("rect", { x: 858, width: 84, height: 84, rx: 6, fill: WARM, stroke: LINE, "stroke-width": 2 }, gOpen);
+  const days = [...Array(11)].map((_, i) => el("circle", { cx: 490 + i * 30, cy: 440, r: 4.5, fill: STONE }, gOpen));
+  const dayLine = line(gOpen, "M478 440 H802", { stroke: LINE, "stroke-width": 2 });
+  const davidLab = txt(gOpen, "lab", 640, 392, "DAVID", 12);
+
+  // ---------- 2 and 3: Nathan's story in its frame, and the king's anger ----------
+  const gPanel = el("g", {}, world);
+  const frame = line(gPanel, "M364 125 H916 Q930 125 930 139 V381 Q930 395 916 395 H364 Q350 395 350 381 V139 Q350 125 364 125 Z", { stroke: STONE, "stroke-width": 2.2 });
+  const tail = line(gPanel, "M286 428 Q300 400 350 372", { stroke: STONE, "stroke-width": 2.2 });
+  const sheep = [...Array(26)].map(() => { let x, y; do { x = 392 + R() * 230; y = 184 + R() * 186; } while (Math.hypot(x - 470, y - 290) < 34); return { x, y, ph: R() * 6, e: el("circle", { r: 6.2, fill: BONE, stroke: INK, "stroke-width": 1.7 }, gPanel) }; });
+  const rich = el("circle", { r: 22, fill: CHAR }, gPanel), poor = el("circle", { cx: 812, cy: 296, r: 14, fill: STONE }, gPanel);
+  const lambGone = el("circle", { cx: 842, cy: 312, r: 7.5, fill: "none", stroke: STONE, "stroke-width": 1.6, "stroke-dasharray": "3 4" }, gPanel);
+  const lamb = el("circle", { r: 7.5, fill: BONE, stroke: INK, "stroke-width": 1.8 }, gPanel), guest = el("circle", { r: 14, fill: BONE, stroke: INK, "stroke-width": 3 }, gPanel);
+  const thatLab = txt(gPanel, "lab", 470, 160, "THAT MAN");
+  const gIn = el("g", {}, gPanel); [frame, tail, ...sheep.map((x) => x.e), poor, lambGone, lamb, guest, thatLab].forEach((e) => gIn.appendChild(e)); gPanel.appendChild(rich);
+  const accuse = line(world, "M972 428 L500 304", { "stroke-width": 3.5 });
+  const rays = [...Array(10)].map((_, i) => el("line", { stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, world));
+
+  // ---------- the two men ----------
+  const gN = el("g", {}, world); el("circle", { r: 19, fill: STONE }, gN);
+  const gK = el("g", {}, world); const kDot = el("circle", { r: 24, fill: INK }, gK);
+  const spot = el("circle", { cx: 15, cy: -11, r: 7, fill: STONE }, gK), spotRing = el("circle", { cx: 15, cy: -11, r: 13, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gK);
+  const crown = el("path", { d: "M-22 0 L-22 -19 L-11 -8 L0 -23 L11 -8 L22 -19 L22 0 Z", fill: MUSTARD }, world);
+  const truth = line(world, "M0 0", { stroke: MUSTARD, "stroke-width": 2 });
+  const v1 = verseBlock(SC.turn, 236, 88), v2 = verseBlock(SC.confess, 214, 62);
+
+  // ---------- 5: why the story worked ----------
+  const gSee = el("g", { transform: "translate(640 300) scale(1.25) translate(-640 -300)" }, world);
+  const win = line(gSee, "M310 205 H490 V385 H310 Z M400 205 V385 M310 295 H490", { "stroke-width": 3 }), other = el("g", {}, gSee);
+  el("circle", { cx: 400, cy: 295, r: 30, fill: STONE }, other); el("circle", { cx: 386, cy: 283, r: 9, fill: CHAR }, other); const otherRing = el("circle", { cx: 386, cy: 283, r: 17, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, other);
+  const mirror = el("ellipse", { cx: 880, cy: 295, rx: 82, ry: 100, fill: WARM, stroke: INK, "stroke-width": 3 }, gSee), own = el("circle", { cx: 880, cy: 295, r: 30, fill: STONE }, gSee);
+  const labOther = txt(gSee, "lab", 400, 432, "SOMEBODY ELSE'S"), labOwn = txt(gSee, "lab", 880, 432, "HIS OWN");
+  const gRow = el("g", { transform: "translate(640 320) scale(1.15) translate(-640 -320)" }, world);
+  const row = [...Array(7)].map((_, i) => { const x = 250 + i * 130, g = el("g", {}, gRow); el("circle", { cx: x, cy: 320, r: 21, fill: STONE }, g); el("circle", { cx: x - 13, cy: 309, r: 7, fill: CHAR }, g);
+    return { g, x, ring: el("circle", { cx: x - 13, cy: 309, r: 13, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, gRow), look: i ? line(gRow, `M${x - 109} 320 Q${x - 70} 286 ${x - 28} 304`, { stroke: MUSTARD, "stroke-width": 2 }) : null }; });
+
+  const drawOpen = (t) => {
+    const v = 1 - up(t, B0 - 0.8, 0.7); op(gOpen, t < B0 ? v : 0); if (v <= 0) return;
+    const take = up(t, A0 + 1.3, 1.5), wx = mix(940, 688, take); op(man, up(t, A0 + 0.5, 0.5) * (1 - up(t, A0 + 3.0, 1.0))); op(manGone, up(t, A0 + 3.2, 0.8)); op(wife, up(t, A0 + 0.7, 0.5));
+    set(wife, { cx: wx.toFixed(1), cy: (330 + 1.5 * Math.sin(t * 1.1)).toFixed(1) }); bond.setAttribute("d", `M900 314 Q${((900 + wx) / 2).toFixed(1)} ${(300 - 30 * take).toFixed(1)} ${wx.toFixed(1)} 314`); op(bond, up(t, A0 + 0.9, 0.5) * (1 - up(t, A0 + 1.5, 0.9)));
+    const cv = up(t, A0 + 3.7, 0.9); op(cover, cv); cover.setAttribute("y", mix(210, 288, cv).toFixed(1));
+    op(davidLab, up(t, A1 + 0.2, 0.6)); draw(dayLine, up(t, A1 + 1.4, 0.8)); days.forEach((d, i) => op(d, up(t, A1 + 1.6 + i * 0.2, 0.35)));
+  };
+  const drawStory = (t) => {
+    const v = up(t, B0 + 2.3, 0.4) * (1 - up(t, T1 + 0.9, 0.5)); op(gPanel, v); op(gIn, 1 - up(t, T1 - 0.45, 0.6));
+    if (v > 0) { draw(frame, up(t, B0 + 2.4, 1.6)); draw(tail, up(t, B0 + 2.2, 0.6)); const dim = 1 - 0.45 * up(t, AN, 0.8);
+      op(rich, up(t, B1, 0.5)); const home = up(t, T1 - 0.2, 1.1); set(rich, { cx: mix(470, 830 + 4, home).toFixed(1), cy: mix(290, 440, home).toFixed(1) });
+      sheep.forEach((s, i) => { op(s.e, up(t, B1 + 0.5 + i * 0.07, 0.4) * dim); set(s.e, { cx: (s.x + 2.5 * Math.sin(t * 0.9 + s.ph)).toFixed(1), cy: (s.y + 2 * Math.cos(t * 1.1 + s.ph)).toFixed(1) }); });
+      op(poor, up(t, B1 + 2.7, 0.5) * dim); const tk = up(t, B2 + 1.6, 1.8), lv = up(t, B1 + 3.5, 0.5);
+      op(lamb, lv); set(lamb, { cx: (mix(842, 508, tk) + 3 * Math.sin(t * 1.8) * (1 - tk)).toFixed(1), cy: (mix(312, 322, tk) - 26 * Math.sin(Math.PI * tk) + 2 * Math.cos(t * 1.5) * (1 - tk)).toFixed(1) }); op(lambGone, up(t, B2 + 2.6, 0.7));
+      op(guest, up(t, B2 - 0.1, 0.5) * dim); set(guest, { cx: mix(352, 428, up(t, B2 - 0.1, 1.2)).toFixed(1), cy: 352 }); op(thatLab, span(t, AN + 1.8, T1 + 0.1, 0.5)); }
+    const av = t > AN + 1.2 && t < T1 + 1.2; op(accuse, av ? 1 - up(t, T1 - 0.4, 0.6) : 0); if (av) draw(accuse, up(t, AN + 1.3, 1.2));
+    const fury = span(t, AN - 0.1, T1 - 0.1, 0.6, 0.8); rays.forEach((r, i) => { const a = (i / 10) * Math.PI * 2 + t * 0.25, r0 = 30, r1 = 30 + (10 + 5 * Math.sin(t * 3 + i * 1.7)) * fury; op(r, fury);
+      set(r, { x1: (1010 + (r0 + 6) * Math.cos(a)).toFixed(1), y1: (450 + (r0 + 6) * Math.sin(a)).toFixed(1), x2: (1010 + (r1 + 8) * Math.cos(a)).toFixed(1), y2: (450 + (r1 + 8) * Math.sin(a)).toFixed(1) }); });
+  };
+  const drawMen = (t) => {
+    const toStory = up(t, B0 - 0.2, 1.4), toTurn = up(t, T1 - 0.1, 1.2), hid = up(t, TE0 - 0.4, 0.6) * (1 - up(t, CF0 - 0.5, 0.7)), back = t > TE1 ? 1 : 0, near = up(t, CL - 0.1, 1.6);
+    let kx = mix(mix(640, 1010, toStory), 830, toTurn), ky = mix(mix(335, 450, toStory), 440, toTurn), ks = mix(mix(1.5, 1, toStory), 1.1, toTurn);
+    if (back) { kx = 810; ky = 400; ks = 1.4; }
+    const bow = up(t, CF0 + 2.6, 1.3); ky += 12 * bow * back;
+    op(gK, up(t, A0 - 0.2, 0.6) * (1 - hid)); move(gK, kx, ky + 1.5 * Math.sin(t * 0.8), ks + 0.1 * span(t, AN, T1, 0.7));
+    let cx = kx, cy = ky - 26 * ks - 4, cr = 0; if (back) { cx = mix(kx, kx + 84, bow); cy = mix(cy, ky + 34, bow); cr = 24 * bow; }
+    op(crown, up(t, A0 + 0.1, 0.7) * (1 - hid)); move(crown, cx, cy - 26 * (1 - up(t, A0 + 0.1, 1.0)), ks, cr);
+    let nx = mix(mix(-40, 270, up(t, B0, 1.7)), 450, toTurn), ny = mix(450, 440, toTurn); if (back) { nx = mix(470, 650, near); ny = 404; }
+    op(gN, (t > B0 - 0.1 ? 1 : 0) * (1 - hid)); move(gN, nx, ny + 1.5 * Math.cos(t * 0.9), (back ? 1.4 : 1.25) + 0.12 * span(t, T0, T1 + 0.5, 0.5));
+    // the threat the king could have made, drawn and taken back; then the truth told about his blind spot
+    const thr = up(t, CF0 + 0.3, 1.3) * (1 - up(t, CF0 + 2.0, 1.0)), ex = mix(770, 540, thr);
+    accuse2.setAttribute("d", `M770 400 H${ex.toFixed(1)}`); op(accuse2, back && thr > 0.01 ? 1 : 0);
+    const sv = back * up(t, CL + 0.1, 0.6) * (1 - up(t, CL + 3.0, 0.8)); op(spot, sv); op(spotRing, back * up(t, CL + 1.6, 0.6) * (1 - up(t, CL + 3.2, 0.7)));
+    truth.setAttribute("d", `M${(nx + 26).toFixed(1)} ${(ny - 12).toFixed(1)} Q${((nx + kx) / 2).toFixed(1)} ${(ny - 90).toFixed(1)} ${(kx + 12).toFixed(1)} ${(ky - 34).toFixed(1)}`); op(truth, back ? up(t, CL + 0.9, 0.2) * (1 - up(t, CL + 3.2, 0.7)) : 0); draw(truth, up(t, CL + 0.9, 1.0));
+    const a = span(t, T1 - 0.15, TE0 + 0.2, 0.35, 0.6); op(v1.g, a); v1.v.setAttribute("y", (236 + 10 * (1 - up(t, T1 - 0.15, 0.6))).toFixed(1)); op(v1.r, up(t, T1 + 0.6, 0.6));
+    const b = span(t, CF1 - 0.2, CL + 0.3, 0.4, 0.7); op(v2.g, b); v2.v.setAttribute("y", (214 + 10 * (1 - up(t, CF1 - 0.2, 0.7))).toFixed(1)); op(v2.r, up(t, CF1 + 0.7, 0.6));
+  };
+  const accuse2 = el("path", { fill: "none", stroke: INK, "stroke-width": 3.5, "stroke-linecap": "round" }, world);
+  const drawTeach = (t) => {
+    const v = span(t, TE0 + 0.2, TE1 + 0.3, 0.5, 0.7); op(gSee, v);
+    if (v > 0) { draw(win, up(t, TE0 + 0.4, 1.4)); op(other, up(t, TE0 + 1.3, 0.6)); op(otherRing, up(t, TE0 + 2.3, 0.6)); otherRing.setAttribute("r", (17 + 1.5 * Math.sin(t * 2)).toFixed(2)); op(labOther, up(t, TE0 + 3.6, 0.6));
+      op(mirror, up(t, TE0 + 2.9, 0.7)); op(own, up(t, TE0 + 3.3, 0.6)); op(labOwn, up(t, TE0 + 4.2, 0.6)); own.setAttribute("cy", (295 + 2 * Math.sin(t * 0.9)).toFixed(1)); }
+    const rv = span(t, TE1 - 0.1, CF0 - 0.1, 0.5, 0.7); op(gRow, rv);
+    if (rv > 0) row.forEach((d, i) => { op(d.g, up(t, TE1 - 0.1 + i * 0.1, 0.5)); d.g.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 0.9 + i)).toFixed(2)})`);
+      if (d.look) { const a = TE1 + 1.0 + (i - 1) * 0.32; draw(d.look, up(t, a, 0.7)); op(d.ring, up(t, a + 0.4, 0.5)); } else op(d.ring, 0); });
+  };
+
+  F.title("You are that man");
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => { drawOpen(t); drawStory(t); drawTeach(t); drawMen(t); };
+});
+</script>
+</body></html>

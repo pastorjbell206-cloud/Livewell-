@@ -1,0 +1,119 @@
+{
+ "length": 71.11,
+ "chapters": [
+  {
+   "id": "fast",
+   "kicker": "The fastest Gospel",
+   "level": 0.25,
+   "start": 1.7,
+   "end": 16.16,
+   "lines": [
+    {
+     "text": "Mark is the shortest of the four Gospels, and the fastest. One word keeps showing up. Immediately.",
+     "start": 2.6,
+     "end": 7.86
+    },
+    {
+     "text": "There's no Christmas story. A grown man walks out of the wilderness and says the kingdom of God is near.",
+     "start": 8.46,
+     "end": 15.26
+    }
+   ]
+  },
+  {
+   "id": "who",
+   "kicker": "Who is this?",
+   "level": 0.45,
+   "start": 15.36,
+   "end": 27.88,
+   "lines": [
+    {
+     "text": "For eight chapters, everyone keeps asking the same thing. Who is this?",
+     "start": 16.26,
+     "end": 20.68
+    },
+    {
+     "text": "He calms a storm with a word. He heals the sick. He tells a man his sins are forgiven.",
+     "start": 21.22,
+     "end": 26.98
+    }
+   ]
+  },
+  {
+   "id": "question",
+   "kicker": "The middle of the book",
+   "level": 0.65,
+   "start": 27.08,
+   "end": 38.26,
+   "lines": [
+    {
+     "text": "Then, right in the middle, Jesus turns the question around.",
+     "start": 27.98,
+     "end": 31.26
+    },
+    {
+     "text": "But what about you? Who do you say I am?",
+     "start": 31.9,
+     "end": 34.48
+    },
+    {
+     "text": "Peter answers. You are the Christ.",
+     "start": 35.14,
+     "end": 37.36
+    }
+   ]
+  },
+  {
+   "id": "road",
+   "kicker": "The road to the cross",
+   "level": 0.8,
+   "start": 37.46,
+   "end": 52.44,
+   "lines": [
+    {
+     "text": "From that moment, the whole book walks toward a cross. Because this king came to do what no one expected.",
+     "start": 38.36,
+     "end": 44.4
+    },
+    {
+     "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.",
+     "start": 45.0,
+     "end": 51.54
+    }
+   ]
+  },
+  {
+   "id": "soldier",
+   "kicker": "A Roman soldier",
+   "level": 0.95,
+   "start": 51.64,
+   "end": 60.34,
+   "lines": [
+    {
+     "text": "And at the cross, the one who finally says it out loud is a Roman soldier.",
+     "start": 52.54,
+     "end": 56.7
+    },
+    {
+     "text": "Truly this man was the Son of God!",
+     "start": 57.24,
+     "end": 59.44
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 59.54,
+   "end": 65.012,
+   "lines": [
+    {
+     "text": "Mark leaves you holding his question. Who do you say he is?",
+     "start": 60.44,
+     "end": 64.112
+    }
+   ]
+  }
+ ]
+}

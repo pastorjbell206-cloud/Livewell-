@@ -3,7 +3,7 @@
   "note": "Written fresh on 2026-11-26 at James's word: \"I want you to have liberty to write the scripts.\" Not recorded, and James has not read it yet. Every fact is listed with where to check it in facts.md beside this file. Scripture is the Berean Standard Bible, copied word for word from client/public/bible/text/; an exclamation mark appears only where the verse has one. Field names and `gap` follow James's description of the Gather scripts; match them to film/beliefs/script.json on the Mac.",
   "page": "/studyguides/lament",
   "translation": "Berean Standard Bible",
-  "gap": 0.35,
+  "gap": 1.0,
   "chapters": [
     {
       "id": "idea",

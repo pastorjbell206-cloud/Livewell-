@@ -25,7 +25,9 @@
 
   // ---------- small tools ----------
   const el = (name, attrs, parent) => { const e = document.createElementNS(NS, name); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
-  const txt = (parent, cls, x, y, s, size, extra) => { const e = el("text", { class: cls, x, y, ...(size ? { style: `font-size:${size}px` } : {}), ...(extra || {}) }, parent); e.textContent = s; return e; };
+  // size and fill go in as inline style: a CSS class beats an SVG attribute, so `fill="..."` on classed text is ignored
+  const txt = (parent, cls, x, y, s, size, extra) => { const { fill, ...rest } = extra || {}; const st = (size ? `font-size:${size}px;` : "") + (fill ? `fill:${fill};` : "");
+    const e = el("text", { class: cls, x, y, ...(st ? { style: st } : {}), ...rest }, parent); e.textContent = s; return e; };
   const set = (e, attrs) => { for (const k in attrs) e.setAttribute(k, attrs[k]); };
   const clamp = (x) => Math.max(0, Math.min(1, x));
   const ease = (x) => { x = clamp(x); return x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };

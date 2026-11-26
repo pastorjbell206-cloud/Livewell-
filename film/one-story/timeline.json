@@ -1,0 +1,147 @@
+{
+ "length": 76.93,
+ "chapters": [
+  {
+   "id": "books",
+   "kicker": "Sixty-six books",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 10.4,
+   "lines": [
+    {
+     "text": "The Bible is sixty-six books, written by many authors over more than a thousand years.",
+     "start": 2.6,
+     "end": 7.68
+    },
+    {
+     "text": "And it tells one story.",
+     "start": 8.18,
+     "end": 9.5
+    }
+   ]
+  },
+  {
+   "id": "good",
+   "kicker": "A good beginning",
+   "level": 0.35,
+   "start": 9.6,
+   "end": 16.94,
+   "lines": [
+    {
+     "text": "It opens with God making a good world.",
+     "start": 10.5,
+     "end": 12.58
+    },
+    {
+     "text": "In the beginning God created the heavens and the earth.",
+     "start": 13.16,
+     "end": 16.04
+    }
+   ]
+  },
+  {
+   "id": "crack",
+   "kicker": "Everything cracks",
+   "level": 0.5,
+   "start": 16.14,
+   "end": 25.66,
+   "lines": [
+    {
+     "text": "Then people decide they'd rather run it themselves. And everything cracks. With God, with each other, with the world itself.",
+     "start": 17.04,
+     "end": 24.76
+    }
+   ]
+  },
+  {
+   "id": "promise",
+   "kicker": "A promise to one family",
+   "level": 0.6,
+   "start": 24.86,
+   "end": 34.74,
+   "lines": [
+    {
+     "text": "God doesn't walk away. He chooses one family, Abraham's, and makes a promise.",
+     "start": 25.76,
+     "end": 30.78
+    },
+    {
+     "text": "All the families of the earth will be blessed through you.",
+     "start": 31.24,
+     "end": 33.84
+    }
+   ]
+  },
+  {
+   "id": "wait",
+   "kicker": "A long wait",
+   "level": 0.7,
+   "start": 33.94,
+   "end": 44.28,
+   "lines": [
+    {
+     "text": "The rest of the Old Testament follows that family. Rescued from slavery. Given a land. Ruled by kings. Carried into exile. And waiting.",
+     "start": 34.84,
+     "end": 43.38
+    }
+   ]
+  },
+  {
+   "id": "author",
+   "kicker": "The author steps in",
+   "level": 0.9,
+   "start": 43.48,
+   "end": 60.2,
+   "lines": [
+    {
+     "text": "Then the story does something no one saw coming. The author steps into it.",
+     "start": 44.38,
+     "end": 49.7
+    },
+    {
+     "text": "The Word became flesh and made His dwelling among us.",
+     "start": 50.16,
+     "end": 53.22
+    },
+    {
+     "text": "Jesus lives the life we didn't. He dies the death we earned. And he walks out of the grave.",
+     "start": 53.76,
+     "end": 59.3
+    }
+   ]
+  },
+  {
+   "id": "new",
+   "kicker": "The last page",
+   "level": 0.95,
+   "start": 59.4,
+   "end": 65.84,
+   "lines": [
+    {
+     "text": "The last page sounds like the first.",
+     "start": 60.3,
+     "end": 62.1
+    },
+    {
+     "text": "Behold, I make all things new.",
+     "start": 62.62,
+     "end": 64.94
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 65.04,
+   "end": 70.827,
+   "lines": [
+    {
+     "text": "You're living between those two pages. Find your place in the story.",
+     "start": 65.94,
+     "end": 69.927
+    }
+   ]
+  }
+ ]
+}

@@ -29,6 +29,7 @@ Copied from the Gather Church films on 2026-11-26 and adapted to LiveWell's look
 5. `FILM_DIR=film/<name> node film/tools/sheet.mjs` makes `film/shots/<name>/sheet.png`. Look at it; fix labels that touch and scenes that sit empty. `still.mjs` exports one frame exactly as the render will.
 6. `FILM_DIR=film/<name> node film/tools/make-music.mjs` then `FILM_DIR=film/<name> python3 film/tools/mix.py` write `audio/soundtrack.wav`. The music is code (`tools/music.html`), so there is nothing to license. `MUSIC_CALM` (default 0.6) keeps it quieter than Gather's.
 7. `FILM_DIR=film/<name> node film/tools/render.mjs <scratch frames folder>` (1920x1080, 60 a second), then `swift film/tools/encode.swift <frames> 60 film/<name>/audio/soundtrack.wav film/out/<name>.mp4 1.6`.
+Steps 6 and 7 in one go: `film/tools/build.sh <name> <scratch folder>`.
 8. `FILM_DIR=film/<name> node film/tools/poster.mjs <second> film/out/<name>-poster.jpg`.
 
 Audio, frames, stills and finished MP4s are not committed (`.gitignore`). Finished films live in `film/out/`. `film/STATUS.md` tracks every film.

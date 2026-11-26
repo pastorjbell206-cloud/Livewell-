@@ -1,0 +1,123 @@
+{
+ "length": 55.96,
+ "chapters": [
+  {
+   "id": "famous",
+   "kicker": "A famous verse",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 10.92,
+   "lines": [
+    {
+     "text": "You've seen this one. On gym walls. On locker room doors.",
+     "start": 2.6,
+     "end": 6.52
+    },
+    {
+     "text": "I can do all things through Christ who gives me strength.",
+     "start": 7.14,
+     "end": 10.02
+    }
+   ]
+  },
+  {
+   "id": "sounds",
+   "kicker": "What it sounds like",
+   "level": 0.35,
+   "start": 10.12,
+   "end": 18.1,
+   "lines": [
+    {
+     "text": "It sounds like a promise that you'll win.",
+     "start": 11.02,
+     "end": 12.7
+    },
+    {
+     "text": "So here's the first rule of reading the Bible. Read the verse next door.",
+     "start": 13.32,
+     "end": 17.2
+    }
+   ]
+  },
+  {
+   "id": "prison",
+   "kicker": "Where Paul was",
+   "level": 0.55,
+   "start": 17.3,
+   "end": 25.82,
+   "lines": [
+    {
+     "text": "Paul wrote this letter as a prisoner, in chains.",
+     "start": 18.2,
+     "end": 20.98
+    },
+    {
+     "text": "And one sentence earlier, he tells you what all things means.",
+     "start": 21.46,
+     "end": 24.92
+    }
+   ]
+  },
+  {
+   "id": "next-door",
+   "kicker": "One sentence earlier",
+   "level": 0.7,
+   "start": 25.02,
+   "end": 31.02,
+   "lines": [
+    {
+     "text": "Being filled and being hungry. Having plenty and having need.",
+     "start": 25.92,
+     "end": 30.12
+    }
+   ]
+  },
+  {
+   "id": "means",
+   "kicker": "What all things means",
+   "level": 0.85,
+   "start": 30.22,
+   "end": 38.22,
+   "lines": [
+    {
+     "text": "All things isn't winning. It's the full days and the hungry days. It's being all right when you lose.",
+     "start": 31.12,
+     "end": 37.32
+    }
+   ]
+  },
+  {
+   "id": "better",
+   "kicker": "A better promise",
+   "level": 0.95,
+   "start": 37.42,
+   "end": 46.04,
+   "lines": [
+    {
+     "text": "That's a better promise than the one on the wall. It doesn't say you'll get what you want.",
+     "start": 38.32,
+     "end": 42.6
+    },
+    {
+     "text": "It says Christ will be enough when you don't.",
+     "start": 43.08,
+     "end": 45.14
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 45.24,
+   "end": 49.858,
+   "lines": [
+    {
+     "text": "So before you quote a verse, read the ones around it.",
+     "start": 46.14,
+     "end": 48.958
+    }
+   ]
+  }
+ ]
+}
