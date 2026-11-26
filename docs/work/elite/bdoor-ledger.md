@@ -22731,3 +22731,22 @@ Cut in chapter 6: the deep note's line to Christ (any reading of the bride as th
 | Genesis 3:16 (its third sentence); Genesis 30:14-16 named | 10-13 | song-of-solomon/7.json `words` (teshuqah), `cultural`; BSB | Repository; BSB text |
 
 Cut in chapter 7: the deep note's line that the gospel announces the undoing of Genesis 3's curse beside verse 10 (a line the New Testament does not draw from this verse). The chapter's most explicit lines (7:1-3, 7-9) are told with restraint and not quoted. No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 8 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Her wish (8:1-2) paraphrased, not quoted; the embrace (8:3) paraphrased; 8:4 (in double quotes); 8:5 (its first sentence; the rest not quoted) | 1-5 | BSB | BSB text |
+| Public affection and siblings; showing love without shame; the mother's house (3:4); the threads gathered; the third, shorter charge without the oath; 3:6 returning; leaning on her beloved | 1-5 | song-of-solomon/8.json `cultural`, `story`, `literary` | Repository |
+| Hosea 2:14 (inside its opening quotation mark, the span without inner marks); Genesis 2:24 (its last words) | 1-5 | song-of-solomon/intro.json `story` (the prophets' marriage pictures, Hosea 1 to 3); song-of-solomon/1.json `hard` (Genesis 2); BSB | Repository; BSB text |
+| 8:6; 8:7 (both in double quotes) | 6-7 | BSB | BSB text |
+| The only step back to say what love is; the pairs; the seal as a carved stone on a cord or ring (Genesis 38:18); qin'ah; Sheol never full; the mighty waters; the flame's -yah syllable, God's name or the fiercest flame; love not bought | 6-7 | song-of-solomon/8.json `cultural`, `literary`, `words` (chotam, qin'ah, shalhevet) | Repository; each reading in its holders' terms |
+| Deuteronomy 4:24; Genesis 38:18 named | 6-7 | song-of-solomon/8.json `words` (qin'ah, jealousy or zeal), set beside the law's own words for God's jealous love; song-of-solomon/8.json `cultural` (Genesis 38:18); BSB | Repository; BSB text |
+| The hard note: the ancient question and Jewish tradition's debate; received as God's love for Israel, and in the church for Christ and the church; read first as love poetry by many; the allegorical or typological reading held essential by others; not cancelling each other; Esther as the other book that does not clearly name God | 6-7 `hard` | song-of-solomon/8.json `hard` | Repository; each reading in its holders' terms |
+| The little sister (8:8) paraphrased; 8:9; 8:10 (its last sentence; the first not quoted); 8:11; 8:12 (its first clause; the rest paraphrased); 8:13 paraphrased; 8:14 | 8-14 | BSB | BSB text |
+| Brothers protecting and negotiating; wall and door; the brothers of 1:6; her own answer and choice; no right for anyone to control a woman's life; Baal-hamon unknown and its meaning; a thousand shekels as a vineyard's conventional value (Isaiah 7:23); Solomon's wealth and wives (1 Kings 10 and 11); her vineyard hers to give; 2:17 echoed; the book falling silent | 8-14 | song-of-solomon/8.json `historical`, `cultural`, `literary`; the brief's rule against coercion | Repository |
+| Isaiah 7:23 (its clause); Song of Songs 1:6 (its clause) | 8-14 | song-of-solomon/8.json `historical` (Isaiah 7:23); BSB | Repository; BSB text |
+
+Cut in chapter 8: the deep note's lines to Christ (Ephesians 5:25 and Romans 8:38-39 beside love as strong as death; Ephesians 1:13 and the Spirit's seal beside verse 6; the note calls them connections of theme). The explicit lines (8:1, 8:5b, 8:8a, 8:10a) are told with restraint. No care line is needed in this chapter.
