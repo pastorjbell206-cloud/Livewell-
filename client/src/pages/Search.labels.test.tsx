@@ -32,8 +32,8 @@ describe("a hub page's search label", () => {
       expect(label, hub.href).not.toBe("Main Pages");
       if (label) expect(NAMES.has(label), `${hub.href}: ${label}`).toBe(true);
     }
-    // Paul's travels is listed inside the Bible door's room "The Bible's story"; a film sits in the Bible Explorer.
-    expect(resultLabel({ sourceLabel: "Main Pages", href: "/study/explorer/pauls-travels" })).toBe("The Bible's story");
+    // Paul's travels is listed inside the Bible door's room "Bible films"; a film sits in the Bible Explorer.
+    expect(resultLabel({ sourceLabel: "Main Pages", href: "/study/explorer/pauls-travels" })).toBe("Bible films");
     expect(resultLabel({ sourceLabel: "Main Pages", href: FILM.href })).toBe("Bible Explorer");
     expect(resultLabel({ sourceLabel: "Main Pages", href: "/study/bible" })).toBe("Bible");
     // Beside the doors: no door, so no label.
@@ -61,7 +61,7 @@ describe("a hub page's search label", () => {
     renderWithProviders(<Search />);
     const result = await screen.findByRole("link", { name: /Paul's travels/ }, { timeout: 8000 });
     expect(result).toHaveAttribute("href", "/study/explorer/pauls-travels");
-    expect(within(result).getByText("The Bible's story")).toBeInTheDocument();
+    expect(within(result).getByText("Bible films")).toBeInTheDocument();
     expect(screen.queryByText("Main Pages")).toBeNull();
   });
 });

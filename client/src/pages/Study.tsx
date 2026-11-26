@@ -49,6 +49,7 @@ function Shelf() {
 
 /** Each room's picture and the short note on its card, by its id in the site catalogue. */
 const ROOM_ART: Record<string, { note: string; plate: PlateName }> = {
+  "bible.films": { note: "Narrated, a few minutes each", plate: "lantern" },
   "bible.read": { note: "Notes on every chapter", plate: "book" },
   "bible.search": { note: "Any word or phrase", plate: "lens" },
   "bible.how-to-study": { note: "Seven steps, in order", plate: "compass" },

@@ -77,9 +77,14 @@ export const MOVING_MAPS: {
 export function Watch({
   index,
   level,
+  title = "Watch and learn",
+  lede = "Short moving pictures, drawn in the same hand as the map. Press Play to watch, or step through by hand; every word is under the picture.",
 }: {
   index: ExplorerIndex;
   level: Level;
+  /** The section's heading; /study/films names it for everyone, the map for its young readers. */
+  title?: string;
+  lede?: string;
 }) {
   const groups: FilmGroupInfo[] = index.filmGroups ?? [];
   const films: FilmSummary[] = index.films ?? [];
@@ -88,16 +93,13 @@ export function Watch({
     <section className="wl-sec" id={WATCH_ID} aria-labelledby="wl-title">
       <div className="ex-wrap">
         <h2 className="ex-h2" id="wl-title">
-          Watch and learn
+          {title}
           <Count
             n={films.filter(f => f.status === "finished").length}
             what="moving pictures"
           />
         </h2>
-        <p className="ex-lede">
-          Short moving pictures, drawn in the same hand as the map. Press Play
-          to watch, or step through by hand; every word is under the picture.
-        </p>
+        <p className="ex-lede">{lede}</p>
         <ul className="wl-groups">
           {groups.map(g => {
             const mine = films.filter(f => f.group === g.id);

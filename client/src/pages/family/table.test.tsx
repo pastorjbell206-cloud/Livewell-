@@ -121,8 +121,8 @@ describe("/family", () => {
     renderAt("/family");
     const rooms = await screen.findByRole("region", { name: "Everything for the table." });
     expect(within(rooms).getByRole("link", { name: "Bible Explorer" })).toHaveAttribute("href", "/study/explorer");
-    expect(within(rooms).getByRole("link", { name: "Watch and learn" })).toHaveAttribute("href", "/study/explorer#watch");
-    expect(rooms).toHaveTextContent("Watch and learn, its short films to watch together.");
+    expect(within(rooms).getByRole("link", { name: "Bible films" })).toHaveAttribute("href", "/study/films");
+    expect(rooms).toHaveTextContent("Bible films, short films to watch together.");
   });
 
   it("says so when the index does not arrive, and loads on a retry", async () => {
