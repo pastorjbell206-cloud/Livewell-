@@ -21666,3 +21666,22 @@ Cut from the book page: every line the introduction draws to Christ beyond what 
 | Isaiah 62:4; Micah 3:10 | 21-31 `later` | BSB | BSB text |
 
 Cut in chapter 1: the deep note's lines to Christ that the New Testament does not draw (1 John 1:7 and Revelation 7:14 beside 1:18; Matthew 23:23 beside the chapter). No care line is needed in this chapter.
+
+## The plain notes on Isaiah 2 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1-5 | 1-5 | BSB | BSB text |
+| The restored Jerusalem on a world scale; mountains and temples; ziggurats; Babel reversed; torah as teaching; swords and plowshares; Micah 4 and the debate over who borrowed | 1-5 | isaiah/2.json `story`, `historical`, `cultural`, `words` | Repository; the debate stated |
+| Micah 4:4; Joel 3:10; Acts 2:17 | 1-5 `later` | isaiah/2.json `cultural` (Joel 3:10), `words` (Acts 2:17); BSB | BSB text |
+| The hard note: this age or the age to come; Jewish hope; peace from learning God's ways; verse 5 | 1-5 `hard` | isaiah/2.json `hard` | Repository; each reading in its holders' terms |
+| 2:6-11 | 6-11 | BSB | BSB text |
+| Uzziah and Jotham's prosperity; Deuteronomy 17:16-17; divination; elil | 6-11 | isaiah/2.json `historical`, `cultural`, `words` | Repository |
+| Deuteronomy 17:16-17 | 6-11 `later` | BSB | BSB text |
+| 2:12-22 (2:12's clause before the dash) | 12-22 | BSB | BSB text |
+| The day of the LORD and Amos; the ten lofty things; Lebanon, Bashan, Tarshish; the refrain; moles and bats | 12-22 | isaiah/2.json `story`, `historical`, `literary` | Repository |
+| Psalm 146:3; Revelation 6:15 | 12-22 `later` | isaiah/2.json `christ` (Revelation 6:15-16); BSB | BSB text |
+
+Cut in chapter 2: the bronze statue at the United Nations (1959), named in the deep note, left out as beside the point. No care line is needed in this chapter.
