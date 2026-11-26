@@ -25147,3 +25147,16 @@ Cut in chapter 13: the deep note's New Testament tests (1 John 4:1-3; Matthew 7:
 | Later: Genesis 6:9; Job 1:1; Jeremiah 15:1 | 12-23 `later` | BSB | BSB text |
 
 Cut in chapter 14: nothing drawn to the New Testament.
+
+## The plain notes on Ezekiel 15 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| What is vine wood good for?: the text paraphrased; quoted clauses at verses 2, 3, 4, 5, 7, 8 | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | ezekiel/15.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 80:8; Isaiah 5:4 | 1-8 `later` | BSB | BSB text |
+| The hard note: Is it fair to call God's people useless, as if their only value were what they produce? The readings in their holders' terms | 1-8 `hard` | ezekiel/15.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 15: John 15:6 beside the burned branches, which the New Testament does not draw from Ezekiel.
