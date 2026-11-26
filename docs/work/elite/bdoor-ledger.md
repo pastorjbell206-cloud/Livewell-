@@ -24389,3 +24389,22 @@ Cut in chapter 62: Ephesians 5 and Revelation 2, 3 and 21, which the deep note l
 | Isaiah 64:1 (paraphrased); Deuteronomy 32:6 (its question) | 15-19 `later` | BSB | BSB text |
 
 Cut in chapter 63: the reading of the winepress as the cross, which the deep note itself calls thematic, is left out, and a draft line on Romans 8:15 was replaced by Deuteronomy 32:6.
+
+## The plain notes on Isaiah 64 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/64.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 64:1-7 | 1-7 | BSB | BSB text |
+| Second half of the lament from 63:7; Sinai and the storm poems; the sky as a dome; qara as tearing clothes | 1-7 | isaiah/64.json `story`, `cultural`, `words` | Repository |
+| Purity language; iddah as menstrual cloth; best deeds unfit while hearts were turned away | 1-7 | isaiah/64.json `cultural`, `words` | Repository |
+| Hebrew numbering one lower | 1-7 | isaiah/64.json `historical` | Repository |
+| 1 Corinthians 2:9 (its inner quotation); Exodus 19:18 (its clause) | 1-7 `later` | BSB; isaiah/64.json `christ` | BSB text |
+| Verse 6 in context; verse 5; Protestant, Catholic and Orthodox readings; a confession, not an accusation | 1-7 `hard` | isaiah/64.json `hard` | Repository |
+| 64:8-12 | 8-12 | BSB | BSB text |
+| But now; Father and potter; Genesis 2:7; the word all | 8-12 | isaiah/64.json `literary`, `cultural` | Repository |
+| Nebuzaradan, 587 or 586 BC, 2 Kings 25:9; about 515 BC; the traditional view; Lamentations, Psalms 74 and 79; the hanging question | 8-12 | isaiah/64.json `historical`, `literary` | Repository |
+| Jeremiah 18:6 (its second sentence); Psalm 79:1 (its clause) | 8-12 `later` | BSB | BSB text |
+
+Cut in chapter 64: the reading of Mark 1:10 as an answer to verse 1, which the deep note gives as what many interpreters hear, is left out.
