@@ -25468,3 +25468,16 @@ Cut in chapter 26: nothing. Acts 7:48 is named only as Stephen speaking against 
 | Daniel 2:21, Ezra 1:7 (clauses); Jeremiah 28:10, 2 Kings 25:13 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 27: nothing.
+
+## The plain notes on Jeremiah 28 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 28:1-17 (verses 2-4, 11 and 16 paraphrased around inner speech marks) | all | BSB | BSB text |
+| 594 or 593 BC; Jeconiah still alive; Gibeon, a priests' town (Joshua 21:17) | 1-11 | jeremiah/28.json `historical` | Repository |
+| Hananiah's motives unknown; real promises behind his words; Deuteronomy 13 and 18; Jeremiah does not gloat | 12-17, `hard` | jeremiah/28.json `hard` | Repository |
+| Deuteronomy 18:22, 1 Kings 22:28, Deuteronomy 18:20, James 3:1 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 28: nothing.
