@@ -24937,3 +24937,19 @@ Cut in chapter 6: the deep note's suggestion of a counselor recast so that the h
 | Later: Zephaniah 1:18; Jeremiah 6:14 | 14-27 `later` | BSB | BSB text |
 
 Cut in chapter 7: nothing.
+
+## The plain notes on Ezekiel 8 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Carried to Jerusalem, and the idol of jealousy: the text paraphrased; quoted clauses at verses 1, 3, 4, 6 | 1-6 | BSB | BSB text |
+| Background in `hearers` | 1-6 | ezekiel/8.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 21:7; Exodus 20:5 | 1-6 `later` | BSB | BSB text |
+| Idolatry in the dark: the text paraphrased; quoted clauses at verses 7-10, 11, 12, 14, 16, 17, 18 | 7-18 | BSB | BSB text |
+| Background in `hearers` | 7-18 | ezekiel/8.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 23:11; Psalm 94:7 | 7-18 `later` | BSB | BSB text |
+| The hard note: How could religious leaders practice idolatry inside the temple and still think of themselves as faithful? The readings in their holders' terms | 7-18 `hard` | ezekiel/8.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 8: nothing; Jaazaniah's family named only as many scholars' view.
