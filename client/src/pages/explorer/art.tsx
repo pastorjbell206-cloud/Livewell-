@@ -921,6 +921,59 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M47,63V70M61,63V70" />
     </>
   ),
+  /* Ruth: two sheaves of barley bound and standing in a field, and a gold sun over them. */
+  "book-ruth": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M74,22a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M74,22a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <Shape d="M20,84L28,62L18,40H42L32,62L40,84Z" tone="c" off={0.8} />
+      <Shape d="M46,84L55,60L44,32H70L59,60L68,84Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M24,62h12M50,60h14" />
+      <path className="pl-l" d="M20,40l-3,-8M26,40l-1,-9M33,40l1,-9M40,40l3,-8M46,32l-3,-8M53,32l-1,-9M61,32l1,-9M68,32l3,-8" />
+    </>
+  ),
+  /* Jonah: a great fish under the waves, and a gold sun over the sea. */
+  "book-jonah": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M62,22a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-l" d="M62,22a10,10 0 1,0 20,0a10,10 0 1,0 -20,0Z" />
+      <path className="pl-f" d="M10,42q6,-5 12,0t12,0t12,0t12,0t12,0t12,0t12,0" />
+      <Shape d="M24,64C34,50 62,48 78,60C80,63 80,65 78,67C62,78 34,76 24,64Z" tone="b" off={0.8} />
+      <Shape d="M24,64L12,54C14,60 14,68 12,74Z" tone="b" off={0.8} />
+      <path className="pl-k" d="M70,61a2,2 0 1,0 4,0a2,2 0 1,0 -4,0Z" />
+    </>
+  ),
+  /* Daniel: an open window looking toward far hills, and the gold of morning in it. */
+  "book-daniel": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M20,84V16H80V84Z" tone="c" off={1} />
+      <path className="pl-paper" d="M32,70V28H68V70Z" />
+      <path className="pl-m" d="M40,62a10,10 0 0 1 20,0Z" />
+      <path className="pl-l" d="M40,62a10,10 0 0 1 20,0" />
+      <path className="pl-l" d="M32,62C40,56 46,58 50,62C56,56 62,56 68,60" />
+      <path className="pl-l" d="M32,70V28H68V70ZM50,28V44" />
+      <path className="pl-f" d="M26,76H74" />
+    </>
+  ),
+  /* 1 Corinthians: one loaf on one table, reached for from every side, under a gold lamp. */
+  "book-1-corinthians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M50,8V20" />
+      <path className="pl-m" d="M42,24h16l-3,8h-10Z" />
+      <path className="pl-l" d="M42,24h16l-3,8h-10Z" />
+      <Shape d="M18,66H82V72H18Z" tone="c" off={0.8} />
+      <Shape d="M36,66c0,-16 28,-16 28,0Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M24,72V84M76,72V84M14,58l12,6M86,58l-12,6M30,48l8,10M70,48l-8,10" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

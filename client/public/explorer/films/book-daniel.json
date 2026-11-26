@@ -1,0 +1,121 @@
+{
+  "slug": "book-daniel",
+  "title": "Daniel: the Most High rules",
+  "group": "books",
+  "status": "finished",
+  "book": "daniel",
+  "mark": "book-daniel",
+  "line": {
+    "younger": "A book of brave stories and strange visions: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Daniel as a whole book: court stories and visions, two languages, the Most High who rules the kingdoms, faith that will not bow, the Son of Man, and the ways readers date it and read its visions."
+  },
+  "poster": "Four young men walk on a long road toward a great city of high walls and towers, carrying their bundles. A gold sun is low behind the city.",
+  "frames": [
+    {
+      "id": "two",
+      "name": "Two books in one",
+      "still": "Four young men walk on a long road toward a great city of high walls and towers, carrying their bundles. A gold sun is low behind the city.",
+      "younger": "Daniel is like two books in one. The first half tells stories of Daniel and his three friends, taken far from home to serve the king of Babylon. The second half has visions about kingdoms, and about God's kingdom that lasts for ever.",
+      "older": "Daniel is two books in one. Chapters 1 to 6 are stories of Daniel and three friends, taken from Judah to serve the king of Babylon. Chapters 7 to 12 are visions of empires, and of the kingdom of God that outlasts them all.",
+      "verse": {
+        "ref": "Daniel 1:17",
+        "text": "To these four young men God gave knowledge and understanding"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in five panels: a young man with a scroll, a tall statue, a ram's horns, an open window and a rising star over them. A gold rule lies under the long second panel.",
+      "younger": "Daniel has twelve chapters. The first six are stories: a king's dream, a furnace, a hand writing on a wall, a den of lions. The last six are visions that Daniel sees for himself. The book was even written in two languages.",
+      "older": "Chapter 1 is in Hebrew. Chapters 2 to 7 are in Aramaic, framed by two visions of four kingdoms followed by God's kingdom. Then the book returns to Hebrew: the ram and the goat, a prayer, and a final vision.",
+      "verse": {
+        "ref": "Daniel 2:44",
+        "text": "the God of heaven will set up a kingdom that will never be destroyed"
+      }
+    },
+    {
+      "id": "rules",
+      "name": "Watch for: the Most High rules",
+      "still": "A great king's throne stands empty on a high stone platform, its crown laid down on the steps. Above the palace roofs one gold star shines, among small stars.",
+      "younger": "Watch for the book's big idea. The kings in Daniel think they are in charge. One proud king learns that he is not, and he praises God. God gives kingdoms and takes them away, and God's own kingdom never ends.",
+      "older": "Every chapter presses one claim: God gives kingdoms and takes them away. Proud kings are made to confess it. Empires are real and dangerous, but they are temporary, and they answer to a higher throne.",
+      "verse": {
+        "ref": "Daniel 4:25",
+        "text": "the Most High rules over the kingdom of mankind"
+      }
+    },
+    {
+      "id": "bow",
+      "name": "Watch for: faith that will not bow",
+      "still": "On a wide plain a crowd bows low before a tall statue, while three young men stand upright among them. A gold sun shines over the plain.",
+      "younger": "Watch Daniel's three friends. They will not bow down to the king's statue. They say God can save them, and even if he does not, they still will not bow. They are put into a fire, and they walk out unhurt.",
+      "older": "Daniel and his friends learn Babylon's language and serve its kings with integrity, but they draw the line at worship. Three of them will not bow to the golden statue, trusting God to save them, and to be trusted even if he does not.",
+      "verse": {
+        "ref": "Daniel 3:18",
+        "text": "But even if He does not, let it be known to you, O king, that we will not serve your gods"
+      }
+    },
+    {
+      "id": "window",
+      "name": "Watch for: quiet, costly faithfulness",
+      "still": "A man kneels at an open window in an upper room, facing far hills. Outside, the first gold light of morning is rising.",
+      "younger": "Watch Daniel when a new law says no one may pray to God. Daniel prays at his open window, just as he always did. He is put in a den of lions, and in the morning he comes out safe.",
+      "older": "When a decree forbids prayer, Daniel keeps praying at his open window, as he had done before. He is put into the lions' den and brought out alive, and a foreign king confesses that God's kingdom will not be destroyed.",
+      "verse": {
+        "ref": "Daniel 6:22",
+        "text": "My God sent His angel and shut the mouths of the lions."
+      }
+    },
+    {
+      "id": "son-of-man",
+      "name": "Watch for: one like a son of man",
+      "still": "A wide sea tossed by the wind, and above it great clouds lit from within by gold light. No one is drawn.",
+      "younger": "Watch the visions in the second half. Daniel sees kingdoms that look like wild animals. Then he sees one like a son of man, coming with the clouds, and he is given a kingdom that will never end. Jesus called himself the Son of Man.",
+      "older": "Empires rise like beasts from the sea, and one like a son of man is given a kingdom that will not pass away. Jesus took that title for himself. Many read the four kingdoms as Babylon, Media-Persia, Greece and Rome; many others, as Babylon, Media, Persia and Greece.",
+      "verse": {
+        "ref": "Daniel 7:13",
+        "text": "I saw One like the Son of Man coming with the clouds of heaven."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter one, then the stories in chapters two to six. Read the later visions with a grown-up you trust. The book ends with a promise that God's people will shine like the stars.",
+      "older": "Start with chapter 1. The key chapters are 2, 3, 4, 6, 7, 9 and 12. The visions are pictures, not a code for the news. Careful readers differ on when the book was finished; its own concern is endurance and hope.",
+      "verse": {
+        "ref": "Daniel 12:3",
+        "text": "those who lead many to righteousness will shine like the stars forever and ever."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Daniel kept praying even when it was against the law. What helps you keep doing what is right when it is hard?",
+    "older": "Daniel served Babylon well and still refused to worship its gods. Where would you draw that line where you live?"
+  },
+  "read": [
+    { "label": "Daniel 1", "href": "/study/bible/daniel/1" },
+    { "label": "Daniel 3", "href": "/study/bible/daniel/3" },
+    { "label": "Daniel 6", "href": "/study/bible/daniel/6" },
+    { "label": "Daniel 7", "href": "/study/bible/daniel/7" },
+    { "label": "Daniel 12", "href": "/study/bible/daniel/12" }
+  ],
+  "stops": [
+    "exile"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that God rules over every kingdom and that his kingdom will never end. They differ on when the book reached its final form: in the sixth century BC, as its own setting and long tradition hold; in the 160s BC, as most critical scholars hold; or by stages. They differ too on the four kingdoms of chapters 2 and 7: Babylon, Media-Persia, Greece and Rome, or Babylon, Media, Persia and Greece, and futurist readers add that the last reaches into the end of history. Readers who share a firm confession about God's rule and Scripture's authority differ on these questions. This moving picture takes no side and predicts no date; the readings are set out on",
+    "links": [
+      { "label": "the Daniel page of the Study Bible", "href": "/study/bible/daniel" }
+    ]
+  },
+  "care": "This stop tells of people who lost their home and were taken far away. If you have had to leave a home, or have lost someone or something you loved, it is right to feel sad, and you do not have to carry it alone. Talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Daniel in the Study Bible: the whole book", "href": "/study/bible/daniel" },
+    { "label": "The Prophets and Exile: a stop on the map", "href": "/study/explorer/exile" },
+    { "label": "The kingdom of God (a moving picture)", "href": "/study/explorer/watch/kingdom-of-god" },
+    { "label": "Revelation: the Lamb on the throne (a moving picture)", "href": "/study/explorer/watch/book-revelation" }
+  ],
+  "end": { "label": "Start reading: Daniel 1", "href": "/study/bible/daniel/1" }
+}

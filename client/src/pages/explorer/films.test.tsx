@@ -1723,6 +1723,10 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-luke",
     "book-acts",
     "book-revelation",
+    "book-ruth",
+    "book-jonah",
+    "book-daniel",
+    "book-1-corinthians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2297,5 +2301,75 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
       "Do not be afraid. I am the First and the Last"
     );
     expect(f.frames[2].still).toContain("No one is drawn.");
+  });
+
+  it("Ruth tells the family's deaths in words and draws none, lets Naomi's grief stand, and keeps help in view", () => {
+    const f = filmFile("book-ruth");
+    expect(f.care).toBe(filmFile("life-to-come").care);
+    expect(f.frames[0].younger).toContain("There the father dies, and then both sons.");
+    expect(f.frames[0].older).toContain("the men die there");
+    // The losses are told, never drawn: no still shows a death or a grave.
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /dead|dying|grave|tomb|bod(y|ies)|bury|buried|weep/i
+    );
+    expect(f.frames[1].verse?.text).toBe(
+      "I went away full, but the LORD has brought me back empty."
+    );
+    expect(f.think.older).toContain("the book lets her say it");
+    expect((f.deeper ?? []).map(d => d.href)).toContain("/wisdom/grief");
+  });
+
+  it("Jonah gives the ways Christians read it and takes none, and holds no people in contempt", () => {
+    const f = filmFile("book-jonah");
+    expect(f.care).toBe(filmFile("book-exodus").care);
+    const start = f.frames.find(x => x.id === "start")!;
+    // History, a teaching story, or both: at both levels, none taken.
+    expect(start.younger).toContain("as things that happened");
+    expect(start.younger).toContain("as a story told to teach");
+    expect(start.younger).toContain("some as both");
+    expect(start.older).toContain("Many read Jonah as history, many as a teaching story, some as both.");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect(f.differ?.text).toContain("A third group holds both.");
+    const t = text(f);
+    expect(t).not.toMatch(/pagan|heathen|savage|brutal|cruel|wicked city|\bIraq\b|modern/i);
+    // Jonah's wish to die (4:3, 8) is not told to children.
+    expect(captions(f)).not.toMatch(/wish(ed)? to die|take my life|better for me to die/i);
+  });
+
+  it("Daniel states the datings and the readings of its visions fairly, predicts nothing, names no one of today, and tells the furnace and the lions gently", () => {
+    const f = filmFile("book-daniel");
+    expect(f.care).toBe(filmFile("book-isaiah").care);
+    const vision = f.frames.find(x => x.id === "son-of-man")!;
+    expect(vision.older).toContain("Babylon, Media-Persia, Greece and Rome");
+    expect(vision.older).toContain("Babylon, Media, Persia and Greece");
+    expect(f.differ?.text).toContain("in the sixth century BC");
+    expect(f.differ?.text).toContain("in the 160s BC");
+    expect(f.differ?.text).toContain("or by stages");
+    expect(f.differ?.text).toMatch(/takes no side and predicts no date/);
+    const t = text(f);
+    expect(t).not.toMatch(/antichrist|rapture|tribulation|end times|seventy weeks|\b(19|20)\d\d\b|soon|any day now/i);
+    expect(t).not.toMatch(/Russia|China|America|United States|European|Iran|Iraq|pope|president|Israel today/i);
+    // Ages 7 to 11: no burning, no one eaten, no one killed.
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|eat(en)?\b|kill|die|dead|beast|blood/i);
+    expect(f.frames.find(x => x.id === "bow")!.younger).toContain("they walk out unhurt");
+    expect(f.frames.find(x => x.id === "window")!.younger).toContain("in the morning he comes out safe");
+    // No figure is drawn in the clouds; the statue is never gold.
+    expect(vision.still).toContain("No one is drawn.");
+    expect(f.frames.find(x => x.id === "bow")!.still).not.toMatch(/gold(en)? statue/i);
+  });
+
+  it("1 Corinthians names the hard passages of chapters 7, 11 and 14 as places where faithful churches differ, and takes no side", () => {
+    const f = filmFile("book-1-corinthians");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const start = f.frames.find(x => x.id === "start")!;
+    expect(start.older).toContain("in chapters 7, 11 and 14, are hard, and faithful churches reach different answers");
+    expect(start.younger).toContain("Christians who love Jesus read them in different ways");
+    expect(f.differ?.text).toContain("(chapter 7)");
+    expect(f.differ?.text).toContain("(11:2-16)");
+    expect(f.differ?.text).toContain("(chapters 12 to 14)");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    // No caption rules on marriage, head coverings, tongues or women's roles.
+    expect(captions(f)).not.toMatch(/head covering|tongues|women (must|should|may)|divorce|silent/i);
   });
 });
