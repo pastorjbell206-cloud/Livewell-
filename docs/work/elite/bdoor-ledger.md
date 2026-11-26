@@ -25937,3 +25937,16 @@ Cut in chapter 45: Matthew 6:33, which the New Testament does not tie to this ch
 | Zephaniah 1:7, 2 Kings 24:7, Isaiah 19:25 (clauses); Jeremiah 30:10 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 46: nothing. The hard note adds that no war today is to be called God's sacrifice.
+
+## The plain notes on Jeremiah 47 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/47.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 47:1-7 (verses 2, 4-5 and 7 partly paraphrased) | all | BSB | BSB text |
+| The heading's pharaoh: Neco II about 609 or 601 BC, Herodotus, or later; 604 BC Ashkelon in the Babylonian Chronicle; Stager's destruction layer | 1-7 | jeremiah/47.json `historical` | Repository |
+| Heading and poem: two views and a later heading | 1-7 `hard` | jeremiah/47.json `hard`; the coordinator's direction | Repository |
+| Amos 1:6-7 (named), Zephaniah 2:4, Zechariah 9:7 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 47: a draft line placing Caphtor, which this chapter's note does not do. The hard note says plainly that no line is drawn to any present-day people, place or conflict.
