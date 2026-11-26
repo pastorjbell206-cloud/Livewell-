@@ -21593,3 +21593,19 @@ Cut from the book page: the introduction's contrasts between Jonah and Jesus bey
 | Matthew 12:40 | 11-17 | jonah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
 
 Cut in chapter 1: nothing further. Jonah's offer in 1:12 is told as the book tells it, an offer to save the sailors, and is not read as a wish to die.
+
+## The plain notes on Jonah 2 (2026-11-25)
+
+`client/public/bible/notes/jonah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; 2:2 (its last sentence; the first paraphrased); 2:3-5 paraphrased (2:4's inner quotation not quoted); 2:6 (its last sentence, in double quotes for its exclamation) | 1-6 | BSB | BSB text |
+| The sea and Sheol; the pit; the roots of the mountains and the barred earth; a frame around a poem; a thanksgiving psalm's shape; down and up; echoes of the psalms; a northern prophet and the temple, earthly or heavenly | 1-6 | jonah/2.json `cultural`, `literary`, `historical` | Repository |
+| Psalm 120:1 (after its heading); Psalm 42:7 (its clause) | 1-6 | jonah/2.json `literary`; BSB | Repository; BSB text |
+| The hard note: history and miracle; whale stories poorly documented and not needed; teaching story; three days and three nights as an idiom touching three days; God rescuing a disobedient prophet; the question of mercy; no side taken | 1-6 `hard` | jonah/2.json `hard` | Repository; the readings in their holders' terms |
+| 2:7; 2:8; 2:9 paraphrased and its last sentence (in double quotes); 2:10 | 7-10 | BSB | BSB text |
+| The todah, thank offering and vow; the sailors' vows; worthless idols as vapor; the psalm composed, borrowed or added; the deliberate contrast with 4:2-3; the abrupt, earthy ending and irony | 7-10 | jonah/2.json `cultural`, `historical`, `literary` | Repository; the views in their holders' terms |
+| Psalm 31:6 (its clause); Matthew 12:39 (its clause) | 7-10 | jonah/2.json `literary`; jonah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+
+Cut in chapter 2: nothing further.
