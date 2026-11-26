@@ -23958,3 +23958,23 @@ Cut in chapter 52: Romans 2:24, which quotes verse 5, is left out, because Paul 
 | The HURT care line, byte for byte | 10-12 `hard` | 2-kings/plain/9.json and two wisdom files | care.mjs |
 
 Cut in chapter 53: a draft sentence saying Christians used the song as a weapon against Jews for centuries was cut, because no repository source states it; the note keeps only that the song gives no warrant for contempt toward the Jewish people. Anselm, Rutledge, Aulén, Chalke, Orlinsky, Isaac of Troki, Saadia, Clines, Ginsberg and Nickelsburg, all named in the deep note, are left to it.
+
+## The plain notes on Isaiah 54 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/54.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 54:1-8 | 1-8 | BSB | BSB text |
+| From the Servant's offspring to Zion's children; answers 50:1 | 1-8 | isaiah/54.json `story` | Repository |
+| 587 or 586 BC; small first returns; barrenness and widowhood in that world, Sarah, Rachel, Hannah; tent enlarged | 1-8 | isaiah/54.json `historical`, `cultural` | Repository |
+| Husband (baal) and the name Baal | 1-8 | isaiah/54.json `words` | Repository |
+| Galatians 4:27 (its inner quotation); Genesis 11:30 | 1-8 `later` | BSB; isaiah/54.json `christ` | BSB text |
+| Forsaking owned by God; Deuteronomy 31:17; proportion of moment and everlasting | 1-8 `hard` | isaiah/54.json `hard` | Repository |
+| Childlessness not a verdict; Sarah, Rachel and Hannah not blamed | 1-8 `hard` | 1-samuel/plain/1.json `hard` (the site's own wording, restated) | Repository |
+| The GRIEF care line, byte for byte | 1-8 `hard` | carelines.json (from the site) | care.mjs |
+| 54:9-17 | 9-17 | BSB | BSB text |
+| Noah's covenant, oldest promise of restraint; chesed; antimony and Jezebel; uncertain stones; taught as in 50:4; servants plural first at 54:17 | 9-17 | isaiah/54.json `historical`, `cultural`, `words`, `literary`; BSB search of 40 to 54 | Repository, BSB text |
+| Genesis 9:11 (its clause); John 6:45 (its inner quotation); Revelation 21:19 (named) | 9-17 `later` | BSB; isaiah/54.json `christ` | BSB text |
+
+Cut in chapter 54: the deep note's Christian link to Psalm 22:1 on Jesus' lips is left out, because the New Testament does not itself tie that cry to this chapter.
