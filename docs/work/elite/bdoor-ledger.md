@@ -21157,3 +21157,21 @@ Cut in chapter 25: the deep note's line to Christ (Christ who did not grasp at g
 | Psalm 7:15; James 3:5 (its last sentence) | 17-28 | the chapter data's cross-references for 26:27 (Psalm 7:15) and 26:20 (James 3:6); BSB | Repository; BSB text |
 
 Cut in chapter 26: the deep note's lines to Christ (Jesus' words on careless speech and the overflow of the heart beside verse 23; Jesus' silence and answers as verses 4 and 5 in action). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 27 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 27:1; praise (27:2) paraphrased (it holds a dash); 27:3; 27:4 (its last clause); 27:5; 27:6; 27:8; 27:9; 27:10 (its last clause) | 1-10 | BSB | BSB text |
+| Relationships after chapter 26's portraits; one of the warmest chapters; the faithful wound and the enemy's kiss; friendship's inherited obligations; a neighbor near in small communities without police or social services | 1-10 | proverbs/27.json `story`, `cultural` | Repository |
+| James 4:14 (its first sentence, in double quotes); Leviticus 19:17 (its second sentence); Nathan and David (2 Samuel 12:7) named | 1-10 | james/plain/4.json (Proverbs 27:1); the chapter data's cross-references for 27:1 (James 4:13, 16), 27:5 (Leviticus 19:17) and 27:6 (2 Samuel 12:7); BSB | Repository; BSB text; the site's James note draws the link |
+| 27:11; 27:12 (its first clause); the greeting (27:14) paraphrased; 27:15 (before its dash); 27:16 paraphrased; 27:17; 27:18 (its first clause); 27:19; 27:20 paraphrased; 27:21; 27:22 paraphrased | 11-22 | BSB | BSB text |
+| Good words and timing; 27:15-16 repeating 19:13's picture, not a comment on women in general (19:14); iron sharpening, friction or a heated exchange; Sheol and Abaddon never full; crucible and furnace and 17:3; testing by praise; the mortar and pestle | 11-22 | proverbs/27.json `literary`, `cultural`, `words` (chadad); proverbs/19.json `cultural` | Repository |
+| Hebrews 10:24; Ecclesiastes 1:8 (from ‘the eye’) | 11-22 | the chapter data's cross-references for 27:17 (Hebrews 10:24) and 27:20 (Ecclesiastes 1:8); BSB | Repository; BSB text |
+| 27:23; 27:24; the harvest (27:25) paraphrased; 27:26; milk (27:27) paraphrased (it holds a dash) | 23-27 | BSB | BSB text |
+| The longest unit in 25-29; the pastoral economy of Judah's hill country; steady faithfulness; riches and crowns that do not last; read also as advice to rulers | 23-27 | proverbs/27.json `historical`, `literary` | Repository |
+| 1 Peter 5:2 (its first clause) | 23-27 | the chapter data's cross-references for 27:23 (1 Peter 5:2); BSB | Repository; BSB text |
+
+Cut in chapter 27: the deep note's lines to Christ (the rich fool beside verse 1; Jesus as the friend whose wounds are faithful; the good shepherd beside verses 23-27; the note calls them thematic). No care line is needed in this chapter.
