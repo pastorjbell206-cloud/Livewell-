@@ -25496,3 +25496,17 @@ Cut in chapter 28: nothing.
 | Deuteronomy 4:29, 1 Timothy 2:2, Ezekiel 3:15 (clauses); Daniel 9:2 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 29: 2 Corinthians 1:20, which the deep note gives as a general word on God's promises rather than a reading of this chapter. Verse 22's curse is named, not quoted.
+
+## The plain notes on Jeremiah 30 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 30:1-24 | all | BSB | BSB text |
+| The Book of Consolation undated; 588 or 587 BC; earlier northern poems; writing for later | 1-11 | jeremiah/30.json `historical` | Repository |
+| Three readings of the time of Jacob's distress; second-order | 1-11 `hard` | jeremiah/30.json `hard` | Repository |
+| The lovers as Egypt; the tell; drawing near as priestly | 12-24 | jeremiah/30.json `historical`, `cultural` | Repository |
+| Daniel 12:1, Hosea 3:5, Ezekiel 37:24, Hosea 2:23, Psalm 147:3 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 30: Matthew 24:21, given in the hard note only as one tradition's link; no date is set.
