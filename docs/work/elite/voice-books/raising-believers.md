@@ -384,6 +384,63 @@ All fifteen files were edited (the introduction, thirteen chapters and the concl
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
+## Whole read (2026-11-26)
+
+The first pass, recorded above, recast every dash by a fixed rule and read each proposal only in its own sentence. This second pass read every chapter whole, from the first line to the last, as the first four books were read, in the text as the rule left it. Every place the rule had changed was marked in the reading copy, so each comma, semicolon, colon and bracket it chose could be judged in its paragraph. The rule for an edit is the same as before, and stricter: punctuation and capital letters only, and no word added, removed or replaced. The fact diff (`/home/user/vb/factdiff.py`, against the typesetter's original text, 7168d7e6) now also requires the book's words to be the original's word for word, counted as a list, and it passes on all fifteen files.
+
+What the whole read changed, in 80 edits:
+
+- **A semicolon that cut a subject from its verb.** The rule put a semicolon where a long run of "who" clauses or a list of examples reached its main verb ("who treats the faith ... as the animating reality of the whole house; that parent is the primary formation environment"). Each of these is now a comma: introduction, chapters 5, 10 and 12.
+- **A comma that ran two sentences together.** Where the rule's comma joined two whole sentences ("Children form around the center of a parent's actual life, if the center is work, they will form around work"), it is now a colon or a semicolon.
+- **A semicolon or comma before a gloss or a list.** Where the second half spells out the first, it is now a colon ("the single parent feels the difference: she walks into the mother-daughter event and sits alone").
+- **Two sentences the rule broke.**
+  - In chapter 4, its brackets opened in one clause and closed in the next ("asking a question about safety (am I safe ... hurt; a child who starts withdrawing is asking about belonging) do I still belong here"). The three clauses now each take a colon.
+  - In chapter 2, a question lost its question mark ("Where do I go when I am depleted, if the honest answer is the phone"). It has the mark back.
+- **A closing bracket that needed a comma after it,** where the sentence goes on with a new clause or an apposition: chapters 4, 7, 8 and 9.
+- **Fragment stacks joined** where no word had to be added: "Proximity to a formed life, over years, in ordinary rooms, with a thousand small honesties along the way" (chapter 1); "The forces working against a Christian marriage are relentless: exhaustion, distraction, unresolved conflict ..." and "the four channels are still running: what you praise, what you worry about, what you repeat, what you rest in" (chapter 8).
+
+Left as they are:
+
+- The verdicts the first pass listed. Others like them stay too: "Not the model I preached. The model I lived." (introduction); "That was formation. Not the content of the answer. The posture of the answerer." (chapter 1); "Not to Google. Not to the friend who is also confused. To you." (chapter 4); "Not wrong. Different." (chapter 2).
+- Every word about discipline, spanking, screens, single parents and the child who walks away.
+- Every item in the list below.
+
+Five pairs:
+
+1. Introduction. Before: "who treats the faith not as a performance staged for the children but as the animating reality of the whole house; that parent is the primary formation environment." After: "… of the whole house, that parent is the primary formation environment."
+2. Chapter 1. Before: "Children form around the center of a parent's actual life, if the center is work, they will form around work; if the center is appearance …" After: "Children form around the center of a parent's actual life: if the center is work, they will form around work; …"
+3. Chapter 2. Before: "Where do I go when I am depleted, if the honest answer is the phone, the television, or the pantry, then that is what my children are learning is the resting place." After: "Where do I go when I am depleted? If the honest answer is the phone, …"
+4. Chapter 4. Before: "A child who starts lying is asking a question about safety (am I safe to tell the truth in this house, or will the truth get me hurt; a child who starts withdrawing is asking about belonging) do I still belong here if I am not who you want me to be; …" After: "… a question about safety: am I safe to tell the truth in this house, or will the truth get me hurt; a child who starts withdrawing is asking about belonging: do I still belong here …"
+5. Chapter 8. Before: "The forces working against a Christian marriage are relentless. Exhaustion, distraction, unresolved conflict, the slow drift of two people who stop choosing each other …" After: "… are relentless: exhaustion, distraction, unresolved conflict, the slow drift …"
+
+The counts below are for his running prose, the rule-pass text against the text now. Semicolons, colons and brackets are counted outside quotations.
+
+| Chapter | Words | Edits | Semicolons | Colons | Brackets | Fact diff |
+|---|---|---|---|---|---|---|
+| The Faith You Cannot Transmit | 3,582 | 2 | 41 → 41 | 17 → 17 | 5 → 5 | PASS |
+| What We Mean When We Say Formation | 3,666 | 9 | 37 → 34 | 19 → 25 | 4 → 4 | PASS |
+| The Home Is the Primary Catechism | 3,376 | 5 | 37 → 34 | 16 → 19 | 7 → 7 | PASS |
+| When the Church Replaces the Parent | 3,045 | 4 | 34 → 31 | 17 → 19 | 0 → 0 | PASS |
+| The Questions Children Actually Ask | 3,883 | 6 | 47 → 46 | 21 → 26 | 5 → 4 | PASS |
+| Obedience Without Gospel | 2,777 | 7 | 26 → 22 | 11 → 17 | 0 → 0 | PASS |
+| Discipline, Correction, and the Shape of Grace | 3,051 | 3 | 24 → 24 | 22 → 23 | 10 → 10 | PASS |
+| Screens, Algorithms, and the Catechesis of Attention | 2,937 | 7 | 29 → 29 | 11 → 13 | 5 → 5 | PASS |
+| Marriage as the First Classroom | 3,597 | 12 | 30 → 31 | 15 → 24 | 8 → 8 | PASS |
+| The Teenage Years, When Formation Goes Underground | 3,250 | 4 | 32 → 31 | 16 → 17 | 12 → 12 | PASS |
+| Fathers, Presence, and the Weight of Blessing | 3,298 | 4 | 20 → 19 | 24 → 26 | 3 → 3 | PASS |
+| Single Parents, Blended Families, and the God Who Holds | 2,296 | 5 | 20 → 19 | 9 → 13 | 4 → 4 | PASS |
+| Grandparents and the Long Memory of Faith | 2,648 | 5 | 17 → 13 | 15 → 19 | 6 → 6 | PASS |
+| When They Walk Away | 2,776 | 6 | 28 → 27 | 16 → 21 | 4 → 4 | PASS |
+| The Long Obedience of Raising Believers | 1,202 | 1 | 11 → 11 | 7 → 8 | 2 → 2 | PASS |
+| **All 15** | 45,384 | 80 | 433 → 412 | 236 → 287 | 75 → 74 | |
+
+The files were rebuilt with `node scripts/build-book-files.mjs raising-believers --verify`:
+
+- 161 pages, the same as before, so `client/src/data/ebooks.ts` is unchanged.
+- The EPUB carries the source folder's text exactly: 47,090 words compared, no difference.
+- The PDF's pages carry it character for character: 214,906 against 214,906.
+- The page with the repaired chapter 4 sentence (page 58 of the book, page 66 of the file) was looked at as an image.
+
 ## For James: things that look wrong, none of them changed
 
 The chapters were not read whole for this list. It comes from reading every block quotation against its reference, and from searching the book for statements of his ministry, his family, statistics and research. Each item needs checking before it is corrected; the starred ones a reader would find first.

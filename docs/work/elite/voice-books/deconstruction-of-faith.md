@@ -497,6 +497,63 @@ All twenty files were edited. In his running prose: 44,834 words before and afte
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
+## Whole read (2026-11-26)
+
+The first pass, recorded above, recast every dash by a fixed rule and judged each proposal in its own sentence. This second pass read every chapter whole, as the first four books were read, in the text as the rule left it, with each place the rule had changed marked in the reading copy. The edits are punctuation and capital letters only: no word was added, removed or replaced. The fact diff (`/home/user/vb/factdiff.py`, against the typesetter's original text, 987f6964) now also holds the book's words equal to the original's, counted as a list, and it passes on all twenty files.
+
+What the whole read changed, in 75 edits:
+
+- **A comma the rule used to join two whole clauses** ("and that is a problem"; "and the first debt is truth-telling"; "and when they do talk"). Where both halves are full sentences, it is now a semicolon. Where the second half spells out the first, it is now a colon ("the question no one wants spoken aloud: if the institution is this willing to protect itself …").
+- **A semicolon before a gloss or a list.** Where it introduced what it explained, it is now a colon ("the institution almost always delays: it convenes a committee, it consults lawyers …").
+- **Sentences the rule broke.**
+  - In chapter 15 its brackets opened in one group of writers and closed in the next ("the Catholic philosophers: Alasdair MacIntyre, …; the Orthodox theologians (John Zizioulas, …; the mainline Protestant heavyweights) Karl Barth, …"). Each of the four groups now has its own brackets.
+  - In chapter 14 its brackets cut the hinge of Habakkuk ("The question is never answered (the prophet is answered) and this is …"). That is now "The question is never answered; the prophet is answered, and this is …".
+  - In chapter 11 a semicolon stood before a phrase with no verb ("less pastoral than the doctrine itself requires; overclaiming on a question …"). It is now a colon.
+- **A closing bracket that needed a comma after it** (chapters 6, 7, 13 and 16), and a colon after one in chapter 5, where a list of the four Gospels follows.
+
+Left alone, and why:
+
+- The chapters on politics, sexuality and gender, creation and hell keep every statement of a position and every steelman exactly as the first pass left them. Where the book criticises one side and then the other (the captivity of conservative and progressive churches alike), neither paragraph was touched.
+- The verdicts stay ("Not a parent's faith. Not a youth pastor's. Not a favorite podcaster's."; "There is more. There is always more."; "Not atheist, not agnostic: none.").
+
+Five pairs:
+
+1. Chapter 15. Before: "read outside the subset: the Catholic philosophers: Alasdair MacIntyre, Charles Taylor, James K. A. Smith; the Orthodox theologians (John Zizioulas, David Bentley Hart, Frederica Mathewes-Green; the mainline Protestant heavyweights) Karl Barth, Dietrich Bonhoeffer, Stanley Hauerwas, Fleming Rutledge; the contemporary evangelicals doing serious intellectual work: N. T. Wright, …" After: "the Catholic philosophers (Alasdair MacIntyre, Charles Taylor, James K. A. Smith); the Orthodox theologians (John Zizioulas, David Bentley Hart, Frederica Mathewes-Green); the mainline Protestant heavyweights (Karl Barth, Dietrich Bonhoeffer, Stanley Hauerwas, Fleming Rutledge); the contemporary evangelicals doing serious intellectual work (N. T. Wright, Richard Hays, Miroslav Volf, Esau McCaulley)."
+2. Chapter 14. Before: "The question is never answered (the prophet is answered) and this is what mature faith often looks like in Scripture" After: "The question is never answered; the prophet is answered, and this is what mature faith often looks like in Scripture"
+3. Chapter 2. Before: "A generation watched this happen in slow motion and asked the question no one wants spoken aloud, if the institution is this willing to protect itself at the cost of the vulnerable, why assume it is telling the truth about God?" After: "… the question no one wants spoken aloud: if the institution is this willing …"
+4. Chapter 13. Before: "When a pastor is credibly accused of sexual misconduct, the institution almost always delays; it convenes a committee, it consults lawyers …" After: "… the institution almost always delays: it convenes a committee, it consults lawyers …"
+5. Chapter 7. Before: "Churches that can bear hard questions do exist, … led by pastors who are tired rather than triumphant, so sit in the back a while, tell one person the story …" After: "… led by pastors who are tired rather than triumphant. So sit in the back a while, …"
+
+The counts below are for his running prose, the rule-pass text against the text now. Semicolons, colons and brackets are counted outside quotations.
+
+| Chapter | Words | Edits | Semicolons | Colons | Brackets | Fact diff |
+|---|---|---|---|---|---|---|
+| The Exodus Nobody Wanted | 1,775 | 4 | 12 → 14 | 7 → 9 | 0 → 0 | PASS |
+| What Deconstruction Actually Is | 1,814 | 2 | 20 → 21 | 8 → 9 | 3 → 3 | PASS |
+| What They Are Really Leaving | 2,001 | 2 | 28 → 27 | 13 → 15 | 2 → 2 | PASS |
+| Why the Church Keeps Missing It | 1,976 | 1 | 9 → 9 | 10 → 11 | 1 → 1 | PASS |
+| The Bible the Critics Found | 1,916 | 1 | 10 → 11 | 7 → 7 | 4 → 4 | PASS |
+| The Jesus Who Was Buried Under the Brand | 1,873 | 2 | 26 → 25 | 11 → 13 | 3 → 3 | PASS |
+| The History the Youth Group Did Not Teach | 2,104 | 3 | 14 → 15 | 7 → 8 | 6 → 6 | PASS |
+| The Path Through | 1,780 | 7 | 14 → 16 | 6 → 7 | 2 → 2 | PASS |
+| What the Church Owes the Deconstructors | 2,045 | 6 | 11 → 14 | 8 → 10 | 2 → 2 | PASS |
+| The Sociology of Loss | 2,759 | 5 | 22 → 22 | 11 → 14 | 1 → 1 | PASS |
+| Science, Creation, and the False Choice | 2,643 | 3 | 23 → 22 | 14 → 16 | 1 → 1 | PASS |
+| The Problem of Hell Revisited | 2,770 | 2 | 27 → 26 | 5 → 7 | 3 → 3 | PASS |
+| Sexuality, the Body, and the Scriptural Imagination | 2,866 | 1 | 24 → 23 | 9 → 10 | 6 → 6 | PASS |
+| The Spiritual Abuse Reckoning | 2,291 | 8 | 30 → 28 | 10 → 15 | 1 → 1 | PASS |
+| Doubt as Devotion | 2,761 | 6 | 21 → 26 | 16 → 17 | 7 → 6 | PASS |
+| Reconstruction | 2,424 | 5 | 23 → 23 | 20 → 21 | 5 → 8 | PASS |
+| The Church We Could Still Become | 2,889 | 7 | 37 → 35 | 11 → 16 | 6 → 6 | PASS |
+| Parents of Deconstructors | 2,295 | 3 | 22 → 24 | 15 → 16 | 2 → 2 | PASS |
+| Pastors in the Aftermath | 2,192 | 4 | 24 → 22 | 8 → 11 | 1 → 1 | PASS |
+| What We Owe Each Other | 1,660 | 3 | 8 → 10 | 9 → 10 | 1 → 1 | PASS |
+| **All 20** | 44,834 | 75 | 405 → 413 | 205 → 242 | 57 → 59 | |
+
+The files were rebuilt with `node scripts/build-book-files.mjs deconstruction-of-faith --verify`. Still 180 pages, so `client/src/data/ebooks.ts` is unchanged. The EPUB carries exactly the source folder's text (47,777 words compared, no difference), and the PDF's pages carry it character for character (227,721 against 227,721). The page with the repaired reading list (page 133 of the book, page 141 of the file) was looked at as an image.
+
+One more item for the list below, noticed in the whole read and not changed: chapter 15 names James K. A. Smith among "the Catholic philosophers", but Smith writes from the Reformed tradition (MacIntyre and Taylor are Catholic).
+
 ## For James: things that look wrong, none of them changed
 
 The chapters were not read whole for this list. It comes from reading every block quotation against its reference and attribution, and from searching for statements of his ministry, statistics and studies. The book states no figure for his years in ministry or his books.
