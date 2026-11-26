@@ -1775,6 +1775,23 @@
       "book": "colossians"
     },
     {
+      "slug": "book-1-peter",
+      "title": "1 Peter: hope for strangers",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A letter of hope to people who felt like strangers in their own towns: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Peter as a whole book: a letter to strangers, a living hope, God's people, doing good without striking back, casting every care on God, and where to begin."
+      },
+      "mark": "book-1-peter",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-peter"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

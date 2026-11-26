@@ -113,6 +113,10 @@
    "title": "Colossians: complete in Christ",
    "line": "A short letter about how great Jesus is: what it is, how it is put together, what to watch for, and where to start reading."
   },
+  "book-1-peter": {
+   "title": "1 Peter: hope for strangers",
+   "line": "A letter of hope to people who felt like strangers in their own towns: what it is, how it is put together, what to watch for, and where to start reading."
+  },
   "holy-spirit": {
    "title": "The Holy Spirit through the Bible",
    "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
@@ -365,6 +369,9 @@
   ],
   "/study/bible/1-corinthians": [
    "book-1-corinthians"
+  ],
+  "/study/bible/1-peter": [
+   "book-1-peter"
   ],
   "/study/bible/1-samuel": [
    "book-1-samuel"

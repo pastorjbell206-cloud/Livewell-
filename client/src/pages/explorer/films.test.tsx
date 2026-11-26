@@ -1737,6 +1737,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-jeremiah",
     "book-galatians",
     "book-colossians",
+    "book-1-peter",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2533,5 +2534,17 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.links?.map(l => l.href)).toContain("/help");
     expect(f.frames.find(x => x.id === "song")!.still).toContain("No one is drawn.");
     expect(f.frames.find(x => x.id === "fullness")!.older).toContain("a shadow pointing ahead, not a lie");
+  });
+
+  it("1 Peter rejects contempt for the Jewish people, never tells anyone to stay where they are harmed, and takes no side where churches differ", () => {
+    const f = filmFile("book-1-peter");
+    expect(f.care).toBe(filmFile("book-ephesians").care);
+    const people = f.frames.find(x => x.id === "people")!;
+    expect(people.younger).toContain("Peter, a Jew, gives them names from Israel's own Bible");
+    expect(people.older).toContain("Using the New Testament to justify contempt for Jews is false.");
+    expect(f.frames.find(x => x.id === "good")!.older).toContain("These chapters never say that someone being harmed must stay and bear it.");
+    expect(f.differ?.text).toContain("If you are in an abusive marriage, seek safety first.");
+    expect(f.differ?.text).toContain("Using Peter's words to slaves to defend slavery was a misuse, and it was wrong.");
+    expect(text(f)).not.toMatch(/replaced Israel|new Israel|Christ.?killers|Jews rejected/i);
   });
 });

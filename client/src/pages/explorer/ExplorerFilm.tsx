@@ -423,6 +423,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole letter to the Colossians in seven moving pictures: a letter to a church Paul never saw, how it is laid out, the song of Christ, fullness, new clothes, life in the Lord, and where to start reading.",
     },
+    "book-1-peter": {
+      title: "1 Peter: hope for strangers: Bible Explorer",
+      description:
+        "The whole of 1 Peter in seven moving pictures: strangers in their own towns, how it is laid out, a living hope, God's own people, doing good without striking back, God's care, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

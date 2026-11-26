@@ -3455,6 +3455,116 @@
     }
    ]
   },
+  "book-1-peter": {
+   "title": {
+    "file": "book-1-peter/title.mp3",
+    "hash": "03bf35881bfab7160b29",
+    "seconds": 3.07,
+    "bytes": 19076
+   },
+   "younger": [
+    {
+     "id": "strangers",
+     "file": "book-1-peter/younger/01-strangers.mp3",
+     "hash": "0a0f1b5ca04baf56f9f4",
+     "seconds": 21.27,
+     "bytes": 128228
+    },
+    {
+     "id": "layout",
+     "file": "book-1-peter/younger/02-layout.mp3",
+     "hash": "3f44ac0de2e749938fcb",
+     "seconds": 22.24,
+     "bytes": 133988
+    },
+    {
+     "id": "hope",
+     "file": "book-1-peter/younger/03-hope.mp3",
+     "hash": "f41fc6cfbf292b7fa5b0",
+     "seconds": 25.91,
+     "bytes": 156020
+    },
+    {
+     "id": "people",
+     "file": "book-1-peter/younger/04-people.mp3",
+     "hash": "d6be2e6ed6018e6353d9",
+     "seconds": 23.37,
+     "bytes": 140756
+    },
+    {
+     "id": "good",
+     "file": "book-1-peter/younger/05-good.mp3",
+     "hash": "6e54f17b90499bdcb7c9",
+     "seconds": 24.83,
+     "bytes": 149540
+    },
+    {
+     "id": "cares",
+     "file": "book-1-peter/younger/06-cares.mp3",
+     "hash": "206f5953ac53341b69c7",
+     "seconds": 20.93,
+     "bytes": 126068
+    },
+    {
+     "id": "start",
+     "file": "book-1-peter/younger/07-start.mp3",
+     "hash": "488402d555e27de5a059",
+     "seconds": 18,
+     "bytes": 108644
+    }
+   ],
+   "older": [
+    {
+     "id": "strangers",
+     "file": "book-1-peter/older/01-strangers.mp3",
+     "hash": "bd4c17b885ed3fc79335",
+     "seconds": 24.11,
+     "bytes": 145220
+    },
+    {
+     "id": "layout",
+     "file": "book-1-peter/older/02-layout.mp3",
+     "hash": "e6394f8625ae8c3d880d",
+     "seconds": 25.83,
+     "bytes": 155588
+    },
+    {
+     "id": "hope",
+     "file": "book-1-peter/older/03-hope.mp3",
+     "hash": "5bb0b353fdcc6b3b9ec1",
+     "seconds": 24.65,
+     "bytes": 148532
+    },
+    {
+     "id": "people",
+     "file": "book-1-peter/older/04-people.mp3",
+     "hash": "a99ff60dc909f809e842",
+     "seconds": 27.92,
+     "bytes": 168116
+    },
+    {
+     "id": "good",
+     "file": "book-1-peter/older/05-good.mp3",
+     "hash": "f0e2935a1156ee84ef60",
+     "seconds": 27.13,
+     "bytes": 163364
+    },
+    {
+     "id": "cares",
+     "file": "book-1-peter/older/06-cares.mp3",
+     "hash": "30cfe3bc855cf09d089e",
+     "seconds": 26.25,
+     "bytes": 158036
+    },
+    {
+     "id": "start",
+     "file": "book-1-peter/older/07-start.mp3",
+     "hash": "aaafd96221813baf929a",
+     "seconds": 22.86,
+     "bytes": 137732
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

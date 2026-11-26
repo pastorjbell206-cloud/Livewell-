@@ -1093,6 +1093,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-f" d="M28,64q5,-4 10,0t10,0t10,0t10,0t8,0" />
     </>
   ),
+  /* 1 Peter: a house of stones on its cornerstone, the cornerstone gold. */
+  "book-1-peter": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M22,84V40H78V84Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M22,73H78M22,62H78M22,51H78M36,84V73M50,84V73M64,84V73M43,73V62M57,73V62M71,73V62M36,62V51M50,62V51M64,62V51" />
+      <path className="pl-m" d="M22,84V73H36V84Z" />
+      <path className="pl-l" d="M22,84V73H36V84Z" />
+      <path className="pl-l" d="M16,40H84L50,18Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
