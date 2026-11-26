@@ -24922,3 +24922,18 @@ Cut in chapter 5: nothing drawn to the New Testament. The siege hunger of 5:10 n
 | The hard note: Why would God want survivors to loathe themselves? Isn't that harmful? The readings in their holders' terms | 8-14 `hard` | ezekiel/6.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 6: the deep note's suggestion of a counselor recast so that the hard note stays clear of a new care sentence; 2 Corinthians 7:10 kept as the tradition's own source, not as a line drawn from Ezekiel.
+
+## The plain notes on Ezekiel 7 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The end has come: the text paraphrased; quoted clauses at verses 2, 3-4, 6, 7, 10, 11, 12, 13 | 1-13 | BSB | BSB text |
+| Background in `hearers` | 1-13 | ezekiel/7.json `historical`, `cultural`, `literary` | Repository |
+| Later: Amos 8:2; Leviticus 25:10 | 1-13 `later` | BSB | BSB text |
+| Silver and gold cannot save them: the text paraphrased; quoted clauses at verses 14, 15, 16-17, 18, 19, 20-22, 23, 26, 27 | 14-27 | BSB | BSB text |
+| Background in `hearers` | 14-27 | ezekiel/7.json `historical`, `cultural`, `literary` | Repository |
+| Later: Zephaniah 1:18; Jeremiah 6:14 | 14-27 `later` | BSB | BSB text |
+
+Cut in chapter 7: nothing.
