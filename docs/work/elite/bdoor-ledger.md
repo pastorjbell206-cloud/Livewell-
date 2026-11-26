@@ -21417,3 +21417,22 @@ Cut in chapter 3: nothing drawn to the New Testament.
 | The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 6-13 `hard` | genesis/plain/6.json and others | Reused whole, word for word; Find Help named; no phone number |
 
 Cut in chapter 4: nothing drawn to the New Testament. The refrain of 4:6 to 4:11 is paraphrased in the prose so that no first-person words stand outside quoted Scripture.
+
+## The plain notes on Amos 5 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:2 (its first clause); 5:3 paraphrased; 5:4 (its words); 5:5 paraphrased (its 'journey' not quoted); 5:6 (its first words) | 1-6 | BSB | BSB text |
+| The qinah's limping rhythm; around 760 BC at the north's height; Samaria within four decades; the militia's losses; Bethel and Gilgal; Beersheba and Abraham and Isaac, northern pilgrims; the mirror pattern of 5:1-17 | 1-6 | amos/5.json `cultural`, `historical`, `literary` | Repository |
+| Genesis 21:33; Genesis 26:23-25; Isaiah 55:6 (its first clause) | 1-6 | amos/5.json `historical`; BSB | Repository; BSB text |
+| 5:7; 5:8 (its last words); 5:10-13 paraphrased; 5:14 (its first sentence); 5:15; 5:16-17 paraphrased | 7-17 | BSB | BSB text |
+| The gate as square and court; elders; the bought village court; wormwood; ashlar stone houses at Samaria; the grain tax as rents or levies; the hymn at the center; the Pleiades and Orion; perhaps gracious to a remnant | 7-17 | amos/5.json `cultural`, `historical`, `literary` | Repository |
+| Deuteronomy 21:19; Ruth 4:1-11; Job 9:9 (its clause) | 7-17 | amos/5.json `cultural`; BSB | Repository; BSB text |
+| 5:18 (in double quotes, for its exclamation); 5:19-23 paraphrased; 5:24; 5:25; 5:26-27 paraphrased | 18-27 | BSB | BSB text |
+| The Day as a popular hope reversed; the lion, bear and snake; 5:24's echo through history; justice and righteousness; the all-year stream; Sakkuth and Kaiwan as star gods, Saturn, debated; beyond Damascus; the political spectrum and the covenant's standard | 18-27 | amos/5.json `cultural`, `historical`, `christ`; amos/intro.json `reading` | Repository |
+| Acts 7:42 (its quotation of 5:25) and the Greek; Micah 6:8 (its clause) | 18-27 | amos/5.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| The hard note: rejection of the whole system or of worship without obedience; the scholars who saw opposition in principle; most interpreters and the other prophets; 5:25 read two ways; worship no substitute for justice | 18-27 `hard` | amos/5.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 5: the deep note's lines to Matthew 23:23, Matthew 9:13 and 1 Thessalonians 5:2, which the New Testament does not draw from this chapter.
