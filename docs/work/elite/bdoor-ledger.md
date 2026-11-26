@@ -23756,3 +23756,22 @@ Cut in chapter 43: nothing. No care line is needed in this chapter.
 | The hard note: revelation and the climax of the argument (1 Kings 13:2; Josephus's tradition); a prophet of the exile; the mediating view; agreement on the claim | 21-28 `hard` | isaiah/44.json `hard` | Repository; each view in its holders' terms |
 
 Cut in chapter 44: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 45 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/45.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 45:1-8 (45:2-7 inside the BSB's speech marks) | 1-8 | BSB | BSB text |
+| Mashiach and Cyrus; Babylon in 539 almost without a fight; there is no other | 1-8 | isaiah/45.json `summary`; bible/guides/empires.json | Repository |
+| Ezra 1:1 (its clause); Jeremiah 27:6 (its clause) | 1-8 `later` | BSB | BSB text |
+| The hard note: ra as calamity against shalom; the King James wording; no second power; James 1:13; ordaining or permission; comfort; not a key for any particular calamity | 1-8 `hard` | isaiah/45.json `hard`; the brief | Repository; both readings in their holders' terms |
+| 45:9-17 (45:9's clause before the dash; 45:11 and 45:13 inside the BSB's speech marks) | 9-17 | BSB | BSB text |
+| The objectors expected and answered (a first draft's guess was narrowed to the deep note's words); the potter; no payment; the hidden God and the Savior | 9-17 | isaiah/45.json `literary`, `story` | Repository |
+| Romans 9:20 (its clause before the inner quotation; first drafted with a nested quotation and corrected); Psalm 10:1 | 9-17 `later` | BSB | BSB text |
+| 45:18-25 (45:18 paraphrased around its dash; 45:23 inside the BSB's speech marks) | 18-25 | BSB | BSB text |
+| The fugitives of the nations; the widest invitation; every knee | 18-25 | isaiah/45.json `summary` | Repository |
+| Romans 14:11 (inside the BSB's speech marks); Philippians 2:10 | 18-25 `later` | BSB | BSB text; the New Testament's own use |
+
+Cut in chapter 45: an unsourced line about conquerors demanding ransom, cut before commit. No care line is needed in this chapter.
