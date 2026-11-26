@@ -25613,3 +25613,197 @@ Cut in chapter 36: nothing.
 | Isaiah 30:7, 2 Kings 24:17, 2 Kings 25:3 (clauses); Jeremiah 32:2 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 37: a draft line on Acts 28, replaced by 2 Kings 25:3.
+
+## The plain notes on Ezekiel 13 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The whitewashed wall: the text paraphrased; quoted clauses at verses 2, 3, 4, 5, 6, 10, 11-14, 12 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/13.json `historical`, `cultural`, `literary` | Repository |
+| Later: Deuteronomy 18:22; Jeremiah 28:3 | 1-16 `later` | BSB | BSB text |
+| The hard note: How can anyone tell a true prophet from a false one, if both claim to speak for God? The readings in their holders' terms | 1-16 `hard` | ezekiel/13.json `hard` | Repository; the site takes no side |
+| Charms, veils and souls set free: the text paraphrased; quoted clauses at verses 17, 18, 19, 20, 22-23 | 17-23 | BSB | BSB text |
+| Background in `hearers` | 17-23 | ezekiel/13.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 23:16; 2 Kings 22:14 | 17-23 `later` | BSB | BSB text |
+
+Cut in chapter 13: the deep note's New Testament tests (1 John 4:1-3; Matthew 7:15-20), which are not drawn from Ezekiel 13.
+
+## The plain notes on Ezekiel 14 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Idols in the heart: the text paraphrased; quoted clauses at verses 3, 4-5, 6, 7-8, 9-10, 11 | 1-11 | BSB | BSB text |
+| Background in `hearers` | 1-11 | ezekiel/14.json `historical`, `cultural`, `literary` | Repository |
+| Later: 1 Kings 22:22; Deuteronomy 6:5 | 1-11 `later` | BSB | BSB text |
+| The hard note: What does it mean that God entices a prophet to speak falsely and then punishes him (verse 9)? The readings in their holders' terms | 1-11 `hard` | ezekiel/14.json `hard` | Repository; the site takes no side |
+| Noah, Daniel and Job: the text paraphrased; quoted clauses at verses 14, 16-20, 21, 22-23 | 12-23 | BSB | BSB text |
+| Background in `hearers` | 12-23 | ezekiel/14.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 6:9; Job 1:1; Jeremiah 15:1 | 12-23 `later` | BSB | BSB text |
+
+Cut in chapter 14: nothing drawn to the New Testament.
+
+## The plain notes on Ezekiel 15 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| What is vine wood good for?: the text paraphrased; quoted clauses at verses 2, 3, 4, 5, 7, 8 | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | ezekiel/15.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 80:8; Isaiah 5:4 | 1-8 `later` | BSB | BSB text |
+| The hard note: Is it fair to call God's people useless, as if their only value were what they produce? The readings in their holders' terms | 1-8 `hard` | ezekiel/15.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 15: John 15:6 beside the burned branches, which the New Testament does not draw from Ezekiel.
+
+## The plain notes on Ezekiel 16 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The baby God told to live: the text paraphrased; quoted clauses at verses 2, 3, 4-5, 6, 8, 14 | 1-14 | BSB | BSB text |
+| Background in `hearers` | 1-14 | ezekiel/16.json `historical`, `cultural`, `literary` | Repository |
+| Later: Ruth 3:9; Jeremiah 2:2 | 1-14 `later` | BSB | BSB text |
+| Gifts given to idols: the text paraphrased; quoted clauses at verses 15, 16-25, 20-21, 22, 26-29, 35-41, 43 | 15-43 | BSB | BSB text |
+| Background in `hearers` | 15-43 | ezekiel/16.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 16:8; 2 Kings 23:10 | 15-43 `later` | BSB | BSB text |
+| The hard note: How should a chapter be read that pictures God as a husband who exposes and punishes an unfaithful wife, especially by readers who have suffered abuse? The readings in their holders' terms | 15-43 `hard` | ezekiel/16.json `hard` | Repository; the site takes no side |
+| Sodom's sin, and an everlasting covenant: the text paraphrased; quoted clauses at verses 44, 46-52, 49, 53, 60, 63 | 44-63 | BSB | BSB text |
+| Background in `hearers` | 44-63 | ezekiel/16.json `historical`, `cultural`, `literary` | Repository |
+| Later: Hosea 2:19; Jeremiah 31:31-33 | 44-63 `later` | BSB | BSB text |
+
+Cut in chapter 16: the deep note's hotline telephone number, replaced by the site's abusive-marriage care line, byte for byte; Ephesians 5:25-27, Revelation 19 and 21, Luke 22:20 and Hebrews 13:20, which the New Testament does not draw from Ezekiel 16. The punishment of verses 35 to 41 named, not described.
+
+## The plain notes on Ezekiel 17 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two eagles and a vine: the text paraphrased; quoted clauses at verses 3, 4-6, 7, 9-10 | 1-10 | BSB | BSB text |
+| Background in `hearers` | 1-10 | ezekiel/17.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 24:12; 2 Kings 24:17 | 1-10 `later` | BSB | BSB text |
+| A broken oath, and a tender sprig: the text paraphrased; quoted clauses at verses 12-14, 15, 16-17, 19, 22, 23, 24 | 11-24 | BSB | BSB text |
+| Background in `hearers` | 11-24 | ezekiel/17.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Chronicles 36:13; Isaiah 11:1 | 11-24 `later` | BSB | BSB text |
+| The hard note: Why does God hold Zedekiah to an oath sworn to a pagan conqueror who had invaded Judah? The readings in their holders' terms | 11-24 `hard` | ezekiel/17.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 17: the deep note's line to the mustard seed (Mark 4:32), which the New Testament does not draw from Ezekiel.
+
+## The plain notes on Ezekiel 18 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sour grapes: each person answers to God: the text paraphrased; quoted clauses at verses 2, 4, 9, 10-13, 14-17, 20 | 1-20 | BSB | BSB text |
+| Background in `hearers` | 1-20 | ezekiel/18.json `historical`, `cultural`, `literary` | Repository |
+| Later: Deuteronomy 24:16; Jeremiah 31:29-30 | 1-20 `later` | BSB | BSB text |
+| The hard note: Does this chapter contradict the warning that God visits the iniquity of fathers on children? The readings in their holders' terms | 1-20 `hard` | ezekiel/18.json `hard` | Repository; the site takes no side |
+| Turn and live: the text paraphrased; quoted clauses at verses 21, 22, 23, 24, 25, 25-29, 30, 31, 32 | 21-32 | BSB | BSB text |
+| Background in `hearers` | 21-32 | ezekiel/18.json `historical`, `cultural`, `literary` | Repository |
+| Later: Ezekiel 36:26; Deuteronomy 30:19 | 21-32 `later` | BSB | BSB text |
+
+Cut in chapter 18: John 3:5, 2 Peter 3:9 and 1 Timothy 2:4, which the New Testament does not draw from Ezekiel 18. John 9:2-3 is cited in the hard note only as Jesus' own refusal of the same reasoning, as the Haggai notes did. The brief's line that no suffering is a deserved punishment is stated plainly.
+
+## The plain notes on Ezekiel 19 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A lament for the lion cubs: the text paraphrased; quoted clauses at verses 1, 2, 3-4, 5-7, 9 | 1-9 | BSB | BSB text |
+| Background in `hearers` | 1-9 | ezekiel/19.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 49:9; 2 Kings 23:34 | 1-9 `later` | BSB | BSB text |
+| The vine uprooted: the text paraphrased; quoted clauses at verses 10-11, 12, 13, 14 | 10-14 | BSB | BSB text |
+| Background in `hearers` | 10-14 | ezekiel/19.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 1:3; 2 Kings 25:7 | 10-14 `later` | BSB | BSB text |
+
+Cut in chapter 19: nothing.
+
+## The plain notes on Ezekiel 20 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| For the sake of God's name: the text paraphrased; quoted clauses at verses 3, 4, 9, 11, 12, 13-17, 18-24, 25 | 1-26 | BSB | BSB text |
+| Background in `hearers` | 1-26 | ezekiel/20.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 31:13; Psalm 81:12 | 1-26 `later` | BSB | BSB text |
+| The hard note: What does God mean when he says he gave Israel statutes that were not good (verses 25-26)? The readings in their holders' terms | 1-26 `hard` | ezekiel/20.json `hard` | Repository; the site takes no side |
+| A new exodus, and acceptance on the holy mountain: the text paraphrased; quoted clauses at verses 27-31, 32, 33, 35-38, 40-41, 44, 45-49 | 27-49 | BSB | BSB text |
+| Background in `hearers` | 27-49 | ezekiel/20.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 6:6; Hosea 2:14 | 27-49 `later` | BSB | BSB text |
+
+Cut in chapter 20: Romans 1:24 beside the giving over, which the New Testament does not draw from Ezekiel 20.
+
+## The plain notes on Ezekiel 21 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sword of the LORD drawn: the text paraphrased; quoted clauses at verses 3, 4, 6, 7, 9, 9-17 | 1-17 | BSB | BSB text |
+| Background in `hearers` | 1-17 | ezekiel/21.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 27:3; Jeremiah 12:12 | 1-17 `later` | BSB | BSB text |
+| The hard note: How can God say his sword will cut off both the righteous and the wicked, when chapter 18 said each person answers for his own sin? The readings in their holders' terms | 1-17 `hard` | ezekiel/21.json `hard` | Repository; the site takes no side |
+| The king at the fork in the road: the text paraphrased; quoted clauses at verses 19-20, 21, 22, 26, 27, 28-32 | 18-32 | BSB | BSB text |
+| Background in `hearers` | 18-32 | ezekiel/21.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 49:10; 1 Samuel 2:7 | 18-32 `later` | BSB | BSB text |
+
+Cut in chapter 21: Luke 1:32-33 and 1:52, which the New Testament does not draw from Ezekiel 21; verse 27 read of the Messiah only as Jewish and Christian interpreters' reading.
+
+## The plain notes on Ezekiel 22 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The city of bloodshed: the text paraphrased; quoted clauses at verses 2, 6, 7, 8-11, 12, 13, 15-16 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/22.json `historical`, `cultural`, `literary` | Repository |
+| Later: Numbers 35:33; Jeremiah 7:6 | 1-16 `later` | BSB | BSB text |
+| Dross in the furnace, and no one in the gap: the text paraphrased; quoted clauses at verses 18, 19-22, 25, 26, 27, 28, 29, 30 | 17-31 | BSB | BSB text |
+| Background in `hearers` | 17-31 | ezekiel/22.json `historical`, `cultural`, `literary` | Repository |
+| Later: Zephaniah 3:3; Jeremiah 5:1 | 17-31 `later` | BSB | BSB text |
+| The hard note: God says he found no one to stand in the gap, but Jeremiah was in Jerusalem in those years. Was there really no one? The readings in their holders' terms | 17-31 `hard` | ezekiel/22.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 22: nothing.
+
+## The plain notes on Ezekiel 23 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two sisters, Samaria and Jerusalem: the text paraphrased; quoted clauses at verses 4, 5-8, 9, 11, 12-21 | 1-21 | BSB | BSB text |
+| Background in `hearers` | 1-21 | ezekiel/23.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 3:8; 2 Kings 17:6 | 1-21 `later` | BSB | BSB text |
+| The lovers turned against her, and her sister's cup: the text paraphrased; quoted clauses at verses 22, 23-24, 25-29, 32, 33, 35 | 22-35 | BSB | BSB text |
+| Background in `hearers` | 22-35 | ezekiel/23.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 51:17; Jeremiah 25:15 | 22-35 `later` | BSB | BSB text |
+| The hard note: How should a reader handle this chapter's sexual imagery and its violence against a woman's body? The readings in their holders' terms | 22-35 `hard` | ezekiel/23.json `hard` | Repository; the site takes no side |
+| Both sisters on trial: the text paraphrased; quoted clauses at verses 36, 37, 39, 40-44, 45-48, 49 | 36-49 | BSB | BSB text |
+| Background in `hearers` | 36-49 | ezekiel/23.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 7:31; Leviticus 18:21 | 36-49 `later` | BSB | BSB text |
+
+Cut in chapter 23: the deep note's hotline telephone number, replaced by the abusive-marriage care line and the shorter sexual-assault line, both byte for byte; an unsourced reading of verse 48, cut. The punishments of verses 25 to 29 named, not described.
+
+## The plain notes on Ezekiel 24 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Write down the date: the pot on the fire: the text paraphrased; quoted clauses at verses 2, 3, 4-5, 6, 7-8, 9-11, 13, 14 | 1-14 | BSB | BSB text |
+| Background in `hearers` | 1-14 | ezekiel/24.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 25:1; Genesis 4:10 | 1-14 `later` | BSB | BSB text |
+| The death of the desire of his eyes: the text paraphrased; quoted clauses at verses 16, 17, 18, 19, 21, 22-23, 24, 25-27 | 15-27 | BSB | BSB text |
+| Background in `hearers` | 15-27 | ezekiel/24.json `historical`, `cultural`, `literary` | Repository |
+| Later: Job 1:21; Zechariah 8:19 | 15-27 `later` | BSB | BSB text |
+| The hard note: Did God really take Ezekiel's wife to make a point, and why forbid him to grieve? The readings in their holders' terms | 15-27 `hard` | ezekiel/24.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 24: nothing; John 11:35 kept in the hard note as Scripture's witness to grief, not as a line drawn from Ezekiel.

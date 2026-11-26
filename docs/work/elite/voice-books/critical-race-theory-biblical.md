@@ -491,6 +491,62 @@ All twenty files were edited (the introduction, twelve chapters, the conclusion 
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
+## Whole read (2026-11-26)
+
+The first pass, recorded above, recast every dash by a fixed rule and judged each proposal in its own sentence. This second pass read every file whole, as the first four books were read: the introduction, the twelve chapters, the conclusion and the six "Expansions" sections. It read the text as the rule left it, with each place the rule had changed marked in the reading copy. The edits are punctuation and capital letters only: no word was added, removed or replaced. The fact diff (`/home/user/vb/factdiff.py`, against the typesetter's original text, 3413b1bb) now also holds the book's words equal to the original's, counted as a list, and it passes on all twenty files.
+
+**On a contested subject.** The book's account of what critical race theory claims, where it is right and where it is wrong, its criticism of white evangelicalism, and its paired criticism of the right's panic and the left's wholesale adoption all keep their words. Where the two sides stand in parallel, neither was touched (the introduction's "Some panicked on the right … Others panicked on the left …").
+
+What the whole read changed, in 104 edits:
+
+- **A comma or semicolon before a gloss.** The rule often left one where the second half spells out the first. It is now a colon: "First, it has diverse leadership: not diversity for its own sake …"; "his mother did something that became historic: she demanded an open casket …"; "This is grace distorted into sentimentalism: grace that costs nothing and changes nothing."
+- **An aside the rule left in bare commas, which read as a run-on.** It now takes brackets: "allowed redlining (the explicit denial of mortgages based on race), and built Jim Crow" (chapter 1); "This is not a new word (the prophets have been saying it to the people of God for thousands of years), but the Black church is saying it …" (chapter 9); "simple retribution (killing the perpetrators) or premature reconciliation" (chapter 10).
+- **Two colons in one sentence.** One of them is now a semicolon (Expansions 2).
+- **A closing bracket that needed a comma after it** (chapters 9 and 12).
+
+Five pairs:
+
+1. Chapter 1. Before: "The law once explicitly protected slavery, created segregation, allowed redlining, the explicit denial of mortgages based on race, and built Jim Crow." After: "… allowed redlining (the explicit denial of mortgages based on race), and built Jim Crow."
+2. Chapter 9. Before: "This is not a new word, the prophets have been saying it to the people of God for thousands of years, but the Black church is saying it specifically and prophetically to white Christianity." After: "This is not a new word (the prophets have been saying it to the people of God for thousands of years), but the Black church is saying it …"
+3. Chapter 4. Before: "Waiting, patience, slow and deliberate process; these all quietly favor the people already in power." After: "Waiting, patience, slow and deliberate process: these all quietly favor the people already in power."
+4. Chapter 12. Before: "First, it has diverse leadership, not diversity for its own sake, but leadership that genuinely reflects the community …" After: "First, it has diverse leadership: not diversity for its own sake, …"
+5. Expansions 5. Before: "When his body was recovered, his mother did something that became historic; she demanded an open casket …" After: "… his mother did something that became historic: she demanded an open casket …"
+
+The counts below are for his running prose, the rule-pass text against the text now. Semicolons, colons and brackets are counted outside quotations.
+
+| Chapter | Words | Edits | Semicolons | Colons | Brackets | Fact diff |
+|---|---|---|---|---|---|---|
+| The Argument That Broke the American Church | 1,207 | 2 | 9 → 8 | 8 → 10 | 3 → 3 | PASS |
+| What Critical Race Theory Actually Says | 1,901 | 2 | 22 → 22 | 14 → 15 | 1 → 2 | PASS |
+| What the Bible Actually Says About Race, Ethnicity, and the Image of God | 1,829 | 2 | 23 → 22 | 15 → 17 | 2 → 2 | PASS |
+| The American Church's Racial History | 1,739 | 6 | 23 → 21 | 7 → 13 | 2 → 2 | PASS |
+| Martin Luther King's Theology | 1,525 | 4 | 13 → 12 | 10 → 14 | 0 → 0 | PASS |
+| Is Systemic Racism Real? | 1,524 | 1 | 19 → 18 | 5 → 6 | 0 → 0 | PASS |
+| Where CRT Gets It Right | 1,587 | 5 | 22 → 19 | 9 → 13 | 1 → 1 | PASS |
+| Where CRT Gets It Wrong | 1,636 | 6 | 17 → 16 | 10 → 16 | 0 → 0 | PASS |
+| White Evangelicalism's Blind Spot | 1,751 | 5 | 15 → 13 | 6 → 11 | 2 → 2 | PASS |
+| Black Church Theology | 1,616 | 7 | 20 → 18 | 14 → 19 | 3 → 4 | PASS |
+| Racial Reconciliation Is Not Enough | 1,525 | 7 | 9 → 8 | 14 → 20 | 0 → 1 | PASS |
+| Raising Children to See Race Biblically | 1,757 | 2 | 16 → 17 | 15 → 16 | 2 → 2 | PASS |
+| Building a Church That Does Justice and Loves Mercy | 1,669 | 4 | 14 → 14 | 12 → 15 | 1 → 1 | PASS |
+| The Cross and the Color Line | 1,463 | 4 | 13 → 12 | 16 → 20 | 2 → 2 | PASS |
+| Introduction, Chapters 1-3 | 4,721 | 11 | 48 → 44 | 49 → 60 | 3 → 3 | PASS |
+| Chapters 4-6 | 3,722 | 10 | 33 → 33 | 30 → 38 | 1 → 1 | PASS |
+| Chapters 7-9 | 3,989 | 9 | 30 → 27 | 28 → 37 | 5 → 5 | PASS |
+| Chapters 10-12 and Conclusion | 2,995 | 5 | 35 → 34 | 30 → 35 | 1 → 1 | PASS |
+| Second Round Expansions for Chapters 3, 5, 9 | 3,232 | 7 | 35 → 31 | 26 → 33 | 4 → 4 | PASS |
+| Second Round Expansions for Chapters 1, 8, 12 | 3,074 | 5 | 26 → 25 | 26 → 31 | 4 → 4 | PASS |
+| **All 20** | 44,462 | 104 | 442 → 414 | 344 → 439 | 37 → 40 | |
+
+The files were rebuilt with `node scripts/build-book-files.mjs critical-race-theory-biblical --verify`. It passed: the EPUB holds 47,244 words, word for word the source, and the PDF's 243,259 body characters on its pages are exactly the source's. The page count is unchanged at 193 (`client/src/data/ebooks.ts` needs no change). Page 19 of the PDF, where chapter 1's redlining sentence falls, was rendered and looked at.
+
+Noticed in the whole read and not changed. Each needs checking against a source before it is relied on; add them to the list below:
+
+- Chapter 8 says the Southern Baptist Convention "did not integrate its seminaries until the 1980s". Southern Baptist seminaries admitted Black students decades earlier.
+- Expansions 3 says Liberty "was founded as a segregation academy" in 1971 and that Falwell "did not accept Black students at Liberty until 1971". The second clause contradicts the founding date given in the same paragraph. The segregation academy usually named is Falwell's Lynchburg Christian Academy (1967).
+- Chapter 8 dates a Jerry Falwell quotation to 1981 ("The time has come to call our nation back to God …") without a source.
+- Expansions 4 says Briarwood Presbyterian Church was "founded in 1971 in explicit response to desegregation" and that its pastor apologized in 2021. Both the date and the account of the apology need a source.
+
 ## For James: things that look wrong, none of them changed
 
 The chapters were not read whole for this list. It comes from reading every block quotation against its reference and attribution, and from searching for names, dates, statistics and statements of his ministry. The book states no figure for his years in ministry.
