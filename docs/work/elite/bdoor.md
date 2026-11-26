@@ -9184,7 +9184,7 @@ The 2 Kings checks, copied to `/home/user/bdoor-scratch/major-prophets/` and poi
 
 ## The Minor Prophets, Hosea to Nahum: book pages and every chapter (2026-11-26)
 
-Seven of the twelve shorter prophets are complete: Hosea, Joel, Amos, Obadiah, Jonah, Micah and Nahum, each with a teaching introduction on its book page and every chapter in plain words (41 chapters, 109 passages). Each passage's third part is `later`. Each chapter note gained only `"plain": true` at its end. There is one commit for each book page (with its ledger rows, the rebuilt explore indexes, and its line in `teaching.test.tsx`, frame `canaan`) and one per chapter. Habakkuk, Zephaniah, Haggai, Zechariah and Malachi are not begun.
+Seven of the twelve shorter prophets are complete: Hosea, Joel, Amos, Obadiah, Jonah, Micah and Nahum, each with a teaching introduction on its book page and every chapter in plain words (41 chapters, 109 passages). Each passage's third part is `later`. Each chapter note gained only `"plain": true` at its end. There is one commit for each book page (with its ledger rows, the rebuilt explore indexes, and its line in `teaching.test.tsx`, frame `canaan`) and one per chapter. Habakkuk, Zephaniah, Haggai, Zechariah and Malachi are in the next section.
 
 ### The book pages
 
@@ -9267,6 +9267,74 @@ Lines that the deep notes draw to Christ, but the New Testament does not, were l
 ### What was run
 
 The 2 Kings checks, copied to `/home/user/bdoor-scratch/prophets/`, now take the book as a setting, read only a book page's `teaching` field, and leave all twelve books' new plain chapters and teaching fields out of the care corpus; the first-person scan treats Not My People as a name. After every book page and chapter: validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden, signposting and first-person scans, the care-line check, no-emdash, the search and passage index checks, validate-politics, the seven explore-index checks and validate-bible (0 problems each). Hosea 11 gaining plain words broke one test in `WisdomTopic.test.tsx`, which named it as a chapter without them; it now names Ezekiel 18. The gates and pushes are in the hand-back.
+## The Minor Prophets, Habakkuk to Malachi: book pages and every chapter (2026-11-26)
+
+The last five of the twelve shorter prophets are complete, so all twelve now have a teaching introduction and every chapter in plain words. These five add 26 chapters and 61 passages, with the same shape as Hosea to Nahum: `later` as each passage's third part, `"plain": true` at the end of each chapter note, one commit for each book page (its ledger rows, the rebuilt explore indexes and its line in `teaching.test.tsx`) and one per chapter.
+
+### The book pages
+
+| Book | Parts | Words in the parts | Hard passages | Key words | Timeline | Places | Go deeper |
+|---|---|---|---|---|---|---|---|
+| Habakkuk | 9 | 1,493 | 6 | 11 | 7 | 1 | 9 |
+| Zephaniah | 9 | 1,376 | 7 | 11 | 7 | 4 | 8 |
+| Haggai | 9 | 1,339 | 5 | 10 | 7 | 1 | 7 |
+| Zechariah | 11 | 2,182 | 14 | 15 | 8 | 8 | 9 |
+| Malachi | 11 | 1,971 | 8 | 14 | 6 | 1 | 8 |
+
+Every place is drawn at a point the site's maps already use. Zephaniah has two maps, `canaan` (Jerusalem, Ashdod) and `fertile-crescent` (Nineveh at its ruin mounds, Jerusalem); the others use `canaan`. Each map note names what is left off. Dates come from each book's introduction and the site's guide to the kings. No side is taken on the date of Habakkuk, on who wrote Zechariah 9 to 14, on the name Malachi, on the millennial readings of Zechariah 14, on how far Romans 9 reaches, on the grounds for divorce, on tithing today, or on a further coming of Elijah.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Hard in |
+|---|---|---|---|
+| Habakkuk 1 | 3 | 1130 | 12-17 |
+| Habakkuk 2 | 3 | 1235 | 1-5 |
+| Habakkuk 3 | 3 | 1290 | 3-15, 16-19 |
+| Zephaniah 1 | 3 | 1192 | 1-6 |
+| Zephaniah 2 | 3 | 1092 | 4-12 |
+| Zephaniah 3 | 3 | 1212 | 14-20 |
+| Haggai 1 | 2 | 873 | 1-11 |
+| Haggai 2 | 3 | 1315 | 1-9 |
+| Zechariah 1 | 2 | 853 | 7-21 |
+| Zechariah 2 | 2 | 714 | 6-13 |
+| Zechariah 3 | 2 | 797 | 6-10 |
+| Zechariah 4 | 2 | 724 | 11-14 |
+| Zechariah 5 | 2 | 681 | 5-11 |
+| Zechariah 6 | 2 | 772 | 9-15 |
+| Zechariah 7 | 2 | 735 | 1-7 |
+| Zechariah 8 | 2 | 743 | none |
+| Zechariah 9 | 2 | 855 | 9-17 |
+| Zechariah 10 | 2 | 633 | none |
+| Zechariah 11 | 2 | 868 | 7-17 |
+| Zechariah 12 | 2 | 1018 | 1-9, 10-14 |
+| Zechariah 13 | 2 | 847 | 1-6 |
+| Zechariah 14 | 2 | 1006 | 1-11 |
+| Malachi 1 | 2 | 893 | 1-5 |
+| Malachi 2 | 3 | 1212 | 1-9, 10-16 |
+| Malachi 3 | 3 | 1380 | 1-5, 6-12 |
+| Malachi 4 | 2 | 881 | 1-3, 4-6 |
+
+### The hard places, and how they are stated
+
+- **Zechariah 14:** the readings of the last battle (dispensational and other premillennial, amillennial, and both) stated in their holders' terms; the atrocity of 14:2 and the plague of 14:12 named, not described; no warrant for violence and no claim about any modern state, city or border.
+- **Zechariah 12 and 13:** the mourning for the pierced one is spoken of Israel's own house and never a reason to blame the Jewish people; the textual question of 12:10 told in the third person; 13:3 read as hyperbole and no rule for any family, with the line for anyone not protected by a parent.
+- **Malachi 2:16:** both readings of the Hebrew; aimed at men breaking covenant, not at the abandoned; never a reason to stay where anyone is being harmed, with the line for anyone being hurt.
+- **Malachi 3:10:** no promise of wealth; the two Christian views of tithing; no prosperity teaching.
+- **Malachi 1:2-3 and 4:3:** Jacob and Esau as choosing, with Romans 9's readings left open; the ashes under the feet as God's justice, not vengeance, with Ezekiel 33:11.
+- **Habakkuk and Zephaniah:** God's use of Babylon not his approval of it; the judgment on the nations God's, not a model for revenge.
+
+### Care lines
+
+Reused whole, word for word, naming Find Help, with no phone number: for anyone being hurt at home, at work or in a church (Malachi book page; Malachi 2); for anyone sexually assaulted, the site's shorter form found in ten other places (Zechariah 14); for anyone not protected by a parent (Zechariah 13). No new care sentence stands in the data.
+
+### Cut or narrowed
+
+The New Testament's own lines were kept, and no others. Habakkuk: Romans 1:17, Galatians 3:11, Hebrews 10:38, Acts 13:41. Haggai: Hebrews 12:26; Zerubbabel in Matthew 1 and Luke 3. Zechariah, only where the New Testament quotes it: 9:9 (Matthew 21:5, John 12:15), 11:12-13 (Matthew 27:9-10), 12:10 (John 19:37, Revelation 1:7), 13:7 (Matthew 26:31, Mark 14:27). Malachi: Mark 1:2, Matthew 11:10 and 11:14, Luke 1:17, John 1:21, Matthew 17:11-12, Romans 9:13. Cut: Revelation 11:4 beside Zechariah 4, Luke 1:78 beside Malachi 4:2, Matthew 21:12-13 beside Malachi 1, 1 Peter 2:9 beside Malachi 3:17, John 2:19-21 beside Haggai 2, and the Didache and Wesley's hymn beside Malachi. Unsourced sentences cut before commit: the reading of Zephaniah 3:17 as silent in love; the bronze mountains of Zechariah 6 as gates; Jerusalem's one small spring; parable for the sign-acts of Zechariah 11, which the deep notes call sign-acts. Each chapter's ledger names its cuts.
+
+### What was run
+
+The same checks as Hosea to Nahum, after every book page and chapter (0 problems each). Before the third push (Hosea to Haggai, on the merged tree): the 63 content gates, `pnpm check`, `pnpm test` (207 files passed, 7 skipped), build, sitemap, prerender and `audit:canonicals` (0 failures), and a served walk at 390 and 1440 of the Jonah and Nahum book pages (Nineveh drawn, no label overlap) and every Habakkuk, Zephaniah and Haggai page (every part, list and paragraph shown, no sideways scroll, no console errors). The gates and the last push are in the hand-back.
+
 ## Proverbs: the book page and every chapter (2026-11-25)
 
 Proverbs is whole: a teaching introduction on the book page and all thirty-one chapters in plain words, in the shape Job and 2 Kings use (`later` as the third part; `"plain": true` appended to each chapter note; one commit for the book page and one per chapter, each with its ledger rows and only that chapter's files). The book page's commit also rebuilt the explore indexes (timeline, atlas, words, hard passages) and added Proverbs to `teaching.test.tsx` (the books with a teaching guide, and its frame, `canaan`).
