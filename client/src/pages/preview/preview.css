@@ -249,3 +249,26 @@
   .pv-book__title{font-size:16px}
   .pv-close__art{max-width:220px}
 }
+
+/* Round four: tools under the shelf, tonight's table, the desk's lead, a real signup. */
+.pv-bench{margin-top:var(--s-6);padding-top:var(--s-4);border-top:1.5px solid var(--charcoal-fg)}
+.pv-bench__head{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--s-3);margin-bottom:var(--s-2)}
+.pv-bench__title{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.08;letter-spacing:-.015em;margin:0}
+.home-sec--dark .pv-tools{border-top:0}
+.home-sec--dark .pv-tool{color:var(--charcoal-fg);border-bottom-color:var(--charcoal-line)}
+.home-sec--dark .pv-tool__icon{border-color:var(--charcoal-fg-muted)}
+.home-sec--dark .pv-tool__line{color:var(--charcoal-fg-muted)}
+.home-sec--dark .pv-tool:hover .pv-tool__icon,.home-sec--dark .pv-tool:focus-visible .pv-tool__icon{background:var(--mustard);border-color:var(--mustard);color:var(--charcoal)}
+.pv-together{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s-6);align-items:start}
+.pv-inline{list-style:none;margin:var(--s-3) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 22px;font-family:var(--U);font-size:15px;font-weight:500}
+.pv-inline a{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.22em}
+.pv-pair__eyebrow{margin-top:var(--s-3)}
+.pv-pair__eyebrow+.pv-pair__title{margin-top:8px}
+.pv-shelfrow{margin-top:var(--s-6);padding-top:var(--s-3);border-top:1.5px solid var(--ink)}
+.pv-shelfrow .pv-books{max-width:620px;margin-top:var(--s-2)}
+.pv-signup{background:var(--bone);color:var(--ink);padding:18px 20px 20px;max-width:480px;margin:0 0 var(--s-3);box-shadow:6px 6px 0 var(--art-olive)}
+.pv-signup__label{margin:0 0 10px;font-family:var(--U);font-size:14px;font-weight:600;line-height:1.4}
+@media (max-width:900px){
+  .pv-bench__head .home-tlink{display:none}
+  .pv-together{grid-template-columns:minmax(0,1fr);gap:var(--s-5)}
+}

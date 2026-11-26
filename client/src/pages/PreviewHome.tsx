@@ -37,6 +37,8 @@ import HomeFind from "./home/HomeFind";
 import HomeLatest from "./home/HomeLatest";
 import { ROAD_CHIPS } from "./home/roadChips";
 import { HOME_LINE, HOME_WHY } from "@/lib/positioning";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
+import { START_WITH, isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
 import "./home/home.css";
 import "./preview/preview.css";
 
@@ -71,17 +73,22 @@ const TOOLS = ["bible.search", "bible.word", "bible.cross-references", "bible.ti
 const WHY = HOME_WHY.replace(HOME_LINE, "").trim();
 const [WHY_ASKS, ...WHY_ANSWERS] = WHY.split(/(?<=\?)\s+/);
 
+/** The first public essay the shelf says to start with, as the live homepage chooses it. */
+const LEAD = (() => {
+  const slug = START_WITH.find((x) => isPublicEssay(x));
+  return slug ? { slug, title: overrideMeta(slug)?.title ?? shelfEntry(slug)?.title ?? slug } : null;
+})();
+
 /** The page's sections, for the rail that shows where a reader is. */
 const RAIL: [string, string][] = [
   ["explore", "Eight ways in"],
   ["films", "Films"],
   ["paths", "Learning paths"],
   ["ask", "Hard questions"],
-  ["shelf", "The Study Bible"],
-  ["tools", "Bible tools"],
+  ["shelf", "The Study Bible and tools"],
+  ["together", "Families and churches"],
   ["history", "Church history"],
   ["desk", "Essays and books"],
-  ["together", "Families and churches"],
 ];
 
 const count = (e: CatalogEntry) => (e.count ? `${e.count.n} ${e.count.of}` : "");
@@ -90,6 +97,7 @@ const count = (e: CatalogEntry) => (e.count ? `${e.count.n} ${e.count.of}` : "")
 const BibleShelf = lazy(() => import("./home/BibleShelf"));
 const QuestionPicker = lazy(() => import("./home/QuestionPicker"));
 const HistoryStrip = lazy(() => import("./home/HistoryStrip"));
+const TonightTable = lazy(() => import("./home/TonightTable"));
 const PreviewFilms = lazy(() => import("./preview/PreviewFilms"));
 const PreviewPaths = lazy(() => import("./preview/PreviewPaths"));
 
@@ -439,29 +447,67 @@ export default function PreviewHome() {
           <Piece name="shelf">
             <BibleShelf />
           </Piece>
+          <div className="pv-bench">
+            <div className="pv-bench__head">
+              <h3 id="pv-tools" className="pv-bench__title">Then study the text yourself</h3>
+              <Link href="/tools" className="home-tlink">
+                Every tool <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+              </Link>
+            </div>
+            <ul className="pv-tools" aria-labelledby="pv-tools">
+              {TOOLS.map(E).map((t) => {
+                const Icon = ICONS[t.icon];
+                return (
+                  <li key={t.id}>
+                    <Link href={t.href} className="pv-tool">
+                      <span className="pv-tool__icon">
+                        <Icon aria-hidden="true" size={22} strokeWidth={ICON_STROKE} />
+                      </span>
+                      <span className="pv-tool__name">{t.name}</span>
+                      <span className="pv-tool__line">{t.line}</span>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </section>
 
-      {/* TOOLS */}
-      <section id="tools" className="home-sec pv-sec" aria-labelledby="pv-tools">
-        <div className="home-wrap">
-          <Head id="pv-tools" eyebrow="Bible tools" title="Study the text yourself" link={{ href: "/tools", label: "Every tool" }} />
-          <ul className="pv-tools">
-            {TOOLS.map(E).map((t) => {
-              const Icon = ICONS[t.icon];
-              return (
-                <li key={t.id}>
-                  <Link href={t.href} className="pv-tool">
-                    <span className="pv-tool__icon">
-                      <Icon aria-hidden="true" size={22} strokeWidth={ICON_STROKE} />
-                    </span>
-                    <span className="pv-tool__name">{t.name}</span>
-                    <span className="pv-tool__line">{t.line}</span>
+      {/* TONIGHT AT THE TABLE, and the room: the live homepage's own piece, beside what a group needs. */}
+      <section id="together" className="home-sec home-sec--warm pv-sec" aria-labelledby="home-table-title">
+        <div className="home-wrap pv-together">
+          <div>
+            <p className="home-eyebrow">For families, tonight</p>
+            <Piece name="table">
+              <TonightTable />
+            </Piece>
+            <ul className="pv-inline">
+              {["family.catechism", "family.plans", "bible.explorer"].map(E).map((p) => (
+                <li key={p.id}>
+                  <Link href={p.href}>{p.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="pv-pair__col">
+            <PlateFrame ratio="16 / 9">
+              <Plate name="table" decorative />
+            </PlateFrame>
+            <p className="home-eyebrow pv-pair__eyebrow">For pastors and groups</p>
+            <h3 className="pv-pair__title">Something to open in the room</h3>
+            <p className="pv-pair__line">Studies a group can do in a sitting, each with a leader's guide, and paths to walk together.</p>
+            <ul className="pv-pair__list">
+              {["tools.groups", "tools.booklets", "bible.tracks", "tools.downloads"].map(E).map((p) => (
+                <li key={p.id}>
+                  <Link href={p.href} className="pv-pair__link">
+                    <span>{p.name}</span>
+                    {p.count && <span className="pv-pair__count">{count(p)}</span>}
                   </Link>
                 </li>
-              );
-            })}
-          </ul>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -479,11 +525,23 @@ export default function PreviewHome() {
       <section id="desk" className="home-sec pv-sec" aria-labelledby="pv-desk">
         <div className="home-wrap">
           <Head id="pv-desk" eyebrow="Publishing" title="Essays and books" link={{ href: "/writing", label: "All the essays" }} />
-          <div className="pv-desk">
+          <div className="home-desk">
+            {LEAD && (
+              <Link href={`/writing/${LEAD.slug}`} className="home-desk__lead">
+                <PlateFrame ratio="16 / 9">
+                  <Plate name="arch" decorative />
+                </PlateFrame>
+                <span className="home-eyebrow home-desk__kind">Start with this one</span>
+                <span className="home-desk__title">{LEAD.title}</span>
+              </Link>
+            )}
             <div>
               <h3 className="home-h3">Latest writing</h3>
               <HomeLatest />
             </div>
+          </div>
+          <div className="pv-shelfrow">
+            <h3 className="home-h3">Books</h3>
             <ul className="pv-books">
               {BOOK_SHELF.map((b) => (
                 <li key={b.slug}>
@@ -494,37 +552,6 @@ export default function PreviewHome() {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* FAMILIES AND CHURCHES */}
-      <section id="together" className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-together">
-        <div className="home-wrap">
-          <Head id="pv-together" eyebrow="Families and churches" title="For the table and the room" />
-          <div className="pv-pair">
-            {[
-              { title: "For families", line: "A devotion for tonight, a catechism to learn together, and films for ages seven to sixteen.", plate: "house" as PlateName, ids: ["family.tonight", "family.catechism", "family.plans", "bible.explorer"] },
-              { title: "For pastors and groups", line: "Studies a group can do in a sitting, with a leader's guide, and paths to walk together.", plate: "table" as PlateName, ids: ["tools.groups", "tools.booklets", "bible.tracks", "tools.downloads"] },
-            ].map((g) => (
-              <div key={g.title} className="pv-pair__col">
-                <PlateFrame ratio="16 / 9">
-                  <Plate name={g.plate} decorative />
-                </PlateFrame>
-                <h3 className="pv-pair__title">{g.title}</h3>
-                <p className="pv-pair__line">{g.line}</p>
-                <ul className="pv-pair__list">
-                  {g.ids.map(E).map((p) => (
-                    <li key={p.id}>
-                      <Link href={p.href} className="pv-pair__link">
-                        <span>{p.name}</span>
-                        {p.count && <span className="pv-pair__count">{count(p)}</span>}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -543,10 +570,11 @@ export default function PreviewHome() {
             <p className="pv-close__line">
               LiveWell is the teaching of James Bell, a pastor who came to faith from atheism, written for the skeptic, the doubting Christian, the pastor and anyone trying to live well. There is no account to open and nothing behind a paywall.
             </p>
+            <div className="pv-signup">
+              <p className="pv-signup__label">Essays by email (Substack)</p>
+              <NewsletterSignup variant="minimal" source="preview-home" />
+            </div>
             <div className="home-row">
-              <Link href="/subscribe" className="home-btn">
-                Subscribe
-              </Link>
               <Link href="/about" className="home-btn home-btn--quiet">
                 About James
               </Link>
