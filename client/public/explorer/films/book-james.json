@@ -1,0 +1,119 @@
+{
+  "slug": "book-james",
+  "title": "James: faith that works",
+  "group": "books",
+  "status": "finished",
+  "book": "james",
+  "mark": "book-james",
+  "line": {
+    "younger": "A short letter of sharp, practical sayings from the brother of Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "James as a whole letter: wisdom in the form of a letter, trials, faith that is alive, how James and Paul fit together, the poor and the rich, the power of speech, and where to begin."
+  },
+  "poster": "A man stands at the door of a house and holds out a warm cloak to a traveler who has nothing. One gold lamp hangs over the door.",
+  "frames": [
+    {
+      "id": "sayings",
+      "name": "Sharp, practical sayings",
+      "still": "A man stands at the door of a house and holds out a warm cloak to a traveler who has nothing. One gold lamp hangs over the door.",
+      "younger": "James is a short letter, five chapters long. It was written by James, the brother of Jesus, who did not believe in Jesus at first. Later he led the church in Jerusalem. His letter is full of sharp, practical sayings about how to live.",
+      "older": "James reads less like an argument than a string of sharp, practical sayings from a pastor who has watched faith go soft. The church has long held that its writer was the brother of Jesus, who once did not believe and became a leader in Jerusalem.",
+      "verse": {
+        "ref": "James 1:1",
+        "text": "James, a servant of God and of the Lord Jesus Christ"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The letter drawn as one scroll in five panels, with a wave, an open hand, a small flame, a mist over a field and a farmer's sprouting seed over them. A gold rule lies under the second panel, the open hand.",
+      "younger": "James does not follow one long line. He keeps coming back to the same few things: hard times, wisdom, money, the way people talk, and what real faith does. Chapter two, about faith and doing, is the most famous part.",
+      "older": "Look for threads rather than a tidy outline: trials, wisdom, wealth, speech, faith and deeds, taken up again and again from new angles. It sounds like Proverbs, and still more like the Sermon on the Mount, though it rarely quotes Jesus directly.",
+      "verse": {
+        "ref": "James 1:22",
+        "text": "Be doers of the word, and not hearers only."
+      }
+    },
+    {
+      "id": "trials",
+      "name": "Watch for: trials that make you whole",
+      "still": "A young tree stands bent in a strong wind on a hilltop, its roots holding fast in the ground. A gold sun breaks through the clouds behind it.",
+      "younger": "Watch how James begins. He says that hard times can make faith grow strong, the way a tree grows strong roots in the wind. He is honest that trials hurt. And he says God never tempts anyone to do wrong. God gives only good gifts.",
+      "older": "James opens by calling trials an occasion for joy, not because suffering is good, but because tested faith produces perseverance, and perseverance leads to maturity. He is honest that trials hurt, and insists that God tempts no one and gives only good gifts.",
+      "verse": {
+        "ref": "James 1:3",
+        "text": "the testing of your faith develops perseverance."
+      }
+    },
+    {
+      "id": "faith",
+      "name": "Watch for: faith that is alive",
+      "still": "A traveler shivers by a wall while one man walks past waving a kind word, and a second man kneels to wrap a cloak around the traveler. A gold lamp hangs from the wall.",
+      "younger": "Watch chapter two. Suppose someone is cold and hungry, and you only say, go in peace, keep warm, but give them nothing. What good is that? James says faith that does nothing is dead. Real faith shows itself in what you do.",
+      "older": "Faith that does nothing is dead: the faith of bare words, which tells the hungry to keep warm and gives nothing. Paul and James both teach that God saves by grace and that true faith is alive. They use faith, works and justify in different senses.",
+      "verse": {
+        "ref": "James 2:17",
+        "text": "So too, faith by itself, if it does not result in action, is dead."
+      }
+    },
+    {
+      "id": "poor",
+      "name": "Watch for: the poor and the rich",
+      "still": "In a meeting room a poor man in a worn cloak is led to the best seat by the lamp, while the others make room. The lamp's flame is gold.",
+      "younger": "Watch how James talks about money. In some churches the rich were given the best seats and the poor were told to stand. James says that is wrong. God has chosen people who are poor to be rich in faith.",
+      "older": "Few books speak so sharply about wealth. James condemns giving the best seats to the rich, warns the rich that they fade like a flower, and pronounces woe on those who hold back wages. God has chosen the poor.",
+      "verse": {
+        "ref": "James 2:5",
+        "text": "Has not God chosen the poor of this world to be rich in faith"
+      }
+    },
+    {
+      "id": "tongue",
+      "name": "Watch for: the power of words",
+      "still": "Two people sit facing each other on a bench: one speaks, the other leans in to listen. Beside them a single small gold flame burns in a lamp.",
+      "younger": "Watch what James says about words. The tongue is small, he says, but it is like a tiny spark that can set a whole forest on fire. So be quick to listen, slow to speak, and slow to get angry.",
+      "older": "Every chapter touches the tongue. A small spark sets a great forest ablaze. Speech is the clearest test of whether faith has reached the whole person. Be quick to listen, slow to speak, slow to anger.",
+      "verse": {
+        "ref": "James 1:19",
+        "text": "Everyone should be quick to listen, slow to speak, and slow to anger"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter one, and read all five. It takes about fifteen minutes. Pick one saying that you could do this week, and do it. That is what James would want.",
+      "older": "Read all five chapters at one sitting; it takes about fifteen minutes. Watch the threads, and read it beside the Sermon on the Mount. The key chapters are 1, 2, 3 and 5. Read chapter 2 with its note on James and Paul.",
+      "verse": {
+        "ref": "James 1:5",
+        "text": "he should ask God, who gives generously to all without finding fault"
+      }
+    }
+  ],
+  "think": {
+    "younger": "James says faith shows itself in what you do. What is one kind thing your faith could do this week?",
+    "older": "James warns against faith that is only words. Where is it easiest for you to say the right thing and do nothing?"
+  },
+  "read": [
+    { "label": "James 1", "href": "/study/bible/james/1" },
+    { "label": "James 2", "href": "/study/bible/james/2" },
+    { "label": "James 3", "href": "/study/bible/james/3" },
+    { "label": "James 5", "href": "/study/bible/james/5" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that God saves by grace and that the faith that saves is never dead. They relate James 2:24 (a person is justified by deeds and not by faith alone) to Paul's letters in several ways: the two use justify differently, Paul for God's verdict on the sinner and James for the showing of that verdict in a life; they mean different things by faith and by works; or James corrects a distorted slogan drawn from Paul's teaching. Roman Catholic teaching adds that justification grows through good works done by grace. This moving picture takes no side; the readings are set out on",
+    "links": [
+      { "label": "the James page of the Study Bible", "href": "/study/bible/james" }
+    ]
+  },
+  "deeper": [
+    { "label": "James in the Study Bible: the whole letter", "href": "/study/bible/james" },
+    { "label": "Faith: trusting the one who promised (a moving picture)", "href": "/study/explorer/watch/faith" },
+    { "label": "Grace: the gift no one earns (a moving picture)", "href": "/study/explorer/watch/grace" },
+    { "label": "Proverbs: skill for ordinary days (a moving picture)", "href": "/study/explorer/watch/book-proverbs" }
+  ],
+  "end": { "label": "Start reading: James 1", "href": "/study/bible/james/1" }
+}
