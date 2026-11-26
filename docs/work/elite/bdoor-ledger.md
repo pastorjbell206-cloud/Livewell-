@@ -21776,3 +21776,22 @@ Cut in chapter 5: the deep note's line to Ephesians 2:14, which Paul does not dr
 | Deuteronomy 25:13-16; Amos 8:5 (its two words); 1 Kings 21 | 9-16 | micah/6.json `cultural`, `historical` | Repository |
 
 Cut in chapter 6: nothing drawn to the New Testament. No care line is added: the firstborn of 6:7 is a worshiper's question, named and answered, not an act described.
+
+## The plain notes on Micah 7 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 paraphrased; 7:2 (its first sentence); 7:3-5 paraphrased; 7:6; 7:7 | 1-7 | BSB | BSB text |
+| Gleaning after harvest; the early fig; the same world as chapters 2, 3 and 6; the circle of trust failing from friend to children; verse 7 as the hinge | 1-7 | micah/7.json `cultural`, `historical`, `literary` | Repository |
+| Leviticus 19:9-10; Matthew 10:36 | 1-7 | micah/7.json `cultural`; micah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| 7:8 (in double quotes, for its exclamation); 7:9 (its last sentence); 7:10-13 paraphrased (7:10's inner quotation not quoted) | 8-13 | BSB | BSB text |
+| A liturgy of voices; Zion and her enemy as women; sin owned; 8-20 dated to exile or return, or Micah's own look ahead; read after Jerusalem's fall | 8-13 | micah/7.json `literary`, `historical` | Repository; both views in their holders' terms |
+| Psalm 115:2 paraphrased; Isaiah 60:1 (its clause) | 8-13 | BSB | BSB text |
+| 7:14 (its first sentence); 7:15-17 paraphrased; 7:18 (to its dash; the rest paraphrased); 7:19 (its last sentences); 7:20 | 14-20 | BSB | BSB text |
+| Bashan and Gilead taken around 733 or 732 BC (2 Kings 15:29); the royal shepherd of 5:4 turned to prayer; Genesis 3:14 echoed; Micah's name and the closing question; faithfulness and loving devotion from Sinai; Tashlikh and the Day of Atonement reading after Jonah | 14-20 | micah/7.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 34:6 (its phrase); Psalm 103:12 | 14-20 | BSB | BSB text |
+| The hard note: anger and mercy both held; Exodus 34:6-7; anger real but not final; mercy the direction; the cross in Christian theology; differing descriptions | 14-20 `hard` | micah/7.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 7: nothing further drawn to the New Testament.
