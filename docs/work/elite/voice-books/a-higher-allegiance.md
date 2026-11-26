@@ -349,3 +349,10 @@ Each of these was left exactly as it stands in the text. They were noticed in re
 2. The four words on your own avoid list that are still in the end matter (nuanced, authentic, transformative, leverage): change them, or does the end matter stay as it is?
 3. Four section headings are set as ordinary paragraphs in the source, and in chapter 9 two list items are set as headings. Do you want them set the same way throughout? (That is a change to the source files, not to your words.)
 4. The introduction's block quotation "You have played the whore... you have forgotten Me." joins phrases from more than one verse. Keep it as a composite, or quote one verse?
+
+
+## 2026-11-25: an academic introduction (James: "very academic and intellectual")
+
+James, 2026-11-25: "I don't like a lot of the introductions to a lot of the books. I want them to be very academic and intellectual." This is a different kind of edit from the voice pass above: the introduction (`sec01.xhtml`) gained new prose that places the book in its scholarly conversation. Nothing James wrote about himself or the book's origin was changed, no quotation or Scripture reference was altered, and no chapter after the introduction was touched. Every scholar, book and date added is real and was checked; no one is quoted, every view is paraphrased and attributed. The PDF and EPUB were rebuilt with `node scripts/build-book-files.mjs <id> --verify` (identical: true) and the page count updated in `client/src/data/ebooks.ts`.
+
+Added one section, "The Conversation This Book Joins", before "The Shape of What Follows": Augustine's two cities, Eusebius on Constantine, Bellah's "Civil Religion in America" (1967), Herberg (1955), Whitehead and Perry (2020), Gorski and Perry (2022), love of country as part of piety in Aquinas, the Barmen Declaration (1934) judging right and left alike, and Hauerwas and Willimon's Resident Aliens (1989). Every other word of the introduction is unchanged; 207 pages became 209.
