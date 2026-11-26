@@ -1,0 +1,88 @@
+{
+  "title": "Whose kingdom?",
+  "note": "Written fresh on 2026-11-26 at James's word: \"I want you to have liberty to write the scripts. You don't have to copy verbatim what's on the website.\" Not recorded. Every fact is listed with where to check it in facts.md beside this file. Scripture is the Berean Standard Bible, copied from client/public/bible/text/. Field names and `gap` follow James's description of the Gather scripts; match them to film/beliefs/script.json on the Mac.",
+  "page": "/books/a-higher-allegiance",
+  "translation": "Berean Standard Bible",
+  "gap": 0.35,
+  "chapters": [
+    {
+      "id": "caesar",
+      "kicker": "Rome, the first century",
+      "level": 0.2,
+      "lines": [
+        "Two thousand years ago, the most powerful man on earth was called Caesar.",
+        "His face was on the coins. His armies were on the roads. And people called him lord."
+      ]
+    },
+    {
+      "id": "three-words",
+      "kicker": "Three words",
+      "level": 0.4,
+      "lines": [
+        "Then a small group of people started saying three words. Jesus is Lord.",
+        "Today that sounds like something you'd hear in church. Back then it could get you killed.",
+        "Because if Jesus is Lord, Caesar isn't."
+      ]
+    },
+    {
+      "id": "prayer",
+      "kicker": "The prayer Jesus taught",
+      "level": 0.6,
+      "lines": [
+        "Jesus taught his followers to pray like this.",
+        "Your kingdom come, Your will be done, on earth as it is in heaven."
+      ],
+      "scripture": {
+        "reference": "Matthew 6:10",
+        "translation": "Berean Standard Bible",
+        "text": "Your kingdom come, Your will be done, on earth as it is in heaven.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "notice",
+      "kicker": "Look at what it asks",
+      "level": 0.75,
+      "lines": [
+        "Look at what that prayer asks. It doesn't ask God to bless my side.",
+        "It asks for his kingdom to come. Which means mine has to make room."
+      ]
+    },
+    {
+      "id": "gift",
+      "kicker": "A gift, not a god",
+      "level": 0.9,
+      "lines": [
+        "Every nation is tempted to borrow God for its own story. Ours is too. So am I.",
+        "You can love your country. It's a good gift. But a good gift makes a terrible god."
+      ]
+    },
+    {
+      "id": "lasts",
+      "kicker": "The one that lasts",
+      "level": 0.95,
+      "lines": [
+        "Nations rise and nations fall. Rome did.",
+        "His kingdom is the one that can't be shaken."
+      ],
+      "scripture": {
+        "reference": "Hebrews 12:28",
+        "translation": "Berean Standard Bible",
+        "text": "we are receiving an unshakable kingdom",
+        "spoken": false
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "So here's the question. Whose kingdom are you praying for?"
+      ],
+      "titleCard": [
+        "Whose kingdom are you praying for?",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
