@@ -23991,3 +23991,19 @@ New Testament lines in chapter 3: none drawn. Cut in chapter 3: nothing.
 | The hard note: Who are the two olive trees, the two anointed ones? The readings in their holders' terms | 11-14 `hard` | zechariah/4.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 4: none drawn. Cut in chapter 4: Revelation 11:4 in the `later` field, since the New Testament does not quote Zechariah 4; replaced with Exodus 27:20 and 30:30.
+
+## The plain notes on Zechariah 5 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A flying scroll: the text paraphrased, its quoted verses (in single or double quotes) | 1-4 | BSB | BSB text |
+| Background in `hearers` | 1-4 | zechariah/5.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 20:15; Exodus 20:7; 1 Kings 6:3 | 1-4 `later` | BSB | BSB text |
+| Wickedness carried away in a basket: the text paraphrased, its quoted verses (in single or double quotes) | 5-11 | BSB | BSB text |
+| Background in `hearers` | 5-11 | zechariah/5.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 11:2; Jeremiah 44:17-19 | 5-11 `later` | BSB | BSB text |
+| The hard note: Why is wickedness pictured as a woman, and does the passage demean women? The readings in their holders' terms | 5-11 `hard` | zechariah/5.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 5: none drawn. Cut in chapter 5: nothing.
