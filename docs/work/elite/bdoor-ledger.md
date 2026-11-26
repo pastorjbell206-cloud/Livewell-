@@ -22089,3 +22089,22 @@ Cut in chapter 6: the deep note's lines to Christ (Mark 8:36 and the rich fool, 
 | The hard note: the readings (a limited observation recorded, not endorsed; Folly of Proverbs 5 to 9; Solomon's thousand, 1 Kings 11:3; verse 29's adam and both sexes found wanting; combinations); the final word indicting humanity; Genesis 1:27 and Proverbs 31; no license for contempt toward women | 23-29 `hard` | ecclesiastes/7.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 7: the deep note's lines to Christ (Christ as the righteousness the Teacher found wanting; 1 Corinthians 1:24, 30 and wisdom come near beside verse 24; Matthew 5:4 beside the house of mourning; the note calls them connections of theme and fulfillment).
+
+## The plain notes on Ecclesiastes 8 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1 (its first three sentences); 8:2; 8:3-4 paraphrased (verse 4 holds an inner quotation); 8:5; 8:7; 8:8; 8:9 paraphrased | 1-9 | BSB | BSB text |
+| Absolute monarchy in Solomon's court, Persia and the Greek kingdoms; the oath of loyalty in God's name (2 Kings 11:17); court manners as life and death; Esther 4:11; Egyptian and Mesopotamian advice to officials; counsel for living under power, not a teaching that rulers are always right (verse 9); ruach as wind and breath; no discharge in wartime (Deuteronomy 20:5-8) | 1-9 | ecclesiastes/8.json `historical`, `cultural`, `words` (ruach) | Repository |
+| Esther 4:11 (paraphrased, with its second sentence quoted); Psalm 89:48 (its first sentence) | 1-9 | ecclesiastes/8.json `cultural` (Esther 4:11); the chapter data's cross-references for 8:8 (Psalm 89:48 by way of 3:19-20); BSB | Repository; BSB text |
+| The honored burial (8:10) paraphrased, its last sentence quoted; 8:11; 8:12; 8:13 paraphrased; 8:14 (in double quotes); 8:15 (its first sentence; the second paraphrased) | 10-15 | BSB | BSB text |
+| Verse 10's difficult Hebrew and the two translations; slow justice and bold wrongdoing; verses 12-14 side by side | 10-15 | ecclesiastes/8.json `historical`, `literary` | Repository; each reading in its holders' terms |
+| Psalm 73:3; Psalm 73:17 (its last clause) | 10-15 | guides/reading-wisdom.json section 6 (Psalm 73); BSB | Repository; BSB text |
+| The hard note: three views (traditional wisdom quoted and tested; both believed, by faith and by sight; looking past what is seen to the final judgment, 12:14); neither side denied | 10-15 `hard` | ecclesiastes/8.json `hard`, `literary` | Repository; each reading in its holders' terms |
+| The sleepless task (8:16) paraphrased (it holds dashes); 8:17 | 16-17 | BSB | BSB text |
+| The verb to find, as in chapter 7; humility about the limits of understanding; preparation for chapter 9 | 16-17 | ecclesiastes/8.json `literary`, `story` | Repository |
+| Romans 11:33 (in double quotes, as it holds exclamations); Job 11:7 | 16-17 | ecclesiastes/8.json `christ` (Romans 11:33 echoing the chapter's conclusion); the chapter data's cross-references for 8:17 (Job 11:7 by way of 3:11); BSB | Repository; BSB text |
+
+Cut in chapter 8: the deep note's lines to Christ (John 10:17-18 and Hebrews 2:14-15 beside verse 8; 2 Peter 3:9 and Acts 17:31 beside delayed justice; the note calls them thematic). No care line is needed in this chapter.
