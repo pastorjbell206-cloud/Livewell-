@@ -1,6 +1,6 @@
 {
   "title": "Whose kingdom?",
-  "note": "DRAFT for James to approve. Not recorded. Every narration line is a sentence from A Higher Allegiance, the chapter \"Civil Religion: When a Nation Borrows Sacred Words\", shortened only by leaving words out; words.md beside this file shows each line against its original and marks the three places James should look at. The Scripture lines are the Berean Standard Bible, copied from client/public/bible/text/matthew/6.json. The fields follow James's description of the Gather scripts; `gap` is a guess and should be set to match film/beliefs/script.json on the Mac.",
+  "note": "Words approved by James on 2026-11-26. Not yet recorded. Every narration line is a sentence from A Higher Allegiance, the chapter \"Civil Religion: When a Nation Borrows Sacred Words\", shortened only by leaving words out; words.md beside this file shows each line against its original and marks the three places James should look at. The Scripture lines are the Berean Standard Bible, copied from client/public/bible/text/matthew/6.json. The fields follow James's description of the Gather scripts; `gap` is a guess and should be set to match film/beliefs/script.json on the Mac.",
   "page": "/books/a-higher-allegiance",
   "translation": "Berean Standard Bible",
   "gap": 0.35,

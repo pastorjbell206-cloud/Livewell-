@@ -1,6 +1,6 @@
 {
   "title": "Can you trust the Bible?",
-  "note": "DRAFT for James to approve. Not recorded. Every narration line is a sentence from The Reliability of Scripture, chapter one (\"Three Questions We Confuse for One\"), shortened only by leaving words out; words.md beside this file shows each line against its original. The Scripture line is the Berean Standard Bible, copied from client/public/bible/text/2-timothy/3.json, and is the first clause of the verse. The fields follow James's description of the Gather scripts; `gap` is a guess and should be set to match film/beliefs/script.json on the Mac.",
+  "note": "Words approved by James on 2026-11-26. Not yet recorded. Every narration line is a sentence from The Reliability of Scripture, chapter one (\"Three Questions We Confuse for One\"), shortened only by leaving words out; words.md beside this file shows each line against its original. The Scripture line is the Berean Standard Bible, copied from client/public/bible/text/2-timothy/3.json, and is the first clause of the verse. The fields follow James's description of the Gather scripts; `gap` is a guess and should be set to match film/beliefs/script.json on the Mac.",
   "page": "/books/the-reliability-of-scripture",
   "translation": "Berean Standard Bible",
   "gap": 0.35,
