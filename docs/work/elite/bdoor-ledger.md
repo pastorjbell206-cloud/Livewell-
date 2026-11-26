@@ -25881,3 +25881,17 @@ Cut in chapter 41: a draft line on Gibeon's position, which no repository source
 | Deuteronomy 17:16, Isaiah 31:1, Hosea 11:5, 2 Kings 25:26 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 42: nothing. The hard note adds that the chapter is no rule against seeking refuge and draws no line to refugees today.
+
+## The plain notes on Jeremiah 43 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/43.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 43:1-13 (verses 2-6 and 9-13 partly paraphrased) | all | BSB | BSB text |
+| Tahpanhes as Daphnae, Tell Defenneh; garrison with Greeks; Petrie 1886 and the brick platform | all | jeremiah/43.json `historical` | Repository |
+| Beth-shemesh as On, Heliopolis; Ra; obelisks | 8-13 | jeremiah/43.json `cultural`, `words` | Repository |
+| Did Nebuchadnezzar conquer Egypt: tablet of about 568 or 567 BC; Ezekiel 29:17-20; 525 BC; two readings | 8-13 `hard` | jeremiah/43.json `hard` | Repository |
+| Isaiah 31:1, 2 Kings 25:26, Ezekiel 29:19 (clauses); Genesis 41:45 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 43: the local name Petrie reported for the ruin, which the deep note itself says has been questioned.
