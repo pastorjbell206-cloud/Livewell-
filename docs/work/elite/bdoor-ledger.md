@@ -25103,3 +25103,19 @@ Cut in chapter 17: nothing.
 | Jonah 3:10, Romans 9:21, Jeremiah 6:16, Numbers 6:25, Matthew 5:44 (clauses); Psalm 109:5 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 18: nothing.
+
+## The plain notes on Jeremiah 19 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 19:1-15 (verse 9 named only) | all | BSB | BSB text |
+| Ben-hinnom, Topheth; Ahaz, Manasseh, Josiah (2 Kings 16:3; 21:6; 23:10); the Potsherd Gate | 1-9 | jeremiah/19.json `historical` | Repository |
+| Child sacrifice in the ancient world; Israel's law forbids it; 2 Kings 3:27 | 1-9 | jeremiah/19.json `cultural` | Repository |
+| Verse 9: real sieges (2 Kings 6; Lamentations 4:10), covenant curses, God as cause of what he permits | 1-9 `hard` | jeremiah/19.json `hard` | Repository |
+| The CHILDLOSS care line, byte for byte | 1-9 `hard` | carelines.json | care.mjs |
+| Clay and fired jar (chapter 18); rooftop worship | 10-15 | jeremiah/19.json `cultural` | Repository |
+| 2 Kings 23:10, Psalm 2:9, Zephaniah 1:5 (clauses); Deuteronomy 28:53 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 19: nothing. Verse 9 is named and not described.
