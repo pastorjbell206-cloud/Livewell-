@@ -126,7 +126,7 @@ write("grace", "Grace: the gift no one earns", P("grace"), [
     "All Christians confess that salvation is God's gift, received by grace and not earned.",
     "They differ on how God's grace and the human will relate, and on how grace is received: by faith alone, or by faith with the sacraments and the life of the church. This film takes no side."]},
   {"id": "close", "kicker": "", "level": 0.3, "lines": [
-    "A wage is owed. A gift is not."],
+    "Grace is the gift that no one earns."],
    "titleCard": ["The gift no one earns.", END]},
 ], NOTE)
 

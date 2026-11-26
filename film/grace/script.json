@@ -1,0 +1,138 @@
+{
+  "title": "Grace: the gift no one earns",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/grace",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "gift",
+      "kicker": "A wage and a gift",
+      "level": 0.2,
+      "lines": [
+        "A wage is owed. A gift is not. The Bible's word for the gift is grace: the free and undeserved favor of God, who gives sinners what they could never earn and forgives what they could never repay.",
+        "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord."
+      ],
+      "scripture": {
+        "reference": "Romans 6:23",
+        "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "landowner",
+      "kicker": "The landowner",
+      "level": 0.45,
+      "lines": [
+        "Jesus told of a landowner who paid those who had worked one hour the same as those who had worked twelve. The early workers grumbled, and he answered that he had wronged no one.",
+        "Or are you envious because I am generous?",
+        "Grace offends anyone who is keeping count."
+      ],
+      "scripture": {
+        "reference": "Matthew 20:15",
+        "text": "Or are you envious because I am generous?",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "cost",
+      "kicker": "What it cost",
+      "level": 0.65,
+      "lines": [
+        "Grace is not God grading on a curve. He didn't wait for sinners to put things right.",
+        "He paid the debt himself, while we were still his enemies. The cross is what the gift cost."
+      ],
+      "scripture": {
+        "reference": "Romans 5:8",
+        "text": "But God proves His love for us in this: While we were still sinners, Christ died for us.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "received",
+      "kicker": "Received, never achieved",
+      "level": 0.7,
+      "lines": [
+        "So salvation is received, never achieved: by grace, through faith, not by works.",
+        "Faith is not the one good deed that earns it. Faith is the empty hand that takes what is given."
+      ],
+      "scripture": {
+        "reference": "Ephesians 2:8-9",
+        "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "safe",
+      "kicker": "Does that make sin safe?",
+      "level": 0.6,
+      "lines": [
+        "Does that make sin safe? Paul heard the question and answered it at once.",
+        "Shall we continue in sin so that grace may increase? Certainly not!",
+        "The grace that forgives also teaches. Good works are not the root of salvation. They are its fruit."
+      ],
+      "scripture": {
+        "reference": "Romans 6:1-2",
+        "text": "Shall we continue in sin so that grace may increase? Certainly not!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "enough",
+      "kicker": "Grace enough",
+      "level": 0.8,
+      "lines": [
+        "And grace doesn't stop at the door. Paul pleaded three times for a weakness to be taken away, and it was not. He was given this instead.",
+        "My grace is sufficient for you, for My power is perfected in weakness.",
+        "Grace enough for the day, and God's power at its clearest where ours runs out."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 12:9",
+        "text": "My grace is sufficient for you, for My power is perfected in weakness.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "travel",
+      "kicker": "A gift that travels",
+      "level": 0.7,
+      "lines": [
+        "The gift is meant to travel. People who know they have been forgiven, forgive. People who know that everything they have was given, give.",
+        "In the church no one has anything they did not receive."
+      ],
+      "scripture": {
+        "reference": "Ephesians 4:32",
+        "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "All Christians confess that salvation is God's gift, received by grace and not earned.",
+        "They differ on how God's grace and the human will relate, and on how grace is received: by faith alone, or by faith with the sacraments and the life of the church. This film takes no side."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Grace is the gift that no one earns."
+      ],
+      "titleCard": [
+        "The gift no one earns.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+ "length": 139.76,
+ "chapters": [
+  {
+   "id": "gift",
+   "kicker": "A wage and a gift",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 22.56,
+   "lines": [
+    {
+     "text": "A wage is owed. A gift is not. The Bible's word for the gift is grace: the free and undeserved favor of God, who gives sinners what they could never earn and forgives what they could never repay.",
+     "start": 2.6,
+     "end": 15.4
+    },
+    {
+     "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+     "start": 16.0,
+     "end": 21.66
+    }
+   ]
+  },
+  {
+   "id": "landowner",
+   "kicker": "The landowner",
+   "level": 0.45,
+   "start": 21.76,
+   "end": 38.52,
+   "lines": [
+    {
+     "text": "Jesus told of a landowner who paid those who had worked one hour the same as those who had worked twelve. The early workers grumbled, and he answered that he had wronged no one.",
+     "start": 22.66,
+     "end": 32.06
+    },
+    {
+     "text": "Or are you envious because I am generous?",
+     "start": 32.6,
+     "end": 34.74
+    },
+    {
+     "text": "Grace offends anyone who is keeping count.",
+     "start": 35.3,
+     "end": 37.62
+    }
+   ]
+  },
+  {
+   "id": "cost",
+   "kicker": "What it cost",
+   "level": 0.65,
+   "start": 37.72,
+   "end": 50.26,
+   "lines": [
+    {
+     "text": "Grace is not God grading on a curve. He didn't wait for sinners to put things right.",
+     "start": 38.62,
+     "end": 43.24
+    },
+    {
+     "text": "He paid the debt himself, while we were still his enemies. The cross is what the gift cost.",
+     "start": 43.74,
+     "end": 49.36
+    }
+   ]
+  },
+  {
+   "id": "received",
+   "kicker": "Received, never achieved",
+   "level": 0.7,
+   "start": 49.46,
+   "end": 63.18,
+   "lines": [
+    {
+     "text": "So salvation is received, never achieved: by grace, through faith, not by works.",
+     "start": 50.36,
+     "end": 55.38
+    },
+    {
+     "text": "Faith is not the one good deed that earns it. Faith is the empty hand that takes what is given.",
+     "start": 55.76,
+     "end": 62.28
+    }
+   ]
+  },
+  {
+   "id": "safe",
+   "kicker": "Does that make sin safe?",
+   "level": 0.6,
+   "start": 62.38,
+   "end": 79.62,
+   "lines": [
+    {
+     "text": "Does that make sin safe? Paul heard the question and answered it at once.",
+     "start": 63.28,
+     "end": 67.7
+    },
+    {
+     "text": "Shall we continue in sin so that grace may increase? Certainly not!",
+     "start": 68.2,
+     "end": 72.28
+    },
+    {
+     "text": "The grace that forgives also teaches. Good works are not the root of salvation. They are its fruit.",
+     "start": 72.86,
+     "end": 78.72
+    }
+   ]
+  },
+  {
+   "id": "enough",
+   "kicker": "Grace enough",
+   "level": 0.8,
+   "start": 78.82,
+   "end": 98.72,
+   "lines": [
+    {
+     "text": "And grace doesn't stop at the door. Paul pleaded three times for a weakness to be taken away, and it was not. He was given this instead.",
+     "start": 79.72,
+     "end": 87.64
+    },
+    {
+     "text": "My grace is sufficient for you, for My power is perfected in weakness.",
+     "start": 88.16,
+     "end": 92.66
+    },
+    {
+     "text": "Grace enough for the day, and God's power at its clearest where ours runs out.",
+     "start": 93.28,
+     "end": 97.82
+    }
+   ]
+  },
+  {
+   "id": "travel",
+   "kicker": "A gift that travels",
+   "level": 0.7,
+   "start": 97.92,
+   "end": 111.48,
+   "lines": [
+    {
+     "text": "The gift is meant to travel. People who know they have been forgiven, forgive. People who know that everything they have was given, give.",
+     "start": 98.82,
+     "end": 107.02
+    },
+    {
+     "text": "In the church no one has anything they did not receive.",
+     "start": 107.68,
+     "end": 110.58
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.55,
+   "start": 110.68,
+   "end": 130.46,
+   "lines": [
+    {
+     "text": "All Christians confess that salvation is God's gift, received by grace and not earned.",
+     "start": 111.58,
+     "end": 117.06
+    },
+    {
+     "text": "They differ on how God's grace and the human will relate, and on how grace is received: by faith alone, or by faith with the sacraments and the life of the church. This film takes no side.",
+     "start": 117.7,
+     "end": 129.56
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 129.66,
+   "end": 133.663,
+   "lines": [
+    {
+     "text": "Grace is the gift that no one earns.",
+     "start": 130.56,
+     "end": 132.763
+    }
+   ]
+  }
+ ]
+}
