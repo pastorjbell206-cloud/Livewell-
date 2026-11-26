@@ -25012,3 +25012,18 @@ Cut in chapter 11: a draft line on why Anathoth's priests opposed Jeremiah, whic
 | Psalm 73:3, Habakkuk 1:13, 2 Kings 24:2, Isaiah 56:6 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 12: nothing.
+
+## The plain notes on Jeremiah 13 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 13:1-27 (verses 12 and 23 partly paraphrased) | all | BSB | BSB text |
+| Loincloth, linen and priests; Perath, the Euphrates or Parah | 1-14 | jeremiah/13.json `cultural`, `historical` | Repository |
+| Jehoiachin and Nehushta, 597 BC; the queen mother's office | 15-27 | jeremiah/13.json `historical`, `cultural` | Repository |
+| The stripping picture: scholars' concern, the city and its male leaders, 3:12-14 and 31:3-4 | 15-27 `hard` | jeremiah/13.json `hard` | Repository |
+| The city-and-covenant statement; the HURT care line, byte for byte | 15-27 `hard` | the coordinator's direction; carelines.json | care.mjs |
+| Deuteronomy 7:6, Isaiah 29:9, 2 Kings 24:12, Ezekiel 36:26 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 13: nothing. The note on verse 23 adds that the proverb makes no judgment on any people.
