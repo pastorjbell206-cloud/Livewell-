@@ -21834,3 +21834,19 @@ Cut from the book page: the introduction's lines to Romans 10:15 as a reading of
 | Isaiah 52:7 (its clause); Romans 10:15 quoting Isaiah; 2 Kings 18:28-35 | 9-15 | nahum/intro.json `christ`; nahum/1.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 1: nothing drawn from Nahum to the New Testament.
+
+## The plain notes on Nahum 2 (2026-11-25)
+
+`client/public/bible/notes/nahum/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 and 2:3-5 and 2:7-10 paraphrased; 2:2 (its first clause); 2:6 | 1-10 | BSB | BSB text |
+| 612 BC, Nabopolassar and the Medes; the Babylonian Chronicle and a siege of months; the walls, gates, Tigris and Khosr; flooding debated (Diodorus Siculus, late and legendary; the waterworks; poetic imagery); red shields and scarlet; flashing chariots; three rhyming words; written from the victims' side | 1-10 | nahum/2.json `historical`, `cultural`, `literary` | Repository; the views in their holders' terms |
+| Isaiah 10:12 paraphrased; Zephaniah 2:13 paraphrased | 1-10 | BSB | BSB text |
+| The hard note: no mourning; the victims' side; Assyria's own reliefs; violence coming home; judgment God's; the prophets' grief over enemies; Jonah; no reason to gloat | 1-10 `hard` | nahum/2.json `hard`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+| 2:11; 2:12 paraphrased; 2:13 (its first words, in double quotes; the rest paraphrased) | 11-13 | BSB | BSB text |
+| Assyrian kings as lions; Ashurbanipal's lion-hunt reliefs in the British Museum; the empty den; the formula of 2:13 and 3:5 | 11-13 | nahum/2.json `cultural`, `literary` | Repository |
+| Isaiah 5:29 paraphrased; Ezekiel 29:3 (its formula) | 11-13 | BSB | BSB text |
+
+Cut in chapter 2: an unsourced line identifying the messengers of 2:13 was cut before commit. The scene of the captive women (2:7) is told in the BSB's own words and not dwelt on.
