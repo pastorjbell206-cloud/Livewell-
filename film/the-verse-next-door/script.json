@@ -1,0 +1,85 @@
+{
+  "title": "Read the verse next door",
+  "note": "Written fresh on 2026-11-26 at James's word: \"I want you to have liberty to write the scripts.\" Not recorded, and James has not read it yet. Every fact is listed with where to check it in facts.md beside this file. Scripture is the Berean Standard Bible, copied word for word from client/public/bible/text/; an exclamation mark appears only where the verse has one. Field names and `gap` follow James's description of the Gather scripts; match them to film/beliefs/script.json on the Mac.",
+  "page": "/study/how-to-study",
+  "translation": "Berean Standard Bible",
+  "gap": 0.35,
+  "chapters": [
+    {
+      "id": "famous",
+      "kicker": "A famous verse",
+      "level": 0.2,
+      "lines": [
+        "You've seen this one. On gym walls. On locker room doors.",
+        "I can do all things through Christ who gives me strength."
+      ],
+      "scripture": {
+        "reference": "Philippians 4:13",
+        "translation": "Berean Standard Bible",
+        "text": "I can do all things through Christ who gives me strength.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "sounds",
+      "kicker": "What it sounds like",
+      "level": 0.35,
+      "lines": [
+        "It sounds like a promise that you'll win.",
+        "So here's the first rule of reading the Bible. Read the verse next door."
+      ]
+    },
+    {
+      "id": "prison",
+      "kicker": "Where Paul was",
+      "level": 0.55,
+      "lines": [
+        "Paul wrote this letter as a prisoner, in chains.",
+        "And one sentence earlier, he tells you what all things means."
+      ]
+    },
+    {
+      "id": "next-door",
+      "kicker": "One sentence earlier",
+      "level": 0.7,
+      "lines": [
+        "Being filled and being hungry. Having plenty and having need."
+      ],
+      "scripture": {
+        "reference": "Philippians 4:12",
+        "translation": "Berean Standard Bible",
+        "text": "to being filled and being hungry, to having plenty and having need",
+        "spoken": false
+      }
+    },
+    {
+      "id": "means",
+      "kicker": "What all things means",
+      "level": 0.85,
+      "lines": [
+        "All things isn't winning. It's the full days and the hungry days. It's being all right when you lose."
+      ]
+    },
+    {
+      "id": "better",
+      "kicker": "A better promise",
+      "level": 0.95,
+      "lines": [
+        "That's a better promise than the one on the wall. It doesn't say you'll get what you want.",
+        "It says Christ will be enough when you don't."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "So before you quote a verse, read the ones around it."
+      ],
+      "titleCard": [
+        "Read the verse next door.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
