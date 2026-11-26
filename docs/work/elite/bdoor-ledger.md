@@ -22557,3 +22557,23 @@ Cut in chapter 31: Matthew 23:37, which the New Testament does not draw from thi
 | Isaiah 44:3; Joel 2:28 | 15-20 `later` | BSB | BSB text |
 
 Cut in chapter 32: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 33 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 33:1-6 (33:1 and 33:2's first line in double quotes for their exclamations) | 1-6 | BSB | BSB text |
+| The last woe aimed at the enemy; Assyria and 701 BC; the liturgy reading; daily strength; Zion's treasure | 1-6 | isaiah/33.json `story`, `historical` | Repository |
+| Psalm 30:5; Isaiah 21:2 (inside the BSB's speech marks; first drafted as a claim the verse does not make, and corrected) | 1-6 `later` | BSB | BSB text |
+| 33:7-16 (33:15's clause before the dash) | 7-16 | BSB | BSB text |
+| The broken treaty and 2 Kings 18:14-17; the weeping envoys; Lebanon, Sharon, Bashan and Carmel; the entrance-psalm form | 7-16 | isaiah/33.json `historical` | Repository |
+| Psalm 15:1-2; Hebrews 12:29 (inside the BSB's speech marks) | 7-16 `later` | BSB | BSB text |
+| 33:17-24 (33:20 and 33:22) | 17-24 | BSB | BSB text |
+| The officials who counted tribute and towers; God as Jerusalem's river; the tent; healing and forgiveness together, not a statement about anyone's illness now | 17-24 | isaiah/33.json `historical`, `summary` | Repository |
+| Psalm 46:4; Revelation 21:4 | 17-24 `later` | BSB | BSB text |
+| The hard note: a promise of the future city; no teaching that illness now comes from sin; Job and John 9 named | 17-24 `hard` | the brief; 2-kings/plain/15.json (the same care) | Repository |
+| Care line ("It needs to be said plainly. The Bible does not teach that sickness...") | 17-24 `hard` | Reused byte for byte from 2-kings/plain/15.json, read by script | care.mjs |
+
+Cut in chapter 33: nothing.
