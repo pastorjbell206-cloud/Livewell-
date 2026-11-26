@@ -1746,6 +1746,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-nehemiah",
     "book-amos",
     "book-2-corinthians",
+    "book-1-thessalonians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2658,5 +2659,20 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toContain("it is not a letter against the Jewish people");
     expect(f.differ?.text).toMatch(/takes no side among the readings/);
     expect(text(f)).not.toMatch(/seed faith|hundredfold|sow a seed|prosperity|blessed financially/i);
+  });
+
+  it("1 Thessalonians sets no date, sets the rapture views out as the book page does and takes none, and reads 2:14-16 as the page does", () => {
+    const f = filmFile("book-1-thessalonians");
+    expect(f.care).toBe(filmFile("life-to-come").care);
+    const coming = f.frames.find(x => x.id === "coming")!;
+    expect(coming.older).toContain("Christians differ on the order of events");
+    expect(coming.older).toContain("Paul gives no date");
+    expect(f.differ?.text).toContain("do not separate a rapture from the return at all");
+    expect(f.differ?.text).toContain("no one should set a date for the Lord's return");
+    expect(f.differ?.text).toContain("they are not a verdict on the Jewish people");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const t = text(f);
+    expect(t).not.toMatch(/\b(19|20)\d\d\b|soon|any day now|signs of the times|antichrist|left behind|seven-year|tribulation begins/i);
+    expect(t).not.toMatch(/Russia|China|America|United States|Iran|Israel today|State of Israel|pope|president/i);
   });
 });

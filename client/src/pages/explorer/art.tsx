@@ -1193,6 +1193,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M44,36l-6,-20h24l-6,20Z" />
     </>
   ),
+  /* 1 Thessalonians: a lit window in a sleeping town, the window gold. */
+  "book-1-thessalonians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M18,22l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1ZM80,18l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1Z" />
+      <Shape d="M14,84V56H40V84ZM60,84V52H88V84Z" tone="c" off={0.8} />
+      <Shape d="M36,84V40H66V84Z" tone="b" off={0.8} />
+      <path className="pl-m" d="M45,52h12v12h-12Z" />
+      <path className="pl-l" d="M45,52h12v12h-12Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

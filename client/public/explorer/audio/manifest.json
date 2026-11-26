@@ -4445,6 +4445,116 @@
     }
    ]
   },
+  "book-1-thessalonians": {
+   "title": {
+    "file": "book-1-thessalonians/title.mp3",
+    "hash": "9296b7c05c7b6beaf403",
+    "seconds": 4.21,
+    "bytes": 25844
+   },
+   "younger": [
+    {
+     "id": "young",
+     "file": "book-1-thessalonians/younger/01-young.mp3",
+     "hash": "64f255361462b50201b1",
+     "seconds": 25.49,
+     "bytes": 153428
+    },
+    {
+     "id": "layout",
+     "file": "book-1-thessalonians/younger/02-layout.mp3",
+     "hash": "6fc1e01d5769dc3f35ba",
+     "seconds": 25.26,
+     "bytes": 152132
+    },
+    {
+     "id": "turned",
+     "file": "book-1-thessalonians/younger/03-turned.mp3",
+     "hash": "145d708a03bceff61b57",
+     "seconds": 24.65,
+     "bytes": 148532
+    },
+    {
+     "id": "hope",
+     "file": "book-1-thessalonians/younger/04-hope.mp3",
+     "hash": "873967960c73b07dccaa",
+     "seconds": 25.62,
+     "bytes": 154292
+    },
+    {
+     "id": "coming",
+     "file": "book-1-thessalonians/younger/05-coming.mp3",
+     "hash": "0fcdbf216f1e3ab3aedd",
+     "seconds": 22.64,
+     "bytes": 136436
+    },
+    {
+     "id": "together",
+     "file": "book-1-thessalonians/younger/06-together.mp3",
+     "hash": "e170d8321bd7460de5c3",
+     "seconds": 19.14,
+     "bytes": 115412
+    },
+    {
+     "id": "start",
+     "file": "book-1-thessalonians/younger/07-start.mp3",
+     "hash": "94fdc8ddda053035e8b2",
+     "seconds": 20.25,
+     "bytes": 122036
+    }
+   ],
+   "older": [
+    {
+     "id": "young",
+     "file": "book-1-thessalonians/older/01-young.mp3",
+     "hash": "014d1b01679d908b7f7c",
+     "seconds": 26.99,
+     "bytes": 162500
+    },
+    {
+     "id": "layout",
+     "file": "book-1-thessalonians/older/02-layout.mp3",
+     "hash": "5f069cbceedf6b4b64c4",
+     "seconds": 25.74,
+     "bytes": 155012
+    },
+    {
+     "id": "turned",
+     "file": "book-1-thessalonians/older/03-turned.mp3",
+     "hash": "ae2c350e61c77bdfa532",
+     "seconds": 26.89,
+     "bytes": 161924
+    },
+    {
+     "id": "hope",
+     "file": "book-1-thessalonians/older/04-hope.mp3",
+     "hash": "0519492741d13d032775",
+     "seconds": 26.55,
+     "bytes": 159908
+    },
+    {
+     "id": "coming",
+     "file": "book-1-thessalonians/older/05-coming.mp3",
+     "hash": "069b3daa31e51757b43a",
+     "seconds": 26.95,
+     "bytes": 162212
+    },
+    {
+     "id": "together",
+     "file": "book-1-thessalonians/older/06-together.mp3",
+     "hash": "c29834633aad93de7731",
+     "seconds": 22.11,
+     "bytes": 133268
+    },
+    {
+     "id": "start",
+     "file": "book-1-thessalonians/older/07-start.mp3",
+     "hash": "8f5603ff1a8f5ee0d024",
+     "seconds": 23.92,
+     "bytes": 144068
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

@@ -1629,3 +1629,23 @@ The book page's cautions are given in the captions: Paul's authority "was for bu
 | pictures | No beating, shipwreck or wound drawn; the rivals, Christ and God not drawn | The drawing (`scenes/book-2-corinthians.tsx`); a sheet of the finished frames read |
 | left out | The tearful letter's offender; the veil of chapter 3; the third heaven; the list of hardships in full | Deliberate; the book page is linked |
 | length | Younger 2:57.8, older 3:09.1 | `audio/manifest.json` |
+
+### 1 Thessalonians: hope that does not give up (`book-1-thessalonians`)
+
+The Lord's coming is given as the book page gives it: what all confess, then where Christians differ on the order of events, each view set out in "Where churches differ" as the page sets it, and no date. Paul's hard words in 2:14-16 are read as the page reads them.
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | 1 Thessalonians 3:6; 1:3; 1:9; 4:13; 5:2; 5:17; 4:18 (some trimmed to a clause) | BSB, by the validator; all 1 Thessalonians |
+| 1 A young church | Very likely the oldest of Paul's letters to survive, around AD 50; forced to leave by night; new believers facing hard neighbours; Timothy's good news; relief | The 1 Thessalonians book page, `teaching` "1 Thessalonians in a minute", nearly word for word |
+| 2 How it is laid out | The first half looks back (thanks, how Paul lived among them), the second looks ahead (holiness, love, work, the Lord's coming); every chapter ends near the same place | The book page's `teaching` "1 Thessalonians in a minute" and "How it is built". Two panels of 3 and 2 chapters; the gold rule under the second |
+| 3 Turned from idols | Most had worshipped idols weeks before; turned to the living and true God; gentle as a nursing mother, caring as a father; working night and day | The book page's `teaching` "How it is built"; BSB 1 Thessalonians 1:9; 2:7-9 |
+| 4 Hope in grief | Some believers had died; the living feared they had missed the Lord's coming; not told not to grieve, but not like those without hope, because Jesus died and rose; "And so we will always be with the Lord" | The book page's `teaching` "The Lord's coming: what all confess ...", nearly word for word; BSB 1 Thessalonians 4:13-17 |
+| 5 The Lord's coming | Every tradition confesses he will come and the dead be raised; Christians differ on the order of events and on a separate rapture; no date; like a thief in the night | The same part of the book page, nearly word for word; BSB 1 Thessalonians 5:1-2 |
+| 6 Life together | Respect leaders, care for the weak, rejoice, pray, give thanks, test everything; waiting means living well among neighbours | The book page's `teaching` "How it is built" and "What the letter is not", nearly word for word; BSB 1 Thessalonians 4:11-12; 5:12-22 |
+| 7 Where to start | One sitting, about fifteen minutes; 4:13-18 read for what Paul says it is for; whom are you grieving, where is your hope | The book page's `teaching` "How to read 1 Thessalonians", nearly word for word; BSB 1 Thessalonians 4:18 |
+| differ | What all confess; the views of the order of events as the page sets them (before, in the middle of, after the trouble; no separate rapture); no date and no living person, nation or event named; 2:14-16 persecutors with persecutors, no verdict on the Jewish people; no side | The book page's `teaching` "The Lord's coming ...", "Paul's hard words in 2:14-16" and "What the letter is not" |
+| care | "If someone you love has died, or if thinking about death makes you afraid, ..." | The care line of "The life to come", whole |
+| pictures | No grave, death or end-of-the-world scene; nothing in the sky; Christ and God not drawn; the coming pictured only as a town where someone is awake | The drawing (`scenes/book-1-thessalonians.tsx`); a sheet of the finished frames read |
+| left out | The words on sexual holiness in the captions; 2:14-16 in the captions; the trumpet and the clouds in the captions | Deliberate; the book page is linked |
+| length | Younger 2:47.2, older 3:03.4 | `audio/manifest.json` |

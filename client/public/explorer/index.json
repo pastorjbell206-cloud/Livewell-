@@ -1928,6 +1928,23 @@
       "book": "2-corinthians"
     },
     {
+      "slug": "book-1-thessalonians",
+      "title": "1 Thessalonians: hope that does not give up",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A warm letter to a young church that had lost friends and was afraid: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Thessalonians as a whole book: Paul's oldest letter, a church turned from idols, hope in grief, the Lord's coming without a date, life together, and where to begin."
+      },
+      "mark": "book-1-thessalonians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-thessalonians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
