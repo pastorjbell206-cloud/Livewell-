@@ -24367,3 +24367,25 @@ Cut in chapter 61: a draft `later` line with Mary's song (Luke 1:46-47) and Reve
 | Matthew 21:5 (its inner words), with Zechariah 9:9 named | 10-12 `later` | BSB; isaiah/62.json `christ` | BSB text |
 
 Cut in chapter 62: Ephesians 5 and Revelation 2, 3 and 21, which the deep note links by theme, are left out; only Matthew 21:5, which quotes verse 11, is kept.
+
+## The plain notes on Isaiah 63 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/63.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 63:1-6 (the warrior's speech paraphrased, since it sits inside the BSB's speech marks) | 1-6 | BSB | BSB text |
+| The dark side of the day; the warrior alone | 1-6 | isaiah/63.json `story` | Repository |
+| The winepress; treaders red; the prophets' use; Edom and adom, Bozrah and the vintage | 1-6 | isaiah/63.json `cultural` | Repository |
+| Edom, Esau, Psalm 137 and Obadiah; Bozrah; Edom as byword, Isaiah 34; the echo of 59:16-17 | 1-6 | isaiah/63.json `historical`, `literary` | Repository |
+| Revelation 19:13, 19:15 (its clause) | 1-6 `later` | BSB; isaiah/63.json `christ` | BSB text |
+| Poetry not report; anger as justice; judgment in God's hands alone; Christians differ; Revelation; the turn to prayer | 1-6 `hard` | isaiah/63.json `hard` | Repository |
+| No present-day people identified with Edom | 1-6 `hard` | the brief; lamentations/plain/4.json wording | Repository |
+| 63:7-14 (verse 8's saying paraphrased) | 7-14 | BSB | BSB text |
+| Prayer to the end of 64, answer in 65 and 66; communal lament; chesed; shepherds as Moses; the Angel of his Presence, Exodus 23 and 33; atsav and Genesis 6:6 | 7-14 | isaiah/63.json `story`, `literary`, `words`, `cultural` | Repository |
+| Exodus 33:14; Psalm 74:1 (its question) | 7-14 `later` | BSB | BSB text |
+| 63:15-19 | 15-19 | BSB | BSB text |
+| Sanctuary trampled; 538 BC, temple about 515 BC; the traditional view; 587 or 586 BC; Father rare; go'el as a name; verse 17's boldness | 15-19 | isaiah/63.json `historical`, `cultural`, `words` | Repository |
+| Isaiah 64:1 (paraphrased); Deuteronomy 32:6 (its question) | 15-19 `later` | BSB | BSB text |
+
+Cut in chapter 63: the reading of the winepress as the cross, which the deep note itself calls thematic, is left out, and a draft line on Romans 8:15 was replaced by Deuteronomy 32:6.
