@@ -24230,3 +24230,20 @@ Cut in chapter 2: nothing.
 | Exodus 19:5; Deuteronomy 7:6 | 13-18 `later` | BSB; malachi/3.json `words` | Repository; BSB text |
 
 Cut in chapter 3: 1 Peter 2:9, which echoes Exodus rather than quoting Malachi.
+
+## The plain notes on Malachi 4 (2026-11-26)
+
+`client/public/bible/notes/malachi/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 and 4:2 quoted; 4:3 paraphrased | 1-3 | BSB | BSB text |
+| Hebrew 3:19-24; furnace and sunrise; the winged sun disk and the Hezekiah jar handles; the calves | 1-3 | malachi/4.json `story`, `cultural`, `literary` | Repository; BSB text |
+| Isaiah 60:1; Psalm 84:11 | 1-3 `later` | BSB | BSB text |
+| God's justice, not human vengeance; Ezekiel 33:11 | 1-3 `hard` | BSB; the brief (no gloating) | Repository; BSB text |
+| 4:4, 4:5, 4:6 quoted | 4-6 | BSB | BSB text |
+| The close of the Twelve and of the Prophets; Horeb as Sinai; Elijah taken up; the scribes' teaching; the Passover cup; the synagogue custom; Matthew's opening | 4-6 | malachi/4.json `historical`, `cultural`, `literary`, `story` | Repository; BSB text |
+| Luke 1:17; Matthew 11:14; Matthew 17:12 | 4-6 `later` | BSB; malachi/4.json `christ` | Repository; BSB text |
+| John 1:21; Luke 1:17; Matthew 17:11; the readings of a further fulfillment; the Jewish hope | 4-6 `hard` | malachi/4.json `hard`; the site takes no side | Repository; BSB text |
+
+Cut in chapter 4: Luke 1:78 in the `later` field, since the New Testament does not quote Malachi 4:2 there; replaced with Psalm 84:11. The Hebrew of the ban (cherem) and Sirach are left in the deep notes; Revelation 11's two witnesses are not drawn.
