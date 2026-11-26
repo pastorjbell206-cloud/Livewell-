@@ -330,8 +330,8 @@ describe("a map's frame", () => {
       else if (b.slug === "jonah") expect(frames).toEqual(["fertile-crescent"]);
       else if (b.slug === "micah") expect(frames).toEqual(["canaan"]);
       else if (b.slug === "nahum") expect(frames).toEqual(["fertile-crescent"]);
-      else if (b.slug === "daniel") expect(frames).toEqual(["canaan"]);
-      else if (b.slug === "isaiah") expect(frames).toEqual(["canaan"]);
+      else if (b.slug === "daniel") expect(frames).toEqual(["canaan", "fertile-crescent"]);
+      else if (b.slug === "isaiah") expect(frames).toEqual(["canaan", "fertile-crescent"]);
       else if (b.slug === "habakkuk") expect(frames).toEqual(["canaan"]);
       else if (b.slug === "zephaniah") expect(frames).toEqual(["canaan", "fertile-crescent"]);
       else if (b.slug === "haggai") expect(frames).toEqual(["canaan"]);

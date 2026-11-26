@@ -24452,3 +24452,11 @@ Cut in chapter 65: nothing. The hard note on Romans 10:21 follows the brief that
 | Why the book ends this way; three Christian readings | 15-24 `hard` | isaiah/66.json `hard` | Repository |
 
 Cut in chapter 66: John 16:21 and Galatians 4:26, which the deep note calls thematic echoes, and Romans 15:8-12 are left out.
+
+## Isaiah and Daniel maps widened (2026-11-26)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Babylon 32.54 N, 44.42 E; Susa 32.19 N, 48.26 E; regions with names only; ruin-mound note | Isaiah and Daniel maps | the coordinator's direction | validate-bible-notes |
+| Nineveh 36.36 N, 43.15 E | Isaiah map | jonah, nahum and zephaniah intro.json | Repository |
+| Place lines' references (Isaiah 11:14, 14:29, 15:1, 16:6, 34:6, 63:1, 19:1, 30:2, 10:5, 37:37, 13:19, 39:1-6, 47:1; Daniel 1:1, 9:2, 4:30, 5:30, 8:2, 11:8, 11:42) | map lines | BSB | BSB text |

@@ -500,11 +500,149 @@
               "23:4"
             ],
             "line": "Tyre's sister city on the coast, named in the same oracle (23:2-4)."
+          },
+          {
+            "id": "philistia",
+            "name": "Philistia",
+            "lat": 31.6,
+            "lon": 34.55,
+            "region": true,
+            "refs": [
+              "11:14",
+              "14:29"
+            ],
+            "line": "The Philistine coast to the west, told not to rejoice (14:29). Drawn roughly, as a region with its name only.",
+            "label": {
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "moab",
+            "name": "Moab",
+            "lat": 31.45,
+            "lon": 35.8,
+            "region": true,
+            "refs": [
+              "15:1",
+              "16:6"
+            ],
+            "line": "The land east of the Dead Sea, the subject of the burden of chapters 15 and 16. Drawn roughly, as a region with its name only.",
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "edom",
+            "name": "Edom",
+            "lat": 30.95,
+            "lon": 35.6,
+            "region": true,
+            "refs": [
+              "34:6",
+              "63:1"
+            ],
+            "line": "The land south and east of the Dead Sea, a byword in chapters 34 and 63 for the hostile nations. Drawn roughly, as a region with its name only; no people of the present day is meant.",
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
+          }
+        ]
+      },
+      {
+        "frame": "fertile-crescent",
+        "title": "The empires around Judah",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "1:1",
+              "40:2"
+            ],
+            "line": "Judah's capital, to show where the book stands among the empires.",
+            "label": {
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "egypt",
+            "name": "Egypt",
+            "lat": 30.2,
+            "lon": 31.2,
+            "region": true,
+            "refs": [
+              "19:1",
+              "30:2"
+            ],
+            "line": "The power Judah kept running to for help: ‘They set out to go down to Egypt without asking My advice’ (30:2). Drawn roughly, as a region with its name only.",
+            "label": {
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "assyria",
+            "name": "Assyria",
+            "lat": 35.9,
+            "lon": 43.7,
+            "region": true,
+            "refs": [
+              "10:5"
+            ],
+            "line": "The empire of chapters 7 to 39, ‘the rod of My anger’ (10:5). Drawn roughly, as a region with its name only.",
+            "label": {
+              "dx": 8,
+              "dy": 12,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "nineveh",
+            "name": "Nineveh",
+            "lat": 36.36,
+            "lon": 43.15,
+            "refs": [
+              "37:37"
+            ],
+            "line": "Assyria's capital, where Sennacherib went home after Jerusalem was spared (37:37). Drawn at its ruin mounds opposite Mosul.",
+            "label": {
+              "dx": 8,
+              "dy": -4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "babylon",
+            "name": "Babylon",
+            "lat": 32.54,
+            "lon": 44.42,
+            "refs": [
+              "13:19",
+              "39:6",
+              "47:1"
+            ],
+            "line": "The city whose envoys came to Hezekiah (39:1-6), whose fall is foretold (13:19) and who sits in the dust in chapter 47. Drawn at its ruin mounds near Hillah.",
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
           }
         ]
       }
     ],
-    "mapNote": "Six places are drawn, each where the site's other maps place them; Samaria roughly, as a region. Galilee, Moab, Edom and Bozrah, Philistia, Lachish, Egypt, Assyria and Babylon are left off, because where they lay is not placed in this site's records or lies beyond the frame. No borders are drawn. The map makes no claim about any border today.",
+    "mapNote": "Ancient sites are placed at their ruin mounds; Samaria, Philistia, Moab, Edom, Egypt and Assyria are drawn roughly, as regions with names only. Galilee, Bozrah, Lachish and Tarshish are left off, because the site's records do not place them. No borders are drawn. The map makes no claim about any border today.",
     "deeper": [
       {
         "href": "/study/bible/guides/reading-prophets",
