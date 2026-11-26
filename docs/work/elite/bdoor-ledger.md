@@ -25119,3 +25119,18 @@ Cut in chapter 18: nothing.
 | 2 Kings 23:10, Psalm 2:9, Zephaniah 1:5 (clauses); Deuteronomy 28:53 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 19: nothing. Verse 9 is named and not described.
+
+## The plain notes on Jeremiah 20 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 20:1-18 (verses 3-6, 10 and 14-17 paraphrased) | all | BSB | BSB text |
+| Pashhur's office; the stocks; Babylon named first; Pashhur a prophet of lies (verse 6) | 1-6 | jeremiah/20.json `historical`, `cultural`; BSB | Repository, BSB text |
+| The last confession; deceived as enticed; fire in the bones; terror on every side; the hymn of verse 13 | 7-13 | jeremiah/20.json `words`, `literary` | Repository |
+| Verses 14-18 unexplained; Job 3, Moses (Numbers 11:15), Elijah (1 Kings 19:4); God's answer of help; prayer, not failure; the story goes on (29:11; 31:31-34) | 14-18, `hard` | jeremiah/20.json `hard` | Repository |
+| The SELFHARM care line, byte for byte, as in job/plain/3.json | 14-18 `hard` | carelines.json | care.mjs |
+| Psalm 31:11, Jeremiah 37:15, Psalm 39:3, 1 Corinthians 9:16, Job 3:3, 1 Kings 19:5 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 20: Hebrews 11:35-36, replaced by Jeremiah 37:15 because Hebrews does not name Jeremiah. Verse 17's picture is named, not quoted.
