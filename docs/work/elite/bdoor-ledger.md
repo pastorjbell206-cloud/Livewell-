@@ -21685,3 +21685,23 @@ Cut in chapter 1: the deep note's lines to Christ that the New Testament does no
 | Psalm 146:3; Revelation 6:15 | 12-22 `later` | isaiah/2.json `christ` (Revelation 6:15-16); BSB | BSB text |
 
 Cut in chapter 2: the bronze statue at the United Nations (1959), named in the deep note, left out as beside the point. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 3 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1-12 | 1-12 | BSB | BSB text |
+| The ruling class; forbidden soothsayers; elders and gate; the cloak; lads as rulers and the stages of collapse (701; 587 or 586); verses 10 and 11 | 1-12 | isaiah/3.json `historical`, `cultural`, `literary` | Repository |
+| Jeremiah 23:1 (in double quotes for its exclamation); Ezekiel 34:2 (its clause, inside the BSB's speech marks) | 1-12 `later` | isaiah/3.json `christ` (Ezekiel 34); BSB | BSB text |
+| 3:13-15 | 13-15 | BSB | BSB text |
+| Riv; the vineyard; ani | 13-15 | isaiah/3.json `words`, `cultural` | Repository |
+| Proverbs 22:22-23; Amos 4:1 | 13-15 `later` | BSB | BSB text |
+| 3:16-26 | 16-26 | BSB | BSB text |
+| The list of ornaments and archaeology; the wealthy class; captives stripped and shaved; the city mourning | 16-26 | isaiah/3.json `cultural`, `literary` | Repository |
+| 1 Peter 3:3-4; Lamentations 2:10 | 16-26 `later` | isaiah/3.json `christ` (1 Peter 3:3-4); BSB | BSB text |
+| The hard note: verse 12 and the social order; the Greek's creditors; the wealthy class, men and women alike; a picture of a city, no warrant for any man to shame or harm a woman | 16-26 `hard` | isaiah/3.json `hard`; the brief | Repository |
+| Care line ("If someone is hurting you, at home, at work or in a church...") | 16-26 `hard` | Reused byte for byte from 2-kings/plain/9.json, read by script | care.mjs |
+
+Cut in chapter 3: the deep note's lines to Christ that the New Testament does not draw (John 10:11, Luke 1:52 and Mark 12:40 beside the chapter).
