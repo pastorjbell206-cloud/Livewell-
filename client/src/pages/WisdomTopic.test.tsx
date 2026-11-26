@@ -88,17 +88,17 @@ describe("WisdomTopic", () => {
     const { container } = renderAt("/wisdom/wayward-child");
     await waitFor(() => expect(container.querySelectorAll(".wz-verse").length).toBeGreaterThan(0));
     const cards = Array.from(container.querySelectorAll<HTMLElement>(".wz-verse"));
-    // Luke 15 has plain-words notes; Hosea 11 does not.
+    // Luke 15 has plain-words notes; Ezekiel 18 does not.
     const luke = cards.find((c) => c.querySelector("cite")?.textContent === "Luke 15:20")!;
-    const hosea = cards.find((c) => c.querySelector("cite")?.textContent === "Hosea 11:8")!;
+    const ezekiel = cards.find((c) => c.querySelector("cite")?.textContent === "Ezekiel 18:20")!;
     fireEvent.click(within(luke).getByRole("button", { name: /Read it where it stands/ }));
     await waitFor(() => expect(within(luke).getByText("The plain-words notes on Luke 15")).toBeInTheDocument());
     expect(within(luke).getByText("The plain-words notes on Luke 15").closest("a")?.getAttribute("href")).toBe("/study/bible/luke/15#notes");
     expect(luke.querySelector("mark")?.textContent).toMatch(/^So he got up/);
     expect(luke.querySelector(".wz-context__head")?.textContent).toMatch(/^Luke 15:11.24/);
-    fireEvent.click(within(hosea).getByRole("button", { name: /Read it where it stands/ }));
-    await waitFor(() => expect(within(hosea).getByText("The Study Bible notes on Hosea 11")).toBeInTheDocument());
-    expect(within(hosea).queryByText(/plain-words/)).toBeNull();
+    fireEvent.click(within(ezekiel).getByRole("button", { name: /Read it where it stands/ }));
+    await waitFor(() => expect(within(ezekiel).getByText("The Study Bible notes on Ezekiel 18")).toBeInTheDocument());
+    expect(within(ezekiel).queryByText(/plain-words/)).toBeNull();
     // Every Study Bible link on the page points at a chapter that has its notes file.
     for (const a of Array.from(container.querySelectorAll<HTMLAnchorElement>('a[href^="/study/bible/"]'))) {
       const m = a.getAttribute("href")!.match(/^\/study\/bible\/([a-z0-9-]+)\/(\d+)/);
