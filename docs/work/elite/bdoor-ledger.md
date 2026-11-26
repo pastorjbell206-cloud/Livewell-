@@ -22660,3 +22660,19 @@ Cut in chapter 2: the deep note's line to Christ (any reading of the beloved's c
 | The hard note: Solomon throughout, early in his reign (1 Kings 11:1-8); the three-character view, eighteenth and nineteenth centuries; Solomon as a literary figure; 8:11-12; unsettled; a love faithful and given to one person | 6-11 `hard` | song-of-solomon/3.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 3: the deep note's line to Christ (any reading of the procession or the seeking as Christ's, left to the book page). No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 4 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (its second and third sentences); 4:2; 4:3 (its first sentence); 4:4 (its first clause); 4:5-6 told without quotation; 4:7 | 1-7 | BSB | BSB text |
+| The wedding continued; ‘my bride’ six times between 4:8 and 5:1; the wedding night in poetry, for many readers; the wasf, by scholars' term, and the Song's four such poems; black goats of Gilead; white, even teeth; the tower and upright bearing; felt, not pictured; the downward movement stopping with restraint; the inclusio | 1-7 | song-of-solomon/4.json `story`, `cultural`, `literary`, `words` (kallah) | Repository |
+| Psalm 60:7 (its first clause); Genesis 1:31 (its first sentence) | 1-7 | song-of-solomon/4.json `historical` (Gilead and flocks), `hard` (God made the body and called it good); BSB | Repository; BSB text |
+| The hard note: poetic and restrained; a wedding and the covenant of marriage; Genesis 2; allegorical readers and unease; the readings together; neither coy nor coarse, but grateful | 1-7 `hard` | song-of-solomon/4.json `hard` | Repository; each reading in its holders' terms |
+| 4:8 (its first sentence, an exclamation in double quotes; the rest paraphrased); 4:9 (in part); 4:10 (its first two sentences, in double quotes); 4:12; the orchard and spices (4:13-14) paraphrased; 4:15 (its clause); 4:16 | 8-16 | BSB | BSB text |
+| The northern mountains (Deuteronomy 3:9) as remote and wild; ‘sister’ as affection, as in Egyptian love songs, not family; the walled garden and sealed spring; the spices from the east; ‘my garden’ and ‘his garden’ in verse 16 and 5:1; her gift freely given | 8-16 | song-of-solomon/4.json `historical`, `cultural`, `literary`, `words` (achot, gan, naal) | Repository |
+| Proverbs 5:15; Deuteronomy 3:9 (its clause) | 8-16 | song-of-solomon/4.json `cultural` (Proverbs 5:15-18), `historical` (Deuteronomy 3:9); BSB | Repository; BSB text |
+
+Cut in chapter 4: the deep note's line to Christ (the bride as the church, left to the book page). Verses 5 and 6 are told with restraint and not quoted. No care line is needed in this chapter.
