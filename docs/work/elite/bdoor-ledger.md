@@ -25665,3 +25665,18 @@ Cut in chapter 28: Ephesians 6:12 beside the Satan reading, left out; the Satan 
 | Later: Isaiah 30:3; 1 Samuel 2:10 | 17-21 `later` | BSB | BSB text |
 
 Cut in chapter 29: an unsourced gloss on bald heads and raw shoulders, cut before commit.
+
+## The plain notes on Ezekiel 30 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The day of Egypt: the text paraphrased; quoted clauses at verses 3, 4, 6, 10-11, 12-19 | 1-19 | BSB | BSB text |
+| Background in `hearers` | 1-19 | ezekiel/30.json `historical`, `cultural`, `literary` | Repository |
+| Later: Zephaniah 1:15; Jeremiah 46:13-14 | 1-19 `later` | BSB | BSB text |
+| Pharaoh's broken arms: the text paraphrased; quoted clauses at verses 21, 22-23, 24, 25 | 20-26 | BSB | BSB text |
+| Background in `hearers` | 20-26 | ezekiel/30.json `historical`, `cultural`, `literary` | Repository |
+| Later: Deuteronomy 5:15; Jeremiah 37:7 | 20-26 `later` | BSB | BSB text |
+
+Cut in chapter 30: nothing.
