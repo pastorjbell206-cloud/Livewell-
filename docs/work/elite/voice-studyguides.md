@@ -37,7 +37,7 @@ Scripts outside the repository, in `/home/user/voice-sg/`:
   The counts include real verdicts and the initials of names split by the counter ("C. S. Lewis"), so read them as direction, not a grade.
 - **The site's gates, after each guide:** `validate-studyguides.mjs`, `validate-no-emdash.mjs`, `validate-grow-voice.mjs`, `validate-grow-links.mjs`, the topics index check and `validate-topics.mjs`, `validate-catalogue.mjs`, the studyguides index rebuilt (`build-studyguides-index.mjs`, unchanged unless a guide's top summary changed), the search index check, and a forbidden-word and exclamation scan of each changed field.
 
-## The guides done (34)
+## The guides done (51)
 
 | Guide | Words before | after | Short sentences before | after | Runs before | after | Not X. Y. before | after | Edits | Fields changed | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -75,7 +75,24 @@ Scripts outside the repository, in `/home/user/voice-sg/`:
 | Identity: A Bible Study on Who You Actually Are | 12,183 | 12,183 | 81 | 73 | 8 | 4 | 17 | 15 | 5 | 3 | PASS |
 | The Trinity: A Bible Study on Knowing God | 13,033 | 13,033 | 100 | 98 | 10 | 9 | 25 | 25 | 1 | 1 | PASS |
 | Lament: A Bible Study on Praying Your Pain | 8,478 | 8,478 | 80 | 77 | 8 | 6 | 18 | 18 | 2 | 2 | PASS |
-| **34 guides** | 413,273 | 413,316 | 3193 | 2906 | 353 | 206 | 600 | 564 | 155 | | |
+| Manhood: A Bible Study on What a Man Is For | 14,228 | 14,228 | 73 | 70 | 5 | 3 | 20 | 20 | 2 | 2 | PASS |
+| Marriage: A Bible Study on Covenant Love | 12,742 | 12,742 | 78 | 78 | 5 | 5 | 23 | 23 | 0 | 0 | PASS |
+| Mental Health: A Bible Study on the Weight You Carry | 14,688 | 14,688 | 107 | 99 | 13 | 9 | 21 | 21 | 4 | 4 | PASS |
+| Justice: A Bible Study on What the Bible Means by Justice | 15,849 | 15,850 | 108 | 102 | 14 | 9 | 14 | 13 | 5 | 4 | PASS |
+| Money: A Bible Study on Where Your Treasure Is | 10,731 | 10,731 | 76 | 76 | 6 | 6 | 31 | 31 | 0 | 0 | PASS |
+| New Believers: A Study on Your First Steps of Faith | 12,433 | 12,433 | 86 | 80 | 6 | 3 | 10 | 10 | 3 | 3 | PASS |
+| Parenting: A Bible Study on Forming a Child's Faith | 14,229 | 14,230 | 88 | 82 | 7 | 4 | 17 | 17 | 3 | 3 | PASS |
+| Pastoral Health: A Study for Leaders and Those Who Love Them | 15,682 | 15,683 | 111 | 104 | 10 | 7 | 33 | 33 | 3 | 3 | PASS |
+| Prayer: A Bible Study on Learning to Pray | 11,093 | 11,094 | 99 | 84 | 13 | 5 | 30 | 27 | 8 | 4 | PASS |
+| Where Is God When It Hurts: Suffering and the Goodness of God | 13,965 | 13,967 | 107 | 94 | 16 | 9 | 12 | 10 | 7 | 5 | PASS |
+| Raising Believers: A Bible Study for Christian Parents | 12,640 | 12,642 | 94 | 86 | 7 | 3 | 14 | 14 | 4 | 4 | PASS |
+| The Resurrection: A Bible Study on the Evidence | 10,412 | 10,412 | 82 | 74 | 12 | 8 | 12 | 11 | 4 | 4 | PASS |
+| Sabbath: A Bible Study on Rest and Hurry | 9,245 | 9,246 | 95 | 84 | 10 | 4 | 16 | 15 | 6 | 6 | PASS |
+| The Sermon on the Mount: A Bible Study | 11,941 | 11,942 | 106 | 90 | 19 | 11 | 32 | 28 | 8 | 8 | PASS |
+| Singleness: A Bible Study for the Unmarried | 9,985 | 9,985 | 78 | 72 | 7 | 4 | 16 | 15 | 3 | 3 | PASS |
+| Questions Skeptics Ask: A Study for Doubters | 10,436 | 10,436 | 90 | 88 | 12 | 11 | 9 | 9 | 1 | 1 | PASS |
+| Spiritual Warfare: A Bible Study on the Unseen Battle | 11,337 | 11,338 | 108 | 103 | 16 | 13 | 29 | 26 | 4 | 4 | PASS |
+| **51 guides** | 624,909 | 624,963 | 4779 | 4372 | 531 | 320 | 939 | 887 | 220 | | |
 
 ## Five typical pairs
 
@@ -104,6 +121,8 @@ Across all sixty-eight guides, the runs left alone are of the same kinds, plus:
 - the facilitator scripts' first-person welcomes where they lead into a care line.
 
 Where one sentence pair recurs in a guide ("Hope doesn't cancel grief. It changes its color."; "Jesus isn't naming an amount. He's naming a master."), every occurrence got the same change.
+
+**Quote cards.** Two quote cards in the promo kits quote a sentence pair that the teaching beside them now joins: Generosity ("You don't own your life. It was bought.") and Habits and Formation ("The cross finished the earning. It didn't finish the training."). The cards are fixed fields, short by design and meant to stand alone, so they keep the pair, as the books kept their pull quotes word for word.
 
 ## For James
 
