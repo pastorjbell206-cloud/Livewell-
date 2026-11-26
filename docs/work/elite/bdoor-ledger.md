@@ -25293,3 +25293,19 @@ Cut in chapter 22: nothing.
 | Later: Jeremiah 7:31; Leviticus 18:21 | 36-49 `later` | BSB | BSB text |
 
 Cut in chapter 23: the deep note's hotline telephone number, replaced by the abusive-marriage care line and the shorter sexual-assault line, both byte for byte; an unsourced reading of verse 48, cut. The punishments of verses 25 to 29 named, not described.
+
+## The plain notes on Ezekiel 24 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Write down the date: the pot on the fire: the text paraphrased; quoted clauses at verses 2, 3, 4-5, 6, 7-8, 9-11, 13, 14 | 1-14 | BSB | BSB text |
+| Background in `hearers` | 1-14 | ezekiel/24.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 25:1; Genesis 4:10 | 1-14 `later` | BSB | BSB text |
+| The death of the desire of his eyes: the text paraphrased; quoted clauses at verses 16, 17, 18, 19, 21, 22-23, 24, 25-27 | 15-27 | BSB | BSB text |
+| Background in `hearers` | 15-27 | ezekiel/24.json `historical`, `cultural`, `literary` | Repository |
+| Later: Job 1:21; Zechariah 8:19 | 15-27 `later` | BSB | BSB text |
+| The hard note: Did God really take Ezekiel's wife to make a point, and why forbid him to grieve? The readings in their holders' terms | 15-27 `hard` | ezekiel/24.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 24: nothing; John 11:35 kept in the hard note as Scripture's witness to grief, not as a line drawn from Ezekiel.
