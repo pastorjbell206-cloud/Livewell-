@@ -22404,3 +22404,23 @@ Cut in chapter 23: nothing. No care line is needed in this chapter.
 | Jeremiah 48:43 (inside the BSB's speech marks); Genesis 7:11; Revelation 21:23 | 14-23 `later` | BSB | BSB text |
 
 Cut in chapter 24: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 25 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 25:1-5 (25:1's praise in double quotes for its exclamation) | 1-5 | BSB | BSB text |
+| The reign of chapter 24 shown; the dating views; the unnamed city; storm and heat | 1-5 | isaiah/25.json `story`, `historical` | Repository; both views |
+| Psalm 23:5 | 1-5 `later` | BSB | BSB text |
+| 25:6-9 (25:9's words inside the BSB's speech marks) | 6-9 | BSB | BSB text |
+| The feast for all peoples; aged wine and choice meat; the shroud; Mot in the Ugaritic texts swallowing his victims; the patience answered | 6-9 | isaiah/25.json `story`, `cultural` | Repository |
+| 1 Corinthians 15:54 (the saying, inside the BSB's speech marks); Revelation 7:17 (inside its inner quotation marks); Revelation 21:4 | 6-9 `later` | isaiah/25.json `christ`; BSB | BSB text; the New Testament's own lines |
+| The hard note: national restoration or the end of death; Ezekiel 37; 26:19 and Daniel 12:2; both together; the New Testament and the church's confession | 6-9 `hard` | isaiah/25.json `hard` | Repository; both readings in their holders' terms |
+| Care line, the grief line ("Grief is not a lack of faith...") | 6-9 `hard` | Reused byte for byte from 1-samuel/plain/1.json, read by script | care.mjs |
+| 25:10-12 | 10-12 | BSB | BSB text |
+| Moab's place, kinship and rivalry (Genesis 19:37); chapters 15 and 16; the fortresses; not a key for naming any people now | 10-12 | isaiah/25.json `historical`; the brief | Repository |
+| Isaiah 16:6; Jeremiah 48:29 named | 10-12 `later` | BSB | BSB text |
+
+Cut in chapter 25: Matthew 8:11 and Mark 14:25, which the New Testament does not draw from this chapter.
