@@ -25822,3 +25822,19 @@ Cut in chapter 24: nothing; John 11:35 kept in the hard note as Scripture's witn
 | Jeremiah 39:18, Psalm 40:2, Proverbs 29:25, 2 Chronicles 36:13 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 38: nothing.
+
+## The plain notes on Jeremiah 39 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/39.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 39:1-18 (verses 4-11 and 13-17 partly paraphrased) | all | BSB | BSB text |
+| January 588 BC to July 587 or 586 BC; the counting of years; 2 Kings 25 and Jeremiah 52 | 1-10 | jeremiah/39.json `historical` | Repository |
+| Officers' names; the 2007 tablet and Nabu-sharrussu-ukin, the match questioned | 1-10 | jeremiah/39.json `historical` | Repository |
+| Zedekiah's death: natural death, conditional promise, Ezekiel 12:13 | 1-10 `hard` | jeremiah/39.json `hard` | Repository |
+| The GRIEF care line, byte for byte | 1-10 `hard` | carelines.json | care.mjs |
+| Gedaliah of Shaphan's family; the promise to Ebed-melech placed out of order | 11-18 | jeremiah/39.json `literary`; BSB | Repository |
+| Lamentations 4:20, Ezekiel 12:13, Psalm 34:22 (clauses); Jeremiah 38:10-13 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 39: nothing. Verses 6 and 7 are stated in a line and not described.
