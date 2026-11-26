@@ -24118,3 +24118,19 @@ New Testament lines in chapter 11: Matthew 27:9-10 draws on 11:12-13. Cut in cha
 | The hard note: Does verse 10 speak of looking on God himself or on another, and who is the pierced one? The readings in their holders' terms | 10-14 `hard` | zechariah/12.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 12: John 19:37 and Revelation 1:7 quote 12:10. Cut in chapter 12: The textual note in the first person; restated in the third person.
+
+## The plain notes on Zechariah 13 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A fountain opened, and false prophecy removed: the text paraphrased, its quoted verses (in single or double quotes) | 1-6 | BSB | BSB text |
+| Background in `hearers` | 1-6 | zechariah/13.json `historical`, `cultural`, `literary` | Repository |
+| Later: Ezekiel 36:25; 2 Kings 1:8 | 1-6 `later` | BSB | BSB text |
+| The hard note: Does verse 3 really command parents to kill their own child for false prophecy? The readings in their holders' terms | 1-6 `hard` | zechariah/13.json `hard` | Repository; the site takes no side |
+| Strike the shepherd, and a refined remnant: the text paraphrased, its quoted verses (in single or double quotes) | 7-9 | BSB | BSB text |
+| Background in `hearers` | 7-9 | zechariah/13.json `historical`, `cultural`, `literary` | Repository |
+| Later: Matthew 26:31; compare Mark 14:27; Malachi 3:3 | 7-9 `later` | BSB | BSB text |
+
+New Testament lines in chapter 13: Matthew 26:31 and Mark 14:27 quote 13:7. Cut in chapter 13: nothing.
