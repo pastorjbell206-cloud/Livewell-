@@ -1,0 +1,234 @@
+<!doctype html>
+<!-- "Can you trust the Bible?" One continuous picture: a whisper down a line, the line becoming a tree of
+     copies, the copies laid side by side, the Dead Sea cave, the scroll and its thousand years, the stone
+     in the ground, the edge of what evidence can do, the book and its own claim.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Can you trust the Bible?</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5";
+  const A0 = S("telephone", 0), A1 = S("telephone", 1);
+  const B0 = S("copies", 0), B1 = S("copies", 1), B2 = S("copies", 2), BE = E("copies");
+  const C0 = S("scrolls", 0), C1 = S("scrolls", 1), C2 = S("scrolls", 2);
+  const D0 = S("stone", 0), D1 = S("stone", 1);
+  const E0 = S("limit", 0), E1 = S("limit", 1);
+  const F0 = S("claim", 0), F1 = S("claim", 1);
+  const G0 = S("close", 0), G1 = S("close", 1), END = F.VOICE_END;
+  const R = rng(11);
+  const barRow = (g, x0, y, widths, h, fill, gap = 10) => { let x = x0; return widths.map((w) => { const r = el("rect", { x, y: y - h / 2, width: w, height: h, rx: h / 2, fill }, g); r._x = x; r._w = w; x += w + gap; return r; }); };
+
+  // ================= 1 and 2: the whisper, the tree of copies, the copies side by side =================
+  const gTree = el("g", {}, world), gEdges = el("g", {}, gTree), gOne = el("g", {}, gTree), gArcs = el("g", {}, gTree), gNodes = el("g", {}, gTree), gGlyph = el("g", {}, gTree), gStrips = el("g", {}, gTree);
+  const rowX = (i) => 200 + i * 110, ROWY = 320;
+  // the tree: one source, then four generations of copies
+  const GEN = [1, 4, 10, 22, 42], GX = [150, 330, 520, 720, 0], GR = [12, 9, 7, 5.5, 4.5];
+  const nodes = [];
+  GEN.forEach((n, g) => { for (let j = 0; j < n; j++) {
+    let x = GX[g], y = n === 1 ? 320 : 130 + (j + 0.5) * (380 / n);
+    if (g === 4) { x = 900 + (j % 3) * 90; y = 130 + (Math.floor(j / 3) + 0.5 + (j % 3) * 0.33) * (380 / 14) - 4; }
+    const parent = g === 0 ? null : nodes.find((p) => p.g === g - 1 && p.j === Math.floor(j * GEN[g - 1] / n));
+    nodes.push({ g, j, x, y, r: GR[g], parent });
+  } });
+  const rowNodes = [nodes[0], ...nodes.filter((n) => n.g === 1), ...nodes.filter((n) => n.g === 2).slice(3, 7)];
+  rowNodes.forEach((n, i) => { n.row = i; });
+  nodes.forEach((n) => {
+    n.at = n.row != null ? B1 : B1 + 0.5 + (n.g - 1) * 0.95 + (n.j / GEN[n.g]) * 0.8;
+    if (n.parent) { const p = n.parent, mx = (p.x + n.x) / 2; n.edge = line(gEdges, `M${p.x} ${p.y} C${mx} ${p.y} ${mx} ${n.y} ${n.x} ${n.y}`, { stroke: LINE, "stroke-width": 1.6 }); }
+    n.e = el("circle", { fill: INK }, gNodes);
+  });
+  const oneLine = line(gOne, `M${rowX(0)} ${ROWY} H${rowX(8)}`, { stroke: STONE, "stroke-width": 2.5 });
+  const oneLab = txt(gOne, "lab", 640, 396, "ONE WHISPER, ONE LINE");
+  const hop = (A1 - A0 - 1.0) / 8, hopAt = (i) => A0 + 0.5 + i * hop;
+  const arcs = [...Array(8)].map((_, i) => line(gArcs, `M${rowX(i)} ${ROWY + 20} Q${rowX(i) + 55} ${ROWY + 62} ${rowX(i + 1)} ${ROWY + 20}`, { stroke: STONE, "stroke-width": 2 }));
+  // the message above each listener: tidy at first, more scrambled each time it is passed on
+  const GW = [14, 8, 17, 10], glyphs = [...Array(9)].map((_, i) => { const g = el("g", {}, gGlyph), s = i / 8; let x = -30;
+    GW.forEach((w) => { const b = el("rect", { x: -w / 2, y: -3.5, width: w, height: 7, rx: 3.5, fill: INK, opacity: (1 - 0.5 * s).toFixed(2) }, g); move(b, x + w / 2 + (R() - 0.5) * 16 * s, (R() - 0.5) * 50 * s, 1, (R() - 0.5) * 110 * s); x += w + 4; });
+    return g; });
+  const qMark = txt(gGlyph, "disp", rowX(8), 284, "?", 84, { fill: MUSTARD });
+  // six copies laid side by side
+  const SW = [...Array(13)].map(() => 34 + Math.round(R() * 46)), DIFF = { "1-4": 14, "4-9": -12 };
+  const picks = [3, 10, 17, 24, 31, 38].map((j) => nodes.find((n) => n.g === 4 && n.j === j));
+  const stripY = (i) => 178 + i * 54;
+  const strips = picks.map((n, i) => { n.strip = i; const g = el("g", {}, gStrips);
+    const w = SW.map((v, k) => v + (DIFF[`${i}-${k}`] || 0)); const bars = barRow(g, 282, stripY(i), w, 12, INK, 12);
+    bars.forEach((b, k) => { if (DIFF[`${i}-${k}`]) b.setAttribute("fill", MUSTARD); }); return bars; });
+  const colX = (k) => strips[0][k]._x, colW = (k) => strips[0][k]._w;
+  const rings = [4, 9].map((k) => el("rect", { x: colX(k) - 9, y: 156, width: colW(k) + 30, height: 314, rx: 12, stroke: MUSTARD, "stroke-width": 2.5 }, gStrips));
+  const scan = el("line", { y1: 150, y2: 476, stroke: STONE, "stroke-width": 1.5 }, gStrips);
+  const STRIP_END = strips[0].at(-1)._x + strips[0].at(-1)._w;
+
+  const drawTree = (t) => {
+    const vis = t < C0 + 0.2; op(gTree, vis ? 1 : 0); if (!vis) return;
+    const toTree = up(t, B1 - 0.1, 1.4), toStrip = up(t, B2 - 0.1, 1.1), gone = up(t, B2, 0.7), out = 1 - up(t, C0 - 1.0, 0.6);
+    nodes.forEach((n) => {
+      let x = n.x, y = n.y, r = n.r, o;
+      if (n.row != null) { x = mix(rowX(n.row), n.x, toTree); y = mix(ROWY, n.y, toTree); r = mix(13, n.r, toTree); o = up(t, 1.75 + n.row * 0.09, 0.5);
+        if (t < B0) { const h = clamp(1 - Math.abs(t - hopAt(n.row)) / 0.5); r += 2.5 * ease(h); } }
+      else o = up(t, n.at, 0.5);
+      if (n.strip != null) { x = mix(x, 262, toStrip); y = mix(y, stripY(n.strip), toStrip); r = mix(r, 5.5, toStrip); o *= out; } else o *= 1 - gone;
+      op(n.e, o); if (o > 0) set(n.e, { cx: x.toFixed(1), cy: y.toFixed(1), r: r.toFixed(2) });
+      if (n.edge) { const eo = (1 - up(t, B2 - 0.2, 0.7)); op(n.edge, t > n.at - 0.5 ? eo : 0); draw(n.edge, up(t, n.at - 0.45, 0.8)); }
+    });
+    arcs.forEach((a, i) => { draw(a, up(t, hopAt(i), hop)); op(a, (0.35 + 0.65 * (1 - up(t, hopAt(i) + hop, 0.8))) * (1 - up(t, B0 - 0.2, 0.6))); });
+    glyphs.forEach((g, i) => { const o = up(t, i === 0 ? A0 + 0.15 : hopAt(i - 1) + hop * 0.8, 0.35) * (1 - up(t, i === 8 ? A1 - 0.25 : B0 - 0.1, 0.5)); op(g, o); move(g, rowX(i), 268 - 6 * (1 - o)); });
+    op(qMark, span(t, A1 - 0.1, B0 + 0.5, 0.45));
+    draw(oneLine, up(t, B0, 1.5)); op(oneLine, 1 - up(t, B1 - 0.1, 0.7)); op(oneLab, span(t, B0 + 0.7, B1 + 0.3, 0.5));
+    strips.forEach((bars, i) => bars.forEach((b, k) => op(b, up(t, B2 + 0.75 + k * 0.085 + i * 0.03, 0.35) * out)));
+    const sk = up(t, B2 + 1.5, BE - B2 - 1.3), sx = mix(270, STRIP_END + 10, sk);
+    set(scan, { x1: sx.toFixed(1), x2: sx.toFixed(1) }); op(scan, span(t, B2 + 1.4, BE + 0.5, 0.3) * out);
+    rings.forEach((r, i) => op(r, clamp((sx - colX([4, 9][i]) - 10) / 40) * (t > B2 + 1.5 ? 1 : 0) * out));
+  };
+
+  // ================= 3: the cave by the Dead Sea, the scroll, a thousand years =================
+  const gSea = el("g", {}, world), gLand = el("g", {}, world), gScroll = el("g", {}, world), gTime = el("g", {}, world);
+  const seaLines = [...Array(6)].map(() => el("line", { stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gSea));
+  const seaLab = txt(gSea, "lab", 300, 432, "THE DEAD SEA");
+  const CLIFF = "M1300 205 L1010 205 L962 226 L932 262 L905 272 L882 330 L842 352 L816 410 L772 428 L742 470 L642 500 L560 532";
+  const cliffFill = el("path", { d: CLIFF + " L1300 532 Z", fill: WARM }, gLand), cliffLine = line(gLand, CLIFF, { "stroke-width": 3 });
+  const cave = el("path", { d: "M936 392 Q936 304 1005 304 Q1074 304 1074 392 Z", fill: CHAR }, gLand);
+  const jarD = "M-34 -95 L34 -95 L34 -80 Q34 -70 46 -60 Q72 -30 72 10 Q72 70 44 95 L-44 95 Q-72 70 -72 10 Q-72 -30 -46 -60 Q-34 -70 -34 -80 Z";
+  const smallJars = [[968, 366, 0.24], [1006, 362, 0.28], [1043, 367, 0.23]].map(([x, y, s]) => { const j = el("path", { d: jarD, fill: MUTED, stroke: BONE, "stroke-width": 5 }, gLand); move(j, x, y, s); return j; });
+  const look = line(gLand, "M1012 214 V300", { stroke: STONE, "stroke-width": 1.5, "stroke-dasharray": "0.04 0.05" });
+  const flock = [...Array(4)].map(() => el("circle", { r: 6.5, fill: BONE, stroke: INK, "stroke-width": 2 }, gLand));
+  const shepherd = el("g", {}, gLand); el("circle", { r: 11, cy: -12, fill: INK }, shepherd); el("line", { x1: 16, y1: -36, x2: 16, y2: 0, stroke: INK, "stroke-width": 2.5, "stroke-linecap": "round" }, shepherd);
+  // the big jar and the scroll that comes out of it
+  const roll = el("g", {}, gScroll);
+  const clipId = "unroll", clip = el("clipPath", { id: clipId }, gScroll), clipRect = el("rect", { y: 150, height: 180 }, clip);
+  const parch = el("rect", { y: 175, height: 120, fill: WARM, stroke: INK, "stroke-width": 2.5 }, roll);
+  const rowsY = [-36, -12, 12, 36], ROWW = rowsY.map(() => { const a = []; let s = 0; while (s < 500) { const w = 26 + Math.round(R() * 42); a.push(w); s += w + 10; } return a; });
+  const scrollText = el("g", { "clip-path": `url(#${clipId})` }, roll); const sBars = rowsY.map((dy, i) => barRow(scrollText, 372, 235 + dy, ROWW[i], 9, INK));
+  const rolL = el("rect", { y: 163, width: 22, height: 144, rx: 9, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, roll), rolR = el("rect", { y: 163, width: 22, height: 144, rx: 9, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, roll);
+  const bigJar = el("path", { d: jarD, fill: MUTED, stroke: INK, "stroke-width": 3 }, gScroll);
+  const isaiah = txt(gScroll, "lab", 640, 142, "A SCROLL OF ISAIAH");
+  // the later copy, laid under the scroll
+  const gCopy = el("g", {}, gScroll); el("rect", { x: 350, y: -60, width: 580, height: 120, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, gCopy);
+  const CD = { "0-3": 10, "2-6": -9, "3-2": 12 }, cBars = rowsY.map((dy, i) => barRow(gCopy, 372, dy, ROWW[i].map((w, k) => w + (CD[`${i}-${k}`] || 0)), 9, INK));
+  const cMarks = Object.keys(CD).map((key) => { const [i, k] = key.split("-").map(Number), b = cBars[i][k]; const m = el("rect", { x: b._x, y: rowsY[i] - 4.5, width: b._w + CD[key], height: 9, rx: 4.5, fill: MUSTARD }, gCopy); m._x = b._x; return m; });
+  const labScroll = txt(gScroll, "lab", 236, 240, "THE SCROLL"), labCopy = txt(gScroll, "lab", 236, 410, "THE LATER COPY");
+  const scan2 = el("line", { y1: 160, y2: 476, stroke: STONE, "stroke-width": 1.5 }, gScroll);
+  // the timeline
+  const tBase = line(gTime, "M300 432 H980", { stroke: LINE, "stroke-width": 2.5 }), tFill = el("line", { x1: 300, y1: 432, y2: 432, stroke: MUSTARD, "stroke-width": 5, "stroke-linecap": "round" }, gTime);
+  const tickL = el("circle", { cx: 300, cy: 432, r: 7, fill: INK }, gTime), tickR = el("circle", { cx: 980, cy: 432, r: 7, fill: INK }, gTime);
+  const tLabL = txt(gTime, "lab", 300, 474, "THE SCROLL · ABOUT 125 BC"), tLabR = txt(gTime, "lab", 980, 474, "THE OLDEST HEBREW COPY WE HAD");
+  const tYears = txt(gTime, "disp", 640, 404, "about 1,000 years", 40);
+
+  const drawScrolls = (t) => {
+    // the strips of the last scene settle into the water of the sea
+    const seaV = span(t, C0 - 0.9, C1 + 0.7, 0.6, 0.8); op(gSea, seaV);
+    if (seaV > 0) { const k = up(t, C0 - 0.8, 1.6); seaLines.forEach((l, i) => { const w = 6 * Math.sin(t * 0.8 + i * 1.3) * k;
+      set(l, { x1: (mix(282, 90 + (i % 2) * 26, k) + w).toFixed(1), x2: (mix(STRIP_END, 520 - (i % 3) * 30, k) + w).toFixed(1), y1: mix(stripY(i), 454 + i * 13, k).toFixed(1), y2: mix(stripY(i), 454 + i * 13, k).toFixed(1) }); });
+      op(seaLab, up(t, C0 + 2.9, 0.7)); }
+    const landV = span(t, C0 - 0.3, C1 + 0.6, 0.3, 0.8); op(gLand, landV);
+    if (landV > 0) { draw(cliffLine, up(t, C0 - 0.3, 2.2)); op(cliffFill, up(t, C0 + 0.5, 1.2)); op(cave, up(t, C0 + 1.3, 0.7));
+      const walk = up(t, C0 + 0.2, 3.0), sx = mix(1262, 1012, walk);
+      move(shepherd, sx, 203 - 1.2 * Math.abs(Math.sin(t * 4.2)) * (walk < 1 ? 1 : 0));
+      flock.forEach((f, i) => set(f, { cx: (sx + 36 + i * 20 + 3 * Math.sin(t * 1.3 + i)).toFixed(1), cy: (196 - 1.5 * Math.abs(Math.sin(t * 4 + i * 1.7))).toFixed(1) }));
+      draw(look, up(t, C0 + 2.0, 0.8)); smallJars.forEach((j, i) => op(j, up(t, C0 + 2.3 + i * 0.25, 0.5))); }
+    const v = t > C1 - 0.6 && t < D0 + 0.9; op(gScroll, v ? 1 : 0);
+    if (v) {
+      const zoom = up(t, C1 - 0.5, 1.2), jo = (1 - up(t, C1 + 1.6, 0.8)) * up(t, C1 - 0.5, 0.4);
+      op(bigJar, jo); move(bigJar, mix(1006, 330, zoom), mix(362, 345, zoom) + 30 * up(t, C1 + 1.6, 0.9), mix(0.28, 1, zoom));
+      const rise = up(t, C1 + 0.5, 0.9), glide = up(t, C1 + 1.2, 0.9), un = up(t, C1 + 2.0, 1.5);
+      const sink = up(t, D0 - 0.5, 1.2), sc = mix(1, 0.5, sink), cx = mix(330, 640, glide), cy = mix(mix(345, 170, rise), 235, glide), hw = mix(0, 290, un);
+      roll.setAttribute("transform", `translate(${cx.toFixed(2)} ${(cy + 190 * sink).toFixed(2)}) scale(${sc.toFixed(4)}) translate(-640 -235)`);
+      op(roll, up(t, C1 + 0.45, 0.3) * (1 - sink));
+      set(parch, { x: (640 - hw).toFixed(1), width: (hw * 2).toFixed(1) }); set(clipRect, { x: (640 - hw).toFixed(1), width: (hw * 2).toFixed(1) });
+      set(rolL, { x: (640 - hw - 22).toFixed(1) }); set(rolR, { x: (640 + hw).toFixed(1) });
+      op(isaiah, span(t, C1 + 1.5, C2 + 1.6, 0.6));
+      // the later copy: slides in, is compared, then lies on top of the scroll: the same book
+      const cin = up(t, C2 + 2.15, 0.8), same = up(t, C2 + 4.5, 1.1), sk = up(t, C2 + 2.6, 1.8), sx = mix(352, 928, sk);
+      op(gCopy, cin * (1 - up(t, C2 + 5.3, 0.6)) ); move(gCopy, 0, mix(mix(450, 405, cin), 235, same));
+      cMarks.forEach((m) => op(m, clamp((sx - m._x) / 30) * (1 - same)));
+      set(scan2, { x1: sx.toFixed(1), x2: sx.toFixed(1) }); op(scan2, span(t, C2 + 2.5, C2 + 4.7, 0.3));
+      op(labScroll, span(t, C2 + 2.0, C2 + 4.7, 0.5)); op(labCopy, span(t, C2 + 2.2, C2 + 4.7, 0.5));
+    }
+    const tv = span(t, C1 + 2.3, C2 + 2.1, 0.5, 0.6); op(gTime, tv);
+    if (tv > 0) { draw(tBase, up(t, C1 + 2.3, 0.8)); const k = up(t, C1 + 2.9, 2.2); set(tFill, { x2: mix(300, 980, k).toFixed(1) }); op(tFill, k > 0 ? 1 : 0);
+      op(tickL, up(t, C1 + 2.5, 0.4)); op(tLabL, up(t, C1 + 2.7, 0.5)); op(tickR, up(t, C1 + 4.3, 0.4)); op(tLabR, up(t, C1 + 4.2, 0.5)); op(tYears, up(t, C1 + 3.3, 0.7)); }
+  };
+
+  // ================= 4: the ground, the doubt, the broken stone =================
+  const gGround = el("g", {}, world), gStone = el("g", {}, world), gCall = el("g", {}, world);
+  const ground = line(gGround, "M-20 332 H1300", { "stroke-width": 3 });
+  const strata = [382, 428, 474, 520].map((y, i) => line(gGround, `M-20 ${y} C200 ${y - 14 + i * 4} 420 ${y + 12} 640 ${y} S1080 ${y - 12} 1300 ${y + 4}`, { stroke: LINE, "stroke-width": 2 }));
+  const trench = el("rect", { x: 588, y: 332, width: 104, height: 0, fill: WARM, stroke: INK, "stroke-width": 2.5 }, gGround);
+  const davidSolid = txt(gGround, "disp", 640, 236, "King David", 78);
+  const davidGhost = txt(gGround, "disp", 640, 236, "King David", 78, { fill: "none", stroke: STONE, "stroke-width": 1.4, "stroke-dasharray": "3 5" });
+  const legend = txt(gGround, "lab", 640, 284, "ONLY A LEGEND?");
+  el("path", { d: "M-80 -62 L-20 -75 L38 -58 L52 -70 L88 -20 L70 30 L84 62 L20 78 L-36 66 L-52 74 L-90 20 L-72 -18 Z", fill: CHAR }, gStone);
+  el("path", { d: "M38 -58 L22 -22 L30 6 L4 40 L-36 66", stroke: BONE, "stroke-width": 1.4, "stroke-linejoin": "round", opacity: 0.55 }, gStone);
+  const carve = []; [-40, -20, 0, 20, 40].forEach((y, r) => { let x = -56 + (r % 2) * 6; while (x < 52) { const w = 5 + Math.round(R() * 9); const hi = r === 3 && x > -16 && x < 40; carve.push({ e: el("line", { x1: x, y1: y, x2: x + w, y2: y + (R() - 0.5) * 3, stroke: hi ? MUSTARD : BONE, "stroke-width": hi ? 3.4 : 2.4, "stroke-linecap": "round" }, gStone), r, x, hi }); x += w + 6; } });
+  const callLine = line(gCall, "M520 331 H672", { stroke: MUSTARD, "stroke-width": 2 });
+  const house = txt(gCall, "disp", 908, 322, "the House of David", 60), houseLab = txt(gCall, "lab", 908, 368, "THE TEL DAN INSCRIPTION · FOUND 1993");
+
+  // ================= 5: what evidence can do, and the edge where it stops =================
+  const gProof = el("g", {}, world);
+  const icoCopies = el("g", {}, gProof); [-16, 0, 16].forEach((dy, i) => barRow(icoCopies, -36, dy, [20, 12, 26 - i * 4], 7, INK, 5)); move(icoCopies, 176, 300, 1.55);
+  const icoScroll = el("g", {}, gProof); el("rect", { x: -34, y: -22, width: 68, height: 44, fill: WARM, stroke: INK, "stroke-width": 2.2 }, icoScroll); [-42, 34].forEach((x) => el("rect", { x, y: -28, width: 9, height: 56, rx: 4, fill: MUTED, stroke: INK, "stroke-width": 2.2 }, icoScroll)); [-9, 0, 9].forEach((dy) => el("line", { x1: -22, x2: 22, y1: dy, y2: dy, stroke: INK, "stroke-width": 2.4, "stroke-linecap": "round" }, icoScroll)); move(icoScroll, 326, 300, 1.45);
+  const proofLine = line(gProof, "M570 300 H830", { "stroke-width": 3 }), walker = el("circle", { r: 13, cy: 300, fill: INK }, gProof);
+  const gapLine = line(gProof, "M850 300 H1000", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "0.012 0.06" });
+  const labOld = txt(gProof, "lab", 250, 392, "THE WORDS ARE OLD"), labReal = txt(gProof, "lab", 540, 392, "THE HISTORY IS REAL"), labTrust = txt(gProof, "lab", 1064, 392, "TRUST");
+  const ring = el("circle", { fill: "none", stroke: MUSTARD, "stroke-width": 4.5 }, world);
+
+  const drawStone = (t) => {
+    const gv = span(t, D0 - 0.4, D1 + 3.1, 0.3, 0.9); op(gGround, gv);
+    if (gv > 0) { draw(ground, up(t, D0 - 0.3, 1.6)); strata.forEach((s, i) => { draw(s, up(t, D0 + 0.3 + i * 0.25, 1.6)); s.setAttribute("transform", `translate(${(5 * Math.sin(t * 0.5 + i)).toFixed(2)} 0)`); });
+      const doubt = up(t, D0 + 3.5, 0.9), dv = up(t, D0 + 1.9, 0.7) * (1 - up(t, D1 + 1.6, 0.9));
+      op(davidSolid, dv * (1 - 0.92 * doubt)); op(davidGhost, dv * doubt); op(legend, up(t, D0 + 3.9, 0.6) * (1 - up(t, D1 + 1.4, 0.8)));
+      set(trench, { height: (150 * up(t, D1 + 0.2, 1.7)).toFixed(1) }); op(trench, up(t, D1 + 0.15, 0.3)); }
+    const sv = t > D1 + 1.3 && t < F0 + 0.3; op(gStone, sv ? up(t, D1 + 1.4, 0.5) * (1 - up(t, F0 - 0.5, 0.6)) : 0);
+    if (sv) { const rise = up(t, D1 + 2.0, 1.5), ico = up(t, E0 - 0.8, 1.2);
+      move(gStone, mix(mix(640, 450, rise), 478, ico), mix(mix(452, 300, rise), 300, ico) + 2.5 * Math.sin(t * 0.9) * rise * (1 - ico), mix(mix(0.42, 1.45, rise), 0.6, ico), mix(-6, 0, rise));
+      carve.forEach((c) => op(c.e, up(t, D1 + 3.0 + c.r * 0.16 + (c.x + 56) * 0.004, 0.4))); }
+    const cv = span(t, D1 + 3.5, E0 - 0.2, 0.6, 0.6); op(gCall, cv);
+    if (cv > 0) { draw(callLine, up(t, D1 + 3.6, 0.7)); op(house, up(t, D1 + 3.9, 0.9)); house.setAttribute("x", (908 + 14 * (1 - up(t, D1 + 3.9, 1.2))).toFixed(1)); op(houseLab, up(t, D1 + 4.7, 0.7)); }
+  };
+  const drawProof = (t) => {
+    const v = span(t, E0 - 0.5, F0 + 0.2, 0.5, 0.7); op(gProof, v);
+    if (v > 0) { op(icoCopies, up(t, E0 - 0.3, 0.6)); op(icoScroll, up(t, E0, 0.6));
+      const k = up(t, E1 + 0.2, 3.0); draw(proofLine, k); set(walker, { cx: (mix(570, 830, k) + (k >= 1 ? 2.5 * Math.sin(t * 1.6) : 0)).toFixed(1) }); op(walker, up(t, E0 + 0.6, 0.5));
+      op(labOld, up(t, E1 + 0.9, 0.6)); op(labReal, up(t, E1 + 2.1, 0.6)); draw(gapLine, up(t, E1 + 3.3, 1.0)); op(labTrust, up(t, E1 + 4.3, 0.6)); }
+    // the ring: trust, out of evidence's reach; then it becomes the opening of the book
+    const rv = up(t, E1 + 3.6, 0.8) * (1 - up(t, F0 + 0.7, 0.7)); op(ring, rv);
+    if (rv > 0) { const g = up(t, F0 - 0.5, 1.2); set(ring, { cx: mix(1064, 640, g).toFixed(1), cy: mix(300, 322, g).toFixed(1), r: (mix(44, 8, up(t, F0 + 0.5, 0.9)) + 3 * Math.sin(t * 1.5) * (1 - g)).toFixed(2) }); }
+  };
+
+  // ================= 6 and 7: the book, its own claim, the questions =================
+  const gBreath = el("g", {}, world), gBook = el("g", {}, world), gVerse = el("g", {}, world), gQ = el("g", {}, world);
+  const pageD = (s) => `M0 -50 C${-40 * s} -70 ${-110 * s} -70 ${-150 * s} -55 L${-150 * s} 55 C${-110 * s} 40 ${-40 * s} 40 0 60 Z`;
+  const pgL = el("path", { d: pageD(1), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round", pathLength: 1, "stroke-dasharray": 1 }, gBook);
+  const pgR = el("path", { d: pageD(-1), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round", pathLength: 1, "stroke-dasharray": 1 }, gBook);
+  const pLines = []; [1, -1].forEach((s) => [-28, -10, 8, 26].forEach((dy) => pLines.push(line(gBook, `M${-22 * s} ${dy - 8} C${-60 * s} ${dy - 20} ${-100 * s} ${dy - 20} ${-132 * s} ${dy - 10}`, { stroke: STONE, "stroke-width": 2.2 }))));
+  const flip = el("path", { d: pageD(-1), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gBook);
+  const breaths = [...Array(9)].map((_, i) => ({ x: 420 + i * 55 + (R() - 0.5) * 30, ph: R(), sp: 0.16 + R() * 0.08, e: el("path", { stroke: MUSTARD, "stroke-width": 2.2, "stroke-linecap": "round" }, gBreath) }));
+  const vClip = el("clipPath", { id: "verse" }, gVerse), vRect = el("rect", { x: 140, y: 180, height: 110, width: 0 }, vClip);
+  const verse = txt(gVerse, "disp", 640, 262, "“All Scripture is God-breathed”", 70, { "clip-path": "url(#verse)" });
+  const ref = txt(gVerse, "lab", 640, 316, "2 TIMOTHY 3:16 · BEREAN STANDARD BIBLE");
+  const qs = [...Array(9)].map((_, i) => { const left = i % 2 === 0, a = { x0: left ? 70 + R() * 150 : 1060 + R() * 150, y0: 130 + R() * 380, size: 46 + Math.round(R() * 44), at: G0 + 0.3 + i * 0.36 }; a.e = txt(gQ, "disp", 0, 0, "?", a.size, { fill: STONE }); return a; });
+
+  const drawBook = (t) => {
+    const bv = up(t, F0 + 0.3, 0.5) * (1 - up(t, END + 0.6, 0.7)); op(gBook, bv);
+    if (bv > 0) { const d = up(t, F0 + 0.3, 1.5); draw(pgL, d); draw(pgR, d); pgL.setAttribute("fill-opacity", up(t, F0 + 0.9, 0.8)); pgR.setAttribute("fill-opacity", up(t, F0 + 0.9, 0.8));
+      const down = up(t, F1 - 1.0, 1.0) * (1 - up(t, G0 - 0.2, 1.1));
+      move(gBook, 640, mix(326, 446, down) + 2 * Math.sin(t * 0.8), mix(1.12, 0.82, down));
+      pLines.forEach((l, i) => { draw(l, up(t, F0 + 1.1 + i * 0.08, 0.7)); l.setAttribute("stroke", t > G0 + 1.6 + i * 0.36 ? MUSTARD : STONE); });
+      const f1 = up(t, G1 + 0.05, 0.95), f2 = up(t, G1 + 0.85, 0.95), sx = t < G1 + 0.85 ? Math.cos(Math.PI * f1) : Math.cos(Math.PI * f2);
+      op(flip, t > G1 && f2 < 1 ? 1 : 0); flip.setAttribute("transform", `scale(${sx.toFixed(3)} ${(1 + 0.05 * Math.sin(Math.PI * (t < G1 + 0.85 ? f1 : f2))).toFixed(3)})`); }
+    const vv = span(t, F1 - 0.45, G0 + 0.5, 0.3, 0.7); op(gVerse, vv);
+    if (vv > 0) { set(vRect, { width: (1000 * up(t, F1 - 0.35, 1.2)).toFixed(1) }); op(ref, up(t, F1 + 0.6, 0.7)); }
+    const brv = span(t, F1 - 0.4, G0 + 0.6, 0.8, 0.8); op(gBreath, brv);
+    if (brv > 0) breaths.forEach((b) => { const k = ((t * b.sp + b.ph) % 1), y = mix(400, 110, k), w = 9 * Math.sin(k * 9 + b.ph * 6);
+      b.e.setAttribute("d", `M${(b.x + w).toFixed(1)} ${y.toFixed(1)} q${(8).toFixed(1)} -18 0 -36 t0 -36`); b.e.setAttribute("opacity", (0.42 * Math.sin(Math.PI * k)).toFixed(3)); });
+    const qv = t > G0 && t < G1 + 1.2; op(gQ, qv ? 1 : 0);
+    if (qv) qs.forEach((q) => { const k = up(t, q.at, 2.0), o = Math.min(up(t, q.at, 0.5), 1 - up(t, q.at + 1.45, 0.55)); op(q.e, o * 0.9);
+      if (o > 0) move(q.e, mix(q.x0, 640, k), mix(q.y0, 330, k) + 12 * Math.sin(k * Math.PI), mix(1, 0.35, k)); });
+  };
+
+  F.title("Can you trust the Bible?");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.7);
+  return (t) => { drawTree(t); drawScrolls(t); drawStone(t); drawProof(t); drawBook(t); };
+});
+</script>
+</body></html>

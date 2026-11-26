@@ -16,3 +16,13 @@ None of these was checked against a primary source in this session (no library a
 
 - "Every nation is tempted to borrow God for its own story. Ours is too. So am I." puts the writer inside the charge, as your voice standard asks. It names no party and no person.
 - "You can love your country. It's a good gift." is there so the film can't be heard as contempt for patriotism.
+
+## Checked on 2026-11-26, before recording
+
+- Scripture: Matthew 6:10 and the clause of Hebrews 12:28 match `client/public/bible/text/` word for word.
+- "people called him lord": Acts 25:26 has "to the lord" (Greek) for the emperor Festus has just named in verses 21 and 25; the Martyrdom of Polycarp 8 has officials urge Polycarp to say "Lord Caesar". The on-screen words "Caesar is lord" stand for that title; they are not shown as a quotation.
+- "Back then it could get you killed.": confirmed. Pliny to Trajan (governor AD 111 to 113): "those who persisted I ordered executed"; Polycarp refuses and is put to death.
+- "His face was on the coins.": the denarius of Tiberius carried his head (Wikipedia, Tribute penny). The film draws a coin with a wreath and the name, never a face.
+- "Jesus is Lord": Romans 10:9 and 1 Corinthians 12:3.
+- "Rome did.": AD 476 is the usual date for the end of the empire in the West.
+- Every flag in the picture is a plain pennant. No real flag, nation, party or person appears.
