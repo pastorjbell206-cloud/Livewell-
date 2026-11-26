@@ -23978,3 +23978,23 @@ Cut in chapter 53: a draft sentence saying Christians used the song as a weapon 
 | Genesis 9:11 (its clause); John 6:45 (its inner quotation); Revelation 21:19 (named) | 9-17 `later` | BSB; isaiah/54.json `christ` | BSB text |
 
 Cut in chapter 54: the deep note's Christian link to Psalm 22:1 on Jesus' lips is left out, because the New Testament does not itself tie that cry to this chapter.
+
+## The plain notes on Isaiah 55 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/55.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 55:1-5 | 1-5 | BSB | BSB text |
+| Closes chapters 40 to 55; 53, 54, then the invitation | 1-5 | isaiah/55.json `story` | Repository |
+| Street seller; wine and milk as plenty; near hunger | 1-5 | isaiah/55.json `cultural` | Repository |
+| Exiles settled, Jeremiah 29; Judeans doing business and holding land | 1-5 | isaiah/55.json `historical` | Repository |
+| Zedekiah blinded; Jehoiachin released, not restored; 2 Samuel 7; the scholars' question | 1-5 | isaiah/55.json `historical`, `words` | Repository |
+| 2 Samuel 7:16 (its clause); Acts 13:34 (its inner quotation) | 1-5 `later` | BSB; isaiah/55.json `christ` | BSB text |
+| 55:6-13 (verse 8 paraphrased, since its BSB text is split by speech marks) | 6-13 | BSB | BSB text |
+| Salach with God alone as subject, intensified; higher thoughts in mercy | 6-13 | isaiah/55.json `words`, `hard` | Repository |
+| Early and late rains; thornbush and brier as curse; 40:8 and 55:11 frame | 6-13 | isaiah/55.json `cultural`, `story` | Repository |
+| Isaiah 40:8 (its clause); Genesis 3:18 (its clause); Psalm 98:8 (its clause) | 6-13 `later` | BSB | BSB text |
+| Knowing a God beyond understanding; humility, not silence | 6-13 `hard` | isaiah/55.json `hard` | Repository |
+
+Cut in chapter 55: John 7:37 and Revelation 22:17 are left out, because the deep note itself calls those links thematic and the New Testament does not quote this chapter there.
