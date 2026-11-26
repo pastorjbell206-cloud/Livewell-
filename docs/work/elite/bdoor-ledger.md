@@ -26161,3 +26161,19 @@ Cut in chapter 46: the morning-only daily offering, left out for want of room.
 | Later: Leviticus 19:34 | 13-23 `later` | BSB | BSB text |
 
 Cut in chapter 47: John 4 and 7:37-39 beside the river, which the New Testament does not draw from Ezekiel by quotation; Revelation 22:1-2 kept as the New Testament's own use. The boundaries stated as the vision's, with no claim about any modern state or border.
+
+## The plain notes on Ezekiel 48 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/48.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Every tribe in its place: the text paraphrased; quoted clauses at verses 1, 1-7, 8, 9-14, 15-20, 21-22, 23-29 | 1-29 | BSB | BSB text |
+| Background in `hearers` | 1-29 | ezekiel/48.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 25:23; Joshua 13:7 | 1-29 `later` | BSB | BSB text |
+| THE LORD IS THERE: the text paraphrased; quoted clauses at verses 31, 31-34, 35 | 30-35 | BSB | BSB text |
+| Background in `hearers` | 30-35 | ezekiel/48.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 46:5; Revelation 21:12 | 30-35 `later` | BSB | BSB text |
+| The hard note: Will Ezekiel's temple actually be built? The readings in their holders' terms | 30-35 `hard` | ezekiel/48.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 48: nothing; Revelation 21:12 kept as the New Testament's own use of the twelve gates. No claim about any modern state, temple or border.
