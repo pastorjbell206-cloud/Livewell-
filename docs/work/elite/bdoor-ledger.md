@@ -22715,3 +22715,19 @@ Cut in chapter 5: the deep note's lines to Christ (Revelation 3:20 beside the kn
 | Genesis 32:2 (its last sentence); 1 Kings 1:3 named | 11-13 | song-of-solomon/6.json `cultural` (Genesis 32:2; 1 Kings 1:3); BSB | Repository; BSB text |
 
 Cut in chapter 6: the deep note's line to Christ (any reading of the bride as the church in verses 8-10, left to the book page). No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 7 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 (its first clause, before the exclamation); 7:1-3 otherwise paraphrased, not quoted; 7:4; 7:5; 7:6 (before its exclamation); 7:7-9 paraphrased, not quoted | 1-9 | BSB | BSB text |
+| The longest description; the upward gaze, against 4:1-7 and 5:10-16; confidence after chapters 5 and 6; the wasf; comparisons not pictures (grace, depth, dignity); a farming world of harvest; Heshbon and Sihon (Numbers 21:25-26), Bath-rabbim perhaps a gate; Lebanon toward Damascus; Carmel; purple from sea snails and royalty; beauty filling the land | 1-9 | song-of-solomon/7.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Numbers 21:26 (its first clause, in part, named); Proverbs 5:18 (its clause) | 1-9 | song-of-solomon/7.json `historical` (Numbers 21:25-26), `hard` (Proverbs 5:18-19); BSB | Repository; BSB text |
+| The hard note: embarrassment and allegory as escape; Genesis 2:25; Proverbs 5:18-19; 1 Corinthians 7:3-5; veiled, not graphic; read within marriage; the refrain (2:7; 3:5; 8:4); reverence as receiving the gift | 1-9 `hard` | song-of-solomon/7.json `hard` | Repository |
+| 7:10 (in double quotes); 7:11; the vineyards (7:12) paraphrased (it holds a dash); 7:13 | 10-13 | BSB | BSB text |
+| The third refrain of belonging (2:16; 6:3); teshuqah three times (Genesis 3:16; 4:7); the reversal many readers hear; 2:10-13 echoed with her inviting; the garden become a shared place; mandrakes (Genesis 30:14-16) and duda'im with dodim | 10-13 | song-of-solomon/7.json `literary`, `cultural`, `words` (teshuqah, duda'im), `doctrines` | Repository |
+| Genesis 3:16 (its third sentence); Genesis 30:14-16 named | 10-13 | song-of-solomon/7.json `words` (teshuqah), `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 7: the deep note's line that the gospel announces the undoing of Genesis 3's curse beside verse 10 (a line the New Testament does not draw from this verse). The chapter's most explicit lines (7:1-3, 7-9) are told with restraint and not quoted. No care line is needed in this chapter.
