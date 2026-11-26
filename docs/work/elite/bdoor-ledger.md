@@ -22006,3 +22006,19 @@ Cut in chapter 18: Acts 8:27, which the New Testament does not draw from this ch
 | The hard note: history in stages, the final age, a later expansion; the horizon; not read of any nation or politics of the present day | 18-25 `hard` | isaiah/19.json `hard`; the brief | Repository |
 
 Cut in chapter 19: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 20 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 20:1-2 | 1-2 | BSB | BSB text |
+| Ashdod about 713 and 711 BC; Azuri and Yamani; the tartan; Sargon's inscriptions; Judah approached; Khorsabad from the 1840s; sackcloth; naked or in a loincloth | 1-2 | isaiah/20.json `historical`, `cultural` | Repository |
+| Micah 1:8 (its clause); Jeremiah 27:2 (first typed inexactly, caught and corrected) | 1-2 `later` | BSB | BSB text |
+| 20:3-6 (20:4 paraphrased around its dash) | 3-6 | BSB | BSB text |
+| Assyrian reliefs of stripped captives; deportation; the larger crisis to come; the 670s and 660s and Memphis and Thebes; the coastland | 3-6 | isaiah/20.json `cultural`, `story`, `historical` | Repository |
+| Ezekiel 4:4 (first typed inexactly, caught and corrected); Psalm 146:3 | 3-6 `later` | BSB | BSB text |
+| The hard note: naked or partly clothed; the three years; sign-acts; not explained away; no pattern for shaming anyone in God's name | 3-6 `hard` | isaiah/20.json `hard`; the brief | Repository |
+
+Cut in chapter 20: nothing. No care line is needed in this chapter.
