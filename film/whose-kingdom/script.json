@@ -1,0 +1,78 @@
+{
+  "title": "Whose kingdom?",
+  "note": "DRAFT for James to approve. Not recorded. Every narration line is a sentence from A Higher Allegiance, the chapter \"Civil Religion: When a Nation Borrows Sacred Words\", shortened only by leaving words out; words.md beside this file shows each line against its original and marks the three places James should look at. The Scripture lines are the Berean Standard Bible, copied from client/public/bible/text/matthew/6.json. The fields follow James's description of the Gather scripts; `gap` is a guess and should be set to match film/beliefs/script.json on the Mac.",
+  "page": "/books/a-higher-allegiance",
+  "translation": "Berean Standard Bible",
+  "gap": 0.35,
+  "chapters": [
+    {
+      "id": "room",
+      "kicker": "A Sunday in July",
+      "level": 0.2,
+      "lines": [
+        "There is a moment in the life of nearly every American church.",
+        "The sanctuary is decorated with flags, and the worship set includes a patriotic hymn."
+      ]
+    },
+    {
+      "id": "line",
+      "kicker": "What no one notices",
+      "level": 0.4,
+      "lines": [
+        "And in that moment, something happens that most people in the room do not notice.",
+        "The line between worship of God and celebration of nation becomes invisible."
+      ]
+    },
+    {
+      "id": "name",
+      "kicker": "It has a name",
+      "level": 0.55,
+      "lines": [
+        "It has a name. Sociologists call it civil religion.",
+        "\"God Bless America\" quietly replaced \"Thy Kingdom Come\" as the functional prayer of the church."
+      ]
+    },
+    {
+      "id": "prayer",
+      "kicker": "The prayer Jesus taught",
+      "level": 0.7,
+      "lines": [
+        "Our Father in heaven, hallowed be Your name.",
+        "Your kingdom come, Your will be done, on earth as it is in heaven."
+      ],
+      "scripture": {
+        "reference": "Matthew 6:9-10",
+        "translation": "Berean Standard Bible",
+        "text": "Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done, on earth as it is in heaven.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "invitation",
+      "kicker": "The invitation",
+      "level": 0.85,
+      "lines": [
+        "That is the invitation: not to stop caring about America, but to stop treating the American project as though it were the Kingdom of God.",
+        "A church that knows it belongs to a Kingdom that cannot be shaken can face any political outcome with sorrow, yes, with concern, yes, but never with despair."
+      ]
+    },
+    {
+      "id": "king",
+      "kicker": "A King",
+      "level": 0.95,
+      "lines": [
+        "The church does not need a nation to survive. The church needs a King.",
+        "And it already has one. His name is Jesus."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Let \"Thy Kingdom Come\" be the prayer of the church."
+      ],
+      "titleCard": ["Let \"Thy Kingdom Come\" be the prayer of the church.", "LiveWell by James Bell"]
+    }
+  ]
+}

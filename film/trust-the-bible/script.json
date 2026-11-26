@@ -1,0 +1,76 @@
+{
+  "title": "Can you trust the Bible?",
+  "note": "DRAFT for James to approve. Not recorded. Every narration line is a sentence from The Reliability of Scripture, chapter one (\"Three Questions We Confuse for One\"), shortened only by leaving words out; words.md beside this file shows each line against its original. The Scripture line is the Berean Standard Bible, copied from client/public/bible/text/2-timothy/3.json, and is the first clause of the verse. The fields follow James's description of the Gather scripts; `gap` is a guess and should be set to match film/beliefs/script.json on the Mac.",
+  "page": "/books/the-reliability-of-scripture",
+  "translation": "Berean Standard Bible",
+  "gap": 0.35,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "One question",
+      "level": 0.2,
+      "lines": [
+        "\"Can I trust the Bible?\" is really three different questions.",
+        "The worst thing that can happen to a hard question is being answered with a different question."
+      ]
+    },
+    {
+      "id": "text",
+      "kicker": "The first question",
+      "level": 0.35,
+      "lines": [
+        "The first question is historical and textual: is the Bible we have now the same as the Bible originally written?"
+      ]
+    },
+    {
+      "id": "history",
+      "kicker": "The second question",
+      "level": 0.5,
+      "lines": [
+        "The second question: does the Bible accurately describe real people, real places, real events?"
+      ]
+    },
+    {
+      "id": "more",
+      "kicker": "The third question",
+      "level": 0.65,
+      "lines": [
+        "The third question is theological: is the Bible more than a collection of human documents?"
+      ],
+      "scripture": {
+        "reference": "2 Timothy 3:16",
+        "translation": "Berean Standard Bible",
+        "text": "All Scripture is God-breathed",
+        "spoken": false
+      }
+    },
+    {
+      "id": "order",
+      "kicker": "The order matters",
+      "level": 0.8,
+      "lines": [
+        "These three questions are related, but they are not the same, and answering one does not automatically answer the others.",
+        "The order matters.",
+        "Faith that skips questions one and two is not stronger for having skipped them. It is more fragile."
+      ]
+    },
+    {
+      "id": "reliable",
+      "kicker": "What reliable means",
+      "level": 0.9,
+      "lines": [
+        "Reliable does not mean perfect.",
+        "It means that variations exist at the margins, not the center, that copyists preserved rather than invented."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The answer is not \"no.\" The answer is the opposite of \"no.\""
+      ],
+      "titleCard": ["The answer is the opposite of \"no.\"", "LiveWell by James Bell"]
+    }
+  ]
+}

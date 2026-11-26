@@ -1,0 +1,34 @@
+# Can you trust the Bible?: each line beside its source
+
+- **"Can I trust the Bible?" is really three different questions.**
+  - Source: "Can I trust the Bible?" is really three different questions — and answering the wrong one is why the conversation stalls.
+
+- **The worst thing that can happen to a hard question is being answered with a different question.**
+  - Source: The worst thing that can happen to a hard question is being answered with a different question.
+
+- **The first question is historical and textual: is the Bible we have now the same as the Bible originally written?**
+  - Source: The first question is historical and textual: is the Bible we have now the same as the Bible originally written? This is the question of textual transmission and manuscript reliability, a question about copying, about whether the scribes who copied the text over twenty centuries preserved what was written or altered it, accidentally or deliberately. At bottom it asks whether the text on the page bears a credible relationship to the text originally produced.
+
+- **The second question: does the Bible accurately describe real people, real places, real events?**
+  - Source: The second question is archaeological and factual: does the Bible accurately describe real people, real places, real events? This is the question of whether Abraham existed, whether the Exodus happened, whether David was a real king with a real kingdom, whether the census described in Luke's gospel can be corroborated by other historical sources. It asks, in short, whether the Bible's historical claims hold up under examination.
+
+- **The third question is theological: is the Bible more than a collection of human documents?**
+  - Source: The third question is theological: is the Bible more than a collection of human documents? Is it inspired? Is it authoritative in a way that differs from the authority of other excellent books, the word of God in a sense that requires a specific kind of response from those who read it?
+
+- **These three questions are related, but they are not the same, and answering one does not automatically answer the others.**
+  - Source: These three questions are related, but they are not the same, and answering one does not automatically answer the others. You can establish extraordinary textual reliability, demonstrating that the text we have matches the text originally written, without yet settling the inspiration question; you can confirm archaeological accuracy, showing that the people and places described are historically real, without resolving whether the miraculous claims are true. The questions build on each other, and a responsible case for biblical authority needs to engage all three, but they require different kinds of evidence and different kinds of arguments.
+
+- **The order matters.**
+  - Source: This book is primarily about questions one and two. Not because question three is less important; it is the most important of the three. But you cannot build a doctrine of inspiration on a foundation that has not yet established textual reliability; you cannot claim divine authority for a document you cannot demonstrate to be genuine. The order matters. The questions follow a logical sequence: first, is what we are reading the same as what was originally written; second, are the historical claims it makes substantially accurate; third, given the answers to one and two, what do we make of the theological claims? That third question is a different kind of question, because it involves not just the evaluation of evidence but a response to evidence. It is where faith lives. But faith that skips questions one and two is not stronger for having skipped them. It is more fragile.
+
+- **Faith that skips questions one and two is not stronger for having skipped them. It is more fragile.**
+  - Source: This book is primarily about questions one and two. Not because question three is less important; it is the most important of the three. But you cannot build a doctrine of inspiration on a foundation that has not yet established textual reliability; you cannot claim divine authority for a document you cannot demonstrate to be genuine. The order matters. The questions follow a logical sequence: first, is what we are reading the same as what was originally written; second, are the historical claims it makes substantially accurate; third, given the answers to one and two, what do we make of the theological claims? That third question is a different kind of question, because it involves not just the evaluation of evidence but a response to evidence. It is where faith lives. But faith that skips questions one and two is not stronger for having skipped them. It is more fragile.
+
+- **Reliable does not mean perfect.**
+  - Source: Reliable does not mean perfect. It does not mean that every scribal copyist never made a mistake; we know they made mistakes, and we can see them. Textual criticism, the scholarly discipline of comparing manuscripts and identifying variations, exists precisely because there are variations; the project of textual scholarship is to trace those variations back to their sources and identify the original readings. Reliability means something more precise and more important than "mistake-free." It means that the process of transmission has preserved the original content with sufficient accuracy that we can be confident we are reading what was originally written: that variations exist at the margins, not the center, that copyists preserved rather than invented, that the text has a coherent identity across centuries and languages and cultures.
+
+- **It means that variations exist at the margins, not the center, that copyists preserved rather than invented.**
+  - Source: Reliable does not mean perfect. It does not mean that every scribal copyist never made a mistake; we know they made mistakes, and we can see them. Textual criticism, the scholarly discipline of comparing manuscripts and identifying variations, exists precisely because there are variations; the project of textual scholarship is to trace those variations back to their sources and identify the original readings. Reliability means something more precise and more important than "mistake-free." It means that the process of transmission has preserved the original content with sufficient accuracy that we can be confident we are reading what was originally written: that variations exist at the margins, not the center, that copyists preserved rather than invented, that the text has a coherent identity across centuries and languages and cultures.
+
+- **The answer is not "no." The answer is the opposite of "no."**
+  - Source: The answer is not "no." The answer is the opposite of "no." And the evidence for that answer is one of the most compelling bodies of scholarship in the history of literary study. But before we get there, we need to linger on one word: "reliable."
