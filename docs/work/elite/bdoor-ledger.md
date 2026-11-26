@@ -25728,3 +25728,19 @@ Cut in chapter 32: nothing drawn to the New Testament.
 | Later: 2 Kings 25:12; Isaiah 51:2 | 21-33 `later` | BSB | BSB text |
 
 Cut in chapter 33: James 1:22 beside hearers who do not obey, which the New Testament does not draw from Ezekiel 33.
+
+## The plain notes on Ezekiel 34 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Shepherds who feed themselves, and the Shepherd who seeks: the text paraphrased; quoted clauses at verses 2, 3, 4, 5-6, 7-10, 11, 12, 13-14, 16 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/34.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 23:1; Psalm 23:1 | 1-16 `later` | BSB | BSB text |
+| One shepherd, and a covenant of peace: the text paraphrased; quoted clauses at verses 17-21, 22, 23, 24, 25, 25-28, 31 | 17-31 | BSB | BSB text |
+| Background in `hearers` | 17-31 | ezekiel/34.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 30:9; Hosea 3:5 | 17-31 `later` | BSB | BSB text |
+| The hard note: Does the promise of God's servant David mean that David himself will return? The readings in their holders' terms | 17-31 `hard` | ezekiel/34.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 34: John 10 and Luke 15 and 19:10 as fulfillments, which the New Testament does not draw from Ezekiel 34 by quotation; John 10:11 kept only as a Christian reading.
