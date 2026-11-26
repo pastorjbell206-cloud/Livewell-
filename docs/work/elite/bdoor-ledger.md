@@ -24483,3 +24483,18 @@ Cut in chapter 66: John 16:21 and Galatians 4:26, which the deep note calls them
 | Map: Jerusalem, Bethlehem, Jericho, Bethel, Shechem, Tyre, Damascus, Gilead at the site's points; Philistia, Moab, Edom, Egypt as regions; Babylon at its ruin mounds (32.54 N, 44.42 E) | map | the site's other maps; the coordinator's direction; BSB for each reference | Repository, BSB text |
 
 Cut on the book page: a claim that Jeremiah uses the word for falsehood more than any other book (no source). The New Testament lines drawn are only those the New Testament draws itself.
+
+## The plain notes on Jeremiah 1 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1-19 (verse 12 paraphrased around the BSB's speech marks) | all | BSB | BSB text |
+| 627 to 587 or 586 BC; Josiah about 640 to 609, 622 BC; the kings; Anathoth a priests' village | 1-3 | jeremiah/1.json `historical` | Repository |
+| The word for child; age and standing; the touched mouth, Isaiah 6:7, Deuteronomy 18:18; almond and shaqed; armies from the north | 4-19 | jeremiah/1.json `cultural` | Repository |
+| Reformed and other readings of verse 5; Psalm 139 | 4-10 `hard` | jeremiah/1.json `hard` | Repository |
+| The CHILDLOSS care line, byte for byte | 4-10 `hard` | carelines.json (from the site) | care.mjs |
+| Ezra 1:1, Deuteronomy 18:18, Galatians 1:15, Joshua 1:5 (clauses); Jeremiah 38:13 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 1: the deep note's lines to Christ the New Testament does not draw (Acts 3:22-23 and John 1:14 beside the call); Galatians 1:15 is given only as Paul's own words about his call.
