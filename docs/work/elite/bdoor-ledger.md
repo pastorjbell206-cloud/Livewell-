@@ -25633,3 +25633,19 @@ Cut in chapter 26: nothing drawn to the New Testament; Tarshish left unplaced.
 | Later: Psalm 48:7; Jonah 1:4 | 26-36 `later` | BSB | BSB text |
 
 Cut in chapter 27: Tarshish's location (the deep note's Tartessus), left as disputed, as the coordinator asked.
+
+## The plain notes on Ezekiel 28 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A man and not a god: the text paraphrased; quoted clauses at verses 2, 3-5, 7-8, 9 | 1-10 | BSB | BSB text |
+| Background in `hearers` | 1-10 | ezekiel/28.json `historical`, `cultural`, `literary` | Repository |
+| Later: Proverbs 16:18; Isaiah 14:14 | 1-10 `later` | BSB | BSB text |
+| The king in Eden: the text paraphrased; quoted clauses at verses 12-13, 14, 15, 16, 17, 18, 20-23, 26 | 11-26 | BSB | BSB text |
+| Background in `hearers` | 11-26 | ezekiel/28.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 3:24; 1 Kings 16:31 | 11-26 `later` | BSB | BSB text |
+| The hard note: Is the lament in verses 12 to 19 about Satan's fall? The readings in their holders' terms | 11-26 `hard` | ezekiel/28.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 28: Ephesians 6:12 beside the Satan reading, left out; the Satan reading kept as a reading with no side taken.
