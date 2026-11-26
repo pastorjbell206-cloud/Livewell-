@@ -24998,3 +24998,17 @@ Cut in chapter 10: Acts 14:15 and 17:24-25 beside the chapter, which the deep no
 | Deuteronomy 27:26 (its word), Psalm 52:8, Isaiah 53:7, Romans 12:19 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 11: a draft line on why Anathoth's priests opposed Jeremiah, which no repository source states.
+
+## The plain notes on Jeremiah 12 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1-17 | all | BSB | BSB text |
+| Courtroom language, riv; Abraham, Job, Psalm 73; the Jordan thickets and lions | 1-6 | jeremiah/12.json `cultural`, `historical` | Repository |
+| Undated, Jehoiakim; raiders of 2 Kings 24:2 as the neighbors | all | jeremiah/12.json `historical` | Repository |
+| Three readings of God's answer | 1-6 `hard` | jeremiah/12.json `hard` | Repository |
+| Psalm 73:3, Habakkuk 1:13, 2 Kings 24:2, Isaiah 56:6 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 12: nothing.
