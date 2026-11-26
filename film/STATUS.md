@@ -73,4 +73,5 @@ James, 2026-11-26: "make the ones that you've already created go live", then "Ye
 - Pull request 651: batch 6 (38 films live).
 - Pull request 652: batch 7 (43 films live).
 - Pull request 654: batch 8 (47 films live). Its first upload on 2026-11-26 was refused ("Storage quota exceeded for Hobby plan (1GB maximum)") and Vercel then suspended the store, so the 43 live films stopped playing for a time. James upgraded the Vercel plan the same day; the films played again and batch 8 uploaded. Pull request 653 was opened before the refusal was seen and closed unmerged.
+- Pull request 655: batch 9 (52 films live).
 - To publish: `node scripts/publish-narrated-films.mjs <slug> ...`, commit the three data files it changes, open a pull request, merge when CI is green. Video files are in the Vercel Blob store `livewell-films`; the live list is `scripts/narrated-films-live.json`.
