@@ -25618,3 +25618,18 @@ Cut in chapter 25: Romans 12:19 beside vengeance, which the New Testament does n
 | Later: Isaiah 23:2-8; Psalm 55:23 | 15-21 `later` | BSB | BSB text |
 
 Cut in chapter 26: nothing drawn to the New Testament; Tarshish left unplaced.
+
+## The plain notes on Ezekiel 27 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tyre the splendid ship: the text paraphrased; quoted clauses at verses 3, 4, 5-7, 8-11, 12-24, 25 | 1-25 | BSB | BSB text |
+| Background in `hearers` | 1-25 | ezekiel/27.json `historical`, `cultural`, `literary` | Repository |
+| Later: 1 Kings 10:22; Isaiah 23:8 | 1-25 `later` | BSB | BSB text |
+| The ship sinks in the heart of the sea: the text paraphrased; quoted clauses at verses 26, 27, 28-31, 32, 33, 35-36 | 26-36 | BSB | BSB text |
+| Background in `hearers` | 26-36 | ezekiel/27.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 48:7; Jonah 1:4 | 26-36 `later` | BSB | BSB text |
+
+Cut in chapter 27: Tarshish's location (the deep note's Tartessus), left as disputed, as the coordinator asked.
