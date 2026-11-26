@@ -1465,3 +1465,23 @@ The book page's one side is given at both levels: Peter is a Jew writing in Isra
 | pictures | No one is drawn being hurt; the neighbours are ordinary townspeople, never villains; no household rank; Christ and God not drawn | The drawing (`scenes/book-1-peter.tsx`); a sheet of the finished frames read |
 | left out | Babylon as Rome; Silvanus and Mark in the captions; the spirits in prison and baptism in the captions; the household code in the captions | Deliberate; the book page is linked |
 | length | Younger 2:40.8, older 3:02.9 | `audio/manifest.json` |
+
+### 1 John: so that you may know (`book-1-john`)
+
+Written, as the book page says, to steady people and not to frighten them. The letter's antichrists are named only as the page names them, teachers who denied that Jesus is the Christ come in the flesh, and no one living is named.
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | 1 John 2:19; 1:5; 1:1; 2:3; 1:9; 4:8; 5:13 (some trimmed to a clause) | BSB, by the validator; all 1 John |
+| 1 Churches that had been shaken | Like a sermon written down; no greeting and no named writer; a pastor who calls them little children; a group had left with a new teaching about Jesus; those who stayed wondered whether they knew God; written to steady them | The 1 John book page, overview, purpose and `teaching` "1 John in a minute", nearly word for word |
+| 2 How it is laid out | Like a composer with a few themes, light, love, truth, obedience and belief, each from a new angle and a little deeper; five movements from the Word of life to the knowing at the end | The book page's `reading` and `teaching` "How it is built", nearly word for word. Four panels rounded to whole chapters (1 and 2; 3; 4; 5); the gold rule under "God is love" |
+| 3 Hands that touched | Witnesses heard, saw and touched the Word of life; teachers said the divine Christ only seemed to have a body; John insists he came in the flesh; a spirituality that despises the body soon despises the neighbor | The book page, themes "The Word made flesh" (nearly word for word) and `teaching` "When, where, and what had gone wrong"; BSB 1 John 1:1; 4:2 |
+| 4 Three marks | Believing the truth about Jesus, keeping God's commands, loving one another; not to be pulled apart; written to steady people, not to make tender consciences anxious | The book page's `teaching` "Three marks of knowing God" and "What the letter is not", nearly word for word; BSB 1 John 2:3, 10; 4:2 |
+| 5 Sin and forgiveness | Anyone who says he has no sin deceives himself; God forgives and cleanses those who confess; Jesus speaks to the Father for them (younger); a child of God does not settle into sin; do not deny your sin and do not make peace with it | The book page, themes "Sin, forgiveness, and holiness" and `teaching` "Sin, and the one born of God" ("Do not deny your sin, and do not make peace with it."); BSB 1 John 1:8-9; 2:1 |
+| 6 God is love | God is love, defined by what God did in sending his Son; love concrete, laying down one's life and opening the hand to a brother in need; perfect love drives out the dread of judgment | The book page's `teaching` "God is love", nearly word for word; BSB 1 John 3:16-17; 4:8-9, 18 |
+| 7 Where to start | One sitting, aloud, about twenty minutes; the words that come back; with John's Gospel open; remember the split behind it; where your confidence before God rests | The book page's `teaching` "How to read 1 John", nearly word for word; BSB 1 John 5:13 |
+| differ | Authorship (the apostle, the elder, a circle); 3:6-9; 2:19 and falling away; "the whole world" (2:2); assurance; the longer words of 5:7-8; the sin that leads to death; the antichrists as the page defines them, no one living named; no side | The book page's `teaching` "Who wrote it", "Sin, and the one born of God", "Antichrists, and those who went out", "Jesus in 1 John", "‘So that you may know’: assurance", "Two hard places in chapter 5" |
+| care | "Thinking about sin can bring up guilt or fear. ..." | The care line of "Grace", whole. The book page's longer words for a fearful conscience stay on the book page |
+| pictures | Christ and God not drawn: the witnesses face a light with no one in it; those who left are drawn only walking away; no antichrist drawn; the sunrise raised above the hills after the sheet was read | The drawing (`scenes/book-1-john.tsx`); sheets of the finished frames read |
+| left out | The sin that leads to death and the antichrists in the captions; Cain; Cerinthus; the water and the blood | Deliberate; the book page is linked |
+| length | Younger 2:48.0, older 3:04.2 | `audio/manifest.json` |

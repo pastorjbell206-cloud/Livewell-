@@ -1738,6 +1738,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-galatians",
     "book-colossians",
     "book-1-peter",
+    "book-1-john",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2546,5 +2547,16 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toContain("If you are in an abusive marriage, seek safety first.");
     expect(f.differ?.text).toContain("Using Peter's words to slaves to defend slavery was a misuse, and it was wrong.");
     expect(text(f)).not.toMatch(/replaced Israel|new Israel|Christ.?killers|Jews rejected/i);
+  });
+
+  it("1 John is written for assurance, names no one of today as an antichrist, and takes no side where readers differ", () => {
+    const f = filmFile("book-1-john");
+    expect(f.care).toBe(filmFile("grace").care);
+    expect(f.frames.find(x => x.id === "marks")!.younger).toContain("to help them feel sure, not afraid");
+    expect(f.frames.find(x => x.id === "start")!.verse?.text).toBe("so that you may know that you have eternal life.");
+    expect(f.differ?.text).toContain("names no one living today");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(text(f)).not.toMatch(/\b(pope|emperor|sultan|president|dictator|Rome is)\b/i);
+    expect(f.frames.find(x => x.id === "touched")!.still).toContain("No one is drawn in the light.");
   });
 });

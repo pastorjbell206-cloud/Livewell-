@@ -3565,6 +3565,116 @@
     }
    ]
   },
+  "book-1-john": {
+   "title": {
+    "file": "book-1-john/title.mp3",
+    "hash": "79ab87f03f91767390c9",
+    "seconds": 3.01,
+    "bytes": 18644
+   },
+   "younger": [
+    {
+     "id": "shaken",
+     "file": "book-1-john/younger/01-shaken.mp3",
+     "hash": "0904ee79f67659bf1785",
+     "seconds": 24.67,
+     "bytes": 148532
+    },
+    {
+     "id": "layout",
+     "file": "book-1-john/younger/02-layout.mp3",
+     "hash": "4089a08107d251110d79",
+     "seconds": 21.43,
+     "bytes": 129092
+    },
+    {
+     "id": "touched",
+     "file": "book-1-john/younger/03-touched.mp3",
+     "hash": "68b63102a8c18a6b8cc8",
+     "seconds": 26.27,
+     "bytes": 158180
+    },
+    {
+     "id": "marks",
+     "file": "book-1-john/younger/04-marks.mp3",
+     "hash": "92d94d16697bed67b475",
+     "seconds": 24.31,
+     "bytes": 146516
+    },
+    {
+     "id": "forgiven",
+     "file": "book-1-john/younger/05-forgiven.mp3",
+     "hash": "50dc197845baaf1933a9",
+     "seconds": 25.09,
+     "bytes": 151124
+    },
+    {
+     "id": "love",
+     "file": "book-1-john/younger/06-love.mp3",
+     "hash": "1af03d01d6bdbc620977",
+     "seconds": 22.18,
+     "bytes": 133700
+    },
+    {
+     "id": "start",
+     "file": "book-1-john/younger/07-start.mp3",
+     "hash": "555ca9ef93dccc9adc21",
+     "seconds": 19.88,
+     "bytes": 119876
+    }
+   ],
+   "older": [
+    {
+     "id": "shaken",
+     "file": "book-1-john/older/01-shaken.mp3",
+     "hash": "4756d580f2f0c5837d50",
+     "seconds": 26.03,
+     "bytes": 156740
+    },
+    {
+     "id": "layout",
+     "file": "book-1-john/older/02-layout.mp3",
+     "hash": "7caec76cafdf68982456",
+     "seconds": 24.59,
+     "bytes": 148100
+    },
+    {
+     "id": "touched",
+     "file": "book-1-john/older/03-touched.mp3",
+     "hash": "3213d741e44e782bf21a",
+     "seconds": 29.33,
+     "bytes": 176612
+    },
+    {
+     "id": "marks",
+     "file": "book-1-john/older/04-marks.mp3",
+     "hash": "74105dfe12705f66b9f6",
+     "seconds": 25.9,
+     "bytes": 156020
+    },
+    {
+     "id": "forgiven",
+     "file": "book-1-john/older/05-forgiven.mp3",
+     "hash": "2e877f7be54644fe912c",
+     "seconds": 28.23,
+     "bytes": 169988
+    },
+    {
+     "id": "love",
+     "file": "book-1-john/older/06-love.mp3",
+     "hash": "844c3fee533c7f2d5126",
+     "seconds": 25.35,
+     "bytes": 152708
+    },
+    {
+     "id": "start",
+     "file": "book-1-john/older/07-start.mp3",
+     "hash": "ed89e59607e65468a49a",
+     "seconds": 20.61,
+     "bytes": 124196
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

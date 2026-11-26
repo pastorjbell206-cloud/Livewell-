@@ -1105,6 +1105,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M16,40H84L50,18Z" />
     </>
   ),
+  /* 1 John: a lamp burning at night among stars, its flame gold. */
+  "book-1-john": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M20,24l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1ZM78,30l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1Z" />
+      <Shape d="M28,70c0,10 14,12 26,12c14,0 24,-4 26,-12l-8,-2c-10,-2 -30,-4 -44,2Z" tone="c" off={0.8} />
+      <path className="pl-m" d="M70,64c6,-8 8,-14 4,-22c-6,6 -10,12 -4,22Z" />
+      <path className="pl-l" d="M70,64c6,-8 8,-14 4,-22c-6,6 -10,12 -4,22ZM28,72c-10,-2 -10,10 2,6" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
