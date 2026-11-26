@@ -1,0 +1,129 @@
+{
+  "title": "Numbers: forty years in the wilderness",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Where Christians differ the old film's own sentences are kept nearly word for word. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-numbers",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "wilderness",
+      "kicker": "In the wilderness",
+      "level": 0.2,
+      "lines": [
+        "Numbers carries Israel from Sinai to the edge of the promised land. And it tells why a trip of a few weeks took about forty years.",
+        "It's honest about what can happen after a rescue. And it's just as honest about God, who stays with people who keep failing."
+      ],
+      "scripture": {
+        "reference": "Numbers 9:23",
+        "text": "They camped at the LORD’s command, and they set out at the LORD’s command",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Two counts frame the book. First the generation that left Egypt, counted at Sinai. Then their children, counted on the plains of Moab.",
+        "In between come the march, the complaints, the refusal at Kadesh, Balaam, and Peor."
+      ],
+      "scripture": {
+        "reference": "Numbers 14:31",
+        "text": "But I will bring your children",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "camp",
+      "kicker": "Watch for: God at the center",
+      "level": 0.5,
+      "lines": [
+        "The camp is arranged around God. The tribes on four sides, the Levites nearest, and God's tent at the center.",
+        "Then comes one of the oldest blessings in the Bible. It's God's own gift. The priests only speak it.",
+        "May the LORD bless you and keep you."
+      ],
+      "scripture": {
+        "reference": "Numbers 6:24",
+        "text": "May the LORD bless you and keep you",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "kadesh",
+      "kicker": "Watch for: the refusal",
+      "level": 0.7,
+      "lines": [
+        "Twelve scouts go into the land. All twelve agree it's good. Ten say it can't be taken.",
+        "The people hadn't miscounted the enemy. They had decided God couldn't be trusted. Moses pleads, God pardons, and still the refusal shapes the rest of their lives."
+      ],
+      "scripture": {
+        "reference": "Numbers 14:11",
+        "text": "How long will they refuse to believe in Me",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "balaam",
+      "kicker": "Watch for: a curse turned to blessing",
+      "level": 0.8,
+      "lines": [
+        "Balak of Moab hires a seer named Balaam to curse Israel. Four times he opens his mouth, and four times he can only bless.",
+        "His last oracle sees a star coming out of Jacob. Jewish readers before Jesus took it as a coming king, and Christians read it of Christ. Israel, down below, knows nothing about any of it."
+      ],
+      "scripture": {
+        "reference": "Numbers 24:17",
+        "text": "A star will come forth from Jacob",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "new",
+      "kicker": "Watch for: the new generation",
+      "level": 0.85,
+      "lines": [
+        "The second count shows the promise outliving the people who refused it. Five daughters ask for their father's share, and God says they speak correctly."
+      ],
+      "scripture": {
+        "reference": "Numbers 27:7",
+        "text": "The daughters of Zelophehad speak correctly.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "The hard pages",
+      "level": 0.55,
+      "lines": [
+        "The wars are hard pages, and Christians who receive this book as God's word read them in more than one way. On every reading, the commands were tied to one land and one time.",
+        "No one may use any page of this book as a reason for violence against anyone."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapters thirteen and fourteen. Then the key chapters: six, sixteen, twenty, twenty-one, twenty-four, and twenty-six.",
+        "Read the stories and the laws together, and watch Moses pray."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The book asks whether God can be trusted with what lies ahead."
+      ],
+      "titleCard": [
+        "Can God be trusted with what lies ahead?",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

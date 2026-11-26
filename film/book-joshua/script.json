@@ -1,0 +1,124 @@
+{
+  "title": "Joshua: a promise kept",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Where Christians differ the old film's own sentences are kept nearly word for word. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-joshua",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "promise",
+      "kicker": "The promised land",
+      "level": 0.2,
+      "lines": [
+        "Joshua opens where Deuteronomy ends. Moses is dead, and Israel is camped east of the Jordan.",
+        "Joshua's name means the LORD saves. In Greek, it's the same word as the name Jesus."
+      ],
+      "scripture": {
+        "reference": "Joshua 1:2",
+        "text": "cross over the Jordan into the land that I am giving to the children of Israel.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The book has four movements: entering, taking, dividing, and serving.",
+        "The long lists of towns and borders in the third part were title deeds. They say that God's promises land on the ground."
+      ],
+      "scripture": {
+        "reference": "Joshua 21:45",
+        "text": "Not one of all the LORD’s good promises to the house of Israel had failed",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "river",
+      "kicker": "Watch for: the river",
+      "level": 0.5,
+      "lines": [
+        "Watch the crossing. When the priests carrying the ark step into the flooded Jordan, the river stops.",
+        "It's the Red Sea again, for a generation that never saw the first one. And twelve stones are set up so that children will ask."
+      ],
+      "scripture": {
+        "reference": "Joshua 4:24",
+        "text": "so that all the peoples of the earth may know that the hand of the LORD is mighty",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "hard",
+      "kicker": "Watch for: the hardest chapters",
+      "level": 0.6,
+      "lines": [
+        "At Jericho and after, the book says whole cities were devoted to destruction at God's command, the young with the old.",
+        "Christians read this in more than one way, and none of them makes it easy. On every reading, it was tied to one land and one moment, and it was never renewed.",
+        "No one may use these chapters to justify violence against any person or people."
+      ]
+    },
+    {
+      "id": "belong",
+      "kicker": "Watch for: who belongs",
+      "level": 0.75,
+      "lines": [
+        "Watch who belongs. Rahab, a Canaanite, confesses Israel's God and is taken in with her family. Achan, an Israelite, steals from what was devoted to God and falls under the ban himself.",
+        "The line runs through faith, not birth."
+      ],
+      "scripture": {
+        "reference": "Joshua 2:11",
+        "text": "the LORD your God is God in the heavens above and on the earth below.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "choose",
+      "kicker": "Watch for: rest, and a choice",
+      "level": 0.9,
+      "lines": [
+        "In the end God gives rest on every side. At Shechem, old Joshua retells the whole story, from Abraham's family serving other gods to the gift of the land.",
+        "Only then comes the call.",
+        "Choose for yourselves this day whom you will serve.",
+        "The kindness comes first."
+      ],
+      "scripture": {
+        "reference": "Joshua 24:15",
+        "text": "choose for yourselves this day whom you will serve",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start at chapter one. Then the key chapters: two, three, six, seven, twenty-one, and twenty-four. Read the whole book, not only the battles.",
+        "Don't skip the hard chapters. And don't read them alone."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Joshua is the story of a promise kept.",
+        "For the LORD your God is with you wherever you go."
+      ],
+      "scripture": {
+        "reference": "Joshua 1:9",
+        "text": "for the LORD your God is with you wherever you go.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "A promise kept.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

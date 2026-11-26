@@ -1,0 +1,172 @@
+{
+ "length": 128.61,
+ "chapters": [
+  {
+   "id": "promise",
+   "kicker": "The promised land",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 15.92,
+   "lines": [
+    {
+     "text": "Joshua opens where Deuteronomy ends. Moses is dead, and Israel is camped east of the Jordan.",
+     "start": 2.6,
+     "end": 8.74
+    },
+    {
+     "text": "Joshua's name means the LORD saves. In Greek, it's the same word as the name Jesus.",
+     "start": 9.32,
+     "end": 15.02
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 15.12,
+   "end": 29.1,
+   "lines": [
+    {
+     "text": "The book has four movements: entering, taking, dividing, and serving.",
+     "start": 16.02,
+     "end": 20.96
+    },
+    {
+     "text": "The long lists of towns and borders in the third part were title deeds. They say that God's promises land on the ground.",
+     "start": 21.48,
+     "end": 28.2
+    }
+   ]
+  },
+  {
+   "id": "river",
+   "kicker": "Watch for: the river",
+   "level": 0.5,
+   "start": 28.3,
+   "end": 43.22,
+   "lines": [
+    {
+     "text": "Watch the crossing. When the priests carrying the ark step into the flooded Jordan, the river stops.",
+     "start": 29.2,
+     "end": 34.76
+    },
+    {
+     "text": "It's the Red Sea again, for a generation that never saw the first one. And twelve stones are set up so that children will ask.",
+     "start": 35.26,
+     "end": 42.32
+    }
+   ]
+  },
+  {
+   "id": "hard",
+   "kicker": "Watch for: the hardest chapters",
+   "level": 0.6,
+   "start": 42.42,
+   "end": 66.08,
+   "lines": [
+    {
+     "text": "At Jericho and after, the book says whole cities were devoted to destruction at God's command, the young with the old.",
+     "start": 43.32,
+     "end": 49.96
+    },
+    {
+     "text": "Christians read this in more than one way, and none of them makes it easy. On every reading, it was tied to one land and one moment, and it was never renewed.",
+     "start": 50.56,
+     "end": 60.02
+    },
+    {
+     "text": "No one may use these chapters to justify violence against any person or people.",
+     "start": 60.64,
+     "end": 65.18
+    }
+   ]
+  },
+  {
+   "id": "belong",
+   "kicker": "Watch for: who belongs",
+   "level": 0.75,
+   "start": 65.28,
+   "end": 82.42,
+   "lines": [
+    {
+     "text": "Watch who belongs. Rahab, a Canaanite, confesses Israel's God and is taken in with her family. Achan, an Israelite, steals from what was devoted to God and falls under the ban himself.",
+     "start": 66.18,
+     "end": 78.76
+    },
+    {
+     "text": "The line runs through faith, not birth.",
+     "start": 79.36,
+     "end": 81.52
+    }
+   ]
+  },
+  {
+   "id": "choose",
+   "kicker": "Watch for: rest, and a choice",
+   "level": 0.9,
+   "start": 81.62,
+   "end": 100.42,
+   "lines": [
+    {
+     "text": "In the end God gives rest on every side. At Shechem, old Joshua retells the whole story, from Abraham's family serving other gods to the gift of the land.",
+     "start": 82.52,
+     "end": 92.66
+    },
+    {
+     "text": "Only then comes the call.",
+     "start": 93.24,
+     "end": 94.58
+    },
+    {
+     "text": "Choose for yourselves this day whom you will serve.",
+     "start": 95.1,
+     "end": 97.64
+    },
+    {
+     "text": "The kindness comes first.",
+     "start": 98.3,
+     "end": 99.52
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 99.62,
+   "end": 115.68,
+   "lines": [
+    {
+     "text": "Start at chapter one. Then the key chapters: two, three, six, seven, twenty-one, and twenty-four. Read the whole book, not only the battles.",
+     "start": 100.52,
+     "end": 109.84
+    },
+    {
+     "text": "Don't skip the hard chapters. And don't read them alone.",
+     "start": 110.24,
+     "end": 114.78
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 114.88,
+   "end": 122.511,
+   "lines": [
+    {
+     "text": "Joshua is the story of a promise kept.",
+     "start": 115.78,
+     "end": 117.96
+    },
+    {
+     "text": "For the LORD your God is with you wherever you go.",
+     "start": 118.62,
+     "end": 121.611
+    }
+   ]
+  }
+ ]
+}
