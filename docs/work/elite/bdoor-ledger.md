@@ -24408,3 +24408,26 @@ Cut in chapter 63: the reading of the winepress as the cross, which the deep not
 | Jeremiah 18:6 (its second sentence); Psalm 79:1 (its clause) | 8-12 `later` | BSB | BSB text |
 
 Cut in chapter 64: the reading of Mark 1:10 as an answer to verse 1, which the deep note gives as what many interpreters hear, is left out.
+
+## The plain notes on Isaiah 65 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/65.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 65:1-7 (verses 1, 5 and 7 partly paraphrased around inner speech marks) | 1-7 | BSB | BSB text |
+| God's reply to 63:7 to 64:12; not hiding | 1-7 | isaiah/65.json `story` | Repository |
+| Gardens, brick altars, graves and secret places, pork; holier than you | 1-7 | isaiah/65.json `cultural` | Repository |
+| Dating; tensions in Ezra, Nehemiah, Malachi | 1-7 | isaiah/65.json `historical` | Repository |
+| Romans 10:20 (its clause), 10:21 (named); Romans 11 named | 1-7 `later` | BSB; isaiah/65.json `christ` | BSB text |
+| Paul's application to Israel; Romans 11:1-2; the remnant in verses 8 and 9 | 1-7 `hard` | BSB; isaiah/65.json `christ`; the brief | BSB text |
+| 65:8-16 (verse 8's saying paraphrased) | 8-16 | BSB | BSB text |
+| The cluster; servants singular then plural, seven times; Sharon, Achor, Achan, Hosea 2:15; Gad and Meni and the pun; the God of Amen | 8-16 | isaiah/65.json `cultural`, `words`, `historical` | Repository |
+| Hosea 2:15 (its clause); Joshua 7:24-26 (named) | 8-16 `later` | BSB | BSB text |
+| 65:17-25 | 17-25 | BSB | BSB text |
+| Bara three times; old curses undone; 11:6-9 and Genesis 3:14 | 17-25 | isaiah/65.json `words`, `literary` | Repository |
+| 2 Peter 3:13 (its clause); Revelation 21:1 (its clause) | 17-25 `later` | BSB; isaiah/65.json `christ` | BSB text |
+| Three readings of verse 20; the millennium as second order | 17-25 `hard` | isaiah/65.json `hard` | Repository |
+| The CHILDLOSS care line, byte for byte | 17-25 `hard` | carelines.json (from the site) | care.mjs |
+
+Cut in chapter 65: nothing. The hard note on Romans 10:21 follows the brief that judgment on Judah is never a reason to blame the Jewish people.
