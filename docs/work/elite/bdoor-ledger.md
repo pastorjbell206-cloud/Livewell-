@@ -24512,3 +24512,19 @@ Cut in chapter 1: the deep note's lines to Christ the New Testament does not dra
 | Hosea 2:15, Psalm 115:8, Isaiah 30:2, 1 John 1:8, Ezekiel 29:6 (clauses); Psalm 80:8 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 2: John 4 and John 7 on living water, which the New Testament does not tie to 2:13; a claim about the word for worthless and a clause about the law on thieves, both unsourced, cut before commit.
+
+## The plain notes on Jeremiah 3 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1-25 (verses 1, 19 and 22 partly paraphrased around inner speech marks) | all | BSB | BSB text |
+| Deuteronomy 24:1-4; spring rains; Baal and rain; Josiah about 640 to 609; 722 BC; Bethel; pretense | 1-10 | jeremiah/3.json `cultural`, `historical` | Repository |
+| The feminist objection and the answer; the whole nation and its male leaders | 1-10 `hard` | jeremiah/3.json `hard` | Repository |
+| The city-and-covenant statement; the abusive-marriage care line, byte for byte | 1-10 `hard` | the coordinator's direction; hosea/plain/2.json | care.mjs |
+| Call to the north; shuv; man after God's heart; the ark disappearing | 11-18 | jeremiah/3.json `historical`, `christ` | Repository |
+| Boshet for Baal, Eshbaal and Ish-bosheth | 19-25 | jeremiah/3.json `cultural` | Repository |
+| Deuteronomy 24:4, 2 Kings 23:15 (named), 1 Samuel 13:14, Isaiah 2:2, Hosea 14:2, Luke 15:21 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 3: John 10:11 and the deep note's other lines to Christ, which the New Testament does not draw from this chapter.
