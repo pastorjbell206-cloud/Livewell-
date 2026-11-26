@@ -21436,3 +21436,19 @@ Cut in chapter 4: nothing drawn to the New Testament. The refrain of 4:6 to 4:11
 | The hard note: rejection of the whole system or of worship without obedience; the scholars who saw opposition in principle; most interpreters and the other prophets; 5:25 read two ways; worship no substitute for justice | 18-27 `hard` | amos/5.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 5: the deep note's lines to Matthew 23:23, Matthew 9:13 and 1 Thessalonians 5:2, which the New Testament does not draw from this chapter.
+
+## The plain notes on Amos 6 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1 (its first clause); 6:2-3 paraphrased; 6:4; 6:5 paraphrased; 6:6; 6:7 paraphrased | 1-7 | BSB | BSB text |
+| Hoy as the cry over the dead; Zion and Samaria; 6:2 read three ways and possibly updated; the Samaria ivories; meat as a rare luxury; bowls and oils; marzeah at Ugarit and its mourning links; foremost, finest and first from one root | 1-7 | amos/6.json `literary`, `historical`, `cultural` | Repository; the readings in their holders' terms |
+| 1 Kings 22:39; Jeremiah 16:5 (paraphrased, with the BSB's funeral meal) | 1-7 | amos/6.json `cultural` | Repository |
+| The hard note: feasts, wine, oil and music as gifts (Psalm 104:15, its clause); David's music; injustice, complacency and indifference; two emphases; enjoyment that blinds | 1-7 `hard` | amos/6.json `hard`; BSB | Repository; BSB text; both emphases in their holders' terms |
+| 6:8-13 paraphrased (6:10's and 6:13's inner quotations not quoted); 6:14 (its last clause) | 8-14 | BSB | BSB text |
+| The oath by himself; the scene after siege or plague, named not dwelt on; hushed from naming the LORD; the absurd questions; Lo-debar and Karnaim as Nothing and Horns, towns won back from Aram; 2 Kings 14:25 turned into a threat; Assyria and Tiglath-pileser III from about 745; 722 BC | 8-14 | amos/6.json `cultural`, `literary`, `historical` | Repository |
+| 2 Kings 14:25 (its clause) | 8-14 | BSB | BSB text |
+
+Cut in chapter 6: nothing drawn to the New Testament. The scene of 6:9-10 is named and not dwelt on.
