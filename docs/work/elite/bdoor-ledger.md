@@ -24796,3 +24796,30 @@ Cut in chapter 65: nothing. The hard note on Romans 10:21 follows the brief that
 | Why the book ends this way; three Christian readings | 15-24 `hard` | isaiah/66.json `hard` | Repository |
 
 Cut in chapter 66: John 16:21 and Galatians 4:26, which the deep note calls thematic echoes, and Romans 15:8-12 are left out.
+
+## Ezekiel's book page (teaching introduction, 2026-11-26)
+
+Every claim in `client/public/bible/notes/ezekiel/intro.json`, field `teaching`. No web searches. Scripture is the BSB in the repository, matched by the four quotation checks (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| A priest who never served; 597 BC with Jehoiachin; the Kebar; 1:1 (its phrase); twenty years; the false hope; the two tasks; the refrain more than sixty times; 6:7 (its clause) | in-a-minute | ezekiel/intro.json `overview`; BSB | Repository; BSB text |
+| Nebuchadnezzar II; 597 BC; Tel-abib (3:15); houses and elders; Zedekiah and Egypt; Jeremiah; January 588 BC (24:1, the usual reckoning); 587 or 586 BC; about January 585 BC (33:21); Tyre and Egypt | story | ezekiel/intro.json `setting`; ezekiel/24.json, 33.json `historical` | Repository |
+| 1:3 (its phrase); first person and dates; the Talmud's line and its usual reading; the critical views; Zimmerli and Greenberg; 593, 573 and 571 BC; the thirtieth year | who | ezekiel/intro.json `author`, `date` | Repository; each view in its holders' terms |
+| The four parts; the kinds of writing; the cautious language of the visions; the glory's movement (1; 10-11; 43:1-5) | built | ezekiel/intro.json `structure`, `reading` | Repository |
+| The first vision; 1:28 (its sentence); the wheeled throne; 2:3 (its phrase); the scroll; 3:17 (its clause) | glory | ezekiel/1.json to 3.json; BSB | Repository; BSB text |
+| The sign-acts of chapters 4, 5 and 12; the idolatry of chapter 8; the glory's departure; 11:19 (its clause) | signs | ezekiel/4.json, 5.json, 8.json, 10.json, 11.json, 12.json; BSB | Repository; BSB text |
+| Chapters 16 and 23 described without graphic detail; a picture of a city and a covenant; the two scholarly weighings, as in Hosea 2; no warrant to harm any woman; 16:60 paraphrased | allegories | ezekiel/16.json, 23.json `hard`; hosea/plain/2.json; the coordinator's brief | Repository; stated as the brief asks |
+| The proverb; 18:20 (its first two sentences); three generations; 18:23; 18:32 (in double quotes); no suffering read as deserved | responsibility | ezekiel/18.json; BSB; the coordinator's brief | Repository; BSB text |
+| The nations of chapters 25 to 32; pride; no model for revenge; 29:18 paraphrased | nations | ezekiel/25.json to 32.json; BSB | Repository; BSB text |
+| 33:21 (its report); 34:11 (its clause); 34:23 (its phrase); 36:22 (its phrase); 36:26; 37:3 (its question); 37:11 (its clause); the resurrection as a reading | restoration | ezekiel/33.json to 37.json; BSB; the coordinator's brief | Repository; BSB text |
+| Gog of Magog summarized; seven years and seven months; the historical, futurist and symbolic readings; Revelation 20:8; no modern nation, person, event or date | gog | ezekiel/38.json, 39.json `hard`; BSB; the coordinator's brief | Repository; the site takes no side |
+| About 573 BC; the measuring; 43:4; the laws; the river; 47:9 (its clause); 48:35 (its name); the future-temple, symbolic and fulfilled-in-Christ readings; no claim about any modern state, temple or border | temple | ezekiel/40.json, 43.json, 47.json, 48.json `hard`; BSB; the coordinator's brief | Repository; the site takes no side |
+| Revelation 4; 10:9-10; 20:8; 21:10-12; 22:1-2 (its phrase); 2 Corinthians 6:16; John 10:11 and the others given as readings | new-testament | ezekiel/intro.json `christ`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read | readers | ezekiel/intro.json `reading` | Repository |
+| Hard passages (16) and key words (15): from the chapter notes | lists | ezekiel/1.json to 48.json | Repository |
+| Timeline (8): 597; 593; 592; 588; 587 or 586; 585; 573; 571 | timeline | ezekiel/intro.json `date`; ezekiel/8.json, 24.json, 33.json `historical` | Repository |
+| Two maps: Babylon at its ruins near Hillah (about 32.54 N, 44.42 E, a location the coordinator supplied on 2026-11-26, since the repository placed it nowhere), Jerusalem and Tyre on `fertile-crescent`; Jerusalem, Samaria (a region), Sodom, Tyre, Sidon and Damascus on `canaan`, at points the site's maps already use | map | the site's points; the coordinator | No borders; the rest left off |
+| Go deeper: nine pages | deeper | bible/guides (reading-prophets, reading-apocalyptic, empires, kings-of-israel-and-judah); bible/doctrines.json (The Glory of God; Exile and Restoration; Tabernacle, Temple, and God's Presence; New Birth); /help/abuse | Repository; every page live |
+
+Cut from the book page: John 7:37-39 and John 1:14 as fulfillments of Ezekiel, which the New Testament does not draw from Ezekiel (left out, with John 10 kept only as a reading).
