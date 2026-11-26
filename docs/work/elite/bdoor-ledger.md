@@ -23150,3 +23150,25 @@ Cut in chapter 20: nothing. No care line is needed in this chapter.
 | Tarshish left off: disputed, Tartessus in Spain, Sardinia and other western sites | jonah `teaching.mapNote` | jonah/intro.json `setting` | Repository; no side chosen |
 
 Both maps moved from the `canaan` frame to `fertile-crescent`, and `teaching.test.tsx` says so.
+
+## Habakkuk's book page (teaching introduction, 2026-11-26)
+
+Every claim in `client/public/bible/notes/habakkuk/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the four quotation checks (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Eighth of the Twelve; three chapters; the prophet's questions to God; 1:2; the Chaldeans; the second question; the watchtower; 2:4; five woes; 2:20; 3:18 | in-a-minute | habakkuk/intro.json `overview`; BSB | Repository; BSB text |
+| Assyria's fall 612 to 609 BC; Josiah at Megiddo 609; Carchemish 605 and Nebuchadnezzar; vassal Judah; Josiah's sons; 597 and 587 or 586 BC; beside Jeremiah and Nahum | story | habakkuk/intro.json `setting` | Repository |
+| Habakkuk the prophet (1:1; 3:1); no father or town; the temple role as inference; Bel and the Dragon, not historical; one prophet, chapter 3 perhaps separate; the Chaldeans rising (1:6); Jehoiakim about 609 to 598 BC (also the guide); late Josiah (1:5); some after 597 | who | habakkuk/intro.json `author`, `date`; bible/guides/kings-of-israel-and-judah.json (the prophets table: about 609 to 598; Jehoiakim's row: probably Habakkuk) | Repository; each view in its holders' terms |
+| Dialogue and psalm; the speakers; Selah and the choirmaster; storm and exodus language; God never rebukes him | built | habakkuk/intro.json `reading` | Repository |
+| 1:2 (its clause); 1:4 (its first clause); 1:6 (its clause); 1:13 (its first clause); the fisherman and his net; the answers (Isaiah 10, the warnings, human responsibility, mystery) | questions | habakkuk/1.json `hard`, `summary`; BSB | Repository; BSB text; the readings in their holders' terms |
+| 2:1; tablets and a runner; 2:3 (its clause); 2:4 (in two parts, around its dashes); emunah as faithfulness; the five woes; 2:14; 2:20 | faith | habakkuk/2.json `literary`, `cultural`, `hard`; BSB | Repository; BSB text |
+| 3:2 (its last sentence); Teman and Paran; storm and exodus pictures; the trembling and waiting; 3:17; 3:18; not a denial of loss | prayer | habakkuk/3.json `literary`, `historical`; BSB | Repository; BSB text |
+| Romans 1:17; Galatians 3:11; Hebrews 10:38; the debate over faith and faithfulness and whose; Acts 13:41 with 1:5; only these lines | new-testament | habakkuk/intro.json `christ`; habakkuk/2.json `hard`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: the conversation; 2:4 in its setting; chapter 3 | readers | habakkuk/intro.json `reading` | Repository |
+| Hard passages (6) and key words (11): from the chapter notes' hard questions, `cultural` (Shigionoth and Selah uncertain) and `words` | lists | habakkuk/1.json to 3.json | Repository |
+| Timeline (7): 626, 612, 609, about 609 to 598 (the guide), 605, 597, 587 or 586 | timeline | habakkuk/intro.json `date`, `setting`; bible/guides/kings-of-israel-and-judah.json | Repository |
+| The map: Jerusalem, at the point this site's maps use, for the temple of 2:20, with the note that Habakkuk does not name the city | map | the points already used on the site's maps; BSB (2:20) | Repository; Teman, Paran, Cushan, Midian, Lebanon and Babylon left off and the note says so; no borders |
+| Go deeper: nine pages | deeper | bible/guides/reading-prophets.json, empires.json, kings-of-israel-and-judah.json; bible/doctrines.json (Faith and Faithfulness; Justification; Suffering and Evil; Prayer and Lament); the lament study guide; needs/suffering.json (page: true) | Repository; every page live |
+
+Cut from the book page: the introduction's line that the book's question is answered at the cross, which the New Testament does not draw from Habakkuk. 1:2's inner cry is paraphrased.
