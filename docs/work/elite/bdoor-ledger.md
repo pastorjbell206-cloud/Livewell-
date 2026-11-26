@@ -22033,3 +22033,22 @@ Cut in chapter 3: the deep note's line to Christ (the resurrection of Christ as 
 | Genesis 41:14 (its first sentence) | 13-16 | the chapter data's cross-references for 4:14 (Genesis 41:14); BSB | Repository; BSB text |
 
 Cut in chapter 4: the deep note's lines to Christ (the Spirit as the Comforter, John's Gospel, and Jesus' blessing on those who mourn beside verse 1; the disciples sent two by two and the church as a body beside verses 9-12; the note calls them connections of theme).
+
+## The plain notes on Ecclesiastes 5 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1; 5:2; 5:3; 5:4; 5:5; 5:6 paraphrased; 5:7 | 1-7 | BSB | BSB text |
+| The Hebrew numbering (4:17); the first direct commands; the sacrifice of fools and the prophets; to listen as to obey; vows freely made and binding; Deuteronomy 23:21-23; the messenger as priest or temple official (Malachi 2:7), or an angel; dreams and words paired; ‘fear God’ | 1-7 | ecclesiastes/5.json `story`, `cultural`, `literary`, `words` (nadar, yare) | Repository; each reading in its holders' terms |
+| Deuteronomy 23:22 (from ‘if you refrain’); James 1:19 (from ‘Everyone’) | 1-7 | ecclesiastes/5.json `cultural` (Deuteronomy 23:21-23); the chapter data's cross-references for 5:1 (James 1:19); BSB | Repository; BSB text |
+| 5:8 (its last clause; the first paraphrased); 5:9 paraphrased; 5:10; 5:11 paraphrased; 5:12; 5:13 (its clause); 5:14 paraphrased; 5:15 | 8-17 | BSB | BSB text |
+| Medinah in the Persian period (Esther, Ezra, Nehemiah) and in Ahab's story (1 Kings 20:14-19); the bureaucracy reading and Solomon's districts (1 Kings 4:7-19); the farmer's lack of recourse; the worker's sleep and the guarded goods; verse 15 echoing Job 1:21 | 8-17 | ecclesiastes/5.json `historical`, `cultural` | Repository; each reading in its holders' terms |
+| Job 1:21 (Job's first sentence); 1 Timothy 6:7 | 8-17 | ecclesiastes/5.json `cultural` (Job 1:21; 1 Timothy 6:7); BSB | Repository; BSB text |
+| The hard note: weary realism or partial reassurance; verse 9's difficult Hebrew; not approving oppression (4:1; 12:14); not naive about power | 8-17 `hard` | ecclesiastes/5.json `hard` | Repository; each reading in its holders' terms |
+| 5:18 (before its dash); riches enjoyed (5:19) paraphrased, its last sentence quoted; 5:20 | 18-20 | BSB | BSB text |
+| The counterweight; cheleq; verse 20's two readings; chapter 6's darker case | 18-20 | ecclesiastes/5.json `story`, `literary`, `words` (cheleq) | Repository; each reading in its holders' terms |
+| 1 Timothy 6:17 (its last clause); Deuteronomy 8:18 (its first clause) | 18-20 | the chapter data's cross-references for 5:18 (1 Timothy 6:17) and 5:19 (Deuteronomy 8:18); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (Matthew 6:7, 5:33-37 and James 5:12 beside verses 2-6; the rich fool and Matthew 6:19-21 beside verses 13-17; Mark 9:7 and listening to the Son; the note calls them thematic). No care line is needed in this chapter.
