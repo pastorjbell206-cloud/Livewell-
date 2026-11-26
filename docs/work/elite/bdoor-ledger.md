@@ -21934,3 +21934,22 @@ Cut in chapter 14: nothing beyond the policy on lines to Christ. No care line is
 | The hard note: the prophet's or God's grief; the formal dirge; genuine grief; no leave to rejoice over any people's suffering | 5-9 `hard` | isaiah/15.json `hard`; the brief | Repository; each reading in its holders' terms |
 
 Cut in chapter 15: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 16 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 16:1-5 | 1-5 | BSB | BSB text |
+| Mesha's tribute (2 Kings 3:4); Sela; the Arnon fords; the throne in loving devotion | 1-5 | isaiah/16.json `historical`, `story` | Repository |
+| Ruth 1:16; Amos 9:11; Acts 15:16 | 1-5 `later` | BSB | BSB text |
+| 16:6-12 | 6-12 | BSB | BSB text |
+| Moab's pride; vineyards and raisin cakes; the silent harvest; the weeping prophet | 6-12 | isaiah/16.json `summary`; isaiah/15.json `cultural` | Repository |
+| Jeremiah 48:29 | 6-12 `later` | BSB | BSB text |
+| 16:13-14 | 13-14 | BSB | BSB text |
+| The older word and the timetable; Sennacherib's 701 list; Sargon II 715 to 711; Moab fading | 13-14 | isaiah/16.json `historical`; isaiah/15.json `historical` | Repository |
+| Jeremiah 48:47 (its two-word clause; first typed inexactly, caught and corrected) | 13-14 `later` | BSB | BSB text |
+| The hard note: the three years unidentifiable; the readings; prophetic words applied again | 13-14 `hard` | isaiah/16.json `hard` | Repository |
+
+Cut in chapter 16: nothing. No care line is needed in this chapter.
