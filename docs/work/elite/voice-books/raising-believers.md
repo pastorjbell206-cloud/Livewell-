@@ -8,7 +8,7 @@ Raising Believers is pastoral prose for parents, in long built sentences, with 5
 
 What an edit may be: an em-dash recast as a comma, a semicolon, a colon before a real list or a gloss, or brackets; a stack of fragments joined into one sentence where no new word is needed. Nothing else: no word was added, removed or replaced, and no sentence, fact, example or opinion was added or taken out. Edits are exact old/new pairs, each required to match once in the chapter's file, applied to the original text every time (`git diff 7168d7e6 -- content/books-src/raising-believers/` shows every change). One commit per chapter. In the tables an "edit" is one changed paragraph, which may hold several dashes.
 
-**How the dashes were worked, and what that means.** Unlike the first four books, the chapters were not each read whole before editing. Every long dash in his running prose was given a recast by one fixed rule: a pair of dashes around an aside became commas, or brackets where the aside itself holds a comma or a question; a single dash before "and", "but", "which", "because", "not" and the like became a comma; before an independent clause, a semicolon; before a list, a colon; otherwise a comma. Each proposal was then read in its sentence, and where the rule chose wrongly it was overridden (57 overrides in this book). The fact diff below is what proves nothing but punctuation moved.
+**How the dashes were worked, and what that means.** Unlike the first four books, the chapters were not each read whole before editing. Every long dash in his running prose was given a recast by one fixed rule: a pair of dashes around an aside became commas, or brackets where the aside itself holds a comma or a question; a single dash before "and", "but", "which", "because", "not" and the like became a comma; before an independent clause, a semicolon; before a list, a colon; otherwise a comma. Each proposal was then read in its sentence, and where the rule chose wrongly it was overridden (58 overrides in this book). The fact diff below is what proves nothing but punctuation moved.
 
 **Children and discipline.** The book speaks to parents about children, discipline, spanking, screens, single parenthood and children who leave the faith. Nothing in it was softened or sharpened: every counsel about discipline and correction, every word about spanking, and every line to a grieving parent took punctuation only, and the fact diff holds every hedge word in place.
 
@@ -24,26 +24,26 @@ Three scripts, kept outside the repo in `/home/user/vs5/t/` (`apply.py`, `factdi
 
 | Chapter | Words before | after | change | Em-dashes before (per 1,000) | after | Tells before (per 1,000) | after | Edits | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|
-| Introduction: The Faith You Cannot Transmit | 3,582 | 3,582 | +0.0% | 34 (9.5) | 0 (0.0) | 86 (24.0) | 46 (12.8) | 28 | PASS |
+| Introduction: The Faith You Cannot Transmit | 3,582 | 3,582 | +0.0% | 34 (9.5) | 0 (0.0) | 86 (24.0) | 46 (12.8) | 29 | PASS |
 | Chapter One: What We Mean When We Say Formation | 3,666 | 3,666 | +0.0% | 41 (11.2) | 0 (0.0) | 88 (24.0) | 50 (13.6) | 29 | PASS |
-| Chapter Two: The Home Is the Primary Catechism | 3,376 | 3,376 | +0.0% | 34 (10.1) | 0 (0.0) | 78 (23.1) | 46 (13.6) | 23 | PASS |
+| Chapter Two: The Home Is the Primary Catechism | 3,376 | 3,376 | +0.0% | 34 (10.1) | 0 (0.0) | 78 (23.1) | 46 (13.6) | 24 | PASS |
 | Chapter Three: When the Church Replaces the Parent | 3,045 | 3,045 | +0.0% | 28 (9.2) | 0 (0.0) | 74 (24.3) | 48 (15.8) | 27 | PASS |
 | Chapter Four: The Questions Children Actually Ask | 3,883 | 3,883 | +0.0% | 48 (12.4) | 0 (0.0) | 104 (26.8) | 57 (14.7) | 38 | PASS |
 | Chapter Five: Obedience Without Gospel | 2,777 | 2,777 | +0.0% | 26 (9.4) | 0 (0.0) | 65 (23.4) | 41 (14.8) | 23 | PASS |
 | Chapter Six: Discipline, Correction, and the Shape of Grace | 3,051 | 3,051 | +0.0% | 44 (14.4) | 0 (0.0) | 89 (29.2) | 45 (14.7) | 28 | PASS |
 | Chapter Seven: Screens, Algorithms, and the Catechesis of Attention | 2,937 | 2,937 | +0.0% | 28 (9.5) | 0 (0.0) | 65 (22.1) | 37 (12.6) | 22 | PASS |
 | Chapter Eight: Marriage as the First Classroom | 3,597 | 3,597 | +0.0% | 41 (11.4) | 0 (0.0) | 91 (25.3) | 52 (14.5) | 28 | PASS |
-| Chapter Nine: The Teenage Years, When Formation Goes Underground | 3,250 | 3,250 | +0.0% | 46 (14.2) | 0 (0.0) | 90 (27.7) | 47 (14.5) | 26 | PASS |
+| Chapter Nine: The Teenage Years, When Formation Goes Underground | 3,250 | 3,250 | +0.0% | 46 (14.2) | 0 (0.0) | 90 (27.7) | 47 (14.5) | 29 | PASS |
 | Chapter Ten: Fathers, Presence, and the Weight of Blessing | 3,298 | 3,298 | +0.0% | 38 (11.5) | 0 (0.0) | 68 (20.6) | 30 (9.1) | 24 | PASS |
-| Chapter Eleven: Single Parents, Blended Families, and the God Who Holds | 2,296 | 2,296 | +0.0% | 27 (11.8) | 0 (0.0) | 61 (26.6) | 34 (14.8) | 19 | PASS |
+| Chapter Eleven: Single Parents, Blended Families, and the God Who Holds | 2,296 | 2,296 | +0.0% | 27 (11.8) | 1 (0.4) | 61 (26.6) | 35 (15.2) | 19 | PASS |
 | Chapter Twelve: Grandparents and the Long Memory of Faith | 2,648 | 2,648 | +0.0% | 35 (13.2) | 0 (0.0) | 72 (27.2) | 38 (14.4) | 22 | PASS |
-| Chapter Thirteen: When They Walk Away | 2,776 | 2,776 | +0.0% | 31 (11.2) | 0 (0.0) | 73 (26.3) | 44 (15.9) | 23 | PASS |
-| Conclusion: The Long Obedience of Raising Believers | 1,202 | 1,202 | +0.0% | 15 (12.5) | 0 (0.0) | 39 (32.4) | 23 (19.1) | 12 | PASS |
-| **All 15** | 45,384 | 45,384 | +0.0% | 516 (11.4) | 0 (0.0) | 1143 (25.2) | 638 (14.1) | 372 | |
+| Chapter Thirteen: When They Walk Away | 2,776 | 2,776 | +0.0% | 31 (11.2) | 0 (0.0) | 73 (26.3) | 44 (15.9) | 24 | PASS |
+| Conclusion: The Long Obedience of Raising Believers | 1,202 | 1,202 | +0.0% | 15 (12.5) | 0 (0.0) | 39 (32.4) | 23 (19.1) | 13 | PASS |
+| **All 15** | 45,384 | 45,384 | +0.0% | 516 (11.4) | 1 (0.0) | 1143 (25.2) | 639 (14.1) | 379 | |
 
 ## Introduction: The Faith You Cannot Transmit (`sec01.xhtml`)
 
-Words 3,582 to 3,582. Em-dashes in his prose 34 to 0 (9.5 to 0.0 per 1,000 words). Tells 86 to 46 (24.0 to 12.8 per 1,000). Mean sentence 26.7 words to 27.3; sentences of eight words or fewer 17.9% to 15.3%; of five or fewer 11.9% to 9.2%. 28 edits; paragraphs 37 to 37. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 2 to 0.
+Words 3,582 to 3,582. Em-dashes in his prose 34 to 0 (9.5 to 0.0 per 1,000 words). Tells 86 to 46 (24.0 to 12.8 per 1,000). Mean sentence 26.7 words to 27.3; sentences of eight words or fewer 17.9% to 15.3%; of five or fewer 11.9% to 9.2%. 29 edits; paragraphs 37 to 37. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 2 to 0.
 
 By kind (before to after): emdash 34 to 0, not_but 12 to 12, NotX.Y 5 to 2, isnt_its 5 to 5, triplet 11 to 11, frag3 2 to 0, anaphora 6 to 5, stock 2 to 2, intens 3 to 3, colon_reveal 2 to 3, short_close 4 to 3.
 
@@ -87,7 +87,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter Two: The Home Is the Primary Catechism (`sec03.xhtml`)
 
-Words 3,376 to 3,376. Em-dashes in his prose 34 to 0 (10.1 to 0.0 per 1,000 words). Tells 78 to 46 (23.1 to 13.6 per 1,000). Mean sentence 24.8 words to 24.8; sentences of eight words or fewer 20.6% to 20.6%; of five or fewer 11.8% to 11.8%. 23 edits; paragraphs 32 to 32. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 3,376 to 3,376. Em-dashes in his prose 34 to 0 (10.1 to 0.0 per 1,000 words). Tells 78 to 46 (23.1 to 13.6 per 1,000). Mean sentence 24.8 words to 24.8; sentences of eight words or fewer 20.6% to 20.6%; of five or fewer 11.8% to 11.8%. 24 edits; paragraphs 32 to 32. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 34 to 0, not_but 9 to 9, NotX.Y 3 to 3, isnt_its 5 to 5, triplet 12 to 14, anaphora 2 to 2, stock 2 to 2, intens 1 to 1, colon_reveal 2 to 2, short_close 8 to 8.
 
@@ -241,7 +241,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter Nine: The Teenage Years, When Formation Goes Underground (`sec10.xhtml`)
 
-Words 3,250 to 3,250. Em-dashes in his prose 46 to 0 (14.2 to 0.0 per 1,000 words). Tells 90 to 47 (27.7 to 14.5 per 1,000). Mean sentence 28.5 words to 28.5; sentences of eight words or fewer 22.8% to 22.8%; of five or fewer 15.8% to 15.8%. 26 edits; paragraphs 32 to 32. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 3,250 to 3,250. Em-dashes in his prose 46 to 0 (14.2 to 0.0 per 1,000 words). Tells 90 to 47 (27.7 to 14.5 per 1,000). Mean sentence 28.5 words to 28.5; sentences of eight words or fewer 22.8% to 22.8%; of five or fewer 15.8% to 15.8%. 29 edits; paragraphs 32 to 32. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 46 to 0, not_but 13 to 13, not_just 1 to 1, NotX.Y 4 to 4, isnt_its 3 to 3, triplet 10 to 13, anaphora 4 to 4, stock 1 to 1, intens 2 to 2, short_close 6 to 6.
 
@@ -285,9 +285,9 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter Eleven: Single Parents, Blended Families, and the God Who Holds (`sec12.xhtml`)
 
-Words 2,296 to 2,296. Em-dashes in his prose 27 to 0 (11.8 to 0.0 per 1,000 words). Tells 61 to 34 (26.6 to 14.8 per 1,000). Mean sentence 31.5 words to 31.5; sentences of eight words or fewer 21.9% to 21.9%; of five or fewer 15.1% to 15.1%. 19 edits; paragraphs 26 to 26. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
+Words 2,296 to 2,296. Em-dashes in his prose 27 to 1 (11.8 to 0.4 per 1,000 words). Tells 61 to 35 (26.6 to 15.2 per 1,000). Mean sentence 31.5 words to 31.5; sentences of eight words or fewer 21.9% to 21.9%; of five or fewer 15.1% to 15.1%. 19 edits; paragraphs 26 to 26. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
 
-By kind (before to after): emdash 27 to 0, not_but 10 to 10, NotX.Y 1 to 1, isnt_its 3 to 3, triplet 12 to 12, intens 3 to 3, q_answered 1 to 1, short_close 3 to 3, one_line_para 1 to 1.
+By kind (before to after): emdash 27 to 1, not_but 10 to 10, NotX.Y 1 to 1, isnt_its 3 to 3, triplet 12 to 12, intens 3 to 3, q_answered 1 to 1, short_close 3 to 3, one_line_para 1 to 1.
 
 Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 0 quoted strings, 1 Scripture references, 0 years, 1 numbers in digits, 38 number words, proper names by count, and 45 hedge words (after: 45) compared.
 
@@ -299,8 +299,8 @@ Five pairs, taken at even intervals through the chapter:
    After: The single parent carries more of it: the economic weight, the emotional weight, the logistical weight, the spiritual weight, all of it, and carries it without the partner who was supposed to share the load.
 3. Before: The household still has a catechism — what it praises, what it worries about, what it repeats, what it rests in — and the added complication is that the child may be absorbing two catechisms, one from each home, and the two may contradict.
    After: The household still has a catechism (what it praises, what it worries about, what it repeats, what it rests in) and the added complication is that the child may be absorbing two catechisms, one from each home, and the two may contradict.
-4. Before: If you are a single mother, your son needs godly men in his life — not a replacement father, a presence, a man who can take him fishing, teach him to change a tire, be the male image of God the household does not currently hold; and if you are a single father, your daughter needs godly women, not a replacement mother, but women who can speak into her life in the ways only women can. Look for these people in your church, ask your pastor to help you find them, and if your church cannot provide them, find a church that can — because your children's formation depends partly on the community around them, and building that community is among the most important things you can do.
-   After: If you are a single mother, your son needs godly men in his life, not a replacement father, a presence, a man who can take him fishing, teach him to change a tire, be the male image of God the household does not currently hold; and if you are a single father, your daughter needs godly women, not a replacement mother, but women who can speak into her life in the ways only women can. Look for these people in your church, ask your pastor to help you find them, and if your church cannot provide them, find a church that can, because your children's formation depends partly on the community around them, and building that community is among the most important things you can do.
+4. Before: Many single parents resist it, feeling they should manage alone and that to accept help is to admit defeat — but it is not defeat, it is wisdom, because God designed the body of Christ to share burdens.
+   After: Many single parents resist it, feeling they should manage alone and that to accept help is to admit defeat, but it is not defeat, it is wisdom, because God designed the body of Christ to share burdens.
 5. Before: It was forged — in the fire of raising three children alone while trusting a God she could not see to hold what she could not carry.
    After: It was forged, in the fire of raising three children alone while trusting a God she could not see to hold what she could not carry.
 
@@ -329,7 +329,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter Thirteen: When They Walk Away (`sec14.xhtml`)
 
-Words 2,776 to 2,776. Em-dashes in his prose 31 to 0 (11.2 to 0.0 per 1,000 words). Tells 73 to 44 (26.3 to 15.9 per 1,000). Mean sentence 27.5 words to 27.5; sentences of eight words or fewer 18.8% to 18.8%; of five or fewer 12.9% to 12.9%. 23 edits; paragraphs 31 to 31. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
+Words 2,776 to 2,776. Em-dashes in his prose 31 to 0 (11.2 to 0.0 per 1,000 words). Tells 73 to 44 (26.3 to 15.9 per 1,000). Mean sentence 27.5 words to 27.5; sentences of eight words or fewer 18.8% to 18.8%; of five or fewer 12.9% to 12.9%. 24 edits; paragraphs 31 to 31. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
 
 By kind (before to after): emdash 31 to 0, not_but 7 to 7, NotX.Y 2 to 2, isnt_its 6 to 6, triplet 15 to 17, frag3 1 to 1, anaphora 1 to 1, stock 1 to 1, intens 3 to 3, short_close 6 to 6.
 
@@ -342,7 +342,7 @@ Five pairs, taken at even intervals through the chapter:
 2. Before: There is the child using unbelief as a permission slip — the one who has not examined the faith and found it wanting, but found it inconvenient and built a rationale for setting it aside.
    After: There is the child using unbelief as a permission slip, the one who has not examined the faith and found it wanting, but found it inconvenient and built a rationale for setting it aside.
 3. Before: That is the pattern, and in its structure it is not complicated — let go, watch, and run to them when they turn — but in its execution it is brutal, because the watching is what breaks you.
-   After: That is the pattern, and in its structure it is not complicated (let go, watch, and run to them when they turn) but in its execution it is brutal, because the watching is what breaks you.
+   After: That is the pattern, and in its structure it is not complicated (let go, watch, and run to them when they turn), but in its execution it is brutal, because the watching is what breaks you.
 4. Before: Prepare yourself, too, for the possibility that you may not see the return in this life — it is a hard thing to say, and I say it only because it is true.
    After: Prepare yourself, too, for the possibility that you may not see the return in this life; it is a hard thing to say, and I say it only because it is true.
 5. Before: The children of God grieve with hope, which means you are not grieving wrong — you are grieving because you love.
@@ -351,7 +351,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Conclusion: The Long Obedience of Raising Believers (`sec15.xhtml`)
 
-Words 1,202 to 1,202. Em-dashes in his prose 15 to 0 (12.5 to 0.0 per 1,000 words). Tells 39 to 23 (32.4 to 19.1 per 1,000). Mean sentence 18.8 words to 19.7; sentences of eight words or fewer 31.2% to 27.9%; of five or fewer 17.2% to 13.1%. 12 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 2 to 1.
+Words 1,202 to 1,202. Em-dashes in his prose 15 to 0 (12.5 to 0.0 per 1,000 words). Tells 39 to 23 (32.4 to 19.1 per 1,000). Mean sentence 18.8 words to 19.7; sentences of eight words or fewer 31.2% to 27.9%; of five or fewer 17.2% to 13.1%. 13 edits; paragraphs 14 to 14. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 2 to 1.
 
 By kind (before to after): emdash 15 to 0, not_but 5 to 5, NotX.Y 2 to 2, isnt_its 2 to 2, triplet 5 to 6, frag3 2 to 1, anaphora 5 to 4, short_close 3 to 3.
 
@@ -372,9 +372,13 @@ Five pairs, taken at even intervals through the chapter:
 
 ## The whole book
 
-All fifteen files were edited (the introduction, thirteen chapters and the conclusion). In his running prose: 45,384 words before and after; em-dashes 516 before, 0 after (11.4 to 0.0 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all fifteen.
+All fifteen files were edited (the introduction, thirteen chapters and the conclusion). In his running prose: 45,384 words before and after; em-dashes 516 before, 1 after (11.4 to 0.0 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all fifteen.
 
 **Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets, or joins fragments. No word was added, removed or replaced: the word count is the same before and after in every chapter. Two fragment stacks were joined: "Not the curriculum. Not the church. Not the school. The parent." is "Not the curriculum, not the church, not the school: the parent." (introduction), and "So go. Into the kitchen. Into the car. Into the bedroom where the child is waiting for the blessing." is "So go: into the kitchen, into the car, into the bedroom ..." (conclusion).
+
+**The one dash that stays** follows a child's three questions ("Why is my family different? Is something wrong with us? Did I cause this? — and you can answer those questions ...", chapter 11), where nothing else can follow a question mark.
+
+**A second look (2026-11-26).** After the first pass, every place where the rule had closed brackets straight onto "but", "so" or "yet" beginning a new clause was found by search and given its comma ("), but"), and the dash after the child's questions was restored; one commit, the fact diff passing again.
 
 **Left alone, and why.** The verdicts stay: "Not compliance. Conviction. Not performance. Formed loves." (chapter 5), which could only be joined by adding words; "The commands follow. They do not precede. They do not substitute." (chapter 5), three full sentences; "Keep loving. Keep praying. Keep the door open." (chapter 13), imperatives; "Use the years. Not perfectly. Faithfully." (conclusion). Every word about discipline, spanking, anger, screens and the child who walks away is as he wrote it.
 
@@ -400,4 +404,4 @@ The chapters were not read whole for this list. It comes from reading every bloc
 
 ## The files
 
-Rebuilt after the last chapter: 161 pages (163 as first typeset; `client/src/data/ebooks.ts` now says 161), PDF 1.2 MB, EPUB 306 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,089 words compared, no difference); the PDF's pages carry the same text character for character (214,892 against 214,892). A chapter opening and a body page with a block quotation were looked at as images.
+Rebuilt after the last chapter: 161 pages (163 as first typeset; `client/src/data/ebooks.ts` now says 161), PDF 1.2 MB, EPUB 306 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,090 words compared, no difference); the PDF's pages carry the same text character for character (214,899 against 214,899). A chapter opening and a body page with a block quotation were looked at as images.

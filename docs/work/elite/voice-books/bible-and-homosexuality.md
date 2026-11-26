@@ -24,25 +24,25 @@ Three scripts, kept outside the repo in `/home/user/vs5/t/` (`apply.py`, `factdi
 
 | Chapter | Words before | after | change | Em-dashes before (per 1,000) | after | Tells before (per 1,000) | after | Edits | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|
-| Introduction: The Conversation the Church Keeps Getting Wrong | 3,726 | 3,726 | +0.0% | 34 (9.1) | 0 (0.0) | 92 (24.7) | 59 (15.8) | 23 | PASS |
+| Introduction: The Conversation the Church Keeps Getting Wrong | 3,726 | 3,726 | +0.0% | 34 (9.1) | 0 (0.0) | 92 (24.7) | 59 (15.8) | 24 | PASS |
 | Chapter 1: What the Bible Actually Says About Homosexuality | 3,840 | 3,840 | +0.0% | 37 (9.6) | 0 (0.0) | 88 (22.9) | 53 (13.8) | 20 | PASS |
-| Chapter 2: Sodom and Gomorrah | 2,931 | 2,931 | +0.0% | 29 (9.9) | 0 (0.0) | 61 (20.8) | 32 (10.9) | 17 | PASS |
+| Chapter 2: Sodom and Gomorrah | 2,931 | 2,931 | +0.0% | 29 (9.9) | 0 (0.0) | 61 (20.8) | 32 (10.9) | 20 | PASS |
 | Chapter 3: Leviticus 18 and 20 | 2,223 | 2,223 | +0.0% | 21 (9.4) | 0 (0.0) | 48 (21.6) | 27 (12.1) | 14 | PASS |
 | Chapter 4: Romans 1:26-27 Explained | 3,311 | 3,311 | +0.0% | 39 (11.8) | 0 (0.0) | 74 (22.3) | 38 (11.5) | 25 | PASS |
 | Chapter 5: Arsenokoitai | 2,690 | 2,690 | +0.0% | 34 (12.6) | 0 (0.0) | 71 (26.4) | 38 (14.1) | 17 | PASS |
 | Chapter 6: The Affirming Theology Case | 2,911 | 2,911 | +0.0% | 26 (8.9) | 0 (0.0) | 61 (21.0) | 36 (12.4) | 15 | PASS |
-| Chapter 7: The Traditional Theology Case | 3,915 | 3,915 | +0.0% | 48 (12.3) | 0 (0.0) | 99 (25.3) | 52 (13.3) | 24 | PASS |
-| Chapter 8: The Church's Catastrophic Failure | 2,897 | 2,897 | +0.0% | 30 (10.4) | 0 (0.0) | 84 (29.0) | 57 (19.7) | 20 | PASS |
+| Chapter 7: The Traditional Theology Case | 3,915 | 3,915 | +0.0% | 48 (12.3) | 0 (0.0) | 99 (25.3) | 52 (13.3) | 27 | PASS |
+| Chapter 8: The Church's Catastrophic Failure | 2,897 | 2,897 | +0.0% | 30 (10.4) | 0 (0.0) | 84 (29.0) | 57 (19.7) | 21 | PASS |
 | Chapter 9: Can You Be Gay and Christian? | 2,794 | 2,794 | +0.0% | 27 (9.7) | 0 (0.0) | 69 (24.7) | 43 (15.4) | 19 | PASS |
 | Chapter 10: Same-Sex Marriage and the Law | 2,748 | 2,748 | +0.0% | 20 (7.3) | 0 (0.0) | 47 (17.1) | 27 (9.8) | 14 | PASS |
 | Chapter 11: What to Say When Someone You Love Comes Out | 3,822 | 3,822 | +0.0% | 30 (7.8) | 0 (0.0) | 89 (23.3) | 59 (15.4) | 18 | PASS |
-| Chapter 12: Building a Church That Tells the Truth and Loves Like Jesus | 3,994 | 3,994 | +0.0% | 46 (11.5) | 0 (0.0) | 119 (29.8) | 75 (18.8) | 22 | PASS |
+| Chapter 12: Building a Church That Tells the Truth and Loves Like Jesus | 3,994 | 3,994 | +0.0% | 46 (11.5) | 0 (0.0) | 119 (29.8) | 75 (18.8) | 25 | PASS |
 | Conclusion: The Table Is Bigger Than the Argument | 1,706 | 1,706 | +0.0% | 17 (10.0) | 0 (0.0) | 57 (33.4) | 42 (24.6) | 14 | PASS |
-| **All 14** | 43,508 | 43,508 | +0.0% | 438 (10.1) | 0 (0.0) | 1059 (24.3) | 638 (14.7) | 262 | |
+| **All 14** | 43,508 | 43,508 | +0.0% | 438 (10.1) | 0 (0.0) | 1059 (24.3) | 638 (14.7) | 273 | |
 
 ## Introduction: The Conversation the Church Keeps Getting Wrong (`sec01.xhtml`)
 
-Words 3,726 to 3,726. Em-dashes in his prose 34 to 0 (9.1 to 0.0 per 1,000 words). Tells 92 to 59 (24.7 to 15.8 per 1,000). Mean sentence 19.8 words to 19.8; sentences of eight words or fewer 29.3% to 29.3%; of five or fewer 16.5% to 16.5%. 23 edits; paragraphs 34 to 34. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 3,726 to 3,726. Em-dashes in his prose 34 to 0 (9.1 to 0.0 per 1,000 words). Tells 92 to 59 (24.7 to 15.8 per 1,000). Mean sentence 19.8 words to 19.8; sentences of eight words or fewer 29.3% to 29.3%; of five or fewer 16.5% to 16.5%. 24 edits; paragraphs 34 to 34. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 34 to 0, not_but 12 to 12, not_just 1 to 1, NotX.Y 3 to 3, isnt_its 1 to 1, triplet 8 to 8, anaphora 15 to 15, stock 4 to 4, intens 2 to 2, colon_reveal 1 to 2, short_close 11 to 11.
 
@@ -86,7 +86,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter 2: Sodom and Gomorrah (`sec03.xhtml`)
 
-Words 2,931 to 2,931. Em-dashes in his prose 29 to 0 (9.9 to 0.0 per 1,000 words). Tells 61 to 32 (20.8 to 10.9 per 1,000). Mean sentence 19.8 words to 19.8; sentences of eight words or fewer 18.5% to 18.5%; of five or fewer 11.0% to 11.0%. 17 edits; paragraphs 28 to 28. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 2,931 to 2,931. Em-dashes in his prose 29 to 0 (9.9 to 0.0 per 1,000 words). Tells 61 to 32 (20.8 to 10.9 per 1,000). Mean sentence 19.8 words to 19.8; sentences of eight words or fewer 18.5% to 18.5%; of five or fewer 11.0% to 11.0%. 20 edits; paragraphs 28 to 28. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 29 to 0, not_but 2 to 2, NotX.Y 1 to 1, isnt_its 2 to 2, triplet 15 to 15, anaphora 4 to 4, stock 3 to 3, intens 2 to 2, q_answered 1 to 1, short_close 2 to 2.
 
@@ -97,9 +97,9 @@ Five pairs, taken at even intervals through the chapter:
 1. Before: If the men of Sodom were simply seeking to rape someone — which is what the demand is — Lot's offer makes a terrible kind of sense; he is trying to redirect their violent intention toward his daughters, a horrifying suggestion, but one that would be understood in that context as an alternative to the violence they are threatening.
    After: If the men of Sodom were simply seeking to rape someone (which is what the demand is), Lot's offer makes a terrible kind of sense; he is trying to redirect their violent intention toward his daughters, a horrifying suggestion, but one that would be understood in that context as an alternative to the violence they are threatening.
 2. Before: Genesis 19 and Judges 19 use nearly identical language — the same demand, the same structure, the same offering of an alternative — but Judges 19 is explicitly and unambiguously about sexual violence and the violation of hospitality codes; it is not even claimed by anyone to be about homosexuality.
-   After: Genesis 19 and Judges 19 use nearly identical language (the same demand, the same structure, the same offering of an alternative) but Judges 19 is explicitly and unambiguously about sexual violence and the violation of hospitality codes; it is not even claimed by anyone to be about homosexuality.
+   After: Genesis 19 and Judges 19 use nearly identical language (the same demand, the same structure, the same offering of an alternative), but Judges 19 is explicitly and unambiguously about sexual violence and the violation of hospitality codes; it is not even claimed by anyone to be about homosexuality.
 3. Before: The Assyrian Laws contain a prohibition against male same-sex behavior, and the penalty is severe — it involves mutilation — but the prohibition appears only in Assyrian law; the Code of Hammurabi does not mention same-sex behavior, and neither do the Hittite Laws.
-   After: The Assyrian Laws contain a prohibition against male same-sex behavior, and the penalty is severe (it involves mutilation) but the prohibition appears only in Assyrian law; the Code of Hammurabi does not mention same-sex behavior, and neither do the Hittite Laws.
+   After: The Assyrian Laws contain a prohibition against male same-sex behavior, and the penalty is severe (it involves mutilation), but the prohibition appears only in Assyrian law; the Code of Hammurabi does not mention same-sex behavior, and neither do the Hittite Laws.
 4. Before: What we can say based on comparative law is that sexual prohibitions are culture-specific — what one society prohibits, another permits; what is unthinkable in one context is normal in another.
    After: What we can say based on comparative law is that sexual prohibitions are culture-specific; what one society prohibits, another permits; what is unthinkable in one context is normal in another.
 5. Before: Using Sodom as your proof text for opposition to same-sex relationships is weak exegesis — weaker than the traditional position deserves.
@@ -196,7 +196,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter 7: The Traditional Theology Case (`sec08.xhtml`)
 
-Words 3,915 to 3,915. Em-dashes in his prose 48 to 0 (12.3 to 0.0 per 1,000 words). Tells 99 to 52 (25.3 to 13.3 per 1,000). Mean sentence 22.7 words to 22.7; sentences of eight words or fewer 23.3% to 23.3%; of five or fewer 14.0% to 14.0%. 24 edits; paragraphs 33 to 33. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
+Words 3,915 to 3,915. Em-dashes in his prose 48 to 0 (12.3 to 0.0 per 1,000 words). Tells 99 to 52 (25.3 to 13.3 per 1,000). Mean sentence 22.7 words to 22.7; sentences of eight words or fewer 23.3% to 23.3%; of five or fewer 14.0% to 14.0%. 27 edits; paragraphs 33 to 33. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
 
 By kind (before to after): emdash 48 to 0, not_but 15 to 15, not_just 1 to 1, NotX.Y 6 to 6, isnt_its 1 to 1, triplet 13 to 14, frag3 1 to 1, anaphora 4 to 4, stock 2 to 2, intens 2 to 2, colon_reveal 1 to 1, short_close 5 to 5.
 
@@ -218,7 +218,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter 8: The Church's Catastrophic Failure (`sec09.xhtml`)
 
-Words 2,897 to 2,897. Em-dashes in his prose 30 to 0 (10.4 to 0.0 per 1,000 words). Tells 84 to 57 (29.0 to 19.7 per 1,000). Mean sentence 19.1 words to 19.1; sentences of eight words or fewer 32.2% to 32.2%; of five or fewer 16.1% to 16.1%. 20 edits; paragraphs 26 to 26. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 2,897 to 2,897. Em-dashes in his prose 30 to 0 (10.4 to 0.0 per 1,000 words). Tells 84 to 57 (29.0 to 19.7 per 1,000). Mean sentence 19.1 words to 19.1; sentences of eight words or fewer 32.2% to 32.2%; of five or fewer 16.1% to 16.1%. 21 edits; paragraphs 26 to 26. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 30 to 0, not_but 12 to 12, not_just 3 to 3, NotX.Y 8 to 8, isnt_its 1 to 1, triplet 14 to 16, anaphora 4 to 4, stock 2 to 2, colon_reveal 0 to 1, short_close 10 to 10.
 
@@ -306,7 +306,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter 12: Building a Church That Tells the Truth and Loves Like Jesus (`sec13.xhtml`)
 
-Words 3,994 to 3,994. Em-dashes in his prose 46 to 0 (11.5 to 0.0 per 1,000 words). Tells 119 to 75 (29.8 to 18.8 per 1,000). Mean sentence 20.3 words to 20.3; sentences of eight words or fewer 27.5% to 27.5%; of five or fewer 13.7% to 13.7%. 22 edits; paragraphs 30 to 30. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 3,994 to 3,994. Em-dashes in his prose 46 to 0 (11.5 to 0.0 per 1,000 words). Tells 119 to 75 (29.8 to 18.8 per 1,000). Mean sentence 20.3 words to 20.3; sentences of eight words or fewer 27.5% to 27.5%; of five or fewer 13.7% to 13.7%. 25 edits; paragraphs 30 to 30. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 46 to 0, not_but 16 to 16, not_just 2 to 2, NotX.Y 2 to 2, isnt_its 3 to 3, triplet 16 to 17, anaphora 10 to 10, stock 1 to 1, intens 7 to 7, colon_reveal 4 to 5, short_close 7 to 7, forbidden 5 to 5.
 
@@ -349,11 +349,13 @@ Five pairs, taken at even intervals through the chapter:
 
 ## The whole book
 
-All fourteen files were edited (the introduction, twelve chapters and the conclusion). In his running prose: 43,508 words before and after; em-dashes 438 before, 2 after (10.1 to 0.0 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all fourteen.
+All fourteen files were edited (the introduction, twelve chapters and the conclusion). In his running prose: 43,508 words before and after; em-dashes 438 before, 2 after (10.1 to 0.0 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all fourteen. (The tell counter in the table blanks quotations before it counts, so its "after" column shows 0.)
 
 **Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets. No word was added, removed or replaced, and no fragment stack was joined: the few short runs are a parent's instructions ("Let them talk. Do not interrupt. Do not offer solutions.") and the conclusion's invitation ("But: you belong. Come. Sit."), which stay as he wrote them.
 
 **The two dashes that stay** are inside the words the book gives a parent to say to a child who has come out (chapter 11, in quotation marks).
+
+**A second look (2026-11-26).** After the first pass, every place where the rule had closed brackets straight onto "but", "so" or "yet" beginning a new clause was found by search and given its comma ("), but"), and one comma splice ("... conversation, that is not what I am offering", introduction) became a semicolon; one commit, the fact diff passing again.
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
@@ -380,4 +382,4 @@ The chapters were not read whole for this list. It comes from reading every bloc
 
 ## The files
 
-Rebuilt after the last chapter: still 167 pages (`client/src/data/ebooks.ts` says 167), PDF 1.3 MB, EPUB 302 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (45,183 words compared, no difference); the PDF's pages carry the same text character for character (233,796 against 233,796).
+Rebuilt after the last chapter: still 167 pages (`client/src/data/ebooks.ts` says 167), PDF 1.3 MB, EPUB 302 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (45,183 words compared, no difference); the PDF's pages carry the same text character for character (233,806 against 233,806).

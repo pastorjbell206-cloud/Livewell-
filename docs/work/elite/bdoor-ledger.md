@@ -21315,6 +21315,562 @@ Cut in chapter 4: the deep note's lines to Christ that the New Testament does no
 
 Cut in chapter 5: the deep note's lines to Christ that the New Testament does not draw (Romans 11:1 as Paul's answer to verse 22; Jesus as heir of the fallen crown and bearer of the rejection). The phone number in the deep note's hard answer was not repeated.
 
+## Amos's book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/amos/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Third of the Twelve; nine chapters; the earliest writing prophet; around 760 BC; Tekoa; Jeroboam II's wealth; Bethel and Gilgal; winter and summer houses and ivory; bribes, 2:6, rigged scales, refused worship; the nations then Judah and Israel; sermons; five visions and Amaziah; 5:24; the fallen house of David | in-a-minute | amos/intro.json `overview`; bible/guides/kings-of-israel-and-judah.json (Amos about 760); BSB | Repository; BSB text |
+| Beginning of the writing prophets; Hosea, Isaiah, Micah; 1 and 2 Kings; Bethel and Dan; Elijah and Elisha; the exodus, wilderness and land; covenant laws on debt, pledges, weights and courts; Samaria a generation later; the house of David | story | amos/intro.json `story`, `setting` | Repository |
+| 1:1; 7:14; the word for sheepherder and Mesha; owner or working shepherd; a layman from Judah; the core from Amos; the passages some call additions (2:4-5; 4:13; 5:8-9; 9:5-6; 9:11-15); the answer; read as a whole | who | amos/intro.json `author`; BSB | Repository; BSB text; each view in its holders' terms |
+| Uzziah and Jeroboam II; 1:1's earthquake; the guide's Jeroboam II 793/792 to 753 and Amos about 760; a season or a year; Zechariah 14:5; the guide's traces at Hazor around 760 against the introduction's mid-century layers, probable not certain | who | bible/guides/kings-of-israel-and-judah.json (the kings table; the prophets section); amos/intro.json `date` | Repository. Sources differ and the page says so |
+| Peace and expansion; Assyria busy and Aram weakened; Jeroboam II and Uzziah expanding; the Samaria ivories and ostraca; debt, lost land, servitude; bought courts; Bethel, Gilgal and Beersheba; Tiglath-pileser III in 745; 722 BC | world | amos/intro.json `setting` | Repository |
+| Three parts; the formula of 1:3; Hear this word; five visions and 7:10-17; the pictures meant to jolt; 4:6's refrain five times | built | amos/intro.json `reading`, `structure`; amos/4.json `literary`; BSB | Repository; BSB text |
+| 1:2; the crimes of Damascus, Gaza, Tyre, Edom, Ammon and Moab named, not described; no law at Sinai; Judah (2:4); 2:6; 2:7-8 paraphrased; the exodus, wilderness, prophets and Nazirites; 2:13-16 | nations | amos/1.json and 2.json `summary`, `hard`, `cultural`; the brief; BSB | Repository; BSB text; atrocities named, not described |
+| 3:2; the chain of questions and 3:8 (its clause); 4:1; Bashan's cattle; the women's oppression, not women as such; Amos as hard on men; the mocked worship; the warnings and the refrain; 4:12 (its phrase) | chosen | amos/3.json `literary`; amos/4.json `hard`, `cultural`; BSB | Repository; BSB text |
+| The funeral song; 5:4; the shrines; bitterness, bribes and the gate; 5:15; 5:18; the feasts refused; 5:24; sacrifice without obedience and Samuel; 6:1; 6:6 (its clause); comfort that does not grieve; the political spectrum and the covenant's standard | justice | amos/5.json `hard`, `cultural`; amos/6.json `hard`; amos/intro.json `reading`; BSB | Repository; BSB text; the readings in their holders' terms |
+| The locusts and fire, Jacob so small, the LORD relents (7:1-6); the plumb line and 7:8; Amaziah, Jeroboam, earn your bread, the king's sanctuary (7:10-13); the herdsman's answer and the word on Amaziah's house; qayits and qets; 8:2; the merchants (8:4-6); 8:11; the Lord beside the altar (9:1-4) | visions | amos/7.json `cultural`, `literary`; amos/8.json `literary`, `cultural`; amos/9.json `literary`; BSB | Repository; BSB text |
+| 9:7 paraphrased; 9:8 paraphrased; 9:11; 9:12 paraphrased; 9:13-15 paraphrased; promises after the exile; no claim about any modern state or border | restoration | amos/9.json `cultural`, `historical`; the brief; BSB | Repository; BSB text |
+| Acts 15:16; Acts 15:17; the Greek against the Hebrew (Edom and adam, yarash and darash); Acts 7:42 with Amos 5:25-27; only these lines; no blame on the Jewish people | new-testament | amos/intro.json `christ`; amos/9.json `hard`; amos/5.json `christ`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: the charges against covenant law; on oneself first; worship and the poor; election and accountability; 6:1; Israel's own Scripture; the ending | readers | amos/intro.json `reading`, `themes` | Repository |
+| Hard passages (12) and key words (12): drawn from the parts above and the chapter notes' hard questions, `cultural`, `literary` and `words` | lists | amos/1.json to 9.json; BSB | Repository; BSB text |
+| Timeline (8): 931/930 and Bethel's calf; Jeroboam II 793/792 to 753 and 2 Kings 14:25; Uzziah 792/791 to 740/739, alone from 767; about 760, Amos; about 760, the earthquake, with the guide and the introduction set side by side; 745; 722, with Thiele's 723 or 722; the 30s and after, Stephen and James in Acts | timeline | bible/guides/kings-of-israel-and-judah.json; amos/intro.json `date`, `setting`; acts/intro.json `teaching` (the 30s, Stephen) | Repository. Sources differ and the page says so; the council of Acts 15 is given no year, since none is in the repository's sources |
+| The map: Bethel, Samaria (a region), Jerusalem, Beersheba, Damascus, Tyre, Ashdod and Gilead (a region), each at a point and label already used on this site's maps | map | the points already used on the site's maps (1 Kings, 1 Chronicles, 1 Samuel); BSB (each place's verses) | Repository; Tekoa, Gilgal, Gaza, Ekron, Edom, Ammon, Moab, Carmel, Bashan, Dan, Hamath, Calneh and Gath left off and the note says so; no borders; no claim about any border today |
+| Go deeper: ten pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json; bible/doctrines.json (Justice, the Poor, and the Stranger; Worship; Judgment and Justice; Money and Possessions); context/guides/what-justice-meant.json, money-texts-we-explain-away.json, left-lens-right-lens.json; questions/old-testament/what-archaeology-shows.json (status live) | Repository; every page live |
+
+Cut from the book page: the introduction's line from Amos to Matthew 23:23, which the New Testament does not draw from Amos. The atrocities of 1:3, 1:13 and 2:1 are named and not described. The word against Amaziah's family (7:17) is not quoted. A Go deeper link to the question on Christian nationalism was replaced by the context guide on reading the Bible through left and right lenses, so that the page points both ways.
+
+## The plain notes on Amos 1 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its first clause; the rest paraphrased) | 1-2 | BSB | BSB text |
+| Tekoa ten miles south; the sheepherder's word and Mesha; owner or hired hand; an outsider from Judah; Uzziah and Jeroboam II, about 760 BC; the earthquake, Hazor and the mid-century layers, probable not certain; 1:2 as motto | 1-2 | amos/1.json `cultural`, `historical`, `literary` | Repository |
+| Zechariah 14:5 (its clause); Joel 3:16 | 1-2 | amos/1.json `historical`, `literary`; BSB | Repository; BSB text |
+| The formula of 1:3 (its words); 1:3 (its clause); 1:4-5 paraphrased; 1:6 (its clause); 1:7-8 paraphrased; 1:9 (its clause); 1:10 paraphrased | 3-10 | BSB | BSB text |
+| Three-then-four; the shape and the lulling; Damascus, Hazael and Ben-hadad in the late ninth century; threshing sledges; Kir and 732 BC; four of five Philistine cities and Gath missing; sold to Edom as slaves; the covenant of brotherhood and Hiram | 3-10 | amos/1.json `literary`, `historical`, `cultural` | Repository |
+| 2 Kings 10:32-33; 2 Kings 16:9 (its sentence); 1 Kings 5:12 | 3-10 | amos/1.json `historical`, `cultural`; BSB | Repository; BSB text |
+| 1:11 (its clause); 1:12 paraphrased; 1:13 named and quoted only in its last clause; 1:14-15 paraphrased | 11-15 | BSB | BSB text; the atrocity named, not described |
+| Edom south of the Dead Sea, Teman and Bozrah; Esau and Jacob; Ammon and Rabbah, modern Amman; Ammon's crime among the most horrifying, done for land; the circle on the map | 11-15 | amos/1.json `historical`, `cultural`, `literary` | Repository |
+| Genesis 36:1; Obadiah 10 | 11-15 | BSB | BSB text |
+| The hard note: no charge of breaking Moses' law; crimes against people; known to all; Noah's covenant (Genesis 9:5-6); treaties and customs of war; the fuller standard for Israel | 11-15 `hard` | amos/1.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 1: the deep note's line to Romans 2:14-15, which the New Testament does not draw from Amos. The crimes of 1:3 and 1:13 are named and not described.
+
+## The plain notes on Amos 2 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (its clause); 2:2-3 paraphrased; 2:4 (its clause); 2:5 paraphrased | 1-5 | BSB | BSB text |
+| The burning of the bones unknown elsewhere; the ninth-century wars; dishonor in death; Kerioth and the Mesha Stele; Judah judged for rejecting the law; the later-addition view and the answer | 1-5 | amos/2.json `historical` | Repository; both views in their holders' terms |
+| 2 Kings 3:4-27; Deuteronomy 28:15 (its clause) | 1-5 | amos/2.json `historical`; BSB | Repository; BSB text |
+| 2:6; 2:7 (its first sentence; the rest paraphrased); 2:8 | 6-8 | BSB | BSB text |
+| The pattern broken into a list; Jeroboam II's world about 760 BC; debt, land and servitude; debt service limited by law; selling the righteous; sandals as a small debt or a land transfer (Ruth 4:7); the pledged cloak by sunset; the young woman as a servant or shrine rites; forbidden either way | 6-8 | amos/2.json `historical`, `cultural`, `literary` | Repository; the readings in their holders' terms |
+| Exodus 22:26 (its clause); Deuteronomy 15:12-15; Leviticus 18:8, 15 | 6-8 | amos/2.json `historical`, `cultural`; BSB | Repository; BSB text |
+| The hard note: the specific acts; not owning flocks or prosperity; gain by injustice; systemic and personal; covenant law, not a modern program | 6-8 `hard` | amos/2.json `hard` | Repository; both emphases in their holders' terms |
+| The care line ('If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn.') | 6-8 `hard` | deuteronomy/plain/13.json and nine more | Reused whole, word for word; Find Help named; no phone number |
+| 2:9 (its first clause); 2:10-11 paraphrased; 2:12; 2:13 and 2:15-16 paraphrased; 2:14 | 9-16 | BSB | BSB text |
+| Yet it was I; kindness recited against Israel's deeds; Nazirites and wine (Numbers 6); silencing the prophets and 7:12-13; seven warriors who fail | 9-16 | amos/2.json `literary`, `cultural` | Repository |
+| Numbers 6:3 (its clause); Deuteronomy 8:2 | 9-16 | BSB | BSB text |
+
+Cut in chapter 2: nothing drawn to the New Testament. The act of 2:7 is named in the BSB's own plain words and not dwelt on.
+
+## The plain notes on Amos 3 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 (its clause); 3:2; 3:3-5 and 3:7 paraphrased; 3:6; 3:8 (its two clauses) | 1-8 | BSB | BSB text |
+| Election as accountability; questions of cause and effect; the climb to the prophet's compulsion; the lion linking 1:2 and 3:12 | 1-8 | amos/3.json `literary` | Repository |
+| Genesis 12:3 (its phrase); Deuteronomy 7:7-8 paraphrased; Jeremiah 20:9 paraphrased | 1-8 | BSB | BSB text |
+| The hard note: calamity as the word for evil or harm; not chance or other gods; God's rule without authoring moral evil, Assyria responsible; not a rule for every disaster (Job; Luke 13:1-5); God not absent | 1-8 `hard` | amos/3.json `hard` | Repository; the readings in their holders' terms |
+| The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 1-8 `hard` | genesis/plain/6.json; 2-kings/plain/17.json and others | Reused whole, word for word; Find Help named; no phone number |
+| 3:9-11 and 3:13-14 paraphrased; 3:12 (its first clause); 3:15 (its clauses) | 9-15 | BSB | BSB text |
+| A trial with foreign witnesses; Samaria built by Omri; Jeroboam II's wealth; Ahab's ivory house and the ivory fragments of the ninth and eighth centuries; winter and summer houses; the shepherd's proof; the horns of the altar and sanctuary; Samaria taken within about forty years; Josiah at Bethel | 9-15 | amos/3.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 22:13; 1 Kings 22:39; 2 Kings 23:15 | 9-15 | amos/3.json `historical`, `cultural` | Repository |
+
+Cut in chapter 3: nothing drawn to the New Testament.
+
+## The plain notes on Amos 4 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (its first clause; the rest paraphrased); 4:2-3 paraphrased | 1-3 | BSB | BSB text |
+| Samaria's wealthy class; the Samaria ostraca of the first half of the eighth century; Bashan's pastures and cattle; the oath by holiness; hooks as captives' ropes, fishing or butchers' hooks; Harmon unknown; deportation after 722 BC | 1-3 | amos/4.json `historical`, `cultural`, `literary` | Repository; the readings in their holders' terms |
+| Deuteronomy 32:14; Psalm 22:12; Isaiah 3:16-26; Isaiah 5:11-12 | 1-3 | amos/4.json `cultural`, `hard` | Repository |
+| The hard note: comfort, not ugliness; conduct, not sex; Amos as hard on men; other prophets as blunt; the possible religious phrase, uncertain; shock against complacency; no license for contempt toward women | 1-3 `hard` | amos/4.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 4:4 (in double quotes, for its exclamation); 4:5 (its last words) | 4-5 | BSB | BSB text |
+| Irony of a priest's call; Bethel and Gilgal; tithes yearly and every third year; every three days as exaggeration; leavened thank offerings; offerings as display | 4-5 | amos/4.json `cultural`, `literary` | Repository |
+| Deuteronomy 14:22-29; Leviticus 7:13 | 4-5 | amos/4.json `cultural` | Repository |
+| 4:6 (its phrase and its refrain); 4:7-11 paraphrased; 4:12 (its phrase); 4:13 (its clause) | 6-13 | BSB | BSB text |
+| Five stanzas, seven disasters, the refrain; recent memory and the wars with Aram (2 Kings 13:7); the covenant curses; cleanness of teeth; verse 12 unnamed; the first of three hymns, added or Amos's own | 6-13 | amos/4.json `literary`, `historical`, `cultural` | Repository; both views in their holders' terms |
+| Leviticus 26:19-26; Deuteronomy 28:22; Zechariah 3:2 (its question, in double quotes) | 6-13 | amos/4.json `cultural`; BSB | Repository; BSB text |
+| The hard note: Israel's covenant and a particular word; the refusal as the point; no right to read any loss as punishment; Job and Jesus | 6-13 `hard` | amos/4.json `literary`; amos/3.json `hard`; the brief | Repository; stated as the brief asks |
+| The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 6-13 `hard` | genesis/plain/6.json and others | Reused whole, word for word; Find Help named; no phone number |
+
+Cut in chapter 4: nothing drawn to the New Testament. The refrain of 4:6 to 4:11 is paraphrased in the prose so that no first-person words stand outside quoted Scripture.
+
+## The plain notes on Amos 5 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:2 (its first clause); 5:3 paraphrased; 5:4 (its words); 5:5 paraphrased (its 'journey' not quoted); 5:6 (its first words) | 1-6 | BSB | BSB text |
+| The qinah's limping rhythm; around 760 BC at the north's height; Samaria within four decades; the militia's losses; Bethel and Gilgal; Beersheba and Abraham and Isaac, northern pilgrims; the mirror pattern of 5:1-17 | 1-6 | amos/5.json `cultural`, `historical`, `literary` | Repository |
+| Genesis 21:33; Genesis 26:23-25; Isaiah 55:6 (its first clause) | 1-6 | amos/5.json `historical`; BSB | Repository; BSB text |
+| 5:7; 5:8 (its last words); 5:10-13 paraphrased; 5:14 (its first sentence); 5:15; 5:16-17 paraphrased | 7-17 | BSB | BSB text |
+| The gate as square and court; elders; the bought village court; wormwood; ashlar stone houses at Samaria; the grain tax as rents or levies; the hymn at the center; the Pleiades and Orion; perhaps gracious to a remnant | 7-17 | amos/5.json `cultural`, `historical`, `literary` | Repository |
+| Deuteronomy 21:19; Ruth 4:1-11; Job 9:9 (its clause) | 7-17 | amos/5.json `cultural`; BSB | Repository; BSB text |
+| 5:18 (in double quotes, for its exclamation); 5:19-23 paraphrased; 5:24; 5:25; 5:26-27 paraphrased | 18-27 | BSB | BSB text |
+| The Day as a popular hope reversed; the lion, bear and snake; 5:24's echo through history; justice and righteousness; the all-year stream; Sakkuth and Kaiwan as star gods, Saturn, debated; beyond Damascus; the political spectrum and the covenant's standard | 18-27 | amos/5.json `cultural`, `historical`, `christ`; amos/intro.json `reading` | Repository |
+| Acts 7:42 (its quotation of 5:25) and the Greek; Micah 6:8 (its clause) | 18-27 | amos/5.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| The hard note: rejection of the whole system or of worship without obedience; the scholars who saw opposition in principle; most interpreters and the other prophets; 5:25 read two ways; worship no substitute for justice | 18-27 `hard` | amos/5.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 5: the deep note's lines to Matthew 23:23, Matthew 9:13 and 1 Thessalonians 5:2, which the New Testament does not draw from this chapter.
+
+## The plain notes on Amos 6 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1 (its first clause); 6:2-3 paraphrased; 6:4; 6:5 paraphrased; 6:6; 6:7 paraphrased | 1-7 | BSB | BSB text |
+| Hoy as the cry over the dead; Zion and Samaria; 6:2 read three ways and possibly updated; the Samaria ivories; meat as a rare luxury; bowls and oils; marzeah at Ugarit and its mourning links; foremost, finest and first from one root | 1-7 | amos/6.json `literary`, `historical`, `cultural` | Repository; the readings in their holders' terms |
+| 1 Kings 22:39; Jeremiah 16:5 (paraphrased, with the BSB's funeral meal) | 1-7 | amos/6.json `cultural` | Repository |
+| The hard note: feasts, wine, oil and music as gifts (Psalm 104:15, its clause); David's music; injustice, complacency and indifference; two emphases; enjoyment that blinds | 1-7 `hard` | amos/6.json `hard`; BSB | Repository; BSB text; both emphases in their holders' terms |
+| 6:8-13 paraphrased (6:10's and 6:13's inner quotations not quoted); 6:14 (its last clause) | 8-14 | BSB | BSB text |
+| The oath by himself; the scene after siege or plague, named not dwelt on; hushed from naming the LORD; the absurd questions; Lo-debar and Karnaim as Nothing and Horns, towns won back from Aram; 2 Kings 14:25 turned into a threat; Assyria and Tiglath-pileser III from about 745; 722 BC | 8-14 | amos/6.json `cultural`, `literary`, `historical` | Repository |
+| 2 Kings 14:25 (its clause) | 8-14 | BSB | BSB text |
+
+Cut in chapter 6: nothing drawn to the New Testament. The scene of 6:9-10 is named and not dwelt on.
+
+## The plain notes on Amos 7 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 paraphrased; 7:2 (Amos's prayer, in double quotes); 7:3 (its first sentence); 7:4 paraphrased; 7:5 (in double quotes); 7:6-9 paraphrased, with 7:8's clause | 1-9 | BSB | BSB text |
+| The king's harvest as tax; the late crop; the great deep and Genesis 1:2; the pattern of show, plead, relent; Jacob's smallness; the plumb line; the pattern broken; the house of Jeroboam; Jeroboam's natural death and Zechariah's murder | 1-9 | amos/7.json `cultural`, `literary`, `historical` | Repository |
+| Exodus 32:14; Jeremiah 18:7-8 paraphrased | 1-9 | amos/7.json `hard`; BSB | Repository; BSB text |
+| The hard note: Numbers 23:19 and 1 Samuel 15:29; classical theologians; open theists; the conditional view and Jeremiah 18; prayer matters to God | 1-9 `hard` | amos/7.json `hard` | Repository; the readings in their holders' terms |
+| 7:10-11 paraphrased (7:11's inner quotation not quoted); 7:12 (in double quotes, for its exclamation); 7:13 (its clause); 7:14 (its clause); 7:15-17 paraphrased | 10-17 | BSB | BSB text |
+| Bethel's sanctuary since about 930 BC; the state shrine and the king's pleasure; Amaziah sharpening Amos's words; earn your bread; a son of a prophet as a guild member; sycamore figs, the poor's fruit, grown in the lowlands; 7:17 named and not dwelt on; no warrant to wish harm on a family; Amaziah's report turned into the verdict | 10-17 | amos/7.json `historical`, `cultural`, `literary`; the brief | Repository; stated as the brief asks |
+| 2 Kings 2:3-5; 2 Kings 14:29; 2 Kings 15:8-10 | 10-17 | amos/7.json `historical`, `cultural` | Repository |
+
+Cut in chapter 7: nothing drawn to the New Testament. The words of 7:17 about Amaziah's wife and children are not quoted.
+
+## The plain notes on Amos 8 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1; 8:2 (its last sentence; the question paraphrased); 8:3 paraphrased and not quoted | 1-3 | BSB | BSB text |
+| Qayits and qets; the question and answer of the plumb line; Jeroboam II's trade and wealth; the dead named, not dwelt on; Assyria and 722 BC | 1-3 | amos/8.json `literary`, `historical` | Repository |
+| Jeremiah 1:11-12 paraphrased; Ezekiel 7:2 (its clause) | 1-3 | BSB | BSB text |
+| 8:4; 8:5-6 paraphrased (their inner quotations not quoted) | 4-6 | BSB | BSB text |
+| The merchants quoted against themselves; New Moon and Sabbath; the small ephah and heavy shekel; weighed money; the law against both; debt slavery; the chaff with the wheat | 4-6 | amos/8.json `literary`, `cultural` | Repository |
+| Leviticus 19:36 (its clause); Nehemiah 13:15-22 | 4-6 | amos/8.json `cultural`; BSB | Repository; BSB text |
+| 8:7-10 paraphrased; 8:11 (its clauses); 8:12-14 paraphrased (8:14's inner quotations not quoted) | 7-14 | BSB | BSB text |
+| The oath by the Pride of Jacob, read two ways; the sayings of that day; the eclipse of 763 BC in the Assyrian eponym lists, possible not certain; sackcloth, shaved heads, an only son; Dan and the second calf; Beersheba | 7-14 | amos/8.json `literary`, `historical`, `cultural` | Repository; the readings in their holders' terms |
+| 1 Kings 12:29-30; 1 Samuel 28:6 paraphrased | 7-14 | amos/8.json `historical`, `hard` | Repository |
+| The hard note: those who rejected the prophets (2:12; 7:12-16); Saul; the famine as the fruit of refusal; frantic, not repentant; Jeremiah 29:13; no seeker now shut out | 7-14 `hard` | amos/8.json `hard`; the brief | Repository; the readings in their holders' terms |
+
+Cut in chapter 8: nothing drawn to the New Testament.
+
+## The plain notes on Amos 9 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1 (its first words; the rest paraphrased); 9:2; 9:3-4 paraphrased; 9:5-6 paraphrased and the last words of 9:6 | 1-6 | BSB | BSB text |
+| The altar as Bethel's (3:14); the fifth vision; five clauses of pursuit; Psalm 139's mirror; the third hymn; 722 BC and the deportations | 1-6 | amos/9.json `historical`, `literary` | Repository |
+| Psalm 139:8; Amos 3:14 | 1-6 | amos/9.json `literary`; BSB | Repository; BSB text |
+| 9:7 (its question); 9:8 (its last sentence; the rest paraphrased); 9:9-10 paraphrased (9:10's inner quotation not quoted) | 7-10 | BSB | BSB text |
+| The Cushites south of Egypt; Caphtor as Crete and the Aegean; Kir uncertain; the exodus not immunity; the sieve read two ways; destroyed but not utterly | 7-10 | amos/9.json `cultural` | Repository; the readings in their holders' terms |
+| Psalm 145:9; Isaiah 10:20-22 | 7-10 | BSB | BSB text |
+| The hard note: the exodus taken seriously; election turned into immunity (9:10); the God of every nation's history; calling, not shield; no people above others | 7-10 `hard` | amos/9.json `cultural`; amos/intro.json `themes` (election and accountability); the brief | Repository |
+| 9:11; 9:12-13 and 9:15 paraphrased; 9:14 | 11-15 | BSB | BSB text |
+| The fallen tent read two ways (an exilic addition after 587 or 586 BC; Amos's own day, split since about 930 BC); a renewed kingdom beyond Judah; the plowman overtaking the reaper; 5:11 reversed; promises after the exile; no claim about any modern state or border | 11-15 | amos/9.json `historical`, `cultural`, `literary`; the brief | Repository; both views in their holders' terms |
+| Acts 15:16; Acts 15:17; Amos 5:11 (its clause) | 11-15 | amos/9.json `christ`, `hard`; BSB | Repository; BSB text; the New Testament's own lines |
+| The hard note: Edom and adam, yarash and darash; a different Hebrew text or an interpretation; nations that bear God's name; James's argument and the weight of the Greek | 11-15 `hard` | amos/9.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 9: nothing beyond Acts 15:16-17, which quote the chapter.
+
+## Obadiah's book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/obadiah/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| One chapter, twenty-one verses, the shortest book; Edom south and east of the Dead Sea; Esau and Jacob; the charge (looting, lots, gloating, the crossroads); pride, strongholds, wise men and allies; the Day of the LORD near for all nations; 1:15; Mount Zion and the return; 1:21 | in-a-minute | obadiah/intro.json `overview`; BSB | Repository; BSB text |
+| The two brothers from Genesis; reconciliation; the refused passage (Numbers 20); David's conquest; Edom's freedom; after Amos and before Jonah; the years of exile beside Lamentations, Ezekiel and Jeremiah | story | obadiah/intro.json `story`, `setting` | Repository |
+| Servant of the LORD; a common name; Ahab's steward in later Jewish tradition, unsupported; unknown; no father, town or king; verses 1 to 9 and Jeremiah 49:7-22, three explanations | who | obadiah/intro.json `author` | Repository; each view in its holders' terms |
+| The date argued from content, no side taken; most scholars soon after 587 or 586 BC; the guide's probably soon after 586; the minority's Jehoram about 848 to 841 BC, Edom's revolt and the plunder; the Hebrew order; the answer | who | obadiah/intro.json `date`; bible/guides/kings-of-israel-and-judah.json (the prophets table: Obadiah probably soon after 586) | Repository; each view in its holders' terms |
+| The highlands and the Arabah; plateaus hard to attack; 1:3 (its question); copper and trade routes; Teman's wisdom; Edom with Babylon; Nabonidus in the mid-sixth century; the Nabateans; Idumea; Herod the Great | world | obadiah/intro.json `setting`; BSB | Repository; BSB text |
+| A word against a foreign nation; three stages; the eagle's nest; thieves and grape pickers; eight commands; the Day for all nations; day twelve times; the reversals | built | obadiah/1.json `literary`; obadiah/intro.json `reading` | Repository |
+| 1:10; 1:11; the commands of 1:12-14 paraphrased; 1:14 (its first clause); brotherhood as treaty and kinship; casting lots; the crossroads and the refugees | brother | obadiah/1.json `cultural`; BSB | Repository; BSB text |
+| 1:15; 1:17 (its first clause); the exiles' return (1:19-20) paraphrased; 1:21; the specific charge; God's vengeance, not Judah's; Amos and Israel; God's kingship; the tension with loving enemies and two readings; Edom not a code; no warrant for hatred or violence; no claim about any modern state or border | day | obadiah/1.json `hard`; obadiah/intro.json `reading`, `purpose`; the brief; BSB | Repository; BSB text; the readings in their holders' terms; stated as the brief asks |
+| The New Testament never quotes Obadiah; Herod the Great an Idumean; Malachi 1:2-3 and Romans 9:13 | new-testament | obadiah/intro.json `setting`; obadiah/1.json `christ` (Herod, Romans 9); BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: a particular betrayal; searching the reader first; the two misreadings; the last line | readers | obadiah/intro.json `reading` | Repository |
+| Hard passages (5) and key words (11): drawn from the parts above and the chapter notes | lists | obadiah/1.json; obadiah/intro.json; BSB | Repository; BSB text |
+| Timeline (5): Jehoram about 848 to 841 BC and the minority date (the guide's Jehoram alone 848 to 841; 2 Kings 8:20-22; 2 Chronicles 21:16-17); 586 BC with 587 (the guide); soon after 586 (most scholars, the guide); Nabonidus in the mid-sixth century; after the exile, Idumea and Malachi 1:2-4 | timeline | bible/guides/kings-of-israel-and-judah.json; obadiah/intro.json `date`, `setting`; obadiah/1.json `historical` | Repository. The dating views are given without a side |
+| The map: Jerusalem, Samaria (a region) and Gilead (a region), each at a point and label already used on this site's maps | map | the points already used on the site's maps; BSB (each place's verses) | Repository; Edom, Teman, the mountains of Esau, the Negev, Philistia, Zarephath and Sepharad left off and the note says so; no borders; no claim about any border today |
+| Go deeper: eight pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json, empires.json; bible/doctrines.json (Judgment and Justice; The Kingdom of God; Exile and Restoration); context/guides/the-violence-of-the-old-testament.json, left-lens-right-lens.json | Repository; every page live |
+
+Cut from the book page: the introduction's lines to Mark 1:15, to the deliverers as a pattern fulfilled in the one Savior, and to Philippians 2:5-11, which the New Testament does not draw from Obadiah; and the chapter note's line to Luke 10:30-37.
+
+## The plain notes on Obadiah 1 (2026-11-25)
+
+`client/public/bible/notes/obadiah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1 (its first words; the rest paraphrased, its inner quotation not quoted); 1:2; 1:3 (its first clause); 1:4; 1:5-9 paraphrased | 1-9 | BSB | BSB text |
+| Edom's high country; Esau; David and the ninth-century revolt; sela and Sela (2 Kings 14:7), Petra uncertain; Teman's wisdom and Eliphaz; those who eat your bread; Jeremiah 49 and three explanations; height brought low and plunder complete | 1-9 | obadiah/1.json `historical`, `cultural`, `literary` | Repository; the readings in their holders' terms |
+| Jeremiah 49:16 (its clauses); Jeremiah 49:7; Job 2:11 | 1-9 | obadiah/1.json `cultural`; BSB | Repository; BSB text |
+| 1:10; 1:11 (its last clause; the rest paraphrased); 1:12-13 paraphrased; 1:14 | 10-14 | BSB | BSB text |
+| Most date after 587 or 586 BC; Psalm 137:7, Lamentations and Ezekiel; the minority's Jehoram about 848 to 841 BC; no side taken; from standing by to joining in; brotherhood; lots; the crossroads; day repeated | 10-14 | obadiah/1.json `historical`, `cultural`, `literary` | Repository; each view in its holders' terms |
+| Psalm 137:7 (its clause); Ezekiel 25:12-14; 2 Kings 8:20-22 | 10-14 | obadiah/1.json `historical`; BSB | Repository; BSB text |
+| 1:15; 1:16 paraphrased; 1:17 (its first clause); 1:18-20 paraphrased; 1:21 | 15-21 | BSB | BSB text |
+| The Day for all nations; the punishment matching the crime and the cup of judgment; Zarephath of Sidon (1 Kings 17:9); Sepharad named nowhere else in the Bible; Edom's decline, Malachi and Idumea; the kingdom belonging to the LORD | 15-21 | obadiah/1.json `historical`; obadiah/intro.json `literary`; the BSB (Sepharad searched across the whole BSB) | Repository; BSB text |
+| Malachi 1:2-4; Amos 9:12 (its clause) | 15-21 | obadiah/1.json `historical`; obadiah/intro.json `story`; BSB | Repository; BSB text |
+| The hard note: specific and moral; God's vengeance, not Judah's; Amos and Israel; the Day for all nations; God's kingship; the tension with loving enemies, two readings; Edom not a code for a modern nation; no warrant for hatred or violence; no claim about any modern state or border | 15-21 `hard` | obadiah/1.json `hard`; obadiah/intro.json `reading`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+
+Cut in chapter 1: the deep note's lines to Mark 1:15, Herod and Romans 9 (kept on the book page only as history and the New Testament's own use of Malachi), and Luke 10:30-37, which the New Testament does not draw from Obadiah. An unsourced suggestion for Sepharad's location was cut before commit.
+
+## Jonah's book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/jonah/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Fifth of the Twelve; almost all narrative, one sentence of prophecy (3:4); Jonah son of Amittai; Nineveh; Tarshish; the storm, the sailors, the fish, the prayer; the second call; 3:4; the city repents, king to cattle; God relents; Jonah's anger and its reason; 4:11 | in-a-minute | jonah/intro.json `overview`; BSB | Repository; BSB text |
+| 2 Kings 14 and Jeroboam II; Amos and Hosea; 2 Kings 14:25; Assyria destroying the north; between Obadiah and Micah; Genesis 12:3 (paraphrased) and the nations; Acts and the Gentiles | story | jonah/intro.json `story`, `date`; BSB | Repository; BSB text |
+| Anonymous, third person; tradition and Jonah or his circle; most modern scholars and a later author (later Hebrew, 3:3's past tense, crafted form); the answers (northern Hebrew, narrative style); eighth-century setting; the guide's within 793 to 753; writing dated eighth, seventh or sixth, or fifth or fourth century; Nineveh until 612 BC | who | jonah/intro.json `author`, `date`; bible/guides/kings-of-israel-and-judah.json (the prophets table: Jonah within 793 to 753) | Repository; each view in its holders' terms |
+| History (2 Kings 14:25, told as events, Jesus placing the Ninevites beside the queen of the South); teaching story or parable (symmetry, humor, cattle in sackcloth, no named king, no Assyrian record; Jesus using a known story); both; no side taken; the question about mercy | genre | jonah/intro.json `reading` | Repository; each view in its holders' terms; no side taken |
+| Assyria on the upper Tigris, northern Iraq; campaigns west; brutality; Nineveh royal capital under Sennacherib around 700 BC; Samaria in 722 BC; Nahum; Joppa as Jaffa; Tarshish and Tartessus, or Sardinia; as far as a ship could go | world | jonah/intro.json `setting`; jonah/1.json `historical` | Repository |
+| Two mirrored halves; great; going down; appointed fish, plant, worm and wind; the pagans more responsive | built | jonah/intro.json `reading`; jonah/1.json `literary`; jonah/4.json `literary` | Repository |
+| 1:3; the reason held back; the great wind; the sailors' gods; Jonah asleep; lots; 1:9 (after its first sentence); the sailors row and pray; 1:16 (its clause); 1:17 paraphrased; the prayer from the deep; 2:9 (its last sentence); dry land | flight | jonah/1.json and 2.json `summary`, `cultural`; BSB | Repository; BSB text |
+| The second call; three days across; one day in; 3:5 (its first sentence); fast and sackcloth; the king in ashes; the decree, people and animals; 3:9 (its first clauses); 3:10 (its last clause); the unstated condition (Jeremiah 18); overturned as turned around | nineveh | jonah/3.json `summary`, `hard`, `literary`; BSB | Repository; BSB text; the readings in their holders' terms |
+| 4:2 (its clause); Exodus 34:6 echoed as complaint; the wish to die; 4:4 (God's question); the shelter east of the city; the plant, worm and wind; 4:11; the unanswered question; the wish to die recorded honestly and met with patience | question | jonah/4.json `cultural`, `literary`, `hard`; BSB | Repository; BSB text |
+| The care line ('If you have thoughts of hurting yourself, speak to someone today...' to '...lists places to turn.') | question | judges/plain/16.json; 1-kings/plain/19.json; job/plain/3.json and others | Reused whole, word for word; Find Help named; no phone number |
+| Matthew 12:39; Matthew 12:40; Matthew 12:41 (its clause); Luke 11:30; only these lines; never a reason to blame the Jewish people | new-testament | jonah/intro.json `christ`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: as a story; as a mirror; to the end | readers | jonah/intro.json `reading`, `overview` | Repository |
+| Hard passages (7) and key words (12): drawn from the parts above and the chapter notes' hard questions, `literary` and `words` | lists | jonah/1.json to 4.json; BSB | Repository; BSB text |
+| Timeline (7): Jeroboam II 793/792 to 753 and 2 Kings 14:25 (the guide); the eighth-century writing view; 722 with Thiele's 723 or 722; around 700 and Sennacherib; the seventh or sixth century view; 612 and Nineveh's fall; the fifth or fourth century view | timeline | bible/guides/kings-of-israel-and-judah.json; jonah/intro.json `date`, `setting` | Repository. The dating views are given without a side |
+| The map: Joppa, at the point and label this site's Acts map uses | map | acts/intro.json `teaching` map (Joppa); BSB (1:3) | Repository; Nineveh and Tarshish left off because neither is placed in this site's records, and the note says so; no borders; no claim about any border today |
+| Go deeper: eight pages | deeper | bible/guides/reading-narrative.json, reading-prophets.json, empires.json; bible/doctrines.json (The Nations and Mission; Repentance and Forgiveness; God's Character: Holiness, Love, Justice); context/guides/miracles-and-the-ancient-mind.json; the Honest Answer 'Is it okay to be angry at God?' (already linked from another book page) | Repository; every page live |
+
+Cut from the book page: the introduction's contrasts between Jonah and Jesus beyond what Jesus himself said, and its line that the closing question is answered in the gospel, which the New Testament does not draw from Jonah. No coordinates for Nineveh exist in the repository, so Nineveh is not drawn.
+
+## The plain notes on Jonah 1 (2026-11-25)
+
+`client/public/bible/notes/jonah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its clause); 1:3 (its first clause; the rest paraphrased) | 1-3 | BSB | BSB text |
+| The eighth century and Jeroboam II; Assyria and its harshness; Nineveh opposite Mosul, capital around 700 BC; Joppa a rare harbor; Tarshish and Tartessus; 500 miles northeast and more than 2,000 west; the phrase repeated; the reason held back | 1-3 | jonah/1.json `historical`, `literary` | Repository |
+| 2 Kings 14:25 (its phrase); Psalm 72:10; Isaiah 66:19 | 1-3 | jonah/1.json `historical`; BSB | Repository; BSB text |
+| The hard note: Psalm 139; away from service or from the land; 4:2's reason; patriotic motives; fear of seeming false; flight fails | 1-3 `hard` | jonah/1.json `hard` | Repository; the readings in their holders' terms |
+| 1:4 (its clause); 1:5-8 and 1:10 paraphrased; 1:9 | 4-10 | BSB | BSB text |
+| Each sailor's own god; the storm as an angry god; lots; Israel's use of lots; the questions to find the god; the God who made the sea; the sea as chaos; the captain telling the prophet to pray | 4-10 | jonah/1.json `cultural` | Repository |
+| Proverbs 16:33; Psalm 95:5 (its phrase) | 4-10 | jonah/1.json `cultural`; BSB | Repository; BSB text |
+| 1:11 and 1:13-14 paraphrased; 1:12 (its words); 1:15 (its last clause); 1:16; 1:17 | 11-17 | BSB | BSB text |
+| Innocent blood and bloodguilt; the sailors more honorable; great, hurl and the three stages of fear; the sailors worshiping; the Hebrew numbering 2:1 | 11-17 | jonah/1.json `cultural`, `literary` | Repository |
+| Matthew 12:40 | 11-17 | jonah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+
+Cut in chapter 1: nothing further. Jonah's offer in 1:12 is told as the book tells it, an offer to save the sailors, and is not read as a wish to die.
+
+## The plain notes on Jonah 2 (2026-11-25)
+
+`client/public/bible/notes/jonah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; 2:2 (its last sentence; the first paraphrased); 2:3-5 paraphrased (2:4's inner quotation not quoted); 2:6 (its last sentence, in double quotes for its exclamation) | 1-6 | BSB | BSB text |
+| The sea and Sheol; the pit; the roots of the mountains and the barred earth; a frame around a poem; a thanksgiving psalm's shape; down and up; echoes of the psalms; a northern prophet and the temple, earthly or heavenly | 1-6 | jonah/2.json `cultural`, `literary`, `historical` | Repository |
+| Psalm 120:1 (after its heading); Psalm 42:7 (its clause) | 1-6 | jonah/2.json `literary`; BSB | Repository; BSB text |
+| The hard note: history and miracle; whale stories poorly documented and not needed; teaching story; three days and three nights as an idiom touching three days; God rescuing a disobedient prophet; the question of mercy; no side taken | 1-6 `hard` | jonah/2.json `hard` | Repository; the readings in their holders' terms |
+| 2:7; 2:8; 2:9 paraphrased and its last sentence (in double quotes); 2:10 | 7-10 | BSB | BSB text |
+| The todah, thank offering and vow; the sailors' vows; worthless idols as vapor; the psalm composed, borrowed or added; the deliberate contrast with 4:2-3; the abrupt, earthy ending and irony | 7-10 | jonah/2.json `cultural`, `historical`, `literary` | Repository; the views in their holders' terms |
+| Psalm 31:6 (its clause); Matthew 12:39 (its clause) | 7-10 | jonah/2.json `literary`; jonah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+
+Cut in chapter 2: nothing further.
+
+## The plain notes on Jonah 3 (2026-11-25)
+
+`client/public/bible/notes/jonah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; 3:2 paraphrased; 3:3; 3:4 (in double quotes, for its exclamation) | 1-4 | BSB | BSB text |
+| The second chance; Calah and Nineveh; Sennacherib's capital around 700 BC; the three days read three ways; five Hebrew words, no call to repent; haphak as destroyed or turned around; Genesis 19:25 | 1-4 | jonah/3.json `historical`, `literary` | Repository; the readings in their holders' terms |
+| Genesis 19:25 (its first clause) | 1-4 | jonah/3.json `literary`; BSB | Repository; BSB text |
+| 3:5 (its first sentence); 3:6-7 paraphrased; 3:8 (its phrase); 3:9; 3:10 (its last clause) | 5-10 | BSB | BSB text |
+| Fasting and sackcloth; ashes; the king undoing his dignity; animals in mourning and Herodotus on Persian horses; the cattle of 4:11; king of Nineveh read three ways; no Assyrian record; the instability, plague, revolts and the eclipse of 763 BC as a possibility, unproven; turn and evil in two senses; who knows as hope without presumption | 5-10 | jonah/3.json `cultural`, `historical`, `literary` | Repository; the readings in their holders' terms |
+| Joel 2:14 (its clause); 2 Samuel 12:22 (its words); Matthew 12:41 (its clause) | 5-10 | jonah/3.json `cultural`; jonah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| The hard note: an unconditional-sounding judgment; the unstated condition (Jeremiah 18:7-10); the Ninevites' hope; the purpose fulfilled; Nineveh destroyed in 612 BC as Nahum announced; the question of mercy | 5-10 `hard` | jonah/3.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 3: nothing further. The word 'journey' is kept only inside quoted Scripture.
+
+## The plain notes on Jonah 4 (2026-11-25)
+
+`client/public/bible/notes/jonah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1; 4:2 (its clause; the rest paraphrased); 4:3; 4:4 (God's question, in double quotes) | 1-4 | BSB | BSB text |
+| Assyria's feared power and boasted cruelty; Samaria in 722 BC; real reasons for dread; Exodus 34:6 after the golden calf; the confession echoed; recited as complaint; the wish to die recorded honestly; God answering with a question | 1-4 | jonah/4.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 34:6; 1 Kings 19:4 paraphrased | 1-4 | jonah/4.json `cultural`; BSB | Repository; BSB text |
+| The hard note: the words of anger and despair said twice (4:3, 8); neither approved nor shamed; God's patience | 1-4 `hard` | jonah/4.json `literary`; the brief (the crisis rules, as Job and 1 Kings 19 were handled) | Repository; stated as the brief asks |
+| The care line ('If you have thoughts of hurting yourself, speak to someone today...' to '...lists places to turn.') | 1-4 `hard` | judges/plain/16.json; 1-kings/plain/19.json; job/plain/3.json and others | Reused whole, word for word; Find Help named; no phone number |
+| 4:5 and 4:7-10 paraphrased; 4:6 (its last clause); 4:11 | 5-11 | BSB | BSB text |
+| The sukkah and poor shade; the plant uncertain, castor-oil plant, the Greek's gourd, Jerome's ivy; the east wind; appointed linking to 1:17; lesser to greater; 120,000 as a round number, the whole city or children; Nahum's closing question | 5-11 | jonah/4.json `cultural`, `historical`, `literary` | Repository; the readings in their holders' terms |
+| Psalm 145:9; Nahum 3:19 | 5-11 | jonah/4.json `literary`; BSB | Repository; BSB text |
+| The hard note: the deliberate ending; the question aimed at the reader; the first readers' resentment; the book's own existence and Jonah's circle; the question best unanswered; God's compassion; never a reason to blame the Jewish people | 5-11 `hard` | jonah/4.json `hard`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+
+Cut in chapter 4: the deep note's report of Augustine's Letter 71 and Jerome's Letter 112 on the ivy, kept to a single clause naming Jerome's choice, to keep the note short.
+
+## Micah's book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/micah/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Sixth of the Twelve; seven chapters; Moresheth in the foothills; Jotham, Ahaz, Hezekiah; the second half of the eighth century; Isaiah's contemporary; Assyria; the charges; Samaria and 3:12; the remnant; 4:1-3; 5:2; 6:8; the hymn on Micah's name; 7:18 | in-a-minute | micah/intro.json `overview`; BSB | Repository; BSB text |
+| 2 Kings 15 to 20 and Isaiah 1 to 39; 722 and 701 BC; the towns near home; Jeremiah 26:18 quoting 3:12 and Hezekiah's turning; Micah 4:1-3 and Isaiah 2:2-4 | story | micah/intro.json `overview`, `setting`; micah/3.json `historical`; micah/4.json `historical`; BSB | Repository; BSB text |
+| 1:1; Moresheth-gath (1:14) in the Shephelah; no father named; a countryman; much of 1 to 3 from Micah; 4 to 7 added in part (4:10, 7:8-20) or mostly Micah's own; Babylon restless in Hezekiah's day | who | micah/intro.json `author` | Repository; each view in its holders' terms |
+| 1:6 before 722 BC; 1:10-16 and 701 BC; the introduction's about 740 to about 700 against the guide's 735 to 700 | who | micah/intro.json `date`; bible/guides/kings-of-israel-and-judah.json (the prophets table) | Repository. Sources differ and the page says so |
+| Tiglath-pileser III and deportation; Samaria in 722 BC; Sennacherib in 701 BC; Jerusalem spared; the Lachish reliefs at Nineveh, now in the British Museum; land as inheritance; estates gathered by debt, pressure and courts; Isaiah 5:8 | world | micah/intro.json `setting`; BSB | Repository; BSB text |
+| Three cycles opening with Hear (1:2; 3:1; 6:1), each from judgment to hope; the puns of 1:10-16; the lawsuit of chapter 6 | built | micah/intro.json `reading`, `structure` | Repository |
+| 2:1; 2:2; God's counter-plan; the preacher of wine; rulers devouring the people (named, not quoted); hired prophets; 3:8; bribes, prices and money (3:11); 3:12; Jeremiah 26 and Hezekiah; 587 or 586 BC | leaders | micah/2.json and 3.json `summary`, `hard`, `historical`; BSB | Repository; BSB text |
+| 4:1; 4:3; the vine and fig tree; Isaiah 2:2-4 and four views; war continuing and the millennial readings; no nation's program, no party; 5:2; 5:5 (its clause); Bethlehem as David's town | hope | micah/4.json `historical`, `hard`; micah/5.json `cultural`; the brief; BSB | Repository; BSB text; the readings in their holders' terms |
+| The courtroom and the mountains; 6:3 (its first sentence); Egypt, Moses, Aaron, Miriam; the worshiper's questions; 6:8; 6:8 in context (6:4); worship not abolished but refused as bargain; the firstborn of 6:7, kings of Judah and the law, named not described | lawsuit | micah/intro.json `reading`; micah/6.json `literary`, `historical`, `hard`; BSB | Repository; BSB text |
+| The grief of 7:1-6; 7:6; 7:7; the fallen city who will rise; the prayer to shepherd; 7:18 (its first clause); 7:19 (its last sentence); 7:20 paraphrased | pardon | micah/7.json `summary`, `literary`; BSB | Repository; BSB text |
+| Matthew 2:5-6 and the chief priests and scribes; Matthew 2:6 (its last clause); John 7:42; Matthew 10:36 with 7:6; only these lines; no blame on the Jewish people | new-testament | micah/intro.json `christ`; micah/5.json `christ`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: three cycles; doom and comfort held together; the charges on oneself and on the powerful of every party; the covenant's standard; 6:8 between 6:3 and the hymn | readers | micah/intro.json `reading` | Repository |
+| Hard passages (10) and key words (12): drawn from the parts above and the chapter notes' hard questions, `cultural` and `literary` | lists | micah/1.json to 7.json; BSB | Repository; BSB text |
+| Timeline (8): Jotham 750 to 735 (the guide: regent from 750, lost power 735); Ahaz 735 to 716/715; Micah about 740 to about 700, with the guide's 735 to 700; 722, with Thiele's 723 or 722; Hezekiah 716/715 to 687/686 and Jeremiah 26:18-19; 701 and Sennacherib; early in Jehoiakim's reign, 609 or after (Jeremiah 26:1, with Jehoiakim from 609 in the guide); 587 or 586 | timeline | bible/guides/kings-of-israel-and-judah.json; micah/intro.json `date`, `setting`; micah/3.json `historical` | Repository. Sources differ and the page says so |
+| The map: Jerusalem, Samaria (a region), Bethlehem and Gilead (a region), each at a point and label already used on this site's maps | map | the points already used on the site's maps (1 Chronicles; 1 Kings); BSB (each place's verses) | Repository; Moresheth-gath, Lachish, Gath and the towns of 1:10-16, and Bashan, left off and the note says so; no borders; no claim about any border today |
+| Go deeper: nine pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json, empires.json; bible/doctrines.json (Justice, the Poor, and the Stranger; The Messiah; Repentance and Forgiveness); context/guides/what-justice-meant.json, messianic-expectation.json, left-lens-right-lens.json | Repository; every page live |
+
+Cut from the book page: the introduction's lines from 5:4 to John 10, from 4:1-3 to Luke 24:47 and Acts 1:8, and from 7:18-20 to forgiveness won by Christ, which the New Testament does not draw from Micah. The picture of 3:2-3 is named and not quoted.
+
+## The plain notes on Micah 1 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1 (to its dash); 1:2 (its first sentence, in double quotes); 1:3-7 paraphrased | 1-7 | BSB | BSB text |
+| The 740s to about 700 BC; Samaria before 722 BC; theophany at Sinai and in the psalms; high places; Jerusalem as Judah's high place; the wages of a prostitute as temple treasure; the verdict on God's own people | 1-7 | micah/1.json `historical`, `cultural`, `hard` | Repository |
+| Psalm 97:5 (its clause); 2 Kings 17:5-6 | 1-7 | micah/1.json `cultural`; BSB | Repository; BSB text |
+| The hard note: privilege and responsibility; the nations not innocent; status no protection; Micah weeping; restoration promised; Israel's own Scripture; never a reason to blame the Jewish people | 1-7 `hard` | micah/1.json `hard`; the brief | Repository; stated as the brief asks |
+| 1:8 (its first sentence); 1:9-16 paraphrased | 8-16 | BSB | BSB text |
+| Mourning customs; the jackal and ostrich; shaving the head; 2 Samuel 1:20 echoed; the puns of each town; the Shephelah; Sennacherib in 701 BC, forty-six towns and Hezekiah caged (his own account), or Sargon II around 711 BC; Lachish's fall, the ramp and the reliefs; Adullam and David | 8-16 | micah/1.json `cultural`, `literary`, `historical` | Repository; both datings in their holders' terms |
+| 2 Samuel 1:20 (its first words); Isaiah 20:2-4; 1 Samuel 22:1 | 8-16 | micah/1.json `literary`, `cultural`, `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 1: nothing drawn to the New Testament.
+
+## The plain notes on Micah 2 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (in double quotes, for its exclamation, and its clause); 2:2; 2:3-5 paraphrased (2:4's inner quotation not quoted) | 1-5 | BSB | BSB text |
+| Eighth-century wealth and debt; seized fields and houses; Micah's country view; land by lot and God's ownership; Jubilee; boundary stones; Naboth; the matching verb; no share in the dividing | 1-5 | micah/2.json `historical`, `cultural`, `literary` | Repository |
+| Leviticus 25:23 (its clause); Isaiah 5:8 (its clause); 1 Kings 21:3 paraphrased | 1-5 | micah/2.json `cultural`, `historical`; BSB | Repository; BSB text |
+| The hard note: fraud and legal seizure both; bribed judges (3:11); legality not the measure; Jubilee and redemption; differing views on modern economics; power not to strip the vulnerable; no modern program or party | 1-5 `hard` | micah/2.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 2:6 paraphrased (its inner quotations not quoted); 2:7-10 paraphrased; 2:11 (its last clause, in double quotes) | 6-11 | BSB | BSB text |
+| A dispute quoting the people; preach as drip, five times; the cloak and the law; women and children driven out; the man of wind and ruach | 6-11 | micah/2.json `literary`, `cultural` | Repository |
+| Exodus 22:22; Isaiah 30:10 (its phrase) | 6-11 | micah/2.json `cultural`; BSB | Repository; BSB text |
+| 2:12 (its first sentence); 2:13 | 12-13 | BSB | BSB text |
+| The abrupt turn to hope; the shepherd and the one who breaks open the way; the King as the LORD; the remnant through the book (4:7; 5:7-8; 7:18) | 12-13 | micah/2.json `literary`, `summary` | Repository |
+| Isaiah 40:11 (its clauses); Ezekiel 34:12-13 | 12-13 | BSB | BSB text |
+
+Cut in chapter 2: two unsourced lines (a reading of 2:12-13 as the false prophets' words, and a detail of sheepfold custom) were cut before commit.
+
+## The plain notes on Micah 3 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 (its question); 3:2-3 named and not quoted; 3:4 paraphrased | 1-4 | BSB | BSB text; the picture named, not quoted |
+| Jerusalem under Ahaz and Hezekiah; growth and refugees; the western hill, Hezekiah's tunnel and walls; judges at the gate; the grotesque picture as metaphor; the matched judgment | 1-4 | micah/3.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 23:8 (its clause); Ezekiel 34:2-3 paraphrased | 1-4 | micah/3.json `cultural`; BSB | Repository; BSB text |
+| 3:5 (its clause); 3:6-7 paraphrased; 3:8 | 5-8 | BSB | BSB text |
+| Prophets supported by gifts (1 Samuel 9:7-8); peace for the paying; divination forbidden (Deuteronomy 18:10-14); covering the mouth; 3:8 as a calling | 5-8 | micah/3.json `cultural`, `literary` | Repository |
+| 1 Samuel 9:7-8; Deuteronomy 18:10-14; Jeremiah 6:14 paraphrased | 5-8 | micah/3.json `cultural`; BSB | Repository; BSB text |
+| 3:9; 3:10; 3:11 (its first sentence; the rest paraphrased); 3:12 | 9-12 | BSB | BSB text |
+| Three offices for sale; Zion built with bloodshed and forced labor or seized land; the false confidence; Jeremiah 26:17-19; spared in 701 BC; fallen in 587 or 586 BC | 9-12 | micah/3.json `cultural`, `historical` | Repository |
+| Jeremiah 26:18 (its clause) | 9-12 | micah/3.json `historical`; BSB | Repository; BSB text |
+| The hard note: Jeremiah 26:17-19; Hezekiah's repentance; delayed, not canceled; Jonah's Nineveh; the condition (Jeremiah 18:7-10); prophecy meant to change hearers | 9-12 `hard` | micah/3.json `hard` | Repository |
+
+Cut in chapter 3: nothing drawn to the New Testament.
+
+## The plain notes on Micah 4 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (its first clause); 4:2 and 4:4 paraphrased (4:2's inner quotation not quoted); 4:3; 4:5 (its clause) | 1-5 | BSB | BSB text |
+| Zion raised after 3:12; mountains as meeting places; nations as pilgrims; torah as instruction; plowshares and pruning hooks; the vine and fig tree and chapter 2; Isaiah 2:2-4 and four views; Micah's added verse 4 | 1-5 | micah/4.json `historical`, `cultural` | Repository; the views in their holders' terms |
+| Isaiah 2:2-4; 1 Kings 4:25 (its phrase) | 1-5 | micah/4.json `historical`, `cultural`; BSB | Repository; BSB text |
+| The hard note: the last days; premillennial, amillennial and postmillennial readings; living now as citizens of that peace; verses 9-13 and present war; war not the last word; no nation's politics, no party | 1-5 `hard` | micah/4.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 4:6 (its opening words); 4:7 (its last sentence); 4:8 paraphrased | 6-8 | BSB | BSB text |
+| On that day; the lame and outcast; Migdal-eder near Bethlehem (Genesis 35:21); the former dominion of David | 6-8 | micah/4.json `cultural`, `literary` | Repository |
+| Genesis 35:21; Zephaniah 3:19 (its clause) | 6-8 | micah/4.json `cultural`; BSB | Repository; BSB text |
+| 4:9 paraphrased; 4:10 (its last sentence, in double quotes); 4:11 and 4:13 paraphrased; 4:12 | 9-13 | BSB | BSB text |
+| Three oracles beginning now; labor's pain and hope; Babylon in Micah's day, Merodach-baladan's envoys (2 Kings 20:12-19) and Isaiah's warning; a later addition or Micah's own; the exile and Cyrus 539 or 538 BC; threshing and sheaves; the judgment God's; no warrant for violence; no claim about any nation today | 9-13 | micah/4.json `historical`, `cultural`, `literary`; the brief | Repository; both views in their holders' terms |
+| Isaiah 39:6 paraphrased; Ezra 1:1-4 | 9-13 | micah/4.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 4: nothing drawn to the New Testament.
+
+## The plain notes on Micah 5 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 paraphrased; 5:2 (to its dash; the rest paraphrased); 5:3 paraphrased; 5:4 (its first sentence); 5:5 (its first clause); 5:5-6 paraphrased | 1-6 | BSB | BSB text |
+| Assyria, 722 and 701 BC; the siege of 5:1 or the Babylonian siege; the Hebrew numbering; Bethlehem six miles south; Ephrathah; David's anointing; the royal line begun again; clans as thousands; from of old read as Davidic roots by most modern commentators and beyond human ancestry by many Christian interpreters; kings as shepherds; seven, even eight | 1-6 | micah/5.json `historical`, `cultural`, `literary`; micah/verses/5.json (5:2 grammar) | Repository; the readings in their holders' terms |
+| 1 Samuel 16:1 paraphrased; Matthew 2:5 (its words); Matthew 2:6 (its last clause); John 7:42 (its phrase) | 1-6 | micah/5.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+| The hard note: Hezekiah in 701 BC as a near fulfillment; Assyria as the oppressor of the day; one picture of the future; the ends of the earth; the Christian confession; Matthew's wording against the Hebrew and 2 Samuel 5:2 | 1-6 `hard` | micah/5.json `hard`, `christ` | Repository; the readings in their holders' terms |
+| 5:7 (its clause); 5:8-12 and 5:14-15 paraphrased; 5:13 (its last clause) | 7-15 | BSB | BSB text |
+| Dew and lion side by side; the list of trusted things, Asherah poles; cut off repeated, aimed first at God's people; peace not through horses; no warrant for violence; no claim about any nation today | 7-15 | micah/5.json `cultural`, `literary`; the brief | Repository; stated as the brief asks |
+| Deuteronomy 17:16 paraphrased; Psalm 20:7 | 7-15 | BSB | BSB text |
+
+Cut in chapter 5: the deep note's line to Ephesians 2:14, which Paul does not draw from Micah.
+
+## The plain notes on Micah 6 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1 paraphrased; 6:2 (its first two sentences); 6:3 (its first sentence); 6:4; 6:5 paraphrased (its 'journey' not quoted) | 1-5 | BSB | BSB text |
+| Courtroom and treaty witnesses; heaven and earth; riv and the covenant lawsuit; my people twice; Balak and Balaam; Shittim to Gilgal | 1-5 | micah/6.json `cultural`, `literary` | Repository |
+| Numbers 22 to 24; Joshua 3 to 4; Deuteronomy 32:1 (its first clause) | 1-5 | micah/6.json `cultural`; BSB | Repository; BSB text |
+| 6:6; 6:7 paraphrased; 6:8 | 6-8 | BSB | BSB text |
+| Four rising questions; the firstborn not idle, Ahaz and Manasseh (2 Kings 16:3; 21:6) and the law (Leviticus 18:21), named not described; mishpat, hesed and walking humbly; already shown; already redeemed (6:4) | 6-8 | micah/6.json `literary`, `historical`; micah/intro.json `reading` | Repository |
+| Leviticus 18:21 paraphrased; 1 Samuel 15:22 (its clause); Hosea 6:6 (its first clause) | 6-8 | BSB | BSB text |
+| The hard note: not pure morality over ritual; the prophets on worship without justice; 4:1-2; no quantity of offerings; worship not a transaction; Christ's once-for-all offering in Christian reading; 6:8 as life after rescue | 6-8 `hard` | micah/6.json `hard`; micah/intro.json `reading` | Repository; the readings in their holders' terms |
+| 6:9 paraphrased; 6:10 (its clause); 6:11; 6:12-13 paraphrased; 6:14 (its first clause); 6:15; 6:16 paraphrased | 9-16 | BSB | BSB text |
+| The ephah and weights; short measures and Amos; futility curses; Omri and Ahab, Baal and Naboth; Jerusalem taking on Samaria's ways | 9-16 | micah/6.json `cultural`, `literary`, `historical` | Repository |
+| Deuteronomy 25:13-16; Amos 8:5 (its two words); 1 Kings 21 | 9-16 | micah/6.json `cultural`, `historical` | Repository |
+
+Cut in chapter 6: nothing drawn to the New Testament. No care line is added: the firstborn of 6:7 is a worshiper's question, named and answered, not an act described.
+
+## The plain notes on Micah 7 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 paraphrased; 7:2 (its first sentence); 7:3-5 paraphrased; 7:6; 7:7 | 1-7 | BSB | BSB text |
+| Gleaning after harvest; the early fig; the same world as chapters 2, 3 and 6; the circle of trust failing from friend to children; verse 7 as the hinge | 1-7 | micah/7.json `cultural`, `historical`, `literary` | Repository |
+| Leviticus 19:9-10; Matthew 10:36 | 1-7 | micah/7.json `cultural`; micah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| 7:8 (in double quotes, for its exclamation); 7:9 (its last sentence); 7:10-13 paraphrased (7:10's inner quotation not quoted) | 8-13 | BSB | BSB text |
+| A liturgy of voices; Zion and her enemy as women; sin owned; 8-20 dated to exile or return, or Micah's own look ahead; read after Jerusalem's fall | 8-13 | micah/7.json `literary`, `historical` | Repository; both views in their holders' terms |
+| Psalm 115:2 paraphrased; Isaiah 60:1 (its clause) | 8-13 | BSB | BSB text |
+| 7:14 (its first sentence); 7:15-17 paraphrased; 7:18 (to its dash; the rest paraphrased); 7:19 (its last sentences); 7:20 | 14-20 | BSB | BSB text |
+| Bashan and Gilead taken around 733 or 732 BC (2 Kings 15:29); the royal shepherd of 5:4 turned to prayer; Genesis 3:14 echoed; Micah's name and the closing question; faithfulness and loving devotion from Sinai; Tashlikh and the Day of Atonement reading after Jonah | 14-20 | micah/7.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 34:6 (its phrase); Psalm 103:12 | 14-20 | BSB | BSB text |
+| The hard note: anger and mercy both held; Exodus 34:6-7; anger real but not final; mercy the direction; the cross in Christian theology; differing descriptions | 14-20 `hard` | micah/7.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 7: nothing further drawn to the New Testament.
+
+## Nahum's book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/nahum/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested-quote check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Seventh of the Twelve; three chapters; one oracle against Nineveh; Assyria's century of rule, Israel destroyed and Judah ravaged; 1:2, 1:3 and 1:7; the battle poetry; unsettling; the first hearers and comfort to the oppressed | in-a-minute | nahum/intro.json `overview`; BSB | Repository; BSB text |
+| A counterpart to Jonah; both sides of Sinai's words; one Book of the Twelve; both ending with a question | story | nahum/intro.json `overview`; nahum/3.json `hard`, `literary` | Repository |
+| Nahum the Elkoshite (1:1); comfort; Elkosh uncertain (Galilee, southern Judah, Al Qosh and the tomb tradition); one writer, the hymn perhaps an older psalm; after Thebes about 663 BC (3:8-10); before 612 BC; soon after 663 or near 612; the guide's window and probably under Josiah; the minority view | who | nahum/intro.json `author`, `date`; bible/guides/kings-of-israel-and-judah.json (the prophets table and Josiah's row: probably Nahum) | Repository; each view in its holders' terms |
+| Sennacherib, Esarhaddon, Ashurbanipal; Nineveh's palaces, gardens and aqueduct; Manasseh a vassal; the palace reliefs and Lachish in the British Museum; Ashurbanipal's death in the 630s or 620s; Nabopolassar; 612 BC and the Babylonian Chronicle; Harran by 609; Carchemish 605; Nineveh rediscovered in the nineteenth century | world | nahum/intro.json `setting`; nahum/2.json `cultural` | Repository |
+| Three parts; the turn between Nineveh and Judah; poetry to read aloud; the word against a nation spoken for God's people | built | nahum/intro.json `reading`; nahum/1.json `literary` | Repository |
+| 1:2; 1:3 (its clause); 1:7; vengeance as a legal idea; wrath balanced; the empire's own records; the two responses; 1:15 (its clause) | god | nahum/1.json `hard`; BSB | Repository; BSB text; the readings in their holders' terms |
+| The attack and the taunt; red shields, chariots, river gates; the lion kings and the empty den; 2:13 (God's words); 3:1; harlot and sorceress as alliances; 3:8 (its question); Thebes; 3:19 (its last clause) | fall | nahum/2.json and 3.json `cultural`, `literary`; BSB | Repository; BSB text |
+| No mourning for Nineveh; written from the victims' side; violence coming home; judgment God's, no revenge; the prophets' grief over enemies; Jonah; Ezekiel 18:23 (its question); no gloating; atrocities named, not described; no key to any people's suffering; no warrant to wish destruction; 3:5 as a city's disgrace, no warrant to shame any woman | care | nahum/2.json `hard`; nahum/3.json `hard`, `cultural`; the brief; BSB | Repository; BSB text; stated as the brief asks |
+| The New Testament never quotes Nahum; 1:15 and Isaiah 52:7 (its clause); Romans 10:15 quoting Isaiah's form | new-testament | nahum/intro.json `christ`; BSB | Repository; BSB text |
+| How to read: aloud; beside Jonah; from the side of the oppressed; a warning to every power first; the last question turned on the reader | readers | nahum/intro.json `reading`; nahum/3.json `hard` | Repository |
+| Hard passages (6) and key words (11): drawn from the parts above and the chapter notes' hard questions, `cultural` and `literary` | lists | nahum/1.json to 3.json; BSB | Repository; BSB text |
+| Timeline (7): 701 and Lachish; Manasseh 697/696 to 643/642 (the guide); Thebes about 663; between 663 and 612, probably under Josiah (the guide); Ashurbanipal's death in the 630s or 620s; 612 and the Babylonian Chronicle; 609 and 605 | timeline | bible/guides/kings-of-israel-and-judah.json; nahum/intro.json `date`, `setting` | Repository |
+| The map: Jerusalem, at the point this site's maps use, drawn to mark Judah (1:15), with the note saying Nahum names Judah, not the city | map | the points already used on the site's maps; BSB (1:15) | Repository; Nineveh, Thebes, Bashan, Carmel, Lebanon, Egypt, Cush, Put and Libya left off and the note says so; no borders; no claim about any border today |
+| Go deeper: eight pages | deeper | bible/guides/reading-prophets.json, empires.json, kings-of-israel-and-judah.json; bible/doctrines.json (Judgment and Justice; God's Character; Suffering and Evil); context/guides/the-violence-of-the-old-testament.json; questions/old-testament/the-god-of-the-old-testament.json (status live) | Repository; every page live |
+
+Cut from the book page: the introduction's lines to Romans 10:15 as a reading of Nahum (kept only as Paul's use of Isaiah's form), to Christ disarming the powers, to Revelation 18 and to the cross, which the New Testament does not draw from Nahum. The cruelties of 3:3 and 3:10 are named and not described; 3:5 is not quoted.
+
+## The plain notes on Nahum 1 (2026-11-25)
+
+`client/public/bible/notes/nahum/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its first sentence); 1:3 (its first sentence); 1:4-6 and 1:8 paraphrased; 1:7 | 1-8 | BSB | BSB text |
+| Between about 663 and 612 BC; Manasseh and Amon as vassals; massa; storm imagery and the LORD alone; Bashan, Carmel, Lebanon; a partial acrostic; the hymn framed by God's character with Sinai's line | 1-8 | nahum/1.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 34:7 (its clause); Psalm 29:3 paraphrased | 1-8 | nahum/1.json `cultural`, `literary`; BSB | Repository; BSB text |
+| The hard note: vengeance legal; wrath and patience; the empire's records; the troubled and the victims' readings; vengeance God's alone | 1-8 `hard` | nahum/1.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 1:9-12 and 1:14 paraphrased; 1:13; 1:15 (its first words and its clause) | 9-15 | BSB | BSB text |
+| Abrupt turns and added names; the plotter as Sennacherib or Assyrian kingship; the yoke breaking as Assyria cracked; names and descendants, inscriptions and statues; the runner; the Hebrew numbering 2:1 | 9-15 | nahum/1.json `historical`, `cultural`, `literary` | Repository |
+| Isaiah 52:7 (its clause); Romans 10:15 quoting Isaiah; 2 Kings 18:28-35 | 9-15 | nahum/intro.json `christ`; nahum/1.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 1: nothing drawn from Nahum to the New Testament.
+
+## The plain notes on Nahum 2 (2026-11-25)
+
+`client/public/bible/notes/nahum/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 and 2:3-5 and 2:7-10 paraphrased; 2:2 (its first clause); 2:6 | 1-10 | BSB | BSB text |
+| 612 BC, Nabopolassar and the Medes; the Babylonian Chronicle and a siege of months; the walls, gates, Tigris and Khosr; flooding debated (Diodorus Siculus, late and legendary; the waterworks; poetic imagery); red shields and scarlet; flashing chariots; three rhyming words; written from the victims' side | 1-10 | nahum/2.json `historical`, `cultural`, `literary` | Repository; the views in their holders' terms |
+| Isaiah 10:12 paraphrased; Zephaniah 2:13 paraphrased | 1-10 | BSB | BSB text |
+| The hard note: no mourning; the victims' side; Assyria's own reliefs; violence coming home; judgment God's; the prophets' grief over enemies; Jonah; no reason to gloat | 1-10 `hard` | nahum/2.json `hard`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+| 2:11; 2:12 paraphrased; 2:13 (its first words, in double quotes; the rest paraphrased) | 11-13 | BSB | BSB text |
+| Assyrian kings as lions; Ashurbanipal's lion-hunt reliefs in the British Museum; the empty den; the formula of 2:13 and 3:5 | 11-13 | nahum/2.json `cultural`, `literary` | Repository |
+| Isaiah 5:29 paraphrased; Ezekiel 29:3 (its formula) | 11-13 | BSB | BSB text |
+
+Cut in chapter 2: an unsourced line identifying the messengers of 2:13 was cut before commit. The scene of the captive women (2:7) is told in the BSB's own words and not dwelt on.
+
+## The plain notes on Nahum 3 (2026-11-25)
+
+`client/public/bible/notes/nahum/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; 3:2-6 paraphrased (the dead of 3:3 not described); 3:7 (its last question) | 1-7 | BSB | BSB text |
+| Hoy as a funeral cry; nouns without verbs; harlot and sorceress as alliances and divination; 3:5 and public shaming and stripped captives; the prophets' vocabulary of disgrace; Isaiah 47:2-3 | 1-7 | nahum/3.json `cultural`, `literary` | Repository |
+| Isaiah 47:2-3; Nahum 2:13 (its formula) | 1-7 | nahum/3.json `cultural`; BSB | Repository; BSB text |
+| The hard note: a city's disgrace; painful for readers who have known abuse; a picture of an empire brought low; no warrant to shame, strip or harm a woman, or anyone | 1-7 `hard` | nahum/3.json `cultural`; the brief | Repository; stated as the brief asks |
+| The care line ('If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn.') | 1-7 `hard` | deuteronomy/plain/13.json and nine more | Reused whole, word for word; Find Help named; no phone number |
+| 3:8; 3:9 paraphrased; 3:10 (its first sentence; the rest named and not described); 3:11-13 paraphrased | 8-13 | BSB | BSB text; the atrocities named, not described |
+| No-Amon and Amun; Thebes the religious capital; the Cushite dynasty; Put and Libya; Ashurbanipal's sack about 663 BC in Assyrian inscriptions; Assyria's own records of such treatment; the question as a mirror | 8-13 | nahum/3.json `historical` | Repository |
+| Jeremiah 46:25; Ezekiel 30:14-16 | 8-13 | BSB | BSB text |
+| 3:14 (in double quotes, for its exclamation); 3:15-17 paraphrased; 3:18 (its first sentence); 3:19 | 14-19 | BSB | BSB text |
+| Siege water and mud brick; the locust pictures turned twice; locusts on the walls; the closing question beside Jonah's; 612 BC and no mourning; the empire gone within a generation | 14-19 | nahum/3.json `cultural`, `literary`, `historical` | Repository |
+| Jonah 4:11 (its clause); Ezekiel 18:23 (its question) | 14-19 | nahum/3.json `hard`, `literary`; BSB | Repository; BSB text |
+| The hard note: the deliberate difference from Jonah; a later time, spoken to the victims; both sides of Sinai's words; the applause from the nations, not God's pleasure; Ezekiel 18:23; the question as a weighing; the canon's pairing; no gloating; no key to any people's suffering; no warrant to wish destruction; the warning to every power | 14-19 `hard` | nahum/3.json `hard`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+
+Cut in chapter 3: the deep note's line to Revelation 18, which the New Testament does not draw from Nahum.
 ## The plain notes on Proverbs 16 (2026-11-25)
 
 `client/public/bible/notes/proverbs/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
@@ -21929,6 +22485,256 @@ Cut in chapter 11: nothing beyond the policy on lines to Christ. The scan's list
 
 Cut in chapter 12: nothing beyond the policy on lines to Christ.
 
+## Ecclesiastes' book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/ecclesiastes/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Twenty-first book, twelve chapters; a search; Qoheleth; under the sun (1:3); the tests; hevel and 1:2; the plain goods as God's gifts; 3:11; the narrator and 12:13; honesty that readers trust | in-a-minute | bible/books.json; ecclesiastes/intro.json `overview`; BSB | Repository; BSB text |
+| With Job and Proverbs; between Proverbs and the Song; the Writings and the five scrolls; Tabernacles; Genesis 3 and 3:19; hevel and Abel; set in David's son's reign; Proverbs and the hard cases | story | ecclesiastes/intro.json `story`; guides/reading-wisdom.json sections 6 and 8; BSB | Repository; BSB text |
+| 1:1; Qoheleth from to gather; the Greek Ekklesiastes; Solomon in tradition; Duane Garrett defending Solomon's authorship; never named; 1:16; kings from the outside; late Hebrew and pardes (2:5); the tenth century or about 450 to 250 BC; Dead Sea Scrolls copies around the second century BC; no side | who | ecclesiastes/intro.json `author`, `date`; guides/reading-wisdom.json section 5; BSB | Repository; each view in its holders' terms; no side |
+| Hevel thirty-eight times; breath or vapor; Jerome's vanitas and ‘vanity’; NIV ‘meaningless’; BSB ‘futile’; ‘fleeting’; Fox's ‘absurd’; emptiness, brevity, enigma; not worthless; 1:14 | hevel | guides/reading-wisdom.json section 5; ecclesiastes/intro.json `reading`, `themes`; ecclesiastes/1.json `words` (hevel), `hard`; BSB | Repository; BSB text |
+| The two voices (1:1-2; 7:27; 12:8-14); the path of the Teacher's words as the structure gives it; the refrains; 1:2 and 12:8 wrapping the book | built | ecclesiastes/intro.json `structure`, `reading`, `author`; ecclesiastes/1.json and 12.json `literary` | Repository |
+| 1:18; the king's tests and possessions; 2:11; one fate and forgetting; inheritance; 2:17 as a cry, not counsel; 2:24 | search | ecclesiastes/1.json and 2.json `summary`, `literary`, `hard`; BSB | Repository; BSB text |
+| The self-harm line (‘If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country...’ to ‘...lists places to turn.’), in the parts on chapter 2 and chapter 4 | search; injustice | job/plain/3.json and the 1 Kings 19 and 2 Samuel 17 notes (`hard`) | Reused byte for byte; Find Help named; no phone number |
+| 3:1; fourteen pairs; 3:11; injustice in the courts; one fate and the same dust; ‘who knows’ (3:21); 12:7 | time | ecclesiastes/3.json `literary`, `summary`, `hard`; BSB | Repository; BSB text |
+| 4:1 and ‘no comforter’ twice; 4:2-3 paraphrased; the two readings and Job 3 and Jeremiah 20; 9:4; company, not a verdict; not saying anyone is better off dead; 4:9; vows (5:1-7); 5:10 | injustice | ecclesiastes/4.json `hard`, `cultural`; ecclesiastes/5.json `summary`; BSB | Repository; BSB text |
+| 7:2; wisdom better than folly; its limits; 8:14; 7:26-28 and the readings, verse 29 and all humanity, women bearing God's image | wisdom | ecclesiastes/7.json `hard`, `literary`; ecclesiastes/8.json `hard`; BSB | Repository; BSB text; each reading in its holders' terms |
+| Seven commendations of joy as God's gift; 9:7; 9:8-9 paraphrased; 9:10; Siduri's counsel in an Old Babylonian Gilgamesh; the answer within Israel's faith | joy | ecclesiastes/intro.json `themes` (joy as God's gift), `setting`; ecclesiastes/9.json `cultural`; BSB | Repository; BSB text |
+| Death the leveler; 9:5; the readings and the answers (under the sun; Daniel 12:2; 12:7 and 12:14); the poem of 12:1-7 paraphrased with 12:7 and 12:1 quoted | death | ecclesiastes/9.json `hard`; ecclesiastes/12.json `cultural`; ecclesiastes/intro.json `themes`; BSB | Repository; BSB text |
+| The narrator (12:9-11); goads; 12:13-14; Crenshaw (1987) and the later ending; Whybray (1982) and joy; Fox's frame and Longman (1998); Kidner's The Message of Ecclesiastes (1976); the fear of God (5:7) and judgment (3:17; 11:9) already in the Teacher; no side; read with its conclusion | epilogue | guides/reading-wisdom.json section 5; ecclesiastes/12.json `hard`; BSB | Repository; each view in its holders' terms; no side |
+| The Mishnah (Yadayim 3:5) and defiling the hands; the Talmud (Shabbat 30b) and the beginning and end in Torah; lines in common speech; chapter 3 set to music | canon | guides/reading-wisdom.json sections 5 and 8 | Repository |
+| No direct quotation; Romans 8:20-21 and the Greek word for hevel; 1 Corinthians 15:58; thematic, not predictive | new-testament | ecclesiastes/intro.json `christ` (the site's book page wording, kept); ecclesiastes/1.json `christ`; BSB | Repository; BSB text; only the lines the site's book page already draws |
+| How to read: a search, not rulings; 3:19 lifted out; the narrator's places; the refrains; honesty in the dark; read beside Job and Proverbs | reading | ecclesiastes/intro.json `reading`; guides/reading-wisdom.json sections 6 and 8 | Repository |
+| Hard passages (16), each drawn from the chapter notes' hard questions and the parts above; key words (15): hevel, Qoheleth, yitron, re'ut (1.json); amal, miqreh, pardes, simchah (2.json); et, olam (3.json); cheleq, yare (5.json); tov (7.json); Sheol (9.json); dorvan (12.json) | lists | the notes named; BSB | Repository; BSB text |
+| Timeline: Solomon about 970 to 931 BC; the tenth century or about 450 to 250 BC; Dead Sea Scrolls copies around the second century BC; 1 Corinthians about AD 53 to 55; Romans about AD 57; Kidner 1976; Whybray 1982; Crenshaw 1987; Longman 1998 | lists | guides/kings-of-israel-and-judah.json; guides/reading-wisdom.json section 5; ecclesiastes/intro.json `date`; the 1-corinthians and romans book pages' timelines | Repository |
+| The map: Jerusalem alone, at the point the site's other maps use, refs 1:1, 1:12 and 2:9 | map | the james, psalms and proverbs book pages (the Jerusalem point); BSB | Repository; no borders; no claim about any border today |
+| Go deeper: eleven pages | deeper | guides/reading-wisdom.json, reading-poetry.json; /tools/wisdom-books; bible/doctrines.json (wisdom, intermediate, work); the Honest Answer on whether a life can mean anything without God; wisdom/entry/purpose-and-meaning.json, facing-death.json, joy.json; needs/purpose.json (titles as the pages give them) | Repository; every page live in the search index |
+
+Cut from the book page: the old introduction's lines that Jesus, ‘one greater than Solomon’, enters the world under the sun, and that his rising is the new thing the Teacher could not find (kept only as the book page's own thematic sentence on 1 Corinthians 15:58); the deep notes' lines to Christ through the chapters (the Comforter, the rich fool, the good shepherd, the judgment of Christ); the deep note's line that 7:16 is read in several named ways (no readings named in the repository; the verse is set beside 7:17 and 7:20 instead). The explore indexes were rebuilt in the same commit, and `teaching.test.tsx` names Ecclesiastes among the books with a teaching guide, on the `canaan` frame.
+
+## The plain notes on Ecclesiastes 1 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (with its inner quotations kept as the BSB has them); 1:3; 1:4; the sun and wind (1:5-6); 1:7 (its first clause); 1:8; 1:9; 1:11 (its first clause) | 1-11 | BSB | BSB text |
+| The narrator of verses 1-2 and the frame at 12:8-14; hevel and its translations; the superlative form; yitron, found only in Ecclesiastes, as profit; the ancient picture of sun and rivers, not a science lesson; the rhythm copying the motion; the world after Genesis 3 | 1-11 | ecclesiastes/1.json `literary`, `cultural`, `story`, `words` (hevel, yitron); ecclesiastes/intro.json `reading` | Repository |
+| Psalm 144:4; Romans 8:20 (in part) | 1-11 | the chapter data's cross-references for 1:2 (Psalm 144:4; Romans 8:20); ecclesiastes/1.json `christ` and ecclesiastes/intro.json `christ` (Romans 8 and the Greek word for hevel); BSB | Repository; BSB text; the line as the site's book page draws it |
+| The hard note: hevel as meaningless, as brevity, as enigma; under the sun; the narrator's close (12:13-14); not worthless, but no lasting gain under the sun | 1-11 `hard` | ecclesiastes/1.json `hard` | Repository; each reading in its holders' terms |
+| 1:12; 1:13 (its last sentence, an exclamation not quoted: the quotation ends before it); 1:14; 1:15; 1:16 paraphrased (it holds an inner quotation); 1:17 (its last clause); 1:18 | 12-18 | BSB | BSB text |
+| The king best placed to search; Solomon in tradition, the tenth century; never named, a royal role; 1:16 and the debate, with rulers of Jerusalem before David; royal inscriptions and a lasting name undercut by verse 11; pursuit of the wind; verse 18 turning wisdom's value upside down | 12-18 | ecclesiastes/1.json `historical`, `cultural`, `literary`, `words` (re'ut) | Repository; each view in its holders' terms |
+| 1 Kings 4:29; Job 28:12 | 12-18 | the chapter data's cross-references for 1:16 (1 Kings 4:30; 3:12); ecclesiastes/1.json `story`; BSB | Repository; BSB text |
+
+Cut in chapter 1: the deep note's line that Christian faith answers ‘nothing new’ with the resurrection as new creation (left to the book page's own wording on the New Testament). No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 2 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (its last sentence; the first, with an inner quotation, paraphrased); 2:2 paraphrased; 2:3 (its last clause; the verse holds dashes); 2:4; 2:5; the possessions (2:6-8) paraphrased (verse 8 holds a dash); 2:9; 2:10 (its first sentence); 2:11 | 1-11 | BSB | BSB text |
+| The search carried out; pleasure, achievement, wealth, wisdom; the royal voice whether or not Solomon wrote; royal parks of Assyria and Persia, canals and reservoirs; a royal household and marriage alliances; pardes from Persian and ‘paradise’; ‘for myself’ repeated | 1-11 | ecclesiastes/2.json `story`, `historical`, `cultural`, `literary`, `words` (pardes) | Repository |
+| 1 Kings 10:23 (from ‘King Solomon’); 1 John 2:17 (its first clause) | 1-11 | the chapter data's cross-references for 2:9 (1 Kings 10:23) and 2:11 (1 John 2:16-17); BSB | Repository; BSB text |
+| 2:13; 2:14; 2:16 (its exclamation, in double quotes); 2:17; 2:18 paraphrased; 2:19 (its first sentence); 2:20; 2:23 | 12-23 | BSB | BSB text |
+| Wisdom better than folly; miqreh and death; inheritance to sons; Rehoboam (1 Kings 12) and verse 19; verse 17 recorded as a cry, not counsel, not the last word; the restless night | 12-23 | ecclesiastes/2.json `cultural`, `literary`, `words` (miqreh); the brief's crisis rules | Repository |
+| The self-harm line (‘If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country...’ to ‘...lists places to turn.’) | 12-23 | job/plain/3.json and the 1 Kings 19 and 2 Samuel 17 notes (`hard`) | Reused byte for byte; Find Help named; no phone number |
+| Psalm 127:2 (its first sentence, before the dash; the rest paraphrased); Elijah under the broom tree, and the bread and sleep God gave (1 Kings 19:4-8) | 12-23 | the chapter data's cross-references for 2:17 (1 Kings 19:4) and 2:23 (Psalm 127:2); 1-kings/plain/19.json; BSB | Repository; BSB text |
+| 2:24; 2:25; the giver and the sinner (2:26) paraphrased, with its last sentence quoted | 24-26 | BSB | BSB text |
+| The new note of gift; from grasping to receiving; simchah tested and given; the last verse still ending in futility | 24-26 | ecclesiastes/2.json `story`, `words` (simchah) | Repository |
+| Ecclesiastes 8:15 (its clause); 1 Timothy 6:17 (its last clause) | 24-26 | the chapter data's cross-references for 2:24 (8:15; 1 Timothy 6:17); BSB | Repository; BSB text |
+| The hard note: resigned pleasure-seeking as one reading; verse 24's ‘from the hand of God’ and verse 25; received, not grasped as a substitute; the last verse's futility | 24-26 `hard` | ecclesiastes/2.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 2: the deep note's lines to Christ (the rich fool, Luke 12:16-21; one greater than Solomon; 1 Corinthians 15:58 beside the Teacher's despair, which is left to the book page's own wording).
+
+## The plain notes on Ecclesiastes 3 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; 3:2; 3:3 paraphrased; 3:4; 3:5-6 paraphrased; 3:7; 3:8 | 1-8 | BSB | BSB text |
+| A wider view after chapter 2; seasons under God, against chapter 1's cycle; fourteen pairs, twenty-eight times, twice seven; the stones (2 Kings 3:19, 25; the later Jewish reading), uncertain; tearing and mending in mourning; life close to birth, death, harvest and war; seasons described, not killing or hating made a duty | 1-8 | ecclesiastes/3.json `story`, `literary`, `cultural`, `words` (et) | Repository; each reading in its holders' terms |
+| The grief line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 1-8 | 1-samuel/plain/1.json (1-8) and the other notes care.mjs names | Reused byte for byte; Find Help named |
+| Psalm 30:5 (its second sentence); Romans 12:15 | 1-8 | the chapter data's cross-references for 3:4 (Psalm 30:5; Romans 12:15); BSB | Repository; BSB text |
+| 3:9; the burden (3:10) paraphrased; 3:11; rejoicing (3:12) paraphrased; 3:13 (before its dash); 3:14 | 9-15 | BSB | BSB text |
+| Reflection on the poem; yapheh, beautiful or fitting; olam; made for eternity, living in a moment; a right time in ancient wisdom (Egypt, Greece) and the times belonging to God; the fear of God already in verse 14 | 9-15 | ecclesiastes/3.json `historical`, `literary`, `words` (yapheh, olam) | Repository |
+| Romans 1:20 (its first clause); Job 11:7 | 9-15 | the chapter data's cross-references for 3:11 (Romans 1:19-20; Job 11:7); BSB | Repository; BSB text |
+| 3:16; 3:17 paraphrased (it holds an inner quotation); the shared fate (3:19) paraphrased (it holds a dash); 3:20; 3:21; 3:22 (its first sentence) | 16-22 | BSB | BSB text |
+| Corrupt courts in any period, the prophets, later officials; God's judgment as the remaining hope; ‘who knows’ and the Teacher's honesty | 16-22 | ecclesiastes/3.json `historical`, `literary` | Repository |
+| Genesis 3:19 (its last sentence, inside the LORD's words); Ecclesiastes 12:7 (its last clause) | 16-22 | the chapter data's cross-references for 3:20 (Genesis 3:19; 12:7); BSB | Repository; BSB text |
+| The hard note: denial or doubt as one reading; what is seen under the sun; ‘who knows’ as ignorance, not denial; limited light growing to Daniel 12; 12:7; honest observation answered by the rest of Scripture, or a humbling of pride | 16-22 `hard` | ecclesiastes/3.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 3: the deep note's line to Christ (the resurrection of Christ as the answer to verses 18-21, left to the book page's wording on the New Testament).
+
+## The plain notes on Ecclesiastes 4 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1; 4:2; 4:3 | 1-3 | BSB | BSB text |
+| From chapter 3's trust to the side of the victims; no family or patron; the comforter as family and friends; ‘no comforter’ twice; oppression under Israel's kings and later empires, not one regime | 1-3 | ecclesiastes/4.json `story`, `historical`, `cultural`, `words` (nacham, ashuqim) | Repository |
+| Lamentations 1:2 (its second sentence); Job 3:11 (its first clause) | 1-3 | the chapter data's cross-references for 4:1 (Lamentations 1:2) and 4:2 (Job 3:11); BSB | Repository; BSB text |
+| The hard note: among the darkest words in Scripture; a settled view or a cry (Job 3; Jeremiah 20); preserved without being made final truth; 9:4; company, not a verdict; it does not say anyone is better off dead | 1-3 `hard` | ecclesiastes/4.json `hard`; the brief's crisis rules | Repository |
+| The self-harm line (‘If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country...’ to ‘...lists places to turn.’) | 1-3 `hard` | job/plain/3.json and the 1 Kings 19 and 2 Samuel 17 notes (`hard`) | Reused byte for byte; Find Help named; no phone number |
+| 4:4; 4:5; 4:6; the lonely man (4:8) paraphrased (it holds an inner quotation and a dash); 4:9; 4:10 (an exclamation, in double quotes); warmth (4:11) paraphrased; 4:12 | 4-12 | BSB | BSB text |
+| Work driven by comparison; verses 5 and 6 charting a middle course; no son or brother, no heir, no care in old age; three examples; a shared cloak; rope-making; the cord applied to marriage or friendship, the text's general point | 4-12 | ecclesiastes/4.json `cultural`, `literary` | Repository |
+| Genesis 2:18 (the LORD's first clause); Galatians 6:2 (its first clause) | 4-12 | the chapter data's cross-references for 4:9 (Genesis 2:18) and 4:10 (Galatians 6:1); BSB | Repository; BSB text |
+| 4:13; the youth (4:14-15) paraphrased; the forgotten successor (4:16) paraphrased, its last sentence quoted | 13-16 | BSB | BSB text |
+| Joseph, David and later rulers suggested; no figure fits every detail; the difficult Hebrew; a parable; the fickleness of fame | 13-16 | ecclesiastes/4.json `historical` | Repository; each reading in its holders' terms |
+| Genesis 41:14 (its first sentence) | 13-16 | the chapter data's cross-references for 4:14 (Genesis 41:14); BSB | Repository; BSB text |
+
+Cut in chapter 4: the deep note's lines to Christ (the Spirit as the Comforter, John's Gospel, and Jesus' blessing on those who mourn beside verse 1; the disciples sent two by two and the church as a body beside verses 9-12; the note calls them connections of theme).
+
+## The plain notes on Ecclesiastes 5 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1; 5:2; 5:3; 5:4; 5:5; 5:6 paraphrased; 5:7 | 1-7 | BSB | BSB text |
+| The Hebrew numbering (4:17); the first direct commands; the sacrifice of fools and the prophets; to listen as to obey; vows freely made and binding; Deuteronomy 23:21-23; the messenger as priest or temple official (Malachi 2:7), or an angel; dreams and words paired; ‘fear God’ | 1-7 | ecclesiastes/5.json `story`, `cultural`, `literary`, `words` (nadar, yare) | Repository; each reading in its holders' terms |
+| Deuteronomy 23:22 (from ‘if you refrain’); James 1:19 (from ‘Everyone’) | 1-7 | ecclesiastes/5.json `cultural` (Deuteronomy 23:21-23); the chapter data's cross-references for 5:1 (James 1:19); BSB | Repository; BSB text |
+| 5:8 (its last clause; the first paraphrased); 5:9 paraphrased; 5:10; 5:11 paraphrased; 5:12; 5:13 (its clause); 5:14 paraphrased; 5:15 | 8-17 | BSB | BSB text |
+| Medinah in the Persian period (Esther, Ezra, Nehemiah) and in Ahab's story (1 Kings 20:14-19); the bureaucracy reading and Solomon's districts (1 Kings 4:7-19); the farmer's lack of recourse; the worker's sleep and the guarded goods; verse 15 echoing Job 1:21 | 8-17 | ecclesiastes/5.json `historical`, `cultural` | Repository; each reading in its holders' terms |
+| Job 1:21 (Job's first sentence); 1 Timothy 6:7 | 8-17 | ecclesiastes/5.json `cultural` (Job 1:21; 1 Timothy 6:7); BSB | Repository; BSB text |
+| The hard note: weary realism or partial reassurance; verse 9's difficult Hebrew; not approving oppression (4:1; 12:14); not naive about power | 8-17 `hard` | ecclesiastes/5.json `hard` | Repository; each reading in its holders' terms |
+| 5:18 (before its dash); riches enjoyed (5:19) paraphrased, its last sentence quoted; 5:20 | 18-20 | BSB | BSB text |
+| The counterweight; cheleq; verse 20's two readings; chapter 6's darker case | 18-20 | ecclesiastes/5.json `story`, `literary`, `words` (cheleq) | Repository; each reading in its holders' terms |
+| 1 Timothy 6:17 (its last clause); Deuteronomy 8:18 (its first clause) | 18-20 | the chapter data's cross-references for 5:18 (1 Timothy 6:17) and 5:19 (Deuteronomy 8:18); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (Matthew 6:7, 5:33-37 and James 5:12 beside verses 2-6; the rich fool and Matthew 6:19-21 beside verses 13-17; Mark 9:7 and listening to the Son; the note calls them thematic). No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 6 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1; 6:2; 6:3 paraphrased; 6:4 paraphrased; 6:5 (its last clause); 6:6 (its last sentence) | 1-6 | BSB | BSB text |
+| The coin turned over from chapter 5; enjoyment in God's hand; wealth, children, long life and burial as marks of a good life; fortunes passing to strangers; burial and its denial (Jeremiah 22:18-19); the stillborn comparison meant to shock, like Job 3:11-16; not a judgment on any child or parent | 1-6 | ecclesiastes/6.json `story`, `historical`, `cultural` | Repository |
+| Care line (‘If you carry grief or guilt about a pregnancy, or about the loss of a child before or after birth...’ to ‘...lists places to turn.’) | 1-6 | pray-psalms/psalm/139.json, job/intro.json, job/plain/42.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| Psalm 17:14 (its last clause of the first sentence); Job 3:16 (in double quotes) | 1-6 | the chapter data's cross-references for 6:2 (Psalm 17:14) and 6:3 (Job 3:16); ecclesiastes/6.json `cultural` (Job 3:11-16); BSB | Repository; BSB text |
+| The hard note: stated and unsolved; the under-the-sun reading (3:11; 12:14); enjoyment as a separate gift; honesty about common experience; no accusation of God; humility and dependence | 1-6 `hard` | ecclesiastes/6.json `hard` | Repository; each reading in its holders' terms |
+| 6:7; 6:8 paraphrased; 6:9; 6:10; 6:11 paraphrased (it holds a dash); 6:12 | 7-12 | BSB | BSB text |
+| Nephesh through the chapter; the wandering of desire; naming as authority (Genesis 1 and 2; renamed vassals); God as the stronger one; verses 10-12 as the book's midpoint; hevel five times; the questions setting up the second half | 7-12 | ecclesiastes/6.json `literary`, `cultural`, `words` (nephesh, hevel) | Repository |
+| James 4:14 (its first sentence, before its exclamation); Psalm 39:6 (its first clause) | 7-12 | the chapter data's cross-references for 6:12 (James 4:14; Psalm 39:5-6); BSB | Repository; BSB text |
+
+Cut in chapter 6: the deep note's lines to Christ (Mark 8:36 and the rich fool, Luke 12:16-21; John 4:13-14 and 10:10 as the answer to the restless appetite; the note calls them thematic).
+
+## The plain notes on Ecclesiastes 7 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1; 7:2; 7:4; the thorns (7:6) paraphrased; 7:8; 7:9; 7:10 paraphrased (it holds an inner quotation); 7:12 paraphrased; 7:13; 7:14 | 1-14 | BSB | BSB text |
+| The answer in part to 6:12; ‘better’ sayings; tov eleven times; traditional wisdom tested; the shift to what can be known; houses of mourning and professional mourners (Jeremiah 9:17-18); facing death soberly, not a wish to die; shem and shemen; sirim and sir; thornbushes burning fast | 1-14 | ecclesiastes/7.json `story`, `cultural`, `literary`, `words` (tov) | Repository |
+| The grief line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 1-14 | 1-samuel/plain/1.json (1-8) and the other notes care.mjs names | Reused byte for byte; Find Help named |
+| Job 11:7 (its first clause); Job 2:10 (Job's question, in double quotes) | 1-14 | the chapter data's cross-references for 7:13-14 (Job 11:7 by way of 3:11; Job 2:10 by way of 7:14); BSB | Repository; BSB text |
+| 7:15; 7:16; 7:17; 7:18 (its last sentence); 7:19; 7:20; the servant's curse (7:21) paraphrased; 7:22 | 15-22 | BSB | BSB text |
+| Verse 15 as what Proverbs' patterns cannot explain; verses 16-17 not a call to sin; verse 16 heard beside verse 20 as against trusting one's own righteousness; avoiding both errors; verses 21-22 | 15-22 | ecclesiastes/7.json `literary`, `words` (tsaddiq); the text of 7:16-20 | Repository; BSB text |
+| Romans 3:23 (its clause); 1 Kings 8:46 (its clause, between the dashes) | 15-22 | ecclesiastes/7.json `christ` (Romans 3:10-23 and 7:20); proverbs/20.json `hard`; BSB | Repository; BSB text |
+| 7:23 (its last sentence); 7:24; the search (7:25) paraphrased; 7:26 (from ‘the woman’); ‘says the Teacher’ (7:27); 7:28 paraphrased; 7:29 (from ‘God made’) | 23-29 | BSB | BSB text |
+| Matsa through the passage; a search that fails as the lesson; Proverbs 5 to 7 and 9; the narrator's voice in verse 27 | 23-29 | ecclesiastes/7.json `literary`, `cultural`, `words` (matsa) | Repository |
+| Job 28:12; Genesis 1:27 (its last clause) | 23-29 | ecclesiastes/7.json `hard` (Genesis 1:27); the chapter data's cross-references for 7:24 (Job 28:12 by way of Job 11:7); BSB | Repository; BSB text |
+| The hard note: the readings (a limited observation recorded, not endorsed; Folly of Proverbs 5 to 9; Solomon's thousand, 1 Kings 11:3; verse 29's adam and both sexes found wanting; combinations); the final word indicting humanity; Genesis 1:27 and Proverbs 31; no license for contempt toward women | 23-29 `hard` | ecclesiastes/7.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 7: the deep note's lines to Christ (Christ as the righteousness the Teacher found wanting; 1 Corinthians 1:24, 30 and wisdom come near beside verse 24; Matthew 5:4 beside the house of mourning; the note calls them connections of theme and fulfillment).
+
+## The plain notes on Ecclesiastes 8 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1 (its first three sentences); 8:2; 8:3-4 paraphrased (verse 4 holds an inner quotation); 8:5; 8:7; 8:8; 8:9 paraphrased | 1-9 | BSB | BSB text |
+| Absolute monarchy in Solomon's court, Persia and the Greek kingdoms; the oath of loyalty in God's name (2 Kings 11:17); court manners as life and death; Esther 4:11; Egyptian and Mesopotamian advice to officials; counsel for living under power, not a teaching that rulers are always right (verse 9); ruach as wind and breath; no discharge in wartime (Deuteronomy 20:5-8) | 1-9 | ecclesiastes/8.json `historical`, `cultural`, `words` (ruach) | Repository |
+| Esther 4:11 (paraphrased, with its second sentence quoted); Psalm 89:48 (its first sentence) | 1-9 | ecclesiastes/8.json `cultural` (Esther 4:11); the chapter data's cross-references for 8:8 (Psalm 89:48 by way of 3:19-20); BSB | Repository; BSB text |
+| The honored burial (8:10) paraphrased, its last sentence quoted; 8:11; 8:12; 8:13 paraphrased; 8:14 (in double quotes); 8:15 (its first sentence; the second paraphrased) | 10-15 | BSB | BSB text |
+| Verse 10's difficult Hebrew and the two translations; slow justice and bold wrongdoing; verses 12-14 side by side | 10-15 | ecclesiastes/8.json `historical`, `literary` | Repository; each reading in its holders' terms |
+| Psalm 73:3; Psalm 73:17 (its last clause) | 10-15 | guides/reading-wisdom.json section 6 (Psalm 73); BSB | Repository; BSB text |
+| The hard note: three views (traditional wisdom quoted and tested; both believed, by faith and by sight; looking past what is seen to the final judgment, 12:14); neither side denied | 10-15 `hard` | ecclesiastes/8.json `hard`, `literary` | Repository; each reading in its holders' terms |
+| The sleepless task (8:16) paraphrased (it holds dashes); 8:17 | 16-17 | BSB | BSB text |
+| The verb to find, as in chapter 7; humility about the limits of understanding; preparation for chapter 9 | 16-17 | ecclesiastes/8.json `literary`, `story` | Repository |
+| Romans 11:33 (in double quotes, as it holds exclamations); Job 11:7 | 16-17 | ecclesiastes/8.json `christ` (Romans 11:33 echoing the chapter's conclusion); the chapter data's cross-references for 8:17 (Job 11:7 by way of 3:11); BSB | Repository; BSB text |
+
+Cut in chapter 8: the deep note's lines to Christ (John 10:17-18 and Hebrews 2:14-15 beside verse 8; 2 Peter 3:9 and Acts 17:31 beside delayed justice; the note calls them thematic). No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 9 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1 (its clause; the rest paraphrased); 9:2 (its first two sentences); 9:3 (its first sentence); 9:4; 9:5; 9:6 paraphrased | 1-6 | BSB | BSB text |
+| What follows from chapter 8; the pairs of opposites; miqreh; the dog and the lion; Sheol and Daniel 12:2 | 1-6 | ecclesiastes/9.json `story`, `literary`, `cultural`, `words` (miqreh, Sheol) | Repository |
+| Daniel 12:2; Ecclesiastes 12:7 (its last clause) | 1-6 | ecclesiastes/9.json `hard`, `cultural` (Daniel 12:2); BSB | Repository; BSB text |
+| The hard note: verses 5, 6 and 10 and the unconscious-dead teaching; under the sun and absence from this world; limited light growing to Daniel 12:2, and the New Testament's hope in the resurrection of Jesus; 12:7 and 12:14; Christians differing on the intermediate state; the confession of the resurrection of the body; nothing here says anyone is better off dead, and the living have hope | 1-6 `hard` | ecclesiastes/9.json `hard`; bible/doctrines.json (intermediate); the brief's crisis rules | Repository |
+| The self-harm line (‘If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country...’ to ‘...lists places to turn.’) | 1-6 `hard` | job/plain/3.json and the 1 Kings 19 and 2 Samuel 17 notes (`hard`) | Reused byte for byte; Find Help named; no phone number |
+| 9:7 (before its colon); 9:8; 9:9 (its first clause, before the dash, and its last sentence); 9:10 | 7-10 | BSB | BSB text |
+| White garments and oil as festivity (Psalm 23:5; 104:15); the Old Babylonian Gilgamesh and Siduri's counsel; the different setting, God's approval and gift; cheleq; verse 10 as wholehearted work, not despair | 7-10 | ecclesiastes/9.json `cultural`, `words` (cheleq); ecclesiastes/intro.json `setting` | Repository |
+| Psalm 104:15 (its first two clauses); Psalm 23:5 (its second sentence) | 7-10 | ecclesiastes/9.json `cultural`; BSB | Repository; BSB text |
+| 9:11 (in double quotes); 9:12 paraphrased; 9:14; 9:15; 9:16 paraphrased (it holds an inner quotation); 9:17; 9:18 | 11-18 | BSB | BSB text |
+| Skill and effort without guarantee; siege ramps, Assyrian reliefs, Lachish in 701 BC; the story perhaps a parable; the wise woman of Abel Beth-maacah (2 Samuel 20:14-22) and the different ending; the double-edged last verse | 11-18 | ecclesiastes/9.json `historical`, `literary` | Repository |
+| 2 Samuel 20:22 (its first clause); Ecclesiastes 7:19 | 11-18 | ecclesiastes/9.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 9: the deep note's lines to Christ (1 Corinthians 15:20 and 15:58 as the answer to verse 5, left to the book page's wording; 2 Corinthians 8:9 and Isaiah 53:3 beside the poor wise man, which the note says is not a prophecy of Christ; the Lord's Supper beside verse 7, which it calls thematic).
+
+## The plain notes on Ecclesiastes 10 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 10:1; 10:2; 10:3 paraphrased; 10:4; the ruler's error (10:5-6) paraphrased (verse 5 holds a dash); 10:7 | 1-7 | BSB | BSB text |
+| From 9:18 to a collection on folly; Proverbs with the Teacher's edge; the perfumer's costly oil; right and left as strength and weakness, nothing to do with modern political labels; the court upside down | 1-7 | ecclesiastes/10.json `story`, `cultural`, `literary` | Repository |
+| Proverbs 19:10 (its first clause, before the dash); Proverbs 30:22 (its first clause) | 1-7 | the chapter data's cross-references for 10:6-7 (Proverbs 19:10; 30:22); BSB | Repository; BSB text |
+| 10:8; 10:9; 10:10; 10:11; 10:12; 10:13 paraphrased; 10:14 (its first sentence); 10:15 | 8-15 | BSB | BSB text |
+| Ordinary work and its risks; snakes in old walls; snake charming (Psalm 58:4-5; Jeremiah 8:17); yitron ending the cluster; the fool's speech and the road to the city | 8-15 | ecclesiastes/10.json `cultural`, `literary`, `words` (yitron) | Repository |
+| Psalm 58:5; Proverbs 18:7 | 8-15 | ecclesiastes/10.json `cultural` (Psalm 58:4-5); the chapter data's cross-references for 10:12 (Proverbs 18:7 by way of 10:14 and Proverbs 18:6-7); BSB | Repository; BSB text |
+| 10:16; 10:17 paraphrased, its last clause quoted; 10:18; 10:19; 10:20 | 16-20 | BSB | BSB text |
+| Rehoboam and the young men (1 Kings 12:1-19); child kings (2 Kings 11:21; 22:1); na'ar as youth or servant; morning feasts as dissipation (Isaiah 5:11); roofs that leak; the bird as ‘walls have ears’ | 16-20 | ecclesiastes/10.json `historical`, `cultural` | Repository; each reading in its holders' terms |
+| Isaiah 5:11 (its first clause); 1 Kings 12:13 (its last clause) | 16-20 | ecclesiastes/10.json `cultural` (Isaiah 5:11), `historical` (1 Kings 12); BSB | Repository; BSB text |
+| The hard note: ironic, quoting the princes of verse 16; or realistic, money paying for feasts and wine; the verb's range; 5:10 and 5:15; not the book's final word on wealth | 16-20 `hard` | ecclesiastes/10.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 10: the deep note's lines to Christ (Matthew 12:42 and 12:36 beside the fool's words; the righteous king beside verses 16-17); James 3 (used elsewhere). No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 11 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 11:1; 11:2; clouds and the tree (11:3) paraphrased; 11:4; 11:5; 11:6 | 1-6 | BSB | BSB text |
+| From observation to urging; not knowing as a reason to act; verse 1's two readings (generosity; trade by sea); Phoenician partners and Solomon's three-year voyages (1 Kings 10:22); verse 2 fitting either; seven, even eight (Amos 1-2; Proverbs 30); farmers and the weather; ruach as wind or breath in the womb | 1-6 | ecclesiastes/11.json `story`, `historical`, `cultural`, `literary`, `words` (ruach) | Repository; each reading in its holders' terms |
+| Psalm 139:15 (its first clause); 2 Corinthians 9:6 (its last clause) | 1-6 | the chapter data's cross-references for 11:5 (Psalm 139:15); ecclesiastes/11.json `christ` (2 Corinthians 9:6 as an echo of the call to sow); BSB | Repository; BSB text |
+| 11:7; 11:8 (its first three clauses); 11:9; 11:10 | 7-10 | BSB | BSB text |
+| Light and darkness framing 7-8; hevel as fleeting; the thought running into 12:1; chapters 11-12 as the closing appeal | 7-10 | ecclesiastes/11.json `literary`, `story`, `words` (hevel) | Repository |
+| Numbers 15:39 (paraphrased, with its last words quoted); Ecclesiastes 12:1 (its first clause) | 7-10 | ecclesiastes/11.json `hard` (Numbers 15:39); BSB | Repository; BSB text |
+| The hard note: verse 9 as apparent permission; Numbers 15:39 and the tension; the judgment clause added at once; energy and delight, accountable to God; judgment as the frame that makes joy responsible; verse 10; gift and trust held together | 7-10 `hard` | ecclesiastes/11.json `hard` | Repository |
+
+Cut in chapter 11: the deep note's line to Christ (John 3:8 beside verse 5, which the note says Jesus does not quote); 2 Corinthians 9:6 kept as Paul's own picture of sowing. No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 12 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1 (its first clause; the rest, with an inner quotation, paraphrased); 12:2-4 paraphrased; 12:5 (its last clause, after the dash; the rest paraphrased); 12:6; 12:7; 12:8 (with its inner quotation kept as the BSB has it) | 1-8 | BSB | BSB text |
+| Chapter 11 running on; ‘remember’; one long sentence held by ‘before’; the allegory of the aging body (arms, legs, teeth, eyes, white hair, stiff walk); the household or town at a death, or a storm; both together; the breaking cord, bowl, pitcher and wheel; Genesis 2:7 and 3:19; dignity, not dread | 1-8 | ecclesiastes/12.json `story`, `cultural`, `literary` | Repository; each reading in its holders' terms |
+| Genesis 2:7 (its first clause); Psalm 90:12 | 1-8 | ecclesiastes/12.json `cultural` (Genesis 2:7); the chapter data's cross-references for 12:1 (Psalm 90:12 by way of the call to remember); BSB | Repository; BSB text |
+| 12:9; 12:10; 12:11; 12:12; 12:13-14 (in double quotes) | 9-14 | BSB | BSB text |
+| The third-person epilogue and the narrator of 1:1; addressing the reader as a son; goads and nails; the single Shepherd as God, or Solomon, or the human teacher; the warning about books; an ending in the fear of God and judgment | 9-14 | ecclesiastes/12.json `literary`, `cultural`, `historical`, `christ` (the Shepherd's readings), `words` (dorvan) | Repository; each reading in its holders' terms |
+| Proverbs 1:7 (its first clause); Job 28:28 named | 9-14 | guides/reading-wisdom.json section 6 (Proverbs, Job and Ecclesiastes sharing the fear of the LORD); BSB | Repository; BSB text |
+| The hard note: a later softening; Fox and the frame by design; distance or endorsement (verses 9-10); the fear of God (5:7) and judgment (3:17; 11:9) already in the Teacher; the search's direction named; an open question, no side; read with its conclusion | 9-14 `hard` | ecclesiastes/12.json `hard`; guides/reading-wisdom.json section 5 | Repository; each reading in its holders' terms; no side |
+
+Cut in chapter 12: the deep note's lines to Christ (Romans 8:20-21 and 1 Corinthians 15:58, left to the book page's wording; John 10:11 and the good shepherd beside the single Shepherd, which the note calls thematic; 2 Corinthians 5:10 and the judgment of Christ beside verse 14). No care line is needed in this chapter; old age and death are told with dignity.
 ## Isaiah's book page (teaching introduction, 2026-11-25)
 
 Every claim in `client/public/bible/notes/isaiah/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions and guides, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested-quote check (0 problems each) and by `validate-bible-notes.mjs`.
@@ -22704,3 +23510,169 @@ Cut in chapter 39: nothing. No care line is needed in this chapter.
 | Psalm 27:14 (its words before the exclamation); 2 Corinthians 4:16 | 27-31 `later` | BSB | BSB text |
 
 Cut in chapter 40: the deep note's line to John 10:11 beside the shepherd of verse 11, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The Song of Songs' book page (teaching introduction, 2026-11-25)
+
+Every claim in `client/public/bible/notes/song-of-solomon/intro.json`, field `teaching`. No web searches: each claim rests on the repository's own notes, introductions, guides and live pages, or it was cut. Scripture is the BSB in the repository, matched by the strict quotation check, the single-quote check, the cited-verse check and the nested check (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Twenty-second book, eight chapters; poetry of love; no law, prophecy or history, God's name not clearly present; longing, searching, praise, love strong as death; the daughters of Jerusalem; the woman speaking most; 2:7; the allegorical history and the reading since the nineteenth century; both held; gift and warning | in-a-minute | bible/books.json; song-of-solomon/intro.json `overview`; BSB | Repository; BSB text |
+| Among poetry and wisdom books; after Ecclesiastes; the Writings and the five scrolls; read at Passover; Genesis 2:25 and Genesis 3; love in a garden again; the prophets' marriage pictures (Hosea 1 to 3; Isaiah 54 and 62; Ezekiel 16) | story | song-of-solomon/intro.json `story`, `purpose`; BSB | Repository; BSB text |
+| 1:1 and its range (by, for, about, dedicated to), with ‘for David’ in the Psalms; Song of Songs as the finest song; tradition and 1 Kings 4:32-33; Solomon named (1:5; 3:7, 9, 11; 8:11-12); a figure in the poems, spoken of from outside, 8:11-12; the tenth century or the Persian or early Greek period; pardes (4:13); northern dialect or love-poetry conventions; Tirzah before about 880 BC (1 Kings 16:23-24); an edited collection; the tenth to the third century; no side | who | song-of-solomon/intro.json `author`, `date`; song-of-solomon/1.json `historical`; BSB | Repository; each view in its holders' terms; no side |
+| The allegorical reading: the Targum and midrash, God and Israel; Rabbi Akiva in the early second century AD according to the Mishnah; Origen (third century), Bernard of Clairvaux (twelfth), Puritan preachers; strength and weakness; the natural reading; the typological reading; no side; God's care for love between a man and a woman | readings | song-of-solomon/6.json `hard`; song-of-solomon/1.json `hard`; song-of-solomon/intro.json `christ`, `reading` | Repository; each reading in its holders' terms; no side |
+| Masculine and feminine forms; editorial headings; the woman speaking first and most; mutual choice in a world of arranged marriage; 2:16; two characters, three (proposed in the eighteenth century, popular in the nineteenth), or an anthology; the daughters of Jerusalem | voices | song-of-solomon/intro.json `reading`, `themes` (mutuality), `overview`; BSB | Repository; each reading in its holders' terms |
+| The structure's scenes and ranges; story or collection; the refrains (2:7; 3:5; 8:4; 2:16; 6:3; 7:10) | built | song-of-solomon/intro.json `structure`, `reading` | Repository |
+| 1:2 (its second sentence); 1:5; the joining word read ‘and’ or ‘but’; sun-darkened skin from outdoor work, not ethnicity; pale skin and leisure; the brothers and the vineyards (1:6); darling as friend or companion; the first charge | longing | song-of-solomon/1.json `cultural`, `words` (shachor, rayah), `summary`; BSB | Repository; BSB text |
+| The gazelle over the hills; 2:11-12; the little foxes; 2:16; 3:1; the night search and the watchmen; a dream of longing; the second charge | spring | song-of-solomon/2.json and 3.json `summary`, `literary`; BSB | Repository; BSB text |
+| The procession and the carriage; 3:11 (before its dash); the praise of chapter 4 in images; restraint; ‘my sister, my bride’; 4:12; 4:16 (its last sentence); 5:1 (its first clause); neither coy nor coarse, grateful | wedding | song-of-solomon/3.json `summary`; song-of-solomon/4.json `hard`, `words` (kallah, achot, gan, naal); BSB | Repository; BSB text |
+| The knock and the hesitation; 5:6 (its clause); 5:7; the dream reading, the real-event reading (a woman alone at night, an injustice recorded without approval), the allegorical reading; unexplained; no warrant for violence; her love surviving; 5:16 (its last sentence); 6:3 | absence | song-of-solomon/5.json `hard`, `summary`; song-of-solomon/6.json `summary`; BSB | Repository; each reading in its holders' terms; BSB text |
+| Care line (‘If you are being hurt, at home, at work or in a church, tell someone you trust and get help...’ to ‘...lists places to turn.’) | absence | tracks/family.json, deuteronomy/plain/13.json and 27.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| The charge three times after closeness; patience and chastity; ‘until it pleases’; love not forced or manipulated; not exclusive; love freely given by both; her beloved never taking her against her will; no right to pressure or force; coerced love not the Song's love | time | song-of-solomon/2.json `hard`, `words` (ur); song-of-solomon/intro.json `themes` (the right time; mutuality); the brief's rule against coercion | Repository; each reading in its holders' terms |
+| 8:6; 8:7 (its first sentence) and love not bought; the seal worn on a cord or ring; qin'ah as zeal; the flame's -yah syllable read as God's name or the fiercest flame; the little sister, the vineyards and 8:12 (its first clause); the final call | death | song-of-solomon/8.json `cultural`, `words` (chotam, qin'ah, shalhevet), `summary`; song-of-solomon/intro.json `themes`; BSB | Repository; BSB text; each reading in its holders' terms |
+| No direct quotation; the bridegroom theme, not a prediction; Mark 2:19; John 3:29; Ephesians 5:32; Revelation 19:7; the related point of readers who take the Song as human love | new-testament | song-of-solomon/intro.json `christ` (the site's book page wording, kept); BSB | Repository; BSB text; only the lines the site's book page already draws |
+| Poetry, not plot or manual; Gilead and the goats; who speaks and the refrains; reverence without embarrassment; adult tact; any of the three readings | reading | song-of-solomon/intro.json `reading` | Repository |
+| Hard passages (14), each drawn from the chapter notes' hard questions, summaries and the parts above; key words (15): dod, rayah (1.json); ahavah, ur, degel, shual (2.json); kallah, achot, gan (4.json); Shulammite, its three readings (Shunem, a feminine of Solomon, shalom), tam (6.json `words`, `cultural`); teshuqah and Genesis 3:16 (7.json); chotam, qin'ah (8.json); pardes (intro.json `date`) | lists | the notes named; BSB | Repository; BSB text |
+| Timeline: Egyptian love songs of the New Kingdom, about 1300 to 1100 BC; Solomon about 970 to 931 BC and 1 Kings 4:32-33; Tirzah before about 880 BC; the Persian or early Greek view; Akiva in the early second century AD; Origen in the third century; Bernard in the twelfth; the three-character reading in the eighteenth century; the natural reading from the nineteenth | lists | song-of-solomon/intro.json `setting`, `date`, `christ`, `reading`, `overview`; song-of-solomon/1.json `hard`; guides/kings-of-israel-and-judah.json | Repository |
+| The map: Jerusalem (1:5; 6:4) and Damascus (7:4) at the points the site's other maps use, Gilead (4:1; 6:5) roughly, as a region; Lebanon, Hermon, Amana, Senir, En-gedi, Sharon, Carmel, Tirzah, Heshbon and Kedar unplaced and left off | map | the atlas index (the Jerusalem, Gilead and Damascus points); BSB | Repository; no borders; no claim about any border today |
+| Go deeper: ten pages | deeper | guides/reading-poetry.json, reading-wisdom.json; bible/doctrines.json (family, creation, covenant); wisdom/entry/marriage-intimacy.json, sexual-purity.json, singleness.json, longing-for-marriage.json; needs/marriage.json (titles as the pages give them) | Repository; every page live in the search index |
+
+Cut from the book page: the deep notes' lines to Christ through the chapters (the seal and Ephesians 1:13; the reversal of Genesis 3:16 as the gospel's undoing of the curse; the church as the bride in each scene); the old introduction's line naming Puritan preachers by name (none named in the repository; ‘many Puritan preachers’ kept as the introduction gives it); The explore indexes were rebuilt in the same commit, and `teaching.test.tsx` names the Song among the books with a teaching guide, on the `canaan` frame.
+
+## The plain notes on the Song of Songs 1 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its second sentence; the first, an exclamation, paraphrased); 1:3 (its first two clauses); 1:4 paraphrased (it holds a dash); 1:5; 1:6; 1:7-8 paraphrased | 1-8 | BSB | BSB text |
+| No narrator; the speakers and the two worlds; the joining word read ‘and’ or ‘but’; sun-darkened skin from work, not ethnicity; pale skin and leisure; the brothers and her own vineyard as herself; Kedar's black goat-hair tents and Solomon's curtains; king and shepherd as two views of one beloved, as in other ancient love poems; the veiled woman mistaken among shepherds | 1-8 | song-of-solomon/1.json `story`, `summary`, `cultural`, `historical`, `words` (shachor) | Repository |
+| Psalm 120:5 (before its exclamation); Genesis 2:25 | 1-8 | song-of-solomon/1.json `historical` (Kedar), `hard` (Genesis 2); the chapter data's cross-references; BSB | Repository; BSB text |
+| The hard note: allegory and Akiva in the early second century AD according to the Mishnah; human love as part of the good creation and wisdom for it; Genesis 2; faithfulness, exclusivity and patience; both answers held | 1-8 `hard` | song-of-solomon/1.json `hard` | Repository; each reading in its holders' terms |
+| 1:9; 1:10; ornaments (1:11) paraphrased; her delight (1:12-14), with 1:14's clause quoted and 1:13 not quoted; 1:15 and 1:16 (in double quotes, as each holds exclamations); 1:17 | 9-17 | BSB | BSB text |
+| Pharaoh's chariots and Solomon's ties to Egypt (1 Kings 3:1; 10:28-29); luxury perfumes; En-gedi on the Dead Sea's western shore; speaker by gender of Hebrew words and the headings as judgments; mutual praise as the book's pattern; the outdoor house | 9-17 | song-of-solomon/1.json `historical`, `cultural`, `literary` | Repository |
+| 1 Kings 10:28 (its first clause); 1 Samuel 24:1 named, the wilderness of En-gedi | 9-17 | song-of-solomon/1.json `historical` (1 Kings 10:28-29); the chapter data's cross-references for 1:14; BSB | Repository; BSB text |
+
+Cut in chapter 1: the deep note's readings of the kiss as God's words and of the woman as the church or soul, and its link to Isaiah 62:5 and Mark 2:19-20 (left to the book page's own wording on the bridegroom). The chapter is told without its explicit line (1:13). No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 2 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; 2:2; 2:3 (its first sentence); 2:4; refreshment (2:5) paraphrased; the embrace (2:6) paraphrased; 2:7 (in double quotes) | 1-7 | BSB | BSB text |
+| Wildflowers, perhaps a crocus; Sharon's plain and flowers; her modesty and his answer; apple, apricot or quince; raisin cakes as festive food (2 Samuel 6:19); lovesickness in Egyptian love poems; the banner; the oath by gazelles and does and the sound-play on God's titles, as many scholars note | 1-7 | song-of-solomon/2.json `cultural`, `historical`, `words` (degel) | Repository |
+| Isaiah 35:2 (its clause); 2 Samuel 6:19 named | 1-7 | song-of-solomon/2.json `historical` (Isaiah 35:2), `cultural` (2 Samuel 6:19); BSB | Repository; BSB text |
+| The hard note: three appearances after closeness; patience and chastity, marriage; ‘until it pleases’; not forced or manipulated; not exclusive; timing; desire without shame and with care; love freely given, no right to press or force | 1-7 `hard` | song-of-solomon/2.json `hard`, `words` (ur); the brief's rule against coercion | Repository; each reading in its holders' terms |
+| 2:8 (in double quotes, as it holds exclamations); the gazelle and the lattice (2:9) paraphrased; 2:10-11 (his words, in double quotes); 2:12; figs and vines (2:13) paraphrased; 2:14 (its first part); the foxes (2:15) paraphrased (it holds dashes); 2:16 (in double quotes); 2:17 paraphrased | 8-17 | BSB | BSB text |
+| The land's spring: rains ending in March or April, flowers, early figs, turtledoves; the framing call; little foxes and vineyards; 2:16 as the first statement of belonging (6:3; 7:10); Bether as a place or rugged hills | 8-17 | song-of-solomon/2.json `historical`, `cultural`, `literary` | Repository; each reading in its holders' terms |
+| Habakkuk 3:19 (its clause); Psalm 55:6 (inside the psalmist's quotation, in double quotes) | 8-17 | the chapter data's cross-references for 2:8-9 and 2:14; BSB | BSB text |
+
+Cut in chapter 2: the deep note's line to Christ (any reading of the beloved's call as Christ's, left to the book page). No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 3 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; the streets (3:2) paraphrased; the watchmen (3:3) paraphrased (it holds an inner quotation); finding him (3:4) paraphrased; 3:5 (in double quotes) | 1-5 | BSB | BSB text |
+| Absence after chapter 2; the first of two night searches (5:2-8); a dream or a vivid imagining; ‘the one my soul loves’ four times; seek and find; watchmen at night and the danger to a woman alone; the mother's house and Genesis 24:28, Ruth 1:8 | 1-5 | song-of-solomon/3.json `story`, `literary`, `cultural`, `words` (baqash, nephesh) | Repository |
+| Genesis 24:28 (from ‘ran’); Ruth 1:8 (Naomi's first sentence) | 1-5 | song-of-solomon/3.json `cultural`; BSB | Repository; BSB text |
+| 3:6; 3:7; the swords (3:8) paraphrased; 3:9; the carriage (3:10) paraphrased; 3:11 (before its dash) | 6-11 | BSB | BSB text |
+| The central section (3:6 to 5:1); wedding processions (Psalm 45; Matthew 25:1-13 named in the note); myrrh and frankincense; smoke as incense or dust; appiryon only here, perhaps a palanquin; cedar through Hiram (1 Kings 5); the sixty and David's warriors (2 Samuel 23:8-39); Bathsheba and no recorded crowning | 6-11 | song-of-solomon/3.json `story`, `historical`, `cultural`, `words` (appiryon) | Repository |
+| Psalm 45:13; 1 Kings 5:10 (before its comma) | 6-11 | song-of-solomon/3.json `cultural` (Psalm 45), `historical` (1 Kings 5); BSB | Repository; BSB text |
+| The hard note: Solomon throughout, early in his reign (1 Kings 11:1-8); the three-character view, eighteenth and nineteenth centuries; Solomon as a literary figure; 8:11-12; unsettled; a love faithful and given to one person | 6-11 `hard` | song-of-solomon/3.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 3: the deep note's line to Christ (any reading of the procession or the seeking as Christ's, left to the book page). No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 4 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (its second and third sentences); 4:2; 4:3 (its first sentence); 4:4 (its first clause); 4:5-6 told without quotation; 4:7 | 1-7 | BSB | BSB text |
+| The wedding continued; ‘my bride’ six times between 4:8 and 5:1; the wedding night in poetry, for many readers; the wasf, by scholars' term, and the Song's four such poems; black goats of Gilead; white, even teeth; the tower and upright bearing; felt, not pictured; the downward movement stopping with restraint; the inclusio | 1-7 | song-of-solomon/4.json `story`, `cultural`, `literary`, `words` (kallah) | Repository |
+| Psalm 60:7 (its first clause); Genesis 1:31 (its first sentence) | 1-7 | song-of-solomon/4.json `historical` (Gilead and flocks), `hard` (God made the body and called it good); BSB | Repository; BSB text |
+| The hard note: poetic and restrained; a wedding and the covenant of marriage; Genesis 2; allegorical readers and unease; the readings together; neither coy nor coarse, but grateful | 1-7 `hard` | song-of-solomon/4.json `hard` | Repository; each reading in its holders' terms |
+| 4:8 (its first sentence, an exclamation in double quotes; the rest paraphrased); 4:9 (in part); 4:10 (its first two sentences, in double quotes); 4:12; the orchard and spices (4:13-14) paraphrased; 4:15 (its clause); 4:16 | 8-16 | BSB | BSB text |
+| The northern mountains (Deuteronomy 3:9) as remote and wild; ‘sister’ as affection, as in Egyptian love songs, not family; the walled garden and sealed spring; the spices from the east; ‘my garden’ and ‘his garden’ in verse 16 and 5:1; her gift freely given | 8-16 | song-of-solomon/4.json `historical`, `cultural`, `literary`, `words` (achot, gan, naal) | Repository |
+| Proverbs 5:15; Deuteronomy 3:9 (its clause) | 8-16 | song-of-solomon/4.json `cultural` (Proverbs 5:15-18), `historical` (Deuteronomy 3:9); BSB | Repository; BSB text |
+
+Cut in chapter 4: the deep note's line to Christ (the bride as the church, left to the book page). Verses 5 and 6 are told with restraint and not quoted. No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 5 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 (its first sentence, its honey and wine paraphrased, and its last sentence) | 1 | BSB | BSB text |
+| The answer to 4:16; the close of the wedding section (3:6 to 5:1); told in pictures; the unnamed voice (guests, poet, or God as some ancient readers heard it); married love welcomed, not hidden in shame | 1 | song-of-solomon/5.json `story`, `literary` | Repository; each reading in its holders' terms |
+| Genesis 2:24 | 1 | song-of-solomon/1.json and 4.json `hard` (Genesis 2); BSB | Repository; BSB text |
+| 5:2 (its first sentence; the knock and his words paraphrased); 5:3 paraphrased (it holds dashes); the latch (5:4) paraphrased; the bolt (5:5) paraphrased; 5:6; 5:7; 5:8 | 2-8 | BSB | BSB text |
+| Union, then hesitation, loss and pain; the second night search (3:1-5); the violent watchmen; the wooden bolt and the hole; barefoot and washing feet; ordinary excuses; the dreamlike line; told in images, not description; a woman alone at night; the cloak taken to shame as well as hurt | 2-8 | song-of-solomon/5.json `story`, `cultural`, `literary` | Repository |
+| Psalm 9:9; Psalm 82:3 | 2-8 | the psalms on the oppressed (Psalm 82:3 as in proverbs plain notes 24 and 31's cross-references); BSB | Repository; BSB text |
+| The hard note: the dream reading; the real-event reading, perhaps mistaken for a woman of the street, an injustice recorded without approval; the allegorical reading; unexplained; love's cost and her love surviving; no warrant for violence on any reading; those meant to guard her harmed her, and the Song does not call it right | 2-8 `hard` | song-of-solomon/5.json `hard`; the brief's care rules | Repository; each reading in its holders' terms |
+| Care line (‘If you are being hurt, at home, at work or in a church, tell someone you trust and get help...’ to ‘...lists places to turn.’) | 2-8 `hard` | tracks/family.json, deuteronomy/plain/13.json and 27.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| 5:9 (its first question); 5:10; 5:11; eyes, cheeks, arms and legs (5:12-15) paraphrased with 5:15's last sentence quoted; 5:16 | 9-16 | BSB | BSB text |
+| The only praise of the man part by part; metals, stones and ivory; almost a statue; Samaria's carved ivories of the ninth or eighth century BC (Amos 3:15; 6:4); Lebanon's cedars; beloved and friend; love undiminished by absence | 9-16 | song-of-solomon/5.json `cultural`, `historical`, `literary`, `words` (rea) | Repository |
+| Psalm 92:12; Amos 3:15 (its clause) | 9-16 | song-of-solomon/5.json `historical` (Amos 3:15); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (Revelation 3:20 beside the knock, which the note says Revelation does not cite; the woman's praise as the church's adoration of Christ; ‘altogether lovely’ in later preaching). The suggestive double meanings the deep note names are left unspoken; the scene is told in its own images.
+
+## The plain notes on the Song of Songs 6 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1; 6:2; 6:3 | 1-3 | BSB | BSB text |
+| Picking up from chapter 5; the separation not final; the garden as a picture of the beloved and closeness in ancient love poetry, and Egyptian love songs; 6:3 reversing 2:16 | 1-3 | song-of-solomon/6.json `story`, `cultural`, `literary` | Repository |
+| Genesis 2:8 | 1-3 | song-of-solomon/intro.json `story` (the garden and Eden); BSB | Repository; BSB text |
+| 6:4; 6:5 (its first sentence); the repeated praise (6:5-7) paraphrased; 6:8; 6:9 paraphrased; 6:10 | 4-10 | BSB | BSB text |
+| Tirzah before Omri moved to Samaria (1 Kings 16:23-24), meaning pleasing; two capitals and the dating question; beauty that awes, army and sky; praise repeated from chapter 4; the royal household (1 Kings 11:3); tam | 4-10 | song-of-solomon/6.json `historical`, `cultural`, `literary`, `words` (tam) | Repository; each reading in its holders' terms |
+| 1 Kings 11:3 (its first clause, before the dash) | 4-10 | song-of-solomon/6.json `historical`; BSB | Repository; BSB text |
+| The hard note: the allegorical reading (Targum and midrash; Origen, Bernard), its strength and weakness; the natural reading, collection or drama of two or three; the typological reading; no side; God's care for love between a man and a woman | 4-10 `hard` | song-of-solomon/6.json `hard` | Repository; each reading in its holders' terms; no side |
+| 6:11; 6:12 paraphrased; 6:13 (its first two sentences, in double quotes; the question paraphrased) | 11-13 | BSB | BSB text |
+| Verse 12's difficulty and Amminadib; the Shulammite's three readings (Shunem and Abishag; a feminine of Solomon; shalom); Mahanaim as two camps (Genesis 32:2) and the dance's two readings; working out who speaks | 11-13 | song-of-solomon/6.json `cultural`, `literary`, `words` (Shulammite) | Repository; each reading in its holders' terms |
+| Genesis 32:2 (its last sentence); 1 Kings 1:3 named | 11-13 | song-of-solomon/6.json `cultural` (Genesis 32:2; 1 Kings 1:3); BSB | Repository; BSB text |
+
+Cut in chapter 6: the deep note's line to Christ (any reading of the bride as the church in verses 8-10, left to the book page). No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 7 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 (its first clause, before the exclamation); 7:1-3 otherwise paraphrased, not quoted; 7:4; 7:5; 7:6 (before its exclamation); 7:7-9 paraphrased, not quoted | 1-9 | BSB | BSB text |
+| The longest description; the upward gaze, against 4:1-7 and 5:10-16; confidence after chapters 5 and 6; the wasf; comparisons not pictures (grace, depth, dignity); a farming world of harvest; Heshbon and Sihon (Numbers 21:25-26), Bath-rabbim perhaps a gate; Lebanon toward Damascus; Carmel; purple from sea snails and royalty; beauty filling the land | 1-9 | song-of-solomon/7.json `story`, `historical`, `cultural`, `literary` | Repository |
+| Numbers 21:26 (its first clause, in part, named); Proverbs 5:18 (its clause) | 1-9 | song-of-solomon/7.json `historical` (Numbers 21:25-26), `hard` (Proverbs 5:18-19); BSB | Repository; BSB text |
+| The hard note: embarrassment and allegory as escape; Genesis 2:25; Proverbs 5:18-19; 1 Corinthians 7:3-5; veiled, not graphic; read within marriage; the refrain (2:7; 3:5; 8:4); reverence as receiving the gift | 1-9 `hard` | song-of-solomon/7.json `hard` | Repository |
+| 7:10 (in double quotes); 7:11; the vineyards (7:12) paraphrased (it holds a dash); 7:13 | 10-13 | BSB | BSB text |
+| The third refrain of belonging (2:16; 6:3); teshuqah three times (Genesis 3:16; 4:7); the reversal many readers hear; 2:10-13 echoed with her inviting; the garden become a shared place; mandrakes (Genesis 30:14-16) and duda'im with dodim | 10-13 | song-of-solomon/7.json `literary`, `cultural`, `words` (teshuqah, duda'im), `doctrines` | Repository |
+| Genesis 3:16 (its third sentence); Genesis 30:14-16 named | 10-13 | song-of-solomon/7.json `words` (teshuqah), `cultural`; BSB | Repository; BSB text |
+
+Cut in chapter 7: the deep note's line that the gospel announces the undoing of Genesis 3's curse beside verse 10 (a line the New Testament does not draw from this verse). The chapter's most explicit lines (7:1-3, 7-9) are told with restraint and not quoted. No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 8 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Her wish (8:1-2) paraphrased, not quoted; the embrace (8:3) paraphrased; 8:4 (in double quotes); 8:5 (its first sentence; the rest not quoted) | 1-5 | BSB | BSB text |
+| Public affection and siblings; showing love without shame; the mother's house (3:4); the threads gathered; the third, shorter charge without the oath; 3:6 returning; leaning on her beloved | 1-5 | song-of-solomon/8.json `cultural`, `story`, `literary` | Repository |
+| Hosea 2:14 (inside its opening quotation mark, the span without inner marks); Genesis 2:24 (its last words) | 1-5 | song-of-solomon/intro.json `story` (the prophets' marriage pictures, Hosea 1 to 3); song-of-solomon/1.json `hard` (Genesis 2); BSB | Repository; BSB text |
+| 8:6; 8:7 (both in double quotes) | 6-7 | BSB | BSB text |
+| The only step back to say what love is; the pairs; the seal as a carved stone on a cord or ring (Genesis 38:18); qin'ah; Sheol never full; the mighty waters; the flame's -yah syllable, God's name or the fiercest flame; love not bought | 6-7 | song-of-solomon/8.json `cultural`, `literary`, `words` (chotam, qin'ah, shalhevet) | Repository; each reading in its holders' terms |
+| Deuteronomy 4:24; Genesis 38:18 named | 6-7 | song-of-solomon/8.json `words` (qin'ah, jealousy or zeal), set beside the law's own words for God's jealous love; song-of-solomon/8.json `cultural` (Genesis 38:18); BSB | Repository; BSB text |
+| The hard note: the ancient question and Jewish tradition's debate; received as God's love for Israel, and in the church for Christ and the church; read first as love poetry by many; the allegorical or typological reading held essential by others; not cancelling each other; Esther as the other book that does not clearly name God | 6-7 `hard` | song-of-solomon/8.json `hard` | Repository; each reading in its holders' terms |
+| The little sister (8:8) paraphrased; 8:9; 8:10 (its last sentence; the first not quoted); 8:11; 8:12 (its first clause; the rest paraphrased); 8:13 paraphrased; 8:14 | 8-14 | BSB | BSB text |
+| Brothers protecting and negotiating; wall and door; the brothers of 1:6; her own answer and choice; no right for anyone to control a woman's life; Baal-hamon unknown and its meaning; a thousand shekels as a vineyard's conventional value (Isaiah 7:23); Solomon's wealth and wives (1 Kings 10 and 11); her vineyard hers to give; 2:17 echoed; the book falling silent | 8-14 | song-of-solomon/8.json `historical`, `cultural`, `literary`; the brief's rule against coercion | Repository |
+| Isaiah 7:23 (its clause); Song of Songs 1:6 (its clause) | 8-14 | song-of-solomon/8.json `historical` (Isaiah 7:23); BSB | Repository; BSB text |
+
+Cut in chapter 8: the deep note's lines to Christ (Ephesians 5:25 and Romans 8:38-39 beside love as strong as death; Ephesians 1:13 and the Spirit's seal beside verse 6; the note calls them connections of theme). The explicit lines (8:1, 8:5b, 8:8a, 8:10a) are told with restraint. No care line is needed in this chapter.

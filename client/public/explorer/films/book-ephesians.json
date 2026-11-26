@@ -1,0 +1,121 @@
+{
+  "slug": "book-ephesians",
+  "title": "Ephesians: one new people in Christ",
+  "group": "books",
+  "status": "finished",
+  "book": "ephesians",
+  "mark": "book-ephesians",
+  "line": {
+    "younger": "A letter from prison about God's great plan and one family made from two: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Ephesians as a whole letter: praise that turns into teaching, grace, one new people from Jew and Gentile, a worthy walk, the armor of God, and the household passages as churches read them."
+  },
+  "poster": "A man sits writing by the small barred window of a stone room, a scroll across his knees and a soldier resting by the door. A gold light falls through the window.",
+  "frames": [
+    {
+      "id": "letter",
+      "name": "A letter from prison",
+      "still": "A man sits writing by the small barred window of a stone room, a scroll across his knees and a soldier resting by the door. A gold light falls through the window.",
+      "younger": "Ephesians is a letter. It names Paul as its writer, sent from prison to the followers of Jesus in Ephesus and the cities around it. It has six chapters, and it begins with Paul praising God for everything he has done.",
+      "older": "Ephesians names Paul as its writer, in prison, to believers in Ephesus and the cities around it. It answers no crisis. It steps back to look at the whole of what God is doing: a plan to bring all things in heaven and on earth together in Christ.",
+      "verse": {
+        "ref": "Ephesians 1:10",
+        "text": "to bring all things in heaven and on earth together in Christ."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The letter drawn as one scroll in five panels, with a lifted pair of hands, a broken wall, a lamp, a road and a shield over them. A gold rule lies under the fourth panel, the road, where the second half begins.",
+      "younger": "The letter has two halves. In chapters one to three Paul praises God and says what God has done. In chapters four to six he shows how to live because of it. The turn comes with one word: then.",
+      "older": "Two halves, joined at the start of chapter 4. Chapters 1 to 3 are praise, prayer and teaching: what God has done. Chapters 4 to 6 are how to live because of it. Cut the second half off from the first, and grace becomes a list of rules.",
+      "verse": {
+        "ref": "Ephesians 4:1",
+        "text": "I urge you to walk in a manner worthy of the calling you have received"
+      }
+    },
+    {
+      "id": "grace",
+      "name": "Watch for: grace",
+      "still": "A man kneels on a hillside at sunrise with his hands open and empty, and a gold sun rises before him.",
+      "younger": "Watch for the word grace. Grace means a gift you could never earn. Paul says people far from God were like the dead, and God made them alive, as a free gift. No one can boast. And then God gives them good work to do.",
+      "older": "Salvation in Ephesians is God's work from first to last: the dead made alive, by grace, through faith, which is the way the gift is received, not a work that earns it. Yet believers are God's workmanship, made for the good works he prepared.",
+      "verse": {
+        "ref": "Ephesians 2:8",
+        "text": "For it is by grace you have been saved through faith"
+      }
+    },
+    {
+      "id": "one",
+      "name": "Watch for: one new people",
+      "still": "A high wall lies broken in the middle, its stones fallen, and through the gap two groups of people walk toward each other and take hands. A gold lamp burns on a stone beside the gap.",
+      "younger": "Watch for a wall coming down. In Paul's day, Jews and people of other nations were kept apart, as if by a wall. Paul says Jesus broke down that wall on the cross, and made them one family, God's one people.",
+      "older": "The deepest division of Paul's world, between Jew and Gentile, has been overcome in the cross. Gentiles once far off are brought near, joined to Israel's hope, and the two become one new humanity, one household, one temple where God lives by his Spirit.",
+      "verse": {
+        "ref": "Ephesians 2:14",
+        "text": "For He Himself is our peace, who has made the two one"
+      }
+    },
+    {
+      "id": "walk",
+      "name": "Watch for: a worthy walk",
+      "still": "Along a village street people go about their day: one hands bread to a neighbor, two who had quarreled stand face to face with open hands, a worker carries tools. A gold sun stands over the roofs.",
+      "younger": "Watch the word walk. Paul means the way you live: tell the truth, do not stay angry, work honestly, speak kindly and forgive. He writes about home too, and calls everyone in a home to love as Jesus loves.",
+      "older": "Walk worthy: tell the truth, deal with anger, work honestly, forgive. The household passages put everyone under one Lord and lay demands on the strong. They give no one a licence to control or harm another.",
+      "verse": {
+        "ref": "Ephesians 4:32",
+        "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you."
+      }
+    },
+    {
+      "id": "armor",
+      "name": "Watch for: stand firm",
+      "still": "A man stands steady on a rock in a wind, wearing a belt, a breastplate, a helmet and sandals, a shield on his arm. A gold light breaks through the clouds above him.",
+      "younger": "Watch for the armor of God. Paul says the real fight is not against people. God gives his people truth, faith and his word, like armor, so that they can stand firm. Jesus is already over every power.",
+      "older": "The letter takes spiritual evil seriously without making it the center. The struggle is not against flesh and blood, Christ is seated far above every power, and the believer's task is to stand, in the armor God supplies, and to pray.",
+      "verse": {
+        "ref": "Ephesians 6:10",
+        "text": "Finally, be strong in the Lord and in His mighty power."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter one. Read it slowly and out loud: the long sentences are praise. The whole letter takes about twenty minutes. Listen for the words grace and in Christ.",
+      "older": "Read it slowly and whole, aloud if you can: the long opening sentences are praise, not tangled argument. Watch the hinge at chapter 4, and the words grace, in Christ, mystery, body and walk. The key chapters are 1, 2, 4, 5 and 6.",
+      "verse": {
+        "ref": "Ephesians 3:20",
+        "text": "Now to Him who is able to do immeasurably more than all we ask or imagine"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Paul says Jesus broke down the wall between people who were kept apart. Is there someone you find it hard to be one family with?",
+    "older": "Ephesians puts what God has done before how to live. What happens to the commands of chapters 4 to 6 if they are read on their own?"
+  },
+  "read": [
+    { "label": "Ephesians 1", "href": "/study/bible/ephesians/1" },
+    { "label": "Ephesians 2", "href": "/study/bible/ephesians/2" },
+    { "label": "Ephesians 4", "href": "/study/bible/ephesians/4" },
+    { "label": "Ephesians 6", "href": "/study/bible/ephesians/6" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess salvation by grace through faith, and one body made of Jew and Gentile. Churches today read the household passages (5:21 to 6:9) differently, especially on marriage. All agree that they call for mutual love, that Christ's self-giving is the pattern, and that they give no one a licence to control or harm another. Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first. The words to slaves were misused for centuries to defend slavery. That misuse was wrong. Christians also read the letter's words on being chosen in different ways, and differ on whether Paul wrote it himself. This moving picture takes no side; the readings are set out on",
+    "links": [
+      { "label": "the Ephesians page of the Study Bible", "href": "/study/bible/ephesians" },
+      { "label": "Find Help", "href": "/help" }
+    ]
+  },
+  "care": "If something hard is happening to you or to someone you love, you do not have to carry it alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Ephesians in the Study Bible: the whole letter", "href": "/study/bible/ephesians" },
+    { "label": "Grace: the gift no one earns (a moving picture)", "href": "/study/explorer/watch/grace" },
+    { "label": "The church (a moving picture)", "href": "/study/explorer/watch/the-church" },
+    { "label": "A blessing for all nations (a moving picture)", "href": "/study/explorer/watch/all-nations" }
+  ],
+  "end": { "label": "Start reading: Ephesians 1", "href": "/study/bible/ephesians/1" }
+}
