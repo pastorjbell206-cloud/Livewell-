@@ -26042,3 +26042,19 @@ Cut in chapter 38: any match between these names and modern countries; Revelatio
 | Later: Joel 2:28; Numbers 6:25 | 21-29 `later` | BSB | BSB text |
 
 Cut in chapter 39: the deep note's mention of modern materials that burn; no date, no modern nation, person or event.
+
+## The plain notes on Ezekiel 40 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A very high mountain and a man with a measuring rod: the text paraphrased; quoted clauses at verses 2, 3, 4, 5-27 | 1-27 | BSB | BSB text |
+| Background in `hearers` | 1-27 | ezekiel/40.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 2:2; Zechariah 2:1 | 1-27 `later` | BSB | BSB text |
+| The hard note: Was this temple ever meant to be built, and how should the vision be read? The readings in their holders' terms | 1-27 `hard` | ezekiel/40.json `hard` | Repository; the site takes no side |
+| The inner court, the altar and the porch: the text paraphrased; quoted clauses at verses 28-37, 38-43, 46, 47, 48-49 | 28-49 | BSB | BSB text |
+| Background in `hearers` | 28-49 | ezekiel/40.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 25:9; 1 Kings 2:35 | 28-49 `later` | BSB | BSB text |
+
+Cut in chapter 40: Revelation 11:1 beside the measuring, left out. No claim about any modern state, temple or border; the readings of the temple vision in their holders' terms, as the coordinator asked.
