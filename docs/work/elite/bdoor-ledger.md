@@ -22676,3 +22676,23 @@ Cut in chapter 3: the deep note's line to Christ (any reading of the procession 
 | Proverbs 5:15; Deuteronomy 3:9 (its clause) | 8-16 | song-of-solomon/4.json `cultural` (Proverbs 5:15-18), `historical` (Deuteronomy 3:9); BSB | Repository; BSB text |
 
 Cut in chapter 4: the deep note's line to Christ (the bride as the church, left to the book page). Verses 5 and 6 are told with restraint and not quoted. No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 5 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 (its first sentence, its honey and wine paraphrased, and its last sentence) | 1 | BSB | BSB text |
+| The answer to 4:16; the close of the wedding section (3:6 to 5:1); told in pictures; the unnamed voice (guests, poet, or God as some ancient readers heard it); married love welcomed, not hidden in shame | 1 | song-of-solomon/5.json `story`, `literary` | Repository; each reading in its holders' terms |
+| Genesis 2:24 | 1 | song-of-solomon/1.json and 4.json `hard` (Genesis 2); BSB | Repository; BSB text |
+| 5:2 (its first sentence; the knock and his words paraphrased); 5:3 paraphrased (it holds dashes); the latch (5:4) paraphrased; the bolt (5:5) paraphrased; 5:6; 5:7; 5:8 | 2-8 | BSB | BSB text |
+| Union, then hesitation, loss and pain; the second night search (3:1-5); the violent watchmen; the wooden bolt and the hole; barefoot and washing feet; ordinary excuses; the dreamlike line; told in images, not description; a woman alone at night; the cloak taken to shame as well as hurt | 2-8 | song-of-solomon/5.json `story`, `cultural`, `literary` | Repository |
+| Psalm 9:9; Psalm 82:3 | 2-8 | the psalms on the oppressed (Psalm 82:3 as in proverbs plain notes 24 and 31's cross-references); BSB | Repository; BSB text |
+| The hard note: the dream reading; the real-event reading, perhaps mistaken for a woman of the street, an injustice recorded without approval; the allegorical reading; unexplained; love's cost and her love surviving; no warrant for violence on any reading; those meant to guard her harmed her, and the Song does not call it right | 2-8 `hard` | song-of-solomon/5.json `hard`; the brief's care rules | Repository; each reading in its holders' terms |
+| Care line (‘If you are being hurt, at home, at work or in a church, tell someone you trust and get help...’ to ‘...lists places to turn.’) | 2-8 `hard` | tracks/family.json, deuteronomy/plain/13.json and 27.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| 5:9 (its first question); 5:10; 5:11; eyes, cheeks, arms and legs (5:12-15) paraphrased with 5:15's last sentence quoted; 5:16 | 9-16 | BSB | BSB text |
+| The only praise of the man part by part; metals, stones and ivory; almost a statue; Samaria's carved ivories of the ninth or eighth century BC (Amos 3:15; 6:4); Lebanon's cedars; beloved and friend; love undiminished by absence | 9-16 | song-of-solomon/5.json `cultural`, `historical`, `literary`, `words` (rea) | Repository |
+| Psalm 92:12; Amos 3:15 (its clause) | 9-16 | song-of-solomon/5.json `historical` (Amos 3:15); BSB | Repository; BSB text |
+
+Cut in chapter 5: the deep note's lines to Christ (Revelation 3:20 beside the knock, which the note says Revelation does not cite; the woman's praise as the church's adoration of Christ; ‘altogether lovely’ in later preaching). The suggestive double meanings the deep note names are left unspoken; the scene is told in its own images.
