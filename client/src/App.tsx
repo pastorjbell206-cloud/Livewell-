@@ -128,6 +128,7 @@ const TheologyQuestions = lazy(() => import("./pages/TheologyQuestions"));
 const TheologyTraditions = lazy(() => import("./pages/TheologyTraditions"));
 const TheologyReadingTheBible = lazy(() => import("./pages/TheologyReadingTheBible"));
 const PreviewHome = lazy(() => import("./pages/PreviewHome"));
+const PreviewDiscipline = lazy(() => import("./pages/preview/PreviewDiscipline"));
 const TheologySearch = lazy(() => import("./pages/TheologySearch"));
 const PropheticConsistency = lazy(() => import("./pages/prophetic/PropheticConsistency"));
 // Church history James kept: the injustice timeline and the witnesses.
@@ -440,6 +441,7 @@ function Router() {
         <Route path="/theology/traditions" component={TheologyTraditions} />
         <Route path="/theology/reading-the-bible" component={TheologyReadingTheBible} />
         <Route path="/preview/home" component={PreviewHome} />
+        <Route path="/preview/explore/:discipline" component={PreviewDiscipline} />
         <Route path="/theology/search" component={TheologySearch} />
         <Route path="/theology/paths" component={ToStudyRedirect} />
         <Route path="/disruption/posture" component={ToFaithAndPowerRedirect} />
