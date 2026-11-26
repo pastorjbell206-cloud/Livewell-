@@ -22069,3 +22069,23 @@ Cut in chapter 5: the deep note's lines to Christ (Matthew 6:7, 5:33-37 and Jame
 | James 4:14 (its first sentence, before its exclamation); Psalm 39:6 (its first clause) | 7-12 | the chapter data's cross-references for 6:12 (James 4:14; Psalm 39:5-6); BSB | Repository; BSB text |
 
 Cut in chapter 6: the deep note's lines to Christ (Mark 8:36 and the rich fool, Luke 12:16-21; John 4:13-14 and 10:10 as the answer to the restless appetite; the note calls them thematic).
+
+## The plain notes on Ecclesiastes 7 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1; 7:2; 7:4; the thorns (7:6) paraphrased; 7:8; 7:9; 7:10 paraphrased (it holds an inner quotation); 7:12 paraphrased; 7:13; 7:14 | 1-14 | BSB | BSB text |
+| The answer in part to 6:12; ‘better’ sayings; tov eleven times; traditional wisdom tested; the shift to what can be known; houses of mourning and professional mourners (Jeremiah 9:17-18); facing death soberly, not a wish to die; shem and shemen; sirim and sir; thornbushes burning fast | 1-14 | ecclesiastes/7.json `story`, `cultural`, `literary`, `words` (tov) | Repository |
+| The grief line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 1-14 | 1-samuel/plain/1.json (1-8) and the other notes care.mjs names | Reused byte for byte; Find Help named |
+| Job 11:7 (its first clause); Job 2:10 (Job's question, in double quotes) | 1-14 | the chapter data's cross-references for 7:13-14 (Job 11:7 by way of 3:11; Job 2:10 by way of 7:14); BSB | Repository; BSB text |
+| 7:15; 7:16; 7:17; 7:18 (its last sentence); 7:19; 7:20; the servant's curse (7:21) paraphrased; 7:22 | 15-22 | BSB | BSB text |
+| Verse 15 as what Proverbs' patterns cannot explain; verses 16-17 not a call to sin; verse 16 heard beside verse 20 as against trusting one's own righteousness; avoiding both errors; verses 21-22 | 15-22 | ecclesiastes/7.json `literary`, `words` (tsaddiq); the text of 7:16-20 | Repository; BSB text |
+| Romans 3:23 (its clause); 1 Kings 8:46 (its clause, between the dashes) | 15-22 | ecclesiastes/7.json `christ` (Romans 3:10-23 and 7:20); proverbs/20.json `hard`; BSB | Repository; BSB text |
+| 7:23 (its last sentence); 7:24; the search (7:25) paraphrased; 7:26 (from ‘the woman’); ‘says the Teacher’ (7:27); 7:28 paraphrased; 7:29 (from ‘God made’) | 23-29 | BSB | BSB text |
+| Matsa through the passage; a search that fails as the lesson; Proverbs 5 to 7 and 9; the narrator's voice in verse 27 | 23-29 | ecclesiastes/7.json `literary`, `cultural`, `words` (matsa) | Repository |
+| Job 28:12; Genesis 1:27 (its last clause) | 23-29 | ecclesiastes/7.json `hard` (Genesis 1:27); the chapter data's cross-references for 7:24 (Job 28:12 by way of Job 11:7); BSB | Repository; BSB text |
+| The hard note: the readings (a limited observation recorded, not endorsed; Folly of Proverbs 5 to 9; Solomon's thousand, 1 Kings 11:3; verse 29's adam and both sexes found wanting; combinations); the final word indicting humanity; Genesis 1:27 and Proverbs 31; no license for contempt toward women | 23-29 `hard` | ecclesiastes/7.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 7: the deep note's lines to Christ (Christ as the righteousness the Teacher found wanting; 1 Corinthians 1:24, 30 and wisdom come near beside verse 24; Matthew 5:4 beside the house of mourning; the note calls them connections of theme and fulfillment).
