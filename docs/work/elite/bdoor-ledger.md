@@ -21972,3 +21972,18 @@ Cut in chapter 16: nothing. No care line is needed in this chapter.
 | Psalm 46:6; Isaiah 37:36 | 12-14 `later` | BSB | BSB text |
 
 Cut in chapter 17: nothing beyond the narrowing above. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 18 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 18:1-3 | 1-3 | BSB | BSB text |
+| Cush and Napata; Piye about 728 BC; the Twenty-Fifth Dynasty; Shabaka and Taharqa; the envoys and the Ashdod revolt (713 to 711) or 705 BC; papyrus boats | 1-3 | isaiah/18.json `historical`, `story` | Repository |
+| Isaiah 20:5 named; Psalm 68:31 | 1-3 `later` | BSB | BSB text |
+| 18:4-7 (18:7's clauses either side of its dashes) | 4-7 | BSB | BSB text |
+| God's quiet watching; the pruning; 701 BC and Eltekeh; gifts to Zion | 4-7 | isaiah/18.json `summary`, `historical` | Repository |
+| Zephaniah 3:10 | 4-7 `later` | BSB | BSB text |
+
+Cut in chapter 18: Acts 8:27, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
