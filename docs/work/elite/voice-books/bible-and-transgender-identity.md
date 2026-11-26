@@ -25,19 +25,19 @@ Three scripts, kept outside the repo in `/home/user/vs5/t/` (`apply.py`, `factdi
 | Chapter | Words before | after | change | Em-dashes before (per 1,000) | after | Tells before (per 1,000) | after | Edits | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|
 | Introduction: THE QUESTION NOBODY PREPARED THE CHURCH TO ANSWER | 1,533 | 1,533 | +0.0% | 22 (14.4) | 0 (0.0) | 56 (36.5) | 34 (22.2) | 16 | PASS |
-| Chapter 2: WHAT IS GENDER DYSPHORIA? | 4,298 | 4,298 | +0.0% | 38 (8.8) | 0 (0.0) | 106 (24.7) | 69 (16.1) | 28 | PASS |
+| Chapter 2: WHAT IS GENDER DYSPHORIA? | 4,298 | 4,298 | +0.0% | 38 (8.8) | 0 (0.0) | 106 (24.7) | 69 (16.1) | 29 | PASS |
 | Chapter 3: THE BODY MATTERS | 3,795 | 3,795 | +0.0% | 40 (10.5) | 0 (0.0) | 113 (29.8) | 74 (19.5) | 28 | PASS |
-| Chapter 4: EUNUCHS IN THE BIBLE | 3,002 | 3,002 | +0.0% | 31 (10.3) | 0 (0.0) | 74 (24.7) | 44 (14.7) | 17 | PASS |
-| Chapter 5: THE GENDER IDEOLOGY DEBATE | 3,650 | 3,650 | +0.0% | 48 (13.2) | 0 (0.0) | 108 (29.6) | 62 (17.0) | 22 | PASS |
-| Chapter 6: CHILDREN, PUBERTY BLOCKERS, AND THE CHURCH'S RESPONSIBILITY | 4,205 | 4,205 | +0.0% | 44 (10.5) | 0 (0.0) | 111 (26.4) | 72 (17.1) | 27 | PASS |
+| Chapter 4: EUNUCHS IN THE BIBLE | 3,002 | 3,002 | +0.0% | 31 (10.3) | 0 (0.0) | 74 (24.7) | 44 (14.7) | 18 | PASS |
+| Chapter 5: THE GENDER IDEOLOGY DEBATE | 3,650 | 3,650 | +0.0% | 48 (13.2) | 0 (0.0) | 108 (29.6) | 62 (17.0) | 23 | PASS |
+| Chapter 6: CHILDREN, PUBERTY BLOCKERS, AND THE CHURCH'S RESPONSIBILITY | 4,205 | 4,205 | +0.0% | 44 (10.5) | 0 (0.0) | 111 (26.4) | 72 (17.1) | 28 | PASS |
 | Chapter 7: PRONOUNS, BATHROOMS, AND THE DAILY QUESTIONS | 3,967 | 3,967 | +0.0% | 37 (9.3) | 0 (0.0) | 105 (26.5) | 71 (17.9) | 25 | PASS |
 | Chapter 8: HOW THE CHURCH HAS HARMED TRANSGENDER PEOPLE | 2,512 | 2,512 | +0.0% | 27 (10.7) | 0 (0.0) | 63 (25.1) | 36 (14.3) | 23 | PASS |
 | Chapter 9: Intersex Conditions and the Binary Question | 2,952 | 2,952 | +0.0% | 27 (9.1) | 2 (0.7) | 74 (25.1) | 51 (17.3) | 17 | PASS |
 | Chapter 10: TRANSGENDER PEOPLE IN YOUR CHURCH | 3,646 | 3,646 | +0.0% | 36 (9.9) | 0 (0.0) | 100 (27.4) | 69 (18.9) | 22 | PASS |
-| Chapter 11: WHAT TO SAY WHEN SOMEONE YOU LOVE SAYS THEY'RE TRANSGENDER | 3,367 | 3,367 | +0.0% | 39 (11.6) | 0 (0.0) | 79 (23.5) | 43 (12.8) | 26 | PASS |
+| Chapter 11: WHAT TO SAY WHEN SOMEONE YOU LOVE SAYS THEY'RE TRANSGENDER | 3,367 | 3,367 | +0.0% | 39 (11.6) | 0 (0.0) | 79 (23.5) | 43 (12.8) | 28 | PASS |
 | Chapter 12: A CHURCH THAT HOLDS THE TRUTH AND WEEPS WITH THOSE WHO WEEP | 3,671 | 3,671 | +0.0% | 40 (10.9) | 0 (0.0) | 117 (31.9) | 77 (21.0) | 25 | PASS |
 | Conclusion: IMAGE-BEARERS FIRST | 3,049 | 3,049 | +0.0% | 30 (9.8) | 0 (0.0) | 108 (35.4) | 78 (25.6) | 23 | PASS |
-| **All 13** | 43,647 | 43,647 | +0.0% | 459 (10.5) | 2 (0.0) | 1214 (27.8) | 780 (17.9) | 299 | |
+| **All 13** | 43,647 | 43,647 | +0.0% | 459 (10.5) | 2 (0.0) | 1214 (27.8) | 780 (17.9) | 305 | |
 
 ## Introduction: THE QUESTION NOBODY PREPARED THE CHURCH TO ANSWER (`sec01.xhtml`)
 
@@ -63,7 +63,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter 2: WHAT IS GENDER DYSPHORIA? (`sec03.xhtml`)
 
-Words 4,298 to 4,298. Em-dashes in his prose 38 to 0 (8.8 to 0.0 per 1,000 words). Tells 106 to 69 (24.7 to 16.1 per 1,000). Mean sentence 20.8 words to 20.8; sentences of eight words or fewer 24.9% to 24.9%; of five or fewer 9.1% to 9.1%. 28 edits; paragraphs 55 to 55. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 4,298 to 4,298. Em-dashes in his prose 38 to 0 (8.8 to 0.0 per 1,000 words). Tells 106 to 69 (24.7 to 16.1 per 1,000). Mean sentence 20.8 words to 20.8; sentences of eight words or fewer 24.9% to 24.9%; of five or fewer 9.1% to 9.1%. 29 edits; paragraphs 55 to 55. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 38 to 0, not_but 11 to 11, NotX.Y 2 to 2, isnt_its 8 to 8, triplet 19 to 19, anaphora 4 to 4, stock 5 to 5, intens 6 to 6, q_answered 1 to 1, colon_reveal 0 to 1, short_close 12 to 12.
 
@@ -107,7 +107,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter 4: EUNUCHS IN THE BIBLE (`sec05.xhtml`)
 
-Words 3,002 to 3,002. Em-dashes in his prose 31 to 0 (10.3 to 0.0 per 1,000 words). Tells 74 to 44 (24.7 to 14.7 per 1,000). Mean sentence 20.1 words to 20.1; sentences of eight words or fewer 33.8% to 33.8%; of five or fewer 19.1% to 19.1%. 17 edits; paragraphs 34 to 34. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
+Words 3,002 to 3,002. Em-dashes in his prose 31 to 0 (10.3 to 0.0 per 1,000 words). Tells 74 to 44 (24.7 to 14.7 per 1,000). Mean sentence 20.1 words to 20.1; sentences of eight words or fewer 33.8% to 33.8%; of five or fewer 19.1% to 19.1%. 18 edits; paragraphs 34 to 34. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
 
 By kind (before to after): emdash 31 to 0, not_but 16 to 16, NotX.Y 2 to 2, isnt_its 3 to 3, triplet 7 to 8, frag3 1 to 1, anaphora 1 to 1, stock 2 to 2, intens 1 to 1, short_close 10 to 10.
 
@@ -122,14 +122,14 @@ Five pairs, taken at even intervals through the chapter:
 3. Before: These are not identical situations; the eunuch's condition was about reproductive capacity, and the transgender person's condition is about gender identity—the sense of what gender one is, not necessarily about reproductive function.
    After: These are not identical situations; the eunuch's condition was about reproductive capacity, and the transgender person's condition is about gender identity, the sense of what gender one is, not necessarily about reproductive function.
 4. Before: Cultures have handled this recognition differently—some with respect, some with disrespect—but most human cultures have somehow acknowledged the reality.
-   After: Cultures have handled this recognition differently (some with respect, some with disrespect) but most human cultures have somehow acknowledged the reality.
+   After: Cultures have handled this recognition differently (some with respect, some with disrespect), but most human cultures have somehow acknowledged the reality.
 5. Before: A person who accepts their biological sex, even though they experience dysphoria, is not giving up on meaning; they are finding meaning in a different way—not through reproductive participation, but through spiritual participation, not through biological legacy, but through covenant faithfulness.
    After: A person who accepts their biological sex, even though they experience dysphoria, is not giving up on meaning; they are finding meaning in a different way, not through reproductive participation, but through spiritual participation, not through biological legacy, but through covenant faithfulness.
 
 
 ## Chapter 5: THE GENDER IDEOLOGY DEBATE (`sec06.xhtml`)
 
-Words 3,650 to 3,650. Em-dashes in his prose 48 to 0 (13.2 to 0.0 per 1,000 words). Tells 108 to 62 (29.6 to 17.0 per 1,000). Mean sentence 21.7 words to 21.7; sentences of eight words or fewer 23.5% to 23.5%; of five or fewer 10.2% to 10.2%. 22 edits; paragraphs 25 to 25. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 3,650 to 3,650. Em-dashes in his prose 48 to 0 (13.2 to 0.0 per 1,000 words). Tells 108 to 62 (29.6 to 17.0 per 1,000). Mean sentence 21.7 words to 21.7; sentences of eight words or fewer 23.5% to 23.5%; of five or fewer 10.2% to 10.2%. 23 edits; paragraphs 25 to 25. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 48 to 0, not_but 21 to 21, NotX.Y 1 to 1, isnt_its 2 to 2, triplet 18 to 18, anaphora 7 to 7, stock 1 to 1, q_answered 2 to 2, colon_reveal 4 to 6, short_close 4 to 4.
 
@@ -151,7 +151,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter 6: CHILDREN, PUBERTY BLOCKERS, AND THE CHURCH'S RESPONSIBILITY (`sec07.xhtml`)
 
-Words 4,205 to 4,205. Em-dashes in his prose 44 to 0 (10.5 to 0.0 per 1,000 words). Tells 111 to 72 (26.4 to 17.1 per 1,000). Mean sentence 18.8 words to 18.8; sentences of eight words or fewer 31.4% to 31.4%; of five or fewer 19.0% to 19.0%. 27 edits; paragraphs 40 to 40. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 4 to 4.
+Words 4,205 to 4,205. Em-dashes in his prose 44 to 0 (10.5 to 0.0 per 1,000 words). Tells 111 to 72 (26.4 to 17.1 per 1,000). Mean sentence 18.8 words to 18.8; sentences of eight words or fewer 31.4% to 31.4%; of five or fewer 19.0% to 19.0%. 28 edits; paragraphs 40 to 40. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 4 to 4.
 
 By kind (before to after): emdash 44 to 0, not_but 12 to 14, isnt_its 1 to 1, triplet 22 to 24, frag3 4 to 4, anaphora 5 to 5, stock 2 to 2, intens 5 to 5, q_answered 10 to 10, colon_reveal 1 to 2, short_close 5 to 5.
 
@@ -261,7 +261,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter 11: WHAT TO SAY WHEN SOMEONE YOU LOVE SAYS THEY'RE TRANSGENDER (`sec12.xhtml`)
 
-Words 3,367 to 3,367. Em-dashes in his prose 39 to 0 (11.6 to 0.0 per 1,000 words). Tells 79 to 43 (23.5 to 12.8 per 1,000). Mean sentence 21.6 words to 21.6; sentences of eight words or fewer 29.3% to 29.3%; of five or fewer 14.3% to 14.3%. 26 edits; paragraphs 30 to 30. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
+Words 3,367 to 3,367. Em-dashes in his prose 39 to 0 (11.6 to 0.0 per 1,000 words). Tells 79 to 43 (23.5 to 12.8 per 1,000). Mean sentence 21.6 words to 21.6; sentences of eight words or fewer 29.3% to 29.3%; of five or fewer 14.3% to 14.3%. 28 edits; paragraphs 30 to 30. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
 
 By kind (before to after): emdash 39 to 0, not_but 17 to 19, not_just 1 to 1, NotX.Y 1 to 1, isnt_its 1 to 1, triplet 6 to 6, frag3 1 to 1, anaphora 2 to 2, stock 1 to 1, intens 4 to 4, colon_reveal 2 to 3, short_close 4 to 4.
 
@@ -274,7 +274,7 @@ Five pairs, taken at even intervals through the chapter:
 2. Before: Fourth, get help for your loved one—not conversion therapy, not ideology-driven affirmation, but actual psychological care:
    After: Fourth, get help for your loved one, not conversion therapy, not ideology-driven affirmation, but actual psychological care:
 3. Before: He was critical of people's choices—the rich young ruler, the money changers in the temple, those who wanted to stone the woman caught in adultery—but He did it while holding their dignity intact.
-   After: He was critical of people's choices (the rich young ruler, the money changers in the temple, those who wanted to stone the woman caught in adultery) but He did it while holding their dignity intact.
+   After: He was critical of people's choices (the rich young ruler, the money changers in the temple, those who wanted to stone the woman caught in adultery), but He did it while holding their dignity intact.
 4. Before: You have spent years understanding that person as one thing—sister, brother, parent, child—and now they are asking you to understand something different; and if you hold deep convictions about what sex and gender mean, you are being asked to choose between your love for the person and your belief about reality.
    After: You have spent years understanding that person as one thing (sister, brother, parent, child) and now they are asking you to understand something different; and if you hold deep convictions about what sex and gender mean, you are being asked to choose between your love for the person and your belief about reality.
 5. Before: But some families discover that love is more durable than disagreement—and that showing up year after year in the face of deep conviction holds a power that force never could.
@@ -326,13 +326,15 @@ Five pairs, taken at even intervals through the chapter:
 
 ## The whole book
 
-All fourteen files were edited (the introduction, twelve chapters and the conclusion). In his running prose: 47,657 words before and after; em-dashes 459 before, 7 after (9.6 to 0.1 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all fourteen.
+Thirteen of the fourteen files were edited (chapter 1 has no long dash in its running prose). In his running prose: 47,657 words before and after; em-dashes 459 before, 7 after (9.6 to 0.1 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all thirteen. (The tell counter in the table blanks quotations before it counts, so its "after" column shows 2.)
 
 **Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets, or joins fragments. No word was added, removed or replaced. One fragment stack was joined: "Choose wisely, because the stakes are souls. Real people. Real confusion. Real suffering." is "... because the stakes are souls: real people, real confusion, real suffering." (conclusion).
 
 **The seven dashes that stay.** Five are inside quotations (the Cass Review in chapter 2, the Berry passage in chapter 3, the words offered to a parent in chapter 11 and to a church in chapter 12). Two set an answer after a question in chapter 9 ("What is your biological sex? — complicated in intersex conditions. What is your gender identity? — complicated in transgender experience."), where neither a comma nor a colon can follow a question mark.
 
 **Left alone, and why.** "The body is raised. Not escaped. Transformed." (chapter 3) and "Not ideology. Not dismissal. Belonging with honesty." (chapter 7) are verdicts that could only be joined by adding words. "Stay involved. Stay loving. Stay engaged." (chapter 6) are imperatives.
+
+**A second look (2026-11-26).** After the first pass, every place where the rule had closed brackets straight onto "but", "so" or "yet" beginning a new clause was found by search and given its comma ("), but"); one commit, the fact diff passing again.
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
@@ -359,4 +361,4 @@ The chapters were not read whole for this list. It comes from reading the block 
 
 ## The files
 
-Rebuilt after the last chapter: still 181 pages (`client/src/data/ebooks.ts` says 181), PDF 1.4 MB, EPUB 324 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (49,255 words compared, no difference); the PDF's pages carry the same text character for character (246,017 against 246,017).
+Rebuilt after the last chapter: still 181 pages (`client/src/data/ebooks.ts` says 181), PDF 1.4 MB, EPUB 324 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (49,255 words compared, no difference); the PDF's pages carry the same text character for character (246,023 against 246,023).

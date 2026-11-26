@@ -126,6 +126,7 @@ const TheologyCreeds = lazy(() => import("./pages/TheologyCreeds"));
 const TheologyDiagnostic = lazy(() => import("./pages/TheologyDiagnostic"));
 const TheologyQuestions = lazy(() => import("./pages/TheologyQuestions"));
 const TheologyTraditions = lazy(() => import("./pages/TheologyTraditions"));
+const TheologyReadingTheBible = lazy(() => import("./pages/TheologyReadingTheBible"));
 const TheologySearch = lazy(() => import("./pages/TheologySearch"));
 const PropheticConsistency = lazy(() => import("./pages/prophetic/PropheticConsistency"));
 // Church history James kept: the injustice timeline and the witnesses.
@@ -192,6 +193,7 @@ const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const ExplorerFilm = lazy(() => import("./pages/explorer/ExplorerFilm"));
 const ExplorerTravels = lazy(() => import("./pages/explorer/ExplorerTravels"));
 const ExplorerAbraham = lazy(() => import("./pages/explorer/ExplorerAbraham"));
+const BibleFilms = lazy(() => import("./pages/explorer/BibleFilms"));
 const Answers = lazy(() => import("./pages/Answers"));
 const AnswerPage = lazy(() => import("./pages/AnswerPage"));
 // The apologetics library (lib/questions): pending until James reads it, so
@@ -435,6 +437,7 @@ function Router() {
         <Route path="/theology/which-view" component={TheologyDiagnostic} />
         <Route path="/theology/questions" component={TheologyQuestions} />
         <Route path="/theology/traditions" component={TheologyTraditions} />
+        <Route path="/theology/reading-the-bible" component={TheologyReadingTheBible} />
         <Route path="/theology/search" component={TheologySearch} />
         <Route path="/theology/paths" component={ToStudyRedirect} />
         <Route path="/disruption/posture" component={ToFaithAndPowerRedirect} />
@@ -653,6 +656,7 @@ function Router() {
         <Route path="/tracks/:slug/leader" component={TrackLeader} />
         <Route path="/tracks/:slug/print" component={TrackPrint} />
         <Route path="/tracks/:slug/:n" component={TrackSession} />
+        <Route path="/study/films" component={BibleFilms} />
         <Route path="/study/explorer/watch/:slug" component={ExplorerFilm} />
         <Route path="/study/explorer/pauls-travels" component={ExplorerTravels} />
         <Route path="/study/explorer/abrahams-road" component={ExplorerAbraham} />
