@@ -21973,3 +21973,23 @@ Cut from the book page: the old introduction's lines that Jesus, ‘one greater 
 | 1 Kings 4:29; Job 28:12 | 12-18 | the chapter data's cross-references for 1:16 (1 Kings 4:30; 3:12); ecclesiastes/1.json `story`; BSB | Repository; BSB text |
 
 Cut in chapter 1: the deep note's line that Christian faith answers ‘nothing new’ with the resurrection as new creation (left to the book page's own wording on the New Testament). No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 2 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (its last sentence; the first, with an inner quotation, paraphrased); 2:2 paraphrased; 2:3 (its last clause; the verse holds dashes); 2:4; 2:5; the possessions (2:6-8) paraphrased (verse 8 holds a dash); 2:9; 2:10 (its first sentence); 2:11 | 1-11 | BSB | BSB text |
+| The search carried out; pleasure, achievement, wealth, wisdom; the royal voice whether or not Solomon wrote; royal parks of Assyria and Persia, canals and reservoirs; a royal household and marriage alliances; pardes from Persian and ‘paradise’; ‘for myself’ repeated | 1-11 | ecclesiastes/2.json `story`, `historical`, `cultural`, `literary`, `words` (pardes) | Repository |
+| 1 Kings 10:23 (from ‘King Solomon’); 1 John 2:17 (its first clause) | 1-11 | the chapter data's cross-references for 2:9 (1 Kings 10:23) and 2:11 (1 John 2:16-17); BSB | Repository; BSB text |
+| 2:13; 2:14; 2:16 (its exclamation, in double quotes); 2:17; 2:18 paraphrased; 2:19 (its first sentence); 2:20; 2:23 | 12-23 | BSB | BSB text |
+| Wisdom better than folly; miqreh and death; inheritance to sons; Rehoboam (1 Kings 12) and verse 19; verse 17 recorded as a cry, not counsel, not the last word; the restless night | 12-23 | ecclesiastes/2.json `cultural`, `literary`, `words` (miqreh); the brief's crisis rules | Repository |
+| The self-harm line (‘If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country...’ to ‘...lists places to turn.’) | 12-23 | job/plain/3.json and the 1 Kings 19 and 2 Samuel 17 notes (`hard`) | Reused byte for byte; Find Help named; no phone number |
+| Psalm 127:2 (its first sentence, before the dash; the rest paraphrased); Elijah under the broom tree, and the bread and sleep God gave (1 Kings 19:4-8) | 12-23 | the chapter data's cross-references for 2:17 (1 Kings 19:4) and 2:23 (Psalm 127:2); 1-kings/plain/19.json; BSB | Repository; BSB text |
+| 2:24; 2:25; the giver and the sinner (2:26) paraphrased, with its last sentence quoted | 24-26 | BSB | BSB text |
+| The new note of gift; from grasping to receiving; simchah tested and given; the last verse still ending in futility | 24-26 | ecclesiastes/2.json `story`, `words` (simchah) | Repository |
+| Ecclesiastes 8:15 (its clause); 1 Timothy 6:17 (its last clause) | 24-26 | the chapter data's cross-references for 2:24 (8:15; 1 Timothy 6:17); BSB | Repository; BSB text |
+| The hard note: resigned pleasure-seeking as one reading; verse 24's ‘from the hand of God’ and verse 25; received, not grasped as a substitute; the last verse's futility | 24-26 `hard` | ecclesiastes/2.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 2: the deep note's lines to Christ (the rich fool, Luke 12:16-21; one greater than Solomon; 1 Corinthians 15:58 beside the Teacher's despair, which is left to the book page's own wording).
