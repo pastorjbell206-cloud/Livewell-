@@ -24935,3 +24935,19 @@ Cut in chapter 6: the deep note's line from Jesus' lament over Jerusalem, which 
 | Matthew 21:13 (named), Psalm 78:60, 1 Samuel 15:22, Hosea 6:6, Leviticus 18:21 (clauses); 2 Kings 23:10 (paraphrased) | `later` | BSB | BSB text |
 
 Cut in chapter 7: the deep note's line on the temple's fall in AD 70 and Jesus as the new temple, beyond what the New Testament draws from this chapter.
+
+## The plain notes on Jeremiah 8 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1-22 | all | BSB | BSB text |
+| Jehoiakim's reign; Manasseh's star worship and Josiah's removal | 1-12 | jeremiah/8.json `historical` | Repository |
+| Burial and the unburied curse; migration routes and storks; the lying pen | 1-12 | jeremiah/8.json `cultural` | Repository |
+| The farming year; Dan; Gilead's balm, Genesis 37:25 | 13-22 | jeremiah/8.json `cultural`, `historical` | Repository |
+| Who weeps; impassibility and God's involvement | 13-22 `hard` | jeremiah/8.json `hard` | Repository |
+| The GRIEF care line, byte for byte | 13-22 `hard` | carelines.json | care.mjs |
+| Deuteronomy 28:26, Isaiah 1:3, Genesis 37:25, Lamentations 2:11 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 8: Luke 19:41-44 and Mark 2:17 beside the prophet's grief and the physician, which the deep note gives as Christian readings the New Testament does not draw from this chapter.
