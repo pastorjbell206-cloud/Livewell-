@@ -25074,3 +25074,18 @@ Cut in chapter 15: nothing.
 | 1 Corinthians 7:26, Jeremiah 7:34, Isaiah 43:18 (clauses); Deuteronomy 14:1 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 16: nothing. The fishermen of verse 16 are left without Matthew 4:19, which the New Testament does not tie to this verse.
+
+## The plain notes on Jeremiah 17 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 17:1-27 (verse 15's taunt paraphrased) | all | BSB | BSB text |
+| Iron stylus and diamond point; horns of the altar; Asherah poles; Josiah's 620s reform; the partridge belief | 1-13 | jeremiah/17.json `cultural`, `historical` | Repository |
+| The third confession; the taunt; never wishing for disaster | 14-18 | jeremiah/17.json `literary` | Repository |
+| The gate of the people unknown; Sabbath trade; Nehemiah 13 | 19-27 | jeremiah/17.json `historical` | Repository |
+| Sabbath as covenant test; three Christian readings (Colossians 2, Hebrews 4, Romans 14) | 19-27 `hard` | jeremiah/17.json `hard` | Repository |
+| Psalm 1:3, Psalm 139:23, Psalm 6:2, 2 Peter 3:4, Nehemiah 13:15, Mark 2:27 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 17: nothing.
