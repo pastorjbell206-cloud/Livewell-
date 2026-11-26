@@ -902,6 +902,10 @@ differ in is said under each book. Each was then edited (records in
   PDF's fuller copyright notice is used. 37 pages became 40
   (`client/src/data/booklets.ts` says 40). `--verify`: identical (6,466
   words; 34,332 characters).
+  Then edited (`change-without-casualties.md`): 68 dashes in his prose to 2
+  (both before a Scripture reference), every edit punctuation, fact diff
+  passed on all nine files; rebuilt, still 40 pages, `--verify` identical
+  (6,411 words; 34,332 characters).
 
 ### The apparatus
 

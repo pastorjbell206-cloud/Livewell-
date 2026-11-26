@@ -229,3 +229,7 @@ The booklet was read for this list in its dash contexts and searched for referen
 ## Questions only James can answer
 
 1. Move each "CHAPTER ..." label to the head of its own chapter?
+
+## The files
+
+Rebuilt after the last chapter: still 40 pages (`client/src/data/booklets.ts` says 40), PDF 457 KB, EPUB 257 KB. `--verify`: the EPUB carries exactly the source folder's text (6,411 words compared, no difference); the PDF's pages carry the same text character for character (34,332 against 34,332). The title page, the introduction's last page and a chapter opening were looked at as images on the first build.
