@@ -22628,3 +22628,25 @@ Cut in chapter 35: nothing. No care line is needed in this chapter.
 | 2 Kings 18:26-37 named; Psalm 20:7 | 11-22 `later` | BSB | BSB text |
 
 Cut in chapter 36: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 37 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/37.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 37:1-13 | 1-13 | BSB | BSB text |
+| Hezekiah's answer against Ahaz's; the birth picture; 701 BC; Lachish and Libnah; Tirhakah, the Twenty-Fifth Dynasty, about 690 and the title held later; the LORD set among the idols | 1-13 | isaiah/37.json `historical` | Repository |
+| 2 Kings 19:1 (first typed inexactly, caught and corrected) | 1-13 `later` | BSB | BSB text |
+| 37:14-20 (37:19's clause before the dash) | 14-20 | BSB | BSB text |
+| The letter spread out; the cherubim of the ark; honesty about the facts; for God's name | 14-20 | isaiah/37.json `summary` | Repository |
+| 2 Kings 19:15-19 named; Psalm 79:9 | 14-20 `later` | BSB | BSB text |
+| 37:21-35 (37:23 in double quotes for its exclamation) | 21-35 | BSB | BSB text |
+| The answer because he prayed; the Daughter of Zion mocking; the tool and the hand; the hook and the captives on cords in Assyrian monuments; the two-year sign; the remnant; no arrow, shield or ramp | 21-35 | isaiah/37.json `cultural`, `summary` | Repository |
+| 2 Kings 19:21-34 named; Isaiah 10:21 | 21-35 `later` | BSB | BSB text |
+| 37:36-38 | 36-38 | BSB | BSB text |
+| Told soberly; the annals' silence; 681 BC and the Babylonian chronicle; Esarhaddon; Nisroch unidentified | 36-38 | isaiah/37.json `historical` | Repository |
+| 2 Kings 19:35; Isaiah 31:8 | 36-38 `later` | BSB | BSB text |
+| The hard note: the number and the silence; Herodotus and the mice; plague, direct act or heightening; 'eleph as a unit, uncertain; judgment told soberly; no side; no rejoicing over anyone's death | 36-38 `hard` | isaiah/37.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 37: nothing. No care line is needed in this chapter.
