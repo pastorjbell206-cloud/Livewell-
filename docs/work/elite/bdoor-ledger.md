@@ -23291,3 +23291,22 @@ Cut in chapter 1: the deep note's lines to the New Testament's day of the Lord, 
 | Nahum 1:1; Isaiah 47:8 (its clause) | 13-15 | BSB | BSB text |
 
 Cut in chapter 2: nothing drawn to the New Testament.
+
+## The plain notes on Zephaniah 3 (2026-11-26)
+
+`client/public/bible/notes/zephaniah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 (in double quotes); 3:2, 3:4 and 3:6-8 paraphrased; 3:3; 3:5 (its first sentence) | 1-8 | BSB | BSB text |
+| Seventh-century Jerusalem; every level of leaders; Jeremiah's charges; lions and evening wolves; the LORD's daily justice; Samaria in 722 BC and Assyria's ruins | 1-8 | zephaniah/3.json `historical`, `cultural` | Repository |
+| Jeremiah 5:31 (its first sentence); Ezekiel 22:27 paraphrased | 1-8 | zephaniah/3.json `historical`; BSB | Repository; BSB text |
+| 3:9; 3:10-11 and 3:13 paraphrased; 3:12 | 9-13 | BSB | BSB text |
+| Judgment purifying, the refiner's fire; safah and Babel reversed; the remnant as the humble of 2:3 | 9-13 | zephaniah/3.json `hard`, `literary`, `words` | Repository |
+| Genesis 11:9 paraphrased; Psalm 147:6 (its clause) | 9-13 | BSB | BSB text |
+| 3:14 (in double quotes); 3:15; 3:16 and 3:18 and 3:20 paraphrased; 3:17; 3:19 (its clause) | 14-20 | BSB | BSB text |
+| From sweeping away to singing; the King in their midst; mighty to save; the lame and scattered; the added-ending view | 14-20 | zephaniah/3.json `summary`, `hard` | Repository; both views in their holders' terms |
+| Micah 4:6 (its clause); Zechariah 9:9 (its first clause) | 14-20 | BSB | BSB text |
+| The hard note: added later or the prophets' pattern (Amos 9, Hosea 14, Micah 7); 3:8-9 and purifying judgment; the humble remnant; judgment and joy not opposed | 14-20 `hard` | zephaniah/3.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 3: an unsourced reading of 3:17 (quiet in his love as silent in his love) was cut before commit. The deep note's line to Pentecost is left out.
