@@ -25392,3 +25392,19 @@ The branch now carries Babylon's point (id `babylon`, 32.54 N, 44.42 E, on Jerem
 ## Ezekiel's book page: two small corrections (2026-11-26)
 
 On Ezekiel's book page, Tyre's label on the `fertile-crescent` map now sits to the right of the point, because at a 390-pixel width it touched the frame's own label, THE GREAT SEA. The line on 2 Corinthians 6:16 now says that Paul's words echo Leviticus 26:12 and that many readers hear Ezekiel 37:27 in them as well, so it is given as a reading, since the New Testament does not quote Ezekiel 37 directly (the coordinator's note).
+
+## The plain notes on Jeremiah 23 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 23:1-40 (verses 33-40 paraphrased around inner speech marks) | all | BSB | BSB text |
+| Kings as shepherds; Zedekiah 597 BC and his name | 1-8 | jeremiah/23.json `cultural`, `historical` | Repository |
+| The Branch as a Christian reading | 1-8 `later` | jeremiah/intro.json `christ` | Repository |
+| The court prophets; Samaria 722 BC and Baal | 9-24 | jeremiah/23.json `historical` | Repository |
+| Tests of a true prophet; Deuteronomy 18:21-22; verses 14, 17, 22; chapter 28 | 9-24 `hard` | jeremiah/23.json `hard` | Repository |
+| Dreams; straw and grain; massa as burden and oracle | 25-40 | jeremiah/23.json `cultural`, `words` | Repository |
+| Zechariah 3:8, Ezekiel 34:23, Deuteronomy 18:22, Psalm 139:7, Hebrews 4:12 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 23: nothing. The Branch is given as a Christian reading; the New Testament does not quote verses 5 and 6.
