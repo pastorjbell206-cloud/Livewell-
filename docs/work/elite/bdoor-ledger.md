@@ -22483,3 +22483,22 @@ Cut in chapter 27: nothing beyond the policy on lines to Christ. No care line is
 | Lamentations 3:33; Isaiah 9:6 | 23-29 `later` | BSB | BSB text |
 
 Cut in chapter 28: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 29 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 29:1-8 (29:1 in double quotes for its exclamation; 29:7 paraphrased around its dash) | 1-8 | BSB | BSB text |
+| Ariel as Jerusalem (2 Samuel 5:6-9); ariel and the altar hearth (Ezekiel 43:15-16); 701 BC; 37:36; the sudden reversal; the festivals | 1-8 | isaiah/29.json `story`, `historical`, `words` | Repository |
+| Isaiah 37:36; Psalm 73:20 (first typed inexactly, caught and corrected) | 1-8 `later` | BSB | BSB text |
+| 29:9-16 (29:13 inside the BSB's speech marks; 29:16's questions paraphrased) | 9-16 | BSB | BSB text |
+| Religion of routine; the sealed scroll; secret alliances with Egypt; the potter | 9-16 | isaiah/29.json `story`, `historical` | Repository |
+| Matthew 15:8 (inside the BSB's inner quotation mark); 1 Corinthians 1:19 (inside the BSB's speech marks); Jeremiah 18:6 | 9-16 `later` | isaiah/29.json `christ`; BSB | BSB text; the New Testament's own quotations |
+| The hard note: blindness chosen and confirmed; judicial hardening (Romans 1); eyes promised open; verse 13 a warning for every worshiping community, the church included, never a label for the Jewish people | 9-16 `hard` | isaiah/29.json `hard`; the brief | Repository |
+| 29:17-24 (29:20 paraphrased around its dash) | 17-24 | BSB | BSB text |
+| Blindness to sight; the gate and the advocate; chapters 32, 35 and 42 | 17-24 | isaiah/29.json `story` | Repository |
+| Isaiah 35:5; Matthew 11:5 | 17-24 `later` | isaiah/29.json `christ`; BSB | BSB text |
+
+Cut in chapter 29: the deep note's line on the risen Jesus opening the sealed book, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
