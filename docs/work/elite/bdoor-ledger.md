@@ -21101,3 +21101,22 @@ Cut in chapter 22: the deep note's lines (2 Corinthians 9:7 and the Greek additi
 | Isaiah 5:11; Ephesians 5:18 | 26-35 | the chapter data's cross-references for 23:29-30 (Isaiah 5:11; Ephesians 5:18); BSB | Repository; BSB text |
 
 Cut in chapter 23: the deep note's lines to Christ (Jesus as the Redeemer of the fatherless; any line beside verse 26). The drunkard's beating is told in his own words and not dwelt on.
+
+## The plain notes on Proverbs 24 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 24:1; violence (24:2); 24:3-4; 24:5 (its first clause); counsel in war (24:6); 24:10 (its quoted words, the exclamation left out); 24:11; 24:12 (its question, in part; the verse holds an inner quotation); 24:13 (its first clause); 24:14 | 1-14 | BSB | BSB text |
+| The end of the Words of the Wise and the appendix; the building poem; the urgency of verses 10-12; the excuse anticipated and answered; God weighing hearts; verse 10 as a call to strength, not a rebuke; honey and wisdom | 1-14 | proverbs/24.json `story`, `literary` | Repository |
+| Psalm 82:4; Isaiah 40:31 (its first clause) | 1-14 | the chapter data's cross-references for 24:11 (Psalm 82:4) and 24:10 (Isaiah 40:31); BSB | Repository; BSB text |
+| 24:15 paraphrased; 24:16; 24:17; 24:18 paraphrased; 24:19; 24:20 (its first clause); 24:21 | 15-22 | BSB | BSB text |
+| Seven as fullness; God upholding; gloating as itself a sin; loyalty to the king in a monarchy that trained officials in wisdom | 15-22 | proverbs/24.json `hard`, `historical` | Repository |
+| Psalm 37:24; Micah 7:8 (an exclamation, in double quotes) | 15-22 | the chapter data's cross-references for 24:16 (Psalm 37:24; Micah 7:8); BSB | Repository; BSB text |
+| The hard note: a proverb, not a promise; seven as fullness and endurance; Job, Ecclesiastes and the lament psalms; God sustains, not always with restored fortunes; no one may say a person who has not recovered is not righteous | 15-22 `hard` | proverbs/24.json `hard`; the brief's crisis rules | Repository |
+| 24:23; the judge (24:24) paraphrased (it holds an inner quotation and a dash); 24:25 (its first clause); 24:26; 24:27; 24:28 paraphrased; 24:29 paraphrased (it holds an inner quotation); 24:30; the overgrown field (24:31); 24:32; 24:33-34 | 23-34 | BSB | BSB text |
+| A separate heading and compiled sources; justice at the gate; corrupted courts; the kiss as loyalty; payback, feuds and the law's limits; leaving repayment to God (verse 12); terraced fields and stone walls; 6:10-11 repeated; ‘a little’ three times | 23-34 | proverbs/24.json `historical`, `cultural`, `literary` | Repository |
+| Romans 12:17 (its first sentence); Job 31:29 (its first clause, before the dash) | 23-34 | the chapter data's cross-references for 24:29 (Romans 12:17) and 24:17 (Job 31:29); BSB | Repository; BSB text |
+
+Cut in chapter 24: the deep note's lines to Christ (Jesus as the one who seeks and saves the lost beside verse 11; the sheep and the goats; Jesus praying for those who crucified him beside verse 29; the note calls the link continuity in ethics); the resurrection as the final rising of verse 16 (left to the New Testament's own pages).
