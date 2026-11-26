@@ -26130,3 +26130,18 @@ Cut in chapter 44: Ephesians 2:13 beside the foreigners, which the New Testament
 | The hard note: Why does Ezekiel's worship calendar differ from the law of Moses? The readings in their holders' terms | 13-25 `hard` | ezekiel/45.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 45: nothing.
+
+## The plain notes on Ezekiel 46 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/46.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sabbaths, New Moons and the way out: the text paraphrased; quoted clauses at verses 1, 2, 3, 4-8, 9, 10, 11-15 | 1-15 | BSB | BSB text |
+| Background in `hearers` | 1-15 | ezekiel/46.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Chronicles 26:16-19; Psalm 84:10 | 1-15 `later` | BSB | BSB text |
+| The people's land, and the temple kitchens: the text paraphrased; quoted clauses at verses 17, 18, 19-20, 24 | 16-24 | BSB | BSB text |
+| Background in `hearers` | 16-24 | ezekiel/46.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 25:10; Jeremiah 34:11 | 16-24 `later` | BSB | BSB text |
+
+Cut in chapter 46: the morning-only daily offering, left out for want of room.
