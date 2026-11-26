@@ -1569,3 +1569,23 @@ Bathsheba, Uriah, Tamar and Absalom's revolt are named at the older level only, 
 | pictures | Bathsheba, Uriah, Tamar, Amnon and Absalom not drawn; no battle, weapon or death; God not drawn; David's crown gold only where it is the picture's one mark (the crown was taken off in the night scene after the sheet was read) | The drawing (`scenes/book-2-samuel.tsx`); sheets of the finished frames read |
 | left out | Abner, Joab and Ish-bosheth; Uzzah; Mephibosheth; the ten women; Sheba; the census and the plague | Deliberate; the book page is linked |
 | length | Younger 2:58.5, older 3:11.4 | `audio/manifest.json` |
+
+### Nehemiah: rebuilding the walls, and a people (`book-nehemiah`)
+
+The harsh reforms of chapter 13 are told as the book page tells them, reported and not approved, with its words that nothing in them "gives anyone today a warrant to strike or harm anyone". No weapon or blow is drawn.
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Nehemiah 1:4; 2:18; 4:9; 5:9; 8:8; 13:31; 2:4 (some trimmed to a clause) | BSB, by the validator; all Nehemiah |
+| 1 The king's cupbearer | A Jewish official at the Persian court; Jerusalem in 445 BC; the walls rebuilt in fifty-two days; his own account, full of quick prayers and strong feeling; a layman for whom prayer and planning are partners; he wept and prayed (younger) | The Nehemiah book page, `teaching` "Nehemiah in a minute" and "Prayer, a king, and a night ride", nearly word for word |
+| 2 How it is laid out | The turn at chapter 8, from building the city to building the people; five parts | The book page's `structure` and `teaching` "How Nehemiah is built". Five panels of 2, 5, 3, 2 and 1 chapters; the gold rule under the reading of the law |
+| 3 Pray, and keep watch | Chapter 3 names the builders: priests, goldsmiths, perfumers, a ruler with his daughters, many before their own houses; mockery, threats, plots; they prayed and posted a guard; fifty-two days | The book page's `teaching` "The wall: builders, enemies and fifty-two days" ("Nehemiah's answer is the book in a sentence"), nearly word for word; BSB Nehemiah 3; 4:9; 6:15 |
+| 4 Justice for the poor | Famine, debt and the king's tax cost poor families their fields and children; Nehemiah confronts the nobles; they give back what they took; a rebuilt city with an unjust economy is not a restored city | The book page's `teaching` "Brothers selling brothers", nearly word for word; BSB Nehemiah 5:5, 9 |
+| 5 The law read with joy | The high point is the reading of the law, not the wall; Ezra reads from daybreak until noon; the Levites explain; weeping; feast and share, the joy of the LORD their strength; confession and a pledge | The book page's `teaching` "The law read, a people confessing, a pledge signed" and `reading`, nearly word for word; BSB Nehemiah 8:3, 8, 10 |
+| 6 An ending without triumph | Promises broken, Nehemiah acts, sometimes harshly; reported without comment; no warrant to strike or harm anyone today; walls cannot by themselves make a people faithful; "Remember me, O my God, with favor" | The book page's `teaching` "Broken promises, and Nehemiah's last reforms" and "Nehemiah in a minute", whole where quoted; BSB Nehemiah 13:31 |
+| 7 Where to start | Chapters 1, 2 and 8 (younger); key chapters 5, 8, 9 and 13; quick prayers; the lists of names; promises kept in ordinary weeks | The book page's `keyChapters` and `teaching` "How to read Nehemiah", nearly word for word; BSB Nehemiah 2:4 |
+| differ | Chapter 13 weighed two ways; no warrant to strike or harm, whole; the marriages as in Ezra, Ruth the example kept; authorship and Ezra; no contempt for the Jewish people or the peoples whose leaders opposed the wall; no side | The book page's `teaching` "Broken promises ...", "Who wrote it, and when" and "How the New Testament reads Nehemiah" |
+| care | "Waiting can be hard, especially waiting for something to get better at home, ..." | The Return and the Waiting stop's care line, whole |
+| pictures | No weapon, blow or harm drawn (the armed builders are left to the page); God not drawn; Nehemiah the same in each picture | The drawing (`scenes/book-nehemiah.tsx`); a sheet of the finished frames read |
+| left out | The armed builders; Sanballat and Tobiah by name; the plots; the dedication's choirs in the captions; the date 433 BC | Deliberate; the book page is linked |
+| length | Younger 2:35.9, older 3:12.7 | `audio/manifest.json` |

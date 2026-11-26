@@ -453,6 +453,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole of 2 Samuel in seven moving pictures: King David, five parts, a crown not seized, the promise of a house, Nathan's word to the king, the sword in David's house, and where to start reading.",
     },
+    "book-nehemiah": {
+      title: "Nehemiah: rebuilding the walls, and a people: Bible Explorer",
+      description:
+        "The whole book of Nehemiah in seven moving pictures: the king's cupbearer, how it is laid out, pray and keep watch, justice for the poor, the law read with joy, an ending without triumph, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

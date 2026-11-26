@@ -1161,6 +1161,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M40,82l2,-36M48,82l1,-34M56,82l0,-26" />
     </>
   ),
+  /* Nehemiah: a city wall rising, one gold stone set in it. */
+  "book-nehemiah": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M12,84V50h8v-6h8v6h8v-6h8v6h8V62H64V70H88V84Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M12,72H88M30,84V72M50,84V72M70,84V72M22,72V60M40,72V60" />
+      <path className="pl-m" d="M54,62h10v8h-10Z" />
+      <path className="pl-l" d="M54,62h10v8h-10Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

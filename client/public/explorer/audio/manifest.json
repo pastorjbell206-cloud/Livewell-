@@ -4115,6 +4115,116 @@
     }
    ]
   },
+  "book-nehemiah": {
+   "title": {
+    "file": "book-nehemiah/title.mp3",
+    "hash": "ac77b3e68ad1b2fde976",
+    "seconds": 3.82,
+    "bytes": 23540
+   },
+   "younger": [
+    {
+     "id": "cupbearer",
+     "file": "book-nehemiah/younger/01-cupbearer.mp3",
+     "hash": "7218a7131daa74e98367",
+     "seconds": 22.83,
+     "bytes": 137588
+    },
+    {
+     "id": "layout",
+     "file": "book-nehemiah/younger/02-layout.mp3",
+     "hash": "298d6c44f122cbb39522",
+     "seconds": 22.9,
+     "bytes": 138020
+    },
+    {
+     "id": "wall",
+     "file": "book-nehemiah/younger/03-wall.mp3",
+     "hash": "1908b58dc72a23425a70",
+     "seconds": 26.91,
+     "bytes": 162068
+    },
+    {
+     "id": "poor",
+     "file": "book-nehemiah/younger/04-poor.mp3",
+     "hash": "34fd953b35d9a5b6ac85",
+     "seconds": 17.12,
+     "bytes": 103316
+    },
+    {
+     "id": "law",
+     "file": "book-nehemiah/younger/05-law.mp3",
+     "hash": "27583bd23a80456dedcb",
+     "seconds": 27.43,
+     "bytes": 165236
+    },
+    {
+     "id": "remember",
+     "file": "book-nehemiah/younger/06-remember.mp3",
+     "hash": "a8aad6ba9ceabc8e593d",
+     "seconds": 18.06,
+     "bytes": 108932
+    },
+    {
+     "id": "start",
+     "file": "book-nehemiah/younger/07-start.mp3",
+     "hash": "e9cc9970ddc310d2984a",
+     "seconds": 16.45,
+     "bytes": 99284
+    }
+   ],
+   "older": [
+    {
+     "id": "cupbearer",
+     "file": "book-nehemiah/older/01-cupbearer.mp3",
+     "hash": "3a14083a5cd002305310",
+     "seconds": 28.73,
+     "bytes": 173012
+    },
+    {
+     "id": "layout",
+     "file": "book-nehemiah/older/02-layout.mp3",
+     "hash": "df634008e58c32cd971d",
+     "seconds": 23.82,
+     "bytes": 143492
+    },
+    {
+     "id": "wall",
+     "file": "book-nehemiah/older/03-wall.mp3",
+     "hash": "ffb45d38b04d76d630ee",
+     "seconds": 29.39,
+     "bytes": 176900
+    },
+    {
+     "id": "poor",
+     "file": "book-nehemiah/older/04-poor.mp3",
+     "hash": "cfa99da0b12544573fcc",
+     "seconds": 26.63,
+     "bytes": 160340
+    },
+    {
+     "id": "law",
+     "file": "book-nehemiah/older/05-law.mp3",
+     "hash": "0dd9b53c840f43b9207a",
+     "seconds": 29.55,
+     "bytes": 177908
+    },
+    {
+     "id": "remember",
+     "file": "book-nehemiah/older/06-remember.mp3",
+     "hash": "336dd428eb18ab16c8e9",
+     "seconds": 27.04,
+     "bytes": 162788
+    },
+    {
+     "id": "start",
+     "file": "book-nehemiah/older/07-start.mp3",
+     "hash": "8e1ae6b0755418bd598e",
+     "seconds": 23.33,
+     "bytes": 140468
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

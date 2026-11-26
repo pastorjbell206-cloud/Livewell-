@@ -1743,6 +1743,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-numbers",
     "book-deuteronomy",
     "book-2-samuel",
+    "book-nehemiah",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2623,5 +2624,16 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toContain("nothing in the story blames her");
     expect(f.differ?.links?.map(l => l.href)).toContain("/help");
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/Bathsheba|bath|roof|Tamar|sword|battle|body|caught in/i);
+  });
+
+  it("Nehemiah tells the harsh reforms without approving them, gives no warrant to strike anyone, and draws no weapon", () => {
+    const f = filmFile("book-nehemiah");
+    expect(f.care).toBe(filmFile("god-silent").care);
+    expect(f.frames.find(x => x.id === "remember")!.older).toContain("nothing in it gives anyone today a warrant to strike or harm anyone");
+    expect(f.differ?.text).toContain("nothing in chapter 13 gives anyone today a warrant to strike or harm anyone, at home, in a church or anywhere else");
+    expect(f.differ?.text).toContain("Nothing in it is a reason to look down on the Jewish people, or on the peoples whose leaders opposed the wall.");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|weapon|beat|hair|strike/i);
+    expect(f.frames.map(fr => fr.younger).join(" ")).not.toMatch(/beat|pulled out|curse|kill|die|dead/i);
   });
 });
