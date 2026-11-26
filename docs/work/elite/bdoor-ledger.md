@@ -25510,3 +25510,20 @@ Cut in chapter 29: 2 Corinthians 1:20, which the deep note gives as a general wo
 | Daniel 12:1, Hosea 3:5, Ezekiel 37:24, Hosea 2:23, Psalm 147:3 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 30: Matthew 24:21, given in the hard note only as one tradition's link; no date is set.
+
+## The plain notes on Jeremiah 31 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 31:1-40 (verses 18-19, 22-24 and 29 partly paraphrased) | all | BSB | BSB text |
+| Undated; Ephraim poems under Josiah 640 to 609 BC; reworked after 587 BC | 1-14 | jeremiah/31.json `historical` | Repository |
+| Rachel, Ramah (40:1), Rachel's tomb; the new thing of verse 22 debated; verse 26 as dream | 15-26 | jeremiah/31.json `cultural`, `literary`; BSB | Repository, BSB text |
+| Matthew's use of verse 15: the objection, Brown, the pattern reading, Hosea 11:1 | 15-26 `hard` | jeremiah/31.json `hard` (second question) | Repository |
+| The CHILDLOSS care line, byte for byte | 15-26 `hard` | carelines.json | care.mjs |
+| Sour grapes and Ezekiel 18; law on the heart; forgiveness; 35-37; the valley as Hinnom | 27-40 | jeremiah/31.json `cultural`, `historical`; BSB | Repository |
+| The new covenant question: Jewish and critical objection, Kimhi; Reformed, dispensational, Christ-centred readings; begun not complete; second-order; Romans 11:28 | 27-40 `hard` | jeremiah/31.json `hard` (first question); the coordinator's direction | Repository |
+| Psalm 30:11, Hosea 11:8, Matthew 2:18, Luke 22:20, Hebrews 8:8, Romans 11:28 (clauses); Hebrews 10:16-17 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 31: Hebrews 8:13's word obsolete is not quoted, so that the note gives no room for contempt; Kimhi, Isaac of Troki, Holladay, Carroll, Chafer, Gentry and Wellum, named in the deep note, are left to it except Kimhi.
