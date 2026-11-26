@@ -23903,3 +23903,27 @@ Cut in chapter 7: the deep note's line that the gospel announces the undoing of 
 | Isaiah 7:23 (its clause); Song of Songs 1:6 (its clause) | 8-14 | song-of-solomon/8.json `historical` (Isaiah 7:23); BSB | Repository; BSB text |
 
 Cut in chapter 8: the deep note's lines to Christ (Ephesians 5:25 and Romans 8:38-39 beside love as strong as death; Ephesians 1:13 and the Spirit's seal beside verse 6; the note calls them connections of theme). The explicit lines (8:1, 8:5b, 8:8a, 8:10a) are told with restraint. No care line is needed in this chapter.
+
+## Zechariah's book page (teaching introduction, 2026-11-26)
+
+Every claim in `client/public/bible/notes/zechariah/intro.json`, field `teaching`. No web searches. Scripture is the BSB in the repository, matched by the four quotation checks (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Eleventh of the Twelve, the longest; about 520 BC; the ruined temple; beside Haggai; 1:3; eight visions; 4:6; the undated second half; 9:9 named; 14:9 (to its dash); the Gospels' use | in-a-minute | zechariah/intro.json `overview`, `structure`, `christ`; BSB | Repository; BSB text |
+| Cyrus 539 BC; altar and foundations, then about sixteen years' halt; Darius 522 BC and the revolts; 520 BC; Zerubbabel, Jehoiachin's grandson; Joshua son of Jehozadak; the temple finished 515 BC | story | zechariah/intro.json `setting`; haggai/intro.json | Repository |
+| 1:1 (its clause); Ezra's son of Iddo; Nehemiah's priestly family of Iddo; priest and prophet, as a possibility; chapters 9 to 14 debated, each view in its holders' terms; Greece (9:13); the shared heading with Malachi; the dates 520, 519, 518 BC; Alexander 333 and 332 BC as some critics' reading | who | zechariah/intro.json `author`, `date`; zechariah/9.json `historical` | Repository; the site takes no side |
+| Visions, sermons, two burdens; the readings of chapters 9 to 14 held open | built | zechariah/intro.json `structure`, `reading` | Repository |
+| The eight visions in order; 2:5; 4:10 (its phrase); the feminine noun for wickedness and the two women who carry it | visions | zechariah/1.json to 6.json; BSB | Repository; BSB text |
+| The Bethel question; 7:9 (its first two sentences); 8:4; 8:23 paraphrased | fasts | zechariah/7.json, 8.json; BSB | Repository; BSB text |
+| 9:9 (in full, in double quotes); 9:7 paraphrased; the warfare as God's; 11:12 and 11:13 (their clauses); Favor and Union | king | zechariah/9.json, 11.json `hard`; BSB | Repository; BSB text |
+| 12:10 (its clause); the textual question, in third person; the readings of the pierced one; 13:1; 13:7 (its clause); 13:9 paraphrased | pierced | zechariah/12.json, 13.json `hard`; BSB | Repository; BSB text; readings as readings |
+| Chapter 14 summarized; atrocities named, not described; 14:9 (to its dash); the premillennial, amillennial and both-and readings; no warrant for violence; no claim about any modern state | day | zechariah/14.json `hard`; the coordinator's brief (leave the millennial readings open) | Repository; the site takes no side |
+| Matthew 21:5 and John 12:15 (9:9); Matthew 26:31 and Mark 14:27 (13:7); Matthew 27:9-10 and the Jeremiah question (11:12-13); John 19:37 and Revelation 1:7 (12:10); only these | new-testament | zechariah/intro.json `christ`; zechariah/11.json `hard`; BSB | Repository; BSB text; only the four places the coordinator named |
+| How to read | readers | zechariah/intro.json `reading` | Repository |
+| Hard passages (14) and key words (15): from the chapter notes | lists | zechariah/1.json to 14.json | Repository |
+| Timeline (8): 539; 536 or soon after (ezra/intro.json); 522; the three dated words; 515; the dating of chapters 9 to 14 | timeline | zechariah/intro.json `date`, `setting`; ezra/intro.json | Repository |
+| The map: eight places at points this site's maps already use, Gilead as a region | map | the site's points; BSB | The rest left off; no borders |
+| Go deeper: nine pages | deeper | bible/guides (reading-apocalyptic, reading-prophets, empires); bible/doctrines.json (Messiah, Temple, Return of Christ, Kingdom); resources/context/messianic-expectation; studyguides/end-times | Repository; every page live |
+
+Cut from the book page: any New Testament line beyond the four places the New Testament itself quotes (9:9, 11:12-13, 12:10, 13:7); Revelation 11:4's two olive trees is not drawn.
