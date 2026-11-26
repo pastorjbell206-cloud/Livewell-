@@ -22593,3 +22593,18 @@ Cut in chapter 33: nothing.
 | Malachi 1:3 (its clause); Isaiah 35:1 (first typed inexactly, caught and corrected) | 9-17 `later` | BSB | BSB text |
 
 Cut in chapter 34: the narrowing above. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 35 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 35:1-4 (35:3 and 35:4 in double quotes for their exclamations) | 1-4 | BSB | BSB text |
+| The partner of chapter 34; the dating views and the bridge; Lebanon, Carmel and Sharon and 33:9; vengeance as God putting things right | 1-4 | isaiah/35.json `story`, `historical` | Repository; both views |
+| Hebrews 12:12; Isaiah 40:3 | 1-4 `later` | BSB | BSB text |
+| 35:5-10 (35:6 in double quotes for its exclamation; 35:8 paraphrased around its dashes) | 5-10 | BSB | BSB text |
+| The road from Babylon along the Euphrates; 539 or 538 BC; a promise of the kingdom, not a judgment on anyone living with a disability today; 51:11 | 5-10 | isaiah/35.json `historical`; the brief | Repository |
+| Isaiah 51:11 named; Matthew 11:5 | 5-10 `later` | isaiah/29.json `christ` (Matthew 11:4-5 and Isaiah 35); BSB | BSB text |
+
+Cut in chapter 35: nothing. No care line is needed in this chapter.
