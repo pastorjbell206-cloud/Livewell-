@@ -24858,3 +24858,19 @@ Cut in chapter 1: the deep note's lines to John 1:14 and 18, 2 Corinthians 4:6 a
 | Later: Jeremiah 15:16; Revelation 10:9-10 | 8-10 `later` | BSB | BSB text |
 
 Cut in chapter 2: the deep note's lines to John 12:49, Luke 4:18 and 24 and 13:34, thematic only.
+
+## The plain notes on Ezekiel 3 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sweet as honey, and seven days among the exiles: the text paraphrased; quoted clauses at verses 3, 5-7, 9, 12-13, 14, 15 | 1-15 | BSB | BSB text |
+| Background in `hearers` | 1-15 | ezekiel/3.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 19:10; Job 2:13 | 1-15 `later` | BSB | BSB text |
+| The watchman, and the silent prophet: the text paraphrased; quoted clauses at verses 17, 18-21, 27 | 16-27 | BSB | BSB text |
+| Background in `hearers` | 16-27 | ezekiel/3.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Samuel 18:24-27; 2 Kings 9:17 | 16-27 `later` | BSB | BSB text |
+| The hard note: Does verse 20 mean that God puts stumbling blocks before righteous people, and that they can lose all their righteousness? The readings in their holders' terms | 16-27 `hard` | ezekiel/3.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 3: Acts 20:26-27 and Luke 19:10, which the New Testament does not draw from Ezekiel 3; replaced with 2 Kings 9:17.
