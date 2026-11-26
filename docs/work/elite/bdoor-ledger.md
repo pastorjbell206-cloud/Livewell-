@@ -25895,3 +25895,17 @@ Cut in chapter 42: nothing. The hard note adds that the chapter is no rule again
 | Isaiah 31:1, 2 Kings 25:26, Ezekiel 29:19 (clauses); Genesis 41:45 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 43: the local name Petrie reported for the ruin, which the deep note itself says has been questioned.
+
+## The plain notes on Jeremiah 44 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/44.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 44:1-30 (largely paraphrased around inner speech marks) | all | BSB | BSB text |
+| Migdol, Tahpanhes, Memphis, Pathros; earlier settlement; Elephantine papyri and mixed worship | 1-14 | jeremiah/44.json `historical` | Repository |
+| Queen of Heaven; Josiah's reform about 622 BC; the people's argument and Jeremiah's reply; 3:10; 2 Kings 23:26 | 15-30, `hard` | jeremiah/44.json `historical`, `hard`; jeremiah/7.json `cultural` | Repository |
+| Hophra as Apries, overthrown about 570 BC by Amasis | 15-30 | jeremiah/44.json `historical` | Repository |
+| 2 Kings 23:26, 1 Corinthians 10:14, Jeremiah 7:18, Habakkuk 3:17 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 44: nothing. The hard note adds that the chapter is no judgment on women.
