@@ -25868,3 +25868,16 @@ Cut in chapter 40: the Jaazaniah and Gedaliah seals named in the deep note, left
 | 2 Kings 25:25, Zechariah 8:19, 2 Samuel 2:13 (clauses); Ezra 2:21 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 41: a draft line on Gibeon's position, which no repository source states. The killings are named, not described.
+
+## The plain notes on Jeremiah 42 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/42.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 42:1-22 (verses 13-22 largely paraphrased) | all | BSB | BSB text |
+| The survivors' fear; Egypt as refuge; Jezaniah and Azariah son of Hoshaiah | 1-12 | jeremiah/42.json `historical` | Repository |
+| Why going was wrong: a direct word sworn to; Egypt as house of slavery; Deuteronomy 17:16 | 13-22, `hard` | jeremiah/42.json `hard` | Repository |
+| Deuteronomy 17:16, Isaiah 31:1, Hosea 11:5, 2 Kings 25:26 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 42: nothing. The hard note adds that the chapter is no rule against seeking refuge and draws no line to refugees today.
