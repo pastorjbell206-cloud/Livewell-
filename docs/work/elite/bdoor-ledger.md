@@ -24174,3 +24174,19 @@ Every claim in `client/public/bible/notes/malachi/intro.json`, field `teaching`.
 | Go deeper: eight pages | deeper | bible/guides (reading-prophets, offerings-and-purity, between-the-testaments); bible/doctrines.json (Election and Calling; Marriage, Family, and Sexuality; Money and Possessions; The Messiah); /help/marriage | Repository; every page live |
 
 Cut from the book page: the introduction's thematic Christian readings of 1:11, the refining fire and the sun of righteousness (the Didache, Charles Wesley's hymn), which the New Testament does not draw from Malachi.
+
+## The plain notes on Malachi 1 (2026-11-26)
+
+`client/public/bible/notes/malachi/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1-5 quoted or paraphrased (1:2 in part; 1:3; 1:4 its clause; 1:5 its words) | 1-5 | BSB | BSB text |
+| Decades after the return; Edom southeast of the Dead Sea; Edom and 587 or 586 BC; the Nabataeans; burden heads Zechariah 9 and 12 | 1-5 | malachi/1.json `historical`; malachi/intro.json `author` | Repository; BSB text |
+| Genesis 25:23; Romans 9:13 | 1-5 `later` | BSB; malachi/1.json `hard` | Repository; BSB text |
+| Love and hate as choosing (Genesis 29:30-31); Genesis 33 and 36; Romans 9 and the Reformed and Arminian readings | 1-5 `hard` | malachi/1.json `hard`, `words` | Repository; BSB text |
+| 1:6, 1:8 (in double quotes), 1:10, 1:11, 1:13 (in double quotes), 1:14 quoted in part; the rest paraphrased | 6-14 | BSB | BSB text |
+| Defect-free offerings; the table as the altar; priests fed from offerings; the governor; vows; the repeated name | 6-14 | malachi/1.json `cultural`, `historical`, `literary` | Repository; BSB text |
+| Leviticus 22:20; Deuteronomy 15:21 | 6-14 `later` | malachi/1.json `cultural`, `christ` | Repository; BSB text |
+
+Cut in chapter 1: Matthew 21:12-13 (Jesus in the temple), a thematic link the New Testament does not draw from Malachi.
