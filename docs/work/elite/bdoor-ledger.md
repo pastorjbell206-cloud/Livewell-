@@ -21722,3 +21722,22 @@ Cut in chapter 2: two unsourced lines (a reading of 2:12-13 as the false prophet
 | The hard note: Jeremiah 26:17-19; Hezekiah's repentance; delayed, not canceled; Jonah's Nineveh; the condition (Jeremiah 18:7-10); prophecy meant to change hearers | 9-12 `hard` | micah/3.json `hard` | Repository |
 
 Cut in chapter 3: nothing drawn to the New Testament.
+
+## The plain notes on Micah 4 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (its first clause); 4:2 and 4:4 paraphrased (4:2's inner quotation not quoted); 4:3; 4:5 (its clause) | 1-5 | BSB | BSB text |
+| Zion raised after 3:12; mountains as meeting places; nations as pilgrims; torah as instruction; plowshares and pruning hooks; the vine and fig tree and chapter 2; Isaiah 2:2-4 and four views; Micah's added verse 4 | 1-5 | micah/4.json `historical`, `cultural` | Repository; the views in their holders' terms |
+| Isaiah 2:2-4; 1 Kings 4:25 (its phrase) | 1-5 | micah/4.json `historical`, `cultural`; BSB | Repository; BSB text |
+| The hard note: the last days; premillennial, amillennial and postmillennial readings; living now as citizens of that peace; verses 9-13 and present war; war not the last word; no nation's politics, no party | 1-5 `hard` | micah/4.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 4:6 (its opening words); 4:7 (its last sentence); 4:8 paraphrased | 6-8 | BSB | BSB text |
+| On that day; the lame and outcast; Migdal-eder near Bethlehem (Genesis 35:21); the former dominion of David | 6-8 | micah/4.json `cultural`, `literary` | Repository |
+| Genesis 35:21; Zephaniah 3:19 (its clause) | 6-8 | micah/4.json `cultural`; BSB | Repository; BSB text |
+| 4:9 paraphrased; 4:10 (its last sentence, in double quotes); 4:11 and 4:13 paraphrased; 4:12 | 9-13 | BSB | BSB text |
+| Three oracles beginning now; labor's pain and hope; Babylon in Micah's day, Merodach-baladan's envoys (2 Kings 20:12-19) and Isaiah's warning; a later addition or Micah's own; the exile and Cyrus 539 or 538 BC; threshing and sheaves; the judgment God's; no warrant for violence; no claim about any nation today | 9-13 | micah/4.json `historical`, `cultural`, `literary`; the brief | Repository; both views in their holders' terms |
+| Isaiah 39:6 paraphrased; Ezra 1:1-4 | 9-13 | micah/4.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 4: nothing drawn to the New Testament.
