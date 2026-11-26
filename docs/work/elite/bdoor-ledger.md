@@ -25965,3 +25965,18 @@ Cut in chapter 47: a draft line placing Caphtor, which this chapter's note does 
 | Isaiah 16:11, Zephaniah 1:12, Ruth 1:16, Ezekiel 18:32 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 48: nothing. The hard note adds that verse 10 gives no one a warrant for violence and draws no line to any present-day people.
+
+## The plain notes on Jeremiah 49 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/49.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 49:1-39 (largely paraphrased) | all | BSB | BSB text |
+| Ammon and Rabbah; Tiglath-pileser and Gad in the 730s BC (1 Chronicles 5:26); Baalis | 1-6 | jeremiah/49.json `historical` | Repository |
+| Edom, Teman, Bozrah; Esau; Obadiah's parallel; no present-day identification | 7-22 | jeremiah/49.json `historical`, `literary`; the coordinator's direction | Repository |
+| Why no restoration for Edom: particular guilt, political end, Amos 9:12 and Acts 15:17 | 7-22 `hard` | jeremiah/49.json `hard` | Repository |
+| Damascus, Hamath, Arpad; Kedar and the desert Hazor; Elam in southwestern Iran, Susa | 23-39 | jeremiah/49.json `historical` | Repository |
+| Amos 1:13 (named), 1 Chronicles 5:26, Obadiah 1:3, Amos 9:12, Isaiah 22:6 (clauses); Amos 1:3-5 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 49: a draft line setting Acts 2:9 beside Elam's restoration, which the New Testament does not draw; Amos 9:12 is kept with Acts 15:17 because Acts quotes it.
