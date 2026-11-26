@@ -22539,3 +22539,21 @@ Cut in chapter 30: nothing beyond the narrowings above. No care line is needed i
 | Deuteronomy 32:11; Isaiah 37:36 | 4-9 `later` | BSB | BSB text |
 
 Cut in chapter 31: Matthew 23:37, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 32 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 32:1-8 | 1-8 | BSB | BSB text |
+| Good leadership answering the woes; the three readings of the king (Hezekiah and 2 Kings 18:3-7; the coming king of 9:6-7 and 11:1-5; wisdom teaching like Proverbs); shade and water | 1-8 | isaiah/32.json `story`, `historical` | Repository; each reading in its holders' terms |
+| Psalm 72:1; Proverbs 29:4 | 1-8 `later` | BSB | BSB text |
+| 32:9-14 (32:13 and 32:14 paraphrased around their dashes) | 9-14 | BSB | BSB text |
+| A little more than a year; 701 BC; a longer desolation; mourning rites and women's place in mourning (lamentations/1.json `cultural`); the comfortable of the city, not women as such | 9-14 | isaiah/32.json `historical`; lamentations/1.json `cultural` | Repository |
+| Amos 6:1 | 9-14 `later` | BSB | BSB text |
+| 32:15-20 | 15-20 | BSB | BSB text |
+| The Spirit named as the agent of renewal; 11:1-2 and 44:3; peace and quiet confidence | 15-20 | isaiah/32.json `story` | Repository |
+| Isaiah 44:3; Joel 2:28 | 15-20 `later` | BSB | BSB text |
+
+Cut in chapter 32: nothing. No care line is needed in this chapter.
