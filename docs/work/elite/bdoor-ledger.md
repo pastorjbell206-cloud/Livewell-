@@ -24035,3 +24035,23 @@ Cut in chapter 56: a draft `later` line on John 10:11-13 was replaced by Jeremia
 | Ephesians 2:17; Psalm 51:17 (its clause) | 14-21 `later` | BSB; isaiah/57.json `christ`, `words` | BSB text |
 
 Cut in chapter 57: Philippians 2 and Matthew 5, which the deep note calls thematic, are left out.
+
+## The plain notes on Isaiah 58 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/58.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 58:1-5 (verse 3's complaint paraphrased) | 1-5 | BSB | BSB text |
+| From 57's contrite to contrition in practice; religion cut off from justice | 1-5 | isaiah/58.json `story` | Repository |
+| Fasting customs; one commanded fast, Leviticus 16:29; same verb; fasts after the exile, Zechariah 7 and 8 | 1-5 | isaiah/58.json `cultural`, `historical`, `words` | Repository |
+| The post-exile setting, Nehemiah 5; the traditional view and chapter 1; shofar; read on the Day of Atonement | 1-5 | isaiah/58.json `historical`, `cultural` | Repository |
+| Zechariah 7:5 (its clause); Matthew 6:16 (its clause) | 1-5 `later` | BSB; isaiah/58.json `christ` for Matthew 6 | BSB text |
+| 58:6-12 | 6-12 | BSB | BSB text |
+| Two questions; the yoke; promises from person to community | 6-12 | isaiah/58.json `literary`, `cultural` | Repository |
+| Luke 4:18 (its clause, drawn from 58:6); James 1:27 (its clause) | 6-12 `later` | BSB; isaiah/58.json `christ` | BSB text |
+| 58:13-14 | 13-14 | BSB | BSB text |
+| The Sabbath protecting workers, Deuteronomy 5:14; oneg and oneg Shabbat | 13-14 | isaiah/58.json `cultural`, `words` | Repository |
+| Deuteronomy 5:14 (its clause); Mark 2:27 | 13-14 `later` | BSB; isaiah/58.json `christ` for the Sabbath conflicts | BSB text |
+
+Cut in chapter 58: Matthew 25:31-46, which the deep note ties to verse 7, is left out, because the New Testament does not quote this chapter there.
