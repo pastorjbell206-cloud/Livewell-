@@ -1,0 +1,126 @@
+{
+  "slug": "book-numbers",
+  "title": "Numbers: forty years in the wilderness",
+  "group": "books",
+  "status": "finished",
+  "book": "numbers",
+  "mark": "book-numbers",
+  "line": {
+    "younger": "The book of a long walk through the desert, with God leading the way: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Numbers as a whole book: two generations, God at the center of the camp, the refusal at Kadesh, Balaam's blessing, the new generation, and where to begin."
+  },
+  "poster": "A long line of people with their bundles walks across a desert behind a tall cloud that moves ahead of them. No one is drawn in the cloud.",
+  "frames": [
+    {
+      "id": "wilderness",
+      "name": "In the wilderness",
+      "still": "A long line of people with their bundles walks across a desert behind a tall cloud that moves ahead of them. No one is drawn in the cloud.",
+      "younger": "Numbers tells how God's people travelled from Mount Sinai to the edge of the land God promised, and why a trip of a few weeks took about forty years. All that time, God fed them every day.",
+      "older": "Numbers carries Israel from Sinai to the edge of the promised land, and tells why a trip of a few weeks took about forty years. It is honest about what can happen after a rescue, and just as honest about God, who stays with a people who keep failing.",
+      "verse": {
+        "ref": "Numbers 9:23",
+        "text": "They camped at the LORD’s command, and they set out at the LORD’s command"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in seven panels, with a tent, a bird, a cluster of grapes, a budding staff, a rock, a star and a crowd over them. A gold rule lies under the narrow third panel.",
+      "younger": "The book has two halves, and two generations. It starts at Mount Sinai, with the people counted and ready. Then come complaints, and a sad turning point. The last part is about their children, counted again and ready to go in.",
+      "older": "Two counts frame the book: the generation that left Egypt, counted at Sinai, and their children, counted on the plains of Moab. Between them come the march, the complaints, the refusal at Kadesh, Balaam, and Peor.",
+      "verse": {
+        "ref": "Numbers 14:31",
+        "text": "But I will bring your children"
+      }
+    },
+    {
+      "id": "camp",
+      "name": "Watch for: God at the center",
+      "still": "Seen from above, the tents of the tribes stand in four groups around one tent in the middle. A gold light rests over the middle tent.",
+      "younger": "Watch the camp. God's tent is in the middle, and every tribe camps around it. And listen for the blessing the priests spoke over the people. It begins, “May the LORD bless you and keep you.”",
+      "older": "The camp is arranged around God: the tribes on four sides, the Levites nearest, God's tent at the center. Then comes one of the oldest blessings in the Bible. It is God's own gift. The priests only speak it.",
+      "verse": {
+        "ref": "Numbers 6:24",
+        "text": "May the LORD bless you and keep you"
+      }
+    },
+    {
+      "id": "kadesh",
+      "name": "Watch for: the refusal",
+      "still": "Two men carry a great cluster of grapes on a pole between them, and the others walk behind with their heads bowed. The grapes are gold.",
+      "younger": "Watch the scouts. Twelve men explore the land and bring back its fruit. All twelve say it is good, but ten say it cannot be taken. Only Caleb and Joshua trust God. The people listen to the ten, and they will wait forty years.",
+      "older": "All twelve scouts agree the land is good; ten say it cannot be taken. The people had not miscounted the enemy. They had decided God could not be trusted. Moses pleads, God pardons, and still the refusal shapes their lives.",
+      "verse": {
+        "ref": "Numbers 14:11",
+        "text": "How long will they refuse to believe in Me"
+      }
+    },
+    {
+      "id": "balaam",
+      "name": "Watch for: a curse turned to blessing",
+      "still": "On a high hill a man stands beside his donkey with his hands raised, looking down at a camp of tents in the valley. A gold star is in the sky.",
+      "younger": "Watch for a surprise. A king pays a man named Balaam to curse God's people. Four times Balaam opens his mouth to curse them, and four times he blesses them instead. Down in the valley, the people never even know.",
+      "older": "Balak of Moab hires the seer Balaam to curse Israel, and four times he can only bless. His last oracle sees a star from Jacob, read by Jewish readers before Jesus as a coming king, and by Christians of Christ. Israel, below, knows nothing of it.",
+      "verse": {
+        "ref": "Numbers 24:17",
+        "text": "A star will come forth from Jacob"
+      }
+    },
+    {
+      "id": "new",
+      "name": "Watch for: the new generation",
+      "still": "Five sisters stand before an old man and the gathered people at the entrance of a tent, and a gold sun is over the plain.",
+      "younger": "Watch the children grow up. Five sisters ask for their father's share of the land, and God says they are right. Some chapters tell of wars and are hard to read. No one may use any page of this book as a reason for violence against anyone.",
+      "older": "The second count shows the promise outliving the people who refused it. Five daughters ask for their father's share, and God says they speak correctly. The wars are hard pages, and no one may use any page of this book as a reason for violence against anyone.",
+      "verse": {
+        "ref": "Numbers 27:7",
+        "text": "The daughters of Zelophehad speak correctly."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter 6, the blessing, and then chapters 13 and 14, about the scouts. Read the hard chapters with a grown-up you trust.",
+      "older": "Start with chapters 13 and 14, then the key chapters: 6, 16, 20, 21, 24 and 26. Read the stories and the laws together, and watch Moses pray. The book asks whether God can be trusted with what lies ahead.",
+      "verse": {
+        "ref": "Numbers 14:9",
+        "text": "the LORD is with us. Do not be afraid of them"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Ten scouts were afraid, and two trusted God. When is it hard for you to trust God?",
+    "older": "At Kadesh the land was good, and all twelve scouts said so. The only question was whether God could be trusted with what lay ahead. Where are you facing that question?"
+  },
+  "read": [
+    { "label": "Numbers 6", "href": "/study/bible/numbers/6" },
+    { "label": "Numbers 9", "href": "/study/bible/numbers/9" },
+    { "label": "Numbers 13", "href": "/study/bible/numbers/13" },
+    { "label": "Numbers 14", "href": "/study/bible/numbers/14" },
+    { "label": "Numbers 20", "href": "/study/bible/numbers/20" },
+    { "label": "Numbers 21", "href": "/study/bible/numbers/21" },
+    { "label": "Numbers 24", "href": "/study/bible/numbers/24" },
+    { "label": "Numbers 26", "href": "/study/bible/numbers/26" },
+    { "label": "Numbers 27", "href": "/study/bible/numbers/27" }
+  ],
+  "stops": [
+    "sinai"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Christians who receive Numbers as God's word read its wars in more than one way: as God's judgment on particular peoples at one moment, after long patience, and never a general rule; as the sweeping language of ancient reports of war; or as God meeting an ancient people within the limits of their world, to be read in the light of Christ. Each reading has a cost. On every reading the commands were tied to one land and one time, they name no modern nation, people or conflict, and the New Testament never renews them; no one may use any page of this book as a reason for violence against anyone. Readers also take the census figures as they stand, or read the word for thousand as a clan or a unit; and they differ on whether Moses' prayer changed God's mind. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      { "label": "the Numbers page of the Study Bible", "href": "/study/bible/numbers" },
+      { "label": "the question of the command to destroy the Canaanites", "href": "/questions/old-testament/the-command-to-destroy-the-canaanites" }
+    ]
+  },
+  "care": "This part of the story has war and death in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Numbers in the Study Bible: the whole book", "href": "/study/bible/numbers" },
+    { "label": "Sinai and the Tent: a stop on the map", "href": "/study/explorer/sinai" },
+    { "label": "Exodus: out of slavery, to God (a moving picture)", "href": "/study/explorer/watch/book-exodus" },
+    { "label": "Joshua: a promise kept (a moving picture)", "href": "/study/explorer/watch/book-joshua" }
+  ],
+  "end": { "label": "Start reading: Numbers 13", "href": "/study/bible/numbers/13" }
+}

@@ -438,6 +438,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Leviticus in seven moving pictures: the question it answers, how it is laid out, gifts brought near, holy and clean, the Day of Atonement, love of neighbor, and where to start reading.",
     },
+    "book-numbers": {
+      title: "Numbers: forty years in the wilderness: Bible Explorer",
+      description:
+        "The whole book of Numbers in seven moving pictures: the wilderness, two generations, God at the center of the camp, the refusal at Kadesh, Balaam's blessing, the new generation, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

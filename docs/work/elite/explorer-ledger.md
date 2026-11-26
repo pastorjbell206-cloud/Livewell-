@@ -1509,3 +1509,23 @@ No animal, altar fire or blood is drawn, and the younger level says neither bloo
 | pictures | No animal, blood, altar fire or body drawn; the one gift drawn is flour; God not drawn: the light over the tent and at the curtain has no one in it | The drawing (`scenes/book-leviticus.tsx`); sheets of the finished frames read |
 | left out | Nadab and Abihu; the food laws, skin disease and discharges by name; the penalties of chapter 20; the Jubilee and the feasts in the captions | Deliberate; the book page is linked |
 | length | Younger 3:02.8, older 3:11.8 | `audio/manifest.json` |
+
+### Numbers: forty years in the wilderness (`book-numbers`)
+
+The wars, plagues and judgments are named and drawn nowhere. The book page's own words carry the verdict at both levels: "no one may use any page of this book as a reason for violence against anyone".
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Numbers 9:23; 14:31; 6:24; 14:11; 24:17; 27:7; 14:9 (some trimmed to a clause) | BSB, by the validator; all Numbers |
+| 1 In the wilderness | From Sinai to the edge of the land; why a trip of a few weeks took about forty years; God fed them every day; honest about what can happen after a rescue, and about God, who stays with a people who keep failing | The Numbers book page, `teaching` "Numbers in a minute", nearly word for word |
+| 2 How it is laid out | Two counts and two generations frame the book; the march, the complaints, the refusal at Kadesh, Balaam, Peor | The book page's `structure`, `reading` and `teaching` "How Numbers is built" (Dennis Olson, 1985). Seven panels rounded to whole chapters (1-10, 11-12, 13-14, 15-19, 20-21, 22-25, 26-36); the gold rule under the turning point |
+| 3 God at the center | The tribes on four sides, the Levites nearest, the tent at the center; the priestly blessing, God's own gift that the priests only speak | The book page's `teaching` "God in the middle of the camp", nearly word for word; BSB Numbers 2:2; 6:24-27 |
+| 4 The refusal | All twelve scouts agree the land is good; ten say it cannot be taken; Caleb and Joshua trust; the people had not miscounted the enemy but decided God could not be trusted; Moses pleads, God pardons, the refusal still shapes their lives; forty years | The book page's `teaching` "The complaints, and the refusal at Kadesh", nearly word for word; BSB Numbers 13:27-31; 14:11, 20, 31-34 |
+| 5 A curse turned to blessing | Balak hires Balaam to curse; four times he blesses; the star from Jacob, read by Jewish readers before Jesus as a coming king and by Christians of Christ; Israel below knows nothing | The book page's `teaching` "The road to Moab ..." ("All this time Israel knows nothing of it"); BSB Numbers 24:17 |
+| 6 The new generation | The second count, the promise outliving the people who refused it; the five daughters of Zelophehad, who "speak correctly"; the wars hard pages; no page a reason for violence (both levels) | The book page's `teaching` "The new generation" and "The wars and judgments in the book" ("no one may use any page of this book as a reason for violence against anyone"), whole. Held by `films.test.tsx` |
+| 7 Where to start | Chapter 6, then 13 and 14 (younger); key chapters 6, 16, 20, 21, 24 and 26; stories and laws together; watch Moses pray; whether God can be trusted with what lies ahead | The book page's `keyChapters` and `teaching` "How to read Numbers", nearly word for word; BSB Numbers 14:9 |
+| differ | Three readings of the wars, each with a cost; tied to one land and time, no modern nation named, never renewed; the census read as it stands or as clans; whether Moses' prayer changed God's mind; no side | The book page's `teaching` "The wars and judgments in the book", "God in the middle of the camp" and "The complaints ..." |
+| care | "This part of the story has war and death in it. ..." | The Land and the Judges stop's care line, whole |
+| pictures | No war, plague, snake, spear or death drawn; God not drawn: the cloud and the light have no one in them; the grapes are the gold mark of the refusal | The drawing (`scenes/book-numbers.tsx`); sheets of the finished frames read, the scouts' pole and the cloud redrawn after them |
+| left out | Korah; Miriam's skin disease; the bronze snake; Moses at the rock; Peor and Phinehas; Midian (chapter 31); the test of 5:11-31 | Deliberate; the book page is linked |
+| length | Younger 2:43.2, older 3:06.5 | `audio/manifest.json` |

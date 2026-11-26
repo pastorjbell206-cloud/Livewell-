@@ -1740,6 +1740,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-1-peter",
     "book-1-john",
     "book-leviticus",
+    "book-numbers",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2575,5 +2576,20 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toContain("Your worth to God does not rise or fall with your body.");
     expect(f.differ?.text).toMatch(/takes no side among the readings/);
     expect(f.frames.find(x => x.id === "atonement")!.still).toContain("No one is drawn behind it.");
+  });
+
+  it("Numbers names its wars and draws none, and says at both levels in the book page's words that no page of it is a reason for violence", () => {
+    const f = filmFile("book-numbers");
+    expect(f.care).toBe(filmFile("book-joshua").care);
+    const line = "no one may use any page of this book as a reason for violence against anyone";
+    const nw = f.frames.find(x => x.id === "new")!;
+    expect(nw.younger).toContain("No one may use any page of this book as a reason for violence against anyone.");
+    expect(nw.older).toContain(line);
+    expect(f.differ?.text).toContain("they name no modern nation, people or conflict");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|spear|plague|snake|slaughter/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/spear|battle|plague|snake|serpent|body|bodies|sword|fire/i);
+    expect(text(f)).not.toMatch(/\b(Palestin|Gaza|State of Israel|Israel today|America|Iran)/i);
   });
 });

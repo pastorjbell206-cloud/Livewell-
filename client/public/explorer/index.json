@@ -1826,6 +1826,23 @@
       "book": "leviticus"
     },
     {
+      "slug": "book-numbers",
+      "title": "Numbers: forty years in the wilderness",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a long walk through the desert, with God leading the way: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Numbers as a whole book: two generations, God at the center of the camp, the refusal at Kadesh, Balaam's blessing, the new generation, and where to begin."
+      },
+      "mark": "book-numbers",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "numbers"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

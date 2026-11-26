@@ -3785,6 +3785,116 @@
     }
    ]
   },
+  "book-numbers": {
+   "title": {
+    "file": "book-numbers/title.mp3",
+    "hash": "888fca3c394769f5471e",
+    "seconds": 3.45,
+    "bytes": 21236
+   },
+   "younger": [
+    {
+     "id": "wilderness",
+     "file": "book-numbers/younger/01-wilderness.mp3",
+     "hash": "c3f34756d1e810bc33f4",
+     "seconds": 23.27,
+     "bytes": 140180
+    },
+    {
+     "id": "layout",
+     "file": "book-numbers/younger/02-layout.mp3",
+     "hash": "5dbbbb84ef51f1bf30a2",
+     "seconds": 23.75,
+     "bytes": 143060
+    },
+    {
+     "id": "camp",
+     "file": "book-numbers/younger/03-camp.mp3",
+     "hash": "a26057c7c22eef634f5e",
+     "seconds": 15.03,
+     "bytes": 90788
+    },
+    {
+     "id": "kadesh",
+     "file": "book-numbers/younger/04-kadesh.mp3",
+     "hash": "faa31a8058acd4e5fceb",
+     "seconds": 25.72,
+     "bytes": 154868
+    },
+    {
+     "id": "balaam",
+     "file": "book-numbers/younger/05-balaam.mp3",
+     "hash": "c25c912ac353727362dd",
+     "seconds": 24.35,
+     "bytes": 146660
+    },
+    {
+     "id": "new",
+     "file": "book-numbers/younger/06-new.mp3",
+     "hash": "06ac8f8d25fcf85c1205",
+     "seconds": 26.02,
+     "bytes": 156596
+    },
+    {
+     "id": "start",
+     "file": "book-numbers/younger/07-start.mp3",
+     "hash": "bf1ac0a068a657b627c4",
+     "seconds": 20.87,
+     "bytes": 125780
+    }
+   ],
+   "older": [
+    {
+     "id": "wilderness",
+     "file": "book-numbers/older/01-wilderness.mp3",
+     "hash": "0d17bb39036198fa2f40",
+     "seconds": 27.2,
+     "bytes": 163796
+    },
+    {
+     "id": "layout",
+     "file": "book-numbers/older/02-layout.mp3",
+     "hash": "11f1ca479fac0d1c27fe",
+     "seconds": 22.63,
+     "bytes": 136436
+    },
+    {
+     "id": "camp",
+     "file": "book-numbers/older/03-camp.mp3",
+     "hash": "def04321884c9d951bd2",
+     "seconds": 24.14,
+     "bytes": 145364
+    },
+    {
+     "id": "kadesh",
+     "file": "book-numbers/older/04-kadesh.mp3",
+     "hash": "8a4ebbd71dacfd67ceae",
+     "seconds": 25.54,
+     "bytes": 153860
+    },
+    {
+     "id": "balaam",
+     "file": "book-numbers/older/05-balaam.mp3",
+     "hash": "0778d1825f432f4eb45d",
+     "seconds": 27.68,
+     "bytes": 166676
+    },
+    {
+     "id": "new",
+     "file": "book-numbers/older/06-new.mp3",
+     "hash": "ba842bf41ff610391f1d",
+     "seconds": 27,
+     "bytes": 162500
+    },
+    {
+     "id": "start",
+     "file": "book-numbers/older/07-start.mp3",
+     "hash": "0a50aa99575ec1e8d1e6",
+     "seconds": 28.11,
+     "bytes": 169268
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

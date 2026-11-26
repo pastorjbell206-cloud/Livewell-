@@ -1128,6 +1128,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M45,84l3,-18h4l3,18ZM10,84l6,-14l6,14M78,84l6,-14l6,14" />
     </>
   ),
+  /* Numbers: a tall cloud over a line of tents in the desert, a gold star. */
+  "book-numbers": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M78,14l2,6l6,2l-6,2l-2,6l-2,-6l-6,-2l6,-2Z" />
+      <path className="pl-l" d="M78,14l2,6l6,2l-6,2l-2,6l-2,-6l-6,-2l6,-2Z" />
+      <path className="pl-l" d="M30,52c-8,0 -10,-10 -2,-12c-2,-10 10,-14 14,-6c4,-8 16,-6 16,2c8,0 8,10 0,12c-8,2 -20,2 -28,4Z" />
+      <Shape d="M12,84l8,-14l8,14ZM34,84l8,-14l8,14ZM56,84l8,-14l8,14Z" tone="c" off={0.8} />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
