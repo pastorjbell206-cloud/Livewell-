@@ -22650,3 +22650,23 @@ Cut in chapter 36: nothing. No care line is needed in this chapter.
 | The hard note: the number and the silence; Herodotus and the mice; plague, direct act or heightening; 'eleph as a unit, uncertain; judgment told soberly; no side; no rejoicing over anyone's death | 36-38 `hard` | isaiah/37.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 37: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 38 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/38.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 38:1-8 (38:5 inside the BSB's inner quotation marks) | 1-8 | BSB | BSB text |
+| In those days; Hezekiah about 715 to 686; the illness about 701; the envoys before 701; chapters 38 and 39 stepping back; the face to the wall for privacy; the stairway of Ahaz, sundial or staircase; 2 Kings 20's order | 1-8 | isaiah/38.json `historical`, `cultural` | Repository |
+| 2 Kings 20:5 (inside the BSB's inner quotation marks); Jeremiah 18:8 | 1-8 `later` | BSB | BSB text |
+| The hard note: unstated conditions (Jeremiah 18; Jonah) or real response; mercy, not a change of character; not every prayer for healing brings healing | 1-8 `hard` | isaiah/38.json `hard`; 2-kings/plain/20.json (the same care) | Repository; both readings in their holders' terms |
+| Care line ("It needs to be said plainly. The Bible does not teach that sickness...") | 1-8 `hard` | Reused byte for byte from 2-kings/plain/15.json, read by script | care.mjs |
+| 38:9-20 | 9-20 | BSB | BSB text |
+| Only in Isaiah; the thanksgiving shape; the tent and the loom; Sheol's silence and Israel's common view; the fuller hope of 25:8 and 26:19 | 9-20 | isaiah/38.json `literary`, `doctrines` | Repository |
+| Psalm 6:5; Micah 7:19 | 9-20 `later` | BSB | BSB text |
+| 38:21-22 (paraphrased around their inner quotations; first drafted with nested quotations and corrected) | 21-22 | BSB | BSB text |
+| The appendix and 2 Kings 20:7-8's order; the fig poultice as a household treatment, no conflict with God's healing; worship as what mattered | 21-22 | isaiah/38.json `literary`, `cultural` | Repository |
+| 2 Kings 20:7 (inside the BSB's speech marks; first typed with Isaiah's wording and corrected); James 5:14 | 21-22 `later` | BSB | BSB text |
+
+Cut in chapter 38: nothing.
