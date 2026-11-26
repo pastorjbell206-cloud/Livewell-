@@ -25909,3 +25909,17 @@ Cut in chapter 43: the local name Petrie reported for the ruin, which the deep n
 | 2 Kings 23:26, 1 Corinthians 10:14, Jeremiah 7:18, Habakkuk 3:17 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 44: nothing. The hard note adds that the chapter is no judgment on women.
+
+## The plain notes on Jeremiah 45 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/45.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 45:1-5 (verse 3 paraphrased around inner speech marks) | all | BSB | BSB text |
+| Baruch as scribe, witness, reader; Seraiah his brother (51:59); 605 BC and Carchemish | 1-5 | jeremiah/45.json `historical` | Repository |
+| The great things unknown; timing and priorities, or self-seeking; the promise of life | 1-5 `hard` | jeremiah/45.json `hard` | Repository |
+| The SUFFERING care line, byte for byte | 1-5 `hard` | carelines.json | care.mjs |
+| Psalm 131:1, Jeremiah 39:18 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 45: Matthew 6:33, which the New Testament does not tie to this chapter; replaced by Jeremiah 39:18.
