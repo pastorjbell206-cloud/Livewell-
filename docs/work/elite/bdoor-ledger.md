@@ -25131,3 +25131,19 @@ On Ezekiel's book page, Tyre's label on the `fertile-crescent` map now sits to t
 | Later: Jeremiah 23:16; 2 Kings 22:14 | 17-23 `later` | BSB | BSB text |
 
 Cut in chapter 13: the deep note's New Testament tests (1 John 4:1-3; Matthew 7:15-20), which are not drawn from Ezekiel 13.
+
+## The plain notes on Ezekiel 14 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Idols in the heart: the text paraphrased; quoted clauses at verses 3, 4-5, 6, 7-8, 9-10, 11 | 1-11 | BSB | BSB text |
+| Background in `hearers` | 1-11 | ezekiel/14.json `historical`, `cultural`, `literary` | Repository |
+| Later: 1 Kings 22:22; Deuteronomy 6:5 | 1-11 `later` | BSB | BSB text |
+| The hard note: What does it mean that God entices a prophet to speak falsely and then punishes him (verse 9)? The readings in their holders' terms | 1-11 `hard` | ezekiel/14.json `hard` | Repository; the site takes no side |
+| Noah, Daniel and Job: the text paraphrased; quoted clauses at verses 14, 16-20, 21, 22-23 | 12-23 | BSB | BSB text |
+| Background in `hearers` | 12-23 | ezekiel/14.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 6:9; Job 1:1; Jeremiah 15:1 | 12-23 `later` | BSB | BSB text |
+
+Cut in chapter 14: nothing drawn to the New Testament.
