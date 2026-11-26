@@ -23904,6 +23904,350 @@ Cut in chapter 7: the deep note's line that the gospel announces the undoing of 
 
 Cut in chapter 8: the deep note's lines to Christ (Ephesians 5:25 and Romans 8:38-39 beside love as strong as death; Ephesians 1:13 and the Spirit's seal beside verse 6; the note calls them connections of theme). The explicit lines (8:1, 8:5b, 8:8a, 8:10a) are told with restraint. No care line is needed in this chapter.
 
+## Zechariah's book page (teaching introduction, 2026-11-26)
+
+Every claim in `client/public/bible/notes/zechariah/intro.json`, field `teaching`. No web searches. Scripture is the BSB in the repository, matched by the four quotation checks (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Eleventh of the Twelve, the longest; about 520 BC; the ruined temple; beside Haggai; 1:3; eight visions; 4:6; the undated second half; 9:9 named; 14:9 (to its dash); the Gospels' use | in-a-minute | zechariah/intro.json `overview`, `structure`, `christ`; BSB | Repository; BSB text |
+| Cyrus 539 BC; altar and foundations, then about sixteen years' halt; Darius 522 BC and the revolts; 520 BC; Zerubbabel, Jehoiachin's grandson; Joshua son of Jehozadak; the temple finished 515 BC | story | zechariah/intro.json `setting`; haggai/intro.json | Repository |
+| 1:1 (its clause); Ezra's son of Iddo; Nehemiah's priestly family of Iddo; priest and prophet, as a possibility; chapters 9 to 14 debated, each view in its holders' terms; Greece (9:13); the shared heading with Malachi; the dates 520, 519, 518 BC; Alexander 333 and 332 BC as some critics' reading | who | zechariah/intro.json `author`, `date`; zechariah/9.json `historical` | Repository; the site takes no side |
+| Visions, sermons, two burdens; the readings of chapters 9 to 14 held open | built | zechariah/intro.json `structure`, `reading` | Repository |
+| The eight visions in order; 2:5; 4:10 (its phrase); the feminine noun for wickedness and the two women who carry it | visions | zechariah/1.json to 6.json; BSB | Repository; BSB text |
+| The Bethel question; 7:9 (its first two sentences); 8:4; 8:23 paraphrased | fasts | zechariah/7.json, 8.json; BSB | Repository; BSB text |
+| 9:9 (in full, in double quotes); 9:7 paraphrased; the warfare as God's; 11:12 and 11:13 (their clauses); Favor and Union | king | zechariah/9.json, 11.json `hard`; BSB | Repository; BSB text |
+| 12:10 (its clause); the textual question, in third person; the readings of the pierced one; 13:1; 13:7 (its clause); 13:9 paraphrased | pierced | zechariah/12.json, 13.json `hard`; BSB | Repository; BSB text; readings as readings |
+| Chapter 14 summarized; atrocities named, not described; 14:9 (to its dash); the premillennial, amillennial and both-and readings; no warrant for violence; no claim about any modern state | day | zechariah/14.json `hard`; the coordinator's brief (leave the millennial readings open) | Repository; the site takes no side |
+| Matthew 21:5 and John 12:15 (9:9); Matthew 26:31 and Mark 14:27 (13:7); Matthew 27:9-10 and the Jeremiah question (11:12-13); John 19:37 and Revelation 1:7 (12:10); only these | new-testament | zechariah/intro.json `christ`; zechariah/11.json `hard`; BSB | Repository; BSB text; only the four places the coordinator named |
+| How to read | readers | zechariah/intro.json `reading` | Repository |
+| Hard passages (14) and key words (15): from the chapter notes | lists | zechariah/1.json to 14.json | Repository |
+| Timeline (8): 539; 536 or soon after (ezra/intro.json); 522; the three dated words; 515; the dating of chapters 9 to 14 | timeline | zechariah/intro.json `date`, `setting`; ezra/intro.json | Repository |
+| The map: eight places at points this site's maps already use, Gilead as a region | map | the site's points; BSB | The rest left off; no borders |
+| Go deeper: nine pages | deeper | bible/guides (reading-apocalyptic, reading-prophets, empires); bible/doctrines.json (Messiah, Temple, Return of Christ, Kingdom); resources/context/messianic-expectation; studyguides/end-times | Repository; every page live |
+
+Cut from the book page: any New Testament line beyond the four places the New Testament itself quotes (9:9, 11:12-13, 12:10, 13:7); Revelation 11:4's two olive trees is not drawn.
+
+## The plain notes on Zechariah 1 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A call to return: the text paraphrased, its quoted verses (in single or double quotes) | 1-6 | BSB | BSB text |
+| Background in `hearers` | 1-6 | zechariah/1.json `historical`, `cultural`, `literary` | Repository |
+| Later: Malachi 3:7; Ezra 5:1 | 1-6 `later` | BSB | BSB text |
+| Horsemen among the myrtles, and four horns: the text paraphrased, its quoted verses (in single or double quotes) | 7-21 | BSB | BSB text |
+| Background in `hearers` | 7-21 | zechariah/1.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 25:11-12; Isaiah 47:6 | 7-21 `later` | BSB | BSB text |
+| The hard note: If God was only a little angry, why was the destruction of Jerusalem so terrible? The readings in their holders' terms | 7-21 `hard` | zechariah/1.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 1: none drawn. Cut in chapter 1: nothing.
+
+## The plain notes on Zechariah 2 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A measuring line, and a wall of fire: the text paraphrased, its quoted verses (in single or double quotes) | 1-5 | BSB | BSB text |
+| Background in `hearers` | 1-5 | zechariah/2.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 13:21; Ezekiel 43:2-5 | 1-5 `later` | BSB | BSB text |
+| Come home: God will dwell among you: the text paraphrased, its quoted verses (in single or double quotes) | 6-13 | BSB | BSB text |
+| Background in `hearers` | 6-13 | zechariah/2.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 52:11; Psalm 17:8 | 6-13 `later` | BSB | BSB text |
+| The hard note: Who is speaking when the text speaks of one whom the LORD of Hosts has sent? The readings in their holders' terms | 6-13 `hard` | zechariah/2.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 2: none drawn. Cut in chapter 2: nothing.
+
+## The plain notes on Zechariah 3 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Joshua in filthy clothes, and the accuser rebuked: the text paraphrased, its quoted verses (in single or double quotes) | 1-5 | BSB | BSB text |
+| Background in `hearers` | 1-5 | zechariah/3.json `historical`, `cultural`, `literary` | Repository |
+| Later: Job 1:6; Exodus 28:36 | 1-5 `later` | BSB | BSB text |
+| The charge, and the Branch: the text paraphrased, its quoted verses (in single or double quotes) | 6-10 | BSB | BSB text |
+| Background in `hearers` | 6-10 | zechariah/3.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 23:5; Micah 4:4 | 6-10 `later` | BSB | BSB text |
+| The hard note: What is the stone with seven eyes in verse 9? The readings in their holders' terms | 6-10 `hard` | zechariah/3.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 3: none drawn. Cut in chapter 3: nothing.
+
+## The plain notes on Zechariah 4 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Not by might nor by power, but by the Spirit: the text paraphrased, its quoted verses (in single or double quotes) | 1-10 | BSB | BSB text |
+| Background in `hearers` | 1-10 | zechariah/4.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 25:31-37 | 1-10 `later` | BSB | BSB text |
+| The two anointed ones: the text paraphrased, its quoted verses (in single or double quotes) | 11-14 | BSB | BSB text |
+| Background in `hearers` | 11-14 | zechariah/4.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 27:20; Exodus 30:30 | 11-14 `later` | BSB | BSB text |
+| The hard note: Who are the two olive trees, the two anointed ones? The readings in their holders' terms | 11-14 `hard` | zechariah/4.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 4: none drawn. Cut in chapter 4: Revelation 11:4 in the `later` field, since the New Testament does not quote Zechariah 4; replaced with Exodus 27:20 and 30:30.
+
+## The plain notes on Zechariah 5 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A flying scroll: the text paraphrased, its quoted verses (in single or double quotes) | 1-4 | BSB | BSB text |
+| Background in `hearers` | 1-4 | zechariah/5.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 20:15; Exodus 20:7; 1 Kings 6:3 | 1-4 `later` | BSB | BSB text |
+| Wickedness carried away in a basket: the text paraphrased, its quoted verses (in single or double quotes) | 5-11 | BSB | BSB text |
+| Background in `hearers` | 5-11 | zechariah/5.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 11:2; Jeremiah 44:17-19 | 5-11 `later` | BSB | BSB text |
+| The hard note: Why is wickedness pictured as a woman, and does the passage demean women? The readings in their holders' terms | 5-11 `hard` | zechariah/5.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 5: none drawn. Cut in chapter 5: nothing.
+
+## The plain notes on Zechariah 6 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Four chariots go out over the earth: the text paraphrased, its quoted verses (in single or double quotes) | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | zechariah/6.json `historical`, `cultural`, `literary` | Repository |
+| Later: Zechariah 1:10; Jeremiah 1:14 | 1-8 `later` | BSB | BSB text |
+| A crown for Joshua, and the man called the Branch: the text paraphrased, its quoted verses (in single or double quotes) | 9-15 | BSB | BSB text |
+| Background in `hearers` | 9-15 | zechariah/6.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 110:4; Ezra 2:68-69 | 9-15 `later` | BSB | BSB text |
+| The hard note: Why is the crown placed on Joshua the priest rather than on Zerubbabel, the heir of David? The readings in their holders' terms | 9-15 `hard` | zechariah/6.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 6: none drawn. Cut in chapter 6: nothing.
+
+## The plain notes on Zechariah 7 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Who was the fasting for?: the text paraphrased, its quoted verses (in single or double quotes) | 1-7 | BSB | BSB text |
+| Background in `hearers` | 1-7 | zechariah/7.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 25:8-9; 2 Kings 25:25; Isaiah 58:6 | 1-7 `later` | BSB | BSB text |
+| The hard note: Is God rejecting fasting and religious practice altogether? The readings in their holders' terms | 1-7 `hard` | zechariah/7.json `hard` | Repository; the site takes no side |
+| Justice, mercy, and hearts like flint: the text paraphrased, its quoted verses (in single or double quotes) | 8-14 | BSB | BSB text |
+| Background in `hearers` | 8-14 | zechariah/7.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 23:9; Exodus 22:22; Ezekiel 36:26 | 8-14 `later` | BSB | BSB text |
+
+New Testament lines in chapter 7: none drawn. Cut in chapter 7: nothing.
+
+## The plain notes on Zechariah 8 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The City of Truth, full of old and young: the text paraphrased, its quoted verses (in single or double quotes) | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | zechariah/8.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 32:38; Isaiah 65:20 | 1-8 `later` | BSB | BSB text |
+| Let your hands be strong, and fasts become feasts: the text paraphrased, its quoted verses (in single or double quotes) | 9-23 | BSB | BSB text |
+| Background in `hearers` | 9-23 | zechariah/8.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 12:3; Isaiah 2:2-3 | 9-23 `later` | BSB | BSB text |
+
+New Testament lines in chapter 8: none drawn. Cut in chapter 8: nothing.
+
+## The plain notes on Zechariah 9 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Judgment on the neighbors, and God guards his house: the text paraphrased, its quoted verses (in single or double quotes) | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | zechariah/9.json `historical`, `cultural`, `literary` | Repository |
+| Later: Amos 1:3-10; Ezekiel 28:2-5 | 1-8 `later` | BSB | BSB text |
+| Your King comes, humble and riding on a donkey: the text paraphrased, its quoted verses (in single or double quotes) | 9-17 | BSB | BSB text |
+| Background in `hearers` | 9-17 | zechariah/9.json `historical`, `cultural`, `literary` | Repository |
+| Later: Matthew 21:5; John 12:15; Exodus 24:8 | 9-17 `later` | BSB | BSB text |
+| The hard note: Why does a chapter about a king of peace also celebrate violent victory over the nations? The readings in their holders' terms | 9-17 `hard` | zechariah/9.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 9: Matthew 21:5 and John 12:15 quote 9:9. Cut in chapter 9: nothing.
+
+## The plain notes on Zechariah 10 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ask the LORD for rain, not the idols: the text paraphrased, its quoted verses (in single or double quotes) | 1-5 | BSB | BSB text |
+| Background in `hearers` | 1-5 | zechariah/10.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 23:1-2; Psalm 118:22 | 1-5 `later` | BSB | BSB text |
+| God whistles for his scattered people: the text paraphrased, its quoted verses (in single or double quotes) | 6-12 | BSB | BSB text |
+| Background in `hearers` | 6-12 | zechariah/10.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 11:11; Hosea 11:11 | 6-12 `later` | BSB | BSB text |
+
+New Testament lines in chapter 10: none drawn. Cut in chapter 10: nothing.
+
+## The plain notes on Zechariah 11 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Fallen cedars, and a flock marked for slaughter: the text paraphrased, its quoted verses (in single or double quotes) | 1-6 | BSB | BSB text |
+| Background in `hearers` | 1-6 | zechariah/11.json `historical`, `cultural`, `literary` | Repository |
+| Later: Ezekiel 34:2-3; Jeremiah 50:6 | 1-6 `later` | BSB | BSB text |
+| Two staffs, thirty pieces of silver, and a worthless shepherd: the text paraphrased, its quoted verses (in single or double quotes) | 7-17 | BSB | BSB text |
+| Background in `hearers` | 7-17 | zechariah/11.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 21:32; Matthew 27:9 | 7-17 `later` | BSB | BSB text |
+| The hard note: Why does Matthew attribute a quotation from Zechariah to Jeremiah? The readings in their holders' terms | 7-17 `hard` | zechariah/11.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 11: Matthew 27:9-10 draws on 11:12-13. Cut in chapter 11: The word parable for the shepherd scenes; the repository's notes call them sign-acts, like those of Jeremiah and Ezekiel, and the plain notes now say so.
+
+## The plain notes on Zechariah 12 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jerusalem a heavy stone to the nations: the text paraphrased, its quoted verses (in single or double quotes) | 1-9 | BSB | BSB text |
+| Background in `hearers` | 1-9 | zechariah/12.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 51:22-23; Exodus 14:19 | 1-9 `later` | BSB | BSB text |
+| The hard note: How should a chapter about nations gathered against Jerusalem and destroyed be read today? The readings in their holders' terms | 1-9 `hard` | zechariah/12.json `hard` | Repository; the site takes no side |
+| A spirit of grace, and the one they pierced: the text paraphrased, its quoted verses (in single or double quotes) | 10-14 | BSB | BSB text |
+| Background in `hearers` | 10-14 | zechariah/12.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Chronicles 35:24-25; John 19:37; Revelation 1:7 | 10-14 `later` | BSB | BSB text |
+| The hard note: Does verse 10 speak of looking on God himself or on another, and who is the pierced one? The readings in their holders' terms | 10-14 `hard` | zechariah/12.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 12: John 19:37 and Revelation 1:7 quote 12:10. Cut in chapter 12: The textual note in the first person; restated in the third person.
+
+## The plain notes on Zechariah 13 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A fountain opened, and false prophecy removed: the text paraphrased, its quoted verses (in single or double quotes) | 1-6 | BSB | BSB text |
+| Background in `hearers` | 1-6 | zechariah/13.json `historical`, `cultural`, `literary` | Repository |
+| Later: Ezekiel 36:25; 2 Kings 1:8 | 1-6 `later` | BSB | BSB text |
+| The hard note: Does verse 3 really command parents to kill their own child for false prophecy? The readings in their holders' terms | 1-6 `hard` | zechariah/13.json `hard` | Repository; the site takes no side |
+| Strike the shepherd, and a refined remnant: the text paraphrased, its quoted verses (in single or double quotes) | 7-9 | BSB | BSB text |
+| Background in `hearers` | 7-9 | zechariah/13.json `historical`, `cultural`, `literary` | Repository |
+| Later: Matthew 26:31; compare Mark 14:27; Malachi 3:3 | 7-9 `later` | BSB | BSB text |
+
+New Testament lines in chapter 13: Matthew 26:31 and Mark 14:27 quote 13:7. Cut in chapter 13: nothing.
+
+## The plain notes on Zechariah 14 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The LORD fights, and living water flows: the text paraphrased, its quoted verses (in single or double quotes) | 1-11 | BSB | BSB text |
+| Background in `hearers` | 1-11 | zechariah/14.json `historical`, `cultural`, `literary` | Repository |
+| Later: Amos 1:1; Ezekiel 47:1 | 1-11 `later` | BSB | BSB text |
+| The hard note: Is this chapter a literal prediction of a future battle, and how should its violence against the nations be read? The readings in their holders' terms | 1-11 `hard` | zechariah/14.json `hard` | Repository; the site takes no side |
+| The nations worship, and everything is holy: the text paraphrased, its quoted verses (in single or double quotes) | 12-21 | BSB | BSB text |
+| Background in `hearers` | 12-21 | zechariah/14.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 28:36; Leviticus 23:39-43 | 12-21 `later` | BSB | BSB text |
+
+New Testament lines in chapter 14: none drawn. Cut in chapter 14: The claim that Jerusalem had only one small spring, which no repository source gives. The atrocity of 14:2 and the plague of 14:12 are named, not described. The sexual-violence care line is the site's existing one, byte for byte.
+
+## Malachi's book page (teaching introduction, 2026-11-26)
+
+Every claim in `client/public/bible/notes/malachi/intro.json`, field `teaching`. No web searches. Scripture is the BSB in the repository, matched by the four quotation checks (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Last of the Twelve and of the Christian Old Testament; Judah after the return; the rebuilt temple; Persian rule; cynicism; 1:2; the arguments and the abuses; 3:1-2 and 4:5-6 summarized; John the Baptist | in-a-minute | malachi/intro.json `overview` | Repository; BSB text |
+| Cyrus 539 BC; the temple 515 BC; Persian governor; Artaxerxes the First, 465 to 424 BC; the walls until Nehemiah; no Davidic king; Edom's ruin | story | malachi/intro.json `setting` | Repository |
+| Nothing known of Malachi; the name and 3:1; the Septuagint's reading; the tradition naming Ezra; the critical and conservative views, each in its holders' terms; after 515 BC; the governor (1:8); Ezra and Nehemiah; about 470 to 430 BC; 458 and 445 BC; Nehemiah's second visit | who | malachi/intro.json `author`, `date` | Repository; the site takes no side |
+| Six disputations and their ranges; the four objections quoted (1:2; 1:6; 2:17; 3:7); Hebrew 3:19-24 | built | malachi/intro.json `structure`, `reading`; BSB | Repository; BSB text |
+| 1:2 and 1:2-3 quoted; love and hate as choosing (Genesis 29:30-31); God's gifts to Esau (Genesis 33 and 36); Romans 9:13 and the Reformed and Arminian readings | love | malachi/1.json `words`, `hard`; BSB | Repository; BSB text; the site takes no side |
+| The defective offerings; 1:8 (in double quotes); the shut doors; 1:11 (its clause); 2:6 and 2:7 (their clauses); partiality | priests | malachi/1.json, 2.json `cultural`; BSB | Repository; BSB text |
+| 2:10 (its first two questions); foreign worship; the economics of divorce; 2:14 (three phrases); the two readings of 2:16; aimed at covenant breakers; divorce allowed in some cases; the abuse care line, byte for byte | marriage | malachi/2.json `historical`, `cultural`, `hard`; BSB | Repository; BSB text; care line reused (19 places) |
+| 2:17; 3:1 and 3:2 (their sentences); 3:5 paraphrased; 3:6; 3:7 (its clause); the tithe and the storehouse; 3:10 summarized; the two Christian views of tithing; no prosperity teaching | messenger | malachi/3.json `cultural`, `hard`; BSB | Repository; BSB text; stated as the brief asks |
+| 3:14 and 3:16; the scroll and treasured possession; 4:2; 4:4; 4:5; 4:6 summarized; the synagogue custom of repeating 4:5 | day | malachi/3.json, 4.json `cultural`; BSB | Repository; BSB text |
+| Mark 1:2; Matthew 11:10; Matthew 11:14; Luke 1:17; John 1:21; Romans 9:13; only these | new-testament | malachi/intro.json `christ`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read | readers | malachi/intro.json `reading` | Repository |
+| Hard passages (8) and key words (14): from the chapter notes | lists | malachi/1.json to 4.json | Repository |
+| Timeline (6): 539; 515; 465 to 424; about 470 to 430; 458; 445 | timeline | malachi/intro.json `date`, `setting`; haggai/intro.json | Repository |
+| The map: Jerusalem only, at the point this site's maps use | map | the site's points | Edom and Horeb left off; no borders |
+| Go deeper: eight pages | deeper | bible/guides (reading-prophets, offerings-and-purity, between-the-testaments); bible/doctrines.json (Election and Calling; Marriage, Family, and Sexuality; Money and Possessions; The Messiah); /help/marriage | Repository; every page live |
+
+Cut from the book page: the introduction's thematic Christian readings of 1:11, the refining fire and the sun of righteousness (the Didache, Charles Wesley's hymn), which the New Testament does not draw from Malachi.
+
+## The plain notes on Malachi 1 (2026-11-26)
+
+`client/public/bible/notes/malachi/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1-5 quoted or paraphrased (1:2 in part; 1:3; 1:4 its clause; 1:5 its words) | 1-5 | BSB | BSB text |
+| Decades after the return; Edom southeast of the Dead Sea; Edom and 587 or 586 BC; the Nabataeans; burden heads Zechariah 9 and 12 | 1-5 | malachi/1.json `historical`; malachi/intro.json `author` | Repository; BSB text |
+| Genesis 25:23; Romans 9:13 | 1-5 `later` | BSB; malachi/1.json `hard` | Repository; BSB text |
+| Love and hate as choosing (Genesis 29:30-31); Genesis 33 and 36; Romans 9 and the Reformed and Arminian readings | 1-5 `hard` | malachi/1.json `hard`, `words` | Repository; BSB text |
+| 1:6, 1:8 (in double quotes), 1:10, 1:11, 1:13 (in double quotes), 1:14 quoted in part; the rest paraphrased | 6-14 | BSB | BSB text |
+| Defect-free offerings; the table as the altar; priests fed from offerings; the governor; vows; the repeated name | 6-14 | malachi/1.json `cultural`, `historical`, `literary` | Repository; BSB text |
+| Leviticus 22:20; Deuteronomy 15:21 | 6-14 `later` | malachi/1.json `cultural`, `christ` | Repository; BSB text |
+
+Cut in chapter 1: Matthew 21:12-13 (Jesus in the temple), a thematic link the New Testament does not draw from Malachi.
+
+## The plain notes on Malachi 2 (2026-11-26)
+
+`client/public/bible/notes/malachi/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:5, 2:6, 2:7 quoted; the rest paraphrased | 1-9 | BSB | BSB text |
+| The priests' teaching and judging; dung burned outside the camp; messenger in 2:7 | 1-9 | malachi/2.json `cultural`; malachi/3.json `words` | Repository; BSB text |
+| Deuteronomy 33:10; Numbers 25:12 | 1-9 `later` | BSB; malachi/2.json `cultural` | Repository; BSB text |
+| Exodus 29:14; the threat read as a wake-up to teachers | 1-9 `hard` | malachi/2.json `cultural` | Repository; BSB text |
+| 2:10, 2:11 (its clause), 2:14, 2:15 (its last sentence), 2:16 (in double quotes) quoted; the rest paraphrased | 10-16 | BSB | BSB text |
+| Ezra 9 and 10 and Nehemiah 13; worship, not ethnicity; divorce for advantage; marriage as covenant; the wife of your youth | 10-16 | malachi/2.json `historical`, `cultural` | Repository; BSB text |
+| Genesis 2:24; Nehemiah 13:23 | 10-16 `later` | BSB | BSB text |
+| The two readings of 2:16; the ancient versions; Deuteronomy 24:1-4; Matthew 19:9; 1 Corinthians 7:15; the abuse care line, byte for byte | 10-16 `hard` | malachi/2.json `hard`; care line reused | Repository; BSB text |
+| 2:17 quoted in part; its inner quotation paraphrased | 17 | BSB | BSB text |
+| The fourth argument running into chapter 3 | 17 | malachi/2.json `literary` | Repository; BSB text |
+| Psalm 73:3 | 17 `later` | BSB | BSB text |
+
+Cut in chapter 2: nothing.
+
+## The plain notes on Malachi 3 (2026-11-26)
+
+`client/public/bible/notes/malachi/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 and 3:2 quoted; 3:3-5 paraphrased | 1-5 | BSB | BSB text |
+| Refiner and launderer; the priests first; verse 5's justice; Nehemiah and the nobles; the play on messenger | 1-5 | malachi/3.json `cultural`, `historical`, `literary` | Repository; BSB text |
+| Mark 1:2; Matthew 11:10 | 1-5 `later` | BSB; malachi/3.json `christ` | Repository; BSB text |
+| John the Baptist and the coming Lord; the views of the Messenger of the covenant; the Jewish reading | 1-5 `hard` | malachi/3.json `christ`; malachi/4.json `hard` | Repository; BSB text |
+| 3:6, 3:7, 3:8, 3:10 quoted in part; 3:11-12 paraphrased | 6-12 | BSB | BSB text |
+| The tithe for the Levites and the poor; the storehouse; drought, locusts, tax and debt; Nehemiah 13:10 | 6-12 | malachi/3.json `cultural`, `historical`, `words` | Repository; BSB text |
+| Nehemiah 13:12; Numbers 18:21-28; Deuteronomy 14:22-29 | 6-12 `later` | BSB; malachi/3.json `cultural` | Repository; BSB text |
+| No promise of wealth; the two Christian views (Matthew 23:23; 2 Corinthians 8 and 9); no prosperity teaching | 6-12 `hard` | malachi/3.json `hard`; the brief | Repository; BSB text |
+| 3:13, 3:14, 3:16, 3:17 quoted in part; the rest paraphrased | 13-18 | BSB | BSB text |
+| The sixth argument; the rare narrative of verse 16; royal records and Esther 6; segullah | 13-18 | malachi/3.json `literary`, `cultural`, `words` | Repository; BSB text |
+| Exodus 19:5; Deuteronomy 7:6 | 13-18 `later` | BSB; malachi/3.json `words` | Repository; BSB text |
+
+Cut in chapter 3: 1 Peter 2:9, which echoes Exodus rather than quoting Malachi.
+
+## The plain notes on Malachi 4 (2026-11-26)
+
+`client/public/bible/notes/malachi/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 and 4:2 quoted; 4:3 paraphrased | 1-3 | BSB | BSB text |
+| Hebrew 3:19-24; furnace and sunrise; the winged sun disk and the Hezekiah jar handles; the calves | 1-3 | malachi/4.json `story`, `cultural`, `literary` | Repository; BSB text |
+| Isaiah 60:1; Psalm 84:11 | 1-3 `later` | BSB | BSB text |
+| God's justice, not human vengeance; Ezekiel 33:11 | 1-3 `hard` | BSB; the brief (no gloating) | Repository; BSB text |
+| 4:4, 4:5, 4:6 quoted | 4-6 | BSB | BSB text |
+| The close of the Twelve and of the Prophets; Horeb as Sinai; Elijah taken up; the scribes' teaching; the Passover cup; the synagogue custom; Matthew's opening | 4-6 | malachi/4.json `historical`, `cultural`, `literary`, `story` | Repository; BSB text |
+| Luke 1:17; Matthew 11:14; Matthew 17:12 | 4-6 `later` | BSB; malachi/4.json `christ` | Repository; BSB text |
+| John 1:21; Luke 1:17; Matthew 17:11; the readings of a further fulfillment; the Jewish hope | 4-6 `hard` | malachi/4.json `hard`; the site takes no side | Repository; BSB text |
+
+Cut in chapter 4: Luke 1:78 in the `later` field, since the New Testament does not quote Malachi 4:2 there; replaced with Psalm 84:11. The Hebrew of the ban (cherem) and Sirach are left in the deep notes; Revelation 11's two witnesses are not drawn.
+
 ## The plain notes on Isaiah 41 (2026-11-26)
 
 `client/public/bible/notes/isaiah/plain/41.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
@@ -24452,3 +24796,95 @@ Cut in chapter 65: nothing. The hard note on Romans 10:21 follows the brief that
 | Why the book ends this way; three Christian readings | 15-24 `hard` | isaiah/66.json `hard` | Repository |
 
 Cut in chapter 66: John 16:21 and Galatians 4:26, which the deep note calls thematic echoes, and Romans 15:8-12 are left out.
+
+## Isaiah and Daniel maps widened (2026-11-26)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Babylon 32.54 N, 44.42 E; Susa 32.19 N, 48.26 E; regions with names only; ruin-mound note | Isaiah and Daniel maps | the coordinator's direction | validate-bible-notes |
+| Nineveh 36.36 N, 43.15 E | Isaiah map | jonah, nahum and zephaniah intro.json | Repository |
+| Place lines' references (Isaiah 11:14, 14:29, 15:1, 16:6, 34:6, 63:1, 19:1, 30:2, 10:5, 37:37, 13:19, 39:1-6, 47:1; Daniel 1:1, 9:2, 4:30, 5:30, 8:2, 11:8, 11:42) | map lines | BSB | BSB text |
+
+## The Jeremiah book page (2026-11-26)
+
+`client/public/bible/notes/jeremiah/intro.json`, field `teaching`. No web searches. Every quotation is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Overview, the end of Judah, the acted signs, the confessions, the book of comfort | parts 1, 6, 8 | jeremiah/intro.json `overview`, `structure`, `reading`, `themes` | Repository |
+| Hinge of the story; Zephaniah, Habakkuk, Ezekiel; Ezra 1:1 and 2 Chronicles 36:22; Daniel 9:2; Jehoiachin at the king's table (52:33) | part 2 | jeremiah/intro.json `story`; BSB | Repository, BSB text |
+| Hilkiah, Anathoth, Baruch, the scroll of about 605 BC; Mowinckel 1914; editors; 627 BC; about 561 BC | part 3 | jeremiah/intro.json `author`, `date` | Repository |
+| The two editions; one seventh shorter; 33:14-26; oracles after 25:13; Dead Sea fragments; Tov | part 4 | jeremiah/intro.json `reading` | Repository |
+| Josiah 640 to 609; 622; 612; Megiddo, Necho II; Carchemish 605; Jehoiakim 609 to 598; 597 and the Babylonian Chronicle; Zedekiah 597 to 586; Lachish letters 1930s; Gedaliah; Egypt | part 5, timeline | jeremiah/intro.json `setting` | Repository |
+| Six verbs (1:10); the blocks of the book | part 6 | BSB; jeremiah/intro.json `structure` | BSB text, Repository |
+| 2:13, 7:4, 7:11, 20:9, 29:7, 29:11, 31:33, Luke 22:20 | parts 7 to 11 | BSB | BSB text |
+| 29:11 as a promise to a people in exile; surrender a word for one moment | part 10 | jeremiah/intro.json `reading` | Repository |
+| Jewish and Christian readings of 31:31-34 | part 11 | jeremiah/31.json `hard` | Repository |
+| Moab, Ammon and Elam restored (48:47; 49:6; 49:39); God wails for Moab (48:31); 51:63-64; 539 BC | part 12 | BSB; jeremiah/50.json `hard` | BSB text, Repository |
+| Luke 22:20, 1 Corinthians 11:25, Hebrews 8 and 10, Matthew 21:13, Matthew 2:17-18, 1 Corinthians 1:31, Matthew 16:14 | part 13 | BSB; jeremiah/intro.json `christ` | BSB text |
+| The SUFFERING care line, byte for byte | part 8 | carelines.json (from the site) | care.mjs |
+| Hard passages: each from that chapter's deep note `hard` | hard list | jeremiah/<n>.json | Repository |
+| Map: Jerusalem, Bethlehem, Jericho, Bethel, Shechem, Tyre, Damascus, Gilead at the site's points; Philistia, Moab, Edom, Egypt as regions; Babylon at its ruin mounds (32.54 N, 44.42 E) | map | the site's other maps; the coordinator's direction; BSB for each reference | Repository, BSB text |
+
+Cut on the book page: a claim that Jeremiah uses the word for falsehood more than any other book (no source). The New Testament lines drawn are only those the New Testament draws itself.
+
+## The plain notes on Jeremiah 1 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1-19 (verse 12 paraphrased around the BSB's speech marks) | all | BSB | BSB text |
+| 627 to 587 or 586 BC; Josiah about 640 to 609, 622 BC; the kings; Anathoth a priests' village | 1-3 | jeremiah/1.json `historical` | Repository |
+| The word for child; age and standing; the touched mouth, Isaiah 6:7, Deuteronomy 18:18; almond and shaqed; armies from the north | 4-19 | jeremiah/1.json `cultural` | Repository |
+| Reformed and other readings of verse 5; Psalm 139 | 4-10 `hard` | jeremiah/1.json `hard` | Repository |
+| The CHILDLOSS care line, byte for byte | 4-10 `hard` | carelines.json (from the site) | care.mjs |
+| Ezra 1:1, Deuteronomy 18:18, Galatians 1:15, Joshua 1:5 (clauses); Jeremiah 38:13 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 1: the deep note's lines to Christ the New Testament does not draw (Acts 3:22-23 and John 1:14 beside the call); Galatians 1:15 is given only as Paul's own words about his call.
+
+## The plain notes on Jeremiah 2 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1-37 (verse 27's cry paraphrased around inner speech marks) | all | BSB | BSB text |
+| Early preaching under Josiah; Assyria before 609 BC; Ahaz and later kings; Memphis and Tahpanhes; the shaved head | 1-28 | jeremiah/2.json `historical` | Repository |
+| Springs and cisterns; Baal, hill shrines, poles and stones; the lawsuit form | 1-28 | jeremiah/2.json `cultural`, `summary` | Repository |
+| The city-and-covenant statement; the HURT care line, byte for byte | 14-28 `hard` | the coordinator's direction; carelines.json | care.mjs |
+| Hosea 2:15, Psalm 115:8, Isaiah 30:2, 1 John 1:8, Ezekiel 29:6 (clauses); Psalm 80:8 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 2: John 4 and John 7 on living water, which the New Testament does not tie to 2:13; a claim about the word for worthless and a clause about the law on thieves, both unsourced, cut before commit.
+
+## The plain notes on Jeremiah 3 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1-25 (verses 1, 19 and 22 partly paraphrased around inner speech marks) | all | BSB | BSB text |
+| Deuteronomy 24:1-4; spring rains; Baal and rain; Josiah about 640 to 609; 722 BC; Bethel; pretense | 1-10 | jeremiah/3.json `cultural`, `historical` | Repository |
+| The feminist objection and the answer; the whole nation and its male leaders | 1-10 `hard` | jeremiah/3.json `hard` | Repository |
+| The city-and-covenant statement; the abusive-marriage care line, byte for byte | 1-10 `hard` | the coordinator's direction; hosea/plain/2.json | care.mjs |
+| Call to the north; shuv; man after God's heart; the ark disappearing | 11-18 | jeremiah/3.json `historical`, `christ` | Repository |
+| Boshet for Baal, Eshbaal and Ish-bosheth | 19-25 | jeremiah/3.json `cultural` | Repository |
+| Deuteronomy 24:4, 2 Kings 23:15 (named), 1 Samuel 13:14, Isaiah 2:2, Hosea 14:2, Luke 15:21 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 3: John 10:11 and the deep note's other lines to Christ, which the New Testament does not draw from this chapter.
+
+## The plain notes on Jeremiah 4 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1-31 (verses 2 and 31 partly paraphrased) | all | BSB | BSB text |
+| Circumcision of the heart, Deuteronomy 10:16; shofar and signal flag; sackcloth | 1-9 | jeremiah/4.json `cultural` | Repository |
+| The unnamed foe; Scythians and Herodotus; Babylon by the northern road; Dan and Ephraim | 1-22 | jeremiah/4.json `historical` | Repository |
+| The sirocco and winnowing | 10-22 | jeremiah/4.json `cultural` | Repository |
+| Two readings of verse 10; 14:13-15, 23:16-17, 1 Kings 22, 2 Thessalonians 2:11 | 10-22 `hard` | jeremiah/4.json `hard` | Repository |
+| Genesis 1:2 behind verse 23; no full end | 23-31 | jeremiah/4.json `summary`; BSB | BSB text |
+| Deuteronomy 10:16, Romans 2:29, Romans 9:2, Genesis 1:2 (clauses); Isaiah 41:16 and 13:8 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 4: Galatians 3:8 and 14 beside verse 2, which the New Testament does not draw from this chapter.

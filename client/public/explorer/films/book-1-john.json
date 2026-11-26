@@ -1,0 +1,121 @@
+{
+  "slug": "book-1-john",
+  "title": "1 John: so that you may know",
+  "group": "books",
+  "status": "finished",
+  "book": "1-john",
+  "mark": "book-1-john",
+  "line": {
+    "younger": "A short letter from an old pastor to churches that had been shaken: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "1 John as a whole book: a sermon to shaken churches, themes that circle back, hands that touched, three marks of knowing God, sin and forgiveness, God is love, and where to begin."
+  },
+  "poster": "In a room of a house an old man speaks to a small gathering on benches, and through an open door others walk away down the street.",
+  "frames": [
+    {
+      "id": "shaken",
+      "name": "Churches that had been shaken",
+      "still": "In a room of a house an old man speaks to a small gathering on benches, and through an open door others walk away down the street.",
+      "younger": "First John is short, like a sermon written down. An old pastor writes to churches he loves, and calls them little children. Some people had left their churches with a new idea about Jesus, and the people who stayed were shaken.",
+      "older": "First John reads like a sermon written down, with no greeting and no named writer. A group had left these churches, taking a new teaching about Jesus, and those who stayed wondered whether they really knew God. John writes to steady them.",
+      "verse": {
+        "ref": "1 John 2:19",
+        "text": "They went out from us, but they did not belong to us."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in four panels, with a lamp, a child, a pair of open hands and a sunrise over them. A gold rule lies under the third panel.",
+      "younger": "The letter does not go in a straight line. It comes back again and again to a few things: light, love, truth, and believing in Jesus. Each time it goes a little deeper.",
+      "older": "John works like a composer with a few themes, light, love, truth, obedience and belief, coming back to each from a new angle. It can be held in five movements, from the Word of life at its start to the knowing at its end.",
+      "verse": {
+        "ref": "1 John 1:5",
+        "text": "God is light, and in Him there is no darkness at all."
+      }
+    },
+    {
+      "id": "touched",
+      "name": "Watch for: hands that touched",
+      "still": "Three fishermen stand on a shore with their hands open toward a gold light where the path meets the water. No one is drawn in the light.",
+      "younger": "Watch for hands. John says Jesus was heard, seen and touched by real hands. Some people were saying Jesus only seemed to be a real man. John says no. He truly came as a real man.",
+      "older": "The letter begins with witnesses who heard, saw and touched the Word of life. Against teachers who said the divine Christ only seemed to have a body, John insists he came in the flesh. A spirituality that despises the body soon despises the neighbor.",
+      "verse": {
+        "ref": "1 John 1:1",
+        "text": "which we have seen with our own eyes, which we have gazed upon and touched with our own hands"
+      }
+    },
+    {
+      "id": "marks",
+      "name": "Watch for: three marks",
+      "still": "At night three travellers walk a path together, and the first carries a lamp whose flame is gold.",
+      "younger": "Watch for three signs of people who know God. They believe the truth about Jesus. They do what he says. And they love one another. John wrote this to help them feel sure, not afraid.",
+      "older": "Three marks keep returning: believing the truth about Jesus, keeping God's commands, and loving one another. John will not let them be pulled apart. They were written to steady people, not to make tender consciences anxious.",
+      "verse": {
+        "ref": "1 John 2:3",
+        "text": "By this we can be sure that we have come to know Him: if we keep His commandments."
+      }
+    },
+    {
+      "id": "forgiven",
+      "name": "Watch for: sin and forgiveness",
+      "still": "Early in the morning a woman kneels in prayer beside a basin of clear water, and the sun rises gold behind the hills.",
+      "younger": "Watch what John says about doing wrong. Nobody can say they never do wrong. But if people tell God the truth about it, he forgives them and makes them clean. Jesus speaks to the Father for them.",
+      "older": "John holds two truths together. Anyone who says he has no sin deceives himself, and God forgives and cleanses those who confess. Yet a child of God does not settle into sin. Do not deny your sin, and do not make peace with it.",
+      "verse": {
+        "ref": "1 John 1:9",
+        "text": "He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+      }
+    },
+    {
+      "id": "love",
+      "name": "Watch for: God is love",
+      "still": "At the door of a house a man holds out bread and a folded cloak to a traveller in need. The loaf is gold.",
+      "younger": "Watch for the most famous words in the letter: God is love. John shows what love is. God sent his Son. And love opens its hands to share with someone in need.",
+      "older": "God is love, and love is defined by what God did: he sent his Son. So love is concrete, laying down one's life and opening the hand to a brother in need. Perfect love drives out the dread of judgment.",
+      "verse": {
+        "ref": "1 John 4:8",
+        "text": "Whoever does not love does not know God, because God is love."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? Read the whole letter at once. It takes about twenty minutes. Listen for the words that keep coming back: light, love and truth.",
+      "older": "Read it in one sitting, aloud if you can, with John's Gospel open beside it. Remember the split behind it. And let it ask where your confidence before God rests.",
+      "verse": {
+        "ref": "1 John 5:13",
+        "text": "so that you may know that you have eternal life."
+      }
+    }
+  ],
+  "think": {
+    "younger": "John says love is shown with open hands, not only with words. Who could you share something with this week?",
+    "older": "John will not let believing, obeying and loving be pulled apart. Which of the three is easiest for you to keep, and which do you let go?"
+  },
+  "read": [
+    { "label": "1 John 1", "href": "/study/bible/1-john/1" },
+    { "label": "1 John 2", "href": "/study/bible/1-john/2" },
+    { "label": "1 John 3", "href": "/study/bible/1-john/3" },
+    { "label": "1 John 4", "href": "/study/bible/1-john/4" },
+    { "label": "1 John 5", "href": "/study/bible/1-john/5" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that Jesus Christ came in the flesh and that whoever has the Son has life. They differ on who wrote the letter, John the apostle, a second John called the elder, or a leader from that circle; on how to read the words that a child of God does not keep on sinning; on what the letter's words about those who went out mean for whether a believer can fall away; on how Christ is the atoning sacrifice for the whole world; on how assurance works; on the longer words of 5:7-8 found in older English Bibles; and on the sin that leads to death. The letter's antichrists were teachers who denied that Jesus is the Christ come in the flesh, and this moving picture, like the book page, names no one living today. It takes no side among the readings; they are set out on",
+    "links": [
+      { "label": "the 1 John page of the Study Bible", "href": "/study/bible/1-john" }
+    ]
+  },
+  "care": "Thinking about sin can bring up guilt or fear. Nobody is too bad to be forgiven, and nobody has to carry it alone. Talk with a parent, a pastor or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "1 John in the Study Bible: the whole book", "href": "/study/bible/1-john" },
+    { "label": "John: the Word made flesh (a moving picture)", "href": "/study/explorer/watch/book-john" },
+    { "label": "Grace: the gift no one earns (a moving picture)", "href": "/study/explorer/watch/grace" },
+    { "label": "What sin is (a moving picture)", "href": "/study/explorer/watch/what-sin-is" }
+  ],
+  "end": { "label": "Start reading: 1 John 1", "href": "/study/bible/1-john/1" }
+}
