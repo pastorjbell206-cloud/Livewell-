@@ -21757,3 +21757,22 @@ Cut in chapter 4: nothing drawn to the New Testament.
 | Deuteronomy 17:16 paraphrased; Psalm 20:7 | 7-15 | BSB | BSB text |
 
 Cut in chapter 5: the deep note's line to Ephesians 2:14, which Paul does not draw from Micah.
+
+## The plain notes on Micah 6 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1 paraphrased; 6:2 (its first two sentences); 6:3 (its first sentence); 6:4; 6:5 paraphrased (its 'journey' not quoted) | 1-5 | BSB | BSB text |
+| Courtroom and treaty witnesses; heaven and earth; riv and the covenant lawsuit; my people twice; Balak and Balaam; Shittim to Gilgal | 1-5 | micah/6.json `cultural`, `literary` | Repository |
+| Numbers 22 to 24; Joshua 3 to 4; Deuteronomy 32:1 (its first clause) | 1-5 | micah/6.json `cultural`; BSB | Repository; BSB text |
+| 6:6; 6:7 paraphrased; 6:8 | 6-8 | BSB | BSB text |
+| Four rising questions; the firstborn not idle, Ahaz and Manasseh (2 Kings 16:3; 21:6) and the law (Leviticus 18:21), named not described; mishpat, hesed and walking humbly; already shown; already redeemed (6:4) | 6-8 | micah/6.json `literary`, `historical`; micah/intro.json `reading` | Repository |
+| Leviticus 18:21 paraphrased; 1 Samuel 15:22 (its clause); Hosea 6:6 (its first clause) | 6-8 | BSB | BSB text |
+| The hard note: not pure morality over ritual; the prophets on worship without justice; 4:1-2; no quantity of offerings; worship not a transaction; Christ's once-for-all offering in Christian reading; 6:8 as life after rescue | 6-8 `hard` | micah/6.json `hard`; micah/intro.json `reading` | Repository; the readings in their holders' terms |
+| 6:9 paraphrased; 6:10 (its clause); 6:11; 6:12-13 paraphrased; 6:14 (its first clause); 6:15; 6:16 paraphrased | 9-16 | BSB | BSB text |
+| The ephah and weights; short measures and Amos; futility curses; Omri and Ahab, Baal and Naboth; Jerusalem taking on Samaria's ways | 9-16 | micah/6.json `cultural`, `literary`, `historical` | Repository |
+| Deuteronomy 25:13-16; Amos 8:5 (its two words); 1 Kings 21 | 9-16 | micah/6.json `cultural`, `historical` | Repository |
+
+Cut in chapter 6: nothing drawn to the New Testament. No care line is added: the firstborn of 6:7 is a worshiper's question, named and answered, not an act described.
