@@ -880,6 +880,32 @@ differ in is said under each book. Each was then edited (records in
   punctuation, every position and steelman word for word, fact diff passed on
   all fourteen files; rebuilt, still 181 pages, `--verify` identical
   (49,255 words; 246,017 characters).
+- **Is Critical Race Theory Biblical?** (`critical-race-theory-biblical`).
+  The PDF and EPUB carry the same text: the comparison found only running
+  heads, page numbers, repeated block-quotation references (the four "Letter
+  from Birmingham Jail" lines among them) and pull quotes read out of order;
+  the PDF's fuller copyright notice is used ("James C. Bell", as both
+  originals print it). 206 pages became 193 (`client/src/data/ebooks.ts`
+  says 193). `--verify`: identical (47,295 words; 243,250 characters).
+  Then edited (`critical-race-theory-biblical.md`): 437 dashes in his prose
+  to 3, every edit punctuation, every account of CRT, every concession and
+  every criticism word for word, fact diff passed on all twenty files;
+  rebuilt, still 193 pages, `--verify` identical (47,245 words; 243,254
+  characters).
+- **Change Without Casualties** (`change-without-casualties`), the first of
+  the three Hard Issues booklets. The PDF and EPUB carry the same text: the
+  comparison found only running heads (here a chapter's title), page numbers,
+  the repeated "REFLECTION QUESTIONS" label and pull quotes out of order. As
+  in the original PDF, each chapter's file ends with the next chapter's
+  label ("CHAPTER ONE" closes the introduction) and the closing Scripture
+  line is set as a paragraph; the typesetter carries both as they are. The
+  PDF's fuller copyright notice is used. 37 pages became 40
+  (`client/src/data/booklets.ts` says 40). `--verify`: identical (6,466
+  words; 34,332 characters).
+  Then edited (`change-without-casualties.md`): 68 dashes in his prose to 2
+  (both before a Scripture reference), every edit punctuation, fact diff
+  passed on all nine files; rebuilt, still 40 pages, `--verify` identical
+  (6,411 words; 34,332 characters).
 
 ### The apparatus
 
