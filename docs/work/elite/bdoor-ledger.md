@@ -25571,3 +25571,16 @@ Cut in chapter 33: nothing.
 | 2 Chronicles 36:12, Deuteronomy 15:12, Genesis 15:17 (clauses); 2 Kings 25:6-7 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 34: a draft guess at why the slaves were freed, which no repository source states.
+
+## The plain notes on Jeremiah 35 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 35:1-19 (verses 6-10 and 13-17 partly paraphrased) | all | BSB | BSB text |
+| 599 to 598 BC and the raiders (2 Kings 24:1-2); Jonadab and Jehu, about 841 BC; two and a half centuries | 1-11 | jeremiah/35.json `historical` | Repository |
+| Commended, not commanded; wine in Psalm 104 and Proverbs 20; Mark 7:8-9 | 12-19, `hard` | jeremiah/35.json `hard` | Repository |
+| 2 Kings 10:15, Psalm 104:15, Mark 7:8, Proverbs 20:1 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 35: nothing.
