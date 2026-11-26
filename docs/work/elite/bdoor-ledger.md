@@ -23715,3 +23715,25 @@ Cut in chapter 41: nothing. No care line is needed in this chapter.
 | Isaiah 43:1 (inside the BSB's speech marks, before the exclamation); Psalm 106:6 (added when the validator asked for a book beyond Isaiah) | 18-25 `later` | BSB | BSB text |
 
 Cut in chapter 42: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 43 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/43.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 43:1-7 (inside the BSB's speech marks; 43:1 before its exclamation) | 1-7 | BSB | BSB text |
+| No rebuke after chapter 42; redeem and call by name; the sea and the wilderness; the scattered gathered | 1-7 | isaiah/43.json `summary` | Repository |
+| Daniel 3:27 (its clause; a first draft citing Isaiah's own wording under Daniel was caught and corrected); Psalm 66:12 | 1-7 `later` | BSB | BSB text |
+| The hard note: a ransom price as poetry; Persia and Egypt; the nations invited (42:6; 45:22; 49:6); election as calling; no people worth less than another | 1-7 `hard` | isaiah/43.json `hard`; the brief | Repository |
+| 43:8-13 | 8-13 | BSB | BSB text |
+| The courtroom; blind witnesses; no Savior but the LORD | 8-13 | isaiah/43.json `summary` | Repository |
+| Acts 1:8; Deuteronomy 32:39 | 8-13 `later` | BSB | BSB text |
+| 43:14-21 | 14-21 | BSB | BSB text |
+| The exodus recalled; the new exodus greater | 14-21 | isaiah/43.json `summary` | Repository |
+| 2 Corinthians 5:17 (before its exclamation); Revelation 21:5 (inside the BSB's speech marks) | 14-21 `later` | BSB | BSB text |
+| 43:22-28 | 22-28 | BSB | BSB text |
+| The reversal of burdens; sins blotted out for God's own sake; the first father unnamed (an identification first drafted without a source was cut); the exile looked back on | 22-28 | isaiah/43.json `summary`, `literary` | Repository |
+| Jeremiah 31:34; Hebrews 8:12; Psalm 103:12 | 22-28 `later` | BSB | BSB text |
+
+Cut in chapter 43: nothing. No care line is needed in this chapter.
