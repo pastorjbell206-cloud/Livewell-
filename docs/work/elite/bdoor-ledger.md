@@ -25680,3 +25680,19 @@ Cut in chapter 29: an unsourced gloss on bald heads and raw shoulders, cut befor
 | Later: Deuteronomy 5:15; Jeremiah 37:7 | 20-26 `later` | BSB | BSB text |
 
 Cut in chapter 30: nothing.
+
+## The plain notes on Ezekiel 31 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The great cedar: the text paraphrased; quoted clauses at verses 2, 3, 4, 6, 8 | 1-9 | BSB | BSB text |
+| Background in `hearers` | 1-9 | ezekiel/31.json `historical`, `cultural`, `literary` | Repository |
+| Later: Daniel 4:12; Nahum 3:7 | 1-9 `later` | BSB | BSB text |
+| Cut down, a warning to Pharaoh: the text paraphrased; quoted clauses at verses 10, 11, 12, 14, 15-16, 18 | 10-18 | BSB | BSB text |
+| Background in `hearers` | 10-18 | ezekiel/31.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 14:8; Daniel 4:14 | 10-18 `later` | BSB | BSB text |
+| The hard note: Egypt was not destroyed like Assyria. Did this prophecy fail? The readings in their holders' terms | 10-18 `hard` | ezekiel/31.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 31: nothing.
