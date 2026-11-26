@@ -22424,3 +22424,22 @@ Cut in chapter 24: nothing. No care line is needed in this chapter.
 | Isaiah 16:6; Jeremiah 48:29 named | 10-12 `later` | BSB | BSB text |
 
 Cut in chapter 25: Matthew 8:11 and Mark 14:25, which the New Testament does not draw from this chapter.
+
+## The plain notes on Isaiah 26 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 26:1-6 (26:2 paraphrased around its dash; 26:6's clause after the dash, first drafted across it and corrected) | 1-6 | BSB | BSB text |
+| Future song and present longing; the two cities; shalom shalom as perfect peace; Isaiah's theme of trust (7:9; 30:15) | 1-6 | isaiah/26.json `story`, `words` | Repository |
+| Philippians 4:7; Isaiah 7:9 | 1-6 `later` | BSB | BSB text |
+| 26:7-15 | 7-15 | BSB | BSB text |
+| The waiting prayer; verse 12's confession; the foreign lords of verse 14 | 7-15 | isaiah/26.json `hard`, `words` | Repository |
+| Psalm 63:1 | 7-15 `later` | BSB | BSB text |
+| 26:16-21 (26:19 in double quotes for its exclamation) | 16-21 | BSB | BSB text |
+| Labor that bore wind; dew in the dry months; Daniel 12:2's echo; the Passover doors; the earth revealing its blood | 16-21 | isaiah/26.json `summary`, `hard` | Repository |
+| Ezekiel 37:12 (inside the BSB's inner quotation mark); Daniel 12:2; Exodus 12:22 | 16-21 `later` | BSB | BSB text |
+| The hard note: verses 14 and 19 about different people; national revival or resurrection, or both; no person's eternal state named | 16-21 `hard` | isaiah/26.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 26: Hebrews 10:37, whose wording some connect with verse 20, left out as uncertain. No care line is needed in this chapter.
