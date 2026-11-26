@@ -26009,3 +26009,18 @@ Cut in chapter 50: nothing. The notes identify no present-day power with Babylon
 | Revelation 17:4, Isaiah 21:9, Revelation 18:4, Psalm 137:1, Revelation 18:21 (clauses); Jeremiah 36:4 (named) | `later` | BSB; jeremiah/51.json `christ` | BSB text |
 
 Cut in chapter 51: nothing. The hard note says the words give no warrant for violence against any people and draw no line to any present-day state.
+
+## The plain notes on Jeremiah 52 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/52.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 52:1-34 (verses 4-27 partly summarized) | all | BSB | BSB text |
+| Appendix parallel to 2 Kings 24-25; 597 BC; January 588; 587 or 586 BC; Riblah on the Orontes | 1-27 | jeremiah/52.json `historical`, `summary` | Repository |
+| Deportation figures only in Jeremiah: 597, 587/586, 582/581 BC; reprisal after Gedaliah | 28-34 | jeremiah/52.json `historical` | Repository |
+| Evil-merodach as Amel-Marduk, 562 to 560 BC; release 561 BC; ration tablets of the 590s BC | 28-34 | jeremiah/52.json `historical` | Repository |
+| The genealogy question: Joseph, Haggai 2:23, the risen king, Jewish tradition | 28-34 `hard` | jeremiah/52.json `hard` | Repository |
+| Lamentations 3:22, 2 Kings 25:30, Matthew 1:12 (clauses); 2 Kings 25:1-21 and 24:14 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 52: a draft guess at whom the deportation figures counted, replaced by the plain comparison with 2 Kings 24:14. Verses 9 to 11 are stated, not described.
