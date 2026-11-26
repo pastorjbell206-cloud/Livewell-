@@ -338,6 +338,60 @@ Thirteen of the fourteen files were edited (chapter 1 has no long dash in its ru
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
+## Whole read (2026-11-26)
+
+The first pass, recorded above, recast every dash by a fixed rule and judged each proposal in its own sentence. This second pass read every chapter whole, as the first four books were read, in the text as the rule left it, with each place the rule had changed marked in the reading copy. The edits are punctuation and capital letters only: no word was added, removed or replaced. The fact diff (`/home/user/vb/factdiff.py`, against the typesetter's original text, 69441465) now also holds the book's words equal to the original's, counted as a list, and it passes on all fourteen files.
+
+**On a contested subject.** Every account of the theological position, the medical evidence, the affirming and the conservative views, every concession, every confession of the church's harm and every pastoral line keeps its words. Where the book sets the two sides in parallel, both took the same change or neither did:
+
+- the two ideologies of chapter 10 ("affirm their transgender identity and everything will be fine: that is false"; "your dysphoria will disappear: that is also false");
+- the two churches of chapter 7, one "abandoning conviction:" and one "abandoning compassion:";
+- the two refusals of the conclusion ("… your body is secondary": that is Gnosticism …"; "… you need to stop": that is the failure of compassion").
+
+Chapter 5's paired accounts of the progressive and the conservative overreach took no edit. Nothing in the sentences about suicide or the deaths of young people was touched. Chapter 1 took no edit.
+
+What the whole read changed, in 85 edits:
+
+- **A comma the rule used before a gloss or a list, where it read as a run-on.** It is now a colon. The commonest case is the book's own pattern "X, not Y, but Z" after a noun ("Third, they need actual therapy: not affirmative therapy …"; "This is what mercy sometimes looks like: not affirmation of every choice …").
+- **A comma that ran two sentences together.** It is now a semicolon ("Freedom is not always getting what you want; sometimes it is learning to surrender").
+- **A semicolon before a gloss.** It is now a colon ("the meaning is unmistakable: you do not belong here").
+- **A closing bracket that needed a comma after it** (chapters 3, 9, 10 and 11).
+
+Five pairs:
+
+1. Chapter 5. Before: "Freedom is not always getting what you want, sometimes it is learning to surrender, to accept, to find peace with reality as it is." After: "Freedom is not always getting what you want; sometimes it is learning to surrender, …"
+2. Chapter 6. Before: "Third, they need actual therapy, not affirmative therapy that quickly endorses whatever gender the young person expresses, but exploratory therapy …" After: "Third, they need actual therapy: not affirmative therapy …"
+3. Chapter 10. Before: "Not the ideology that says affirm their transgender identity and everything will be fine, that is false; … And not the ideology that says just accept your biological sex and your dysphoria will disappear, that is also false; …" After: "… everything will be fine: that is false; … your dysphoria will disappear: that is also false; …"
+4. Chapter 11. Before: "This chapter is for that moment, not to hand you easy answers, but to give you a way of thinking …" After: "This chapter is for that moment: not to hand you easy answers, …"
+5. Conclusion. Before: "your sexuality does not define you, who you are in Christ is what is ultimate." After: "your sexuality does not define you; who you are in Christ is what is ultimate."
+
+The counts below are for his running prose, the rule-pass text against the text now. Semicolons, colons and brackets are counted outside quotations.
+
+| Chapter | Words | Edits | Semicolons | Colons | Brackets | Fact diff |
+|---|---|---|---|---|---|---|
+| THE QUESTION NOBODY PREPARED THE CHURCH TO ANSWER | 1,533 | 5 | 9 → 7 | 15 → 20 | 3 → 3 | PASS |
+| MALE AND FEMALE HE CREATED THEM | 4,010 | 0 | 41 → 41 | 42 → 42 | 0 → 0 | PASS |
+| WHAT IS GENDER DYSPHORIA? | 4,298 | 5 | 75 → 72 | 22 → 27 | 12 → 12 | PASS |
+| THE BODY MATTERS | 3,795 | 10 | 45 → 43 | 23 → 29 | 6 → 6 | PASS |
+| EUNUCHS IN THE BIBLE | 3,002 | 1 | 39 → 38 | 25 → 26 | 5 → 5 | PASS |
+| THE GENDER IDEOLOGY DEBATE | 3,650 | 2 | 32 → 33 | 37 → 38 | 11 → 11 | PASS |
+| CHILDREN, PUBERTY BLOCKERS, AND THE CHURCH'S RESPONSIBILITY | 4,205 | 11 | 37 → 40 | 35 → 42 | 5 → 5 | PASS |
+| PRONOUNS, BATHROOMS, AND THE DAILY QUESTIONS | 3,967 | 7 | 47 → 47 | 30 → 35 | 5 → 5 | PASS |
+| HOW THE CHURCH HAS HARMED TRANSGENDER PEOPLE | 2,512 | 4 | 18 → 15 | 29 → 33 | 1 → 1 | PASS |
+| Intersex Conditions and the Binary Question | 2,952 | 3 | 25 → 24 | 21 → 22 | 11 → 11 | PASS |
+| TRANSGENDER PEOPLE IN YOUR CHURCH | 3,646 | 5 | 59 → 61 | 35 → 37 | 1 → 1 | PASS |
+| WHAT TO SAY WHEN SOMEONE YOU LOVE SAYS THEY'RE TRANSGENDER | 3,367 | 14 | 36 → 33 | 26 → 38 | 5 → 5 | PASS |
+| A CHURCH THAT HOLDS THE TRUTH AND WEEPS WITH THOSE WHO WEEP | 3,671 | 7 | 13 → 13 | 22 → 29 | 4 → 4 | PASS |
+| IMAGE-BEARERS FIRST | 3,049 | 11 | 20 → 18 | 23 → 33 | 2 → 2 | PASS |
+| **All 14** | 47,657 | 85 | 496 → 485 | 385 → 451 | 71 → 71 | |
+
+The files were rebuilt with `node scripts/build-book-files.mjs bible-and-transgender-identity --verify`. It passed: the EPUB holds 49,255 words, word for word the source, and the PDF's 246,029 body characters on its pages are exactly the source's. The page count is unchanged at 181 (`client/src/data/ebooks.ts` needs no change). Page 46 of the PDF, where chapter 3's "even more demanding: we will have bodies forever" falls, was rendered and looked at.
+
+Noticed in the whole read and not changed; add them to the list below:
+
+- The conclusion's section "The Monster Is Never in the Mirror" quotes "The book within this book, "The Monster in the Mirror"". That book is now Blind Spots (James, 2026-11-22), and "the book within this book" needs his word on what it means.
+- The introduction names a congregant ("Her name is Rachel. She was at FBC last Sunday …") and describes her daughter. Like item 7, this is for him to decide; if Rachel is a real person, her consent is needed.
+
 ## For James: things that look wrong, none of them changed
 
 The chapters were not read whole for this list. It comes from reading the block quotations and the quoted sources, and searching for statements of his ministry, statistics and studies. On this subject a reader will check every figure.
