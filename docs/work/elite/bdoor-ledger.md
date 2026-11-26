@@ -23253,3 +23253,22 @@ Every claim in `client/public/bible/notes/zephaniah/intro.json`, field `teaching
 | Go deeper: eight pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json; bible/doctrines.json (Judgment and Justice; Repentance and Forgiveness; The Nations and Mission; Idolatry); context/guides/the-gods-of-the-nations.json, left-lens-right-lens.json | Repository; every page live |
 
 Cut from the book page: the introduction's lines to 1 Thessalonians 5:2, 2 Peter 3:10, Pentecost, Romans 10:13 and Luke 15, which the New Testament does not draw from Zephaniah. The death of 1:17 is not quoted.
+
+## The plain notes on Zephaniah 1 (2026-11-26)
+
+`client/public/bible/notes/zephaniah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2-4 and 1:6 paraphrased; 1:5 | 1-6 | BSB | BSB text |
+| Josiah at eight about 640 BC; Manasseh's worship (child sacrifice named); the reform by Chronicles (about 628) and Kings (about 622); rooftop star worship and Assyrian influence; Milcom and divided loyalty; Genesis 1 run backwards | 1-6 | zephaniah/1.json `historical`, `cultural`, `literary` | Repository |
+| 2 Kings 23:5 and 23:12 paraphrased | 1-6 | BSB | BSB text |
+| The hard note: the flood and creation echoed; seriousness, not literal prediction; sin harming creation; purifying purpose; no key for reading any disaster as God's verdict | 1-6 `hard` | zephaniah/1.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 1:7 (its first sentence); 1:8-11 and 1:13 paraphrased; 1:12 (its clause; the inner quotation paraphrased) | 7-13 | BSB | BSB text |
+| Judah as the sacrifice and invaders as guests; foreign clothes; the threshold obscure and 1 Samuel 5:5; the Fish Gate, Second District, Hollow; lamps; the complacent; the covenant's warning | 7-13 | zephaniah/1.json `cultural`, `literary` | Repository |
+| Deuteronomy 28:30 (its clause); 1 Samuel 5:5 | 7-13 | BSB | BSB text |
+| 1:14 (its first clause); 1:15; 1:16-17 paraphrased (the death of 1:17 not described); 1:18 (its first sentence) | 14-18 | BSB | BSB text |
+| The drumbeat of paired nouns; Dies irae; the Day on Jerusalem in 587 or 586 BC and a final day; silver and gold; jealousy as zeal | 14-18 | zephaniah/1.json `cultural`, `literary`; zephaniah/intro.json `reading` | Repository |
+| Amos 5:18 paraphrased; Joel 2:2 (its clause) | 14-18 | BSB | BSB text |
+
+Cut in chapter 1: the deep note's lines to the New Testament's day of the Lord, which the New Testament does not draw from Zephaniah.
