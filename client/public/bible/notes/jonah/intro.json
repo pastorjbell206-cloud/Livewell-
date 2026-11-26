@@ -219,8 +219,8 @@
     ],
     "map": [
       {
-        "frame": "canaan",
-        "title": "Jonah's port of flight",
+        "frame": "fertile-crescent",
+        "title": "Jonah's flight west, and the city in the east",
         "places": [
           {
             "id": "joppa",
@@ -232,15 +232,32 @@
             ],
             "line": "Israel's port, modern Jaffa, where Jonah went down and found a ship bound for Tarshish (1:3).",
             "label": {
-              "dx": 10,
-              "dy": -2,
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "nineveh",
+            "name": "Nineveh",
+            "lat": 36.36,
+            "lon": 43.15,
+            "refs": [
+              "1:2",
+              "3:3",
+              "4:11"
+            ],
+            "line": "The great city of Assyria on the east bank of the Tigris, opposite modern Mosul, where Jonah was sent and which turned (1:2; 3:3-10).",
+            "label": {
+              "dx": 8,
+              "dy": 4,
               "anchor": "start"
             }
           }
         ]
       }
     ],
-    "mapNote": "Only Joppa is drawn, at the point this site's map of Acts uses. Nineveh, far to the east on the Tigris, and Tarshish, far to the west, are left off, because neither is placed in this site's records. No borders are drawn. The map makes no claim about any border today.",
+    "mapNote": "Two places are drawn. Joppa is at the point this site's map of Acts uses. Nineveh is drawn at its ruin mounds, Kuyunjik and Nebi Yunus, on the east bank of the Tigris opposite Mosul. Tarshish is left off, because where it lay is disputed: Tartessus in Spain, Sardinia and other western sites have been proposed. No borders are drawn. The map makes no claim about any border today.",
     "deeper": [
       {
         "href": "/study/bible/guides/reading-narrative",
