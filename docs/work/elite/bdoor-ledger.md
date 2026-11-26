@@ -21684,3 +21684,22 @@ Cut from the book page: the introduction's lines from 5:4 to John 10, from 4:1-3
 | 2 Samuel 1:20 (its first words); Isaiah 20:2-4; 1 Samuel 22:1 | 8-16 | micah/1.json `literary`, `cultural`, `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 1: nothing drawn to the New Testament.
+
+## The plain notes on Micah 2 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (in double quotes, for its exclamation, and its clause); 2:2; 2:3-5 paraphrased (2:4's inner quotation not quoted) | 1-5 | BSB | BSB text |
+| Eighth-century wealth and debt; seized fields and houses; Micah's country view; land by lot and God's ownership; Jubilee; boundary stones; Naboth; the matching verb; no share in the dividing | 1-5 | micah/2.json `historical`, `cultural`, `literary` | Repository |
+| Leviticus 25:23 (its clause); Isaiah 5:8 (its clause); 1 Kings 21:3 paraphrased | 1-5 | micah/2.json `cultural`, `historical`; BSB | Repository; BSB text |
+| The hard note: fraud and legal seizure both; bribed judges (3:11); legality not the measure; Jubilee and redemption; differing views on modern economics; power not to strip the vulnerable; no modern program or party | 1-5 `hard` | micah/2.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 2:6 paraphrased (its inner quotations not quoted); 2:7-10 paraphrased; 2:11 (its last clause, in double quotes) | 6-11 | BSB | BSB text |
+| A dispute quoting the people; preach as drip, five times; the cloak and the law; women and children driven out; the man of wind and ruach | 6-11 | micah/2.json `literary`, `cultural` | Repository |
+| Exodus 22:22; Isaiah 30:10 (its phrase) | 6-11 | micah/2.json `cultural`; BSB | Repository; BSB text |
+| 2:12 (its first sentence); 2:13 | 12-13 | BSB | BSB text |
+| The abrupt turn to hope; the shepherd and the one who breaks open the way; the King as the LORD; the remnant through the book (4:7; 5:7-8; 7:18) | 12-13 | micah/2.json `literary`, `summary` | Repository |
+| Isaiah 40:11 (its clauses); Ezekiel 34:12-13 | 12-13 | BSB | BSB text |
+
+Cut in chapter 2: two unsourced lines (a reading of 2:12-13 as the false prophets' words, and a detail of sheepfold custom) were cut before commit.
