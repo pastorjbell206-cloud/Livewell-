@@ -25211,3 +25211,18 @@ Cut in chapter 17: the deep note's line to the mustard seed (Mark 4:32), which t
 | Later: Ezekiel 36:26; Deuteronomy 30:19 | 21-32 `later` | BSB | BSB text |
 
 Cut in chapter 18: John 3:5, 2 Peter 3:9 and 1 Timothy 2:4, which the New Testament does not draw from Ezekiel 18. John 9:2-3 is cited in the hard note only as Jesus' own refusal of the same reasoning, as the Haggai notes did. The brief's line that no suffering is a deserved punishment is stated plainly.
+
+## The plain notes on Ezekiel 19 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A lament for the lion cubs: the text paraphrased; quoted clauses at verses 1, 2, 3-4, 5-7, 9 | 1-9 | BSB | BSB text |
+| Background in `hearers` | 1-9 | ezekiel/19.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 49:9; 2 Kings 23:34 | 1-9 `later` | BSB | BSB text |
+| The vine uprooted: the text paraphrased; quoted clauses at verses 10-11, 12, 13, 14 | 10-14 | BSB | BSB text |
+| Background in `hearers` | 10-14 | ezekiel/19.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 1:3; 2 Kings 25:7 | 10-14 `later` | BSB | BSB text |
+
+Cut in chapter 19: nothing.
