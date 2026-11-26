@@ -1,0 +1,166 @@
+{
+  "slug": "book-judges",
+  "title": "Judges: a people coming apart",
+  "group": "books",
+  "status": "finished",
+  "book": "judges",
+  "mark": "book-judges",
+  "line": {
+    "younger": "The book of the years when Israel kept forgetting God: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Judges as a whole book: the wheel that runs downhill, unlikely and flawed deliverers, the darkest chapters named plainly, no king in Israel, and where to begin."
+  },
+  "poster": "Scattered villages lie on the hills, each by itself, and a few people walk the paths between them. No town is joined to another.",
+  "frames": [
+    {
+      "id": "dark",
+      "name": "The dark years",
+      "still": "Scattered villages lie on the hills, each by itself, and a few people walk the paths between them. No town is joined to another.",
+      "younger": "Judges tells what happened after Joshua, and before Israel had a king. A new generation grows up who do not know God, or what he has done. They keep forgetting him. And God keeps rescuing them.",
+      "older": "Judges covers the years after Joshua and before the kings. A generation grows up not knowing the LORD, and the book becomes an honest account of a people coming apart, and of a God who would not give them up.",
+      "verse": {
+        "ref": "Judges 2:10",
+        "text": "another generation rose up who did not know the LORD or the works that He had done for Israel."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in five panels, with a wheel, a palm tree, a vow made with raised hands, a pair of pillars and an empty seat over them. A gold rule lies under the first panel, the opening.",
+      "younger": "The book has five parts. An opening, which shows the pattern of the whole book. The first judges, like Deborah and Gideon. The middle judges. Samson. And last, five dark chapters with no judge at all.",
+      "older": "An opening shows the land half taken and sets out the pattern. Then come the judges, from Othniel to Gideon, from Abimelech to Jephthah, and Samson. The last five chapters have no judge. The beginning and the end answer each other.",
+      "verse": {
+        "ref": "Judges 2:16",
+        "text": "Then the LORD raised up judges"
+      }
+    },
+    {
+      "id": "wheel",
+      "name": "Watch for: the wheel",
+      "still": "A cart wheel rolls down a long hillside path, past four small stones set beside the way. The path runs down into shadow.",
+      "younger": "Watch for the wheel. The people forget God. Enemies come. The people cry out, and God sends a judge to rescue them. Then the judge is gone, and it all begins again, a little worse each time.",
+      "older": "Chapter 2 sets out a wheel: Israel serves other gods, raiders come, they cry out, and God raises up a judge. Then it begins again. Mercy holds the wheel up, but it runs downhill. It is a spiral, not a circle.",
+      "verse": {
+        "ref": "Judges 2:18",
+        "text": "for the LORD was moved to pity by their groaning"
+      }
+    },
+    {
+      "id": "deliverers",
+      "name": "Watch for: unlikely deliverers",
+      "still": "A woman sits under a palm tree between two hills, and people climb the path to bring her their quarrels. A gold sun is over the hill country.",
+      "younger": "Watch for the people God sends. Deborah, a prophet who judged Israel under a palm tree. Gideon, a frightened farmer hiding his grain. Samson, the strongest man in Israel, and one of its weakest. None of them is the hero of the book. God is.",
+      "older": "God uses a left-handed man, a woman, a farmer threshing in a winepress, the son of a prostitute, and a man who breaks nearly every vow. The deliverance is God's, carried out through very human hands.",
+      "verse": {
+        "ref": "Judges 4:5",
+        "text": "where the Israelites would go up to her for judgment."
+      }
+    },
+    {
+      "id": "flaws",
+      "name": "Watch for: gifts are not goodness",
+      "still": "In a town square a gold garment hangs on a post, and people bow down before it. A man in a cloak stands beside it.",
+      "younger": "Watch how the judges go wrong. God gives them strength for the rescue, but that does not make them good. Gideon makes a gold object that the people worship. Samson keeps breaking his promises. They are not there to copy.",
+      "older": "The Spirit of the LORD comes on Gideon, Jephthah and Samson, but power is not character. Gideon makes an object all Israel worships. Jephthah's rash vow costs his daughter. Judges never treats God's gift as approval.",
+      "verse": {
+        "ref": "Judges 8:27",
+        "text": "it became a snare to Gideon and his household."
+      }
+    },
+    {
+      "id": "no-king",
+      "name": "Watch for: no king in Israel",
+      "still": "An empty seat with a high back stands outside a town gate, and people walk away from it down separate paths, each in a different direction. No one sits in it.",
+      "younger": "The last chapters of Judges are very dark. They show what happens when everyone does whatever seems right to them. Read them with a grown-up you trust. The book ends not with an answer, but with a need.",
+      "older": "The last chapters have no judge. They tell of a stolen idol, of the outrage at Gibeah against a Levite's concubine, and of a civil war. The book presents them as the depths, never as a pattern. It ends not with a solution but with a need.",
+      "verse": {
+        "ref": "Judges 21:25",
+        "text": "In those days there was no king in Israel; everyone did what was right in his own eyes."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter 2, the key to the whole book. Then read chapters 4 and 6, about Deborah and Gideon. Read the hard chapters with a grown-up you trust. And read Ruth next, set in the same years.",
+      "older": "Start with chapter 2, slowly, then the key chapters: 4, 6, 9, 11, 16 and 21. Watch the refrains, and do not take the judges as models. Do not read the hard chapters alone. The book gives no one a warrant for violence against anyone.",
+      "verse": {
+        "ref": "Judges 6:12",
+        "text": "The LORD is with you, O mighty man of valor."
+      }
+    }
+  ],
+  "think": {
+    "younger": "In Judges a whole generation grew up without knowing what God had done. Who has told you about God, and who could you tell?",
+    "older": "The Spirit of the LORD came on people who went on to make terrible choices. Why might the book refuse to treat God's gift as approval of what they did?"
+  },
+  "read": [
+    {
+      "label": "Judges 2",
+      "href": "/study/bible/judges/2"
+    },
+    {
+      "label": "Judges 4",
+      "href": "/study/bible/judges/4"
+    },
+    {
+      "label": "Judges 6",
+      "href": "/study/bible/judges/6"
+    },
+    {
+      "label": "Judges 8",
+      "href": "/study/bible/judges/8"
+    },
+    {
+      "label": "Judges 9",
+      "href": "/study/bible/judges/9"
+    },
+    {
+      "label": "Judges 11",
+      "href": "/study/bible/judges/11"
+    },
+    {
+      "label": "Judges 16",
+      "href": "/study/bible/judges/16"
+    },
+    {
+      "label": "Judges 21",
+      "href": "/study/bible/judges/21"
+    }
+  ],
+  "stops": [
+    "land"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians who receive Judges as God's word confess a God who stays faithful to a people who keep breaking faith. Readers weigh several of its stories in more than one way. Jephthah's vow is read in two ways, and on either reading nothing in the book praises it. Jael's act is weighed as a breach of the duty owed to a guest, as a choice for an oppressed people at great risk, or as a rescue the song celebrates without passing a full judgment on the means. The refrain about no king is read as a case for kings, as a longing for the LORD's own rule, or both. Readers differ too on who wrote the book and when, and on the dates of the judges. On every reading the book gives no nation, no church and no person a warrant for violence against anyone. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      {
+        "label": "the Judges page of the Study Bible",
+        "href": "/study/bible/judges"
+      }
+    ]
+  },
+  "care": "This part of the story has war and death in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "Judges in the Study Bible: the whole book",
+      "href": "/study/bible/judges"
+    },
+    {
+      "label": "The Land and the Judges: a stop on the map",
+      "href": "/study/explorer/land"
+    },
+    {
+      "label": "Joshua: a promise kept (a moving picture)",
+      "href": "/study/explorer/watch/book-joshua"
+    },
+    {
+      "label": "Ruth: loyal love in a hard time (a moving picture)",
+      "href": "/study/explorer/watch/book-ruth"
+    }
+  ],
+  "end": {
+    "label": "Start reading: Judges 2",
+    "href": "/study/bible/judges/2"
+  }
+}

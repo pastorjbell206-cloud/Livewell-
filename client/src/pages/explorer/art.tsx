@@ -1022,6 +1022,53 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M66,52l-2,30M74,52l2,30M60,50c6,4 16,4 22,0" />
     </>
   ),
+  /* Joshua: a pile of stones by the river, and a gold sun over the land. */
+  "book-joshua": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M70,22a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M70,22a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M8,50L30,36L48,46L66,38L92,52" />
+      <path className="pl-f" d="M10,62q6,-5 12,0t12,0t12,0t12,0t12,0t12,0M14,72q6,-5 12,0t12,0t12,0t12,0t12,0t12,0" />
+      <Shape d="M28,84c0,-8 6,-12 12,-10c2,-8 14,-8 16,-2c8,-2 14,4 14,12Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M40,74c2,-4 6,-6 10,-4M50,84c0,-4 2,-8 6,-10" />
+    </>
+  ),
+  /* Judges: a cart wheel on a downward slope, and a gold sun going down. */
+  "book-judges": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M72,20a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M72,20a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M8,40C30,44 60,64 92,80" />
+      <path className="pl-l" d="M24,56a16,16 0 1,0 32,0a16,16 0 1,0 -32,0ZM40,40V72M24,56H56M29,45L51,67M51,45L29,67" />
+      <Shape d="M36,56a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z" tone="c" off={0.6} />
+    </>
+  ),
+  /* 1 Samuel: a horn of oil held over a shepherd's crook, the horn gold. */
+  "book-1-samuel": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M58,84V36c0,-12 18,-12 18,0" />
+      <path className="pl-m" d="M24,46c12,-4 24,-16 28,-30l8,4c-2,18 -16,32 -34,36Z" />
+      <path className="pl-l" d="M24,46c12,-4 24,-16 28,-30l8,4c-2,18 -16,32 -34,36Z" />
+      <path className="pl-l" d="M26,60c-2,4 -2,8 0,10M30,62c-2,4 -2,8 0,10" />
+    </>
+  ),
+  /* Jeremiah: an old stump with a new shoot, the shoot gold. */
+  "book-jeremiah": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M30,84V62c0,-8 40,-8 40,0V84Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M34,64c10,4 22,4 32,0" />
+      <path className="pl-m" d="M50,62c0,-14 -2,-24 2,-34c-8,2 -14,-4 -14,-10c8,0 14,4 15,9c2,-8 8,-12 16,-11c0,7 -6,12 -15,12c-2,10 -1,20 -1,34Z" />
+      <path className="pl-l" d="M50,62c0,-14 -2,-24 2,-34c-8,2 -14,-4 -14,-10c8,0 14,4 15,9c2,-8 8,-12 16,-11c0,7 -6,12 -15,12c-2,10 -1,20 -1,34Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
