@@ -22334,3 +22334,22 @@ Cut in chapter 19: nothing beyond the policy on lines to Christ. No care line is
 | The hard note: naked or partly clothed; the three years; sign-acts; not explained away; no pattern for shaming anyone in God's name | 3-6 `hard` | isaiah/20.json `hard`; the brief | Repository |
 
 Cut in chapter 20: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 21 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 21:1-10 (21:9's cry in double quotes, inside the BSB's speech marks) | 1-10 | BSB | BSB text |
+| Babylon's return; the Desert by the Sea and the Sealand; Elam and Media; 539 BC and Belshazzar's feast, or 710 and 689 BC and Merodach-baladan; the threshing floor; waiting | 1-10 | isaiah/21.json `story`, `historical` | Repository; both views |
+| Revelation 18:2 (in double quotes); Revelation 14:8; Daniel 5:30 named; Habakkuk 2:1 | 1-10 `later` | BSB | BSB text; the New Testament's own use of the cry |
+| The hard note: 539 BC (Isaiah foreseeing or a later prophet) or 710 or 689 BC; the prophet's distress; no side | 1-10 `hard` | isaiah/21.json `hard` | Repository; each reading in its holders' terms |
+| 21:11-12 | 11-12 | BSB | BSB text |
+| Dumah and Dumat al-Jandal; Seir and Edom; Dumah as silence; the honest answer | 11-12 | isaiah/21.json `historical`, `literary` | Repository |
+| Psalm 130:6 (its clause before the dash) | 11-12 `later` | BSB | BSB text |
+| 21:13-17 (21:15 paraphrased around its dashes) | 13-17 | BSB | BSB text |
+| Dedan, Tema, Kedar; Sargon II and Sennacherib; Nabonidus at Tema; hospitality in the desert; the hired worker's year | 13-17 | isaiah/21.json `historical` | Repository |
+| Deuteronomy 10:19; Jeremiah 49:28 named | 13-17 `later` | BSB | BSB text |
+
+Cut in chapter 21: nothing. No care line is needed in this chapter.
