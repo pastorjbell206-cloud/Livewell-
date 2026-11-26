@@ -21120,3 +21120,21 @@ Cut in chapter 23: the deep note's lines to Christ (Jesus as the Redeemer of the
 | Romans 12:17 (its first sentence); Job 31:29 (its first clause, before the dash) | 23-34 | the chapter data's cross-references for 24:29 (Romans 12:17) and 24:17 (Job 31:29); BSB | Repository; BSB text |
 
 Cut in chapter 24: the deep note's lines to Christ (Jesus as the one who seeks and saves the lost beside verse 11; the sheep and the goats; Jesus praying for those who crucified him beside verse 29; the note calls the link continuity in ethics); the resurrection as the final rising of verse 16 (left to the New Testament's own pages).
+
+## The plain notes on Proverbs 25 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 25:1; 25:2; 25:3; dross and the throne (25:4-5) paraphrased; the place of honor (25:6-7) paraphrased (verse 7 holds an inner quotation and an exclamation); court and confidence (25:8-10) paraphrased | 1-10 | BSB | BSB text |
+| The fourth section (25 to 29); wisdom handed on; Hezekiah around 715 to 686 BC, reform and 701 BC; a revival of writing after 722 BC, a scholars' suggestion; how the sayings were kept not stated; kavod and verse 2; limits on a king's understanding; seating by rank and the risk of being moved down | 1-10 | proverbs/25.json `story`, `historical`, `cultural`, `words` (kavod, satar) | Repository |
+| Luke 14:10 (quoted in two parts, around its inner quotation); Deuteronomy 29:29 (its first clause) | 1-10 | luke/plain/14.json `ot` (Proverbs 25:6-7 beside Jesus' words); the chapter data's cross-references for 25:2 (Deuteronomy 29:29) and 25:7 (Luke 14); BSB | Repository; BSB text; the site's own Luke note draws the link |
+| 25:11; 25:12; 25:13 (its comparison); 25:14; 25:15; 25:16 (its first clause); 25:17; 25:18 (its picture); 25:19 (its picture); 25:20 | 11-20 | BSB | BSB text |
+| Comparison proverbs without a verb; apples of gold and silver settings; snow brought down to cool drinks at harvest, rain unwelcome; rainless clouds; cheerful songs to a heavy heart | 11-20 | proverbs/25.json `literary`, `cultural` | Repository |
+| Romans 12:15 | 11-20 | the chapter data's cross-references for 25:20 (Romans 12:15); BSB | Repository; BSB text |
+| 25:21-22; 25:23; 25:24; 25:25; 25:26 (its picture); 25:27; 25:28 | 21-28 | BSB | BSB text |
+| Kindness to an enemy; gechel and the two readings (shame or remorse; a ritual of repentance); the puzzle of the north wind; 25:24 repeating 21:9 and the flat roof; not a comment on women in general (19:13-14), angry men warned against; the frame of searching and glory (2, 27); a city without walls | 21-28 | proverbs/25.json `words` (gechel), `cultural`, `literary`; proverbs/19.json `cultural` | Repository; each reading in its holders' terms |
+| Romans 12:21; Exodus 23:4 | 21-28 | proverbs/25.json `christ` (Paul quoting verses 21-22); romans/plain/12.json `ot`; the chapter data's cross-references for 25:21 (Romans 12:20-21; Exodus 23:4); BSB | Repository; BSB text; the New Testament's own quotation |
+
+Cut in chapter 25: the deep note's line to Christ (Christ who did not grasp at glory and died for his enemies, set beside verses 6-7 and 21-22). No care line is needed in this chapter.
