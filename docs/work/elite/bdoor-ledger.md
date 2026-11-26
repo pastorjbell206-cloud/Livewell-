@@ -23210,3 +23210,24 @@ Cut in chapter 1: nothing further.
 | Psalm 115:5 (its clause); Zephaniah 1:7 (its clause) | 15-20 | BSB | BSB text |
 
 Cut in chapter 2: nothing further.
+
+## The plain notes on Habakkuk 3 (2026-11-26)
+
+`client/public/bible/notes/habakkuk/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; 3:2 (its sentences, the last in double quotes) | 1-2 | BSB | BSB text |
+| Meant to be sung; Shigionoth uncertain and Psalm 7; the choirmaster note; the petition: renew the past deeds, remember mercy | 1-2 | habakkuk/3.json `cultural`, `literary` | Repository |
+| Psalm 7:1 (the word Shiggaion); Exodus 32:12 | 1-2 | habakkuk/3.json `cultural`; BSB | Repository; BSB text |
+| 3:3 (its first sentence); 3:4-12 and 3:14-15 paraphrased; 3:13 (its first sentence) | 3-15 | BSB | BSB text |
+| Third person then address; Teman in Edom and Paran south of Judah; Cushan and Midian; storm-god language borrowed; the sea and the Jordan; the sun and moon and Joshua; the purpose in 3:13 | 3-15 | habakkuk/3.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 15:3 (its clause); Joshua 10:13 (its clause); Deuteronomy 33:2 (its clause) | 3-15 | BSB | BSB text |
+| The hard note: ancient warfare and storm poetry; 3:13's purpose; anger at destroying evil; poetic and creation-focused details; the cross and continuity readings; no warrant to make war in God's name | 3-15 `hard` | habakkuk/3.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 3:16 (its first sentence; the rest paraphrased); 3:17; 3:18 (in double quotes); 3:19 paraphrased | 16-19 | BSB | BSB text |
+| 597 and 587 or 586 BC; Persia takes Babylon in 539 BC; the six failures and the turn; a farming economy stripped by armies | 16-19 | habakkuk/3.json `historical`, `literary` | Repository |
+| Psalm 18:33 | 16-19 | BSB | BSB text |
+| The hard note: not a denial of loss or a forced mood; a decision to hold on; no rule that anyone in loss must feel joy | 16-19 `hard` | habakkuk/3.json `literary`; the brief | Stated as the brief asks |
+| The care line ('If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn.') | 16-19 `hard` | job/intro.json `teaching`; hebrews/plain/10.json; 2-timothy/intro.json | Reused whole, word for word; Find Help named; no phone number |
+
+Cut in chapter 3: the deep note's lines from the anointed of 3:13 to Christ, which the New Testament does not draw from Habakkuk.
