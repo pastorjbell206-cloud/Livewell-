@@ -1,0 +1,181 @@
+{
+ "length": 148.16,
+ "chapters": [
+  {
+   "id": "letter",
+   "kicker": "A letter to Rome",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 23.2,
+   "lines": [
+    {
+     "text": "Romans is a letter, the longest Paul wrote. He sent it to the Christians in Rome, Jewish and Gentile believers he had not yet met, to introduce himself and the gospel he preached. He states his theme early.",
+     "start": 2.6,
+     "end": 15.74
+    },
+    {
+     "text": "I am not ashamed of the gospel, because it is the power of God for salvation to everyone who believes.",
+     "start": 16.32,
+     "end": 22.3
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 22.4,
+   "end": 40.34,
+   "lines": [
+    {
+     "text": "Romans moves in large blocks. What is wrong with the whole human race. What God has done about it. The new life that follows. God and Israel. And the life of a people shaped by mercy.",
+     "start": 23.3,
+     "end": 35.68
+    },
+    {
+     "text": "The first great turn is two words: but now.",
+     "start": 36.38,
+     "end": 39.44
+    }
+   ]
+  },
+  {
+   "id": "sin",
+   "kicker": "Watch for: what is wrong",
+   "level": 0.5,
+   "start": 39.54,
+   "end": 59.44,
+   "lines": [
+    {
+     "text": "Paul first shows that the whole human race, Gentile and Jew, stands guilty before God.",
+     "start": 40.44,
+     "end": 46.04
+    },
+    {
+     "text": "For all have sinned and fall short of the glory of God.",
+     "start": 46.62,
+     "end": 49.72
+    },
+    {
+     "text": "Romans treats sin as more than wrong acts. It's a power that reigns. So people need more than self-improvement. They need to be rescued.",
+     "start": 50.34,
+     "end": 58.54
+    }
+   ]
+  },
+  {
+   "id": "grace",
+   "kicker": "Watch for: set right, freely",
+   "level": 0.7,
+   "start": 58.64,
+   "end": 71.32,
+   "lines": [
+    {
+     "text": "God sets people right with himself freely, by grace, through Jesus' death, and they receive it by faith.",
+     "start": 59.54,
+     "end": 66.24
+    },
+    {
+     "text": "Faith means trust. It isn't a good deed that earns a reward.",
+     "start": 66.86,
+     "end": 70.42
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "Watch for: the new life",
+   "level": 0.85,
+   "start": 70.52,
+   "end": 87.56,
+   "lines": [
+    {
+     "text": "Grace doesn't mean going on in sin. Believers have died with Christ and live a new life.",
+     "start": 71.42,
+     "end": 76.66
+    },
+    {
+     "text": "There is now no condemnation for those who are in Christ Jesus.",
+     "start": 77.18,
+     "end": 80.68
+    },
+    {
+     "text": "The Spirit gives life, makes them God's children, and holds them in a love nothing can break.",
+     "start": 81.2,
+     "end": 86.66
+    }
+   ]
+  },
+  {
+   "id": "israel",
+   "kicker": "Watch for: God and Israel",
+   "level": 0.7,
+   "start": 86.76,
+   "end": 101.9,
+   "lines": [
+    {
+     "text": "Chapters nine to eleven are not a detour. Paul asks whether God has kept his promises to Israel, and he answers that God's word has not failed.",
+     "start": 87.66,
+     "end": 96.5
+    },
+    {
+     "text": "Then he tells a church of Jewish and Gentile believers to welcome one another.",
+     "start": 97.14,
+     "end": 101.0
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.55,
+   "start": 101.1,
+   "end": 121.62,
+   "lines": [
+    {
+     "text": "All Christians confess that God sets people right with himself by grace, through Christ. They read some of Paul's phrases in more than one way: what he means by works of the law, and whether one phrase means faith in Christ or the faithfulness of Christ.",
+     "start": 102.0,
+     "end": 118.84
+    },
+    {
+     "text": "This film takes no side.",
+     "start": 119.38,
+     "end": 120.72
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 120.82,
+   "end": 136.84,
+   "lines": [
+    {
+     "text": "Start with chapter one, and read it aloud, in large sections. Many famous verses mean more inside their paragraph than on a poster.",
+     "start": 121.72,
+     "end": 130.36
+    },
+    {
+     "text": "The key chapters are one, three, four, five, six, eight, nine, and twelve.",
+     "start": 130.72,
+     "end": 135.94
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 136.04,
+   "end": 142.063,
+   "lines": [
+    {
+     "text": "Romans is the good news, set out for people Paul had not yet met.",
+     "start": 136.94,
+     "end": 141.163
+    }
+   ]
+  }
+ ]
+}

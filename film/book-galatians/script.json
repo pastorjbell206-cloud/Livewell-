@@ -1,0 +1,137 @@
+{
+  "title": "Galatians: nothing added to Christ",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-galatians",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "urgent",
+      "kicker": "An urgent letter",
+      "level": 0.2,
+      "lines": [
+        "Galatians is the most urgent of Paul's letters. Where a thanksgiving would go, he writes that he is amazed how quickly they are turning to a different gospel.",
+        "It's a short, fierce letter from a man afraid of losing people he loved."
+      ],
+      "scripture": {
+        "reference": "Galatians 1:6",
+        "text": "I am amazed how quickly you are deserting the One who called you by the grace of Christ",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "It has three parts, with an opening and a closing in Paul's own hand.",
+        "First his own story. Then the argument from the Scriptures and from what the Galatians had seen. And last, freedom lived out."
+      ],
+      "scripture": {
+        "reference": "Galatians 2:16",
+        "text": "a man is not justified by works of the law, but by faith in Jesus Christ.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "added",
+      "kicker": "Watch for: what was added",
+      "level": 0.5,
+      "lines": [
+        "Other teachers came. They were Jewish believers in Jesus, as Paul was, sincere in their faithfulness to God's word. They said Gentile believers must be circumcised and keep the law.",
+        "Paul answers that adding anything to Christ as the price of belonging changes the good news.",
+        "For if righteousness comes through the law, Christ died for nothing."
+      ],
+      "scripture": {
+        "reference": "Galatians 2:21",
+        "text": "For if righteousness comes through the law, Christ died for nothing.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "abraham",
+      "kicker": "Watch for: Abraham",
+      "level": 0.65,
+      "lines": [
+        "Paul argues from Israel's own Scriptures. Abraham believed God and was counted righteous, centuries before the law.",
+        "The law is God's good gift, a guardian until Christ came. Now all who belong to Christ are Abraham's heirs."
+      ],
+      "scripture": {
+        "reference": "Galatians 3:6",
+        "text": "Abraham believed God, and it was credited to him as righteousness.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "table",
+      "kicker": "Watch for: one table",
+      "level": 0.8,
+      "lines": [
+        "At Antioch, Peter stopped eating with Gentile believers, and Paul challenged him in front of everyone. For Paul, the gospel is at stake when believers refuse to eat together.",
+        "It was a quarrel among Jewish believers in Jesus, not between Christians and Jews.",
+        "For you are all one in Christ Jesus."
+      ],
+      "scripture": {
+        "reference": "Galatians 3:28",
+        "text": "for you are all one in Christ Jesus.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "freedom",
+      "kicker": "Watch for: freedom",
+      "level": 0.9,
+      "lines": [
+        "It is for freedom that Christ has set us free.",
+        "Freedom is for serving one another in love, not for self-indulgence. Paul sets the works of the flesh beside the fruit of the Spirit, and tells the churches to restore those who fall, gently, and to carry each other's burdens."
+      ],
+      "scripture": {
+        "reference": "Galatians 5:1",
+        "text": "It is for freedom that Christ has set us free.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "All Christians confess that no one is set right with God by circumcision or by the law. They read Paul's phrase works of the law in more than one way.",
+        "The traditional Protestant reading takes it as everything a person does to obey the law in order to stand right with God. The new perspective on Paul takes it above all as the practices that marked Jews off from other peoples. Many take something from both.",
+        "This film takes no side. And this letter is not against the Jewish people."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read it in one sitting, aloud if you can, with Genesis open for chapters three and four. Don't stop at chapter four."
+      ],
+      "scripture": {
+        "reference": "Galatians 5:22",
+        "text": "the fruit of the Spirit is love, joy, peace",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The letter asks what you are adding to Christ, quietly, as the price of belonging."
+      ],
+      "titleCard": [
+        "Nothing added to Christ.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

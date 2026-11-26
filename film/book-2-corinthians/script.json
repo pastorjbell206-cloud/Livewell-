@@ -1,0 +1,138 @@
+{
+  "title": "2 Corinthians: power in weakness",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-2-corinthians",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "personal",
+      "kicker": "A letter after tears",
+      "level": 0.2,
+      "lines": [
+        "Second Corinthians is the most personal of Paul's letters. A visit had gone badly, and he had written in tears. Then Titus brought news that the church had turned back.",
+        "Paul writes in relief and joy, and in places in deep pain."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 2:4",
+        "text": "not to grieve you but to let you know how much I love you.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "It has three parts. The ministry explained and the friendship mended. The collection for Jerusalem. And the fool's speech, where Paul boasts only of what shows his weakness.",
+        "Comfort, grace, and weakness are one gospel seen from three sides."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 1:3",
+        "text": "the Father of compassion and the God of all comfort",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "clay",
+      "kicker": "Watch for: jars of clay",
+      "level": 0.5,
+      "lines": [
+        "Corinth admired strength and polish. Paul says the gospel is treasure in jars of clay, to show that the power is God's.",
+        "Now we have this treasure in jars of clay to show that this surpassingly great power is from God and not from us.",
+        "He passes on the comfort he received, and comfort doesn't mean the trouble goes away."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 4:7",
+        "text": "Now we have this treasure in jars of clay to show that this surpassingly great power is from God and not from us.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "reconciled",
+      "kicker": "Watch for: friends again",
+      "level": 0.65,
+      "lines": [
+        "To be reconciled is to be made friends again after a quarrel. God took the first step, reconciling the world to himself in Christ.",
+        "If anyone is in Christ, he is a new creation.",
+        "The letter is itself an act of reconciliation between a pastor and his people."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 5:17",
+        "text": "if anyone is in Christ, he is a new creation.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "giving",
+      "kicker": "Watch for: giving as grace",
+      "level": 0.6,
+      "lines": [
+        "Paul never orders the church to give. He calls giving a grace, with Jesus, who became poor, as its pattern.",
+        "The gift is for the poor, not for Paul. And it gives no ground for teaching that giving to God will make the giver rich."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 9:7",
+        "text": "For God loves a cheerful giver.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "weakness",
+      "kicker": "Watch for: weakness",
+      "level": 0.9,
+      "lines": [
+        "Against rivals who prized polish, Paul boasts only of hardships, an escape in a basket, and a thorn God would not remove.",
+        "My grace is sufficient for you, for My power is perfected in weakness.",
+        "His authority was for building up, not tearing down. A leader who uses this letter to demand loyalty has read it upside down."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 12:9",
+        "text": "My grace is sufficient for you, for My power is perfected in weakness.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where readers differ",
+      "level": 0.55,
+      "lines": [
+        "Readers differ on whether this is one letter, or two or more joined together. Most often they propose that chapters ten to thirteen were once separate. Others note that no copy ever circulated in pieces. The argument can be followed on either view.",
+        "Scholars have long debated who the rival teachers were. This film takes no side. And it's not a letter against the Jewish people."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read it in one sitting, aloud, as a real letter in the middle of a real quarrel.",
+        "Keep the story in mind, and watch for irony in chapters ten to thirteen."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 1:4",
+        "text": "who comforts us in all our troubles",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Let it ask who you admire, and why."
+      ],
+      "titleCard": [
+        "Power in weakness.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
