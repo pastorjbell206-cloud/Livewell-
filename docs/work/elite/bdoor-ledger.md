@@ -21879,3 +21879,23 @@ Cut in chapter 11: nothing beyond the policy on lines to Christ. No care line is
 | Psalm 105:1 | 4-6 `later` | BSB | BSB text |
 
 Cut in chapter 12: John 7:37-38 at the Feast of Tabernacles, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 13 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 13:1-8 | 1-8 | BSB | BSB text |
+| The oracles against the nations and their list; massa; Babylon in Isaiah's day; Merodach-baladan about 721 and 703; Sennacherib in 689; the empire to come | 1-8 | isaiah/13.json `story`, `historical` | Repository |
+| Amos 5:18; Joel 2:31 | 1-8 `later` | BSB | BSB text |
+| 13:9-16 (13:9's clause after the dash; 13:15-16 named, not quoted) | 9-16 | BSB | BSB text |
+| The darkened heavens as the collapse of an order; atrocities of ancient conquest | 9-16 | isaiah/13.json `hard` | Repository |
+| Matthew 24:29; Isaiah 47:6 | 9-16 `later` | BSB | BSB text; the New Testament's own words |
+| The hard note: what war did; violence returning on Babylon; the prophets condemning conquerors (10:5-15; 47:6); consequences; the warning; never anything but evil; no warrant to wish it on any people | 9-16 `hard` | isaiah/13.json `hard`; the brief | Repository |
+| Care line ("A word for anyone who has been sexually assaulted...") | 9-16 `hard` | Reused byte for byte from judges/plain/19.json, read by script | care.mjs |
+| 13:17-22 | 17-22 | BSB | BSB text |
+| The Medes; 612 BC; Cyrus about 550 and 539; the two datings; Babylon's slow decline, Seleucia about 300 BC, the early centuries AD | 17-22 | isaiah/13.json `historical` | Repository; both views |
+| Jeremiah 51:11 (its clause after the exclamations); Jeremiah 50:39 | 17-22 `later` | BSB | BSB text |
+
+Cut in chapter 13: nothing beyond the policy on lines to Christ.
