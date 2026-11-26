@@ -21724,3 +21724,25 @@ Cut in chapter 3: the deep note's lines to Christ that the New Testament does no
 | Exodus 13:21; Psalm 121:5; Isaiah 25:4 | 5-6 `later` | BSB | BSB text |
 
 Cut in chapter 4: the deep note's lines to Christ that the New Testament does not draw (Matthew 3:11 and the Word dwelling among people beside the chapter). No care line is needed in this chapter.
+
+## The plain notes on Isaiah 5 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1-7 (5:2's last clause without its exclamation) | 1-7 | BSB | BSB text |
+| Vineyard work; the love song; Nathan; mishpat and mispach, tsedaqah and tse'aqah | 1-7 | isaiah/5.json `cultural`, `literary`, `words` | Repository |
+| Psalm 80:8; Isaiah 27:3; Mark 12:1 | 1-7 `later` | isaiah/5.json `christ` (the parable of the tenants), `hard` (27:2-6); BSB | BSB text; the parable's own wording |
+| The hard note: the hearers as judge; care withdrawn; justice the fruit; the second vineyard song; Israel's own Scripture, never a reason to blame the Jewish people | 1-7 `hard` | isaiah/5.json `hard`; the brief | Repository |
+| 5:8-17 | 8-17 | BSB | BSB text |
+| Hoy as funeral cry; land and Leviticus 25:23; the Jubilee and little evidence of its practice; the measures; Sheol; luxury, not music or wine | 8-17 | isaiah/5.json `historical`, `cultural`, `words` | Repository |
+| Micah 2:2; Leviticus 25:23 | 8-17 `later` | BSB | BSB text |
+| 5:18-25 | 18-25 | BSB | BSB text |
+| The six woes; the refrain and 9:8 to 10:4 | 18-25 | isaiah/5.json `story`, `literary` | Repository |
+| Proverbs 3:7; Amos 5:7 | 18-25 `later` | BSB | BSB text |
+| 5:26-30 | 26-30 | BSB | BSB text |
+| Assyria under Tiglath-pileser III; the palace reliefs; the darkness | 26-30 | isaiah/5.json `historical` | Repository |
+| Isaiah 10:5; Isaiah 10:12 named; Nahum 1:15 (added when the validator asked for a book beyond Isaiah; first drafted across the BSB's dash and corrected) | 26-30 `later` | BSB | BSB text |
+
+Cut in chapter 5: the deep note's line to John 15 that the New Testament does not draw from this chapter. No care line is needed in this chapter.
