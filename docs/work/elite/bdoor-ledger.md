@@ -21452,3 +21452,19 @@ Cut in chapter 5: the deep note's lines to Matthew 23:23, Matthew 9:13 and 1 The
 | 2 Kings 14:25 (its clause) | 8-14 | BSB | BSB text |
 
 Cut in chapter 6: nothing drawn to the New Testament. The scene of 6:9-10 is named and not dwelt on.
+
+## The plain notes on Amos 7 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1 paraphrased; 7:2 (Amos's prayer, in double quotes); 7:3 (its first sentence); 7:4 paraphrased; 7:5 (in double quotes); 7:6-9 paraphrased, with 7:8's clause | 1-9 | BSB | BSB text |
+| The king's harvest as tax; the late crop; the great deep and Genesis 1:2; the pattern of show, plead, relent; Jacob's smallness; the plumb line; the pattern broken; the house of Jeroboam; Jeroboam's natural death and Zechariah's murder | 1-9 | amos/7.json `cultural`, `literary`, `historical` | Repository |
+| Exodus 32:14; Jeremiah 18:7-8 paraphrased | 1-9 | amos/7.json `hard`; BSB | Repository; BSB text |
+| The hard note: Numbers 23:19 and 1 Samuel 15:29; classical theologians; open theists; the conditional view and Jeremiah 18; prayer matters to God | 1-9 `hard` | amos/7.json `hard` | Repository; the readings in their holders' terms |
+| 7:10-11 paraphrased (7:11's inner quotation not quoted); 7:12 (in double quotes, for its exclamation); 7:13 (its clause); 7:14 (its clause); 7:15-17 paraphrased | 10-17 | BSB | BSB text |
+| Bethel's sanctuary since about 930 BC; the state shrine and the king's pleasure; Amaziah sharpening Amos's words; earn your bread; a son of a prophet as a guild member; sycamore figs, the poor's fruit, grown in the lowlands; 7:17 named and not dwelt on; no warrant to wish harm on a family; Amaziah's report turned into the verdict | 10-17 | amos/7.json `historical`, `cultural`, `literary`; the brief | Repository; stated as the brief asks |
+| 2 Kings 2:3-5; 2 Kings 14:29; 2 Kings 15:8-10 | 10-17 | amos/7.json `historical`, `cultural` | Repository |
+
+Cut in chapter 7: nothing drawn to the New Testament. The words of 7:17 about Amaziah's wife and children are not quoted.
