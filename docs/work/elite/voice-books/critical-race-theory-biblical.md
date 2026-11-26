@@ -509,3 +509,7 @@ The chapters were not read whole for this list. It comes from reading every bloc
 1. Keep the six Expansions as they are, fold them into the chapters, or drop them from the published book?
 2. Rwanda: name gacaca, or change the comparison?
 3. Bring the NIV and NKJV quotations to the ESV, or name the translations used?
+
+## The files
+
+Rebuilt after the last chapter: still 193 pages (`client/src/data/ebooks.ts` says 193), PDF 1.4 MB, EPUB 337 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,245 words compared, no difference); the PDF's pages carry the same text character for character (243,254 against 243,254).

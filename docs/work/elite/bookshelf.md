@@ -887,6 +887,11 @@ differ in is said under each book. Each was then edited (records in
   the PDF's fuller copyright notice is used ("James C. Bell", as both
   originals print it). 206 pages became 193 (`client/src/data/ebooks.ts`
   says 193). `--verify`: identical (47,295 words; 243,250 characters).
+  Then edited (`critical-race-theory-biblical.md`): 437 dashes in his prose
+  to 3, every edit punctuation, every account of CRT, every concession and
+  every criticism word for word, fact diff passed on all twenty files;
+  rebuilt, still 193 pages, `--verify` identical (47,245 words; 243,254
+  characters).
 
 ### The apparatus
 
