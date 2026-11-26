@@ -25649,3 +25649,19 @@ Cut in chapter 27: Tarshish's location (the deep note's Tartessus), left as disp
 | The hard note: Is the lament in verses 12 to 19 about Satan's fall? The readings in their holders' terms | 11-26 `hard` | ezekiel/28.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 28: Ephesians 6:12 beside the Satan reading, left out; the Satan reading kept as a reading with no side taken.
+
+## The plain notes on Ezekiel 29 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Pharaoh the great monster, and the splintered reed: the text paraphrased; quoted clauses at verses 3, 4-5, 6, 7, 9-12, 14, 16 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/29.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 18:21; Jeremiah 37:7 | 1-16 `later` | BSB | BSB text |
+| The hard note: Was Egypt ever desolate for forty years, as verses 11 to 13 say? The readings in their holders' terms | 1-16 `hard` | ezekiel/29.json `hard` | Repository; the site takes no side |
+| Egypt as Nebuchadnezzar's wages: the text paraphrased; quoted clauses at verses 18, 20, 21 | 17-21 | BSB | BSB text |
+| Background in `hearers` | 17-21 | ezekiel/29.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 30:3; 1 Samuel 2:10 | 17-21 `later` | BSB | BSB text |
+
+Cut in chapter 29: an unsourced gloss on bald heads and raw shoulders, cut before commit.
