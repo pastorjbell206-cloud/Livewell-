@@ -42,6 +42,7 @@ jobs:
           node scripts/validate-skeptic-track.mjs
           node scripts/validate-answers.mjs
           node scripts/build-questions-index.mjs --check
+          node scripts/build-narrated-films.mjs --check
           node scripts/validate-questions.mjs
           node scripts/validate-argument-cases.mjs
           node scripts/validate-links.mjs
