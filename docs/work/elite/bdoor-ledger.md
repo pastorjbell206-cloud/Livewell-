@@ -24918,3 +24918,20 @@ Cut in chapter 5: Romans 5:18-19 and 1 Peter 3:18 beside the search for one just
 | Deuteronomy 20:19, Ezekiel 13:10, Matthew 11:29, Ezekiel 22:18, Jeremiah 20:3 (clauses); Amos 3:9 (named) | `later` | BSB; jeremiah/6.json `christ` for Matthew 11 | BSB text |
 
 Cut in chapter 6: the deep note's line from Jesus' lament over Jerusalem, which the New Testament does not draw from this chapter; Beth-haccherem's position, not stated in the repository.
+
+## The plain notes on Jeremiah 7 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 7:1-34 (verse 4's chant paraphrased) | all | BSB | BSB text |
+| Date 609 or 608 BC from 26:1; Josiah's death; chapter 26's trial; Shiloh, Eli and Samuel, Psalm 78 | 1-15 | jeremiah/7.json `historical` | Repository |
+| The temple gate; entrance psalms; the chanted phrase | 1-15 | jeremiah/7.json `cultural` | Repository |
+| Queen of Heaven, Ishtar or Astarte; a household worship | 16-28 | jeremiah/7.json `cultural` | Repository |
+| Verse 22's readings | 16-28 `hard` | jeremiah/7.json `hard` | Repository |
+| Topheth in Hinnom; Gehenna | 29-34 | jeremiah/7.json `historical`; isaiah/66.json `cultural` | Repository |
+| The child-abuse care line, byte for byte | 29-34 `hard` | colossians/plain/3.json | care.mjs |
+| Matthew 21:13 (named), Psalm 78:60, 1 Samuel 15:22, Hosea 6:6, Leviticus 18:21 (clauses); 2 Kings 23:10 (paraphrased) | `later` | BSB | BSB text |
+
+Cut in chapter 7: the deep note's line on the temple's fall in AD 70 and Jesus as the new temple, beyond what the New Testament draws from this chapter.
