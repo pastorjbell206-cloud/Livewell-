@@ -24324,3 +24324,26 @@ Cut in chapter 59: Deuteronomy 32:35 is left to the deep note. No care line is n
 | Revelation 21:23; Ezekiel 10 (named) | 17-22 `later` | BSB; isaiah/60.json `christ`, `words` | BSB text |
 
 Cut in chapter 60: the magi of Matthew 2, which the deep note calls a thematic echo, and John 8:12 and Matthew 5:14, are left out. The hard note's last sentence, that the chapter gives no people or nation today a warrant to claim power over others in God's name, follows the brief.
+
+## The plain notes on Isaiah 61 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/61.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 61:1-3 | 1-3 | BSB | BSB text |
+| Center of 60 to 62; recalls 42:1 and 52:7 | 1-3 | isaiah/61.json `story` | Repository |
+| Anointing of priests, kings, prophets; the Spirit as the anointing; mashiach, Messiah, Christ | 1-3 | isaiah/61.json `cultural`, `words` | Repository |
+| Deror and the jubilee of Leviticus 25; uncertain practice; ashes and oil; peer and epher | 1-3 | isaiah/61.json `cultural`, `words` | Repository |
+| The speaker debated; 11QMelchizedek | 1-3 | isaiah/61.json `historical` | Repository |
+| Luke 4:19-21 (verse 19's clause; verse 21's saying) | 1-3 `later` | BSB; isaiah/61.json `christ` | BSB text |
+| Why Jesus stopped reading; Luke 21:22 | 1-3 `hard` | isaiah/61.json `hard` | Repository |
+| 61:4-9 (verse 9 paraphrased) | 4-9 | BSB | BSB text |
+| After the return; the traditional view; generations of ruin | 4-9 | isaiah/61.json `historical` | Repository |
+| The double portion as the firstborn's share | 4-9 | Deuteronomy 21:17 (BSB) | BSB text |
+| Exodus 19:6 (its clause); 1 Peter 2:9 (its clause) | 4-9 `later` | BSB | BSB text |
+| 61:10-11 | 10-11 | BSB | BSB text |
+| The singer debated; the priestly headdress; the bride's jewels; garden and oaks | 10-11 | isaiah/61.json `literary`, `cultural` | Repository |
+| Psalm 30:11 (its clauses) | 10-11 `later` | BSB | BSB text |
+
+Cut in chapter 61: a draft `later` line with Mary's song (Luke 1:46-47) and Revelation 19:8 was replaced by Psalm 30:11, because the New Testament does not tie those to this chapter. Peter's use of the priestly names comes from Exodus 19:6, which the note quotes first.
