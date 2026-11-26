@@ -23696,3 +23696,22 @@ Cut in chapter 8: the deep note's lines to Christ (Ephesians 5:25 and Romans 8:3
 | Psalm 115:5 (its clause), added so the passage's `later` names a book other than Isaiah | 21-29 `later` | BSB | BSB text |
 
 Cut in chapter 41: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 42 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/42.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 42:1-9 (inside the BSB's speech marks; 42:5 paraphrased around its dash) | 1-9 | BSB | BSB text |
+| Servant in chapter 41 and here; the first Servant Song; the gentle way; the bruised reed and smoldering wick; covenant and light; the two pictures of the servant | 1-9 | isaiah/42.json `story`, `summary` | Repository |
+| Matthew 12:20; Luke 2:32 | 1-9 `later` | BSB | BSB text; the New Testament's own lines |
+| The hard note: Israel (41:8-9; 49:3; the Greek's added names), the prophet, an individual (Cyrus, Moses, a king), the Messiah (the Targum); the combined reading (49:5-6); the Christian confession; each in its holders' terms | 1-9 `hard` | isaiah/42.json `hard`; bible/guides/reading-prophets.json | Repository; the site's own statement of the Jewish readings |
+| 42:10-17 (42:10's first clause, before the dash; first drafted across it and corrected) | 10-17 | BSB | BSB text |
+| The new song for all the earth; Kedar and Sela; warrior and woman in labor; the blind led home | 10-17 | isaiah/42.json `summary` | Repository |
+| Psalm 96:1; Isaiah 49:15 (inside the BSB's speech marks) | 10-17 `later` | BSB | BSB text |
+| 42:18-25 (42:18 in double quotes for its exclamation; 42:22 before its inner quotation) | 18-25 | BSB | BSB text |
+| Israel blind and deaf; the plundered people; the LORD gave them up; Israel's own Scripture, not a key for anyone's suffering, never a reason to blame the Jewish people | 18-25 | isaiah/42.json `story`; the brief | Repository; agrees with the 2 Kings 25 notes |
+| Isaiah 43:1 (inside the BSB's speech marks, before the exclamation); Psalm 106:6 (added when the validator asked for a book beyond Isaiah) | 18-25 `later` | BSB | BSB text |
+
+Cut in chapter 42: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
