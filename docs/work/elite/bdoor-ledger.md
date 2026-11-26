@@ -24190,3 +24190,23 @@ Cut from the book page: the introduction's thematic Christian readings of 1:11, 
 | Leviticus 22:20; Deuteronomy 15:21 | 6-14 `later` | malachi/1.json `cultural`, `christ` | Repository; BSB text |
 
 Cut in chapter 1: Matthew 21:12-13 (Jesus in the temple), a thematic link the New Testament does not draw from Malachi.
+
+## The plain notes on Malachi 2 (2026-11-26)
+
+`client/public/bible/notes/malachi/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:5, 2:6, 2:7 quoted; the rest paraphrased | 1-9 | BSB | BSB text |
+| The priests' teaching and judging; dung burned outside the camp; messenger in 2:7 | 1-9 | malachi/2.json `cultural`; malachi/3.json `words` | Repository; BSB text |
+| Deuteronomy 33:10; Numbers 25:12 | 1-9 `later` | BSB; malachi/2.json `cultural` | Repository; BSB text |
+| Exodus 29:14; the threat read as a wake-up to teachers | 1-9 `hard` | malachi/2.json `cultural` | Repository; BSB text |
+| 2:10, 2:11 (its clause), 2:14, 2:15 (its last sentence), 2:16 (in double quotes) quoted; the rest paraphrased | 10-16 | BSB | BSB text |
+| Ezra 9 and 10 and Nehemiah 13; worship, not ethnicity; divorce for advantage; marriage as covenant; the wife of your youth | 10-16 | malachi/2.json `historical`, `cultural` | Repository; BSB text |
+| Genesis 2:24; Nehemiah 13:23 | 10-16 `later` | BSB | BSB text |
+| The two readings of 2:16; the ancient versions; Deuteronomy 24:1-4; Matthew 19:9; 1 Corinthians 7:15; the abuse care line, byte for byte | 10-16 `hard` | malachi/2.json `hard`; care line reused | Repository; BSB text |
+| 2:17 quoted in part; its inner quotation paraphrased | 17 | BSB | BSB text |
+| The fourth argument running into chapter 3 | 17 | malachi/2.json `literary` | Repository; BSB text |
+| Psalm 73:3 | 17 `later` | BSB | BSB text |
+
+Cut in chapter 2: nothing.
