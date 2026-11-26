@@ -25586,3 +25586,19 @@ Cut in chapter 23: the deep note's hotline telephone number, replaced by the abu
 | The hard note: Did God really take Ezekiel's wife to make a point, and why forbid him to grieve? The readings in their holders' terms | 15-27 `hard` | ezekiel/24.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 24: nothing; John 11:35 kept in the hard note as Scripture's witness to grief, not as a line drawn from Ezekiel.
+
+## The plain notes on Ezekiel 25 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ammon and Moab, who gloated: the text paraphrased; quoted clauses at verses 3, 6, 4-7, 8, 9-11 | 1-11 | BSB | BSB text |
+| Background in `hearers` | 1-11 | ezekiel/25.json `historical`, `cultural`, `literary` | Repository |
+| Later: Proverbs 24:17; Obadiah 1:12 | 1-11 `later` | BSB | BSB text |
+| Edom and the Philistines, who took revenge: the text paraphrased; quoted clauses at verses 12, 13, 14, 15, 16-17 | 12-17 | BSB | BSB text |
+| Background in `hearers` | 12-17 | ezekiel/25.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 137:7; Deuteronomy 32:35 | 12-17 `later` | BSB | BSB text |
+| The hard note: Why does God promise to take vengeance on Edom by the hand of Israel, and is this chapter a license for national revenge? The readings in their holders' terms | 12-17 `hard` | ezekiel/25.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 25: Romans 12:19 beside vengeance, which the New Testament does not draw from Ezekiel 25; the John Hyrcanus fulfillment given only as some interpreters' reading.
