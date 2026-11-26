@@ -21823,3 +21823,25 @@ Cut in chapter 8: nothing beyond the policy on lines to Christ.
 | 2 Kings 15:30 (first typed inexactly, caught and corrected); Isaiah 10:4 named | 13-21 `later` | BSB | BSB text |
 
 Cut in chapter 9: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 10 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 10:1-4 | 1-4 | BSB | BSB text |
+| Unjust laws; the refrain's end | 1-4 | isaiah/10.json `summary`, `story` | Repository |
+| Exodus 22:22-23 | 1-4 `later` | BSB | BSB text |
+| 10:5-19 (10:15's question) | 5-19 | BSB | BSB text |
+| Assyria's kings and their dates (Sargon II 722 to 705; Sennacherib 705 to 681); the cities taken about 740 to 717; the inscriptions' boasts; tool and hand | 5-19 | isaiah/10.json `historical`, `story` | Repository |
+| Habakkuk 1:11; Genesis 50:20 | 5-19 `later` | isaiah/10.json `hard` (Genesis 50:20); BSB | BSB text |
+| The hard note: purposes differing; secondary causes; accountability; a remnant; not a key for any nation's wars or any people's suffering now | 5-19 `hard` | isaiah/10.json `hard`; the brief | Repository |
+| 10:20-27 | 20-27 | BSB | BSB text |
+| Shear-jashub fulfilled; the Mighty God; the remnant; Midian and the sea | 20-27 | isaiah/10.json `story` | Repository |
+| Romans 9:27; Judges 7:22 | 20-27 `later` | BSB | BSB text |
+| 10:28-34 | 28-34 | BSB | BSB text |
+| Benjamin's towns to Nob; the three readings of the march; 701 BC through Lachish; chapter 37; the forest and the stump | 28-34 | isaiah/10.json `historical`, `story` | Repository; the readings stated |
+| Isaiah 11:1; Isaiah 37:36 named; 2 Kings 19:35 named (added when the validator asked for a book beyond Isaiah) | 28-34 `later` | BSB | BSB text |
+
+Cut in chapter 10: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
