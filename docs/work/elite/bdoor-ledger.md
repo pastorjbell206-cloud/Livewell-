@@ -25980,3 +25980,17 @@ Cut in chapter 48: nothing. The hard note adds that verse 10 gives no one a warr
 | Amos 1:13 (named), 1 Chronicles 5:26, Obadiah 1:3, Amos 9:12, Isaiah 22:6 (clauses); Amos 1:3-5 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 49: a draft line setting Acts 2:9 beside Elam's restoration, which the New Testament does not draw; Amos 9:12 is kept with Acts 15:17 because Acts quotes it.
+
+## The plain notes on Jeremiah 50 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/50.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 50:1-46 (largely paraphrased) | all | BSB | BSB text |
+| Nebuchadnezzar II 605 to 562 BC; walls, Ishtar Gate, ziggurat, Marduk; Bel; the Medes; Cyrus 539 BC; the city not razed | 1-20 | jeremiah/50.json `historical` | Repository |
+| Merathaim and Pekod as wordplays; the Puqudu | 21-46 | jeremiah/50.json `historical` | Repository |
+| Did the prophecy fail: stock imagery, stages, symbol (Revelation), critical view | 21-46 `hard` | jeremiah/50.json `hard`; the coordinator's direction | Repository |
+| Isaiah 13:19, Revelation 18:2, Isaiah 43:14, Proverbs 23:11 (clauses) | `later` | BSB; jeremiah/50.json `christ` | BSB text |
+
+Cut in chapter 50: nothing. The notes identify no present-day power with Babylon.
