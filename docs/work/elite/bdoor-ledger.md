@@ -24134,3 +24134,19 @@ New Testament lines in chapter 12: John 19:37 and Revelation 1:7 quote 12:10. Cu
 | Later: Matthew 26:31; compare Mark 14:27; Malachi 3:3 | 7-9 `later` | BSB | BSB text |
 
 New Testament lines in chapter 13: Matthew 26:31 and Mark 14:27 quote 13:7. Cut in chapter 13: nothing.
+
+## The plain notes on Zechariah 14 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The LORD fights, and living water flows: the text paraphrased, its quoted verses (in single or double quotes) | 1-11 | BSB | BSB text |
+| Background in `hearers` | 1-11 | zechariah/14.json `historical`, `cultural`, `literary` | Repository |
+| Later: Amos 1:1; Ezekiel 47:1 | 1-11 `later` | BSB | BSB text |
+| The hard note: Is this chapter a literal prediction of a future battle, and how should its violence against the nations be read? The readings in their holders' terms | 1-11 `hard` | zechariah/14.json `hard` | Repository; the site takes no side |
+| The nations worship, and everything is holy: the text paraphrased, its quoted verses (in single or double quotes) | 12-21 | BSB | BSB text |
+| Background in `hearers` | 12-21 | zechariah/14.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 28:36; Leviticus 23:39-43 | 12-21 `later` | BSB | BSB text |
+
+New Testament lines in chapter 14: none drawn. Cut in chapter 14: The claim that Jerusalem had only one small spring, which no repository source gives. The atrocity of 14:2 and the plague of 14:12 are named, not described. The sexual-violence care line is the site's existing one, byte for byte.
