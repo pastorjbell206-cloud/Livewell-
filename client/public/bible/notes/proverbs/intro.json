@@ -32,5 +32,404 @@
     { "ch": 10, "why": "The start of the Solomonic sayings shows the book's typical form: short, contrasting two-line proverbs." },
     { "ch": 22, "why": "Contains the much-quoted saying on training a child and the beginning of the words of the wise, with their links to Egyptian instruction." },
     { "ch": 31, "why": "Lemuel's mother's counsel on justice for the poor and the acrostic poem of the woman of noble character that closes the book." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Proverbs in a minute",
+        "body": "Proverbs is the twentieth book of the Bible. It has thirty-one chapters, and it is Israel's book of practical wisdom: how to live well, day by day, in the world God made.\n\nIt opens with nine chapters of longer poems. A father speaks to his son and urges him to choose wisdom over folly. Wisdom herself, pictured as a woman, calls out in the streets and invites the simple to her table. Then, from chapter 10, the book becomes mostly short sayings, usually two lines long, about speech, work, money, friendship, anger, family, justice and the king. It ends with the words of two otherwise unknown sages, Agur and King Lemuel, and a poem in praise of a woman of strength.\n\nThe book's motto comes in its first chapter: “The fear of the LORD is the beginning of knowledge, but fools despise wisdom and discipline” (1:7). Wisdom in Proverbs is not cleverness or book learning. It is skill in living: seeing how God's world actually works, and acting in step with it. That skill starts with reverence for God, and it reaches into the most ordinary places, how a person talks, handles a loan, gets out of bed, or treats a poor man at the gate.\n\nMost of life is ordinary. The Bible has great stories of exodus and exile, and it also has this book, which assumes that the God who made the world cares how a young man spends his evenings and how a merchant weighs his grain."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Proverbs belongs to the Bible's wisdom books, with Job and Ecclesiastes, and with the Psalms and the Song of Songs close by. In Christian Bibles it comes right after the Psalms. In the Hebrew Bible it stands in the third part, the Writings.\n\nIt does not move the Bible's story forward the way Genesis or Kings does, but it is tied to that story. Its heading names Solomon son of David, whose reign opens in 1 Kings 3 and 4 with a prayer for wisdom and a name for it that spread among the nations. ‘Solomon composed three thousand proverbs’ (1 Kings 4:32). The same books go on to tell how a wise king could still turn to folly.\n\nProverbs assumes the covenant God of Israel, called by his name, the LORD. It echoes the law's call to keep God's words close to the heart (Deuteronomy 6). And it speaks to every human being as a creature in a world God made, which is why it can learn even from the wisdom of other nations.\n\nThe three wisdom books argue with one another, and the Bible keeps the argument. Proverbs says how life ordinarily goes under God. Job and Ecclesiastes press on the cases where it does not seem to."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book names several authors. The heading at 1:1 credits the proverbs to Solomon, and headings at 10:1 and 25:1 name him again. The second of these adds that these are proverbs ‘which were copied by the men of Hezekiah king of Judah’ (25:1). Two sections are credited more broadly to the words of the wise (22:17; 24:23). Chapter 30 is the words of Agur son of Jakeh, and 31:1-9 the words of King Lemuel, taught him by his mother. Neither man appears anywhere else in the Bible, and where they came from is uncertain.\n\nReaders understand the headings in two main ways. Traditional readers take Solomon as the source of the book's core, with other material added by later collectors, as the headings themselves say. Many modern scholars think the Solomon headings honor him as the patron of Israel's wisdom rather than claiming he wrote every line, and they see the book as the work of scribes and teachers over several centuries. Both views agree that the book was openly gathered and edited. These notes take no side.\n\nThe book grew over time, and its headings show it. Solomon reigned in the tenth century BC, about 970 to 931 BC on the reckoning the site's guide to the kings follows, so some sayings could go back to his day. Hezekiah reigned in Judah around 715 to 686 BC, so chapters 25 to 29 were copied down at least that late. The finished book is dated differently by different scholars. Some place it in the last years of the kings, before the exile. Many place its final editing after the exile, in the fifth or fourth century BC, and many think chapters 1 to 9 were among the last parts to be written. Single sayings are almost impossible to date, since proverbs pass from mouth to mouth for generations before anyone writes them down."
+      },
+      {
+        "id": "neighbors",
+        "h": "Wisdom among Israel's neighbors",
+        "body": "Israel's wisdom belonged to a wider conversation, and the Bible says so itself. Solomon's wisdom is compared with ‘all the wisdom of Egypt’ (1 Kings 4:30). Proverbs includes the sayings of Agur and Lemuel, who may not have been Israelites at all.\n\nEgypt and Mesopotamia had long traditions of instruction, in which a father or a king passes advice to a son. The best-known parallel to Proverbs is an Egyptian work, the Instruction of Amenemope, usually dated about 1300 to 1075 BC. An Egyptian official wrote it for his son in thirty chapters. In 1924 the Egyptologist Adolf Erman showed that the section of Proverbs beginning at 22:17 closely parallels it in content and sometimes in wording, especially in 22:17 to 23:11: listening carefully, not robbing the poor, avoiding the hot-tempered man, not moving the ancient boundary stone, and the skilled worker who will stand before kings.\n\nProverbs 22:20 asks, “Have I not written for you thirty sayings about counsel and knowledge,” but the Hebrew word behind ‘thirty’ is uncertain. Many translations read it that way partly because of Amenemope's thirty chapters, and others have read it as ‘formerly’ or ‘excellent things’.\n\nMost scholars conclude that Israel's sages knew Amenemope's work and adapted it. Some conservative scholars have argued instead that both drew on a common source. Either way, the change is what stands out. The Israelite version sets the borrowed advice under trust in the LORD: “So that your trust may be in the LORD” (22:19). And it gives the poor a defender: ‘for the LORD will take up their case’ (22:23). Wisdom from beyond Israel was brought under the rule of Israel's God."
+      },
+      {
+        "id": "built",
+        "h": "How Proverbs is built",
+        "body": "Proverbs is a collection of collections, marked off by its own headings.\n\nChapters 1 to 9 are longer poems. A prologue (1:1-7) states the book's purpose and its motto. Then a father speaks to his son in a series of talks, each opening with the father's call to his son, and Wisdom speaks for herself in chapters 1, 8 and 9. These chapters are the doorway. They give the frame for reading the short sayings that follow.\n\nThe proverbs of Solomon (10:1 to 22:16) are the largest collection, several hundred two-line sayings with little obvious order, though scholars have found clusters linked by shared words and themes. The scholar Patrick Skehan noted that there are 375 of them, the number the letters of Solomon's name add up to in Hebrew. Whether that is design or coincidence is debated.\n\nThen come the words of the wise (22:17 to 24:22), the part related to Amenemope, and a short appendix (24:23-34). Chapters 25 to 29 are a second collection of Solomon's sayings, copied by Hezekiah's men, rich in pictures from farm and weather and in counsel about kings and fools. The words of Agur (chapter 30) include his sayings that count things up, three and then four. The words of Lemuel (31:1-9) are a queen mother's advice to her son. The book closes with a poem of twenty-two verses (31:10-31), each beginning with the next letter of the Hebrew alphabet, in praise of a woman of strength.\n\nThe son addressed in the book reflects the setting of family and court teaching. It has long been read as addressed to every reader, man or woman, and the book ends by praising a woman as the picture of wisdom lived out."
+      },
+      {
+        "id": "proverb",
+        "h": "What a proverb is, and is not",
+        "body": "A proverb is a short saying that catches something generally true about life. The Hebrew word, mashal, covers proverbs, comparisons, riddles and parables: ways of setting two things side by side so that one throws light on the other. Proverbs are short on purpose. Each one catches a single angle. Wisdom lies in knowing which one fits the moment.\n\nThe book makes the point itself. It sets two opposite sayings next to each other: “Do not answer a fool according to his folly, or you yourself will be like him” (26:4), and “Answer a fool according to his folly, lest he become wise in his own eyes” (26:5). The ancient rabbis noticed it. The Talmud (Shabbat 30b) records a debate over whether Proverbs should be withdrawn because of it, and the answer given was that the two sayings apply to different situations. Both are true. The wise person sees which one the moment needs.\n\nSo proverbs are not promises or guarantees. “Train up a child in the way he should go, and when he is old he will not depart from it” (22:6) says how things usually go and urges parents to take training seriously. It does not promise that every child of faithful parents will believe, and reading it as a guarantee has laid heavy and undeserved guilt on many parents. The same is true of the sayings that tie hard work to wealth: “Idle hands make one poor, but diligent hands bring wealth” (10:4). Proverbs knows the world is not so simple. It says that injustice can sweep away the poor man's crop (13:23), and it puts doing right above having much: “Better a little with the fear of the LORD than great treasure with turmoil” (15:16).\n\nProverbs also sets human planning under God's rule: “The lot is cast into the lap, but its every decision is from the LORD” (16:33). The German scholar Klaus Koch argued in 1955 that the Old Testament sees deeds as carrying their results inside them, more than God handing out rewards from outside. Others think he drew the line too sharply, since Proverbs also speaks of the LORD repaying. Either way, the book describes the moral grain of a world God made. It is not a vending machine."
+      },
+      {
+        "id": "fear",
+        "h": "The fear of the LORD",
+        "body": "The whole book stands on one foundation. It is said at the start, “The fear of the LORD is the beginning of knowledge” (1:7), again at the end of the opening poems, “The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding” (9:10), and once more in the last chapter, where ‘a woman who fears the LORD is to be praised’ (31:30).\n\nThe fear of the LORD is not terror. It is reverence, awe and trust toward God that shows itself in obedience: a settled recognition that God is God, and that a person is not. It is the beginning, the first step and the starting point. Proverbs never treats wisdom as mere shrewdness. A clever person who does not fear God is still, in the book's word, a fool.\n\nThat is why the book can sound so practical and still be about God on every page. Honest scales, careful words and hard work are not a separate, secular part of life. ‘The eyes of the LORD are in every place’, as one saying puts it (15:3), and ordinary life belongs to him."
+      },
+      {
+        "id": "father",
+        "h": "A father's voice, and two invitations",
+        "body": "Chapters 1 to 9 are built as a father's talks to his son. The mother's teaching stands beside the father's: “Listen, my son, to your father’s instruction, and do not forsake the teaching of your mother” (1:8). Egyptian teaching texts used the same form, a father speaking to his son. Proverbs keeps it, and aims not only at success but at righteousness, justice and fairness before the LORD.\n\nThe son hears two kinds of voices. One is the gang that promises easy money through violence (1:10-19). Another is the woman who belongs to another man and offers stolen pleasure (2:16-19; 5; 6:20-35; 7). Against them stands Wisdom, who calls in the busiest places of the city, ‘Wisdom calls out in the street, she lifts her voice in the square’ (1:20), and who promises life to anyone who will listen.\n\nThe talks are frank about sex and its power. They warn against adultery in vivid terms, and they also praise faithful married love as a gift: ‘rejoice in the wife of your youth’ (5:18). The warning is written to a young man, and it puts the weight of responsibility on him: he is the one who must keep his path far from her door (5:8). The danger it names, sweet words with hidden costs that wreck a marriage and a life, can tempt anyone, and many readers apply the warning in both directions. The book speaks just as hard words about violent and deceitful men, and it does not teach contempt for women. Its other great figure, after all, is Wisdom herself.\n\nThe opening poems end with two invitations (chapter 9). Wisdom has built her house and set her table. Folly calls from her doorway too. Every reader has to decide whose meal to eat."
+      },
+      {
+        "id": "wisdom",
+        "h": "Wisdom beside God at creation",
+        "body": "In chapter 8 Wisdom speaks at length. She was there before the world began: “The LORD created me as His first course, before His works of old” (8:22). When God set the heavens in place and marked out the sea, she was beside him: “Then I was a skilled craftsman at His side, and His delight day by day, rejoicing always in His presence” (8:30).\n\nWisdom here is a personification: a quality of God given a voice and presented as a person, a common way of speaking in Hebrew poetry. The poem says that the world was made wisely, and so wisdom fits the grain of things. To find her is to find life (8:35).\n\nThe chapter had a long later history. Jewish writers after the Old Testament, such as Ben Sira, identified wisdom with the law of Moses. The New Testament speaks of Christ in language close to this chapter: the Word through whom all things were made (John 1:1-3), the one in whom all things were created and hold together (Colossians 1:15-17). The chapter shaped that language. But the chapter itself is a poetic personification, not a prophecy, and these notes read it that way.\n\nIn the fourth century AD verse 22 became a battleground. The Greek translation has Wisdom say that the Lord ‘created’ her, and Arius and his followers took that as proof that the Son of God was a created being. The Hebrew verb, qanah, more often means to acquire or possess, and translations still differ. Athanasius and other defenders of the faith confessed at Nicaea in AD 325 answered that the poem is about God's wisdom and should not be pressed into a statement about the Son's origin. The church's confession that the Son is eternal and not made rests on the New Testament's own direct teaching (John 1:1; Colossians 1:15-20; Hebrews 1), not on reading every detail of Proverbs 8 as a description of him."
+      },
+      {
+        "id": "sayings",
+        "h": "The sayings: words, work, money and friends",
+        "body": "From chapter 10 the book changes pace. Most sayings are two lines long, and the second line repeats, contrasts with or carries forward the first. Read a few at a time, slowly, and turn each one over.\n\nSome subjects come back again and again. Speech is the first of them: honest and lying lips, gentle and harsh answers, gossip and silence. “A gentle answer turns away wrath, but a harsh word stirs up anger” (15:1). Words can build a household or burn it down.\n\nWork is another. The slacker, who will not get out of bed and always has an excuse, is one of the book's sharpest and funniest portraits (6:6-11; 24:30-34; 26:13-16). Money is a third. Proverbs calls wealth a real good, but always a lesser one than wisdom, honesty and a good name, and it warns against dishonest scales, hasty riches and the loan secured for a stranger.\n\nFriendship runs through the book too. ‘A friend loves at all times, and a brother is born for adversity’ (17:17). ‘As iron sharpens iron, so one man sharpens another’ (27:17). So do anger, pride, envy, drink and the king, whose justice sets the tone for a whole land.\n\nOver all of it stand the righteous and the wicked, the wise and the fool. The book's cast becomes familiar: the simple, who are naive and can go either way; the fool, who is settled in folly; the mocker, who sneers at correction; and the righteous, whose path ‘is like the first gleam of dawn’ (4:18). The reader is meant to see himself in more than one of them."
+      },
+      {
+        "id": "poor",
+        "h": "The poor, and the God who made them",
+        "body": "Proverbs has a great deal to say about the poor, and it says it in God's name. “The rich and the poor have this in common: The LORD is Maker of them all” (22:2). “Whoever oppresses the poor taunts their Maker, but whoever is kind to the needy honors Him” (14:31). Kindness to the poor is even called a loan to the LORD (19:17).\n\nSome sayings link laziness with want, and readers sometimes take them to mean that the poor have earned their poverty. That is not the book's view. It knows that hunger can come from injustice (13:23) and that the poor are often shunned while the rich have many friends (14:20; 19:4), and it reports these things as a sad fact of life, not as something to approve. Its warnings about laziness speak to the reader about the reader's own habits. They never give anyone a reason to look down on someone who is poor.\n\nThe book's last word to a king is about the poor. Lemuel's mother tells him: “Open your mouth for those with no voice, for the cause of all the dispossessed” (31:8). A ruler's strength is measured by how he defends those who cannot defend themselves."
+      },
+      {
+        "id": "home",
+        "h": "Children, correction and the home",
+        "body": "Proverbs speaks often about raising children, and it is honest about how much a home shapes a life. A few of its sayings about correction need to be read with great care.\n\nSeveral sayings speak of the rod: “He who spares the rod hates his son, but he who loves him disciplines him diligently” (13:24), with 22:15, 23:13-14 and 29:15. Faithful Christian parents read them in two main ways. Many take them as instruction to parents, endorsing measured physical discipline of young children, given calmly and in love, never in anger, and always aimed at the child's good. Others read the rod as a picture of correction in general, since the same book speaks of ‘a rod for the backs of fools’ (26:3), and hold that Proverbs describes the methods of its own culture rather than a technique for every age. They point to the New Testament's word to fathers: “do not provoke your children, so they will not become discouraged” (Colossians 3:21). This question divides faithful parents without dividing anyone from Christ, and these notes take no side.\n\nOn the most important things both sides agree. The target of these sayings is the parent who never corrects at all, which the book calls a failure of love. Correction given in anger, or that injures a child, is not discipline at all. No reading of these verses gives anyone a warrant to harm a child. They permit no injury and no abuse, which the whole Bible condemns.\n\nAbuse of a child is a crime. It is to be reported to the police and the proper authorities, not handled quietly inside a church. If a child is in danger, or you know of a child being harmed, contact the police or your local child protection service now. If you were harmed as a child, what was done to you was wrong, and it was not your fault. The Find Help page on this site lists places to turn.\n\nProverbs also has sayings about a quarrelsome wife (19:13; 21:9). They are not a comment on women in general: the very next saying after 19:13 calls a prudent wife a gift from the LORD (19:14). They are a frank picture of a home without peace, and the book warns just as plainly about the angry man (22:24; 29:22). They are not a license to despise anyone, and they do not tell anyone to stay where they are in danger."
+      },
+      {
+        "id": "end",
+        "h": "Agur, Lemuel, and the woman of strength",
+        "body": "The last two chapters bring new voices. Agur begins humbly, ‘I am weary, O God, and worn out’ (30:1), confesses how little he knows, and asks God for a modest life: ‘Give me neither poverty nor riches; feed me with the bread that is my portion’ (30:8). His sayings count things up, three things and four, and look closely at creatures such as the ant and the rock badger. Lemuel's mother warns her son against wasting his strength on women and wine, and charges him to speak for the poor.\n\nThe book ends with a poem in praise of a woman of strength. ‘A wife of noble character, who can find? She is far more precious than rubies’ (31:10). The word behind ‘noble character’, chayil, is often used of strength, valor and even an army. She buys a field, plants a vineyard, trades cloth, provides for her household and opens her hand to the poor. Her husband and children praise her.\n\nReaders take the poem in several ways: as a portrait of an ideal wife, as Wisdom from chapters 1 to 9 now living in a real household, or as both. In Jewish homes it is traditionally sung by husbands to their wives at the Sabbath meal, as praise rather than a checklist.\n\nWhatever reading one takes, the poem is praise, not a standard any woman must meet. Its twenty-two verses gather many excellences into one picture, and turning it into a burden would misuse it. Its heart is verse 30: “Charm is deceptive and beauty is fleeting, but a woman who fears the LORD is to be praised.” The fear of the LORD, where the book began, is open to every believer, married or single, woman or man."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads Proverbs",
+        "body": "The New Testament quotes Proverbs several times. Hebrews 12:5-6 takes up 3:11-12 on the LORD's discipline and applies it to believers who are suffering: “For the Lord disciplines the one He loves” (Hebrews 12:6). James and Peter both quote 3:34 in its Greek form: “God opposes the proud, but gives grace to the humble” (James 4:6; 1 Peter 5:5). Paul quotes 25:21-22, “If your enemy is hungry, feed him” (Romans 12:20). Peter quotes 11:31 in its Greek form, “If it is hard for the righteous to be saved, what will become of the ungodly and the sinner?” (1 Peter 4:18), and 2 Peter uses 26:11: “A dog returns to its vomit” (2 Peter 2:22). When Peter writes that ‘love covers over a multitude of sins’ (1 Peter 4:8), he echoes 10:12.\n\nThe New Testament also speaks of Christ in the language of wisdom. Paul calls Christ ‘the power of God and the wisdom of God’ (1 Corinthians 1:24), and says that in him ‘are hidden all the treasures of wisdom and knowledge’ (Colossians 2:3). Jesus said of himself, ‘now One greater than Solomon is here’ (Matthew 12:42). And, as the part on chapter 8 says above, the New Testament's language about Christ as the one through whom all things were made draws on the picture of Wisdom at creation, though the chapter itself is poetry about God's wisdom and not a prophecy.\n\nThese notes keep to the lines the New Testament draws, and do not add others."
+      },
+      {
+        "id": "reading",
+        "h": "How to read Proverbs",
+        "body": "Read Proverbs as proverbs. A proverb is a short observation about how life usually goes under God, not a promise for every case and not a law for every situation. When two sayings seem to pull against each other, as 26:4 and 26:5 do, the book is asking for judgment, not offering a contradiction.\n\nRead it slowly. Many readers take one chapter a day, which fits a book of thirty-one chapters. Take a few sayings at a time, and ask which one fits the day in front of you.\n\nWatch for the two paths and the two women of the opening chapters, for the cast of the simple, the fool, the mocker, the slacker and the righteous, and for the way each saying's second line answers the first.\n\nRead it beside Job and Ecclesiastes. Proverbs without them can turn into a formula that blames the suffering and the poor. With them, it is what it was meant to be: a patient training in the fear of the LORD, for the ordinary days that make up most of a life."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 26,
+        "ref": "1:24-28",
+        "line": "Wisdom laughs at the calamity of those who refused her. A prophet's warning in poetry, spoken while there is still time to turn."
+      },
+      {
+        "ch": 3,
+        "v": 2,
+        "ref": "3:1-10",
+        "line": "Long life and full barns for those who trust the LORD: the usual fruit of wisdom, not a guarantee against loss."
+      },
+      {
+        "ch": 5,
+        "v": 3,
+        "ref": "5:1-23",
+        "line": "The forbidden woman. The warning is written to a son, but the danger it names belongs to both sexes, and the book teaches no contempt for women."
+      },
+      {
+        "ch": 6,
+        "v": 1,
+        "ref": "6:1-5",
+        "line": "Getting free from a pledge for another's debt: wise caution about rash promises, not a ban on helping anyone."
+      },
+      {
+        "ch": 8,
+        "v": 22,
+        "ref": "8:22-31",
+        "line": "‘The LORD created me’. Poetry about God's wisdom, and a battleground in the fourth century over whether the Son was created."
+      },
+      {
+        "ch": 10,
+        "v": 4,
+        "ref": "10:4",
+        "line": "Idle hands make one poor. A pattern for the reader's own habits, never a verdict that the poor deserve their poverty (13:23)."
+      },
+      {
+        "ch": 13,
+        "v": 24,
+        "ref": "13:24",
+        "line": "The rod and the son. Faithful parents read it in two ways; neither reading gives anyone a warrant to harm a child."
+      },
+      {
+        "ch": 16,
+        "v": 4,
+        "ref": "16:4",
+        "line": "The LORD made even the wicked for the day of disaster: nothing escapes his purpose, not that he creates anyone in order to destroy them."
+      },
+      {
+        "ch": 17,
+        "v": 8,
+        "ref": "17:8",
+        "line": "A bribe works like a charm in the eyes of the one who gives it. An observation, condemned elsewhere in the book (17:23)."
+      },
+      {
+        "ch": 21,
+        "v": 9,
+        "ref": "21:9",
+        "line": "A quarrelsome wife. A picture of a home full of strife, not a license to despise anyone or a reason to stay in danger."
+      },
+      {
+        "ch": 22,
+        "v": 6,
+        "ref": "22:6",
+        "line": "Train up a child. How things usually go, not a promise that blames parents whose grown children walk away."
+      },
+      {
+        "ch": 23,
+        "v": 13,
+        "ref": "23:13-14",
+        "line": "Strike him with a rod. Read with 13:24: correction instead of neglect, in readings that differ, and never a warrant for harm."
+      },
+      {
+        "ch": 26,
+        "v": 4,
+        "ref": "26:4-5",
+        "line": "Do not answer a fool, and answer a fool: two true sayings set side by side, and wisdom knows which one the moment needs."
+      },
+      {
+        "ch": 29,
+        "v": 18,
+        "ref": "29:18",
+        "line": "Where there is no vision, the people cast off restraint. Vision here is God's word to his people, not a plan for the future."
+      },
+      {
+        "ch": 30,
+        "v": 4,
+        "ref": "30:4",
+        "line": "What is the name of his Son? Read as Israel, as an ironic challenge, or as a glimpse that later Scripture takes up."
+      },
+      {
+        "ch": 31,
+        "v": 10,
+        "ref": "31:10-31",
+        "line": "The woman of noble character: praise, not a standard every woman must meet. Its heart is the fear of the LORD (31:30)."
+      }
+    ],
+    "words": [
+      {
+        "word": "mashal",
+        "line": "A proverb, comparison or parable. It sets one thing beside another so that a pattern in life becomes visible (1:1)."
+      },
+      {
+        "word": "yirah",
+        "line": "Fear. The fear of the LORD is reverence, awe and trust that shows itself in obedience, the beginning of knowledge (1:7; 9:10)."
+      },
+      {
+        "word": "chokmah",
+        "line": "Wisdom: the skill of a craftsman, the insight of a wise adviser, and above all the art of living rightly in God's world (1:2)."
+      },
+      {
+        "word": "peti",
+        "line": "The simple: naive, inexperienced, open like a door anyone can walk through. Not yet a fool, and able to go either way (1:4, 22)."
+      },
+      {
+        "word": "kesil",
+        "line": "The fool: not someone lacking intelligence but someone settled in folly, who will not learn (1:22; 26:1-12)."
+      },
+      {
+        "word": "luts",
+        "line": "To mock or scoff. The mocker sneers at correction and so cannot be taught (9:7-8)."
+      },
+      {
+        "word": "atsel",
+        "line": "The slacker or sluggard, who will not start, will not finish, and always has an excuse (6:6-11; 26:13-16)."
+      },
+      {
+        "word": "musar",
+        "line": "Discipline or instruction: teaching and correction together. For Proverbs, being teachable and being correctable are one virtue (1:2; 12:1)."
+      },
+      {
+        "word": "shevet",
+        "line": "Rod, staff or scepter: a shepherd's staff, a ruler's scepter, an instrument of correction. Proverbs uses it of fools as well as sons (13:24; 26:3)."
+      },
+      {
+        "word": "lev",
+        "line": "The heart: the center of thought, will and desire, not only of feeling. “Guard your heart with all diligence” (4:23)."
+      },
+      {
+        "word": "chesed",
+        "line": "Loving devotion, steadfast love, kindness, or loyalty. Bound with faithfulness around the neck (3:3)."
+      },
+      {
+        "word": "tsaddiq",
+        "line": "Righteous: a person in right relationship with God and neighbor, set against the wicked throughout the sayings (10:1-32)."
+      },
+      {
+        "word": "qanah",
+        "line": "To acquire, buy or possess, and in a few places to create. ‘Get wisdom’ (4:5), and the much-debated verb of 8:22."
+      },
+      {
+        "word": "to'evah",
+        "line": "Something detestable or an abomination to the LORD, such as dishonest scales and haughty eyes (6:16; 11:1)."
+      },
+      {
+        "word": "chayil",
+        "line": "Strength, capability, wealth or valor. The woman of noble character is an eshet chayil, a woman of strength (31:10)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 1300 to 1075 BC",
+        "what": "The Egyptian Instruction of Amenemope is written, an official's advice to his son in thirty chapters, close to Proverbs 22:17 to 23:11.",
+        "kind": "world"
+      },
+      {
+        "when": "About 970 to 931 BC",
+        "what": "Solomon reigns. He asks God for wisdom, and he composes three thousand proverbs (1 Kings 3; 4:32).",
+        "kind": "story"
+      },
+      {
+        "when": "The tenth century BC onward",
+        "what": "Some sayings may go back to Solomon's day. Proverbs pass from mouth to mouth for generations before they are written.",
+        "kind": "book"
+      },
+      {
+        "when": "Around 715 to 686 BC",
+        "what": "Hezekiah reigns in Judah. His men copy further proverbs of Solomon, now chapters 25 to 29 (25:1).",
+        "kind": "book"
+      },
+      {
+        "when": "Before the exile, on one view",
+        "what": "Some scholars place the finished book in the last years of the kings of Judah.",
+        "kind": "book"
+      },
+      {
+        "when": "The 400s or 300s BC, on another view",
+        "what": "Many place the book's final editing after the exile, in the Persian period, often with chapters 1 to 9 among the last parts.",
+        "kind": "book"
+      },
+      {
+        "when": "The fifth century BC",
+        "what": "An Aramaic papyrus of the Words of Ahiqar is copied at Elephantine in Egypt: a sage's sayings and story, with parallels to proverbs on discipline and speech.",
+        "kind": "world"
+      },
+      {
+        "when": "The mid-40s to about AD 62",
+        "what": "The letter of James, if James the brother of Jesus wrote it, quotes Proverbs 3:34 (James 4:6). Others date the letter later.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 57",
+        "what": "Paul writes Romans and quotes Proverbs 25:21-22 (Romans 12:20).",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 60 to 90",
+        "what": "Hebrews is written, most often dated in the 60s, and applies Proverbs 3:11-12 to suffering believers (Hebrews 12:5-6).",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 62 to 64",
+        "what": "1 Peter, if Peter wrote it, quotes Proverbs 3:34 and 11:31 (1 Peter 5:5; 4:18). Others date the letter later.",
+        "kind": "book"
+      },
+      {
+        "when": "AD 325",
+        "what": "The Council of Nicaea confesses the Son begotten, not made, after a long argument in which Proverbs 8:22 was a key text.",
+        "kind": "world"
+      },
+      {
+        "when": "1924",
+        "what": "Adolf Erman shows that Proverbs 22:17 to 23:11 closely parallels the Instruction of Amenemope.",
+        "kind": "world"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "The one place on this map",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "1:1",
+              "25:1"
+            ],
+            "line": "Proverbs names no place in the land. Its headings name two kings who reigned here: Solomon son of David (1:1) and Hezekiah king of Judah, whose men copied Solomon's proverbs (25:1).",
+            "label": {
+              "dx": 10,
+              "dy": -6,
+              "anchor": "start"
+            }
+          }
+        ]
+      }
+    ],
+    "mapNote": "Proverbs names no place in the land, so the map shows only Jerusalem, where the kings named in its headings reigned. Egypt, named once for its colored linen (7:16), lies beyond the edge of this map. Massa (30:1; 31:1), if it is a place at all, is not placed in this site's records and is left off. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-wisdom",
+        "name": "Reading the Wisdom Books",
+        "line": "What a proverb is and is not, and how Proverbs, Job and Ecclesiastes argue",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-poetry",
+        "name": "Reading Hebrew Poetry",
+        "line": "For the two-line sayings and the poems of chapters 1 to 9",
+        "icon": "scroll"
+      },
+      {
+        "href": "/tools/wisdom-books",
+        "name": "The Wisdom Books Explorer",
+        "line": "Every verse of Proverbs gathered by theme",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/wisdom",
+        "name": "Wisdom",
+        "line": "What the whole Bible says, from Proverbs to Christ",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/family",
+        "name": "Marriage, Family, and Sexuality",
+        "line": "The home Proverbs pictures, and the warnings of chapters 5 to 7",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/wealth",
+        "name": "Money and Possessions",
+        "line": "Wealth as a real good, and always a lesser one",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/justice-poor",
+        "name": "Justice, the Poor, and the Stranger",
+        "line": "The God who is Maker of rich and poor alike",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/work",
+        "name": "Work and Vocation",
+        "line": "The ant, the slacker, and the skilled worker",
+        "icon": "book"
+      },
+      {
+        "href": "/wisdom/parenting-struggles",
+        "name": "Parenting Struggles",
+        "line": "Where Christians differ on the rod, stated fairly",
+        "icon": "people"
+      },
+      {
+        "href": "/wisdom/gossip-and-the-tongue",
+        "name": "Gossip and the Tongue",
+        "line": "The book's most frequent subject, taken to the whole Bible",
+        "icon": "people"
+      },
+      {
+        "href": "/help/parenting",
+        "name": "Parenting is harder than anyone said",
+        "line": "The Find Help page for parents worn out or worried",
+        "icon": "people"
+      }
+    ]
+  }
 }

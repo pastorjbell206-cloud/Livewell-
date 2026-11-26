@@ -353,6 +353,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Revelation in seven moving pictures, with nothing to frighten: what it is, how it is laid out, the throne, the Lamb, the ways Christians read its visions, all things made new, and where to start reading.",
     },
+    "book-ruth": {
+      title: "Ruth: loyal love in a hard time: Bible Explorer",
+      description:
+        "The whole book of Ruth in seven moving pictures: what it is, how its four scenes are laid out, loyal love, God at work in ordinary days, the redeemer, the surprise at the end, and where to start reading.",
+    },
+    "book-jonah": {
+      title: "Jonah: the prophet who ran from mercy: Bible Explorer",
+      description:
+        "The whole book of Jonah in seven moving pictures: what it is, how its four chapters are laid out, a God whom wind and sea obey, down and up again, the city that turned, the question at the end, and where to start reading.",
+    },
+    "book-daniel": {
+      title: "Daniel: the Most High rules: Bible Explorer",
+      description:
+        "The whole book of Daniel in seven moving pictures, told gently: what it is, how it is laid out, the Most High who rules the kingdoms, faith that will not bow, Daniel at his window, one like a son of man, and where to start reading.",
+    },
+    "book-1-corinthians": {
+      title: "1 Corinthians: a gifted church, coming apart: Bible Explorer",
+      description:
+        "The whole of 1 Corinthians in seven moving pictures: a real letter to a real church, its two halves, the wisdom of the cross, one body with many parts, the way of love, raised from the dead, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
