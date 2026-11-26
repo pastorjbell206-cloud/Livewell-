@@ -1,8 +1,8 @@
 /**
  * /preview/home, the homepage preview (James, 2026-11-26): every link it
- * shows is a real catalogue page, the eight disciplines each open in two
- * steps from the preview menu, nothing planned is linked, and the page says
- * noindex and leaves the live homepage alone.
+ * shows is a real page, the eight disciplines open as an atlas (one at a
+ * time, by click or by arrow key) and from the preview menu, nothing planned
+ * is linked, and the page says noindex and leaves the live homepage alone.
  */
 import { describe, it, expect } from "vitest";
 import { screen, fireEvent, within } from "@testing-library/react";
@@ -22,15 +22,27 @@ describe("/preview/home", () => {
     expect(screen.getByRole("heading", { level: 1, name: "Know what you believe. Understand why. Learn to live it." })).toBeTruthy();
   });
 
-  it("builds each of the eight disciplines only from pages in the catalogue", () => {
+  it("opens each of the eight disciplines in the atlas, one at a time, by click or arrow key", () => {
     expect(DISCIPLINES).toHaveLength(8);
     for (const d of DISCIPLINES) expect(d.doors.length, d.name).toBeGreaterThan(0);
     renderWithProviders(<PreviewHome />);
-    const explore = screen.getByRole("region", { name: "Eight ways in" });
-    for (const d of DISCIPLINES) expect(within(explore).getByRole("heading", { level: 3, name: d.name })).toBeTruthy();
+    const atlas = screen.getByRole("region", { name: "Eight ways in" });
+    const tabs = within(atlas).getAllByRole("tab");
+    expect(tabs.map((t) => t.querySelector(".pv-atlas__tn")?.textContent)).toEqual(DISCIPLINES.map((d) => d.name));
+    expect(tabs[0]).toHaveAttribute("aria-selected", "true");
+    DISCIPLINES.forEach((d, i) => {
+      fireEvent.click(tabs[i]);
+      const panel = within(atlas).getByRole("tabpanel");
+      expect(within(panel).getByRole("heading", { level: 3, name: d.name })).toBeTruthy();
+      expect(within(panel).getAllByRole("listitem")).toHaveLength(d.doors.length);
+    });
+    fireEvent.keyDown(tabs[7], { key: "ArrowDown" });
+    expect(tabs[0]).toHaveAttribute("aria-selected", "true");
+    fireEvent.keyDown(tabs[0], { key: "End" });
+    expect(tabs[7]).toHaveAttribute("aria-selected", "true");
   });
 
-  it("opens any discipline in two steps from the preview menu", () => {
+  it("lists the eight disciplines from the preview menu", () => {
     renderWithProviders(<PreviewHome />);
     const nav = screen.getByRole("navigation", { name: "Proposed navigation (preview)" });
     const explore = within(nav).getByRole("button", { name: "Explore" });
@@ -38,8 +50,8 @@ describe("/preview/home", () => {
     fireEvent.click(explore);
     expect(explore).toHaveAttribute("aria-expanded", "true");
     const items = within(nav).getAllByRole("listitem");
-    expect(items.map((li) => li.querySelector("a span")?.textContent)).toEqual(DISCIPLINES.map((d) => d.name));
-    for (const li of items) expect(li.querySelector("a")?.getAttribute("href")).toBeTruthy();
+    expect(items.map((li) => li.querySelector(".pv-nav__dn")?.textContent)).toEqual(DISCIPLINES.map((d) => d.name));
+    expect(items.map((li) => li.querySelector("a")?.getAttribute("href"))).toEqual(DISCIPLINES.map((d) => `#atlas-${d.id}`));
   });
 
   it("links only to real pages: catalogue entries, tracks, essays on the shelf and the shelf books", () => {
@@ -55,7 +67,8 @@ describe("/preview/home", () => {
         /^\/tracks\/[a-z-]+$/.test(href) ||
         /^\/writing\/[a-z0-9-]+$/.test(href) ||
         /^\/books\/[a-z-]+$/.test(href) ||
-        ["/tracks", "/tools", "/family", "/studyguides", "/writing", "/subscribe", "/about", "/support"].includes(href);
+        /^\/start#[a-z-]+$/.test(href) ||
+        ["/tracks", "/tools", "/family", "/studyguides", "/writing", "/subscribe", "/about", "/support", "/explore", "/help", "/help/doubt", "/study/films", "/study/bible", "/theology/history"].includes(href);
       expect(real, href).toBe(true);
     }
   });
@@ -63,7 +76,7 @@ describe("/preview/home", () => {
   it("names planned Academy paths without linking any of them", () => {
     renderWithProviders(<PreviewHome />);
     const paths = screen.getByRole("region", { name: "More than one page at a time" });
-    expect(paths).toHaveTextContent("Planned for the Academy:");
+    expect(paths).toHaveTextContent("Planned for the Academy");
     expect(paths).toHaveTextContent("Not available yet.");
     expect(within(paths).queryByRole("link", { name: /Systematic theology/ })).toBeNull();
   });

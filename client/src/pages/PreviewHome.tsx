@@ -2,31 +2,42 @@
  * /preview/home: a PREVIEW of a reorganised LiveWell homepage, for James to
  * compare with the one that is live. James, 2026-11-26: "keep like the same
  * design and same kind of like images ... not radically change the site ...
- * do this as a preview to see if it would be any better."
+ * do this as a preview to see if it would be any better"; then, of the first
+ * draft: "It looks really blocky ... designed like one of the best websites
+ * in the world."
  *
- * It answers his platform brief (docs/work/elite/livewell-platform-plan.md):
- * one tagline, eight disciplines, series, learning paths, tools, hard
- * questions, publications, families and churches, all on the site's own
- * tokens, fonts and engraved plates. Nothing here is new content: every link,
- * name and count is read from the site catalogue (lib/siteCatalog.ts), the
- * essay shelf (lib/shelf.json) or the book shelf (lib/bookShelf.ts). What the
- * brief asks for that the site does not have yet (Academy courses, accounts,
- * certificates) is labelled "Planned" and links nowhere.
+ * So this is the live homepage's own gallery (the engraved plates, the ink
+ * frames, the pieces a reader can touch: the shelf of 66 books, the hard
+ * question, the timeline) arranged around the platform brief
+ * (docs/work/elite/livewell-platform-plan.md). Its one new instrument is the
+ * atlas: the brief's eight disciplines as a contents page, one open at a
+ * time, each made only of pages the site already has. Every name, line and
+ * count is read from the site catalogue (lib/siteCatalog.ts), the essay
+ * shelf, the book shelf or the Explorer's films. What the brief asks for that
+ * does not exist yet (Academy courses) is named as planned and links nowhere.
  *
  * Held: noindex, in no menu, not in the sitemap or search index. The live
- * homepage and header are untouched. Deleting this file and its route
- * removes the preview entirely.
+ * homepage and header are untouched. Deleting this file, pages/preview/ and
+ * the route removes the preview entirely.
  */
-import { useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import { Link } from "wouter";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, LifeBuoy } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
-import Plate from "@/components/art/Plate";
-import type { PlateName } from "@/components/art/Plate";
+import Plate, { type PlateName } from "@/components/art/Plate";
+import PlateFrame from "@/components/art/PlateFrame";
+import RoadPlate from "@/components/art/RoadPlate";
+import { useNear } from "@/components/art/useNear";
 import { entryById, type CatalogEntry } from "@/lib/siteCatalog";
+import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
 import { BOOK_SHELF } from "@/lib/bookShelf";
-import { SHELF_ESSAYS, isPublicEssay } from "@/lib/shelf";
+import { followHash } from "@/lib/followHash";
+import HomeFind from "./home/HomeFind";
+import HomeLatest from "./home/HomeLatest";
+import { ROAD_CHIPS } from "./home/roadChips";
+import "./home/home.css";
+import "./preview/preview.css";
 
 /** A catalogue entry by id; the preview fails loudly in tests if an id is gone. */
 const E = (id: string): CatalogEntry => {
@@ -34,63 +45,87 @@ const E = (id: string): CatalogEntry => {
   if (!e) throw new Error(`preview: no catalogue entry "${id}"`);
   return e;
 };
-const count = (e: CatalogEntry) => (e.count ? `${e.count.n} ${e.count.of}` : "");
 
 /** The eight disciplines of the brief, each made of pages the site already has. */
-export const DISCIPLINES: { name: string; line: string; plate: PlateName; doors: string[] }[] = [
-  { name: "Bible", line: "Every book with notes, the films, the atlas and the world it was written in.", plate: "book", doors: ["bible.read", "bible.films", "bible.background", "bible.how-to-study"] },
-  { name: "Theology", line: "What Christians believe, where they differ, and the words they use.", plate: "lectern", doors: ["questions.believe", "questions.differ", "questions.glossary", "history.creeds"] },
-  { name: "Church history", line: "Two thousand years, told in order, with the people and the councils.", plate: "basilica", doors: ["history.course", "history.people", "history.traditions", "history.timeline"] },
-  { name: "Apologetics", line: "The case for the faith, weighed fairly, with the objections at full strength.", plate: "lens", doors: ["questions.case", "questions.skeptics", "questions.claims"] },
-  { name: "Christianity and culture", line: "How every age and place reads the Bible, and the nation's claims on the church.", plate: "arch", doors: ["history.reading", "questions.nation", "history.injustice"] },
-  { name: "Difficult questions", line: "Suffering, hell, doubt, silence: honest answers that do not hurry.", plate: "lantern", doors: ["questions.answers", "questions.more"] },
-  { name: "Christian living", line: "Marriage, work, money, grief and prayer, by subject and in practice.", plate: "house", doors: ["questions.life", "questions.wisdom", "questions.how-tos"] },
-  { name: "Church and leadership", line: "Group studies, leader guides and booklets on elders and government.", plate: "table", doors: ["tools.groups", "tools.booklets", "tools.plans"] },
+export const DISCIPLINES: { id: string; name: string; line: string; plate: PlateName; doors: string[] }[] = [
+  { id: "bible", name: "Bible", line: "Every book with notes beside the text, the films, the atlas, and the world the Bible was written in.", plate: "book", doors: ["bible.read", "bible.films", "bible.background", "bible.how-to-study"] },
+  { id: "theology", name: "Theology", line: "What Christians confess, where faithful churches differ, and the words the church has used for both.", plate: "lectern", doors: ["questions.believe", "questions.differ", "questions.glossary", "history.creeds"] },
+  { id: "history", name: "Church history", line: "Two thousand years told in order, with the people, the councils and the quarrels that shaped them.", plate: "basilica", doors: ["history.course", "history.people", "history.traditions", "history.timeline"] },
+  { id: "apologetics", name: "Apologetics", line: "The case for the faith, weighed fairly, with the objections stated at full strength first.", plate: "lens", doors: ["questions.case", "questions.skeptics", "questions.claims"] },
+  { id: "culture", name: "Christianity and culture", line: "How every age and place has read the Bible, and what the nation asks of the church.", plate: "arch", doors: ["history.reading", "questions.nation", "history.injustice"] },
+  { id: "questions", name: "Difficult questions", line: "Suffering, hell, doubt and the silence of God, answered honestly and without hurry.", plate: "lantern", doors: ["questions.answers", "questions.more"] },
+  { id: "living", name: "Christian living", line: "Marriage, work, money, grief and prayer, by subject and in practice.", plate: "house", doors: ["questions.life", "questions.wisdom", "questions.how-tos"] },
+  { id: "church", name: "Church and leadership", line: "Group studies with leader guides, and booklets on elders, government and change.", plate: "table", doors: ["tools.groups", "tools.booklets", "tools.plans"] },
 ];
 
-/** Series the site already has in full. */
-const SERIES: { id: string; kind: string; plate: PlateName }[] = [
-  { id: "bible.films", kind: "Films", plate: "book" },
-  { id: "history.course", kind: "Course · 14 lessons", plate: "basilica" },
-  { id: "history.reading", kind: "Essays · 6 eras", plate: "arch" },
-  { id: "bible.story", kind: "The whole story", plate: "tree" },
-  { id: "questions.answers", kind: "Answers", plate: "lantern" },
-  { id: "tools.groups", kind: "Group studies", plate: "table" },
-];
+/** What is here, by the catalogue's own counts. */
+const LEDGER = ["bible.read", "bible.films", "questions.answers", "questions.life", "tools.groups", "family.catechism"];
 
-/** Learning paths that exist today (the tracks and the history course), and those the brief plans. */
-const PATHS_NOW: { name: string; href: string; line: string }[] = [
-  { name: "New to faith, or coming back", href: "/tracks/new-to-this", line: "Short sessions in order, each about ten minutes." },
-  { name: "Weigh the case for yourself", href: "/tracks/skeptical", line: "For the skeptic: the evidence, one step at a time." },
-  { name: "Your questions, taken seriously", href: "/tracks/stepped-back", line: "For the Christian who has stepped back." },
-  { name: "Study, history, doctrine", href: "/tracks/deeper", line: "For going deeper into the faith's foundations." },
-  { name: "Deep in one: the Gospel of Mark", href: "/tracks/mark", line: "A whole book, read slowly." },
-  { name: "Church history, in order", href: "/theology/history#course", line: "Fourteen lessons from the apostles to today." },
+/** Learning paths that exist today, in the order a reader might walk them. */
+const PATHS: { name: string; href: string; who: string }[] = [
+  { name: "New to faith, or coming back", href: "/tracks/new-to-this", who: "For someone starting, or starting again" },
+  { name: "Weigh the case for yourself", href: "/tracks/skeptical", who: "For the skeptic, with the case against stated first" },
+  { name: "Your questions, taken seriously", href: "/tracks/stepped-back", who: "For the Christian who has stepped back" },
+  { name: "Study, history, doctrine", href: "/tracks/deeper", who: "For going down to the foundations" },
+  { name: "Deep in one: the Gospel of Mark", href: "/tracks/mark", who: "A whole book, read slowly" },
+  { name: "Church history, in order", href: "/theology/history#course", who: "Fourteen lessons, the apostles to today" },
 ];
 const PATHS_PLANNED = ["Old Testament survey", "New Testament survey", "Systematic theology", "Christian ethics", "Church leadership"];
 
 const TOOLS = ["bible.search", "bible.word", "bible.cross-references", "bible.timeline", "bible.atlas", "questions.which-view"];
-const QUESTIONS = ["faq.does-god-exist", "faq.hell", "faq.science-faith", "faq.deconstruction", "faq.religious-trauma", "faq.bible-accurate"];
 
-/** The first four public essays on the shelf, in the shelf's own order. */
-const LATEST = SHELF_ESSAYS.filter((e) => isPublicEssay(e.slug)).slice(0, 4);
+const count = (e: CatalogEntry) => (e.count ? `${e.count.n} ${e.count.of}` : "");
 
-const wrap = { maxWidth: "var(--w-default)", margin: "0 auto" } as const;
-const h2 = { fontFamily: "var(--F)", fontSize: "var(--fs-h2)", fontWeight: 400, letterSpacing: "-0.015em", color: "var(--ink)", marginBottom: "var(--s-2)" } as const;
-const lede = { fontFamily: "var(--B)", fontSize: "17px", lineHeight: 1.7, color: "var(--ink-muted)", maxWidth: "62ch", marginBottom: "var(--s-4)" } as const;
-const grid = (min: number) => ({ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "14px", gridTemplateColumns: `repeat(auto-fill, minmax(min(100%, ${min}px), 1fr))` }) as const;
-const card = { display: "block", height: "100%", textDecoration: "none", padding: "var(--s-3)" } as const;
-const cardTitle = { display: "block", fontFamily: "var(--F)", fontSize: "23px", fontWeight: 500, lineHeight: 1.2, color: "var(--ink)" } as const;
-const cardLine = { display: "block", fontFamily: "var(--B)", fontSize: "15px", lineHeight: 1.6, color: "var(--ink-muted)", marginTop: "6px" } as const;
-const section = (tone: "bone" | "warm" | "dark") => ({
-  background: tone === "dark" ? "var(--charcoal)" : tone === "warm" ? "var(--bone-warm)" : "var(--bone)",
-  color: tone === "dark" ? "var(--charcoal-fg)" : "var(--ink)",
-  padding: "var(--s-6) var(--gutter)",
-});
+/* The things to touch, each its own chunk, as on the live homepage. */
+const BibleShelf = lazy(() => import("./home/BibleShelf"));
+const QuestionPicker = lazy(() => import("./home/QuestionPicker"));
+const HistoryStrip = lazy(() => import("./home/HistoryStrip"));
+const PreviewFilms = lazy(() => import("./preview/PreviewFilms"));
 
-/** The proposed primary navigation: Explore opens the eight disciplines (two interactions to any of them). */
+/** A box that holds the piece's height until the piece arrives, loaded as it nears the screen. */
+function Piece({ name, children }: { name: string; children: ReactNode }) {
+  const [ref, near] = useNear<HTMLDivElement>();
+  return (
+    <div ref={ref} className={`home-piece home-piece--${name}`}>
+      {near && <Suspense fallback={null}>{children}</Suspense>}
+    </div>
+  );
+}
+
+function Head({ eyebrow, title, id, link, lede }: { eyebrow: string; title: string; id: string; link?: { href: string; label: string }; lede?: string }) {
+  return (
+    <div className="home-head pv-head">
+      <div>
+        <p className="home-eyebrow">{eyebrow}</p>
+        <h2 id={id} className="home-h2">
+          {title}
+        </h2>
+        {lede && <p className="pv-lede">{lede}</p>}
+      </div>
+      {link && (
+        <Link href={link.href} className="home-tlink">
+          {link.label} <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+        </Link>
+      )}
+    </div>
+  );
+}
+
+/** The proposed primary navigation: Explore opens the eight disciplines (two steps to any of them). */
 function PreviewNav() {
   const [open, setOpen] = useState(false);
+  const box = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const key = (e: globalThis.KeyboardEvent) => e.key === "Escape" && setOpen(false);
+    const away = (e: MouseEvent) => box.current && !box.current.contains(e.target as Node) && setOpen(false);
+    document.addEventListener("keydown", key);
+    document.addEventListener("mousedown", away);
+    return () => {
+      document.removeEventListener("keydown", key);
+      document.removeEventListener("mousedown", away);
+    };
+  }, [open]);
   const items: [string, string][] = [
     ["Academy", "/tracks"],
     ["Bible tools", "/tools"],
@@ -99,36 +134,125 @@ function PreviewNav() {
     ["Publishing", "/writing"],
   ];
   return (
-    <nav aria-label="Proposed navigation (preview)" style={{ background: "var(--card)", borderBottom: "1px solid var(--border)", padding: "0 var(--gutter)" }}>
-      <div style={{ ...wrap, display: "flex", flexWrap: "wrap", alignItems: "center", gap: "4px 22px", minHeight: "56px" }}>
-        <span className="eyebrow" style={{ marginRight: "8px" }}>Preview menu</span>
-        <button type="button" aria-expanded={open} onClick={() => setOpen((o) => !o)} style={{ display: "inline-flex", alignItems: "center", gap: "4px", minHeight: "44px", background: "none", border: "none", cursor: "pointer", fontFamily: "var(--U)", fontSize: "15px", fontWeight: 500, color: "var(--ink)", padding: 0 }}>
-          Explore <ChevronDown size={16} aria-hidden style={{ transform: open ? "rotate(180deg)" : "none" }} />
+    <nav ref={box} aria-label="Proposed navigation (preview)" className="pv-nav">
+      <div className="pv-nav__bar">
+        <span className="pv-nav__tag">Proposed menu</span>
+        <button type="button" className="pv-nav__item" aria-expanded={open} aria-controls="pv-nav-panel" onClick={() => setOpen((o) => !o)}>
+          Explore <ChevronDown size={16} aria-hidden="true" className="pv-nav__chev" />
         </button>
         {items.map(([name, href]) => (
-          <Link key={name} href={href} style={{ fontFamily: "var(--U)", fontSize: "15px", fontWeight: 500, color: "var(--ink)", textDecoration: "none", minHeight: "44px", display: "inline-flex", alignItems: "center" }}>
+          <Link key={name} href={href} className="pv-nav__item">
             {name}
           </Link>
         ))}
       </div>
-      {open && (
-        <div style={{ ...wrap, padding: "var(--s-3) 0 var(--s-4)" }}>
-          <ul style={grid(240)}>
-            {DISCIPLINES.map((d) => {
-              const first = E(d.doors[0]);
-              return (
-                <li key={d.name}>
-                  <Link href={first.href} style={{ display: "block", textDecoration: "none", padding: "10px 0" }}>
-                    <span style={{ ...cardTitle, fontSize: "19px" }}>{d.name}</span>
-                    <span style={{ ...cardLine, fontSize: "14px" }}>{d.line}</span>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      )}
+      <div id="pv-nav-panel" className="pv-nav__panel" hidden={!open}>
+        <ul className="pv-nav__grid">
+          {DISCIPLINES.map((d) => (
+            <li key={d.id}>
+              <a href={`#atlas-${d.id}`} className="pv-nav__d" onClick={() => setOpen(false)}>
+                <span className="pv-nav__plate">
+                  <Plate name={d.plate} decorative />
+                </span>
+                <span>
+                  <span className="pv-nav__dn">{d.name}</span>
+                  <span className="pv-nav__dl">{d.line}</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
+  );
+}
+
+/**
+ * The atlas: the eight disciplines as a contents page beside one open
+ * spread. Tabs in the WAI-ARIA pattern: arrows, Home and End move between
+ * them; a link to #atlas-<id> opens that one.
+ */
+function Atlas() {
+  const [at, setAt] = useState(0);
+  const tabs = useRef<(HTMLButtonElement | null)[]>([]);
+  useEffect(() => {
+    const fromHash = () => {
+      const i = DISCIPLINES.findIndex((d) => window.location.hash === `#atlas-${d.id}`);
+      if (i >= 0) {
+        setAt(i);
+        document.getElementById("explore")?.scrollIntoView?.({ behavior: "smooth", block: "start" });
+      }
+    };
+    fromHash();
+    window.addEventListener("hashchange", fromHash);
+    return () => window.removeEventListener("hashchange", fromHash);
+  }, []);
+  const move = (e: KeyboardEvent) => {
+    const last = DISCIPLINES.length - 1;
+    const keys: Record<string, number> = { ArrowDown: at + 1, ArrowRight: at + 1, ArrowUp: at - 1, ArrowLeft: at - 1, Home: 0, End: last };
+    const next = keys[e.key];
+    if (next === undefined) return;
+    e.preventDefault();
+    const i = (next + DISCIPLINES.length) % DISCIPLINES.length;
+    setAt(i);
+    tabs.current[i]?.focus();
+  };
+  const d = DISCIPLINES[at];
+  const pages = d.doors.map(E);
+  return (
+    <div className="pv-atlas">
+      <div role="tablist" aria-label="Disciplines" aria-orientation="vertical" className="pv-atlas__toc" onKeyDown={move}>
+        {DISCIPLINES.map((x, i) => (
+          <button
+            key={x.id}
+            ref={(el) => {
+              tabs.current[i] = el;
+            }}
+            type="button"
+            role="tab"
+            id={`pv-tab-${x.id}`}
+            aria-selected={i === at}
+            aria-controls="pv-atlas-panel"
+            tabIndex={i === at ? 0 : -1}
+            className="pv-atlas__tab"
+            onClick={() => setAt(i)}
+          >
+            <span className="pv-atlas__tn">{x.name}</span>
+            <span className="pv-atlas__tc">{x.doors.length} rooms</span>
+          </button>
+        ))}
+      </div>
+      <div role="tabpanel" id="pv-atlas-panel" aria-labelledby={`pv-tab-${d.id}`} className="pv-atlas__spread" key={d.id}>
+        <div className="pv-atlas__head">
+          <PlateFrame ratio="4 / 3" className="pv-atlas__art">
+            <Plate name={d.plate} decorative />
+          </PlateFrame>
+          <div>
+            <h3 className="pv-atlas__name">{d.name}</h3>
+            <p className="pv-atlas__line">{d.line}</p>
+          </div>
+        </div>
+        <ul className="pv-atlas__rooms">
+          {pages.map((p) => {
+            const Icon = ICONS[p.icon];
+            return (
+              <li key={p.id}>
+                <Link href={p.href} className="pv-room">
+                  <Icon aria-hidden="true" size={20} strokeWidth={ICON_STROKE} className="pv-room__icon" />
+                  <span className="pv-room__name">{p.name}</span>
+                  <span className="pv-room__line">{p.line}</span>
+                  {p.count && <span className="pv-room__count">{count(p)}</span>}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        <Link href={pages[0].href} className="home-btn pv-atlas__go">
+          Begin with {pages[0].name}
+          <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+        </Link>
+      </div>
+    </div>
   );
 }
 
@@ -141,75 +265,144 @@ export default function PreviewHome() {
         url="https://www.livewellbyjamesbell.co/preview/home"
         noindex
       />
-      <p role="note" style={{ background: "var(--bone-warm)", borderBottom: "1px solid var(--border)", margin: 0, padding: "10px var(--gutter)", fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink-muted)", textAlign: "center" }}>
+      <p role="note" className="pv-note">
         This is a preview for review. The live homepage is unchanged. <Link href="/">See the live homepage</Link>.
       </p>
       <PreviewNav />
 
-      {/* 1. HERO */}
-      <section style={{ ...section("bone"), padding: "var(--s-7) var(--gutter) var(--s-6)" }}>
-        <div style={{ ...wrap, display: "grid", gap: "var(--s-5)", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 380px), 1fr))", alignItems: "center" }}>
-          <div>
-            <p className="eyebrow">LiveWell · Christian education for everyday life</p>
-            <h1 style={{ fontFamily: "var(--F)", fontSize: "var(--fs-h1)", fontWeight: 400, letterSpacing: "-0.02em", lineHeight: 1.05, margin: "12px 0 var(--s-3)", maxWidth: "16ch" }}>
+      {/* THE HERO: the brief's promise, Find, the roads, and Plate I. */}
+      <section className="pv-hero" aria-labelledby="pv-title">
+        <div className="pv-hero__inner">
+          <div className="pv-hero__words">
+            <p className="home-eyebrow">Christian education for everyday life</p>
+            <h1 id="pv-title" className="pv-hero__title">
               Know what you believe. Understand why. Learn to live it.
             </h1>
-            <p style={lede}>Explore the Bible, theology, church history, apologetics and life's hardest questions, through careful, honest Christian teaching that anyone can follow.</p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-              <a className="btn" href="#explore">Start exploring</a>
-              <a className="btn btn--quiet" href="#paths">Browse learning paths</a>
-            </div>
+            <p className="pv-hero__line">
+              The Bible, theology, church history and life's hardest questions, taught carefully and honestly by a pastor who came to faith from atheism. Free to read, with nothing to sign up for.
+            </p>
+            <HomeFind />
+            <nav className="home-roads" aria-labelledby="pv-roads-label">
+              <p id="pv-roads-label" className="home-roads__label">
+                Start where you are
+              </p>
+              <ul className="home-roads__list">
+                {ROAD_CHIPS.map((r) => (
+                  <li key={r.id}>
+                    <Link href={r.href} className="home-road" onClick={() => followHash(r.href)}>
+                      {r.chip}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
-          <div style={{ maxWidth: "420px", justifySelf: "center", width: "100%" }}>
-            <Plate name="books" />
+          <PlateFrame className="pv-hero__art" ratio={null} number="Plate I" title="The road">
+            <RoadPlate />
+          </PlateFrame>
+        </div>
+        <ul className="pv-ledger" aria-label="What is on LiveWell">
+          {LEDGER.map(E).map((e) => (
+            <li key={e.id}>
+              <Link href={e.href} className="pv-ledger__item">
+                <span className="pv-ledger__n">{e.count?.n}</span>
+                <span className="pv-ledger__of">{e.count?.of}</span>
+                <span className="pv-ledger__where">{e.name}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* THE ATLAS: eight disciplines, one open at a time. */}
+      <section id="explore" className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-explore">
+        <div className="home-wrap">
+          <Head
+            id="pv-explore"
+            eyebrow="Explore the faith"
+            title="Eight ways in"
+            lede="Choose a discipline to see what is in it. Every room below is a page you can open today."
+            link={{ href: "/explore", label: "Everything on LiveWell" }}
+          />
+          <Atlas />
+        </div>
+      </section>
+
+      {/* THE FILMS */}
+      <section className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-films">
+        <div className="home-wrap">
+          <Head id="pv-films" eyebrow="Bible films" title="Press play on the whole story" lede="Short narrated films in the site's engraved hand: the big story, the books, the big ideas and the questions children ask." />
+          <Piece name="reel">
+            <PreviewFilms />
+          </Piece>
+        </div>
+      </section>
+
+      {/* LEARNING PATHS */}
+      <section id="paths" className="home-sec pv-sec" aria-labelledby="pv-paths">
+        <div className="home-wrap">
+          <Head id="pv-paths" eyebrow="The Academy" title="More than one page at a time" lede="Paths of short sessions, walked in order, about ten minutes each. Your place is kept on this device." link={{ href: "/tracks", label: "Every path" }} />
+          <ol className="pv-road">
+            {PATHS.map((p) => (
+              <li key={p.href} className="pv-road__stop">
+                <Link href={p.href} className="pv-road__link">
+                  <span className="pv-road__dot" aria-hidden="true" />
+                  <span className="pv-road__name">{p.name}</span>
+                  <span className="pv-road__who">{p.who}</span>
+                </Link>
+              </li>
+            ))}
+          </ol>
+          <p className="pv-planned">
+            <span className="pv-planned__label">Planned for the Academy</span>
+            {PATHS_PLANNED.join(", ")}. Not available yet.
+          </p>
+        </div>
+      </section>
+
+      {/* A HARD QUESTION, ASKED STRAIGHT */}
+      <section className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-ask">
+        <div className="home-wrap home-two">
+          <PlateFrame className="home-two__art">
+            <Plate name="tomb" />
+          </PlateFrame>
+          <div>
+            <p className="home-eyebrow">Difficult questions</p>
+            <h2 id="pv-ask" className="home-h2">
+              Asked honestly, answered without hurry.
+            </h2>
+            <Piece name="ask">
+              <QuestionPicker />
+            </Piece>
           </div>
         </div>
       </section>
 
-      {/* 2. EIGHT DISCIPLINES */}
-      <section id="explore" aria-labelledby="pv-explore" style={section("warm")}>
-        <div style={wrap}>
-          <p className="eyebrow">Explore the Christian faith</p>
-          <h2 id="pv-explore" style={h2}>Eight ways in</h2>
-          <p style={lede}>Every discipline below is made of pages LiveWell already has. Choose one to begin.</p>
-          <ul style={grid(260)}>
-            {DISCIPLINES.map((d) => {
-              const pages = d.doors.map(E);
-              return (
-                <li key={d.name} className="ed-card" style={{ padding: "var(--s-3)" }}>
-                  <div style={{ width: "88px", marginBottom: "10px" }}><Plate name={d.plate} decorative /></div>
-                  <h3 style={cardTitle}>{d.name}</h3>
-                  <p style={cardLine}>{d.line}</p>
-                  <ul style={{ listStyle: "none", padding: 0, margin: "12px 0 0", display: "grid", gap: "6px" }}>
-                    {pages.map((p) => (
-                      <li key={p.id}>
-                        <Link href={p.href} style={{ fontFamily: "var(--U)", fontSize: "14px", color: "var(--ink)", textDecorationColor: "var(--mustard)", textUnderlineOffset: "3px" }}>{p.name}</Link>
-                        {p.count && <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}> · {count(p)}</span>}
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              );
-            })}
-          </ul>
+      {/* THE STUDY BIBLE: all 66 books on one shelf. */}
+      <section className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-shelf">
+        <div className="home-wrap">
+          <Head id="pv-shelf" eyebrow="The Study Bible" title="The whole Bible on one shelf" link={{ href: "/study/bible", label: "Open the Study Bible" }} />
+          <Piece name="shelf">
+            <BibleShelf />
+          </Piece>
         </div>
       </section>
 
-      {/* 3. FEATURED SERIES */}
-      <section aria-labelledby="pv-series" style={section("dark")}>
-        <div style={wrap}>
-          <p className="eyebrow">Series</p>
-          <h2 id="pv-series" style={{ ...h2, color: "var(--charcoal-fg)" }}>Watch, read and study in order</h2>
-          <ul style={grid(300)}>
-            {SERIES.map((s) => {
-              const e = E(s.id);
+      {/* TOOLS */}
+      <section className="home-sec pv-sec" aria-labelledby="pv-tools">
+        <div className="home-wrap">
+          <Head id="pv-tools" eyebrow="Bible tools" title="Study the text yourself" link={{ href: "/tools", label: "Every tool" }} />
+          <ul className="pv-tools">
+            {TOOLS.map(E).map((t) => {
+              const Icon = ICONS[t.icon];
               return (
-                <li key={s.id}>
-                  <Link href={e.href} style={{ ...card, background: "var(--bone)", border: "1px solid var(--border)", borderRadius: "var(--radius-sm)" }}>
-                    <div style={{ width: "72px", marginBottom: "10px" }}><Plate name={s.plate} decorative /></div>
-                    <span className="eyebrow" style={{ display: "block" }}>{s.kind}{e.count ? ` · ${count(e)}` : ""}</span>
-                    <span style={{ ...cardTitle, marginTop: "6px" }}>{e.name}</span>
-                    <span style={cardLine}>{e.line}</span>
+                <li key={t.id}>
+                  <Link href={t.href} className="pv-tool">
+                    <span className="pv-tool__icon">
+                      <Icon aria-hidden="true" size={22} strokeWidth={ICON_STROKE} />
+                    </span>
+                    <span className="pv-tool__name">{t.name}</span>
+                    <span className="pv-tool__line">{t.line}</span>
                   </Link>
                 </li>
               );
@@ -218,122 +411,101 @@ export default function PreviewHome() {
         </div>
       </section>
 
-      {/* 4. LEARNING PATHS */}
-      <section id="paths" aria-labelledby="pv-paths" style={section("bone")}>
-        <div style={wrap}>
-          <p className="eyebrow">Learning paths</p>
-          <h2 id="pv-paths" style={h2}>More than one page at a time</h2>
-          <p style={lede}>Paths you can walk today, session by session. Progress is kept on your device.</p>
-          <ol style={grid(280)}>
-            {PATHS_NOW.map((p) => (
-              <li key={p.href}>
-                <Link href={p.href} className="ed-card" style={card}>
-                  <span style={cardTitle}>{p.name}</span>
-                  <span style={cardLine}>{p.line}</span>
-                </Link>
-              </li>
-            ))}
-          </ol>
-          <p style={{ ...lede, marginTop: "var(--s-4)", marginBottom: "8px" }}>
-            <strong style={{ color: "var(--ink)" }}>Planned for the Academy:</strong> {PATHS_PLANNED.join(", ")}. Not available yet.
-          </p>
+      {/* CHURCH HISTORY */}
+      <section className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-history">
+        <div className="home-wrap">
+          <Head id="pv-history" eyebrow="Church history" title="Two thousand years on one line" link={{ href: "/theology/history", label: "The whole course" }} />
+          <Piece name="history">
+            <HistoryStrip />
+          </Piece>
         </div>
       </section>
 
-      {/* 5. TOOLS */}
-      <section aria-labelledby="pv-tools" style={section("warm")}>
-        <div style={wrap}>
-          <p className="eyebrow">Bible tools</p>
-          <h2 id="pv-tools" style={h2}>Study the text yourself</h2>
-          <ul style={grid(240)}>
-            {TOOLS.map(E).map((t) => (
-              <li key={t.id}>
-                <Link href={t.href} className="ed-card" style={card}>
-                  <span style={{ ...cardTitle, fontSize: "20px" }}>{t.name}</span>
-                  <span style={cardLine}>{t.line}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <p style={{ marginTop: "var(--s-3)" }}><Link href="/tools" className="pg-action pg-action--quiet">Every tool</Link></p>
-        </div>
-      </section>
-
-      {/* 6. DIFFICULT QUESTIONS */}
-      <section aria-labelledby="pv-questions" style={section("dark")}>
-        <div style={wrap}>
-          <p className="eyebrow">Difficult questions</p>
-          <h2 id="pv-questions" style={{ ...h2, color: "var(--charcoal-fg)" }}>Asked honestly, answered without hurry</h2>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: "10px", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 320px), 1fr))" }}>
-            {QUESTIONS.map(E).map((q) => (
-              <li key={q.id}>
-                <Link href={q.href} style={{ fontFamily: "var(--F)", fontSize: "22px", color: "var(--charcoal-fg)", textDecorationColor: "var(--mustard)", textUnderlineOffset: "4px" }}>{q.name}</Link>
-              </li>
-            ))}
-          </ul>
-          <p style={{ marginTop: "var(--s-4)" }}><Link href={E("questions.answers").href} className="pg-action pg-action--quiet" style={{ color: "var(--charcoal-fg)" }}>All {count(E("questions.answers"))}</Link></p>
-        </div>
-      </section>
-
-      {/* 7. LATEST PUBLICATIONS */}
-      <section aria-labelledby="pv-latest" style={section("bone")}>
-        <div style={wrap}>
-          <p className="eyebrow">Publishing</p>
-          <h2 id="pv-latest" style={h2}>Essays and books</h2>
-          <ul style={grid(260)}>
-            {LATEST.map((e) => (
-              <li key={e.slug}>
-                <Link href={`/writing/${e.slug}`} className="ed-card" style={card}>
-                  <span style={{ ...cardTitle, fontSize: "21px" }}>{e.title}</span>
-                  {e.blurb && <span style={cardLine}>{e.blurb}</span>}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <ul style={{ ...grid(220), marginTop: "var(--s-4)" }}>
-            {BOOK_SHELF.map((b) => (
-              <li key={b.slug} style={{ display: "flex", gap: "14px", alignItems: "center" }}>
-                <img src={b.thumb} alt="" width={72} height={108} loading="lazy" style={{ borderRadius: "2px", boxShadow: "0 1px 4px rgba(20,17,12,.18)" }} />
-                <Link href={b.href} style={{ fontFamily: "var(--F)", fontSize: "19px", color: "var(--ink)", textDecorationColor: "var(--mustard)" }}>{b.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* 8. FAMILIES AND CHURCHES */}
-      <section aria-labelledby="pv-families" style={section("warm")}>
-        <div style={{ ...wrap, display: "grid", gap: "14px", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 340px), 1fr))" }}>
-          <h2 id="pv-families" style={{ ...h2, gridColumn: "1 / -1" }}>For families and churches</h2>
-          {[
-            { title: "For families", plate: "house" as PlateName, ids: ["family.tonight", "family.catechism", "family.plans", "bible.explorer"] },
-            { title: "For pastors and groups", plate: "table" as PlateName, ids: ["tools.groups", "tools.booklets", "bible.tracks", "tools.downloads"] },
-          ].map((g) => (
-            <div key={g.title} className="ed-card" style={{ padding: "var(--s-4)" }}>
-              <div style={{ width: "80px", marginBottom: "10px" }}><Plate name={g.plate} decorative /></div>
-              <h3 style={cardTitle}>{g.title}</h3>
-              <ul style={{ listStyle: "none", padding: 0, margin: "12px 0 0", display: "grid", gap: "8px" }}>
-                {g.ids.map(E).map((p) => (
-                  <li key={p.id}><Link href={p.href} style={{ fontFamily: "var(--B)", fontSize: "16px", color: "var(--ink)", textDecorationColor: "var(--mustard)" }}>{p.name}</Link> <span style={{ fontFamily: "var(--U)", fontSize: "13px", color: "var(--ink-muted)" }}>{count(p)}</span></li>
-                ))}
-              </ul>
+      {/* PUBLISHING: the latest essays and the books. */}
+      <section className="home-sec pv-sec" aria-labelledby="pv-desk">
+        <div className="home-wrap">
+          <Head id="pv-desk" eyebrow="Publishing" title="Essays and books" link={{ href: "/writing", label: "All the essays" }} />
+          <div className="pv-desk">
+            <div>
+              <h3 className="home-h3">Latest writing</h3>
+              <HomeLatest />
             </div>
-          ))}
+            <ul className="pv-books">
+              {BOOK_SHELF.map((b) => (
+                <li key={b.slug}>
+                  <Link href={b.href} className="home-book pv-book">
+                    <img src={b.thumb} alt="" width={150} height={225} loading="lazy" decoding="async" className="home-book__cover" />
+                    <span className="pv-book__title">{b.title}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
-      {/* 9 and 10. ABOUT, AND STAYING IN TOUCH */}
-      <section aria-labelledby="pv-about" style={section("dark")}>
-        <div style={{ ...wrap, maxWidth: "var(--w-prose)" }}>
-          <p className="eyebrow">About LiveWell</p>
-          <h2 id="pv-about" style={{ ...h2, color: "var(--charcoal-fg)" }}>Free to read, and it stays free</h2>
-          <p style={{ ...lede, color: "var(--charcoal-fg)", opacity: 0.85 }}>
-            LiveWell is the teaching of James Bell, a pastor who came to faith from atheism, written for the skeptic, the doubting Christian, the pastor and anyone trying to live well. Everything here is free. There is no account to open and nothing behind a paywall.
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
-            <Link href="/subscribe" className="btn">Subscribe</Link>
-            <Link href="/about" className="btn btn--quiet" style={{ color: "var(--charcoal-fg)" }}>About James</Link>
-            <Link href="/support" className="btn btn--quiet" style={{ color: "var(--charcoal-fg)" }}>Support this work</Link>
+      {/* FAMILIES AND CHURCHES */}
+      <section className="home-sec home-sec--warm pv-sec" aria-labelledby="pv-together">
+        <div className="home-wrap">
+          <Head id="pv-together" eyebrow="Families and churches" title="For the table and the room" />
+          <div className="pv-pair">
+            {[
+              { title: "For families", line: "A devotion for tonight, a catechism to learn together, and films for ages seven to sixteen.", plate: "house" as PlateName, ids: ["family.tonight", "family.catechism", "family.plans", "bible.explorer"] },
+              { title: "For pastors and groups", line: "Studies a group can do in a sitting, with a leader's guide, and paths to walk together.", plate: "table" as PlateName, ids: ["tools.groups", "tools.booklets", "bible.tracks", "tools.downloads"] },
+            ].map((g) => (
+              <div key={g.title} className="pv-pair__col">
+                <PlateFrame ratio="16 / 9">
+                  <Plate name={g.plate} decorative />
+                </PlateFrame>
+                <h3 className="pv-pair__title">{g.title}</h3>
+                <p className="pv-pair__line">{g.line}</p>
+                <ul className="pv-pair__list">
+                  {g.ids.map(E).map((p) => (
+                    <li key={p.id}>
+                      <Link href={p.href} className="pv-pair__link">
+                        <span>{p.name}</span>
+                        {p.count && <span className="pv-pair__count">{count(p)}</span>}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT, AND STAYING IN TOUCH */}
+      <section className="home-sec home-sec--dark pv-sec" aria-labelledby="pv-about">
+        <div className="home-wrap pv-close">
+          <PlateFrame className="pv-close__art">
+            <Plate name="letter" />
+          </PlateFrame>
+          <div>
+            <p className="home-eyebrow">About LiveWell</p>
+            <h2 id="pv-about" className="home-h2">
+              Free to read, and it stays free.
+            </h2>
+            <p className="pv-close__line">
+              LiveWell is the teaching of James Bell, a pastor who came to faith from atheism, written for the skeptic, the doubting Christian, the pastor and anyone trying to live well. There is no account to open and nothing behind a paywall.
+            </p>
+            <div className="home-row">
+              <Link href="/subscribe" className="home-btn">
+                Subscribe
+              </Link>
+              <Link href="/about" className="home-btn home-btn--quiet">
+                About James
+              </Link>
+              <Link href="/support" className="home-btn home-btn--quiet">
+                Support this work
+              </Link>
+            </div>
+            <p className="pv-close__help">
+              <LifeBuoy aria-hidden="true" size={20} strokeWidth={1.75} />
+              <span>
+                In a hard season? <Link href="/help">Find help for what you are facing</Link>
+              </span>
+            </p>
           </div>
         </div>
       </section>

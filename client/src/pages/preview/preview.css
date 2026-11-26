@@ -1,0 +1,197 @@
+/*
+ * /preview/home (pages/PreviewHome.tsx). Built on the live homepage's own
+ * parts (home.css, the art kit in index.css); these rules add the preview's
+ * menu, hero, atlas, film reel, road of paths and the quieter lists. Tokens
+ * only, no hex.
+ */
+.pv-note{margin:0;padding:9px var(--gutter);background:var(--bone-warm);border-bottom:1px solid var(--border);font-family:var(--U);font-size:13.5px;line-height:1.5;color:var(--ink-muted);text-align:center}
+.pv-note a{color:var(--ink);text-decoration-color:var(--mustard);text-underline-offset:.2em}
+
+/* The proposed menu. */
+.pv-nav{position:relative;z-index:30;background:var(--card);border-bottom:1.5px solid var(--ink);padding:0 var(--gutter)}
+.pv-nav__bar{max-width:var(--w-default);margin:0 auto;display:flex;align-items:center;gap:2px 26px;min-height:56px;overflow-x:auto;scrollbar-width:none}
+.pv-nav__bar::-webkit-scrollbar{display:none}
+.pv-nav__tag{flex:none;font-family:var(--U);font-size:12px;font-weight:500;color:var(--ink-muted);padding-right:20px;border-right:1px solid var(--border)}
+.pv-nav__item{flex:none;display:inline-flex;align-items:center;gap:5px;min-height:56px;padding:0;background:none;border:0;border-bottom:2px solid transparent;font-family:var(--U);font-size:15px;font-weight:500;color:var(--ink);text-decoration:none;cursor:pointer}
+.pv-nav__item:hover,.pv-nav__item[aria-expanded="true"]{border-bottom-color:var(--mustard)}
+.pv-nav__chev{transition:transform .25s var(--ease)}
+.pv-nav__item[aria-expanded="true"] .pv-nav__chev{transform:rotate(180deg)}
+.pv-nav__panel{position:absolute;left:0;right:0;top:100%;background:var(--card);border-bottom:1.5px solid var(--ink);box-shadow:0 18px 40px -24px var(--art-ink);padding:var(--s-4) var(--gutter) var(--s-5)}
+.pv-nav__panel[hidden]{display:none}
+.pv-nav__grid{max-width:var(--w-default);margin:0 auto;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-3) var(--s-4)}
+.pv-nav__d{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px;align-items:start;color:var(--ink);text-decoration:none}
+.pv-nav__plate{display:block;width:64px;aspect-ratio:1;border:1.5px solid var(--art-ink);background:var(--art-paper);overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.pv-nav__plate svg{width:100%;height:100%}
+.pv-nav__d:hover .pv-nav__plate,.pv-nav__d:focus-visible .pv-nav__plate{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--art-ink)}
+.pv-nav__dn{display:block;font-family:var(--F);font-size:22px;line-height:1.1;letter-spacing:-.01em}
+.pv-nav__dl{display:block;margin-top:4px;font-family:var(--U);font-size:13px;line-height:1.45;color:var(--ink-muted)}
+
+/* The hero. */
+.pv-hero{background:var(--bone);color:var(--ink);padding:var(--s-6) var(--gutter) 0}
+.pv-hero__inner{max-width:var(--w-default);margin:0 auto;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--s-6);align-items:center}
+.pv-hero__title{font-family:var(--F);font-weight:400;font-size:var(--fs-display);line-height:.98;letter-spacing:-.025em;margin:14px 0 var(--s-3);max-width:15ch;text-wrap:balance}
+.pv-hero__line{font-family:var(--font-reading);font-size:clamp(1.0625rem,1rem + .3vw,1.25rem);line-height:1.55;color:var(--ink);max-width:40ch;margin:0 0 var(--s-3)}
+.pv-hero .home-find{margin-top:0}
+.pv-ledger{max-width:var(--w-default);margin:var(--s-6) auto 0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1.5px solid var(--ink)}
+.pv-ledger li+li{border-left:1px solid var(--border)}
+.pv-ledger__item{display:flex;flex-direction:column;height:100%;padding:18px 18px 26px;color:var(--ink);text-decoration:none}
+.pv-ledger li:first-child .pv-ledger__item{padding-left:0}
+.pv-ledger__n{font-family:var(--F);font-size:clamp(2.25rem,1.6rem + 1.8vw,3.25rem);line-height:1;letter-spacing:-.02em;font-variant-numeric:lining-nums}
+.pv-ledger__of{font-family:var(--U);font-size:13px;font-weight:500;color:var(--ink-muted);margin-top:6px}
+.pv-ledger__where{font-family:var(--U);font-size:13px;line-height:1.4;margin-top:auto;padding-top:10px;color:var(--ink)}
+.pv-ledger__item:hover .pv-ledger__where,.pv-ledger__item:focus-visible .pv-ledger__where{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+
+/* Section heads with a short lede. */
+.pv-lede{font-family:var(--font-reading);font-size:18px;line-height:1.55;max-width:52ch;margin:14px 0 0;opacity:.86}
+
+/* The atlas. */
+.pv-atlas{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:var(--s-5);align-items:start}
+.pv-atlas__toc{display:flex;flex-direction:column;border-top:1.5px solid var(--ink);position:sticky;top:96px}
+.pv-atlas__tab{display:flex;justify-content:space-between;align-items:baseline;gap:12px;width:100%;min-height:58px;padding:12px 0 12px 18px;background:none;border:0;border-bottom:1px solid var(--borderdk);box-shadow:inset 0 0 0 transparent;color:var(--ink-muted);text-align:left;cursor:pointer;transition:color .2s var(--ease),box-shadow .25s var(--ease),padding .25s var(--ease)}
+.pv-atlas__tn{font-family:var(--F);font-size:clamp(1.375rem,1.15rem + .7vw,1.75rem);line-height:1.1;letter-spacing:-.01em}
+.pv-atlas__tc{flex:none;font-family:var(--U);font-size:12px;font-weight:500;opacity:.8}
+.pv-atlas__tab:hover{color:var(--ink)}
+.pv-atlas__tab[aria-selected="true"]{color:var(--ink);box-shadow:inset 3px 0 0 var(--mustard);padding-left:24px}
+.pv-atlas__spread{background:var(--card);border:1.5px solid var(--ink);box-shadow:8px 8px 0 var(--art-olive);padding:clamp(20px,3vw,36px);animation:pv-open .45s var(--ease)}
+@keyframes pv-open{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.pv-atlas__head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:var(--s-4);align-items:center;margin-bottom:var(--s-4)}
+.pv-atlas__name{font-family:var(--F);font-weight:400;font-size:clamp(2.25rem,1.6rem + 2.4vw,3.5rem);line-height:1;letter-spacing:-.02em;margin:0 0 12px;text-wrap:balance}
+.pv-atlas__line{font-family:var(--font-reading);font-size:18px;line-height:1.5;margin:0;max-width:46ch}
+.pv-atlas__rooms{list-style:none;margin:0 0 var(--s-3);padding:0;border-top:1.5px solid var(--ink)}
+.pv-room{display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:2px 14px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--border);color:var(--ink);text-decoration:none}
+.pv-room__icon{grid-row:span 2;align-self:start;margin-top:3px;color:var(--ink-muted)}
+.pv-room__name{font-family:var(--F);font-size:23px;line-height:1.15}
+.pv-room__count{grid-column:3;grid-row:1;font-family:var(--U);font-size:12.5px;font-weight:500;color:var(--ink-muted);white-space:nowrap}
+.pv-room__line{grid-column:2 / 4;font-family:var(--U);font-size:14px;line-height:1.45;color:var(--ink-muted)}
+.pv-room:hover .pv-room__name,.pv-room:focus-visible .pv-room__name{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.pv-atlas__go{margin-top:4px}
+
+/* The film reel. */
+.home-piece--reel{min-height:560px}
+.pv-reel__tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 4px;scrollbar-width:none}
+.pv-reel__tabs::-webkit-scrollbar{display:none}
+.pv-reel__tabs .home-chip{flex:none}
+.pv-reel__n{font-size:12px;opacity:.7}
+.pv-reel__about{font-family:var(--font-reading);font-size:17px;line-height:1.5;color:var(--charcoal-fg-muted);margin:var(--s-2) 0 var(--s-3)}
+.pv-reel__body{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s-5);align-items:start}
+.pv-reel__lead{display:block;color:var(--charcoal-fg);text-decoration:none}
+.pv-reel__screen{position:relative;display:grid;place-items:center;aspect-ratio:4 / 3;background:var(--art-paper);border:1.5px solid var(--charcoal-fg);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.pv-reel__screen .lw-roundel{width:58%}
+.pv-reel__lead:hover .pv-reel__screen,.pv-reel__lead:focus-visible .pv-reel__screen{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--mustard)}
+.pv-reel__play{position:absolute;right:16px;bottom:16px;display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--charcoal);color:var(--charcoal-fg);border:2px solid var(--mustard)}
+.pv-reel__play svg{margin-left:3px}
+.pv-reel__title{display:block;font-family:var(--F);font-size:clamp(1.75rem,1.3rem + 1.4vw,2.5rem);line-height:1.05;letter-spacing:-.015em;margin-top:var(--s-3)}
+.pv-reel__line{display:block;font-family:var(--font-reading);font-size:17px;line-height:1.5;color:var(--charcoal-fg-muted);margin-top:10px}
+.pv-reel__list{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--charcoal-fg)}
+.pv-reel__row{display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-bottom:1px solid var(--charcoal-line);color:var(--charcoal-fg);text-decoration:none}
+.pv-reel__mark{display:block;width:56px;height:56px;padding:3px;border-radius:50%;background:var(--art-paper)}
+.pv-reel__rtitle{display:block;font-family:var(--F);font-size:22px;line-height:1.15}
+.pv-reel__rline{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;font-family:var(--U);font-size:13.5px;line-height:1.45;color:var(--charcoal-fg-muted);margin-top:2px}
+.pv-reel__row:hover .pv-reel__rtitle,.pv-reel__row:focus-visible .pv-reel__rtitle{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.pv-reel__all{margin-top:var(--s-4)}
+
+/* The road of learning paths. */
+.pv-road{list-style:none;margin:var(--s-2) 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));position:relative}
+.pv-road::before{content:"";position:absolute;left:0;right:0;top:11px;border-top:2px dashed var(--borderdk)}
+.pv-road__link{position:relative;display:flex;flex-direction:column;height:100%;padding:0 18px 0 0;color:var(--ink);text-decoration:none}
+.pv-road__dot{display:block;width:24px;height:24px;border-radius:50%;background:var(--bone);border:2px solid var(--ink);transition:background .25s var(--ease),transform .25s var(--ease)}
+.pv-road__link:hover .pv-road__dot,.pv-road__link:focus-visible .pv-road__dot{background:var(--mustard);transform:scale(1.15)}
+.pv-road__name{font-family:var(--F);font-size:clamp(1.25rem,1.05rem + .6vw,1.5rem);line-height:1.12;letter-spacing:-.01em;margin-top:var(--s-2)}
+.pv-road__who{font-family:var(--U);font-size:13.5px;line-height:1.45;color:var(--ink-muted);margin-top:8px}
+.pv-road__link:hover .pv-road__name{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+.pv-planned{margin:var(--s-5) 0 0;padding-top:var(--s-2);border-top:1px solid var(--border);font-family:var(--U);font-size:14.5px;line-height:1.6;color:var(--ink-muted)}
+.pv-planned__label{font-weight:600;color:var(--ink);margin-right:10px}
+
+/* Tools. */
+.pv-tools{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 var(--s-4);border-top:1.5px solid var(--ink)}
+.pv-tool{display:grid;grid-template-columns:48px minmax(0,1fr);gap:4px 16px;padding:20px 0;border-bottom:1px solid var(--border);color:var(--ink);text-decoration:none;height:100%}
+.pv-tool__icon{grid-row:span 2;display:grid;place-items:center;width:48px;height:48px;border:1.5px solid var(--ink);transition:background .25s var(--ease),color .25s var(--ease)}
+.pv-tool:hover .pv-tool__icon,.pv-tool:focus-visible .pv-tool__icon{background:var(--ink);color:var(--bone)}
+.pv-tool__name{font-family:var(--F);font-size:23px;line-height:1.15}
+.pv-tool__line{font-family:var(--U);font-size:14px;line-height:1.45;color:var(--ink-muted)}
+
+/* Publishing. */
+.pv-desk{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:var(--s-6);align-items:start}
+.pv-books{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-3)}
+.pv-book{display:flex;flex-direction:column;gap:14px}
+.pv-book .home-book__cover{width:100%}
+.pv-book__title{font-family:var(--F);font-size:19px;line-height:1.15}
+.pv-book:hover .pv-book__title{text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.16em}
+
+/* Families and churches. */
+.pv-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-6)}
+.pv-pair__title{font-family:var(--F);font-weight:400;font-size:clamp(1.75rem,1.4rem + 1vw,2.25rem);line-height:1.05;letter-spacing:-.015em;margin:var(--s-3) 0 8px}
+.pv-pair__line{font-family:var(--font-reading);font-size:17.5px;line-height:1.5;margin:0 0 var(--s-2);max-width:44ch}
+.pv-pair__list{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
+.pv-pair__link{display:flex;justify-content:space-between;align-items:baseline;gap:12px;min-height:52px;padding:12px 0;border-bottom:1px solid var(--borderdk);font-family:var(--F);font-size:22px;line-height:1.15;color:var(--ink);text-decoration:none}
+.pv-pair__count{flex:none;font-family:var(--U);font-size:12.5px;font-weight:500;color:var(--ink-muted)}
+.pv-pair__link:hover>span:first-child{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
+
+/* The close. */
+.pv-close{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:var(--s-6);align-items:center}
+.pv-close .home-h2{margin-bottom:var(--s-3)}
+.pv-close__line{font-family:var(--font-reading);font-size:19px;line-height:1.55;max-width:52ch;margin:0 0 var(--s-4);color:var(--charcoal-fg)}
+.pv-close__help{display:flex;align-items:center;gap:12px;margin:var(--s-4) 0 0;font-family:var(--U);font-size:15px;color:var(--charcoal-fg-muted)}
+.pv-close__help svg{flex:none;color:var(--mustard)}
+.pv-close__help a{display:inline-flex;align-items:center;min-height:44px;color:var(--charcoal-fg);font-weight:500;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+
+@media (prefers-reduced-motion:reduce){
+  .pv-atlas__spread{animation:none}
+  .pv-atlas__tab,.pv-road__dot,.pv-reel__screen,.pv-nav__plate,.pv-tool__icon{transition:none}
+}
+
+@media (max-width:1060px){
+  .pv-nav__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pv-ledger{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pv-ledger li:nth-child(4){border-left:0}
+  .pv-ledger li:nth-child(4) .pv-ledger__item{padding-left:0}
+  .pv-ledger li:nth-child(n+4){border-top:1px solid var(--border)}
+  .pv-road{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:var(--s-4)}
+  .pv-road::before{display:none}
+  .pv-tools{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .pv-nav__tag{display:none}
+  .pv-nav__panel{position:static;padding:var(--s-2) 0 var(--s-3);box-shadow:none;border-bottom:0;border-top:1px solid var(--border)}
+  .pv-nav__grid{grid-template-columns:minmax(0,1fr);gap:14px}
+  .pv-nav__d{grid-template-columns:48px minmax(0,1fr)}
+  .pv-nav__plate{width:48px}
+  .pv-nav__dn{font-size:20px}
+  .pv-hero{padding-top:var(--s-4)}
+  .pv-hero__inner{grid-template-columns:minmax(0,1fr);gap:var(--s-4)}
+  .pv-hero__art{order:-1;margin:0 calc(var(--gutter) * -1)}
+  .pv-hero__art .lw-cap{display:none}
+  .pv-hero__title{max-width:none}
+  .pv-ledger{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:var(--s-5)}
+  .pv-ledger li{border-left:0!important}
+  .pv-ledger li:nth-child(even){border-left:1px solid var(--border)!important}
+  .pv-ledger li:nth-child(n+3){border-top:1px solid var(--border)}
+  .pv-ledger li:nth-child(odd) .pv-ledger__item{padding-left:0}
+  .pv-ledger li:nth-child(even) .pv-ledger__item{padding-left:14px}
+  .pv-ledger__item{padding:16px 14px 18px}
+  .pv-lede{font-size:17px}
+  .pv-atlas{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
+  .pv-atlas__toc{position:static;flex-direction:row;overflow-x:auto;border-top:0;gap:8px;margin:0 calc(var(--gutter) * -1);padding:2px var(--gutter) 4px;scrollbar-width:none}
+  .pv-atlas__toc::-webkit-scrollbar{display:none}
+  .pv-atlas__head{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
+  .pv-atlas__tab{flex:none;align-items:center;width:auto;min-height:44px;padding:0 16px;border:1.5px solid var(--borderdk);border-radius:var(--radius-pill)}
+  .pv-atlas__tab[aria-selected="true"]{box-shadow:none;padding-left:16px;background:var(--ink);color:var(--bone);border-color:var(--ink)}
+  .pv-atlas__tn{font-family:var(--U);font-size:14px;font-weight:500}
+  .pv-atlas__tc{display:none}
+  .pv-atlas__spread{box-shadow:5px 5px 0 var(--art-olive)}
+  .pv-room__name{font-size:21px}
+  .home-piece--reel{min-height:720px}
+  .pv-reel__body{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
+  .pv-reel__list li:nth-child(n+5){display:none}
+  .pv-road{grid-template-columns:minmax(0,1fr);row-gap:0;padding-left:0}
+  .pv-road::before{display:block;left:11px;right:auto;top:6px;bottom:6px;border-top:0;border-left:2px dashed var(--borderdk)}
+  .pv-road__link{display:grid;grid-template-columns:24px minmax(0,1fr);column-gap:18px;padding:0 0 var(--s-3)}
+  .pv-road__dot{grid-row:span 2}
+  .pv-road__name{margin-top:0}
+  .pv-road__who{margin-top:4px}
+  .pv-tools{grid-template-columns:minmax(0,1fr)}
+  .pv-desk,.pv-pair,.pv-close{grid-template-columns:minmax(0,1fr);gap:var(--s-5)}
+  .pv-books{gap:var(--s-2)}
+  .pv-book__title{font-size:16px}
+  .pv-close__art{max-width:220px}
+}
