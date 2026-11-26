@@ -25852,3 +25852,19 @@ Cut in chapter 39: nothing. Verses 6 and 7 are stated in a line and not describe
 | 2 Kings 25:22, 25:24, Proverbs 22:3 (clauses); 2 Kings 18:25 (paraphrased) | `later` | BSB | BSB text |
 
 Cut in chapter 40: the Jaazaniah and Gedaliah seals named in the deep note, left out because their identification is uncertain; Matthew 10:16, replaced by Proverbs 22:3.
+
+## The plain notes on Jeremiah 41 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/41.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 41:1-18 (largely paraphrased) | all | BSB | BSB text |
+| The seventh month, year uncertain; 582 BC deportation possibly linked; the fast of the seventh month | 1-10 | jeremiah/41.json `historical` | Repository |
+| Ishmael of the royal house; Baalis of Ammon; the betrayed meal | 1-10 | jeremiah/41.json `historical`, `cultural` | Repository |
+| God's silence; evil reported without comment; a warning to exiles; left open as in Job | 1-10 `hard` | jeremiah/41.json `hard` | Repository |
+| The SUDDEN care line, byte for byte | 1-10 `hard` | carelines.json | care.mjs |
+| Gibeon's pool (2 Samuel 2:13); fear of reprisal; Bethlehem on the way to Egypt | 11-18 | BSB; jeremiah/41.json `summary` | BSB text |
+| 2 Kings 25:25, Zechariah 8:19, 2 Samuel 2:13 (clauses); Ezra 2:21 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 41: a draft line on Gibeon's position, which no repository source states. The killings are named, not described.
