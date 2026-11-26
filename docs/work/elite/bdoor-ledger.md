@@ -23943,3 +23943,19 @@ Cut from the book page: any New Testament line beyond the four places the New Te
 | The hard note: If God was only a little angry, why was the destruction of Jerusalem so terrible? The readings in their holders' terms | 7-21 `hard` | zechariah/1.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 1: none drawn. Cut in chapter 1: nothing.
+
+## The plain notes on Zechariah 2 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A measuring line, and a wall of fire: the text paraphrased, its quoted verses (in single or double quotes) | 1-5 | BSB | BSB text |
+| Background in `hearers` | 1-5 | zechariah/2.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 13:21; Ezekiel 43:2-5 | 1-5 `later` | BSB | BSB text |
+| Come home: God will dwell among you: the text paraphrased, its quoted verses (in single or double quotes) | 6-13 | BSB | BSB text |
+| Background in `hearers` | 6-13 | zechariah/2.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 52:11; Psalm 17:8 | 6-13 `later` | BSB | BSB text |
+| The hard note: Who is speaking when the text speaks of one whom the LORD of Hosts has sent? The readings in their holders' terms | 6-13 `hard` | zechariah/2.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 2: none drawn. Cut in chapter 2: nothing.
