@@ -26042,3 +26042,138 @@ Cut in chapter 38: any match between these names and modern countries; Revelatio
 | Later: Joel 2:28; Numbers 6:25 | 21-29 `later` | BSB | BSB text |
 
 Cut in chapter 39: the deep note's mention of modern materials that burn; no date, no modern nation, person or event.
+
+## The plain notes on Ezekiel 40 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A very high mountain and a man with a measuring rod: the text paraphrased; quoted clauses at verses 2, 3, 4, 5-27 | 1-27 | BSB | BSB text |
+| Background in `hearers` | 1-27 | ezekiel/40.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 2:2; Zechariah 2:1 | 1-27 `later` | BSB | BSB text |
+| The hard note: Was this temple ever meant to be built, and how should the vision be read? The readings in their holders' terms | 1-27 `hard` | ezekiel/40.json `hard` | Repository; the site takes no side |
+| The inner court, the altar and the porch: the text paraphrased; quoted clauses at verses 28-37, 38-43, 46, 47, 48-49 | 28-49 | BSB | BSB text |
+| Background in `hearers` | 28-49 | ezekiel/40.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 25:9; 1 Kings 2:35 | 28-49 `later` | BSB | BSB text |
+
+Cut in chapter 40: Revelation 11:1 beside the measuring, left out. No claim about any modern state, temple or border; the readings of the temple vision in their holders' terms, as the coordinator asked.
+
+## The plain notes on Ezekiel 41 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/41.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sanctuary and the Most Holy Place: the text paraphrased; quoted clauses at verses 1-2, 4, 5-11, 12, 18-19, 22, 23-26 | 1-26 | BSB | BSB text |
+| Background in `hearers` | 1-26 | ezekiel/41.json `historical`, `cultural`, `literary` | Repository |
+| Later: 1 Kings 6:20; Leviticus 16:2 | 1-26 `later` | BSB | BSB text |
+
+Cut in chapter 41: nothing.
+
+## The plain notes on Ezekiel 42 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/42.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Holy chambers and the wall of separation: the text paraphrased; quoted clauses at verses 1-12, 13, 14, 20 | 1-20 | BSB | BSB text |
+| Background in `hearers` | 1-20 | ezekiel/42.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 10:10; Leviticus 16:23 | 1-20 `later` | BSB | BSB text |
+
+Cut in chapter 42: nothing.
+
+## The plain notes on Ezekiel 43 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/43.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The glory returns: the text paraphrased; quoted clauses at verses 2, 3, 4, 5, 7, 7-9, 10, 12 | 1-12 | BSB | BSB text |
+| Background in `hearers` | 1-12 | ezekiel/43.json `historical`, `cultural`, `literary` | Repository |
+| Later: 1 Kings 8:11; Exodus 40:34 | 1-12 `later` | BSB | BSB text |
+| The altar and its consecration: the text paraphrased; quoted clauses at verses 13-17, 18-26, 27 | 13-27 | BSB | BSB text |
+| Background in `hearers` | 13-27 | ezekiel/43.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 29:37; Leviticus 8:33 | 13-27 `later` | BSB | BSB text |
+| The hard note: Why does Ezekiel's future temple have animal sacrifices, when the New Testament says Christ's sacrifice ended them? The readings in their holders' terms | 13-27 `hard` | ezekiel/43.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 43: the deep note's lines to John 1:14 and 2:19-21 beside the returning glory, which the New Testament does not draw from Ezekiel 43; Hebrews 10:12 kept in the hard note as the New Testament's own teaching on sacrifice, not as a line drawn from Ezekiel.
+
+## The plain notes on Ezekiel 44 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/44.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The shut gate, and those who may serve: the text paraphrased; quoted clauses at verses 1, 2, 3, 4, 9, 10-14 | 1-14 | BSB | BSB text |
+| Background in `hearers` | 1-14 | ezekiel/44.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 56:6-7; Joshua 9:27 | 1-14 `later` | BSB | BSB text |
+| The hard note: Doesn't the exclusion of foreigners clash with the Bible's welcome to the nations? The readings in their holders' terms | 1-14 `hard` | ezekiel/44.json `hard` | Repository; the site takes no side |
+| The priests who keep charge: the text paraphrased; quoted clauses at verses 15, 17-19, 20-27, 23, 24, 28 | 15-31 | BSB | BSB text |
+| Background in `hearers` | 15-31 | ezekiel/44.json `historical`, `cultural`, `literary` | Repository |
+| Later: Numbers 18:20; Malachi 2:7 | 15-31 `later` | BSB | BSB text |
+
+Cut in chapter 44: Ephesians 2:13 beside the foreigners, which the New Testament does not draw from Ezekiel 44; the early Christian reading of the shut gate as Mary's virginity, left out as an allegory the text does not suggest.
+
+## The plain notes on Ezekiel 45 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/45.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Holy land, and honest scales: the text paraphrased; quoted clauses at verses 1, 2-5, 6-7, 8, 9, 10, 11-12 | 1-12 | BSB | BSB text |
+| Background in `hearers` | 1-12 | ezekiel/45.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 19:36; Proverbs 11:1 | 1-12 `later` | BSB | BSB text |
+| Offerings and feasts: the text paraphrased; quoted clauses at verses 13-16, 17, 18-20, 21, 25 | 13-25 | BSB | BSB text |
+| Background in `hearers` | 13-25 | ezekiel/45.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 23:5; Amos 8:5 | 13-25 `later` | BSB | BSB text |
+| The hard note: Why does Ezekiel's worship calendar differ from the law of Moses? The readings in their holders' terms | 13-25 `hard` | ezekiel/45.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 45: nothing.
+
+## The plain notes on Ezekiel 46 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/46.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sabbaths, New Moons and the way out: the text paraphrased; quoted clauses at verses 1, 2, 3, 4-8, 9, 10, 11-15 | 1-15 | BSB | BSB text |
+| Background in `hearers` | 1-15 | ezekiel/46.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Chronicles 26:16-19; Psalm 84:10 | 1-15 `later` | BSB | BSB text |
+| The people's land, and the temple kitchens: the text paraphrased; quoted clauses at verses 17, 18, 19-20, 24 | 16-24 | BSB | BSB text |
+| Background in `hearers` | 16-24 | ezekiel/46.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 25:10; Jeremiah 34:11 | 16-24 `later` | BSB | BSB text |
+
+Cut in chapter 46: the morning-only daily offering, left out for want of room.
+
+## The plain notes on Ezekiel 47 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/47.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The river from the temple: the text paraphrased; quoted clauses at verses 1, 5, 7, 8, 9, 10-11, 12 | 1-12 | BSB | BSB text |
+| Background in `hearers` | 1-12 | ezekiel/47.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 2:10; Psalm 46:4; Revelation 22:1-2 | 1-12 `later` | BSB | BSB text |
+| The hard note: Is the river meant to be a real river? The readings in their holders' terms | 1-12 `hard` | ezekiel/47.json `hard` | Repository; the site takes no side |
+| The borders of the land, and the foreigner's share: the text paraphrased; quoted clauses at verses 13, 14, 15-20, 22, 23 | 13-23 | BSB | BSB text |
+| Background in `hearers` | 13-23 | ezekiel/47.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 19:34 | 13-23 `later` | BSB | BSB text |
+
+Cut in chapter 47: John 4 and 7:37-39 beside the river, which the New Testament does not draw from Ezekiel by quotation; Revelation 22:1-2 kept as the New Testament's own use. The boundaries stated as the vision's, with no claim about any modern state or border.
+
+## The plain notes on Ezekiel 48 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/48.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Every tribe in its place: the text paraphrased; quoted clauses at verses 1, 1-7, 8, 9-14, 15-20, 21-22, 23-29 | 1-29 | BSB | BSB text |
+| Background in `hearers` | 1-29 | ezekiel/48.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 25:23; Joshua 13:7 | 1-29 `later` | BSB | BSB text |
+| THE LORD IS THERE: the text paraphrased; quoted clauses at verses 31, 31-34, 35 | 30-35 | BSB | BSB text |
+| Background in `hearers` | 30-35 | ezekiel/48.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 46:5; Revelation 21:12 | 30-35 `later` | BSB | BSB text |
+| The hard note: Will Ezekiel's temple actually be built? The readings in their holders' terms | 30-35 `hard` | ezekiel/48.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 48: nothing; Revelation 21:12 kept as the New Testament's own use of the twelve gates. No claim about any modern state, temple or border.
