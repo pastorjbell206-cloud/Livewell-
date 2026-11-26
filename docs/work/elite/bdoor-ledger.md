@@ -21138,3 +21138,22 @@ Cut in chapter 24: the deep note's lines to Christ (Jesus as the one who seeks a
 | Romans 12:21; Exodus 23:4 | 21-28 | proverbs/25.json `christ` (Paul quoting verses 21-22); romans/plain/12.json `ot`; the chapter data's cross-references for 25:21 (Romans 12:20-21; Exodus 23:4); BSB | Repository; BSB text; the New Testament's own quotation |
 
 Cut in chapter 25: the deep note's line to Christ (Christ who did not grasp at glory and died for his enemies, set beside verses 6-7 and 21-22). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 26 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 26:1; 26:2; 26:4; 26:5; 26:6 paraphrased; 26:7; 26:8 paraphrased; 26:11; 26:12 | 1-12 | BSB | BSB text |
+| Three portraits (fool, slacker, deceiver); kesil as settled in folly; out-of-season snow and rain; curses feared and words thought to carry power; the undeserved curse that cannot land; messengers at a distance; dogs as scavengers; verse 12 turned on the reader | 1-12 | proverbs/26.json `story`, `cultural`, `historical`, `words` (kesil) | Repository |
+| 2 Peter 2:22 (the proverb's words); 1 Corinthians 3:18 (its second sentence) | 1-12 | proverbs/26.json `christ` (2 Peter 2:22); 2-peter/plain/2.json; the chapter data's cross-references for 26:12 (1 Corinthians 3:18); BSB | Repository; BSB text; the New Testament's own quotation |
+| The hard note: the two sayings set side by side on purpose; ancient Jewish discussion and the Talmud's debate (Shabbat 30b, as the reading guide gives it); both true in different situations; manner and argument; the method of the whole book | 1-12 `hard` | proverbs/26.json `hard`; guides/reading-wisdom.json section 2 | Repository; each reading in its holders' terms |
+| The lion (26:13) paraphrased (it holds an inner quotation and exclamations); 26:14; 26:15; 26:16 | 13-16 | BSB | BSB text |
+| Four slacker sayings and their exaggeration; lions in the region; the slacker's certainty linked to verse 12 | 13-16 | proverbs/26.json `literary`, `historical` | Repository |
+| Hebrews 6:12 | 13-16 | the chapter data's cross-references for 26:14 (Hebrews 6:12); BSB | Repository; BSB text |
+| 26:17; the madman and the joke (26:18-19) paraphrased (verse 19 holds an inner quotation and an exclamation); 26:20; 26:21; 26:22; 26:23; 26:26 (its last clause); 26:27; 26:28 | 17-28 | BSB | BSB text |
+| From meddler to flatterer; a dog grabbed by the ears; household pottery and glaze, perhaps silver dross; 26:22 repeating 18:8; fuel and fire | 17-28 | proverbs/26.json `literary`, `cultural` | Repository |
+| Psalm 7:15; James 3:5 (its last sentence) | 17-28 | the chapter data's cross-references for 26:27 (Psalm 7:15) and 26:20 (James 3:6); BSB | Repository; BSB text |
+
+Cut in chapter 26: the deep note's lines to Christ (Jesus' words on careless speech and the overflow of the heart beside verse 23; Jesus' silence and answers as verses 4 and 5 in action). No care line is needed in this chapter.
