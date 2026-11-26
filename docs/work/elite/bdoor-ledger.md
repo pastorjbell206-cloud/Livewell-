@@ -23332,3 +23332,19 @@ Every claim in `client/public/bible/notes/haggai/intro.json`, field `teaching`. 
 | Go deeper: seven pages | deeper | bible/guides/reading-prophets.json, empires.json, kings-of-israel-and-judah.json; bible/doctrines.json (Tabernacle, Temple, and God's Presence; Exile and Restoration; Holiness; Money and Possessions) | Repository; every page live |
 
 Cut from the book page: the introduction's line from the latter glory to John 2:19-21, which the New Testament does not draw from Haggai (the Christian reading of Jesus' presence in the temple is given only as a reading).
+
+## The plain notes on Haggai 1 (2026-11-26)
+
+`client/public/bible/notes/haggai/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1 (its clause); 1:2 paraphrased (its inner quotation not quoted); 1:4; 1:5; 1:6 (its last sentence); 1:8-11 paraphrased | 1-11 | BSB | BSB text |
+| Late August 520 BC; Darius after Cambyses and Behistun; Beyond the River; Zerubbabel and Joshua; Zerubbabel as Jehoiachin's grandson, 597 BC; the temple's meaning; neighbors' reading of a ruin; paneling | 1-11 | haggai/1.json `historical`, `cultural` | Repository |
+| Ezra 4:24 and 5:1-2; Deuteronomy 28:23-24 | 1-11 | haggai/intro.json `setting`; BSB | Repository; BSB text |
+| The hard note: the link to the temple; the general rule refused; the Sinai covenant; Job, the psalmists, John 9:1-3; no rule that poverty is punishment; no promise that giving buys prosperity | 1-11 `hard` | haggai/1.json `hard`; the brief | Repository; stated as the brief asks |
+| 1:12 paraphrased; 1:13 (God's words, in double quotes); 1:14 paraphrased; 1:15 | 12-15 | BSB | BSB text |
+| Heard within twenty-four days; obey, fear, I am with you, stirred; messenger; remnant | 12-15 | haggai/1.json `literary`, `summary` | Repository |
+| Ezra 5:2 (its first sentence); Ezra 1:1 paraphrased | 12-15 | BSB | BSB text |
+
+Cut in chapter 1: nothing drawn to the New Testament.
