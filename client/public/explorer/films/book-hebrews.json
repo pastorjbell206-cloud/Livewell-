@@ -1,0 +1,120 @@
+{
+  "slug": "book-hebrews",
+  "title": "Hebrews: hold on to Jesus",
+  "group": "books",
+  "status": "finished",
+  "book": "hebrews",
+  "mark": "book-hebrews",
+  "line": {
+    "younger": "A long letter to believers who were tired of believing: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Hebrews as a whole book: a sermon for tired believers, the Son through whom God has spoken, the old covenant honored as God's gift, the great high priest, warnings and hope, and where to begin."
+  },
+  "poster": "A small boat lies in a calm harbor at dusk, held fast by a rope running down to an anchor in the clear water. A gold star shines over the harbor.",
+  "frames": [
+    {
+      "id": "sermon",
+      "name": "A sermon for the tired",
+      "still": "A small boat lies in a calm harbor at dusk, held fast by a rope running down to an anchor in the clear water. A gold star shines over the harbor.",
+      "younger": "Hebrews is a long letter to followers of Jesus who were tired. Once they had been brave. Now some were drifting away, like a boat slipping out of its harbor. No one knows who wrote it, but the writer wants to help them hold on.",
+      "older": "Hebrews begins like a sermon and ends like a letter, and no one knows who wrote it. It was written to believers who had once suffered bravely and were now tired, drifting and tempted to give up on Christ.",
+      "verse": {
+        "ref": "Hebrews 1:2",
+        "text": "But in these last days He has spoken to us by His Son"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one long scroll in six panels, with a crown, a tent, a lamp, a curtain, a runner and an open door over them. A gold rule lies under the fourth panel, the curtain.",
+      "younger": "The writer takes the gifts God gave Israel, one after another: the prophets, the angels, Moses, the priests and the sacrifices. He shows how each points to Jesus. Then he calls his friends to keep going.",
+      "older": "Teaching and urging take turns. Jesus is greater than the angels and Moses, a high priest like Melchizedek, and the one offering the tabernacle pointed toward. From chapter 10 the call is to draw near and endure.",
+      "verse": {
+        "ref": "Hebrews 8:6",
+        "text": "the covenant He mediates is better and is founded on better promises."
+      }
+    },
+    {
+      "id": "son",
+      "name": "Watch for: the Son",
+      "still": "A gold sun at the top of the sky sends its light across a wide land of hills, a river and a road. No one is drawn.",
+      "younger": "Watch how the letter begins. God spoke in many ways through the prophets. Now he has spoken by his Son. The Son shows exactly what God is like, and he became a real human being, so that he could help.",
+      "older": "God, who spoke through the prophets, has spoken last and best in his Son, the exact representation of his nature. The Son is also fully human: made like his brothers, tempted, crying out with tears.",
+      "verse": {
+        "ref": "Hebrews 1:3",
+        "text": "The Son is the radiance of God’s glory and the exact representation of His nature"
+      }
+    },
+    {
+      "id": "better",
+      "name": "Watch for: a gift that pointed ahead",
+      "still": "A tent of meeting stands in the desert, its curtains drawn. The shadow it casts on the sand runs toward a doorway of light at the picture's edge, and the light is gold.",
+      "younger": "Watch the word better. The gifts God gave Israel were good, and they came from God. They were like a shadow, pointing ahead to Jesus. Some Christians have used this book to look down on Jewish people. That was wrong.",
+      "older": "The word better runs through the book. The old covenant is a shadow, not because it was false, but because it pointed ahead; the writer honors it as God's gift. This book was misused to teach contempt for the Jewish people. That misuse was wrong.",
+      "verse": {
+        "ref": "Hebrews 10:1",
+        "text": "For the law is only a shadow of the good things to come"
+      }
+    },
+    {
+      "id": "priest",
+      "name": "Watch for: the great high priest",
+      "still": "A heavy curtain hangs in a quiet room, and at its center it is opened wide. Beyond it there is only gold light. No one is drawn.",
+      "younger": "Watch for Jesus as the great priest. A priest brought people near to God. Jesus did it by giving himself, once for all, when he died on the cross. Now he is alive, and he always prays for his people.",
+      "older": "Hebrews alone calls Jesus a priest at length. He offered not animals but himself, once for all, and sat down because the work was finished. He was tempted in every way, yet without sin, so he can sympathize; and he always lives to intercede.",
+      "verse": {
+        "ref": "Hebrews 7:25",
+        "text": "He always lives to intercede for them."
+      }
+    },
+    {
+      "id": "hold",
+      "name": "Watch for: hold on, and run",
+      "still": "Runners go along a long road toward a far finishing line, and along the road stand rows of people of every age watching them. One gold marker stands at the line.",
+      "younger": "Watch for the warnings: do not drift away. And watch for the hope that goes with them, like an anchor. Then comes a long list of people who trusted God, and a call to run the race with your eyes on Jesus.",
+      "older": "Five solemn warnings not to drift or turn away run beside as many words of hope; they are addressed to people the writer believes will persevere, and how they relate to assurance is much debated. Then the roll call of faith, and the race run looking to Jesus.",
+      "verse": {
+        "ref": "Hebrews 12:2",
+        "text": "Let us fix our eyes on Jesus, the author and perfecter of our faith"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter one. Then read chapters eleven and twelve, about the people who trusted God and the race. Hebrews takes about forty-five minutes to read aloud, so take it a part at a time.",
+      "older": "Start with chapter 1, then 11 and 12. The key chapters are 1, 2, 4, 6, 7, 9, 11 and 12. Read with the Old Testament texts it builds on open beside it, and watch for the word better and for the turn between teaching and warning.",
+      "verse": {
+        "ref": "Hebrews 13:8",
+        "text": "Jesus Christ is the same yesterday and today and forever."
+      }
+    }
+  ],
+  "think": {
+    "younger": "The readers of Hebrews were tired of believing. What helps you keep going when you feel tired?",
+    "older": "Hebrews answers tired believers not mainly by scolding but by showing them who Jesus is. Why might that help more than a warning alone?"
+  },
+  "read": [
+    { "label": "Hebrews 1", "href": "/study/bible/hebrews/1" },
+    { "label": "Hebrews 4", "href": "/study/bible/hebrews/4" },
+    { "label": "Hebrews 11", "href": "/study/bible/hebrews/11" },
+    { "label": "Hebrews 12", "href": "/study/bible/hebrews/12" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that Jesus is the eternal Son, fully God and fully human, and that his one offering of himself is enough. They differ on who wrote Hebrews (no one knows), and on what its warnings mean for a believer, one of the most debated questions in Christian theology. On one point the site takes a side, plainly: the old covenant was God's own gift, and the use of this book to teach contempt for the Jewish people was wrong. This moving picture takes no side on the warnings; the readings are set out on",
+    "links": [
+      { "label": "the Hebrews page of the Study Bible", "href": "/study/bible/hebrews" }
+    ]
+  },
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Hebrews in the Study Bible: the whole book", "href": "/study/bible/hebrews" },
+    { "label": "Sacrifice and the Lamb (a moving picture)", "href": "/study/explorer/watch/the-lamb" },
+    { "label": "Faith: trusting the one who promised (a moving picture)", "href": "/study/explorer/watch/faith" },
+    { "label": "Promises that build: the covenants (a moving picture)", "href": "/study/explorer/watch/covenant" }
+  ],
+  "end": { "label": "Start reading: Hebrews 1", "href": "/study/bible/hebrews/1" }
+}
