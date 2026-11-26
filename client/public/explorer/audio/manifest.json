@@ -3345,6 +3345,116 @@
     }
    ]
   },
+  "book-colossians": {
+   "title": {
+    "file": "book-colossians/title.mp3",
+    "hash": "916b3acefdf7f9cedaa0",
+    "seconds": 2.96,
+    "bytes": 18356
+   },
+   "younger": [
+    {
+     "id": "letter",
+     "file": "book-colossians/younger/01-letter.mp3",
+     "hash": "e7b2cde9da0e844ccc02",
+     "seconds": 24.45,
+     "bytes": 147236
+    },
+    {
+     "id": "layout",
+     "file": "book-colossians/younger/02-layout.mp3",
+     "hash": "59bf1dea16e810d41966",
+     "seconds": 22.91,
+     "bytes": 138020
+    },
+    {
+     "id": "song",
+     "file": "book-colossians/younger/03-song.mp3",
+     "hash": "06547db2e4ae2d2fc370",
+     "seconds": 23.16,
+     "bytes": 139604
+    },
+    {
+     "id": "fullness",
+     "file": "book-colossians/younger/04-fullness.mp3",
+     "hash": "a9bcf480b2033d3d5d52",
+     "seconds": 28.75,
+     "bytes": 173156
+    },
+    {
+     "id": "clothes",
+     "file": "book-colossians/younger/05-clothes.mp3",
+     "hash": "0bdb56da4ea2d6a5ba07",
+     "seconds": 25.95,
+     "bytes": 156308
+    },
+    {
+     "id": "home",
+     "file": "book-colossians/younger/06-home.mp3",
+     "hash": "b354e4dff4026eedbf27",
+     "seconds": 25.28,
+     "bytes": 152276
+    },
+    {
+     "id": "start",
+     "file": "book-colossians/younger/07-start.mp3",
+     "hash": "cac1af93b184fdf958ce",
+     "seconds": 18.68,
+     "bytes": 112676
+    }
+   ],
+   "older": [
+    {
+     "id": "letter",
+     "file": "book-colossians/older/01-letter.mp3",
+     "hash": "e7272ffb8f5947377c70",
+     "seconds": 26.52,
+     "bytes": 159620
+    },
+    {
+     "id": "layout",
+     "file": "book-colossians/older/02-layout.mp3",
+     "hash": "d7a55886641733c11b43",
+     "seconds": 23.54,
+     "bytes": 141908
+    },
+    {
+     "id": "song",
+     "file": "book-colossians/older/03-song.mp3",
+     "hash": "8e8bd6b5777ad95949e2",
+     "seconds": 25.26,
+     "bytes": 152132
+    },
+    {
+     "id": "fullness",
+     "file": "book-colossians/older/04-fullness.mp3",
+     "hash": "c87d7cac1c16af32e336",
+     "seconds": 26.38,
+     "bytes": 158900
+    },
+    {
+     "id": "clothes",
+     "file": "book-colossians/older/05-clothes.mp3",
+     "hash": "b3795474755d60ef1768",
+     "seconds": 27.87,
+     "bytes": 167828
+    },
+    {
+     "id": "home",
+     "file": "book-colossians/older/06-home.mp3",
+     "hash": "0e51ed42a21c48e4b0ee",
+     "seconds": 28.54,
+     "bytes": 171860
+    },
+    {
+     "id": "start",
+     "file": "book-colossians/older/07-start.mp3",
+     "hash": "1a1d3244fc7f003a9c42",
+     "seconds": 20.11,
+     "bytes": 121172
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

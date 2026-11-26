@@ -1758,6 +1758,23 @@
       "book": "galatians"
     },
     {
+      "slug": "book-colossians",
+      "title": "Colossians: complete in Christ",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short letter about how great Jesus is: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Colossians as a whole book: a letter to a church Paul never saw, the song of Christ, fullness, putting off and putting on, life in the Lord, and where to begin."
+      },
+      "mark": "book-colossians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "colossians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

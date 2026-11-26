@@ -1081,6 +1081,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M12,40h8v-6h8v6h8v-6h8M56,40h8v-6h8v6h8v-6h8v6" />
     </>
   ),
+  /* Colossians: one ring holding a sun, the hills and the sea, the sun gold. */
+  "book-colossians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M18,48a32,32 0 1,0 64,0a32,32 0 1,0 -64,0Z" />
+      <path className="pl-m" d="M43,32a7,7 0 1,0 14,0a7,7 0 1,0 -14,0Z" />
+      <path className="pl-l" d="M43,32a7,7 0 1,0 14,0a7,7 0 1,0 -14,0Z" />
+      <path className="pl-l" d="M24,54C32,44 40,46 48,52C56,44 66,44 76,54" />
+      <path className="pl-f" d="M28,64q5,-4 10,0t10,0t10,0t10,0t8,0" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

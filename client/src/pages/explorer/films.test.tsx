@@ -1736,6 +1736,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-1-samuel",
     "book-jeremiah",
     "book-galatians",
+    "book-colossians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2521,5 +2522,16 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toMatch(/takes no side among the readings/);
     const t = text(f);
     expect(t).not.toMatch(/Judaizer|legalis|Jews rejected|Christ.?killers|dead religion|works.righteous Jews/i);
+  });
+
+  it("Colossians names the household passage only as the book page does, with its care on abuse and its verdict on slavery, and draws no one in the song", () => {
+    const f = filmFile("book-colossians");
+    expect(f.care).toBe(filmFile("book-ephesians").care);
+    expect(f.frames.find(x => x.id === "home")!.older).toContain("give no one a licence to control or harm another");
+    expect(f.differ?.text).toContain("Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first.");
+    expect(f.differ?.text).toContain("The words to slaves were misused for centuries to defend slavery. That misuse was wrong.");
+    expect(f.differ?.links?.map(l => l.href)).toContain("/help");
+    expect(f.frames.find(x => x.id === "song")!.still).toContain("No one is drawn.");
+    expect(f.frames.find(x => x.id === "fullness")!.older).toContain("a shadow pointing ahead, not a lie");
   });
 });

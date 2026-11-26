@@ -1425,3 +1425,23 @@ The book page's caution is given at both levels: the quarrel in Galatia was amon
 | pictures | No one bars the gate; no one is drawn as Jewish or Gentile by any look; the teachers, Christ and God are not drawn; the gate's gold light and the shared load were redrawn after the sheet was read | The drawing (`scenes/book-galatians.tsx`); sheets of the finished frames read |
 | left out | Paul's curse on another gospel (1:8-9) in the captions; Hagar and Sarah; Luther and Bunyan; the north and south question in the captions | Deliberate; the book page is linked |
 | length | Younger 3:02.9, older 3:06.6 | `audio/manifest.json` |
+
+### Colossians: complete in Christ (`book-colossians`)
+
+The household passage is named only as the book page names it, and "Where churches differ" carries the page's lines on abuse and on slavery whole, with a link to Find Help, as the Ephesians film does. Israel's feasts and Sabbaths are "a shadow pointing ahead, not a lie", in the page's words.
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Colossians 1:7; 3:1; 1:17; 2:17; 3:14; 3:23; 2:10 (some trimmed to a clause) | BSB, by the validator; all Colossians |
+| 1 A letter to a church Paul never saw | Written from prison to a small church Paul had never seen; Epaphras, one of its own, carried the gospel home; some teaching promised more: visions, food rules, holy days, angels and powers; younger: Jesus a good start but not enough | The Colossians book page, overview and `teaching` "Colossians in a minute" ("believers would think Christ was a good start, and look elsewhere for the rest"), nearly word for word |
+| 2 How it is laid out | Chapters 1 and 2 who Christ is, 3 and 4 how believers live; the turn at the start of chapter 3; the commands grow out of the gifts | The book page's `reading` and `teaching` "How to read Colossians", nearly word for word. Two panels of two chapters; the gold rule under the first, from which "everything else in the letter grows" |
+| 3 The song of Christ | The image of the invisible God; all things made through him and for him; in him all things hold together; firstborn the heir with first place, not the first thing made, as the church confessed at Nicaea | The book page's `teaching` "The song of Christ (1:15-20)", nearly word for word; BSB Colossians 1:15-17 |
+| 4 Full | All the fullness of God dwells in Christ, believers complete in him; Israel's feasts and Sabbaths good gifts, a shadow pointing ahead, not a lie; the powers people feared disarmed at the cross | The book page, themes "Fullness", `teaching` "The big themes" and "What the letter is not" ("Paul calls them a shadow, not a lie"); BSB Colossians 2:9-10, 15-17 |
+| 5 New clothes | Put off anger, greed and lies; put on compassion, kindness, patience, forgiveness, and over all, love; no Greek or Jew, slave or free; Christ is all | The book page, overview and themes "Dying and rising with Christ" and "The new humanity"; BSB Colossians 3:8-14 |
+| 6 In the Lord | Every relationship in the Lord; the weaker spoken to first; duties, not privileges, on the stronger; churches read the words to wives and husbands differently, all agreeing they give no one a licence to control or harm; younger: whatever you do, for the Lord; thankful; wise toward outsiders | The book page's `teaching` "The household passage" and "How it is built", nearly word for word; BSB Colossians 3:17-4:6, 23 |
+| 7 Where to start | One sitting, aloud; the song slowly, more than once; beside Ephesians and Philemon; Christ treated as a good beginning, the rest sought elsewhere | The book page's `teaching` "How to read Colossians", nearly word for word; BSB Colossians 2:10 |
+| differ | Authorship (Paul; a follower after his death; Timothy in his life); place and date; what the teaching drew on; the household words read differently, love and no licence to harm agreed; the page's lines on abuse and on slavery, whole; no side | The book page's `teaching` "Who wrote it", "When and where", "The teaching that troubled the church", "The household passage"; links to the book page and Find Help |
+| care | "If something hard is happening to you or to someone you love, ..." | The care line of "Why do bad things happen?", whole (as "Ephesians") |
+| pictures | Christ and God not drawn: the song is all that was made in one ring, "No one is drawn"; no household rank drawn, no one ruling another | The drawing (`scenes/book-colossians.tsx`); a sheet of the finished frames read |
+| left out | The names of the greeting; Onesimus and Philemon in the captions; the words to slaves in the captions; baptism (2:12) | Deliberate; the book page is linked |
+| length | Younger 2:53.4, older 3:02.4 | `audio/manifest.json` |

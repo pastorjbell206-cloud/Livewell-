@@ -418,6 +418,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole letter to the Galatians in seven moving pictures: an urgent letter, how it is laid out, who belongs, Abraham and the law, one table, what freedom is for, and where to start reading.",
     },
+    "book-colossians": {
+      title: "Colossians: complete in Christ: Bible Explorer",
+      description:
+        "The whole letter to the Colossians in seven moving pictures: a letter to a church Paul never saw, how it is laid out, the song of Christ, fullness, new clothes, life in the Lord, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
