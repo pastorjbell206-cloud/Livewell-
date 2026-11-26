@@ -216,6 +216,47 @@ All nine files were edited. In his running prose (before the reflection question
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
+## Whole read (2026-11-26)
+
+The first pass, recorded above, recast every dash by a fixed rule and judged each proposal in its own sentence. This second pass read every file whole, as the first four books were read, in the text as the rule left it, with each place the rule had changed marked in the reading copy. The edits are punctuation and capital letters only: no word was added, removed or replaced. The fact diff (`/home/user/vb/factdiff.py`, against the typesetter's original text, b73de6b1) now also holds the booklet's words equal to the original's, counted as a list, and it passes on every file.
+
+What the whole read changed, in 27 edits:
+
+- **A comma before a gloss.** It is now a colon ("a portrait of a person: a person whose interior life …"; "genuinely formed by the gospel: someone who can be trusted …"; "available and willing: the characteristics that should be necessary but not sufficient"). The paired descriptions of what a low standard costs in chapter 1 ("managed without compassion: where decisions …"; "genuinely cold: where guests …") took the same change.
+- **A long subject closed by a semicolon before "this person".** The rule left "… to specific individuals; this person must be someone whose words can be trusted absolutely" in four places (chapters 2, 3 and 4). The semicolon cut the sentence's subject from its verb; it is now a comma.
+- **Fragment stacks joined.** "The double-tongued deacon will gossip. Will misrepresent. Will tell each party …" is now one sentence. So are the introduction's "That … That …", chapter 3's "Not a theologian. Not someone who …. But someone …" and chapter 6's three deacons whose character has drifted.
+- **An aside in bare commas** now takes brackets ("the two qualifications Paul includes … (doctrinal faithfulness and household leadership) are also …"; "How do others who know you in ordinary life (not just at church) describe you?").
+
+Left alone, and why:
+
+- The sample installation charge in the appendix is set as he wrote it; only its rule colon was read, and it stands.
+- The verdicts stay ("The person is still a person. The conversation is still hard.").
+
+Five pairs:
+
+1. Chapter 2. Before: "The deacon who handles confidential information about struggling families, who manages the practical care needs of vulnerable members, who communicates the community's practical expressions of love to specific individuals; this person must be someone whose words can be trusted absolutely. The double-tongued deacon will gossip. Will misrepresent. Will tell each party in a conflict what they want to hear." After: "… to specific individuals, this person must be someone whose words can be trusted absolutely. The double-tongued deacon will gossip, will misrepresent, will tell each party in a conflict what they want to hear."
+2. Chapter 1. Before: "Paul is saying that the deacon must be a person whose life, when honestly observed, generates genuine respect. Not universal admiration; genuine character does not always produce universal admiration, particularly in communities where character is not itself consistently valued. But honest respect." After: "… generates genuine respect: not universal admiration (genuine character does not always produce universal admiration, particularly in communities where character is not itself consistently valued), but honest respect."
+3. Chapter 2. Before: "The dignified person carries themselves with a quality that communicates seriousness of purpose. Not solemnity or heaviness; the dignified person is often warm, often funny, often deeply enjoyable to be around." After: "… seriousness of purpose: not solemnity or heaviness (the dignified person is often warm, often funny, often deeply enjoyable to be around)."
+4. Introduction. Before: "It is saying, in effect, that the people who serve communion, manage the building, and care for the vulnerable members of the congregation do not need to be people of genuine spiritual character. That the ministry of mercy can be performed by anyone willing to show up. That what matters …" After: "… people of genuine spiritual character; that the ministry of mercy can be performed by anyone willing to show up; that what matters …"
+5. Conclusion. Before: "The standard is not a burden. It is a gift, to the congregation that is served …, to the deacons …, and to the God …" After: "It is a gift: to the congregation that is served …"
+
+The counts below are for his running prose, the rule-pass text against the text now. Semicolons, colons and brackets are counted outside quotations.
+
+| Chapter | Words | Edits | Semicolons | Colons | Brackets | Fact diff |
+|---|---|---|---|---|---|---|
+| Introduction: The Standard Matters | 348 | 3 | 0 → 2 | 1 → 3 | 0 → 0 | PASS |
+| Why the Standard Exists | 669 | 5 | 1 → 0 | 4 → 9 | 1 → 2 | PASS |
+| Worthy of Respect: The Character Qualifications | 1,019 | 5 | 3 → 0 | 7 → 9 | 2 → 3 | PASS |
+| Holding the Mystery and the Marriage Qualifications | 727 | 4 | 1 → 0 | 11 → 13 | 3 → 4 | PASS |
+| The Women Deacons Qualification and the Spouse Consideration | 596 | 3 | 1 → 0 | 6 → 8 | 3 → 3 | PASS |
+| Designing the Selection Process | 1,149 | 3 | 5 → 4 | 10 → 13 | 2 → 2 | PASS |
+| Retiring and Removing Deacons | 956 | 2 | 4 → 6 | 5 → 7 | 0 → 0 | PASS |
+| Conclusion: Servants Worthy of the Calling | 323 | 1 | 0 → 0 | 1 → 2 | 2 → 2 | PASS |
+| Appendix: Deacon Selection Tools | 553 | 1 | 0 → 0 | 10 → 10 | 1 → 2 | PASS |
+| **All 9** | 6,340 | 27 | 15 → 12 | 55 → 74 | 14 → 18 | |
+
+The files were rebuilt with `node scripts/build-book-files.mjs deacon-qualifications --verify`. It passed: the EPUB holds 7,112 words, word for word the source, and the PDF's 38,381 body characters on its pages are exactly the source's. The page count is unchanged at 43 (`client/src/data/booklets.ts` needs no change). Page 16 of the PDF, where chapter 2's double-tongued deacon falls, was rendered and looked at.
+
 ## For James: things that look wrong, none of them changed
 
 The booklet was read for this list in its dash contexts and searched for references and cross-references.

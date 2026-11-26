@@ -193,6 +193,47 @@ Eight of the nine files were edited (the appendix has no long dash in its prose)
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
+## Whole read (2026-11-26)
+
+The first pass, recorded above, recast every dash by a fixed rule and judged each proposal in its own sentence. This second pass read every file whole, as the first four books were read, in the text as the rule left it, with each place the rule had changed marked in the reading copy. The edits are punctuation and capital letters only: no word was added, removed or replaced. The fact diff (`/home/user/vb/factdiff.py`, against the typesetter's original text, b82f8c21) now also holds the booklet's words equal to the original's, counted as a list, and it passes on every file.
+
+What the whole read changed, in 12 edits:
+
+- **A comma or semicolon before a gloss.** It is now a colon ("whether it is working: whether it is enabling faithful ministry or impeding it"; "not on the table: it requires a denominational structure …"; "genuine spiritual oversight: the kind of discernment …"; "in the absence of things: in the absence of the governance disputes …").
+- **Fragment stacks joined.** The three people who take a congregational meeting off script ("The member who rises …. The faction …. The individual …") are now one list after a colon. Two "Not … but …" fragments join the sentence before them (chapter 3).
+- **A pair the rule left lopsided.** In chapter 6 "disputable matters" had its gloss in brackets and "boundary matters" in a bare comma; both now take brackets.
+- **A closing bracket that needed a comma after it** (chapters 3, 5 and 6).
+
+Left alone, and why:
+
+- The introduction's "It sounds dry. It sounds institutional. It sounds like …" and the conclusion's "Do the governance work. Review the documents. Clarify the authority." stay: each sentence is whole.
+- The appendix's one-line entries stay as they are (see item 3 below).
+
+Five pairs:
+
+1. Chapter 5. Before: "… experienced the congregational meeting that goes off script. The member who rises to oppose a decision the leadership believed was settled. The faction that has organized informally … The individual whose genuine question opens a floor discussion …" After: "… goes off script: the member who rises to oppose a decision the leadership believed was settled; the faction that has organized informally …; the individual whose genuine question …"
+2. Chapter 6. Before: "the distinction between disputable matters (areas where the church's members can hold differing views without threatening the community's unity) and boundary matters, areas where the community's confessional commitments require a clear institutional response." After: "… and boundary matters (areas where the community's confessional commitments require a clear institutional response)."
+3. Chapter 3. Before: "How the pastor responds to members in crisis, how pastoral care resources are deployed, how counseling referrals are made; these are pastoral decisions that belong to the pastoral staff." After: "… how counseling referrals are made: these are pastoral decisions …"
+4. Chapter 3. Before: "The congregation's affirmation of the people who will lead and serve them is an appropriate exercise of congregational authority. Not a democratic election without guidance, but a meaningful process …" After: "… an appropriate exercise of congregational authority: not a democratic election without guidance, but a meaningful process …"
+5. Conclusion. Before: "It will be felt in the absence of things, in the absence of the governance disputes, the authority vacuum crises, and the institutional chaos …" After: "It will be felt in the absence of things: in the absence of the governance disputes …"
+
+The counts below are for his running prose, the rule-pass text against the text now. Semicolons, colons and brackets are counted outside quotations.
+
+| Chapter | Words | Edits | Semicolons | Colons | Brackets | Fact diff |
+|---|---|---|---|---|---|---|
+| Introduction: Why Governance Matters More Than You Think | 343 | 0 | 0 → 0 | 1 → 1 | 1 → 1 | PASS |
+| Why Governance Matters and How It Breaks | 647 | 1 | 4 → 4 | 10 → 11 | 6 → 6 | PASS |
+| The Three Major Models Compared | 920 | 1 | 1 → 0 | 2 → 3 | 13 → 13 | PASS |
+| What Pastors Decide and What Belongs to the Congregation | 892 | 5 | 1 → 0 | 4 → 7 | 6 → 6 | PASS |
+| Building Clear Decision-Making Structures | 950 | 0 | 0 → 0 | 6 → 6 | 3 → 3 | PASS |
+| The Congregational Meeting | 848 | 2 | 0 → 2 | 2 → 3 | 6 → 6 | PASS |
+| Governance in Crisis and Transition | 824 | 2 | 0 → 0 | 2 → 2 | 5 → 6 | PASS |
+| Conclusion: Governance as Stewardship | 276 | 1 | 0 → 0 | 1 → 2 | 0 → 0 | PASS |
+| Appendix: Governance Tools | 267 | 0 | 0 → 0 | 0 → 0 | 3 → 3 | PASS |
+| **All 9** | 5,967 | 12 | 6 → 6 | 28 → 35 | 43 → 44 | |
+
+The files were rebuilt with `node scripts/build-book-files.mjs church-governance --verify`. It passed: the EPUB holds 6,703 words, word for word the source, and the PDF's 39,397 body characters on its pages are exactly the source's. The page count is unchanged at 44 (`client/src/data/booklets.ts` needs no change). Page 35 of the PDF, where chapter 5's list of the people who take a meeting off script falls, was rendered and looked at.
+
 ## For James: things that look wrong, none of them changed
 
 The booklet was read for this list in its dash contexts and searched for references and cross-references.
