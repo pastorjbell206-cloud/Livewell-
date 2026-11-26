@@ -24953,3 +24953,19 @@ Cut in chapter 7: nothing.
 | The hard note: How could religious leaders practice idolatry inside the temple and still think of themselves as faithful? The readings in their holders' terms | 7-18 `hard` | ezekiel/8.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 8: nothing; Jaazaniah's family named only as many scholars' view.
+
+## The plain notes on Ezekiel 9 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The man in linen and the mark: the text paraphrased; quoted clauses at verses 2, 3, 4 | 1-4 | BSB | BSB text |
+| Background in `hearers` | 1-4 | ezekiel/9.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 12:13 | 1-4 `later` | BSB | BSB text |
+| Judgment begins at the sanctuary: the text paraphrased; quoted clauses at verses 6, 6-7, 8, 9, 11 | 5-11 | BSB | BSB text |
+| Background in `hearers` | 5-11 | ezekiel/9.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 18:25; Jeremiah 39:15-18 | 5-11 `later` | BSB | BSB text |
+| The hard note: How can God command the killing of old and young, women and children, even in a vision? The readings in their holders' terms | 5-11 `hard` | ezekiel/9.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 9: the early Christian reading of the tav as the cross, kept as a later reflection; Revelation 7:3, a parallel the New Testament does not draw from Ezekiel; the killing named, not described.
