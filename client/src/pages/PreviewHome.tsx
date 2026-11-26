@@ -62,15 +62,7 @@ export const DISCIPLINES: { id: string; name: string; line: string; plate: Plate
 /** What is here, by the catalogue's own counts. */
 const LEDGER = ["bible.read", "bible.films", "questions.answers", "questions.life", "tools.groups", "family.catechism"];
 
-/** Learning paths that exist today, in the order a reader might walk them. */
-const PATHS: { name: string; href: string; who: string }[] = [
-  { name: "New to faith, or coming back", href: "/tracks/new-to-this", who: "For someone starting, or starting again" },
-  { name: "Weigh the case for yourself", href: "/tracks/skeptical", who: "For the skeptic, with the case against stated first" },
-  { name: "Your questions, taken seriously", href: "/tracks/stepped-back", who: "For the Christian who has stepped back" },
-  { name: "Study, history, doctrine", href: "/tracks/deeper", who: "For going down to the foundations" },
-  { name: "Deep in one: the Gospel of Mark", href: "/tracks/mark", who: "A whole book, read slowly" },
-  { name: "Church history, in order", href: "/theology/history#course", who: "Fourteen lessons, the apostles to today" },
-];
+/** Courses the brief plans and the site does not have yet. Named, never linked. */
 const PATHS_PLANNED = ["Old Testament survey", "New Testament survey", "Systematic theology", "Christian ethics", "Church leadership"];
 
 const TOOLS = ["bible.search", "bible.word", "bible.cross-references", "bible.timeline", "bible.atlas", "questions.which-view"];
@@ -99,6 +91,7 @@ const BibleShelf = lazy(() => import("./home/BibleShelf"));
 const QuestionPicker = lazy(() => import("./home/QuestionPicker"));
 const HistoryStrip = lazy(() => import("./home/HistoryStrip"));
 const PreviewFilms = lazy(() => import("./preview/PreviewFilms"));
+const PreviewPaths = lazy(() => import("./preview/PreviewPaths"));
 
 /** A box that holds the piece's height until the piece arrives, loaded as it nears the screen. */
 function Piece({ name, children }: { name: string; children: ReactNode }) {
@@ -407,18 +400,13 @@ export default function PreviewHome() {
       {/* LEARNING PATHS */}
       <section id="paths" className="home-sec pv-sec" aria-labelledby="pv-paths">
         <div className="home-wrap">
-          <Head id="pv-paths" eyebrow="The Academy" title="More than one page at a time" lede="Paths of short sessions, walked in order, about ten minutes each. Your place is kept on this device." link={{ href: "/tracks", label: "Every path" }} />
-          <ol className="pv-road">
-            {PATHS.map((p) => (
-              <li key={p.href} className="pv-road__stop">
-                <Link href={p.href} className="pv-road__link">
-                  <span className="pv-road__dot" aria-hidden="true" />
-                  <span className="pv-road__name">{p.name}</span>
-                  <span className="pv-road__who">{p.who}</span>
-                </Link>
-              </li>
-            ))}
-          </ol>
+          <Head id="pv-paths" eyebrow="The Academy" title="More than one page at a time" lede="Paths of short sessions, walked in order, about ten minutes each. Choose one to see the whole road. Your place is kept on this device." link={{ href: "/tracks", label: "Every path" }} />
+          <Piece name="paths">
+            <PreviewPaths />
+          </Piece>
+          <p className="pv-also">
+            Also in order: <Link href="/theology/history#course">church history in fourteen lessons</Link>, from the apostles to today.
+          </p>
           <p className="pv-planned">
             <span className="pv-planned__label">Planned for the Academy</span>
             {PATHS_PLANNED.join(", ")}. Not available yet.

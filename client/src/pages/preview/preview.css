@@ -132,16 +132,27 @@
 .pv-screening__status{font-family:var(--U);font-size:15px;color:var(--ink-muted);min-height:320px}
 .pv-screening__own{display:inline-flex;align-items:center;min-height:44px;margin-top:var(--s-2);font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink);text-decoration-color:var(--mustard);text-underline-offset:.2em}
 
-/* The road of learning paths. */
-.pv-road{list-style:none;margin:var(--s-2) 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));position:relative}
-.pv-road::before{content:"";position:absolute;left:0;right:0;top:11px;border-top:2px dashed var(--borderdk)}
-.pv-road__link{position:relative;display:flex;flex-direction:column;height:100%;padding:0 18px 0 0;color:var(--ink);text-decoration:none}
-.pv-road__dot{display:block;width:24px;height:24px;border-radius:50%;background:var(--bone);border:2px solid var(--ink);transition:background .25s var(--ease),transform .25s var(--ease)}
-.pv-road__link:hover .pv-road__dot,.pv-road__link:focus-visible .pv-road__dot{background:var(--mustard);transform:scale(1.15)}
-.pv-road__name{font-family:var(--F);font-size:clamp(1.25rem,1.05rem + .6vw,1.5rem);line-height:1.12;letter-spacing:-.01em;margin-top:var(--s-2)}
-.pv-road__who{font-family:var(--U);font-size:13.5px;line-height:1.45;color:var(--ink-muted);margin-top:8px}
-.pv-road__link:hover .pv-road__name{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.16em}
-.pv-planned{margin:var(--s-5) 0 0;padding-top:var(--s-2);border-top:1px solid var(--border);font-family:var(--U);font-size:14.5px;line-height:1.6;color:var(--ink-muted)}
+/* The learning paths: choose one, see its whole road. */
+.home-piece--paths{min-height:470px}
+.pv-paths__tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 4px;scrollbar-width:none}
+.pv-paths__tabs::-webkit-scrollbar{display:none}
+.pv-paths__tabs .home-chip{flex:none}
+.pv-paths__body{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s-6);align-items:start;margin-top:var(--s-4);animation:pv-open .45s var(--ease)}
+.pv-paths__title{font-family:var(--F);font-weight:400;font-size:clamp(2rem,1.5rem + 1.8vw,3rem);line-height:1.02;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.pv-paths__title a{color:inherit;text-decoration:none}
+.pv-paths__title a:hover{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1px;text-underline-offset:.14em}
+.pv-paths__meta{font-family:var(--U);font-size:13.5px;font-weight:500;color:var(--ink-muted);margin:12px 0 0}
+.pv-paths__sub{font-family:var(--font-reading);font-size:18px;line-height:1.55;margin:var(--s-2) 0 var(--s-3);max-width:44ch}
+.pv-trail{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:column;grid-template-rows:repeat(var(--rows,6),auto);column-gap:var(--s-4);border-top:1.5px solid var(--ink)}
+.pv-trail__stop{display:grid;grid-template-columns:30px minmax(0,1fr);gap:12px;align-items:center;min-height:52px;padding:8px 0;border-bottom:1px solid var(--border);color:var(--ink);text-decoration:none}
+.pv-trail__n{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1.5px solid var(--ink);font-family:var(--U);font-size:13px;font-weight:500;font-variant-numeric:tabular-nums;transition:background .2s var(--ease),color .2s var(--ease)}
+.pv-trail__stop:hover .pv-trail__n,.pv-trail__stop:focus-visible .pv-trail__n{background:var(--ink);color:var(--bone)}
+.pv-trail__stop.is-done .pv-trail__n{background:var(--mustard);border-color:var(--mustard);color:var(--charcoal)}
+.pv-trail__t{font-family:var(--F);font-size:21px;line-height:1.15}
+.pv-trail__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.pv-also{margin:var(--s-4) 0 0;font-family:var(--U);font-size:15px;line-height:1.6;color:var(--ink-muted)}
+.pv-also a{color:var(--ink);font-weight:500;text-decoration-color:var(--mustard);text-underline-offset:.2em}
+.pv-planned{margin:var(--s-3) 0 0;padding-top:var(--s-2);border-top:1px solid var(--border);font-family:var(--U);font-size:14.5px;line-height:1.6;color:var(--ink-muted)}
 .pv-planned__label{font-weight:600;color:var(--ink);margin-right:10px}
 
 /* Tools. */
@@ -178,8 +189,8 @@
 .pv-close__help a{display:inline-flex;align-items:center;min-height:44px;color:var(--charcoal-fg);font-weight:500;text-decoration-color:var(--mustard);text-underline-offset:.2em}
 
 @media (prefers-reduced-motion:reduce){
-  .pv-atlas__spread,.pv-screening,.pv-hero__art .pl-m,.pv-hero__art .pl-m+.pl-l,.pv-hero__art path:has(+.pl-m){animation:none}
-  .pv-atlas__tab,.pv-road__dot,.pv-reel__screen,.pv-nav__plate,.pv-tool__icon{transition:none}
+  .pv-atlas__spread,.pv-screening,.pv-paths__body,.pv-hero__art .pl-m,.pv-hero__art .pl-m+.pl-l,.pv-hero__art path:has(+.pl-m){animation:none}
+  .pv-atlas__tab,.pv-trail__n,.pv-reel__screen,.pv-nav__plate,.pv-tool__icon{transition:none}
 }
 
 @media (max-width:1060px){
@@ -188,8 +199,6 @@
   .pv-ledger li:nth-child(4){border-left:0}
   .pv-ledger li:nth-child(4) .pv-ledger__item{padding-left:0}
   .pv-ledger li:nth-child(n+4){border-top:1px solid var(--border)}
-  .pv-road{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:var(--s-4)}
-  .pv-road::before{display:none}
   .pv-tools{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:900px){
@@ -231,12 +240,9 @@
   .home-piece--reel{min-height:720px}
   .pv-reel__body{grid-template-columns:minmax(0,1fr);gap:var(--s-3)}
   .pv-reel__list li:nth-child(n+5){display:none}
-  .pv-road{grid-template-columns:minmax(0,1fr);row-gap:0;padding-left:0}
-  .pv-road::before{display:block;left:11px;right:auto;top:6px;bottom:6px;border-top:0;border-left:2px dashed var(--borderdk)}
-  .pv-road__link{display:grid;grid-template-columns:24px minmax(0,1fr);column-gap:18px;padding:0 0 var(--s-3)}
-  .pv-road__dot{grid-row:span 2}
-  .pv-road__name{margin-top:0}
-  .pv-road__who{margin-top:4px}
+  .home-piece--paths{min-height:900px}
+  .pv-paths__body{grid-template-columns:minmax(0,1fr);gap:var(--s-4);margin-top:var(--s-3)}
+  .pv-trail{grid-template-columns:minmax(0,1fr);grid-auto-flow:row;grid-template-rows:none}
   .pv-tools{grid-template-columns:minmax(0,1fr)}
   .pv-desk,.pv-pair,.pv-close{grid-template-columns:minmax(0,1fr);gap:var(--s-5)}
   .pv-books{gap:var(--s-2)}

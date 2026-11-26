@@ -69,7 +69,7 @@ describe("/preview/home", () => {
         /^\/writing\/[a-z0-9-]+$/.test(href) ||
         /^\/books\/[a-z-]+$/.test(href) ||
         /^\/start#[a-z-]+$/.test(href) ||
-        ["/tracks", "/tools", "/family", "/studyguides", "/writing", "/subscribe", "/about", "/support", "/explore", "/help", "/help/doubt", "/study/films", "/study/bible", "/theology/history"].includes(href);
+        ["/tracks", "/tools", "/family", "/studyguides", "/writing", "/subscribe", "/about", "/support", "/explore", "/help", "/help/doubt", "/study/films", "/study/bible", "/theology/history", "/theology/history#course"].includes(href);
       expect(real, href).toBe(true);
     }
   });
