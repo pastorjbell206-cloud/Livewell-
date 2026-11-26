@@ -24150,3 +24150,27 @@ New Testament lines in chapter 13: Matthew 26:31 and Mark 14:27 quote 13:7. Cut 
 | Later: Exodus 28:36; Leviticus 23:39-43 | 12-21 `later` | BSB | BSB text |
 
 New Testament lines in chapter 14: none drawn. Cut in chapter 14: The claim that Jerusalem had only one small spring, which no repository source gives. The atrocity of 14:2 and the plague of 14:12 are named, not described. The sexual-violence care line is the site's existing one, byte for byte.
+
+## Malachi's book page (teaching introduction, 2026-11-26)
+
+Every claim in `client/public/bible/notes/malachi/intro.json`, field `teaching`. No web searches. Scripture is the BSB in the repository, matched by the four quotation checks (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Last of the Twelve and of the Christian Old Testament; Judah after the return; the rebuilt temple; Persian rule; cynicism; 1:2; the arguments and the abuses; 3:1-2 and 4:5-6 summarized; John the Baptist | in-a-minute | malachi/intro.json `overview` | Repository; BSB text |
+| Cyrus 539 BC; the temple 515 BC; Persian governor; Artaxerxes the First, 465 to 424 BC; the walls until Nehemiah; no Davidic king; Edom's ruin | story | malachi/intro.json `setting` | Repository |
+| Nothing known of Malachi; the name and 3:1; the Septuagint's reading; the tradition naming Ezra; the critical and conservative views, each in its holders' terms; after 515 BC; the governor (1:8); Ezra and Nehemiah; about 470 to 430 BC; 458 and 445 BC; Nehemiah's second visit | who | malachi/intro.json `author`, `date` | Repository; the site takes no side |
+| Six disputations and their ranges; the four objections quoted (1:2; 1:6; 2:17; 3:7); Hebrew 3:19-24 | built | malachi/intro.json `structure`, `reading`; BSB | Repository; BSB text |
+| 1:2 and 1:2-3 quoted; love and hate as choosing (Genesis 29:30-31); God's gifts to Esau (Genesis 33 and 36); Romans 9:13 and the Reformed and Arminian readings | love | malachi/1.json `words`, `hard`; BSB | Repository; BSB text; the site takes no side |
+| The defective offerings; 1:8 (in double quotes); the shut doors; 1:11 (its clause); 2:6 and 2:7 (their clauses); partiality | priests | malachi/1.json, 2.json `cultural`; BSB | Repository; BSB text |
+| 2:10 (its first two questions); foreign worship; the economics of divorce; 2:14 (three phrases); the two readings of 2:16; aimed at covenant breakers; divorce allowed in some cases; the abuse care line, byte for byte | marriage | malachi/2.json `historical`, `cultural`, `hard`; BSB | Repository; BSB text; care line reused (19 places) |
+| 2:17; 3:1 and 3:2 (their sentences); 3:5 paraphrased; 3:6; 3:7 (its clause); the tithe and the storehouse; 3:10 summarized; the two Christian views of tithing; no prosperity teaching | messenger | malachi/3.json `cultural`, `hard`; BSB | Repository; BSB text; stated as the brief asks |
+| 3:14 and 3:16; the scroll and treasured possession; 4:2; 4:4; 4:5; 4:6 summarized; the synagogue custom of repeating 4:5 | day | malachi/3.json, 4.json `cultural`; BSB | Repository; BSB text |
+| Mark 1:2; Matthew 11:10; Matthew 11:14; Luke 1:17; John 1:21; Romans 9:13; only these | new-testament | malachi/intro.json `christ`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read | readers | malachi/intro.json `reading` | Repository |
+| Hard passages (8) and key words (14): from the chapter notes | lists | malachi/1.json to 4.json | Repository |
+| Timeline (6): 539; 515; 465 to 424; about 470 to 430; 458; 445 | timeline | malachi/intro.json `date`, `setting`; haggai/intro.json | Repository |
+| The map: Jerusalem only, at the point this site's maps use | map | the site's points | Edom and Horeb left off; no borders |
+| Go deeper: eight pages | deeper | bible/guides (reading-prophets, offerings-and-purity, between-the-testaments); bible/doctrines.json (Election and Calling; Marriage, Family, and Sexuality; Money and Possessions; The Messiah); /help/marriage | Repository; every page live |
+
+Cut from the book page: the introduction's thematic Christian readings of 1:11, the refining fire and the sun of righteousness (the Didache, Charles Wesley's hymn), which the New Testament does not draw from Malachi.
