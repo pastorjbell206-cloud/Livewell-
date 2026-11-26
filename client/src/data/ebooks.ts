@@ -149,7 +149,7 @@ export const FREE_EBOOKS: Ebook[] = [
     title: "Is Critical Race Theory Biblical?",
     sub: "Race, Justice, and What the Church Actually Owes the World",
     line: "Race, justice, and what the church actually owes the world — a Scripture-first reckoning that refuses both wholesale adoption and reflexive dismissal.",
-    pages: 206,
+    pages: 193,
     cover: "/covers/critical-race-theory-biblical-400.webp",
     pdf: "/ebook/critical-race-theory-biblical/Is-Critical-Race-Theory-Biblical.pdf",
     epub: "/ebook/critical-race-theory-biblical/Is-Critical-Race-Theory-Biblical.epub",
