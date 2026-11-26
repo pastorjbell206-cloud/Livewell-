@@ -24070,3 +24070,18 @@ New Testament lines in chapter 8: none drawn. Cut in chapter 8: nothing.
 | The hard note: Why does a chapter about a king of peace also celebrate violent victory over the nations? The readings in their holders' terms | 9-17 `hard` | zechariah/9.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 9: Matthew 21:5 and John 12:15 quote 9:9. Cut in chapter 9: nothing.
+
+## The plain notes on Zechariah 10 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Ask the LORD for rain, not the idols: the text paraphrased, its quoted verses (in single or double quotes) | 1-5 | BSB | BSB text |
+| Background in `hearers` | 1-5 | zechariah/10.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 23:1-2; Psalm 118:22 | 1-5 `later` | BSB | BSB text |
+| God whistles for his scattered people: the text paraphrased, its quoted verses (in single or double quotes) | 6-12 | BSB | BSB text |
+| Background in `hearers` | 6-12 | zechariah/10.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 11:11; Hosea 11:11 | 6-12 `later` | BSB | BSB text |
+
+New Testament lines in chapter 10: none drawn. Cut in chapter 10: nothing.
