@@ -1,0 +1,137 @@
+{
+  "title": "1 Peter: hope for strangers",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-1-peter",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "strangers",
+      "kicker": "Strangers at home",
+      "level": 0.2,
+      "lines": [
+        "First Peter is a letter of hope to believers who had become strangers in their own towns. They had left the festivals that held town life together, and were insulted and slandered.",
+        "They had not lost their homes, but they had lost their place."
+      ],
+      "scripture": {
+        "reference": "1 Peter 2:11",
+        "text": "as foreigners and exiles",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "It has four movements. Who you are. How to live among neighbors who slander you. Suffering for doing good. And a word to elders and to all.",
+        "One pattern runs through it, first for Christ and then for his people: suffering now, and glory after."
+      ],
+      "scripture": {
+        "reference": "1 Peter 5:10",
+        "text": "after you have suffered for a little while, the God of all grace",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "hope",
+      "kicker": "Watch for: a living hope",
+      "level": 0.5,
+      "lines": [
+        "God has given new birth into a living hope through the resurrection of Jesus. An inheritance waits that cannot spoil.",
+        "Trials test faith, more precious than gold, and they are a short time before glory."
+      ],
+      "scripture": {
+        "reference": "1 Peter 1:3",
+        "text": "a living hope through the resurrection of Jesus Christ from the dead",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "people",
+      "kicker": "Watch for: a people",
+      "level": 0.7,
+      "lines": [
+        "Peter gives a mostly Gentile church the titles God gave Israel at Sinai.",
+        "But you are a chosen people, a royal priesthood, a holy nation.",
+        "He is a Jew, writing in Israel's own Scriptures to welcome Gentiles into Israel's blessings. Using the New Testament to justify contempt for Jews is false."
+      ],
+      "scripture": {
+        "reference": "1 Peter 2:9",
+        "text": "But you are a chosen people, a royal priesthood, a holy nation",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "good",
+      "kicker": "Watch for: doing good",
+      "level": 0.8,
+      "lines": [
+        "To suffer for doing good, without striking back, is to walk where Christ walked. Peter's readers neither retaliate nor retreat. They do good and give a gentle answer.",
+        "These chapters never say that someone being harmed must stay and bear it."
+      ],
+      "scripture": {
+        "reference": "1 Peter 2:23",
+        "text": "When they heaped abuse on Him, He did not retaliate",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "care",
+      "kicker": "Watch for: not alone",
+      "level": 0.7,
+      "lines": [
+        "Elders are to shepherd God's flock willingly, as examples. Everyone is to be humble.",
+        "Cast all your anxiety on Him, because He cares for you.",
+        "Peter doesn't tell sufferers to carry it alone. After a little while, the God of all grace will restore them."
+      ],
+      "scripture": {
+        "reference": "1 Peter 5:7",
+        "text": "Cast all your anxiety on Him, because He cares for you.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "Christians differ on who wrote the letter, on how Israel and the church fit together, on Christ's preaching to the spirits in prison, and on how the words to wives and husbands apply today. On those this film takes no side.",
+        "Using Peter's words to slaves to defend slavery was a misuse, and it was wrong."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read it in one sitting, as a real letter to frightened people. Read the household passages beside the picture of Christ in chapter two.",
+        "Where churches differ, read more than one view before you settle."
+      ],
+      "scripture": {
+        "reference": "1 Peter 3:15",
+        "text": "the reason for the hope that is in you.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Suffering now, and glory after."
+      ],
+      "titleCard": [
+        "Hope for strangers.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
