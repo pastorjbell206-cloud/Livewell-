@@ -22696,3 +22696,22 @@ Cut in chapter 4: the deep note's line to Christ (the bride as the church, left 
 | Psalm 92:12; Amos 3:15 (its clause) | 9-16 | song-of-solomon/5.json `historical` (Amos 3:15); BSB | Repository; BSB text |
 
 Cut in chapter 5: the deep note's lines to Christ (Revelation 3:20 beside the knock, which the note says Revelation does not cite; the woman's praise as the church's adoration of Christ; ‘altogether lovely’ in later preaching). The suggestive double meanings the deep note names are left unspoken; the scene is told in its own images.
+
+## The plain notes on the Song of Songs 6 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1; 6:2; 6:3 | 1-3 | BSB | BSB text |
+| Picking up from chapter 5; the separation not final; the garden as a picture of the beloved and closeness in ancient love poetry, and Egyptian love songs; 6:3 reversing 2:16 | 1-3 | song-of-solomon/6.json `story`, `cultural`, `literary` | Repository |
+| Genesis 2:8 | 1-3 | song-of-solomon/intro.json `story` (the garden and Eden); BSB | Repository; BSB text |
+| 6:4; 6:5 (its first sentence); the repeated praise (6:5-7) paraphrased; 6:8; 6:9 paraphrased; 6:10 | 4-10 | BSB | BSB text |
+| Tirzah before Omri moved to Samaria (1 Kings 16:23-24), meaning pleasing; two capitals and the dating question; beauty that awes, army and sky; praise repeated from chapter 4; the royal household (1 Kings 11:3); tam | 4-10 | song-of-solomon/6.json `historical`, `cultural`, `literary`, `words` (tam) | Repository; each reading in its holders' terms |
+| 1 Kings 11:3 (its first clause, before the dash) | 4-10 | song-of-solomon/6.json `historical`; BSB | Repository; BSB text |
+| The hard note: the allegorical reading (Targum and midrash; Origen, Bernard), its strength and weakness; the natural reading, collection or drama of two or three; the typological reading; no side; God's care for love between a man and a woman | 4-10 `hard` | song-of-solomon/6.json `hard` | Repository; each reading in its holders' terms; no side |
+| 6:11; 6:12 paraphrased; 6:13 (its first two sentences, in double quotes; the question paraphrased) | 11-13 | BSB | BSB text |
+| Verse 12's difficulty and Amminadib; the Shulammite's three readings (Shunem and Abishag; a feminine of Solomon; shalom); Mahanaim as two camps (Genesis 32:2) and the dance's two readings; working out who speaks | 11-13 | song-of-solomon/6.json `cultural`, `literary`, `words` (Shulammite) | Repository; each reading in its holders' terms |
+| Genesis 32:2 (its last sentence); 1 Kings 1:3 named | 11-13 | song-of-solomon/6.json `cultural` (Genesis 32:2; 1 Kings 1:3); BSB | Repository; BSB text |
+
+Cut in chapter 6: the deep note's line to Christ (any reading of the bride as the church in verses 8-10, left to the book page). No care line is needed in this chapter.
