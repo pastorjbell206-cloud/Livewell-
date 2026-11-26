@@ -24460,3 +24460,26 @@ Cut in chapter 66: John 16:21 and Galatians 4:26, which the deep note calls them
 | Babylon 32.54 N, 44.42 E; Susa 32.19 N, 48.26 E; regions with names only; ruin-mound note | Isaiah and Daniel maps | the coordinator's direction | validate-bible-notes |
 | Nineveh 36.36 N, 43.15 E | Isaiah map | jonah, nahum and zephaniah intro.json | Repository |
 | Place lines' references (Isaiah 11:14, 14:29, 15:1, 16:6, 34:6, 63:1, 19:1, 30:2, 10:5, 37:37, 13:19, 39:1-6, 47:1; Daniel 1:1, 9:2, 4:30, 5:30, 8:2, 11:8, 11:42) | map lines | BSB | BSB text |
+
+## The Jeremiah book page (2026-11-26)
+
+`client/public/bible/notes/jeremiah/intro.json`, field `teaching`. No web searches. Every quotation is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Overview, the end of Judah, the acted signs, the confessions, the book of comfort | parts 1, 6, 8 | jeremiah/intro.json `overview`, `structure`, `reading`, `themes` | Repository |
+| Hinge of the story; Zephaniah, Habakkuk, Ezekiel; Ezra 1:1 and 2 Chronicles 36:22; Daniel 9:2; Jehoiachin at the king's table (52:33) | part 2 | jeremiah/intro.json `story`; BSB | Repository, BSB text |
+| Hilkiah, Anathoth, Baruch, the scroll of about 605 BC; Mowinckel 1914; editors; 627 BC; about 561 BC | part 3 | jeremiah/intro.json `author`, `date` | Repository |
+| The two editions; one seventh shorter; 33:14-26; oracles after 25:13; Dead Sea fragments; Tov | part 4 | jeremiah/intro.json `reading` | Repository |
+| Josiah 640 to 609; 622; 612; Megiddo, Necho II; Carchemish 605; Jehoiakim 609 to 598; 597 and the Babylonian Chronicle; Zedekiah 597 to 586; Lachish letters 1930s; Gedaliah; Egypt | part 5, timeline | jeremiah/intro.json `setting` | Repository |
+| Six verbs (1:10); the blocks of the book | part 6 | BSB; jeremiah/intro.json `structure` | BSB text, Repository |
+| 2:13, 7:4, 7:11, 20:9, 29:7, 29:11, 31:33, Luke 22:20 | parts 7 to 11 | BSB | BSB text |
+| 29:11 as a promise to a people in exile; surrender a word for one moment | part 10 | jeremiah/intro.json `reading` | Repository |
+| Jewish and Christian readings of 31:31-34 | part 11 | jeremiah/31.json `hard` | Repository |
+| Moab, Ammon and Elam restored (48:47; 49:6; 49:39); God wails for Moab (48:31); 51:63-64; 539 BC | part 12 | BSB; jeremiah/50.json `hard` | BSB text, Repository |
+| Luke 22:20, 1 Corinthians 11:25, Hebrews 8 and 10, Matthew 21:13, Matthew 2:17-18, 1 Corinthians 1:31, Matthew 16:14 | part 13 | BSB; jeremiah/intro.json `christ` | BSB text |
+| The SUFFERING care line, byte for byte | part 8 | carelines.json (from the site) | care.mjs |
+| Hard passages: each from that chapter's deep note `hard` | hard list | jeremiah/<n>.json | Repository |
+| Map: Jerusalem, Bethlehem, Jericho, Bethel, Shechem, Tyre, Damascus, Gilead at the site's points; Philistia, Moab, Edom, Egypt as regions; Babylon at its ruin mounds (32.54 N, 44.42 E) | map | the site's other maps; the coordinator's direction; BSB for each reference | Repository, BSB text |
+
+Cut on the book page: a claim that Jeremiah uses the word for falsehood more than any other book (no source). The New Testament lines drawn are only those the New Testament draws itself.
