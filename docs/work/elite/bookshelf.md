@@ -926,6 +926,10 @@ differ in is said under each book. Each was then edited (records in
   stray chapter labels, carried as they are. The PDF's fuller copyright
   notice is used. 41 pages became 43 (`client/src/data/booklets.ts` says
   43). `--verify`: identical (7,168 words; 38,378 characters).
+  Then edited (`deacon-qualifications.md`): 59 dashes in his prose to 3, every
+  edit punctuation, both readings of 1 Timothy 3:11 word for word, fact diff
+  passed on all nine files; rebuilt, still 43 pages, `--verify` identical
+  (7,112 words; 38,379 characters).
 
 ### The apparatus
 

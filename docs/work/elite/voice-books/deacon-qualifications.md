@@ -212,7 +212,7 @@ Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block 
 
 All nine files were edited. In his running prose (before the reflection questions): 6,994 words before and after; em-dashes 59 before, 3 after (two before a Scripture reference, one inside the quotation of Colossians 1:26-27); paragraphs unchanged in number. The fact diff passed on all nine.
 
-**Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets. No word was added, removed or replaced. Two pairs of dashes around an aside that itself ends a sentence's subject became brackets ("aischrokerdes (literally “pursuing shameful gain”) addresses ..."; "a Scripture charge (Acts 6:1–7 and 1 Timothy 3:8–13 are the natural texts) that frames the office").
+**Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets. No word was added, removed or replaced. Two pairs of dashes became brackets (chapters 2 and 5) ("aischrokerdes (literally “pursuing shameful gain”) addresses ..."; "a Scripture charge (Acts 6:1–7 and 1 Timothy 3:8–13 are the natural texts) that frames the office").
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
@@ -228,3 +228,7 @@ The booklet was read for this list in its dash contexts and searched for referen
 
 1. What should the three "Book ... of this series" sentences say now that the booklet stands alone? (Two of those books, on elders, appear on the site as `what-elders-are-for` and `qualified-elder` in `client/src/data/booklets.ts`; whether they are Books Two and Five is for him to say.)
 2. Move each "CHAPTER ..." label to the head of its own chapter?
+
+## The files
+
+Rebuilt after the last chapter: still 43 pages (`client/src/data/booklets.ts` says 43), PDF 450 KB, EPUB 216 KB. `--verify`: the EPUB carries exactly the source folder's text (7,112 words compared, no difference); the PDF's pages carry the same text character for character (38,379 against 38,379).
