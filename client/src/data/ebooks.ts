@@ -137,7 +137,7 @@ export const FREE_EBOOKS: Ebook[] = [
     title: "What Does the Bible Say About Transgender Identity?",
     sub: "Gender, the Body, and the Church's Christ-Centered Response",
     line: "Gender, the body, and the church's Christ-centered response — a pastoral reading where clarity and compassion occupy the same room.",
-    pages: 201,
+    pages: 181,
     cover: "/covers/bible-and-transgender-identity-400.webp",
     pdf: "/ebook/bible-and-transgender-identity/What-the-Bible-Says-About-Transgender-Identity.pdf",
     epub: "/ebook/bible-and-transgender-identity/What-the-Bible-Says-About-Transgender-Identity.epub",
