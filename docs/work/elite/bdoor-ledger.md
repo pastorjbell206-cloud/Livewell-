@@ -24890,3 +24890,19 @@ Cut in chapter 3: Acts 20:26-27 and Luke 19:10, which the New Testament does not
 | Later: Deuteronomy 23:12-13; Lamentations 4:9-10 | 9-17 `later` | BSB | BSB text |
 
 Cut in chapter 4: nothing drawn to the New Testament; the illness explanations of the sign-acts given only as not widely accepted.
+
+## The plain notes on Ezekiel 5 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The shaved head and the hair in thirds: the text paraphrased; quoted clauses at verses 1, 2, 3-4 | 1-4 | BSB | BSB text |
+| Background in `hearers` | 1-4 | ezekiel/5.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 21:5; Isaiah 7:20 | 1-4 `later` | BSB | BSB text |
+| Jerusalem in the center of the nations: the text paraphrased; quoted clauses at verses 5, 6-7, 8, 11, 12, 13, 14-17 | 5-17 | BSB | BSB text |
+| Background in `hearers` | 5-17 | ezekiel/5.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 26:29; Deuteronomy 28:53; Lamentations 4:10 | 5-17 `later` | BSB | BSB text |
+| The hard note: How can God say he will not pity or spare, and that his wrath will be spent, without seeming cruel? The readings in their holders' terms | 5-17 `hard` | ezekiel/5.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 5: nothing drawn to the New Testament. The siege hunger of 5:10 named, not described.
