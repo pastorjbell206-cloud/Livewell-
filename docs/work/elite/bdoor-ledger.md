@@ -24016,3 +24016,22 @@ Cut in chapter 55: John 7:37 and Revelation 22:17 are left out, because the deep
 | Ezekiel 34:2 (its inner words); Jeremiah 23:1 (its words) | 9-12 `later` | BSB | BSB text |
 
 Cut in chapter 56: a draft `later` line on John 10:11-13 was replaced by Jeremiah 23:1, because the New Testament does not tie the good shepherd to these verses. The Acts 8 line names the Ethiopian eunuch without claiming the New Testament cites verse 3.
+
+## The plain notes on Isaiah 57 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/57.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 57:1-13 (verses 3 to 12 summarized; verse 5's killing named, not described) | 1-13 | BSB | BSB text |
+| From the blind watchmen of 56 to the righteous unnoticed; idolatry still present | 1-13 | isaiah/57.json `story` | Repository |
+| Manasseh, first half of the seventh century BC, 2 Kings 21; Hinnom, Jeremiah 7:31; the dating debate | 1-13 | isaiah/57.json `historical` | Repository |
+| Hilltop and tree shrines; sexual rites held and debated; Molech readings (god, sacrifice, king); Sheol and the dead | 1-13 | isaiah/57.json `cultural`, `historical` | Repository |
+| Jeremiah 7:31 (its clause); Deuteronomy 12:2 (its clause) | 1-13 `later` | BSB | BSB text |
+| Marriage picture, Hosea 2, Jeremiah 3, Ezekiel 16; partly literal; concerns about women; the whole people named | 1-13 `hard` | isaiah/57.json `hard` | Repository |
+| The city-picture statement and the HURT care line, byte for byte | 1-13 `hard` | the brief; 2-kings/plain/9.json and two wisdom files | care.mjs |
+| 57:14-21 (verse 21 paraphrased, since its BSB text is split by speech marks) | 14-21 | BSB | BSB text |
+| 40:3 call; matched lines of verse 15; contrite as crushed, tied to 53:5, 10; shalom at both ends; the refrain of 48:22 | 14-21 | isaiah/57.json `literary`, `words`, `story` | Repository |
+| Ephesians 2:17; Psalm 51:17 (its clause) | 14-21 `later` | BSB; isaiah/57.json `christ`, `words` | BSB text |
+
+Cut in chapter 57: Philippians 2 and Matthew 5, which the deep note calls thematic, are left out.
