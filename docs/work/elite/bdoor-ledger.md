@@ -24210,3 +24210,23 @@ Cut in chapter 1: Matthew 21:12-13 (Jesus in the temple), a thematic link the Ne
 | Psalm 73:3 | 17 `later` | BSB | BSB text |
 
 Cut in chapter 2: nothing.
+
+## The plain notes on Malachi 3 (2026-11-26)
+
+`client/public/bible/notes/malachi/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 and 3:2 quoted; 3:3-5 paraphrased | 1-5 | BSB | BSB text |
+| Refiner and launderer; the priests first; verse 5's justice; Nehemiah and the nobles; the play on messenger | 1-5 | malachi/3.json `cultural`, `historical`, `literary` | Repository; BSB text |
+| Mark 1:2; Matthew 11:10 | 1-5 `later` | BSB; malachi/3.json `christ` | Repository; BSB text |
+| John the Baptist and the coming Lord; the views of the Messenger of the covenant; the Jewish reading | 1-5 `hard` | malachi/3.json `christ`; malachi/4.json `hard` | Repository; BSB text |
+| 3:6, 3:7, 3:8, 3:10 quoted in part; 3:11-12 paraphrased | 6-12 | BSB | BSB text |
+| The tithe for the Levites and the poor; the storehouse; drought, locusts, tax and debt; Nehemiah 13:10 | 6-12 | malachi/3.json `cultural`, `historical`, `words` | Repository; BSB text |
+| Nehemiah 13:12; Numbers 18:21-28; Deuteronomy 14:22-29 | 6-12 `later` | BSB; malachi/3.json `cultural` | Repository; BSB text |
+| No promise of wealth; the two Christian views (Matthew 23:23; 2 Corinthians 8 and 9); no prosperity teaching | 6-12 `hard` | malachi/3.json `hard`; the brief | Repository; BSB text |
+| 3:13, 3:14, 3:16, 3:17 quoted in part; the rest paraphrased | 13-18 | BSB | BSB text |
+| The sixth argument; the rare narrative of verse 16; royal records and Esther 6; segullah | 13-18 | malachi/3.json `literary`, `cultural`, `words` | Repository; BSB text |
+| Exodus 19:5; Deuteronomy 7:6 | 13-18 `later` | BSB; malachi/3.json `words` | Repository; BSB text |
+
+Cut in chapter 3: 1 Peter 2:9, which echoes Exodus rather than quoting Malachi.
