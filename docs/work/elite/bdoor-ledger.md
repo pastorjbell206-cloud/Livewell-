@@ -26082,3 +26082,19 @@ Cut in chapter 41: nothing.
 | Later: Leviticus 10:10; Leviticus 16:23 | 1-20 `later` | BSB | BSB text |
 
 Cut in chapter 42: nothing.
+
+## The plain notes on Ezekiel 43 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/43.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The glory returns: the text paraphrased; quoted clauses at verses 2, 3, 4, 5, 7, 7-9, 10, 12 | 1-12 | BSB | BSB text |
+| Background in `hearers` | 1-12 | ezekiel/43.json `historical`, `cultural`, `literary` | Repository |
+| Later: 1 Kings 8:11; Exodus 40:34 | 1-12 `later` | BSB | BSB text |
+| The altar and its consecration: the text paraphrased; quoted clauses at verses 13-17, 18-26, 27 | 13-27 | BSB | BSB text |
+| Background in `hearers` | 13-27 | ezekiel/43.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 29:37; Leviticus 8:33 | 13-27 `later` | BSB | BSB text |
+| The hard note: Why does Ezekiel's future temple have animal sacrifices, when the New Testament says Christ's sacrifice ended them? The readings in their holders' terms | 13-27 `hard` | ezekiel/43.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 43: the deep note's lines to John 1:14 and 2:19-21 beside the returning glory, which the New Testament does not draw from Ezekiel 43; Hebrews 10:12 kept in the hard note as the New Testament's own teaching on sacrifice, not as a line drawn from Ezekiel.
