@@ -906,6 +906,15 @@ differ in is said under each book. Each was then edited (records in
   (both before a Scripture reference), every edit punctuation, fact diff
   passed on all nine files; rebuilt, still 40 pages, `--verify` identical
   (6,411 words; 34,332 characters).
+- **Church Governance That Works** (`church-governance`), the second
+  booklet. The PDF and EPUB carry the same text (the comparison found only
+  running heads, page numbers, the repeated "REFLECTION QUESTIONS" label and
+  one table read in a different order); the same stray chapter labels as
+  Change Without Casualties, carried as they are; the appendix's decision
+  matrix is a run of short paragraphs in the source and is set so. The PDF's
+  fuller copyright notice is used. 43 pages became 44
+  (`client/src/data/booklets.ts` says 44). `--verify`: identical (6,764
+  words; 39,393 characters).
 
 ### The apparatus
 
