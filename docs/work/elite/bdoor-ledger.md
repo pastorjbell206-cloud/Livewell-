@@ -22628,3 +22628,19 @@ Cut from the book page: the deep notes' lines to Christ through the chapters (th
 | 1 Kings 10:28 (its first clause); 1 Samuel 24:1 named, the wilderness of En-gedi | 9-17 | song-of-solomon/1.json `historical` (1 Kings 10:28-29); the chapter data's cross-references for 1:14; BSB | Repository; BSB text |
 
 Cut in chapter 1: the deep note's readings of the kiss as God's words and of the woman as the church or soul, and its link to Isaiah 62:5 and Mark 2:19-20 (left to the book page's own wording on the bridegroom). The chapter is told without its explicit line (1:13). No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 2 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; 2:2; 2:3 (its first sentence); 2:4; refreshment (2:5) paraphrased; the embrace (2:6) paraphrased; 2:7 (in double quotes) | 1-7 | BSB | BSB text |
+| Wildflowers, perhaps a crocus; Sharon's plain and flowers; her modesty and his answer; apple, apricot or quince; raisin cakes as festive food (2 Samuel 6:19); lovesickness in Egyptian love poems; the banner; the oath by gazelles and does and the sound-play on God's titles, as many scholars note | 1-7 | song-of-solomon/2.json `cultural`, `historical`, `words` (degel) | Repository |
+| Isaiah 35:2 (its clause); 2 Samuel 6:19 named | 1-7 | song-of-solomon/2.json `historical` (Isaiah 35:2), `cultural` (2 Samuel 6:19); BSB | Repository; BSB text |
+| The hard note: three appearances after closeness; patience and chastity, marriage; ‘until it pleases’; not forced or manipulated; not exclusive; timing; desire without shame and with care; love freely given, no right to press or force | 1-7 `hard` | song-of-solomon/2.json `hard`, `words` (ur); the brief's rule against coercion | Repository; each reading in its holders' terms |
+| 2:8 (in double quotes, as it holds exclamations); the gazelle and the lattice (2:9) paraphrased; 2:10-11 (his words, in double quotes); 2:12; figs and vines (2:13) paraphrased; 2:14 (its first part); the foxes (2:15) paraphrased (it holds dashes); 2:16 (in double quotes); 2:17 paraphrased | 8-17 | BSB | BSB text |
+| The land's spring: rains ending in March or April, flowers, early figs, turtledoves; the framing call; little foxes and vineyards; 2:16 as the first statement of belonging (6:3; 7:10); Bether as a place or rugged hills | 8-17 | song-of-solomon/2.json `historical`, `cultural`, `literary` | Repository; each reading in its holders' terms |
+| Habakkuk 3:19 (its clause); Psalm 55:6 (inside the psalmist's quotation, in double quotes) | 8-17 | the chapter data's cross-references for 2:8-9 and 2:14; BSB | BSB text |
+
+Cut in chapter 2: the deep note's line to Christ (any reading of the beloved's call as Christ's, left to the book page). No care line is needed in this chapter.
