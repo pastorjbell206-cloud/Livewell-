@@ -24347,3 +24347,23 @@ Cut in chapter 60: the magi of Matthew 2, which the deep note calls a thematic e
 | Psalm 30:11 (its clauses) | 10-11 `later` | BSB | BSB text |
 
 Cut in chapter 61: a draft `later` line with Mary's song (Luke 1:46-47) and Revelation 19:8 was replaced by Psalm 30:11, because the New Testament does not tie those to this chapter. Peter's use of the priestly names comes from Exodus 19:6, which the note quotes first.
+
+## The plain notes on Isaiah 62 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/62.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 62:1-5 | 1-5 | BSB | BSB text |
+| Completes 60 to 62; the speaker unnamed and debated | 1-5 | isaiah/62.json `story`, `historical` | Repository |
+| Forsaken and Desolate; Nehemiah's broken walls, mid-fifth century BC | 1-5 | isaiah/62.json `historical` | Repository |
+| Names and new names, Abram and Jacob; Hephzibah, Manasseh's mother; Beulah; baal reclaimed, 54:5 | 1-5 | isaiah/62.json `cultural`, `words` | Repository |
+| Genesis 17:5 (its clause); 2 Kings 21:1 (its last sentence) | 1-5 `later` | BSB | BSB text |
+| 62:6-9 (verse 8's oath paraphrased) | 6-9 | BSB | BSB text |
+| Watchmen as intercessors; harvests taken; Nehemiah 5:4; Deuteronomy 28:33 | 6-9 | isaiah/62.json `cultural`, `historical` | Repository |
+| Deuteronomy 28:33 (its first sentence); Nehemiah 9:37 (named) | 6-9 `later` | BSB | BSB text |
+| 62:10-12 (verse 11 paraphrased, since its BSB text holds inner speech marks) | 10-12 | BSB | BSB text |
+| Royal procession; threads from 40:3, 57:14, 52:8, 40:10; yesha, Joshua and Jesus; the frame; 63's turn | 10-12 | isaiah/62.json `cultural`, `story`, `words`, `literary` | Repository |
+| Matthew 21:5 (its inner words), with Zechariah 9:9 named | 10-12 `later` | BSB; isaiah/62.json `christ` | BSB text |
+
+Cut in chapter 62: Ephesians 5 and Revelation 2, 3 and 21, which the deep note links by theme, are left out; only Matthew 21:5, which quotes verse 11, is kept.
