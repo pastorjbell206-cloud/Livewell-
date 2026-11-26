@@ -24085,3 +24085,19 @@ New Testament lines in chapter 9: Matthew 21:5 and John 12:15 quote 9:9. Cut in 
 | Later: Isaiah 11:11; Hosea 11:11 | 6-12 `later` | BSB | BSB text |
 
 New Testament lines in chapter 10: none drawn. Cut in chapter 10: nothing.
+
+## The plain notes on Zechariah 11 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Fallen cedars, and a flock marked for slaughter: the text paraphrased, its quoted verses (in single or double quotes) | 1-6 | BSB | BSB text |
+| Background in `hearers` | 1-6 | zechariah/11.json `historical`, `cultural`, `literary` | Repository |
+| Later: Ezekiel 34:2-3; Jeremiah 50:6 | 1-6 `later` | BSB | BSB text |
+| Two staffs, thirty pieces of silver, and a worthless shepherd: the text paraphrased, its quoted verses (in single or double quotes) | 7-17 | BSB | BSB text |
+| Background in `hearers` | 7-17 | zechariah/11.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 21:32; Matthew 27:9 | 7-17 `later` | BSB | BSB text |
+| The hard note: Why does Matthew attribute a quotation from Zechariah to Jeremiah? The readings in their holders' terms | 7-17 `hard` | zechariah/11.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 11: Matthew 27:9-10 draws on 11:12-13. Cut in chapter 11: The word parable for the shepherd scenes; the repository's notes call them sign-acts, like those of Jeremiah and Ezekiel, and the plain notes now say so.
