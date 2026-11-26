@@ -1744,6 +1744,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-deuteronomy",
     "book-2-samuel",
     "book-nehemiah",
+    "book-amos",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2635,5 +2636,16 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toMatch(/takes no side among the readings/);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|weapon|beat|hair|strike/i);
     expect(f.frames.map(fr => fr.younger).join(" ")).not.toMatch(/beat|pulled out|curse|kill|die|dead/i);
+  });
+
+  it("Amos names no modern party or nation, ties his standard to God's covenant, and draws no war or ruin", () => {
+    const f = filmFile("book-amos");
+    expect(f.frames.find(x => x.id === "start")!.older).toContain("The standard is God's covenant, not any modern program.");
+    expect(f.frames.find(x => x.id === "tent")!.older).toContain("They make no claim about any modern state or border.");
+    expect(f.differ?.text).toContain("its standard is God's covenant, not any modern program or party");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const t = text(f);
+    expect(t).not.toMatch(/\b(America|United States|Democrat|Republican|Labour|Conservative|liberal|socialis|capitalis|left-wing|right-wing|Israel today|State of Israel|Palestin)/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|battle|army|fire|ruin|locust|body/i);
   });
 });

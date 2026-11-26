@@ -458,6 +458,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Nehemiah in seven moving pictures: the king's cupbearer, how it is laid out, pray and keep watch, justice for the poor, the law read with joy, an ending without triumph, and where to start reading.",
     },
+    "book-amos": {
+      title: "Amos: let justice roll on like a river: Bible Explorer",
+      description:
+        "The whole book of Amos in seven moving pictures: a herdsman sent north, how it is laid out, the trap, justice like a river, the plumb line, the fallen tent restored, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

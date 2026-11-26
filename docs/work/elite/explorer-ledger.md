@@ -1589,3 +1589,23 @@ The harsh reforms of chapter 13 are told as the book page tells them, reported a
 | pictures | No weapon, blow or harm drawn (the armed builders are left to the page); God not drawn; Nehemiah the same in each picture | The drawing (`scenes/book-nehemiah.tsx`); a sheet of the finished frames read |
 | left out | The armed builders; Sanballat and Tobiah by name; the plots; the dedication's choirs in the captions; the date 433 BC | Deliberate; the book page is linked |
 | length | Younger 2:35.9, older 3:12.7 | `audio/manifest.json` |
+
+### Amos: let justice roll on like a river (`book-amos`)
+
+Amos is tied to no modern party or nation, in the book page's words: "its standard is God's covenant, not any modern program", and the closing promise makes "no claim about any modern state or border".
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Amos 7:15; 1:2; 2:6; 5:24; 7:8; 9:11; 5:4 (some trimmed to a clause) | BSB, by the validator; all Amos |
+| 1 A herdsman sent north | Around 760 BC a herdsman of Tekoa in Judah went north to Israel at its greatest wealth; crowded shrines, houses decorated with ivory; Amos looked beneath the prosperity | The Amos book page, `teaching` "Amos in a minute" and "Who wrote it, and when", nearly word for word |
+| 2 How it is laid out | Three parts: the ring of judgments closing on Judah and Israel; sermons, laments and woes; five visions with the one story, ending in restoration | The book page's `teaching` "How Amos is built". Three panels of 2, 4 and 3 chapters; the gold rule under the sermons |
+| 3 The trap | Neighbors judged for cruelty every people knows is wrong; a first hearer would agree; the trap closes on Judah and at greatest length on Israel, who sell the needy for a pair of sandals | The book page's `teaching` "Three transgressions, even four" (the nations' crimes named there and not here); BSB Amos 2:6 |
+| 4 Justice like a river | God refuses the feasts and songs; justice to roll like a river; not worship rejected as such, but worship cut off from obedience, and comfort that does not grieve | The book page's `teaching` "Seek the LORD and live, and let justice roll", nearly word for word; BSB Amos 5:21-24; 6:6 |
+| 5 The plumb line | Amos pleads twice and God relents; the plumb line shows Israel out of true; Amaziah tells him to go home; the LORD took him from following the flock | The book page's `teaching` "Five visions, and a priest at Bethel", nearly word for word; BSB Amos 7:1-15 |
+| 6 The fallen tent restored | God will restore David's fallen tent and plant his people in the land; James quoted it of the Gentiles; no claim about any modern state or border | The book page's `teaching` "The fallen tent of David" and "How the New Testament reads Amos", whole where quoted; BSB Amos 9:11-15 |
+| 7 Where to start | Chapter 5, then 7 and 9 (younger); key chapters 1, 2, 3, 7 and 9; the charges land on oneself first; God's covenant, not any modern program | The book page's `keyChapters`, `reading` and `teaching` "How to read Amos", nearly word for word; BSB Amos 5:4 |
+| differ | Amos claimed across the political spectrum, his standard God's covenant; passages read as later additions or as Amos's own; owner or shepherd; James's Greek and the Hebrew; no modern state; never used to blame the Jewish people; no side | The book page's `reading` and `teaching` "Who wrote it, and when", "The fallen tent of David", "How the New Testament reads Amos" |
+| care | "If something hard is happening to you or to someone you love, ..." | The care line of "Why do bad things happen?", whole |
+| pictures | No war, crime, locust, fire or ruin drawn; no one of any later age, party or nation; God not drawn | The drawing (`scenes/book-amos.tsx`); a sheet of the finished frames read |
+| left out | The nations' crimes in the captions; the cows of Bashan; the locust and fire visions; the Day of the LORD in the captions; the earthquake | Deliberate; the book page is linked |
+| length | Younger 2:40.6, older 3:05.6 | `audio/manifest.json` |

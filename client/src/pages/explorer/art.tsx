@@ -1172,6 +1172,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M54,62h10v8h-10Z" />
     </>
   ),
+  /* Amos: a plumb line beside a wall, the weight gold. */
+  "book-amos": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M20,84L30,24H52L44,84Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M64,14V66M56,14H72" />
+      <path className="pl-m" d="M59,66h10l-5,12Z" />
+      <path className="pl-l" d="M59,66h10l-5,12Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

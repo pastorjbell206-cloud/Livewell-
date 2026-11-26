@@ -4225,6 +4225,116 @@
     }
    ]
   },
+  "book-amos": {
+   "title": {
+    "file": "book-amos/title.mp3",
+    "hash": "c97ccc0337118bd54c7c",
+    "seconds": 3.79,
+    "bytes": 23252
+   },
+   "younger": [
+    {
+     "id": "herdsman",
+     "file": "book-amos/younger/01-herdsman.mp3",
+     "hash": "c5bf8c2a7b4f38fb72f5",
+     "seconds": 19.73,
+     "bytes": 118868
+    },
+    {
+     "id": "layout",
+     "file": "book-amos/younger/02-layout.mp3",
+     "hash": "c1a5c5705d8009253176",
+     "seconds": 25.95,
+     "bytes": 156308
+    },
+    {
+     "id": "trap",
+     "file": "book-amos/younger/03-trap.mp3",
+     "hash": "8f4cf738bb45d1392fb4",
+     "seconds": 24.52,
+     "bytes": 147668
+    },
+    {
+     "id": "river",
+     "file": "book-amos/younger/04-river.mp3",
+     "hash": "b886039f083803f7a62a",
+     "seconds": 25.83,
+     "bytes": 155588
+    },
+    {
+     "id": "plumb",
+     "file": "book-amos/younger/05-plumb.mp3",
+     "hash": "95e22c77e0bf5daa993c",
+     "seconds": 23.26,
+     "bytes": 140180
+    },
+    {
+     "id": "tent",
+     "file": "book-amos/younger/06-tent.mp3",
+     "hash": "1ef618ab53f24f8a1382",
+     "seconds": 21.99,
+     "bytes": 132548
+    },
+    {
+     "id": "start",
+     "file": "book-amos/younger/07-start.mp3",
+     "hash": "8072afffa0de55fe1e24",
+     "seconds": 15.12,
+     "bytes": 91220
+    }
+   ],
+   "older": [
+    {
+     "id": "herdsman",
+     "file": "book-amos/older/01-herdsman.mp3",
+     "hash": "8ccee91a746024cdd8d9",
+     "seconds": 26.69,
+     "bytes": 160772
+    },
+    {
+     "id": "layout",
+     "file": "book-amos/older/02-layout.mp3",
+     "hash": "52cb098fe1d8adc72564",
+     "seconds": 24.55,
+     "bytes": 147812
+    },
+    {
+     "id": "trap",
+     "file": "book-amos/older/03-trap.mp3",
+     "hash": "b0a4aa7ff70ddf413ca6",
+     "seconds": 26.36,
+     "bytes": 158756
+    },
+    {
+     "id": "river",
+     "file": "book-amos/older/04-river.mp3",
+     "hash": "e8d460501646d66b569d",
+     "seconds": 30.66,
+     "bytes": 184532
+    },
+    {
+     "id": "plumb",
+     "file": "book-amos/older/05-plumb.mp3",
+     "hash": "0e5d7828fa5d99fc0a14",
+     "seconds": 24.91,
+     "bytes": 150116
+    },
+    {
+     "id": "tent",
+     "file": "book-amos/older/06-tent.mp3",
+     "hash": "cbed91d854362a50c85d",
+     "seconds": 26.1,
+     "bytes": 157172
+    },
+    {
+     "id": "start",
+     "file": "book-amos/older/07-start.mp3",
+     "hash": "70c695f8e345d848d06b",
+     "seconds": 22.18,
+     "bytes": 133700
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",
