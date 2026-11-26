@@ -25481,3 +25481,18 @@ Cut in chapter 27: nothing.
 | Deuteronomy 18:22, 1 Kings 22:28, Deuteronomy 18:20, James 3:1 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 28: nothing.
+
+## The plain notes on Jeremiah 29 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 29:1-32 (verses 15-32 partly paraphrased around inner speech marks) | all | BSB | BSB text |
+| After 597 BC; Nehushta; the delegation; Tel-abib; Al-Yahudu tenant farmers | 1-14 | jeremiah/29.json `historical`; isaiah/52.json `historical` | Repository |
+| House, garden, wife as settling down; Deuteronomy 20:5-7; shalom of the city | 1-14 | jeremiah/29.json `cultural` | Repository |
+| 29:11 in context: plural, seventy years, a whole people, not personal success | 1-14 `hard` | jeremiah/29.json `hard` | Repository |
+| Prophets in Babylon; Shemaiah's letter and Zephaniah | 15-32 | BSB; jeremiah/29.json `summary` | BSB text |
+| Deuteronomy 4:29, 1 Timothy 2:2, Ezekiel 3:15 (clauses); Daniel 9:2 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 29: 2 Corinthians 1:20, which the deep note gives as a general word on God's promises rather than a reading of this chapter. Verse 22's curse is named, not quoted.
