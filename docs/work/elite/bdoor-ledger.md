@@ -25258,3 +25258,19 @@ Cut in chapter 20: Romans 1:24 beside the giving over, which the New Testament d
 | Later: Genesis 49:10; 1 Samuel 2:7 | 18-32 `later` | BSB | BSB text |
 
 Cut in chapter 21: Luke 1:32-33 and 1:52, which the New Testament does not draw from Ezekiel 21; verse 27 read of the Messiah only as Jewish and Christian interpreters' reading.
+
+## The plain notes on Ezekiel 22 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The city of bloodshed: the text paraphrased; quoted clauses at verses 2, 6, 7, 8-11, 12, 13, 15-16 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/22.json `historical`, `cultural`, `literary` | Repository |
+| Later: Numbers 35:33; Jeremiah 7:6 | 1-16 `later` | BSB | BSB text |
+| Dross in the furnace, and no one in the gap: the text paraphrased; quoted clauses at verses 18, 19-22, 25, 26, 27, 28, 29, 30 | 17-31 | BSB | BSB text |
+| Background in `hearers` | 17-31 | ezekiel/22.json `historical`, `cultural`, `literary` | Repository |
+| Later: Zephaniah 3:3; Jeremiah 5:1 | 17-31 `later` | BSB | BSB text |
+| The hard note: God says he found no one to stand in the gap, but Jeremiah was in Jerusalem in those years. Was there really no one? The readings in their holders' terms | 17-31 `hard` | ezekiel/22.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 22: nothing.
