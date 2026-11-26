@@ -22353,3 +22353,19 @@ Cut in chapter 20: nothing. No care line is needed in this chapter.
 | Deuteronomy 10:19; Jeremiah 49:28 named | 13-17 `later` | BSB | BSB text |
 
 Cut in chapter 21: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 22 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 22:1-14 (22:5's clause before the dash; 22:13's slogan in double quotes, inside the BSB's speech marks) | 1-14 | BSB | BSB text |
+| Jerusalem among the nations; 701 BC; the House of the Forest (1 Kings 7:2; 10:17); the tunnel and its inscription found in 1880; the Broad Wall found in the 1970s; the 587 or 586 alternative; the rooftops and relief | 1-14 | isaiah/22.json `story`, `historical` | Repository; both datings |
+| 2 Chronicles 32:4; 1 Corinthians 15:32 (the slogan, inside the BSB's speech marks) | 1-14 `later` | BSB | BSB text; the New Testament's own quotation |
+| The hard note: the city's defiance; the two meanings of until your dying day; Numbers 15:30-31; Isaiah 55:7; no door shut on anyone who repents | 1-14 `hard` | isaiah/22.json `hard` | Repository |
+| 22:15-25 (22:16 and 22:24 paraphrased around their dashes) | 15-25 | BSB | BSB text |
+| The steward's office; Shebna as secretary in chapters 36 and 37; the Silwan inscription and the suggestion; the tomb; the key; the peg | 15-25 | isaiah/22.json `historical`, `cultural` | Repository; the suggestion stated as some scholars' |
+| Isaiah 36:3; Revelation 3:7 | 15-25 `later` | BSB | BSB text; the New Testament's own use of the key |
+
+Cut in chapter 22: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
