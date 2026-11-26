@@ -21993,3 +21993,23 @@ Cut in chapter 1: the deep note's line that Christian faith answers ‘nothing n
 | The hard note: resigned pleasure-seeking as one reading; verse 24's ‘from the hand of God’ and verse 25; received, not grasped as a substitute; the last verse's futility | 24-26 `hard` | ecclesiastes/2.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 2: the deep note's lines to Christ (the rich fool, Luke 12:16-21; one greater than Solomon; 1 Corinthians 15:58 beside the Teacher's despair, which is left to the book page's own wording).
+
+## The plain notes on Ecclesiastes 3 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; 3:2; 3:3 paraphrased; 3:4; 3:5-6 paraphrased; 3:7; 3:8 | 1-8 | BSB | BSB text |
+| A wider view after chapter 2; seasons under God, against chapter 1's cycle; fourteen pairs, twenty-eight times, twice seven; the stones (2 Kings 3:19, 25; the later Jewish reading), uncertain; tearing and mending in mourning; life close to birth, death, harvest and war; seasons described, not killing or hating made a duty | 1-8 | ecclesiastes/3.json `story`, `literary`, `cultural`, `words` (et) | Repository; each reading in its holders' terms |
+| The grief line (‘Grief is not a lack of faith...’ to ‘...lists places to turn.’) | 1-8 | 1-samuel/plain/1.json (1-8) and the other notes care.mjs names | Reused byte for byte; Find Help named |
+| Psalm 30:5 (its second sentence); Romans 12:15 | 1-8 | the chapter data's cross-references for 3:4 (Psalm 30:5; Romans 12:15); BSB | Repository; BSB text |
+| 3:9; the burden (3:10) paraphrased; 3:11; rejoicing (3:12) paraphrased; 3:13 (before its dash); 3:14 | 9-15 | BSB | BSB text |
+| Reflection on the poem; yapheh, beautiful or fitting; olam; made for eternity, living in a moment; a right time in ancient wisdom (Egypt, Greece) and the times belonging to God; the fear of God already in verse 14 | 9-15 | ecclesiastes/3.json `historical`, `literary`, `words` (yapheh, olam) | Repository |
+| Romans 1:20 (its first clause); Job 11:7 | 9-15 | the chapter data's cross-references for 3:11 (Romans 1:19-20; Job 11:7); BSB | Repository; BSB text |
+| 3:16; 3:17 paraphrased (it holds an inner quotation); the shared fate (3:19) paraphrased (it holds a dash); 3:20; 3:21; 3:22 (its first sentence) | 16-22 | BSB | BSB text |
+| Corrupt courts in any period, the prophets, later officials; God's judgment as the remaining hope; ‘who knows’ and the Teacher's honesty | 16-22 | ecclesiastes/3.json `historical`, `literary` | Repository |
+| Genesis 3:19 (its last sentence, inside the LORD's words); Ecclesiastes 12:7 (its last clause) | 16-22 | the chapter data's cross-references for 3:20 (Genesis 3:19; 12:7); BSB | Repository; BSB text |
+| The hard note: denial or doubt as one reading; what is seen under the sun; ‘who knows’ as ignorance, not denial; limited light growing to Daniel 12; 12:7; honest observation answered by the rest of Scripture, or a humbling of pride | 16-22 `hard` | ecclesiastes/3.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 3: the deep note's line to Christ (the resurrection of Christ as the answer to verses 18-21, left to the book page's wording on the New Testament).
