@@ -25437,3 +25437,19 @@ Cut in chapter 24: nothing.
 | Daniel 9:2, 2 Chronicles 36:21, Isaiah 51:17, 1 Peter 4:17 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 25: Revelation's cup of wrath, which the New Testament does not tie to this chapter; no date is calculated from the seventy years.
+
+## The plain notes on Jeremiah 26 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 26:1-24 (verses 8-11 and 18-23 partly paraphrased) | all | BSB | BSB text |
+| 609 or 608 BC; Josiah's death; Necho and Jehoiakim | 1-16 | jeremiah/26.json `historical` | Repository |
+| The trial: accusers, officials in the gate, elders | 1-16 | jeremiah/26.json `cultural` | Repository |
+| Conditional prophecy, 18:7-10, Jonah; two theological emphases | 1-16 `hard` | jeremiah/26.json `hard` | Repository |
+| Micah 3:12 quoted by name; Hezekiah about 715 to 686 BC | 17-24 | jeremiah/26.json `historical` | Repository |
+| Uriah; Ahikam son of Shaphan; Gedaliah son of Ahikam (39:14) | 17-24 | BSB; 2 Kings 22:12 | BSB text |
+| Matthew 23:37, Acts 7:48, Micah 3:12, 2 Kings 22:12 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 26: nothing. Acts 7:48 is named only as Stephen speaking against trust in the temple, not as a reading of this chapter.
