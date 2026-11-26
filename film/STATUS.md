@@ -47,10 +47,10 @@ One row per film. "Approved" is James's word only.
 | book-colossians | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 | book-1-thessalonians | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 | book-hebrews | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
-| book-james | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 (built, NOT on the site: storage full) | |
-| book-1-peter | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 (built, NOT on the site: storage full) | |
-| book-1-john | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 (built, NOT on the site: storage full) | |
-| book-revelation | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 (built, NOT on the site: storage full) | |
+| book-james | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| book-1-peter | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| book-1-john | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| book-revelation | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 
 Step 3, the 83 existing Bible Explorer films (`client/public/explorer/films/`): batch 1 of five is above (the three story films, Genesis, Exodus). Batch 2 is Leviticus, Numbers, Deuteronomy, Joshua and Judges. Batch 3 is Ruth, 1 Samuel, 2 Samuel, Nehemiah and Psalms. Batch 4 is Proverbs, Isaiah, Jeremiah, Daniel and Amos. Batch 5 is Jonah, Matthew, Mark, Luke and John. Batch 6 is Acts, Romans, 1 Corinthians, 2 Corinthians and Galatians. Batch 7 is Ephesians, Philippians, Colossians, 1 Thessalonians and Hebrews. Batch 8 is James, 1 Peter, 1 John and Revelation (four films, because the ElevenLabs balance covered four). All 36 book films are done. 44 remain: beliefs (16), questions (13), ideas (10), verses (3), stories (2), waiting on an ElevenLabs top-up, then beliefs, questions, ideas, verses, stories. Each batch's scripts are written by a file in `film/batches/`.
 
@@ -67,5 +67,5 @@ James, 2026-11-26: "make the ones that you've already created go live", then "Ye
 - Pull request 650: batch 5 (33 films live).
 - Pull request 651: batch 6 (38 films live).
 - Pull request 652: batch 7 (43 films live).
-- Batch 8 (James, 1 Peter, 1 John, Revelation) is built but NOT live: on 2026-11-26 the upload was refused, "Vercel Blob: Storage quota exceeded for Hobby plan (1GB maximum)". The 43 live films take about 1.14 GB. Nothing on the site changed. Pull request 653 was opened by mistake before the refusal was seen and was closed unmerged. Waiting on James: a larger Vercel plan, or smaller video files.
+- Pull request 654: batch 8 (47 films live). Its first upload on 2026-11-26 was refused ("Storage quota exceeded for Hobby plan (1GB maximum)") and Vercel then suspended the store, so the 43 live films stopped playing for a time. James upgraded the Vercel plan the same day; the films played again and batch 8 uploaded. Pull request 653 was opened before the refusal was seen and closed unmerged.
 - To publish: `node scripts/publish-narrated-films.mjs <slug> ...`, commit the three data files it changes, open a pull request, merge when CI is green. Video files are in the Vercel Blob store `livewell-films`; the live list is `scripts/narrated-films-live.json`.
