@@ -21233,3 +21233,23 @@ Cut in chapter 29: the deep note's lines to Christ (Isaiah 11 and Jesus as the k
 | Job 40:4 (in double quotes); Joel 2:7 (its third sentence) | 18-33 | the chapter data's cross-references for 30:32 (Job 40:4) and 30:27 (Joel 2:7); BSB | Repository; BSB text |
 
 Cut in chapter 30: the deep note's lines to Christ (John 3:13 as the answer to verse 4, which the note says the New Testament does not quote; Matthew 6:11 beside verse 8, which it calls thematic). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 31 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 31:1 (its first clause; the rest, after a dash, paraphrased); 31:2; 31:3; wine and kings (31:4) paraphrased; 31:5; 31:6-7 paraphrased; 31:8-9 | 1-9 | BSB | BSB text |
+| Lemuel unknown, his name, no king of Israel or Judah bore it; massa as word or people; wisdom from outside Israel (22:17 to 24:22); bar in verse 2; the only section credited to a woman's teaching; the father at the start and a mother at the end; the queen mother's place in Judah; the wine contrast read from the verses themselves; not advice to drown sorrow | 1-9 | proverbs/31.json `historical`, `cultural`, `story`; the text of 31:4-7 | Repository; BSB text |
+| Care line (‘If drinking has become hard to control, you do not have to face it alone...’ to ‘...lists places to turn.’) | 1-9 | ephesians/plain/5.json and 1-timothy/plain/5.json | Reused byte for byte; Find Help named; no phone number |
+| Hannah's vow (1 Samuel 1:11) named; Deuteronomy 17:17 (its first sentence); Isaiah 1:17 (its last sentence, before the closing mark) | 1-9 | the chapter data's cross-references for 31:2 (1 Samuel 1:11), 31:3 (Deuteronomy 17:17) and 31:9 (Isaiah 1:17); BSB | Repository; BSB text |
+| 31:10; 31:11; 31:12; wool and flax (31:13); 31:14; rising early (31:15); 31:16; 31:17; spinning (31:19); 31:20; snow and scarlet (31:21) | 10-22 | BSB | BSB text |
+| The acrostic of twenty-two verses; eshet chayil and the heroic vocabulary, ‘prey’ behind ‘food’ in verse 15; a warrior's hymn for everyday faithfulness; cloth-making as women's work; dyes and linen; a field bought and a vineyard planted; women managing property and trade | 10-22 | proverbs/31.json `literary`, `cultural`, `words` (chayil) | Repository |
+| Ruth 3:11 (its last clause); Ruth after Proverbs in some Hebrew traditions | 10-22 | proverbs/31.json `words` (chayil); BSB | Repository; BSB text |
+| 31:23; linen garments (31:24); 31:25; 31:26; the household (31:27); the praise (31:28-29) paraphrased (verse 29 holds an exclamation in an inner quotation); 31:30; 31:31 | 23-31 | BSB | BSB text |
+| The gates; a torah of chesed; hevel and Ecclesiastes; beauty not despised but passing; the end answering the beginning (chapters 1, 8, 9 and 1:7) | 23-31 | proverbs/31.json `cultural`, `story`, `words` (hevel, yare, chesed) | Repository |
+| Proverbs 1:7 (its first clause); Psalm 128:2 | 23-31 | the chapter data's cross-references for 31:30 (1:7) and 31:31 (Psalm 128:2); BSB | Repository; BSB text |
+| The hard note: the readings (ideal wife; wisdom in person, 9:1; both); the Sabbath song; praise, not a performance standard; no burden; not measured by marriage, children, income or energy; verse 30; the fear of the LORD open to every believer | 23-31 `hard` | proverbs/31.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 31: the deep note's lines to Christ (Jesus as the king who speaks for the voiceless; Paul's Christ as wisdom beside the woman; the woman as the church, which the note calls allegorical).
