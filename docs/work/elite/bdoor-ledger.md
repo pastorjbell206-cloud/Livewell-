@@ -21396,3 +21396,24 @@ Cut in chapter 2: nothing drawn to the New Testament. The act of 2:7 is named in
 | Exodus 22:13; 1 Kings 22:39; 2 Kings 23:15 | 9-15 | amos/3.json `historical`, `cultural` | Repository |
 
 Cut in chapter 3: nothing drawn to the New Testament.
+
+## The plain notes on Amos 4 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 (its first clause; the rest paraphrased); 4:2-3 paraphrased | 1-3 | BSB | BSB text |
+| Samaria's wealthy class; the Samaria ostraca of the first half of the eighth century; Bashan's pastures and cattle; the oath by holiness; hooks as captives' ropes, fishing or butchers' hooks; Harmon unknown; deportation after 722 BC | 1-3 | amos/4.json `historical`, `cultural`, `literary` | Repository; the readings in their holders' terms |
+| Deuteronomy 32:14; Psalm 22:12; Isaiah 3:16-26; Isaiah 5:11-12 | 1-3 | amos/4.json `cultural`, `hard` | Repository |
+| The hard note: comfort, not ugliness; conduct, not sex; Amos as hard on men; other prophets as blunt; the possible religious phrase, uncertain; shock against complacency; no license for contempt toward women | 1-3 `hard` | amos/4.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 4:4 (in double quotes, for its exclamation); 4:5 (its last words) | 4-5 | BSB | BSB text |
+| Irony of a priest's call; Bethel and Gilgal; tithes yearly and every third year; every three days as exaggeration; leavened thank offerings; offerings as display | 4-5 | amos/4.json `cultural`, `literary` | Repository |
+| Deuteronomy 14:22-29; Leviticus 7:13 | 4-5 | amos/4.json `cultural` | Repository |
+| 4:6 (its phrase and its refrain); 4:7-11 paraphrased; 4:12 (its phrase); 4:13 (its clause) | 6-13 | BSB | BSB text |
+| Five stanzas, seven disasters, the refrain; recent memory and the wars with Aram (2 Kings 13:7); the covenant curses; cleanness of teeth; verse 12 unnamed; the first of three hymns, added or Amos's own | 6-13 | amos/4.json `literary`, `historical`, `cultural` | Repository; both views in their holders' terms |
+| Leviticus 26:19-26; Deuteronomy 28:22; Zechariah 3:2 (its question, in double quotes) | 6-13 | amos/4.json `cultural`; BSB | Repository; BSB text |
+| The hard note: Israel's covenant and a particular word; the refusal as the point; no right to read any loss as punishment; Job and Jesus | 6-13 `hard` | amos/4.json `literary`; amos/3.json `hard`; the brief | Repository; stated as the brief asks |
+| The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 6-13 `hard` | genesis/plain/6.json and others | Reused whole, word for word; Find Help named; no phone number |
+
+Cut in chapter 4: nothing drawn to the New Testament. The refrain of 4:6 to 4:11 is paraphrased in the prose so that no first-person words stand outside quoted Scripture.
