@@ -9267,6 +9267,94 @@ Lines that the deep notes draw to Christ, but the New Testament does not, were l
 ### What was run
 
 The 2 Kings checks, copied to `/home/user/bdoor-scratch/prophets/`, now take the book as a setting, read only a book page's `teaching` field, and leave all twelve books' new plain chapters and teaching fields out of the care corpus; the first-person scan treats Not My People as a name. After every book page and chapter: validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden, signposting and first-person scans, the care-line check, no-emdash, the search and passage index checks, validate-politics, the seven explore-index checks and validate-bible (0 problems each). Hosea 11 gaining plain words broke one test in `WisdomTopic.test.tsx`, which named it as a chapter without them; it now names Ezekiel 18. The gates and pushes are in the hand-back.
+## Ezekiel: the book page and every chapter (2026-11-26)
+
+Ezekiel has a teaching introduction on its book page and all 48 chapters in plain words (95 passages), the same shape as the Minor Prophets: `later` as each passage's third part, `"plain": true` at the end of each chapter note, one commit for the book page (with its ledger rows, the rebuilt explore indexes and its line in `teaching.test.tsx`, frames `fertile-crescent` and `canaan`) and one per chapter. Two later commits corrected the book page (Babylon at the shared point after the merge; Tyre's label and the line on 2 Corinthians 6:16).
+
+### The book page
+
+| Parts | Words in the parts | Hard passages | Key words | Timeline | Places | Go deeper |
+|---|---|---|---|---|---|---|
+| 14 | 2,338 | 16 | 15 | 8 | 9 on two maps | 9 |
+
+The `fertile-crescent` map draws Babylon, Jerusalem and Tyre; the `canaan` map draws Jerusalem, Samaria (a region), Sodom, Tyre, Sidon and Damascus. Babylon is at the branch's shared point (id `babylon`, 32.54 N, 44.42 E, the ruins near Hillah), the same point Jeremiah's map uses; every other place was already on the site's maps. Tel-abib, the Kebar canal, Edom, Ammon, Moab, Egypt's cities and the borders of chapters 47 and 48 are left off, and the map note says so. Dates come from the book's introduction and its chapter notes (593, 592, 588, 587 or 586, 585, 573 and 571 BC).
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Hard in |
+|---|---|---|---|
+| Ezekiel 1 | 3 | 1040 | 26-28 |
+| Ezekiel 2 | 2 | 658 | 1-7 |
+| Ezekiel 3 | 2 | 814 | 16-27 |
+| Ezekiel 4 | 2 | 811 | 1-8 |
+| Ezekiel 5 | 2 | 784 | 5-17 |
+| Ezekiel 6 | 2 | 720 | 8-14 |
+| Ezekiel 7 | 2 | 588 | none |
+| Ezekiel 8 | 2 | 770 | 7-18 |
+| Ezekiel 9 | 2 | 752 | 5-11 |
+| Ezekiel 10 | 2 | 600 | none |
+| Ezekiel 11 | 2 | 750 | 1-13 |
+| Ezekiel 12 | 2 | 586 | none |
+| Ezekiel 13 | 2 | 741 | 1-16 |
+| Ezekiel 14 | 2 | 773 | 1-11 |
+| Ezekiel 15 | 1 | 460 | 1-8 |
+| Ezekiel 16 | 3 | 1371 | 15-43 |
+| Ezekiel 17 | 2 | 779 | 11-24 |
+| Ezekiel 18 | 2 | 938 | 1-20 |
+| Ezekiel 19 | 2 | 565 | none |
+| Ezekiel 20 | 2 | 857 | 1-26 |
+| Ezekiel 21 | 2 | 858 | 1-17 |
+| Ezekiel 22 | 2 | 807 | 17-31 |
+| Ezekiel 23 | 3 | 1332 | 22-35 |
+| Ezekiel 24 | 2 | 897 | 15-27 |
+| Ezekiel 25 | 2 | 697 | 12-17 |
+| Ezekiel 26 | 2 | 801 | 1-14 |
+| Ezekiel 27 | 2 | 581 | none |
+| Ezekiel 28 | 2 | 860 | 11-26 |
+| Ezekiel 29 | 2 | 794 | 1-16 |
+| Ezekiel 30 | 2 | 531 | none |
+| Ezekiel 31 | 2 | 688 | 10-18 |
+| Ezekiel 32 | 2 | 744 | 17-32 |
+| Ezekiel 33 | 2 | 923 | 1-20 |
+| Ezekiel 34 | 2 | 807 | 17-31 |
+| Ezekiel 35 | 1 | 515 | 1-15 |
+| Ezekiel 36 | 2 | 925 | 22-38 |
+| Ezekiel 37 | 2 | 951 | 1-14 |
+| Ezekiel 38 | 2 | 844 | 1-16 |
+| Ezekiel 39 | 2 | 785 | 1-20 |
+| Ezekiel 40 | 2 | 861 | 1-27 |
+| Ezekiel 41 | 1 | 361 | none |
+| Ezekiel 42 | 1 | 319 | none |
+| Ezekiel 43 | 2 | 895 | 13-27 |
+| Ezekiel 44 | 2 | 759 | 1-14 |
+| Ezekiel 45 | 2 | 755 | 13-25 |
+| Ezekiel 46 | 2 | 662 | none |
+| Ezekiel 47 | 2 | 928 | 1-12 |
+| Ezekiel 48 | 2 | 826 | 30-35 |
+
+### The hard places, and how they are stated
+
+- **Chapters 16 and 23:** the image named plainly and described without detail; a picture of a city and a covenant; the interpreters' weighings set out as in Hosea 2 (metaphor for a city spoken to male leaders; the frame of grace; feminist and trauma-informed readings that call for critical reading and lament); all agreeing that using the chapters to justify the mistreatment of women is a grave misuse; no warrant for any man to shame, strip, threaten or harm a wife, or anyone. The book page carries the same lines.
+- **Chapter 18:** each person answers to God; the call to turn, never a way of reading anyone's suffering as deserved; Jesus' refusal of that reasoning (John 9:2-3) in the hard note.
+- **Chapters 5, 9, 21 and 24:** the siege hunger, the killing in the vision and the sword named, not described; Israel's own Scripture, never a reason to blame the Jewish people; the death of Ezekiel's wife read with the readings of foreknowledge and of God's act, and grief not forbidden.
+- **Chapters 25 to 32 and 35:** the judgment is God's and no model for revenge; no people is a stand-in for any modern nation; no ongoing curse on any people; Tyre's siege and the forty years of Egypt set out with the readings, and Ezekiel's own later word (29:17-20) kept.
+- **Chapter 28:** the king in Eden read as a human king in the language of the fall, or as Satan's fall (Tertullian, Origen), no side taken.
+- **Chapter 37:** the vision as Israel's revival; the resurrection kept as a reading, since the New Testament does not quote the chapter.
+- **Chapters 38 and 39 (Gog and Magog):** the futurist, symbolic, early-apocalyptic and past-fulfillment readings in their holders' terms; Revelation 20:8's use of the names; no identification with any modern nation, person or event; no date.
+- **Chapters 40 to 48:** the future-temple, symbolic, fulfilled-in-Christ-and-the-church, and program-for-the-return readings, each in its holders' terms; the sacrifices of chapter 43 set beside Hebrews 10:12 as a second-order question; no claim about any modern state, temple or border; the foreigner's share in 47:22-23.
+
+### Care lines
+
+Each is reused whole, word for word, names Find Help and has no phone number: for an abusive marriage (Ezekiel 16; 23); the shorter sexual-assault line (Ezekiel 23); for anyone being hurt (the book page). The deep notes' hotline telephone numbers in chapters 16 and 23 were not carried over. No new care sentence stands in the data.
+
+### Cut or narrowed
+
+The New Testament's own uses kept: Revelation 4 (the living creatures), 10:9-10 (the scroll), 20:8 (Gog and Magog), 21:10-12 (the measured city and its gates), 22:1-2 (the river); John 10:11, the new heart beside the Spirit, the dry bones beside the resurrection and 2 Corinthians 6:16 given only as readings. Cut: John 1:14 and 18, 2 Corinthians 4:6, Revelation 1 and Irenaeus beside chapter 1; Acts 20:26-27 beside the watchman; Revelation 7:3 beside the mark; 2 Peter 3:4 beside the scoffers; Ephesians 5 and Revelation 19 beside chapter 16; Romans 1:24 and 12:19, Luke 1:32-33 and 52, James 1:22, John 3:5, John 4 and 7:37-39, Ephesians 2:13 and 6:12 beside their chapters; Matthew 21:12-13, Luke 24:50-51 and Acts 1:12 beside the glory. Unsourced sentences cut before commit: an Isaiah quotation trimmed to its own words; a reading of 23:48; a gloss on Nebuchadnezzar's soldiers. Each chapter's ledger names its cuts.
+
+### What was run
+
+After the book page and every chapter: validate-bible-notes, the four quotation checks, the forbidden, signposting and first-person scans, the care-line check, no-emdash, the search and passage index checks, validate-politics, the seven explore-index checks and validate-bible (0 problems each). The pushes and the full test run are in the hand-back.
+
 ## The Minor Prophets, Habakkuk to Malachi: book pages and every chapter (2026-11-26)
 
 The last five of the twelve shorter prophets are complete, so all twelve now have a teaching introduction and every chapter in plain words. These five add 26 chapters and 61 passages, with the same shape as Hosea to Nahum: `later` as each passage's third part, `"plain": true` at the end of each chapter note, one commit for each book page (its ledger rows, the rebuilt explore indexes and its line in `teaching.test.tsx`) and one per chapter.
