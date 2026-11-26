@@ -22461,3 +22461,25 @@ Cut in chapter 26: Hebrews 10:37, whose wording some connect with verse 20, left
 | Genesis 15:18 (inside the BSB's speech marks, its clause before the dash); Matthew 24:31 | 12-13 `later` | BSB | BSB text |
 
 Cut in chapter 27: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 28 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 28:1-6 | 1-6 | BSB | BSB text |
+| Chapters 28 to 33 and their woes; Samaria on its hill; the fading wreath; before 722 BC and the three-year siege; Assyria as the strong one; the early fig | 1-6 | isaiah/28.json `story`, `historical`, `cultural` | Repository |
+| 2 Kings 17:5 | 1-6 `later` | BSB | BSB text |
+| 28:7-13 (28:10 inside the BSB's speech marks) | 7-13 | BSB | BSB text |
+| Drunk priests and prophets; tsav latsav, qav laqav and its three readings; the foreign speech of Assyria; rest refused | 7-13 | isaiah/28.json `cultural`, `literary` | Repository |
+| 1 Corinthians 14:21 (inside the BSB's speech marks) | 7-13 `later` | BSB | BSB text; Paul's own quotation |
+| 28:14-22 (28:15's words inside the BSB's speech marks; 28:16 likewise) | 14-22 | BSB | BSB text |
+| The covenant with death as the Egyptian alliance after 705 BC; 701 BC; Mot, Egypt's afterlife or consulting the dead; the stone; the Greek's not put to shame; the short bed; Perazim and Gibeon (2 Samuel 5:20; 1 Chronicles 14:16; or Joshua 10) | 14-22 | isaiah/28.json `historical`, `literary` | Repository |
+| 1 Peter 2:6 (inside the BSB's speech marks); Romans 9:33 and 10:11 named; 2 Samuel 5:20 (inside the BSB's speech marks) | 14-22 `later` | isaiah/28.json `christ`, `literary`; BSB | BSB text; the New Testament's own lines |
+| The hard note: strange to God's heart (Ezekiel 18:32) or a shock to Judah; the measured threshing | 14-22 `hard` | isaiah/28.json `hard` | Repository; both readings in their holders' terms |
+| 28:23-29 | 23-29 | BSB | BSB text |
+| The farmer's parable; seeds and threshing; judgment measured; wonderful in counsel as an echo of 9:6 | 23-29 | isaiah/28.json `literary`, `hard` | Repository |
+| Lamentations 3:33; Isaiah 9:6 | 23-29 `later` | BSB | BSB text |
+
+Cut in chapter 28: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
