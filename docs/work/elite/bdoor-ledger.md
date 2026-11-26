@@ -21625,3 +21625,21 @@ Cut in chapter 2: nothing further.
 | The hard note: an unconditional-sounding judgment; the unstated condition (Jeremiah 18:7-10); the Ninevites' hope; the purpose fulfilled; Nineveh destroyed in 612 BC as Nahum announced; the question of mercy | 5-10 `hard` | jonah/3.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 3: nothing further. The word 'journey' is kept only inside quoted Scripture.
+
+## The plain notes on Jonah 4 (2026-11-25)
+
+`client/public/bible/notes/jonah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1; 4:2 (its clause; the rest paraphrased); 4:3; 4:4 (God's question, in double quotes) | 1-4 | BSB | BSB text |
+| Assyria's feared power and boasted cruelty; Samaria in 722 BC; real reasons for dread; Exodus 34:6 after the golden calf; the confession echoed; recited as complaint; the wish to die recorded honestly; God answering with a question | 1-4 | jonah/4.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 34:6; 1 Kings 19:4 paraphrased | 1-4 | jonah/4.json `cultural`; BSB | Repository; BSB text |
+| The hard note: the words of anger and despair said twice (4:3, 8); neither approved nor shamed; God's patience | 1-4 `hard` | jonah/4.json `literary`; the brief (the crisis rules, as Job and 1 Kings 19 were handled) | Repository; stated as the brief asks |
+| The care line ('If you have thoughts of hurting yourself, speak to someone today...' to '...lists places to turn.') | 1-4 `hard` | judges/plain/16.json; 1-kings/plain/19.json; job/plain/3.json and others | Reused whole, word for word; Find Help named; no phone number |
+| 4:5 and 4:7-10 paraphrased; 4:6 (its last clause); 4:11 | 5-11 | BSB | BSB text |
+| The sukkah and poor shade; the plant uncertain, castor-oil plant, the Greek's gourd, Jerome's ivy; the east wind; appointed linking to 1:17; lesser to greater; 120,000 as a round number, the whole city or children; Nahum's closing question | 5-11 | jonah/4.json `cultural`, `historical`, `literary` | Repository; the readings in their holders' terms |
+| Psalm 145:9; Nahum 3:19 | 5-11 | jonah/4.json `literary`; BSB | Repository; BSB text |
+| The hard note: the deliberate ending; the question aimed at the reader; the first readers' resentment; the book's own existence and Jonah's circle; the question best unanswered; God's compassion; never a reason to blame the Jewish people | 5-11 `hard` | jonah/4.json `hard`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+
+Cut in chapter 4: the deep note's report of Augustine's Letter 71 and Jerome's Letter 112 on the ivy, kept to a single clause naming Jerome's choice, to keep the note short.
