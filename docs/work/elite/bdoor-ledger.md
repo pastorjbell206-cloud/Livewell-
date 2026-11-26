@@ -26145,3 +26145,19 @@ Cut in chapter 45: nothing.
 | Later: Leviticus 25:10; Jeremiah 34:11 | 16-24 `later` | BSB | BSB text |
 
 Cut in chapter 46: the morning-only daily offering, left out for want of room.
+
+## The plain notes on Ezekiel 47 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/47.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The river from the temple: the text paraphrased; quoted clauses at verses 1, 5, 7, 8, 9, 10-11, 12 | 1-12 | BSB | BSB text |
+| Background in `hearers` | 1-12 | ezekiel/47.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 2:10; Psalm 46:4; Revelation 22:1-2 | 1-12 `later` | BSB | BSB text |
+| The hard note: Is the river meant to be a real river? The readings in their holders' terms | 1-12 `hard` | ezekiel/47.json `hard` | Repository; the site takes no side |
+| The borders of the land, and the foreigner's share: the text paraphrased; quoted clauses at verses 13, 14, 15-20, 22, 23 | 13-23 | BSB | BSB text |
+| Background in `hearers` | 13-23 | ezekiel/47.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 19:34 | 13-23 `later` | BSB | BSB text |
+
+Cut in chapter 47: John 4 and 7:37-39 beside the river, which the New Testament does not draw from Ezekiel by quotation; Revelation 22:1-2 kept as the New Testament's own use. The boundaries stated as the vision's, with no claim about any modern state or border.
