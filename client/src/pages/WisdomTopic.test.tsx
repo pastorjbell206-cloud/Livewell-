@@ -88,7 +88,8 @@ describe("WisdomTopic", () => {
     const { container } = renderAt("/wisdom/wayward-child");
     await waitFor(() => expect(container.querySelectorAll(".wz-verse").length).toBeGreaterThan(0));
     const cards = Array.from(container.querySelectorAll<HTMLElement>(".wz-verse"));
-    // Luke 15 has plain-words notes; Ezekiel 18 does not.
+    // Luke 15 has plain-words notes. Ezekiel 18's link follows its chapter note's own `plain` flag,
+    // so this test keeps holding as chapters gain plain words.
     const luke = cards.find((c) => c.querySelector("cite")?.textContent === "Luke 15:20")!;
     const ezekiel = cards.find((c) => c.querySelector("cite")?.textContent === "Ezekiel 18:20")!;
     fireEvent.click(within(luke).getByRole("button", { name: /Read it where it stands/ }));
@@ -97,8 +98,14 @@ describe("WisdomTopic", () => {
     expect(luke.querySelector("mark")?.textContent).toMatch(/^So he got up/);
     expect(luke.querySelector(".wz-context__head")?.textContent).toMatch(/^Luke 15:11.24/);
     fireEvent.click(within(ezekiel).getByRole("button", { name: /Read it where it stands/ }));
-    await waitFor(() => expect(within(ezekiel).getByText("The Study Bible notes on Ezekiel 18")).toBeInTheDocument());
-    expect(within(ezekiel).queryByText(/plain-words/)).toBeNull();
+    const ezekielPlain = JSON.parse(fs.readFileSync(path.join(PUBLIC, "bible/notes/ezekiel/18.json"), "utf8")).plain === true;
+    if (ezekielPlain) {
+      await waitFor(() => expect(within(ezekiel).getByText("The plain-words notes on Ezekiel 18")).toBeInTheDocument());
+      expect(within(ezekiel).getByText("The plain-words notes on Ezekiel 18").closest("a")?.getAttribute("href")).toBe("/study/bible/ezekiel/18#notes");
+    } else {
+      await waitFor(() => expect(within(ezekiel).getByText("The Study Bible notes on Ezekiel 18")).toBeInTheDocument());
+      expect(within(ezekiel).queryByText(/plain-words/)).toBeNull();
+    }
     // Every Study Bible link on the page points at a chapter that has its notes file.
     for (const a of Array.from(container.querySelectorAll<HTMLAnchorElement>('a[href^="/study/bible/"]'))) {
       const m = a.getAttribute("href")!.match(/^\/study\/bible\/([a-z0-9-]+)\/(\d+)/);
