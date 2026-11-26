@@ -23930,3 +23930,31 @@ Cut in chapter 51: the deep note's Christian reading of the cup through Gethsema
 | Romans 15:21 (its inner quotation); Acts 8 and 1 Peter 2 named | 13-15 `later` | BSB | BSB text |
 
 Cut in chapter 52: Romans 2:24, which quotes verse 5, is left out, because Paul there turns it against his hearers and the plain note will not set it beside a chapter about Judah's exile. The authorship question in the deep note is left to the book page, which treats it.
+
+## The plain notes on Isaiah 53 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/53.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 53:1-3 | 1-3 | BSB | BSB text |
+| Heart of the fourth song from 52:13; the earlier songs; five stanzas, God first and last, an unnamed group between; no pronoun named | 1-3 | isaiah/53.json `story`, `literary` | Repository |
+| Acquainted with grief as known by sickness; faces turned away | 1-3 | isaiah/53.json `words`, `cultural` | Repository |
+| John 12:38 (its inner quotation); Isaiah 11:1 (its clause) | 1-3 `later` | BSB; isaiah/53.json `christ` | BSB text |
+| 53:4-6 | 4-6 | BSB | BSB text |
+| The he and the group contrast; all of them in guilt and provision; illness as punishment assumed, Job's friends; right that God was involved, wrong about why | 4-6 | isaiah/53.json `literary`, `cultural` | Repository |
+| Welts returning from 1:5-6; bearing iniquity, the scapegoat, God bearing as forgiving | 4-6 | isaiah/53.json `story`, `words` | Repository |
+| 1 Peter 2:24 (its clause); Matthew 8:17 (its inner quotation) | 4-6 `later` | BSB; isaiah/53.json `christ` | BSB text |
+| Job 4:7 (named); John 9:3 (Jesus' words) | 4-6 `hard` | BSB; isaiah/53.json `cultural` | BSB text |
+| The ILLNESS care line, byte for byte | 4-6 `hard` | carelines.json (from the site) | care.mjs |
+| 53:7-9 | 7-9 | BSB | BSB text |
+| Lamb and shearers, Jeremiah 11:19; oppression and judgment; burial customs, same-day burial, rock-cut tombs; whether he dies, most readers and Whybray's view | 7-9 | isaiah/53.json `cultural`, `literary` | Repository |
+| Acts 8:35 (its clause); 1 Peter 2:22 | 7-9 `later` | BSB | BSB text |
+| The identity question: Acts 8:34; Israel as servant (41:8, 44:1-2, 49:3); Rashi, Ibn Ezra, Kimhi and most Jewish interpreters today; the nations as speakers; the remnant; the prophet, Jeremiah; critical scholars; the Christian answer (49:5-6, verse 9, 40:2, verse 8); collective and individual together; Acts 8:35 and 1 Peter 2:21-25; the Targum's messianic reading without a dying Messiah; where Jews and Christians part | 7-9 `hard` | isaiah/53.json `hard` (first question) | Repository |
+| 53:10-12 | 10-12 | BSB | BSB text |
+| God speaks again; asham with restitution; the Great Isaiah Scroll about 125 BC and "he will see light" in verse 11; many | 10-12 | isaiah/53.json `historical`, `cultural`, `literary` | Repository |
+| Luke 22:37 (its inner quotation and clause); Hebrews 9:28 (its clause) | 10-12 `later` | BSB; isaiah/53.json `christ` | BSB text |
+| Ezekiel 18:20; Socinus (written 1578); Brown and Parker, 1989; Jewish objection; the song's own answers; John Stott; 1 Corinthians 15:3; faithful Christians differ on the mechanism | 10-12 `hard` | isaiah/53.json `hard` (second question) | Repository |
+| The HURT care line, byte for byte | 10-12 `hard` | 2-kings/plain/9.json and two wisdom files | care.mjs |
+
+Cut in chapter 53: a draft sentence saying Christians used the song as a weapon against Jews for centuries was cut, because no repository source states it; the note keeps only that the song gives no warrant for contempt toward the Jewish people. Anselm, Rutledge, Aulén, Chalke, Orlinsky, Isaac of Troki, Saadia, Clines, Ginsberg and Nickelsburg, all named in the deep note, are left to it.
