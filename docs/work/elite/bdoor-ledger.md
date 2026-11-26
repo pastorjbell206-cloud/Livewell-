@@ -23927,3 +23927,19 @@ Every claim in `client/public/bible/notes/zechariah/intro.json`, field `teaching
 | Go deeper: nine pages | deeper | bible/guides (reading-apocalyptic, reading-prophets, empires); bible/doctrines.json (Messiah, Temple, Return of Christ, Kingdom); resources/context/messianic-expectation; studyguides/end-times | Repository; every page live |
 
 Cut from the book page: any New Testament line beyond the four places the New Testament itself quotes (9:9, 11:12-13, 12:10, 13:7); Revelation 11:4's two olive trees is not drawn.
+
+## The plain notes on Zechariah 1 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| A call to return: the text paraphrased, its quoted verses (in single or double quotes) | 1-6 | BSB | BSB text |
+| Background in `hearers` | 1-6 | zechariah/1.json `historical`, `cultural`, `literary` | Repository |
+| Later: Malachi 3:7; Ezra 5:1 | 1-6 `later` | BSB | BSB text |
+| Horsemen among the myrtles, and four horns: the text paraphrased, its quoted verses (in single or double quotes) | 7-21 | BSB | BSB text |
+| Background in `hearers` | 7-21 | zechariah/1.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 25:11-12; Isaiah 47:6 | 7-21 `later` | BSB | BSB text |
+| The hard note: If God was only a little angry, why was the destruction of Jerusalem so terrible? The readings in their holders' terms | 7-21 `hard` | zechariah/1.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 1: none drawn. Cut in chapter 1: nothing.
