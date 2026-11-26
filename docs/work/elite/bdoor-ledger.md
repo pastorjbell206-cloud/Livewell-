@@ -25195,3 +25195,19 @@ Cut in chapter 16: the deep note's hotline telephone number, replaced by the sit
 | The hard note: Why does God hold Zedekiah to an oath sworn to a pagan conqueror who had invaded Judah? The readings in their holders' terms | 11-24 `hard` | ezekiel/17.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 17: the deep note's line to the mustard seed (Mark 4:32), which the New Testament does not draw from Ezekiel.
+
+## The plain notes on Ezekiel 18 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sour grapes: each person answers to God: the text paraphrased; quoted clauses at verses 2, 4, 9, 10-13, 14-17, 20 | 1-20 | BSB | BSB text |
+| Background in `hearers` | 1-20 | ezekiel/18.json `historical`, `cultural`, `literary` | Repository |
+| Later: Deuteronomy 24:16; Jeremiah 31:29-30 | 1-20 `later` | BSB | BSB text |
+| The hard note: Does this chapter contradict the warning that God visits the iniquity of fathers on children? The readings in their holders' terms | 1-20 `hard` | ezekiel/18.json `hard` | Repository; the site takes no side |
+| Turn and live: the text paraphrased; quoted clauses at verses 21, 22, 23, 24, 25, 25-29, 30, 31, 32 | 21-32 | BSB | BSB text |
+| Background in `hearers` | 21-32 | ezekiel/18.json `historical`, `cultural`, `literary` | Repository |
+| Later: Ezekiel 36:26; Deuteronomy 30:19 | 21-32 `later` | BSB | BSB text |
+
+Cut in chapter 18: John 3:5, 2 Peter 3:9 and 1 Timothy 2:4, which the New Testament does not draw from Ezekiel 18. John 9:2-3 is cited in the hard note only as Jesus' own refusal of the same reasoning, as the Haggai notes did. The brief's line that no suffering is a deserved punishment is stated plainly.
