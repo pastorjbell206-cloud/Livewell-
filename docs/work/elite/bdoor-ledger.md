@@ -25950,3 +25950,18 @@ Cut in chapter 46: nothing. The hard note adds that no war today is to be called
 | Amos 1:6-7 (named), Zephaniah 2:4, Zechariah 9:7 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 47: a draft line placing Caphtor, which this chapter's note does not do. The hard note says plainly that no line is drawn to any present-day people, place or conflict.
+
+## The plain notes on Jeremiah 48 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/48.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 48:1-47 (largely paraphrased) | all | BSB | BSB text |
+| Moab's plateau; Mesha Stele, 1868, Dhiban, about 840 BC, Chemosh, the shared town names | 1-17 | jeremiah/48.json `historical` | Repository |
+| Wine on its dregs; Moab subject to Babylon and at the meeting of chapter 27 | 1-17 | jeremiah/48.json `cultural`, `historical` | Repository |
+| Verse 10 and God's lament: certainty of judgment, Saul, Ezekiel 18:32 | 1-17 `hard` | jeremiah/48.json `hard` | Repository |
+| Parallels with Isaiah 15 and 16; the flute at funerals; Ruth the Moabite | 18-47 | jeremiah/48.json `literary`; BSB | Repository, BSB text |
+| Isaiah 16:11, Zephaniah 1:12, Ruth 1:16, Ezekiel 18:32 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 48: nothing. The hard note adds that verse 10 gives no one a warrant for violence and draws no line to any present-day people.
