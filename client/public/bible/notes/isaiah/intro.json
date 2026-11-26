@@ -36,5 +36,542 @@
     { "ch": 40, "why": "Comfort for the exiles: a voice in the wilderness, the frailty of flesh, and the everlasting word of God." },
     { "ch": 53, "why": "The Servant who is despised, pierced, and crushed for the sins of others, then vindicated, the Old Testament passage most closely tied to the cross." },
     { "ch": 65, "why": "God's promise of new heavens and a new earth, the vision the Bible's final chapters take up." }
-  ]
+  ],
+  "teaching": {
+    "parts": [
+      {
+        "id": "in-a-minute",
+        "h": "Isaiah in a minute",
+        "body": "Isaiah is the longest of the prophetic books, sixty-six chapters, and for many readers the grandest. It opens in the eighth century BC with a prophet named Isaiah son of Amoz, who spoke to the kings of Judah while the Assyrian empire swallowed the small nations around them. He saw the Lord enthroned in the temple and heard the seraphim call to one another, ‘Holy, holy, holy is the LORD of Hosts’ (6:3). He spent his life calling a compromised people back to trust that holy God rather than armies, alliances and idols.\n\nThe first half of the book is full of judgment, on Judah, on the northern kingdom of Israel and on the nations. But it is threaded with promises: a child named Immanuel, a king on David's throne whose names include ‘Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace’ (9:6), a shoot from the stump of Jesse, and a mountain where the nations will learn peace.\n\nFrom chapter 40 the tone and the horizon change. A voice speaks comfort to a people in exile in Babylon, names the Persian king Cyrus as the LORD's instrument of their release, mocks the idols, and introduces the Servant of the LORD who suffers, dies and is vindicated for the sins of others. The last chapters speak to a community back in the land but still waiting, and they close with a vision of new heavens and a new earth.\n\nIsaiah holds together what people tend to pull apart: God's fearful holiness and his tender comfort, judgment and hope, Israel's particular calling and the whole world's future. The New Testament quotes it more than almost any other Old Testament book."
+      },
+      {
+        "id": "story",
+        "h": "Where it sits in the story",
+        "body": "Isaiah belongs to the last century and a half of the kingdom of Judah, the years told in 2 Kings 15 to 25 and 2 Chronicles 26 to 36. His contemporaries included Amos and Hosea in the north and Micah in Judah. Isaiah himself appears in the story of Kings, advising King Hezekiah when the Assyrians besieged Jerusalem (2 Kings 19 and 20), and chapters 36 to 39 of his book tell the same events.\n\nHe stands between the promise to David in 2 Samuel 7, which he takes up in his visions of a coming king, and the exile and return told in Ezra and Nehemiah, which his later chapters speak to. Jeremiah and Ezekiel, who come after him, speak into the fall of Jerusalem that Isaiah warned of.\n\nIsaiah's great themes, a new exodus, a servant who bears sin, a light for the nations and a new creation, became the words in which the New Testament explained Jesus and the church. Revelation's closing vision of a new heaven and a new earth draws directly on Isaiah 65 and 66."
+      },
+      {
+        "id": "who",
+        "h": "Who wrote it, and when",
+        "body": "The book names its prophet as Isaiah son of Amoz (1:1), who worked in Jerusalem during the reigns of Uzziah, Jotham, Ahaz and Hezekiah. He was married to a woman he calls the prophetess, and he had at least two sons whose names were themselves messages (7:3; 8:3). He spoke directly to kings. A later Jewish tradition says he was martyred under Manasseh, but the Bible does not say how he died.\n\nWho wrote the whole book is one of the most discussed questions in the study of the Old Testament. These notes take no side, and set out each view as its holders state it.\n\nThe traditional view, held by Jewish and Christian readers for most of history and defended by scholars such as E. J. Young, J. Alec Motyer and John Oswalt, is that Isaiah himself is responsible for all sixty-six chapters, and that chapters 40 to 66 are true prediction of the exile and return given more than a century and a half in advance. They point to the book's own claim that announcing the future is the proof of the LORD's deity (41:21-29; 46:9-10), to the title the Holy One of Israel running through both halves, to the New Testament citing both halves under Isaiah's name (John 12:38-41), and to the Great Isaiah Scroll from Qumran, copied in the second century BC, which presents all sixty-six chapters as one book.\n\nFrom the late eighteenth century, scholars such as J. C. Döderlein and J. G. Eichhorn argued that chapters 40 to 66 address the exiles in Babylon two centuries later and name Cyrus of Persia as a present figure (44:28; 45:1), and so come from a later prophet or prophets. Bernhard Duhm in 1892 further separated chapters 56 to 66. Most critical scholars now speak of First, Second and Third Isaiah.\n\nBetween these stand mediating views: that Isaiah's disciples carried on his teaching (compare 8:16), or that the book grew over time yet was shaped to be read as one work. Many scholars, following Brevard Childs, now read the book whole while still discussing its layers. The debate turns in part on convictions about whether God reveals the future. On every view, the church receives the book as God's word."
+      },
+      {
+        "id": "world",
+        "h": "Assyria, Babylon and Cyrus",
+        "body": "Isaiah lived in the century when Assyria became the dominant empire of the Near East. Tiglath-pileser III (745 to 727 BC) turned Assyria into a machine of conquest that deported whole peoples and reduced kingdoms to paying tribute. Judah, a small hill kingdom ruled from Jerusalem by David's descendants, was caught between Assyria, Egypt and its own neighbors.\n\nIsaiah's call came in the year King Uzziah died (6:1), usually placed about 740 BC. Around 735 to 734 BC Rezin king of Aram and Pekah king of Israel attacked Judah to force it into a coalition against Assyria. King Ahaz, against Isaiah's counsel, appealed to Assyria for help. Assyria took Damascus in 732 BC and Samaria in 722 BC, ending the northern kingdom. Hezekiah later rebelled against Assyria, and in 701 BC Sennacherib ravaged the cities of Judah and besieged Jerusalem, which was spared. Sennacherib's own annals claim forty-six of Judah's fortified cities and Hezekiah shut up like a bird in a cage, and they do not claim that Jerusalem fell. Isaiah's ministry spanned at least these forty years.\n\nThe dates of Judah's kings are counted in more than one way. The site's guide to the kings follows Thiele, and gives Hezekiah's reign as 716 or 715 to 687 or 686 BC, with Galil's reckoning of 726 to 697 beside it.\n\nThe later chapters assume a different world. Babylon has replaced Assyria. Jerusalem and its temple have been destroyed, in 587 or 586 BC, and the people are in exile. Cyrus the Persian is rising. He took Babylon in 539 BC and allowed the exiles to return. The final chapters reflect a small community back in Judah, facing disappointment and divided worship."
+      },
+      {
+        "id": "built",
+        "h": "How Isaiah is built",
+        "body": "Isaiah is mostly poetry, and it should be read as poetry: pictures, parallel lines, sudden changes of speaker, and quick movement between judgment and hope. It is a collection of oracles, not a continuous story, so it helps to notice where one unit ends and another begins.\n\nThe book has three great movements. Chapters 1 to 39 belong to Isaiah's own century: Judah on trial and the promised king (1 to 12), oracles against the nations (13 to 23), a vision of judgment and a feast for the whole world (24 to 27), woes against false trust and visions of the coming kingdom (28 to 35), and the story of Hezekiah and Assyria, which ends with Babylon's envoys and points ahead to exile (36 to 39). Chapters 40 to 55 bring comfort to the exiles: God comes to bring his people home, proves himself the only God against the idols, names Cyrus, and presents his Servant. Chapters 56 to 66 speak to the waiting community and end with new heavens and a new earth.\n\nKeep three horizons in view as you read: the prophet's own day, the exile and return, and the far future of God's kingdom. Many promises have a near fulfillment and a fuller one, and the book often speaks of the future in the pictures of its own world. The prophets often saw distant events together, the way a traveler sees far mountain ranges in one view without the valleys between them.\n\nThe title the Holy One of Israel runs through the whole book and is rare anywhere else. It is one of the threads that ties the movements together."
+      },
+      {
+        "id": "holy",
+        "h": "The Holy One of Israel",
+        "body": "The book opens as a courtroom. God calls heaven and earth to listen, and charges his people with rebellion. Their worship is busy and their hands are full of blood. God does not want more sacrifices. He wants justice: ‘seek justice and correct the oppressor. Defend the fatherless and plead the case of the widow’ (1:17). And he offers cleansing: ‘Though your sins are like scarlet, they will be as white as snow’ (1:18).\n\nChapter 2 lifts the eyes to the last days, when the nations will stream to the mountain of the LORD's house and ‘will beat their swords into plowshares and their spears into pruning hooks’ (2:4). Chapter 5 sings a song of a vineyard that yielded only wild grapes, and pronounces woes on those who join house to house and call evil good.\n\nThen chapter 6 tells how it began. ‘In the year that King Uzziah died, I saw the Lord seated on a throne, high and exalted’ (6:1). The seraphim cry that he is holy, holy, holy, and the whole earth is full of his glory. Isaiah is undone, a man of unclean lips among a people of unclean lips. A seraph touches his mouth with a burning coal from the altar, and his sin is atoned for. Then the Lord asks whom he shall send, and Isaiah answers, “Here am I. Send me!” (6:8).\n\nHoliness in Isaiah means God's utter otherness and moral purity, which exposes human sin and pride. But it also means his commitment to his people. The Holy One is Israel's Holy One, and he is their Redeemer."
+      },
+      {
+        "id": "immanuel",
+        "h": "Ahaz, Immanuel, and the promised king",
+        "body": "Chapter 7 tells the crisis that tested Ahaz. Aram and Israel were marching on Jerusalem. Isaiah went out to meet the king with his son Shear-jashub, whose name means a remnant will return, and told him to stay calm and trust God. ‘If you do not stand firm in your faith, then you will not stand at all’ (7:9). Ahaz refused even to ask for a sign. So Isaiah gave him one: ‘Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel’ (7:14), a name Matthew explains as ‘God with us’ (Matthew 1:23). Before the child could tell good from evil, the two threatening kings would be gone.\n\nThe word the BSB renders virgin is debated. The Hebrew almah means a young woman of marriageable age. The Greek translation made by Jewish scholars before Christ rendered it parthenos, usually virgin, and Matthew quotes that Greek of Jesus' birth: ‘Behold, the virgin will be with child and will give birth to a son, and they will call Him Immanuel’ (Matthew 1:23). Some, such as E. J. Young and J. Alec Motyer, read the verse as a direct prophecy of the virgin birth. Many others see a double reference: a child born in Ahaz's day fulfilled the sign then, and Matthew sees its fuller meaning in Jesus. Jewish interpreters such as Rashi took the child as one born in that generation and read Matthew's use as a misreading. The church's confession of Jesus' virginal conception rests on the Gospels' own accounts. The question in this verse is how Matthew reads Isaiah.\n\nThe promise grows. A great light will dawn on Galilee, and ‘For unto us a child is born, unto us a son is given, and the government will be upon His shoulders’ (9:6). In chapter 11 ‘a shoot will spring up from the stump of Jesse’ (11:1), the Spirit of the LORD will rest on him, and he will judge the poor with justice. Wolf and lamb will lie down together, and the earth will be full of the knowledge of the LORD."
+      },
+      {
+        "id": "nations",
+        "h": "The nations, and a feast for all peoples",
+        "body": "Chapters 13 to 23 are oracles against the nations: Babylon, Assyria, Philistia, Moab, Damascus, Cush, Egypt, Edom, Arabia, Tyre and others. Their point is that the LORD who judges Judah rules every nation. No empire is beyond his reach, and no small neighbor is beneath his notice. There are surprises among them. Moab's grief moves the prophet to tears, and the oracle on Egypt ends with Egypt and Assyria joined with Israel as ‘a blessing upon the earth’ (19:24).\n\nThe oracles use the violent language of ancient war, and some of their pictures are hard to read. They are announcements of judgment on the cruelty of empires and their gods, not a charter for violence. They are not a key for naming any nation of the present day.\n\nChapters 24 to 27, often called the Isaiah apocalypse, widen the view to the whole earth. The earth is laid waste because its people have broken the everlasting covenant. Then, on Mount Zion, the LORD prepares a feast for all peoples. ‘He will swallow up death forever. The Lord GOD will wipe away the tears from every face’ (25:8). One of the earliest Old Testament hopes of life beyond death follows: ‘Your dead will live; their bodies will rise’ (26:19)."
+      },
+      {
+        "id": "hezekiah",
+        "h": "Trust or ruin: Hezekiah and Assyria",
+        "body": "Chapters 28 to 35 return to Isaiah's own day. Again and again the kings of Judah face a choice between trusting God and trusting military power, foreign alliances or clever policy. The leaders want to lean on Egypt. Isaiah tells them, ‘By repentance and rest you would be saved; your strength would lie in quiet confidence’ (30:15), but they were not willing. Between the warnings come visions of a righteous king, and of the desert blooming as the redeemed come home.\n\nChapters 36 to 39 tell the story of 701 BC, much as 2 Kings 18 to 20 tells it. Sennacherib's field commander stands outside Jerusalem and mocks Hezekiah's trust in the LORD. Hezekiah takes the Assyrian king's letter into the temple and spreads it before the LORD, and prays, ‘save us from his hand, so that all the kingdoms of the earth may know that You alone, O LORD, are God’ (37:20). Isaiah sends word that the city will be spared, and it is. Ahaz chose Assyria; Hezekiah, in the crisis, prayed.\n\nThe section ends with two smaller stories. Hezekiah falls ill and is healed, and he writes a psalm of thanks. Then envoys come from Babylon, and Hezekiah shows them all his treasures. Isaiah tells him that one day all of it will be carried to Babylon. So the first half of the book closes by pointing to the exile that the second half addresses."
+      },
+      {
+        "id": "comfort",
+        "h": "Comfort for the exiles",
+        "body": "Chapter 40 opens with a new voice. ‘Comfort, comfort My people,’ says your God (40:1). Jerusalem's hard service is over, and her iniquity is pardoned. A voice calls, ‘Prepare the way for the LORD in the wilderness’ (40:3). The people are like grass, ‘but the word of our God stands forever’ (40:8). The God who measures the waters in his hand and calls the stars by name gives strength to the weary, and ‘those who wait upon the LORD will renew their strength’ (40:31).\n\nChapters 40 to 48 describe the return from exile as a new exodus, with a road through the wilderness and water in the desert. Again and again God says he alone is God. He mocks the idol-maker who cuts down a tree, burns half of it to bake his bread and bows down to the other half. He challenges the gods of Babylon to announce the future, and says that he has announced it.\n\nAnd he names the one who will set the exiles free. God says of Cyrus, ‘My shepherd will fulfill all that I desire’ (44:28), and calls him ‘His anointed’ (45:1). A foreign king who does not know the LORD is called his shepherd and his anointed, for the sake of Israel. The same chapter has the LORD say, ‘I form the light and create the darkness; I bring prosperity and create calamity’ (45:7). Isaiah's God has no rival, not even in the dark.\n\nThe Gospels take up 40:3 for John the Baptist: ‘This is he who was spoken of through the prophet Isaiah’ (Matthew 3:3), the voice calling in the wilderness to prepare the way for the Lord."
+      },
+      {
+        "id": "servant",
+        "h": "The Servant of the LORD",
+        "body": "In chapters 42 to 53 a figure called the Servant of the LORD appears in four passages often called the Servant Songs (42:1-9; 49:1-13; 50:4-11; 52:13 to 53:12). God says, ‘Here is My Servant, whom I uphold’ (42:1). He will bring justice to the nations gently, not breaking a bruised reed. He is called to restore Israel and to be ‘a light for the nations’ (49:6). He is beaten and spat on and does not turn away.\n\nThe fourth song is the best known. ‘He was despised and rejected by men, a man of sorrows, acquainted with grief’ (53:3). ‘But He was pierced for our transgressions, He was crushed for our iniquities’ (53:5). ‘We all like sheep have gone astray, each one has turned to his own way; and the LORD has laid upon Him the iniquity of us all’ (53:6). He goes silently, like a lamb to the slaughter. He dies and is buried, and then he sees his offspring and is exalted, because ‘He bore the sin of many and made intercession for the transgressors’ (53:12).\n\nWho is the Servant? Isaiah itself calls Israel God's servant (41:8; 49:3). Jewish interpreters from Rashi onward have commonly identified the Servant of chapter 53 with Israel, humiliated among the nations, with the nations as the ones who speak of him. Others have proposed the prophet himself, or a figure like Jeremiah. Ancient Jewish tradition also read parts of the chapter of the Messiah, as in the Targum, though not as a portrait of a dying Messiah who atones.\n\nThe New Testament reads the song of Jesus. When the Ethiopian official asks Philip whether the prophet speaks of himself or someone else, ‘Philip began with this very Scripture and told him the good news about Jesus’ (Acts 8:35). Peter writes that Christ ‘committed no sin, and no deceit was found in His mouth’, and that ‘By His stripes you are healed’ (1 Peter 2:22-24). Christian interpreters add that the Servant of this song is distinguished from Israel, since he restores Israel (49:5-6), and that he suffers without sin and by his own will. The question of the Servant is where Jews and Christians most sharply part, and each tradition's answer is tied to what it confesses about the Messiah. These notes set out both, and nothing in them is a reason to speak against the Jewish people."
+      },
+      {
+        "id": "zion",
+        "h": "Zion restored, and new heavens and a new earth",
+        "body": "After the Servant's song, chapter 54 calls barren Zion to sing, and chapter 55 opens with an invitation: ‘Come, all you who are thirsty, come to the waters’ (55:1). God's thoughts are higher than human thoughts, and his word will not return to him empty.\n\nChapters 56 to 66 speak to a community back in the land but still waiting, torn between the faithful and the hypocritical. Foreigners and eunuchs who hold fast to the covenant are welcomed, for God's house ‘will be called a house of prayer for all the nations’ (56:7). Chapter 58 rejects fasting that goes with quarrels and oppression, and asks instead for loosing the chains of injustice and sharing bread with the hungry. Chapter 59 confesses the people's sin, and the LORD himself puts on righteousness to act.\n\nChapter 60 sees Zion's light come and the nations walking toward it. Chapter 61 gives the voice of one anointed by the Spirit: ‘The Spirit of the Lord GOD is on Me, because the LORD has anointed Me to preach good news to the poor’ (61:1), to bind up the brokenhearted, to proclaim liberty to the captives and the year of the LORD's favor. In the synagogue at Nazareth Jesus read this passage, stopped before the line about the day of vengeance, and said, ‘Today this Scripture is fulfilled in your hearing’ (Luke 4:21).\n\nThe book ends looking beyond Israel's history: ‘For behold, I will create new heavens and a new earth’ (65:17). No more weeping, no infant who lives but a few days, wolf and lamb feeding together. Its last verse, about those who rebelled, is one of the hardest in the book, and the chapter notes face it where it stands."
+      },
+      {
+        "id": "new-testament",
+        "h": "How the New Testament reads Isaiah",
+        "body": "No Old Testament book shaped the first Christians' understanding of Jesus more than Isaiah. Matthew reads the sign of Immanuel as fulfilled in Jesus' birth (Matthew 1:22-23), with the debated word set out above, and the light dawning on Galilee as fulfilled in his ministry there (Matthew 4:14-16). All four Gospels identify John the Baptist with the voice crying in the wilderness (Matthew 3:3). In Nazareth Jesus read Isaiah 61 and announced that it was fulfilled that day (Luke 4:16-21).\n\nThe Servant of the fourth song is read throughout the New Testament of the cross, in Philip's words to the Ethiopian (Acts 8:32-35) and in Peter's letter (1 Peter 2:22-25). John quotes both halves of the book together, 53:1 and 6:10, and says ‘Isaiah said these things because he saw Jesus’ glory and spoke about Him’ (John 12:41). Paul quotes Isaiah again and again in Romans. And Peter and Revelation take up the promise of a new heaven and a new earth (2 Peter 3:13; Revelation 21:1-4).\n\nThese notes draw the lines the New Testament draws, and no others. Readers debate how much the first hearers understood of these passages, and Jewish interpreters have often read the Servant as Israel and the king of chapters 9 and 11 as a king of David's line still to come. Christians confess that in Jesus the threads of king, servant and anointed messenger are gathered into one person.\n\nIsaiah is Israel's own Scripture. Its harshest words were spoken by a prophet of Judah to his own people and their kings, as Scripture for Israel's own children. It is never a reason to blame the Jewish people, then or now."
+      },
+      {
+        "id": "how-to-read",
+        "h": "How to read Isaiah",
+        "body": "Read Isaiah as poetry first. Let the pictures work, notice the parallel lines, and watch for the change of speaker. Read it as a collection: notice where each oracle begins and ends, and ask what setting it assumes.\n\nKeep the three horizons together: Isaiah's own day, the exile and return, and the far future. Isaiah is often misread in two ways: as a list of predictions cut loose from its history, or as old history with no word for later readers. The New Testament reads it both ways at once.\n\nThe book's judgments are severe, and some of its pictures are violent. They were spoken by a prophet to his own people, and to the empires that crushed them, about sin, pride and cruelty. They are not a key for reading any person's or any people's suffering today. No reader should take from Isaiah that a disaster, an illness or a loss is God's verdict on the one who suffers it.\n\nRead it for its comfort too. The same book that says the LORD is holy says he gives strength to the weary, that he will not break a bruised reed, and that he will wipe away the tears from every face.\n\nIf you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn."
+      }
+    ],
+    "hard": [
+      {
+        "ch": 1,
+        "v": 15,
+        "ref": "1:10-17",
+        "line": "God refuses the people's sacrifices and prayers while their hands are full of blood."
+      },
+      {
+        "ch": 3,
+        "v": 16,
+        "ref": "3:16-4:1",
+        "line": "The daughters of Zion judged for their pride: a picture of a city, never a warrant to shame or harm a woman."
+      },
+      {
+        "ch": 5,
+        "v": 4,
+        "ref": "5:1-7",
+        "line": "The song of the vineyard: what more could God have done?"
+      },
+      {
+        "ch": 6,
+        "v": 10,
+        "ref": "6:9-13",
+        "line": "Isaiah sent to make hearts dull and ears deaf: why would God send a prophet to harden?"
+      },
+      {
+        "ch": 7,
+        "v": 14,
+        "ref": "7:10-17",
+        "line": "The sign of Immanuel: the debated word almah, and how Matthew reads it."
+      },
+      {
+        "ch": 9,
+        "v": 6,
+        "ref": "9:1-7",
+        "line": "A child called Mighty God: a royal child in Isaiah's day, or more?"
+      },
+      {
+        "ch": 10,
+        "v": 5,
+        "ref": "10:5-19",
+        "line": "Assyria as the rod of God's anger, then judged for its pride."
+      },
+      {
+        "ch": 13,
+        "v": 16,
+        "ref": "13:15-16",
+        "line": "The cruelties of the sack of Babylon, named and not lingered on."
+      },
+      {
+        "ch": 14,
+        "v": 12,
+        "ref": "14:12-15",
+        "line": "The fallen morning star: a taunt over Babylon's king, or Satan's fall?"
+      },
+      {
+        "ch": 20,
+        "v": 2,
+        "ref": "20:1-6",
+        "line": "Isaiah walks stripped and barefoot for three years as a sign."
+      },
+      {
+        "ch": 24,
+        "v": 1,
+        "ref": "24:1-6",
+        "line": "The whole earth laid waste: the Isaiah apocalypse."
+      },
+      {
+        "ch": 28,
+        "v": 16,
+        "ref": "28:14-22",
+        "line": "A tested stone laid in Zion, and a covenant with death."
+      },
+      {
+        "ch": 34,
+        "v": 5,
+        "ref": "34:1-10",
+        "line": "The sword of the LORD against Edom and the nations."
+      },
+      {
+        "ch": 37,
+        "v": 36,
+        "ref": "37:36-38",
+        "line": "185,000 in the Assyrian camp struck in one night."
+      },
+      {
+        "ch": 38,
+        "v": 1,
+        "ref": "38:1-8",
+        "line": "Hezekiah told he will die, and then given fifteen years: did God change his mind?"
+      },
+      {
+        "ch": 40,
+        "v": 3,
+        "ref": "40:3-5",
+        "line": "A voice in the wilderness, taken up in the Gospels for John the Baptist."
+      },
+      {
+        "ch": 44,
+        "v": 28,
+        "ref": "44:24-45:7",
+        "line": "Cyrus named in advance and called the LORD's anointed."
+      },
+      {
+        "ch": 45,
+        "v": 7,
+        "ref": "45:5-7",
+        "line": "‘I form the light and create the darkness’: does God create evil?"
+      },
+      {
+        "ch": 47,
+        "v": 3,
+        "ref": "47:1-4",
+        "line": "Babylon pictured as a queen stripped and shamed: a picture of a city, never of how any woman may be treated."
+      },
+      {
+        "ch": 49,
+        "v": 3,
+        "ref": "49:1-6",
+        "line": "The Servant called Israel, and sent to restore Israel: who is he?"
+      },
+      {
+        "ch": 53,
+        "v": 5,
+        "ref": "52:13-53:12",
+        "line": "The Servant who suffers for others: Israel, the prophet, or the Messiah?"
+      },
+      {
+        "ch": 53,
+        "v": 10,
+        "ref": "53:10",
+        "line": "‘it was the LORD’s will to crush Him’: how can one person's suffering take away another's sin?"
+      },
+      {
+        "ch": 56,
+        "v": 3,
+        "ref": "56:3-8",
+        "line": "Foreigners and eunuchs welcomed into God's house."
+      },
+      {
+        "ch": 61,
+        "v": 2,
+        "ref": "61:1-3",
+        "line": "Good news to the poor, read by Jesus in Nazareth, who stopped before the day of vengeance."
+      },
+      {
+        "ch": 63,
+        "v": 3,
+        "ref": "63:1-6",
+        "line": "The warrior from Edom with garments stained red."
+      },
+      {
+        "ch": 65,
+        "v": 20,
+        "ref": "65:17-25",
+        "line": "New heavens and a new earth where people still die old: how literal?"
+      },
+      {
+        "ch": 66,
+        "v": 24,
+        "ref": "66:22-24",
+        "line": "The book's last verse: the worm that will not die and the fire not quenched."
+      }
+    ],
+    "words": [
+      {
+        "word": "The Holy One of Israel",
+        "line": "Isaiah's signature title for God, running through both halves of the book and rare anywhere else (1:4; 41:14; 60:9)."
+      },
+      {
+        "word": "Holy",
+        "line": "In Hebrew qadosh: set apart, utterly other, morally pure. The seraphim say it three times (6:3)."
+      },
+      {
+        "word": "LORD of Hosts",
+        "line": "God as commander of heaven's armies, one of the book's favorite names for him (6:3)."
+      },
+      {
+        "word": "Remnant",
+        "line": "Those left after judgment. Isaiah's son is named Shear-jashub, a remnant will return (7:3; 10:20-22)."
+      },
+      {
+        "word": "Immanuel",
+        "line": "The name of the child in the sign to Ahaz (7:14; 8:8). Matthew gives its meaning as ‘God with us’ (Matthew 1:23)."
+      },
+      {
+        "word": "Almah",
+        "line": "The Hebrew word in 7:14, a young woman of marriageable age. The Greek rendered it parthenos, usually virgin, the word Matthew quotes."
+      },
+      {
+        "word": "Zion",
+        "line": "The hill of the temple, and Jerusalem itself, the city God judges and will restore (2:3; 40:9; 62:1)."
+      },
+      {
+        "word": "Woe",
+        "line": "In Hebrew hoy, the cry of a funeral lament, spoken over the living as if they were already dead (5:8-22)."
+      },
+      {
+        "word": "Redeemer",
+        "line": "In Hebrew go'el, the near relative who buys back and sets free. God calls himself Israel's Redeemer (41:14; 43:14)."
+      },
+      {
+        "word": "Comfort",
+        "line": "In Hebrew nacham. The second half of the book opens with it, twice (40:1)."
+      },
+      {
+        "word": "Servant of the LORD",
+        "line": "Israel, and a figure who restores Israel and suffers for others (41:8; 42:1; 49:3-6; 52:13)."
+      },
+      {
+        "word": "Anointed",
+        "line": "In Hebrew mashiach. Used of Cyrus (45:1), and of the one on whom the Spirit rests to preach good news (61:1)."
+      },
+      {
+        "word": "Light for the nations",
+        "line": "The Servant's calling: to bring God's salvation to the ends of the earth (42:6; 49:6)."
+      },
+      {
+        "word": "New heavens and new earth",
+        "line": "The book's last horizon, where weeping will be heard no more (65:17; 66:22)."
+      },
+      {
+        "word": "Righteousness",
+        "line": "In Hebrew tsedaqah: right dealing, and God's saving faithfulness. Isaiah pairs it with justice (1:27; 5:7; 46:13)."
+      }
+    ],
+    "timeline": [
+      {
+        "when": "About 740 BC",
+        "what": "In the year King Uzziah dies, Isaiah sees the Lord on his throne and is sent (6:1-8).",
+        "kind": "story"
+      },
+      {
+        "when": "745 to 727 BC",
+        "what": "Tiglath-pileser III makes Assyria an empire of conquest and deportation.",
+        "kind": "world"
+      },
+      {
+        "when": "About 735 to 734 BC",
+        "what": "Aram and Israel attack Judah. Isaiah meets Ahaz and gives the sign of Immanuel (chapter 7). Ahaz appeals to Assyria.",
+        "kind": "story"
+      },
+      {
+        "when": "732 BC",
+        "what": "Assyria takes Damascus; Galilee and Gilead are annexed, within the few years 7:16 allows.",
+        "kind": "world"
+      },
+      {
+        "when": "722 BC",
+        "what": "Samaria falls and the northern kingdom ends. The site's guide to the kings gives 723 or 722, and most histories 722 or 721.",
+        "kind": "world"
+      },
+      {
+        "when": "716 or 715 to 687 or 686 BC",
+        "what": "Hezekiah reigns in Judah, by Thiele's reckoning in the site's guide. Galil's reckoning gives 726 to 697.",
+        "kind": "story"
+      },
+      {
+        "when": "701 BC",
+        "what": "Sennacherib invades Judah and besieges Jerusalem, which is spared (chapters 36 and 37). His annals claim forty-six fortified cities.",
+        "kind": "story"
+      },
+      {
+        "when": "Early seventh century BC",
+        "what": "On the traditional view, the book is substantially complete, with chapters 40 to 66 looking ahead.",
+        "kind": "book"
+      },
+      {
+        "when": "587 or 586 BC",
+        "what": "Babylon destroys Jerusalem and the temple. The second half of the book speaks to the exiles.",
+        "kind": "world"
+      },
+      {
+        "when": "About 550 to 539 BC",
+        "what": "On the multiple-author view, chapters 40 to 55 come from these last years of the exile, as Cyrus rises.",
+        "kind": "book"
+      },
+      {
+        "when": "539 BC",
+        "what": "Cyrus takes Babylon and lets the exiles go home, as 44:28 and 45:1 speak of him.",
+        "kind": "world"
+      },
+      {
+        "when": "Late sixth or early fifth century BC",
+        "what": "On the multiple-author view, chapters 56 to 66 address the community after the return.",
+        "kind": "book"
+      },
+      {
+        "when": "Second century BC",
+        "what": "The Great Isaiah Scroll is copied, later found at Qumran: all sixty-six chapters as one book.",
+        "kind": "book"
+      },
+      {
+        "when": "1892",
+        "what": "Bernhard Duhm proposes separating chapters 56 to 66, after Döderlein and Eichhorn had separated 40 to 66 in the late eighteenth century.",
+        "kind": "book"
+      },
+      {
+        "when": "About AD 30",
+        "what": "In the synagogue at Nazareth, Jesus reads Isaiah 61 and says it is fulfilled that day (Luke 4:16-21).",
+        "kind": "book"
+      }
+    ],
+    "map": [
+      {
+        "frame": "canaan",
+        "title": "Judah and its neighbors in Isaiah's day",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "1:1",
+              "36:2",
+              "40:2"
+            ],
+            "line": "Zion, the city the book judges and comforts. Sennacherib's commander stood outside it (36:2), and the second half begins, ‘Speak tenderly to Jerusalem’ (40:2).",
+            "label": {
+              "dx": -10,
+              "dy": -4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "samaria",
+            "name": "Samaria",
+            "lat": 32.4,
+            "lon": 35.42,
+            "refs": [
+              "7:9",
+              "9:9",
+              "10:9"
+            ],
+            "region": true,
+            "line": "The northern kingdom, named after its capital: ‘The head of Ephraim is Samaria’ (7:9). Assyria took it in 722 BC. Drawn roughly; the city is not marked."
+          },
+          {
+            "id": "jordan",
+            "name": "The Jordan",
+            "lat": 31.84,
+            "lon": 35.55,
+            "refs": [
+              "9:1"
+            ],
+            "line": "Named in the promise of light for Galilee and ‘beyond the Jordan’ (9:1).",
+            "label": {
+              "dx": 8,
+              "dy": 10,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "damascus",
+            "name": "Damascus",
+            "lat": 33.513,
+            "lon": 36.27,
+            "refs": [
+              "7:8",
+              "17:1"
+            ],
+            "line": "Capital of Aram, whose king Rezin marched against Judah with Israel (7:1-8). An oracle foretold its ruin (17:1), and Assyria took it in 732 BC.",
+            "label": {
+              "dx": -10,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "tyre",
+            "name": "Tyre",
+            "lat": 33.27,
+            "lon": 35.2,
+            "refs": [
+              "23:1",
+              "23:8"
+            ],
+            "line": "The great Phoenician trading port, the subject of the oracle of chapter 23, ‘the bestower of crowns, whose traders are princes’ (23:8)."
+          },
+          {
+            "id": "sidon",
+            "name": "Sidon",
+            "lat": 33.56,
+            "lon": 35.37,
+            "refs": [
+              "23:2",
+              "23:4"
+            ],
+            "line": "Tyre's sister city on the coast, named in the same oracle (23:2-4)."
+          }
+        ]
+      }
+    ],
+    "mapNote": "Six places are drawn, each where the site's other maps place them; Samaria roughly, as a region. Galilee, Moab, Edom and Bozrah, Philistia, Lachish, Egypt, Assyria and Babylon are left off, because where they lay is not placed in this site's records or lies beyond the frame. No borders are drawn. The map makes no claim about any border today.",
+    "deeper": [
+      {
+        "href": "/study/bible/guides/reading-prophets",
+        "name": "Reading the Prophets",
+        "line": "Isaiah's authorship, 7:14 and the Servant Songs, and how prophecy looks ahead",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/reading-poetry",
+        "name": "Reading Hebrew Poetry",
+        "line": "For a book that is mostly poetry",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/kings-of-israel-and-judah",
+        "name": "The Kings of Israel and Judah",
+        "line": "Uzziah, Ahaz and Hezekiah, and how their dates are worked out",
+        "icon": "scroll"
+      },
+      {
+        "href": "/study/bible/guides/empires",
+        "name": "The Empires Around Israel",
+        "line": "Assyria, Babylon and Cyrus, and what their own records say",
+        "icon": "world"
+      },
+      {
+        "href": "/study/bible/doctrines/holiness",
+        "name": "Holiness",
+        "line": "Behind the Holy One of Israel and the vision of chapter 6",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/messiah",
+        "name": "The Messiah",
+        "line": "The king of chapters 9 and 11, and how the New Testament reads them",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/atonement",
+        "name": "Sacrifice and Atonement",
+        "line": "Behind the Servant who bears the sin of many",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/exile",
+        "name": "Exile and Restoration",
+        "line": "The exile of the second half, and the new exodus home",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/new-creation",
+        "name": "The New Heavens and the New Earth",
+        "line": "Isaiah 65 and 66, and Revelation's use of them",
+        "icon": "book"
+      },
+      {
+        "href": "/study/bible/doctrines/justice-poor",
+        "name": "Justice, the Poor, and the Stranger",
+        "line": "Seek justice, defend the fatherless, and the fast God chooses",
+        "icon": "book"
+      },
+      {
+        "href": "/help/suffering",
+        "name": "Why would God let this happen?",
+        "line": "The Find Help page, for a reader carrying the book's hard questions",
+        "icon": "people"
+      }
+    ]
+  }
 }

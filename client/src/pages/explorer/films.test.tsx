@@ -1723,6 +1723,14 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-luke",
     "book-acts",
     "book-revelation",
+    "book-ruth",
+    "book-jonah",
+    "book-daniel",
+    "book-1-corinthians",
+    "book-ephesians",
+    "book-philippians",
+    "book-hebrews",
+    "book-james",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2297,5 +2305,133 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
       "Do not be afraid. I am the First and the Last"
     );
     expect(f.frames[2].still).toContain("No one is drawn.");
+  });
+
+  it("Ruth tells the family's deaths in words and draws none, lets Naomi's grief stand, and keeps help in view", () => {
+    const f = filmFile("book-ruth");
+    expect(f.care).toBe(filmFile("life-to-come").care);
+    expect(f.frames[0].younger).toContain("There the father dies, and then both sons.");
+    expect(f.frames[0].older).toContain("the men die there");
+    // The losses are told, never drawn: no still shows a death or a grave.
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(
+      /dead|dying|grave|tomb|bod(y|ies)|bury|buried|weep/i
+    );
+    expect(f.frames[1].verse?.text).toBe(
+      "I went away full, but the LORD has brought me back empty."
+    );
+    expect(f.think.older).toContain("the book lets her say it");
+    expect((f.deeper ?? []).map(d => d.href)).toContain("/wisdom/grief");
+  });
+
+  it("Jonah gives the ways Christians read it and takes none, and holds no people in contempt", () => {
+    const f = filmFile("book-jonah");
+    expect(f.care).toBe(filmFile("book-exodus").care);
+    const start = f.frames.find(x => x.id === "start")!;
+    // History, a teaching story, or both: at both levels, none taken.
+    expect(start.younger).toContain("as things that happened");
+    expect(start.younger).toContain("as a story told to teach");
+    expect(start.younger).toContain("some as both");
+    expect(start.older).toContain("Many read Jonah as history, many as a teaching story, some as both.");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect(f.differ?.text).toContain("A third group holds both.");
+    const t = text(f);
+    expect(t).not.toMatch(/pagan|heathen|savage|brutal|cruel|wicked city|\bIraq\b|modern/i);
+    // Jonah's wish to die (4:3, 8) is not told to children.
+    expect(captions(f)).not.toMatch(/wish(ed)? to die|take my life|better for me to die/i);
+  });
+
+  it("Daniel states the datings and the readings of its visions fairly, predicts nothing, names no one of today, and tells the furnace and the lions gently", () => {
+    const f = filmFile("book-daniel");
+    expect(f.care).toBe(filmFile("book-isaiah").care);
+    const vision = f.frames.find(x => x.id === "son-of-man")!;
+    expect(vision.older).toContain("Babylon, Media-Persia, Greece and Rome");
+    expect(vision.older).toContain("Babylon, Media, Persia and Greece");
+    expect(f.differ?.text).toContain("in the sixth century BC");
+    expect(f.differ?.text).toContain("in the 160s BC");
+    expect(f.differ?.text).toContain("or by stages");
+    expect(f.differ?.text).toMatch(/takes no side and predicts no date/);
+    const t = text(f);
+    expect(t).not.toMatch(/antichrist|rapture|tribulation|end times|seventy weeks|\b(19|20)\d\d\b|soon|any day now/i);
+    expect(t).not.toMatch(/Russia|China|America|United States|European|Iran|Iraq|pope|president|Israel today/i);
+    // Ages 7 to 11: no burning, no one eaten, no one killed.
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|eat(en)?\b|kill|die|dead|beast|blood/i);
+    expect(f.frames.find(x => x.id === "bow")!.younger).toContain("they walk out unhurt");
+    expect(f.frames.find(x => x.id === "window")!.younger).toContain("in the morning he comes out safe");
+    // No figure is drawn in the clouds; the statue is never gold.
+    expect(vision.still).toContain("No one is drawn.");
+    expect(f.frames.find(x => x.id === "bow")!.still).not.toMatch(/gold(en)? statue/i);
+  });
+
+  it("1 Corinthians names the hard passages of chapters 7, 11 and 14 as places where faithful churches differ, and takes no side", () => {
+    const f = filmFile("book-1-corinthians");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const start = f.frames.find(x => x.id === "start")!;
+    expect(start.older).toContain("in chapters 7, 11 and 14, are hard, and faithful churches reach different answers");
+    expect(start.younger).toContain("Christians who love Jesus read them in different ways");
+    expect(f.differ?.text).toContain("(chapter 7)");
+    expect(f.differ?.text).toContain("(11:2-16)");
+    expect(f.differ?.text).toContain("(chapters 12 to 14)");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    // No caption rules on marriage, head coverings, tongues or women's roles.
+    expect(captions(f)).not.toMatch(/head covering|tongues|women (must|should|may)|divorce|silent/i);
+  });
+
+  it("Ephesians names the household passages only as the book page does, with its care on abuse and its verdict on slavery, and draws neither", () => {
+    const f = filmFile("book-ephesians");
+    expect(f.care).toBe(filmFile("why-bad-things-happen").care);
+    const walk = f.frames.find(x => x.id === "walk")!;
+    expect(walk.older).toContain("They give no one a licence to control or harm another.");
+    expect(f.differ?.text).toContain(
+      "Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first."
+    );
+    expect(f.differ?.text).toContain(
+      "The words to slaves were misused for centuries to defend slavery. That misuse was wrong."
+    );
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect((f.differ?.links ?? []).map(l => l.href)).toContain("/help");
+    // No caption tells anyone to submit or obey, and no picture shows a household rank.
+    expect(captions(f)).not.toMatch(/submit|obey|head of the|slaves,? obey/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/husband|wife|slave|master/i);
+  });
+
+  it("Philippians reads 4:13 in its context, as contentment and not a promise of success", () => {
+    const f = filmFile("book-philippians");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const content = f.frames.find(x => x.id === "content")!;
+    expect(content.older).toContain("In context it is not a promise of success.");
+    expect(content.younger).toContain("Paul is not talking about winning games or getting rich.");
+    expect(content.verse?.ref).toBe("Philippians 4:13");
+    expect(f.frames.find(x => x.id === "start")!.older).toContain("the famous line of chapter 4 with the verses around it");
+  });
+
+  it("Hebrews honors the old covenant as God's gift and rejects contempt for the Jewish people at both levels", () => {
+    const f = filmFile("book-hebrews");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const better = f.frames.find(x => x.id === "better")!;
+    expect(better.younger).toContain("were good, and they came from God.");
+    expect(better.younger).toContain("Some Christians have used this book to look down on Jewish people. That was wrong.");
+    expect(better.older).toContain("the writer honors it as God's gift");
+    expect(better.older).toContain("This book was misused to teach contempt for the Jewish people. That misuse was wrong.");
+    expect(f.differ?.text).toContain("the use of this book to teach contempt for the Jewish people was wrong");
+    const t = text(f);
+    expect(t).not.toMatch(/replaced|obsolete religion|Jews rejected|Christ.?killers|blind Jews|legalis/i);
+    // God and Christ are not drawn, and no sacrifice is.
+    expect(f.frames.find(x => x.id === "son")!.still).toContain("No one is drawn");
+    expect(f.frames.find(x => x.id === "priest")!.still).toContain("No one is drawn");
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/blood|altar|goat|calf|bull/i);
+  });
+
+  it("James relates faith and works to Paul as the book page does, and takes no side", () => {
+    const f = filmFile("book-james");
+    const faith = f.frames.find(x => x.id === "faith")!;
+    expect(faith.older).toContain("Paul and James both teach that God saves by grace and that true faith is alive.");
+    expect(faith.older).toContain("in different senses");
+    expect(f.differ?.text).toContain("the two use justify differently");
+    expect(f.differ?.text).toContain("they mean different things by faith and by works");
+    expect(f.differ?.text).toContain("James corrects a distorted slogan drawn from Paul's teaching");
+    expect(f.differ?.text).toContain("Roman Catholic teaching adds that justification grows through good works done by grace");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect(text(f)).not.toMatch(/James (contradicts|disagrees with) Paul|Paul (was )?wrong|epistle of straw/i);
   });
 });

@@ -1,0 +1,120 @@
+{
+  "slug": "book-1-corinthians",
+  "title": "1 Corinthians: a gifted church, coming apart",
+  "group": "books",
+  "status": "finished",
+  "book": "1-corinthians",
+  "mark": "book-1-corinthians",
+  "line": {
+    "younger": "A letter to a church that was gifted, proud and quarrelling: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "1 Corinthians as a whole letter: a real church with real trouble, two halves, the wisdom of the cross, one body, the way of love, the resurrection, and the hard passages where faithful churches differ."
+  },
+  "poster": "A busy city of columns and roofs by the sea, and in one courtyard a small group sits close together, one of them reading aloud from a letter.",
+  "frames": [
+    {
+      "id": "letter",
+      "name": "A real letter",
+      "still": "A busy city of columns and roofs by the sea, and in one courtyard a small group sits close together, one of them reading aloud from a letter.",
+      "younger": "1 Corinthians is a letter. Paul wrote it to the followers of Jesus in Corinth, a busy city in Greece. The church there was young, gifted and proud, and it was falling apart.",
+      "older": "1 Corinthians is a real letter to a real church with real trouble. The church in Corinth was young, rich in gifts and eloquent speech, and coming apart. Paul neither gives up on it nor flatters it.",
+      "verse": {
+        "ref": "1 Corinthians 1:2",
+        "text": "To the church of God in Corinth, to those sanctified in Christ Jesus and called to be holy"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The letter drawn as one long scroll in eight panels, with a cross, a pair of scales, two rings, a cup, a loaf, a small flame, an open tomb and a road over them. A gold rule lies under the third panel, where the questions begin.",
+      "younger": "The letter has two halves. First Paul writes about troubles he has heard of. Then he answers questions the church wrote to him, one by one. It begins with the cross, and it ends with Jesus raised from the dead.",
+      "older": "Chapters 1 to 6 answer what Paul has heard by report. Chapters 7 to 16 answer the questions the Corinthians wrote to him, many marked by the words now about. It begins with the cross and ends with the resurrection.",
+      "verse": {
+        "ref": "1 Corinthians 7:1",
+        "text": "Now for the matters you wrote about"
+      }
+    },
+    {
+      "id": "cross",
+      "name": "Watch for: the wisdom of the cross",
+      "still": "On a hill outside the city stands an empty cross against the sky, and below it a group of people of every kind look up. A gold sun stands behind the hill.",
+      "younger": "Watch how Paul answers every problem. He does not give a list of rules. He keeps coming back to Jesus, who died on the cross and rose again. It looked weak and foolish, but it is God's power.",
+      "older": "Corinth prized eloquence, knowledge and status. Paul answers with a crucified Messiah, which looked like foolishness. The cross does not only save; it reorders what counts as strength and wisdom.",
+      "verse": {
+        "ref": "1 Corinthians 2:2",
+        "text": "For I resolved to know nothing while I was with you except Jesus Christ and Him crucified."
+      }
+    },
+    {
+      "id": "body",
+      "name": "Watch for: one body, many parts",
+      "still": "A ring of people of many kinds sit around one table and pass a loaf from hand to hand: an old man, a mother with a child, a worker, a man with a stick. One gold lamp hangs over the table.",
+      "younger": "Watch for the picture of a body. A body has eyes, hands and feet, and it needs every part. Paul says the church is like that: everyone is given something different, and everyone is needed, especially the ones who seem weakest.",
+      "older": "The Spirit gives varied gifts to one body for the common good. Division is not a matter of taste; it is an attack on what God is building. Unity is not sameness, and the weaker members are indispensable.",
+      "verse": {
+        "ref": "1 Corinthians 12:27",
+        "text": "Now you are the body of Christ, and each of you is a member of it."
+      }
+    },
+    {
+      "id": "love",
+      "name": "Watch for: the way of love",
+      "still": "In the courtyard one person kneels to offer a bowl of food to an old man who sits apart, while others stand round. A gold lamp burns on the wall.",
+      "younger": "Watch for the chapter about love. People often read it at weddings, but Paul wrote it to a church that was showing off its gifts. Without love, he says, even the most amazing gift is worth nothing.",
+      "older": "Chapter 13 is often read at weddings. In its setting it is a rebuke to a church competing over spiritual gifts. Knowledge puffs up; love builds up. Without love, even the most impressive gifts amount to nothing.",
+      "verse": {
+        "ref": "1 Corinthians 13:4",
+        "text": "Love is patient, love is kind."
+      }
+    },
+    {
+      "id": "raised",
+      "name": "Watch for: raised from the dead",
+      "still": "A tomb in a garden stands open at dawn, its round stone rolled aside, and flowers grow by the path. A gold sun rises behind the garden.",
+      "younger": "Watch the end of the letter. Some in Corinth said the dead do not rise. Paul reminds them: Jesus died, was buried, and was raised on the third day, and many people saw him. All who belong to him will rise too.",
+      "older": "Some in Corinth denied that the dead rise. Paul restates the gospel: Christ died, was buried, was raised on the third day, and appeared to many. His rising is the firstfruits of all who belong to him.",
+      "verse": {
+        "ref": "1 Corinthians 15:20",
+        "text": "But Christ has indeed been raised from the dead"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter one, and read it like a letter, a long piece at a time. Some parts are hard, and Christians who love Jesus read them in different ways. Ask a grown-up you trust about those.",
+      "older": "Start with chapters 1 to 4, read as one piece. Some passages, in chapters 7, 11 and 14, are hard, and faithful churches reach different answers; the notes set out the main views. Ask of each chapter: what has the crucified and risen Lord to do with this?",
+      "verse": {
+        "ref": "1 Corinthians 16:14",
+        "text": "Do everything in love."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Paul says every part of the body is needed. What part do you think you are, and who might feel left out where you are?",
+    "older": "Paul asks the Corinthians what they have that they did not receive. What would change if you asked it of your gifts?"
+  },
+  "read": [
+    { "label": "1 Corinthians 1", "href": "/study/bible/1-corinthians/1" },
+    { "label": "1 Corinthians 12", "href": "/study/bible/1-corinthians/12" },
+    { "label": "1 Corinthians 13", "href": "/study/bible/1-corinthians/13" },
+    { "label": "1 Corinthians 15", "href": "/study/bible/1-corinthians/15" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess the gospel this letter hands on: Christ died for our sins, was buried, and was raised on the third day. Faithful churches reach different answers on some of its hard passages: marriage, singleness and divorce (chapter 7), head coverings in worship (11:2-16), gifts like tongues and the place of women in leading worship (chapters 12 to 14). Readers weigh whether Paul grounds his words in creation, the gospel or the custom of the day, and they weigh them differently. This moving picture takes no side; the main views are set out on",
+    "links": [
+      { "label": "the 1 Corinthians page of the Study Bible", "href": "/study/bible/1-corinthians" }
+    ]
+  },
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "1 Corinthians in the Study Bible: the whole letter", "href": "/study/bible/1-corinthians" },
+    { "label": "The church (a moving picture)", "href": "/study/explorer/watch/the-church" },
+    { "label": "The resurrection (a moving picture)", "href": "/study/explorer/watch/the-resurrection" },
+    { "label": "Paul's travels: a map", "href": "/study/explorer/pauls-travels" }
+  ],
+  "end": { "label": "Start reading: 1 Corinthians 1", "href": "/study/bible/1-corinthians/1" }
+}

@@ -353,6 +353,46 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Revelation in seven moving pictures, with nothing to frighten: what it is, how it is laid out, the throne, the Lamb, the ways Christians read its visions, all things made new, and where to start reading.",
     },
+    "book-ruth": {
+      title: "Ruth: loyal love in a hard time: Bible Explorer",
+      description:
+        "The whole book of Ruth in seven moving pictures: what it is, how its four scenes are laid out, loyal love, God at work in ordinary days, the redeemer, the surprise at the end, and where to start reading.",
+    },
+    "book-jonah": {
+      title: "Jonah: the prophet who ran from mercy: Bible Explorer",
+      description:
+        "The whole book of Jonah in seven moving pictures: what it is, how its four chapters are laid out, a God whom wind and sea obey, down and up again, the city that turned, the question at the end, and where to start reading.",
+    },
+    "book-daniel": {
+      title: "Daniel: the Most High rules: Bible Explorer",
+      description:
+        "The whole book of Daniel in seven moving pictures, told gently: what it is, how it is laid out, the Most High who rules the kingdoms, faith that will not bow, Daniel at his window, one like a son of man, and where to start reading.",
+    },
+    "book-1-corinthians": {
+      title: "1 Corinthians: a gifted church, coming apart: Bible Explorer",
+      description:
+        "The whole of 1 Corinthians in seven moving pictures: a real letter to a real church, its two halves, the wisdom of the cross, one body with many parts, the way of love, raised from the dead, and where to start reading.",
+    },
+    "book-ephesians": {
+      title: "Ephesians: one new people in Christ: Bible Explorer",
+      description:
+        "The whole letter to the Ephesians in seven moving pictures: what it is, its two halves, grace, one new people from Jew and Gentile, a worthy walk, standing firm, and where to start reading, with the household passages as churches read them.",
+    },
+    "book-philippians": {
+      title: "Philippians: joy in chains: Bible Explorer",
+      description:
+        "The whole letter to the Philippians in seven moving pictures: a thank-you letter from prison, its four chapters, joy, the mind of Christ, all counted as loss, contentment in want and in plenty, and where to start reading.",
+    },
+    "book-hebrews": {
+      title: "Hebrews: hold on to Jesus: Bible Explorer",
+      description:
+        "The whole book of Hebrews in seven moving pictures: a sermon for tired believers, how it is laid out, the Son, the old covenant honored as a gift that pointed ahead, the great high priest, hold on and run, and where to start reading.",
+    },
+    "book-james": {
+      title: "James: faith that works: Bible Explorer",
+      description:
+        "The whole letter of James in seven moving pictures: sharp, practical sayings, the threads it keeps returning to, trials, faith that is alive and how it fits with Paul, the poor and the rich, the power of words, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

@@ -1,0 +1,114 @@
+{
+  "slug": "book-philippians",
+  "title": "Philippians: joy in chains",
+  "group": "books",
+  "status": "finished",
+  "book": "philippians",
+  "mark": "book-philippians",
+  "line": {
+    "younger": "A thank-you letter from a prisoner to his friends: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Philippians as a whole letter: thanks from prison, four short chapters, joy that sits beside chains, the mind of Christ, all counted as loss to know him, contentment, and where to begin."
+  },
+  "poster": "A man in a stone room, a chain at his ankle, holds a letter up to the light of a small window and reads it. A friend stands beside him with a bundle of gifts, and the light in the window is gold.",
+  "frames": [
+    {
+      "id": "thanks",
+      "name": "A thank-you letter",
+      "still": "A man in a stone room, a chain at his ankle, holds a letter up to the light of a small window and reads it. A friend stands beside him with a bundle of gifts, and the light in the window is gold.",
+      "younger": "Philippians is a thank-you letter. Paul is in prison, and his friends in the church at Philippi have sent him a gift, carried by one of their own. So Paul writes to say thank you, and to tell them how he is.",
+      "older": "Philippians is Paul's warmest letter. He writes from prison, facing a trial that could end in his death, to the church that had stood by him from the start and had just sent him a gift by the hand of Epaphroditus.",
+      "verse": {
+        "ref": "Philippians 1:3",
+        "text": "I thank my God every time I remember you."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The letter drawn as one scroll in four equal panels, with a chain, a basin, a finishing line and an open hand over them. A gold rule lies under the second panel, the basin.",
+      "younger": "Four short chapters: thanks and news from prison; a poem about Jesus, who made himself a servant; Paul's race toward Jesus; last words about joy, prayer and being content. The poem is the letter's heart.",
+      "older": "Thanks and news from prison; a call to stand together, with the hymn to Christ at its center; knowing Christ, and pressing on; last appeals and thanks. The hymn of chapter 2 shapes all that follows.",
+      "verse": {
+        "ref": "Philippians 2:5",
+        "text": "Let this mind be in you which was also in Christ Jesus"
+      }
+    },
+    {
+      "id": "joy",
+      "name": "Watch for: joy",
+      "still": "In the stone room the man stands with his chain at his feet and his hands lifted, singing. Through the window a gold sun is rising.",
+      "younger": "Watch for the word joy. It comes again and again, and it is written by a man in chains. Paul is not happy because things are easy. He is glad because Jesus is with him, and because the good news is still spreading.",
+      "older": "Words for joy come more than a dozen times in a letter written in chains. Paul's joy rests not on his circumstances but on the Lord. It has looked at suffering and death and not been undone.",
+      "verse": {
+        "ref": "Philippians 4:4",
+        "text": "Rejoice in the Lord always. I will say it again: Rejoice!"
+      }
+    },
+    {
+      "id": "mind",
+      "name": "Watch for: the mind of Christ",
+      "still": "A man kneels with a basin to serve a guest who sits by the door. Behind them a path runs down a hillside into the valley and rises again to the top, where a gold sun stands.",
+      "younger": "Watch for the poem in chapter two. Jesus was God, but he did not hold on to his greatness. He became a servant, and he died on a cross. Then God raised him to the highest place. Paul says: think like that.",
+      "older": "At the letter's heart stands what many think was an early hymn. Christ, in the form of God, emptied himself, took the form of a servant, and was obedient to death on a cross; God exalted him. Humility here is the free choice to use one's place for others.",
+      "verse": {
+        "ref": "Philippians 2:7",
+        "text": "but emptied Himself, taking the form of a servant"
+      }
+    },
+    {
+      "id": "loss",
+      "name": "Watch for: all counted as loss",
+      "still": "A runner leans toward a finishing line on a long road, a bag of fine things left lying behind him. A gold marker stands at the line.",
+      "younger": "Watch Paul talk about everything he used to be proud of. He says it is all like rubbish next to knowing Jesus. Like a runner in a race, he leaves it behind and keeps running toward Jesus.",
+      "older": "Paul counts his impressive credentials as loss, to gain Christ and a righteousness from God through faith. He has not arrived. Like a runner, he presses on toward the goal.",
+      "verse": {
+        "ref": "Philippians 3:8",
+        "text": "I count all things as loss compared to the surpassing excellence of knowing Christ Jesus my Lord"
+      }
+    },
+    {
+      "id": "content",
+      "name": "Watch for: content in want and in plenty",
+      "still": "Two tables side by side: one bare, with a single crust, and one full of bread and fruit. The same man sits calmly at each, and one gold lamp hangs between them.",
+      "younger": "Watch a famous verse: “I can do all things through Christ.” Paul is not talking about winning games or getting rich. He means he has learned to be content when he is hungry and when he has plenty, because Jesus gives him strength.",
+      "older": "Paul calls the church to pray instead of worrying. Then comes a much quoted line: “I can do all things through Christ.” In context it is not a promise of success. It is the strength to be content in hunger and in plenty.",
+      "verse": {
+        "ref": "Philippians 4:13",
+        "text": "I can do all things through Christ who gives me strength."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter one, and keep going. The whole letter takes about fifteen minutes to read aloud. Count how many times you find the word joy.",
+      "older": "Read it whole, as a letter between friends; it takes about fifteen minutes aloud. Watch the words joy, gospel, partnership and mind. Read chapter 2 slowly, and the famous line of chapter 4 with the verses around it.",
+      "verse": {
+        "ref": "Philippians 4:7",
+        "text": "And the peace of God, which surpasses all understanding"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Paul was glad even in prison. What is one thing you can thank God for on a hard day?",
+    "older": "Paul says the strength he has learned is to be content in want and in plenty. Which of the two is harder for you?"
+  },
+  "read": [
+    { "label": "Philippians 1", "href": "/study/bible/philippians/1" },
+    { "label": "Philippians 2", "href": "/study/bible/philippians/2" },
+    { "label": "Philippians 3", "href": "/study/bible/philippians/3" },
+    { "label": "Philippians 4", "href": "/study/bible/philippians/4" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "care": "This moving picture tells of a real death, Jesus' death on the cross. If it brings up fear or sadness, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Philippians in the Study Bible: the whole letter", "href": "/study/bible/philippians" },
+    { "label": "Who Jesus is (a moving picture)", "href": "/study/explorer/watch/who-jesus-is" },
+    { "label": "Paul's travels: a map", "href": "/study/explorer/pauls-travels" },
+    { "label": "Grace: the gift no one earns (a moving picture)", "href": "/study/explorer/watch/grace" }
+  ],
+  "end": { "label": "Start reading: Philippians 1", "href": "/study/bible/philippians/1" }
+}
