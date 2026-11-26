@@ -1731,6 +1731,10 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-philippians",
     "book-hebrews",
     "book-james",
+    "book-joshua",
+    "book-judges",
+    "book-1-samuel",
+    "book-jeremiah",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2433,5 +2437,75 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toContain("Roman Catholic teaching adds that justification grows through good works done by grace");
     expect(f.differ?.text).toMatch(/takes no side/);
     expect(text(f)).not.toMatch(/James (contradicts|disagrees with) Paul|Paul (was )?wrong|epistle of straw/i);
+  });
+
+  it("Joshua names its wars without drawing them, says at both levels in the book page's words that they warrant no violence today, and names no nation of today", () => {
+    const f = filmFile("book-joshua");
+    expect(f.care).toBe(filmFile("david-and-goliath").care);
+    const hard = f.frames.find(x => x.id === "hard")!;
+    expect(hard.younger).toContain("nothing in this book gives anyone a warrant for violence today");
+    expect(hard.older).toContain("No one may use these chapters to justify violence against any person or people.");
+    expect(f.differ?.text).toContain("they say nothing about any nation, state, land or conflict today");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const t = text(f);
+    expect(t).not.toMatch(/\b(Palestin|Gaza|West Bank|State of Israel|Israel today|America|modern nation)/i);
+    // Ages 7 to 11: wars named, never described.
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|slaughter/i);
+    // No battle, weapon or fallen wall is drawn.
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|battle(?! is drawn)|fire|ruin|fallen|body|bodies/i);
+    expect(hard.still).toContain("No battle is drawn.");
+    // Rahab, the outsider, in the family line of Jesus.
+    expect(f.frames.find(x => x.id === "belong")!.younger).toContain("family line of Jesus");
+  });
+
+  it("Judges names its darkest chapters at the older level only, describes and draws none, and gives no warrant for violence", () => {
+    const f = filmFile("book-judges");
+    expect(f.care).toBe(filmFile("book-joshua").care);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    // Ages 7 to 11: the hard chapters are called hard, never told.
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|slaughter|rape|abuse|sacrific|concubine|daughter|Gibeah|Jephthah|dagger|tent peg/i);
+    expect(f.frames.find(x => x.id === "no-king")!.younger).toContain("Read them with a grown-up you trust.");
+    // Ages 12 to 16: named, in the book page's words, and not described.
+    const older = f.frames.map(fr => fr.older).join(" ");
+    expect(older).toContain("the outrage at Gibeah against a Levite's concubine");
+    expect(older).toContain("Jephthah's rash vow costs his daughter");
+    expect(older).toContain("never as a pattern");
+    expect(older).not.toMatch(/rape|abused|dismember|cut her|pieces|burnt offering|offered (her|his daughter)|tent peg|dagger/i);
+    expect(f.differ?.text).toContain("nothing in the book praises it");
+    expect(f.differ?.text).toContain("the book gives no nation, no church and no person a warrant for violence against anyone");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    // Nothing of the last chapters is drawn but an empty seat; no battle or weapon anywhere.
+    const stills = f.frames.map(fr => fr.still).join(" ");
+    expect(stills).not.toMatch(/sword|spear|dagger|battle|fire|body|woman lies|threshold/i);
+    expect(f.frames.find(x => x.id === "no-king")!.still).toContain("No one sits in it.");
+  });
+
+  it("1 Samuel tells no battle or death, names no people of today as Amalek, and takes no side on the hard chapters", () => {
+    const f = filmFile("book-1-samuel");
+    expect(f.care).toBe(filmFile("book-joshua").care);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|slaughter|giant|spear|medium|Endor/i);
+    // The end of Saul is not told or drawn at either level.
+    expect(captions(f)).not.toMatch(/his own life|own sword|fell on|suicide|Gilboa/i);
+    expect(f.differ?.text).toContain("no people living today is Amalek");
+    expect(f.differ?.text).toContain("no one may use this chapter to justify violence or contempt toward any person or people");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(f.frames.find(x => x.id === "heart")!.verse?.text).toBe("For man sees the outward appearance, but the LORD sees the heart.");
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|sling|battle|giant|body/i);
+  });
+
+  it("Jeremiah draws no siege or ruin, ties nothing to a nation of today, and reads 29:11 as the book page does", () => {
+    const f = filmFile("book-jeremiah");
+    expect(f.care).toBe(filmFile("temple-destroyed").care);
+    const t = text(f);
+    expect(t).not.toMatch(/\b(America|United States|Russia|China|Iran|Iraq|Europe|State of Israel|Israel today|our nation|this nation|modern)/i);
+    expect(t).not.toMatch(/\b(19|20)\d\d\b/);
+    const letter = f.frames.find(x => x.id === "letter")!;
+    expect(letter.older).toContain("It is a promise through suffering, not a guarantee of success.");
+    expect(f.frames.find(x => x.id === "start")!.older).toContain("was a word for one moment, not a rule about politics");
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|army/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/siege|fire|flame|ruin|army|soldier|burn/i);
   });
 });

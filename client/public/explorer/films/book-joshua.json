@@ -1,0 +1,170 @@
+{
+  "slug": "book-joshua",
+  "title": "Joshua: a promise kept",
+  "group": "books",
+  "status": "finished",
+  "book": "joshua",
+  "mark": "book-joshua",
+  "line": {
+    "younger": "The book of a river crossed and a land given: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Joshua as a whole book: four movements, the crossing, the hardest chapters faced plainly, who belongs, rest and a choice, and where to begin."
+  },
+  "poster": "A great crowd camps among tents on the near bank of a wide river, and across the water green hills rise under a gold sun. One man stands at the front with a staff, looking over.",
+  "frames": [
+    {
+      "id": "promise",
+      "name": "The promised land",
+      "still": "A great crowd camps among tents on the near bank of a wide river, and across the water green hills rise under a gold sun. One man stands at the front with a staff, looking over.",
+      "younger": "Joshua is the book of the promised land. Moses' work is done, and Joshua leads God's people now. They are camped beside the Jordan River, and across it lies the land God promised to Abraham.",
+      "older": "Joshua opens where Deuteronomy ends. Moses is dead, and Israel is camped east of the Jordan. Joshua's name means the LORD saves, and in Greek it is the same word as the name Jesus.",
+      "verse": {
+        "ref": "Joshua 1:2",
+        "text": "cross over the Jordan into the land that I am giving to the children of Israel."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in four panels, with a river, a city wall, a field marked out in plots and a standing stone over them. A gold rule lies under the third panel, the widest.",
+      "younger": "The book has four parts. Entering: crossing the river. Taking: the wars for the land. Dividing: sharing the land among the twelve tribes. Serving: old Joshua calls the people to stay loyal to God.",
+      "older": "Joshua has four movements: entering, taking, dividing and serving. The long lists of towns and borders in the third were title deeds. They say that God's promises land on the ground.",
+      "verse": {
+        "ref": "Joshua 21:45",
+        "text": "Not one of all the LORD’s good promises to the house of Israel had failed"
+      }
+    },
+    {
+      "id": "river",
+      "name": "Watch for: the river",
+      "still": "Priests carry a gold-covered chest on poles into the middle of a river bed, and the people walk across on dry ground behind them. Upstream the water is heaped up, and on the bank stands a pile of stones.",
+      "younger": "Watch for the river. The Jordan is in flood. The priests carry the ark, the gold-covered chest that was the sign of God's presence. When their feet touch the water, the river stops, and everyone walks across on dry ground.",
+      "older": "Watch for the crossing. When the priests carrying the ark step into the flooded Jordan, the river stops. It is the Red Sea again, for a generation that had not seen the first. Twelve stones are set up so that children will ask.",
+      "verse": {
+        "ref": "Joshua 4:24",
+        "text": "so that all the peoples of the earth may know that the hand of the LORD is mighty"
+      }
+    },
+    {
+      "id": "hard",
+      "name": "Watch for: the hardest chapters",
+      "still": "The walls of a city stand whole while a line of people walks around them behind priests carrying the gold-covered chest. The sun is low over the hills. No battle is drawn.",
+      "younger": "Joshua also has hard chapters. At Jericho the walls fall after the people march around the city for seven days, and then come wars for the land. The Study Bible says it plainly: nothing in this book gives anyone a warrant for violence today.",
+      "older": "At Jericho and after, the book says whole cities were devoted to destruction at God's command, the young with the old. Christians read this in more than one way, and none makes it easy. No one may use these chapters to justify violence against any person or people.",
+      "verse": {
+        "ref": "Joshua 6:20",
+        "text": "the people gave a great shout, and the wall collapsed."
+      }
+    },
+    {
+      "id": "belong",
+      "name": "Watch for: who belongs",
+      "still": "A woman stands beside her house, built on top of a city wall, and two men crouch out of sight on its flat roof. Its window is lit gold.",
+      "younger": "Watch for Rahab. She lives in Jericho and is not one of God's people, but she trusts Israel's God and hides Joshua's scouts on her roof. She and her family are kept safe, and her name is in the family line of Jesus.",
+      "older": "Watch who belongs. Rahab the Canaanite confesses Israel's God and is taken in with her family. Achan the Israelite steals from what was devoted to God and falls under the ban himself. The line runs through faith, not birth.",
+      "verse": {
+        "ref": "Joshua 2:11",
+        "text": "the LORD your God is God in the heavens above and on the earth below."
+      }
+    },
+    {
+      "id": "choose",
+      "name": "Watch for: rest, and a choice",
+      "still": "Many people stand before a great upright stone, and an old man with a staff faces them. A gold sun is over the hills behind.",
+      "younger": "Watch for rest. The land is shared out, and God gives his people rest. At the end old Joshua tells their story, all that God has done, and asks them to choose whom they will serve. His own answer: “As for me and my house, we will serve the LORD.”",
+      "older": "God gives rest on every side. At Shechem old Joshua retells the story, from Abraham's family serving other gods to the gift of the land. Only then comes the call: “choose for yourselves this day whom you will serve.” The kindness comes first.",
+      "verse": {
+        "ref": "Joshua 21:44",
+        "text": "And the LORD gave them rest on every side"
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? At chapter 1, where God tells Joshua to be strong and courageous. Then read chapters 2, 3 and 24. Read the hard chapters with a grown-up you trust.",
+      "older": "Start at chapter 1, then the key chapters: 2, 3, 6, 7, 21 and 24. Read the whole book, not only the battles. Do not skip the hard chapters, and do not read them alone.",
+      "verse": {
+        "ref": "Joshua 1:9",
+        "text": "for the LORD your God is with you wherever you go."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Joshua set up twelve stones so that children would ask what God had done. What would you want to remember about what God has done?",
+    "older": "Before the first battle Joshua asks the commander of the LORD's army whose side he is on, and hears “Neither.” What changes when the question is not whether God is on your side, but whether you are on his?"
+  },
+  "read": [
+    {
+      "label": "Joshua 1",
+      "href": "/study/bible/joshua/1"
+    },
+    {
+      "label": "Joshua 2",
+      "href": "/study/bible/joshua/2"
+    },
+    {
+      "label": "Joshua 3",
+      "href": "/study/bible/joshua/3"
+    },
+    {
+      "label": "Joshua 5",
+      "href": "/study/bible/joshua/5"
+    },
+    {
+      "label": "Joshua 6",
+      "href": "/study/bible/joshua/6"
+    },
+    {
+      "label": "Joshua 7",
+      "href": "/study/bible/joshua/7"
+    },
+    {
+      "label": "Joshua 21",
+      "href": "/study/bible/joshua/21"
+    },
+    {
+      "label": "Joshua 24",
+      "href": "/study/bible/joshua/24"
+    }
+  ],
+  "stops": [
+    "land"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians who receive Joshua as God's word confess that God keeps his promises. They read its wars in more than one way: as judgment on named evil after long patience; as the stock language of ancient reports of war; as resting on God's unique right over the life he gives; or as God stooping to the understanding of an ancient people, to be read in the light of Christ. Many hold more than one together, and each reading has a cost. They differ too on when Israel entered the land, about 1406 BC or in the thirteenth century BC, and on what has been dug up at Jericho and Ai. On every reading the ban was tied to one land and one moment and was never renewed. No one may use these chapters to justify violence against any person or people, and they say nothing about any nation, state, land or conflict today. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      {
+        "label": "the Joshua page of the Study Bible",
+        "href": "/study/bible/joshua"
+      },
+      {
+        "label": "the question of the command to destroy the Canaanites",
+        "href": "/questions/old-testament/the-command-to-destroy-the-canaanites"
+      }
+    ]
+  },
+  "care": "This part of the story has war and death in it. If it stirs up something heavy for you, talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "Joshua in the Study Bible: the whole book",
+      "href": "/study/bible/joshua"
+    },
+    {
+      "label": "The Land and the Judges: a stop on the map",
+      "href": "/study/explorer/land"
+    },
+    {
+      "label": "Jericho and the conquest: what was found",
+      "href": "/questions/old-testament/jericho-and-the-conquest"
+    },
+    {
+      "label": "Ruth: loyal love in a hard time (a moving picture)",
+      "href": "/study/explorer/watch/book-ruth"
+    }
+  ],
+  "end": {
+    "label": "Start reading: Joshua 1",
+    "href": "/study/bible/joshua/1"
+  }
+}
