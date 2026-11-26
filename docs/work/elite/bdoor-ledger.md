@@ -21574,3 +21574,22 @@ Every claim in `client/public/bible/notes/jonah/intro.json`, field `teaching`. N
 | Go deeper: eight pages | deeper | bible/guides/reading-narrative.json, reading-prophets.json, empires.json; bible/doctrines.json (The Nations and Mission; Repentance and Forgiveness; God's Character: Holiness, Love, Justice); context/guides/miracles-and-the-ancient-mind.json; the Honest Answer 'Is it okay to be angry at God?' (already linked from another book page) | Repository; every page live |
 
 Cut from the book page: the introduction's contrasts between Jonah and Jesus beyond what Jesus himself said, and its line that the closing question is answered in the gospel, which the New Testament does not draw from Jonah. No coordinates for Nineveh exist in the repository, so Nineveh is not drawn.
+
+## The plain notes on Jonah 1 (2026-11-25)
+
+`client/public/bible/notes/jonah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its clause); 1:3 (its first clause; the rest paraphrased) | 1-3 | BSB | BSB text |
+| The eighth century and Jeroboam II; Assyria and its harshness; Nineveh opposite Mosul, capital around 700 BC; Joppa a rare harbor; Tarshish and Tartessus; 500 miles northeast and more than 2,000 west; the phrase repeated; the reason held back | 1-3 | jonah/1.json `historical`, `literary` | Repository |
+| 2 Kings 14:25 (its phrase); Psalm 72:10; Isaiah 66:19 | 1-3 | jonah/1.json `historical`; BSB | Repository; BSB text |
+| The hard note: Psalm 139; away from service or from the land; 4:2's reason; patriotic motives; fear of seeming false; flight fails | 1-3 `hard` | jonah/1.json `hard` | Repository; the readings in their holders' terms |
+| 1:4 (its clause); 1:5-8 and 1:10 paraphrased; 1:9 | 4-10 | BSB | BSB text |
+| Each sailor's own god; the storm as an angry god; lots; Israel's use of lots; the questions to find the god; the God who made the sea; the sea as chaos; the captain telling the prophet to pray | 4-10 | jonah/1.json `cultural` | Repository |
+| Proverbs 16:33; Psalm 95:5 (its phrase) | 4-10 | jonah/1.json `cultural`; BSB | Repository; BSB text |
+| 1:11 and 1:13-14 paraphrased; 1:12 (its words); 1:15 (its last clause); 1:16; 1:17 | 11-17 | BSB | BSB text |
+| Innocent blood and bloodguilt; the sailors more honorable; great, hurl and the three stages of fear; the sailors worshiping; the Hebrew numbering 2:1 | 11-17 | jonah/1.json `cultural`, `literary` | Repository |
+| Matthew 12:40 | 11-17 | jonah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+
+Cut in chapter 1: nothing further. Jonah's offer in 1:12 is told as the book tells it, an offer to save the sailors, and is not read as a wish to die.
