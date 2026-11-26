@@ -21705,3 +21705,22 @@ Cut in chapter 2: the bronze statue at the United Nations (1959), named in the d
 | Care line ("If someone is hurting you, at home, at work or in a church...") | 16-26 `hard` | Reused byte for byte from 2-kings/plain/9.json, read by script | care.mjs |
 
 Cut in chapter 3: the deep note's lines to Christ that the New Testament does not draw (John 10:11, Luke 1:52 and Mark 12:40 beside the chapter).
+
+## The plain notes on Isaiah 4 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1 | 1 | BSB | BSB text |
+| Widows' insecurity; Exodus 21:10; the name; the war's toll; belongs with chapter 3 | 1 | isaiah/4.json `cultural`, `historical`, `literary` | Repository |
+| Lamentations 5:3 | 1 `later` | BSB | BSB text |
+| 4:2-4 (4:3's clause before the dash) | 2-4 | BSB | BSB text |
+| On that day turned to salvation; tsemach; the register of the living; washing by judgment and fire | 2-4 | isaiah/4.json `literary`, `words`, `cultural` | Repository |
+| Jeremiah 23:5; Zechariah 3:8; Ezekiel 36:25 | 2-4 `later` | isaiah/4.json `historical`; BSB | BSB text |
+| The hard note: the Branch as Messiah (Jeremiah, Zechariah, the Targum) or as growth; the middle view; no side | 2-4 `hard` | isaiah/4.json `hard` | Repository; each reading in its holders' terms |
+| 4:5-6 | 5-6 | BSB | BSB text |
+| The pillar of cloud and fire; the tabernacle; bara; chuppah and its later use | 5-6 | isaiah/4.json `cultural`, `words` | Repository |
+| Exodus 13:21; Psalm 121:5; Isaiah 25:4 | 5-6 `later` | BSB | BSB text |
+
+Cut in chapter 4: the deep note's lines to Christ that the New Testament does not draw (Matthew 3:11 and the Word dwelling among people beside the chapter). No care line is needed in this chapter.
