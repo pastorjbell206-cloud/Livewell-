@@ -25393,6 +25393,227 @@ The branch now carries Babylon's point (id `babylon`, 32.54 N, 44.42 E, on Jerem
 
 On Ezekiel's book page, Tyre's label on the `fertile-crescent` map now sits to the right of the point, because at a 390-pixel width it touched the frame's own label, THE GREAT SEA. The line on 2 Corinthians 6:16 now says that Paul's words echo Leviticus 26:12 and that many readers hear Ezekiel 37:27 in them as well, so it is given as a reading, since the New Testament does not quote Ezekiel 37 directly (the coordinator's note).
 
+## The plain notes on Jeremiah 23 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 23:1-40 (verses 33-40 paraphrased around inner speech marks) | all | BSB | BSB text |
+| Kings as shepherds; Zedekiah 597 BC and his name | 1-8 | jeremiah/23.json `cultural`, `historical` | Repository |
+| The Branch as a Christian reading | 1-8 `later` | jeremiah/intro.json `christ` | Repository |
+| The court prophets; Samaria 722 BC and Baal | 9-24 | jeremiah/23.json `historical` | Repository |
+| Tests of a true prophet; Deuteronomy 18:21-22; verses 14, 17, 22; chapter 28 | 9-24 `hard` | jeremiah/23.json `hard` | Repository |
+| Dreams; straw and grain; massa as burden and oracle | 25-40 | jeremiah/23.json `cultural`, `words` | Repository |
+| Zechariah 3:8, Ezekiel 34:23, Deuteronomy 18:22, Psalm 139:7, Hebrews 4:12 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 23: nothing. The Branch is given as a Christian reading; the New Testament does not quote verses 5 and 6.
+
+## The plain notes on Jeremiah 24 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 24:1-10 | all | BSB | BSB text |
+| 597 BC; those taken (2 Kings 24:10-17); figs, early figs, firstfruits | 1-7 | jeremiah/24.json `historical`, `cultural` | Repository |
+| Zedekiah's resistance (37-38); the exiles' call (29); Judeans in Egypt, Jehoahaz 609 BC | 8-10 | jeremiah/24.json `historical`, `hard` | Repository |
+| Favoritism or grace; circumstances not proof of favor | 8-10 `hard` | jeremiah/24.json `hard` | Repository |
+| 2 Kings 24:14, Ezekiel 11:19, Deuteronomy 28:37 (clauses); Luke 13:4-5 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 24: nothing.
+
+## The plain notes on Jeremiah 25 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 25:1-38 (verses 19-26 summarized) | all | BSB | BSB text |
+| 605 BC, Carchemish, Nabopolassar; Nebuchadnezzar as servant | 1-14 | jeremiah/25.json `historical` | Repository |
+| The sounds of a town (verse 10) | 1-14 | jeremiah/25.json `cultural` | Repository |
+| Seventy years: 609-605 to 539 BC, 587/586 to about 516 BC, Psalm 90:10, Ezra 1:1, Zechariah 1:12, Daniel 9 | 1-14 `hard` | jeremiah/25.json `hard`, `historical` | Repository |
+| The cup; Sheshach by atbash; the Greek order after 25:13 | 15-38 | jeremiah/25.json `cultural`, `historical`; jeremiah/intro.json `reading` | Repository |
+| Daniel 9:2, 2 Chronicles 36:21, Isaiah 51:17, 1 Peter 4:17 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 25: Revelation's cup of wrath, which the New Testament does not tie to this chapter; no date is calculated from the seventy years.
+
+## The plain notes on Jeremiah 26 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 26:1-24 (verses 8-11 and 18-23 partly paraphrased) | all | BSB | BSB text |
+| 609 or 608 BC; Josiah's death; Necho and Jehoiakim | 1-16 | jeremiah/26.json `historical` | Repository |
+| The trial: accusers, officials in the gate, elders | 1-16 | jeremiah/26.json `cultural` | Repository |
+| Conditional prophecy, 18:7-10, Jonah; two theological emphases | 1-16 `hard` | jeremiah/26.json `hard` | Repository |
+| Micah 3:12 quoted by name; Hezekiah about 715 to 686 BC | 17-24 | jeremiah/26.json `historical` | Repository |
+| Uriah; Ahikam son of Shaphan; Gedaliah son of Ahikam (39:14) | 17-24 | BSB; 2 Kings 22:12 | BSB text |
+| Matthew 23:37, Acts 7:48, Micah 3:12, 2 Kings 22:12 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 26: nothing. Acts 7:48 is named only as Stephen speaking against trust in the temple, not as a reading of this chapter.
+
+## The plain notes on Jeremiah 27 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 27:1-22 (verse 22 partly paraphrased) | all | BSB | BSB text |
+| The date in verse 1: Jehoiakim in most manuscripts, absent in the Greek, Zedekiah in the BSB | 1-11 | jeremiah/27.json `historical` | Repository |
+| The envoys and a planned revolt; the yoke as sign | 1-11 | jeremiah/27.json `summary`, `cultural` | Repository |
+| Vessels of 597 BC; pillars and sea broken up (2 Kings 25:13) | 12-22 | jeremiah/27.json `historical`; BSB | Repository, BSB text |
+| Collaborating with a tyrant: 37:13-14; a word for one time; Exodus 1 and Daniel 3 | 12-22 `hard` | jeremiah/27.json `hard`; the coordinator's direction | Repository |
+| Daniel 2:21, Ezra 1:7 (clauses); Jeremiah 28:10, 2 Kings 25:13 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 27: nothing.
+
+## The plain notes on Jeremiah 28 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/28.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 28:1-17 (verses 2-4, 11 and 16 paraphrased around inner speech marks) | all | BSB | BSB text |
+| 594 or 593 BC; Jeconiah still alive; Gibeon, a priests' town (Joshua 21:17) | 1-11 | jeremiah/28.json `historical` | Repository |
+| Hananiah's motives unknown; real promises behind his words; Deuteronomy 13 and 18; Jeremiah does not gloat | 12-17, `hard` | jeremiah/28.json `hard` | Repository |
+| Deuteronomy 18:22, 1 Kings 22:28, Deuteronomy 18:20, James 3:1 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 28: nothing.
+
+## The plain notes on Jeremiah 29 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 29:1-32 (verses 15-32 partly paraphrased around inner speech marks) | all | BSB | BSB text |
+| After 597 BC; Nehushta; the delegation; Tel-abib; Al-Yahudu tenant farmers | 1-14 | jeremiah/29.json `historical`; isaiah/52.json `historical` | Repository |
+| House, garden, wife as settling down; Deuteronomy 20:5-7; shalom of the city | 1-14 | jeremiah/29.json `cultural` | Repository |
+| 29:11 in context: plural, seventy years, a whole people, not personal success | 1-14 `hard` | jeremiah/29.json `hard` | Repository |
+| Prophets in Babylon; Shemaiah's letter and Zephaniah | 15-32 | BSB; jeremiah/29.json `summary` | BSB text |
+| Deuteronomy 4:29, 1 Timothy 2:2, Ezekiel 3:15 (clauses); Daniel 9:2 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 29: 2 Corinthians 1:20, which the deep note gives as a general word on God's promises rather than a reading of this chapter. Verse 22's curse is named, not quoted.
+
+## The plain notes on Jeremiah 30 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 30:1-24 | all | BSB | BSB text |
+| The Book of Consolation undated; 588 or 587 BC; earlier northern poems; writing for later | 1-11 | jeremiah/30.json `historical` | Repository |
+| Three readings of the time of Jacob's distress; second-order | 1-11 `hard` | jeremiah/30.json `hard` | Repository |
+| The lovers as Egypt; the tell; drawing near as priestly | 12-24 | jeremiah/30.json `historical`, `cultural` | Repository |
+| Daniel 12:1, Hosea 3:5, Ezekiel 37:24, Hosea 2:23, Psalm 147:3 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 30: Matthew 24:21, given in the hard note only as one tradition's link; no date is set.
+
+## The plain notes on Jeremiah 31 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 31:1-40 (verses 18-19, 22-24 and 29 partly paraphrased) | all | BSB | BSB text |
+| Undated; Ephraim poems under Josiah 640 to 609 BC; reworked after 587 BC | 1-14 | jeremiah/31.json `historical` | Repository |
+| Rachel, Ramah (40:1), Rachel's tomb; the new thing of verse 22 debated; verse 26 as dream | 15-26 | jeremiah/31.json `cultural`, `literary`; BSB | Repository, BSB text |
+| Matthew's use of verse 15: the objection, Brown, the pattern reading, Hosea 11:1 | 15-26 `hard` | jeremiah/31.json `hard` (second question) | Repository |
+| The CHILDLOSS care line, byte for byte | 15-26 `hard` | carelines.json | care.mjs |
+| Sour grapes and Ezekiel 18; law on the heart; forgiveness; 35-37; the valley as Hinnom | 27-40 | jeremiah/31.json `cultural`, `historical`; BSB | Repository |
+| The new covenant question: Jewish and critical objection, Kimhi; Reformed, dispensational, Christ-centred readings; begun not complete; second-order; Romans 11:28 | 27-40 `hard` | jeremiah/31.json `hard` (first question); the coordinator's direction | Repository |
+| Psalm 30:11, Hosea 11:8, Matthew 2:18, Luke 22:20, Hebrews 8:8, Romans 11:28 (clauses); Hebrews 10:16-17 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 31: Hebrews 8:13's word obsolete is not quoted, so that the note gives no room for contempt; Kimhi, Isaac of Troki, Holladay, Carroll, Chafer, Gentry and Wellum, named in the deep note, are left to it except Kimhi.
+
+## The plain notes on Jeremiah 32 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 32:1-44 (verses 18-23, 25 and 28-44 partly summarized) | all | BSB | BSB text |
+| 588 or 587 BC; the siege from 52:4; Anathoth held | 1-15 | jeremiah/32.json `historical` | Repository |
+| Right of redemption; sealed and open deeds; clay jars and the Dead Sea Scrolls; Baruch introduced | 1-15 | jeremiah/32.json `cultural`, `historical` | Repository |
+| Child sacrifice: Ahaz and Manasseh; Molech debated; never entered God's mind | 16-44, `hard` | jeremiah/32.json `hard` | Repository |
+| The child-abuse care line, byte for byte | 16-44 `hard` | colossians/plain/3.json | care.mjs |
+| Leviticus 25:25, Genesis 18:14, Luke 1:37 (clauses); Ruth 4:9 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 32: the seal impression of Berechiah son of Neriah named in the deep note, left out because its finding on the antiquities market is disputed.
+
+## The plain notes on Jeremiah 33 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 33:1-26 (verses 10-13 and 20-25 partly paraphrased) | all | BSB | BSB text |
+| Siege of 588 to 586 BC; houses torn down for defenses | 1-13 | jeremiah/33.json `historical` | Repository |
+| Thank-offering song; Ezra 3:11; counting sheep under the hand | 1-13 | jeremiah/33.json `cultural`; BSB | Repository, BSB text |
+| 14-26 absent from the Greek; the two views; the two families | 14-26 | jeremiah/33.json `historical`; jeremiah/intro.json `reading` | Repository |
+| How the promises to David and the Levites are kept: Hebrews 7-10, 1 Peter 2, dispensational, Jewish; the line continued | 14-26 `hard` | jeremiah/33.json `hard` | Repository |
+| Ezra 3:11 (named), Psalm 136:1, Psalm 89:35 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 33: nothing.
+
+## The plain notes on Jeremiah 34 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 34:1-22 (verses 2-5 and 17-22 partly paraphrased) | all | BSB | BSB text |
+| The siege dates; Lachish and Azekah; the Lachish letter on the fire signals | 1-7 | jeremiah/34.json `historical` | Repository |
+| Zedekiah's peaceful death: conditional, narrow, softened | 1-7 `hard` | jeremiah/34.json `hard` | Repository |
+| Debt servitude and the seventh year; Hophra's army and the lull (37:5; 44:30); the cut calf | 8-22 | jeremiah/34.json `historical`, `cultural` | Repository |
+| 2 Chronicles 36:12, Deuteronomy 15:12, Genesis 15:17 (clauses); 2 Kings 25:6-7 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 34: a draft guess at why the slaves were freed, which no repository source states.
+
+## The plain notes on Jeremiah 35 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 35:1-19 (verses 6-10 and 13-17 partly paraphrased) | all | BSB | BSB text |
+| 599 to 598 BC and the raiders (2 Kings 24:1-2); Jonadab and Jehu, about 841 BC; two and a half centuries | 1-11 | jeremiah/35.json `historical` | Repository |
+| Commended, not commanded; wine in Psalm 104 and Proverbs 20; Mark 7:8-9 | 12-19, `hard` | jeremiah/35.json `hard` | Repository |
+| 2 Kings 10:15, Psalm 104:15, Mark 7:8, Proverbs 20:1 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 35: nothing.
+
+## The plain notes on Jeremiah 36 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 36:1-32 (verses 5-22 and 25-31 partly summarized) | all | BSB | BSB text |
+| 605 BC and Carchemish; winter of 604 BC; the fast | 1-19 | jeremiah/36.json `historical` | Repository |
+| Shaphan's family: Shaphan (2 Kings 22), Ahikam (26:24), Gemariah, Micaiah | 1-19 | jeremiah/36.json `historical` | Repository |
+| Columns cut and burned; torn garments as the contrast with Josiah; the second scroll | 20-32 | jeremiah/36.json `cultural`; BSB | Repository, BSB text |
+| Jehoiakim's successor and burial: 2 Kings 24:8-15, 22:30, 22:19 | 20-32 `hard` | jeremiah/36.json `hard` | Repository |
+| 2 Kings 22:11, Isaiah 40:8 (clauses); Jeremiah 26:22 and 26:24 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 36: nothing.
+
+## The plain notes on Jeremiah 37 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/37.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 37:1-21 (verses 7-14 and 17-20 partly paraphrased) | all | BSB | BSB text |
+| Mattaniah renamed Zedekiah (2 Kings 24:17); the rebellion; Egypt's march and the lifted siege | 1-10 | jeremiah/37.json `historical` | Repository |
+| Lachish Letter 3, found 1935: Konyahu son of Elnathan to Egypt | 1-10 | jeremiah/37.json `historical` | Repository |
+| The trip to Benjamin; the courtyard of the guard; bread until the city's bread was gone | 11-21 | BSB; jeremiah/37.json `summary` | BSB text |
+| Isaiah 30:7, 2 Kings 24:17, 2 Kings 25:3 (clauses); Jeremiah 32:2 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 37: a draft line on Acts 28, replaced by 2 Kings 25:3.
+
 ## The plain notes on Ezekiel 13 (2026-11-26)
 
 `client/public/bible/notes/ezekiel/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
