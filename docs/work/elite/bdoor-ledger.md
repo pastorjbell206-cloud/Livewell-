@@ -22013,3 +22013,23 @@ Cut in chapter 2: the deep note's lines to Christ (the rich fool, Luke 12:16-21;
 | The hard note: denial or doubt as one reading; what is seen under the sun; ‘who knows’ as ignorance, not denial; limited light growing to Daniel 12; 12:7; honest observation answered by the rest of Scripture, or a humbling of pride | 16-22 `hard` | ecclesiastes/3.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 3: the deep note's line to Christ (the resurrection of Christ as the answer to verses 18-21, left to the book page's wording on the New Testament).
+
+## The plain notes on Ecclesiastes 4 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 4:1; 4:2; 4:3 | 1-3 | BSB | BSB text |
+| From chapter 3's trust to the side of the victims; no family or patron; the comforter as family and friends; ‘no comforter’ twice; oppression under Israel's kings and later empires, not one regime | 1-3 | ecclesiastes/4.json `story`, `historical`, `cultural`, `words` (nacham, ashuqim) | Repository |
+| Lamentations 1:2 (its second sentence); Job 3:11 (its first clause) | 1-3 | the chapter data's cross-references for 4:1 (Lamentations 1:2) and 4:2 (Job 3:11); BSB | Repository; BSB text |
+| The hard note: among the darkest words in Scripture; a settled view or a cry (Job 3; Jeremiah 20); preserved without being made final truth; 9:4; company, not a verdict; it does not say anyone is better off dead | 1-3 `hard` | ecclesiastes/4.json `hard`; the brief's crisis rules | Repository |
+| The self-harm line (‘If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country...’ to ‘...lists places to turn.’) | 1-3 `hard` | job/plain/3.json and the 1 Kings 19 and 2 Samuel 17 notes (`hard`) | Reused byte for byte; Find Help named; no phone number |
+| 4:4; 4:5; 4:6; the lonely man (4:8) paraphrased (it holds an inner quotation and a dash); 4:9; 4:10 (an exclamation, in double quotes); warmth (4:11) paraphrased; 4:12 | 4-12 | BSB | BSB text |
+| Work driven by comparison; verses 5 and 6 charting a middle course; no son or brother, no heir, no care in old age; three examples; a shared cloak; rope-making; the cord applied to marriage or friendship, the text's general point | 4-12 | ecclesiastes/4.json `cultural`, `literary` | Repository |
+| Genesis 2:18 (the LORD's first clause); Galatians 6:2 (its first clause) | 4-12 | the chapter data's cross-references for 4:9 (Genesis 2:18) and 4:10 (Galatians 6:1); BSB | Repository; BSB text |
+| 4:13; the youth (4:14-15) paraphrased; the forgotten successor (4:16) paraphrased, its last sentence quoted | 13-16 | BSB | BSB text |
+| Joseph, David and later rulers suggested; no figure fits every detail; the difficult Hebrew; a parable; the fickleness of fame | 13-16 | ecclesiastes/4.json `historical` | Repository; each reading in its holders' terms |
+| Genesis 41:14 (its first sentence) | 13-16 | the chapter data's cross-references for 4:14 (Genesis 41:14); BSB | Repository; BSB text |
+
+Cut in chapter 4: the deep note's lines to Christ (the Spirit as the Comforter, John's Gospel, and Jesus' blessing on those who mourn beside verse 1; the disciples sent two by two and the church as a body beside verses 9-12; the note calls them connections of theme).
