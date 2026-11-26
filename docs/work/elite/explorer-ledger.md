@@ -1569,3 +1569,83 @@ Bathsheba, Uriah, Tamar and Absalom's revolt are named at the older level only, 
 | pictures | Bathsheba, Uriah, Tamar, Amnon and Absalom not drawn; no battle, weapon or death; God not drawn; David's crown gold only where it is the picture's one mark (the crown was taken off in the night scene after the sheet was read) | The drawing (`scenes/book-2-samuel.tsx`); sheets of the finished frames read |
 | left out | Abner, Joab and Ish-bosheth; Uzzah; Mephibosheth; the ten women; Sheba; the census and the plague | Deliberate; the book page is linked |
 | length | Younger 2:58.5, older 3:11.4 | `audio/manifest.json` |
+
+### Nehemiah: rebuilding the walls, and a people (`book-nehemiah`)
+
+The harsh reforms of chapter 13 are told as the book page tells them, reported and not approved, with its words that nothing in them "gives anyone today a warrant to strike or harm anyone". No weapon or blow is drawn.
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Nehemiah 1:4; 2:18; 4:9; 5:9; 8:8; 13:31; 2:4 (some trimmed to a clause) | BSB, by the validator; all Nehemiah |
+| 1 The king's cupbearer | A Jewish official at the Persian court; Jerusalem in 445 BC; the walls rebuilt in fifty-two days; his own account, full of quick prayers and strong feeling; a layman for whom prayer and planning are partners; he wept and prayed (younger) | The Nehemiah book page, `teaching` "Nehemiah in a minute" and "Prayer, a king, and a night ride", nearly word for word |
+| 2 How it is laid out | The turn at chapter 8, from building the city to building the people; five parts | The book page's `structure` and `teaching` "How Nehemiah is built". Five panels of 2, 5, 3, 2 and 1 chapters; the gold rule under the reading of the law |
+| 3 Pray, and keep watch | Chapter 3 names the builders: priests, goldsmiths, perfumers, a ruler with his daughters, many before their own houses; mockery, threats, plots; they prayed and posted a guard; fifty-two days | The book page's `teaching` "The wall: builders, enemies and fifty-two days" ("Nehemiah's answer is the book in a sentence"), nearly word for word; BSB Nehemiah 3; 4:9; 6:15 |
+| 4 Justice for the poor | Famine, debt and the king's tax cost poor families their fields and children; Nehemiah confronts the nobles; they give back what they took; a rebuilt city with an unjust economy is not a restored city | The book page's `teaching` "Brothers selling brothers", nearly word for word; BSB Nehemiah 5:5, 9 |
+| 5 The law read with joy | The high point is the reading of the law, not the wall; Ezra reads from daybreak until noon; the Levites explain; weeping; feast and share, the joy of the LORD their strength; confession and a pledge | The book page's `teaching` "The law read, a people confessing, a pledge signed" and `reading`, nearly word for word; BSB Nehemiah 8:3, 8, 10 |
+| 6 An ending without triumph | Promises broken, Nehemiah acts, sometimes harshly; reported without comment; no warrant to strike or harm anyone today; walls cannot by themselves make a people faithful; "Remember me, O my God, with favor" | The book page's `teaching` "Broken promises, and Nehemiah's last reforms" and "Nehemiah in a minute", whole where quoted; BSB Nehemiah 13:31 |
+| 7 Where to start | Chapters 1, 2 and 8 (younger); key chapters 5, 8, 9 and 13; quick prayers; the lists of names; promises kept in ordinary weeks | The book page's `keyChapters` and `teaching` "How to read Nehemiah", nearly word for word; BSB Nehemiah 2:4 |
+| differ | Chapter 13 weighed two ways; no warrant to strike or harm, whole; the marriages as in Ezra, Ruth the example kept; authorship and Ezra; no contempt for the Jewish people or the peoples whose leaders opposed the wall; no side | The book page's `teaching` "Broken promises ...", "Who wrote it, and when" and "How the New Testament reads Nehemiah" |
+| care | "Waiting can be hard, especially waiting for something to get better at home, ..." | The Return and the Waiting stop's care line, whole |
+| pictures | No weapon, blow or harm drawn (the armed builders are left to the page); God not drawn; Nehemiah the same in each picture | The drawing (`scenes/book-nehemiah.tsx`); a sheet of the finished frames read |
+| left out | The armed builders; Sanballat and Tobiah by name; the plots; the dedication's choirs in the captions; the date 433 BC | Deliberate; the book page is linked |
+| length | Younger 2:35.9, older 3:12.7 | `audio/manifest.json` |
+
+### Amos: let justice roll on like a river (`book-amos`)
+
+Amos is tied to no modern party or nation, in the book page's words: "its standard is God's covenant, not any modern program", and the closing promise makes "no claim about any modern state or border".
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Amos 7:15; 1:2; 2:6; 5:24; 7:8; 9:11; 5:4 (some trimmed to a clause) | BSB, by the validator; all Amos |
+| 1 A herdsman sent north | Around 760 BC a herdsman of Tekoa in Judah went north to Israel at its greatest wealth; crowded shrines, houses decorated with ivory; Amos looked beneath the prosperity | The Amos book page, `teaching` "Amos in a minute" and "Who wrote it, and when", nearly word for word |
+| 2 How it is laid out | Three parts: the ring of judgments closing on Judah and Israel; sermons, laments and woes; five visions with the one story, ending in restoration | The book page's `teaching` "How Amos is built". Three panels of 2, 4 and 3 chapters; the gold rule under the sermons |
+| 3 The trap | Neighbors judged for cruelty every people knows is wrong; a first hearer would agree; the trap closes on Judah and at greatest length on Israel, who sell the needy for a pair of sandals | The book page's `teaching` "Three transgressions, even four" (the nations' crimes named there and not here); BSB Amos 2:6 |
+| 4 Justice like a river | God refuses the feasts and songs; justice to roll like a river; not worship rejected as such, but worship cut off from obedience, and comfort that does not grieve | The book page's `teaching` "Seek the LORD and live, and let justice roll", nearly word for word; BSB Amos 5:21-24; 6:6 |
+| 5 The plumb line | Amos pleads twice and God relents; the plumb line shows Israel out of true; Amaziah tells him to go home; the LORD took him from following the flock | The book page's `teaching` "Five visions, and a priest at Bethel", nearly word for word; BSB Amos 7:1-15 |
+| 6 The fallen tent restored | God will restore David's fallen tent and plant his people in the land; James quoted it of the Gentiles; no claim about any modern state or border | The book page's `teaching` "The fallen tent of David" and "How the New Testament reads Amos", whole where quoted; BSB Amos 9:11-15 |
+| 7 Where to start | Chapter 5, then 7 and 9 (younger); key chapters 1, 2, 3, 7 and 9; the charges land on oneself first; God's covenant, not any modern program | The book page's `keyChapters`, `reading` and `teaching` "How to read Amos", nearly word for word; BSB Amos 5:4 |
+| differ | Amos claimed across the political spectrum, his standard God's covenant; passages read as later additions or as Amos's own; owner or shepherd; James's Greek and the Hebrew; no modern state; never used to blame the Jewish people; no side | The book page's `reading` and `teaching` "Who wrote it, and when", "The fallen tent of David", "How the New Testament reads Amos" |
+| care | "If something hard is happening to you or to someone you love, ..." | The care line of "Why do bad things happen?", whole |
+| pictures | No war, crime, locust, fire or ruin drawn; no one of any later age, party or nation; God not drawn | The drawing (`scenes/book-amos.tsx`); a sheet of the finished frames read |
+| left out | The nations' crimes in the captions; the cows of Bashan; the locust and fire visions; the Day of the LORD in the captions; the earthquake | Deliberate; the book page is linked |
+| length | Younger 2:40.6, older 3:05.6 | `audio/manifest.json` |
+
+### 2 Corinthians: power in weakness (`book-2-corinthians`)
+
+The book page's cautions are given in the captions: Paul's authority "was for building up, not tearing down", a leader who uses the letter to demand loyalty "has read it upside down", and the collection gives "no ground for teaching that giving ... will make the giver rich".
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | 2 Corinthians 2:4; 1:3; 4:7; 5:17; 9:7; 12:9; 1:4 (some trimmed to a clause) | BSB, by the validator; all 2 Corinthians |
+| 1 A hurt pastor's letter | The most personal of Paul's letters; a visit gone badly, a letter in tears; Titus' news that the church turned back; relief, joy and deep pain; a pastor hurt by people he still loves | The 2 Corinthians book page, `teaching` "2 Corinthians in a minute", nearly word for word |
+| 2 How it is laid out | Three parts: the ministry explained and the friendship mended (1 to 7); the collection (8 and 9); the fool's speech (10 to 13); comfort, grace and weakness one gospel from three sides | The book page's `teaching` "How it is built", nearly word for word. Three panels of 7, 2 and 4 chapters; the gold rule under the last, where "the heart of the letter" (12:9) stands |
+| 3 Treasure in jars of clay | Corinth admired strength and polish; treasure in jars of clay, the power God's; comfort passed on, and comfort not meaning the trouble goes away | The book page's `teaching` "The big themes" and "2 Corinthians in a minute"; BSB 2 Corinthians 1:4; 4:7 |
+| 4 Made friends again | Reconciled means made friends again after a quarrel; God took the first step; a new creation; the letter itself an act of reconciliation | The book page's `teaching` "The big themes", nearly word for word; BSB 2 Corinthians 5:17-20 |
+| 5 The grace of giving | Paul never orders the church to give; giving a grace, Jesus who became poor its pattern; for the poor, not for Paul; no ground for teaching that giving makes the giver rich | The book page's `teaching` "The big themes" and "What the letter is not", nearly word for word; BSB 2 Corinthians 8:9; 9:7 |
+| 6 Power in weakness | Rivals who prized polish; Paul boasts of hardships, the basket, the thorn not removed; "My grace is sufficient"; authority for building up; demanding loyalty reads it upside down | The book page's `teaching` "How it is built", "The ‘super-apostles’" and "What the letter is not"; BSB 2 Corinthians 11:30-33; 12:9; 13:10 |
+| 7 Where to start | Chapters 4 and 12 (younger); one sitting, aloud, a real letter in a real quarrel; irony in 10 to 13; who you admire, and why | The book page's `teaching` "How to read 2 Corinthians", nearly word for word; BSB 2 Corinthians 1:4 |
+| differ | One letter or several; who the rival teachers were; not a manual for leaders, not a promise of no suffering, no ground for prosperity teaching, not against the Jewish people; no side | The book page's `reading` and `teaching` "One letter or several?", "The ‘super-apostles’", "What the letter is not" |
+| care | "If something hard is happening to you or to someone you love, ..." | The care line of "Why do bad things happen?", whole |
+| pictures | No beating, shipwreck or wound drawn; the rivals, Christ and God not drawn | The drawing (`scenes/book-2-corinthians.tsx`); a sheet of the finished frames read |
+| left out | The tearful letter's offender; the veil of chapter 3; the third heaven; the list of hardships in full | Deliberate; the book page is linked |
+| length | Younger 2:57.8, older 3:09.1 | `audio/manifest.json` |
+
+### 1 Thessalonians: hope that does not give up (`book-1-thessalonians`)
+
+The Lord's coming is given as the book page gives it: what all confess, then where Christians differ on the order of events, each view set out in "Where churches differ" as the page sets it, and no date. Paul's hard words in 2:14-16 are read as the page reads them.
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | 1 Thessalonians 3:6; 1:3; 1:9; 4:13; 5:2; 5:17; 4:18 (some trimmed to a clause) | BSB, by the validator; all 1 Thessalonians |
+| 1 A young church | Very likely the oldest of Paul's letters to survive, around AD 50; forced to leave by night; new believers facing hard neighbours; Timothy's good news; relief | The 1 Thessalonians book page, `teaching` "1 Thessalonians in a minute", nearly word for word |
+| 2 How it is laid out | The first half looks back (thanks, how Paul lived among them), the second looks ahead (holiness, love, work, the Lord's coming); every chapter ends near the same place | The book page's `teaching` "1 Thessalonians in a minute" and "How it is built". Two panels of 3 and 2 chapters; the gold rule under the second |
+| 3 Turned from idols | Most had worshipped idols weeks before; turned to the living and true God; gentle as a nursing mother, caring as a father; working night and day | The book page's `teaching` "How it is built"; BSB 1 Thessalonians 1:9; 2:7-9 |
+| 4 Hope in grief | Some believers had died; the living feared they had missed the Lord's coming; not told not to grieve, but not like those without hope, because Jesus died and rose; "And so we will always be with the Lord" | The book page's `teaching` "The Lord's coming: what all confess ...", nearly word for word; BSB 1 Thessalonians 4:13-17 |
+| 5 The Lord's coming | Every tradition confesses he will come and the dead be raised; Christians differ on the order of events and on a separate rapture; no date; like a thief in the night | The same part of the book page, nearly word for word; BSB 1 Thessalonians 5:1-2 |
+| 6 Life together | Respect leaders, care for the weak, rejoice, pray, give thanks, test everything; waiting means living well among neighbours | The book page's `teaching` "How it is built" and "What the letter is not", nearly word for word; BSB 1 Thessalonians 4:11-12; 5:12-22 |
+| 7 Where to start | One sitting, about fifteen minutes; 4:13-18 read for what Paul says it is for; whom are you grieving, where is your hope | The book page's `teaching` "How to read 1 Thessalonians", nearly word for word; BSB 1 Thessalonians 4:18 |
+| differ | What all confess; the views of the order of events as the page sets them (before, in the middle of, after the trouble; no separate rapture); no date and no living person, nation or event named; 2:14-16 persecutors with persecutors, no verdict on the Jewish people; no side | The book page's `teaching` "The Lord's coming ...", "Paul's hard words in 2:14-16" and "What the letter is not" |
+| care | "If someone you love has died, or if thinking about death makes you afraid, ..." | The care line of "The life to come", whole |
+| pictures | No grave, death or end-of-the-world scene; nothing in the sky; Christ and God not drawn; the coming pictured only as a town where someone is awake | The drawing (`scenes/book-1-thessalonians.tsx`); a sheet of the finished frames read |
+| left out | The words on sexual holiness in the captions; 2:14-16 in the captions; the trumpet and the clouds in the captions | Deliberate; the book page is linked |
+| length | Younger 2:47.2, older 3:03.4 | `audio/manifest.json` |

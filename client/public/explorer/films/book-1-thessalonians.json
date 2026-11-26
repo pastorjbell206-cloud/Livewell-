@@ -1,0 +1,154 @@
+{
+  "slug": "book-1-thessalonians",
+  "title": "1 Thessalonians: hope that does not give up",
+  "group": "books",
+  "status": "finished",
+  "book": "1-thessalonians",
+  "mark": "book-1-thessalonians",
+  "line": {
+    "younger": "A warm letter to a young church that had lost friends and was afraid: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "1 Thessalonians as a whole book: Paul's oldest letter, a church turned from idols, hope in grief, the Lord's coming without a date, life together, and where to begin."
+  },
+  "poster": "At dawn a traveller with a staff comes up the road to a house, where a man waits at the door with his arms open. A gold sun is rising.",
+  "frames": [
+    {
+      "id": "young",
+      "name": "A young church",
+      "still": "At dawn a traveller with a staff comes up the road to a house, where a man waits at the door with his arms open. A gold sun is rising.",
+      "younger": "First Thessalonians is probably Paul's oldest letter. He had started a church in Thessalonica, but trouble made him leave by night. He sent his friend Timothy to see if the new believers were all right, and the news was good.",
+      "older": "First Thessalonians is very likely the oldest of Paul's letters to survive, written around AD 50. Forced to leave by night, he had left a few new believers facing hard neighbours. Timothy brings good news, and Paul writes in relief.",
+      "verse": {
+        "ref": "1 Thessalonians 3:6",
+        "text": "Timothy has returned from his visit with the good news"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in two panels, a wider one with a lamp over it and a narrower one with a sunrise over it. A gold rule lies under the second panel.",
+      "younger": "The letter has two halves. In the first, Paul looks back: he thanks God for them and remembers how he lived among them. In the second he looks ahead: live a holy life, love each other, and do not lose hope.",
+      "older": "The first half looks back: thanks for their faith, love and hope, and how Paul lived among them. The second looks ahead: holiness, love, quiet work, and the Lord's coming. Every chapter ends near the same place.",
+      "verse": {
+        "ref": "1 Thessalonians 1:3",
+        "text": "your work of faith, your labor of love, and your enduring hope"
+      }
+    },
+    {
+      "id": "turned",
+      "name": "Watch for: turned from idols",
+      "still": "By lamplight a man works at stretched cloth, making tents, while a small group sits near and listens. The lamp's flame is gold.",
+      "younger": "Watch for how the church began. People who had worshipped idols turned to serve the living God. Paul lived among them, gentle as a mother caring for her children, and he worked with his hands so he would not be a burden.",
+      "older": "Most of these believers had worshipped idols until a few weeks before, and they turned to serve the living and true God. Paul lived among them, gentle as a nursing mother and caring as a father, working night and day so as not to be a burden.",
+      "verse": {
+        "ref": "1 Thessalonians 1:9",
+        "text": "how you turned to God from idols to serve the living and true God"
+      }
+    },
+    {
+      "id": "hope",
+      "name": "Watch for: hope in grief",
+      "still": "On a hillside at dawn a small group stands together, one with an arm around another, facing a gold sun as it rises.",
+      "younger": "Watch for hope. Some of the believers had died, and the others were very sad. Paul does not tell them to stop being sad. He tells them that because Jesus rose again, all who belong to him will be with the Lord for ever.",
+      "older": "Some believers had died, and the living feared they had missed the Lord's coming. Paul does not tell them not to grieve. He tells them not to grieve like those without hope, because Jesus died and rose again: “And so we will always be with the Lord.”",
+      "verse": {
+        "ref": "1 Thessalonians 4:13",
+        "text": "so that you will not grieve like the rest, who are without hope."
+      }
+    },
+    {
+      "id": "coming",
+      "name": "Watch for: the Lord's coming",
+      "still": "At night in a sleeping town, one window is lit gold, where someone is still awake.",
+      "younger": "Watch for a promise. Jesus will come again, and all his people will be with him. Paul does not say when. He says the day will come like a thief in the night, so stay awake and be ready.",
+      "older": "Every Christian tradition confesses that Jesus will come again and the dead will be raised. Christians differ on the order of events, and on whether being caught up is a separate rapture. Paul gives no date: the Day comes like a thief in the night.",
+      "verse": {
+        "ref": "1 Thessalonians 5:2",
+        "text": "the Day of the Lord will come like a thief in the night."
+      }
+    },
+    {
+      "id": "together",
+      "name": "Watch for: life together",
+      "still": "In a street a craftsman works at his bench, a woman gives bread to an old man, and a child runs past. A gold sun is over the roofs.",
+      "younger": "Watch the short commands at the end: rejoice always, pray without stopping, give thanks in everything. And live quietly, work with your hands, and be kind to everyone.",
+      "older": "The letter ends with short commands for life together: respect leaders, care for the weak, rejoice, pray, give thanks, test everything. Waiting for the Lord means living well among your neighbours, not leaving them behind.",
+      "verse": {
+        "ref": "1 Thessalonians 5:17",
+        "text": "Pray without ceasing."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? Read the whole letter at once. It takes about fifteen minutes. Chapter 4 has some of the Bible's plainest words about hope.",
+      "older": "Read it in one sitting, as a pastor's letter to new believers he loves. Read the end of chapter 4 for what Paul says it is for: to encourage one another. Whom are you grieving, and where is your hope?",
+      "verse": {
+        "ref": "1 Thessalonians 4:18",
+        "text": "Therefore encourage one another with these words."
+      }
+    }
+  ],
+  "think": {
+    "younger": "Paul told the church to encourage one another. Who could you encourage this week, and how?",
+    "older": "Paul says waiting for the Lord means living well among your neighbours. If the Lord came today, would he find you awake?"
+  },
+  "read": [
+    {
+      "label": "1 Thessalonians 1",
+      "href": "/study/bible/1-thessalonians/1"
+    },
+    {
+      "label": "1 Thessalonians 2",
+      "href": "/study/bible/1-thessalonians/2"
+    },
+    {
+      "label": "1 Thessalonians 3",
+      "href": "/study/bible/1-thessalonians/3"
+    },
+    {
+      "label": "1 Thessalonians 4",
+      "href": "/study/bible/1-thessalonians/4"
+    },
+    {
+      "label": "1 Thessalonians 5",
+      "href": "/study/bible/1-thessalonians/5"
+    }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "All Christians confess that Jesus Christ will come again, that the dead will be raised, and that he will judge the living and the dead. They differ on the order of events. Some read 4:13-18 as Christ coming for his church before a time of great trouble; others hold that the church will be caught up in the middle of that time, or after it at Christ's one, open return; and many, in Catholic, Orthodox, Lutheran, Reformed and other churches, do not separate a rapture from the return at all. Paul gives no date, and no one should set a date for the Lord's return or name a living person, a nation or an event of our own day as what these verses describe. Paul's hard words in 2:14-16 compare persecutors with persecutors, not one people with another; they are not a verdict on the Jewish people, and the use of such words to teach contempt for Jews is false. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      {
+        "label": "the 1 Thessalonians page of the Study Bible",
+        "href": "/study/bible/1-thessalonians"
+      }
+    ]
+  },
+  "care": "If someone you love has died, or if thinking about death makes you afraid, you do not have to carry that alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    {
+      "label": "1 Thessalonians in the Study Bible: the whole book",
+      "href": "/study/bible/1-thessalonians"
+    },
+    {
+      "label": "What happens when we die? (a moving picture)",
+      "href": "/study/explorer/watch/when-we-die"
+    },
+    {
+      "label": "Revelation: the Lamb on the throne (a moving picture)",
+      "href": "/study/explorer/watch/book-revelation"
+    },
+    {
+      "label": "The Church and the Spirit: a stop on the map",
+      "href": "/study/explorer/church"
+    }
+  ],
+  "end": {
+    "label": "Start reading: 1 Thessalonians 1",
+    "href": "/study/bible/1-thessalonians/1"
+  }
+}

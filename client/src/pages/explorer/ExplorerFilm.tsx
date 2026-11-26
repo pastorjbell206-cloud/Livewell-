@@ -453,6 +453,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole of 2 Samuel in seven moving pictures: King David, five parts, a crown not seized, the promise of a house, Nathan's word to the king, the sword in David's house, and where to start reading.",
     },
+    "book-nehemiah": {
+      title: "Nehemiah: rebuilding the walls, and a people: Bible Explorer",
+      description:
+        "The whole book of Nehemiah in seven moving pictures: the king's cupbearer, how it is laid out, pray and keep watch, justice for the poor, the law read with joy, an ending without triumph, and where to start reading.",
+    },
+    "book-amos": {
+      title: "Amos: let justice roll on like a river: Bible Explorer",
+      description:
+        "The whole book of Amos in seven moving pictures: a herdsman sent north, how it is laid out, the trap, justice like a river, the plumb line, the fallen tent restored, and where to start reading.",
+    },
+    "book-2-corinthians": {
+      title: "2 Corinthians: power in weakness: Bible Explorer",
+      description:
+        "The whole of 2 Corinthians in seven moving pictures: a hurt pastor's letter, three parts, treasure in jars of clay, made friends again, the grace of giving, power in weakness, and where to start reading.",
+    },
+    "book-1-thessalonians": {
+      title: "1 Thessalonians: hope that does not give up: Bible Explorer",
+      description:
+        "The whole of 1 Thessalonians in seven moving pictures: a young church, two halves, turned from idols, hope in grief, the Lord's coming, life together, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

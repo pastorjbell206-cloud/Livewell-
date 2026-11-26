@@ -1161,6 +1161,50 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M40,82l2,-36M48,82l1,-34M56,82l0,-26" />
     </>
   ),
+  /* Nehemiah: a city wall rising, one gold stone set in it. */
+  "book-nehemiah": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M12,84V50h8v-6h8v6h8v-6h8v6h8V62H64V70H88V84Z" tone="c" off={0.8} />
+      <path className="pl-l" d="M12,72H88M30,84V72M50,84V72M70,84V72M22,72V60M40,72V60" />
+      <path className="pl-m" d="M54,62h10v8h-10Z" />
+      <path className="pl-l" d="M54,62h10v8h-10Z" />
+    </>
+  ),
+  /* Amos: a plumb line beside a wall, the weight gold. */
+  "book-amos": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M20,84L30,24H52L44,84Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M64,14V66M56,14H72" />
+      <path className="pl-m" d="M59,66h10l-5,12Z" />
+      <path className="pl-l" d="M59,66h10l-5,12Z" />
+    </>
+  ),
+  /* 2 Corinthians: a plain clay jar with gold light inside. */
+  "book-2-corinthians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M40,84c-14,-4 -16,-26 -6,-36c-4,-4 -4,-10 4,-12h24c8,2 8,8 4,12c10,10 8,32 -6,36Z" tone="c" off={0.8} />
+      <path className="pl-m" d="M44,36l-6,-20h24l-6,20Z" />
+      <path className="pl-l" d="M44,36l-6,-20h24l-6,20Z" />
+    </>
+  ),
+  /* 1 Thessalonians: a lit window in a sleeping town, the window gold. */
+  "book-1-thessalonians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M18,22l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1ZM80,18l2,4l4,1l-4,1l-2,4l-2,-4l-4,-1l4,-1Z" />
+      <Shape d="M14,84V56H40V84ZM60,84V52H88V84Z" tone="c" off={0.8} />
+      <Shape d="M36,84V40H66V84Z" tone="b" off={0.8} />
+      <path className="pl-m" d="M45,52h12v12h-12Z" />
+      <path className="pl-l" d="M45,52h12v12h-12Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

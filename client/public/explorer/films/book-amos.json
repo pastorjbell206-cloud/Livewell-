@@ -1,0 +1,123 @@
+{
+  "slug": "book-amos",
+  "title": "Amos: let justice roll on like a river",
+  "group": "books",
+  "status": "finished",
+  "book": "amos",
+  "mark": "book-amos",
+  "line": {
+    "younger": "The book of a herdsman God sent to a rich kingdom that forgot the poor: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Amos as a whole book: a herdsman in a prosperous kingdom, the trap that closes on Israel, justice like a river, the plumb line, the fallen tent restored, and where to begin."
+  },
+  "poster": "A herdsman with his staff stands with his sheep on a hill road, looking across at a rich city of fine houses.",
+  "frames": [
+    {
+      "id": "herdsman",
+      "name": "A herdsman sent north",
+      "still": "A herdsman with his staff stands with his sheep on a hill road, looking across at a rich city of fine houses.",
+      "younger": "Amos was a herdsman from a small village. God sent him to the rich northern kingdom of Israel, where people worshipped God loudly, but treated poor people very badly.",
+      "older": "Around 760 BC a herdsman from Tekoa in Judah went north to Israel, then at its greatest wealth in generations. The shrines were crowded, and the rich had houses decorated with ivory. Amos looked beneath the prosperity.",
+      "verse": {
+        "ref": "Amos 7:15",
+        "text": "But the LORD took me from following the flock"
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in three panels, with a ring of towers, a river and a plumb line over them. A gold rule lies under the middle panel.",
+      "younger": "The book has three parts. First, God judges the nations around Israel, and then Israel itself. Next come warnings and sad songs. Last, Amos sees five visions, and at the very end comes a promise.",
+      "older": "Three parts: a ring of judgments on the nations that closes on Judah and then on Israel; sermons, laments and woes; and five visions, with the one story in the book, ending in a promise of restoration.",
+      "verse": {
+        "ref": "Amos 1:2",
+        "text": "The LORD roars from Zion and raises His voice from Jerusalem"
+      }
+    },
+    {
+      "id": "trap",
+      "name": "Watch for: the trap",
+      "still": "At a city gate a richly dressed man holds out a pair of sandals toward a poor man, who bows his head before him. The sandals are gold.",
+      "younger": "Watch for a surprise. Amos first speaks against the nations around Israel, and the people of Israel agree. Then he turns to Israel itself, because they sell poor people for the price of a pair of sandals.",
+      "older": "God judges Israel's neighbors for cruelty every people knows is wrong, and a first hearer would have agreed with every word. Then the trap closes on Judah, and at greatest length on Israel, who sell the needy for a pair of sandals.",
+      "verse": {
+        "ref": "Amos 2:6",
+        "text": "they sell the righteous for silver and the needy for a pair of sandals."
+      }
+    },
+    {
+      "id": "river",
+      "name": "Watch for: justice like a river",
+      "still": "A broad river runs strong through green fields toward the hills, and a gold sun shines on the water.",
+      "younger": "Watch for the most famous words in Amos. The people sang and held big feasts for God, but they cheated the poor. God says he does not want their songs. He wants justice to roll on like a river.",
+      "older": "God refuses Israel's feasts and songs in some of the hardest words in the Bible, and calls instead for justice to roll on like a river. Amos does not reject worship as such. He attacks worship cut off from obedience, and comfort that does not grieve.",
+      "verse": {
+        "ref": "Amos 5:24",
+        "text": "But let justice roll on like a river, and righteousness like an ever-flowing stream."
+      }
+    },
+    {
+      "id": "plumb",
+      "name": "Watch for: the plumb line",
+      "still": "A plumb line, a weight on a cord, hangs beside a leaning wall, and a man in a herdsman's cloak stands looking at it. The weight is gold.",
+      "younger": "Watch for what Amos sees. God shows him a plumb line, a weight on a string that shows whether a wall is straight. Israel is crooked. A priest tells Amos to go home, but Amos says God sent him.",
+      "older": "In the visions Amos twice pleads and God relents; then a plumb line shows Israel out of true. Amaziah, priest of the king's shrine, tells him to go home. Amos answers that the LORD took him from following the flock.",
+      "verse": {
+        "ref": "Amos 7:8",
+        "text": "I am setting a plumb line among My people Israel"
+      }
+    },
+    {
+      "id": "tent",
+      "name": "Watch for: the fallen tent restored",
+      "still": "On a hillside young vines stand in rows below a rebuilt stone wall, and two people work among them. One cluster of grapes is gold.",
+      "younger": "Watch the end. After all the warnings, God makes a promise. He will rebuild what has fallen down. His people will plant vineyards again and live at home, never to be pulled up.",
+      "older": "The book ends in hope: God will restore the fallen tent of David and plant his people in their land. James quoted these words at Jerusalem of the Gentiles coming to faith. They make no claim about any modern state or border.",
+      "verse": {
+        "ref": "Amos 9:11",
+        "text": "In that day I will restore the fallen tent of David."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter 5, the most famous chapter. Then chapters 7 and 9, the visions and the promise.",
+      "older": "Start with chapter 5, then the key chapters: 1, 2, 3, 7 and 9. Read the charges for what they name, and let them land on yourself before anyone else. The standard is God's covenant, not any modern program.",
+      "verse": {
+        "ref": "Amos 5:4",
+        "text": "Seek Me and live!"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Amos says God cares how poor people are treated. Who near you might need someone to be fair and kind to them?",
+    "older": "Amos asks who is at ease in Zion. Where are you comfortable while others suffer, and what would it mean to grieve over it?"
+  },
+  "read": [
+    { "label": "Amos 1", "href": "/study/bible/amos/1" },
+    { "label": "Amos 2", "href": "/study/bible/amos/2" },
+    { "label": "Amos 3", "href": "/study/bible/amos/3" },
+    { "label": "Amos 5", "href": "/study/bible/amos/5" },
+    { "label": "Amos 6", "href": "/study/bible/amos/6" },
+    { "label": "Amos 7", "href": "/study/bible/amos/7" },
+    { "label": "Amos 9", "href": "/study/bible/amos/9" }
+  ],
+  "stops": [
+    "exile"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Readers across the political spectrum have claimed Amos. The book itself speaks to God's people and their leaders, and its standard is God's covenant, not any modern program or party. Readers differ on whether some passages, among them the word against Judah, the hymns to the Creator and the closing promise, were added later, or fit Amos's own setting; on whether he owned flocks or worked as a shepherd; and on how James's Greek reading of 9:11-12 relates to the Hebrew. The closing promise makes no claim about any modern state or border, and the New Testament never uses Amos's warnings to blame the Jewish people. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      { "label": "the Amos page of the Study Bible", "href": "/study/bible/amos" }
+    ]
+  },
+  "care": "If something hard is happening to you or to someone you love, you do not have to carry it alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Amos in the Study Bible: the whole book", "href": "/study/bible/amos" },
+    { "label": "The Prophets and Exile: a stop on the map", "href": "/study/explorer/exile" },
+    { "label": "Isaiah: the Holy One who comforts (a moving picture)", "href": "/study/explorer/watch/book-isaiah" },
+    { "label": "Jeremiah: the prophet who wept (a moving picture)", "href": "/study/explorer/watch/book-jeremiah" }
+  ],
+  "end": { "label": "Start reading: Amos 5", "href": "/study/bible/amos/5" }
+}

@@ -4115,6 +4115,446 @@
     }
    ]
   },
+  "book-nehemiah": {
+   "title": {
+    "file": "book-nehemiah/title.mp3",
+    "hash": "ac77b3e68ad1b2fde976",
+    "seconds": 3.82,
+    "bytes": 23540
+   },
+   "younger": [
+    {
+     "id": "cupbearer",
+     "file": "book-nehemiah/younger/01-cupbearer.mp3",
+     "hash": "7218a7131daa74e98367",
+     "seconds": 22.83,
+     "bytes": 137588
+    },
+    {
+     "id": "layout",
+     "file": "book-nehemiah/younger/02-layout.mp3",
+     "hash": "298d6c44f122cbb39522",
+     "seconds": 22.9,
+     "bytes": 138020
+    },
+    {
+     "id": "wall",
+     "file": "book-nehemiah/younger/03-wall.mp3",
+     "hash": "1908b58dc72a23425a70",
+     "seconds": 26.91,
+     "bytes": 162068
+    },
+    {
+     "id": "poor",
+     "file": "book-nehemiah/younger/04-poor.mp3",
+     "hash": "34fd953b35d9a5b6ac85",
+     "seconds": 17.12,
+     "bytes": 103316
+    },
+    {
+     "id": "law",
+     "file": "book-nehemiah/younger/05-law.mp3",
+     "hash": "27583bd23a80456dedcb",
+     "seconds": 27.43,
+     "bytes": 165236
+    },
+    {
+     "id": "remember",
+     "file": "book-nehemiah/younger/06-remember.mp3",
+     "hash": "a8aad6ba9ceabc8e593d",
+     "seconds": 18.06,
+     "bytes": 108932
+    },
+    {
+     "id": "start",
+     "file": "book-nehemiah/younger/07-start.mp3",
+     "hash": "e9cc9970ddc310d2984a",
+     "seconds": 16.45,
+     "bytes": 99284
+    }
+   ],
+   "older": [
+    {
+     "id": "cupbearer",
+     "file": "book-nehemiah/older/01-cupbearer.mp3",
+     "hash": "3a14083a5cd002305310",
+     "seconds": 28.73,
+     "bytes": 173012
+    },
+    {
+     "id": "layout",
+     "file": "book-nehemiah/older/02-layout.mp3",
+     "hash": "df634008e58c32cd971d",
+     "seconds": 23.82,
+     "bytes": 143492
+    },
+    {
+     "id": "wall",
+     "file": "book-nehemiah/older/03-wall.mp3",
+     "hash": "ffb45d38b04d76d630ee",
+     "seconds": 29.39,
+     "bytes": 176900
+    },
+    {
+     "id": "poor",
+     "file": "book-nehemiah/older/04-poor.mp3",
+     "hash": "cfa99da0b12544573fcc",
+     "seconds": 26.63,
+     "bytes": 160340
+    },
+    {
+     "id": "law",
+     "file": "book-nehemiah/older/05-law.mp3",
+     "hash": "0dd9b53c840f43b9207a",
+     "seconds": 29.55,
+     "bytes": 177908
+    },
+    {
+     "id": "remember",
+     "file": "book-nehemiah/older/06-remember.mp3",
+     "hash": "336dd428eb18ab16c8e9",
+     "seconds": 27.04,
+     "bytes": 162788
+    },
+    {
+     "id": "start",
+     "file": "book-nehemiah/older/07-start.mp3",
+     "hash": "8e1ae6b0755418bd598e",
+     "seconds": 23.33,
+     "bytes": 140468
+    }
+   ]
+  },
+  "book-amos": {
+   "title": {
+    "file": "book-amos/title.mp3",
+    "hash": "c97ccc0337118bd54c7c",
+    "seconds": 3.79,
+    "bytes": 23252
+   },
+   "younger": [
+    {
+     "id": "herdsman",
+     "file": "book-amos/younger/01-herdsman.mp3",
+     "hash": "c5bf8c2a7b4f38fb72f5",
+     "seconds": 19.73,
+     "bytes": 118868
+    },
+    {
+     "id": "layout",
+     "file": "book-amos/younger/02-layout.mp3",
+     "hash": "c1a5c5705d8009253176",
+     "seconds": 25.95,
+     "bytes": 156308
+    },
+    {
+     "id": "trap",
+     "file": "book-amos/younger/03-trap.mp3",
+     "hash": "8f4cf738bb45d1392fb4",
+     "seconds": 24.52,
+     "bytes": 147668
+    },
+    {
+     "id": "river",
+     "file": "book-amos/younger/04-river.mp3",
+     "hash": "b886039f083803f7a62a",
+     "seconds": 25.83,
+     "bytes": 155588
+    },
+    {
+     "id": "plumb",
+     "file": "book-amos/younger/05-plumb.mp3",
+     "hash": "95e22c77e0bf5daa993c",
+     "seconds": 23.26,
+     "bytes": 140180
+    },
+    {
+     "id": "tent",
+     "file": "book-amos/younger/06-tent.mp3",
+     "hash": "1ef618ab53f24f8a1382",
+     "seconds": 21.99,
+     "bytes": 132548
+    },
+    {
+     "id": "start",
+     "file": "book-amos/younger/07-start.mp3",
+     "hash": "8072afffa0de55fe1e24",
+     "seconds": 15.12,
+     "bytes": 91220
+    }
+   ],
+   "older": [
+    {
+     "id": "herdsman",
+     "file": "book-amos/older/01-herdsman.mp3",
+     "hash": "8ccee91a746024cdd8d9",
+     "seconds": 26.69,
+     "bytes": 160772
+    },
+    {
+     "id": "layout",
+     "file": "book-amos/older/02-layout.mp3",
+     "hash": "52cb098fe1d8adc72564",
+     "seconds": 24.55,
+     "bytes": 147812
+    },
+    {
+     "id": "trap",
+     "file": "book-amos/older/03-trap.mp3",
+     "hash": "b0a4aa7ff70ddf413ca6",
+     "seconds": 26.36,
+     "bytes": 158756
+    },
+    {
+     "id": "river",
+     "file": "book-amos/older/04-river.mp3",
+     "hash": "e8d460501646d66b569d",
+     "seconds": 30.66,
+     "bytes": 184532
+    },
+    {
+     "id": "plumb",
+     "file": "book-amos/older/05-plumb.mp3",
+     "hash": "0e5d7828fa5d99fc0a14",
+     "seconds": 24.91,
+     "bytes": 150116
+    },
+    {
+     "id": "tent",
+     "file": "book-amos/older/06-tent.mp3",
+     "hash": "cbed91d854362a50c85d",
+     "seconds": 26.1,
+     "bytes": 157172
+    },
+    {
+     "id": "start",
+     "file": "book-amos/older/07-start.mp3",
+     "hash": "70c695f8e345d848d06b",
+     "seconds": 22.18,
+     "bytes": 133700
+    }
+   ]
+  },
+  "book-2-corinthians": {
+   "title": {
+    "file": "book-2-corinthians/title.mp3",
+    "hash": "bb3839ebb1161100b0a4",
+    "seconds": 3.15,
+    "bytes": 19508
+   },
+   "younger": [
+    {
+     "id": "personal",
+     "file": "book-2-corinthians/younger/01-personal.mp3",
+     "hash": "65a3b2c2cc8ae45d1272",
+     "seconds": 23.32,
+     "bytes": 140468
+    },
+    {
+     "id": "layout",
+     "file": "book-2-corinthians/younger/02-layout.mp3",
+     "hash": "f95fa03ce62ed5109f1d",
+     "seconds": 25.1,
+     "bytes": 151124
+    },
+    {
+     "id": "jars",
+     "file": "book-2-corinthians/younger/03-jars.mp3",
+     "hash": "7a7d2ceebe5946b28233",
+     "seconds": 28.23,
+     "bytes": 169988
+    },
+    {
+     "id": "reconciled",
+     "file": "book-2-corinthians/younger/04-reconciled.mp3",
+     "hash": "ef35a58efc33f1621123",
+     "seconds": 26.79,
+     "bytes": 161348
+    },
+    {
+     "id": "giving",
+     "file": "book-2-corinthians/younger/05-giving.mp3",
+     "hash": "377d723b7cccd9f19d71",
+     "seconds": 23.97,
+     "bytes": 144356
+    },
+    {
+     "id": "weakness",
+     "file": "book-2-corinthians/younger/06-weakness.mp3",
+     "hash": "a671bd0ff6154cd2fdc8",
+     "seconds": 26.34,
+     "bytes": 158612
+    },
+    {
+     "id": "start",
+     "file": "book-2-corinthians/younger/07-start.mp3",
+     "hash": "fcc37bc3bc24401cdd95",
+     "seconds": 19.81,
+     "bytes": 119444
+    }
+   ],
+   "older": [
+    {
+     "id": "personal",
+     "file": "book-2-corinthians/older/01-personal.mp3",
+     "hash": "5595089369fd52209e3f",
+     "seconds": 26.29,
+     "bytes": 158324
+    },
+    {
+     "id": "layout",
+     "file": "book-2-corinthians/older/02-layout.mp3",
+     "hash": "4b0e24e77447eb59911a",
+     "seconds": 25.46,
+     "bytes": 153284
+    },
+    {
+     "id": "jars",
+     "file": "book-2-corinthians/older/03-jars.mp3",
+     "hash": "f8089b58f869518777b0",
+     "seconds": 28.13,
+     "bytes": 169412
+    },
+    {
+     "id": "reconciled",
+     "file": "book-2-corinthians/older/04-reconciled.mp3",
+     "hash": "f0b0482010ced704a786",
+     "seconds": 28.41,
+     "bytes": 170996
+    },
+    {
+     "id": "giving",
+     "file": "book-2-corinthians/older/05-giving.mp3",
+     "hash": "cefbede6675fa241e79b",
+     "seconds": 24.24,
+     "bytes": 146084
+    },
+    {
+     "id": "weakness",
+     "file": "book-2-corinthians/older/06-weakness.mp3",
+     "hash": "4274c099e8638896c347",
+     "seconds": 29.64,
+     "bytes": 178340
+    },
+    {
+     "id": "start",
+     "file": "book-2-corinthians/older/07-start.mp3",
+     "hash": "393f1e16859f1e71cb8c",
+     "seconds": 22.74,
+     "bytes": 137012
+    }
+   ]
+  },
+  "book-1-thessalonians": {
+   "title": {
+    "file": "book-1-thessalonians/title.mp3",
+    "hash": "9296b7c05c7b6beaf403",
+    "seconds": 4.21,
+    "bytes": 25844
+   },
+   "younger": [
+    {
+     "id": "young",
+     "file": "book-1-thessalonians/younger/01-young.mp3",
+     "hash": "64f255361462b50201b1",
+     "seconds": 25.49,
+     "bytes": 153428
+    },
+    {
+     "id": "layout",
+     "file": "book-1-thessalonians/younger/02-layout.mp3",
+     "hash": "6fc1e01d5769dc3f35ba",
+     "seconds": 25.26,
+     "bytes": 152132
+    },
+    {
+     "id": "turned",
+     "file": "book-1-thessalonians/younger/03-turned.mp3",
+     "hash": "145d708a03bceff61b57",
+     "seconds": 24.65,
+     "bytes": 148532
+    },
+    {
+     "id": "hope",
+     "file": "book-1-thessalonians/younger/04-hope.mp3",
+     "hash": "873967960c73b07dccaa",
+     "seconds": 25.62,
+     "bytes": 154292
+    },
+    {
+     "id": "coming",
+     "file": "book-1-thessalonians/younger/05-coming.mp3",
+     "hash": "0fcdbf216f1e3ab3aedd",
+     "seconds": 22.64,
+     "bytes": 136436
+    },
+    {
+     "id": "together",
+     "file": "book-1-thessalonians/younger/06-together.mp3",
+     "hash": "e170d8321bd7460de5c3",
+     "seconds": 19.14,
+     "bytes": 115412
+    },
+    {
+     "id": "start",
+     "file": "book-1-thessalonians/younger/07-start.mp3",
+     "hash": "94fdc8ddda053035e8b2",
+     "seconds": 20.25,
+     "bytes": 122036
+    }
+   ],
+   "older": [
+    {
+     "id": "young",
+     "file": "book-1-thessalonians/older/01-young.mp3",
+     "hash": "014d1b01679d908b7f7c",
+     "seconds": 26.99,
+     "bytes": 162500
+    },
+    {
+     "id": "layout",
+     "file": "book-1-thessalonians/older/02-layout.mp3",
+     "hash": "5f069cbceedf6b4b64c4",
+     "seconds": 25.74,
+     "bytes": 155012
+    },
+    {
+     "id": "turned",
+     "file": "book-1-thessalonians/older/03-turned.mp3",
+     "hash": "ae2c350e61c77bdfa532",
+     "seconds": 26.89,
+     "bytes": 161924
+    },
+    {
+     "id": "hope",
+     "file": "book-1-thessalonians/older/04-hope.mp3",
+     "hash": "0519492741d13d032775",
+     "seconds": 26.55,
+     "bytes": 159908
+    },
+    {
+     "id": "coming",
+     "file": "book-1-thessalonians/older/05-coming.mp3",
+     "hash": "069b3daa31e51757b43a",
+     "seconds": 26.95,
+     "bytes": 162212
+    },
+    {
+     "id": "together",
+     "file": "book-1-thessalonians/older/06-together.mp3",
+     "hash": "c29834633aad93de7731",
+     "seconds": 22.11,
+     "bytes": 133268
+    },
+    {
+     "id": "start",
+     "file": "book-1-thessalonians/older/07-start.mp3",
+     "hash": "8f5603ff1a8f5ee0d024",
+     "seconds": 23.92,
+     "bytes": 144068
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

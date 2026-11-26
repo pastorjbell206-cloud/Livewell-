@@ -1,0 +1,123 @@
+{
+  "slug": "book-nehemiah",
+  "title": "Nehemiah: rebuilding the walls, and a people",
+  "group": "books",
+  "status": "finished",
+  "book": "nehemiah",
+  "mark": "book-nehemiah",
+  "line": {
+    "younger": "The book of a man who prayed, went home and rebuilt a city's walls: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "Nehemiah as a whole book: a memoir of prayer and work, the wall in fifty-two days, justice for the poor, the law read with joy, promises broken, and where to begin."
+  },
+  "poster": "In a palace hall a man in court dress holds out a gold cup to a king on his throne, and his face is sad.",
+  "frames": [
+    {
+      "id": "cupbearer",
+      "name": "The king's cupbearer",
+      "still": "In a palace hall a man in court dress holds out a gold cup to a king on his throne, and his face is sad.",
+      "younger": "Nehemiah worked for a great king far away. When he heard that Jerusalem's walls were broken down, he sat down and cried, and he prayed. Then he went home to rebuild them, and to help God's people start again.",
+      "older": "Nehemiah, a Jewish official at the Persian court, came to Jerusalem in 445 BC and rebuilt its broken walls in fifty-two days. Much of the book is his own account, full of quick prayers and strong feeling: a layman for whom prayer and planning are partners.",
+      "verse": {
+        "ref": "Nehemiah 1:4",
+        "text": "When I heard these words, I sat down and wept."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in five panels, with a cup, a wall, an open scroll, a pair of singers and a shut gate over them. A gold rule lies under the third panel.",
+      "younger": "The book has two halves. First the wall: Nehemiah prays, travels to Jerusalem, and the people build it, even when enemies laugh at them. Then the people: God's law is read, and they promise to keep it.",
+      "older": "The book turns at chapter 8, from building the city to building the people: the burden and the night ride; the wall rebuilt against opposition; the law read and the covenant renewed; the wall dedicated; and the last reforms.",
+      "verse": {
+        "ref": "Nehemiah 2:18",
+        "text": "and they set their hands to this good work."
+      }
+    },
+    {
+      "id": "wall",
+      "name": "Watch for: pray, and keep watch",
+      "still": "People of every kind set stones on a half-built city wall, many of them in front of their own houses, and a gold sun is over them.",
+      "younger": "Watch the builders. Families, priests, goldsmiths and merchants each build a part of the wall, many in front of their own houses. When enemies laugh and threaten, the people pray and keep watch. The wall is done in fifty-two days.",
+      "older": "Chapter 3 names who built each section: priests, goldsmiths, perfumers, a ruler with his daughters. Mockery, threats and plots follow. Nehemiah's answer is the book in a sentence: they prayed, and posted a guard. The wall is finished in fifty-two days.",
+      "verse": {
+        "ref": "Nehemiah 4:9",
+        "text": "So we prayed to our God and posted a guard against them day and night."
+      }
+    },
+    {
+      "id": "poor",
+      "name": "Watch for: justice for the poor",
+      "still": "In a square a man stands before a group of richly dressed nobles, and behind him a poor family waits with their children.",
+      "younger": "Watch for the poor. In the middle of the building, families cry out. They are in debt, and their children are being taken as servants to pay it. Nehemiah stops everything and tells the rich, “What you are doing is not right.”",
+      "older": "In the middle of the work, poor families cry out: famine, debt and the king's tax have cost them their fields and even their children. Nehemiah confronts the nobles, and they give back what they took. A rebuilt city with an unjust economy is not a restored city.",
+      "verse": {
+        "ref": "Nehemiah 5:9",
+        "text": "What you are doing is not right."
+      }
+    },
+    {
+      "id": "law",
+      "name": "Watch for: the law read with joy",
+      "still": "A man stands on a high wooden platform reading from an open scroll, and a great crowd stands below to listen. The scroll is gold.",
+      "younger": "Watch for the best day in the book. Ezra reads God's law to everyone, from early morning until noon, and teachers explain it so that everyone understands. The people cry. But they are told, “the joy of the LORD is your strength.”",
+      "older": "The high point is not the wall but the reading of the law. Ezra reads from daybreak until noon, the Levites explain it, and the people weep. They are told to feast and share, for the joy of the LORD is their strength. Confession and a signed pledge follow.",
+      "verse": {
+        "ref": "Nehemiah 8:8",
+        "text": "explaining it and giving insight, so that the people could understand what was being read."
+      }
+    },
+    {
+      "id": "remember",
+      "name": "Watch for: an ending without triumph",
+      "still": "At dusk a man stands beside a great city gate as it is shut, and the sun sets gold beyond the hills.",
+      "younger": "Watch the end. Nehemiah goes away for a while. When he comes back, the people have broken their promises, and he sets things right again, sometimes harshly. The book ends with a prayer: “Remember me, O my God, with favor.”",
+      "older": "Nehemiah returns to find nearly every promise broken, and he acts, sometimes harshly. The text reports it without comment, and nothing in it gives anyone today a warrant to strike or harm anyone. Walls cannot by themselves make a people faithful.",
+      "verse": {
+        "ref": "Nehemiah 13:31",
+        "text": "Remember me, O my God, with favor."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapters 1 and 2, where Nehemiah prays and goes home. Then chapter 8, the day the law was read.",
+      "older": "Start with chapters 1 and 2, then the key chapters: 5, 8, 9 and 13. Listen for Nehemiah's quick prayers, and do not skip the lists of names. Promises made in a great assembly have to be kept in ordinary weeks.",
+      "verse": {
+        "ref": "Nehemiah 2:4",
+        "text": "So I prayed to the God of heaven"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Nehemiah prayed a quick, quiet prayer before he answered the king. When could you pray a quick prayer?",
+    "older": "Nehemiah stopped building the wall to deal with the poor. What work might need to stop until someone is treated rightly?"
+  },
+  "read": [
+    { "label": "Nehemiah 1", "href": "/study/bible/nehemiah/1" },
+    { "label": "Nehemiah 2", "href": "/study/bible/nehemiah/2" },
+    { "label": "Nehemiah 4", "href": "/study/bible/nehemiah/4" },
+    { "label": "Nehemiah 5", "href": "/study/bible/nehemiah/5" },
+    { "label": "Nehemiah 8", "href": "/study/bible/nehemiah/8" },
+    { "label": "Nehemiah 9", "href": "/study/bible/nehemiah/9" },
+    { "label": "Nehemiah 13", "href": "/study/bible/nehemiah/13" }
+  ],
+  "stops": [
+    "return"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Readers weigh Nehemiah's last reforms in two ways: as the harsh but lawful discipline of a governor facing a threat to the community's survival, or as the work of a zealous leader whose methods went beyond what was right. A story describes what happened without by that fact recommending it, and nothing in chapter 13 gives anyone today a warrant to strike or harm anyone, at home, in a church or anywhere else. The question of the marriages is the one Ezra faced, and the notes on Ezra set out how readers weigh it; Ruth the Moabite is the example the Bible itself keeps. Readers also differ on who wrote the book and how it joins Ezra. Nothing in it is a reason to look down on the Jewish people, or on the peoples whose leaders opposed the wall. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      { "label": "the Nehemiah page of the Study Bible", "href": "/study/bible/nehemiah" }
+    ]
+  },
+  "care": "Waiting can be hard, especially waiting for something to get better at home, or for a prayer to be answered. If you are carrying a long wait, you do not have to carry it alone. Talk with a parent or a leader you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "Nehemiah in the Study Bible: the whole book", "href": "/study/bible/nehemiah" },
+    { "label": "The Return and the Waiting: a stop on the map", "href": "/study/explorer/return" },
+    { "label": "Exile and coming home (a moving picture)", "href": "/study/explorer/watch/exile-and-home" },
+    { "label": "Jeremiah: the prophet who wept (a moving picture)", "href": "/study/explorer/watch/book-jeremiah" }
+  ],
+  "end": { "label": "Start reading: Nehemiah 1", "href": "/study/bible/nehemiah/1" }
+}

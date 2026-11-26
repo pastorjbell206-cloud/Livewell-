@@ -1743,6 +1743,10 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-numbers",
     "book-deuteronomy",
     "book-2-samuel",
+    "book-nehemiah",
+    "book-amos",
+    "book-2-corinthians",
+    "book-1-thessalonians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2623,5 +2627,52 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toContain("nothing in the story blames her");
     expect(f.differ?.links?.map(l => l.href)).toContain("/help");
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/Bathsheba|bath|roof|Tamar|sword|battle|body|caught in/i);
+  });
+
+  it("Nehemiah tells the harsh reforms without approving them, gives no warrant to strike anyone, and draws no weapon", () => {
+    const f = filmFile("book-nehemiah");
+    expect(f.care).toBe(filmFile("god-silent").care);
+    expect(f.frames.find(x => x.id === "remember")!.older).toContain("nothing in it gives anyone today a warrant to strike or harm anyone");
+    expect(f.differ?.text).toContain("nothing in chapter 13 gives anyone today a warrant to strike or harm anyone, at home, in a church or anywhere else");
+    expect(f.differ?.text).toContain("Nothing in it is a reason to look down on the Jewish people, or on the peoples whose leaders opposed the wall.");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|weapon|beat|hair|strike/i);
+    expect(f.frames.map(fr => fr.younger).join(" ")).not.toMatch(/beat|pulled out|curse|kill|die|dead/i);
+  });
+
+  it("Amos names no modern party or nation, ties his standard to God's covenant, and draws no war or ruin", () => {
+    const f = filmFile("book-amos");
+    expect(f.frames.find(x => x.id === "start")!.older).toContain("The standard is God's covenant, not any modern program.");
+    expect(f.frames.find(x => x.id === "tent")!.older).toContain("They make no claim about any modern state or border.");
+    expect(f.differ?.text).toContain("its standard is God's covenant, not any modern program or party");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const t = text(f);
+    expect(t).not.toMatch(/\b(America|United States|Democrat|Republican|Labour|Conservative|liberal|socialis|capitalis|left-wing|right-wing|Israel today|State of Israel|Palestin)/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|battle|army|fire|ruin|locust|body/i);
+  });
+
+  it("2 Corinthians gives leaders no warrant to demand loyalty, promises no wealth for giving, and holds no people in contempt", () => {
+    const f = filmFile("book-2-corinthians");
+    expect(f.care).toBe(filmFile("book-ephesians").care);
+    expect(f.frames.find(x => x.id === "weakness")!.older).toContain("A leader who uses this letter to demand loyalty has read it upside down.");
+    expect(f.frames.find(x => x.id === "giving")!.older).toContain("it gives no ground for teaching that giving to God will make the giver rich");
+    expect(f.differ?.text).toContain("it is not a letter against the Jewish people");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(text(f)).not.toMatch(/seed faith|hundredfold|sow a seed|prosperity|blessed financially/i);
+  });
+
+  it("1 Thessalonians sets no date, sets the rapture views out as the book page does and takes none, and reads 2:14-16 as the page does", () => {
+    const f = filmFile("book-1-thessalonians");
+    expect(f.care).toBe(filmFile("life-to-come").care);
+    const coming = f.frames.find(x => x.id === "coming")!;
+    expect(coming.older).toContain("Christians differ on the order of events");
+    expect(coming.older).toContain("Paul gives no date");
+    expect(f.differ?.text).toContain("do not separate a rapture from the return at all");
+    expect(f.differ?.text).toContain("no one should set a date for the Lord's return");
+    expect(f.differ?.text).toContain("they are not a verdict on the Jewish people");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const t = text(f);
+    expect(t).not.toMatch(/\b(19|20)\d\d\b|soon|any day now|signs of the times|antichrist|left behind|seven-year|tribulation begins/i);
+    expect(t).not.toMatch(/Russia|China|America|United States|Iran|Israel today|State of Israel|pope|president/i);
   });
 });
