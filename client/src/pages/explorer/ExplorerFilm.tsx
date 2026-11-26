@@ -383,6 +383,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole letter to the Philippians in seven moving pictures: a thank-you letter from prison, its four chapters, joy, the mind of Christ, all counted as loss, contentment in want and in plenty, and where to start reading.",
     },
+    "book-hebrews": {
+      title: "Hebrews: hold on to Jesus: Bible Explorer",
+      description:
+        "The whole book of Hebrews in seven moving pictures: a sermon for tired believers, how it is laid out, the Son, the old covenant honored as a gift that pointed ahead, the great high priest, hold on and run, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

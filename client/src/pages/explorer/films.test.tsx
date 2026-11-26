@@ -1729,6 +1729,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-1-corinthians",
     "book-ephesians",
     "book-philippians",
+    "book-hebrews",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2401,5 +2402,22 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(content.younger).toContain("Paul is not talking about winning games or getting rich.");
     expect(content.verse?.ref).toBe("Philippians 4:13");
     expect(f.frames.find(x => x.id === "start")!.older).toContain("the famous line of chapter 4 with the verses around it");
+  });
+
+  it("Hebrews honors the old covenant as God's gift and rejects contempt for the Jewish people at both levels", () => {
+    const f = filmFile("book-hebrews");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const better = f.frames.find(x => x.id === "better")!;
+    expect(better.younger).toContain("were good, and they came from God.");
+    expect(better.younger).toContain("Some Christians have used this book to look down on Jewish people. That was wrong.");
+    expect(better.older).toContain("the writer honors it as God's gift");
+    expect(better.older).toContain("This book was misused to teach contempt for the Jewish people. That misuse was wrong.");
+    expect(f.differ?.text).toContain("the use of this book to teach contempt for the Jewish people was wrong");
+    const t = text(f);
+    expect(t).not.toMatch(/replaced|obsolete religion|Jews rejected|Christ.?killers|blind Jews|legalis/i);
+    // God and Christ are not drawn, and no sacrifice is.
+    expect(f.frames.find(x => x.id === "son")!.still).toContain("No one is drawn");
+    expect(f.frames.find(x => x.id === "priest")!.still).toContain("No one is drawn");
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/blood|altar|goat|calf|bull/i);
   });
 });

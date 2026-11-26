@@ -2575,6 +2575,116 @@
     }
    ]
   },
+  "book-hebrews": {
+   "title": {
+    "file": "book-hebrews/title.mp3",
+    "hash": "ce33a8f1fd3f3c2831b3",
+    "seconds": 2.94,
+    "bytes": 18212
+   },
+   "younger": [
+    {
+     "id": "sermon",
+     "file": "book-hebrews/younger/01-sermon.mp3",
+     "hash": "55c6d9a150a3903cb79e",
+     "seconds": 25.33,
+     "bytes": 152564
+    },
+    {
+     "id": "layout",
+     "file": "book-hebrews/younger/02-layout.mp3",
+     "hash": "ab75b8deeda7980c48d9",
+     "seconds": 24.63,
+     "bytes": 148388
+    },
+    {
+     "id": "son",
+     "file": "book-hebrews/younger/03-son.mp3",
+     "hash": "fb528aaf2ac7b3efcdcc",
+     "seconds": 26.06,
+     "bytes": 157028
+    },
+    {
+     "id": "better",
+     "file": "book-hebrews/younger/04-better.mp3",
+     "hash": "c27eda88980f3eccbfb9",
+     "seconds": 24.99,
+     "bytes": 150548
+    },
+    {
+     "id": "priest",
+     "file": "book-hebrews/younger/05-priest.mp3",
+     "hash": "2ce241da149963d97eef",
+     "seconds": 22.86,
+     "bytes": 137732
+    },
+    {
+     "id": "hold",
+     "file": "book-hebrews/younger/06-hold.mp3",
+     "hash": "d5fa9f65ff801047b9d9",
+     "seconds": 24.12,
+     "bytes": 145220
+    },
+    {
+     "id": "start",
+     "file": "book-hebrews/younger/07-start.mp3",
+     "hash": "efbaa7bbbd016719f390",
+     "seconds": 25.24,
+     "bytes": 151988
+    }
+   ],
+   "older": [
+    {
+     "id": "sermon",
+     "file": "book-hebrews/older/01-sermon.mp3",
+     "hash": "a004669fb391b4df5458",
+     "seconds": 22.62,
+     "bytes": 136292
+    },
+    {
+     "id": "layout",
+     "file": "book-hebrews/older/02-layout.mp3",
+     "hash": "6428293026916ad95441",
+     "seconds": 26.34,
+     "bytes": 158612
+    },
+    {
+     "id": "son",
+     "file": "book-hebrews/older/03-son.mp3",
+     "hash": "2a710dbdf8345d1d5378",
+     "seconds": 25.77,
+     "bytes": 155156
+    },
+    {
+     "id": "better",
+     "file": "book-hebrews/older/04-better.mp3",
+     "hash": "a74d63d2830fcd59b3bb",
+     "seconds": 27.23,
+     "bytes": 163940
+    },
+    {
+     "id": "priest",
+     "file": "book-hebrews/older/05-priest.mp3",
+     "hash": "528e8dda4f14d13bd66f",
+     "seconds": 26.07,
+     "bytes": 157028
+    },
+    {
+     "id": "hold",
+     "file": "book-hebrews/older/06-hold.mp3",
+     "hash": "63206369e0cfb8f65a49",
+     "seconds": 28.25,
+     "bytes": 170132
+    },
+    {
+     "id": "start",
+     "file": "book-hebrews/older/07-start.mp3",
+     "hash": "11cf0f37a3f12652a515",
+     "seconds": 29.15,
+     "bytes": 175460
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

@@ -997,6 +997,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M30,72a5,3 0 1,0 10,0a5,3 0 1,0 -10,0M38,72a5,3 0 1,0 10,0a5,3 0 1,0 -10,0M46,72a5,3 0 1,0 10,0a5,3 0 1,0 -10,0M54,72a5,3 0 1,0 10,0a5,3 0 1,0 -10,0" />
     </>
   ),
+  /* Hebrews: an anchor holding in the water, and a gold star over it. */
+  "book-hebrews": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M74,12l2,6l6,2l-6,2l-2,6l-2,-6l-6,-2l6,-2Z" />
+      <path className="pl-l" d="M74,12l2,6l6,2l-6,2l-2,6l-2,-6l-6,-2l6,-2Z" />
+      <path className="pl-f" d="M10,34q6,-5 12,0t12,0t12,0t12,0t12,0t12,0" />
+      <path className="pl-l" d="M44,30a6,6 0 1,0 12,0a6,6 0 1,0 -12,0M50,36V76M38,46H62M28,62c4,14 18,18 22,14c4,4 18,0 22,-14M28,62l-4,6M72,62l4,6" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

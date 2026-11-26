@@ -73,6 +73,7 @@ export const FILM_SCENES: Record<
   "book-1-corinthians": () => import("./book-1-corinthians"),
   "book-ephesians": () => import("./book-ephesians"),
   "book-philippians": () => import("./book-philippians"),
+  "book-hebrews": () => import("./book-hebrews"),
 };
 
 export const hasFilmScene = (slug: string) => slug in FILM_SCENES;

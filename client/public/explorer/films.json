@@ -63,6 +63,7 @@
     { "slug": "book-1-corinthians", "title": "1 Corinthians: a gifted church, coming apart", "group": "books", "status": "finished" },
     { "slug": "book-ephesians", "title": "Ephesians: one new people in Christ", "group": "books", "status": "finished" },
     { "slug": "book-philippians", "title": "Philippians: joy in chains", "group": "books", "status": "finished" },
+    { "slug": "book-hebrews", "title": "Hebrews: hold on to Jesus", "group": "books", "status": "finished" },
 
     { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
     { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },

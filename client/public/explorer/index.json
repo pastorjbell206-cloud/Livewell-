@@ -1639,6 +1639,23 @@
       "book": "philippians"
     },
     {
+      "slug": "book-hebrews",
+      "title": "Hebrews: hold on to Jesus",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A long letter to believers who were tired of believing: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Hebrews as a whole book: a sermon for tired believers, the Son through whom God has spoken, the old covenant honored as God's gift, the great high priest, warnings and hope, and where to begin."
+      },
+      "mark": "book-hebrews",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "hebrews"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
