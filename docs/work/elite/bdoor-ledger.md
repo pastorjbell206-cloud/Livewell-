@@ -25027,3 +25027,19 @@ Cut in chapter 12: nothing.
 | Deuteronomy 7:6, Isaiah 29:9, 2 Kings 24:12, Ezekiel 36:26 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 13: nothing. The note on verse 23 adds that the proverb makes no judgment on any people.
+
+## The plain notes on Jeremiah 14 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 14:1-22 | all | BSB | BSB text |
+| Rain-fed farming; springs and cisterns; no outside date | 1-12 | jeremiah/14.json `historical` | Repository |
+| Covered heads, 2 Samuel 15:30; fasting and offerings, Joel | 1-12 | jeremiah/14.json `cultural` | Repository |
+| Why the prayer is refused; 29:12-14 | 1-12 `hard` | jeremiah/14.json `hard` | Repository |
+| The DISASTER care line, byte for byte | 1-12 `hard` | carelines.json | care.mjs |
+| The peace prophets and the Zion tradition; Hananiah | 13-22 | jeremiah/14.json `historical` | Repository |
+| Joel 1:20, 1 Kings 18:1, James 5:17, Jeremiah 29:13 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 14: nothing.
