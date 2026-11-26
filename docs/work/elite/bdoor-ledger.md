@@ -24951,3 +24951,19 @@ Cut in chapter 7: the deep note's line on the temple's fall in AD 70 and Jesus a
 | Deuteronomy 28:26, Isaiah 1:3, Genesis 37:25, Lamentations 2:11 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 8: Luke 19:41-44 and Mark 2:17 beside the prophet's grief and the physician, which the deep note gives as Christian readings the New Testament does not draw from this chapter.
+
+## The plain notes on Jeremiah 9 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1-26 | all | BSB | BSB text |
+| Jehoiakim's reign; divided leaders; informers; Jeremiah's family plotting | 1-16 | jeremiah/9.json `historical` | Repository |
+| The traveler's lodge; wailing women; death at the windows | all | jeremiah/9.json `cultural` | Repository |
+| Neighbors and circumcision; the desert peoples | 17-26 | jeremiah/9.json `historical` | Repository |
+| Full end or not: 4:27, 5:10, 18; nation and remnant; critical view | 1-16 `hard` | jeremiah/9.json `hard` | Repository |
+| No warrant to read a child's death as deserved; the GRIEF care line, byte for byte | 17-26 `hard` | the brief; carelines.json | care.mjs |
+| Psalm 28:3, Lamentations 5:18, 1 Corinthians 1:31 (clauses); 2 Corinthians 10:17 and Deuteronomy 10:16 (named) | `later` | BSB; jeremiah/9.json `christ` | BSB text |
+
+Cut in chapter 9: the deep note's reading of verse 24 through Christ crucified, beyond Paul's own quotation.
