@@ -25242,3 +25242,19 @@ Cut in chapter 19: nothing.
 | Later: Exodus 6:6; Hosea 2:14 | 27-49 `later` | BSB | BSB text |
 
 Cut in chapter 20: Romans 1:24 beside the giving over, which the New Testament does not draw from Ezekiel 20.
+
+## The plain notes on Ezekiel 21 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The sword of the LORD drawn: the text paraphrased; quoted clauses at verses 3, 4, 6, 7, 9, 9-17 | 1-17 | BSB | BSB text |
+| Background in `hearers` | 1-17 | ezekiel/21.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 27:3; Jeremiah 12:12 | 1-17 `later` | BSB | BSB text |
+| The hard note: How can God say his sword will cut off both the righteous and the wicked, when chapter 18 said each person answers for his own sin? The readings in their holders' terms | 1-17 `hard` | ezekiel/21.json `hard` | Repository; the site takes no side |
+| The king at the fork in the road: the text paraphrased; quoted clauses at verses 19-20, 21, 22, 26, 27, 28-32 | 18-32 | BSB | BSB text |
+| Background in `hearers` | 18-32 | ezekiel/21.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 49:10; 1 Samuel 2:7 | 18-32 `later` | BSB | BSB text |
+
+Cut in chapter 21: Luke 1:32-33 and 1:52, which the New Testament does not draw from Ezekiel 21; verse 27 read of the Messiah only as Jewish and Christian interpreters' reading.
