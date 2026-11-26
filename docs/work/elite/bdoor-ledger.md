@@ -25789,3 +25789,19 @@ Cut in chapter 36: John 3:5 beside the water and the Spirit, which the New Testa
 | Later: Leviticus 26:12; Hosea 1:11 | 15-28 `later` | BSB | BSB text |
 
 Cut in chapter 37: John 5:28-29, 1 Corinthians 15 and 2 Corinthians 6:16 beside the dry bones and the dwelling place; the resurrection reading kept as a reading, as the coordinator asked, since the New Testament does not quote the chapter directly.
+
+## The plain notes on Ezekiel 38 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/38.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Gog of the land of Magog: the text paraphrased; quoted clauses at verses 2, 4-6, 8, 11, 12, 13, 16 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/38.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 10:2; Jeremiah 1:14 | 1-16 `later` | BSB | BSB text |
+| The hard note: Who is Gog, and when does this battle take place? The readings in their holders' terms | 1-16 `hard` | ezekiel/38.json `hard` | Repository; the site takes no side |
+| God's fury and his holiness: the text paraphrased; quoted clauses at verses 17, 18-20, 21, 22, 23 | 17-23 | BSB | BSB text |
+| Background in `hearers` | 17-23 | ezekiel/38.json `historical`, `cultural`, `literary` | Repository |
+| Later: Joshua 10:11; Judges 7:22 | 17-23 `later` | BSB | BSB text |
+
+Cut in chapter 38: any match between these names and modern countries; Revelation 20:8 kept as the New Testament's own use of the names. No date, no modern nation, person or event.
