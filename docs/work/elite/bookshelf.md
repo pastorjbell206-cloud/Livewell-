@@ -919,6 +919,13 @@ differ in is said under each book. Each was then edited (records in
   before a Scripture reference), every edit punctuation, fact diff passed on
   all nine files; rebuilt, still 44 pages, `--verify` identical (6,703
   words; 39,393 characters).
+- **Deacon Qualifications and Selection** (`deacon-qualifications`), the
+  third booklet. The PDF and EPUB carry the same text (the comparison found
+  only running heads, page numbers, the repeated "REFLECTION QUESTIONS" label
+  and the appendix's assessment form read in a different order); the same
+  stray chapter labels, carried as they are. The PDF's fuller copyright
+  notice is used. 41 pages became 43 (`client/src/data/booklets.ts` says
+  43). `--verify`: identical (7,168 words; 38,378 characters).
 
 ### The apparatus
 
