@@ -25000,3 +25000,18 @@ Cut in chapter 10: nothing drawn to the New Testament.
 | Later: Jeremiah 31:33; Psalm 90:1 | 14-25 `later` | BSB | BSB text |
 
 Cut in chapter 11: the deep note's lines to Luke 24:50-51 and Acts 1:12 beside the Mount of Olives, which the New Testament does not draw from Ezekiel.
+
+## The plain notes on Ezekiel 12 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Bags packed for exile: the text paraphrased; quoted clauses at verses 2, 3-6, 7, 10, 13, 14-16 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/12.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 25:4; Jeremiah 52:11 | 1-16 `later` | BSB | BSB text |
+| No more delay: the text paraphrased; quoted clauses at verses 17-20, 22, 23, 27, 28 | 17-28 | BSB | BSB text |
+| Background in `hearers` | 17-28 | ezekiel/12.json `historical`, `cultural`, `literary` | Repository |
+| Later: Habakkuk 2:3; Isaiah 5:19 | 17-28 `later` | BSB | BSB text |
+
+Cut in chapter 12: 2 Peter 3:4 beside the scoffers' proverb, replaced with Isaiah 5:19.
