@@ -1537,6 +1537,74 @@
       "book": "revelation"
     },
     {
+      "slug": "book-ruth",
+      "title": "Ruth: loyal love in a hard time",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short story of two women, a field and a kind man: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Ruth as a whole book: four scenes, loyal love, a God who works through ordinary days, the kinsman-redeemer, an outsider brought in, and an ending that reaches to David."
+      },
+      "mark": "book-ruth",
+      "frames": 7,
+      "stops": [
+        "land"
+      ],
+      "cards": [],
+      "book": "ruth"
+    },
+    {
+      "slug": "book-jonah",
+      "title": "Jonah: the prophet who ran from mercy",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short book about a prophet who ran away, a storm, a great fish and a great city: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Jonah as a whole book: a prophet who runs, a God whom wind and sea obey, a city that turns, an angry prophet, the question the book ends on, and the ways Christians read it."
+      },
+      "mark": "book-jonah",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "jonah"
+    },
+    {
+      "slug": "book-daniel",
+      "title": "Daniel: the Most High rules",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A book of brave stories and strange visions: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Daniel as a whole book: court stories and visions, two languages, the Most High who rules the kingdoms, faith that will not bow, the Son of Man, and the ways readers date it and read its visions."
+      },
+      "mark": "book-daniel",
+      "frames": 7,
+      "stops": [
+        "exile"
+      ],
+      "cards": [],
+      "book": "daniel"
+    },
+    {
+      "slug": "book-1-corinthians",
+      "title": "1 Corinthians: a gifted church, coming apart",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A letter to a church that was gifted, proud and quarrelling: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "1 Corinthians as a whole letter: a real church with real trouble, two halves, the wisdom of the cross, one body, the way of love, the resurrection, and the hard passages where faithful churches differ."
+      },
+      "mark": "book-1-corinthians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "1-corinthians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
