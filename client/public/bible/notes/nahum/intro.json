@@ -202,8 +202,8 @@
     ],
     "map": [
       {
-        "frame": "canaan",
-        "title": "Judah, who heard Nahum's good news",
+        "frame": "fertile-crescent",
+        "title": "Judah, and the city Nahum spoke against",
         "places": [
           {
             "id": "jerusalem",
@@ -215,15 +215,32 @@
             ],
             "line": "Judah's capital, drawn to mark Judah, whom Nahum tells to keep its feasts because the oppressor is cut off (1:15). Nahum names Judah, not the city.",
             "label": {
-              "dx": -10,
-              "dy": -4,
+              "dx": -8,
+              "dy": 4,
               "anchor": "end"
+            }
+          },
+          {
+            "id": "nineveh",
+            "name": "Nineveh",
+            "lat": 36.36,
+            "lon": 43.15,
+            "refs": [
+              "1:1",
+              "2:8",
+              "3:7"
+            ],
+            "line": "Assyria's capital on the Tigris, opposite modern Mosul, which fell in 612 BC (1:1; 2:8; 3:7).",
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
             }
           }
         ]
       }
     ],
-    "mapNote": "Only Jerusalem is drawn, at the point this site's maps use, to mark Judah. Nineveh, Thebes, Bashan, Carmel and Lebanon are left off, because they are not placed in this site's records, and so are Egypt, Cush, Put and Libya. No borders are drawn. The map makes no claim about any border today.",
+    "mapNote": "Two places are drawn. Jerusalem marks Judah. Nineveh is drawn at its ruin mounds, Kuyunjik and Nebi Yunus, opposite Mosul. Thebes, Bashan, Carmel, Lebanon, Egypt, Cush, Put and Libya are not placed in this site's records and are left off. No borders are drawn. The map makes no claim about any border today.",
     "deeper": [
       {
         "href": "/study/bible/guides/reading-prophets",

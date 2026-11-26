@@ -1,0 +1,107 @@
+{
+  "_about": "How culture reads the Bible (/theology/reading-the-bible). James, 2026-11-25: \"telling people how culture interprets the Bible for them and give them cultural interpreters and how different places in different regions and different times in history and how we have culturally interpreted the Bible.\" The eras are history essays (client/public/history/essays/<slug>.json, gated by validate-theology); the interpreters are scholars and their real books, each paraphrased, never quoted; the guides are existing pages on the site. client/src/pages/TheologyReadingTheBible.test.tsx holds every slug and href to a real file.",
+  "intro": "Every reader of the Bible reads from somewhere. The words on the page do not change, but the reader who meets them has been formed by a language, a century, a city, a class, a church and a politics, and each of these decides in advance what will seem obvious, what will seem strange and what will not be noticed at all. The question is never whether culture shapes our reading. It is whether we can see it doing so.\n\nThe church has read the same Scriptures for two thousand years in Greek lecture halls and Egyptian deserts, in Benedictine choirs and Wittenberg print shops, in Virginia plantations and Ghanaian village churches, and it has heard different things in each. Some of those differences were gifts, as a culture saw what another had missed. Some were blindness, as a culture made the text say what it already believed and then called the result plain. The history of interpretation is the record of both, and it is the best mirror a modern reader has, because it is far easier to see another age's lens than to see one's own.\n\nWhat follows walks through six moments in that history, in order: the schools of Alexandria and Antioch, the four senses of the medieval Bible, the Reformers' plain sense, the critical Bible of the Enlightenment, the American war over slavery, and the reading of the churches of the global South. Beside them stand the scholars who have done most to help Christians see the lens they read through, and the guides on this site that apply what they saw to particular texts. The aim is not suspicion of every reading, which ends in a Bible that can say nothing. It is humility before a book that is older than all our cultures and has outlived each one that tried to own it.",
+  "eras": [
+    "alexandria-and-antioch",
+    "the-four-senses",
+    "the-plain-sense",
+    "the-critical-bible",
+    "one-bible-two-americas",
+    "reading-from-the-south"
+  ],
+  "interpreters": [
+    {
+      "name": "Augustine of Hippo",
+      "dates": "354 to 430",
+      "work": "De doctrina Christiana (On Christian Teaching)",
+      "year": "finished about 426",
+      "saw": "That a reader must know the world of the text, its languages, history and natural things, to understand its signs, and that no reading is sound which does not build up the love of God and neighbour."
+    },
+    {
+      "name": "Lesslie Newbigin",
+      "dates": "1909 to 1998",
+      "work": "Foolishness to the Greeks: The Gospel and Western Culture",
+      "year": "1986",
+      "saw": "After nearly four decades as a missionary in India, that the modern West is itself a mission field whose assumptions go unexamined because its own Christians share them."
+    },
+    {
+      "name": "Andrew F. Walls",
+      "dates": "1928 to 2021",
+      "work": "The Missionary Movement in Christian History",
+      "year": "1996",
+      "saw": "That the gospel always works two ways in a culture: it makes itself at home there (the indigenizing principle) and it keeps the believer from ever being wholly at home there (the pilgrim principle)."
+    },
+    {
+      "name": "Lamin Sanneh",
+      "dates": "1942 to 2019",
+      "work": "Translating the Message: The Missionary Impact on Culture",
+      "year": "1989",
+      "saw": "That Christianity, unlike faiths bound to one sacred language, is translatable by nature, and that putting the Bible into the vernacular dignified local cultures rather than erasing them."
+    },
+    {
+      "name": "Kwame Bediako",
+      "dates": "1945 to 2008",
+      "work": "Christianity in Africa: The Renewal of a Non-Western Religion",
+      "year": "1995",
+      "saw": "That African Christians read the Bible in continuity with their own religious heritage, and that Christianity is not a foreign religion in Africa but one renewed there."
+    },
+    {
+      "name": "Kosuke Koyama",
+      "dates": "1929 to 2009",
+      "work": "Water Buffalo Theology",
+      "year": "1974",
+      "saw": "From years among farmers in northern Thailand, that the gospel has to be spoken in the terms of the people listening, and that theology which begins in a library may never reach the rice field."
+    },
+    {
+      "name": "Kenneth E. Bailey",
+      "dates": "1930 to 2016",
+      "work": "Jesus Through Middle Eastern Eyes",
+      "year": "2008",
+      "saw": "From some forty years of teaching in Egypt, Lebanon, Jerusalem and Cyprus, that the village culture of the Middle East still opens the parables in ways Western readers miss."
+    },
+    {
+      "name": "Justo L. González",
+      "dates": "born 1937",
+      "work": "Santa Biblia: The Bible Through Hispanic Eyes",
+      "year": "1996",
+      "saw": "That readers on the margins of a society notice what the text says about margins, poverty, exile and belonging, and that their reading is a gift to the whole church rather than a niche."
+    },
+    {
+      "name": "Hans W. Frei",
+      "dates": "1922 to 1988",
+      "work": "The Eclipse of Biblical Narrative",
+      "year": "1974",
+      "saw": "That after the eighteenth century Western readers stopped living inside the Bible's story and began looking behind it, for history on one side and for timeless ideas on the other."
+    },
+    {
+      "name": "Mark A. Noll",
+      "dates": "born 1946",
+      "work": "The Civil War as a Theological Crisis",
+      "year": "2006",
+      "saw": "That American Christians on both sides of the slavery question trusted the same plain-sense, common-sense way of reading, and that it could not settle what the Bible meant."
+    },
+    {
+      "name": "Philip Jenkins",
+      "dates": "born 1952",
+      "work": "The New Faces of Christianity: Believing the Bible in the Global South",
+      "year": "2006",
+      "saw": "That many Christians in Africa, Asia and Latin America find the Bible's world of famine, exile, spirits and rulers closer to their own than Western readers do, and read it more literally as a result."
+    },
+    {
+      "name": "E. Randolph Richards and Brandon J. O'Brien",
+      "dates": "",
+      "work": "Misreading Scripture with Western Eyes",
+      "year": "2012",
+      "saw": "That the assumptions which most shape Western reading are the ones that go without being said: the individual, time, honour and shame, and what counts as a rule."
+    }
+  ],
+  "guides": [
+    { "href": "/resources/context/misreading-with-western-eyes", "title": "How Does Being Western Change the Way We Read the Bible?" },
+    { "href": "/resources/context/collectivist-world-individualist-readers", "title": "Is 'You' in the New Testament Singular or Plural?" },
+    { "href": "/resources/context/honor-shame-vs-guilt", "title": "What Is Honor and Shame Culture in the Bible?" },
+    { "href": "/resources/context/world/honor-and-shame", "title": "Honor and shame: the world of the Bible" },
+    { "href": "/resources/context/the-bible-is-not-an-american-book", "title": "Is the Bible an American Book? What Its History Shows" },
+    { "href": "/resources/context/left-lens-right-lens", "title": "Does Your Politics Decide How You Read the Bible?" },
+    { "href": "/resources/context/the-slavery-texts", "title": "What Does the Bible Actually Say About Slavery?" }
+  ]
+}

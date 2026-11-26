@@ -393,6 +393,26 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole letter of James in seven moving pictures: sharp, practical sayings, the threads it keeps returning to, trials, faith that is alive and how it fits with Paul, the poor and the rich, the power of words, and where to start reading.",
     },
+    "book-joshua": {
+      title: "Joshua: a promise kept: Bible Explorer",
+      description:
+        "The whole book of Joshua in seven moving pictures: the promised land, its four movements, the river crossed, the hardest chapters faced plainly, who belongs, rest and a choice, and where to start reading.",
+    },
+    "book-judges": {
+      title: "Judges: a people coming apart: Bible Explorer",
+      description:
+        "The whole book of Judges in seven moving pictures: the dark years after Joshua, how it is laid out, the wheel that runs downhill, unlikely deliverers, gifts that are not goodness, no king in Israel, and where to start reading.",
+    },
+    "book-1-samuel": {
+      title: "1 Samuel: the heart God sees: Bible Explorer",
+      description:
+        "The whole of 1 Samuel in seven moving pictures: three lives, seven stages, the boy who listens, a people asking for a king, the heart God sees, loyal love, and where to start reading.",
+    },
+    "book-jeremiah": {
+      title: "Jeremiah: the prophet who wept: Bible Explorer",
+      description:
+        "The whole book of Jeremiah in seven moving pictures: a prophet in the last days of Judah, how the book is laid out, false safety, honest prayer, a letter to the exiles, the new covenant, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

@@ -1093,6 +1093,25 @@ const PAGE_BODIES = {
       ]),
     };
   },
+  // Bible films: every finished film by its group, each linked to its own
+  // page (client/public/explorer/index.json).
+  "/study/films": async () => {
+    const d = readJsonSafe("client/public/explorer/index.json");
+    const films = (d?.films ?? []).filter((f) => f.status === "finished");
+    if (!films.length) return null;
+    const group = (g) => {
+      const mine = films.filter((f) => f.group === g.id);
+      return mine.length ? `<h2>${escapeHtml(g.name)}</h2>\n<ul>\n${mine.map((f) => `<li><a href="/study/explorer/watch/${f.slug}">${escapeHtml(f.title)}</a>${f.line?.older ? `: ${escapeHtml(f.line.older)}` : ""}</li>`).join("\n")}\n</ul>` : "";
+    };
+    return {
+      html: article([
+        `<p class="pre-eyebrow"><a href="/study">Bible</a></p>`,
+        `<h1>Bible films</h1>`,
+        `<p class="pre-subtitle">Short narrated films on the Bible's story, its books, its big ideas and its hard questions.</p>`,
+        ...(d.filmGroups ?? []).map(group).filter(Boolean),
+      ]),
+    };
+  },
   // Where to start in every book: each book's key chapters, each with the
   // book's own reason and the link that opens the chapter
   // (client/public/bible/explore/key-chapters.json).

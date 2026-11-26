@@ -89,6 +89,22 @@
    "title": "James: faith that works",
    "line": "A short letter of sharp, practical sayings from the brother of Jesus: what it is, how it is put together, what to watch for, and where to start reading."
   },
+  "book-joshua": {
+   "title": "Joshua: a promise kept",
+   "line": "The book of a river crossed and a land given: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-judges": {
+   "title": "Judges: a people coming apart",
+   "line": "The book of the years when Israel kept forgetting God: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-1-samuel": {
+   "title": "1 Samuel: the heart God sees",
+   "line": "The book of a boy who heard God, a tall king and a shepherd: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-jeremiah": {
+   "title": "Jeremiah: the prophet who wept",
+   "line": "The book of a prophet who warned his city and kept speaking when no one listened: what it is, how it is put together, what to watch for, and where to start reading."
+  },
   "holy-spirit": {
    "title": "The Holy Spirit through the Bible",
    "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
@@ -330,11 +346,20 @@
    "the-bible",
    "is-the-bible-true"
   ],
+  "/questions/old-testament/jericho-and-the-conquest": [
+   "book-joshua"
+  ],
+  "/questions/old-testament/the-command-to-destroy-the-canaanites": [
+   "book-joshua"
+  ],
   "/questions/religions/those-who-never-heard": [
    "never-heard"
   ],
   "/study/bible/1-corinthians": [
    "book-1-corinthians"
+  ],
+  "/study/bible/1-samuel": [
+   "book-1-samuel"
   ],
   "/study/bible/acts": [
    "book-acts"
@@ -408,11 +433,20 @@
   "/study/bible/james": [
    "book-james"
   ],
+  "/study/bible/jeremiah": [
+   "book-jeremiah"
+  ],
   "/study/bible/john": [
    "book-john"
   ],
   "/study/bible/jonah": [
    "book-jonah"
+  ],
+  "/study/bible/joshua": [
+   "book-joshua"
+  ],
+  "/study/bible/judges": [
+   "book-judges"
   ],
   "/study/bible/luke": [
    "book-luke"

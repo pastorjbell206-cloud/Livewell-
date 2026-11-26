@@ -28,9 +28,10 @@ describe("the course order", () => {
     expect(course[13].slug).toBe("the-global-church");
   });
 
-  it("files each of the eight longer essays under a real era", () => {
+  it("files each of the fourteen longer essays under a real era", () => {
     const deeper = deeperEssays(essays);
-    expect(deeper).toHaveLength(8);
+    // Eight era surveys, and six on how culture reads the Bible (James, 2026-11-25).
+    expect(deeper).toHaveLength(14);
     for (const e of deeper) expect(eras.map((x) => x.name)).toContain(e.under);
     expect(deeper.find((e) => e.slug === "awakenings-and-enlightenment")?.under).toBe("The Modern and Global Church");
   });
