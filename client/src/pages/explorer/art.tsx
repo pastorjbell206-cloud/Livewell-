@@ -1116,6 +1116,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M70,64c6,-8 8,-14 4,-22c-6,6 -10,12 -4,22ZM28,72c-10,-2 -10,10 2,6" />
     </>
   ),
+  /* Leviticus: a tent in the middle of a camp, a gold light over it. */
+  "book-leviticus": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M38,30c0,-8 10,-10 14,-6c4,-6 14,-4 14,2c8,0 10,8 4,10c-10,2 -28,2 -32,-6Z" />
+      <path className="pl-l" d="M38,30c0,-8 10,-10 14,-6c4,-6 14,-4 14,2c8,0 10,8 4,10c-10,2 -28,2 -32,-6Z" />
+      <Shape d="M28,84L36,58L50,48L64,58L72,84Z" tone="b" off={0.8} />
+      <path className="pl-paper" d="M45,84l3,-18h4l3,18Z" />
+      <path className="pl-l" d="M45,84l3,-18h4l3,18ZM10,84l6,-14l6,14M78,84l6,-14l6,14" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

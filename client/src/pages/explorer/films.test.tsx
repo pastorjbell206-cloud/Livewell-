@@ -1739,6 +1739,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-colossians",
     "book-1-peter",
     "book-1-john",
+    "book-leviticus",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2558,5 +2559,21 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toMatch(/takes no side among the readings/);
     expect(text(f)).not.toMatch(/\b(pope|emperor|sultan|president|dictator|Rome is)\b/i);
     expect(f.frames.find(x => x.id === "touched")!.still).toContain("No one is drawn in the light.");
+  });
+
+  it("Leviticus draws no animal or blood, shames no one's body, and leaves the contested laws to the book page", () => {
+    const f = filmFile("book-leviticus");
+    expect(f.care).toBe(filmFile("grace").care);
+    const stills = f.frames.map(fr => fr.still).join(" ");
+    expect(stills).not.toMatch(/blood|goat|bull|lamb|ram\b|animal|altar|knife|fire|smoke|leper|sore|skin/i);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/blood|kill|die|dead|death|burn|flame|sex|discharge|leprosy|skin disease/i);
+    expect(f.frames.find(x => x.id === "clean")!.younger).toContain("Unclean does not mean bad.");
+    expect(f.frames.find(x => x.id === "clean")!.older).toContain("Unclean is not sinful");
+    expect(text(f)).not.toMatch(/abomination|detestable|18:22|20:13|homosexual|sodomy|unclean (people|person is a sinner)/i);
+    expect(f.differ?.text).toContain("nothing here gives anyone a reason for contempt toward any person");
+    expect(f.differ?.text).toContain("Your worth to God does not rise or fall with your body.");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(f.frames.find(x => x.id === "atonement")!.still).toContain("No one is drawn behind it.");
   });
 });

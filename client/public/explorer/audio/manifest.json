@@ -3675,6 +3675,116 @@
     }
    ]
   },
+  "book-leviticus": {
+   "title": {
+    "file": "book-leviticus/title.mp3",
+    "hash": "ab6519332c0e4209a2ed",
+    "seconds": 3.43,
+    "bytes": 21236
+   },
+   "younger": [
+    {
+     "id": "near",
+     "file": "book-leviticus/younger/01-near.mp3",
+     "hash": "e31a4eca8d0e2ab15462",
+     "seconds": 25.59,
+     "bytes": 154148
+    },
+    {
+     "id": "layout",
+     "file": "book-leviticus/younger/02-layout.mp3",
+     "hash": "0454c9c8920ac82e9ab7",
+     "seconds": 26.05,
+     "bytes": 156884
+    },
+    {
+     "id": "gifts",
+     "file": "book-leviticus/younger/03-gifts.mp3",
+     "hash": "a11c6081b5e7fb2d42b7",
+     "seconds": 24.66,
+     "bytes": 148532
+    },
+    {
+     "id": "clean",
+     "file": "book-leviticus/younger/04-clean.mp3",
+     "hash": "9b63a8bb26179ee23774",
+     "seconds": 26.75,
+     "bytes": 161060
+    },
+    {
+     "id": "atonement",
+     "file": "book-leviticus/younger/05-atonement.mp3",
+     "hash": "589fab04fea71736af1a",
+     "seconds": 24.63,
+     "bytes": 148388
+    },
+    {
+     "id": "neighbor",
+     "file": "book-leviticus/younger/06-neighbor.mp3",
+     "hash": "8f075e56b7f62e593ab2",
+     "seconds": 26.81,
+     "bytes": 161492
+    },
+    {
+     "id": "start",
+     "file": "book-leviticus/younger/07-start.mp3",
+     "hash": "3478202bf4a197daf6df",
+     "seconds": 24.15,
+     "bytes": 145508
+    }
+   ],
+   "older": [
+    {
+     "id": "near",
+     "file": "book-leviticus/older/01-near.mp3",
+     "hash": "edeba973c0ea817d4f72",
+     "seconds": 26.88,
+     "bytes": 161924
+    },
+    {
+     "id": "layout",
+     "file": "book-leviticus/older/02-layout.mp3",
+     "hash": "2ba5be203e441e412b52",
+     "seconds": 25.6,
+     "bytes": 154148
+    },
+    {
+     "id": "gifts",
+     "file": "book-leviticus/older/03-gifts.mp3",
+     "hash": "1667a8ff939915ed3033",
+     "seconds": 25.95,
+     "bytes": 156308
+    },
+    {
+     "id": "clean",
+     "file": "book-leviticus/older/04-clean.mp3",
+     "hash": "f2d8750de2f437a02ee4",
+     "seconds": 25.4,
+     "bytes": 152996
+    },
+    {
+     "id": "atonement",
+     "file": "book-leviticus/older/05-atonement.mp3",
+     "hash": "8016363fc869b53cfc89",
+     "seconds": 28.22,
+     "bytes": 169844
+    },
+    {
+     "id": "neighbor",
+     "file": "book-leviticus/older/06-neighbor.mp3",
+     "hash": "fb05fe34c74712c6bf95",
+     "seconds": 27.39,
+     "bytes": 164948
+    },
+    {
+     "id": "start",
+     "file": "book-leviticus/older/07-start.mp3",
+     "hash": "bd49466e27413d5baf2e",
+     "seconds": 28.12,
+     "bytes": 169268
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

@@ -1485,3 +1485,27 @@ Written, as the book page says, to steady people and not to frighten them. The l
 | pictures | Christ and God not drawn: the witnesses face a light with no one in it; those who left are drawn only walking away; no antichrist drawn; the sunrise raised above the hills after the sheet was read | The drawing (`scenes/book-1-john.tsx`); sheets of the finished frames read |
 | left out | The sin that leads to death and the antichrists in the captions; Cain; Cerinthus; the water and the blood | Deliberate; the book page is linked |
 | length | Younger 2:48.0, older 3:04.2 | `audio/manifest.json` |
+
+## Run of 2026-11-26, continued: eight more Books of the Bible, the fifth set
+
+Leviticus, Numbers, Deuteronomy, 2 Samuel, Nehemiah, Amos, 2 Corinthians and 1 Thessalonians, by the same method and shared parts; every one of their book pages has `teaching` parts, so none was swapped. Numbered books are spelled out in the captions ("Second Samuel", "Second Corinthians", "First Thessalonians").
+
+### Leviticus: living near a holy God (`book-leviticus`)
+
+No animal, altar fire or blood is drawn, and the younger level says neither blood nor death. The laws on sexuality and skin disease are not named in the captions; their contested modern uses are left to the book page, whose words that "nothing here gives anyone a reason for contempt toward any person" and its word "for anyone who has been made to feel unclean" are carried whole in "Where churches differ".
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Leviticus 26:12; 19:2; 4:31; 10:10; 16:30; 19:18; 19:34 (some trimmed to a clause) | BSB, by the validator; all Leviticus |
+| 1 The question it answers | Begins where Exodus ends, the tent built and filled with glory so that Moses cannot go in; how can a holy God live among a people who are not holy, and the people live; the book God's own answer | The Leviticus book page, overview and `teaching` "Leviticus in a minute" and "The question the book answers", nearly word for word |
+| 2 How it is laid out | Six parts: offerings, priests, clean and unclean, the Day of Atonement at the center, holiness in all of life, vows; the first half how to come near, the second how to live near | The book page's `structure` and `teaching` "How Leviticus is built". Six panels of 7, 3, 5, 1, 10 and 1 chapters; the gold rule under chapter 16 |
+| 3 Gifts brought near | Qorban, something brought near; five kinds, burnt to peace offering; God gives the means of atonement; room for the poor (two birds, or flour) | The book page's `teaching` "The offerings" and "The question the book answers" ("I have given it to you to make atonement", 17:11); BSB Leviticus 4:31; 5:7, 11 |
+| 4 Holy and clean | Clean and unclean are about being fit to come near; unclean is not sinful (a new mother, a mourner); it ended with time and washing; no one should use this book to call another person dirty | The book page's `teaching` "Holy, clean and unclean" ("So no one should use this book to call another person dirty"), nearly word for word; BSB Leviticus 10:10 |
+| 5 The Day of Atonement | Once a year the high priest in plain linen behind the curtain; a goat carries the confessed sins into the wilderness; kept still as Yom Kippur; Christians read it in the light of Jesus, as Hebrews does | The book page's `teaching` "Atonement, and the Day of Atonement" ("Christians should speak of this living observance with respect"); BSB Leviticus 16:21-22, 30 |
+| 6 Love your neighbor | Holiness from tent to field, court and shop: field edges for the poor, wages the same day, fair judgment, love of the foreigner, for Israel had been foreigners in Egypt; love your neighbor as yourself, which Jesus set among the two greatest | The book page's `teaching` "Holiness in all of life" and "Leviticus in a minute"; BSB Leviticus 19:9-18, 34 |
+| 7 Where to start | Chapters 16 and 19; key chapters 1, 10, 11, 17, 25 and 26; the working rules of a sacred house; what it would mean for a whole life to belong to God | The book page's `keyChapters`, `reading` and `teaching` "How Jews and Christians have read it", nearly word for word; BSB Leviticus 19:34 |
+| differ | How the laws apply now (three kinds; law and gospel; a covenant ended in Christ); food and feasts kept by choice; chapters 18 and 20 read in more than one way, no reason for contempt; the misuse of chapter 25 to defend slavery wrong; the curses no verdict on anyone's illness; the page's word for anyone made to feel unclean, whole; no side | The book page's `reading` and `teaching` "How Christians relate to these laws", "Holiness in all of life", "Feasts, the Jubilee, and the covenant" and "Holy, clean and unclean"; links to the book page and Find Help |
+| care | "Thinking about sin can bring up guilt or fear. ..." | The care line of "Grace", whole. The book page's own word could not be the care line (a care line ends "or look at Find Help", by the validator), so it is in "Where churches differ" |
+| pictures | No animal, blood, altar fire or body drawn; the one gift drawn is flour; God not drawn: the light over the tent and at the curtain has no one in it | The drawing (`scenes/book-leviticus.tsx`); sheets of the finished frames read |
+| left out | Nadab and Abihu; the food laws, skin disease and discharges by name; the penalties of chapter 20; the Jubilee and the feasts in the captions | Deliberate; the book page is linked |
+| length | Younger 3:02.8, older 3:11.8 | `audio/manifest.json` |

@@ -433,6 +433,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole of 1 John in seven moving pictures: churches that had been shaken, how it is laid out, hands that touched, three marks of knowing God, sin and forgiveness, God is love, and where to start reading.",
     },
+    "book-leviticus": {
+      title: "Leviticus: living near a holy God: Bible Explorer",
+      description:
+        "The whole book of Leviticus in seven moving pictures: the question it answers, how it is laid out, gifts brought near, holy and clean, the Day of Atonement, love of neighbor, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

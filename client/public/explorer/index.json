@@ -1809,6 +1809,23 @@
       "book": "1-john"
     },
     {
+      "slug": "book-leviticus",
+      "title": "Leviticus: living near a holy God",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of how God's people could live near him: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Leviticus as a whole book: the question it answers, six parts, gifts brought near, holy and clean, the Day of Atonement, love of neighbor, and where to begin."
+      },
+      "mark": "book-leviticus",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "leviticus"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
