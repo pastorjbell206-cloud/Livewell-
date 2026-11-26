@@ -24902,3 +24902,19 @@ Cut in chapter 4: Galatians 3:8 and 14 beside verse 2, which the New Testament d
 | Genesis 18:32, Psalm 14:3, Deuteronomy 28:49, Zephaniah 1:12, Mark 8:18, Job 38:11 (clauses) | `later` | BSB; jeremiah/5.json `christ` for Mark 8 | BSB text |
 
 Cut in chapter 5: Romans 5:18-19 and 1 Peter 3:18 beside the search for one just person, which the deep note itself calls a theological connection.
+
+## The plain notes on Jeremiah 6 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1-30 (verses 4-5 and 14 paraphrased around inner speech marks) | all | BSB | BSB text |
+| Benjamin, Tekoa; undated, 588 to 586 BC siege | 1-8 | jeremiah/6.json `historical`; Amos 1:1 | Repository, BSB text |
+| Siege ramps; Deuteronomy 20:19-20; noon and night | 1-8 | jeremiah/6.json `cultural` | Repository |
+| Sheba and the incense routes | 9-21 | jeremiah/6.json `historical` | Repository |
+| Tests of false peace: no call to change, greed, fulfillment; 23:17 | 9-21 `hard` | jeremiah/6.json `hard` | Repository |
+| Silver refined with lead; rejected silver | 22-30 | jeremiah/6.json `cultural` | Repository |
+| Deuteronomy 20:19, Ezekiel 13:10, Matthew 11:29, Ezekiel 22:18, Jeremiah 20:3 (clauses); Amos 3:9 (named) | `later` | BSB; jeremiah/6.json `christ` for Matthew 11 | BSB text |
+
+Cut in chapter 6: the deep note's line from Jesus' lament over Jerusalem, which the New Testament does not draw from this chapter; Beth-haccherem's position, not stated in the repository.
