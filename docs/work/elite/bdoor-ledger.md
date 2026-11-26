@@ -25089,3 +25089,17 @@ Cut in chapter 16: nothing. The fishermen of verse 16 are left without Matthew 4
 | Psalm 1:3, Psalm 139:23, Psalm 6:2, 2 Peter 3:4, Nehemiah 13:15, Mark 2:27 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 17: nothing.
+
+## The plain notes on Jeremiah 18 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/18.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 18:1-23 (verse 18's plot partly paraphrased) | all | BSB | BSB text |
+| Potters common; the two-disc wheel; reshaping flawed clay | 1-12 | jeremiah/18.json `cultural`, `historical` | Repository |
+| Undated, Jehoiakim; the priests, wise and prophets as opponents | 18-23 | jeremiah/18.json `historical` | Repository |
+| Imprecation; Psalms 69, 109, 137; three observations; Romans 12:19 | 18-23 `hard` | jeremiah/18.json `hard` | Repository |
+| Jonah 3:10, Romans 9:21, Jeremiah 6:16, Numbers 6:25, Matthew 5:44 (clauses); Psalm 109:5 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 18: nothing.
