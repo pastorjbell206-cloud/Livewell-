@@ -25744,3 +25744,16 @@ Cut in chapter 33: James 1:22 beside hearers who do not obey, which the New Test
 | The hard note: Does the promise of God's servant David mean that David himself will return? The readings in their holders' terms | 17-31 `hard` | ezekiel/34.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 34: John 10 and Luke 15 and 19:10 as fulfillments, which the New Testament does not draw from Ezekiel 34 by quotation; John 10:11 kept only as a Christian reading.
+
+## The plain notes on Ezekiel 35 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/35.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Against Mount Seir: the text paraphrased; quoted clauses at verses 2-4, 5, 6, 10, 12, 15 | 1-15 | BSB | BSB text |
+| Background in `hearers` | 1-15 | ezekiel/35.json `historical`, `cultural`, `literary` | Repository |
+| Later: Obadiah 1:11; Deuteronomy 23:7 | 1-15 `later` | BSB | BSB text |
+| The hard note: Isn't it troubling to celebrate the destruction of a whole people, and are Edom's descendants still under this curse? The readings in their holders' terms | 1-15 `hard` | ezekiel/35.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 35: nothing; no curse on any modern people stated plainly.
