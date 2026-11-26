@@ -25542,3 +25542,18 @@ Cut in chapter 31: Hebrews 8:13's word obsolete is not quoted, so that the note 
 | Leviticus 25:25, Genesis 18:14, Luke 1:37 (clauses); Ruth 4:9 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 32: the seal impression of Berechiah son of Neriah named in the deep note, left out because its finding on the antiquities market is disputed.
+
+## The plain notes on Jeremiah 33 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/33.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 33:1-26 (verses 10-13 and 20-25 partly paraphrased) | all | BSB | BSB text |
+| Siege of 588 to 586 BC; houses torn down for defenses | 1-13 | jeremiah/33.json `historical` | Repository |
+| Thank-offering song; Ezra 3:11; counting sheep under the hand | 1-13 | jeremiah/33.json `cultural`; BSB | Repository, BSB text |
+| 14-26 absent from the Greek; the two views; the two families | 14-26 | jeremiah/33.json `historical`; jeremiah/intro.json `reading` | Repository |
+| How the promises to David and the Levites are kept: Hebrews 7-10, 1 Peter 2, dispensational, Jewish; the line continued | 14-26 `hard` | jeremiah/33.json `hard` | Repository |
+| Ezra 3:11 (named), Psalm 136:1, Psalm 89:35 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 33: nothing.
