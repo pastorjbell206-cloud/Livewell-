@@ -24874,3 +24874,19 @@ Cut in chapter 2: the deep note's lines to John 12:49, Luke 4:18 and 24 and 13:3
 | The hard note: Does verse 20 mean that God puts stumbling blocks before righteous people, and that they can lose all their righteousness? The readings in their holders' terms | 16-27 `hard` | ezekiel/3.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 3: Acts 20:26-27 and Luke 19:10, which the New Testament does not draw from Ezekiel 3; replaced with 2 Kings 9:17.
+
+## The plain notes on Ezekiel 4 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/4.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The siege drawn on a brick: the text paraphrased; quoted clauses at verses 1-2, 3, 4-6, 7-8 | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | ezekiel/4.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 25:1-3; Numbers 14:34 | 1-8 `later` | BSB | BSB text |
+| The hard note: Did Ezekiel really lie on his side for over a year, and why would God command something so strange? The readings in their holders' terms | 1-8 `hard` | ezekiel/4.json `hard` | Repository; the site takes no side |
+| Siege bread and rationed water: the text paraphrased; quoted clauses at verses 9-11, 13, 14, 15, 16-17 | 9-17 | BSB | BSB text |
+| Background in `hearers` | 9-17 | ezekiel/4.json `historical`, `cultural`, `literary` | Repository |
+| Later: Deuteronomy 23:12-13; Lamentations 4:9-10 | 9-17 `later` | BSB | BSB text |
+
+Cut in chapter 4: nothing drawn to the New Testament; the illness explanations of the sign-acts given only as not widely accepted.
