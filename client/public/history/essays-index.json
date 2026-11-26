@@ -127,6 +127,14 @@
       "sources": 10
     },
     {
+      "slug": "alexandria-and-antioch",
+      "title": "Allegory and History: How Alexandria and Antioch Read the Bible",
+      "blurb": "Philo's Alexandrian inheritance, Origen's three senses, the Greek habit of reading Homer for hidden meaning, the Antiochene answer of historia and theoria, and the two reading cultures that still live in modern Christians.",
+      "era": "Ancient",
+      "dateRange": "AD 200 to 450",
+      "under": "The Age of the Councils"
+    },
+    {
       "slug": "councils-and-creeds",
       "title": "Councils and Creeds",
       "blurb": "The empire stopped killing the church and started smiling at it. What the bishops protected at Nicaea and Chalcedon — and what the favor of Constantine began to cost.",
@@ -136,12 +144,28 @@
       "sources": 2
     },
     {
+      "slug": "the-four-senses",
+      "title": "The Letter and the Spirit: The Medieval Bible's Four Senses",
+      "blurb": "Augustine's signs and things and the rule of charity, Cassian's four Jerusalems, the couplet of Augustine of Dacia, monastic lectio divina, Thomas Aquinas on the literal foundation of every sense, and Nicholas of Lyra's literal postils.",
+      "era": "Medieval",
+      "dateRange": "AD 400 to 1500",
+      "under": "The Early Medieval Church"
+    },
+    {
       "slug": "the-long-middle",
       "title": "Nine Hundred Years: The Church from Rome's Fall to the Reformation",
       "blurb": "Nine hundred years between the empire's collapse and the Reformation's spark. Neither a dark age nor a golden one — the centuries when the church held everything, and nearly lost itself.",
       "era": "Medieval",
       "dateRange": "AD 590–1517",
       "under": "The Early Medieval Church"
+    },
+    {
+      "slug": "the-plain-sense",
+      "title": "The Plain Sense: The Reformers, the Press and the Bible in Every Hand",
+      "blurb": "Gutenberg's press, the humanist return to the sources, Erasmus's Greek Testament, Luther's grammatical sense and his German Bible, Tyndale's English, Calvin's brevity, sola scriptura in its own terms, the answer at Trent, and the individual reader the age left behind.",
+      "era": "Reformation",
+      "dateRange": "AD 1450 to 1650",
+      "under": "The Reformation"
     },
     {
       "slug": "reformation-and-its-wars",
@@ -160,11 +184,35 @@
       "under": "The Modern and Global Church"
     },
     {
+      "slug": "the-critical-bible",
+      "title": "The Critical Bible: Enlightenment Readers and Their Heirs",
+      "blurb": "Spinoza's new method, the Reimarus fragments and Lessing's ditch, Strauss and the category of myth, Wellhausen's documents, Schweitzer's verdict on the lives of Jesus, the fundamentalist answer, and Hans Frei on the eclipse of the Bible's own story.",
+      "era": "Modern",
+      "dateRange": "AD 1650 to 1975",
+      "under": "The Modern and Global Church"
+    },
+    {
+      "slug": "one-bible-two-americas",
+      "title": "One Bible, Two Americas: How Slavery Tested the Way Americans Read Scripture",
+      "blurb": "The democratic, common-sense reading of the young republic, Stringfellow's plain-text case for slavery, the abolitionists' appeal to the spirit of Scripture, the Exodus as the enslaved read it, Douglass's two Christianities, the Slave Bible of 1807, and Mark Noll's verdict on a hermeneutic that could not settle the question.",
+      "era": "Modern",
+      "dateRange": "AD 1800 to 1865",
+      "under": "The Modern and Global Church"
+    },
+    {
       "slug": "the-american-experiment",
       "title": "How Christianity Became American, 1800 to 1950",
       "blurb": "From Cane Ridge to the fundamentalist and modernist rupture. How the American church learned to engineer revival, married the market and the flag, and split rather than release the enslaved, and the church that kept the faith through all of it.",
       "era": "Modern",
       "dateRange": "AD 1800-1950",
+      "under": "The Modern and Global Church"
+    },
+    {
+      "slug": "reading-from-the-south",
+      "title": "Reading from the South: How Africa, Asia and Latin America Read the Bible",
+      "blurb": "The shift of the church's centre southward, Walls's indigenizing and pilgrim principles, Sanneh on translation, African, Asian and Latin American readings from Bediako and Koyama to Gutiérrez and integral mission, Jenkins on a world closer to the text, and what North and South can learn from and warn each other about.",
+      "era": "Modern",
+      "dateRange": "AD 1900 to today",
       "under": "The Modern and Global Church"
     },
     {

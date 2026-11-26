@@ -115,6 +115,7 @@ export default function TheologyTraditions() {
           <section style={{ background: "var(--charcoal)", padding: "var(--s-5) var(--s-4)", color: "var(--bone)" }}>
             <div style={{ ...wrap, display: "flex", flexWrap: "wrap", gap: "16px", justifyContent: "space-between", alignItems: "center" }}>
               <Link href="/theology/doctrine/church" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>Go deeper: What is the church? →</Link>
+              <Link href="/theology/reading-the-bible" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>How culture reads the Bible →</Link>
               <Link href="/theology/history" style={{ fontFamily: "var(--U)", fontWeight: 600, color: "var(--mustard)" }}>How the church got here →</Link>
             </div>
           </section>
