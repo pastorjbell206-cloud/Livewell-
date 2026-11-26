@@ -25134,3 +25134,18 @@ Cut in chapter 19: nothing. Verse 9 is named and not described.
 | Psalm 31:11, Jeremiah 37:15, Psalm 39:3, 1 Corinthians 9:16, Job 3:3, 1 Kings 19:5 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 20: Hebrews 11:35-36, replaced by Jeremiah 37:15 because Hebrews does not name Jeremiah. Verse 17's picture is named, not quoted.
+
+## The plain notes on Jeremiah 21 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/21.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 21:1-14 (verse 2 paraphrased) | all | BSB | BSB text |
+| Zedekiah from 597 BC, Babylon's subject, rebellion, the siege (2 Kings 24:17; 25:1) | 1-10 | jeremiah/21.json `historical` | Repository |
+| Seeking oracles before war; outstretched hand and mighty arm from the exodus | 1-10 | jeremiah/21.json `cultural` | Repository |
+| Traitor or not: 38:4, 37:13-14, 9:1, 40:1-6; a word for one judgment | 1-10 `hard` | jeremiah/21.json `hard`; the coordinator's direction | Repository |
+| Justice every morning; Jerusalem on its ridge | 11-14 | jeremiah/21.json `cultural`, `outline` | Repository |
+| Deuteronomy 30:15, 2 Kings 25:1, Psalm 101:8 (clauses); Jeremiah 22:3 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 21: a draft line naming the palace as the forest of verse 14, which no repository source states.
