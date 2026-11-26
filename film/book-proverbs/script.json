@@ -1,0 +1,122 @@
+{
+  "title": "Proverbs: skill for ordinary days",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-proverbs",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "wisdom",
+      "kicker": "Skill for ordinary days",
+      "level": 0.2,
+      "lines": [
+        "Wisdom in Proverbs isn't cleverness or book learning. It's skill in living: the ability to see how God's world works and to act in step with it.",
+        "Its motto comes in the first chapter.",
+        "The fear of the LORD is the beginning of knowledge."
+      ],
+      "scripture": {
+        "reference": "Proverbs 1:7",
+        "text": "The fear of the LORD is the beginning of knowledge",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Proverbs is a collection of collections. Nine chapters of longer poems. The proverbs of Solomon. The words of the wise. A second collection copied by Hezekiah's men. And the words of Agur and Lemuel."
+      ]
+    },
+    {
+      "id": "two-ways",
+      "kicker": "Watch for: two ways",
+      "level": 0.5,
+      "lines": [
+        "The book pictures life as a road with two paths. Choices that look small, a companion, a loan, a glance, a lie, set a person on one road or the other.",
+        "Proverbs trains you to see where a path ends before you step onto it."
+      ],
+      "scripture": {
+        "reference": "Proverbs 4:18",
+        "text": "The path of the righteous is like the first gleam of dawn",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "call",
+      "kicker": "Watch for: Wisdom's call",
+      "level": 0.65,
+      "lines": [
+        "In chapters one, eight, and nine, wisdom speaks as a woman who calls out in public places, and who was there with God when he made the world. Her rival, Folly, calls too.",
+        "So choosing wisdom means accepting an invitation, not only mastering a set of rules."
+      ],
+      "scripture": {
+        "reference": "Proverbs 1:20",
+        "text": "Wisdom calls out in the street, she lifts her voice in the square",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "words",
+      "kicker": "Watch for: words",
+      "level": 0.8,
+      "lines": [
+        "Few subjects get more attention in Proverbs than the tongue. Honest lips and lying lips. Gossip and discretion. Flattery and faithful rebuke.",
+        "A gentle answer turns away wrath, but a harsh word stirs up anger.",
+        "Restraint in speech is treated again and again as a mark of wisdom."
+      ],
+      "scripture": {
+        "reference": "Proverbs 15:1",
+        "text": "A gentle answer turns away wrath, but a harsh word stirs up anger.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "work",
+      "kicker": "Watch for: work, money and the poor",
+      "level": 0.85,
+      "lines": [
+        "Proverbs praises diligence and warns the sluggard. But it also warns against trusting riches and against oppressing the poor.",
+        "Wealth is a real good in this book, but always a lesser one than wisdom, righteousness, and a good name."
+      ],
+      "scripture": {
+        "reference": "Proverbs 19:17",
+        "text": "Kindness to the poor is a loan to the LORD",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read Proverbs as proverbs. A proverb is a compressed observation about how life usually goes under God. It isn't a guarantee for every case.",
+        "Start with chapter one. The key chapters are one, three, eight, nine, ten, twenty-two, and thirty-one."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "It's skill for ordinary days, and it begins here.",
+        "Trust in the LORD with all your heart, and lean not on your own understanding."
+      ],
+      "scripture": {
+        "reference": "Proverbs 3:5",
+        "text": "Trust in the LORD with all your heart, and lean not on your own understanding",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "Skill for ordinary days.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

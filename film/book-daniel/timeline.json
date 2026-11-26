@@ -1,0 +1,176 @@
+{
+ "length": 137.6,
+ "chapters": [
+  {
+   "id": "two",
+   "kicker": "Two books in one",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 18.2,
+   "lines": [
+    {
+     "text": "Daniel is two books in one. Chapters one to six are stories of Daniel and three friends, taken from Judah to serve the king of Babylon.",
+     "start": 2.6,
+     "end": 10.94
+    },
+    {
+     "text": "Chapters seven to twelve are visions of empires, and of the kingdom of God that outlasts them all.",
+     "start": 11.62,
+     "end": 17.3
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 17.4,
+   "end": 33.0,
+   "lines": [
+    {
+     "text": "Chapter one is in Hebrew. Chapters two to seven are in Aramaic, framed by two visions of four kingdoms followed by God's kingdom.",
+     "start": 18.3,
+     "end": 26.4
+    },
+    {
+     "text": "Then the book returns to Hebrew: the ram and the goat, a prayer, and a final vision.",
+     "start": 26.98,
+     "end": 32.1
+    }
+   ]
+  },
+  {
+   "id": "rules",
+   "kicker": "Watch for: the Most High rules",
+   "level": 0.5,
+   "start": 32.2,
+   "end": 50.86,
+   "lines": [
+    {
+     "text": "Every chapter presses one claim. God gives kingdoms and takes them away. Proud kings are made to confess it.",
+     "start": 33.1,
+     "end": 40.32
+    },
+    {
+     "text": "The Most High rules over the kingdom of mankind.",
+     "start": 40.96,
+     "end": 43.42
+    },
+    {
+     "text": "Empires are real and dangerous. But they're temporary, and they answer to a higher throne.",
+     "start": 44.12,
+     "end": 49.96
+    }
+   ]
+  },
+  {
+   "id": "bow",
+   "kicker": "Watch for: faith that will not bow",
+   "level": 0.7,
+   "start": 50.06,
+   "end": 71.68,
+   "lines": [
+    {
+     "text": "Daniel and his friends learn Babylon's language and serve its kings with integrity. But they draw the line at worship.",
+     "start": 50.96,
+     "end": 57.2
+    },
+    {
+     "text": "Three of them won't bow to the golden statue. They trust God to save them, and they trust him even if he doesn't.",
+     "start": 57.84,
+     "end": 64.38
+    },
+    {
+     "text": "But even if He does not, let it be known to you, O king, that we will not serve your gods.",
+     "start": 64.92,
+     "end": 70.78
+    }
+   ]
+  },
+  {
+   "id": "window",
+   "kicker": "Watch for: quiet, costly faithfulness",
+   "level": 0.8,
+   "start": 70.88,
+   "end": 86.1,
+   "lines": [
+    {
+     "text": "When a decree forbids prayer, Daniel keeps praying at his open window, just as he had done before.",
+     "start": 71.78,
+     "end": 77.38
+    },
+    {
+     "text": "He's put into the lions' den and brought out alive. And a foreign king confesses that God's kingdom will not be destroyed.",
+     "start": 78.04,
+     "end": 85.2
+    }
+   ]
+  },
+  {
+   "id": "son-of-man",
+   "kicker": "Watch for: one like a son of man",
+   "level": 0.9,
+   "start": 85.3,
+   "end": 97.42,
+   "lines": [
+    {
+     "text": "In the visions, empires rise like beasts from the sea. And one like a son of man is given a kingdom that will not pass away.",
+     "start": 86.2,
+     "end": 93.96
+    },
+    {
+     "text": "Jesus took that title for himself.",
+     "start": 94.62,
+     "end": 96.52
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.55,
+   "start": 96.62,
+   "end": 117.7,
+   "lines": [
+    {
+     "text": "Many read the four kingdoms as Babylon, Media-Persia, Greece, and Rome. Many others read them as Babylon, Media, Persia, and Greece. Careful readers also differ on when the book was finished.",
+     "start": 97.52,
+     "end": 110.12
+    },
+    {
+     "text": "The visions are pictures, not a code for the news. The book's own concern is endurance and hope.",
+     "start": 110.8,
+     "end": 116.8
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 116.9,
+   "end": 126.1,
+   "lines": [
+    {
+     "text": "Start with chapter one. The key chapters are two, three, four, six, seven, nine, and twelve.",
+     "start": 117.8,
+     "end": 125.2
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 125.3,
+   "end": 131.502,
+   "lines": [
+    {
+     "text": "Empires rise and empires pass. The Most High rules.",
+     "start": 126.2,
+     "end": 130.602
+    }
+   ]
+  }
+ ]
+}

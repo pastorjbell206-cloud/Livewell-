@@ -1,0 +1,130 @@
+{
+  "title": "Daniel: the Most High rules",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-daniel",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "two",
+      "kicker": "Two books in one",
+      "level": 0.2,
+      "lines": [
+        "Daniel is two books in one. Chapters one to six are stories of Daniel and three friends, taken from Judah to serve the king of Babylon.",
+        "Chapters seven to twelve are visions of empires, and of the kingdom of God that outlasts them all."
+      ],
+      "scripture": {
+        "reference": "Daniel 1:17",
+        "text": "To these four young men God gave knowledge and understanding",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Chapter one is in Hebrew. Chapters two to seven are in Aramaic, framed by two visions of four kingdoms followed by God's kingdom.",
+        "Then the book returns to Hebrew: the ram and the goat, a prayer, and a final vision."
+      ],
+      "scripture": {
+        "reference": "Daniel 2:44",
+        "text": "the God of heaven will set up a kingdom that will never be destroyed",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "rules",
+      "kicker": "Watch for: the Most High rules",
+      "level": 0.5,
+      "lines": [
+        "Every chapter presses one claim. God gives kingdoms and takes them away. Proud kings are made to confess it.",
+        "The Most High rules over the kingdom of mankind.",
+        "Empires are real and dangerous. But they're temporary, and they answer to a higher throne."
+      ],
+      "scripture": {
+        "reference": "Daniel 4:25",
+        "text": "the Most High rules over the kingdom of mankind",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "bow",
+      "kicker": "Watch for: faith that will not bow",
+      "level": 0.7,
+      "lines": [
+        "Daniel and his friends learn Babylon's language and serve its kings with integrity. But they draw the line at worship.",
+        "Three of them won't bow to the golden statue. They trust God to save them, and they trust him even if he doesn't.",
+        "But even if He does not, let it be known to you, O king, that we will not serve your gods."
+      ],
+      "scripture": {
+        "reference": "Daniel 3:18",
+        "text": "But even if He does not, let it be known to you, O king, that we will not serve your gods",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "window",
+      "kicker": "Watch for: quiet, costly faithfulness",
+      "level": 0.8,
+      "lines": [
+        "When a decree forbids prayer, Daniel keeps praying at his open window, just as he had done before.",
+        "He's put into the lions' den and brought out alive. And a foreign king confesses that God's kingdom will not be destroyed."
+      ],
+      "scripture": {
+        "reference": "Daniel 6:22",
+        "text": "My God sent His angel and shut the mouths of the lions.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "son-of-man",
+      "kicker": "Watch for: one like a son of man",
+      "level": 0.9,
+      "lines": [
+        "In the visions, empires rise like beasts from the sea. And one like a son of man is given a kingdom that will not pass away.",
+        "Jesus took that title for himself."
+      ],
+      "scripture": {
+        "reference": "Daniel 7:13",
+        "text": "I saw One like the Son of Man coming with the clouds of heaven.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "Many read the four kingdoms as Babylon, Media-Persia, Greece, and Rome. Many others read them as Babylon, Media, Persia, and Greece. Careful readers also differ on when the book was finished.",
+        "The visions are pictures, not a code for the news. The book's own concern is endurance and hope."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter one. The key chapters are two, three, four, six, seven, nine, and twelve."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Empires rise and empires pass. The Most High rules."
+      ],
+      "titleCard": [
+        "The Most High rules.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
