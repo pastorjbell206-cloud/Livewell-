@@ -371,9 +371,80 @@
             }
           }
         ]
+      },
+      {
+        "frame": "fertile-crescent",
+        "title": "From Jerusalem to Babylon and Susa",
+        "places": [
+          {
+            "id": "jerusalem",
+            "name": "Jerusalem",
+            "lat": 31.778,
+            "lon": 35.235,
+            "refs": [
+              "1:1",
+              "9:2"
+            ],
+            "line": "The city Nebuchadnezzar besieged (1:1), toward which Daniel prayed.",
+            "label": {
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          },
+          {
+            "id": "babylon",
+            "name": "Babylon",
+            "lat": 32.54,
+            "lon": 44.42,
+            "refs": [
+              "1:1",
+              "4:30",
+              "5:30"
+            ],
+            "line": "Nebuchadnezzar's capital, where Daniel served and where the king boasted of the great Babylon he had built (4:30). Drawn at its ruin mounds near Hillah.",
+            "label": {
+              "dx": 8,
+              "dy": 4,
+              "anchor": "start"
+            }
+          },
+          {
+            "id": "susa",
+            "name": "Susa",
+            "lat": 32.19,
+            "lon": 48.26,
+            "refs": [
+              "8:2"
+            ],
+            "line": "The citadel in the province of Elam where Daniel saw himself in the vision of chapter 8 (8:2). Drawn at its ruin mounds at Shush.",
+            "label": {
+              "dx": 0,
+              "dy": -12,
+              "anchor": "middle"
+            }
+          },
+          {
+            "id": "egypt",
+            "name": "Egypt",
+            "lat": 30.2,
+            "lon": 31.2,
+            "region": true,
+            "refs": [
+              "11:8",
+              "11:42"
+            ],
+            "line": "The kingdom of the king of the South in chapter 11. Drawn roughly, as a region with its name only.",
+            "label": {
+              "dx": -8,
+              "dy": 4,
+              "anchor": "end"
+            }
+          }
+        ]
       }
     ],
-    "mapNote": "Only Jerusalem is drawn, at the point the site's other maps use. Babylon and the land of Shinar, the plain of Dura, Susa and the Ulai canal, the Tigris, Media, Persia, Greece and Egypt are left off, because they are not yet placed in this site's records. No borders are drawn. The map makes no claim about any border today.",
+    "mapNote": "Ancient sites are placed at their ruin mounds: Babylon near Hillah, Susa at Shush. Egypt is drawn roughly, as a region with its name only. The plain of Dura, the Ulai canal, the Tigris, Media, Persia and Greece are left off, because the site's records do not place them. No borders are drawn. The map makes no claim about any border today.",
     "deeper": [
       {
         "href": "/study/bible/guides/reading-apocalyptic",
