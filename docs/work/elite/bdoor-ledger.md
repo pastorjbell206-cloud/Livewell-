@@ -21644,3 +21644,25 @@ Every claim in `client/public/bible/notes/isaiah/intro.json`, field `teaching`. 
 | Go deeper: eleven pages | deeper | bible/guides/reading-prophets.json, reading-poetry.json, kings-of-israel-and-judah.json, empires.json; bible/doctrines.json (holiness, messiah, atonement, exile, new-creation, justice-poor); needs/suffering.json (page: true) | Repository; every page live |
 
 Cut from the book page: every line the introduction draws to Christ beyond what the New Testament itself draws. A quotation of 30:15 that ran across the BSB's dash was shortened before commit. No side is taken on the book's authorship, on 7:14, on 9:6 or on the Servant.
+
+## The plain notes on Isaiah 1 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1-9 | 1-9 | BSB | BSB text |
+| The four kings; Uzziah's prosperity; Amos and Micah; Assyria's advance; the covenant lawsuit and heaven and earth as witnesses; pasha; 701 BC and the forty-six towns, or 735 BC; the chapter as overture | 1-9 | isaiah/1.json `historical`, `cultural`, `literary`, `words` | Repository; both datings |
+| Deuteronomy 32:1; Romans 9:29 | 1-9 `later` | isaiah/1.json `christ` (Romans 9:29); BSB | BSB text |
+| 1:10-17 | 10-17 | BSB | BSB text |
+| The lawful worship; hands covered with blood; widows and orphans; mishpat | 10-17 | isaiah/1.json `cultural`, `words` | Repository |
+| 1 Samuel 15:22; Amos 5:24; Micah 6:8 | 10-17 `later` | BSB | BSB text |
+| The hard note: older critical view and the prevailing view; verse 15; absolute contrast; 56:7 | 10-17 `hard` | isaiah/1.json `hard` | Repository |
+| 1:18-20 | 18-20 | BSB | BSB text |
+| Yakach as a legal word; the choice | 18-20 | isaiah/1.json `words` | Repository |
+| Psalm 51:7; Micah 7:19 (added when the validator asked for a longer note) | 18-20 `later` | BSB | BSB text |
+| 1:21-31 (1:21 in double quotes for its exclamations) | 21-31 | BSB | BSB text |
+| The ring of 21-26; refining; bribes; the sacred oaks and gardens; the fire; the city pictured as a woman, no leave to shame or harm a woman | 21-31 | isaiah/1.json `literary`, `cultural`; revelation/plain/17.json (the same care); the brief | Repository |
+| Isaiah 62:4; Micah 3:10 | 21-31 `later` | BSB | BSB text |
+
+Cut in chapter 1: the deep note's lines to Christ that the New Testament does not draw (1 John 1:7 and Revelation 7:14 beside 1:18; Matthew 23:23 beside the chapter). No care line is needed in this chapter.
