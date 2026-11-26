@@ -22502,3 +22502,25 @@ Cut in chapter 28: nothing beyond the policy on lines to Christ. No care line is
 | Isaiah 35:5; Matthew 11:5 | 17-24 `later` | isaiah/29.json `christ`; BSB | BSB text |
 
 Cut in chapter 29: the deep note's line on the risen Jesus opening the sealed book, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 30 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 30:1-7 (30:1 and 30:2 inside the BSB's speech marks) | 1-7 | BSB | BSB text |
+| The third woe; 705 and 701 BC; the Kushite kings; Zoan as Tanis; Hanes and Heracleopolis; the Negev caravan; Rahab as sea monster and Egypt (Psalm 87:4; 51:9); Eltekeh in Sennacherib's annals | 1-7 | isaiah/30.json `story`, `historical`, `cultural`, `words` | Repository |
+| Isaiah 36:6; Psalm 20:7 | 1-7 `later` | isaiah/30.json `historical` (36:6); BSB | BSB text |
+| The hard note: prudent statecraft; without asking God's advice; oaths before the gods; events bore Isaiah out; no line to any nation or policy today | 1-7 `hard` | isaiah/30.json `hard`; the brief | Repository |
+| 30:8-17 (30:15's clause before the dash; first drafted with a nested quotation and corrected) | 8-17 | BSB | BSB text |
+| The written witness; pleasant words; the bulging wall; repentance and rest; horses for flight | 8-17 | isaiah/30.json `summary`, `story` | Repository |
+| 2 Timothy 4:3; Matthew 11:28 | 8-17 `later` | BSB | BSB text |
+| 30:18-26 (30:21's words inside the BSB's speech marks; first drafted with a nested quotation and corrected) | 18-26 | BSB | BSB text |
+| Grace after woe; the Teacher; idols thrown away; the land renewed | 18-26 | isaiah/30.json `summary` | Repository; two embellishments (siege rations; a shepherd behind the flock) narrowed before commit |
+| Psalm 32:8 | 18-26 `later` | BSB | BSB text |
+| 30:27-33 | 27-33 | BSB | BSB text |
+| The bridle; the pilgrims' flute; Topheth in the Valley of Hinnom and child sacrifice (2 Kings 23:10; Jeremiah 7:31), named, not described | 27-33 | isaiah/30.json `cultural` | Repository |
+| 2 Kings 23:10; Isaiah 37:36 named | 27-33 `later` | BSB | BSB text |
+
+Cut in chapter 30: nothing beyond the narrowings above. No care line is needed in this chapter.
