@@ -21609,3 +21609,19 @@ Cut in chapter 1: nothing further. Jonah's offer in 1:12 is told as the book tel
 | Psalm 31:6 (its clause); Matthew 12:39 (its clause) | 7-10 | jonah/2.json `literary`; jonah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
 
 Cut in chapter 2: nothing further.
+
+## The plain notes on Jonah 3 (2026-11-25)
+
+`client/public/bible/notes/jonah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; 3:2 paraphrased; 3:3; 3:4 (in double quotes, for its exclamation) | 1-4 | BSB | BSB text |
+| The second chance; Calah and Nineveh; Sennacherib's capital around 700 BC; the three days read three ways; five Hebrew words, no call to repent; haphak as destroyed or turned around; Genesis 19:25 | 1-4 | jonah/3.json `historical`, `literary` | Repository; the readings in their holders' terms |
+| Genesis 19:25 (its first clause) | 1-4 | jonah/3.json `literary`; BSB | Repository; BSB text |
+| 3:5 (its first sentence); 3:6-7 paraphrased; 3:8 (its phrase); 3:9; 3:10 (its last clause) | 5-10 | BSB | BSB text |
+| Fasting and sackcloth; ashes; the king undoing his dignity; animals in mourning and Herodotus on Persian horses; the cattle of 4:11; king of Nineveh read three ways; no Assyrian record; the instability, plague, revolts and the eclipse of 763 BC as a possibility, unproven; turn and evil in two senses; who knows as hope without presumption | 5-10 | jonah/3.json `cultural`, `historical`, `literary` | Repository; the readings in their holders' terms |
+| Joel 2:14 (its clause); 2 Samuel 12:22 (its words); Matthew 12:41 (its clause) | 5-10 | jonah/3.json `cultural`; jonah/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own line |
+| The hard note: an unconditional-sounding judgment; the unstated condition (Jeremiah 18:7-10); the Ninevites' hope; the purpose fulfilled; Nineveh destroyed in 612 BC as Nahum announced; the question of mercy | 5-10 `hard` | jonah/3.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 3: nothing further. The word 'journey' is kept only inside quoted Scripture.
