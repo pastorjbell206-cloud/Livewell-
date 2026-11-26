@@ -23737,3 +23737,22 @@ Cut in chapter 42: nothing beyond the policy on lines to Christ. No care line is
 | Jeremiah 31:34; Hebrews 8:12; Psalm 103:12 | 22-28 `later` | BSB | BSB text |
 
 Cut in chapter 43: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 44 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/44.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 44:1-8 (inside the BSB's speech marks; 44:5 paraphrased around its inner quotations) | 1-8 | BSB | BSB text |
+| Jeshurun, found only in Deuteronomy 32 and 33, probably upright one; the Spirit as water; writing on the hand and the marking of slaves or soldiers; no other Rock | 1-8 | isaiah/44.json `cultural`, `words` | Repository |
+| Deuteronomy 33:26 (inside the BSB's speech marks); Revelation 22:13 | 1-8 `later` | BSB | BSB text |
+| 44:9-20 (44:16, 44:17, 44:19 and 44:20 paraphrased around their inner quotations) | 9-20 | BSB | BSB text |
+| The longest satire on idols; one log; the hungry smith; the human shape; the lie in the hand | 9-20 | isaiah/44.json `literary`, `cultural` | Repository |
+| Psalm 115:4-5; Jeremiah 10:5 | 9-20 `later` | BSB | BSB text |
+| 44:21-28 (44:28's sayings inside the BSB's inner quotation marks) | 21-28 | BSB | BSB text |
+| Forgiveness before the call to return; Cyrus II, the 550s, the 540s and 539; his policy of return; Ezra's decree; shepherd as a royal title | 21-28 | isaiah/44.json `historical`; bible/guides/empires.json (Cyrus) | Repository |
+| Ezra 1:2 (inside its inner quotation mark); 1 Kings 13:2 named | 21-28 `later` | BSB | BSB text |
+| The hard note: revelation and the climax of the argument (1 Kings 13:2; Josephus's tradition); a prophet of the exile; the mediating view; agreement on the claim | 21-28 `hard` | isaiah/44.json `hard` | Repository; each view in its holders' terms |
+
+Cut in chapter 44: nothing. No care line is needed in this chapter.
