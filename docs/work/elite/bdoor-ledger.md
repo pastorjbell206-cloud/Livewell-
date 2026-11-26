@@ -22052,3 +22052,20 @@ Cut in chapter 4: the deep note's lines to Christ (the Spirit as the Comforter, 
 | 1 Timothy 6:17 (its last clause); Deuteronomy 8:18 (its first clause) | 18-20 | the chapter data's cross-references for 5:18 (1 Timothy 6:17) and 5:19 (Deuteronomy 8:18); BSB | Repository; BSB text |
 
 Cut in chapter 5: the deep note's lines to Christ (Matthew 6:7, 5:33-37 and James 5:12 beside verses 2-6; the rich fool and Matthew 6:19-21 beside verses 13-17; Mark 9:7 and listening to the Son; the note calls them thematic). No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 6 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 6:1; 6:2; 6:3 paraphrased; 6:4 paraphrased; 6:5 (its last clause); 6:6 (its last sentence) | 1-6 | BSB | BSB text |
+| The coin turned over from chapter 5; enjoyment in God's hand; wealth, children, long life and burial as marks of a good life; fortunes passing to strangers; burial and its denial (Jeremiah 22:18-19); the stillborn comparison meant to shock, like Job 3:11-16; not a judgment on any child or parent | 1-6 | ecclesiastes/6.json `story`, `historical`, `cultural` | Repository |
+| Care line (‘If you carry grief or guilt about a pregnancy, or about the loss of a child before or after birth...’ to ‘...lists places to turn.’) | 1-6 | pray-psalms/psalm/139.json, job/intro.json, job/plain/42.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| Psalm 17:14 (its last clause of the first sentence); Job 3:16 (in double quotes) | 1-6 | the chapter data's cross-references for 6:2 (Psalm 17:14) and 6:3 (Job 3:16); ecclesiastes/6.json `cultural` (Job 3:11-16); BSB | Repository; BSB text |
+| The hard note: stated and unsolved; the under-the-sun reading (3:11; 12:14); enjoyment as a separate gift; honesty about common experience; no accusation of God; humility and dependence | 1-6 `hard` | ecclesiastes/6.json `hard` | Repository; each reading in its holders' terms |
+| 6:7; 6:8 paraphrased; 6:9; 6:10; 6:11 paraphrased (it holds a dash); 6:12 | 7-12 | BSB | BSB text |
+| Nephesh through the chapter; the wandering of desire; naming as authority (Genesis 1 and 2; renamed vassals); God as the stronger one; verses 10-12 as the book's midpoint; hevel five times; the questions setting up the second half | 7-12 | ecclesiastes/6.json `literary`, `cultural`, `words` (nephesh, hevel) | Repository |
+| James 4:14 (its first sentence, before its exclamation); Psalm 39:6 (its first clause) | 7-12 | the chapter data's cross-references for 6:12 (James 4:14; Psalm 39:5-6); BSB | Repository; BSB text |
+
+Cut in chapter 6: the deep note's lines to Christ (Mark 8:36 and the rich fool, Luke 12:16-21; John 4:13-14 and 10:10 as the answer to the restless appetite; the note calls them thematic).
