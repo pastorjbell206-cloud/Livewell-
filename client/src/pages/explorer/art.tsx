@@ -1035,6 +1035,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M40,74c2,-4 6,-6 10,-4M50,84c0,-4 2,-8 6,-10" />
     </>
   ),
+  /* Judges: a cart wheel on a downward slope, and a gold sun going down. */
+  "book-judges": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M72,20a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M72,20a8,8 0 1,0 16,0a8,8 0 1,0 -16,0Z" />
+      <path className="pl-l" d="M8,40C30,44 60,64 92,80" />
+      <path className="pl-l" d="M24,56a16,16 0 1,0 32,0a16,16 0 1,0 -32,0ZM40,40V72M24,56H56M29,45L51,67M51,45L29,67" />
+      <Shape d="M36,56a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z" tone="c" off={0.6} />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

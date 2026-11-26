@@ -2905,6 +2905,116 @@
     }
    ]
   },
+  "book-judges": {
+   "title": {
+    "file": "book-judges/title.mp3",
+    "hash": "0ecaac9bdb480b2948cc",
+    "seconds": 3.06,
+    "bytes": 18932
+   },
+   "younger": [
+    {
+     "id": "dark",
+     "file": "book-judges/younger/01-dark.mp3",
+     "hash": "b5cf0607613c04fc8fa1",
+     "seconds": 25.8,
+     "bytes": 155300
+    },
+    {
+     "id": "layout",
+     "file": "book-judges/younger/02-layout.mp3",
+     "hash": "81b358f3d99c849e4a3a",
+     "seconds": 24.09,
+     "bytes": 145076
+    },
+    {
+     "id": "wheel",
+     "file": "book-judges/younger/03-wheel.mp3",
+     "hash": "b97bd14232ce29089297",
+     "seconds": 23.4,
+     "bytes": 141044
+    },
+    {
+     "id": "deliverers",
+     "file": "book-judges/younger/04-deliverers.mp3",
+     "hash": "0336e58822452d5488c5",
+     "seconds": 28.11,
+     "bytes": 169268
+    },
+    {
+     "id": "flaws",
+     "file": "book-judges/younger/05-flaws.mp3",
+     "hash": "12ecea59397553c802da",
+     "seconds": 25.07,
+     "bytes": 150980
+    },
+    {
+     "id": "no-king",
+     "file": "book-judges/younger/06-no-king.mp3",
+     "hash": "5e8be76e4a15b2a4c373",
+     "seconds": 27.24,
+     "bytes": 163940
+    },
+    {
+     "id": "start",
+     "file": "book-judges/younger/07-start.mp3",
+     "hash": "c0f69f0deaf390727d57",
+     "seconds": 25.03,
+     "bytes": 150836
+    }
+   ],
+   "older": [
+    {
+     "id": "dark",
+     "file": "book-judges/older/01-dark.mp3",
+     "hash": "716d9edc9fd87652cf7d",
+     "seconds": 25.93,
+     "bytes": 156164
+    },
+    {
+     "id": "layout",
+     "file": "book-judges/older/02-layout.mp3",
+     "hash": "61dd3f8d157351888503",
+     "seconds": 24.62,
+     "bytes": 148388
+    },
+    {
+     "id": "wheel",
+     "file": "book-judges/older/03-wheel.mp3",
+     "hash": "519f41a47fdb197cd294",
+     "seconds": 25.92,
+     "bytes": 156020
+    },
+    {
+     "id": "deliverers",
+     "file": "book-judges/older/04-deliverers.mp3",
+     "hash": "d2779517e41e2187cb95",
+     "seconds": 22.98,
+     "bytes": 138452
+    },
+    {
+     "id": "flaws",
+     "file": "book-judges/older/05-flaws.mp3",
+     "hash": "6f3237827535b96c0b02",
+     "seconds": 25.52,
+     "bytes": 153716
+    },
+    {
+     "id": "no-king",
+     "file": "book-judges/older/06-no-king.mp3",
+     "hash": "efd13a7d88eaff2aa655",
+     "seconds": 30.85,
+     "bytes": 185684
+    },
+    {
+     "id": "start",
+     "file": "book-judges/older/07-start.mp3",
+     "hash": "9614fa50a3e52a24e58a",
+     "seconds": 27.77,
+     "bytes": 167252
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

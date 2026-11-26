@@ -1732,6 +1732,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-hebrews",
     "book-james",
     "book-joshua",
+    "book-judges",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2454,5 +2455,27 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(hard.still).toContain("No battle is drawn.");
     // Rahab, the outsider, in the family line of Jesus.
     expect(f.frames.find(x => x.id === "belong")!.younger).toContain("family line of Jesus");
+  });
+
+  it("Judges names its darkest chapters at the older level only, describes and draws none, and gives no warrant for violence", () => {
+    const f = filmFile("book-judges");
+    expect(f.care).toBe(filmFile("book-joshua").care);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    // Ages 7 to 11: the hard chapters are called hard, never told.
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|slaughter|rape|abuse|sacrific|concubine|daughter|Gibeah|Jephthah|dagger|tent peg/i);
+    expect(f.frames.find(x => x.id === "no-king")!.younger).toContain("Read them with a grown-up you trust.");
+    // Ages 12 to 16: named, in the book page's words, and not described.
+    const older = f.frames.map(fr => fr.older).join(" ");
+    expect(older).toContain("the outrage at Gibeah against a Levite's concubine");
+    expect(older).toContain("Jephthah's rash vow costs his daughter");
+    expect(older).toContain("never as a pattern");
+    expect(older).not.toMatch(/rape|abused|dismember|cut her|pieces|burnt offering|offered (her|his daughter)|tent peg|dagger/i);
+    expect(f.differ?.text).toContain("nothing in the book praises it");
+    expect(f.differ?.text).toContain("the book gives no nation, no church and no person a warrant for violence against anyone");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    // Nothing of the last chapters is drawn but an empty seat; no battle or weapon anywhere.
+    const stills = f.frames.map(fr => fr.still).join(" ");
+    expect(stills).not.toMatch(/sword|spear|dagger|battle|fire|body|woman lies|threshold/i);
+    expect(f.frames.find(x => x.id === "no-king")!.still).toContain("No one sits in it.");
   });
 });
