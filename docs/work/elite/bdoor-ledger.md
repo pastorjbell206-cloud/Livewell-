@@ -25107,3 +25107,7 @@ Cut in chapter 3: John 10:11 and the deep note's other lines to Christ, which th
 | Deuteronomy 10:16, Romans 2:29, Romans 9:2, Genesis 1:2 (clauses); Isaiah 41:16 and 13:8 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 4: Galatians 3:8 and 14 beside verse 2, which the New Testament does not draw from this chapter.
+
+## Ezekiel's map note, after the merge (2026-11-26)
+
+The branch now carries Babylon's point (id `babylon`, 32.54 N, 44.42 E, on Jeremiah's map), the same point Ezekiel's map uses. The map note now says that every place is at a point the site's maps already use.
