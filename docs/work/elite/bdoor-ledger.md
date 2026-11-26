@@ -25115,3 +25115,19 @@ The branch now carries Babylon's point (id `babylon`, 32.54 N, 44.42 E, on Jerem
 ## Ezekiel's book page: two small corrections (2026-11-26)
 
 On Ezekiel's book page, Tyre's label on the `fertile-crescent` map now sits to the right of the point, because at a 390-pixel width it touched the frame's own label, THE GREAT SEA. The line on 2 Corinthians 6:16 now says that Paul's words echo Leviticus 26:12 and that many readers hear Ezekiel 37:27 in them as well, so it is given as a reading, since the New Testament does not quote Ezekiel 37 directly (the coordinator's note).
+
+## The plain notes on Ezekiel 13 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/13.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The whitewashed wall: the text paraphrased; quoted clauses at verses 2, 3, 4, 5, 6, 10, 11-14, 12 | 1-16 | BSB | BSB text |
+| Background in `hearers` | 1-16 | ezekiel/13.json `historical`, `cultural`, `literary` | Repository |
+| Later: Deuteronomy 18:22; Jeremiah 28:3 | 1-16 `later` | BSB | BSB text |
+| The hard note: How can anyone tell a true prophet from a false one, if both claim to speak for God? The readings in their holders' terms | 1-16 `hard` | ezekiel/13.json `hard` | Repository; the site takes no side |
+| Charms, veils and souls set free: the text paraphrased; quoted clauses at verses 17, 18, 19, 20, 22-23 | 17-23 | BSB | BSB text |
+| Background in `hearers` | 17-23 | ezekiel/13.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 23:16; 2 Kings 22:14 | 17-23 `later` | BSB | BSB text |
+
+Cut in chapter 13: the deep note's New Testament tests (1 John 4:1-3; Matthew 7:15-20), which are not drawn from Ezekiel 13.
