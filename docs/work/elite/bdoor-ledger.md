@@ -24431,3 +24431,24 @@ Cut in chapter 64: the reading of Mark 1:10 as an answer to verse 1, which the d
 | The CHILDLOSS care line, byte for byte | 17-25 `hard` | carelines.json (from the site) | care.mjs |
 
 Cut in chapter 65: nothing. The hard note on Romans 10:21 follows the brief that judgment on Judah is never a reason to blame the Jewish people.
+
+## The plain notes on Isaiah 66 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/66.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 66:1-6 (verses 1, 5 and 6 partly paraphrased around inner speech marks) | 1-6 | BSB | BSB text |
+| Ends as it began, chapter 1; everything grown | 1-6 | isaiah/66.json `story` | Repository |
+| About 515 BC; readings of verse 1; verses 6 and 20; the traditional view | 1-6 | isaiah/66.json `historical` | Repository |
+| Verse 3's pairs; dogs unclean; chared and Ezra 9:4; division within | 1-6 | isaiah/66.json `cultural`, `words`, `historical` | Repository |
+| Acts 7:49 (its first clause); Ezra 9:4 (its clause) | 1-6 `later` | BSB; isaiah/66.json `christ` | BSB text |
+| 66:7-14 | 7-14 | BSB | BSB text |
+| Nursing, hip and knees; God as mother; nacham three times, 40:1 | 7-14 | isaiah/66.json `cultural`, `words` | Repository |
+| Isaiah 40:1 (its inner words); Psalm 131:2 (its clause) | 7-14 `later` | BSB | BSB text |
+| 66:15-24 | 15-24 | BSB | BSB text |
+| Tarshish, Put and Pul, Lud, Tubal, Javan; New Moon and Sabbath; Hinnom and Gehenna; verse 23 repeated in the synagogue | 15-24 | isaiah/66.json `historical`, `cultural`, `literary` | Repository |
+| Mark 9:48 (its inner words); Isaiah 1:2 (its clause); Jeremiah 7 (named) | 15-24 `later` | BSB; isaiah/66.json `christ` | BSB text |
+| Why the book ends this way; three Christian readings | 15-24 `hard` | isaiah/66.json `hard` | Repository |
+
+Cut in chapter 66: John 16:21 and Galatians 4:26, which the deep note calls thematic echoes, and Romans 15:8-12 are left out.
