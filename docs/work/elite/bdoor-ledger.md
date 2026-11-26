@@ -22443,3 +22443,21 @@ Cut in chapter 25: Matthew 8:11 and Mark 14:25, which the New Testament does not
 | The hard note: verses 14 and 19 about different people; national revival or resurrection, or both; no person's eternal state named | 16-21 `hard` | isaiah/26.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 26: Hebrews 10:37, whose wording some connect with verse 20, left out as uncertain. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 27 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 27:1-6 (27:1's clause before the dash; 27:3 inside the BSB's speech marks) | 1-6 | BSB | BSB text |
+| Chapters 24 to 27 closed; Leviathan and Lotan at Ugarit (about 1200 BC) with the same phrases; chaos and the powers; one verse of battle; the vineyard of chapter 5 reversed; thorns offered peace | 1-6 | isaiah/27.json `story`, `cultural` | Repository |
+| Psalm 74:14; Job 41:1; Revelation 12:9 (its clauses either side of the dash) | 1-6 `later` | isaiah/27.json `cultural` (Psalm 74:13-14); BSB | BSB text |
+| 27:7-11 | 7-11 | BSB | BSB text |
+| Measured judgment; Asherah poles and Hezekiah's reform (2 Kings 18:4); chalk; the city of verse 10, oppressor's or Israelite, divided | 7-11 | isaiah/27.json `cultural`, `historical` | Repository; both readings |
+| 2 Kings 18:4; Romans 11:27 (inside the BSB's speech marks) | 7-11 `later` | BSB | BSB text; Paul's own quotation |
+| 27:12-13 | 12-13 | BSB | BSB text |
+| Threshing and gleaning; the shofar; the traditional and later datings (722 BC; the Persian period; Elephantine named in the deep note); the ideal borders of Genesis 15:18, no claim about any border today | 12-13 | isaiah/27.json `cultural`, `historical` | Repository; both datings |
+| Genesis 15:18 (inside the BSB's speech marks, its clause before the dash); Matthew 24:31 | 12-13 `later` | BSB | BSB text |
+
+Cut in chapter 27: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
