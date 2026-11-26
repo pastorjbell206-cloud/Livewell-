@@ -24101,3 +24101,20 @@ New Testament lines in chapter 10: none drawn. Cut in chapter 10: nothing.
 | The hard note: Why does Matthew attribute a quotation from Zechariah to Jeremiah? The readings in their holders' terms | 7-17 `hard` | zechariah/11.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 11: Matthew 27:9-10 draws on 11:12-13. Cut in chapter 11: The word parable for the shepherd scenes; the repository's notes call them sign-acts, like those of Jeremiah and Ezekiel, and the plain notes now say so.
+
+## The plain notes on Zechariah 12 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Jerusalem a heavy stone to the nations: the text paraphrased, its quoted verses (in single or double quotes) | 1-9 | BSB | BSB text |
+| Background in `hearers` | 1-9 | zechariah/12.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 51:22-23; Exodus 14:19 | 1-9 `later` | BSB | BSB text |
+| The hard note: How should a chapter about nations gathered against Jerusalem and destroyed be read today? The readings in their holders' terms | 1-9 `hard` | zechariah/12.json `hard` | Repository; the site takes no side |
+| A spirit of grace, and the one they pierced: the text paraphrased, its quoted verses (in single or double quotes) | 10-14 | BSB | BSB text |
+| Background in `hearers` | 10-14 | zechariah/12.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Chronicles 35:24-25; John 19:37; Revelation 1:7 | 10-14 `later` | BSB | BSB text |
+| The hard note: Does verse 10 speak of looking on God himself or on another, and who is the pierced one? The readings in their holders' terms | 10-14 `hard` | zechariah/12.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 12: John 19:37 and Revelation 1:7 quote 12:10. Cut in chapter 12: The textual note in the first person; restated in the third person.
