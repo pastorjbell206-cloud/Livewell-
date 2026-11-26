@@ -1,78 +1,88 @@
 {
   "title": "Whose kingdom?",
-  "note": "Words approved by James on 2026-11-26. Not yet recorded. Every narration line is a sentence from A Higher Allegiance, the chapter \"Civil Religion: When a Nation Borrows Sacred Words\", shortened only by leaving words out; words.md beside this file shows each line against its original and marks the three places James should look at. The Scripture lines are the Berean Standard Bible, copied from client/public/bible/text/matthew/6.json. The fields follow James's description of the Gather scripts; `gap` is a guess and should be set to match film/beliefs/script.json on the Mac.",
+  "note": "Written fresh on 2026-11-26 at James's word: \"I want you to have liberty to write the scripts. You don't have to copy verbatim what's on the website.\" Not recorded. Every fact is listed with where to check it in facts.md beside this file. Scripture is the Berean Standard Bible, copied from client/public/bible/text/. Field names and `gap` follow James's description of the Gather scripts; match them to film/beliefs/script.json on the Mac.",
   "page": "/books/a-higher-allegiance",
   "translation": "Berean Standard Bible",
   "gap": 0.35,
   "chapters": [
     {
-      "id": "room",
-      "kicker": "A Sunday in July",
+      "id": "caesar",
+      "kicker": "Rome, the first century",
       "level": 0.2,
       "lines": [
-        "There is a moment in the life of nearly every American church.",
-        "The sanctuary is decorated with flags, and the worship set includes a patriotic hymn."
+        "Two thousand years ago, the most powerful man on earth was called Caesar.",
+        "His face was on the coins. His armies were on the roads. And people called him lord."
       ]
     },
     {
-      "id": "line",
-      "kicker": "What no one notices",
+      "id": "three-words",
+      "kicker": "Three words",
       "level": 0.4,
       "lines": [
-        "And in that moment, something happens that most people in the room do not notice.",
-        "The line between worship of God and celebration of nation becomes invisible."
-      ]
-    },
-    {
-      "id": "name",
-      "kicker": "It has a name",
-      "level": 0.55,
-      "lines": [
-        "It has a name. Sociologists call it civil religion.",
-        "\"God Bless America\" quietly replaced \"Thy Kingdom Come\" as the functional prayer of the church."
+        "Then a small group of people started saying three words. Jesus is Lord.",
+        "Today that sounds like something you'd hear in church. Back then it could get you killed.",
+        "Because if Jesus is Lord, Caesar isn't."
       ]
     },
     {
       "id": "prayer",
       "kicker": "The prayer Jesus taught",
-      "level": 0.7,
+      "level": 0.6,
       "lines": [
-        "Our Father in heaven, hallowed be Your name.",
+        "Jesus taught his followers to pray like this.",
         "Your kingdom come, Your will be done, on earth as it is in heaven."
       ],
       "scripture": {
-        "reference": "Matthew 6:9-10",
+        "reference": "Matthew 6:10",
         "translation": "Berean Standard Bible",
-        "text": "Our Father in heaven, hallowed be Your name. Your kingdom come, Your will be done, on earth as it is in heaven.",
+        "text": "Your kingdom come, Your will be done, on earth as it is in heaven.",
         "spoken": true
       }
     },
     {
-      "id": "invitation",
-      "kicker": "The invitation",
-      "level": 0.85,
+      "id": "notice",
+      "kicker": "Look at what it asks",
+      "level": 0.75,
       "lines": [
-        "That is the invitation: not to stop caring about America, but to stop treating the American project as though it were the Kingdom of God.",
-        "A church that knows it belongs to a Kingdom that cannot be shaken can face any political outcome with sorrow, yes, with concern, yes, but never with despair."
+        "Look at what that prayer asks. It doesn't ask God to bless my side.",
+        "It asks for his kingdom to come. Which means mine has to make room."
       ]
     },
     {
-      "id": "king",
-      "kicker": "A King",
+      "id": "gift",
+      "kicker": "A gift, not a god",
+      "level": 0.9,
+      "lines": [
+        "Every nation is tempted to borrow God for its own story. Ours is too. So am I.",
+        "You can love your country. It's a good gift. But a good gift makes a terrible god."
+      ]
+    },
+    {
+      "id": "lasts",
+      "kicker": "The one that lasts",
       "level": 0.95,
       "lines": [
-        "The church does not need a nation to survive. The church needs a King.",
-        "And it already has one. His name is Jesus."
-      ]
+        "Nations rise and nations fall. Rome did.",
+        "His kingdom is the one that can't be shaken."
+      ],
+      "scripture": {
+        "reference": "Hebrews 12:28",
+        "translation": "Berean Standard Bible",
+        "text": "we are receiving an unshakable kingdom",
+        "spoken": false
+      }
     },
     {
       "id": "close",
       "kicker": "",
       "level": 0.3,
       "lines": [
-        "Let \"Thy Kingdom Come\" be the prayer of the church."
+        "So here's the question. Whose kingdom are you praying for?"
       ],
-      "titleCard": ["Let \"Thy Kingdom Come\" be the prayer of the church.", "LiveWell by James Bell"]
+      "titleCard": [
+        "Whose kingdom are you praying for?",
+        "LiveWell by James Bell"
+      ]
     }
   ]
 }

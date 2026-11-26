@@ -1,76 +1,84 @@
 {
   "title": "Can you trust the Bible?",
-  "note": "Words approved by James on 2026-11-26. Not yet recorded. Every narration line is a sentence from The Reliability of Scripture, chapter one (\"Three Questions We Confuse for One\"), shortened only by leaving words out; words.md beside this file shows each line against its original. The Scripture line is the Berean Standard Bible, copied from client/public/bible/text/2-timothy/3.json, and is the first clause of the verse. The fields follow James's description of the Gather scripts; `gap` is a guess and should be set to match film/beliefs/script.json on the Mac.",
+  "note": "Written fresh on 2026-11-26 at James's word: \"I want you to have liberty to write the scripts. You don't have to copy verbatim what's on the website.\" Not recorded. Every fact is listed with where to check it in facts.md beside this file. Scripture is the Berean Standard Bible, copied from client/public/bible/text/. Field names and `gap` follow James's description of the Gather scripts; match them to film/beliefs/script.json on the Mac.",
   "page": "/books/the-reliability-of-scripture",
   "translation": "Berean Standard Bible",
   "gap": 0.35,
   "chapters": [
     {
-      "id": "question",
-      "kicker": "One question",
+      "id": "telephone",
+      "kicker": "The objection",
       "level": 0.2,
       "lines": [
-        "\"Can I trust the Bible?\" is really three different questions.",
-        "The worst thing that can happen to a hard question is being answered with a different question."
+        "You've probably heard it. The Bible was copied by hand for so long that nobody knows what it first said.",
+        "Like a game of telephone."
       ]
     },
     {
-      "id": "text",
-      "kicker": "The first question",
+      "id": "copies",
+      "kicker": "Not one line. Thousands.",
       "level": 0.35,
       "lines": [
-        "The first question is historical and textual: is the Bible we have now the same as the Bible originally written?"
+        "But telephone is one whisper passed down one line.",
+        "The Bible was copied in many places and many languages, and thousands of those copies still exist.",
+        "So we can lay them side by side and see exactly where they differ."
       ]
     },
     {
-      "id": "history",
-      "kicker": "The second question",
-      "level": 0.5,
+      "id": "scrolls",
+      "kicker": "1947, by the Dead Sea",
+      "level": 0.55,
       "lines": [
-        "The second question: does the Bible accurately describe real people, real places, real events?"
+        "In 1947, shepherds found clay jars in a cave near the Dead Sea.",
+        "Inside was a scroll of Isaiah about a thousand years older than any Hebrew copy we had.",
+        "A thousand years of copying by hand. Small differences in spelling and wording. The same book."
       ]
     },
     {
-      "id": "more",
-      "kicker": "The third question",
-      "level": 0.65,
+      "id": "stone",
+      "kicker": "1993, northern Israel",
+      "level": 0.7,
       "lines": [
-        "The third question is theological: is the Bible more than a collection of human documents?"
+        "Then there's the ground itself. For years, some scholars said King David was only a legend.",
+        "In 1993, archaeologists dug up a broken stone. Carved on it: the House of David."
+      ]
+    },
+    {
+      "id": "limit",
+      "kicker": "What evidence can't do",
+      "level": 0.85,
+      "lines": [
+        "None of this proves that God has spoken.",
+        "Evidence can show you the words are old and the history is real. It can't make you trust the one they're about."
+      ]
+    },
+    {
+      "id": "claim",
+      "kicker": "What it says about itself",
+      "level": 0.9,
+      "lines": [
+        "The Bible makes its own claim, and it's a big one.",
+        "All Scripture is God-breathed."
       ],
       "scripture": {
         "reference": "2 Timothy 3:16",
         "translation": "Berean Standard Bible",
         "text": "All Scripture is God-breathed",
-        "spoken": false
+        "spoken": true
       }
-    },
-    {
-      "id": "order",
-      "kicker": "The order matters",
-      "level": 0.8,
-      "lines": [
-        "These three questions are related, but they are not the same, and answering one does not automatically answer the others.",
-        "The order matters.",
-        "Faith that skips questions one and two is not stronger for having skipped them. It is more fragile."
-      ]
-    },
-    {
-      "id": "reliable",
-      "kicker": "What reliable means",
-      "level": 0.9,
-      "lines": [
-        "Reliable does not mean perfect.",
-        "It means that variations exist at the margins, not the center, that copyists preserved rather than invented."
-      ]
     },
     {
       "id": "close",
       "kicker": "",
       "level": 0.3,
       "lines": [
-        "The answer is not \"no.\" The answer is the opposite of \"no.\""
+        "So bring your hardest questions. This book has been answering them for a long time.",
+        "Then read it for yourself."
       ],
-      "titleCard": ["The answer is the opposite of \"no.\"", "LiveWell by James Bell"]
+      "titleCard": [
+        "Bring your hardest questions.",
+        "LiveWell by James Bell"
+      ]
     }
   ]
 }
