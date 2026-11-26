@@ -21845,3 +21845,22 @@ Cut in chapter 9: nothing beyond the policy on lines to Christ. No care line is 
 | Isaiah 11:1; Isaiah 37:36 named; 2 Kings 19:35 named (added when the validator asked for a book beyond Isaiah) | 28-34 `later` | BSB | BSB text |
 
 Cut in chapter 10: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 11 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 11:1-5 (11:2's list after the dash) | 1-5 | BSB | BSB text |
+| The stump of Jesse; 2 Samuel 7; Ahaz; the remnant; the promises of chapters 7 and 9 gathered; the Spirit; justice for the poor | 1-5 | isaiah/11.json `story`, `historical` | Repository |
+| Jeremiah 23:5; 2 Thessalonians 2:8 | 1-5 `later` | BSB | BSB text; the New Testament's wording |
+| 11:6-9 | 6-9 | BSB | BSB text |
+| Hunter and prey; peace from knowing God | 6-9 | isaiah/11.json `summary` | Repository |
+| Isaiah 65:25; Habakkuk 2:14; Romans 8:21 | 6-9 `later` | isaiah/11.json `hard` (Romans 8); BSB | BSB text |
+| The hard note: literal renewal (Genesis 1; Romans 8), peoples and nations, or both; no side | 6-9 `hard` | isaiah/11.json `hard` | Repository; each reading in its holders' terms |
+| 11:10-16 | 10-16 | BSB | BSB text |
+| Assyria, Egypt, Pathros, Cush, Elam, Shinar, Hamath, the islands; the date debate; the second hand and the exodus; Ephraim and Judah healed; verse 14 not a key for any people now | 10-16 | isaiah/11.json `historical`; the brief | Repository; both datings |
+| Romans 15:12; Isaiah 40:3 | 10-16 `later` | BSB | BSB text |
+
+Cut in chapter 11: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
