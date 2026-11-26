@@ -25,26 +25,26 @@ Three scripts, kept outside the repo in `/home/user/vs5/t/` (`apply.py`, `factdi
 | Chapter | Words before | after | change | Em-dashes before (per 1,000) | after | Tells before (per 1,000) | after | Edits | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|
 | Introduction: The Exodus Nobody Wanted | 1,775 | 1,775 | +0.0% | 14 (7.9) | 0 (0.0) | 33 (18.6) | 20 (11.3) | 14 | PASS |
-| Chapter One: What Deconstruction Actually Is | 1,814 | 1,814 | +0.0% | 19 (10.5) | 0 (0.0) | 42 (23.2) | 23 (12.7) | 15 | PASS |
+| Chapter One: What Deconstruction Actually Is | 1,814 | 1,814 | +0.0% | 19 (10.5) | 0 (0.0) | 42 (23.2) | 23 (12.7) | 16 | PASS |
 | Chapter Two: What They Are Really Leaving | 2,001 | 2,001 | +0.0% | 25 (12.5) | 0 (0.0) | 50 (25.0) | 26 (13.0) | 18 | PASS |
 | Chapter Three: Why the Church Keeps Missing It | 1,976 | 1,976 | +0.0% | 24 (12.1) | 0 (0.0) | 46 (23.3) | 23 (11.6) | 19 | PASS |
-| Chapter Four: The Bible the Critics Found | 1,916 | 1,916 | +0.0% | 22 (11.5) | 0 (0.0) | 61 (31.8) | 39 (20.4) | 17 | PASS |
+| Chapter Four: The Bible the Critics Found | 1,916 | 1,916 | +0.0% | 22 (11.5) | 0 (0.0) | 61 (31.8) | 39 (20.4) | 18 | PASS |
 | Chapter Five: The Jesus Who Was Buried Under the Brand | 1,873 | 1,873 | +0.0% | 22 (11.7) | 0 (0.0) | 54 (28.8) | 32 (17.1) | 16 | PASS |
 | Chapter Six: The History the Youth Group Did Not Teach | 2,104 | 2,104 | +0.0% | 32 (15.2) | 0 (0.0) | 67 (31.8) | 36 (17.1) | 21 | PASS |
 | Chapter Seven: The Path Through | 1,780 | 1,780 | +0.0% | 23 (12.9) | 0 (0.0) | 56 (31.5) | 34 (19.1) | 20 | PASS |
 | Chapter Eight: What the Church Owes the Deconstructors | 2,045 | 2,045 | +0.0% | 24 (11.7) | 0 (0.0) | 55 (26.9) | 31 (15.2) | 18 | PASS |
-| Chapter Nine: The Sociology of Loss | 2,759 | 2,759 | +0.0% | 20 (7.2) | 0 (0.0) | 50 (18.1) | 30 (10.9) | 18 | PASS |
+| Chapter Nine: The Sociology of Loss | 2,759 | 2,759 | +0.0% | 20 (7.2) | 0 (0.0) | 50 (18.1) | 30 (10.9) | 19 | PASS |
 | Chapter Ten: Science, Creation, and the False Choice | 2,643 | 2,643 | +0.0% | 23 (8.7) | 0 (0.0) | 53 (20.1) | 31 (11.7) | 19 | PASS |
 | Chapter Eleven: The Problem of Hell Revisited | 2,770 | 2,770 | +0.0% | 24 (8.7) | 0 (0.0) | 60 (21.7) | 37 (13.4) | 19 | PASS |
 | Chapter Twelve: Sexuality, the Body, and the Scriptural Imagination | 2,866 | 2,866 | +0.0% | 29 (10.1) | 0 (0.0) | 67 (23.4) | 39 (13.6) | 16 | PASS |
 | Chapter Thirteen: The Spiritual Abuse Reckoning | 2,291 | 2,291 | +0.0% | 21 (9.2) | 0 (0.0) | 45 (19.6) | 26 (11.3) | 18 | PASS |
-| Chapter Fourteen: Doubt as Devotion | 2,761 | 2,761 | +0.0% | 31 (11.2) | 0 (0.0) | 59 (21.4) | 27 (9.8) | 21 | PASS |
-| Chapter Fifteen: Reconstruction | 2,424 | 2,424 | +0.0% | 31 (12.8) | 0 (0.0) | 67 (27.6) | 36 (14.9) | 18 | PASS |
+| Chapter Fourteen: Doubt as Devotion | 2,761 | 2,761 | +0.0% | 31 (11.2) | 0 (0.0) | 59 (21.4) | 27 (9.8) | 23 | PASS |
+| Chapter Fifteen: Reconstruction | 2,424 | 2,424 | +0.0% | 31 (12.8) | 0 (0.0) | 67 (27.6) | 36 (14.9) | 19 | PASS |
 | Chapter Sixteen: The Church We Could Still Become | 2,889 | 2,889 | +0.0% | 32 (11.1) | 0 (0.0) | 83 (28.7) | 52 (18.0) | 23 | PASS |
-| Chapter Seventeen: Parents of Deconstructors | 2,295 | 2,295 | +0.0% | 25 (10.9) | 0 (0.0) | 46 (20.0) | 21 (9.2) | 15 | PASS |
+| Chapter Seventeen: Parents of Deconstructors | 2,295 | 2,295 | +0.0% | 25 (10.9) | 0 (0.0) | 46 (20.0) | 21 (9.2) | 16 | PASS |
 | Chapter Eighteen: Pastors in the Aftermath | 2,192 | 2,192 | +0.0% | 22 (10.0) | 0 (0.0) | 54 (24.6) | 32 (14.6) | 16 | PASS |
-| Conclusion: What We Owe Each Other | 1,660 | 1,660 | +0.0% | 14 (8.4) | 0 (0.0) | 37 (22.3) | 25 (15.1) | 11 | PASS |
-| **All 20** | 44,834 | 44,834 | +0.0% | 477 (10.6) | 0 (0.0) | 1085 (24.2) | 620 (13.8) | 352 | |
+| Conclusion: What We Owe Each Other | 1,660 | 1,660 | +0.0% | 14 (8.4) | 0 (0.0) | 37 (22.3) | 25 (15.1) | 12 | PASS |
+| **All 20** | 44,834 | 44,834 | +0.0% | 477 (10.6) | 0 (0.0) | 1085 (24.2) | 620 (13.8) | 360 | |
 
 ## Introduction: The Exodus Nobody Wanted (`sec01.xhtml`)
 
@@ -70,7 +70,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter One: What Deconstruction Actually Is (`sec02.xhtml`)
 
-Words 1,814 to 1,814. Em-dashes in his prose 19 to 0 (10.5 to 0.0 per 1,000 words). Tells 42 to 23 (23.2 to 12.7 per 1,000). Mean sentence 29.3 words to 29.3; sentences of eight words or fewer 11.3% to 11.3%; of five or fewer 8.1% to 8.1%. 15 edits; paragraphs 22 to 22. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 1,814 to 1,814. Em-dashes in his prose 19 to 0 (10.5 to 0.0 per 1,000 words). Tells 42 to 23 (23.2 to 12.7 per 1,000). Mean sentence 29.3 words to 29.3; sentences of eight words or fewer 11.3% to 11.3%; of five or fewer 8.1% to 8.1%. 16 edits; paragraphs 22 to 22. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 19 to 0, not_but 5 to 5, isnt_its 6 to 6, triplet 5 to 5, anaphora 1 to 1, stock 2 to 2, intens 1 to 1, short_close 3 to 3.
 
@@ -136,7 +136,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter Four: The Bible the Critics Found (`sec05.xhtml`)
 
-Words 1,916 to 1,916. Em-dashes in his prose 22 to 0 (11.5 to 0.0 per 1,000 words). Tells 61 to 39 (31.8 to 20.4 per 1,000). Mean sentence 23.7 words to 23.7; sentences of eight words or fewer 34.6% to 34.6%; of five or fewer 18.5% to 18.5%. 17 edits; paragraphs 24 to 24. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 1,916 to 1,916. Em-dashes in his prose 22 to 0 (11.5 to 0.0 per 1,000 words). Tells 61 to 39 (31.8 to 20.4 per 1,000). Mean sentence 23.7 words to 23.7; sentences of eight words or fewer 34.6% to 34.6%; of five or fewer 18.5% to 18.5%. 18 edits; paragraphs 24 to 24. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 22 to 0, not_but 4 to 4, isnt_its 1 to 1, triplet 8 to 8, anaphora 6 to 6, stock 4 to 4, intens 7 to 7, short_close 9 to 9.
 
@@ -147,7 +147,7 @@ Five pairs, taken at even intervals through the chapter:
 1. Before: There is a version of the Bible handed out in Sunday school, and there is a version atheists describe on YouTube, and neither one is quite the Bible — because the actual book is stranger, older, and more disruptive than either party wants to admit, and a person in deconstruction who picks it up honestly is, for the first time, in a fair fight with it.
    After: There is a version of the Bible handed out in Sunday school, and there is a version atheists describe on YouTube, and neither one is quite the Bible, because the actual book is stranger, older, and more disruptive than either party wants to admit, and a person in deconstruction who picks it up honestly is, for the first time, in a fair fight with it.
 2. Before: The critic says the Bible was decided by a council of politically motivated men who picked winners and excluded losers — the popular version is Dan Brown, and the scholarly version is more sophisticated and more wrong — but there was never a moment at which a committee sat down with a pile of equally authoritative documents and voted.
-   After: The critic says the Bible was decided by a council of politically motivated men who picked winners and excluded losers (the popular version is Dan Brown, and the scholarly version is more sophisticated and more wrong) but there was never a moment at which a committee sat down with a pile of equally authoritative documents and voted.
+   After: The critic says the Bible was decided by a council of politically motivated men who picked winners and excluded losers (the popular version is Dan Brown, and the scholarly version is more sophisticated and more wrong), but there was never a moment at which a committee sat down with a pile of equally authoritative documents and voted.
 3. Before: Each one is either an apparent discrepancy that dissolves on closer reading or a real variation that reflects the character of eyewitness testimony — because real witnesses of real events do not give identical accounts; they give overlapping, differently angled accounts that agree on the load-bearing facts and differ on the rest.
    After: Each one is either an apparent discrepancy that dissolves on closer reading or a real variation that reflects the character of eyewitness testimony, because real witnesses of real events do not give identical accounts; they give overlapping, differently angled accounts that agree on the load-bearing facts and differ on the rest.
 4. Before: The revisionist readings, charitable as some of them are, require theological moves that, applied consistently, dissolve the authority of Scripture itself — because the method that rescues those texts can rescue any text from any claim.
@@ -246,7 +246,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter Nine: The Sociology of Loss (`sec10.xhtml`)
 
-Words 2,759 to 2,759. Em-dashes in his prose 20 to 0 (7.2 to 0.0 per 1,000 words). Tells 50 to 30 (18.1 to 10.9 per 1,000). Mean sentence 28.7 words to 28.7; sentences of eight words or fewer 15.6% to 15.6%; of five or fewer 9.4% to 9.4%. 18 edits; paragraphs 23 to 23. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 2,759 to 2,759. Em-dashes in his prose 20 to 0 (7.2 to 0.0 per 1,000 words). Tells 50 to 30 (18.1 to 10.9 per 1,000). Mean sentence 28.7 words to 28.7; sentences of eight words or fewer 15.6% to 15.6%; of five or fewer 9.4% to 9.4%. 19 edits; paragraphs 23 to 23. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 20 to 0, not_but 8 to 8, not_just 1 to 1, isnt_its 1 to 1, triplet 8 to 8, anaphora 4 to 4, stock 2 to 2, intens 1 to 1, short_close 5 to 5.
 
@@ -356,7 +356,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter Fourteen: Doubt as Devotion (`sec15.xhtml`)
 
-Words 2,761 to 2,761. Em-dashes in his prose 31 to 0 (11.2 to 0.0 per 1,000 words). Tells 59 to 27 (21.4 to 9.8 per 1,000). Mean sentence 31.0 words to 31.0; sentences of eight words or fewer 14.6% to 14.6%; of five or fewer 7.9% to 7.9%. 21 edits; paragraphs 25 to 25. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 2,761 to 2,761. Em-dashes in his prose 31 to 0 (11.2 to 0.0 per 1,000 words). Tells 59 to 27 (21.4 to 9.8 per 1,000). Mean sentence 31.0 words to 31.0; sentences of eight words or fewer 14.6% to 14.6%; of five or fewer 7.9% to 7.9%. 23 edits; paragraphs 25 to 25. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 31 to 0, not_but 7 to 7, not_just 1 to 1, NotX.Y 1 to 1, isnt_its 8 to 7, triplet 5 to 5, anaphora 2 to 2, stock 1 to 1, intens 1 to 1, short_close 2 to 2.
 
@@ -371,14 +371,14 @@ Five pairs, taken at even intervals through the chapter:
 3. Before: The term comes from the sixteenth-century Spanish mystic John of the Cross, who described a specific experience in which God, he argued, withdraws the emotional consolations of faith in order to purify the believer's attachment — and the dark night is not the same as doubt, though from the inside it can look like it.
    After: The term comes from the sixteenth-century Spanish mystic John of the Cross, who described a specific experience in which God, he argued, withdraws the emotional consolations of faith in order to purify the believer's attachment, and the dark night is not the same as doubt, though from the inside it can look like it.
 4. Before: The answer is not given — it is embodied, three days later, in the resurrection — but the question stands, and the tradition has always, at its best, held the question as part of the faith.
-   After: The answer is not given (it is embodied, three days later, in the resurrection) but the question stands, and the tradition has always, at its best, held the question as part of the faith.
+   After: The answer is not given (it is embodied, three days later, in the resurrection), but the question stands, and the tradition has always, at its best, held the question as part of the faith.
 5. Before: Most of them will not say so; most will say they are looking for honesty, or for a church not afraid of their questions, or for a place where they can breathe — and these are the same thing, described from the outside.
    After: Most of them will not say so; most will say they are looking for honesty, or for a church not afraid of their questions, or for a place where they can breathe, and these are the same thing, described from the outside.
 
 
 ## Chapter Fifteen: Reconstruction (`sec16.xhtml`)
 
-Words 2,424 to 2,424. Em-dashes in his prose 31 to 0 (12.8 to 0.0 per 1,000 words). Tells 67 to 36 (27.6 to 14.9 per 1,000). Mean sentence 29.2 words to 29.2; sentences of eight words or fewer 15.7% to 15.7%; of five or fewer 9.6% to 9.6%. 18 edits; paragraphs 22 to 22. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 2,424 to 2,424. Em-dashes in his prose 31 to 0 (12.8 to 0.0 per 1,000 words). Tells 67 to 36 (27.6 to 14.9 per 1,000). Mean sentence 29.2 words to 29.2; sentences of eight words or fewer 15.7% to 15.7%; of five or fewer 9.6% to 9.6%. 19 edits; paragraphs 22 to 22. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 31 to 0, not_but 3 to 3, NotX.Y 1 to 1, isnt_its 3 to 3, triplet 18 to 18, anaphora 3 to 3, stock 2 to 2, intens 2 to 2, colon_reveal 1 to 1, short_close 3 to 3.
 
@@ -422,7 +422,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Chapter Seventeen: Parents of Deconstructors (`sec18.xhtml`)
 
-Words 2,295 to 2,295. Em-dashes in his prose 25 to 0 (10.9 to 0.0 per 1,000 words). Tells 46 to 21 (20.0 to 9.2 per 1,000). Mean sentence 34.3 words to 34.3; sentences of eight words or fewer 11.9% to 11.9%; of five or fewer 4.5% to 4.5%. 15 edits; paragraphs 16 to 16. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 2,295 to 2,295. Em-dashes in his prose 25 to 0 (10.9 to 0.0 per 1,000 words). Tells 46 to 21 (20.0 to 9.2 per 1,000). Mean sentence 34.3 words to 34.3; sentences of eight words or fewer 11.9% to 11.9%; of five or fewer 4.5% to 4.5%. 16 edits; paragraphs 16 to 16. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 25 to 0, not_but 3 to 3, not_just 1 to 1, NotX.Y 1 to 1, triplet 8 to 8, anaphora 2 to 2, stock 1 to 1, intens 1 to 1, short_close 4 to 4.
 
@@ -466,7 +466,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Conclusion: What We Owe Each Other (`sec20.xhtml`)
 
-Words 1,660 to 1,660. Em-dashes in his prose 14 to 0 (8.4 to 0.0 per 1,000 words). Tells 37 to 25 (22.3 to 15.1 per 1,000). Mean sentence 26.8 words to 26.8; sentences of eight words or fewer 24.2% to 24.2%; of five or fewer 19.4% to 19.4%. 11 edits; paragraphs 13 to 13. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 1,660 to 1,660. Em-dashes in his prose 14 to 0 (8.4 to 0.0 per 1,000 words). Tells 37 to 25 (22.3 to 15.1 per 1,000). Mean sentence 26.8 words to 26.8; sentences of eight words or fewer 24.2% to 24.2%; of five or fewer 19.4% to 19.4%. 12 edits; paragraphs 13 to 13. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 14 to 0, not_but 3 to 3, NotX.Y 1 to 1, isnt_its 2 to 2, triplet 11 to 13, anaphora 1 to 1, short_close 5 to 5.
 
@@ -493,6 +493,8 @@ All twenty files were edited. In his running prose: 44,834 words before and afte
 
 **Left alone, and why.** "Name the teachings. Name the books. Name the conferences." (chapter 12) are three imperatives, full sentences, and stay. Every line about Ravi Zacharias, the Southern Baptist Convention, Mars Hill and Hillsong is as he wrote it.
 
+**A second look (2026-11-26).** After the first pass, every place where the rule had closed brackets straight onto "but", "so" or "yet" beginning a new clause was found by search and given its comma ("), but"); one commit, the fact diff passing again.
+
 **Forbidden Language list.** None of the listed words is in his prose.
 
 ## For James: things that look wrong, none of them changed
@@ -512,4 +514,4 @@ The chapters were not read whole for this list. It comes from reading every bloc
 
 ## The files
 
-Rebuilt after the last chapter: still 180 pages (`client/src/data/ebooks.ts` says 180), PDF 1.3 MB, EPUB 338 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,777 words compared, no difference); the PDF's pages carry the same text character for character (227,704 against 227,704). A chapter's second page (a heading at its top) was looked at as an image.
+Rebuilt after the last chapter: still 180 pages (`client/src/data/ebooks.ts` says 180), PDF 1.3 MB, EPUB 338 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,777 words compared, no difference); the PDF's pages carry the same text character for character (227,712 against 227,712). A chapter's second page (a heading at its top) was looked at as an image.

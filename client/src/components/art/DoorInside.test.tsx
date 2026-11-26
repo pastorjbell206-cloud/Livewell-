@@ -22,7 +22,7 @@ describe("DoorInside", () => {
   }
 
   it("hands a door's page its rooms, six or fewer, in the catalogue's order", () => {
-    expect(doorRooms("bible").map((r) => r.name)).toEqual(["Read the Study Bible", "Search the Bible", "How to study the Bible", "The Bible's story", "Bible background", "Reading plans"]);
+    expect(doorRooms("bible").map((r) => r.name)).toEqual(["Bible films", "Read the Study Bible", "How to study the Bible", "Search the Bible", "Bible background", "Reading plans"]);
     for (const d of DOORS) expect(doorRooms(d.id).length).toBeLessThanOrEqual(6);
   });
 });
