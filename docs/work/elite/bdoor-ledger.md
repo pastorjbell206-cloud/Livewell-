@@ -23814,3 +23814,24 @@ Cut in chapter 46: nothing. No care line is needed in this chapter.
 | Deuteronomy 18:10 (its clause); Daniel 2:27 (its clause) | 12-15 `later` | BSB; isaiah/47.json `words` for Deuteronomy 18 | BSB text |
 
 Cut in chapter 47: nothing. The hard note in 5-11 adds the brief's line that judgment on Judah is no reason to blame the Jewish people.
+
+## The plain notes on Isaiah 48 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/48.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 48:1-8 | 1-8 | BSB | BSB text |
+| 48 closes the first half of 40 to 55; sharper tone; the list of credentials; swearing by a god's name; iron neck and bronze forehead | 1-8 | isaiah/48.json `story`, `cultural`, `literary` | Repository |
+| Prophecy given because Israel was stubborn; choice not a reward, Deuteronomy 7:7-8 and 9:4-6 | 1-8 `hard` | isaiah/48.json `hard` | Repository |
+| Deuteronomy 7:7; Hebrews 3:8 (its clause) | 1-8 `later`, `hard` | BSB | BSB text |
+| 48:9-16 (verse 16's last sentence, after the BSB's closing speech mark) | 9-16 | BSB | BSB text |
+| Refining silver; Egypt as iron furnace; "not as silver" as many interpreters read it; name five times | 9-16 | isaiah/48.json `cultural`, `words` | Repository |
+| The ally as Cyrus, 44:28 and 45:1; the voice of verse 16 as prophet or Servant | 9-16 | isaiah/48.json `historical`, `literary` | Repository |
+| Deuteronomy 4:20; Revelation 1:17; Malachi 3:3 (named, not quoted) | 9-16 `later` | BSB; isaiah/48.json `christ` for Revelation | BSB text |
+| 48:17-22 (verse 22 paraphrased, since its BSB text is split by speech marks) | 17-22 | BSB | BSB text |
+| 539 BC; Cyrus's decree; Sheshbazzar and Zerubbabel; many stayed, as Jeremiah 29 told them; a lasting community | 17-22 | isaiah/48.json `historical` | Repository |
+| Peace as shalom; second exodus; 57:21 repeats verse 22 | 17-22 | isaiah/48.json `words`; BSB 57:21 | Repository |
+| Revelation 18:4; 1 Corinthians 10:4 (its clause) | 17-22 `later` | BSB; isaiah/48.json `christ` | BSB text |
+
+Cut in chapter 48: a draft line naming Stephen's charge in Acts 7 was replaced by Hebrews 3:8, so that the chapter's warning about stubbornness is not pointed at the Jewish people.
