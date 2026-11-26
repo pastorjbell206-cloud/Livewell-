@@ -22147,3 +22147,19 @@ Cut in chapter 9: the deep note's lines to Christ (1 Corinthians 15:20 and 15:58
 | The hard note: ironic, quoting the princes of verse 16; or realistic, money paying for feasts and wine; the verb's range; 5:10 and 5:15; not the book's final word on wealth | 16-20 `hard` | ecclesiastes/10.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 10: the deep note's lines to Christ (Matthew 12:42 and 12:36 beside the fool's words; the righteous king beside verses 16-17); James 3 (used elsewhere). No care line is needed in this chapter.
+
+## The plain notes on Ecclesiastes 11 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 11:1; 11:2; clouds and the tree (11:3) paraphrased; 11:4; 11:5; 11:6 | 1-6 | BSB | BSB text |
+| From observation to urging; not knowing as a reason to act; verse 1's two readings (generosity; trade by sea); Phoenician partners and Solomon's three-year voyages (1 Kings 10:22); verse 2 fitting either; seven, even eight (Amos 1-2; Proverbs 30); farmers and the weather; ruach as wind or breath in the womb | 1-6 | ecclesiastes/11.json `story`, `historical`, `cultural`, `literary`, `words` (ruach) | Repository; each reading in its holders' terms |
+| Psalm 139:15 (its first clause); 2 Corinthians 9:6 (its last clause) | 1-6 | the chapter data's cross-references for 11:5 (Psalm 139:15); ecclesiastes/11.json `christ` (2 Corinthians 9:6 as an echo of the call to sow); BSB | Repository; BSB text |
+| 11:7; 11:8 (its first three clauses); 11:9; 11:10 | 7-10 | BSB | BSB text |
+| Light and darkness framing 7-8; hevel as fleeting; the thought running into 12:1; chapters 11-12 as the closing appeal | 7-10 | ecclesiastes/11.json `literary`, `story`, `words` (hevel) | Repository |
+| Numbers 15:39 (paraphrased, with its last words quoted); Ecclesiastes 12:1 (its first clause) | 7-10 | ecclesiastes/11.json `hard` (Numbers 15:39); BSB | Repository; BSB text |
+| The hard note: verse 9 as apparent permission; Numbers 15:39 and the tension; the judgment clause added at once; energy and delight, accountable to God; judgment as the frame that makes joy responsible; verse 10; gift and trust held together | 7-10 `hard` | ecclesiastes/11.json `hard` | Repository |
+
+Cut in chapter 11: the deep note's line to Christ (John 3:8 beside verse 5, which the note says Jesus does not quote); 2 Corinthians 9:6 kept as Paul's own picture of sowing. No care line is needed in this chapter.
