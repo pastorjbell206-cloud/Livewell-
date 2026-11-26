@@ -21703,3 +21703,22 @@ Cut in chapter 1: nothing drawn to the New Testament.
 | Isaiah 40:11 (its clauses); Ezekiel 34:12-13 | 12-13 | BSB | BSB text |
 
 Cut in chapter 2: two unsourced lines (a reading of 2:12-13 as the false prophets' words, and a detail of sheepfold custom) were cut before commit.
+
+## The plain notes on Micah 3 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 (its question); 3:2-3 named and not quoted; 3:4 paraphrased | 1-4 | BSB | BSB text; the picture named, not quoted |
+| Jerusalem under Ahaz and Hezekiah; growth and refugees; the western hill, Hezekiah's tunnel and walls; judges at the gate; the grotesque picture as metaphor; the matched judgment | 1-4 | micah/3.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 23:8 (its clause); Ezekiel 34:2-3 paraphrased | 1-4 | micah/3.json `cultural`; BSB | Repository; BSB text |
+| 3:5 (its clause); 3:6-7 paraphrased; 3:8 | 5-8 | BSB | BSB text |
+| Prophets supported by gifts (1 Samuel 9:7-8); peace for the paying; divination forbidden (Deuteronomy 18:10-14); covering the mouth; 3:8 as a calling | 5-8 | micah/3.json `cultural`, `literary` | Repository |
+| 1 Samuel 9:7-8; Deuteronomy 18:10-14; Jeremiah 6:14 paraphrased | 5-8 | micah/3.json `cultural`; BSB | Repository; BSB text |
+| 3:9; 3:10; 3:11 (its first sentence; the rest paraphrased); 3:12 | 9-12 | BSB | BSB text |
+| Three offices for sale; Zion built with bloodshed and forced labor or seized land; the false confidence; Jeremiah 26:17-19; spared in 701 BC; fallen in 587 or 586 BC | 9-12 | micah/3.json `cultural`, `historical` | Repository |
+| Jeremiah 26:18 (its clause) | 9-12 | micah/3.json `historical`; BSB | Repository; BSB text |
+| The hard note: Jeremiah 26:17-19; Hezekiah's repentance; delayed, not canceled; Jonah's Nineveh; the condition (Jeremiah 18:7-10); prophecy meant to change hearers | 9-12 `hard` | micah/3.json `hard` | Repository |
+
+Cut in chapter 3: nothing drawn to the New Testament.
