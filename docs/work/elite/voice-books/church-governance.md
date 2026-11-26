@@ -205,3 +205,7 @@ The booklet was read for this list in its dash contexts and searched for referen
 
 1. Move each "CHAPTER ..." label to the head of its own chapter?
 2. Keep "throughout this series", or say it another way now that the booklet stands alone?
+
+## The files
+
+Rebuilt after the last chapter: still 44 pages (`client/src/data/booklets.ts` says 44), PDF 510 KB, EPUB 248 KB. `--verify`: the EPUB carries exactly the source folder's text (6,703 words compared, no difference); the PDF's pages carry the same text character for character (39,393 against 39,393). The conclusion and the appendix were looked at as images on the first build.

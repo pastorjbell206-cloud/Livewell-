@@ -915,6 +915,10 @@ differ in is said under each book. Each was then edited (records in
   fuller copyright notice is used. 43 pages became 44
   (`client/src/data/booklets.ts` says 44). `--verify`: identical (6,764
   words; 39,393 characters).
+  Then edited (`church-governance.md`): 64 dashes in his prose to 2 (both
+  before a Scripture reference), every edit punctuation, fact diff passed on
+  all nine files; rebuilt, still 44 pages, `--verify` identical (6,703
+  words; 39,393 characters).
 
 ### The apparatus
 
