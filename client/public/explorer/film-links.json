@@ -121,6 +121,22 @@
    "title": "1 John: so that you may know",
    "line": "A short letter from an old pastor to churches that had been shaken: what it is, how it is put together, what to watch for, and where to start reading."
   },
+  "book-leviticus": {
+   "title": "Leviticus: living near a holy God",
+   "line": "The book of how God's people could live near him: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-numbers": {
+   "title": "Numbers: forty years in the wilderness",
+   "line": "The book of a long walk through the desert, with God leading the way: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-deuteronomy": {
+   "title": "Deuteronomy: love the LORD with all your heart",
+   "line": "The book of Moses saying goodbye to God's people: what it is, how it is put together, what to watch for, and where to start reading."
+  },
+  "book-2-samuel": {
+   "title": "2 Samuel: the king and the promise",
+   "line": "The book of King David, God's great promise, and a family torn apart: what it is, how it is put together, what to watch for, and where to start reading."
+  },
   "holy-spirit": {
    "title": "The Holy Spirit through the Bible",
    "line": "The Holy Spirit from the Bible's first page to its last, in eight pictures. The Holy Spirit is God. He is a person, not a force."
@@ -366,7 +382,9 @@
    "book-joshua"
   ],
   "/questions/old-testament/the-command-to-destroy-the-canaanites": [
-   "book-joshua"
+   "book-joshua",
+   "book-numbers",
+   "book-deuteronomy"
   ],
   "/questions/religions/those-who-never-heard": [
    "never-heard"
@@ -383,6 +401,9 @@
   "/study/bible/1-samuel": [
    "book-1-samuel"
   ],
+  "/study/bible/2-samuel": [
+   "book-2-samuel"
+  ],
   "/study/bible/acts": [
    "book-acts"
   ],
@@ -391,6 +412,9 @@
   ],
   "/study/bible/daniel": [
    "book-daniel"
+  ],
+  "/study/bible/deuteronomy": [
+   "book-deuteronomy"
   ],
   "/study/bible/doctrines/atonement": [
    "the-lamb",
@@ -476,6 +500,9 @@
   "/study/bible/judges": [
    "book-judges"
   ],
+  "/study/bible/leviticus": [
+   "book-leviticus"
+  ],
   "/study/bible/luke": [
    "book-luke"
   ],
@@ -484,6 +511,9 @@
   ],
   "/study/bible/matthew": [
    "book-matthew"
+  ],
+  "/study/bible/numbers": [
+   "book-numbers"
   ],
   "/study/bible/philippians": [
    "book-philippians"
