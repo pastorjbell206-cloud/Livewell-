@@ -24967,3 +24967,18 @@ Cut in chapter 8: Luke 19:41-44 and Mark 2:17 beside the prophet's grief and the
 | Psalm 28:3, Lamentations 5:18, 1 Corinthians 1:31 (clauses); 2 Corinthians 10:17 and Deuteronomy 10:16 (named) | `later` | BSB; jeremiah/9.json `christ` | BSB text |
 
 Cut in chapter 9: the deep note's reading of verse 24 through Christ crucified, beyond Paul's own quotation.
+
+## The plain notes on Jeremiah 10 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 10:1-25 (verse 24 quoted in part, before its dash) | all | BSB | BSB text |
+| Idol-making, wooden core, metal, purple dye; signs in the heavens | 1-16 | jeremiah/10.json `cultural` | Repository |
+| Verse 11 in Aramaic; the Greek lacks 6-8 and 10 | 1-16 | jeremiah/10.json `cultural`, `historical` | Repository |
+| Ancient view of images; addressed to Israel; no contempt for other faiths | 1-16 `hard` | jeremiah/10.json `hard`; the brief | Repository |
+| The bundle, the tent, the shepherds; Psalm 79 | 17-25 | jeremiah/10.json `outline`; BSB | Repository, BSB text |
+| Psalm 115:4, 1 Thessalonians 1:9, Proverbs 16:9, Psalm 79:6 (clauses) | `later` | BSB; jeremiah/10.json `christ` | BSB text |
+
+Cut in chapter 10: Acts 14:15 and 17:24-25 beside the chapter, which the deep note calls a thematic link.
