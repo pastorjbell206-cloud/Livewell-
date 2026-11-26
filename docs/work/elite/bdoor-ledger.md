@@ -25160,3 +25160,22 @@ Cut in chapter 14: nothing drawn to the New Testament.
 | The hard note: Is it fair to call God's people useless, as if their only value were what they produce? The readings in their holders' terms | 1-8 `hard` | ezekiel/15.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 15: John 15:6 beside the burned branches, which the New Testament does not draw from Ezekiel.
+
+## The plain notes on Ezekiel 16 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/16.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The baby God told to live: the text paraphrased; quoted clauses at verses 2, 3, 4-5, 6, 8, 14 | 1-14 | BSB | BSB text |
+| Background in `hearers` | 1-14 | ezekiel/16.json `historical`, `cultural`, `literary` | Repository |
+| Later: Ruth 3:9; Jeremiah 2:2 | 1-14 `later` | BSB | BSB text |
+| Gifts given to idols: the text paraphrased; quoted clauses at verses 15, 16-25, 20-21, 22, 26-29, 35-41, 43 | 15-43 | BSB | BSB text |
+| Background in `hearers` | 15-43 | ezekiel/16.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 16:8; 2 Kings 23:10 | 15-43 `later` | BSB | BSB text |
+| The hard note: How should a chapter be read that pictures God as a husband who exposes and punishes an unfaithful wife, especially by readers who have suffered abuse? The readings in their holders' terms | 15-43 `hard` | ezekiel/16.json `hard` | Repository; the site takes no side |
+| Sodom's sin, and an everlasting covenant: the text paraphrased; quoted clauses at verses 44, 46-52, 49, 53, 60, 63 | 44-63 | BSB | BSB text |
+| Background in `hearers` | 44-63 | ezekiel/16.json `historical`, `cultural`, `literary` | Repository |
+| Later: Hosea 2:19; Jeremiah 31:31-33 | 44-63 `later` | BSB | BSB text |
+
+Cut in chapter 16: the deep note's hotline telephone number, replaced by the site's abusive-marriage care line, byte for byte; Ephesians 5:25-27, Revelation 19 and 21, Luke 22:20 and Hebrews 13:20, which the New Testament does not draw from Ezekiel 16. The punishment of verses 35 to 41 named, not described.
