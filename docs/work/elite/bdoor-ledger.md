@@ -24023,3 +24023,19 @@ New Testament lines in chapter 5: none drawn. Cut in chapter 5: nothing.
 | The hard note: Why is the crown placed on Joshua the priest rather than on Zerubbabel, the heir of David? The readings in their holders' terms | 9-15 `hard` | zechariah/6.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 6: none drawn. Cut in chapter 6: nothing.
+
+## The plain notes on Zechariah 7 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/7.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Who was the fasting for?: the text paraphrased, its quoted verses (in single or double quotes) | 1-7 | BSB | BSB text |
+| Background in `hearers` | 1-7 | zechariah/7.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 25:8-9; 2 Kings 25:25; Isaiah 58:6 | 1-7 `later` | BSB | BSB text |
+| The hard note: Is God rejecting fasting and religious practice altogether? The readings in their holders' terms | 1-7 `hard` | zechariah/7.json `hard` | Repository; the site takes no side |
+| Justice, mercy, and hearts like flint: the text paraphrased, its quoted verses (in single or double quotes) | 8-14 | BSB | BSB text |
+| Background in `hearers` | 8-14 | zechariah/7.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 23:9; Exodus 22:22; Ezekiel 36:26 | 8-14 `later` | BSB | BSB text |
+
+New Testament lines in chapter 7: none drawn. Cut in chapter 7: nothing.
