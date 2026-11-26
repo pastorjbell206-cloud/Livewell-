@@ -25838,3 +25838,17 @@ Cut in chapter 38: nothing.
 | Lamentations 4:20, Ezekiel 12:13, Psalm 34:22 (clauses); Jeremiah 38:10-13 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 39: nothing. Verses 6 and 7 are stated in a line and not described.
+
+## The plain notes on Jeremiah 40 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 40:1-16 (verses 2-5 and 7-16 partly paraphrased) | all | BSB | BSB text |
+| Ramah as a gathering point; chapters 39 and 40 complementary | 1-6 | jeremiah/40.json `historical` | Repository |
+| A foreign officer's words: shaped by the narrator, or a conqueror's claim (2 Kings 18:25) | 1-6 | jeremiah/40.json `cultural`, `hard` | Repository |
+| Gedaliah of Shaphan's family; Mizpah as Tell en-Nasbeh, occupied | 7-16 | jeremiah/40.json `historical` | Repository |
+| 2 Kings 25:22, 25:24, Proverbs 22:3 (clauses); 2 Kings 18:25 (paraphrased) | `later` | BSB | BSB text |
+
+Cut in chapter 40: the Jaazaniah and Gedaliah seals named in the deep note, left out because their identification is uncertain; Matthew 10:16, replaced by Proverbs 22:3.
