@@ -24906,3 +24906,19 @@ Cut in chapter 4: nothing drawn to the New Testament; the illness explanations o
 | The hard note: How can God say he will not pity or spare, and that his wrath will be spent, without seeming cruel? The readings in their holders' terms | 5-17 `hard` | ezekiel/5.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 5: nothing drawn to the New Testament. The siege hunger of 5:10 named, not described.
+
+## The plain notes on Ezekiel 6 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Against the mountains of Israel: the text paraphrased; quoted clauses at verses 2, 3, 3-6, 7 | 1-7 | BSB | BSB text |
+| Background in `hearers` | 1-7 | ezekiel/6.json `historical`, `cultural`, `literary` | Repository |
+| Later: Deuteronomy 12:2; 2 Kings 23:14 | 1-7 `later` | BSB | BSB text |
+| A remnant that remembers: the text paraphrased; quoted clauses at verses 8, 9, 10, 11, 13, 14 | 8-14 | BSB | BSB text |
+| Background in `hearers` | 8-14 | ezekiel/6.json `historical`, `cultural`, `literary` | Repository |
+| Later: Amos 8:2; Ezekiel 36:31 | 8-14 `later` | BSB | BSB text |
+| The hard note: Why would God want survivors to loathe themselves? Isn't that harmful? The readings in their holders' terms | 8-14 `hard` | ezekiel/6.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 6: the deep note's suggestion of a counselor recast so that the hard note stays clear of a new care sentence; 2 Corinthians 7:10 kept as the tradition's own source, not as a line drawn from Ezekiel.
