@@ -25994,3 +25994,18 @@ Cut in chapter 49: a draft line setting Acts 2:9 beside Elam's restoration, whic
 | Isaiah 13:19, Revelation 18:2, Isaiah 43:14, Proverbs 23:11 (clauses) | `later` | BSB; jeremiah/50.json `christ` | BSB text |
 
 Cut in chapter 50: nothing. The notes identify no present-day power with Babylon.
+
+## The plain notes on Jeremiah 51 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/51.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 51:1-64 (largely paraphrased) | all | BSB | BSB text |
+| Medes and Nineveh 612 BC; Cyrus 539 BC; Ararat as Urartu, Minni, Ashkenaz; waters and walls | 1-33 | jeremiah/51.json `historical` | Repository |
+| 15-19 repeating 10:12-16; Sheshach by atbash (25:26); Bel | 1-58 | jeremiah/51.json `literary`; jeremiah/25.json | Repository |
+| The calls for destruction: victims' words, vengeance to God, stock war language, Revelation | 34-58 `hard` | jeremiah/51.json `hard`; the coordinator's direction | Repository |
+| 594 or 593 BC; Seraiah son of Neriah; the scroll in the Euphrates | 59-64 | jeremiah/51.json `historical`; BSB | Repository, BSB text |
+| Revelation 17:4, Isaiah 21:9, Revelation 18:4, Psalm 137:1, Revelation 18:21 (clauses); Jeremiah 36:4 (named) | `later` | BSB; jeremiah/51.json `christ` | BSB text |
+
+Cut in chapter 51: nothing. The hard note says the words give no warrant for violence against any people and draw no line to any present-day state.
