@@ -1742,6 +1742,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-leviticus",
     "book-numbers",
     "book-deuteronomy",
+    "book-2-samuel",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2607,5 +2608,20 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     const younger = f.frames.map(fr => fr.younger).join(" ");
     expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|destroy/i);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|battle|army|fire|body|grave/i);
+  });
+
+  it("2 Samuel names Bathsheba, Tamar and Absalom at the older level only, in the book page's words, carries its word for anyone assaulted, and draws none of it", () => {
+    const f = filmFile("book-2-samuel");
+    expect(f.care).toBe(JSON.parse(fs.readFileSync(path.join(PUBLIC, "explorer/stops/kingdom.json"), "utf8")).care);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/Bathsheba|Uriah|Tamar|Amnon|rape|adultery|kill|murder|die|dead|death|blood|sword/i);
+    const older = f.frames.map(fr => fr.older).join(" ");
+    expect(older).toContain("the text places the whole responsibility on David");
+    expect(older).toContain("the rape of Tamar");
+    expect(older).not.toMatch(/bathing|roof|slept with|lay with|violated|forced|concubines/i);
+    expect(f.differ?.text).toContain("A word for anyone who has been sexually assaulted. What was done to you was wrong, and it was not your fault.");
+    expect(f.differ?.text).toContain("nothing in the story blames her");
+    expect(f.differ?.links?.map(l => l.href)).toContain("/help");
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/Bathsheba|bath|roof|Tamar|sword|battle|body|caught in/i);
   });
 });

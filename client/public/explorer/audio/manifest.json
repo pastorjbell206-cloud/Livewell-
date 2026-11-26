@@ -4005,6 +4005,116 @@
     }
    ]
   },
+  "book-2-samuel": {
+   "title": {
+    "file": "book-2-samuel/title.mp3",
+    "hash": "91111f6ee1f4ae3241cf",
+    "seconds": 3.23,
+    "bytes": 19940
+   },
+   "younger": [
+    {
+     "id": "king",
+     "file": "book-2-samuel/younger/01-king.mp3",
+     "hash": "f5bdadd6db57e758dbcd",
+     "seconds": 21.48,
+     "bytes": 129524
+    },
+    {
+     "id": "layout",
+     "file": "book-2-samuel/younger/02-layout.mp3",
+     "hash": "7004bbf0d4577a2c4134",
+     "seconds": 28.31,
+     "bytes": 170420
+    },
+    {
+     "id": "crown",
+     "file": "book-2-samuel/younger/03-crown.mp3",
+     "hash": "0027ad3f3ba6e9a94930",
+     "seconds": 24.17,
+     "bytes": 145508
+    },
+    {
+     "id": "house",
+     "file": "book-2-samuel/younger/04-house.mp3",
+     "hash": "50e4ccb875b87f858afc",
+     "seconds": 25.27,
+     "bytes": 152132
+    },
+    {
+     "id": "nathan",
+     "file": "book-2-samuel/younger/05-nathan.mp3",
+     "hash": "0005a69697a89d667e65",
+     "seconds": 27.4,
+     "bytes": 164948
+    },
+    {
+     "id": "sword",
+     "file": "book-2-samuel/younger/06-sword.mp3",
+     "hash": "2f84b360953701c556e1",
+     "seconds": 25.64,
+     "bytes": 154436
+    },
+    {
+     "id": "start",
+     "file": "book-2-samuel/younger/07-start.mp3",
+     "hash": "9a74310d8ff9acb779cd",
+     "seconds": 22,
+     "bytes": 132548
+    }
+   ],
+   "older": [
+    {
+     "id": "king",
+     "file": "book-2-samuel/older/01-king.mp3",
+     "hash": "df0fb6c667ad6103c045",
+     "seconds": 25.82,
+     "bytes": 155444
+    },
+    {
+     "id": "layout",
+     "file": "book-2-samuel/older/02-layout.mp3",
+     "hash": "c45861e280189575920f",
+     "seconds": 27.25,
+     "bytes": 164084
+    },
+    {
+     "id": "crown",
+     "file": "book-2-samuel/older/03-crown.mp3",
+     "hash": "880357d9ac29804aa63f",
+     "seconds": 26.27,
+     "bytes": 158180
+    },
+    {
+     "id": "house",
+     "file": "book-2-samuel/older/04-house.mp3",
+     "hash": "6e61803d7f923352cb1e",
+     "seconds": 28.38,
+     "bytes": 170852
+    },
+    {
+     "id": "nathan",
+     "file": "book-2-samuel/older/05-nathan.mp3",
+     "hash": "b967bdc73efddd13b952",
+     "seconds": 27.38,
+     "bytes": 164948
+    },
+    {
+     "id": "sword",
+     "file": "book-2-samuel/older/06-sword.mp3",
+     "hash": "af9c3056e9b44b114e78",
+     "seconds": 28.52,
+     "bytes": 171716
+    },
+    {
+     "id": "start",
+     "file": "book-2-samuel/older/07-start.mp3",
+     "hash": "c3515ad6a5baef3c9e34",
+     "seconds": 23.6,
+     "bytes": 142196
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

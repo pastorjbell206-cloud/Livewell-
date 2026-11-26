@@ -448,6 +448,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Deuteronomy in seven moving pictures: Moses' farewell, three addresses, the Shema, chosen in love, laws that take the side of the weak, the call to choose life, and where to start reading.",
     },
+    "book-2-samuel": {
+      title: "2 Samuel: the king and the promise: Bible Explorer",
+      description:
+        "The whole of 2 Samuel in seven moving pictures: King David, five parts, a crown not seized, the promise of a house, Nathan's word to the king, the sword in David's house, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };
