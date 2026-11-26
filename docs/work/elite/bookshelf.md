@@ -880,6 +880,13 @@ differ in is said under each book. Each was then edited (records in
   punctuation, every position and steelman word for word, fact diff passed on
   all fourteen files; rebuilt, still 181 pages, `--verify` identical
   (49,255 words; 246,017 characters).
+- **Is Critical Race Theory Biblical?** (`critical-race-theory-biblical`).
+  The PDF and EPUB carry the same text: the comparison found only running
+  heads, page numbers, repeated block-quotation references (the four "Letter
+  from Birmingham Jail" lines among them) and pull quotes read out of order;
+  the PDF's fuller copyright notice is used ("James C. Bell", as both
+  originals print it). 206 pages became 193 (`client/src/data/ebooks.ts`
+  says 193). `--verify`: identical (47,295 words; 243,250 characters).
 
 ### The apparatus
 
