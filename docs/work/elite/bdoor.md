@@ -9436,3 +9436,78 @@ The same checks after the book page and after each chapter, each exit 0, and `te
 ### Next
 
 The wisdom books are now whole, from Job to the Song. The Song's and Ecclesiastes' book pages are shorter than the plan's 3,500 words (2,965 and 3,325), in proportion to books of eight and twelve chapters; either can be lengthened if James wants. Questions only James can answer are in the hand-back.
+
+## Isaiah: the book page and every chapter (2026-11-26)
+
+Isaiah is complete: a teaching introduction on the book page and all sixty-six chapters in plain words, in the same shape as Lamentations and Daniel. One commit for the book page (with the rebuilt explore indexes, and `teaching.test.tsx` listing Isaiah with its frame, `canaan`) and one per chapter, sixty-seven in all. Chapters were drafted and checked in the scratch folder's stage while the heavy gates waited on the machine's load, then copied in, checked again in place and committed in order.
+
+### The book page (`/study/bible/isaiah`, same address)
+
+Data only, in `client/public/bible/notes/isaiah/intro.json`, field `teaching`. Fourteen parts (3,987 words): Isaiah in a minute; Where it sits in the story; Who wrote it, and when; Assyria, Babylon and Cyrus; How Isaiah is built; The Holy One of Israel; Ahaz, Immanuel, and the promised king; The nations, and a feast for all peoples; Trust or ruin: Hezekiah and Assyria; Comfort for the exiles; The Servant of the LORD; Zion restored, and new heavens and a new earth; How the New Testament reads Isaiah; How to read Isaiah. Then 27 hard passages, 15 key words, 15 timeline entries and eleven Go deeper pages, all live. The map draws six places where the site's other maps already place them (Jerusalem; Samaria, roughly, as a region; the Jordan; Damascus; Tyre; Sidon). Galilee, Moab, Edom and Bozrah, Philistia, Lachish, Egypt, Assyria and Babylon are left off because the site's records do not place them, and the note says so.
+
+Contested matters are given in their holders' terms with no side taken: one author or more (the traditional view and the critical view, as the deep notes give them); the word of 7:14, stated as debated, with Matthew 1:23; the Servant (Israel, the remnant, the prophet, an individual, the Messiah), with the Jewish readings the site's chapter 53 note gives; the millennium in 65:20 as a second-order question.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 4 | 1,815 | 34 | 2 | 1,159 |
+| 2 | 3 | 1,486 | 35 | 2 | 767 |
+| 3 | 3 | 1,410 | 36 | 3 | 1,529 |
+| 4 | 3 | 1,158 | 37 | 4 | 1,796 |
+| 5 | 4 | 1,753 | 38 | 3 | 1,394 |
+| 6 | 3 | 1,383 | 39 | 2 | 801 |
+| 7 | 3 | 1,740 | 40 | 3 | 1,341 |
+| 8 | 3 | 1,444 | 41 | 3 | 1,394 |
+| 9 | 3 | 1,593 | 42 | 3 | 1,466 |
+| 10 | 4 | 1,662 | 43 | 4 | 1,532 |
+| 11 | 3 | 1,400 | 44 | 3 | 1,389 |
+| 12 | 2 | 675 | 45 | 3 | 1,360 |
+| 13 | 3 | 1,421 | 46 | 2 | 724 |
+| 14 | 3 | 1,523 | 47 | 3 | 1,463 |
+| 15 | 2 | 891 | 48 | 3 | 1,461 |
+| 16 | 3 | 1,152 | 49 | 4 | 1,879 |
+| 17 | 3 | 1,218 | 50 | 3 | 1,437 |
+| 18 | 2 | 718 | 51 | 3 | 1,611 |
+| 19 | 3 | 1,397 | 52 | 3 | 1,364 |
+| 20 | 2 | 861 | 53 | 4 | 2,437 |
+| 21 | 3 | 1,211 | 54 | 2 | 1,174 |
+| 22 | 2 | 1,260 | 55 | 2 | 1,023 |
+| 23 | 3 | 1,209 | 56 | 2 | 1,049 |
+| 24 | 2 | 1,232 | 57 | 2 | 1,216 |
+| 25 | 3 | 1,203 | 58 | 3 | 1,162 |
+| 26 | 3 | 1,236 | 59 | 3 | 1,338 |
+| 27 | 3 | 1,075 | 60 | 3 | 1,418 |
+| 28 | 4 | 1,650 | 61 | 3 | 1,203 |
+| 29 | 3 | 1,394 | 62 | 3 | 1,045 |
+| 30 | 4 | 1,715 | 63 | 3 | 1,526 |
+| 31 | 2 | 784 | 64 | 2 | 1,122 |
+| 32 | 3 | 1,057 | 65 | 3 | 1,760 |
+| 33 | 3 | 1,374 | 66 | 3 | 1,576 |
+| | | | **Total** | **191** | **88,016** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part naming a book beyond Isaiah.
+
+### The hard places, and how they are stated
+
+- **The New Testament's own lines, and only those:** 7:14 with Matthew 1:23, the word stated as debated; 40:3 with the Gospels; 52:13 to 53:12 as Acts 8 and 1 Peter 2 read it, with the Jewish readings set beside the Christian one (Rashi, Ibn Ezra, Kimhi and most Jewish interpreters today; the remnant; the prophet; the Christian answer from 49:5-6, 53:8-9 and 40:2; the Targum's messianic reading without a dying Messiah); 61:1-2 with Luke 4, and why Jesus stopped reading. Every other line the deep notes draw to Christ, where the New Testament does not draw it, is cut, and each chapter's ledger names it.
+- **One person's suffering for another (53:10-12):** the objection in its strongest form (Ezekiel 18:20; Socinus; Brown and Parker), the song's own answers, faithful Christians differing on the mechanism; the cross gives no warrant to hurt anyone or to stay where one is harmed.
+- **Illness read as punishment (53:4):** the speakers were wrong; John 9:3; the illness line.
+- **Cities pictured as women stripped or shamed (3:16-4:1; 47:1-4; 57:3-10):** a prophetic picture of a city, never a warrant for any man to shame or harm a woman, with the line for anyone being hurt.
+- **The Servant beaten (50:6):** suffering for his calling, not a pattern for staying in abuse, with the same line.
+- **Judgment on Judah and on the nations (47:6; 48:1-8; 51:17-23; 63:1-6; 65:2):** never a reason to blame the Jewish people, never a key for calling any people's suffering deserved; Edom identifies no present-day people; Romans 10:21 read with Romans 11:1-2; chapter 60's kings and nations give no people a warrant to claim power over others in God's name.
+- **The barren woman (54:1):** a city, not a promise of a child to any one person; childlessness no verdict, with the grief line; the infant of 65:20 with the line for loss of a child.
+
+### Care lines
+
+Reused whole, byte for byte, each naming Find Help, none with a phone number, no new care sentence: the line for anyone being hurt at home, at work or in a church (3, 47, 50, 53, 57); the grief line (8, 25, 51, 54); the line for anyone sexually assaulted (13); the illness line (33, 38, 53); the line for loss of a child (65); the line for anyone suffering now (book page). The care check found every care paragraph already standing elsewhere on the site.
+
+### Cut or narrowed
+
+Each chapter's ledger in `bdoor-ledger.md` names its cuts. In outline: every deep-note line to Christ the New Testament does not itself draw; Romans 2:24 beside 52:5; Stephen's charge (Acts 7:51) beside 48:4, replaced by Hebrews 3:8; a sentence on the Christian use of chapter 53 against Jews, cut for want of a source; unsourced lines caught before commit (45). Verses with dashes or inner speech marks are quoted in part or paraphrased; exclamations are quoted only in double quotes; one verse (49:23) is paraphrased because validate-bible-notes holds a word in it to the Forbidden Language list.
+
+### What was run
+
+After the book page and each chapter, each exit 0 at commit: validate-bible-notes; the strict, single-quote, cited-verse and nested quotation checks; the forbidden-word, signposting and first-person scans; the care-line check; no-emdash; the search-index and passage-index checks; validate-politics; the eight explore-index checks. Three `later` fields that named only Isaiah (5, 10 and 41) gained a psalm or another book, and two short ones (1 and 17) were lengthened; the ledger says which.
+
+Four pushes, each after a merge of the shared branch and the full gate order on the merged tree: the 63 content gates, `pnpm check`, `pnpm test`, `pnpm build`, sitemap, prerender and `audit:canonicals`, then the served build on port 4611 at 390 and 1440 (the book page's 14 parts, 27 hard passages, 15 timeline entries and 6 places; no overlap, no sideways scroll; every chapter's passages and fields, 0 problems). The push of the book page and chapters 1 to 20 met one failing timing test in `BibleTimeline.test.tsx` under a load near 14; it passed alone and passed in the later full runs. When the branch moved during a run, the merge was made again (ledger conflicts kept both sides; the explore indexes rebuilt), and the content gates, `pnpm check`, the scans and `teaching.test.tsx` passed again before the push.

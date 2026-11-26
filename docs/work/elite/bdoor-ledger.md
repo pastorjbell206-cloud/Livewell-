@@ -24324,3 +24324,131 @@ Cut in chapter 59: Deuteronomy 32:35 is left to the deep note. No care line is n
 | Revelation 21:23; Ezekiel 10 (named) | 17-22 `later` | BSB; isaiah/60.json `christ`, `words` | BSB text |
 
 Cut in chapter 60: the magi of Matthew 2, which the deep note calls a thematic echo, and John 8:12 and Matthew 5:14, are left out. The hard note's last sentence, that the chapter gives no people or nation today a warrant to claim power over others in God's name, follows the brief.
+
+## The plain notes on Isaiah 61 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/61.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 61:1-3 | 1-3 | BSB | BSB text |
+| Center of 60 to 62; recalls 42:1 and 52:7 | 1-3 | isaiah/61.json `story` | Repository |
+| Anointing of priests, kings, prophets; the Spirit as the anointing; mashiach, Messiah, Christ | 1-3 | isaiah/61.json `cultural`, `words` | Repository |
+| Deror and the jubilee of Leviticus 25; uncertain practice; ashes and oil; peer and epher | 1-3 | isaiah/61.json `cultural`, `words` | Repository |
+| The speaker debated; 11QMelchizedek | 1-3 | isaiah/61.json `historical` | Repository |
+| Luke 4:19-21 (verse 19's clause; verse 21's saying) | 1-3 `later` | BSB; isaiah/61.json `christ` | BSB text |
+| Why Jesus stopped reading; Luke 21:22 | 1-3 `hard` | isaiah/61.json `hard` | Repository |
+| 61:4-9 (verse 9 paraphrased) | 4-9 | BSB | BSB text |
+| After the return; the traditional view; generations of ruin | 4-9 | isaiah/61.json `historical` | Repository |
+| The double portion as the firstborn's share | 4-9 | Deuteronomy 21:17 (BSB) | BSB text |
+| Exodus 19:6 (its clause); 1 Peter 2:9 (its clause) | 4-9 `later` | BSB | BSB text |
+| 61:10-11 | 10-11 | BSB | BSB text |
+| The singer debated; the priestly headdress; the bride's jewels; garden and oaks | 10-11 | isaiah/61.json `literary`, `cultural` | Repository |
+| Psalm 30:11 (its clauses) | 10-11 `later` | BSB | BSB text |
+
+Cut in chapter 61: a draft `later` line with Mary's song (Luke 1:46-47) and Revelation 19:8 was replaced by Psalm 30:11, because the New Testament does not tie those to this chapter. Peter's use of the priestly names comes from Exodus 19:6, which the note quotes first.
+
+## The plain notes on Isaiah 62 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/62.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 62:1-5 | 1-5 | BSB | BSB text |
+| Completes 60 to 62; the speaker unnamed and debated | 1-5 | isaiah/62.json `story`, `historical` | Repository |
+| Forsaken and Desolate; Nehemiah's broken walls, mid-fifth century BC | 1-5 | isaiah/62.json `historical` | Repository |
+| Names and new names, Abram and Jacob; Hephzibah, Manasseh's mother; Beulah; baal reclaimed, 54:5 | 1-5 | isaiah/62.json `cultural`, `words` | Repository |
+| Genesis 17:5 (its clause); 2 Kings 21:1 (its last sentence) | 1-5 `later` | BSB | BSB text |
+| 62:6-9 (verse 8's oath paraphrased) | 6-9 | BSB | BSB text |
+| Watchmen as intercessors; harvests taken; Nehemiah 5:4; Deuteronomy 28:33 | 6-9 | isaiah/62.json `cultural`, `historical` | Repository |
+| Deuteronomy 28:33 (its first sentence); Nehemiah 9:37 (named) | 6-9 `later` | BSB | BSB text |
+| 62:10-12 (verse 11 paraphrased, since its BSB text holds inner speech marks) | 10-12 | BSB | BSB text |
+| Royal procession; threads from 40:3, 57:14, 52:8, 40:10; yesha, Joshua and Jesus; the frame; 63's turn | 10-12 | isaiah/62.json `cultural`, `story`, `words`, `literary` | Repository |
+| Matthew 21:5 (its inner words), with Zechariah 9:9 named | 10-12 `later` | BSB; isaiah/62.json `christ` | BSB text |
+
+Cut in chapter 62: Ephesians 5 and Revelation 2, 3 and 21, which the deep note links by theme, are left out; only Matthew 21:5, which quotes verse 11, is kept.
+
+## The plain notes on Isaiah 63 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/63.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 63:1-6 (the warrior's speech paraphrased, since it sits inside the BSB's speech marks) | 1-6 | BSB | BSB text |
+| The dark side of the day; the warrior alone | 1-6 | isaiah/63.json `story` | Repository |
+| The winepress; treaders red; the prophets' use; Edom and adom, Bozrah and the vintage | 1-6 | isaiah/63.json `cultural` | Repository |
+| Edom, Esau, Psalm 137 and Obadiah; Bozrah; Edom as byword, Isaiah 34; the echo of 59:16-17 | 1-6 | isaiah/63.json `historical`, `literary` | Repository |
+| Revelation 19:13, 19:15 (its clause) | 1-6 `later` | BSB; isaiah/63.json `christ` | BSB text |
+| Poetry not report; anger as justice; judgment in God's hands alone; Christians differ; Revelation; the turn to prayer | 1-6 `hard` | isaiah/63.json `hard` | Repository |
+| No present-day people identified with Edom | 1-6 `hard` | the brief; lamentations/plain/4.json wording | Repository |
+| 63:7-14 (verse 8's saying paraphrased) | 7-14 | BSB | BSB text |
+| Prayer to the end of 64, answer in 65 and 66; communal lament; chesed; shepherds as Moses; the Angel of his Presence, Exodus 23 and 33; atsav and Genesis 6:6 | 7-14 | isaiah/63.json `story`, `literary`, `words`, `cultural` | Repository |
+| Exodus 33:14; Psalm 74:1 (its question) | 7-14 `later` | BSB | BSB text |
+| 63:15-19 | 15-19 | BSB | BSB text |
+| Sanctuary trampled; 538 BC, temple about 515 BC; the traditional view; 587 or 586 BC; Father rare; go'el as a name; verse 17's boldness | 15-19 | isaiah/63.json `historical`, `cultural`, `words` | Repository |
+| Isaiah 64:1 (paraphrased); Deuteronomy 32:6 (its question) | 15-19 `later` | BSB | BSB text |
+
+Cut in chapter 63: the reading of the winepress as the cross, which the deep note itself calls thematic, is left out, and a draft line on Romans 8:15 was replaced by Deuteronomy 32:6.
+
+## The plain notes on Isaiah 64 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/64.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 64:1-7 | 1-7 | BSB | BSB text |
+| Second half of the lament from 63:7; Sinai and the storm poems; the sky as a dome; qara as tearing clothes | 1-7 | isaiah/64.json `story`, `cultural`, `words` | Repository |
+| Purity language; iddah as menstrual cloth; best deeds unfit while hearts were turned away | 1-7 | isaiah/64.json `cultural`, `words` | Repository |
+| Hebrew numbering one lower | 1-7 | isaiah/64.json `historical` | Repository |
+| 1 Corinthians 2:9 (its inner quotation); Exodus 19:18 (its clause) | 1-7 `later` | BSB; isaiah/64.json `christ` | BSB text |
+| Verse 6 in context; verse 5; Protestant, Catholic and Orthodox readings; a confession, not an accusation | 1-7 `hard` | isaiah/64.json `hard` | Repository |
+| 64:8-12 | 8-12 | BSB | BSB text |
+| But now; Father and potter; Genesis 2:7; the word all | 8-12 | isaiah/64.json `literary`, `cultural` | Repository |
+| Nebuzaradan, 587 or 586 BC, 2 Kings 25:9; about 515 BC; the traditional view; Lamentations, Psalms 74 and 79; the hanging question | 8-12 | isaiah/64.json `historical`, `literary` | Repository |
+| Jeremiah 18:6 (its second sentence); Psalm 79:1 (its clause) | 8-12 `later` | BSB | BSB text |
+
+Cut in chapter 64: the reading of Mark 1:10 as an answer to verse 1, which the deep note gives as what many interpreters hear, is left out.
+
+## The plain notes on Isaiah 65 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/65.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 65:1-7 (verses 1, 5 and 7 partly paraphrased around inner speech marks) | 1-7 | BSB | BSB text |
+| God's reply to 63:7 to 64:12; not hiding | 1-7 | isaiah/65.json `story` | Repository |
+| Gardens, brick altars, graves and secret places, pork; holier than you | 1-7 | isaiah/65.json `cultural` | Repository |
+| Dating; tensions in Ezra, Nehemiah, Malachi | 1-7 | isaiah/65.json `historical` | Repository |
+| Romans 10:20 (its clause), 10:21 (named); Romans 11 named | 1-7 `later` | BSB; isaiah/65.json `christ` | BSB text |
+| Paul's application to Israel; Romans 11:1-2; the remnant in verses 8 and 9 | 1-7 `hard` | BSB; isaiah/65.json `christ`; the brief | BSB text |
+| 65:8-16 (verse 8's saying paraphrased) | 8-16 | BSB | BSB text |
+| The cluster; servants singular then plural, seven times; Sharon, Achor, Achan, Hosea 2:15; Gad and Meni and the pun; the God of Amen | 8-16 | isaiah/65.json `cultural`, `words`, `historical` | Repository |
+| Hosea 2:15 (its clause); Joshua 7:24-26 (named) | 8-16 `later` | BSB | BSB text |
+| 65:17-25 | 17-25 | BSB | BSB text |
+| Bara three times; old curses undone; 11:6-9 and Genesis 3:14 | 17-25 | isaiah/65.json `words`, `literary` | Repository |
+| 2 Peter 3:13 (its clause); Revelation 21:1 (its clause) | 17-25 `later` | BSB; isaiah/65.json `christ` | BSB text |
+| Three readings of verse 20; the millennium as second order | 17-25 `hard` | isaiah/65.json `hard` | Repository |
+| The CHILDLOSS care line, byte for byte | 17-25 `hard` | carelines.json (from the site) | care.mjs |
+
+Cut in chapter 65: nothing. The hard note on Romans 10:21 follows the brief that judgment on Judah is never a reason to blame the Jewish people.
+
+## The plain notes on Isaiah 66 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/66.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 66:1-6 (verses 1, 5 and 6 partly paraphrased around inner speech marks) | 1-6 | BSB | BSB text |
+| Ends as it began, chapter 1; everything grown | 1-6 | isaiah/66.json `story` | Repository |
+| About 515 BC; readings of verse 1; verses 6 and 20; the traditional view | 1-6 | isaiah/66.json `historical` | Repository |
+| Verse 3's pairs; dogs unclean; chared and Ezra 9:4; division within | 1-6 | isaiah/66.json `cultural`, `words`, `historical` | Repository |
+| Acts 7:49 (its first clause); Ezra 9:4 (its clause) | 1-6 `later` | BSB; isaiah/66.json `christ` | BSB text |
+| 66:7-14 | 7-14 | BSB | BSB text |
+| Nursing, hip and knees; God as mother; nacham three times, 40:1 | 7-14 | isaiah/66.json `cultural`, `words` | Repository |
+| Isaiah 40:1 (its inner words); Psalm 131:2 (its clause) | 7-14 `later` | BSB | BSB text |
+| 66:15-24 | 15-24 | BSB | BSB text |
+| Tarshish, Put and Pul, Lud, Tubal, Javan; New Moon and Sabbath; Hinnom and Gehenna; verse 23 repeated in the synagogue | 15-24 | isaiah/66.json `historical`, `cultural`, `literary` | Repository |
+| Mark 9:48 (its inner words); Isaiah 1:2 (its clause); Jeremiah 7 (named) | 15-24 `later` | BSB; isaiah/66.json `christ` | BSB text |
+| Why the book ends this way; three Christian readings | 15-24 `hard` | isaiah/66.json `hard` | Repository |
+
+Cut in chapter 66: John 16:21 and Galatians 4:26, which the deep note calls thematic echoes, and Romans 15:8-12 are left out.
