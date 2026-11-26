@@ -21804,3 +21804,22 @@ Cut in chapter 7: nothing beyond the policy on lines to Christ; Matthew's line i
 | Care line, the grief line ("Grief is not a lack of faith...") | 16-22 `hard` | Reused byte for byte from 1-samuel/plain/1.json, read by script | care.mjs |
 
 Cut in chapter 8: nothing beyond the policy on lines to Christ.
+
+## The plain notes on Isaiah 9 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1-7 | 1-7 | BSB | BSB text |
+| Zebulun and Naphtali; 733 and 732 BC; the three provinces (Dor, Megiddo, Gilead); Midian; the yoke and noges; throne names; Psalm 2:7; El Gibbor in 10:21; the shoulder | 1-7 | isaiah/9.json `historical`, `cultural`, `literary` | Repository |
+| Matthew 4:16; Luke 1:32-33; Isaiah 10:21 (its clause, after the dash; first drafted across the dash and corrected) | 1-7 `later` | isaiah/9.json `hard` (Luke 1:32-33); BSB | BSB text; the New Testament's own lines |
+| The hard note: von Rad and Alt; the Talmud, Rashi and Ibn Ezra and Hezekiah; the Targum's division; godlike hero; El Gibbor elsewhere; the endless reign; Oswalt and Motyer; the middle path; the confession resting on the whole New Testament | 1-7 `hard` | isaiah/9.json `hard` | Repository; every reading in its holders' terms |
+| 9:8-12 | 8-12 | BSB | BSB text |
+| The poem against Israel and its refrain (5:25 to 10:4); 722 BC; bricks, sycamores, cut stone and cedar | 8-12 | isaiah/9.json `story`, `historical` | Repository |
+| Amos 4:6 (inside the BSB's speech marks) | 8-12 `later` | BSB | BSB text |
+| 9:13-21 | 13-21 | BSB | BSB text |
+| The four assassinated kings (2 Kings 15:8-30); Manasseh and Ephraim; head and tail; the fatherless and widows read in setting; 9:20 not lingered on | 13-21 | isaiah/9.json `historical` | Repository |
+| 2 Kings 15:30 (first typed inexactly, caught and corrected); Isaiah 10:4 named | 13-21 `later` | BSB | BSB text |
+
+Cut in chapter 9: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
