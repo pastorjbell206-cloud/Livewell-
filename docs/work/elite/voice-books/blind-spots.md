@@ -457,3 +457,10 @@ The rule for this pass was that a quotation or claim that looks wrong is listed,
 3. The two-step ("It is not X. It is Y."). It was left wherever it is a definition, a verdict or your position, which is most of the time. Do you want a harder pass at it in this book, knowing it would change how some of your arguments are put?
 4. Chapter 10 still says "the place where the book's title finds its full meaning. The monster in the mirror is ..." under the new title (bookshelf.md, section 8, question 1). Still yours.
 5. The conclusion's first paragraph: keep it as an epigraph, or cut it?
+
+
+## 2026-11-25: an academic introduction (James: "very academic and intellectual")
+
+James, 2026-11-25: "I don't like a lot of the introductions to a lot of the books. I want them to be very academic and intellectual." This is a different kind of edit from the voice pass above: the introduction (`sec01.xhtml`) gained new prose that places the book in its scholarly conversation. Nothing James wrote about himself or the book's origin was changed, no quotation or Scripture reference was altered, and no chapter after the introduction was touched. Every scholar, book and date added is real and was checked; no one is quoted, every view is paraphrased and attributed. The PDF and EPUB were rebuilt with `node scripts/build-book-files.mjs <id> --verify` (identical: true) and the page count updated in `client/src/data/ebooks.ts`.
+
+Added one section, "The Mechanism in the Scholarship", before "What Would I Have Said at the Time?": Gadamer's Truth and Method (1960) on prejudice and horizons, Ricoeur's hermeneutics of suspicion, Berger and Luckmann (1966) and the plausibility structure, Haidt's The Righteous Mind (2012), Noll's The Civil War as a Theological Crisis (2006), Doris Bergen's Twisted Cross (1996), and a word of justice for the Pharisees after E. P. Sanders's Paul and Palestinian Judaism (1977), closing on Calvin's factory of idols. Every other word of the introduction is unchanged; 244 pages became 246.

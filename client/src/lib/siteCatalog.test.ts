@@ -111,6 +111,7 @@ describe("the counts", () => {
       "bible.read": json("client/public/bible/books.json").length,
       "bible.guides": json("client/public/bible/guides/index.json").groups.reduce((n: number, g: { guides: unknown[] }) => n + g.guides.length, 0),
       "bible.story": json("client/public/bible/story.json").acts.length,
+      "bible.films": json("client/public/explorer/index.json").films.filter((f: { status: string }) => f.status === "finished").length,
       "bible.background": json("client/public/context/guides-index.json").guides.length,
       "history.people": json("client/public/theology/church-history-figures.json").figures.length,
       "history.creeds": json("client/public/creeds/documents-index.json").documents.length,

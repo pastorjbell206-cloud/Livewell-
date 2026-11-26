@@ -135,14 +135,22 @@ describe("/support, held", () => {
     const how = screen.getByRole("group", { name: "How often" });
     const once = within(how).getByRole("button", { name: "One time" });
     const monthly = within(how).getByRole("button", { name: "Each month" });
+    // Monthly comes first and is chosen, at $10.
+    expect(within(how).getAllByRole("button").map((b) => b.textContent)).toEqual(["Each month", "One time"]);
+    expect(monthly).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByText("A gift of $10 each month.")).toBeInTheDocument();
+
+    once.focus();
+    await user.keyboard("{Enter}");
     expect(once).toHaveAttribute("aria-pressed", "true");
+    expect(monthly).toHaveAttribute("aria-pressed", "false");
+    // $10 is on both lists, so the choice is kept.
+    expect(screen.getByRole("button", { name: "$10" })).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByRole("button", { name: "Another amount" })).toBeInTheDocument();
 
     monthly.focus();
     await user.keyboard("{Enter}");
-    expect(monthly).toHaveAttribute("aria-pressed", "true");
-    expect(once).toHaveAttribute("aria-pressed", "false");
-    // $25 is on both lists, so the choice is kept.
-    expect(screen.getByText("A gift of $25 each month.")).toBeInTheDocument();
+    expect(screen.getByText("A gift of $10 each month.")).toBeInTheDocument();
     // A monthly gift is one of its listed amounts: no box for another.
     expect(screen.queryByRole("button", { name: "Another amount" })).not.toBeInTheDocument();
 
@@ -169,6 +177,10 @@ describe("/support, open", () => {
     expect(screen.getByText(OPEN.taxLine)).toBeInTheDocument();
     expect(screen.getByText(ADVICE_LINE)).toBeInTheDocument();
 
+    // Monthly is chosen first; a one-time gift is one tap away.
+    expect(giveButton()).toHaveTextContent("Give $10 each month");
+    await userEvent.click(screen.getByRole("button", { name: "One time" }));
+    await userEvent.click(screen.getByRole("button", { name: "$25" }));
     expect(giveButton()).toHaveTextContent("Give $25");
     await userEvent.click(giveButton());
     await waitFor(() => expect(window.location.href).toBe(CHECKOUT_URL));
@@ -195,6 +207,7 @@ describe("/support, open", () => {
     await waitFor(() => expect(giveButton()).toBeEnabled());
     const user = userEvent.setup();
 
+    await user.click(screen.getByRole("button", { name: "One time" }));
     await user.click(screen.getByRole("button", { name: "Another amount" }));
     const box = screen.getByLabelText("Another amount, in whole dollars");
     expect(screen.getByText("From $1 to $5,000.")).toBeInTheDocument();
