@@ -22577,3 +22577,19 @@ Cut in chapter 32: nothing. No care line is needed in this chapter.
 | Care line ("It needs to be said plainly. The Bible does not teach that sickness...") | 17-24 `hard` | Reused byte for byte from 2-kings/plain/15.json, read by script | care.mjs |
 
 Cut in chapter 33: nothing.
+
+## The plain notes on Isaiah 34 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/34.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 34:1-8 (34:3 named, not quoted; 34:6's clause before the dash) | 1-8 | BSB | BSB text |
+| Chapters 34 and 35 as a pair; Edom, Esau and Genesis 36; Numbers 20:14-21; 587 or 586 BC (Obadiah 10-14; Psalm 137:7); Bozrah and Buseirah; the dating views and the bridge; Edom as a symbol; poetry of judgment | 1-8 | isaiah/34.json `story`, `historical` | Repository; each view in its holders' terms |
+| Obadiah 1:10; Revelation 6:14 | 1-8 `later` | BSB | BSB text |
+| The hard note: poetry of judgment; the vindication of victims; judgment God's alone; Leviticus 19:18; Romans 12:19; symbol or history; the cross; no people of the present day named as Edom; no warrant to wish or carry out destruction | 1-8 `hard` | isaiah/34.json `hard`; the brief | Repository |
+| 34:9-17 (34:10's clause after the dash; first drafted across the dash and corrected) | 9-17 | BSB | BSB text |
+| Sodom and Gomorrah (Genesis 19:24); the builder's tools in reverse; lilit and later Lilith legend; Edom's later history (the Nabataeans; Idumea); the scroll searched | 9-17 | isaiah/34.json `cultural`, `historical` | Repository (an unsourced phrase about the wasteland before creation was cut before commit) |
+| Malachi 1:3 (its clause); Isaiah 35:1 (first typed inexactly, caught and corrected) | 9-17 `later` | BSB | BSB text |
+
+Cut in chapter 34: the narrowing above. No care line is needed in this chapter.
