@@ -24039,3 +24039,18 @@ New Testament lines in chapter 6: none drawn. Cut in chapter 6: nothing.
 | Later: Exodus 23:9; Exodus 22:22; Ezekiel 36:26 | 8-14 `later` | BSB | BSB text |
 
 New Testament lines in chapter 7: none drawn. Cut in chapter 7: nothing.
+
+## The plain notes on Zechariah 8 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The City of Truth, full of old and young: the text paraphrased, its quoted verses (in single or double quotes) | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | zechariah/8.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 32:38; Isaiah 65:20 | 1-8 `later` | BSB | BSB text |
+| Let your hands be strong, and fasts become feasts: the text paraphrased, its quoted verses (in single or double quotes) | 9-23 | BSB | BSB text |
+| Background in `hearers` | 9-23 | zechariah/8.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 12:3; Isaiah 2:2-3 | 9-23 `later` | BSB | BSB text |
+
+New Testament lines in chapter 8: none drawn. Cut in chapter 8: nothing.
