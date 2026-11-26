@@ -24888,3 +24888,17 @@ Cut in chapter 3: John 10:11 and the deep note's other lines to Christ, which th
 | Deuteronomy 10:16, Romans 2:29, Romans 9:2, Genesis 1:2 (clauses); Isaiah 41:16 and 13:8 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 4: Galatians 3:8 and 14 beside verse 2, which the New Testament does not draw from this chapter.
+
+## The plain notes on Jeremiah 5 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1-31 | all | BSB | BSB text |
+| Oaths; streets and squares; fowlers and cages; care for the fatherless | 1-31 | jeremiah/5.json `cultural` | Repository |
+| Date with chapters 4 and 6; Jehoiakim's time; the ancient nation, Akkadian, Deuteronomy 28:49 | 12-19 | jeremiah/5.json `historical` | Repository |
+| Faithful people in the book (26:24; 38:7-13); exaggeration and the public places | 1-11 `hard` | jeremiah/5.json `hard` | Repository |
+| Genesis 18:32, Psalm 14:3, Deuteronomy 28:49, Zephaniah 1:12, Mark 8:18, Job 38:11 (clauses) | `later` | BSB; jeremiah/5.json `christ` for Mark 8 | BSB text |
+
+Cut in chapter 5: Romans 5:18-19 and 1 Peter 3:18 beside the search for one just person, which the deep note itself calls a theological connection.
