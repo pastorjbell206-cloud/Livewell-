@@ -26070,3 +26070,15 @@ Cut in chapter 40: Revelation 11:1 beside the measuring, left out. No claim abou
 | Later: 1 Kings 6:20; Leviticus 16:2 | 1-26 `later` | BSB | BSB text |
 
 Cut in chapter 41: nothing.
+
+## The plain notes on Ezekiel 42 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/42.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Holy chambers and the wall of separation: the text paraphrased; quoted clauses at verses 1-12, 13, 14, 20 | 1-20 | BSB | BSB text |
+| Background in `hearers` | 1-20 | ezekiel/42.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 10:10; Leviticus 16:23 | 1-20 `later` | BSB | BSB text |
+
+Cut in chapter 42: nothing.
