@@ -21379,3 +21379,20 @@ Cut in chapter 1: the deep note's line to Romans 2:14-15, which the New Testamen
 | Numbers 6:3 (its clause); Deuteronomy 8:2 | 9-16 | BSB | BSB text |
 
 Cut in chapter 2: nothing drawn to the New Testament. The act of 2:7 is named in the BSB's own plain words and not dwelt on.
+
+## The plain notes on Amos 3 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1 (its clause); 3:2; 3:3-5 and 3:7 paraphrased; 3:6; 3:8 (its two clauses) | 1-8 | BSB | BSB text |
+| Election as accountability; questions of cause and effect; the climb to the prophet's compulsion; the lion linking 1:2 and 3:12 | 1-8 | amos/3.json `literary` | Repository |
+| Genesis 12:3 (its phrase); Deuteronomy 7:7-8 paraphrased; Jeremiah 20:9 paraphrased | 1-8 | BSB | BSB text |
+| The hard note: calamity as the word for evil or harm; not chance or other gods; God's rule without authoring moral evil, Assyria responsible; not a rule for every disaster (Job; Luke 13:1-5); God not absent | 1-8 `hard` | amos/3.json `hard` | Repository; the readings in their holders' terms |
+| The care line ('A word for anyone who has lived through a flood, a storm or another disaster...' to '...the Find Help page has people you can call.') | 1-8 `hard` | genesis/plain/6.json; 2-kings/plain/17.json and others | Reused whole, word for word; Find Help named; no phone number |
+| 3:9-11 and 3:13-14 paraphrased; 3:12 (its first clause); 3:15 (its clauses) | 9-15 | BSB | BSB text |
+| A trial with foreign witnesses; Samaria built by Omri; Jeroboam II's wealth; Ahab's ivory house and the ivory fragments of the ninth and eighth centuries; winter and summer houses; the shepherd's proof; the horns of the altar and sanctuary; Samaria taken within about forty years; Josiah at Bethel | 9-15 | amos/3.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 22:13; 1 Kings 22:39; 2 Kings 23:15 | 9-15 | amos/3.json `historical`, `cultural` | Repository |
+
+Cut in chapter 3: nothing drawn to the New Testament.
