@@ -23908,3 +23908,25 @@ Cut in chapter 50: nothing. The Gospel line is given as how Christians have read
 | The GRIEF care line, byte for byte | 17-23 `hard` | carelines.json (from the site) | care.mjs |
 
 Cut in chapter 51: the deep note's Christian reading of the cup through Gethsemane (Mark 14:36) is left out, because the New Testament does not itself tie that cup to this chapter.
+
+## The plain notes on Isaiah 52 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/52.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 52:1-6 | 1-6 | BSB | BSB text |
+| The third double call to wake (51:9, 51:17); God coming home | 1-6 | isaiah/52.json `story`, `literary` | Repository |
+| Egypt, Assyria (722 and 701 BC), Babylon; Al-Yahudu tablets published 2014, from 572 BC, tenant farmers | 1-6 | isaiah/52.json `historical` | Repository |
+| The go'el, Boaz in Ruth 4; sold for nothing, redeemed for nothing | 1-6 | isaiah/52.json `cultural`, `words` | Repository |
+| Revelation 21:27 (its clause) | 1-6 `later` | BSB | BSB text |
+| Antiochus IV 167 BC, Pompey 63 BC, AD 70; Jewish and Christian answers | 1-6 `hard` | isaiah/52.json `hard` (second question) | Repository |
+| 52:7-12 (verse 7's inner cry paraphrased) | 7-12 | BSB | BSB text |
+| Runners and watchmen; The LORD reigns in the temple psalms; basar and the Greek gospel word | 7-12 | isaiah/52.json `cultural`, `words` | Repository |
+| The vessels; Cyrus returned them; Sheshbazzar, 5,400 | 7-12 | isaiah/52.json `historical`; Ezra 1:7-11 | BSB text |
+| Romans 10:15 (its inner quotation); Nahum 1:15 (named); 2 Corinthians 6:17 (its words) | 7-12 `later` | BSB; isaiah/52.json `christ`, `cultural` | BSB text |
+| 52:13-15 | 13-15 | BSB | BSB text |
+| The fourth song opens; begins at the exaltation; prosper and act wisely; sprinkle or startle, the Greek "marvel" | 13-15 | isaiah/52.json `story`, `words` | Repository |
+| Romans 15:21 (its inner quotation); Acts 8 and 1 Peter 2 named | 13-15 `later` | BSB | BSB text |
+
+Cut in chapter 52: Romans 2:24, which quotes verse 5, is left out, because Paul there turns it against his hearers and the plain note will not set it beside a chapter about Judah's exile. The authorship question in the deep note is left to the book page, which treats it.
