@@ -22369,3 +22369,22 @@ Cut in chapter 21: nothing. No care line is needed in this chapter.
 | Isaiah 36:3; Revelation 3:7 | 15-25 `later` | BSB | BSB text; the New Testament's own use of the key |
 
 Cut in chapter 22: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 23 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 23:1-9 (23:4 paraphrased around its speech marks) | 1-9 | BSB | BSB text |
+| Babylon and Tyre as empire and trade; Tyre's island city; Kition and Carthage; Hiram (1 Kings 5); Sidon; Tarshish ships; Egypt's grain | 1-9 | isaiah/23.json `story`, `historical` | Repository |
+| Ezekiel 27:3 (its clause; first drafted with a nested quotation and corrected); Revelation 18:11 (its clause before the dash) | 1-9 `later` | BSB | BSB text |
+| 23:10-14 (23:12's words before the dash) | 10-14 | BSB | BSB text |
+| Luli's flight to Cyprus in 701 (Sennacherib's annals); later Assyrian pressure; Nebuchadnezzar's thirteen years (Josephus); Alexander's causeway in 332; the Assyrian period favored, or the long series; 689 BC and the difficult Hebrew of verse 13 | 10-14 | isaiah/23.json `historical` | Repository; both views |
+| Ezekiel 26:3 (its words, inside the BSB's inner quotation mark) | 10-14 `later` | BSB | BSB text |
+| 23:15-18 (23:15's clause between its dashes) | 15-18 | BSB | BSB text |
+| The two readings of seventy years; the song of the harlot as a picture of a city's commerce, not about any woman; the wealth set apart | 15-18 | isaiah/23.json `hard` | Repository |
+| Ezra 3:7; Acts 21:4 | 15-18 `later` | isaiah/23.json `hard` (Ezra 3:7; the gospel in Tyre); BSB | BSB text |
+| The hard note: specific or round; Tyre's recovery; Ezra 3:7; the readings of verse 18; no side | 15-18 `hard` | isaiah/23.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 23: nothing. No care line is needed in this chapter.
