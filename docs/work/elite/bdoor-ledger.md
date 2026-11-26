@@ -25807,3 +25807,18 @@ Cut in chapter 23: the deep note's hotline telephone number, replaced by the abu
 | The hard note: Did God really take Ezekiel's wife to make a point, and why forbid him to grieve? The readings in their holders' terms | 15-27 `hard` | ezekiel/24.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 24: nothing; John 11:35 kept in the hard note as Scripture's witness to grief, not as a line drawn from Ezekiel.
+
+## The plain notes on Jeremiah 38 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/38.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 38:1-28 (verses 1-5 and 14-27 partly paraphrased) | all | BSB | BSB text |
+| Siege about January 588 to summer 587 or 586 BC; the officials (21:1; 37:3) | 1-13 | jeremiah/38.json `historical` | Repository |
+| Weakening the hands; the Lachish letter's similar phrase, found 1935 | 1-13 | jeremiah/38.json `historical` | Repository |
+| Cisterns; Ebed-melech a Cushite, Cush south of Egypt | 1-13 | jeremiah/38.json `cultural`, `historical` | Repository |
+| Treason or not: God's verdict; Zedekiah's oath (2 Chronicles 36:13; Ezekiel 17); saving lives | 1-13 `hard` | jeremiah/38.json `hard`; the coordinator's direction | Repository |
+| Jeremiah 39:18, Psalm 40:2, Proverbs 29:25, 2 Chronicles 36:13 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 38: nothing.
