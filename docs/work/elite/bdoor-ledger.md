@@ -21214,3 +21214,22 @@ Cut in chapter 28: the deep note's lines to Christ (the righteous ruler of the c
 | Leviticus 5:1 (inside its opening quotation mark, the span without inner marks); Psalm 118:8 | 22-27 | proverbs/29.json `cultural` (Leviticus 5:1); the chapter data's cross-references for 29:25 (Psalm 118:8); BSB | Repository; BSB text |
 
 Cut in chapter 29: the deep note's lines to Christ (Isaiah 11 and Jesus as the king of verse 14; Jesus unswayed by crowds beside verse 25; the note calls them thematic).
+
+## The plain notes on Proverbs 30 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/30.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each). The whole chapter stands inside one quotation in the BSB (30:1 to 30:33); every quoted span sits within it and holds no quotation mark or dash of its own.
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 30:1 (its first clause, and Agur's cry); 30:3; 30:4 (its first four questions; the last, with a dash, paraphrased); 30:5; 30:6 paraphrased; 30:8; 30:9 paraphrased (it holds an inner quotation) | 1-9 | BSB | BSB text |
+| Agur and Lemuel otherwise unknown; massa as pronouncement or the Arabian people of Massa (Genesis 25:14); verse 1's two readings, names or a cry; humility as counterweight; tsaraph; 30:5 and Psalm 18:30 / 2 Samuel 22:31; 30:6 and Deuteronomy 4:2; the prayer and its two dangers | 1-9 | proverbs/30.json `historical`, `story`, `literary`, `words` (massa, tsaraph, qadosh) | Repository; each reading in its holders' terms |
+| Job 38:4 (its first sentence); Psalm 18:30 (from ‘the word’); Deuteronomy 4:2 (its first clause) | 1-9 | proverbs/30.json `literary`; BSB | Repository; BSB text |
+| The hard note: the questions' expected answer; the son read as Israel (Exodus 4:22), as an ironic challenge like Job 38, or by many Christian interpreters as a glimpse of the Son; the verse unexplained; the New Testament does not quote it; no side | 1-9 `hard` | proverbs/30.json `hard`, `christ` | Repository; each reading in its holders' terms; no side |
+| 30:10; the four generations (30:11-14) with 30:12 and 30:14's last clause quoted; 30:15 (its first sentence; the rest, with an inner quotation, paraphrased); 30:16 paraphrased; 30:17 paraphrased | 10-17 | BSB | BSB text |
+| The build from disrespect to devouring the poor; the numerical saying (Ugarit; Amos 1-2; 6:16-19) and the weight of the last item; the barren womb as longing, not judgment; the unburied dead in an open valley | 10-17 | proverbs/30.json `cultural`, `literary` | Repository |
+| Proverbs 16:2; Psalm 14:4 (its clause) | 10-17 | the chapter data's cross-references for 30:12 (16:2) and 30:14 (Psalm 14:4); BSB | Repository; BSB text |
+| 30:18-19; 30:20 paraphrased (it holds an inner quotation); 30:21-23 paraphrased with 30:23's first clause quoted; 30:24; the ants (30:25) paraphrased; 30:26; 30:27; the lizard (30:28) paraphrased; the stately four (30:29-31) paraphrased; 30:32; 30:33 paraphrased (its end holds the closing quotation mark) | 18-33 | BSB | BSB text |
+| The wonders that leave no trace; the unloved woman named with sorrow; the hyrax in the Judean wilderness; locust swarms; small and wise; the hand over the mouth | 18-33 | proverbs/30.json `cultural`, `literary` | Repository |
+| Job 40:4 (in double quotes); Joel 2:7 (its third sentence) | 18-33 | the chapter data's cross-references for 30:32 (Job 40:4) and 30:27 (Joel 2:7); BSB | Repository; BSB text |
+
+Cut in chapter 30: the deep note's lines to Christ (John 3:13 as the answer to verse 4, which the note says the New Testament does not quote; Matthew 6:11 beside verse 8, which it calls thematic). No care line is needed in this chapter.
