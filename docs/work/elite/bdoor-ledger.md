@@ -21468,3 +21468,22 @@ Cut in chapter 6: nothing drawn to the New Testament. The scene of 6:9-10 is nam
 | 2 Kings 2:3-5; 2 Kings 14:29; 2 Kings 15:8-10 | 10-17 | amos/7.json `historical`, `cultural` | Repository |
 
 Cut in chapter 7: nothing drawn to the New Testament. The words of 7:17 about Amaziah's wife and children are not quoted.
+
+## The plain notes on Amos 8 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1; 8:2 (its last sentence; the question paraphrased); 8:3 paraphrased and not quoted | 1-3 | BSB | BSB text |
+| Qayits and qets; the question and answer of the plumb line; Jeroboam II's trade and wealth; the dead named, not dwelt on; Assyria and 722 BC | 1-3 | amos/8.json `literary`, `historical` | Repository |
+| Jeremiah 1:11-12 paraphrased; Ezekiel 7:2 (its clause) | 1-3 | BSB | BSB text |
+| 8:4; 8:5-6 paraphrased (their inner quotations not quoted) | 4-6 | BSB | BSB text |
+| The merchants quoted against themselves; New Moon and Sabbath; the small ephah and heavy shekel; weighed money; the law against both; debt slavery; the chaff with the wheat | 4-6 | amos/8.json `literary`, `cultural` | Repository |
+| Leviticus 19:36 (its clause); Nehemiah 13:15-22 | 4-6 | amos/8.json `cultural`; BSB | Repository; BSB text |
+| 8:7-10 paraphrased; 8:11 (its clauses); 8:12-14 paraphrased (8:14's inner quotations not quoted) | 7-14 | BSB | BSB text |
+| The oath by the Pride of Jacob, read two ways; the sayings of that day; the eclipse of 763 BC in the Assyrian eponym lists, possible not certain; sackcloth, shaved heads, an only son; Dan and the second calf; Beersheba | 7-14 | amos/8.json `literary`, `historical`, `cultural` | Repository; the readings in their holders' terms |
+| 1 Kings 12:29-30; 1 Samuel 28:6 paraphrased | 7-14 | amos/8.json `historical`, `hard` | Repository |
+| The hard note: those who rejected the prophets (2:12; 7:12-16); Saul; the famine as the fruit of refusal; frantic, not repentant; Jeremiah 29:13; no seeker now shut out | 7-14 `hard` | amos/8.json `hard`; the brief | Repository; the readings in their holders' terms |
+
+Cut in chapter 8: nothing drawn to the New Testament.
