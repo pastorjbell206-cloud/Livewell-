@@ -21194,3 +21194,23 @@ Cut in chapter 27: the deep note's lines to Christ (the rich fool beside verse 1
 | The hard note: not a prosperity formula; a proverb; generous people helped in turn; the faithful poor and the widow who gave all; verse 6; giving not a loss in God's economy; no one who gave and still struggles gave wrongly | 19-28 `hard` | proverbs/28.json `hard` | Repository |
 
 Cut in chapter 28: the deep note's lines to Christ (the righteous ruler of the chapter as Jesus; the note calls them links of theme and hope); Jesus' words in Mark 7:9-13 beside verse 24 (not needed). No care line is needed in this chapter.
+
+## The plain notes on Proverbs 29 (2026-11-25)
+
+`client/public/bible/notes/proverbs/plain/29.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 29:1; 29:2; 29:3 (its first clause); 29:4; 29:5; 29:7; 29:8; the court (29:9) paraphrased; 29:11 | 1-11 | BSB | BSB text |
+| The close of the Hezekiah collection; rulers and the tone of a land; verse 4's tribute, bribes or levies; Solomon's taxes and the split (1 Kings 12); caring for the poor as a mark of the righteous | 1-11 | proverbs/29.json `story`, `historical`, `literary` | Repository; each reading in its holders' terms |
+| 1 Kings 12:4 (its first sentence); Psalm 72:4 | 1-11 | proverbs/29.json `historical` (1 Kings 12); the chapter data's cross-references for 29:14 (Psalm 72:2, 4); BSB | Repository; BSB text |
+| 29:12; 29:13; 29:14 paraphrased (it holds a dash); 29:15; 29:17; 29:18; the servant (29:19) paraphrased; 29:20 | 12-21 | BSB | BSB text |
+| 29:13 like 22:2; 29:14 and the promise to David (2 Samuel 7); royal inscriptions boasting of protecting the weak; verses 15 and 17 with 13:24, 22:15 and 23:13-14, the two readings, no side, what both agree, no warrant to harm a child; verse 17 as usual fruit, not a guarantee; servants bound by debt, the social order not endorsed in every part | 12-21 | proverbs/29.json `historical`, `cultural`, `words` (yasar); proverbs/13.json `hard` | Repository; each reading in its holders' terms; no side |
+| Care line (‘Abuse of a child is a crime...’ to ‘...lists places to turn.’) | 12-21 | colossians/plain/3.json, ephesians/plain/6.json and the other notes care.mjs names | Reused byte for byte; Find Help named; no phone number |
+| Amos 8:11 (after the dash); Psalm 119:2 | 12-21 | the chapter data's cross-references for 29:18 (Hosea 4:6; Psalm 119:2); proverbs/29.json `hard` (revelation); BSB | Repository; BSB text |
+| The hard note: the older rendering paraphrased, not quoted; chazon as revelation; the verb as casting off restraint; the second half quoted; revelation, not ambition | 12-21 `hard` | proverbs/29.json `hard`, `words` (chazon, para) | Repository |
+| 29:22; 29:23; the silent partner (29:24) paraphrased; 29:25; 29:26; 29:27 | 22-27 | BSB | BSB text |
+| The public oath and the duty to testify (Leviticus 5:1); petitioners at court; the last verse closing the collection, each way intolerable to the other | 22-27 | proverbs/29.json `cultural`, `literary` | Repository |
+| Leviticus 5:1 (inside its opening quotation mark, the span without inner marks); Psalm 118:8 | 22-27 | proverbs/29.json `cultural` (Leviticus 5:1); the chapter data's cross-references for 29:25 (Psalm 118:8); BSB | Repository; BSB text |
+
+Cut in chapter 29: the deep note's lines to Christ (Isaiah 11 and Jesus as the king of verse 14; Jesus unswayed by crowds beside verse 25; the note calls them thematic).
