@@ -1745,6 +1745,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-2-samuel",
     "book-nehemiah",
     "book-amos",
+    "book-2-corinthians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2647,5 +2648,15 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     const t = text(f);
     expect(t).not.toMatch(/\b(America|United States|Democrat|Republican|Labour|Conservative|liberal|socialis|capitalis|left-wing|right-wing|Israel today|State of Israel|Palestin)/i);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|battle|army|fire|ruin|locust|body/i);
+  });
+
+  it("2 Corinthians gives leaders no warrant to demand loyalty, promises no wealth for giving, and holds no people in contempt", () => {
+    const f = filmFile("book-2-corinthians");
+    expect(f.care).toBe(filmFile("book-ephesians").care);
+    expect(f.frames.find(x => x.id === "weakness")!.older).toContain("A leader who uses this letter to demand loyalty has read it upside down.");
+    expect(f.frames.find(x => x.id === "giving")!.older).toContain("it gives no ground for teaching that giving to God will make the giver rich");
+    expect(f.differ?.text).toContain("it is not a letter against the Jewish people");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(text(f)).not.toMatch(/seed faith|hundredfold|sow a seed|prosperity|blessed financially/i);
   });
 });

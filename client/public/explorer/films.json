@@ -79,6 +79,7 @@
     { "slug": "book-2-samuel", "title": "2 Samuel: the king and the promise", "group": "books", "status": "finished" },
     { "slug": "book-nehemiah", "title": "Nehemiah: rebuilding the walls, and a people", "group": "books", "status": "finished" },
     { "slug": "book-amos", "title": "Amos: let justice roll on like a river", "group": "books", "status": "finished" },
+    { "slug": "book-2-corinthians", "title": "2 Corinthians: power in weakness", "group": "books", "status": "finished" },
 
     { "slug": "holy-spirit", "title": "The Holy Spirit through the Bible", "group": "ideas", "status": "finished" },
     { "slug": "god-with-his-people", "title": "God with his people", "group": "ideas", "status": "finished" },

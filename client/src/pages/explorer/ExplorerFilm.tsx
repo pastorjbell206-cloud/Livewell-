@@ -463,6 +463,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Amos in seven moving pictures: a herdsman sent north, how it is laid out, the trap, justice like a river, the plumb line, the fallen tent restored, and where to start reading.",
     },
+    "book-2-corinthians": {
+      title: "2 Corinthians: power in weakness: Bible Explorer",
+      description:
+        "The whole of 2 Corinthians in seven moving pictures: a hurt pastor's letter, three parts, treasure in jars of clay, made friends again, the grace of giving, power in weakness, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

@@ -1,0 +1,124 @@
+{
+  "slug": "book-2-corinthians",
+  "title": "2 Corinthians: power in weakness",
+  "group": "books",
+  "status": "finished",
+  "book": "2-corinthians",
+  "mark": "book-2-corinthians",
+  "line": {
+    "younger": "Paul's most personal letter, to a church he loved and that had hurt him: what it is, how it is put together, what to watch for, and where to start reading.",
+    "older": "2 Corinthians as a whole book: a pastor hurt by people he loves, treasure in jars of clay, a new creation, the grace of giving, power in weakness, and where to begin."
+  },
+  "poster": "A man stands on a harbour wall looking out to sea as a small boat comes in toward him under a pale sky.",
+  "frames": [
+    {
+      "id": "personal",
+      "name": "A hurt pastor's letter",
+      "still": "A man stands on a harbour wall looking out to sea as a small boat comes in toward him under a pale sky.",
+      "younger": "Second Corinthians is Paul's most personal letter. He had been hurt by a church he loved, and he still loved them. He writes about tears, about fear, and about a weakness God would not take away.",
+      "older": "Second Corinthians is the most personal of Paul's letters. A visit had gone badly and he had written in tears; then Titus brought news that the church had turned back. Paul writes in relief and joy, and in places in deep pain.",
+      "verse": {
+        "ref": "2 Corinthians 2:4",
+        "text": "not to grieve you but to let you know how much I love you."
+      }
+    },
+    {
+      "id": "layout",
+      "name": "How it is laid out",
+      "still": "The book drawn as one scroll in three panels, with a clay jar, a gift box and a basket on a rope over them. A gold rule lies under the last panel.",
+      "younger": "The letter has three parts. First Paul explains himself and makes friends again with the church. Then he asks them to finish a gift for poor believers far away. Last, he answers teachers who made him look small.",
+      "older": "Three parts: the ministry explained and the friendship mended; the collection for Jerusalem; and the fool's speech, where Paul boasts only of what shows his weakness. Comfort, grace and weakness are one gospel seen from three sides.",
+      "verse": {
+        "ref": "2 Corinthians 1:3",
+        "text": "the Father of compassion and the God of all comfort"
+      }
+    },
+    {
+      "id": "jars",
+      "name": "Watch for: treasure in jars of clay",
+      "still": "A plain clay jar stands on a table, and gold light shines out of its open mouth.",
+      "younger": "Watch for a jar of clay. Paul says the good news is like treasure kept in a plain clay pot. The pot is ordinary and easy to break, so everyone can see that the power comes from God, not from Paul.",
+      "older": "Corinth admired strength and polish. Paul says the gospel is treasure in jars of clay, to show that the power is God's. He passes on the comfort he received, and comfort does not mean the trouble goes away.",
+      "verse": {
+        "ref": "2 Corinthians 4:7",
+        "text": "Now we have this treasure in jars of clay to show that this surpassingly great power is from God and not from us."
+      }
+    },
+    {
+      "id": "reconciled",
+      "name": "Watch for: made friends again",
+      "still": "At an open gate two men who had quarrelled hold each other in an embrace, and a gold sun is rising behind them.",
+      "younger": "Watch for the words made friends again. God was making the world his friend again through Jesus, not counting people's wrongs against them. Anyone who belongs to Jesus is a new creation. And Paul longs to be friends again with Corinth.",
+      "older": "To be reconciled is to be made friends again after a quarrel. God took the first step, reconciling the world to himself in Christ, and anyone in Christ is a new creation. The letter is itself an act of reconciliation between a pastor and his people.",
+      "verse": {
+        "ref": "2 Corinthians 5:17",
+        "text": "if anyone is in Christ, he is a new creation."
+      }
+    },
+    {
+      "id": "giving",
+      "name": "Watch for: the grace of giving",
+      "still": "People of every kind put their gifts into an open chest, and a child holds out one gold coin.",
+      "younger": "Watch for a gift. Paul asks the church to finish collecting money for poor believers in Jerusalem. He says Jesus was rich, but became poor so that others could be rich. And God loves a cheerful giver.",
+      "older": "Paul never orders the church to give. He calls giving a grace, with Jesus, who became poor, as its pattern. The gift is for the poor, not for Paul, and it gives no ground for teaching that giving to God will make the giver rich.",
+      "verse": {
+        "ref": "2 Corinthians 9:7",
+        "text": "For God loves a cheerful giver."
+      }
+    },
+    {
+      "id": "weakness",
+      "name": "Watch for: power in weakness",
+      "still": "At night a basket hangs on a rope from a window high in a city wall, lowering a man to the ground. A lamp in the window is gold.",
+      "younger": "Watch the end. Other teachers bragged about how strong they were. Paul brags only about being weak. He asked God three times to take away a hard thing in his life, and God said, “My grace is sufficient for you.”",
+      "older": "Against rivals who prized polish, Paul boasts only of hardships, an escape in a basket, and a thorn God would not remove. His authority was for building up, not tearing down. A leader who uses this letter to demand loyalty has read it upside down.",
+      "verse": {
+        "ref": "2 Corinthians 12:9",
+        "text": "My grace is sufficient for you, for My power is perfected in weakness."
+      }
+    },
+    {
+      "id": "start",
+      "name": "Where to start",
+      "still": "A reader sits under a tree with a scroll open across the knees and a child beside them. A lamp stands near, and one gold marker shows the place to begin.",
+      "younger": "Where should you start? With chapter 4, the treasure in clay jars. Then chapter 12, God's grace in weakness. The whole letter takes less than an hour.",
+      "older": "Read it in one sitting, aloud, as a real letter in the middle of a real quarrel. Keep the story in mind, and watch for irony in chapters 10 to 13. Let it ask who you admire, and why.",
+      "verse": {
+        "ref": "2 Corinthians 1:4",
+        "text": "who comforts us in all our troubles"
+      }
+    }
+  ],
+  "think": {
+    "younger": "Paul says God's power shows up when people are weak. When have you needed help, and who helped you?",
+    "older": "The letter asks who you admire and why. Have you been impressed by polish and power, and missed Christ in someone weak?"
+  },
+  "read": [
+    { "label": "2 Corinthians 1", "href": "/study/bible/2-corinthians/1" },
+    { "label": "2 Corinthians 2", "href": "/study/bible/2-corinthians/2" },
+    { "label": "2 Corinthians 3", "href": "/study/bible/2-corinthians/3" },
+    { "label": "2 Corinthians 4", "href": "/study/bible/2-corinthians/4" },
+    { "label": "2 Corinthians 5", "href": "/study/bible/2-corinthians/5" },
+    { "label": "2 Corinthians 8", "href": "/study/bible/2-corinthians/8" },
+    { "label": "2 Corinthians 9", "href": "/study/bible/2-corinthians/9" },
+    { "label": "2 Corinthians 12", "href": "/study/bible/2-corinthians/12" }
+  ],
+  "stops": [
+    "church"
+  ],
+  "cards": [],
+  "differ": {
+    "text": "Readers differ on whether the letter joins two or more letters, most often proposing that chapters 10 to 13 were once separate, or is a single composition, since no copy ever circulated in pieces; the argument can be followed on either view. Scholars have long debated who the rival teachers were. On some things the book page is plain: the letter is not a manual for leaders to demand loyalty, not a promise that faithful people do not suffer, and gives no ground for teaching that giving money to God or a ministry will make the giver rich; and it is not a letter against the Jewish people. This moving picture takes no side among the readings; they are set out on",
+    "links": [
+      { "label": "the 2 Corinthians page of the Study Bible", "href": "/study/bible/2-corinthians" }
+    ]
+  },
+  "care": "If something hard is happening to you or to someone you love, you do not have to carry it alone. Talk with a parent, a pastor or another adult you trust, or look at Find Help.",
+  "deeper": [
+    { "label": "2 Corinthians in the Study Bible: the whole book", "href": "/study/bible/2-corinthians" },
+    { "label": "1 Corinthians: a gifted church, coming apart (a moving picture)", "href": "/study/explorer/watch/book-1-corinthians" },
+    { "label": "Grace: the gift no one earns (a moving picture)", "href": "/study/explorer/watch/grace" },
+    { "label": "The Church and the Spirit: a stop on the map", "href": "/study/explorer/church" }
+  ],
+  "end": { "label": "Start reading: 2 Corinthians 1", "href": "/study/bible/2-corinthians/1" }
+}

@@ -1609,3 +1609,23 @@ Amos is tied to no modern party or nation, in the book page's words: "its standa
 | pictures | No war, crime, locust, fire or ruin drawn; no one of any later age, party or nation; God not drawn | The drawing (`scenes/book-amos.tsx`); a sheet of the finished frames read |
 | left out | The nations' crimes in the captions; the cows of Bashan; the locust and fire visions; the Day of the LORD in the captions; the earthquake | Deliberate; the book page is linked |
 | length | Younger 2:40.6, older 3:05.6 | `audio/manifest.json` |
+
+### 2 Corinthians: power in weakness (`book-2-corinthians`)
+
+The book page's cautions are given in the captions: Paul's authority "was for building up, not tearing down", a leader who uses the letter to demand loyalty "has read it upside down", and the collection gives "no ground for teaching that giving ... will make the giver rich".
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | 2 Corinthians 2:4; 1:3; 4:7; 5:17; 9:7; 12:9; 1:4 (some trimmed to a clause) | BSB, by the validator; all 2 Corinthians |
+| 1 A hurt pastor's letter | The most personal of Paul's letters; a visit gone badly, a letter in tears; Titus' news that the church turned back; relief, joy and deep pain; a pastor hurt by people he still loves | The 2 Corinthians book page, `teaching` "2 Corinthians in a minute", nearly word for word |
+| 2 How it is laid out | Three parts: the ministry explained and the friendship mended (1 to 7); the collection (8 and 9); the fool's speech (10 to 13); comfort, grace and weakness one gospel from three sides | The book page's `teaching` "How it is built", nearly word for word. Three panels of 7, 2 and 4 chapters; the gold rule under the last, where "the heart of the letter" (12:9) stands |
+| 3 Treasure in jars of clay | Corinth admired strength and polish; treasure in jars of clay, the power God's; comfort passed on, and comfort not meaning the trouble goes away | The book page's `teaching` "The big themes" and "2 Corinthians in a minute"; BSB 2 Corinthians 1:4; 4:7 |
+| 4 Made friends again | Reconciled means made friends again after a quarrel; God took the first step; a new creation; the letter itself an act of reconciliation | The book page's `teaching` "The big themes", nearly word for word; BSB 2 Corinthians 5:17-20 |
+| 5 The grace of giving | Paul never orders the church to give; giving a grace, Jesus who became poor its pattern; for the poor, not for Paul; no ground for teaching that giving makes the giver rich | The book page's `teaching` "The big themes" and "What the letter is not", nearly word for word; BSB 2 Corinthians 8:9; 9:7 |
+| 6 Power in weakness | Rivals who prized polish; Paul boasts of hardships, the basket, the thorn not removed; "My grace is sufficient"; authority for building up; demanding loyalty reads it upside down | The book page's `teaching` "How it is built", "The ‘super-apostles’" and "What the letter is not"; BSB 2 Corinthians 11:30-33; 12:9; 13:10 |
+| 7 Where to start | Chapters 4 and 12 (younger); one sitting, aloud, a real letter in a real quarrel; irony in 10 to 13; who you admire, and why | The book page's `teaching` "How to read 2 Corinthians", nearly word for word; BSB 2 Corinthians 1:4 |
+| differ | One letter or several; who the rival teachers were; not a manual for leaders, not a promise of no suffering, no ground for prosperity teaching, not against the Jewish people; no side | The book page's `reading` and `teaching` "One letter or several?", "The ‘super-apostles’", "What the letter is not" |
+| care | "If something hard is happening to you or to someone you love, ..." | The care line of "Why do bad things happen?", whole |
+| pictures | No beating, shipwreck or wound drawn; the rivals, Christ and God not drawn | The drawing (`scenes/book-2-corinthians.tsx`); a sheet of the finished frames read |
+| left out | The tearful letter's offender; the veil of chapter 3; the third heaven; the list of hardships in full | Deliberate; the book page is linked |
+| length | Younger 2:57.8, older 3:09.1 | `audio/manifest.json` |

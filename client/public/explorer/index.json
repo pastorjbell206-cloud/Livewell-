@@ -1911,6 +1911,23 @@
       "book": "amos"
     },
     {
+      "slug": "book-2-corinthians",
+      "title": "2 Corinthians: power in weakness",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "Paul's most personal letter, to a church he loved and that had hurt him: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "2 Corinthians as a whole book: a pastor hurt by people he loves, treasure in jars of clay, a new creation, the grace of giving, power in weakness, and where to begin."
+      },
+      "mark": "book-2-corinthians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "2-corinthians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

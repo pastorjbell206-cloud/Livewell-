@@ -1183,6 +1183,16 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M59,66h10l-5,12Z" />
     </>
   ),
+  /* 2 Corinthians: a plain clay jar with gold light inside. */
+  "book-2-corinthians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M40,84c-14,-4 -16,-26 -6,-36c-4,-4 -4,-10 4,-12h24c8,2 8,8 4,12c10,10 8,32 -6,36Z" tone="c" off={0.8} />
+      <path className="pl-m" d="M44,36l-6,-20h24l-6,20Z" />
+      <path className="pl-l" d="M44,36l-6,-20h24l-6,20Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

@@ -4335,6 +4335,116 @@
     }
    ]
   },
+  "book-2-corinthians": {
+   "title": {
+    "file": "book-2-corinthians/title.mp3",
+    "hash": "bb3839ebb1161100b0a4",
+    "seconds": 3.15,
+    "bytes": 19508
+   },
+   "younger": [
+    {
+     "id": "personal",
+     "file": "book-2-corinthians/younger/01-personal.mp3",
+     "hash": "65a3b2c2cc8ae45d1272",
+     "seconds": 23.32,
+     "bytes": 140468
+    },
+    {
+     "id": "layout",
+     "file": "book-2-corinthians/younger/02-layout.mp3",
+     "hash": "f95fa03ce62ed5109f1d",
+     "seconds": 25.1,
+     "bytes": 151124
+    },
+    {
+     "id": "jars",
+     "file": "book-2-corinthians/younger/03-jars.mp3",
+     "hash": "7a7d2ceebe5946b28233",
+     "seconds": 28.23,
+     "bytes": 169988
+    },
+    {
+     "id": "reconciled",
+     "file": "book-2-corinthians/younger/04-reconciled.mp3",
+     "hash": "ef35a58efc33f1621123",
+     "seconds": 26.79,
+     "bytes": 161348
+    },
+    {
+     "id": "giving",
+     "file": "book-2-corinthians/younger/05-giving.mp3",
+     "hash": "377d723b7cccd9f19d71",
+     "seconds": 23.97,
+     "bytes": 144356
+    },
+    {
+     "id": "weakness",
+     "file": "book-2-corinthians/younger/06-weakness.mp3",
+     "hash": "a671bd0ff6154cd2fdc8",
+     "seconds": 26.34,
+     "bytes": 158612
+    },
+    {
+     "id": "start",
+     "file": "book-2-corinthians/younger/07-start.mp3",
+     "hash": "fcc37bc3bc24401cdd95",
+     "seconds": 19.81,
+     "bytes": 119444
+    }
+   ],
+   "older": [
+    {
+     "id": "personal",
+     "file": "book-2-corinthians/older/01-personal.mp3",
+     "hash": "5595089369fd52209e3f",
+     "seconds": 26.29,
+     "bytes": 158324
+    },
+    {
+     "id": "layout",
+     "file": "book-2-corinthians/older/02-layout.mp3",
+     "hash": "4b0e24e77447eb59911a",
+     "seconds": 25.46,
+     "bytes": 153284
+    },
+    {
+     "id": "jars",
+     "file": "book-2-corinthians/older/03-jars.mp3",
+     "hash": "f8089b58f869518777b0",
+     "seconds": 28.13,
+     "bytes": 169412
+    },
+    {
+     "id": "reconciled",
+     "file": "book-2-corinthians/older/04-reconciled.mp3",
+     "hash": "f0b0482010ced704a786",
+     "seconds": 28.41,
+     "bytes": 170996
+    },
+    {
+     "id": "giving",
+     "file": "book-2-corinthians/older/05-giving.mp3",
+     "hash": "cefbede6675fa241e79b",
+     "seconds": 24.24,
+     "bytes": 146084
+    },
+    {
+     "id": "weakness",
+     "file": "book-2-corinthians/older/06-weakness.mp3",
+     "hash": "4274c099e8638896c347",
+     "seconds": 29.64,
+     "bytes": 178340
+    },
+    {
+     "id": "start",
+     "file": "book-2-corinthians/older/07-start.mp3",
+     "hash": "393f1e16859f1e71cb8c",
+     "seconds": 22.74,
+     "bytes": 137012
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",
