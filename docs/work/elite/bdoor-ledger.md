@@ -25602,3 +25602,19 @@ Cut in chapter 24: nothing; John 11:35 kept in the hard note as Scripture's witn
 | The hard note: Why does God promise to take vengeance on Edom by the hand of Israel, and is this chapter a license for national revenge? The readings in their holders' terms | 12-17 `hard` | ezekiel/25.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 25: Romans 12:19 beside vengeance, which the New Testament does not draw from Ezekiel 25; the John Hyrcanus fulfillment given only as some interpreters' reading.
+
+## The plain notes on Ezekiel 26 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/26.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Tyre, a bare rock: the text paraphrased; quoted clauses at verses 2, 3, 4, 5, 7, 8-11, 12, 14 | 1-14 | BSB | BSB text |
+| Background in `hearers` | 1-14 | ezekiel/26.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 23:1; Amos 1:9 | 1-14 `later` | BSB | BSB text |
+| The hard note: Nebuchadnezzar did not destroy Tyre, and a city called Tyre still exists. Did this prophecy fail? The readings in their holders' terms | 1-14 `hard` | ezekiel/26.json `hard` | Repository; the site takes no side |
+| The princes of the sea lament: the text paraphrased; quoted clauses at verses 15, 16, 17, 19-20, 21 | 15-21 | BSB | BSB text |
+| Background in `hearers` | 15-21 | ezekiel/26.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 23:2-8; Psalm 55:23 | 15-21 `later` | BSB | BSB text |
+
+Cut in chapter 26: nothing drawn to the New Testament; Tarshish left unplaced.
