@@ -21899,3 +21899,22 @@ Cut in chapter 12: John 7:37-38 at the Feast of Tabernacles, which the New Testa
 | Jeremiah 51:11 (its clause after the exclamations); Jeremiah 50:39 | 17-22 `later` | BSB | BSB text |
 
 Cut in chapter 13: nothing beyond the policy on lines to Christ.
+
+## The plain notes on Isaiah 14 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/14.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 14:1-11 | 1-11 | BSB | BSB text |
+| Return and rest; the taunt song; the candidates for the king (Sargon II in 705, Sennacherib, Nebuchadnezzar, Nabonidus) or a type; Sheol; the cedars; verse 2 no warrant to rule any people now | 1-11 | isaiah/14.json `story`, `historical`; the brief | Repository |
+| Revelation 18 named; Ezekiel 32:21 (its words, inside the BSB's speech marks) | 1-11 `later` | BSB | BSB text |
+| 14:12-23 | 12-23 | BSB | BSB text |
+| The day star; the mount of assembly; the unburied king; verse 21 and the dynasty's end, against Israel's own law | 12-23 | isaiah/14.json `historical`, `hard` | Repository |
+| Ezekiel 28:17; Luke 14:11 | 12-23 `later` | isaiah/14.json `hard` (Ezekiel 28); BSB | BSB text |
+| The hard note: a human tyrant; Satan's fall in early Christian reading; lucifer; double reference; no side | 12-23 `hard` | isaiah/14.json `hard` | Repository; each reading in its holders' terms |
+| 14:24-32 | 24-32 | BSB | BSB text |
+| Far, near and present; 701 BC; the year Ahaz died (727 or 715); Tiglath-pileser III's death in 727; the Philistine cities; the envoys | 24-32 | isaiah/14.json `historical`, `story` | Repository; both dates |
+| Isaiah 37:36; Psalm 33:11 | 24-32 `later` | BSB | BSB text |
+
+Cut in chapter 14: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
