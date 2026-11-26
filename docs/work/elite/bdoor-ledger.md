@@ -21918,3 +21918,19 @@ Cut in chapter 13: nothing beyond the policy on lines to Christ.
 | Isaiah 37:36; Psalm 33:11 | 24-32 `later` | BSB | BSB text |
 
 Cut in chapter 14: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 15 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 15:1-4 | 1-4 | BSB | BSB text |
+| Moab's place and land; Lot and Ruth; Mesha about 840 BC and the stele found at Dibon in 1868 with its towns; tribute to Assyria; mourning customs; Chemosh; the event unidentified (16:13) | 1-4 | isaiah/15.json `historical`, `cultural` | Repository |
+| 2 Kings 3:5; Jeremiah 48:31 | 1-4 `later` | BSB | BSB text |
+| 15:5-9 | 5-9 | BSB | BSB text |
+| The map of the towns; the flight south; Dimon and dam; no gloating | 5-9 | isaiah/15.json `cultural`, `story` | Repository |
+| Ezekiel 18:23; Jeremiah 48:32 | 5-9 `later` | isaiah/15.json `hard` (Ezekiel 18:23); BSB | BSB text |
+| The hard note: the prophet's or God's grief; the formal dirge; genuine grief; no leave to rejoice over any people's suffering | 5-9 `hard` | isaiah/15.json `hard`; the brief | Repository; each reading in its holders' terms |
+
+Cut in chapter 15: nothing. No care line is needed in this chapter.
