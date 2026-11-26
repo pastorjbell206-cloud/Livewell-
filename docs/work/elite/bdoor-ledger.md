@@ -24842,3 +24842,19 @@ Cut from the book page: John 7:37-39 and John 1:14 as fulfillments of Ezekiel, w
 | The hard note: What exactly did Ezekiel see, and how should a modern reader picture it? The readings in their holders' terms | 26-28 `hard` | ezekiel/1.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 1: the deep note's lines to John 1:14 and 18, 2 Corinthians 4:6 and Revelation 1, which the New Testament does not draw from Ezekiel 1; the figure on the throne is left as a Christian reading. Irenaeus's four faces and four Gospels, left out.
+
+## The plain notes on Ezekiel 2 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Sent to a rebellious house: the text paraphrased; quoted clauses at verses 1, 2, 3, 4, 5, 6, 7 | 1-7 | BSB | BSB text |
+| Background in `hearers` | 1-7 | ezekiel/2.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 1:8; Jeremiah 26:20-23 | 1-7 `later` | BSB | BSB text |
+| The hard note: Why would God send a prophet to people he knows will not listen? The readings in their holders' terms | 1-7 `hard` | ezekiel/2.json `hard` | Repository; the site takes no side |
+| A scroll to eat: the text paraphrased; quoted clauses at verses 8, 9, 10 | 8-10 | BSB | BSB text |
+| Background in `hearers` | 8-10 | ezekiel/2.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 15:16; Revelation 10:9-10 | 8-10 `later` | BSB | BSB text |
+
+Cut in chapter 2: the deep note's lines to John 12:49, Luke 4:18 and 24 and 13:34, thematic only.
