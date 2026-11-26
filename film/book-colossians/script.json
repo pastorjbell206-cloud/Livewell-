@@ -1,0 +1,138 @@
+{
+  "title": "Colossians: complete in Christ",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-colossians",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "more",
+      "kicker": "A promise of more",
+      "level": 0.2,
+      "lines": [
+        "Colossians was written from prison to a small church Paul had never seen. Epaphras, one of its own people, had carried the gospel home.",
+        "Now some teaching promised more: visions, food rules, holy days, and attention to angels and powers."
+      ],
+      "scripture": {
+        "reference": "Colossians 1:7",
+        "text": "You learned it from Epaphras, our beloved fellow servant",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The first two chapters are about who Christ is, and the last two about how believers live. The turn comes at the start of chapter three.",
+        "The commands of the second half grow out of the gifts of the first."
+      ],
+      "scripture": {
+        "reference": "Colossians 3:1",
+        "text": "since you have been raised with Christ, strive for the things above",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "song",
+      "kicker": "Watch for: the song of Christ",
+      "level": 0.5,
+      "lines": [
+        "Christ is the image of the invisible God. All things were made through him and for him.",
+        "He is before all things, and in Him all things hold together.",
+        "Firstborn means the heir with first place, not the first thing made, as the church confessed at Nicaea."
+      ],
+      "scripture": {
+        "reference": "Colossians 1:17",
+        "text": "He is before all things, and in Him all things hold together.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "complete",
+      "kicker": "Watch for: nothing missing",
+      "level": 0.7,
+      "lines": [
+        "All the fullness of God dwells in Christ, and believers are complete in him.",
+        "Israel's feasts and Sabbaths were good gifts, a shadow pointing ahead, not a lie. The powers people feared were disarmed at the cross."
+      ],
+      "scripture": {
+        "reference": "Colossians 2:17",
+        "text": "These are a shadow of the things to come, but the body that casts it belongs to Christ.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "puton",
+      "kicker": "Watch for: the new self",
+      "level": 0.8,
+      "lines": [
+        "Believers put off the old self, with its anger, greed, and lies. They put on compassion, kindness, patience, and forgiveness.",
+        "And over all these virtues put on love, which is the bond of perfect unity.",
+        "In the renewed self there is no Greek or Jew, slave or free. Christ is all."
+      ],
+      "scripture": {
+        "reference": "Colossians 3:14",
+        "text": "And over all these virtues put on love, which is the bond of perfect unity.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "household",
+      "kicker": "Watch for: every relationship",
+      "level": 0.65,
+      "lines": [
+        "Paul puts every relationship in the Lord. He speaks to the weaker first, and lays duties, not privileges, on the stronger.",
+        "Churches read the words to wives and husbands differently. All agree they give no one a license to control or harm another, and nothing in them asks anyone to stay where they or their children are in danger.",
+        "The words to slaves were misused for centuries to defend slavery. That misuse was wrong."
+      ],
+      "scripture": {
+        "reference": "Colossians 3:23",
+        "text": "Whatever you do, work at it with your whole being, for the Lord and not for men",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "Christians differ on who wrote the letter. Paul himself, as the letter says and the early church received it. A follower of Paul after his death, as many scholars since the eighteen hundreds have argued. Or Timothy during Paul's life, with his approval.",
+        "This film takes no side."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read it in one sitting, aloud if you can. Then read the song of Christ slowly, more than once.",
+        "Let it ask whether you have treated Christ as a good beginning, and looked elsewhere for the rest."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "And you have been made complete in Christ."
+      ],
+      "scripture": {
+        "reference": "Colossians 2:10",
+        "text": "And you have been made complete in Christ",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "Complete in Christ.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

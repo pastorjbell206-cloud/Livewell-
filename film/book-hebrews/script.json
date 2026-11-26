@@ -1,0 +1,129 @@
+{
+  "title": "Hebrews: hold on to Jesus",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-hebrews",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "tired",
+      "kicker": "A sermon for the tired",
+      "level": 0.2,
+      "lines": [
+        "Hebrews begins like a sermon and ends like a letter, and no one knows who wrote it.",
+        "It was written to believers who had once suffered bravely, and were now tired, drifting, and tempted to give up on Christ."
+      ],
+      "scripture": {
+        "reference": "Hebrews 1:2",
+        "text": "But in these last days He has spoken to us by His Son",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Teaching and urging take turns. Jesus is greater than the angels and Moses. He is a high priest like Melchizedek, and the one offering the tabernacle pointed toward.",
+        "From chapter ten, the call is to draw near and endure."
+      ],
+      "scripture": {
+        "reference": "Hebrews 8:6",
+        "text": "the covenant He mediates is better and is founded on better promises.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "son",
+      "kicker": "Watch for: the Son",
+      "level": 0.5,
+      "lines": [
+        "God, who spoke through the prophets, has spoken last and best in his Son.",
+        "The Son is the radiance of God’s glory and the exact representation of His nature.",
+        "The Son is also fully human: made like his brothers, tempted, crying out with tears."
+      ],
+      "scripture": {
+        "reference": "Hebrews 1:3",
+        "text": "The Son is the radiance of God’s glory and the exact representation of His nature",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "better",
+      "kicker": "Watch for: the word better",
+      "level": 0.65,
+      "lines": [
+        "The word better runs through the book. The old covenant is a shadow, not because it was false, but because it pointed ahead. The writer honors it as God's gift.",
+        "This book was misused to teach contempt for the Jewish people. That misuse was wrong."
+      ],
+      "scripture": {
+        "reference": "Hebrews 10:1",
+        "text": "For the law is only a shadow of the good things to come",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "priest",
+      "kicker": "Watch for: the priest",
+      "level": 0.8,
+      "lines": [
+        "Hebrews alone calls Jesus a priest at length. He offered not animals but himself, once for all, and sat down because the work was finished.",
+        "He was tempted in every way, yet without sin, so he can sympathize.",
+        "He always lives to intercede for them."
+      ],
+      "scripture": {
+        "reference": "Hebrews 7:25",
+        "text": "He always lives to intercede for them.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "warnings",
+      "kicker": "Watch for: warnings and hope",
+      "level": 0.9,
+      "lines": [
+        "Five solemn warnings not to drift or turn away run beside as many words of hope. They're addressed to people the writer believes will persevere. How they relate to assurance is much debated, and this film takes no side.",
+        "Then come the roll call of faith, and the race.",
+        "Let us fix our eyes on Jesus, the author and perfecter of our faith."
+      ],
+      "scripture": {
+        "reference": "Hebrews 12:2",
+        "text": "Let us fix our eyes on Jesus, the author and perfecter of our faith",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter one, then eleven and twelve. The key chapters are one, two, four, six, seven, nine, eleven, and twelve.",
+        "Read with the Old Testament texts it builds on open beside it, and watch for the word better."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Jesus Christ is the same yesterday and today and forever."
+      ],
+      "scripture": {
+        "reference": "Hebrews 13:8",
+        "text": "Jesus Christ is the same yesterday and today and forever.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "Hold on to Jesus.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

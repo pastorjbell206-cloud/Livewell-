@@ -1,0 +1,130 @@
+{
+  "title": "Philippians: joy in chains",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-philippians",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "warm",
+      "kicker": "A letter between friends",
+      "level": 0.2,
+      "lines": [
+        "Philippians is Paul's warmest letter. He writes from prison, facing a trial that could end in his death.",
+        "He writes to the church that had stood by him from the start, and had just sent him a gift by the hand of Epaphroditus.",
+        "I thank my God every time I remember you."
+      ],
+      "scripture": {
+        "reference": "Philippians 1:3",
+        "text": "I thank my God every time I remember you.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "Thanks and news from prison. A call to stand together, with the hymn to Christ at its center. Knowing Christ, and pressing on. Then last appeals and thanks.",
+        "The hymn of chapter two shapes all that follows."
+      ],
+      "scripture": {
+        "reference": "Philippians 2:5",
+        "text": "Let this mind be in you which was also in Christ Jesus",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "joy",
+      "kicker": "Watch for: joy",
+      "level": 0.5,
+      "lines": [
+        "Words for joy come more than a dozen times in a letter written in chains.",
+        "Rejoice in the Lord always. I will say it again: Rejoice!",
+        "Paul's joy rests not on his circumstances but on the Lord. It has looked at suffering and death and not been undone."
+      ],
+      "scripture": {
+        "reference": "Philippians 4:4",
+        "text": "Rejoice in the Lord always. I will say it again: Rejoice!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "hymn",
+      "kicker": "Watch for: the hymn",
+      "level": 0.7,
+      "lines": [
+        "At the letter's heart stands what many think was an early hymn. Christ, in the form of God, emptied himself, took the form of a servant, and was obedient to death on a cross. And God exalted him.",
+        "Humility here is the free choice to use one's place for others."
+      ],
+      "scripture": {
+        "reference": "Philippians 2:7",
+        "text": "but emptied Himself, taking the form of a servant",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "press",
+      "kicker": "Watch for: pressing on",
+      "level": 0.85,
+      "lines": [
+        "Paul counts his impressive credentials as loss, to gain Christ and a righteousness from God through faith.",
+        "I count all things as loss compared to the surpassing excellence of knowing Christ Jesus my Lord.",
+        "He has not arrived. Like a runner, he presses on toward the goal."
+      ],
+      "scripture": {
+        "reference": "Philippians 3:8",
+        "text": "I count all things as loss compared to the surpassing excellence of knowing Christ Jesus my Lord",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "content",
+      "kicker": "Watch for: a famous line",
+      "level": 0.7,
+      "lines": [
+        "Paul calls the church to pray instead of worrying. Then comes a much quoted line.",
+        "I can do all things through Christ who gives me strength.",
+        "In context it's not a promise of success. It's the strength to be content in hunger and in plenty."
+      ],
+      "scripture": {
+        "reference": "Philippians 4:13",
+        "text": "I can do all things through Christ who gives me strength.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read it whole, as a letter between friends. It takes about fifteen minutes aloud. Watch the words joy, gospel, partnership, and mind.",
+        "Read chapter two slowly, and the famous line of chapter four with the verses around it."
+      ],
+      "scripture": {
+        "reference": "Philippians 4:7",
+        "text": "And the peace of God, which surpasses all understanding",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "It's a letter about joy, written in chains."
+      ],
+      "titleCard": [
+        "Joy in chains.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

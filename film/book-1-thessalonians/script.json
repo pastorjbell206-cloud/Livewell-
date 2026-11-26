@@ -1,0 +1,129 @@
+{
+  "title": "1 Thessalonians: hope that does not give up",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-1-thessalonians",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "oldest",
+      "kicker": "An early letter",
+      "level": 0.2,
+      "lines": [
+        "First Thessalonians is very likely the oldest of Paul's letters to survive, written around the year fifty.",
+        "Forced to leave by night, he had left a few new believers facing hard neighbors. Timothy brings good news, and Paul writes in relief."
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 3:6",
+        "text": "Timothy has returned from his visit with the good news",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The first half looks back: thanks for their faith, love, and hope, and how Paul lived among them. The second looks ahead: holiness, love, quiet work, and the Lord's coming.",
+        "Every chapter ends near the same place."
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 1:3",
+        "text": "your work of faith, your labor of love, and your enduring hope",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "turned",
+      "kicker": "Watch for: a new start",
+      "level": 0.5,
+      "lines": [
+        "Most of these believers had worshiped idols until a few weeks before, and they turned to serve the living and true God.",
+        "Paul lived among them, gentle as a nursing mother and caring as a father, working night and day so as not to be a burden."
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 1:9",
+        "text": "how you turned to God from idols to serve the living and true God",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "grief",
+      "kicker": "Watch for: grief with hope",
+      "level": 0.7,
+      "lines": [
+        "Some believers had died, and the living feared they had missed the Lord's coming. Paul doesn't tell them not to grieve.",
+        "He tells them not to grieve like those without hope, because Jesus died and rose again.",
+        "And so we will always be with the Lord."
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 4:17",
+        "text": "And so we will always be with the Lord.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "coming",
+      "kicker": "Where Christians differ",
+      "level": 0.6,
+      "lines": [
+        "Every Christian tradition confesses that Jesus will come again and the dead will be raised. Christians differ on the order of events, and on whether being caught up is a separate rapture. This film takes no side.",
+        "Paul gives no date.",
+        "The Day of the Lord will come like a thief in the night.",
+        "So no one should set a date, or name a living person, a nation, or an event of our own day as what these verses describe."
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 5:2",
+        "text": "the Day of the Lord will come like a thief in the night.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "together",
+      "kicker": "Watch for: life together",
+      "level": 0.75,
+      "lines": [
+        "The letter ends with short commands for life together. Respect leaders. Care for the weak. Rejoice. Pray. Give thanks. Test everything.",
+        "Waiting for the Lord means living well among your neighbors, not leaving them behind."
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 5:17",
+        "text": "Pray without ceasing.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read it in one sitting, as a pastor's letter to new believers he loves. Read the end of chapter four for what Paul says it's for.",
+        "Therefore encourage one another with these words."
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 4:18",
+        "text": "Therefore encourage one another with these words.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Whom are you grieving, and where is your hope?"
+      ],
+      "titleCard": [
+        "Hope that does not give up.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
