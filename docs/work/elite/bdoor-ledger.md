@@ -25043,3 +25043,19 @@ Cut in chapter 13: nothing. The note on verse 23 adds that the proverb makes no 
 | Joel 1:20, 1 Kings 18:1, James 5:17, Jeremiah 29:13 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 14: nothing.
+
+## The plain notes on Jeremiah 15 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/15.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 15:1-21 (verse 2 paraphrased around inner speech marks) | all | BSB | BSB text |
+| Moses and Samuel as intercessors, Exodus 32, 1 Samuel 7 and 12 | 1-9 | jeremiah/15.json `cultural` | Repository |
+| Manasseh, about fifty-five years, Assyria's vassal; Kings' charges | 1-9 | jeremiah/15.json `historical`; 2 Kings 21 | Repository |
+| The second confession; eating God's words; the failing brook; return; the call's words repeated | 10-21 | jeremiah/15.json `cultural`, `literary` | Repository |
+| Readings of verse 19's rebuke | 10-21 `hard` | jeremiah/15.json `hard` | Repository |
+| The SUFFERING care line, byte for byte | 10-21 `hard` | carelines.json | care.mjs |
+| 1 Samuel 12:23, 2 Kings 21:16, Ezekiel 3:3, Psalm 88:14 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 15: nothing.
