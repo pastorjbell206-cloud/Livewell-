@@ -22524,3 +22524,18 @@ Cut in chapter 29: the deep note's line on the risen Jesus opening the sealed bo
 | 2 Kings 23:10; Isaiah 37:36 named | 27-33 `later` | BSB | BSB text |
 
 Cut in chapter 30: nothing beyond the narrowings above. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 31 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/31.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 31:1-3 | 1-3 | BSB | BSB text |
+| The fourth woe restating chapter 30; flesh and spirit; 705 to 701 BC; the Kushite kings; Egypt's horses and chariots; Solomon's imports (1 Kings 10:28-29) | 1-3 | isaiah/31.json `story`, `historical` | Repository |
+| Jeremiah 17:5 (inside the BSB's speech marks); Zechariah 4:6 (inside the BSB's speech marks) | 1-3 `later` | BSB | BSB text |
+| 31:4-9 (31:4's last clause, after the dash; first typed inexactly, caught and corrected) | 4-9 | BSB | BSB text |
+| The lion and the hovering birds; pasach and the Passover; 37:36 and 2 Kings 19:35; Sennacherib's annals claiming tribute and not Jerusalem; Nineveh in 612 BC; the call to return | 4-9 | isaiah/31.json `historical`, `words` | Repository |
+| Deuteronomy 32:11; Isaiah 37:36 | 4-9 `later` | BSB | BSB text |
+
+Cut in chapter 31: Matthew 23:37, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
