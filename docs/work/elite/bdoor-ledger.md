@@ -26098,3 +26098,19 @@ Cut in chapter 42: nothing.
 | The hard note: Why does Ezekiel's future temple have animal sacrifices, when the New Testament says Christ's sacrifice ended them? The readings in their holders' terms | 13-27 `hard` | ezekiel/43.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 43: the deep note's lines to John 1:14 and 2:19-21 beside the returning glory, which the New Testament does not draw from Ezekiel 43; Hebrews 10:12 kept in the hard note as the New Testament's own teaching on sacrifice, not as a line drawn from Ezekiel.
+
+## The plain notes on Ezekiel 44 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/44.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The shut gate, and those who may serve: the text paraphrased; quoted clauses at verses 1, 2, 3, 4, 9, 10-14 | 1-14 | BSB | BSB text |
+| Background in `hearers` | 1-14 | ezekiel/44.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 56:6-7; Joshua 9:27 | 1-14 `later` | BSB | BSB text |
+| The hard note: Doesn't the exclusion of foreigners clash with the Bible's welcome to the nations? The readings in their holders' terms | 1-14 `hard` | ezekiel/44.json `hard` | Repository; the site takes no side |
+| The priests who keep charge: the text paraphrased; quoted clauses at verses 15, 17-19, 20-27, 23, 24, 28 | 15-31 | BSB | BSB text |
+| Background in `hearers` | 15-31 | ezekiel/44.json `historical`, `cultural`, `literary` | Repository |
+| Later: Numbers 18:20; Malachi 2:7 | 15-31 `later` | BSB | BSB text |
+
+Cut in chapter 44: Ephesians 2:13 beside the foreigners, which the New Testament does not draw from Ezekiel 44; the early Christian reading of the shut gate as Mary's virginity, left out as an allegory the text does not suggest.
