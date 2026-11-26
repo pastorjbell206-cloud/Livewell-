@@ -25805,3 +25805,19 @@ Cut in chapter 37: John 5:28-29, 1 Corinthians 15 and 2 Corinthians 6:16 beside 
 | Later: Joshua 10:11; Judges 7:22 | 17-23 `later` | BSB | BSB text |
 
 Cut in chapter 38: any match between these names and modern countries; Revelation 20:8 kept as the New Testament's own use of the names. No date, no modern nation, person or event.
+
+## The plain notes on Ezekiel 39 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/39.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Gog's defeat and the cleansing of the land: the text paraphrased; quoted clauses at verses 1-4, 7, 9, 11, 12, 14-15, 17-20 | 1-20 | BSB | BSB text |
+| Background in `hearers` | 1-20 | ezekiel/39.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 2:4; Deuteronomy 21:23 | 1-20 `later` | BSB | BSB text |
+| The hard note: Should the seven years of burning weapons and the seven months of burial be taken literally? The readings in their holders' terms | 1-20 `hard` | ezekiel/39.json `hard` | Repository; the site takes no side |
+| God's face no longer hidden: the text paraphrased; quoted clauses at verses 21, 22, 23-24, 25, 26, 29 | 21-29 | BSB | BSB text |
+| Background in `hearers` | 21-29 | ezekiel/39.json `historical`, `cultural`, `literary` | Repository |
+| Later: Joel 2:28; Numbers 6:25 | 21-29 `later` | BSB | BSB text |
+
+Cut in chapter 39: the deep note's mention of modern materials that burn; no date, no modern nation, person or event.
