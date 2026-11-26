@@ -9136,3 +9136,48 @@ Each chapter has one to three passages (589 to 1,791 words). The hard notes that
 ### What was run, for both books
 
 The 2 Kings scripts, copied and pointed at each book, after every commit: validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden-word, signposting and first-person scans, the care-line check, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks (0 problems each). Every five to eight chapters: the 61 content gates, `pnpm check` and `pnpm test`. Before each push, the full order on the merged tree and a walk of the served build at 390 and 1440. The gate results and the push ranges are in the hand-back.
+
+## Lamentations: the book page and every chapter (2026-11-25)
+
+Lamentations is complete: a teaching introduction on the book page and all five chapters in plain words, in the shape of Job and 2 Kings. Each passage's third part is `later`; each chapter note gained only `"plain": true` at its end; one commit for the book page (with the four rebuilt explore indexes and `teaching.test.tsx`, which now lists Lamentations among the books with a teaching guide and names its frame, `canaan`) and one per chapter, each with its ledger rows.
+
+### The book page (`/study/bible/lamentations`, same address)
+
+Data only, in `client/public/bible/notes/lamentations/intro.json`, field `teaching`. Twelve parts (3,317 words): Lamentations in a minute; Where it sits in the story; Who wrote it, and when; The fall of Jerusalem; How Lamentations is built; A widow with no one to comfort her; The Lord like an enemy; The man who has seen affliction; Gold grown dim; Remember, O LORD; How Lamentations has been read; How to read Lamentations. Then 15 hard passages, 15 key words, 10 timeline entries, a `canaan` map of two places (Jerusalem, and Sodom roughly as a region, each where the site's other maps place it; Edom, Uz, Egypt, Assyria and Babylon left off and the note says so), and eleven Go deeper pages, all live. Dates follow the book's introduction and the site's guides; where they differ the page says so (the fall in 587 or 586 BC, Thiele's 586 in the guide to the kings, 587 preferred by many historians; the siege begun in 588 or 587). Authorship is given in each view's own terms (the Septuagint's preface and Jeremiah; the modern doubts; the reply), with no side taken.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words |
+|---|---|---|
+| 1 | 4 | 2,350 |
+| 2 | 3 | 2,278 |
+| 3 | 4 | 2,512 |
+| 4 | 4 | 2,175 |
+| 5 | 3 | 1,861 |
+| **Total** | **18** | **11,176** |
+
+### The hard places, and how they are stated
+
+- **The city pictured as a woman exposed (1:8-10):** a prophetic picture of a city and its fall; the poem grieves and does not mock; no warrant for any man to shame or harm a woman; the line for anyone being hurt.
+- **Zion's prayer against her enemies (1:21-22; 3:64-66):** equal justice handed to God, read two ways; Matthew 5:44 and Romans 12:19.
+- **The Lord like an enemy (2:1-10):** a simile from inside the disaster; covenant judgment; 3:33 and 3:22 beside it; sovereignty or consequences, both readings; Judah's own Scripture, no key for anyone's suffering, no warrant to call any people's suffering deserved, never a reason to blame the Jewish people.
+- **The starving children (2:11-12, 2:20, 4:10):** named, never described; 2:20's second question and 4:10 are not quoted; a horror and not a lesson; no child's suffering read as punishment; the child-loss, grief and self-harm lines.
+- **God shuts out prayer (3:1-20):** lament is not unbelief; the self-harm line.
+- **Adversity and good from the Most High (3:37-39):** both readings; 3:39 as the city's confession, never a word to another sufferer.
+- **Greater than Sodom (4:6):** longer suffering, not necessarily worse sin; the disaster line.
+- **Edom (4:21-22):** an ancient nation named for what it did; no people of the present day identified with it.
+- **The fathers' sins (5:7):** a cry, answered by Deuteronomy 24:16, Jeremiah 31:29-30 and Ezekiel 18.
+- **Women violated (5:11):** named in a line, no blame on the women; the line for anyone sexually assaulted.
+- **The unanswered ending (5:22):** the three readings; the synagogue's repeating of 5:21; the line for anyone suffering now.
+
+### Care lines
+
+Reused whole, byte for byte, each naming Find Help, none with a phone number, and no new care sentence: the grief line (book page; 1, 2); the self-harm line (book page; 2, 3); the line for anyone being hurt (1); the child-loss line (2); the disaster line (4); the line for anyone sexually assaulted (5, from judges/plain/19.json); the line for anyone suffering now (5, from job/intro.json). From chapter 4 on, care lines are read by script from their sources (`carelines.json` in the scratch folder) after the care check caught one typed with a variant ending. The introduction's and deep notes' older fields name a United States phone number; these notes do not repeat it.
+
+### Cut or narrowed
+
+Every line the deep notes draw from Lamentations to Christ that the New Testament does not draw: verse 1:12 on the lips of Christ, the head-shaking passers-by of Mark 15:29, the Comforter of John 14:16, Jesus bearing the wrath of chapter 2, Luke 19:41-44 set beside the chapter, verse 3:30 beside Matthew 5:39, the anointed of 4:20 and Jesus, the cup of 4:21 and Mark 14:36, Romans 11:1 as the answer to 5:22. The New Testament does not name Lamentations, and the book page says so; Holy Week reading is given as the church's reading, as the introduction gives it. Two unsourced sentences were cut before commit (Jerusalem on the trade roads; what the first hearers may have remembered of persecuted prophets).
+
+### What was run
+
+The 2 Kings checks, copied to `/home/user/bdoor-scratch/major-prophets/` and pointed at these books (the book page's check reads only the `teaching` field; the care corpus leaves out all five of this run's books): validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden-word, signposting and first-person scans, the care-line check, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks, after the book page and each chapter, each exit 0 at commit. `teaching.test.tsx` passed (33 of 33) after the book page. The push's gates are in the hand-back.
