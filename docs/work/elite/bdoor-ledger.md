@@ -23886,3 +23886,25 @@ Cut in chapter 49: a draft `later` line on Matthew 12:29 was replaced by Psalm 1
 | Psalm 23:4 (its clause); Lamentations 3:30 (named) | 10-11 `later` | BSB | BSB text |
 
 Cut in chapter 50: nothing. The Gospel line is given as how Christians have read the song, not as a New Testament citation, because the New Testament does not quote it.
+
+## The plain notes on Isaiah 51 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/51.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 51:1-8 | 1-8 | BSB | BSB text |
+| Speaks to those who trust in the dark (50:10); Abraham's memory used against Ezekiel 33:24's boast | 1-8 | isaiah/51.json `story`, `historical` | Repository |
+| Comfort four times, taking up 40:1; three calls to listen | 1-8 | isaiah/51.json `words`, `literary` | Repository |
+| Ezekiel 33:24 (its inner quotation); Hebrews 11:12 (its clause) | 1-8 `later` | BSB | BSB text |
+| 51:9-16 | 9-16 | BSB | BSB text |
+| Captives, deportation and the dungeon | 9-16 | isaiah/51.json `historical` | Repository |
+| Sea as chaos; Ugarit tablets found from 1929; Baal and Yam; Rahab as monster and as Egypt (30:7; Psalm 87:4); creation and exodus joined | 9-16 and `hard` | isaiah/51.json `cultural` | Repository |
+| The people ask God to wake; God says they have forgotten him | 9-16 | isaiah/51.json `literary` | Repository |
+| Psalm 89:10; Isaiah 35:10 (named as near word for word) | 9-16 `later` | BSB | BSB text |
+| 51:17-23 | 17-23 | BSB | BSB text |
+| 587 or 586 BC; the cup in Jeremiah 25 and Psalm 75; treading on the defeated, Joshua 10:24 | 17-23 | isaiah/51.json `historical`, `cultural` | Repository |
+| Jeremiah 25:15 (its inner quotation); Psalm 75:8 (its last words) | 17-23 `later` | BSB | BSB text |
+| The GRIEF care line, byte for byte | 17-23 `hard` | carelines.json (from the site) | care.mjs |
+
+Cut in chapter 51: the deep note's Christian reading of the cup through Gethsemane (Mark 14:36) is left out, because the New Testament does not itself tie that cup to this chapter.
