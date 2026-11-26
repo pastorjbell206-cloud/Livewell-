@@ -24007,3 +24007,19 @@ New Testament lines in chapter 4: none drawn. Cut in chapter 4: Revelation 11:4 
 | The hard note: Why is wickedness pictured as a woman, and does the passage demean women? The readings in their holders' terms | 5-11 `hard` | zechariah/5.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 5: none drawn. Cut in chapter 5: nothing.
+
+## The plain notes on Zechariah 6 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/6.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Four chariots go out over the earth: the text paraphrased, its quoted verses (in single or double quotes) | 1-8 | BSB | BSB text |
+| Background in `hearers` | 1-8 | zechariah/6.json `historical`, `cultural`, `literary` | Repository |
+| Later: Zechariah 1:10; Jeremiah 1:14 | 1-8 `later` | BSB | BSB text |
+| A crown for Joshua, and the man called the Branch: the text paraphrased, its quoted verses (in single or double quotes) | 9-15 | BSB | BSB text |
+| Background in `hearers` | 9-15 | zechariah/6.json `historical`, `cultural`, `literary` | Repository |
+| Later: Psalm 110:4; Ezra 2:68-69 | 9-15 `later` | BSB | BSB text |
+| The hard note: Why is the crown placed on Joshua the priest rather than on Zerubbabel, the heir of David? The readings in their holders' terms | 9-15 `hard` | zechariah/6.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 6: none drawn. Cut in chapter 6: nothing.
