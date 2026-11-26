@@ -22670,3 +22670,19 @@ Cut in chapter 37: nothing. No care line is needed in this chapter.
 | 2 Kings 20:7 (inside the BSB's speech marks; first typed with Isaiah's wording and corrected); James 5:14 | 21-22 `later` | BSB | BSB text |
 
 Cut in chapter 38: nothing.
+
+## The plain notes on Isaiah 39 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/39.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 39:1-4 (39:2 paraphrased around its dash; Hezekiah's words inside the BSB's speech marks) | 1-4 | BSB | BSB text |
+| Merodach-baladan (Marduk-apla-iddina II) about 721 to 710 and about 703; Sargon II and Sennacherib; the embassy as a search for allies before 701; the armory | 1-4 | isaiah/39.json `historical` | Repository |
+| 2 Chronicles 32:31 | 1-4 `later` | BSB | BSB text |
+| 39:5-8 (Isaiah's words inside the BSB's speech marks; 39:8's thought paraphrased) | 5-8 | BSB | BSB text |
+| 597 and 587 or 586 BC (2 Kings 24:10-16); the first half closed; the comfort of chapter 40 next | 5-8 | isaiah/39.json `historical`, `hard` | Repository |
+| 2 Kings 24:13; Daniel 1:3 (its clause before the dash) | 5-8 `later` | BSB | BSB text |
+| The hard note: complacency or acceptance (1 Kings 21:29; 2 Kings 22:18-20); deliberate ambiguity; no side | 5-8 `hard` | isaiah/39.json `hard` | Repository; both readings in their holders' terms |
+
+Cut in chapter 39: nothing. No care line is needed in this chapter.
