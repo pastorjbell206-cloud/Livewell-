@@ -8,7 +8,7 @@ The book sets out what critical race theory's own writers (Derrick Bell, Kimberl
 
 What an edit may be: an em-dash recast as a comma, a semicolon, a colon before a real list or a gloss, or brackets; a stack of fragments joined into one sentence where no new word is needed. Nothing else: no word was added, removed or replaced, and no sentence, fact, example or opinion was added or taken out. Edits are exact old/new pairs, each required to match once in the chapter's file, applied to the original text every time (`git diff 3413b1bb -- content/books-src/critical-race-theory-biblical/` shows every change). One commit per chapter. In the tables an "edit" is one changed paragraph, which may hold several dashes.
 
-**How the dashes were worked, and what that means.** Unlike the first four books, the chapters were not each read whole before editing. Every long dash in his running prose was given a recast by one fixed rule: a pair of dashes around an aside became commas, or brackets where the aside itself holds a comma or a question; a single dash before "and", "but", "which", "because", "not" and the like became a comma; before an independent clause, a semicolon; before a list, a colon; otherwise a comma. Each proposal was then read in its sentence, and where the rule chose wrongly it was overridden (90 overrides in this book). The fact diff below is what proves nothing but punctuation moved.
+**How the dashes were worked, and what that means.** Unlike the first four books, the chapters were not each read whole before editing. Every long dash in his running prose was given a recast by one fixed rule: a pair of dashes around an aside became commas, or brackets where the aside itself holds a comma or a question; a single dash before "and", "but", "which", "because", "not" and the like became a comma; before an independent clause, a semicolon; before a list, a colon; otherwise a comma. Each proposal was then read in its sentence, and where the rule chose wrongly it was overridden (91 overrides in this book). The fact diff below is what proves nothing but punctuation moved.
 
 **A contested subject, and the rule was strictest here.** Every account of what CRT claims, every concession to it ("Where CRT Gets It Right") and every criticism of it ("Where CRT Gets It Wrong"), every account of the church's history on race, every confession and every pastoral line took punctuation only; the fact diff holds every quoted word, name, date, figure and hedge in place. The book criticizes the right and the left with the same instrument, and parallel criticisms took the same rule. Quotations (Martin Luther King Jr., Philemon, the speeches quoted in the expansions) keep their dashes, as all quotations do.
 
@@ -39,12 +39,12 @@ Three scripts, kept outside the repo in `/home/user/vs5/t/` (`apply.py`, `factdi
 | Chapter 12: Building a Church That Does Justice and Loves Mercy | 1,669 | 1,669 | +0.0% | 16 (9.6) | 0 (0.0) | 60 (35.9) | 47 (28.2) | 13 | PASS |
 | Conclusion: The Cross and the Color Line | 1,463 | 1,463 | +0.0% | 22 (15.0) | 0 (0.0) | 59 (40.3) | 39 (26.7) | 15 | PASS |
 | Expansions 1: Introduction, Chapters 1-3 | 4,721 | 4,721 | +0.0% | 53 (11.2) | 0 (0.0) | 114 (24.1) | 63 (13.3) | 34 | PASS |
-| Expansions 2: Chapters 4-6 | 3,722 | 3,722 | +0.0% | 34 (9.1) | 0 (0.0) | 81 (21.8) | 47 (12.6) | 27 | PASS |
-| Expansions 3: Chapters 7-9 | 3,989 | 3,989 | +0.0% | 48 (12.0) | 0 (0.0) | 98 (24.6) | 52 (13.0) | 23 | PASS |
+| Expansions 2: Chapters 4-6 | 3,722 | 3,722 | +0.0% | 34 (9.1) | 1 (0.3) | 81 (21.8) | 48 (12.9) | 27 | PASS |
+| Expansions 3: Chapters 7-9 | 3,989 | 3,989 | +0.0% | 48 (12.0) | 0 (0.0) | 98 (24.6) | 52 (13.0) | 24 | PASS |
 | Expansions 4: Chapters 10-12 and Conclusion | 2,995 | 2,995 | +0.0% | 31 (10.4) | 1 (0.3) | 88 (29.4) | 59 (19.7) | 20 | PASS |
 | Expansions 5: Second Round Expansions for Chapters 3, 5, 9 | 3,232 | 3,232 | +0.0% | 26 (8.0) | 0 (0.0) | 67 (20.7) | 43 (13.3) | 20 | PASS |
 | Expansions 6: Second Round Expansions for Chapters 1, 8, 12 | 3,074 | 3,074 | +0.0% | 29 (9.4) | 0 (0.0) | 56 (18.2) | 28 (9.1) | 20 | PASS |
-| **All 20** | 44,462 | 44,462 | +0.0% | 437 (9.8) | 1 (0.0) | 1136 (25.5) | 722 (16.2) | 303 | |
+| **All 20** | 44,462 | 44,462 | +0.0% | 437 (9.8) | 2 (0.0) | 1136 (25.5) | 723 (16.3) | 304 | |
 
 ## Introduction: The Argument That Broke the American Church (`sec01.xhtml`)
 
@@ -370,9 +370,9 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Expansions 2: Chapters 4-6 (`sec16.xhtml`)
 
-Words 3,722 to 3,722. Em-dashes in his prose 34 to 0 (9.1 to 0.0 per 1,000 words). Tells 81 to 47 (21.8 to 12.6 per 1,000). Mean sentence 18.7 words to 18.7; sentences of eight words or fewer 26.6% to 26.6%; of five or fewer 9.9% to 9.9%. 27 edits; paragraphs 36 to 36. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
+Words 3,722 to 3,722. Em-dashes in his prose 34 to 1 (9.1 to 0.3 per 1,000 words). Tells 81 to 48 (21.8 to 12.9 per 1,000). Mean sentence 18.7 words to 18.7; sentences of eight words or fewer 26.6% to 26.6%; of five or fewer 9.9% to 9.9%. 27 edits; paragraphs 36 to 36. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 0 to 0.
 
-By kind (before to after): emdash 34 to 0, not_but 11 to 11, not_just 6 to 6, isnt_its 3 to 3, triplet 14 to 14, anaphora 4 to 4, intens 2 to 2, q_answered 1 to 1, short_close 6 to 6.
+By kind (before to after): emdash 34 to 1, not_but 11 to 11, not_just 6 to 6, isnt_its 3 to 3, triplet 14 to 14, anaphora 4 to 4, intens 2 to 2, q_answered 1 to 1, short_close 6 to 6.
 
 Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block quotes and their references) identical; 13 quoted strings, 11 Scripture references, 7 years, 10 numbers in digits, 25 number words, proper names by count, and 43 hedge words (after: 43) compared.
 
@@ -392,7 +392,7 @@ Five pairs, taken at even intervals through the chapter:
 
 ## Expansions 3: Chapters 7-9 (`sec17.xhtml`)
 
-Words 3,989 to 3,989. Em-dashes in his prose 48 to 0 (12.0 to 0.0 per 1,000 words). Tells 98 to 52 (24.6 to 13.0 per 1,000). Mean sentence 20.1 words to 20.1; sentences of eight words or fewer 28.8% to 28.8%; of five or fewer 17.7% to 17.7%. 23 edits; paragraphs 27 to 27. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
+Words 3,989 to 3,989. Em-dashes in his prose 48 to 0 (12.0 to 0.0 per 1,000 words). Tells 98 to 52 (24.6 to 13.0 per 1,000). Mean sentence 20.1 words to 20.1; sentences of eight words or fewer 28.8% to 28.8%; of five or fewer 17.7% to 17.7%. 24 edits; paragraphs 27 to 27. Paragraphs of fifteen words or fewer 0 to 0; runs of three fragments 1 to 1.
 
 By kind (before to after): emdash 48 to 0, not_but 9 to 9, not_just 1 to 1, NotX.Y 6 to 6, isnt_its 1 to 1, triplet 14 to 15, frag3 1 to 1, anaphora 4 to 4, stock 2 to 2, intens 3 to 3, q_answered 1 to 1, colon_reveal 2 to 3, short_close 6 to 6.
 
@@ -479,11 +479,13 @@ Five pairs, taken at even intervals through the chapter:
 
 ## The whole book
 
-All twenty files were edited (the introduction, twelve chapters, the conclusion and the six "Expansions"). In his running prose: 44,462 words before and after; em-dashes 437 before, 3 after (9.8 to 0.1 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all twenty.
+All twenty files were edited (the introduction, twelve chapters, the conclusion and the six "Expansions"). In his running prose: 44,462 words before and after; em-dashes 437 before, 4 after (9.8 to 0.1 per 1,000 words; his limit is 4 to 6); paragraphs unchanged in number. The fact diff passed on all twenty. (The tell counter in the table blanks quotations before it counts, so its "after" column shows 2.)
 
 **Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets. No word was added, removed or replaced, and no fragment stack was joined.
 
-**The three dashes that stay.** Two are inside quotations (Philemon 15-16 in chapter 7; a speech quoted in Expansions 2). One follows a question ("We have not changed. Now what — what would reconciliation require?", Expansions 4), where a comma would read oddly and a colon cannot follow a question.
+**The four dashes that stay.** Two are inside quotations (Philemon 15-16 in chapter 7; a speech quoted in Expansions 2). Two follow questions ("What do I owe the people those systems harmed?—and these are not comfortable questions", Expansions 2; "Now what — what would reconciliation require?", Expansions 4), where a comma or colon cannot follow a question mark.
+
+**A second look (2026-11-26).** After the first pass, the one place where the rule had closed brackets straight onto "but" beginning a new clause was given its comma, and the dash after the question in Expansions 2 was restored; one commit, the fact diff passing again.
 
 **Left alone, and why.** "Two thousand. Not 1960. Not 1970. 2000." (chapter 8, and again in Expansions 3) is a verdict that could not be joined without adding words. "Read the texts. Then think. Then speak." and "Read Derrick Bell. Read Kimberlé Crenshaw. Read Richard Delgado." are imperatives. "Both responses were panic. Neither was thinking. This book refuses both." (introduction) is three sentences.
 
@@ -512,4 +514,4 @@ The chapters were not read whole for this list. It comes from reading every bloc
 
 ## The files
 
-Rebuilt after the last chapter: still 193 pages (`client/src/data/ebooks.ts` says 193), PDF 1.4 MB, EPUB 337 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,245 words compared, no difference); the PDF's pages carry the same text character for character (243,254 against 243,254).
+Rebuilt after the last chapter: still 193 pages (`client/src/data/ebooks.ts` says 193), PDF 1.4 MB, EPUB 337 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (47,244 words compared, no difference); the PDF's pages carry the same text character for character (243,255 against 243,255).

@@ -4,7 +4,7 @@ James, 2026-11-25: "i also want you to go through all the book, pdfs, and downlo
 
 ## Method
 
-A short practical booklet for pastors (an introduction, six chapters, a conclusion and an appendix template): 68 long dashes in the 6,282 words of his running prose before the reflection questions (10.8 per 1,000 words, against his limit of 4 to 6), and no fragment stacks to speak of. So the work was the dashes.
+A short practical booklet for pastors (an introduction, six chapters, a conclusion and an appendix template): 57 long dashes in the 5,566 words of his running prose before the reflection questions (10.2 per 1,000 words, against his limit of 4 to 6), and no fragment stacks to speak of. So the work was the dashes.
 
 What an edit may be: an em-dash recast as a comma, a semicolon, a colon before a real list or a gloss, or brackets; a stack of fragments joined into one sentence where no new word is needed. Nothing else: no word was added, removed or replaced, and no sentence, fact, example or opinion was added or taken out. Edits are exact old/new pairs, each required to match once in the chapter's file, applied to the original text every time (`git diff e8c784ac -- content/books-src/change-without-casualties/` shows every change). One commit per chapter. In the tables an "edit" is one changed paragraph, which may hold several dashes.
 
@@ -30,10 +30,10 @@ Three scripts, kept outside the repo in `/home/user/vs5/t/` (`apply.py`, `factdi
 | Building Your Coalition | 735 | 735 | +0.0% | 5 (6.8) | 0 (0.0) | 17 (23.1) | 13 (17.7) | 5 | PASS |
 | The Announcement and Rollout | 746 | 746 | +0.0% | 8 (10.7) | 0 (0.0) | 16 (21.4) | 8 (10.7) | 5 | PASS |
 | Handling Resistance | 728 | 728 | +0.0% | 4 (5.5) | 0 (0.0) | 12 (16.5) | 8 (11.0) | 3 | PASS |
-| Evaluating and Celebrating the Change | 751 | 751 | +0.0% | 10 (13.3) | 0 (0.0) | 18 (24.0) | 8 (10.7) | 7 | PASS |
+| Evaluating and Celebrating the Change | 751 | 751 | +0.0% | 10 (13.3) | 0 (0.0) | 18 (24.0) | 8 (10.7) | 8 | PASS |
 | Conclusion: The Change That Changes You | 295 | 295 | +0.0% | 6 (20.3) | 1 (3.4) | 14 (47.5) | 9 (30.5) | 3 | PASS |
 | Appendix: The Change Communication Template | 253 | 253 | +0.0% | 1 (4.0) | 0 (0.0) | 30 (118.6) | 29 (114.6) | 1 | PASS |
-| **All 9** | 5,566 | 5,566 | +0.0% | 57 (10.2) | 2 (0.4) | 159 (28.6) | 106 (19.0) | 39 | |
+| **All 9** | 5,566 | 5,566 | +0.0% | 57 (10.2) | 2 (0.4) | 159 (28.6) | 106 (19.0) | 40 | |
 
 ## Introduction: The Way You Introduce It Is the Change (`sec01.xhtml`)
 
@@ -159,7 +159,7 @@ Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block 
 
 ## Evaluating and Celebrating the Change (`sec07.xhtml`)
 
-Words 751 to 751. Em-dashes in his prose 10 to 0 (13.3 to 0.0 per 1,000 words). Tells 18 to 8 (24.0 to 10.7 per 1,000). Mean sentence 23.5 words to 23.5; sentences of eight words or fewer 15.6% to 15.6%; of five or fewer 6.2% to 6.2%. 7 edits; paragraphs 13 to 13. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
+Words 751 to 751. Em-dashes in his prose 10 to 0 (13.3 to 0.0 per 1,000 words). Tells 18 to 8 (24.0 to 10.7 per 1,000). Mean sentence 23.5 words to 23.5; sentences of eight words or fewer 15.6% to 15.6%; of five or fewer 6.2% to 6.2%. 8 edits; paragraphs 13 to 13. Paragraphs of fifteen words or fewer 1 to 1; runs of three fragments 0 to 0.
 
 By kind (before to after): emdash 10 to 0, not_but 2 to 2, anaphora 2 to 2, intens 2 to 2, one_line_para 1 to 1, forbidden 1 to 1.
 
@@ -212,9 +212,11 @@ Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block 
 
 ## The whole book
 
-All nine files were edited. In his running prose (before the reflection questions): 6,282 words before and after; em-dashes 68 before, 2 after (both the dash before a Scripture reference); paragraphs unchanged in number. The fact diff passed on all nine.
+All nine files were edited. In his running prose (before the reflection questions): 5,566 words before and after; em-dashes 57 before, 2 after (both the dash before a Scripture reference); paragraphs unchanged in number. The fact diff passed on all nine.
 
 **Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets. No word was added, removed or replaced. One pair of dashes around a quoted question became brackets (chapter 2: "asking genuine questions (“What do you see ...?”) will receive more useful ...").
+
+**A second look (2026-11-26).** After the first pass, every place where the rule had closed brackets straight onto "but", "so" or "yet" beginning a new clause was found by search and given its comma ("), but"); one commit, the fact diff passing again.
 
 **Forbidden Language list.** None of the listed words is in his prose.
 
@@ -232,4 +234,4 @@ The booklet was read for this list in its dash contexts and searched for referen
 
 ## The files
 
-Rebuilt after the last chapter: still 40 pages (`client/src/data/booklets.ts` says 40), PDF 457 KB, EPUB 257 KB. `--verify`: the EPUB carries exactly the source folder's text (6,411 words compared, no difference); the PDF's pages carry the same text character for character (34,332 against 34,332). The title page, the introduction's last page and a chapter opening were looked at as images on the first build.
+Rebuilt after the last chapter: still 40 pages (`client/src/data/booklets.ts` says 40), PDF 457 KB, EPUB 257 KB. `--verify`: the EPUB carries exactly the source folder's text (6,411 words compared, no difference); the PDF's pages carry the same text character for character (34,333 against 34,333). The title page, the introduction's last page and a chapter opening were looked at as images on the first build.

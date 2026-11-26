@@ -4,7 +4,7 @@ James, 2026-11-25: "i also want you to go through all the book, pdfs, and downlo
 
 ## Method
 
-A short practical booklet for pastors and elders (an introduction, six chapters, a conclusion and an appendix of governance tools): 64 long dashes in the 6,582 words of his running prose before the reflection questions (9.7 per 1,000 words, against his limit of 4 to 6). So the work was the dashes.
+A short practical booklet for pastors and elders (an introduction, six chapters, a conclusion and an appendix of governance tools): 63 long dashes in the 5,967 words of his running prose before the reflection questions (10.6 per 1,000 words, against his limit of 4 to 6). So the work was the dashes.
 
 What an edit may be: an em-dash recast as a comma, a semicolon, a colon before a real list or a gloss, or brackets; a stack of fragments joined into one sentence where no new word is needed. Nothing else: no word was added, removed or replaced, and no sentence, fact, example or opinion was added or taken out. Edits are exact old/new pairs, each required to match once in the chapter's file, applied to the original text every time (`git diff b82f8c21 -- content/books-src/church-governance/` shows every change). One commit per chapter. In the tables an "edit" is one changed paragraph, which may hold several dashes.
 
@@ -187,7 +187,7 @@ Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block 
 
 ## The whole book
 
-All nine files were edited. In his running prose (before the reflection questions): 6,582 words before and after (the count in the table is of the files' prose up to that label); em-dashes 64 before, 2 after (both before a Scripture reference); paragraphs unchanged in number. The fact diff passed on all nine.
+Eight of the nine files were edited (the appendix has no long dash in its prose). In his running prose (before the reflection questions): 5,967 words before and after; em-dashes 63 before, 2 after (both before a Scripture reference); paragraphs unchanged in number. The fact diff passed on all eight.
 
 **Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets. No word was added, removed or replaced.
 

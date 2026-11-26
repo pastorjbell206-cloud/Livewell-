@@ -835,9 +835,9 @@ differ in is said under each book. Each was then edited (records in
 - **Raising Believers** (`raising-believers`). The PDF and EPUB carry the
   same text, letter for letter (208,778 letters). 357 pages became 163,
   `--verify` identical. Then edited (`raising-believers.md`): 516 dashes in
-  his prose to 0, every edit punctuation, fact diff passed on all fifteen
+  his prose to 1, every edit punctuation, fact diff passed on all fifteen
   files; rebuilt at 161 pages (`client/src/data/ebooks.ts` says 161),
-  `--verify` identical (47,089 words; 214,892 characters).
+  `--verify` identical (47,090 words; 214,899 characters).
 - **The Deconstruction of Faith** (`deconstruction-of-faith`). The PDF and
   EPUB carry the same text, letter for letter (221,772 letters), with four
   places where the PDF's text extraction reads a pull quote in a different
@@ -851,7 +851,7 @@ differ in is said under each book. Each was then edited (records in
   no top margin (`.rest > :first-child`).
   Then edited (`deconstruction-of-faith.md`): 477 dashes in his prose to 0,
   every edit punctuation, fact diff passed on all twenty files; rebuilt,
-  still 180 pages, `--verify` identical (47,777 words; 227,704 characters).
+  still 180 pages, `--verify` identical (47,777 words; 227,712 characters).
 - **What Does the Bible Really Say About Homosexuality?**
   (`bible-and-homosexuality`). The PDF and EPUB carry the same text: the
   letter-for-letter comparison found nothing but the PDF's running heads,
@@ -866,7 +866,7 @@ differ in is said under each book. Each was then edited (records in
   (both inside words the book puts in a parent's mouth), every edit
   punctuation, every position and steelman word for word, fact diff passed
   on all fourteen files; rebuilt, still 167 pages, `--verify` identical
-  (45,183 words; 233,796 characters).
+  (45,183 words; 233,806 characters).
 - **What Does the Bible Say About Transgender Identity?**
   (`bible-and-transgender-identity`). The PDF and EPUB carry the same text:
   the comparison found only the PDF's running heads, page numbers and
@@ -878,8 +878,8 @@ differ in is said under each book. Each was then edited (records in
   Then edited (`bible-and-transgender-identity.md`): 459 dashes in his
   prose to 7 (five inside quotations, two after a question), every edit
   punctuation, every position and steelman word for word, fact diff passed on
-  all fourteen files; rebuilt, still 181 pages, `--verify` identical
-  (49,255 words; 246,017 characters).
+  all thirteen edited files; rebuilt, still 181 pages, `--verify` identical
+  (49,255 words; 246,023 characters).
 - **Is Critical Race Theory Biblical?** (`critical-race-theory-biblical`).
   The PDF and EPUB carry the same text: the comparison found only running
   heads, page numbers, repeated block-quotation references (the four "Letter
@@ -890,7 +890,7 @@ differ in is said under each book. Each was then edited (records in
   Then edited (`critical-race-theory-biblical.md`): 437 dashes in his prose
   to 3, every edit punctuation, every account of CRT, every concession and
   every criticism word for word, fact diff passed on all twenty files;
-  rebuilt, still 193 pages, `--verify` identical (47,245 words; 243,254
+  rebuilt, still 193 pages, `--verify` identical (47,244 words; 243,255
   characters).
 - **Change Without Casualties** (`change-without-casualties`), the first of
   the three Hard Issues booklets. The PDF and EPUB carry the same text: the
@@ -905,7 +905,7 @@ differ in is said under each book. Each was then edited (records in
   Then edited (`change-without-casualties.md`): 68 dashes in his prose to 2
   (both before a Scripture reference), every edit punctuation, fact diff
   passed on all nine files; rebuilt, still 40 pages, `--verify` identical
-  (6,411 words; 34,332 characters).
+  (6,411 words; 34,333 characters).
 - **Church Governance That Works** (`church-governance`), the second
   booklet. The PDF and EPUB carry the same text (the comparison found only
   running heads, page numbers, the repeated "REFLECTION QUESTIONS" label and
@@ -917,8 +917,19 @@ differ in is said under each book. Each was then edited (records in
   words; 39,393 characters).
   Then edited (`church-governance.md`): 64 dashes in his prose to 2 (both
   before a Scripture reference), every edit punctuation, fact diff passed on
-  all nine files; rebuilt, still 44 pages, `--verify` identical (6,703
+  the eight edited files; rebuilt, still 44 pages, `--verify` identical (6,703
   words; 39,393 characters).
+- **Deacon Qualifications and Selection** (`deacon-qualifications`), the
+  third booklet. The PDF and EPUB carry the same text (the comparison found
+  only running heads, page numbers, the repeated "REFLECTION QUESTIONS" label
+  and the appendix's assessment form read in a different order); the same
+  stray chapter labels, carried as they are. The PDF's fuller copyright
+  notice is used. 41 pages became 43 (`client/src/data/booklets.ts` says
+  43). `--verify`: identical (7,168 words; 38,378 characters).
+  Then edited (`deacon-qualifications.md`): 59 dashes in his prose to 3, every
+  edit punctuation, both readings of 1 Timothy 3:11 word for word, fact diff
+  passed on all nine files; rebuilt, still 43 pages, `--verify` identical
+  (7,112 words; 38,379 characters).
 
 ### The apparatus
 

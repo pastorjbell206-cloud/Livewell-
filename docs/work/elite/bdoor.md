@@ -9394,3 +9394,45 @@ The deep notes' lines to Christ that the New Testament does not draw (the rich f
 ### What was run
 
 The same checks after the book page and after each chapter, each exit 0, and `teaching.test.tsx` after the book page (33 of 33). The chapters were drafted and checked in the staging folder while the Proverbs pushes ran their gates, then written, checked and committed in order. The gates for this push are recorded in the hand-back.
+
+## The Song of Songs: the book page and every chapter (2026-11-25)
+
+The Song is whole: a teaching introduction on the book page and all eight chapters in plain words, in the same shape (one commit for the book page, with the explore indexes rebuilt and `teaching.test.tsx` naming the book on the `canaan` frame, and one commit per chapter).
+
+### The book page (`/study/bible/song-of-solomon`, same address)
+
+Data only, in `client/public/bible/notes/song-of-solomon/intro.json`, field `teaching`. Fourteen parts (2,965 words): The Song of Songs in a minute; Where it sits in the story; Who wrote it, and when; Human love, God's love, or both; Who is speaking; How the Song is built; Longing, and dark yet lovely; Spring, and a search by night; The wedding, and a garden locked up; Absence, the watchmen, and praise; The right time, and love freely given; Love as strong as death; How the New Testament reads the Song; How to read the Song. Then 14 hard passages, 15 key words, 10 timeline entries, a `canaan` map of three places already placed on the site (Jerusalem, Gilead roughly as a region, Damascus; Lebanon, Hermon, En-gedi, Sharon, Carmel, Tirzah and the rest left off and the note says so), and ten Go deeper pages, all live.
+
+Contested matters in their holders' terms, no side taken: Solomon as author or as a figure in the poems, and the dates from the tenth to the third century BC (pardes; Tirzah before about 880 BC); the three readings, allegorical (the Targum, Akiva, Origen, Bernard), natural, and both together; two characters or three; the charge's meaning. The New Testament section keeps the site's book page's wording: the Song is never quoted, and any link to Christ comes from the wider picture of God as bridegroom (Mark 2:19; John 3:29; Ephesians 5:32; Revelation 19:7).
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 2 | 1,042 | 5 | 3 | 1,236 |
+| 2 | 2 | 977 | 6 | 3 | 1,169 |
+| 3 | 2 | 969 | 7 | 2 | 1,014 |
+| 4 | 2 | 997 | 8 | 3 | 1,325 |
+| | | | **Total** | **19** | **8,729** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part.
+
+### The hard places, and how they are stated
+
+The Song is told with dignity and without explicitness: the most physical lines (1:13; 4:5-6; 7:1-3, 7-9; 8:1, 8, 10) are told in a phrase or left unquoted, and the notes say the language is veiled and full of images. Love is shown as freely given by both, and the notes say plainly that nothing in the Song gives anyone a right to pressure or force another (2:7; 4:16; 7:10; 8:12), and that the brothers of 8:8-9 have no right to control a woman's life. 5:7, the watchmen, is set out in three readings (a dream of loss; a real injustice recorded without approval; the allegorical reading), with no warrant for violence and the line for anyone being hurt. 1:5-6 is about skin darkened by work, not ethnicity, as the deep note says.
+
+### Care lines
+
+Reused whole, word for word, naming Find Help, no phone number: the line for anyone being hurt at home, at work or in a church (book page; 5).
+
+### Cut or narrowed
+
+The deep notes' lines to Christ through the chapters (the kiss as God's word; Revelation 3:20 beside the knock; ‘altogether lovely’ in later preaching; the seal and Ephesians 1:13; Ephesians 5:25 and Romans 8:38-39 beside 8:6-7; the reversal of Genesis 3:16 as the gospel's undoing of the curse), all left to the book page's one paragraph on the bridegroom.
+
+### What was run
+
+The same checks after the book page and after each chapter, each exit 0, and `teaching.test.tsx` after the book page (33 of 33). Two chapters were first refused by validate-bible-notes for an exclamation set inside single quotation marks (2:8 and 6:13); both were set in double quotation marks, as Scripture with an exclamation must be, and passed. The gates for the last push are recorded in the hand-back.
+
+### Next
+
+The wisdom books are now whole, from Job to the Song. The Song's and Ecclesiastes' book pages are shorter than the plan's 3,500 words (2,965 and 3,325), in proportion to books of eight and twelve chapters; either can be lengthened if James wants. Questions only James can answer are in the hand-back.
