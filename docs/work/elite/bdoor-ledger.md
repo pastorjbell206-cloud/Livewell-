@@ -22644,3 +22644,19 @@ Cut in chapter 1: the deep note's readings of the kiss as God's words and of the
 | Habakkuk 3:19 (its clause); Psalm 55:6 (inside the psalmist's quotation, in double quotes) | 8-17 | the chapter data's cross-references for 2:8-9 and 2:14; BSB | BSB text |
 
 Cut in chapter 2: the deep note's line to Christ (any reading of the beloved's call as Christ's, left to the book page). No care line is needed in this chapter.
+
+## The plain notes on the Song of Songs 3 (2026-11-25)
+
+`client/public/bible/notes/song-of-solomon/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 3:1; the streets (3:2) paraphrased; the watchmen (3:3) paraphrased (it holds an inner quotation); finding him (3:4) paraphrased; 3:5 (in double quotes) | 1-5 | BSB | BSB text |
+| Absence after chapter 2; the first of two night searches (5:2-8); a dream or a vivid imagining; ‘the one my soul loves’ four times; seek and find; watchmen at night and the danger to a woman alone; the mother's house and Genesis 24:28, Ruth 1:8 | 1-5 | song-of-solomon/3.json `story`, `literary`, `cultural`, `words` (baqash, nephesh) | Repository |
+| Genesis 24:28 (from ‘ran’); Ruth 1:8 (Naomi's first sentence) | 1-5 | song-of-solomon/3.json `cultural`; BSB | Repository; BSB text |
+| 3:6; 3:7; the swords (3:8) paraphrased; 3:9; the carriage (3:10) paraphrased; 3:11 (before its dash) | 6-11 | BSB | BSB text |
+| The central section (3:6 to 5:1); wedding processions (Psalm 45; Matthew 25:1-13 named in the note); myrrh and frankincense; smoke as incense or dust; appiryon only here, perhaps a palanquin; cedar through Hiram (1 Kings 5); the sixty and David's warriors (2 Samuel 23:8-39); Bathsheba and no recorded crowning | 6-11 | song-of-solomon/3.json `story`, `historical`, `cultural`, `words` (appiryon) | Repository |
+| Psalm 45:13; 1 Kings 5:10 (before its comma) | 6-11 | song-of-solomon/3.json `cultural` (Psalm 45), `historical` (1 Kings 5); BSB | Repository; BSB text |
+| The hard note: Solomon throughout, early in his reign (1 Kings 11:1-8); the three-character view, eighteenth and nineteenth centuries; Solomon as a literary figure; 8:11-12; unsettled; a love faithful and given to one person | 6-11 `hard` | song-of-solomon/3.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 3: the deep note's line to Christ (any reading of the procession or the seeking as Christ's, left to the book page). No care line is needed in this chapter.
