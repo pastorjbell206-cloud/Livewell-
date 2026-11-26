@@ -373,6 +373,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole of 1 Corinthians in seven moving pictures: a real letter to a real church, its two halves, the wisdom of the cross, one body with many parts, the way of love, raised from the dead, and where to start reading.",
     },
+    "book-ephesians": {
+      title: "Ephesians: one new people in Christ: Bible Explorer",
+      description:
+        "The whole letter to the Ephesians in seven moving pictures: what it is, its two halves, grace, one new people from Jew and Gentile, a worthy walk, standing firm, and where to start reading, with the household passages as churches read them.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

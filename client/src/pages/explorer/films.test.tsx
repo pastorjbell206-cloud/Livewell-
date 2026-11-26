@@ -1727,6 +1727,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-jonah",
     "book-daniel",
     "book-1-corinthians",
+    "book-ephesians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2371,5 +2372,23 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.differ?.text).toMatch(/takes no side/);
     // No caption rules on marriage, head coverings, tongues or women's roles.
     expect(captions(f)).not.toMatch(/head covering|tongues|women (must|should|may)|divorce|silent/i);
+  });
+
+  it("Ephesians names the household passages only as the book page does, with its care on abuse and its verdict on slavery, and draws neither", () => {
+    const f = filmFile("book-ephesians");
+    expect(f.care).toBe(filmFile("why-bad-things-happen").care);
+    const walk = f.frames.find(x => x.id === "walk")!;
+    expect(walk.older).toContain("They give no one a licence to control or harm another.");
+    expect(f.differ?.text).toContain(
+      "Nothing in this passage asks anyone to stay where they or their children are in danger. If you are in an abusive marriage, seek safety first."
+    );
+    expect(f.differ?.text).toContain(
+      "The words to slaves were misused for centuries to defend slavery. That misuse was wrong."
+    );
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect((f.differ?.links ?? []).map(l => l.href)).toContain("/help");
+    // No caption tells anyone to submit or obey, and no picture shows a household rank.
+    expect(captions(f)).not.toMatch(/submit|obey|head of the|slaves,? obey/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/husband|wife|slave|master/i);
   });
 });

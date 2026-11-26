@@ -2355,6 +2355,116 @@
     }
    ]
   },
+  "book-ephesians": {
+   "title": {
+    "file": "book-ephesians/title.mp3",
+    "hash": "cb38a95b4cc3a4b6b51f",
+    "seconds": 3.63,
+    "bytes": 22388
+   },
+   "younger": [
+    {
+     "id": "letter",
+     "file": "book-ephesians/younger/01-letter.mp3",
+     "hash": "e35e2a37160e0bfbbb97",
+     "seconds": 25.66,
+     "bytes": 154436
+    },
+    {
+     "id": "layout",
+     "file": "book-ephesians/younger/02-layout.mp3",
+     "hash": "7d176bbe1eb90d4f07fb",
+     "seconds": 24.49,
+     "bytes": 147524
+    },
+    {
+     "id": "grace",
+     "file": "book-ephesians/younger/03-grace.mp3",
+     "hash": "e8997ad5e1504689f853",
+     "seconds": 25.42,
+     "bytes": 153140
+    },
+    {
+     "id": "one",
+     "file": "book-ephesians/younger/04-one.mp3",
+     "hash": "f6f93e6fea46fe44c76c",
+     "seconds": 24.53,
+     "bytes": 147812
+    },
+    {
+     "id": "walk",
+     "file": "book-ephesians/younger/05-walk.mp3",
+     "hash": "7579a8ed5bfeaefd2add",
+     "seconds": 27.75,
+     "bytes": 167108
+    },
+    {
+     "id": "armor",
+     "file": "book-ephesians/younger/06-armor.mp3",
+     "hash": "de63f3b79d137727fcb2",
+     "seconds": 24.55,
+     "bytes": 147812
+    },
+    {
+     "id": "start",
+     "file": "book-ephesians/younger/07-start.mp3",
+     "hash": "2f0326d43e95c4f12cba",
+     "seconds": 25.7,
+     "bytes": 154868
+    }
+   ],
+   "older": [
+    {
+     "id": "letter",
+     "file": "book-ephesians/older/01-letter.mp3",
+     "hash": "5f80e75dbce012d1f07f",
+     "seconds": 19.65,
+     "bytes": 118436
+    },
+    {
+     "id": "layout",
+     "file": "book-ephesians/older/02-layout.mp3",
+     "hash": "c18f0f08056aa72b879b",
+     "seconds": 27.55,
+     "bytes": 165812
+    },
+    {
+     "id": "grace",
+     "file": "book-ephesians/older/03-grace.mp3",
+     "hash": "0e101cc2b22e13445139",
+     "seconds": 25.53,
+     "bytes": 153716
+    },
+    {
+     "id": "one",
+     "file": "book-ephesians/older/04-one.mp3",
+     "hash": "bd0bec34c291e6c828ff",
+     "seconds": 28.14,
+     "bytes": 169412
+    },
+    {
+     "id": "walk",
+     "file": "book-ephesians/older/05-walk.mp3",
+     "hash": "e8b19a37f6f31e80307a",
+     "seconds": 27.88,
+     "bytes": 167828
+    },
+    {
+     "id": "armor",
+     "file": "book-ephesians/older/06-armor.mp3",
+     "hash": "beaef6615a186ef1d4bd",
+     "seconds": 25.26,
+     "bytes": 152132
+    },
+    {
+     "id": "start",
+     "file": "book-ephesians/older/07-start.mp3",
+     "hash": "a1f0bac8aa6ba70cd522",
+     "seconds": 29.86,
+     "bytes": 179636
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

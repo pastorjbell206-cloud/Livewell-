@@ -974,6 +974,18 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M24,72V84M76,72V84M14,58l12,6M86,58l-12,6M30,48l8,10M70,48l-8,10" />
     </>
   ),
+  /* Ephesians: a wall broken through in the middle, and a gold light in the gap. */
+  "book-ephesians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M12,84V34H40L44,50L40,84Z" tone="b" off={0.8} />
+      <Shape d="M88,84V34H60L56,52L60,84Z" tone="b" off={0.8} />
+      <path className="pl-f" d="M12,50H40M12,66H42M60,50H88M58,66H88" />
+      <path className="pl-m" d="M44,84V60a6,6 0 0 1 12,0V84Z" />
+      <path className="pl-l" d="M44,84V60a6,6 0 0 1 12,0V84Z" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

@@ -1605,6 +1605,23 @@
       "book": "1-corinthians"
     },
     {
+      "slug": "book-ephesians",
+      "title": "Ephesians: one new people in Christ",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A letter from prison about God's great plan and one family made from two: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Ephesians as a whole letter: praise that turns into teaching, grace, one new people from Jew and Gentile, a worthy walk, the armor of God, and the household passages as churches read them."
+      },
+      "mark": "book-ephesians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "ephesians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",
