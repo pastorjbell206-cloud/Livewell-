@@ -46,7 +46,7 @@ export const BOOKLETS: Booklet[] = [
     title: "Church Governance That Works",
     subtitle: "Polity, Structure, and Decision-Making for the Local Church",
     note: "Structure does not save a church. But the wrong structure can slowly bleed one dry.",
-    pages: 43,
+    pages: 44,
     pdf: "/ebook/church-governance/Church-Governance-That-Works.pdf",
     epub: "/ebook/church-governance/Church-Governance-That-Works.epub",
   },

@@ -9269,3 +9269,43 @@ Every line the deep notes draw to Christ that the New Testament does not draw (t
 ### What was run
 
 As for Lamentations, after the book page and each chapter, each exit 0 at commit. The validator asked for a book beyond Daniel in three `later` fields (3:28-30, 6:25-28, 8:23-27); a psalm was added to each and the ledger says so. The push's gates are in the hand-back.
+
+## Ecclesiastes: the book page and every chapter (2026-11-25)
+
+Ecclesiastes is whole: a teaching introduction on the book page and all twelve chapters in plain words, in the same shape (one commit for the book page, with the explore indexes rebuilt and `teaching.test.tsx` naming the book on the `canaan` frame, and one commit per chapter).
+
+### The book page (`/study/bible/ecclesiastes`, same address)
+
+Data only, in `client/public/bible/notes/ecclesiastes/intro.json`, field `teaching`. Fifteen parts (3,325 words): Ecclesiastes in a minute; Where it sits in the story; Who wrote it, and when; Hevel: breath, vapor, futility; How Ecclesiastes is built; A king tests everything; A time for everything; Oppression, and the darkest words in the book; Wisdom tested, and its limits; Eat, drink, and enjoy: the gift of God; Death, the great leveler; The Teacher's voice, and the epilogue; A book the rabbis argued over; How the New Testament reads Ecclesiastes; How to read Ecclesiastes. Then 16 hard passages, 15 key words, 10 timeline entries, a `canaan` map of Jerusalem alone, and eleven Go deeper pages, all live.
+
+Contested matters in their holders' terms, no side taken: Solomon's authorship (tradition and Duane Garrett, or a royal persona and late Hebrew, roughly 450 to 250 BC); the meaning of hevel (emptiness, brevity, enigma); the Teacher's voice and the epilogue (a later softening, as Crenshaw argued; a frame by design, after Fox, with Longman reading the narrator as weighing the Teacher; Whybray's preacher of joy; Kidner's life under the sun), with the observation that the fear of God (5:7) and judgment (3:17; 11:9) are already the Teacher's own. The New Testament section keeps the site's book page's own lines: Romans 8:20-21 and the Greek word for hevel, and 1 Corinthians 15:58 as a thematic answer.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 2 | 1,090 | 7 | 3 | 1,444 |
+| 2 | 3 | 1,373 | 8 | 3 | 1,256 |
+| 3 | 3 | 1,339 | 9 | 3 | 1,486 |
+| 4 | 3 | 1,199 | 10 | 3 | 1,171 |
+| 5 | 3 | 1,275 | 11 | 2 | 948 |
+| 6 | 2 | 1,039 | 12 | 2 | 1,150 |
+| | | | **Total** | **32** | **14,770** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part.
+
+### The hard places, and how they are stated
+
+The cries of despair are recorded as cries, never as counsel: 2:17 (hated life), 4:2-3 (the dead better off), 9:2-10 (one fate, the dead know nothing). Each is read with the book's own answer (9:4; 12:7; 12:14), says that nothing in it calls anyone better off dead, and carries the self-harm line whole. 6:3 (the stillborn better off) is a cry about joyless years, not a judgment on any child or parent, with the line for the loss of a child. 3:18-21 and 9:5-10 are not denials of life after death; the Teacher admits what he cannot see, and Daniel 12:2 and the resurrection hope of the New Testament are named only as the wider canon's answer. 7:26-29 is set out in four readings, with Genesis 1:27 and no license for contempt toward women. 8:2-4 is counsel for life under absolute power, not a teaching that rulers are always right. 10:2's right and left have nothing to do with modern political labels.
+
+### Care lines
+
+Reused whole, word for word, each naming Find Help, none with a phone number: the self-harm line (book page twice; 2, 4, 9; from job/plain/3.json and the 1 Kings 19 notes); the grief line (3, 7; from 1-samuel/plain/1.json); the child-loss line (6; from pray-psalms/psalm/139.json and job/plain/42.json).
+
+### Cut or narrowed
+
+The deep notes' lines to Christ that the New Testament does not draw (the rich fool; Jesus as the Comforter's sender beside 4:1; John 3:8 beside 11:5; the good shepherd beside 12:11; the judgment of Christ beside 12:14; the poor wise man as Christ; the Lord's Supper beside 9:7). The deep note's suggestion of named readings of 7:16 was narrowed to the verse's own neighbors (7:17, 7:20).
+
+### What was run
+
+The same checks after the book page and after each chapter, each exit 0, and `teaching.test.tsx` after the book page (33 of 33). The chapters were drafted and checked in the staging folder while the Proverbs pushes ran their gates, then written, checked and committed in order. The gates for this push are recorded in the hand-back.
