@@ -23231,3 +23231,25 @@ Cut in chapter 2: nothing further.
 | The care line ('If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn.') | 16-19 `hard` | job/intro.json `teaching`; hebrews/plain/10.json; 2-timothy/intro.json | Reused whole, word for word; Find Help named; no phone number |
 
 Cut in chapter 3: the deep note's lines from the anointed of 3:13 to Christ, which the New Testament does not draw from Habakkuk.
+
+## Zephaniah's book page (teaching introduction, 2026-11-26)
+
+Every claim in `client/public/bible/notes/zephaniah/intro.json`, field `teaching`. No web searches. Scripture is the BSB in the repository, matched by the four quotation checks (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Ninth of the Twelve; three chapters; 1:2; Judah and Jerusalem first; Baal, stars, divided oaths, complacency; 1:15 (its clause); the humble; the nations; Jerusalem's leaders; pure lips, remnant, song; 3:17 (its clauses) | in-a-minute | zephaniah/intro.json `overview`; BSB | Repository; BSB text |
+| 1:1 (its genealogy); King Hezekiah or a family line; the name's meaning; the core from the prophet, the ending perhaps expanded; Josiah about 640 to 609 BC; before or early in the reform; 2 Kings's eighteenth year (about 622) and 2 Chronicles's twelfth (about 628); before 612 BC; about 630 to 620 BC; the guide's 640 to 609 | who | zephaniah/intro.json `author`, `date`; bible/guides/kings-of-israel-and-judah.json (the prophets table) | Repository; each view in its holders' terms. Sources differ and the page says so |
+| Josiah at eight after Amon's murder; Manasseh's fifty-five years; altars to the stars and child sacrifice (named); Ashurbanipal's death in the 630s or 620s; Babylon rising; the reform; Zephaniah's words fitting it | world | zephaniah/intro.json `setting` | Repository |
+| Three steps; the Day of the LORD and its phrases; read the opening by the ending; 587 or 586 BC and a final day | built | zephaniah/intro.json `reading` | Repository |
+| 1:2-6 paraphrased; Genesis echoes; 1:7 (its first sentence); 1:8-13 paraphrased; 1:14 (its clause); 1:18 paraphrased; the universal language read as seriousness, narrowing and purifying | day | zephaniah/1.json `hard`, `cultural`; BSB | Repository; BSB text; the readings in their holders' terms |
+| 2:3; the nations around; Moab and Ammon's taunts; Nineveh's boast (2:13-15); the land promises as justice for victims, not a mandate; 2:11; no claim about any modern state or border | seek | zephaniah/2.json `hard`, `cultural`, `historical`; the brief; BSB | Repository; BSB text; stated as the brief asks |
+| 3:1 (in double quotes); 3:3; 3:5 (its first clause); 3:9; 3:12 (its clause); 3:14-15 paraphrased; 3:17 (its first sentences); 3:20 paraphrased | song | zephaniah/3.json `summary`, `cultural`; BSB | Repository; BSB text |
+| The New Testament never quotes Zephaniah; Zechariah 9:9 (its clause) and its use in the Gospels left to Zechariah's notes | new-testament | zephaniah/intro.json `christ` | Repository; only lines the New Testament draws |
+| How to read: whole, with 2:3 as bridge; complacency on oneself first; the ending as promise | readers | zephaniah/intro.json `reading` | Repository |
+| Hard passages (7) and key words (11): from the chapter notes' hard questions, `cultural` and `historical` | lists | zephaniah/1.json to 3.json | Repository |
+| Timeline (7): Manasseh 697/696 to 643/642 and Josiah 641/640 to 609 (the guide); about 630 to 620 (introduction) with the guide's span; about 628 and about 622 (introduction); 612; 587 or 586 | timeline | bible/guides/kings-of-israel-and-judah.json; zephaniah/intro.json `date` | Repository. Sources differ and the page says so |
+| The maps: Jerusalem and Ashdod (canaan) at points already used on the site; Nineveh (fertile-crescent) at its ruin mounds, as the coordinator directed on 2026-11-26 | map | the site's points; the coordinator's instruction (Nineveh); BSB | Gaza, Ashkelon, Ekron, Moab, Ammon and Cush left off; no borders; no claim about any border today |
+| Go deeper: eight pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json; bible/doctrines.json (Judgment and Justice; Repentance and Forgiveness; The Nations and Mission; Idolatry); context/guides/the-gods-of-the-nations.json, left-lens-right-lens.json | Repository; every page live |
+
+Cut from the book page: the introduction's lines to 1 Thessalonians 5:2, 2 Peter 3:10, Pentecost, Romans 10:13 and Luke 15, which the New Testament does not draw from Zephaniah. The death of 1:17 is not quoted.
