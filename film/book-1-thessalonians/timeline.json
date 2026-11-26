@@ -1,0 +1,167 @@
+{
+ "length": 128.32,
+ "chapters": [
+  {
+   "id": "oldest",
+   "kicker": "An early letter",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 18.38,
+   "lines": [
+    {
+     "text": "First Thessalonians is very likely the oldest of Paul's letters to survive, written around the year fifty.",
+     "start": 2.6,
+     "end": 8.7
+    },
+    {
+     "text": "Forced to leave by night, he had left a few new believers facing hard neighbors. Timothy brings good news, and Paul writes in relief.",
+     "start": 9.38,
+     "end": 17.48
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 17.58,
+   "end": 31.64,
+   "lines": [
+    {
+     "text": "The first half looks back: thanks for their faith, love, and hope, and how Paul lived among them. The second looks ahead: holiness, love, quiet work, and the Lord's coming.",
+     "start": 18.48,
+     "end": 28.32
+    },
+    {
+     "text": "Every chapter ends near the same place.",
+     "start": 28.7,
+     "end": 30.74
+    }
+   ]
+  },
+  {
+   "id": "turned",
+   "kicker": "Watch for: a new start",
+   "level": 0.5,
+   "start": 30.84,
+   "end": 46.54,
+   "lines": [
+    {
+     "text": "Most of these believers had worshiped idols until a few weeks before, and they turned to serve the living and true God.",
+     "start": 31.74,
+     "end": 37.7
+    },
+    {
+     "text": "Paul lived among them, gentle as a nursing mother and caring as a father, working night and day so as not to be a burden.",
+     "start": 38.14,
+     "end": 45.64
+    }
+   ]
+  },
+  {
+   "id": "grief",
+   "kicker": "Watch for: grief with hope",
+   "level": 0.7,
+   "start": 45.74,
+   "end": 62.76,
+   "lines": [
+    {
+     "text": "Some believers had died, and the living feared they had missed the Lord's coming. Paul doesn't tell them not to grieve.",
+     "start": 46.64,
+     "end": 53.74
+    },
+    {
+     "text": "He tells them not to grieve like those without hope, because Jesus died and rose again.",
+     "start": 54.42,
+     "end": 59.14
+    },
+    {
+     "text": "And so we will always be with the Lord.",
+     "start": 59.64,
+     "end": 61.86
+    }
+   ]
+  },
+  {
+   "id": "coming",
+   "kicker": "Where Christians differ",
+   "level": 0.6,
+   "start": 61.96,
+   "end": 91.06,
+   "lines": [
+    {
+     "text": "Every Christian tradition confesses that Jesus will come again and the dead will be raised. Christians differ on the order of events, and on whether being caught up is a separate rapture. This film takes no side.",
+     "start": 62.86,
+     "end": 75.94
+    },
+    {
+     "text": "Paul gives no date.",
+     "start": 76.66,
+     "end": 78.04
+    },
+    {
+     "text": "The Day of the Lord will come like a thief in the night.",
+     "start": 78.5,
+     "end": 82.38
+    },
+    {
+     "text": "So no one should set a date, or name a living person, a nation, or an event of our own day as what these verses describe.",
+     "start": 82.98,
+     "end": 90.16
+    }
+   ]
+  },
+  {
+   "id": "together",
+   "kicker": "Watch for: life together",
+   "level": 0.75,
+   "start": 90.26,
+   "end": 107.26,
+   "lines": [
+    {
+     "text": "The letter ends with short commands for life together. Respect leaders. Care for the weak. Rejoice. Pray. Give thanks. Test everything.",
+     "start": 91.16,
+     "end": 100.06
+    },
+    {
+     "text": "Waiting for the Lord means living well among your neighbors, not leaving them behind.",
+     "start": 100.52,
+     "end": 106.36
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 106.46,
+   "end": 118.52,
+   "lines": [
+    {
+     "text": "Read it in one sitting, as a pastor's letter to new believers he loves. Read the end of chapter four for what Paul says it's for.",
+     "start": 107.36,
+     "end": 114.54
+    },
+    {
+     "text": "Therefore encourage one another with these words.",
+     "start": 115.1,
+     "end": 117.62
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 117.72,
+   "end": 122.221,
+   "lines": [
+    {
+     "text": "Whom are you grieving, and where is your hope?",
+     "start": 118.62,
+     "end": 121.321
+    }
+   ]
+  }
+ ]
+}

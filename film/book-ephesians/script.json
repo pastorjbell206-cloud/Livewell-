@@ -1,0 +1,139 @@
+{
+  "title": "Ephesians: one new people in Christ",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-ephesians",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "plan",
+      "kicker": "The whole plan",
+      "level": 0.2,
+      "lines": [
+        "Ephesians names Paul as its writer, in prison, to believers in Ephesus and the cities around it. It answers no crisis.",
+        "It steps back to look at the whole of what God is doing: a plan to bring all things in heaven and on earth together in Christ."
+      ],
+      "scripture": {
+        "reference": "Ephesians 1:10",
+        "text": "to bring all things in heaven and on earth together in Christ.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "It has two halves, joined at the start of chapter four. Chapters one to three are praise, prayer, and teaching: what God has done. Chapters four to six are how to live because of it.",
+        "Cut the second half off from the first, and grace becomes a list of rules."
+      ],
+      "scripture": {
+        "reference": "Ephesians 4:1",
+        "text": "I urge you to walk in a manner worthy of the calling you have received",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "grace",
+      "kicker": "Watch for: grace",
+      "level": 0.5,
+      "lines": [
+        "Salvation in Ephesians is God's work from first to last. The dead are made alive, by grace, through faith.",
+        "For it is by grace you have been saved through faith.",
+        "Faith is the way the gift is received, not a work that earns it. Yet believers are God's workmanship, made for the good works he prepared."
+      ],
+      "scripture": {
+        "reference": "Ephesians 2:8",
+        "text": "For it is by grace you have been saved through faith",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "one",
+      "kicker": "Watch for: the two made one",
+      "level": 0.7,
+      "lines": [
+        "The deepest division of Paul's world, between Jew and Gentile, has been overcome in the cross. Gentiles once far off are brought near and joined to Israel's hope.",
+        "For He Himself is our peace, who has made the two one.",
+        "One new humanity. One household. One temple, where God lives by his Spirit."
+      ],
+      "scripture": {
+        "reference": "Ephesians 2:14",
+        "text": "For He Himself is our peace, who has made the two one",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "walk",
+      "kicker": "Watch for: the walk",
+      "level": 0.8,
+      "lines": [
+        "Walk worthy. Tell the truth, deal with anger, work honestly, forgive.",
+        "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you.",
+        "The household passages put everyone under one Lord, and they lay demands on the strong. They give no one a license to control or harm another."
+      ],
+      "scripture": {
+        "reference": "Ephesians 4:32",
+        "text": "Be kind and tenderhearted to one another, forgiving each other just as in Christ God forgave you.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "stand",
+      "kicker": "Watch for: standing firm",
+      "level": 0.7,
+      "lines": [
+        "The letter takes spiritual evil seriously without making it the center. The struggle is not against flesh and blood. Christ is seated far above every power.",
+        "The believer's task is to stand, in the armor God supplies, and to pray."
+      ],
+      "scripture": {
+        "reference": "Ephesians 6:10",
+        "text": "Finally, be strong in the Lord and in His mighty power.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where churches differ",
+      "level": 0.55,
+      "lines": [
+        "Churches today read the household passages differently, especially on marriage. Christians also read the letter's words on being chosen in different ways, and differ on whether Paul wrote it himself. On those questions this film takes no side.",
+        "All agree that the household passages call for mutual love, with Christ's self-giving as the pattern. Nothing in them asks anyone to stay where they or their children are in danger.",
+        "The words to slaves were misused for centuries to defend slavery. That misuse was wrong."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read it slowly and whole, aloud if you can. The long opening sentences are praise, not tangled argument. Watch the hinge at chapter four.",
+        "The key chapters are one, two, four, five, and six."
+      ],
+      "scripture": {
+        "reference": "Ephesians 3:20",
+        "text": "Now to Him who is able to do immeasurably more than all we ask or imagine",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Watch for these words: grace, in Christ, mystery, body, and walk."
+      ],
+      "titleCard": [
+        "One new people in Christ.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
