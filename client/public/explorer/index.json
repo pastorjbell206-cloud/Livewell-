@@ -1622,6 +1622,23 @@
       "book": "ephesians"
     },
     {
+      "slug": "book-philippians",
+      "title": "Philippians: joy in chains",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A thank-you letter from a prisoner to his friends: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Philippians as a whole letter: thanks from prison, four short chapters, joy that sits beside chains, the mind of Christ, all counted as loss to know him, contentment, and where to begin."
+      },
+      "mark": "book-philippians",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "philippians"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

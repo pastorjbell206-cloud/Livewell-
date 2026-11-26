@@ -378,6 +378,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole letter to the Ephesians in seven moving pictures: what it is, its two halves, grace, one new people from Jew and Gentile, a worthy walk, standing firm, and where to start reading, with the household passages as churches read them.",
     },
+    "book-philippians": {
+      title: "Philippians: joy in chains: Bible Explorer",
+      description:
+        "The whole letter to the Philippians in seven moving pictures: a thank-you letter from prison, its four chapters, joy, the mind of Christ, all counted as loss, contentment in want and in plenty, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

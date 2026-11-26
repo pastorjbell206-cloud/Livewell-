@@ -1265,3 +1265,20 @@ Made for ages 7 to 16 with the hard stories told gently: no fire, furnace, lion 
 | pictures | The household passages are never drawn: no husband and wife, no master and slave. The guard by Paul's door rests. The wall is broken, and the two groups meet in the gap. God is not drawn | The drawing (`scenes/book-ephesians.tsx`); a sheet of the finished frames read |
 | left out | Who wrote it (the debate is named in "Where churches differ" only); "in Ephesus" and the missing words in some copies; predestination set out; the church as bride; each household instruction in turn | Deliberate; the book page is linked, and its chapter notes on 5 and 6 take each one with care |
 | length | Younger 3:02.3, older 3:08.1 | `audio/manifest.json` |
+
+### Philippians: joy in chains (`book-philippians`)
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Philippians 1:3; 2:5; 4:4; 2:7; 3:8; 4:13; 4:7 (some trimmed to a clause) | BSB, by the validator; all Philippians |
+| 1 A thank-you letter | Paul's warmest letter; from prison, facing a trial that could end in his death; to the church that stood by him from the start and had just sent a gift by Epaphroditus | The Philippians book page, overview and `teaching` "Philippians in a minute", nearly word for word |
+| 2 How it is laid out | Thanks and news from prison; a call to stand together with the hymn at its center; knowing Christ and pressing on; last appeals and thanks; the hymn of chapter 2 shapes all that follows | The book page's `structure` (in four chapters) and `reading` ("Notice how the Christ hymn in chapter 2 shapes what follows"). Four panels, the gold rule under chapter 2 |
+| 3 Joy | Words for joy more than a dozen times in a letter written in chains; joy resting not on circumstances but on the Lord; joy that has looked at suffering and death and not been undone | The book page, themes "Joy", nearly word for word; BSB Philippians 4:4 |
+| 4 The mind of Christ | What many scholars think was an early hymn (younger: a poem); in the form of God, he emptied himself, took the form of a servant, was obedient to death on a cross, and God exalted him; humility as the free choice to use one's position for others | The book page, overview, `christ` and themes "The mind of Christ", nearly word for word; BSB Philippians 2:5-11 |
+| 5 All counted as loss | Paul counts his credentials as loss to gain Christ and a righteousness from God through faith; he has not arrived; he presses on toward the goal | The book page's keyChapters 3 and `structure` (3:1-21), nearly word for word; BSB Philippians 3:7-14 |
+| 6 Content in want and plenty | Pray instead of worrying; 4:13 in context is not a promise of success but the strength to be content in need and in plenty | The book page's `reading` ("A common misreading lifts single verses such as 4:13 out of context") and overview, nearly word for word; BSB Philippians 4:6, 11-13 |
+| 7 Where to start | Read it whole, as a letter between friends, about fifteen minutes aloud; the key words joy, gospel, partnership and mind; chapter 2 slowly; the famous line of chapter 4 (4:13) with the verses around it | The book page's `reading` and `teaching` ("can be read aloud in about fifteen minutes"); BSB Philippians 4:7 |
+| care | "This moving picture tells of a real death, Jesus' death on the cross. ..." | The care line of "The king", whole |
+| pictures | The cross is not drawn and Christ is not drawn: the hymn's descent and rising is a road down into a valley and up again, with the sun at its top. Paul wears the same robe in every picture; his chain is shown lying at his feet | The drawing (`scenes/book-philippians.tsx`); a sheet of the finished frames read |
+| left out | Where Paul was imprisoned (Rome, Ephesus or Caesarea) and when; Euodia and Syntyche; the warning about "dogs" in 3:2; Epaphroditus' illness | Deliberate; the book page is linked |
+| length | Younger 2:54.7, older 2:58.5 | `audio/manifest.json` |

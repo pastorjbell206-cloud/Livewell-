@@ -1728,6 +1728,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-daniel",
     "book-1-corinthians",
     "book-ephesians",
+    "book-philippians",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2390,5 +2391,15 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     // No caption tells anyone to submit or obey, and no picture shows a household rank.
     expect(captions(f)).not.toMatch(/submit|obey|head of the|slaves,? obey/i);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/husband|wife|slave|master/i);
+  });
+
+  it("Philippians reads 4:13 in its context, as contentment and not a promise of success", () => {
+    const f = filmFile("book-philippians");
+    expect(f.care).toBe(filmFile("the-king").care);
+    const content = f.frames.find(x => x.id === "content")!;
+    expect(content.older).toContain("In context it is not a promise of success.");
+    expect(content.younger).toContain("Paul is not talking about winning games or getting rich.");
+    expect(content.verse?.ref).toBe("Philippians 4:13");
+    expect(f.frames.find(x => x.id === "start")!.older).toContain("the famous line of chapter 4 with the verses around it");
   });
 });

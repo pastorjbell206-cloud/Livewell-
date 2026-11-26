@@ -986,6 +986,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M44,84V60a6,6 0 0 1 12,0V84Z" />
     </>
   ),
+  /* Philippians: a small barred window in a stone wall, gold light in it, and a chain below. */
+  "book-philippians": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M14,84V14H86V84Z" tone="c" off={1} />
+      <path className="pl-m" d="M36,26H64V50H36Z" />
+      <path className="pl-l" d="M36,26H64V50H36ZM45,26V50M55,26V50" />
+      <path className="pl-l" d="M30,72a5,3 0 1,0 10,0a5,3 0 1,0 -10,0M38,72a5,3 0 1,0 10,0a5,3 0 1,0 -10,0M46,72a5,3 0 1,0 10,0a5,3 0 1,0 -10,0M54,72a5,3 0 1,0 10,0a5,3 0 1,0 -10,0" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
