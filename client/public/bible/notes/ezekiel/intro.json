@@ -97,7 +97,7 @@
       {
         "id": "new-testament",
         "h": "How the New Testament reads Ezekiel",
-        "body": "The New Testament seldom quotes Ezekiel word for word, but Revelation draws on it again and again. It sees four living creatures around the throne (Revelation 4), an angel giving John a scroll that is sweet as honey in the mouth (Revelation 10:9-10), Gog and Magog gathered for battle (Revelation 20:8), a holy city measured on a great high mountain with gates named for the tribes (Revelation 21:10-12), and ‘a river of the water of life’ flowing from the throne, with trees whose leaves are for healing (Revelation 22:1-2). Paul joins words from Leviticus and Ezekiel's promise that God will dwell among his people and be their God (2 Corinthians 6:16).\n\nChristians have also read Jesus' words, ‘I am the good shepherd’ (John 10:11), against Ezekiel 34, the new heart of chapter 36 alongside the gift of the Spirit, and the dry bones in the light of the resurrection. These are readings. These notes draw only the lines the New Testament draws."
+        "body": "The New Testament seldom quotes Ezekiel word for word, but Revelation draws on it again and again. It sees four living creatures around the throne (Revelation 4), an angel giving John a scroll that is sweet as honey in the mouth (Revelation 10:9-10), Gog and Magog gathered for battle (Revelation 20:8), a holy city measured on a great high mountain with gates named for the tribes (Revelation 21:10-12), and ‘a river of the water of life’ flowing from the throne, with trees whose leaves are for healing (Revelation 22:1-2). Paul's words that God will dwell among his people and be their God (2 Corinthians 6:16) echo Leviticus 26:12, and many readers hear Ezekiel 37:27 in them as well.\n\nChristians have also read Jesus' words, ‘I am the good shepherd’ (John 10:11), against Ezekiel 34, the new heart of chapter 36 alongside the gift of the Spirit, and the dry bones in the light of the resurrection. These are readings. These notes draw only the lines the New Testament draws."
       },
       {
         "id": "readers",
@@ -355,9 +355,9 @@
             ],
             "line": "The island port pictured as a proud ship (27:3).",
             "label": {
-              "dx": -10,
-              "dy": -4,
-              "anchor": "end"
+              "dx": 8,
+              "dy": -6,
+              "anchor": "start"
             }
           }
         ]

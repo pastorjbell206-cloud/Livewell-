@@ -25111,3 +25111,7 @@ Cut in chapter 4: Galatians 3:8 and 14 beside verse 2, which the New Testament d
 ## Ezekiel's map note, after the merge (2026-11-26)
 
 The branch now carries Babylon's point (id `babylon`, 32.54 N, 44.42 E, on Jeremiah's map), the same point Ezekiel's map uses. The map note now says that every place is at a point the site's maps already use.
+
+## Ezekiel's book page: two small corrections (2026-11-26)
+
+On Ezekiel's book page, Tyre's label on the `fertile-crescent` map now sits to the right of the point, because at a 390-pixel width it touched the frame's own label, THE GREAT SEA. The line on 2 Corinthians 6:16 now says that Paul's words echo Leviticus 26:12 and that many readers hear Ezekiel 37:27 in them as well, so it is given as a reading, since the New Testament does not quote Ezekiel 37 directly (the coordinator's note).
