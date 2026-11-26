@@ -23272,3 +23272,22 @@ Cut from the book page: the introduction's lines to 1 Thessalonians 5:2, 2 Peter
 | Amos 5:18 paraphrased; Joel 2:2 (its clause) | 14-18 | BSB | BSB text |
 
 Cut in chapter 1: the deep note's lines to the New Testament's day of the Lord, which the New Testament does not draw from Zephaniah.
+
+## The plain notes on Zephaniah 2 (2026-11-26)
+
+`client/public/bible/notes/zephaniah/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; 2:2 paraphrased; 2:3 | 1-3 | BSB | BSB text |
+| Chaff; 2:3 as the bridge of the book; the humble; perhaps without presumption; the remnant of chapter 3 | 1-3 | zephaniah/2.json `literary`; zephaniah/intro.json `reading` | Repository |
+| Amos 5:15 (its clause); Joel 2:14 (its clauses) | 1-3 | BSB | BSB text |
+| 2:4; 2:5-10 and 2:12 paraphrased; 2:11 (its last sentence) | 4-12 | BSB | BSB text |
+| Four of the five Philistine cities and Gath missing (also Amos 1:6-8); the Cherethites and Crete, David's guard; Moab and Ammon east; Sodom and Gomorrah and Lot; weeds and salt pits; Cush south of Egypt and its kings over Egypt; the circle and verse 11 | 4-12 | zephaniah/2.json `historical`, `cultural` | Repository |
+| Genesis 19:37-38; Amos 1:6-8 | 4-12 | zephaniah/2.json `cultural`, `historical` | Repository |
+| The hard note: particular nations for particular acts; justice for victims, not a mandate; poetic pasture; 2:11 and 3:9; differing literalness; no warrant for violence; no claim about any modern state or border | 4-12 `hard` | zephaniah/2.json `hard`; the brief | Repository; the readings in their holders' terms; stated as the brief asks |
+| 2:13 (its last clause); 2:14-15 paraphrased (2:15's inner quotation not quoted) | 13-15 | BSB | BSB text |
+| Nineveh still standing; 612 BC; the boast that belongs to God (Isaiah 45:5); ruin language; no gloating; no key to any city's suffering | 13-15 | zephaniah/2.json `historical`; the brief | Repository; stated as the brief asks |
+| Nahum 1:1; Isaiah 47:8 (its clause) | 13-15 | BSB | BSB text |
+
+Cut in chapter 2: nothing drawn to the New Testament.
