@@ -4,9 +4,10 @@
  *
  * A narrated film is made in film/<slug>/ (film/README.md). Its MP4 and poster
  * are not in the repo: they sit in the Vercel Blob store "livewell-films",
- * uploaded by hand as films/<slug>.mp4 and films/<slug>-poster.jpg. A film is
- * put on a page by adding its slug to LIVE below and running this script,
- * which reads the film's own files and writes:
+ * uploaded as films/<slug>.mp4 and films/<slug>-poster.jpg by
+ * scripts/publish-narrated-films.mjs, which also adds the slug to
+ * scripts/narrated-films-live.json and runs this script. This script reads
+ * each live film's own files and writes:
  *
  *   client/src/data/narrated-films.json       every live film: title, page,
  *       video and poster address, length, and every spoken line in order with
@@ -27,22 +28,9 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const CHECK = process.argv.includes("--check");
 const BLOB = "https://6tank2ikr2l6p1eo.public.blob.vercel-storage.com/films";
 
-/** Films James has said may be on the site, in the order they went live. */
-const LIVE = [
-  "trust-the-bible",
-  "whose-kingdom",
-  "you-are-that-man",
-  "one-story",
-  "the-verse-next-door",
-  "mark-in-a-minute",
-  "the-oldest-report",
-  "how-long",
-  "bible-two-minutes",
-  "bible-in-a-minute",
-  "sixty-six-books",
-  "book-genesis",
-  "book-exodus",
-];
+/** Films James has said may be on the site, in the order they went live: scripts/narrated-films-live.json,
+ *  which scripts/publish-narrated-films.mjs adds to when it uploads a film. */
+const LIVE = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/narrated-films-live.json"), "utf8"));
 
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), "utf8"));
 const films = LIVE.map((slug) => {
