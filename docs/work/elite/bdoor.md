@@ -9181,3 +9181,89 @@ Every line the deep notes draw from Lamentations to Christ that the New Testamen
 ### What was run
 
 The 2 Kings checks, copied to `/home/user/bdoor-scratch/major-prophets/` and pointed at these books (the book page's check reads only the `teaching` field; the care corpus leaves out all five of this run's books): validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden-word, signposting and first-person scans, the care-line check, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks, after the book page and each chapter, each exit 0 at commit. `teaching.test.tsx` passed (33 of 33) after the book page. The push's gates are in the hand-back.
+
+## The Minor Prophets, Hosea to Nahum: book pages and every chapter (2026-11-26)
+
+Seven of the twelve shorter prophets are complete: Hosea, Joel, Amos, Obadiah, Jonah, Micah and Nahum, each with a teaching introduction on its book page and every chapter in plain words (41 chapters, 109 passages). Each passage's third part is `later`. Each chapter note gained only `"plain": true` at its end. There is one commit for each book page (with its ledger rows, the rebuilt explore indexes, and its line in `teaching.test.tsx`, frame `canaan`) and one per chapter. Habakkuk, Zephaniah, Haggai, Zechariah and Malachi are not begun.
+
+### The book pages
+
+| Book | Parts | Words | Hard passages | Key words | Timeline | Places | Go deeper |
+|---|---|---|---|---|---|---|---|
+| Hosea | 13 | 3,426 | 14 | 13 | 13 | 4 | 11 |
+| Joel | 11 | 2,289 | 8 | 11 | 5 | 3 | 10 |
+| Amos | 12 | 2,342 | 12 | 12 | 8 | 8 | 10 |
+| Obadiah | 9 | 1,501 | 5 | 11 | 5 | 3 | 8 |
+| Jonah | 11 | 1,917 | 7 | 12 | 7 | 1 | 8 |
+| Micah | 11 | 1,926 | 10 | 12 | 8 | 4 | 9 |
+| Nahum | 10 | 1,583 | 6 | 11 | 7 | 1 | 8 |
+
+Every place is drawn at a point already used on the site's maps. The repository places neither Nineveh nor Tarshish, so Jonah's map draws only Joppa (the Acts point) and Nahum's draws Jerusalem to mark Judah, and each map note says what is left off and why. Dates come from the site's guide to the kings and each book's own introduction, and where they differ the page gives both (Hosea 755 to 715 or about 755 to about 725; Micah 735 to 700 or about 740 to about 700; Samaria 722, or 723 or 722 on Thiele's count; Amos's earthquake at Hazor, which the guide dates to about 760 and the introduction calls a probable link). No side is taken on the dates of Joel and Obadiah, on Jonah as history, parable or both, on who Gomer was, or on the millennial readings of Micah 4.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Hard in |
+|---|---|---|---|
+| Hosea 1 | 3 | 1760 | 1-3, 4-9 |
+| Hosea 2 | 3 | 1730 | 1-5 |
+| Hosea 3 | 2 | 1101 | 1-3 |
+| Hosea 4 | 3 | 1332 | 11-19 |
+| Hosea 5 | 2 | 1091 | 8-15 |
+| Hosea 6 | 3 | 1263 | 1-3 |
+| Hosea 7 | 3 | 1084 | none |
+| Hosea 8 | 3 | 1160 | 1-6 |
+| Hosea 9 | 2 | 1156 | 10-17 |
+| Hosea 10 | 2 | 1036 | 9-15 |
+| Hosea 11 | 3 | 1163 | 1-4 |
+| Hosea 12 | 2 | 864 | none |
+| Hosea 13 | 3 | 1493 | 9-14, 15-16 |
+| Hosea 14 | 3 | 1057 | none |
+| Joel 1 | 3 | 1428 | 15-20 |
+| Joel 2 | 4 | 1764 | 28-32 |
+| Joel 3 | 3 | 1389 | 1-8 |
+| Amos 1 | 3 | 1235 | 11-15 |
+| Amos 2 | 3 | 1323 | 6-8 |
+| Amos 3 | 2 | 1091 | 1-8 |
+| Amos 4 | 3 | 1382 | 1-3, 6-13 |
+| Amos 5 | 3 | 1481 | 18-27 |
+| Amos 6 | 2 | 957 | 1-7 |
+| Amos 7 | 2 | 1067 | 1-9 |
+| Amos 8 | 3 | 1243 | 7-14 |
+| Amos 9 | 3 | 1474 | 7-10, 11-15 |
+| Obadiah 1 | 3 | 1411 | 15-21 |
+| Jonah 1 | 3 | 1247 | 1-3 |
+| Jonah 2 | 2 | 876 | 1-6 |
+| Jonah 3 | 2 | 928 | 5-10 |
+| Jonah 4 | 2 | 1067 | 1-4, 5-11 |
+| Micah 1 | 2 | 996 | 1-7 |
+| Micah 2 | 3 | 1165 | 1-5 |
+| Micah 3 | 3 | 1092 | 9-12 |
+| Micah 4 | 3 | 1259 | 1-5 |
+| Micah 5 | 2 | 1137 | 1-6 |
+| Micah 6 | 3 | 1254 | 6-8 |
+| Micah 7 | 3 | 1417 | 14-20 |
+| Nahum 1 | 2 | 997 | 1-8 |
+| Nahum 2 | 2 | 830 | 1-10 |
+| Nahum 3 | 3 | 1482 | 1-7, 14-19 |
+
+### The hard places, and how they are stated
+
+- **Hosea's marriage (1 to 3):** the readings of Gomer stated in their holders' terms; the stripping of 2:3 and 2:10 named and not quoted; each chapter says plainly that this is a prophetic picture of God and a nation and gives no warrant for any man to shame or harm a wife, with the site's line for anyone in an abusive marriage. The book page carries the same line.
+- **Atrocities named by the prophets as crimes** (Hosea 9:11-16, 10:14, 13:16; Amos 1:3 and 1:13; Nahum 3:3 and 3:10; Micah 3:2-3): named, never described or quoted.
+- **Judgment on Israel and Judah** (Hosea 13; Amos; Micah 1): Israel's own Scripture spoken to its own people; no key for anyone's suffering, then or now; never a reason to blame the Jewish people. The disaster line where God sends drought, plague or storm (Joel 1; Amos 3 and 4; Hosea 13).
+- **The nations judged** (Joel 3; Obadiah; Amos 9; Micah 4 and 5): the judgment is God's, not a model for revenge; no people a code for any modern nation; no claim about any modern state or border; Amos and Micah read by their covenant standard, not any party's program, and the Go deeper lists point both ways (the left and right lenses guide).
+- **Nahum:** no gloating; the fall of Nineveh no key to any people's suffering and no warrant to wish destruction on anyone; 3:5 a city's disgrace, no warrant to shame any woman, with the line for anyone being hurt.
+- **Jonah 4:** the prayer to die recorded honestly and met with God's patience, with the self-harm line.
+- **Hosea 9:** the prayer for childlessness, never a reading of any family's loss, with the line for grief over a pregnancy or a child.
+
+### Care lines
+
+Each is reused whole, word for word, names Find Help and has no phone number: for an abusive marriage (Hosea book page; Hosea 1, 2, 3); for anyone who has lived through a disaster (Joel 1; Amos 3, 4; Hosea 13); for grief over a pregnancy or a child (Hosea 9); for anyone being hurt at home, at work or in a church (Amos 2; Nahum 3); the self-harm line (Jonah book page; Jonah 4). No new care sentence stands in the data.
+
+### Cut or narrowed
+
+Lines that the deep notes draw to Christ, but the New Testament does not, were left out throughout (among them Ephesians 5:25 beside Hosea's marriage, John 15 beside the vine, Galatians 6:7 beside sowing the wind, Matthew 23:23 beside Amos, John 10 beside Micah 5:4, Revelation 18 beside Nahum). The New Testament's own lines were kept: Matthew 2:15, 9:13, 12:7; Romans 9:25-26; 1 Peter 2:10; 1 Corinthians 15:55; Luke 23:30; Hebrews 13:15's phrase; Acts 2:16-21 and Romans 10:13; Acts 15:16-17 and 7:42; Matthew 12:39-41 and Luke 11:30; Matthew 2:5-6, John 7:42 and Matthew 10:36. Obadiah and Nahum are never quoted in the New Testament, and their pages say so. Unsourced sentences caught before commit were cut (Sepharad's location; a reading of Micah 2:12-13; the identity of Nahum's messengers). Each chapter's ledger names its cuts.
+
+### What was run
+
+The 2 Kings checks, copied to `/home/user/bdoor-scratch/prophets/`, now take the book as a setting, read only a book page's `teaching` field, and leave all twelve books' new plain chapters and teaching fields out of the care corpus; the first-person scan treats Not My People as a name. After every book page and chapter: validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden, signposting and first-person scans, the care-line check, no-emdash, the search and passage index checks, validate-politics, the seven explore-index checks and validate-bible (0 problems each). Hosea 11 gaining plain words broke one test in `WisdomTopic.test.tsx`, which named it as a chapter without them; it now names Ezekiel 18. The gates and pushes are in the hand-back.
