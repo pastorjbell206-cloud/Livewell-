@@ -1,0 +1,116 @@
+{
+  "title": "Mark: the story at a run",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-mark",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "fast",
+      "kicker": "The story at a run",
+      "level": 0.2,
+      "lines": [
+        "Mark is the shortest of the four Gospels, and it moves at speed. There's no birth story and no long sermon. The word translated immediately appears more than forty times.",
+        "Its first line works as a title.",
+        "This is the beginning of the gospel of Jesus Christ, the Son of God."
+      ],
+      "scripture": {
+        "reference": "Mark 1:1",
+        "text": "This is the beginning of the gospel of Jesus Christ, the Son of God.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The first half is set in Galilee, full of authority and questions. Its hinge is Peter's confession.",
+        "From there the story walks the road to Jerusalem, tells the passion by the hour, and ends at an empty tomb."
+      ]
+    },
+    {
+      "id": "who",
+      "kicker": "Watch for: who is this man?",
+      "level": 0.5,
+      "lines": [
+        "The question of who Jesus is runs through the whole book. You know the answer from the first line.",
+        "The drama is in watching the characters struggle toward it, often getting the words right and the meaning wrong."
+      ],
+      "scripture": {
+        "reference": "Mark 4:41",
+        "text": "Who is this, that even the wind and the sea obey Him?",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "way",
+      "kicker": "Watch for: the way of the cross",
+      "level": 0.7,
+      "lines": [
+        "On the road to Jerusalem, Jesus predicts his death and resurrection three times. And each time he teaches what following him means: deny yourself, and be the servant of all.",
+        "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+      ],
+      "scripture": {
+        "reference": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "grace",
+      "kicker": "Watch for: friends who fail",
+      "level": 0.8,
+      "lines": [
+        "Mark doesn't flatter the disciples. They misunderstand. They fall asleep in Gethsemane. They flee. And Peter denies Jesus three times.",
+        "Yet the message at the tomb names Peter in particular."
+      ],
+      "scripture": {
+        "reference": "Mark 16:7",
+        "text": "But go, tell His disciples and Peter",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "centurion",
+      "kicker": "Watch for: who sees it first",
+      "level": 0.9,
+      "lines": [
+        "The first human being in Mark to call Jesus the Son of God is a Roman centurion at the foot of the cross, at the moment of his death.",
+        "Truly this man was the Son of God!",
+        "The Son of God is recognized fully only at the cross."
+      ],
+      "scripture": {
+        "reference": "Mark 15:39",
+        "text": "Truly this man was the Son of God!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read Mark in one sitting if you can. Its force comes from its pace. The key chapters are one, four, eight, ten, thirteen, fifteen, and sixteen.",
+        "The oldest complete copies end with the women at the tomb."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Mark holds authority and suffering together."
+      ],
+      "titleCard": [
+        "Authority and suffering, held together.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

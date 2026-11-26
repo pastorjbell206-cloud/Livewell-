@@ -1,0 +1,172 @@
+{
+ "length": 142.09,
+ "chapters": [
+  {
+   "id": "word",
+   "kicker": "The Word made flesh",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 20.24,
+   "lines": [
+    {
+     "text": "John is the fourth of the four Gospels. It tells the same story as Matthew, Mark, and Luke from a different height.",
+     "start": 2.6,
+     "end": 9.52
+    },
+    {
+     "text": "It begins before the world was made. And soon comes the sentence the whole book hangs on.",
+     "start": 10.24,
+     "end": 15.52
+    },
+    {
+     "text": "The Word became flesh and made His dwelling among us.",
+     "start": 16.2,
+     "end": 19.34
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 19.44,
+   "end": 37.2,
+   "lines": [
+    {
+     "text": "John is built with care. An opening poem. A first half built around signs. And a second half that slows almost to a stop: five chapters are given to one evening.",
+     "start": 20.34,
+     "end": 31.42
+    },
+    {
+     "text": "Then come the cross, the resurrection, and a closing scene by the lake.",
+     "start": 32.08,
+     "end": 36.3
+    }
+   ]
+  },
+  {
+   "id": "signs",
+   "kicker": "Watch for: the signs",
+   "level": 0.5,
+   "start": 36.4,
+   "end": 52.0,
+   "lines": [
+    {
+     "text": "John calls Jesus' miracles signs, because each one points beyond itself to who he is. The first half is built around seven of them.",
+     "start": 37.3,
+     "end": 45.86
+    },
+    {
+     "text": "Signs can start faith. But faith that only wants miracles is thin.",
+     "start": 46.48,
+     "end": 51.1
+    }
+   ]
+  },
+  {
+   "id": "i-am",
+   "kicker": "Watch for: I am",
+   "level": 0.65,
+   "start": 51.2,
+   "end": 72.36,
+   "lines": [
+    {
+     "text": "Seven times Jesus says I am, and adds a picture. Bread. Light. A gate. A shepherd. Resurrection and life. The way. The true vine.",
+     "start": 52.1,
+     "end": 61.62
+    },
+    {
+     "text": "I am the bread of life.",
+     "start": 62.12,
+     "end": 63.98
+    },
+    {
+     "text": "Each one takes something people can't live without and says: this is what I am for you.",
+     "start": 64.52,
+     "end": 71.46
+    }
+   ]
+  },
+  {
+   "id": "believe",
+   "kicker": "Watch for: believing",
+   "level": 0.8,
+   "start": 71.56,
+   "end": 88.66,
+   "lines": [
+    {
+     "text": "The verb believe comes ninety-eight times in John, and the noun faith never does. Believing is something you do: coming to Jesus, trusting him, staying with him.",
+     "start": 72.46,
+     "end": 83.06
+    },
+    {
+     "text": "And eternal life, in John, is life with God that begins now.",
+     "start": 83.68,
+     "end": 87.76
+    }
+   ]
+  },
+  {
+   "id": "hour",
+   "kicker": "Watch for: the last evening",
+   "level": 0.9,
+   "start": 87.86,
+   "end": 107.74,
+   "lines": [
+    {
+     "text": "The second half opens when Jesus knows his hour has come. He washes his disciples' feet and gives them a new command.",
+     "start": 88.76,
+     "end": 95.66
+    },
+    {
+     "text": "A new commandment I give you: Love one another.",
+     "start": 96.36,
+     "end": 99.36
+    },
+    {
+     "text": "In John, the glory of God is seen most clearly at the cross. Then come the empty tomb and the risen Jesus.",
+     "start": 100.02,
+     "end": 106.84
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 106.94,
+   "end": 127.68,
+   "lines": [
+    {
+     "text": "Start at chapter one and read slowly. The key chapters are one, three, six, eleven, thirteen, seventeen, and twenty.",
+     "start": 107.84,
+     "end": 117.32
+    },
+    {
+     "text": "One caution. When John speaks of the Jews, he usually means the Jerusalem authorities. Jesus and nearly everyone in the story are Jews.",
+     "start": 117.98,
+     "end": 126.78
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 126.88,
+   "end": 135.988,
+   "lines": [
+    {
+     "text": "John tells you plainly why he wrote.",
+     "start": 127.78,
+     "end": 129.66
+    },
+    {
+     "text": "These are written so that you may believe that Jesus is the Christ, the Son of God.",
+     "start": 130.28,
+     "end": 135.088
+    }
+   ]
+  }
+ ]
+}
