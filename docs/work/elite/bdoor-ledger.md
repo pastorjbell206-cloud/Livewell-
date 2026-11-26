@@ -26114,3 +26114,19 @@ Cut in chapter 43: the deep note's lines to John 1:14 and 2:19-21 beside the ret
 | Later: Numbers 18:20; Malachi 2:7 | 15-31 `later` | BSB | BSB text |
 
 Cut in chapter 44: Ephesians 2:13 beside the foreigners, which the New Testament does not draw from Ezekiel 44; the early Christian reading of the shut gate as Mary's virginity, left out as an allegory the text does not suggest.
+
+## The plain notes on Ezekiel 45 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/45.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Holy land, and honest scales: the text paraphrased; quoted clauses at verses 1, 2-5, 6-7, 8, 9, 10, 11-12 | 1-12 | BSB | BSB text |
+| Background in `hearers` | 1-12 | ezekiel/45.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 19:36; Proverbs 11:1 | 1-12 `later` | BSB | BSB text |
+| Offerings and feasts: the text paraphrased; quoted clauses at verses 13-16, 17, 18-20, 21, 25 | 13-25 | BSB | BSB text |
+| Background in `hearers` | 13-25 | ezekiel/45.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 23:5; Amos 8:5 | 13-25 `later` | BSB | BSB text |
+| The hard note: Why does Ezekiel's worship calendar differ from the law of Moses? The readings in their holders' terms | 13-25 `hard` | ezekiel/45.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 45: nothing.
