@@ -21359,3 +21359,23 @@ Cut from the book page: the introduction's line from Amos to Matthew 23:23, whic
 | The hard note: no charge of breaking Moses' law; crimes against people; known to all; Noah's covenant (Genesis 9:5-6); treaties and customs of war; the fuller standard for Israel | 11-15 `hard` | amos/1.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 1: the deep note's line to Romans 2:14-15, which the New Testament does not draw from Amos. The crimes of 1:3 and 1:13 are named and not described.
+
+## The plain notes on Amos 2 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1 (its clause); 2:2-3 paraphrased; 2:4 (its clause); 2:5 paraphrased | 1-5 | BSB | BSB text |
+| The burning of the bones unknown elsewhere; the ninth-century wars; dishonor in death; Kerioth and the Mesha Stele; Judah judged for rejecting the law; the later-addition view and the answer | 1-5 | amos/2.json `historical` | Repository; both views in their holders' terms |
+| 2 Kings 3:4-27; Deuteronomy 28:15 (its clause) | 1-5 | amos/2.json `historical`; BSB | Repository; BSB text |
+| 2:6; 2:7 (its first sentence; the rest paraphrased); 2:8 | 6-8 | BSB | BSB text |
+| The pattern broken into a list; Jeroboam II's world about 760 BC; debt, land and servitude; debt service limited by law; selling the righteous; sandals as a small debt or a land transfer (Ruth 4:7); the pledged cloak by sunset; the young woman as a servant or shrine rites; forbidden either way | 6-8 | amos/2.json `historical`, `cultural`, `literary` | Repository; the readings in their holders' terms |
+| Exodus 22:26 (its clause); Deuteronomy 15:12-15; Leviticus 18:8, 15 | 6-8 | amos/2.json `historical`, `cultural`; BSB | Repository; BSB text |
+| The hard note: the specific acts; not owning flocks or prosperity; gain by injustice; systemic and personal; covenant law, not a modern program | 6-8 `hard` | amos/2.json `hard` | Repository; both emphases in their holders' terms |
+| The care line ('If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn.') | 6-8 `hard` | deuteronomy/plain/13.json and nine more | Reused whole, word for word; Find Help named; no phone number |
+| 2:9 (its first clause); 2:10-11 paraphrased; 2:12; 2:13 and 2:15-16 paraphrased; 2:14 | 9-16 | BSB | BSB text |
+| Yet it was I; kindness recited against Israel's deeds; Nazirites and wine (Numbers 6); silencing the prophets and 7:12-13; seven warriors who fail | 9-16 | amos/2.json `literary`, `cultural` | Repository |
+| Numbers 6:3 (its clause); Deuteronomy 8:2 | 9-16 | BSB | BSB text |
+
+Cut in chapter 2: nothing drawn to the New Testament. The act of 2:7 is named in the BSB's own plain words and not dwelt on.
