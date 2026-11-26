@@ -356,3 +356,7 @@ The chapters were not read whole for this list. It comes from reading the block 
 2. Should the Cass quotations be checked against the report and corrected, or paraphrased and marked as paraphrase?
 3. Keep the sentence about First Baptist Church of Fenton's young people?
 4. Add a crisis line where the book speaks of suicide?
+
+## The files
+
+Rebuilt after the last chapter: still 181 pages (`client/src/data/ebooks.ts` says 181), PDF 1.4 MB, EPUB 324 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (49,255 words compared, no difference); the PDF's pages carry the same text character for character (246,017 against 246,017).

@@ -875,6 +875,11 @@ differ in is said under each book. Each was then edited (records in
   notice is used ("James C. Bell", as both originals print it). 201 pages
   became 181 (`client/src/data/ebooks.ts` says 181). `--verify`: identical
   (49,166 words; 246,013 characters).
+  Then edited (`bible-and-transgender-identity.md`): 459 dashes in his
+  prose to 7 (five inside quotations, two after a question), every edit
+  punctuation, every position and steelman word for word, fact diff passed on
+  all fourteen files; rebuilt, still 181 pages, `--verify` identical
+  (49,255 words; 246,017 characters).
 
 ### The apparatus
 
