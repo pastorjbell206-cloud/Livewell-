@@ -419,9 +419,9 @@
             ],
             "line": "The citadel in the province of Elam where Daniel saw himself in the vision of chapter 8 (8:2). Drawn at its ruin mounds at Shush.",
             "label": {
-              "dx": -8,
-              "dy": -6,
-              "anchor": "end"
+              "dx": 0,
+              "dy": -12,
+              "anchor": "middle"
             }
           },
           {
