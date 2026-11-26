@@ -23191,3 +23191,22 @@ Cut from the book page: the introduction's line that the book's question is answ
 | The hard note: not approval (Isaiah 10; Habakkuk 2); not arbitrary; human responsibility; enough or a remainder of mystery; God not absent; no way to read any people's suffering as God's verdict | 12-17 `hard` | habakkuk/1.json `hard`; the brief | Repository; the readings in their holders' terms |
 
 Cut in chapter 1: nothing further.
+
+## The plain notes on Habakkuk 2 (2026-11-26)
+
+`client/public/bible/notes/habakkuk/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; 2:2 (its first words; the rest paraphrased); 2:3; 2:4 (in two parts, around its dashes); 2:5 paraphrased | 1-5 | BSB | BSB text |
+| Watchtowers; tablets; a runner; the two lines of 2:4; emunah; the proud and the righteous; the Hebrew his and the Greek my (paraphrased) | 1-5 | habakkuk/2.json `cultural`, `literary`, `hard` | Repository |
+| Romans 1:17 (its quotation); Galatians 3:11; Hebrews 10:38 (its clause) | 1-5 | habakkuk/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+| The hard note: emunah usually faithfulness; Paul shifting or drawing out; trust and faithfulness together; whose faithfulness; left open | 1-5 `hard` | habakkuk/2.json `hard` | Repository; the readings in their holders' terms |
+| 2:6-7 and 2:13 paraphrased; 2:8 (its first clause); 2:9 and 2:12 (in double quotes, for their exclamations); 2:11; 2:14 | 6-14 | BSB | BSB text |
+| Babylon's reach and Nebuchadnezzar's building; the taunt song; woe to him who; fitting results; the stones as witnesses; 2:14 outside the pattern | 6-14 | habakkuk/2.json `historical`, `cultural`, `literary` | Repository |
+| Isaiah 11:9 (its clause); Jeremiah 22:13 (its clause) | 6-14 | BSB | BSB text |
+| 2:15-18 paraphrased; 2:19 (its last clause); 2:20 | 15-20 | BSB | BSB text |
+| The cup of judgment; Lebanon's cedars cut for imperial building; idols without breath; silence before the living God | 15-20 | habakkuk/2.json `historical`, `literary` | Repository |
+| Psalm 115:5 (its clause); Zephaniah 1:7 (its clause) | 15-20 | BSB | BSB text |
+
+Cut in chapter 2: nothing further.
