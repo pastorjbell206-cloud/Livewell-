@@ -1,0 +1,116 @@
+{
+  "title": "2 Samuel: the king and the promise",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-2-samuel",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "king",
+      "kicker": "King David",
+      "level": 0.2,
+      "lines": [
+        "Second Samuel tells David's reign, from the day after Saul's death to his last years.",
+        "It gives the Bible both its highest picture of a king and its most honest one. A king God chose and loved, and a book that won't hide what he did with his power."
+      ],
+      "scripture": {
+        "reference": "2 Samuel 5:3",
+        "text": "And they anointed him king over Israel.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "It has five parts. King over Judah. The kingdom established, with Jerusalem, the ark, and the promise. David's sin and Nathan's rebuke. The troubles in David's house. And a closing collection.",
+        "Chapters eleven and twelve are the hinge."
+      ]
+    },
+    {
+      "id": "crown",
+      "kicker": "Watch for: a crown not seized",
+      "level": 0.5,
+      "lines": [
+        "The throne comes to David without his grasping for it. He mourns Saul and Jonathan, and each man who kills a rival to win his favor is rebuked.",
+        "When the ark comes to Jerusalem, David dances with all his might before the LORD."
+      ],
+      "scripture": {
+        "reference": "2 Samuel 6:14",
+        "text": "danced with all his might before the LORD",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "house",
+      "kicker": "Watch for: a house for David",
+      "level": 0.7,
+      "lines": [
+        "David wants to build God a house. God turns the offer around. He will build David a house, a line of kings, with a throne established forever.",
+        "Your house and kingdom will endure forever before Me.",
+        "Jews before Christ read it of a son of David to come. Christians confess it kept in Jesus. The two part over how."
+      ],
+      "scripture": {
+        "reference": "2 Samuel 7:16",
+        "text": "Your house and kingdom will endure forever before Me",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "nathan",
+      "kicker": "Watch for: you are that man",
+      "level": 0.85,
+      "lines": [
+        "Then the hinge. David takes Bathsheba, the wife of Uriah, and has Uriah killed. The text places the whole responsibility on David, and nothing in the story blames her.",
+        "Nathan, with nothing but a word from God, names the king's crime to his face. And David confesses.",
+        "I have sinned against the LORD.",
+        "He is forgiven."
+      ],
+      "scripture": {
+        "reference": "2 Samuel 12:13",
+        "text": "I have sinned against the LORD.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "sword",
+      "kicker": "Watch for: the sword in David's house",
+      "level": 0.9,
+      "lines": [
+        "But after it, the sword never leaves David's house. The rape of Tamar. A son murdered. Absalom's revolt. And a father weeping for the son who tried to take his throne.",
+        "The same king, the same God, and the same promise stand on both sides of chapter eleven."
+      ],
+      "scripture": {
+        "reference": "2 Samuel 18:33",
+        "text": "O my son Absalom! My son, my son Absalom!",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter seven, slowly. Then chapters eleven and twelve, with Psalm fifty-one beside them."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The book gives no leader a shield against correction. Its own prophet named the king's sin."
+      ],
+      "titleCard": [
+        "No leader is shielded from correction.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

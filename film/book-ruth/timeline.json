@@ -1,0 +1,157 @@
+{
+ "length": 121.74,
+ "chapters": [
+  {
+   "id": "story",
+   "kicker": "A small story",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 21.96,
+   "lines": [
+    {
+     "text": "Ruth is set in the dark days of the judges, but it's told from inside one family in Bethlehem.",
+     "start": 2.6,
+     "end": 7.88
+    },
+    {
+     "text": "A famine drives them to Moab, and the men die there. Naomi turns for home with nothing. And her Moabite daughter-in-law won't leave her.",
+     "start": 8.52,
+     "end": 16.7
+    },
+    {
+     "text": "Your people will be my people, and your God will be my God.",
+     "start": 17.26,
+     "end": 21.06
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 21.16,
+   "end": 38.4,
+   "lines": [
+    {
+     "text": "The book has four chapters, and they balance. A scene on the road. A scene in the field. A scene at the threshing floor. A scene at the gate. The third is the turning point.",
+     "start": 22.06,
+     "end": 32.28
+    },
+    {
+     "text": "Naomi's emptiness in chapter one is answered by the child in her lap in chapter four.",
+     "start": 32.78,
+     "end": 37.5
+    }
+   ]
+  },
+  {
+   "id": "loyal",
+   "kicker": "Watch for: loyal love",
+   "level": 0.5,
+   "start": 37.6,
+   "end": 51.04,
+   "lines": [
+    {
+     "text": "Watch for a Hebrew word, hesed. It names a love that keeps faith inside a relationship and goes beyond what duty requires.",
+     "start": 38.5,
+     "end": 46.24
+    },
+    {
+     "text": "Ruth shows it to Naomi. Boaz shows it in the field.",
+     "start": 46.82,
+     "end": 50.14
+    }
+   ]
+  },
+  {
+   "id": "ordinary",
+   "kicker": "Watch for: God in ordinary days",
+   "level": 0.6,
+   "start": 50.24,
+   "end": 65.42,
+   "lines": [
+    {
+     "text": "Nobody in Ruth sees a vision or a wonder. A famine ends. A harvest comes. Ruth happens to walk into the field of Boaz.",
+     "start": 51.14,
+     "end": 59.16
+    },
+    {
+     "text": "The storyteller lets you see God's hand in those ordinary turns without forcing the point.",
+     "start": 59.76,
+     "end": 64.52
+    }
+   ]
+  },
+  {
+   "id": "redeemer",
+   "kicker": "Watch for: the redeemer",
+   "level": 0.75,
+   "start": 64.62,
+   "end": 77.74,
+   "lines": [
+    {
+     "text": "A kinsman-redeemer was a near relative responsible for protecting a family's land, name, and people when they couldn't protect themselves.",
+     "start": 65.52,
+     "end": 73.58
+    },
+    {
+     "text": "Boaz takes on that role at cost to himself.",
+     "start": 74.24,
+     "end": 76.84
+    }
+   ]
+  },
+  {
+   "id": "david",
+   "kicker": "Watch for: the surprise at the end",
+   "level": 0.9,
+   "start": 76.94,
+   "end": 101.12,
+   "lines": [
+    {
+     "text": "Then comes the surprise. Ruth is called the Moabitess again and again, yet she takes refuge in the LORD and becomes an ancestor of David.",
+     "start": 77.84,
+     "end": 86.54
+    },
+    {
+     "text": "He became the father of Jesse, the father of David.",
+     "start": 87.22,
+     "end": 89.92
+    },
+    {
+     "text": "The small family story turns out to be a hinge in Israel's history. And Matthew names Ruth in the family line of Jesus.",
+     "start": 90.62,
+     "end": 100.22
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 100.32,
+   "end": 110.78,
+   "lines": [
+    {
+     "text": "Read all four chapters in one sitting, slowly. Watch the words that keep coming back: return, empty and full, kindness, wings, redeem.",
+     "start": 101.22,
+     "end": 109.88
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 109.98,
+   "end": 115.636,
+   "lines": [
+    {
+     "text": "The book treats grief honestly, and it lets hope arrive slowly.",
+     "start": 110.88,
+     "end": 114.736
+    }
+   ]
+  }
+ ]
+}
