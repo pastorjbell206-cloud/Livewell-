@@ -1673,6 +1673,23 @@
       "book": "james"
     },
     {
+      "slug": "book-joshua",
+      "title": "Joshua: a promise kept",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of a river crossed and a land given: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Joshua as a whole book: four movements, the crossing, the hardest chapters faced plainly, who belongs, rest and a choice, and where to begin."
+      },
+      "mark": "book-joshua",
+      "frames": 7,
+      "stops": [
+        "land"
+      ],
+      "cards": [],
+      "book": "joshua"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

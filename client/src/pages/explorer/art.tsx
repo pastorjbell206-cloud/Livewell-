@@ -1022,6 +1022,19 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <path className="pl-l" d="M66,52l-2,30M74,52l2,30M60,50c6,4 16,4 22,0" />
     </>
   ),
+  /* Joshua: a pile of stones by the river, and a gold sun over the land. */
+  "book-joshua": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-m" d="M70,22a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M70,22a9,9 0 1,0 18,0a9,9 0 1,0 -18,0Z" />
+      <path className="pl-l" d="M8,50L30,36L48,46L66,38L92,52" />
+      <path className="pl-f" d="M10,62q6,-5 12,0t12,0t12,0t12,0t12,0t12,0M14,72q6,-5 12,0t12,0t12,0t12,0t12,0t12,0" />
+      <Shape d="M28,84c0,-8 6,-12 12,-10c2,-8 14,-8 16,-2c8,-2 14,4 14,12Z" tone="b" off={0.8} />
+      <path className="pl-l" d="M40,74c2,-4 6,-6 10,-4M50,84c0,-4 2,-8 6,-10" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>
