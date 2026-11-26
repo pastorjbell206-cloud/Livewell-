@@ -23775,3 +23775,18 @@ Cut in chapter 44: nothing. No care line is needed in this chapter.
 | Romans 14:11 (inside the BSB's speech marks); Philippians 2:10 | 18-25 `later` | BSB | BSB text; the New Testament's own use |
 
 Cut in chapter 45: an unsourced line about conquerors demanding ransom, cut before commit. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 46 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/46.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 46:1-7 (46:3-4 inside the BSB's speech marks) | 1-7 | BSB | BSB text |
+| Bel as Marduk; Nebo as Nabu; the royal names; the New Year processions; Nabonidus gathering the gods in 539 and Cyrus returning them; Cyrus honoring Marduk; a poetic picture; carried and carrying | 1-7 | isaiah/46.json `historical` | Repository |
+| Deuteronomy 1:31 (its clause); Psalm 115:5 | 1-7 `later` | BSB | BSB text |
+| 46:8-13 (46:10's saying paraphrased around its inner quotation) | 8-13 | BSB | BSB text |
+| Cyrus as the bird of prey; righteousness as saving faithfulness, brought near to the stubborn | 8-13 | isaiah/46.json `summary` | Repository |
+| Romans 3:21 (its clause); Psalm 33:11 (its clause) | 8-13 `later` | BSB | BSB text |
+
+Cut in chapter 46: nothing. No care line is needed in this chapter.
