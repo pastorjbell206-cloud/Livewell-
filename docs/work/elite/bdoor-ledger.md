@@ -21953,3 +21953,22 @@ Cut in chapter 15: nothing. No care line is needed in this chapter.
 | The hard note: the three years unidentifiable; the readings; prophetic words applied again | 13-14 `hard` | isaiah/16.json `hard` | Repository |
 
 Cut in chapter 16: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 17 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 17:1-6 (17:6's clause before the dash) | 1-6 | BSB | BSB text |
+| Damascus and Israel in the crisis of chapter 7; 732 and 722 BC; the oracle before 732; gleaning and beaten olives; Aroer's puzzle | 1-6 | isaiah/17.json `story`, `historical` | Repository |
+| 2 Kings 16:9 | 1-6 `later` | BSB | BSB text |
+| The hard note: fulfilled in 732; a future destruction in popular teaching; partial fulfillment; the text's own horizon; not read of any war or nation of the present day | 1-6 `hard` | isaiah/17.json `hard`; the brief | Repository; each reading in its holders' terms |
+| 17:7-11 (17:10's clause before the dash) | 7-11 | BSB | BSB text |
+| Altars and Asherah; the gardens and fertility cults, or foreign ways | 7-11 | isaiah/17.json `literary` | Repository; both readings (a first draft naming a dying and rising god was narrowed to the deep note's own words before commit) |
+| Deuteronomy 32:4; Psalm 18:2 (added when the validator asked for a longer note) | 7-11 `later` | BSB | BSB text |
+| 17:12-14 (17:14's cry in double quotes) | 12-14 | BSB | BSB text |
+| The roaring sea; chapters 36 and 37 | 12-14 | isaiah/17.json `story` | Repository |
+| Psalm 46:6; Isaiah 37:36 | 12-14 `later` | BSB | BSB text |
+
+Cut in chapter 17: nothing beyond the narrowing above. No care line is needed in this chapter.
