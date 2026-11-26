@@ -9671,3 +9671,72 @@ Four pushes, each after a merge of the shared branch and the full gate order on 
 ### Maps widened for Isaiah and Daniel (2026-11-26)
 
 At the coordinator's direction, ancient sites whose location is not in doubt are now drawn at their ruin mounds, and the great powers as regions with a name only. Isaiah's first map adds Philistia, Moab and Edom as regions; a second map (`fertile-crescent`) draws Jerusalem, Egypt and Assyria as regions, Nineveh (36.36 N, 43.15 E, the point the Jonah, Nahum and Zephaniah maps already use) and Babylon (32.54 N, 44.42 E, the ruins near Hillah). Daniel gains a second map with Jerusalem, Babylon, Susa (32.19 N, 48.26 E, Shush) and Egypt as a region. Each map note says that ancient sites are placed at their ruin mounds, and Edom's line says no people of the present day is meant. `teaching.test.tsx` now lists both books with the frames `canaan` and `fertile-crescent`.
+
+## Jeremiah: the book page and every chapter (2026-11-26)
+
+Jeremiah is complete: a teaching introduction on the book page and all fifty-two chapters in plain words, in the same shape as Isaiah. One commit for the book page (with the rebuilt explore indexes, and `teaching.test.tsx` listing Jeremiah with the frames `canaan` and `fertile-crescent`) and one per chapter. Chapters were drafted and checked in the scratch folder's stage while the heavy gates waited on the machine's load, then copied in, checked again in place and committed in order.
+
+### The book page (`/study/bible/jeremiah`, same address)
+
+Data only, in `client/public/bible/notes/jeremiah/intro.json`, field `teaching`. Fourteen parts: Jeremiah in a minute; Where it sits in the story; Who wrote it, and when; Two editions of one book; Josiah, the kings after him, and Babylon; How Jeremiah is built; A covenant broken, and false security; The prophet's own prayers; True and false prophets; Seek the peace of the city; Rachel's tears and the new covenant; The nations, and Babylon's turn; How the New Testament reads Jeremiah; How to read Jeremiah. Then 24 hard passages, 15 key words, 15 timeline entries and eleven Go deeper pages, all live. Two maps: Judah and its neighbors (Jerusalem, Bethlehem, Jericho, Bethel, Shechem, Tyre and Damascus at the points the site's other maps use; Gilead, Philistia, Moab and Edom as regions), and the empires (Jerusalem, Egypt as a region, Babylon at its ruin mounds near Hillah). The note names what is left off (Anathoth, Mizpah, Ramah, Lachish, Tahpanhes, Carchemish, Elam) and says that ancient sites are placed at their ruin mounds.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 3 | 1,266 | 27 | 2 | 997 |
+| 2 | 3 | 1,365 | 28 | 2 | 930 |
+| 3 | 3 | 1,405 | 29 | 2 | 1,033 |
+| 4 | 3 | 1,295 | 30 | 2 | 1,046 |
+| 5 | 3 | 1,301 | 31 | 3 | 1,974 |
+| 6 | 3 | 1,271 | 32 | 2 | 1,205 |
+| 7 | 3 | 1,365 | 33 | 2 | 1,078 |
+| 8 | 2 | 1,077 | 34 | 2 | 961 |
+| 9 | 2 | 1,141 | 35 | 2 | 855 |
+| 10 | 2 | 1,053 | 36 | 2 | 1,043 |
+| 11 | 2 | 1,017 | 37 | 2 | 800 |
+| 12 | 2 | 931 | 38 | 2 | 1,173 |
+| 13 | 2 | 1,096 | 39 | 2 | 1,003 |
+| 14 | 2 | 1,093 | 40 | 2 | 855 |
+| 15 | 2 | 1,054 | 41 | 2 | 981 |
+| 16 | 2 | 1,025 | 42 | 2 | 1,024 |
+| 17 | 3 | 1,241 | 43 | 2 | 861 |
+| 18 | 3 | 1,242 | 44 | 2 | 1,084 |
+| 19 | 2 | 998 | 45 | 1 | 560 |
+| 20 | 3 | 1,231 | 46 | 2 | 1,009 |
+| 21 | 2 | 824 | 47 | 1 | 553 |
+| 22 | 3 | 1,392 | 48 | 2 | 1,030 |
+| 23 | 3 | 1,500 | 49 | 3 | 1,200 |
+| 24 | 2 | 843 | 50 | 2 | 1,127 |
+| 25 | 2 | 1,032 | 51 | 3 | 1,520 |
+| 26 | 2 | 957 | 52 | 2 | 1,064 |
+| | | | **Total** | **117** | **56,981** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part naming a book beyond Jeremiah.
+
+### The hard places, and how they are stated
+
+- **The New Testament's own lines, and only those:** 31:31-34 with Luke 22:20 and Hebrews 8 (and Hebrews 10:16-17), with the Jewish and critical objection stated first (Kimhi), the Reformed, dispensational and Christ-centred readings set out without choosing, the question named second-order, 31:35-37's bond to Israel's descendants granted, and Romans 11:28 against any contempt; Hebrews 8:13's word obsolete is not quoted. Also 7:11 with Matthew 21:13; 31:15 with Matthew 2:18, with the objection about Matthew's use stated; 9:23-24 with 1 Corinthians 1:31; 51:45 and the sinking stone with Revelation 18; 49's Edom with Amos 9:12 as Acts 15:17 quotes it. The Branch of 23:5-6 and 33:15-16 is given as a Christian reading, not a New Testament citation. Every other line the deep notes draw to Christ is cut, and each chapter's ledger names it.
+- **Pictures of Judah as an unfaithful wife and a woman exposed (2; 3:1-13; 13:20-27):** named, never described, stated as a prophetic picture of a city and a covenant that gives no warrant for any man to shame or harm any woman, with the abusive-marriage line (3) and the line for anyone being hurt (2, 13). The women of 44 are not singled out; the note says the chapter is no judgment on women.
+- **Jeremiah 20:14-18:** handled as Job 3 was, the despair named as prayer, Moses and Elijah beside it, the story going on, with the self-harm line.
+- **The horrors of the siege (19:9; 9:21; 39:6-7; 41; 52:9-11):** named, not described; no child's suffering a verdict on the child; the line for loss of a child, the grief line, the line for a sudden death.
+- **Child sacrifice (7:31; 19:5; 32:35):** named as evil that never entered God's mind, with the site's line that abuse of a child is a crime.
+- **Surrender to Babylon (21; 27; 38):** a word for one judgment at one time, not a rule that anyone must submit to oppression; no line drawn to any nation or war today.
+- **The words against the nations (25:15-38; 46 to 51):** poetry of judgment on ancient powers; Egypt, the Philistines, Moab, Edom and Babylon identified with no people, place, nation or state of the present day; 48:10 and 51 give no one a warrant for violence; Gaza and the Philistines are ancient places and peoples.
+- **Judgment on Judah (2 to 25; 44):** never a reason to blame the Jewish people, never a key for calling any people's suffering deserved.
+- **29:11:** a promise to a people in exile, not a guarantee of personal success.
+- **Prophecy and dates:** the seventy years read three ways with no date calculated; the time of Jacob's distress (30:7) given in its readings with no date set and no present event named.
+
+### Care lines
+
+Reused whole, byte for byte, each naming Find Help, none with a phone number, no new care sentence: the line for loss of a child (1, 19, 31); the line for anyone being hurt at home, at work or in a church (2, 13); the abusive-marriage line from hosea/plain/2.json (3); the line that abuse of a child is a crime, from colossians/plain/3.json (7, 32); the grief line (8, 9, 39); the disaster line (14); the line for anyone suffering now (15, 45, book page); the self-harm line (20); the line for a sudden death (41). The care check found every care paragraph already standing elsewhere on the site.
+
+### Cut or narrowed
+
+Each chapter's ledger in `bdoor-ledger.md` names its cuts. In outline: every deep-note line to Christ the New Testament does not itself draw (John 4 and 7 beside 2:13, Galatians 3 beside 4:2, Luke 19 and Mark 2 beside 8:22, Matthew 4:19 beside 16:16, Matthew 6:33 beside 45, Acts 2:9 beside 49, Matthew 10:16 beside 40, Acts 28 beside 37, Hebrews 11 beside 20); unsourced claims caught before commit (the word for worthless, the law on thieves, Anathoth's motives, the palace as the forest of 21:14, why the slaves were freed, whom the deportation figures counted, Caphtor's place, Gibeon's position); seal impressions whose finding or identification the deep notes call uncertain. Verses with dashes or inner speech marks are quoted in part or paraphrased; exclamations are quoted only in double quotes.
+
+### What was run
+
+After the book page and each chapter, each exit 0 at commit: validate-bible-notes; the strict, single-quote, cited-verse and nested quotation checks; the forbidden-word, signposting and first-person scans; the care-line check; no-emdash; the search-index and passage-index checks; validate-politics; the eight explore-index checks. Before commit each staged chapter was also checked for the validator's limits (length, a `later` naming another book, no exclamation outside double quotes, passages covering every verse).
+
+Pushes after the maps and the book page with chapters 1 to 4, after 22, after 37 and after 52, each after a merge of the shared branch and the full gate order on the merged tree: the 63 content gates, `pnpm check`, `pnpm test`, `pnpm build`, sitemap, prerender and `audit:canonicals`, then the served build on port 4611 at 390 and 1440 (the book page's 14 parts, 24 hard passages, 15 timeline entries and 14 places on two maps; no overlap, no sideways scroll; every chapter's passages and fields, 0 problems). When the branch moved during a run, the merge was made again (ledger conflicts kept both sides; the explore indexes rebuilt) and the content gates, `pnpm check`, the scans and `teaching.test.tsx` passed again before the push.

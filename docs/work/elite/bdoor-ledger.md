@@ -26177,3 +26177,219 @@ Cut in chapter 47: John 4 and 7:37-39 beside the river, which the New Testament 
 | The hard note: Will Ezekiel's temple actually be built? The readings in their holders' terms | 30-35 `hard` | ezekiel/48.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 48: nothing; Revelation 21:12 kept as the New Testament's own use of the twelve gates. No claim about any modern state, temple or border.
+## The plain notes on Jeremiah 38 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/38.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 38:1-28 (verses 1-5 and 14-27 partly paraphrased) | all | BSB | BSB text |
+| Siege about January 588 to summer 587 or 586 BC; the officials (21:1; 37:3) | 1-13 | jeremiah/38.json `historical` | Repository |
+| Weakening the hands; the Lachish letter's similar phrase, found 1935 | 1-13 | jeremiah/38.json `historical` | Repository |
+| Cisterns; Ebed-melech a Cushite, Cush south of Egypt | 1-13 | jeremiah/38.json `cultural`, `historical` | Repository |
+| Treason or not: God's verdict; Zedekiah's oath (2 Chronicles 36:13; Ezekiel 17); saving lives | 1-13 `hard` | jeremiah/38.json `hard`; the coordinator's direction | Repository |
+| Jeremiah 39:18, Psalm 40:2, Proverbs 29:25, 2 Chronicles 36:13 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 38: nothing.
+
+## The plain notes on Jeremiah 39 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/39.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 39:1-18 (verses 4-11 and 13-17 partly paraphrased) | all | BSB | BSB text |
+| January 588 BC to July 587 or 586 BC; the counting of years; 2 Kings 25 and Jeremiah 52 | 1-10 | jeremiah/39.json `historical` | Repository |
+| Officers' names; the 2007 tablet and Nabu-sharrussu-ukin, the match questioned | 1-10 | jeremiah/39.json `historical` | Repository |
+| Zedekiah's death: natural death, conditional promise, Ezekiel 12:13 | 1-10 `hard` | jeremiah/39.json `hard` | Repository |
+| The GRIEF care line, byte for byte | 1-10 `hard` | carelines.json | care.mjs |
+| Gedaliah of Shaphan's family; the promise to Ebed-melech placed out of order | 11-18 | jeremiah/39.json `literary`; BSB | Repository |
+| Lamentations 4:20, Ezekiel 12:13, Psalm 34:22 (clauses); Jeremiah 38:10-13 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 39: nothing. Verses 6 and 7 are stated in a line and not described.
+
+## The plain notes on Jeremiah 40 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 40:1-16 (verses 2-5 and 7-16 partly paraphrased) | all | BSB | BSB text |
+| Ramah as a gathering point; chapters 39 and 40 complementary | 1-6 | jeremiah/40.json `historical` | Repository |
+| A foreign officer's words: shaped by the narrator, or a conqueror's claim (2 Kings 18:25) | 1-6 | jeremiah/40.json `cultural`, `hard` | Repository |
+| Gedaliah of Shaphan's family; Mizpah as Tell en-Nasbeh, occupied | 7-16 | jeremiah/40.json `historical` | Repository |
+| 2 Kings 25:22, 25:24, Proverbs 22:3 (clauses); 2 Kings 18:25 (paraphrased) | `later` | BSB | BSB text |
+
+Cut in chapter 40: the Jaazaniah and Gedaliah seals named in the deep note, left out because their identification is uncertain; Matthew 10:16, replaced by Proverbs 22:3.
+
+## The plain notes on Jeremiah 41 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/41.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 41:1-18 (largely paraphrased) | all | BSB | BSB text |
+| The seventh month, year uncertain; 582 BC deportation possibly linked; the fast of the seventh month | 1-10 | jeremiah/41.json `historical` | Repository |
+| Ishmael of the royal house; Baalis of Ammon; the betrayed meal | 1-10 | jeremiah/41.json `historical`, `cultural` | Repository |
+| God's silence; evil reported without comment; a warning to exiles; left open as in Job | 1-10 `hard` | jeremiah/41.json `hard` | Repository |
+| The SUDDEN care line, byte for byte | 1-10 `hard` | carelines.json | care.mjs |
+| Gibeon's pool (2 Samuel 2:13); fear of reprisal; Bethlehem on the way to Egypt | 11-18 | BSB; jeremiah/41.json `summary` | BSB text |
+| 2 Kings 25:25, Zechariah 8:19, 2 Samuel 2:13 (clauses); Ezra 2:21 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 41: a draft line on Gibeon's position, which no repository source states. The killings are named, not described.
+
+## The plain notes on Jeremiah 42 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/42.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 42:1-22 (verses 13-22 largely paraphrased) | all | BSB | BSB text |
+| The survivors' fear; Egypt as refuge; Jezaniah and Azariah son of Hoshaiah | 1-12 | jeremiah/42.json `historical` | Repository |
+| Why going was wrong: a direct word sworn to; Egypt as house of slavery; Deuteronomy 17:16 | 13-22, `hard` | jeremiah/42.json `hard` | Repository |
+| Deuteronomy 17:16, Isaiah 31:1, Hosea 11:5, 2 Kings 25:26 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 42: nothing. The hard note adds that the chapter is no rule against seeking refuge and draws no line to refugees today.
+
+## The plain notes on Jeremiah 43 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/43.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 43:1-13 (verses 2-6 and 9-13 partly paraphrased) | all | BSB | BSB text |
+| Tahpanhes as Daphnae, Tell Defenneh; garrison with Greeks; Petrie 1886 and the brick platform | all | jeremiah/43.json `historical` | Repository |
+| Beth-shemesh as On, Heliopolis; Ra; obelisks | 8-13 | jeremiah/43.json `cultural`, `words` | Repository |
+| Did Nebuchadnezzar conquer Egypt: tablet of about 568 or 567 BC; Ezekiel 29:17-20; 525 BC; two readings | 8-13 `hard` | jeremiah/43.json `hard` | Repository |
+| Isaiah 31:1, 2 Kings 25:26, Ezekiel 29:19 (clauses); Genesis 41:45 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 43: the local name Petrie reported for the ruin, which the deep note itself says has been questioned.
+
+## The plain notes on Jeremiah 44 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/44.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 44:1-30 (largely paraphrased around inner speech marks) | all | BSB | BSB text |
+| Migdol, Tahpanhes, Memphis, Pathros; earlier settlement; Elephantine papyri and mixed worship | 1-14 | jeremiah/44.json `historical` | Repository |
+| Queen of Heaven; Josiah's reform about 622 BC; the people's argument and Jeremiah's reply; 3:10; 2 Kings 23:26 | 15-30, `hard` | jeremiah/44.json `historical`, `hard`; jeremiah/7.json `cultural` | Repository |
+| Hophra as Apries, overthrown about 570 BC by Amasis | 15-30 | jeremiah/44.json `historical` | Repository |
+| 2 Kings 23:26, 1 Corinthians 10:14, Jeremiah 7:18, Habakkuk 3:17 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 44: nothing. The hard note adds that the chapter is no judgment on women.
+
+## The plain notes on Jeremiah 45 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/45.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 45:1-5 (verse 3 paraphrased around inner speech marks) | all | BSB | BSB text |
+| Baruch as scribe, witness, reader; Seraiah his brother (51:59); 605 BC and Carchemish | 1-5 | jeremiah/45.json `historical` | Repository |
+| The great things unknown; timing and priorities, or self-seeking; the promise of life | 1-5 `hard` | jeremiah/45.json `hard` | Repository |
+| The SUFFERING care line, byte for byte | 1-5 `hard` | carelines.json | care.mjs |
+| Psalm 131:1, Jeremiah 39:18 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 45: Matthew 6:33, which the New Testament does not tie to this chapter; replaced by Jeremiah 39:18.
+
+## The plain notes on Jeremiah 46 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/46.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 46:1-28 (largely paraphrased) | all | BSB | BSB text |
+| Carchemish 605 BC; Neco II; the Babylonian Chronicle; Hamath | 1-12 | jeremiah/46.json `historical` | Repository |
+| Battle as sacrifice; Isaiah 34:6, Zephaniah 1:7; Egypt's boast; two emphases | 1-12 `hard` | jeremiah/46.json `hard`; the coordinator's direction | Repository |
+| Tabor and Carmel; heifer and gadfly; Amon of Thebes; Egypt inhabited again; 30:10-11 repeated | 13-28 | jeremiah/46.json `cultural`; BSB | Repository, BSB text |
+| Zephaniah 1:7, 2 Kings 24:7, Isaiah 19:25 (clauses); Jeremiah 30:10 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 46: nothing. The hard note adds that no war today is to be called God's sacrifice.
+
+## The plain notes on Jeremiah 47 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/47.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 47:1-7 (verses 2, 4-5 and 7 partly paraphrased) | all | BSB | BSB text |
+| The heading's pharaoh: Neco II about 609 or 601 BC, Herodotus, or later; 604 BC Ashkelon in the Babylonian Chronicle; Stager's destruction layer | 1-7 | jeremiah/47.json `historical` | Repository |
+| Heading and poem: two views and a later heading | 1-7 `hard` | jeremiah/47.json `hard`; the coordinator's direction | Repository |
+| Amos 1:6-7 (named), Zephaniah 2:4, Zechariah 9:7 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 47: a draft line placing Caphtor, which this chapter's note does not do. The hard note says plainly that no line is drawn to any present-day people, place or conflict.
+
+## The plain notes on Jeremiah 48 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/48.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 48:1-47 (largely paraphrased) | all | BSB | BSB text |
+| Moab's plateau; Mesha Stele, 1868, Dhiban, about 840 BC, Chemosh, the shared town names | 1-17 | jeremiah/48.json `historical` | Repository |
+| Wine on its dregs; Moab subject to Babylon and at the meeting of chapter 27 | 1-17 | jeremiah/48.json `cultural`, `historical` | Repository |
+| Verse 10 and God's lament: certainty of judgment, Saul, Ezekiel 18:32 | 1-17 `hard` | jeremiah/48.json `hard` | Repository |
+| Parallels with Isaiah 15 and 16; the flute at funerals; Ruth the Moabite | 18-47 | jeremiah/48.json `literary`; BSB | Repository, BSB text |
+| Isaiah 16:11, Zephaniah 1:12, Ruth 1:16, Ezekiel 18:32 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 48: nothing. The hard note adds that verse 10 gives no one a warrant for violence and draws no line to any present-day people.
+
+## The plain notes on Jeremiah 49 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/49.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 49:1-39 (largely paraphrased) | all | BSB | BSB text |
+| Ammon and Rabbah; Tiglath-pileser and Gad in the 730s BC (1 Chronicles 5:26); Baalis | 1-6 | jeremiah/49.json `historical` | Repository |
+| Edom, Teman, Bozrah; Esau; Obadiah's parallel; no present-day identification | 7-22 | jeremiah/49.json `historical`, `literary`; the coordinator's direction | Repository |
+| Why no restoration for Edom: particular guilt, political end, Amos 9:12 and Acts 15:17 | 7-22 `hard` | jeremiah/49.json `hard` | Repository |
+| Damascus, Hamath, Arpad; Kedar and the desert Hazor; Elam in southwestern Iran, Susa | 23-39 | jeremiah/49.json `historical` | Repository |
+| Amos 1:13 (named), 1 Chronicles 5:26, Obadiah 1:3, Amos 9:12, Isaiah 22:6 (clauses); Amos 1:3-5 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 49: a draft line setting Acts 2:9 beside Elam's restoration, which the New Testament does not draw; Amos 9:12 is kept with Acts 15:17 because Acts quotes it.
+
+## The plain notes on Jeremiah 50 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/50.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 50:1-46 (largely paraphrased) | all | BSB | BSB text |
+| Nebuchadnezzar II 605 to 562 BC; walls, Ishtar Gate, ziggurat, Marduk; Bel; the Medes; Cyrus 539 BC; the city not razed | 1-20 | jeremiah/50.json `historical` | Repository |
+| Merathaim and Pekod as wordplays; the Puqudu | 21-46 | jeremiah/50.json `historical` | Repository |
+| Did the prophecy fail: stock imagery, stages, symbol (Revelation), critical view | 21-46 `hard` | jeremiah/50.json `hard`; the coordinator's direction | Repository |
+| Isaiah 13:19, Revelation 18:2, Isaiah 43:14, Proverbs 23:11 (clauses) | `later` | BSB; jeremiah/50.json `christ` | BSB text |
+
+Cut in chapter 50: nothing. The notes identify no present-day power with Babylon.
+
+## The plain notes on Jeremiah 51 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/51.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 51:1-64 (largely paraphrased) | all | BSB | BSB text |
+| Medes and Nineveh 612 BC; Cyrus 539 BC; Ararat as Urartu, Minni, Ashkenaz; waters and walls | 1-33 | jeremiah/51.json `historical` | Repository |
+| 15-19 repeating 10:12-16; Sheshach by atbash (25:26); Bel | 1-58 | jeremiah/51.json `literary`; jeremiah/25.json | Repository |
+| The calls for destruction: victims' words, vengeance to God, stock war language, Revelation | 34-58 `hard` | jeremiah/51.json `hard`; the coordinator's direction | Repository |
+| 594 or 593 BC; Seraiah son of Neriah; the scroll in the Euphrates | 59-64 | jeremiah/51.json `historical`; BSB | Repository, BSB text |
+| Revelation 17:4, Isaiah 21:9, Revelation 18:4, Psalm 137:1, Revelation 18:21 (clauses); Jeremiah 36:4 (named) | `later` | BSB; jeremiah/51.json `christ` | BSB text |
+
+Cut in chapter 51: nothing. The hard note says the words give no warrant for violence against any people and draw no line to any present-day state.
+
+## The plain notes on Jeremiah 52 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/52.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 52:1-34 (verses 4-27 partly summarized) | all | BSB | BSB text |
+| Appendix parallel to 2 Kings 24-25; 597 BC; January 588; 587 or 586 BC; Riblah on the Orontes | 1-27 | jeremiah/52.json `historical`, `summary` | Repository |
+| Deportation figures only in Jeremiah: 597, 587/586, 582/581 BC; reprisal after Gedaliah | 28-34 | jeremiah/52.json `historical` | Repository |
+| Evil-merodach as Amel-Marduk, 562 to 560 BC; release 561 BC; ration tablets of the 590s BC | 28-34 | jeremiah/52.json `historical` | Repository |
+| The genealogy question: Joseph, Haggai 2:23, the risen king, Jewish tradition | 28-34 `hard` | jeremiah/52.json `hard` | Repository |
+| Lamentations 3:22, 2 Kings 25:30, Matthew 1:12 (clauses); 2 Kings 25:1-21 and 24:14 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 52: a draft guess at whom the deportation figures counted, replaced by the plain comparison with 2 Kings 24:14. Verses 9 to 11 are stated, not described.
