@@ -25226,3 +25226,19 @@ Cut in chapter 18: John 3:5, 2 Peter 3:9 and 1 Timothy 2:4, which the New Testam
 | Later: Psalm 1:3; 2 Kings 25:7 | 10-14 `later` | BSB | BSB text |
 
 Cut in chapter 19: nothing.
+
+## The plain notes on Ezekiel 20 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/20.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| For the sake of God's name: the text paraphrased; quoted clauses at verses 3, 4, 9, 11, 12, 13-17, 18-24, 25 | 1-26 | BSB | BSB text |
+| Background in `hearers` | 1-26 | ezekiel/20.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 31:13; Psalm 81:12 | 1-26 `later` | BSB | BSB text |
+| The hard note: What does God mean when he says he gave Israel statutes that were not good (verses 25-26)? The readings in their holders' terms | 1-26 `hard` | ezekiel/20.json `hard` | Repository; the site takes no side |
+| A new exodus, and acceptance on the holy mountain: the text paraphrased; quoted clauses at verses 27-31, 32, 33, 35-38, 40-41, 44, 45-49 | 27-49 | BSB | BSB text |
+| Background in `hearers` | 27-49 | ezekiel/20.json `historical`, `cultural`, `literary` | Repository |
+| Later: Exodus 6:6; Hosea 2:14 | 27-49 `later` | BSB | BSB text |
+
+Cut in chapter 20: Romans 1:24 beside the giving over, which the New Testament does not draw from Ezekiel 20.
