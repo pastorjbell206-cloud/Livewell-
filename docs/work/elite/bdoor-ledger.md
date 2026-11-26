@@ -23140,3 +23140,13 @@ Cut in chapter 19: nothing beyond the policy on lines to Christ. No care line is
 | The hard note: naked or partly clothed; the three years; sign-acts; not explained away; no pattern for shaming anyone in God's name | 3-6 `hard` | isaiah/20.json `hard`; the brief | Repository |
 
 Cut in chapter 20: nothing. No care line is needed in this chapter.
+
+## Jonah's and Nahum's maps: Nineveh added (2026-11-26)
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Nineveh at 36.36 N, 43.15 E, the ruin mounds of Kuyunjik and Nebi Yunus on the east bank of the Tigris opposite Mosul | jonah and nahum `teaching.map` | the coordinator's instruction of 2026-11-26 (the repository held no coordinates); jonah/1.json `historical` (opposite modern Mosul) | Inside the `fertile-crescent` frame; validate-bible-notes |
+| Nineveh's verses: Jonah 1:2, 3:3, 4:11; Nahum 1:1, 2:8, 3:7 | map lines | BSB | BSB text |
+| Tarshish left off: disputed, Tartessus in Spain, Sardinia and other western sites | jonah `teaching.mapNote` | jonah/intro.json `setting` | Repository; no side chosen |
+
+Both maps moved from the `canaan` frame to `fertile-crescent`, and `teaching.test.tsx` says so.
