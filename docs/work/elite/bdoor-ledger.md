@@ -23835,3 +23835,30 @@ Cut in chapter 47: nothing. The hard note in 5-11 adds the brief's line that jud
 | Revelation 18:4; 1 Corinthians 10:4 (its clause) | 17-22 `later` | BSB; isaiah/48.json `christ` | BSB text |
 
 Cut in chapter 48: a draft line naming Stephen's charge in Acts 7 was replaced by Hebrews 3:8, so that the chapter's warning about stubbornness is not pointed at the Jewish people.
+
+## The plain notes on Isaiah 49 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/49.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 49:1-6 | 1-6 | BSB | BSB text |
+| Cyrus and Babylon no longer named; the Servant and Zion; the Servant's work beyond Cyrus's | 1-6 | isaiah/49.json `story` | Repository |
+| Second of four Servant Songs, named by Bernhard Duhm; God speaks in 42, the Servant here | 1-6 | isaiah/49.json `literary` | Repository |
+| Sword and arrow as his mouth; called from the womb like Jeremiah | 1-6 | isaiah/49.json `cultural` | Repository |
+| Luke 2:32; Acts 13:47 (its inner quotation) | 1-6 `later` | BSB; isaiah/49.json `christ` | BSB text |
+| The four readings of the Servant; the narrowing; verse 6 applied to Jesus and to his messengers | 1-6 `hard` | isaiah/49.json `hard` | Repository |
+| 49:7-13 (verse 9's inner speech paraphrased) | 7-13 | BSB | BSB text |
+| Covenant for the people repeats 42:6; new exodus | 7-13 | isaiah/49.json `literary` | Repository |
+| Sinim, Syene, the Great Isaiah Scroll, China view abandoned; Elephantine colony, fifth-century papyri | 7-13 | isaiah/49.json `historical` | Repository |
+| 2 Corinthians 6:2 (its second sentence); Revelation 7:16 (its clause) | 7-13 `later` | BSB; isaiah/49.json `christ` | BSB text |
+| 49:14-21 | 14-21 | BSB | BSB text |
+| 587 or 586 BC; returnees after 539/538 BC; nursing two or three years; palms and 44:5; forget four times | 14-21 | isaiah/49.json `historical`, `cultural`, `words` | Repository |
+| Psalm 13:1 (its clauses); Matthew 23:37 (its clause) | 14-21 `later` | BSB | BSB text |
+| 49:22-26 (verse 26's picture named, not quoted) | 22-26 | BSB | BSB text |
+| Kings and queens reverse the relation of empire and captives; siege language in verse 26 | 22-26 | isaiah/49.json `cultural` | Repository |
+| Psalm 126:1; Isaiah 66:20 (its clause) | 22-26 `later` | BSB | BSB text |
+
+Changed in chapter 49 before commit: verse 23's line on kings and queens is paraphrased, because validate-bible-notes holds a word in it to the Forbidden Language list.
+
+Cut in chapter 49: a draft `later` line on Matthew 12:29 was replaced by Psalm 126:1, because the New Testament does not itself tie that saying to verse 24.
