@@ -23862,3 +23862,27 @@ Cut in chapter 48: a draft line naming Stephen's charge in Acts 7 was replaced b
 Changed in chapter 49 before commit: verse 23's line on kings and queens is paraphrased, because validate-bible-notes holds a word in it to the Forbidden Language list.
 
 Cut in chapter 49: a draft `later` line on Matthew 12:29 was replaced by Psalm 126:1, because the New Testament does not itself tie that saying to verse 24.
+
+## The plain notes on Isaiah 50 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/50.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 50:1-3 | 1-3 | BSB | BSB text |
+| Deuteronomy 24's certificate; selling children for debt, 2 Kings 4; no certificate, no creditor | 1-3 | isaiah/50.json `cultural` | Repository |
+| Fear that Babylon's gods had won | 1-3 | isaiah/50.json `historical` | Repository |
+| Deuteronomy 24:1 (its clause); Numbers 11:23 (its question) | 1-3 `later` | BSB | BSB text |
+| Jeremiah 3:8 and the two prophets' uses of the picture | 1-3 `hard` | isaiah/50.json `hard` | Repository |
+| 50:4-9 | 4-9 | BSB | BSB text |
+| Third Servant Song; suffering for the first time; prepares 52:13 to 53:12 | 4-9 | isaiah/50.json `story`, `literary` | Repository |
+| Disciple as one taught; the three insults, Proverbs 10:13, 2 Samuel 10, Deuteronomy 25:9; courtroom language | 4-9 | isaiah/50.json `words`, `cultural` | Repository |
+| Jeremiah beaten and in stocks | 4-9 | isaiah/50.json `historical`; Jeremiah 20:1-2 | BSB text |
+| Jeremiah 20:2 (its clause); Romans 8:33 | 4-9 `later` | BSB; isaiah/50.json `christ` for Paul's echo | BSB text |
+| Matthew 26:67 named as the Christian reading, with the note that the New Testament does not quote this song | 4-9 `hard` | isaiah/50.json `christ` | Repository |
+| The HURT care line, byte for byte | 4-9 `hard` | 2-kings/plain/9.json and two wisdom files | care.mjs |
+| 50:10-11 | 10-11 | BSB | BSB text |
+| Two paths, trusting in the dark or walking by one's own fire | 10-11 | isaiah/50.json `literary` | Repository |
+| Psalm 23:4 (its clause); Lamentations 3:30 (named) | 10-11 `later` | BSB | BSB text |
+
+Cut in chapter 50: nothing. The Gospel line is given as how Christians have read the song, not as a New Testament citation, because the New Testament does not quote it.
