@@ -24076,3 +24076,24 @@ Cut in chapter 58: Matthew 25:31-46, which the deep note ties to verse 7, is lef
 | Vengeance and love; Romans 12:19 | 16-21 `hard` | isaiah/59.json `hard` | Repository |
 
 Cut in chapter 59: Deuteronomy 32:35 is left to the deep note. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 60 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/60.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 60:1-9 | 1-9 | BSB | BSB text |
+| Arrival as sunrise; first of 60 to 62, the bright center | 1-9 | isaiah/60.json `story` | Repository |
+| After 539 BC; temple about 516 or 515 BC; Ezra 3:12 weeping; walls about 445 BC; Persian province | 1-9 | isaiah/60.json `historical` | Repository |
+| Midian, Ephah, Keturah; Sheba and its queen; Kedar, Nebaioth, Ishmael; Tarshish debated; frankincense | 1-9 | isaiah/60.json `historical`, `cultural` | Repository |
+| Isaiah 2:3 (its first words); 1 Kings 10:2 (its clause) | 1-9 `later` | BSB | BSB text |
+| 60:10-16 | 10-16 | BSB | BSB text |
+| Open gates; Lebanon timber, Solomon; bowing as submission reversed; Zion addressed as a woman | 10-16 | isaiah/60.json `cultural`, `literary` | Repository |
+| Revelation 21:25, 21:26 | 10-16 `later` | BSB; isaiah/60.json `christ` | BSB text |
+| The readings of submission; 2:2-4 and 56:6-7 | 10-16 `hard` | isaiah/60.json `hard` | Repository |
+| 60:17-22 | 17-22 | BSB | BSB text |
+| Framed by light; exchanges; named gates, Nehemiah 3; kavod, the tabernacle, Solomon's temple, Ezekiel 10 | 17-22 | isaiah/60.json `literary`, `cultural`, `words` | Repository |
+| Revelation 21:23; Ezekiel 10 (named) | 17-22 `later` | BSB; isaiah/60.json `christ`, `words` | BSB text |
+
+Cut in chapter 60: the magi of Matthew 2, which the deep note calls a thematic echo, and John 8:12 and Matthew 5:14, are left out. The hard note's last sentence, that the chapter gives no people or nation today a warrant to claim power over others in God's name, follows the brief.
