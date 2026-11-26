@@ -23348,3 +23348,22 @@ Cut from the book page: the introduction's line from the latter glory to John 2:
 | Ezra 5:2 (its first sentence); Ezra 1:1 paraphrased | 12-15 | BSB | BSB text |
 
 Cut in chapter 1: nothing drawn to the New Testament.
+
+## The plain notes on Haggai 2 (2026-11-26)
+
+`client/public/bible/notes/haggai/plain/2.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 2:1; 2:3 (its questions); 2:4 (in double quotes); 2:5 (its last sentence); 2:6; 2:7 paraphrased; 2:8-9 | 1-9 | BSB | BSB text |
+| Mid-October 520 BC, the last day of Booths (Leviticus 23:34-36); Solomon's dedication at the same feast; the thin harvest; the three parts; shaking as Sinai's language | 1-9 | haggai/2.json `historical` | Repository |
+| Hebrews 12:26 (its quotation); 1 Kings 8:2 paraphrased | 1-9 | haggai/intro.json `christ`; haggai/2.json `historical`; BSB | Repository; BSB text; the New Testament's own line |
+| The hard note: a small temple without the ark and the cloud; Herod's rebuilding around 20 or 19 BC; AD 70; partial fulfillment and the age to come; Jesus' presence as a Christian reading; left open | 1-9 `hard` | haggai/2.json `hard` | Repository; the readings in their holders' terms |
+| 2:10-11 and 2:15-18 paraphrased; 2:12-13 (the priests' answers); 2:14 (its clause); 2:19 (its last clause) | 10-19 | BSB | BSB text |
+| Mid-December 520 BC; holy and unclean (Numbers 19:11-13); the priests' rulings (Leviticus 10:10-11); holiness not passed on, impurity spread; the day of the foundation; no general formula | 10-19 | haggai/2.json `cultural`, `historical`; haggai/intro.json `reading` | Repository |
+| Numbers 19:11; Leviticus 10:10-11; Amos 4:9 (its refrain) | 10-19 | BSB | BSB text |
+| 2:20-22 paraphrased; 2:23 | 20-23 | BSB | BSB text |
+| The signet ring as the king's seal; Zerubbabel as David's descendant; Jeremiah 22:24 reversed; the line disappearing after him (the guide); God's shaking no warrant for violence | 20-23 | haggai/2.json `cultural`; haggai/intro.json `christ`; bible/guides/kings-of-israel-and-judah.json (after the kings); the brief | Repository |
+| Jeremiah 22:24 (its clause); Matthew 1:12-13 and Luke 3:27 | 20-23 | haggai/intro.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+
+Cut in chapter 2: the deep note's line to John 2:19-21, which the New Testament does not draw from Haggai.
