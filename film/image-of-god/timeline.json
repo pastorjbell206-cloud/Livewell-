@@ -1,0 +1,157 @@
+{
+ "length": 125.03,
+ "chapters": [
+  {
+   "id": "beginning",
+   "kicker": "In the beginning",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 20.0,
+   "lines": [
+    {
+     "text": "In the beginning God created the heavens and the earth.",
+     "start": 2.6,
+     "end": 5.58
+    },
+    {
+     "text": "Genesis opens with God already there. Nothing comes before him, and nothing helps him.",
+     "start": 6.32,
+     "end": 11.74
+    },
+    {
+     "text": "Christians confess that God made all things, seen and unseen, out of nothing, by the word of his power.",
+     "start": 12.3,
+     "end": 19.1
+    }
+   ]
+  },
+  {
+   "id": "good",
+   "kicker": "Very good",
+   "level": 0.4,
+   "start": 19.2,
+   "end": 33.78,
+   "lines": [
+    {
+     "text": "Day by day the empty world is given shape and then filled. Six times God calls what he made good. The seventh time, very good.",
+     "start": 20.1,
+     "end": 28.84
+    },
+    {
+     "text": "The world is not a mistake or a prison. It's a gift.",
+     "start": 29.46,
+     "end": 32.88
+    }
+   ]
+  },
+  {
+   "id": "image",
+   "kicker": "In his image",
+   "level": 0.6,
+   "start": 32.98,
+   "end": 54.4,
+   "lines": [
+    {
+     "text": "People come last, and they are different. In the ancient world a king could be called the image of a god. Genesis gives that dignity to every person, male and female, not only to kings.",
+     "start": 33.88,
+     "end": 45.82
+    },
+    {
+     "text": "So God created man in His own image; in the image of God He created him; male and female He created them.",
+     "start": 46.28,
+     "end": 53.5
+    }
+   ]
+  },
+  {
+   "id": "for",
+   "kicker": "Made for God",
+   "level": 0.7,
+   "start": 53.6,
+   "end": 66.54,
+   "lines": [
+    {
+     "text": "Being made in God's image means we were made to know him, to reflect his character, and to rule over and care for his world as those who answer to him.",
+     "start": 54.5,
+     "end": 63.4
+    },
+    {
+     "text": "We were made for God himself.",
+     "start": 64.0,
+     "end": 65.64
+    }
+   ]
+  },
+  {
+   "id": "work",
+   "kicker": "Image and work",
+   "level": 0.6,
+   "start": 65.74,
+   "end": 78.68,
+   "lines": [
+    {
+     "text": "Image and work arrive together. God blesses the man and the woman and gives them the earth to rule and to care for on his behalf.",
+     "start": 66.64,
+     "end": 73.96
+    },
+    {
+     "text": "To tend it and keep it, not to spoil it for themselves.",
+     "start": 74.52,
+     "end": 77.78
+    }
+   ]
+  },
+  {
+   "id": "worth",
+   "kicker": "Given, not earned",
+   "level": 0.8,
+   "start": 77.88,
+   "end": 95.64,
+   "lines": [
+    {
+     "text": "The image is given, not earned. A newborn, a man with advanced dementia, and the most gifted adult in the room have the same worth, because their worth was never a ranking of what they can do.",
+     "start": 78.78,
+     "end": 90.76
+    },
+    {
+     "text": "Many who don't believe in God hold the same belief, and live it well.",
+     "start": 91.28,
+     "end": 94.74
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.55,
+   "start": 94.84,
+   "end": 115.98,
+   "lines": [
+    {
+     "text": "That God created, that he created from nothing, and that humanity bears his image are what all Christians confess.",
+     "start": 95.74,
+     "end": 102.66
+    },
+    {
+     "text": "The age of the earth and the way God created are open questions, and faithful Christians who love the same Bible have landed in different places. This film takes no side on the age of the earth or on evolution.",
+     "start": 103.14,
+     "end": 115.08
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 115.18,
+   "end": 118.931,
+   "lines": [
+    {
+     "text": "We were made for God himself.",
+     "start": 116.08,
+     "end": 118.031
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+  "title": "Why did Jesus die?",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/why-jesus-died",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "who",
+      "kicker": "For us",
+      "level": 0.2,
+      "lines": [
+        "The creed says he was crucified also for us under Pontius Pilate. The chief priests and their council handed him over. Pilate, the Roman governor, condemned him. Roman soldiers crucified him.",
+        "Jesus himself, his disciples, and the first church were Jews, and blaming the Jewish people for his death is a lie that Christians must reject plainly. The New Testament places all of us inside the guilt."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 15:3",
+        "text": "that Christ died for our sins according to the Scriptures",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "lamb",
+      "kicker": "One picture: the Passover lamb",
+      "level": 0.4,
+      "lines": [
+        "At the first Passover a lamb died in the place of the firstborn, and Israel went free. Jesus died at Passover, and Paul says it.",
+        "For Christ, our Passover lamb, has been sacrificed."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 5:7",
+        "text": "For Christ, our Passover lamb, has been sacrificed.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "ransom",
+      "kicker": "One picture: a ransom",
+      "level": 0.5,
+      "lines": [
+        "A ransom was the price paid to set a slave or a prisoner free.",
+        "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.",
+        "Peter says the price was not silver or gold but Christ himself. He paid it with his own life, freely given."
+      ],
+      "scripture": {
+        "reference": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "bearing",
+      "kicker": "One picture: in our place",
+      "level": 0.65,
+      "lines": [
+        "Isaiah saw a servant who suffered for others.",
+        "The punishment that brought us peace was upon Him.",
+        "This is not an angry Father against an unwilling Son. Jesus said he lays his life down of his own accord. The one who bears it is God himself in the Son."
+      ],
+      "scripture": {
+        "reference": "Isaiah 53:5",
+        "text": "the punishment that brought us peace was upon Him",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "victory",
+      "kicker": "One picture: a victory",
+      "level": 0.8,
+      "lines": [
+        "Many early Christian writers loved this picture. By his death Jesus broke the power of the one who holds the power of death, and set free those held in slavery by their fear of death.",
+        "He disarmed the powers, triumphing over them by the cross."
+      ],
+      "scripture": {
+        "reference": "Colossians 2:15",
+        "text": "triumphing over them by the cross",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "love",
+      "kicker": "One picture: love shown",
+      "level": 0.7,
+      "lines": [
+        "But God proves His love for us in this: While we were still sinners, Christ died for us.",
+        "The cross does not change God's heart toward us. It shows it. Some Christians put this picture at the center: the love seen at the cross changes those who see it."
+      ],
+      "scripture": {
+        "reference": "Romans 5:8",
+        "text": "But God proves His love for us in this: While we were still sinners, Christ died for us.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "peace",
+      "kicker": "One picture: peace made",
+      "level": 0.6,
+      "lines": [
+        "Reconciled was the word for making peace between people at war.",
+        "Here the one who was wronged, God, makes peace and pays the cost himself."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 5:19",
+        "text": "God was reconciling the world to Himself in Christ",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "together",
+      "kicker": "Held together",
+      "level": 0.55,
+      "lines": [
+        "No one picture says it all. Christians hold them together, and some traditions put one at the center. The creed doesn't choose a theory. It says he came for us men and for our salvation.",
+        "Christians read Isaiah's servant as Jesus, and many Jewish readers read him as the people of Israel. This film doesn't choose between the ways of explaining the cross."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "And the cross is not the end of the story. On the third day the tomb was empty."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 15:4",
+        "text": "that He was raised on the third day according to the Scriptures",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "Christ died for our sins.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
