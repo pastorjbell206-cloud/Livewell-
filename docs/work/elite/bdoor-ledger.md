@@ -21864,3 +21864,18 @@ Cut in chapter 10: nothing beyond the policy on lines to Christ. No care line is
 | Romans 15:12; Isaiah 40:3 | 10-16 `later` | BSB | BSB text |
 
 Cut in chapter 11: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 12 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/12.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 12:1-3 | 1-3 | BSB | BSB text |
+| Chapters 1 to 12 closed in a hymn; Exodus 15:2; the second exodus song; Jerusalem's water; the Sukkot water rite in later Jewish practice; the hymn's date debated | 1-3 | isaiah/12.json `story`, `historical`, `cultural` | Repository; both views |
+| Exodus 15:2; Psalm 118:14 | 1-3 `later` | BSB | BSB text |
+| 12:4-6 (12:4 in double quotes for its exclamation) | 4-6 | BSB | BSB text |
+| Temple worship's language; the outward look; the Holy One of chapter 6 | 4-6 | isaiah/12.json `cultural`, `story` | Repository |
+| Psalm 105:1 | 4-6 `later` | BSB | BSB text |
+
+Cut in chapter 12: John 7:37-38 at the Feast of Tabernacles, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
