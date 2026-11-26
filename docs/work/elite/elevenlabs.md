@@ -173,3 +173,66 @@ quotations or stories; nothing published without James's approval; keep the
 API key on the machine and never in the repository; report each step's cost in
 ElevenLabs credits before running it.
 ```
+
+## The prompt for LiveWell itself (every ElevenLabs capability that serves the site)
+
+James, 2026-11-26: "use 11 Labs ... to work on Live Well by JamesBell.co ...
+to its maximum capability ... make videos that would go on YouTube." Paste into
+a session that has this repository, on a machine where ELEVENLABS_API_KEY is
+set (James's own Mac), or with ElevenLabs connected:
+
+```
+You are working on LiveWell by James Bell (www.livewellbyjamesbell.co), the
+repository pastorjbell206-cloud/Livewell-. Read CLAUDE.md, docs/VOICE-JAMES-BELL.md
+and docs/work/elite/elevenlabs.md first; they govern everything below. Use
+ElevenLabs for every place on the site where a voice, a translation or sound
+would help a reader understand, and nowhere it would only decorate. Propose
+each step with its cost in ElevenLabs credits, wait for James's yes, build it,
+check it, and open a pull request.
+
+1. The Bible films' voice. Pick a stock narrator with James (Voice Library or
+   Voice Design, never a clone of a real person), set it in
+   scripts/film-audio.config.json, and run scripts/build-film-audio.mjs for one
+   film, then all 59 (about 264,000 characters). Listen to three films whole
+   before --all.
+2. YouTube and social video. With the new voice, run
+   scripts/export-film-video.mjs for every finished film: wide (YouTube),
+   vertical (Shorts, Reels, TikTok) and square (Facebook). Write each video's
+   title, description, Scripture list, links and tags from the film's own JSON,
+   say in every description that the narration is computer-generated, and add
+   a thumbnail from its opening card. Put the files in James's Google Drive.
+3. Listen to an essay. For each essay on the shelf (client/src/lib/shelf.json)
+   and each church-history essay, make one narrated MP3 with the same stock
+   voice (eleven_multilingual_v2, Studio for anything over ten minutes), with a
+   play button that never starts by itself, the text always on the page, and a
+   line that the voice is computer-made. Keep a hash of the words, as the films
+   do, so a changed essay fails CI until its audio is made again.
+4. Audiobooks. For the books in content/books-src/ (Believe, Blind Spots,
+   A Higher Allegiance, The Reliability of Scripture, and each one added
+   later), make chapter-by-chapter audiobooks in ElevenLabs Studio from the
+   source text exactly. Ask James first whose voice: a stock narrator, or his
+   own (a Professional Voice Clone of himself, with ElevenLabs' consent
+   verification; then label it "AI narration in the author's voice").
+5. Other languages. Dub the films and the most-read pages into Spanish first,
+   then other languages James names, with ElevenLabs Dubbing and multilingual
+   text-to-speech. Scripture in another language must come from a published
+   translation in that language, never a machine translation of the English.
+   Nothing translated is published until a fluent reader has checked it.
+6. A guide on the site. An ElevenLabs Agent that helps a reader find the right
+   page: it answers only from the site's own pages and search index, links the
+   page it used, says when the site does not answer a question, never gives
+   pastoral, medical, legal or financial advice of its own, and sends anyone in
+   crisis straight to /help and 988. James approves its instructions word for
+   word before it goes live.
+7. Sermons and talks into writing. Use ElevenLabs Scribe to transcribe James's
+   recorded sermons, then list passages that could become essays, quoting his
+   spoken words exactly and writing nothing new in his name.
+8. Sound. A short, quiet sound signature for the films' opening and closing
+   cards (ElevenLabs Music or Sound Effects), never louder than the voice, and
+   one for the YouTube channel's intro, both approved by James.
+
+Throughout: never fabricate a quotation, date, statistic or story; Scripture
+quoted exactly from the translation the page uses; the key stays on the machine
+and never enters the repository, a log or a commit; nothing is published
+without James's approval.
+```
