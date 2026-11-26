@@ -25149,3 +25149,19 @@ Cut in chapter 20: Hebrews 11:35-36, replaced by Jeremiah 37:15 because Hebrews 
 | Deuteronomy 30:15, 2 Kings 25:1, Psalm 101:8 (clauses); Jeremiah 22:3 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 21: a draft line naming the palace as the forest of verse 14, which no repository source states.
+
+## The plain notes on Jeremiah 22 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/22.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 22:1-30 (verses 11, 18, 24-26 and 30 partly paraphrased) | all | BSB | BSB text |
+| Cedar and the House of the Forest of Lebanon (1 Kings 7:2); Gilead and Lebanon | 1-12 | jeremiah/22.json `cultural` | Repository |
+| Josiah at Megiddo 609 BC; Shallum as Jehoahaz, three months, Egypt (2 Kings 23:29-34) | 1-12 | jeremiah/22.json `historical` | Repository |
+| Jehoiakim 609 to 598 BC; tribute to Egypt (2 Kings 23:35); unpaid labor; vermilion; burial and lament | 13-23 | jeremiah/22.json `historical`, `cultural`; BSB | Repository, BSB text |
+| Coniah as Jehoiachin, eighteen, three months, 597 BC (2 Kings 24:8-15); signet ring; sons in 1 Chronicles 3:17 | 24-30 | jeremiah/22.json `historical`, `cultural`; BSB | Repository, BSB text |
+| The genealogy question: Joseph and Luke 3, verse 30's scope, Haggai 2:23 | 24-30 `hard` | jeremiah/22.json `hard` | Repository |
+| 2 Kings 23:34, Micah 6:8, Leviticus 19:13, James 5:4, Haggai 2:23, Matthew 1:12 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 22: nothing.
