@@ -1,0 +1,147 @@
+{
+ "length": 110.42,
+ "chapters": [
+  {
+   "id": "what",
+   "kicker": "A people, not a building",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 15.74,
+   "lines": [
+    {
+     "text": "The church is the whole company of God's people, gathered by the Spirit around Christ, called to worship God, love one another, and make him known to the world.",
+     "start": 2.6,
+     "end": 12.14
+    },
+    {
+     "text": "A building is only where some of them meet.",
+     "start": 12.76,
+     "end": 14.84
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "kicker": "A body",
+   "level": 0.4,
+   "start": 14.94,
+   "end": 25.6,
+   "lines": [
+    {
+     "text": "Paul's picture is a body: many parts, different gifts, one life.",
+     "start": 15.84,
+     "end": 20.6
+    },
+    {
+     "text": "No part can say it doesn't need the others, and none is a spare.",
+     "start": 21.2,
+     "end": 24.7
+    }
+   ]
+  },
+  {
+   "id": "house",
+   "kicker": "A house of living stones",
+   "level": 0.55,
+   "start": 24.8,
+   "end": 35.38,
+   "lines": [
+    {
+     "text": "Peter's picture is a house of living stones. God is building his people into a dwelling for himself, and the stone the whole house rests on is Christ.",
+     "start": 25.7,
+     "end": 34.48
+    }
+   ]
+  },
+  {
+   "id": "family",
+   "kicker": "A family",
+   "level": 0.6,
+   "start": 34.58,
+   "end": 46.16,
+   "lines": [
+    {
+     "text": "God saves us into a family, not alone.",
+     "start": 35.48,
+     "end": 38.14
+    },
+    {
+     "text": "Strangers become members of one household, brothers and sisters who help one another follow Jesus all the way home.",
+     "start": 38.68,
+     "end": 45.26
+    }
+   ]
+  },
+  {
+   "id": "gather",
+   "kicker": "Gathered",
+   "level": 0.7,
+   "start": 45.36,
+   "end": 62.18,
+   "lines": [
+    {
+     "text": "They devoted themselves to the apostles\u2019 teaching and to the fellowship, to the breaking of bread and to prayer.",
+     "start": 46.26,
+     "end": 52.4
+    },
+    {
+     "text": "That was the first church in Jerusalem. Christians still gather to worship God, hear his Word, share the Lord's Supper, and help one another.",
+     "start": 53.02,
+     "end": 61.28
+    }
+   ]
+  },
+  {
+   "id": "sent",
+   "kicker": "Sent",
+   "level": 0.85,
+   "start": 61.38,
+   "end": 76.92,
+   "lines": [
+    {
+     "text": "The church is gathered to be sent. Jesus' last command was to make disciples of all nations, and his last promise was his own presence to the end of the age.",
+     "start": 62.28,
+     "end": 71.94
+    },
+    {
+     "text": "And surely I am with you always, even to the end of the age.",
+     "start": 72.4,
+     "end": 76.02
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where churches differ",
+   "level": 0.55,
+   "start": 76.12,
+   "end": 100.32,
+   "lines": [
+    {
+     "text": "Churches share the confession of one Lord and the command to baptize in the name of the Father, the Son, and the Holy Spirit.",
+     "start": 77.02,
+     "end": 83.9
+    },
+    {
+     "text": "They differ on who should be baptized and how, and on how churches are led: by bishops, by elders, or by the congregation deciding together. Faithful churches differ on these while confessing one Lord, and this film doesn't choose between them.",
+     "start": 84.54,
+     "end": 99.42
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 99.52,
+   "end": 104.322,
+   "lines": [
+    {
+     "text": "The church is a people, gathered to be sent.",
+     "start": 100.42,
+     "end": 103.422
+    }
+   ]
+  }
+ ]
+}
