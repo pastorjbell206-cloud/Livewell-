@@ -27,10 +27,15 @@ One row per film. "Approved" is James's word only.
 | book-2-samuel | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 | book-nehemiah | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 | book-psalms | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| book-proverbs | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| book-isaiah | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| book-jeremiah | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| book-daniel | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| book-amos | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 
-Step 3, the 83 existing Bible Explorer films (`client/public/explorer/films/`): batch 1 of five is above (the three story films, Genesis, Exodus). Batch 2 is Leviticus, Numbers, Deuteronomy, Joshua and Judges. Batch 3 is Ruth, 1 Samuel, 2 Samuel, Nehemiah and Psalms. 68 remain: 24 books in Bible order (Proverbs next), then beliefs, questions, ideas, verses, stories. Each batch's scripts are written by a file in `film/batches/`.
+Step 3, the 83 existing Bible Explorer films (`client/public/explorer/films/`): batch 1 of five is above (the three story films, Genesis, Exodus). Batch 2 is Leviticus, Numbers, Deuteronomy, Joshua and Judges. Batch 3 is Ruth, 1 Samuel, 2 Samuel, Nehemiah and Psalms. Batch 4 is Proverbs, Isaiah, Jeremiah, Daniel and Amos. 63 remain: 19 books in Bible order (Jonah next), then beliefs, questions, ideas, verses, stories. Each batch's scripts are written by a file in `film/batches/`.
 
-ElevenLabs characters used: trust-the-bible 1,128; whose-kingdom 929; you-are-that-man 860; one-story 974; the-verse-next-door 706; mark-in-a-minute 892; the-oldest-report 977; how-long 714. Total 7,180. Batch 1 of the rebuilds: bible-two-minutes 2,042; bible-in-a-minute 1,078; sixty-six-books 1,390; book-genesis 1,795; book-exodus 1,729 (8,034). Running total 15,214. Batch 2: book-leviticus 2,119; book-numbers 1,957; book-deuteronomy 1,981; book-joshua 1,743; book-judges 1,845 (9,645). Running total 24,859. Batch 3: book-ruth 1,643; book-1-samuel 1,984; book-2-samuel 1,800; book-nehemiah 1,849; book-psalms 1,651 (8,927). Running total 33,786.
+ElevenLabs characters used: trust-the-bible 1,128; whose-kingdom 929; you-are-that-man 860; one-story 974; the-verse-next-door 706; mark-in-a-minute 892; the-oldest-report 977; how-long 714. Total 7,180. Batch 1 of the rebuilds: bible-two-minutes 2,042; bible-in-a-minute 1,078; sixty-six-books 1,390; book-genesis 1,795; book-exodus 1,729 (8,034). Running total 15,214. Batch 2: book-leviticus 2,119; book-numbers 1,957; book-deuteronomy 1,981; book-joshua 1,743; book-judges 1,845 (9,645). Running total 24,859. Batch 3: book-ruth 1,643; book-1-samuel 1,984; book-2-samuel 1,800; book-nehemiah 1,849; book-psalms 1,651 (8,927). Running total 33,786. Batch 4: book-proverbs 1,808; book-isaiah 1,837; book-jeremiah 1,798; book-daniel 1,855; book-amos 1,829 (9,127). Running total 42,913. Credits left after batch 4: 38,115.
 
 ## On the site
 
@@ -38,4 +43,5 @@ James, 2026-11-26: "make the ones that you've already created go live", then "Ye
 
 - Pull request 646: the eight new films and batch 1 (13 films).
 - Pull request 647: batch 2 (18 films live).
+- Pull request 648: batch 3 (23 films live).
 - To publish: `node scripts/publish-narrated-films.mjs <slug> ...`, commit the three data files it changes, open a pull request, merge when CI is green. Video files are in the Vercel Blob store `livewell-films`; the live list is `scripts/narrated-films-live.json`.

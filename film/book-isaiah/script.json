@@ -1,0 +1,129 @@
+{
+  "title": "Isaiah: the Holy One who comforts",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-isaiah",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "holy",
+      "kicker": "The Holy One of Israel",
+      "level": 0.2,
+      "lines": [
+        "Isaiah spoke to the kings of Judah in the days of the Assyrian empire. His signature name for God comes from a vision: the Holy One of Israel.",
+        "Holy, holy, holy is the LORD of Hosts; all the earth is full of His glory.",
+        "Holiness exposes human pride. It also means God's commitment to his people."
+      ],
+      "scripture": {
+        "reference": "Isaiah 6:3",
+        "text": "Holy, holy, holy is the LORD of Hosts; all the earth is full of His glory.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The book has three major parts. The first speaks to Judah in the prophet's own day: judgment, threaded with promise.",
+        "From chapter forty, the voice speaks comfort to a people in exile. And the last chapters speak to a community back in the land, still waiting."
+      ],
+      "scripture": {
+        "reference": "Isaiah 40:1",
+        "text": "“Comfort, comfort My people,” says your God.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "trust",
+      "kicker": "Watch for: trust or ruin",
+      "level": 0.5,
+      "lines": [
+        "Again and again the kings of Judah have to choose between trusting God and trusting military power or foreign alliances. Ahaz chooses Assyria. Hezekiah prays.",
+        "The book's verdict is that faith is the only real security."
+      ],
+      "scripture": {
+        "reference": "Isaiah 7:9",
+        "text": "If you do not stand firm in your faith, then you will not stand at all.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "remnant",
+      "kicker": "Watch for: judgment, and what is left",
+      "level": 0.6,
+      "lines": [
+        "God's judgment in Isaiah is real and severe, and it falls on Judah and on every nation alike. But it isn't where the book ends.",
+        "Through it God preserves a remnant, a people who will return to him."
+      ],
+      "scripture": {
+        "reference": "Isaiah 1:18",
+        "text": "Though your sins are like scarlet, they will be as white as snow",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "servant",
+      "kicker": "Watch for: the king and the Servant",
+      "level": 0.85,
+      "lines": [
+        "Isaiah gives three portraits of the one through whom God will act. A royal child from David's line. A Servant who suffers for others. And an anointed messenger of good news.",
+        "But He was pierced for our transgressions.",
+        "Jewish interpreters have often read the Servant as Israel. The New Testament sees all three in Jesus."
+      ],
+      "scripture": {
+        "reference": "Isaiah 53:5",
+        "text": "But He was pierced for our transgressions",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "new",
+      "kicker": "Watch for: a world made new",
+      "level": 0.9,
+      "lines": [
+        "Isaiah sees Zion becoming the place where all nations come to learn God's ways. Israel's calling turns out to be for the sake of the whole world.",
+        "And the last chapters reach beyond Israel's history to new heavens and a new earth."
+      ],
+      "scripture": {
+        "reference": "Isaiah 65:17",
+        "text": "For behold, I will create new heavens and a new earth.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Isaiah is mostly poetry. Keep three horizons in view: the prophet's own day, the exile and return, and the far future.",
+        "The key chapters are one, six, seven, nine, thirty-seven, forty, fifty-three, and sixty-five."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Empires in this book come and go. One thing doesn't.",
+        "The word of our God stands forever."
+      ],
+      "scripture": {
+        "reference": "Isaiah 40:8",
+        "text": "the word of our God stands forever.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "The Holy One who comforts.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

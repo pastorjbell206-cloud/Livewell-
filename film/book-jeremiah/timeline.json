@@ -1,0 +1,162 @@
+{
+ "length": 134.1,
+ "chapters": [
+  {
+   "id": "prophet",
+   "kicker": "A prophet in the last days",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 18.3,
+   "lines": [
+    {
+     "text": "Jeremiah lived through the end of the world as his people knew it. He was called as a young man, and he spoke for about forty years while Judah slid from reform into denial, and from denial into ruin.",
+     "start": 2.6,
+     "end": 14.6
+    },
+    {
+     "text": "Then everything he had said came true.",
+     "start": 15.24,
+     "end": 17.4
+    }
+   ]
+  },
+  {
+   "id": "layout",
+   "kicker": "How it is laid out",
+   "level": 0.35,
+   "start": 17.5,
+   "end": 35.8,
+   "lines": [
+    {
+     "text": "It isn't a tidy life story. Poems of judgment, sermons, stories of arrests, acted signs, letters, and raw private prayers are gathered in seven parts.",
+     "start": 18.4,
+     "end": 29.46
+    },
+    {
+     "text": "And at its heart, in chapters thirty to thirty-three, stands a small book of comfort.",
+     "start": 30.0,
+     "end": 34.9
+    }
+   ]
+  },
+  {
+   "id": "temple",
+   "kicker": "Watch for: false safety",
+   "level": 0.5,
+   "start": 35.0,
+   "end": 53.62,
+   "lines": [
+    {
+     "text": "Jeremiah attacks what Judah trusted instead of God. The temple as a charm. Prophets who promised peace. Ritual without obedience.",
+     "start": 35.9,
+     "end": 44.94
+    },
+    {
+     "text": "He calls the temple a den of robbers, words Jesus later used. The forms of faith can become a hiding place from God.",
+     "start": 45.52,
+     "end": 52.72
+    }
+   ]
+  },
+  {
+   "id": "prayer",
+   "kicker": "Watch for: honest prayer",
+   "level": 0.65,
+   "start": 52.82,
+   "end": 73.72,
+   "lines": [
+    {
+     "text": "No other prophet lets you hear so much of his own pain. Jeremiah accuses God of deceiving him and curses the day he was born. Yet he can't hold the word in.",
+     "start": 53.72,
+     "end": 63.6
+    },
+    {
+     "text": "His message becomes a fire burning in my heart, shut up in my bones.",
+     "start": 64.14,
+     "end": 68.38
+    },
+    {
+     "text": "Faithfulness can include lament and protest brought straight to God.",
+     "start": 69.04,
+     "end": 72.82
+    }
+   ]
+  },
+  {
+   "id": "letter",
+   "kicker": "Watch for: a letter to the exiles",
+   "level": 0.8,
+   "start": 72.92,
+   "end": 90.12,
+   "lines": [
+    {
+     "text": "He writes to the exiles: build houses, seek the welfare of Babylon, and wait.",
+     "start": 73.82,
+     "end": 79.1
+    },
+    {
+     "text": "The famous promise of a future and a hope was spoken to people facing seventy years of exile. It's a promise through suffering, not a guarantee of success.",
+     "start": 79.76,
+     "end": 89.22
+    }
+   ]
+  },
+  {
+   "id": "covenant",
+   "kicker": "Watch for: a new covenant",
+   "level": 0.9,
+   "start": 89.32,
+   "end": 110.1,
+   "lines": [
+    {
+     "text": "In chapter thirty-one, God promises a new covenant: his law written on the heart, and sin forgiven.",
+     "start": 90.22,
+     "end": 96.6
+    },
+    {
+     "text": "I will put My law in their minds and inscribe it on their hearts.",
+     "start": 97.22,
+     "end": 100.64
+    },
+    {
+     "text": "The New Testament claims it as fulfilled, from the cup Jesus calls the new covenant to the letter to the Hebrews.",
+     "start": 101.18,
+     "end": 109.2
+    }
+   ]
+  },
+  {
+   "id": "start",
+   "kicker": "Where to start",
+   "level": 0.6,
+   "start": 109.3,
+   "end": 124.74,
+   "lines": [
+    {
+     "text": "Start at chapter one. Then the key chapters: seven, twenty, twenty-nine, thirty-one, thirty-six, and fifty-two.",
+     "start": 110.2,
+     "end": 117.18
+    },
+    {
+     "text": "And remember that its call to surrender to Babylon was a word for one moment, not a rule about politics.",
+     "start": 117.84,
+     "end": 123.84
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 123.94,
+   "end": 128.002,
+   "lines": [
+    {
+     "text": "Judgment is not God's last word.",
+     "start": 124.84,
+     "end": 127.102
+    }
+   ]
+  }
+ ]
+}
