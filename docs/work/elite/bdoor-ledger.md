@@ -25274,3 +25274,22 @@ Cut in chapter 21: Luke 1:32-33 and 1:52, which the New Testament does not draw 
 | The hard note: God says he found no one to stand in the gap, but Jeremiah was in Jerusalem in those years. Was there really no one? The readings in their holders' terms | 17-31 `hard` | ezekiel/22.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 22: nothing.
+
+## The plain notes on Ezekiel 23 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/23.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two sisters, Samaria and Jerusalem: the text paraphrased; quoted clauses at verses 4, 5-8, 9, 11, 12-21 | 1-21 | BSB | BSB text |
+| Background in `hearers` | 1-21 | ezekiel/23.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 3:8; 2 Kings 17:6 | 1-21 `later` | BSB | BSB text |
+| The lovers turned against her, and her sister's cup: the text paraphrased; quoted clauses at verses 22, 23-24, 25-29, 32, 33, 35 | 22-35 | BSB | BSB text |
+| Background in `hearers` | 22-35 | ezekiel/23.json `historical`, `cultural`, `literary` | Repository |
+| Later: Isaiah 51:17; Jeremiah 25:15 | 22-35 `later` | BSB | BSB text |
+| The hard note: How should a reader handle this chapter's sexual imagery and its violence against a woman's body? The readings in their holders' terms | 22-35 `hard` | ezekiel/23.json `hard` | Repository; the site takes no side |
+| Both sisters on trial: the text paraphrased; quoted clauses at verses 36, 37, 39, 40-44, 45-48, 49 | 36-49 | BSB | BSB text |
+| Background in `hearers` | 36-49 | ezekiel/23.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 7:31; Leviticus 18:21 | 36-49 `later` | BSB | BSB text |
+
+Cut in chapter 23: the deep note's hotline telephone number, replaced by the abusive-marriage care line and the shorter sexual-assault line, both byte for byte; an unsourced reading of verse 48, cut. The punishments of verses 25 to 29 named, not described.
