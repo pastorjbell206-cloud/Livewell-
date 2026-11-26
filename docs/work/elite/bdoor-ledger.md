@@ -23310,3 +23310,25 @@ Cut in chapter 2: nothing drawn to the New Testament.
 | The hard note: added later or the prophets' pattern (Amos 9, Hosea 14, Micah 7); 3:8-9 and purifying judgment; the humble remnant; judgment and joy not opposed | 14-20 `hard` | zephaniah/3.json `hard` | Repository; the readings in their holders' terms |
 
 Cut in chapter 3: an unsourced reading of 3:17 (quiet in his love as silent in his love) was cut before commit. The deep note's line to Pentecost is left out.
+
+## Haggai's book page (teaching introduction, 2026-11-26)
+
+Every claim in `client/public/bible/notes/haggai/intro.json`, field `teaching`. No web searches. Scripture is the BSB in the repository, matched by the four quotation checks (0 problems each) and by `validate-bible-notes.mjs`.
+
+| Claim | Where | Source | Checked by |
+|---|---|---|---|
+| Tenth of the Twelve; second shortest; four dated messages in 520 BC, Darius's second year; the stalled work; paneled houses; 1:5; obedience; 1:13; the discouraged builders; 2:9; 2:23 | in-a-minute | haggai/intro.json `overview`; BSB | Repository; BSB text |
+| Cyrus 539 BC and the return; altar and foundation, then the halt; Yehud; Darius 522 BC and Behistun; 520 BC; the temple finished 515 BC (Ezra 6:15); Ezra names both prophets | story | haggai/intro.json `setting`, `author` | Repository |
+| Haggai in Ezra 5:1 and 6:14; nothing of his family; the festival name, speculation; third person and an editor; 2:3 not requiring age; the dates of the four messages; finished before 515 BC | who | haggai/intro.json `author`, `date` | Repository; each view in its holders' terms |
+| Four dated messages; rebuke only in the first | built | haggai/intro.json `reading` | Repository |
+| 1:4; paneling and luxury; 1:5, 7; 1:6 (its clause); 1:9-11 paraphrased; the hardship question answered (Sinai covenant, Job, the psalmists, Jesus); no prosperity formula; 1:13; twenty-four days | houses | haggai/1.json `cultural`, `hard`; haggai/intro.json `reading`; the brief (no prosperity teaching); BSB | Repository; BSB text; stated as the brief asks |
+| 2:3 (its question); 2:4 (its words, in double quotes); 2:6; 2:8 (its clause); 2:9 (its first sentence); the readings of the latter glory | glory | haggai/2.json `hard`; BSB | Repository; BSB text; the readings in their holders' terms |
+| The priests' ruling (2:12-13 paraphrased); 2:14 (its clause); 2:19 (its clause); 2:23 (its clause); the signet ring; Jeremiah 22:24 and Jehoiachin; Zerubbabel his grandson | signet | haggai/2.json `cultural`, `historical`; haggai/intro.json `christ`; BSB | Repository; BSB text |
+| Hebrews 12:26; Matthew 1:12-13 and Luke 3:27; only these lines | new-testament | haggai/intro.json `christ`; BSB | Repository; BSB text; only lines the New Testament draws |
+| How to read: the dates; one rebuke; no formula; 1:13 | readers | haggai/intro.json `reading` | Repository |
+| Hard passages (5) and key words (10): from the chapter notes | lists | haggai/1.json, 2.json | Repository |
+| Timeline (7): 539 (introduction); 536 or soon after (ezra/intro.json, 536 BC); 522; the three dated months of 520; 515 | timeline | haggai/intro.json `date`, `setting`; ezra/intro.json | Repository |
+| The map: Jerusalem, at the point this site's maps use, for the temple, with the note that Haggai does not name the city | map | the site's points; BSB (1:4; 2:9) | Persia and Babylon left off; no borders |
+| Go deeper: seven pages | deeper | bible/guides/reading-prophets.json, empires.json, kings-of-israel-and-judah.json; bible/doctrines.json (Tabernacle, Temple, and God's Presence; Exile and Restoration; Holiness; Money and Possessions) | Repository; every page live |
+
+Cut from the book page: the introduction's line from the latter glory to John 2:19-21, which the New Testament does not draw from Haggai (the Christian reading of Jesus' presence in the temple is given only as a reading).
