@@ -443,6 +443,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Numbers in seven moving pictures: the wilderness, two generations, God at the center of the camp, the refusal at Kadesh, Balaam's blessing, the new generation, and where to start reading.",
     },
+    "book-deuteronomy": {
+      title: "Deuteronomy: love the LORD with all your heart: Bible Explorer",
+      description:
+        "The whole book of Deuteronomy in seven moving pictures: Moses' farewell, three addresses, the Shema, chosen in love, laws that take the side of the weak, the call to choose life, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

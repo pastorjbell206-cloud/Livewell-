@@ -1529,3 +1529,23 @@ The wars, plagues and judgments are named and drawn nowhere. The book page's own
 | pictures | No war, plague, snake, spear or death drawn; God not drawn: the cloud and the light have no one in them; the grapes are the gold mark of the refusal | The drawing (`scenes/book-numbers.tsx`); sheets of the finished frames read, the scouts' pole and the cloud redrawn after them |
 | left out | Korah; Miriam's skin disease; the bronze snake; Moses at the rock; Peor and Phinehas; Midian (chapter 31); the test of 5:11-31 | Deliberate; the book page is linked |
 | length | Younger 2:43.2, older 3:06.5 | `audio/manifest.json` |
+
+### Deuteronomy: love the LORD with all your heart (`book-deuteronomy`)
+
+The command against the peoples of Canaan is named at both levels and drawn nowhere, with the book page's own verdict at both levels: "No one may use these chapters to justify violence against any person or people". Moses' death is told and not drawn.
+
+| Where | Claim | Checked |
+|---|---|---|
+| all seven, verses | Deuteronomy 1:1; 5:3; 6:5; 7:8; 24:15; 30:19; 8:3 (some trimmed to a clause) | BSB, by the validator; all Deuteronomy |
+| 1 Moses says goodbye | Almost all speech; Moses at the end of his life on the plains of Moab, preaching to the children of the generation that left Egypt; he tells the story again, gives the law again, pleads with them to hold on to God when he is gone | The Deuteronomy book page, `teaching` "Deuteronomy in a minute", nearly word for word |
+| 2 How it is laid out | Three addresses and a farewell; the Ten Commandments and laws at the center; one small word, today | The book page's `structure` and `teaching` "How Deuteronomy is built" (5:3). Six panels of 4, 7, 15, 2, 2 and 4 chapters (the structure's ranges rounded); the gold rule under the second, where the Shema stands |
+| 3 The Shema | Hear, O Israel; one God loved with heart, soul and strength; love a settled loyalty shown in listening and obeying; the words fill ordinary life; said morning and evening for more than two thousand years; Jesus' greatest command | The book page's `teaching` "The Shema: one God, loved with everything" and "How the New Testament reads Deuteronomy", nearly word for word; BSB Deuteronomy 6:4-9 |
+| 4 Chosen in love | Not for size or goodness, but because the LORD loved them; to be chosen a task, never a licence to look down on anyone; God loves the foreigner; the great duty to remember | The book page's `teaching` "Chosen in love, and told to remember", nearly word for word; BSB Deuteronomy 7:7-8; 9:6; 10:18-19 |
+| 5 Whose side the laws take | Widow, orphan, foreigner, debtor, worker paid before sunset; the command against the peoples of Canaan the hardest page, read in more than one way; the verdict on violence (both levels) | The book page's `teaching` "Laws for life in the land" and "The hard pages" ("No one may use these chapters to justify violence against any person or people"), whole. Held by `films.test.tsx` |
+| 6 Choose life | Chapter 28 speaks to a nation about a land, never God's verdict on one person's illness or loss; God will change the heart; choose life; Moses sees the land he will not enter | The book page's `teaching` "Blessings, curses, and ‘choose life’" and "Deuteronomy in a minute"; BSB Deuteronomy 30:6, 19 |
+| 7 Where to start | Chapters 6, 30 and 34 (younger); key chapters 1, 4, 8, 12, 18 and 34; read it as preaching, aloud; God's love first, obedience answering | The book page's `keyChapters` and `teaching` "How to read Deuteronomy", nearly word for word; BSB Deuteronomy 8:3 |
+| differ | Three readings of the command, each with a cost; one land and one time, no modern nation, never renewed; the death penalties not given to the church; the prophet like Moses; authorship; the Shema and the Trinity; the curses never explain the sufferings of the Jewish people; no side | The book page's `teaching` "The hard pages", "Laws for life in the land", "The Shema ...", "Blessings, curses ..." |
+| care | "This part of the story has war and death in it. ..." | The Land and the Judges stop's care line, whole |
+| pictures | No war, city, weapon or death drawn; God not drawn; the case on the doorpost is the Shema's gold mark | The drawing (`scenes/book-deuteronomy.tsx`); sheets of the finished frames read, Moses moved fully into two frames after them |
+| left out | The golden calf retold; the king's law and the prophet in the captions; the laws of chapters 13, 17, 21 and 22 in the captions; the song and the blessing of the tribes | Deliberate; the book page is linked |
+| length | Younger 2:56.2, older 3:09.1 | `audio/manifest.json` |

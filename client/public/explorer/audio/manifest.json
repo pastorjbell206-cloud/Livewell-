@@ -3895,6 +3895,116 @@
     }
    ]
   },
+  "book-deuteronomy": {
+   "title": {
+    "file": "book-deuteronomy/title.mp3",
+    "hash": "e14c9b5f59125a6b2cd5",
+    "seconds": 3.87,
+    "bytes": 23828
+   },
+   "younger": [
+    {
+     "id": "farewell",
+     "file": "book-deuteronomy/younger/01-farewell.mp3",
+     "hash": "6faf579db666e6de7020",
+     "seconds": 25.62,
+     "bytes": 154292
+    },
+    {
+     "id": "layout",
+     "file": "book-deuteronomy/younger/02-layout.mp3",
+     "hash": "767bd4f404d658785b3f",
+     "seconds": 24.86,
+     "bytes": 149828
+    },
+    {
+     "id": "shema",
+     "file": "book-deuteronomy/younger/03-shema.mp3",
+     "hash": "9a3ccc62207d3fbacaf1",
+     "seconds": 26.23,
+     "bytes": 157892
+    },
+    {
+     "id": "chosen",
+     "file": "book-deuteronomy/younger/04-chosen.mp3",
+     "hash": "3433c3759704aed2edac",
+     "seconds": 23.07,
+     "bytes": 139028
+    },
+    {
+     "id": "laws",
+     "file": "book-deuteronomy/younger/05-laws.mp3",
+     "hash": "8c715808e8469a61474b",
+     "seconds": 26.64,
+     "bytes": 160484
+    },
+    {
+     "id": "choose",
+     "file": "book-deuteronomy/younger/06-choose.mp3",
+     "hash": "859daa52a382b65bc63d",
+     "seconds": 26.26,
+     "bytes": 158180
+    },
+    {
+     "id": "start",
+     "file": "book-deuteronomy/younger/07-start.mp3",
+     "hash": "a68555fb9383597f0f61",
+     "seconds": 19.32,
+     "bytes": 116420
+    }
+   ],
+   "older": [
+    {
+     "id": "farewell",
+     "file": "book-deuteronomy/older/01-farewell.mp3",
+     "hash": "e5d70f2c23c0590815ef",
+     "seconds": 26.68,
+     "bytes": 160628
+    },
+    {
+     "id": "layout",
+     "file": "book-deuteronomy/older/02-layout.mp3",
+     "hash": "25588a0c8343d014be3e",
+     "seconds": 25.58,
+     "bytes": 154004
+    },
+    {
+     "id": "shema",
+     "file": "book-deuteronomy/older/03-shema.mp3",
+     "hash": "980423e08f01a7d9ba5b",
+     "seconds": 28.31,
+     "bytes": 170420
+    },
+    {
+     "id": "chosen",
+     "file": "book-deuteronomy/older/04-chosen.mp3",
+     "hash": "7185aa170b5e917aad98",
+     "seconds": 23.47,
+     "bytes": 141476
+    },
+    {
+     "id": "laws",
+     "file": "book-deuteronomy/older/05-laws.mp3",
+     "hash": "147228f48dbf5151964a",
+     "seconds": 28.57,
+     "bytes": 172004
+    },
+    {
+     "id": "choose",
+     "file": "book-deuteronomy/older/06-choose.mp3",
+     "hash": "9124b0febaaca0292de9",
+     "seconds": 28.7,
+     "bytes": 172724
+    },
+    {
+     "id": "start",
+     "file": "book-deuteronomy/older/07-start.mp3",
+     "hash": "d08ac538a4732ec2f428",
+     "seconds": 23.63,
+     "bytes": 142340
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",

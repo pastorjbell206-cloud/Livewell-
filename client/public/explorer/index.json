@@ -1843,6 +1843,23 @@
       "book": "numbers"
     },
     {
+      "slug": "book-deuteronomy",
+      "title": "Deuteronomy: love the LORD with all your heart",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "The book of Moses saying goodbye to God's people: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "Deuteronomy as a whole book: Moses' farewell, three addresses, the Shema, chosen in love, laws that take the side of the weak, the call to choose life, and where to begin."
+      },
+      "mark": "book-deuteronomy",
+      "frames": 7,
+      "stops": [
+        "sinai"
+      ],
+      "cards": [],
+      "book": "deuteronomy"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

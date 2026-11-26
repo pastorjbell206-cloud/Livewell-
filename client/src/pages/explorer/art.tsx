@@ -1139,6 +1139,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <Shape d="M12,84l8,-14l8,14ZM34,84l8,-14l8,14ZM56,84l8,-14l8,14Z" tone="c" off={0.8} />
     </>
   ),
+  /* Deuteronomy: a doorpost with the words fixed to it, the case gold. */
+  "book-deuteronomy": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <Shape d="M24,84V24H76V84H62V38H38V84Z" tone="c" off={0.8} />
+      <path className="pl-m" d="M30,46h5v18h-5Z" />
+      <path className="pl-l" d="M30,46h5v18h-5Z" />
+      <path className="pl-l" d="M24,24L50,12L76,24" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

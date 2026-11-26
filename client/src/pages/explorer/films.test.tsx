@@ -1741,6 +1741,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-1-john",
     "book-leviticus",
     "book-numbers",
+    "book-deuteronomy",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2591,5 +2592,20 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|spear|plague|snake|slaughter/i);
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/spear|battle|plague|snake|serpent|body|bodies|sword|fire/i);
     expect(text(f)).not.toMatch(/\b(Palestin|Gaza|State of Israel|Israel today|America|Iran)/i);
+  });
+
+  it("Deuteronomy names its hardest page at both levels in the book page's words, draws no war, and reads no one's loss as a curse", () => {
+    const f = filmFile("book-deuteronomy");
+    expect(f.care).toBe(filmFile("book-joshua").care);
+    const laws = f.frames.find(x => x.id === "laws")!;
+    expect(laws.younger).toContain("No one may use these chapters to justify violence against any person or people.");
+    expect(laws.older).toContain("No one may use these chapters to justify violence against any person or people.");
+    expect(f.frames.find(x => x.id === "choose")!.older).toContain("never God's verdict on one person's illness or loss");
+    expect(f.differ?.text).toContain("names no modern nation, people or conflict");
+    expect(f.differ?.text).toContain("The curses of chapter 28 never explain the sufferings of the Jewish people; that reading is false.");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|destroy/i);
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|battle|army|fire|body|grave/i);
   });
 });
