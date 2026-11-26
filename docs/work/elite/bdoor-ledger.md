@@ -23998,3 +23998,21 @@ Cut in chapter 54: the deep note's Christian link to Psalm 22:1 on Jesus' lips i
 | Knowing a God beyond understanding; humility, not silence | 6-13 `hard` | isaiah/55.json `hard` | Repository |
 
 Cut in chapter 55: John 7:37 and Revelation 22:17 are left out, because the deep note itself calls those links thematic and the New Testament does not quote this chapter there.
+
+## The plain notes on Isaiah 56 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/56.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 56:1-8 (verse 3's inner speech paraphrased) | 1-8 | BSB | BSB text |
+| Opens chapters 56 to 66; the question of who belongs | 1-8 | isaiah/56.json `story` | Repository |
+| After the return; temple finished about 516 or 515 BC; the traditional reading | 1-8 | isaiah/56.json `historical` | Repository |
+| Deuteronomy 23; eunuchs at court, often against their will; 39:7; the dry tree; yad vashem and the memorial founded 1953; the Sabbath three times | 1-8 | isaiah/56.json `cultural`, `historical` | Repository |
+| Mark 11:17 (its inner quotation); Acts 8:27 (its clause) | 1-8 `later` | BSB; isaiah/56.json `christ` | BSB text |
+| Deuteronomy 23 and the three readings; Ruth | 1-8 `hard` | isaiah/56.json `hard` | Repository |
+| 56:9-12 (verse 12's song paraphrased) | 9-12 | BSB | BSB text |
+| Watchdogs; the mocking call; the leaders' own words; unit to 57:13; the line through Israel itself | 9-12 | isaiah/56.json `cultural`, `literary`, `story` | Repository |
+| Ezekiel 34:2 (its inner words); Jeremiah 23:1 (its words) | 9-12 `later` | BSB | BSB text |
+
+Cut in chapter 56: a draft `later` line on John 10:11-13 was replaced by Jeremiah 23:1, because the New Testament does not tie the good shepherd to these verses. The Acts 8 line names the Ethiopian eunuch without claiming the New Testament cites verse 3.
