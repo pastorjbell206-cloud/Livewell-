@@ -892,6 +892,16 @@ differ in is said under each book. Each was then edited (records in
   every criticism word for word, fact diff passed on all twenty files;
   rebuilt, still 193 pages, `--verify` identical (47,245 words; 243,254
   characters).
+- **Change Without Casualties** (`change-without-casualties`), the first of
+  the three Hard Issues booklets. The PDF and EPUB carry the same text: the
+  comparison found only running heads (here a chapter's title), page numbers,
+  the repeated "REFLECTION QUESTIONS" label and pull quotes out of order. As
+  in the original PDF, each chapter's file ends with the next chapter's
+  label ("CHAPTER ONE" closes the introduction) and the closing Scripture
+  line is set as a paragraph; the typesetter carries both as they are. The
+  PDF's fuller copyright notice is used. 37 pages became 40
+  (`client/src/data/booklets.ts` says 40). `--verify`: identical (6,466
+  words; 34,332 characters).
 
 ### The apparatus
 

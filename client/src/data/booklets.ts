@@ -56,7 +56,7 @@ export const BOOKLETS: Booklet[] = [
     title: "Change Without Casualties",
     subtitle: "A Playbook for Introducing Major Ministry Decisions",
     note: "A good decision delivered badly still costs you people. Here is how to deliver it.",
-    pages: 37,
+    pages: 40,
     pdf: "/ebook/change-without-casualties/Change-Without-Casualties.pdf",
     epub: "/ebook/change-without-casualties/Change-Without-Casualties.epub",
   },
