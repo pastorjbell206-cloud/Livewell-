@@ -22388,3 +22388,19 @@ Cut in chapter 22: nothing beyond the policy on lines to Christ. No care line is
 | The hard note: specific or round; Tyre's recovery; Ezra 3:7; the readings of verse 18; no side | 15-18 `hard` | isaiah/23.json `hard` | Repository; each reading in its holders' terms |
 
 Cut in chapter 23: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 24 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 24:1-13 (24:1's clause before the dash) | 1-13 | BSB | BSB text |
+| From the map to the globe; chapters 24 to 27; the Isaiah apocalypse and its dating (traditional, with Babylon in 689 BC; Duhm's second century; the Persian period); the Isaiah Scroll; the unnamed city and its identifications; the everlasting covenant as Noah's | 1-13 | isaiah/24.json `story`, `historical`, `hard` | Repository; each view in its holders' terms |
+| Genesis 9:16; Hosea 4:3 | 1-13 `later` | isaiah/24.json `hard` (Genesis 9); BSB | BSB text |
+| The hard note: the covenant with the Creator; Romans 2:14-15; vision and pattern; no delight; the feast next; not a key for reading any disaster today | 1-13 `hard` | isaiah/24.json `hard`; the brief | Repository |
+| 24:14-23 (24:16's song inside the BSB's speech marks; first drafted with a nested quotation and corrected) | 14-23 | BSB | BSB text |
+| The prophet unable to sing; terror, pit and snare; the windows of heaven and the flood; the host of heaven as spiritual powers; the sun and moon ashamed; Zion | 14-23 | isaiah/24.json `summary`, `story` | Repository |
+| Jeremiah 48:43 (inside the BSB's speech marks); Genesis 7:11; Revelation 21:23 | 14-23 `later` | BSB | BSB text |
+
+Cut in chapter 24: nothing. No care line is needed in this chapter.
