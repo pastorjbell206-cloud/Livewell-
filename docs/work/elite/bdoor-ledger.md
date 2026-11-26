@@ -21784,3 +21784,23 @@ Cut in chapter 6: the deep note's lines beyond what the New Testament draws (the
 | 2 Chronicles 28:20 (first typed inexactly, caught and corrected); Isaiah 10:5 | 18-25 `later` | BSB | BSB text |
 
 Cut in chapter 7: nothing beyond the policy on lines to Christ; Matthew's line is the New Testament's own. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 8 (2026-11-25)
+
+`client/public/bible/notes/isaiah/plain/8.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 8:1-10 | 1-10 | BSB | BSB text |
+| 734 to 732; the name's meaning; the witnessed scroll; 732 BC; Uriah the priest and 2 Kings 16:10-16; Shiloah and the Gihon; Siloam; Immanuel twice | 1-10 | isaiah/8.json `historical`, `cultural`, `literary` | Repository |
+| John 9:7; 2 Kings 20:20 | 1-10 `later` | isaiah/8.json `historical`; BSB | BSB text |
+| 8:11-15 | 11-15 | BSB | BSB text |
+| Fear and rumor; sanctuary and stone | 11-15 | isaiah/8.json `summary`, `literary` | Repository |
+| 1 Peter 3:14-15; Romans 9:33 | 11-15 `later` | BSB | BSB text; the New Testament's own lines |
+| 8:16-22 (8:20's cry in double quotes for its exclamation) | 16-22 | BSB | BSB text |
+| The disciples; binding and sealing; necromancy and the law; whispering voices; Endor | 16-22 | isaiah/8.json `cultural`, `story` | Repository |
+| Hebrews 2:13; Deuteronomy 18:11 | 16-22 `later` | BSB | BSB text |
+| The hard note: necromancy in the ancient world; the law; Endor read two ways; forbidden and dangerous; grief's longing | 16-22 `hard` | isaiah/8.json `hard` | Repository |
+| Care line, the grief line ("Grief is not a lack of faith...") | 16-22 `hard` | Reused byte for byte from 1-samuel/plain/1.json, read by script | care.mjs |
+
+Cut in chapter 8: nothing beyond the policy on lines to Christ.
