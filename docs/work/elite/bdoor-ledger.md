@@ -25453,3 +25453,18 @@ Cut in chapter 25: Revelation's cup of wrath, which the New Testament does not t
 | Matthew 23:37, Acts 7:48, Micah 3:12, 2 Kings 22:12 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 26: nothing. Acts 7:48 is named only as Stephen speaking against trust in the temple, not as a reading of this chapter.
+
+## The plain notes on Jeremiah 27 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/27.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 27:1-22 (verse 22 partly paraphrased) | all | BSB | BSB text |
+| The date in verse 1: Jehoiakim in most manuscripts, absent in the Greek, Zedekiah in the BSB | 1-11 | jeremiah/27.json `historical` | Repository |
+| The envoys and a planned revolt; the yoke as sign | 1-11 | jeremiah/27.json `summary`, `cultural` | Repository |
+| Vessels of 597 BC; pillars and sea broken up (2 Kings 25:13) | 12-22 | jeremiah/27.json `historical`; BSB | Repository, BSB text |
+| Collaborating with a tyrant: 37:13-14; a word for one time; Exodus 1 and Daniel 3 | 12-22 `hard` | jeremiah/27.json `hard`; the coordinator's direction | Repository |
+| Daniel 2:21, Ezra 1:7 (clauses); Jeremiah 28:10, 2 Kings 25:13 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 27: nothing.
