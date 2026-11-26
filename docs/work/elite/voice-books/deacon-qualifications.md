@@ -4,7 +4,7 @@ James, 2026-11-25: "i also want you to go through all the book, pdfs, and downlo
 
 ## Method
 
-A short practical booklet for pastors and elders (an introduction, six chapters, a conclusion and an appendix of selection tools): 59 long dashes in the 6,994 words of his running prose before the reflection questions (8.4 per 1,000 words, against his limit of 4 to 6). So the work was the dashes.
+A short practical booklet for pastors and elders (an introduction, six chapters, a conclusion and an appendix of selection tools): 59 long dashes in the 6,340 words of his running prose before the reflection questions (9.3 per 1,000 words, against his limit of 4 to 6). So the work was the dashes.
 
 What an edit may be: an em-dash recast as a comma, a semicolon, a colon before a real list or a gloss, or brackets; a stack of fragments joined into one sentence where no new word is needed. Nothing else: no word was added, removed or replaced, and no sentence, fact, example or opinion was added or taken out. Edits are exact old/new pairs, each required to match once in the chapter's file, applied to the original text every time (`git diff b73de6b1 -- content/books-src/deacon-qualifications/` shows every change). One commit per chapter. In the tables an "edit" is one changed paragraph, which may hold several dashes.
 
@@ -210,7 +210,7 @@ Fact diff: **PASS**. Fixed blocks (title, subtitle, headings, pull quote, block 
 
 ## The whole book
 
-All nine files were edited. In his running prose (before the reflection questions): 6,994 words before and after; em-dashes 59 before, 3 after (two before a Scripture reference, one inside the quotation of Colossians 1:26-27); paragraphs unchanged in number. The fact diff passed on all nine.
+All nine files were edited. In his running prose (before the reflection questions): 6,340 words before and after; em-dashes 59 before, 3 after (two before a Scripture reference, one inside the quotation of Colossians 1:26-27); paragraphs unchanged in number. The fact diff passed on all nine.
 
 **Every edit is punctuation.** Each recasts a dash as a comma, a colon, a semicolon or brackets. No word was added, removed or replaced. Two pairs of dashes became brackets (chapters 2 and 5) ("aischrokerdes (literally “pursuing shameful gain”) addresses ..."; "a Scripture charge (Acts 6:1–7 and 1 Timothy 3:8–13 are the natural texts) that frames the office").
 
