@@ -21987,3 +21987,22 @@ Cut in chapter 17: nothing beyond the narrowing above. No care line is needed in
 | Zephaniah 3:10 | 4-7 `later` | BSB | BSB text |
 
 Cut in chapter 18: Acts 8:27, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 19 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/19.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 19:1-10 | 1-10 | BSB | BSB text |
+| Egypt under the Kushite kings; trust in Egypt; the Third Intermediate Period; Piye about 728 BC; the harsh masters (Kushites, Esarhaddon and Ashurbanipal in the 670s and 660s and Thebes about 663, or the Persians), no one named; the Nile, flax and linen | 1-10 | isaiah/19.json `story`, `historical` | Repository; the identifications stated |
+| Exodus 12:12; Isaiah 30:2 | 1-10 `later` | BSB | BSB text |
+| 19:11-17 | 11-17 | BSB | BSB text |
+| Egypt's wisdom; Zoan and Memphis; the counselors; verse 16 as war-speech for panic, not a statement about women | 11-17 | isaiah/19.json `historical` | Repository |
+| Jeremiah 46:25 (inside the BSB's speech marks) | 11-17 `later` | BSB | BSB text |
+| 19:18-25 (19:24's clause after the dash; 19:25's words in double quotes, inside the BSB's speech marks) | 18-25 | BSB | BSB text |
+| Egypt's own exodus; Assyria named as God's; the language of Canaan; City of the Sun or of Destruction and the Isaiah Scroll; Elephantine; Onias and Leontopolis and Josephus; the date debate; the titles of Israel | 18-25 | isaiah/19.json `story`, `historical`, `hard` | Repository; each view in its holders' terms |
+| Exodus 3:7; Psalm 87:4 | 18-25 `later` | BSB | BSB text |
+| The hard note: history in stages, the final age, a later expansion; the horizon; not read of any nation or politics of the present day | 18-25 `hard` | isaiah/19.json `hard`; the brief | Repository |
+
+Cut in chapter 19: nothing beyond the policy on lines to Christ. No care line is needed in this chapter.
