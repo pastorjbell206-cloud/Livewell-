@@ -1,0 +1,123 @@
+{
+  "title": "Judges: a people coming apart",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Where Christians differ the old film's own sentences are kept nearly word for word. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-judges",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "dark",
+      "kicker": "The dark years",
+      "level": 0.2,
+      "lines": [
+        "Judges covers the years after Joshua and before the kings.",
+        "A generation grows up not knowing the LORD. And the book becomes an honest account of a people coming apart, and of a God who wouldn't give them up."
+      ],
+      "scripture": {
+        "reference": "Judges 2:10",
+        "text": "another generation rose up who did not know the LORD or the works that He had done for Israel.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "An opening shows the land half taken and sets out a pattern. Then come the judges: from Othniel to Gideon, from Abimelech to Jephthah, and Samson.",
+        "The last five chapters have no judge at all. The beginning and the end answer each other."
+      ],
+      "scripture": {
+        "reference": "Judges 2:16",
+        "text": "Then the LORD raised up judges",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "wheel",
+      "kicker": "Watch for: the wheel",
+      "level": 0.5,
+      "lines": [
+        "Chapter two sets out a wheel. Israel serves other gods. Raiders come. The people cry out. And God raises up a judge. Then it starts again.",
+        "Mercy holds the wheel up, but it runs downhill. It's a spiral, not a circle."
+      ],
+      "scripture": {
+        "reference": "Judges 2:18",
+        "text": "for the LORD was moved to pity by their groaning",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "deliverers",
+      "kicker": "Watch for: unlikely deliverers",
+      "level": 0.65,
+      "lines": [
+        "Look who God uses. A left-handed man. A woman. A farmer threshing in a winepress. The son of a prostitute. And a man who breaks nearly every vow.",
+        "The deliverance is God's, carried out through very human hands."
+      ]
+    },
+    {
+      "id": "flaws",
+      "kicker": "Watch for: gifts are not goodness",
+      "level": 0.75,
+      "lines": [
+        "The Spirit of the LORD comes on Gideon, Jephthah, and Samson. But power isn't character. Gideon makes an object all Israel worships. Jephthah's rash vow costs his daughter.",
+        "Judges never treats God's gift as approval."
+      ],
+      "scripture": {
+        "reference": "Judges 8:27",
+        "text": "it became a snare to Gideon and his household.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "no-king",
+      "kicker": "Watch for: no king in Israel",
+      "level": 0.9,
+      "lines": [
+        "The last chapters tell of a stolen idol, an outrage at Gibeah, and a civil war. The book presents them as the depths, never as a pattern.",
+        "In those days there was no king in Israel; everyone did what was right in his own eyes."
+      ],
+      "scripture": {
+        "reference": "Judges 21:25",
+        "text": "In those days there was no king in Israel; everyone did what was right in his own eyes.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where readers differ",
+      "level": 0.55,
+      "lines": [
+        "Readers weigh several of these stories in more than one way, and they differ on what that last line is asking for: a king, the LORD's own rule, or both.",
+        "On every reading, the book gives no nation, no church, and no person a warrant for violence against anyone."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapter two, slowly. Then the key chapters: four, six, nine, eleven, sixteen, and twenty-one.",
+        "Watch the refrains. Don't take the judges as models. And don't read the hard chapters alone."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Judges doesn't end with a solution. It ends with a need."
+      ],
+      "titleCard": [
+        "It ends with a need.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

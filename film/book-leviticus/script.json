@@ -1,0 +1,131 @@
+{
+  "title": "Leviticus: living near a holy God",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Where Christians differ the old film's own sentences are kept nearly word for word. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-leviticus",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "near",
+      "kicker": "The question it answers",
+      "level": 0.2,
+      "lines": [
+        "Leviticus begins where Exodus ends. The tent is built, and God's glory fills it, so that even Moses can't go in.",
+        "So here's the question. How can a holy God live among people who aren't holy, and the people live? This book is God's own answer.",
+        "I will walk among you and be your God, and you will be My people."
+      ],
+      "scripture": {
+        "reference": "Leviticus 26:12",
+        "text": "I will walk among you and be your God, and you will be My people.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "It has six parts. The offerings. The priests. Clean and unclean. The Day of Atonement, right at the center. Holiness in all of life. And vows.",
+        "The first half is about how to come near to God. The second is about how to live near him."
+      ],
+      "scripture": {
+        "reference": "Leviticus 19:2",
+        "text": "Be holy because I, the LORD your God, am holy.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "gifts",
+      "kicker": "Watch for: gifts brought near",
+      "level": 0.5,
+      "lines": [
+        "The Hebrew word for an offering means something brought near. There were five kinds, from the burnt offering given whole to the peace offering shared at a family meal.",
+        "God himself gives the means of atonement. And the poor could bring two birds, or flour."
+      ],
+      "scripture": {
+        "reference": "Leviticus 4:31",
+        "text": "the priest will make atonement for him, and he will be forgiven.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "clean",
+      "kicker": "Watch for: holy and clean",
+      "level": 0.6,
+      "lines": [
+        "Clean and unclean are about being fit to come near the holy place. Unclean doesn't mean sinful. A new mother or a mourner had done nothing wrong, and it ended with time and washing.",
+        "No one should use this book to call another person dirty."
+      ],
+      "scripture": {
+        "reference": "Leviticus 10:10",
+        "text": "You must distinguish between the holy and the common",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "atonement",
+      "kicker": "Watch for: the Day of Atonement",
+      "level": 0.8,
+      "lines": [
+        "Once a year the high priest, in plain linen, went behind the curtain into the Most Holy Place. And a goat carried the people's confessed sins away into the wilderness.",
+        "Jews still keep the day as Yom Kippur. Christians read it in the light of Jesus, as the book of Hebrews does."
+      ],
+      "scripture": {
+        "reference": "Leviticus 16:30",
+        "text": "because on this day atonement will be made for you to cleanse you",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "neighbor",
+      "kicker": "Watch for: love your neighbor",
+      "level": 0.9,
+      "lines": [
+        "Then holiness leaves the tent for the field, the court, and the shop. Leave the edges of your field for the poor. Pay wages the same day. Judge fairly. Love the foreigner, because you were foreigners in Egypt.",
+        "And at the center of it all:",
+        "Love your neighbor as yourself. I am the LORD."
+      ],
+      "scripture": {
+        "reference": "Leviticus 19:18",
+        "text": "love your neighbor as yourself. I am the LORD.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "All Christians read Leviticus as God's word, and none of them offer its sacrifices, because Christ offered one sacrifice for sins for all time. They differ on how its laws apply now.",
+        "On any reading, nothing here gives anyone a reason for contempt toward any person."
+      ]
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start with chapters sixteen and nineteen. Then the key chapters: one, ten, eleven, seventeen, twenty-five, and twenty-six.",
+        "Read it as the working rules of a sacred house."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "It asks what it would mean for a whole life to belong to God."
+      ],
+      "titleCard": [
+        "A whole life that belongs to God.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
