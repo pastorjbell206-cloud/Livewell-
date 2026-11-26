@@ -25757,3 +25757,19 @@ Cut in chapter 34: John 10 and Luke 15 and 19:10 as fulfillments, which the New 
 | The hard note: Isn't it troubling to celebrate the destruction of a whole people, and are Edom's descendants still under this curse? The readings in their holders' terms | 1-15 `hard` | ezekiel/35.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 35: nothing; no curse on any modern people stated plainly.
+
+## The plain notes on Ezekiel 36 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/36.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| The mountains of Israel will bear fruit again: the text paraphrased; quoted clauses at verses 2-5, 7, 8, 9-11, 16-18, 20 | 1-21 | BSB | BSB text |
+| Background in `hearers` | 1-21 | ezekiel/36.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 18:28; Psalm 79:10 | 1-21 `later` | BSB | BSB text |
+| A new heart and a new spirit: the text paraphrased; quoted clauses at verses 22, 23, 24, 25, 26, 27, 28, 31-32, 35, 38 | 22-38 | BSB | BSB text |
+| Background in `hearers` | 22-38 | ezekiel/36.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 31:33; Deuteronomy 30:6 | 22-38 `later` | BSB | BSB text |
+| The hard note: Who is this promise for: the Jews who returned from Babylon, the church, or a future restoration of Israel? The readings in their holders' terms | 22-38 `hard` | ezekiel/36.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 36: John 3:5 beside the water and the Spirit, which the New Testament does not draw from Ezekiel 36; Romans 11 named only as part of one reading. No claim about any modern state or border.
