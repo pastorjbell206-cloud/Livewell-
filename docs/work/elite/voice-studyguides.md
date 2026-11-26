@@ -37,7 +37,7 @@ Scripts outside the repository, in `/home/user/voice-sg/`:
   The counts include real verdicts and the initials of names split by the counter ("C. S. Lewis"), so read them as direction, not a grade.
 - **The site's gates, after each guide:** `validate-studyguides.mjs`, `validate-no-emdash.mjs`, `validate-grow-voice.mjs`, `validate-grow-links.mjs`, the topics index check and `validate-topics.mjs`, `validate-catalogue.mjs`, the studyguides index rebuilt (`build-studyguides-index.mjs`, unchanged unless a guide's top summary changed), the search index check, and a forbidden-word and exclamation scan of each changed field.
 
-## The guides done (51)
+## The guides done (68)
 
 | Guide | Words before | after | Short sentences before | after | Runs before | after | Not X. Y. before | after | Edits | Fields changed | Fact diff |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -92,7 +92,24 @@ Scripts outside the repository, in `/home/user/voice-sg/`:
 | Singleness: A Bible Study for the Unmarried | 9,985 | 9,985 | 78 | 72 | 7 | 4 | 16 | 15 | 3 | 3 | PASS |
 | Questions Skeptics Ask: A Study for Doubters | 10,436 | 10,436 | 90 | 88 | 12 | 11 | 9 | 9 | 1 | 1 | PASS |
 | Spiritual Warfare: A Bible Study on the Unseen Battle | 11,337 | 11,338 | 108 | 103 | 16 | 13 | 29 | 26 | 4 | 4 | PASS |
-| **51 guides** | 624,909 | 624,963 | 4779 | 4372 | 531 | 320 | 939 | 887 | 220 | | |
+| Suffering: A Bible Study for When Life Does Not Make Sense | 10,425 | 10,425 | 91 | 83 | 14 | 10 | 16 | 15 | 4 | 4 | PASS |
+| The Beatitudes: A Bible Study on the Kingdom of God | 10,095 | 10,095 | 83 | 79 | 5 | 4 | 12 | 12 | 2 | 1 | PASS |
+| Faith and Politics: A Bible Study on the Church and Political Power | 11,447 | 11,449 | 79 | 73 | 8 | 5 | 17 | 17 | 3 | 2 | PASS |
+| The Church: A Bible Study on Why We Still Need Each Other | 11,433 | 11,434 | 84 | 80 | 6 | 3 | 15 | 15 | 3 | 3 | PASS |
+| The Creeds: A Bible Study on What Christians Believe | 12,538 | 12,538 | 83 | 78 | 8 | 5 | 16 | 15 | 3 | 3 | PASS |
+| The Image of God: A Bible Study on Human Worth | 12,688 | 12,690 | 70 | 67 | 10 | 8 | 17 | 17 | 2 | 1 | PASS |
+| The Lord's Prayer: A Bible Study Line by Line | 13,473 | 13,473 | 97 | 91 | 9 | 6 | 25 | 24 | 3 | 3 | PASS |
+| The Parables: A Bible Study on the Stories of Jesus | 12,538 | 12,539 | 113 | 108 | 12 | 9 | 23 | 21 | 3 | 3 | PASS |
+| The Psalms: A Bible Study on Honest Prayer | 12,460 | 12,461 | 88 | 86 | 8 | 7 | 17 | 17 | 1 | 1 | PASS |
+| The Story of the Bible: A Study of the Whole Canon | 13,586 | 13,587 | 98 | 85 | 18 | 11 | 23 | 21 | 7 | 7 | PASS |
+| Faith on Monday: A Bible Study on Living One Whole Life | 14,824 | 14,824 | 129 | 119 | 20 | 15 | 30 | 27 | 5 | 3 | PASS |
+| Advent: A Bible Study on Waiting for the Light | 13,694 | 13,695 | 61 | 59 | 3 | 2 | 2 | 2 | 1 | 1 | PASS |
+| When Our Parents Grow Old: A Bible Study for Caregivers | 14,289 | 14,289 | 43 | 43 | 2 | 2 | 2 | 2 | 0 | 0 | PASS |
+| Evangelism: A Bible Study on Sharing Your Faith | 14,398 | 14,398 | 101 | 93 | 11 | 7 | 12 | 11 | 4 | 4 | PASS |
+| Biblical Womanhood: A Bible Study on Women of Valor | 15,051 | 15,052 | 64 | 63 | 4 | 3 | 23 | 23 | 1 | 1 | PASS |
+| Work and Vocation: A Bible Study on Faith and Your Job | 14,121 | 14,122 | 126 | 111 | 19 | 10 | 30 | 26 | 9 | 7 | PASS |
+| Who Am I, Really? A Bible Study for Teenagers | 15,711 | 15,713 | 94 | 90 | 8 | 6 | 8 | 8 | 2 | 2 | PASS |
+| **68 guides** | 847,680 | 847,747 | 6283 | 5780 | 696 | 433 | 1227 | 1160 | 273 | | |
 
 ## Five typical pairs
 
@@ -129,3 +146,23 @@ Where one sentence pair recurs in a guide ("Hope doesn't cancel grief. It change
 - **Years in ministry, book counts, old titles.** No guide states his years as a pastor or a count of his books, and none names The Monster in the Mirror, When God Bless America Replaces Thy Kingdom Come, American Idols or the Pastors Connection Network.
 - **One biography line.** The Youth guide ("Who Am I?") ends its summary with "LiveWell is the work of James Bell, a pastor who came to faith from atheism, was raised without a father, and has five sons." The older guides' rewrite took his biography out wherever it served as a credential (`docs/work/elite/guides.md`). Whether this one should stay is his call, so it was left as it is.
 - **His own landing.** Five guides say that "James Bell's own landing is not given" on contested questions: Addiction and Recovery, Divorce and Blended Families, Forty Days, Waiting for the Light, and When Our Parents Grow Old. That is accurate, and it was left alone.
+
+## What was run
+
+- **After each guide:** the fact diff (all 68 PASS against the original files; the four with no edit unchanged) and the site's gates listed above, all exit 0; then one commit per guide.
+- **Before each of the four pushes**, on the merged tree:
+  - All 63 content gates in CI order: 63 of 63 every time.
+  - `pnpm check`: exit 0.
+  - `pnpm test`: 209 files passed, 7 skipped, with 2,611 then 2,619 tests passed. The first run of the first push failed one test, a site-catalogue count of Bible films, because upstream data had moved ahead of the count. It failed again on the retry, upstream had already corrected it (197c15897), and the run after the next merge passed.
+  - `pnpm pdfs`: 603 PDFs, no error.
+  - Every edit's new sentence was found in its guide's leader or participant PDF text: 273 of 273 at the last push, 0 missing.
+  - `pnpm build`, the sitemap, prerender and `audit:canonicals`: each exit 0, and every audited page canonicalises to itself.
+- **The served walk** (`scripts/serve-like-vercel.mjs`, port 4607) opened every tab of every edited guide at 390 and 1440. It found each edit's new sentence on the page (546 checks at the last push) and each old sentence gone, except the two quote cards above. It found no sideways scroll and no console error.
+- **When the branch moved before a push,** I merged it, ran the fact diff, the 63 content gates and `pnpm check` again, and pushed.
+- **One PDF page was looked at as an image:** Attention, participant, page 8, the joined practice sentence.
+
+## Not verified
+
+- Nobody but the scripts and me has read the changed sentences aloud.
+- The other PDF pages were read back as text, not looked at as images.
+- The Lighthouse and axe job was not run here.
