@@ -25773,3 +25773,19 @@ Cut in chapter 35: nothing; no curse on any modern people stated plainly.
 | The hard note: Who is this promise for: the Jews who returned from Babylon, the church, or a future restoration of Israel? The readings in their holders' terms | 22-38 `hard` | ezekiel/36.json `hard` | Repository; the site takes no side |
 
 Cut in chapter 36: John 3:5 beside the water and the Spirit, which the New Testament does not draw from Ezekiel 36; Romans 11 named only as part of one reading. No claim about any modern state or border.
+
+## The plain notes on Ezekiel 37 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/37.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Can these bones live?: the text paraphrased; quoted clauses at verses 1, 2, 3, 7, 8, 9, 10, 11, 12, 14 | 1-14 | BSB | BSB text |
+| Background in `hearers` | 1-14 | ezekiel/37.json `historical`, `cultural`, `literary` | Repository |
+| Later: Genesis 2:7; Isaiah 26:19 | 1-14 `later` | BSB | BSB text |
+| The hard note: Is this chapter about the resurrection of the dead, or only about Israel's return from exile? The readings in their holders' terms | 1-14 `hard` | ezekiel/37.json `hard` | Repository; the site takes no side |
+| Two sticks become one: the text paraphrased; quoted clauses at verses 17, 18-19, 22, 23, 24, 26, 27 | 15-28 | BSB | BSB text |
+| Background in `hearers` | 15-28 | ezekiel/37.json `historical`, `cultural`, `literary` | Repository |
+| Later: Leviticus 26:12; Hosea 1:11 | 15-28 `later` | BSB | BSB text |
+
+Cut in chapter 37: John 5:28-29, 1 Corinthians 15 and 2 Corinthians 6:16 beside the dry bones and the dwelling place; the resurrection reading kept as a reading, as the coordinator asked, since the New Testament does not quote the chapter directly.
