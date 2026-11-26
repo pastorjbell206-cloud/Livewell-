@@ -1,0 +1,116 @@
+{
+  "title": "What sin is",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/what-sin-is",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "love",
+      "kicker": "Made for love",
+      "level": 0.2,
+      "lines": [
+        "Jesus summed up what God asks in two commands. Love the Lord your God with all your heart, soul, mind, and strength. And love your neighbor as yourself.",
+        "Made for that love, people were joined to God, to each other, to themselves, and to the world he gave them."
+      ],
+      "scripture": {
+        "reference": "Mark 12:30",
+        "text": "Love the Lord your God with all your heart and with all your soul and with all your mind and with all your strength.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "root",
+      "kicker": "The root",
+      "level": 0.45,
+      "lines": [
+        "In Genesis three, the serpent doesn't start with the fruit. He starts by making God sound mean. Then he makes a promise: you will be like God.",
+        "At its root, sin is not trusting that God is good, and wanting to be our own god, deciding good and evil for ourselves."
+      ],
+      "scripture": {
+        "reference": "Genesis 3:5",
+        "text": "you will be like God",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "damage",
+      "kicker": "The damage",
+      "level": 0.65,
+      "lines": [
+        "The damage runs in every direction at once. They hide from God. They cover their shame. They blame each other. And the ground grows thorns.",
+        "Isaiah says it plainly. Your iniquities have built barriers between you and your God."
+      ],
+      "scripture": {
+        "reference": "Isaiah 59:2",
+        "text": "your iniquities have built barriers between you and your God",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "define",
+      "kicker": "What it is",
+      "level": 0.55,
+      "lines": [
+        "The family catechism defines it. Sin is any failure to love God and others as we should, whether by doing what God forbids or by failing to do what he commands.",
+        "It's more than a list of wrong things done. It's love turned in on ourselves."
+      ]
+    },
+    {
+      "id": "all",
+      "kicker": "All of us",
+      "level": 0.7,
+      "lines": [
+        "Paul says it without exception.",
+        "For all have sinned and fall short of the glory of God.",
+        "No one is outside it and no one is above it, the people who wrote the Bible included. But the same sentence goes straight on to grace."
+      ],
+      "scripture": {
+        "reference": "Romans 3:23",
+        "text": "for all have sinned and fall short of the glory of God",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "seek",
+      "kicker": "God comes looking",
+      "level": 0.85,
+      "lines": [
+        "Judgment is never the only word. God comes looking and calls: where are you? Jesus said he came to seek and to save the lost. At the cross God himself mends what sin broke.",
+        "And the way home stays open.",
+        "If we confess our sins, He is faithful and just to forgive us our sins."
+      ],
+      "scripture": {
+        "reference": "1 John 1:9",
+        "text": "If we confess our sins, He is faithful and just to forgive us our sins",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "All Christians confess that every person has sinned and needs God's grace, and that God himself comes to save.",
+        "How the first sin reaches everyone after it is debated, and churches word it differently. This film doesn't choose between them."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The way home stays open."
+      ],
+      "titleCard": [
+        "The way home stays open.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

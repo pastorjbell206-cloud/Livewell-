@@ -1,0 +1,147 @@
+{
+  "title": "Who God is: Father, Son and Holy Spirit",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/who-god-is",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "one",
+      "kicker": "One God",
+      "level": 0.2,
+      "lines": [
+        "The Bible begins where Israel began, with Israel's daily confession.",
+        "Hear, O Israel: The LORD our God, the LORD is One.",
+        "Jesus called it the most important commandment. The first Christians were Jews who prayed these words, and they never stopped. There is one God and no other."
+      ],
+      "scripture": {
+        "reference": "Deuteronomy 6:4",
+        "text": "Hear, O Israel: The LORD our God, the LORD is One.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "father",
+      "kicker": "The Father",
+      "level": 0.35,
+      "lines": [
+        "Paul takes Israel's own confession and speaks of one God, the Father, from whom all things came and for whom we exist. The Father is God.",
+        "The Bible gives no picture of him, and this film doesn't draw one. Jesus taught his followers to pray to our Father in heaven."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 8:6",
+        "text": "yet for us there is but one God, the Father, from whom all things came and for whom we exist.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "son",
+      "kicker": "The Son",
+      "level": 0.5,
+      "lines": [
+        "John opens his Gospel this way.",
+        "In the beginning was the Word, and the Word was with God, and the Word was God.",
+        "With God, and God. When Thomas meets the risen Jesus behind locked doors, he calls him my Lord and my God. The Son is fully God, and in Jesus he also became fully man."
+      ],
+      "scripture": {
+        "reference": "John 1:1",
+        "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "spirit",
+      "kicker": "The Holy Spirit",
+      "level": 0.6,
+      "lines": [
+        "The Spirit is not a force God uses. The Bible speaks of him as God. When Ananias lied to the Holy Spirit, Peter told him he had not lied to men, but to God.",
+        "And the Spirit is everywhere, as only God is.",
+        "Where can I go to escape Your Spirit? Where can I flee from Your presence?"
+      ],
+      "scripture": {
+        "reference": "Psalm 139:7",
+        "text": "Where can I go to escape Your Spirit? Where can I flee from Your presence?",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "jordan",
+      "kicker": "Three, seen together",
+      "level": 0.75,
+      "lines": [
+        "At the Jordan the three are seen together, and none of them is the other. The Son comes up out of the water. The Spirit descends on him like a dove. And the Father speaks from heaven.",
+        "You are My beloved Son; in You I am well pleased.",
+        "The Father is not the Son, and the Son is not the Spirit."
+      ],
+      "scripture": {
+        "reference": "Mark 1:11",
+        "text": "You are My beloved Son; in You I am well pleased.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "name",
+      "kicker": "One name",
+      "level": 0.85,
+      "lines": [
+        "The risen Jesus sends his followers out, baptizing in the name of the Father, and of the Son, and of the Holy Spirit. One name.",
+        "Christians say God is one in being and three in persons, each fully God, and one God. Or more simply: one what, three whos.",
+        "Not three gods. Not one person in three masks. Not three parts."
+      ],
+      "scripture": {
+        "reference": "Matthew 28:19",
+        "text": "baptizing them in the name of the Father, and of the Son, and of the Holy Spirit",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "pictures",
+      "kicker": "Why every picture breaks",
+      "level": 0.6,
+      "lines": [
+        "Every picture from inside the world breaks, and each teaches an old mistake. Water as ice, liquid, and steam is one thing in three forms. That's one person in three masks.",
+        "A clover makes each person a third of God, when each is wholly God. Three people sharing one nature would be three gods. The church weighed these long ago and set them aside.",
+        "To whom will you liken God? To what image will you compare Him?"
+      ],
+      "scripture": {
+        "reference": "Isaiah 40:18",
+        "text": "To whom will you liken God? To what image will you compare Him?",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "creed",
+      "kicker": "Words, not a picture",
+      "level": 0.7,
+      "lines": [
+        "So instead of a picture, Christians keep the Bible's words and the creed's. The Nicene Creed calls the Son God of God, Light of Light, very God of very God.",
+        "The family catechism calls this not a riddle to solve but a wonder to receive. God has always been love."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit be with all of you."
+      ],
+      "scripture": {
+        "reference": "2 Corinthians 13:14",
+        "text": "The grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit be with all of you.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "One God: Father, Son and Holy Spirit.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
