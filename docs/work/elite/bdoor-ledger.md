@@ -25179,3 +25179,19 @@ Cut in chapter 15: John 15:6 beside the burned branches, which the New Testament
 | Later: Hosea 2:19; Jeremiah 31:31-33 | 44-63 `later` | BSB | BSB text |
 
 Cut in chapter 16: the deep note's hotline telephone number, replaced by the site's abusive-marriage care line, byte for byte; Ephesians 5:25-27, Revelation 19 and 21, Luke 22:20 and Hebrews 13:20, which the New Testament does not draw from Ezekiel 16. The punishment of verses 35 to 41 named, not described.
+
+## The plain notes on Ezekiel 17 (2026-11-26)
+
+`client/public/bible/notes/ezekiel/plain/17.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Two eagles and a vine: the text paraphrased; quoted clauses at verses 3, 4-6, 7, 9-10 | 1-10 | BSB | BSB text |
+| Background in `hearers` | 1-10 | ezekiel/17.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Kings 24:12; 2 Kings 24:17 | 1-10 `later` | BSB | BSB text |
+| A broken oath, and a tender sprig: the text paraphrased; quoted clauses at verses 12-14, 15, 16-17, 19, 22, 23, 24 | 11-24 | BSB | BSB text |
+| Background in `hearers` | 11-24 | ezekiel/17.json `historical`, `cultural`, `literary` | Repository |
+| Later: 2 Chronicles 36:13; Isaiah 11:1 | 11-24 `later` | BSB | BSB text |
+| The hard note: Why does God hold Zedekiah to an oath sworn to a pagan conqueror who had invaded Judah? The readings in their holders' terms | 11-24 `hard` | ezekiel/17.json `hard` | Repository; the site takes no side |
+
+Cut in chapter 17: the deep note's line to the mustard seed (Mark 4:32), which the New Testament does not draw from Ezekiel.
