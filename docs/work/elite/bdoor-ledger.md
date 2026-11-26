@@ -25599,3 +25599,17 @@ Cut in chapter 35: nothing.
 | 2 Kings 22:11, Isaiah 40:8 (clauses); Jeremiah 26:22 and 26:24 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 36: nothing.
+
+## The plain notes on Jeremiah 37 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/37.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 37:1-21 (verses 7-14 and 17-20 partly paraphrased) | all | BSB | BSB text |
+| Mattaniah renamed Zedekiah (2 Kings 24:17); the rebellion; Egypt's march and the lifted siege | 1-10 | jeremiah/37.json `historical` | Repository |
+| Lachish Letter 3, found 1935: Konyahu son of Elnathan to Egypt | 1-10 | jeremiah/37.json `historical` | Repository |
+| The trip to Benjamin; the courtyard of the guard; bread until the city's bread was gone | 11-21 | BSB; jeremiah/37.json `summary` | BSB text |
+| Isaiah 30:7, 2 Kings 24:17, 2 Kings 25:3 (clauses); Jeremiah 32:2 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 37: a draft line on Acts 28, replaced by 2 Kings 25:3.
