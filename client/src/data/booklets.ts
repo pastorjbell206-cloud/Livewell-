@@ -36,7 +36,7 @@ export const BOOKLETS: Booklet[] = [
     title: "Deacon Qualifications and Selection",
     subtitle: "Raising the Standard for Servant Leadership",
     note: "The men who serve set the tone of a church. Choosing them is not a formality.",
-    pages: 41,
+    pages: 43,
     pdf: "/ebook/deacon-qualifications/Deacon-Qualifications-and-Selection.pdf",
     epub: "/ebook/deacon-qualifications/Deacon-Qualifications-and-Selection.epub",
   },
