@@ -21487,3 +21487,23 @@ Cut in chapter 7: nothing drawn to the New Testament. The words of 7:17 about Am
 | The hard note: those who rejected the prophets (2:12; 7:12-16); Saul; the famine as the fruit of refusal; frantic, not repentant; Jeremiah 29:13; no seeker now shut out | 7-14 `hard` | amos/8.json `hard`; the brief | Repository; the readings in their holders' terms |
 
 Cut in chapter 8: nothing drawn to the New Testament.
+
+## The plain notes on Amos 9 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/9.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 9:1 (its first words; the rest paraphrased); 9:2; 9:3-4 paraphrased; 9:5-6 paraphrased and the last words of 9:6 | 1-6 | BSB | BSB text |
+| The altar as Bethel's (3:14); the fifth vision; five clauses of pursuit; Psalm 139's mirror; the third hymn; 722 BC and the deportations | 1-6 | amos/9.json `historical`, `literary` | Repository |
+| Psalm 139:8; Amos 3:14 | 1-6 | amos/9.json `literary`; BSB | Repository; BSB text |
+| 9:7 (its question); 9:8 (its last sentence; the rest paraphrased); 9:9-10 paraphrased (9:10's inner quotation not quoted) | 7-10 | BSB | BSB text |
+| The Cushites south of Egypt; Caphtor as Crete and the Aegean; Kir uncertain; the exodus not immunity; the sieve read two ways; destroyed but not utterly | 7-10 | amos/9.json `cultural` | Repository; the readings in their holders' terms |
+| Psalm 145:9; Isaiah 10:20-22 | 7-10 | BSB | BSB text |
+| The hard note: the exodus taken seriously; election turned into immunity (9:10); the God of every nation's history; calling, not shield; no people above others | 7-10 `hard` | amos/9.json `cultural`; amos/intro.json `themes` (election and accountability); the brief | Repository |
+| 9:11; 9:12-13 and 9:15 paraphrased; 9:14 | 11-15 | BSB | BSB text |
+| The fallen tent read two ways (an exilic addition after 587 or 586 BC; Amos's own day, split since about 930 BC); a renewed kingdom beyond Judah; the plowman overtaking the reaper; 5:11 reversed; promises after the exile; no claim about any modern state or border | 11-15 | amos/9.json `historical`, `cultural`, `literary`; the brief | Repository; both views in their holders' terms |
+| Acts 15:16; Acts 15:17; Amos 5:11 (its clause) | 11-15 | amos/9.json `christ`, `hard`; BSB | Repository; BSB text; the New Testament's own lines |
+| The hard note: Edom and adam, yarash and darash; a different Hebrew text or an interpretation; nations that bear God's name; James's argument and the weight of the Greek | 11-15 `hard` | amos/9.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 9: nothing beyond Acts 15:16-17, which quote the chapter.
