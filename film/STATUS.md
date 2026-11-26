@@ -61,11 +61,11 @@ One row per film. "Approved" is James's word only.
 | grace | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 | faith | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 | gospel-in-a-minute | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
-| spirit-in-a-believer | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | | | |
-| the-church | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | | | |
-| baptism-and-supper | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | | | |
-| the-bible | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | | | |
-| prayer | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | | | |
+| spirit-in-a-believer | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| the-church | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| baptism-and-supper | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| the-bible | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
+| prayer | yes (rebuilt from the old film) | 2026-11-26 | 2026-11-26 | 2026-11-26 | 2026-11-26 | |
 
 Step 3, the 83 existing Bible Explorer films (`client/public/explorer/films/`): batch 1 of five is above (the three story films, Genesis, Exodus). Batch 2 is Leviticus, Numbers, Deuteronomy, Joshua and Judges. Batch 3 is Ruth, 1 Samuel, 2 Samuel, Nehemiah and Psalms. Batch 4 is Proverbs, Isaiah, Jeremiah, Daniel and Amos. Batch 5 is Jonah, Matthew, Mark, Luke and John. Batch 6 is Acts, Romans, 1 Corinthians, 2 Corinthians and Galatians. Batch 7 is Ephesians, Philippians, Colossians, 1 Thessalonians and Hebrews. Batch 8 is James, 1 Peter, 1 John and Revelation (four films, because the ElevenLabs balance covered four). All 36 book films are done. Batch 9 is the first five beliefs (who God is, the image of God, what sin is, who Jesus is, why Jesus died). Batch 10 is five more beliefs (the resurrection, how salvation works, grace, faith, the gospel in a minute). Batch 11 is five more beliefs (the Holy Spirit in a believer, what the church is, baptism and the Lord's Supper, how we got the Bible, prayer), recorded 2026-11-26. 29 remain: beliefs (1, the life to come), questions (13), ideas (10), verses (3), stories (2), then beliefs, questions, ideas, verses, stories. Each batch's scripts are written by a file in `film/batches/`.
 
@@ -85,4 +85,5 @@ James, 2026-11-26: "make the ones that you've already created go live", then "Ye
 - Pull request 654: batch 8 (47 films live). Its first upload on 2026-11-26 was refused ("Storage quota exceeded for Hobby plan (1GB maximum)") and Vercel then suspended the store, so the 43 live films stopped playing for a time. James upgraded the Vercel plan the same day; the films played again and batch 8 uploaded. Pull request 653 was opened before the refusal was seen and closed unmerged.
 - Pull request 655: batch 9 (52 films live).
 - Pull request 656: batch 10 (57 films live).
+- Pull request 657: batch 11 (62 films live).
 - To publish: `node scripts/publish-narrated-films.mjs <slug> ...`, commit the three data files it changes, open a pull request, merge when CI is green. Video files are in the Vercel Blob store `livewell-films`; the live list is `scripts/narrated-films-live.json`.
