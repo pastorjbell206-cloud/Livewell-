@@ -1656,6 +1656,23 @@
       "book": "hebrews"
     },
     {
+      "slug": "book-james",
+      "title": "James: faith that works",
+      "group": "books",
+      "status": "finished",
+      "line": {
+        "younger": "A short letter of sharp, practical sayings from the brother of Jesus: what it is, how it is put together, what to watch for, and where to start reading.",
+        "older": "James as a whole letter: wisdom in the form of a letter, trials, faith that is alive, how James and Paul fit together, the poor and the rich, the power of speech, and where to begin."
+      },
+      "mark": "book-james",
+      "frames": 7,
+      "stops": [
+        "church"
+      ],
+      "cards": [],
+      "book": "james"
+    },
+    {
       "slug": "holy-spirit",
       "title": "The Holy Spirit through the Bible",
       "group": "ideas",

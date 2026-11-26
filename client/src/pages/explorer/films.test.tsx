@@ -1730,6 +1730,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-ephesians",
     "book-philippians",
     "book-hebrews",
+    "book-james",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2419,5 +2420,18 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     expect(f.frames.find(x => x.id === "son")!.still).toContain("No one is drawn");
     expect(f.frames.find(x => x.id === "priest")!.still).toContain("No one is drawn");
     expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/blood|altar|goat|calf|bull/i);
+  });
+
+  it("James relates faith and works to Paul as the book page does, and takes no side", () => {
+    const f = filmFile("book-james");
+    const faith = f.frames.find(x => x.id === "faith")!;
+    expect(faith.older).toContain("Paul and James both teach that God saves by grace and that true faith is alive.");
+    expect(faith.older).toContain("in different senses");
+    expect(f.differ?.text).toContain("the two use justify differently");
+    expect(f.differ?.text).toContain("they mean different things by faith and by works");
+    expect(f.differ?.text).toContain("James corrects a distorted slogan drawn from Paul's teaching");
+    expect(f.differ?.text).toContain("Roman Catholic teaching adds that justification grows through good works done by grace");
+    expect(f.differ?.text).toMatch(/takes no side/);
+    expect(text(f)).not.toMatch(/James (contradicts|disagrees with) Paul|Paul (was )?wrong|epistle of straw/i);
   });
 });

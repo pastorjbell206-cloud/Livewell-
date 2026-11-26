@@ -388,6 +388,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Hebrews in seven moving pictures: a sermon for tired believers, how it is laid out, the Son, the old covenant honored as a gift that pointed ahead, the great high priest, hold on and run, and where to start reading.",
     },
+    "book-james": {
+      title: "James: faith that works: Bible Explorer",
+      description:
+        "The whole letter of James in seven moving pictures: sharp, practical sayings, the threads it keeps returning to, trials, faith that is alive and how it fits with Paul, the poor and the rich, the power of words, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

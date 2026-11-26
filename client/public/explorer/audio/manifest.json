@@ -2685,6 +2685,116 @@
     }
    ]
   },
+  "book-james": {
+   "title": {
+    "file": "book-james/title.mp3",
+    "hash": "d1cd23ff277c5e798111",
+    "seconds": 2.46,
+    "bytes": 15332
+   },
+   "younger": [
+    {
+     "id": "sayings",
+     "file": "book-james/younger/01-sayings.mp3",
+     "hash": "26f751e542c22fc2e679",
+     "seconds": 27.84,
+     "bytes": 167540
+    },
+    {
+     "id": "layout",
+     "file": "book-james/younger/02-layout.mp3",
+     "hash": "29d78d6b190558705a56",
+     "seconds": 24.63,
+     "bytes": 148388
+    },
+    {
+     "id": "trials",
+     "file": "book-james/younger/03-trials.mp3",
+     "hash": "07c8e562dd0cf8d879df",
+     "seconds": 26.77,
+     "bytes": 161204
+    },
+    {
+     "id": "faith",
+     "file": "book-james/younger/04-faith.mp3",
+     "hash": "f1d0e0ba2042b99dbddd",
+     "seconds": 28.33,
+     "bytes": 170564
+    },
+    {
+     "id": "poor",
+     "file": "book-james/younger/05-poor.mp3",
+     "hash": "21b28a9a9ba75bafa8a8",
+     "seconds": 24.51,
+     "bytes": 147668
+    },
+    {
+     "id": "tongue",
+     "file": "book-james/younger/06-tongue.mp3",
+     "hash": "81092d1b09afe48288a4",
+     "seconds": 24.08,
+     "bytes": 145076
+    },
+    {
+     "id": "start",
+     "file": "book-james/younger/07-start.mp3",
+     "hash": "f4a33da399e31e224d22",
+     "seconds": 23.12,
+     "bytes": 139316
+    }
+   ],
+   "older": [
+    {
+     "id": "sayings",
+     "file": "book-james/older/01-sayings.mp3",
+     "hash": "63b011cd8be59e0797b5",
+     "seconds": 26.71,
+     "bytes": 160772
+    },
+    {
+     "id": "layout",
+     "file": "book-james/older/02-layout.mp3",
+     "hash": "393bb9e26299f47527e5",
+     "seconds": 25.38,
+     "bytes": 152852
+    },
+    {
+     "id": "trials",
+     "file": "book-james/older/03-trials.mp3",
+     "hash": "d2fa53946bc9e5a2f9de",
+     "seconds": 27.53,
+     "bytes": 165812
+    },
+    {
+     "id": "faith",
+     "file": "book-james/older/04-faith.mp3",
+     "hash": "d6fdfbb3f824c1d0ba56",
+     "seconds": 29.02,
+     "bytes": 174740
+    },
+    {
+     "id": "poor",
+     "file": "book-james/older/05-poor.mp3",
+     "hash": "d2a9760bd7b080e483fb",
+     "seconds": 24.41,
+     "bytes": 147092
+    },
+    {
+     "id": "tongue",
+     "file": "book-james/older/06-tongue.mp3",
+     "hash": "88bc8ca8842f5baf14b6",
+     "seconds": 25.69,
+     "bytes": 154724
+    },
+    {
+     "id": "start",
+     "file": "book-james/older/07-start.mp3",
+     "hash": "5ccfb379cc4227f3505f",
+     "seconds": 26.47,
+     "bytes": 159332
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",
