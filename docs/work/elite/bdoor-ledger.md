@@ -21818,3 +21818,19 @@ Every claim in `client/public/bible/notes/nahum/intro.json`, field `teaching`. N
 | Go deeper: eight pages | deeper | bible/guides/reading-prophets.json, empires.json, kings-of-israel-and-judah.json; bible/doctrines.json (Judgment and Justice; God's Character; Suffering and Evil); context/guides/the-violence-of-the-old-testament.json; questions/old-testament/the-god-of-the-old-testament.json (status live) | Repository; every page live |
 
 Cut from the book page: the introduction's lines to Romans 10:15 as a reading of Nahum (kept only as Paul's use of Isaiah's form), to Christ disarming the powers, to Revelation 18 and to the cross, which the New Testament does not draw from Nahum. The cruelties of 3:3 and 3:10 are named and not described; 3:5 is not quoted.
+
+## The plain notes on Nahum 1 (2026-11-25)
+
+`client/public/bible/notes/nahum/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its first sentence); 1:3 (its first sentence); 1:4-6 and 1:8 paraphrased; 1:7 | 1-8 | BSB | BSB text |
+| Between about 663 and 612 BC; Manasseh and Amon as vassals; massa; storm imagery and the LORD alone; Bashan, Carmel, Lebanon; a partial acrostic; the hymn framed by God's character with Sinai's line | 1-8 | nahum/1.json `historical`, `cultural`, `literary` | Repository |
+| Exodus 34:7 (its clause); Psalm 29:3 paraphrased | 1-8 | nahum/1.json `cultural`, `literary`; BSB | Repository; BSB text |
+| The hard note: vengeance legal; wrath and patience; the empire's records; the troubled and the victims' readings; vengeance God's alone | 1-8 `hard` | nahum/1.json `hard`; the brief | Repository; the readings in their holders' terms |
+| 1:9-12 and 1:14 paraphrased; 1:13; 1:15 (its first words and its clause) | 9-15 | BSB | BSB text |
+| Abrupt turns and added names; the plotter as Sennacherib or Assyrian kingship; the yoke breaking as Assyria cracked; names and descendants, inscriptions and statues; the runner; the Hebrew numbering 2:1 | 9-15 | nahum/1.json `historical`, `cultural`, `literary` | Repository |
+| Isaiah 52:7 (its clause); Romans 10:15 quoting Isaiah; 2 Kings 18:28-35 | 9-15 | nahum/intro.json `christ`; nahum/1.json `historical`; BSB | Repository; BSB text |
+
+Cut in chapter 1: nothing drawn from Nahum to the New Testament.
