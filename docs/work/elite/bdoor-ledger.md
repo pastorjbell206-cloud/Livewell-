@@ -22686,3 +22686,21 @@ Cut in chapter 38: nothing.
 | The hard note: complacency or acceptance (1 Kings 21:29; 2 Kings 22:18-20); deliberate ambiguity; no side | 5-8 `hard` | isaiah/39.json `hard` | Repository; both readings in their holders' terms |
 
 Cut in chapter 39: nothing. No care line is needed in this chapter.
+
+## The plain notes on Isaiah 40 (2026-11-26)
+
+`client/public/bible/notes/isaiah/plain/40.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 40:1-11 (40:1-3 and 40:6-8 inside the BSB's speech marks) | 1-11 | BSB | BSB text |
+| 587 or 586 BC; the exile; 539 and 539 or 538 BC; chapters 40 to 55 and the last years of exile; the traditional, critical and unified readings; nacham and Lamentations; the exodus road; the shepherd | 1-11 | isaiah/40.json `historical`, `hard`; lamentations/1.json `words` (nacham and Isaiah 40) | Repository; each view in its holders' terms |
+| Mark 1:3 (its clause before the inner quotation; first drafted with a nested quotation and corrected); Luke 3:4-6 named; 1 Peter 1:25; Lamentations 1:2 named | 1-11 `later` | BSB | BSB text; the New Testament's own lines |
+| 40:12-26 (40:25 inside the BSB's speech marks) | 12-26 | BSB | BSB text |
+| Babylon's star worship and processions; the idols propped up; the stars named | 12-26 | isaiah/40.json `cultural` | Repository |
+| Romans 11:34 (inside the BSB's speech marks); Psalm 147:4 (first typed inexactly, caught and corrected) | 12-26 `later` | BSB | BSB text |
+| 40:27-31 (40:27 paraphrased around its inner quotation; first drafted with a nested quotation and corrected) | 27-31 | BSB | BSB text |
+| The exiles' complaint; waiting as hope; fly, run, walk | 27-31 | isaiah/40.json `words` | Repository |
+| Psalm 27:14 (its words before the exclamation); 2 Corinthians 4:16 | 27-31 `later` | BSB | BSB text |
+
+Cut in chapter 40: the deep note's line to John 10:11 beside the shepherd of verse 11, which the New Testament does not draw from this chapter. No care line is needed in this chapter.
