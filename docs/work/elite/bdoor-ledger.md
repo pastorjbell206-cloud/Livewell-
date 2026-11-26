@@ -21340,3 +21340,22 @@ Every claim in `client/public/bible/notes/amos/intro.json`, field `teaching`. No
 | Go deeper: ten pages | deeper | bible/guides/reading-prophets.json, kings-of-israel-and-judah.json; bible/doctrines.json (Justice, the Poor, and the Stranger; Worship; Judgment and Justice; Money and Possessions); context/guides/what-justice-meant.json, money-texts-we-explain-away.json, left-lens-right-lens.json; questions/old-testament/what-archaeology-shows.json (status live) | Repository; every page live |
 
 Cut from the book page: the introduction's line from Amos to Matthew 23:23, which the New Testament does not draw from Amos. The atrocities of 1:3, 1:13 and 2:1 are named and not described. The word against Amaziah's family (7:17) is not quoted. A Go deeper link to the question on Christian nationalism was replaced by the context guide on reading the Bible through left and right lenses, so that the page points both ways.
+
+## The plain notes on Amos 1 (2026-11-25)
+
+`client/public/bible/notes/amos/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (its first clause; the rest paraphrased) | 1-2 | BSB | BSB text |
+| Tekoa ten miles south; the sheepherder's word and Mesha; owner or hired hand; an outsider from Judah; Uzziah and Jeroboam II, about 760 BC; the earthquake, Hazor and the mid-century layers, probable not certain; 1:2 as motto | 1-2 | amos/1.json `cultural`, `historical`, `literary` | Repository |
+| Zechariah 14:5 (its clause); Joel 3:16 | 1-2 | amos/1.json `historical`, `literary`; BSB | Repository; BSB text |
+| The formula of 1:3 (its words); 1:3 (its clause); 1:4-5 paraphrased; 1:6 (its clause); 1:7-8 paraphrased; 1:9 (its clause); 1:10 paraphrased | 3-10 | BSB | BSB text |
+| Three-then-four; the shape and the lulling; Damascus, Hazael and Ben-hadad in the late ninth century; threshing sledges; Kir and 732 BC; four of five Philistine cities and Gath missing; sold to Edom as slaves; the covenant of brotherhood and Hiram | 3-10 | amos/1.json `literary`, `historical`, `cultural` | Repository |
+| 2 Kings 10:32-33; 2 Kings 16:9 (its sentence); 1 Kings 5:12 | 3-10 | amos/1.json `historical`, `cultural`; BSB | Repository; BSB text |
+| 1:11 (its clause); 1:12 paraphrased; 1:13 named and quoted only in its last clause; 1:14-15 paraphrased | 11-15 | BSB | BSB text; the atrocity named, not described |
+| Edom south of the Dead Sea, Teman and Bozrah; Esau and Jacob; Ammon and Rabbah, modern Amman; Ammon's crime among the most horrifying, done for land; the circle on the map | 11-15 | amos/1.json `historical`, `cultural`, `literary` | Repository |
+| Genesis 36:1; Obadiah 10 | 11-15 | BSB | BSB text |
+| The hard note: no charge of breaking Moses' law; crimes against people; known to all; Noah's covenant (Genesis 9:5-6); treaties and customs of war; the fuller standard for Israel | 11-15 `hard` | amos/1.json `hard` | Repository; the readings in their holders' terms |
+
+Cut in chapter 1: the deep note's line to Romans 2:14-15, which the New Testament does not draw from Amos. The crimes of 1:3 and 1:13 are named and not described.
