@@ -9181,3 +9181,54 @@ Every line the deep notes draw from Lamentations to Christ that the New Testamen
 ### What was run
 
 The 2 Kings checks, copied to `/home/user/bdoor-scratch/major-prophets/` and pointed at these books (the book page's check reads only the `teaching` field; the care corpus leaves out all five of this run's books): validate-bible-notes, the strict, single-quote, cited-verse and nested-quote checks, the forbidden-word, signposting and first-person scans, the care-line check, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks, after the book page and each chapter, each exit 0 at commit. `teaching.test.tsx` passed (33 of 33) after the book page. The push's gates are in the hand-back.
+
+## Proverbs: the book page and every chapter (2026-11-25)
+
+Proverbs is whole: a teaching introduction on the book page and all thirty-one chapters in plain words, in the shape Job and 2 Kings use (`later` as the third part; `"plain": true` appended to each chapter note; one commit for the book page and one per chapter, each with its ledger rows and only that chapter's files). The book page's commit also rebuilt the explore indexes (timeline, atlas, words, hard passages) and added Proverbs to `teaching.test.tsx` (the books with a teaching guide, and its frame, `canaan`).
+
+### The book page (`/study/bible/proverbs`, same address)
+
+Data only, in `client/public/bible/notes/proverbs/intro.json`, field `teaching`. Fifteen parts (4,199 words): Proverbs in a minute; Where it sits in the story; Who wrote it, and when; Wisdom among Israel's neighbors; How Proverbs is built; What a proverb is, and is not; The fear of the LORD; A father's voice, and two invitations; Wisdom beside God at creation; The sayings: words, work, money and friends; The poor, and the God who made them; Children, correction and the home; Agur, Lemuel, and the woman of strength; How the New Testament reads Proverbs; How to read Proverbs. Then 16 hard passages, 15 key words, 13 timeline entries, a `canaan` map of one place (Jerusalem, for the kings the headings name; Egypt and Massa left off and the note says so), and eleven Go deeper pages, all live.
+
+Contested matters are stated in their holders' terms and no side is taken: Solomon's authorship (the core from Solomon, or the headings honoring him as patron of a tradition of scribes); the date of the final form (before the exile, or the fifth or fourth century BC); Amenemope (adaptation, or a common source) and the word in 22:20; the rod. Proverbs 8 is handled only as the site's book page already handled it: the chapter shaped the New Testament's language for Christ as the one through whom all things were made, and is itself a poetic personification, not a prophecy; the Arian controversy is told, with the church's confession resting on the New Testament's own teaching.
+
+### The chapters in plain words
+
+| Chapter | Passages | Words | Chapter | Passages | Words |
+|---|---|---|---|---|---|
+| 1 | 3 | 1,525 | 17 | 3 | 1,391 |
+| 2 | 3 | 1,310 | 18 | 3 | 1,386 |
+| 3 | 3 | 1,648 | 19 | 3 | 1,439 |
+| 4 | 3 | 1,193 | 20 | 3 | 1,520 |
+| 5 | 2 | 1,137 | 21 | 3 | 1,364 |
+| 6 | 3 | 1,382 | 22 | 3 | 1,768 |
+| 7 | 3 | 1,401 | 23 | 3 | 1,642 |
+| 8 | 3 | 1,491 | 24 | 3 | 1,335 |
+| 9 | 3 | 1,266 | 25 | 3 | 1,299 |
+| 10 | 3 | 1,436 | 26 | 3 | 1,290 |
+| 11 | 3 | 1,382 | 27 | 3 | 1,081 |
+| 12 | 3 | 1,411 | 28 | 3 | 1,304 |
+| 13 | 3 | 1,447 | 29 | 3 | 1,341 |
+| 14 | 3 | 1,219 | 30 | 3 | 1,625 |
+| 15 | 3 | 1,249 | 31 | 3 | 1,548 |
+| 16 | 3 | 1,479 | **Total** | **92** | **43,309** |
+
+Words were counted by script over each passage's title and five prose fields. Every passage has a `later` part.
+
+### The hard places, and how they are stated
+
+The discipline sayings (13:24; 22:15; 23:13-14; with 19:18 and 29:15, 17) each state the two readings faithful parents hold, measured physical discipline given calmly and never in anger or to injure, or the rod as a picture of correction in general with Ephesians 6:4 and Colossians 3:21, say that the question divides faithful parents without dividing anyone from Christ, take no side, and say plainly that correction in anger or that injures is not discipline and that nothing in the verse gives anyone a warrant to harm a child; each carries the site's line that abuse of a child is a crime. 22:6 is read as a pattern, not a promise, and no grieving parent is blamed. The sayings on the quarrelsome wife (19:13; 21:9, 19; 25:24; 27:15-16) are read with 19:14 as a picture of a home without peace, not a comment on women, with the book's warnings about angry men, and with the line for anyone being hurt; 11:22 and the forbidden woman of chapters 5 to 7 carry no contempt for women. The sayings on poverty and laziness (6:9-11; 10:4; 19:15; 28:27) are warnings to the reader about his own habits, never a verdict on the poor (13:23; 14:31; 22:2). Proverbs 31 is praise, not a burden laid on any woman. Promises of long life and plenty (3:2, 9-10; 9:11; 10:3, 27; 12:21; 24:16) are patterns, not guarantees, with the illness line in chapter 3 and the grief line in chapter 9. 3:11-12 keeps Hebrews 12's own use. The two drinking poems (20:1; 23:29-35) and Lemuel's mother (31:4-7) carry the line about drinking that has become hard to control.
+
+### Care lines
+
+Reused whole, word for word, each naming Find Help, none with a phone number, and no new care sentence: the line that abuse of a child is a crime (book page; 13, 19, 22, 23, 29; from colossians/plain/3.json and ephesians/plain/6.json); the line for anyone being hurt at home, at work or in a church (21; from the Deuteronomy notes and tracks/family.json); the line for an abusive marriage (18; from colossians/plain/3.json); the illness line (3; from 2-kings/plain/15.json); the grief line (9; from 1-samuel/plain/1.json); the line for lasting sadness (18; from 1-samuel/plain/16.json); the drinking line (20, 23, 31; from ephesians/plain/5.json).
+
+### Cut or narrowed
+
+Every line the deep notes draw from Proverbs to Christ that the New Testament does not itself draw (Wisdom's call as Jesus' lament; the treasure in the field; the two builders; the rich fool; the sheep and the goats; Jesus as the just king, the faithful friend, the good shepherd, the bread of life; the cross as the answer to 17:15 and 21:18; the woman of chapter 31 as the church). The New Testament lines kept: Hebrews 12:5-6 (3:11-12); James 4:6 and 1 Peter 5:5 (3:34); Romans 12:20 (25:21-22); 1 Peter 4:18 (11:31); 2 Peter 2:22 (26:11); 1 Peter 4:8 (10:12); Hebrews 12:13 (4:26); James 4:14 (27:1); Luke 14:10 beside 25:6-7, as the site's Luke note has it; Proverbs 8 as the book page has it. The deep note's mention of research on physical punishment is cut (no source named). Verses with dashes or inner quotations are quoted in part or paraphrased; exclamations are quoted only in double quotes; ‘bless’ appears only inside quoted Scripture. Each chapter's ledger names its cuts.
+
+### What was run
+
+The Job checks (in `/home/user/bdoor-scratch/ezra/`), copied to `/home/user/bdoor-scratch/wisdom-books/` and pointed at Proverbs, Ecclesiastes and the Song: the strict, single-quote, cited-verse and nested quotation checks; the forbidden-word, signposting and first-person scans; the care-line check (the three books left out of its corpus, so every care line must already stand elsewhere on the site). Three small changes were made and tested: the reference parser now reads ‘Song of Songs’; the phone-number scan no longer mistakes a reference such as Psalm 112:6 for a number; and the cited-verse check reads only the new layer (the teaching and the plain notes), leaving the old introduction fields to the strict check. After the book page and after each chapter: validate-bible-notes, those checks, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks, each exit 0; after the book page, `teaching.test.tsx` (33 of 33). Chapters 16 to 31 were drafted and checked in a staging folder while the gates for the first push ran, then written, checked and committed in order.
+
+The first push (the book page and chapters 1 to 15) followed a merge of the shared branch: the 63 content gates (63 of 63), `pnpm check` (exit 0), `pnpm test` (207 files and 2,585 tests passed, 7 files and 73 tests skipped; two earlier runs each failed one timing test under a load near 13, in files this work does not touch, and each passed alone), `pnpm build`, sitemap, prerender and `audit:canonicals` (each exit 0; every audited page canonicalises to itself), and the served build on port 4607 at 390 and 1440 (the book page's 15 parts, 16 hard passages, 15 words, 13 timeline entries and its place, no overlap, no sideways scroll; chapters 1 to 15, 44 passages and 190 fields, 0 problems). The branch moved during the run; after a second merge (both sides kept in the ledger and `teaching.test.tsx`, the explore indexes rebuilt), the 63 content gates, `pnpm check`, the scans and `teaching.test.tsx` passed again before the push.
