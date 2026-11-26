@@ -25408,3 +25408,17 @@ On Ezekiel's book page, Tyre's label on the `fertile-crescent` map now sits to t
 | Zechariah 3:8, Ezekiel 34:23, Deuteronomy 18:22, Psalm 139:7, Hebrews 4:12 (clauses) | `later` | BSB | BSB text |
 
 Cut in chapter 23: nothing. The Branch is given as a Christian reading; the New Testament does not quote verses 5 and 6.
+
+## The plain notes on Jeremiah 24 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/24.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 24:1-10 | all | BSB | BSB text |
+| 597 BC; those taken (2 Kings 24:10-17); figs, early figs, firstfruits | 1-7 | jeremiah/24.json `historical`, `cultural` | Repository |
+| Zedekiah's resistance (37-38); the exiles' call (29); Judeans in Egypt, Jehoahaz 609 BC | 8-10 | jeremiah/24.json `historical`, `hard` | Repository |
+| Favoritism or grace; circumstances not proof of favor | 8-10 `hard` | jeremiah/24.json `hard` | Repository |
+| 2 Kings 24:14, Ezekiel 11:19, Deuteronomy 28:37 (clauses); Luke 13:4-5 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 24: nothing.
