@@ -23959,3 +23959,19 @@ New Testament lines in chapter 1: none drawn. Cut in chapter 1: nothing.
 | The hard note: Who is speaking when the text speaks of one whom the LORD of Hosts has sent? The readings in their holders' terms | 6-13 `hard` | zechariah/2.json `hard` | Repository; the site takes no side |
 
 New Testament lines in chapter 2: none drawn. Cut in chapter 2: nothing.
+
+## The plain notes on Zechariah 3 (2026-11-26)
+
+`client/public/bible/notes/zechariah/plain/3.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| Joshua in filthy clothes, and the accuser rebuked: the text paraphrased, its quoted verses (in single or double quotes) | 1-5 | BSB | BSB text |
+| Background in `hearers` | 1-5 | zechariah/3.json `historical`, `cultural`, `literary` | Repository |
+| Later: Job 1:6; Exodus 28:36 | 1-5 `later` | BSB | BSB text |
+| The charge, and the Branch: the text paraphrased, its quoted verses (in single or double quotes) | 6-10 | BSB | BSB text |
+| Background in `hearers` | 6-10 | zechariah/3.json `historical`, `cultural`, `literary` | Repository |
+| Later: Jeremiah 23:5; Micah 4:4 | 6-10 `later` | BSB | BSB text |
+| The hard note: What is the stone with seven eyes in verse 9? The readings in their holders' terms | 6-10 `hard` | zechariah/3.json `hard` | Repository; the site takes no side |
+
+New Testament lines in chapter 3: none drawn. Cut in chapter 3: nothing.
