@@ -24982,3 +24982,19 @@ Cut in chapter 9: the deep note's reading of verse 24 through Christ crucified, 
 | Psalm 115:4, 1 Thessalonians 1:9, Proverbs 16:9, Psalm 79:6 (clauses) | `later` | BSB; jeremiah/10.json `christ` | BSB text |
 
 Cut in chapter 10: Acts 14:15 and 17:24-25 beside the chapter, which the deep note calls a thematic link.
+
+## The plain notes on Jeremiah 11 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/11.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 11:1-23 (verse 19's inner speech paraphrased) | all | BSB | BSB text |
+| Josiah's reform, 622 BC, the book of the law and Deuteronomy | 1-17 | jeremiah/11.json `historical` | Repository |
+| Covenants with oaths, promises and curses; Deuteronomy 27; the olive tree | 1-17 | jeremiah/11.json `cultural` | Repository |
+| Do not pray: 7:16, 11:14, 14:11; verdict reached; panic not repentance; chapter 14 | 1-17 `hard` | jeremiah/11.json `hard` | Repository |
+| Anathoth, birthplace; townspeople and family (12:6); the first confession | 18-23 | jeremiah/11.json `historical`; BSB | Repository, BSB text |
+| Ezra 2:23, men of Anathoth returned | 18-23 `hard` | BSB | BSB text |
+| Deuteronomy 27:26 (its word), Psalm 52:8, Isaiah 53:7, Romans 12:19 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 11: a draft line on why Anathoth's priests opposed Jeremiah, which no repository source states.
