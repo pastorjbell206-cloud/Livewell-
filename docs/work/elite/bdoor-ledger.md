@@ -25422,3 +25422,18 @@ Cut in chapter 23: nothing. The Branch is given as a Christian reading; the New 
 | 2 Kings 24:14, Ezekiel 11:19, Deuteronomy 28:37 (clauses); Luke 13:4-5 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 24: nothing.
+
+## The plain notes on Jeremiah 25 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/25.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 25:1-38 (verses 19-26 summarized) | all | BSB | BSB text |
+| 605 BC, Carchemish, Nabopolassar; Nebuchadnezzar as servant | 1-14 | jeremiah/25.json `historical` | Repository |
+| The sounds of a town (verse 10) | 1-14 | jeremiah/25.json `cultural` | Repository |
+| Seventy years: 609-605 to 539 BC, 587/586 to about 516 BC, Psalm 90:10, Ezra 1:1, Zechariah 1:12, Daniel 9 | 1-14 `hard` | jeremiah/25.json `hard`, `historical` | Repository |
+| The cup; Sheshach by atbash; the Greek order after 25:13 | 15-38 | jeremiah/25.json `cultural`, `historical`; jeremiah/intro.json `reading` | Repository |
+| Daniel 9:2, 2 Chronicles 36:21, Isaiah 51:17, 1 Peter 4:17 (clauses) | `later` | BSB | BSB text |
+
+Cut in chapter 25: Revelation's cup of wrath, which the New Testament does not tie to this chapter; no date is calculated from the seventy years.
