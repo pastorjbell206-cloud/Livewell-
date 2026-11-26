@@ -21957,3 +21957,19 @@ Every claim in `client/public/bible/notes/ecclesiastes/intro.json`, field `teach
 | Go deeper: eleven pages | deeper | guides/reading-wisdom.json, reading-poetry.json; /tools/wisdom-books; bible/doctrines.json (wisdom, intermediate, work); the Honest Answer on whether a life can mean anything without God; wisdom/entry/purpose-and-meaning.json, facing-death.json, joy.json; needs/purpose.json (titles as the pages give them) | Repository; every page live in the search index |
 
 Cut from the book page: the old introduction's lines that Jesus, ‘one greater than Solomon’, enters the world under the sun, and that his rising is the new thing the Teacher could not find (kept only as the book page's own thematic sentence on 1 Corinthians 15:58); the deep notes' lines to Christ through the chapters (the Comforter, the rich fool, the good shepherd, the judgment of Christ); the deep note's line that 7:16 is read in several named ways (no readings named in the repository; the verse is set beside 7:17 and 7:20 instead). The explore indexes were rebuilt in the same commit, and `teaching.test.tsx` names Ecclesiastes among the books with a teaching guide, on the `canaan` frame.
+
+## The plain notes on Ecclesiastes 1 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/1.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 1:1; 1:2 (with its inner quotations kept as the BSB has them); 1:3; 1:4; the sun and wind (1:5-6); 1:7 (its first clause); 1:8; 1:9; 1:11 (its first clause) | 1-11 | BSB | BSB text |
+| The narrator of verses 1-2 and the frame at 12:8-14; hevel and its translations; the superlative form; yitron, found only in Ecclesiastes, as profit; the ancient picture of sun and rivers, not a science lesson; the rhythm copying the motion; the world after Genesis 3 | 1-11 | ecclesiastes/1.json `literary`, `cultural`, `story`, `words` (hevel, yitron); ecclesiastes/intro.json `reading` | Repository |
+| Psalm 144:4; Romans 8:20 (in part) | 1-11 | the chapter data's cross-references for 1:2 (Psalm 144:4; Romans 8:20); ecclesiastes/1.json `christ` and ecclesiastes/intro.json `christ` (Romans 8 and the Greek word for hevel); BSB | Repository; BSB text; the line as the site's book page draws it |
+| The hard note: hevel as meaningless, as brevity, as enigma; under the sun; the narrator's close (12:13-14); not worthless, but no lasting gain under the sun | 1-11 `hard` | ecclesiastes/1.json `hard` | Repository; each reading in its holders' terms |
+| 1:12; 1:13 (its last sentence, an exclamation not quoted: the quotation ends before it); 1:14; 1:15; 1:16 paraphrased (it holds an inner quotation); 1:17 (its last clause); 1:18 | 12-18 | BSB | BSB text |
+| The king best placed to search; Solomon in tradition, the tenth century; never named, a royal role; 1:16 and the debate, with rulers of Jerusalem before David; royal inscriptions and a lasting name undercut by verse 11; pursuit of the wind; verse 18 turning wisdom's value upside down | 12-18 | ecclesiastes/1.json `historical`, `cultural`, `literary`, `words` (re'ut) | Repository; each view in its holders' terms |
+| 1 Kings 4:29; Job 28:12 | 12-18 | the chapter data's cross-references for 1:16 (1 Kings 4:30; 3:12); ecclesiastes/1.json `story`; BSB | Repository; BSB text |
+
+Cut in chapter 1: the deep note's line that Christian faith answers ‘nothing new’ with the resurrection as new creation (left to the book page's own wording on the New Testament). No care line is needed in this chapter.
