@@ -21741,3 +21741,19 @@ Cut in chapter 3: nothing drawn to the New Testament.
 | Isaiah 39:6 paraphrased; Ezra 1:1-4 | 9-13 | micah/4.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 4: nothing drawn to the New Testament.
+
+## The plain notes on Micah 5 (2026-11-25)
+
+`client/public/bible/notes/micah/plain/5.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 5:1 paraphrased; 5:2 (to its dash; the rest paraphrased); 5:3 paraphrased; 5:4 (its first sentence); 5:5 (its first clause); 5:5-6 paraphrased | 1-6 | BSB | BSB text |
+| Assyria, 722 and 701 BC; the siege of 5:1 or the Babylonian siege; the Hebrew numbering; Bethlehem six miles south; Ephrathah; David's anointing; the royal line begun again; clans as thousands; from of old read as Davidic roots by most modern commentators and beyond human ancestry by many Christian interpreters; kings as shepherds; seven, even eight | 1-6 | micah/5.json `historical`, `cultural`, `literary`; micah/verses/5.json (5:2 grammar) | Repository; the readings in their holders' terms |
+| 1 Samuel 16:1 paraphrased; Matthew 2:5 (its words); Matthew 2:6 (its last clause); John 7:42 (its phrase) | 1-6 | micah/5.json `christ`; BSB | Repository; BSB text; the New Testament's own lines |
+| The hard note: Hezekiah in 701 BC as a near fulfillment; Assyria as the oppressor of the day; one picture of the future; the ends of the earth; the Christian confession; Matthew's wording against the Hebrew and 2 Samuel 5:2 | 1-6 `hard` | micah/5.json `hard`, `christ` | Repository; the readings in their holders' terms |
+| 5:7 (its clause); 5:8-12 and 5:14-15 paraphrased; 5:13 (its last clause) | 7-15 | BSB | BSB text |
+| Dew and lion side by side; the list of trusted things, Asherah poles; cut off repeated, aimed first at God's people; peace not through horses; no warrant for violence; no claim about any nation today | 7-15 | micah/5.json `cultural`, `literary`; the brief | Repository; stated as the brief asks |
+| Deuteronomy 17:16 paraphrased; Psalm 20:7 | 7-15 | BSB | BSB text |
+
+Cut in chapter 5: the deep note's line to Ephesians 2:14, which Paul does not draw from Micah.
