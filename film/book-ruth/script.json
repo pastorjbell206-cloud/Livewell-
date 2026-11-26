@@ -1,0 +1,115 @@
+{
+  "title": "Ruth: loyal love in a hard time",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-ruth",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "story",
+      "kicker": "A small story",
+      "level": 0.2,
+      "lines": [
+        "Ruth is set in the dark days of the judges, but it's told from inside one family in Bethlehem.",
+        "A famine drives them to Moab, and the men die there. Naomi turns for home with nothing. And her Moabite daughter-in-law won't leave her.",
+        "Your people will be my people, and your God will be my God."
+      ],
+      "scripture": {
+        "reference": "Ruth 1:16",
+        "text": "your people will be my people, and your God will be my God.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "The book has four chapters, and they balance. A scene on the road. A scene in the field. A scene at the threshing floor. A scene at the gate. The third is the turning point.",
+        "Naomi's emptiness in chapter one is answered by the child in her lap in chapter four."
+      ],
+      "scripture": {
+        "reference": "Ruth 1:21",
+        "text": "I went away full, but the LORD has brought me back empty.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "loyal",
+      "kicker": "Watch for: loyal love",
+      "level": 0.5,
+      "lines": [
+        "Watch for a Hebrew word, hesed. It names a love that keeps faith inside a relationship and goes beyond what duty requires.",
+        "Ruth shows it to Naomi. Boaz shows it in the field."
+      ]
+    },
+    {
+      "id": "ordinary",
+      "kicker": "Watch for: God in ordinary days",
+      "level": 0.6,
+      "lines": [
+        "Nobody in Ruth sees a vision or a wonder. A famine ends. A harvest comes. Ruth happens to walk into the field of Boaz.",
+        "The storyteller lets you see God's hand in those ordinary turns without forcing the point."
+      ],
+      "scripture": {
+        "reference": "Ruth 2:12",
+        "text": "under whose wings you have taken refuge.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "redeemer",
+      "kicker": "Watch for: the redeemer",
+      "level": 0.75,
+      "lines": [
+        "A kinsman-redeemer was a near relative responsible for protecting a family's land, name, and people when they couldn't protect themselves.",
+        "Boaz takes on that role at cost to himself."
+      ],
+      "scripture": {
+        "reference": "Ruth 2:20",
+        "text": "The man is a close relative. He is one of our kinsman-redeemers.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "david",
+      "kicker": "Watch for: the surprise at the end",
+      "level": 0.9,
+      "lines": [
+        "Then comes the surprise. Ruth is called the Moabitess again and again, yet she takes refuge in the LORD and becomes an ancestor of David.",
+        "He became the father of Jesse, the father of David.",
+        "The small family story turns out to be a hinge in Israel's history. And Matthew names Ruth in the family line of Jesus."
+      ],
+      "scripture": {
+        "reference": "Ruth 4:17",
+        "text": "He became the father of Jesse, the father of David.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Read all four chapters in one sitting, slowly. Watch the words that keep coming back: return, empty and full, kindness, wings, redeem."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The book treats grief honestly, and it lets hope arrive slowly."
+      ],
+      "titleCard": [
+        "It lets hope arrive slowly.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

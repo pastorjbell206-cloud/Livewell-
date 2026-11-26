@@ -1,0 +1,122 @@
+{
+  "title": "Psalms: the prayer book of the Bible",
+  "note": "Rebuilt on 2026-11-26 from the Bible Explorer film of the same slug. New wording, same facts: each claim is in the old film's captions or its 'differ' note, whose sources are in docs/work/elite/explorer-ledger.md. Scripture is the Berean Standard Bible, checked against client/public/bible/text/ by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/book-psalms",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "prayer-book",
+      "kicker": "The prayer book of the Bible",
+      "level": 0.2,
+      "lines": [
+        "The Psalms are the prayer book of the Bible: a hundred and fifty poems.",
+        "Other parts of the Bible are God's word to his people. The Psalms are also his people's words to him, which he has taken into Scripture."
+      ],
+      "scripture": {
+        "reference": "Psalm 62:8",
+        "text": "Trust in Him at all times, O people; pour out your hearts before Him.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "layout",
+      "kicker": "How it is laid out",
+      "level": 0.35,
+      "lines": [
+        "They aren't one long list. Two gateway psalms open the collection. Five books follow. And five psalms of Hallelujah close it.",
+        "Each of the first four books ends with a short blessing of God."
+      ],
+      "scripture": {
+        "reference": "Psalm 41:13",
+        "text": "Blessed be the LORD, the God of Israel, from everlasting to everlasting. Amen and Amen.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "lament",
+      "kicker": "Watch for: honest prayer",
+      "level": 0.5,
+      "lines": [
+        "The largest group of psalms are laments. They complain to God about enemies, about guilt, and about God's own apparent absence, and they do it inside the covenant.",
+        "How long, O LORD? Will You forget me forever?",
+        "Most turn toward trust. A few, like Psalm eighty-eight, never do. Protest can be a form of faith."
+      ],
+      "scripture": {
+        "reference": "Psalm 13:1",
+        "text": "How long, O LORD? Will You forget me forever?",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "praise",
+      "kicker": "Watch for: praise",
+      "level": 0.65,
+      "lines": [
+        "Praise in the Psalms is a response. To God's work in creation. To his rescue of Israel. To his help in one crisis.",
+        "One person's rescue becomes the whole community's reason to worship.",
+        "Let everything that has breath praise the LORD!"
+      ],
+      "scripture": {
+        "reference": "Psalm 150:6",
+        "text": "Let everything that has breath praise the LORD!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "king",
+      "kicker": "Watch for: the king",
+      "level": 0.8,
+      "lines": [
+        "Under every lament and every hymn lies one conviction: the LORD reigns.",
+        "Book Three ends by asking how God's covenant with David can stand when the crown lies in the dust. Book Four answers by proclaiming that the LORD is king."
+      ],
+      "scripture": {
+        "reference": "Psalm 93:1",
+        "text": "The LORD reigns! He is robed in majesty",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "jesus",
+      "kicker": "Watch for: the prayers of Jesus",
+      "level": 0.9,
+      "lines": [
+        "The Gospels show Jesus praying the psalms in his suffering. From the cross he cries the opening of Psalm twenty-two.",
+        "My God, my God, why have You forsaken me?",
+        "Christians since the early church have prayed the Psalms both as their own prayers and as the prayers of Christ."
+      ],
+      "scripture": {
+        "reference": "Psalm 22:1",
+        "text": "My God, my God, why have You forsaken me?",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "start",
+      "kicker": "Where to start",
+      "level": 0.6,
+      "lines": [
+        "Start at the gateway, with Psalm one. The key psalms are one, two, twenty-two, twenty-three, fifty-one, seventy-three, eighty-nine, and a hundred and ten."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Read each one whole, slowly, and out loud."
+      ],
+      "titleCard": [
+        "Read each one whole, slowly, and out loud.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
