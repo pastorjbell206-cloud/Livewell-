@@ -9191,6 +9191,15 @@ Proverbs is whole: a teaching introduction on the book page and all thirty-one c
 Data only, in `client/public/bible/notes/proverbs/intro.json`, field `teaching`. Fifteen parts (4,199 words): Proverbs in a minute; Where it sits in the story; Who wrote it, and when; Wisdom among Israel's neighbors; How Proverbs is built; What a proverb is, and is not; The fear of the LORD; A father's voice, and two invitations; Wisdom beside God at creation; The sayings: words, work, money and friends; The poor, and the God who made them; Children, correction and the home; Agur, Lemuel, and the woman of strength; How the New Testament reads Proverbs; How to read Proverbs. Then 16 hard passages, 15 key words, 13 timeline entries, a `canaan` map of one place (Jerusalem, for the kings the headings name; Egypt and Massa left off and the note says so), and eleven Go deeper pages, all live.
 
 Contested matters are stated in their holders' terms and no side is taken: Solomon's authorship (the core from Solomon, or the headings honoring him as patron of a tradition of scribes); the date of the final form (before the exile, or the fifth or fourth century BC); Amenemope (adaptation, or a common source) and the word in 22:20; the rod. Proverbs 8 is handled only as the site's book page already handled it: the chapter shaped the New Testament's language for Christ as the one through whom all things were made, and is itself a poetic personification, not a prophecy; the Arian controversy is told, with the church's confession resting on the New Testament's own teaching.
+## Daniel: the book page and every chapter (2026-11-25)
+
+Daniel is complete: a teaching introduction on the book page and all twelve chapters in plain words, in the same shape as Lamentations. One commit for the book page (with the four rebuilt explore indexes, and `teaching.test.tsx` listing Daniel with its frame, `canaan`) and one per chapter. The chapters were drafted and checked in the scratch folder's stage while the first push's heavy gates waited on the machine's load, then copied in, checked again in place and committed in order.
+
+### The book page (`/study/bible/daniel`, same address)
+
+Data only, in `client/public/bible/notes/daniel/intro.json`, field `teaching`. Thirteen parts (3,636 words): Daniel in a minute; Where it sits in the story; Who wrote it, and when; Babylon, Persia, and the Greek kings; How Daniel is built; Faithful in a foreign court; Dreams, a humbled king, and writing on the wall; Four beasts, and one like a son of man; The ram, the goat, and the little horn; Daniel's prayer and the seventy weeks; The last vision, and the dead who will awake; How the New Testament reads Daniel; How to read Daniel. Then 17 hard passages, 15 key words, 16 timeline entries and eleven Go deeper pages, all live. The map draws only Jerusalem: Babylon, Dura, Susa and the Ulai, the Tigris, Media, Persia, Greece and Egypt are not yet placed anywhere in the site's records, and the note says so (a question for James is in the hand-back).
+
+Contested matters are given in their holders' terms with no side taken: the date (the traditional sixth-century view, Young, Baldwin, Miller; the critical view of 167 to 164 BC, Collins, with Porphyry and Jerome; mediating views); the four kingdoms (Jerome's Babylon, Medo-Persia, Greece, Rome; the critical Babylon, Media, Persia, Greece with Antiochus IV; futurist readings); the one like a son of man (a people, an angel, an individual, with the Jewish witnesses the site's notes name); the seventy weeks (Jewish, critical, traditional Christian, dispensational and symbolic readings, with Jerome's refusal to choose); Darius the Mede; the king of 11:36-45. No date is calculated from any of the book's numbers, and no person, nation or movement of the present day is identified with any beast, horn or king.
 
 ### The chapters in plain words
 
@@ -9232,3 +9241,31 @@ Every line the deep notes draw from Proverbs to Christ that the New Testament do
 The Job checks (in `/home/user/bdoor-scratch/ezra/`), copied to `/home/user/bdoor-scratch/wisdom-books/` and pointed at Proverbs, Ecclesiastes and the Song: the strict, single-quote, cited-verse and nested quotation checks; the forbidden-word, signposting and first-person scans; the care-line check (the three books left out of its corpus, so every care line must already stand elsewhere on the site). Three small changes were made and tested: the reference parser now reads ‘Song of Songs’; the phone-number scan no longer mistakes a reference such as Psalm 112:6 for a number; and the cited-verse check reads only the new layer (the teaching and the plain notes), leaving the old introduction fields to the strict check. After the book page and after each chapter: validate-bible-notes, those checks, no-emdash, the search-index and passage-index checks, validate-politics and the eight explore-index checks, each exit 0; after the book page, `teaching.test.tsx` (33 of 33). Chapters 16 to 31 were drafted and checked in a staging folder while the gates for the first push ran, then written, checked and committed in order.
 
 The first push (the book page and chapters 1 to 15) followed a merge of the shared branch: the 63 content gates (63 of 63), `pnpm check` (exit 0), `pnpm test` (207 files and 2,585 tests passed, 7 files and 73 tests skipped; two earlier runs each failed one timing test under a load near 13, in files this work does not touch, and each passed alone), `pnpm build`, sitemap, prerender and `audit:canonicals` (each exit 0; every audited page canonicalises to itself), and the served build on port 4607 at 390 and 1440 (the book page's 15 parts, 16 hard passages, 15 words, 13 timeline entries and its place, no overlap, no sideways scroll; chapters 1 to 15, 44 passages and 190 fields, 0 problems). The branch moved during the run; after a second merge (both sides kept in the ledger and `teaching.test.tsx`, the explore indexes rebuilt), the 63 content gates, `pnpm check`, the scans and `teaching.test.tsx` passed again before the push.
+| 1 | 4 | 1,974 | 7 | 4 | 2,634 |
+| 2 | 4 | 2,275 | 8 | 4 | 2,003 |
+| 3 | 4 | 2,125 | 9 | 5 | 2,470 |
+| 4 | 4 | 2,146 | 10 | 3 | 1,547 |
+| 5 | 4 | 1,708 | 11 | 5 | 2,570 |
+| 6 | 4 | 1,933 | 12 | 3 | 1,649 |
+| | | | **Total** | **48** | **25,034** |
+
+### The hard places, and how they are stated
+
+- **The king's death sentence on the wise men (2:12-13):** not approved; Daniel pleads for them.
+- **Even if he does not (3:18):** faith not dependent on rescue; the book's own martyrs (11:33) and resurrection hope; no one's suffering read as lack of trust; the accusation of the Jews and no warrant for suspicion of the Jewish people; the line for anyone suffering now.
+- **The fourth figure in the furnace (3:25):** an angel, or the Son before his birth; no side.
+- **Nebuchadnezzar's madness (4):** one king's judgment for pride, never a reading of anyone's illness; the illness line.
+- **The accusers' wives and children (6:24):** the king's command, forbidden by Deuteronomy 24:16, reported and not a model; the line for anyone not protected by a parent.
+- **The visions (7 to 12):** every reading in its holders' terms; refining under persecution (11:35) never a word to say to another sufferer; no present-day identification; no date set; the line for anyone suffering now (12).
+
+### Care lines
+
+Reused whole, byte for byte, read by script from their sources, each naming Find Help, none with a phone number, no new care sentence: the line for anyone suffering now (book page; 3; 12); the illness line (4); the line for anyone not protected by a parent (6).
+
+### Cut or narrowed
+
+Every line the deep notes draw to Christ that the New Testament does not draw (the faithful-servant pattern of chapter 1; the stone as the parables of small beginnings; Immanuel in the furnace; James 4:6, Luke 1:52 and Philippians 2 beside chapter 4; Christ bearing the judgment on the wall; the sealed tomb of Matthew 27:66 beside the den; Ephesians 6:12 beside chapter 10). The New Testament's own lines kept: Mark 14:62, Mark 13:26 and Acts 7:56 with 7:13; Matthew 24:15; Mark 1:15; Hebrews 11:33-34; Luke 1:19 (Gabriel); Revelation's beasts, Michael (Revelation 12:7; Jude 1:9) and 22:10; John 5:28-29 and Matthew 13:43 with 12:2-3; 2 Thessalonians 2:4's wording beside 11:36; Luke 20:18 as an echo many interpreters hear; the wording of Matthew 13:32. Unsourced sentences caught before commit were cut and are recorded in each chapter's ledger.
+
+### What was run
+
+As for Lamentations, after the book page and each chapter, each exit 0 at commit. The validator asked for a book beyond Daniel in three `later` fields (3:28-30, 6:25-28, 8:23-27); a psalm was added to each and the ledger says so. The push's gates are in the hand-back.
