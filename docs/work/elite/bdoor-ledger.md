@@ -25527,3 +25527,18 @@ Cut in chapter 30: Matthew 24:21, given in the hard note only as one tradition's
 | Psalm 30:11, Hosea 11:8, Matthew 2:18, Luke 22:20, Hebrews 8:8, Romans 11:28 (clauses); Hebrews 10:16-17 (named) | `later` | BSB | BSB text |
 
 Cut in chapter 31: Hebrews 8:13's word obsolete is not quoted, so that the note gives no room for contempt; Kimhi, Isaac of Troki, Holladay, Carroll, Chafer, Gentry and Wellum, named in the deep note, are left to it except Kimhi.
+
+## The plain notes on Jeremiah 32 (2026-11-26)
+
+`client/public/bible/notes/jeremiah/plain/32.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested-quote checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 32:1-44 (verses 18-23, 25 and 28-44 partly summarized) | all | BSB | BSB text |
+| 588 or 587 BC; the siege from 52:4; Anathoth held | 1-15 | jeremiah/32.json `historical` | Repository |
+| Right of redemption; sealed and open deeds; clay jars and the Dead Sea Scrolls; Baruch introduced | 1-15 | jeremiah/32.json `cultural`, `historical` | Repository |
+| Child sacrifice: Ahaz and Manasseh; Molech debated; never entered God's mind | 16-44, `hard` | jeremiah/32.json `hard` | Repository |
+| The child-abuse care line, byte for byte | 16-44 `hard` | colossians/plain/3.json | care.mjs |
+| Leviticus 25:25, Genesis 18:14, Luke 1:37 (clauses); Ruth 4:9 (named) | `later` | BSB | BSB text |
+
+Cut in chapter 32: the seal impression of Berechiah son of Neriah named in the deep note, left out because its finding on the antiquities market is disputed.
