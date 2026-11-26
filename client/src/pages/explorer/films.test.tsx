@@ -1733,6 +1733,7 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     "book-james",
     "book-joshua",
     "book-judges",
+    "book-1-samuel",
   ];
   const AUDIO = JSON.parse(
     fs.readFileSync(path.join(PUBLIC, "explorer/audio/manifest.json"), "utf8")
@@ -2477,5 +2478,19 @@ describe("the films of 2026-11-25: the four that were announced, and the first b
     const stills = f.frames.map(fr => fr.still).join(" ");
     expect(stills).not.toMatch(/sword|spear|dagger|battle|fire|body|woman lies|threshold/i);
     expect(f.frames.find(x => x.id === "no-king")!.still).toContain("No one sits in it.");
+  });
+
+  it("1 Samuel tells no battle or death, names no people of today as Amalek, and takes no side on the hard chapters", () => {
+    const f = filmFile("book-1-samuel");
+    expect(f.care).toBe(filmFile("book-joshua").care);
+    const younger = f.frames.map(fr => fr.younger).join(" ");
+    expect(younger).not.toMatch(/burn|flame|kill|die|dead|death|blood|sword|slaughter|giant|spear|medium|Endor/i);
+    // The end of Saul is not told or drawn at either level.
+    expect(captions(f)).not.toMatch(/his own life|own sword|fell on|suicide|Gilboa/i);
+    expect(f.differ?.text).toContain("no people living today is Amalek");
+    expect(f.differ?.text).toContain("no one may use this chapter to justify violence or contempt toward any person or people");
+    expect(f.differ?.text).toMatch(/takes no side among the readings/);
+    expect(f.frames.find(x => x.id === "heart")!.verse?.text).toBe("For man sees the outward appearance, but the LORD sees the heart.");
+    expect(f.frames.map(fr => fr.still).join(" ")).not.toMatch(/sword|spear|sling|battle|giant|body/i);
   });
 });

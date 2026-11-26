@@ -1047,6 +1047,17 @@ const EMBLEMS: Record<string, (h: string) => ReactNode> = {
       <Shape d="M36,56a4,4 0 1,0 8,0a4,4 0 1,0 -8,0Z" tone="c" off={0.6} />
     </>
   ),
+  /* 1 Samuel: a horn of oil held over a shepherd's crook, the horn gold. */
+  "book-1-samuel": h => (
+    <>
+      <path className="pl-l" d="M8,84H92" />
+      <path fill={h} d="M8,88H92V94H8Z" />
+      <path className="pl-l" d="M58,84V36c0,-12 18,-12 18,0" />
+      <path className="pl-m" d="M24,46c12,-4 24,-16 28,-30l8,4c-2,18 -16,32 -34,36Z" />
+      <path className="pl-l" d="M24,46c12,-4 24,-16 28,-30l8,4c-2,18 -16,32 -34,36Z" />
+      <path className="pl-l" d="M26,60c-2,4 -2,8 0,10M30,62c-2,4 -2,8 0,10" />
+    </>
+  ),
   /* John 3:16 in its chapter: a lamp burning at night, its flame gold. */
   "john-3-16": h => (
     <>

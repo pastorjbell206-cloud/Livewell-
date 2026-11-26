@@ -118,7 +118,7 @@ export const DOORS: Door[] = [
     page: { id: "bible", name: "Study the Bible", line: "Read, search and understand the Bible, with notes beside every chapter.", href: "/study", icon: "BookOpen" },
     rooms: [
       {
-        id: "bible.films", name: "Bible films", line: "Short narrated films on the Bible's story, its books, its big ideas and hard questions.", href: "/study/films", icon: "Clapperboard", count: { n: 69, of: "films" },
+        id: "bible.films", name: "Bible films", line: "Short narrated films on the Bible's story, its books, its big ideas and hard questions.", href: "/study/films", icon: "Clapperboard", count: { n: 70, of: "films" },
         inside: [
           { id: "bible.story", name: "The Bible's story", line: "The whole Bible as one story, in eleven parts.", href: "/study/bible/story", icon: "Route", count: { n: 11, of: "parts" } },
           { id: "bible.explorer", name: "Bible Explorer", line: "The Bible's story on one illustrated map, for ages 7 to 16.", href: "/study/explorer", icon: "Map" },

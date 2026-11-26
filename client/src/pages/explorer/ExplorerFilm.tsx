@@ -403,6 +403,11 @@ export const FILM_META: Record<string, { title: string; description: string }> =
       description:
         "The whole book of Judges in seven moving pictures: the dark years after Joshua, how it is laid out, the wheel that runs downhill, unlikely deliverers, gifts that are not goodness, no king in Israel, and where to start reading.",
     },
+    "book-1-samuel": {
+      title: "1 Samuel: the heart God sees: Bible Explorer",
+      description:
+        "The whole of 1 Samuel in seven moving pictures: three lives, seven stages, the boy who listens, a people asking for a king, the heart God sees, loyal love, and where to start reading.",
+    },
   };
 
 type Loaded = { film: Film; index: ExplorerIndex };

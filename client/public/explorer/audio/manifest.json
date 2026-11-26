@@ -3015,6 +3015,116 @@
     }
    ]
   },
+  "book-1-samuel": {
+   "title": {
+    "file": "book-1-samuel/title.mp3",
+    "hash": "572342c60f4f5663d36e",
+    "seconds": 3.2,
+    "bytes": 19796
+   },
+   "younger": [
+    {
+     "id": "three",
+     "file": "book-1-samuel/younger/01-three.mp3",
+     "hash": "7f0c67d0c398ae1d2c73",
+     "seconds": 24.79,
+     "bytes": 149252
+    },
+    {
+     "id": "layout",
+     "file": "book-1-samuel/younger/02-layout.mp3",
+     "hash": "77beb8361ee5483575ab",
+     "seconds": 25.88,
+     "bytes": 155876
+    },
+    {
+     "id": "listening",
+     "file": "book-1-samuel/younger/03-listening.mp3",
+     "hash": "eddfbae2bc6411425656",
+     "seconds": 26.89,
+     "bytes": 161924
+    },
+    {
+     "id": "king",
+     "file": "book-1-samuel/younger/04-king.mp3",
+     "hash": "077cf851cc78b9424804",
+     "seconds": 24.26,
+     "bytes": 146084
+    },
+    {
+     "id": "heart",
+     "file": "book-1-samuel/younger/05-heart.mp3",
+     "hash": "80e008a0ecdc366ef8e7",
+     "seconds": 26.77,
+     "bytes": 161204
+    },
+    {
+     "id": "loyal",
+     "file": "book-1-samuel/younger/06-loyal.mp3",
+     "hash": "8f78b6e78bfd4498b557",
+     "seconds": 23.04,
+     "bytes": 138884
+    },
+    {
+     "id": "start",
+     "file": "book-1-samuel/younger/07-start.mp3",
+     "hash": "45b0adb018a1a0d4a7f3",
+     "seconds": 22.07,
+     "bytes": 132980
+    }
+   ],
+   "older": [
+    {
+     "id": "three",
+     "file": "book-1-samuel/older/01-three.mp3",
+     "hash": "24efa9b18a997150f28e",
+     "seconds": 27.57,
+     "bytes": 165956
+    },
+    {
+     "id": "layout",
+     "file": "book-1-samuel/older/02-layout.mp3",
+     "hash": "543258836515f6fec1e6",
+     "seconds": 27.03,
+     "bytes": 162788
+    },
+    {
+     "id": "listening",
+     "file": "book-1-samuel/older/03-listening.mp3",
+     "hash": "39def02c6eef6a908f75",
+     "seconds": 27.13,
+     "bytes": 163364
+    },
+    {
+     "id": "king",
+     "file": "book-1-samuel/older/04-king.mp3",
+     "hash": "e05e1e03ec46e5fded3a",
+     "seconds": 24.45,
+     "bytes": 147236
+    },
+    {
+     "id": "heart",
+     "file": "book-1-samuel/older/05-heart.mp3",
+     "hash": "379a4419ea295da48549",
+     "seconds": 26.97,
+     "bytes": 162356
+    },
+    {
+     "id": "loyal",
+     "file": "book-1-samuel/older/06-loyal.mp3",
+     "hash": "d006750a2c521f644ab4",
+     "seconds": 26.1,
+     "bytes": 157172
+    },
+    {
+     "id": "start",
+     "file": "book-1-samuel/older/07-start.mp3",
+     "hash": "e7143d44e39bdf2cca73",
+     "seconds": 26.72,
+     "bytes": 160916
+    }
+   ]
+  },
   "holy-spirit": {
    "title": {
     "file": "holy-spirit/title.mp3",
