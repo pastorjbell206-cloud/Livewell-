@@ -22128,3 +22128,22 @@ Cut in chapter 8: the deep note's lines to Christ (John 10:17-18 and Hebrews 2:1
 | 2 Samuel 20:22 (its first clause); Ecclesiastes 7:19 | 11-18 | ecclesiastes/9.json `historical`; BSB | Repository; BSB text |
 
 Cut in chapter 9: the deep note's lines to Christ (1 Corinthians 15:20 and 15:58 as the answer to verse 5, left to the book page's wording; 2 Corinthians 8:9 and Isaiah 53:3 beside the poor wise man, which the note says is not a prophecy of Christ; the Lord's Supper beside verse 7, which it calls thematic).
+
+## The plain notes on Ecclesiastes 10 (2026-11-25)
+
+`client/public/bible/notes/ecclesiastes/plain/10.json`. No web searches. Scripture is the BSB in the repository, matched by the strict, single-quote, cited-verse and nested checks (0 problems each).
+
+| Claim | Passage | Source | Checked by |
+|---|---|---|---|
+| 10:1; 10:2; 10:3 paraphrased; 10:4; the ruler's error (10:5-6) paraphrased (verse 5 holds a dash); 10:7 | 1-7 | BSB | BSB text |
+| From 9:18 to a collection on folly; Proverbs with the Teacher's edge; the perfumer's costly oil; right and left as strength and weakness, nothing to do with modern political labels; the court upside down | 1-7 | ecclesiastes/10.json `story`, `cultural`, `literary` | Repository |
+| Proverbs 19:10 (its first clause, before the dash); Proverbs 30:22 (its first clause) | 1-7 | the chapter data's cross-references for 10:6-7 (Proverbs 19:10; 30:22); BSB | Repository; BSB text |
+| 10:8; 10:9; 10:10; 10:11; 10:12; 10:13 paraphrased; 10:14 (its first sentence); 10:15 | 8-15 | BSB | BSB text |
+| Ordinary work and its risks; snakes in old walls; snake charming (Psalm 58:4-5; Jeremiah 8:17); yitron ending the cluster; the fool's speech and the road to the city | 8-15 | ecclesiastes/10.json `cultural`, `literary`, `words` (yitron) | Repository |
+| Psalm 58:5; Proverbs 18:7 | 8-15 | ecclesiastes/10.json `cultural` (Psalm 58:4-5); the chapter data's cross-references for 10:12 (Proverbs 18:7 by way of 10:14 and Proverbs 18:6-7); BSB | Repository; BSB text |
+| 10:16; 10:17 paraphrased, its last clause quoted; 10:18; 10:19; 10:20 | 16-20 | BSB | BSB text |
+| Rehoboam and the young men (1 Kings 12:1-19); child kings (2 Kings 11:21; 22:1); na'ar as youth or servant; morning feasts as dissipation (Isaiah 5:11); roofs that leak; the bird as ‘walls have ears’ | 16-20 | ecclesiastes/10.json `historical`, `cultural` | Repository; each reading in its holders' terms |
+| Isaiah 5:11 (its first clause); 1 Kings 12:13 (its last clause) | 16-20 | ecclesiastes/10.json `cultural` (Isaiah 5:11), `historical` (1 Kings 12); BSB | Repository; BSB text |
+| The hard note: ironic, quoting the princes of verse 16; or realistic, money paying for feasts and wine; the verb's range; 5:10 and 5:15; not the book's final word on wealth | 16-20 `hard` | ecclesiastes/10.json `hard` | Repository; each reading in its holders' terms |
+
+Cut in chapter 10: the deep note's lines to Christ (Matthew 12:42 and 12:36 beside the fool's words; the righteous king beside verses 16-17); James 3 (used elsewhere). No care line is needed in this chapter.
