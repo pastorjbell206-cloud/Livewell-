@@ -1,0 +1,443 @@
+{
+  "slug": "culture-and-the-bible",
+  "title": "How each age has read the Bible",
+  "for": "I want to see my own blind spots",
+  "subtitle": "Eight short sessions on how the church has read Scripture, from the early church to the churches of the global South, and on the lenses of our own day, so you can begin to see yours.",
+  "intro": [
+    "This track is for anyone who wants to see their own blind spots when they read the Bible. It has eight sessions of about fifteen minutes. It begins with the site's page on how culture reads the Bible, walks through six ages of the church's reading, from the early church to the churches of Africa, Asia and Latin America, and gives a session to the lenses of our own day.",
+    "The point isn't to make you suspicious of every reading, or of the Bible. It's to make an old question honest: where are you standing when you read? Every age the track visits saw something real, and every one missed something it couldn't see. So do we, on the right and on the left, in the comfortable church and in the anxious one.",
+    "Each session gives you a short teaching, opens one page on this site, and ends with one question, one thing to do and one verse to keep. Each has a guide for a group, and the leader's guide gathers them in order."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through How each age has read the Bible. The group suits people who already read the Bible and want to read it more honestly: church members, students, pastors, and skeptics who suspect that Christians only hear what they want to hear. Nobody needs any training in interpretation to begin.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size, small enough that each person is heard. Meet for about seventy-five minutes, once a week or once a fortnight, for eight meetings, and keep the end time you promised. A group that holds more than one political view, more than one church tradition or more than one culture is a gift here, not a problem, because each person can see what the others miss."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Sit where everyone can see one another, with the session on a phone or printed for each person, and a Bible within reach. Make three things plain at the first meeting. Anyone may pass on any question. What people say about their own lives stays in the room, unless someone is in danger. And every criticism the track makes gets turned on the group first, the leader included, before it is turned on anyone else."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the verse and a few verses around it aloud, twice, and each person names one thing their own background makes them hear in it.",
+          "Thirty-five minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Ten minutes: what each person noticed in the page the session opened, and anything they would push back on.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "The hardest moments come when a session touches politics. Hold the track's own rule: the same instrument on the right and on the left, with the same grief. If the room warms when one side is criticized, ask what the same criticism would say to the people in the room. State every view, past or present, in words its own defenders would sign before anyone weighs it, and never let the group mock a reader from another age or another side.",
+          "Some people will worry that seeing their lens means the Bible can be made to mean anything. Say plainly that it can't. The aim is humility before the text, not suspicion of it, and the creeds, the whole canon and the long company of readers are the church's safeguards. Where faithful Christians still differ on a passage, set out the views fairly and leave the question open."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Some people carry wounds from Scripture used against them: verses quoted to excuse a leader, to keep someone in a harmful home, or to shame a child. When someone tells a story like that, stop the discussion and listen. Believe them and thank them for saying it. Don't defend the reading that was used against them, and don't rush to the right one. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A crime, and above all harm to a child, belongs with the police and the proper authorities, not with a church to handle quietly."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: harm done to them at home or in a church, shame or fear that will not let them rest, grief that has taken their sleep or appetite for weeks, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Every reader reads from somewhere",
+      "minutes": 15,
+      "teaching": [
+        "Nobody opens the Bible from nowhere. Before you read a single verse, your language, your century, your church, your country and your politics have already decided a good deal: which passages feel plain, which feel strange, and which you'll pass over without noticing. That isn't a scandal. It's what it means to be a creature who lives in one place and one time. The danger is a reader who can't see it happening, and who calls the habits of his own tribe the plain meaning of God.",
+        "This track walks through how the church has read Scripture in six ages, from the schools of Alexandria and Antioch to the churches of Africa, Asia and Latin America, then turns to our own day. The reason to look back is simple. It's far easier to see another age's lens than your own, and the history of reading is the best mirror a modern reader has. The aim isn't suspicion of every reading, which ends with a Bible that can say nothing. It's humility before a book older than every culture that has tried to own it."
+      ],
+      "open": {
+        "kind": "theology",
+        "label": "How culture reads the Bible",
+        "href": "/theology/reading-the-bible",
+        "why": "The page this track is built on: six moments in the history of reading, the scholars who helped Christians see their own lens, and guides that apply it."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "How Does Being Western Change the Way We Read the Bible?",
+          "href": "/resources/context/misreading-with-western-eyes",
+          "why": "A guide to the assumptions Western readers carry without noticing, and what those assumptions hide in familiar passages."
+        },
+        {
+          "kind": "essay",
+          "label": "Every Generation Was Sure It Was Right",
+          "href": "/writing/every-generation-was-sure-it-was",
+          "why": "An essay on how sincere people in every age have mistaken their own voice for the voice of God."
+        },
+        {
+          "kind": "theology",
+          "label": "The glossary",
+          "href": "/theology/glossary",
+          "why": "Look up Exegesis and Eisegesis: drawing the meaning out of a text, and reading your own meaning into it."
+        }
+      ],
+      "question": "Which verse feels so obvious to you that you've never asked whether someone else might read it differently?",
+      "do": "Write down five things you bring to the Bible before you open it: your country, your church, your politics, your generation and your money. Keep the list, because the last session comes back to it.",
+      "verse": {
+        "ref": "Matthew 7:3",
+        "text": "Why do you look at the speck in your brother’s eye, but fail to notice the beam in your own eye?"
+      },
+      "group": {
+        "open": "Have you ever been surprised to learn that a phrase you grew up with means something different somewhere else?",
+        "discuss": [
+          "Why is it so much easier to see another age's blind spots than our own?",
+          "The track says suspicion of every reading ends with a Bible that can say nothing. Where have you seen that happen?",
+          "Which part of your own background do you think most shapes how you hear Scripture?"
+        ],
+        "pray": "Those who pray may ask for eyes to see their own lens, and for humility before a book older than every culture. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 2,
+      "title": "The early church and the rule of faith",
+      "minutes": 15,
+      "teaching": [
+        "The first Christians read the Scriptures of Israel as a book about Jesus, because they believed he had taught them to read it that way. On the road to Emmaus, Luke says, “beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself” (Luke 24:27). Alongside the Scriptures the church kept the rule of faith, a short summary of the core story and the seed of the later creeds. It worked as a fence. A reading that contradicted it wasn't a Christian reading, however clever it was.",
+        "Inside that fence two schools read differently. Alexandria, heir to a long habit of reading Homer for hidden meaning, followed Origen in searching beneath the letter for the spirit. Antioch, trained in rhetoric, insisted on the plain sense of the history and allowed a higher sense only where a real event pointed beyond itself, as Jonah's three days pointed to the resurrection. Each saw what the other missed. The devotional habit that turns Israel's wilderness into your hard week is a distant heir of Alexandria, and the scholar's search for the author's intent is an heir of Antioch."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "Allegory and History",
+        "href": "/theology/history/alexandria-and-antioch",
+        "why": "How two cities of the early church taught believers to read the same Scriptures in different ways, each school stated as its own defenders would state it."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Luke 24, passage by passage",
+          "href": "/study/bible/luke/24#plain",
+          "why": "The road to Emmaus, where the risen Jesus reads Moses and the Prophets as speaking of himself, with the plain-words notes."
+        },
+        {
+          "kind": "creed",
+          "label": "The Apostles' Creed",
+          "href": "/resources/creeds/apostles-creed",
+          "why": "The creeds grew from the rule of faith, the short summary of the story that kept the early church's reading inside its fence."
+        }
+      ],
+      "question": "When you read the Old Testament, do you tend to look for Christ, for history, or for a word about your own week?",
+      "do": "Read Jonah 1:17 to 2:10, then Matthew 12:40. Write one sentence on what happened to Jonah, and one on how Jesus reads it.",
+      "verse": {
+        "ref": "Luke 24:27",
+        "text": "And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself."
+      },
+      "group": {
+        "open": "Who first taught you how to read the Bible, and what habits did they hand you?",
+        "discuss": [
+          "The Alexandrians said that refusing spiritual reading leaves books like Leviticus mute for the church. What is strong in that argument?",
+          "The Antiochenes said a method that can make any text mean anything puts the reader above the Word. What is strong in that argument?",
+          "The rule of faith fenced the church's reading. What fences, if any, keep your own reading honest?"
+        ],
+        "pray": "Those who pray may ask to see Christ in all the Scriptures without making the text say whatever they wish. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 3,
+      "title": "The medieval Bible's four senses",
+      "minutes": 15,
+      "teaching": [
+        "For about a thousand years Latin Christians held that one passage could carry several true meanings at once. John Cassian, around 415, showed it with one word. Jerusalem is the city of the Jews, and it is also the church, the soul and the heavenly city. A thirteenth-century couplet taught students four questions to put to every text: what happened, what you are to believe, what you are to do, and where you are going. Thomas Aquinas disciplined the scheme. Every spiritual sense rests on the literal, and no doctrine may be built on allegory alone.",
+        "Behind the method stood Augustine's rule of charity: a reading that doesn't build up love of God and neighbour hasn't yet understood the text. Behind that stood the monasteries, where monks sang the whole Psalter every week and read slowly, aloud, until the words lived in them. Their reading could be fanciful, and it kept many ordinary believers at a distance from the text. But they took Scripture as one book meant to make them holy. Many of us read it as information, quickly and alone, and then wonder why it doesn't change us."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Letter and the Spirit",
+        "href": "/theology/history/the-four-senses",
+        "why": "Augustine's rule of charity, Cassian's four Jerusalems, the monks' slow reading, and Aquinas founding every sense on the letter."
+      },
+      "also": [
+        {
+          "kind": "study-tool",
+          "label": "Follow a verse through the Bible",
+          "href": "/study/cross-references",
+          "why": "Follow one verse to the others that echo it, the way medieval readers heard the whole Bible as one book."
+        },
+        {
+          "kind": "chapter",
+          "label": "Psalm 1, passage by passage",
+          "href": "/study/bible/psalms/1#plain",
+          "why": "The psalm that opens the Psalter, about the one who meditates on God's law day and night, with the plain-words notes."
+        }
+      ],
+      "question": "When did reading the Bible last make you more loving, and not only better informed?",
+      "do": "Read Psalm 1 slowly three times. Then put the four medieval questions to it: what it says happened, what it asks you to believe, what it asks you to do, and where it says you are going.",
+      "verse": {
+        "ref": "Psalm 1:2",
+        "text": "But his delight is in the Law of the LORD, and on His law he meditates day and night."
+      },
+      "group": {
+        "open": "Is there something you have read or heard so often that it has become part of how you think?",
+        "discuss": [
+          "Augustine said a reading that doesn't build up love hasn't yet understood the text. Is that a good test, and how could it be misused?",
+          "Aquinas said no doctrine may rest on allegory alone. Why was that limit wise?",
+          "The monks read slowly and together, and we tend to read quickly and alone. What would it take to change that in your own life?"
+        ],
+        "pray": "Those who pray may ask that Scripture would form them and not only inform them, and that their reading would end in love. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The Reformation and the plain sense",
+      "minutes": 15,
+      "teaching": [
+        "Within two centuries of Gutenberg's Bible, printed at Mainz around 1455, a farmer or a weaver's wife might own Scripture in their own tongue. Erasmus published the first Greek New Testament in 1516, and readers could check the church's Latin against the apostles' Greek. Where the Latin of Matthew 4:17 had Jesus call people to do penance, the Greek could be read as a call to repent, and a whole sacramental system seemed to hang on the difference. Luther turned from hidden meanings to the grammatical sense, and Tyndale was executed in 1536 for giving the English their New Testament.",
+        "Sola scriptura meant something careful. Scripture is the only infallible rule, and the church's teaching stands under it and can be corrected by it. It didn't mean the creeds and the fathers were worthless, and Calvin read with Augustine at his elbow. The Council of Trent asked a fair question in 1546: if every reader holds the plain sense, who decides when readers disagree? Protestants have answered it better in some generations than in others. The habit the age left behind, a solitary reader with numbered verses and no one else in the room, isn't what the reformers meant."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Plain Sense",
+        "href": "/theology/history/the-plain-sense",
+        "why": "Gutenberg, Erasmus, Luther, Tyndale and Calvin, the Council of Trent's answer, and the solitary reader the age left behind."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Acts 17, passage by passage",
+          "href": "/study/bible/acts/17#plain",
+          "why": "The Bereans receive Paul's message eagerly and test it against the Scriptures every day, with the plain-words notes beside the text."
+        },
+        {
+          "kind": "essay",
+          "label": "How the Bible Gets Translated by the Room You're In",
+          "href": "/writing/how-the-bible-gets-translated-by",
+          "why": "An essay on how every reader arrives with a community's translation of the text already in place, before a word is read."
+        }
+      ],
+      "question": "Who in your life, living or long gone, has the standing to tell you that you are reading a passage wrongly?",
+      "do": "Take one passage you think is plain. Read it with one commentary, one creed or one older Christian beside you, and note anything they see that you missed.",
+      "verse": {
+        "ref": "Acts 17:11",
+        "text": "Now the Bereans were more noble-minded than the Thessalonians, for they received the message with great eagerness and examined the Scriptures every day to see if these teachings were true."
+      },
+      "group": {
+        "open": "Do you remember the first Bible you owned, and how you came by it?",
+        "discuss": [
+          "Translation choices like repent or do penance carried theology with them. Can a translation ever be neutral?",
+          "Trent asked who decides when readers of the plain sense disagree. How would you answer that question?",
+          "Where has the habit of reading alone served you, and where has it misled you?"
+        ],
+        "pray": "Those who pray may give thanks for the Bible in their own language and for the people who paid for it, and ask to read it with the whole church. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 5,
+      "title": "The Enlightenment and the critical turn",
+      "minutes": 15,
+      "teaching": [
+        "From the middle of the seventeenth century, Western scholars learned to put a new question first. Not what is God saying, but what actually happened, and how did this text come to be? Spinoza in 1670 proposed reading Scripture the way one studies nature, keeping its meaning apart from whether it is true. Lessing named an ugly, broad ditch between history and faith. Strauss read the Gospels as myth. Then in 1906 Albert Schweitzer surveyed a century of lives of Jesus and found that each writer had tended to make Jesus in his own image.",
+        "The defenders were right that a method which rules out God's action in advance can't be reconciled with the creeds. But critics and fundamentalists shared more than they knew. Both assumed the meaning of a biblical story was the fact it referred to, and both learned to stand outside the Bible, verifying or debunking it. Hans Frei called this the eclipse of biblical narrative: readers stopped living inside the story. The critics' gains are real, from literary form to the Dead Sea Scrolls, and the church should name them. The harder question is whether we still let the text read us."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Critical Bible",
+        "href": "/theology/history/the-critical-bible",
+        "why": "Spinoza, Lessing, Strauss, Wellhausen and Schweitzer, the defenders who answered them, and what both sides lost along the way."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Luke 1, passage by passage",
+          "href": "/study/bible/luke/1#plain",
+          "why": "Luke opens by telling Theophilus he has carefully investigated everything, a Gospel that welcomes the historian's questions."
+        },
+        {
+          "kind": "context",
+          "label": "Did the Gospels Get Jesus Right?",
+          "href": "/resources/context/did-the-gospels-get-jesus-right",
+          "why": "A guide that takes up the historian's question about the Gospels directly and weighs it on the evidence."
+        }
+      ],
+      "question": "Do you read the Bible more as a record to be checked or as a story to live inside, and what does each habit miss?",
+      "do": "Read Luke 1:1-4. Write down what Luke says he did before he wrote, and what he wanted his reader to have when he finished.",
+      "verse": {
+        "ref": "Luke 1:3-4",
+        "text": "Therefore, having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you, most excellent Theophilus, so that you may know the certainty of the things you have been taught."
+      },
+      "group": {
+        "open": "Have you ever studied something so closely that you stopped enjoying it?",
+        "discuss": [
+          "Schweitzer found that each age made Jesus in its own image. What image of Jesus might our age be making?",
+          "The critics and the fundamentalists both treated a story's meaning as the fact behind it. What does that leave out?",
+          "Which of the critics' questions should a Christian welcome, and which carry assumptions worth refusing?"
+        ],
+        "pray": "Those who pray may give thanks for honest scholars, and ask to be read by Scripture as well as to read it. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 6,
+      "title": "One Bible, two Americas",
+      "minutes": 15,
+      "teaching": [
+        "The young United States read the Bible as a nation of ordinary readers, each free of bishop and professor, trusting a common-sense philosophy that held the plain meaning to be whatever an honest reader sees on the surface. There was real good in that. It also meant that in 1861 a nation of Bible readers went to war over what the Bible plainly taught. In 1841 the Virginia Baptist Thornton Stringfellow made the plain-text case for slavery, walking through the patriarchs, Leviticus 25 and Paul's letters, and to readers trained in that method it seemed unanswerable.",
+        "The abolitionists answered from the whole movement of Scripture: the law that made stealing a man a capital crime, the God who made every nation from one man, the Exodus. Enslaved Christians, often barred by law from reading, heard the Exodus as their own story. Frederick Douglass drew a line in 1845 between the slaveholding religion of his country and the Christianity of Christ. Mark Noll's verdict is hard: the shared method couldn't settle the question, and the generals did. The lesson isn't that the Bible is unclear. It's that we are."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "One Bible, Two Americas",
+        "href": "/theology/history/one-bible-two-americas",
+        "why": "How slavery tested the way Americans read Scripture: the plain-text case, the abolitionists, the enslaved reading the Exodus, Douglass, and Noll's verdict."
+      },
+      "also": [
+        {
+          "kind": "history",
+          "label": "How Christianity Became American",
+          "href": "/theology/history/the-american-experiment",
+          "why": "The revivals, the reading of every man his own theologian, and Finney's methods: the soil the slavery debate grew in."
+        },
+        {
+          "kind": "context",
+          "label": "What Does the Bible Actually Say About Slavery?",
+          "href": "/resources/context/the-slavery-texts",
+          "why": "A guide that sets the slavery texts in their own world and beside the plantation, so you can see the difference for yourself."
+        }
+      ],
+      "question": "Which passages feel plain to you because they cost you nothing, and which feel strained because they would cost you a great deal?",
+      "do": "Read Exodus 3:7-10 slowly, as someone enslaved might have heard it. Then read it again as someone who owned the field. Write down what changes.",
+      "verse": {
+        "ref": "Exodus 3:7",
+        "text": "The LORD said, “I have indeed seen the affliction of My people in Egypt. I have heard them crying out because of their oppressors, and I am aware of their sufferings."
+      },
+      "group": {
+        "open": "Have you ever been sure something was plainly true and later realized that where you stood had shaped it?",
+        "discuss": [
+          "Stringfellow's argument persuaded because it used rules that evangelicals trusted. Why couldn't those rules see their own blind spot?",
+          "Douglass let the words of Jesus in Matthew 23 judge the religion of his country. What would it mean to let Scripture judge our culture today?",
+          "Whose reading of the Bible do you rarely hear, because they stand beneath the weight of the text rather than above it?"
+        ],
+        "pray": "Those who pray may grieve the ways Scripture has been used to defend cruelty, and ask to read it with those who stand beneath its weight. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The lenses of our own day",
+      "minutes": 15,
+      "teaching": [
+        "Our age has lenses of its own, and they come in pairs. In 2005 the sociologist Christian Smith found that many American teenagers held what his team named Moralistic Therapeutic Deism, faith in a God who wants people to be nice and happy and is needed mainly when a problem comes up. The finding under the finding was that they had heard the church perfectly. Its richer cousin is the prosperity gospel, which reads God's favour in health and wealth, and Kate Bowler noticed that its soft form, God wants you happy and improving, preaches from respectable stages that would never wear the label.",
+        "The political lenses mirror each other. The right reads the nation as a new Israel and staples 2 Chronicles 7:14 to a country that was never the people that promise named. The left reads the nation as the kingdom under construction and the prophets as policy memos. Both make America the subject of the Bible, and both reduce the cross to a means toward an end the text never names. The test is the same for every reader: can the text still say no to you? Applied Scripture corrects the reader. Projected Scripture only ever agrees."
+      ],
+      "open": {
+        "kind": "context",
+        "label": "Is the Bible an American Book?",
+        "href": "/resources/context/the-bible-is-not-an-american-book",
+        "why": "A guide to three assumptions American readers carry, chosen nation, prosperity as blessing and rights, and how both political tribes project themselves onto the text."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "Does Your Politics Decide How You Read the Bible?",
+          "href": "/resources/context/left-lens-right-lens",
+          "why": "Each party's working canon, the verses it underlines and the verses it explains away, measured by the same standard on the right and the left."
+        },
+        {
+          "kind": "history",
+          "label": "The Megachurch Years, 1950 to 2010",
+          "href": "/theology/history/the-attractional-era",
+          "why": "Positive thinking, the prosperity preachers and the surveys that found a therapeutic faith in the pews, told from inside the era."
+        },
+        {
+          "kind": "essay",
+          "label": "The Progressive Blind Spot",
+          "href": "/writing/the-progressive-blind-spot",
+          "why": "An essay arguing that confidence about being on the right side of history is no evidence of being on the right side of Scripture."
+        }
+      ],
+      "question": "When did a passage of Scripture last change your politics, or your idea of a good life, rather than confirm it?",
+      "do": "Start a short list of verses that have defeated you, texts that took something from you that you wanted to keep. If the list is empty, read the verses your own side tends to explain away.",
+      "verse": {
+        "ref": "Luke 9:23",
+        "text": "Then Jesus said to all of them, “If anyone wants to come after Me, he must deny himself and take up his cross daily and follow Me."
+      },
+      "group": {
+        "open": "What is a saying about God you grew up hearing that you now suspect came more from the culture than from Scripture?",
+        "discuss": [
+          "Smith found that the teenagers had heard the church perfectly. What does a church's preaching teach without meaning to?",
+          "The right and the left project in mirror image. Which projection do you find easier to see, and why?",
+          "What would it look like for your church to let Scripture say no to its own side?"
+        ],
+        "pray": "Those who pray may ask for a faith that takes up the cross rather than one that only comforts or flatters, and for courage to hear the verses their own side avoids. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Reading with the whole church",
+      "minutes": 15,
+      "teaching": [
+        "Around 1980 most of the world's Christians stopped being Western, and they brought fresh eyes to the Bible. Many in Africa, Asia and Latin America find its world of famine, exile, spirits and rulers closer to their own, and they notice what a buffered Western reader tends to skip: the demons, the healings, the warnings to the rich. The historian Andrew Walls named two forces at work wherever the gospel goes. It makes itself at home in a culture, and it keeps the believer from ever being wholly at home there. Lose the second, and the gospel calls no one out.",
+        "The same instrument has to be turned on the South, or it is flattery. The prosperity gospel, carried south largely by American preachers, has spread widely there, and some of its sharpest critics are African and Latin American pastors. No culture is exempt from hearing its own desires as God's voice, and none is disqualified from hearing him. The way to see your blind spots is to read with others: across regions and centuries, under the creeds, with the whole canon rather than a favourite shelf. The multitude of Revelation 7 will stand before one throne, and we aren't yet ready to stand there together."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "Reading from the South",
+        "href": "/theology/history/reading-from-the-south",
+        "why": "Walls, Sanneh, Bediako, Koyama and Gutiérrez on how Africa, Asia and Latin America read the Bible, and what North and South can teach and warn each other."
+      },
+      "also": [
+        {
+          "kind": "creed",
+          "label": "The Apostles' Creed",
+          "href": "/resources/creeds/apostles-creed",
+          "why": "A confession shared across centuries and continents, against which readers from every culture can check their reading together."
+        },
+        {
+          "kind": "essay",
+          "label": "How American Individualism Distorts the Bible",
+          "href": "/writing/how-american-individualism-distorts",
+          "why": "An essay on why the New Testament church is more than personal faith, and what a reader alone with the text misses."
+        },
+        {
+          "kind": "track",
+          "label": "Marriage that lasts",
+          "href": "/tracks/living-marriage",
+          "why": "The first track in the Academy's Living It program: what marriage is for and how it is kept, read with the same honesty about your own lens."
+        }
+      ],
+      "question": "Who is a Christian from another culture or century whose reading of the Bible you could let correct yours?",
+      "do": "Go back to the list you made in the first session. Beside each item, write one passage it might keep you from hearing, and one believer from elsewhere who could help you hear it.",
+      "verse": {
+        "ref": "1 Corinthians 13:12",
+        "text": "Now we see but a dim reflection as in a mirror; then we shall see face to face. Now I know in part; then I shall know fully, even as I am fully known."
+      },
+      "group": {
+        "open": "Has a friend from another background ever pointed out something about you that you had never noticed?",
+        "discuss": [
+          "Walls said the gospel makes itself at home in a culture and keeps the believer from being wholly at home. Where is your faith too much at home?",
+          "The Western therapeutic gospel and the Western nationalist gospel are called the same failure in a different accent. Do you agree, and why?",
+          "What would it take for your church to let a believer from another continent correct its reading of a passage?"
+        ],
+        "pray": "Those who pray may pray for the church in every nation and language, and ask to read Scripture together with all the saints. Others can keep a minute of quiet."
+      }
+    }
+  ]
+}
