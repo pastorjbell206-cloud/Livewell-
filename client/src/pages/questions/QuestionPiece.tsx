@@ -12,6 +12,7 @@
  * pending piece says noindex and carries the review line.
  */
 import FilmsHere from "@/components/FilmsHere";
+import NarratedFilm from "@/components/NarratedFilm";
 import { Link, useRoute } from "wouter";
 import { ArrowLeft, ArrowRight, ArrowUp, BookOpen, MessageCircleQuestion } from "lucide-react";
 import Layout from "@/components/Layout";
@@ -104,6 +105,7 @@ export default function QuestionPiece() {
       <Waiting when={!failed && !p} />
       <PageHead door={entry?.title ?? "The case for the faith"} doorHref={entry ? areaHref(area) : QUESTIONS_ROOM} title={listed?.question ?? "Opening the question…"} width="var(--w-read)" />
       {listed && pending && <ReviewLine width="var(--w-read)" />}
+      {p && <NarratedFilm page={`/questions/${area}/${slug}`} />}
 
       {failed ? (
         <LoadFailed what="This question" onRetry={() => { index.retry(); piece.retry(); }} backHref={entry ? areaHref(area) : QUESTIONS_ROOM} backLabel="Back to the area" />
