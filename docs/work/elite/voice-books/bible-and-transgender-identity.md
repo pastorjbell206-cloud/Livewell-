@@ -416,3 +416,8 @@ The chapters were not read whole for this list. It comes from reading the block 
 ## The files
 
 Rebuilt after the last chapter: still 181 pages (`client/src/data/ebooks.ts` says 181), PDF 1.4 MB, EPUB 324 KB. `--verify`: the EPUB carries exactly the source folder's text with the listed typesetting (49,255 words compared, no difference); the PDF's pages carry the same text character for character (246,023 against 246,023).
+
+## James's answers (2026-11-27)
+
+- **First Baptist Church of Fenton's young people** (item 7 above). James: "take the young people out". Chapter 12 (`sec13.xhtml`) now reads "We have families confused about what to do, leaders learning …"; the words "young people who experience gender dysphoria," are gone. No other word changed. The PDF and EPUB were rebuilt (`--verify` identical; 181 pages, unchanged).
+- **"Rachel"** in the introduction. James: "Rachel has not been named." Read as: Rachel is not her real name. The passage is unchanged. It still names FBC and describes her daughter (eleven, blonde ponytail, Girl Scout uniform); left for him, since together those details could still let someone at FBC recognise the family.

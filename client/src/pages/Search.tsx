@@ -299,14 +299,14 @@ export default function SearchPage() {
                   </p>
                   <Link
                     href={passage.href}
-                    className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
+                    className="block p-4 border hover:shadow-md transition-shadow"
                     style={{
                       borderColor: "var(--border)",
                       borderLeft: "2px solid var(--mustard)",
                       backgroundColor: "var(--bone)",
                     }}
                   >
-                    <h3 className="font-display font-bold mb-2" style={{ color: "var(--ink)" }}>
+                    <h3 className="font-display font-medium leading-tight mb-2" style={{ color: "var(--ink)" }}>
                       {passage.label}
                     </h3>
                     <p className="text-sm" style={{ color: "var(--ink-muted)" }}>
@@ -347,7 +347,7 @@ export default function SearchPage() {
                         // Several entries share a page (the catechism's questions), so the place in the list keys them.
                         key={`library-${i}-${entry.href}`}
                         href={entry.href}
-                        className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
+                        className="block p-4 border hover:shadow-md transition-shadow"
                         style={{
                           borderColor: "var(--border)",
                           backgroundColor: "var(--bone)",
@@ -362,7 +362,7 @@ export default function SearchPage() {
                           </p>
                         )}
                         <h3
-                          className="font-display font-bold mb-2"
+                          className="font-display font-medium leading-tight mb-2"
                           style={{ color: "var(--ink)" }}
                         >
                           {entry.title}
@@ -442,7 +442,7 @@ export default function SearchPage() {
                   <Link
                     key={`${result.type}-${result.id}`}
                     href={getResultLink(result)}
-                    className="block p-4 border rounded-lg hover:shadow-md transition-shadow"
+                    className="block p-4 border hover:shadow-md transition-shadow"
                     style={{
                       borderColor: "var(--border)",
                       backgroundColor: "var(--bone)",
@@ -452,7 +452,7 @@ export default function SearchPage() {
                       <div className="text-2xl">{getResultIcon(result.type)}</div>
                       <div className="flex-1">
                         <h3
-                          className="font-display font-bold mb-2"
+                          className="font-display font-medium leading-tight mb-2"
                           style={{ color: "var(--ink)" }}
                         >
                           {result.title}

@@ -131,7 +131,7 @@
       "title": "Allegory and History: How Alexandria and Antioch Read the Bible",
       "blurb": "Philo's Alexandrian inheritance, Origen's three senses, the Greek habit of reading Homer for hidden meaning, the Antiochene answer of historia and theoria, and the two reading cultures that still live in modern Christians.",
       "era": "Ancient",
-      "dateRange": "AD 200 to 450",
+      "dateRange": "AD 200-450",
       "under": "The Age of the Councils"
     },
     {
@@ -148,7 +148,7 @@
       "title": "The Letter and the Spirit: The Medieval Bible's Four Senses",
       "blurb": "Augustine's signs and things and the rule of charity, Cassian's four Jerusalems, the couplet of Augustine of Dacia, monastic lectio divina, Thomas Aquinas on the literal foundation of every sense, and Nicholas of Lyra's literal postils.",
       "era": "Medieval",
-      "dateRange": "AD 400 to 1500",
+      "dateRange": "AD 400-1500",
       "under": "The Early Medieval Church"
     },
     {
@@ -164,7 +164,7 @@
       "title": "The Plain Sense: The Reformers, the Press and the Bible in Every Hand",
       "blurb": "Gutenberg's press, the humanist return to the sources, Erasmus's Greek Testament, Luther's grammatical sense and his German Bible, Tyndale's English, Calvin's brevity, sola scriptura in its own terms, the answer at Trent, and the individual reader the age left behind.",
       "era": "Reformation",
-      "dateRange": "AD 1450 to 1650",
+      "dateRange": "AD 1450-1650",
       "under": "The Reformation"
     },
     {
@@ -188,7 +188,7 @@
       "title": "The Critical Bible: Enlightenment Readers and Their Heirs",
       "blurb": "Spinoza's new method, the Reimarus fragments and Lessing's ditch, Strauss and the category of myth, Wellhausen's documents, Schweitzer's verdict on the lives of Jesus, the fundamentalist answer, and Hans Frei on the eclipse of the Bible's own story.",
       "era": "Modern",
-      "dateRange": "AD 1650 to 1975",
+      "dateRange": "AD 1650-1975",
       "under": "The Modern and Global Church"
     },
     {
@@ -196,7 +196,7 @@
       "title": "One Bible, Two Americas: How Slavery Tested the Way Americans Read Scripture",
       "blurb": "The democratic, common-sense reading of the young republic, Stringfellow's plain-text case for slavery, the abolitionists' appeal to the spirit of Scripture, the Exodus as the enslaved read it, Douglass's two Christianities, the Slave Bible of 1807, and Mark Noll's verdict on a hermeneutic that could not settle the question.",
       "era": "Modern",
-      "dateRange": "AD 1800 to 1865",
+      "dateRange": "AD 1800-1865",
       "under": "The Modern and Global Church"
     },
     {
@@ -228,7 +228,7 @@
       "title": "The Church After Christian America, 2010 to Today",
       "blurb": "The era the reader is standing in. The dechurching, the deconstruction, the reckonings, and the end of the church's home-field advantage in the West, written from inside, with the ending unwritten.",
       "era": "Modern",
-      "dateRange": "AD 2010-present",
+      "dateRange": "AD 2010 to today",
       "under": "The Modern and Global Church"
     }
   ]

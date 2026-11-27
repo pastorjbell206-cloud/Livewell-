@@ -8,7 +8,7 @@
  *    the tiles as you type by what a person wants to do, and says so when
  *    nothing matches. Under it, the four groups, one tap each.
  * 3. The groups of James's map (docs/work/elite/PROJECT-PROMPT.md): Study,
- *    Tools for hard questions, Check yourself, Pray and practise. Every tool
+ *    Tools for hard questions, Check yourself, Pray and practice. Every tool
  *    once, under its one name, from lib/toolsList.ts. Each group is linkable:
  *    /tools#study, /tools#hard-questions, /tools#check-yourself,
  *    /tools#pray-and-practise (the older hashes are followed too).

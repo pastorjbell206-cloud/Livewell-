@@ -162,7 +162,7 @@ export default function AdventAtTheTable(_props: { variant: "card" }) {
             Print the booklet:
             <a href={BOOKLET.letter} style={cardLink}>US Letter</a>
             <span aria-hidden="true">·</span>
-            <a href={BOOKLET.a4} style={cardLink}>A4</a>
+            <a href={BOOKLET.a4} style={{ ...cardLink, minWidth: "44px", justifyContent: "center" }}>A4</a>
           </span>
         </div>
       </div>

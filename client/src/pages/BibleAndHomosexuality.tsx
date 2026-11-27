@@ -33,7 +33,7 @@ export default function BibleAndHomosexuality() {
     <Layout>
       <SEOMeta
         title="What Does the Bible Really Say About Homosexuality?"
-        description="Scripture, same-sex relationships, and the church's Christ-centered response — a pastoral reading that refuses the false choice between truth and love."
+        description="Scripture, same-sex relationships, and the church's Christ-centered response, in a pastoral reading that refuses the false choice between truth and love."
         image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/bible-and-homosexuality`}
         type="book"

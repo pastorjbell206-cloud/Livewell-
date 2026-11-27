@@ -33,7 +33,7 @@ export default function BibleAndTransgenderIdentity() {
     <Layout>
       <SEOMeta
         title="What Does the Bible Say About Transgender Identity?"
-        description="Gender, the body, and the church's Christ-centered response — a pastoral reading where clarity and compassion occupy the same room."
+        description="Gender, the body, and the church's Christ-centered response, in a pastoral reading where clarity and compassion occupy the same room."
         image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/bible-and-transgender-identity`}
         type="book"
