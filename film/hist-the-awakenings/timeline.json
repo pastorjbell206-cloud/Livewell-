@@ -1,0 +1,265 @@
+{
+ "length": 257.73,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 10.06,
+   "lines": [
+    {
+     "text": "Where did evangelicals come from?",
+     "start": 2.6,
+     "end": 4.34
+    },
+    {
+     "text": "Much of the answer lies in about sixty years, beginning in the 1730s.",
+     "start": 4.94,
+     "end": 9.16
+    }
+   ]
+  },
+  {
+   "id": "chill",
+   "kicker": "After the wars",
+   "level": 0.3,
+   "start": 9.26,
+   "end": 35.46,
+   "lines": [
+    {
+     "text": "When the religious wars burned out, much of Protestant Europe settled into a faith that was correct and cold.",
+     "start": 10.16,
+     "end": 16.04
+    },
+    {
+     "text": "The educated preferred a distant God who built the clock, wound it, and would never demand anything so indecent as a new birth.",
+     "start": 16.78,
+     "end": 24.04
+    },
+    {
+     "text": "But Jesus had demanded exactly that.",
+     "start": 24.8,
+     "end": 26.9
+    },
+    {
+     "text": "Jesus replied, \u201cTruly, truly, I tell you, no one can see the kingdom of God unless he is born again.\u201d",
+     "start": 27.58,
+     "end": 34.56
+    }
+   ]
+  },
+  {
+   "id": "seed",
+   "kicker": "The German seed",
+   "level": 0.4,
+   "start": 34.66,
+   "end": 55.34,
+   "lines": [
+    {
+     "text": "Later believers called that age a sleep. The waking began in Germany with Pietism, whose small groups read Scripture, prayed, and held one another to holiness.",
+     "start": 35.56,
+     "end": 45.78
+    },
+    {
+     "text": "At Herrnhut, Moravian refugees kept a prayer watch around the clock for decades, and from 1732 they sent missionaries.",
+     "start": 46.38,
+     "end": 54.44
+    }
+   ]
+  },
+  {
+   "id": "storm",
+   "kicker": "A storm at sea",
+   "level": 0.45,
+   "start": 54.54,
+   "end": 77.44,
+   "lines": [
+    {
+     "text": "In 1735 John Wesley, a young Anglican priest, sailed for Georgia with some of them.",
+     "start": 55.44,
+     "end": 61.58
+    },
+    {
+     "text": "In a storm, as the English passengers screamed, the Moravians sang psalms. Wesley found he was afraid to die.",
+     "start": 62.3,
+     "end": 69.54
+    },
+    {
+     "text": "In 1738, on Aldersgate Street, his heart was strangely warmed, as his journal puts it.",
+     "start": 70.2,
+     "end": 76.54
+    }
+   ]
+  },
+  {
+   "id": "northampton",
+   "kicker": "New England",
+   "level": 0.5,
+   "start": 76.64,
+   "end": 97.08,
+   "lines": [
+    {
+     "text": "Across the ocean, in the winter of 1734, Jonathan Edwards's town of Northampton, Massachusetts, began to be surprised.",
+     "start": 77.54,
+     "end": 85.36
+    },
+    {
+     "text": "Conversions multiplied until the revival was the only subject in the streets.",
+     "start": 86.04,
+     "end": 90.2
+    },
+    {
+     "text": "Those it touched called it an outpouring of the Spirit. Its critics called it enthusiasm.",
+     "start": 90.84,
+     "end": 96.18
+    }
+   ]
+  },
+  {
+   "id": "fields",
+   "kicker": "The fields",
+   "level": 0.65,
+   "start": 96.28,
+   "end": 131.68,
+   "lines": [
+    {
+     "text": "George Whitefield could be heard. In 1739 he preached in the open air to Kingswood's coal miners.",
+     "start": 97.18,
+     "end": 103.32
+    },
+    {
+     "text": "When he toured New England in 1740, the scattered fires became the Great Awakening. The skeptic Benjamin Franklin reckoned thirty thousand people could hear him at once.",
+     "start": 103.9,
+     "end": 113.72
+    },
+    {
+     "text": "Wesley had order. He gathered the awakened into societies and weekly classes, and his brother Charles wrote hymns by the thousand.",
+     "start": 114.5,
+     "end": 122.0
+    },
+    {
+     "text": "Edwards tested it all. True religion, he wrote in 1746, is a changed heart that shows itself in a changed life.",
+     "start": 122.68,
+     "end": 130.78
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.55,
+   "start": 130.88,
+   "end": 159.16,
+   "lines": [
+    {
+     "text": "Whitefield the Calvinist and Wesley the Arminian split over predestination.",
+     "start": 131.78,
+     "end": 136.08
+    },
+    {
+     "text": "Calvinists hold that God freely chose particular people for salvation, out of sheer grace rather than foreseen faith, and gives them faith.",
+     "start": 136.74,
+     "end": 145.08
+    },
+    {
+     "text": "Arminians hold that God chose to save all who believe, and His grace makes faith possible for everyone without forcing it.",
+     "start": 145.9,
+     "end": 153.02
+    },
+    {
+     "text": "The two men patched their friendship, and Wesley preached Whitefield's memorial sermon.",
+     "start": 153.82,
+     "end": 158.26
+    }
+   ]
+  },
+  {
+   "id": "ledger",
+   "kicker": "The ledger",
+   "level": 0.75,
+   "start": 158.36,
+   "end": 185.6,
+   "lines": [
+    {
+     "text": "The awakeners preached the new birth in a world built on slavery, and most of them made their peace with it.",
+     "start": 159.26,
+     "end": 165.06
+    },
+    {
+     "text": "Whitefield campaigned to make slavery legal in Georgia, then bought human beings and worked them. He died owning around fifty people.",
+     "start": 165.36,
+     "end": 173.4
+    },
+    {
+     "text": "Edwards owned enslaved people too, and defended the practice in writing, though he condemned the ocean trade.",
+     "start": 174.12,
+     "end": 179.94
+    },
+    {
+     "text": "The revival's clearest sight came with a blind spot the size of a person.",
+     "start": 180.8,
+     "end": 184.7
+    }
+   ]
+  },
+  {
+   "id": "escaped",
+   "kicker": "The gospel escaped",
+   "level": 0.85,
+   "start": 184.8,
+   "end": 219.32,
+   "lines": [
+    {
+     "text": "But the gospel escaped its preachers. The enslaved heard of the new birth and took it for themselves, and the African American church began.",
+     "start": 185.7,
+     "end": 193.9
+    },
+    {
+     "text": "George Liele, ordained in 1775, planted churches among the enslaved around Savannah and carried the gospel to Jamaica.",
+     "start": 194.58,
+     "end": 202.52
+    },
+    {
+     "text": "Olaudah Equiano, once enslaved, published his story in 1789, and it helped turn a nation against the trade.",
+     "start": 203.24,
+     "end": 210.5
+    },
+    {
+     "text": "Wesley attacked slavery in 1774, and his last letter urged William Wilberforce to press on against the trade.",
+     "start": 211.3,
+     "end": 218.42
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 218.52,
+   "end": 251.626,
+   "lines": [
+    {
+     "text": "Converted at sea in 1748, John Newton went on captaining slave ships for six more years.",
+     "start": 219.42,
+     "end": 225.56
+    },
+    {
+     "text": "As a pastor he wrote the hymn about amazing grace, and in 1788 he confessed his part in the trade.",
+     "start": 226.22,
+     "end": 232.7
+    },
+    {
+     "text": "That's the awakening in one man. Real grace, really received, beside a monstrous blindness, and then, slowly, sight.",
+     "start": 233.48,
+     "end": 242.2
+    },
+    {
+     "text": "What was born in those years was alive. But alive isn't the same as whole, and the church is still learning the difference.",
+     "start": 242.5,
+     "end": 250.726
+    }
+   ]
+  }
+ ]
+}
