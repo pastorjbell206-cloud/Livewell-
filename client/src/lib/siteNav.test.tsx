@@ -8,6 +8,8 @@
  * catalogue's own rules (counts, one name per address) are in
  * siteCatalog.test.ts.
  */
+import { liveSections, sectionHref } from "@/lib/shelf";
+import { DISCIPLINES } from "@/pages/preview/disciplines";
 import { describe, it, expect, vi, afterEach } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
@@ -51,7 +53,9 @@ function isRoute(href: string): boolean {
 const internal = (href: string) => href.startsWith("/");
 
 const group = (title: string) => SITE_NAV_GROUPS.find((g) => g.title === title)!;
-const MENU_DOORS = DOORS.filter((d) => d.rooms.length).map((d) => d.name);
+/** The bar's doors (James, 2026-11-27, "Explore-led menu"): Explore, then five of the catalogue's seven. */
+const MENU_DOORS = ["Explore", "Bible", "Family", "Tools", "Essays", "About"];
+const BAR_DOOR_IDS = ["bible", "family", "tools", "essays", "about"];
 
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -98,7 +102,7 @@ describe("the nav map", () => {
 });
 
 describe("the header", () => {
-  it("renders Find Help, search, and Subscribe beside the seven doors", () => {
+  it("renders Find Help, search, and Subscribe beside Explore and the five doors", () => {
     renderWithProviders(<MinimalNav />);
     expect(screen.getAllByRole("link", { name: "Find Help" })[0].getAttribute("href")).toBe("/help");
     expect(screen.getAllByRole("button", { name: /search/i }).length).toBeGreaterThan(0);
@@ -106,12 +110,23 @@ describe("the header", () => {
     for (const name of MENU_DOORS) {
       expect(screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-expanded"), name).toBe("false");
     }
-    expect(screen.getByRole("link", { name: "Essays" }).getAttribute("href")).toBe("/writing");
+  });
+
+  it("opens Explore on the eight disciplines as pictures, then Everything on LiveWell and Start here", () => {
+    renderWithProviders(<MinimalNav />);
+    const button = screen.getByRole("button", { name: /^Explore$/ });
+    fireEvent.click(button);
+    const panel = document.getElementById("sn-panel-explore")!;
+    expect(within(panel).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual([...DISCIPLINES.map((d) => `/explore/${d.id}`), "/explore", START_LINK.href]);
+    for (const d of DISCIPLINES) expect(within(panel).getByRole("link", { name: new RegExp(`^${d.name}`) }).textContent).toContain(d.line);
+    expect(within(panel).getByRole("link", { name: "Everything on LiveWell" })).toBeTruthy();
+    fireEvent.click(button);
+    expect(document.getElementById("sn-panel-explore")).toBeNull();
   });
 
   it("opens each door's panel on its rooms, then Everything in the door and Start here", () => {
     renderWithProviders(<MinimalNav />);
-    for (const door of DOORS.filter((d) => d.rooms.length)) {
+    for (const door of DOORS.filter((d) => d.rooms.length && BAR_DOOR_IDS.includes(d.id))) {
       const button = screen.getByRole("button", { name: new RegExp(`^${door.name}$`) });
       fireEvent.click(button);
       expect(button.getAttribute("aria-expanded")).toBe("true");
@@ -124,11 +139,24 @@ describe("the header", () => {
       for (const r of door.rooms) {
         const a = within(panel).getByRole("link", { name: new RegExp(r.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) });
         expect(a.textContent).toContain(r.line);
-        expect(a.querySelector("svg")).not.toBeNull();
+        // Every room carries its picture (the plate itself loads as the panel nears the screen).
+        expect(a.querySelector(".sn-way__art")).not.toBeNull();
       }
       fireEvent.click(button);
       expect(document.getElementById(`sn-panel-${door.id}`)).toBeNull();
     }
+  });
+
+  it("opens Essays on the shelf's sections as pictures, then All the essays and Start here", async () => {
+    renderWithProviders(<MinimalNav />);
+    const button = screen.getByRole("button", { name: /^Essays$/ });
+    fireEvent.click(button);
+    const panel = document.getElementById("sn-panel-essays")!;
+    const first = liveSections()[0];
+    expect((await within(panel).findByRole("link", { name: new RegExp(`^${first.name}`) })).getAttribute("href")).toBe(sectionHref(first));
+    const hrefs = within(panel).getAllByRole("link").map((a) => a.getAttribute("href"));
+    expect(hrefs).toEqual([...liveSections().map(sectionHref), "/writing", START_LINK.href]);
+    expect(within(panel).getByRole("link", { name: "All the essays" })).toBeTruthy();
   });
 
   it("keeps a door's panel open when a mouse hovers and then clicks it", () => {
@@ -151,10 +179,12 @@ describe("the header", () => {
     const bible = screen.getByRole("button", { name: /^Bible$/ });
     bible.focus();
     fireEvent.keyDown(bible, { key: "ArrowRight" });
-    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^History$/ }));
+    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^Family$/ }));
     fireEvent.keyDown(document.activeElement!, { key: "ArrowLeft" });
     fireEvent.keyDown(document.activeElement!, { key: "ArrowLeft" });
-    // Left from Bible wraps to the last door.
+    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^Explore$/ }));
+    fireEvent.keyDown(document.activeElement!, { key: "ArrowLeft" });
+    // Left from Explore wraps to the last door.
     expect(document.activeElement).toBe(screen.getByRole("button", { name: /^About$/ }));
     bible.focus();
     act(() => {
@@ -179,11 +209,12 @@ describe("the header", () => {
     const cases = [
       ["/books/believe", "About"],
       ["/family/tonight", "Family"],
-      ["/resources/creeds", "History"],
+      ["/resources/creeds", "Explore"],
+      ["/explore/history", "Explore"],
       ["/study/bible/john/3", "Bible"],
-      ["/answers", "Questions"],
+      ["/answers", "Explore"],
       ["/plans", "Tools"],
-      ["/writing", ""],
+      ["/writing", "Essays"],
     ] as const;
     for (const [path, door] of cases) {
       window.history.pushState({}, "", path);
@@ -198,14 +229,17 @@ describe("the header", () => {
 });
 
 describe("the phone sheet", () => {
-  it("leads with Start here, lists the seven doors, then Find Help, My Library, Everything and Subscribe", () => {
+  it("leads with Start here, the eight disciplines as pictures, the five doors, then Find Help, My Library, Everything and Subscribe", () => {
     renderWithProviders(<MinimalNav />);
     fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
     const sheet = document.getElementById("mobile-nav-panel")!;
-    const first = within(sheet).getAllByRole("link")[0];
-    expect(first.getAttribute("href")).toBe("/start");
+    const links = within(sheet).getAllByRole("link");
+    expect(links[0].getAttribute("href")).toBe("/start");
+    expect(links.slice(1, 9).map((a) => a.getAttribute("href"))).toEqual(DISCIPLINES.map((d) => `/explore/${d.id}`));
+    expect(sheet.querySelectorAll(".sn-sheet-way__art")).toHaveLength(8);
     const doorNames = Array.from(sheet.querySelectorAll(".sn-sheet-door")).map((el) => el.textContent);
-    expect(doorNames).toEqual(DOORS.map((d) => d.name));
+    expect(doorNames).toEqual(DOORS.filter((d) => BAR_DOOR_IDS.includes(d.id)).map((d) => d.name));
+    expect(sheet.querySelector(".sn-sheet-door")?.tagName).toBe("BUTTON");
     for (const [name, href] of [["Find Help", "/help"], ["My Library", "/my-library"], [EVERYTHING_ENTRY.name, "/explore"], ["Subscribe", "/subscribe"]]) {
       expect(within(sheet).getByRole("link", { name }).getAttribute("href"), name).toBe(href);
     }
@@ -215,16 +249,16 @@ describe("the phone sheet", () => {
     renderWithProviders(<MinimalNav />);
     fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
     const sheet = document.getElementById("mobile-nav-panel")!;
-    const questions = within(sheet).getByRole("button", { name: "Questions" });
-    fireEvent.click(questions);
-    expect(within(sheet).getByRole("link", { name: "Honest Answers" }).getAttribute("href")).toBe("/answers");
-    expect(within(sheet).getByRole("link", { name: "Everything in Questions" }).getAttribute("href")).toBe("/topics");
+    const about = within(sheet).getByRole("button", { name: "About" });
+    fireEvent.click(about);
+    expect(within(sheet).getByRole("link", { name: "Speaking" }).getAttribute("href")).toBe("/speaking");
+    expect(within(sheet).getByRole("link", { name: "Everything in About" }).getAttribute("href")).toBe("/about");
     const family = within(sheet).getByRole("button", { name: "Family" });
     fireEvent.mouseDown(family);
-    expect(within(sheet).getByRole("link", { name: "Honest Answers" })).toBeTruthy();
+    expect(within(sheet).getByRole("link", { name: "Speaking" })).toBeTruthy();
     fireEvent.click(family);
     expect(within(sheet).getByRole("link", { name: "Tonight's devotion" }).getAttribute("href")).toBe("/family/tonight");
-    expect(within(sheet).queryByRole("link", { name: "Honest Answers" })).toBeNull();
+    expect(within(sheet).queryByRole("link", { name: "Speaking" })).toBeNull();
   });
 });
 

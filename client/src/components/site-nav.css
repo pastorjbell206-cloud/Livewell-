@@ -69,3 +69,26 @@
 /* A 360px phone: the name, Find Help, search, Subscribe and the menu do not
  * fit on one line, so Subscribe waits in the menu (the phone pass, 2026-11-18). */
 @media (max-width:379px){.sn-subscribe--phone{display:none}}
+
+/* Explore (James, 2026-11-27): the eight disciplines as pictures, in the bar's panel and the phone sheet. */
+.sn-panel--explore{left:0;width:min(760px,calc(100vw - 48px));padding:14px;border-radius:14px}
+.sn-ways{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 10px}
+.sn-way{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center;min-height:44px;padding:8px;border-radius:12px;color:var(--ink);text-decoration:none}
+.sn-way:hover,.sn-way:focus-visible{background:var(--bone-warm)}
+.sn-way__art{display:block;width:72px;aspect-ratio:4 / 3;border-radius:10px;overflow:hidden;background:var(--art-paper);box-shadow:0 0 0 1px var(--border)}
+.sn-way__art svg{display:block;width:100%;height:100%}
+.sn-panel--explore .sn-room__name{display:block}
+.sn-sheet-label{margin:var(--s-2) 0 10px;font-family:var(--U);font-size:13px;font-weight:600;color:var(--ink-muted)}
+.sn-sheet-ways{list-style:none;margin:0 0 var(--s-3);padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.sn-sheet-way{display:flex;flex-direction:column;height:100%;border-radius:14px;overflow:hidden;background:var(--card);box-shadow:0 0 0 1px var(--border);color:var(--ink);text-decoration:none}
+.sn-sheet-way.is-current{box-shadow:0 0 0 2px var(--mustard)}
+.sn-sheet-way__art{display:block;aspect-ratio:16 / 10;background:var(--art-paper);overflow:hidden}
+.sn-sheet-way__art svg{display:block;width:100%;height:100%}
+.sn-sheet-way__name{display:flex;align-items:center;min-height:48px;padding:8px 12px;font-family:var(--F);font-size:19px;line-height:1.15}
+
+/* Every door's panel in pictures (James, 2026-11-27): two columns of plates with names and lines. */
+.sn-panel--pictures{width:min(640px,calc(100vw - 48px));padding:14px;border-radius:14px}
+.sn-panel--pictures.sn-panel--explore{width:min(760px,calc(100vw - 48px))}
+.sn-sheet-room{gap:12px}
+.sn-sheet-room__art{flex:none;display:block;width:56px;aspect-ratio:4 / 3;border-radius:8px;overflow:hidden;background:var(--art-paper);box-shadow:0 0 0 1px var(--border)}
+.sn-sheet-room__art svg{display:block;width:100%;height:100%}
