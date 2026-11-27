@@ -1,0 +1,124 @@
+{
+  "title": "When Rome became Christian",
+  "note": "Church history film, lesson 'The Constantinian Turn', written 2026-11-27. Every fact comes from the lesson file client/public/history/essays/the-constantinian-turn.json (\"When Rome Became Christian: Constantine and What It Cost\"). See facts.md. The dispute over Constantine's sincerity is told both ways, as the lesson tells it; the film takes no side. Nothing is tied to any modern nation, party or person. Scripture is the Berean Standard Bible, copied from client/public/bible/text/hebrews/13.json.",
+  "page": "/theology/history/the-constantinian-turn",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "When Rome became Christian, was it the church's great victory, or the moment something went wrong?",
+        "The honest answer is both. And the question it raised has never closed."
+      ]
+    },
+    {
+      "id": "bridge",
+      "kicker": "The Milvian Bridge, 312",
+      "level": 0.3,
+      "lines": [
+        "In 312, two rivals for the western empire met at the Milvian Bridge outside Rome. Constantine won.",
+        "Lactantius says a dream told him to mark his soldiers' shields with a sign of Christ.",
+        "Eusebius, writing later, says he and his army saw a cross of light in the sky, with the words, conquer by this.",
+        "The accounts don't quite match. But he fought under the sign of a crucified man, and won."
+      ]
+    },
+    {
+      "id": "milan",
+      "kicker": "Milan, 313",
+      "level": 0.4,
+      "lines": [
+        "The next year at Milan, Constantine and his eastern colleague Licinius granted Christians full legal freedom.",
+        "A decade earlier, under Diocletian, believers saw their Scriptures seized and their friends killed. Now an emperor built them churches.",
+        "We may greet that moment with suspicion. Those who lived it greeted it with tears.",
+        "It felt like resurrection."
+      ]
+    },
+    {
+      "id": "gains",
+      "kicker": "What the church gained",
+      "level": 0.5,
+      "lines": [
+        "The gains were real. The church got its buildings back, and its clergy were freed from civic duties.",
+        "Bishops became judges the state honored, often fairer to the poor. In 321, Sunday became a public day of rest.",
+        "Only an emperor could gather bishops from across the world. Nicaea met in 325 because Constantine wanted it, paid for it, and sat in it."
+      ]
+    },
+    {
+      "id": "costs",
+      "kicker": "What it cost",
+      "level": 0.6,
+      "lines": [
+        "But there was a price tag no one read. The first cost was the emperor himself, inside the church's own business.",
+        "Constantine enforced Nicaea's creed with exile. Later emperors exiled the other side.",
+        "The second cost was the crowd. As the faith became legal, then favored, then official in 380, people poured in, some in truth, some for careers."
+      ]
+    },
+    {
+      "id": "trier",
+      "kicker": "Trier, the 380s",
+      "level": 0.72,
+      "lines": [
+        "The third cost has a name. At Trier in the 380s, a Spanish ascetic, Priscillian, was accused of heresy and sorcery.",
+        "Urged on by fellow bishops, the imperial authorities put him to death. Christians had begun executing Christians over doctrine.",
+        "Martin of Tours protested and broke communion with the bishops responsible. The church that had suffered under the sword had picked it up."
+      ]
+    },
+    {
+      "id": "sincere",
+      "kicker": "The dispute",
+      "level": 0.65,
+      "lines": [
+        "Was Constantine sincere? The answer is disputed.",
+        "He kept the pagan title of chief priest, and the Unconquered Sun on his coins. He had his own son executed, and was baptized only on his deathbed.",
+        "Yet he endowed churches where favor bought him nothing. And deathbed baptism was common in his century.",
+        "Most historians now see a real believer, his faith and ambition tangled all the way down."
+      ]
+    },
+    {
+      "id": "held",
+      "kicker": "The line that held",
+      "level": 0.85,
+      "lines": [
+        "The capture was never total. In 361 the emperor Julian tried to restore the old gods, and reigned under two years.",
+        "In 390, after a riot in Thessalonica, the emperor Theodosius ordered a reprisal that killed thousands.",
+        "Ambrose, the bishop of Milan, barred him from the Lord's table until he did public penance. And he did.",
+        "For once, the church judged the state's violence instead of blessing it. Such moments were rare."
+      ]
+    },
+    {
+      "id": "city",
+      "kicker": "Rome falls, 410",
+      "level": 0.7,
+      "lines": [
+        "When Rome fell to Alaric in 410, pagans blamed the abandoned gods, and Augustine spent thirteen years answering.",
+        "Rome's fortunes, he argued, were never the measure of the kingdom of God. No city of man is the church's destiny.",
+        "Hebrews says the same.",
+        "For here we do not have a permanent city, but we are looking for the city that is to come."
+      ],
+      "scripture": {
+        "reference": "Hebrews 13:14",
+        "translation": "Berean Standard Bible",
+        "text": "For here we do not have a permanent city, but we are looking for the city that is to come.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Every generation since has met its own 312, some power offering protection in exchange for blessing.",
+        "Nothing in the fourth century says favor must corrupt. Everything in it says favor will try.",
+        "The martyrs were asked whether they'd die for their Lord. Constantine's age asked something harder.",
+        "Could the church hold power without worshiping it?"
+      ],
+      "titleCard": [
+        "The answer is not yet in.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

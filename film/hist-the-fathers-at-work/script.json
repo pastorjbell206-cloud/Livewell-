@@ -1,0 +1,121 @@
+{
+  "title": "The church fathers",
+  "note": "Church history film, lesson 'The Fathers at Work', written 2026-11-27. Every fact about the era comes from the lesson file client/public/history/essays/the-fathers-at-work.json; the three tradition lines in 'Where Christians differ' come from LiveWell's own pages the-plain-sense.json, bible/doctrines/canon.json and bible/doctrines/revelation.json (see facts.md). Scripture is the Berean Standard Bible, copied from client/public/bible/text/isaiah/43.json and 1-john/3.json.",
+  "page": "/theology/history/the-fathers-at-work",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "Between the councils",
+      "level": 0.2,
+      "lines": [
+        "We remember the great councils. But who carried the faith in the years between them?",
+        "A council was a few weeks of bishops in a hall. The doctrine took decades of work somewhere else, in sermons, letters and books written in exile."
+      ]
+    },
+    {
+      "id": "siege",
+      "kicker": "After Nicaea",
+      "level": 0.3,
+      "lines": [
+        "Nicaea met in 325 and confessed the Son to be fully God. That didn't end the fight.",
+        "For most of the next fifty-six years, until Constantinople in 381, Nicaea's defenders were deposed and banished.",
+        "What carried the truth wasn't an institution. It was a handful of teachers we call the church fathers."
+      ]
+    },
+    {
+      "id": "athanasius",
+      "kicker": "Athanasius against the world",
+      "level": 0.4,
+      "lines": [
+        "Athanasius came to Nicaea as a young deacon from Alexandria, and three years later was its bishop.",
+        "Four emperors drove him from his city five times, seventeen years in all on the run or in hiding.",
+        "His enemies called him violent, and some modern historians partly agree. What held him was one conviction, from his early book On the Incarnation.",
+        "If the Son is a creature, the cross is a creature's death and we're still in our sins. Only God can save.",
+        "I, yes I, am the LORD, and there is no Savior but Me.",
+        "He died in 373 with the fight undecided, eight years before Constantinople confirmed what he had held."
+      ],
+      "scripture": {
+        "reference": "Isaiah 43:11",
+        "translation": "Berean Standard Bible",
+        "text": "I, yes I, am the LORD, and there is no Savior but Me.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "cappadocia",
+      "kicker": "Three friends and a sister",
+      "level": 0.5,
+      "lines": [
+        "In Cappadocia, when famine struck in 368, Basil of Caesarea preached the rich into opening their barns and built what people called a new city for the poor.",
+        "Basil also wrote the treatise that secured the deity of the Holy Spirit. His friend Gregory of Nazianzus preached five sermons on the Trinity in 380, and was called the Theologian.",
+        "Their friendship broke and never fully healed. The doctrine got made anyway.",
+        "Basil's elder sister Macrina taught their brother, Gregory of Nyssa, and in 381 he carried her teaching into the council."
+      ]
+    },
+    {
+      "id": "grace",
+      "kicker": "Grace on trial",
+      "level": 0.6,
+      "lines": [
+        "The last great fight was about grace. Augustine had prayed, in effect, give what you command, and command what you will.",
+        "Pelagius, a British ascetic in Rome, was appalled, and his case was serious. God doesn't command the impossible, he argued.",
+        "Augustine answered from his own life. He hadn't been advised into holiness, but rescued from a will that kept choosing its chains.",
+        "The church weighed both and sided with Augustine, at Carthage in 418 and at Ephesus in 431.",
+        "We do not climb to God. God descends."
+      ]
+    },
+    {
+      "id": "method",
+      "kicker": "How the work was done",
+      "level": 0.68,
+      "lines": [
+        "None of them did theology apart from the church. Augustine worked out grace while judging lawsuits and preaching.",
+        "Their tools were the sermon, the letter, the psalm and the funeral. It all ran on friendship, injuries included."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.76,
+      "lines": [
+        "Christians hold the fathers in different ways.",
+        "Orthodox Christians hear them within Holy Tradition, the church's living memory, with Scripture at its heart.",
+        "Catholics hold, with the Council of Trent, that Scripture must not be read against the unanimous consent of the fathers.",
+        "Protestants hold Scripture as the only infallible rule, and still read the fathers closely, as Calvin read Augustine.",
+        "And on Augustine's late teaching about predestination, Christians have argued ever since."
+      ]
+    },
+    {
+      "id": "inheritance",
+      "kicker": "What we owe them",
+      "level": 0.85,
+      "lines": [
+        "They left us tested sentences, and proof of what those sentences cost.",
+        "The Nicene faith isn't true because Athanasius suffered for it. But his suffering shows doctrine can matter enough to lose everything for.",
+        "The difference between begotten and made is the difference between being saved by God and being encouraged by a creature."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "They also held together what we've pulled apart. Basil built the hospital and taught the Trinity, one life.",
+        "Little children, let us love not in word and speech, but in action and truth.",
+        "They worked as if the creed and the soup kitchen came from the same Lord. They do."
+      ],
+      "scripture": {
+        "reference": "1 John 3:18",
+        "translation": "Berean Standard Bible",
+        "text": "Little children, let us love not in word and speech, but in action and truth.",
+        "spoken": true
+      },
+      "titleCard": [
+        "Truth and mercy, one life.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
