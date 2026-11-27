@@ -1,0 +1,131 @@
+{
+  "title": "In Christ",
+  "note": "Doctrine film, written 2026-11-27 from the Study Bible doctrine page on union with Christ. Every fact comes from client/public/bible/doctrines/union.json (definition, ot, nt, history, differ, errors, life). See facts.md. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/study/bible/doctrines/union",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Read the New Testament and you keep running into a small phrase. In Christ.",
+        "What does that mean? How can one person be in another?"
+      ]
+    },
+    {
+      "id": "joined",
+      "kicker": "What the church confesses",
+      "level": 0.3,
+      "lines": [
+        "A Christian isn't only helped by Jesus from a distance. A Christian is joined to him.",
+        "What's true of him becomes true of them. They died with him, were raised with him, and will appear with him.",
+        "The Holy Spirit makes that bond, and faith receives it."
+      ]
+    },
+    {
+      "id": "phrase",
+      "kicker": "A small phrase",
+      "level": 0.4,
+      "lines": [
+        "Paul uses it, and close cousins like in him, all through his letters. In 1892 the scholar Adolf Deissmann counted a hundred and sixty-four of them.",
+        "He also reaches for words that mean with. Crucified with. Buried with. Raised with."
+      ]
+    },
+    {
+      "id": "roots",
+      "kicker": "The roots",
+      "level": 0.5,
+      "lines": [
+        "The Old Testament never says this outright. It gives the ground the idea grows from.",
+        "A God who makes his home in the middle of his people.",
+        "A Hebrew word for clinging, used when husband and wife become one flesh. The prophets made that bond a picture of God's love.",
+        "And one standing for many, the way Adam's choice reached the whole human race."
+      ]
+    },
+    {
+      "id": "vine",
+      "kicker": "The true vine",
+      "level": 0.55,
+      "lines": [
+        "Israel had been God's vine. Jesus took the picture for himself.",
+        "I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing.",
+        "Belonging to God's people now means being a branch in him.",
+        "Later the risen Jesus asked Saul, who was persecuting the church, why Saul was persecuting him.",
+        "To strike the church is to strike Christ."
+      ],
+      "scripture": {
+        "reference": "John 15:5",
+        "translation": "Berean Standard Bible",
+        "text": "I am the vine and you are the branches. The one who remains in Me, and I in him, will bear much fruit. For apart from Me you can do nothing.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "paul",
+      "kicker": "Died and raised with him",
+      "level": 0.65,
+      "lines": [
+        "For Paul, Adam and Christ each stand for a whole humanity. Joined to Adam, people share his death. Joined to Christ, they share his life.",
+        "Believers were buried with him through baptism, so they could walk in a new life.",
+        "Every spiritual blessing is given in him. Chosen in him. Redeemed in him. Sealed with the Spirit in him.",
+        "And no one is joined to him alone. Together, believers are his body."
+      ]
+    },
+    {
+      "id": "history",
+      "kicker": "Through the centuries",
+      "level": 0.7,
+      "lines": [
+        "Around the year 180, Irenaeus taught that Jesus went back over the ground where Adam failed, obeying where Adam disobeyed, so those joined to him share his victory.",
+        "In his Institutes, John Calvin wrote that as long as Christ stays outside us, all he suffered and did is no use to us.",
+        "The Holy Spirit, he said, is the bond that joins us to him."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.75,
+      "lines": [
+        "Christians describe this union in different ways.",
+        "Reformed Christians say believers receive two gifts in him, never separated. Declared right with God, and made new.",
+        "Lutherans say Christ comes through Word and sacrament. Luther pictured a joyful exchange. Christ takes the believer's sins and gives his righteousness.",
+        "Roman Catholics say baptism joins a person to Christ and his body, the church, and the Eucharist feeds that union.",
+        "The Orthodox call it theosis, sharing by grace in God's life, while God's essence stays beyond every creature.",
+        "Every one of them insists it's by grace. A creature joined to God is still a creature."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "What it changes",
+      "level": 0.85,
+      "lines": [
+        "This changes where a Christian finds who they are.",
+        "For you died, and your life is now hidden with Christ in God.",
+        "Failure and success are real. But they don't define someone whose life is found in another.",
+        "Suffering isn't proof that God is absent. It can be one of the ways the union is lived.",
+        "And the people beside them at the Lord's Supper, however different, belong to the same body."
+      ],
+      "scripture": {
+        "reference": "Colossians 3:3",
+        "translation": "Berean Standard Bible",
+        "text": "For you died, and your life is now hidden with Christ in God.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Even death doesn't break it. Paul calls believers who have died the dead in Christ, still in him, waiting for the resurrection.",
+        "No part of a Christian's life, not even its end, is outside of Christ."
+      ],
+      "titleCard": [
+        "Not only helped by him. Joined to him.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

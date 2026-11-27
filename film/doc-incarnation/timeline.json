@@ -1,0 +1,285 @@
+{
+ "length": 229.62,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 13.26,
+   "lines": [
+    {
+     "text": "Christians say God became a man. So which was Jesus?",
+     "start": 2.6,
+     "end": 6.36
+    },
+    {
+     "text": "God only wearing a body? Or a good man later called God?",
+     "start": 6.68,
+     "end": 10.18
+    },
+    {
+     "text": "The church's answer is neither.",
+     "start": 10.8,
+     "end": 12.36
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What the church confesses",
+   "level": 0.3,
+   "start": 12.46,
+   "end": 35.46,
+   "lines": [
+    {
+     "text": "It's called the incarnation, from the Latin word for flesh.",
+     "start": 13.36,
+     "end": 16.64
+    },
+    {
+     "text": "The eternal Son of God, without ceasing to be God, became a man, Jesus of Nazareth, conceived by the Holy Spirit and born of the virgin Mary.",
+     "start": 17.2,
+     "end": 26.48
+    },
+    {
+     "text": "He took a whole human nature, body and soul, mind and will.",
+     "start": 27.08,
+     "end": 31.12
+    },
+    {
+     "text": "One person, fully God and fully man.",
+     "start": 31.7,
+     "end": 34.56
+    }
+   ]
+  },
+  {
+   "id": "tent",
+   "kicker": "A God who dwells",
+   "level": 0.4,
+   "start": 34.66,
+   "end": 54.46,
+   "lines": [
+    {
+     "text": "The Old Testament doesn't say this outright. But it builds a longing.",
+     "start": 35.56,
+     "end": 39.24
+    },
+    {
+     "text": "At Sinai, Israel heard a voice but saw no form.",
+     "start": 39.84,
+     "end": 43.06
+    },
+    {
+     "text": "Yet God had His people build a tent so He could dwell among them. And His glory filled it.",
+     "start": 43.68,
+     "end": 48.56
+    },
+    {
+     "text": "Later, Solomon dedicated the temple and asked if God would really dwell on earth.",
+     "start": 49.26,
+     "end": 53.56
+    }
+   ]
+  },
+  {
+   "id": "promise",
+   "kicker": "The promised king",
+   "level": 0.5,
+   "start": 53.66,
+   "end": 70.4,
+   "lines": [
+    {
+     "text": "The promises of a coming king lean the same way.",
+     "start": 54.56,
+     "end": 57.34
+    },
+    {
+     "text": "Isaiah spoke of a son called Immanuel, God with us. Two chapters later, a child from David's house is called Mighty God.",
+     "start": 57.96,
+     "end": 65.92
+    },
+    {
+     "text": "And Malachi said the Lord would suddenly come to His temple.",
+     "start": 66.62,
+     "end": 69.5
+    }
+   ]
+  },
+  {
+   "id": "flesh",
+   "kicker": "The Word became flesh",
+   "level": 0.6,
+   "start": 69.6,
+   "end": 92.5,
+   "lines": [
+    {
+     "text": "Then John says it plainly.",
+     "start": 70.5,
+     "end": 71.96
+    },
+    {
+     "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth.",
+     "start": 72.52,
+     "end": 81.7
+    },
+    {
+     "text": "In Greek, made His dwelling means pitched His tent, the same word used for the tabernacle.",
+     "start": 82.56,
+     "end": 88.02
+    },
+    {
+     "text": "The glory that filled that tent is now seen in a man.",
+     "start": 88.62,
+     "end": 91.6
+    }
+   ]
+  },
+  {
+   "id": "human",
+   "kicker": "Truly human, truly God",
+   "level": 0.65,
+   "start": 91.7,
+   "end": 115.26,
+   "lines": [
+    {
+     "text": "The Gospels show a real human life. He grows, and He gets hungry.",
+     "start": 92.6,
+     "end": 96.94
+    },
+    {
+     "text": "He sleeps in a boat. He weeps at a friend's tomb.",
+     "start": 97.44,
+     "end": 100.46
+    },
+    {
+     "text": "In Gethsemane He's deeply troubled, and yields His will to the Father's.",
+     "start": 101.1,
+     "end": 105.28
+    },
+    {
+     "text": "Yet He forgives sins, which only God can do. He commands the sea, and it obeys.",
+     "start": 105.9,
+     "end": 111.5
+    },
+    {
+     "text": "No wonder the disciples asked who this could be.",
+     "start": 112.02,
+     "end": 114.36
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "Guarding both sides",
+   "level": 0.72,
+   "start": 114.46,
+   "end": 148.4,
+   "lines": [
+    {
+     "text": "The early church guarded both sides.",
+     "start": 115.36,
+     "end": 117.12
+    },
+    {
+     "text": "Around the year 110, Ignatius of Antioch answered those who said Christ only seemed to have a body. He was truly born, Ignatius wrote, and truly suffered and died.",
+     "start": 117.62,
+     "end": 128.6
+    },
+    {
+     "text": "When a teacher denied Christ a human mind, Gregory of Nazianzus answered that what Christ did not take on, He did not heal.",
+     "start": 129.44,
+     "end": 136.94
+    },
+    {
+     "text": "In 451, the Council of Chalcedon set the boundaries. One person in two natures, neither mixed nor changed, neither divided nor separated.",
+     "start": 137.58,
+     "end": 147.5
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.8,
+   "start": 147.6,
+   "end": 177.88,
+   "lines": [
+    {
+     "text": "Christians who confess all this still differ on some questions.",
+     "start": 148.5,
+     "end": 151.96
+    },
+    {
+     "text": "Would the Son have come if we had never sinned? Thomas Aquinas judged it more fitting to say no, since Scripture gives the remedy for sin as the reason.",
+     "start": 152.58,
+     "end": 161.3
+    },
+    {
+     "text": "John Duns Scotus said yes, because Christ was the goal of creation from the start.",
+     "start": 162.02,
+     "end": 166.9
+    },
+    {
+     "text": "And when Paul says Christ emptied Himself, did He veil His glory, or lay aside the use of some divine powers for a time? Christians answer both ways.",
+     "start": 167.22,
+     "end": 176.98
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "What it changes",
+   "level": 0.85,
+   "start": 177.08,
+   "end": 210.1,
+   "lines": [
+    {
+     "text": "When Christians ask what God is like, they look at Jesus.",
+     "start": 177.98,
+     "end": 181.2
+    },
+    {
+     "text": "He spent most of His years in a small town, working with His hands. Nothing human is beneath God's notice.",
+     "start": 181.74,
+     "end": 188.18
+    },
+    {
+     "text": "And the One Christians pray to has been where they are.",
+     "start": 188.8,
+     "end": 191.56
+    },
+    {
+     "text": "For we do not have a high priest who is unable to sympathize with our weaknesses, but we have one who was tempted in every way that we are, yet was without sin.",
+     "start": 192.22,
+     "end": 201.62
+    },
+    {
+     "text": "He still bears a human nature in heaven. The hope isn't escape from being human, but renewal, soul and body.",
+     "start": 202.24,
+     "end": 209.2
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 209.3,
+   "end": 223.519,
+   "lines": [
+    {
+     "text": "He was rich and became poor for others, and Paul makes that the pattern for how Christians treat each other.",
+     "start": 210.2,
+     "end": 216.06
+    },
+    {
+     "text": "God isn't a distant idea. He has a face and a name, and pitched His tent among us.",
+     "start": 216.74,
+     "end": 222.619
+    }
+   ]
+  }
+ ]
+}

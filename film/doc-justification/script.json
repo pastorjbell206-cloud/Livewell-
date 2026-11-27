@@ -1,0 +1,131 @@
+{
+  "title": "Right with God",
+  "note": "Doctrine film on the Study Bible page /study/bible/doctrines/justification. Every fact comes from client/public/bible/doctrines/justification.json (sections named in facts.md). Where Christians differ, the film names the Reformation, Roman Catholic and Eastern Orthodox views in terms their holders would accept and takes no side. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/study/bible/doctrines/justification",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The oldest question",
+      "level": 0.2,
+      "lines": [
+        "It's the oldest question in religion. How can a person be in the right with God?",
+        "Job asked it. So has anyone who felt they didn't measure up."
+      ]
+    },
+    {
+      "id": "court",
+      "kicker": "A word from the courtroom",
+      "level": 0.3,
+      "lines": [
+        "The Bible answers with a word from the courtroom. Justify.",
+        "To justify is what a judge does when he rules that someone stands in the right.",
+        "But God will not acquit the guilty. And the Psalms admit no one alive is righteous before Him.",
+        "So how can a just judge rule for the guilty?"
+      ]
+    },
+    {
+      "id": "abram",
+      "kicker": "Counted as righteous",
+      "level": 0.4,
+      "lines": [
+        "The first hint of an answer comes under a night sky.",
+        "God shows Abram the stars and promises children beyond counting. Abram is old and childless.",
+        "Abram believed the LORD, and it was credited to him as righteousness.",
+        "That's centuries before the law. Paul reads it as God counting a man righteous whose only part was trust in a promise."
+      ],
+      "scripture": {
+        "reference": "Genesis 15:6",
+        "translation": "Berean Standard Bible",
+        "text": "Abram believed the LORD, and it was credited to him as righteousness.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "grace",
+      "kicker": "Freely, by grace",
+      "level": 0.5,
+      "lines": [
+        "Jesus told of a tax collector who only asked for mercy. He went home justified, and the Pharisee did not.",
+        "Paul says sinners are justified freely, by God's grace, through what Christ has done.",
+        "The cross is how God stays just while putting the ungodly in the right. Their sin is dealt with, not waved away.",
+        "The gift is received through faith, not earned by keeping the law."
+      ]
+    },
+    {
+      "id": "james",
+      "kicker": "Paul and James",
+      "level": 0.55,
+      "lines": [
+        "But James writes that a person is justified by deeds, and not by faith alone.",
+        "Most interpreters say Paul asks how a sinner is accepted, while James attacks a faith that does nothing.",
+        "Others think James means the final verdict. Either way, the faith that receives the gift is never alone."
+      ]
+    },
+    {
+      "id": "history",
+      "kicker": "How the church read it",
+      "level": 0.62,
+      "lines": [
+        "The earliest Christian writers repeated Paul's words without a quarrel.",
+        "Augustine taught that justification is wholly God's gracious act, and took the Latin word to mean making righteous.",
+        "With Martin Luther, the Reformation made it a dividing question. The Catholic Church answered at the Council of Trent, in 1547."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.7,
+      "lines": [
+        "Christians differ here.",
+        "Lutheran and Reformed Christians teach that justification is a verdict. God forgives the sinner and credits to him Christ's righteousness.",
+        "Faith is the empty hand that receives it. A changed life always follows, but it's never the ground of the verdict.",
+        "Catholics teach that God doesn't only forgive. He truly makes the sinner righteous, pouring His love into the heart by the Holy Spirit.",
+        "Grace comes first, and no one can earn it. Faith is the root, joined with hope and love.",
+        "Because it's a real change, it can grow, be lost through grave sin, and be restored through repentance and the sacrament of penance.",
+        "The Orthodox confess salvation as entirely God's gift in Christ, but their main picture is theosis, union with God, not a courtroom.",
+        "They generally see the Western quarrel as resting on a line between declaring and making righteous that they never drew."
+      ]
+    },
+    {
+      "id": "share",
+      "kicker": "What they share",
+      "level": 0.78,
+      "lines": [
+        "All of them reject the idea of standing before God on your own record, apart from grace.",
+        "In 1999, the Lutheran World Federation and the Catholic Church signed a joint declaration of shared basic truths, leaving real differences open. Many confessional Lutherans, Reformed and evangelicals judged it papered over them."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "For an ordinary day",
+      "level": 0.85,
+      "lines": [
+        "Someone who keeps their own accounts with God is never at rest. The books never balance.",
+        "Being justified brings peace with God. Someone who knows they're accepted can afford to tell the truth about their sin.",
+        "The tax collector and the Pharisee, the churchgoer and the latecomer, stand on the same footing.",
+        "The acquitted have every reason to pass that mercy on."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Therefore, there is now no condemnation for those who are in Christ Jesus.",
+        "No one can put themselves in the right with God. It's His work, and it comes as a gift."
+      ],
+      "scripture": {
+        "reference": "Romans 8:1",
+        "translation": "Berean Standard Bible",
+        "text": "Therefore, there is now no condemnation for those who are in Christ Jesus.",
+        "spoken": true
+      },
+      "titleCard": [
+        "Right with God, as a gift.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

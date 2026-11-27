@@ -1,0 +1,133 @@
+{
+  "title": "Growing in grace",
+  "note": "Doctrine film, written 2026-11-27 for the Study Bible doctrine page on sanctification. Every fact comes from client/public/bible/doctrines/sanctification.json (definition, ot, nt, history, differ, errors, life); see facts.md. Scripture is the Berean Standard Bible, copied from client/public/bible/text/. Not yet recorded or read by James.",
+  "page": "/study/bible/doctrines/sanctification",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "You've trusted Christ, and you know you're forgiven. So why are you still fighting the same old sins?",
+        "And if God already accepts you, does it matter how you live?"
+      ]
+    },
+    {
+      "id": "holy",
+      "kicker": "What holy means",
+      "level": 0.3,
+      "lines": [
+        "The Bible answers both with one word. Sanctification.",
+        "To be holy is first to belong to God, set apart for him, and then to become like him.",
+        "Sanctification is the Holy Spirit's lifelong work of setting believers apart and making them like Jesus Christ.",
+        "It isn't justification, God's verdict that you're in the right, but the two never come apart."
+      ]
+    },
+    {
+      "id": "tenses",
+      "kicker": "Two tenses",
+      "level": 0.4,
+      "lines": [
+        "Scripture speaks in two tenses. Believers already are sanctified, and they're being sanctified.",
+        "Paul wrote to a church full of factions and lawsuits, and still told them they'd been sanctified.",
+        "A saint, in the Bible, isn't a rare hero. It's any member of God's people.",
+        "One tense is still to come. When Christ appears, his people will be like him."
+      ]
+    },
+    {
+      "id": "israel",
+      "kicker": "Holy to the Lord",
+      "level": 0.5,
+      "lines": [
+        "Holiness starts as God's claim. At Sinai he claims a whole people, holy because he chose them.",
+        "Leviticus calls Israel to be holy as God is holy, then to leave the edges of the harvest for the poor.",
+        "Holiness meant being like a God who cares for the poor.",
+        "Through Ezekiel, God promised his people a new heart, and his Spirit within them."
+      ]
+    },
+    {
+      "id": "christ",
+      "kicker": "Set apart in Christ",
+      "level": 0.55,
+      "lines": [
+        "The night before he died, Jesus prayed for his disciples to be sanctified, and set himself apart for their sake.",
+        "Hebrews says believers were sanctified once for all by his sacrifice, and are still being sanctified.",
+        "Is grace a license to sin? No, says Paul, because believers have died with Christ and been set free from sin."
+      ]
+    },
+    {
+      "id": "work",
+      "kicker": "Who does the work?",
+      "level": 0.65,
+      "lines": [
+        "So who does the work, God or you? Paul says both.",
+        "Continue to work out your salvation, he writes. Then he says why.",
+        "For it is God who works in you to will and to act on behalf of His good purpose.",
+        "And the Spirit grows one fruit, not many. Love, joy, peace, patience, kindness, goodness, faithfulness, gentleness and self-control."
+      ],
+      "scripture": {
+        "reference": "Philippians 2:13",
+        "translation": "Berean Standard Bible",
+        "text": "For it is God who works in you to will and to act on behalf of His good purpose.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "history",
+      "kicker": "Through the centuries",
+      "level": 0.7,
+      "lines": [
+        "In the late fourth century, Gregory of Nyssa called perfection endless growth into God, because God has no end.",
+        "Augustine taught that holiness itself is a gift of grace, and that no one in this life is without sin."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.8,
+      "lines": [
+        "Christians differ on how far holiness reaches in this life.",
+        "Reformed churches teach a decisive break with sin's rule, then slow growth, never finished in this life.",
+        "Lutherans stress living from forgiveness, a daily return to baptism, and not trusting your own progress.",
+        "Wesleyan and Holiness churches teach entire sanctification, a heart so full of love that the will is wholly God's, though not sinless perfection.",
+        "Keswick teaching calls for a decisive act of surrender and faith, then a life of consistent victory.",
+        "Catholics speak of grace growing through the sacraments, the Orthodox of theosis, lifelong growth into likeness to God."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "In ordinary life",
+      "level": 0.85,
+      "lines": [
+        "So because you're already set apart and loved, failure doesn't undo your standing.",
+        "And because God means to make you like Christ, you can't make peace with your sin either.",
+        "The means are ordinary: Scripture, prayer, confession, the Lord's Supper, other believers, small duties, even hardship.",
+        "Growth is often slow, and others tend to see it before you do.",
+        "Zechariah saw a day when every cooking pot in Jerusalem would be holy.",
+        "Holiness reaches into how you pay a worker, treat the disabled, talk about people and forgive."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "It all rests on a promise. The God who began the work will finish it.",
+        "The One who calls you is faithful, and He will do it.",
+        "Christians press on, not to earn the day Christ appears, but because it's coming."
+      ],
+      "scripture": {
+        "reference": "1 Thessalonians 5:24",
+        "translation": "Berean Standard Bible",
+        "text": "The One who calls you is faithful, and He will do it.",
+        "spoken": true
+      },
+      "titleCard": [
+        "Already his. Still growing.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
