@@ -1,0 +1,337 @@
+<!doctype html>
+<!-- "A blessing for all nations". One crowd of plain ink dots, all alike, carries the whole film: packed round a
+     plain stepped tower at Babel, scattered into eight families along the ground, dimmed and then lit family by
+     family as the promise to Abram reaches them, drawn in (Blauw's "centripetal"), gathered at Pentecost and sent
+     home again, and at the end grown into a multitude too large to count. Peoples differ only in where they stand,
+     never in colour or shape. Languages are abstract stroke marks, not real scripts; Cyril and Methodius's alphabet
+     is invented glyph shapes. The LORD "coming down" is a faint light only (never above 0.12); God is never drawn.
+     Pentecost is a few small mustard flame shapes well above the dots, touching none. Jesus is one upright mustard
+     bar (the servant, the child, the mountain, the Lamb); there is no throne figure. Jonah's fish is not shown.
+     Nothing is drawn across a verse. Words and timing come from script.json and timeline.json.
+     Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>A blessing for all nations</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", R = rng(41);
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const G = (p) => el("g", {}, p || world);
+  const dot = (p, x, y, r = 10) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const sl = (p, d, w = 3, c = INK, extra = {}) => el("path", { d, fill: "none", stroke: c, "stroke-width": w, "stroke-linecap": "round", "stroke-linejoin": "round", ...extra }, p);
+  const lab = (p, x, y, s, size = 15, fill) => txt(p, "lab", x, y, s, size, fill ? { fill } : undefined);
+  const verse = (ch, cx, y, size, max, big) => { const g = G(), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  const defs = el("defs", {}, world), grad = el("radialGradient", { id: "glow", cx: "50%", cy: "50%", r: "50%" }, defs);
+  el("stop", { offset: "0", "stop-color": MUSTARD, "stop-opacity": 1 }, grad); el("stop", { offset: "0.6", "stop-color": MUSTARD, "stop-opacity": 0.75 }, grad); el("stop", { offset: "1", "stop-color": MUSTARD, "stop-opacity": 0 }, grad);
+  const glow = (p, x, y, w, h) => el("rect", { x, y, width: w, height: h, fill: "url(#glow)" }, p);
+  const lit = (e, v) => op(e, Math.min(0.12, v));
+  const dash = (p, d, w = 2.5) => line(p, d, { stroke: STONE, "stroke-width": w });
+  const hop = (a, b, k, h) => [mix(a[0], b[0], k), mix(a[1], b[1], k) - h * Math.sin(Math.PI * k)];
+
+  // chapter starts (line 0, 1, 2 ...)
+  const A = [0, 1, 2].map((k) => S("babel", k)), B = [0, 1, 2].map((k) => S("abram", k)), Ru = [0, 1, 2].map((k) => S("ruth", k));
+  const P = [0, 1, 2].map((k) => S("psalm", k)), J = [0, 1, 2].map((k) => S("jonah", k)), V = [0, 1, 2].map((k) => S("servant", k));
+  const M = [0, 1, 2].map((k) => S("commission", k)), N = [0, 1, 2, 3].map((k) => S("pentecost", k)), C = [0, 1, 2].map((k) => S("cornelius", k)), T = [0, 1, 2].map((k) => S("multitude", k));
+
+  const ground = line(world, "M-20 470 H1300", { "stroke-width": 3 });
+
+  // ---------- the families: eight groups of nine dots, all alike ----------
+  const CL = [90, 215, 340, 465, 815, 940, 1065, 1190];
+  const OFF = [[-44, 459], [-22, 459], [0, 459], [22, 459], [44, 459], [-33, 439], [-11, 439], [11, 439], [33, 439]];
+  // the multitude's places: five rows across the plain, leaving room round the Lamb
+  const slots = []; for (let r = 0; r < 5; r++) for (let x = 50 + (r % 2) * 9; x <= 1232; x += 18) if (Math.abs(x - 640) > 54) slots.push([x, 459 - r * 18]);
+  for (let i = slots.length - 1; i > 0; i--) { const k = Math.floor(R() * (i + 1)); [slots[i], slots[k]] = [slots[k], slots[i]]; }
+  const extras = slots.slice(72).map(([x, y]) => ({ e: dot(world, x, y, 6.5), x, y, dl: 4.2 * (1 - Math.abs(x - 640) / 600) + R() * 0.9 }));
+  const pop = [...Array(72)].map((_, i) => { const c = Math.floor(i / 9), j = i % 9, side = i < 36 ? 0 : 1, k = i % 36;
+    return { e: dot(world, 0, 0, 7.5), c, j, d: R(), H: [CL[c] + OFF[j][0], OFF[j][1]],
+      B: [(side ? 740 : 380) + (k % 9) * 20, 459 - Math.floor(k / 9) * 19], Jr: [(side ? 710 : 410) + (k % 9) * 20, 459 - Math.floor(k / 9) * 20],
+      In: (c < 4 ? j === 4 : j === 0) ? [640 + (c - 3.5) * 22, 419] : null, M: slots[i] }; });
+
+  // Israel: one small group of nine, moved from scene to scene
+  const IG = G(); OFF.forEach(([dx, y]) => dot(IG, dx, y, 7.5));
+
+  // ================= 1 babel: the crowd, the stepped tower, light only, the scattering =================
+  const TOWER = "M560 470 V434 H576 V398 H592 V362 H608 V326 H624 V290 H656 V326 H672 V362 H688 V398 H704 V434 H720 V470";
+  const gTower = G();
+  const tFill = el("path", { d: TOWER + " Z", fill: WARM }, gTower);
+  const tLine = line(gTower, TOWER, { "stroke-width": 3 });
+  const tDash = sl(gTower, TOWER, 2.5, STONE, { "stroke-dasharray": "6 9" });
+  const down = glow(world, 520, 0, 240, 260);
+  const labShinar = lab(world, 640, 506, "A PLAIN IN SHINAR · GENESIS 11");
+  const labStop = lab(world, 640, 506, "THEY STOPPED BUILDING THE CITY");
+
+  // ================= 2 abram: one old couple; a name; every family =================
+  const abram = [dot(world, 566, 459), dot(world, 712, 459)];
+  const labAb = lab(world, 640, 506, "ABRAM AND SARAI");
+  const nameA = lab(world, 640, 384, "A NAME FOR OURSELVES · GENESIS 11:4", 15, STONE);
+  const nameB = lab(world, 640, 384, "I WILL MAKE YOUR NAME GREAT · GENESIS 12:2", 15, INK);
+  const arcs = CL.map((cx) => dash(world, `M584 464 Q${((584 + cx) / 2).toFixed(0)} ${(350 - Math.abs(cx - 584) * 0.1).toFixed(0)} ${cx} 418`));
+  const word = G(); txt(word, "ital", 640, 318, "mishpachah", 48); lab(word, 640, 350, "FAMILIES · GENESIS 10 AND 12", 14);
+  const ticks = CL.map((cx) => el("rect", { x: cx - 22, y: 480, width: 44, height: 3, fill: MUSTARD }, world));
+
+  // ================= 3 ruth: outsiders walk in; a low fence; Ruth crosses; four generations =================
+  const fence = G(); sl(fence, "M702 432 H738 M710 470 V432 M730 470 V432", 3); lab(fence, 720, 404, "DEUTERONOMY 23:3 · KEPT OUT", 13);
+  const rahab = dot(world, 0, 459, 7.5), ruth = dot(world, 0, 459, 7.5);
+  const labRahab = lab(world, 0, 506, "RAHAB · JERICHO"), labRuth = lab(world, 0, 506, "RUTH · MOAB");
+  const pg = G(); lab(pg, 0, 0, "A PEOPLE AND ITS GOD", 14);
+  const pgLine = dash(world, "M420 362 H800");
+  const lineage = G(); sl(lineage, "M540 300 H860", 2.5, STONE); [540, 646, 753, 860].forEach((x) => dot(lineage, x, 300, 8));
+  lab(lineage, 540, 334, "RUTH", 13); lab(lineage, 860, 334, "KING DAVID", 13);
+
+  // ================= 4 psalm: blessed so that; drawn in; a held question =================
+  const pGlow = glow(world, 520, 340, 240, 170);
+  const labNum = lab(world, 640, 506, "NUMBERS 6:24-26 · THE PRIESTS' BLESSING");
+  const outArcs = CL.map((cx) => dash(world, `M${cx < 640 ? 596 : 684} 418 Q${((640 + cx) / 2).toFixed(0)} ${(360 - Math.abs(cx - 640) * 0.12).toFixed(0)} ${cx} 418`));
+  const inArcs = CL.map((cx) => dash(world, `M${cx} 420 Q${((640 + cx) / 2).toFixed(0)} ${(396 - Math.abs(cx - 640) * 0.06).toFixed(0)} ${cx < 640 ? 566 : 714} 408`));
+  const labBlauw = lab(world, 640, 506, "JOHANNES BLAUW · 1962");
+  const centri = G(); txt(centri, "ital", 640, 330, "centripetal", 44); lab(centri, 640, 362, "THE NATIONS DRAWN IN", 13);
+  const qP = txt(world, "disp", 640, 300, "?", 96, { fill: MUSTARD });
+
+  // ================= 5 jonah: sent east, runs west; the city spared; God's question =================
+  const city = G();
+  const SKY = "M760 470 V382 H800 V350 H850 V390 H900 V330 H960 V372 H1010 V346 H1050 V392 H1080 V470";
+  el("path", { d: SKY + " Z", fill: WARM }, city); const cityLine = line(city, SKY, { "stroke-width": 3 });
+  [800, 900, 1010].forEach((x) => sl(city, `M${x + 12} 470 V440 H${x + 30} V470`, 2.5, STONE));
+  const labNin = lab(world, 920, 506, "NINEVEH · ASSYRIA");
+  const sent = dash(world, "M440 440 Q600 372 750 430");
+  const jonah = dot(world, 420, 459, 9);
+  const labJon = lab(world, 420, 506, "JONAH");
+  const away = dash(world, "M400 452 Q240 420 70 452");
+  const labTar = lab(world, 150, 506, "TOWARD TARSHISH");
+  const hill = sl(world, "M1100 470 Q1180 424 1260 470", 3, STONE);
+  const jonah2 = dot(world, 1180, 438, 9);
+  const cityGlow = glow(world, 720, 270, 400, 230);
+  const labCreed = lab(world, 420, 506, "EXODUS 34:6 · ISRAEL'S CREED");
+  const qJ = txt(world, "disp", 600, 330, "?", 96, { fill: MUSTARD });
+
+  // ================= 6 servant: restoring Israel is not enough; a light to the ends; four readings; the bar =================
+  const brk = G(); sl(brk, "M588 488 V496 H692 V488", 2.5, STONE); lab(brk, 640, 522, "RESTORE ISRAEL", 13);
+  const lightL = el("rect", { x: 640, y: 477, width: 0, height: 3, fill: MUSTARD }, world), lightR = el("rect", { x: 640, y: 477, width: 0, height: 3, fill: MUSTARD }, world);
+  const labEnds = lab(world, 1090, 506, "THE ENDS OF THE EARTH", 14);
+  const labCalled = lab(world, 640, 232, "ISAIAH 49:3 · THE SERVANT CALLED ISRAEL", 14);
+  const cards = [[205, "The nation"], [485, "A faithful remnant"], [795, "The prophet himself"], [1075, "A king to come"]].map(([x, s]) => {
+    const g = G(); el("rect", { x: x - 125, y: 270, width: 250, height: 100, fill: PAPER, stroke: INK, "stroke-width": 3 }, g); txt(g, "ital", x, 330, s, 28); return g; });
+  const bar = el("rect", { x: 633, y: 470, width: 14, height: 0, rx: 3, fill: MUSTARD }, world);
+  const labNT = lab(world, 640, 506, "AS THE NEW TESTAMENT READS HIM");
+
+  // ================= 7 commission: Magi from the east; the mountain; two readings; from Israel to the nations =================
+  const magi = [0, 1, 2, 3].map(() => dot(world, 1300, 459, 8));
+  const labMagi = lab(world, 960, 506, "MAGI FROM THE EAST · MATTHEW 2");
+  const mount = line(world, "M520 470 L640 380 L760 470", { "stroke-width": 3 });
+  const labMt = lab(world, 640, 506, "MATTHEW 28 · A MOUNTAIN IN GALILEE");
+  const goPaths = CL.map((cx) => dash(world, `M${cx < 640 ? 590 : 690} 418 Q${((640 + cx) / 2).toFixed(0)} ${(350 - Math.abs(cx - 640) * 0.05).toFixed(0)} ${cx} 418`));
+  const debate = G();
+  lab(debate, 640, 222, "PANTA TA ETHNĒ · STILL DEBATED", 15);
+  sl(debate, "M300 246 H980", 3); sl(debate, "M640 246 V470", 3, STONE);
+  el("rect", { x: 310, y: 262, width: 300, height: 190, fill: PAPER, stroke: INK, "stroke-width": 3 }, debate);
+  el("rect", { x: 670, y: 262, width: 300, height: 190, fill: PAPER, stroke: INK, "stroke-width": 3 }, debate);
+  txt(debate, "ital", 460, 310, "Peoples as groups", 30); txt(debate, "ital", 820, 310, "Simply everyone", 30);
+  [385, 435, 485, 535].forEach((x) => [[-10, 372], [0, 372], [10, 372], [-5, 363], [5, 363]].forEach(([dx, y]) => dot(debate, x + dx, y, 4)));
+  for (let r = 0; r < 2; r++) for (let k = 0; k < 9; k++) dot(debate, 740 + k * 20, 362 + r * 16, 4);
+  lab(debate, 460, 412, "RALPH WINTER", 12); lab(debate, 460, 432, "DONALD MCGAVRAN", 12);
+  const fromPaths = CL.map((cx) => dash(world, `M${cx < 640 ? 596 : 684} 418 Q${((640 + cx) / 2).toFixed(0)} ${(372 - Math.abs(cx - 640) * 0.1).toFixed(0)} ${cx} 418`));
+  const labFrom = lab(world, 640, 506, "FROM ISRAEL TO THE NATIONS");
+
+  // ================= 8 pentecost: gathered; small flames well above; every tongue keeps its own marks =================
+  const labJer = lab(world, 640, 506, "JERUSALEM · THE FEAST OF WEEKS");
+  const flames = [604, 622, 640, 658, 676].map((x) => { const g = G(); el("path", { d: "M0 0 Q-7 -7 0 -18 Q7 -7 0 0 Z", fill: MUSTARD }, g); return { g, x }; });
+  const ghost = G(); sl(ghost, TOWER, 6, STONE, { "stroke-dasharray": "12 16", transform: "translate(230 470) scale(0.42) translate(-640 -470)" });
+  const labBab1 = lab(world, 230, 506, "BABEL REVERSED?", 14), labBab2 = lab(world, 230, 528, "A LONG READING, NOT THE TEXT'S WORDS", 12);
+  const GLYPH = [
+    (x) => `M${x} 0 l3 -10 l3 10 l3 -10`, (x) => `M${x} -5 q2.5 -7 5 0 t5 0`, (x) => `M${x} 0 v-10 M${x + 4} 0 v-6 M${x + 8} 0 v-10`, (x) => `M${x} -10 v8 q0 2 3 2 h5`,
+    (x) => `M${x} -10 l8 10 M${x + 8} -10 l-8 10`, (x) => `M${x} 0 v-6 q4 -6 8 0 v6`, (x) => `M${x} -3 h9 M${x + 2} -9 h5`, (x) => `M${x} 0 l4 -10 l4 10 M${x + 1} -4 h6`];
+  const marks = CL.map((cx, k) => { const g = G(); sl(g, [0, 1, 2, 3, 4].map((i) => GLYPH[(k + (i % 2) * 3) % 8](cx - 34 + i * 14)).join(" "), 2.5, STONE, { transform: "translate(0 398)" }); return g; });
+  const msg = CL.map((cx) => el("rect", { x: cx - 26, y: 408, width: 52, height: 3, fill: MUSTARD }, world));
+  const CYR = ["M0 0 V-22 M0 -11 Q12 -22 12 -6", "M0 -4 Q6 -26 12 -4 M3 0 H9", "M6 0 V-22 M0 -16 L6 -10 L12 -16", "M0 -22 H12 M3 -22 Q0 -6 8 0", "M0 0 Q0 -14 6 -14 Q12 -14 12 -22 M4 -6 H12", "M0 -22 V-8 Q0 0 6 0 Q12 0 12 -8 M6 -18 V-10", "M0 -11 H12 M6 -22 Q14 -11 6 0", "M0 0 L6 -22 L12 0 M6 -22 V-8"];
+  const cyr = CYR.map((d, i) => line(world, d, { "stroke-width": 3, transform: `translate(${532 + i * 28} 310)` }));
+  const labCyr = lab(world, 640, 254, "CYRIL AND METHODIUS · 863"), labSlav = lab(world, 640, 350, "AN ALPHABET FOR THE SLAVIC LANGUAGE", 14);
+
+  // ================= 9 cornelius: a question; Peter goes into the house; told, retold, recalled =================
+  const left = G(); OFF.forEach(([dx, y]) => dot(left, 250 + dx, y, 7.5));
+  const house = G();
+  el("rect", { x: 760, y: 340, width: 240, height: 130, fill: WARM }, house);
+  const hLine = line(house, "M760 470 V340 H1000 V470 M742 340 H1018", { "stroke-width": 3 });
+  const door = el("rect", { x: 852, y: 400, width: 36, height: 70, fill: PAPER, stroke: INK, "stroke-width": 3 }, house);
+  [[776, 459], [922, 459], [982, 459]].forEach(([x, y]) => dot(house, x, y, 7.5));
+  const peter = dot(world, 330, 459, 9);
+  const labCor = lab(world, 880, 506, "CORNELIUS · A ROMAN OFFICER"), labPet = lab(world, 330, 506, "PETER");
+  const qC = txt(world, "disp", 560, 400, "?", 84, { fill: STONE });
+  const hGlow = glow(world, 740, 300, 280, 200);
+  const acts = G(); const actsLine = line(acts, "M300 262 H1180", { stroke: STONE, "stroke-width": 2.5 });
+  const actsTicks = [[420, "ACTS 10 · TOLD"], [620, "ACTS 11 · RETOLD"], [820, "ACTS 15 · RECALLED"]].map(([x, s]) => { const g = G(acts); sl(g, `M${x} 252 V272`, 3); lab(g, x, 238, s, 13); return g; });
+  const labAfter = lab(acts, 1060, 238, "EVERYTHING AFTER", 13);
+
+  // ================= 10 multitude: too large to count; the Lamb, one upright bar; who crossed for you =================
+  const throneGlow = glow(world, 470, 250, 340, 280);
+  const lamb = el("rect", { x: 633, y: 470, width: 14, height: 0, rx: 3, fill: MUSTARD }, world);
+  const labGen = lab(world, 640, 506, "GENESIS 12 TO REVELATION 7");
+  const chainX = [140, 250, 360, 470];
+  const chain = G(); sl(chain, "M140 250 H470", 2, LINE);
+  const chainDots = chainX.map((x) => dot(chain, x, 250, 8));
+  const bounds = [195, 305, 415].map((x) => sl(chain, `M${x} 228 V272`, 2.5, STONE, { "stroke-dasharray": "4 6" }));
+  const qT = txt(world, "disp", 540, 276, "?", 84, { fill: MUSTARD });
+
+  // verses last, so nothing is drawn over them
+  const vA = verse(SC.babel, 640, 150, 34, 50, true), vB = verse(SC.abram, 640, 150, 36, 46, true), vR = verse(SC.ruth, 640, 150, 36, 46, true);
+  const vP = verse(SC.psalm, 640, 150, 34, 46, true), vJ = verse(SC.jonah, 640, 150, 40, 50, true), vV = verse(SC.servant, 640, 140, 32, 54, true);
+  const vM = verse(SC.commission, 640, 160, 40, 52, true), vN = verse(SC.pentecost, 640, 150, 38, 50, true), vC = verse(SC.cornelius, 640, 140, 32, 54, true);
+  const vT = verse(SC.multitude, 640, 128, 30, 58, true);
+
+  F.title("A blessing for all nations", 70);
+  F.endCard(SC.multitude.titleCard, END + 0.7);
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    draw(ground, up(t, A[0] - 1.4, 1.6)); op(ground, outAll);
+
+    // ----- the crowd that becomes the families -----
+    const scatter = at("babel", 1, 0.5), home2 = at("pentecost", 2, 0.45);
+    pop.forEach((p) => {
+      let q = hop(p.B, p.H, up(t, scatter + p.d * 1.4, 2.8), 18);
+      if (p.In) q = hop(q, p.In, up(t, P[1] + 1.5 + p.c * 0.25, 2.5) * (1 - up(t, J[0], 0.5)), 10);
+      q = hop(q, p.Jr, up(t, N[0] + 0.2 + p.d * 1.2, 2.5), 10);
+      q = hop(q, p.H, up(t, home2 + p.d, 2.4), 10);
+      const km = up(t, T[0] + 0.6 + p.d * 2, 3); q = hop(q, p.M, km, 12);
+      set(p.e, { cx: q[0].toFixed(1), cy: q[1].toFixed(1), r: mix(7.5, 6.5, km).toFixed(2) });
+      const fam = 1 - 0.65 * up(t, B[0] + 0.3, 1) * (1 - up(t, at("abram", 2, 0.42) + p.c * 0.55, 0.8));
+      const ts = at("servant", 0, 0.55) + 3 * Math.abs(CL[p.c] - 640) / 620;
+      const o = span(t, A[0] - 0.6 + p.d * 1.5, Ru[0] - 0.1, 0.6, 0.8) * fam
+        + span(t, P[0] + 0.3 + p.d * 1.2, J[0] - 0.1, 0.6, 0.8)
+        + 0.7 * span(t, ts, V[1] + 0.3, 0.6, 0.7)
+        + span(t, at("commission", 0, 0.72) + p.d * 0.8, M[1] - 0.1, 0.6, 0.6)
+        + span(t, M[2] + 0.2 + p.d * 0.6, C[0] - 0.1, 0.6, 0.8)
+        + up(t, T[0] + 0.4 + p.d * 2, 0.6) * (1 - 0.6 * up(t, T[2], 1.2)) * outAll;
+      op(p.e, o);
+    });
+    extras.forEach((x) => op(x.e, up(t, T[0] + 1.2 + x.dl, 0.8) * (1 - 0.6 * up(t, T[2], 1.2)) * outAll));
+
+    // Israel's group: where it stands, and when
+    const igx = up(t, P[0] - 0.6, 1.6) < 1 ? mix(860, 640, up(t, P[0] - 0.6, 1.6)) : 640;
+    IG.setAttribute("transform", `translate(${igx.toFixed(1)} 0)`);
+    op(IG, span(t, Ru[0] - 0.3, J[0] - 0.2, 0.7, 0.7) + span(t, V[0] - 0.5, V[1] - 0.1, 0.7, 0.6) + span(t, M[2] - 0.2, C[0] - 0.1, 0.7, 0.8));
+
+    // ----- 1 babel -----
+    const tIn = up(t, A[0] + 0.6, 6.2), small = up(t, A[1] + 0.4, 2.6), stopped = up(t, A[2] + 0.2, 1.4);
+    gTower.setAttribute("transform", `translate(640 470) scale(${mix(1, 0.55, small).toFixed(3)}) translate(-640 -470)`);
+    op(gTower, up(t, A[0] + 0.5, 0.5) * (1 - up(t, B[0] - 0.2, 0.9)));
+    draw(tLine, tIn); op(tLine, 1 - stopped); op(tFill, up(t, A[0] + 3.5, 2.5) * (1 - 0.6 * stopped)); op(tDash, 0.8 * stopped);
+    set(down, { y: mix(-260, 230, up(t, A[1], 3.2)).toFixed(1) }); lit(down, 0.1 * span(t, A[1] - 0.2, scatter + 0.6, 0.8, 1.0));
+    op(labShinar, span(t, A[0] + 1.2, A[1] - 0.2, 0.6)); op(labStop, span(t, A[2] + 0.3, B[0] - 0.1, 0.6));
+    op(vA, span(t, at("babel", 1, 0.42), A[2] - 0.1, 0.5));
+
+    // ----- 2 abram -----
+    const abOut = 1 - up(t, Ru[0] - 0.6, 0.7);
+    abram.forEach((d, i) => op(d, up(t, B[0] + 0.6 + i * 0.5, 0.7) * abOut));
+    op(labAb, span(t, B[0] + 1.4, B[1] - 0.1, 0.6));
+    op(nameA, span(t, B[1] - 0.1, at("abram", 1, 0.3), 0.5)); op(nameB, span(t, at("abram", 1, 0.26), at("abram", 1, 0.56), 0.5));
+    arcs.forEach((a, i) => { draw(a, up(t, at("abram", 1, 0.62) + Math.abs(CL[i] - 640) / 900, 1.6)); op(a, abOut); });
+    op(vB, span(t, at("abram", 1, 0.5), B[2] + 0.1, 0.5));
+    op(word, span(t, B[2] + 0.1, Ru[0] - 0.4, 0.6));
+    ticks.forEach((k, c) => op(k, up(t, at("abram", 2, 0.42) + c * 0.55, 0.8) * abOut));
+
+    // ----- 3 ruth -----
+    const rOut = 1 - up(t, P[0] - 0.6, 0.8);
+    const rx = mix(-20, 794, up(t, Ru[0] + 0.3, 4.2));
+    set(rahab, { cx: rx.toFixed(1) }); op(rahab, up(t, Ru[0] + 0.2, 0.5) * rOut); set(labRahab, { x: rx.toFixed(1) }); op(labRahab, span(t, Ru[0] + 0.6, Ru[0] + 4.6, 0.5));
+    const walk = up(t, Ru[0] + 2.2, 4.0), cross = up(t, at("ruth", 1, 0.3), 2.0);
+    const [ux, uy] = hop([mix(-20, 620, walk), 459], [772, 459], cross, 34);
+    set(ruth, { cx: ux.toFixed(1), cy: uy.toFixed(1) }); op(ruth, up(t, Ru[0] + 2.1, 0.5) * rOut);
+    set(labRuth, { x: ux.toFixed(1) }); op(labRuth, span(t, Ru[0] + 2.6, at("ruth", 1, 0.3), 0.5));
+    op(fence, span(t, at("ruth", 0, 0.62), P[0] - 0.4, 0.7));
+    const slide = up(t, at("ruth", 1, 0.8), 2.0);
+    pg.setAttribute("transform", `translate(${mix(400, 860, slide).toFixed(1)} 350)`); op(pg, span(t, at("ruth", 1, 0.56), Ru[2] - 0.2, 0.6));
+    draw(pgLine, slide); op(pgLine, span(t, at("ruth", 1, 0.78), Ru[2] - 0.2, 0.4, 0.6));
+    op(vR, span(t, S("ruth", 1) - 0.1, at("ruth", 1, 0.52), 0.5));
+    op(lineage, span(t, Ru[2] - 0.2, P[0] - 0.3, 0.6)); lineage.setAttribute("transform", `translate(0 ${(8 * (1 - up(t, Ru[2] - 0.2, 1.2))).toFixed(1)})`);
+
+    // ----- 4 psalm -----
+    const still = up(t, P[2], 0.6);
+    lit(pGlow, (0.1 - 0.04 * still) * span(t, P[0] + 0.2, J[0] - 0.4, 1.0, 0.8));
+    op(labNum, span(t, P[0] + 0.3, at("psalm", 0, 0.5), 0.6));
+    op(vP, span(t, at("psalm", 0, 0.36), P[1] - 0.1, 0.5));
+    outArcs.forEach((a, i) => { draw(a, up(t, at("psalm", 0, 0.62) + Math.abs(CL[i] - 640) / 900, 1.6)); op(a, span(t, at("psalm", 0, 0.6), P[1] + 0.4, 0.3, 0.6)); });
+    inArcs.forEach((a, i) => { draw(a, up(t, P[1] + 0.8 + i * 0.12, 1.6)); op(a, span(t, P[1] + 0.7, J[0] - 0.4, 0.3, 0.7)); });
+    op(labBlauw, span(t, P[1] + 0.2, P[2] - 0.2, 0.6)); op(centri, span(t, at("psalm", 1, 0.3), P[2] - 0.2, 0.6));
+    op(qP, span(t, P[2] + 0.1, J[0] - 0.5, 0.7));
+
+    // ----- 5 jonah -----
+    const jOut = 1 - up(t, V[0] - 0.7, 0.7);
+    op(city, up(t, J[0] - 0.3, 0.8) * jOut); draw(cityLine, up(t, J[0] - 0.2, 2.2));
+    op(labNin, span(t, J[0] + 0.8, J[1] + 0.4, 0.6));
+    draw(sent, up(t, at("jonah", 0, 0.12), 1.6)); op(sent, span(t, at("jonah", 0, 0.1), J[1] + 0.2, 0.4, 0.7));
+    const run = up(t, at("jonah", 0, 0.8), 2.4);
+    set(jonah, { cx: mix(420, 70, run).toFixed(1), cy: (459 - 4 * Math.abs(Math.sin(t * 6)) * (run > 0.02 && run < 0.98 ? 1 : 0)).toFixed(1) });
+    op(jonah, span(t, J[0] - 0.1, J[1] + 0.2, 0.6, 0.6)); op(labJon, span(t, J[0] + 0.2, at("jonah", 0, 0.78), 0.5));
+    draw(away, run); op(away, span(t, at("jonah", 0, 0.8), J[1] + 0.2, 0.3, 0.6)); op(labTar, span(t, at("jonah", 0, 0.88), J[1] + 0.2, 0.5));
+    op(hill, span(t, J[1] - 0.1, V[0] - 0.4, 0.7)); op(jonah2, span(t, J[1] + 0.4, V[0] - 0.4, 0.7));
+    lit(cityGlow, 0.1 * span(t, J[1] + 0.3, V[0] - 0.4, 1.2, 0.7));
+    op(labCreed, span(t, at("jonah", 1, 0.55), J[2] - 0.2, 0.6));
+    op(vJ, span(t, J[2] - 0.1, at("jonah", 2, 0.56), 0.5));
+    op(qJ, span(t, at("jonah", 2, 0.62), V[0] - 0.4, 0.7));
+
+    // ----- 6 servant -----
+    const vOut = 1 - up(t, V[1] - 0.4, 0.7);
+    op(brk, span(t, V[0] + 1.0, V[1] - 0.1, 0.6));
+    const reach = 620 * up(t, at("servant", 0, 0.55), 3.0);
+    set(lightL, { x: (640 - reach).toFixed(1), width: reach.toFixed(1) }); set(lightR, { width: reach.toFixed(1) }); op(lightL, vOut); op(lightR, vOut);
+    op(labEnds, span(t, at("servant", 0, 0.75), V[1] - 0.1, 0.6));
+    op(vV, span(t, V[0] - 0.2, V[1] - 0.1, 0.5));
+    const cOut = 1 - up(t, M[0] - 0.8, 0.7);
+    op(labCalled, span(t, V[1] - 0.1, M[0] - 0.8, 0.6));
+    cards.forEach((g, i) => { const a = up(t, at("servant", 1, 0.42 + i * 0.13), 0.7); op(g, a * cOut); g.setAttribute("transform", `translate(0 ${(10 * (1 - a) + 2 * Math.sin(t * 0.8 + i)).toFixed(1)})`); });
+    // the bar: the servant as Christians read him, the child, the risen Jesus on the mountain
+    const bh = 210 * up(t, V[2] + 0.2, 1.6), child = up(t, M[0] - 0.5, 1.6), climb = up(t, at("commission", 0, 0.52), 2.2);
+    const bH = mix(mix(bh, 56, child), 118, climb), bBase = mix(470, 382, climb);
+    set(bar, { y: (bBase - bH).toFixed(1), height: Math.max(0.1, bH).toFixed(1) }); op(bar, (bh > 0.5 ? 1 : 0) * (1 - up(t, M[1] - 0.5, 0.7)));
+    op(labNT, span(t, V[2] + 0.6, M[0] - 0.6, 0.6));
+
+    // ----- 7 commission -----
+    magi.forEach((m, i) => { const k = up(t, M[0] + 0.3 + i * 0.35, at("commission", 0, 0.3) - M[0] - 0.3); set(m, { cx: mix(1300, 744 + i * 24, k).toFixed(1), cy: (459 - 3 * Math.abs(Math.sin(t * 5 + i)) * (k > 0.02 && k < 0.98 ? 1 : 0)).toFixed(1) }); op(m, 1 - up(t, at("commission", 0, 0.5), 0.8)); });
+    op(labMagi, span(t, M[0] + 0.8, at("commission", 0, 0.48), 0.6));
+    draw(mount, up(t, at("commission", 0, 0.44), 1.6)); op(mount, 1 - up(t, M[1] - 0.5, 0.7));
+    op(labMt, span(t, at("commission", 0, 0.52), M[1] - 0.3, 0.6));
+    op(vM, span(t, at("commission", 0, 0.7), M[1] + 0.2, 0.5));
+    goPaths.forEach((a, i) => { draw(a, up(t, at("commission", 0, 0.8) + Math.abs(CL[i] - 640) / 900, 1.6)); op(a, 1 - up(t, M[1] - 0.5, 0.6)); });
+    op(debate, span(t, M[1] - 0.1, M[2] - 0.2, 0.7)); debate.setAttribute("transform", `translate(0 ${(6 * (1 - up(t, M[1] - 0.1, 1))).toFixed(1)})`);
+    fromPaths.forEach((a, i) => { draw(a, up(t, at("commission", 2, 0.3) + Math.abs(CL[i] - 640) / 900, 1.6)); op(a, 1 - up(t, N[0], 0.8)); });
+    op(labFrom, span(t, at("commission", 2, 0.2), N[0] + 0.2, 0.6));
+
+    // ----- 8 pentecost -----
+    op(labJer, span(t, N[0] + 0.5, N[2] - 0.2, 0.6));
+    flames.forEach((f, i) => { const a = span(t, at("pentecost", 0, 0.45) + i * 0.25, N[2] + 0.6, 0.7, 0.8); op(f.g, a); move(f.g, f.x, 374 - 2 * Math.sin(t * 2.2 + i), 1); f.g.firstChild.setAttribute("transform", `scale(1 ${(0.92 + 0.1 * Math.sin(t * 3 + i * 1.3)).toFixed(3)})`); });
+    op(vN, span(t, N[1] - 0.2, N[2] + 0.4, 0.5));
+    op(ghost, span(t, N[2] + 0.3, at("pentecost", 2, 0.42), 0.6)); op(labBab1, span(t, N[2] + 0.4, at("pentecost", 2, 0.42), 0.5)); op(labBab2, span(t, N[2] + 0.8, at("pentecost", 2, 0.42), 0.5));
+    const pOut = 1 - up(t, C[0] - 0.6, 0.7);
+    marks.forEach((g, k) => { const a = up(t, at("pentecost", 2, 0.62) + k * 0.15, 0.7); op(g, a * pOut + span(t, at("multitude", 1, 0.05) + k * 0.12, T[2] + 0.2, 0.7, 0.8));
+      g.setAttribute("transform", `translate(0 ${t > C[0] ? -36 : 0})`); });
+    msg.forEach((m, k) => op(m, up(t, at("pentecost", 2, 0.85) + k * 0.1, 0.6) * (1 - up(t, N[3] + 0.4, 0.8))));
+    cyr.forEach((g, i) => { draw(g, up(t, N[3] + 1.2 + i * 0.45, 0.8)); op(g, pOut); });
+    op(labCyr, span(t, N[3] + 0.4, C[0] - 0.5, 0.6)); op(labSlav, span(t, at("pentecost", 3, 0.55), C[0] - 0.5, 0.6));
+
+    // ----- 9 cornelius -----
+    const kOut = 1 - up(t, T[0] - 0.6, 0.7);
+    op(left, up(t, C[0] - 0.3, 0.8) * kOut); op(house, up(t, C[0] - 0.2, 0.8) * kOut); draw(hLine, up(t, C[0] - 0.2, 1.8));
+    const pw = up(t, at("cornelius", 1, 0.1), 3.6);
+    set(peter, { cx: mix(330, 830, pw).toFixed(1), cy: (459 - 4 * Math.abs(Math.sin(t * 6)) * (pw > 0.02 && pw < 0.98 ? 1 : 0)).toFixed(1) }); op(peter, up(t, C[0] - 0.1, 0.8) * kOut);
+    op(labCor, span(t, C[0] + 0.6, at("cornelius", 1, 0.1), 0.6)); op(labPet, span(t, at("cornelius", 1, 0.05), at("cornelius", 1, 0.1) + 3.4, 0.5));
+    set(labPet, { x: mix(330, 830, pw).toFixed(1) });
+    op(qC, span(t, C[0] + 0.3, at("cornelius", 1, 0.2), 0.7));
+    lit(hGlow, 0.08 * span(t, at("cornelius", 1, 0.5), T[0] - 0.4, 1.0, 0.7));
+    op(vC, span(t, at("cornelius", 1, 0.42), C[2] - 0.1, 0.5));
+    op(acts, span(t, C[2] - 0.1, T[0] - 0.4, 0.6)); draw(actsLine, up(t, C[2], 3.2));
+    actsTicks.forEach((g, i) => op(g, up(t, C[2] + 0.4 + i * 1.0, 0.6))); op(labAfter, up(t, at("cornelius", 2, 0.66), 0.6));
+
+    // ----- 10 multitude -----
+    const lh = 140 * up(t, T[0] + 0.6, 1.8);
+    set(lamb, { y: (470 - lh).toFixed(1), height: Math.max(0.1, lh).toFixed(1) }); op(lamb, (lh > 0.5 ? 1 : 0) * outAll);
+    lit(throneGlow, 0.1 * up(t, T[0] + 0.2, 2.0) * outAll);
+    op(vT, span(t, T[0] - 0.2, T[1] + 0.4, 0.5));
+    op(labGen, span(t, at("multitude", 1, 0.4), T[2] - 0.1, 0.6));
+    op(chain, span(t, T[2] + 0.2, END + 0.6, 0.6)); chainDots.forEach((d, i) => op(d, up(t, T[2] + 0.4 + i * 0.5, 0.5))); bounds.forEach((b, i) => op(b, up(t, T[2] + 0.6 + i * 0.5, 0.5)));
+    op(qT, span(t, at("multitude", 2, 0.62), END + 0.6, 0.7));
+  };
+});
+</script>
+</body></html>

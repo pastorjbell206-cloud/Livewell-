@@ -1,0 +1,121 @@
+{
+  "title": "To the end",
+  "note": "Doctrine film on the Study Bible page /study/bible/doctrines/perseverance, written 2026-11-27. Every fact comes from client/public/bible/doctrines/perseverance.json (sections named in facts.md). The film's weight sits on what the file says every tradition shares: the New Testament's two voices of promise and warning, which every Christian tradition affirms, and the life section's word, given across the traditions, to the careless and the anxious. The five views in the file's differ section are given in the file's order, each in two lines of near-equal length (what its holders hold, and why), in words its own holders would accept, on identical cards; the film takes no side. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/study/bible/doctrines/perseverance",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "Can I know?",
+      "level": 0.2,
+      "lines": [
+        "Can I know that I belong to God? And will I keep believing to the end?",
+        "That's the doctrine of assurance and perseverance."
+      ]
+    },
+    {
+      "id": "voices",
+      "kicker": "Two voices",
+      "level": 0.3,
+      "lines": [
+        "The New Testament answers the first with promises meant to be trusted.",
+        "It answers the second with two voices. Promises that God keeps His people, and warnings to hold fast and not fall away.",
+        "Every Christian tradition affirms both. They differ on how the two fit together."
+      ]
+    },
+    {
+      "id": "ot",
+      "kicker": "Promise and warning",
+      "level": 0.4,
+      "lines": [
+        "The Old Testament sets promise and warning side by side, and trusts God to be faithful.",
+        "Samuel tells Israel the Lord won't abandon His people. Then he warns that persisting in evil will sweep them away."
+      ]
+    },
+    {
+      "id": "jesus",
+      "kicker": "Jesus speaks both ways",
+      "level": 0.5,
+      "lines": [
+        "Jesus speaks both ways. He says no one can snatch His sheep out of His hand.",
+        "And He warns that a branch that doesn't remain in Him is thrown away."
+      ]
+    },
+    {
+      "id": "paul",
+      "kicker": "Both in one sentence",
+      "level": 0.55,
+      "lines": [
+        "Paul says nothing in all creation can separate us from God's love in Christ.",
+        "He holds both voices in one sentence. Continue to work out your salvation with fear and trembling.",
+        "For it is God who works in you to will and to act on behalf of His good purpose."
+      ],
+      "scripture": {
+        "reference": "Philippians 2:13",
+        "translation": "Berean Standard Bible",
+        "text": "For it is God who works in you to will and to act on behalf of His good purpose.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "history",
+      "kicker": "An old question",
+      "level": 0.62,
+      "lines": [
+        "The early church spoke far more of endurance than assurance. It honored its martyrs and grieved over those who lapsed.",
+        "The Reformation made assurance a central question, and churches answered it differently."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.7,
+      "lines": [
+        "Five views stand side by side.",
+        "Reformed Christians hold that all whom God has called and given new birth will persevere to the end, because God keeps them, not their own strength.",
+        "They may fall for a time, like Peter, but never finally. The warnings are real, they argue, and God uses them to keep His people alert.",
+        "Arminian and Wesleyan Christians hold that God's grace is strong enough to keep every believer, and no outside power can snatch them from Christ.",
+        "But a believer is in a real relationship, and can turn away in unbelief and be finally lost. Otherwise, they argue, the warnings would be empty.",
+        "Lutherans confess that salvation is wholly God's gift, yet also that the justified can fall from grace. They refuse to settle this by logic.",
+        "Assurance, they teach, comes by looking outward to Christ in the Word, baptism and the Lord's Supper. Those who fall away are called back to their baptism.",
+        "Catholics hold that final perseverance is a great gift no one can merit, and that grace lost through grave sin is restored through penance.",
+        "Hope should be firm, they teach, but no one is absolutely certain of persevering without a special revelation. That guards against presumption and despair.",
+        "Free Grace teachers hold that eternal life, given the moment one believes, can never be lost, because God doesn't take back His gifts.",
+        "Making final salvation depend on obedience, they argue, brings works in by the side door and robs believers of assurance. The warnings concern discipline and reward."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "The careless and the anxious",
+      "level": 0.85,
+      "lines": [
+        "Wise pastors across the traditions know this doctrine meets people at two points.",
+        "The careless need the warnings. A life that drifts from Christ is in real danger.",
+        "The anxious need the promises. The one who comes to Christ will not be driven away.",
+        "The cure for both is to look away from yourself, to Christ, who holds His people and prays for them.",
+        "No one holds on alone. Hebrews tells believers to exhort one another daily."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "One psalmist nearly slipped. Then he wrote this.",
+        "My flesh and my heart may fail, but God is the strength of my heart and my portion forever.",
+        "Doubt, weariness and dry seasons are not proof that a person has fallen away. The question is where they turn."
+      ],
+      "scripture": {
+        "reference": "Psalm 73:26",
+        "translation": "Berean Standard Bible",
+        "text": "My flesh and my heart may fail, but God is the strength of my heart and my portion forever.",
+        "spoken": true
+      },
+      "titleCard": [
+        "Look to Christ, who holds His people.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

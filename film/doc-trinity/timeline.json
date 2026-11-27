@@ -1,0 +1,265 @@
+{
+ "length": 234.72,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 13.78,
+   "lines": [
+    {
+     "text": "Christians say there's only one God. Then they say the Father is God, Jesus is God, and the Holy Spirit is God.",
+     "start": 2.6,
+     "end": 9.92
+    },
+    {
+     "text": "So which is it? One God, or three?",
+     "start": 10.38,
+     "end": 12.88
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What the church confesses",
+   "level": 0.3,
+   "start": 12.98,
+   "end": 35.32,
+   "lines": [
+    {
+     "text": "The church's answer is the Trinity. One God, who is the Father, the Son, and the Holy Spirit.",
+     "start": 13.88,
+     "end": 19.7
+    },
+    {
+     "text": "Three persons, each fully and equally God. Not three gods, but one.",
+     "start": 20.34,
+     "end": 25.6
+    },
+    {
+     "text": "The persons aren't parts of God, each holding a third.",
+     "start": 26.14,
+     "end": 28.98
+    },
+    {
+     "text": "The word Trinity isn't in the Bible. It's the church's name for a pattern it found there.",
+     "start": 29.7,
+     "end": 34.42
+    }
+   ]
+  },
+  {
+   "id": "one",
+   "kicker": "One God",
+   "level": 0.4,
+   "start": 34.52,
+   "end": 60.96,
+   "lines": [
+    {
+     "text": "The first Christians were Jews, and every day they confessed the Shema.",
+     "start": 35.42,
+     "end": 39.48
+    },
+    {
+     "text": "Hear, O Israel: The LORD our God, the LORD is One.",
+     "start": 40.14,
+     "end": 44.0
+    },
+    {
+     "text": "Christians confess the Trinity inside that sentence, never against it.",
+     "start": 44.74,
+     "end": 48.82
+    },
+    {
+     "text": "The same Old Testament shows God creating by His Word and His Spirit, and promising to come Himself.",
+     "start": 49.48,
+     "end": 55.26
+    },
+    {
+     "text": "None of this spells out the Trinity. Christians read it back in the light of Christ.",
+     "start": 55.92,
+     "end": 60.06
+    }
+   ]
+  },
+  {
+   "id": "three",
+   "kicker": "The three together",
+   "level": 0.5,
+   "start": 60.16,
+   "end": 84.14,
+   "lines": [
+    {
+     "text": "The New Testament gives no formula. But at its turning points, the three act together.",
+     "start": 61.06,
+     "end": 66.02
+    },
+    {
+     "text": "At Jesus' baptism, the Spirit descends on Him like a dove, and the Father's voice says, You are My beloved Son.",
+     "start": 66.66,
+     "end": 73.92
+    },
+    {
+     "text": "The risen Jesus sends the apostles to baptize in the name of the Father, and of the Son, and of the Holy Spirit. One name, not three.",
+     "start": 74.72,
+     "end": 83.24
+    }
+   ]
+  },
+  {
+   "id": "god",
+   "kicker": "The Son and the Spirit",
+   "level": 0.58,
+   "start": 83.34,
+   "end": 106.18,
+   "lines": [
+    {
+     "text": "John says the Word was with God, and the Word was God. Distinct, and fully God.",
+     "start": 84.24,
+     "end": 89.64
+    },
+    {
+     "text": "Paul rewrote the Shema around Jesus: one God, the Father, and one Lord, Jesus Christ.",
+     "start": 90.34,
+     "end": 96.98
+    },
+    {
+     "text": "The Spirit, too, is personal and divine. He teaches and guides, and lying to Him, Peter said, is lying to God.",
+     "start": 97.72,
+     "end": 105.28
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "Worship first, words later",
+   "level": 0.66,
+   "start": 105.38,
+   "end": 138.52,
+   "lines": [
+    {
+     "text": "Christians worshiped the Trinity before they explained it. Around 112, a Roman governor reported they sang hymns to Christ as to a god.",
+     "start": 106.28,
+     "end": 114.46
+    },
+    {
+     "text": "Around 318, a church leader named Arius taught that the Son was God's first and greatest creature.",
+     "start": 115.16,
+     "end": 121.24
+    },
+    {
+     "text": "In 325, the Council of Nicaea answered: the Son is begotten, not made, of the same being as the Father.",
+     "start": 121.92,
+     "end": 129.42
+    },
+    {
+     "text": "In 381, the creed grew to confess the Spirit, the Lord and giver of life, worshiped with the Father and the Son.",
+     "start": 130.12,
+     "end": 137.62
+    }
+   ]
+  },
+  {
+   "id": "not",
+   "kicker": "What it is not",
+   "level": 0.72,
+   "start": 137.72,
+   "end": 156.08,
+   "lines": [
+    {
+     "text": "The creeds guard against errors still around today. One says God is one person wearing three masks in turn.",
+     "start": 138.62,
+     "end": 145.06
+    },
+    {
+     "text": "But then who is the Son praying to? Water as ice, liquid, and steam makes the same mistake.",
+     "start": 145.74,
+     "end": 151.82
+    },
+    {
+     "text": "No created thing is a full picture of the Creator.",
+     "start": 152.52,
+     "end": 155.18
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.78,
+   "start": 155.28,
+   "end": 195.14,
+   "lines": [
+    {
+     "text": "Christians who share this confession still differ.",
+     "start": 156.18,
+     "end": 158.7
+    },
+    {
+     "text": "The West says the Spirit eternally proceeds from both the Father and the Son. The East says from the Father alone, and the Son sends Him into the world.",
+     "start": 159.3,
+     "end": 168.0
+    },
+    {
+     "text": "Classical theologians stress one mind, one will, and one power in God. Social trinitarians stress three persons knowing and loving each other in communion.",
+     "start": 168.7,
+     "end": 178.84
+    },
+    {
+     "text": "Some evangelicals say the Son, though equal in being, eternally and gladly submits to the Father. Others say the three share one will, and the Son obeyed as the servant He became.",
+     "start": 179.46,
+     "end": 190.74
+    },
+    {
+     "text": "These are debates within the confession, not against it.",
+     "start": 191.48,
+     "end": 194.24
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "What it changes",
+   "level": 0.85,
+   "start": 194.34,
+   "end": 216.06,
+   "lines": [
+    {
+     "text": "The Trinity isn't a puzzle to solve before you can pray. It's the shape of prayer, to the Father, through the Son, in the Spirit.",
+     "start": 195.24,
+     "end": 203.12
+    },
+    {
+     "text": "And God's love didn't begin when He made the world. Before creation, the Father loved the Son.",
+     "start": 203.76,
+     "end": 209.12
+    },
+    {
+     "text": "So He doesn't love us out of need. It's a free gift, from a fullness that was always there.",
+     "start": 209.68,
+     "end": 215.16
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 215.26,
+   "end": 228.618,
+   "lines": [
+    {
+     "text": "Christians are still blessed in that name, as the apostles blessed the churches.",
+     "start": 216.16,
+     "end": 220.38
+    },
+    {
+     "text": "The grace of the Lord Jesus Christ, and the love of God, and the fellowship of the Holy Spirit be with all of you.",
+     "start": 220.92,
+     "end": 227.718
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,260 @@
+{
+ "length": 241.99,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "A fight over words",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 17.18,
+   "lines": [
+    {
+     "text": "Why would Christians fight over one word? It sounds like the smallest argument there is.",
+     "start": 2.6,
+     "end": 7.7
+    },
+    {
+     "text": "But underneath the great councils sat the largest question anyone can ask. Who is Jesus, and what does it mean to call Him God?",
+     "start": 8.28,
+     "end": 16.28
+    }
+   ]
+  },
+  {
+   "id": "stakes",
+   "kicker": "Why the words mattered",
+   "level": 0.3,
+   "start": 16.38,
+   "end": 36.22,
+   "lines": [
+    {
+     "text": "The church had worshiped Jesus from the beginning. But it had no agreed words yet for what it had always believed.",
+     "start": 17.28,
+     "end": 23.3
+    },
+    {
+     "text": "The whole gospel hung on it. If Jesus isn't truly God, the cross is a noble death and nothing more.",
+     "start": 23.98,
+     "end": 30.72
+    },
+    {
+     "text": "If He isn't truly human, our flesh was never touched by salvation.",
+     "start": 31.32,
+     "end": 35.32
+    }
+   ]
+  },
+  {
+   "id": "arius",
+   "kicker": "Alexandria",
+   "level": 0.4,
+   "start": 35.42,
+   "end": 58.5,
+   "lines": [
+    {
+     "text": "The first crisis carried the name of Arius, a priest in Alexandria.",
+     "start": 36.32,
+     "end": 40.08
+    },
+    {
+     "text": "He taught, with real intelligence and piety, that the Son was the highest creature, but still a creature.",
+     "start": 40.72,
+     "end": 46.8
+    },
+    {
+     "text": "It sounded reverent. But a created savior can't bridge the gap between God and man.",
+     "start": 47.36,
+     "end": 52.32
+    },
+    {
+     "text": "The argument split the eastern churches. Crowds chanted slogans in the streets.",
+     "start": 52.88,
+     "end": 57.6
+    }
+   ]
+  },
+  {
+   "id": "nicaea",
+   "kicker": "Nicaea, 325",
+   "level": 0.5,
+   "start": 57.7,
+   "end": 89.62,
+   "lines": [
+    {
+     "text": "In 325 the emperor Constantine, wanting unity in his empire, called bishops from across the world to Nicaea.",
+     "start": 58.6,
+     "end": 66.2
+    },
+    {
+     "text": "It was the first time the scattered church had gathered like this.",
+     "start": 66.8,
+     "end": 70.92
+    },
+    {
+     "text": "They settled it. The Son is of the same substance as the Father, true God from true God, begotten, not made.",
+     "start": 71.58,
+     "end": 78.22
+    },
+    {
+     "text": "They borrowed a word that isn't in Scripture to protect what Scripture means.",
+     "start": 78.92,
+     "end": 82.62
+    },
+    {
+     "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+     "start": 83.32,
+     "end": 88.72
+    }
+   ]
+  },
+  {
+   "id": "after",
+   "kicker": "The long fight",
+   "level": 0.55,
+   "start": 88.82,
+   "end": 108.16,
+   "lines": [
+    {
+     "text": "Nicaea didn't end the fight. For most of the next fifty-six years, emperors backed the Arian side.",
+     "start": 89.72,
+     "end": 95.5
+    },
+    {
+     "text": "Athanasius of Alexandria, who defended Nicaea most stubbornly, was exiled five times.",
+     "start": 96.16,
+     "end": 101.84
+    },
+    {
+     "text": "The truth didn't win because it was powerful. It won slowly, against power.",
+     "start": 102.46,
+     "end": 107.26
+    }
+   ]
+  },
+  {
+   "id": "constantinople",
+   "kicker": "Constantinople, 381",
+   "level": 0.62,
+   "start": 107.36,
+   "end": 136.44,
+   "lines": [
+    {
+     "text": "By 381 a new question had surfaced. If the Son is fully God, what about the Holy Spirit?",
+     "start": 108.26,
+     "end": 114.48
+    },
+    {
+     "text": "The council at Constantinople, under the emperor Theodosius, confessed the Spirit as Lord and giver of life, worshiped and glorified with the Father and the Son.",
+     "start": 115.2,
+     "end": 125.32
+    },
+    {
+     "text": "Three teachers called the Cappadocians showed how the one God is one substance and three persons. Not three gods, and not one God wearing masks.",
+     "start": 126.06,
+     "end": 135.54
+    }
+   ]
+  },
+  {
+   "id": "ephesus",
+   "kicker": "Ephesus, 431",
+   "level": 0.7,
+   "start": 135.64,
+   "end": 169.42,
+   "lines": [
+    {
+     "text": "Then the church had to ask how one Christ could be both God and man at once.",
+     "start": 136.54,
+     "end": 140.98
+    },
+    {
+     "text": "The councils weren't pure. Rivalry between Alexandria and Antioch and imperial politics turned theology into a contest for power.",
+     "start": 141.56,
+     "end": 150.52
+    },
+    {
+     "text": "At Ephesus in 431 the dispute was whether Mary could be called the bearer of God, and so whether her child was truly God from the first moment.",
+     "start": 151.18,
+     "end": 160.06
+    },
+    {
+     "text": "Nestorius, the bishop of Constantinople, was condemned, partly for what he taught and partly for the politics that crushed him.",
+     "start": 160.8,
+     "end": 168.52
+    }
+   ]
+  },
+  {
+   "id": "chalcedon",
+   "kicker": "Chalcedon, 451",
+   "level": 0.78,
+   "start": 168.62,
+   "end": 189.32,
+   "lines": [
+    {
+     "text": "At Chalcedon in 451 the church reached its great settlement. Jesus Christ is one person in two natures, fully God and fully man.",
+     "start": 169.52,
+     "end": 179.36
+    },
+    {
+     "text": "The natures are united without confusion, never blended into some third thing, and without separation, never split into two sons.",
+     "start": 180.0,
+     "end": 188.42
+    }
+   ]
+  },
+  {
+   "id": "cost",
+   "kicker": "What it cost",
+   "level": 0.85,
+   "start": 188.52,
+   "end": 217.78,
+   "lines": [
+    {
+     "text": "Chalcedon itself didn't unite the church. Ancient churches in Egypt, Syria and the East did not accept it, and that break has never healed.",
+     "start": 189.42,
+     "end": 198.14
+    },
+    {
+     "text": "Christians still read that council differently, and that wound is real.",
+     "start": 198.72,
+     "end": 202.38
+    },
+    {
+     "text": "Yet the definitions hold. The man on the cross was God, so the love shown there is God's own.",
+     "start": 203.1,
+     "end": 208.88
+    },
+    {
+     "text": "And He was truly human, so our flesh and death were carried into God. Take either away and the gospel falls apart.",
+     "start": 209.4,
+     "end": 216.88
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 216.98,
+   "end": 235.893,
+   "lines": [
+    {
+     "text": "The Word became flesh and made His dwelling among us.",
+     "start": 217.88,
+     "end": 220.92
+    },
+    {
+     "text": "When you say Jesus is fully God and fully man, you stand on ground that quarreling bishops marked out under fire.",
+     "start": 221.54,
+     "end": 228.08
+    },
+    {
+     "text": "We didn't earn it. The least we owe is to know what it cost, and to hold it as carefully as they did.",
+     "start": 228.64,
+     "end": 234.993
+    }
+   ]
+  }
+ ]
+}

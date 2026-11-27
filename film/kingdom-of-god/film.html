@@ -1,0 +1,368 @@
+<!doctype html>
+<!-- "The kingdom of God". One field from first to last: the ground under a faint light, people as dots on it.
+     A day arc with the prayer's three hours; the light over all and a stretch of broken ground set right by a
+     mustard line; Daniel's statue as a plain stepped stack of four blocks (never a figure), shattered by a plain
+     stone that swells into a low hill; a timeline from Daniel to Mark 1 and one upright mustard bar for Jesus;
+     a fenced plot (territory) beside open light (reign); a bed left empty, loaves handed out, two dots welcomed;
+     two equal cards hung from a level rod (within you, among you); a mustard seed that becomes a tree and leaven
+     spreading through flour; a chest in a field, a house emptied, a fence, a pearl, and one question mark;
+     a timeline filled and unfilled (already, not yet); six equal cards where Christians differ; seven marks,
+     two lines that become one, and the filled and unfilled timeline again.
+     God is never drawn: only mustard light at opacity 0.1 or less. People are ink dots, all alike. No crowns,
+     no modern nation, flag or party. Words and timing come from script.json and timeline.json.
+     Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>The kingdom of God</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw: draw0, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5";
+  const draw = (e, k) => { draw0(e, k); if (k <= 0.001) e.setAttribute("visibility", "hidden"); else e.removeAttribute("visibility"); };
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const win = (t, a, b) => up(t, a - 0.4, 0.6) * (1 - up(t, b - 0.6, 0.6));
+  const dot = (p, x, y, r = 9) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const sl = (p, d, a = {}) => el("path", Object.assign({ d, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round", "stroke-linejoin": "round" }, a), p);
+  const rows = (p, x0, x1, y0, n, gap, sw = 2.5, col = STONE) => [...Array(n)].map((_, i) => el("line", { x1: x0, x2: i === n - 1 ? mix(x0, x1, 0.6) : x1, y1: y0 + i * gap, y2: y0 + i * gap, stroke: col, "stroke-width": sw, "stroke-linecap": "round" }, p));
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  const bar = (p, x) => el("rect", { x: x - 6, y: 380, width: 12, height: 90, rx: 6, fill: MUSTARD }, p);
+  const leaf = (p, x, y, s, r) => el("path", { d: `M0 0 q${-14 * s} -4 ${-20 * s} -16 q${14 * s} 2 ${20 * s} 16 Z`, fill: MUTED, stroke: INK, "stroke-width": 2, "stroke-linejoin": "round", transform: `translate(${x} ${y}) rotate(${r})` }, p);
+  const bird = (p) => sl(p, "M-12 -3 Q-6 -10 0 0 Q6 -10 12 -3", { "stroke-width": 2.5 });
+
+  const P = (k) => S("prayer", k), O = (k) => S("over-all", k), ST = (k) => S("stone", k), N = (k) => S("near", k), U = (k) => S("upon-you", k);
+  const M = (k) => S("midst", k), SD = (k) => S("seed", k), TR = (k) => S("treasure", k), AL = (k) => S("already", k), DF = (k) => S("differ", k), FV = (k) => S("forever", k);
+
+  const defs = el("defs", {}, world);
+  const sky = el("linearGradient", { id: "sky", x1: 0, y1: 0, x2: 0, y2: 1 }, defs);
+  [[0, 1], [1, 0]].forEach(([o, a]) => el("stop", { offset: o, "stop-color": MUSTARD, "stop-opacity": a }, sky));
+  const glowG = el("radialGradient", { id: "glow", cx: 0.5, cy: 0.62, r: 0.55 }, defs);
+  [[0, 1], [0.6, 0.5], [1, 0]].forEach(([o, a]) => el("stop", { offset: o, "stop-color": MUSTARD, "stop-opacity": a }, glowG));
+
+  // the light over everything (God shown only as light, opacity 0.1 at most)
+  const wash = el("rect", { x: 0, y: 96, width: 1280, height: 330, fill: "url(#sky)" }, world);
+  const ground = line(world, "M-20 470 H1300", { "stroke-width": 3 });
+
+  // ================= 1 prayer: the manual, a day arc with three hours, a question =================
+  const gP = el("g", {}, world);
+  const page = el("g", {}, gP); el("rect", { x: 190, y: 300, width: 130, height: 170, fill: PAPER, stroke: INK, "stroke-width": 3 }, page);
+  const pRows = rows(page, 210, 300, 330, 6, 22);
+  const pLab = txt(gP, "lab", 255, 506, "THE DIDACHE · AROUND AD 100", 14);
+  const arcA = [560, 430], arcC = [830, 170], arcB = [1100, 430];
+  const qb = (s) => [mix(mix(arcA[0], arcC[0], s), mix(arcC[0], arcB[0], s), s), mix(mix(arcA[1], arcC[1], s), mix(arcC[1], arcB[1], s), s)];
+  const gArc = el("g", {}, gP);
+  el("path", { d: `M${arcA} Q${arcC} ${arcB}`, fill: "none", stroke: LINE, "stroke-width": 2.5, "stroke-dasharray": "4 10", "stroke-linecap": "round" }, gArc);
+  const hours = [0.15, 0.5, 0.85].map((s) => { const [x, y] = qb(s); return el("rect", { x: x - 3, y: y - 9, width: 6, height: 18, rx: 3, fill: STONE }, gArc); });
+  const sun = el("circle", { r: 14, fill: MUSTARD }, gArc);
+  txt(gArc, "lab", 830, 506, "THREE TIMES A DAY", 14);
+  const prayers = [770, 805, 840, 875, 910].map((x) => dot(gP, x, 459));
+  const q1 = txt(world, "disp", 640, 400, "?", 96, { fill: MUSTARD });
+  const v1 = verse(SC.prayer, 640, 150, 40, 44, true);
+
+  // ================= 2 over-all: the light over all; ground refused, then set right =================
+  const g2 = el("g", {}, world);
+  const people2 = [...Array(13)].map((_, i) => ({ x: 160 + i * 80, e: dot(g2, 160 + i * 80, 459) }));
+  const jag = (x0, x1, y = 470) => { let d = `M${x0} ${y}`; for (let x = x0 + 20; x <= x1; x += 20) d += ` L${x} ${y + ((x / 20) % 2 ? -14 : 8)}`; return d; };
+  const broken2 = [0, 1, 2, 3, 4, 5].map((i) => ({ x: 680 + i * 80, e: el("path", { d: jag(680 + i * 80, 760 + i * 80), fill: "none", stroke: CHAR, "stroke-width": 3.5, "stroke-linejoin": "round" }, g2) }));
+  const cover2 = el("rect", { x: 680, y: 466, width: 480, height: 8, fill: BONE }, g2); g2.insertBefore(cover2, broken2[0].e);
+  const right2 = line(g2, "M140 470 H1160", { stroke: MUSTARD, "stroke-width": 5 });
+  const v2 = verse(SC["over-all"], 640, 150, 36, 50, true);
+
+  // ================= 3 stone: four blocks, a stone not cut by hands, a hill that fills the earth =================
+  const g3 = el("g", {}, world);
+  const mound = el("path", { d: "M40 470 Q640 250 1240 470 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g3);
+  const hill = el("path", { d: "M860 470 Q960 360 1030 336 L1052 362 L1092 356 L1106 332 Q1210 356 1300 470", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g3);
+  const SX = 500, BH = 46;
+  const blocks = [[92, MUSTARD, "GOLD"], [124, MUTED, "SILVER"], [156, STONE, "BRONZE"], [188, CHAR, "IRON"]].map(([w, fill, s], i) => {
+    const g = el("g", {}, g3), y = 470 - BH * (4 - i);
+    el("rect", { x: -w / 2, y: 0, width: w, height: BH, fill, stroke: INK, "stroke-width": 3 }, g);
+    const lab = txt(g3, "lab", 700, y + 29, s, 13);
+    return { g, w, y, lab, dx: [-260, -110, 170, 330][i], r: [-14, 9, -7, 4][i] }; });
+  const stone = el("path", { d: "M-26 8 L-18 -20 L8 -26 L26 -6 L20 18 L-8 26 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g3);
+  const which3 = txt(g3, "lab", 640, 250, "WHICH EMPIRES? READERS DIFFER", 15);
+  const v3 = verse(SC.stone, 640, 160, 38, 46, true);
+
+  // ================= 4-6 the bar at the centre (Jesus as one upright mustard bar) =================
+  const gBar = el("g", {}, world);
+  const reign = el("rect", { x: 440, y: 280, width: 400, height: 190, fill: "url(#glow)" }, gBar);
+  const bar4 = bar(gBar, 640);
+
+  // ================= 4 near: Daniel to Mark; basileia; soon or already =================
+  const g4 = el("g", {}, world);
+  const tl4 = el("g", {}, g4);
+  const tlLine = line(tl4, "M160 530 H1120", { stroke: STONE, "stroke-width": 2.5 });
+  [[260, "DANIEL"], [640, "MARK 1"]].forEach(([x, s]) => { el("line", { x1: x, x2: x, y1: 522, y2: 538, stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, tl4); txt(tl4, "lab", x, 562, s, 14); });
+  const marker = el("path", { d: "M-8 -12 L8 -12 L0 0 Z", fill: INK }, tl4);
+  const v4 = verse(SC.near, 640, 175, 46, 60, true);
+  const word4 = el("g", {}, g4); txt(word4, "ital", 640, 196, "basileia", 58); txt(word4, "lab", 640, 240, "GUSTAF DALMAN · 1898", 14);
+  const fence = el("g", {}, g4);
+  sl(fence, "M170 470 V416 M230 470 V416 M290 470 V416 M350 470 V416 M410 470 V416 M164 430 H416 M164 452 H416", { stroke: INK, "stroke-width": 3 });
+  const terrLab = txt(fence, "lab", 290, 506, "TERRITORY", 14);
+  const reignLab = txt(g4, "lab", 640, 506, "REIGN", 14);
+  const both4 = el("g", {}, g4);
+  const soon = txt(both4, "lab", 420, 286, "COMING SOON", 17), arriving = txt(both4, "lab", 860, 286, "ALREADY ARRIVING", 17);
+  const q4 = txt(both4, "disp", 640, 296, "?", 44, { fill: STONE });
+  const brace4 = line(both4, "M320 306 V318 H960 V306", { stroke: INK, "stroke-width": 2.5 });
+
+  // ================= 5 upon-you: an empty bed, loaves handed out, two welcomed; dark ground driven back =================
+  const g5 = el("g", {}, world);
+  const bed = el("g", {}, g5); el("rect", { x: 330, y: 438, width: 90, height: 10, rx: 3, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, bed);
+  sl(bed, "M336 448 V470 M414 448 V470", { "stroke-width": 2.5 });
+  const healed = dot(g5, 360, 428);
+  const fedX = [820, 870, 920, 970], fed = fedX.map((x) => dot(g5, x, 459));
+  const loaves = fedX.map(() => el("rect", { x: -12, y: -7, width: 24, height: 14, rx: 6, fill: WARM, stroke: INK, "stroke-width": 2 }, g5));
+  const guests = [1050, 1100].map(() => dot(g5, 1320, 459));
+  const broken5 = [0, 1, 2].map((i) => el("path", { d: jag(60 + i * 80, 140 + i * 80), fill: "none", stroke: CHAR, "stroke-width": 3.5, "stroke-linejoin": "round" }, g5));
+  const cover5 = el("rect", { x: 60, y: 466, width: 240, height: 8, fill: BONE }, g5); g5.insertBefore(cover5, broken5[0]);
+  const v5 = verse(SC["upon-you"], 640, 140, 32, 56, true);
+
+  // ================= 6 midst: watching the sky for signs; within or among, hung level =================
+  const g6 = el("g", {}, world);
+  const watchers = [200, 245, 290, 335].map((x) => ({ x, e: dot(g6, x, 459), s: el("line", { x1: x, x2: x - 20 + (x - 200) * 0.4, y1: 444, y2: 300, stroke: LINE, "stroke-width": 2.5, "stroke-dasharray": "4 8", "stroke-linecap": "round" }, g6) }));
+  const when6 = txt(g6, "lab", 268, 284, "WHEN?", 15);
+  const crowd6 = [540, 580, 700, 740].map((x) => dot(g6, x, 459));
+  const v6 = verse(SC.midst, 640, 175, 44, 60, true);
+  const word6 = txt(g6, "ital", 640, 176, "entos hymon", 50);
+  const rod = el("g", {}, g6);
+  el("rect", { x: 634, y: 214, width: 12, height: 12, rx: 3, fill: INK }, rod);
+  sl(rod, "M360 232 H920 M360 232 V266 M920 232 V266", { "stroke-width": 3 });
+  const cards6 = [[360, "Within you", "ORIGEN · KING JAMES"], [920, "Among you", "MOST MODERN TRANSLATIONS"]].map(([x, a, b]) => {
+    const g = el("g", {}, rod); el("rect", { x: x - 150, y: 266, width: 300, height: 92, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, g);
+    txt(g, "disp", x, 306, a, 32); txt(g, "lab", x, 338, b, 13); return g; });
+
+  // ================= 7 seed: a field, a seed, a tree; leaven through the flour =================
+  const g7 = el("g", {}, world);
+  const furrows = [492, 514].map((y) => line(g7, `M200 ${y} Q640 ${y + 6} 1080 ${y}`, { stroke: STONE, "stroke-width": 2 }));
+  const sower = dot(g7, 120, 459);
+  const seed = el("circle", { r: 5, fill: MUSTARD }, g7);
+  const labs7 = el("g", {}, g7); txt(labs7, "lab", 640, 252, "KINGDOM OF HEAVEN · KINGDOM OF GOD", 17); txt(labs7, "lab", 640, 284, "GOD'S REIGN, NOT A PLACE IN THE SKY", 14);
+  const shoot = line(g7, "M420 470 Q416 456 424 446", { stroke: INK, "stroke-width": 3 });
+  const g7b = el("g", {}, g7), tree = el("g", {}, g7b);
+  const trunk = line(tree, "M420 470 V296", { "stroke-width": 5 });
+  const boughs = ["M420 410 Q380 380 344 340", "M420 380 Q462 350 498 306", "M420 350 Q396 310 384 276", "M420 330 Q446 296 462 262", "M420 300 Q420 280 418 252"].map((d) => line(tree, d, { "stroke-width": 3.5 }));
+  const leaves = [[344, 340, 1, -20], [360, 360, -1, 10], [498, 306, -1, 20], [474, 326, 1, -10], [384, 276, 1, -30], [398, 300, -1, 0], [462, 262, -1, 30], [444, 286, 1, -6], [418, 252, 1, -10], [418, 252, -1, 10], [330, 352, -1, -40], [512, 296, 1, 40]].map(([x, y, s, r]) => leaf(tree, x, y, s, r));
+  const birds7 = [0, 1].map(() => bird(tree));
+  const leaven = el("g", {}, g7b);
+  const dough = el("g", {}, leaven);
+  el("path", { d: "M-72 0 Q0 -46 72 0 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, dough);
+  const r7 = rng(31), specks = [...Array(10)].map(() => { const x = (r7() - 0.5) * 100, y = -4 - r7() * (22 - Math.abs(x) * 0.25); return el("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 3, fill: MUSTARD }, dough); });
+  el("path", { d: "M-84 0 Q0 74 84 0 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round", transform: "translate(880 420)" }, leaven);
+  sl(leaven, "M868 456 V470 M892 456 V470", { "stroke-width": 3 });
+  const woman = dot(leaven, 1010, 459);
+  const point7 = txt(g7, "lab", 640, 552, "A SMALL, HIDDEN START · A GREAT END", 15);
+
+  // ================= 8 treasure: a chest in the field, a house emptied, a fence; a pearl; one question =================
+  const g8 = el("g", {}, world);
+  const chest = el("g", {}, g8); el("rect", { x: -26, y: -16, width: 52, height: 32, rx: 3, fill: WARM, stroke: INK, "stroke-width": 3 }, chest); el("rect", { x: -26, y: -3, width: 52, height: 6, fill: MUSTARD }, chest);
+  const finder = dot(g8, 100, 459);
+  const house = el("g", {}, g8); sl(house, "M1010 470 V408 L1060 374 L1110 408 V470", { "stroke-width": 3 });
+  const goods = [1036, 1060, 1084].map((x) => el("rect", { x: x - 8, y: 440, width: 16, height: 30, rx: 2, fill: MUTED, stroke: INK, "stroke-width": 2 }, house));
+  const fence8 = line(g8, "M300 470 V440 M376 470 V440 M452 470 V440 M528 470 V440 M604 470 V440 M680 470 V440 M756 470 V440 M296 450 H760", { stroke: INK, "stroke-width": 3 });
+  const pearlG = el("g", {}, g8); el("rect", { x: 820, y: 440, width: 120, height: 10, rx: 3, fill: WARM, stroke: INK, "stroke-width": 2.5 }, pearlG); sl(pearlG, "M832 450 V470 M928 450 V470", { "stroke-width": 2.5 });
+  const pearl = el("circle", { cx: 880, cy: 424, r: 15, fill: PAPER, stroke: INK, "stroke-width": 3 }, pearlG);
+  const merchant = dot(pearlG, 1000, 459);
+  const v8 = verse(SC.treasure, 640, 124, 28, 64, false);
+  const q8 = txt(world, "disp", 640, 390, "?", 110, { fill: MUSTARD });
+
+  // ================= 9 already: Weiss and Schweitzer, Dodd; Ladd; a timeline filled and unfilled =================
+  const g9 = el("g", {}, world);
+  const bar9 = bar(g9, 400);
+  const sch = el("g", {}, g9);
+  const weiss = el("g", {}, sch); txt(weiss, "lab", 1060, 300, "WEISS · SCHWEITZER", 14); txt(weiss, "disp", 1060, 338, "The end, soon", 30); sl(weiss, "M1060 356 V452", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 8" });
+  const dodd = el("g", {}, sch); txt(dodd, "lab", 400, 300, "C. H. DODD · 1935", 14); txt(dodd, "disp", 400, 338, "Already arrived", 30);
+  const ladd = el("g", {}, g9); txt(ladd, "lab", 640, 268, "GEORGE ELDON LADD AND OTHERS", 14); txt(ladd, "disp", 640, 312, "Already and not yet", 38);
+  const tlG = el("g", {}, world);
+  const tlOut = el("rect", { x: 400, y: 513, width: 700, height: 14, rx: 7, fill: "none", stroke: STONE, "stroke-width": 2.5 }, tlG);
+  const tlFill = el("rect", { x: 400, y: 513, height: 14, rx: 7, fill: MUSTARD }, tlG);
+  const tlNow = el("line", { x1: 780, x2: 780, y1: 506, y2: 534, stroke: INK, "stroke-width": 2.5, "stroke-linecap": "round" }, tlG);
+  const tlA = txt(tlG, "lab", 590, 558, "ALREADY", 14), tlN = txt(tlG, "lab", 940, 558, "NOT YET", 14);
+  const tlA2 = txt(tlG, "lab", 590, 558, "IT HAS COME", 14), tlN2 = txt(tlG, "lab", 940, 558, "NOT YET COMPLETE", 14);
+  const received = [460, 520, 580, 640, 700, 750].map((x) => dot(g9, x, 459));
+  const v9 = verse(SC.already, 640, 136, 32, 58, true);
+
+  // ================= 10 differ: six cards of equal weight =================
+  const g10 = el("g", {}, world);
+  const cardsDef = [["Catholic teaching", ["CHURCH: ITS SEED AND BEGINNING"]], ["Many Protestants", ["KINGDOM: GOD'S REIGN", "CHURCH: THOSE WHO RECEIVED IT"]],
+    ["Two kingdoms", []], ["Christ's claim on every sphere", []], ["A reign still promised to Israel", []], ["Views on the thousand years", []]];
+  const cards10 = cardsDef.map(([a, subs], i) => { const g = el("g", {}, g10), x = 270 + (i % 3) * 370, y = 164 + Math.floor(i / 3) * 112;
+    el("rect", { x: x - 175, y, width: 350, height: 96, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, g);
+    txt(g, "disp", x, y + (subs.length ? 38 : 56), a, 27); subs.forEach((s, k) => txt(g, "lab", x, y + 64 + k * 18, s, 12)); return g; });
+  const folk10 = [...Array(12)].map((_, i) => dot(g10, 170 + i * 85, 459));
+  const not10 = txt(g10, "lab", 640, 412, "NOT A NATION · NOT A PARTY · NOT SHRUNK TO A PRIVATE FEELING", 16);
+
+  // ================= 11 forever: seven marks; two lines become one; filled and unfilled =================
+  const g11 = el("g", {}, world);
+  const trumps = [...Array(7)].map((_, i) => el("rect", { x: 457 + i * 60, y: 300, width: 6, height: 44, rx: 3, fill: i === 6 ? MUSTARD : STONE }, g11));
+  const trLab = txt(g11, "lab", 640, 380, "THE SEVENTH TRUMPET", 14);
+  const world11 = line(g11, "M140 380 H520 Q700 380 800 470", { stroke: STONE, "stroke-width": 4 });
+  const worldLab = txt(g11, "lab", 330, 360, "THE KINGDOM OF THE WORLD", 14);
+  const one11 = line(g11, "M800 470 H1140", { stroke: MUSTARD, "stroke-width": 5 });
+  const back11 = line(g11, "M800 470 H140", { stroke: MUSTARD, "stroke-width": 5 });
+  const sing = txt(g11, "lab", 640, 520, "KINGDOM, SINGULAR", 17);
+  const folk11 = [200, 280, 360, 440, 520, 600, 680, 760, 840, 920, 1000, 1080].map((x) => dot(g11, x, 459));
+  const v11 = verse(SC.forever, 640, 136, 34, 56, true);
+
+  F.title("The kingdom of God");
+  F.endCard(SC.forever.titleCard, END + 0.7);
+
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    draw(ground, up(t, P(0) - 0.6, 1.6)); op(ground, outAll);
+    // light over all: the question, the Psalm, the forever
+    const w = Math.max(0.6 * span(t, P(2) - 0.2, O(1) + 1.5, 1.0, 1.5), span(t, O(0), ST(0) - 0.4, 1.2, 1.0), 0.7 * span(t, AL(2), DF(0) - 0.2, 1.0), span(t, FV(0), END + 1.0, 1.2, 0.5));
+    op(wash, w * (0.09 + 0.01 * Math.sin(t * 0.9)));
+    if (t > O(0) && t < ST(0)) set(wash, { x: (640 - 640 * up(t, O(0), 3)).toFixed(1), width: (1280 * up(t, O(0), 3)).toFixed(1) }); else set(wash, { x: 0, width: 1280 });
+
+    // ----- 1 prayer -----
+    op(gP, win(t, P(0), O(0)));
+    op(page, up(t, P(0) - 0.2, 0.6) * (1 - up(t, P(2) - 0.3, 0.8))); pRows.forEach((r, i) => op(r, up(t, P(0) + 0.3 + i * 0.25, 0.3))); op(pLab, up(t, P(0) + 0.4, 0.6) * (1 - up(t, P(2) - 0.3, 0.8)));
+    op(gArc, up(t, at("prayer", 0, 0.45), 0.8) * (1 - up(t, P(2) - 0.3, 0.8)));
+    const ss = clamp((t - at("prayer", 0, 0.5)) / 9.0), [sx, sy] = qb(ss); set(sun, { cx: sx.toFixed(1), cy: sy.toFixed(1) });
+    hours.forEach((h, i) => h.setAttribute("fill", ss > [0.15, 0.5, 0.85][i] ? MUSTARD : STONE));
+    prayers.forEach((d, i) => { op(d, up(t, at("prayer", 0, 0.6) + i * 0.15, 0.4)); d.setAttribute("cy", (459 - 3 * Math.max(0, Math.sin(t * 1.3 + i * 0.8))).toFixed(1)); });
+    op(v1, span(t, P(1) - 0.3, P(2) - 0.1, 0.5));
+    op(q1, span(t, P(2) + 0.2, O(0) - 0.2, 0.6, 0.5));
+
+    // ----- 2 over-all -----
+    const o1 = (f) => at("over-all", 1, f);
+    op(g2, win(t, O(0), ST(0)));
+    people2.forEach((p, i) => { op(p.e, up(t, O(0) + 0.6 + i * 0.12, 0.4));
+      const away = p.x >= 700 ? up(t, o1(0.06) + (p.x - 700) * 0.002, 0.8) * (1 - up(t, o1(0.5) + (p.x - 140) / 1020 * 3.2, 0.6)) : 0;
+      set(p.e, { cx: (p.x + 22 * away).toFixed(1), cy: (459 - 2 * Math.sin(t * 1.1 + i)).toFixed(1), fill: away > 0.5 ? STONE : INK }); });
+    const rk = up(t, o1(0.5), 3.2); draw(right2, rk);
+    broken2.forEach((b) => op(b.e, up(t, o1(0.08) + (b.x - 680) * 0.002, 0.7) * (1 - up(t, o1(0.5) + (b.x + 40 - 140) / 1020 * 3.2 - 0.2, 0.5))));
+    op(cover2, up(t, o1(0.08), 0.5) * (1 - up(t, o1(0.5) + 3.0, 0.4)));
+    op(v2, span(t, O(0) - 0.2, O(1) - 0.1, 0.6));
+
+    // ----- 3 stone -----
+    const s0 = (f) => at("stone", 0, f), hit = s0(0.52) + 2.8;
+    op(g3, win(t, ST(0), N(0) + 1.2));
+    blocks.forEach((b, i) => { const a = up(t, s0(0.12) + i * 0.5, 0.6), fall = up(t, hit + 0.05 * i, 1.1), fade = up(t, ST(2) + i * 0.6, 1.4);
+      op(b.g, a * mix(1, 0.75, fall) * (1 - fade)); const ly = 470 - BH;
+      b.g.setAttribute("transform", `translate(${(SX + b.dx * fall).toFixed(1)} ${mix(b.y, ly + 4 * i, fall).toFixed(1)}) rotate(${(b.r * fall).toFixed(2)})`);
+      op(b.lab, a * (1 - up(t, hit - 0.3, 0.5))); });
+    op(hill, up(t, s0(0.38), 0.7) * (1 - up(t, hit + 1.2, 1.2)));
+    const sa = up(t, s0(0.52), 1.2), sb = up(t, s0(0.52) + 1.2, 1.6), grow = up(t, hit + 0.8, 2.6);
+    const stx = mix(mix(1080, 910, sa), SX + 188 / 2 + 26, sb), sty = mix(mix(332, 446, sa), 446, sb);
+    op(stone, up(t, s0(0.5), 0.4) * (1 - up(t, hit + 1.2, 1.0))); move(stone, stx, sty + (t < hit ? 0 : -6 * Math.sin(Math.PI * clamp((t - hit) / 0.6))), 1, -(1080 - stx) * 0.9);
+    op(mound, grow); mound.setAttribute("transform", `translate(0 470) scale(1 ${Math.max(0.001, grow).toFixed(3)}) translate(0 -470)`);
+    op(v3, span(t, ST(1) - 0.3, ST(2) - 0.1, 0.5));
+    op(which3, span(t, ST(2) + 0.1, N(0) - 0.2, 0.5));
+    mound.setAttribute("opacity", (grow * (1 - up(t, N(0) - 0.2, 1.2))).toFixed(3));
+
+    // ----- bar (4 to 6) -----
+    const n0 = (f) => at("near", 0, f);
+    op(gBar, up(t, n0(0.35), 0.6) * (1 - up(t, SD(0) - 0.6, 0.6)));
+    const bh = up(t, n0(0.35), 1.0); set(bar4, { y: (470 - 90 * bh).toFixed(1), height: Math.max(0.1, 90 * bh).toFixed(1) });
+    const reignW = Math.max(up(t, at("near", 1, 0.45), 1.2) * (1 - up(t, N(2), 0.8)), up(t, U(1) + 0.6, 2.5) * (1 - up(t, M(0), 1.0)));
+    op(reign, reignW * (0.11 + 0.01 * Math.sin(t * 1.4))); set(reign, { x: (640 - 200 - 260 * up(t, U(1) + 0.6, 2.5)).toFixed(1), width: (400 + 520 * up(t, U(1) + 0.6, 2.5)).toFixed(1) });
+
+    // ----- 4 near -----
+    op(g4, win(t, N(0), U(0)));
+    op(tl4, up(t, N(0) - 0.2, 0.6) * (1 - up(t, N(1) - 0.4, 0.6))); draw(tlLine, up(t, N(0) - 0.2, 1.4));
+    move(marker, mix(260, 640, up(t, n0(0.05), 2.6)), 518);
+    op(v4, span(t, n0(0.62), N(1) - 0.1, 0.5));
+    op(word4, span(t, N(1) + 0.1, N(2) - 0.1, 0.6));
+    op(fence, up(t, at("near", 1, 0.2), 0.6) * mix(1, 0.35, up(t, at("near", 1, 0.8), 0.8)) * (1 - up(t, N(2) - 0.2, 0.6)));
+    op(reignLab, span(t, at("near", 1, 0.45), N(2) - 0.1, 0.6));
+    op(both4, up(t, N(2), 0.6));
+    op(soon, up(t, at("near", 2, 0.05), 0.5)); op(arriving, up(t, at("near", 2, 0.22), 0.5)); op(q4, span(t, at("near", 2, 0.3), at("near", 2, 0.72), 0.4));
+    draw(brace4, up(t, at("near", 2, 0.72), 1.0));
+
+    // ----- 5 upon-you -----
+    const u0 = (f) => at("upon-you", 0, f);
+    op(g5, win(t, U(0), M(0)));
+    op(bed, up(t, U(0) - 0.2, 0.5) * (1 - up(t, u0(0.4), 0.8)));
+    const rise = up(t, u0(0.12), 1.0); set(healed, { cx: mix(360, 450, rise).toFixed(1), cy: (mix(428, 459, rise) - 14 * Math.sin(Math.PI * rise)).toFixed(1) });
+    fed.forEach((d, i) => op(d, up(t, U(0) + i * 0.1, 0.5)));
+    loaves.forEach((l, i) => { const k = up(t, u0(0.36) + i * 0.4, 0.9); op(l, up(t, u0(0.36) + i * 0.4 - 0.3, 0.4)); move(l, mix(690, fedX[i], k), mix(440, 434, k) - 40 * Math.sin(Math.PI * k)); });
+    guests.forEach((g, i) => { const k = up(t, u0(0.68) + i * 0.3, 1.8); set(g, { cx: mix(1320, [1050, 1100][i], k).toFixed(1), cy: (459 - 3 * Math.abs(Math.sin(t * 6 + i)) * (k > 0.02 && k < 0.98 ? 1 : 0)).toFixed(1) }); });
+    const drive = up(t, U(1) + 1.0, 3.0);
+    broken5.forEach((b, i) => op(b, up(t, U(1) - 0.4 + i * 0.15, 0.6) * (1 - up(t, U(1) + 1.6 + (2 - i) * 0.7, 0.6))));
+    op(cover5, up(t, U(1) - 0.4, 0.5) * (1 - up(t, U(1) + 3.4, 0.4)));
+    op(v5, span(t, U(1) - 0.3, M(0) - 0.2, 0.5));
+
+    // ----- 6 midst -----
+    const m0 = (f) => at("midst", 0, f), m1 = (f) => at("midst", 1, f);
+    op(g6, win(t, M(0), SD(0)));
+    const turn = up(t, m0(0.4), 2.0);
+    watchers.forEach((w, i) => { op(w.e, up(t, M(0) - 0.2 + i * 0.12, 0.5)); w.e.setAttribute("cx", (w.x + 120 * turn).toFixed(1)); op(w.s, up(t, M(0) + 0.2 + i * 0.12, 0.6) * (1 - turn)); });
+    op(when6, up(t, M(0) + 0.6, 0.5) * (1 - turn));
+    crowd6.forEach((d, i) => { op(d, up(t, M(0) + i * 0.1, 0.5)); d.setAttribute("cy", (459 - 2 * Math.max(0, Math.sin(t * 1.2 + i))).toFixed(1)); });
+    op(v6, span(t, m0(0.6), M(1) - 0.1, 0.5));
+    op(word6, up(t, M(1) + 0.1, 0.6));
+    op(rod, up(t, m1(0.08), 0.6)); rod.setAttribute("transform", `rotate(${(0.6 * Math.sin(t * 0.9)).toFixed(3)} 640 220)`);
+    op(cards6[0], up(t, m1(0.16), 0.7)); op(cards6[1], up(t, m1(0.4), 0.7));
+
+    // ----- 7 seed -----
+    const d0 = (f) => at("seed", 0, f), d2 = (f) => at("seed", 2, f);
+    op(g7, win(t, SD(0), AL(0)));
+    furrows.forEach((f, i) => draw(f, up(t, SD(0) + i * 0.3, 1.6)));
+    const walk = up(t, SD(0), 4.0); sower.setAttribute("cx", mix(120, 400, walk).toFixed(1)); op(sower, up(t, SD(0) - 0.2, 0.5) * (1 - up(t, SD(2), 0.8)));
+    const drop = up(t, d0(0.66), 0.8); op(seed, up(t, d0(0.6), 0.3) * (1 - up(t, d2(0.02), 0.6))); set(seed, { cx: 420, cy: mix(430, 478, drop).toFixed(1) });
+    op(labs7, span(t, SD(1) + 0.1, SD(2) - 0.1, 0.5));
+    draw(shoot, up(t, SD(1) + 0.6, 1.4)); op(shoot, 1 - up(t, d2(0.04), 0.5));
+    op(tree, up(t, SD(2), 0.3)); draw(trunk, up(t, SD(2), 1.6)); boughs.forEach((b, i) => draw(b, up(t, SD(2) + 0.9 + i * 0.25, 1.0)));
+    tree.setAttribute("transform", `rotate(${(0.7 * Math.sin(t * 0.8)).toFixed(3)} 420 470)`);
+    leaves.forEach((l, i) => op(l, up(t, SD(2) + 1.6 + i * 0.1, 0.4)));
+    birds7.forEach((b, i) => { const k = up(t, d2(0.3) + i * 0.5, 1.8), [tx, ty] = [[344, 326], [498, 292]][i]; op(b, up(t, d2(0.3) + i * 0.5, 0.3)); move(b, mix(i ? 760 : 120, tx, k), mix(220, ty, k) + (k < 1 ? 4 * Math.sin(t * 8 + i) : 0), 1); });
+    op(leaven, up(t, d2(0.44), 0.7));
+    specks.forEach((s, i) => op(s, up(t, d2(0.52) + i * 0.18, 0.4)));
+    const rise7 = up(t, d2(0.6), 2.6); dough.setAttribute("transform", `translate(880 420) scale(1 ${(1 + 0.75 * rise7).toFixed(3)})`);
+    op(point7, span(t, d2(0.8), TR(0) - 0.2, 0.5)); op(g7b, 1 - up(t, TR(0) - 0.6, 0.6));
+
+    // ----- 8 treasure -----
+    const r0 = (f) => at("treasure", 0, f), r1 = (f) => at("treasure", 1, f), pause = r1(0.38);
+    op(g8, up(t, TR(0) - 0.4, 0.6) * (1 - up(t, AL(0) - 0.6, 0.6)));
+    const fieldOut = 1 - up(t, pause - 0.6, 0.8);
+    op(chest, up(t, TR(0), 0.6) * fieldOut); const found = up(t, r0(0.26), 0.8) * (1 - up(t, r0(0.4), 0.8)); move(chest, 520, mix(512, 478, found));
+    const fx = t < r0(0.48) ? mix(100, 480, up(t, r0(0.02), 3.0)) : t < r0(0.74) ? mix(480, 990, up(t, r0(0.48), 1.6)) : mix(990, 600, up(t, r0(0.74), 1.4));
+    const joy = span(t, r0(0.3), r0(0.48), 0.2) * 9 * Math.abs(Math.sin(t * 7));
+    set(finder, { cx: fx.toFixed(1), cy: (459 - joy).toFixed(1) }); op(finder, up(t, TR(0), 0.5) * fieldOut);
+    op(house, up(t, r0(0.4), 0.7) * fieldOut);
+    goods.forEach((g, i) => { const k = up(t, r0(0.6) + i * 0.25, 0.9); op(g, 1 - k); g.setAttribute("transform", `translate(${(90 * k).toFixed(1)} 0)`); });
+    draw(fence8, up(t, r0(0.88), 1.4)); op(fence8, fieldOut);
+    op(v8, span(t, TR(0) - 0.2, TR(1) - 0.1, 0.6));
+    op(pearlG, up(t, TR(1) - 0.2, 0.6) * fieldOut); merchant.setAttribute("cx", mix(1060, 970, up(t, TR(1), 1.4)).toFixed(1));
+    op(q8, span(t, pause, AL(0) - 0.2, 0.8, 0.6));
+
+    // ----- 9 already -----
+    const a0 = (f) => at("already", 0, f), a1 = (f) => at("already", 1, f);
+    op(g9, win(t, AL(0), DF(0)));
+    op(bar9, up(t, AL(0) + 0.2, 0.6));
+    op(sch, 1 - up(t, AL(1) + 0.2, 0.8)); op(weiss, up(t, a0(0.2), 0.7) * mix(1, 0.4, up(t, a0(0.62), 0.6))); op(dodd, up(t, a0(0.66), 0.7));
+    op(ladd, span(t, AL(1) + 0.4, AL(2) - 0.1, 0.6));
+    const tlIn = Math.max(win(t, a1(0.25), DF(0)), win(t, FV(3) - 0.2, END + 1.2) * outAll);
+    op(tlG, tlIn);
+    const fk = t < FV(0) ? up(t, a1(0.3), 2.0) : up(t, FV(3), 2.0); set(tlFill, { width: Math.max(0.1, 380 * fk).toFixed(1) }); op(tlFill, fk > 0.001 ? 1 : 0);
+    op(tlOut, t < FV(0) ? up(t, a1(0.55), 0.8) : up(t, FV(3) + 1.0, 0.8));
+    op(tlNow, t < FV(0) ? up(t, a1(0.55), 0.6) : up(t, FV(3) + 1.0, 0.6));
+    op(tlA, t < FV(0) ? up(t, a1(0.45), 0.6) : 0); op(tlN, t < FV(0) ? up(t, a1(0.62), 0.6) : 0);
+    op(tlA2, t > FV(0) ? up(t, FV(3) + 0.6, 0.6) : 0); op(tlN2, t > FV(0) ? up(t, at("forever", 3, 0.5), 0.6) : 0);
+    received.forEach((d, i) => { op(d, up(t, a1(0.62) + i * 0.15, 0.5)); d.setAttribute("cy", (459 - 2 * Math.max(0, Math.sin(t * 1.3 + i))).toFixed(1)); });
+    op(v9, span(t, AL(2) - 0.3, DF(0) - 0.5, 0.5));
+
+    // ----- 10 differ -----
+    const c0 = (f) => at("differ", 0, f), c1 = (f) => at("differ", 1, f);
+    op(g10, win(t, DF(0), FV(0)));
+    const dim = mix(1, 0.4, up(t, DF(2), 0.8));
+    [c0(0.08), c0(0.42), c1(0.04), c1(0.18), c1(0.36), c1(0.72)].forEach((a, i) => { op(cards10[i], up(t, a, 0.7) * dim); cards10[i].setAttribute("transform", `translate(0 ${(1.5 * Math.sin(t * 0.8 + i)).toFixed(2)})`); });
+    folk10.forEach((d, i) => { op(d, up(t, DF(0) + 0.2 + i * 0.12, 0.5)); d.setAttribute("cy", (459 - 2 * Math.max(0, Math.sin(t * 1.1 + i * 0.9))).toFixed(1)); });
+    op(not10, up(t, at("differ", 2, 0.3), 0.8));
+
+    // ----- 11 forever -----
+    const f1 = (f) => at("forever", 1, f), f2 = (f) => at("forever", 2, f);
+    op(g11, up(t, FV(0) - 0.4, 0.6) * outAll);
+    trumps.forEach((m, i) => op(m, up(t, FV(0) + 0.3 + i * 0.35, 0.4) * (1 - up(t, FV(1) - 0.5, 0.6))));
+    op(trLab, up(t, FV(0) + 2.6, 0.5) * (1 - up(t, FV(1) - 0.5, 0.6)));
+    draw(world11, up(t, f1(0.15), 1.6)); op(world11, 1 - up(t, f2(0.2), 1.6)); op(worldLab, up(t, f1(0.2), 0.6) * (1 - up(t, f2(0.15), 0.8)));
+    draw(one11, up(t, f1(0.15) + 1.4, 1.8)); draw(back11, up(t, f2(0.15), 2.2));
+    const lineDim = 1 - 0.6 * up(t, FV(3), 0.8); op(one11, lineDim); op(back11, lineDim);
+    op(sing, span(t, f2(0.3), FV(3) - 0.1, 0.6));
+    folk11.forEach((d, i) => { op(d, up(t, f2(0.1) + i * 0.08, 0.5)); d.setAttribute("cy", (459 - 2 * Math.max(0, Math.sin(t * 1.2 + i))).toFixed(1)); });
+    op(v11, span(t, FV(1) - 0.3, FV(2) - 0.1, 0.5));
+  };
+});
+</script>
+</body></html>
