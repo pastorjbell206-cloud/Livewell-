@@ -1,0 +1,333 @@
+<!doctype html>
+<!-- "Light and Darkness". God is never drawn: he is shown only as light (a mustard wash never above 0.12) or by
+     absence. Marduk and Tiamat are only labels and a broken line. The sun is a plain disc and the moon a crescent,
+     never side by side like eyes. The pillar of fire is a column of a few mustard flames, far from the dots.
+     Moses has no face and no glow around him: he is a plain dot, and the light falls on the path he walks.
+     Jesus is one upright mustard bar. The lamp is a small plain clay lamp under a grain measure. "They will see
+     His face" is shown only as light. Darkness is the deep, night, a plague over a land and the dark the light
+     shines into: it never falls on people as a mark. People are plain ink dots, all alike.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Light and Darkness</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, soft, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", GY = 470, R = rng(31);
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const G = (p) => el("g", {}, p || world);
+  const dot = (p, x, y, r = 10) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const sl = (p, d, a = {}) => el("path", Object.assign({ d, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round", "stroke-linejoin": "round" }, a), p);
+  const L = (p, x, y, s, size = 15, fill) => txt(p, "lab", x, y, s, size, fill ? { fill } : undefined);
+  const verse = (ch, cx, y, size, max, big) => { const g = G(), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  // light standing for God: never above 0.12
+  const glory = (e, v) => op(e, Math.min(0.12, v));
+  const flame = (p, s = 1) => el("path", { d: `M0 0 q${-7 * s} ${-9 * s} 0 ${-20 * s} q${7 * s} ${11 * s} 0 ${20 * s} Z`, fill: MUSTARD }, p);
+  const crescent = (p) => el("path", { d: "M0 -22 A22 22 0 1 0 0 22 A28 28 0 0 1 0 -22 Z", fill: MUTED, stroke: STONE, "stroke-width": 2.5, "stroke-linejoin": "round" }, p);
+  const qb = (a, c, b, s) => (1 - s) * (1 - s) * a + 2 * s * (1 - s) * c + s * s * b;
+  const along = (pts, k) => { const segs = []; let tot = 0; for (let i = 1; i < pts.length; i++) { const l = Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); segs.push(l); tot += l; }
+    let d = clamp(k) * tot; for (let i = 0; i < segs.length; i++) { if (d <= segs[i] || i === segs.length - 1) { const f = segs[i] ? Math.min(1, d / segs[i]) : 0; return [mix(pts[i][0], pts[i + 1][0], f), mix(pts[i][1], pts[i + 1][1], f)]; } d -= segs[i]; } };
+  const house = (p, x, w = 80) => { const g = G(p); el("rect", { x: x - w / 2, y: 410, width: w, height: 60, fill: WARM, stroke: INK, "stroke-width": 3 }, g);
+    sl(g, `M${x - w / 2 - 8} 410 H${x + w / 2 + 8}`, { "stroke-width": 4 }); const door = el("rect", { x: x + 8, y: 432, width: 22, height: 38, fill: CHAR }, g); return { g, door, x }; };
+  const lampShape = (p) => { const g = G(p); el("path", { d: "M-16 -2 Q-14 10 2 10 Q16 9 24 -2 Z", fill: WARM, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, g);
+    const f = flame(g, 0.55); move(f, 22, -3); return { g, f }; };
+
+  const ground = line(world, "M-20 470 H1300", { "stroke-width": 3 });
+
+  // ================= 1 first-light: the dark deep; a battle elsewhere; a word, and light =================
+  const A0 = S("first-light", 0), A1 = S("first-light", 1), A2 = S("first-light", 2), aLight = at("first-light", 2, 0.3);
+  const gA = G();
+  const darkA = el("rect", { x: -40, y: 96, width: 1360, height: 444, fill: CHAR }, gA);
+  const washA = el("rect", { x: -40, y: 250, width: 1360, height: 220, fill: MUSTARD }, gA);
+  const wave = (y) => { let d = `M-100 ${y} q40 -12 80 0`; for (let i = 0; i < 18; i++) d += " t80 0"; return d; };
+  const waves = [0, 1, 2, 3].map((i) => sl(gA, wave(388 + i * 22), { stroke: i % 2 ? STONE : LINE, "stroke-width": 2.5 }));
+  const labDeep = L(gA, 640, 300, "DARKNESS OVER THE DEEP · GENESIS 1:2", 15, MUTED);
+  const gBab = G(gA);
+  L(gBab, 360, 266, "ENUMA ELISH · BABYLON", 15, MUTED); L(gBab, 250, 318, "MARDUK", 14, LINE); L(gBab, 470, 318, "TIAMAT", 14, LINE);
+  const brokeL = sl(gBab, "M300 340 l18 -12 l18 14 l18 -12", { stroke: MUTED, "stroke-width": 3 }), brokeR = sl(gBab, "M384 340 l18 -12 l18 14 l18 -12", { stroke: MUTED, "stroke-width": 3 });
+  L(gBab, 360, 372, "A BATTLE", 13, LINE);
+  const gGen = G(gA); L(gGen, 920, 266, "GENESIS 1", 15, MUTED); sl(gGen, "M840 334 H1000", { stroke: MUTED, "stroke-width": 3 }); L(gGen, 920, 372, "NO BATTLE", 13, LINE);
+  const v1 = verse(SC["first-light"], 640, 160, 40, 62, true);
+
+  // ================= 2 lights: unnamed lamps with a job =================
+  const B0 = S("lights", 0), B1 = S("lights", 1);
+  const gB = G();
+  el("path", { d: "M180 440 Q640 120 1100 440", fill: "none", stroke: LINE, "stroke-width": 2.5, "stroke-dasharray": "4 10", "stroke-linecap": "round" }, gB);
+  const sunB = el("circle", { r: 26, fill: MUSTARD }, gB);
+  const moonB = G(gB); crescent(moonB); move(moonB, 1160, 276, 0.8);
+  const labWor = L(gB, 640, 236, "WORSHIPED ACROSS THE ANCIENT WORLD", 15);
+  const labGreat = L(gB, 640, 506, "THE GREATER LIGHT", 15), labLess = L(gB, 1160, 322, "THE LESSER LIGHT", 13), labUn = L(gB, 640, 534, "NOT EVEN NAMED", 14, INK);
+  const gRule = G(gB); sl(gRule, "M200 510 H1080", { stroke: STONE, "stroke-width": 2.5 });
+  const ticks = [...Array(41)].map((_, i) => { const x = 200 + i * 22, tall = i % 10 === 0; return el("line", { x1: x, x2: x, y1: tall ? 494 : 502, y2: 518, stroke: tall ? INK : STONE, "stroke-width": tall ? 3 : 2, "stroke-linecap": "round" }, gRule); });
+  const rLabs = [[360, "DAYS"], [640, "SEASONS"], [920, "YEARS"]].map(([x, s]) => L(gRule, x, 550, s, 14));
+  const v2 = verse(SC.lights, 640, 140, 34, 44, true);
+
+  // ================= 3 egypt: Son of Re; darkness over the land; light where they lived =================
+  const C0 = S("egypt", 0), C1 = S("egypt", 1), C2 = S("egypt", 2);
+  const gC = G();
+  const pyr = sl(gC, "M170 470 L300 344 L430 470", { stroke: STONE, "stroke-width": 3 });
+  const re = el("circle", { cx: 300, cy: 300, r: 22, fill: MUTED, stroke: STONE, "stroke-width": 2.5 }, gC);
+  const labRe = L(gC, 300, 262, "RE · THE SUN GOD", 14), labPh = L(gC, 300, 506, "PHARAOH · SON OF RE", 15);
+  const egH = [560, 680, 800].map((x) => house(gC, x)), goH = [980, 1090, 1200].map((x) => house(gC, x));
+  const goLit = goH.map((h) => el("rect", { x: h.x + 8, y: 432, width: 22, height: 38, fill: MUSTARD }, gC));
+  const goWash = el("rect", { x: 920, y: 300, width: 340, height: 170, fill: MUSTARD }, gC);
+  const darkC = el("rect", { x: -40, y: 240, width: 0, height: 232, fill: CHAR }, gC);
+  const labDays = L(gC, 440, 300, "THREE DAYS · EXODUS 10:22", 15, MUTED), labWord = L(gC, 440, 336, "CHOSHEK: THE WORD OF GENESIS 1:2", 14, MUTED);
+  const gBack = G(gC); L(gBack, 440, 372, "CREATION RUNS BACKWARD", 14, MUTED); sl(gBack, "M560 400 H320 M336 390 L320 400 L336 410", { stroke: MUTED, "stroke-width": 3 });
+  const labGo = L(gC, 1090, 506, "WHERE ISRAEL LIVED", 15);
+  const v3 = verse(SC.egypt, 640, 160, 36, 60, true);
+
+  // ================= 4 pillar: a cloud by day, a fire by night, and it leads =================
+  const D0 = S("pillar", 0), D1 = S("pillar", 1), D2 = S("pillar", 2), dNight = at("pillar", 1, 0.48);
+  const gD = G();
+  const nightD = el("rect", { x: -40, y: 244, width: 1360, height: 296, fill: CHAR }, gD);
+  const crowd = [...Array(14)].map((_, i) => ({ e: dot(gD, 0, 459, 9), dx: i * 30 + R() * 8, ph: R() * 6 }));
+  // the cloud: wide, flat, overlapping wisps, wider than tall, with no round top
+  const gCloud = G(gD); [[2, 450, 68, 14], [-16, 432, 54, 13], [12, 414, 76, 14], [-8, 395, 58, 13], [14, 376, 66, 13], [-12, 357, 52, 12], [8, 338, 76, 12], [-6, 320, 60, 11]].forEach(([x, y, rx, ry], i) => el("ellipse", { cx: x, cy: y, rx, ry, fill: i % 2 ? LINE : MUTED, opacity: 0.85 }, gCloud));
+  const gFire = G(gD), fl = [[0, 466, 2.0], [-6, 430, 2.1], [6, 392, 1.9], [-4, 354, 1.6], [2, 320, 1.3]].map(([x, y, s]) => { const f = flame(gFire, s); return { f, x, y, s }; });
+  const labDay = L(gD, 0, 506, "BY DAY", 15), labNight = L(gD, 0, 506, "BY NIGHT", 15, STONE);
+  const lead = line(gD, "M0 0 H1", { stroke: MUSTARD, "stroke-width": 2.5, "stroke-dasharray": "0.02 0.025" });
+  const v4 = verse(SC.pillar, 640, 140, 30, 64, true);
+
+  // ================= 5 moses: asked for the face; came down shining, unaware =================
+  const M0 = S("moses", 0), M1 = S("moses", 1), M2 = S("moses", 2);
+  const gM = G();
+  const mtnM = line(gM, "M520 470 L700 382 L800 332 L900 262 L1000 322 L1120 400 L1270 470", { "stroke-width": 3.5 });
+  const mPath = [[900, 252], [800, 322], [700, 372], [520, 460], [470, 460]];
+  const litPath = line(gM, "M900 262 L800 332 L700 382 L520 470 L470 470", { stroke: MUSTARD, "stroke-width": 7 });
+  const summitLight = el("path", { d: "M840 96 L960 96 L990 252 L810 252 Z", fill: MUSTARD }, gM);
+  const moses = dot(gM, 900, 252);
+  const labSin = L(gM, 900, 506, "SINAI", 15);
+  const labAsk = L(gM, 360, 300, "EXODUS 33 · ASKED TO SEE THE GLORY", 14), labNo = L(gM, 360, 330, "REFUSED THE FACE", 14, INK);
+  const labNot = L(gM, 360, 364, "A GLORY NOT HIS OWN", 15, INK);
+  const qM = txt(gM, "disp", 330, 350, "?", 96, { fill: MUSTARD });
+  const v5 = verse(SC.moses, 640, 150, 32, 50, true);
+
+  // ================= 6 my-light: light and dark in the old world; my light; confidence and fear in one prayer =================
+  const P0 = S("my-light", 0), P1 = S("my-light", 1);
+  const gP = G();
+  const wideP = el("path", { d: "M120 250 L520 250 L560 470 L80 470 Z", fill: MUSTARD }, gP);
+  const beamP = el("path", { d: "M300 250 L340 250 L346 470 L294 470 Z", fill: MUSTARD }, gP);
+  const darkP = el("rect", { x: 720, y: 250, width: 500, height: 220, fill: CHAR }, gP);
+  const meP = dot(gP, 320, 459);
+  const labLife = L(gP, 320, 506, "LIGHT · LIFE AND SAFETY", 14), labMy = L(gP, 320, 506, "MY LIGHT", 15, INK), labDeath = L(gP, 970, 506, "DARKNESS · DANGER AND DEATH", 14);
+  const gS = G();
+  sl(gS, "M640 470 V300 M600 470 H680", { "stroke-width": 4 });
+  const beamS = sl(gS, "M440 300 H840", { "stroke-width": 4 });
+  const pan = (s) => { const g = G(gS); sl(g, "M0 0 L-34 74 M0 0 L34 74", { stroke: STONE, "stroke-width": 2 }); el("path", { d: "M-46 74 Q0 112 46 74 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); L(g, 0, 140, s, 14, INK); return g; };
+  const panL = pan("WITHOUT FEAR"), panR = pan("URGENT FEAR");
+  const labPs = L(gS, 640, 534, "PSALM 27 · ONE PRAYER", 14);
+  const qP = txt(gS, "disp", 640, 262, "?", 72, { fill: MUSTARD });
+  const v6 = verse(SC["my-light"], 640, 160, 44, 50, true);
+
+  // ================= 7 great-light: the first land dark, the first light =================
+  const G0 = S("great-light", 0), G1 = S("great-light", 1);
+  const gG = G(), gMap = el("g", { transform: "translate(0 -16)" }, gG);
+  const regN = "M380 250 L620 242 L652 330 L560 356 L400 338 Z", regZ = "M360 352 L560 370 L640 440 L420 452 L340 410 Z";
+  const darkG = [regN, regZ].map((d) => el("path", { d, fill: CHAR }, gMap)), lightG = [regN, regZ].map((d) => el("path", { d, fill: MUSTARD }, gMap));
+  [regN, regZ].forEach((d) => el("path", { d, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "6 8", "stroke-linecap": "round" }, gMap));
+  el("path", { d: "M694 300 Q744 290 752 332 Q762 382 724 432 Q704 444 692 422 Q662 372 670 332 Q674 306 694 300 Z", fill: WARM, stroke: INK, "stroke-width": 3 }, gMap);
+  const labNa = L(gMap, 500, 300, "NAPHTALI", 15, INK), labZe = L(gMap, 480, 412, "ZEBULUN", 15, INK), labGal = L(gMap, 860, 384, "SEA OF GALILEE", 13);
+  const arrow = sl(gMap, "M1200 262 Q920 196 650 250 M670 236 L650 250 L670 262", { stroke: STONE, "stroke-width": 3 });
+  arrow.setAttribute("pathLength", 1); arrow.setAttribute("stroke-dasharray", 1);
+  const labAss = L(gMap, 1130, 300, "ASSYRIA", 15), labYr = L(gMap, 1130, 328, "733 AND 732 BC", 14);
+  const capM = el("rect", { x: 702, y: 288, width: 10, height: 10, fill: INK }, gMap);
+  const barG = el("rect", { x: 701, y: 196, width: 12, height: 86, rx: 6, fill: MUSTARD }, gMap);
+  const labCap = L(gMap, 860, 268, "CAPERNAUM", 14, INK), labMt = L(gMap, 860, 294, "MATTHEW 4", 13);
+  const walkers = [...Array(8)].map((_, i) => ({ e: dot(gG, 0, 459, 9), i }));
+  const v7 = verse(SC["great-light"], 640, 150, 40, 60, true);
+
+  // ================= 8 feast: the great lamps; the light of the world; not overcome =================
+  const H0 = S("feast", 0), H1 = S("feast", 1), H2 = S("feast", 2);
+  const gH = G();
+  const court = sl(gH, "M220 470 V420 H1060 V470", { stroke: STONE, "stroke-width": 3 });
+  const stands = [340, 500, 780, 940].map((x) => { const g = G(gH); sl(g, `M${x} 470 V304 M${x - 18} 470 H${x + 18}`, { "stroke-width": 3 }); el("path", { d: `M${x - 22} 300 H${x + 22} L${x + 14} 314 H${x - 14} Z`, fill: WARM, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, g); const f = flame(g, 1.5); move(f, x, 300); return { g, f, x }; });
+  const gGhostP = G(gH); const gfl = [[0, 466, 1.6], [-5, 434, 1.7], [5, 400, 1.5], [-3, 368, 1.2]].map(([x, y, s]) => { const f = flame(gGhostP, s); move(f, 1170 + x, y); return f; });
+  const labPil = L(gGhostP, 1170, 506, "THE PILLAR OF FIRE", 13);
+  const labFeast = L(gH, 640, 506, "THE FEAST OF TABERNACLES", 15), labMish = L(gH, 640, 534, "THE MISHNAH · SUKKAH 5", 13);
+  const darkH = [el("rect", { x: -40, y: 250, width: 0, height: 222, fill: CHAR }, gH), el("rect", { x: 1320, y: 250, width: 0, height: 222, fill: CHAR }, gH)];
+  const barH = el("rect", { x: 634, y: 372, width: 12, height: 98, rx: 6, fill: MUSTARD }, gH);
+  const follow = [430, 480, 540, 590].map((x, i) => ({ e: dot(gH, 0, 459, 9), x, i }));
+  const labJohn = L(gH, 640, 506, "JOHN 1:5 · NOT OVERCOME", 15), labEq = L(gH, 640, 534, "NOT TWO EQUAL POWERS", 14, INK);
+  const v8 = verse(SC.feast, 640, 140, 30, 60, true);
+
+  // ================= 9 hearts: Genesis again; the glory has a face; God is light =================
+  const J0 = S("hearts", 0), J1 = S("hearts", 1), J2 = S("hearts", 2);
+  const gJ = G();
+  const darkJ = el("rect", { x: 120, y: 250, width: 1040, height: 222, fill: CHAR }, gJ);
+  const rowJ = [...Array(7)].map((_, i) => { const x = 340 + i * 100, g = G(gJ); dot(g, x, 459); const l = el("rect", { x: x - 4, y: 414, width: 8, height: 26, rx: 4, fill: MUSTARD }, g); return { g, l, i }; });
+  const gJ1 = G(gJ);
+  sl(gJ1, "M130 470 L230 372 L330 470", { stroke: STONE, "stroke-width": 3 });
+  const veil = el("rect", { x: 300, y: 300, width: 14, height: 120, fill: STONE }, gJ1);
+  L(gJ1, 230, 506, "SINAI · REFUSED A FACE", 14);
+  const thread = line(gJ1, "M330 420 Q640 300 940 420", { stroke: STONE, "stroke-width": 2.5 });
+  const glowJ = el("path", { d: "M940 250 L1060 250 L1100 470 L900 470 Z", fill: MUSTARD }, gJ1);
+  el("rect", { x: 994, y: 362, width: 12, height: 108, rx: 6, fill: MUSTARD }, gJ1);
+  L(gJ1, 1000, 506, "IN THE FACE OF JESUS CHRIST", 14);
+  const washJ = el("rect", { x: -40, y: 240, width: 1360, height: 230, fill: MUSTARD }, gJ);
+  const gJ2 = G(gJ); L(gJ2, 640, 330, "1 JOHN 1:5", 15); L(gJ2, 640, 362, "NO DARKNESS AT ALL", 15, INK);
+  const v9 = verse(SC.hearts, 640, 140, 32, 56, true);
+
+  // ================= 10 you-are: lights already; the lamp under the measure; on the stand =================
+  const K0 = S("you-are", 0), K1 = S("you-are", 1), K2 = S("you-are", 2);
+  const gK = G();
+  const rowK = [...Array(6)].map((_, i) => { const x = 390 + i * 100, g = G(gK); dot(g, x, 459); const lp = lampShape(g); move(lp.g, x - 4, 426); return { g, lp, i }; });
+  const labTry = L(gK, 640, 506, "NOT: TRY TO BECOME", 15), strike = line(gK, "M490 500 H790", { stroke: INK, "stroke-width": 2.5 }), labAre = L(gK, 640, 540, "ARE", 19, INK);
+  const gK1 = G(gK);
+  const room = sl(gK1, "M640 470 V284 M1000 470 V284 M620 286 L820 222 L1020 286", { "stroke-width": 3 });
+  const stand = sl(gK1, "M820 470 V348 M792 470 H848 M800 344 H840", { "stroke-width": 3 });
+  const roomLight = el("path", { d: "M800 350 L840 350 L996 468 L644 468 Z", fill: MUSTARD }, gK1);
+  const upLight = el("path", { d: "M700 96 L940 96 L1000 222 L640 222 Z", fill: MUSTARD }, gK1);
+  const inRoom = [668, 742, 936].map((x) => dot(gK1, x, 459));   // uneven, 60px or more apart, none under the lamp
+  const bigLamp = lampShape(gK1);
+  const measure = G(gK1); el("path", { d: "M-52 0 L-40 -78 H40 L52 0 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, measure); sl(measure, "M-46 -38 H46", { stroke: STONE, "stroke-width": 2.5 });
+  const labMeas = L(gK1, 380, 506, "A GRAIN MEASURE", 14), labFather = L(gK1, 380, 300, "THE FATHER GLORIFIED", 15, INK), labNotL = L(gK1, 380, 328, "NOT THE LAMP", 14);
+  const gK2 = G(gK); sl(gK2, "M120 470 V300 M340 470 V300 M106 302 L230 250 L354 302", { stroke: STONE, "stroke-width": 3 });
+  const qK = txt(gK2, "disp", 230, 420, "?", 84, { fill: MUSTARD });
+  const v10 = verse(SC["you-are"], 640, 160, 46, 60, true);
+
+  // ================= 11 no-night: the city lit by glory; three readings of the seeing; no night =================
+  const N0 = S("no-night", 0), N1 = S("no-night", 1), N2 = S("no-night", 2);
+  const gN = G(), gCity = G(gN);
+  const glowN = el("path", { d: "M560 230 L720 230 L1010 470 L270 470 Z", fill: MUSTARD }, gCity);
+  const washN = el("rect", { x: -40, y: 230, width: 1360, height: 240, fill: MUSTARD }, gCity);
+  [[300, 330, 60], [370, 300, 70], [450, 342, 64], [500, 316, 60], [720, 316, 60], [790, 342, 64], [860, 300, 70], [940, 330, 60]].forEach(([x, y, w]) => el("rect", { x, y, width: w, height: 470 - y, fill: WARM, stroke: INK, "stroke-width": 3 }, gCity));
+  sl(gCity, "M560 470 V372 Q640 322 720 372 V470", { "stroke-width": 3.5 });
+  const barN = el("rect", { x: 634, y: 376, width: 12, height: 94, rx: 6, fill: MUSTARD }, gCity);
+  const sunN = el("circle", { cx: 170, cy: 290, r: 20, fill: MUSTARD }, gN), moonN = G(gN); crescent(moonN); move(moonN, 1110, 300, 0.8);
+  const labNeed = L(gN, 640, 506, "NO NEED OF SUN OR MOON · REVELATION 21:23", 14), labLamp = L(gN, 640, 534, "THE LAMB IS ITS LAMP", 14, INK);
+  const cards = [[240, "THE WESTERN TRADITION", "Augustine to Aquinas", "GOD HIMSELF"], [640, "THE ORTHODOX", "after Gregory Palamas", "HIS UNCREATED LIGHT"], [1040, "MANY REFORMED WRITERS", "after John Owen", "IN THE FACE OF CHRIST"]].map(([x, a, b, c]) => {
+    const g = G(gN); el("rect", { x: x - 175, y: 250, width: 350, height: 140, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, g);
+    L(g, x, 290, a, 14); txt(g, "ital", x, 332, b, 28); L(g, x, 368, c, 14, INK); return g; });
+  const strip = [...Array(12)].map((_, i) => el("rect", { x: 160 + i * 80, y: 498, width: 80, height: 14, fill: i % 2 ? CHAR : WARM, stroke: i % 2 ? "none" : LINE, "stroke-width": 1.5 }, gN));
+  const v11 = verse(SC["no-night"], 640, 160, 44, 60, true);
+
+  F.title("Light and Darkness", 72);
+  F.endCard(SC["no-night"].titleCard, END + 0.7);
+  // the closing line is long: set it on two rows (the engine only moves the text element, never rewrites it)
+  { const tc = SC["no-night"].titleCard[0], card = [...document.querySelectorAll("text.disp")].find((e) => e.textContent === tc);
+    if (card) { const cut = tc.indexOf(". ") + 1; card.textContent = ""; card.style.fontSize = "54px";
+      [[tc.slice(0, cut), -50], [tc.slice(cut + 1), 64]].forEach(([s, dy]) => { const sp = el("tspan", { x: 640, dy }, card); sp.textContent = s; }); } }
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    draw(ground, up(t, A0 - 0.4, 1.6)); op(ground, outAll);
+    // ----- 1 first-light -----
+    const aOut = 1 - up(t, B0 - 0.7, 0.7); op(gA, up(t, 2.2, 0.6) * aOut);
+    op(darkA, 0.9 * (1 - up(t, aLight, 1.6))); glory(washA, up(t, aLight + 0.4, 1.6) * (0.09 + 0.02 * Math.sin(t * 1.5)));
+    waves.forEach((w, i) => { w.setAttribute("transform", `translate(${(40 * Math.sin(t / (3 + i) + i)).toFixed(1)} ${(2 * Math.sin(t * 0.8 + i)).toFixed(1)})`); op(w, up(t, A0 - 0.2 + i * 0.25, 0.8)); });
+    op(labDeep, span(t, A0 + 0.6, A1 - 0.2, 0.6));
+    op(gBab, span(t, A1 - 0.1, at("first-light", 1, 0.95), 0.6)); const br = up(t, at("first-light", 1, 0.45), 1.8);
+    brokeL.setAttribute("transform", `translate(${(-26 * br).toFixed(1)} ${(10 * br).toFixed(1)}) rotate(${(-8 * br).toFixed(1)} 327 334)`); brokeR.setAttribute("transform", `translate(${(26 * br).toFixed(1)} ${(10 * br).toFixed(1)}) rotate(${(8 * br).toFixed(1)} 411 334)`);
+    op(gGen, span(t, at("first-light", 1, 0.74), aLight, 0.6));
+    op(v1, span(t, at("first-light", 2, 0.36), B0 - 0.7, 0.5));
+    // ----- 2 lights -----
+    const bOut = 1 - up(t, C0 - 0.6, 0.6); op(gB, up(t, B0 - 0.5, 0.6) * bOut);
+    let s; if (t < B1) s = mix(0.12, 0.5, up(t, B0, B1 - B0)); else s = (0.5 + (t - B1) / 2.2) % 1;
+    set(sunB, { cx: qb(180, 640, 1100, s).toFixed(1), cy: qb(440, 120, 440, s).toFixed(1) }); op(sunB, up(t, B0 - 0.2, 0.6) * Math.min(1, 6 * Math.min(s, 1 - s)));
+    const vB = at("lights", 0, 0.48); op(moonB, up(t, at("lights", 0, 0.62), 0.8));
+    op(labWor, span(t, B0 + 0.3, vB, 0.6)); op(labGreat, up(t, at("lights", 0, 0.55), 0.6)); op(labLess, up(t, at("lights", 0, 0.68), 0.6)); op(labUn, span(t, at("lights", 0, 0.3), B1, 0.6));
+    op(labGreat, span(t, at("lights", 0, 0.55), B1 - 0.2, 0.6)); op(labLess, span(t, at("lights", 0, 0.68), C0 - 0.6, 0.6));
+    op(gRule, up(t, B1 - 0.3, 0.6)); ticks.forEach((k, i) => op(k, up(t, B1 + i * 0.09, 0.25))); rLabs.forEach((l, i) => op(l, up(t, at("lights", 1, 0.35 + i * 0.2), 0.5)));
+    op(v2, span(t, vB, C0 - 0.6, 0.5));
+    // ----- 3 egypt -----
+    const cOut = 1 - up(t, D0 - 0.6, 0.6); op(gC, up(t, C0 - 0.4, 0.6) * cOut);
+    op(pyr, up(t, C0 - 0.2, 0.6)); op(re, up(t, C0 + 0.2, 0.6)); op(labRe, span(t, C0 + 0.4, C1 + 0.4, 0.6)); op(labPh, span(t, C0 + 0.8, at("egypt", 1, 0.3), 0.6));
+    re.setAttribute("cy", (300 + 3 * Math.sin(t * 1.2)).toFixed(1));
+    egH.forEach((h, i) => op(h.g, up(t, C0 + 0.4 + i * 0.2, 0.5))); goH.forEach((h, i) => op(h.g, up(t, C0 + 1.0 + i * 0.2, 0.5)));
+    const dk = up(t, C1 + 0.2, 2.6); set(darkC, { width: (920 * dk).toFixed(1) }); op(darkC, 0.9 * (dk > 0.002 ? 1 : 0));
+    op(labDays, up(t, at("egypt", 1, 0.25), 0.6)); op(labWord, up(t, at("egypt", 1, 0.45), 0.6)); op(gBack, up(t, at("egypt", 1, 0.78), 0.6));
+    gBack.setAttribute("transform", `translate(${(-6 * Math.sin(t * 1.4)).toFixed(1)} 0)`);
+    goLit.forEach((g, i) => op(g, up(t, at("egypt", 2, 0.42) + i * 0.25, 0.6) * (0.85 + 0.15 * Math.sin(t * 2 + i))));
+    glory(goWash, up(t, at("egypt", 2, 0.5), 1.2) * 0.08); op(labGo, up(t, at("egypt", 2, 0.55), 0.6));
+    op(v3, span(t, at("egypt", 2, 0.4), D0 - 0.6, 0.5));
+    // ----- 4 pillar -----
+    const dOut = 1 - up(t, S("moses", 0) - 0.6, 0.6); op(gD, up(t, D0 - 0.4, 0.6) * dOut);
+    const nk = up(t, dNight, 1.6); op(nightD, 0.2 * nk);
+    const px = 1000 + 170 * up(t, D2 - 0.2, 3.4), base = 70 + 12 * Math.max(0, t - D0) + 150 * up(t, D2 - 0.2, 3.4);
+    crowd.forEach((c, i) => { const x = base + c.dx; set(c.e, { cx: x.toFixed(1), cy: (459 - 3 * Math.abs(Math.sin(t * 4 + c.ph))).toFixed(1) }); op(c.e, up(t, D0 - 0.2 + i * 0.05, 0.4)); });
+    move(gCloud, px, 0); op(gCloud, up(t, D0 + 0.4, 0.8) * (1 - nk)); gCloud.setAttribute("transform", `translate(${px.toFixed(1)} ${(3 * Math.sin(t * 0.9)).toFixed(1)})`);
+    op(gFire, nk); fl.forEach((f, i) => move(f.f, px + f.x + 2 * Math.sin(t * 3 + i), f.y, 1 + 0.06 * Math.sin(t * 4 + i * 1.7)));
+    set(labDay, { x: px.toFixed(1) }); set(labNight, { x: px.toFixed(1) }); op(labDay, up(t, D1, 0.6) * (1 - nk)); op(labNight, nk);
+    const front = base + 420; lead.setAttribute("d", `M${front.toFixed(1)} 446 Q${((front + px) / 2).toFixed(1)} 420 ${(px - 60).toFixed(1)} 440`); draw(lead, up(t, D2, 1.6)); op(lead, up(t, D2, 0.4));
+    op(v4, span(t, D1 - 0.3, D2 - 0.1, 0.5));
+    // ----- 5 moses -----
+    const mOut = 1 - up(t, P0 - 0.6, 0.6); op(gM, up(t, M0 - 0.4, 0.6) * mOut); draw(mtnM, up(t, M0 - 0.3, 1.6));
+    glory(summitLight, span(t, M0 + 0.6, at("moses", 1, 0.2), 1.2, 0.8) * (0.08 + 0.02 * Math.sin(t * 1.4)));
+    const down = up(t, M1 + 0.2, (E("moses", 1) - M1) * 0.9), [mx, my] = along(mPath, down);
+    set(moses, { cx: mx.toFixed(1), cy: (my - 2 * Math.abs(Math.sin(t * 4)) * (down > 0.01 && down < 0.99 ? 1 : 0)).toFixed(1) }); op(moses, up(t, M0 + 0.3, 0.6));
+    draw(litPath, down); op(litPath, 0.75 * (1 - 0.4 * up(t, M2, 1)));
+    op(labSin, up(t, M0, 0.6)); op(labAsk, span(t, M0 + 0.5, M2 - 0.2, 0.6)); op(labNo, span(t, at("moses", 0, 0.6), M2 - 0.2, 0.6)); op(labNot, span(t, at("moses", 1, 0.78), M2 - 0.2, 0.6));
+    op(qM, span(t, at("moses", 2, 0.25), P0 - 0.6, 0.8)); qM.setAttribute("transform", `translate(0 ${(3 * Math.sin(t * 1.5)).toFixed(1)})`);
+    op(v5, span(t, at("moses", 1, 0.3), M2 - 0.1, 0.5));
+    // ----- 6 my-light -----
+    const pIn = up(t, P0 - 0.4, 0.6), pTop = 1 - up(t, P1 - 0.5, 0.6); op(gP, pIn * pTop);
+    const narrow = up(t, at("my-light", 0, 0.58), 1.4);
+    glory(wideP, up(t, P0, 0.8) * 0.1 * (1 - narrow)); glory(beamP, narrow * (0.1 + 0.02 * Math.sin(t * 1.6))); op(darkP, 0.85 * up(t, at("my-light", 0, 0.2), 0.8));
+    op(meP, up(t, at("my-light", 0, 0.55), 0.6)); op(labLife, span(t, P0 + 0.3, at("my-light", 0, 0.6), 0.6)); op(labMy, up(t, at("my-light", 0, 0.66), 0.6)); op(labDeath, up(t, at("my-light", 0, 0.25), 0.6));
+    op(gS, up(t, P1 - 0.3, 0.7) * (1 - up(t, S("great-light", 0) - 0.6, 0.6)));
+    const a = (0.16 * Math.sin((t - P1) * 1.3)) * (1 - up(t, at("my-light", 1, 0.62), 3)), ca = Math.cos(a), sa = Math.sin(a);
+    beamS.setAttribute("transform", `rotate(${(a * 180 / Math.PI).toFixed(2)} 640 300)`);
+    move(panL, 640 - 200 * ca, 300 - 200 * sa); move(panR, 640 + 200 * ca, 300 + 200 * sa);
+    op(qP, up(t, at("my-light", 1, 0.62), 0.8)); qP.setAttribute("transform", `translate(0 ${(3 * Math.sin(t * 1.5)).toFixed(1)})`); op(labPs, up(t, at("my-light", 1, 0.45), 0.6));
+    op(v6, span(t, at("my-light", 0, 0.62), P1 - 0.3, 0.5));
+    // ----- 7 great-light -----
+    const gOut = 1 - up(t, H0 - 0.6, 0.6); op(gG, up(t, G0 - 0.4, 0.6) * gOut);
+    const fall = up(t, at("great-light", 0, 0.34), 1.8), dawn = up(t, at("great-light", 0, 0.8), 2.0);
+    darkG.forEach((d) => op(d, 0.82 * fall * (1 - dawn))); lightG.forEach((l) => glory(l, dawn * (0.1 + 0.02 * Math.sin(t * 1.5))));
+    op(labNa, up(t, G0, 0.6)); op(labZe, up(t, G0 + 0.3, 0.6)); op(labGal, up(t, G0 + 0.6, 0.6));
+    draw(arrow, up(t, at("great-light", 0, 0.18), 1.6)); op(arrow, 1 - up(t, at("great-light", 0, 0.58), 0.6));
+    op(labAss, span(t, at("great-light", 0, 0.2), at("great-light", 0, 0.62), 0.6)); op(labYr, span(t, at("great-light", 0, 0.3), at("great-light", 0, 0.62), 0.6));
+    op(capM, up(t, at("great-light", 1, 0.45), 0.6)); op(labCap, up(t, at("great-light", 1, 0.5), 0.6)); op(labMt, up(t, at("great-light", 1, 0.62), 0.6));
+    const bk = up(t, at("great-light", 1, 0.55), 1.2); op(barG, bk); barG.setAttribute("y", (196 - 30 * (1 - bk)).toFixed(1));
+    walkers.forEach((w) => { const x = 90 + w.i * 44 + 11 * Math.max(0, t - G0); set(w.e, { cx: x.toFixed(1), cy: (459 - 2.5 * Math.abs(Math.sin(t * 4 + w.i))).toFixed(1) }); op(w.e, up(t, G0 + 0.2 + w.i * 0.1, 0.4)); });
+    op(v7, span(t, at("great-light", 0, 0.66), G1 - 0.1, 0.5));
+    // ----- 8 feast -----
+    const hOut = 1 - up(t, J0 - 0.6, 0.6); op(gH, up(t, H0 - 0.4, 0.6) * hOut);
+    const lampsOut = 1 - up(t, H2 - 0.2, 1.0);
+    op(court, up(t, H0 - 0.2, 0.6) * lampsOut);
+    stands.forEach((st, i) => { op(st.g, up(t, H0 + 0.2 + i * 0.3, 0.5) * lampsOut); op(st.f, up(t, at("feast", 0, 0.2) + i * 0.35, 0.5)); move(st.f, st.x, 300, 1 + 0.07 * Math.sin(t * 3.4 + i)); });
+    op(gGhostP, span(t, at("feast", 0, 0.7), H1 + 0.5, 0.7) * 0.5); gfl.forEach((f, i) => f.setAttribute("opacity", (0.8 + 0.2 * Math.sin(t * 3 + i)).toFixed(2)));
+    op(labFeast, span(t, H0 + 0.4, H2 - 0.2, 0.6)); op(labMish, span(t, at("feast", 0, 0.2), H2 - 0.2, 0.6));
+    op(barH, up(t, H1 + 0.2, 0.8));
+    follow.forEach((f) => { const k = up(t, at("feast", 1, 0.45) + f.i * 0.25, 2.6); set(f.e, { cx: mix(-30, f.x, k).toFixed(1), cy: (459 - 2.5 * Math.abs(Math.sin(t * 4 + f.i)) * (k > 0.01 && k < 0.99 ? 1 : 0)).toFixed(1) }); op(f.e, up(t, at("feast", 1, 0.45) + f.i * 0.25, 0.4) * (1 - up(t, H2 - 0.3, 0.6))); });
+    const close = up(t, H2 + 0.3, 3.0), press = 6 * Math.sin(t * 1.3) * close;
+    set(darkH[0], { width: Math.max(0, 600 * close + press).toFixed(1) }); set(darkH[1], { x: (1320 - 600 * close - press).toFixed(1), width: Math.max(0, 600 * close + press).toFixed(1) });
+    darkH.forEach((d) => op(d, 0.88 * (close > 0.002 ? 1 : 0)));
+    op(labEq, up(t, H2 + 0.2, 0.6)); op(labJohn, up(t, at("feast", 2, 0.6), 0.6));
+    op(v8, span(t, H1 - 0.3, H2 - 0.1, 0.5));
+    // ----- 9 hearts -----
+    const jOut = 1 - up(t, K0 - 0.6, 0.6); op(gJ, up(t, J0 - 0.4, 0.6) * jOut);
+    const jl = up(t, at("hearts", 0, 0.45), 2.0); op(darkJ, 0.86 * (1 - jl) * (1 - up(t, J1 - 0.6, 0.4)));
+    rowJ.forEach((r) => { op(r.g, up(t, at("hearts", 0, 0.5) + r.i * 0.2, 0.5) * (1 - up(t, J1 - 0.5, 0.6))); r.l.setAttribute("height", (26 + 3 * Math.sin(t * 2.6 + r.i)).toFixed(1)); });
+    op(gJ1, span(t, J1 - 0.2, J2 + 0.4, 0.7)); op(veil, up(t, J1 + 0.4, 0.6)); draw(thread, up(t, at("hearts", 1, 0.3), 1.8)); glory(glowJ, up(t, at("hearts", 1, 0.45), 1.2) * (0.1 + 0.02 * Math.sin(t * 1.5)));
+    glory(washJ, up(t, J2 + 0.2, 1.4) * 0.09); op(gJ2, up(t, at("hearts", 2, 0.3), 0.7));
+    op(v9, span(t, at("hearts", 0, 0.32), J1 - 0.2, 0.5));
+    // ----- 10 you-are -----
+    const kOut = 1 - up(t, N0 - 0.6, 0.6); op(gK, up(t, K0 - 0.4, 0.6) * kOut);
+    rowK.forEach((r) => { op(r.g, up(t, K0 + 0.3 + r.i * 0.18, 0.5) * (1 - up(t, K1 - 0.5, 0.6))); move(r.lp.f, 22, -3, 1 + 0.08 * Math.sin(t * 3.6 + r.i)); });
+    op(labTry, span(t, at("you-are", 0, 0.66), K1 - 0.3, 0.5)); draw(strike, up(t, at("you-are", 0, 0.8), 0.5)); op(strike, 1 - up(t, K1 - 0.8, 0.5)); op(labAre, span(t, at("you-are", 0, 0.9), K1 - 0.3, 0.5));
+    op(gK1, up(t, K1 - 0.3, 0.6)); op(room, up(t, at("you-are", 1, 0.3), 0.8)); op(stand, up(t, at("you-are", 1, 0.3), 0.8));
+    const lift = up(t, at("you-are", 1, 0.28), 1.4), place = up(t, at("you-are", 1, 0.42), 1.8);
+    move(measure, 380 - 90 * lift, 470 - 120 * lift); op(measure, 1 - up(t, at("you-are", 1, 0.4), 0.8)); op(labMeas, span(t, K1, at("you-are", 1, 0.4), 0.5));
+    move(bigLamp.g, mix(380, 818, place), mix(458, 338, place) - 40 * Math.sin(Math.PI * place), 1.9); op(bigLamp.g, up(t, K1, 0.6));
+    move(bigLamp.f, 22, -3, (0.4 + 0.6 * lift) * (1 + 0.08 * Math.sin(t * 3.2))); op(bigLamp.f, lift);
+    glory(roomLight, up(t, at("you-are", 1, 0.62), 1.2) * 0.12); inRoom.forEach((d, i) => op(d, up(t, at("you-are", 1, 0.5) + i * 0.15, 0.6)));
+    glory(upLight, up(t, at("you-are", 1, 0.8), 1.4) * 0.07); op(labFather, span(t, at("you-are", 1, 0.78), K2, 0.6)); op(labNotL, span(t, at("you-are", 1, 0.86), K2, 0.6));
+    op(gK2, up(t, K2 - 0.2, 0.7)); qK.setAttribute("transform", `translate(0 ${(3 * Math.sin(t * 1.5)).toFixed(1)})`);
+    op(v10, span(t, at("you-are", 0, 0.3), K1 - 0.3, 0.5));
+    // ----- 11 no-night -----
+    op(gN, up(t, N0 - 0.4, 0.6) * outAll);
+    const dimCity = up(t, N1 + 0.2, 0.8) * (1 - up(t, N2 - 0.4, 0.8)); op(gCity, up(t, N0 - 0.2, 0.8) * (1 - 0.8 * dimCity));
+    op(sunN, span(t, N0 + 0.2, at("no-night", 0, 0.32), 0.6, 0.9) * 0.9); op(moonN, span(t, N0 + 0.5, at("no-night", 0, 0.32), 0.6, 0.9));
+    glory(glowN, up(t, at("no-night", 0, 0.3), 1.4) * (0.1 + 0.02 * Math.sin(t * 1.3))); glory(washN, up(t, at("no-night", 0, 0.82), 1.6) * 0.06);
+    op(barN, up(t, at("no-night", 0, 0.55), 0.8));
+    op(labNeed, span(t, N0 + 0.4, N1 - 0.2, 0.6)); op(labLamp, span(t, at("no-night", 0, 0.58), N1 - 0.2, 0.6));
+    cards.forEach((c, i) => { op(c, span(t, at("no-night", 1, 0.2 + i * 0.27), N2 - 0.3, 0.6)); c.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 1.1 + i)).toFixed(1)})`); });
+    strip.forEach((r, i) => op(r, up(t, N2 - 0.4, 0.5) * (i % 2 ? 1 - up(t, N2 + 0.1 + i * 0.09, 0.5) : 1)));
+    op(v11, up(t, N2 - 0.3, 0.5) * outAll);
+  };
+});
+</script>
+</body></html>
