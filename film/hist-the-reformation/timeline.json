@@ -1,0 +1,260 @@
+{
+ "length": 244.61,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 11.46,
+   "lines": [
+    {
+     "text": "Why are there Catholics and Protestants at all?",
+     "start": 2.6,
+     "end": 4.98
+    },
+    {
+     "text": "Much of the answer lies in one century, from 1517 to 1648.",
+     "start": 5.58,
+     "end": 10.56
+    }
+   ]
+  },
+  {
+   "id": "luther",
+   "kicker": "Wittenberg",
+   "level": 0.3,
+   "start": 10.66,
+   "end": 43.88,
+   "lines": [
+    {
+     "text": "It began with Martin Luther, a German monk who could not quiet his conscience.",
+     "start": 11.56,
+     "end": 15.94
+    },
+    {
+     "text": "He confessed, fasted and prayed, and found no rest. His answer came from Paul's letter to the Romans.",
+     "start": 16.48,
+     "end": 23.1
+    },
+    {
+     "text": "For the gospel reveals the righteousness of God that comes by faith from start to finish, just as it is written: \u201cThe righteous will live by faith.\u201d",
+     "start": 23.68,
+     "end": 32.38
+    },
+    {
+     "text": "Luther came to believe that the righteousness God requires is the righteousness God gives, received by faith. He said it felt like walking through open gates into paradise.",
+     "start": 33.08,
+     "end": 42.98
+    }
+   ]
+  },
+  {
+   "id": "theses",
+   "kicker": "1517",
+   "level": 0.4,
+   "start": 43.08,
+   "end": 73.4,
+   "lines": [
+    {
+     "text": "In 1517 he posted ninety-five theses against the sale of indulgences, reduced time in purgatory sold to pay for church building.",
+     "start": 43.98,
+     "end": 51.96
+    },
+    {
+     "text": "The new printing press spread his words faster than anyone could answer.",
+     "start": 52.72,
+     "end": 56.1
+    },
+    {
+     "text": "Ordered to recant, he refused, saying his conscience was captive to the Word of God. He was declared an outlaw.",
+     "start": 56.76,
+     "end": 63.52
+    },
+    {
+     "text": "German princes protected him, partly from conviction, partly to resist Rome and the emperor. Faith and politics were tangled from the start.",
+     "start": 64.14,
+     "end": 72.5
+    }
+   ]
+  },
+  {
+   "id": "reformed",
+   "kicker": "Zurich and Geneva",
+   "level": 0.5,
+   "start": 72.6,
+   "end": 98.16,
+   "lines": [
+    {
+     "text": "In Zurich, Ulrich Zwingli led a second reform, and his split with Luther over the Lord's Supper never healed.",
+     "start": 73.5,
+     "end": 79.62
+    },
+    {
+     "text": "In Geneva, a French lawyer named John Calvin gave the Reformed tradition its lasting shape. It spread to France, the Netherlands and Scotland.",
+     "start": 80.3,
+     "end": 88.4
+    },
+    {
+     "text": "Geneva was a city of serious faith. It was also where a man named Servetus was put to death for heresy, a stain not to be explained away.",
+     "start": 89.02,
+     "end": 97.26
+    }
+   ]
+  },
+  {
+   "id": "radical",
+   "kicker": "The Radicals",
+   "level": 0.6,
+   "start": 97.36,
+   "end": 132.26,
+   "lines": [
+    {
+     "text": "The Radicals said the reformers hadn't gone far enough. They baptized only those who could profess faith themselves.",
+     "start": 98.26,
+     "end": 104.66
+    },
+    {
+     "text": "Those adults had been baptized as babies, so their enemies called them Anabaptists, rebaptizers.",
+     "start": 105.26,
+     "end": 111.26
+    },
+    {
+     "text": "A church of willing believers threatened the social order, so Catholics and Protestants alike hunted them.",
+     "start": 111.74,
+     "end": 117.48
+    },
+    {
+     "text": "Many were put to death across Europe, with a courage their persecutors could not deny.",
+     "start": 118.1,
+     "end": 122.74
+    },
+    {
+     "text": "In Munster a violent minority seized the city, and it ended in disaster. That was used to justify killing the peaceful majority.",
+     "start": 123.4,
+     "end": 131.36
+    }
+   ]
+  },
+  {
+   "id": "england",
+   "kicker": "England",
+   "level": 0.65,
+   "start": 131.46,
+   "end": 156.88,
+   "lines": [
+    {
+     "text": "In England it began with a king. When the pope wouldn't annul his marriage, Henry the Eighth made himself head of the English church.",
+     "start": 132.36,
+     "end": 139.74
+    },
+    {
+     "text": "His son pressed reform forward. His daughter Mary forced England back toward Rome, and Protestants were put to death.",
+     "start": 140.3,
+     "end": 146.9
+    },
+    {
+     "text": "Elizabeth the First settled on a middle way, Protestant in doctrine but keeping much of the old worship. In time it produced the Anglican tradition.",
+     "start": 147.6,
+     "end": 155.98
+    }
+   ]
+  },
+  {
+   "id": "trent",
+   "kicker": "Rome answers",
+   "level": 0.7,
+   "start": 156.08,
+   "end": 178.62,
+   "lines": [
+    {
+     "text": "The Catholic Church answered with the Council of Trent, which met across the middle of the century.",
+     "start": 156.98,
+     "end": 161.82
+    },
+    {
+     "text": "It reaffirmed the authority of tradition alongside Scripture, and the place of the sacraments and good works in salvation.",
+     "start": 162.44,
+     "end": 169.12
+    },
+    {
+     "text": "It corrected real abuses and reformed the training of clergy. A new order, the Jesuits, carried the faith to Asia and the Americas.",
+     "start": 169.72,
+     "end": 177.72
+    }
+   ]
+  },
+  {
+   "id": "cost",
+   "kicker": "The cost",
+   "level": 0.85,
+   "start": 177.82,
+   "end": 201.16,
+   "lines": [
+    {
+     "text": "No side's story is clean. Catholics killed Protestants, Protestants killed Catholics, and both killed the Radicals.",
+     "start": 178.72,
+     "end": 186.12
+    },
+    {
+     "text": "Wars of religion ravaged France and the Low Countries. The Thirty Years War devastated Germany, until exhaustion forced peace in 1648.",
+     "start": 186.76,
+     "end": 195.62
+    },
+    {
+     "text": "Western Christianity was torn into pieces never put back together.",
+     "start": 196.4,
+     "end": 200.26
+    }
+   ]
+  },
+  {
+   "id": "readings",
+   "kicker": "Where Christians differ",
+   "level": 0.6,
+   "start": 200.36,
+   "end": 226.6,
+   "lines": [
+    {
+     "text": "Many Protestants see here a recovery of what had been buried: free grace, the authority of Scripture, and God's Word in the people's own tongue.",
+     "start": 201.26,
+     "end": 209.72
+    },
+    {
+     "text": "Catholics see at Trent the church renewing itself from within, holding Scripture and tradition together, and teaching that grace comes first and no one can earn it.",
+     "start": 210.4,
+     "end": 219.6
+    },
+    {
+     "text": "And free churches trace believers' baptism and the refusal to force faith back to the Radicals.",
+     "start": 220.3,
+     "end": 225.7
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 225.8,
+   "end": 238.513,
+   "lines": [
+    {
+     "text": "Whatever church you call home, you're an heir of this century.",
+     "start": 226.7,
+     "end": 229.88
+    },
+    {
+     "text": "The church needed renewal, and it should mourn the violence of men who were sure they served God.",
+     "start": 230.48,
+     "end": 235.48
+    },
+    {
+     "text": "We are heirs of both.",
+     "start": 236.12,
+     "end": 237.613
+    }
+   ]
+  }
+ ]
+}
