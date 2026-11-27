@@ -20,6 +20,7 @@ import { Status, useLoad } from "../study-bible/shared";
 import { Watch } from "./Watch";
 import "./explorer.css";
 import "./films/film.css";
+import { MoreFilms } from "./MoreFilms";
 
 export default function BibleFilms() {
   const { data, retry } = useLoad("films", fetchExplorerIndex);
@@ -50,6 +51,7 @@ export default function BibleFilms() {
           lede="Each is a few minutes long and drawn in the site's own engraved hand. Choose Listen on a film to hear it read aloud."
         />
       )}
+      <MoreFilms />
     </Layout>
   );
 }

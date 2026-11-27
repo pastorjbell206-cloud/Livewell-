@@ -10,6 +10,7 @@
  * /bible/notes-index.json.
  */
 import FilmsHere from "@/components/FilmsHere";
+import NarratedFilm from "@/components/NarratedFilm";
 import { useMemo, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -201,6 +202,8 @@ function DoctrinePage({ data, id }: { data: Data; id: string }) {
         )}
         {toc.length > 1 && <Toc items={toc} />}
       </Hero>
+
+      <NarratedFilm page={`/study/bible/doctrines/${d.id}`} />
 
       {study && (
         <>

@@ -5,6 +5,8 @@
  * Built only from references the libraries already carry in their own data.
  * Nothing is guessed from a title or a keyword. The rule, by kind:
  *
+ *   film        Bible Explorer films, and narrated films on pages of their
+ *               own: the chapters their Scripture quotes (films(), narratedFilms()).
  *   question    Honest Answers (client/src/data/answers.ts): every passage
  *               the answer cites in its three paragraphs. An answer is three
  *               paragraphs; each verse it names is there on purpose.
@@ -321,6 +323,25 @@ function films() {
     });
 }
 
+/**
+ * Narrated films that live on a page of their own rather than in the Bible
+ * Explorer (an "Is it true?" piece, a book's page, a study guide): a live film
+ * (scripts/narrated-films-live.json) is offered on each chapter its narration
+ * quotes as Scripture (a chapter's `scripture.reference` in its script.json).
+ * Explorer films are already offered by films() above, under their own page.
+ */
+function narratedFilms() {
+  const live = JSON.parse(fs.readFileSync(path.join(ROOT, "scripts/narrated-films-live.json"), "utf8"));
+  return live.flatMap((slug) => {
+    const file = path.join(ROOT, `film/${slug}/script.json`);
+    if (!fs.existsSync(file)) return [];
+    const script = JSON.parse(fs.readFileSync(file, "utf8"));
+    if (!script.page || script.page.startsWith("/study/explorer/watch/")) return [];
+    const at = (script.chapters ?? []).flatMap((c) => fieldRefs(c.scripture?.reference));
+    return at.length ? [{ kind: "film", title: script.title, href: script.page, at }] : [];
+  });
+}
+
 /** The listed tools by id, from toolsList.ts read as text (it imports icons a script cannot use). */
 export function listedTools() {
   const src = fs.readFileSync(path.join(ROOT, "client/src/lib/toolsList.ts"), "utf8");
@@ -347,6 +368,7 @@ function toolOffers() {
 export function collectItems() {
   return [
     ...films(),
+    ...narratedFilms(),
     ...answers(),
     ...doctrines(),
     ...history(),
