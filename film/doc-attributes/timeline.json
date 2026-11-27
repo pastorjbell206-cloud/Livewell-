@@ -1,0 +1,260 @@
+{
+ "length": 255.18,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 14.22,
+   "lines": [
+    {
+     "text": "What is God like? Many have a quick answer.",
+     "start": 2.6,
+     "end": 5.48
+    },
+    {
+     "text": "The God of the Old Testament is angry. The God of Jesus is kind.",
+     "start": 6.04,
+     "end": 10.18
+    },
+    {
+     "text": "But the Old Testament itself says otherwise.",
+     "start": 10.8,
+     "end": 13.32
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What the church confesses",
+   "level": 0.3,
+   "start": 13.42,
+   "end": 39.34,
+   "lines": [
+    {
+     "text": "Christians speak of God's attributes, the Bible's ways of saying what God is like.",
+     "start": 14.32,
+     "end": 20.32
+    },
+    {
+     "text": "He is holy, righteous, faithful, merciful, patient, and wise. All-powerful, all-knowing, present everywhere, eternal, and unchanging.",
+     "start": 20.62,
+     "end": 31.2
+    },
+    {
+     "text": "They never pull against each other. His justice is always loving, and His love is always just and holy.",
+     "start": 31.8,
+     "end": 38.44
+    }
+   ]
+  },
+  {
+   "id": "exodus",
+   "kicker": "In His own words",
+   "level": 0.42,
+   "start": 38.54,
+   "end": 67.46,
+   "lines": [
+    {
+     "text": "Israel had just worshiped the golden calf when Moses asked to see God's glory.",
+     "start": 39.44,
+     "end": 43.62
+    },
+    {
+     "text": "Then the LORD passed in front of Moses and called out.",
+     "start": 44.26,
+     "end": 47.88
+    },
+    {
+     "text": "The LORD, the LORD God, is compassionate and gracious, slow to anger, abounding in loving devotion and faithfulness, maintaining loving devotion to a thousand generations, forgiving iniquity, transgression, and sin. Yet He will by no means leave the guilty unpunished",
+     "start": 48.2,
+     "end": 66.56
+    }
+   ]
+  },
+  {
+   "id": "measure",
+   "kicker": "Mercy and justice",
+   "level": 0.52,
+   "start": 66.66,
+   "end": 90.36,
+   "lines": [
+    {
+     "text": "Notice who heard it. A people who had just broken the covenant.",
+     "start": 67.56,
+     "end": 70.96
+    },
+    {
+     "text": "Mercy and justice stand together, but not evenly. Loving devotion to a thousand generations, judgment to the third and fourth.",
+     "start": 71.58,
+     "end": 79.46
+    },
+    {
+     "text": "Loving devotion translates the Hebrew word chesed. It's loyal, committed love, most often within a covenant. No single English word catches it.",
+     "start": 80.2,
+     "end": 89.46
+    }
+   ]
+  },
+  {
+   "id": "echo",
+   "kicker": "Echoed through Israel",
+   "level": 0.6,
+   "start": 89.56,
+   "end": 111.48,
+   "lines": [
+    {
+     "text": "No description of God is echoed more in the Old Testament. Moses, Nehemiah, the psalmists, and Joel prayed it back to Him.",
+     "start": 90.46,
+     "end": 98.14
+    },
+    {
+     "text": "Jonah even complained that God was exactly this merciful to Nineveh.",
+     "start": 98.7,
+     "end": 102.56
+    },
+    {
+     "text": "Isaiah heard the seraphim calling out, holy, holy, holy. In Hosea, that holiness shows itself as mercy.",
+     "start": 103.18,
+     "end": 110.58
+    }
+   ]
+  },
+  {
+   "id": "jesus",
+   "kicker": "Seen in a life",
+   "level": 0.68,
+   "start": 110.68,
+   "end": 143.24,
+   "lines": [
+    {
+     "text": "John says the Word made flesh was full of grace and truth, and many hear an echo of loving devotion and faithfulness.",
+     "start": 111.58,
+     "end": 118.56
+    },
+    {
+     "text": "In Jesus, God's character is seen. His compassion on the crowds, His anger at the temple, His faithfulness to the cross.",
+     "start": 119.24,
+     "end": 127.16
+    },
+    {
+     "text": "At the cross, Paul says, God is both just and the one who justifies those who have faith in Jesus. Justice and mercy meet there.",
+     "start": 127.72,
+     "end": 136.08
+    },
+    {
+     "text": "John puts it in three words. God is love, a love defined by His sending His Son.",
+     "start": 136.76,
+     "end": 142.34
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "An old mistake",
+   "level": 0.74,
+   "start": 142.44,
+   "end": 162.24,
+   "lines": [
+    {
+     "text": "That quick answer is old. In the second century, Marcion divided a just Creator from a loving Father.",
+     "start": 143.34,
+     "end": 149.24
+    },
+    {
+     "text": "Around the year 180, Irenaeus answered that the one God is both good and just.",
+     "start": 149.84,
+     "end": 155.24
+    },
+    {
+     "text": "The words to Moses are full of mercy, and Revelation is full of judgment. It's one character.",
+     "start": 155.9,
+     "end": 161.34
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.8,
+   "start": 161.44,
+   "end": 206.46,
+   "lines": [
+    {
+     "text": "Christians differ here. How does God's steady character fit His real response to human choices?",
+     "start": 162.34,
+     "end": 167.78
+    },
+    {
+     "text": "In one chapter, the LORD regrets making Saul king, and Samuel says the Glory of Israel does not change His mind.",
+     "start": 168.34,
+     "end": 175.12
+    },
+    {
+     "text": "Classical theists, like Thomas Aquinas, say God is unchanging in His being, timeless, and not overcome by passions. Regret, they say, is true speech fitted to human understanding.",
+     "start": 175.42,
+     "end": 187.58
+    },
+    {
+     "text": "Others, like Nicholas Wolterstorff, see God's eternity as endless time, because the Bible's God speaks, waits, and hears prayer.",
+     "start": 188.2,
+     "end": 196.7
+    },
+    {
+     "text": "Still others, like J\u00fcrgen Moltmann, say God truly suffers, from love freely chosen. They point above all to the cross.",
+     "start": 197.38,
+     "end": 205.56
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "What it changes",
+   "level": 0.85,
+   "start": 205.66,
+   "end": 232.54,
+   "lines": [
+    {
+     "text": "Believe God is powerful but not quite good, and you'll obey out of fear. Believe He's good but not quite able, and you'll pray without hope.",
+     "start": 206.56,
+     "end": 214.9
+    },
+    {
+     "text": "Scripture holds them together. His power is always the power of His goodness.",
+     "start": 215.64,
+     "end": 220.18
+    },
+    {
+     "text": "In grief, His faithfulness is the reason to keep speaking to Him. In guilt, His mercy is the reason to return. In confusion, His wisdom is the reason to wait.",
+     "start": 220.74,
+     "end": 231.64
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 231.74,
+   "end": 249.083,
+   "lines": [
+    {
+     "text": "At the Bible's end, the four living creatures take up Isaiah's cry.",
+     "start": 232.64,
+     "end": 236.38
+    },
+    {
+     "text": "Holy, Holy, Holy, is the Lord God Almighty, who was and is and is to come!",
+     "start": 236.98,
+     "end": 243.48
+    },
+    {
+     "text": "The God who is faithful and cannot lie will keep what He has promised.",
+     "start": 244.12,
+     "end": 248.183
+    }
+   ]
+  }
+ ]
+}
