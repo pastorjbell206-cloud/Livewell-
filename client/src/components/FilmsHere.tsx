@@ -125,7 +125,7 @@ export default function FilmsHere({ path }: { path: string }) {
                       color: "var(--ink-muted)",
                     }}
                   >
-                    A moving picture, with a voice if you want one. {film.line}
+                    A short film, read aloud if you choose. {film.line}
                   </span>
                 </span>
               </Link>
