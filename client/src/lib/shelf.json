@@ -77,6 +77,7 @@
     {"slug": "psalm-82-unjust-systems", "section": "bible-in-its-world", "status": "pending", "title": "What Psalm 82 Says About Unjust Systems"},
     {"slug": "women-and-leadership-church", "section": "bible-in-its-world", "status": "pending", "title": "Can Women Be Pastors?"},
     {"slug": "who-decided-what-books-are-in-the-bible", "section": "bible-in-its-world", "status": "pending", "title": "Who Decided What Books Are in the Bible?"},
+    {"slug": "can-a-christian-get-a-tattoo", "section": "bible-in-its-world", "status": "live", "title": "Can a Christian Get a Tattoo?"},
     {"slug": "excavation-not-demolition", "section": "doubt", "status": "pending", "title": "Deconstructing Your Faith: What to Tear Down and What to Keep"},
     {"slug": "why-trust-the-bible", "section": "doubt", "status": "pending", "title": "Can You Trust the Bible?"},
     {"slug": "the-historical-jesus", "section": "doubt", "status": "pending", "title": "Was Jesus Real? What Historians Actually Know"},
@@ -104,6 +105,9 @@
     {"slug": "is-depression-a-spiritual-failure", "section": "doubt", "status": "live", "title": "Is Depression a Spiritual Failure?"},
     {"slug": "is-the-god-of-the-old-testament-the-god-of-jesus", "section": "doubt", "status": "live", "title": "Is the God of the Old Testament the God of Jesus?"},
     {"slug": "can-i-trust-my-feelings-about-god", "section": "doubt", "status": "live", "title": "Can I Trust My Feelings About God?"},
+    {"slug": "do-people-who-die-by-suicide-go-to-heaven", "section": "doubt", "status": "live", "title": "Do People Who Die by Suicide Go to Heaven?"},
+    {"slug": "is-anxiety-a-sign-of-weak-faith", "section": "doubt", "status": "live", "title": "Is Anxiety a Sign of Weak Faith?"},
+    {"slug": "is-it-wrong-to-be-angry-at-god", "section": "doubt", "status": "live", "title": "Is It Wrong to Be Angry at God?"},
     {"slug": "covenant-vs-contract-what-marriage-is", "section": "ordinary-faithfulness", "status": "pending", "title": "Is Marriage a Covenant or a Contract?"},
     {"slug": "what-the-bible-says-about-submission", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Submission in Marriage?"},
     {"slug": "what-fatherhood-requires", "section": "ordinary-faithfulness", "status": "pending", "title": "What Does the Bible Say About Being a Father?"},
@@ -116,6 +120,8 @@
     {"slug": "should-christians-keep-the-sabbath", "section": "ordinary-faithfulness", "status": "live", "title": "Should Christians Keep the Sabbath?"},
     {"slug": "does-god-have-a-plan-for-my-life", "section": "ordinary-faithfulness", "status": "live", "title": "Does God Have a Plan for My Life?"},
     {"slug": "is-gambling-a-sin", "section": "ordinary-faithfulness", "status": "live", "title": "Is Gambling a Sin?"},
-    {"slug": "is-money-the-root-of-all-evil", "section": "ordinary-faithfulness", "status": "live", "title": "Is Money the Root of All Evil?"}
+    {"slug": "is-money-the-root-of-all-evil", "section": "ordinary-faithfulness", "status": "live", "title": "Is Money the Root of All Evil?"},
+    {"slug": "is-it-wrong-to-live-together-before-marriage", "section": "ordinary-faithfulness", "status": "live", "title": "Is It Wrong to Live Together Before Marriage?"},
+    {"slug": "if-i-forgive-them-do-i-have-to-trust-them-again", "section": "ordinary-faithfulness", "status": "live", "title": "If I Forgive Them, Do I Have to Trust Them Again?"}
   ]
 }

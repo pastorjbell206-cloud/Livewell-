@@ -23,6 +23,12 @@
  * model-files-v1.0, Apache-2.0), and ffmpeg. The model and the Python
  * environment are never committed.
  *
+ * ElevenLabs instead (2026-11-25): set "engine": "elevenlabs" in the config,
+ * "voice" to a stock ElevenLabs voice id (never a clone of a real person),
+ * the settings in "elevenlabs" (scripts/lib/film-voice-elevenlabs.mjs), and
+ * export ELEVENLABS_API_KEY on the machine that runs this; no Python or model
+ * is needed then, only ffmpeg. docs/work/elite/elevenlabs.md has the steps.
+ *
  * The voice is one setting, scripts/film-audio.config.json: a stock synthetic
  * voice of the model, never a copy of a real person's voice. Change it and
  * run with --all; every hash changes with it, so --check fails until every
@@ -39,6 +45,7 @@ import path from "node:path";
 import { execFileSync, spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { LEVELS, filmPlan } from "./lib/film-speech.mjs";
+import { elevenSpeak } from "./lib/film-voice-elevenlabs.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -153,9 +160,16 @@ for (const s of slugs)
     console.error(`[film-audio] "${s}" is not a finished moving picture`);
     process.exit(2);
   }
+const engine = config.engine ?? "kokoro";
 const python = arg("python", process.env.FILM_AUDIO_PYTHON);
 const models = arg("models", process.env.FILM_AUDIO_MODELS);
-if (!python || !models) {
+const elevenKey = process.env.ELEVENLABS_API_KEY;
+if (engine === "elevenlabs") {
+  if (!elevenKey) {
+    console.error("[film-audio] set ELEVENLABS_API_KEY on this machine (never in the repository); see docs/work/elite/elevenlabs.md");
+    process.exit(2);
+  }
+} else if (!python || !models) {
   console.error(
     "[film-audio] give --python and --models (or FILM_AUDIO_PYTHON and FILM_AUDIO_MODELS); see the top of the script"
   );
@@ -174,11 +188,94 @@ function saveManifest() {
       "The moving pictures' recorded voice (scripts/build-film-audio.mjs): for each film, its title and each frame at each level, with the file, its length in seconds, its size, and a hash of the exact words it speaks. A stock synthetic voice; not a recording of any person.",
     voice: config.voice,
     speed: config.speed,
+    ...(engine !== "kokoro" ? { engine } : {}),
     films,
   };
   fs.mkdirSync(AUDIO, { recursive: true });
   fs.writeFileSync(MANIFEST, `${JSON.stringify(out, null, 1)}\n`);
   manifest.films = films;
+}
+
+function kokoroBatch(items, tmp) {
+  const job = path.join(tmp, "job.json");
+  fs.writeFileSync(
+    job,
+    JSON.stringify({
+      model: path.join(models, "kokoro-v1.0.onnx"),
+      voices: path.join(models, "voices-v1.0.bin"),
+      voice: config.voice,
+      lang: config.lang,
+      speed: config.speed,
+      gaps: config.gaps,
+      loudness: config.loudness,
+      threads,
+      items,
+    })
+  );
+  return JSON.parse(
+    execFileSync(
+      python,
+      [path.join(HERE, "lib/film-audio-synth.py"), job],
+      {
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "ignore"],
+        maxBuffer: 1 << 24,
+      }
+    )
+      .trim()
+      .split("\n")
+      .pop()
+  );
+}
+
+/** ffmpeg, quietly; throws with its message on failure. */
+const ff = (args) => execFileSync("ffmpeg", ["-v", "error", "-y", ...args]);
+
+/** A 24 kHz mono 16-bit WAV of silence, `seconds` long. */
+function silenceWav(file, seconds) {
+  ff(["-f", "lavfi", "-i", "anullsrc=r=24000:cl=mono", "-t", seconds.toFixed(3), "-c:a", "pcm_s16le", file]);
+}
+
+/** Length of an audio file in seconds, by ffprobe. */
+function lengthOf(file) {
+  return Number(
+    execFileSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "default=nw=1:nk=1", file], { encoding: "utf8" }).trim()
+  );
+}
+
+/**
+ * ElevenLabs: each sentence spoken on its own with its neighbours as context,
+ * trimmed of the service's own lead-in and tail silence, and laid end to end
+ * with the config's exact pauses, as the Kokoro path does. Returns the
+ * seconds of each item, like the Kokoro synth's report.
+ */
+async function elevenBatch(items, tmp) {
+  const seconds = [];
+  for (const [n, item] of items.entries()) {
+    const parts = [];
+    const lead = path.join(tmp, `${n}-lead.wav`);
+    silenceWav(lead, config.gaps.lead);
+    parts.push(lead);
+    for (const [u, unit] of item.units.entries()) {
+      const mp3 = path.join(tmp, `${n}-${u}.mp3`);
+      const wav = path.join(tmp, `${n}-${u}.wav`);
+      const prev = item.units[u - 1]?.text ?? "";
+      const next = item.units[u + 1]?.text ?? "";
+      fs.writeFileSync(mp3, await elevenSpeak(config, elevenKey, unit.text, prev, next));
+      // Trim leading and trailing silence, then 24 kHz mono, as the Kokoro path writes.
+      const trimSilence = "silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.03";
+      ff(["-i", mp3, "-af", `${trimSilence},areverse,${trimSilence},areverse`, "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le", wav]);
+      parts.push(wav);
+      const gap = path.join(tmp, `${n}-${u}-gap.wav`);
+      silenceWav(gap, config.gaps[unit.gap]);
+      parts.push(gap);
+    }
+    const list = path.join(tmp, `${n}-parts.txt`);
+    fs.writeFileSync(list, parts.map((p) => `file '${p}'`).join("\n"));
+    ff(["-f", "concat", "-safe", "0", "-i", list, "-c:a", "pcm_s16le", item.wav]);
+    seconds.push(Number(lengthOf(item.wav).toFixed(2)));
+  }
+  return { seconds };
 }
 
 let made = 0;
@@ -201,35 +298,10 @@ for (const slug of slugs) {
         wav: path.join(tmp, `${i}.wav`),
         units: item.units,
       }));
-      const job = path.join(tmp, "job.json");
-      fs.writeFileSync(
-        job,
-        JSON.stringify({
-          model: path.join(models, "kokoro-v1.0.onnx"),
-          voices: path.join(models, "voices-v1.0.bin"),
-          voice: config.voice,
-          lang: config.lang,
-          speed: config.speed,
-          gaps: config.gaps,
-          loudness: config.loudness,
-          threads,
-          items,
-        })
-      );
-      const said = JSON.parse(
-        execFileSync(
-          python,
-          [path.join(HERE, "lib/film-audio-synth.py"), job],
-          {
-            encoding: "utf8",
-            stdio: ["ignore", "pipe", "ignore"],
-            maxBuffer: 1 << 24,
-          }
-        )
-          .trim()
-          .split("\n")
-          .pop()
-      );
+      const said =
+        engine === "elevenlabs"
+          ? await elevenBatch(items, tmp)
+          : kokoroBatch(items, tmp);
       // The limiter takes a little loudness back, so measure the batch as it
       // will be written (ffmpeg's own meter) and trim the gain to the target.
       const list = path.join(tmp, "all.txt");
@@ -237,7 +309,7 @@ for (const slug of slugs) {
       const limiter = `alimiter=limit=${LIMIT.toFixed(4)}:level=disabled:attack=5:release=50`;
       let trim = 0;
       let loud = NaN;
-      for (let pass = 0; pass < 3; pass++) {
+      for (let pass = 0; pass < 5; pass++) {
         const r = spawnSync(
           "ffmpeg",
           [

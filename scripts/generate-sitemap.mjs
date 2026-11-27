@@ -118,6 +118,15 @@ const STATIC_PAGES = [
   { url: "/connect", priority: "0.6", changefreq: "monthly" },
   { url: "/app", priority: "0.5", changefreq: "yearly" },
   { url: "/tools", priority: "0.6", changefreq: "monthly" },
+  // The eight disciplines (/explore/<discipline>, pages/explore/).
+  { url: "/explore/bible", priority: "0.8", changefreq: "weekly" },
+  { url: "/explore/theology", priority: "0.8", changefreq: "weekly" },
+  { url: "/explore/history", priority: "0.8", changefreq: "weekly" },
+  { url: "/explore/apologetics", priority: "0.8", changefreq: "weekly" },
+  { url: "/explore/culture", priority: "0.8", changefreq: "weekly" },
+  { url: "/explore/questions", priority: "0.8", changefreq: "weekly" },
+  { url: "/explore/living", priority: "0.8", changefreq: "weekly" },
+  { url: "/explore/church", priority: "0.8", changefreq: "weekly" },
   { url: "/resources", priority: "0.7", changefreq: "monthly" },
   // (The /writing?pillar=, ?track= and ?series= listing variants are gone:
   // /writing is now the essay shelf, and those views canonicalize to it.)

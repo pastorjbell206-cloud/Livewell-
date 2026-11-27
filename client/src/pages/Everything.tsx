@@ -28,6 +28,7 @@ import { liveSections, sectionHref } from "@/lib/shelf";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 import { followHash } from "@/lib/followHash";
 import { useLiveAreas } from "@/lib/siteNav";
+import DisciplineCards from "./explore/DisciplineCards";
 import "./explore.css";
 
 /** The tools, each once, in the tools page's groups and then the family's, under their one name (lib/toolsList.ts). */
@@ -236,6 +237,15 @@ export default function Everything() {
           </div>
         }
       />
+
+      {!searching && (
+        <section id="ways" className="ex-wrap ex-ways" aria-labelledby="ex-ways-title">
+          <h2 id="ex-ways-title" className="pv-dsec__title">
+            Eight ways in
+          </h2>
+          <DisciplineCards />
+        </section>
+      )}
 
       <div className="ex-wrap ex-top">
         {/* Always on the page, so a screen reader hears each new count. */}

@@ -127,6 +127,16 @@ const TheologyDiagnostic = lazy(() => import("./pages/TheologyDiagnostic"));
 const TheologyQuestions = lazy(() => import("./pages/TheologyQuestions"));
 const TheologyTraditions = lazy(() => import("./pages/TheologyTraditions"));
 const TheologyReadingTheBible = lazy(() => import("./pages/TheologyReadingTheBible"));
+const PreviewHome = lazy(() => import("./pages/PreviewHome"));
+const ExploreBible = lazy(() => import("./pages/explore/ExploreBible"));
+const ExploreTheology = lazy(() => import("./pages/explore/ExploreTheology"));
+const ExploreHistory = lazy(() => import("./pages/explore/ExploreHistory"));
+const ExploreApologetics = lazy(() => import("./pages/explore/ExploreApologetics"));
+const ExploreCulture = lazy(() => import("./pages/explore/ExploreCulture"));
+const ExploreQuestions = lazy(() => import("./pages/explore/ExploreQuestions"));
+const ExploreLiving = lazy(() => import("./pages/explore/ExploreLiving"));
+const ExploreChurch = lazy(() => import("./pages/explore/ExploreChurch"));
+const PreviewDiscipline = lazy(() => import("./pages/preview/PreviewDiscipline"));
 const TheologySearch = lazy(() => import("./pages/TheologySearch"));
 const PropheticConsistency = lazy(() => import("./pages/prophetic/PropheticConsistency"));
 // Church history James kept: the injustice timeline and the witnesses.
@@ -438,6 +448,8 @@ function Router() {
         <Route path="/theology/questions" component={TheologyQuestions} />
         <Route path="/theology/traditions" component={TheologyTraditions} />
         <Route path="/theology/reading-the-bible" component={TheologyReadingTheBible} />
+        <Route path="/preview/home" component={PreviewHome} />
+        <Route path="/preview/explore/:discipline" component={PreviewDiscipline} />
         <Route path="/theology/search" component={TheologySearch} />
         <Route path="/theology/paths" component={ToStudyRedirect} />
         <Route path="/disruption/posture" component={ToFaithAndPowerRedirect} />
@@ -623,6 +635,14 @@ function Router() {
         <Route path="/skeptic-track" component={SkepticTrack} />
         <Route path="/roadmap" component={RoadMap} />
         <Route path="/explore" component={Everything} />
+        <Route path="/explore/bible" component={ExploreBible} />
+        <Route path="/explore/theology" component={ExploreTheology} />
+        <Route path="/explore/history" component={ExploreHistory} />
+        <Route path="/explore/apologetics" component={ExploreApologetics} />
+        <Route path="/explore/culture" component={ExploreCulture} />
+        <Route path="/explore/questions" component={ExploreQuestions} />
+        <Route path="/explore/living" component={ExploreLiving} />
+        <Route path="/explore/church" component={ExploreChurch} />
         <Route path="/library" component={ToWritingRedirect} />
         <Route path="/diagnostic" component={Diagnostic} />
         <Route path="/study/plans" component={BiblePlans} />

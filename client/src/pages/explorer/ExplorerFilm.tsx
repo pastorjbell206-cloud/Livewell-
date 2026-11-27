@@ -20,6 +20,7 @@ import {
   Download,
   LifeBuoy,
   Link2,
+  Play,
   MessageCircle,
   Scale,
 } from "lucide-react";
@@ -36,6 +37,7 @@ import {
   fetchFilm,
   filmHref,
   stopHref,
+  youTubeHref,
   useExplorerProgress,
   SAVE_FAILED,
   type ExplorerIndex,
@@ -644,7 +646,7 @@ function FilmPage({
             level={level}
             end={film.end}
           />
-          <ShareFilm url={url} video={film.video} />
+          <ShareFilm url={url} video={film.video} youtube={youTubeHref(film)} />
         </div>
       </section>
 
@@ -820,7 +822,7 @@ function FilmPage({
  * Share: copy the film's address (the one clipboard helper), and, where the
  * film's video file is kept on the site, download it to post elsewhere.
  */
-function ShareFilm({ url, video }: { url: string; video: Film["video"] }) {
+function ShareFilm({ url, video, youtube }: { url: string; video: Film["video"]; youtube: string | null }) {
   const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
   const files = (["square", "vertical"] as const)
     .map(k => (video?.[k] ? { shape: k, ...video[k]! } : null))
@@ -837,6 +839,12 @@ function ShareFilm({ url, video }: { url: string; video: Film["video"] }) {
         <Link2 size={18} strokeWidth={1.75} aria-hidden="true" />
         Share
       </button>
+      {youtube && (
+        <a className="btn btn--quiet" href={youtube} target="_blank" rel="noopener">
+          <Play size={18} strokeWidth={1.75} aria-hidden="true" />
+          Watch on YouTube
+        </a>
+      )}
       {files.map(f => (
         <a key={f.shape} className="btn btn--quiet" href={f.href} download>
           <Download size={18} strokeWidth={1.75} aria-hidden="true" />
