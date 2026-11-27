@@ -1,0 +1,53 @@
+"""Apologetics film 1 (draft, 2026-11-26): "Copies of Copies: Is the Bible a Game of Telephone?"
+Built only from two live LiveWell answers and their verification records:
+/questions/text/copies-of-copies (docs/work/elite/apol-pilot/copies-of-copies.md) and
+/questions/authors/stories-changed-in-the-telling (docs/work/elite/apol-pilot/authors/stories-changed-in-the-telling.md).
+Every name, date and figure below is in those pages. Not recorded until James approves the set in film/apologetics/PROPOSAL.md."""
+import sys; sys.path.insert(0, "film/tools")
+from importlib import import_module
+write = import_module("write-script").write
+NOTE = "Drafted on 2026-11-26 from /questions/text/copies-of-copies and /questions/authors/stories-changed-in-the-telling. Each claim is in those pages; their sources are checked in docs/work/elite/apol-pilot/. Scripture is the Berean Standard Bible, checked by film/tools/write-script.py."
+S = lambda ref, text, spoken=False: {"reference": ref, "text": text, "spoken": spoken}
+END = "LiveWell by James Bell"
+
+write("apol-copies-of-copies", "Copies of copies", "/questions/text/copies-of-copies", [
+  {"id": "objection", "kicker": "The objection at its strongest", "level": 0.2, "lines": [
+    "We don't have the original writings of the New Testament. Nobody should pretend otherwise.",
+    "What we have are handwritten copies, and copies of copies after that. The earliest are fragments whose dates are argued over. The fullest come from the fourth century.",
+    "So the objection runs: if the copying went on for centuries, and the first hundred years can't be seen at all, then trusting the result is like asking the last child in a game of telephone what the first child said.",
+    "The objection is old. In the second century the philosopher Celsus charged that believers had reworked the Gospel many times over. In our time Bart Ehrman has made the case with care."]},
+  {"id": "true", "kicker": "What is true in it", "level": 0.35, "lines": [
+    "A good deal of it is true. No original of any New Testament book survives. The oldest piece is usually thought to be P52, a scrap of John 18, and scholars disagree about how old it is. A careful reader holds those dates loosely.",
+    "Christians have sometimes claimed more than the evidence gives. In 2012 a fragment of Mark was announced as first century. When it was published in 2018, it was dated to the late second or early third century, and the scholar who announced it publicly apologized.",
+    "And the telephone picture is right about one thing. A mistake copied is a mistake kept until someone notices it."]},
+  {"id": "writing", "kicker": "Written, not whispered", "level": 0.45, "lines": [
+    "But the picture breaks down at four points.",
+    "First, the New Testament was written, not whispered. A copyist had the page open in front of him and could look back at it. Most of his mistakes were the kind writing makes and other copyists can spot: a letter misread, a line skipped, a word written twice."]},
+  {"id": "branches", "kicker": "A family tree, not a line", "level": 0.55, "lines": [
+    "Second, the copying branched. Telephone runs in single file. The New Testament spread like a family tree, copied in Egypt, Syria and Italy by people who never met.",
+    "A mistake made in one branch is passed down that branch and nowhere else. Set the branches side by side, and the mistake stands out."]},
+  {"id": "kept", "kicker": "The old copies were kept", "level": 0.6, "lines": [
+    "Third, the older copies weren't destroyed. In the game, once you've whispered the message, it's gone. A manuscript could be used for generations and checked against.",
+    "P75, a copy of Luke and John usually dated around 200, shows signs of long use and repair. Its text agrees closely with Codex Vaticanus, copied in the fourth century. One study put the agreement at about 85 percent. On the usual dating, that is careful copying across more than a century."]},
+  {"id": "compared", "kicker": "Checked in the open", "level": 0.65, "lines": [
+    "Fourth, the early church compared copies and argued about them in the open.",
+    "Around 180, Irenaeus knew that some copies of Revelation gave the number of the beast as 616, and said 666 stood in the most approved and ancient copies. Origen complained about careless copyists. Eusebius noted that almost all the copies of Mark he knew ended at 16:8.",
+    "These are people checking, not people whispering."]},
+  {"id": "telling", "kicker": "Before it was written", "level": 0.6, "lines": [
+    "The same objection is made about the years before anything was written down. The stories did change in the telling. Mark has one blind man at Jericho; Matthew has two. The charge above the cross is worded four ways in four Gospels.",
+    "But telephone is one private whisper that no one hears twice. The stories of Jesus were told again and again, in public, to people who already knew them and would notice when a teller got it wrong.",
+    "And all four wordings of the charge say the same thing: he was crucified as the King of the Jews. Telephone loses the core. This tradition varied the details and kept the core."]},
+  {"id": "root", "kicker": "The years no copy reaches", "level": 0.75, "lines": [
+    "The strongest reply moves the question back. You can trace the branches to the trunk, it says, but you can't see the root. The first century of copying left no copies.",
+    "That is the right place to press. But by the second century the books had spread so widely that a change would have had to come very early and reach every branch, leaving no trace of the older reading anywhere.",
+    "And Paul, writing in the 50s, before any Gospel, passes on the core of the story as something he had received.",
+    "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures,",
+    "that He was buried, that He was raised on the third day according to the Scriptures."],
+   "scripture": S("1 Corinthians 15:3-4", "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures,", True)},
+  {"id": "limits", "kicker": "The honest limits", "level": 0.5, "lines": [
+    "None of this proves the first copies were perfect. The dates of the earliest papyri are unsettled, and the first century of copying isn't directly visible to anyone.",
+    "A Christian should be able to say that without alarm. The telephone game describes neither how the New Testament was copied nor what came out of it."]},
+  {"id": "close", "kicker": "", "level": 0.3, "lines": [
+    "Read the whole answer, with its sources, on LiveWell."],
+   "titleCard": ["Written, not whispered.", END]},
+], NOTE)
