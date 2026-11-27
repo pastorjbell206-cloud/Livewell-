@@ -1,0 +1,487 @@
+{
+  "slug": "living-hard-seasons",
+  "title": "When life is heavy",
+  "for": "I'm going through something hard",
+  "subtitle": "Eight short sessions for a hard season: lament, grief, anxiety, depression, the silence of God, costly forgiveness, suffering and hope, and the church as the people who carry each other.",
+  "intro": [
+    "This track is for someone in a hard season, or walking beside someone who is. It has eight sessions of about ten minutes. Take them slowly, out of order if you need to, and skip any you are not ready for. Nothing here is a test, and none of it hurries you.",
+    "Each session names something many people carry, looks honestly at what lies underneath it, and turns to what Scripture and the long experience of the church can offer. None of it replaces a doctor, a counsellor or a pastor. Every session keeps the way to Find Help in reach. If you are in danger now, call your local emergency number before you read on."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a group through When life is heavy, or sitting with one friend through a hard season. The group is for adults who are grieving, anxious, worn down, or carrying something they cannot name, and for those who love them. A leader doesn't need to have answers. A leader needs to listen well, to keep confidences, and to know when someone needs more help than a group can give.",
+      "Each person reads the session and opens its page before the group meets, if they can manage it. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, gathered below in order. Some weeks the right thing is to set the guide aside and simply listen."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Keep it small: three to six people, so that no one has to compete to be heard. Meet for about an hour, once a week, for eight meetings. Make it plain that anyone can miss a week without explanation and come back without awkwardness. If you can, lead with a second person, so that one of you can step out with someone who needs it."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A quiet room with soft chairs, tissues within reach, and no hurry. Make it plain at the first meeting that what people say stays in the room unless someone is in danger, that anyone may pass on any question, that tears are welcome and need no apology, and that no one has to pray aloud. Have the Find Help page open on a phone, so that it is ready if someone needs it."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About an hour, in this order. Hold the times loosely. When someone is in real distress, the order gives way to them."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Five minutes: one person reads the verse aloud, slowly, and the passage around it when the session opens a chapter.",
+          "Twenty-five minutes: the three questions to talk over, in order, leaving silence after each.",
+          "Ten minutes: the prayer prompt, in your own words. Nobody has to pray aloud, and silence is a prayer too.",
+          "Five minutes: check that everyone has someone to call this week, and say when you will meet next."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Hard seasons bring the hardest questions: why God allowed this, whether he hears, whether someone who died is with him. Don't rush to answer. Often the person needs the question heard more than they need a reply. Where Scripture speaks clearly, say what it says gently. Where it is silent, say so honestly. Never offer an explanation of someone's suffering that God has not given."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "In this group someone is always hurting. Listen more than you speak. Don't say that everything happens for a reason, that God needed another angel, or that they should be over it by now. Don't diagnose anyone, and don't tell anyone that their anxiety or depression is a lack of faith.",
+          "If someone says they are being harmed, at home or anywhere else, take it seriously and don't promise to keep it secret. Never press anyone to forgive quickly or to stay where they are being hurt. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help, and to a doctor, when what they carry has gone beyond what a group can hold: grief or low mood that has taken their sleep, appetite or ability to work for weeks, anxiety that grips the body, a habit they cannot break, harm done to them, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night.",
+          "If anyone is in danger now, call your local emergency number. Stay with the person while they make the first call if you can. A leader is a friend in that moment, not a counsellor, and that is enough."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Lament is faith, not its failure",
+      "minutes": 10,
+      "teaching": [
+        "Many of us learned that faith means looking on the bright side, and that a Christian in pain should hurry to say that God is good. So when sorrow comes, we either fake a calm we don't have or decide that our faith has failed. The Bible offers a third way, and it is all through the Psalms. A great many of them are laments: prayers that complain to God, argue with him, and ask him how long he means to stay away.",
+        "Psalm 13 shows the shape. It begins with complaint, “How long, O LORD? Will You forget me forever?” (Psalm 13:1), moves to a plea, and ends in trust: “But I have trusted in Your loving devotion” (Psalm 13:5). The trust doesn't cancel the complaint. It comes through it. Lament is faith that refuses to stop talking to God, faith that takes him seriously enough to argue. Some laments, like Psalm 88, never reach the turn at all, and God kept them in his book anyway."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Practice Lament",
+        "href": "/how-tos/ss-how-to-practice-lament",
+        "why": "The prayer the modern church forgot, and a simple way to begin praying it when the world is broken and God seems silent."
+      },
+      "also": [
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 13",
+          "href": "/tools/pray-the-psalms?psalm=13",
+          "why": "Pray the psalm itself, line by line, letting its words carry what you cannot yet say in your own."
+        },
+        {
+          "kind": "guide",
+          "label": "Lament: a Bible study",
+          "href": "/studyguides/lament",
+          "why": "A study guide on praying your pain, for anyone who wants to stay longer in the laments of Scripture."
+        }
+      ],
+      "question": "What would you say to God about this season if you believed he could bear your honesty?",
+      "do": "Write your own short lament in four lines: what hurts, what you are asking for, what you are afraid of, and one thing you still trust about God.",
+      "verse": {
+        "ref": "Psalm 62:8",
+        "text": "Trust in Him at all times, O people; pour out your hearts before Him. God is our refuge."
+      },
+      "care": [
+        "If your own suffering does not feel light, you are not failing. Many of the psalms are cries of people for whom it did not feel light either. “How long, O LORD? Will You forget me forever?” (Psalm 13:1). God kept those prayers in his book. If it is heavy, please talk with someone you trust, a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When you were growing up, was it acceptable to be sad in church?",
+        "discuss": [
+          "Why do you think many churches sing so few laments, when the Psalms hold so many?",
+          "Psalm 13 moves from complaint to trust without taking the complaint back. What does that teach about honest prayer?",
+          "What does it mean to you that God kept Psalm 88, which never turns to praise, in his book?"
+        ],
+        "pray": "Let anyone who wishes pray a short lament of their own, in their own words, and let the group sit in silence afterwards."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Grief",
+      "minutes": 10,
+      "teaching": [
+        "Grief keeps no schedule. The third month can be worse than the first, and a song in a supermarket can undo a whole week. Our culture gives a few days off work and then expects us to bounce back, and churches sometimes reach for a verse too quickly, as if sorrow were a lack of faith. C. S. Lewis, writing after the death of his wife, said that no one had told him grief felt so much like fear. Many grieving people recognise that sentence at once.",
+        "Jesus stood at the tomb of his friend Lazarus knowing he was about to raise him, and still “Jesus wept” (John 11:35). Grief is not unbelief. Paul doesn't tell the Thessalonians not to grieve, but not to grieve “like the rest, who are without hope” (1 Thessalonians 4:13). Christians grieve with hope, and it is still grieving. Grief is love with nowhere to go. The task is not to get over it but to learn, slowly and with others, to carry it."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "What does the Bible say about grief and loss?",
+        "href": "/life/grief-and-loss",
+        "why": "Loss without the trite comfort: lament at the graveside, the permission of the Psalms, and the long work of living with what is gone."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "John 11, passage by passage",
+          "href": "/study/bible/john/11#plain",
+          "why": "The raising of Lazarus, where Jesus weeps at a grave he is about to empty."
+        },
+        {
+          "kind": "help",
+          "label": "Someone I love has died",
+          "href": "/help/grief",
+          "why": "The Find Help page for grief: where to turn when the loss is too heavy to carry alone."
+        },
+        {
+          "kind": "plan",
+          "label": "Eight Weeks of Walking With Loss",
+          "href": "/plans/grief",
+          "why": "A slow plan of daily reading for someone grieving, meant to be taken at the pace grief allows."
+        }
+      ],
+      "question": "What do you wish the people around you understood about your grief, or about grief in general?",
+      "do": "Read John 11:17-44 slowly. Then tell one person, in a sentence, something you miss about the one you have lost.",
+      "verse": {
+        "ref": "Matthew 5:4",
+        "text": "Blessed are those who mourn, for they will be comforted."
+      },
+      "care": [
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn.",
+        "If your grief is so heavy that you cannot carry it, or you feel you do not want to go on, please tell someone: a pastor, a friend, a doctor or a counsellor. You do not have to carry it alone. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What is something someone said or did that truly helped you in a time of loss?",
+        "discuss": [
+          "Why do you think Jesus wept at the tomb when he knew he was about to raise Lazarus?",
+          "What is the difference between grieving with hope and not grieving at all?",
+          "What do grieving people most need from a church, and what do they too often get instead?"
+        ],
+        "pray": "Name, if you wish, someone you are grieving, and pray for one another's sorrow and for the hope of the resurrection."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Anxiety",
+      "minutes": 10,
+      "teaching": [
+        "Anxiety speaks in your own voice, which is why it feels like the truth. Some of it is ordinary worry about real things. Some of it has grown into something that grips the body, steals sleep and will not respond to reasoning. Christians have often made it worse by treating every anxious feeling as a failure of trust, so that the anxious person ends up anxious and ashamed of it as well.",
+        "Jesus' words about worry in Matthew 6 were spoken to people with real reasons to worry, and they point not to a technique but to a Father who knows what his children need. Peter puts it simply: “Cast all your anxiety on Him, because He cares for you” (1 Peter 5:7). Casting is an act, often repeated many times a day. And seeing a doctor or a counsellor can itself be an act of faith, receiving the help God provides. This session can't tell you what you are carrying. If anxiety is taking over your days, please get help."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "Is anxiety a sin? Faith and mental health",
+        "href": "/life/the-anxious-mind",
+        "why": "What Scripture, church history and honest science say about the fearful mind, and why seeing a doctor can be an act of faith."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "Is anxiety a sign of weak faith?",
+          "href": "/writing/is-anxiety-a-sign-of-weak-faith",
+          "why": "An essay for anyone who has been told, or has told themselves, that their anxiety proves they do not trust God."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Fight Anxiety With Scripture",
+          "href": "/how-tos/sf-how-to-fight-anxiety-with-scripture",
+          "why": "How to answer the voice of fear with the word of God, alongside whatever other help you need."
+        },
+        {
+          "kind": "help",
+          "label": "I can't stop worrying",
+          "href": "/help/anxiety",
+          "why": "The Find Help page for anxiety: where to turn when worry has become more than you can manage."
+        }
+      ],
+      "question": "What does your anxiety most often tell you, and what would it sound like to answer it with what you know of God?",
+      "do": "Each time worry rises today, name it to God in one plain sentence and hand it over. If it has been taking over your days for weeks, book an appointment with a doctor.",
+      "verse": {
+        "ref": "Psalm 94:19",
+        "text": "When anxiety overwhelms me, Your consolation delights my soul."
+      },
+      "care": [
+        "This passage is not a rebuke of people who live with an anxiety disorder, panic attacks or depression. Those are real illnesses of body and mind, and they need care, not blame. Getting help is not a lack of faith, and nothing in this verse forbids it. A doctor, a counselor, medicine, one trusted person who will stay can all be part of how God cares for you. The Honest Answer ‘Is my anxiety a spiritual failure?’ says more. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What does worry feel like in your body?",
+        "discuss": [
+          "Why do you think Christians so often treat anxiety as a spiritual failure?",
+          "Peter says to cast our anxiety on God because he cares. What does casting look like on an ordinary day?",
+          "How can seeing a doctor or counsellor be an act of faith rather than a lack of it?"
+        ],
+        "pray": "Pray for anyone in the group carrying worry, naming it only if they wish, and for the peace that guards hearts and minds."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Depression",
+      "minutes": 10,
+      "teaching": [
+        "A low mood that will not lift is not the same as a bad week. People who have lived through depression describe the lights going out: colour drained, sleep and appetite gone, and a voice insisting that nothing will change. It can come with a reason or without one. The church hasn't always known what to do with it, and some have been told simply to pray more, as if prayer were the only care God gives. Charles Spurgeon, the great London preacher, spoke openly of the deep depressions that came over him again and again.",
+        "Elijah, after his greatest victory, sat under a broom tree and asked God to take his life. God didn't lecture him. An angel touched him and said, “Get up and eat” (1 Kings 19:5), let him sleep, and fed him again, and only then did God speak. There is wisdom in that order: the body first. This session can't tell you what you are carrying, and no one should diagnose themselves from it. If the darkness has lasted, see a doctor. Treatment is one of the ways God cares for minds and bodies."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "What does the Bible say about depression?",
+        "href": "/life/the-heavy-mind",
+        "why": "What Scripture, the dark night of the soul and honest medicine say to the sunk soul, and why getting help can be an act of faith."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "1 Kings 19, passage by passage",
+          "href": "/study/bible/1-kings/19#plain",
+          "why": "Elijah under the broom tree, and the gentle, bodily care God gives him before any word."
+        },
+        {
+          "kind": "essay",
+          "label": "Is depression a spiritual failure?",
+          "href": "/writing/is-depression-a-spiritual-failure",
+          "why": "An essay for anyone who has been made to feel that their depression proves something is wrong with their faith."
+        },
+        {
+          "kind": "help",
+          "label": "I feel empty, and I don't know why",
+          "href": "/help/empty",
+          "why": "The Find Help page for a heaviness you cannot explain: where to turn, and what to do today."
+        }
+      ],
+      "question": "What would it look like to treat yourself this week the way God treated Elijah: rest, food, and help before answers?",
+      "do": "Tell one person you trust how you have honestly been. If the heaviness has lasted more than two weeks, book an appointment with a doctor this week.",
+      "verse": {
+        "ref": "Psalm 42:11",
+        "text": "Why are you downcast, O my soul? Why the unease within me? Put your hope in God, for I will yet praise Him, my Savior and my God."
+      },
+      "care": [
+        "No one should read this psalm and decide what is wrong with someone else. It does not say why he is low, and it gives no single cure. If ‘my tears have been my food both day and night’ is true of you now, please do not carry it alone. Tell someone you trust: a doctor, a pastor or a friend. If you have thoughts of hurting yourself, speak to someone today. The Find Help page on this site lists places to turn.",
+        "If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Who has been a steady presence for you in a dark time?",
+        "discuss": [
+          "Why do you think God fed Elijah and let him sleep before speaking to him?",
+          "What harm is done when a church treats depression as simply a lack of prayer or faith?",
+          "How can a group like this stay near someone in a long darkness without trying to fix them?"
+        ],
+        "pray": "Pray for anyone carrying a heaviness they cannot explain, and for the courage to ask for help, without asking anyone to share more than they wish."
+      }
+    },
+    {
+      "n": 5,
+      "title": "When God seems silent",
+      "minutes": 10,
+      "teaching": [
+        "Sometimes the hardest part is not the pain but the silence around it. You pray and nothing seems to answer. The Scripture you once loved has gone flat, and worship feels like moving your lips. Many assume this means they have done something wrong, or that God was never there. The church has known this season for centuries. John of the Cross wrote of a dark night of the soul, a time in which God seems absent while he is in fact doing his deepest work.",
+        "The Bible gives words for this too. “My God, my God, why have You forsaken me?” (Psalm 22:1) was a psalm of David, and Jesus prayed it from the cross. The cry of abandonment has been prayed from inside the life of God himself. Felt silence is not proof of absence. In such a season you can keep the habits of faith on fumes: read a little, pray the psalms when you have no words, go to church, and tell someone where you are."
+      ],
+      "open": {
+        "kind": "essay",
+        "label": "Why does God feel far away?",
+        "href": "/writing/why-does-god-feel-far-away",
+        "why": "An essay on the felt absence of God, for believers who still believe and find that heaven has gone quiet."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "Why does God feel so far away when you pray?",
+          "href": "/life/the-dry-season",
+          "why": "What John of the Cross, Ignatius and the long tradition say about the slow draining away of the felt presence of God."
+        },
+        {
+          "kind": "film",
+          "label": "Why does God seem silent sometimes?",
+          "href": "/study/explorer/watch/god-silent",
+          "why": "A short film on God's silence, made simply enough to watch with a child and honest enough for an adult."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Hold Onto Faith in the Dark",
+          "href": "/how-tos/ss-how-to-hold-onto-faith-in-the-dark",
+          "why": "How believers across the centuries have stayed when faith was running on fumes."
+        }
+      ],
+      "question": "What habit of faith could you keep this week even if you feel nothing while you keep it?",
+      "do": "Read Psalm 22 aloud, all of it. Notice where it turns, and then tell one person honestly where you are with God.",
+      "verse": {
+        "ref": "Psalm 139:12",
+        "text": "even the darkness is not dark to You, but the night shines like the day, for darkness is as light to You."
+      },
+      "care": [
+        "If you feel forsaken right now and the feeling will not lift, please tell someone you trust, a pastor, a friend or a doctor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever gone through a season when God seemed silent?",
+        "discuss": [
+          "What does it mean to you that Jesus prayed Psalm 22 from the cross?",
+          "Why might a dry season be a sign of God's work rather than his absence?",
+          "Which habits of faith are easiest to keep when feeling has gone, and which are hardest?"
+        ],
+        "pray": "Pray for anyone in the group who feels far from God, and if no one has words, keep a minute of silence together."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Forgiveness when it costs",
+      "minutes": 12,
+      "teaching": [
+        "Some wrongs are small and some reshape a life: betrayal by a spouse, cruelty from a parent, a church that covered for a leader. People who have been badly hurt are often told to forgive quickly, as if forgiveness were a switch, and as if their pain were the real problem. That counsel has done great harm, and much of it has been given in Christ's name.",
+        "Forgiveness in Scripture is not pretending, excusing or forgetting, and it is not the same as trust restored. It is refusing revenge and handing the debt to God, who judges justly: “Do not avenge yourselves, beloved, but leave room for God’s wrath” (Romans 12:19). Joseph named what his brothers did as evil before he spoke of God's purpose in it. Forgiving a deep wrong can take years, and is often a decision made again and again. It never requires anyone to stay where they are in danger, to keep silent about a crime, or to be reconciled with someone who is still unsafe."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "How do you forgive someone who really hurt you?",
+        "href": "/life/forgiveness-the-hardest-grace",
+        "why": "The cost and the shape of forgiving, how it differs from reconciliation, and what to do when you have been deeply wronged."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "If I forgive them, do I have to trust them again?",
+          "href": "/writing/if-i-forgive-them-do-i-have-to-trust-them-again",
+          "why": "The essay that separates forgiving a wrong from restoring trust, which many hurt people were never allowed to do."
+        },
+        {
+          "kind": "help",
+          "label": "I can't forgive them",
+          "href": "/help/cant-forgive",
+          "why": "The Find Help page for a wrong you cannot yet forgive, with no pressure to hurry."
+        }
+      ],
+      "question": "What would it mean for you to hand this wrong to God, without pretending it was not wrong?",
+      "do": "Write down, as plainly as you can, what was done to you and what it cost. Then give that page to God in prayer, even if you cannot yet forgive.",
+      "verse": {
+        "ref": "Romans 12:19",
+        "text": "Do not avenge yourselves, beloved, but leave room for God’s wrath. For it is written: “Vengeance is Mine; I will repay, says the Lord.”"
+      },
+      "care": [
+        "If you have been harmed by someone in a church, and were told to forgive and say nothing, what happened to you may have been wrong. Please talk with someone you trust outside that situation. The Find Help page on this site lists places to turn.",
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What were you taught about forgiveness when you were young?",
+        "discuss": [
+          "Why is it harmful to press someone who has been deeply wronged to forgive quickly?",
+          "How does leaving room for God's judgment make forgiveness possible rather than unjust?",
+          "What is the difference between forgiving someone and being reconciled with them?"
+        ],
+        "pray": "Pray for anyone carrying a wrong they cannot yet forgive, and for justice and healing, without asking anyone to name the person."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Suffering and hope",
+      "minutes": 10,
+      "teaching": [
+        "Suffering raises the oldest question: if God is good and powerful, why this? The skeptic who asks it is not being difficult. It is a serious question, and Christians have no tidy answer to it. Job's friends had tidy answers, and at the end of the book God says they had not spoken of him rightly. Whatever else the Bible gives a sufferer, it does not give the kind of explanation that makes the pain make sense.",
+        "What it gives is a hope with a shape. Paul, who was beaten, shipwrecked and imprisoned, wrote that “our present sufferings are not comparable to the glory that will be revealed in us” (Romans 8:18). In the same chapter creation groans, we groan, and the Spirit groans with us. Christian hope is not optimism. It rests on the resurrection of Jesus, the first piece of the world made new. Romans 8:28 is often quoted too fast. It doesn't say all things are good, but that God works in them for good."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Suffering",
+        "href": "/study/bible/doctrines/suffering",
+        "why": "What the whole Bible teaches about suffering, from Job and the psalms to the cross and the hope of glory."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "If God is good, why is there so much suffering?",
+          "href": "/answers/if-god-is-good-why-suffering",
+          "why": "The Honest Answer to the hardest question, taking the objection at its strongest before answering it."
+        },
+        {
+          "kind": "chapter",
+          "label": "Romans 8, passage by passage",
+          "href": "/study/bible/romans/8#plain",
+          "why": "Paul's chapter of groaning and hope, where nothing in all creation can separate us from the love of God."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Hope",
+          "href": "/study/bible/doctrines/hope",
+          "why": "What Christian hope rests on across the Bible, and why it is different from optimism."
+        }
+      ],
+      "question": "What is the difference between an explanation for your suffering and a hope that can hold you inside it?",
+      "do": "Read Romans 8:18-39 slowly. Underline every place where someone groans, and every place where God is said to be for us.",
+      "verse": {
+        "ref": "Romans 8:18",
+        "text": "I consider that our present sufferings are not comparable to the glory that will be revealed in us."
+      },
+      "care": [
+        "If you are suffering now, your pain is real, and you are not failing God by feeling it. The psalms are full of people who cried out to God. “The LORD is near to the brokenhearted” (Psalm 34:18). Please do not carry it alone: talk to someone you trust, a friend, a pastor, a doctor or a counsellor. If the pain ever feels like more than you can bear, reach out today to a crisis line or emergency service. The Find Help page on this site lists places to turn. The site's Honest Answer, ‘If God is good, why is there so much suffering?’, faces the larger question."
+      ],
+      "group": {
+        "open": "What have well-meaning people said to you about suffering that did not help?",
+        "discuss": [
+          "Why do you think God rebuked Job's friends, who had answers, rather than Job, who had questions?",
+          "Romans 8 says the Spirit groans with us. What difference does it make that God does not stand outside our pain?",
+          "How is Christian hope different from simply expecting things to get better?"
+        ],
+        "pray": "Pray for those in the group who are suffering now, and for hope that is honest about the pain."
+      }
+    },
+    {
+      "n": 8,
+      "title": "The people who carry each other",
+      "minutes": 12,
+      "teaching": [
+        "Hard seasons isolate. The grieving stop being invited, the depressed stop answering messages, and the anxious stay home. Many of us carry our burdens alone out of pride, or because a church once answered our pain with slogans and we decided not to risk it again. That wound is real, and it should be named rather than brushed aside.",
+        "The New Testament doesn't picture faith carried alone: “Carry one another’s burdens, and in this way you will fulfill the law of Christ” (Galatians 6:2). Dietrich Bonhoeffer, in Life Together (1939), wrote that a Christian needs another Christian to speak God's word to him when his own heart has grown uncertain. Job's friends were at their best in the first seven days, when they sat on the ground with him and said nothing. The church at its best is people who sit, bring a meal, pray when you cannot, and stay. Let someone carry you now. One day you will carry someone else."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Sit With Someone Who Is Suffering",
+        "href": "/how-tos/ss-how-to-sit-with-someone-suffering",
+        "why": "Why almost everything that helps a suffering person asks us to do less and stay longer."
+      },
+      "also": [
+        {
+          "kind": "life",
+          "label": "Why does the Bible call the church a family?",
+          "href": "/life/the-church-as-family",
+          "why": "The church as a household you belong to, with brothers and sisters who are not optional, against the loneliness of the consumer pew."
+        },
+        {
+          "kind": "life",
+          "label": "What are the one another commands?",
+          "href": "/life/life-together-the-one-anothers",
+          "why": "The New Testament's many commands to bear, forgive and encourage one another, none of which can be obeyed alone."
+        },
+        {
+          "kind": "track",
+          "label": "The rest of the Academy",
+          "href": "/tracks",
+          "why": "The other tracks of the Academy, for when you are ready to take up another part of the faith."
+        }
+      ],
+      "question": "Who could you let carry part of what you are carrying, and what keeps you from asking them?",
+      "do": "Tell one person in your church, or one Christian friend, one true thing about how you are. If you are able, do one small thing this week for someone else who is struggling.",
+      "verse": {
+        "ref": "Galatians 6:2",
+        "text": "Carry one another’s burdens, and in this way you will fulfill the law of Christ."
+      },
+      "care": [
+        "If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn.",
+        "A word to anyone who has been hurt by a church's discipline, or shunned by a church or a family. What happened to you may have been wrong, and it is not wrong to grieve it. “The LORD is near to the brokenhearted” (Psalm 34:18). If this still weighs on you, please talk with someone you trust, a pastor, a friend or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Who carried you, or tried to, in the hardest season of your life?",
+        "discuss": [
+          "Why do so many people carry their hardest things alone, even inside a church?",
+          "Job's friends did best when they said nothing. Why is silence sometimes the kindest thing we can offer?",
+          "Looking back over these eight sessions, how could this group keep carrying one another after it ends?"
+        ],
+        "pray": "Pray for one another by name, for what each person is carrying, and for the church to become a people who stay."
+      }
+    }
+  ]
+}
