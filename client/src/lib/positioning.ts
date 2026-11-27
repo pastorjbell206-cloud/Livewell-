@@ -25,11 +25,14 @@ export const PRIMARY_SUBHEAD_SHORT =
   "For believers trying to follow Jesus in a culture that no longer shares Christian assumptions. Essays on theology, culture, family, and the American church, helping readers reconstruct a deeper historical faith and learn to live well in post-Christian America.";
 
 export const META_DESCRIPTION =
-  "Learn to follow Jesus in post-Christian America: a free Study Bible with notes on every chapter, church history, family devotions, and honest answers.";
+  "Know what you believe, understand why, and learn to live it well: a free Study Bible with notes on every chapter, church history, family devotions, and honest answers.";
 
 /*
  * The home page hero. James chose the two paragraphs below on 2026-10-14
- * (replacing the earlier lines drawn from /about); the facts in HOME_WHO are
+ * (replacing the earlier lines drawn from /about), and on 2026-11-27 the
+ * headline "Know what you believe. Understand why. Learn to live it well."
+ * in place of "Learning to follow Jesus, and live well, in post-Christian
+ * America" ("change the whole post-Christian America thing"). The facts in HOME_WHO are
  * the confirmed biography. scripts/prerender-heads.mjs paints the same strings
  * into the static HTML for "/", so keep each one a plain double-quoted string
  * on one line. (The headline's hyphen is a plain one: Cormorant has no glyph
@@ -37,7 +40,7 @@ export const META_DESCRIPTION =
  * index.css keeps "post-Christian" on one line instead.)
  */
 export const HOME_HEADLINE =
-  "Learning to follow Jesus — and live well — in post-Christian America.";
+  "Know what you believe. Understand why. Learn to live it well.";
 
 /** Why the site exists (also the pull quote at the top of /about). */
 export const HOME_WHY =
@@ -52,9 +55,9 @@ export const HOME_WHY =
 export const HOME_LINE =
   "This site is here to help you study the Bible in its context, learn the church's long history, and think through the hardest questions of our time with patience and depth.";
 
-/** The word in the headline that links to the page explaining it, and that page. */
-export const HOME_LINKED_WORD = "post-Christian";
-export const HOME_LINKED_HREF = "/topics/living-after-christendom";
+/** The word in the headline that links to the page explaining it, and that page: what Christians believe. */
+export const HOME_LINKED_WORD = "believe";
+export const HOME_LINKED_HREF = "/study/bible/doctrines";
 
 /** Who is writing. */
 export const HOME_WHO =
