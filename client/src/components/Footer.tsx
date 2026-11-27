@@ -77,8 +77,9 @@ export default function Footer() {
   const { theme, toggleTheme } = useTheme();
   const phone = usePhoneWidth();
   return (
-    // charcoal, not --ink: the footer stays a dark surface in BOTH themes (--ink flips light in dark mode)
-    <footer style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "clamp(36px, 7vw, 60px) clamp(16px, 4vw, 20px) 20px", marginTop: "60px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+    // charcoal, not --ink: the footer stays a dark surface in BOTH themes (--ink flips light in dark mode).
+    // Its top margin is .lw-footer in index.css, dropped when a page already ends on a dark section.
+    <footer className="lw-footer" style={{ background: "var(--charcoal)", color: "var(--charcoal-fg)", padding: "clamp(36px, 7vw, 60px) clamp(16px, 4vw, 20px) 20px", borderTop: "1px solid rgba(255,255,255,0.08)" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
         {/* Brand */}
         <div style={{ marginBottom: "28px" }}>

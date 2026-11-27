@@ -352,6 +352,9 @@ img{display:block;max-width:100%}
    page that is still loading its content cannot show the footer and then
    throw it down the page when the content arrives. */
 .lw-main{min-height:calc(100vh - 70px)}
+/* The footer sits 60px below the page, except after a page that already ends on a dark section: no cream sliver between two dark bands. */
+.lw-footer{margin-top:60px}
+.lw-main:has(> .home-sec--dark:last-child)~.lw-footer{margin-top:0}
 .nav__logo{font-family:var(--F);font-size:21px;font-weight:600;color:var(--forest);letter-spacing:-.01em;flex-shrink:0;display:flex;align-items:baseline;gap:6px}
 .nav__logo em{font-style:italic;color:var(--gold)}
 .nav__logo small{font-family:var(--U);font-size:12px;font-weight:300;color:var(--ink3);letter-spacing:.02em}
