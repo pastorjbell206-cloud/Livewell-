@@ -1,22 +1,22 @@
 /**
  * A book's teaching introduction (intro.json `teaching`; Mark is the first):
- * a contents list, then each headed part in plain words, then the hard
+ * each headed part in plain words as a row that opens in place (the first
+ * one open), then the hard
  * passages, the key words, a timeline a reader can narrow, a map (its own
  * lazy chunk, its space held), and where to go deeper on the site.
  *
  * Books without `teaching` never render this; their page is unchanged.
  */
-import { Suspense, lazy, useState } from "react";
+import { Suspense, lazy, useState, type ReactNode } from "react";
 import { Link } from "wouter";
 import {
   BookOpenText,
-  Clock,
+  ChevronDown,
   Compass,
   KeyRound,
   Landmark,
   Library,
   ListOrdered,
-  Map as MapIcon,
   MessageCircleQuestion,
   ScrollText,
   Sprout,
@@ -161,42 +161,17 @@ export default function BookTeaching({
   teaching: Teaching;
 }) {
   const name = book.name;
-  const contents = [
-    ...teaching.parts.map(p => ({ id: p.id, h: p.h })),
-    { id: "hard-passages", h: "The hard passages" },
-    { id: "key-words", h: "Key words" },
-    { id: "timeline", h: "When it happened" },
-    { id: "map", h: "Where it happened" },
-    { id: "deeper", h: "Go deeper" },
-  ];
 
-  return (
-    <div className="bk-learn">
-      <Band tone="warm" id="learn">
-        <div style={{ ...kicker, marginBottom: "8px" }}>Learn {name}</div>
-        <H2>{name}, taught from the start</H2>
-        <p className="bk-learn__lede">
-          A plain guide to the whole book: who wrote it, when, how it is built,
-          what it means, and its hard places. Pick a part, or read straight
-          through.
-        </p>
-        <nav aria-label={`Contents of the guide to ${name}`}>
-          <ol className="bk-contents">
-            {contents.map((c, i) => (
-              <li key={c.id}>
-                <a href={`#${c.id}`}>
-                  <span aria-hidden="true">{i + 1}</span>
-                  {c.h}
-                </a>
-              </li>
-            ))}
-          </ol>
-        </nav>
-      </Band>
-
-      {teaching.parts.map((p, i) => (
-        <Band key={p.id} id={p.id} tone={i % 2 ? "warm" : "bone"}>
-          <H2>{p.h}</H2>
+  // Each part of the guide is one closed row with its title, the first one
+  // open (the simpler pages, 2026-11-27): the whole guide is on the page, in
+  // the HTML, and a book's page reads in a few screens instead of forty.
+  // A link to a part (#who, #map) opens its row first (lib/openFold).
+  const folds: { id: string; h: string; body: ReactNode }[] = [
+    ...teaching.parts.map(p => ({
+      id: p.id,
+      h: p.h,
+      body: (
+        <>
           {p.id === "shape" && (
             <p className="bk-learn__see">
               <ListOrdered aria-hidden="true" size={18} strokeWidth={1.75} />
@@ -206,78 +181,105 @@ export default function BookTeaching({
             </p>
           )}
           <Prose text={p.body} />
-        </Band>
-      ))}
-
-      <Band
-        id="hard-passages"
-        tone={teaching.parts.length % 2 ? "warm" : "bone"}
-      >
-        <H2>The hard passages</H2>
-        <p className="bk-learn__lede">
-          Places where readers often stop and ask. Each one opens the chapter,
-          where its notes face the question.
-        </p>
-        <ul className="bk-hard">
-          {teaching.hard.map(h => (
-            <li key={h.ref}>
-              <MessageCircleQuestion
-                aria-hidden="true"
-                size={20}
-                strokeWidth={1.75}
-              />
-              <Link href={chapterHref(book.slug, h.ch, h.v)}>
-                {name} {h.ref}
-              </Link>
-              <span>{h.line}</span>
-            </li>
-          ))}
-        </ul>
-      </Band>
-
-      <Band id="key-words" tone={teaching.parts.length % 2 ? "bone" : "warm"}>
-        <H2>Key words</H2>
+        </>
+      ),
+    })),
+    {
+      id: "hard-passages",
+      h: "The hard passages",
+      body: (
+        <>
+          <p className="bk-learn__lede">
+            Places where readers often stop and ask. Each one opens the chapter,
+            where its notes face the question.
+          </p>
+          <ul className="bk-hard">
+            {teaching.hard.map(h => (
+              <li key={h.ref}>
+                <MessageCircleQuestion
+                  aria-hidden="true"
+                  size={20}
+                  strokeWidth={1.75}
+                />
+                <Link href={chapterHref(book.slug, h.ch, h.v)}>
+                  {name} {h.ref}
+                </Link>
+                <span>{h.line}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      ),
+    },
+    {
+      id: "key-words",
+      h: "Key words",
+      body: (
         <ul className="bk-words">
           {teaching.words.map(w => (
             <li key={w.word}>
               <KeyRound aria-hidden="true" size={18} strokeWidth={1.75} />
-              <h3>{w.word}</h3>
+              <h4>{w.word}</h4>
               <p>{w.line}</p>
             </li>
           ))}
         </ul>
+      ),
+    },
+    {
+      id: "timeline",
+      h: "When it happened",
+      body: <Timeline items={teaching.timeline} bookName={name} />,
+    },
+    {
+      id: "map",
+      h: "Where it happened",
+      body: (
+        <>
+          {teaching.mapNote && (
+            <p className="bk-learn__lede">{teaching.mapNote}</p>
+          )}
+          <MapSlot slug={book.slug} bookName={name} places={teaching.map} />
+        </>
+      ),
+    },
+  ];
+
+  return (
+    <div className="bk-learn">
+      <Band id="learn">
+        <div style={{ ...kicker, marginBottom: "8px" }}>Learn {name}</div>
+        <H2>{name}, taught from the start</H2>
+        <p className="bk-learn__lede">
+          A plain guide to the whole book: who wrote it, when, how it is built,
+          what it means, and its hard places. Tap a part to open it.
+        </p>
+        <ol
+          className="lw-folds"
+          aria-label={`Contents of the guide to ${name}`}
+        >
+          {folds.map((f, i) => (
+            <li key={f.id}>
+              <details id={f.id} className="lw-fold" open={i === 0}>
+                <summary>
+                  <span className="lw-fold__n" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  <h3 className="lw-fold__h">{f.h}</h3>
+                  <ChevronDown
+                    aria-hidden="true"
+                    size={22}
+                    strokeWidth={1.75}
+                  />
+                </summary>
+                <div className="lw-fold__body">{f.body}</div>
+              </details>
+            </li>
+          ))}
+        </ol>
       </Band>
 
-      <Band id="timeline" tone={teaching.parts.length % 2 ? "warm" : "bone"}>
-        <H2>
-          <Clock
-            aria-hidden="true"
-            size={24}
-            strokeWidth={1.75}
-            className="bk-h2-icon"
-          />{" "}
-          When it happened
-        </H2>
-        <Timeline items={teaching.timeline} bookName={name} />
-      </Band>
-
-      <Band id="map" tone={teaching.parts.length % 2 ? "bone" : "warm"}>
-        <H2>
-          <MapIcon
-            aria-hidden="true"
-            size={24}
-            strokeWidth={1.75}
-            className="bk-h2-icon"
-          />{" "}
-          Where it happened
-        </H2>
-        {teaching.mapNote && (
-          <p className="bk-learn__lede">{teaching.mapNote}</p>
-        )}
-        <MapSlot slug={book.slug} bookName={name} places={teaching.map} />
-      </Band>
-
-      <Band id="deeper" tone={teaching.parts.length % 2 ? "warm" : "bone"}>
+      <Band id="deeper" tone="warm">
         <H2>
           <Compass
             aria-hidden="true"

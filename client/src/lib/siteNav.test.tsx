@@ -300,9 +300,12 @@ describe("the home page", () => {
 
     const doors = screen.getByRole("region", { name: "Where to begin." });
     for (const a of within(doors).getAllByRole("link")) expect(isRoute(a.getAttribute("href") ?? ""), a.getAttribute("href") ?? "").toBe(true);
-    for (const [name, href] of [[/Read the Study Bible/, "/study/bible"], [/Essays/, "/writing"], [/Books/, "/books"]] as const) {
+    for (const [name, href] of [[/Read the Study Bible/, "/study/bible"], [/Hard questions/, "/topics"], [/Family/, "/family"]] as const) {
       expect(within(doors).getByRole("link", { name }).getAttribute("href")).toBe(href);
     }
+    // The essays and the whole site stay one tap from Home (the simpler home, 2026-11-27).
+    expect(document.querySelector('main a[href="/writing"]')).not.toBeNull();
+    expect(document.querySelector('main .home-hero a[href="/start"]')).not.toBeNull();
 
     const lead = START_WITH.find((s) => isPublicEssay(s));
     expect(lead).toBeTruthy();
@@ -329,16 +332,19 @@ describe("the home page", () => {
 });
 
 describe("the hubs", () => {
-  it("/study is the Bible door: its page top, the shelf first, six rooms or fewer, then further in", () => {
+  it("/study is the Bible door: its page top, four big cards, the shelf, everything else behind one row, then the next step", () => {
     renderWithProviders(<Study />);
     expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Study the Bible");
     const h2s = screen.getAllByRole("heading", { level: 2 }).map((h) => h.textContent);
-    // Between the rooms and "Go deeper": everything else in the door, from the catalogue (components/art/DoorInside).
-    expect(h2s).toEqual(["Pick a book to open.", "Where to study.", "One step further in.", "Go deeper."]);
+    // The simpler page (2026-11-27): four cards, the shelf, then the next step; every other room and page
+    // is inside one closed row, "See everything in Bible" (components/art/SeeAll), from the catalogue.
+    expect(h2s).toEqual(["What would you like to do?", "Pick a book to open.", "New to the Bible? Begin with John."]);
+    expect(document.querySelectorAll(".lw-picks > li")).toHaveLength(4);
+    expect(document.querySelector("details.lw-all summary")?.textContent).toContain("See everything in Bible");
     // The rooms are picture cards, no more than six (PROJECT-PROMPT, the map).
-    const rooms = document.querySelectorAll(".lw-rooms > li");
+    const rooms = document.querySelectorAll(".lw-picks > li, .lw-rooms > li");
     expect(rooms.length).toBeGreaterThan(0);
-    expect(rooms.length).toBeLessThanOrEqual(6);
+    expect(rooms.length).toBeLessThanOrEqual(7);
     const hrefs = Array.from(document.querySelectorAll("main a[href^='/']")).map((a) => a.getAttribute("href")!);
     expect(hrefs.filter((h) => !isRoute(h))).toEqual([]);
     for (const h of ["/study/bible", "/study/bible/search", "/study/bible/story", "/study/bible/doctrines", "/study/bible/guides", "/theology/history", "/resources/creeds", "/resources/context", "/studyguides", "/tools", "/start"]) {

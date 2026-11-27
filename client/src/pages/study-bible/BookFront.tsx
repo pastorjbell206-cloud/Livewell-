@@ -1,9 +1,13 @@
 /**
- * A book's page (/study/bible/:book): the book at a glance on top
- * (BookGlance: where it sits, its kind, its chapters, who wrote it and when
- * as the notes put it, and its outline as a band), then the chapters as
- * tiles, then the introduction in the reading face. The longest notes (the
- * text, how it has been read, further reading) open on a tap.
+ * A book's page (/study/bible/:book), as the simpler pages have it
+ * (2026-11-27): the page top with one main action, "Start at John 1", and a
+ * quiet second, "Pick a chapter"; then the chapters as tiles; the book's
+ * film, if it has one; the book at a glance (BookGlance: where it sits, its
+ * kind, who wrote it and when as the notes put it, and its outline as a
+ * band); the chapters to start with; the guide to the book, each part a row
+ * that opens in place (BookTeaching); the longest notes (the text, how it has
+ * been read, further reading), which also open on a tap; and the next step.
+ * Every word the page had is still on it.
  */
 import type { ReactNode } from "react";
 import { Link } from "wouter";
@@ -12,7 +16,7 @@ import { ChevronDown } from "lucide-react";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import { fetchCatalogue } from "@/lib/catalogue";
-import { chapterHref, type BibleBook } from "@/lib/bible";
+import { chapterBookName, chapterHref, type BibleBook } from "@/lib/bible";
 import {
   fetchDoctrines,
   fetchIntro,
@@ -27,6 +31,8 @@ import { Band, H2, H3, Pill, Prose, RelatedList, kicker, useLoad } from "./share
 import BookGlance from "./BookGlance";
 import BookTeaching from "./BookTeaching";
 import FilmsHere from "@/components/FilmsHere";
+import NextStep from "@/components/art/NextStep";
+import { useOpenFolds } from "@/lib/openFold";
 import { fetchBookMeta } from "./bookFacts";
 import "../home/home.css";
 import "./bible.css";
@@ -61,6 +67,10 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
   const titles = index?.titles[book.slug] ?? [];
   const testament = book.testament === "OT" ? "The Old Testament" : "The New Testament";
   const teaching = intro?.teaching;
+  // "Start at John 1" ("Start at Psalm 1"): the one main action, at the top and at the end.
+  const startLabel = book.chapters === 1 ? `Read ${book.name}` : `Start at ${chapterBookName(book)} 1`;
+  // A link to a part of the guide (#who from the glance, #map) opens its row first.
+  useOpenFolds(intro !== undefined);
   const hasMore = !!(intro && (teaching || intro.text || intro.reception || intro.furtherReading?.length));
 
   return (
@@ -73,7 +83,26 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
       {/* Held on a first load until the drawing's data has arrived (lib/prerender-hold.ts). */}
       {(intro === undefined || act === undefined || meta === undefined) && <span hidden data-lw-loading />}
 
-      <PageHead door="The Study Bible" doorHref="/study/bible" title={book.name} line={intro?.tagline} plate="book" className="bk-head">
+      <PageHead
+        door="The Study Bible"
+        doorHref="/study/bible"
+        title={book.name}
+        line={intro?.tagline}
+        plate="book"
+        className="bk-head"
+        action={
+          <>
+            <Link href={chapterHref(book.slug, 1)} className="btn">
+              {startLabel}
+            </Link>
+            {book.chapters > 1 && (
+              <a href="#chapters" className="btn btn--quiet">
+                Pick a chapter
+              </a>
+            )}
+          </>
+        }
+      >
         <p className="bk-facts">
           <span>{testament}</span>
           {act && (
@@ -81,13 +110,8 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
               In the story: <Link href={`/study/bible/story/${act.id}`}>{act.label}, {act.title}</Link>
             </span>
           )}
-          <a href="#chapters">Go to the chapters</a>
         </p>
       </PageHead>
-
-      <div id="glance" className="bk-anchor">
-        <BookGlance books={books} book={book} intro={intro ?? null} meta={meta ?? null} />
-      </div>
 
       <section id="chapters" className="bk-chapters" aria-labelledby="bk-chapters-title">
         <div className="home-wrap">
@@ -117,7 +141,9 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
         <FilmsHere path={`/study/bible/${book.slug}`} />
       </div>
 
-      {intro && teaching && <BookTeaching book={book} teaching={teaching} />}
+      <div id="glance" className="bk-anchor">
+        <BookGlance books={books} book={book} intro={intro ?? null} meta={meta ?? null} />
+      </div>
 
       {intro && (
         <>
@@ -201,6 +227,7 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
               </>
             )}
           </Band>
+          {teaching && <BookTeaching book={book} teaching={teaching} />}
           {hasMore && (
             <Band>
               <H2>Going further</H2>
@@ -281,6 +308,22 @@ export default function BookFront({ books, book }: { books: BibleBook[]; book: B
           <RelatedList items={related} />
         </Band>
       )}
+
+      <NextStep
+        tone={related && related.length > 0 && (hasMore || !intro) ? "bone" : "warm"}
+        title={`Read ${book.name} with notes`}
+        line={book.chapters === 1 ? "With notes beside the text." : "Start at chapter 1, with notes beside the text."}
+        action={
+          <Link href={chapterHref(book.slug, 1)} className="btn">
+            {startLabel}
+          </Link>
+        }
+        second={
+          <Link href="/study/bible" className="btn btn--quiet">
+            All 66 books
+          </Link>
+        }
+      />
     </>
   );
 }
