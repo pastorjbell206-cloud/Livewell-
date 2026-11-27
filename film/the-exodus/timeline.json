@@ -1,0 +1,254 @@
+{
+ "length": 276.88,
+ "chapters": [
+  {
+   "id": "slaves",
+   "kicker": "Slaves in Egypt",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 19.94,
+   "lines": [
+    {
+     "text": "The whole Bible keeps pointing back to one rescue. In Egypt, Abraham's family has become a nation of slaves, their lives bitter with hard labor in brick and mortar.",
+     "start": 2.6,
+     "end": 12.9
+    },
+    {
+     "text": "So God heard their groaning, and He remembered His covenant with Abraham, Isaac, and Jacob.",
+     "start": 13.56,
+     "end": 19.04
+    }
+   ]
+  },
+  {
+   "id": "lord",
+   "kicker": "Who is the real lord?",
+   "level": 0.35,
+   "start": 19.14,
+   "end": 39.88,
+   "lines": [
+    {
+     "text": "From a bush that burns and isn't burned up, God sends a reluctant shepherd, Moses, to Pharaoh. Pharaoh answers with a question: who is the LORD, that I should obey him?",
+     "start": 20.04,
+     "end": 30.56
+    },
+    {
+     "text": "Ten plagues reply, judgment, Exodus says, against all the gods of Egypt. The last is the death of the firstborn.",
+     "start": 31.26,
+     "end": 38.98
+    }
+   ]
+  },
+  {
+   "id": "passover",
+   "kicker": "The night of the Passover",
+   "level": 0.5,
+   "start": 39.08,
+   "end": 67.88,
+   "lines": [
+    {
+     "text": "Each household marks its doorframe with a lamb's blood. Israel isn't spared because its people are better. A lamb dies in their place.",
+     "start": 39.98,
+     "end": 47.88
+    },
+    {
+     "text": "When I see the blood, I will pass over you.",
+     "start": 48.46,
+     "end": 50.82
+    },
+    {
+     "text": "It was a night of great sadness in Egypt, and Jewish tradition remembers it with gratitude and with grief.",
+     "start": 51.64,
+     "end": 57.78
+    },
+    {
+     "text": "A child at the table asks, \u201cWhat does this service mean to you?\u201d Pause and ask it yourself. Why begin a year of worship with one night?",
+     "start": 58.52,
+     "end": 66.98
+    }
+   ]
+  },
+  {
+   "id": "sea",
+   "kicker": "Through the sea",
+   "level": 0.65,
+   "start": 67.08,
+   "end": 88.06,
+   "lines": [
+    {
+     "text": "Pharaoh changes his mind and pursues with his chariots. Trapped between an army and the water, the people panic. Moses says,",
+     "start": 67.98,
+     "end": 75.92
+    },
+    {
+     "text": "The LORD will fight for you; you need only to be still.",
+     "start": 76.38,
+     "end": 79.6
+    },
+    {
+     "text": "All night a strong east wind drives back the sea, and people who couldn't save themselves walk through on dry ground.",
+     "start": 80.36,
+     "end": 87.16
+    }
+   ]
+  },
+  {
+   "id": "song",
+   "kicker": "A song on the far shore",
+   "level": 0.75,
+   "start": 87.26,
+   "end": 105.38,
+   "lines": [
+    {
+     "text": "On the far shore Miriam leads the women with tambourines and dancing.",
+     "start": 88.16,
+     "end": 92.04
+    },
+    {
+     "text": "The LORD is my strength and my song, and He has become my salvation.",
+     "start": 92.68,
+     "end": 97.12
+    },
+    {
+     "text": "Many scholars argue from its language that this song is among the oldest poems in the Hebrew Bible. Others date it later.",
+     "start": 97.88,
+     "end": 104.48
+    }
+   ]
+  },
+  {
+   "id": "silence",
+   "kicker": "Did it happen?",
+   "level": 0.4,
+   "start": 104.58,
+   "end": 143.1,
+   "lines": [
+    {
+     "text": "The hard question: no Egyptian text mentions Israel's slavery, the plagues, or the departure.",
+     "start": 105.48,
+     "end": 111.92
+    },
+    {
+     "text": "Its most influential statement is The Bible Unearthed, by Israel Finkelstein and Neil Asher Silberman, in 2001. Exodus counts about 600,000 men on foot, besides women and children. That's two million or more, larger than all of Canaan then.",
+     "start": 112.56,
+     "end": 129.84
+    },
+    {
+     "text": "Forty years of wandering should leave pottery, hearths, graves. Sinai has yielded nothing that fits. So, they argued, the exodus is best read as a later national epic.",
+     "start": 130.38,
+     "end": 142.2
+    }
+   ]
+  },
+  {
+   "id": "true",
+   "kicker": "What's true in it",
+   "level": 0.4,
+   "start": 142.3,
+   "end": 156.82,
+   "lines": [
+    {
+     "text": "Much of that is true. Nothing from Egypt or Sinai confirms the story directly, and the numbers are a real difficulty. Christians made it worse with claims like chariot wheels on the sea floor, which don't survive scrutiny.",
+     "start": 143.2,
+     "end": 155.92
+    }
+   ]
+  },
+  {
+   "id": "evidence",
+   "kicker": "What the silence means",
+   "level": 0.5,
+   "start": 156.02,
+   "end": 190.8,
+   "lines": [
+    {
+     "text": "Weigh this before the answer: would Egypt's monuments keep the memory of Egypt's humiliation?",
+     "start": 156.92,
+     "end": 162.46
+    },
+    {
+     "text": "The Egyptologist James Hoffmeier argued in 1997 that Egypt's royal records rarely record defeats, and herders in tents leave little to find.",
+     "start": 162.7,
+     "end": 172.68
+    },
+    {
+     "text": "What survives fits the setting: Semitic peoples in the eastern Nile Delta, a royal city named Rameses, Egyptian names like Moses and Phinehas. About 1208 BC, Pharaoh Merneptah's inscription already names Israel as a people in Canaan.",
+     "start": 173.4,
+     "end": 189.9
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.45,
+   "start": 190.0,
+   "end": 218.58,
+   "lines": [
+    {
+     "text": "The date is argued. Counting back from First Kings 6:1 gives about 1446 BC. Others point to the name Rameses and place it in the thirteenth century.",
+     "start": 190.9,
+     "end": 201.24
+    },
+    {
+     "text": "The numbers are argued too. Some take them as written. Others note that elef, the Hebrew word for thousand, can also mean a clan, which makes the company far smaller. Some think a smaller group's escape became the whole people's story. This film doesn't choose.",
+     "start": 201.88,
+     "end": 217.68
+    }
+   ]
+  },
+  {
+   "id": "remember",
+   "kicker": "A memory at the center",
+   "level": 0.6,
+   "start": 217.78,
+   "end": 247.54,
+   "lines": [
+    {
+     "text": "Critics reply that peoples invent humble origins. Livy says crowds fled to Romulus's new city, free and slave alike.",
+     "start": 218.68,
+     "end": 226.64
+    },
+    {
+     "text": "Defenders answer that Rome's humble start is a detail. Israel's slavery is the center of its life. Its law begins,",
+     "start": 227.42,
+     "end": 235.02
+    },
+    {
+     "text": "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery.",
+     "start": 235.36,
+     "end": 240.58
+    },
+    {
+     "text": "Archaeology can't prove the exodus, and the date, the numbers, and the route are still open.",
+     "start": 241.04,
+     "end": 246.64
+    }
+   ]
+  },
+  {
+   "id": "lamb",
+   "kicker": "Our Passover lamb",
+   "level": 0.8,
+   "start": 246.74,
+   "end": 270.777,
+   "lines": [
+    {
+     "text": "Christians read this rescue as the pattern of a greater one. At a Passover meal, Jesus called the cup the new covenant in his blood.",
+     "start": 247.64,
+     "end": 255.34
+    },
+    {
+     "text": "For Christ, our Passover lamb, has been sacrificed.",
+     "start": 256.02,
+     "end": 259.28
+    },
+    {
+     "text": "As God brought Israel out of slavery through death and water, so in Christ he brings his people out of sin and death. They receive that rescue. They don't earn it.",
+     "start": 259.96,
+     "end": 269.877
+    }
+   ]
+  }
+ ]
+}
