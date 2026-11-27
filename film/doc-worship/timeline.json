@@ -1,0 +1,255 @@
+{
+ "length": 235.07,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 11.26,
+   "lines": [
+    {
+     "text": "What is worship, really? The singing on a Sunday morning? A quiet prayer? A feeling?",
+     "start": 2.6,
+     "end": 8.32
+    },
+    {
+     "text": "And who gets to say how it's done?",
+     "start": 8.86,
+     "end": 10.36
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What Christians confess",
+   "level": 0.3,
+   "start": 10.46,
+   "end": 23.78,
+   "lines": [
+    {
+     "text": "Christians confess that worship is the whole response of God's people to who God is and what He has done.",
+     "start": 11.36,
+     "end": 17.54
+    },
+    {
+     "text": "It's owed to the true God alone. And it can't be pulled apart from how we treat our neighbor.",
+     "start": 18.18,
+     "end": 22.88
+    }
+   ]
+  },
+  {
+   "id": "words",
+   "kicker": "Bowing and serving",
+   "level": 0.4,
+   "start": 22.98,
+   "end": 38.58,
+   "lines": [
+    {
+     "text": "The Bible's words are concrete. The most common Hebrew word means to bow down.",
+     "start": 23.88,
+     "end": 28.64
+    },
+    {
+     "text": "Another means to serve. It names Israel's hard service to Pharaoh.",
+     "start": 29.18,
+     "end": 33.42
+    },
+    {
+     "text": "It also names the service the LORD called Israel out of Egypt to give Him.",
+     "start": 33.94,
+     "end": 37.68
+    }
+   ]
+  },
+  {
+   "id": "exodus",
+   "kicker": "The goal of the rescue",
+   "level": 0.5,
+   "start": 37.78,
+   "end": 55.14,
+   "lines": [
+    {
+     "text": "So the exodus is a move from one service to another. God tells Moses the sign will be that they worship Him on this mountain.",
+     "start": 38.68,
+     "end": 46.14
+    },
+    {
+     "text": "Then comes the golden calf, and Aaron proclaims a feast to the LORD.",
+     "start": 46.7,
+     "end": 50.54
+    },
+    {
+     "text": "The people tried to worship the LORD in a form He had forbidden.",
+     "start": 51.16,
+     "end": 54.24
+    }
+   ]
+  },
+  {
+   "id": "prophets",
+   "kicker": "Songs and prophets",
+   "level": 0.55,
+   "start": 54.34,
+   "end": 75.98,
+   "lines": [
+    {
+     "text": "The Psalms gave Israel words for praise and thanks, confession and lament.",
+     "start": 55.24,
+     "end": 60.0
+    },
+    {
+     "text": "But the prophets judged worship by obedience. Through Amos, the LORD says He hates the feasts of a people who deny justice.",
+     "start": 60.54,
+     "end": 67.7
+    },
+    {
+     "text": "Micah sums up what the LORD requires. To act justly, to love mercy, and to walk humbly with your God.",
+     "start": 68.28,
+     "end": 75.08
+    }
+   ]
+  },
+  {
+   "id": "jesus",
+   "kicker": "In spirit and in truth",
+   "level": 0.65,
+   "start": 75.18,
+   "end": 104.38,
+   "lines": [
+    {
+     "text": "People fell down and worshiped Jesus. He accepted it, though He insisted worship belongs to God alone.",
+     "start": 76.08,
+     "end": 81.86
+    },
+    {
+     "text": "A Samaritan woman asked Him where worship belongs, on Mount Gerizim or in Jerusalem. Jesus replied.",
+     "start": 82.5,
+     "end": 89.06
+    },
+    {
+     "text": "But a time is coming and has now come when the true worshipers will worship the Father in spirit and in truth, for the Father is seeking such as these to worship Him.",
+     "start": 89.6,
+     "end": 99.58
+    },
+    {
+     "text": "The place of worship is no longer a mountain. It's a person.",
+     "start": 100.22,
+     "end": 103.48
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "The first gatherings",
+   "level": 0.7,
+   "start": 103.58,
+   "end": 133.92,
+   "lines": [
+    {
+     "text": "The first Christians met in the temple courts and in homes, for teaching, fellowship, the breaking of bread and prayer.",
+     "start": 104.48,
+     "end": 111.56
+    },
+    {
+     "text": "Around 112, a Roman governor named Pliny reported that they met before dawn and sang a hymn to Christ as to a god.",
+     "start": 112.18,
+     "end": 120.18
+    },
+    {
+     "text": "Around 155, Justin Martyr described a Sunday in Rome. The apostles and prophets were read, bread and wine were blessed, and a collection was taken for widows, orphans and the needy.",
+     "start": 120.84,
+     "end": 133.02
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.75,
+   "start": 133.12,
+   "end": 181.16,
+   "lines": [
+    {
+     "text": "Christians differ over how to order worship.",
+     "start": 134.02,
+     "end": 136.1
+    },
+    {
+     "text": "Presbyterian and Reformed churches hold the regulative principle. In public worship, the church does only what God commands in Scripture.",
+     "start": 136.8,
+     "end": 144.62
+    },
+    {
+     "text": "Lutheran, Anglican and many other Protestants hold the normative principle. The church may use what Scripture doesn't forbid, if it agrees with the gospel and builds up the church.",
+     "start": 145.28,
+     "end": 155.86
+    },
+    {
+     "text": "Orthodox, Catholic and many Anglican and Lutheran Christians see their worship as sharing in heaven's worship, centered on the Eucharist and ordered by an ancient liturgy.",
+     "start": 156.06,
+     "end": 165.86
+    },
+    {
+     "text": "Many Baptist, free-church, Pentecostal and charismatic Christians prefer simple forms and freedom for the Spirit to lead, with everything done in order.",
+     "start": 166.38,
+     "end": 175.52
+    },
+    {
+     "text": "Every tradition has found that how a church worships shapes what it believes.",
+     "start": 176.08,
+     "end": 180.26
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "The rest of the week",
+   "level": 0.85,
+   "start": 180.36,
+   "end": 210.14,
+   "lines": [
+    {
+     "text": "Christ offered one sacrifice for sins for all time. So sacrifice now describes the whole of life.",
+     "start": 181.26,
+     "end": 187.7
+    },
+    {
+     "text": "Sunday's gathering trains the heart for the rest of the week. Work done honestly. Money shared. Enemies forgiven.",
+     "start": 188.12,
+     "end": 195.12
+    },
+    {
+     "text": "The kitchen, the office and the hospital room are places of service to God, as truly as the sanctuary.",
+     "start": 195.72,
+     "end": 202.14
+    },
+    {
+     "text": "And worship shapes the worshiper. What a person praises, fears and loves most will shape who they become.",
+     "start": 202.62,
+     "end": 209.24
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 209.34,
+   "end": 228.969,
+   "lines": [
+    {
+     "text": "Therefore I urge you, brothers, on account of God\u2019s mercy, to offer your bodies as living sacrifices, holy and pleasing to God, which is your spiritual service of worship.",
+     "start": 210.24,
+     "end": 220.8
+    },
+    {
+     "text": "Worship begins with God's worth, not our mood. And the Bible ends in a city where His servants will worship Him.",
+     "start": 221.38,
+     "end": 228.069
+    }
+   ]
+  }
+ ]
+}
