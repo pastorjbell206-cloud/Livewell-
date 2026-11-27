@@ -1,0 +1,244 @@
+{
+ "length": 274.66,
+ "chapters": [
+  {
+   "id": "fair",
+   "kicker": "A fair question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 16.3,
+   "lines": [
+    {
+     "text": "Everything we meet came from something. You have parents. A tree came from a seed.",
+     "start": 2.6,
+     "end": 7.6
+    },
+    {
+     "text": "So here's a fair question, one children and philosophers both ask. If everything needs a cause, who made God?",
+     "start": 8.26,
+     "end": 15.4
+    }
+   ]
+  },
+  {
+   "id": "russell",
+   "kicker": "Russell's question",
+   "level": 0.35,
+   "start": 15.5,
+   "end": 46.62,
+   "lines": [
+    {
+     "text": "Bertrand Russell gave it its plainest form, in a London lecture of 1927 published as Why I Am Not a Christian.",
+     "start": 16.4,
+     "end": 23.5
+    },
+    {
+     "text": "At eighteen he read John Stuart Mill's Autobiography. Mill's father had taught him that the question \u201cWho made me?\u201d can't be answered, because it raises another: \u201cWho made God?\u201d",
+     "start": 24.12,
+     "end": 35.02
+    },
+    {
+     "text": "Russell's conclusion: \u201cIf everything must have a cause, then God must have a cause. If there can be anything without a cause, it may just as well be the world as God.\u201d",
+     "start": 35.72,
+     "end": 45.72
+    }
+   ]
+  },
+  {
+   "id": "dawkins",
+   "kicker": "Who designed the designer?",
+   "level": 0.45,
+   "start": 45.82,
+   "end": 64.22,
+   "lines": [
+    {
+     "text": "Richard Dawkins sharpened it in The God Delusion, in 2006: a God able to design a universe would have to be supremely complex, and so at least as improbable as the universe he's meant to explain.",
+     "start": 46.72,
+     "end": 59.12
+    },
+    {
+     "text": "Then God doesn't end the chain of questions. He starts a worse one.",
+     "start": 59.82,
+     "end": 63.32
+    }
+   ]
+  },
+  {
+   "id": "true",
+   "kicker": "What's true in it",
+   "level": 0.4,
+   "start": 63.42,
+   "end": 82.54,
+   "lines": [
+    {
+     "text": "A good deal of this is right. Christians have sometimes argued as if everything has a cause, and stated that way, the argument refutes itself.",
+     "start": 64.32,
+     "end": 72.76
+    },
+    {
+     "text": "And a designer pictured as a very complex being inside the universe, built from parts, would need explaining as much as anything he made.",
+     "start": 73.38,
+     "end": 81.64
+    }
+   ]
+  },
+  {
+   "id": "narrower",
+   "kicker": "Read the fine print",
+   "level": 0.5,
+   "start": 81.74,
+   "end": 113.46,
+   "lines": [
+    {
+     "text": "Pause here and ask yourself: do the serious arguments really say everything has a cause? Or something narrower?",
+     "start": 82.64,
+     "end": 89.34
+    },
+    {
+     "text": "Something narrower. In William Lane Craig's form, the kalam argument says whatever begins to exist has a cause. It says nothing about what never began.",
+     "start": 90.12,
+     "end": 100.08
+    },
+    {
+     "text": "Leibniz in 1714, and Aquinas long before him, wrote about things that might not have existed. None of them says everything has a cause. Each says a certain kind of thing does.",
+     "start": 100.7,
+     "end": 112.56
+    }
+   ]
+  },
+  {
+   "id": "link",
+   "kicker": "Not one more link",
+   "level": 0.6,
+   "start": 112.66,
+   "end": 136.6,
+   "lines": [
+    {
+     "text": "So who made God is a fair question aimed at the wrong target. God, as Christians confess him, didn't begin, couldn't fail to be, and has no parts whose joining would need a cause.",
+     "start": 113.56,
+     "end": 125.14
+    },
+    {
+     "text": "Aquinas called God altogether simple, without parts. He isn't a very large thing inside the universe, needing a maker. He's the one on whom everything else depends.",
+     "start": 125.76,
+     "end": 135.7
+    }
+   ]
+  },
+  {
+   "id": "everlasting",
+   "kicker": "From everlasting",
+   "level": 0.7,
+   "start": 135.8,
+   "end": 150.96,
+   "lines": [
+    {
+     "text": "Scripture speaks of God the same way.",
+     "start": 136.7,
+     "end": 138.8
+    },
+    {
+     "text": "Before the mountains were born or You brought forth the earth and the world, from everlasting to everlasting You are God.",
+     "start": 139.48,
+     "end": 146.9
+    },
+    {
+     "text": "Nothing made him, and nothing keeps him going.",
+     "start": 147.58,
+     "end": 150.06
+    }
+   ]
+  },
+  {
+   "id": "parity",
+   "kicker": "Then why not the world?",
+   "level": 0.6,
+   "start": 150.16,
+   "end": 182.14,
+   "lines": [
+    {
+     "text": "The strongest reply is Russell's parity. You've granted that something exists without a cause outside itself. Then why not the universe, or its most basic laws?",
+     "start": 151.06,
+     "end": 160.6
+    },
+    {
+     "text": "It's a serious reply. Now the question isn't who made God, but which candidate can bear that weight.",
+     "start": 161.24,
+     "end": 167.26
+    },
+    {
+     "text": "The universe shows marks of something that might have been otherwise. Hume suggested it might be necessary in a way we don't understand. Observation can't rule that out, or rule out God. Argument has to decide.",
+     "start": 168.02,
+     "end": 181.24
+    }
+   ]
+  },
+  {
+   "id": "burden",
+   "kicker": "Whose burden?",
+   "level": 0.55,
+   "start": 181.34,
+   "end": 227.72,
+   "lines": [
+    {
+     "text": "Then the second half: isn't proof the believer's job? Russell imagined a china teapot circling the sun, too small for any telescope. No one could disprove it, and no one would be obliged to believe it.",
+     "start": 182.24,
+     "end": 194.5
+    },
+    {
+     "text": "Antony Flew argued in 1972 that the burden of proof lies on whoever affirms. He's partly right. Anyone who says God exists owes reasons.",
+     "start": 195.14,
+     "end": 205.1
+    },
+    {
+     "text": "Weigh this before the answer: what does the teapot explain? Nothing. Nothing would be different without it.",
+     "start": 205.7,
+     "end": 212.08
+    },
+    {
+     "text": "God is proposed to explain what everyone sees: a world that's ordered and knowable, and some things really wrong. The believer carries that burden. The unbeliever who says the universe needs no explanation carries one too.",
+     "start": 212.72,
+     "end": 226.82
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "kicker": "Still open",
+   "level": 0.4,
+   "start": 226.92,
+   "end": 254.22,
+   "lines": [
+    {
+     "text": "Some things stay unresolved: whether a necessary being is a coherent idea, whether a necessary universe is a real alternative, and how to weigh either view before the evidence.",
+     "start": 227.82,
+     "end": 238.7
+    },
+    {
+     "text": "Christians differ too, on how to state God's simplicity; Alvin Plantinga questioned its strong form in 1980. What all confess is that God is uncreated and eternal, and that everything else exists because he wills it.",
+     "start": 239.24,
+     "end": 253.32
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "I AM",
+   "level": 0.3,
+   "start": 253.42,
+   "end": 268.565,
+   "lines": [
+    {
+     "text": "At the bush that burned and wasn't burned up, Moses asked God's name. The answer was \u201cI AM WHO I AM.\u201d",
+     "start": 254.32,
+     "end": 261.36
+    },
+    {
+     "text": "Every explanation has to stop somewhere. Ask yourself where yours stops, and why.",
+     "start": 262.12,
+     "end": 267.665
+    }
+   ]
+  }
+ ]
+}
