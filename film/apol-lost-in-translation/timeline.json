@@ -1,0 +1,241 @@
+{
+ "length": 221.13,
+ "chapters": [
+  {
+   "id": "objection",
+   "kicker": "The objection",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 14.54,
+   "lines": [
+    {
+     "text": "The Bible has been translated so many times. Hebrew to Greek, Greek to Latin, Latin to English. Like a photocopy of a photocopy.",
+     "start": 2.6,
+     "end": 11.32
+    },
+    {
+     "text": "Surely the meaning is lost by now.",
+     "start": 11.8,
+     "end": 13.64
+    }
+   ]
+  },
+  {
+   "id": "chain",
+   "kicker": "Not a chain",
+   "level": 0.35,
+   "start": 13.74,
+   "end": 43.98,
+   "lines": [
+    {
+     "text": "But that isn't how any English Bible was made.",
+     "start": 14.64,
+     "end": 17.12
+    },
+    {
+     "text": "In 1526, William Tyndale translated the New Testament into English straight from the Greek. The King James translators of 1611 worked from the Hebrew and the Greek.",
+     "start": 17.82,
+     "end": 28.78
+    },
+    {
+     "text": "Modern Bibles translate from editions of the Hebrew and Greek built from the manuscripts.",
+     "start": 29.48,
+     "end": 33.96
+    },
+    {
+     "text": "So every translation goes back to the source. One English version's mistakes don't pass into the next. Each new translator starts again.",
+     "start": 34.48,
+     "end": 43.08
+    }
+   ]
+  },
+  {
+   "id": "lost",
+   "kicker": "What is lost",
+   "level": 0.45,
+   "start": 43.18,
+   "end": 66.86,
+   "lines": [
+    {
+     "text": "Still, something is always lost. The sound of a Hebrew psalm. A pun in Greek that isn't a pun in English.",
+     "start": 44.08,
+     "end": 50.96
+    },
+    {
+     "text": "Scholars who love the text say so. Robert Alter, who translated the Hebrew Bible himself, warns that modern versions too often explain where they should translate.",
+     "start": 51.64,
+     "end": 61.68
+    },
+    {
+     "text": "He's right that the temptation is real. Every reader should know that.",
+     "start": 62.38,
+     "end": 65.96
+    }
+   ]
+  },
+  {
+   "id": "why",
+   "kicker": "Why Bibles differ",
+   "level": 0.55,
+   "start": 66.06,
+   "end": 85.2,
+   "lines": [
+    {
+     "text": "So why do English Bibles read differently?",
+     "start": 66.96,
+     "end": 69.06
+    },
+    {
+     "text": "Because translators choose. Some keep close to the shape of the original, its word order and its pictures. Others aim for plain, natural speech today.",
+     "start": 69.74,
+     "end": 79.88
+    },
+    {
+     "text": "Most Bibles sit somewhere between, and neither end is simply right.",
+     "start": 80.54,
+     "end": 84.3
+    }
+   ]
+  },
+  {
+   "id": "example",
+   "kicker": "Where the choice matters",
+   "level": 0.65,
+   "start": 84.4,
+   "end": 116.8,
+   "lines": [
+    {
+     "text": "Here's a place where it matters. In Romans, Paul writes a short Greek phrase that can mean faith in Christ, or the faithfulness of Christ.",
+     "start": 85.3,
+     "end": 93.98
+    },
+    {
+     "text": "Bibles differ on it, and scholars are divided. Good Bibles put the other reading in a note.",
+     "start": 94.7,
+     "end": 99.64
+    },
+    {
+     "text": "But either way, the gospel of the chapter stands. Righteousness comes from God, through Christ, to all who believe.",
+     "start": 100.24,
+     "end": 108.02
+    },
+    {
+     "text": "That's the pattern. The choices are fewer than the objection suggests, they're argued in the open, and the notes tell you where.",
+     "start": 108.7,
+     "end": 115.9
+    }
+   ]
+  },
+  {
+   "id": "verses",
+   "kicker": "The missing verses",
+   "level": 0.7,
+   "start": 116.0,
+   "end": 159.4,
+   "lines": [
+    {
+     "text": "And what about verses that seem to be missing from newer Bibles?",
+     "start": 116.9,
+     "end": 119.88
+    },
+    {
+     "text": "The King James was translated from the printed Greek of its day, which rested on a small number of late copies.",
+     "start": 120.66,
+     "end": 126.84
+    },
+    {
+     "text": "Since then, thousands of manuscripts have been studied, many far older. In a few dozen places, they show words that copyists added over the centuries.",
+     "start": 127.36,
+     "end": 136.82
+    },
+    {
+     "text": "The differences run both ways. In Matthew, the oldest copies have Jesus say that not even the Son knows the day or the hour. The King James lacks those words. Modern Bibles put them back.",
+     "start": 137.48,
+     "end": 149.76
+    },
+    {
+     "text": "And the King James translators knew about variants too. In Luke, their own margin notes a verse missing from most Greek copies.",
+     "start": 150.54,
+     "end": 158.5
+    }
+   ]
+  },
+  {
+   "id": "mark",
+   "kicker": "Translation from the start",
+   "level": 0.8,
+   "start": 158.6,
+   "end": 179.8,
+   "lines": [
+    {
+     "text": "Here's something striking. The Gospels themselves are translations of a kind.",
+     "start": 159.5,
+     "end": 163.88
+    },
+    {
+     "text": "Jesus spoke Aramaic, and Mark keeps some of His words.",
+     "start": 164.54,
+     "end": 167.82
+    },
+    {
+     "text": "Taking her by the hand, Jesus said, \u201cTalitha koum!\u201d which means, \u201cLittle girl, I say to you, get up!\u201d",
+     "start": 168.02,
+     "end": 175.2
+    },
+    {
+     "text": "Mark doesn't hide the translation. He shows it to you.",
+     "start": 175.98,
+     "end": 178.9
+    }
+   ]
+  },
+  {
+   "id": "languages",
+   "kicker": "Every language",
+   "level": 0.85,
+   "start": 179.0,
+   "end": 202.1,
+   "lines": [
+    {
+     "text": "The faith has always moved by translation. A scholar raised a Muslim in the Gambia, Lamin Sanneh, argued that translatability became the way Christianity spread through history.",
+     "start": 179.9,
+     "end": 190.54
+    },
+    {
+     "text": "Today some part of the Bible exists in more than four thousand languages.",
+     "start": 191.24,
+     "end": 194.98
+    },
+    {
+     "text": "At Pentecost, the crowd asked:",
+     "start": 195.54,
+     "end": 197.18
+    },
+    {
+     "text": "How is it then that each of us hears them in his own native language?",
+     "start": 197.7,
+     "end": 201.2
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 201.3,
+   "end": 215.028,
+   "lines": [
+    {
+     "text": "So read more than one translation. Read the notes. Learn a little Greek or Hebrew if you can.",
+     "start": 202.2,
+     "end": 207.76
+    },
+    {
+     "text": "The meaning isn't lost. You're reading through a window someone else cleaned, and you can check the glass.",
+     "start": 208.28,
+     "end": 214.128
+    }
+   ]
+  }
+ ]
+}

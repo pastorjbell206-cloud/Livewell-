@@ -1,0 +1,127 @@
+<!doctype html>
+<!-- "Lost in translation?" (apologetics film 4). The photocopy chain that fades; the real picture, every
+     English Bible drawn straight from the source; the sound a translation loses; the line between close and
+     plain; a Greek phrase that forks and joins again; the printed Greek of 1516 beside thousands of older
+     copies, and the words that run both ways; Talitha koum; a field of languages; a window wiped clean.
+     Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Lost in translation?</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5";
+  const CH = Object.fromEntries(TL.chapters.map((c) => [c.id, c]));
+  const CS = (id) => CH[id].start;
+  const Ls = (id) => CH[id].lines.map((_, k) => S(id, k));
+  const T = (p, cls, x, y, s, size, anchor, fill) => { const e = txt(p, cls, x, y, s, size, fill ? { fill } : undefined); if (anchor) e.setAttribute("style", (e.getAttribute("style") || "") + `text-anchor:${anchor};`); return e; };
+  const G = (p) => el("g", {}, p || world);
+  const R = rng(77);
+  const vis = (t, a, b) => span(t, a, b, 0.6, 0.7);
+  const page = (p, w, h, rows, seed, fill = PAPER) => { const g = G(p), r = rng(seed); el("rect", { x: -w / 2, y: -h / 2, width: w, height: h, rx: 3, fill, stroke: INK, "stroke-width": 2 }, g); const bars = [];
+    for (let i = 0; i < rows; i++) { const y = -h / 2 + h * 0.16 + i * (h * 0.68 / Math.max(1, rows - 1)); let x = -w / 2 + w * 0.12; const end = w / 2 - w * 0.12; while (x < end - 4) { const bw = Math.min(end - x, 4 + r() * w * 0.2); bars.push(el("rect", { x, y: y - 2, width: bw, height: 4, rx: 2, fill: INK }, g)); bars.at(-1)._x = x; bars.at(-1)._y = y; x += bw + 4; } }
+    g._bars = bars; return g; };
+  const t0 = Ls("objection"), t1 = Ls("chain"), t2 = Ls("lost"), t3 = Ls("why"), t4 = Ls("example"), t5 = Ls("verses"), t6 = Ls("mark"), t7 = Ls("languages"), t8 = Ls("close"), END = F.VOICE_END;
+
+  // 1. the photocopy chain
+  const g1 = G(), langs = ["HEBREW", "GREEK", "LATIN", "ENGLISH"], cp = langs.map((n, i) => { const p = page(g1, 150, 196, 8, 11); p._lab = T(g1, "lab", 0, 0, n, 13); return p; });
+  const cpArr = [0, 1, 2].map((i) => line(g1, `M${290 + i * 240 + 85} 320 H${290 + (i + 1) * 240 - 85}`, { stroke: STONE, "stroke-width": 2.2 })), cpQ = T(g1, "disp", 1010, 340, "?", 90, null, MUSTARD);
+  const draw1 = (t) => { const v = vis(t, 0.3, CS("chain") + 0.4); op(g1, v); if (v <= 0) return;
+    cp.forEach((p, i) => { const k = up(t, t0[0] + 0.6 + i * 1.4, 0.7), blur = i / 3; move(p, 290 + i * 240, 320 + 2 * Math.sin(t + i)); op(p, k * (1 - 0.55 * blur));
+      p._bars.forEach((b, j) => b.setAttribute("transform", `translate(${((rng(j * 7 + i)() - 0.5) * 12 * blur).toFixed(1)} ${((rng(j * 3 + i)() - 0.5) * 8 * blur).toFixed(1)})`)); move(p._lab, 290 + i * 240, 450); op(p._lab, k); });
+    cpArr.forEach((a, i) => draw(a, up(t, t0[0] + 1.3 + i * 1.4, 0.6))); op(cpQ, up(t, t0[1] + 0.2, 0.6)); };
+
+  // 2. every English Bible straight from the source
+  const g2 = G(), src = G(g2); el("rect", { x: -120, y: -120, width: 240, height: 240, rx: 8, fill: WARM, stroke: INK, "stroke-width": 2.5 }, src); ["HEBREW", "ARAMAIC", "GREEK"].forEach((s, i) => T(src, "lab", 0, -30 + i * 30, s, 15, null, INK)); T(src, "lab", 0, 80, "THE SOURCE", 12); move(src, 300, 330);
+  const eng = [["TYNDALE · 1526", 180], ["KING JAMES · 1611", 330], ["MODERN BIBLES", 480]].map(([s, y]) => { const g = G(g2); const p = page(g, 90, 110, 5, y); T(g, "lab", 70, 5, s, 13, "start"); move(g, 880, y); return g; });
+  const rays = [180, 330, 480].map((y) => line(g2, `M420 330 C600 330 700 ${y} 830 ${y}`, { stroke: MUSTARD, "stroke-width": 2.5 }));
+  const noChain = [0, 1].map((i) => line(g2, `M880 ${180 + i * 150 + 58} V${180 + (i + 1) * 150 - 58}`, { stroke: STONE, "stroke-width": 2, "stroke-dasharray": "0.05 0.05" })), xs = [0, 1].map((i) => T(g2, "disp", 880, 180 + i * 150 + 84, "×", 32, null, STONE));
+  const againLab = T(g2, "lab", 640, 590, "EACH ONE STARTS AGAIN FROM THE SOURCE", 13);
+  const draw2 = (t) => { const v = vis(t, CS("chain") - 0.2, CS("lost") + 0.3); op(g2, v); if (v <= 0) return;
+    op(src, up(t, t1[0] + 0.4, 0.7)); eng.forEach((g, i) => op(g, up(t, [t1[1] + 0.8, t1[1] + 5.0, t1[2] + 0.4][i], 0.7))); rays.forEach((r, i) => draw(r, up(t, [t1[1] + 0.6, t1[1] + 4.8, t1[2] + 0.2][i], 1.0)));
+    noChain.forEach((n, i) => { draw(n, up(t, t1[3] + 2.4, 0.8)); op(xs[i], up(t, t1[3] + 3.0, 0.5)); }); op(againLab, up(t, t1[3] + 3.6, 0.6)); };
+
+  // 3. what is lost
+  const g3 = G(), wHeb = el("path", { fill: "none", stroke: MUSTARD, "stroke-width": 3, "stroke-linecap": "round" }, g3), wEng = el("path", { fill: "none", stroke: MUSTARD, "stroke-width": 3, "stroke-linecap": "round" }, g3);
+  const hLab = T(g3, "lab", 340, 400, "THE SOUND OF A HEBREW PSALM", 13), eLab = T(g3, "lab", 940, 400, "IN ENGLISH", 13), arr3 = line(g3, "M590 300 H690", { stroke: STONE, "stroke-width": 2.5 });
+  const pun = G(g3); [["WORD", 260], ["PLAY", 420]].forEach(([s, x]) => T(pun, "disp", x, 480, s.toLowerCase(), 34)); const punArc = line(pun, "M270 448 Q340 400 410 448", { stroke: MUSTARD, "stroke-width": 2.5 });
+  const pun2 = G(g3); [["word", 860], ["play", 1020]].forEach(([s, x]) => T(pun2, "disp", x, 480, s, 34)); const punArc2 = line(pun2, "M870 448 Q940 400 1010 448", { stroke: STONE, "stroke-width": 2, "stroke-dasharray": "0.04 0.05" });
+  const alter = G(g3), aPage = page(alter, 200, 240, 8, 5); const extras = aPage._bars.filter((_, i) => i % 9 === 4).map((b) => el("rect", { x: b._x + 30, y: b._y - 2, width: 0, height: 4, rx: 2, fill: MUSTARD }, aPage));
+  const aLab = T(g3, "lab", 640, 500, "ROBERT ALTER · TOO MUCH EXPLAINING", 13);
+  const draw3 = (t) => { const v = vis(t, CS("lost") - 0.2, CS("why") + 0.3); op(g3, v); if (v <= 0) return;
+    const s1 = 1 - up(t, t2[1] - 0.3, 0.6);
+    let a = "", b = ""; for (let x = 0; x <= 360; x += 6) { const ph = x / 22 - t * 2.2; a += `${x ? "L" : "M"}${160 + x} ${(300 + Math.sin(ph) * 40 * Math.sin(x / 360 * Math.PI) + Math.sin(ph * 2.3) * 14).toFixed(1)}`; b += `${x ? "L" : "M"}${760 + x} ${(300 + Math.sin(ph) * 16 * Math.sin(x / 360 * Math.PI)).toFixed(1)}`; }
+    wHeb.setAttribute("d", a); wEng.setAttribute("d", b); op(wHeb, up(t, t2[0] + 0.4, 0.6) * s1); op(wEng, up(t, t2[0] + 1.4, 0.6) * s1); op(hLab, up(t, t2[0] + 0.8, 0.6) * s1); op(eLab, up(t, t2[0] + 1.6, 0.6) * s1); draw(arr3, up(t, t2[0] + 1.0, 0.6)); op(arr3, s1);
+    op(pun, up(t, t2[0] + 4.0, 0.6) * s1); draw(punArc, up(t, t2[0] + 4.2, 0.7)); op(pun2, up(t, t2[0] + 4.8, 0.6) * s1); draw(punArc2, up(t, t2[0] + 5.0, 0.7));
+    const av = up(t, t2[1] - 0.2, 0.7); move(alter, 640, 300); op(alter, av); extras.forEach((e, i) => set(e, { width: (40 * up(t, t2[1] + 3.0 + i * 0.3, 0.8)).toFixed(1) })); op(aLab, up(t, t2[1] + 1.4, 0.6)); };
+
+  // 4. the line between close and plain
+  const g4 = G(), sp = line(g4, "M200 330 H1080", { "stroke-width": 3 }), spL = T(g4, "lab", 200, 380, "CLOSE TO THE ORIGINAL'S SHAPE", 13, "start"), spR = T(g4, "lab", 1080, 380, "PLAIN SPEECH TODAY", 13, "end");
+  const ends = [200, 1080].map((x) => el("circle", { cx: x, cy: 330, r: 9, fill: INK }, g4)), knob = el("circle", { r: 14, fill: MUSTARD }, g4);
+  const bibles4 = [...Array(9)].map((_, i) => ({ x: 290 + i * 88 + (R() - 0.5) * 30, e: G(g4) })); bibles4.forEach((b) => { el("rect", { x: -14, y: -20, width: 28, height: 40, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 1.8 }, b.e); el("rect", { x: -14, y: -20, width: 5, height: 40, fill: INK }, b.e); });
+  const midLab = T(g4, "lab", 640, 470, "MOST BIBLES SIT SOMEWHERE BETWEEN", 13);
+  const draw4 = (t) => { const v = vis(t, CS("why") - 0.2, CS("example") + 0.3); op(g4, v); if (v <= 0) return;
+    draw(sp, up(t, t3[0] + 0.2, 1.0)); ends.forEach((e, i) => op(e, up(t, t3[1] + 0.8 + i * 3.0, 0.4))); op(spL, up(t, t3[1] + 1.0, 0.6)); op(spR, up(t, t3[1] + 4.0, 0.6));
+    const kx = mix(200, 1080, 0.5 + 0.5 * Math.sin((t - t3[1]) * 0.9)); set(knob, { cx: kx.toFixed(1), cy: 330 }); op(knob, span(t, t3[1] + 0.6, t3[2] + 0.2, 0.5));
+    bibles4.forEach((b, i) => { move(b.e, b.x, 270 + 3 * Math.sin(t + i)); op(b.e, up(t, t3[2] + 0.2 + i * 0.12, 0.4)); }); op(midLab, up(t, t3[2] + 1.0, 0.6)); };
+
+  // 5. pistis Christou: a fork that joins again
+  const g5 = G(), gk = T(g5, "ital", 300, 330, "pistis Christou", 54), gkLab = T(g5, "lab", 300, 380, "ROMANS 3:22 · THE GREEK", 12);
+  const forkA = line(g5, "M480 320 C600 320 620 220 760 220", { stroke: INK, "stroke-width": 2.5 }), forkB = line(g5, "M480 320 C600 320 620 420 760 420", { stroke: INK, "stroke-width": 2.5 });
+  const fA = T(g5, "lab", 780, 226, "FAITH IN CHRIST", 14, "start", INK), fB = T(g5, "lab", 780, 426, "THE FAITHFULNESS OF CHRIST", 14, "start", INK), note = T(g5, "lab", 780, 452, "* IN THE NOTES", 11, "start", MUSTARD);
+  const joinA = line(g5, "M940 240 C1000 260 1000 300 1040 320", { stroke: MUSTARD, "stroke-width": 2.5 }), joinB = line(g5, "M1000 400 C1010 370 1020 340 1040 320", { stroke: MUSTARD, "stroke-width": 2.5 });
+  const gospel = T(g5, "disp", 640, 540, "righteousness from God, through Christ, to all who believe", 30);
+  const flags = [...Array(5)].map((_, i) => { const g = G(g5); el("line", { x1: 0, y1: 0, x2: 0, y2: -30, stroke: INK, "stroke-width": 2 }, g); el("path", { d: "M0 -30 L18 -24 L0 -18 Z", fill: MUSTARD }, g); move(g, 220 + i * 210, 150); return g; }), flagLab = T(g5, "lab", 640, 110, "THE PLACES TRANSLATORS DECIDE ARE MARKED", 12);
+  const draw5 = (t) => { const v = vis(t, CS("example") - 0.2, CS("verses") + 0.3); op(g5, v); if (v <= 0) return;
+    op(gk, up(t, t4[0] + 2.0, 0.8)); op(gkLab, up(t, t4[0] + 2.6, 0.6)); draw(forkA, up(t, t4[0] + 4.4, 0.8)); draw(forkB, up(t, t4[0] + 5.6, 0.8)); op(fA, up(t, t4[0] + 4.8, 0.5)); op(fB, up(t, t4[0] + 6.0, 0.5));
+    op(note, up(t, t4[1] + 2.2, 0.6)); draw(joinA, up(t, t4[2] + 0.4, 1.0)); draw(joinB, up(t, t4[2] + 0.6, 1.0)); op(gospel, up(t, t4[2] + 2.0, 0.8));
+    flags.forEach((f, i) => op(f, up(t, t4[3] + 1.0 + i * 0.3, 0.5))); op(flagLab, up(t, t4[3] + 2.0, 0.6)); };
+
+  // 6. 1516 and the older copies; both ways; the margin
+  const g6 = G(), YX6 = (y) => 160 + (y - 100) * (960 / 1550), TY6 = 470;
+  const ax6 = line(g6, `M${YX6(100)} ${TY6} H${YX6(1650)}`, { "stroke-width": 3 }); const tk6 = [200, 500, 1000, 1516, 1611].map((y) => { const g = G(g6); el("line", { x1: YX6(y), x2: YX6(y), y1: TY6 - 6, y2: TY6 + 6, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", YX6(y) + (y === 1516 ? -18 : y === 1611 ? 18 : 0), TY6 + 30, String(y), 12); return g; });
+  const late = [...Array(6)].map((_, i) => { const p = page(g6, 22, 30, 3, 300 + i); move(p, YX6(1150 + i * 50), TY6 - 26); return p; }), lateLab = T(g6, "lab", YX6(1270), TY6 + 54, "A FEW LATE COPIES", 11);
+  const press = G(g6); el("rect", { x: -22, y: -40, width: 44, height: 40, fill: WARM, stroke: INK, "stroke-width": 2 }, press); move(press, YX6(1516), TY6 - 4); const pLab = T(g6, "lab", YX6(1516) - 28, TY6 - 56, "PRINTED GREEK · 1516", 11, "end");
+  const kjv = G(g6); el("rect", { x: -18, y: -50, width: 36, height: 50, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 2 }, kjv); el("rect", { x: -18, y: -50, width: 7, height: 50, fill: INK }, kjv); move(kjv, YX6(1611), TY6 - 4); const kLab = T(g6, "lab", YX6(1611) + 24, TY6 - 30, "KING JAMES", 11, "start");
+  const many = [...Array(140)].map(() => { const y = 150 + Math.pow(R(), 1.6) * 1300, e = el("rect", { width: 8, height: 11, rx: 1, fill: R() < 0.25 ? MUSTARD : INK, opacity: 0.85 }, g6); return { x: YX6(y), y: 150 + R() * 230, e, a: R() }; }), manyLab = T(g6, "lab", 500, 130, "THOUSANDS OF MANUSCRIPTS, MANY FAR OLDER", 13);
+  const g6b = G(), strA = G(g6b), strB = G(g6b);
+  const mk = (g, has) => { el("rect", { x: -280, y: -30, width: 560, height: 60, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); let x = -250; [40, 30, 50, 34].forEach((w, i) => { if (i === 2) { if (has) el("rect", { x, y: -6, width: 90, height: 12, rx: 6, fill: MUSTARD }, g); else el("rect", { x, y: -13, width: 90, height: 26, rx: 6, fill: "none", stroke: STONE, "stroke-width": 2, "stroke-dasharray": "5 5" }, g); x += 102; } el("rect", { x, y: -6, width: w, height: 12, rx: 6, fill: INK }, g); x += w + 12; }); };
+  mk(strA, true); mk(strB, false); const sA = T(g6b, "lab", 640, 172, "MATTHEW 24:36 · THE OLDEST COPIES: “NOR THE SON”", 12), sB = T(g6b, "lab", 640, 312, "THE KING JAMES", 12), back = line(g6b, "M940 340 C1020 300 1020 240 940 210", { stroke: MUSTARD, "stroke-width": 2.5 }), backLab = T(g6b, "lab", 1040, 276, "PUT BACK", 12, "start", MUSTARD);
+  const margin = G(g6b), mPage = page(margin, 300, 200, 8, 909); el("line", { x1: 100, y1: -90, x2: 100, y2: 90, stroke: LINE, "stroke-width": 1.5 }, margin); const mNote = [0, 1, 2].map((i) => el("rect", { x: 108, y: -20 + i * 10, width: 30 - i * 6, height: 4, rx: 2, fill: MUSTARD }, margin)); const mLab = T(g6b, "lab", 640, 560, "LUKE 17:36 · THE 1611 MARGIN NOTES A VERSE MISSING FROM MOST GREEK COPIES", 11);
+  const draw6 = (t) => { const v = vis(t, CS("verses") - 0.2, t5[3] + 0.3); op(g6, v);
+    if (v > 0) { draw(ax6, up(t, t5[0] + 0.4, 1.2)); tk6.forEach((g, i) => op(g, up(t, t5[0] + 0.8 + i * 0.2, 0.5))); late.forEach((p, i) => op(p, up(t, t5[1] + 2.0 + i * 0.2, 0.4))); op(lateLab, up(t, t5[1] + 3.0, 0.6));
+      op(press, up(t, t5[1] + 1.2, 0.6)); op(pLab, up(t, t5[1] + 1.4, 0.6)); op(kjv, up(t, t5[1] + 0.3, 0.6)); op(kLab, up(t, t5[1] + 0.5, 0.6));
+      many.forEach((m, i) => { const k = up(t, t5[2] + 0.4 + m.a * 3.0, 0.5); set(m.e, { x: m.x.toFixed(1), y: (m.y - 10 * (1 - k)).toFixed(1) }); op(m.e, k * 0.85); }); op(manyLab, up(t, t5[2] + 1.0, 0.6)); }
+    const v2 = vis(t, t5[3] - 0.3, CS("mark") + 0.3); op(g6b, v2);
+    if (v2 > 0) { const s1 = 1 - up(t, t5[4] - 0.3, 0.6); move(strA, 640, 220); move(strB, 640, 360); op(strA, up(t, t5[3] + 0.6, 0.6) * s1); op(strB, up(t, t5[3] + 4.6, 0.6) * s1); op(sA, up(t, t5[3] + 0.8, 0.6) * s1); op(sB, up(t, t5[3] + 4.8, 0.6) * s1);
+      draw(back, up(t, t5[3] + 7.0, 0.9)); op(back, s1); op(backLab, up(t, t5[3] + 7.6, 0.5) * s1);
+      move(margin, 640, 360); op(margin, up(t, t5[4] - 0.1, 0.7)); mNote.forEach((n, i) => op(n, up(t, t5[4] + 3.0 + i * 0.3, 0.4))); op(mLab, up(t, t5[4] + 3.6, 0.6)); } };
+
+  // 7. Talitha koum
+  const g7 = G(), ar = T(g7, "ital", 640, 220, "Talitha koum", 64), arLab = T(g7, "lab", 640, 266, "THE ARAMAIC MARK KEPT", 12), ar2 = line(g7, "M640 290 V340", { stroke: MUSTARD, "stroke-width": 2.5 });
+  const v7 = [T(g7, "disp", 640, 390, "Taking her by the hand, Jesus said, “Talitha koum!”", 34), T(g7, "disp", 640, 434, "which means, “Little girl, I say to you, get up!”", 34)], v7r = T(g7, "lab", 640, 476, "MARK 5:41 · BEREAN STANDARD BIBLE", 12);
+  const draw7 = (t) => { const v = vis(t, CS("mark") - 0.2, CS("languages") + 0.3); op(g7, v); if (v <= 0) return;
+    op(ar, up(t, t6[1] + 0.6, 0.8)); op(arLab, up(t, t6[1] + 1.4, 0.6)); draw(ar2, up(t, t6[2] - 0.2, 0.6)); v7.forEach((l, i) => op(l, up(t, t6[2] + i * 2.6, 0.8))); op(v7r, up(t, t6[2] + 3.6, 0.6)); };
+
+  // 8. a field of languages
+  const g8 = G(), field = [...Array(420)].map(() => { const a = R() * Math.PI * 2, r = Math.sqrt(R()); return { x: 640 + Math.cos(a) * r * 470, y: 300 + Math.sin(a) * r * 170, d: R(), e: el("circle", { r: 2.6, fill: R() < 0.12 ? MUSTARD : INK }, g8) }; });
+  const sann = T(g8, "lab", 640, 108, "LAMIN SANNEH · TRANSLATABILITY", 12), langLab = T(g8, "disp", 640, 520, "more than 4,000 languages", 40);
+  const v8 = T(g8, "disp", 640, 300, "How is it then that each of us hears them in his own native language?", 30), v8r = T(g8, "lab", 640, 340, "ACTS 2:8 · BEREAN STANDARD BIBLE", 12), v8bg = el("rect", { x: 140, y: 262, width: 1000, height: 96, rx: 8, fill: BONE }, g8); g8.insertBefore(v8bg, v8);
+  const draw8 = (t) => { const v = vis(t, CS("languages") - 0.2, CS("close") + 0.3); op(g8, v); if (v <= 0) return;
+    field.forEach((f, i) => { set(f.e, { cx: (f.x + 3 * Math.sin(t * 0.6 + i)).toFixed(1), cy: f.y.toFixed(1) }); op(f.e, up(t, t7[0] + 1.0 + f.d * (t7[1] + 2 - t7[0]), 0.4)); });
+    op(sann, up(t, t7[0] + 1.6, 0.6)); op(langLab, up(t, t7[1] + 0.6, 0.8)); const vv = up(t, t7[3] - 0.3, 0.6); op(v8bg, vv * 0.94); op(v8, vv); op(v8r, up(t, t7[3] + 1.6, 0.6)); };
+
+  // 9. the window
+  const g9 = G(), win = G(g9); el("rect", { x: -200, y: -150, width: 400, height: 300, rx: 4, fill: "none", stroke: INK, "stroke-width": 5 }, win); el("line", { x1: 0, y1: -150, x2: 0, y2: 150, stroke: INK, "stroke-width": 4 }, win); el("line", { x1: -200, y1: 0, x2: 200, y2: 0, stroke: INK, "stroke-width": 4 }, win); move(win, 640, 320);
+  const behind = page(g9, 260, 200, 7, 2024); move(behind, 640, 320);
+  const haze = el("rect", { x: 440, y: 170, width: 400, height: 300, fill: MUTED, opacity: 0.85 }, g9), wipe = el("rect", { x: 440, y: 170, width: 400, height: 300, fill: BONE }, g9);
+  const cloth = el("rect", { width: 40, height: 60, rx: 8, fill: MUSTARD }, g9);
+  const draw9 = (t) => { const v = span(t, CS("close") - 0.2, END + 2.5, 0.6, 0.9); op(g9, v); if (v <= 0) return;
+    const w = up(t, t8[1] + 0.4, 3.0); set(haze, { x: (440 + 400 * w).toFixed(1), width: (400 * (1 - w)).toFixed(1) }); op(wipe, 0); op(haze, 0.8 * up(t, CS("close"), 0.6));
+    set(cloth, { x: (420 + 400 * w).toFixed(1), y: (220 + 160 * Math.abs(Math.sin(w * Math.PI * 4))).toFixed(1) }); op(cloth, span(t, t8[1] + 0.3, t8[1] + 3.6, 0.3)); };
+
+  F.title("Lost in translation?");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.9);
+  return (t) => { draw1(t); draw2(t); draw3(t); draw4(t); draw5(t); draw6(t); draw7(t); draw8(t); draw9(t); };
+});
+</script>
+</body></html>
