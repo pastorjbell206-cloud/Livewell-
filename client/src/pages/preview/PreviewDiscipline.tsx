@@ -92,7 +92,7 @@ export default function PreviewDiscipline() {
   const insideCount = groups.reduce((n, g) => n + g.inside.length, 0);
   const essays = (DISCIPLINE_ESSAYS[d.id] ?? [])
     .filter((slug) => isPublicEssay(slug))
-    .map((slug) => ({ slug, title: overrideMeta(slug)?.title ?? shelfEntry(slug)?.title ?? slug, excerpt: overrideMeta(slug)?.excerpt ?? "" }));
+    .map((slug) => ({ slug, title: overrideMeta(slug)?.title ?? shelfEntry(slug)?.title ?? slug, excerpt: overrideMeta(slug)?.excerpt || shelfEntry(slug)?.blurb || "" }));
   const prev = DISCIPLINES[(at - 1 + DISCIPLINES.length) % DISCIPLINES.length];
   const next = DISCIPLINES[(at + 1) % DISCIPLINES.length];
   const parts: [string, string][] = [

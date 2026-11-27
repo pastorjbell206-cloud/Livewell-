@@ -335,3 +335,46 @@
   .pv-dcard:hover,.pv-dcard:focus-visible{transform:none;box-shadow:none}
   .pv-dturn__link{padding:var(--s-4) var(--gutter)}
 }
+
+/* A cleaner finish for the discipline pages: space, soft cards, quiet icons, no hard rules. */
+.pv-dhead{padding:var(--s-7) var(--gutter) var(--s-6)}
+.pv-dhead__title{font-size:clamp(2.75rem,1.6rem + 4.6vw,5rem);margin:16px 0 var(--s-2)}
+.pv-dhead__line{color:var(--ink-muted);margin-bottom:var(--s-4)}
+.pv-dhead__art .lw-frame{box-shadow:0 24px 48px -32px var(--art-ink)}
+.pv-dhead__parts{gap:8px;margin-top:var(--s-4)}
+.pv-dhead__parts a{min-height:40px;padding:0 16px;border:1px solid var(--border);border-radius:var(--radius-pill);background:var(--card);text-decoration:none;font-size:14px;color:var(--ink)}
+.pv-dhead__parts a:hover{border-color:var(--ink-muted)}
+.home-sec.pv-dsec{padding-top:var(--s-7);padding-bottom:var(--s-7)}
+.pv-dsec__title{font-size:var(--fs-h2);margin:0 0 var(--s-4)}
+.pv-dcards{gap:var(--s-3)}
+.pv-dcard{grid-template-columns:56px minmax(0,1fr) auto;gap:6px 20px;padding:28px;border:1px solid var(--border);border-radius:6px;box-shadow:none}
+.pv-dcard:hover,.pv-dcard:focus-visible{transform:translateY(-2px);box-shadow:0 18px 40px -28px var(--art-ink);border-color:var(--borderdk)}
+.pv-dcard .pv-tool__icon{width:56px;height:56px;border:0;border-radius:50%;background:var(--bone-warm);color:var(--ink)}
+.pv-dcard:hover .pv-tool__icon{background:var(--bone-warm);color:var(--ink)}
+.pv-dcard__line{color:var(--ink-muted)}
+.pv-dcard__go{margin-top:10px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-underline-offset:.25em}
+.pv-dgroups{gap:var(--s-5)}
+.pv-dgroups .pv-dgroup__room{border-bottom:0;padding-bottom:0;margin-bottom:var(--s-2)}
+.pv-dgroup__list,.pv-dgroup--wide .pv-dgroup__list{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.pv-dgroup--wide .pv-dgroup__list{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.pv-dgroup__link{height:100%;padding:16px 18px;border:1px solid var(--border);border-radius:6px;background:var(--card);transition:border-color .2s var(--ease),transform .2s var(--ease)}
+.pv-dgroup__link:hover,.pv-dgroup__link:focus-visible{border-color:var(--borderdk);transform:translateY(-1px)}
+.pv-dgroup__name{font-size:20px}
+.pv-dessays{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-3);border-top:0;margin-top:0}
+.pv-dessay{padding:24px;border:1px solid var(--border);border-radius:6px;background:var(--card);transition:border-color .2s var(--ease),transform .2s var(--ease),box-shadow .2s var(--ease)}
+.pv-dessay:hover,.pv-dessay:focus-visible{transform:translateY(-2px);border-color:var(--borderdk);box-shadow:0 18px 40px -28px var(--art-ink)}
+.pv-dessay__title{font-size:23px;line-height:1.18}
+.pv-dessay__line{-webkit-line-clamp:3;margin-top:10px}
+.pv-bench__head{margin-bottom:var(--s-4)}
+@media (prefers-reduced-motion:reduce){.pv-dgroup__link,.pv-dessay{transition:none}}
+@media (max-width:1060px){
+  .pv-dessays,.pv-dgroup--wide .pv-dgroup__list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .pv-dhead{padding:var(--s-4) var(--gutter) var(--s-5)}
+  .home-sec.pv-dsec{padding-top:var(--s-6);padding-bottom:var(--s-6)}
+  .pv-dcard{padding:20px;grid-template-columns:48px minmax(0,1fr) auto}
+  .pv-dcard .pv-tool__icon{width:48px;height:48px}
+  .pv-dessays,.pv-dgroup--wide .pv-dgroup__list{grid-template-columns:minmax(0,1fr)}
+  .pv-dcard:hover,.pv-dessay:hover,.pv-dgroup__link:hover{transform:none}
+}
