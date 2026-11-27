@@ -283,7 +283,7 @@ export const DOORS: Door[] = [
         ],
       },
       { id: "tools.checks", name: "Check yourself", line: "Short, honest self-checks. None of them grades you.", href: "/tools#check-yourself", icon: "ClipboardCheck", count: { n: 7, of: "tools" } },
-      { id: "tools.practise", name: "Pray and practise", line: "Prayer, rest, worry and the week you are in.", href: "/tools#pray-and-practise", icon: "HeartHandshake", count: { n: 7, of: "tools" } },
+      { id: "tools.practise", name: "Pray and practice", line: "Prayer, rest, worry and the week you are in.", href: "/tools#pray-and-practise", icon: "HeartHandshake", count: { n: 7, of: "tools" } },
       { id: "tools.plans", name: "Eight-week plans", line: "A plan for a hard season, one week at a time.", href: "/plans", icon: "Milestone", count: { n: 29, of: "plans" } },
       {
         id: "tools.groups", name: "Small group study guides", line: "Bible studies for a group, a class, or on your own.", href: "/studyguides", icon: "Users", count: { n: 68, of: "guides" },

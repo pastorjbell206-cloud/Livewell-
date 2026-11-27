@@ -18,7 +18,7 @@ describe("placeFor: the label over an inner page's title", () => {
 
   it("places every listed tool, by its group when the catalogue does not list it", () => {
     for (const t of TOOLS) expect(placeFor(t.href), t.href).toBeDefined();
-    expect(placeFor("/tools/prayer-generator")).toEqual({ door: { name: "Tools", href: "/tools" }, room: { name: "Pray and practise", href: "/tools#pray-and-practise" } });
+    expect(placeFor("/tools/prayer-generator")).toEqual({ door: { name: "Tools", href: "/tools" }, room: { name: "Pray and practice", href: "/tools#pray-and-practise" } });
     expect(placeFor("/tools/test-the-case")?.room?.name).toBe("Tools for hard questions");
     expect(placeFor("/tools/parenting-guide")).toEqual({ door: { name: "Family", href: "/family" } });
   });

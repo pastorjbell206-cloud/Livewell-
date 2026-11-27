@@ -298,7 +298,7 @@ export const TOOL_LIST: Tool[] = [
     href: "/tools/theology-quiz",
   },
 
-  /* ── Pray and practise ─────────────────────────────────────────── */
+  /* ── Pray and practice ─────────────────────────────────────────── */
   {
     id: "prayer-generator",
     name: "Prayers for When You Have No Words",
@@ -509,7 +509,7 @@ export const TOOL_GROUP_INFO: { id: ToolGroupId; name: string; line: string; ico
   { id: "study", name: "Study", line: "Read, search and understand the Bible.", icon: BookOpen },
   { id: "hard-questions", name: "Tools for hard questions", line: "Argue the case, compare the views, test how you read.", icon: Scale },
   { id: "check-yourself", name: "Check yourself", line: "Short, honest self-checks. None of them grades you.", icon: ListChecks },
-  { id: "pray-and-practise", name: "Pray and practise", line: "Prayer, rest, worry and the week you are in.", icon: Heart },
+  { id: "pray-and-practise", name: "Pray and practice", line: "Prayer, rest, worry and the week you are in.", icon: Heart },
 ];
 
 /** The family tools, listed on /family, and found by the find box on /tools. */
