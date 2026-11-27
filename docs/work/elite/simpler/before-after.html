@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A simpler LiveWell</title>
+<style>
+:root{--ink:#14110C;--muted:#5A5448;--cream:#F5F0E6;--warm:#EDE8DC;--black:#1A1A1A;--mustard:#D4A017;--card:#FFFFFF;--line:#C0B9A8}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--ink:#F5F0E6;--muted:#B9B1A2;--cream:#1A1A1A;--warm:#232220;--card:#2A2926;--line:#4A463F}}
+:root[data-theme="dark"]{--ink:#F5F0E6;--muted:#B9B1A2;--cream:#1A1A1A;--warm:#232220;--card:#2A2926;--line:#4A463F}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.6 Georgia,"Times New Roman",serif}
+.wrap{max-width:1280px;margin:0 auto;padding:0 16px}
+header{padding:48px 0 24px;border-bottom:1.5px solid var(--ink)}
+.eyebrow{font:600 12px/1.4 system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.eyebrow::before{content:"";display:inline-block;width:28px;height:1px;background:var(--mustard);vertical-align:middle;margin-right:10px}
+h1{font-weight:400;font-size:clamp(36px,6vw,60px);line-height:1.05;margin:0 0 14px}
+h2{font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1.1;margin:0 0 10px}
+h3{font:600 13px/1.4 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:24px 0 10px}
+p,li{max-width:72ch}
+.note{font:15px/1.6 system-ui,sans-serif;color:var(--muted)}
+nav.jump{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+nav.jump a{font:500 14px system-ui,sans-serif;color:var(--ink);border:1px solid var(--line);padding:10px 14px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+section.page{padding:48px 0;border-bottom:1px solid var(--line)}
+section.page:nth-of-type(even){background:var(--warm)}
+.nums{font:500 14px system-ui,sans-serif;color:var(--ink);margin:6px 0 14px}
+.nums b{color:var(--ink)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
+figure{margin:0}
+figcaption{font:600 12px system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+figcaption.after{color:var(--ink)}
+figcaption.after::before{content:"";display:inline-block;width:10px;height:10px;background:var(--mustard);margin-right:8px}
+.shot{display:block;width:100%;height:auto;border:1.5px solid var(--black);background:var(--card)}
+.phone .shot{max-width:390px}
+.phone{display:grid;grid-template-columns:repeat(2,minmax(0,390px));gap:16px}
+.scroll{max-height:900px;overflow:auto;border:1.5px solid var(--black)}
+.scroll .shot{border:0}
+ol.ten li{margin:0 0 8px}
+@media (max-width:760px){.pair{grid-template-columns:1fr}.phone{grid-template-columns:1fr 1fr;gap:8px}figcaption{font-size:10px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <p class="eyebrow">Preview, branch preview/simpler</p>
+  <h1>A simpler LiveWell</h1>
+  <p>Seven pages, before and after, at phone width (390) and desktop width (1440). Each picture is the first two screens of the page; where the change sits lower down, a third picture shows that part. The palette, type and drawings are the site's own and did not change; the structure, the density and some interface words did.</p>
+  <p class="note">Both sides were taken on 2026-11-27 from local builds served the way Vercel serves them (before: <code>origin/main</code>; after: this branch), with no database behind them. Two things look empty on both sides and are not broken on the real site: the film posters (stored on Vercel's file storage, which this session's network refuses) and the latest essays on Home (they come from the database). Phone pictures are at twice the pixel density; desktop at one.</p>
+  <nav class="jump" aria-label="Pages">
+   <a href="#home">Home</a><a href="#study">Bible door</a><a href="#john">John</a><a href="#topics">Questions</a><a href="#family">Family</a><a href="#tools">Tools</a><a href="#start">Start here</a><a href="#ten">The ten changes</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="page" id="home"><div class="wrap">
+ <h2>Home</h2>
+ <p class="nums">Phone: <b>11.1 → 7.9 screens</b>. Desktop: <b>9.3 → 6.4</b>.</p>
+ <p>The first screen keeps James's headline, his sentence, the search box and tonight's line, and now gives one way to begin, <b>Start here</b>, with "See everything on LiveWell" beside it, in place of seven chips. "Ten ways in" became four big cards: the Study Bible, Hard questions, Family, Church history. The question picker, the second tonight band and the history strip were taken off Home; they still live on their own doors. The page ends on "Not sure where to begin?" with Start here and Find Help.</p>
+ <h3>Phone</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-home-p.png" alt="Home before, phone"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-home-p.png" alt="Home after, phone"></figure>
+ </div>
+ <h3>Desktop</h3>
+ <div class="pair">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-home-d.png" alt="Home before, desktop"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-home-d.png" alt="Home after, desktop"></figure>
+ </div>
+</div></section>
+
+<section class="page" id="study"><div class="wrap">
+ <h2>The Bible door (/study)</h2>
+ <p class="nums">Phone: <b>7.9 → 5.3 screens</b>. Desktop: <b>6.7 → 5.0</b>.</p>
+ <p>The top and its one button, Open the Study Bible, are as they were, and the film stays right under it. Then four big cards ask "What would you like to do?": Read the Study Bible, Bible films, How to study the Bible, Reading plans. Then the shelf of 66 books. Every other room, every page inside the rooms and the "Further in" tiles sit in one closed row, "See everything in Bible". The page ends on "New to the Bible? Begin with John."</p>
+ <h3>Phone</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-study-p.png" alt="Bible door before, phone"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-study-p.png" alt="Bible door after, phone"></figure>
+ </div>
+ <h3>Desktop</h3>
+ <div class="pair">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-study-d.png" alt="Bible door before, desktop"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-study-d.png" alt="Bible door after, desktop"></figure>
+ </div>
+</div></section>
+
+<section class="page" id="john"><div class="wrap">
+ <h2>A Bible book (/study/bible/john)</h2>
+ <p class="nums">Phone: <b>49 → 14.3 screens</b>. Desktop: <b>27.7 → 9.1</b>. Every word is still on the page.</p>
+ <p>The top now has one main button, <b>Start at John 1</b>, and a quiet second, Pick a chapter. The chapters come straight after it, then the book's film, then the book at a glance. The guide to John ("John, taught from the start") is a numbered list of its parts; each part opens in place, and the first, "John in a minute", is open. The hard passages, key words, timeline and map are rows in the same list. A link to a part (the glance's "The whole note") opens its row. The page ends on "Read John with notes". All 66 books get this, since every book has a guide.</p>
+ <h3>Phone, the first two screens</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-study_bible_john-p.png" alt="John before, phone"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-study_bible_john-p.png" alt="John after, phone"></figure>
+ </div>
+ <h3>Phone, the guide to John (scroll inside each)</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><div class="scroll"><img class="shot" src="shots/before-study_bible_john-lower-p.png" alt="The guide to John before: each part printed in full"></div></figure>
+  <figure><figcaption class="after">After</figcaption><div class="scroll"><img class="shot" src="shots/after-study_bible_john-lower-p.png" alt="The guide to John after: each part a row that opens"></div></figure>
+ </div>
+ <h3>Desktop</h3>
+ <div class="pair">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-study_bible_john-d.png" alt="John before, desktop"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-study_bible_john-d.png" alt="John after, desktop"></figure>
+ </div>
+</div></section>
+
+<section class="page" id="topics"><div class="wrap">
+ <h2>Questions (/topics)</h2>
+ <p class="nums">Phone: <b>11.2 → 7.3 screens</b>. Desktop: <b>7.0 → 5.1</b>.</p>
+ <p>The ask box is the page's one job, so the button at the top ("All 35 Honest Answers") moved to the end of the page, where it is the next step. Each topic shows its first two questions with "All" behind them (it showed four). Three rooms lead as big cards (Honest Answers, The case for the faith, Everyday life), the Find Help line stays under them, and the other rooms and every page inside them are one closed row, "See everything in Questions".</p>
+ <h3>Phone</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-topics-p.png" alt="Questions before, phone"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-topics-p.png" alt="Questions after, phone"></figure>
+ </div>
+ <h3>Desktop</h3>
+ <div class="pair">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-topics-d.png" alt="Questions before, desktop"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-topics-d.png" alt="Questions after, desktop"></figure>
+ </div>
+</div></section>
+
+<section class="page" id="family"><div class="wrap">
+ <h2>Family (/family)</h2>
+ <p class="nums">Phone: <b>8.1 → 6.8 screens</b>. Desktop: <b>6.4 → 5.7</b>.</p>
+ <p>The top, tonight's card and the week at a glance are unchanged: they were already one clear job. Lower down, the rooms are four big cards, with Bible films beside the devotions, the catechism and the reading plans. The how-to groups, the teen years (now inside "If you have a teenager"), a table that looks different, parenting, marriage and the tools for the home are one list of closed rows, "More help for the home". The help line is word for word. The page ends on "A devotion a week, together."</p>
+ <h3>Phone, the first two screens (unchanged)</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-family-p.png" alt="Family before, phone"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-family-p.png" alt="Family after, phone"></figure>
+ </div>
+ <h3>Phone, from the rooms down (scroll inside each)</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><div class="scroll"><img class="shot" src="shots/before-family-lower-p.png" alt="Family rooms and how-to before"></div></figure>
+  <figure><figcaption class="after">After</figcaption><div class="scroll"><img class="shot" src="shots/after-family-lower-p.png" alt="Family rooms and how-to after"></div></figure>
+ </div>
+ <h3>Desktop</h3>
+ <div class="pair">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-family-d.png" alt="Family before, desktop"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-family-d.png" alt="Family after, desktop"></figure>
+ </div>
+</div></section>
+
+<section class="page" id="tools"><div class="wrap">
+ <h2>Tools (/tools)</h2>
+ <p class="nums">Phone: <b>10.8 → 5.6 screens</b>. Desktop: <b>7.5 → 5.2</b>.</p>
+ <p>The find box stays first. Under it, "Not sure which one?" shows four good places to start, one tool from each group, as big cards: the Wisdom Finder, Test the Case, Where Are You With God?, and Prayers for When You Have No Words. Then the four groups, each one closed row with its line and its count; a link to /tools#study opens its row. Typing in the find box opens every group that has a match, as before. The page ends on "Not finding it?" with Search LiveWell and Find Help.</p>
+ <h3>Phone</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-tools-p.png" alt="Tools before, phone"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-tools-p.png" alt="Tools after, phone"></figure>
+ </div>
+ <h3>Phone, the list of tools (scroll inside each)</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><div class="scroll"><img class="shot" src="shots/before-tools-lower-p.png" alt="The tools before: every tile in full"></div></figure>
+  <figure><figcaption class="after">After</figcaption><div class="scroll"><img class="shot" src="shots/after-tools-lower-p.png" alt="The tools after: four rows that open"></div></figure>
+ </div>
+ <h3>Desktop</h3>
+ <div class="pair">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-tools-d.png" alt="Tools before, desktop"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-tools-d.png" alt="Tools after, desktop"></figure>
+ </div>
+</div></section>
+
+<section class="page" id="start"><div class="wrap">
+ <h2>Start here (/start)</h2>
+ <p class="nums">Phone: <b>2.7 → 3.2 screens</b> (one band longer). Desktop: <b>2.4 → 2.9</b>.</p>
+ <p>This page was already simple and stays as it was. The one change is at the foot: a next step for the reader who cannot pick a card, "Not sure which one is you?", with the three-question quiz (until now it was offered only inside the road for someone new, and it still is there).</p>
+ <h3>Phone, the foot of the page</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-start-lower-p.png" alt="Start foot before"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-start-lower-p.png" alt="Start foot after"></figure>
+ </div>
+ <h3>Phone, the first two screens</h3>
+ <div class="phone">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-start-p.png" alt="Start before, phone"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-start-p.png" alt="Start after, phone"></figure>
+ </div>
+ <h3>Desktop</h3>
+ <div class="pair">
+  <figure><figcaption>Before</figcaption><img class="shot" src="shots/before-start-d.png" alt="Start before, desktop"></figure>
+  <figure><figcaption class="after">After</figcaption><img class="shot" src="shots/after-start-d.png" alt="Start after, desktop"></figure>
+ </div>
+</div></section>
+
+<section class="page" id="ten"><div class="wrap">
+ <h2>The ten changes, ranked</h2>
+ <p class="note">The full diagnosis, page by page, is <a href="diagnosis.md">diagnosis.md</a> beside this file. Changes 1 to 9 are in this preview; 10 is left for James.</p>
+ <ol class="ten">
+  <li><b>Fold a Bible book's guide</b> into rows that open in place, the first open, with Start at chapter 1 and the chapters first.</li>
+  <li><b>One way to begin on Home:</b> Start here, beside the search box, in place of seven chips.</li>
+  <li><b>Four big cards, then "See everything"</b> on Home and each door's page; nothing leaves the site.</li>
+  <li><b>A next step at the end of every page:</b> one band, one button, at most a quiet second.</li>
+  <li><b>Video near the top</b> where a page has a film (the Bible door, a book with a film).</li>
+  <li><b>The ask box is the Questions door;</b> two questions per topic with All behind them.</li>
+  <li><b>A few good first tools,</b> then the four groups as rows that open.</li>
+  <li><b>One "more help" list on the Family door,</b> every link kept.</li>
+  <li><b>Shorten Home:</b> the picker, the second tonight band and the history strip live on their doors.</li>
+  <li><b>Quiet the chapter's top</b> before verse 1 (not built: the most visited page, his call).</li>
+ </ol>
+</div></section>
+</main>
+</body>
+</html>

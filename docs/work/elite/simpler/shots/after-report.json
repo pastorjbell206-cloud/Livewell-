@@ -1,0 +1,433 @@
+{
+ "p /": {
+  "H": 6632,
+  "screens": 7.9,
+  "actions": 105,
+  "firstScreenActions": 6,
+  "firstScreen": [
+   "post-Christian",
+   "",
+   "His Love Lasts Forever",
+   "see the readings",
+   "Start here",
+   "See everything on LiveWell"
+  ],
+  "heads": [
+   "H1: Learning to follow Jesus — and live well — in post-Christian America.",
+   "H2: Where to begin.",
+   "H2: The whole Bible on one shelf.",
+   "H2: From the desk.",
+   "H3: Latest writing",
+   "H2: Where he writes. How to reach him.",
+   "H2: Not sure where to begin?"
+  ],
+  "sideScroll": false
+ },
+ "p /study": {
+  "H": 4442,
+  "screens": 5.3,
+  "actions": 112,
+  "firstScreenActions": 2,
+  "firstScreen": [
+   "Open the Study Bible",
+   "Play the film"
+  ],
+  "heads": [
+   "H1: Study the Bible",
+   "H2: One story",
+   "H2: What would you like to do?",
+   "H2: Pick a book to open.",
+   "H3: Bible films",
+   "H3: Read the Study Bible",
+   "H3: How to study the Bible",
+   "H3: Reading plans",
+   "H3: Further in",
+   "H2: New to the Bible? Begin with John."
+  ],
+  "sideScroll": false
+ },
+ "p /study/bible/john": {
+  "H": 12083,
+  "screens": 14.3,
+  "actions": 107,
+  "firstScreenActions": 25,
+  "firstScreen": [
+   "The Study Bible",
+   "Act Nine, Christ, the Center",
+   "Start at John 1",
+   "Pick a chapter",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "15",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "21"
+  ],
+  "heads": [
+   "H1: John",
+   "H2: The 21 chapters",
+   "H2: Watch and learn",
+   "H2: Chapters to start with",
+   "H2: John, taught from the start",
+   "H3: John in a minute",
+   "H3: Who wrote it, and how we know",
+   "H3: When, where, and for whom",
+   "H3: Why John is so different",
+   "H3: How John is built",
+   "H3: The big themes",
+   "H3: The Old Testament and the feasts",
+   "H3: John's Greek, made simple",
+   "H3: ‘The Jews’ in John",
+   "H3: Two passages, and what the old copies show",
+   "H3: How the church has read John",
+   "H3: The hard passages",
+   "H3: Key words",
+   "H3: When it happened",
+   "H3: Where it happened",
+   "H2: Go deeper",
+   "H2: Going further",
+   "H3: What this book is",
+   "H3: Who wrote it",
+   "H3: When",
+   "H3: The world it was written in",
+   "H3: Why it was written",
+   "H3: Where it sits in the story",
+   "H3: What it shows of Christ",
+   "H3: How to read it well",
+   "H3: Themes to follow",
+   "H2: John on LiveWell",
+   "H2: Read John with notes"
+  ],
+  "sideScroll": false
+ },
+ "p /topics": {
+  "H": 6130,
+  "screens": 7.3,
+  "actions": 68,
+  "firstScreenActions": 3,
+  "firstScreen": [
+   "Did the resurrection happen?",
+   "Does God exist?",
+   "Why does God allow suffering?"
+  ],
+  "heads": [
+   "H1: Hard questions",
+   "H2: What do you want to know?",
+   "H2: What people ask.",
+   "H3: Is it true?",
+   "H3: God and suffering",
+   "H3: Jesus and other beliefs",
+   "H3: What Christians believe",
+   "H3: Church and doubt",
+   "H3: Faith in public",
+   "H3: Home and family",
+   "H3: Worry, money and work",
+   "H3: A hard season",
+   "H2: Go deeper.",
+   "H3: Honest Answers",
+   "H3: The case for the faith",
+   "H3: What Christians believe",
+   "H3: Where Christians differ",
+   "H3: Everyday life",
+   "H2: Read the Honest Answers"
+  ],
+  "sideScroll": false
+ },
+ "p /family": {
+  "H": 5766,
+  "screens": 6.8,
+  "actions": 55,
+  "firstScreenActions": 3,
+  "firstScreen": [
+   "Start tonight's devotion",
+   "Read it first",
+   "Remind me"
+  ],
+  "heads": [
+   "H1: Faith at the family table",
+   "H2: His Love Lasts Forever",
+   "H2: The week at a glance.",
+   "H2: Advent begins Sunday, November 29",
+   "H2: Everything for the table.",
+   "H2: More help for the home.",
+   "H2: If your table looks different",
+   "H3: On your own",
+   "H3: Between two homes",
+   "H3: Beside a spouse who does not believe",
+   "H2: A devotion a week, together."
+  ],
+  "sideScroll": false
+ },
+ "p /tools": {
+  "H": 4749,
+  "screens": 5.6,
+  "actions": 53,
+  "firstScreenActions": 1,
+  "firstScreen": [
+   "Find a tool"
+  ],
+  "heads": [
+   "H1: Tools and resources",
+   "H2: What do you want to do?",
+   "H2: Not sure which one?",
+   "H2: Every tool, by what it is for.",
+   "H2: Plans, group studies and downloads.",
+   "H3: Study",
+   "H3: Small group study guides",
+   "H3: Downloads",
+   "H2: Not finding it?"
+  ],
+  "sideScroll": false
+ },
+ "p /start": {
+  "H": 2686,
+  "screens": 3.2,
+  "actions": 9,
+  "firstScreenActions": 7,
+  "firstScreen": [
+   "I'm skepticalWeigh the case first",
+   "I have doubtsNothing to settle tonight",
+   "I'm new to thisSix first steps",
+   "I've stepped back from faithYour questions, taken ",
+   "I want to go deeperStudy, history, doctrine",
+   "I'm leading a familyStart at the table tonight",
+   "I'm a pastor or group leaderStudies with a leader'"
+  ],
+  "heads": [
+   "H1: Start where you are",
+   "H2: Where to start",
+   "H2: Not sure which one is you?"
+  ],
+  "sideScroll": false
+ },
+ "d /": {
+  "H": 5778,
+  "screens": 6.4,
+  "actions": 110,
+  "firstScreenActions": 6,
+  "firstScreen": [
+   "post-Christian",
+   "",
+   "His Love Lasts Forever",
+   "see the readings",
+   "Start here",
+   "See everything on LiveWell"
+  ],
+  "heads": [
+   "H1: Learning to follow Jesus — and live well — in post-Christian America.",
+   "H2: Where to begin.",
+   "H2: The whole Bible on one shelf.",
+   "H2: From the desk.",
+   "H3: Latest writing",
+   "H2: Where he writes. How to reach him.",
+   "H2: Not sure where to begin?"
+  ],
+  "sideScroll": false
+ },
+ "d /study": {
+  "H": 4520,
+  "screens": 5,
+  "actions": 112,
+  "firstScreenActions": 2,
+  "firstScreen": [
+   "Open the Study Bible",
+   "Play the film"
+  ],
+  "heads": [
+   "H1: Study the Bible",
+   "H2: One story",
+   "H2: What would you like to do?",
+   "H2: Pick a book to open.",
+   "H3: Bible films",
+   "H3: Read the Study Bible",
+   "H3: How to study the Bible",
+   "H3: Reading plans",
+   "H3: Further in",
+   "H2: New to the Bible? Begin with John."
+  ],
+  "sideScroll": false
+ },
+ "d /study/bible/john": {
+  "H": 8234,
+  "screens": 9.1,
+  "actions": 107,
+  "firstScreenActions": 25,
+  "firstScreen": [
+   "The Study Bible",
+   "Act Nine, Christ, the Center",
+   "Start at John 1",
+   "Pick a chapter",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8",
+   "9",
+   "10",
+   "11",
+   "12",
+   "13",
+   "14",
+   "15",
+   "16",
+   "17",
+   "18",
+   "19",
+   "20",
+   "21"
+  ],
+  "heads": [
+   "H1: John",
+   "H2: The 21 chapters",
+   "H2: Watch and learn",
+   "H2: Chapters to start with",
+   "H2: John, taught from the start",
+   "H3: John in a minute",
+   "H3: Who wrote it, and how we know",
+   "H3: When, where, and for whom",
+   "H3: Why John is so different",
+   "H3: How John is built",
+   "H3: The big themes",
+   "H3: The Old Testament and the feasts",
+   "H3: John's Greek, made simple",
+   "H3: ‘The Jews’ in John",
+   "H3: Two passages, and what the old copies show",
+   "H3: How the church has read John",
+   "H3: The hard passages",
+   "H3: Key words",
+   "H3: When it happened",
+   "H3: Where it happened",
+   "H2: Go deeper",
+   "H2: Going further",
+   "H3: What this book is",
+   "H3: Who wrote it",
+   "H3: When",
+   "H3: The world it was written in",
+   "H3: Why it was written",
+   "H3: Where it sits in the story",
+   "H3: What it shows of Christ",
+   "H3: How to read it well",
+   "H3: Themes to follow",
+   "H2: John on LiveWell",
+   "H2: Read John with notes"
+  ],
+  "sideScroll": false
+ },
+ "d /topics": {
+  "H": 4620,
+  "screens": 5.1,
+  "actions": 68,
+  "firstScreenActions": 3,
+  "firstScreen": [
+   "Did the resurrection happen?",
+   "Does God exist?",
+   "Why does God allow suffering?"
+  ],
+  "heads": [
+   "H1: Hard questions",
+   "H2: What do you want to know?",
+   "H2: What people ask.",
+   "H3: Is it true?",
+   "H3: God and suffering",
+   "H3: Jesus and other beliefs",
+   "H3: What Christians believe",
+   "H3: Church and doubt",
+   "H3: Faith in public",
+   "H3: Home and family",
+   "H3: Worry, money and work",
+   "H3: A hard season",
+   "H2: Go deeper.",
+   "H3: Honest Answers",
+   "H3: The case for the faith",
+   "H3: What Christians believe",
+   "H3: Where Christians differ",
+   "H3: Everyday life",
+   "H2: Read the Honest Answers"
+  ],
+  "sideScroll": false
+ },
+ "d /family": {
+  "H": 5130,
+  "screens": 5.7,
+  "actions": 55,
+  "firstScreenActions": 2,
+  "firstScreen": [
+   "Start tonight's devotion",
+   "Read it first"
+  ],
+  "heads": [
+   "H1: Faith at the family table",
+   "H2: His Love Lasts Forever",
+   "H2: The week at a glance.",
+   "H2: Advent begins Sunday, November 29",
+   "H2: Everything for the table.",
+   "H2: More help for the home.",
+   "H2: If your table looks different",
+   "H3: On your own",
+   "H3: Between two homes",
+   "H3: Beside a spouse who does not believe",
+   "H2: A devotion a week, together."
+  ],
+  "sideScroll": false
+ },
+ "d /tools": {
+  "H": 4686,
+  "screens": 5.2,
+  "actions": 53,
+  "firstScreenActions": 1,
+  "firstScreen": [
+   "Find a tool"
+  ],
+  "heads": [
+   "H1: Tools and resources",
+   "H2: What do you want to do?",
+   "H2: Not sure which one?",
+   "H2: Every tool, by what it is for.",
+   "H2: Plans, group studies and downloads.",
+   "H3: Study",
+   "H3: Small group study guides",
+   "H3: Downloads",
+   "H2: Not finding it?"
+  ],
+  "sideScroll": false
+ },
+ "d /start": {
+  "H": 2600,
+  "screens": 2.9,
+  "actions": 9,
+  "firstScreenActions": 7,
+  "firstScreen": [
+   "I'm skepticalWeigh the case first",
+   "I have doubtsNothing to settle tonight",
+   "I'm new to thisSix first steps",
+   "I've stepped back from faithYour questions, taken ",
+   "I want to go deeperStudy, history, doctrine",
+   "I'm leading a familyStart at the table tonight",
+   "I'm a pastor or group leaderStudies with a leader'"
+  ],
+  "heads": [
+   "H1: Start where you are",
+   "H2: Where to start",
+   "H2: Not sure which one is you?"
+  ],
+  "sideScroll": false
+ }
+}
