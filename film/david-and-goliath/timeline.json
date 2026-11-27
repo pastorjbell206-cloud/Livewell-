@@ -1,0 +1,240 @@
+{
+ "length": 249.16,
+ "chapters": [
+  {
+   "id": "valley",
+   "kicker": "Two hills, one valley",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 23.8,
+   "lines": [
+    {
+     "text": "The Valley of Elah runs from the hills of Judah toward the Philistine plain, a natural road for an army pushing inland.",
+     "start": 2.6,
+     "end": 9.42
+    },
+    {
+     "text": "The Philistines stood on one hill and the Israelites stood on another, with the valley between them.",
+     "start": 10.12,
+     "end": 15.1
+    },
+    {
+     "text": "Israel's king is Saul, chosen to fight its battles, a head taller than his men. For forty days he doesn't move.",
+     "start": 15.72,
+     "end": 22.9
+    }
+   ]
+  },
+  {
+   "id": "champion",
+   "kicker": "The man of the between",
+   "level": 0.35,
+   "start": 23.0,
+   "end": 50.62,
+   "lines": [
+    {
+     "text": "Morning and evening a champion comes out from Gath: Goliath. The Hebrew word for champion appears only in this chapter. It means the man of the between, who steps into the space between two armies.",
+     "start": 23.9,
+     "end": 36.64
+    },
+    {
+     "text": "Bronze helmet, armor of roughly 125 pounds, a spear shaft like a weaver's beam. One man for a whole people.",
+     "start": 37.2,
+     "end": 45.48
+    },
+    {
+     "text": "Saul and all the Israelites were dismayed and greatly afraid.",
+     "start": 46.0,
+     "end": 49.72
+    }
+   ]
+  },
+  {
+   "id": "height",
+   "kicker": "How tall was he?",
+   "level": 0.4,
+   "start": 49.82,
+   "end": 72.62,
+   "lines": [
+    {
+     "text": "How tall? The standard Hebrew text says six cubits and a span, about nine and a half feet. The Dead Sea Scrolls copy of Samuel and the Greek translation say four cubits and a span. Still a giant in his day.",
+     "start": 50.72,
+     "end": 64.32
+    },
+    {
+     "text": "The oldest Greek manuscripts also lack whole stretches of this chapter, which suggests it circulated in more than one form.",
+     "start": 64.96,
+     "end": 71.72
+    }
+   ]
+  },
+  {
+   "id": "errand",
+   "kicker": "A boy with bread",
+   "level": 0.45,
+   "start": 71.82,
+   "end": 102.8,
+   "lines": [
+    {
+     "text": "David, the youngest of Jesse's eight sons, brings grain and bread to his brothers. Goliath shouts, the soldiers run, and David asks,",
+     "start": 72.72,
+     "end": 81.78
+    },
+    {
+     "text": "Just who is this uncircumcised Philistine, that he should defy the armies of the living God?",
+     "start": 82.32,
+     "end": 87.8
+    },
+    {
+     "text": "What the soldiers hear as a threat to Israel, David hears as an insult to the living God.",
+     "start": 88.46,
+     "end": 93.58
+    },
+    {
+     "text": "Pause here and ask yourself: two groups hear the same words. Why does one hear only danger, and the other hear God's name?",
+     "start": 94.26,
+     "end": 101.9
+    }
+   ]
+  },
+  {
+   "id": "memory",
+   "kicker": "Lions, bears, and memory",
+   "level": 0.5,
+   "start": 102.0,
+   "end": 127.68,
+   "lines": [
+    {
+     "text": "Saul says, you're just a boy. David answers with memory.",
+     "start": 102.9,
+     "end": 107.12
+    },
+    {
+     "text": "The LORD, who delivered me from the claws of the lion and the bear, will deliver me from the hand of this Philistine.",
+     "start": 107.7,
+     "end": 114.04
+    },
+    {
+     "text": "Faith here is memory put to work in a new danger. The king's armor doesn't fit. David takes it off and chooses five smooth stones. A sling wasn't a toy. Armies had trained slingers.",
+     "start": 114.72,
+     "end": 126.78
+    }
+   ]
+  },
+  {
+   "id": "name",
+   "kicker": "In the name of the LORD",
+   "level": 0.65,
+   "start": 126.88,
+   "end": 145.38,
+   "lines": [
+    {
+     "text": "The center of the chapter is a speech, not a stone. Goliath curses David by his gods. David comes in the name of the LORD of Hosts, so the whole world will know there is a God in Israel.",
+     "start": 127.78,
+     "end": 139.06
+    },
+    {
+     "text": "It is not by sword or spear that the LORD saves; for the battle is the LORD\u2019s.",
+     "start": 139.62,
+     "end": 144.48
+    }
+   ]
+  },
+  {
+   "id": "stone",
+   "kicker": "One stone",
+   "level": 0.75,
+   "start": 144.58,
+   "end": 164.5,
+   "lines": [
+    {
+     "text": "David runs toward the battle line. One stone, and the champion falls facedown.",
+     "start": 145.48,
+     "end": 150.34
+    },
+    {
+     "text": "Thus David prevailed over the Philistine with a sling and a stone, without a sword in his hand.",
+     "start": 150.94,
+     "end": 156.04
+    },
+    {
+     "text": "Israel, frozen for forty days, charges. From here David's fame grows, and so does Saul's jealousy.",
+     "start": 156.6,
+     "end": 163.6
+    }
+   ]
+  },
+  {
+   "id": "question",
+   "kicker": "Whose son is this?",
+   "level": 0.45,
+   "start": 163.7,
+   "end": 188.02,
+   "lines": [
+    {
+     "text": "One old puzzle: in chapter 16 David already serves Saul as his harpist. Yet now Saul asks whose son he is.",
+     "start": 164.6,
+     "end": 171.62
+    },
+    {
+     "text": "Some say Saul, tormented, didn't recognize him. Others note a royal marriage was promised to the winner's family, so he's asking about the father. Many scholars think two accounts sit side by side. The text doesn't settle it.",
+     "start": 171.78,
+     "end": 187.12
+    }
+   ]
+  },
+  {
+   "id": "reading",
+   "kicker": "Is it about you?",
+   "level": 0.5,
+   "start": 187.22,
+   "end": 214.54,
+   "lines": [
+    {
+     "text": "Weigh this before the answer: is this a story about believing in yourself, as if brave small people always beat big strong ones?",
+     "start": 188.12,
+     "end": 195.74
+    },
+    {
+     "text": "The chapter itself says the opposite. David isn't trusting himself. He trusts the God whose name Goliath insulted.",
+     "start": 196.46,
+     "end": 203.52
+    },
+    {
+     "text": "Readers still differ. Some draw from David a courage rooted in knowing whose battle it is. Others warn that First Samuel isn't a set of moral examples to copy.",
+     "start": 204.08,
+     "end": 213.64
+    }
+   ]
+  },
+  {
+   "id": "hillside",
+   "kicker": "The soldiers on the hill",
+   "level": 0.8,
+   "start": 213.74,
+   "end": 243.058,
+   "lines": [
+    {
+     "text": "Readers have long seen this pattern filled out in Christ, though the chapter is a battle story, not an allegory.",
+     "start": 214.64,
+     "end": 220.72
+    },
+    {
+     "text": "David fights for a people too afraid to fight, and his victory becomes theirs. Most readers are not David here. They're the soldiers on the hillside, delivered by another.",
+     "start": 221.44,
+     "end": 231.68
+    },
+    {
+     "text": "Jesus came to free those who all their lives were held in slavery by their fear of death.",
+     "start": 232.38,
+     "end": 237.08
+    },
+    {
+     "text": "So ask where you'd stand on that hill, and who went down into the valley for you.",
+     "start": 237.74,
+     "end": 242.158
+    }
+   ]
+  }
+ ]
+}
