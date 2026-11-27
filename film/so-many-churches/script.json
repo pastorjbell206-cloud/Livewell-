@@ -1,0 +1,138 @@
+{
+  "title": "Why are there so many churches?",
+  "note": "Written on 2026-11-26 from the Bible Explorer film so-many-churches (with its explorer-ledger rows), the history course essays the-east-west-schism, the-reformation and the-counter-reformation, the Honest Answer can-you-be-a-christian-without-church in client/src/data/answers.ts, and the Study Bible doctrine page client/public/bible/doctrines/church.json.",
+  "page": "/study/explorer/watch/so-many-churches",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "one",
+      "kicker": "One company",
+      "level": 0.2,
+      "lines": [
+        "Read the church signs in one town: Catholic, Orthodox, Baptist, Methodist, Pentecostal. A fair question: if there's one Lord, why so many churches?",
+        "It began as one company in Jerusalem, gathered by the Spirit at Pentecost.",
+        "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      ],
+      "scripture": {
+        "reference": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "spread",
+      "kicker": "Many lands",
+      "level": 0.3,
+      "lines": [
+        "From Jerusalem the message went to Samaria, to Antioch, where the disciples were first called Christians, and on to Rome.",
+        "Worship took different shapes in different languages, but the churches confessed one faith, later written in the creeds."
+      ]
+    },
+    {
+      "id": "drift",
+      "kicker": "Greek East, Latin West",
+      "level": 0.4,
+      "lines": [
+        "Over centuries, the church drifted. The East spoke Greek, the West Latin, and in time most on each side couldn't read the other's books.",
+        "When the western empire fell, the West looked to the bishop of Rome. The East still had its emperor."
+      ]
+    },
+    {
+      "id": "authority",
+      "kicker": "Who has the last word?",
+      "level": 0.5,
+      "lines": [
+        "Pause here and ask yourself: when the whole church must decide something, who has the last word?",
+        "The West increasingly said Rome, Peter's successor. The East honored Rome as first among the great churches, but held that the bishops govern together, in council.",
+        "Then one Latin word, filioque, “and the Son,” added to the creed in the West: the Spirit proceeds from the Father and the Son.",
+        "The West meant to guard the Son's full divinity. The East objected to the words, and to one region changing the whole church's creed. The history course says neither was simply wrong."
+      ]
+    },
+    {
+      "id": "1054",
+      "kicker": "1054",
+      "level": 0.6,
+      "lines": [
+        "In 1054, at Hagia Sophia, Cardinal Humbert excommunicated the patriarch Michael Cerularius, who returned the favor.",
+        "That only made visible a split already real. It was sealed in 1204, when a Western crusading army sacked Constantinople.",
+        "In 1965 the pope and the patriarch lifted the old excommunications. The course finds no hero and no villain, “only two faithful traditions that loved the same Lord and lost the ability to love each other.”"
+      ]
+    },
+    {
+      "id": "luther",
+      "kicker": "1517",
+      "level": 0.55,
+      "lines": [
+        "A German monk, Martin Luther, found peace with God in Paul's letter to the Romans: the righteousness God requires is the righteousness God gives, received by faith.",
+        "In 1517 he posted ninety-five theses against the sale of indulgences. He meant to start a debate. The printing press made it a fire across Europe."
+      ],
+      "scripture": {
+        "reference": "Romans 1:17",
+        "text": "For the gospel reveals the righteousness of God that comes by faith from start to finish",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "branches",
+      "kicker": "More branches",
+      "level": 0.5,
+      "lines": [
+        "The movement grew beyond him: Zwingli in Zurich, who broke with Luther over the Supper; Calvin in Geneva; the Anabaptists, who baptized only those who could profess faith; and in England, the Anglican tradition.",
+        "Protestants divided further, Baptist, Methodist, Pentecostal and more, often over baptism, the Supper, and who holds authority and how."
+      ]
+    },
+    {
+      "id": "trent",
+      "kicker": "Rome answers",
+      "level": 0.45,
+      "lines": [
+        "Rome didn't stand still. The Council of Trent, from 1545 to 1563, drew clear lines: justification by grace, but not by faith alone.",
+        "It also cleaned house: a seminary for every diocese. The Jesuits arose, and saints like Teresa of Avila. Rome did reform, and the reform was real."
+      ]
+    },
+    {
+      "id": "cost",
+      "kicker": "The cost",
+      "level": 0.6,
+      "lines": [
+        "The tearing was soaked in blood. Catholics killed Protestants, Protestants killed Catholics, and both killed the Anabaptists.",
+        "The wars of religion ended in exhaustion, with the Peace of Westphalia in 1648. Nobody had won.",
+        "Some divisions were over things that matter. Some were not worth what they cost. The church needed the recovery, and the church should mourn the blood."
+      ]
+    },
+    {
+      "id": "root",
+      "kicker": "One root",
+      "level": 0.45,
+      "lines": [
+        "Weigh this: which differences are worth disagreeing over, and which aren't?",
+        "Some are real. Catholics confess one visible church centered on Peter's successor; the Orthodox, a communion of churches whose bishops are equals; many Protestants, a church known where the gospel is rightly preached; free churches, a gathered company of believers.",
+        "And under them all: “Most of these churches confess the same God, the same Christ, the same empty tomb, and they recite the same ancient creeds.”"
+      ]
+    },
+    {
+      "id": "be-one",
+      "kicker": "That they may be one",
+      "level": 0.3,
+      "lines": [
+        "Why not skip them all? The New Testament has no word for a Christian who belongs to no church. Paul's picture is a body, and a hand on its own isn't freer. It's dying.",
+        "The night before he died, Jesus prayed for all who would believe:",
+        "That all of them may be one, as You, Father, are in Me, and I am in You.",
+        "The divisions are real. So is the unity under them. This film doesn't choose between the churches."
+      ],
+      "scripture": {
+        "reference": "John 17:21",
+        "text": "that all of them may be one, as You, Father, are in Me, and I am in You.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      },
+      "titleCard": [
+        "Many branches. One root. One prayer over them all.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
