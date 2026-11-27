@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- "What the ground says" (apologetics film 5). A spade over the ground and the two claims it is asked to
+     settle; what didn't hold up (Warren's shaft, the gates, the silence); the Tel Dan stone; the Mesha stele
+     beside 2 Kings 3:5; Sennacherib's prism and the bird in the cage, gold that agrees and silver that
+     doesn't; two picks meeting in Hezekiah's tunnel and the water; two sides of one story; a scale that
+     won't tip; the spade laid down. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>What the ground says</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5";
+  const CH = Object.fromEntries(TL.chapters.map((c) => [c.id, c]));
+  const CS = (id) => CH[id].start;
+  const Ls = (id) => CH[id].lines.map((_, k) => S(id, k));
+  const T = (p, cls, x, y, s, size, anchor, fill) => { const e = txt(p, cls, x, y, s, size, fill ? { fill } : undefined); if (anchor) e.setAttribute("style", (e.getAttribute("style") || "") + `text-anchor:${anchor};`); return e; };
+  const G = (p) => el("g", {}, p || world);
+  const R = rng(91);
+  const vis = (t, a, b) => span(t, a, b, 0.6, 0.7);
+  const t0 = Ls("objection"), t1 = Ls("oversold"), t2 = Ls("dan"), t3 = Ls("moab"), t4 = Ls("assyria"), t5 = Ls("tunnel"), t6 = Ls("pattern"), t7 = Ls("limits"), t8 = Ls("close"), END = F.VOICE_END;
+  const strata = (g, y0) => [0, 1, 2, 3].map((i) => line(g, `M-20 ${y0 + 46 * i} C300 ${y0 + 46 * i - 12} 700 ${y0 + 46 * i + 12} 1300 ${y0 + 46 * i - 4}`, { stroke: i ? LINE : INK, "stroke-width": i ? 2 : 3 }));
+  const spade = (p) => { const g = G(p); el("line", { x1: 0, y1: -150, x2: 0, y2: -20, stroke: CHAR, "stroke-width": 7, "stroke-linecap": "round" }, g); el("line", { x1: -18, y1: -150, x2: 18, y2: -150, stroke: CHAR, "stroke-width": 7, "stroke-linecap": "round" }, g); el("path", { d: "M-22 -24 H22 L18 20 Q0 36 -18 20 Z", fill: STONE }, g); return g; };
+
+  // 1. the spade and two claims
+  const g1 = G(), st1 = strata(g1, 400), sp1 = spade(g1);
+  const claims = [["PROVES IT?", 320], ["DISPROVES IT?", 960]].map(([s, x]) => { const g = G(g1); el("rect", { x: -120, y: -32, width: 240, height: 64, rx: 32, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", 0, 6, s, 15, null, INK); move(g, x, 220); return g; });
+  const strike = claims.map((c, i) => line(g1, `M${[320, 960][i] - 130} 220 H${[320, 960][i] + 130}`, { stroke: MUSTARD, "stroke-width": 3.5 }));
+  const neither = T(g1, "disp", 640, 330, "neither", 64);
+  const draw1 = (t) => { const v = vis(t, 0.3, CS("oversold") + 0.4); op(g1, v); if (v <= 0) return;
+    st1.forEach((s, i) => draw(s, up(t, t0[0] - 1.2 + i * 0.2, 1.2))); const dig = (t - t0[0]) * 1.4; move(sp1, 640, 400 + 16 * Math.max(0, Math.sin(dig)) * (t > t0[0] ? 1 : 0), 1, -8); op(sp1, up(t, t0[0] - 0.6, 0.6) * (1 - up(t, t0[2] + 0.2, 0.5)));
+    op(claims[0], up(t, t0[0] + 0.6, 0.6)); op(claims[1], up(t, t0[1] + 0.4, 0.6)); strike.forEach((s) => draw(s, up(t, t0[2] + 0.2, 0.7))); op(neither, up(t, t0[2] + 0.7, 0.7)); };
+
+  // 2. what didn't hold up
+  const g2 = G(), ground2 = line(g2, "M100 300 H1180", { "stroke-width": 3 }), city = G(g2); [[-60, 60], [-20, 80], [20, 70], [60, 50]].forEach(([x, h]) => el("rect", { x: x - 18, y: -h, width: 36, height: h, fill: PAPER, stroke: INK, "stroke-width": 2 }, city)); move(city, 300, 300);
+  const shaft = line(g2, "M300 300 V470", { stroke: STONE, "stroke-width": 6, "stroke-dasharray": "0.06 0.04" }), shLab = T(g2, "lab", 300, 504, "WARREN'S SHAFT, 1867", 12), shNo = T(g2, "lab", 300, 528, "NOT REACHABLE IN DAVID'S TIME", 12, null, MUSTARD);
+  const gate = G(g2); el("path", { d: "M-50 0 V-90 H50 V0 H24 V-50 Q0 -74 -24 -50 V0 Z", fill: PAPER, stroke: INK, "stroke-width": 2.5 }, gate);
+  const gTL = line(g2, "M560 470 H900", { stroke: INK, "stroke-width": 2 }), gc = [["10TH CENTURY BC", 620], ["9TH", 840]].map(([s, x]) => T(g2, "lab", x, 500, s, 12)), gLab = T(g2, "lab", 730, 180, "GATES ONCE CALLED SOLOMON'S", 12);
+  const silence = G(g2); const sq = T(silence, "disp", 0, 0, "?", 80, null, STONE); T(silence, "lab", 0, 50, "EXODUS · CONQUEST", 12); move(silence, 1070, 230);
+  const draw2 = (t) => { const v = vis(t, CS("oversold") - 0.2, CS("dan") + 0.3); op(g2, v); if (v <= 0) return;
+    draw(ground2, up(t, t1[0], 1.0)); op(city, up(t, t1[1] - 0.2, 0.6)); draw(shaft, up(t, t1[1] + 1.2, 1.2)); op(shLab, up(t, t1[1] + 1.8, 0.5)); op(shNo, up(t, t1[1] + 5.0, 0.6)); shaft.setAttribute("opacity", (1 - 0.6 * up(t, t1[1] + 5.0, 0.6)).toFixed(2));
+    const gk = up(t, t1[2] + 2.4, 1.6); move(gate, mix(620, 840, gk), 300); op(gate, up(t, t1[2] - 0.2, 0.6)); draw(gTL, up(t, t1[2] + 0.4, 0.8)); gc.forEach((g, i) => op(g, up(t, t1[2] + 0.8 + i * 0.4, 0.5))); op(gLab, up(t, t1[2], 0.6));
+    op(silence, up(t, t1[3] + 0.4, 0.8)); sq.setAttribute("opacity", (0.6 + 0.4 * Math.sin(t * 2)).toFixed(2)); };
+
+  // 3. Tel Dan
+  const g3 = G(), stone = G(g3); el("path", { d: "M-120 -90 L-30 -110 L60 -86 L80 -104 L130 -30 L104 44 L124 92 L30 116 L-54 98 L-78 110 L-134 30 L-108 -26 Z", fill: CHAR }, stone);
+  const carve = []; [-60, -30, 0, 30, 60].forEach((y, r) => { let x = -84 + (r % 2) * 8; while (x < 80) { const w = 6 + Math.round(R() * 12); const hi = r === 3 && x > -20 && x < 58; carve.push({ e: el("line", { x1: x, y1: y, x2: x + w, y2: y + (R() - 0.5) * 3, stroke: hi ? MUSTARD : BONE, "stroke-width": hi ? 4 : 3, "stroke-linecap": "round" }, stone), r, x }); x += w + 8; } });
+  const call = line(g3, "M560 370 H700", { stroke: MUSTARD, "stroke-width": 2 }), hod = T(g3, "disp", 900, 360, "the house of David", 54), danLab = T(g3, "lab", 900, 404, "TEL DAN · ARAMAIC · FOUND 1993", 12);
+  const tl3 = line(g3, "M200 540 H1080", { stroke: INK, "stroke-width": 2 }), d1 = el("circle", { cx: 300, cy: 540, r: 8, fill: INK }, g3), d2 = el("circle", { cx: 640, cy: 540, r: 8, fill: MUSTARD }, g3), dl = [T(g3, "lab", 300, 572, "DAVID", 12), T(g3, "lab", 640, 572, "THE STONE · MORE THAN A CENTURY LATER", 12)];
+  const draw3 = (t) => { const v = vis(t, CS("dan") - 0.2, CS("moab") + 0.3); op(g3, v); if (v <= 0) return;
+    const rise = up(t, t2[1] - 0.2, 1.4); move(stone, mix(640, 420, up(t, t2[1] + 3.0, 1.2)), mix(520, 330, rise) + 2 * Math.sin(t), mix(0.4, 1.2, rise), -4); op(stone, up(t, t2[0] + 0.6, 0.8)); carve.forEach((c) => op(c.e, up(t, t2[1] + 1.0 + c.r * 0.2 + (c.x + 84) * 0.004, 0.4)));
+    draw(call, up(t, t2[1] + 4.6, 0.6)); op(hod, up(t, t2[1] + 5.0, 0.8)); op(danLab, up(t, t2[1] + 5.8, 0.6));
+    draw(tl3, up(t, t2[2] + 0.4, 0.8)); op(d1, up(t, t2[2] + 0.8, 0.4)); op(dl[0], up(t, t2[2] + 0.8, 0.4)); op(d2, up(t, t2[2] + 3.0, 0.4)); op(dl[1], up(t, t2[2] + 3.2, 0.5)); };
+
+  // 4. Mesha
+  const g4 = G(), stele = G(g4); el("path", { d: "M-80 140 V-80 Q-80 -150 0 -150 Q80 -150 80 -80 V140 Z", fill: CHAR }, stele); const sLines = [...Array(11)].map((_, i) => el("line", { x1: -62, y1: -110 + i * 22, x2: 62 - (i % 3) * 10, y2: -110 + i * 22, stroke: BONE, "stroke-width": 2.4, "stroke-linecap": "round", "stroke-dasharray": "6 4" }, stele));
+  const meLab = T(g4, "lab", 300, 520, "THE MESHA STELE · 1868", 12), meSide = T(g4, "lab", 300, 160, "MOAB'S SIDE", 13, null, INK);
+  const vb = [T(g4, "disp", 820, 300, "But after the death of Ahab, the king of Moab", 30), T(g4, "disp", 820, 340, "rebelled against the king of Israel.", 30)], vr = T(g4, "lab", 820, 382, "2 KINGS 3:5 · BEREAN STANDARD BIBLE", 12), isSide = T(g4, "lab", 820, 160, "ISRAEL'S SIDE", 13, null, INK);
+  const meet = [line(g4, "M380 440 C500 520 620 520 700 470", { stroke: MUSTARD, "stroke-width": 2.5 })], mainFact = T(g4, "lab", 560, 560, "THE MAIN FACT: MOAB BROKE FREE", 13, null, INK);
+  const draw4 = (t) => { const v = vis(t, CS("moab") - 0.2, CS("assyria") + 0.3); op(g4, v); if (v <= 0) return;
+    move(stele, 300, 330 + 2 * Math.sin(t * 0.8)); op(stele, up(t, t3[0] + 0.2, 0.8)); sLines.forEach((l, i) => op(l, up(t, t3[0] + 1.2 + i * 0.25, 0.4))); op(meLab, up(t, t3[0] + 1.6, 0.6)); op(meSide, up(t, t3[1] - 0.6, 0.6));
+    op(isSide, up(t, t3[1] + 0.2, 0.6)); vb.forEach((l, i) => op(l, up(t, t3[2] + i * 2.0, 0.8))); op(vr, up(t, t3[2] + 2.8, 0.6)); draw(meet[0], up(t, t3[3] + 2.0, 1.0)); op(mainFact, up(t, t3[3] + 2.8, 0.6)); };
+
+  // 5. Sennacherib
+  const g5 = G(), prism = G(g5); el("path", { d: "M-50 -170 L50 -170 L70 -150 V150 L50 170 L-50 170 L-70 150 V-150 Z", fill: WARM, stroke: INK, "stroke-width": 2.5 }, prism); [...Array(16)].forEach((_, i) => el("line", { x1: -50, y1: -150 + i * 19, x2: 50, y2: -150 + i * 19, stroke: STONE, "stroke-width": 1.6, "stroke-dasharray": "3 3" }, prism)); move(prism, 220, 330);
+  const prLab = T(g5, "lab", 220, 530, "SENNACHERIB'S ANNALS", 12);
+  const cage = G(g5); const bars = [...Array(9)].map((_, i) => el("line", { x1: -60 + i * 15, y1: -40, x2: -60 + i * 15, y2: 70, stroke: INK, "stroke-width": 2.5 }, cage)); el("path", { d: "M-64 -40 Q0 -110 64 -40", fill: "none", stroke: INK, "stroke-width": 2.5 }, cage); el("line", { x1: -64, y1: 70, x2: 64, y2: 70, stroke: INK, "stroke-width": 3 }, cage);
+  const bird = G(cage); el("ellipse", { rx: 16, ry: 11, fill: MUSTARD }, bird); el("circle", { cx: 14, cy: -8, r: 7, fill: MUSTARD }, bird); move(cage, 540, 280);
+  const cageLab = T(g5, "ital", 540, 420, "like a bird in a cage", 34);
+  const tbl = G(g5), rows = [["", "GOLD", "SILVER"], ["THE BIBLE", "30", "300"], ["THE ANNALS", "30", "800"]];
+  rows.forEach((r, i) => r.forEach((c, j) => T(tbl, i === 0 || j === 0 ? "lab" : "disp", 900 + j * 130 - 130, 190 + i * 56, c, i === 0 || j === 0 ? 12 : 40, j === 0 ? "end" : null, INK)));
+  const chk = T(tbl, "lab", 900, 330, "AGREES", 12, null, MUSTARD), dif = T(tbl, "lab", 1030, 330, "DIFFERS", 12, null, STONE);
+  const walls = G(g5); el("path", { d: "M-130 0 V-60 H-110 V-74 H-90 V-60 H-60 V-74 H-40 V-60 H-10 V-74 H10 V-60 H40 V-74 H60 V-60 H90 V-74 H110 V-60 H130 V0 Z", fill: PAPER, stroke: INK, "stroke-width": 2.5 }, walls); move(walls, 960, 520); const notTaken = T(g5, "lab", 960, 552, "NEVER CLAIMED AS TAKEN", 12, null, MUSTARD);
+  const draw5 = (t) => { const v = vis(t, CS("assyria") - 0.2, CS("tunnel") + 0.3); op(g5, v); if (v <= 0) return;
+    op(prism, up(t, t4[0] + 0.4, 0.8)); op(prLab, up(t, t4[0] + 1.0, 0.6)); op(cage, up(t, t4[1] + 0.4, 0.8)); move(bird, 4 * Math.sin(t * 3), 30 + 3 * Math.abs(Math.sin(t * 5))); op(cageLab, up(t, t4[1] + 2.6, 0.7));
+    op(tbl, up(t, t4[0] + 3.6, 0.7)); op(chk, up(t, t4[1] + 5.6, 0.5)); op(dif, up(t, t4[1] + 7.0, 0.5)); op(walls, up(t, t4[2] + 0.6, 0.7)); op(notTaken, up(t, t4[2] + 2.6, 0.6)); };
+
+  // 6. the tunnel
+  const g6 = G(), ground6 = line(g6, "M100 250 H1180", { "stroke-width": 3 }), city6 = G(g6); [[-40, 50], [0, 70], [40, 40]].forEach(([x, h]) => el("rect", { x: x - 16, y: -h, width: 32, height: h, fill: PAPER, stroke: INK, "stroke-width": 2 }, city6)); move(city6, 640, 250);
+  const rock = el("rect", { x: 160, y: 300, width: 960, height: 180, rx: 12, fill: WARM }, g6), spring = el("circle", { cx: 1080, cy: 390, r: 14, fill: MUSTARD }, g6), pool = el("rect", { x: 170, y: 370, width: 60, height: 40, rx: 6, fill: "none", stroke: INK, "stroke-width": 2.5 }, g6);
+  const sLab = T(g6, "lab", 1080, 440, "THE SPRING", 12), plLab = T(g6, "lab", 200, 440, "THE POOL", 12);
+  const TUN = "M230 390 C380 360 500 420 640 390 S900 360 1066 390", tunL = el("path", { d: TUN, fill: "none", stroke: INK, "stroke-width": 16, "stroke-linecap": "round", pathLength: 1, "stroke-dasharray": "0 1" }, g6), tunR = el("path", { d: TUN, fill: "none", stroke: INK, "stroke-width": 16, "stroke-linecap": "round", pathLength: 1, "stroke-dasharray": "0 1" }, g6);
+  const water = el("path", { d: TUN, fill: "none", stroke: MUSTARD, "stroke-width": 7, "stroke-linecap": "round", pathLength: 1, "stroke-dasharray": "1 1", "stroke-dashoffset": -1 }, g6);
+  const picks = [0, 1].map(() => el("circle", { r: 7, fill: MUSTARD }, g6)), pp = el("path", { d: TUN }, g6); pp.setAttribute("display", "none"); const PL = pp.getTotalLength();
+  const ins = T(g6, "ital", 640, 160, "pick against pick", 46), insLab = T(g6, "lab", 640, 196, "THE TUNNEL INSCRIPTION · FOUND 1880", 12);
+  const draw6 = (t) => { const v = vis(t, CS("tunnel") - 0.2, CS("pattern") + 0.3); op(g6, v); if (v <= 0) return;
+    draw(ground6, up(t, t5[0], 0.8)); op(city6, up(t, t5[0] + 0.4, 0.6)); op(rock, up(t, t5[0] + 0.6, 0.6)); op(spring, up(t, t5[0] + 1.0, 0.5)); op(pool, up(t, t5[0] + 1.2, 0.5)); op(sLab, up(t, t5[0] + 1.2, 0.5)); op(plLab, up(t, t5[0] + 1.4, 0.5));
+    const dg = up(t, t5[1] + 1.0, 5.0) * 0.5; tunL.setAttribute("stroke-dasharray", `${dg.toFixed(4)} 1`); tunR.setAttribute("stroke-dasharray", `0 ${(1 - dg).toFixed(4)} ${dg.toFixed(4)} 0`);
+    const a = pp.getPointAtLength(PL * dg), b = pp.getPointAtLength(PL * (1 - dg)); set(picks[0], { cx: a.x.toFixed(1), cy: a.y.toFixed(1) }); set(picks[1], { cx: b.x.toFixed(1), cy: b.y.toFixed(1) }); picks.forEach((p) => op(p, span(t, t5[1] + 0.8, t5[1] + 6.4, 0.3)));
+    const w = up(t, t5[1] + 6.2, 2.0); water.setAttribute("stroke-dashoffset", (-1 + w).toFixed(4)); op(water, w > 0 ? 1 : 0); water.setAttribute("transform", "");
+    op(ins, up(t, t5[1] + 5.8, 0.7)); op(insLab, up(t, t5[1] + 2.0, 0.6)); };
+
+  // 7. two sides of one story
+  const g7 = G(), colA = T(g7, "lab", 380, 170, "ISRAEL'S RECORDS", 13, null, INK), colB = T(g7, "lab", 900, 170, "ITS ENEMIES' RECORDS", 13, null, INK);
+  const rowsA = [...Array(6)].map((_, i) => el("rect", { x: 260, y: 200 + i * 48, width: 180 + (i * 37 % 60), height: 12, rx: 6, fill: i % 2 ? INK : MUSTARD }, g7)), rowsB = [...Array(6)].map((_, i) => el("rect", { x: 780, y: 200 + i * 48 + (i % 2 ? 6 : 0), width: 150 + (i * 53 % 80), height: 12, rx: 6, fill: i % 2 ? STONE : MUSTARD }, g7));
+  const links = [0, 2, 4].map((i) => line(g7, `M${470 + (i * 37 % 60)} ${206 + i * 48} H770`, { stroke: MUSTARD, "stroke-width": 1.6, "stroke-dasharray": "0.02 0.02" })), lk7 = T(g7, "lab", 640, 520, "MAIN FACTS AGREE · DETAILS DIFFER", 13);
+  const draw7 = (t) => { const v = vis(t, CS("pattern") - 0.2, CS("limits") + 0.3); op(g7, v); if (v <= 0) return;
+    op(colA, up(t, t6[0] + 0.4, 0.5)); op(colB, up(t, t6[0] + 0.8, 0.5)); rowsA.forEach((r, i) => op(r, up(t, t6[0] + 0.6 + i * 0.15, 0.4))); rowsB.forEach((r, i) => op(r, up(t, t6[0] + 1.0 + i * 0.15, 0.4)));
+    links.forEach((l, i) => draw(l, up(t, t6[0] + 2.6 + i * 0.4, 0.7))); op(lk7, up(t, t6[0] + 4.0, 0.6)); };
+
+  // 8. what the ground can't do
+  const g8 = G(), stone8 = G(g8); el("path", { d: "M-70 -50 L60 -60 L80 40 L-60 56 Z", fill: CHAR }, stone8); move(stone8, 360, 330);
+  const bubble = G(g8); el("path", { d: "M-90 -50 H90 V30 H-20 L-46 60 L-40 30 H-90 Z", fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "6 6" }, bubble); T(bubble, "disp", 0, 10, "?", 50, null, MUSTARD); move(bubble, 360, 190);
+  const nm = T(g8, "lab", 360, 440, "NAMES AND EVENTS, NOT MEANINGS", 12);
+  const scale = G(g8); el("line", { x1: 0, y1: -120, x2: 0, y2: 40, stroke: INK, "stroke-width": 4 }, scale); el("path", { d: "M-30 40 H30 L20 60 H-20 Z", fill: INK }, scale); const beam = G(scale); el("line", { x1: -150, y1: 0, x2: 150, y2: 0, stroke: INK, "stroke-width": 4 }, beam); move(beam, 0, -110);
+  const pans = [-150, 150].map((x, i) => { const g = G(beam); el("line", { x1: x, y1: 0, x2: x - 40, y2: 70, stroke: STONE, "stroke-width": 1.6 }, g); el("line", { x1: x, y1: 0, x2: x + 40, y2: 70, stroke: STONE, "stroke-width": 1.6 }, g); el("path", { d: `M${x - 50} 70 H${x + 50} Q${x} 100 ${x - 50} 70 Z`, fill: WARM, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", x, 124, i ? "A SMALL ONE" : "A GREAT KINGDOM", 11); return g; });
+  move(scale, 900, 380);
+  const both = T(g8, "disp", 640, 560, "proof and disproof both say too much", 36);
+  const draw8 = (t) => { const v = vis(t, CS("limits") - 0.2, CS("close") + 0.3); op(g8, v); if (v <= 0) return;
+    op(stone8, up(t, t7[0] + 0.2, 0.6)); op(bubble, up(t, t7[0] + 1.2, 0.6)); op(nm, up(t, t7[0] + 3.2, 0.6)); op(scale, up(t, t7[1] - 0.2, 0.7));
+    beam.setAttribute("transform", `translate(0 -110) rotate(${(6 * Math.sin((t - t7[1]) * 1.4) * Math.exp(-Math.max(0, t - t7[1]) * 0.35)).toFixed(2)})`); op(both, up(t, t7[2] + 0.6, 0.8)); };
+
+  // 9. the spade laid down
+  const g9 = G(), ground9 = line(g9, "M200 430 H1080", { "stroke-width": 3 }), sp9 = spade(g9), book = G(g9);
+  const pageD = (s) => `M0 -50 C${-40 * s} -70 ${-110 * s} -70 ${-150 * s} -55 L${-150 * s} 55 C${-110 * s} 40 ${-40 * s} 40 0 60 Z`; [1, -1].forEach((s) => el("path", { d: pageD(s), fill: PAPER, stroke: INK, "stroke-width": 3 }, book));
+  const tomb = G(g9); el("path", { d: "M-70 0 V-60 A70 70 0 0 1 70 -60 V0 Z", fill: WARM, stroke: INK, "stroke-width": 2.5 }, tomb); el("circle", { cx: 120, cy: -36, r: 36, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, tomb); move(tomb, 900, 430);
+  const resLab = T(g9, "lab", 920, 470, "ABOVE ALL, THE RESURRECTION", 12);
+  const draw9 = (t) => { const v = span(t, CS("close") - 0.2, END + 2.5, 0.6, 0.9); op(g9, v); if (v <= 0) return;
+    draw(ground9, up(t, CS("close"), 0.8)); const lay = up(t, t8[0] + 0.6, 1.6); move(sp9, mix(380, 300, lay), 430 - 6 * (1 - lay), 1, mix(-8, -78, lay)); op(sp9, 1);
+    op(tomb, up(t, t8[0] + 2.4, 0.8)); op(resLab, up(t, t8[0] + 3.4, 0.6)); move(book, 600, 330 + 2 * Math.sin(t * 0.8), 0.9); op(book, up(t, t8[1] + 0.2, 0.8)); };
+
+  F.title("What the ground says");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.9);
+  return (t) => { draw1(t); draw2(t); draw3(t); draw4(t); draw5(t); draw6(t); draw7(t); draw8(t); draw9(t); };
+});
+</script>
+</body></html>

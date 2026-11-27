@@ -1,0 +1,216 @@
+{
+ "length": 178.03,
+ "chapters": [
+  {
+   "id": "objection",
+   "kicker": "The objection",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 18.84,
+   "lines": [
+    {
+     "text": "Does archaeology prove the Bible? Some say every dig confirms it.",
+     "start": 2.6,
+     "end": 6.92
+    },
+    {
+     "text": "Others say the spade has come up empty. No trace of the exodus, a Jericho without walls, little sign of Solomon's great kingdom.",
+     "start": 7.4,
+     "end": 15.54
+    },
+    {
+     "text": "The honest answer is neither.",
+     "start": 16.32,
+     "end": 17.94
+    }
+   ]
+  },
+  {
+   "id": "oversold",
+   "kicker": "What didn't hold up",
+   "level": 0.3,
+   "start": 18.04,
+   "end": 39.7,
+   "lines": [
+    {
+     "text": "Start with what didn't hold up.",
+     "start": 18.94,
+     "end": 20.28
+    },
+    {
+     "text": "For years, a shaft in Jerusalem was linked to the way David's men took the city. Later digging suggests it wasn't reachable in David's time.",
+     "start": 20.9,
+     "end": 28.8
+    },
+    {
+     "text": "Gates once credited to Solomon are now dated by some archaeologists to the century after him.",
+     "start": 29.46,
+     "end": 34.72
+    },
+    {
+     "text": "And for the exodus and the conquest, the ground is mostly silent.",
+     "start": 35.32,
+     "end": 38.8
+    }
+   ]
+  },
+  {
+   "id": "dan",
+   "kicker": "The house of David",
+   "level": 0.45,
+   "start": 38.9,
+   "end": 62.72,
+   "lines": [
+    {
+     "text": "But from the ninth century before Christ, Israel's neighbors and enemies start writing things down.",
+     "start": 39.8,
+     "end": 45.08
+    },
+    {
+     "text": "In 1993, at Tel Dan, diggers found pieces of an Aramaic victory stone. A king of Aram boasts of killing a king of the house of David.",
+     "start": 45.64,
+     "end": 54.98
+    },
+    {
+     "text": "Most scholars take it as the earliest known mention of David's dynasty by name, more than a century after him.",
+     "start": 55.68,
+     "end": 61.82
+    }
+   ]
+  },
+  {
+   "id": "moab",
+   "kicker": "A rebel king",
+   "level": 0.55,
+   "start": 61.92,
+   "end": 86.18,
+   "lines": [
+    {
+     "text": "In 1868, in Moab, a black stone was found. King Mesha records how Omri, king of Israel, had oppressed his land, and how he broke free.",
+     "start": 62.82,
+     "end": 72.8
+    },
+    {
+     "text": "Second Kings tells it from Israel's side.",
+     "start": 73.44,
+     "end": 75.64
+    },
+    {
+     "text": "But after the death of Ahab, the king of Moab rebelled against the king of Israel.",
+     "start": 76.22,
+     "end": 80.56
+    },
+    {
+     "text": "The two accounts don't fit together in every detail. They agree on the main fact.",
+     "start": 81.18,
+     "end": 85.28
+    }
+   ]
+  },
+  {
+   "id": "assyria",
+   "kicker": "A bird in a cage",
+   "level": 0.65,
+   "start": 85.38,
+   "end": 108.7,
+   "lines": [
+    {
+     "text": "Then Assyria. Sennacherib invaded Judah, and the Bible says Hezekiah paid him thirty talents of gold.",
+     "start": 86.28,
+     "end": 92.96
+    },
+    {
+     "text": "Sennacherib's own annals boast that he shut Hezekiah up in Jerusalem like a bird in a cage. They give the same thirty talents of gold. The silver differs.",
+     "start": 93.7,
+     "end": 103.14
+    },
+    {
+     "text": "And notice what the annals never claim. They never say the city was taken.",
+     "start": 103.78,
+     "end": 107.8
+    }
+   ]
+  },
+  {
+   "id": "tunnel",
+   "kicker": "Pick against pick",
+   "level": 0.7,
+   "start": 107.9,
+   "end": 124.18,
+   "lines": [
+    {
+     "text": "Hezekiah also cut a tunnel to bring water into the city.",
+     "start": 108.8,
+     "end": 111.88
+    },
+    {
+     "text": "It still runs under Jerusalem. An inscription found inside it in 1880 tells how the diggers, working toward each other, struck pick against pick, and the water flowed.",
+     "start": 112.46,
+     "end": 123.28
+    }
+   ]
+  },
+  {
+   "id": "pattern",
+   "kicker": "Independent witnesses",
+   "level": 0.8,
+   "start": 123.38,
+   "end": 137.82,
+   "lines": [
+    {
+     "text": "That's what independent sources look like. They agree on the main facts, differ in the details, and each tells the story from its own side.",
+     "start": 124.28,
+     "end": 132.08
+    },
+    {
+     "text": "Where the writers of Kings can be checked, they behave like historians of a kind.",
+     "start": 132.82,
+     "end": 136.92
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "kicker": "What the ground can't do",
+   "level": 0.6,
+   "start": 137.02,
+   "end": 157.14,
+   "lines": [
+    {
+     "text": "But a stone can't show that God spoke to Moses. Inscriptions confirm names and events, not meanings.",
+     "start": 137.92,
+     "end": 144.32
+    },
+    {
+     "text": "And silence cuts both ways. It can't prove a great kingdom under Solomon, and it can't prove a small one.",
+     "start": 144.88,
+     "end": 151.14
+    },
+    {
+     "text": "Claims of proof and claims of disproof both say more than archaeology can.",
+     "start": 151.78,
+     "end": 156.24
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 156.34,
+   "end": 171.926,
+   "lines": [
+    {
+     "text": "The faith doesn't rest on a spade. It rests on what God did in history, above all the resurrection.",
+     "start": 157.24,
+     "end": 163.38
+    },
+    {
+     "text": "Archaeology shows the Old Testament's world was real. It was never going to be the ground of faith, and it hasn't taken it away.",
+     "start": 163.66,
+     "end": 171.026
+    }
+   ]
+  }
+ ]
+}

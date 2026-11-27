@@ -1,0 +1,231 @@
+{
+ "length": 216.74,
+ "chapters": [
+  {
+   "id": "objection",
+   "kicker": "The objection",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 15.56,
+   "lines": [
+    {
+     "text": "You've probably heard this one. The emperor Constantine decided what went into the Bible, at the Council of Nicaea in 325.",
+     "start": 2.6,
+     "end": 10.4
+    },
+    {
+     "text": "He kept the books that suited the church in power, and buried the rest.",
+     "start": 11.12,
+     "end": 14.66
+    }
+   ]
+  },
+  {
+   "id": "nicaea",
+   "kicker": "What Nicaea did",
+   "level": 0.35,
+   "start": 14.76,
+   "end": 41.2,
+   "lines": [
+    {
+     "text": "So what did Nicaea actually do?",
+     "start": 15.66,
+     "end": 17.72
+    },
+    {
+     "text": "The bishops answered Arius, who taught that the Son was a created being, and they wrote a creed against him.",
+     "start": 18.44,
+     "end": 24.04
+    },
+    {
+     "text": "They dealt with the date of Easter, a split in the church in Egypt, and twenty rules of church order.",
+     "start": 24.68,
+     "end": 30.04
+    },
+    {
+     "text": "Not one of their surviving decisions lists the books of Scripture.",
+     "start": 30.68,
+     "end": 33.98
+    },
+    {
+     "text": "Constantine did order fifty copies of the Scriptures for his new city. His letter names no books.",
+     "start": 34.66,
+     "end": 40.3
+    }
+   ]
+  },
+  {
+   "id": "eusebius",
+   "kicker": "The emperor's own bishop",
+   "level": 0.45,
+   "start": 40.4,
+   "end": 68.6,
+   "lines": [
+    {
+     "text": "Here's the telling part. Eusebius, a bishop who was at Nicaea and admired Constantine, wrote a list of the New Testament books in those very years.",
+     "start": 41.3,
+     "end": 50.32
+    },
+    {
+     "text": "The four Gospels, Acts and Paul's letters were accepted everywhere. A few, like James, Jude and Second Peter, were still disputed. And he wasn't sure where to put Revelation.",
+     "start": 50.92,
+     "end": 61.88
+    },
+    {
+     "text": "If the emperor had settled it, his admirer had every reason to say so. He doesn't.",
+     "start": 62.5,
+     "end": 67.7
+    }
+   ]
+  },
+  {
+   "id": "before",
+   "kicker": "Before any emperor",
+   "level": 0.55,
+   "start": 67.8,
+   "end": 92.2,
+   "lines": [
+    {
+     "text": "Go back further. In the 150s, Justin Martyr describes Christians on Sunday reading the memoirs of the apostles, which, he says, are called Gospels.",
+     "start": 68.7,
+     "end": 78.26
+    },
+    {
+     "text": "Around 180, Irenaeus says the Gospels can't be more or fewer than four.",
+     "start": 78.94,
+     "end": 83.76
+    },
+    {
+     "text": "That's a century and a half before Nicaea, while Christians were still a persecuted minority.",
+     "start": 84.38,
+     "end": 91.3
+    }
+   ]
+  },
+  {
+   "id": "others",
+   "kicker": "The other gospels",
+   "level": 0.6,
+   "start": 91.4,
+   "end": 113.72,
+   "lines": [
+    {
+     "text": "But weren't there other gospels? There were. Thomas, Peter, Mary, Judas.",
+     "start": 92.3,
+     "end": 96.22
+    },
+    {
+     "text": "Most scholars date them to the second century, after the four. None is earlier than the four on the usual dating, though some argue parts of Thomas carry older sayings.",
+     "start": 96.76,
+     "end": 106.36
+    },
+    {
+     "text": "Thomas is a collection of a hundred and fourteen sayings. It says nothing of Jesus' death and resurrection.",
+     "start": 106.98,
+     "end": 112.82
+    }
+   ]
+  },
+  {
+   "id": "serapion",
+   "kicker": "How the church judged",
+   "level": 0.7,
+   "start": 112.92,
+   "end": 143.0,
+   "lines": [
+    {
+     "text": "Around the year two hundred, a bishop named Serapion found a church reading a gospel under Peter's name.",
+     "start": 113.82,
+     "end": 119.54
+    },
+    {
+     "text": "At first he let them read it. Then he read it himself, found much in it sound and some things added, and judged it against what his churches had received.",
+     "start": 120.18,
+     "end": 129.18
+    },
+    {
+     "text": "That isn't a council imposing a list. It's a pastor reading a book and testing it.",
+     "start": 129.96,
+     "end": 134.78
+    },
+    {
+     "text": "One historian who studied all of this concluded, in effect, that no one chose the four Gospels. They were received.",
+     "start": 135.46,
+     "end": 142.1
+    }
+   ]
+  },
+  {
+   "id": "granted",
+   "kicker": "What the objection gets right",
+   "level": 0.75,
+   "start": 142.2,
+   "end": 180.78,
+   "lines": [
+    {
+     "text": "The objection does get some things right. Early Christianity was varied. Paul himself wrote against people preaching another gospel.",
+     "start": 143.1,
+     "end": 150.82
+    },
+    {
+     "text": "The church did test books by their teaching, as well as by their link to the apostles and their use across the churches.",
+     "start": 151.44,
+     "end": 157.8
+    },
+    {
+     "text": "And the edges took centuries to settle. The first list that matches our twenty-seven books exactly comes from Athanasius, in 367. He was driven out of his city five times. He was no emperor's man.",
+     "start": 158.36,
+     "end": 171.54
+    },
+    {
+     "text": "Protestant, Catholic and Orthodox Bibles still differ in the Old Testament. But all of them share the same twenty-seven books of the New.",
+     "start": 172.2,
+     "end": 179.88
+    }
+   ]
+  },
+  {
+   "id": "first",
+   "kicker": "Which faith came first",
+   "level": 0.85,
+   "start": 179.98,
+   "end": 200.36,
+   "lines": [
+    {
+     "text": "So the real question is which faith was there first.",
+     "start": 180.88,
+     "end": 184.0
+    },
+    {
+     "text": "The earliest Christian writings we have, Paul's letters from the fifties, already carry the faith of the four Gospels. Christ died for our sins, was buried, and was raised on the third day.",
+     "start": 184.6,
+     "end": 195.6
+    },
+    {
+     "text": "None of the gospels the church set aside is attested that early.",
+     "start": 196.3,
+     "end": 199.46
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 199.56,
+   "end": 210.635,
+   "lines": [
+    {
+     "text": "No emperor made the Bible. The churches received it, argued over its edges in the open, and said why.",
+     "start": 200.46,
+     "end": 206.58
+    },
+    {
+     "text": "You can read their reasons. Then read the books.",
+     "start": 207.08,
+     "end": 209.735
+    }
+   ]
+  }
+ ]
+}

@@ -9,6 +9,7 @@ import { Link, useRoute } from "wouter";
 import { ArrowDown } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
+import NarratedFilm from "@/components/NarratedFilm";
 import PageHead from "@/components/art/PageHead";
 import { LoadFailed } from "@/components/LoadFailed";
 import { QUESTIONS_ROOM, areaHref, fetchQuestionsArea, fetchQuestionsIndex, pieceHref, visiblePieces } from "@/lib/questions";
@@ -45,6 +46,7 @@ export default function QuestionsArea() {
       {entry && a && <SEOMeta title={entry.title} description={a.intro.split("\n\n")[0]} url={`${SITE}${areaHref(slug)}`} noindex={pending} />}
       <Waiting when={!failed && !a} />
       <PageHead door="The case for the faith" doorHref={QUESTIONS_ROOM} title={entry?.title ?? "Opening the area…"} width="var(--w-read)" />
+      {slug && entry && <NarratedFilm page={`/questions/${slug}`} />}
       {entry && pending && <ReviewLine width="var(--w-read)" />}
 
       {failed ? (

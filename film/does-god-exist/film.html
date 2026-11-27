@@ -1,0 +1,315 @@
+<!doctype html>
+<!-- "Does God exist?". God is never drawn: a necessary being is shown only as a faint mustard wash with nothing in it.
+     The universe is a translucent ball holding small plus-shaped sparks (never dots), so no circle ever has a dot
+     in it. People are ink dots, all alike, in rows on the ground. Paul in Athens is one dot beside a columned outline.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Does God exist?</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", GY = 470, R = rng(23);
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const win = (t, a, b) => up(t, a - 0.4, 0.6) * (1 - up(t, b - 0.6, 0.6));
+  const dot = (p, x, y, r = 10) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const sl = (p, d, a = {}) => el("path", { d, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round", "stroke-linejoin": "round", ...a }, p);
+  const lab = (p, x, y, s, size = 15, fill) => txt(p, "lab", x, y, s, size, fill ? { fill } : undefined);
+  const spark = (p, w = 2.5, c = STONE) => sl(p, "M-1 0 H1 M0 -1 V1", { stroke: c, "stroke-width": w, "vector-effect": "non-scaling-stroke" });
+  const star = (r) => `M0 ${-r} L${r * 0.26} ${-r * 0.26} L${r} 0 L${r * 0.26} ${r * 0.26} L0 ${r} L${-r * 0.26} ${r * 0.26} L${-r} 0 L${-r * 0.26} ${-r * 0.26} Z`;
+  const arrowR = (p, x0, x1, y, a = {}) => sl(p, `M${x0} ${y} H${x1} M${x1 - 9} ${y - 7} L${x1} ${y} L${x1 - 9} ${y + 7}`, a);
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  // the universe: a translucent ball with scattered plus-shaped sparks (no dots inside a circle)
+  const SPOTS = [[-0.42, -0.3, 1], [0.12, -0.5, 0.7], [0.46, -0.12, 0.9], [-0.1, 0.06, 0.6], [0.3, 0.38, 1.1], [-0.38, 0.34, 0.8], [0.02, -0.22, 0.5], [-0.58, 0.02, 0.6], [0.58, 0.2, 0.55]];
+  const ballMake = (p, fillO = 0.5) => { const g = el("g", {}, p), c = el("circle", { r: 1, fill: MUTED, "fill-opacity": fillO, stroke: INK, "stroke-width": 3 }, g);
+    const sp = SPOTS.map(([u, v, k]) => ({ u, v, k, e: spark(g, 2.5) })); return { g, c, sp }; };
+  const ballAt = (b, x, y, r, t) => { set(b.c, { cx: x.toFixed(1), cy: y.toFixed(1), r: Math.max(0.1, r).toFixed(1) });
+    b.sp.forEach((s, i) => { const tw = 1 + 0.25 * Math.sin(t * 1.3 + i * 1.7); move(s.e, x + s.u * r, y + s.v * r, Math.min(9, r * 0.09) * s.k * tw); }); };
+
+  const ground = line(world, "M-20 470 H1300", { "stroke-width": 3 });
+
+  // ---- times, all from the timeline ----
+  const Q0 = S("question", 0), Q1 = S("question", 1), M0 = S("something", 0), M1 = S("something", 1), M2 = S("something", 2);
+  const B0 = S("ball", 0), B1 = S("ball", 1), B2 = S("ball", 2), C0 = S("chain", 0), C1 = S("chain", 1), C2 = S("chain", 2);
+  const P0 = S("steps", 0), P1 = S("steps", 1), P2 = S("steps", 2), A0 = S("against", 0), A1 = S("against", 1), A2 = S("against", 2);
+  const T0 = S("true", 0), T1 = S("true", 1), T2 = S("true", 2), R0 = S("replies", 0), R1 = S("replies", 1), R2 = S("replies", 2);
+  const X0 = S("stops", 0), X1 = S("stops", 1), X2 = S("stops", 2), H0 = S("shows", 0), H1 = S("shows", 1), H2 = S("shows", 2), H3 = S("shows", 3), H4 = S("shows", 4);
+  const W0 = S("weigh", 0), W1 = S("weigh", 1);
+
+  // ================= 1 question / 11 weigh: a balance with weight on both sides =================
+  const gBal = el("g", {}, world);
+  sl(gBal, "M640 470 V300", { "stroke-width": 4 });
+  el("path", { d: "M604 470 L640 448 L676 470 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gBal);
+  const pans = [-1, 1].map((s) => { const g = el("g", {}, gBal); sl(g, "M0 0 L-58 92 M0 0 L58 92", { stroke: STONE, "stroke-width": 2.5 });
+    el("path", { d: "M-74 92 Q0 124 74 92 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); return g; });
+  const beam = el("g", {}, gBal); el("rect", { x: -272, y: -5, width: 544, height: 10, rx: 5, fill: INK }, beam);
+  el("path", { d: "M-12 -4 L0 -20 L12 -4 Z", fill: INK }, beam);
+  const against = [[-44, 64], [-6, 64], [-25, 36]].map(([x, y]) => el("rect", { x, y, width: 34, height: 26, rx: 2, fill: STONE, stroke: INK, "stroke-width": 2.5 }, pans[0]));
+  const reason = el("rect", { x: -17, y: 64, width: 34, height: 26, rx: 2, fill: MUSTARD, stroke: INK, "stroke-width": 2.5 }, pans[1]);
+  const panLab = [lab(gBal, 0, 506, "THE CASE AGAINST", 14), lab(gBal, 0, 506, "ONE REASON", 14)];
+
+  // ================= 2 something: an empty page, and something in it =================
+  const gPage = el("g", {}, world);
+  const pageBg = el("rect", { x: 430, y: 140, width: 420, height: 300, fill: PAPER }, gPage);
+  const pageEdge = line(gPage, "M430 140 H850 V440 H430 Z", { "stroke-width": 3 });
+  const leib = lab(gPage, 640, 505, "GOTTFRIED LEIBNIZ · 1714", 15);
+  const nothingW = txt(gPage, "ital", 640, 300, "nothing", 44, { fill: LINE });
+  const seed = el("path", { d: star(22), fill: MUSTARD }, gPage);
+  const uni = [...Array(24)].map(() => ({ a: [470 + R() * 340, 200 + R() * 200], b: [470 + R() * 340, 200 + R() * 200], k: 4 + R() * 5, e: spark(gPage, 2.5) }));
+  const four = ["SPACE", "TIME", "MATTER", "ENERGY"].map((s, i) => lab(gPage, [520, 760, 520, 760][i], [174, 174, 424, 424][i], s, 13));
+
+  // ================= 3 ball: a translucent ball in the woods, grown to the size of everything =================
+  const gWood = el("g", {}, world);
+  const tree = (x, h, w) => { const g = el("g", {}, gWood); sl(g, `M${x} ${GY} V${GY - h * 0.45}`, { "stroke-width": 4 });
+    el("path", { d: `M${x - w} ${GY - h * 0.35} L${x} ${GY - h} L${x + w} ${GY - h * 0.35} Z`, fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); return { g, x }; };
+  const trees = [[110, 230, 46], [210, 180, 40], [320, 250, 50], [700, 200, 40], [960, 240, 48], [1065, 190, 42], [1175, 250, 50]].map(([x, h, w]) => tree(x, h, w));
+  const ball = ballMake(world, 0.45);
+  const taylor = lab(world, 640, 515, "RICHARD TAYLOR · 1963", 15);
+  const qBall = txt(world, "disp", 812, 392, "?", 96, { fill: MUSTARD });
+
+  // ================= 4 chain: no first moment needed; hens and eggs, an endless line =================
+  const gC = el("g", {}, world);
+  const defs = el("defs", {}, gC), grad = el("linearGradient", { id: "fadeL", gradientUnits: "userSpaceOnUse", x1: 60, x2: 620, y1: 0, y2: 0 }, defs);
+  el("stop", { offset: 0, "stop-color": INK, "stop-opacity": 0 }, grad); el("stop", { offset: 1, "stop-color": INK, "stop-opacity": 1 }, grad);
+  const tLine = el("path", { d: "M60 330 H1190", stroke: "url(#fadeL)", "stroke-width": 3, "stroke-linecap": "round", fill: "none" }, gC);
+  const tHead = sl(gC, "M1176 320 L1192 330 L1176 340");
+  const ticks = [...Array(20)].map(() => el("line", { y1: 320, y2: 340, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gC));
+  const aquinas = lab(gC, 640, 282, "THOMAS AQUINAS", 15), pruss = lab(gC, 640, 240, "ALEXANDER PRUSS", 15);
+  const HEN = "M-28 0 Q-34 -26 -12 -32 Q-4 -50 12 -50 Q24 -50 24 -40 L34 -36 L24 -32 Q26 -10 10 0 Z";
+  const flock = [...Array(12)].map((_, k) => { const g = el("g", {}, gC);
+    if (k % 2 === 0) { el("path", { d: HEN, fill: STONE, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, g); el("path", { d: "M4 -50 L8 -58 L13 -51 L18 -57 L20 -48", fill: MUSTARD, stroke: INK, "stroke-width": 2, "stroke-linejoin": "round" }, g); }
+    else el("ellipse", { cx: 0, cy: -18, rx: 14, ry: 18, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, g);
+    arrowR(g, 40, 70, -20, { stroke: STONE, "stroke-width": 2.5 }); return g; });
+  const bracket = el("rect", { x: 70, y: 252, width: 1140, height: 112, rx: 10, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "7 10" }, gC);
+  const qChain = txt(gC, "disp", 640, 226, "?", 70, { fill: STONE });
+  const links = [...Array(26)].map((_, k) => k % 2 ? el("rect", { x: -30, y: -4, width: 60, height: 8, rx: 4, fill: INK }, gC) : el("ellipse", { rx: 32, ry: 15, fill: "none", stroke: INK, "stroke-width": 4 }, gC));
+
+  // ================= 5 steps: three numbered cards =================
+  const gSt = el("g", {}, world), cx3 = [290, 640, 990];
+  const cards = cx3.map((x, i) => { const g = el("g", {}, gSt);
+    const box = el("rect", { x: x - 150, y: 190, width: 300, height: 262, rx: 6, fill: PAPER, stroke: LINE, "stroke-width": 3 }, g);
+    const bar = el("rect", { x: x - 150, y: 186, width: 300, height: 7, rx: 3, fill: MUSTARD }, g);
+    const num = txt(g, "disp", x, 258, String(i + 1), 58, { fill: LINE });
+    const inner = el("g", {}, g);
+    const rowsT = [["MIGHT NOT HAVE BEEN", "EXPLAINED FROM OUTSIDE"], ["THE UNIVERSE", "THAT KIND OF THING"], ["EXISTS NECESSARILY", "NOT SPACE, TIME, MATTER"]][i];
+    rowsT.forEach((s, k) => lab(inner, x, 412 + k * 22, s, 13)); return { g, box, bar, num, inner, x }; });
+  el("rect", { x: 940, y: 296, width: 56, height: 56, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "5 6" }, cards[0].inner).setAttribute("x", 252);
+  const inArrow = sl(cards[0].inner, "M412 324 H316 M326 316 L314 324 L326 332", { stroke: INK, "stroke-width": 3 });
+  const stBall = ballMake(cards[1].inner, 0.4); stBall.c.setAttribute("stroke-dasharray", "6 7");
+  const wash3 = el("rect", { x: 870, y: 280, width: 240, height: 96, rx: 6, fill: MUSTARD, opacity: 0.1 }, cards[2].inner);
+  const stArrows = [0, 1].map((i) => arrowR(gSt, cx3[i] + 154, cx3[i + 1] - 156, 320, { "stroke-width": 3 }));
+
+  // ================= 6 against: Hume's question; Russell on the radio; the wall =================
+  const gAg = el("g", {}, world);
+  const agBall = ballMake(gAg, 0.5);
+  const hume = lab(gAg, 640, 190, "DAVID HUME · DIALOGUES · 1779", 15);
+  const necQ = lab(gAg, 640, 450, "NECESSARY?", 15, STONE);
+  const radio = el("g", {}, gAg);
+  el("rect", { x: 210, y: 350, width: 170, height: 120, rx: 8, fill: WARM, stroke: INK, "stroke-width": 3 }, radio);
+  [0, 1, 2, 3, 4].forEach((k) => el("line", { x1: 230, x2: 310, y1: 372 + k * 18, y2: 372 + k * 18, stroke: STONE, "stroke-width": 3, "stroke-linecap": "round" }, radio));
+  [0, 1].forEach((k) => el("rect", { x: 330, y: 376 + k * 36, width: 30, height: 18, rx: 3, fill: INK }, radio));
+  sl(radio, "M350 350 L392 286", { "stroke-width": 3 });
+  const waves = [0, 1, 2].map(() => sl(radio, "", { stroke: STONE, "stroke-width": 3 }));
+  const bbc = lab(gAg, 520, 515, "RUSSELL AND COPLESTON · BBC · 1948", 15);
+  // the wall (also used in "replies")
+  const gWall = el("g", {}, world), bricks = [];
+  for (let r = 0; r < 8; r++) for (let c = 0; c < 8; c++) { const x = 412 + c * 60 + (r % 2 ? 30 : 0); if (x > 852) continue;
+    bricks.push({ r, c, e: el("rect", { x, y: 444 - r * 26, width: 56, height: 23, rx: 2, fill: WARM, stroke: INK, "stroke-width": 2.5 }, gWall) }); }
+  const oneBrick = el("rect", { x: 412, y: 444, width: 56, height: 23, rx: 2, fill: MUSTARD, stroke: INK, "stroke-width": 2.5 }, gWall);
+  const brickLab = lab(gWall, 250, 462, "ONE BRICK: SMALL", 14);
+  const wallBr = sl(gWall, "M896 260 H910 V467 H896", { "stroke-width": 3 });
+  const wallLab = lab(gWall, 1046, 368, "THE WALL: NOT SMALL", 14);
+  const qWall = txt(gWall, "disp", 640, 222, "?", 74, { fill: STONE });
+  const brickWall = lab(gWall, 640, 515, "A BRICK WALL", 15);
+
+  // ================= 7 true: a principle with nothing under it; Krauss's box =================
+  const gTr = el("g", {}, world);
+  const prin = el("g", {}, gTr); el("rect", { x: 360, y: 196, width: 560, height: 76, rx: 6, fill: PAPER, stroke: INK, "stroke-width": 3 }, prin);
+  txt(prin, "disp", 640, 246, "Everything has an explanation", 34);
+  const under = el("g", {}, gTr); sl(under, "M640 278 V330", { stroke: STONE, "stroke-dasharray": "5 7" });
+  el("rect", { x: 500, y: 338, width: 280, height: 102, rx: 6, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "7 9" }, under);
+  lab(under, 640, 396, "SOMETHING MORE CERTAIN?", 13, STONE);
+  const gBox = el("g", {}, world);
+  const krBall = ballMake(gBox, 0.5);
+  el("rect", { x: 520, y: 350, width: 240, height: 120, fill: WARM, stroke: INK, "stroke-width": 3 }, gBox);
+  lab(gBox, 640, 418, "NOTHING", 16);
+  const lid = el("rect", { x: -124, y: -12, width: 248, height: 22, rx: 3, fill: PAPER, stroke: INK, "stroke-width": 3 }, gBox);
+  const krauss = lab(gBox, 640, 515, "LAWRENCE KRAUSS · 2012", 15);
+  const gCause = el("g", {}, world);
+  el("rect", { x: 380, y: 206, width: 520, height: 76, rx: 6, fill: "none", stroke: STONE, "stroke-width": 3, "stroke-dasharray": "8 8" }, gCause);
+  txt(gCause, "disp", 640, 256, "Everything needs a cause", 34, { fill: STONE });
+  const film = el("g", {}, gCause);
+  el("rect", { x: -190, y: -34, width: 380, height: 68, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, film);
+  [...Array(10)].forEach((_, k) => { el("rect", { x: -176 + k * 37, y: -28, width: 14, height: 8, rx: 1, fill: STONE }, film); el("rect", { x: -176 + k * 37, y: 20, width: 14, height: 8, rx: 1, fill: STONE }, film); });
+  lab(film, 0, 6, "WHO MADE GOD?  ITS OWN FILM", 14);
+
+  // ================= 8 replies: the box opened, laws written inside =================
+  const gLaw = el("g", {}, world);
+  el("rect", { x: 480, y: 290, width: 320, height: 180, fill: PAPER, stroke: INK, "stroke-width": 3 }, gLaw);
+  sl(gLaw, "M480 290 L452 262 M800 290 L828 262", { "stroke-width": 3 });
+  const nothingQ = txt(gLaw, "ital", 640, 250, "“nothing”", 40, { fill: STONE });
+  lab(gLaw, 640, 322, "QUANTUM LAWS", 13);
+  const laws = [...Array(5)].map((_, k) => el("line", { x1: 512, x2: k === 4 ? 680 : 768, y1: 350 + k * 22, y2: 350 + k * 22, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gLaw));
+  const albert = lab(gLaw, 640, 515, "DAVID ALBERT", 15);
+  const mightNot = el("g", {}, gLaw); el("rect", { x: 430, y: 206, width: 420, height: 280, rx: 10, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "7 10" }, mightNot);
+  lab(mightNot, 640, 548, "MIGHT NOT HAVE BEEN", 14, STONE);
+
+  // ================= 9 stops: two places a line of explanation could end =================
+  const gX = el("g", {}, world);
+  const xStart = el("path", { d: star(13), fill: MUSTARD, transform: "translate(140 300)" }, gX);
+  const xLine = line(gX, "M160 300 H634", { "stroke-width": 3 });
+  const chev = [...Array(7)].map(() => sl(gX, "M-6 -8 L4 0 L-6 8", { "stroke-width": 3 }));
+  const stopA = el("rect", { x: 637, y: 252, width: 7, height: 96, rx: 3, fill: INK }, gX);
+  const labA = lab(gX, 640, 228, "THE UNIVERSE OR ITS LAWS", 14);
+  const xDash = el("path", { d: "M650 300 H996", stroke: STONE, "stroke-width": 3, "stroke-dasharray": "6 10", "stroke-linecap": "round", fill: "none" }, gX);
+  const washB = el("rect", { x: 1000, y: 170, width: 110, height: 300, fill: MUSTARD }, gX);
+  const labB = lab(gX, 1055, 150, "A NECESSARY BEING?", 14);
+  const grpA = [0, 1, 2, 3].map((i) => dot(gX, 0, GY - 11)), grpB = [0, 1, 2, 3].map((i) => dot(gX, 0, GY - 11));
+  const qStop = txt(gX, "disp", 840, 252, "?", 96, { fill: MUSTARD });
+
+  // ================= 10 shows: light over the universe; a road that goes further; Athens =================
+  const gSh = el("g", {}, world);
+  const shLight = el("path", { d: "M570 96 L710 96 L780 470 L500 470 Z", fill: MUSTARD }, gSh);
+  const shBall = ballMake(gSh, 0.5);
+  const posts = [[380, true, "A NECESSARY BEING"], [720, false, "THREE PERSONS"], [1040, false, "BECAME A MAN"]].map(([x, lit, s]) => { const g = el("g", {}, gSh);
+    sl(g, `M${x} ${GY} V${GY - 130}`, lit ? { "stroke-width": 5 } : { stroke: LINE, "stroke-width": 4, "stroke-dasharray": "6 9" });
+    if (lit) el("rect", { x: x - 22, y: GY - 140, width: 44, height: 10, rx: 4, fill: MUSTARD }, g);
+    lab(g, x, GY - 156, s, 14, STONE); return g; });
+  const notYet = lab(gSh, 880, 515, "NOT SHOWN BY THIS ARGUMENT", 13, STONE);
+  const gAth = el("g", {}, world);
+  const ath = [line(gAth, "M470 470 V452 H810 V470"), line(gAth, "M484 452 V440 H796 V452"), line(gAth, "M468 330 H812 V314 H468 Z"), line(gAth, "M468 314 L640 268 L812 314", { "stroke-width": 3 })];
+  const cols = [512, 568, 624, 680, 736, 768].slice(0, 5).map((x, i) => line(gAth, `M${512 + i * 64} 440 V330`, { "stroke-width": 5 }));
+  const athens = lab(gAth, 640, 515, "ATHENS", 15);
+  const paul = dot(world, 0, GY - 11);
+  const vActs = verse(SC.shows, 640, 140, 34, 50, true);
+  const resPost = el("g", {}, world); sl(resPost, `M1110 ${GY} V${GY - 120}`, { "stroke-width": 5 }); el("rect", { x: 1088, y: GY - 130, width: 44, height: 10, rx: 4, fill: MUSTARD }, resPost);
+  lab(resPost, 1110, 506, "THE RESURRECTION", 14); lab(resPost, 1110, 530, "A QUESTION OF HISTORY", 13, STONE);
+  const road = el("path", { d: "M880 470 H1110", stroke: MUSTARD, "stroke-width": 5, "stroke-linecap": "round", fill: "none", pathLength: 1, "stroke-dasharray": 1, "stroke-dashoffset": 1 }, world);
+
+  // ================= 11 weigh: two ways Christians hold it; the balance again =================
+  const gWg = el("g", {}, world);
+  const views = [[320, ["REASON CAN SHOW", "THAT GOD EXISTS"], "FOLLOWING AQUINAS"], [960, ["BELIEF CAN BE WARRANTED", "WITHOUT SUCH ARGUMENTS"], ""]].map(([x, rowsT, sub]) => { const g = el("g", {}, gWg);
+    el("rect", { x: x - 190, y: 196, width: 380, height: 96, rx: 6, fill: PAPER, stroke: INK, "stroke-width": 3 }, g);
+    rowsT.forEach((s, k) => lab(g, x, 238 + k * 26, s, 14)); if (sub) lab(g, x, 322, sub, 13, STONE);
+    const ds = [-51, -17, 17, 51].map((dx) => dot(g, x + dx, GY - 11)); const lens = line(g, `M${x} 440 V336`, { stroke: STONE, "stroke-width": 2.5 }); return { g, ds, lens }; });
+  const vCol = verse(SC.weigh, 640, 146, 32, 46, false);
+
+  F.title("Does God exist?");
+  F.endCard(SC.weigh.titleCard, END + 0.7);
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    draw(ground, up(t, Q0 - 0.2, 1.4)); op(ground, outAll);
+
+    // ----- 1 question, and 11 weigh (the balance) -----
+    const balA = win(t, Q0 + 0.1, M0), balW = up(t, W1 - 0.3, 0.8) * outAll;
+    op(gBal, Math.max(balA, balW));
+    const drop = (a) => up(t, a, 0.7);
+    against.forEach((b, i) => { const k = drop(at("question", 0, 0.32 + i * 0.12)); op(b, Math.max(k, t > W0 ? 1 : 0)); b.setAttribute("transform", `translate(0 ${(-110 * (1 - (t > W0 ? 1 : k))).toFixed(1)})`); });
+    const rk = drop(at("question", 1, 0.18)); op(reason, Math.max(rk, t > W0 ? 1 : 0)); reason.setAttribute("transform", `translate(0 ${(-110 * (1 - (t > W0 ? 1 : rk))).toFixed(1)})`);
+    panLab.forEach((l, i) => op(l, i === 0 ? up(t, at("question", 0, 0.4), 0.6) : up(t, at("question", 1, 0.3), 0.6)));
+    let th = t < W0 ? -0.15 * ease(clamp((t - at("question", 0, 0.32)) / 3.4)) + 0.09 * up(t, at("question", 1, 0.24), 1.6) + 0.012 * Math.sin(t * 1.2)
+                    : -0.035 + 0.05 * Math.sin((t - W1) * 0.7) * (1 - 0.6 * up(t, W1 + 5, 4));
+    move(beam, 640, 300, 1, th * 57.3);
+    pans.forEach((p, i) => { const s = i ? 1 : -1; move(p, 640 + s * 272 * Math.cos(th), 300 + s * 272 * Math.sin(th)); panLab[i].setAttribute("x", (640 + s * 272 * Math.cos(th)).toFixed(1)); });
+
+    // ----- 2 something -----
+    op(gPage, win(t, M0, B0)); draw(pageEdge, up(t, M0 - 0.3, 1.4)); op(pageBg, up(t, M0, 1));
+    op(leib, up(t, at("something", 0, 0.15), 0.7));
+    const seedK = up(t, at("something", 1, 0.28), 1.0), gone = up(t, at("something", 2, 0.8), 1.1);
+    op(nothingW, span(t, M1 - 0.1, at("something", 1, 0.3), 0.6, 0.6));
+    op(seed, seedK * (1 - gone)); seed.setAttribute("transform", `translate(640 290) rotate(${(t * 12).toFixed(1)}) scale(${(seedK * (1 - 0.45 * up(t, M2, 1.2))).toFixed(3)})`);
+    const bloom = up(t, M2 - 0.1, 1.8), diff = up(t, at("something", 2, 0.5), 1.6);
+    uni.forEach((u, i) => { const x = mix(640, mix(u.a[0], u.b[0], diff), bloom), y = mix(290, mix(u.a[1], u.b[1], diff), bloom); op(u.e, bloom * (1 - gone)); move(u.e, x, y + 2 * Math.sin(t * 1.4 + i), u.k * (0.9 + 0.15 * Math.sin(t * 2 + i))); });
+    four.forEach((w, i) => op(w, up(t, at("something", 2, 0.12 + i * 0.07), 0.5) * (1 - gone)));
+
+    // ----- 3 ball -----
+    const bIn = up(t, B0 - 0.6, 0.6), bOut = 1 - up(t, C0 - 0.6, 0.6), grow = up(t, at("ball", 2, 0.25), 3.4);
+    op(gWood, bIn * bOut * (1 - grow));
+    trees.forEach((tr, i) => tr.g.setAttribute("transform", `rotate(${(0.8 * Math.sin(t * 0.9 + i)).toFixed(2)} ${tr.x} ${GY})`));
+    const ballK = up(t, at("ball", 0, 0.62), 1.2);
+    op(ball.g, ballK * bOut); ballAt(ball, 640, mix(400 + 2 * Math.sin(t * 1.1), 360, grow), mix(70 * ballK, 820, grow), t);
+    ball.sp.forEach((s) => op(s.e, up(t, at("ball", 2, 0.5), 1.4)));
+    op(taylor, up(t, at("ball", 0, 0.35), 0.7) * (1 - up(t, at("ball", 2, 0.2), 0.8)));
+    op(qBall, span(t, B1 - 0.2, B2 + 0.5, 0.6, 0.6));
+
+    // ----- 4 chain -----
+    const cIn = win(t, C0, P0), hens = up(t, C1 - 0.4, 1.2); op(gC, cIn);
+    op(tLine, up(t, C0 - 0.2, 0.9)); op(tHead, 1 - hens);
+    ticks.forEach((k, i) => { const x = 1180 - (((i * 60 + (t - C0) * 22) % 1200) + 1200) % 1200; set(k, { x1: x.toFixed(1), x2: x.toFixed(1) }); op(k, clamp((x - 60) / 520) * clamp((1190 - x) / 40) * up(t, C0, 0.8) * (1 - hens)); });
+    op(aquinas, span(t, at("chain", 0, 0.45), C1 - 0.1, 0.6)); op(pruss, span(t, C1 + 0.4, at("chain", 2, 0.2), 0.6));
+    const flow = (t - C1) * 24;
+    flock.forEach((g, k) => { const x = 1240 - (((k * 106 + flow) % 1272) + 1272) % 1272; move(g, x, 330); op(g, hens * clamp((x - 60) / 420) * clamp((1230 - x) / 80)); });
+    op(bracket, up(t, at("chain", 2, 0.12), 0.8)); op(qChain, span(t, at("chain", 2, 0.22), at("chain", 2, 0.62), 0.6));
+    const lk = up(t, at("chain", 2, 0.56), 1.2);
+    links.forEach((l, k) => { const x = 1240 - (((k * 48 + flow) % 1248) + 1248) % 1248; if (k % 2) move(l, x, 410); else set(l, { cx: x.toFixed(1), cy: 410 }); op(l, lk * clamp((x - 60) / 420) * clamp((1230 - x) / 80)); });
+
+    // ----- 5 steps -----
+    op(gSt, win(t, P0, A0));
+    const lit = [P0, P1, P2];
+    cards.forEach((c, i) => { const k = up(t, lit[i] - 0.1, 0.8); c.box.setAttribute("stroke", k > 0.5 ? INK : LINE); c.num.style.fill = k > 0.5 ? INK : LINE;
+      op(c.bar, k); set(c.bar, { width: (300 * k).toFixed(1) }); op(c.inner, k); op(c.g, up(t, P0 - 0.5 + i * 0.25, 0.6)); });
+    inArrow.setAttribute("transform", `translate(${(-6 * Math.sin(t * 2)).toFixed(1)} 0)`);
+    ballAt(stBall, 640, 324, 46 + 2 * Math.sin(t * 1.3), t);
+    wash3.setAttribute("opacity", (0.08 + 0.03 * Math.sin(t * 1.4)).toFixed(3));
+    stArrows.forEach((a, i) => op(a, up(t, lit[i + 1] + 0.2, 0.6)));
+
+    // ----- 6 against -----
+    op(gAg, win(t, A0, A2 + 0.3));
+    const toR = up(t, A1 - 0.2, 1.6), still = up(t, at("against", 1, 0.66), 1.4);
+    ballAt(agBall, mix(640, 840, toR), mix(320, GY - 82, toR) + 4 * Math.sin(t * 1.6) * (1 - still), 80, t);
+    op(hume, span(t, A0 - 0.2, A1 - 0.2, 0.6)); op(necQ, span(t, at("against", 0, 0.52), A1 + 0.2, 0.6));
+    op(radio, up(t, A1, 0.8)); op(bbc, up(t, at("against", 1, 0.12), 0.7));
+    waves.forEach((w, i) => { const ph = ((t * 0.6 + i / 3) % 1), r = 20 + ph * 70; w.setAttribute("d", `M${392} ${410 - r} A${r} ${r} 0 0 1 ${392} ${410 + r}`); w.setAttribute("transform", `translate(${(ph * 20).toFixed(1)} 0)`); op(w, Math.sin(Math.PI * ph) * (1 - still * 0.7)); });
+    const wallA = win(t, A2, T0), wallR = win(t, R0, R2 + 0.2), wb = (t < T0 ? at("against", 2, 0.04) : R0 - 0.2);
+    op(gWall, Math.max(wallA, wallR));
+    const inR = t >= T0, fillK = inR ? up(t, R1 + 0.2, 1.4) : 1;
+    bricks.forEach((b) => { op(b.e, up(t, wb + b.r * 0.32 + b.c * 0.03, 0.4)); set(b.e, { "fill-opacity": fillK.toFixed(3), "stroke-dasharray": fillK < 0.5 ? "5 6" : "none", stroke: fillK < 0.5 ? STONE : INK }); });
+    op(oneBrick, inR ? 0 : up(t, at("against", 2, 0.42), 0.6)); op(brickLab, inR ? 0 : up(t, at("against", 2, 0.46), 0.6));
+    op(wallBr, inR ? 0 : up(t, at("against", 2, 0.68), 0.6)); op(wallLab, inR ? 0 : up(t, at("against", 2, 0.72), 0.6));
+    op(qWall, inR ? span(t, at("replies", 0, 0.45), R1 + 0.3, 0.6) : 0); op(brickWall, inR ? up(t, at("replies", 1, 0.55), 0.6) : 0);
+
+    // ----- 7 true -----
+    op(gTr, win(t, T0, T1)); prin.setAttribute("transform", `rotate(${(1.1 * Math.sin(t * 1.1)).toFixed(2)} 640 234)`); op(under, up(t, at("true", 0, 0.45), 0.8));
+    op(gBox, win(t, T1, T2)); const rise = up(t, at("true", 1, 0.42), 2.2);
+    move(lid, 640 + 280 * rise, 344 + 114 * rise - 40 * Math.sin(Math.PI * rise));
+    ballAt(krBall, 640, mix(410, 250, rise) + 3 * Math.sin(t * 1.5), mix(30, 60, rise), t); op(krBall.g, up(t, at("true", 1, 0.42), 0.5));
+    op(krauss, up(t, at("true", 1, 0.08), 0.6));
+    op(gCause, win(t, T2, R0)); const fs = up(t, at("true", 2, 0.55), 1.4); move(film, mix(1500, 640, fs), 400); op(film, fs);
+
+    // ----- 8 replies (wall handled above), the box opened -----
+    op(gLaw, win(t, R2, X0)); laws.forEach((l, k) => op(l, up(t, at("replies", 2, 0.22 + k * 0.06), 0.5)));
+    op(nothingQ, up(t, R2, 0.7)); op(albert, up(t, at("replies", 2, 0.1), 0.6)); op(mightNot, up(t, at("replies", 2, 0.72), 0.8));
+
+    // ----- 9 stops -----
+    op(gX, win(t, X0, H0)); const pause = up(t, X2 - 0.2, 0.6), mv = 1 - pause;
+    xStart.setAttribute("transform", `translate(140 300) rotate(${(t * 10 * mv).toFixed(1)})`);
+    draw(xLine, up(t, X0, 1.8)); op(stopA, up(t, at("stops", 0, 0.22), 0.6)); op(labA, up(t, at("stops", 0, 0.5), 0.6));
+    chev.forEach((c, i) => { const ph = (((i / 7) + (t < X2 ? t : X2) * 0.05) % 1), x = 180 + ph * 440; move(c, x, 300); op(c, up(t, X0 + 1, 0.8) * Math.sin(Math.PI * ph)); });
+    op(xDash, up(t, X1 - 0.2, 1.2)); op(washB, up(t, at("stops", 1, 0.22), 1.2) * (0.09 + 0.02 * Math.sin(t * 1.3) * mv)); op(labB, up(t, at("stops", 1, 0.3), 0.7));
+    const wa = up(t, at("stops", 0, 0.55), 2.2), wbk = up(t, at("stops", 1, 0.7), 2.2);
+    grpA.forEach((d, i) => { set(d, { cx: mix(-40 - i * 40, 589 + i * 34, wa).toFixed(1) }); op(d, wa > 0 ? 1 : 0); });
+    grpB.forEach((d, i) => { set(d, { cx: mix(589 + i * 34, 1004 + i * 34, wbk).toFixed(1), cy: (GY - 11 - 4 * Math.abs(Math.sin(t * 5 + i)) * (wbk > 0.02 && wbk < 0.98 ? 1 : 0)).toFixed(1) }); op(d, up(t, at("stops", 1, 0.62), 0.6)); });
+    op(qStop, span(t, X2 - 0.2, H0 - 0.3, 0.6, 0.6));
+
+    // ----- 10 shows -----
+    op(gSh, win(t, H0, H2)); const sh = up(t, H1 - 0.3, 1.8);
+    op(shLight, up(t, at("shows", 0, 0.2), 1.4) * (1 - sh) * (0.09 + 0.02 * Math.sin(t * 1.2)));
+    ballAt(shBall, mix(640, 230, sh), mix(330, GY - 42, sh) + 3 * Math.sin(t * 1.2), mix(80, 40, sh), t);
+    posts.forEach((p, i) => op(p, up(t, at("shows", 1, 0.08 + i * 0.22), 0.7))); op(notYet, up(t, at("shows", 1, 0.62), 0.7));
+    op(gAth, win(t, H2, W0)); ath.forEach((a, i) => draw(a, up(t, H2 - 0.3 + i * 0.3, 0.8))); cols.forEach((c, i) => draw(c, up(t, H2 + i * 0.15, 0.7)));
+    const pw = up(t, H2 - 0.2, 1.6), pr = up(t, H4 + 0.3, 2.4);
+    set(paul, { cx: (pr > 0 ? mix(870, 1060, pr) : mix(1320, 870, pw)).toFixed(1), cy: (GY - 11 - 3 * Math.abs(Math.sin(t * 6)) * ((pw > 0.02 && pw < 0.98) || (pr > 0.02 && pr < 0.98) ? 1 : 0)).toFixed(1) });
+    op(paul, win(t, H2, W0)); op(athens, up(t, H2 + 0.6, 0.6));
+    op(vActs, span(t, H3 - 0.35, H4 + 1.2, 0.6));
+    op(resPost, win(t, H4 - 0.1, W0)); road.setAttribute("stroke-dashoffset", (1 - up(t, H4 + 0.4, 2.2)).toFixed(4)); op(road, win(t, H4 + 0.4, W0));
+
+    // ----- 11 weigh -----
+    op(gWg, win(t, W0, W1 + 0.2));
+    views.forEach((v, j) => { op(v.g, up(t, W0 + (j ? at("weigh", 0, 0.55) - W0 : 0), 0.8)); draw(v.lens, up(t, (j ? at("weigh", 0, 0.6) : at("weigh", 0, 0.2)), 1)); v.ds.forEach((d, i) => d.setAttribute("cy", (GY - 11 - 2 * Math.abs(Math.sin(t * 1.4 + i + j))).toFixed(1))); });
+    op(vCol, span(t, W1 + 0.4, END + 0.6, 0.8, 0.4));
+  };
+});
+</script>
+</body></html>

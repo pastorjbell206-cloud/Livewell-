@@ -1,0 +1,206 @@
+{
+ "length": 182.26,
+ "chapters": [
+  {
+   "id": "objection",
+   "kicker": "The objection",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 11.14,
+   "lines": [
+    {
+     "text": "Read the Gospels side by side, and you'll find places where they don't agree.",
+     "start": 2.6,
+     "end": 6.5
+    },
+    {
+     "text": "If the Bible can't keep its own story straight, why trust it?",
+     "start": 7.04,
+     "end": 10.24
+    }
+   ]
+  },
+  {
+   "id": "old",
+   "kicker": "Nothing new",
+   "level": 0.3,
+   "start": 10.34,
+   "end": 31.1,
+   "lines": [
+    {
+     "text": "Start here. These aren't modern discoveries. Christians noticed them from the start.",
+     "start": 11.24,
+     "end": 15.94
+    },
+    {
+     "text": "Early in the third century, Julius Africanus wrote about Jesus' two family trees. Around the year 400, Augustine wrote a whole book on how the Gospels agree.",
+     "start": 16.6,
+     "end": 26.52
+    },
+    {
+     "text": "The church never hid the hard places. It wrote about them.",
+     "start": 27.18,
+     "end": 30.2
+    }
+   ]
+  },
+  {
+   "id": "day",
+   "kicker": "The day He died",
+   "level": 0.45,
+   "start": 30.3,
+   "end": 58.42,
+   "lines": [
+    {
+     "text": "Here's a real one. Matthew, Mark and Luke present the Last Supper as a Passover meal. John puts Jesus' trial on the day of Preparation, when the lambs were killed.",
+     "start": 31.2,
+     "end": 41.14
+    },
+    {
+     "text": "Careful scholars hold four different solutions, and each has a real weakness. The question isn't settled.",
+     "start": 41.9,
+     "end": 47.76
+    },
+    {
+     "text": "But look at what all four agree on. Jesus died under Pilate, in Jerusalem, at Passover, on a Friday, and was raised on the first day of the week.",
+     "start": 48.5,
+     "end": 57.52
+    }
+   ]
+  },
+  {
+   "id": "trees",
+   "kicker": "Two family trees",
+   "level": 0.55,
+   "start": 57.62,
+   "end": 86.3,
+   "lines": [
+    {
+     "text": "Matthew and Luke give Jesus two different lists of ancestors between David and Joseph.",
+     "start": 58.52,
+     "end": 62.94
+    },
+    {
+     "text": "Some say Luke gives Mary's line. Others say one list is the royal line and the other the natural descent. Africanus offered his own answer and admitted he couldn't prove it.",
+     "start": 63.56,
+     "end": 73.58
+    },
+    {
+     "text": "No solution is established. But both lists make the same claim. Jesus, through Joseph, his legal father, was of the house of David. Paul had already said so in the fifties.",
+     "start": 74.1,
+     "end": 85.4
+    }
+   ]
+  },
+  {
+   "id": "census",
+   "kicker": "A census",
+   "level": 0.6,
+   "start": 85.5,
+   "end": 106.92,
+   "lines": [
+    {
+     "text": "Luke ties Jesus' birth to a census under Quirinius. The historian Josephus dates that census about ten years after Herod died.",
+     "start": 86.4,
+     "end": 94.52
+    },
+    {
+     "text": "Several answers have been proposed, and none commands agreement. The question is open.",
+     "start": 95.12,
+     "end": 99.92
+    },
+    {
+     "text": "What it touches is the date of a census, not whether Jesus was born under Herod in David's town.",
+     "start": 100.5,
+     "end": 106.02
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "kicker": "Numbers",
+   "level": 0.65,
+   "start": 106.12,
+   "end": 130.88,
+   "lines": [
+    {
+     "text": "In the Old Testament, Kings and Chronicles tell the same reigns and sometimes give different numbers. Forty thousand stalls in one, four thousand in the other.",
+     "start": 107.02,
+     "end": 115.66
+    },
+    {
+     "text": "Many of these came from copying. Numbers were easy to miscopy, and some readings are impossible on the books' own figures.",
+     "start": 116.32,
+     "end": 123.4
+    },
+    {
+     "text": "And they show something else. The writer of Chronicles had the older books open in front of him, and he didn't hide them.",
+     "start": 123.94,
+     "end": 129.98
+    }
+   ]
+  },
+  {
+   "id": "witnesses",
+   "kicker": "What witnesses do",
+   "level": 0.8,
+   "start": 130.08,
+   "end": 144.7,
+   "lines": [
+    {
+     "text": "Here's the pattern. Independent accounts that agree at the center and differ at the edges are what historians usually find when a real event has been told more than once.",
+     "start": 130.98,
+     "end": 140.32
+    },
+    {
+     "text": "Differences at the edges don't turn the center into legend.",
+     "start": 140.94,
+     "end": 143.8
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.6,
+   "start": 143.9,
+   "end": 165.0,
+   "lines": [
+    {
+     "text": "Christians also differ on how to say what this means. Some hold that Scripture is without error in all that it affirms.",
+     "start": 144.8,
+     "end": 151.82
+    },
+    {
+     "text": "Others hold it is infallible in what God gave it to teach, without requiring every number or date to be harmonized.",
+     "start": 152.32,
+     "end": 158.78
+    },
+    {
+     "text": "Both confess that God has spoken in Scripture, and that it is the church's final authority.",
+     "start": 159.02,
+     "end": 164.1
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 164.2,
+   "end": 176.162,
+   "lines": [
+    {
+     "text": "So read slowly. Put the accounts side by side. Notice the hard places.",
+     "start": 165.1,
+     "end": 170.14
+    },
+    {
+     "text": "You'll find that nearly every one sits at the edge of a story whose center they share.",
+     "start": 170.7,
+     "end": 175.262
+    }
+   ]
+  }
+ ]
+}

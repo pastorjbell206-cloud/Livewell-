@@ -1,0 +1,119 @@
+{
+  "title": "Written too late?",
+  "note": "Apologetics film 2, written 2026-11-26 in the Gather session at James's word. Every fact comes from two LiveWell pages and their ledger: /questions/authors/written-decades-later and /questions/authors/the-gospels-are-anonymous. See facts.md. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/questions/authors/written-decades-later",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "objection",
+      "kicker": "The objection",
+      "level": 0.2,
+      "lines": [
+        "Here's another objection. The Gospels were written decades after Jesus, by people who never met Him, under names someone added later.",
+        "If that's true, why trust what they say?"
+      ]
+    },
+    {
+      "id": "true",
+      "kicker": "What's true in it",
+      "level": 0.3,
+      "lines": [
+        "Again, start with what's true.",
+        "Jesus was crucified around the year thirty. Most scholars date Mark around seventy, Matthew and Luke later, and John in the nineties.",
+        "That's forty to sixty-five years. Some able scholars argue for earlier dates, but that's a minority view, and it has to be argued, not assumed.",
+        "And none of the four Gospels names its author in its own text."
+      ]
+    },
+    {
+      "id": "lifetime",
+      "kicker": "Inside one lifetime",
+      "level": 0.4,
+      "lines": [
+        "But think about what a gap like that is. It sits inside a single lifetime.",
+        "People who had known Jesus were still alive. Many more had known them."
+      ]
+    },
+    {
+      "id": "paul",
+      "kicker": "Earlier than any Gospel",
+      "level": 0.55,
+      "lines": [
+        "And we have writing from inside the gap. Paul's letters, from the fifties.",
+        "In one of them, Paul passes on a summary he says he himself received.",
+        "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures,",
+        "Most scholars, including many with no stake in Christianity, think that summary took shape within a few years of the cross.",
+        "And Paul says he stayed fifteen days with Peter in Jerusalem, and later met James and John."
+      ],
+      "scripture": {
+        "reference": "1 Corinthians 15:3-4",
+        "translation": "Berean Standard Bible",
+        "text": "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures,",
+        "spoken": true
+      }
+    },
+    {
+      "id": "gaps",
+      "kicker": "How historians treat gaps",
+      "level": 0.6,
+      "lines": [
+        "Historians of the ancient world work with far bigger gaps than this.",
+        "One of our main accounts of Alexander the Great's campaigns, by Arrian, was written more than four centuries after them. Historians still use it, carefully.",
+        "So the question isn't only how long the gap was. It's what stood inside it."
+      ]
+    },
+    {
+      "id": "names",
+      "kicker": "Anonymous, or unknown?",
+      "level": 0.65,
+      "lines": [
+        "Now the names. It's true the titles, According to Matthew and the rest, were almost certainly added by others.",
+        "But anonymous isn't the same as unknown. Every early copy that keeps a title gives the same four names. No early copy gives another.",
+        "If churches across the Roman world had guessed, you'd expect a Gospel of Andrew in one place and of Philip in another. We find none.",
+        "And look at two of the names. Mark and Luke weren't among the Twelve. Mark is remembered as the man who turned back partway through Paul's first mission.",
+        "When people did write gospels under famous names, they chose apostles, like Peter. Mark and Luke look less like a grab for authority than a memory nobody was free to improve."
+      ]
+    },
+    {
+      "id": "witness",
+      "kicker": "The earliest witnesses",
+      "level": 0.75,
+      "lines": [
+        "Early in the second century, a writer named Papias passed on what an older teacher told him: that Mark had been Peter's interpreter, and wrote down what Peter remembered.",
+        "And Luke never claims to have seen Jesus. He says he carefully investigated what the eyewitnesses handed down. That's just what the church always said of him."
+      ]
+    },
+    {
+      "id": "reply",
+      "kicker": "The strongest reply",
+      "level": 0.8,
+      "lines": [
+        "A skeptic can answer that witnesses alive somewhere don't help unless the writers used them. And memory is fragile.",
+        "That's fair. Memory bends, and a witness interprets as well as remembers.",
+        "But this story was told in churches where Peter, James and John had preached, among people who had heard them. It wasn't free to drift wherever anyone wished."
+      ]
+    },
+    {
+      "id": "open",
+      "kicker": "What stays open",
+      "level": 0.6,
+      "lines": [
+        "Some things stay open. Whether the apostle Matthew wrote the Gospel that bears his name, or stands behind it. Who the beloved disciple was. Exactly when Mark wrote.",
+        "Faithful Christians differ on those, and honest scholars live with them."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "What the church confesses doesn't hang on a decade. It hangs on whether these books tell the truth about a man crucified under Pontius Pilate and raised on the third day.",
+        "And the earliest witness to that claim is older than any of the four."
+      ],
+      "titleCard": [
+        "Ask what stood inside the gap.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

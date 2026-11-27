@@ -1,0 +1,65 @@
+"""Batch 13 film: "Why can't I see God?" (slug why-cant-i-see-god). Sources, and nothing else: the old Bible Explorer film
+client/public/explorer/films/why-cant-i-see-god.json (older captions) with its rows in docs/work/elite/explorer-ledger.md
+("see-god" rows); the live hard-question page client/public/questions/evil/the-hiddenness-of-god.json, whose sources were
+checked in docs/work/elite/apol-pilot/evil/the-hiddenness-of-god.md (ledger docs/work/elite/apol-ledger.md, key "al");
+the Honest Answer "does-god-actually-exist" in client/src/data/answers.ts; and the Study Bible doctrine page
+client/public/bible/doctrines/revelation.json. The prayer side (feeling far from God) belongs to the sibling film
+god-silent and is left out here. The old film has no care line. Scripture is the Berean Standard Bible, checked by
+film/tools/write-script.py."""
+import sys; sys.path.insert(0, "film/tools")
+from importlib import import_module
+write = import_module("write-script").write
+NOTE = "Written on 2026-11-26 from the Bible Explorer film why-cant-i-see-god (with its explorer-ledger rows), the hard-question page client/public/questions/evil/the-hiddenness-of-god.json (record docs/work/elite/apol-pilot/evil/the-hiddenness-of-god.md), the Honest Answer does-god-actually-exist in client/src/data/answers.ts, and the Study Bible doctrine page on revelation."
+S = lambda ref, text, spoken=False: {"reference": ref, "text": text, "spoken": spoken}
+END = "LiveWell by James Bell"
+
+write("why-cant-i-see-god", "Why can't I see God?", "/study/explorer/watch/why-cant-i-see-god", [
+  {"id": "question", "kicker": "A fair question", "level": 0.2, "lines": [
+    "If God is real, why can't anyone see him? It's a fair question, and the Bible doesn't dodge it.",
+    "Jesus said it plainly: God is Spirit. He isn't made of anything, because nothing made him."],
+   "scripture": S("John 4:24", "God is Spirit", True)},
+  {"id": "unseen", "kicker": "Real things unseen", "level": 0.3, "lines": [
+    "That alone doesn't make him unreal. We know real things we can't see all the time, like love, the wind, our own thoughts.",
+    "Pause here and ask yourself: how do you know the wind is there? No one has ever seen it. Everyone has seen a tree bend in it."]},
+  {"id": "made", "kicker": "In what he made", "level": 0.4, "lines": [
+    "Christians call this general revelation: what God shows of himself to every person through the created world.",
+    "The heavens declare the glory of God; the skies proclaim the work of His hands.",
+    "But the sky can't say everything. General revelation leaves every person accountable; special revelation tells the good news."],
+   "scripture": S("Psalm 19:1", "The heavens declare the glory of God; the skies proclaim the work of His hands.", True)},
+  {"id": "voice", "kicker": "A voice, not a shape", "level": 0.45, "lines": [
+    "So God spoke, to Abraham, to Moses, through the prophets, and their words were written down.",
+    "At Sinai, Moses reminded Israel, “You heard the sound of the words, but saw no form; there was only a voice.”"],
+   "scripture": S("Deuteronomy 4:12", "You heard the sound of the words, but saw no form; there was only a voice.", True)},
+  {"id": "argument", "kicker": "The argument from hiddenness", "level": 0.55, "lines": [
+    "In 1993 the philosopher J. L. Schellenberg made the argument that has shaped the debate since, in a book called Divine Hiddenness and Human Reason.",
+    "Some people are open to God, yet through no fault of their own they don't believe he exists. A perfectly loving God would never leave such a person without the evidence. So there's no such God.",
+    "His point isn't that God is unproved. It's that the silence itself is evidence. A loving parent doesn't hide from a child who's calling for her."]},
+  {"id": "true", "kicker": "What's true in it", "level": 0.45, "lines": [
+    "There are honest unbelievers. Many have prayed, read, asked and waited for years, and haven't come to believe.",
+    "Christians have sometimes read Paul in Romans as a verdict on every doubter. Paul was describing the human race, not reading the heart of the person across the table.",
+    "Scripture itself knows the ache. Isaiah says, “Truly You are a God who hides Himself.”"],
+   "scripture": S("Isaiah 45:15", "Truly You are a God who hides Himself", True)},
+  {"id": "light", "kicker": "Enough light", "level": 0.6, "lines": [
+    "Blaise Pascal saw it three centuries earlier. In his Pensées, published in 1670, he wrote, “There is enough light for those who only desire to see, and enough obscurity for those who have a contrary disposition.”",
+    "Weigh this: if God were as plain as the sun, could anyone still come to him freely?",
+    "Michael Murray argued in 1993 that overwhelming evidence would coerce the response it meant to invite. John Hick had argued in 1966 that an obvious God would leave no room to grow freely toward him."]},
+  {"id": "reply", "kicker": "Schellenberg replies", "level": 0.65, "lines": [
+    "Schellenberg's reply is strong. Freedom, humility, growth: every one could be had inside a relationship with God, and better there. And what of a child who never resisted anything?",
+    "It isn't fully answered. Christians reply in part that believing God exists is the door, not the room. A person can hold the belief and refuse the relationship."],
+   "scripture": S("Hebrews 11:6", "anyone who approaches Him must believe that He exists and that He rewards those who earnestly seek Him")},
+  {"id": "near", "kicker": "Hidden in plain sight", "level": 0.7, "lines": [
+    "And Christians claim God didn't stay hidden. He came near, in a way that could be missed.",
+    "No one has ever seen God, but the one and only Son, who is Himself God and is at the Father’s side, has made Him known.",
+    "Jesus told Philip, “Anyone who has seen Me has seen the Father,” and was crucified by people who didn't see it. In 1518 Martin Luther spoke of the theologian of the cross, who knows God hidden in suffering and the cross."],
+   "scripture": S("John 1:18", "No one has ever seen God, but the one and only Son, who is Himself God and is at the Father’s side, has made Him known.", True)},
+  {"id": "open", "kicker": "What stays open", "level": 0.45, "lines": [
+    "Some things stay unresolved. Why some who seek don't find, or find only late, isn't explained. No one can see into another's heart.",
+    "Christians differ. Many in the Reformed tradition read Romans 1 to say no unbelief is wholly innocent, though no one may judge another's heart. Others hold that some sincere seekers haven't yet found.",
+    "Scripture calls the seeking long, and the finding promised: “You will seek Me and find Me when you search for Me with all your heart.”"],
+   "scripture": S("Jeremiah 29:13", "You will seek Me and find Me when you search for Me with all your heart.", True)},
+  {"id": "face", "kicker": "Face to face", "level": 0.3, "lines": [
+    "Christian hope ends where this question begins. Paul says, “Now we see but a dim reflection as in a mirror; then we shall see face to face.”",
+    "And Jesus left a word for everyone who has never seen him: “blessed are those who have not seen and yet have believed.”"],
+   "scripture": S("1 Corinthians 13:12", "Now we see but a dim reflection as in a mirror; then we shall see face to face.", True),
+   "titleCard": ["Not by squinting harder. Because he came close.", END]},
+], NOTE)

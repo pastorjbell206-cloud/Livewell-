@@ -1,0 +1,245 @@
+{
+ "length": 227.78,
+ "chapters": [
+  {
+   "id": "objection",
+   "kicker": "The objection",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 14.22,
+   "lines": [
+    {
+     "text": "Here's another objection. The Gospels were written decades after Jesus, by people who never met Him, under names someone added later.",
+     "start": 2.6,
+     "end": 10.44
+    },
+    {
+     "text": "If that's true, why trust what they say?",
+     "start": 11.04,
+     "end": 13.32
+    }
+   ]
+  },
+  {
+   "id": "true",
+   "kicker": "What's true in it",
+   "level": 0.3,
+   "start": 13.42,
+   "end": 39.56,
+   "lines": [
+    {
+     "text": "Again, start with what's true.",
+     "start": 14.32,
+     "end": 16.22
+    },
+    {
+     "text": "Jesus was crucified around the year thirty. Most scholars date Mark around seventy, Matthew and Luke later, and John in the nineties.",
+     "start": 16.8,
+     "end": 25.0
+    },
+    {
+     "text": "That's forty to sixty-five years. Some able scholars argue for earlier dates, but that's a minority view, and it has to be argued, not assumed.",
+     "start": 25.52,
+     "end": 34.76
+    },
+    {
+     "text": "And none of the four Gospels names its author in its own text.",
+     "start": 35.42,
+     "end": 38.66
+    }
+   ]
+  },
+  {
+   "id": "lifetime",
+   "kicker": "Inside one lifetime",
+   "level": 0.4,
+   "start": 38.76,
+   "end": 49.7,
+   "lines": [
+    {
+     "text": "But think about what a gap like that is. It sits inside a single lifetime.",
+     "start": 39.66,
+     "end": 44.24
+    },
+    {
+     "text": "People who had known Jesus were still alive. Many more had known them.",
+     "start": 44.86,
+     "end": 48.8
+    }
+   ]
+  },
+  {
+   "id": "paul",
+   "kicker": "Earlier than any Gospel",
+   "level": 0.55,
+   "start": 48.9,
+   "end": 85.82,
+   "lines": [
+    {
+     "text": "And we have writing from inside the gap. Paul's letters, from the fifties.",
+     "start": 49.8,
+     "end": 54.26
+    },
+    {
+     "text": "In one of them, Paul passes on a summary he says he himself received.",
+     "start": 54.86,
+     "end": 58.92
+    },
+    {
+     "text": "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures,",
+     "start": 59.64,
+     "end": 71.88
+    },
+    {
+     "text": "Most scholars, including many with no stake in Christianity, think that summary took shape within a few years of the cross.",
+     "start": 72.44,
+     "end": 79.32
+    },
+    {
+     "text": "And Paul says he stayed fifteen days with Peter in Jerusalem, and later met James and John.",
+     "start": 79.9,
+     "end": 84.92
+    }
+   ]
+  },
+  {
+   "id": "gaps",
+   "kicker": "How historians treat gaps",
+   "level": 0.6,
+   "start": 85.02,
+   "end": 105.16,
+   "lines": [
+    {
+     "text": "Historians of the ancient world work with far bigger gaps than this.",
+     "start": 85.92,
+     "end": 89.4
+    },
+    {
+     "text": "One of our main accounts of Alexander the Great's campaigns, by Arrian, was written more than four centuries after them. Historians still use it, carefully.",
+     "start": 90.0,
+     "end": 99.14
+    },
+    {
+     "text": "So the question isn't only how long the gap was. It's what stood inside it.",
+     "start": 99.72,
+     "end": 104.26
+    }
+   ]
+  },
+  {
+   "id": "names",
+   "kicker": "Anonymous, or unknown?",
+   "level": 0.65,
+   "start": 104.36,
+   "end": 150.56,
+   "lines": [
+    {
+     "text": "Now the names. It's true the titles, According to Matthew and the rest, were almost certainly added by others.",
+     "start": 105.26,
+     "end": 112.02
+    },
+    {
+     "text": "But anonymous isn't the same as unknown. Every early copy that keeps a title gives the same four names. No early copy gives another.",
+     "start": 112.58,
+     "end": 121.36
+    },
+    {
+     "text": "If churches across the Roman world had guessed, you'd expect a Gospel of Andrew in one place and of Philip in another. We find none.",
+     "start": 121.94,
+     "end": 129.92
+    },
+    {
+     "text": "And look at two of the names. Mark and Luke weren't among the Twelve. Mark is remembered as the man who turned back partway through Paul's first mission.",
+     "start": 130.68,
+     "end": 138.6
+    },
+    {
+     "text": "When people did write gospels under famous names, they chose apostles, like Peter. Mark and Luke look less like a grab for authority than a memory nobody was free to improve.",
+     "start": 139.22,
+     "end": 149.66
+    }
+   ]
+  },
+  {
+   "id": "witness",
+   "kicker": "The earliest witnesses",
+   "level": 0.75,
+   "start": 149.76,
+   "end": 170.26,
+   "lines": [
+    {
+     "text": "Early in the second century, a writer named Papias passed on what an older teacher told him: that Mark had been Peter's interpreter, and wrote down what Peter remembered.",
+     "start": 150.66,
+     "end": 159.94
+    },
+    {
+     "text": "And Luke never claims to have seen Jesus. He says he carefully investigated what the eyewitnesses handed down. That's just what the church always said of him.",
+     "start": 160.62,
+     "end": 169.36
+    }
+   ]
+  },
+  {
+   "id": "reply",
+   "kicker": "The strongest reply",
+   "level": 0.8,
+   "start": 169.46,
+   "end": 192.1,
+   "lines": [
+    {
+     "text": "A skeptic can answer that witnesses alive somewhere don't help unless the writers used them. And memory is fragile.",
+     "start": 170.36,
+     "end": 176.86
+    },
+    {
+     "text": "That's fair. Memory bends, and a witness interprets as well as remembers.",
+     "start": 177.34,
+     "end": 181.88
+    },
+    {
+     "text": "But this story was told in churches where Peter, James and John had preached, among people who had heard them. It wasn't free to drift wherever anyone wished.",
+     "start": 182.38,
+     "end": 191.2
+    }
+   ]
+  },
+  {
+   "id": "open",
+   "kicker": "What stays open",
+   "level": 0.6,
+   "start": 191.3,
+   "end": 207.28,
+   "lines": [
+    {
+     "text": "Some things stay open. Whether the apostle Matthew wrote the Gospel that bears his name, or stands behind it. Who the beloved disciple was. Exactly when Mark wrote.",
+     "start": 192.2,
+     "end": 202.1
+    },
+    {
+     "text": "Faithful Christians differ on those, and honest scholars live with them.",
+     "start": 202.62,
+     "end": 206.38
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 206.48,
+   "end": 221.685,
+   "lines": [
+    {
+     "text": "What the church confesses doesn't hang on a decade. It hangs on whether these books tell the truth about a man crucified under Pontius Pilate and raised on the third day.",
+     "start": 207.38,
+     "end": 216.64
+    },
+    {
+     "text": "And the earliest witness to that claim is older than any of the four.",
+     "start": 217.08,
+     "end": 220.785
+    }
+   ]
+  }
+ ]
+}
