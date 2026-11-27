@@ -14,12 +14,12 @@
 <script src="../lib/engine.js"></script>
 <script>
 Film.make((F) => {
-  const { el, txt, set, op, draw, line, move, clamp, ease, soft, up, span, mix, rng, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const { el, txt, set, op, draw, line, move, clamp, ease, soft, up, span, mix, rng, S, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
   const PAPER = "#FBF9F5", LEAF = "#7A8B5A";
   const CH = Object.fromEntries(TL.chapters.map((c) => [c.id, c]));
   const CS = (id) => CH[id].start;
-  const at = (id, k, f = 0) => { const l = CH[id].lines[k]; return l.start + f * (l.end - l.start); };
-  const dur = (id, k) => { const l = CH[id].lines[k]; return l.end - l.start; };
+  const at = (id, k, f = 0) => S(id, k) + f * (E(id, k) - S(id, k));   // a point inside line k, so the picture follows the voice
+  const dur = (id, k) => E(id, k) - S(id, k);
   const T = (p, cls, x, y, s, size, anchor, fill) => { const e = txt(p, cls, x, y, s, size, fill ? { fill } : undefined); if (anchor) e.setAttribute("style", (e.getAttribute("style") || "") + `text-anchor:${anchor};`); return e; };
   const G = (p) => el("g", {}, p || world);
   const vis = (t, a, b, fi = 0.6, fo = 0.7) => span(t, a, b, fi, fo);
@@ -203,7 +203,7 @@ Film.make((F) => {
   const bub4 = bubble(g4, true);
   const draw4 = (t) => {
     const W0 = at("witnesses", 0), W1 = at("witnesses", 1), P0 = at("perpetua", 0), P3 = at("perpetua", 3), DW0 = dur("witnesses", 0), DW1 = dur("witnesses", 1), DP3 = dur("perpetua", 3);
-    const vA = vis(t, CS("witnesses") - 0.2, at("perpetua", 1) + 0.3), vB = vis(t, P3 - 0.4, CS("storms") + 0.4), v = Math.max(vA, vB); op(g4, v); if (v <= 0) return;
+    const vA = vis(t, CS("witnesses") - 0.2, at("perpetua", 1) + 0.3), vB = vis(t, P3 - 0.05, CS("storms") + 0.4), v = Math.max(vA, vB); op(g4, v); if (v <= 0) return;
     op(map4, vA);
     if (vA > 0) {
       land.forEach((p, i) => { op(p.e, up(t, CS("witnesses") + p.d * 1.2, 0.5)); p.e.setAttribute("cy", (p.y + 1.2 * Math.sin(t * 0.6 + i)).toFixed(1)); });
@@ -213,7 +213,7 @@ Film.make((F) => {
       cityE.forEach((c) => { const a = cityT[c.n]; op(c.dot, up(t, CS("witnesses") + 0.3, 0.5)); op(c.lab, up(t, CS("witnesses") + 0.5, 0.5));
         const k = clamp((t - a - 0.2) / 2.2), on = k > 0 && k < 1; set(c.ring, { r: (10 + 26 * ease(k)).toFixed(1) }); op(c.ring, on ? 1 - k : 0); c.dot.setAttribute("fill", t > a ? MUSTARD : INK); });
     }
-    const shift = up(t, P3 - 0.2, 1.2); list.setAttribute("transform", `translate(${(-320 * shift).toFixed(1)} ${(1.5 * Math.sin(t * 0.6)).toFixed(1)})`);
+    const shift = up(t, P3 - 0.5, 1.2); list.setAttribute("transform", `translate(${(-320 * shift).toFixed(1)} ${(1.5 * Math.sin(t * 0.6)).toFixed(1)})`);
     op(list, up(t, CS("witnesses") + 0.2, 0.7));
     const rowT = [W0 + DW0 * 0.05, W1 + DW1 * 0.1, P0 + 0.2, P0 + dur("perpetua", 0) * 0.55], litT = [W0 + DW0 * 0.38, W1 + DW1 * 0.8, P3 + DP3 * 0.04, P3 + DP3 * 0.12];
     rows.forEach((r, i) => { const k = up(t, rowT[i], 0.7); op(r.nm, k); r.nm.setAttribute("transform", `translate(${(10 * (1 - k)).toFixed(1)} 0)`); op(r.sub, up(t, rowT[i] + 0.4, 0.6)); draw(r.ul, up(t, rowT[i] + 0.2, 0.9));
@@ -235,7 +235,7 @@ Film.make((F) => {
   const tagJug = tag(g5, 640, 488, "A WATER JUG"), tagHer = tag(g5, 940, 488, "A CHRISTIAN", true), herLab = T(g5, "lab", 940, 432, "PERPETUA", 18, null, INK);
   const draw5 = (t) => {
     const P1 = at("perpetua", 1), P2 = at("perpetua", 2), D2 = dur("perpetua", 2);
-    const v = vis(t, P1 - 0.4, at("perpetua", 3) + 0.3); op(g5, v); if (v <= 0) return;
+    const v = vis(t, P1 - 0.4, at("perpetua", 3) + 0.1, 0.6, 0.6); op(g5, v); if (v <= 0) return;
     op(win, up(t, P1 - 0.3, 0.7)); move(win, 640, 172 + 2 * Math.sin(t * 0.7));
     const sl = up(t, P2 - 0.1, 1.2); move(diary, mix(640, 300, sl), mix(330, 340, sl) + 2 * Math.sin(t * 0.8), mix(1, 0.72, sl)); op(diary, up(t, P1 - 0.2, 0.7));
     dLines.forEach((l, i) => draw(l, up(t, P1 + 0.4 + i * 0.35, 0.6))); op(diaryLab, up(t, P1 + 0.6, 0.6) * (1 - sl));
@@ -404,13 +404,13 @@ Film.make((F) => {
   const draw10 = (t) => {
     const v = vis(t, CS("close") - 0.2, END + 2.5, 0.7, 0.9); op(g10, v); if (v <= 0) return;
     const c = [0, 1, 2].map((k) => at("close", k)), D = [0, 1, 2].map((k) => dur("close", k));
-    const v0 = span(t, CS("close"), c[1] - 0.1, 0.7, 0.6);
+    const v0 = span(t, CS("close"), c[1] + 0.7, 0.7, 0.9);
     op(cataG, v0); draw(cata, up(t, c[0], 1.2)); op(cataIn, up(t, c[0] + 0.6, 0.8)); cataLamp._lit(up(t, c[0] + 0.8, 0.7), t); op(cataLab, up(t, c[0] + 0.5, 0.6) * v0);
     op(courtG, v0); courtParts.forEach((p, i) => draw(p, up(t, c[0] + D[0] * 0.3 + i * 0.12, 0.8))); op(courtLab, up(t, c[0] + D[0] * 0.45, 0.6) * v0);
     walkers10.forEach((w, i) => { const k = up(t, c[0] + D[0] * 0.55 + i * 0.25, 2.4); set(w, { cx: mix(380, 890, k).toFixed(1), cy: (456 - 80 * Math.sin(Math.PI * k)).toFixed(1) }); op(w, up(t, c[0] + D[0] * 0.5 + i * 0.25, 0.4) * v0); });
     const v1 = span(t, c[1] - 0.3, c[2] + 0.5, 0.7, 0.7), aside = up(t, c[2] + 0.2, 1.4);
-    op(list10, up(t, c[1] - 0.3, 0.7)); list10.setAttribute("transform", `translate(${(-190 * aside).toFixed(1)} ${(1.5 * Math.sin(t * 0.6)).toFixed(1)})`);
-    rows10.forEach((r, i) => { op(r.g, up(t, c[1] + i * 0.25, 0.6)); r.c._lit(up(t, c[1] + 0.3 + i * 0.25, 0.7), t); });
+    op(list10, up(t, c[1] - 0.6, 0.8)); list10.setAttribute("transform", `translate(${(-190 * aside).toFixed(1)} ${(1.5 * Math.sin(t * 0.6)).toFixed(1)})`);
+    rows10.forEach((r, i) => { op(r.g, up(t, c[1] - 0.3 + i * 0.25, 0.6)); r.c._lit(up(t, c[1] + 0.3 + i * 0.25, 0.7), t); });
     op(cross10, v1); draw(crossV10, up(t, c[1] + D[1] * 0.45, 0.9)); draw(crossH10, up(t, c[1] + D[1] * 0.45 + 0.6, 0.5)); op(lordLab, up(t, c[1] + D[1] * 0.55, 0.6) * v1);
     op(altar10, up(t, c[1] + D[1] * 0.75, 0.7) * 0.55 * v1); op(caesarLab, up(t, c[1] + D[1] * 0.8, 0.6) * v1);
     const k2 = up(t, c[2] + D[2] * 0.3, 1.0); move(bub10, 900, 300 + 8 * (1 - k2) + 2 * Math.sin(t * 0.9), mix(0.85, 1, k2)); op(bub10, k2); op(q10, up(t, c[2] + D[2] * 0.5, 0.7)); move(q10, 0, 2 * Math.sin(t * 1.1));
