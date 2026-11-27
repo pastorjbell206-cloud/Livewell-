@@ -1,0 +1,264 @@
+<!doctype html>
+<!-- "Who made God?". One chain runs the whole film: a row of links from a person, a tree, a seed, a tree, the earth
+     and the sun, running left. At first it ends at a question mark; at the close its left end runs out of the frame
+     into a faint mustard light (never above 0.1 opacity), on which the whole chain rests. God is never drawn: only
+     that light, and an empty scale pan under it. The "designer built from parts" the voice rejects is a pile of
+     plain blocks inside a frame, never a figure. The bush is a few mustard flame shapes on bare branches.
+     People are plain ink dots, all alike. Words and timing come from script.json and timeline.json.
+     Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Who made God?</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", R = rng(5);
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const dot = (p, x, y, r = 10) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const sl = (p, d, a = {}) => el("path", Object.assign({ d, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round", "stroke-linejoin": "round" }, a), p);
+  const rows = (p, x0, x1, y0, n, gap, sw = 3) => [...Array(n)].map((_, i) => el("line", { x1: x0, x2: i === n - 1 ? mix(x0, x1, 0.6) : x1, y1: y0 + i * gap, y2: y0 + i * gap, stroke: STONE, "stroke-width": sw, "stroke-linecap": "round" }, p));
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  // one link of a chain: open links lie flat, the links between are seen edge-on
+  const link = (p, x, y, k, a = {}) => k % 2 === 0
+    ? el("rect", Object.assign({ x: x - 23, y: y - 12, width: 46, height: 24, rx: 12, fill: "none", stroke: INK, "stroke-width": 3.5 }, a), p)
+    : el("rect", Object.assign({ x: x - 23, y: y - 3.5, width: 46, height: 7, rx: 3.5, fill: a.stroke || INK }, a.stroke ? { opacity: a.opacity ?? 1 } : {}), p);
+  // the things we meet, sitting above a chain whose line is at y
+  const icon = (kind, p, x, y) => { const g = el("g", {}, p);
+    if (kind === "you") dot(g, x, y - 48, 11);
+    if (kind === "tree") { sl(g, `M${x} ${y - 36} V${y - 74}`, { "stroke-width": 4 }); el("path", { d: `M${x - 30} ${y - 66} L${x} ${y - 136} L${x + 30} ${y - 66} Z`, fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); }
+    if (kind === "seed") el("path", { d: `M${x} ${y - 88} C${x + 14} ${y - 70} ${x + 14} ${y - 50} ${x} ${y - 46} C${x - 14} ${y - 50} ${x - 14} ${y - 70} ${x} ${y - 88} Z`, fill: STONE }, g);
+    if (kind === "earth") { el("circle", { cx: x, cy: y - 78, r: 32, fill: WARM, stroke: INK, "stroke-width": 3 }, g); sl(g, `M${x - 32} ${y - 78} H${x + 32}`, { stroke: STONE, "stroke-width": 2.5 }); el("ellipse", { cx: x, cy: y - 78, rx: 13, ry: 32, fill: "none", stroke: STONE, "stroke-width": 2.5 }, g); }
+    if (kind === "sun") { el("circle", { cx: x, cy: y - 80, r: 22, fill: MUSTARD }, g); for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; sl(g, `M${x + 30 * Math.cos(a)} ${y - 80 + 30 * Math.sin(a)} L${x + 40 * Math.cos(a)} ${y - 80 + 40 * Math.sin(a)}`, { stroke: MUSTARD, "stroke-width": 3 }); } }
+    return g; };
+  const plaque = (p, s, w) => { const g = el("g", {}, p); el("rect", { x: -w / 2, y: -28, width: w, height: 56, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, g); txt(g, "lab", 0, 7, s, 18, { fill: INK }); return g; };
+
+  // ---- every time used, from the timeline only ----
+  const A0 = S("fair", 0), A1 = S("fair", 1), R0 = S("russell", 0), R1 = S("russell", 1), R2 = S("russell", 2);
+  const D0 = S("dawkins", 0), D1 = S("dawkins", 1), T0 = S("true", 0), T1 = S("true", 1);
+  const N0 = S("narrower", 0), N1 = S("narrower", 1), N2 = S("narrower", 2), L0 = S("link", 0), L1 = S("link", 1);
+  const V0 = S("everlasting", 0), V1 = S("everlasting", 1), P0 = S("parity", 0), P1 = S("parity", 1), P2 = S("parity", 2);
+  const B0 = S("burden", 0), B1 = S("burden", 1), B2 = S("burden", 2), B3 = S("burden", 3), O0 = S("open", 0), O1 = S("open", 1), C0 = S("close", 0), C1 = S("close", 1);
+
+  // ================= the light beyond the left edge (God shown only as light, never above 0.1) =================
+  const gLight = el("g", {}, world);
+  [230, 150, 80].forEach((w) => el("rect", { x: -40, y: -40, width: w + 40, height: 800, fill: MUSTARD, opacity: 0.033 }, gLight));
+
+  // ================= 1 fair + 6 link + close: the chain of things =================
+  const CY = 420, NX = [1170, 1000, 830, 660, 490, 320], KINDS = ["you", "tree", "seed", "tree", "earth", "sun"];
+  const gMain = el("g", {}, world);
+  const mainLinks = [...Array(42)].map((_, k) => { const x = 1190 - 30 * k; const g = el("g", {}, gMain); link(g, x, CY, k); return { g, x }; });
+  const mainIcons = NX.map((x, i) => ({ g: icon(KINDS[i], gMain, x, CY), x }));
+  const qMain = txt(gMain, "disp", 148, CY + 30, "?", 104, { fill: MUSTARD });
+  const ghost = el("g", {}, gMain); [0, 1].forEach((k) => link(ghost, 150 - 30 * k, CY, k, { stroke: STONE, "stroke-dasharray": "5 6", opacity: 0.9 }));
+  const qClose = txt(world, "disp", 640, 250, "?", 96, { fill: MUSTARD });
+
+  // ================= 2 russell: a lecture; Mill's two questions; a chain with no end =================
+  const gPamph = el("g", {}, world);
+  el("rect", { x: 560, y: 196, width: 160, height: 210, fill: PAPER, stroke: INK, "stroke-width": 3 }, gPamph);
+  el("rect", { x: 590, y: 222, width: 100, height: 8, rx: 4, fill: MUSTARD }, gPamph);
+  const pRows = rows(gPamph, 582, 698, 258, 7, 20, 2.5);
+  txt(gPamph, "lab", 640, 456, "BERTRAND RUSSELL", 17); txt(gPamph, "lab", 640, 484, "LONDON · 1927", 15);
+  const gBook = el("g", {}, world);
+  el("rect", { x: 230, y: 214, width: 130, height: 172, fill: WARM, stroke: INK, "stroke-width": 3 }, gBook);
+  el("rect", { x: 230, y: 214, width: 16, height: 172, fill: STONE }, gBook);
+  txt(gBook, "lab", 295, 432, "JOHN STUART MILL", 15); txt(gBook, "lab", 295, 458, "AUTOBIOGRAPHY", 14);
+  const q1 = txt(world, "ital", 1000, 304, "“Who made me?”", 44), q2 = txt(world, "ital", 590, 304, "“Who made God?”", 44, { fill: STONE });
+  const qLinks = [...Array(5)].map((_, k) => { const g = el("g", {}, world); link(g, 870 - 30 * k, 292, k); return g; });
+  const gEndless = el("g", {}, world), endless = [...Array(48)].map((_, k) => { const g = el("g", {}, gEndless); link(g, 0, 360, k); return g; });
+  const rLab = txt(gEndless, "lab", 640, 216, "IF EVERYTHING MUST HAVE A CAUSE", 17);
+  const rEarth = icon("earth", gEndless, 640, 336);
+
+  // ================= 3 dawkins: boxes inside larger boxes =================
+  const g3 = el("g", {}, world), g3z = el("g", {}, g3);
+  const boxes = [[300, 200], [470, 290], [640, 360]].map(([w, h], i) => { const g = el("g", {}, g3z);
+    el("rect", { x: 640 - w / 2, y: 330 - h / 2, width: w, height: h, rx: 6, fill: "none", stroke: i ? LINE : STONE, "stroke-width": 3, "stroke-dasharray": "10 9" }, g);
+    txt(g, "disp", 640 + w / 2 - 22, 330 - h / 2 + 40, "?", 40, { fill: STONE }); return g; });
+  let sc0 = `M${590} ${300}`, sc1 = `M${500} ${250}`;
+  for (let i = 0; i < 26; i++) sc0 += ` L${(580 + R() * 120).toFixed(0)} ${(292 + R() * 76).toFixed(0)}`;
+  for (let i = 0; i < 60; i++) sc1 += ` L${(504 + R() * 272).toFixed(0)} ${(244 + R() * 172).toFixed(0)}`;
+  const scr1 = line(boxes[0], sc1, { stroke: STONE, "stroke-width": 1.6 });
+  const box0 = el("g", {}, g3z); el("rect", { x: 570, y: 282, width: 140, height: 96, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, box0);
+  const scr0 = line(box0, sc0, { stroke: INK, "stroke-width": 2 });
+  const u0Lab = txt(g3z, "lab", 640, 404, "THE UNIVERSE", 14), u1Lab = txt(g3z, "lab", 640, 456, "AT LEAST AS IMPROBABLE", 14);
+  const dLab = txt(g3, "lab", 640, 140, "RICHARD DAWKINS · THE GOD DELUSION · 2006", 15);
+
+  // ================= 4 true: a rule that cannot stop; a pile of parts =================
+  const g4a = el("g", {}, world), rule4 = plaque(g4a, "EVERYTHING HAS A CAUSE", 420); move(rule4, 640, 206);
+  const c4 = [...Array(24)].map((_, k) => { const g = el("g", {}, g4a); link(g, 1090 - 30 * k, 400, k); return g; });
+  const stop4 = el("rect", { x: 383, y: 366, width: 6, height: 68, rx: 3, fill: STONE }, g4a);
+  const past4 = [...Array(14)].map((_, k) => { const g = el("g", {}, g4a); link(g, 360 - 30 * k, 400, k, { stroke: STONE, "stroke-dasharray": "5 6" }); return g; });
+  const g4b = el("g", {}, world);
+  el("rect", { x: 330, y: 150, width: 620, height: 300, rx: 6, fill: "none", stroke: LINE, "stroke-width": 2.5 }, g4b);
+  txt(g4b, "lab", 640, 180, "INSIDE THE UNIVERSE", 14);
+  const parts = [[124, 40], [92, 34], [112, 30], [70, 42], [100, 28], [58, 34], [84, 26]]; let py = 446;
+  const blocks = parts.map(([w, h], i) => { py -= h; const g = el("g", {}, g4b); el("rect", { x: -w / 2, y: 0, width: w, height: h, rx: 3, fill: i % 2 ? MUTED : WARM, stroke: INK, "stroke-width": 3 }, g);
+    return { g, x: 640 + (i % 2 ? 6 : -6), y: py, fx: 360 + R() * 560, fy: 200 + R() * 200, fr: -40 + R() * 80 }; });
+  const c4b = [...Array(6)].map((_, k) => { const g = el("g", {}, g4b); link(g, 556 - 30 * k, 330, k); return g; });
+  const q4 = txt(g4b, "disp", 378, 344, "?", 48, { fill: STONE });
+  const partsLab = txt(world, "lab", 640, 490, "BUILT FROM PARTS", 15);
+
+  // ================= 5 narrower: the pause; the kalam's sign; things that might not have been =================
+  const qPause = txt(world, "disp", 640, 380, "?", 120, { fill: MUSTARD });
+  const g5 = el("g", {}, world), NXr = [1080, 900, 720, 540, 360], KR = ["you", "tree", "seed", "earth", "sun"], NCY = 430;
+  const rowIcons = NXr.map((x, i) => icon(KR[i], g5, x, NCY));
+  const began = NXr.map((x) => line(g5, `M${x - 34} 462 V444 M${x - 34} 453 H${x + 34}`, { stroke: STONE, "stroke-width": 3 }));
+  const frames5 = NXr.map((x) => el("rect", { x: x - 52, y: 276, width: 104, height: 168, rx: 6, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "8 8" }, g5));
+  const sign = el("g", {}, g5); const signP = plaque(sign, "WHATEVER BEGINS TO EXIST", 380); move(signP, 0, 0);
+  sl(sign, "M0 30 V76", { stroke: STONE, "stroke-dasharray": "4 7" });
+  const craig = txt(g5, "lab", 640, 136, "WILLIAM LANE CRAIG · THE KALAM ARGUMENT", 15);
+  const gTime = el("g", {}, g5), tLine = line(gTime, "M300 214 H980", { stroke: STONE, "stroke-width": 2.5 });
+  const tick1 = el("g", {}, gTime); sl(tick1, "M420 204 V224", { stroke: STONE }); txt(tick1, "lab", 420, 190, "AQUINAS", 14);
+  const tick2 = el("g", {}, gTime); sl(tick2, "M860 204 V224", { stroke: STONE }); txt(tick2, "lab", 860, 190, "LEIBNIZ · 1714", 14);
+  const kindLab = txt(g5, "lab", 720, 512, "A CERTAIN KIND OF THING", 15);
+
+  // ================= 7 everlasting: mountains born; a line with no ends =================
+  const g7 = el("g", {}, world);
+  const mtn = line(g7, "M250 470 L370 352 L440 410 L560 318 L660 430 L760 342 L850 414 L930 372 L1030 470", { "stroke-width": 3.5 });
+  const ground7 = line(g7, "M180 470 H1100", { "stroke-width": 3 });
+  const ever = [line(g7, "M640 520 H-40", { stroke: STONE, "stroke-width": 2.5 }), line(g7, "M640 520 H1320", { stroke: STONE, "stroke-width": 2.5 })];
+  const v7 = verse(SC.everlasting, 640, 148, 34, 48, true);
+
+  // ================= 8 parity + 10 open: a scale; one pan holds the world, one is empty under light =================
+  const g8 = el("g", {}, world), PIV = [640, 250];
+  sl(g8, "M640 250 V470 M584 470 H696", { "stroke-width": 4 });
+  const beam = el("g", {}, g8); sl(beam, "M400 250 H880", { "stroke-width": 5 }); el("rect", { x: 632, y: 242, width: 16, height: 16, rx: 3, fill: INK }, beam);
+  const colG = el("g", {}, g8), colLight = el("rect", { y: -40, width: 100, fill: MUSTARD, opacity: 0.08 }, colG);
+  const pan = (p) => { const g = el("g", {}, p); sl(g, "M0 -120 L-70 0 M0 -120 L70 0", { stroke: STONE, "stroke-width": 2 }); el("path", { d: "M-74 0 Q0 30 74 0 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); return g; };
+  const panL = pan(g8), panR = pan(g8);
+  const ghostEarth = el("circle", { cx: 14, cy: -34, r: 24, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "6 6" }, panL);
+  el("circle", { cx: 0, cy: -26, r: 24, fill: WARM, stroke: INK, "stroke-width": 3 }, panL); sl(panL, "M-24 -26 H24", { stroke: STONE, "stroke-width": 2.5 }); el("ellipse", { cx: 0, cy: -26, rx: 10, ry: 24, fill: "none", stroke: STONE, "stroke-width": 2.5 }, panL);
+  const labL1 = txt(panL, "lab", 0, 56, "THE UNIVERSE", 14), labR1 = txt(panR, "lab", 0, 56, "GOD", 14), hume = txt(panL, "lab", 0, 82, "HUME", 13);
+  const labL2 = txt(panL, "lab", 0, 56, "A NECESSARY UNIVERSE?", 13), labR2 = txt(panR, "lab", 0, 56, "A NECESSARY BEING?", 13);
+  const head1 = txt(world, "lab", 640, 150, "WHICH CAN BEAR THE WEIGHT?", 16), head2 = txt(world, "lab", 640, 150, "ARGUMENT HAS TO DECIDE", 16);
+
+  // ================= 9 burden: the teapot; who owes reasons; both carry =================
+  const g9a = el("g", {}, world), SUN = [840, 320];
+  const orbit = el("ellipse", { cx: SUN[0], cy: SUN[1], rx: 250, ry: 76, fill: "none", stroke: LINE, "stroke-width": 2.5, "stroke-dasharray": "4 10" }, g9a);
+  el("circle", { cx: SUN[0], cy: SUN[1], r: 20, fill: MUSTARD }, g9a);
+  const pot = el("g", {}, g9a); el("ellipse", { cx: 0, cy: 0, rx: 14, ry: 10, fill: INK }, pot); sl(pot, "M12 -2 L24 -12", { "stroke-width": 3 }); sl(pot, "M-13 -6 Q-23 0 -13 6", { "stroke-width": 3 }); el("rect", { x: -6, y: -14, width: 12, height: 4, rx: 2, fill: INK }, pot);
+  const q9 = txt(g9a, "disp", 0, 0, "?", 46, { fill: STONE });
+  const scope = el("g", {}, world); el("path", { d: "M0 -7 L112 -13 L112 13 L0 7 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, scope); sl(scope, "M44 9 L22 52 M60 10 L78 52", { stroke: STONE });
+  move(scope, 150, 430, 1, -14);
+  const sight = [line(world, "M262 402 L520 300", { stroke: STONE, "stroke-width": 2, "stroke-dasharray": "0" }), line(world, "M262 410 L520 380", { stroke: STONE, "stroke-width": 2 })];
+  const carriers = [300, 980].map((x) => { const g = el("g", {}, world); dot(g, x, 459, 11); el("rect", { x: x - 26, y: 392, width: 52, height: 40, rx: 3, fill: MUTED, stroke: INK, "stroke-width": 3 }, g); return g; });
+  const flew = txt(world, "lab", 300, 150, "ANTONY FLEW · 1972", 15), owes = txt(world, "lab", 300, 506, "OWES REASONS", 14);
+  const who = [txt(world, "lab", 300, 506, "BELIEVER", 14), txt(world, "lab", 980, 506, "UNBELIEVER", 14)];
+  const g9b = el("g", {}, world); el("rect", { x: 500, y: 228, width: 280, height: 172, fill: PAPER, stroke: INK, "stroke-width": 3 }, g9b);
+  const cells = []; for (let r = 0; r < 4; r++) for (let c = 0; c < 7; c++) cells.push(el("rect", { x: 514 + c * 38, y: 244 + r * 36, width: 28, height: 26, rx: 2, fill: "none", stroke: STONE, "stroke-width": 2 }, g9b));
+  const crack = line(g9b, "M712 228 L696 270 L722 304 L702 346 L728 400", { "stroke-width": 4 });
+  const ordLab = txt(g9b, "lab", 640, 432, "ORDERED, KNOWABLE", 14), wrongLab = txt(g9b, "lab", 640, 458, "AND SOMETHING WRONG", 14);
+
+  // ================= 10 open: two pages read two ways; the verse =================
+  const g10 = el("g", {}, world);
+  [[450, [1, 1, 0.7, 1, 0.5]], [690, [1, 0.6, 1, 0.8, 1]]].forEach(([x, ws]) => { el("rect", { x, y: 270, width: 140, height: 160, fill: PAPER, stroke: INK, "stroke-width": 3 }, g10); ws.forEach((w, i) => el("line", { x1: x + 18, x2: x + 18 + 104 * w, y1: 298 + i * 26, y2: 298 + i * 26, stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, g10)); });
+  const reads = [line(g10, "M330 440 Q380 380 450 380", { stroke: STONE, "stroke-width": 2.5 }), line(g10, "M950 440 Q900 380 830 380", { stroke: STONE, "stroke-width": 2.5 })];
+  dot(g10, 320, 459); dot(g10, 960, 459);
+  txt(g10, "lab", 640, 478, "ALVIN PLANTINGA · 1980", 15);
+  const v10 = verse(SC.open, 640, 150, 32, 46, true);
+
+  // ================= 11 close: the bush that burned and was not burned up =================
+  const g11 = el("g", {}, world); sl(g11, "M300 470 H1000", { "stroke-width": 3 }); dot(g11, 420, 459, 11);
+  sl(g11, "M780 470 V404 M780 440 Q752 420 734 376 M780 430 Q808 410 828 366 M780 410 Q768 380 760 344 M780 414 Q796 386 804 350", { "stroke-width": 4 });
+  const flames = [[734, 372], [828, 362], [760, 340], [804, 346], [784, 398]].map(([x, y]) => { const g = el("g", {}, g11); el("path", { d: "M0 0 C10 -10 8 -22 0 -34 C-8 -22 -10 -10 0 0 Z", fill: MUSTARD }, g); return { g, x, y }; });
+  const v11 = verse(SC.close, 640, 186, 60, 40, true);
+
+  F.title("Who made God?");
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    // ----- the light -----
+    op(gLight, Math.max(span(t, N1 + 0.4, P0 + 0.6, 1.4, 0.9), span(t, at("open", 1, 0.45), END + 1.2, 1.4, 0.6)) * (0.9 + 0.1 * Math.sin(t * 0.8)));
+
+    // ----- the main chain (1, 6, 10, 11) -----
+    const ha = A0 + 0.2, hb = at("fair", 1, 0.5), ext0 = at("link", 0, 0.8), ext1 = L1 + 1.2;
+    const hx = t < L0 - 1 ? mix(1215, 175, clamp((t - ha) / (hb - ha))) : (t < ext0 ? 175 : mix(175, -80, ease((t - ext0) / (ext1 - ext0))));
+    op(gMain, Math.max(span(t, A0 - 0.3, R0 + 0.3, 0.6), span(t, L0 - 0.5, V1 - 0.2, 0.6), span(t, at("open", 1, 0.48), C0 - 0.1, 0.9, 0.6), span(t, C1 - 0.4, END + 0.6, 0.7, 0.5)));
+    const inLink = t > L0 - 1 && t < V1 + 1, sag = inLink ? 1 - up(t, at("link", 1, 0.2), 4.5) : 0;
+    const dyAt = (x) => sag * (70 * ((1190 - x) / 1250) ** 2 + 4 * Math.sin(t * 1.2) * ((1190 - x) / 1250)) + 1.5 * Math.sin(t * 0.9 + x / 140);
+    mainLinks.forEach((l) => { op(l.g, clamp((l.x - hx) / 26)); l.g.setAttribute("transform", `translate(0 ${dyAt(l.x).toFixed(2)})`); });
+    mainIcons.forEach((ic) => { op(ic.g, t < L0 - 1 ? clamp((ic.x + 10 - hx) / 70) : 1); ic.g.setAttribute("transform", `translate(0 ${dyAt(ic.x).toFixed(2)})`); });
+    op(qMain, Math.max(span(t, hb + 0.1, R0 + 0.3, 0.7), span(t, L0 - 0.5, at("link", 0, 0.36), 0.6, 0.6))); qMain.setAttribute("transform", `translate(0 ${dyAt(150).toFixed(2)})`);
+    op(ghost, span(t, at("link", 0, 0.42), ext0 + 0.4, 0.5, 0.7)); ghost.setAttribute("transform", `translate(${(-14 * up(t, at("link", 0, 0.42), 2)).toFixed(1)} ${dyAt(140).toFixed(2)})`);
+    op(qClose, up(t, at("close", 1, 0.42), 0.9) * outAll);
+
+    // ----- 2 russell -----
+    op(gPamph, span(t, R0 - 0.2, R1 + 0.1, 0.6, 0.6)); gPamph.setAttribute("transform", `translate(0 ${(-10 * up(t, R0 - 0.2, 6)).toFixed(1)})`);
+    pRows.forEach((r, i) => op(r, up(t, R0 + 0.4 + i * 0.5, 0.4)));
+    const bk = up(t, R1 - 0.2, 1.0); op(gBook, span(t, R1 - 0.2, R2 - 0.1, 0.6)); gBook.setAttribute("transform", `translate(${(-30 * (1 - bk)).toFixed(1)} ${(2 * Math.sin(t * 1.3)).toFixed(1)})`);
+    const qa = at("russell", 1, 0.5), qb = at("russell", 1, 0.74);
+    op(q1, span(t, qa, R2 - 0.1, 0.7)); op(q2, span(t, qb + 0.6, R2 - 0.1, 0.7));
+    qLinks.forEach((g, k) => { op(g, span(t, qb + k * 0.14, R2 - 0.1, 0.3, 0.6)); g.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 2 + k)).toFixed(1)})`); });
+    op(gEndless, span(t, R2 - 0.3, D0 - 0.5, 0.7)); const stopR = at("russell", 2, 0.56), u = clamp((t - R2 + 0.3) / (stopR - R2 + 0.3)), off = 48 * (stopR - R2 + 0.3) * (u - u * u / 2) + 2 * Math.sin(t);
+    endless.forEach((g, k) => { const x = ((k * 30 + off) % 1440 + 1440) % 1440 - 80; g.setAttribute("transform", `translate(${x.toFixed(1)} 0)`); });
+    op(rLab, 1 - up(t, stopR - 0.4, 0.7)); op(rEarth, up(t, stopR, 0.8)); rEarth.setAttribute("transform", `translate(0 ${(-10 * up(t, stopR, 1.2) + 2 * Math.sin(t * 1.4)).toFixed(1)})`);
+
+    // ----- 3 dawkins -----
+    op(g3, span(t, D0 - 0.4, T0 - 0.5, 0.6)); draw(scr0, up(t, D0 + 0.4, 3.5));
+    const b1 = at("dawkins", 0, 0.44); op(boxes[0], up(t, b1, 0.8)); draw(scr1, up(t, b1 + 0.3, 4)); op(u0Lab, up(t, D0 + 0.8, 0.6) * (1 - up(t, b1, 0.6))); op(u1Lab, up(t, at("dawkins", 0, 0.74), 0.7) * (1 - up(t, D1 + 0.8, 0.6)));
+    op(boxes[1], up(t, D1, 0.7)); op(boxes[2], up(t, D1 + 1.2, 0.7));
+    const z3 = mix(1, 0.8, up(t, D1, 3.4)); g3z.setAttribute("transform", `translate(640 330) scale(${z3.toFixed(4)}) translate(-640 -330)`);
+    op(dLab, span(t, D0 + 0.3, D1 + 0.3, 0.7));
+
+    // ----- 4 true -----
+    op(g4a, span(t, T0 - 0.3, T1 - 0.1, 0.6)); rule4.setAttribute("transform", `translate(640 ${(206 + 2 * Math.sin(t * 1.3)).toFixed(1)})`);
+    c4.forEach((g, k) => op(g, up(t, T0 + 0.3 + k * 0.1, 0.3))); op(stop4, up(t, T0 + 2.7, 0.5));
+    const pastT = at("true", 0, 0.58); past4.forEach((g, k) => { op(g, up(t, pastT + k * 0.16, 0.3)); g.setAttribute("transform", `translate(0 ${(1.5 * Math.sin(t * 2 + k)).toFixed(1)})`); });
+    op(g4b, span(t, T1 - 0.3, N0 - 0.6, 0.6));
+    blocks.forEach((b, i) => { const k = up(t, T1 + 0.4 + i * 0.55, 1.3); move(b.g, mix(b.fx, b.x, k) - (parts[i][0] / 2) * 0 , mix(b.fy, b.y, k) + 1.2 * Math.sin(t * 1.5 + i) * k, 1, b.fr * (1 - k)); });
+    const linkT = at("true", 1, 0.66); c4b.forEach((g, k) => op(g, up(t, linkT + k * 0.12, 0.3))); op(q4, up(t, linkT + 0.9, 0.6));
+    op(partsLab, span(t, T1 + 2.6, N0 - 0.6, 0.6));
+
+    // ----- 5 narrower -----
+    op(qPause, span(t, N0 + 0.1, N1 - 0.2, 0.8, 0.6));
+    op(g5, span(t, N1 - 0.2, L0 - 0.5, 0.7)); op(craig, span(t, N1 + 0.3, N2 + 0.2, 0.6));
+    const s0 = at("narrower", 1, 0.3), s1 = at("narrower", 1, 0.84), sx = mix(1080, 360, ease((t - s0) / (s1 - s0)));
+    op(sign, span(t, N1 + 0.4, N2 + 0.3, 0.6)); move(sign, sx, 206 + 2 * Math.sin(t * 1.4));
+    began.forEach((b, i) => draw(b, t < s0 - 0.2 ? 0 : clamp((NXr[i] + 50 - sx) / 90)));
+    rowIcons.forEach((g, i) => { op(g, up(t, N1 + i * 0.25, 0.5) * (1 - 0.4 * up(t, at("narrower", 2, 0.42), 0.8))); g.setAttribute("transform", `translate(0 ${(1.5 * Math.sin(t * 1.2 + i)).toFixed(1)})`); });
+    op(gTime, up(t, N2 - 0.1, 0.6)); draw(tLine, up(t, N2, 1.4)); op(tick1, up(t, N2 + 0.3, 0.5)); op(tick2, up(t, N2 + 0.9, 0.5));
+    frames5.forEach((f, i) => op(f, up(t, at("narrower", 2, 0.44) + i * 0.15, 0.5)));
+    op(kindLab, up(t, at("narrower", 2, 0.8), 0.6));
+
+    // ----- 7 everlasting -----
+    op(g7, span(t, V1 - 0.6, P0 - 0.5, 0.6)); draw(mtn, up(t, V1, 3)); draw(ground7, up(t, V1 - 0.4, 1.4));
+    ever.forEach((e) => draw(e, up(t, at("everlasting", 1, 0.55), 3.2)));
+    op(v7, span(t, V1 - 0.5, P0 - 0.5, 0.6));
+
+    // ----- 8 parity + 10 open: the scale -----
+    const pScale = span(t, P0 - 0.4, B0 - 0.5, 0.6), oScale = span(t, O0 - 0.4, O1 - 0.2, 0.6), inOpen = t > O0 - 1;
+    op(g8, Math.max(pScale, oScale));
+    const settle = at("parity", 2, 0.7), ang = inOpen ? 3.2 * Math.sin((t - O0) * 0.8) : 6 * Math.sin((t - P0) * 1.05) * (1 - up(t, settle - 3, 3)) + 0.4 * Math.sin(t * 0.7);
+    beam.setAttribute("transform", `rotate(${ang.toFixed(3)} ${PIV[0]} ${PIV[1]})`);
+    const ar = ang * Math.PI / 180, lx = PIV[0] - 240 * Math.cos(ar), ly = PIV[1] - 240 * Math.sin(ar), rx = PIV[0] + 240 * Math.cos(ar), ry = PIV[1] + 240 * Math.sin(ar);
+    move(panL, lx, ly + 120); move(panR, rx, ry + 120); set(colLight, { x: (rx - 50).toFixed(1), height: (ry + 160).toFixed(1) });
+    op(colG, up(t, P0 + 0.8, 1.2) * (1 - 0.4 * (inOpen ? 1 : 0)));
+    op(labL1, 1 - (inOpen ? 1 : 0)); op(labR1, inOpen ? 0 : up(t, P0 + 1.2, 0.6)); op(labL2, inOpen ? up(t, O0 + 0.6, 0.6) : 0); op(labR2, inOpen ? up(t, O0 + 1.6, 0.6) : 0);
+    op(hume, inOpen ? 0 : up(t, at("parity", 2, 0.3), 0.6)); op(ghostEarth, inOpen ? 0.6 : up(t, at("parity", 2, 0.08), 0.8) * (0.7 + 0.3 * Math.sin(t * 1.6)));
+    op(head1, span(t, P1, settle, 0.6)); op(head2, span(t, settle, B0 - 0.5, 0.6));
+
+    // ----- 9 burden -----
+    op(g9a, span(t, B0 - 0.3, B3 - 0.1, 0.6)); const th = (t - B0) * 0.75;
+    const tpx = SUN[0] + 250 * Math.cos(th), tpy = SUN[1] + 76 * Math.sin(th); move(pot, tpx, tpy, 0.62); op(pot, 1 - up(t, at("burden", 2, 0.5), 1.2));
+    move(q9, tpx + 30, tpy - 16); op(q9, span(t, B2 + 0.2, at("burden", 2, 0.6), 0.5));
+    op(scope, span(t, B0 + 0.4, B1 - 0.1, 0.6)); sight.forEach((s, i) => { draw(s, up(t, B0 + 1.4 + i * 0.3, 1.4)); op(s, span(t, B0 + 1.3, B1 - 0.1, 0.4, 0.6) * 0.8); });
+    op(flew, span(t, B1, B2 + 0.4, 0.6)); op(owes, span(t, at("burden", 1, 0.62), B3, 0.6));
+    op(carriers[0], span(t, at("burden", 1, 0.55), O0 - 0.5, 0.6)); op(carriers[1], span(t, at("burden", 3, 0.8), O0 - 0.5, 0.6));
+    carriers.forEach((g, i) => g.setAttribute("transform", `translate(0 ${(-2 * Math.abs(Math.sin(t * 2 + i))).toFixed(1)})`));
+    op(who[0], span(t, at("burden", 3, 0.7), O0 - 0.5, 0.6)); op(who[1], span(t, at("burden", 3, 0.84), O0 - 0.5, 0.6));
+    op(g9b, span(t, B3 - 0.1, O0 - 0.5, 0.6)); cells.forEach((c, i) => op(c, up(t, B3 + 0.3 + (i % 7) * 0.12 + Math.floor(i / 7) * 0.2, 0.4)));
+    draw(crack, up(t, at("burden", 3, 0.42), 1.2)); op(ordLab, up(t, at("burden", 3, 0.2), 0.6)); op(wrongLab, up(t, at("burden", 3, 0.46), 0.6));
+
+    // ----- 10 open -----
+    const pg = span(t, O1 - 0.2, at("open", 1, 0.5), 0.6); op(g10, pg); reads.forEach((r, i) => draw(r, up(t, O1 + 0.6 + i * 0.4, 1.2)));
+    op(v10, span(t, O1 - 0.2, C0 - 0.3, 0.7));
+
+    // ----- 11 close -----
+    op(g11, span(t, C0 - 0.4, C1 - 0.1, 0.7));
+    flames.forEach((f, i) => { const s = 1 + 0.08 * Math.sin(t * 3.1 + i * 1.7); f.g.setAttribute("transform", `translate(${f.x} ${f.y}) scale(${(1 - 0.03 * Math.sin(t * 2.3 + i)).toFixed(3)} ${s.toFixed(3)})`); op(f.g, up(t, C0 + 0.2 + i * 0.25, 0.6)); });
+    op(v11, span(t, at("close", 0, 0.55), C1 + 0.2, 0.6));
+  };
+});
+</script>
+</body></html>

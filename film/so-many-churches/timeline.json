@@ -1,0 +1,254 @@
+{
+ "length": 288.88,
+ "chapters": [
+  {
+   "id": "one",
+   "kicker": "One company",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 25.74,
+   "lines": [
+    {
+     "text": "Read the church signs in one town: Catholic, Orthodox, Baptist, Methodist, Pentecostal. A fair question: if there's one Lord, why so many churches?",
+     "start": 2.6,
+     "end": 13.56
+    },
+    {
+     "text": "It began as one company in Jerusalem, gathered by the Spirit at Pentecost.",
+     "start": 14.3,
+     "end": 18.46
+    },
+    {
+     "text": "They devoted themselves to the apostles\u2019 teaching and to the fellowship, to the breaking of bread and to prayer.",
+     "start": 19.06,
+     "end": 24.84
+    }
+   ]
+  },
+  {
+   "id": "spread",
+   "kicker": "Many lands",
+   "level": 0.3,
+   "start": 24.94,
+   "end": 41.02,
+   "lines": [
+    {
+     "text": "From Jerusalem the message went to Samaria, to Antioch, where the disciples were first called Christians, and on to Rome.",
+     "start": 25.84,
+     "end": 32.9
+    },
+    {
+     "text": "Worship took different shapes in different languages, but the churches confessed one faith, later written in the creeds.",
+     "start": 33.62,
+     "end": 40.12
+    }
+   ]
+  },
+  {
+   "id": "drift",
+   "kicker": "Greek East, Latin West",
+   "level": 0.4,
+   "start": 40.22,
+   "end": 57.0,
+   "lines": [
+    {
+     "text": "Over centuries, the church drifted. The East spoke Greek, the West Latin, and in time most on each side couldn't read the other's books.",
+     "start": 41.12,
+     "end": 49.62
+    },
+    {
+     "text": "When the western empire fell, the West looked to the bishop of Rome. The East still had its emperor.",
+     "start": 50.32,
+     "end": 56.1
+    }
+   ]
+  },
+  {
+   "id": "authority",
+   "kicker": "Who has the last word?",
+   "level": 0.5,
+   "start": 56.2,
+   "end": 94.84,
+   "lines": [
+    {
+     "text": "Pause here and ask yourself: when the whole church must decide something, who has the last word?",
+     "start": 57.1,
+     "end": 62.44
+    },
+    {
+     "text": "The West increasingly said Rome, Peter's successor. The East honored Rome as first among the great churches, but held that the bishops govern together, in council.",
+     "start": 63.3,
+     "end": 73.3
+    },
+    {
+     "text": "Then one Latin word, filioque, \u201cand the Son,\u201d added to the creed in the West: the Spirit proceeds from the Father and the Son.",
+     "start": 74.04,
+     "end": 82.64
+    },
+    {
+     "text": "The West meant to guard the Son's full divinity. The East objected to the words, and to one region changing the whole church's creed. The history course says neither was simply wrong.",
+     "start": 83.42,
+     "end": 93.94
+    }
+   ]
+  },
+  {
+   "id": "1054",
+   "kicker": "1054",
+   "level": 0.6,
+   "start": 94.04,
+   "end": 126.64,
+   "lines": [
+    {
+     "text": "In 1054, at Hagia Sophia, Cardinal Humbert excommunicated the patriarch Michael Cerularius, who returned the favor.",
+     "start": 94.94,
+     "end": 102.98
+    },
+    {
+     "text": "That only made visible a split already real. It was sealed in 1204, when a Western crusading army sacked Constantinople.",
+     "start": 103.62,
+     "end": 111.56
+    },
+    {
+     "text": "In 1965 the pope and the patriarch lifted the old excommunications. The course finds no hero and no villain, \u201conly two faithful traditions that loved the same Lord and lost the ability to love each other.\u201d",
+     "start": 112.18,
+     "end": 125.74
+    }
+   ]
+  },
+  {
+   "id": "luther",
+   "kicker": "1517",
+   "level": 0.55,
+   "start": 125.84,
+   "end": 148.16,
+   "lines": [
+    {
+     "text": "A German monk, Martin Luther, found peace with God in Paul's letter to the Romans: the righteousness God requires is the righteousness God gives, received by faith.",
+     "start": 126.74,
+     "end": 137.32
+    },
+    {
+     "text": "In 1517 he posted ninety-five theses against the sale of indulgences. He meant to start a debate. The printing press made it a fire across Europe.",
+     "start": 138.12,
+     "end": 147.26
+    }
+   ]
+  },
+  {
+   "id": "branches",
+   "kicker": "More branches",
+   "level": 0.5,
+   "start": 147.36,
+   "end": 174.56,
+   "lines": [
+    {
+     "text": "The movement grew beyond him: Zwingli in Zurich, who broke with Luther over the Supper; Calvin in Geneva; the Anabaptists, who baptized only those who could profess faith; and in England, the Anglican tradition.",
+     "start": 148.26,
+     "end": 163.3
+    },
+    {
+     "text": "Protestants divided further, Baptist, Methodist, Pentecostal and more, often over baptism, the Supper, and who holds authority and how.",
+     "start": 163.78,
+     "end": 173.66
+    }
+   ]
+  },
+  {
+   "id": "trent",
+   "kicker": "Rome answers",
+   "level": 0.45,
+   "start": 173.76,
+   "end": 195.82,
+   "lines": [
+    {
+     "text": "Rome didn't stand still. The Council of Trent, from 1545 to 1563, drew clear lines: justification by grace, but not by faith alone.",
+     "start": 174.66,
+     "end": 183.62
+    },
+    {
+     "text": "It also cleaned house: a seminary for every diocese. The Jesuits arose, and saints like Teresa of Avila. Rome did reform, and the reform was real.",
+     "start": 184.24,
+     "end": 194.92
+    }
+   ]
+  },
+  {
+   "id": "cost",
+   "kicker": "The cost",
+   "level": 0.6,
+   "start": 195.02,
+   "end": 220.66,
+   "lines": [
+    {
+     "text": "The tearing was soaked in blood. Catholics killed Protestants, Protestants killed Catholics, and both killed the Anabaptists.",
+     "start": 195.92,
+     "end": 203.66
+    },
+    {
+     "text": "The wars of religion ended in exhaustion, with the Peace of Westphalia in 1648. Nobody had won.",
+     "start": 204.18,
+     "end": 209.32
+    },
+    {
+     "text": "Some divisions were over things that matter. Some were not worth what they cost. The church needed the recovery, and the church should mourn the blood.",
+     "start": 209.94,
+     "end": 219.76
+    }
+   ]
+  },
+  {
+   "id": "root",
+   "kicker": "One root",
+   "level": 0.45,
+   "start": 219.86,
+   "end": 253.5,
+   "lines": [
+    {
+     "text": "Weigh this: which differences are worth disagreeing over, and which aren't?",
+     "start": 220.76,
+     "end": 224.86
+    },
+    {
+     "text": "Some are real. Catholics confess one visible church centered on Peter's successor; the Orthodox, a communion of churches whose bishops are equals; many Protestants, a church known where the gospel is rightly preached; free churches, a gathered company of believers.",
+     "start": 225.42,
+     "end": 242.8
+    },
+    {
+     "text": "And under them all: \u201cMost of these churches confess the same God, the same Christ, the same empty tomb, and they recite the same ancient creeds.\u201d",
+     "start": 243.34,
+     "end": 252.6
+    }
+   ]
+  },
+  {
+   "id": "be-one",
+   "kicker": "That they may be one",
+   "level": 0.3,
+   "start": 252.7,
+   "end": 282.782,
+   "lines": [
+    {
+     "text": "Why not skip them all? The New Testament has no word for a Christian who belongs to no church. Paul's picture is a body, and a hand on its own isn't freer. It's dying.",
+     "start": 253.6,
+     "end": 264.52
+    },
+    {
+     "text": "The night before he died, Jesus prayed for all who would believe:",
+     "start": 265.2,
+     "end": 268.66
+    },
+    {
+     "text": "That all of them may be one, as You, Father, are in Me, and I am in You.",
+     "start": 269.44,
+     "end": 275.0
+    },
+    {
+     "text": "The divisions are real. So is the unity under them. This film doesn't choose between the churches.",
+     "start": 275.82,
+     "end": 281.882
+    }
+   ]
+  }
+ ]
+}

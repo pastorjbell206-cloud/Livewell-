@@ -1,0 +1,275 @@
+{
+ "length": 264.11,
+ "chapters": [
+  {
+   "id": "quiet",
+   "kicker": "When heaven seems shut",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 24.32,
+   "lines": [
+    {
+     "text": "You pray, and nothing happens. No answer, no sign, only quiet.",
+     "start": 2.6,
+     "end": 7.04
+    },
+    {
+     "text": "Another film asks why we can't see God at all. This one is closer to home: the God you trust seems to have gone quiet.",
+     "start": 7.6,
+     "end": 16.72
+    },
+    {
+     "text": "Start with one sentence worth holding on to. Feeling far from God is not the same as being far from him.",
+     "start": 17.3,
+     "end": 23.42
+    }
+   ]
+  },
+  {
+   "id": "how-long",
+   "kicker": "How long?",
+   "level": 0.3,
+   "start": 23.52,
+   "end": 53.96,
+   "lines": [
+    {
+     "text": "The Bible doesn't hide this. In Psalm 13, David asks God the same question four times.",
+     "start": 24.42,
+     "end": 30.4
+    },
+    {
+     "text": "How long, O LORD? Will You forget me forever? How long will You hide Your face from me?",
+     "start": 30.96,
+     "end": 36.56
+    },
+    {
+     "text": "In Israel, God's face meant his favor and presence. And to be forgotten by God meant to be left without help.",
+     "start": 37.32,
+     "end": 44.0
+    },
+    {
+     "text": "David wasn't doubting that God was there. He was protesting an absence he felt. The lament was an act of faith, not its collapse.",
+     "start": 44.82,
+     "end": 53.06
+    }
+   ]
+  },
+  {
+   "id": "shape",
+   "kicker": "The shape of a lament",
+   "level": 0.4,
+   "start": 53.16,
+   "end": 80.64,
+   "lines": [
+    {
+     "text": "Since Hermann Gunkel, scholars have traced the shape of such prayers: complaint, petition, then trust and a promise to praise.",
+     "start": 54.06,
+     "end": 62.42
+    },
+    {
+     "text": "In Psalm 13 each part is shorter than the one before. The turn comes on one small word in verse five: But.",
+     "start": 62.98,
+     "end": 70.64
+    },
+    {
+     "text": "And nothing has changed. No rescue is reported. David trusts in the dark, leaning on God's loyal love, the Hebrew word chesed.",
+     "start": 71.24,
+     "end": 79.74
+    }
+   ]
+  },
+  {
+   "id": "forced",
+   "kicker": "Too fast?",
+   "level": 0.45,
+   "start": 79.84,
+   "end": 109.52,
+   "lines": [
+    {
+     "text": "Pause here and ask yourself. Does that turn feel too quick, even forced?",
+     "start": 80.74,
+     "end": 85.62
+    },
+    {
+     "text": "Readers have asked the same. Some think a priest or prophet spoke a word of assurance. Others think the change happened inside the one praying.",
+     "start": 86.28,
+     "end": 94.34
+    },
+    {
+     "text": "Others say the psalm compresses what may take a long time, a prayer prayed many times before the ending feels true.",
+     "start": 95.0,
+     "end": 101.66
+    },
+    {
+     "text": "Whichever is right, the complaint stays in the psalm. Trust is spoken beside it, not in place of it.",
+     "start": 102.4,
+     "end": 108.62
+    }
+   ]
+  },
+  {
+   "id": "elijah",
+   "kicker": "Elijah under the tree",
+   "level": 0.5,
+   "start": 108.72,
+   "end": 135.7,
+   "lines": [
+    {
+     "text": "Elijah had just seen fire fall on Mount Carmel. Then one threat came from Jezebel, and he ran for his life into the wilderness.",
+     "start": 109.62,
+     "end": 117.2
+    },
+    {
+     "text": "Exhausted and afraid, he sat under a broom tree and told God, I have had enough, LORD.",
+     "start": 117.84,
+     "end": 123.64
+    },
+    {
+     "text": "The Bible doesn't criticize that prayer or hide it. And look at the order of God's answer: sleep, food, water, and a second meal, before any words at all.",
+     "start": 124.3,
+     "end": 134.8
+    }
+   ]
+  },
+  {
+   "id": "whisper",
+   "kicker": "A voice of thin silence",
+   "level": 0.55,
+   "start": 134.9,
+   "end": 166.36,
+   "lines": [
+    {
+     "text": "Then at Horeb, the mountain of God, a great wind tore at the rocks. Then an earthquake, then a fire. God was in none of them.",
+     "start": 135.8,
+     "end": 144.28
+    },
+    {
+     "text": "And after the fire came a still, small voice.",
+     "start": 144.88,
+     "end": 147.74
+    },
+    {
+     "text": "The Hebrew is a paradox, literally a voice of thin silence. Translations differ: a gentle whisper, a sound of sheer silence.",
+     "start": 148.38,
+     "end": 157.62
+    },
+    {
+     "text": "God asked Elijah a question, gave him work, and told him he wasn't alone: seven thousand were still faithful.",
+     "start": 158.28,
+     "end": 165.46
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "kicker": "The dark night",
+   "level": 0.5,
+   "start": 165.56,
+   "end": 193.56,
+   "lines": [
+    {
+     "text": "The church has named this for centuries. The sixteenth-century Spanish mystic John of the Cross called it the dark night of the soul.",
+     "start": 166.46,
+     "end": 174.12
+    },
+    {
+     "text": "He treated the felt absence as a stage of love being purified, not as a punishment.",
+     "start": 174.44,
+     "end": 179.4
+    },
+    {
+     "text": "Mother Teresa, who served the dying in Calcutta, lived decades in this dryness and kept serving anyway.",
+     "start": 180.06,
+     "end": 186.04
+    },
+    {
+     "text": "Weigh this. If people like that felt it for years, what does your own quiet prove about you?",
+     "start": 186.66,
+     "end": 192.66
+    }
+   ]
+  },
+  {
+   "id": "cross",
+   "kicker": "Even Jesus",
+   "level": 0.75,
+   "start": 192.76,
+   "end": 219.46,
+   "lines": [
+    {
+     "text": "On the cross, Jesus prayed the first line of Psalm 22, Israel's fullest prayer for the moment when God seems gone.",
+     "start": 193.66,
+     "end": 200.9
+    },
+    {
+     "text": "My God, My God, why have You forsaken Me?",
+     "start": 201.56,
+     "end": 204.98
+    },
+    {
+     "text": "The Son of God took that cry onto his own lips. And Psalm 22, at its lowest point, breaks off to declare that God has answered.",
+     "start": 205.64,
+     "end": 214.18
+    },
+    {
+     "text": "That afternoon wasn't the end. On the third day he was raised.",
+     "start": 214.86,
+     "end": 218.56
+    }
+   ]
+  },
+  {
+   "id": "keep",
+   "kicker": "What to do meanwhile",
+   "level": 0.45,
+   "start": 218.66,
+   "end": 244.1,
+   "lines": [
+    {
+     "text": "No one can promise when the quiet will lift. The psalm gives no date for the morning.",
+     "start": 219.56,
+     "end": 224.12
+    },
+    {
+     "text": "So don't measure God's nearness by your feelings. They rise and fall with sleep, grief and the weather.",
+     "start": 224.64,
+     "end": 230.86
+    },
+    {
+     "text": "Keep the practices when the warmth is gone. Tell one honest believer where you are.",
+     "start": 231.58,
+     "end": 236.36
+    },
+    {
+     "text": "And read the psalms of absence. They were written by people who felt exactly this and were not cast off.",
+     "start": 236.98,
+     "end": 243.2
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "Near, though unseen",
+   "level": 0.3,
+   "start": 243.3,
+   "end": 258.01,
+   "lines": [
+    {
+     "text": "Psalm 13 ends with a promise to sing, and a verb in the past tense.",
+     "start": 244.2,
+     "end": 248.5
+    },
+    {
+     "text": "I will sing to the LORD, for He has been good to me.",
+     "start": 249.04,
+     "end": 252.08
+    },
+    {
+     "text": "The complaint is still there. So is the trust. Both are prayer.",
+     "start": 252.84,
+     "end": 257.11
+    }
+   ]
+  }
+ ]
+}
