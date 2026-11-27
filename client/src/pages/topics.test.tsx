@@ -89,8 +89,10 @@ describe("/topics", () => {
     serve();
     renderAt("/topics");
     expect(screen.getByRole("heading", { level: 1 }).textContent).toBe("Hard questions");
-    const politics = await screen.findByRole("link", { name: /What is Christian nationalism/ });
+    // Each topic shows its first two questions; "All" opens the rest in place (the simpler door, 2026-11-27).
+    await screen.findAllByRole("button", { name: /^All \d+$/ });
     openAll();
+    const politics = screen.getByRole("link", { name: /What is Christian nationalism/ });
     expect(politics.getAttribute("href")).toBe("/topics/faith-politics-and-the-flag");
     expect(screen.getByRole("link", { name: /What does it mean that America is post-Christian/ }).getAttribute("href")).toBe("/topics/living-after-christendom");
     // A personal need opens its care page directly, labelled as care.
@@ -117,7 +119,7 @@ describe("/topics", () => {
     publish(SLAVERY);
     serve();
     renderAt("/topics");
-    await screen.findByRole("link", { name: /What is Christian nationalism/ });
+    await screen.findAllByRole("button", { name: /^All \d+$/ });
     openAll();
     const slavery = screen.getByRole("link", { name: /Sunday mornings/ });
     expect(slavery.getAttribute("href")).toBe(`/writing/${SLAVERY}`);

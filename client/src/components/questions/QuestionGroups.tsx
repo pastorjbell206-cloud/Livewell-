@@ -61,9 +61,9 @@ export function groupItems(rows: TopicsIndexRow[]): { id: string; name: string; 
 
 const SHOWN = 4;
 
-function Group({ name, icon: Icon, items, all, id }: { name: string; icon: LucideIcon; items: GroupItem[]; all: boolean; id: string }) {
+function Group({ name, icon: Icon, items, all, id, first = SHOWN }: { name: string; icon: LucideIcon; items: GroupItem[]; all: boolean; id: string; first?: number }) {
   const [open, setOpen] = useState(all);
-  const shown = open ? items : items.slice(0, SHOWN);
+  const shown = open ? items : items.slice(0, first);
   const listId = `qa-group-${id}`;
   return (
     <section className="qa-group" aria-labelledby={`${listId}-h`}>
@@ -83,7 +83,7 @@ function Group({ name, icon: Icon, items, all, id }: { name: string; icon: Lucid
           </li>
         ))}
       </ul>
-      {!all && items.length > SHOWN && (
+      {!all && items.length > first && (
         <button type="button" className="qa-group__more" aria-expanded={open} aria-controls={listId} onClick={() => setOpen((x) => !x)}>
           {open ? "Fewer" : `All ${items.length}`}
         </button>
@@ -92,12 +92,12 @@ function Group({ name, icon: Icon, items, all, id }: { name: string; icon: Lucid
   );
 }
 
-export default function QuestionGroups({ rows, all = false }: { rows: TopicsIndexRow[]; all?: boolean }) {
+export default function QuestionGroups({ rows, all = false, shown = SHOWN }: { rows: TopicsIndexRow[]; all?: boolean; /** How many each group shows before "All" (the Questions door shows two). */ shown?: number }) {
   const groups = groupItems(rows);
   return (
     <div className="qa-groups">
       {groups.map((g) => (
-        <Group key={g.id} id={g.id} name={g.name} icon={g.icon} items={g.items} all={all} />
+        <Group key={g.id} id={g.id} name={g.name} icon={g.icon} items={g.items} all={all} first={shown} />
       ))}
     </div>
   );

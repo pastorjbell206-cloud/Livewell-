@@ -15,11 +15,17 @@
  * 4. Leading on: eight-week plans for a hard season, the study guides for
  *    groups and churches, and the downloads, as picture cards; then one line
  *    pointing families to the family page.
+ *
+ * The simpler page (2026-11-27): the rest of the door is one closed row,
+ * "See everything in Tools", and the page ends on the next step.
  */
 import { lazy, Suspense } from "react";
 
 import Layout from "@/components/Layout";
+import { Link } from "wouter";
 import DoorInside from "@/components/art/DoorInside";
+import NextStep from "@/components/art/NextStep";
+import SeeAll from "@/components/art/SeeAll";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
 import "./home/home.css";
@@ -61,8 +67,29 @@ export default function ToolsHub() {
         <ToolsBody />
       </Suspense>
 
-      {/* What sits inside the rooms the list above does not name, from the catalogue. */}
-      <DoorInside door="tools" title="Inside the rooms." />
+      {/* What sits inside the rooms the list above does not name, from the catalogue, closed until opened. */}
+      <section className="home-sec" aria-label="Everything in Tools">
+        <div className="home-wrap">
+          <SeeAll label="See everything in Tools" line="Every room, and every page inside them">
+            <DoorInside door="tools" bare />
+          </SeeAll>
+        </div>
+      </section>
+
+      <NextStep
+        title="Not finding it?"
+        line="Search every page on LiveWell, or start with what you are facing."
+        action={
+          <Link href="/search" className="btn">
+            Search LiveWell
+          </Link>
+        }
+        second={
+          <Link href="/help" className="btn btn--quiet">
+            Find Help
+          </Link>
+        }
+      />
     </Layout>
   );
 }

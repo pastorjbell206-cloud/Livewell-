@@ -1536,6 +1536,8 @@ html{-webkit-tap-highlight-color:transparent}
 .lw-all>summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .lw-all__body{padding:var(--s-2) 0 var(--s-4)}
 .lw-all__body>*+*{margin-top:var(--s-4)}
+.tl-folds .lw-all+.lw-all{border-top:0}
+.tl-folds .lw-all{scroll-margin-top:72px}
 
 .lw-next__in{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:var(--s-2) var(--s-5)}
 .lw-next__title{font-family:var(--F);font-weight:400;font-size:var(--fs-h2);line-height:1.08;letter-spacing:-.015em;color:var(--ink);margin:10px 0 0;text-wrap:balance}

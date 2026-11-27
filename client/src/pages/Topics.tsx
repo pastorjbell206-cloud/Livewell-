@@ -13,6 +13,12 @@
  *    to an essay that is not public yet opens its stand-in (lib/topics
  *    rowTarget).
  * 4. The rooms of the door, as picture cards, and the way to Find Help.
+ *
+ * The simpler page (2026-11-27): the ask box is the page's one job, so the
+ * page top has no button of its own; each topic shows its first two
+ * questions with "All" behind them; three rooms lead as big cards and the
+ * rest of the door is one closed row, "See everything in Questions"; then
+ * the next step. Every question and every link is still on the page.
  */
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
@@ -26,6 +32,8 @@ import SectionHead from "@/components/art/SectionHead";
 import DoorCard from "@/components/art/DoorCard";
 import type { PlateName } from "@/components/art/Plate";
 import LoadFailed from "@/components/LoadFailed";
+import NextStep from "@/components/art/NextStep";
+import SeeAll from "@/components/art/SeeAll";
 import AskBox from "@/components/questions/AskBox";
 import QuestionGroups from "@/components/questions/QuestionGroups";
 import { ANSWERS } from "@/data/answers";
@@ -65,12 +73,18 @@ const ROOM_ART: Record<string, { note: string; plate: PlateName }> = {
 };
 
 /** The rooms of the Questions door, read from the site catalogue so the page, the header and the footer agree. */
-const ROOMS: { title: string; note: string; href: string; plate: PlateName }[] = doorRooms("questions").map((r) => ({
+const ROOMS: { id: string; title: string; note: string; href: string; plate: PlateName }[] = doorRooms("questions").map((r) => ({
+  id: r.id,
   title: r.name,
   note: ROOM_ART[r.id]?.note ?? r.line,
   href: r.href,
   plate: ROOM_ART[r.id]?.plate ?? "lantern",
 }));
+
+/** The three rooms the page leads with: the answers, the case at full strength, and everyday life. */
+const PICKS = ["questions.answers", "questions.case", "questions.life"];
+const LEAD = PICKS.map((id) => ROOMS.find((r) => r.id === id)).filter((r): r is (typeof ROOMS)[number] => !!r);
+const REST = ROOMS.filter((r) => !PICKS.includes(r.id));
 
 export default function Topics() {
   const { state, retry } = useTopicsIndex();
@@ -99,11 +113,6 @@ export default function Topics() {
         title="Hard questions"
         line="Ask in your own words. Get a straight answer."
         plate="lantern"
-        action={
-          <Link href="/answers" className="btn">
-            All {ANSWERS.length} Honest Answers
-          </Link>
-        }
       />
 
       {/* FIRST: ask. */}
@@ -121,18 +130,18 @@ export default function Topics() {
           {state.status === "failed" ? (
             <LoadFailed what="The list of topics" onRetry={retry} backHref="/search" backLabel="Search the site" />
           ) : (
-            <QuestionGroups rows={rows} />
+            <QuestionGroups rows={rows} shown={2} />
           )}
         </div>
       </section>
 
-      {/* THE ROOMS, and the way to help. */}
+      {/* THREE ROOMS, and the way to help. */}
       <section className="home-sec home-sec--warm" aria-labelledby="qa-rooms-title">
         <div className="home-wrap">
           <SectionHead icon={Compass} label="Further in" title="Go deeper." id="qa-rooms-title" />
-          <ul className="lw-rooms">
-            {ROOMS.map((r) => (
-              <li key={r.href}>
+          <ul className="lw-picks lw-picks--3">
+            {LEAD.map(({ id, ...r }) => (
+              <li key={id}>
                 <DoorCard {...r} />
               </li>
             ))}
@@ -146,8 +155,36 @@ export default function Topics() {
         </div>
       </section>
 
-      {/* EVERYTHING ELSE IN THE DOOR, from the catalogue. */}
-      <DoorInside door="questions" />
+      {/* EVERYTHING ELSE IN THE DOOR, closed until opened. */}
+      <section className="home-sec" aria-label="Everything in Questions">
+        <div className="home-wrap">
+          <SeeAll label="See everything in Questions" line="Every room, and every page inside them">
+            <ul className="lw-rooms">
+              {REST.map(({ id, ...r }) => (
+                <li key={id}>
+                  <DoorCard {...r} />
+                </li>
+              ))}
+            </ul>
+            <DoorInside door="questions" bare />
+          </SeeAll>
+        </div>
+      </section>
+
+      <NextStep
+        title="Read the Honest Answers"
+        line="Each hard question answered on a page of its own."
+        action={
+          <Link href="/answers" className="btn">
+            All {ANSWERS.length} Honest Answers
+          </Link>
+        }
+        second={
+          <Link href="/start" className="btn btn--quiet">
+            Start here
+          </Link>
+        }
+      />
     </Layout>
   );
 }

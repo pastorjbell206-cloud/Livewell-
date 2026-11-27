@@ -3,15 +3,21 @@
  * the four groups of tools from lib/toolsList.ts, the three pages the tools
  * lead on to, and the line for families. Loaded as its own chunk, so the page
  * top paints before the list arrives; ToolsHub holds its place.
+ *
+ * The simpler page (2026-11-27): under the find box, four good places to
+ * start (one tool from each group) as big cards; then the four groups, each
+ * one closed row that opens in place (a link to /tools#study opens its row,
+ * lib/openFold). A search opens every group that has a match, as before.
  */
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "wouter";
-import { BookmarkCheck, House, Search, Signpost } from "lucide-react";
+import { BookmarkCheck, ChevronDown, House, Rows3, Search, Signpost, Sparkles } from "lucide-react";
 
 import SectionHead from "@/components/art/SectionHead";
 import DoorCard from "@/components/art/DoorCard";
 import ToolTile from "@/components/art/ToolTile";
 import { useLibrary } from "@/lib/library";
+import { useOpenFolds } from "@/lib/openFold";
 import { hasWordStarts, queryWords } from "@/lib/siteSearch";
 import { nameForHref } from "@/lib/siteCatalog";
 import { FAMILY_GROUP, FAMILY_TOOLS, OLD_GROUP_HASHES, TOOL_GROUPS, foldedInto, type Tool } from "@/lib/toolsList";
@@ -24,6 +30,18 @@ const LISTED = TOOL_GROUPS.reduce((n, g) => n + g.tools.length, 0);
 function findText(tool: Tool, groupName: string): string {
   return [tool.name, tool.job, groupName, ...foldedInto(tool.id).map((t) => `${t.name} ${t.job}`)].join(" ");
 }
+
+/** Four good places to start: one tool from each group, by id, with a picture from the kit. */
+const STARTERS: { id: string; plate: PlateName }[] = [
+  { id: "wisdom-finder", plate: "lens" },
+  { id: "test-the-case", plate: "arch" },
+  { id: "diagnostic", plate: "compass" },
+  { id: "prayer-generator", plate: "lantern" },
+];
+const STARTER_TOOLS = STARTERS.map((s) => {
+  const tool = TOOL_GROUPS.flatMap((g) => g.tools).find((t) => t.id === s.id);
+  return tool ? { tool, plate: s.plate } : null;
+}).filter((x): x is { tool: Tool; plate: PlateName } => !!x);
 
 /** The three pages the tools lead on to, under the catalogue's names. */
 const LEADS: { href: string; note: string; plate: PlateName }[] = [
@@ -54,6 +72,8 @@ export default function ToolsBody() {
   const words = useMemo(() => queryWords(query), [query]);
   const searching = query.trim().length > 0;
   useGroupHash();
+  // A link to a group (/tools#check-yourself, or the jump links) opens its row.
+  useOpenFolds();
 
   const groups = useMemo(() => {
     if (!searching) return TOOL_GROUPS;
@@ -89,20 +109,6 @@ export default function ToolsBody() {
           <p role="status" className="tl-status">
             {searching ? (found ? `${found} ${found === 1 ? "tool matches" : "tools match"} "${query.trim()}".` : `No tool matches "${query.trim()}".`) : ""}
           </p>
-          {!searching && (
-            <nav aria-label="Tool groups" className="tl-jump">
-              {TOOL_GROUPS.map((g) => {
-                const Icon = g.icon;
-                return (
-                  <a key={g.id} href={`#${g.id}`} className="tl-jump__link">
-                    <Icon size={18} strokeWidth={1.75} aria-hidden="true" />
-                    {g.name}
-                    <span className="tl-jump__n">{g.tools.length}</span>
-                  </a>
-                );
-              })}
-            </nav>
-          )}
           {searching && !found && (
             <p className="tl-none">
               Try another word, <Link href={`/search?q=${encodeURIComponent(query.trim())}`}>search the whole site</Link>, or start at{" "}
@@ -112,29 +118,79 @@ export default function ToolsBody() {
         </div>
       </section>
 
-      {/* THE GROUPS: every tool once. */}
-      {groups.map((g, i) => (
-        <section key={g.id} id={g.id} className={`home-sec tl-group${i % 2 === 0 ? "" : " home-sec--warm"}`} aria-labelledby={`tl-${g.id}-title`}>
+      {/* GOOD PLACES TO START: one tool from each group. */}
+      {!searching && (
+        <section className="home-sec home-sec--warm" aria-labelledby="tl-start-title">
           <div className="home-wrap">
-            <SectionHead icon={g.icon} label={`${g.tools.length} ${g.tools.length === 1 ? "tool" : "tools"}`} title={g.name} id={`tl-${g.id}-title`} />
-            <p className="tl-group__line">{g.line}</p>
-            <ul className="lw-tools">
-              {g.tools.map((t) => (
-                <li key={t.id}>
-                  <ToolTile tool={t} />
+            <SectionHead icon={Sparkles} label="Good places to start" title="Not sure which one?" id="tl-start-title" />
+            <ul className="lw-picks">
+              {STARTER_TOOLS.map(({ tool, plate }) => (
+                <li key={tool.id}>
+                  <DoorCard href={tool.href} title={tool.name} note={tool.job} plate={plate} />
                 </li>
               ))}
             </ul>
           </div>
         </section>
-      ))}
+      )}
+
+      {/* THE GROUPS: every tool once, each group a row that opens in place. */}
+      {!searching && (
+        <section className="home-sec" aria-labelledby="tl-groups-title">
+          <div className="home-wrap">
+            <SectionHead icon={Rows3} label="By group" title="Every tool, by what it is for." id="tl-groups-title" />
+            <div className="tl-folds">
+              {groups.map((g) => (
+                <details key={g.id} id={g.id} className="lw-all tl-fold" aria-labelledby={`tl-${g.id}-title`}>
+                  <summary>
+                    <span id={`tl-${g.id}-title`}>
+                      {g.name}
+                      <small>
+                        {g.line} {g.tools.length} {g.tools.length === 1 ? "tool" : "tools"}.
+                      </small>
+                    </span>
+                    <ChevronDown aria-hidden="true" size={24} strokeWidth={1.75} />
+                  </summary>
+                  <div className="lw-all__body">
+                    <ul className="lw-tools">
+                      {g.tools.map((t) => (
+                        <li key={t.id}>
+                          <ToolTile tool={t} />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* A SEARCH: every group with a match, open. */}
+      {searching &&
+        groups.map((g, i) => (
+          <section key={g.id} id={g.id} className={`home-sec tl-group${i % 2 === 0 ? "" : " home-sec--warm"}`} aria-labelledby={`tl-${g.id}-title`}>
+            <div className="home-wrap">
+              <SectionHead icon={g.icon} label={`${g.tools.length} ${g.tools.length === 1 ? "tool" : "tools"}`} title={g.name} id={`tl-${g.id}-title`} />
+              <p className="tl-group__line">{g.line}</p>
+              <ul className="lw-tools">
+                {g.tools.map((t) => (
+                  <li key={t.id}>
+                    <ToolTile tool={t} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        ))}
 
       {/* LEADING ON, and the line for families. */}
       {!searching && (
-        <section className="home-sec" aria-labelledby="tl-more-title">
+        <section className="home-sec home-sec--warm" aria-labelledby="tl-more-title">
           <div className="home-wrap">
             <SectionHead icon={Signpost} label="More to use" title="Plans, group studies and downloads." id="tl-more-title" />
-            <ul className="lw-rooms">
+            <ul className="lw-picks lw-picks--3">
               {LEADS.map((l) => (
                 <li key={l.href}>
                   <DoorCard href={l.href} title={nameForHref(l.href) ?? l.note} note={l.note} plate={l.plate} />
