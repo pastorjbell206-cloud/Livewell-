@@ -12,7 +12,7 @@ import { ArrowRight, Check } from "lucide-react";
 import { fetchTrackIndex, nextSession, readTracks, sessionHref, trackHref } from "@/lib/tracks";
 import { useLoad } from "../study-bible/shared";
 
-export default function PreviewPaths() {
+export default function PreviewPaths({ start }: { start?: string } = {}) {
   const { data, retry } = useLoad("preview-paths", fetchTrackIndex);
   const [slug, setSlug] = useState<string | null>(null);
   const kept = useMemo(() => readTracks().tracks, []);
@@ -30,7 +30,7 @@ export default function PreviewPaths() {
 
   // Open on a path the reader has begun, else the first.
   const begun = data.tracks.find((t) => kept[t.slug]?.done.length);
-  const track = data.tracks.find((t) => t.slug === slug) ?? begun ?? data.tracks[0];
+  const track = data.tracks.find((t) => t.slug === slug) ?? begun ?? data.tracks.find((t) => t.slug === start) ?? data.tracks[0];
   const mine = kept[track.slug];
   const done = new Set(mine?.done ?? []);
   const next = nextSession(mine, track.sessions.length);

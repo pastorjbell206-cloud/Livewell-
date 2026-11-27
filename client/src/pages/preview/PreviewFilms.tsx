@@ -61,9 +61,9 @@ function Screening({ slug, title, onClose }: { slug: string; title: string; onCl
 
 const line = (f: FilmSummary) => f.line?.older ?? f.line?.younger ?? "";
 
-export default function PreviewFilms() {
+export default function PreviewFilms({ start = "books" }: { start?: string } = {}) {
   const { data, retry } = useLoad("preview-films", fetchExplorerIndex);
-  const [group, setGroup] = useState<string>("books");
+  const [group, setGroup] = useState<string>(start);
   const [showing, setShowing] = useState<string | null>(null);
 
   if (data === null)

@@ -12,19 +12,40 @@
  * (useLiveAreas) and the essay shelf; nothing is written here but the
  * discipline's one line.
  */
+import { lazy, Suspense, type ReactNode } from "react";
 import { Link, useParams } from "wouter";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import { SEOMeta } from "@/components/SEOMeta";
 import Plate from "@/components/art/Plate";
 import PlateFrame from "@/components/art/PlateFrame";
+import { useNear } from "@/components/art/useNear";
+import { Roundel } from "../explorer/art";
 import { DOORS, entryById, type CatalogEntry, type Room } from "@/lib/siteCatalog";
 import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
 import { useLiveAreas } from "@/lib/siteNav";
 import { isPublicEssay, overrideMeta, shelfEntry } from "@/lib/shelf";
-import { DISCIPLINES, DISCIPLINE_ESSAYS } from "./disciplines";
+import { DISCIPLINES, DISCIPLINE_ESSAYS, DISCIPLINE_PIECE, ESSAY_EMBLEM, ROOM_PLATE } from "./disciplines";
 import "../home/home.css";
 import "./preview.css";
+
+const BibleShelf = lazy(() => import("../home/BibleShelf"));
+const QuestionPicker = lazy(() => import("../home/QuestionPicker"));
+const HistoryStrip = lazy(() => import("../home/HistoryStrip"));
+const PreviewFilms = lazy(() => import("./PreviewFilms"));
+const PreviewPaths = lazy(() => import("./PreviewPaths"));
+
+/** A box that holds the piece's height until it arrives, loaded as it nears the screen. */
+function Piece({ name, children }: { name: string; children: ReactNode }) {
+  const [ref, near] = useNear<HTMLDivElement>();
+  return (
+    <div ref={ref} className={`home-piece home-piece--${name}`}>
+      {near && <Suspense fallback={null}>{children}</Suspense>}
+    </div>
+  );
+}
+
+const PIECE_TITLE = { shelf: "The whole Bible on one shelf", history: "Two thousand years on one line", ask: "Ask it straight", paths: "Walk it in order" } as const;
 
 const ROOMS = new Map<string, Room>(DOORS.flatMap((d) => d.rooms).map((r) => [r.id, r]));
 const count = (e: CatalogEntry) => (e.count ? `${e.count.n} ${e.count.of}` : "");
@@ -93,11 +114,15 @@ export default function PreviewDiscipline() {
   const essays = (DISCIPLINE_ESSAYS[d.id] ?? [])
     .filter((slug) => isPublicEssay(slug))
     .map((slug) => ({ slug, title: overrideMeta(slug)?.title ?? shelfEntry(slug)?.title ?? slug, excerpt: overrideMeta(slug)?.excerpt || shelfEntry(slug)?.blurb || "" }));
+  const piece = DISCIPLINE_PIECE[d.id] ?? { piece: "ask" as const, films: "books" };
+  const feature = { ...piece, dark: piece.piece === "shelf" || piece.piece === "history" };
   const prev = DISCIPLINES[(at - 1 + DISCIPLINES.length) % DISCIPLINES.length];
   const next = DISCIPLINES[(at + 1) % DISCIPLINES.length];
   const parts: [string, string][] = [
     ["rooms", `${rooms.length} rooms`],
+    ["try", "Try it"],
     ...(insideCount ? ([["inside", `${insideCount} more pages`]] as [string, string][]) : []),
+    ["watch", "Films"],
     ...(essays.length ? ([["essays", `${essays.length} essays`]] as [string, string][]) : []),
   ];
 
@@ -132,31 +157,45 @@ export default function PreviewDiscipline() {
               ))}
             </ul>
           </div>
-          <PlateFrame ratio="4 / 3" className="pv-dhead__art">
-            <Plate name={d.plate} decorative />
-          </PlateFrame>
+          <div className="pv-dhead__stage">
+            <PlateFrame ratio="4 / 3" className="pv-dhead__art">
+              <Plate name={d.plate} decorative />
+            </PlateFrame>
+            <ul className="pv-dhead__marks" aria-label="Essays in this discipline">
+              {essays.slice(0, 5).map((e, i) => (
+                <li key={e.slug} className={`pv-dhead__mark pv-dhead__mark--${i}`}>
+                  <Link href={`/writing/${e.slug}`} title={e.title}>
+                    <Roundel slug={ESSAY_EMBLEM[e.slug] ?? "the-bible"} className="lw-roundel" />
+                    <span className="pv-trail__sr">{e.title}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section id="rooms" className="home-sec pv-dsec" aria-labelledby="pv-d-rooms">
+      <section id="rooms" className="home-sec home-sec--warm pv-dsec" aria-labelledby="pv-d-rooms">
         <div className="home-wrap">
           <h2 id="pv-d-rooms" className="pv-dsec__title">
             The rooms
           </h2>
-          <ul className="pv-dcards">
+          <ul className={`pv-pcards pv-pcards--${Math.min(rooms.length, 4)}`}>
             {rooms.map((r) => {
               const Icon = ICONS[r.icon];
               return (
                 <li key={r.id}>
-                  <Link href={r.href} className="pv-dcard">
-                    <span className="pv-tool__icon" aria-hidden="true">
-                      <Icon size={22} strokeWidth={ICON_STROKE} />
+                  <Link href={r.href} className="pv-pcard">
+                    <span className="pv-pcard__art">
+                      <Plate name={ROOM_PLATE[r.id] ?? d.plate} decorative />
                     </span>
-                    <span className="pv-dcard__name">{r.name}</span>
-                    {r.count && <span className="pv-dcard__count">{count(r)}</span>}
-                    <span className="pv-dcard__line">{r.line}</span>
-                    <span className="pv-dcard__go">
-                      Open <ArrowRight aria-hidden="true" size={16} strokeWidth={1.75} />
+                    <span className="pv-pcard__body">
+                      <span className="pv-pcard__name">{r.name}</span>
+                      <span className="pv-pcard__top">
+                        <Icon aria-hidden="true" size={18} strokeWidth={ICON_STROKE} />
+                        {r.count ? count(r) : "Open"}
+                      </span>
+                      <span className="pv-pcard__line">{r.line}</span>
                     </span>
                   </Link>
                 </li>
@@ -166,28 +205,70 @@ export default function PreviewDiscipline() {
         </div>
       </section>
 
+      <section id="try" className={`home-sec pv-dsec${feature.dark ? " home-sec--dark" : ""}`} aria-labelledby="pv-d-try">
+        <div className={`home-wrap${feature.piece === "ask" ? " home-two" : ""}`}>
+          {feature.piece === "ask" && (
+            <PlateFrame className="home-two__art">
+              <Plate name="tomb" />
+            </PlateFrame>
+          )}
+          <div>
+            <p className="home-eyebrow">Try it</p>
+            <h2 id="pv-d-try" className="pv-dsec__title">
+              {PIECE_TITLE[feature.piece]}
+            </h2>
+            {feature.piece === "shelf" && (
+              <Piece name="shelf">
+                <BibleShelf />
+              </Piece>
+            )}
+            {feature.piece === "history" && (
+              <Piece name="history">
+                <HistoryStrip />
+              </Piece>
+            )}
+            {feature.piece === "ask" && (
+              <Piece name="ask">
+                <QuestionPicker />
+              </Piece>
+            )}
+            {feature.piece === "paths" && (
+              <Piece name="paths">
+                <PreviewPaths start={feature.paths} />
+              </Piece>
+            )}
+          </div>
+        </div>
+      </section>
+
       {groups.length > 0 && (
-        <section id="inside" className="home-sec home-sec--warm pv-dsec" aria-labelledby="pv-d-inside">
+        <section id="inside" className={`home-sec pv-dsec${feature.dark ? "" : " home-sec--warm"}`} aria-labelledby="pv-d-inside">
           <div className="home-wrap">
             <h2 id="pv-d-inside" className="pv-dsec__title">
               Everything inside
             </h2>
             <div className="pv-dgroups">
-              {groups.map(({ room, inside }) => (
-                <div key={room.id} className={`pv-dgroup${groups.length === 1 && inside.length > 5 ? " pv-dgroup--wide" : ""}`}>
+              {groups.map(({ room, inside }, gi) => (
+                <div key={room.id} className={`pv-dgroup pv-tone-${gi % 3}${groups.length === 1 && inside.length > 5 ? " pv-dgroup--wide" : ""}`}>
                   <h3 className="pv-dgroup__room">
                     <Link href={room.href}>{room.name}</Link>
                   </h3>
                   <ul className="pv-dgroup__list">
-                    {inside.map((p) => (
-                      <li key={p.id}>
-                        <Link href={p.href} className="pv-dgroup__link">
-                          <span className="pv-dgroup__name">{p.name}</span>
-                          {p.count && <span className="pv-dgroup__count">{count(p)}</span>}
-                          <span className="pv-dgroup__line">{p.line}</span>
-                        </Link>
-                      </li>
-                    ))}
+                    {inside.map((p) => {
+                      const PIcon = ICONS[p.icon];
+                      return (
+                        <li key={p.id}>
+                          <Link href={p.href} className="pv-dgroup__link">
+                            <span className="pv-dgroup__icon" aria-hidden="true">
+                              <PIcon size={18} strokeWidth={ICON_STROKE} />
+                            </span>
+                            <span className="pv-dgroup__name">{p.name}</span>
+                            {p.count && <span className="pv-dgroup__count">{count(p)}</span>}
+                            <span className="pv-dgroup__line">{p.line}</span>
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               ))}
@@ -196,8 +277,20 @@ export default function PreviewDiscipline() {
         </section>
       )}
 
+      <section id="watch" className="home-sec home-sec--dark pv-dsec" aria-labelledby="pv-d-watch">
+        <div className="home-wrap">
+          <p className="home-eyebrow">Bible films</p>
+          <h2 id="pv-d-watch" className="pv-dsec__title">
+            Press play
+          </h2>
+          <Piece name="reel">
+            <PreviewFilms start={feature.films} />
+          </Piece>
+        </div>
+      </section>
+
       {essays.length > 0 && (
-        <section id="essays" className={`home-sec pv-dsec${groups.length ? "" : " home-sec--warm"}`} aria-labelledby="pv-d-essays">
+        <section id="essays" className="home-sec home-sec--warm pv-dsec" aria-labelledby="pv-d-essays">
           <div className="home-wrap">
             <div className="pv-bench__head">
               <h2 id="pv-d-essays" className="pv-dsec__title">
@@ -211,8 +304,14 @@ export default function PreviewDiscipline() {
               {essays.map((e) => (
                 <li key={e.slug}>
                   <Link href={`/writing/${e.slug}`} className="pv-dessay">
+                    <span className="pv-dessay__mark" aria-hidden="true">
+                      <Roundel slug={ESSAY_EMBLEM[e.slug] ?? "the-bible"} className="lw-roundel" />
+                    </span>
                     <span className="pv-dessay__title">{e.title}</span>
                     {e.excerpt && <span className="pv-dessay__line">{e.excerpt}</span>}
+                    <span className="pv-dessay__go">
+                      Read <ArrowRight aria-hidden="true" size={16} strokeWidth={1.75} />
+                    </span>
                   </Link>
                 </li>
               ))}
