@@ -1,0 +1,531 @@
+{
+  "slug": "hard-questions",
+  "title": "The hardest questions, faced honestly",
+  "for": "I have objections I need answered",
+  "subtitle": "Ten sessions on the objections that keep thoughtful people away: other religions, hell, the conquest of Canaan, slavery, miracles, abuse in the church, God's hiddenness and wishful thinking, each stated at its strongest first.",
+  "intro": [
+    "This track is for someone whose objections haven't gone away, and who has heard too many easy answers to trust another one. It takes ten of the hardest: other religions, those who never heard, hell, the wars of the Old Testament, slavery, miracles, abuse in the church, the hiddenness of God, the charge that faith is wishful thinking, and what it would mean to keep looking. Each session states the objection as its strongest defenders would before any reply.",
+    "Some of these questions divide faithful Christians, and where they do the track says so and sets out the main views without choosing for you. Some of the replies won't satisfy you, and the pages say plainly what they can't show. You are free to finish this track unconvinced. The aim is that you finish it knowing your objections were heard. Each session ends with a guide for a group, and nobody in the group needs to believe."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The hardest questions, faced honestly. The group is for people with real objections to Christianity, and for believers willing to hear those objections without flinching. It works best when both are in the room. The leader isn't there to defend the faith. The leader is there to make sure every objection is stated at its strongest, every answer is heard fairly, and no one is pressed to agree.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to eight people is a good size. Meet for about seventy-five minutes, weekly or every other week, for ten meetings, and keep the end time you promised. If you can, ask a skeptic and a believer who trust each other to come together. A leader doesn't need answers to every question here. A leader needs to be fair to both sides, unafraid of silence, and honest about what isn't known."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Meet somewhere ordinary: a living room, a back table at a cafe. Sit so no one faces a teacher. Several sessions open long pages, so have them on a phone or printed. Say at the first meeting that anyone may pass on any question, that what is said about people's own lives stays in the room, and that no one will be asked to pray aloud or to decide anything."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: someone who doesn't believe states the session's objection at its strongest, in their own words.",
+          "Thirty-five minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Ten minutes: what each person found weakest in the page's reply.",
+          "Five minutes: the verse read aloud, and the prayer prompt for those who pray, with quiet for everyone else.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Every question in this track is hard, so the rule is simple: no one answers an objection until it has been stated so well that the person who holds it agrees. If a believer in the group rushes to reply, slow them down. If the page the session opened takes the point up, read that part aloud. If no one knows, say so and bring it back next time.",
+          "Several sessions touch questions on which faithful Christians disagree: those who never heard, the nature of hell, how to read the conquest. Present those views fairly and leave them open. A skeptic who sees believers disagreeing well learns more than one who hears a single tidy answer."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Some objections are wounds wearing the clothes of arguments: a parent who died outside the faith, a childhood spent afraid of hell, abuse by a church leader. When that becomes plain, stop arguing. Listen, thank the person for trusting the group, and don't explain their pain or hurry them back to the topic. Ask whether they would like the group to go on or to pause, and speak with them afterward on their own.",
+          "The session on abuse needs special care. If someone says that anyone is harming them or a child, take it seriously and don't promise to keep it secret. Abuse of a child is a crime and a matter for the police, not only for the group. Never press anyone to forgive quickly or to return to a church that harmed them."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when a question has become a weight they can't put down: fear of judgment that won't let them rest, grief over someone who has died, harm done to them in a church or at home, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Is Jesus the only way?",
+      "minutes": 10,
+      "teaching": [
+        "The objection runs like this. Billions of sincere people belong to other faiths, many of them kinder and more devout than most Christians. To say they are all wrong about the most important thing in life is arrogant, and the claim has a long record of riding along with empires. The philosopher John Hick argued that the great religions are different, culturally shaped responses to one ultimate reality, none of them holding the whole truth. The old parable of the blind men and the elephant, each sure of the part in his hands, says the same thing more simply.",
+        "Some of that should be granted at once. Christians have said it with contempt, and that is wrong. But Lesslie Newbigin noticed that the elephant parable is told by someone who claims to see the whole elephant. Every view of the religions, the pluralist's included, tells most believers they are mistaken about something they hold dear. So the question isn't whether to make an exclusive claim but which one is true. The Christian claim was first spoken by Jesus to troubled friends on the night he was arrested, and it says salvation is a gift in a person that no one earns and no one is born into."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Is it arrogant to say Jesus is the only way?",
+        "href": "/questions/religions/is-it-arrogant-to-say-jesus-is-the-only-way",
+        "why": "Hick's pluralism at its strongest, what is true in the charge of arrogance, and why every view of the religions makes an exclusive claim of its own."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Are all religions the same?",
+          "href": "/questions/religions/are-all-religions-the-same",
+          "why": "Whether the great faiths are different paths up one mountain, tested against what each of them actually teaches about God and salvation."
+        },
+        {
+          "kind": "answer",
+          "label": "What do Christianity and Islam actually dispute?",
+          "href": "/answers/christianity-and-islam-differences",
+          "why": "Where the two faiths agree, where they part, and why the difference finally comes down to who Jesus is."
+        }
+      ],
+      "question": "Is there any view of the world's religions that doesn't tell someone they are wrong, and if not, how should such a claim be held?",
+      "do": "Read John 14:1-11. Notice whom Jesus is speaking to and what is about to happen. Write one sentence on how that setting changes the way his claim sounds.",
+      "verse": {
+        "ref": "John 14:6",
+        "text": "Jesus answered, “I am the way and the truth and the life. No one comes to the Father except through Me.”"
+      },
+      "group": {
+        "open": "Who is the most devout person of another faith you have known?",
+        "discuss": [
+          "Is it possible to believe someone is wrong and still honour them? What would that look like?",
+          "Newbigin said the person telling the elephant parable claims to see the whole elephant. Is that fair to the pluralist?",
+          "Why does it matter that Jesus made this claim to troubled friends rather than from a throne?"
+        ],
+        "pray": "Those who pray may ask for humility toward people of other faiths, and for truthfulness about Jesus that never turns into contempt."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Those who never heard",
+      "minutes": 10,
+      "teaching": [
+        "Put sharply, the objection says a just God would not condemn a girl born in a village where no one ever spoke the name of Jesus. If salvation comes only through Christ, and most people who ever lived died without hearing of him, then eternity is settled by geography, and either God is unjust or the Christian claim is false. Philosophers such as Kenneth Himma have pressed it as a moral case against the faith, and many believers feel it just as keenly, often about someone they loved.",
+        "This is a question on which faithful Christians differ, and the creeds don't settle it. Some hold that only those who hear and believe the gospel are saved, and press the urgency of telling everyone. Some hold that Christ saves some who never knew his name, through the light God gave them, as C. S. Lewis pictured in The Last Battle. Some hope God meets each person with the gospel at or after death. Others decline to say more than Scripture says. All of them confess that whoever is saved is saved by Christ, and that the Judge of all the earth will do right."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "What about those who never heard?",
+        "href": "/questions/religions/those-who-never-heard",
+        "why": "The moral case stated at full strength, then each Christian answer in its holders' own terms with its hardest question, taking no side among them."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "What about people who never heard?",
+          "href": "/study/explorer/watch/never-heard",
+          "why": "A short film on the question, for someone meeting it for the first time or carrying it for someone they love."
+        },
+        {
+          "kind": "essay",
+          "label": "What happens to people who never hear the gospel?",
+          "href": "/writing/what-happens-to-people-who-never-hear-the-gospel",
+          "why": "A longer essay on what Scripture says, what it leaves unsaid, and how to hold the question without claiming to know more."
+        }
+      ],
+      "question": "Which answer to this question seems fairest to you, and what is its hardest difficulty?",
+      "do": "Read Romans 2:12-16 and Acts 17:22-31. Write down what each passage says about people who never had the Scriptures, and what each leaves unsaid.",
+      "verse": {
+        "ref": "Genesis 18:25",
+        "text": "Will not the Judge of all the earth do what is right?"
+      },
+      "care": [
+        "If you are grieving someone who has died, these verses do not ask you to stop grieving. Jesus wept at his friend's grave (John 11:35). Paul says believers grieve, but not “like the rest, who are without hope” (1 Thessalonians 4:13). If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When did you first wonder about people who never heard of Jesus?",
+        "discuss": [
+          "Which of the Christian answers would you defend if you had to, and why that one?",
+          "Why might the creeds leave this question open while they settle others firmly?",
+          "Abraham argued with God about justice, and Scripture kept the argument. What does that suggest about asking this question?"
+        ],
+        "pray": "Those who pray may bring to God anyone they love who has died without knowing Christ, and leave them in his hands."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Hell and judgment",
+      "minutes": 10,
+      "teaching": [
+        "Bertrand Russell, in a 1927 lecture explaining why he was not a Christian, counted belief in everlasting punishment as a serious defect in Christ's moral character. The objection is plain: wrongs done in a short life can't deserve suffering without end, and a God who imposes it is worse than the harshest human judge. Many Christians have felt its force, and some have left the faith over it. It deserves an argument, not a shrug, and certainly not a threat.",
+        "All Christians confess that God will judge the world justly in Christ, and that he takes no pleasure in the death of the wicked. They differ on what final judgment is. Most of the church has held that the lost are separated from God without end. Many others, John Stott among them, have held that the finally impenitent at last perish and are no more. A minority has hoped that all will one day be restored. Each answers Russell at a different point and each has a real difficulty. None of them permits hell to be used as a threat to frighten people into church."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Hell and the justice of God",
+        "href": "/questions/evil/hell-and-the-justice-of-god",
+        "why": "Russell's objection at its strongest, then the church's three answers, each with its real difficulty, and no side taken between the first two."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Is hell forever, or does it end?",
+          "href": "/answers/is-hell-forever-or-does-it-end",
+          "why": "A shorter answer on what the debate turns on, and why a world with no final judgment might be worse rather than kinder."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Hell in the Study Bible",
+          "href": "/study/bible/doctrines/hell",
+          "why": "The passages themselves, gathered across both Testaments, so you can read what Scripture says before what anyone says about it."
+        }
+      ],
+      "question": "Does the idea of final judgment strike you as unjust, or does a world with no final judgment strike you as worse?",
+      "do": "Read Matthew 25:31-46. Write down what the people in the story are judged for, and whom they discover they had met without knowing it.",
+      "verse": {
+        "ref": "Ezekiel 33:11",
+        "text": "As surely as I live, declares the Lord GOD, I take no pleasure in the death of the wicked, but rather that the wicked should turn from their ways and live."
+      },
+      "care": [
+        "If you are a person whose conscience never rests, who keeps checking whether you have really believed, hear John's words: “Even if our hearts condemn us, God is greater than our hearts, and He knows all things” (1 John 3:20). Such fear can be part of anxiety or a habit of the mind, and that is not a failure of faith. Talk with a pastor or a friend you trust, and if the fear will not let you rest, a counsellor or a doctor can help too. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What were you taught about hell as a child, if anything?",
+        "discuss": [
+          "Russell thought belief in everlasting punishment showed a lack of humanity. What is right in that, and what might he have missed?",
+          "Why do you think faithful Christians have read the same passages about judgment so differently?",
+          "How has hell been misused as a threat, and what would it look like to speak of judgment without doing that?"
+        ],
+        "pray": "Those who pray may ask God to be a judge they can trust, and to free anyone who was frightened by careless preaching."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The conquest of Canaan",
+      "minutes": 10,
+      "teaching": [
+        "Deuteronomy tells Israel to leave nothing alive that breathes in the cities of Canaan, and Joshua describes towns destroyed with men, women and children. The philosopher Wes Morriston has pressed the objection with care. If any other ancient text commanded this, we would call it genocide, and Scripture itself teaches that children are not to be punished for what their fathers did. Either God commanded something monstrous, or the Bible is wrong that he did. A Christian who skips these chapters loses the right to be taken seriously by anyone who has read them.",
+        "Christians who receive these books as God's word read them in several ways, and each has a cost. Some read the language of total destruction as the stock idiom of ancient war, which the same books qualify when they later find Canaanites still living in the land. Some read it as judgment on long-practised evil after centuries of patience. Some see God accommodating himself to an ancient people, to be understood in the end through Christ. All agree on two things: the command belonged to one land and one moment, and it gives no one today any warrant for violence."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "The command to destroy the Canaanites",
+        "href": "/questions/old-testament/the-command-to-destroy-the-canaanites",
+        "why": "Morriston's objection in full, the main Christian readings, and the cost of each, set side by side for you to weigh."
+      },
+      "also": [
+        {
+          "kind": "study-tool",
+          "label": "Hard passages",
+          "href": "/study/hard-passages",
+          "why": "The Study Bible's hard passages gathered in one place, each linked to its note, so the troubling texts can be read in their setting."
+        },
+        {
+          "kind": "context",
+          "label": "Why is the Old Testament so violent?",
+          "href": "/resources/context/the-violence-of-the-old-testament",
+          "why": "The ancient world of war these texts were written in, what they share with it, and what sets them apart from it."
+        },
+        {
+          "kind": "answer",
+          "label": "Did God command genocide?",
+          "href": "/answers/did-god-command-genocide",
+          "why": "A shorter answer that refuses to look away from the text, and says plainly what any reading of it can and cannot excuse."
+        }
+      ],
+      "question": "If you were a Christian, which reading of these commands could you live with, and what would it cost you?",
+      "do": "Read Joshua 2 and Joshua 6:22-25, the story of Rahab. Write down what it suggests about who could be spared, and why the writer might have told it.",
+      "verse": {
+        "ref": "Deuteronomy 9:5",
+        "text": "It is not because of your righteousness or uprightness of heart that you are going in to possess their land, but it is because of their wickedness that the LORD your God is driving out these nations before you, to keep the promise He swore to your fathers, to Abraham, Isaac, and Jacob."
+      },
+      "group": {
+        "open": "What is the most troubling passage you know in any book you have read?",
+        "discuss": [
+          "Is it more honest for a Christian to admit these passages are troubling, or to defend them at once? Why?",
+          "Which of the readings answers the objection best, and which is easiest to abuse?",
+          "These texts have been used to justify conquest. What would it take to read them so they never could be again?"
+        ],
+        "pray": "Those who pray may lament the violence in these pages and in our own history, and ask for peace wherever war is still being blessed."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Slavery in the Bible",
+      "minutes": 10,
+      "teaching": [
+        "The Law of Moses regulates slavery rather than banning it. Paul tells slaves to obey their masters and sends a runaway named Onesimus back to his owner, Philemon. In the American South, preachers built a confident biblical defense of slavery from these texts, and whole denominations split over it. The objection is simple: a book that came from God should have said, plainly and once, that owning a human being is evil. It didn't, and people suffered for centuries under the silence.",
+        "Part of the answer is context and part is confession. The law released Hebrew debt slaves in the seventh year and made kidnapping a person to sell a capital crime, the very trade that fed the Atlantic market, though it also let foreigners be held for life, and that should be said plainly. Paul asked Philemon to receive Onesimus no longer as a slave but as a brother, which undoes the institution from inside. Gregory of Nyssa preached against owning people in the fourth century. And Frederick Douglass rightly told apart the Christianity of Christ from the slaveholding religion of his own country."
+      ],
+      "open": {
+        "kind": "context",
+        "label": "What does the Bible actually say about slavery?",
+        "href": "/resources/context/the-slavery-texts",
+        "why": "The slavery texts read in their own world, without excusing them, and set beside the chattel slavery of the Atlantic trade."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Why didn't the Bible just ban slavery?",
+          "href": "/answers/why-didnt-the-bible-just-ban-slavery",
+          "why": "The strongest form of the question, what the text did and didn't do, and why an honest answer has to include the church's record."
+        },
+        {
+          "kind": "history",
+          "label": "One Bible, two Americas",
+          "href": "/theology/history/one-bible-two-americas",
+          "why": "How enslaved Christians and slaveholding preachers read the same Bible in opposite ways, and what that history teaches about reading it honestly."
+        }
+      ],
+      "question": "Is it enough that the Bible planted ideas that later undid slavery, or should it have said more?",
+      "do": "Read the short letter to Philemon in one sitting. Write down every word Paul uses for Onesimus, and what each would have done to the way Philemon saw him.",
+      "verse": {
+        "ref": "Philemon 1:16",
+        "text": "no longer as a slave, but better than a slave, as a beloved brother. He is especially beloved to me, but even more so to you, both in person and in the Lord."
+      },
+      "group": {
+        "open": "What did you learn growing up about the church and slavery?",
+        "discuss": [
+          "Why could slaveholding preachers and enslaved believers read the same Bible so differently?",
+          "Does it matter that Christians led movements to end slavery, when Christians also defended it?",
+          "Where might we be reading the Bible today in a way that protects our own comfort?"
+        ],
+        "pray": "Those who pray may grieve the harm done in Christ's name, and ask to see what our own generation would rather not see."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Miracles and the modern mind",
+      "minutes": 10,
+      "teaching": [
+        "Most educated people today don't believe in miracles, and the reason usually goes back to David Hume. In 1748 he argued that a wise person proportions belief to the evidence, that the laws of nature rest on the most uniform experience we have, and that testimony to a miracle can almost never outweigh it. People lie, misremember and want to believe; nature doesn't break. Add the common idea that ancient people would believe anything, and the Gospel miracles look like the stories every religion tells.",
+        "The first part of Hume is right, and Christians should hold to it more strictly than they often have. Most miracle reports deserve suspicion. But ancient people knew perfectly well that the buried stay buried and virgins don't conceive, which is why the Gospels report astonishment and disbelief. And Hume's argument either assumes that experience is uniform against miracles, which is the very question, or it becomes a matter of weighing particular evidence. The laws of nature describe what happens when nothing beyond nature acts. Whether anything ever has turns on whether there is a God who could."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Miracles and the laws of nature",
+        "href": "/questions/science/miracles-and-the-laws-of-nature",
+        "why": "Hume's argument as he made it, what it gets right, and where it assumes what it sets out to prove."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "Were ancient people gullible about miracles?",
+          "href": "/resources/context/miracles-and-the-ancient-mind",
+          "why": "What people in the first century actually expected of the world, and why the Gospels report surprise rather than routine wonder."
+        },
+        {
+          "kind": "answer",
+          "label": "Are miracles believable?",
+          "href": "/answers/are-miracles-believable",
+          "why": "A shorter answer for someone who wants the argument in brief, with the honest limits of what it can show."
+        }
+      ],
+      "question": "What evidence, if any, would persuade you that a miracle had happened?",
+      "do": "Read John 20:24-29, the story of Thomas. Write down what Thomas asked for before he would believe, and whether you think his demand was reasonable.",
+      "verse": {
+        "ref": "Acts 26:26",
+        "text": "For the king knows about these matters, and I can speak freely to him. I am confident that none of this has escaped his notice, because it was not done in a corner."
+      },
+      "group": {
+        "open": "Have you ever seen something you couldn't explain?",
+        "discuss": [
+          "Is Hume right that a wise person proportions belief to the evidence? What follows for believers and skeptics alike?",
+          "Why does the question of miracles come back, in the end, to the question of God?",
+          "Thomas refused to believe without seeing. Is he a model or a warning, or both?"
+        ],
+        "pray": "Those who pray may ask for minds that are neither gullible nor closed, and for the courage to follow the truth."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Hypocrisy and abuse in the church",
+      "minutes": 10,
+      "teaching": [
+        "For many people the strongest argument against Christianity isn't a book but a church. They have watched leaders preach purity and live otherwise, and they have read the reports of children abused by clergy while bishops and denominational leaders, Catholic and Protestant, moved abusers on and kept the records out of sight. If the faith were true, it is fair to ask, wouldn't it make its people better? And how could anyone trust an institution that protected itself instead of children?",
+        "The charge is true, and nothing here excuses it. What can be said is narrower. The cover-up betrayed the faith's own Scriptures, which keep their harshest words for shepherds who feed themselves, and Jesus said it would be better for anyone who causes a little one to stumble to be thrown into the sea. The faith demands what the cover-up refused: the truth told, abusers handed to the authorities, the harmed believed and protected. A church that does that is obeying Christ. A church that won't has no claim on anyone's trust."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Abuse and cover-up",
+        "href": "/questions/morality/abuse-and-cover-up",
+        "why": "The charge stated in full and granted, then the narrower argument that the cover-up betrayed the faith rather than expressing it."
+      },
+      "also": [
+        {
+          "kind": "help",
+          "label": "The church hurt me",
+          "href": "/help/church-hurt",
+          "why": "For anyone harmed by a church or its leaders: places to turn, and words that take what happened seriously."
+        },
+        {
+          "kind": "essay",
+          "label": "Doubt after being abused by a church leader",
+          "href": "/writing/doubt-after-church-abuse",
+          "why": "A longer essay for someone whose faith was shaken by what a leader did, written without hurrying anyone back."
+        }
+      ],
+      "question": "Should the failures of Christians count against Christianity, and if so, how much?",
+      "do": "Read Ezekiel 34:1-10. Write down what God accuses the shepherds of doing and of failing to do, and what he says he will do about it.",
+      "verse": {
+        "ref": "Matthew 18:6",
+        "text": "But if anyone causes one of these little ones who believe in Me to stumble, it would be better for him to have a large millstone hung around his neck and to be drowned in the depths of the sea."
+      },
+      "care": [
+        "Abuse of a child is a crime. It is to be reported to the police and the proper authorities, not handled quietly inside a church. If a child is in danger, or you know of a child being harmed, contact the police or your local child protection service now. If you were harmed as a child, what was done to you was wrong, and it was not your fault. The Find Help page on this site lists places to turn.",
+        "If you have been harmed by someone in a church, and were told to forgive and say nothing, what happened to you may have been wrong. Please talk with someone you trust outside that situation. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What have you seen in a church that made the faith harder to believe?",
+        "discuss": [
+          "Is it fair to judge a faith by its worst followers, its best ones, or its founder? Why?",
+          "Why do institutions, religious or not, so often protect themselves instead of the vulnerable?",
+          "What would a church have to do for you to trust it again, or for the first time?"
+        ],
+        "pray": "Those who pray may pray for everyone harmed in a church, and ask that churches tell the truth and protect the vulnerable."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Why is God hidden?",
+      "minutes": 10,
+      "teaching": [
+        "If a loving God existed, wouldn't he make himself plain to everyone open to him? The philosopher J. L. Schellenberg argued in 1993 that a perfectly loving God would always make a relationship with himself possible for anyone who doesn't resist it, and that sincere, nonresistant unbelievers show there is no such God. Many readers don't need the argument. They have prayed and heard nothing, searched and found nothing, and wondered why a God who wants to be known keeps silent.",
+        "Scripture doesn't deny the experience. Isaiah calls God one who hides himself, and the psalms are full of people asking where he has gone. Christians answer that the love God offers aims at trust freely given and a changed life, which may be served by a God who can be found by those who seek him without being forced on anyone. That answer has limits. It can't say why a particular person hasn't yet found him, and it shouldn't pretend to. But Christians also claim God hasn't stayed hidden, and that if he has shown his face anywhere, it was in Jesus."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "The hiddenness of God",
+        "href": "/questions/evil/the-hiddenness-of-god",
+        "why": "Schellenberg's argument at its strongest, the Christian replies, and an honest account of what those replies cannot explain."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Why can't I see God?",
+          "href": "/study/explorer/watch/why-cant-i-see-god",
+          "why": "A short film on the question for anyone who has asked it, whether at six years old or sixty."
+        },
+        {
+          "kind": "film",
+          "label": "Why does God seem silent sometimes?",
+          "href": "/study/explorer/watch/god-silent",
+          "why": "What Scripture does with the silence of God, from the psalms of lament to Jesus' own cry from the cross."
+        },
+        {
+          "kind": "life",
+          "label": "Why does God feel so far away?",
+          "href": "/life/the-dry-season",
+          "why": "For the reader who once believed and now hears nothing in prayer, what the long tradition says about dry seasons."
+        }
+      ],
+      "question": "If God exists, what kind of evidence would you expect him to give, and why that kind?",
+      "do": "Read Psalm 88, the darkest of the psalms, which ends without an answer. Write down what the writer keeps doing even though God seems absent.",
+      "verse": {
+        "ref": "Isaiah 45:15",
+        "text": "Truly You are a God who hides Himself, O God of Israel, the Savior."
+      },
+      "care": [
+        "If you feel forsaken right now and the feeling will not lift, please tell someone you trust, a pastor, a friend or a doctor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever looked for God and found nothing? What was that like?",
+        "discuss": [
+          "Schellenberg says sincere unbelievers count against God's existence. How would you answer him, or would you?",
+          "Why might a God who wants love rather than bare belief stay partly hidden? Does that persuade you?",
+          "What does it mean that the Bible keeps prayers like Psalm 88 that receive no answer?"
+        ],
+        "pray": "Those who pray may tell God honestly where he has seemed absent, and ask to be found."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Is faith just wishful thinking?",
+      "minutes": 10,
+      "teaching": [
+        "Sigmund Freud argued in The Future of an Illusion, in 1927, that religion projects onto the sky the longing for a protecting father. Others point out that most people believe what their parents and their country believe, and that someone born in Riyadh or Chennai would almost certainly hold a different faith from someone born in Tennessee. Put the two together and Christianity looks less like a conclusion than a comfort and an accident of birth.",
+        "Both points deserve to be granted. People do believe what they want to believe, and birthplace shapes faith. But both cut in every direction. A skeptic's unbelief also has a time and a place, and the wish that there be no God to answer to is as old as the wish that there be one. How a belief came about is a different question from whether it is true. And Christianity is an odd thing to wish for. It offers a God who judges, a Lord who asks for your whole life, and a hope Paul calls pitiable if one public event, the resurrection, didn't happen."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Is faith just wishful thinking?",
+        "href": "/answers/is-faith-just-wishful-thinking",
+        "why": "Freud's projection argument taken seriously, what it gets right about human longing, and why it can't settle whether the longing points to anything."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Only a Christian because of where you were born?",
+          "href": "/questions/religions/only-a-christian-because-of-where-you-were-born",
+          "why": "Mill and Hick on how birthplace shapes belief, granted in full, and why the same fact applies to every skeptic too."
+        }
+      ],
+      "question": "Which do you want to be true, that God exists or that he doesn't, and how might that want be shaping what you think?",
+      "do": "Read 1 Corinthians 15:12-19. Write down what Paul says Christians would be if Christ was not raised, and whether that sounds like wishful thinking.",
+      "verse": {
+        "ref": "1 Corinthians 15:19",
+        "text": "If our hope in Christ is for this life alone, we are to be pitied more than all men."
+      },
+      "group": {
+        "open": "What did your family believe about God when you were growing up?",
+        "discuss": [
+          "Freud said faith is a wish. Could unbelief be a wish too? What would each be wishing for?",
+          "If you had been born somewhere else, what do you think you would believe? Does that settle anything?",
+          "Paul staked everything on a public event. How is that different from a private comfort?"
+        ],
+        "pray": "Those who pray may ask to want the truth more than comfort, whatever the truth turns out to be."
+      }
+    },
+    {
+      "n": 10,
+      "title": "If you keep looking",
+      "minutes": 10,
+      "teaching": [
+        "Nathanael's first response to Jesus was a skeptic's sneer about his home town: “Can anything good come from Nazareth?” (John 1:46). Philip didn't argue. He said, come and see. Thomas, later, refused to believe the others' report until he had seen for himself, and the Gospel keeps his refusal on the record instead of hiding it. Neither man was rebuked for asking. Both were invited to look.",
+        "You may finish this track unpersuaded, and you are free to. Some objections here have answers that satisfied you, some don't, and a few may have no full answer in this life. Keeping looking wouldn't mean pretending to believe. It would mean reading one Gospel through, putting your strongest objection to a Christian who will take it seriously, and noticing whether the questions you still hold are reasons or wounds, since both deserve care. The church has sat with these questions for two thousand years without ceasing to ask them, and you don't have to stop either."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "John 1, passage by passage",
+        "href": "/study/bible/john/1#plain",
+        "why": "The first followers meeting Jesus, Nathanael's remark about Nazareth and Philip's reply, with plain notes on what each of them was looking for."
+      },
+      "also": [
+        {
+          "kind": "skeptics",
+          "label": "For skeptics",
+          "href": "/skeptics",
+          "why": "The whole room for the skeptic: the cases, the answers on whether it is true, and longer reading for whichever question is still open."
+        },
+        {
+          "kind": "track",
+          "label": "Next: the tracks of the Academy",
+          "href": "/tracks",
+          "why": "Where to go next: the Bible's Big Story, which follows the whole Bible from creation to new creation, and every other track."
+        }
+      ],
+      "question": "Which of your objections are reasons, which are wounds, and which are both?",
+      "do": "Choose the objection from this track that still holds you most strongly. Write it out at its strongest, then find one Christian, in person or in print, who has answered it, and hear them out.",
+      "verse": {
+        "ref": "John 1:46",
+        "text": "“Can anything good come from Nazareth?” Nathanael asked. “Come and see,” said Philip."
+      },
+      "group": {
+        "open": "Which session in this track stayed with you longest, and why?",
+        "discuss": [
+          "Philip said come and see instead of arguing. When is an argument the right response to a question, and when isn't it?",
+          "Which objection in this track do you think the church has answered least well?",
+          "What would it look like for you to keep looking, and what would make you stop?"
+        ],
+        "pray": "Those who pray may give thanks for honest questions, and ask God to meet each person here wherever their looking leads."
+      }
+    }
+  ]
+}

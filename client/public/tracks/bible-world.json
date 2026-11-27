@@ -1,0 +1,463 @@
+{
+  "slug": "bible-world",
+  "title": "The world the Bible was written in",
+  "for": "I want to understand the Bible's world",
+  "subtitle": "Eight short sessions on the world behind the Bible: its land and its timeline, the empires around Israel, daily life, the temple and its feasts, the centuries between the testaments, and the cities of Paul.",
+  "intro": [
+    "The Bible was written for every reader, but not to every reader first. Its first hearers lived in a small land between great empires, kept feasts we have never kept, and read letters in cities we have only seen in ruins. This track opens that world one part at a time, using the atlas, the timeline, the reading guides and the guides to the Bible's background. It has eight sessions of about ten minutes, with a little reading between them.",
+    "Each session works the same way. You read a few short paragraphs, then open one page and use it, then come back to one question, one thing to do, and one verse to keep. It follows How to study a passage: seven steps and Reading each kind of book in the Bible, and it fills in the third step of that method, a passage's setting. Each session ends with a guide for a group."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The world the Bible was written in. The group is for people who read the Bible and want to understand the world its first hearers lived in, so that the text says what it said to them before it says anything to us. The leader's task is to keep the background in the service of the text, so that the group learns history in order to read Scripture better, not instead of reading it.",
+      "Each person reads the session, opens its page, and reads the passage it names before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week, for eight meetings, and keep the end time you promised. The guides behind these sessions are long, so ask each person to read the part the session points to and the passage it names. A leader doesn't need to be a historian. A leader needs to have done the reading, and to be willing to say when they don't know."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open in front of everyone, and a screen or a printed map if you can manage one, since several sessions use the atlas and the timeline. Make it plain at the first meeting that anyone may pass on any question and that no one has to read or pray aloud. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Fifteen minutes: look together at the session's page, the map, the timeline or the guide, and let each person say one thing they learned.",
+          "Ten minutes: one person reads the passage aloud while the others follow.",
+          "Twenty-five minutes: the three questions to talk over, in order. Ask how the background changes the way the passage reads.",
+          "Five minutes: the prayer prompt, in your own words.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Background raises honest questions: whether a date is certain, whether an event can be shown outside the Bible, why Israel's laws resemble its neighbours'. Treat them as good questions. Say plainly what is known, what is approximate and what scholars still argue over, as the guides themselves do. Let a scholar the group disagrees with be stated fairly before anyone answers.",
+          "If no one knows the answer, write the question down and bring it back the next week. Hold firmly what the creeds confess, and keep an open hand where faithful readers have long differed on dates and details."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A study group is never only study. A session on exile can land on someone far from home, and a session on the temple's sacrifices can land on someone carrying an old weight on the conscience. When the study touches someone's life, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry back to the history. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: sorrow that has taken their sleep or appetite for weeks, a weight on the conscience that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "The land",
+      "minutes": 10,
+      "teaching": [
+        "The land at the centre of the Bible is small, a narrow strip between the Mediterranean Sea and the desert. It sat on the road between Egypt to the south and the empires of Mesopotamia to the north and east, so armies and traders crossed it for centuries. Its hill country, its Jordan valley and its dry south each shaped the lives lived there. Moses told Israel it would not be like Egypt, watered by a great river, but “a land of mountains and valleys that drinks in the rain from heaven” (Deuteronomy 11:11). A people in that land looked to the sky and learned to depend on God for the rain.",
+        "Geography also explains the Bible's movement. Abram's family set out from Ur and came to Haran before God sent Abram on to Canaan, a long road with no map at the end of it. Later the land is promised, won, divided, lost and returned to. When you know where a place is, the story stops floating. You can see why a city mattered, how far someone walked, and what it cost to leave."
+      ],
+      "open": {
+        "kind": "study-tool",
+        "label": "The Bible atlas",
+        "href": "/study/atlas",
+        "why": "The places the Bible names, drawn from the book pages' own notes, so you can see where each story happens and how far apart they lie."
+      },
+      "also": [
+        {
+          "kind": "explorer",
+          "label": "Abraham's road",
+          "href": "/study/explorer/abrahams-road",
+          "why": "Follow Abram from Ur to Haran to Canaan and on, stop by stop, with the passages that tell each part of the road."
+        },
+        {
+          "kind": "chapter",
+          "label": "Genesis 12 with its notes",
+          "href": "/study/bible/genesis/12",
+          "why": "The call of Abram, with notes on the places he passed through and the promise that set him walking."
+        }
+      ],
+      "question": "How does knowing the land depended on rain change the way you hear the Bible speak of God as the giver of good things?",
+      "do": "Open the atlas and find Ur, Haran, Shechem and Bethel. Then read Genesis 12 and trace Abram's route with your finger, noting roughly how far he walked.",
+      "verse": {
+        "ref": "Genesis 12:1",
+        "text": "Then the LORD said to Abram, “Leave your country, your kindred, and your father’s household, and go to the land I will show you.”"
+      },
+      "group": {
+        "open": "What is a place that shaped you, and what would someone need to know about it to understand you?",
+        "discuss": [
+          "Why might God have placed his people on a narrow land between great empires rather than somewhere safe and apart?",
+          "What does Deuteronomy 11 suggest about how the land itself would teach Israel to trust God?",
+          "What did the group notice in Genesis 12 once they had traced Abram's road on the map?"
+        ],
+        "pray": "Give thanks for the places God has set each person, and pray for anyone in the group who has had to leave a home behind."
+      }
+    },
+    {
+      "n": 2,
+      "title": "The timeline",
+      "minutes": 10,
+      "teaching": [
+        "The Bible isn't arranged in the order its events happened. The prophets come after the histories in our Bibles, though they spoke during the reigns those histories describe, and Paul's letters were written before some of the Gospels that come ahead of them. A timeline puts them back in order, and suddenly Isaiah is speaking to Hezekiah's Jerusalem and Amos to Jeroboam's Samaria. The books begin to talk to each other because you can see they were living in the same years.",
+        "Be honest about what a timeline can do. Dates before the kings are approximate and debated, and even the reigns of the kings are worked out by careful reconstruction on which scholars differ. Where two books seem to place an event differently, this site's timeline shows both and doesn't choose between them. That restraint is worth learning. The Bible's claim isn't that it gives a modern chronology, but that its history happened, and that “when the time had fully come, God sent His Son” (Galatians 4:4)."
+      ],
+      "open": {
+        "kind": "study-tool",
+        "label": "The Bible's timeline",
+        "href": "/study/timeline",
+        "why": "The events the book pages name, set in order, with each date shown as the books give it and never chosen between them."
+      },
+      "also": [
+        {
+          "kind": "reading-guide",
+          "label": "The Kings of Israel and Judah",
+          "href": "/study/bible/guides/kings-of-israel-and-judah",
+          "why": "Every king of the united and divided kingdoms with approximate dates, the prophets who spoke to them, and where other chronologies differ."
+        },
+        {
+          "kind": "explorer",
+          "label": "The Bible Explorer",
+          "href": "/study/explorer",
+          "why": "The whole story of the Bible as a map of thirteen stops, from creation to the new creation, so you can see where each book belongs."
+        }
+      ],
+      "question": "Which book of the Bible would make more sense to you if you knew which years it was written into?",
+      "do": "On the timeline, find when Amos and Isaiah spoke. Then find the kings on the Kings guide who reigned in those years, and read 2 Kings 14:23 to 15:7 with that in mind.",
+      "verse": {
+        "ref": "Galatians 4:4",
+        "text": "But when the time had fully come, God sent His Son, born of a woman, born under the law"
+      },
+      "group": {
+        "open": "If you laid out your own life on a timeline, which year would you mark as the turning point?",
+        "discuss": [
+          "Why do you think the books of the Bible are arranged by kind rather than by date?",
+          "What changes when a prophet is read beside the king he spoke to?",
+          "How should we hold dates that are approximate or debated, without either inflating them or dismissing the history?"
+        ],
+        "pray": "Give thanks that God works in real years and real reigns, and pray for patience with the slow times in each person's own life."
+      }
+    },
+    {
+      "n": 3,
+      "title": "The empires around Israel",
+      "minutes": 10,
+      "teaching": [
+        "Six empires stand over the Bible's story: Egypt, Assyria, Babylon, Persia, Greece and Rome. Egypt was the house of slavery. Assyria swept away the northern kingdom and its capital, Samaria. Babylon took Jerusalem, burned the temple and carried its people into exile. Persia's Cyrus took Babylon in 539 BC and let the exiles go home. Alexander's conquests brought Greek language and culture to the whole region, and Rome's general Pompey took Jerusalem in 63 BC. By the time Jesus was born, a decree from Caesar Augustus could send a carpenter's family to Bethlehem.",
+        "The prophets made an astonishing claim about all of them. They said these empires, for all their armies, answered to Israel's God. Isaiah calls Cyrus the LORD's anointed, and Daniel says of God, “He removes kings and establishes them” (Daniel 2:21). That claim cuts two ways. It comforts a small people under great powers. It also humbles every people who come to think of themselves as the great power, which is a word worth hearing for any reader who lives in a strong nation."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "The Empires Around Israel",
+        "href": "/study/bible/guides/empires",
+        "why": "Egypt, Assyria, Babylon, Persia, Greece and Rome: when each ruled the land, how each governed, the kings the Bible names, and where each touches the story."
+      },
+      "also": [
+        {
+          "kind": "explorer",
+          "label": "The exile",
+          "href": "/study/explorer/exile",
+          "why": "The stop on the Bible Explorer where Jerusalem falls and its people are carried to Babylon, with the passages that tell it."
+        },
+        {
+          "kind": "film",
+          "label": "Why did God let his temple be destroyed?",
+          "href": "/study/explorer/watch/temple-destroyed",
+          "why": "A short film on the fall of Jerusalem: what the prophets said about it, and how the story goes on from there."
+        },
+        {
+          "kind": "chapter",
+          "label": "Daniel 2 with its notes",
+          "href": "/study/bible/daniel/2",
+          "why": "A king's dream of a great statue and a stone, with the notes' fair account of which four kingdoms readers have taken it to mean."
+        }
+      ],
+      "question": "Which empire in the Bible's story is most like the world you live in, and what might the prophets say to it?",
+      "do": "Read the guide's section on one empire. Then read Daniel 2 and write down what the stone does to the statue and what that says about every kingdom that seems permanent.",
+      "verse": {
+        "ref": "Daniel 2:21",
+        "text": "He changes the times and seasons; He removes kings and establishes them. He gives wisdom to the wise and knowledge to the discerning."
+      },
+      "group": {
+        "open": "What is something that seemed permanent when you were young and turned out not to be?",
+        "discuss": [
+          "What would it have meant for a small, conquered people to hear that the empires answered to their God?",
+          "How does the same claim sound to readers who live in a powerful nation?",
+          "What does the stone in Daniel 2 suggest about the kingdom of God compared with the kingdoms of the world?"
+        ],
+        "pray": "Pray for those who govern the places where the group lives, and for Christians living under powers that do not wish them well."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Daily life, family and household",
+      "minutes": 10,
+      "teaching": [
+        "Most of the Bible's first hearers lived in villages, farmed or herded, and belonged first to a household and a clan. A person was known by their father's house, land passed down within the family, and hospitality to a stranger was a duty, not a nicety. Many modern readers think of themselves first as individuals, so we read a plural you in Paul's letters as if it were singular, and miss that he is usually talking to a whole church at once.",
+        "The law built care for the poor into the farming year. A forgotten sheaf was to be left in the field “for the foreigner, the fatherless, and the widow” (Deuteronomy 24:19). Ruth gleans in Boaz's field under exactly that law, and the story turns on it. In Jesus' parable a vineyard owner pays his workers a denarius for the day, a sum that meant bread for a family. Knowing these things doesn't add to the Bible. It lets you hear what its first hearers heard without trying."
+      ],
+      "open": {
+        "kind": "context",
+        "label": "What Did Hospitality Mean in the Ancient World?",
+        "href": "/resources/context/hospitality-and-the-stranger",
+        "why": "The duty to receive a stranger in the Bible's world, and why so many of its stories turn on a meal, a tent door or a guest."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Ruth 2 with its notes",
+          "href": "/study/bible/ruth/2",
+          "why": "Ruth gleans in the field of Boaz, with notes on the law of gleaning, the kinsman-redeemer and the loyal love the book is about."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "Weights, Measures, and Money",
+          "href": "/study/bible/guides/weights-measures-money",
+          "why": "Cubits, shekels, talents and denarii: what each was, its rough modern size, and what the sums meant in a labourer's daily life."
+        },
+        {
+          "kind": "context",
+          "label": "Is 'You' in the New Testament Singular or Plural?",
+          "href": "/resources/context/collectivist-world-individualist-readers",
+          "why": "How a world built on household and community heard words that individual readers now hear as private."
+        }
+      ],
+      "question": "What would change in how you read Paul's letters if you heard most of his you as all of you together?",
+      "do": "Read Ruth 2 and Deuteronomy 24:19-22 side by side. Write down how the law shapes what Boaz does, and one way your own household might leave something in the field for others.",
+      "verse": {
+        "ref": "Deuteronomy 24:19",
+        "text": "If you are harvesting in your field and forget a sheaf there, do not go back to get it. It is to be left for the foreigner, the fatherless, and the widow, so that the LORD your God may bless you in all the work of your hands."
+      },
+      "group": {
+        "open": "Who in your family or town were you known through when you were growing up?",
+        "discuss": [
+          "How does knowing the law of gleaning change the way Ruth 2 reads?",
+          "What do we miss when we read the Bible's plural you as if it were addressed to one person alone?",
+          "Where does the Bible's world of household and hospitality challenge the way we live now?"
+        ],
+        "pray": "Pray for the foreigners, the fatherless and the widows near the group by name where you can, and ask how each household might make room for them."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Temple, sacrifice and festivals",
+      "minutes": 15,
+      "teaching": [
+        "At the centre of Israel's life stood first a tent and then a temple, built so that God could dwell among his people. Its offerings were not all about sin. Some were gifts of thanks, and some were shared meals eaten in God's presence. Once a year, on the Day of Atonement, the high priest entered the holiest place for the people. And the year itself was marked by feasts. Passover remembered the rescue from Egypt, the Feast of Weeks the harvest, the Feast of Booths the years in the wilderness. Jesus' family went up to Jerusalem every year for Passover.",
+        "Much of the New Testament can't be understood without this world. Jesus speaks of his body as a temple, John calls him the Lamb of God, and Hebrews reads the whole system of priests and sacrifices as pointing to Christ. Modern readers often find sacrifice strange or troubling, and that reaction deserves a fair hearing. But the people who first kept these feasts found in them a God who came near, made a way to be met, and invited them to eat and rejoice."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Offerings, Priests, and Purity",
+        "href": "/study/bible/guides/offerings-and-purity",
+        "why": "The five offerings of Leviticus and what they meant, the Day of Atonement, priests and Levites, clean and unclean, and why it all matters for the New Testament."
+      },
+      "also": [
+        {
+          "kind": "reading-guide",
+          "label": "The Calendar and Festivals",
+          "href": "/study/bible/guides/calendar-and-festivals",
+          "why": "How Israel counted its days and years, the Sabbath, the pilgrim feasts, the Day of Atonement, and how the feasts shaped the Christian year."
+        },
+        {
+          "kind": "context",
+          "label": "What Was the Difference Between Temple and Synagogue?",
+          "href": "/resources/context/temple-and-synagogue",
+          "why": "The one temple in Jerusalem and the many synagogues in every town, and what each meant for Jesus and his first followers."
+        },
+        {
+          "kind": "film",
+          "label": "Sacrifice: why blood?",
+          "href": "/study/explorer/watch/why-blood",
+          "why": "A short film on why the Bible speaks of blood from its first pages to the cross, and what it means that God himself gives it."
+        }
+      ],
+      "question": "Which of Israel's feasts would you most like to have kept, and what do you think it taught the people who kept it?",
+      "do": "Read Leviticus 23, the list of Israel's appointed feasts. For each one, write down what it remembered or celebrated, and then read Luke 2:41-52 with the Passover in mind.",
+      "verse": {
+        "ref": "Psalm 84:1",
+        "text": "How lovely is Your dwelling place, O LORD of Hosts!"
+      },
+      "group": {
+        "open": "What is a celebration in your family or your church that you would miss if it stopped?",
+        "discuss": [
+          "Why might God have given Israel a calendar of feasts rather than only a set of beliefs?",
+          "What did the group learn about the offerings that surprised them, especially the offerings of thanks and the shared meals?",
+          "How does knowing the temple and its sacrifices change the way you hear Jesus called the Lamb of God?"
+        ],
+        "pray": "Give thanks for the God who made a way to be near his people, and for the feasts and meals through which he still gathers them."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ]
+    },
+    {
+      "n": 6,
+      "title": "Between the testaments",
+      "minutes": 10,
+      "teaching": [
+        "Turn one page in most Bibles, from Malachi to Matthew, and some four centuries pass in silence. They were not empty. Persia gave way to Alexander, and Greek became the common language of the whole eastern Mediterranean. The Hebrew Scriptures were translated into Greek, and that translation, the Septuagint, became the Bible many early Christians read. Then a Greek king, Antiochus IV, defiled the temple in 167 BC and tried to stamp out Israel's faith, and the Maccabees rose against him.",
+        "When the temple was cleansed and rededicated, a feast was kept in memory of it. The New Testament mentions it once, in passing: “At that time the Feast of Dedication took place in Jerusalem. It was winter” (John 10:22). Jesus walked in the temple courts at that feast. After the Maccabees came their own kings, then Rome and Herod, and by the time John the Baptist appeared there were Pharisees, Sadducees and synagogues in every town. None of it is in the Old Testament, and all of it is in the air of the New."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Between the Testaments",
+        "href": "/study/bible/guides/between-the-testaments",
+        "why": "From Nehemiah to Jesus: Persian rule, Alexander, the persecution under Antiochus IV, the Maccabean revolt, Rome and Herod, and what these centuries gave the New Testament world."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "What Happened Between the Old and New Testaments?",
+          "href": "/resources/context/between-the-testaments",
+          "why": "A shorter guide to the same centuries, with what they explain in the Gospels and the letters."
+        },
+        {
+          "kind": "explorer",
+          "label": "The return",
+          "href": "/study/explorer/return",
+          "why": "The stop on the Bible Explorer where the exiles come home and rebuild, the last part of the story before the silent centuries."
+        },
+        {
+          "kind": "context",
+          "label": "What Is the Septuagint, and Why Does It Matter?",
+          "href": "/resources/context/septuagint-and-scripture",
+          "why": "The Greek translation of the Hebrew Scriptures made in these centuries, and why the New Testament writers so often quote it."
+        }
+      ],
+      "question": "What in the Gospels makes more sense once you know what happened in the centuries before them?",
+      "do": "Read the guide's account of the Maccabean revolt. Then read John 10:22-39 and write down what the Feast of Dedication would have brought to mind for the crowd who heard Jesus there.",
+      "verse": {
+        "ref": "John 10:22",
+        "text": "At that time the Feast of Dedication took place in Jerusalem. It was winter"
+      },
+      "group": {
+        "open": "Is there a long, quiet stretch in your own life that turned out to matter more than it seemed at the time?",
+        "discuss": [
+          "Why might God have let some four centuries pass between the last prophets and the coming of Jesus?",
+          "How did the spread of Greek prepare the way for the gospel to travel?",
+          "What does it add to John 10 to know what the Feast of Dedication remembered?"
+        ],
+        "pray": "Pray for anyone in the group who is in a quiet season where God seems silent, and give thanks that silent centuries were not empty ones."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Jewish groups in Jesus' day",
+      "minutes": 10,
+      "teaching": [
+        "The Gospels name several groups, and it helps to know them fairly. The Sadducees were drawn largely from the priestly families who ran the temple, and “the Sadducees say that there is neither a resurrection, nor angels, nor spirits, but the Pharisees acknowledge them all” (Acts 23:8). The Pharisees were a popular movement devoted to keeping God's law in ordinary life, at home and at table, not only in the temple. The Essenes withdrew from what they saw as a corrupt temple. Others longed to throw off Rome by force, and the Samaritans worshipped on their own mountain.",
+        "Christians have often made the Pharisees cartoon villains. That is unfair to them and dangerous for us. They took Scripture seriously, believed in the resurrection as Jesus did, and many were admired for their devotion. Jesus' sharpest words to some of them were warnings about what serious religion becomes when it forgets mercy, and those warnings are aimed at people like the readers of this track. A scribe who answered him well was told he was not far from the kingdom, which is a hopeful word for careful students of Scripture and a searching one."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Pharisees, Sadducees, and Others",
+        "href": "/study/bible/guides/jewish-groups",
+        "why": "The Jewish groups and institutions of Jesus' day: priests, Sadducees, Pharisees, scribes, Essenes, Zealots, Samaritans, the Sanhedrin and the synagogue."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "Who Were the Pharisees, Sadducees and Essenes?",
+          "href": "/resources/context/pharisees-sadducees-essenes",
+          "why": "A shorter guide to the three best-known groups, what each believed, and why the differences mattered."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "The Herods and the Roman Governors",
+          "href": "/study/bible/guides/herods-and-governors",
+          "why": "Herod the Great and his family, the Roman governors and the high priests they appointed, with where each appears in the New Testament."
+        },
+        {
+          "kind": "chapter",
+          "label": "Acts 23 with its notes",
+          "href": "/study/bible/acts/23",
+          "why": "Paul before the Sanhedrin, dividing the Pharisees and Sadducees over the resurrection, with notes on both groups."
+        }
+      ],
+      "question": "Which of the groups in Jesus' day are you most like, and what would Jesus say to you if he met you there?",
+      "do": "Read Mark 12:13-34, where several groups question Jesus in turn. Write down who asks each question, what they want, and how the last questioner differs from the others.",
+      "verse": {
+        "ref": "Mark 12:34",
+        "text": "When Jesus saw that the man had answered wisely, He said, “You are not far from the kingdom of God.” And no one dared to question Him any further."
+      },
+      "group": {
+        "open": "What group, team or church tradition have you belonged to that outsiders tended to misunderstand?",
+        "discuss": [
+          "What did the group learn about the Pharisees that complicates the picture many Christians were given?",
+          "Why do you think Jesus' sharpest warnings were aimed at the most serious religious people of his day?",
+          "What would it look like for this group to be not far from the kingdom, and then to come all the way in?"
+        ],
+        "pray": "Pray for mercy to go with seriousness in each person's faith, and give thanks for the Jewish people through whom the Scriptures and the Messiah came."
+      }
+    },
+    {
+      "n": 8,
+      "title": "The cities of Paul's letters",
+      "minutes": 15,
+      "teaching": [
+        "Paul's letters were written to small churches in Greek and Roman cities: Corinth, a busy port; Philippi, a Roman colony proud of its citizenship; Ephesus, with its great temple of Artemis; and Rome itself. In those cities status was everything. Patrons gave gifts and clients owed them honour and loyalty, and the word for that favour was the word Paul uses for grace. Caesar was hailed as lord and saviour. So when Paul tells the Philippians that their citizenship is in heaven, and calls Jesus Lord, his first hearers knew who else claimed those titles.",
+        "The churches themselves gathered in homes, and they put together people that city life kept apart: Jew and Greek, slave and free, the household's head and its servants at one table. Paul reminded the Corinthians that “not many were powerful; not many were of noble birth” (1 Corinthians 1:26). Our cities aren't theirs, yet they have their own patrons, their own titles and their own rankings of who matters. The world behind the Bible keeps showing us our own. The next track gives you the tools to keep digging, one word and one cross-reference at a time."
+      ],
+      "open": {
+        "kind": "explorer",
+        "label": "Paul's travels",
+        "href": "/study/explorer/pauls-travels",
+        "why": "Follow Paul city by city on the map, with the passages in Acts and the letters that tell what happened in each place."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "What Did Grace Mean in a World Built on Patronage?",
+          "href": "/resources/context/patronage-and-grace",
+          "why": "How gifts, patrons and obligations worked in Paul's world, and what it meant to call God's favour a gift no one could repay."
+        },
+        {
+          "kind": "book",
+          "label": "The book of Acts",
+          "href": "/study/bible/acts",
+          "why": "The introduction to Acts, the book that takes the gospel from Jerusalem to Rome through the cities Paul's letters were sent to."
+        },
+        {
+          "kind": "track",
+          "label": "All the tracks",
+          "href": "/tracks",
+          "why": "The next track in this program, Word studies, cross-references and the study tools, shows how to dig deeper into any passage on your own."
+        }
+      ],
+      "question": "Who are the patrons, the titles and the rankings of your own city, and how does the gospel unsettle them?",
+      "do": "Follow Paul's travels to Philippi on the map, read Acts 16, then read Philippians 3:17-21. Write one sentence on what heavenly citizenship meant in a Roman colony, and one on what it means where you live.",
+      "verse": {
+        "ref": "1 Corinthians 1:26",
+        "text": "Brothers, consider the time of your calling: Not many of you were wise by human standards; not many were powerful; not many were of noble birth."
+      },
+      "group": {
+        "open": "What is a city you have lived in or visited that seemed to run on who you knew?",
+        "discuss": [
+          "What would it have meant in Philippi to say that your citizenship was in heaven?",
+          "Why do you think the first churches met in homes and mixed people that city life kept apart?",
+          "Where does the church today look more like the city around it than like the households Paul wrote to?"
+        ],
+        "pray": "Pray for the city or town where each person lives, for the church there to be a household where the overlooked are honoured, and for courage to call Jesus Lord in it."
+      }
+    }
+  ]
+}

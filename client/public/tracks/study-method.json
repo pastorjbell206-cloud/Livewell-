@@ -1,0 +1,424 @@
+{
+  "slug": "study-method",
+  "title": "How to study a passage: seven steps",
+  "for": "I want to study the Bible myself",
+  "subtitle": "Eight short sessions that teach one way to study any passage for yourself: read it whole, notice, find its setting, follow its words and its cross-references, face the hard question, and answer what it asks.",
+  "intro": [
+    "This track is for anyone who wants to open the Bible and understand a passage without waiting for someone else to explain it. It teaches the seven steps the Study Bible on this site uses for the guided study of every chapter, one or two at a time, each practised on a real chapter. It has eight sessions of about ten minutes, with a little reading between them.",
+    "Each session works the same way. You read a few short paragraphs, then open one page and use it, then come back to one question, one thing to do, and one verse to keep. The last session hands the method to you: a whole passage, studied start to finish on your own. Each session ends with a guide for a group."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through How to study a passage: seven steps. The group is for people who want to read the Bible for themselves and understand it, whether they have read it for years or are only starting. The leader's task is to keep the group looking at the text, slowing down the person who jumps to conclusions and encouraging the person who thinks they have nothing to notice.",
+      "Each person reads the session, opens its page, and studies the chapter it names before the group meets. The meeting doesn't repeat the teaching. It compares what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week, for eight meetings, and keep the end time you promised. Each session asks for one chapter studied between meetings, so say so at the start and let each person do what they can. A leader doesn't need to be a scholar. A leader needs to have studied the chapter, and to be willing to say when they don't know."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open in front of everyone, in print or on a phone, and paper and pens for notes. This track asks people to write down what they see, so make writing normal from the first meeting. Make it plain that anyone may pass on any question, that no one has to read or pray aloud, and that what people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the session's chapter aloud while the others follow.",
+          "Twenty minutes: what each person noticed, written down, before anyone says what it means.",
+          "Twenty-five minutes: the three questions to talk over, in order. Ask where each answer is found in the text.",
+          "Five minutes: the prayer prompt, in your own words.",
+          "Five minutes: name the next session, the chapter it studies and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Studying closely raises questions, and this track wants them raised. When someone asks one, first send the group back to the text: what does the chapter itself say, and what does it leave unsaid? Then look at the hard question in the chapter's own study, where the notes lay out more than one answer. Let each view be stated in a form its own defenders would accept before anyone argues against it.",
+          "If no one knows, write the question down and bring it back the next week. A group that learns to say it doesn't know yet is learning to study. Hold firmly what the creeds confess, and keep an open hand where faithful readers have long differed."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A study group is never only study. A chapter about exile can land on someone who has just lost a home, and a chapter about God's kindness can land on someone who cannot feel it. When the study touches someone's life, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry back to the chapter. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: sorrow that has taken their sleep or appetite for weeks, a weight on the conscience that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Why a method matters",
+      "minutes": 10,
+      "teaching": [
+        "Most of us read the Bible the way we read everything else now: quickly, in pieces, looking for the line that speaks to us. That habit isn't wicked, and God has met people through a single verse read in a hurry. But it leaves us at the mercy of whatever we brought to the page, and a verse read in a rush tends to say what we already thought. A method is a way of slowing down long enough for the text to say something we didn't expect. When Ezra read the Law to the people who had come home from exile, the Levites did exactly this: “So they read from the Book of the Law of God, explaining it and giving insight, so that the people could understand what was being read” (Nehemiah 8:8).",
+        "A method also has a posture. Reading charitably means assuming the writer meant something coherent and working to find it before deciding he contradicted himself. Reading humbly means expecting to be corrected by the text rather than using it to correct someone else. The Bereans are remembered for both: they heard Paul gladly and still went home to check him against the Scriptures. Charity and humility don't silence hard questions. They are what make hard questions honest, and the seven steps that follow are one way to practise them."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "How to study the Bible",
+        "href": "/study/how-to-study",
+        "why": "The seven steps this track follows, each with a plain word on what to do and why, the same steps the guided study uses on every chapter."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Actually Read the Bible",
+          "href": "/how-tos/sf-how-to-actually-read-the-bible",
+          "why": "A practical guide to reading Scripture as a habit, for anyone who has started and stopped more than once."
+        },
+        {
+          "kind": "theology",
+          "label": "How culture reads the Bible",
+          "href": "/theology/reading-the-bible",
+          "why": "How readers in different eras and places have read the same Bible, and why every reader brings a lens worth noticing."
+        }
+      ],
+      "question": "When you read the Bible, are you more often looking for something to confirm what you think, or something to correct it?",
+      "do": "Read the seven steps on the how-to-study page. Then choose a passage you know well and write one sentence on what you assume it means, so you can test it against the text later.",
+      "verse": {
+        "ref": "Acts 17:11",
+        "text": "Now the Bereans were more noble-minded than the Thessalonians, for they received the message with great eagerness and examined the Scriptures every day to see if these teachings were true."
+      },
+      "group": {
+        "open": "Was there a teacher or a book that taught you to read something slowly, and what did it change for you?",
+        "discuss": [
+          "Why do you think the Bereans checked Paul's teaching against the Scriptures even after they received it gladly?",
+          "What does it look like to read a passage charitably, and where have you seen the Bible read uncharitably, by others or by yourself?",
+          "Nehemiah 8 shows people helping others understand what was read. Who has done that for you, and who might you do it for?"
+        ],
+        "pray": "Pray for patience with the text and humility before it, and give thanks for the people who first explained the Scriptures to each person in the group."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Step one: read it whole",
+      "minutes": 10,
+      "teaching": [
+        "The first step sounds too simple to need teaching: read the whole chapter once before anything else. Yet it's the step most often skipped. We jump to the notes, the commentary, the verse we came for. The trouble is that a chapter has a shape, and you only see the shape by going through it from start to finish. Ruth 1 opens with famine, a move to Moab and three funerals, and it ends at the start of the barley harvest. Read only the famous pledge in the middle and you miss that it's spoken by a widow on a road, with every reason to turn back.",
+        "So read slowly, and if you can, read aloud. Most of the Bible was heard long before it was read silently, and the ear catches repetition and a change of speaker that the eye skims past. Don't stop to look anything up the first time. Let the chapter say what it says before you ask what it means. If something puzzles you, mark it and keep going. The puzzle is often answered three verses later, and when it isn't, you've found your first real question."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "Study Ruth 1, step by step",
+        "href": "/study/bible/ruth/1?study=walk",
+        "why": "The guided study on Ruth 1. Today use only its first step: read the whole chapter in the Berean Standard Bible before looking at anything else."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Ruth: loyal love in a hard time",
+          "href": "/study/explorer/watch/book-ruth",
+          "why": "A short film on the whole book of Ruth: what it is, how it is put together, and what to watch for as you read."
+        },
+        {
+          "kind": "book",
+          "label": "The book of Ruth",
+          "href": "/study/bible/ruth",
+          "why": "The introduction to Ruth. Save it for after your first reading of chapter 1, so the chapter gets to speak first."
+        }
+      ],
+      "question": "What did you notice reading Ruth 1 straight through that you hadn't noticed when you knew only its famous verse?",
+      "do": "Read Ruth 1 aloud in one sitting without looking anything up. Put a question mark beside anything that puzzles you, and write down the one moment you'd most like to understand better.",
+      "verse": {
+        "ref": "Psalm 1:2",
+        "text": "But his delight is in the Law of the LORD, and on His law he meditates day and night."
+      },
+      "group": {
+        "open": "Do you read best on paper, on a screen, or out loud, and why do you think that is?",
+        "discuss": [
+          "What changes when Ruth's pledge is heard at the end of a road of loss rather than read on its own?",
+          "Why is it so tempting to skip straight to the notes or a commentary, and what do we lose when we do?",
+          "What puzzled the group in Ruth 1, and did any of it clear up by the end of the chapter?"
+        ],
+        "pray": "Pray for unhurried attention when each person reads, and give thanks for the God who kept faith with Naomi and Ruth in a hard season."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Step two: notice",
+      "minutes": 10,
+      "teaching": [
+        "The second step is to notice, and it asks the questions a careful reader asks of any page. Who is speaking? Who is listening, or who is it written to? What words or ideas come back more than once? What surprises you, or seems strange? These four questions do more than they seem to. They keep you looking at the text instead of at your opinion of it, and they slow you down enough to see what's actually there.",
+        "Mark 4 rewards them. Ask what comes back and you'll find the chapter keeps returning to hearing. The parable of the seed opens with “Listen” (Mark 4:3), and before long Jesus says “He who has ears to hear, let him hear” (Mark 4:9). Ask who is listening and you'll see that the crowd and the disciples are given different things. Ask what is strange and you'll land on the disciples in the boat, who had seen everything and still asked who this was. Write it all down. What you write down becomes evidence you can check, while what stays in your head tends to drift toward what you hoped to find."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "Study Mark 4, step by step",
+        "href": "/study/bible/mark/4?study=walk",
+        "why": "The guided study on Mark 4. Read the chapter, then use the second step: its four questions, with space to write what you see."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Mark 4 in plain words",
+          "href": "/study/bible/mark/4#plain",
+          "why": "Plain-words notes on Mark 4. Read them only after you've written your own observations, and see how much you had already seen."
+        },
+        {
+          "kind": "howto",
+          "label": "The Three Questions That Make Any Passage Teachable",
+          "href": "/how-tos/dm-three-questions-that-make-any-passage-teachable",
+          "why": "A simple set of questions for reading a passage with other people, useful for anyone who wants to ask better questions of a text."
+        }
+      ],
+      "question": "Which of the four questions was hardest to answer from Mark 4, and why do you think it was?",
+      "do": "Read Mark 4 with a pen. Write at least ten things you notice before you write a single thing you think it means, and count how many times hearing or listening comes up.",
+      "verse": {
+        "ref": "Mark 4:24",
+        "text": "He went on to say, “Pay attention to what you hear. With the measure you use, it will be measured to you, and even more will be added to you.”"
+      },
+      "group": {
+        "open": "What is something you looked at for years before you really noticed it?",
+        "discuss": [
+          "What did different people in the group notice in Mark 4, and how many of the same things did you see?",
+          "Why might the chapter keep returning to hearing and listening?",
+          "The disciples saw the storm stilled and still asked who Jesus was. What does that suggest about the gap between seeing and understanding?"
+        ],
+        "pray": "Pray for ears to hear what the text says, and for the honesty to write down what is actually there rather than what each person hoped to find."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Step three: its setting",
+      "minutes": 10,
+      "teaching": [
+        "The third step asks who wrote the book, when, and why. A chapter is easier to follow when you know the world it was written in, and some chapters can hardly be followed without it. Jeremiah 29 is a letter. It was sent from Jerusalem to the people already carried off to Babylon, telling them not to expect a quick return but to build houses, plant gardens, marry, and “Seek the prosperity of the city to which I have sent you as exiles” (Jeremiah 29:7). The verse many people know best, about plans to prosper and not to harm, comes in the same letter, and it comes with a time attached: seventy years.",
+        "That doesn't make the promise smaller. It makes it truer. It was spoken to a people in exile, and it promised them a future through a long wait, not a way around one. Reading a verse in its setting isn't a trick for draining the comfort out of it. It's how you receive the comfort the verse actually offers, which is often harder and deeper than the one you came looking for. A book's introduction gives you its setting in a few minutes, so read it before you decide what a chapter means."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "Study Jeremiah 29, step by step",
+        "href": "/study/bible/jeremiah/29?study=walk",
+        "why": "The guided study on Jeremiah 29. Use its third step, which shows the book's setting: who wrote it, when, to whom, and why."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "What Does Jeremiah 29:11 Really Mean?",
+          "href": "/resources/context/jeremiah-29-11-in-context",
+          "why": "A guide to one of the most quoted verses in the Bible, read inside the letter it belongs to and the exile it was written into."
+        },
+        {
+          "kind": "book",
+          "label": "The book of Jeremiah",
+          "href": "/study/bible/jeremiah",
+          "why": "The introduction to Jeremiah: the prophet, the last kings of Judah, and the fall of Jerusalem that frames what he wrote."
+        }
+      ],
+      "question": "Is there a verse you have leaned on that you have never read in its setting, and are you willing to look?",
+      "do": "Read the introduction to Jeremiah, then all of Jeremiah 29. Write two sentences: what verse 11 meant to the exiles who first heard it, and what it might mean for you in light of that.",
+      "verse": {
+        "ref": "Jeremiah 29:7",
+        "text": "Seek the prosperity of the city to which I have sent you as exiles. Pray to the LORD on its behalf, for if it prospers, you too will prosper."
+      },
+      "group": {
+        "open": "Have you ever been sent somewhere you didn't choose, a town, a job or a season, and had to make a life there?",
+        "discuss": [
+          "How does knowing that Jeremiah 29 is a letter to exiles change the way verse 11 sounds?",
+          "Why do you think the exiles were told to seek the good of Babylon, the city that had conquered them?",
+          "Is there a cost to reading a beloved verse in its setting, and is there a gain that outweighs it?"
+        ],
+        "pray": "Pray for the towns where each person lives, as the exiles were told to pray for Babylon, and for patience in whatever long wait someone is carrying."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Step four: its key words",
+      "minutes": 10,
+      "teaching": [
+        "The fourth step slows down further, to the few words the notes mark as important. Behind the English of the Old Testament stands Hebrew, with a little Aramaic, and behind the New stands Greek. You don't need to learn either language to gain from this step. You need to know that one English word can stand for several originals, and one original can be translated several ways. Psalm 136 repeats a single line in every verse: “His loving devotion endures forever” (Psalm 136:1). The Hebrew word behind loving devotion is chesed, which other English Bibles render steadfast love, mercy, kindness or lovingkindness.",
+        "No single English word carries all of it, and the psalm doesn't try to define it. It tells a story instead: creation, Egypt, the sea, the wilderness, the land, and a people remembered when they were brought low. By the end you know what chesed means because you have watched it act. That is how words work in the Bible. A word means what its sentence and its story make it mean, and the best word study begins by reading the passage the word lives in."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "Study Psalm 136, step by step",
+        "href": "/study/bible/psalms/136?study=walk",
+        "why": "The guided study on Psalm 136. Use its fourth step, which shows the key words of the psalm, the Hebrew behind them, and what they mean."
+      },
+      "also": [
+        {
+          "kind": "study-tool",
+          "label": "Study a Bible word",
+          "href": "/study/word",
+          "why": "Find a Hebrew or Greek word, read its dictionary entry, and see every verse in the Berean Standard Bible where it is used."
+        },
+        {
+          "kind": "theology",
+          "label": "The glossary",
+          "href": "/theology/glossary",
+          "why": "Plain definitions of the words theology uses, for when a note or a page uses a term you don't know."
+        }
+      ],
+      "question": "After reading Psalm 136, how would you explain chesed to a friend without using a dictionary?",
+      "do": "Read Psalm 136 aloud, with someone saying the refrain if you can. Then open the word page for chesed and read three other verses where it appears, writing down what each adds.",
+      "verse": {
+        "ref": "Psalm 136:1",
+        "text": "Give thanks to the LORD, for He is good. His loving devotion endures forever."
+      },
+      "group": {
+        "open": "Is there a word in your family, your work or your town that outsiders always misunderstand?",
+        "discuss": [
+          "Why do you think Psalm 136 repeats the same line twenty-six times instead of defining it once?",
+          "Which act of God in the psalm best shows you what loving devotion means, and why?",
+          "What is lost when a translation has to choose one English word for a Hebrew word as rich as chesed?"
+        ],
+        "pray": "Give thanks, one act at a time and in your own words, for the ways God has shown loving devotion to the people in the group."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Step five: where else Scripture says this",
+      "minutes": 10,
+      "teaching": [
+        "The fifth step follows the verses each verse points to. The Bible is a library written over many centuries, yet its later books constantly read and reread its earlier ones, so a verse is rarely alone. Genesis 15 tells of Abram under the night sky, told to count the stars, and then it says simply: “Abram believed the LORD, and it was credited to him as righteousness” (Genesis 15:6). Paul builds the argument of Romans 4 on that sentence. James quotes the same sentence in James 2 and joins it to what Abraham did when he offered Isaac.",
+        "Following the cross-references shows you that the Bible is in conversation with itself, and that conversation is part of how it is to be understood. It also teaches you honesty. Paul and James read one verse and draw out different things, and the church has long worked to hear them together rather than choosing one. A cross-reference is a suggestion made by an editor, not part of the text, so check each one: read it in its own chapter and ask whether it truly speaks to the verse you began with."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "Study Genesis 15, step by step",
+        "href": "/study/bible/genesis/15?study=walk",
+        "why": "The guided study on Genesis 15. Use its fifth step, which opens the other verses each verse points to without losing your place."
+      },
+      "also": [
+        {
+          "kind": "study-tool",
+          "label": "Follow a verse: cross-references",
+          "href": "/study/cross-references",
+          "why": "Start from any verse and follow the other passages that point to it or that it points to, across both testaments."
+        },
+        {
+          "kind": "chapter",
+          "label": "Romans 4 with its notes",
+          "href": "/study/bible/romans/4",
+          "why": "The chapter where Paul builds his argument on Genesis 15:6. Read it after Genesis 15 and watch how he reads the older text."
+        }
+      ],
+      "question": "What does Genesis 15:6 mean when you read it in Genesis alone, and what does it gain when you hear Paul and James read it too?",
+      "do": "Read Genesis 15, then Romans 4, then James 2:14-26. Write one sentence on what each passage does with Abram's believing, and one on how the three might be heard together.",
+      "verse": {
+        "ref": "Genesis 15:6",
+        "text": "Abram believed the LORD, and it was credited to him as righteousness."
+      },
+      "group": {
+        "open": "Is there a story in your family that gets retold, and does it mean something different each time it is told?",
+        "discuss": [
+          "What did Abram actually have to go on when he believed, according to Genesis 15?",
+          "How do Paul and James each use Genesis 15:6, and do you think they are answering the same question?",
+          "Why does it matter that a cross-reference is checked in its own chapter rather than taken on trust?"
+        ],
+        "pray": "Pray for faith like Abram's, which trusts a promise before it can see it kept, and give thanks for the long conversation of Scripture."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Steps six and seven: the hard question and response",
+      "minutes": 15,
+      "teaching": [
+        "The sixth step faces the question a thoughtful reader might ask of the chapter, and it asks you to think it through yourself before you look at an answer. Jonah 4 is a good place to practise. Jonah is angry that God has spared Nineveh, and he says why: he knew all along that God was gracious and compassionate, slow to anger and abounding in loving devotion. The book then ends with God asking Jonah a question, and Jonah never answers: “So should I not care about the great city of Nineveh” (Jonah 4:11). Why would a book end like that?",
+        "One honest answer is that the question was never only for Jonah. That brings you to the seventh step, which asks what the chapter asks of you. Answer the study questions, write down what you want to carry, and take one next step. This is where study becomes obedience or quietly fails to. It is possible to know the whole of Jonah well and still resent the people God chooses to spare. The book leaves its question open so that each reader has to answer it in Jonah's place."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "Study Jonah 4, step by step",
+        "href": "/study/bible/jonah/4?study=walk",
+        "why": "The guided study on Jonah 4. Use its last two steps: think the hard question through before the answer, then write what the chapter asks of you."
+      },
+      "also": [
+        {
+          "kind": "study-tool",
+          "label": "Hard passages",
+          "href": "/study/hard-passages",
+          "why": "The hard questions the Study Bible's notes take up, gathered from every book, each linked to the chapter and the note that faces it."
+        },
+        {
+          "kind": "book",
+          "label": "The book of Jonah",
+          "href": "/study/bible/jonah",
+          "why": "The introduction to Jonah. Read the whole book first; it is only four chapters, and the ending lands best when you have come the whole way."
+        }
+      ],
+      "question": "Who is your Nineveh, the people you would rather God did not spare, and how would you answer the question God asks Jonah?",
+      "do": "Read all four chapters of Jonah. Write down your own answer to the hard question before you open the one in the guided study, then write one sentence answering God's last question in your own words.",
+      "verse": {
+        "ref": "James 1:22",
+        "text": "Be doers of the word, and not hearers only. Otherwise, you are deceiving yourselves."
+      },
+      "group": {
+        "open": "Have you ever been annoyed that someone you thought deserved trouble got off lightly?",
+        "discuss": [
+          "Jonah knew exactly what God was like and was angry about it. What does that suggest about the difference between knowing and receiving?",
+          "Why do you think the book ends with God's question and no answer from Jonah?",
+          "Which of the seven steps did the group find easiest, and which is the one you are most likely to skip?"
+        ],
+        "pray": "Pray for the people each person finds hardest to wish well, and ask God for a heart that shares his care for them."
+      }
+    },
+    {
+      "n": 8,
+      "title": "A whole passage, on your own",
+      "minutes": 20,
+      "teaching": [
+        "Now the method is yours. Choose Luke 10:25-37, and study it alone from start to finish, all seven steps, before you open anything anyone else has written. A lawyer asks Jesus how to inherit eternal life, answers his own question from the Law, and is told to do it. Then comes a phrase worth slowing down for: “But wanting to justify himself” (Luke 10:29), he asks who his neighbour is. Notice what the lawyer was hoping for. He wanted the circle of his duty drawn small enough to stand inside it.",
+        "Jesus answers with a story and then turns the question around, so that it is no longer about who counts as a neighbour but about who acted like one. Every careful reader of this passage eventually finds themselves in the lawyer's place, studying the Bible in order to justify themselves. A method doesn't cure that. It does make it harder to hide, because the text keeps asking questions back. Keep studying this way for the rest of your life, one chapter at a time, and let the next track show you how each kind of book in the Bible asks to be read."
+      ],
+      "open": {
+        "kind": "study",
+        "label": "Study Luke 10, step by step",
+        "href": "/study/bible/luke/10?study=walk",
+        "why": "The guided study on Luke 10. Do all seven steps on verses 25 to 37 on your own, writing at each step before you look at the notes."
+      },
+      "also": [
+        {
+          "kind": "plan",
+          "label": "Eight Weeks With an Open Bible",
+          "href": "/plans/reading-the-bible",
+          "why": "A plan for keeping an open Bible over eight weeks, so that what you have practised here becomes a habit you return to."
+        },
+        {
+          "kind": "track",
+          "label": "All the tracks",
+          "href": "/tracks",
+          "why": "The next track in this program, Reading each kind of book in the Bible, shows how law, story, poetry, prophecy and letters each ask to be read."
+        }
+      ],
+      "question": "Where in your own life are you most tempted to ask the lawyer's question, wanting the circle of your duty drawn small?",
+      "do": "Study Luke 10:25-37 through all seven steps, writing at each one, before you read any notes. Then compare what you wrote with the guided study, and take the one next step you wrote down at the end.",
+      "verse": {
+        "ref": "Luke 10:37",
+        "text": "Then Jesus told him, “Go and do likewise.”"
+      },
+      "group": {
+        "open": "Who is someone who once acted like a neighbour to you when they had no reason to?",
+        "discuss": [
+          "What did each person find, studying the passage alone, that they had missed in years of knowing the story?",
+          "Why do you think Jesus answered the lawyer's question with a story rather than a definition?",
+          "How might the group keep studying this way together after the track ends?"
+        ],
+        "pray": "Pray for courage to do what the text asks and not only to understand it, and for the particular neighbour each person has in mind."
+      }
+    }
+  ]
+}

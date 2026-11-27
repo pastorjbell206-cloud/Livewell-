@@ -1,0 +1,722 @@
+{
+  "slug": "church-history",
+  "title": "Church history in fourteen lessons",
+  "for": "I want to know the church's story",
+  "subtitle": "Fourteen short sessions through two thousand years of the church, one for each lesson of the site's course: what each age carried, where it failed, and what it still asks of us.",
+  "intro": [
+    "This track walks through the church's whole story in fourteen sessions, one for each lesson of the site's church history course, in order. It starts in a borrowed room in Jerusalem and ends with a church whose typical member now lives in Africa, Asia or Latin America. Each session takes about fifteen minutes, and the lesson it opens takes most of that time to read.",
+    "The story is told honestly. You'll meet martyrs and monks, councils and reformers, and you'll also meet crusades, burnings, wars of religion and slaveholding preachers. The course doesn't keep only the flattering half, and neither does this track. The church that did both is the church we come from, and seeing its blind spots clearly is one of the surest ways to begin seeing our own.",
+    "Each session gives you a few paragraphs on why the lesson matters and one turning point in it, then opens the lesson itself. You come back to one question, one thing to do and one verse to keep. Each session ends with a guide for a group, and the leader's guide gathers them in order."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through Church history in fourteen lessons. The group is for anyone who wants to know how the church got here: new believers, longtime members, skeptics curious about the record, and pastors who want their people to carry the long memory of the church. Nobody needs to know any history before the first meeting.",
+      "Each person reads the session and the lesson it opens before the group meets. The meeting doesn't repeat the lesson. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size, small enough that each person is heard. Meet for about seventy-five minutes, once a week or once a fortnight, for fourteen meetings, and keep the end time you promised. A leader doesn't need to be a historian. A leader needs to have read the lesson, to keep the conversation honest, and to be willing to say that nobody in the room knows when nobody does."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Sit where everyone can see one another, with the session on a phone or printed for each person. Make two things plain at the first meeting. Anyone may pass on any question. And the group will tell the church's story without flattering it and without sneering at it, which means letting both the saints and the scandals stand in the same room."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Five minutes: one person reads the verse aloud, and another names the lesson's dates and the turning point the session picked out.",
+          "Forty minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Ten minutes: what each person noticed in the lesson, and anything they would push back on.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else.",
+          "Five minutes: name the next session and the lesson it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "The hardest questions in this group will often be about the church's record: the crusades, the burnings, the wars of religion, the preachers who owned slaves. Don't defend what the course itself refuses to defend, and don't let the group judge the dead from a safe distance either. Keep the course's own habit. Say what happened, say what was true and good in the same people, and ask where the same temptation lives in us.",
+          "Where Christians still differ, as Catholics, Orthodox and Protestants do over authority, the Lord's Supper and justification, set out each view in words its own people would sign, and leave the question open. If no one knows the answer to a question of fact, say so, write it down, and bring it back the next week."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Some people in this group will carry harm done in a church or in God's name, and reading about the church's violence can open old wounds. When someone tells their own story, stop the discussion and listen. Believe them and thank them for saying it. Don't explain, and don't speak up for the church or for the person involved. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A crime, and above all harm to a child, belongs with the police and the proper authorities, not with a church to handle quietly."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: harm done to them in a church or at home, grief that has taken their sleep or appetite for weeks, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "The first Christians",
+      "minutes": 15,
+      "teaching": [
+        "The church's story begins in a borrowed room in Jerusalem, with a few dozen followers of a crucified teacher who didn't yet know what came next. Within one lifetime there were assemblies in Antioch, Corinth, Ephesus and Rome, and no office had planned any of it. The turning point came early. When Stephen was stoned and the Jerusalem church was scattered, the scattering that was meant to crush the movement planted it in new cities instead, and the man who had hunted believers, Saul of Tarsus, spent the rest of his life founding their assemblies.",
+        "That early order matters more than it looks. For most of two centuries the church had no agreed list of books. What held it together was a short summary of the story passed on by word of mouth, which the course calls the rule of faith, along with baptism and the breaking of bread, a line of trusted leaders, and the Spirit. The book came to a church that was already worshiping. You received your Bible already bound, and it's easy to forget that the first believers lived the faith before they could hold it in one volume."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The First Christians",
+        "href": "/theology/history/the-apostolic-age",
+        "why": "Lesson one of the course: how a scattered, persecuted movement stayed one body across great distances before the New Testament was gathered."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Acts 7, passage by passage",
+          "href": "/study/bible/acts/7#plain",
+          "why": "Stephen's speech and the stoning that scattered the Jerusalem church, with the plain-words notes beside the text."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible atlas",
+          "href": "/study/atlas",
+          "why": "Find Antioch in Syria, Corinth, Ephesus and Rome on the map, and see how far apart the first assemblies were."
+        },
+        {
+          "kind": "creed",
+          "label": "The Apostles' Creed",
+          "href": "/resources/creeds/apostles-creed",
+          "why": "The creeds grew from the rule of faith, the short summary of the story that held the first scattered churches together."
+        }
+      ],
+      "question": "If you had no Bible on your shelf, what would hold your faith together?",
+      "do": "Read Acts 2:42 and list the four things the first believers devoted themselves to. Beside each, write one way it shows up, or doesn't, in your own week.",
+      "verse": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      },
+      "group": {
+        "open": "What is the oldest thing you own that was handed down to you?",
+        "discuss": [
+          "The first churches had no agreed list of books for most of two centuries. What held them together instead, and which of those things does your church still lean on?",
+          "The scattering after Stephen was meant to crush the movement and spread it instead. Why do you think pressure so often had that effect on the early church?",
+          "The lesson says the church recognized the Scripture rather than creating it. What difference does that make to how you trust the Bible?"
+        ],
+        "pray": "Those who pray may give thanks for the believers who carried the faith before the book was bound, and ask for a church held together by the same things. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 2,
+      "title": "The age of the martyrs",
+      "minutes": 15,
+      "teaching": [
+        "Rome didn't hunt Christians without pause for two and a half centuries. For long stretches the danger was local and occasional, and what the empire wanted was a gesture: a pinch of incense, a word calling Caesar lord. Rome had room for one more god. What it would not allow was a people who said nothing else could be worshiped. Justin the philosopher, Blandina the slave and Perpetua the young mother would not say the word, and the course tells their stories from records that survive.",
+        "The turning point came in 250, when the emperor Decius ordered everyone in the empire to sacrifice and carry a certificate proving it. Many believers complied, and when the storm passed they came back ashamed. Novatian held that they could never be restored. Cyprian and the larger church chose a slower, harder road of real repentance, weighed case by case. The church decided then that it is a company of the forgiven, not a hall of the undefeated, and most of us, honestly, would have been among the ones who came back."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Age of the Martyrs",
+        "href": "/theology/history/the-age-of-martyrs",
+        "why": "Lesson two: what Rome actually demanded, why believers refused it, and what the church learned about mercy from the people who failed."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "When the Church Had Nothing to Lose",
+          "href": "/writing/the-early-church-under-rome",
+          "why": "An essay on how the church lived and grew for three centuries under an empire that could crush it, and what that asks of a post-Christian America."
+        },
+        {
+          "kind": "history",
+          "label": "The people of church history",
+          "href": "/theology/history/people",
+          "why": "Look up Justin Martyr, Perpetua and Tertullian among the people of the course, and see where each one stands in the longer story."
+        }
+      ],
+      "question": "What is the pinch of incense your own world asks of you, the small gesture that would make everything easier?",
+      "do": "Read Perpetua's answer to her father in the lesson, the water jug that can't be called anything but what it is. Write one sentence saying plainly what you are.",
+      "verse": {
+        "ref": "Hebrews 12:1",
+        "text": "Therefore, since we are surrounded by such a great cloud of witnesses, let us throw off every encumbrance and the sin that so easily entangles, and let us run with endurance the race set out for us."
+      },
+      "care": [
+        "Not every hardship comes from following Jesus, and not every hardship is meant to be endured in silence. If you are carrying something heavy, whether persecution, illness, loss, or harm at the hands of others, it is right to seek help and safety. Please share it with someone you trust: a friend, a pastor, a counsellor. If you are in danger, or the pain ever feels like more than you can bear, reach out today to a crisis line or emergency service. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Who is someone you admire for refusing to say something they did not believe?",
+        "discuss": [
+          "Rome had room for one more god. Why was the Christian refusal of every other worship so hard for the empire to bear?",
+          "The church refused both to shut out the lapsed for good and to wave them straight back in. What would each of those choices have taught the next generation?",
+          "The lesson says most of us would have been among the lapsed. Does that feel true of you, and what does it change about how you read the martyrs?"
+        ],
+        "pray": "Those who pray may pray for Christians pressed today to deny Christ, and for mercy on all who have given way under pressure. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 3,
+      "title": "The first monks",
+      "minutes": 15,
+      "teaching": [
+        "Around 270 a young Egyptian farmer named Antony heard the Gospel read in his village church, the words to the rich young man about selling everything, and took them as spoken to him. He walked out into the desert while the faith was still illegal. After 313, when believing stopped costing anything, the desert filled with men and women who suspected that a faith the empire approved was going soft, and who went looking for the cost themselves.",
+        "The turning point is a small book. Around 529 at Monte Cassino, Benedict wrote a rule for monks short enough to read in an evening, and he wrote it against the heroics of fasting and sleeplessness. His monastery is a school for beginners: psalms, work and reading, enough food and sleep, guests received as Christ. The desert's hard-won answers were humility, hospitality and the refusal to judge. Wherever faith comes cheap, the monks keep asking the question Antony heard: what would you sell?"
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The First Monks",
+        "href": "/theology/history/the-desert-and-the-rule",
+        "why": "Lesson three: why Christians went to the desert once believing became easy, and what Benedict built from the desert's wisdom."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Matthew 19, passage by passage",
+          "href": "/study/bible/matthew/19#plain",
+          "why": "The rich young man and the words Antony heard read in church, with the plain-words notes beside the text."
+        },
+        {
+          "kind": "tool",
+          "label": "A rule of life",
+          "href": "/tools/rule-of-life",
+          "why": "Sketch a simple rule of your own in the spirit of Benedict's school for beginners: prayer, work, rest and welcome."
+        }
+      ],
+      "question": "What is one thing in your life that following Christ has never yet cost you?",
+      "do": "Choose one small daily practice, a psalm in the morning or a meal shared with a guest, and keep it for a week the way a beginner would.",
+      "verse": {
+        "ref": "Matthew 19:21",
+        "text": "Jesus told him, “If you want to be perfect, go, sell your possessions and give to the poor, and you will have treasure in heaven. Then come, follow Me.”"
+      },
+      "group": {
+        "open": "When has something you gave up made room for something better?",
+        "discuss": [
+          "The desert filled after the faith became legal and favoured. Why might comfort make some believers go looking for cost?",
+          "Benedict wrote against heroics and for ordinary men. Why do you think his modest rule outlasted the pillar saints?",
+          "The monks' own sayings mocked their pride. What would it look like for a church to tell the truth about its own excesses?"
+        ],
+        "pray": "Those who pray may ask for the humility, hospitality and refusal to judge that the desert learned, and for courage to give up what crowds out God. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 4,
+      "title": "When Rome became Christian",
+      "minutes": 15,
+      "teaching": [
+        "In October 312 Constantine won at the Milvian Bridge under the sign of a crucified man, and the next year at Milan the faith was made legal. People who had watched friends burned and Scriptures seized a decade earlier now watched an emperor build them churches. To them it felt like resurrection, and the gains were real: property returned, charity endowed, and the councils, for only an emperor could gather the bishops of the world at Nicaea in 325.",
+        "The costs came slowly. Emperors enforced creeds with exile, and crowds came into the church because careers ran that way. In the 380s at Trier, Priscillian was executed at the urging of fellow bishops, and within living memory of Diocletian, Christians had begun executing Christians over doctrine. Yet in 390 Ambrose barred the emperor Theodosius from the Lord's table until he did public penance for a massacre at Thessalonica. The question 312 asks has never closed. Can the church hold power without worshiping it?"
+      ],
+      "open": {
+        "kind": "history",
+        "label": "When Rome Became Christian",
+        "href": "/theology/history/the-constantinian-turn",
+        "why": "Lesson four: what the church gained when the empire favoured it, what it traded, and why the question it raised has never closed."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "When the Church Married Empire",
+          "href": "/writing/when-the-church-married-empire",
+          "why": "An essay on why the church's alliance with empire began long before the modern culture wars, and what that alliance still costs."
+        },
+        {
+          "kind": "chapter",
+          "label": "John 18, passage by passage",
+          "href": "/study/bible/john/18#plain",
+          "why": "Jesus before Pilate, telling the governor of Rome that his kingdom is not of this world, with the plain-words notes."
+        }
+      ],
+      "question": "What would your church be tempted to trade for protection or favour today?",
+      "do": "Read the account of Ambrose and Theodosius in the lesson. Write down one place where you would find it hard to tell a powerful person, or a powerful side, that it was wrong.",
+      "verse": {
+        "ref": "John 18:36",
+        "text": "Jesus answered, “My kingdom is not of this world; if it were, My servants would fight to prevent My arrest by the Jews. But now My kingdom is not of this realm.”"
+      },
+      "group": {
+        "open": "Have you ever been given a gift that came with strings you only noticed later?",
+        "discuss": [
+          "To the survivors of Diocletian, Constantine's favour felt like resurrection. Why is it too cheap simply to sneer at what they welcomed?",
+          "Within a lifetime the persecuted church had begun executing its own dissenters. How does that happen to sincere believers?",
+          "Ambrose could rebuke an emperor because he believed his office came from somewhere the emperor could not reach. Where does a church's courage come from now?"
+        ],
+        "pray": "Those who pray may ask for a church that receives every good gift with thanks and still refuses to worship the hand that gives it. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 5,
+      "title": "The teachers who carried the faith",
+      "minutes": 15,
+      "teaching": [
+        "The councils get the fame, but the doctrine they confirmed was carried between the meetings by people who paid for it. For most of the fifty-six years from Nicaea to Constantinople in 381, the Nicene faith was out of favour at court. Athanasius was driven from Alexandria five times by four emperors. What held him was one conviction from an early book, On the Incarnation: only God can save. If the Son is a creature, however exalted, a creature can't bring us home to God.",
+        "The turning point of this era is less a date than a way of working. Basil preached the rich into opening their barns in the famine of 368 and built a compound for the poor, and he also wrote the treatise that secured the deity of the Spirit. Augustine answered Pelagius from his own life: he hadn't been advised into holiness, he had been rescued. These people held together what we have divided into specialties. They worked as if the creed and the soup kitchen came from the same Lord."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Church Fathers",
+        "href": "/theology/history/the-fathers-at-work",
+        "why": "Lesson five: Athanasius, the Cappadocians, Macrina and Augustine, and how the faith was carried between the councils by sermons, letters and exiles."
+      },
+      "also": [
+        {
+          "kind": "history",
+          "label": "The people of church history",
+          "href": "/theology/history/people",
+          "why": "Find Athanasius, Basil, the two Gregorys and Augustine among the people of the course, each with their place in the story."
+        },
+        {
+          "kind": "essay",
+          "label": "Women in Church History",
+          "href": "/writing/women-in-church-history",
+          "why": "Macrina taught the theologians, and this essay follows her and other women whose part in the story is often left out."
+        },
+        {
+          "kind": "theology",
+          "label": "The glossary",
+          "href": "/theology/glossary",
+          "why": "Look up Church Fathers, Homoousios and Grace, the words this era argued over, each given in plain language."
+        }
+      ],
+      "question": "Which do you find easier to care about, right belief or practical mercy, and what would it take to hold both?",
+      "do": "This week, pair one piece of doctrine with one act of mercy: read the Nicene Creed slowly, then do one concrete thing for someone in need.",
+      "verse": {
+        "ref": "2 Timothy 2:2",
+        "text": "And the things that you have heard me say among many witnesses, entrust these to faithful men who will be qualified to teach others as well."
+      },
+      "group": {
+        "open": "Who handed the faith on to you, and what did it cost them?",
+        "discuss": [
+          "Athanasius held that only God can save. Why did that one conviction matter enough to spend seventeen years in exile for it?",
+          "Pelagius had a serious case against a church going soft. What did he see rightly, and where did Augustine think he went wrong?",
+          "The lesson says we have split doctrine, mercy and prayer into specialties. Where do you see that split in your own church or in yourself?"
+        ],
+        "pray": "Those who pray may give thanks for the people who carried the faith to them, and ask to hold the creed and mercy together as one life. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 6,
+      "title": "The councils that wrote the creeds",
+      "minutes": 15,
+      "teaching": [
+        "The great councils were arguments about words, and the words were not small. If Jesus isn't truly God, the cross reconciles no one to anyone. If he isn't truly human, our own flesh was never touched by salvation. At Nicaea in 325 the bishops answered Arius, who taught that the Son was the highest of creatures, by confessing the Son to be of the same substance as the Father. They borrowed a word Scripture doesn't use in order to protect what Scripture means.",
+        "Constantinople in 381 confessed the Spirit as Lord and giver of life, and Chalcedon in 451 reached the church's great settlement: one person in two natures, without confusion and without separation. The councils weren't pure. Bishops packed assemblies and exiled rivals, and Chalcedon split off ancient churches in Egypt and Syria that have never returned. Flawed men in a flawed process fenced the central mystery so well that the fence still stands, and the least we owe them is to know what it cost."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "Nicaea to Chalcedon",
+        "href": "/theology/history/the-great-councils",
+        "why": "Lesson six: the councils of 325, 381, 431 and 451, told as a human story of pressure, politics and careful words."
+      },
+      "also": [
+        {
+          "kind": "creed",
+          "label": "The Nicene Creed",
+          "href": "/resources/creeds/nicene-creed",
+          "why": "Read the creed most of the world's churches still confess, and find the lines that answered Arius and the lines on the Spirit."
+        },
+        {
+          "kind": "creed",
+          "label": "The Chalcedonian Definition",
+          "href": "/resources/creeds/chalcedonian-definition",
+          "why": "The settlement of 451 in its own words, one person in two natures, written mostly to say what must not be said."
+        },
+        {
+          "kind": "essay",
+          "label": "What Was Decided at the Council of Nicaea?",
+          "href": "/writing/the-council-of-nicaea-what-was-decided-in-325",
+          "why": "An essay on what the bishops decided in 325, and why most of the world's churches still confess what they wrote."
+        }
+      ],
+      "question": "When you say Jesus is God, what do you mean, and how would you say it to a friend who asked?",
+      "do": "Read the Nicene Creed aloud, slowly. Underline each phrase about the Son, and ask of each one what would be lost if it were taken out.",
+      "verse": {
+        "ref": "Colossians 2:9",
+        "text": "For in Christ all the fullness of the Deity dwells in bodily form."
+      },
+      "group": {
+        "open": "Can you think of a time when one word made all the difference in an agreement or a promise?",
+        "discuss": [
+          "Nicaea used a word that isn't in the Bible to protect what the Bible means. Is that faithful, and when might it not be?",
+          "The councils were full of ambition and maneuvering. Does that make their conclusions harder or easier for you to trust?",
+          "Chalcedon's definition mostly says what not to say about Christ. Why might restraint be a kind of wisdom when speaking about God?"
+        ],
+        "pray": "Those who pray may give thanks for Christ, fully God and fully human, and pray for the churches still divided since Chalcedon. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The church that outlived Rome",
+      "minutes": 15,
+      "teaching": [
+        "In August 410 a Gothic army sacked Rome, and in 476 the last western emperor was quietly deposed. The church didn't go down with the empire. In the five centuries that followed, the faith reached the very peoples who had broken Rome. Patrick, carried off from Britain as a slave at about sixteen, later went back to the people who had enslaved him, carrying the gospel. In 863 Cyril and Methodius built the Slavs an alphabet so they could hear Scripture and worship in their own tongue.",
+        "Not all of it was gentle. Charlemagne's wars against the Saxons ran for three decades, his law made refusing baptism a capital crime, and his court scholar Alcuin protested that a man can be dragged to the font but not to belief. He was ignored. The faith travelled best with its least armed carriers and worst wherever it rode with power. By the year 1000 Europe was baptized, and Europe was not converted, and every church since has lived inside that difference, ours included."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Church That Outlived Rome",
+        "href": "/theology/history/the-church-that-outlived-rome",
+        "why": "Lesson seven: Patrick, Gregory, Boniface, Cyril and Methodius, and the conversion of Europe told with its glory and its shame together."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Does religion poison everything?",
+          "href": "/questions/morality/does-religion-poison-everything",
+          "why": "The case for the faith takes up the charge that religion poisons everything, granting what is true in it before weighing the record."
+        }
+      ],
+      "question": "What is the difference between a person being baptized and a person being converted, and how would you know?",
+      "do": "Read Patrick's story in the lesson. Name one person who has wronged you, and pray for their good this week, as far as it is safe and wise to do so.",
+      "verse": {
+        "ref": "Zechariah 4:6",
+        "text": "So he said to me, “This is the word of the LORD to Zerubbabel: Not by might nor by power, but by My Spirit, says the LORD of Hosts."
+      },
+      "group": {
+        "open": "Who is the least likely person you know who carried faith to someone else?",
+        "discuss": [
+          "Patrick went back to the people who had enslaved him. What do you think made that possible?",
+          "Alcuin said faith cannot be compelled. Where have Christians since tried to compel it, by law, by pressure or by habit?",
+          "The lesson says Europe was baptized but not converted. Could the same be said of a town, a family or a church you know?"
+        ],
+        "pray": "Those who pray may pray for anyone pressed into a faith they did not choose, and for a church that carries the gospel without force. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 8,
+      "title": "East and West divide",
+      "minutes": 15,
+      "teaching": [
+        "The split between the Catholic and Orthodox churches was a drift long before it was an event. The East spoke Greek and the West Latin, and within a few centuries most believers couldn't read the other's books. When the western empire fell, Rome's bishop became a fixed point in the chaos, while in the East the emperor still reigned and the church saw itself as equal patriarchs gathered in council. Each arrangement made sense at home and looked like arrogance or weakness from across the sea.",
+        "One word in the creed carried both quarrels. Western churches added that the Spirit proceeds from the Father and the Son, the filioque, and the East objected both to the claim and to one region changing the whole church's confession alone. In 1054 a papal legate and the patriarch excommunicated each other, but the wound was sealed in 1204, when a western crusading army sacked Constantinople. In 1965 the old excommunications were lifted. The division remains, and neither half can call the loss someone else's fault alone."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "Why the Catholic and Orthodox Churches Split",
+        "href": "/theology/history/the-east-west-schism",
+        "why": "Lesson eight: language, authority, the disputed clause in the creed and the events of 1054, told fairly to both sides."
+      },
+      "also": [
+        {
+          "kind": "compare",
+          "label": "Christian traditions",
+          "href": "/theology/traditions",
+          "why": "A charitable guide to the major traditions, Orthodox and Catholic among them: what each one treasures, and the core they all share."
+        },
+        {
+          "kind": "creed",
+          "label": "The Nicene Creed",
+          "href": "/resources/creeds/nicene-creed",
+          "why": "Find the line on the Spirit proceeding from the Father, the clause the West later expanded and the East refused to change."
+        },
+        {
+          "kind": "essay",
+          "label": "Why Are There So Many Denominations?",
+          "href": "/writing/why-are-there-so-many-denominations",
+          "why": "An essay on why Christians are divided, from pride and slavery to honest conviction, and a prayer of Jesus still waiting for its answer."
+        }
+      ],
+      "question": "Who is a Christian from another tradition you have stopped trying to understand, and what would it take to start again?",
+      "do": "Read or listen to part of an Orthodox or Catholic service this week, in person or online, listening for what you share before what divides you.",
+      "verse": {
+        "ref": "John 17:21",
+        "text": "that all of them may be one, as You, Father, are in Me, and I am in You. May they also be in Us, so that the world may believe that You sent Me."
+      },
+      "group": {
+        "open": "Have you ever drifted from a friend without any single falling-out?",
+        "discuss": [
+          "Language was the first wall between East and West. What walls of language keep Christians apart today?",
+          "The filioque was a question about the Spirit and a question about authority at once. Why are disputes like that so hard to settle with goodwill alone?",
+          "The sack of 1204 did more damage than the excommunications of 1054. Why do deeds wound longer than words?"
+        ],
+        "pray": "Those who pray may pray for the unity Jesus asked for, and for Orthodox, Catholic and Protestant believers to see Christ in one another. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 9,
+      "title": "The church in the Middle Ages",
+      "minutes": 15,
+      "teaching": [
+        "There are two easy ways to tell the medieval story, and the course refuses both: a thousand years of darkness, or an age of faith when Europe was whole. This church baptized every child, ran the schools, fed the poor and built the cathedrals. Cluny, founded in 910, freed monasteries from the lords who owned them. Thomas Aquinas taught that faith and reason are friends. Francis of Assisi stripped himself of everything to live among the poor and the lepers, and the church made room for him.",
+        "The same church preached crusades that began, in 1096, with the massacre of Jewish communities in the Rhineland, and from 1252 allowed torture in its own courts. At Constance in 1415 it burned Jan Hus, who had come under a promise of safe conduct to plead for reform. The cause was rarely cynicism. It was certainty joined to power. The course's verdict reaches us too: the record suggests that it's the power, not the century, that corrupts."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Church in the Middle Ages",
+        "href": "/theology/history/the-medieval-west",
+        "why": "Lesson nine: the reforming monks, Canossa, the cathedrals and universities, the crusades and the inquisition, and the long refusal of reform."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Weren't the Crusades a holy war of conquest?",
+          "href": "/questions/morality/the-crusades",
+          "why": "The case for the faith takes up one of the strongest charges against the church's record and answers it without excuses."
+        },
+        {
+          "kind": "essay",
+          "label": "Is the Church Responsible for Antisemitism?",
+          "href": "/writing/is-the-church-responsible-for-antisemitism",
+          "why": "An essay on how Christians taught contempt for the people of Jesus, and what the New Testament they quoted actually says."
+        }
+      ],
+      "question": "Where might your own certainty, joined to whatever power you hold, be doing harm you can't yet see?",
+      "do": "Read the section of the lesson on what the power did. Write one sentence naming how a church today could treat the people who tell it hard truths better than Constance treated Hus.",
+      "verse": {
+        "ref": "1 Peter 4:17",
+        "text": "For it is time for judgment to begin with the family of God; and if it begins with us, what will the outcome be for those who disobey the gospel of God?"
+      },
+      "group": {
+        "open": "What is something your family or town is proud of that also carries a chapter it would rather forget?",
+        "discuss": [
+          "The same church built cathedrals and courts that used torture. Why is it so tempting to keep only one of those facts?",
+          "The course says certainty joined to power did the damage. Do you see that combination anywhere today, on any side?",
+          "Reformers like Hus were absorbed or silenced. What does a church need in order to hear its critics while it can still change?"
+        ],
+        "pray": "Those who pray may confess the church's violence as their own family's history, and ask for a church that listens to its critics. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 10,
+      "title": "The Reformation",
+      "minutes": 15,
+      "teaching": [
+        "It began with a monk who couldn't quiet his conscience. Martin Luther did everything the church of his day prescribed and found no rest, until Paul's letter to the Romans showed him that the righteousness God requires is the righteousness God gives, received by faith. In 1517 he posted ninety-five theses against the sale of indulgences, meaning to start a debate among scholars. The printing press carried his words across Europe faster than any authority could answer them.",
+        "The recovery was real: the freeness of grace, the authority of Scripture, the Bible in the people's own tongue. So was the blood. Catholics and Protestants alike drowned and burned the Anabaptists, Geneva burned Servetus, and the wars of religion ran on until 1648. The reformers also divided among themselves, and Luther and Zwingli never healed their quarrel over the Lord's Supper. Christians still differ over much that was argued then, and the course asks you to hold both: the church needed the recovery, and should mourn the blood."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Reformation",
+        "href": "/theology/history/the-reformation",
+        "why": "Lesson ten: Luther, the Reformed stream, the Radicals, the English settlement and the Catholic response, honest about recovery and violence alike."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Romans 1, passage by passage",
+          "href": "/study/bible/romans/1#plain",
+          "why": "The chapter where Luther found that the righteousness of God is given rather than earned, with the plain-words notes beside it."
+        },
+        {
+          "kind": "compare",
+          "label": "Where Christians differ",
+          "href": "/theology/compare",
+          "why": "Pick a doctrine the reformers fought over, such as the Lord's Supper, and see each position set out side by side with its case."
+        },
+        {
+          "kind": "creed",
+          "label": "The Augsburg Confession",
+          "href": "/resources/creeds/augsburg-confession-summary",
+          "why": "The Lutheran confession of 1530, condensed, so you can read what the reformers themselves said they believed."
+        }
+      ],
+      "question": "What is the difference between grace you are given and goodness you earn, and which do you live by on an ordinary day?",
+      "do": "Read Romans 1:16-17 and Romans 3:21-24 in one sitting. Write down, in your own words, what Luther found there that gave his conscience rest.",
+      "verse": {
+        "ref": "Romans 1:17",
+        "text": "For the gospel reveals the righteousness of God that comes by faith from start to finish, just as it is written: “The righteous will live by faith.”"
+      },
+      "group": {
+        "open": "Have you ever tried hard to earn something that could only be given?",
+        "discuss": [
+          "Luther meant to start a debate among scholars. Why did the printing press turn it into something so much larger?",
+          "Catholics and Protestants both persecuted the Anabaptists. What made a church of voluntary believers seem so threatening to everyone else?",
+          "The course asks us to be grateful for the recovery and to mourn the blood. Which of those comes harder to you, and why?"
+        ],
+        "pray": "Those who pray may give thanks for the grace the Reformation recovered, and grieve the division and violence that came with it. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Catholic renewal and the wars of religion",
+      "minutes": 15,
+      "teaching": [
+        "Protestants have often told this era as Rome striking back, and Catholics as pure renewal. Neither telling survives the record. The Council of Trent, meeting between 1545 and 1563, drew clear doctrinal lines and also cleaned house, ordering bishops to live among their people and every diocese to train its priests. Ignatius of Loyola founded the Jesuits, Teresa of Avila reformed the Carmelites, and Francis Xavier reached India and Japan. A Protestant should be able to say plainly that Rome did reform, and the reform was real.",
+        "The same century ran on a conviction held on every side, that God's truth should be secured by the state's power. On Saint Bartholomew's Day in 1572 Huguenots were murdered in Paris, and Protestant England hanged Catholic priests as traitors. The Thirty Years War, from 1618 to 1648, laid waste to the German lands. When a skeptic says Christianity means violence, this is the century he is remembering. The answer has never been denial. It is repentance, and the long labor of becoming a different kind of church."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Counter-Reformation and the Wars of Religion",
+        "href": "/theology/history/the-counter-reformation",
+        "why": "Lesson eleven: Trent, the Jesuits, the saints of a real renewal, and the century of religious war that ended at Westphalia in 1648."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "Are Catholics and Protestants Both Christians?",
+          "href": "/writing/are-catholics-and-protestants-both-christians",
+          "why": "An essay setting out where Catholics and Protestants agree and where they divided, with each side's teaching given fairly."
+        },
+        {
+          "kind": "essay",
+          "label": "Should Christians Ever Go to War?",
+          "href": "/writing/should-christians-ever-go-to-war",
+          "why": "An essay on the two answers serious Christians have given about war, for those who take both the Sermon on the Mount and history seriously."
+        }
+      ],
+      "question": "Where are you tempted to want the law, or the state, to carry the persuasion that belongs to the church?",
+      "do": "Read the lesson's account of Saint Bartholomew's Day and of the priests hanged in England. Write down one thing a Catholic and a Protestant could confess together about this century.",
+      "verse": {
+        "ref": "James 4:1",
+        "text": "What causes conflicts and quarrels among you? Don’t they come from the passions at war within you?"
+      },
+      "group": {
+        "open": "Have you ever seen two sides of a quarrel use the same methods while accusing each other?",
+        "discuss": [
+          "Trent both drew hard lines and reformed real abuses. Why do we find it hard to credit an opponent with genuine renewal?",
+          "Every confession that held power used it. What does that say about the danger of power, as distinct from the danger of a particular doctrine?",
+          "The course says modern unbelief was born partly from watching these wars. How should a Christian answer a skeptic who raises them?"
+        ],
+        "pray": "Those who pray may pray for peace between Christians of every tradition, and for a church that persuades and never coerces. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 12,
+      "title": "Revival, and what it could not see",
+      "minutes": 15,
+      "teaching": [
+        "After the wars much of Protestant Europe settled into a faith that was correct and cold. What broke it, from the 1730s, was revival on both sides of the Atlantic. Pietists in Germany gathered laypeople to read Scripture and pray, and the Moravians of Herrnhut began sending missionaries in 1732. Jonathan Edwards saw his town awakened in 1734, then wrote Religious Affections to test it: true religion is a changed heart that shows in a changed life. Whitefield preached in the fields, and Wesley gathered the awakened into weekly classes.",
+        "The revival carried a blind spot the size of a person. Whitefield campaigned to make slavery legal in Georgia and bought and worked human beings, and Edwards owned enslaved people and defended the practice in writing. Yet the gospel escaped its preachers. Enslaved men and women heard of the new birth and took it for their own, and Wesley attacked slavery outright. John Newton kept captaining slave ships for six years after his conversion and only slowly came to see. Real grace, a monstrous blindness, and then sight."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Great Awakening",
+        "href": "/theology/history/the-awakenings",
+        "why": "Lesson twelve: Pietism, Edwards, Whitefield and the Wesleys, with the ledger of the revivalists and slavery kept open and honest."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Why didn't the Bible just ban slavery?",
+          "href": "/answers/why-didnt-the-bible-just-ban-slavery",
+          "why": "An Honest Answer that grants the heart of the skeptic's objection before it answers, and doesn't stand at a safe distance from the history."
+        },
+        {
+          "kind": "essay",
+          "label": "What the Church Got Wrong About Race",
+          "href": "/writing/what-the-church-got-wrong-about-race",
+          "why": "An essay on how American pulpits defended slavery with open Bibles while Black Christians heard the God of the Exodus in the same book."
+        }
+      ],
+      "question": "What might Christians a century from now see in our faith that we can't see in ourselves?",
+      "do": "Read the closing section of the lesson on John Newton. Write down one habit or belief that sincere Christians around you have never questioned, and ask honestly what it costs someone else.",
+      "verse": {
+        "ref": "Psalm 139:23-24",
+        "text": "Search me, O God, and know my heart; test me and know my concerns. See if there is any offensive way in me; lead me in the way everlasting."
+      },
+      "group": {
+        "open": "When did you last change your mind about something you had been sure of for years?",
+        "discuss": [
+          "Edwards wrote that true religion shows in a changed life. How could the same man own human beings?",
+          "The enslaved heard the gospel and took it for their own on its own terms. What did they hear that their masters missed?",
+          "Newton came to see slowly. What helps a person, or a church, to see sooner?"
+        ],
+        "pray": "Those who pray may ask God to search their hearts for the blindness they cannot see, and give thanks for the enslaved believers whose faith outlasted their masters' sermons. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 13,
+      "title": "The missionary century",
+      "minutes": 15,
+      "teaching": [
+        "In 1790 the Christian map was mostly European, and Protestants had sent almost no one. Then in 1792 a shoemaker and pastor named William Carey argued that Christians were obliged to use means to carry the gospel, and in 1793 he sailed for India and never came home. By 1834 the presses at Serampore had printed Scripture in more than forty languages. Translation was the century's quiet turning point. A people who could read God's word in their mother tongue learned that he spoke their language and had no favourite race.",
+        "The century also rode on the empire's ships. The treaties after the Opium Wars wrote missions into the terms that opened China, and many missionaries shared their age's contempt for other peoples. Samuel Ajayi Crowther, freed from a slave ship as a boy, became the first African Anglican bishop in 1864, and a younger generation of Englishmen pushed him aside. At Edinburgh in 1910, V. S. Azariah of India asked the missionaries for the one thing they had rarely given: friends. The churches they left behind outgrew the churches that sent them."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Missionary Century",
+        "href": "/theology/history/the-missionary-century",
+        "why": "Lesson thirteen: from Carey's sailing to Edinburgh in 1910, what the gospel owed and paid to empire, and the local believers who did most of the work."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "Is Christianity a White Man's Religion?",
+          "href": "/writing/christianity-was-never-western",
+          "why": "An essay that grants the charge its real strength, then shows the faith was Asian and African long before Europe had heard of it."
+        },
+        {
+          "kind": "chapter",
+          "label": "Acts 2, passage by passage",
+          "href": "/study/bible/acts/2#plain",
+          "why": "At Pentecost each hearer heard the apostles in his own language, the first sign that the gospel would be heard in every tongue."
+        }
+      ],
+      "question": "Which parts of your faith are the gospel itself, and which are packaging from your own culture?",
+      "do": "Find out when the Bible was first translated into the language your family first spoke, and who did the work.",
+      "verse": {
+        "ref": "Romans 10:15",
+        "text": "And how can they preach unless they are sent? As it is written: “How beautiful are the feet of those who bring good news!”"
+      },
+      "group": {
+        "open": "Have you ever been helped by someone who didn't speak your language well?",
+        "discuss": [
+          "Translating the Bible told each people that God spoke their language. Why did that undercut the empires that carried the missionaries?",
+          "Crowther was pushed aside by younger men who thought Africans could be converts but not leaders. Where does that pattern still show up?",
+          "Azariah asked for friends, not money or workers. What would it mean to answer his request today?"
+        ],
+        "pray": "Those who pray may give thanks for the translators and the local believers whose names were never written down, and pray for the churches in every language. Others can keep a minute of quiet."
+      }
+    },
+    {
+      "n": 14,
+      "title": "The church since 1900",
+      "minutes": 15,
+      "teaching": [
+        "In 1900 better than four of every five Christians lived in Europe or North America, and the age expected the pattern to hold. Almost nothing in that expectation survived. American Protestants split between modernists and fundamentalists. In Germany most Protestants welcomed Hitler, and a minority gathered at Barmen in 1934 to confess that Jesus Christ is the one Word of God the church must hear and obey. Dietrich Bonhoeffer, who named cheap grace as the church's enemy, was hanged at Flossenburg in April 1945, the exception that accuses the silence around him.",
+        "Meanwhile, in 1906, a revival broke out on Azusa Street in Los Angeles under William Seymour, the son of freed slaves, and spread around the world. Around 1980 the balance tipped, and most of the world's Christians were no longer Western. The historian Andrew Walls saw the pattern under it all: Christianity has no permanent capital, and each centre in turn becomes a mission field. The Western church doesn't own the story. It never did, and the chapter now being written belongs to congregations you'll never see, and to yours."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The Church Since 1900",
+        "href": "/theology/history/the-global-church",
+        "why": "Lesson fourteen: fundamentalists and modernists, Barmen and Bonhoeffer, the churches under communism, Azusa Street, and the great move south."
+      },
+      "also": [
+        {
+          "kind": "creed",
+          "label": "The Barmen Declaration",
+          "href": "/resources/creeds/barmen-declaration-summary",
+          "why": "The confession of 1934, condensed: read it and ask what it would mean for a church under pressure to say it now."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible's timeline",
+          "href": "/study/timeline",
+          "why": "Go back behind the church's two thousand years to the story it was always telling, from the patriarchs to the apostles."
+        },
+        {
+          "kind": "track",
+          "label": "How each age has read the Bible",
+          "href": "/tracks/culture-and-the-bible",
+          "why": "The next track in the Academy's church history program: how each age read Scripture through its own lens, and how to begin seeing yours."
+        }
+      ],
+      "question": "Which part of the church's long story do you most need to remember when you read the news this week?",
+      "do": "Write a short paragraph naming one thing in the church's story you're grateful for, one thing you grieve, and one thing you now see in your own church that you didn't see before.",
+      "verse": {
+        "ref": "Revelation 7:9",
+        "text": "After this I looked and saw a multitude too large to count, from every nation and tribe and people and tongue, standing before the throne and before the Lamb. They were wearing white robes and holding palm branches in their hands."
+      },
+      "group": {
+        "open": "Where in the world would you most like to worship with Christians you have never met?",
+        "discuss": [
+          "Barmen defended the church's freedom but said nothing directly about the persecution of the Jews. What does that limit teach about how churches speak under pressure?",
+          "Walls said Christianity has no permanent capital. How does that change the way you think about the church's decline in the West?",
+          "After fourteen lessons, which failure of the church do you now recognize as a temptation of your own?"
+        ],
+        "pray": "Those who pray may give thanks for the whole church across the centuries and the continents, and pray for believers under pressure today. Others can keep a minute of quiet."
+      }
+    }
+  ]
+}
