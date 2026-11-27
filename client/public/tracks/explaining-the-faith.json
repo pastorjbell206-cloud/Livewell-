@@ -514,16 +514,16 @@
         },
         {
           "kind": "track",
-          "label": "Next in Explain It: Teaching others the Bible",
-          "href": "/tracks",
-          "why": "The next track in this program, for helping someone else grow: discipling one person, leading a group, and teaching children, teenagers and new believers."
+          "label": "Teaching others the Bible",
+          "href": "/tracks/teaching-others",
+          "why": "The next track on the road, in Explain It: Teaching others the Bible. Take it up when this one has settled."
         }
       ],
       "question": "In a page or less, what do you believe, why do you believe it, and what difference does it make?",
       "do": "Write your statement, no longer than one page, with the Apostles' Creed beside you. Read it aloud to one person who knows you well, and keep it where you will find it a year from now.",
       "verse": {
-        "ref": "2 Corinthians 4:13",
-        "text": "And in keeping with what is written: “I believed, therefore I have spoken,” we who have the same spirit of faith also believe and therefore speak,"
+        "ref": "Romans 10:17",
+        "text": "Consequently, faith comes by hearing, and hearing by the word of Christ."
       },
       "group": {
         "open": "What part of your statement was hardest to write, and why?",

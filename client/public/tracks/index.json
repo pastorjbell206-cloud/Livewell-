@@ -349,7 +349,8 @@
         "history",
         "plan",
         "study",
-        "tool"
+        "tool",
+        "track"
       ],
       "sessions": [
         {
@@ -547,6 +548,102 @@
       ]
     },
     {
+      "slug": "answering-questions",
+      "title": "Answering the questions people ask",
+      "for": "I want to answer my friends' questions",
+      "road": null,
+      "subtitle": "Ten questions people really ask about the faith, each with how to listen first, an honest short answer, the longer one, and what a Christian should concede, for conversations that keep going.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "chapter",
+        "context",
+        "doctrine",
+        "essay",
+        "help",
+        "howto",
+        "life",
+        "reading-guide",
+        "study-tool",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Isn't faith just upbringing?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Aren't you only a Christian because of where you were born?"
+        },
+        {
+          "n": 2,
+          "title": "Why does God allow suffering?",
+          "minutes": 10,
+          "kind": "essay",
+          "opens": "Why does God allow suffering?"
+        },
+        {
+          "n": 3,
+          "title": "Hasn't science disproved God?",
+          "minutes": 10,
+          "kind": "essay",
+          "opens": "Does science disprove God?"
+        },
+        {
+          "n": 4,
+          "title": "Isn't the Bible full of contradictions?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Contradictions: the accounts that disagree"
+        },
+        {
+          "n": 5,
+          "title": "What about other religions?",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Is Jesus really the only way to God?"
+        },
+        {
+          "n": 6,
+          "title": "Why would a loving God send people to hell?",
+          "minutes": 10,
+          "kind": "essay",
+          "opens": "Is hell real, and is it fair?"
+        },
+        {
+          "n": 7,
+          "title": "Hasn't the church done more harm than good?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Doesn't religion poison everything?"
+        },
+        {
+          "n": 8,
+          "title": "Isn't the Old Testament God violent?",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Isn't the God of the Old Testament a different God?"
+        },
+        {
+          "n": 9,
+          "title": "Can you be good without God?",
+          "minutes": 10,
+          "kind": "essay",
+          "opens": "Can you be good without God?"
+        },
+        {
+          "n": 10,
+          "title": "Keeping a conversation going, not winning it",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to share your faith without being weird"
+        }
+      ]
+    },
+    {
       "slug": "church-history",
       "title": "Church history in fourteen lessons",
       "for": "I want to know the church's story",
@@ -669,6 +766,327 @@
       ]
     },
     {
+      "slug": "living-guidance",
+      "title": "Decisions, calling and God's will",
+      "for": "I need to make a big decision",
+      "road": null,
+      "subtitle": "Eight short sessions for anyone at a fork in the road: what Scripture means by God's will, how Christians have discerned, calling, the fear of choosing wrong, closed doors, waiting, and a whole life offered.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "chapter",
+        "doctrine",
+        "essay",
+        "help",
+        "history",
+        "howto",
+        "life",
+        "plan",
+        "psalms",
+        "study",
+        "tool",
+        "track",
+        "wisdom",
+        "wisdom-finder"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "What God's will means in Scripture",
+          "minutes": 11,
+          "kind": "wisdom",
+          "opens": "What the Bible says about knowing God's will"
+        },
+        {
+          "n": 2,
+          "title": "How Christians have discerned",
+          "minutes": 12,
+          "kind": "essay",
+          "opens": "Does God have a plan for my life?"
+        },
+        {
+          "n": 3,
+          "title": "Calling beyond a job",
+          "minutes": 11,
+          "kind": "wisdom",
+          "opens": "What the Bible says about calling and purpose"
+        },
+        {
+          "n": 4,
+          "title": "Fear and anxiety about choosing wrong",
+          "minutes": 12,
+          "kind": "wisdom",
+          "opens": "What the Bible says about indecision"
+        },
+        {
+          "n": 5,
+          "title": "When a door closes",
+          "minutes": 11,
+          "kind": "chapter",
+          "opens": "Acts 16, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "Waiting",
+          "minutes": 11,
+          "kind": "howto",
+          "opens": "How to Wait on God"
+        },
+        {
+          "n": 7,
+          "title": "Living with the choice you made",
+          "minutes": 12,
+          "kind": "wisdom",
+          "opens": "What the Bible says about regret"
+        },
+        {
+          "n": 8,
+          "title": "A whole life offered",
+          "minutes": 12,
+          "kind": "chapter",
+          "opens": "Romans 12, passage by passage"
+        }
+      ]
+    },
+    {
+      "slug": "acts",
+      "title": "Deep in one: Acts",
+      "for": "I want to know how the church began",
+      "road": null,
+      "subtitle": "Fourteen sessions through all twenty-eight chapters of Acts: from a room in Jerusalem to a rented house in Rome, and how a frightened few became a church of every nation.",
+      "minutes": 15,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "book",
+        "case",
+        "chapter",
+        "context",
+        "doctrine",
+        "essay",
+        "explorer",
+        "film",
+        "history",
+        "howto",
+        "life",
+        "reading-guide",
+        "study-tool",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Wait for the promise",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 1, passage by passage"
+        },
+        {
+          "n": 2,
+          "title": "Pentecost",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 2, passage by passage"
+        },
+        {
+          "n": 3,
+          "title": "A lame man walks, and a bold church",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 3, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "Ananias and Sapphira, and the council",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 5, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "Stephen",
+          "minutes": 20,
+          "kind": "chapter",
+          "opens": "Acts 7, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "Philip on the road south",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 8, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "Saul on the Damascus road",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 9, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "Peter in a Gentile house, and Peter in prison",
+          "minutes": 20,
+          "kind": "chapter",
+          "opens": "Acts 10, passage by passage"
+        },
+        {
+          "n": 9,
+          "title": "The first mission",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 13, passage by passage"
+        },
+        {
+          "n": 10,
+          "title": "The council in Jerusalem",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 15, passage by passage"
+        },
+        {
+          "n": 11,
+          "title": "Philippi and Thessalonica",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Acts 16, passage by passage"
+        },
+        {
+          "n": 12,
+          "title": "Athens, Corinth and Ephesus",
+          "minutes": 20,
+          "kind": "chapter",
+          "opens": "Acts 17, passage by passage"
+        },
+        {
+          "n": 13,
+          "title": "Farewell, arrest and the trials",
+          "minutes": 20,
+          "kind": "chapter",
+          "opens": "Acts 20, passage by passage"
+        },
+        {
+          "n": 14,
+          "title": "Shipwreck, and Rome",
+          "minutes": 20,
+          "kind": "chapter",
+          "opens": "Acts 27, passage by passage"
+        }
+      ]
+    },
+    {
+      "slug": "exodus",
+      "title": "Deep in one: Exodus",
+      "for": "I want to know Exodus well",
+      "road": null,
+      "subtitle": "Twelve sessions through the book of the great rescue, section by section: the bush, the plagues, the Passover, the sea, Sinai, the calf and the glory filling the tent.",
+      "minutes": 15,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "book",
+        "chapter",
+        "context",
+        "doctrine",
+        "film",
+        "howto",
+        "life",
+        "reading-guide",
+        "story",
+        "study",
+        "study-tool",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Slavery, and a baby in the Nile",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 1, passage by passage"
+        },
+        {
+          "n": 2,
+          "title": "The burning bush and the name",
+          "minutes": 15,
+          "kind": "study",
+          "opens": "Study Exodus 3, step by step"
+        },
+        {
+          "n": 3,
+          "title": "The plagues and Pharaoh's hard heart",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 9, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "Passover",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 12, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "Through the sea",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 14, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "Manna, water and Amalek",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 16, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "Sinai and the covenant",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 19, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "The Ten Commandments",
+          "minutes": 15,
+          "kind": "study",
+          "opens": "Study Exodus 20, step by step"
+        },
+        {
+          "n": 9,
+          "title": "The book of the covenant, in its world",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 21, passage by passage"
+        },
+        {
+          "n": 10,
+          "title": "The tabernacle plans",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 25, passage by passage"
+        },
+        {
+          "n": 11,
+          "title": "The golden calf",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 32, passage by passage"
+        },
+        {
+          "n": 12,
+          "title": "The glory passes by, and fills the tent",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Exodus 34, passage by passage"
+        }
+      ]
+    },
+    {
       "slug": "genesis",
       "title": "Deep in one: Genesis",
       "for": "I want to know Genesis well",
@@ -775,6 +1193,235 @@
           "minutes": 15,
           "kind": "chapter",
           "opens": "Genesis 50, passage by passage"
+        }
+      ]
+    },
+    {
+      "slug": "hebrews",
+      "title": "Deep in one: Hebrews",
+      "for": "I want to see how Jesus fulfils the Old Testament",
+      "road": null,
+      "subtitle": "Thirteen sessions, one for each chapter of Hebrews: the angels, Moses, the priesthood and the sacrifices read in the light of Christ, and how to read the Old Testament the way this sermon does.",
+      "minutes": 15,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "book",
+        "chapter",
+        "compare",
+        "context",
+        "creed",
+        "doctrine",
+        "film",
+        "howto",
+        "life",
+        "reading-guide",
+        "story",
+        "study",
+        "study-tool",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "God has spoken in his Son",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 1, passage by passage"
+        },
+        {
+          "n": 2,
+          "title": "Do not drift; he became like us",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 2, passage by passage"
+        },
+        {
+          "n": 3,
+          "title": "Moses the servant, Jesus the Son",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 3, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "A rest that remains",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 4, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "A high priest from among us",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 5, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "The sharpest warning, and an anchor",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 6, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "A priest like Melchizedek",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 7, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "A better covenant",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 8, passage by passage"
+        },
+        {
+          "n": 9,
+          "title": "Blood and a clean conscience",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 9, passage by passage"
+        },
+        {
+          "n": 10,
+          "title": "Once for all, so draw near",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 10, passage by passage"
+        },
+        {
+          "n": 11,
+          "title": "By faith",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 11, passage by passage"
+        },
+        {
+          "n": 12,
+          "title": "The race and the city",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 12, passage by passage"
+        },
+        {
+          "n": 13,
+          "title": "Outside the camp",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Hebrews 13, passage by passage"
+        }
+      ]
+    },
+    {
+      "slug": "isaiah",
+      "title": "Deep in one: Isaiah",
+      "for": "I want to understand Isaiah",
+      "road": null,
+      "subtitle": "Twelve sessions through the grandest of the prophets: the holy God, Immanuel, the nations, comfort for exiles, the suffering servant and new heavens and a new earth.",
+      "minutes": 15,
+      "leader": true,
+      "kinds": [
+        "book",
+        "chapter",
+        "context",
+        "doctrine",
+        "film",
+        "howto",
+        "life",
+        "reading-guide",
+        "story",
+        "study",
+        "study-tool",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Isaiah's world and the book's three settings",
+          "minutes": 15,
+          "kind": "book",
+          "opens": "Isaiah's introduction in the Study Bible"
+        },
+        {
+          "n": 2,
+          "title": "The vineyard and the call",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 6, passage by passage"
+        },
+        {
+          "n": 3,
+          "title": "Immanuel, in Ahaz's day and in Matthew's",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 7, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "The branch and the peaceable kingdom",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 11, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "The nations under judgment",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 19, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "The little apocalypse",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 25, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "Hezekiah and the Assyrian siege",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 37, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "Comfort for the exiles",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 40, passage by passage"
+        },
+        {
+          "n": 9,
+          "title": "The servant songs",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 42, passage by passage"
+        },
+        {
+          "n": 10,
+          "title": "The suffering servant",
+          "minutes": 18,
+          "kind": "study",
+          "opens": "Study Isaiah 53, step by step"
+        },
+        {
+          "n": 11,
+          "title": "Come to the waters",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 55, passage by passage"
+        },
+        {
+          "n": 12,
+          "title": "New heavens and a new earth",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Isaiah 65, passage by passage"
         }
       ]
     },
@@ -919,6 +1566,204 @@
       ]
     },
     {
+      "slug": "proverbs",
+      "title": "Deep in one: Proverbs",
+      "for": "I want wisdom for daily life",
+      "road": null,
+      "subtitle": "Eight sessions in the Bible's book of wisdom for ordinary days: what a proverb is, the fear of the LORD, words, work, money, friends and anger, and the wisdom that has a face.",
+      "minutes": 15,
+      "leader": true,
+      "kinds": [
+        "book",
+        "chapter",
+        "context",
+        "doctrine",
+        "essay",
+        "film",
+        "history",
+        "howto",
+        "life",
+        "reading-guide",
+        "study",
+        "study-tool",
+        "tool",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "What a proverb is, and what it is not",
+          "minutes": 15,
+          "kind": "reading-guide",
+          "opens": "Reading the wisdom books"
+        },
+        {
+          "n": 2,
+          "title": "Proverbs 1 and the fear of the LORD",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Proverbs 1, passage by passage"
+        },
+        {
+          "n": 3,
+          "title": "Proverbs 8 and 9, Lady Wisdom and Lady Folly",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Proverbs 8, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "Words and the tongue",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Proverbs 18, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "Work and laziness",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Proverbs 6, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "Money and generosity",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Proverbs 30, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "Friends, anger and pride",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Proverbs 27, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "Proverbs 31 and the wisdom that points to Christ",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Proverbs 31, passage by passage"
+        }
+      ]
+    },
+    {
+      "slug": "revelation",
+      "title": "Deep in one: Revelation",
+      "for": "I want to understand Revelation",
+      "road": null,
+      "subtitle": "Twelve sessions in the Bible's last book: how apocalyptic writing works, the four ways of reading it, and the slain Lamb on the throne, heard first as its churches heard it.",
+      "minutes": 15,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "book",
+        "chapter",
+        "compare",
+        "context",
+        "doctrine",
+        "essay",
+        "film",
+        "history",
+        "life",
+        "reading-guide",
+        "story",
+        "study",
+        "study-tool",
+        "theology",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "How to read Revelation",
+          "minutes": 15,
+          "kind": "reading-guide",
+          "opens": "Reading Revelation and Daniel"
+        },
+        {
+          "n": 2,
+          "title": "Revelation 1 and the vision of Christ",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 1, passage by passage"
+        },
+        {
+          "n": 3,
+          "title": "Revelation 2 and four of the churches",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 2, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "Revelation 3 and the last three churches",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 3, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "Revelation 4 and 5, the throne and the Lamb",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 5, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "Revelation 6 and 7, the seals",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 6, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "Revelation 8 to 11, the trumpets and the two witnesses",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 11, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "Revelation 12 and 13, the dragon and the beasts",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 13, passage by passage"
+        },
+        {
+          "n": 9,
+          "title": "Revelation 14 to 16, the harvest and the bowls",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 14, passage by passage"
+        },
+        {
+          "n": 10,
+          "title": "Revelation 17 and 18, the fall of Babylon",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 18, passage by passage"
+        },
+        {
+          "n": 11,
+          "title": "Revelation 19 and 20, the rider and the thousand years",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 20, passage by passage"
+        },
+        {
+          "n": 12,
+          "title": "Revelation 21 and 22, all things made new",
+          "minutes": 15,
+          "kind": "chapter",
+          "opens": "Revelation 21, passage by passage"
+        }
+      ]
+    },
+    {
       "slug": "john",
       "title": "Deep in one: the Gospel of John",
       "for": "I want to know John's Gospel well",
@@ -1046,6 +1891,7 @@
         "film",
         "psalms",
         "study",
+        "track",
         "wisdom-finder"
       ],
       "sessions": [
@@ -1258,6 +2104,270 @@
       ]
     },
     {
+      "slug": "explaining-the-faith",
+      "title": "Explaining the faith to others",
+      "for": "I want to explain what I believe",
+      "road": null,
+      "subtitle": "Ten short sessions on explaining the Christian faith with gentleness and respect: listening first, your own story, the gospel, the cross, the resurrection, the Trinity, the Bible, and a statement of your own.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "catechism",
+        "chapter",
+        "creed",
+        "doctrine",
+        "essay",
+        "film",
+        "guide",
+        "help",
+        "howto",
+        "life",
+        "reading-guide",
+        "skeptics",
+        "story",
+        "study",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Why Christians speak at all",
+          "minutes": 10,
+          "kind": "guide",
+          "opens": "Evangelism: A Bible Study on Sharing Your Faith"
+        },
+        {
+          "n": 2,
+          "title": "Listening before speaking",
+          "minutes": 10,
+          "kind": "study",
+          "opens": "John 4, the guided seven-step study"
+        },
+        {
+          "n": 3,
+          "title": "Your own story, told honestly",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to Tell Your Story"
+        },
+        {
+          "n": 4,
+          "title": "The gospel in a few sentences",
+          "minutes": 10,
+          "kind": "film",
+          "opens": "The gospel in a minute"
+        },
+        {
+          "n": 5,
+          "title": "Explaining the cross",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The atonement, in the Study Bible"
+        },
+        {
+          "n": 6,
+          "title": "Explaining the resurrection",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Did the resurrection actually happen?"
+        },
+        {
+          "n": 7,
+          "title": "Explaining the Trinity simply",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "How can God be three and one?"
+        },
+        {
+          "n": 8,
+          "title": "Explaining the Bible to someone who has never read it",
+          "minutes": 10,
+          "kind": "reading-guide",
+          "opens": "What is the Bible?"
+        },
+        {
+          "n": 9,
+          "title": "Speaking with a friend of another faith or none",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Isn't it arrogant to say Jesus is the only way?"
+        },
+        {
+          "n": 10,
+          "title": "Your own statement of what you believe",
+          "minutes": 15,
+          "kind": "creed",
+          "opens": "The Apostles' Creed"
+        }
+      ]
+    },
+    {
+      "slug": "family-children",
+      "title": "Faith with children, ages 7 to 11",
+      "for": "I'm raising children",
+      "road": null,
+      "subtitle": "Eight sessions for parents of children from seven to eleven: the Bible as one story, reading it together, the catechism, prayer they lead, their big questions, friends and fairness, screens, and serving as a family.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "catechism",
+        "chapter",
+        "creed",
+        "devotion",
+        "explorer",
+        "film",
+        "howto",
+        "plan",
+        "psalms",
+        "story",
+        "study",
+        "study-tool",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "The Bible's whole story",
+          "minutes": 15,
+          "kind": "explorer",
+          "opens": "The Bible Explorer"
+        },
+        {
+          "n": 2,
+          "title": "Reading the Bible together",
+          "minutes": 10,
+          "kind": "plan",
+          "opens": "Family reading plans"
+        },
+        {
+          "n": 3,
+          "title": "The catechism",
+          "minutes": 10,
+          "kind": "catechism",
+          "opens": "The family catechism"
+        },
+        {
+          "n": 4,
+          "title": "Prayer they lead",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Matthew 6, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "The big questions children ask",
+          "minutes": 15,
+          "kind": "study-tool",
+          "opens": "The films"
+        },
+        {
+          "n": 6,
+          "title": "Friends and fairness",
+          "minutes": 10,
+          "kind": "devotion",
+          "opens": "The Friend Who Stays"
+        },
+        {
+          "n": 7,
+          "title": "Screens and games",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to Have the Screen Conversation by Age"
+        },
+        {
+          "n": 8,
+          "title": "Serving others as a family",
+          "minutes": 10,
+          "kind": "devotion",
+          "opens": "The Towel and the Basin"
+        }
+      ]
+    },
+    {
+      "slug": "family-little-ones",
+      "title": "Faith with little ones, ages 3 to 6",
+      "for": "I'm raising little ones",
+      "road": null,
+      "subtitle": "Eight sessions for parents of children from three to six: what a small child can take in, Bible stories at bedtime, first prayers, songs, wonder, grace when they do wrong, church with wiggles, and where God is.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "catechism",
+        "chapter",
+        "devotion",
+        "doctrine",
+        "film",
+        "howto",
+        "life",
+        "psalms",
+        "story",
+        "tool",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "What a small child can take in",
+          "minutes": 10,
+          "kind": "wisdom",
+          "opens": "Parenting Young Children"
+        },
+        {
+          "n": 2,
+          "title": "Bible stories at bedtime",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to Read the Bible With Young Children"
+        },
+        {
+          "n": 3,
+          "title": "Praying with a three-year-old",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to Pray With Your Kids at Bedtime"
+        },
+        {
+          "n": 4,
+          "title": "Singing and memorizing",
+          "minutes": 10,
+          "kind": "tool",
+          "opens": "Memorize Scripture"
+        },
+        {
+          "n": 5,
+          "title": "God made everything",
+          "minutes": 10,
+          "kind": "devotion",
+          "opens": "God Called It Good"
+        },
+        {
+          "n": 6,
+          "title": "When they do wrong",
+          "minutes": 10,
+          "kind": "catechism",
+          "opens": "Question 59: What should we do when we sin?"
+        },
+        {
+          "n": 7,
+          "title": "Church with wiggly children",
+          "minutes": 10,
+          "kind": "devotion",
+          "opens": "Not a Building"
+        },
+        {
+          "n": 8,
+          "title": "Where is God?",
+          "minutes": 10,
+          "kind": "film",
+          "opens": "Why can't I see God?"
+        }
+      ]
+    },
+    {
       "slug": "parents-guide",
       "title": "For parents: leading faith at home",
       "for": "I'm a parent who wants to lead well",
@@ -1340,6 +2450,173 @@
           "minutes": 10,
           "kind": "chapter",
           "opens": "Psalm 78, passage by passage"
+        }
+      ]
+    },
+    {
+      "slug": "living-relationships",
+      "title": "Friendship, community and the church family",
+      "for": "I want real friends and a real church",
+      "road": null,
+      "subtitle": "Eight short sessions on the people God made you for: friendship, loneliness, the single life, the open table, conflict between believers, the church as a family of every age, and the old among us.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "chapter",
+        "doctrine",
+        "essay",
+        "film",
+        "guide",
+        "help",
+        "howto",
+        "life",
+        "plan",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Made for others",
+          "minutes": 11,
+          "kind": "doctrine",
+          "opens": "The Trinity, in the Study Bible"
+        },
+        {
+          "n": 2,
+          "title": "Loneliness",
+          "minutes": 11,
+          "kind": "howto",
+          "opens": "How to Handle Loneliness"
+        },
+        {
+          "n": 3,
+          "title": "Friendship in Scripture",
+          "minutes": 12,
+          "kind": "chapter",
+          "opens": "1 Samuel 18, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "The single life as a full life",
+          "minutes": 11,
+          "kind": "life",
+          "opens": "Is singleness a calling or a waiting room?"
+        },
+        {
+          "n": 5,
+          "title": "Hospitality",
+          "minutes": 11,
+          "kind": "howto",
+          "opens": "How to Show Hospitality to Outsiders"
+        },
+        {
+          "n": 6,
+          "title": "Conflict and reconciliation between believers",
+          "minutes": 12,
+          "kind": "chapter",
+          "opens": "Matthew 18, passage by passage"
+        },
+        {
+          "n": 7,
+          "title": "The church as family across ages and backgrounds",
+          "minutes": 12,
+          "kind": "chapter",
+          "opens": "Ephesians 2, passage by passage"
+        },
+        {
+          "n": 8,
+          "title": "Caring for aging parents and the old among us",
+          "minutes": 12,
+          "kind": "life",
+          "opens": "How do you honour aging parents who need care?"
+        }
+      ]
+    },
+    {
+      "slug": "teens-growing",
+      "title": "Growing on your own",
+      "for": "I'm a teenager who wants to grow",
+      "road": null,
+      "subtitle": "Eight short sessions for a teenager who wants a faith of their own: reading the Bible, praying, church, baptism and the Supper, serving, the Holy Spirit, flat seasons and owning what you believe.",
+      "minutes": 5,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "book",
+        "catechism",
+        "chapter",
+        "compare",
+        "creed",
+        "doctrine",
+        "film",
+        "guide",
+        "help",
+        "howto",
+        "life",
+        "psalms",
+        "self-check",
+        "study",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Reading the Bible on your own",
+          "minutes": 6,
+          "kind": "howto",
+          "opens": "How to Actually Read the Bible"
+        },
+        {
+          "n": 2,
+          "title": "Praying when it feels like talking to the ceiling",
+          "minutes": 6,
+          "kind": "film",
+          "opens": "Prayer"
+        },
+        {
+          "n": 3,
+          "title": "Church when you'd rather not go",
+          "minutes": 6,
+          "kind": "film",
+          "opens": "What the church is"
+        },
+        {
+          "n": 4,
+          "title": "Baptism and the Lord's Supper",
+          "minutes": 7,
+          "kind": "film",
+          "opens": "Baptism and the Lord's Supper"
+        },
+        {
+          "n": 5,
+          "title": "Serving",
+          "minutes": 6,
+          "kind": "self-check",
+          "opens": "Spiritual Gifts Self-Check"
+        },
+        {
+          "n": 6,
+          "title": "The Holy Spirit in a young Christian",
+          "minutes": 6,
+          "kind": "film",
+          "opens": "The Holy Spirit in a believer"
+        },
+        {
+          "n": 7,
+          "title": "When your faith feels flat",
+          "minutes": 6,
+          "kind": "life",
+          "opens": "Why Does God Feel So Far Away When You Pray?"
+        },
+        {
+          "n": 8,
+          "title": "Owning your faith",
+          "minutes": 6,
+          "kind": "creed",
+          "opens": "The Apostles' Creed"
         }
       ]
     },
@@ -1745,6 +3022,172 @@
       ]
     },
     {
+      "slug": "teens-explaining",
+      "title": "Talking about your faith with friends",
+      "for": "I'm a teenager with friends who ask",
+      "road": null,
+      "subtitle": "Eight short sessions for a teenager whose friends ask questions: why say anything, your own story, the faith in two minutes, made up, science, hypocrites, other religions, and staying friends.",
+      "minutes": 5,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "catechism",
+        "chapter",
+        "creed",
+        "film",
+        "guide",
+        "help",
+        "howto",
+        "life",
+        "skeptics",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Why you'd say anything",
+          "minutes": 6,
+          "kind": "howto",
+          "opens": "How to Share Your Faith Without Being Weird"
+        },
+        {
+          "n": 2,
+          "title": "Your own story",
+          "minutes": 6,
+          "kind": "howto",
+          "opens": "How to Tell Your Story"
+        },
+        {
+          "n": 3,
+          "title": "What Christians believe, in two minutes",
+          "minutes": 6,
+          "kind": "film",
+          "opens": "The gospel in a minute"
+        },
+        {
+          "n": 4,
+          "title": "When a friend says it's all made up",
+          "minutes": 6,
+          "kind": "case",
+          "opens": "Written decades later?"
+        },
+        {
+          "n": 5,
+          "title": "When a friend says science disproved it",
+          "minutes": 6,
+          "kind": "film",
+          "opens": "Are science and the Bible enemies?"
+        },
+        {
+          "n": 6,
+          "title": "When a friend says Christians are hypocrites",
+          "minutes": 6,
+          "kind": "wisdom",
+          "opens": "Hypocrisy and the Mask"
+        },
+        {
+          "n": 7,
+          "title": "Friends of other religions",
+          "minutes": 6,
+          "kind": "case",
+          "opens": "Are all religions the same?"
+        },
+        {
+          "n": 8,
+          "title": "Staying friends when you disagree",
+          "minutes": 6,
+          "kind": "howto",
+          "opens": "How to Disagree Without Losing the Relationship"
+        }
+      ]
+    },
+    {
+      "slug": "teaching-others",
+      "title": "Teaching others the Bible",
+      "for": "I want to help someone else grow",
+      "road": null,
+      "subtitle": "Eight short sessions for helping someone else grow: discipling one person, leading a group, asking good questions, handling what you can't answer, teaching children and teenagers, and handing on the Academy.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "catechism",
+        "chapter",
+        "creed",
+        "devotion",
+        "film",
+        "guide",
+        "help",
+        "howto",
+        "life",
+        "plan",
+        "study",
+        "study-tool",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Discipling one person",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to Disciple One Person Over Coffee"
+        },
+        {
+          "n": 2,
+          "title": "Leading a small group Bible study",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "What to Actually Do at a Discipleship Table"
+        },
+        {
+          "n": 3,
+          "title": "Asking good questions",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "The Three Questions That Make Any Passage Teachable"
+        },
+        {
+          "n": 4,
+          "title": "When you can't answer a hard question",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to Answer Hard Questions About the Faith"
+        },
+        {
+          "n": 5,
+          "title": "Teaching children",
+          "minutes": 10,
+          "kind": "devotion",
+          "opens": "Tonight's family devotion"
+        },
+        {
+          "n": 6,
+          "title": "Teaching teenagers",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to Disciple Teenagers at Home"
+        },
+        {
+          "n": 7,
+          "title": "Walking with someone new to faith",
+          "minutes": 10,
+          "kind": "plan",
+          "opens": "Eight Weeks for a New Christian"
+        },
+        {
+          "n": 8,
+          "title": "Handing on the Academy",
+          "minutes": 10,
+          "kind": "track",
+          "opens": "All the tracks"
+        }
+      ]
+    },
+    {
       "slug": "apostles-creed",
       "title": "The Apostles' Creed, line by line",
       "for": "I want to know what Christians confess",
@@ -2106,6 +3549,304 @@
       ]
     },
     {
+      "slug": "doctrine-god",
+      "title": "The doctrine of God",
+      "for": "I want to know who God is",
+      "road": null,
+      "subtitle": "Ten sessions on who God is: whether he can be known, the name he gave Moses, what he is like, how he rules the world, and what the church means when it confesses him as Father, Son and Holy Spirit.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "chapter",
+        "creed",
+        "doctrine",
+        "essay",
+        "film",
+        "history",
+        "howto",
+        "life",
+        "study-tool",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Can God be known?",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Who God is, in the Study Bible"
+        },
+        {
+          "n": 2,
+          "title": "The name God gave Moses",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Exodus 3, passage by passage"
+        },
+        {
+          "n": 3,
+          "title": "The God who needs nothing",
+          "minutes": 12,
+          "kind": "theology",
+          "opens": "What are the attributes of God?"
+        },
+        {
+          "n": 4,
+          "title": "Holy, loving, just, wise and good",
+          "minutes": 12,
+          "kind": "doctrine",
+          "opens": "Holiness, in the Study Bible"
+        },
+        {
+          "n": 5,
+          "title": "Sovereignty and providence",
+          "minutes": 12,
+          "kind": "doctrine",
+          "opens": "Providence, in the Study Bible"
+        },
+        {
+          "n": 6,
+          "title": "The Trinity in Scripture",
+          "minutes": 12,
+          "kind": "theology",
+          "opens": "What is the Trinity?"
+        },
+        {
+          "n": 7,
+          "title": "The Trinity in the church's creeds",
+          "minutes": 12,
+          "kind": "creed",
+          "opens": "The Nicene Creed"
+        },
+        {
+          "n": 8,
+          "title": "The errors the church refused",
+          "minutes": 12,
+          "kind": "doctrine",
+          "opens": "The Trinity, in the Study Bible"
+        },
+        {
+          "n": 9,
+          "title": "The Trinity in prayer and life",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Romans 8, passage by passage"
+        },
+        {
+          "n": 10,
+          "title": "Explaining the Trinity simply",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "How can God be three and one?"
+        }
+      ]
+    },
+    {
+      "slug": "doctrine-salvation",
+      "title": "The doctrine of salvation",
+      "for": "I want to understand how God saves",
+      "road": null,
+      "subtitle": "Eleven sessions on how God saves, from the image and the fall through grace, election, new birth, justification, adoption and holiness, to explaining grace to someone who thinks they must earn it.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "chapter",
+        "creed",
+        "doctrine",
+        "essay",
+        "film",
+        "help",
+        "history",
+        "howto",
+        "life",
+        "story",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Made in God's image, and fallen",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Humanity, in the Study Bible"
+        },
+        {
+          "n": 2,
+          "title": "Sin and how far it reaches",
+          "minutes": 10,
+          "kind": "theology",
+          "opens": "What is original sin? Three Christian traditions"
+        },
+        {
+          "n": 3,
+          "title": "Grace",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Salvation, in the Study Bible"
+        },
+        {
+          "n": 4,
+          "title": "Election and predestination",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Election, in the Study Bible"
+        },
+        {
+          "n": 5,
+          "title": "The call and the new birth",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Regeneration, in the Study Bible"
+        },
+        {
+          "n": 6,
+          "title": "Repentance and faith",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Repentance, in the Study Bible"
+        },
+        {
+          "n": 7,
+          "title": "Justification",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Justification, in the Study Bible"
+        },
+        {
+          "n": 8,
+          "title": "Adoption",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Galatians 4, passage by passage"
+        },
+        {
+          "n": 9,
+          "title": "Sanctification",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Sanctification, in the Study Bible"
+        },
+        {
+          "n": 10,
+          "title": "Perseverance and assurance",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Perseverance, in the Study Bible"
+        },
+        {
+          "n": 11,
+          "title": "Explaining grace to someone who thinks they must earn it",
+          "minutes": 10,
+          "kind": "film",
+          "opens": "The gospel in a minute"
+        }
+      ]
+    },
+    {
+      "slug": "doctrine-scripture",
+      "title": "The doctrine of Scripture",
+      "for": "I want to know why we trust the Bible",
+      "road": null,
+      "subtitle": "Ten sessions on what Christians mean when they call the Bible God's word: how God speaks, what inspiration means, which books belong, how they reached us, and how to explain your trust to a friend.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "chapter",
+        "compare",
+        "creed",
+        "doctrine",
+        "essay",
+        "film",
+        "history",
+        "howto",
+        "life",
+        "reading-guide",
+        "study",
+        "study-tool",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "God makes himself known",
+          "minutes": 10,
+          "kind": "theology",
+          "opens": "How does God speak to us?"
+        },
+        {
+          "n": 2,
+          "title": "Breathed out by God",
+          "minutes": 10,
+          "kind": "theology",
+          "opens": "What does it mean that the Bible is inspired?"
+        },
+        {
+          "n": 3,
+          "title": "Human writers, human voices",
+          "minutes": 10,
+          "kind": "study-tool",
+          "opens": "The 66 books at a glance"
+        },
+        {
+          "n": 4,
+          "title": "The authority of Scripture",
+          "minutes": 10,
+          "kind": "theology",
+          "opens": "What is the Bible, and can we trust it?"
+        },
+        {
+          "n": 5,
+          "title": "Inerrancy and infallibility",
+          "minutes": 12,
+          "kind": "theology",
+          "opens": "What is biblical inerrancy?"
+        },
+        {
+          "n": 6,
+          "title": "Which books, and who decided",
+          "minutes": 12,
+          "kind": "reading-guide",
+          "opens": "How the books were chosen"
+        },
+        {
+          "n": 7,
+          "title": "From the writers to your hands",
+          "minutes": 12,
+          "kind": "case",
+          "opens": "More differences than words?"
+        },
+        {
+          "n": 8,
+          "title": "Clear enough, and enough",
+          "minutes": 10,
+          "kind": "history",
+          "opens": "The plain sense: the Reformers and the Bible in every hand"
+        },
+        {
+          "n": 9,
+          "title": "Scripture and tradition",
+          "minutes": 12,
+          "kind": "compare",
+          "opens": "The Christian traditions"
+        },
+        {
+          "n": 10,
+          "title": "Why you trust the Bible, said to a friend",
+          "minutes": 12,
+          "kind": "answer",
+          "opens": "Why would anyone trust the Bible?"
+        }
+      ]
+    },
+    {
       "slug": "first-habits",
       "title": "The habits of a Christian life",
       "for": "I want to grow, not just start",
@@ -2300,6 +4041,210 @@
       ]
     },
     {
+      "slug": "doctrine-spirit-church",
+      "title": "The Holy Spirit and the church",
+      "for": "I want to know what the Spirit and the church are",
+      "road": null,
+      "subtitle": "Eleven sessions on who the Holy Spirit is and what he does, and on what the church is, how it is ordered and why it is sent, traced to Scripture and the creeds.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "chapter",
+        "compare",
+        "creed",
+        "doctrine",
+        "essay",
+        "film",
+        "help",
+        "history",
+        "howto",
+        "life",
+        "reading-guide",
+        "self-check",
+        "story",
+        "study-tool",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "The Spirit as a person and as God",
+          "minutes": 10,
+          "kind": "theology",
+          "opens": "Who is the Holy Spirit?"
+        },
+        {
+          "n": 2,
+          "title": "The Spirit in the Old Testament",
+          "minutes": 10,
+          "kind": "film",
+          "opens": "The Holy Spirit through the Bible"
+        },
+        {
+          "n": 3,
+          "title": "Pentecost",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Acts 2, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "New birth, indwelling and assurance",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Regeneration, in the Study Bible"
+        },
+        {
+          "n": 5,
+          "title": "The fruit of the Spirit",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Galatians 5, passage by passage"
+        },
+        {
+          "n": 6,
+          "title": "The gifts of the Spirit",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The gifts of the Spirit, in the Study Bible"
+        },
+        {
+          "n": 7,
+          "title": "The people of God and the body of Christ",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The church, in the Study Bible"
+        },
+        {
+          "n": 8,
+          "title": "The marks of a true church",
+          "minutes": 10,
+          "kind": "theology",
+          "opens": "What is the church?"
+        },
+        {
+          "n": 9,
+          "title": "Baptism and the Lord's Supper",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Baptism and the Lord's Supper, in the Study Bible"
+        },
+        {
+          "n": 10,
+          "title": "Church government and membership",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Leadership in the church, in the Study Bible"
+        },
+        {
+          "n": 11,
+          "title": "The church's mission",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Mission, in the Study Bible"
+        }
+      ]
+    },
+    {
+      "slug": "doctrine-last-things",
+      "title": "The last things",
+      "for": "I want to know what happens at the end",
+      "road": null,
+      "subtitle": "Ten sessions on the Christian hope, from death and the waiting after it through Christ's return, the resurrection, judgment, hell and the new creation, to speaking of hope to someone who grieves.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "chapter",
+        "compare",
+        "creed",
+        "doctrine",
+        "essay",
+        "film",
+        "help",
+        "howto",
+        "life",
+        "reading-guide",
+        "story",
+        "study-tool",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Death",
+          "minutes": 10,
+          "kind": "life",
+          "opens": "Facing death"
+        },
+        {
+          "n": 2,
+          "title": "Between death and the resurrection",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The intermediate state, in the Study Bible"
+        },
+        {
+          "n": 3,
+          "title": "The return of Christ",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The return of Christ, in the Study Bible"
+        },
+        {
+          "n": 4,
+          "title": "The resurrection of the body",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The resurrection, in the Study Bible"
+        },
+        {
+          "n": 5,
+          "title": "The millennium",
+          "minutes": 10,
+          "kind": "theology",
+          "opens": "How does it end?"
+        },
+        {
+          "n": 6,
+          "title": "The judgment",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The judgment, in the Study Bible"
+        },
+        {
+          "n": 7,
+          "title": "Hell",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Hell, in the Study Bible"
+        },
+        {
+          "n": 8,
+          "title": "Heaven and the new creation",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Revelation 21, passage by passage"
+        },
+        {
+          "n": 9,
+          "title": "Hope, and how it shapes life now",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Hope, in the Study Bible"
+        },
+        {
+          "n": 10,
+          "title": "Speaking of hope to someone who is grieving",
+          "minutes": 10,
+          "kind": "help",
+          "opens": "Find Help: grief"
+        }
+      ]
+    },
+    {
       "slug": "new-testament",
       "title": "The New Testament, section by section",
       "for": "I want to understand the New Testament",
@@ -2485,6 +4430,109 @@
       ]
     },
     {
+      "slug": "doctrine-christ",
+      "title": "The person and work of Christ",
+      "for": "I want to know who Jesus is and what he did",
+      "road": null,
+      "subtitle": "Eleven sessions on who Jesus is and what he did, from the promise of the Messiah to his return, so you can state each doctrine, trace it to Scripture and explain it to someone else.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "chapter",
+        "creed",
+        "doctrine",
+        "essay",
+        "film",
+        "howto",
+        "psalms",
+        "reading-guide",
+        "study-tool",
+        "theology",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "The promise of the Messiah",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The Messiah, in the Study Bible"
+        },
+        {
+          "n": 2,
+          "title": "The incarnation and the virgin birth",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The incarnation, in the Study Bible"
+        },
+        {
+          "n": 3,
+          "title": "Fully God: the New Testament evidence",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Did Jesus claim to be God?"
+        },
+        {
+          "n": 4,
+          "title": "Fully man: temptation, weakness and growth",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Hebrews 4, passage by passage"
+        },
+        {
+          "n": 5,
+          "title": "One person in two natures",
+          "minutes": 10,
+          "kind": "theology",
+          "opens": "Who is Jesus?"
+        },
+        {
+          "n": 6,
+          "title": "Prophet, priest and king",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Christ's three offices, in the Study Bible"
+        },
+        {
+          "n": 7,
+          "title": "The cross: how the pictures fit together",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "The atonement, in the Study Bible"
+        },
+        {
+          "n": 8,
+          "title": "The resurrection as event",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "The appearances and the alternatives"
+        },
+        {
+          "n": 9,
+          "title": "The ascension and his present reign",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Christ's ascension and reign, in the Study Bible"
+        },
+        {
+          "n": 10,
+          "title": "His return",
+          "minutes": 10,
+          "kind": "doctrine",
+          "opens": "Christ's return, in the Study Bible"
+        },
+        {
+          "n": 11,
+          "title": "Explaining Jesus to someone who admires him",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Was Jesus just a good teacher?"
+        }
+      ]
+    },
+    {
       "slug": "big-story",
       "title": "The whole Bible as one story",
       "for": "I've never read the Bible",
@@ -2659,6 +4707,167 @@
           "minutes": 15,
           "kind": "explorer",
           "opens": "Paul's travels"
+        }
+      ]
+    },
+    {
+      "slug": "family-hard-times",
+      "title": "When a family goes through hard things",
+      "for": "Our family is in a hard season",
+      "road": null,
+      "subtitle": "Eight sessions for a family in a hard season: a death, serious illness, divorce and two homes, a move, money trouble, a child who is struggling, conflict at home, and the hope a family can hold together.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "catechism",
+        "chapter",
+        "devotion",
+        "doctrine",
+        "film",
+        "guide",
+        "help",
+        "howto",
+        "life",
+        "psalms",
+        "story",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "Talking to children about death",
+          "minutes": 10,
+          "kind": "film",
+          "opens": "What happens when we die?"
+        },
+        {
+          "n": 2,
+          "title": "Serious illness in the family",
+          "minutes": 10,
+          "kind": "help",
+          "opens": "I've been given a hard diagnosis"
+        },
+        {
+          "n": 3,
+          "title": "Divorce and two homes",
+          "minutes": 10,
+          "kind": "help",
+          "opens": "My marriage has ended"
+        },
+        {
+          "n": 4,
+          "title": "Moving and loss",
+          "minutes": 10,
+          "kind": "wisdom",
+          "opens": "Moving and Relocation"
+        },
+        {
+          "n": 5,
+          "title": "Money trouble",
+          "minutes": 10,
+          "kind": "help",
+          "opens": "Money is a weight on me"
+        },
+        {
+          "n": 6,
+          "title": "A child who is struggling",
+          "minutes": 10,
+          "kind": "howto",
+          "opens": "How to Help an Anxious Child"
+        },
+        {
+          "n": 7,
+          "title": "Conflict and repair at home",
+          "minutes": 10,
+          "kind": "life",
+          "opens": "How Do You Handle Conflict and Truly Reconcile?"
+        },
+        {
+          "n": 8,
+          "title": "Hope a family can hold together",
+          "minutes": 10,
+          "kind": "chapter",
+          "opens": "Romans 8, passage by passage"
+        }
+      ]
+    },
+    {
+      "slug": "teens-hard-things",
+      "title": "When life gets hard",
+      "for": "I'm a teenager going through something",
+      "road": null,
+      "subtitle": "Eight short sessions for a teenager carrying something heavy: a death, parents splitting up, being bullied, school pressure, feeling low, having hurt someone, God's silence, and hope that holds.",
+      "minutes": 5,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "chapter",
+        "film",
+        "help",
+        "howto",
+        "life",
+        "psalms",
+        "tool",
+        "track",
+        "wisdom"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "When someone you love dies",
+          "minutes": 6,
+          "kind": "film",
+          "opens": "What happens when we die?"
+        },
+        {
+          "n": 2,
+          "title": "When your parents split up",
+          "minutes": 6,
+          "kind": "psalms",
+          "opens": "Pray Psalm 27 slowly"
+        },
+        {
+          "n": 3,
+          "title": "Being bullied or left out",
+          "minutes": 6,
+          "kind": "chapter",
+          "opens": "Psalm 55, passage by passage"
+        },
+        {
+          "n": 4,
+          "title": "Failure and pressure at school",
+          "minutes": 6,
+          "kind": "life",
+          "opens": "Why Do We Measure Ourselves by Success and Failure?"
+        },
+        {
+          "n": 5,
+          "title": "Feeling low for a long time",
+          "minutes": 6,
+          "kind": "help",
+          "opens": "I feel empty, and I don't know why"
+        },
+        {
+          "n": 6,
+          "title": "When you've hurt yourself or someone else",
+          "minutes": 6,
+          "kind": "help",
+          "opens": "Find Help"
+        },
+        {
+          "n": 7,
+          "title": "When God feels silent",
+          "minutes": 6,
+          "kind": "film",
+          "opens": "Why does God seem silent sometimes?"
+        },
+        {
+          "n": 8,
+          "title": "Hope that's real",
+          "minutes": 6,
+          "kind": "film",
+          "opens": "The resurrection"
         }
       ]
     },
@@ -2998,6 +5207,102 @@
           "minutes": 6,
           "kind": "life",
           "opens": "What Does It Mean to Be a Disciple of Jesus?"
+        }
+      ]
+    },
+    {
+      "slug": "why-we-believe",
+      "title": "Why we believe it: the reasons",
+      "for": "I want to know why it's true",
+      "road": null,
+      "subtitle": "Ten sessions that build the cumulative case for the Christian faith, from what faith is to the resurrection, so that you can state the reasons in your own words, with gentleness and respect.",
+      "minutes": 10,
+      "leader": true,
+      "kinds": [
+        "answer",
+        "case",
+        "chapter",
+        "creed",
+        "doctrine",
+        "essay",
+        "film",
+        "history",
+        "reading-guide",
+        "skeptics",
+        "theology",
+        "tool",
+        "track"
+      ],
+      "sessions": [
+        {
+          "n": 1,
+          "title": "What faith is, and what it isn't",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Is believing anything on faith irrational?"
+        },
+        {
+          "n": 2,
+          "title": "Why there is something rather than nothing",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Why is there something rather than nothing?"
+        },
+        {
+          "n": 3,
+          "title": "Design and the order of the world",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Do the Big Bang and fine-tuning point to God?"
+        },
+        {
+          "n": 4,
+          "title": "The moral law",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Isn't morality just evolved instinct or social agreement?"
+        },
+        {
+          "n": 5,
+          "title": "Can the Gospels be trusted?",
+          "minutes": 10,
+          "kind": "answer",
+          "opens": "Why would anyone trust the Bible?"
+        },
+        {
+          "n": 6,
+          "title": "What Jesus claimed",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Did Jesus claim to be God?"
+        },
+        {
+          "n": 7,
+          "title": "The resurrection and the best explanation",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Couldn't the Easter experiences have a natural explanation?"
+        },
+        {
+          "n": 8,
+          "title": "The church across cultures and centuries",
+          "minutes": 10,
+          "kind": "history",
+          "opens": "The church since 1900: how Christianity moved south and east"
+        },
+        {
+          "n": 9,
+          "title": "Why Christianity and not another faith",
+          "minutes": 10,
+          "kind": "case",
+          "opens": "Are all religions basically the same?"
+        },
+        {
+          "n": 10,
+          "title": "Putting it together: your own case",
+          "minutes": 15,
+          "kind": "tool",
+          "opens": "Test the Case"
         }
       ]
     },

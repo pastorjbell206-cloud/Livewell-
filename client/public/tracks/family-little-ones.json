@@ -414,9 +414,9 @@
         },
         {
           "kind": "track",
-          "label": "The tracks",
-          "href": "/tracks",
-          "why": "When your child turns seven, take the next track in Faith at Home, Faith with children, ages 7 to 11, for the years of questions."
+          "label": "Faith with children, ages 7 to 11",
+          "href": "/tracks/family-children",
+          "why": "The next track on the road, in Faith at Home: Faith with children, ages 7 to 11. Take it up when this one has settled."
         }
       ],
       "question": "When your child asks where God is, what do you most want them to hear in your answer?",

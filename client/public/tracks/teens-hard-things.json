@@ -446,9 +446,9 @@
         },
         {
           "kind": "track",
-          "label": "The tracks",
-          "href": "/tracks",
-          "why": "The next track in this program is Talking about your faith with friends: what you believe, why you believe it, and how to say it."
+          "label": "Talking about your faith with friends",
+          "href": "/tracks/teens-explaining",
+          "why": "The next track on the road, in Faith for Teenagers: Talking about your faith with friends. Take it up when this one has settled."
         }
       ],
       "question": "What's the difference between hoping things get better and the hope this session describes?",

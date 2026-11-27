@@ -538,9 +538,9 @@
         },
         {
           "kind": "track",
-          "label": "The tracks",
-          "href": "/tracks",
-          "why": "Where to go next in Explain It: Explaining the faith to others, on telling the gospel itself plainly to someone who asks."
+          "label": "Explaining the faith to others",
+          "href": "/tracks/explaining-the-faith",
+          "why": "The next track on the road, in Explain It: Explaining the faith to others. Take it up when this one has settled."
         }
       ],
       "question": "Who is one person you could have an unhurried conversation with about faith, and what question would you ask them first?",

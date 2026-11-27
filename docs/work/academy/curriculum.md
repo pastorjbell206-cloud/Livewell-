@@ -1,19 +1,22 @@
 # The LiveWell Academy: the curriculum
 
-Built on 2026-11-27, at James's request: "I want someone to be able to go from not understanding the Bible to being able to fully understand the Bible. I want there to be multiple tracks. I want there to be certificates. Let people know that's unaccredited."
+James, 2026-11-27: "I want someone to be able to go from not understanding the Bible to being able to fully understand the Bible. I want there to be multiple tracks. I want there to be certificates. Let people know that's unaccredited." And the same day: "from the very just to start to read the Bible ... to really being able to fully understand the Bible ... understand what we believe, why we believe it, and to be able to explain it to other people."
 
-**10 programs, 33 tracks, 334 sessions, about 63 hours of guided study.** Every session opens a real page of the site (the Study Bible, the films, the doctrine studies, the history course, the Honest Answers and the rest) and ends with one question, one thing to do, one verse and a guide for a group. Every track has a leader's guide and prints whole.
+**One road in 5 levels, 13 programs, 57 tracks, 570 sessions, about 108 hours of guided study.** Every session opens a real page of the site and ends with one question, one thing to do, one verse and a guide for a group. Every track has a leader's guide and prints whole. Certificates for every track, every program and the whole road; all unaccredited.
 
-This file was written from `client/public/academy/programs.json` and the tracks themselves on 2026-11-27; when a track changes, the track is the source. The brief for writing a track is `writing-brief.md` beside this file. The rules a track keeps are `scripts/lib/tracks.mjs`; the rules a program keeps are `scripts/validate-academy.mjs`.
+This file was written from `client/public/academy/programs.json` and the tracks themselves; when a track changes, the track is the source. `writing-brief.md` beside it is the brief for writing a track; `scripts/lib/tracks.mjs` and `scripts/validate-academy.mjs` are the rules.
 
-## How it works
+## The road
 
-- **The road.** Eight programs in order, from the first questions to a whole life shaped by Scripture; two more (Faith for Teenagers, Faith at Home) stand beside it for particular readers. A reader begins at the first program that fits.
-- **Progress.** Kept on the reader's device, in the tracks' own record (`livewell-progress-tracks-v1`). No account, nothing sent.
-- **"What I've learned"** (`/academy/learned`) gathers every session done and the reader's own answers.
-- **Certificates.** A finished track, and a finished program, each print a certificate with the name the reader types. Every certificate says on its face that it is unaccredited: a record of personal study, not academic credit, a degree, a diploma or a credential for ordination or ministry. Because there are no accounts, a certificate is not verified by the site; it records what the reader marked done on their own device.
+1. **Start**: First questions, and first steps for someone new to faith. (Exploring Christianity, New to Faith)
+2. **Read the whole Bible**: The Bible as one story, and how to study any page of it for yourself. (The Bible's Big Story, How to Study the Bible)
+3. **Know the books**: Eleven books of the Bible read closely, chapter by chapter. (Deep in the Old Testament, Deep in the New Testament)
+4. **Know what we believe, and why**: The creed, every major doctrine in depth, and the church's long story. (What Christians Believe, Theology in Depth, Church History)
+5. **Live it, and explain it**: The faith carried into ordinary life, and the reasons for it given to others. (Living It, Explain It)
 
-## 1. Exploring Christianity (`/academy/exploring`)
+Beside the road: Faith for Teenagers, Faith at Home.
+
+## Level 1: Exploring Christianity (`/academy/exploring`)
 
 *Not sure any of it is true? Start here.* You will be able to say what Christians actually claim about Jesus, weigh the evidence for and against, and give the strongest objections a fair hearing. 3 tracks, 32 sessions, about 6 hours.
 
@@ -70,7 +73,7 @@ For: "I have objections I need answered". Ten sessions on the objections that ke
 | 9 | Is faith just wishful thinking? | [Is faith just wishful thinking?](/answers/is-faith-just-wishful-thinking) | Which do you want to be true, that God exists or that he doesn't, and how might that want be shaping what you think? |
 | 10 | If you keep looking | [John 1, passage by passage](/study/bible/john/1#plain) | Which of your objections are reasons, which are wounds, and which are both? |
 
-## 2. New to Faith (`/academy/new-to-faith`)
+## Level 1: New to Faith (`/academy/new-to-faith`)
 
 *Just started following Jesus, or coming back? Start here.* You will know the gospel well enough to explain it, have the habits of prayer and Bible reading in place, and know what to do when you fail or doubt. 3 tracks, 34 sessions, about 6 hours.
 
@@ -129,7 +132,7 @@ For: "I've stepped back from faith". Twelve short sessions for someone who has s
 | 11 | The question you couldn't ask | [The case for the faith](/questions) | What is the question you were never allowed to ask, and what would count as an honest answer to it? |
 | 12 | What comes after | [What happens after deconstruction?](/answers/what-happens-after-deconstruction) | Looking back over these sessions, what are you taking apart, and what, if anything, are you digging toward? |
 
-## 3. The Bible's Big Story (`/academy/big-story`)
+## Level 2: The Bible's Big Story (`/academy/big-story`)
 
 *Never read the Bible, or only in pieces? Start here.* You will be able to tell the whole Bible as one story, from creation to new creation, and place any book or passage inside it. 3 tracks, 31 sessions, about 5 hours.
 
@@ -185,7 +188,7 @@ For: "I want to understand the New Testament". Ten short sessions on the New Tes
 | 9 | Revelation, read as its first readers heard it | [Reading Revelation and Daniel](/study/bible/guides/reading-apocalyptic) | What would Revelation have meant to a believer in a city that demanded worship of the emperor? |
 | 10 | The canon: how the twenty-seven were recognized | [How the Books Were Chosen](/study/bible/guides/canon) | Does it matter to you whether the church created the canon or recognized it, and why? |
 
-## 4. How to Study the Bible (`/academy/study`)
+## Level 2: How to Study the Bible (`/academy/study`)
 
 *Want to read a passage for yourself and understand it?* You will be able to study any passage on your own: observe it, read it as the kind of writing it is, place it in its world, follow its words, and apply it honestly. 4 tracks, 31 sessions, about 6 hours.
 
@@ -248,9 +251,102 @@ For: "I want to dig deeper into a passage". Six short sessions on the tools of c
 | 5 | Sitting with a hard passage | [Hard passages](/study/hard-passages) | Which passage in the Bible troubles you most, and have you ever sat with it long enough to read it in its own chapter? |
 | 6 | A habit of study for life | [Plans for reading the Bible](/study/plans) | What would a realistic rhythm of study look like in your actual week, and what usually gets in its way? |
 
-## 5. Deep in One Book (`/academy/books`)
+## Level 3: Deep in the Old Testament (`/academy/ot-books`)
 
-*Ready to know one book of the Bible well?* You will have read five books of the Bible closely, chapter by chapter, from the first story of Genesis to Paul's letter to the Romans. 5 tracks, 66 sessions, about 17 hours.
+*Ready to know the Old Testament's great books well?* You will have read five books of the Old Testament closely: the beginning, the exodus, the prayers, the wisdom and the prophet who saw the servant. 5 tracks, 54 sessions, about 14 hours.
+
+### Deep in one: Genesis (`/tracks/genesis`)
+
+For: "I want to know Genesis well". Twelve sessions through the book of beginnings, section by section: creation, the fall, the flood, Abraham, Jacob and Joseph, read with the Study Bible's notes.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | In the beginning | [Genesis 1, passage by passage](/study/bible/genesis/1#plain) | Genesis 1 tells you that every person you meet bears the image of God. Who in your week is hardest for you to see that way? |
+| 2 | The fall | [Genesis 3, passage by passage](/study/bible/genesis/3#plain) | Where do you recognise in yourself the instinct to hide, from God or from the people closest to you? |
+| 3 | Cain, the flood, and a rainbow | [Genesis 6, passage by passage](/study/bible/genesis/6#plain) | God's verdict on the human heart is the same before the flood and after it. Why do you think the second time it leads to a promise? |
+| 4 | Babel and the call of Abram | [Genesis 12, passage by passage](/study/bible/genesis/12#plain) | Babel tried to make a name for itself and Abram was given one. Where are you trying to make a name for yourself? |
+| 5 | Covenant under the stars | [Genesis 15, passage by passage](/study/bible/genesis/15#plain) | Abram was counted righteous for trusting a promise he could not yet see kept. What promise of God do you find hardest to trust? |
+| 6 | Hagar, Ishmael and Sodom | [Genesis 16, passage by passage](/study/bible/genesis/16#plain) | Hagar was seen by God when no one else in the household saw her. Who in your world is going unseen? |
+| 7 | The binding of Isaac | [Genesis 22, the guided study](/study/bible/genesis/22?study=walk) | What do you find hardest in this chapter, and what would you want to ask Abraham on the way down the mountain? |
+| 8 | Jacob's deceit, and the ladder | [Genesis 27, passage by passage](/study/bible/genesis/27#plain) | God met Jacob on the night he was running from what he had done. What would it mean for God to meet you at your worst rather than your best? |
+| 9 | Jacob wrestles | [Genesis 32, passage by passage](/study/bible/genesis/32#plain) | Jacob had to say his own name before he received a new one. What would you have to admit about yourself before God? |
+| 10 | Joseph sold, and in Egypt | [Genesis 37, passage by passage](/study/bible/genesis/37#plain) | Genesis says the LORD was with Joseph in a prison. Where have you been tempted to decide God was absent? |
+| 11 | Joseph and his brothers | [Genesis 45, passage by passage](/study/bible/genesis/45#plain) | Joseph named the wrong before he forgave it. Is there a wrong done to you that you have not yet been able to name honestly? |
+| 12 | You meant it for evil | [Genesis 50, passage by passage](/study/bible/genesis/50#plain) | Joseph could say God meant it for good only years later. What in your life are you still too close to see? |
+
+### Deep in one: Exodus (`/tracks/exodus`)
+
+For: "I want to know Exodus well". Twelve sessions through the book of the great rescue, section by section: the bush, the plagues, the Passover, the sea, Sinai, the calf and the glory filling the tent.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Slavery, and a baby in the Nile | [Exodus 1, passage by passage](/study/bible/exodus/1#plain) | Exodus says God heard, remembered, saw and took notice long before anything changed. What difference does it make to know that God hears before he acts? |
+| 2 | The burning bush and the name | [Study Exodus 3, step by step](/study/bible/exodus/3?study=walk) | Moses asked who he was, and God answered with who God is. Which of your own objections to God's call would that answer change? |
+| 3 | The plagues and Pharaoh's hard heart | [Exodus 9, passage by passage](/study/bible/exodus/9#plain) | When have you seen a heart, perhaps your own, grow harder each time relief came and the pressure lifted? |
+| 4 | Passover | [Exodus 12, passage by passage](/study/bible/exodus/12#plain) | Passover was kept by telling the story to children who asked. Who in your life is asking what your faith means, and what would you tell them? |
+| 5 | Through the sea | [Exodus 14, passage by passage](/study/bible/exodus/14#plain) | Israel was told to be still while God fought for them. Where are you trying to win a fight that is not yours to win? |
+| 6 | Manna, water and Amalek | [Exodus 16, passage by passage](/study/bible/exodus/16#plain) | Manna could not be stored up. What are you trying to store up so that you won't need to trust God tomorrow? |
+| 7 | Sinai and the covenant | [Exodus 19, passage by passage](/study/bible/exodus/19#plain) | Israel was rescued before it was given any command. How would your obedience change if you believed that order was true for you? |
+| 8 | The Ten Commandments | [Study Exodus 20, step by step](/study/bible/exodus/20?study=walk) | If the commandments describe the life of a freed people, which one shows you most clearly where you are still living like a slave? |
+| 9 | The book of the covenant, in its world | [Exodus 21, passage by passage](/study/bible/exodus/21#plain) | Israel's laws for strangers rested on the memory of being strangers. What memory of your own should shape how you treat people with less power? |
+| 10 | The tabernacle plans | [Exodus 25, passage by passage](/study/bible/exodus/25#plain) | God gave his people a tent so he could live among them. What would change in an ordinary week if you believed he means to dwell with you? |
+| 11 | The golden calf | [Exodus 32, passage by passage](/study/bible/exodus/32#plain) | The calf was a god the people could manage. What have you shaped God into so that he would be easier to live with? |
+| 12 | The glory passes by, and fills the tent | [Exodus 34, passage by passage](/study/bible/exodus/34#plain) | Exodus ends with God present and the people still in the wilderness. What does it mean to you that God's presence comes before the promised land? |
+
+### Deep in one: the Psalms (`/tracks/psalms`)
+
+For: "I want to pray the Psalms". Ten sessions in the Bible's own prayer book: how its five books are arranged, how its poetry works, and how to pray its praise, lament, confession and curses with Christ.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Psalm 1 and the two ways | [Psalm 1, passage by passage](/study/bible/psalms/1#plain) | Psalm 1 says the person who flourishes is the one whose roots go down into God's word. Where are your roots going down now? |
+| 2 | Psalm 2 and the king | [Psalm 2, passage by passage](/study/bible/psalms/2#plain) | Psalm 2 says the nations rage and God is not anxious about it. What would change in you if you believed that this week? |
+| 3 | Psalm 8 and how Hebrew poetry works | [Psalm 8, passage by passage](/study/bible/psalms/8#plain) | Psalm 8 holds together how small you are and how much honour God gives you. Which of the two do you find harder to believe? |
+| 4 | Psalm 13 and lament | [Psalm 13, passage by passage](/study/bible/psalms/13#plain) | If you began a prayer to God with How long, what would come after those two words? |
+| 5 | Psalm 23 | [Psalm 23, passage by passage](/study/bible/psalms/23#plain) | Psalm 23 begins speaking to God only in the valley. Where is your valley now, and what would it mean to speak to him there? |
+| 6 | Psalm 51 and confession | [Psalm 51, passage by passage](/study/bible/psalms/51#plain) | Psalm 51 asks for a clean heart, not just a clean record. What is the difference in your own life? |
+| 7 | Psalms 42 and 43, the downcast soul | [Psalm 42, passage by passage](/study/bible/psalms/42#plain) | The psalmist speaks to his own soul instead of only listening to it. What would you say to yours this week? |
+| 8 | A hard psalm: Psalm 137 | [Psalm 137, passage by passage](/study/bible/psalms/137#plain) | Psalm 137 brings rage to God instead of acting on it. What anger are you carrying that you have never said to him? |
+| 9 | Psalm 90 and our days | [Psalm 90, passage by passage](/study/bible/psalms/90#plain) | What would change in how you spend this week if you numbered your days the way Psalm 90 asks? |
+| 10 | Psalms 145 to 150, the last praise | [Psalm 145, passage by passage](/study/bible/psalms/145#plain) | The Psalter ends in praise after a hundred and fifty psalms of every kind. What would it take for your praise to hold all you have lived? |
+
+### Deep in one: Proverbs (`/tracks/proverbs`)
+
+For: "I want wisdom for daily life". Eight sessions in the Bible's book of wisdom for ordinary days: what a proverb is, the fear of the LORD, words, work, money, friends and anger, and the wisdom that has a face.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | What a proverb is, and what it is not | [Reading the wisdom books](/study/bible/guides/reading-wisdom) | Is there a proverb, from the Bible or anywhere else, that you have treated as a promise, and what happened when life didn't follow it? |
+| 2 | Proverbs 1 and the fear of the LORD | [Proverbs 1, passage by passage](/study/bible/proverbs/1#plain) | If the fear of the LORD is the beginning of knowledge, where in your ordinary week does it most need to begin? |
+| 3 | Proverbs 8 and 9, Lady Wisdom and Lady Folly | [Proverbs 8, passage by passage](/study/bible/proverbs/8#plain) | Wisdom and Folly both invite you to dinner. Which invitation sounds more appealing to you this week, and why? |
+| 4 | Words and the tongue | [Proverbs 18, passage by passage](/study/bible/proverbs/18#plain) | Whose words have given you life, and whose words do you need to stop repeating? |
+| 5 | Work and laziness | [Proverbs 6, passage by passage](/study/bible/proverbs/6#plain) | Are you more tempted to be the slacker or the person who can never stop working, and what does each one trust instead of God? |
+| 6 | Money and generosity | [Proverbs 30, passage by passage](/study/bible/proverbs/30#plain) | Agur prays for neither poverty nor riches. Could you pray that prayer honestly, and what would make it hard? |
+| 7 | Friends, anger and pride | [Proverbs 27, passage by passage](/study/bible/proverbs/27#plain) | Who in your life has loved you enough to wound you with the truth, and when did you last do that for someone? |
+| 8 | Proverbs 31 and the wisdom that points to Christ | [Proverbs 31, passage by passage](/study/bible/proverbs/31#plain) | Who have you known whose ordinary life made wisdom visible, and what did you learn from watching them? |
+
+### Deep in one: Isaiah (`/tracks/isaiah`)
+
+For: "I want to understand Isaiah". Twelve sessions through the grandest of the prophets: the holy God, Immanuel, the nations, comfort for exiles, the suffering servant and new heavens and a new earth.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Isaiah's world and the book's three settings | [Isaiah's introduction in the Study Bible](/study/bible/isaiah) | Isaiah speaks into three different moments in his people's life. Which of them, threat, exile or waiting, feels most like the moment you are in? |
+| 2 | The vineyard and the call | [Isaiah 6, passage by passage](/study/bible/isaiah/6#plain) | Isaiah saw God's holiness and at once saw his own uncleanness. Why do you think the two came together? |
+| 3 | Immanuel, in Ahaz's day and in Matthew's | [Isaiah 7, passage by passage](/study/bible/isaiah/7#plain) | Ahaz refused a sign because he had already chosen his own way out. Where are you tempted to ask God for help after you have already decided? |
+| 4 | The branch and the peaceable kingdom | [Isaiah 11, passage by passage](/study/bible/isaiah/11#plain) | Isaiah's king is judged by how the poor fare under his reign. What would change if that were the test you used for yourself? |
+| 5 | The nations under judgment | [Isaiah 19, passage by passage](/study/bible/isaiah/19#plain) | Isaiah names Egypt and Assyria as God's people. Which nation or group would it most unsettle you to hear God call his own? |
+| 6 | The little apocalypse | [Isaiah 25, passage by passage](/study/bible/isaiah/25#plain) | Isaiah pictures death as a shroud over all peoples that God will swallow. What would it change to believe that about someone you have lost? |
+| 7 | Hezekiah and the Assyrian siege | [Isaiah 37, passage by passage](/study/bible/isaiah/37#plain) | Hezekiah spread the threatening letter before God. What letter, message or worry would you spread before him this week? |
+| 8 | Comfort for the exiles | [Isaiah 40, passage by passage](/study/bible/isaiah/40#plain) | The exiles believed God had forgotten them. Where do you need to hear the first words of Isaiah 40 spoken to you? |
+| 9 | The servant songs | [Isaiah 42, passage by passage](/study/bible/isaiah/42#plain) | The servant will not break a bruised reed. Who around you is bruised or barely burning, and how would the servant treat them? |
+| 10 | The suffering servant | [Study Isaiah 53, step by step](/study/bible/isaiah/53?study=walk) | The speakers in Isaiah 53 confess that they misjudged the servant. What would it mean for you to say we in that song? |
+| 11 | Come to the waters | [Isaiah 55, passage by passage](/study/bible/isaiah/55#plain) | What have you been spending your money and effort on that is not bread, and what would it mean to come to the waters instead? |
+| 12 | New heavens and a new earth | [Isaiah 65, passage by passage](/study/bible/isaiah/65#plain) | Isaiah ends with both a new creation and a warning. Why do you think the book refuses to leave out either one? |
+
+## Level 3: Deep in the New Testament (`/academy/books`)
+
+*Ready to know the Gospels, Acts and the letters well?* You will have read six books of the New Testament closely, chapter by chapter, from Mark's Gospel to Revelation. 6 tracks, 83 sessions, about 21 hours.
 
 ### Deep in one: the Gospel of Mark (`/tracks/mark`)
 
@@ -294,41 +390,26 @@ For: "I want to know John's Gospel well". Twelve sessions through all twenty-one
 | 11 | The empty tomb, and Thomas | [John 20, passage by passage](/study/bible/john/20#plain) | Jesus did not scold Thomas for wanting evidence, and he still called blessed those who believe without seeing. What would it take for you to say my Lord and my God? |
 | 12 | Breakfast by the sea, and Peter restored | [John 21, passage by passage](/study/bible/john/21#plain) | Jesus restored Peter at a fire like the one where he failed. What failure of yours do you think Jesus means to meet you at? |
 
-### Deep in one: Genesis (`/tracks/genesis`)
+### Deep in one: Acts (`/tracks/acts`)
 
-For: "I want to know Genesis well". Twelve sessions through the book of beginnings, section by section: creation, the fall, the flood, Abraham, Jacob and Joseph, read with the Study Bible's notes.
-
-| # | Session | Opens | The question |
-|---|---|---|---|
-| 1 | In the beginning | [Genesis 1, passage by passage](/study/bible/genesis/1#plain) | Genesis 1 tells you that every person you meet bears the image of God. Who in your week is hardest for you to see that way? |
-| 2 | The fall | [Genesis 3, passage by passage](/study/bible/genesis/3#plain) | Where do you recognise in yourself the instinct to hide, from God or from the people closest to you? |
-| 3 | Cain, the flood, and a rainbow | [Genesis 6, passage by passage](/study/bible/genesis/6#plain) | God's verdict on the human heart is the same before the flood and after it. Why do you think the second time it leads to a promise? |
-| 4 | Babel and the call of Abram | [Genesis 12, passage by passage](/study/bible/genesis/12#plain) | Babel tried to make a name for itself and Abram was given one. Where are you trying to make a name for yourself? |
-| 5 | Covenant under the stars | [Genesis 15, passage by passage](/study/bible/genesis/15#plain) | Abram was counted righteous for trusting a promise he could not yet see kept. What promise of God do you find hardest to trust? |
-| 6 | Hagar, Ishmael and Sodom | [Genesis 16, passage by passage](/study/bible/genesis/16#plain) | Hagar was seen by God when no one else in the household saw her. Who in your world is going unseen? |
-| 7 | The binding of Isaac | [Genesis 22, the guided study](/study/bible/genesis/22?study=walk) | What do you find hardest in this chapter, and what would you want to ask Abraham on the way down the mountain? |
-| 8 | Jacob's deceit, and the ladder | [Genesis 27, passage by passage](/study/bible/genesis/27#plain) | God met Jacob on the night he was running from what he had done. What would it mean for God to meet you at your worst rather than your best? |
-| 9 | Jacob wrestles | [Genesis 32, passage by passage](/study/bible/genesis/32#plain) | Jacob had to say his own name before he received a new one. What would you have to admit about yourself before God? |
-| 10 | Joseph sold, and in Egypt | [Genesis 37, passage by passage](/study/bible/genesis/37#plain) | Genesis says the LORD was with Joseph in a prison. Where have you been tempted to decide God was absent? |
-| 11 | Joseph and his brothers | [Genesis 45, passage by passage](/study/bible/genesis/45#plain) | Joseph named the wrong before he forgave it. Is there a wrong done to you that you have not yet been able to name honestly? |
-| 12 | You meant it for evil | [Genesis 50, passage by passage](/study/bible/genesis/50#plain) | Joseph could say God meant it for good only years later. What in your life are you still too close to see? |
-
-### Deep in one: the Psalms (`/tracks/psalms`)
-
-For: "I want to pray the Psalms". Ten sessions in the Bible's own prayer book: how its five books are arranged, how its poetry works, and how to pray its praise, lament, confession and curses with Christ.
+For: "I want to know how the church began". Fourteen sessions through all twenty-eight chapters of Acts: from a room in Jerusalem to a rented house in Rome, and how a frightened few became a church of every nation.
 
 | # | Session | Opens | The question |
 |---|---|---|---|
-| 1 | Psalm 1 and the two ways | [Psalm 1, passage by passage](/study/bible/psalms/1#plain) | Psalm 1 says the person who flourishes is the one whose roots go down into God's word. Where are your roots going down now? |
-| 2 | Psalm 2 and the king | [Psalm 2, passage by passage](/study/bible/psalms/2#plain) | Psalm 2 says the nations rage and God is not anxious about it. What would change in you if you believed that this week? |
-| 3 | Psalm 8 and how Hebrew poetry works | [Psalm 8, passage by passage](/study/bible/psalms/8#plain) | Psalm 8 holds together how small you are and how much honour God gives you. Which of the two do you find harder to believe? |
-| 4 | Psalm 13 and lament | [Psalm 13, passage by passage](/study/bible/psalms/13#plain) | If you began a prayer to God with How long, what would come after those two words? |
-| 5 | Psalm 23 | [Psalm 23, passage by passage](/study/bible/psalms/23#plain) | Psalm 23 begins speaking to God only in the valley. Where is your valley now, and what would it mean to speak to him there? |
-| 6 | Psalm 51 and confession | [Psalm 51, passage by passage](/study/bible/psalms/51#plain) | Psalm 51 asks for a clean heart, not just a clean record. What is the difference in your own life? |
-| 7 | Psalms 42 and 43, the downcast soul | [Psalm 42, passage by passage](/study/bible/psalms/42#plain) | The psalmist speaks to his own soul instead of only listening to it. What would you say to yours this week? |
-| 8 | A hard psalm: Psalm 137 | [Psalm 137, passage by passage](/study/bible/psalms/137#plain) | Psalm 137 brings rage to God instead of acting on it. What anger are you carrying that you have never said to him? |
-| 9 | Psalm 90 and our days | [Psalm 90, passage by passage](/study/bible/psalms/90#plain) | What would change in how you spend this week if you numbered your days the way Psalm 90 asks? |
-| 10 | Psalms 145 to 150, the last praise | [Psalm 145, passage by passage](/study/bible/psalms/145#plain) | The Psalter ends in praise after a hundred and fifty psalms of every kind. What would it take for your praise to hold all you have lived? |
+| 1 | Wait for the promise | [Acts 1, passage by passage](/study/bible/acts/1#plain) | The disciples wanted a kingdom restored and were given a mission instead. What do you most want from God right now, and what might he be giving you in its place? |
+| 2 | Pentecost | [Acts 2, passage by passage](/study/bible/acts/2#plain) | Of the four things the first believers devoted themselves to, which is most missing from your own life, and why? |
+| 3 | A lame man walks, and a bold church | [Acts 3, passage by passage](/study/bible/acts/3#plain) | The council noticed that Peter and John had been with Jesus. What would someone notice about the company you keep? |
+| 4 | Ananias and Sapphira, and the council | [Acts 5, passage by passage](/study/bible/acts/5#plain) | Ananias and Sapphira wanted to be seen as more generous than they were. Where are you tempted to look better than you are? |
+| 5 | Stephen | [Acts 7, passage by passage](/study/bible/acts/7#plain) | Stephen died praying for the people killing him. Who is the person you find hardest to pray for, and what would it take to begin? |
+| 6 | Philip on the road south | [Acts 8, passage by passage](/study/bible/acts/8#plain) | The Ethiopian asked what was to prevent him. What do you think keeps people you know from coming near, and is any of it in the church? |
+| 7 | Saul on the Damascus road | [Acts 9, passage by passage](/study/bible/acts/9#plain) | Ananias was asked to welcome the person he most feared. Who would be your Saul, and what would it cost you to call them brother or sister? |
+| 8 | Peter in a Gentile house, and Peter in prison | [Acts 10, passage by passage](/study/bible/acts/10#plain) | Peter needed a vision three times to cross one line. What line in your own life would take that much for God to move you across? |
+| 9 | The first mission | [Acts 13, passage by passage](/study/bible/acts/13#plain) | Paul went back into the city that had just stoned him. What makes that courage rather than recklessness? |
+| 10 | The council in Jerusalem | [Acts 15, passage by passage](/study/bible/acts/15#plain) | The believers from Judea were sincere and wrong. What is one thing you have held sincerely that you later had to let go? |
+| 11 | Philippi and Thessalonica | [Acts 16, passage by passage](/study/bible/acts/16#plain) | Paul and Silas sang in prison at midnight. What do you think made that possible, and what would make it possible for you? |
+| 12 | Athens, Corinth and Ephesus | [Acts 17, passage by passage](/study/bible/acts/17#plain) | Paul began in Athens with what the Athenians already believed. What does the person you most want to reach already believe that you could begin with? |
+| 13 | Farewell, arrest and the trials | [Acts 20, passage by passage](/study/bible/acts/20#plain) | Paul told his story to crowds, councils, governors and a king, and kept coming back to the resurrection. Why do you think that was the point he would not give up? |
+| 14 | Shipwreck, and Rome | [Acts 27, passage by passage](/study/bible/acts/27#plain) | Acts ends with the story unfinished. What part of it do you think has been handed to you? |
 
 ### Deep in one: Paul's letter to the Romans (`/tracks/romans`)
 
@@ -353,7 +434,46 @@ For: "I want to understand Romans". Sixteen sessions, one for each chapter of Ro
 | 15 | Accept one another, and the road to Spain | [Romans 15, passage by passage](/study/bible/romans/15#plain) | Paul says to accept one another as Christ accepted you. Whom have you accepted only on your own terms? |
 | 16 | A church of names | [Romans 16, passage by passage](/study/bible/romans/16#plain) | Paul ends his greatest letter with a list of friends. Whose name would be on your list, and does anyone have yours on theirs? |
 
-## 6. What Christians Believe (`/academy/beliefs`)
+### Deep in one: Hebrews (`/tracks/hebrews`)
+
+For: "I want to see how Jesus fulfils the Old Testament". Thirteen sessions, one for each chapter of Hebrews: the angels, Moses, the priesthood and the sacrifices read in the light of Christ, and how to read the Old Testament the way this sermon does.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | God has spoken in his Son | [Hebrews 1, passage by passage](/study/bible/hebrews/1#plain) | Hebrews says God spoke in many ways and now has spoken in his Son. What difference does it make to read the Old Testament as a word that was leading somewhere? |
+| 2 | Do not drift; he became like us | [Hebrews 2, passage by passage](/study/bible/hebrews/2#plain) | Hebrews says Jesus frees those held all their lives by the fear of death. Where does that fear shape your choices, even quietly? |
+| 3 | Moses the servant, Jesus the Son | [Hebrews 3, passage by passage](/study/bible/hebrews/3#plain) | The wilderness generation had seen miracles and still hardened their hearts. What hardens a heart slowly, without anyone noticing? |
+| 4 | A rest that remains | [Hebrews 4, passage by passage](/study/bible/hebrews/4#plain) | Hebrews says the God who sees everything is also the high priest who sympathizes. Which of those two do you find harder to believe, and why? |
+| 5 | A high priest from among us | [Hebrews 5, passage by passage](/study/bible/hebrews/5#plain) | Jesus prayed with loud cries and tears and was heard. What does that tell you about the prayers you have been afraid to pray? |
+| 6 | The sharpest warning, and an anchor | [Hebrews 6, passage by passage](/study/bible/hebrews/6#plain) | The writer warns sharply and then says he is convinced of better things in your case. Which of those two do you most need to hear this week? |
+| 7 | A priest like Melchizedek | [Hebrews 7, passage by passage](/study/bible/hebrews/7#plain) | Jesus always lives to intercede for those who come to God through him. What would you want to know he is praying for you today? |
+| 8 | A better covenant | [Hebrews 8, passage by passage](/study/bible/hebrews/8#plain) | Jeremiah promised a law written on the heart. What is the difference between keeping a rule and having it written on you? |
+| 9 | Blood and a clean conscience | [Hebrews 9, passage by passage](/study/bible/hebrews/9#plain) | Hebrews says Christ's blood can cleanse a conscience. What would it mean for your conscience to be clean, not only quiet? |
+| 10 | Once for all, so draw near | [Hebrews 10, passage by passage](/study/bible/hebrews/10#plain) | Every other priest stood; this one sat down. What are you still trying to finish that Christ has already finished? |
+| 11 | By faith | [Hebrews 11, passage by passage](/study/bible/hebrews/11#plain) | Hebrews honours people who died without receiving what was promised. Whose faith in your own life looked like that? |
+| 12 | The race and the city | [Hebrews 12, passage by passage](/study/bible/hebrews/12#plain) | Hebrews says you have come to Zion, not Sinai. Which mountain does your faith feel like it stands at right now, and why? |
+| 13 | Outside the camp | [Hebrews 13, passage by passage](/study/bible/hebrews/13#plain) | The writer asks his readers to go to Jesus outside the camp. Where is the camp you are tempted to stay inside, and what would going out cost? |
+
+### Deep in one: Revelation (`/tracks/revelation`)
+
+For: "I want to understand Revelation". Twelve sessions in the Bible's last book: how apocalyptic writing works, the four ways of reading it, and the slain Lamb on the throne, heard first as its churches heard it.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | How to read Revelation | [Reading Revelation and Daniel](/study/bible/guides/reading-apocalyptic) | When you have heard Revelation talked about before, was it with dread, with fascination, or hardly at all, and what did that leave you thinking about the book? |
+| 2 | Revelation 1 and the vision of Christ | [Revelation 1, passage by passage](/study/bible/revelation/1#plain) | The first thing Christ does in the book is touch a frightened man and speak to him. What would change if that were what you expected of him? |
+| 3 | Revelation 2 and four of the churches | [Revelation 2, passage by passage](/study/bible/revelation/2#plain) | Which of these four churches sounds most like yours, and which sounds most like you? |
+| 4 | Revelation 3 and the last three churches | [Revelation 3, passage by passage](/study/bible/revelation/3#plain) | Laodicea couldn't see its own poverty. What might you be unable to see about yourself because things are going well? |
+| 5 | Revelation 4 and 5, the throne and the Lamb | [Revelation 5, passage by passage](/study/bible/revelation/5#plain) | John expected a lion and saw a slain lamb. Where do you still expect God to win the way a lion would? |
+| 6 | Revelation 6 and 7, the seals | [Revelation 6, passage by passage](/study/bible/revelation/6#plain) | The martyrs pray how long. What would it mean to bring your own how long to God rather than hide it? |
+| 7 | Revelation 8 to 11, the trumpets and the two witnesses | [Revelation 11, passage by passage](/study/bible/revelation/11#plain) | Judgment in this section comes as a warning that leaves room to turn back. What does that tell you about what God wants? |
+| 8 | Revelation 12 and 13, the dragon and the beasts | [Revelation 13, passage by passage](/study/bible/revelation/13#plain) | What power in your own world asks for the kind of loyalty that belongs only to God? |
+| 9 | Revelation 14 to 16, the harvest and the bowls | [Revelation 14, passage by passage](/study/bible/revelation/14#plain) | The book calls the saints to endure in the middle of its hardest chapters. What are you being asked to endure now? |
+| 10 | Revelation 17 and 18, the fall of Babylon | [Revelation 18, passage by passage](/study/bible/revelation/18#plain) | Where do you most enjoy the comforts of Babylon, and what would coming out of her look like for you? |
+| 11 | Revelation 19 and 20, the rider and the thousand years | [Revelation 20, passage by passage](/study/bible/revelation/20#plain) | Christians who share the creed read the thousand years differently. What would it ask of you to hold your own view with both conviction and humility? |
+| 12 | Revelation 21 and 22, all things made new | [Revelation 21, passage by passage](/study/bible/revelation/21#plain) | Revelation ends with God coming to live with his people rather than people escaping to him. How does that change what you hope for? |
+
+## Level 4: What Christians Believe (`/academy/beliefs`)
 
 *Want to know what the church has always believed, and why?* You will be able to explain the creed line by line, trace each core doctrine to Scripture, and state the views on contested questions fairly. 4 tracks, 42 sessions, about 7 hours.
 
@@ -427,7 +547,116 @@ For: "I want to go deeper". Twelve short sessions for someone who wants to go de
 | 11 | A rule of life | [Build a rule of life](/tools/rule-of-life) | Which one rhythm, kept for a year, would change you most? |
 | 12 | Hand it on | [Small group study guides](/studyguides) | Who taught you the faith, and who could you teach it to? |
 
-## 7. Church History (`/academy/history`)
+## Level 4: Theology in Depth (`/academy/theology`)
+
+*Ready to understand each doctrine, from Scripture?* You will be able to state each major doctrine in your own words, show where it comes from in Scripture, say why the church holds it, and explain it simply. 6 tracks, 63 sessions, about 11 hours.
+
+### The doctrine of Scripture (`/tracks/doctrine-scripture`)
+
+For: "I want to know why we trust the Bible". Ten sessions on what Christians mean when they call the Bible God's word: how God speaks, what inspiration means, which books belong, how they reached us, and how to explain your trust to a friend.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | God makes himself known | [How does God speak to us?](/theology/doctrine/revelation) | What has creation, or your own conscience, told you about God, and what has it left unsaid? |
+| 2 | Breathed out by God | [What does it mean that the Bible is inspired?](/theology/doctrine/inspiration) | What changes in how you read a hard passage if you believe it was breathed out by God and written by a real person? |
+| 3 | Human writers, human voices | [The 66 books at a glance](/study/books-at-a-glance) | Which writer of Scripture sounds most like himself to you, and what does God say through that voice that another voice couldn't? |
+| 4 | The authority of Scripture | [What is the Bible, and can we trust it?](/theology/doctrine/scripture) | Where has the Bible told you something you didn't want to hear, and what did you do with it? |
+| 5 | Inerrancy and infallibility | [What is biblical inerrancy?](/theology/doctrine/inerrancy) | When you meet a hard discrepancy in the Bible, what would each view tell you to do with it, and which do you find more honest? |
+| 6 | Which books, and who decided | [How the books were chosen](/study/bible/guides/canon) | Does it matter to you whether the church created the canon or recognized it, and why? |
+| 7 | From the writers to your hands | [More differences than words?](/questions/text/more-variants-than-words) | Does knowing that the copies differ make you trust the Bible less or more, and why? |
+| 8 | Clear enough, and enough | [The plain sense: the Reformers and the Bible in every hand](/theology/history/the-plain-sense) | Where have you been told you needed something beyond Scripture to please God, and was it a rule God had given? |
+| 9 | Scripture and tradition | [The Christian traditions](/theology/traditions) | Which traditions shape the way you read the Bible, and how would you know if one of them was wrong? |
+| 10 | Why you trust the Bible, said to a friend | [Why would anyone trust the Bible?](/answers/why-would-anyone-trust-the-bible) | If a friend asked you tomorrow why you trust the Bible, what would you say in three sentences? |
+
+### The doctrine of God (`/tracks/doctrine-god`)
+
+For: "I want to know who God is". Ten sessions on who God is: whether he can be known, the name he gave Moses, what he is like, how he rules the world, and what the church means when it confesses him as Father, Son and Holy Spirit.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Can God be known? | [Who God is, in the Study Bible](/study/bible/doctrines/god) | Is there a difference between knowing about God and knowing God, and which describes you now? |
+| 2 | The name God gave Moses | [Exodus 3, passage by passage](/study/bible/exodus/3#plain) | What does it change to call God by the name he gave rather than by a title we chose for him? |
+| 3 | The God who needs nothing | [What are the attributes of God?](/theology/doctrine/divine-attributes) | Which is harder for you to believe: that God needs nothing from you, or that he loves you anyway? |
+| 4 | Holy, loving, just, wise and good | [Holiness, in the Study Bible](/study/bible/doctrines/holiness) | Which attribute of God do you find easiest to believe, and which do you quietly leave out? |
+| 5 | Sovereignty and providence | [Providence, in the Study Bible](/study/bible/doctrines/providence) | Where in your own life can you see, looking back, a hand you couldn't see at the time? |
+| 6 | The Trinity in Scripture | [What is the Trinity?](/theology/doctrine/trinity) | Which of the three strands, one God, three who are God, three who are distinct, would you find hardest to show from Scripture? |
+| 7 | The Trinity in the church's creeds | [The Nicene Creed](/resources/creeds/nicene-creed) | Why might the church need a word Scripture doesn't use in order to protect what Scripture says? |
+| 8 | The errors the church refused | [The Trinity, in the Study Bible](/study/bible/doctrines/trinity) | Which of these errors do you think you would have found most persuasive, and why? |
+| 9 | The Trinity in prayer and life | [Romans 8, passage by passage](/study/bible/romans/8#plain) | When you pray, whom do you picture yourself speaking to, and how might praying to the Father, through the Son, in the Spirit change it? |
+| 10 | Explaining the Trinity simply | [How can God be three and one?](/answers/how-can-god-be-three-and-one) | How would you explain the Trinity to a ten-year-old in five sentences, without an analogy? |
+
+### The person and work of Christ (`/tracks/doctrine-christ`)
+
+For: "I want to know who Jesus is and what he did". Eleven sessions on who Jesus is and what he did, from the promise of the Messiah to his return, so you can state each doctrine, trace it to Scripture and explain it to someone else.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | The promise of the Messiah | [The Messiah, in the Study Bible](/study/bible/doctrines/messiah) | Which Old Testament promise would you point to first if a friend asked why Christians call Jesus the Christ, and what does it tell you about him? |
+| 2 | The incarnation and the virgin birth | [The incarnation, in the Study Bible](/study/bible/doctrines/incarnation) | Why does it matter that the Son took on a real human life rather than only appearing in one? |
+| 3 | Fully God: the New Testament evidence | [Did Jesus claim to be God?](/questions/jesus/did-jesus-claim-to-be-god) | Which piece of evidence for Jesus' deity would you find hardest to explain away, and why? |
+| 4 | Fully man: temptation, weakness and growth | [Hebrews 4, passage by passage](/study/bible/hebrews/4#plain) | Which part of Jesus' humanity, his growing, his tiredness, his tears or his temptation, do you find it hardest to take seriously? |
+| 5 | One person in two natures | [Who is Jesus?](/theology/doctrine/christology) | Which of the errors Chalcedon refused do you hear most often today, perhaps in your own way of thinking about Jesus? |
+| 6 | Prophet, priest and king | [Christ's three offices, in the Study Bible](/study/bible/doctrines/offices) | Which of the three offices do you lean on least, and what would change if you trusted Jesus in that one too? |
+| 7 | The cross: how the pictures fit together | [The atonement, in the Study Bible](/study/bible/doctrines/atonement) | Which picture of the cross has meant most to you, and what would you lose if it were the only one you had? |
+| 8 | The resurrection as event | [The appearances and the alternatives](/questions/jesus/the-appearances-and-the-alternatives) | If the resurrection did not happen, what would be left of Christianity, and what would be left of your own hope? |
+| 9 | The ascension and his present reign | [Christ's ascension and reign, in the Study Bible](/study/bible/doctrines/exaltation) | What changes in an ordinary week if Jesus is reigning now, and not only someday? |
+| 10 | His return | [Christ's return, in the Study Bible](/study/bible/doctrines/return) | Does the thought of Christ's return comfort you, unsettle you, or hardly cross your mind, and why? |
+| 11 | Explaining Jesus to someone who admires him | [Was Jesus just a good teacher?](/answers/was-jesus-just-a-good-teacher) | If a friend told you Jesus was a great moral teacher and nothing more, what would you say first? |
+
+### The Holy Spirit and the church (`/tracks/doctrine-spirit-church`)
+
+For: "I want to know what the Spirit and the church are". Eleven sessions on who the Holy Spirit is and what he does, and on what the church is, how it is ordered and why it is sent, traced to Scripture and the creeds.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | The Spirit as a person and as God | [Who is the Holy Spirit?](/theology/doctrine/holy-spirit) | Do you more naturally think of the Holy Spirit as a power or as a person, and what difference would the other make? |
+| 2 | The Spirit in the Old Testament | [The Holy Spirit through the Bible](/study/explorer/watch/holy-spirit) | What is the difference between the Spirit coming upon a few people for a task and the Spirit poured out on all? |
+| 3 | Pentecost | [Acts 2, passage by passage](/study/bible/acts/2#plain) | Why do you think God chose a pilgrim feast, with many languages in the city, for the day the Spirit was given? |
+| 4 | New birth, indwelling and assurance | [Regeneration, in the Study Bible](/study/bible/doctrines/regeneration) | What would you say to a believer who wants to know whether the Spirit really lives in them? |
+| 5 | The fruit of the Spirit | [Galatians 5, passage by passage](/study/bible/galatians/5#plain) | Which part of the fruit of the Spirit is slowest to grow in you, and what might be crowding it out? |
+| 6 | The gifts of the Spirit | [The gifts of the Spirit, in the Study Bible](/study/bible/doctrines/gifts) | Where have you seen a spiritual gift build up a church, and where have you seen one used to raise someone up? |
+| 7 | The people of God and the body of Christ | [The church, in the Study Bible](/study/bible/doctrines/church) | Do you think of the church more as a place you go or a people you belong to, and what would change if you saw it the other way? |
+| 8 | The marks of a true church | [What is the church?](/theology/doctrine/church) | Which mark of a true church do you most take for granted, and which do you most want to see in your own congregation? |
+| 9 | Baptism and the Lord's Supper | [Baptism and the Lord's Supper, in the Study Bible](/study/bible/doctrines/sacraments) | What do you understand to happen when someone is baptized or takes the Lord's Supper, and where did you learn it? |
+| 10 | Church government and membership | [Leadership in the church, in the Study Bible](/study/bible/doctrines/leadership) | What would it cost you to be fully known by a congregation, and what might you gain? |
+| 11 | The church's mission | [Mission, in the Study Bible](/study/bible/doctrines/mission) | Who are the people you already live and work among who have never heard the gospel explained well? |
+
+### The doctrine of salvation (`/tracks/doctrine-salvation`)
+
+For: "I want to understand how God saves". Eleven sessions on how God saves, from the image and the fall through grace, election, new birth, justification, adoption and holiness, to explaining grace to someone who thinks they must earn it.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Made in God's image, and fallen | [Humanity, in the Study Bible](/study/bible/doctrines/humanity) | What would change in how you see yourself if your dignity is older than your failures? |
+| 2 | Sin and how far it reaches | [What is original sin? Three Christian traditions](/theology/doctrine/sin) | Which is harder for you to believe: that sin reaches every part of you, or that it is not the deepest thing about you? |
+| 3 | Grace | [Salvation, in the Study Bible](/study/bible/doctrines/salvation) | Where do you find it hardest to receive something you did not earn, from God or from anyone else? |
+| 4 | Election and predestination | [Election, in the Study Bible](/study/bible/doctrines/election) | When you read that God chose, does it sound to you more like comfort or like threat, and why? |
+| 5 | The call and the new birth | [Regeneration, in the Study Bible](/study/bible/doctrines/regeneration) | If the new birth is God's work, what does that change about how you pray for someone who does not believe? |
+| 6 | Repentance and faith | [Repentance, in the Study Bible](/study/bible/doctrines/repentance) | What is the difference, in your own life, between being sorry you were caught and being sorry you wronged someone? |
+| 7 | Justification | [Justification, in the Study Bible](/study/bible/doctrines/justification) | Is it harder for you to believe that God declares you righteous, or that he also intends to make you so? |
+| 8 | Adoption | [Galatians 4, passage by passage](/study/bible/galatians/4#plain) | What would change in how you pray if you believed you are a child in the house and not a servant earning your place? |
+| 9 | Sanctification | [Sanctification, in the Study Bible](/study/bible/doctrines/sanctification) | Where do you see real change in yourself over the last five years, and where do you still see none? |
+| 10 | Perseverance and assurance | [Perseverance, in the Study Bible](/study/bible/doctrines/perseverance) | When you doubt whether you belong to God, where do you look first: to your own heart, or to Christ's promise? |
+| 11 | Explaining grace to someone who thinks they must earn it | [The gospel in a minute](/study/explorer/watch/gospel-in-a-minute) | If a friend told you they hope they have been good enough for God, what would you say first? |
+
+### The last things (`/tracks/doctrine-last-things`)
+
+For: "I want to know what happens at the end". Ten sessions on the Christian hope, from death and the waiting after it through Christ's return, the resurrection, judgment, hell and the new creation, to speaking of hope to someone who grieves.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Death | [Facing death](/life/facing-death) | Do you think of death more as something natural to accept or as an enemy to be defeated, and how does that shape the way you grieve? |
+| 2 | Between death and the resurrection | [The intermediate state, in the Study Bible](/study/bible/doctrines/intermediate) | What comfort does it give you that the dead in Christ are with him now, and what comfort is still being saved for the resurrection? |
+| 3 | The return of Christ | [The return of Christ, in the Study Bible](/study/bible/doctrines/return) | If you lived as though Christ could return in your lifetime, what is one thing you would do differently this week? |
+| 4 | The resurrection of the body | [The resurrection, in the Study Bible](/study/bible/doctrines/resurrection) | What difference does it make to you that the Christian hope is a raised body and not an escape from the body? |
+| 5 | The millennium | [How does it end?](/theology/doctrine/last-things) | Which reading of Revelation 20 were you taught, and what would its strongest rival say to it? |
+| 6 | The judgment | [The judgment, in the Study Bible](/study/bible/doctrines/judgment) | Does the thought of God's final judgment feel to you more like threat or like hope, and why? |
+| 7 | Hell | [Hell, in the Study Bible](/study/bible/doctrines/hell) | Which of the three views do you find hardest to state fairly, and what would its defenders most want you to see? |
+| 8 | Heaven and the new creation | [Revelation 21, passage by passage](/study/bible/revelation/21#plain) | How does the picture of a renewed earth change what you hope for, compared with what you were taught about heaven? |
+| 9 | Hope, and how it shapes life now | [Hope, in the Study Bible](/study/bible/doctrines/hope) | Where in your life right now are you living by optimism, or by resignation, rather than by hope? |
+| 10 | Speaking of hope to someone who is grieving | [Find Help: grief](/help/grief) | Think of someone you know who is grieving: what would it look like to be present with them before you try to explain anything? |
+
+## Level 4: Church History (`/academy/history`)
 
 *Want to know how we got here?* You will know the church's story across two thousand years, its councils, its failures and its renewals, and how each age read the Bible. 2 tracks, 22 sessions, about 6 hours.
 
@@ -467,58 +696,9 @@ For: "I want to see my own blind spots". Eight short sessions on how the church 
 | 7 | The lenses of our own day | [Is the Bible an American Book?](/resources/context/the-bible-is-not-an-american-book) | When did a passage of Scripture last change your politics, or your idea of a good life, rather than confirm it? |
 | 8 | Reading with the whole church | [Reading from the South](/theology/history/reading-from-the-south) | Who is a Christian from another culture or century whose reading of the Bible you could let correct yours? |
 
-## Beside the road Faith for Teenagers (`/academy/teens`)
+## Level 5: Living It (`/academy/living`)
 
-*Thirteen to eighteen? This is yours.* You will have weighed whether it is true, seen the Bible's whole story, and thought hard about who you are and how to live it now. 3 tracks, 24 sessions, about 2 hours.
-
-### Is any of it true? (`/tracks/teens-is-it-true`)
-
-For: "I'm a teenager with questions". Eight short sessions for a teenager who wants honest answers: God, the Bible, Jesus, the resurrection, science, suffering, other religions, and what to do with doubt.
-
-| # | Session | Opens | The question |
-|---|---|---|---|
-| 1 | Does God exist? | [Does God exist?](/study/explorer/watch/does-god-exist) | If everything you can see needs an explanation, does the universe as a whole need one too, or can it just be there? |
-| 2 | Can you trust the Bible? | [Is the Bible true?](/study/explorer/watch/is-the-bible-true) | What would you need to know about an old book before you'd trust what it says happened? |
-| 3 | Did Jesus exist? | [Did Jesus even exist?](/questions/jesus/did-jesus-exist) | If nearly every historian agrees Jesus lived, what question about him is still left for you? |
-| 4 | Did he rise? | [Did Jesus really come back to life?](/study/explorer/watch/did-jesus-come-back-to-life) | Of the explanations for what happened that first Easter, which seems strongest to you, and why? |
-| 5 | Science and faith | [Are science and the Bible enemies?](/study/explorer/watch/science-and-the-bible) | Is there a question that matters to you which science, by its nature, can't answer? |
-| 6 | Why bad things happen | [Why do bad things happen?](/study/explorer/watch/why-bad-things-happen) | Does the problem of suffering feel to you more like an argument, or more like something that has happened to you or someone you love? |
-| 7 | So many religions | [Only a Christian because of where you were born?](/questions/religions/only-a-christian-because-of-where-you-were-born) | Is it possible to believe one religion is true and still treat people of every religion with real respect? |
-| 8 | What to do with your doubts | [For skeptics](/skeptics) | What's one doubt you've never said out loud, and who could you safely say it to? |
-
-### The Bible's story, start to finish (`/tracks/teens-big-story`)
-
-For: "I'm a teenager who's never read it". Eight short sessions that run through the whole Bible as one story: creation, the fall, Abraham, the Exodus, kings and exile, Jesus, the church and the new creation.
-
-| # | Session | Opens | The question |
-|---|---|---|---|
-| 1 | Creation | [The whole Bible in two minutes](/study/explorer/watch/bible-two-minutes) | If the world was made on purpose and called good, what difference would that make to an ordinary school day? |
-| 2 | The Fall | [What sin is](/study/explorer/watch/what-sin-is) | Where do you see the same cracks Genesis 3 describes, in the world or in yourself? |
-| 3 | Abraham | [A blessing for all nations](/study/explorer/watch/all-nations) | Why might God choose to work through one flawed family instead of fixing everything at once? |
-| 4 | The Exodus | [The Exodus: out of Egypt](/study/explorer/watch/the-exodus) | Why do you think God rescues the people first and gives them the law afterward? |
-| 5 | Kings and exile | [The king](/study/explorer/watch/the-king) | Jeremiah 29:11 is often printed on mugs and posters. How does it change when you know who it was first written to? |
-| 6 | Jesus | [Mark: the story at a run](/study/explorer/watch/book-mark) | Which part of the earlier story do you think Jesus finishes most clearly, and why? |
-| 7 | The church | [Acts: to the ends of the earth](/study/explorer/watch/book-acts) | If the church is meant to be people from every background, what would that look like where you live? |
-| 8 | New creation | [Revelation: the Lamb on the throne](/study/explorer/watch/book-revelation) | Now that you've seen the whole story, where do you think your own life fits on that road? |
-
-### Who you are, and how to live it (`/tracks/teens-who-am-i`)
-
-For: "I'm a teenager figuring out who I am". Eight short sessions for teenagers on worth, feeling not enough, friends, phones, parents, messing up, anxiety and pressure, and following Jesus now rather than later.
-
-| # | Session | Opens | The question |
-|---|---|---|---|
-| 1 | Made in God's image | [Creation and the image of God](/study/explorer/watch/image-of-god) | Where do you most often go to find out whether you're worth something? |
-| 2 | When you feel like you're not enough | [Where Does Your Identity and Worth Come From?](/life/identity-and-worth) | Who do you compare yourself with most, and what does it usually do to you? |
-| 3 | Friends and loneliness | [How to handle loneliness](/how-tos/rel-how-to-handle-loneliness) | Who is one person you could be a better friend to this month, and what would that take? |
-| 4 | Phones and attention | [How Does Your Phone Shape Your Attention and Soul?](/life/technology-and-attention) | If your screen-time report could talk, what would it say you love most? |
-| 5 | Parents and authority | [How to have a hard conversation](/how-tos/rel-how-to-have-a-hard-conversation) | What's one way you could honor a parent or guardian this week without pretending you agree with everything? |
-| 6 | When you mess up | [Does God still love me when I do wrong?](/study/explorer/watch/love-when-i-do-wrong) | Is there something you've done that you're afraid God can't get past? |
-| 7 | Anxiety and pressure | [I can't stop worrying](/help/anxiety) | What's piling up on you right now, and who is one adult you could tell about it? |
-| 8 | Following Jesus now, not later | [What Does It Mean to Be a Disciple of Jesus?](/life/discipleship-following-jesus) | What would following Jesus look like in your actual week, not someday? |
-
-## 9. Living It (`/academy/living`)
-
-*Want the faith to carry the weight of an ordinary week?* You will have brought Scripture to bear on marriage, work, money, rest, grief and forgiveness, with the church's long wisdom beside you. 3 tracks, 24 sessions, about 4 hours.
+*Want the faith to carry the weight of an ordinary week?* You will have brought Scripture to bear on marriage, work, money, rest, grief, friendship and the big decisions, with the church's long wisdom beside you. 5 tracks, 40 sessions, about 7 hours.
 
 ### Marriage that lasts (`/tracks/living-marriage`)
 
@@ -565,9 +745,203 @@ For: "I'm going through something hard". Eight short sessions for a hard season:
 | 7 | Suffering and hope | [Suffering](/study/bible/doctrines/suffering) | What is the difference between an explanation for your suffering and a hope that can hold you inside it? |
 | 8 | The people who carry each other | [How to Sit With Someone Who Is Suffering](/how-tos/ss-how-to-sit-with-someone-suffering) | Who could you let carry part of what you are carrying, and what keeps you from asking them? |
 
-## Beside the road Faith at Home (`/academy/home`)
+### Friendship, community and the church family (`/tracks/living-relationships`)
 
-*Leading a family? Start at the table.* You will have a way to lead faith at home that fits your children's ages, answers their hard questions honestly, and follows the church's year together. 3 tracks, 28 sessions, about 5 hours.
+For: "I want real friends and a real church". Eight short sessions on the people God made you for: friendship, loneliness, the single life, the open table, conflict between believers, the church as a family of every age, and the old among us.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Made for others | [The Trinity, in the Study Bible](/study/bible/doctrines/trinity) | Where did you learn that needing other people is a weakness, and is it true? |
+| 2 | Loneliness | [How to Handle Loneliness](/how-tos/rel-how-to-handle-loneliness) | When do you feel loneliest, and what do you usually do with the feeling? |
+| 3 | Friendship in Scripture | [1 Samuel 18, passage by passage](/study/bible/1-samuel/18#plain) | Which of your friendships rest on use or pleasure, and which on wanting each other's good? |
+| 4 | The single life as a full life | [Is singleness a calling or a waiting room?](/life/singleness-and-the-full-life) | If you are single, where have you been told your life is not yet real; if married, where have you said it? |
+| 5 | Hospitality | [How to Show Hospitality to Outsiders](/how-tos/wn-how-to-show-hospitality-to-outsiders) | Who has never eaten at your table, and what keeps you from asking them? |
+| 6 | Conflict and reconciliation between believers | [Matthew 18, passage by passage](/study/bible/matthew/18#plain) | Is there a brother or sister you have talked about more than you have talked to? |
+| 7 | The church as family across ages and backgrounds | [Ephesians 2, passage by passage](/study/bible/ephesians/2#plain) | Who in your church is most unlike you, and what do you know of their story? |
+| 8 | Caring for aging parents and the old among us | [How do you honour aging parents who need care?](/life/caring-for-aging-parents) | Who is old in your life or your church, and what would it mean to honour them this month? |
+
+### Decisions, calling and God's will (`/tracks/living-guidance`)
+
+For: "I need to make a big decision". Eight short sessions for anyone at a fork in the road: what Scripture means by God's will, how Christians have discerned, calling, the fear of choosing wrong, closed doors, waiting, and a whole life offered.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | What God's will means in Scripture | [What the Bible says about knowing God's will](/wisdom/knowing-gods-will) | When you pray about a decision, are you asking God for information, or for wisdom? |
+| 2 | How Christians have discerned | [Does God have a plan for my life?](/writing/does-god-have-a-plan-for-my-life) | Which of the three views of guidance is closest to how you have actually made decisions? |
+| 3 | Calling beyond a job | [What the Bible says about calling and purpose](/wisdom/calling-and-purpose) | If your job were taken away tomorrow, what would remain of your calling? |
+| 4 | Fear and anxiety about choosing wrong | [What the Bible says about indecision](/wisdom/indecision) | What are you most afraid will happen if you choose wrong? |
+| 5 | When a door closes | [Acts 16, passage by passage](/study/bible/acts/16#plain) | Which closed door in your life are you still trying to read, and what if it was simply a loss? |
+| 6 | Waiting | [How to Wait on God](/how-tos/ss-how-to-wait-on-god) | What are you waiting for, and what faithful thing could you do while you wait? |
+| 7 | Living with the choice you made | [What the Bible says about regret](/wisdom/regret) | Is there a past choice you are still trying to undo in your head, and is it one to repent of or to grieve? |
+| 8 | A whole life offered | [Romans 12, passage by passage](/study/bible/romans/12#plain) | What part of your life are you still holding back while you ask God for direction? |
+
+## Level 5: Explain It (`/academy/explain`)
+
+*Ready to give the reasons, and pass it on?* You will be able to say what you believe and why, answer the questions your friends ask with gentleness and respect, and help someone else grow. 4 tracks, 38 sessions, about 6 hours.
+
+### Why we believe it: the reasons (`/tracks/why-we-believe`)
+
+For: "I want to know why it's true". Ten sessions that build the cumulative case for the Christian faith, from what faith is to the resurrection, so that you can state the reasons in your own words, with gentleness and respect.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | What faith is, and what it isn't | [Is believing anything on faith irrational?](/answers/is-faith-irrational) | When someone says faith means believing without evidence, what would you say faith means instead, in one sentence? |
+| 2 | Why there is something rather than nothing | [Why is there something rather than nothing?](/questions/god/the-cosmological-argument) | Which objection to the cosmological argument seems strongest to you, and how would you state it fairly to a friend? |
+| 3 | Design and the order of the world | [Do the Big Bang and fine-tuning point to God?](/questions/science/the-beginning-and-fine-tuning) | What can the order and fine-tuning of the world fairly be said to show, and what can't they show? |
+| 4 | The moral law | [Isn't morality just evolved instinct or social agreement?](/questions/god/the-moral-argument-and-euthyphro) | How would you explain the moral argument without implying that your unbelieving friends are worse people than you? |
+| 5 | Can the Gospels be trusted? | [Why would anyone trust the Bible?](/answers/why-would-anyone-trust-the-bible) | Which of the three questions about the Gospels do you find hardest to answer, and why? |
+| 6 | What Jesus claimed | [Did Jesus claim to be God?](/questions/jesus/did-jesus-claim-to-be-god) | If a friend says Jesus was a good teacher and nothing more, what one passage would you ask them to read, and why that one? |
+| 7 | The resurrection and the best explanation | [Couldn't the Easter experiences have a natural explanation?](/questions/jesus/the-appearances-and-the-alternatives) | Which natural explanation of the Easter evidence seems strongest to you, and what part of the evidence does it struggle to explain? |
+| 8 | The church across cultures and centuries | [The church since 1900: how Christianity moved south and east](/theology/history/the-global-church) | How would you answer a friend who says Christianity is simply the religion of Western empire? |
+| 9 | Why Christianity and not another faith | [Are all religions basically the same?](/questions/religions/are-all-religions-the-same) | What is the one difference between Christianity and the faith of a neighbour that you would most want to state accurately? |
+| 10 | Putting it together: your own case | [Test the Case](/tools/test-the-case) | Which strand of the case weighs most with you, and which objection do you still find hardest? |
+
+### Answering the questions people ask (`/tracks/answering-questions`)
+
+For: "I want to answer my friends' questions". Ten questions people really ask about the faith, each with how to listen first, an honest short answer, the longer one, and what a Christian should concede, for conversations that keep going.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Isn't faith just upbringing? | [Aren't you only a Christian because of where you were born?](/questions/religions/only-a-christian-because-of-where-you-were-born) | What did you inherit about faith from your upbringing, and what have you tested for yourself? |
+| 2 | Why does God allow suffering? | [Why does God allow suffering?](/writing/why-does-god-allow-suffering) | When someone you know is suffering, what is the difference between answering their question and answering them? |
+| 3 | Hasn't science disproved God? | [Does science disprove God?](/writing/does-science-disprove-god) | What is one thing science can't tell you, and how would you say that without belittling science? |
+| 4 | Isn't the Bible full of contradictions? | [Contradictions: the accounts that disagree](/questions/contradictions) | Which apparent contradiction in the Bible troubles you most, and have you read the two passages side by side? |
+| 5 | What about other religions? | [Is Jesus really the only way to God?](/answers/is-jesus-the-only-way) | Who comes to mind when someone asks about other religions, and what would you want them to know you respect? |
+| 6 | Why would a loving God send people to hell? | [Is hell real, and is it fair?](/writing/is-hell-real-and-is-it-fair) | What picture of hell were you given, and how does it compare with what Scripture actually says? |
+| 7 | Hasn't the church done more harm than good? | [Doesn't religion poison everything?](/questions/morality/does-religion-poison-everything) | What is one wrong done by the church that you would want to name honestly before anyone else has to? |
+| 8 | Isn't the Old Testament God violent? | [Isn't the God of the Old Testament a different God?](/questions/old-testament/the-god-of-the-old-testament) | Which Old Testament passage would you most dread being asked about, and what would you need to read to answer honestly? |
+| 9 | Can you be good without God? | [Can you be good without God?](/writing/can-you-be-good-without-god) | How would you tell a friend that they are good without suggesting that they don't need God? |
+| 10 | Keeping a conversation going, not winning it | [How to share your faith without being weird](/how-tos/wn-how-to-share-your-faith-without-being-weird) | Who is one person you could have an unhurried conversation with about faith, and what question would you ask them first? |
+
+### Explaining the faith to others (`/tracks/explaining-the-faith`)
+
+For: "I want to explain what I believe". Ten short sessions on explaining the Christian faith with gentleness and respect: listening first, your own story, the gospel, the cross, the resurrection, the Trinity, the Bible, and a statement of your own.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Why Christians speak at all | [Evangelism: A Bible Study on Sharing Your Faith](/studyguides/witness) | What has made you hesitant to talk about your faith, and how much of that comes from having seen it done badly? |
+| 2 | Listening before speaking | [John 4, the guided seven-step study](/study/bible/john/4?study=walk) | Think of one friend who doesn't believe. What do you actually know about why, in their own words? |
+| 3 | Your own story, told honestly | [How to Tell Your Story](/how-tos/wn-how-to-tell-your-story) | If you had three minutes to tell a friend how you came to trust Christ, what would you say first? |
+| 4 | The gospel in a few sentences | [The gospel in a minute](/study/explorer/watch/gospel-in-a-minute) | Can you say the gospel in four sentences in your own words, and which of the four is hardest for you to put plainly? |
+| 5 | Explaining the cross | [The atonement, in the Study Bible](/study/bible/doctrines/atonement) | How would you answer a friend who says the cross sounds like a father punishing his son? |
+| 6 | Explaining the resurrection | [Did the resurrection actually happen?](/answers/did-the-resurrection-actually-happen) | What would you say to a friend who asks why you believe a dead man rose, without overstating the evidence or apologizing for it? |
+| 7 | Explaining the Trinity simply | [How can God be three and one?](/answers/how-can-god-be-three-and-one) | How would you explain the Trinity to a friend in a few sentences without using a comparison that breaks? |
+| 8 | Explaining the Bible to someone who has never read it | [What is the Bible?](/study/bible/guides/what-is-the-bible) | If a friend asked you where to start reading the Bible, what would you say, and why? |
+| 9 | Speaking with a friend of another faith or none | [Isn't it arrogant to say Jesus is the only way?](/questions/religions/is-it-arrogant-to-say-jesus-is-the-only-way) | What does a friend of another faith, or of none, believe that you most need to understand before you speak? |
+| 10 | Your own statement of what you believe | [The Apostles' Creed](/resources/creeds/apostles-creed) | In a page or less, what do you believe, why do you believe it, and what difference does it make? |
+
+### Teaching others the Bible (`/tracks/teaching-others`)
+
+For: "I want to help someone else grow". Eight short sessions for helping someone else grow: discipling one person, leading a group, asking good questions, handling what you can't answer, teaching children and teenagers, and handing on the Academy.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Discipling one person | [How to Disciple One Person Over Coffee](/how-tos/dm-how-to-disciple-one-person-over-coffee) | Who is one person a step or two behind you whom you could ask to meet with regularly? |
+| 2 | Leading a small group Bible study | [What to Actually Do at a Discipleship Table](/how-tos/dm-what-to-actually-do-at-a-discipleship-table) | What would have to change in you for you to lead a group by asking more than telling? |
+| 3 | Asking good questions | [The Three Questions That Make Any Passage Teachable](/how-tos/dm-three-questions-that-make-any-passage-teachable) | What question has someone once asked you about the Bible that made you think harder than any lecture? |
+| 4 | When you can't answer a hard question | [How to Answer Hard Questions About the Faith](/how-tos/wn-how-to-answer-hard-questions-about-the-faith) | What is the hardest question about the faith you've been asked, or have asked, and what did you do with it? |
+| 5 | Teaching children | [Tonight's family devotion](/family/tonight) | What did you learn about God as a child, from what was said or from what you saw, that has stayed with you? |
+| 6 | Teaching teenagers | [How to Disciple Teenagers at Home](/how-tos/fam-how-to-disciple-teenagers-at-home) | What question did you have as a teenager about faith that no one answered well? |
+| 7 | Walking with someone new to faith | [Eight Weeks for a New Christian](/plans/new-believer) | Who walked with you when you were new to faith, or who do you wish had? |
+| 8 | Handing on the Academy | [All the tracks](/tracks) | Who will you hand on what you have learned to, and where will you begin? |
+
+## Beside the road: Faith for Teenagers (`/academy/teens`)
+
+*Thirteen to eighteen? This is yours.* You will have weighed whether it is true, seen the Bible's whole story, learned to grow and to face hard things, and be able to talk about your faith with your friends. 6 tracks, 48 sessions, about 5 hours.
+
+### Is any of it true? (`/tracks/teens-is-it-true`)
+
+For: "I'm a teenager with questions". Eight short sessions for a teenager who wants honest answers: God, the Bible, Jesus, the resurrection, science, suffering, other religions, and what to do with doubt.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Does God exist? | [Does God exist?](/study/explorer/watch/does-god-exist) | If everything you can see needs an explanation, does the universe as a whole need one too, or can it just be there? |
+| 2 | Can you trust the Bible? | [Is the Bible true?](/study/explorer/watch/is-the-bible-true) | What would you need to know about an old book before you'd trust what it says happened? |
+| 3 | Did Jesus exist? | [Did Jesus even exist?](/questions/jesus/did-jesus-exist) | If nearly every historian agrees Jesus lived, what question about him is still left for you? |
+| 4 | Did he rise? | [Did Jesus really come back to life?](/study/explorer/watch/did-jesus-come-back-to-life) | Of the explanations for what happened that first Easter, which seems strongest to you, and why? |
+| 5 | Science and faith | [Are science and the Bible enemies?](/study/explorer/watch/science-and-the-bible) | Is there a question that matters to you which science, by its nature, can't answer? |
+| 6 | Why bad things happen | [Why do bad things happen?](/study/explorer/watch/why-bad-things-happen) | Does the problem of suffering feel to you more like an argument, or more like something that has happened to you or someone you love? |
+| 7 | So many religions | [Only a Christian because of where you were born?](/questions/religions/only-a-christian-because-of-where-you-were-born) | Is it possible to believe one religion is true and still treat people of every religion with real respect? |
+| 8 | What to do with your doubts | [For skeptics](/skeptics) | What's one doubt you've never said out loud, and who could you safely say it to? |
+
+### The Bible's story, start to finish (`/tracks/teens-big-story`)
+
+For: "I'm a teenager who's never read it". Eight short sessions that run through the whole Bible as one story: creation, the fall, Abraham, the Exodus, kings and exile, Jesus, the church and the new creation.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Creation | [The whole Bible in two minutes](/study/explorer/watch/bible-two-minutes) | If the world was made on purpose and called good, what difference would that make to an ordinary school day? |
+| 2 | The Fall | [What sin is](/study/explorer/watch/what-sin-is) | Where do you see the same cracks Genesis 3 describes, in the world or in yourself? |
+| 3 | Abraham | [A blessing for all nations](/study/explorer/watch/all-nations) | Why might God choose to work through one flawed family instead of fixing everything at once? |
+| 4 | The Exodus | [The Exodus: out of Egypt](/study/explorer/watch/the-exodus) | Why do you think God rescues the people first and gives them the law afterward? |
+| 5 | Kings and exile | [The king](/study/explorer/watch/the-king) | Jeremiah 29:11 is often printed on mugs and posters. How does it change when you know who it was first written to? |
+| 6 | Jesus | [Mark: the story at a run](/study/explorer/watch/book-mark) | Which part of the earlier story do you think Jesus finishes most clearly, and why? |
+| 7 | The church | [Acts: to the ends of the earth](/study/explorer/watch/book-acts) | If the church is meant to be people from every background, what would that look like where you live? |
+| 8 | New creation | [Revelation: the Lamb on the throne](/study/explorer/watch/book-revelation) | Now that you've seen the whole story, where do you think your own life fits on that road? |
+
+### Who you are, and how to live it (`/tracks/teens-who-am-i`)
+
+For: "I'm a teenager figuring out who I am". Eight short sessions for teenagers on worth, feeling not enough, friends, phones, parents, messing up, anxiety and pressure, and following Jesus now rather than later.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Made in God's image | [Creation and the image of God](/study/explorer/watch/image-of-god) | Where do you most often go to find out whether you're worth something? |
+| 2 | When you feel like you're not enough | [Where Does Your Identity and Worth Come From?](/life/identity-and-worth) | Who do you compare yourself with most, and what does it usually do to you? |
+| 3 | Friends and loneliness | [How to handle loneliness](/how-tos/rel-how-to-handle-loneliness) | Who is one person you could be a better friend to this month, and what would that take? |
+| 4 | Phones and attention | [How Does Your Phone Shape Your Attention and Soul?](/life/technology-and-attention) | If your screen-time report could talk, what would it say you love most? |
+| 5 | Parents and authority | [How to have a hard conversation](/how-tos/rel-how-to-have-a-hard-conversation) | What's one way you could honor a parent or guardian this week without pretending you agree with everything? |
+| 6 | When you mess up | [Does God still love me when I do wrong?](/study/explorer/watch/love-when-i-do-wrong) | Is there something you've done that you're afraid God can't get past? |
+| 7 | Anxiety and pressure | [I can't stop worrying](/help/anxiety) | What's piling up on you right now, and who is one adult you could tell about it? |
+| 8 | Following Jesus now, not later | [What Does It Mean to Be a Disciple of Jesus?](/life/discipleship-following-jesus) | What would following Jesus look like in your actual week, not someday? |
+
+### Growing on your own (`/tracks/teens-growing`)
+
+For: "I'm a teenager who wants to grow". Eight short sessions for a teenager who wants a faith of their own: reading the Bible, praying, church, baptism and the Supper, serving, the Holy Spirit, flat seasons and owning what you believe.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Reading the Bible on your own | [How to Actually Read the Bible](/how-tos/sf-how-to-actually-read-the-bible) | What has made reading the Bible on your own hard for you so far? |
+| 2 | Praying when it feels like talking to the ceiling | [Prayer](/study/explorer/watch/prayer) | When you pray, what do you actually say to God, and what do you leave out? |
+| 3 | Church when you'd rather not go | [What the church is](/study/explorer/watch/the-church) | When you'd rather not go to church, what's the honest reason? |
+| 4 | Baptism and the Lord's Supper | [Baptism and the Lord's Supper](/study/explorer/watch/baptism-and-supper) | Have you been baptized, and what do you know or remember about it? |
+| 5 | Serving | [Spiritual Gifts Self-Check](/tools/spiritual-gifts) | Where could you serve at your church or in your town that nobody is covering right now? |
+| 6 | The Holy Spirit in a young Christian | [The Holy Spirit in a believer](/study/explorer/watch/spirit-in-a-believer) | Which part of the fruit of the Spirit do you most wish were growing in you right now? |
+| 7 | When your faith feels flat | [Why Does God Feel So Far Away When You Pray?](/life/the-dry-season) | When has your faith felt most flat, and what was going on in your life then? |
+| 8 | Owning your faith | [The Apostles' Creed](/resources/creeds/apostles-creed) | Which part of what Christians believe would be hardest for you to explain to a friend in your own words? |
+
+### When life gets hard (`/tracks/teens-hard-things`)
+
+For: "I'm a teenager going through something". Eight short sessions for a teenager carrying something heavy: a death, parents splitting up, being bullied, school pressure, feeling low, having hurt someone, God's silence, and hope that holds.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | When someone you love dies | [What happens when we die?](/study/explorer/watch/when-we-die) | If you've lost someone, what has helped most since then, and what hasn't? |
+| 2 | When your parents split up | [Pray Psalm 27 slowly](/tools/pray-the-psalms?psalm=27) | What's one thing about your family that you've never said to anyone? |
+| 3 | Being bullied or left out | [Psalm 55, passage by passage](/study/bible/psalms/55#plain) | Have you ever been the one left out, or the one leaving someone out? What happened? |
+| 4 | Failure and pressure at school | [Why Do We Measure Ourselves by Success and Failure?](/life/success-and-failure) | Whose approval are you really working for at school? |
+| 5 | Feeling low for a long time | [I feel empty, and I don't know why](/help/empty) | Who is one adult you would trust enough to tell if you'd been feeling low for weeks? |
+| 6 | When you've hurt yourself or someone else | [Find Help](/help) | Is there something you've been hiding that you need to tell one safe person about? |
+| 7 | When God feels silent | [Why does God seem silent sometimes?](/study/explorer/watch/god-silent) | What have you prayed about that seemed to get no answer? |
+| 8 | Hope that's real | [The resurrection](/study/explorer/watch/the-resurrection) | What's the difference between hoping things get better and the hope this session describes? |
+
+### Talking about your faith with friends (`/tracks/teens-explaining`)
+
+For: "I'm a teenager with friends who ask". Eight short sessions for a teenager whose friends ask questions: why say anything, your own story, the faith in two minutes, made up, science, hypocrites, other religions, and staying friends.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Why you'd say anything | [How to Share Your Faith Without Being Weird](/how-tos/wn-how-to-share-your-faith-without-being-weird) | What makes you most nervous about talking about your faith with a friend? |
+| 2 | Your own story | [How to Tell Your Story](/how-tos/wn-how-to-tell-your-story) | When did following Jesus start to matter to you, if it has? |
+| 3 | What Christians believe, in two minutes | [The gospel in a minute](/study/explorer/watch/gospel-in-a-minute) | Which part of that summary would your friends find hardest to believe, and which most surprising? |
+| 4 | When a friend says it's all made up | [Written decades later?](/questions/authors/written-decades-later) | If a friend said the Bible was made up, what would you want to ask them before you answered? |
+| 5 | When a friend says science disproved it | [Are science and the Bible enemies?](/study/explorer/watch/science-and-the-bible) | What scientific question do your friends raise most often about faith? |
+| 6 | When a friend says Christians are hypocrites | [Hypocrisy and the Mask](/wisdom/hypocrisy) | Where do you see a gap between what you believe and how you live? |
+| 7 | Friends of other religions | [Are all religions the same?](/questions/religions/are-all-religions-the-same) | What do you actually know about what your friends of other religions believe, and where did you learn it? |
+| 8 | Staying friends when you disagree | [How to Disagree Without Losing the Relationship](/how-tos/wn-how-to-disagree-without-losing-the-relationship) | Which friendship do you most want to keep, whatever that friend ends up believing? |
+
+## Beside the road: Faith at Home (`/academy/home`)
+
+*Leading a family? Start at the table.* You will have a way to lead faith at home for every age from three to sixteen, answer your children's hard questions honestly, carry them through hard seasons, and keep the church's year together. 6 tracks, 52 sessions, about 9 hours.
 
 ### Start at the table tonight (`/tracks/family`)
 
@@ -603,6 +977,51 @@ For: "I'm a parent who wants to lead well". Eight sessions for parents themselve
 | 7 | Parenting alone, or as the only believer | [How do we do family devotions?](/help/family-devotions) | Who in your church could stand beside your children as another adult who prays for them? |
 | 8 | Handing it on | [Psalm 78, passage by passage](/study/bible/psalms/78#plain) | What story of God's faithfulness, from Scripture or from your own family, do you most want your children to carry? |
 
+### Faith with little ones, ages 3 to 6 (`/tracks/family-little-ones`)
+
+For: "I'm raising little ones". Eight sessions for parents of children from three to six: what a small child can take in, Bible stories at bedtime, first prayers, songs, wonder, grace when they do wrong, church with wiggles, and where God is.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | What a small child can take in | [Parenting Young Children](/wisdom/parenting-young-children) | What does your child already know about God, from what they have seen and heard in your home? |
+| 2 | Bible stories at bedtime | [How to Read the Bible With Young Children](/how-tos/fam-how-to-read-the-bible-with-young-children) | Which Bible story did you love as a child, or would have loved, and where does it point to Jesus? |
+| 3 | Praying with a three-year-old | [How to Pray With Your Kids at Bedtime](/how-tos/fam-how-to-pray-with-your-kids-at-bedtime) | What would you most like your child to know about God when they lie awake in the dark? |
+| 4 | Singing and memorizing | [Memorize Scripture](/tools/scripture-memory) | What song or verse do you still know by heart from childhood, and how did it get there? |
+| 5 | God made everything | [God Called It Good](/family/devotions/creation) | When did your child last stop to wonder at something, and what did you do? |
+| 6 | When they do wrong | [Question 59: What should we do when we sin?](/family/catechism#q59) | After your child does wrong, what do they usually learn about you, and what would you want them to learn about God? |
+| 7 | Church with wiggly children | [Not a Building](/family/devotions/the-church) | What would help your child feel that the church is their family too, and not only yours? |
+| 8 | Where is God? | [Why can't I see God?](/study/explorer/watch/why-cant-i-see-god) | When your child asks where God is, what do you most want them to hear in your answer? |
+
+### Faith with children, ages 7 to 11 (`/tracks/family-children`)
+
+For: "I'm raising children". Eight sessions for parents of children from seven to eleven: the Bible as one story, reading it together, the catechism, prayer they lead, their big questions, friends and fairness, screens, and serving as a family.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | The Bible's whole story | [The Bible Explorer](/study/explorer) | Where on the Bible's road would your child put themselves, and where would you put yourself? |
+| 2 | Reading the Bible together | [Family reading plans](/family/reading-plans) | Which nights of the week could your family keep for reading the Bible, and what usually takes them? |
+| 3 | The catechism | [The family catechism](/family/catechism) | Which question of the catechism do you think your child would find hardest to answer, and why that one? |
+| 4 | Prayer they lead | [Matthew 6, passage by passage](/study/bible/matthew/6#plain) | What would it mean for your child to pray without needing your words? |
+| 5 | The big questions children ask | [The films](/study/films) | Which of these six questions has your child asked, and which do you most hope they will bring to you rather than to someone else? |
+| 6 | Friends and fairness | [The Friend Who Stays](/family/devotions/friendship) | Where does your child's sense of fairness show most, and where do they find it hardest to see from someone else's side? |
+| 7 | Screens and games | [How to Have the Screen Conversation by Age](/how-tos/parenting-how-to-have-the-screen-conversation-by-age) | What does your child's screen time teach them to want, and what does yours teach them? |
+| 8 | Serving others as a family | [The Towel and the Basin](/family/devotions/serving-others) | Who near your family needs help, and what could your children do for them that you couldn't do alone? |
+
+### When a family goes through hard things (`/tracks/family-hard-times`)
+
+For: "Our family is in a hard season". Eight sessions for a family in a hard season: a death, serious illness, divorce and two homes, a move, money trouble, a child who is struggling, conflict at home, and the hope a family can hold together.
+
+| # | Session | Opens | The question |
+|---|---|---|---|
+| 1 | Talking to children about death | [What happens when we die?](/study/explorer/watch/when-we-die) | What words have you used with your children about death, and are they words a child can understand? |
+| 2 | Serious illness in the family | [I've been given a hard diagnosis](/help/diagnosis) | What do your children imagine about the illness in your family, and how could you find out? |
+| 3 | Divorce and two homes | [My marriage has ended](/help/divorce) | What do your children most need to hear from you about the divorce, and have they heard it yet? |
+| 4 | Moving and loss | [Moving and Relocation](/wisdom/relocation) | What is your child losing in this change that you might not have noticed? |
+| 5 | Money trouble | [Money is a weight on me](/help/money) | What do your children sense about money in your home right now, and what would help them feel safe? |
+| 6 | A child who is struggling | [How to Help an Anxious Child](/how-tos/parenting-how-to-help-an-anxious-child) | What is your child carrying right now that they may not have words for? |
+| 7 | Conflict and repair at home | [How Do You Handle Conflict and Truly Reconcile?](/life/conflict-and-reconciliation) | What does repair look like in your home after a fight, and what do your children learn from it? |
+| 8 | Hope a family can hold together | [Romans 8, passage by passage](/study/bible/romans/8#plain) | What is your family holding on to in this season, and what would it mean to hold it together? |
+
 ### The church year at home (`/tracks/family-church-year`)
 
 For: "I want our family to keep the seasons". Eight sessions on keeping the church's year at the family table: Advent, Christmas and Epiphany, Lent, Holy Week, Easter, Pentecost and the long ordinary weeks, each with something to do together.
@@ -620,7 +1039,7 @@ For: "I want our family to keep the seasons". Eight sessions on keeping the chur
 
 ## Gaps and next steps
 
-- **Printables for families** (catechism cards, a memory-verse chart, a seasonal devotion booklet) were planned in the Academy prompt and are not built yet; they would use `scripts/build-pdfs.mjs`, and never carry a gift ask.
-- **Tracks James has kept back.** No track on dating, sexuality, gender, abortion or politics has been written. Each waits for his word.
-- **Verification.** Certificates are honour-system until accounts exist. If accounts are built later, a certificate could carry a code checked by the site.
-- **No person has read every session yet.** Every session passed the gate (Scripture word for word, every link live, the voice rules), and the writers listed every outside fact they used; James's read is still the last check.
+- **Kept back for James's word.** No track on dating, sexuality, gender, abortion or politics, for teenagers or adults.
+- **Family printables** (catechism cards, a memory-verse chart, seasonal booklets) are not built yet; they would use `scripts/build-pdfs.mjs` and never carry a gift ask.
+- **Certificates are honour-system.** There are no accounts, so the site cannot verify a finished track; a certificate records what the reader marked done on their own device.
+- **No person has read every session yet.** Every session passed the gate (Scripture word for word, every link live, the voice rules), and the writers listed the outside facts they used, which were checked; James's read is the last check.

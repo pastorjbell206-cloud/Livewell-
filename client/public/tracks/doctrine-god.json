@@ -511,9 +511,9 @@
         },
         {
           "kind": "track",
-          "label": "The tracks",
-          "href": "/tracks",
-          "why": "Next in Theology in Depth: The person and work of Christ, on who Jesus is and what he has done, following the Son into the world."
+          "label": "The person and work of Christ",
+          "href": "/tracks/doctrine-christ",
+          "why": "The next track on the road, in Theology in Depth: The person and work of Christ. Take it up when this one has settled."
         }
       ],
       "question": "How would you explain the Trinity to a ten-year-old in five sentences, without an analogy?",

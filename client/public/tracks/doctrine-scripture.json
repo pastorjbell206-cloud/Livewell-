@@ -493,9 +493,9 @@
         },
         {
           "kind": "track",
-          "label": "The tracks",
-          "href": "/tracks",
-          "why": "Next in Theology in Depth: The doctrine of God, ten sessions on who God is, the name he gave Moses, his attributes, his rule and the Trinity."
+          "label": "The doctrine of God",
+          "href": "/tracks/doctrine-god",
+          "why": "The next track on the road, in Theology in Depth: The doctrine of God. Take it up when this one has settled."
         }
       ],
       "question": "If a friend asked you tomorrow why you trust the Bible, what would you say in three sentences?",

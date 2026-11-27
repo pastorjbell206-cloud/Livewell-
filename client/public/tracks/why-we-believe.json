@@ -497,9 +497,9 @@
         },
         {
           "kind": "track",
-          "label": "The tracks",
-          "href": "/tracks",
-          "why": "Where to go next in Explain It: Answering the questions people ask, ten sessions on the questions friends actually raise in conversation."
+          "label": "Answering the questions people ask",
+          "href": "/tracks/answering-questions",
+          "why": "The next track on the road, in Explain It: Answering the questions people ask. Take it up when this one has settled."
         }
       ],
       "question": "Which strand of the case weighs most with you, and which objection do you still find hardest?",
