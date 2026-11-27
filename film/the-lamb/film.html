@@ -1,0 +1,335 @@
+<!doctype html>
+<!-- "Sacrifice and the Lamb". The question "where is the lamb?" travels through the film as an empty dashed lamb
+     outline with a small mustard question mark: on the mountain, again after the ram, and answered at the end.
+     A mountain with two plain dots and a bundle of wood; two stone altars (a sheaf; a lamb standing beside, never
+     on, the altar); a ram as a soft shape held by a thicket, unharmed; doorframes with a small mustard mark (the
+     lambs fade, nothing shown); two lambs, morning and twilight, beside a tent, and a long tick line that never
+     ends (Tamid); a scroll labelled ISAIAH 53 with a silent lamb shape beside it, an Ethiopian's chariot, and the
+     two readings as equal cards; the Jordan with one upright mustard bar (Jesus); a framed panel for Grunewald;
+     four Gospel cards tied to a Passover cup; the word LION giving way to a small lamb shape at the centre of an
+     empty throne outline under light of 0.12 or less; wings of dots widening in worship.
+     God is never drawn: only a faint mustard wash. Lambs are soft rounded shapes with no faces or eyes.
+     No animal is shown harmed. The cross is bare. People are dots, all alike. Nothing blames the Jewish people.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Sacrifice and the Lamb</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, soft, up, span, mix, rng, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", GY = 470;
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const G = (p) => el("g", {}, p || world);
+  const dot = (p, x, y, r = 10) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const sl = (p, d, a = {}) => el("path", Object.assign({ d, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round", "stroke-linejoin": "round" }, a), p);
+  const L = (p, x, y, s, size = 15, fill) => txt(p, "lab", x, y, s, size, fill ? { fill } : undefined);
+  const verse = (ch, cx, y, size, max, big, parent) => { const g = G(parent), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  const rows = (p, x0, x1, y0, n, gap, sw = 2.5) => [...Array(n)].map((_, i) => el("line", { x1: x0, x2: i === n - 1 ? mix(x0, x1, 0.6) : x1, y1: y0 + i * gap, y2: y0 + i * gap, stroke: STONE, "stroke-width": sw, "stroke-linecap": "round" }, p));
+
+  // ---------- the lamb: a soft scalloped body, a plain rounded head, four short legs; no face, no eyes ----------
+  const WOOL = (() => { let d = ""; const n = 11, cy = -42, rx = 40, ry = 20;
+    for (let i = 0; i <= n; i++) { const a = Math.PI * 2 * i / n, x = rx * Math.cos(a), y = cy + ry * Math.sin(a);
+      if (!i) d += `M${x.toFixed(1)} ${y.toFixed(1)}`; else { const m = Math.PI * 2 * (i - 0.5) / n; d += ` Q${(rx * 1.3 * Math.cos(m)).toFixed(1)} ${(cy + ry * 1.45 * Math.sin(m)).toFixed(1)} ${x.toFixed(1)} ${y.toFixed(1)}`; } }
+    return d + " Z"; })();
+  const lamb = (p, flip, kind) => {   // kind: "lamb" | "ram" | "ghost"
+    const g = G(p), b = el("g", flip ? { transform: "scale(-1 1)" } : {}, g), ghost = kind === "ghost";
+    const st = ghost ? { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "6 7", "stroke-linecap": "round" } : { stroke: INK, "stroke-width": 2.5 };
+    [-24, -10, 12, 26].forEach((x) => el("line", { x1: x, x2: x, y1: -26, y2: 0, stroke: STONE, "stroke-width": ghost ? 3 : 5, "stroke-linecap": "round", ...(ghost ? { "stroke-dasharray": "5 6" } : {}) }, b));
+    el("path", { d: WOOL, fill: ghost ? "none" : kind === "ram" ? MUTED : PAPER, ...st, "stroke-linejoin": "round" }, b);
+    el("ellipse", { cx: 47, cy: -50, rx: 15, ry: 10, transform: "rotate(28 47 -50)", fill: ghost ? "none" : STONE, ...(ghost ? st : {}) }, b);
+    if (kind === "ram") sl(b, "M42 -60 q4 -16 18 -12 q12 6 2 18 q-8 6 -12 -2", { "stroke-width": 3.5 });
+    return g; };
+  const flame = (p, x, y, s = 1) => el("path", { d: `M${x} ${y} q${-7 * s} ${-9 * s} 0 ${-20 * s} q${7 * s} ${11 * s} 0 ${20 * s} Z`, fill: MUSTARD }, p);
+  const bowlPath = (w, d) => `M${-w} 0 Q0 ${d} ${w} 0 Z`;
+
+  // ---------- the mountain: one profile, used three times ----------
+  const mtnY = (x) => x < 240 ? GY : x < 860 ? GY - 180 * soft((x - 240) / 620) : x < 920 ? GY - 180 : x < 1240 ? GY - 180 * (1 - soft((x - 920) / 320)) : GY;
+  let md = ""; for (let x = -20; x <= 1300; x += 10) md += (md ? " L" : "M") + `${x} ${mtnY(x).toFixed(1)}`;
+
+  const ground = line(world, "M-20 470 H1300", { "stroke-width": 3 });
+
+  // ================= 1 question: the climb, the wood, the fire, and no lamb =================
+  const Q0 = S("question", 0), Q1 = S("question", 1), Q2 = S("question", 2);
+  const gMtn = G(), mtn = line(gMtn, md, { "stroke-width": 3.5 });
+  const gClimb = G();
+  const father = dot(gClimb, 0, 0), son = dot(gClimb, 0, 0);
+  const wood = G(gClimb); [0, 1, 2, 3].forEach((i) => el("line", { x1: -20, x2: 20, y1: -i * 5, y2: -i * 5 - 2, stroke: STONE, "stroke-width": 4, "stroke-linecap": "round" }, wood));
+  el("line", { x1: -6, x2: -6, y1: 3, y2: -20, stroke: INK, "stroke-width": 2 }, wood);
+  const pot = G(gClimb); el("path", { d: bowlPath(11, 16), fill: PAPER, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, pot); flame(pot, 0, -1, 0.55);
+  const v1 = verse(SC.question, 600, 150, 40, 56, true);
+
+  // the travelling question: an empty dashed lamb and a small mustard question mark
+  const gGhost = G(), ghost = lamb(gGhost, false, "ghost"), qGhost = txt(gGhost, "disp", 8, -96, "?", 52, { fill: MUSTARD });
+
+  // ================= 2 abel: two altars; some, and the first and best =================
+  const A0 = S("abel", 0), A1 = S("abel", 1), A2 = S("abel", 2);
+  const altar = (p, cx, w) => { const out = [], h = 24; [[4, 0], [3, 1], [2, 2]].forEach(([n, r]) => { const rw = w - r * 30, bw = rw / n;
+      for (let i = 0; i < n; i++) out.push(el("rect", { x: cx - rw / 2 + i * bw + 1.5, y: GY - (r + 1) * h, width: bw - 3, height: h - 3, rx: 7, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, p)); } ); return out; };
+  const gAb = G();
+  const stonesC = altar(gAb, 400, 150), stonesA = altar(gAb, 880, 150);
+  const sheaf = G(gAb); [-30, -18, -6, 6, 18, 30].forEach((a) => { const r = a * Math.PI / 180; sl(sheaf, `M400 402 L${(400 + 64 * Math.sin(r)).toFixed(1)} ${(402 - 64 * Math.cos(r)).toFixed(1)}`, { stroke: STONE, "stroke-width": 3 }); });
+  el("rect", { x: 390, y: 380, width: 20, height: 8, rx: 3, fill: INK }, sheaf);
+  const cain = dot(gAb, 290, 459), abel = dot(gAb, 1000, 459);
+  const abLamb = lamb(gAb, true, "lamb");
+  const favor = el("path", { d: "M800 90 L960 90 L1000 470 L760 470 Z", fill: MUSTARD }, gAb);
+  const labC = L(gAb, 400, 506, "CAIN", 15), labA = L(gAb, 880, 506, "ABEL", 15);
+  const labSome = L(gAb, 400, 534, "SOME", 14, INK), labBest = L(gAb, 880, 534, "THE FIRST AND BEST", 14, INK);
+  const labNot = L(gAb, 640, 290, "NOT PLANTS AGAINST ANIMALS", 15), labFaith = L(gAb, 640, 290, "HEBREWS 11:4 · BY FAITH", 15);
+  const v2 = verse(SC.abel, 640, 138, 30, 64, true);
+
+  // ================= 3 provide: the summit altar, stopped; a ram in the thicket =================
+  const P0 = S("provide", 0), P1 = S("provide", 1), P2 = S("provide", 2), P3 = S("provide", 3);
+  const gPr = G();
+  const sAltar = G(gPr); [[3, 0], [2, 1]].forEach(([n, r]) => { const rw = 84 - r * 26, bw = rw / n; for (let i = 0; i < n; i++) el("rect", { x: 890 - rw / 2 + i * bw + 1.5, y: 290 - (r + 1) * 20, width: bw - 3, height: 17, rx: 6, fill: MUTED, stroke: INK, "stroke-width": 2.5 }, sAltar); });
+  [0, 1, 2, 3].forEach((i) => el("line", { x1: 860, x2: 920, y1: 246 - i * 5, y2: 244 - i * 5, stroke: STONE, "stroke-width": 4, "stroke-linecap": "round" }, sAltar));
+  const pFather = dot(gPr, 820, mtnY(820) - 10), pSon = dot(gPr, 780, mtnY(780) - 10);
+  const light3 = el("path", { d: "M800 60 L980 60 L1010 290 L770 290 Z", fill: MUSTARD }, gPr);
+  const labTest = L(gPr, 600, 210, "TESTED, THEN STOPPED", 15), labLaw = L(gPr, 600, 238, "LATER, THE LAW AND THE PROPHETS: NEVER A CHILD", 14);
+  const gRam = G(gPr), bush = G(gRam);
+  ["M1010 372 l14 -30 l10 18 l14 -34 l10 22 l12 -28 l10 26 l14 -20 l8 46", "M1016 350 l-12 -8 M1046 330 l-4 -14 M1078 334 l10 -10 M1102 344 l14 -2"].forEach((d) => sl(bush, d, { stroke: STONE, "stroke-width": 3 }));
+  const ram = lamb(gRam, false, "ram");
+  const labRam = L(gPr, 1066, 300, "A RAM", 14), labPlace = L(gPr, 700, 420, "THE LORD WILL PROVIDE", 14, INK);
+  const road3 = line(gPr, "M930 268 C1040 230 1160 214 1300 196", { stroke: MUSTARD, "stroke-width": 2.5 });
+  const v3 = verse(SC.provide, 560, 140, 34, 44, true);
+
+  // ================= 4 passover: one lamb per household; the marked doors; the table and a child's question =================
+  const X0 = S("passover", 0), X1 = S("passover", 1), X2 = S("passover", 2);
+  const gPx = G(), hx = [190, 380, 570, 760, 950];
+  const houses = hx.map((x, i) => { const g = G(gPx); el("rect", { x: x - 60, y: 360, width: 120, height: 110, fill: WARM, stroke: INK, "stroke-width": 3 }, g);
+    el("path", { d: `M${x - 70} 360 H${x + 70}`, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g);
+    el("rect", { x: x - 18, y: 404, width: 36, height: 66, fill: CHAR }, g);
+    const mark = el("rect", { x: x - 22, y: 394, width: 44, height: 6, rx: 3, fill: MUSTARD }, g);
+    const lb = lamb(gPx, false, "lamb"); move(lb, x + 92, GY, 0.42); return { g, mark, lb, i }; });
+  const pyr = sl(gPx, "M1090 470 L1170 380 L1250 470", { stroke: LINE, "stroke-width": 3 });
+  const night = el("rect", { x: -40, y: -40, width: 1360, height: 800, fill: CHAR }, gPx);
+  const gTable = G(gPx);
+  el("rect", { x: 520, y: 414, width: 240, height: 14, rx: 4, fill: WARM, stroke: INK, "stroke-width": 3 }, gTable); sl(gTable, "M546 428 V470 M734 428 V470");
+  el("path", { d: "M626 372 H654 Q652 396 640 398 Q628 396 626 372 Z M640 398 V410 M628 412 H652", fill: PAPER, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, gTable);
+  dot(gTable, 470, 459); dot(gTable, 812, 463, 7);
+  const qChild = txt(gTable, "disp", 812, 430, "?", 44, { fill: MUSTARD });
+  const labYear = L(gTable, 640, 506, "EVERY YEAR", 15);
+  const v4 = verse(SC.passover, 640, 150, 36, 50, true);
+
+  // ================= 5 daily: morning and twilight beside the tent; a line of days that never closes =================
+  const D0 = S("daily", 0), D1 = S("daily", 1), D2 = S("daily", 2);
+  const gDy = G();
+  const tent = G(gDy); sl(tent, "M390 470 V412 H890 V470", { "stroke-width": 3 }); [430, 470, 510, 770, 810, 850].forEach((x) => sl(tent, `M${x} 412 V470`, { stroke: STONE, "stroke-width": 2.5 }));
+  el("rect", { x: 580, y: 350, width: 120, height: 120, fill: PAPER, stroke: INK, "stroke-width": 3 }, tent); sl(tent, "M570 352 L640 318 L710 352", { "stroke-width": 3.5 }); el("rect", { x: 624, y: 410, width: 32, height: 60, fill: CHAR }, tent);
+  const mLamb = lamb(gDy, false, "lamb"), eLamb = lamb(gDy, true, "lamb");
+  const labM = L(gDy, 250, 506, "MORNING", 14), labE = L(gDy, 1030, 506, "TWILIGHT", 14);
+  const sun = el("circle", { r: 17, fill: MUSTARD }, gDy);
+  const gTick = G(gDy), tl = line(gTick, "M100 548 H1180", { stroke: STONE, "stroke-width": 2.5 });
+  const ticks = [...Array(78)].map((_, i) => el("line", { y1: 548, y2: i % 2 ? 534 : 540, stroke: i % 2 ? STONE : INK, "stroke-width": 2.5, "stroke-linecap": "round" }, gTick));
+  const labTamid = L(gDy, 640, 232, "TAMID · CONTINUAL", 16, INK), labCent = L(gDy, 640, 260, "AT THE TEMPLE, FOR CENTURIES", 14);
+  const labHeb = L(gDy, 640, 232, "HEBREWS 10:11 · AGAIN AND AGAIN", 16, INK);
+  const qDaily = txt(gDy, "disp", 1214, 562, "?", 58, { fill: MUSTARD });
+  const v5 = verse(SC.daily, 640, 160, 36, 64, true);
+
+  // ================= 6 servant: the scroll, a person, a silent lamb; the chariot; two readings =================
+  const V0 = S("servant", 0), V1 = S("servant", 1), V2 = S("servant", 2), V3 = S("servant", 3);
+  const gSv = G(), gScroll = G(gSv);
+  const paper = el("rect", { x: 150, y: 300, height: 150, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, gScroll);
+  const scrollRows = rows(gScroll, 172, 470, 326, 6, 20);
+  const rollL = el("rect", { x: 140, y: 288, width: 18, height: 174, rx: 9, fill: WARM, stroke: INK, "stroke-width": 3 }, gScroll);
+  const rollR = el("rect", { y: 288, width: 18, height: 174, rx: 9, fill: WARM, stroke: INK, "stroke-width": 3 }, gScroll);
+  const labIsa = L(gScroll, 320, 270, "ISAIAH 53", 16, INK);
+  const gServ = G(gSv), servant = dot(gServ, 720, 459), others = [930, 980, 1030, 1080, 1130].map((x) => dot(gServ, x, 459));
+  const labPerson = L(gServ, 720, 506, "A PERSON, NOT AN ANIMAL", 14);
+  const svLamb = lamb(gServ, false, "lamb");
+  const gCh = G(gSv), chariot = G(gCh);
+  el("path", { d: "M-60 -64 H30 V-26 H-60 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, chariot);
+  sl(chariot, "M30 -40 H90");
+  dot(chariot, -30, -76, 9); el("rect", { x: -16, y: -96, width: 22, height: 28, fill: PAPER, stroke: INK, "stroke-width": 2 }, chariot);
+  const wheel = G(chariot); el("circle", { r: 24, fill: "none", stroke: INK, "stroke-width": 3 }, wheel); sl(wheel, "M-24 0 H24 M0 -24 V24", { "stroke-width": 2.5 });
+  const qCh = txt(gCh, "disp", 900, 270, "?", 60, { fill: MUSTARD });
+  const labHim = L(gCh, 770, 300, "HIMSELF", 14), labElse = L(gCh, 1040, 300, "SOMEONE ELSE", 14), labActs = L(gCh, 900, 506, "ACTS 8:34", 14);
+  const gRd = G(gSv);
+  const card = (x, a, b, c) => { const g = G(gRd); el("rect", { x: x - 135, y: 270, width: 270, height: 118, rx: 6, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, g);
+    L(g, x, 304, a, 15, INK); L(g, x, 328, b, 12); txt(g, "disp", x, 370, c, 36); return g; };
+  const cardC = card(760, "CHRISTIANS", "FROM THE FIRST CHURCH ON", "Jesus"), cardJ = card(1070, "MANY JEWISH READERS", "RASHI AMONG THEM", "Israel");
+  const threads = [line(gRd, "M500 420 C600 440 700 430 760 392", { stroke: STONE, "stroke-width": 2.5 }), line(gRd, "M500 430 C700 470 980 450 1070 392", { stroke: STONE, "stroke-width": 2.5 })];
+  const v6 = verse(SC.servant, 640, 136, 30, 62, true);
+
+  // ================= 7 look: the Jordan; John; one upright mustard bar; the strands gather; the panel =================
+  const L0 = S("look", 0), L1 = S("look", 1), L2 = S("look", 2);
+  const gLk = G(), gRiver = G(gLk);
+  const waves = [500, 524, 548].map((y, i) => { let d = ""; for (let x = -80; x <= 1360; x += 20) d += (d ? " L" : "M") + `${x} ${(y + 5 * Math.sin(x / 40 + i * 1.7)).toFixed(1)}`; return sl(gRiver, d, { stroke: LINE, "stroke-width": 3 }); });
+  const labJordan = L(gLk, 150, 446, "THE JORDAN", 14);
+  const john = dot(gLk, 420, 459);
+  const bar = el("rect", { y: 378, width: 12, height: 92, rx: 6, fill: MUSTARD }, gLk);
+  const point = line(gLk, "M438 450 Q600 404 752 418", { stroke: STONE, "stroke-width": 2.5 });
+  const strandTxt = ["THE LAMB GOD PROVIDES", "THE PASSOVER LAMB", "THE DAILY LAMBS", "THE SILENT SERVANT"];
+  const strands = strandTxt.map((s, i) => { const y = 226 + i * 46, g = G(gLk); L(g, 250, y + 5, s, 14, INK); const ln = line(g, `M420 ${y} C560 ${y} 700 ${y + 60} 778 372`, { stroke: MUSTARD, "stroke-width": 2 }); return { g, ln, i }; });
+  const gPanel = G();
+  el("rect", { x: 420, y: 170, width: 440, height: 290, fill: PAPER, stroke: INK, "stroke-width": 4 }, gPanel); el("rect", { x: 434, y: 184, width: 412, height: 262, fill: "none", stroke: LINE, "stroke-width": 2 }, gPanel);
+  sl(gPanel, "M560 434 V214 M516 262 H604", { "stroke-width": 5 });
+  sl(gPanel, "M434 434 H846", { stroke: STONE, "stroke-width": 2.5 });
+  dot(gPanel, 742, 423); const finger = line(gPanel, "M730 410 L618 292", { "stroke-width": 3 });
+  const pLamb = lamb(gPanel, true, "lamb"); move(pLamb, 800, 434, 0.36);
+  const labGr = L(gPanel, 640, 494, "MATTHIAS GRÜNEWALD · THE 1510s", 15);
+  const v7 = verse(SC.look, 640, 146, 36, 34, true);
+
+  // ================= 8 passover-again: four Gospel cards tied to a Passover cup =================
+  const R0 = S("passover-again", 0), R1 = S("passover-again", 1), R2 = S("passover-again", 2);
+  const gRa = G(), gx = [340, 540, 740, 940];
+  const gcards = ["MATTHEW", "MARK", "LUKE", "JOHN"].map((s, i) => { const g = G(gRa), x = gx[i]; el("rect", { x: x - 76, y: 150, width: 152, height: 48, rx: 6, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, g); L(g, x, 180, s, 14, INK);
+    const u = el("rect", { x: x - 40, y: 206, width: 80, height: 5, rx: 2.5, fill: MUSTARD }, g); return { g, u }; });
+  const cross8 = G(gRa); sl(cross8, "M150 470 V330 M118 366 H182", { "stroke-width": 5 });
+  const table8 = G(gRa); el("rect", { x: 540, y: 414, width: 200, height: 14, rx: 4, fill: WARM, stroke: INK, "stroke-width": 3 }, table8); sl(table8, "M564 428 V470 M716 428 V470");
+  el("path", { d: "M626 372 H654 Q652 396 640 398 Q628 396 626 372 Z M640 398 V410 M628 412 H652", fill: PAPER, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, table8);
+  const labSup = L(gRa, 640, 506, "THE LAST SUPPER · A PASSOVER MEAL", 14);
+  const toCup = [0, 1, 2].map((i) => line(gRa, `M${gx[i]} 214 C${gx[i]} 300 640 300 640 366`, { stroke: STONE, "stroke-width": 2.5 }));
+  const toJohn = line(gRa, "M940 214 C940 250 1030 250 1030 282", { stroke: STONE, "stroke-width": 2.5 });
+  const scale = G(gRa), beam = G(scale); sl(scale, "M330 470 V300 M300 470 H360", { "stroke-width": 3.5 });
+  sl(beam, "M-64 0 H64 M-56 0 L-70 36 M-56 0 L-42 36 M56 0 L42 36 M56 0 L70 36", { "stroke-width": 2.5 });
+  sl(beam, "M-74 36 Q-56 50 -38 36 M38 36 Q56 50 74 36", { "stroke-width": 3 });
+  const labAll = L(gRa, 640, 118, "ALL FOUR TIE IT TO PASSOVER", 15, INK);
+  const door8 = G(gRa); sl(door8, "M1010 470 V320 H1130 V470", { stroke: INK, "stroke-width": 4 }); el("rect", { x: 1040, y: 308, width: 60, height: 6, rx: 3, fill: MUSTARD }, door8);
+  const labBone = L(door8, 1070, 506, "NOT ONE BONE BROKEN", 14, INK), labBoneRef = L(door8, 1070, 532, "EXODUS 12:46 · JOHN 19:36", 13);
+  const v8 = verse(SC["passover-again"], 1040, 306, 26, 24, false);
+
+  // ================= 9 throne: LION, then a small lamb standing at the centre of an empty throne =================
+  const T0 = S("throne", 0), T1 = S("throne", 1), T2 = S("throne", 2), T3 = S("throne", 3);
+  const gLion = G(), lion = txt(gLion, "disp", 640, 360, "LION", 140), labLion = L(gLion, 640, 412, "THE LION OF THE TRIBE OF JUDAH", 15);
+  const gTh = G();
+  const glow = el("path", { d: "M520 70 L760 70 L860 470 L420 470 Z", fill: MUSTARD }, gTh);
+  el("rect", { x: 470, y: 446, width: 340, height: 24, fill: WARM, stroke: INK, "stroke-width": 3 }, gTh);
+  el("rect", { x: 520, y: 422, width: 240, height: 24, fill: WARM, stroke: INK, "stroke-width": 3 }, gTh);
+  el("path", { d: "M556 422 V300 Q640 262 724 300 V422", fill: PAPER, stroke: INK, "stroke-width": 4, "stroke-linejoin": "round" }, gTh);
+  const thLamb = el("g", {}, gTh); el("rect", { x: -6, y: -74, width: 12, height: 92, rx: 6, fill: MUSTARD }, thLamb); // the Lamb is Christ: shown only as the upright bar
+  const gWord = G(); txt(gWord, "ital", 230, 300, "arnion", 40); L(gWord, 230, 326, "SMALL, EVEN TENDER", 13);
+  const count = [...Array(28)].map((_, i) => el("line", { x1: 116 + (i % 14) * 19, x2: 116 + (i % 14) * 19, y1: 352 + Math.floor(i / 14) * 34, y2: 376 + Math.floor(i / 14) * 34, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gWord));
+  const labCount = L(gWord, 240, 446, "28 TIMES IN REVELATION", 13);
+  const gStand = G(); L(gStand, 1050, 330, "STANDING: ALIVE", 15, INK); L(gStand, 1050, 358, "THE MARKS REMAIN", 13);
+  const qThrone = txt(world, "disp", 1050, 360, "?", 96, { fill: MUSTARD });
+  const v9 = verse(SC.throne, 640, 138, 30, 60, true);
+
+  // ================= 10 worthy: wings of dots widening in worship; the question answered =================
+  const W0 = S("worthy", 0), W1 = S("worthy", 1), W2 = S("worthy", 2);
+  const gWo = G(), rr = rng(11);
+  const crowd = [];
+  [250, 320, 390, 460, 530, 600].forEach((r, row) => { const n = Math.round(r * 0.9 / 26);
+    for (const side of [-1, 1]) for (let k = 0; k < n; k++) { const a = (8 + k * (50 / Math.max(1, n - 1))) * Math.PI / 180, x = 640 + side * r * Math.cos(a), y = GY - 14 - 0.5 * r * Math.sin(a);
+      if (x < 20 || x > 1260) continue; crowd.push({ e: dot(gWo, x, y, 5.5), x, y, row, side, d: rr() }); } });
+  const realms = [[640, 248, "IN HEAVEN"], [190, 520, "ON EARTH"], [640, 520, "UNDER THE EARTH"], [1090, 520, "IN THE SEA"]].map(([x, y, s]) => L(gWo, x, y, s, 14));
+  const answer = line(gWo, "M170 214 C320 200 540 250 612 384", { stroke: MUSTARD, "stroke-width": 3 });
+  const hill = sl(gWo, "M20 300 Q120 236 220 300", { stroke: LINE, "stroke-width": 3 });
+  const v10 = verse(SC.worthy, 640, 128, 28, 66, true);
+
+  F.title("Sacrifice and the Lamb", 70);
+  F.endCard(SC.worthy.titleCard, END + 0.7);
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    draw(ground, up(t, 1.2, 1.4)); op(ground, outAll);
+    // ----- 1 question -----
+    const m1 = up(t, Q0 - 0.8, 0.8) * (1 - up(t, S("abel", 0) - 0.7, 0.7)), m3 = up(t, P0 - 0.5, 0.8) * (1 - up(t, X0 - 0.6, 0.6));
+    op(gMtn, Math.max(m1, m3)); draw(mtn, Math.max(up(t, Q0 - 0.6, 2.2), up(t, P0 - 0.5, 1.6)));
+    const ck = up(t, Q0 + 0.4, Q1 - Q0 + 0.6), fx = mix(300, 812, ck), sx = fx - 48, step = ck > 0.01 && ck < 0.99 ? 1 : 0;
+    set(father, { cx: fx.toFixed(1), cy: (mtnY(fx) - 10 - 3 * Math.abs(Math.sin(t * 5)) * step).toFixed(1) });
+    set(son, { cx: sx.toFixed(1), cy: (mtnY(sx) - 10 - 3 * Math.abs(Math.sin(t * 5 + 1)) * step).toFixed(1) });
+    move(wood, sx, mtnY(sx) - 30, 1, -14 * (1 - ck) - 4); move(pot, fx + 4, mtnY(fx) - 30);
+    op(gClimb, up(t, Q0 - 0.2, 0.6) * (1 - up(t, S("abel", 0) - 0.7, 0.7)));
+    op(v1, span(t, Q1 - 0.3, Q2 + 0.4, 0.5));
+    // the travelling question
+    const g1 = span(t, Q1 + 0.9, S("abel", 0) - 0.3, 0.8), g3 = span(t, at("provide", 3, 0.2), X0 - 0.4, 0.8), g10 = span(t, W2 - 0.2, END + 0.5, 0.7);
+    op(gGhost, Math.max(g1, g3, g10));
+    if (t < P0) move(gGhost, 1100, 336 + 4 * Math.sin(t * 1.3), 0.9);
+    else if (t < W0) move(gGhost, mix(1100, 1170, up(t, at("provide", 3, 0.2), 6)), 226 + 4 * Math.sin(t * 1.3), 0.7);
+    else move(gGhost, 120, 250, 0.62);
+    qGhost.setAttribute("transform", `translate(8 -96) scale(${(1 + 0.25 * up(t, Q2, 1.2) * (t < A0 ? 1 : 0)).toFixed(3)}) translate(-8 96)`);
+    op(qGhost, t > W0 ? 1 - up(t, at("worthy", 2, 0.55), 0.9) : 1);
+    // ----- 2 abel -----
+    const abOut = 1 - up(t, P0 - 0.6, 0.6); op(gAb, up(t, A0 - 0.4, 0.6) * abOut);
+    stonesC.forEach((s, i) => op(s, up(t, A0 - 0.2 + i * 0.12, 0.4))); stonesA.forEach((s, i) => op(s, up(t, A0 + 0.4 + i * 0.12, 0.4)));
+    op(cain, up(t, A0 + 0.6, 0.5)); op(abel, up(t, A0 + 1.2, 0.5)); op(sheaf, up(t, at("abel", 0, 0.62), 0.8));
+    sheaf.setAttribute("transform", `rotate(${(1.5 * Math.sin(t * 1.4)).toFixed(2)} 400 402)`);
+    const la = up(t, A1 - 0.2, 2.4); move(abLamb, mix(1260, 1086, la), GY - 3 * Math.abs(Math.sin(t * 4)) * (la > 0.01 && la < 0.99 ? 1 : 0), 0.5); op(abLamb, up(t, A1 - 0.3, 0.5));
+    op(favor, up(t, at("abel", 1, 0.55), 1.2) * (0.08 + 0.02 * Math.sin(t * 1.6)));
+    op(v2, span(t, A1 - 0.3, A2 - 0.1, 0.5));
+    op(labC, up(t, A0 + 0.6, 0.5)); op(labA, up(t, A0 + 1.2, 0.5));
+    op(labNot, span(t, A2 + 0.2, at("abel", 2, 0.45), 0.5)); op(labSome, up(t, at("abel", 2, 0.42), 0.6)); op(labBest, up(t, at("abel", 2, 0.48), 0.6));
+    op(labFaith, up(t, at("abel", 2, 0.74), 0.6));
+    // ----- 3 provide -----
+    op(gPr, up(t, P0 - 0.3, 0.6) * (1 - up(t, X0 - 0.6, 0.6)));
+    op(sAltar, up(t, P0 + 0.4, 0.8)); op(pFather, up(t, P0 + 0.6, 0.5)); op(pSon, up(t, P0 + 0.8, 0.5));
+    pSon.setAttribute("cx", mix(780, 760, up(t, at("provide", 0, 0.45), 1.4)).toFixed(1)); pSon.setAttribute("cy", (mtnY(mix(780, 760, up(t, at("provide", 0, 0.45), 1.4))) - 10).toFixed(1));
+    op(light3, up(t, at("provide", 0, 0.32), 1.4) * (0.08 + 0.02 * Math.sin(t * 1.5)));
+    op(labTest, span(t, at("provide", 0, 0.3), P1 - 0.4, 0.6)); op(labLaw, span(t, at("provide", 0, 0.62), P1 - 0.4, 0.6));
+    op(v3, span(t, P1 - 0.3, P2 - 0.1, 0.5));
+    const rIn = up(t, P2 - 0.1, 0.9); op(gRam, rIn); move(ram, 1062, mtnY(1062) - 2, 0.6); ram.setAttribute("transform", ram.getAttribute("transform") + ` rotate(${(1.2 * Math.sin(t * 1.1)).toFixed(2)})`);
+    op(labPlace, up(t, at("provide", 2, 0.65), 0.7)); op(labRam, up(t, P3 - 0.1, 0.6));
+    draw(road3, up(t, at("provide", 3, 0.45), 2.4));
+    // ----- 4 passover -----
+    const xOut = 1 - up(t, D0 - 0.6, 0.6); op(gPx, up(t, X0 - 0.4, 0.6) * xOut);
+    const hDim = 1 - up(t, X2 - 0.5, 0.8);
+    houses.forEach((h) => { op(h.g, up(t, X0 - 0.2 + h.i * 0.25, 0.5) * hDim); op(h.lb, up(t, at("passover", 0, 0.5) + h.i * 0.3, 0.6) * (1 - up(t, at("passover", 1, 0.32) + h.i * 0.1, 1.0)));
+      const w = 44 * up(t, at("passover", 1, 0.42) + h.i * 0.22, 0.6); set(h.mark, { x: (hx[h.i] - w / 2).toFixed(1), width: Math.max(0.1, w).toFixed(1) }); op(h.mark, w > 0.5 ? 1 : 0); });
+    op(pyr, up(t, X1, 0.8) * hDim);
+    op(night, span(t, at("passover", 1, 0.6), X2 + 0.2, 1.0, 1.0) * 0.08);
+    op(gTable, up(t, X2 - 0.2, 0.7)); op(qChild, up(t, at("passover", 2, 0.45), 0.6)); qChild.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 2)).toFixed(1)})`);
+    op(v4, span(t, at("passover", 0, 0.3), X1 - 0.1, 0.5));
+    // ----- 5 daily -----
+    const dOut = 1 - up(t, V0 - 0.6, 0.6); op(gDy, up(t, D0 - 0.4, 0.6) * dOut);
+    op(tent, up(t, D0 - 0.2, 0.8));
+    const lm = up(t, at("daily", 0, 0.55), 0.6), le = up(t, at("daily", 0, 0.82), 0.6);
+    move(mLamb, 250, GY, 0.5); op(mLamb, lm); op(labM, lm); move(eLamb, 1030, GY, 0.5); op(eLamb, le); op(labE, le);
+    let sk; if (t < D1) sk = mix(0.08, 0.92, up(t, at("daily", 0, 0.5), at("daily", 0, 0.95) - at("daily", 0, 0.5)));
+    else sk = (0.92 + (t - D1) / (t < D2 ? 2.6 : 6)) % 1;
+    set(sun, { cx: mix(160, 1120, sk).toFixed(1), cy: (380 - 4 * sk * (1 - sk) * 130).toFixed(1) }); op(sun, up(t, D0, 0.6) * (0.5 + 0.5 * Math.min(1, 6 * Math.min(sk, 1 - sk))));
+    op(gTick, up(t, D1 - 0.3, 0.6)); draw(tl, up(t, D1 - 0.2, 1.4));
+    const shift = (t - D1) * (t < D2 ? 26 : 14), on = up(t, D1, 2.0);
+    ticks.forEach((k, i) => { const x = 100 + (((i * 14 - shift) % 1092) + 1092) % 1092; set(k, { x1: x.toFixed(1), x2: x.toFixed(1) }); op(k, on * Math.min(1, (x - 100) / 60, (1180 - x) / 60) * (x > 1180 ? 0 : 1)); });
+    op(labTamid, span(t, D1 + 0.1, D2 - 0.1, 0.6)); op(labCent, span(t, at("daily", 1, 0.5), D2 - 0.1, 0.6));
+    op(qDaily, span(t, at("daily", 2, 0.06), at("daily", 2, 0.52), 0.6)); op(labHeb, up(t, at("daily", 2, 0.5), 0.6));
+    op(v5, span(t, at("daily", 0, 0.42), D1 - 0.1, 0.5));
+    // ----- 6 servant -----
+    const vOut = 1 - up(t, L0 - 0.6, 0.6); op(gSv, up(t, V0 - 0.4, 0.6) * vOut);
+    const un = up(t, V0 - 0.2, 2.0), pw = 340 * un; set(paper, { width: Math.max(0.1, pw).toFixed(1) }); rollR.setAttribute("x", (142 + pw).toFixed(1));
+    scrollRows.forEach((r, i) => op(r, up(t, V0 + 0.6 + i * 0.2, 0.4))); op(labIsa, up(t, V0 + 0.8, 0.6));
+    op(gServ, span(t, V0 + 0.8, V2 - 0.1, 0.6)); others.forEach((o, i) => op(o, up(t, V0 + 1.4 + i * 0.12, 0.4))); op(labPerson, up(t, at("servant", 0, 0.4), 0.6));
+    const lw = up(t, V1 + 0.2, 5.5); move(svLamb, mix(560, 640, lw), GY - 2 * Math.abs(Math.sin(t * 3)) * (lw > 0.01 && lw < 0.99 ? 1 : 0), 0.48); op(svLamb, up(t, V1, 0.7));
+    op(gCh, span(t, V2 - 0.1, V3 - 0.1, 0.6)); const cr = up(t, V2 - 0.2, 7); move(chariot, mix(820, 960, cr), GY); wheel.setAttribute("transform", `translate(-14 -24) rotate(${(cr * 330).toFixed(1)})`);
+    op(qCh, up(t, at("servant", 2, 0.5), 0.6)); op(labHim, up(t, at("servant", 2, 0.72), 0.5)); op(labElse, up(t, at("servant", 2, 0.82), 0.5));
+    op(gRd, up(t, V3 - 0.1, 0.6)); op(cardC, up(t, at("servant", 3, 0.05), 0.6)); op(cardJ, up(t, at("servant", 3, 0.5), 0.6));
+    draw(threads[0], up(t, at("servant", 3, 0.08), 1.2)); draw(threads[1], up(t, at("servant", 3, 0.52), 1.2));
+    op(v6, span(t, V1 - 0.3, V2 - 0.1, 0.5));
+    // ----- 7 look -----
+    const kOut = 1 - up(t, L2 - 0.5, 0.7); op(gLk, up(t, L0 - 0.4, 0.6) * kOut);
+    waves.forEach((w, i) => w.setAttribute("transform", `translate(${(((t * (14 + i * 4)) % 251) - 125).toFixed(1)} 0)`));
+    const bx = mix(1180, 784, up(t, L0 + 0.4, 4.2)); bar.setAttribute("x", (bx - 6).toFixed(1)); op(bar, up(t, L0 + 0.2, 0.8));
+    draw(point, up(t, at("look", 0, 0.55), 1.2)); op(point, 1 - 0.6 * up(t, L1, 0.6));
+    strands.forEach((s) => { const a = at("look", 1, 0.32 + s.i * 0.13); op(s.g, up(t, a - 0.3, 0.6)); draw(s.ln, up(t, a, 1.2)); });
+    op(gPanel, span(t, L2 - 0.1, S("passover-again", 0) - 0.3, 0.7)); draw(finger, up(t, at("look", 2, 0.5), 1.2)); op(pLamb, up(t, at("look", 2, 0.7), 0.6));
+    op(v7, span(t, L0 - 0.2, L1 - 0.1, 0.5));
+    // ----- 8 passover-again -----
+    const rOut = 1 - up(t, T0 - 0.6, 0.6); op(gRa, up(t, R0 - 0.3, 0.6) * rOut);
+    gcards.forEach((c, i) => { op(c.g, up(t, R0 + 0.1 + i * 0.25, 0.5)); const u = i === 3 ? up(t, at("passover-again", 0, 0.45), 0.5) : up(t, at("passover-again", 1, 0.74) + i * 0.15, 0.5); const w = 80 * u; set(c.u, { x: (gx[i] - w / 2).toFixed(1), width: Math.max(0.1, w).toFixed(1) }); op(c.u, w > 0.5 ? 1 : 0); });
+    op(cross8, up(t, R0 + 0.3, 0.8));
+    op(table8, up(t, R1 - 0.2, 0.7)); toCup.forEach((l, i) => draw(l, up(t, R1 + i * 0.3, 1.0))); op(labSup, up(t, at("passover-again", 1, 0.2), 0.6));
+    draw(toJohn, up(t, at("passover-again", 0, 0.42), 0.8));
+    op(scale, span(t, at("passover-again", 1, 0.42), R2 + 0.2, 0.6)); move(beam, 330, 300, 1, 7 * Math.sin(t * 0.9) * (1 - 0.8 * up(t, at("passover-again", 1, 0.75), 1.5)));
+    op(labAll, up(t, at("passover-again", 1, 0.74), 0.6));
+    op(v8, span(t, at("passover-again", 0, 0.42), R2 - 0.1, 0.6)); op(toJohn, 1 - up(t, R2 - 0.3, 0.5));
+    op(door8, up(t, R2 + 0.1, 0.7)); op(labBoneRef, up(t, at("passover-again", 2, 0.4), 0.6));
+    // ----- 9 throne -----
+    const lo = span(t, T0 - 0.3, at("throne", 0, 0.68), 0.7, 0.9); op(gLion, lo); lion.setAttribute("transform", `translate(640 330) scale(${mix(1, 0.86, up(t, at("throne", 0, 0.5), 1.4)).toFixed(3)}) translate(-640 -330)`);
+    op(labLion, up(t, T0 + 0.5, 0.6));
+    const th = up(t, at("throne", 0, 0.62), 1.2); op(gTh, th * outAll); move(thLamb, 640, 422, 0.62);
+    op(thLamb, up(t, at("throne", 0, 0.8), 1.0)); op(glow, up(t, at("throne", 0, 0.75), 1.6) * (0.08 + 0.02 * Math.sin(t * 1.2)));
+    op(v9, span(t, T1 - 0.3, T2 - 0.1, 0.5));
+    op(gWord, span(t, T2 + 0.1, T3 - 0.2, 0.6)); count.forEach((c, i) => op(c, up(t, at("throne", 2, 0.35) + i * 0.09, 0.2)));
+    op(gStand, span(t, at("throne", 2, 0.62), T3 - 0.2, 0.6));
+    op(qThrone, span(t, at("throne", 3, 0.2), W0 - 0.1, 0.7));
+    // ----- 10 worthy -----
+    op(gWo, up(t, W0 - 0.3, 0.6) * outAll);
+    crowd.forEach((c) => { const a = up(t, W0 + c.row * 0.75 + c.d * 0.5, 0.6), bow = 3 * Math.max(0, Math.sin(t * 1.2 - c.row * 0.4));
+      op(c.e, a); set(c.e, { cx: (c.x - c.side * bow).toFixed(1), cy: (c.y + bow * 0.6).toFixed(1) }); });
+    realms.forEach((r, i) => op(r, span(t, W0 + 0.6 + i * 0.9, W1 - 0.2, 0.6)));
+    op(v10, span(t, W1 - 0.3, W2 - 0.1, 0.5));
+    op(hill, up(t, W2 - 0.2, 0.8)); draw(answer, up(t, at("worthy", 2, 0.4), 1.6));
+  };
+});
+</script>
+</body></html>
