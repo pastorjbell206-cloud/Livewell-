@@ -1,53 +1,73 @@
-We don't have the original writings of the New Testament. Nobody should pretend otherwise.
+Here's an objection you may have heard. We don't have the original New Testament. Not one page.
 
-What we have are handwritten copies, and copies of copies after that. The earliest are fragments whose dates are argued over. The fullest come from the fourth century.
+Only copies of copies, made by hand for centuries. So how could anyone know what it first said?
 
-So the objection runs: if the copying went on for centuries, and the first hundred years can't be seen at all, then trusting the result is like asking the last child in a game of telephone what the first child said.
+Start with what's true, because a lot of it is.
 
-The objection is old. In the second century the philosopher Celsus charged that believers had reworked the Gospel many times over. In our time Bart Ehrman has made the case with care.
+The New Testament was copied by hand for nearly fifteen hundred years, until it was first printed in Greek in 1516.
 
-A good deal of it is true. No original of any New Testament book survives. The oldest piece is usually thought to be P52, a scrap of John 18, and scholars disagree about how old it is. A careful reader holds those dates loosely.
+None of the originals survives. And the copies differ from one another in more places than there are words in the New Testament.
 
-Christians have sometimes claimed more than the evidence gives. In 2012 a fragment of Mark was announced as first century. When it was published in 2018, it was dated to the late second or early third century, and the scholar who announced it publicly apologized.
+But think about why that number is so big.
 
-And the telephone picture is right about one thing. A mistake copied is a mistake kept until someone notices it.
+Every copyist made mistakes. So the more copies survive, the more mistakes survive with them. And no book of the ancient world survives in more copies than this one.
 
-But the picture breaks down at four points.
+Compare one of Rome's great histories. The first six books of the Annals of Tacitus survive in a single medieval copy.
 
-First, the New Testament was written, not whispered. A copyist had the page open in front of him and could look back at it. Most of his mistakes were the kind writing makes and other copyists can spot: a letter misread, a line skipped, a word written twice.
+One copy has no differences to count. That doesn't make it more reliable. It makes its mistakes invisible.
 
-Second, the copying branched. Telephone runs in single file. The New Testament spread like a family tree, copied in Egypt, Syria and Italy by people who never met.
+So what are all those differences?
 
-A mistake made in one branch is passed down that branch and nowhere else. Set the branches side by side, and the mistake stands out.
+Most are spelling and simple slips. A letter dropped. A word written twice.
 
-Third, the older copies weren't destroyed. In the game, once you've whispered the message, it's gone. A manuscript could be used for generations and checked against.
+Many more you couldn't even see in English, like the order of words in a Greek sentence.
 
-P75, a copy of Luke and John usually dated around 200, shows signs of long use and repair. Its text agrees closely with Codex Vaticanus, copied in the fourth century. One study put the agreement at about 85 percent. On the usual dating, that is careful copying across more than a century.
+Some change the meaning, but turn up in one late copy against all the rest.
 
-Fourth, the early church compared copies and argued about them in the open.
+And a small share both change the meaning and have a real claim to be original. One leading scholar puts them at less than one percent.
 
-Around 180, Irenaeus knew that some copies of Revelation gave the number of the beast as 616, and said 666 stood in the most approved and ancient copies. Origen complained about careless copyists. Eusebius noted that almost all the copies of Mark he knew ended at 16:8.
+Here's one of those hard cases. Jesus is speaking about the day He will return.
 
-These are people checking, not people whispering.
+No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.
 
-The same objection is made about the years before anything was written down. The stories did change in the telling. Mark has one blind man at Jericho; Matthew has two. The charge above the cross is worded four ways in four Gospels.
+The oldest copies of Matthew have the words, nor the Son. Many later copies leave them out, most likely because they were hard to explain.
 
-But telephone is one private whisper that no one hears twice. The stories of Jesus were told again and again, in public, to people who already knew them and would notice when a teller got it wrong.
+And that's how we know. The older wording didn't vanish. It survived in other copies, right beside the change.
 
-And all four wordings of the charge say the same thing: he was crucified as the King of the Jews. Telephone loses the core. This tradition varied the details and kept the core.
+That's why the telephone game is the wrong picture. In that game, one whisper passes down one line, and nobody can check it.
 
-The strongest reply moves the question back. You can trace the branches to the trunk, it says, but you can't see the root. The first century of copying left no copies.
+The New Testament was written, not whispered. And it was copied in many places at once, from Egypt to Gaul, by people who never met.
 
-That is the right place to press. But by the second century the books had spread so widely that a change would have had to come very early and reach every branch, leaving no trace of the older reading anywhere.
+A mistake made in one branch is passed down that branch and nowhere else. Lay the branches side by side, and the mistake stands out.
 
-And Paul, writing in the 50s, before any Gospel, passes on the core of the story as something he had received.
+Older copies stayed in use, too. A copy of Luke and John from about the year two hundred agrees closely with a great Bible made more than a century later.
 
-For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures,
+And the church argued about differences in the open. Around the year one eighty, Irenaeus said the oldest copies of Revelation read six hundred sixty-six, not six hundred sixteen.
 
-that He was buried, that He was raised on the third day according to the Scriptures.
+Those are people checking, not people whispering.
 
-None of this proves the first copies were perfect. The dates of the earliest papyri are unsettled, and the first century of copying isn't directly visible to anyone.
+There are honest limits, and you should hear them.
 
-A Christian should be able to say that without alarm. The telephone game describes neither how the New Testament was copied nor what came out of it.
+The earliest pieces we have are small, and their dates are argued over. The first stretch of copying is the part no one can see.
 
-Read the whole answer, with its sources, on LiveWell.
+And Christians have sometimes claimed too much. A fragment of Mark was once announced as first century. It turned out to be from the late second or early third, and the scholar who announced it apologized in public.
+
+Still, to hide in those early years, a change would have had to spread everywhere and erase the older wording in every branch. That's possible. It isn't the likeliest story.
+
+Now set the New Testament beside the other books of its world.
+
+Homer's Iliad, the best-kept classical work, survives in about seventeen hundred and fifty manuscripts.
+
+The earliest copies of Julius Caesar's war in Gaul were made about nine hundred years after he wrote it.
+
+Historians quote those books every day, and they should. And on any honest count, the New Testament has more copies, in more languages, closer to its writing, than any of them.
+
+So here's where the evidence lands. We know what the New Testament says with high confidence in nearly every place. And where we don't, we know that we don't.
+
+Even Bart Ehrman, the skeptic who made that big number famous, has said the essential Christian beliefs don't rest on a disputed reading.
+
+But knowing what Matthew wrote doesn't tell you whether it happened. That's a different question, and it deserves its own answer.
+
+The grass withers and the flowers fall, but the word of our God stands forever.
+
+So open it. Read it slowly. Then ask whether it's true.
