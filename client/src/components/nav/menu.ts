@@ -5,8 +5,10 @@
  *
  * Every room is a page the site already has, taken from the site catalogue
  * (lib/siteCatalog.ts) by id, so its name, line and address are the ones the
- * rest of the site uses; the Academy's paths are the tracks' own titles
- * (client/public/tracks/index.json, held to them by siteNav.test.tsx). The
+ * rest of the site uses. The Academy's paths are the tracks
+ * (client/public/tracks/index.json; siteNav.test.tsx holds each slug and
+ * title to it), named in the menu by who each is for (James, 2026-11-27: "no
+ * one knows what those are"). The
  * catalogue's seven doors stay as they are: the footer, the door pages and
  * /explore still read them.
  */
@@ -32,12 +34,12 @@ const door = (id: MenuId, name: string, page: CatalogEntry, rooms: CatalogEntry[
 });
 
 /** The Academy's paths, in the tracks' own words; each opens at /tracks/<slug>. */
-export const ACADEMY_PATHS: { slug: string; title: string; line: string }[] = [
-  { slug: "new-to-this", title: "New to faith, or coming back", line: "Twelve short sessions: who Jesus is, how to read and pray, the church." },
-  { slug: "skeptical", title: "Weigh the case for yourself", line: "Twelve sessions with the case against stated first." },
-  { slug: "stepped-back", title: "Your questions, taken seriously", line: "For the Christian who has stepped back." },
-  { slug: "deeper", title: "Study, history, doctrine", line: "Down to the foundations, one session at a time." },
-  { slug: "mark", title: "Deep in one: the Gospel of Mark", line: "A whole book, read slowly in sixteen sessions." },
+export const ACADEMY_PATHS: { slug: string; title: string; label: string; line: string }[] = [
+  { slug: "new-to-this", title: "New to faith, or coming back", label: "New to faith? Start here", line: "Who Jesus is, how to read the Bible and pray. Twelve 10-minute sessions." },
+  { slug: "skeptical", title: "Weigh the case for yourself", label: "Not sure it's true? Weigh the evidence", line: "For skeptics: God, the Bible, the resurrection, with the case against first." },
+  { slug: "stepped-back", title: "Your questions, taken seriously", label: "Stepped back from faith?", line: "Honest answers to the questions that made you walk away." },
+  { slug: "deeper", title: "Study, history, doctrine", label: "Go deeper: study, history, doctrine", line: "How to study the Bible, what the church believes, and where it came from." },
+  { slug: "mark", title: "Deep in one: the Gospel of Mark", label: "Read a whole book: Mark", line: "One Gospel, chapter by chapter, in sixteen sessions." },
 ];
 
 const EXPLORE: Door = door(
@@ -55,8 +57,8 @@ export const MENU_DOORS: Door[] = [
     "Academy",
     E("bible.tracks"),
     [
-      ...ACADEMY_PATHS.map((p): CatalogEntry => ({ id: `academy.${p.slug}`, name: p.title, line: p.line, href: `/tracks/${p.slug}`, icon: "Route" })),
-      { ...E("history.course"), name: "Church history, in order", line: "Fourteen lessons, from the apostles to today." },
+      ...ACADEMY_PATHS.map((p): CatalogEntry => ({ id: `academy.${p.slug}`, name: p.label, line: p.line, href: `/tracks/${p.slug}`, icon: "Route" })),
+      { ...E("history.course"), name: "Church history in 14 lessons", line: "From the apostles to today, one lesson at a time." },
     ],
     "quill",
   ),
