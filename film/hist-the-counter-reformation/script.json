@@ -1,0 +1,122 @@
+{
+  "title": "The Counter-Reformation",
+  "note": "Church history film for the lesson /theology/history/the-counter-reformation (lesson 11, \"The Counter-Reformation and the Wars of Religion\"), written 2026-11-27. Every fact comes from client/public/history/essays/the-counter-reformation.json (see facts.md). The two readings in \"Where Christians differ\" use only wording LiveWell's own pages already give: the-reformation.json, reformation-and-its-wars.json and the Justification study (client/public/bible/doctrines/justification.json). Scripture is the Berean Standard Bible, copied from client/public/bible/text/john/13.json. Wars and executions are named, never described, and every side's failures are named in the same plain words.",
+  "page": "/theology/history/the-counter-reformation",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "After Luther, what did the Catholic Church do? And how did Christians end up at war with each other?",
+        "The answer holds a real renewal and terrible wars, and they belong to one story."
+      ]
+    },
+    {
+      "id": "trent",
+      "kicker": "Trent, 1545",
+      "level": 0.3,
+      "lines": [
+        "The Catholic Church answered at the Council of Trent, which met from 1545 to 1563 on the Alpine edge of Italy.",
+        "It taught that justification comes by grace but not by faith alone, and that Scripture and the church's unwritten traditions are received with equal reverence.",
+        "At last, both sides knew exactly where they differed."
+      ]
+    },
+    {
+      "id": "reform",
+      "kicker": "The reform was real",
+      "level": 0.4,
+      "lines": [
+        "Trent also cleaned house. Bishops had to live in their dioceses and preach, and every diocese was to build a seminary to train its priests.",
+        "The pardon sellers were abolished. It took decades, but the church came out more disciplined, more educated and more serious."
+      ]
+    },
+    {
+      "id": "saints",
+      "kicker": "The new orders",
+      "level": 0.5,
+      "lines": [
+        "The renewal had faces. Ignatius of Loyola, a Basque soldier wounded at Pamplona in 1521, founded the Society of Jesus, approved in 1540.",
+        "His companion Francis Xavier reached India and Japan, and died in 1552 within sight of China.",
+        "In Spain, Teresa of Avila and John of the Cross reformed the Carmelites and wrote some of the deepest Christian books on prayer ever written.",
+        "In Milan, Charles Borromeo served his plague-struck city in person. It was holiness, and any tradition should be glad to claim it."
+      ]
+    },
+    {
+      "id": "fist",
+      "kicker": "The same energy",
+      "level": 0.55,
+      "lines": [
+        "The same renewal had a fist. The Roman Inquisition and the Index of Forbidden Books silenced honest questions.",
+        "Behind both stood one conviction, held on every side: that the truth of God should be secured by the power of the state.",
+        "Catholics believed it, and so did Lutherans and the Reformed. Almost no one doubted it but the hunted Anabaptists."
+      ]
+    },
+    {
+      "id": "wars",
+      "kicker": "The wars begin",
+      "level": 0.65,
+      "lines": [
+        "On Saint Bartholomew's Day in 1572, the leaders of France's Reformed minority, the Huguenots, were murdered in Paris, and thousands died.",
+        "In the Low Countries, Spain's Council of Troubles executed more than a thousand people. Protestant England executed Catholic priests as traitors.",
+        "The parties differed over grace and the sacraments. Over the sword they hardly differed at all."
+      ]
+    },
+    {
+      "id": "thirty",
+      "kicker": "1618 to 1648",
+      "level": 0.8,
+      "lines": [
+        "The Thirty Years War began in Prague in 1618, when Protestant nobles threw two imperial officials out of a castle window. The men survived.",
+        "In 1631 imperial troops stormed the Protestant city of Magdeburg, and most of its people died.",
+        "In its later years, Catholic France was paying for Lutheran Sweden's war against the Catholic emperor.",
+        "With plague and famine, the German lands lost about a fifth of their people, by one historian's estimate."
+      ]
+    },
+    {
+      "id": "peace",
+      "kicker": "Westphalia, 1648",
+      "level": 0.85,
+      "lines": [
+        "The Peace of Westphalia came in 1648, and nobody had won. Each ruler would still set his land's religion.",
+        "It was not toleration, but a truce between exhausted certainties.",
+        "Christendom, the dream of Europe as one Christian house, did not survive."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.6,
+      "lines": [
+        "Christians still read this century differently.",
+        "Catholics see a church renewing itself from within, teaching that grace comes first and that no one can earn it.",
+        "Protestants see Trent rejecting what the reformers had recovered: grace received by faith alone, and Scripture as the final word.",
+        "Both look back on the same record."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The wars were fought by baptized men, sure God was with them. And modern European unbelief was born, in no small part, from watching them.",
+        "When a skeptic says Christianity means violence, this is the century they remember.",
+        "The answer has never been denial. It is grief, and the long labor of being a different kind of church.",
+        "Jesus had said it long before the wars began.",
+        "Blessed are the peacemakers, for they will be called sons of God."
+      ],
+      "scripture": {
+        "reference": "Matthew 5:9",
+        "translation": "Berean Standard Bible",
+        "text": "Blessed are the peacemakers, for they will be called sons of God.",
+        "spoken": true
+      },
+      "titleCard": [
+        "A different kind of church.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
