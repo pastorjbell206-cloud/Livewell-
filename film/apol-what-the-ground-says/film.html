@@ -27,7 +27,7 @@ Film.make((F) => {
   const strike = claims.map((c, i) => line(g1, `M${[320, 960][i] - 130} 220 H${[320, 960][i] + 130}`, { stroke: MUSTARD, "stroke-width": 3.5 }));
   const neither = T(g1, "disp", 640, 330, "neither", 64);
   const draw1 = (t) => { const v = vis(t, 0.3, CS("oversold") + 0.4); op(g1, v); if (v <= 0) return;
-    st1.forEach((s, i) => draw(s, up(t, t0[0] - 1.2 + i * 0.2, 1.2))); const dig = (t - t0[0]) * 1.4; move(sp1, 640, 400 + 16 * Math.max(0, Math.sin(dig)) * (t > t0[0] ? 1 : 0), 1, -8); op(sp1, up(t, t0[0] - 0.6, 0.6));
+    st1.forEach((s, i) => draw(s, up(t, t0[0] - 1.2 + i * 0.2, 1.2))); const dig = (t - t0[0]) * 1.4; move(sp1, 640, 400 + 16 * Math.max(0, Math.sin(dig)) * (t > t0[0] ? 1 : 0), 1, -8); op(sp1, up(t, t0[0] - 0.6, 0.6) * (1 - up(t, t0[2] + 0.2, 0.5)));
     op(claims[0], up(t, t0[0] + 0.6, 0.6)); op(claims[1], up(t, t0[1] + 0.4, 0.6)); strike.forEach((s) => draw(s, up(t, t0[2] + 0.2, 0.7))); op(neither, up(t, t0[2] + 0.7, 0.7)); };
 
   // 2. what didn't hold up
