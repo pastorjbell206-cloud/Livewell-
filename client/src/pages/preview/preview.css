@@ -430,3 +430,5 @@
   .pv-pcards>li{flex:0 0 78%;scroll-snap-align:start}
   .pv-pcard:hover{transform:none}
 }
+
+.pv-pcard h3.pv-pcard__name,.pv-pcard h2.pv-pcard__name{margin:0;font-weight:400}

@@ -6,6 +6,7 @@
  * and one field that sends a reference to the verse and anything else to
  * /search, its parser loaded on focus.
  */
+import { DISCIPLINES } from "../preview/disciplines";
 import { describe, it, expect, vi, afterEach } from "vitest";
 import { screen, fireEvent, waitFor, within } from "@testing-library/react";
 import fs from "node:fs";
@@ -17,7 +18,6 @@ import { homeTonight } from "./HomeTonight";
 import { LATEST_COUNT, committedLatest, latestFrom, longDate } from "./HomeLatest";
 import { LATEST_CUTOFF, SHELF_ESSAYS, isPublicEssay } from "@/lib/shelf";
 import { devotionHref, tonightOn } from "@/lib/familyTable";
-import { nameForHref } from "@/lib/siteCatalog";
 
 /** Noon on a calendar day in the reader's own time zone. */
 function setToday(y: number, m: number, d: number) {
@@ -157,41 +157,35 @@ describe("Home's tonight line", () => {
 });
 
 describe("Home's doors", () => {
-  it("are ten picture cards, in order, each opening a real page", () => {
+  it("are the eight disciplines as picture cards, then six more ways in, each opening a real page", () => {
     setToday(2026, 10, 27);
     renderHome();
     const doors = screen.getByRole("region", { name: "Where to begin." });
-    // The section head offers the whole site first, then come the ten cards.
+    // The section head offers the whole site first, then the eight disciplines, then six more.
     expect(within(doors).getByRole("link", { name: "See everything on LiveWell" }).getAttribute("href")).toBe("/explore");
     expect(within(doors).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual([
       "/explore",
-      "/study/bible",
-      "/theology/history",
-      "/topics",
-      "/family",
+      ...DISCIPLINES.map((d) => `/explore/${d.id}`),
       "/start",
-      "/resources/context",
+      "/family",
       "/tools",
       "/writing",
       "/books",
       "/connect",
     ]);
-    expect(within(doors).getByRole("link", { name: /Start here/ }).getAttribute("href")).toBe("/start");
     expect(within(doors).getByRole("link", { name: /Find James/ }).getAttribute("href")).toBe("/connect");
-    // Every door carries its picture frame; the pictures themselves are decorative.
-    expect(doors.querySelectorAll(".lw-door .lw-frame")).toHaveLength(10);
+    // Every way in carries its picture; the pictures themselves are decorative.
+    expect(doors.querySelectorAll(".pv-pcard__art")).toHaveLength(8);
+    expect(doors.querySelectorAll(".lw-door .lw-frame")).toHaveLength(6);
   });
 
-  it("never count themselves as the menu's doors, and name each page as the menus do", () => {
-    // The walk of 2026-11-23, finding 3: "Ten doors" beside a menu of seven, and "Context and creeds" opening Study the Bible.
+  it("never count themselves as the menu's doors", () => {
+    // The walk of 2026-11-23, finding 3: "Ten doors" beside a menu of seven.
     setToday(2026, 10, 27);
     renderHome();
     const doors = screen.getByRole("region", { name: "Where to begin." });
-    expect(doors).toHaveTextContent("Ten ways in");
+    expect(doors).toHaveTextContent("Eight ways in");
     expect(doors).not.toHaveTextContent(/doors/i);
-    const background = within(doors).getByRole("link", { name: /Bible background/ });
-    expect(background.getAttribute("href")).toBe("/resources/context");
-    expect(nameForHref("/resources/context")).toBe("Bible background");
   });
 
   it("offer Start here to every reader, not only someone new", () => {

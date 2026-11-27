@@ -76,3 +76,6 @@
   .ex-inside{padding-left:16px}
 }
 .ex-find__field input:focus-visible{outline:none;box-shadow:none}
+
+/* The eight disciplines (pages/explore/DisciplineCards.tsx), above the full list. */
+.ex-ways{padding-top:var(--s-5);padding-bottom:var(--s-5)}

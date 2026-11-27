@@ -300,7 +300,7 @@ describe("the home page", () => {
 
     const doors = screen.getByRole("region", { name: "Where to begin." });
     for (const a of within(doors).getAllByRole("link")) expect(isRoute(a.getAttribute("href") ?? ""), a.getAttribute("href") ?? "").toBe(true);
-    for (const [name, href] of [[/Read the Study Bible/, "/study/bible"], [/Essays/, "/writing"], [/Books/, "/books"]] as const) {
+    for (const [name, href] of [[/^Bible/, "/explore/bible"], [/Essays/, "/writing"], [/Books/, "/books"]] as const) {
       expect(within(doors).getByRole("link", { name }).getAttribute("href")).toBe(href);
     }
 
