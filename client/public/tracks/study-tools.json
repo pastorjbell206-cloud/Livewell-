@@ -309,7 +309,7 @@
       "minutes": 10,
       "teaching": [
         "Study isn't a course you finish. It's a habit you keep, and the habit matters more than any single tool. A simple rhythm serves most people well: read a whole book through, study one chapter a week with the seven steps, keep a notebook, and use the tools when a question sends you to them. A plan helps on the days when you don't know where to begin. Joshua was told to keep the Book of the Law on his lips and meditate on it day and night, not to master it once and move on.",
-        "Keep one warning close. Ecclesiastes says there is no end to the making of many books and that much study wearies the body, and Paul says that knowledge puffs up while love builds up. It is possible to become skilled with every tool here and still use the Bible mainly to win arguments or to feel above other readers. The point of study is to know God and to love the people he puts beside you. The next step in the Academy is to know one book deeply, and Deep in one: the Gospel of Mark is waiting."
+        "Keep one warning close. Ecclesiastes says there is no end to the making of many books and that much study wearies the body, and Paul says that knowledge puffs up while love builds up. It is possible to become skilled with every tool here and still use the Bible mainly to win arguments or to feel above other readers. The point of study is to know God and to love the people he puts beside you. The next step in the Academy is to know one book deeply, beginning with Genesis."
       ],
       "open": {
         "kind": "plan",
@@ -332,9 +332,9 @@
         },
         {
           "kind": "track",
-          "label": "Deep in one: the Gospel of Mark",
-          "href": "/tracks/mark",
-          "why": "The next program in the Academy: one book studied deeply, chapter by chapter, using everything this track and the ones before it have taught."
+          "label": "Deep in one: Genesis",
+          "href": "/tracks/genesis",
+          "why": "The next track on the road, in Deep in the Old Testament: Deep in one: Genesis. Take it up when this one has settled."
         }
       ],
       "question": "What would a realistic rhythm of study look like in your actual week, and what usually gets in its way?",

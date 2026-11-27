@@ -49,14 +49,17 @@ the site holds.
 - How to study the Bible (seven steps that work on any chapter, and a guided
   study that walks a reader through them on one chapter, one screen at a
   time): https://www.livewellbyjamesbell.co/study/how-to-study
-- The LiveWell Academy (a free curriculum of ten programs, laid out as one road
-  from never having opened the Bible to reading it well: Exploring
-  Christianity, New to Faith, the Bible's Big Story, How to Study the Bible,
-  Deep in One Book, What Christians Believe, Church History and Living It,
-  with Faith for Teenagers and Faith at Home beside them; each program is a
-  few tracks in order, progress is kept on the reader's device, and a reader
-  who finishes a track or program can print a certificate, which is
-  unaccredited): https://www.livewellbyjamesbell.co/academy
+- The LiveWell Academy (a free curriculum laid out as one road in five
+  levels, from first opening the Bible to explaining it to others: Start
+  (Exploring Christianity, New to Faith); Read the whole Bible (the Bible's
+  Big Story, How to Study the Bible); Know the books (Deep in the Old
+  Testament, Deep in the New Testament); Know what we believe, and why (What
+  Christians Believe, Theology in Depth, Church History); Live it, and explain
+  it (Living It, Explain It); with Faith for Teenagers and Faith at Home
+  beside the road. Each program is a few tracks in order, progress is kept on
+  the reader's device, and a reader who finishes a track, a program or the
+  whole road can print a certificate, which is unaccredited):
+  https://www.livewellbyjamesbell.co/academy
 - Tracks (the Academy's unit of learning: a few short sessions in order;
   every session opens a page or tool on the site and ends with one question,
   one thing to do and one verse to keep, with a guide for a group; every

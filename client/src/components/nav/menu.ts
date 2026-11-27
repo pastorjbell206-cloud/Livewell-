@@ -36,21 +36,39 @@ const door = (id: MenuId, name: string, page: CatalogEntry, rooms: CatalogEntry[
  * the menu by who each is for (James, 2026-11-27: "no one knows what those
  * are"). Each opens at /academy/<slug>.
  */
-export const ACADEMY_PROGRAMS: { slug: string; title: string; label: string; line: string }[] = [
-  { slug: "exploring", title: "Exploring Christianity", label: "Not sure it's true? Explore", line: "Who Jesus was, the evidence, and the hardest objections, stated fairly." },
-  { slug: "new-to-faith", title: "New to Faith", label: "New to faith? Start here", line: "The gospel, prayer, the Bible, and the habits of a Christian life." },
-  { slug: "big-story", title: "The Bible's Big Story", label: "Never read the Bible? The whole story", line: "Creation to new creation, the Old Testament and the New, as one story." },
-  { slug: "study", title: "How to Study the Bible", label: "Learn to study the Bible", line: "Seven steps, each kind of book, the Bible's world, and the tools." },
-  { slug: "books", title: "Deep in One Book", label: "Know one book well", line: "Mark, John, Genesis, the Psalms and Romans, chapter by chapter." },
-  { slug: "beliefs", title: "What Christians Believe", label: "What Christians believe, and why", line: "The creed line by line, the core doctrines, and where Christians differ." },
-  { slug: "history", title: "Church History", label: "Church history in fourteen lessons", line: "Two thousand years of the church, and how each age read the Bible." },
-  { slug: "living", title: "Living It", label: "Faith for an ordinary week", line: "Marriage, work, money, rest, and the heavy seasons." },
-  { slug: "teens", title: "Faith for Teenagers", label: "For teenagers", line: "Is it true, the Bible's story, and who you are. Short sessions." },
-  { slug: "home", title: "Faith at Home", label: "For parents and families", line: "Leading faith at home, the hard questions, and the church year." },
+export const ACADEMY_PROGRAMS: { slug: string; title: string }[] = [
+  { slug: "exploring", title: "Exploring Christianity" },
+  { slug: "new-to-faith", title: "New to Faith" },
+  { slug: "big-story", title: "The Bible's Big Story" },
+  { slug: "study", title: "How to Study the Bible" },
+  { slug: "ot-books", title: "Deep in the Old Testament" },
+  { slug: "books", title: "Deep in the New Testament" },
+  { slug: "beliefs", title: "What Christians Believe" },
+  { slug: "theology", title: "Theology in Depth" },
+  { slug: "history", title: "Church History" },
+  { slug: "living", title: "Living It" },
+  { slug: "explain", title: "Explain It" },
+  { slug: "teens", title: "Faith for Teenagers" },
+  { slug: "home", title: "Faith at Home" },
+];
+
+/**
+ * The menu's Academy rooms: the road's five levels (each opening its place on
+ * /academy), then the two programs beside the road. Level titles are the
+ * levels' own in programs.json (siteNav.test.tsx holds them to it).
+ */
+export const ACADEMY_ROOMS: CatalogEntry[] = [
+  { id: "academy.level-1", name: "Level 1: Start", line: "First questions, and first steps for someone new to faith.", href: "/academy#level-1", icon: "Route" },
+  { id: "academy.level-2", name: "Level 2: Read the whole Bible", line: "The Bible as one story, and how to study any page of it.", href: "/academy#level-2", icon: "Route" },
+  { id: "academy.level-3", name: "Level 3: Know the books", line: "Eleven books of the Bible, read chapter by chapter.", href: "/academy#level-3", icon: "Route" },
+  { id: "academy.level-4", name: "Level 4: Know what we believe, and why", line: "The creed, every major doctrine in depth, and church history.", href: "/academy#level-4", icon: "Route" },
+  { id: "academy.level-5", name: "Level 5: Live it, and explain it", line: "Faith for an ordinary week, and the reasons given to others.", href: "/academy#level-5", icon: "Route" },
+  { id: "academy.teens", name: "For teenagers", line: "Is it true, the Bible's story, who you are, hard things, friends.", href: "/academy/teens", icon: "Route" },
+  { id: "academy.home", name: "For parents and families", line: "Every age from three to sixteen, hard seasons and the church year.", href: "/academy/home", icon: "Route" },
 ];
 
 /** The Academy's front door (/academy). */
-export const ACADEMY_ENTRY: CatalogEntry = { id: "academy.home", name: "The Academy", line: "Ten programs, from your first questions to reading the Bible well.", href: "/academy", icon: "Route" };
+export const ACADEMY_ENTRY: CatalogEntry = { id: "academy.front", name: "The Academy", line: "Five levels, from first opening the Bible to explaining it to others.", href: "/academy", icon: "Route" };
 
 const EXPLORE: Door = door(
   "explore",
@@ -66,7 +84,7 @@ export const MENU_DOORS: Door[] = [
     "academy",
     "Academy",
     ACADEMY_ENTRY,
-    ACADEMY_PROGRAMS.map((p): CatalogEntry => ({ id: `academy.${p.slug}`, name: p.label, line: p.line, href: `/academy/${p.slug}`, icon: "Route" })),
+    ACADEMY_ROOMS,
     "quill",
   ),
   door(

@@ -9,7 +9,10 @@
  * it). The gate holds that:
  *
  * - every program has a slug, a title, a reader line, an outcome, a plate the
- *   art kit draws, and two to five tracks;
+ *   art kit draws, and two to six tracks;
+ * - the road has levels numbered from 1, each with a title and a line, and
+ *   every program on the road names a level that holds at least one program;
+ *   a program beside the road names none;
  * - every track it names is written (client/public/tracks/<slug>.json) and is
  *   in no other program, and every written track is in a program;
  * - the menu names every program, by the program's own title
@@ -54,6 +57,14 @@ export function validateAcademy() {
   };
 
   words("about", data.about);
+  const levels = Array.isArray(data.levels) ? data.levels : [];
+  if (!levels.length) fail("levels", "none");
+  levels.forEach((l, i) => {
+    if (l?.n !== i + 1) fail(`levels[${i}]`, `n should be ${i + 1}`);
+    words(`levels[${i}].title`, l?.title);
+    words(`levels[${i}].line`, l?.line);
+  });
+  const used = new Set();
   if (!Array.isArray(data.programs) || data.programs.length < 1)
     return [...errors, "programs: none"];
   const slugs = new Set();
@@ -75,8 +86,12 @@ export function validateAcademy() {
       fail(`${w}.plate`, `"${p.plate}" is not a plate the art kit draws`);
     if (p.beside !== undefined && typeof p.beside !== "boolean")
       fail(`${w}.beside`, "true or left out");
-    if (!Array.isArray(p.tracks) || p.tracks.length < 2 || p.tracks.length > 5)
-      fail(`${w}.tracks`, "two to five tracks");
+    if (p.beside) {
+      if (p.level !== undefined) fail(`${w}.level`, "a program beside the road has no level");
+    } else if (!levels.some((l) => l.n === p.level)) fail(`${w}.level`, `"${p.level}" is not a level of the road`);
+    else used.add(p.level);
+    if (!Array.isArray(p.tracks) || p.tracks.length < 2 || p.tracks.length > 6)
+      fail(`${w}.tracks`, "two to six tracks");
     else
       for (const t of p.tracks) {
         if (!written.has(t))
@@ -92,6 +107,7 @@ export function validateAcademy() {
     if (!named) fail(w, "is not in the menu's ACADEMY_PROGRAMS");
     else if (named[1] !== p.title) fail(w, `the menu calls it "${named[1]}"`);
   });
+  for (const l of levels) if (!used.has(l.n)) fail(`levels[${l.n - 1}]`, "no program on this level");
   for (const t of written)
     if (!seen.has(t))
       fail(`tracks/${t}.json`, "is in no program of the Academy");

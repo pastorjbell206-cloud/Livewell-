@@ -73,6 +73,13 @@ beforeEach(() => {
 afterEach(() => vi.unstubAllGlobals());
 
 describe("/academy", () => {
+  it("lays the road out in its levels, each with its own programs", async () => {
+    renderAt("/academy");
+    const LEVELS = read("academy/programs.json").levels as { n: number; title: string }[];
+    for (const l of LEVELS) expect(await screen.findByRole("heading", { level: 3, name: l.title })).toBeTruthy();
+    for (const l of LEVELS) expect(document.getElementById(`level-${l.n}`)!.querySelectorAll(".ac-card").length).toBeGreaterThanOrEqual(1);
+  });
+
   it("lists every program as a card, in order, each saying who it is for, and says certificates are unaccredited", async () => {
     renderAt("/academy");
     expect(await screen.findByRole("heading", { level: 1, name: "The LiveWell Academy" })).toBeTruthy();
@@ -119,6 +126,27 @@ describe("certificates", () => {
     expect(within(cert).getByText(MARK.title)).toBeTruthy();
     expect(within(cert).getByText(UNACCREDITED)).toBeTruthy();
     expect(localStorage.getItem("livewell-academy-name-v1")).toBe(JSON.stringify("Ruth Example"));
+  });
+});
+
+describe("the graduate certificate", () => {
+  it("is offered only when every program on every level is finished, and says it is unaccredited", async () => {
+    const road = PROGRAMS.filter((p) => !(p as { beside?: boolean }).beside).flatMap((p) => p.tracks);
+    const first = renderAt("/academy/certificate/academy/road");
+    expect(await screen.findByText("Not finished yet")).toBeTruthy();
+    first.unmount();
+    let p = NO_TRACKS;
+    for (const slug of road) {
+      const t = INDEX.find((x) => x.slug === slug)!;
+      const id = { slug: t.slug, title: t.title, total: t.sessions.length };
+      for (const s of t.sessions) p = withDone(p, id, s.n);
+    }
+    saveTracks(p);
+    renderAt("/academy/certificate/academy/road");
+    fireEvent.change(await screen.findByRole("textbox", { name: /Your name/ }), { target: { value: "Ruth Example" } });
+    const cert = screen.getByRole("article", { name: "Certificate of completion: The LiveWell Academy" });
+    expect(within(cert).getByText("Graduate Certificate")).toBeTruthy();
+    expect(within(cert).getByText(UNACCREDITED)).toBeTruthy();
   });
 });
 

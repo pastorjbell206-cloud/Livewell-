@@ -1,0 +1,479 @@
+{
+  "slug": "living-relationships",
+  "title": "Friendship, community and the church family",
+  "for": "I want real friends and a real church",
+  "subtitle": "Eight short sessions on the people God made you for: friendship, loneliness, the single life, the open table, conflict between believers, the church as a family of every age, and the old among us.",
+  "intro": [
+    "This track is for anyone who has a full calendar and almost no one to call, who attends a church and still feels like a visitor, or who simply wants the faith to reach the people they live among. It has eight sessions of about ten minutes. Each opens a page on this site, asks one question, gives you one thing to do and one verse to keep.",
+    "Every session starts where relationships actually ache, goes underneath to the cause, and ends somewhere Scripture and the long memory of the church can help. None of it is a list of tips for being liked. It is about what kind of creature you are, and what kind of people the church was meant to be."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group, a Sunday class or a few friends through Friendship, community and the church family. The group is for adults of any age and any season of life, married or single, new to a church or there for decades. A leader doesn't need a crowded social life. A leader needs to notice who is on the edge of the room and to keep confidences.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, gathered below in order. Because the subject is belonging, how the group treats its quietest member will teach more than anything said."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Six to ten people is a good size. Try to mix the group on purpose: single and married, older and younger, people who have been in the church for years and people who arrived last month. A group made of one generation will find sessions seven and eight hard to talk about honestly, because it will be talking about people who are not in the room."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A home is better than a classroom, and food helps, since session five is about the table. Make it plain at the first meeting that what is said stays in the room unless someone is in danger, that anyone may pass on any question, and that nobody describes a conflict with a named person who isn't there to answer."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the end time, so that people who are caring for children or parents can count on it."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Five minutes: one person reads the verse aloud, and the passage around it when the session opens a chapter.",
+          "Thirty-five minutes: the three questions to talk over, in order.",
+          "Ten minutes: how people got on with the last session's one thing to do, for anyone who wants to say.",
+          "Ten minutes: the prayer prompt, in your own words. Nobody has to pray aloud.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Some questions here divide faithful Christians: how far a church should go in confronting a member, whether a care home can honour a parent as well as a spare room can, how a church ought to order its life for single people. Say what Scripture plainly asks, say where Christians differ, and send people to their own pastor for the rest. Some questions this track leaves alone on purpose; when one comes up, thank the person and point them to their pastor.",
+          "When a question touches someone's own family or a real conflict in your church, don't settle it in the group. Offer to talk afterwards, and know which pastor you would send them to."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A group on belonging will bring loneliness into the light, and sometimes old wounds: a friend who betrayed someone, a church that pushed them out, a parent who was cruel and now needs care. When it comes, stop and listen, thank the person for trusting the group, and don't hurry to a lesson. Speak with them on their own afterwards.",
+          "If anyone says they were harmed in a church and told to keep quiet, or that someone at home is hurting them, take it seriously and don't promise to keep it secret. Session six is about ordinary conflict between believers; it is never a reason to send someone back alone to face a person who has abused them."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry is more than a group can hold: loneliness that has become despair, the exhaustion of caring for a parent, harm done in a church, or any thought of not wanting to go on. The Find Help page on this site lists places to turn, and its pages for loneliness, for caregivers and for church hurt are good first doors. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Made for others",
+      "minutes": 11,
+      "teaching": [
+        "Most of us were raised to think of ourselves as a self first and a friend, a spouse or a church member second, as if relationships were extras we choose to add to a life that was already complete. Genesis starts from the other end. Before anything has gone wrong in the world, God looks at a man alone and says, “It is not good for the man to be alone” (Genesis 2:18). Aloneness is the first thing in Scripture called not good, and it is named in a world God has just called very good.",
+        "The reason goes all the way up. The God who made us has never been alone. The church confesses one God in three persons, Father, Son and Spirit, and Jesus prays to the Father who “loved Me before the foundation of the world” (John 17:24). Love between persons is older than creation. That is why you ache for others, and why the ache is not weakness. You were made in the image of a God who is love, and you cannot be fully yourself by yourself."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "The Trinity, in the Study Bible",
+        "href": "/study/bible/doctrines/trinity",
+        "why": "Where the church's confession of one God in three persons comes from, passage by passage, and why it is the ground of every human friendship."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Genesis 2, passage by passage",
+          "href": "/study/bible/genesis/2#plain",
+          "why": "The garden before anything went wrong, and the one thing God called not good in it."
+        },
+        {
+          "kind": "answer",
+          "label": "How can God be three and one?",
+          "href": "/answers/how-can-god-be-three-and-one",
+          "why": "The honest answer to the question everyone asks about the Trinity, for when the doctrine feels like arithmetic that will not come out."
+        }
+      ],
+      "question": "Where did you learn that needing other people is a weakness, and is it true?",
+      "do": "Write down the names of the people you would call if something went badly wrong tonight. Notice how many there are, and how long since you spoke to each.",
+      "verse": {
+        "ref": "John 17:21",
+        "text": "that all of them may be one, as You, Father, are in Me, and I am in You. May they also be in Us, so that the world may believe that You sent Me."
+      },
+      "group": {
+        "open": "Who was the first real friend you remember having, and what made them one?",
+        "discuss": [
+          "Why do you think the first thing called not good in the Bible is being alone, in a world God had just called very good?",
+          "If God has always been Father, Son and Spirit in love, what does that say about the kind of creature you are?",
+          "Where does our culture teach us to treat other people as optional, and where have you believed it?"
+        ],
+        "pray": "Give thanks for the people who have been friends to you, and ask God to make this group a place where no one has to be alone."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Loneliness",
+      "minutes": 11,
+      "teaching": [
+        "Loneliness is not the same as being alone. Many people have hundreds of contacts and no one who knows them, and some of the loneliest people in any town sit in a church every Sunday. Part of the cause is the way we live: we move for work, we keep our homes private, and screens give us the feeling of company without its weight. Part of it is shame. Admitting you are lonely feels like admitting nobody wants you, so most people say nothing, and the silence deepens it.",
+        "Scripture doesn't treat loneliness as a character flaw. David, hiding in a cave, prayed, “There is no refuge for me; no one cares for my soul” (Psalm 142:4), and God kept the prayer in his book. On the night before he died, Jesus asked three friends to stay awake with him, and they slept. Loneliness is a signal, like hunger, telling you what you were made for. It isn't a verdict on your worth. “God settles the lonely in families” (Psalm 68:6), and he usually does it through ordinary people who take a first small risk."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Handle Loneliness",
+        "href": "/how-tos/rel-how-to-handle-loneliness",
+        "why": "Practical, honest steps for the lonely week you are in, without pretending one coffee will fix what took years to form."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Psalm 142, passage by passage",
+          "href": "/study/bible/psalms/142#plain",
+          "why": "David's prayer from the cave, when no one cared for his soul, and what he did with that feeling."
+        },
+        {
+          "kind": "help",
+          "label": "I feel so alone",
+          "href": "/help/loneliness",
+          "why": "For when loneliness has become heavy enough that you need more than a short session, with places to turn."
+        },
+        {
+          "kind": "plan",
+          "label": "Eight Weeks Toward Being Known",
+          "href": "/plans/loneliness",
+          "why": "A slower road, a week at a time, for anyone whose loneliness will not be mended in a sitting."
+        }
+      ],
+      "question": "When do you feel loneliest, and what do you usually do with the feeling?",
+      "do": "Tell God plainly how lonely you are, as David did. Then send one message this week to someone you have lost touch with, asking a real question about their life.",
+      "verse": {
+        "ref": "Psalm 68:6",
+        "text": "God settles the lonely in families; He leads the prisoners out to prosperity, but the rebellious dwell in a sun-scorched land."
+      },
+      "care": [
+        "If ‘no one cares for my soul’ is how you feel, please hear this: the person who prayed this psalm felt it too, and God kept his prayer in the Bible. Loneliness is not a sign that God has forgotten you. Tell God, as this singer did. Then, if you can, tell one person: a pastor, a friend, a neighbour. If loneliness has become despair, or you have thoughts of hurting yourself, speak to someone today. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Where is a place you have felt lonely in a crowd?",
+        "discuss": [
+          "Why is it so hard to admit loneliness, even to friends or to a church?",
+          "Jesus asked his friends to stay with him and they fell asleep. What does it mean to you that he knew that kind of loneliness?",
+          "Who in our church might be lonely in a way the rest of us have not noticed?"
+        ],
+        "pray": "Pray for anyone in the group who is lonely now, and for the people in your church and street who have no one to call."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Friendship in Scripture",
+      "minutes": 12,
+      "teaching": [
+        "Friendship is the love our culture has most forgotten. We have words and songs for romance and for family, and almost none for the friend. Scripture has a whole story. When David, a shepherd boy, killed Goliath, “the souls of Jonathan and David were knit together, and Jonathan loved him as himself” (1 Samuel 18:1). Jonathan was the king's son and heir. He gave David his robe, his sword and his bow, and he went on protecting him from his own father. The friendship cost Jonathan the throne, and he chose it anyway.",
+        "Jesus had friends, not only followers. John tells us plainly that “Jesus loved Martha and her sister and Lazarus” (John 11:5), and on his last night he said, “But I have called you friends, because everything I have learned from My Father I have made known to you” (John 15:15). Aristotle saw that most friendships rest on use or on pleasure, and only a few on wanting the other's good. In the twelfth century Aelred, an English abbot, wrote a whole book on spiritual friendship. Christian friendship is the rare third kind: two people who tell each other the truth and want each other to be holy."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "1 Samuel 18, passage by passage",
+        "href": "/study/bible/1-samuel/18#plain",
+        "why": "The first meeting of Jonathan and David, the covenant they made, and the robe and sword the king's son gave away."
+      },
+      "also": [
+        {
+          "kind": "guide",
+          "label": "Friendship: A Bible Study on the Love We Forgot",
+          "href": "/studyguides/friendship",
+          "why": "A study for a group on Aristotle's three kinds of friendship and what Scripture adds to them."
+        },
+        {
+          "kind": "chapter",
+          "label": "John 15, passage by passage",
+          "href": "/study/bible/john/15#plain",
+          "why": "The night Jesus called his disciples friends, and the love that lays its life down."
+        },
+        {
+          "kind": "wisdom",
+          "label": "What the Bible says about deep friendship",
+          "href": "/wisdom/deep-friendship",
+          "why": "Proverbs on the friend who stays closer than a brother, and on the company that quietly reshapes you."
+        }
+      ],
+      "question": "Which of your friendships rest on use or pleasure, and which on wanting each other's good?",
+      "do": "Ask one friend to meet for an hour with no agenda. Tell them one true thing about how you are, and ask them how they are, and wait for the real answer.",
+      "verse": {
+        "ref": "Proverbs 27:6",
+        "text": "The wounds of a friend are faithful, but the kisses of an enemy are deceitful."
+      },
+      "group": {
+        "open": "Who is a friend who told you something hard that you needed to hear?",
+        "discuss": [
+          "Jonathan's friendship cost him the throne. What has a friendship cost you, or what would you be unwilling to let it cost?",
+          "Why do you think the church talks so much about marriage and family, and so little about friendship?",
+          "What would it look like to want a friend to be holy, and not only happy?"
+        ],
+        "pray": "Give thanks for your friends by name, and ask for courage to be a truer friend to one person this week."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The single life as a full life",
+      "minutes": 11,
+      "teaching": [
+        "Many single Christians know the question at the wedding, asked kindly, that treats their life as a holding table until someone chooses them. Churches often say the same thing without meaning to, with a calendar built around couples and children and a quiet assumption that adulthood begins at the altar. Some people are single by choice, some by circumstance, some after divorce or the death of a spouse. Most hear the same message: the real life is somewhere else.",
+        "Scripture doesn't say that. Jesus never married, and he is the fullest human life there has ever been. Paul was unmarried and commended it: “The unmarried man is concerned about the work of the Lord, how he can please the Lord” (1 Corinthians 7:32). Jesus said that in the resurrection people “will neither marry nor be given in marriage” (Matthew 22:30), so marriage is a picture for this age, not the goal of every life. Longing to marry is no sin. But a single life is a whole life, with its own freedom and fruit, and a church that treats it as less has made an idol of the family."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "Is singleness a calling or a waiting room?",
+        "href": "/life/singleness-and-the-full-life",
+        "why": "The long guide to the unmarried life as Jesus and Paul lived it, and to the family that does not run on blood."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Thrive as a Single Christian",
+          "href": "/how-tos/rel-how-to-thrive-as-a-single-christian",
+          "why": "Ordinary steps for a single life that is rooted in friends, a church and real work, not on hold."
+        },
+        {
+          "kind": "guide",
+          "label": "Singleness: A Bible Study for the Unmarried",
+          "href": "/studyguides/singleness",
+          "why": "A study for a group, single and married together, on what Scripture says about the unmarried life."
+        },
+        {
+          "kind": "wisdom",
+          "label": "What the Bible says about singleness",
+          "href": "/wisdom/singleness",
+          "why": "The verses on singleness gathered, with the world they were first written into."
+        }
+      ],
+      "question": "If you are single, where have you been told your life is not yet real; if married, where have you said it?",
+      "do": "If you are married, invite a single friend into an ordinary evening of your home, not a special occasion. If you are single, name one freedom your life holds and give part of it away this week.",
+      "verse": {
+        "ref": "Mark 3:35",
+        "text": "For whoever does the will of God is My brother and sister and mother."
+      },
+      "care": [
+        "If your grief is heavy, please do not carry it alone. Tell someone you trust: a pastor, a friend, a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What is one thing churches do, often without meaning to, that tells single people they don't quite belong?",
+        "discuss": [
+          "Jesus never married. How does that change the way you think about a single life?",
+          "What is the difference between longing to marry and believing life has not started yet?",
+          "What would change in our church if single people were treated as family and not as guests?"
+        ],
+        "pray": "Pray for the single people in your church by name, for their friendships and their work, and for the church to be a family to them."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Hospitality",
+      "minutes": 11,
+      "teaching": [
+        "Most of us confuse hospitality with entertaining. Entertaining is about the host: the clean house, the good food, the guests impressed. Hospitality is about the guest, and it doesn't need a tidy kitchen. The New Testament word means love of the stranger. Paul puts it among the ordinary marks of a Christian, “Share with the saints who are in need. Practice hospitality” (Romans 12:13), and Jesus told his host to invite the poor, the crippled, the lame and the blind, “Since they cannot repay you” (Luke 14:14).",
+        "The early church was known for it. In the fourth century the emperor Julian, who wanted the old gods back, complained that the Christians fed not only their own poor but the pagans' poor as well. Our homes have grown private and our tables have moved to restaurants, and the loss is larger than manners. A shared table is where a stranger first sees the gospel lived. Soup and an open door will do. What it costs is time and privacy, which is why it counts."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Show Hospitality to Outsiders",
+        "href": "/how-tos/wn-how-to-show-hospitality-to-outsiders",
+        "why": "How to open an ordinary table to people who are not like you, without turning the meal into a performance or a pitch."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Luke 14, passage by passage",
+          "href": "/study/bible/luke/14#plain",
+          "why": "The banquet Jesus told his host to give, for guests who could never return the favour."
+        },
+        {
+          "kind": "guide",
+          "label": "Hospitality: A Bible Study on the Open Door",
+          "href": "/studyguides/hospitality",
+          "why": "A study for a group on welcome in Scripture, from Abraham's tent to the table of the early church."
+        },
+        {
+          "kind": "wisdom",
+          "label": "What the Bible says about hospitality when you're tired",
+          "href": "/wisdom/hospitality-when-tired",
+          "why": "For the person who wants an open door and has nothing left at the end of the day."
+        }
+      ],
+      "question": "Who has never eaten at your table, and what keeps you from asking them?",
+      "do": "Invite one person to an ordinary meal in the next two weeks, someone who could not easily return the favour. Keep the food simple and the conversation unhurried.",
+      "verse": {
+        "ref": "Hebrews 13:2",
+        "text": "Do not neglect to show hospitality to strangers, for by so doing some people have entertained angels without knowing it."
+      },
+      "group": {
+        "open": "What is a table you were welcomed at that you still remember?",
+        "discuss": [
+          "What is the difference between entertaining and hospitality, and which do you find easier?",
+          "Jesus told his host to invite those who could not repay. Who would that be in your life?",
+          "What makes an open table feel impossible for you right now, and what small version of it could you manage?"
+        ],
+        "pray": "Ask God to bring to mind one person who needs a place at a table, and give thanks for the tables you have been welcomed to."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Conflict and reconciliation between believers",
+      "minutes": 12,
+      "teaching": [
+        "Most church conflict is never faced. It goes underground into gossip, or it hardens into polite distance, or someone quietly leaves for another church across town. Part of the reason is that a consumer age makes leaving easy. Part is plain fear of the conversation. Jesus gave a different road: “If your brother sins against you, go and confront him privately. If he listens to you, you have won your brother over” (Matthew 18:15). Only if that fails does it widen, to one or two others, and then to the church.",
+        "Notice where Jesus puts those words. Just before them is the shepherd who leaves ninety-nine sheep to find one, and just after is Peter asking how many times to forgive. The aim is to win a brother back, never to win the argument. Paul pleaded with two women at Philippi, Euodia and Syntyche, “to agree with each other in the Lord” (Philippians 4:2). Christians differ on how far a church should go in the later steps. But no reading of this chapter makes it a way to silence a person who has been abused; that is a matter for the authorities, not a private talk."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Matthew 18, passage by passage",
+        "href": "/study/bible/matthew/18#plain",
+        "why": "The whole chapter in order: the lost sheep, the road to a brother who has wronged you, and the servant who would not forgive."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to Have a Hard Conversation",
+          "href": "/how-tos/rel-how-to-have-a-hard-conversation",
+          "why": "How to go to someone privately, say what happened without a speech, and listen to what they say back."
+        },
+        {
+          "kind": "wisdom",
+          "label": "What the Bible says about mending what broke",
+          "href": "/wisdom/reconciliation",
+          "why": "Why Scripture tells the worshipper to leave the altar and set things right first, and what reconciliation does and does not require."
+        },
+        {
+          "kind": "help",
+          "label": "The church hurt me",
+          "href": "/help/church-hurt",
+          "why": "For anyone whose conflict with a church was not a misunderstanding but real harm, with places to turn."
+        }
+      ],
+      "question": "Is there a brother or sister you have talked about more than you have talked to?",
+      "do": "If there is someone in your church you are avoiding over a wrong, pray for them by name each day this week, then ask to meet them privately. If it is not safe to go alone, take someone wise.",
+      "verse": {
+        "ref": "Romans 12:18",
+        "text": "If it is possible on your part, live at peace with everyone."
+      },
+      "care": [
+        "If you have been harmed by someone in a church, and were told to forgive and say nothing, what happened to you may have been wrong. Please talk with someone you trust outside that situation. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "How was conflict handled in the home you grew up in?",
+        "discuss": [
+          "Why do you think Jesus tells us to go privately first, before anyone else hears about it?",
+          "What changes when the goal is to win your brother back, and not to win the argument?",
+          "Romans 12:18 says if it is possible. When is reconciliation not possible, and what does faithfulness ask then?"
+        ],
+        "pray": "Pray for any broken relationship in your church that you know of, without naming anyone, and ask for courage to take the first step where you can."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The church as family across ages and backgrounds",
+      "minutes": 12,
+      "teaching": [
+        "Walk into many churches and you can guess the age, income and politics of nearly everyone in the room. Some of that is natural. We like people who are like us, and churches have learned from the market to aim at a target audience, with a service for young families, another for the old, and a style for each. The result can be efficient and lonely at the same time, because no one ever meets the person who would have stretched them.",
+        "Paul wrote to a church of Jews and Gentiles, people who had once despised each other, and told them, “you are no longer strangers and foreigners, but fellow citizens with the saints and members of God’s household” (Ephesians 2:19). He told Timothy to treat older men as fathers and younger women as sisters. The psalm expects that “One generation will commend Your works to the next” (Psalm 145:4), which can't happen if the generations never sit together. The church is the one family you don't choose. That is its gift."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Ephesians 2, passage by passage",
+        "href": "/study/bible/ephesians/2#plain",
+        "why": "How the cross pulled down the wall between Jew and Gentile and made strangers into one household."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The church",
+          "href": "/study/explorer/watch/the-church",
+          "why": "A short film on what the church is in Scripture, good to watch with a teenager or an older friend."
+        },
+        {
+          "kind": "essay",
+          "label": "How American individualism distorts the faith",
+          "href": "/writing/how-american-individualism-distorts",
+          "why": "Why a culture built on the choosing self finds it so hard to belong to a church it did not design."
+        },
+        {
+          "kind": "life",
+          "label": "Why does the Bible call the church a family?",
+          "href": "/life/the-church-as-family",
+          "why": "The church as a household with brothers and sisters who are not optional, against the consumer pew."
+        }
+      ],
+      "question": "Who in your church is most unlike you, and what do you know of their story?",
+      "do": "Learn the name and story of one person in your church who is at least twenty years older or younger than you. Ask them what they have seen God do.",
+      "verse": {
+        "ref": "Ephesians 2:19",
+        "text": "Therefore you are no longer strangers and foreigners, but fellow citizens with the saints and members of God’s household,"
+      },
+      "group": {
+        "open": "Who was an older Christian, not a parent, who mattered to you when you were young?",
+        "discuss": [
+          "Why do churches so often sort themselves by age and background, and what do we lose when they do?",
+          "What could an older believer teach you that no one your own age could, and what could you give back?",
+          "Where does our own group look like only one kind of person, and what would it take to change that?"
+        ],
+        "pray": "Pray for the oldest and the youngest people in your church by name, and for the church to become one household across every line that divides it."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Caring for aging parents and the old among us",
+      "minutes": 12,
+      "teaching": [
+        "There comes a fall, or a phone call, or a slow run of small forgettings, and the parent who carried you now needs carrying. Many people do it while raising children and holding down a job, and they do it mostly alone. The commandment “Honor your father and mother” (Exodus 20:12) does not expire when a parent grows frail. Jesus rebuked people who used religious giving to escape caring for their parents, and from the cross he gave his mother into the keeping of his friend. Honour can take many shapes, including a care home chosen with love. It never means doing it all by yourself, and it never asks anyone to stay in reach of a parent who still does harm.",
+        "The wider church owes the same honour to every old person in it. “You are to rise in the presence of the elderly, honor the aged” (Leviticus 19:32), says the law, in a culture that hides its old and prizes its young. Every one of us, if we live long enough, will need carrying. The question this track leaves with you is whether there will be a family around you when you do, and whether you are building one now. The next track in Living It, Decisions, calling and God's will, takes up the choices such a life will ask of you."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "How do you honour aging parents who need care?",
+        "href": "/life/caring-for-aging-parents",
+        "why": "The long guide to the fifth commandment in a parent's decline: the role reversal, the long goodbye, and the limits of one person's strength."
+      },
+      "also": [
+        {
+          "kind": "guide",
+          "label": "When Our Parents Grow Old: A Bible Study for Caregivers",
+          "href": "/studyguides/when-our-parents-grow-old",
+          "why": "A study for a group of people caring for parents, so that no one carries it alone."
+        },
+        {
+          "kind": "help",
+          "label": "Caring for my parent is wearing me out",
+          "href": "/help/caregiving",
+          "why": "For the caregiver who is running on empty, with places to turn and permission to ask for help."
+        },
+        {
+          "kind": "track",
+          "label": "Decisions, calling and God's will",
+          "href": "/tracks/living-guidance",
+          "why": "The next track on the road, in Living It: Decisions, calling and God's will. Take it up when this one has settled."
+        }
+      ],
+      "question": "Who is old in your life or your church, and what would it mean to honour them this month?",
+      "do": "Visit or call an older person this week, a parent or someone in your church, and ask about their life before you knew them. If you are a caregiver, ask one person to take one task off you.",
+      "verse": {
+        "ref": "Isaiah 46:4",
+        "text": "Even to your old age, I will be the same, and I will bear you up when you turn gray. I have made you, and I will carry you; I will sustain you and deliver you."
+      },
+      "care": [
+        "If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn.",
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Who is the oldest person you know well, and what have they taught you?",
+        "discuss": [
+          "What does honouring a parent look like when they need more care than you can give alone?",
+          "Our culture hides its old people. How does our church do with the old among us?",
+          "Looking back over these eight sessions, what kind of family do you want around you when you are old, and how could you start building it now?"
+        ],
+        "pray": "Pray for the parents and old people in your lives by name, for those caring for them, and for this group to keep being family after it ends."
+      }
+    }
+  ]
+}

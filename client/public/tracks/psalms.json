@@ -513,7 +513,7 @@
       "minutes": 15,
       "teaching": [
         "The Hebrew name of the whole book means praises, and Psalm 145 is the only psalm whose own heading calls it a psalm of praise. It is an acrostic, each line beginning with the next letter of the Hebrew alphabet, praise from A to Z. Then the book ends with five psalms, 146 to 150, each of which begins and ends with Hallelujah, praise the LORD. The laments have not been forgotten. The book has carried them all the way through, and it ends here because that is where the whole story is going.",
-        "This is how the church has prayed the Psalms. Benedict's Rule had monks pray all hundred and fifty every week. Augustine heard in them the voice of the whole Christ, head and body, so that Jesus prays them with his people and his people pray them in him. Bonhoeffer called the Psalter the prayer book of the Bible and said Christians learn to pray by praying it. You have read ten psalms. There are a hundred and forty more, and the next track in this program, on Paul's letter to the Romans, shows the gospel these prayers were waiting for."
+        "This is how the church has prayed the Psalms. Benedict's Rule had monks pray all hundred and fifty every week. Augustine heard in them the voice of the whole Christ, head and body, so that Jesus prays them with his people and his people pray them in him. Bonhoeffer called the Psalter the prayer book of the Bible and said Christians learn to pray by praying it. You have read ten psalms. There are a hundred and forty more, and the next track in this program, on Proverbs, takes the same prayers into the wisdom of an ordinary day."
       ],
       "open": {
         "kind": "chapter",
@@ -536,9 +536,9 @@
         },
         {
           "kind": "track",
-          "label": "Deep in one: Paul's letter to the Romans",
-          "href": "/tracks/romans",
-          "why": "Keep praying the Psalms, and go on in this program to Romans, a letter of the New Testament read one chapter at a time."
+          "label": "Deep in one: Proverbs",
+          "href": "/tracks/proverbs",
+          "why": "The next track on the road, in Deep in the Old Testament: Deep in one: Proverbs. Take it up when this one has settled."
         }
       ],
       "question": "The Psalter ends in praise after a hundred and fifty psalms of every kind. What would it take for your praise to hold all you have lived?",

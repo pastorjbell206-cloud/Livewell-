@@ -704,6 +704,12 @@
           "label": "The Apostles' Creed",
           "href": "/resources/creeds/apostles-creed",
           "why": "The oldest summary of the faith still in use, with notes on each line: crucified, buried, and on the third day risen."
+        },
+        {
+          "kind": "track",
+          "href": "/tracks/john",
+          "label": "Deep in one: the Gospel of John",
+          "why": "The next track on the road, in Deep in the New Testament: Deep in one: the Gospel of John. Take it up when this one has settled."
         }
       ],
       "question": "The women were afraid and said nothing. What keeps you quiet about what you have seen in this book?",

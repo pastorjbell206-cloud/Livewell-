@@ -1,0 +1,466 @@
+{
+  "slug": "teens-growing",
+  "title": "Growing on your own",
+  "for": "I'm a teenager who wants to grow",
+  "subtitle": "Eight short sessions for a teenager who wants a faith of their own: reading the Bible, praying, church, baptism and the Supper, serving, the Holy Spirit, flat seasons and owning what you believe.",
+  "intro": [
+    "This track is for teenagers who want their faith to be more than something they were handed. Each session takes about six minutes: a short reading, a film or a page, one question, one thing to do and one verse.",
+    "It won't pretend growing is always exciting, and it won't tell you that you have to feel something to be doing it right. It will give you habits small enough to keep and reasons to keep them. Take it alone, with friends, with a youth group, or with a parent."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for a youth leader or a parent taking teenagers through Growing on your own. The sessions are about ordinary habits: reading, prayer, church, the sacraments, serving, and what to do when it all feels flat. The leader's task is to make those habits feel possible rather than impressive, and to keep the room honest about how hard they are to keep.",
+      "Each person takes the session on their own first: a short reading, a film or a page, and a passage. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight teenagers is a good size, small enough that the quiet ones speak. A parent and one teenager can use the same guide at a kitchen table or in the car. Meet for about forty-five minutes, eight times, and keep the end time you promised. A leader doesn't need to be a model of perfect habits. It helps more to admit which ones are hard for you too. Have a second trusted adult present whenever a group meets."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Pick somewhere ordinary: a living room, a kitchen, a corner with snacks. Sit in a circle so nobody faces a teacher. Phones can stay out for the film and the page, then go face down. Say at the first meeting that anyone may pass on any question, that what people share stays in the room unless someone is in danger, and that nobody will be made to pray aloud or to report on their habits."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About forty-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Five minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: watch the session's film or look at its page together, if not everyone has.",
+          "Five minutes: one person reads the verse aloud, with a few verses around it.",
+          "Twenty minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else, then name the next session."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Welcome every question, including the ones that sound like complaints about church or about God. Say what is true in an objection before answering it. If nobody knows, say so, write it down, and bring something back next time.",
+          "Session 4 touches baptism and the Lord's Supper, where churches honestly differ. Present each view fairly, say what your own church practises without treating other churches as wrong-headed, and send questions about your church's practice to its pastor."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A session on flat faith or on church can bring up something heavier: a family in trouble, a church that did harm, a sadness that has lasted a long time. When that happens, stop the discussion. Listen, thank the person for saying it, and don't explain their pain for them. Afterwards, speak with them, with another adult nearby, and ask what would help.",
+          "If a young person says that anyone is harming them, or that they have thought about harming themselves, take it seriously and never promise to keep it secret. A youth leader may be required by law, and by the church's own policy, to report harm to a child; know that policy before the first meeting. A parent should get help the same day."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a teenager, or their parent, to Find Help when something has become too heavy to carry: worry that stops sleep or school, sadness that will not lift, harm at home or anywhere else, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. Stay with the young person while help is reached."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Reading the Bible on your own",
+      "minutes": 6,
+      "teaching": [
+        "Most people who decide to read the Bible on their own start at Genesis, get stuck somewhere in Leviticus, and quietly stop. That isn't a lack of faith. It's a bad plan. A plan that works is small on purpose: one Gospel, a chapter a day, at the same time each day. Mark is a good place to start, because it's short and it moves. Ask three things of every chapter: what happens, what it shows you about God, and what it asks of you. If you miss a day, pick up where you stopped. There's no catching up."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to Actually Read the Bible",
+        "href": "/how-tos/sf-how-to-actually-read-the-bible",
+        "why": "A practical way to read Scripture so it sticks: where to start, how long, and what to ask of a passage."
+      },
+      "also": [
+        {
+          "kind": "book",
+          "label": "Mark",
+          "href": "/study/bible/mark",
+          "why": "The shortest Gospel, with an introduction and plain notes on every chapter, a good first book to read through."
+        },
+        {
+          "kind": "study",
+          "label": "How to study the Bible",
+          "href": "/study/how-to-study",
+          "why": "A simple method for reading any chapter slowly: observe, ask, look up, and carry one thing out the door."
+        },
+        {
+          "kind": "help",
+          "label": "Where do I start reading the Bible?",
+          "href": "/help/reading-the-bible",
+          "why": "For anyone who has tried and stalled: where to begin, how much to read, and what to do when it stops making sense."
+        }
+      ],
+      "question": "What has made reading the Bible on your own hard for you so far?",
+      "do": "Pick a time and a place. Read Mark 1 there tomorrow, and write one sentence about what it shows you about Jesus. Read chapter 2 the day after.",
+      "verse": {
+        "ref": "Psalm 119:105",
+        "text": "Your word is a lamp to my feet and a light to my path."
+      },
+      "group": {
+        "open": "Have you ever tried to read the Bible on your own? What happened?",
+        "discuss": [
+          "Why do you think so many people start at Genesis and stall?",
+          "Which of the three questions is hardest to answer when you read: what happens, what it shows about God, or what it asks of you?",
+          "What time of day could you actually protect for ten minutes of reading?"
+        ],
+        "pray": "Those who pray can ask for a steady habit and an open mind when they read. Anyone who doesn't pray can name one thing they're curious to find in Mark."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Praying when it feels like talking to the ceiling",
+      "minutes": 6,
+      "teaching": [
+        "Plenty of Christians, including ones who have prayed for decades, have prayed and felt nothing at all. If prayer feels like talking to the ceiling, you're in good company. Many of the Psalms were prayed by people who weren't sure God was listening, and they told him so. Prayer isn't a feeling you produce. It's speaking honestly to someone who is there whether or not you feel him. Paul admits that “we do not know how we ought to pray, but the Spirit Himself intercedes for us” (Romans 8:26). Short and honest beats long and polished."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Prayer",
+        "href": "/study/explorer/watch/prayer",
+        "why": "A short film on what prayer is in the Bible: talking with God as a child talks with a father, honestly and often."
+      },
+      "also": [
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 13 slowly",
+          "href": "/tools/pray-the-psalms?psalm=13",
+          "why": "A short psalm that begins by asking how long God will stay hidden, prayed a line at a time."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Pray When You Do Not Feel Like It",
+          "href": "/how-tos/sf-how-to-pray-when-you-do-not-feel-like-it",
+          "why": "Practical ways to keep praying when the words feel empty and nothing seems to happen."
+        },
+        {
+          "kind": "help",
+          "label": "I don't know how to pray",
+          "href": "/help/prayer",
+          "why": "Plain help for anyone who isn't sure what to say to God or whether they're doing it right."
+        }
+      ],
+      "question": "When you pray, what do you actually say to God, and what do you leave out?",
+      "do": "For five nights, pray for two minutes before you sleep. Thank God for one thing, tell him one thing that's bothering you, and ask for one thing. Stop at two minutes.",
+      "verse": {
+        "ref": "Romans 8:26",
+        "text": "In the same way, the Spirit helps us in our weakness. For we do not know how we ought to pray, but the Spirit Himself intercedes for us with groans too deep for words."
+      },
+      "group": {
+        "open": "When does prayer feel most like talking to the ceiling for you?",
+        "discuss": [
+          "Why do you think the Bible keeps prayers from people who felt God was far away?",
+          "What's the difference between praying honestly and praying properly?",
+          "If the Spirit helps when you don't know what to say, what does that change about how you pray?"
+        ],
+        "pray": "Those who pray can take two minutes of quiet together, each telling God one true thing in silence. Anyone who doesn't pray can sit in the quiet and notice what comes to mind."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Church when you'd rather not go",
+      "minutes": 6,
+      "teaching": [
+        "There are real reasons a teenager might not want to go to church: it's boring, nobody your age is there, or you've watched people act one way on Sunday and another on Monday. Some of that deserves to be said out loud. But the church was never meant to be a show you rate. The New Testament calls it a body and a family, which means you belong to it before you enjoy it, and it needs what you bring. The first Christians “devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer” (Acts 2:42). Nobody grows a faith alone for long."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "What the church is",
+        "href": "/study/explorer/watch/the-church",
+        "why": "A short film on the church in the Bible: not a building or a show, but a people God gathers and sends."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Can you be a Christian without going to church?",
+          "href": "/answers/can-you-be-a-christian-without-church",
+          "why": "An honest answer to the question many people quietly ask, taking the reasons for staying away seriously."
+        },
+        {
+          "kind": "life",
+          "label": "Why Does the Bible Call the Church a Family?",
+          "href": "/life/the-church-as-family",
+          "why": "Why the church is a household you belong to rather than a service you attend, and what that asks of you."
+        },
+        {
+          "kind": "wisdom",
+          "label": "Finding a Church",
+          "href": "/wisdom/finding-a-church",
+          "why": "What the Bible says about belonging to a church, and what to look for when you choose one."
+        }
+      ],
+      "question": "When you'd rather not go to church, what's the honest reason?",
+      "do": "This Sunday, learn the name of one person at church who isn't your age, and ask them one question about their week.",
+      "verse": {
+        "ref": "Hebrews 10:24-25",
+        "text": "And let us consider how to spur one another on to love and good deeds. Let us not neglect meeting together, as some have made a habit, but let us encourage one another, and all the more as you see the Day approaching."
+      },
+      "group": {
+        "open": "What's one thing about church you'd change if you could?",
+        "discuss": [
+          "Is there a difference between church being boring and church being pointless? What is it?",
+          "The New Testament calls the church a body. What does a body lose when one part goes missing?",
+          "What could you bring to your church that nobody else there can?"
+        ],
+        "pray": "Those who pray can pray for their church, its leaders and its young people by name. Anyone who doesn't pray can think of one person at church they're glad is there."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Baptism and the Lord's Supper",
+      "minutes": 7,
+      "teaching": [
+        "Jesus gave his church two things to keep doing. Baptism happens once, in the name of the Father, the Son and the Holy Spirit, and marks a person as Christ's own. The Lord's Supper happens again and again: bread and a cup, remembering his body and blood given for us. Every church keeps both; they differ on details. Some baptize the babies of believing families as a sign of God's promise; others baptize only those old enough to confess faith themselves. Some believe Christ is truly present in the bread and wine; others see a spiritual presence, or a meal of remembrance. Ask your pastor what your church believes."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Baptism and the Lord's Supper",
+        "href": "/study/explorer/watch/baptism-and-supper",
+        "why": "A short film on the two things Jesus told his church to do, and on the different ways churches understand them."
+      },
+      "also": [
+        {
+          "kind": "compare",
+          "label": "Where Christians differ",
+          "href": "/theology/compare",
+          "why": "The main Christian traditions side by side, each stated fairly, including what they believe about baptism and the Supper."
+        },
+        {
+          "kind": "doctrine",
+          "label": "The sacraments",
+          "href": "/study/bible/doctrines/sacraments",
+          "why": "The Study Bible's teaching on baptism and the Lord's Supper, traced through the passages each tradition reads."
+        },
+        {
+          "kind": "life",
+          "label": "What Does Baptism Mean, and Why Does It Matter?",
+          "href": "/life/baptism-and-the-new-life",
+          "why": "What Scripture and the early church say about baptism, with the range of faithful Christian views set out."
+        }
+      ],
+      "question": "Have you been baptized, and what do you know or remember about it?",
+      "do": "Ask your pastor or a parent two questions this week: what your church believes about baptism, and what it believes happens at the Lord's Supper. Write down the answers.",
+      "verse": {
+        "ref": "Matthew 28:19",
+        "text": "Therefore go and make disciples of all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Spirit,"
+      },
+      "group": {
+        "open": "When you were younger, what did you think baptism or the Lord's Supper meant?",
+        "discuss": [
+          "Why do you think Jesus gave his followers things to do with water, bread and a cup, not only words to believe?",
+          "Christians disagree about baptizing babies. What is the strongest reason on each side?",
+          "How can churches that disagree about these things still treat each other as family?"
+        ],
+        "pray": "Those who pray can give thanks that Jesus keeps his promises in front of his people, and pray for churches that disagree. Anyone who doesn't pray can name one question about this they want answered."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Serving",
+      "minutes": 6,
+      "teaching": [
+        "Church can feel like something adults run and teenagers attend. The New Testament doesn't see it that way. Paul says “to each one the manifestation of the Spirit is given for the common good” (1 Corinthians 12:7), and each one includes you. Jesus said he “did not come to be served, but to serve” (Mark 10:45), and he washed his friends' feet. Serving isn't a reward for being mature. It's one of the ways maturity grows. Running the slides, holding a baby so a tired parent can sit, stacking chairs, sitting with the new kid: none of it is small, because Jesus didn't think it was."
+      ],
+      "open": {
+        "kind": "self-check",
+        "label": "Spiritual Gifts Self-Check",
+        "href": "/tools/spiritual-gifts",
+        "why": "A short self-check on the gifts the New Testament names, to help you notice where you might serve well."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "Serving Others",
+          "href": "/wisdom/serving-others",
+          "why": "What the Bible says about serving: greatness in reverse, and love that takes the form of ordinary work."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Spiritual gifts",
+          "href": "/study/bible/doctrines/gifts",
+          "why": "The Study Bible's teaching on the gifts of the Spirit, given to every believer for the good of the whole church."
+        },
+        {
+          "kind": "chapter",
+          "label": "John 13, passage by passage",
+          "href": "/study/bible/john/13#plain",
+          "why": "Jesus washes his disciples' feet and tells them to do the same, with plain notes on what it meant."
+        }
+      ],
+      "question": "Where could you serve at your church or in your town that nobody is covering right now?",
+      "do": "Ask someone who runs something at your church what they need help with. Offer one hour this month, and keep it.",
+      "verse": {
+        "ref": "1 Peter 4:10",
+        "text": "As good stewards of the manifold grace of God, each of you should use whatever gift he has received to serve one another."
+      },
+      "group": {
+        "open": "Who is someone you've watched serve without being thanked?",
+        "discuss": [
+          "Why does Jesus washing his friends' feet still surprise people?",
+          "What's the difference between serving and being seen to serve?",
+          "What would happen at your church if every teenager took one job for a year?"
+        ],
+        "pray": "Those who pray can ask to see where they're needed, and give thanks for people who serve quietly. Anyone who doesn't pray can choose one person to help this week."
+      }
+    },
+    {
+      "n": 6,
+      "title": "The Holy Spirit in a young Christian",
+      "minutes": 6,
+      "teaching": [
+        "The Holy Spirit isn't a force or a mood. Christians confess him as God, the third person of the Trinity, and the New Testament says he lives in everyone who trusts Christ, at fifteen as much as at fifty. He isn't only for dramatic moments. Jesus promised that the Spirit “will teach you all things and will remind you of everything I have told you” (John 14:26). Most of his work is slow, like fruit on a tree: love, patience and self-control growing where they weren't before. You may not feel him working. You'll more likely notice it later, looking back."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The Holy Spirit in a believer",
+        "href": "/study/explorer/watch/spirit-in-a-believer",
+        "why": "A short film on what the Spirit does in a Christian: living within, teaching, comforting and growing new life."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "The Holy Spirit",
+          "href": "/study/bible/doctrines/spirit",
+          "why": "The Study Bible's teaching on the Spirit, from the first page of Genesis to the church in Acts and beyond."
+        },
+        {
+          "kind": "chapter",
+          "label": "Galatians 5, passage by passage",
+          "href": "/study/bible/galatians/5#plain",
+          "why": "Paul on walking by the Spirit and the fruit the Spirit grows, with plain notes on each part."
+        },
+        {
+          "kind": "guide",
+          "label": "The Fruit of the Spirit",
+          "href": "/studyguides/fruit-of-the-spirit",
+          "why": "A Bible study on the nine fruits Paul names, for a group or for reading through on your own."
+        }
+      ],
+      "question": "Which part of the fruit of the Spirit do you most wish were growing in you right now?",
+      "do": "Read Galatians 5:22-23 every morning for a week. Each night, notice one moment where you saw one of those nine things, in you or in someone else.",
+      "verse": {
+        "ref": "Galatians 5:22-23",
+        "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control. Against such things there is no law."
+      },
+      "group": {
+        "open": "Before today, what did you think the Holy Spirit was?",
+        "discuss": [
+          "Why do you think the Bible describes the Spirit's work as fruit, rather than as fireworks?",
+          "Christians differ on gifts like tongues and prophecy today. What do they all agree the Spirit does?",
+          "Where have you seen someone grow in patience or kindness over time?"
+        ],
+        "pray": "Those who pray can ask the Spirit to grow one fruit in them, and name it. Anyone who doesn't pray can think about which one they'd most like to see grow."
+      }
+    },
+    {
+      "n": 7,
+      "title": "When your faith feels flat",
+      "minutes": 6,
+      "teaching": [
+        "Sometimes the excitement you felt at camp, or on the night faith first became real, just drains away. Worship feels like singing words, the Bible feels like homework, and you wonder whether any of it was ever real. That's common, and it isn't proof that God has gone. The writer of Psalm 42 felt it and asked himself, “Why are you downcast, O my soul?” (Psalm 42:5), then told himself to hope in God anyway. Faith isn't the same as a feeling about faith. In a flat season, keep the habits small, stay near your people, and give it time. Feelings often return after faithfulness, not before."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "Why Does God Feel So Far Away When You Pray?",
+        "href": "/life/the-dry-season",
+        "why": "On the seasons when prayer hits the ceiling and Scripture goes flat, and why the faithful have always known them."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "When God Feels Far Away",
+          "href": "/wisdom/spiritual-dryness",
+          "why": "What the Bible says to people in a dry season, where God is often nearer than he feels."
+        },
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 42 slowly",
+          "href": "/tools/pray-the-psalms?psalm=42",
+          "why": "The psalm of someone thirsty for God and low in spirit, prayed a line at a time."
+        },
+        {
+          "kind": "howto",
+          "label": "How to Keep Going When God Feels Distant",
+          "href": "/how-tos/sf-how-to-keep-going-when-god-feels-distant",
+          "why": "Practical ways to keep praying, reading and belonging through a season when God feels far away."
+        }
+      ],
+      "question": "When has your faith felt most flat, and what was going on in your life then?",
+      "do": "Pray Psalm 42 slowly this week, out loud if you can. Underline every place the writer talks to his own soul, and every place he talks to God.",
+      "verse": {
+        "ref": "Psalm 42:5",
+        "text": "Why are you downcast, O my soul? Why the unease within me? Put your hope in God, for I will yet praise Him for the salvation of His presence."
+      },
+      "care": [
+        "If you are afraid that you have fallen away from God, that fear is not usually the mark of someone who has. Read Romans 8:38-39 slowly. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What's something that used to excite you about faith that doesn't now?",
+        "discuss": [
+          "Why do you think the Bible keeps prayers from people who felt far from God?",
+          "What's the difference between faith and a feeling about faith?",
+          "What small habit could you keep going through a flat season?"
+        ],
+        "pray": "Those who pray can tell God honestly how flat it feels, and pray for anyone in the room in a dry season. Anyone who doesn't pray can name one thing about Jesus that still holds their attention."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Owning your faith",
+      "minutes": 6,
+      "teaching": [
+        "If you grew up in church, your faith began as your parents' faith, and that isn't a bad thing. Paul told Timothy that his faith “first dwelt in your grandmother Lois and your mother Eunice” (2 Timothy 1:5), and he meant it as a gift. But a faith you've only borrowed is hard to carry when someone pushes back on it. Owning it means knowing what Christians believe and why, saying it in your own words, and choosing it when nobody is watching. Christians have confessed the Apostles' Creed for well over a thousand years. Learn it, then ask which lines you can say as your own."
+      ],
+      "open": {
+        "kind": "creed",
+        "label": "The Apostles' Creed",
+        "href": "/resources/creeds/apostles-creed",
+        "why": "The oldest short summary of the Christian faith still in wide use, with notes on what each line means."
+      },
+      "also": [
+        {
+          "kind": "catechism",
+          "label": "The family catechism",
+          "href": "/family/catechism",
+          "why": "Short questions and answers on what Christians believe, worth working through to put the faith into your own words."
+        },
+        {
+          "kind": "chapter",
+          "label": "2 Timothy 1, passage by passage",
+          "href": "/study/bible/2-timothy/1#plain",
+          "why": "Paul writes to a young leader about the faith his family handed him, with plain notes on what it asks of him."
+        },
+        {
+          "kind": "track",
+          "label": "When life gets hard",
+          "href": "/tracks/teens-hard-things",
+          "why": "The next track on the road, in Faith for Teenagers: When life gets hard. Take it up when this one has settled."
+        }
+      ],
+      "question": "Which part of what Christians believe would be hardest for you to explain to a friend in your own words?",
+      "do": "Read the Apostles' Creed slowly. Mark each line as one you could explain or one you have a question about. Take your question to someone you trust.",
+      "verse": {
+        "ref": "2 Timothy 3:14",
+        "text": "But as for you, continue in the things you have learned and firmly believed, since you know from whom you have learned them."
+      },
+      "group": {
+        "open": "What's one thing you believe only because someone told you, and one you've checked for yourself?",
+        "discuss": [
+          "Is starting with your parents' faith a bad thing? Why or why not?",
+          "What's the difference between a faith you've inherited and a faith you've chosen?",
+          "What would help you keep growing after these eight sessions end?"
+        ],
+        "pray": "Those who pray can give thanks for the people who first handed them the faith, and ask to hold it as their own. Anyone who doesn't pray can name one question from these sessions they want to keep asking."
+      }
+    }
+  ]
+}
