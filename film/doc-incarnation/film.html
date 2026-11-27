@@ -1,0 +1,415 @@
+<!doctype html>
+<!-- "The Word became flesh" (doctrine film: the incarnation). One continuous picture in ten scenes: the two
+     wrong answers (a ring that only seems, a good man climbing to a crown) struck through; the word
+     incarnation and a light that comes down and is held in a ring of body, soul, mind and will; Sinai's
+     voice, the tabernacle filled with glory, Solomon's temple and its question; the line of David's house
+     running to a lit temple door, with Immanuel and Mighty God on the way; John 1:14 over an open book, then
+     the tent and its glory moving to stand among the people; a human life in four pictures, Gethsemane's two
+     wills, the sea made calm; the early church on a timeline (the ring that only seemed made solid, the mind
+     restored, the four boundaries of 451); a level scale for the two questions where Christians differ; an
+     open door, a small town, Hebrews 4:15 above a path walked together, the ring raised; light handed on, and
+     the tent pitched among us.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>The Word became flesh</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5", OLIVE = "#7A8B5A";
+  const CH = Object.fromEntries(TL.chapters.map((c) => [c.id, c]));
+  const CS = (id) => CH[id].start;
+  // when word i of line k is spoken (an even spread across the line; close enough to follow the voice)
+  const W = (id, k, i) => { const l = CH[id].lines[k], n = l.text.split(" ").length; return l.start + (l.end - l.start) * (i / n); };
+  const T = (p, cls, x, y, s, size, anchor, fill) => { const e = txt(p, cls, x, y, s, size, fill ? { fill } : undefined); if (anchor) e.setAttribute("style", (e.getAttribute("style") || "") + `text-anchor:${anchor};`); return e; };
+  const G = (p) => el("g", {}, p || world);
+  const R = rng(41);
+  const rad = (d) => (d * Math.PI) / 180;
+  const arcD = (r, a0, a1) => `M${(r * Math.cos(rad(a0))).toFixed(2)} ${(r * Math.sin(rad(a0))).toFixed(2)} A${r} ${r} 0 0 1 ${(r * Math.cos(rad(a1))).toFixed(2)} ${(r * Math.sin(rad(a1))).toFixed(2)}`;
+  const arcAt = (cx, cy, r, a0, a1) => `M${(cx + r * Math.cos(rad(a0))).toFixed(2)} ${(cy + r * Math.sin(rad(a0))).toFixed(2)} A${r.toFixed(2)} ${r.toFixed(2)} 0 0 1 ${(cx + r * Math.cos(rad(a1))).toFixed(2)} ${(cy + r * Math.sin(rad(a1))).toFixed(2)}`;
+  const along = (pts, k) => { const p = clamp(k) * (pts.length - 1), i = Math.min(pts.length - 2, Math.floor(p)), f = ease(p - i); return [mix(pts[i][0], pts[i + 1][0], f), mix(pts[i][1], pts[i + 1][1], f)]; };
+
+  // the emblem used through the film: a light held in a ring of four arcs (mind, soul, will, body)
+  const QUART = [["MIND", -130, -50], ["SOUL", -40, 40], ["WILL", 50, 130], ["BODY", 140, 220]];
+  const emblem = (parent, r) => {
+    const g = G(parent);
+    const glow = el("circle", { r: r * 0.78, fill: MUSTARD, opacity: 0.16 }, g), core = el("circle", { r: r * 0.44, fill: MUSTARD }, g);
+    const ghost = el("circle", { r, fill: "none", stroke: STONE, "stroke-width": 2.2, "stroke-dasharray": "7 8" }, g);
+    const arcs = QUART.map(([, a0, a1]) => line(g, arcD(r, a0, a1), { "stroke-width": 4 }));
+    return { g, glow, core, ghost, arcs, r };
+  };
+  // a tent (the tabernacle) standing on y = 0: paper body, a glory that fills from the floor, and a roof
+  const tent = (parent, w, h) => {
+    const g = G(parent);
+    const paper = el("rect", { x: -w / 2, y: -h, width: w, height: h, fill: PAPER }, g);
+    const glory = el("rect", { x: -w / 2, y: 0, width: w, height: 0, fill: MUSTARD, opacity: 0.85 }, g);
+    const body = line(g, `M${-w / 2} 0 V${-h} H${w / 2} V0`, { "stroke-width": 3 });
+    const roof = line(g, `M${-w / 2 - 8} ${-h + 2} L0 ${-h - w * 0.32} L${w / 2 + 8} ${-h + 2}`, { "stroke-width": 3 });
+    const door = line(g, `M${-w * 0.12} 0 V${-h * 0.55} H${w * 0.12} V0`, { stroke: STONE, "stroke-width": 2 });
+    return { g, paper, glory, body, roof, door, w, h };
+  };
+  const tentDraw = (o, k, fill) => { op(o.paper, up(k, 0.5, 0.5)); draw(o.body, k); draw(o.roof, up(k, 0.4, 0.6)); draw(o.door, up(k, 0.7, 0.3)); const f = clamp(fill) * o.h; set(o.glory, { y: (-f).toFixed(1), height: f.toFixed(1) }); };
+
+  // ================= 1. the question: two wrong answers =================
+  const Q0 = S("question", 0), Q1 = S("question", 2);
+  const g1 = G();
+  const qm = T(g1, "disp", 0, 0, "?", 150, null, MUSTARD);
+  const seemG = G(g1), seemA = el("circle", { r: 74, fill: "none", stroke: STONE, "stroke-width": 2.6, "stroke-dasharray": "9 9" }, seemG), seemB = el("circle", { r: 42, fill: "none", stroke: LINE, "stroke-width": 2, "stroke-dasharray": "5 7" }, seemG);
+  const seemLab = T(g1, "lab", 300, 432, "ONLY SEEMED HUMAN?", 15);
+  const stairs = line(g1, "M850 400 H910 V360 H960 V320 H1010 V280 H1074", { "stroke-width": 3 });
+  const climber = el("circle", { r: 10, fill: INK }, g1), STEP = [[880, 388], [935, 348], [985, 308], [1040, 268]];
+  const crown = line(g1, "M1018 244 L1018 220 L1029 232 L1040 212 L1051 232 L1062 220 L1062 244 Z", { stroke: MUSTARD, "stroke-width": 3 });
+  const goodLab = T(g1, "lab", 962, 446, "ONLY A GOOD MAN?", 15);
+  const strikeL = line(g1, "M200 390 L400 210", { stroke: STONE, "stroke-width": 3 }), strikeR = line(g1, "M846 416 L1090 196", { stroke: STONE, "stroke-width": 3 });
+  const draw1 = (t) => {
+    const v = span(t, Q0 - 0.8, CS("confess") + 0.6, 0.7, 0.8); op(g1, v); if (v <= 0) return;
+    const no = up(t, Q1 + 0.3, 0.9), dim = mix(1, 0.32, up(t, Q1 + 0.8, 0.8));
+    move(qm, 640, 408 + 6 * Math.sin(t * 0.9), mix(1, 0.86, no)); op(qm, up(t, Q0 + 0.2, 0.9) * (1 - up(t, Q1 + 0.9, 0.7)));
+    const a = W("question", 1, 0), b = W("question", 1, 5);
+    move(seemG, 300, 300 + 4 * Math.sin(t * 0.7)); op(seemG, up(t, a, 0.8) * dim);
+    seemA.setAttribute("stroke-dashoffset", (t * 9).toFixed(1)); seemB.setAttribute("stroke-dashoffset", (-t * 7).toFixed(1));
+    set(seemA, { r: (74 + 3 * Math.sin(t * 1.3)).toFixed(1) }); op(seemLab, up(t, a + 0.3, 0.6) * dim);
+    draw(stairs, up(t, b, 0.8)); op(stairs, dim);
+    const [cx, cy] = along(STEP, up(t, b + 0.6, 2.4)); set(climber, { cx: cx.toFixed(1), cy: cy.toFixed(1) }); op(climber, up(t, b + 0.3, 0.5) * dim);
+    draw(crown, up(t, b + 2.4, 0.8)); op(crown, up(t, b + 2.3, 0.3) * dim); op(goodLab, up(t, b + 0.5, 0.6) * dim);
+    draw(strikeL, up(t, Q1 + 0.1, 0.6)); draw(strikeR, up(t, Q1 + 0.4, 0.6));
+  };
+
+  // ================= 2. what the church confesses: a light comes down and is held in a ring =================
+  const C = [0, 1, 2, 3].map((k) => S("confess", k));
+  const g2 = G();
+  const word2 = T(g2, "disp", 640, 286, "incarnation", 92), latin2 = T(g2, "lab", 640, 336, "FROM THE LATIN CARO · FLESH", 15);
+  const trail = line(g2, "M640 214 V330", { stroke: MUSTARD, "stroke-width": 3 });
+  const E2 = emblem(g2, 100); move(E2.g, 640, 330);
+  const qLabs = QUART.map(([s], i) => T(g2, "lab", [640, 770, 640, 510][i], [212, 336, 472, 336][i], s, 15, [null, "start", null, "end"][i]));
+  const fullG = T(g2, "lab", 510, 336, "FULLY GOD", 15, "end", MUSTARD), fullM = T(g2, "lab", 770, 336, "FULLY MAN", 15, "start");
+  const jon = T(g2, "lab", 640, 548, "JESUS OF NAZARETH", 15), mary = T(g2, "lab", 640, 548, "CONCEIVED BY THE HOLY SPIRIT · BORN OF THE VIRGIN MARY", 14), one2 = T(g2, "ital", 640, 552, "one person", 46);
+  const draw2 = (t) => {
+    const v = span(t, CS("confess") - 0.3, CS("tent") + 0.8, 0.6, 0.9); op(g2, v); if (v <= 0) return;
+    const out = 1 - up(t, C[1] + 0.1, 0.7);
+    op(word2, up(t, CS("confess") + 0.4, 0.8) * out); word2.setAttribute("y", (290 - 6 * up(t, C[0], 3)).toFixed(1));
+    op(latin2, up(t, W("confess", 0, 6), 0.6) * out);
+    const dk = up(t, W("confess", 1, 9), 2.0), ly = mix(214, 330, dk);
+    set(E2.core, { cy: (ly - 330).toFixed(1), r: (44 + 2 * Math.sin(t * 2)).toFixed(1) }); set(E2.glow, { cy: (ly - 330).toFixed(1), r: (mix(60, 78, dk) + 5 * Math.sin(t * 1.4)).toFixed(1) });
+    op(E2.core, up(t, W("confess", 1, 1), 0.8)); op(E2.glow, up(t, W("confess", 1, 1), 0.8) * (0.13 + 0.05 * Math.sin(t * 1.4)));
+    draw(trail, dk); op(trail, (dk > 0 ? 0.55 : 0) * (1 - up(t, C[2] + 0.5, 1.2)));
+    op(jon, span(t, W("confess", 1, 13), W("confess", 1, 16) + 0.2, 0.6, 0.5)); op(mary, up(t, W("confess", 1, 16) + 0.2, 0.6) * (1 - up(t, C[2] + 0.4, 0.6)));
+    const arcAt = [W("confess", 2, 9), W("confess", 2, 8), W("confess", 2, 11), W("confess", 2, 6)];
+    op(E2.ghost, up(t, W("confess", 2, 3), 0.6) * (1 - up(t, C[3], 0.6))); E2.ghost.setAttribute("stroke-dashoffset", (t * 6).toFixed(1));
+    E2.arcs.forEach((a, i) => draw(a, up(t, arcAt[i] - 0.1, 0.7)));
+    qLabs.forEach((l, i) => op(l, up(t, arcAt[i], 0.5) * (1 - up(t, C[3] + 0.1, 0.5))));
+    op(fullG, up(t, W("confess", 3, 3), 0.6)); op(fullM, up(t, W("confess", 3, 5), 0.6)); op(one2, up(t, C[3] + 0.2, 0.8));
+    move(E2.g, 640, 330, mix(1, 0.92, up(t, CS("tent"), 0.8)));
+  };
+
+  // ================= 3. a God who dwells: Sinai, the tabernacle, the temple =================
+  const Tn = [0, 1, 2, 3].map((k) => S("tent", k));
+  const g3 = G(), GY = 460;
+  const ground3 = line(g3, `M110 ${GY} H1170`, { stroke: STONE, "stroke-width": 2.5 });
+  const stars = [...Array(24)].map((_, i) => ({ x: 150 + i * 42 + (R() - 0.5) * 20, y: 120 + R() * 58, r: 1.6 + R() * 2, p: R() * 6, e: el("circle", { fill: STONE }, g3) }));
+  const sinai = line(g3, `M140 ${GY} L270 304 L400 ${GY}`, { "stroke-width": 3 });
+  const cloudS = G(g3); [[-30, 4, 22], [0, -8, 30], [30, 4, 22]].forEach(([x, y, r]) => el("circle", { cx: x, cy: y, r, fill: MUTED }, cloudS));
+  const voice = [0, 1, 2].map(() => el("path", { fill: "none", stroke: STONE, "stroke-width": 2.2, "stroke-linecap": "round" }, g3));
+  const sinaiLab = T(g3, "lab", 270, 500, "SINAI · A VOICE, NO FORM", 15);
+  const court = line(g3, `M520 ${GY} V418 H760 V${GY}`, { stroke: LINE, "stroke-width": 2.4 });
+  const camp = [450, 478, 802, 830, 506, 774].map((x) => el("path", { d: `M${x - 11} ${GY} L${x} ${GY - 20} L${x + 11} ${GY} Z`, fill: WARM, stroke: STONE, "stroke-width": 1.8 }, g3));
+  const tab = tent(g3, 96, 62); move(tab.g, 640, GY);
+  const tabGlow = el("ellipse", { cx: 640, cy: 352, rx: 70, ry: 26, fill: MUSTARD, opacity: 0.2 }, g3);
+  const tabLab = T(g3, "lab", 640, 500, "THE TABERNACLE", 15);
+  const temG = G(g3);
+  const temFill = el("path", { d: `M920 446 V372 H1080 V446 Z M908 372 L1000 328 L1092 372 Z`, fill: PAPER }, temG);
+  const temLines = [`M900 ${GY} V446 H1100 V${GY}`, "M920 446 V372 H1080 V446", "M908 372 L1000 328 L1092 372 Z", "M944 380 V446", "M970 380 V446", "M1030 380 V446", "M1056 380 V446", "M990 446 V410 H1010 V446"].map((d) => line(temG, d, { "stroke-width": 2.6 }));
+  const temLab = T(g3, "lab", 1000, 500, "SOLOMON'S TEMPLE", 15), temQ = T(g3, "disp", 1000, 304, "?", 84, null, MUSTARD);
+  const draw3 = (t) => {
+    const v = span(t, CS("tent") - 0.2, CS("promise") + 0.6, 0.7, 0.8); op(g3, v); if (v <= 0) return;
+    draw(ground3, up(t, CS("tent") + 0.1, 1.8));
+    stars.forEach((s, i) => { set(s.e, { cx: s.x.toFixed(1), cy: s.y.toFixed(1), r: (s.r * (0.8 + 0.25 * Math.sin(t * 1.6 + s.p))).toFixed(2) }); op(s.e, up(t, CS("tent") + 0.4 + i * 0.14, 0.6) * (0.55 + 0.3 * Math.sin(t * 1.1 + s.p))); });
+    draw(sinai, up(t, Tn[1] - 0.2, 1.0)); move(cloudS, 270 + 4 * Math.sin(t * 0.6), 296); op(cloudS, up(t, Tn[1] + 0.5, 0.8));
+    voice.forEach((p, i) => { const ph = ((t - Tn[1]) * 0.45 + i / 3) % 1, rr = 48 + ph * 54; p.setAttribute("d", arcAt(270, 290, rr, 215, 325)); op(p, t > Tn[1] + 0.8 ? Math.sin(ph * Math.PI) * 0.75 * up(t, Tn[1] + 0.8, 0.6) : 0); });
+    op(sinaiLab, up(t, Tn[1] + 1.0, 0.6));
+    const tb = W("tent", 2, 3); draw(court, up(t, tb - 0.3, 0.9)); tentDraw(tab, up(t, tb, 1.2), up(t, W("tent", 2, 15), 2.2));
+    camp.forEach((c, i) => op(c, up(t, W("tent", 2, 9) + i * 0.18, 0.5)));
+    op(tabGlow, up(t, W("tent", 2, 16), 1.2) * (0.16 + 0.08 * Math.sin(t * 1.5))); set(tabGlow, { rx: (70 + 6 * Math.sin(t)).toFixed(1) });
+    op(tabLab, up(t, tb + 0.8, 0.6));
+    const tm = W("tent", 3, 1); temLines.forEach((l, i) => draw(l, up(t, tm + i * 0.15, 0.8))); op(temFill, up(t, tm + 0.6, 0.8));
+    op(temLab, up(t, tm + 1.0, 0.6)); op(temQ, up(t, W("tent", 3, 7), 0.8)); temQ.setAttribute("y", (304 - 6 * up(t, W("tent", 3, 7), 2) + 3 * Math.sin(t)).toFixed(1));
+  };
+
+  // ================= 4. the promised king: David's line runs to a lit temple door =================
+  const P = [0, 1, 2].map((k) => S("promise", k));
+  const g4 = G(), LY = 360;
+  const crown4 = line(g4, "M140 382 L140 354 L152 368 L164 344 L176 368 L188 354 L188 382 Z", { "stroke-width": 3 });
+  const davLab = T(g4, "lab", 164, 424, "DAVID'S HOUSE", 15);
+  const dline = line(g4, `M204 ${LY} H1026`, { "stroke-width": 3 });
+  const dDots = [...Array(15)].map((_, i) => ({ x: 236 + i * 54, e: el("circle", { r: 5.5, fill: INK }, g4) }));
+  const marks = [450, 790].map((x) => el("circle", { cx: x, cy: LY, r: 13, fill: "none", stroke: MUSTARD, "stroke-width": 3 }, g4));
+  const imm = T(g4, "ital", 450, 304, "Immanuel", 52), immLab = T(g4, "lab", 450, 412, "ISAIAH 7 · GOD WITH US", 15);
+  const mig = T(g4, "ital", 790, 304, "Mighty God", 52), migLab = T(g4, "lab", 790, 412, "ISAIAH 9", 15);
+  const doorD = "M1045 420 V300 Q1045 262 1080 262 Q1115 262 1115 300 V420";
+  const doorLight = el("path", { d: doorD + " Z", fill: MUSTARD, opacity: 0 }, g4), door = line(g4, doorD, { "stroke-width": 3 });
+  const doorSill = line(g4, "M1030 420 H1130", { "stroke-width": 3 });
+  const rays4 = [...Array(7)].map((_, i) => { const a = rad(-160 + i * 23.3); return line(g4, `M${1080 + Math.cos(a) * 66} ${330 + Math.sin(a) * 82} L${1080 + Math.cos(a) * 92} ${330 + Math.sin(a) * 108}`, { stroke: MUSTARD, "stroke-width": 2.4 }); });
+  const malLab = T(g4, "lab", 1080, 462, "MALACHI 3 · HIS TEMPLE", 13);
+  const spark = el("circle", { r: 8, fill: MUSTARD }, g4);
+  const draw4 = (t) => {
+    const v = span(t, CS("promise") - 0.2, CS("flesh") + 0.6, 0.7, 0.8); op(g4, v); if (v <= 0) return;
+    draw(crown4, up(t, CS("promise") + 0.1, 1.0)); op(davLab, up(t, CS("promise") + 0.7, 0.6));
+    const lk = up(t, W("promise", 0, 4), Math.max(1.5, E("promise", 0) - W("promise", 0, 4) + 0.6)), lx = mix(204, 1026, lk);
+    draw(dline, lk); dDots.forEach((d) => { set(d.e, { cx: d.x, cy: (LY + 1.5 * Math.sin(t * 1.2 + d.x)).toFixed(1) }); op(d.e, clamp((lx - d.x) / 30)); });
+    draw(door, up(t, E("promise", 0) - 0.6, 1.0)); draw(doorSill, up(t, E("promise", 0) - 0.4, 0.8));
+    const ia = W("promise", 1, 5), ma = W("promise", 1, 19);
+    op(imm, up(t, ia, 0.8)); imm.setAttribute("y", (306 - 6 * up(t, ia, 2)).toFixed(1)); op(immLab, up(t, ia + 0.8, 0.6)); op(marks[0], up(t, ia, 0.5)); set(marks[0], { r: (13 + 2 * Math.sin(t * 2)).toFixed(1) });
+    op(mig, up(t, ma, 0.8)); mig.setAttribute("y", (306 - 6 * up(t, ma, 2)).toFixed(1)); op(migLab, up(t, ma + 0.8, 0.6)); op(marks[1], up(t, ma, 0.5)); set(marks[1], { r: (13 + 2 * Math.sin(t * 2 + 1)).toFixed(1) });
+    const sk = up(t, P[2] + 0.2, Math.max(2, E("promise", 2) - P[2] - 0.6)); set(spark, { cx: mix(204, 1080, sk).toFixed(1), cy: (LY + (sk > 0.94 ? (sk - 0.94) * 0 : 0)).toFixed(1) }); op(spark, span(t, P[2], E("promise", 2) + 0.4, 0.4, 0.6));
+    const lit = up(t, E("promise", 2) - 1.4, 1.2); doorLight.setAttribute("opacity", (0.85 * lit).toFixed(3));
+    rays4.forEach((r, i) => { draw(r, up(t, E("promise", 2) - 1.0 + i * 0.1, 0.6)); op(r, lit * (0.6 + 0.4 * Math.sin(t * 1.6 + i))); });
+    op(malLab, up(t, P[2] + 0.6, 0.6));
+  };
+
+  // ================= 5. the Word became flesh: John 1:14, the tent, the glory among us =================
+  const Fl = [0, 1, 2, 3].map((k) => S("flesh", k));
+  const g5 = G();
+  const pageD = (s) => `M0 -44 C${-36 * s} -62 ${-96 * s} -62 ${-132 * s} -48 L${-132 * s} 48 C${-96 * s} 34 ${-36 * s} 34 0 52 Z`;
+  const book5 = G(g5), pgL = el("path", { d: pageD(1), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, book5), pgR = el("path", { d: pageD(-1), fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, book5);
+  const bLines = []; [1, -1].forEach((s) => [-26, -8, 10, 28].forEach((dy) => bLines.push(line(book5, `M${-20 * s} ${dy - 6} C${-54 * s} ${dy - 18} ${-90 * s} ${dy - 18} ${-116 * s} ${dy - 8}`, { stroke: STONE, "stroke-width": 2.2 }))));
+  const vG = G(g5), VL = ["The Word became flesh and |made His dwelling| among us.", "We have seen His glory, the glory of the one and only Son", "from the Father, full of grace and truth."];
+  let dwellSpan = null;
+  const vLines = VL.map((s, i) => { const e = el("text", { class: "disp", x: 640, y: 196 + i * 56, style: "font-size:42px;" }, vG); s.split("|").forEach((part, j) => { if (!part) return; const ts = el("tspan", {}, e); ts.textContent = part; if (j === 1) dwellSpan = ts; }); return e; });
+  const vRef = T(vG, "lab", 640, 350, "JOHN 1:14 · BEREAN STANDARD BIBLE", 15);
+  const ground5 = line(g5, "M300 520 H990", { stroke: STONE, "stroke-width": 2.5 });
+  const tent5 = tent(g5, 120, 78); move(tent5.g, 460, 520);
+  const tentLab = T(g5, "lab", 460, 562, "PITCHED HIS TENT", 15);
+  const PPL = [[-118, 4], [-88, -2], [-58, 6], [-30, 0], [30, 0], [58, 6], [88, -2], [118, 4], [-72, 26], [72, 26]];
+  const people5 = PPL.map(() => el("circle", { r: 9, fill: INK }, g5));
+  const halo5 = el("circle", { r: 30, fill: MUSTARD, opacity: 0.2 }, g5), light5 = el("circle", { r: 11, fill: MUSTARD }, g5);
+  const amongLab = T(g5, "lab", 830, 562, "AMONG US", 15);
+  const draw5 = (t) => {
+    const v = span(t, CS("flesh") - 0.2, CS("human") + 0.6, 0.7, 0.8); op(g5, v); if (v <= 0) return;
+    const bo = up(t, CS("flesh") + 0.1, 0.8) * (1 - up(t, Fl[2] - 0.2, 0.7));
+    move(book5, 640, 482 + 2 * Math.sin(t * 0.8), mix(0.7, 0.95, up(t, CS("flesh") + 0.1, 1.6))); op(book5, bo);
+    bLines.forEach((l, i) => { draw(l, up(t, CS("flesh") + 0.6 + i * 0.08, 0.6)); l.setAttribute("stroke", t > Fl[1] + i * 0.4 ? MUSTARD : STONE); });
+    const shrink = up(t, Fl[2] - 0.3, 1.0);
+    vLines.forEach((l, i) => op(l, up(t, W("flesh", 1, [0, 10, 21][i]), 0.8))); op(vRef, up(t, Fl[1] + 1.2, 0.7));
+    vG.setAttribute("transform", `translate(640 ${mix(0, 16, shrink).toFixed(1)}) scale(${mix(1, 0.7, shrink).toFixed(3)}) translate(-640 0)`);
+    op(vG, up(t, Fl[1] - 0.2, 0.6) * (1 - up(t, E("flesh") + 0.2, 0.6)));
+    dwellSpan.setAttribute("style", `fill:${t > Fl[2] + 0.2 ? MUSTARD : INK};`);
+    draw(ground5, up(t, Fl[2], 1.0));
+    tentDraw(tent5, up(t, Fl[2] + 0.2, 1.3), up(t, W("flesh", 2, 9), 1.6)); op(tent5.g, up(t, Fl[2], 0.4)); op(tentLab, up(t, Fl[2] + 1.2, 0.6));
+    people5.forEach((p, i) => { const k = up(t, Fl[3] + i * 0.12, 0.6); set(p, { cx: (830 + PPL[i][0]).toFixed(1), cy: (502 + PPL[i][1] + 1.5 * Math.sin(t * 1.3 + i)).toFixed(1) }); op(p, k); });
+    const gk = up(t, W("flesh", 3, 4), 2.2), gx = mix(460, 830, gk), gy = mix(470, 500, gk) - Math.sin(gk * Math.PI) * 70;
+    set(light5, { cx: gx.toFixed(1), cy: gy.toFixed(1) }); set(halo5, { cx: gx.toFixed(1), cy: gy.toFixed(1), r: (30 + 4 * Math.sin(t * 1.5)).toFixed(1) });
+    op(light5, up(t, W("flesh", 3, 3), 0.5)); op(halo5, up(t, W("flesh", 3, 3), 0.5) * 0.22);
+    op(amongLab, up(t, W("flesh", 3, 9), 0.6));
+  };
+
+  // ================= 6. truly human, truly God =================
+  const Hm = [0, 2, 3, 4].map((k) => S("human", k));   // 0: life, 2: Gethsemane, 3: sins and sea, 4: who is this
+  const g6 = G(), icons = G(g6);
+  const base6 = line(icons, "M150 382 H1130", { stroke: LINE, "stroke-width": 2.4 });
+  const ruler = line(icons, "M250 372 V214", { stroke: STONE, "stroke-width": 2.4 });
+  const rTicks = [0, 1, 2, 3, 4, 5].map((i) => line(icons, `M240 ${360 - i * 26} H260`, { stroke: STONE, "stroke-width": 2 }));
+  const grower = el("circle", { r: 11, fill: INK }, icons);
+  const bowl = line(icons, "M452 320 A48 36 0 0 0 548 320 Z", { "stroke-width": 3 }), bowlFoot = line(icons, "M484 358 H516", { "stroke-width": 3 });
+  const hull = line(icons, "M708 330 H832 L810 362 H730 Z", { "stroke-width": 3 }), mast = line(icons, "M770 330 V262 L812 318 H770", { "stroke-width": 2.6 });
+  const zz = [0, 1, 2].map((i) => T(icons, "ital", 0, 0, "z", 22 + i * 3, null, STONE));
+  const tomb = line(icons, "M968 372 V310 Q968 262 1030 262 Q1092 262 1092 310 V372", { "stroke-width": 3 });
+  const tombDoor = el("circle", { cx: 1030, cy: 340, r: 22, fill: CHAR }, icons), stone6 = el("circle", { cx: 1074, cy: 350, r: 21, fill: MUTED, stroke: INK, "stroke-width": 2.4 }, icons);
+  const tear = el("path", { d: "M0 -9 C5 -2 7 3 7 6 A7 7 0 0 1 -7 6 C-7 3 -5 -2 0 -9 Z", fill: STONE }, icons);
+  const iconLabs = [["GROWS", 250], ["HUNGERS", 500], ["SLEEPS", 770], ["WEEPS", 1030]].map(([s, x]) => T(icons, "lab", x, 424, s, 15));
+  const geth = G(g6), trunk = line(geth, "M250 470 C246 430 258 400 250 350 M250 404 C232 384 214 380 204 366 M252 390 C270 372 288 368 300 354", { stroke: STONE, "stroke-width": 5 });
+  const canopy = [[-56, -128, 34], [-14, -150, 40], [34, -134, 36], [62, -104, 28], [-70, -96, 26], [6, -110, 36]].map(([x, y, r]) => el("circle", { cx: 250 + x, cy: 470 + y, r, fill: OLIVE, opacity: 0.7 }, geth));
+  const gethLab = T(geth, "lab", 250, 512, "GETHSEMANE", 15);
+  const mkArrow = (col) => { const g = G(g6); el("line", { x1: 0, y1: 0, x2: 160, y2: 0, stroke: col, "stroke-width": 5, "stroke-linecap": "round" }, g); el("path", { d: "M174 0 L152 -11 L152 11 Z", fill: col }, g); el("circle", { r: 6, fill: col }, g); return g; };
+  const arF = mkArrow(MUSTARD), arH = mkArrow(INK);
+  const fLab = T(g6, "lab", 862, 258, "THE FATHER'S WILL", 15, "start", MUSTARD), hLab = T(g6, "lab", 760, 478, "HIS HUMAN WILL", 15);
+  const ledger = G(g6); el("rect", { x: -75, y: -95, width: 150, height: 190, rx: 3, fill: PAPER, stroke: INK, "stroke-width": 2.4 }, ledger);
+  const debts = []; for (let r = 0; r < 7; r++) { let x = -54; while (x < 50) { const w = Math.min(50 - x, 8 + R() * 28); debts.push({ e: el("rect", { x, y: -70 + r * 24 - 3, width: w, height: 6, rx: 3, fill: INK }, ledger), d: R() }); x += w + 6; } }
+  const ledLab = T(g6, "lab", 330, 470, "FORGIVES SINS", 15);
+  const sea = el("path", { fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, g6), sea2 = el("path", { fill: "none", stroke: LINE, "stroke-width": 2.4, "stroke-linecap": "round" }, g6);
+  const boat6 = G(g6); el("path", { d: "M-62 -18 H62 L40 14 H-40 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, boat6); el("path", { d: "M0 -18 V-80 L40 -26 H0", fill: "none", stroke: INK, "stroke-width": 2.6, "stroke-linejoin": "round" }, boat6);
+  const seaLab = T(g6, "lab", 900, 500, "COMMANDS THE SEA", 15), seaQ = T(g6, "disp", 900, 290, "?", 96, null, MUSTARD);
+  const draw6 = (t) => {
+    const v = span(t, CS("human") - 0.2, CS("history") + 0.6, 0.7, 0.8); op(g6, v); if (v <= 0) return;
+    const w0 = (i) => W("human", 0, i), w1 = (i) => W("human", 1, i);
+    op(icons, 1 - up(t, Hm[1] - 0.1, 0.7)); draw(base6, up(t, CS("human") + 0.1, 2.0));
+    draw(ruler, up(t, w0(7), 0.6)); rTicks.forEach((r, i) => draw(r, up(t, w0(7) + 0.2 + i * 0.08, 0.3)));
+    const gr = up(t, w0(8), 2.2); set(grower, { cx: 250, cy: mix(360, 228, gr).toFixed(1), r: mix(8, 13, gr).toFixed(1) }); op(grower, up(t, w0(7) + 0.2, 0.4));
+    draw(bowl, up(t, w0(10), 0.7)); draw(bowlFoot, up(t, w0(10) + 0.4, 0.4));
+    draw(hull, up(t, w1(1), 0.7)); draw(mast, up(t, w1(1) + 0.4, 0.6));
+    zz.forEach((z, i) => { const ph = ((t - w1(2)) * 0.5 + i / 3) % 1; move(z, 812 + ph * 60, 290 - ph * 96); op(z, t > w1(2) ? Math.sin(ph * Math.PI) * up(t, w1(2), 0.6) : 0); });
+    draw(tomb, up(t, w1(6), 0.8)); op(tombDoor, up(t, w1(6) + 0.4, 0.5)); op(stone6, up(t, w1(6) + 0.6, 0.5));
+    const tp = ((t - w1(8)) * 0.6) % 1; move(tear, 990, 290 + tp * 70); op(tear, t > w1(8) ? Math.sin(tp * Math.PI) * up(t, w1(8), 0.5) : 0);
+    iconLabs.forEach((l, i) => op(l, up(t, [w0(8), w0(11), w1(1), w1(6)][i], 0.6)));
+    // Gethsemane
+    const gv = span(t, Hm[1] - 0.2, Hm[2] + 0.2, 0.7, 0.7);
+    op(geth, gv); draw(trunk, up(t, Hm[1], 1.0)); canopy.forEach((c, i) => { op(c, up(t, Hm[1] + 0.4 + i * 0.12, 0.6) * 0.7); set(c, { transform: `translate(${(2 * Math.sin(t * 0.7 + i)).toFixed(1)} 0)` }); });
+    const rot = mix(-150, -64, up(t, W("human", 2, 6), 2.4));
+    move(arF, 760, 430, 1, -60); op(arF, gv * up(t, Hm[1] + 0.6, 0.6)); move(arH, 760, 430, 1, rot + 1.5 * Math.sin(t)); op(arH, gv * up(t, Hm[1] + 1.0, 0.6));
+    op(fLab, gv * up(t, Hm[1] + 1.0, 0.6)); op(hLab, gv * up(t, Hm[1] + 1.4, 0.6));
+    // sins forgiven, the sea made calm
+    const sv = span(t, Hm[2] + 0.15, CS("history") + 0.6, 0.7, 0.8), lv = sv * (1 - up(t, Hm[3] - 0.2, 0.7));
+    move(ledger, 330, 320 + 3 * Math.sin(t * 0.8)); op(ledger, lv); op(ledLab, lv * up(t, W("human", 3, 3), 0.6));
+    debts.forEach((d) => { const k = up(t, W("human", 3, 2) + d.d * 2.4, 0.6); d.e.setAttribute("opacity", (1 - 0.88 * k).toFixed(3)); });
+    const calm = up(t, W("human", 3, 11), 2.6), A = mix(18, 2, calm), wave = (x) => 430 + A * Math.sin(x / 34 - t * 2.2) + A * 0.4 * Math.sin(x / 13 + t * 1.3);
+    let d = "", d2 = ""; for (let x = 610; x <= 1190; x += 10) { d += `${x === 610 ? "M" : "L"}${x} ${wave(x).toFixed(1)} `; d2 += `${x === 610 ? "M" : "L"}${x} ${(wave(x - 40) + 26).toFixed(1)} `; }
+    sea.setAttribute("d", d); sea2.setAttribute("d", d2); op(sea, sv * up(t, W("human", 3, 8), 0.8)); op(sea2, sv * up(t, W("human", 3, 8) + 0.3, 0.8) * 0.8);
+    const slope = (wave(912) - wave(888)) / 24; move(boat6, 900, wave(900) - 16, 1, Math.atan(slope) * 180 / Math.PI); op(boat6, sv * up(t, W("human", 3, 9), 0.8));
+    op(seaLab, sv * up(t, W("human", 3, 10), 0.6)); op(seaQ, sv * up(t, Hm[3] + 0.4, 0.8)); seaQ.setAttribute("y", (292 - 6 * up(t, Hm[3] + 0.4, 2) + 3 * Math.sin(t)).toFixed(1));
+  };
+
+  // ================= 7. guarding both sides: Ignatius, Gregory, Chalcedon =================
+  const Hs = [0, 1, 2, 3].map((k) => S("history", k));
+  const g7 = G(), X7 = (y) => 160 + (y - 100) * (960 / 360), TY = 532;
+  const tl7 = line(g7, `M${X7(100)} ${TY} H${X7(460)}`, { "stroke-width": 3 });
+  const ticks7 = [100, 200, 300, 400].map((y) => { const g = G(g7); el("line", { x1: X7(y), x2: X7(y), y1: TY - 7, y2: TY + 7, stroke: INK, "stroke-width": 2 }, g); T(g, "lab", X7(y), TY + 32, `AD ${y}`, 13); return g; });
+  const ignDot = el("circle", { cx: X7(110), cy: TY, r: 8, fill: INK }, g7), ignLab = T(g7, "lab", X7(110) - 8, TY - 18, "IGNATIUS · ABOUT 110", 13, "start");
+  const chalDot = el("circle", { cx: X7(451), cy: TY, r: 9, fill: MUSTARD }, g7), chalLab = T(g7, "lab", X7(451) + 8, TY - 18, "CHALCEDON · 451", 13, "end");
+  const E7 = emblem(g7, 90); move(E7.g, 640, 300);
+  const brL = line(g7, arcAt(640, 300, 150, 150, 210), { stroke: STONE, "stroke-width": 3 });
+  const brR = line(g7, arcAt(640, 300, 150, -30, 30), { stroke: STONE, "stroke-width": 3 });
+  const tHum = T(g7, "lab", 470, 306, "TRULY HUMAN", 15, "end"), tGod = T(g7, "lab", 810, 306, "TRULY GOD", 15, "start", MUSTARD);
+  const seemed7 = T(g7, "lab", 640, 172, "ONLY SEEMED TO HAVE A BODY?", 15), truly7 = T(g7, "lab", 640, 172, "TRULY BORN · TRULY SUFFERED AND DIED", 15);
+  const ringLabs7 = QUART.map(([s], i) => T(g7, "lab", [640, 752, 640, 528][i], [192, 306, 422, 306][i], s, 15, [null, "start", null, "end"][i]));
+  const greg = T(g7, "lab", 640, 470, "GREGORY OF NAZIANZUS", 15), heal = T(g7, "ital", 640, 150, "what He did not take on, He did not heal", 34);
+  const fence = line(g7, "M440 190 H840 V410 H440 Z", { stroke: LINE, "stroke-width": 2.4 });
+  const POSTS = [[440, 190], [840, 190], [440, 410], [840, 410]];
+  const posts = POSTS.map(([x, y]) => el("rect", { x: x - 5, y: y - 18, width: 10, height: 36, rx: 2, fill: INK }, g7));
+  const postLabs = ["NOT MIXED", "NOT CHANGED", "NOT DIVIDED", "NOT SEPARATED"].map((s, i) => T(g7, "lab", POSTS[i][0], i < 2 ? 160 : 452, s, 14));
+  const draw7 = (t) => {
+    const v = span(t, CS("history") - 0.2, CS("differ") + 0.6, 0.7, 0.8); op(g7, v); if (v <= 0) return;
+    draw(tl7, up(t, CS("history") + 0.1, 1.6)); ticks7.forEach((g, i) => op(g, up(t, CS("history") + 0.5 + i * 0.2, 0.5)));
+    // the emblem, guarded on both sides
+    op(E7.core, up(t, Hs[0] + 0.1, 0.7) * (1 - 0.75 * span(t, Hs[1] + 0.2, Hs[3] + 0.4, 0.6))); op(E7.glow, up(t, Hs[0] + 0.1, 0.7) * 0.16 * (1 - span(t, Hs[1] + 0.2, Hs[3] + 0.6, 0.6)));
+    set(E7.core, { r: (40 + 2 * Math.sin(t * 2)).toFixed(1) }); set(E7.glow, { r: (70 + 5 * Math.sin(t * 1.4)).toFixed(1) });
+    const gb = span(t, Hs[0] + 0.3, Hs[1] + 0.3, 0.6); draw(brL, up(t, Hs[0] + 0.5, 0.8)); draw(brR, up(t, Hs[0] + 0.8, 0.8)); op(brL, gb); op(brR, gb); op(tHum, gb * up(t, Hs[0] + 1.0, 0.5)); op(tGod, gb * up(t, Hs[0] + 1.3, 0.5));
+    // Ignatius: the ring that only seemed, made solid
+    const i1 = (i) => W("history", 1, i), seem = span(t, i1(10), i1(20), 0.6, 0.6), mindGone = span(t, W("history", 2, 4), W("history", 2, 14), 0.6, 0.8);
+    E7.arcs.forEach((a, i) => { draw(a, up(t, Hs[0] + 0.2 + i * 0.15, 0.8)); op(a, Math.max(0.02, (1 - seem) * (i === 0 ? 1 - mindGone : 1))); a.setAttribute("stroke", i === 0 && t > W("history", 2, 14) && t < W("history", 2, 14) + 2.2 ? MUSTARD : INK); });
+    op(E7.ghost, Math.max(seem, mindGone * 0.8)); E7.ghost.setAttribute("stroke-dashoffset", (t * 7).toFixed(1));
+    op(ignDot, up(t, i1(4), 0.5)); op(ignLab, up(t, i1(4) + 0.3, 0.6));
+    op(seemed7, span(t, i1(10), i1(19) + 0.2, 0.6, 0.5)); op(truly7, span(t, i1(20), Hs[2] + 0.2, 0.6, 0.5));
+    // Gregory: the mind taken out, and restored
+    ringLabs7.forEach((l, i) => op(l, span(t, Hs[2] + 0.1 + i * 0.15, Hs[3] + 0.3, 0.5)));
+    op(greg, span(t, W("history", 2, 8), Hs[3] + 0.3, 0.6)); op(heal, span(t, W("history", 2, 13), Hs[3] + 0.3, 0.8, 0.6));
+    // Chalcedon: four boundaries
+    op(chalDot, up(t, W("history", 3, 1), 0.5)); set(chalDot, { r: (9 + 1.5 * Math.sin(t * 2.5)).toFixed(1) }); op(chalLab, up(t, W("history", 3, 1) + 0.3, 0.6));
+    draw(fence, up(t, W("history", 3, 6), 1.4)); op(fence, up(t, W("history", 3, 6), 0.3));
+    posts.forEach((p, i) => op(p, up(t, W("history", 3, 6) + i * 0.25, 0.5)));
+    postLabs.forEach((l, i) => op(l, up(t, W("history", 3, [15, 17, 19, 21][i]) - 0.1, 0.6)));
+    move(E7.g, 640, 300 + 2 * Math.sin(t * 0.9));
+  };
+
+  // ================= 8. where Christians differ: a scale that stays level =================
+  const D = [0, 1, 2, 3].map((k) => S("differ", k));
+  const g8 = G(), PX = 640, PY = 214, ARM = 260;
+  const pillar = line(g8, `M${PX} 540 V${PY}`, { "stroke-width": 4 }), foot = line(g8, `M${PX - 70} 540 H${PX + 70}`, { "stroke-width": 4 });
+  const beam = G(g8), beamL = line(beam, `M${-ARM} 0 H${ARM}`, { "stroke-width": 4 }), pivot = el("circle", { r: 9, fill: INK }, g8);
+  const mkPan = () => { const g = G(g8); const s1 = el("line", { x1: 0, y1: 0, x2: -56, y2: 112, stroke: STONE, "stroke-width": 2 }, g), s2 = el("line", { x1: 0, y1: 0, x2: 56, y2: 112, stroke: STONE, "stroke-width": 2 }, g);
+    el("path", { d: "M-66 112 Q0 150 66 112 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); return g; };
+  const panL = mkPan(), panR = mkPan();
+  const crossL = G(g8); el("path", { d: "M0 -34 V30 M-20 -14 H20", stroke: INK, "stroke-width": 5, "stroke-linecap": "round", fill: "none" }, crossL);
+  const crownR = G(g8); el("path", { d: "M-24 16 V-12 L-12 2 L0 -20 L12 2 L24 -12 V16 Z", fill: "none", stroke: MUSTARD, "stroke-width": 3.4, "stroke-linejoin": "round" }, crownR);
+  const veilL = G(g8); el("circle", { r: 20, fill: MUSTARD }, veilL); el("path", { d: "M-30 -26 H30 V4 Q0 12 -30 4 Z", fill: MUTED, stroke: STONE, "stroke-width": 2 }, veilL);
+  const asideR = G(g8); el("circle", { r: 20, fill: MUSTARD }, asideR); el("circle", { cx: 44, cy: 8, r: 12, fill: "none", stroke: MUSTARD, "stroke-width": 2.4, "stroke-dasharray": "4 4" }, asideR);
+  const q1 = T(g8, "lab", 640, 150, "WOULD THE SON HAVE COME WITHOUT SIN?", 15), q2 = T(g8, "lab", 640, 150, "WHAT DID THE SELF-EMPTYING INVOLVE?", 15);
+  const aq = [T(g8, "lab", 380, 420, "THOMAS AQUINAS", 15), T(g8, "lab", 380, 446, "THE REMEDY FOR SIN", 13)];
+  const sc = [T(g8, "lab", 900, 420, "JOHN DUNS SCOTUS", 15), T(g8, "lab", 900, 446, "THE GOAL OF CREATION", 13)];
+  const vl = T(g8, "lab", 380, 420, "VEILED HIS GLORY", 15), la = T(g8, "lab", 900, 420, "LAID ASIDE THE USE OF SOME POWERS", 14);
+  const draw8 = (t) => {
+    const v = span(t, CS("differ") - 0.2, CS("life") + 0.6, 0.7, 0.8); op(g8, v); if (v <= 0) return;
+    const D0 = CS("differ"); draw(foot, up(t, D0, 0.6)); draw(pillar, up(t, D0 + 0.3, 1.0)); draw(beamL, up(t, D0 + 1.1, 1.0)); op(pivot, up(t, D0 + 1.1, 0.4));
+    const ang = 1.4 * Math.sin(t * 0.75); beam.setAttribute("transform", `translate(${PX} ${PY}) rotate(${ang.toFixed(2)})`);
+    const ex = ARM * Math.cos(rad(ang)), ey = ARM * Math.sin(rad(ang));
+    const pk = up(t, D0 + 1.9, 0.8); move(panL, PX - ex, PY - ey); move(panR, PX + ex, PY + ey); op(panL, pk); op(panR, pk);
+    const swap = up(t, D[3] - 0.2, 0.8), one = up(t, D[1] - 0.2, 0.6) * (1 - swap);
+    op(q1, one); op(q2, up(t, D[3] + 0.2, 0.7));
+    move(crossL, PX - ex, PY - ey + 92); op(crossL, up(t, W("differ", 1, 10), 0.6) * (1 - swap)); aq.forEach((l, i) => op(l, up(t, W("differ", 1, 10) + i * 0.6, 0.6) * (1 - swap)));
+    move(crownR, PX + ex, PY + ey + 98); op(crownR, up(t, D[2] + 0.4, 0.6) * (1 - swap)); sc.forEach((l, i) => op(l, up(t, D[2] + 0.4 + i * 0.6, 0.6) * (1 - swap)));
+    move(veilL, PX - ex, PY - ey + 98); op(veilL, up(t, W("differ", 3, 8), 0.6)); op(vl, up(t, W("differ", 3, 8) + 0.2, 0.6));
+    move(asideR, PX + ex - 10, PY + ey + 98); op(asideR, up(t, W("differ", 3, 13), 0.6)); op(la, up(t, W("differ", 3, 13) + 0.2, 0.6));
+  };
+
+  // ================= 9. what it changes: an open door, a small town, a path walked together =================
+  const Lf = [0, 1, 2, 3, 4].map((k) => S("life", k));
+  const g9 = G();
+  const frame9 = line(g9, "M570 470 V250 H710 V470", { "stroke-width": 3.4 });
+  const spill = el("path", { d: "M574 470 L706 470 L800 560 L480 560 Z", fill: MUSTARD, opacity: 0 }, g9), doorway = el("rect", { x: 573, y: 253, width: 134, height: 217, fill: MUSTARD, opacity: 0 }, g9);
+  const doorPanel = el("path", { fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g9);
+  const floor9 = line(g9, "M380 470 H900", { stroke: STONE, "stroke-width": 2.5 });
+  const town = G(g9), HX = [200, 320, 440, 640, 860, 980, 1100], houses = HX.map((x, i) => { const g = G(town); const h = 56 + (i % 3) * 8;
+    el("path", { d: `M${x - 40} 470 V${470 - h} L${x} ${470 - h - 30} L${x + 40} ${470 - h} V470`, fill: PAPER, stroke: INK, "stroke-width": 2.6, "stroke-linejoin": "round" }, g);
+    const win = el("rect", { x: x - 12, y: 470 - h + 12, width: 24, height: 20, fill: BONE, stroke: INK, "stroke-width": 2 }, g); return { g, win }; });
+  const bench = G(town); el("path", { d: "M700 440 H770 M708 440 V470 M762 440 V470", stroke: INK, "stroke-width": 3, fill: "none", "stroke-linecap": "round" }, bench); el("rect", { x: 710, y: 428, width: 50, height: 8, fill: WARM, stroke: INK, "stroke-width": 2 }, bench);
+  const ground9 = line(town, "M150 470 H1210", { stroke: STONE, "stroke-width": 2.5 });
+  const townLab = T(town, "lab", 320, 512, "A SMALL TOWN", 15), handLab = T(town, "lab", 735, 512, "WORKING WITH HIS HANDS", 13);
+  const vG9 = G(g9), HL = ["For we do not have a high priest who is unable", "to sympathize with our weaknesses, but we have one", "who was tempted in every way that we are,", "yet was without sin."];
+  const hLines = HL.map((s, i) => T(vG9, "disp", 640, 176 + i * 48, s, 38));
+  const hRef = T(vG9, "lab", 640, 400, "HEBREWS 4:15 · BEREAN STANDARD BIBLE", 15);
+  const pathD = "M150 520 C320 470 460 560 640 520 S960 470 1130 520";
+  const path9 = line(g9, pathD, { stroke: LINE, "stroke-width": 3 });
+  const probe = el("path", { d: pathD, fill: "none" }, g9), PL = probe.getTotalLength ? probe.getTotalLength() : 1000;
+  const at = (k) => { const p = probe.getPointAtLength(clamp(k) * PL); return [p.x, p.y]; };
+  const walkers = [0.0, 0.07, 0.13, 0.22, 0.28].map((o) => ({ o, e: el("circle", { r: 9, fill: INK }, g9), ring: el("circle", { r: 15, fill: "none", stroke: MUSTARD, "stroke-width": 2.4 }, g9) }));
+  const wLight = el("circle", { r: 10, fill: MUSTARD }, g9), wHalo = el("circle", { r: 24, fill: MUSTARD, opacity: 0.2 }, g9);
+  const E9 = emblem(g9, 70);
+  const draw9 = (t) => {
+    const v = span(t, CS("life") - 0.2, CS("close") + 0.8, 0.7, 0.9); op(g9, v); if (v <= 0) return;
+    // the open door
+    const dv = 1 - up(t, Lf[1] - 0.1, 0.8);
+    draw(frame9, up(t, CS("life") + 0.1, 1.2)); op(frame9, dv); draw(floor9, up(t, CS("life") + 0.3, 1.0)); op(floor9, dv);
+    const open = up(t, W("life", 0, 6), 1.8), dw = mix(134, 30, open);
+    doorPanel.setAttribute("d", `M573 253 L${(573 + dw).toFixed(1)} ${(253 + 14 * open).toFixed(1)} L${(573 + dw).toFixed(1)} ${(470 - 8 * open).toFixed(1)} L573 470 Z`); op(doorPanel, up(t, CS("life") + 0.8, 0.6) * dv);
+    doorway.setAttribute("opacity", (0.85 * open * dv).toFixed(3)); spill.setAttribute("opacity", ((0.22 + 0.05 * Math.sin(t * 1.3)) * open * dv).toFixed(3));
+    // the small town
+    const tv = span(t, Lf[1] - 0.3, Lf[2] + 0.4, 0.7, 0.7); op(town, tv);
+    houses.forEach((h, i) => { const k = up(t, Lf[1] + 0.1 + i * 0.15, 0.6); h.g.setAttribute("transform", `translate(0 ${(12 * (1 - k)).toFixed(1)})`); op(h.g, k); h.win.setAttribute("fill", t > W("life", 1, 13) + i * 0.35 ? MUSTARD : BONE); });
+    draw(ground9, up(t, Lf[1], 1.0)); op(bench, up(t, W("life", 1, 9), 0.6)); op(townLab, up(t, W("life", 1, 7), 0.6)); op(handLab, up(t, W("life", 1, 10), 0.6));
+    // Hebrews 4:15 above a path walked together
+    op(vG9, span(t, Lf[3] - 0.2, Lf[4] + 0.4, 0.6, 0.7)); hLines.forEach((l, i) => op(l, up(t, W("life", 3, [0, 10, 19, 28][i]), 0.8))); op(hRef, up(t, Lf[3] + 1.6, 0.7));
+    draw(path9, up(t, Lf[2], 1.4)); op(path9, 1 - up(t, CS("close"), 0.8));
+    const wk = 0.55 * clamp((t - Lf[2]) / Math.max(1, CS("close") + 1 - Lf[2]));   // walkers never wrap
+    walkers.forEach((w, i) => { const [x, y] = at(0.08 + wk + w.o); set(w.e, { cx: x.toFixed(1), cy: (y - 12).toFixed(1) }); set(w.ring, { cx: x.toFixed(1), cy: (y - 12).toFixed(1) }); op(w.e, up(t, Lf[2] + 0.3 + i * 0.2, 0.6) * (1 - up(t, CS("close"), 0.8)));
+      op(w.ring, up(t, W("life", 4, 16) + i * 0.3, 0.6) * (1 - up(t, CS("close"), 0.8))); });
+    const lead = at(0.08 + wk + 0.17), rise = up(t, Lf[4] + 0.2, 1.8);
+    const lx = mix(lead[0], 640, rise), ly = mix(lead[1] - 12, 250, rise);
+    set(wLight, { cx: lx.toFixed(1), cy: ly.toFixed(1) }); set(wHalo, { cx: lx.toFixed(1), cy: ly.toFixed(1), r: (24 + 3 * Math.sin(t * 1.6)).toFixed(1) });
+    const wl = up(t, W("life", 2, 2), 0.6) * (1 - up(t, Lf[4] + 1.6, 0.5)); op(wLight, wl); op(wHalo, wl * 0.2);
+    move(E9.g, 640, 250 + 3 * Math.sin(t * 0.8)); const ek = up(t, Lf[4] + 1.4, 0.8) * (1 - up(t, CS("close") + 0.2, 0.8)); op(E9.g, ek);
+    set(E9.core, { r: (30 + 2 * Math.sin(t * 2)).toFixed(1) }); E9.arcs.forEach((a, i) => draw(a, up(t, Lf[4] + 1.6 + i * 0.2, 0.7))); op(E9.ghost, 0);
+  };
+
+  // ================= 10. the close: light handed on, and the tent pitched among us =================
+  const Z = [0, 1].map((k) => S("close", k)), END = F.VOICE_END;
+  const g10 = G(), RY = 470;
+  const ground10 = line(g10, "M150 500 H1130", { stroke: STONE, "stroke-width": 2.5 });
+  const RX = [220, 320, 420, 520, 760, 860, 960, 1060];
+  const row = RX.map((x) => ({ x, e: el("circle", { r: 10, fill: INK }, g10), ring: el("circle", { r: 16, fill: "none", stroke: MUSTARD, "stroke-width": 2.6 }, g10) }));
+  const pour = el("circle", { r: 26, fill: MUSTARD }, g10), pourHalo = el("circle", { r: 46, fill: MUSTARD, opacity: 0.18 }, g10);
+  const hand = el("circle", { r: 7, fill: MUSTARD }, g10);
+  const tent10 = tent(g10, 130, 84);
+  const tentGlow = el("ellipse", { cx: 640, cy: 380, rx: 90, ry: 34, fill: MUSTARD, opacity: 0 }, g10);
+  const draw10 = (t) => {
+    const v = span(t, CS("close") - 0.2, END + 2.5, 0.7, 0.9); op(g10, v); if (v <= 0) return;
+    draw(ground10, up(t, CS("close"), 1.2));
+    // he was rich and became poor: the light comes down to the ground
+    const dk = up(t, Z[0] + 0.2, 2.4), py = mix(250, RY, dk), pr = mix(26, 10, dk);
+    set(pour, { cx: 640, cy: py.toFixed(1), r: pr.toFixed(1) }); set(pourHalo, { cx: 640, cy: py.toFixed(1), r: (mix(46, 20, dk) + 3 * Math.sin(t * 1.5)).toFixed(1) });
+    op(pour, up(t, CS("close") - 0.2, 0.6) * (1 - up(t, Z[1] + 0.4, 0.6))); op(pourHalo, up(t, CS("close") - 0.2, 0.6) * 0.18 * (1 - up(t, Z[1] + 0.4, 0.6)));
+    // the pattern: each one hands the light to the next
+    const passA = W("close", 0, 9), passD = Math.max(3, E("close", 0) - passA);
+    const order = [3, 4, 2, 5, 1, 6, 0, 7];
+    row.forEach((r, i) => { set(r.e, { cx: r.x, cy: (RY + 1.5 * Math.sin(t * 1.2 + i)).toFixed(1) }); set(r.ring, { cx: r.x, cy: RY }); op(r.e, up(t, CS("close") + 0.3 + i * 0.1, 0.5));
+      const k = up(t, passA + (order.indexOf(i) / 8) * passD, 0.5); op(r.ring, k); });
+    const hk = ((t - passA) / passD), hi = Math.min(7, Math.max(0, Math.floor(hk * 8))), hf = clamp(hk * 8 - hi);
+    const ha = hi === 0 ? 640 : RX[order[hi - 1]], hb = RX[order[hi]];
+    set(hand, { cx: mix(ha, hb, ease(hf)).toFixed(1), cy: (RY - 30 - Math.sin(hf * Math.PI) * 24).toFixed(1) }); op(hand, span(t, passA, passA + passD, 0.3, 0.4));
+    // the tent pitched among us
+    const tk = up(t, Z[1] + 0.2, 1.6); move(tent10.g, 640, 500); op(tent10.g, up(t, Z[1], 0.5)); tentDraw(tent10, tk, up(t, W("close", 1, 13), 1.8));
+    tentGlow.setAttribute("opacity", (up(t, W("close", 1, 14), 1.2) * (0.18 + 0.06 * Math.sin(t * 1.4))).toFixed(3));
+  };
+
+  F.title("The Word became flesh");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.9);
+  return (t) => { draw1(t); draw2(t); draw3(t); draw4(t); draw5(t); draw6(t); draw7(t); draw8(t); draw9(t); draw10(t); };
+});
+</script>
+</body></html>

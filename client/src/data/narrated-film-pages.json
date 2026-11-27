@@ -76,5 +76,9 @@
   "/study/explorer/watch/god-silent": "god-silent",
   "/study/explorer/watch/when-we-die": "when-we-die",
   "/study/explorer/watch/never-heard": "never-heard",
-  "/study/explorer/watch/so-many-churches": "so-many-churches"
+  "/study/explorer/watch/so-many-churches": "so-many-churches",
+  "/study/bible/doctrines/incarnation": "doc-incarnation",
+  "/study/bible/doctrines/justification": "doc-justification",
+  "/study/bible/doctrines/union": "doc-union",
+  "/study/bible/doctrines/sanctification": "doc-sanctification"
 }

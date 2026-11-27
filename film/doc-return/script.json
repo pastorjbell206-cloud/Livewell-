@@ -1,0 +1,119 @@
+{
+  "title": "He will come again",
+  "note": "Doctrine film, written 2026-11-27 from the Study Bible doctrine page /study/bible/doctrines/return. Every fact comes from client/public/bible/doctrines/return.json (sections named in facts.md). Where Christians differ, the film names the four views on the millennium and takes no side. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/study/bible/doctrines/return",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Do Christians really believe Jesus is coming back? And if they do, why can't they agree on how?",
+        "Both are fair questions. Start with what every ancient creed confesses."
+      ]
+    },
+    {
+      "id": "confess",
+      "kicker": "What the church confesses",
+      "level": 0.3,
+      "lines": [
+        "The same Jesus who was crucified, raised and taken up into heaven will come again. In person, in His body, in public glory.",
+        "He'll raise the dead, judge the world, and bring God's kingdom to completion in a renewed creation.",
+        "As He was taken up, two men dressed in white said it plainly.",
+        "“Men of Galilee,” they said, “why do you stand here looking into the sky? This same Jesus, who has been taken from you into heaven, will come back in the same way you have seen Him go into heaven.”"
+      ],
+      "scripture": {
+        "reference": "Acts 1:11",
+        "translation": "Berean Standard Bible",
+        "text": "“Men of Galilee,” they said, “why do you stand here looking into the sky? This same Jesus, who has been taken from you into heaven, will come back in the same way you have seen Him go into heaven.”",
+        "spoken": true
+      }
+    },
+    {
+      "id": "promise",
+      "kicker": "What the prophets hoped for",
+      "level": 0.4,
+      "lines": [
+        "The Old Testament doesn't speak of a second coming, because it hasn't seen the first. It hopes that God Himself will come.",
+        "In a vision, Daniel sees one like a Son of Man coming with the clouds, who is given a kingdom that will never be destroyed.",
+        "The prophets saw one great Day of the Lord. The New Testament finds it in two acts, and the first brought mostly mercy."
+      ]
+    },
+    {
+      "id": "jesus",
+      "kicker": "What Jesus said",
+      "level": 0.5,
+      "lines": [
+        "Jesus spoke of His return most often with the title Son of Man, from that vision. His coming, He said, would be as public as lightning, as sudden as the flood, and as unexpected as a thief.",
+        "But the time is hidden, even from the angels in heaven. Only the Father knows it.",
+        "So His stories about it all teach one thing. Keep watch by being faithful at the work you were given."
+      ]
+    },
+    {
+      "id": "first",
+      "kicker": "The first Christians",
+      "level": 0.55,
+      "lines": [
+        "Paul wrote to Christians grieving their dead. When the Lord comes, he told them, the dead in Christ will rise first.",
+        "The earliest believers prayed for that day in Aramaic, marana tha, which means Our Lord, come.",
+        "Every time the church shares the bread and cup, it proclaims His death until He comes."
+      ]
+    },
+    {
+      "id": "creeds",
+      "kicker": "Confessed, never calculated",
+      "level": 0.6,
+      "lines": [
+        "In 381, the creed received at Constantinople said He will come again in glory, and His kingdom will have no end.",
+        "But the creeds never set a date. In the nineteenth century, William Miller calculated that Christ would return in 1843 or 1844.",
+        "When October 22, 1844 passed, it became known as the Great Disappointment. Every calculation so far has failed."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.75,
+      "lines": [
+        "Christians do divide over the order of events, most of all over the thousand years in Revelation 20.",
+        "Amillennialists read the thousand years as this present age, with Christ reigning now from heaven.",
+        "Postmillennialists expect the gospel, by the Spirit's power, to bring the nations broadly under Christ's rule before He returns.",
+        "Historic premillennialists expect Christ to return before a thousand-year reign on earth, with the church passing through the final tribulation.",
+        "Dispensational premillennialists expect God's promises to Israel to be kept to the letter, and Christ to come for His church in a rapture, most say before a seven-year tribulation.",
+        "Each view argues from Scripture, and all of them confess the same return."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "What it changes",
+      "level": 0.85,
+      "lines": [
+        "So what does it change? It means the story has an ending, and the ending has a face.",
+        "It changes grief. Paul doesn't tell believers not to grieve, only not to grieve like those without hope.",
+        "It gives ordinary work weight. Waiting for Him doesn't mean staring at the sky, but caring for the people and the work entrusted to you.",
+        "The hidden day keeps you steady, because the outcome is secure, and alert, because no one knows the hour."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The Bible ends with His promise and the church's answer.",
+        "He who testifies to these things says, “Yes, I am coming soon.” Amen. Come, Lord Jesus!",
+        "Until then, keep watch, keep working, and keep praying it."
+      ],
+      "scripture": {
+        "reference": "Revelation 22:20",
+        "translation": "Berean Standard Bible",
+        "text": "He who testifies to these things says, “Yes, I am coming soon.” Amen. Come, Lord Jesus!",
+        "spoken": true
+      },
+      "titleCard": [
+        "The ending has a face.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

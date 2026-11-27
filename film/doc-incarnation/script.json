@@ -1,0 +1,133 @@
+{
+  "title": "The Word became flesh",
+  "note": "Doctrine film, written 2026-11-27 for the Study Bible doctrine page on the incarnation. Every fact comes from client/public/bible/doctrines/incarnation.json (definition, ot, nt, history, differ, errors, life). See facts.md. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/study/bible/doctrines/incarnation",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Christians say God became a man. So which was Jesus?",
+        "God only wearing a body? Or a good man later called God?",
+        "The church's answer is neither."
+      ]
+    },
+    {
+      "id": "confess",
+      "kicker": "What the church confesses",
+      "level": 0.3,
+      "lines": [
+        "It's called the incarnation, from the Latin word for flesh.",
+        "The eternal Son of God, without ceasing to be God, became a man, Jesus of Nazareth, conceived by the Holy Spirit and born of the virgin Mary.",
+        "He took a whole human nature, body and soul, mind and will.",
+        "One person, fully God and fully man."
+      ]
+    },
+    {
+      "id": "tent",
+      "kicker": "A God who dwells",
+      "level": 0.4,
+      "lines": [
+        "The Old Testament doesn't say this outright. But it builds a longing.",
+        "At Sinai, Israel heard a voice but saw no form.",
+        "Yet God had His people build a tent so He could dwell among them. And His glory filled it.",
+        "Later, Solomon dedicated the temple and asked if God would really dwell on earth."
+      ]
+    },
+    {
+      "id": "promise",
+      "kicker": "The promised king",
+      "level": 0.5,
+      "lines": [
+        "The promises of a coming king lean the same way.",
+        "Isaiah spoke of a son called Immanuel, God with us. Two chapters later, a child from David's house is called Mighty God.",
+        "And Malachi said the Lord would suddenly come to His temple."
+      ]
+    },
+    {
+      "id": "flesh",
+      "kicker": "The Word became flesh",
+      "level": 0.6,
+      "lines": [
+        "Then John says it plainly.",
+        "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth.",
+        "In Greek, made His dwelling means pitched His tent, the same word used for the tabernacle.",
+        "The glory that filled that tent is now seen in a man."
+      ],
+      "scripture": {
+        "reference": "John 1:14",
+        "translation": "Berean Standard Bible",
+        "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "human",
+      "kicker": "Truly human, truly God",
+      "level": 0.65,
+      "lines": [
+        "The Gospels show a real human life. He grows, and He gets hungry.",
+        "He sleeps in a boat. He weeps at a friend's tomb.",
+        "In Gethsemane He's deeply troubled, and yields His will to the Father's.",
+        "Yet He forgives sins, which only God can do. He commands the sea, and it obeys.",
+        "No wonder the disciples asked who this could be."
+      ]
+    },
+    {
+      "id": "history",
+      "kicker": "Guarding both sides",
+      "level": 0.72,
+      "lines": [
+        "The early church guarded both sides.",
+        "Around the year 110, Ignatius of Antioch answered those who said Christ only seemed to have a body. He was truly born, Ignatius wrote, and truly suffered and died.",
+        "When a teacher denied Christ a human mind, Gregory of Nazianzus answered that what Christ did not take on, He did not heal.",
+        "In 451, the Council of Chalcedon set the boundaries. One person in two natures, neither mixed nor changed, neither divided nor separated."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.8,
+      "lines": [
+        "Christians who confess all this still differ on some questions.",
+        "Would the Son have come if we had never sinned? Thomas Aquinas judged it more fitting to say no, since Scripture gives the remedy for sin as the reason.",
+        "John Duns Scotus said yes, because Christ was the goal of creation from the start.",
+        "And when Paul says Christ emptied Himself, did He veil His glory, or lay aside the use of some divine powers for a time? Christians answer both ways."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "What it changes",
+      "level": 0.85,
+      "lines": [
+        "When Christians ask what God is like, they look at Jesus.",
+        "He spent most of His years in a small town, working with His hands. Nothing human is beneath God's notice.",
+        "And the One Christians pray to has been where they are.",
+        "For we do not have a high priest who is unable to sympathize with our weaknesses, but we have one who was tempted in every way that we are, yet was without sin.",
+        "He still bears a human nature in heaven. The hope isn't escape from being human, but renewal, soul and body."
+      ],
+      "scripture": {
+        "reference": "Hebrews 4:15",
+        "translation": "Berean Standard Bible",
+        "text": "For we do not have a high priest who is unable to sympathize with our weaknesses, but we have one who was tempted in every way that we are, yet was without sin.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "He was rich and became poor for others, and Paul makes that the pattern for how Christians treat each other.",
+        "God isn't a distant idea. He has a face and a name, and pitched His tent among us."
+      ],
+      "titleCard": [
+        "God with us.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
