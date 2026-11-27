@@ -1,0 +1,522 @@
+{
+  "slug": "why-we-believe",
+  "title": "Why we believe it: the reasons",
+  "for": "I want to know why it's true",
+  "subtitle": "Ten sessions that build the cumulative case for the Christian faith, from what faith is to the resurrection, so that you can state the reasons in your own words, with gentleness and respect.",
+  "intro": [
+    "This track is for the Christian who believes and wants to know why. It opens Explain It, the last program in the Academy, and it builds one case a session at a time: what faith is, why there is a world at all, its order, the moral law, the Gospels, the claims of Jesus, the resurrection, the church across the world and its centuries, and the question of other faiths. The last session asks you to write the case out on one page, in your own words.",
+    "None of these arguments is a proof, and the pages they open say so. A case is built the way a court builds one, from several lines of evidence that point the same way. Each session states the strongest objection before any reply, because a reason that can't survive its best critic isn't worth handing to a friend. Peter told the church to give a reason for its hope with gentleness and respect, and that is the spirit of the whole track."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through Why we believe it: the reasons. The group is for Christians who want to understand why their faith is true, so that they can explain it to someone else. Some will arrive confident and some quietly unsure, and both belong. The leader's task isn't to win every argument in the room. It is to make sure each objection is stated at its strongest before any reply, and that no one leaves thinking the case is weaker or stronger than it is.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using each session's group guide, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, weekly or every other week, for ten meetings, and keep the end time you promised. A leader doesn't need to be an expert in philosophy or ancient history. A leader needs to read the pages ahead, to be fair to every objection, and to be willing to say that the group doesn't know something yet. If a friend who doesn't believe wants to come, welcome them; their questions will make everyone's reasons more honest."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Meet somewhere ordinary, a living room or a table at a cafe, and sit so that no one faces a teacher. Several sessions open long pages, so have them on a phone or printed. Say at the first meeting that anyone may pass on any question, that what is said about people's own lives stays in the room, and that every question is welcome, including the ones people are embarrassed to ask."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person states the session's strongest objection as its defenders would, and the group checks that it is fair.",
+          "Thirty minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Fifteen minutes: two people explain the session's reason aloud in their own words, in under two minutes each, and the group says what was clear.",
+          "Five minutes: the verse read aloud, and the prayer prompt.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "When a question comes that no one can answer, say so, write it down, and bring it back next time. The pages each session opens list further reading on both sides, and they are honest about what the evidence can't show. Where faithful Christians disagree, as on how to read Genesis beside the sciences, set out the views fairly and leave them open. A group that learns to say what it doesn't know will be trusted when it says what it does."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Questions about evidence can carry old wounds: a loss that shook someone's faith, years of being told not to ask, a church that answered hard questions with shame. When that becomes plain, stop the argument. Listen, thank the person for trusting the group, and don't hurry them back to the topic. Some in the group may be less sure than they have said. Treat their questions as honest work, not as a problem to fix, and speak with them afterward on their own."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when a question has become a weight they can't put down: uncertainty that has turned into despair, grief over someone who has died, harm done to them in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "What faith is, and what it isn't",
+      "minutes": 10,
+      "teaching": [
+        "Many people, believers among them, think of faith as believing something without evidence, or in spite of it. Richard Dawkins described it that way, and in 1877 the mathematician W. K. Clifford argued that believing on insufficient evidence is always a moral failure. If faith were that, Clifford would be right to condemn it, and the church should say so. Some Christians have used the word in exactly that sense, telling people to just believe whenever a question got hard.",
+        "But that isn't what the New Testament means by the word. Faith there is trust in someone, resting on what that person has shown, the way you trust a surgeon or a friend whose record you know. John wrote his Gospel as testimony to be weighed: “these are written so that you may believe that Jesus is the Christ” (John 20:31). Reasons don't replace trust. They show that trusting isn't foolish. The rest of this track gathers those reasons one line at a time, so that the hope you already hold can be explained to someone who doesn't share it."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Is believing anything on faith irrational?",
+        "href": "/answers/is-faith-irrational",
+        "why": "Clifford's rule at its strongest, what the church should concede to it, and why trust that rests on evidence is not the blind faith he condemned."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "Faith, in the Study Bible",
+          "href": "/study/bible/doctrines/faith",
+          "why": "How Scripture itself uses the word, from Abraham onward, and why it always means trusting a God who has shown himself faithful."
+        },
+        {
+          "kind": "film",
+          "label": "Faith: trusting the one who promised",
+          "href": "/study/explorer/watch/faith",
+          "why": "A short film on faith as trust in a promise-keeper, useful when you need to explain the idea simply to a child or a friend."
+        }
+      ],
+      "question": "When someone says faith means believing without evidence, what would you say faith means instead, in one sentence?",
+      "do": "Write down the three reasons you would give today, before this track, for believing that Christianity is true. Keep the page, because the last session asks for it back.",
+      "verse": {
+        "ref": "John 20:31",
+        "text": "But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."
+      },
+      "group": {
+        "open": "When did someone first tell you that faith and thinking don't mix?",
+        "discuss": [
+          "Clifford said believing on insufficient evidence is always wrong. What is right in his rule, and where does it go too far?",
+          "In what ways do ordinary people trust others on evidence every day, and how is trusting Christ like and unlike that?",
+          "Why might some Christians prefer telling people to just believe over giving reasons, and what does that cost the church?"
+        ],
+        "pray": "Those who pray may ask for a faith that welcomes questions, and for honesty about what each person does not yet know."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Why there is something rather than nothing",
+      "minutes": 10,
+      "teaching": [
+        "The oldest argument for God starts with a fact no one disputes: there is a world. In 1714 Gottfried Leibniz asked why there is something rather than nothing, and argued that whatever exists without having to exist needs a reason outside itself. The universe looks like that kind of thing. The kalam argument, defended in our time by William Lane Craig, adds that the universe began to exist, and that whatever begins to exist has a cause.",
+        "The objections are serious, and a Christian who gives this argument should know them well. David Hume asked why the universe itself couldn't be the thing that simply exists. Bertrand Russell said in a radio debate in 1948 that the universe is just there, and that's all. Some physicists describe a universe arising under quantum laws. None of these shows that the question is empty, and a law of physics is not nothing. The argument doesn't name the God of Abraham, but it shows why believing in a Creator is not a leap in the dark."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Why is there something rather than nothing?",
+        "href": "/questions/god/the-cosmological-argument",
+        "why": "Leibniz and the kalam argument set out carefully, with Hume, Kant, Russell and the physicists given their strongest say before any reply."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "If everything needs a cause, who made God?",
+          "href": "/questions/god/who-made-god",
+          "why": "The question every child and many philosophers ask back, and why the argument never claimed that everything needs a cause."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Creation, in the Study Bible",
+          "href": "/study/bible/doctrines/creation",
+          "why": "What Scripture says of God as the Maker of all things, which the argument points toward but cannot fill in by itself."
+        }
+      ],
+      "question": "Which objection to the cosmological argument seems strongest to you, and how would you state it fairly to a friend?",
+      "do": "Explain the argument from Leibniz aloud in under a minute, to a friend or to an empty room. Then state Hume's objection in under a minute, as fairly as you can.",
+      "verse": {
+        "ref": "Hebrews 11:3",
+        "text": "By faith we understand that the universe was formed at God’s command, so that what is seen was not made out of what was visible."
+      },
+      "group": {
+        "open": "What question about the universe kept you awake as a child?",
+        "discuss": [
+          "Why does it matter that the argument starts from a fact no one disputes?",
+          "Russell said the universe is just there. Is that an answer, or a decision to stop asking?",
+          "What can this argument show, and what does it leave for the rest of the case to show?"
+        ],
+        "pray": "Those who pray may give thanks for a world that exists at all, and ask for clear minds and patient words with those who see it differently."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Design and the order of the world",
+      "minutes": 10,
+      "teaching": [
+        "Two features of the world have struck believers and unbelievers alike. The first is order: the universe can be described in mathematics, and the human mind can grasp it. The second is fine-tuning: several constants and starting conditions of physics fall within narrow ranges that allow life, a finding many physicists accept whatever they believe, among them Martin Rees, who wrote about it in Just Six Numbers. Paul expected people to see something in creation itself: “His eternal power and divine nature, have been clearly seen” (Romans 1:20).",
+        "The objections need stating as fairly as the argument. A multiverse, if there is one, might make a universe fitted for life unsurprising, and the probabilities are argued among physicists. Evolution explains much of the order in living things that William Paley once took as direct design. The Big Bang doesn't prove Genesis. So a Christian should claim less than is often claimed: these findings are evidence to weigh, not a proof. What they make likely is a world that looks like the work of a mind, and the main alternatives either leave the deepest question untouched or move it back a step."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Do the Big Bang and fine-tuning point to God?",
+        "href": "/questions/science/the-beginning-and-fine-tuning",
+        "why": "What the findings are, the multiverse and the other replies at full strength, and why they are evidence to weigh rather than proof."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Can minds made by evolution be trusted?",
+          "href": "/questions/god/the-argument-from-reason",
+          "why": "The argument that reason and consciousness fit a world whose source is a mind, with the naturalist's answer stated fully first."
+        },
+        {
+          "kind": "theology",
+          "label": "How should Christians read Genesis 1? Four views",
+          "href": "/theology/doctrine/origins",
+          "why": "Four Christian readings of creation, each in its own voice, for the friend who asks whether believing in design means rejecting the sciences."
+        }
+      ],
+      "question": "What can the order and fine-tuning of the world fairly be said to show, and what can't they show?",
+      "do": "Write two sentences you could say to a friend who mentions the multiverse: one granting what is true in the reply, and one naming what it leaves unanswered.",
+      "verse": {
+        "ref": "Psalm 19:1",
+        "text": "The heavens declare the glory of God; the skies proclaim the work of His hands."
+      },
+      "group": {
+        "open": "Where in the natural world have you felt most strongly that it was made?",
+        "discuss": [
+          "Why should Christians be careful not to claim more than the science gives?",
+          "Does the multiverse answer the fine-tuning argument, or only move the question back a step? Why?",
+          "Paul says God's power is seen in what he made. What can creation show about God, and what can it not show?"
+        ],
+        "pray": "Those who pray may give thanks for the order of creation, and ask for honesty in speaking of it, never claiming more than is known."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The moral law",
+      "minutes": 10,
+      "teaching": [
+        "Nearly everyone lives as if some things are really wrong whatever anyone thinks: cruelty to a child for fun, betraying a friend for money. C. S. Lewis began Mere Christianity with the way people quarrel, each appealing to a standard both sides assume. The moral argument asks what best explains obligations that bind every person and that ordinary people can know. Christians answer that they rest on a God who is goodness itself. Paul said the same of people who never had the Scriptures: “the work of the law is written on their hearts” (Romans 2:15).",
+        "Two misunderstandings need clearing first. The argument doesn't claim that unbelievers can't be good, and many are better than many Christians. And it faces real replies. Some atheist philosophers, Erik Wielenberg among them, hold that basic moral truths are simply necessary and need nothing beneath them; others hold that morality is an evolved human practice. Plato's Euthyphro asks whether a thing is good because God commands it, or commanded because it is good. The classical Christian answer takes neither horn: God commands what is good because goodness is his own nature. The argument doesn't prove God. It shows that real right and wrong fit a good Maker better than a world without one."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Isn't morality just evolved instinct or social agreement?",
+        "href": "/questions/god/the-moral-argument-and-euthyphro",
+        "why": "The moral argument and Plato's Euthyphro at full strength, Wielenberg's atheist account stated fairly, and the classical Christian answer to the dilemma."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Romans 2, passage by passage",
+          "href": "/study/bible/romans/2#plain",
+          "why": "Paul on the law written on the hearts of people who never had the Scriptures, with plain notes on what the conscience can and can't do."
+        }
+      ],
+      "question": "How would you explain the moral argument without implying that your unbelieving friends are worse people than you?",
+      "do": "Think of one moral conviction you would never give up. Write a sentence on what would have to be true about the world for that conviction to be more than a preference.",
+      "verse": {
+        "ref": "Romans 2:15",
+        "text": "So they show that the work of the law is written on their hearts, their consciences also bearing witness, and their thoughts either accusing or defending them"
+      },
+      "group": {
+        "open": "What is one thing you always knew was wrong, before anyone told you?",
+        "discuss": [
+          "Why does it matter to say plainly that unbelievers can be good?",
+          "Which answer to the Euthyphro dilemma seems strongest to you, and why?",
+          "Lewis noticed that people quarrel by appealing to a standard both sides assume. Where do you see that in public argument today?"
+        ],
+        "pray": "Those who pray may ask for consciences kept tender, and for humility in speaking of right and wrong to people who often live it better than we do."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Can the Gospels be trusted?",
+      "minutes": 10,
+      "teaching": [
+        "The case so far points to a Maker. Christianity says more: that this God made himself known in a man, at a datable time in a real place. So the case turns to history and to the four Gospels. A believer who wants to give reasons needs to keep three questions apart. Has the text been handed down well? Were the Gospels written close enough to the events? And are they the kind of writing that means to report what happened? Luke answers the third himself, writing as one who had “carefully investigated everything from the beginning” (Luke 1:3).",
+        "On the first question the evidence is strong: the New Testament survives in more manuscripts, in more languages and closer to its writing than any classical work. But apologists have often used stale figures, an honest case says so, and good copying shows the wording, not the truth of it. On the second, most scholars, believing or not, date all four Gospels within the first century, within living memory of the events. Their differences in detail are what independent witnesses usually leave. None of this proves a miracle. It shows that the Gospels can be read as serious testimony, which is what this step of the case needs."
+      ],
+      "open": {
+        "kind": "answer",
+        "label": "Why would anyone trust the Bible?",
+        "href": "/answers/why-would-anyone-trust-the-bible",
+        "why": "The case against trusting it at its strongest, then what can honestly be said for the Gospels as history, and what can't."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Is the New Testament better preserved than Homer?",
+          "href": "/questions/text/compared-with-other-ancient-books",
+          "why": "What the manuscript comparison shows, the stale figures Christians should stop using, and the one question the comparison actually answers."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "How we got the New Testament",
+          "href": "/study/bible/guides/how-we-got-the-new-testament",
+          "why": "From letters and Gospels passed among the churches to the collection the church received, so you can explain the process plainly."
+        },
+        {
+          "kind": "essay",
+          "label": "Is the Bible reliable enough to build a life on?",
+          "href": "/writing/is-the-bible-reliable-enough-to-build-a-life-on",
+          "why": "A longer essay on the question underneath the evidence: whether a book this old can bear the weight of a whole life."
+        }
+      ],
+      "question": "Which of the three questions about the Gospels do you find hardest to answer, and why?",
+      "do": "Read Luke 1:1-4 and write down what Luke claims to have done before he wrote. Then name one thing his claim would not, by itself, prove.",
+      "verse": {
+        "ref": "Luke 1:3-4",
+        "text": "Therefore, having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you, most excellent Theophilus, so that you may know the certainty of the things you have been taught."
+      },
+      "group": {
+        "open": "Whose eyewitness account of something would you trust, and why them?",
+        "discuss": [
+          "Why does it help to keep the questions of copying, dating and kind of writing apart?",
+          "Apologists have sometimes overstated the manuscript figures. What does it cost when Christians claim more than the evidence gives?",
+          "How might differences between the Gospels count for their honesty rather than against it?"
+        ],
+        "pray": "Those who pray may give thanks for the people who carried the Gospels across the centuries, and ask for care in speaking about them truthfully."
+      }
+    },
+    {
+      "n": 6,
+      "title": "What Jesus claimed",
+      "minutes": 10,
+      "teaching": [
+        "A familiar line says Jesus was a good teacher and nothing more. The trouble is the Gospels themselves. In Mark, the earliest, Jesus forgives a paralysed man on his own authority, and the scribes object at once: “Who can forgive sins but God alone?” (Mark 2:7). He calls himself lord of the Sabbath and sets his own word beside the law. At his trial he answers the high priest with Daniel's vision of the Son of Man at the right hand of Power, and he is condemned for blasphemy.",
+        "The objection deserves its full form. In Matthew, Mark and Luke, Jesus never says in so many words that he is God, and historians differ over how much of John's long speeches are his own words. Bart Ehrman has argued that his followers came to think of him as divine by stages. Each saying can be argued over. Together they make a claim no ordinary prophet made, which is why the old trilemma made famous by C. S. Lewis still has force: a man who said these things was deceived, deceiving or telling the truth. It leaves out legend, so the history in the last session matters. It leaves no room for a merely good teacher."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Did Jesus claim to be God?",
+        "href": "/questions/jesus/did-jesus-claim-to-be-god",
+        "why": "Each claim in the first three Gospels set beside the scholars who doubt it, Ehrman, Vermes and Casey among them, and what the claims add up to together."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Mark 14, passage by passage",
+          "href": "/study/bible/mark/14#plain",
+          "why": "The trial before the high priest, the answer from Daniel 7 and the charge of blasphemy, with plain notes on why the answer was heard that way."
+        },
+        {
+          "kind": "theology",
+          "label": "Who is Jesus?",
+          "href": "/theology/doctrine/christology",
+          "why": "What the church came to confess about Christ, one person in two natures, with every view the early church weighed stated in its own voice."
+        }
+      ],
+      "question": "If a friend says Jesus was a good teacher and nothing more, what one passage would you ask them to read, and why that one?",
+      "do": "Read Mark 2:1-12 slowly. Write down what Jesus does, what the scribes think it means, and how Jesus answers what they were thinking.",
+      "verse": {
+        "ref": "Mark 14:62",
+        "text": "“I am,” said Jesus, “and you will see the Son of Man sitting at the right hand of Power and coming with the clouds of heaven.”"
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What did you think of Jesus before you had read a Gospel for yourself?",
+        "discuss": [
+          "Why is it significant that the strongest claims appear in Mark, and not only in John?",
+          "Lewis's trilemma leaves out the possibility of legend. Does that weaken it, or does the history answer it?",
+          "How would you state Ehrman's view in a way he would accept as fair?"
+        ],
+        "pray": "Those who pray may ask to see Jesus as he presents himself in the Gospels, not as anyone, ourselves included, would prefer him to be."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The resurrection and the best explanation",
+      "minutes": 10,
+      "teaching": [
+        "Everything rests here, and Paul said so: “if Christ has not been raised, our preaching is worthless, and so is your faith” (1 Corinthians 15:14). Christianity stakes itself on a public event that can be weighed. Within a few years of the crucifixion a list was circulating that named people who said they had seen Jesus alive, among them Peter, his brother James, who had not believed in him, and Paul, who had persecuted the church. They called it resurrection, a word that meant a body raised, though their world had other words for visions, and they held to it at cost.",
+        "A fair case lays the alternatives beside that evidence. Grieving people do see those they have lost, and Gerd Lüdemann argued that Peter's experience was of that kind. Legends do grow, and frauds happen. Each explanation covers part of the evidence and strains at the rest: an enemy like Paul and a doubter like James are not the usual mourners, and the list is early. That God raised Jesus explains all of it. What keeps many careful people from that explanation is usually a prior judgment that God doesn't act, which is why the earlier sessions matter. The case is cumulative, and each strand makes the next easier to weigh."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Couldn't the Easter experiences have a natural explanation?",
+        "href": "/questions/jesus/the-appearances-and-the-alternatives",
+        "why": "Grief, legend, fraud and survival each given its strongest defenders, then weighed against the whole of the evidence they need to explain."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "1 Corinthians 15, passage by passage",
+          "href": "/study/bible/1-corinthians/15#plain",
+          "why": "The early list of witnesses Paul passed on, with plain notes on how soon it was written and what he staked on it."
+        },
+        {
+          "kind": "essay",
+          "label": "Did Jesus really rise from the dead?",
+          "href": "/writing/did-jesus-really-rise-from-the-dead",
+          "why": "A longer essay on the evidence and the alternatives, written for the reader who wants the whole argument in one place."
+        }
+      ],
+      "question": "Which natural explanation of the Easter evidence seems strongest to you, and what part of the evidence does it struggle to explain?",
+      "do": "Read 1 Corinthians 15:3-8 and list every person or group Paul names as a witness. Mark which of them had reason not to believe.",
+      "verse": {
+        "ref": "1 Corinthians 15:3-5",
+        "text": "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures, and that He appeared to Cephas and then to the Twelve."
+      },
+      "care": [
+        "If you are grieving someone who has died, these verses do not ask you to stop grieving. Jesus wept at his friend's grave (John 11:35). Paul says believers grieve, but not “like the rest, who are without hope” (1 Thessalonians 4:13). If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What would it take for you to believe that someone had come back to life?",
+        "discuss": [
+          "Why does Paul stake the whole faith on one event, rather than on teaching or experience?",
+          "Which alternative explanation would you most want to answer well, and why that one?",
+          "What does it mean to say that a prior judgment about miracles, rather than the evidence, keeps some people from belief?"
+        ],
+        "pray": "Those who pray may give thanks for the hope of the resurrection, and remember before God anyone in the group who is grieving."
+      }
+    },
+    {
+      "n": 8,
+      "title": "The church across cultures and centuries",
+      "minutes": 10,
+      "teaching": [
+        "A further line of evidence is quieter than an argument. The faith that began among Jews in Jerusalem reached Ethiopia, Syria, Persia and India while much of northern Europe was still pagan. In 1900 better than four of every five Christians lived in Europe or North America; within a lifetime the faith's centre was shifting to Africa, Asia and Latin America, almost none of it where the strategists of the day expected. People of every language have found the same Christ through the same Scriptures, and churches that agree on little else still confess the Nicene Creed.",
+        "The objection is real and should be granted first: the faith often travelled with empire, and in much of the world it came on the same ships as the chains. Devotion alone proves nothing, since every religion has devoted followers. But this witness does something the other arguments can't. It shows that the gospel isn't one culture's property. Many of those it was used against kept it and judged their masters by it. A believer giving reasons can point to a faith that keeps being received by people with every reason to refuse it, which is hard to explain if it were only a tool of power."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The church since 1900: how Christianity moved south and east",
+        "href": "/theology/history/the-global-church",
+        "why": "The century no one predicted: the churches under the dictators, the fire from Azusa Street, and the great shift of the faith's centre to the global South."
+      },
+      "also": [
+        {
+          "kind": "essay",
+          "label": "Is Christianity a white man's religion?",
+          "href": "/writing/christianity-was-never-western",
+          "why": "The charge stated at its full strength, then the faith that was Asian and African before Europe had heard of it."
+        },
+        {
+          "kind": "creed",
+          "label": "The Nicene Creed",
+          "href": "/resources/creeds/nicene-creed",
+          "why": "The confession shared by churches East and West, North and South, which shows what the church across cultures holds in common."
+        },
+        {
+          "kind": "film",
+          "label": "A blessing for all nations",
+          "href": "/study/explorer/watch/all-nations",
+          "why": "A short film tracing the promise to Abraham through the whole Bible, that all the families of the earth would be blessed."
+        }
+      ],
+      "question": "How would you answer a friend who says Christianity is simply the religion of Western empire?",
+      "do": "Read Acts 8:26-39. Write down where the official came from, what he was reading, and what that suggests about who the gospel was for from the start.",
+      "verse": {
+        "ref": "Revelation 7:9",
+        "text": "After this I looked and saw a multitude too large to count, from every nation and tribe and people and tongue, standing before the throne and before the Lamb. They were wearing white robes and holding palm branches in their hands."
+      },
+      "group": {
+        "open": "Have you ever worshipped with Christians from a culture very different from your own?",
+        "discuss": [
+          "Why must the charge that the faith travelled with empire be granted before any reply?",
+          "What does it suggest that people the church wronged often kept the faith and judged the church by it?",
+          "How is the witness of the church across cultures different from an argument, and what is it good for?"
+        ],
+        "pray": "Those who pray may give thanks for the church in every nation, and ask forgiveness for the times it has carried the gospel with contempt."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Why Christianity and not another faith",
+      "minutes": 10,
+      "teaching": [
+        "Once the case reaches Jesus, the question of other religions comes close, and it deserves fairness first. The great faiths share more than many Christians admit: prayer, mercy to the poor, a moral law that sounds alike in many tongues, and saints whose lives would humble most of us. The philosopher John Hick argued in 1989 that each great tradition is a valid response to one ultimate reality beyond them all. That view is serious, and thoughtful people hold it.",
+        "But the religions don't say the same thing about what they care about most. They differ over whether ultimate reality is a person, whether Jesus was crucified and rose, and what salvation is. Hick's view isn't neutral either, since it tells every believer what his faith really means from a place none of them stands. The Christian reason for Christ is not that other faiths hold nothing true. It is that this faith rests on a claim that can be tested in history, that Jesus rose, and on grace offered to people who can't earn it. Jewish and Muslim neighbours deserve to have the real difference stated honestly, and it turns on who Jesus is."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Are all religions basically the same?",
+        "href": "/questions/religions/are-all-religions-the-same",
+        "why": "What the great faiths share, John Hick's pluralism at its most careful, and why the question finally turns on a claim that can be tested."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "Did Christianity stray from the God of Abraham?",
+          "href": "/questions/religions/judaism-islam-and-jesus",
+          "why": "What Judaism, Islam and Christianity share, and the one place they part, stated so that each neighbour would recognise their own view."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Salvation, in the Study Bible",
+          "href": "/study/bible/doctrines/salvation",
+          "why": "What Scripture means by being saved, which is where the faiths differ most and where the Christian claim of grace stands out."
+        }
+      ],
+      "question": "What is the one difference between Christianity and the faith of a neighbour that you would most want to state accurately?",
+      "do": "Choose one other faith you meet in daily life. Write three things it teaches that Christians can honour, and the one point where it and Christianity truly part.",
+      "verse": {
+        "ref": "Ephesians 2:8-9",
+        "text": "For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast."
+      },
+      "group": {
+        "open": "What do you know about the faith of the neighbour who lives nearest you?",
+        "discuss": [
+          "Why does Hick's view, for all its generosity, still tell other believers they are mistaken?",
+          "What would it look like to state the difference between Christianity and Islam in a way a Muslim friend would call fair?",
+          "Why does it matter that the Christian claim rests on an event that can be tested, and not on experience alone?"
+        ],
+        "pray": "Those who pray may ask for respect toward neighbours of other faiths, and for the courage to speak of Jesus plainly and kindly."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Putting it together: your own case",
+      "minutes": 15,
+      "teaching": [
+        "No single argument in this track carries the whole weight, and none was meant to. A case for the faith works like a rope, its strength in many strands: a world that needn't exist, an order fitted for life, a moral law no one can shake, Gospels written within living memory, a man who claimed what only God could claim, witnesses to his rising who held to it at cost, and a church received in every culture. A skeptic can pull at any one strand. The question is what explains them all together. Peter's word was to be ready: “Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you” (1 Peter 3:15).",
+        "Notice what Peter puts first and last. The reason is for the hope that is in you, so it begins with Christ honoured in your own heart, and it ends with gentleness and respect. A case won by humiliating someone has been lost. So write yours plainly, on one page: what you believe, the reasons that weigh most with you, the objection you find hardest, and what you would say to it. Keep it, and change it as you learn. One day someone you love will ask you why, and you will be able to answer honestly."
+      ],
+      "open": {
+        "kind": "tool",
+        "label": "Test the Case",
+        "href": "/tools/test-the-case",
+        "why": "Put your one-page case under pressure: argue each point against its strongest objection and see which strands hold and which need more work."
+      },
+      "also": [
+        {
+          "kind": "skeptics",
+          "label": "For skeptics",
+          "href": "/skeptics",
+          "why": "The room a skeptical friend might start in, so that you know what they will meet there and can read it alongside them."
+        },
+        {
+          "kind": "track",
+          "label": "The tracks",
+          "href": "/tracks",
+          "why": "Where to go next in Explain It: Answering the questions people ask, ten sessions on the questions friends actually raise in conversation."
+        }
+      ],
+      "question": "Which strand of the case weighs most with you, and which objection do you still find hardest?",
+      "do": "Write your case on one page: what you believe, three reasons, the hardest objection and your answer to it. Set it beside the three reasons you wrote in the first session, and notice what has changed.",
+      "verse": {
+        "ref": "1 Peter 3:15",
+        "text": "But in your hearts sanctify Christ as Lord. Always be prepared to give a defense to everyone who asks you the reason for the hope that is in you. But respond with gentleness and respect,"
+      },
+      "group": {
+        "open": "Which session in this track changed your mind about something?",
+        "discuss": [
+          "Read one another's one-page cases. Which reasons appear in nearly everyone's, and why might that be?",
+          "Peter puts honouring Christ in the heart before giving a reason. Why that order?",
+          "What would gentleness and respect look like with the person you most want to explain the faith to?"
+        ],
+        "pray": "Those who pray may bring before God by name the people they hope to talk with, and ask for gentleness, patience and truthfulness."
+      }
+    }
+  ]
+}
