@@ -1,0 +1,251 @@
+{
+ "length": 230.31,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "Can I know?",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 10.88,
+   "lines": [
+    {
+     "text": "Can I know that I belong to God? And will I keep believing to the end?",
+     "start": 2.6,
+     "end": 6.74
+    },
+    {
+     "text": "That's the doctrine of assurance and perseverance.",
+     "start": 7.3,
+     "end": 9.98
+    }
+   ]
+  },
+  {
+   "id": "voices",
+   "kicker": "Two voices",
+   "level": 0.3,
+   "start": 10.08,
+   "end": 28.38,
+   "lines": [
+    {
+     "text": "The New Testament answers the first with promises meant to be trusted.",
+     "start": 10.98,
+     "end": 14.48
+    },
+    {
+     "text": "It answers the second with two voices. Promises that God keeps His people, and warnings to hold fast and not fall away.",
+     "start": 15.06,
+     "end": 22.62
+    },
+    {
+     "text": "Every Christian tradition affirms both. They differ on how the two fit together.",
+     "start": 23.26,
+     "end": 27.48
+    }
+   ]
+  },
+  {
+   "id": "ot",
+   "kicker": "Promise and warning",
+   "level": 0.4,
+   "start": 27.58,
+   "end": 41.68,
+   "lines": [
+    {
+     "text": "The Old Testament sets promise and warning side by side, and trusts God to be faithful.",
+     "start": 28.48,
+     "end": 33.36
+    },
+    {
+     "text": "Samuel tells Israel the Lord won't abandon His people. Then he warns that persisting in evil will sweep them away.",
+     "start": 33.94,
+     "end": 40.78
+    }
+   ]
+  },
+  {
+   "id": "jesus",
+   "kicker": "Jesus speaks both ways",
+   "level": 0.5,
+   "start": 40.88,
+   "end": 50.92,
+   "lines": [
+    {
+     "text": "Jesus speaks both ways. He says no one can snatch His sheep out of His hand.",
+     "start": 41.78,
+     "end": 46.02
+    },
+    {
+     "text": "And He warns that a branch that doesn't remain in Him is thrown away.",
+     "start": 46.54,
+     "end": 50.02
+    }
+   ]
+  },
+  {
+   "id": "paul",
+   "kicker": "Both in one sentence",
+   "level": 0.55,
+   "start": 50.12,
+   "end": 67.64,
+   "lines": [
+    {
+     "text": "Paul says nothing in all creation can separate us from God's love in Christ.",
+     "start": 51.02,
+     "end": 55.3
+    },
+    {
+     "text": "He holds both voices in one sentence. Continue to work out your salvation with fear and trembling.",
+     "start": 55.94,
+     "end": 61.7
+    },
+    {
+     "text": "For it is God who works in you to will and to act on behalf of His good purpose.",
+     "start": 62.26,
+     "end": 66.74
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "An old question",
+   "level": 0.62,
+   "start": 66.84,
+   "end": 80.3,
+   "lines": [
+    {
+     "text": "The early church spoke far more of endurance than assurance. It honored its martyrs and grieved over those who lapsed.",
+     "start": 67.74,
+     "end": 74.38
+    },
+    {
+     "text": "The Reformation made assurance a central question, and churches answered it differently.",
+     "start": 74.98,
+     "end": 79.4
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.7,
+   "start": 79.5,
+   "end": 177.26,
+   "lines": [
+    {
+     "text": "Five views stand side by side.",
+     "start": 80.4,
+     "end": 82.3
+    },
+    {
+     "text": "Reformed Christians hold that all whom God has called and given new birth will persevere to the end, because God keeps them, not their own strength.",
+     "start": 83.0,
+     "end": 91.46
+    },
+    {
+     "text": "They may fall for a time, like Peter, but never finally. The warnings are real, they argue, and God uses them to keep His people alert.",
+     "start": 92.12,
+     "end": 100.54
+    },
+    {
+     "text": "Arminian and Wesleyan Christians hold that God's grace is strong enough to keep every believer, and no outside power can snatch them from Christ.",
+     "start": 101.28,
+     "end": 109.3
+    },
+    {
+     "text": "But a believer is in a real relationship, and can turn away in unbelief and be finally lost. Otherwise, they argue, the warnings would be empty.",
+     "start": 110.04,
+     "end": 118.7
+    },
+    {
+     "text": "Lutherans confess that salvation is wholly God's gift, yet also that the justified can fall from grace. They refuse to settle this by logic.",
+     "start": 119.38,
+     "end": 128.1
+    },
+    {
+     "text": "Assurance, they teach, comes by looking outward to Christ in the Word, baptism and the Lord's Supper. Those who fall away are called back to their baptism.",
+     "start": 128.76,
+     "end": 137.86
+    },
+    {
+     "text": "Catholics hold that final perseverance is a great gift no one can merit, and that grace lost through grave sin is restored through penance.",
+     "start": 138.58,
+     "end": 146.54
+    },
+    {
+     "text": "Hope should be firm, they teach, but no one is absolutely certain of persevering without a special revelation. That guards against presumption and despair.",
+     "start": 147.16,
+     "end": 156.48
+    },
+    {
+     "text": "Free Grace teachers hold that eternal life, given the moment one believes, can never be lost, because God doesn't take back His gifts.",
+     "start": 156.88,
+     "end": 165.16
+    },
+    {
+     "text": "Making final salvation depend on obedience, they argue, brings works in by the side door and robs believers of assurance. The warnings concern discipline and reward.",
+     "start": 165.78,
+     "end": 176.36
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "The careless and the anxious",
+   "level": 0.85,
+   "start": 176.46,
+   "end": 205.3,
+   "lines": [
+    {
+     "text": "Wise pastors across the traditions know this doctrine meets people at two points.",
+     "start": 177.36,
+     "end": 181.76
+    },
+    {
+     "text": "The careless need the warnings. A life that drifts from Christ is in real danger.",
+     "start": 182.34,
+     "end": 187.02
+    },
+    {
+     "text": "The anxious need the promises. The one who comes to Christ will not be driven away.",
+     "start": 187.8,
+     "end": 192.5
+    },
+    {
+     "text": "The cure for both is to look away from yourself, to Christ, who holds His people and prays for them.",
+     "start": 193.18,
+     "end": 199.12
+    },
+    {
+     "text": "No one holds on alone. Hebrews tells believers to exhort one another daily.",
+     "start": 199.7,
+     "end": 204.4
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 204.5,
+   "end": 224.211,
+   "lines": [
+    {
+     "text": "One psalmist nearly slipped. Then he wrote this.",
+     "start": 205.4,
+     "end": 208.34
+    },
+    {
+     "text": "My flesh and my heart may fail, but God is the strength of my heart and my portion forever.",
+     "start": 208.96,
+     "end": 214.96
+    },
+    {
+     "text": "Doubt, weariness and dry seasons are not proof that a person has fallen away. The question is where they turn.",
+     "start": 215.8,
+     "end": 223.311
+    }
+   ]
+  }
+ ]
+}
