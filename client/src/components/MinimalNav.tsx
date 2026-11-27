@@ -1,9 +1,15 @@
 /**
- * The header: seven doors from the site catalogue (lib/siteCatalog.ts), with
- * Find Help, search and Subscribe beside them. Each door but Essays opens a
+ * The header (James, 2026-11-27, "Explore-led menu"): Explore, whose panel is
+ * the eight disciplines as pictures (pages/explore, /explore/<discipline>),
+ * then five doors from the site catalogue (lib/siteCatalog.ts): Bible,
+ * Family, Tools, Essays and About, with Find Help, search and Subscribe
+ * beside them. History and Questions keep their pages and rooms; in the bar
+ * they are inside Explore, as Church history and Difficult questions, and
+ * Explore is marked current on their pages. Each door but Essays opens a
  * compact panel of six rooms or fewer (an icon, the plain name, one line) and
  * a foot with "Everything in <door>" and "New here? Start here". On a phone
- * the menu button opens a full-screen sheet of the same doors.
+ * the menu button opens a full-screen sheet: the eight disciplines as picture
+ * cards, then the same doors.
  *
  * Keyboard: Tab moves through the bar; Enter or Space opens a door; Left and
  * Right move between doors; Down opens a door's panel at its first room; Up
@@ -31,6 +37,8 @@ import {
 } from "@/lib/siteCatalog";
 import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
 import { SEARCH_SHORTCUTS } from "@/lib/siteNav";
+import Plate from "./art/Plate";
+import { DISCIPLINES } from "@/pages/preview/disciplines";
 import { followHash } from "@/lib/followHash";
 import type { PassageMatch } from "@/lib/siteSearch";
 import "./site-nav.css";
@@ -41,6 +49,24 @@ import "./site-nav.css";
  * so first paint carries none of it.
  */
 const loadFind = () => import("@/lib/siteSearch");
+
+/** The bar's doors after Explore. History and Questions sit inside Explore. */
+const BAR_DOOR_IDS: DoorId[] = ["bible", "family", "tools", "essays", "about"];
+/** Doors whose pages Explore holds, so Explore is marked current on them. */
+const EXPLORE_HOLDS: DoorId[] = ["history", "questions"];
+type NavId = DoorId | "explore";
+
+/** Explore, drawn as a door: its rooms are the eight disciplines. */
+const EXPLORE: Door = {
+  id: "explore" as DoorId,
+  name: "Explore",
+  icon: "Compass",
+  plate: "compass",
+  page: EVERYTHING_ENTRY,
+  rooms: DISCIPLINES.map((d) => ({ id: `explore.${d.id}`, name: d.name, line: d.line, href: `/explore/${d.id}`, icon: "Compass" })),
+};
+const BAR_DOORS: Door[] = [EXPLORE, ...BAR_DOOR_IDS.map((id) => DOORS.find((d) => d.id === id)).filter((d): d is Door => !!d)];
+const PLATE_OF = new Map(DISCIPLINES.map((d) => [`/explore/${d.id}`, d.plate]));
 
 /** A catalogue entry as a link: outbound in a new tab, in-app through wouter. */
 function EntryLink({
@@ -93,17 +119,18 @@ export default function MinimalNav() {
   // Reads a typed reference once the parser has loaded; null until then.
   const [readPassage, setReadPassage] = useState<((q: string) => PassageMatch | null) | null>(null);
   // The door whose panel is open in the bar.
-  const [openDoor, setOpenDoor] = useState<DoorId | null>(null);
+  const [openDoor, setOpenDoor] = useState<NavId | null>(null);
   // The door opened inside the phone sheet.
-  const [sheetDoor, setSheetDoor] = useState<DoorId | null>(null);
+  const [sheetDoor, setSheetDoor] = useState<NavId | null>(null);
   const doorsRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const sheetRef = useRef<HTMLDivElement>(null);
   // The door a mouse opened by hovering. The click that usually follows keeps
   // that panel open instead of folding it.
-  const hoverOpened = useRef<DoorId | null>(null);
+  const hoverOpened = useRef<NavId | null>(null);
 
-  const currentDoor = doorForPath(location);
+  const pageDoor = doorForPath(location);
+  const currentDoor: NavId | null = location.startsWith("/explore/") || (pageDoor && EXPLORE_HOLDS.includes(pageDoor)) ? "explore" : pageDoor;
 
   const prepareSearch = () => {
     if (readPassage) return;
@@ -421,7 +448,7 @@ export default function MinimalNav() {
           </div>
 
           <div ref={doorsRef} className="desktop-nav sn-doors">
-            {DOORS.map((door, i) => {
+            {BAR_DOORS.map((door, i) => {
               if (!door.rooms.length) {
                 return (
                   <Link
@@ -477,11 +504,28 @@ export default function MinimalNav() {
                   {open && (
                     <div
                       id={`sn-panel-${door.id}`}
-                      className={`sn-panel ${panelSide(i)}`}
+                      className={`sn-panel ${door === EXPLORE ? "sn-panel--explore" : panelSide(i)}`}
                       role="region"
                       aria-label={door.name}
                       onKeyDown={onPanelKey(door)}
                     >
+                      {door === EXPLORE ? (
+                        <ul className="sn-ways">
+                          {door.rooms.map((room) => (
+                            <li key={room.id}>
+                              <Link href={room.href} className="sn-way" onClick={closeAll}>
+                                <span className="sn-way__art" aria-hidden="true">
+                                  <Plate name={PLATE_OF.get(room.href) ?? "compass"} decorative />
+                                </span>
+                                <span>
+                                  <span className="sn-room__name">{room.name}</span>
+                                  <span className="sn-room__line">{room.line}</span>
+                                </span>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
                       <ul className="sn-rooms">
                         {door.rooms.map((room) => {
                           const Icon = ICONS[room.icon];
@@ -498,9 +542,10 @@ export default function MinimalNav() {
                           );
                         })}
                       </ul>
+                      )}
                       <div className="sn-foot">
                         <Link href={door.page.href} onClick={closeAll}>
-                          Everything in {door.name}
+                          {door === EXPLORE ? EVERYTHING_ENTRY.name : `Everything in ${door.name}`}
                         </Link>
                         <Link href={START_LINK.href} onClick={closeAll}>
                           {START_LINK.name}
@@ -572,8 +617,22 @@ export default function MinimalNav() {
                 </span>
               </Link>
 
+              <p className="sn-sheet-label">Explore</p>
+              <ul className="sn-sheet-ways">
+                {EXPLORE.rooms.map((room) => (
+                  <li key={room.id}>
+                    <Link href={room.href} className={`sn-sheet-way${location === room.href ? " is-current" : ""}`} onClick={closeAll}>
+                      <span className="sn-sheet-way__art" aria-hidden="true">
+                        <Plate name={PLATE_OF.get(room.href) ?? "compass"} decorative />
+                      </span>
+                      <span className="sn-sheet-way__name">{room.name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+
               <ul className="sn-sheet-doors">
-                {DOORS.map((door) => {
+                {BAR_DOORS.filter((d) => d !== EXPLORE).map((door) => {
                   const DoorIcon = ICONS[door.icon];
                   const current = currentDoor === door.id ? " is-current" : "";
                   if (!door.rooms.length) {

@@ -1,0 +1,9 @@
+/* Back to top (components/BackToTop.tsx). Tokens only. */
+.lw-totop{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(var(--lw-appbar-h,0px) + 16px);z-index:60;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid var(--border);border-radius:50%;background:var(--card);color:var(--ink);box-shadow:0 10px 24px -12px var(--art-ink);cursor:pointer;animation:lw-totop-in .3s var(--ease)}
+.lw-totop:hover{border-color:var(--borderdk)}
+@keyframes lw-totop-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.lw-totop{animation:none}}
+@media print{.lw-totop{display:none}}
+/* On the pages with Quick Exit (components/QuickExit.tsx, bottom right), stand above it. */
+body:has(button[aria-label^="Exit site"]) .lw-totop{bottom:calc(var(--lw-appbar-h,0px) + 72px)}
+.lw-main:focus{outline:none}

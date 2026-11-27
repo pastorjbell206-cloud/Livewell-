@@ -2319,3 +2319,23 @@ aside .sb-tabs{margin-left:calc(var(--s-4) * -1);margin-right:calc(var(--s-4) * 
 .lw-inside__room{display:flex;margin:0 0 6px}
 .lw-inside__room a{color:inherit;text-decoration:none}
 .lw-inside__room a:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* The softer finish across the door pages (James, 2026-11-27: "inner pages in the new style"),
+   the same hand as the discipline pages (pages/preview/preview.css .pv-pcard): picture cards on
+   soft shadows, rounded tiles with icons in circles. Tokens only. */
+.lw-rooms{gap:var(--s-3)}
+.lw-rooms .lw-door{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 1px 0 var(--border),0 18px 40px -34px var(--art-ink);transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
+.lw-rooms .lw-door .lw-frame{border:0;padding:0;border-bottom:1px solid var(--border)}
+.lw-rooms .lw-door .lw-frame__in{border:0}
+.lw-rooms .lw-door:hover .lw-frame,.lw-rooms .lw-door:focus-visible .lw-frame{transform:none;box-shadow:none}
+.lw-rooms .lw-door:hover,.lw-rooms .lw-door:focus-visible{transform:translateY(-6px);box-shadow:0 1px 0 var(--border),0 30px 50px -30px var(--art-ink)}
+.lw-rooms .lw-door .lw-frame__in svg{transition:transform .6s var(--ease)}
+.lw-rooms .lw-door:hover .lw-frame__in svg{transform:scale(1.05)}
+.lw-rooms .lw-door__text{margin:0;padding:18px 20px 22px}
+.lw-tiles{gap:10px var(--s-3)}
+.lw-tile{min-height:72px;padding:12px 16px;border-top:0;border-radius:12px;background:var(--card);box-shadow:0 0 0 1px var(--border);transition:box-shadow .2s var(--ease),transform .2s var(--ease)}
+.lw-tile:hover,.lw-tile:focus-visible{box-shadow:0 0 0 1px var(--borderdk),0 14px 30px -24px var(--art-ink);transform:translateY(-1px)}
+.lw-tile__icon{border:0;border-radius:50%;background:var(--bone-warm)}
+.lw-tile:hover .lw-tile__icon,.lw-tile:focus-visible .lw-tile__icon{transform:none;box-shadow:none}
+@media (prefers-reduced-motion:reduce){.lw-rooms .lw-door,.lw-rooms .lw-door .lw-frame__in svg,.lw-tile{transition:none}}
+@media (max-width:900px){.lw-rooms .lw-door:hover,.lw-tile:hover{transform:none}}
