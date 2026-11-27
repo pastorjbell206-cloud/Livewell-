@@ -1,0 +1,127 @@
+{
+  "title": "A name you can call on",
+  "note": "Doctrine film, written 2026-11-27 for the Study Bible doctrine page on the names of God. Every fact comes from client/public/bible/doctrines/names-of-god.json (definition, ot, nt, keyTexts, history, differ, errors, life). See facts.md. Scripture is the Berean Standard Bible, copied from client/public/bible/text/. God is never drawn: the names appear only as words, letters and light. The personal name is never pronounced in the narration.",
+  "page": "/study/bible/doctrines/names-of-god",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Read the Old Testament and you meet God under many names. God Most High. God Almighty. The LORD.",
+        "So which one is His real name? And why would a name matter at all?"
+      ]
+    },
+    {
+      "id": "label",
+      "kicker": "More than a label",
+      "level": 0.3,
+      "lines": [
+        "In the Bible, a name is more than a label. It says who someone is, and gives others a way to call on them.",
+        "The Hebrew word is shem. It means name, and it can also mean reputation.",
+        "So when God reveals His names, He's making Himself known. And He's making Himself available."
+      ]
+    },
+    {
+      "id": "titles",
+      "kicker": "Names along the way",
+      "level": 0.4,
+      "lines": [
+        "Genesis first calls God Elohim, the Creator. It's the ordinary word for God.",
+        "Then come titles, often tied to a place or an event. Melchizedek blesses Abram by God Most High.",
+        "Hagar, a runaway servant in the wilderness, names Him the God who sees me. To Abram, He's God Almighty, El Shaddai.",
+        "These aren't a menu of separate powers, one for provision and another for healing. Each names the one God."
+      ]
+    },
+    {
+      "id": "bush",
+      "kicker": "The burning bush",
+      "level": 0.5,
+      "lines": [
+        "Then comes the burning bush. Moses asks what name to give the Israelites.",
+        "God answers, I AM WHO I AM. Then He names Himself the LORD, and says, This is My name forever.",
+        "This is God's personal name, used nearly sixty-eight hundred times. Most English Bibles print it as LORD, in small capitals.",
+        "The name is tied to the Hebrew verb to be. God's answer echoes His promise to Moses, I will surely be with you."
+      ]
+    },
+    {
+      "id": "sinai",
+      "kicker": "A name filled in",
+      "level": 0.56,
+      "lines": [
+        "At Sinai, the LORD proclaims His name and then describes it. Compassionate and gracious, slow to anger, abounding in loving devotion and faithfulness.",
+        "God's name is filled with His character. To speak of His name is often to speak of God Himself."
+      ]
+    },
+    {
+      "id": "reverence",
+      "kicker": "Reverence for the name",
+      "level": 0.62,
+      "lines": [
+        "Out of reverence, Jewish practice in time stopped speaking that name aloud.",
+        "Scribes marked it so readers would say Lord instead. Later Jewish usage calls it HaShem, the Name.",
+        "The Greek Old Testament wrote kyrios, Lord. The New Testament followed it, and the church inherited the practice."
+      ]
+    },
+    {
+      "id": "jesus",
+      "kicker": "The name of Jesus",
+      "level": 0.7,
+      "lines": [
+        "The New Testament opens by naming a child. Jesus is the Greek form of the Hebrew Yeshua, which means the LORD saves.",
+        "The first Christians confessed, Jesus is Lord. Their Greek Bible used Lord for God's name, so the words carried its sound.",
+        "Paul backs it with the prophet Joel. Everyone who calls on the name of the Lord will be saved.",
+        "In Joel, that Lord is God's personal name. In Paul's letter, it's Jesus."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.78,
+      "lines": [
+        "Back at the bush, the name spoke of God's self-existence and His faithful presence. Christians weigh the two differently.",
+        "Some hear self-existence first. God simply is and depends on nothing, and His presence with His people follows. Many in the classical tradition read it this way.",
+        "Others hear a promise first, I will be who I will be. His self-existence is implied, but presence is the point. Many Old Testament scholars read it this way."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "Carrying the name",
+      "level": 0.85,
+      "lines": [
+        "Because God has a name, He can be called on. Prayer isn't sent to an unknown force. He has introduced Himself.",
+        "Jesus taught His disciples to begin by asking that God's name be honored, before bread or forgiveness. And the third commandment guards it.",
+        "You shall not take the name of the LORD your God in vain, for the LORD will not leave anyone unpunished who takes His name in vain.",
+        "That's about far more than careless speech. It forbids using God's name to back a false oath, a cruelty, a party, or a nation's cause."
+      ],
+      "scripture": {
+        "reference": "Exodus 20:7",
+        "translation": "Berean Standard Bible",
+        "text": "You shall not take the name of the LORD your God in vain, for the LORD will not leave anyone unpunished who takes His name in vain.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The Bible ends with that name on God's people.",
+        "They will see His face, and His name will be on their foreheads.",
+        "To bear His name is to belong to Him."
+      ],
+      "scripture": {
+        "reference": "Revelation 22:4",
+        "translation": "Berean Standard Bible",
+        "text": "They will see His face, and His name will be on their foreheads.",
+        "spoken": true
+      },
+      "titleCard": [
+        "God has made Himself known by name.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
