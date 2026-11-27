@@ -1,0 +1,314 @@
+<!doctype html>
+<!-- "David and Goliath". God is never drawn: only a faint mustard wash. Jesus, at the close, is one upright mustard
+     bar in the valley. People are plain ink dots, all alike; Goliath is one larger plain dot, and his fall is the
+     dot lying flat (no wound, no sword cut). The lion and the bear are only words on a memory card.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>David and Goliath</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5";
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const dot = (p, x, y, r = 7) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const lab = (p, x, y, s, size = 15, fill) => txt(p, "lab", x, y, s, size, fill ? { fill } : undefined);
+  const sl = (p, d, a = {}) => el("path", Object.assign({ d, fill: "none", stroke: INK, "stroke-width": 3, "stroke-linecap": "round", "stroke-linejoin": "round" }, a), p);
+  const verse = (ch, cx, y, size, max, big) => { const g = el("g", {}, world), words = `“${ch.scripture.text}”`.split(" "), out = []; let cur = "";
+    words.forEach((w) => { if ((cur + " " + w).trim().length > max && cur) { out.push(cur); cur = w; } else cur = (cur + " " + w).trim(); }); out.push(cur);
+    const lh = Math.round(size * 1.2); out.forEach((r, i) => txt(g, "disp", cx, y + i * lh, r, size));
+    txt(g, "lab", cx, y + (out.length - 1) * lh + Math.round(size * 0.62) + 14, `${ch.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, big ? 17 : 14); return g; };
+  // the two "pause" moments hold still: oscillations run on this clock, which stops during them
+  const PAUSES = [[S("errand", 3), E("errand", 3) + 0.3], [S("hillside", 3), END + 3]];
+  const still = (t) => { let s = t; for (const [a, b] of PAUSES) s -= clamp((t - a) / (b - a)) * (b - a); return s; };
+
+  // ================= the land: two hills, one valley =================
+  const yG = (x) => 478 - 130 * (Math.exp(-(((x - 230) / 190) ** 2)) + Math.exp(-(((x - 1050) / 190) ** 2)));
+  let hd = ""; for (let x = -20; x <= 1300; x += 10) hd += (x === -20 ? "M" : " L") + x + " " + yG(x).toFixed(1);
+  const gLand = el("g", {}, world);
+  const defs = el("defs", {}, world), glow = el("radialGradient", { id: "dgGlow" }, defs);
+  el("stop", { offset: "0", "stop-color": MUSTARD, "stop-opacity": 1 }, glow); el("stop", { offset: "0.55", "stop-color": MUSTARD, "stop-opacity": 0.6 }, glow); el("stop", { offset: "1", "stop-color": MUSTARD, "stop-opacity": 0 }, glow);
+  const hills = line(gLand, hd, { "stroke-width": 3 });
+  const gRoad = el("g", {}, world);
+  const roadL = line(gRoad, "M566 566 L637 484", { stroke: STONE, "stroke-width": 2.5 }), roadR = line(gRoad, "M714 566 L643 484", { stroke: STONE, "stroke-width": 2.5 });
+  const roadMid = el("path", { d: "M640 566 L640 488", stroke: MUSTARD, "stroke-width": 3, "stroke-dasharray": "6 10", "stroke-linecap": "round" }, gRoad);
+  const lElah = lab(gRoad, 640, 300, "THE VALLEY OF ELAH", 17, INK), lPlain = lab(gRoad, 640, 452, "TOWARD THE PHILISTINE PLAIN", 13), lJudah = lab(gRoad, 640, 590, "FROM THE HILLS OF JUDAH", 13);
+  const gArm = el("g", {}, gLand);
+  const isr = [...Array(14)].map((_, i) => ({ x: 90 + i * 22, e: dot(gArm, 0, 0) })), saul = isr[13];
+  const phi = [...Array(14)].map((_, i) => ({ x: 904 + i * 22, e: dot(gArm, 0, 0) }));
+  const gSides = el("g", {}, gLand); lab(gSides, 230, 522, "ISRAEL", 15); lab(gSides, 1050, 522, "PHILISTINES", 15);
+  const lSaul = lab(world, 376, 370, "SAUL", 15, INK);
+  const gTally = el("g", {}, world), ticks = [...Array(40)].map((_, i) => el("line", { x1: 120 + i * 9, x2: 120 + i * 9, y1: 246, y2: 272, stroke: i % 10 === 9 ? INK : STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gTally));
+  lab(gTally, 296, 226, "FORTY DAYS", 15, INK);
+  const vA = verse(SC.valley, 640, 150, 34, 50, true);
+
+  // ================= 2 champion: the man of the between =================
+  const gol = el("ellipse", { rx: 22, ry: 22, fill: INK }, gArm);
+  const lGath = lab(world, 650, 398, "GOLIATH OF GATH", 15, INK);
+  const lWord = lab(world, 640, 270, "CHAMPION: A WORD FOUND ONLY IN THIS CHAPTER", 15);
+  const gBet = el("g", {}, world), bracket = line(gBet, "M390 288 V300 H890 V288", { "stroke-width": 2.5 });
+  const connector = sl(gBet, "M650 306 V422", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 8" });
+  lab(gBet, 640, 270, "THE MAN OF THE BETWEEN", 19, INK);
+  const tags = [[250, "BRONZE HELMET"], [288, "ARMOR, ROUGHLY 125 POUNDS"], [326, "A SPEAR SHAFT LIKE A WEAVER’S BEAM"]].map(([y, s]) => lab(world, 640, y, s, 15, INK));
+  const rod = el("rect", { x: 520, y: 350, width: 260, height: 10, rx: 5, fill: WARM, stroke: INK, "stroke-width": 2.5 }, world);
+  const lOne = lab(world, 640, 288, "ONE MAN FOR A WHOLE PEOPLE", 17, INK);
+  const vB = verse(SC.champion, 640, 170, 38, 44, true);
+
+  // ================= 3 height: two readings, two equal marks; a chapter in more than one form =================
+  const gH = el("g", {}, world);
+  const hBase = line(gH, "M330 478 H950", { "stroke-width": 3 });
+  const bars = [[470, 6.5, "STANDARD HEBREW TEXT", "6 CUBITS AND A SPAN", "ABOUT 9.5 FEET"], [810, 4.5, "DEAD SEA SCROLLS · GREEK", "4 CUBITS AND A SPAN", ""]].map(([cx, cu, a, b, c]) => {
+    const g = el("g", {}, gH), r = el("rect", { x: cx - 28, width: 56, y: 478, height: 0, fill: PAPER, stroke: INK, "stroke-width": 3 }, g);
+    const tk = [...Array(Math.floor(cu))].map((_, k) => el("line", { x1: cx - 44, x2: cx - 30, y1: 478 - 34 * (k + 1), y2: 478 - 34 * (k + 1), stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, g));
+    const mark = el("line", { x1: cx - 54, x2: cx + 54, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g);
+    const labs = el("g", {}, g); lab(labs, cx, 512, a, 14); lab(labs, cx, 537, b, 14, INK); if (c) lab(labs, cx, 561, c, 13);
+    return { cx, h: cu * 34, r, tk, mark, labs }; });
+  const vC = verse(SC.height, 640, 168, 32, 60, false);
+  const lGiant = lab(gH, 640, 200, "STILL A GIANT IN HIS DAY", 15, INK);
+  const gStrip = el("g", {}, world), vx = (i) => 250 + i * 13.4;
+  const gap = (v) => (v >= 12 && v <= 31) || v >= 55;
+  const heb = [...Array(58)].map((_, i) => el("rect", { x: vx(i) + 2.7, y: 288, width: 8, height: 24, rx: 2, fill: STONE }, gStrip));
+  const grk = [...Array(58)].map((_, i) => gap(i + 1) ? el("rect", { x: vx(i) + 3.2, y: 398.5, width: 7, height: 23, rx: 2, fill: "none", stroke: LINE, "stroke-width": 1.5, "stroke-dasharray": "3 3" }, gStrip) : el("rect", { x: vx(i) + 2.7, y: 398, width: 8, height: 24, rx: 2, fill: STONE }, gStrip));
+  lab(gStrip, 640, 272, "1 SAMUEL 17 · STANDARD HEBREW TEXT", 14); lab(gStrip, 640, 382, "OLDEST GREEK MANUSCRIPTS", 14);
+  const gGaps = el("g", {}, gStrip);
+  [[12, 31, "VV. 12 TO 31"], [55, 58, "VV. 55 TO 58"]].forEach(([a, b, s]) => { const x1 = vx(a - 1) + 3, x2 = vx(b) - 3; sl(gGaps, `M${x1} 430 V436 H${x2} V430`, { stroke: STONE, "stroke-width": 2 }); lab(gGaps, (x1 + x2) / 2, 458, s, 13); });
+  const lForm = lab(gStrip, 640, 520, "MORE THAN ONE FORM", 15, INK);
+
+  // ================= 4 errand: a boy with bread; the same words, heard two ways =================
+  const supply = el("path", { d: "M-20 560 Q250 560 430 435", fill: "none", stroke: LINE, "stroke-width": 2.5, "stroke-dasharray": "5 9", "stroke-linecap": "round" }, gLand);
+  const qb = (k) => [mix(mix(-20, 250, k), mix(250, 430, k), k), mix(mix(560, 560, k), mix(560, 435, k), k)];
+  const gDav = el("g", {}, gArm); dot(gDav, 0, 0);
+  const basket = el("g", {}, gDav); el("path", { d: "M-11 -27 Q0 -39 11 -27 Z", fill: MUSTARD, stroke: INK, "stroke-width": 2 }, basket); el("path", { d: "M-14 -28 H14 L10 -13 H-10 Z", fill: WARM, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, basket);
+  const sling = sl(gArm, "M0 0", { "stroke-width": 2.5 });
+  const lDav = lab(world, 460, 352, "DAVID, WITH GRAIN AND BREAD", 15, INK);
+  const shouts = [0, 1, 2].map(() => sl(world, "M0 0", { stroke: STONE, "stroke-width": 3 }));
+  const vD = verse(SC.errand, 640, 150, 34, 50, true);
+  const lThreat = lab(world, 170, 300, "A THREAT TO ISRAEL", 15, STONE), lInsult = lab(world, 545, 372, "AN INSULT TO THE LIVING GOD", 15, INK);
+  const insultRule = el("rect", { x: 525, y: 384, width: 40, height: 3, fill: MUSTARD }, world);
+  const qPause = txt(world, "disp", 640, 262, "?", 110, { fill: MUSTARD });
+
+  // ================= 5 memory: lion and bear as words; the armor set aside; five stones; a sling =================
+  const lBoy = lab(world, 545, 372, "JUST A BOY", 15);
+  const card = el("g", {}, world); el("rect", { x: -150, y: -55, width: 300, height: 110, rx: 6, fill: PAPER, stroke: INK, "stroke-width": 3 }, card);
+  lab(card, 0, -24, "MEMORY", 13); lab(card, 0, 10, "THE LION", 17, INK); lab(card, 0, 38, "THE BEAR", 17, INK);
+  const memLink = sl(world, "M436 412 Q470 340 556 306", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 8" });
+  const dangerArc = sl(world, "M380 246 Q560 220 632 424", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 8" });
+  const lDanger = lab(world, 770, 420, "A NEW DANGER", 15, INK);
+  const vE = verse(SC.memory, 640, 140, 32, 52, true);
+  const armor = sl(world, "M-34 -96 L-14 -110 H14 L34 -96 L46 -40 H31 V6 H-31 V-40 H-46 Z", { stroke: INK, "stroke-width": 2.5 });
+  const lArmor = lab(world, 430, 300, "THE KING’S ARMOR", 15, INK);
+  const stones = [...Array(5)].map((_, i) => { const x = 486 + i * 17; return el("ellipse", { cx: x, cy: yG(x) - 5, rx: 7, ry: 5, fill: STONE }, gArm); });
+  const lStones = lab(world, 520, 410, "FIVE SMOOTH STONES", 15, INK);
+  const lSling = lab(world, 590, 340, "ARMIES HAD TRAINED SLINGERS", 15, INK);
+
+  // ================= 6 name: a speech, not a stone =================
+  const bigStone = el("ellipse", { rx: 24, ry: 16, fill: STONE }, world);
+  const lSpeech = lab(world, 640, 240, "A SPEECH, NOT A STONE", 17, INK);
+  let zz = "M664 428 L700 318"; for (let i = 0; i < 16; i++) zz += ` l18 ${i % 2 ? 14 : -14}`;
+  const curse = line(world, zz, { "stroke-width": 3 }), lCurse = lab(world, 850, 280, "CURSES BY HIS GODS", 15);
+  const named = line(world, "M424 420 C418 330 400 272 360 270 S220 270 150 270", { stroke: MUSTARD, "stroke-width": 3.5 });
+  const lName = lab(world, 300, 244, "IN THE NAME OF THE LORD OF HOSTS", 15, INK);
+  const worldArc = line(world, "M120 232 Q640 40 1160 232", { stroke: STONE, "stroke-width": 2.5 }), lWorld = lab(world, 640, 182, "SO THE WHOLE WORLD WILL KNOW", 15, INK);
+  const gArms = el("g", {}, world);
+  sl(gArms, "M500 330 H590 M516 318 V342", { stroke: STONE, "stroke-width": 4 });
+  sl(gArms, "M660 330 H870", { stroke: STONE, "stroke-width": 4 }); el("path", { d: "M870 322 L892 330 L870 338 Z", fill: STONE }, gArms);
+  const wash6 = el("rect", { x: 0, y: 96, width: 1280, height: 390, fill: MUSTARD }, world);
+  const vF = verse(SC.name, 640, 160, 36, 46, true);
+
+  // ================= 7 stone: one stone; the champion lies flat; Israel charges =================
+  const thrown = el("ellipse", { rx: 6, ry: 4.5, fill: STONE }, gArm);
+  const arcPt = (k) => [mix(mix(532, 585, k), mix(585, 630, k), k), mix(mix(410, 336, k), mix(336, 440, k), k)];
+  const trail = [...Array(11)].map((_, i) => { const [x, y] = arcPt((i + 0.5) / 11); return el("circle", { cx: x, cy: y, r: 2.2, fill: STONE }, world); });
+  const vG = verse(SC.stone, 640, 160, 36, 46, true);
+  const gFame = el("g", {}, world);
+  const fame = el("rect", { x: 660, y: 211, height: 12, rx: 6, fill: INK }, gFame), jeal = el("rect", { x: 660, y: 261, height: 12, rx: 6, fill: STONE }, gFame);
+  lab(gFame, 540, 223, "DAVID’S FAME", 15, INK); lab(gFame, 540, 273, "SAUL’S JEALOUSY", 15);
+
+  // ================= 8 question: whose son is this? =================
+  const gQ = el("g", {}, world);
+  const cardL = el("g", {}, gQ), cardR = el("g", {}, gQ);
+  el("rect", { x: 170, y: 150, width: 400, height: 220, rx: 6, fill: PAPER, stroke: INK, "stroke-width": 3 }, cardL);
+  lab(cardL, 370, 184, "CHAPTER 16", 14); sl(cardL, "M346 304 Q326 262 338 214 M394 304 Q414 262 402 214 M330 222 H410 M346 304 H394 M356 222 V304 M370 222 V304 M384 222 V304", { "stroke-width": 3 });
+  lab(cardL, 370, 345, "DAVID PLAYS THE HARP FOR SAUL", 12, INK);
+  el("rect", { x: 710, y: 150, width: 400, height: 220, rx: 6, fill: PAPER, stroke: INK, "stroke-width": 3 }, cardR);
+  lab(cardR, 910, 184, "CHAPTER 17", 14); txt(cardR, "disp", 910, 246, "“Abner, whose son", 32); txt(cardR, "disp", 910, 284, "is this young man?”", 32);
+  lab(cardR, 910, 340, `${SC.question.scripture.reference.toUpperCase()} · BEREAN STANDARD BIBLE`, 11);
+  const qMark = txt(gQ, "disp", 640, 300, "?", 84, { fill: STONE });
+  const views = [[320, "SAUL, TORMENTED,", "DID NOT RECOGNIZE HIM"], [640, "A ROYAL MARRIAGE PROMISED:", "A QUESTION ABOUT THE FATHER"], [960, "MANY SCHOLARS:", "TWO ACCOUNTS SIDE BY SIDE"]].map(([x, a, b]) => {
+    const g = el("g", {}, gQ); el("rect", { x: x - 145, y: 432, width: 290, height: 96, rx: 6, fill: WARM, stroke: INK, "stroke-width": 2.5 }, g); lab(g, x, 474, a, 12); lab(g, x, 500, b, 12, INK); return g; });
+  const lSettle = lab(gQ, 640, 408, "THE TEXT DOESN’T SETTLE IT", 14, INK);
+
+  // ================= 9 reading: a scale that tips; then two readings side by side =================
+  const gR = el("g", {}, world), PX = 640, PY = 250, ARM = 280;
+  sl(gR, "M640 256 V470 M586 470 H694", { "stroke-width": 4 });
+  const wash9 = el("ellipse", { cx: 920, cy: 330, rx: 170, ry: 200, fill: "url(#dgGlow)" }, gR);
+  const beam = el("line", { stroke: INK, "stroke-width": 5, "stroke-linecap": "round" }, gR);
+  el("path", { d: "M628 262 L640 244 L652 262 Z", fill: INK }, gR);
+  const pan = (s1, sub) => { const g = el("g", {}, gR); sl(g, "M0 0 L-42 88 M0 0 L42 88", { stroke: STONE, "stroke-width": 2 }); el("path", { d: "M-54 88 Q0 122 54 88 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g);
+    const l = lab(g, 0, 150, s1, 14, INK); const c = el("g", {}, g); return { g, l, c }; };
+  const panL = pan("BELIEVE IN YOURSELF"), panR = pan("TRUSTING THE LORD");
+  dot(panL.c, 0, 80);
+  const lSmall = lab(gR, 640, 196, "SMALL ALWAYS BEATS BIG?", 15), lOpp = lab(gR, 640, 196, "THE CHAPTER SAYS THE OPPOSITE", 15, INK);
+  const gRd = el("g", {}, world);
+  const rdGround = line(gRd, "M150 470 H1130", { "stroke-width": 3 });
+  const book = el("g", {}, gRd); el("path", { d: "M560 300 H636 V380 H560 Z M644 300 H720 V380 H644 Z", fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, book);
+  [0, 1, 2, 3].forEach((k) => { sl(book, `M572 ${318 + k * 15} H624 M656 ${318 + k * 15} H708`, { stroke: STONE, "stroke-width": 2.5 }); });
+  const readers = [[250, 290, 330], [950, 990, 1030]].map((xs) => xs.map((x) => dot(gRd, x, 459)));
+  const lens = [sl(gRd, "M330 440 Q440 380 556 352", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 8" }), sl(gRd, "M950 440 Q840 380 724 352", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 8" })];
+  const lDiffer = lab(gRd, 640, 240, "READERS STILL DIFFER", 15, INK);
+  const lCour = lab(gRd, 290, 506, "COURAGE: KNOWING WHOSE BATTLE IT IS", 13, INK), lMoral = lab(gRd, 990, 506, "NOT A SET OF MORAL EXAMPLES TO COPY", 13, INK);
+
+  // ================= 10 hillside: the soldiers on the hill; who went down into the valley =================
+  const lPattern = lab(world, 640, 210, "A PATTERN FILLED OUT IN CHRIST", 15), lBattle = lab(world, 640, 246, "A BATTLE STORY, NOT AN ALLEGORY", 15, INK);
+  const theirs = line(world, "M594 454 Q420 290 236 322", { stroke: MUSTARD, "stroke-width": 3 });
+  const lSoldiers = lab(world, 240, 290, "THE SOLDIERS ON THE HILLSIDE", 15, INK);
+  const wash10 = el("ellipse", { cx: 640, cy: 440, rx: 320, ry: 330, fill: "url(#dgGlow)" }, world);
+  const bar = el("rect", { x: 635, y: 398, width: 10, height: 78, rx: 5, fill: MUSTARD }, world);
+  const yourPlace = sl(world, "M208 358 H236", { stroke: STONE, "stroke-width": 2.5, "stroke-dasharray": "4 6" });
+  const vH = verse(SC.hillside, 640, 160, 36, 46, true);
+
+  F.title("David and Goliath");
+  F.endCard(SC.hillside.titleCard, END + 0.7);
+
+  return (t) => {
+    const tw = still(t), outAll = 1 - up(t, END + 0.55, 0.5);
+    // ---------- the land, on and off ----------
+    const land = (up(t, 1.2, 1.2) * (1 - up(t, S("height", 0) - 0.6, 0.8)) + up(t, E("height", 1) - 0.2, 0.9) * (1 - up(t, S("question", 0) - 0.7, 0.8)) + up(t, S("hillside", 0) - 1.0, 0.9)) * outAll;
+    op(gLand, land); draw(hills, up(t, 1.2, 2.4));
+    // road (1)
+    op(gRoad, span(t, S("valley", 0) - 0.3, S("valley", 1) + 0.6, 0.8)); draw(roadL, up(t, S("valley", 0), 1.6)); draw(roadR, up(t, S("valley", 0), 1.6));
+    roadMid.setAttribute("stroke-dashoffset", (-(tw * 14) % 16).toFixed(2)); op(roadMid, up(t, S("valley", 0) + 0.8, 0.8));
+    op(lElah, span(t, S("valley", 0) + 0.2, S("valley", 1) - 0.1, 0.6)); op(lPlain, up(t, at("valley", 0, 0.45), 0.6)); op(lJudah, up(t, at("valley", 0, 0.25), 0.6));
+    op(gSides, span(t, at("valley", 1, 0.4), S("champion", 1), 0.7));
+    // ---------- armies ----------
+    const late = t >= S("question", 0);                         // after the battle the hill is reset for the close
+    const d1 = -24 * up(t, S("champion", 2) + 0.2, 1.6), d2 = -46 * up(t, at("errand", 0, 0.68), 1.4);
+    const charge = up(t, S("stone", 2) + 0.1, 2.6), tremble = span(t, S("champion", 2), S("height", 0) - 0.4, 0.4);
+    const lift = 6 * up(t, at("hillside", 1, 0.25), 1.4) * (late ? 1 : 0);
+    isr.forEach((d, i) => {
+      const x = late ? d.x : mix(d.x + d1 + d2, 236 + i * 20, charge), r = (d === saul && !late) ? 7 + 3 * up(t, S("valley", 2), 0.8) : 7;
+      const bob = 1.2 * Math.sin(tw * 1.3 + i * 0.9) + 1.6 * Math.sin(tw * 14 + i) * tremble;
+      set(d.e, { cx: (x + (charge > 0 && charge < 1 && !late ? 0 : 0)).toFixed(1), cy: (yG(x) - r + bob - lift - 3 * Math.abs(Math.sin(tw * 9 + i)) * (charge > 0.02 && charge < 0.98 && !late ? 1 : 0)).toFixed(1), r });
+      op(d.e, up(t, at("valley", 1, 0.45) + i * 0.08, 0.4) * (d === isr[6] ? 1 - up(t, S("hillside", 3), 0.9) : 1));
+    });
+    const flee = up(t, S("stone", 2) + 0.1, 2.8);
+    phi.forEach((d, i) => { const x = d.x + 320 * flee; set(d.e, { cx: x.toFixed(1), cy: (yG(x) - 7 + 1.2 * Math.sin(tw * 1.2 + i * 1.1)).toFixed(1) });
+      op(d.e, up(t, at("valley", 1, 0.1) + i * 0.08, 0.4) * (1 - 0.6 * span(t, at("champion", 1, 0.74), S("champion", 2) + 0.4, 0.5)) * (1 - flee) * (late ? 0 : 1)); });
+    // saul
+    const sx = saul.e.getAttribute("cx"), sy = +saul.e.getAttribute("cy");
+    op(lSaul, (span(t, S("valley", 2) + 0.2, S("champion", 0) + 0.4, 0.6) + span(t, S("memory", 0), at("memory", 0, 0.62), 0.5)) * land); set(lSaul, { x: sx, y: (sy - 26).toFixed(1) });
+    const tl = (t - at("valley", 2, 0.72)) / 2.4 * 40; ticks.forEach((k, i) => op(k, clamp(tl - i)));
+    op(gTally, span(t, at("valley", 2, 0.68), S("champion", 0) + 1.2, 0.5));
+    op(vA, span(t, S("valley", 1) - 0.3, E("valley", 1) + 0.4, 0.5));
+    // ---------- 2 Goliath ----------
+    const gIn = at("champion", 0, 0.02), walk = up(t, gIn + 0.3, 4.0), fall = up(t, at("stone", 0, 0.48) + 0.7, 1.2);
+    const gx = mix(mix(930, 650, walk), 640, fall), rx = mix(22, 34, fall), ry = mix(22, 9, fall);
+    set(gol, { cx: gx.toFixed(1), cy: (yG(gx) - ry + (walk < 1 ? -2 * Math.abs(Math.sin(tw * 5)) * (walk > 0 ? 1 : 0) : 0)).toFixed(1), rx: rx.toFixed(1), ry: ry.toFixed(1) });
+    op(gol, up(t, gIn, 0.6) * (late ? 0 : 1));
+    op(lGath, span(t, at("champion", 0, 0.14), at("champion", 0, 0.32), 0.5));
+    op(lWord, span(t, at("champion", 0, 0.33), at("champion", 0, 0.6), 0.5));
+    const bet = at("champion", 0, 0.6); op(gBet, span(t, bet, S("champion", 1) - 0.1, 0.5)); draw(bracket, up(t, bet, 1.2));
+    connector.setAttribute("stroke-dashoffset", (-(tw * 10) % 12).toFixed(2));
+    [0, 0.12, 0.33].forEach((f, i) => op(tags[i], span(t, at("champion", 1, f), at("champion", 1, 0.74), 0.5)));
+    op(rod, span(t, at("champion", 1, 0.42), at("champion", 1, 0.74), 0.6)); rod.setAttribute("transform", `translate(${(4 * Math.sin(tw * 0.9)).toFixed(1)} 0)`);
+    op(lOne, span(t, at("champion", 1, 0.76), S("champion", 2) - 0.1, 0.5));
+    op(vB, span(t, S("champion", 2) - 0.3, E("champion", 2) + 0.3, 0.5));
+    // ---------- 3 height ----------
+    const H0 = S("height", 0), H1 = S("height", 1);
+    op(gH, span(t, H0 - 0.3, H1 - 0.1, 0.6)); draw(hBase, up(t, H0 - 0.2, 1.0));
+    bars.forEach((b, i) => { const k = up(t, at("height", 0, i ? 0.5 : 0.1), 1.8), h = b.h * k;
+      set(b.r, { y: (478 - h).toFixed(1), height: h.toFixed(1) }); b.tk.forEach((tk, j) => op(tk, clamp((h - 34 * (j + 1)) / 6)));
+      const my = 478 - h + (k >= 1 ? 1.5 * Math.sin(tw * 1.6) : 0); set(b.mark, { y1: my.toFixed(1), y2: my.toFixed(1) }); op(b.mark, up(t, at("height", 0, i ? 0.5 : 0.1) + 1.6, 0.4)); op(b.labs, up(t, at("height", 0, i ? 0.52 : 0.12), 0.6)); });
+    op(vC, span(t, H0 + 0.2, at("height", 0, 0.5), 0.6)); op(lGiant, up(t, at("height", 0, 0.88), 0.6));
+    op(gStrip, span(t, H1 - 0.3, E("height", 1) + 0.4, 0.6)); const fl = (t - H1 - 0.1) / 2.4 * 58;
+    heb.forEach((r, i) => op(r, clamp(fl - i))); grk.forEach((r, i) => op(r, clamp(fl - i)));
+    op(gGaps, up(t, at("height", 1, 0.3), 0.6)); op(lForm, up(t, at("height", 1, 0.55), 0.6));
+    gStrip.setAttribute("transform", `translate(0 ${(2 * Math.sin(tw * 1.1)).toFixed(1)})`);
+    // ---------- 4 errand ----------
+    const eIn = at("errand", 0, 0.03), dk = up(t, eIn, 3.8);
+    op(supply, span(t, eIn - 0.4, at("errand", 0, 0.68), 0.6));
+    let dx, dy;
+    if (t >= S("hillside", 0) - 2) { dx = 600; dy = yG(600) - 7; }
+    else { const run = up(t, S("stone", 0), 1.8), [qx, qy] = qb(dk); dx = dk < 1 ? qx : mix(430, 520, run); dy = dk < 1 ? qy - 7 : yG(dx) - 7;
+      dy -= 2.5 * Math.abs(Math.sin(tw * 8)) * ((dk > 0.02 && dk < 0.98) || (run > 0.02 && run < 0.98) ? 1 : 0); }
+    move(gDav, dx, dy); op(gDav, up(t, eIn - 0.2, 0.5) * (1 - up(t, at("hillside", 1, 0.46), 1.2)));
+    op(basket, 1 - up(t, S("memory", 0), 0.6));
+    op(lDav, span(t, at("errand", 0, 0.42), at("errand", 0, 0.64), 0.5));
+    const shA = span(t, at("errand", 0, 0.62), E("errand", 1) + 0.3, 0.5);
+    shouts.forEach((s, k) => { const R = 40 + ((tw * 70 + k * 50) % 150), c = 0.866 * R, h = 0.5 * R;
+      s.setAttribute("d", `M${(650 - c).toFixed(1)} ${(453 - h).toFixed(1)} A${R.toFixed(1)} ${R.toFixed(1)} 0 0 0 ${(650 - c).toFixed(1)} ${(453 + h).toFixed(1)}`); op(s, shA * (1 - (R - 40) / 150)); });
+    op(vD, span(t, S("errand", 1) - 0.3, E("errand", 1) + 0.3, 0.5));
+    const hear = up(t, S("errand", 2) - 0.1, 0.5) * (1 - 0.65 * up(t, S("errand", 3), 0.6)) * (1 - up(t, E("errand", 3) - 0.1, 0.5));
+    op(lThreat, up(t, S("errand", 2) - 0.1, 0.5) * (1 - 0.65 * up(t, S("errand", 3), 0.6)) * (1 - up(t, E("errand", 3) - 0.1, 0.5)));
+    op(lInsult, up(t, at("errand", 2, 0.4), 0.5) * (1 - 0.65 * up(t, S("errand", 3), 0.6)) * (1 - up(t, E("errand", 3) - 0.1, 0.5)));
+    const ir = 120 * up(t, at("errand", 2, 0.5), 1.0); set(insultRule, { x: (545 - ir / 2).toFixed(1), width: ir.toFixed(1) }); op(insultRule, hear > 0 ? up(t, at("errand", 2, 0.5), 0.3) * (1 - 0.65 * up(t, S("errand", 3), 0.6)) * (1 - up(t, E("errand", 3) - 0.1, 0.5)) : 0);
+    op(qPause, span(t, S("errand", 3) + 0.3, E("errand", 3) + 0.2, 0.9));
+    // ---------- 5 memory ----------
+    op(lBoy, span(t, S("memory", 0) + 0.3, at("memory", 0, 0.62), 0.5));
+    const c1 = span(t, at("memory", 0, 0.5), S("memory", 1) - 0.1, 0.6), c2 = span(t, S("memory", 2) - 0.1, at("memory", 2, 0.3), 0.6);
+    op(card, Math.max(c1, c2)); if (c1 >= c2) move(card, 640, 250 + 3 * Math.sin(tw * 1.4)); else move(card, 250, 232 + 3 * Math.sin(tw * 1.4), 0.85);
+    op(memLink, c1); op(dangerArc, c2); op(lDanger, span(t, at("memory", 2, 0.1), at("memory", 2, 0.3), 0.5));
+    memLink.setAttribute("stroke-dashoffset", (-(tw * 10) % 12).toFixed(2)); dangerArc.setAttribute("stroke-dashoffset", (-(tw * 10) % 12).toFixed(2));
+    op(vE, span(t, S("memory", 1) - 0.3, E("memory", 1) + 0.3, 0.5));
+    const aOn = at("memory", 2, 0.29), aOff = up(t, at("memory", 2, 0.43), 1.4);
+    move(armor, 430 - 70 * aOff, 434 - 30 * aOff); op(armor, up(t, aOn, 0.6) * (1 - aOff)); op(lArmor, span(t, aOn + 0.2, at("memory", 2, 0.53), 0.5));
+    const pick = up(t, S("stone", 0), 0.4);
+    stones.forEach((s, i) => op(s, up(t, at("memory", 2, 0.56) + i * 0.25, 0.4) * (i === 0 ? 1 - pick : 1) * (1 - up(t, S("stone", 2), 1.0))));
+    op(lStones, span(t, at("memory", 2, 0.57), at("memory", 2, 0.72), 0.5));
+    // the sling hangs from David; it whirls as he runs
+    const run = up(t, S("stone", 0), 1.8), rel = at("stone", 0, 0.48), whirl = t > S("stone", 0) - 0.2 && t < rel;
+    const th = whirl ? tw * 10 : 0.75, hx = dx + 6, hy = dy - 5, ex = hx + 30 * Math.cos(th), ey = hy - 30 * Math.sin(th) - (whirl ? 14 : 0);
+    sling.setAttribute("d", `M${hx.toFixed(1)} ${hy.toFixed(1)} Q${((hx + ex) / 2 + 10).toFixed(1)} ${((hy + ey) / 2 + 12).toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`);
+    op(sling, up(t, at("memory", 2, 0.71), 0.6) * (1 - up(t, S("stone", 2), 1.0)));
+    op(lSling, span(t, at("memory", 2, 0.74), E("memory", 2) + 0.4, 0.5));
+    // ---------- 6 name ----------
+    const N0 = S("name", 0), N1 = S("name", 1), nOut = 1 - up(t, N1 - 0.4, 0.6);
+    const bs = mix(1, 0.4, up(t, at("name", 0, 0.1), 1.6)); op(bigStone, span(t, N0 - 0.2, at("name", 0, 0.3), 0.5)); move(bigStone, 640, 292 + 3 * Math.sin(tw * 1.5), bs);
+    op(lSpeech, span(t, at("name", 0, 0.04), at("name", 0, 0.3), 0.5));
+    draw(curse, up(t, at("name", 0, 0.28), 1.4)); op(curse, up(t, at("name", 0, 0.27), 0.3) * nOut); op(lCurse, up(t, at("name", 0, 0.3), 0.5) * nOut);
+    curse.setAttribute("transform", `translate(0 ${(1.5 * Math.sin(tw * 3)).toFixed(1)})`);
+    draw(named, up(t, at("name", 0, 0.46), 1.6)); op(named, up(t, at("name", 0, 0.45), 0.3) * nOut); op(lName, up(t, at("name", 0, 0.48), 0.5) * nOut);
+    draw(worldArc, up(t, at("name", 0, 0.72), 1.8)); op(worldArc, up(t, at("name", 0, 0.71), 0.3) * nOut); op(lWorld, up(t, at("name", 0, 0.74), 0.6) * nOut);
+    op(gArms, span(t, N1 + 0.4, S("stone", 0) - 0.2, 0.6) * (1 - 0.55 * up(t, at("name", 1, 0.55), 1.0)));
+    op(wash6, 0.08 * span(t, at("name", 1, 0.5), S("stone", 0) + 0.6, 1.0));
+    op(vF, span(t, N1 - 0.3, E("name", 1) + 0.3, 0.5));
+    // ---------- 7 stone ----------
+    const fk = clamp((t - rel) / 0.75), [sx2, sy2] = arcPt(fk); set(thrown, { cx: sx2.toFixed(1), cy: sy2.toFixed(1) }); op(thrown, t > rel && fk < 1 ? 1 : 0);
+    trail.forEach((d, i) => op(d, clamp(fk * 11 - i) * (1 - up(t, rel + 2.4, 1.0))));
+    op(vG, span(t, S("stone", 1) - 0.3, E("stone", 1) + 0.3, 0.5));
+    op(gFame, span(t, at("stone", 2, 0.42), E("stone", 2) + 0.4, 0.6));
+    set(fame, { width: (6 + 280 * up(t, at("stone", 2, 0.45), 2.6)).toFixed(1) }); set(jeal, { width: (6 + 220 * up(t, at("stone", 2, 0.62), 2.6)).toFixed(1) });
+    // ---------- 8 question ----------
+    const Q0 = S("question", 0), Q1 = S("question", 1);
+    op(gQ, span(t, Q0 - 0.3, E("question", 1) + 0.3, 0.6));
+    op(cardL, up(t, Q0, 0.7)); op(cardR, up(t, at("question", 0, 0.55), 0.7));
+    cardL.setAttribute("transform", `translate(0 ${(3 * Math.sin(tw * 1.1)).toFixed(1)})`); cardR.setAttribute("transform", `translate(0 ${(3 * Math.sin(tw * 1.1 + 1.6)).toFixed(1)})`);
+    op(qMark, up(t, at("question", 0, 0.78), 0.8)); qMark.setAttribute("transform", `translate(0 ${(4 * Math.sin(tw * 1.8)).toFixed(1)})`);
+    [0, 0.21, 0.65].forEach((f, i) => { const a = up(t, at("question", 1, f), 0.7); op(views[i], a); views[i].setAttribute("transform", `translate(0 ${(14 * (1 - a) + 2 * Math.sin(tw * 1.3 + i * 2)).toFixed(1)})`); });
+    op(lSettle, up(t, at("question", 1, 0.88), 0.7));
+    // ---------- 9 reading ----------
+    const R0 = S("reading", 0), R1 = S("reading", 1), R2 = S("reading", 2), tip = at("reading", 1, 0.59);
+    op(gR, span(t, R0 - 0.3, R2 - 0.1, 0.6));
+    const sk = t - tip, ang = t < tip ? -8 * up(t, R0 + 0.8, 1.6) : 8 - 16 * Math.exp(-sk * 1.1) * Math.cos(Math.min(sk, 6) * 2.4) + 0.4 * Math.sin(tw * 1.2);
+    const ca = Math.cos(ang * Math.PI / 180), sa = Math.sin(ang * Math.PI / 180);
+    const lx = PX - ARM * ca, ly = PY - ARM * sa, rx2 = PX + ARM * ca, ry2 = PY + ARM * sa;
+    set(beam, { x1: lx.toFixed(1), y1: ly.toFixed(1), x2: rx2.toFixed(1), y2: ry2.toFixed(1) }); move(panL.g, lx, ly); move(panR.g, rx2, ry2);
+    op(panL.c, up(t, R0 + 0.5, 0.6)); op(panR.l, up(t, at("reading", 1, 0.55), 0.6)); op(panL.l, 1 - 0.5 * up(t, tip, 1.0));
+    op(wash9, 0.08 * up(t, at("reading", 1, 0.6), 1.2));
+    op(lSmall, span(t, at("reading", 0, 0.45), R1 - 0.1, 0.5)); op(lOpp, up(t, R1 + 0.1, 0.6));
+    op(gRd, span(t, R2 - 0.3, E("reading", 2) + 0.4, 0.6)); draw(rdGround, up(t, R2 - 0.3, 1.2));
+    readers.forEach((g, gi) => g.forEach((d, i) => { op(d, up(t, R2 + 0.2 + i * 0.12, 0.4)); d.setAttribute("cy", (459 - 1.2 * Math.abs(Math.sin(tw * 1.5 + i + gi))).toFixed(1)); }));
+    op(lDiffer, up(t, R2, 0.6)); op(lens[0], up(t, at("reading", 2, 0.14), 0.6)); op(lens[1], up(t, at("reading", 2, 0.58), 0.6));
+    lens.forEach((l) => l.setAttribute("stroke-dashoffset", (-(tw * 10) % 12).toFixed(2)));
+    op(lCour, up(t, at("reading", 2, 0.16), 0.6)); op(lMoral, up(t, at("reading", 2, 0.6), 0.6));
+    // ---------- 10 hillside ----------
+    const Z0 = S("hillside", 0), Z1 = S("hillside", 1), Z2 = S("hillside", 2), Z3 = S("hillside", 3);
+    op(lPattern, span(t, Z0 + 0.2, Z1 - 0.1, 0.6)); op(lBattle, span(t, at("hillside", 0, 0.5), Z1 - 0.1, 0.6));
+    draw(theirs, up(t, Z1 + 0.2, 2.0)); op(theirs, span(t, Z1, at("hillside", 1, 0.6), 0.4, 1.0));
+    op(lSoldiers, span(t, at("hillside", 1, 0.64), Z2 - 0.1, 0.6));
+    op(wash10, 0.1 * up(t, Z2 + 0.3, 1.6) * outAll); op(bar, up(t, Z2 + 0.5, 1.2) * outAll);
+    op(yourPlace, up(t, Z3 + 0.5, 0.8) * outAll);
+    op(vH, span(t, Z2 - 0.3, E("hillside", 2) + 0.3, 0.5));
+  };
+});
+</script>
+</body></html>
