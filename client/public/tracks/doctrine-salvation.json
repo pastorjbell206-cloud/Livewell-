@@ -1,0 +1,644 @@
+{
+  "slug": "doctrine-salvation",
+  "title": "The doctrine of salvation",
+  "for": "I want to understand how God saves",
+  "subtitle": "Eleven sessions on how God saves, from the image and the fall through grace, election, new birth, justification, adoption and holiness, to explaining grace to someone who thinks they must earn it.",
+  "intro": [
+    "The church has a name for the doctrine of how God saves: soteriology. These sessions take it a piece at a time, from what was lost in the fall to what is given in Christ, and each one asks you to do four things: say the doctrine in your own words, find where it comes from in Scripture, see why the church has held it, and explain it simply to someone else.",
+    "Salvation by grace, through the cross, as God's own act, is confessed plainly here, because every great tradition confesses it. How election works, how the new birth relates to faith and baptism, and whether a believer can fall away are questions that divide faithful churches, and each view is given in its own strongest voice and left open. The author is a Baptist pastor and says so where it helps, without arguing for it."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The doctrine of salvation. The group suits Christians who want to understand what they believe about how God saves and why, and it welcomes anyone from outside the faith who wants to hear the doctrine from the inside. The leader's task is to keep the group in Scripture, to confess plainly what the creeds and every great tradition confess, and to give room where faithful churches differ.",
+      "Each person reads the session, opens its page and does what it asks before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week or once a fortnight, for eleven meetings, and keep the end time you promised. The doctrine pages are long, so say at the start that no one needs to read every word, only enough to bring one thing they noticed and one question. A leader doesn't need to be a theologian. A leader needs to have done the reading and to be willing to say that they don't know."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open in front of everyone and paper for notes. Say at the first meeting that anyone may pass on any question, that the group will disagree about some things and that this is allowed, and that no one has to pray aloud. If the group includes people from different churches, name that as a gift: the sessions on election, new birth and perseverance are richer with more than one tradition in the room. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the verse aloud, and the passage around it, while the others follow.",
+          "Thirty-five minutes: the three questions to talk over, in order. Ask where each answer is found, in Scripture or on the page.",
+          "Ten minutes: each person states the session's doctrine in a sentence of their own, as if to a friend.",
+          "Five minutes: the prayer prompt, in the group's own words.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "First ask what order the question is. Salvation by grace, through Christ's death and resurrection, as God's own work, is first-order, and the sessions say so plainly. How God's choosing relates to human choosing, whether new birth comes before faith, how baptism relates to new birth, and whether a believer can fall away are second-order. Faithful churches divide over them, and the group should leave them open.",
+          "Let each view be stated in a form its own defenders would accept before anyone argues against it. A good test is whether a Calvinist and a Wesleyan in the room would each say their view was stated well. If no one knows the answer, write the question down and bring it back the next week."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "The doctrine of salvation touches tender places. A session on sin can land on someone who cannot stop punishing themselves, a session on election can frighten someone who fears they are not chosen, and a session on adoption can open the wound of a father who was absent or cruel. When the study touches someone's life, stop and listen. Thank them for saying it, don't explain their pain for them, and don't hurry back to the outline. Speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: guilt or fear that will not let them rest for weeks, a conscience that keeps checking whether they have really believed, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Made in God's image, and fallen",
+      "minutes": 10,
+      "teaching": [
+        "Salvation means rescue, and rescue only makes sense once you know what was lost. The Bible's account of human beings begins high. Before anything goes wrong, God makes man and woman in his image and gives them the world to keep, and the psalmist marvels at it: “You made him a little lower than the angels; You crowned him with glory and honor” (Psalm 8:5). That dignity is the first fact about you, older than anything you've done. A doctrine of salvation that starts with what went wrong instead of with the image always ends up too small, because it forgets what God is restoring. He isn't salvaging spare parts. He is bringing home a son or a daughter.",
+        "Genesis 3 tells how that glory was bent. The first couple listen to a voice that questions God's goodness, reach for what was not given, and then hide. Trust is lost in every direction: with God, with each other, even with the ground. Yet the first thing God says after the fall is a question, not a sentence: “Where are you?” (Genesis 3:9). The church has long read that as the first sign of what salvation will be. God comes looking. Christians differ on how to read the garden, but they confess together that humanity was made good and is now fallen, and that the image is defaced, not erased."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Humanity, in the Study Bible",
+        "href": "/study/bible/doctrines/humanity",
+        "why": "The Study Bible's doctrine study of what a human being is, traced through both Testaments and through the church's history, with the places Christians differ."
+      },
+      "also": [
+        {
+          "kind": "theology",
+          "label": "What is a human being?",
+          "href": "/theology/doctrine/anthropology",
+          "why": "Body and soul and the image of God, with each serious Christian view stated by its own best defenders."
+        },
+        {
+          "kind": "story",
+          "label": "The fall, in the Bible's story",
+          "href": "/study/bible/story/fall",
+          "why": "Where Genesis 3 sits in the whole story, so you can see the problem the rest of the Bible sets out to answer."
+        },
+        {
+          "kind": "chapter",
+          "label": "Genesis 3, passage by passage",
+          "href": "/study/bible/genesis/3#plain",
+          "why": "The chapter itself with plain notes, so you can read the turn from trust to hiding slowly, verse by verse."
+        }
+      ],
+      "question": "What would change in how you see yourself if your dignity is older than your failures?",
+      "do": "Read Genesis 1:26-31 and Genesis 3:1-13 in one sitting. Write down what God gives in the first passage and what is lost in the second, then say in one sentence what salvation would have to restore.",
+      "verse": {
+        "ref": "Psalm 8:4-5",
+        "text": "what is man that You are mindful of him, or the son of man that You care for him? You made him a little lower than the angels; You crowned him with glory and honor."
+      },
+      "group": {
+        "open": "When you meet someone for the first time, what do you notice first about them?",
+        "discuss": [
+          "How would you explain to a friend, in two sentences, what it means that every person is made in God's image?",
+          "In Genesis 3, what happens to trust between God and the couple, between the man and the woman, and with the ground?",
+          "Why does it matter that God's first word after the fall is a question?"
+        ],
+        "pray": "Give thanks for the dignity God gave every person in the room, and pray for someone whose dignity the world has forgotten."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Sin and how far it reaches",
+      "minutes": 10,
+      "teaching": [
+        "Sin in Scripture is more than a list of wrong acts. It is a condition before it is a deed, a heart turned in on itself, and its reach is total in the old sense of that word: not that people are as bad as they could be, but that no part of them is untouched, mind, will, desire and body alike. Paul traces the condition to its source: “Therefore, just as sin entered the world through one man, and death through sin, so also death was passed on to all men, because all sinned” (Romans 5:12). The question the church has argued over for sixteen centuries is what exactly passed on from Adam, and how.",
+        "Augustine, followed by much of the Western church, held that Adam's children inherit both a corrupted nature and a share in his guilt, and Reformed theology added that Adam stood for humanity as Christ stands for his people. Wesleyans hold the same inherited corruption and stress the grace that reaches every person before they seek it. The Orthodox speak of ancestral sin: we inherit mortality and a bent toward sin, but not Adam's personal guilt. Many Baptists confess that we inherit a nature inclined toward sin and become guilty when we are able to choose and do sin. What every tradition rejects is the teaching of Pelagius, that we begin neutral and can choose the good by our own strength."
+      ],
+      "open": {
+        "kind": "theology",
+        "label": "What is original sin? Three Christian traditions",
+        "href": "/theology/doctrine/sin",
+        "why": "Original sin and how far the damage reaches, with three faithful traditions each given its own strongest voice."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Romans 5, passage by passage",
+          "href": "/study/bible/romans/5#plain",
+          "why": "The chapter the whole debate turns on, where Paul sets Adam and Christ side by side."
+        },
+        {
+          "kind": "film",
+          "label": "What sin is",
+          "href": "/study/explorer/watch/what-sin-is",
+          "why": "A short film on sin as the Bible tells it, plain enough to show someone who has never thought about the word."
+        },
+        {
+          "kind": "life",
+          "label": "Shame and the hiding self",
+          "href": "/life/shame-and-the-hiding-self",
+          "why": "Where the doctrine meets a Tuesday: how shame makes people hide, and what Scripture offers in its place."
+        }
+      ],
+      "question": "Which is harder for you to believe: that sin reaches every part of you, or that it is not the deepest thing about you?",
+      "do": "Read Romans 5:12-21 slowly. Make two columns, one for what came through Adam and one for what came through Christ, and notice which column Paul says is greater.",
+      "verse": {
+        "ref": "Romans 5:19",
+        "text": "For just as through the disobedience of the one man the many were made sinners, so also through the obedience of the one man the many will be made righteous."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When something goes wrong in a family or a workplace, how far do its effects usually reach?",
+        "discuss": [
+          "How would you state the doctrine of original sin to a friend in your own words, without any technical terms?",
+          "What is the strongest point in the Augustinian view, and what is the strongest point in the Orthodox view of ancestral sin?",
+          "Why did the whole church reject Pelagius, and where do you still hear his idea today?"
+        ],
+        "pray": "Confess together that sin reaches further than any of us likes to admit, and give thanks that Christ's obedience reaches further still."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Grace",
+      "minutes": 10,
+      "teaching": [
+        "Grace is the hinge of the whole doctrine of salvation. It means God's favor toward people who have no claim on it, and in the New Testament it is never a vague mood. It is God himself acting in kindness. Paul refuses to let it be mixed with wages: “And if it is by grace, then it is no longer by works. Otherwise, grace would no longer be grace” (Romans 11:6). The argument between Augustine and Pelagius early in the fifth century was finally an argument about that verse. Pelagius thought of grace as help for people already able to obey. Augustine, who knew his own will had been captive, insisted that grace is rescue.",
+        "Theologians distinguish kinds of grace, and the distinctions help. Common grace is the goodness God shows everyone: rain, beauty, conscience, the restraint of evil. Saving grace is his work of bringing people to himself. Wesleyans speak of prevenient grace, grace that goes before, freeing every person enough to respond. Catholic theology speaks of grace given through the sacraments that heals and raises human nature. Reformed theology speaks of grace that is effectual, that brings and does not only invite. They differ on how grace works. They agree on where it comes from: “For the grace of God has appeared, bringing salvation to everyone” (Titus 2:11). No tradition teaches that anyone saves themselves."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Salvation, in the Study Bible",
+        "href": "/study/bible/doctrines/salvation",
+        "why": "The Study Bible's doctrine study of salvation as God's rescue, traced through both Testaments, with the church's history and where traditions differ."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Ephesians 2, passage by passage",
+          "href": "/study/bible/ephesians/2#plain",
+          "why": "Paul's fullest short statement of grace, from what we were to what God made us for, with plain notes."
+        },
+        {
+          "kind": "film",
+          "label": "Grace",
+          "href": "/study/explorer/watch/grace",
+          "why": "A short film on grace through the Bible's story, plain enough to watch with someone who has never heard the word used in church."
+        },
+        {
+          "kind": "history",
+          "label": "The Fathers at work",
+          "href": "/theology/history/the-fathers-at-work",
+          "why": "The church history lesson that tells the quarrel between Augustine and Pelagius and why the church came down where it did."
+        }
+      ],
+      "question": "Where do you find it hardest to receive something you did not earn, from God or from anyone else?",
+      "do": "Read Ephesians 2:1-10. Underline what we were, circle what God did, and write one sentence on why the good works of verse 10 come after verse 9 and not before it.",
+      "verse": {
+        "ref": "Romans 11:6",
+        "text": "And if it is by grace, then it is no longer by works. Otherwise, grace would no longer be grace."
+      },
+      "group": {
+        "open": "What is the best gift you have ever been given that you could never have paid for?",
+        "discuss": [
+          "How would you define grace in one sentence to someone who has never heard the word used in church?",
+          "What did Pelagius and Augustine each believe about grace, and why does the difference still matter?",
+          "Prevenient grace, sacramental grace, effectual grace: what is each tradition trying to protect?"
+        ],
+        "pray": "Give thanks for the grace that found each person here, and pray for anyone still trying to pay for what God gives."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Election and predestination",
+      "minutes": 10,
+      "teaching": [
+        "Scripture speaks plainly of God choosing. Paul writes that God “chose us in Him before the foundation of the world” (Ephesians 1:4) and that “it does not depend on man’s desire or effort, but on God’s mercy” (Romans 9:16). The same Scriptures say that God “wants everyone to be saved and to come to the knowledge of the truth” (1 Timothy 2:4), and they call every hearer to repent and believe. Every tradition has to hold both, and the great systems are different ways of holding them. This is a second-order question. Faithful churches divide over it, the creeds don't settle it, and it should be studied with humility on every side.",
+        "The Reformed view, confessed at the Synod of Dort in 1618 and 1619, holds that God chose some unconditionally, out of mercy alone, and that his grace will surely bring them home; its strength is that salvation stays wholly God's gift. The Arminian view, from the Remonstrants of 1610 and later John Wesley, holds that God chose in Christ those he foresaw would believe, and that grace enables everyone to respond; its strength is that God's love is universal and the response real. Lutherans confess election to salvation but will not reason from it to a decree of damnation. Molinists appeal to God's knowledge of what every free creature would do. Karl Barth taught that Christ is the chosen one, and we are chosen in him. Baptists have stood on more than one of these sides."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Election, in the Study Bible",
+        "href": "/study/bible/doctrines/election",
+        "why": "The Study Bible's doctrine study of God's choosing, from Israel to the church, with each tradition's reading set out and its key texts."
+      },
+      "also": [
+        {
+          "kind": "creed",
+          "label": "The Canons of Dort, summarized",
+          "href": "/resources/creeds/canons-of-dort-summary",
+          "why": "The Reformed churches' answer to the Remonstrants, in summary, so you can read the Reformed view in its own confession."
+        },
+        {
+          "kind": "theology",
+          "label": "God's sovereignty and human freedom",
+          "href": "/theology/doctrine/sovereignty-and-freedom",
+          "why": "The theology page that sets the main views of God's rule and human choice side by side, each in its own voice."
+        },
+        {
+          "kind": "chapter",
+          "label": "Romans 9, passage by passage",
+          "href": "/study/bible/romans/9#plain",
+          "why": "The hardest chapter on the subject, with plain notes on how each side reads it."
+        }
+      ],
+      "question": "When you read that God chose, does it sound to you more like comfort or like threat, and why?",
+      "do": "Read Romans 9 and then Romans 10:9-13 in one sitting. Write down how Paul holds God's choosing and the open invitation together without explaining either one away.",
+      "verse": {
+        "ref": "Ephesians 1:4",
+        "text": "For He chose us in Him before the foundation of the world to be holy and blameless in His presence."
+      },
+      "care": [
+        "If you are afraid that you are not chosen, hear the invitation of Jesus: “the one who comes to Me I will never drive away” (John 6:37). That fear is not usually the mark of someone God has turned away. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever been chosen for something you did not expect to be chosen for?",
+        "discuss": [
+          "How would you state the Reformed view and the Arminian view so that someone who holds each would say you got it right?",
+          "Which texts does each side find hardest to explain, and how does it try?",
+          "Whatever your view, how should election shape the way a church prays for everyone and preaches to everyone?"
+        ],
+        "pray": "Give thanks that God's choosing is an act of love, and pray for brothers and sisters who read these texts differently from you."
+      }
+    },
+    {
+      "n": 5,
+      "title": "The call and the new birth",
+      "minutes": 10,
+      "teaching": [
+        "The gospel goes out to everyone, and theologians call that the outward or general call: the invitation preached to all, and meant sincerely by God. But Jesus told Nicodemus, a teacher of Israel, something no teacher can do for himself: “Truly, truly, I tell you, no one can see the kingdom of God unless he is born again” (John 3:3). The new birth, or regeneration, is the Spirit's work of giving a person new life, the new heart Ezekiel promised in place of a heart of stone. Birth is a good picture because no one arranges their own. You can hear a call, but life has to be given.",
+        "Christians differ on how the call and the new birth fit together. Reformed theology teaches an effectual call: the Spirit gives new life, and the person, made alive, freely believes, so new birth comes logically before faith. Wesleyans hold that prevenient grace enables a response that may be refused, and that new birth follows faith. Catholic, Orthodox and Lutheran churches join the new birth to baptism, where God acts through water and the word. Baptists, the author's own church among them, hold that the Spirit gives new birth through the word heard and believed, and that baptism follows as its sign. All agree it is God's work: “The wind blows where it wishes” (John 3:8)."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Regeneration, in the Study Bible",
+        "href": "/study/bible/doctrines/regeneration",
+        "why": "The Study Bible's doctrine study of the new birth, from Ezekiel's new heart to John 3 and the letters, with where the traditions part."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "John 3, passage by passage",
+          "href": "/study/bible/john/3#plain",
+          "why": "Jesus and Nicodemus at night, with plain notes on water, Spirit and what it means to be born from above."
+        },
+        {
+          "kind": "film",
+          "label": "How salvation works",
+          "href": "/study/explorer/watch/how-salvation-works",
+          "why": "A short film that sets the parts of salvation in order, useful for seeing where new birth sits among them."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Union with Christ, in the Study Bible",
+          "href": "/study/bible/doctrines/union",
+          "why": "The doctrine many teachers call the center of salvation: everything God gives, he gives in Christ, and new birth joins a person to him."
+        }
+      ],
+      "question": "If the new birth is God's work, what does that change about how you pray for someone who does not believe?",
+      "do": "Read John 3:1-21. Write down every question Nicodemus asks and every answer Jesus gives, then put the new birth into one sentence of your own.",
+      "verse": {
+        "ref": "Ezekiel 36:26",
+        "text": "I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh."
+      },
+      "group": {
+        "open": "What do you remember hearing about being born again, and where did you hear it?",
+        "discuss": [
+          "How would you explain the difference between hearing the gospel and being born again to a twelve-year-old?",
+          "Why does the Reformed tradition put new birth before faith, and why do Wesleyans put faith first?",
+          "How do churches that join new birth to baptism read John 3:5, and how do Baptists read it?"
+        ],
+        "pray": "Pray by name for people you love who have heard the call but do not yet believe, asking the Spirit to give them life."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Repentance and faith",
+      "minutes": 10,
+      "teaching": [
+        "When the new birth shows itself, it looks like two movements that are really one turning. Repentance turns away from sin; faith turns toward Christ. Paul summed up his preaching that way: “repentance to God and faith in our Lord Jesus Christ” (Acts 20:21). The New Testament word for repentance means a change of mind, but it doesn't stay in the mind. It reaches desire and action, and it is different from regret. Paul draws the line sharply: “Godly sorrow brings repentance that leads to salvation without regret, but worldly sorrow brings death” (2 Corinthians 7:10). Worldly sorrow grieves at being caught. Godly sorrow grieves at having wronged someone you love, and it turns home.",
+        "The older Protestant teachers described faith as three strands: knowing what the gospel says, agreeing that it is true, and trusting Christ himself with your whole weight. The first two without the third are not yet saving faith; James observes that even the demons believe and shudder. Christians have argued about which comes first, repentance or faith, and about how much a new believer must understand. Most traditions answer that they arrive together, and that both are gifts as well as acts: God grants repentance, and faith receives what he gives. Neither earns anything. A drowning man who grabs a rope has not rescued himself, though he did grab it."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Repentance, in the Study Bible",
+        "href": "/study/bible/doctrines/repentance",
+        "why": "The Study Bible's doctrine study of turning to God, from the prophets' call to return to the preaching of the apostles."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Faith",
+          "href": "/study/explorer/watch/faith",
+          "why": "A short film on faith as trust in a person, not a feeling or a leap in the dark, made plain enough to share."
+        },
+        {
+          "kind": "chapter",
+          "label": "Luke 15, passage by passage",
+          "href": "/study/bible/luke/15#plain",
+          "why": "Three stories of the lost and found, ending with a son who turns home and a father who runs."
+        },
+        {
+          "kind": "howto",
+          "label": "How to confess sin and walk in repentance",
+          "href": "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance",
+          "why": "The practical guide to repentance as a habit of the Christian life and not only its first step."
+        }
+      ],
+      "question": "What is the difference, in your own life, between being sorry you were caught and being sorry you wronged someone?",
+      "do": "Read Luke 15:11-32. Mark the moment the younger son turns and the moment the father runs, and write down which of the two the story spends longer on.",
+      "verse": {
+        "ref": "Acts 20:21",
+        "text": "testifying to Jews and Greeks alike about repentance to God and faith in our Lord Jesus Christ."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Can you remember a time someone apologized to you in a way that rang true? What made it ring true?",
+        "discuss": [
+          "How would you explain repentance and faith to a friend as one turning rather than two separate steps?",
+          "Knowing, agreeing and trusting: why does saving faith need all three, and which do people most often leave out?",
+          "What does the father's running in Luke 15 say about how God receives someone who turns?"
+        ],
+        "pray": "Name before God, silently, one thing to turn from, and give thanks that he runs to meet those who come home."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Justification",
+      "minutes": 10,
+      "teaching": [
+        "Justification is God's verdict that a sinner is right with him. The Reformation's case runs like this. God justifies “the wicked” (Romans 4:5), not the improved, and he does it by counting Christ's righteousness to the one who trusts him, as Abraham's faith was credited to him as righteousness. Justification is a declaration, complete at once, resting on Christ's work outside us rather than on our progress within. Later Lutherans called it the article on which the church stands or falls, and the Augsburg Confession of 1530 set it out in its fourth article. Good works follow as fruit, never as the root. The author stands where the Reformation stood, as Baptists have.",
+        "The Catholic answer, set out at the Council of Trent in 1547, does not say that people earn grace; Trent condemned that. It holds that justification includes the renewal of the inner person, grace poured into the heart, so that God's verdict is true of the one he makes righteous, and it points to James: “a man is justified by his deeds and not by faith alone” (James 2:24). The Orthodox seldom use courtroom language and speak of salvation as healing and union with God. In 1999 Lutherans and Catholics signed a joint declaration confessing that we are accepted by God by grace alone, through faith in Christ's saving work and not because of any merit, while naming the differences that remain. Other churches have since affirmed it."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Justification, in the Study Bible",
+        "href": "/study/bible/doctrines/justification",
+        "why": "God's verdict that the sinner is right with him, traced through Scripture and through the debates of the Reformation, with each side stated fairly."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "James 2, passage by passage",
+          "href": "/study/bible/james/2#plain",
+          "why": "The chapter every account of justification has to answer, with plain notes on how James and Paul use the same words."
+        },
+        {
+          "kind": "creed",
+          "label": "The Augsburg Confession, summarized",
+          "href": "/resources/creeds/augsburg-confession-summary",
+          "why": "The Lutheran confession of 1530, where the Reformation's teaching on justification by faith was first set out for an emperor."
+        },
+        {
+          "kind": "history",
+          "label": "The Counter-Reformation",
+          "href": "/theology/history/the-counter-reformation",
+          "why": "The church history lesson on the Council of Trent and the Catholic answer to the Reformers, told fairly."
+        }
+      ],
+      "question": "Is it harder for you to believe that God declares you righteous, or that he also intends to make you so?",
+      "do": "Read Romans 4:1-8 and James 2:14-26 side by side. Write down what each writer means by faith and by works, and how each uses Abraham.",
+      "verse": {
+        "ref": "Romans 4:5",
+        "text": "However, to the one who does not work, but believes in Him who justifies the wicked, his faith is credited as righteousness."
+      },
+      "care": [
+        "If you are a person whose conscience never rests, who keeps checking whether you have really believed, hear John's words: “Even if our hearts condemn us, God is greater than our hearts, and He knows all things” (1 John 3:20). Such fear can be part of anxiety or a habit of the mind, and that is not a failure of faith. Talk with a pastor or a friend you trust, and if the fear will not let you rest, a counsellor or a doctor can help too. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever been cleared of something you were blamed for? What did it feel like?",
+        "discuss": [
+          "How would you explain justification to someone who has never been to church, using the picture of a courtroom?",
+          "State the Catholic understanding of justification so that a Catholic friend would recognize it. What is it trying to protect?",
+          "How do Paul and James each use the word justified, and how can both be true?"
+        ],
+        "pray": "Give thanks for the verdict Christ won, and pray for Christians of other traditions who confess the same grace in different words."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Adoption",
+      "minutes": 10,
+      "teaching": [
+        "Justification answers the courtroom; adoption answers the household. A judge can acquit a defendant and still send him home alone. God takes those he justifies into his family. Paul says the Son came “to redeem those under the law, that we might receive our adoption as sons” (Galatians 4:5), and he borrows a word from the Roman world, where an adopted heir took the family's name and the full standing of a son. Paul uses it of every believer, daughters as much as sons, because every one is made an heir. The Anglican theologian James Packer, in Knowing God, argued that adoption is the highest privilege the gospel offers, higher even than justification.",
+        "Adoption changes how a Christian lives, and most of all how one prays. The Spirit teaches believers to call God by the name Jesus used, Abba, Father, and Paul sets that against a spirit of slavery that falls back into fear. A slave obeys to stay in the house; a child obeys because the house is home. This is where the doctrine of salvation touches some of the deepest wounds people carry. Many have had fathers who were absent, cold or cruel, and the word Father can feel like a door they cannot walk through. Scripture doesn't ask them to picture the father they had. It names the Father they were made for, the one who calls them “children of God” (1 John 3:1)."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Galatians 4, passage by passage",
+        "href": "/study/bible/galatians/4#plain",
+        "why": "Paul's picture of the heir who was treated like a slave until the Father sent his Son and then his Spirit, with plain notes."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "Union with Christ, in the Study Bible",
+          "href": "/study/bible/doctrines/union",
+          "why": "Adoption is one gift of being joined to Christ: those in the Son share the Son's standing with the Father."
+        },
+        {
+          "kind": "life",
+          "label": "Identity and worth",
+          "href": "/life/identity-and-worth",
+          "why": "Where adoption meets ordinary life: what it means to know who you are when your worth is given and not earned."
+        },
+        {
+          "kind": "help",
+          "label": "Find Help: growing up without a father",
+          "href": "/help/fatherless",
+          "why": "For anyone for whom the word Father is hard, a page that starts from the wound and points to real help."
+        }
+      ],
+      "question": "What would change in how you pray if you believed you are a child in the house and not a servant earning your place?",
+      "do": "Read Romans 8:12-17 and Galatians 4:1-7. Write down every word in them that belongs to a family, then pray the Lord's Prayer slowly, stopping at its first words.",
+      "verse": {
+        "ref": "1 John 3:1",
+        "text": "Behold what manner of love the Father has given to us, that we should be called children of God. And that is what we are! The reason the world does not know us is that it did not know Him."
+      },
+      "care": [
+        "What if ‘Father’ is a hard word for you? Some readers had a father who was absent, or who hurt them. If your own father was not there, or did not show you love, this verse is not asking you to picture him. It is telling you what you should have been shown, and what God is. God's love as a Father is not limited by the father you had. A psalm says, “Though my father and mother forsake me, the LORD will receive me” (Psalm 27:10). If what happened to you still weighs on you, please talk with someone you trust, a pastor, a friend or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What makes a house feel like home rather than a place you stay?",
+        "discuss": [
+          "How would you explain the difference between justification and adoption to someone, using two pictures?",
+          "Why might Packer call adoption higher than justification, and do you agree with him?",
+          "How can a church speak of God as Father in a way that helps rather than wounds those whose fathers failed them?"
+        ],
+        "pray": "Give thanks to the Father who adopts, and pray for anyone, in the group or beyond it, for whom the word Father is hard."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Sanctification",
+      "minutes": 10,
+      "teaching": [
+        "Justification is a verdict given once; sanctification is a life made holy over time. The two must never be confused and never separated. If they are confused, a believer's standing with God rises and falls with this week's progress, and assurance dies. If they are separated, grace becomes permission, and the gospel loses its power to change anyone. Paul holds both in one breath: “continue to work out your salvation with fear and trembling. For it is God who works in you to will and to act on behalf of His good purpose” (Philippians 2:12-13). You work out what God works in. The effort is real, but it isn't the source.",
+        "Traditions describe the road differently. The Reformed and most Baptists teach progressive sanctification: real growth, never complete in this life, a fight with sin to the end. Wesleyans teach that God can bring a believer in this life to entire sanctification, a heart made perfect in love, though not free from mistakes or temptation. The Keswick movement, from the 1870s, spoke of a deeper surrender that brings rest and victory. The Orthodox speak of theosis, the long healing in which believers become “partakers of the divine nature” (2 Peter 1:4). Each guards something: honesty about sin, hope of real change, rest in Christ, union with God. Most agree that holiness grows by ordinary means: Scripture, prayer, the Lord's table, the church and time."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Sanctification, in the Study Bible",
+        "href": "/study/bible/doctrines/sanctification",
+        "why": "The Study Bible's doctrine study of how God makes his people holy, with the main traditions' accounts and the texts each leans on."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Philippians 2, passage by passage",
+          "href": "/study/bible/philippians/2#plain",
+          "why": "The chapter that holds our working and God's working together, set beside the humility of Christ."
+        },
+        {
+          "kind": "howto",
+          "label": "How to build a rule of life",
+          "href": "/how-tos/sf-how-to-build-a-rule-of-life",
+          "why": "A practical guide to the ordinary rhythms through which the church has always expected holiness to grow."
+        },
+        {
+          "kind": "life",
+          "label": "Desire and temptation",
+          "href": "/life/desire-and-temptation",
+          "why": "Where sanctification is actually fought: the everyday pull of desire, and what Scripture says about resisting it."
+        }
+      ],
+      "question": "Where do you see real change in yourself over the last five years, and where do you still see none?",
+      "do": "Choose one ordinary means of grace you have neglected, whether Scripture, prayer, the Lord's Supper or an honest friendship, and keep it every day this week. At the end, write down what it was like.",
+      "verse": {
+        "ref": "2 Corinthians 3:18",
+        "text": "And we, who with unveiled faces all reflect the glory of the Lord, are being transformed into His image with intensifying glory, which comes from the Lord, who is the Spirit."
+      },
+      "care": [
+        "If you are worn down by failing again and again, or caught in an addiction you cannot break, you are not alone, and you are not beyond help. Paul's cry was answered with thanks. Please talk to someone: a doctor, a pastor, a counsellor, or a group that helps people with what you are facing. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What is something you got better at slowly, over years rather than weeks?",
+        "discuss": [
+          "How would you explain the difference between justification and sanctification to a new Christian in two sentences?",
+          "What is each tradition's account of sanctification trying to guard, and what danger does each face?",
+          "Paul says both work out your salvation and God works in you. What happens to a church that drops either half?"
+        ],
+        "pray": "Pray for patience with your own slow growth and with one another's, and ask God to finish what he began in each of you."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Perseverance and assurance",
+      "minutes": 10,
+      "teaching": [
+        "Can a true believer fall away, and can a believer know they are saved? These are two questions, and they are often confused. On the first, the Reformed tradition teaches the perseverance of the saints: those God truly gives new life he keeps to the end, as Jesus says of his sheep, “No one can snatch them out of My hand” (John 10:28). Many Baptists hold it as eternal security, and the Baptist Faith and Message confesses that all true believers endure to the end. Wesleyans, Arminians and Lutherans hold that a real believer can fall away through persistent unbelief, and read the warnings of Hebrews 6 as written to real Christians. Catholic teaching holds that grace can be lost through mortal sin and restored through penance.",
+        "Each side reads the other's texts with care. Those who hold perseverance read the warnings as one of the means God uses to keep his people, or as aimed at people who never truly believed. Those who hold that a believer can fall read the promises as sure for all who keep trusting. Assurance is a different matter. John wrote his letter “so that you may know that you have eternal life” (1 John 5:13), and every tradition offers grounds for it: the promise of God, the finished work of Christ, the witness of the Spirit, and the fruit of a changed life. Assurance rests first on Christ, not on the strength of your grip. Anxious consciences need to hear that most of all."
+      ],
+      "open": {
+        "kind": "doctrine",
+        "label": "Perseverance, in the Study Bible",
+        "href": "/study/bible/doctrines/perseverance",
+        "why": "The Study Bible's doctrine study of whether and how believers are kept to the end, with every main view and the texts it rests on."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Can you lose your salvation?",
+          "href": "/answers/can-you-lose-your-salvation",
+          "why": "The Honest Answer to the question many believers ask quietly, with the main views stated fairly."
+        },
+        {
+          "kind": "essay",
+          "label": "Can a Christian lose their salvation?",
+          "href": "/writing/can-a-christian-lose-their-salvation",
+          "why": "The longer essay on the same question, for a reader who wants the history and the hardest texts."
+        },
+        {
+          "kind": "chapter",
+          "label": "Hebrews 6, passage by passage",
+          "href": "/study/bible/hebrews/6#plain",
+          "why": "The warning passage every view must read honestly, with plain notes on how each tradition takes it."
+        }
+      ],
+      "question": "When you doubt whether you belong to God, where do you look first: to your own heart, or to Christ's promise?",
+      "do": "Read Hebrews 6:4-12 and John 10:22-30. Write the strongest reading of each as someone who holds the other view would give it, then one sentence on what both passages promise.",
+      "verse": {
+        "ref": "John 10:28",
+        "text": "I give them eternal life, and they will never perish. No one can snatch them out of My hand."
+      },
+      "care": [
+        "If you are afraid that you have fallen away from God, that fear is not usually the mark of someone who has. Read Romans 8:38-39 slowly. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor can help too, and the Find Help page on this site lists places to turn.",
+        "If you are a person whose conscience never rests, who keeps checking whether you have really believed, hear John's words: “Even if our hearts condemn us, God is greater than our hearts, and He knows all things” (1 John 3:20). Such fear can be part of anxiety or a habit of the mind, and that is not a failure of faith. Talk with a pastor or a friend you trust, and if the fear will not let you rest, a counsellor or a doctor can help too. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What helps you trust a promise someone has made to you?",
+        "discuss": [
+          "How would you explain to a friend the difference between perseverance and assurance?",
+          "State the strongest case for eternal security and the strongest case that a believer can fall away. Which texts does each lean on?",
+          "How should a pastor answer someone who is afraid they have lost their salvation?"
+        ],
+        "pray": "Pray for anyone whose conscience gives them no rest, and give thanks for the Shepherd who keeps his sheep."
+      }
+    },
+    {
+      "n": 11,
+      "title": "Explaining grace to someone who thinks they must earn it",
+      "minutes": 10,
+      "teaching": [
+        "Most people you meet already hold a doctrine of salvation, and it is usually some form of earning: be good enough, try hard enough, let the good outweigh the bad. It is the most natural religion in the world, and it sits in church pews as comfortably as anywhere. It also leaves people either proud or crushed, depending on how honest they are about themselves. Jesus told a story to people who trusted in their own righteousness. Two men went up to the temple to pray. One listed his achievements; the other could only ask for mercy. Jesus said of the second, “this man, rather than the Pharisee, went home justified” (Luke 18:14).",
+        "Explaining grace takes less cleverness than you might think. Start where the person is: ask what they think God wants, and listen. Concede what is true in their instinct, because God does care how we live, and holiness is real. Then draw the distinction that changes everything: obedience is the response to being received, not the price of it. A child doesn't earn a place in the family by doing the dishes. Tell your own story of being received, without polish. Borrow the pictures this track has given you, the courtroom, the family, the new birth, the gift, and let the person ask questions. Don't press for a decision or manufacture urgency. Grace pressed on someone stops sounding like grace, and the person who hears it offered freely may carry the question home for years."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The gospel in a minute",
+        "href": "/study/explorer/watch/gospel-in-a-minute",
+        "why": "The whole good news in one short film, a model of how much can be said simply and how little needs adding."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Luke 18, passage by passage",
+          "href": "/study/bible/luke/18#plain",
+          "why": "The Pharisee and the tax collector, with plain notes on who went home justified and why it shocked the first hearers."
+        },
+        {
+          "kind": "howto",
+          "label": "How to tell your story",
+          "href": "/how-tos/wn-how-to-tell-your-story",
+          "why": "A practical guide to telling how grace reached you, plainly and honestly, without making yourself the hero."
+        },
+        {
+          "kind": "track",
+          "label": "Next: The last things, in the tracks",
+          "href": "/tracks",
+          "why": "The next track in Theology in Depth is The last things: death, the return of Christ, the resurrection, judgment and the new creation."
+        }
+      ],
+      "question": "If a friend told you they hope they have been good enough for God, what would you say first?",
+      "do": "Write, in under a hundred words, how you would explain grace to someone who thinks they must earn it. Read it aloud to one person and ask what was unclear.",
+      "verse": {
+        "ref": "Luke 18:14",
+        "text": "I tell you, this man, rather than the Pharisee, went home justified. For everyone who exalts himself will be humbled, but the one who humbles himself will be exalted."
+      },
+      "group": {
+        "open": "Where did you first pick up the idea that God's love has to be earned?",
+        "discuss": [
+          "In pairs, let one person state the earning view at its strongest and the other explain grace. What helped, and what fell flat?",
+          "What is true in the instinct that God cares how we live, and how do you honor it without letting it become the price of acceptance?",
+          "Which picture of salvation from this track, the courtroom, the family, the new birth or the gift, would help your friends most, and why?"
+        ],
+        "pray": "Pray by name for one person who thinks they must earn God's favor, and ask for the patience and the words to explain grace well."
+      }
+    }
+  ]
+}
