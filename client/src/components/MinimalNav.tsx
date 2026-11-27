@@ -19,7 +19,7 @@
  * in full on first render.
  */
 import { Link, useLocation } from "wouter";
-import { useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import { Suspense, lazy, useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 import AppBack from "./AppBack";
 
@@ -38,6 +38,7 @@ import {
 import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
 import { SEARCH_SHORTCUTS } from "@/lib/siteNav";
 import Plate from "./art/Plate";
+import { ROOM_PICTURE } from "./nav/navPictures";
 import { DISCIPLINES } from "@/pages/preview/disciplines";
 import { followHash } from "@/lib/followHash";
 import type { PassageMatch } from "@/lib/siteSearch";
@@ -67,6 +68,11 @@ const EXPLORE: Door = {
 };
 const BAR_DOORS: Door[] = [EXPLORE, ...BAR_DOOR_IDS.map((id) => DOORS.find((d) => d.id === id)).filter((d): d is Door => !!d)];
 const PLATE_OF = new Map(DISCIPLINES.map((d) => [`/explore/${d.id}`, d.plate]));
+/** The picture beside a room in a panel: the discipline's plate, the room's own, or its door's. */
+const pictureFor = (door: Door, room: CatalogEntry) => PLATE_OF.get(room.href) ?? ROOM_PICTURE[room.id] ?? door.plate;
+/** Essays opens a panel of the essay sections; they load with the panel (nav/EssaysWays). */
+const EssaysWays = lazy(() => import("./nav/EssaysWays"));
+const hasPanel = (door: Door) => door.rooms.length > 0 || door.id === "essays";
 
 /** A catalogue entry as a link: outbound in a new tab, in-app through wouter. */
 function EntryLink({
@@ -209,7 +215,7 @@ export default function MinimalNav() {
       e.preventDefault();
       if (openDoor) setOpenDoor(null);
       moveDoor(e.currentTarget, e.key === "ArrowRight" ? 1 : -1);
-    } else if (e.key === "ArrowDown" && door.rooms.length) {
+    } else if (e.key === "ArrowDown" && hasPanel(door)) {
       e.preventDefault();
       setOpenDoor(door.id);
       // The panel renders on the next pass; then its first room takes focus.
@@ -449,7 +455,7 @@ export default function MinimalNav() {
 
           <div ref={doorsRef} className="desktop-nav sn-doors">
             {BAR_DOORS.map((door, i) => {
-              if (!door.rooms.length) {
+              if (!hasPanel(door)) {
                 return (
                   <Link
                     key={door.id}
@@ -504,48 +510,35 @@ export default function MinimalNav() {
                   {open && (
                     <div
                       id={`sn-panel-${door.id}`}
-                      className={`sn-panel ${door === EXPLORE ? "sn-panel--explore" : panelSide(i)}`}
+                      className={`sn-panel sn-panel--pictures ${door === EXPLORE ? "sn-panel--explore" : panelSide(i)}`}
                       role="region"
                       aria-label={door.name}
                       onKeyDown={onPanelKey(door)}
                     >
-                      {door === EXPLORE ? (
-                        <ul className="sn-ways">
-                          {door.rooms.map((room) => (
+                      <ul className="sn-ways">
+                        {door.id === "essays" ? (
+                          <Suspense fallback={null}>
+                            <EssaysWays onNavigate={closeAll} />
+                          </Suspense>
+                        ) : (
+                          door.rooms.map((room) => (
                             <li key={room.id}>
-                              <Link href={room.href} className="sn-way" onClick={closeAll}>
+                              <EntryLink entry={room} className="sn-way" onNavigate={closeAll}>
                                 <span className="sn-way__art" aria-hidden="true">
-                                  <Plate name={PLATE_OF.get(room.href) ?? "compass"} decorative />
+                                  <Plate name={pictureFor(door, room)} decorative />
                                 </span>
-                                <span>
-                                  <span className="sn-room__name">{room.name}</span>
-                                  <span className="sn-room__line">{room.line}</span>
-                                </span>
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      ) : (
-                      <ul className="sn-rooms">
-                        {door.rooms.map((room) => {
-                          const Icon = ICONS[room.icon];
-                          return (
-                            <li key={room.id}>
-                              <EntryLink entry={room} className="sn-room" onNavigate={closeAll}>
-                                <Icon size={20} strokeWidth={ICON_STROKE} aria-hidden />
                                 <span>
                                   <span className="sn-room__name">{room.name}</span>
                                   <span className="sn-room__line">{room.line}</span>
                                 </span>
                               </EntryLink>
                             </li>
-                          );
-                        })}
+                          ))
+                        )}
                       </ul>
-                      )}
                       <div className="sn-foot">
                         <Link href={door.page.href} onClick={closeAll}>
-                          {door === EXPLORE ? EVERYTHING_ENTRY.name : `Everything in ${door.name}`}
+                          {door === EXPLORE ? EVERYTHING_ENTRY.name : door.id === "essays" ? "All the essays" : `Everything in ${door.name}`}
                         </Link>
                         <Link href={START_LINK.href} onClick={closeAll}>
                           {START_LINK.name}
@@ -635,7 +628,7 @@ export default function MinimalNav() {
                 {BAR_DOORS.filter((d) => d !== EXPLORE).map((door) => {
                   const DoorIcon = ICONS[door.icon];
                   const current = currentDoor === door.id ? " is-current" : "";
-                  if (!door.rooms.length) {
+                  if (!hasPanel(door)) {
                     return (
                       <li key={door.id}>
                         <Link href={door.page.href} className={`sn-sheet-door${current}`} onClick={closeAll}>
@@ -662,20 +655,25 @@ export default function MinimalNav() {
                       </button>
                       {open && (
                         <ul id={`sn-sheet-${door.id}`} className="sn-sheet-rooms">
-                          {door.rooms.map((room) => {
-                            const Icon = ICONS[room.icon];
-                            return (
+                          {door.id === "essays" ? (
+                            <Suspense fallback={null}>
+                              <EssaysWays onNavigate={closeAll} variant="sheet" />
+                            </Suspense>
+                          ) : (
+                            door.rooms.map((room) => (
                               <li key={room.id}>
                                 <EntryLink entry={room} className="sn-sheet-room" onNavigate={closeAll}>
-                                  <Icon size={18} strokeWidth={ICON_STROKE} aria-hidden />
+                                  <span className="sn-sheet-room__art" aria-hidden="true">
+                                    <Plate name={pictureFor(door, room)} decorative />
+                                  </span>
                                   {room.name}
                                 </EntryLink>
                               </li>
-                            );
-                          })}
+                            ))
+                          )}
                           <li>
                             <Link href={door.page.href} className="sn-sheet-room sn-sheet-room--all" onClick={closeAll}>
-                              Everything in {door.name}
+                              {door.id === "essays" ? "All the essays" : `Everything in ${door.name}`}
                             </Link>
                           </li>
                         </ul>

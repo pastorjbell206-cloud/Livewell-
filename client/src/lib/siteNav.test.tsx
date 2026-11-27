@@ -8,6 +8,7 @@
  * catalogue's own rules (counts, one name per address) are in
  * siteCatalog.test.ts.
  */
+import { liveSections, sectionHref } from "@/lib/shelf";
 import { DISCIPLINES } from "@/pages/preview/disciplines";
 import { describe, it, expect, vi, afterEach } from "vitest";
 import fs from "node:fs";
@@ -53,7 +54,7 @@ const internal = (href: string) => href.startsWith("/");
 
 const group = (title: string) => SITE_NAV_GROUPS.find((g) => g.title === title)!;
 /** The bar's doors (James, 2026-11-27, "Explore-led menu"): Explore, then five of the catalogue's seven. */
-const MENU_DOORS = ["Explore", "Bible", "Family", "Tools", "About"];
+const MENU_DOORS = ["Explore", "Bible", "Family", "Tools", "Essays", "About"];
 const BAR_DOOR_IDS = ["bible", "family", "tools", "essays", "about"];
 
 afterEach(() => {
@@ -109,7 +110,6 @@ describe("the header", () => {
     for (const name of MENU_DOORS) {
       expect(screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-expanded"), name).toBe("false");
     }
-    expect(screen.getByRole("link", { name: "Essays" }).getAttribute("href")).toBe("/writing");
   });
 
   it("opens Explore on the eight disciplines as pictures, then Everything on LiveWell and Start here", () => {
@@ -139,11 +139,24 @@ describe("the header", () => {
       for (const r of door.rooms) {
         const a = within(panel).getByRole("link", { name: new RegExp(r.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) });
         expect(a.textContent).toContain(r.line);
-        expect(a.querySelector("svg")).not.toBeNull();
+        // Every room carries its picture (the plate itself loads as the panel nears the screen).
+        expect(a.querySelector(".sn-way__art")).not.toBeNull();
       }
       fireEvent.click(button);
       expect(document.getElementById(`sn-panel-${door.id}`)).toBeNull();
     }
+  });
+
+  it("opens Essays on the shelf's sections as pictures, then All the essays and Start here", async () => {
+    renderWithProviders(<MinimalNav />);
+    const button = screen.getByRole("button", { name: /^Essays$/ });
+    fireEvent.click(button);
+    const panel = document.getElementById("sn-panel-essays")!;
+    const first = liveSections()[0];
+    expect((await within(panel).findByRole("link", { name: new RegExp(`^${first.name}`) })).getAttribute("href")).toBe(sectionHref(first));
+    const hrefs = within(panel).getAllByRole("link").map((a) => a.getAttribute("href"));
+    expect(hrefs).toEqual([...liveSections().map(sectionHref), "/writing", START_LINK.href]);
+    expect(within(panel).getByRole("link", { name: "All the essays" })).toBeTruthy();
   });
 
   it("keeps a door's panel open when a mouse hovers and then clicks it", () => {
@@ -201,7 +214,7 @@ describe("the header", () => {
       ["/study/bible/john/3", "Bible"],
       ["/answers", "Explore"],
       ["/plans", "Tools"],
-      ["/writing", ""],
+      ["/writing", "Essays"],
     ] as const;
     for (const [path, door] of cases) {
       window.history.pushState({}, "", path);
@@ -226,6 +239,7 @@ describe("the phone sheet", () => {
     expect(sheet.querySelectorAll(".sn-sheet-way__art")).toHaveLength(8);
     const doorNames = Array.from(sheet.querySelectorAll(".sn-sheet-door")).map((el) => el.textContent);
     expect(doorNames).toEqual(DOORS.filter((d) => BAR_DOOR_IDS.includes(d.id)).map((d) => d.name));
+    expect(sheet.querySelector(".sn-sheet-door")?.tagName).toBe("BUTTON");
     for (const [name, href] of [["Find Help", "/help"], ["My Library", "/my-library"], [EVERYTHING_ENTRY.name, "/explore"], ["Subscribe", "/subscribe"]]) {
       expect(within(sheet).getByRole("link", { name }).getAttribute("href"), name).toBe(href);
     }
