@@ -1,0 +1,241 @@
+{
+ "length": 251.11,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 11.44,
+   "lines": [
+    {
+     "text": "Rome ruled the Mediterranean for half a thousand years, then fell. Why didn't the church, tangled up in that empire, fall with it?",
+     "start": 2.6,
+     "end": 10.54
+    }
+   ]
+  },
+  {
+   "id": "fall",
+   "kicker": "AD 410",
+   "level": 0.3,
+   "start": 10.64,
+   "end": 31.22,
+   "lines": [
+    {
+     "text": "In 410 a Gothic army under Alaric sacked Rome. In Bethlehem, the old scholar Jerome wrote that his voice stuck in his throat.",
+     "start": 11.54,
+     "end": 19.9
+    },
+    {
+     "text": "In 476 the last western emperor, a boy, was quietly deposed, and no one bothered to appoint another. The church crossed the wreck intact.",
+     "start": 20.58,
+     "end": 30.32
+    }
+   ]
+  },
+  {
+   "id": "patrick",
+   "kicker": "The slave who returned",
+   "level": 0.4,
+   "start": 30.42,
+   "end": 60.08,
+   "lines": [
+    {
+     "text": "Irish raiders took Patrick from Roman Britain at about sixteen. In six years of slavery, his family's faith became his own.",
+     "start": 31.32,
+     "end": 38.82
+    },
+    {
+     "text": "He escaped. Then, around the middle of the fifth century, he went back to his captors, carrying the gospel.",
+     "start": 39.36,
+     "end": 45.72
+    },
+    {
+     "text": "His Confession is one of the oldest writings from any victim of the slave trade, and it forgives.",
+     "start": 46.4,
+     "end": 51.66
+    },
+    {
+     "text": "Ireland had never been Roman. Within a century, the converted were the converters, sailing to Iona and the continent.",
+     "start": 52.18,
+     "end": 59.18
+    }
+   ]
+  },
+  {
+   "id": "kings",
+   "kicker": "The kings",
+   "level": 0.5,
+   "start": 59.28,
+   "end": 87.04,
+   "lines": [
+    {
+     "text": "On the continent, faith came from the top. Around 496 Clovis, king of the Franks, was baptized, urged on by his Christian queen.",
+     "start": 60.18,
+     "end": 68.96
+    },
+    {
+     "text": "A chronicler says three thousand warriors followed him into the water. That's loyalty and politics, not three thousand changed hearts.",
+     "start": 69.62,
+     "end": 77.3
+    },
+    {
+     "text": "Paganism lingered for generations, yet their descendants became saints and scholars. Europe's conversion was shallow, and it deepened.",
+     "start": 77.94,
+     "end": 86.14
+    }
+   ]
+  },
+  {
+   "id": "gregory",
+   "kicker": "AD 597",
+   "level": 0.55,
+   "start": 86.24,
+   "end": 116.3,
+   "lines": [
+    {
+     "text": "In 590 a reluctant monk, Gregory, became pope. He fed starving Rome and still looked outward.",
+     "start": 87.14,
+     "end": 93.72
+    },
+    {
+     "text": "In 597 he sent another reluctant monk, named Augustine, to Kent.",
+     "start": 94.38,
+     "end": 98.92
+    },
+    {
+     "text": "He advised sparing the temples and removing only the idols, because a stubborn people climbs to God by steps, not leaps.",
+     "start": 99.5,
+     "end": 106.94
+    },
+    {
+     "text": "Within a century the English were sending missionaries back. Boniface felled the Germans' sacred oak, and was killed in 754.",
+     "start": 107.62,
+     "end": 115.4
+    }
+   ]
+  },
+  {
+   "id": "slavs",
+   "kicker": "The Slavs and the North",
+   "level": 0.65,
+   "start": 115.5,
+   "end": 145.66,
+   "lines": [
+    {
+     "text": "In the East, the gift was an alphabet. In 863 the brothers Cyril and Methodius gave the Slavs Scripture and worship in their own tongue.",
+     "start": 116.4,
+     "end": 125.16
+    },
+    {
+     "text": "Some objected that God could be worshiped properly only in Hebrew, Greek and Latin. Cyril answered that the rain of God falls on all alike.",
+     "start": 125.78,
+     "end": 134.06
+    },
+    {
+     "text": "In 988 Vladimir of Kyiv chose the faith of Constantinople, and the politics were real. By about 1000, even Iceland had chosen baptism.",
+     "start": 134.76,
+     "end": 144.76
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Carrying it on",
+   "level": 0.7,
+   "start": 144.86,
+   "end": 178.98,
+   "lines": [
+    {
+     "text": "Each tradition still carries this work, with its own emphasis.",
+     "start": 145.76,
+     "end": 149.16
+    },
+    {
+     "text": "Catholic teaching holds that the church is missionary by its nature, proclaiming Christ, planting the church, and expressing the faith in each culture's forms.",
+     "start": 149.8,
+     "end": 158.94
+    },
+    {
+     "text": "Orthodox churches point to the practice, from Cyril and Methodius onward, of putting Scripture and worship into local languages and raising up local clergy.",
+     "start": 159.28,
+     "end": 168.58
+    },
+    {
+     "text": "Many evangelical Protestants hold that the church's first task is to preach Christ crucified and risen, and call people to repentance and faith.",
+     "start": 169.28,
+     "end": 178.08
+    }
+   ]
+  },
+  {
+   "id": "reckoning",
+   "kicker": "The reckoning",
+   "level": 0.85,
+   "start": 178.18,
+   "end": 206.16,
+   "lines": [
+    {
+     "text": "This era carries shame too. Charlemagne fought the pagan Saxons for three decades, and his law made refusing baptism a capital crime.",
+     "start": 179.08,
+     "end": 187.94
+    },
+    {
+     "text": "At Verden in 782, thousands of Saxon prisoners were put to death.",
+     "start": 188.66,
+     "end": 193.26
+    },
+    {
+     "text": "His scholar Alcuin protested that a man can be dragged to the font but not to belief. He was right, and he was ignored.",
+     "start": 194.08,
+     "end": 201.52
+    },
+    {
+     "text": "The hands that forced the Saxons were baptized hands.",
+     "start": 202.2,
+     "end": 205.26
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 205.36,
+   "end": 245.013,
+   "lines": [
+    {
+     "text": "So what kind of victory was it? The faith outlived the empire, which suggests its life never came from empire.",
+     "start": 206.26,
+     "end": 212.78
+    },
+    {
+     "text": "It traveled best with its least armed carriers, slaves and monks and queens, and worst wherever it rode with power.",
+     "start": 213.44,
+     "end": 221.08
+    },
+    {
+     "text": "Long before, the prophet Zechariah heard this word.",
+     "start": 221.78,
+     "end": 224.7
+    },
+    {
+     "text": "So he said to me, \u201cThis is the word of the LORD to Zerubbabel: Not by might nor by power, but by My Spirit, says the LORD of Hosts.",
+     "start": 225.34,
+     "end": 234.56
+    },
+    {
+     "text": "By the year 1000 Europe was baptized, but not converted.",
+     "start": 235.28,
+     "end": 239.1
+    },
+    {
+     "text": "No king can order that. It has to be preached, person by person.",
+     "start": 239.66,
+     "end": 244.113
+    }
+   ]
+  }
+ ]
+}

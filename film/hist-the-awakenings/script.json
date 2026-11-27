@@ -1,0 +1,123 @@
+{
+  "title": "The Great Awakening",
+  "note": "Church history film for the lesson /theology/history/the-awakenings (lesson 12, \"The Great Awakening and Where Evangelicals Came From\"), written 2026-11-27. Every fact comes from client/public/history/essays/the-awakenings.json (see facts.md). The two readings of predestination are taken from LiveWell's doctrine study of election, client/public/bible/doctrines/election.json, and given equal length. Scripture is the Berean Standard Bible, copied from client/public/bible/text/john/3.json. Slavery is named plainly and no suffering is pictured.",
+  "page": "/theology/history/the-awakenings",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Where did evangelicals come from?",
+        "Much of the answer lies in about sixty years, beginning in the 1730s."
+      ]
+    },
+    {
+      "id": "chill",
+      "kicker": "After the wars",
+      "level": 0.3,
+      "lines": [
+        "When the religious wars burned out, much of Protestant Europe settled into a faith that was correct and cold.",
+        "The educated preferred a distant God who built the clock, wound it, and would never demand anything so indecent as a new birth.",
+        "But Jesus had demanded exactly that.",
+        "Jesus replied, “Truly, truly, I tell you, no one can see the kingdom of God unless he is born again.”"
+      ],
+      "scripture": {
+        "reference": "John 3:3",
+        "translation": "Berean Standard Bible",
+        "text": "Jesus replied, “Truly, truly, I tell you, no one can see the kingdom of God unless he is born again.”",
+        "spoken": true
+      }
+    },
+    {
+      "id": "seed",
+      "kicker": "The German seed",
+      "level": 0.4,
+      "lines": [
+        "Later believers called that age a sleep. The waking began in Germany with Pietism, whose small groups read Scripture, prayed, and held one another to holiness.",
+        "At Herrnhut, Moravian refugees kept a prayer watch around the clock for decades, and from 1732 they sent missionaries."
+      ]
+    },
+    {
+      "id": "storm",
+      "kicker": "A storm at sea",
+      "level": 0.45,
+      "lines": [
+        "In 1735 John Wesley, a young Anglican priest, sailed for Georgia with some of them.",
+        "In a storm, as the English passengers screamed, the Moravians sang psalms. Wesley found he was afraid to die.",
+        "In 1738, on Aldersgate Street, his heart was strangely warmed, as his journal puts it."
+      ]
+    },
+    {
+      "id": "northampton",
+      "kicker": "New England",
+      "level": 0.5,
+      "lines": [
+        "Across the ocean, in the winter of 1734, Jonathan Edwards's town of Northampton, Massachusetts, began to be surprised.",
+        "Conversions multiplied until the revival was the only subject in the streets.",
+        "Those it touched called it an outpouring of the Spirit. Its critics called it enthusiasm."
+      ]
+    },
+    {
+      "id": "fields",
+      "kicker": "The fields",
+      "level": 0.65,
+      "lines": [
+        "George Whitefield could be heard. In 1739 he preached in the open air to Kingswood's coal miners.",
+        "When he toured New England in 1740, the scattered fires became the Great Awakening. The skeptic Benjamin Franklin reckoned thirty thousand people could hear him at once.",
+        "Wesley had order. He gathered the awakened into societies and weekly classes, and his brother Charles wrote hymns by the thousand.",
+        "Edwards tested it all. True religion, he wrote in 1746, is a changed heart that shows itself in a changed life."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.55,
+      "lines": [
+        "Whitefield the Calvinist and Wesley the Arminian split over predestination.",
+        "Calvinists hold that God freely chose particular people for salvation, out of sheer grace rather than foreseen faith, and gives them faith.",
+        "Arminians hold that God chose to save all who believe, and His grace makes faith possible for everyone without forcing it.",
+        "The two men patched their friendship, and Wesley preached Whitefield's memorial sermon."
+      ]
+    },
+    {
+      "id": "ledger",
+      "kicker": "The ledger",
+      "level": 0.75,
+      "lines": [
+        "The awakeners preached the new birth in a world built on slavery, and most of them made their peace with it.",
+        "Whitefield campaigned to make slavery legal in Georgia, then bought human beings and worked them. He died owning around fifty people.",
+        "Edwards owned enslaved people too, and defended the practice in writing, though he condemned the ocean trade.",
+        "The revival's clearest sight came with a blind spot the size of a person."
+      ]
+    },
+    {
+      "id": "escaped",
+      "kicker": "The gospel escaped",
+      "level": 0.85,
+      "lines": [
+        "But the gospel escaped its preachers. The enslaved heard of the new birth and took it for themselves, and the African American church began.",
+        "George Liele, ordained in 1775, planted churches among the enslaved around Savannah and carried the gospel to Jamaica.",
+        "Olaudah Equiano, once enslaved, published his story in 1789, and it helped turn a nation against the trade.",
+        "Wesley attacked slavery in 1774, and his last letter urged William Wilberforce to press on against the trade."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Converted at sea in 1748, John Newton went on captaining slave ships for six more years.",
+        "As a pastor he wrote the hymn about amazing grace, and in 1788 he confessed his part in the trade.",
+        "That's the awakening in one man. Real grace, really received, beside a monstrous blindness, and then, slowly, sight.",
+        "What was born in those years was alive. But alive isn't the same as whole, and the church is still learning the difference."
+      ],
+      "titleCard": [
+        "Alive is not the same as whole.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
