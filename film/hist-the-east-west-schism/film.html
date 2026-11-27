@@ -1,0 +1,334 @@
+<!doctype html>
+<!-- "1054" (church history film: the East-West schism). West is always on the left, East on the right, and
+     both are drawn alike. Two churches that were one, and the door that did not slam but drifted; Latin and
+     Greek pages with a wall rising between them; the empire as a field of dots with two capitals, the West
+     falling away and the East still standing; two answers to who has the last word, a hub and a council,
+     set on a level scale; the creed and the word added to it; the drift lines that run to 1054, Hagia
+     Sophia and the two excommunications; 1204, the route not taken and the crack; forced union pulling
+     apart; two lines that never meet, and 1965; two churches under John 13:35 and a thread drawn between.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>1054</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, rng, S, E, TL, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE, CHAR } = F;
+  const PAPER = "#FBF9F5";
+  const CH = Object.fromEntries(TL.chapters.map((c) => [c.id, c]));
+  const CS = (id) => CH[id].start;
+  const Ls = (id) => CH[id].lines.map((_, k) => S(id, k));
+  const at = (id, k, f) => mix(S(id, k), E(id, k), f);          // a point f of the way through line k
+  const T = (p, cls, x, y, s, size, anchor, fill) => { const e = txt(p, cls, x, y, s, size, fill ? { fill } : undefined); if (anchor) e.setAttribute("style", (e.getAttribute("style") || "") + `text-anchor:${anchor};`); return e; };
+  const G = (p) => el("g", {}, p || world);
+  const R = rng(1054);
+  const END = F.VOICE_END;
+  const ringD = (cx, cy, r) => `M${cx - r} ${cy} A${r} ${r} 0 1 1 ${cx + r} ${cy} A${r} ${r} 0 1 1 ${cx - r} ${cy}`;
+  // a plain church: walls, roof, cross, round window, door; parts draw themselves in order
+  const church = (p, door = true) => { const g = G(p);
+    g._parts = [line(g, "M-92 60 H92"), line(g, "M-70 60 V-24 H70 V60"), line(g, "M-86 -20 L0 -92 L86 -20"), line(g, "M0 -92 V-128 M-13 -115 H13"), line(g, ringD(0, -48, 9), { "stroke-width": 2.4 })];
+    if (door) g._parts.push(line(g, "M-20 60 V20 Q-20 0 0 0 Q20 0 20 20 V60", { "stroke-width": 2.6 }));
+    g._door = el("path", { d: "M-20 60 V20 Q-20 0 0 0 Q20 0 20 20 V60 Z", fill: STONE }, g); op(g._door, 0); return g; };
+  const drawChurch = (c, k) => c._parts.forEach((p, i) => draw(p, clamp(k * c._parts.length - i)));
+  const page = (p, w, h, rows, seed) => { const g = G(p), r = rng(seed); el("rect", { x: -w / 2, y: -h / 2, width: w, height: h, rx: 3, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); const bars = [];
+    for (let i = 0; i < rows; i++) { const y = -h / 2 + h * 0.16 + i * (h * 0.68 / Math.max(1, rows - 1)); let x = -w / 2 + w * 0.12; const end = w / 2 - w * 0.12; while (x < end - 4) { const bw = Math.min(end - x, 4 + r() * w * 0.2); bars.push(el("rect", { x, y: y - 2, width: bw, height: 4, rx: 2, fill: INK }, g)); x += bw + 4; } }
+    g._bars = bars; return g; };
+  const book = (p, ghost) => { const g = G(p), w = 70, h = 92, st = ghost ? { fill: "none", stroke: STONE, "stroke-width": 2.2, "stroke-dasharray": "6 6" } : { fill: PAPER, stroke: INK, "stroke-width": 2.2 };
+    el("rect", { x: -w / 2, y: -h / 2, width: w, height: h, rx: 3, ...st }, g); el("rect", { x: -w / 2, y: -h / 2, width: 11, height: h, ...(ghost ? st : { fill: INK }) }, g);
+    [-18, -4, 10].forEach((y) => el("line", { x1: -16, x2: 24, y1: y, y2: y, stroke: ghost ? STONE : LINE, "stroke-width": 2.4, ...(ghost ? { "stroke-dasharray": "4 5" } : {}) }, g)); return g; };
+  const doc = (p) => { const g = G(p); el("rect", { x: -13, y: -17, width: 26, height: 34, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 2 }, g); [-8, -2, 4, 10].forEach((y) => el("line", { x1: -7, x2: 7, y1: y, y2: y, stroke: STONE, "stroke-width": 1.6 }, g)); return g; };
+
+  // ================= 1. the question: two churches that were one; a door slammed, or a slow drift =================
+  const draw1 = (() => {
+    const Q = Ls("question"), g = G();
+    const A = church(g), B = church(g);
+    const lA = T(g, "lab", 0, 0, "CATHOLIC", 15), lB = T(g, "lab", 0, 0, "ORTHODOX", 15);
+    const one = T(g, "lab", 640, 508, "ONE CHURCH · FOR A THOUSAND YEARS", 15);
+    const slam = T(g, "ital", 640, 168, "one day in 1054?", 46);
+    const dl = el("line", { y1: 396, y2: 396, stroke: STONE, "stroke-width": 2, "stroke-dasharray": "6 8" }, g);
+    const dlab = T(g, "lab", 640, 508, "A SLOW DRIFT · CENTURIES LONG", 15);
+    return (t) => {
+      const v = span(t, Q[0] - 1.3, CS("language") + 1.0, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      const sp = Q[1] + 3.6, m = up(t, Q[0] + 2.6, 1.8), d = up(t, sp, Math.max(2.5, E("question", 1) - Q[1] - 2.6));
+      const xA = t < sp ? mix(400, 640, m) : mix(640, 330, d), xB = t < sp ? mix(880, 640, m) : mix(640, 950, d), y = 350, ph = ((1 - m) + d) * 1.6;
+      move(A, xA, y + 2 * Math.sin(t * 0.9)); move(B, xB, y + 2 * Math.sin(t * 0.9 + ph));
+      drawChurch(A, up(t, Q[0] - 1.1, 1.8)); drawChurch(B, up(t, Q[0] - 0.8, 1.8));
+      move(lA, xA, y + 112); move(lB, xB, y + 112); op(lA, span(t, Q[0] + 0.3, Q[0] + 3.2, 0.6)); op(lB, span(t, Q[0] + 0.6, Q[0] + 3.2, 0.6));
+      const shut = up(t, Q[1] + 1.3, 0.9) * (1 - up(t, Q[1] + 3.3, 0.8));
+      [A, B].forEach((c) => { c._door.setAttribute("transform", `translate(-20 0) scale(${Math.max(0.001, shut).toFixed(3)} 1) translate(20 0)`); op(c._door, shut > 0.01 ? 0.9 : 0); });
+      op(slam, span(t, Q[1] + 1.5, Q[1] + 4.2, 0.6, 0.7));
+      op(one, span(t, Q[0] + 4.0, Q[1] + 3.4, 0.6, 0.6));
+      set(dl, { x1: (xA + 94).toFixed(1), x2: (xB - 94).toFixed(1) }); op(dl, clamp(d * 4));
+      op(dlab, up(t, Q[1] + 4.4, 0.7));
+    };
+  })();
+
+  // ================= 2. the first wall: Latin and Greek, a wall, Augustine, and trust thinning =================
+  const draw2 = (() => {
+    const L = Ls("language"), g = G();
+    const pL = page(g, 180, 230, 8, 11), pR = page(g, 180, 230, 8, 12);
+    const hL = T(g, "lab", 330, 182, "THE WEST · LATIN", 15), hR = T(g, "lab", 950, 182, "THE EAST · GREEK", 15);
+    const bricks = [];
+    for (let r = 0; r < 10; r++) { const y0 = 520 - (r + 1) * 36, xs = r % 2 ? [[590, 25], [615, 50], [665, 25]] : [[590, 50], [640, 50]];
+      xs.forEach(([x, w]) => bricks.push({ r, e: el("rect", { x, y: y0, width: w, height: 36, rx: 2, fill: WARM, stroke: INK, "stroke-width": 1.6 }, g) })); }
+    const aL = line(g, "M432 300 H574 M563 291 L575 300 L563 309", { stroke: STONE, "stroke-width": 2.4 }), aR = line(g, "M848 300 H706 M717 291 L705 300 L717 309", { stroke: STONE, "stroke-width": 2.4 });
+    const aug = book(g), augL = T(g, "lab", 462, 480, "AUGUSTINE", 14);
+    const ghost = book(g, true), ghostL = T(g, "lab", 818, 480, "BARELY KNOWN", 14);
+    const arc = line(g, "M420 206 Q640 60 860 206", { "stroke-width": 3 });
+    return (t) => {
+      const v = span(t, CS("language") - 0.2, CS("empire") + 0.9, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      move(pL, 330, 320 + 2 * Math.sin(t * 0.8)); move(pR, 950, 320 + 2 * Math.sin(t * 0.8 + 1.3));
+      pL._bars.forEach((b, i) => op(b, up(t, CS("language") + 0.3 + i * 0.03, 0.4))); pR._bars.forEach((b, i) => op(b, up(t, CS("language") + 0.6 + i * 0.03, 0.4)));
+      op(hL, up(t, L[0] + 1.2, 0.6)); op(hR, up(t, L[0] + 2.4, 0.6));
+      bricks.forEach((b) => { const k = up(t, L[0] + 0.4 + b.r * 0.34, 0.6); op(b.e, k); b.e.setAttribute("transform", `translate(0 ${(-(1 - k) * 16).toFixed(1)})`); });
+      draw(aL, up(t, L[1] + 0.3, 1.3)); draw(aR, up(t, L[1] + 0.6, 1.3));
+      const ak = up(t, at("language", 1, 0.5), 0.8); move(aug, 462, 392 + 2 * Math.sin(t), mix(0.8, 1, ak), -5); op(aug, ak); op(augL, up(t, at("language", 1, 0.56), 0.6));
+      const gk = up(t, at("language", 1, 0.78), 1.0); move(ghost, mix(770, 818, gk), 392, 1, 5); op(ghost, gk * 0.7); op(ghostL, up(t, at("language", 1, 0.84), 0.6));
+      draw(arc, up(t, L[2] + 0.1, 1.4)); const fade = up(t, L[2] + 1.8, 2.6);
+      arc.setAttribute("opacity", mix(1, 0.14, fade).toFixed(3)); arc.setAttribute("stroke-width", mix(3, 1.2, fade).toFixed(2));
+    };
+  })();
+
+  // ================= 3. two capitals: the empire as dots; the West falls away; the East still stands =================
+  const draw3 = (() => {
+    const M = Ls("empire"), g = G(), RO = [400, 345], CO = [880, 335];
+    const bound = el("line", { x1: 640, x2: 640, y1: 170, y2: 530, stroke: LINE, "stroke-width": 2, "stroke-dasharray": "6 8" }, g);
+    const keep = (x, y) => !(Math.hypot(x - RO[0], y - RO[1]) < 46 || Math.hypot(x - CO[0], y - CO[1]) < 46 || (Math.abs(y - 298) < 21 && (Math.abs(x - 400) < 50 || Math.abs(x - 880) < 132)) || Math.hypot(x - 820, y - 410) < 42 || Math.hypot(x - 950, y - 408) < 34 || Math.abs(x - 640) < 14);
+    const dots = [];
+    for (let x = 180; x <= 1100; x += 30) for (let y = 240; y <= 460; y += 28) { const jx = x + (R() - 0.5) * 12, jy = y + (R() - 0.5) * 10 + ((x / 30) % 2) * 6;
+      if (((jx - 640) / 480) ** 2 + ((jy - 350) / 112) ** 2 < 1 && keep(jx, jy)) dots.push({ x: jx, y: jy, w: jx < 625, d: R(), e: el("circle", { cx: jx.toFixed(1), cy: jy.toFixed(1), r: 3.6, fill: INK }, g) }); }
+    const ringR = line(g, ringD(...RO, 22)), ringC = line(g, ringD(...CO, 22));
+    const dotR = el("circle", { cx: RO[0], cy: RO[1], r: 7, fill: INK }, g), dotC = el("circle", { cx: CO[0], cy: CO[1], r: 7, fill: INK }, g);
+    const labR = T(g, "lab", 400, 305, "ROME", 15), labC = T(g, "lab", 880, 295, "CONSTANTINOPLE", 15);
+    const fall = T(g, "lab", 400, 515, "FIFTH CENTURY · THE WEST FALLS", 15), look = T(g, "lab", 400, 515, "THE LATIN CHURCH LOOKS TO ROME", 15);
+    const flock = [[10, 120], [55, 95], [100, 130], [145, 105], [190, 125], [225, 100], [320, 115]].map(([deg, rr]) => { const a = deg * Math.PI / 180, x = RO[0] + Math.cos(a) * rr * 1.5, y = RO[1] + Math.sin(a) * rr * 0.75, h = Math.hypot(x - RO[0], y - RO[1]);
+      return { s: line(g, `M${x.toFixed(1)} ${y.toFixed(1)} L${(RO[0] + (x - RO[0]) * 26 / h).toFixed(1)} ${(RO[1] + (y - RO[1]) * 26 / h).toFixed(1)}`, { stroke: STONE, "stroke-width": 1.8 }), c: el("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 6, fill: PAPER, stroke: INK, "stroke-width": 2 }, g) }; });
+    const thr = G(g), thrP = line(thr, "M-16 22 V-24 Q-16 -32 -8 -32 H8 Q16 -32 16 -24 V22 M-16 2 H16", { "stroke-width": 3 }); move(thr, 820, 410);
+    const pat = el("circle", { cx: 950, cy: 408, r: 8, fill: INK }, g);
+    const thrL = T(g, "lab", 820, 466, "EMPEROR", 14), patL = T(g, "lab", 950, 466, "PATRIARCH", 14);
+    return (t) => {
+      const v = span(t, CS("empire") - 0.2, CS("authority") + 0.9, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      op(bound, up(t, CS("empire"), 0.8) * 0.9);
+      const pulse = up(t, M[2], 1);
+      dots.forEach((d) => { const k = up(t, M[0] + 0.1 + Math.abs(d.x - 640) / 480 * 1.6, 0.5), f = d.w ? up(t, M[1] + 0.4 + d.d * 2.4, 1.4) : 0;
+        set(d.e, { cy: (d.y + 34 * f).toFixed(1), r: (3.6 + (d.w ? 0 : 0.7 * Math.sin(t * 1.6 + d.x * 0.05) * pulse)).toFixed(2) }); op(d.e, k * (1 - f)); });
+      draw(ringR, up(t, M[0] + 1.4, 0.9)); draw(ringC, up(t, M[0] + 2.4, 0.9)); op(dotR, up(t, M[0] + 1.6, 0.5)); op(dotC, up(t, M[0] + 2.6, 0.5));
+      op(labR, up(t, M[0] + 1.8, 0.6)); op(labC, up(t, M[0] + 2.8, 0.6));
+      const turn = at("empire", 1, 0.42);
+      op(fall, span(t, M[1] + 0.4, turn, 0.6, 0.4)); op(look, up(t, turn + 0.1, 0.6));
+      flock.forEach((f, i) => { const a = turn + i * 0.25; op(f.c, up(t, a, 0.5)); draw(f.s, up(t, a + 0.4, 0.9)); });
+      draw(thrP, up(t, M[2] + 0.5, 1.0)); op(pat, up(t, M[2] + 1.6, 0.6)); move(thr, 820, 410 + 1.5 * Math.sin(t)); set(pat, { cy: (408 + 1.5 * Math.sin(t + 1)).toFixed(1) });
+      op(thrL, up(t, M[2] + 0.9, 0.6)); op(patL, up(t, M[2] + 2.0, 0.6));
+    };
+  })();
+
+  // ================= 4. who has the last word: a hub and a council, set on a level scale =================
+  const draw4 = (() => {
+    const A = Ls("authority"), g = G();
+    const q = T(g, "ital", 640, 340, "Who has the last word?", 56);
+    const beam = el("line", { stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g), postL = el("line", { stroke: INK, "stroke-width": 3 }, g), postR = el("line", { stroke: INK, "stroke-width": 3 }, g);
+    const panL = el("line", { stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g), panR = el("line", { stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, g);
+    const post = el("path", { d: "M640 444 V530 M596 530 H684", stroke: INK, "stroke-width": 3, "stroke-linecap": "round", fill: "none" }, g), pivot = el("circle", { cx: 640, cy: 440, r: 6, fill: INK }, g);
+    const ch = church(g, false);
+    const hub = G(g), ring = G(g);
+    const hubDots = [...Array(8)].map((_, i) => { const a = (i / 8) * Math.PI * 2 + Math.PI / 8, x = Math.cos(a) * 105, y = Math.sin(a) * 105;
+      return { x, y, s: line(hub, `M${x.toFixed(1)} ${y.toFixed(1)} L${(Math.cos(a) * 28).toFixed(1)} ${(Math.sin(a) * 28).toFixed(1)}`, { stroke: STONE, "stroke-width": 2 }), e: el("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 8, fill: INK }, hub), f: el("circle", { r: 3, fill: STONE }, hub) }; });
+    const hubC = el("circle", { r: 22, fill: PAPER, stroke: INK, "stroke-width": 3 }, hub), hubD = el("circle", { r: 7, fill: INK }, hub);
+    const rp = [...Array(8)].map((_, i) => { const a = -Math.PI / 8 + (i / 8) * Math.PI * 2; return [Math.cos(a) * 105, Math.sin(a) * 105]; });
+    const edges = rp.map((p, i) => line(ring, `M${p[0].toFixed(1)} ${p[1].toFixed(1)} L${rp[(i + 1) % 8][0].toFixed(1)} ${rp[(i + 1) % 8][1].toFixed(1)}`, { stroke: STONE, "stroke-width": 2 }));
+    const rDots = rp.map((p, i) => el("circle", { cx: p[0].toFixed(1), cy: p[1].toFixed(1), r: i === 0 ? 9 : 8, fill: INK }, ring));
+    const honorRing = el("circle", { cx: rp[0][0].toFixed(1), cy: rp[0][1].toFixed(1), r: 16, fill: "none", stroke: STONE, "stroke-width": 2 }, ring), token = el("circle", { r: 4, fill: STONE }, ring);
+    const honor1 = T(g, "lab", 1018, 286, "ROME", 13, "start"), honor2 = T(g, "lab", 1018, 306, "FIRST IN HONOR", 13, "start");
+    const hTop = T(g, "lab", 0, 0, "THE WEST · CATHOLIC TODAY", 15), rTop = T(g, "lab", 0, 0, "THE EAST · ORTHODOX TODAY", 15);
+    const hBot = T(g, "lab", 380, 478, "ROME · SUCCESSOR OF PETER", 15), rBot = T(g, "lab", 900, 478, "ALL THE BISHOPS · IN COUNCIL", 15);
+    const why1 = T(g, "lab", 410, 500, "A CENTER WHEN EMPIRES FELL", 13), why2 = T(g, "lab", 870, 492, "A GUARD AGAINST ONE BISHOP", 13), why3 = T(g, "lab", 870, 512, "CLAIMING TOO MUCH", 13);
+    const both = T(g, "lab", 640, 486, "ONE CHURCH · TWO ANSWERS", 15);
+    return (t) => {
+      const v = span(t, CS("authority") - 0.2, CS("creed") + 0.9, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      op(q, span(t, A[0] + 0.2, A[1] + 1.0, 0.8, 0.7));
+      const k = up(t, A[3] - 0.1, 1.5), m = up(t, A[4] - 0.1, 1.4), ak = A[3] + 1.0;
+      const th = t > ak ? 3.5 * Math.exp(-(t - ak) / 2.2) * Math.sin((t - ak) * 1.7) * Math.PI / 180 : 0;
+      const ex = (s) => 640 + s * 230 * Math.cos(th), ey = (s) => 440 + s * 230 * Math.sin(th);
+      const sv = up(t, A[3] - 0.3, 0.9) * (1 - up(t, A[4] - 0.3, 0.8));
+      set(beam, { x1: ex(-1).toFixed(1), y1: ey(-1).toFixed(1), x2: ex(1).toFixed(1), y2: ey(1).toFixed(1) });
+      [[postL, panL, -1], [postR, panR, 1]].forEach(([pp, pn, s]) => { const x = ex(s), y = ey(s); set(pp, { x1: x.toFixed(1), y1: y.toFixed(1), x2: x.toFixed(1), y2: (y - 34).toFixed(1) }); set(pn, { x1: (x - 70).toFixed(1), y1: (y - 34).toFixed(1), x2: (x + 70).toFixed(1), y2: (y - 34).toFixed(1) }); });
+      [beam, postL, postR, panL, panR, post, pivot].forEach((e) => op(e, sv));
+      const sc = mix(1, 0.5, k), jig = 7 * Math.sin(t * 1.3) * m;
+      let hx = mix(380, ex(-1), k), hy = mix(330, ey(-1) - 96, k), rx = mix(900, ex(1), k), ry = mix(330, ey(1) - 96, k);
+      hx = mix(hx, 640 + jig, m); hy = mix(hy, 372, m); rx = mix(rx, 640 - jig, m); ry = mix(ry, 372, m);
+      move(hub, hx, hy + 2 * Math.sin(t * 0.8), sc); move(ring, rx, ry + 2 * Math.sin(t * 0.8 + 1.2), sc);
+      op(hubC, up(t, A[1] + 0.2, 0.6)); op(hubD, up(t, A[1] + 0.3, 0.6));
+      hubDots.forEach((d, i) => { op(d.e, up(t, A[1] + 0.6 + i * 0.12, 0.5)); draw(d.s, up(t, A[1] + 1.8 + i * 0.2, 0.7));
+        const p = ((t * 0.4 + i / 8) % 1); set(d.f, { cx: mix(d.x, d.x * 28 / 105, p).toFixed(1), cy: mix(d.y, d.y * 28 / 105, p).toFixed(1) }); op(d.f, up(t, A[1] + 3.6, 0.6) * Math.sin(p * Math.PI)); });
+      rDots.forEach((e, i) => op(e, up(t, A[2] + 0.4 + i * 0.12, 0.5))); edges.forEach((e, i) => draw(e, up(t, A[2] + 1.4 + i * 0.18, 0.5)));
+      const ta = t * 0.45; set(token, { cx: (Math.cos(ta) * 105).toFixed(1), cy: (Math.sin(ta) * 105).toFixed(1) }); op(token, up(t, A[2] + 3.0, 0.6));
+      const hv = span(t, at("authority", 2, 0.5), A[3] - 0.1, 0.6, 0.5); op(honorRing, hv); op(honor1, hv); op(honor2, hv);
+      const tops = span(t, A[1] + 0.3, A[4] - 0.2, 0.6, 0.5); move(hTop, hx, hy - mix(140, 82, k)); move(rTop, rx, ry - mix(140, 82, k)); op(hTop, tops); op(rTop, Math.min(tops, up(t, A[2] + 0.3, 0.6)));
+      op(hBot, span(t, at("authority", 1, 0.42), A[3] - 0.1, 0.6, 0.5)); op(rBot, span(t, at("authority", 2, 0.3), A[3] - 0.1, 0.6, 0.5));
+      op(why1, span(t, at("authority", 3, 0.3), A[4] - 0.2, 0.6, 0.5)); op(why2, span(t, at("authority", 3, 0.5), A[4] - 0.2, 0.6, 0.5)); op(why3, span(t, at("authority", 3, 0.54), A[4] - 0.2, 0.6, 0.5));
+      move(ch, 640, 340, 1.7); drawChurch(ch, up(t, A[4] - 0.1, 1.4)); op(ch, m > 0 ? 1 : 0); op(both, up(t, A[4] + 1.0, 0.7));
+    };
+  })();
+
+  // ================= 5. one word in the creed: proceeds from the Father, and the Son =================
+  const draw5 = (() => {
+    const C = Ls("creed"), g = G(), pg = G(g);
+    const sheet = el("rect", { x: 260, y: 200, width: 760, height: 260, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 2.4 }, pg);
+    const head = T(pg, "lab", 640, 244, "THE CREED OF THE COUNCILS", 15), rule = line(pg, "M330 262 H950", { stroke: LINE, "stroke-width": 2 });
+    const r1 = T(pg, "disp", 640, 322, "the Holy Spirit proceeds", 44);
+    const r2 = el("text", { class: "disp", x: 640, y: 376, style: "font-size:44px;" }, pg);
+    const s1 = el("tspan", {}, r2); s1.textContent = "from the Father";
+    const s2 = el("tspan", { style: `fill:${MUSTARD};` }, r2); s2.textContent = " and the Son";
+    const fil = T(pg, "ital", 640, 432, "filioque", 46, null, MUSTARD);
+    const cL = line(g, "M560 300 C520 330 380 320 330 348", { stroke: STONE, "stroke-width": 2 }), cR = line(g, "M720 300 C760 330 900 320 950 348", { stroke: STONE, "stroke-width": 2 });
+    const wH = T(g, "lab", 330, 378, "THE WEST", 16, null, INK), w1 = T(g, "lab", 330, 412, "TO GUARD THE FULL", 14), w2 = T(g, "lab", 330, 434, "DIVINITY OF THE SON", 14);
+    const eH = T(g, "lab", 950, 378, "THE EAST", 16, null, INK), e1 = T(g, "lab", 950, 412, "THE FATHER AS THE", 14), e1b = T(g, "lab", 950, 434, "SINGLE SOURCE", 14);
+    const e2 = T(g, "lab", 950, 476, "NO CHANGE TO THE CREED", 14), e2b = T(g, "lab", 950, 498, "WITHOUT A COUNCIL", 14);
+    const bL = line(g, "M640 300 C640 380 430 380 430 440", { stroke: MUSTARD, "stroke-width": 2.4 }), bR = line(g, "M640 300 C640 380 850 380 850 440", { stroke: MUSTARD, "stroke-width": 2.4 });
+    const aS = T(g, "lab", 430, 472, "AN ARGUMENT ABOUT THE SPIRIT", 14), aA = T(g, "lab", 850, 472, "AN ARGUMENT ABOUT AUTHORITY", 14);
+    return (t) => {
+      const v = span(t, CS("creed") - 0.2, CS("rupture") + 0.9, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      const k = up(t, C[2] - 0.3, 1.3);
+      pg.setAttribute("transform", `translate(640 ${(mix(330, 215, k) + 2 * Math.sin(t * 0.7)).toFixed(1)}) scale(${mix(1, 0.62, k).toFixed(3)}) translate(-640 -330)`);
+      op(sheet, up(t, CS("creed") + 0.7, 0.8)); op(head, up(t, C[0] + 0.6, 0.6)); draw(rule, up(t, C[0] + 0.8, 1.2));
+      op(r1, up(t, C[1] + 0.2, 0.8)); op(r2, up(t, at("creed", 1, 0.24), 0.8));
+      s2.setAttribute("fill-opacity", up(t, at("creed", 1, 0.6), 0.9).toFixed(3)); op(fil, up(t, at("creed", 1, 0.86), 0.8));
+      const cf = 1 - up(t, C[4] - 0.4, 0.7);
+      draw(cL, up(t, C[2] + 0.6, 0.9)); op(cL, cf); op(wH, up(t, C[2] + 0.9, 0.6) * cf); op(w1, up(t, C[2] + 1.5, 0.6) * cf); op(w2, up(t, C[2] + 1.7, 0.6) * cf);
+      draw(cR, up(t, C[3] + 0.2, 0.9)); op(cR, cf); op(eH, up(t, C[3] + 0.5, 0.6) * cf);
+      op(e1, up(t, at("creed", 3, 0.16), 0.6) * cf); op(e1b, up(t, at("creed", 3, 0.2), 0.6) * cf); op(e2, up(t, at("creed", 3, 0.62), 0.6) * cf); op(e2b, up(t, at("creed", 3, 0.66), 0.6) * cf);
+      draw(bL, up(t, C[4] + 0.5, 1.2)); draw(bR, up(t, C[4] + 0.8, 1.2)); op(aS, up(t, at("creed", 4, 0.42), 0.6)); op(aA, up(t, at("creed", 4, 0.72), 0.6));
+    };
+  })();
+
+  // ================= 6. 1054: the drift lines; Hagia Sophia and the two excommunications =================
+  const draw6 = (() => {
+    const U = Ls("rupture"), g = G(), act = G(g);
+    const YX = (y) => 160 + (y - 300) * 1.2, off = (x) => 34 * Math.pow(clamp((x - 160) / 960), 1.6);
+    const pts = (s) => { let d = ""; for (let x = 160; x <= 1120; x += 16) d += (d ? " L" : "M") + `${x} ${(492 + s * off(x)).toFixed(1)}`; return d; };
+    const tlg = G(g), wl = line(tlg, pts(-1)), elx = line(tlg, pts(1));
+    const wLab = T(tlg, "lab", 176, 476, "WEST", 13, "start"), eLab = T(tlg, "lab", 176, 520, "EAST", 13, "start");
+    const ticks = [[450, "400s"], [850, "800s · PHOTIUS"], [1054, "1054"]].map(([y, s], i) => { const x = YX(y);
+      return { x, tk: line(tlg, `M${x.toFixed(1)} ${(492 - off(x) - 14).toFixed(1)} V${(492 + off(x) + 14).toFixed(1)}`, { stroke: i === 2 ? MUSTARD : LINE, "stroke-width": i === 2 ? 3 : 2 }), lab: T(tlg, "lab", x, 566, s, 13, null, i === 2 ? MUSTARD : undefined) }; });
+    const bx = YX(1054), brk = line(g, `M${(bx + 12).toFixed(1)} ${(492 - off(bx)).toFixed(1)} H${(bx + 20).toFixed(1)} V${(492 + off(bx)).toFixed(1)} H${(bx + 12).toFixed(1)}`, { stroke: MUSTARD, "stroke-width": 2.6 });
+    const apart = T(g, "lab", bx, 426, "ALREADY APART", 13, null, MUSTARD);
+    // Hagia Sophia, the altar, Rome, the delegation, the patriarch
+    const walls = line(act, "M640 390 V280 H920 V390 Z"), dome = line(act, "M680 280 A100 100 0 0 1 880 280"), cross = line(act, "M780 180 V148 M768 160 H792");
+    const altar = el("rect", { x: 750, y: 360, width: 60, height: 18, rx: 2, fill: WARM, stroke: INK, "stroke-width": 2 }, act);
+    const hs = T(act, "lab", 780, 420, "HAGIA SOPHIA", 15);
+    const romeR = line(act, ringD(200, 330, 22)), romeDash = el("circle", { cx: 200, cy: 330, r: 22, fill: "none", stroke: STONE, "stroke-width": 2.4, "stroke-dasharray": "5 6" }, act);
+    const romeDot = el("circle", { cx: 200, cy: 330, r: 7, fill: INK }, act), romeL = T(act, "lab", 200, 294, "ROME", 15), died = T(act, "lab", 200, 384, "THE POPE HAD DIED", 13);
+    const del = [0, 1, 2].map(() => el("circle", { r: 7, fill: INK }, act)), humL = T(act, "lab", 450, 326, "CARDINAL HUMBERT", 15);
+    const pat = el("circle", { cx: 850, cy: 350, r: 8, fill: INK }, act), patLead = line(act, "M862 348 L956 340", { stroke: STONE, "stroke-width": 1.6 });
+    const patL = T(act, "lab", 964, 345, "MICHAEL CERULARIUS", 15, "start");
+    const talkA = line(act, "M724 351 H780", { stroke: STONE, "stroke-width": 2 }), talkB = line(act, "M780 351 H838", { stroke: STONE, "stroke-width": 2 });
+    const dA = doc(act), dB = doc(act);
+    const qA = el("rect", { x: -19, y: -23, width: 38, height: 46, rx: 4, fill: "none", stroke: STONE, "stroke-width": 1.8, "stroke-dasharray": "4 4" }, dA), qB = el("rect", { x: -19, y: -23, width: 38, height: 46, rx: 4, fill: "none", stroke: STONE, "stroke-width": 1.8, "stroke-dasharray": "4 4" }, dB);
+    const ex1 = T(act, "lab", 480, 420, "EXCOMMUNICATION", 15), ex2 = T(act, "lab", 480, 420, "EXCOMMUNICATIONS · BOTH WAYS", 15), ex3 = T(act, "lab", 480, 420, "PROBABLY BEYOND THEIR AUTHORITY", 15);
+    return (t) => {
+      const v = span(t, CS("rupture") - 0.2, CS("sealed") + 0.9, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      const dk = clamp((t - (U[0] - 0.9)) / Math.max(3, E("rupture", 0) - U[0] + 0.6)), front = 160 + 960 * dk;
+      draw(wl, dk); draw(elx, dk); op(wLab, up(t, U[0] - 0.2, 0.6)); op(eLab, up(t, U[0], 0.6));
+      tlg.setAttribute("transform", `translate(0 ${(-150 * (1 - up(t, U[1] - 1.2, 1.6))).toFixed(1)})`);
+      ticks.forEach((tk) => { const kk = clamp((front - tk.x) / 50); draw(tk.tk, kk); op(tk.lab, kk); });
+      const late = up(t, U[4] + 0.2, 1.0);
+      draw(brk, up(t, U[4] + 0.8, 1.0)); op(apart, up(t, U[4] + 1.4, 0.6));
+      op(act, 1 - 0.65 * late);
+      draw(walls, up(t, U[1] - 0.6, 1.2)); draw(dome, up(t, U[1] + 0.2, 1.0)); draw(cross, up(t, U[1] + 0.9, 0.6)); op(altar, up(t, U[1] + 1.0, 0.6)); op(hs, up(t, U[1] + 1.2, 0.6));
+      draw(romeR, up(t, U[1] - 0.4, 0.8)); op(romeR, 1 - up(t, at("rupture", 3, 0.55), 0.8)); op(romeDash, up(t, at("rupture", 3, 0.55), 0.8));
+      op(romeDot, up(t, U[1] - 0.2, 0.5) * (1 - up(t, at("rupture", 3, 0.55), 1.0))); op(romeL, up(t, U[1] - 0.2, 0.6)); op(died, up(t, at("rupture", 3, 0.62), 0.6));
+      const wk = up(t, U[1] + 0.4, 2.8);
+      del.forEach((e, i) => { set(e, { cx: (mix(236, 712, wk) - i * 18).toFixed(1), cy: (351 + 1.5 * Math.sin(t * 2 + i)).toFixed(1) }); op(e, up(t, U[1] + 0.2 + i * 0.15, 0.5)); });
+      move(humL, Math.max(360, Math.min(mix(236, 712, wk) - 30, 520)) - 450, 0); op(humL, up(t, U[1] + 0.9, 0.6)); op(pat, up(t, U[1] + 1.4, 0.5)); draw(patLead, up(t, U[1] + 1.7, 0.5)); op(patL, up(t, U[1] + 1.9, 0.6));
+      const tk2 = up(t, U[1] + 3.3, 0.7), br = up(t, at("rupture", 1, 0.86), 0.9);
+      draw(talkA, tk2); draw(talkB, tk2); talkA.setAttribute("transform", `translate(${(-16 * br).toFixed(1)} 0)`); talkB.setAttribute("transform", `translate(${(16 * br).toFixed(1)} 0)`);
+      op(talkA, 1 - up(t, U[2] - 0.2, 0.6)); op(talkB, 1 - up(t, U[2] - 0.2, 0.6));
+      const la = up(t, U[2] + 0.4, 1.6); move(dA, mix(712, 780, la), mix(334, 342, la) - 10 * Math.sin(la * Math.PI)); op(dA, up(t, U[2] + 0.3, 0.4));
+      const lb = up(t, at("rupture", 2, 0.72), 1.8); move(dB, mix(850, 596, lb), mix(334, 258, lb) - 12 * Math.sin(lb * Math.PI)); op(dB, up(t, at("rupture", 2, 0.7), 0.4));
+      op(qA, up(t, U[3] + 0.4, 0.6)); op(qB, up(t, U[3] + 0.6, 0.6));
+      op(ex1, span(t, U[2] + 1.4, at("rupture", 2, 0.74), 0.6, 0.4)); op(ex2, span(t, at("rupture", 2, 0.78), U[3] + 0.2, 0.6, 0.4)); op(ex3, up(t, U[3] + 0.3, 0.6));
+    };
+  })();
+
+  // ================= 7. 1204: the route not taken, the city sacked, the crack, forced union =================
+  const draw7 = (() => {
+    const X = Ls("sealed"), g = G(), map = G(g);
+    const west = [...Array(16)].map((_, i) => el("circle", { cx: (175 + (i % 4) * 36 + (R() - 0.5) * 16).toFixed(1), cy: (292 + Math.floor(i / 4) * 22 + (R() - 0.5) * 10).toFixed(1), r: 4, fill: INK }, map));
+    const wL = T(map, "lab", 230, 256, "THE WEST", 15);
+    const city = G(map); const cityP = [line(city, "M-100 50 V-6 H100 V50 Z"), line(city, "M-40 -6 A40 40 0 0 1 40 -6"), line(city, "M-92 -6 A20 20 0 0 1 -52 -6"), line(city, "M52 -6 A20 20 0 0 1 92 -6"), line(city, "M0 -46 V-66 M-9 -57 H9")]; move(city, 820, 300);
+    const cityL = T(map, "lab", 820, 390, "CONSTANTINOPLE", 15), sackL = T(map, "lab", 820, 390, "CONSTANTINOPLE · SACKED", 15);
+    const holy = line(map, ringD(1060, 500, 14), { stroke: STONE, "stroke-width": 2.4 }), holyL = T(map, "lab", 1060, 548, "THE HOLY LAND", 13);
+    const bez = (a, b, c, d, s) => { const u = 1 - s; return [0, 1].map((j) => u * u * u * a[j] + 3 * u * u * s * b[j] + 3 * u * s * s * c[j] + s * s * s * d[j]); };
+    const plan = [...Array(24)].map((_, i) => { const [x, y] = bez([262, 340], [520, 372], [820, 470], [1040, 494], (i + 1) / 25); return el("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 2.6, fill: STONE }, map); });
+    const RP = [[262, 340], [430, 360], [600, 340], [716, 318]], real = line(map, "M262 340 C430 360 600 340 716 318");
+    const army = [...Array(10)].map(() => ({ dx: (R() - 0.5) * 26, dy: (R() - 0.5) * 18, e: el("circle", { r: 3.6, fill: INK }, map) }));
+    const yr = T(g, "disp", 420, 182, "1204", 62);
+    const crack = line(g, "M560 124 L546 172 L570 226 L550 284 L574 342 L548 400 L570 458 L556 536", { "stroke-width": 3 });
+    const recon = T(g, "lab", 300, 470, "RECONCILIATION ALMOST IMPOSSIBLE", 15);
+    const cpts = "L628 262 L652 296 L630 330 L654 366 L632 400 L640 430";
+    const halves = G(g), hL = el("path", { d: `M640 230 ${cpts} A100 100 0 0 1 640 230 Z`, fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, halves), hR = el("path", { d: `M640 230 ${cpts} A100 100 0 0 0 640 230 Z`, fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, halves);
+    const pushL = el("path", { d: "M0 0 H52 M40 -11 L52 0 L40 11", stroke: STONE, "stroke-width": 3, fill: "none", "stroke-linecap": "round" }, halves), pushR = el("path", { d: "M0 0 H-52 M-40 -11 L-52 0 L-40 11", stroke: STONE, "stroke-width": 3, fill: "none", "stroke-linecap": "round" }, halves);
+    const forced = T(g, "lab", 640, 486, "FORCED UNION", 15), rejected = T(g, "lab", 640, 486, "REJECTED AS BETRAYALS", 15);
+    return (t) => {
+      const v = span(t, CS("sealed") - 0.2, CS("still") + 0.9, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      op(map, 1 - up(t, X[2] - 0.3, 0.9));
+      west.forEach((e, i) => op(e, up(t, CS("sealed") + 0.1 + i * 0.06, 0.5))); op(wL, up(t, X[0] + 0.2, 0.6));
+      const sacked = up(t, X[0] + 6.6, 1.0);
+      cityP.forEach((p, i) => { draw(p, up(t, X[0] + 0.2 + i * 0.25, 0.9)); p.setAttribute("stroke", sacked > 0.5 ? STONE : INK); }); city.setAttribute("opacity", mix(1, 0.5, sacked).toFixed(3));
+      op(cityL, up(t, X[0] + 1.0, 0.6) * (1 - up(t, X[0] + 6.4, 0.5))); op(sackL, up(t, X[0] + 7.0, 0.6));
+      draw(holy, up(t, X[0] + 3.0, 0.8)); op(holyL, up(t, X[0] + 3.2, 0.6));
+      plan.forEach((e, i) => op(e, up(t, X[0] + 3.0 + i * 0.07, 0.4) * 0.85));
+      draw(real, up(t, X[0] + 4.6, 1.6)); op(yr, span(t, X[0] + 1.6, X[2] - 0.2, 0.7, 0.7));
+      const mk = up(t, X[0] + 2.6, 4.0), mp = bez(RP[0], RP[1], RP[2], RP[3], mk);
+      army.forEach((a, i) => { set(a.e, { cx: (mp[0] + a.dx).toFixed(1), cy: (mp[1] + a.dy + 1.5 * Math.sin(t * 2 + i)).toFixed(1) }); op(a.e, up(t, X[0] + 2.2 + i * 0.05, 0.5) * (1 - up(t, X[0] + 7.2, 1.0))); });
+      draw(crack, up(t, X[1] + 0.3, 2.2)); op(crack, 1 - up(t, X[2] - 0.3, 0.8)); op(recon, span(t, at("sealed", 1, 0.45), X[2] - 0.2, 0.6, 0.6));
+      const hv = up(t, X[2] - 0.1, 0.8), push = up(t, X[2] + 0.2, 1.6), apart = up(t, X[2] + 2.4, 2.2), dx = 150 * (1 - push) + 170 * apart;
+      op(halves, hv); hL.setAttribute("transform", `translate(${(-dx).toFixed(1)} 0)`); hR.setAttribute("transform", `translate(${dx.toFixed(1)} 0)`);
+      move(pushL, 640 - dx - 100 - 76, 330); move(pushR, 640 + dx + 100 + 76, 330); const pv = span(t, X[2], X[2] + 2.3, 0.5, 0.6); op(pushL, pv); op(pushR, pv);
+      op(forced, span(t, X[2] + 0.5, at("sealed", 2, 0.5), 0.6, 0.4)); op(rejected, up(t, at("sealed", 2, 0.55), 0.6));
+    };
+  })();
+
+  // ================= 8. still two: two lines that never meet; 1965 =================
+  const draw8 = (() => {
+    const St = Ls("still"), g = G(), YX = (y) => 200 + (y - 1054) * 920 / 976;
+    const top = line(g, "M200 290 H1120"), bot = line(g, "M200 390 H1120");
+    const lc = T(g, "lab", 206, 272, "CATHOLIC", 15, "start"), lo = T(g, "lab", 206, 420, "ORTHODOX", 15, "start"), today = T(g, "lab", 1132, 345, "TODAY", 13, "start");
+    const tk = [1054, 1204, 1965].map((y) => { const x = YX(y); return { x, l: el("line", { x1: x, x2: x, y1: 270, y2: 410, stroke: LINE, "stroke-width": 2, "stroke-dasharray": "5 6" }, g), lab: T(g, "lab", x, 450, String(y), 13) }; });
+    const flow = [0, 1, 2, 3, 4, 5].map((i) => el("circle", { r: 4, fill: STONE }, g));
+    const docs = [doc(g), doc(g)], lifted = T(g, "lab", 1018, 212, "1965 · EXCOMMUNICATIONS LIFTED", 15, "end");
+    const remains = T(g, "lab", 640, 520, "THE DIVISION REMAINS", 15);
+    return (t) => {
+      const v = span(t, CS("still") - 0.2, CS("close") + 0.9, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      draw(top, up(t, St[0] - 0.4, 2.8)); draw(bot, up(t, St[0] - 0.2, 2.8)); op(lc, up(t, St[0] + 0.4, 0.6)); op(lo, up(t, St[0] + 1.6, 0.6)); op(today, up(t, St[0] + 2.6, 0.6));
+      tk.forEach((k, i) => { op(k.l, up(t, St[0] + 0.2 + i * 0.6, 0.6)); op(k.lab, up(t, St[0] + 0.3 + i * 0.6, 0.6)); });
+      flow.forEach((f, i) => { const x = 200 + ((t * 26 + i * 307) % 920); set(f, { cx: x.toFixed(1), cy: i % 2 ? 390 : 290 }); op(f, up(t, St[0] + 2.4, 0.8) * Math.min(1, (x - 200) / 40, (1120 - x) / 40)); });
+      docs.forEach((d, i) => { const k = up(t, St[1] + 1.0 + i * 0.4, 3.2); move(d, YX(1965) + (i ? 34 : 2), mix(340, 160, k), 1, (i ? 6 : -6) * k); op(d, up(t, St[1] + 0.8 + i * 0.4, 0.5) * (1 - up(t, St[1] + 3.4 + i * 0.4, 1.0))); });
+      op(lifted, up(t, St[1] + 1.4, 0.7)); op(remains, up(t, at("still", 1, 0.8), 0.7));
+    };
+  })();
+
+  // ================= 9. the close: two churches, John 13:35, a thread drawn between them =================
+  const draw9 = (() => {
+    const Z = Ls("close"), g = G();
+    const A = church(g), B = church(g);
+    const la = T(g, "lab", 400, 548, "CATHOLIC", 14), lb = T(g, "lab", 880, 548, "ORTHODOX", 14);
+    const glowR = el("circle", { cx: 640, cy: 410, r: 40, fill: "none", stroke: MUSTARD, "stroke-width": 2 }, g), glow = el("circle", { cx: 640, cy: 410, r: 22, fill: MUSTARD }, g);
+    const v1 = T(g, "disp", 640, 168, "By this everyone will know that you are My disciples,", 40), v2 = T(g, "disp", 640, 216, "if you love one another.”", 40);
+    const ref = T(g, "lab", 640, 254, "JOHN 13:35 · BEREAN STANDARD BIBLE", 14);
+    const thread = line(g, "M420 489 C540 526 740 526 860 489", { stroke: MUSTARD, "stroke-width": 2.6 });
+    return (t) => {
+      const v = span(t, CS("close") - 0.2, END + 2.5, 0.8, 0.9); op(g, v); if (v <= 0) return;
+      move(A, 400, 440 + 2 * Math.sin(t * 0.9), 0.85); move(B, 880, 440 + 2 * Math.sin(t * 0.9 + 1.4), 0.85);
+      drawChurch(A, up(t, Z[0] - 0.6, 1.6)); drawChurch(B, up(t, Z[0] - 0.3, 1.6));
+      op(la, up(t, Z[0] + 0.8, 0.6)); op(lb, up(t, Z[0] + 1.1, 0.6));
+      const gk = up(t, at("close", 0, 0.55), 1.2); set(glow, { r: (18 + 3 * Math.sin(t * 1.3)).toFixed(1) }); op(glow, gk * 0.75); set(glowR, { r: (36 + 6 * Math.sin(t * 0.9)).toFixed(1) }); op(glowR, gk * 0.5);
+      op(v1, up(t, Z[2] - 0.1, 0.8)); op(v2, up(t, at("close", 2, 0.62), 0.8)); op(ref, up(t, at("close", 2, 0.8), 0.7));
+      draw(thread, up(t, Z[3] + 0.6, 2.6));
+    };
+  })();
+
+  F.title("1054");
+  F.endCard(window.SCRIPT.chapters.at(-1).titleCard, END + 0.9);
+  return (t) => { draw1(t); draw2(t); draw3(t); draw4(t); draw5(t); draw6(t); draw7(t); draw8(t); draw9(t); };
+});
+</script>
+</body></html>
