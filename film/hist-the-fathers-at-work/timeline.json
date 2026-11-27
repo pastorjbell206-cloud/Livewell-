@@ -1,0 +1,251 @@
+{
+ "length": 246.83,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "Between the councils",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 18.24,
+   "lines": [
+    {
+     "text": "We remember the great councils. But who carried the faith in the years between them?",
+     "start": 2.6,
+     "end": 7.14
+    },
+    {
+     "text": "A council was a few weeks of bishops in a hall. The doctrine took decades of work somewhere else, in sermons, letters and books written in exile.",
+     "start": 7.78,
+     "end": 17.34
+    }
+   ]
+  },
+  {
+   "id": "siege",
+   "kicker": "After Nicaea",
+   "level": 0.3,
+   "start": 17.44,
+   "end": 39.54,
+   "lines": [
+    {
+     "text": "Nicaea met in 325 and confessed the Son to be fully God. That didn't end the fight.",
+     "start": 18.34,
+     "end": 24.12
+    },
+    {
+     "text": "For most of the next fifty-six years, until Constantinople in 381, Nicaea's defenders were deposed and banished.",
+     "start": 24.76,
+     "end": 32.16
+    },
+    {
+     "text": "What carried the truth wasn't an institution. It was a handful of teachers we call the church fathers.",
+     "start": 32.94,
+     "end": 38.64
+    }
+   ]
+  },
+  {
+   "id": "athanasius",
+   "kicker": "Athanasius against the world",
+   "level": 0.4,
+   "start": 38.74,
+   "end": 83.28,
+   "lines": [
+    {
+     "text": "Athanasius came to Nicaea as a young deacon from Alexandria, and three years later was its bishop.",
+     "start": 39.64,
+     "end": 45.52
+    },
+    {
+     "text": "Four emperors drove him from his city five times, seventeen years in all on the run or in hiding.",
+     "start": 46.12,
+     "end": 52.36
+    },
+    {
+     "text": "His enemies called him violent, and some modern historians partly agree. What held him was one conviction, from his early book On the Incarnation.",
+     "start": 52.98,
+     "end": 62.12
+    },
+    {
+     "text": "If the Son is a creature, the cross is a creature's death and we're still in our sins. Only God can save.",
+     "start": 62.8,
+     "end": 69.92
+    },
+    {
+     "text": "I, yes I, am the LORD, and there is no Savior but Me.",
+     "start": 70.56,
+     "end": 75.0
+    },
+    {
+     "text": "He died in 373 with the fight undecided, eight years before Constantinople confirmed what he had held.",
+     "start": 75.78,
+     "end": 82.38
+    }
+   ]
+  },
+  {
+   "id": "cappadocia",
+   "kicker": "Three friends and a sister",
+   "level": 0.5,
+   "start": 82.48,
+   "end": 118.8,
+   "lines": [
+    {
+     "text": "In Cappadocia, when famine struck in 368, Basil of Caesarea preached the rich into opening their barns and built what people called a new city for the poor.",
+     "start": 83.38,
+     "end": 93.24
+    },
+    {
+     "text": "Basil also wrote the treatise that secured the deity of the Holy Spirit. His friend Gregory of Nazianzus preached five sermons on the Trinity in 380, and was called the Theologian.",
+     "start": 93.96,
+     "end": 104.52
+    },
+    {
+     "text": "Their friendship broke and never fully healed. The doctrine got made anyway.",
+     "start": 105.12,
+     "end": 109.44
+    },
+    {
+     "text": "Basil's elder sister Macrina taught their brother, Gregory of Nyssa, and in 381 he carried her teaching into the council.",
+     "start": 110.14,
+     "end": 117.9
+    }
+   ]
+  },
+  {
+   "id": "grace",
+   "kicker": "Grace on trial",
+   "level": 0.6,
+   "start": 118.0,
+   "end": 155.64,
+   "lines": [
+    {
+     "text": "The last great fight was about grace. Augustine had prayed, in effect, give what you command, and command what you will.",
+     "start": 118.9,
+     "end": 126.58
+    },
+    {
+     "text": "Pelagius, a British ascetic in Rome, was appalled, and his case was serious. God doesn't command the impossible, he argued.",
+     "start": 127.22,
+     "end": 135.34
+    },
+    {
+     "text": "Augustine answered from his own life. He hadn't been advised into holiness, but rescued from a will that kept choosing its chains.",
+     "start": 135.98,
+     "end": 143.48
+    },
+    {
+     "text": "The church weighed both and sided with Augustine, at Carthage in 418 and at Ephesus in 431.",
+     "start": 144.2,
+     "end": 151.1
+    },
+    {
+     "text": "We do not climb to God. God descends.",
+     "start": 151.82,
+     "end": 154.74
+    }
+   ]
+  },
+  {
+   "id": "method",
+   "kicker": "How the work was done",
+   "level": 0.68,
+   "start": 154.84,
+   "end": 170.48,
+   "lines": [
+    {
+     "text": "None of them did theology apart from the church. Augustine worked out grace while judging lawsuits and preaching.",
+     "start": 155.74,
+     "end": 162.08
+    },
+    {
+     "text": "Their tools were the sermon, the letter, the psalm and the funeral. It all ran on friendship, injuries included.",
+     "start": 162.74,
+     "end": 169.58
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.76,
+   "start": 169.68,
+   "end": 200.9,
+   "lines": [
+    {
+     "text": "Christians hold the fathers in different ways.",
+     "start": 170.58,
+     "end": 172.72
+    },
+    {
+     "text": "Orthodox Christians hear them within Holy Tradition, the church's living memory, with Scripture at its heart.",
+     "start": 173.28,
+     "end": 179.4
+    },
+    {
+     "text": "Catholics hold, with the Council of Trent, that Scripture must not be read against the unanimous consent of the fathers.",
+     "start": 180.08,
+     "end": 186.72
+    },
+    {
+     "text": "Protestants hold Scripture as the only infallible rule, and still read the fathers closely, as Calvin read Augustine.",
+     "start": 187.36,
+     "end": 194.2
+    },
+    {
+     "text": "And on Augustine's late teaching about predestination, Christians have argued ever since.",
+     "start": 194.82,
+     "end": 200.0
+    }
+   ]
+  },
+  {
+   "id": "inheritance",
+   "kicker": "What we owe them",
+   "level": 0.85,
+   "start": 200.1,
+   "end": 222.34,
+   "lines": [
+    {
+     "text": "They left us tested sentences, and proof of what those sentences cost.",
+     "start": 201.0,
+     "end": 205.12
+    },
+    {
+     "text": "The Nicene faith isn't true because Athanasius suffered for it. But his suffering shows doctrine can matter enough to lose everything for.",
+     "start": 205.82,
+     "end": 213.8
+    },
+    {
+     "text": "The difference between begotten and made is the difference between being saved by God and being encouraged by a creature.",
+     "start": 214.48,
+     "end": 221.44
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 221.54,
+   "end": 240.731,
+   "lines": [
+    {
+     "text": "They also held together what we've pulled apart. Basil built the hospital and taught the Trinity, one life.",
+     "start": 222.44,
+     "end": 228.72
+    },
+    {
+     "text": "Little children, let us love not in word and speech, but in action and truth.",
+     "start": 229.38,
+     "end": 234.32
+    },
+    {
+     "text": "They worked as if the creed and the soup kitchen came from the same Lord. They do.",
+     "start": 235.04,
+     "end": 239.831
+    }
+   ]
+  }
+ ]
+}

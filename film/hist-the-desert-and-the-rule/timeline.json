@@ -1,0 +1,265 @@
+{
+ "length": 238.93,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 12.36,
+   "lines": [
+    {
+     "text": "Why would anyone walk away from everything to live in a desert?",
+     "start": 2.6,
+     "end": 5.94
+    },
+    {
+     "text": "Many early Christians did. Their movement changed the church as surely as any council.",
+     "start": 6.66,
+     "end": 11.46
+    }
+   ]
+  },
+  {
+   "id": "antony",
+   "kicker": "Egypt, around 270",
+   "level": 0.3,
+   "start": 11.56,
+   "end": 40.12,
+   "lines": [
+    {
+     "text": "Around 270, in a village church in Egypt, a young farmer named Antony heard the Gospel read, the story of a rich young man.",
+     "start": 12.46,
+     "end": 20.52
+    },
+    {
+     "text": "Jesus told him, \u201cIf you want to be perfect, go, sell your possessions and give to the poor, and you will have treasure in heaven. Then come, follow Me.\u201d",
+     "start": 21.26,
+     "end": 31.32
+    },
+    {
+     "text": "Antony took the words as spoken to him. He sold his land, provided for his sister, and walked past the edge of the fields.",
+     "start": 32.06,
+     "end": 39.22
+    }
+   ]
+  },
+  {
+   "id": "easy",
+   "kicker": "When believing got easy",
+   "level": 0.4,
+   "start": 39.32,
+   "end": 61.04,
+   "lines": [
+    {
+     "text": "He went while the faith was still illegal, a generation before Constantine.",
+     "start": 40.22,
+     "end": 44.32
+    },
+    {
+     "text": "But after 313, when believing stopped costing anything, the desert filled with people looking for the cost themselves.",
+     "start": 44.9,
+     "end": 52.32
+    },
+    {
+     "text": "Not every motive was pure. Debtors and men dodging taxes or the army went too, as the monks' own sources admit.",
+     "start": 52.96,
+     "end": 60.14
+    }
+   ]
+  },
+  {
+   "id": "fort",
+   "kicker": "The father of monks",
+   "level": 0.5,
+   "start": 60.24,
+   "end": 90.34,
+   "lines": [
+    {
+     "text": "Antony shut himself inside an abandoned fort near the Nile for twenty years. Friends passed him bread over the wall.",
+     "start": 61.14,
+     "end": 67.64
+    },
+    {
+     "text": "Around 305 they broke down the door, expecting a wreck, and found a man sane, gentle, and strangely whole.",
+     "start": 68.24,
+     "end": 75.78
+    },
+    {
+     "text": "Crowds tracked him down for counsel until he died in 356.",
+     "start": 76.44,
+     "end": 80.32
+    },
+    {
+     "text": "Athanasius, who knew him, wrote his life. Later, in a garden in Milan, its story helped push a professor named Augustine into faith.",
+     "start": 80.94,
+     "end": 89.44
+    }
+   ]
+  },
+  {
+   "id": "common",
+   "kicker": "From hermits to brothers",
+   "level": 0.6,
+   "start": 89.54,
+   "end": 120.0,
+   "lines": [
+    {
+     "text": "But a man alone with God is also alone with himself, and some went strange.",
+     "start": 90.44,
+     "end": 94.88
+    },
+    {
+     "text": "Around 320 an ex-soldier named Pachomius gathered monks into walled communities along the Nile, with common meals, work, prayer and a written rule.",
+     "start": 95.5,
+     "end": 105.8
+    },
+    {
+     "text": "Basil of Caesarea carried it into the Greek church and turned it toward the neighbor. A monk who flees everyone, he asked, whose feet will he wash?",
+     "start": 106.58,
+     "end": 115.54
+    },
+    {
+     "text": "The desert had its mothers too, like Syncletica.",
+     "start": 116.22,
+     "end": 119.1
+    }
+   ]
+  },
+  {
+   "id": "ledger",
+   "kicker": "The honest ledger",
+   "level": 0.7,
+   "start": 119.2,
+   "end": 153.8,
+   "lines": [
+    {
+     "text": "There were excesses. In Syria, Simeon lived some thirty-six years on a pillar, and people asked where devotion ended and performance began.",
+     "start": 120.1,
+     "end": 128.76
+    },
+    {
+     "text": "At worst, mobs of monks became muscle in church politics.",
+     "start": 129.44,
+     "end": 133.18
+    },
+    {
+     "text": "Yet the monks were their own sharpest critics.",
+     "start": 133.78,
+     "end": 136.04
+    },
+    {
+     "text": "Called to judge an erring brother, Abba Moses, once a bandit chief, came with a basket that leaked sand. His own sins, he said, ran out behind him unseen, and he had come to judge another man.",
+     "start": 136.6,
+     "end": 149.4
+    },
+    {
+     "text": "The enemy was never the body. It was pride.",
+     "start": 150.14,
+     "end": 152.9
+    }
+   ]
+  },
+  {
+   "id": "rule",
+   "kicker": "The Rule",
+   "level": 0.78,
+   "start": 153.0,
+   "end": 178.92,
+   "lines": [
+    {
+     "text": "The desert's wisdom reached the West as the West came apart.",
+     "start": 153.9,
+     "end": 157.04
+    },
+    {
+     "text": "Around 529, at Monte Cassino, Benedict of Nursia wrote a rule for monks short enough to read in an evening.",
+     "start": 157.68,
+     "end": 164.92
+    },
+    {
+     "text": "He hoped to set down nothing harsh, nothing burdensome. The day was a braid of psalms, work and reading.",
+     "start": 165.62,
+     "end": 172.42
+    },
+    {
+     "text": "Guests were received as Christ. It was a rule for beginners, and that's why it lasted.",
+     "start": 172.98,
+     "end": 178.02
+    }
+   ]
+  },
+  {
+   "id": "kept",
+   "kicker": "What they kept alive",
+   "level": 0.85,
+   "start": 178.12,
+   "end": 193.2,
+   "lines": [
+    {
+     "text": "When the Western order failed, monasteries were among the few places left that could read.",
+     "start": 179.02,
+     "end": 183.84
+    },
+    {
+     "text": "They didn't save civilization single-handed. What they kept alive was rarer, proof that the commands of Jesus can be a daily schedule.",
+     "start": 184.56,
+     "end": 192.3
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.6,
+   "start": 192.4,
+   "end": 220.02,
+   "lines": [
+    {
+     "text": "Christians still weigh the monks differently.",
+     "start": 193.3,
+     "end": 195.24
+    },
+    {
+     "text": "Orthodox Christians honor their monasteries as houses of prayer and counsel for all, and their monks keep rules that carry Basil's stamp.",
+     "start": 195.8,
+     "end": 203.54
+    },
+    {
+     "text": "Catholics honor the vowed life as a calling God gives some for the good of all, and many of their houses keep Benedict's Rule.",
+     "start": 204.42,
+     "end": 211.14
+    },
+    {
+     "text": "Protestants, following the Reformers, hold that every calling is holy, the farmer's and the mother's as much as the monk's.",
+     "start": 211.86,
+     "end": 219.12
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 219.22,
+   "end": 232.826,
+   "lines": [
+    {
+     "text": "Most of us will never keep vigils or a rule of silence, and the monks don't ask it.",
+     "start": 220.12,
+     "end": 224.68
+    },
+    {
+     "text": "But they still stand at the edge of a comfortable church, asking the question Antony heard.",
+     "start": 225.34,
+     "end": 230.18
+    },
+    {
+     "text": "What would you sell?",
+     "start": 230.82,
+     "end": 231.926
+    }
+   ]
+  }
+ ]
+}

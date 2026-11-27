@@ -1,0 +1,260 @@
+{
+ "length": 248.31,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 22.2,
+   "lines": [
+    {
+     "text": "Was the medieval church a dark age, or an age of faith?",
+     "start": 2.6,
+     "end": 5.72
+    },
+    {
+     "text": "Some picture a thousand years of superstition and corrupt priests. Others, a Europe where everyone believed.",
+     "start": 6.42,
+     "end": 12.86
+    },
+    {
+     "text": "Neither survives the evidence. From 1054 to 1517, the church had its noon and its sickness at once.",
+     "start": 13.6,
+     "end": 21.3
+    }
+   ]
+  },
+  {
+   "id": "village",
+   "kicker": "The center of every village",
+   "level": 0.3,
+   "start": 21.4,
+   "end": 32.22,
+   "lines": [
+    {
+     "text": "This church baptized every child, married every couple and buried every body.",
+     "start": 22.3,
+     "end": 27.16
+    },
+    {
+     "text": "You could live a whole life without one important day the church didn't touch.",
+     "start": 27.74,
+     "end": 31.32
+    }
+   ]
+  },
+  {
+   "id": "cluny",
+   "kicker": "The monks of Cluny",
+   "level": 0.4,
+   "start": 31.42,
+   "end": 54.34,
+   "lines": [
+    {
+     "text": "In 910 a duke founded a monastery at Cluny that no king or lord could control.",
+     "start": 32.32,
+     "end": 37.46
+    },
+    {
+     "text": "That mattered, because priesthoods were bought and sold. The church called it simony, after the magician in Acts who tried to buy the Spirit's power.",
+     "start": 38.08,
+     "end": 46.36
+    },
+    {
+     "text": "But Peter replied, \u201cMay your silver perish with you, because you thought you could buy the gift of God with money!",
+     "start": 47.0,
+     "end": 53.44
+    }
+   ]
+  },
+  {
+   "id": "canossa",
+   "kicker": "Canossa",
+   "level": 0.5,
+   "start": 53.54,
+   "end": 77.34,
+   "lines": [
+    {
+     "text": "Then reform reached the papacy. Gregory the Seventh took on simony, and kings who appointed bishops.",
+     "start": 54.44,
+     "end": 60.66
+    },
+    {
+     "text": "Defied by King Henry the Fourth, Gregory excommunicated him. In 1077 Henry stood three days in the cold at Canossa, waiting to be absolved.",
+     "start": 61.2,
+     "end": 71.02
+    },
+    {
+     "text": "Reform had freed the church from kings. It had also taught it to stand above them.",
+     "start": 71.78,
+     "end": 76.44
+    }
+   ]
+  },
+  {
+   "id": "noon",
+   "kicker": "High noon",
+   "level": 0.6,
+   "start": 76.54,
+   "end": 100.78,
+   "lines": [
+    {
+     "text": "By the thirteenth century, the church stood higher than any church before or since. Pope Innocent the Third made kings yield.",
+     "start": 77.44,
+     "end": 85.22
+    },
+    {
+     "text": "Gothic cathedrals rose, the first universities grew, and Thomas Aquinas taught that faith and reason are friends.",
+     "start": 85.82,
+     "end": 93.1
+    },
+    {
+     "text": "Francis of Assisi gave up everything to live with the poor, and to its credit, that church made room for him.",
+     "start": 93.74,
+     "end": 99.88
+    }
+   ]
+  },
+  {
+   "id": "sword",
+   "kicker": "The sword",
+   "level": 0.85,
+   "start": 99.98,
+   "end": 141.14,
+   "lines": [
+    {
+     "text": "The same church held the sword. In 1095 Pope Urban the Second called Europe's knights to recover Jerusalem.",
+     "start": 100.88,
+     "end": 107.5
+    },
+    {
+     "text": "In 1096 crusaders massacred the Jewish communities of Worms and Mainz, and in 1099 the people of Jerusalem, Muslim and Jew alike.",
+     "start": 108.16,
+     "end": 117.9
+    },
+    {
+     "text": "In 1204 a crusade sacked Christian Constantinople. From 1231 inquisitors hunted heresy, and in 1252 a papal decree allowed torture in church courts.",
+     "start": 118.68,
+     "end": 130.48
+    },
+    {
+     "text": "How did the people of a crucified Lord come to this?",
+     "start": 131.24,
+     "end": 133.88
+    },
+    {
+     "text": "Mostly not through cynicism, but through certainty joined to power. We aren't better than they were.",
+     "start": 134.5,
+     "end": 140.24
+    }
+   ]
+  },
+  {
+   "id": "avignon",
+   "kicker": "Avignon and Constance",
+   "level": 0.7,
+   "start": 140.34,
+   "end": 171.64,
+   "lines": [
+    {
+     "text": "The height gave way. From 1309 the popes lived at Avignon, in the French crown's shadow, for nearly seventy years.",
+     "start": 141.24,
+     "end": 149.26
+    },
+    {
+     "text": "Catherine of Siena, a dyer's daughter, went there to tell the pope to go home to Rome, and in 1377 he went.",
+     "start": 149.9,
+     "end": 157.2
+    },
+    {
+     "text": "Then rival popes reigned at Rome and Avignon, until the Council of Constance ended the schism in 1417.",
+     "start": 157.88,
+     "end": 164.58
+    },
+    {
+     "text": "That council put Jan Hus to death, though he came under a promise of safe conduct to plead for reform.",
+     "start": 164.82,
+     "end": 170.74
+    }
+   ]
+  },
+  {
+   "id": "eve",
+   "kicker": "The eve of 1517",
+   "level": 0.75,
+   "start": 170.84,
+   "end": 198.86,
+   "lines": [
+    {
+     "text": "Why did the Reformation come in 1517, and not sooner? Not for lack of reformers.",
+     "start": 171.74,
+     "end": 177.1
+    },
+    {
+     "text": "Waldo and Wycliffe were condemned. Hus and Savonarola were put to death.",
+     "start": 177.58,
+     "end": 181.76
+    },
+    {
+     "text": "Reform kept arriving, and the structure kept absorbing it, or killing it.",
+     "start": 182.44,
+     "end": 186.66
+    },
+    {
+     "text": "By the 1510s, indulgences were raising money to rebuild Saint Peter's in Rome.",
+     "start": 187.36,
+     "end": 192.36
+    },
+    {
+     "text": "After Gutenberg's press, the next Hus couldn't be silenced by silencing one man.",
+     "start": 193.06,
+     "end": 197.96
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.55,
+   "start": 198.06,
+   "end": 226.32,
+   "lines": [
+    {
+     "text": "Catholics see in Peter's successor a center that held the church together, and a church that grew its own reformers, from Cluny to Francis.",
+     "start": 198.96,
+     "end": 207.26
+    },
+    {
+     "text": "Orthodox Christians read these centuries from the East, which honored Rome as first, but as a brother, not a sovereign. The East didn't forget 1204.",
+     "start": 207.92,
+     "end": 216.9
+    },
+    {
+     "text": "Protestants see in Wycliffe and Hus a reform the church refused, and in the Reformation, God's Word reaching the people in their own tongue.",
+     "start": 217.48,
+     "end": 225.42
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 225.52,
+   "end": 242.211,
+   "lines": [
+    {
+     "text": "The church that did all this is the church we come from. Its height and its corruption are our inheritance, not someone else's.",
+     "start": 226.42,
+     "end": 233.74
+    },
+    {
+     "text": "And the sickness isn't medieval. Any church that confuses its power with Christ's kingdom can catch it, ours included.",
+     "start": 234.28,
+     "end": 241.311
+    }
+   ]
+  }
+ ]
+}

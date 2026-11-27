@@ -1,0 +1,270 @@
+{
+ "length": 250.98,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 14.04,
+   "lines": [
+    {
+     "text": "When Rome became Christian, was it the church's great victory, or the moment something went wrong?",
+     "start": 2.6,
+     "end": 8.06
+    },
+    {
+     "text": "The honest answer is both. And the question it raised has never closed.",
+     "start": 8.8,
+     "end": 13.14
+    }
+   ]
+  },
+  {
+   "id": "bridge",
+   "kicker": "The Milvian Bridge, 312",
+   "level": 0.3,
+   "start": 13.24,
+   "end": 41.2,
+   "lines": [
+    {
+     "text": "In 312, two rivals for the western empire met at the Milvian Bridge outside Rome. Constantine won.",
+     "start": 14.14,
+     "end": 19.54
+    },
+    {
+     "text": "Lactantius says a dream told him to mark his soldiers' shields with a sign of Christ.",
+     "start": 20.22,
+     "end": 26.44
+    },
+    {
+     "text": "Eusebius, writing later, says he and his army saw a cross of light in the sky, with the words, conquer by this.",
+     "start": 27.16,
+     "end": 34.3
+    },
+    {
+     "text": "The accounts don't quite match. But he fought under the sign of a crucified man, and won.",
+     "start": 34.98,
+     "end": 40.3
+    }
+   ]
+  },
+  {
+   "id": "milan",
+   "kicker": "Milan, 313",
+   "level": 0.4,
+   "start": 40.4,
+   "end": 64.44,
+   "lines": [
+    {
+     "text": "The next year at Milan, Constantine and his eastern colleague Licinius granted Christians full legal freedom.",
+     "start": 41.3,
+     "end": 47.82
+    },
+    {
+     "text": "A decade earlier, under Diocletian, believers saw their Scriptures seized and their friends killed. Now an emperor built them churches.",
+     "start": 48.46,
+     "end": 56.62
+    },
+    {
+     "text": "We may greet that moment with suspicion. Those who lived it greeted it with tears.",
+     "start": 57.24,
+     "end": 61.7
+    },
+    {
+     "text": "It felt like resurrection.",
+     "start": 62.16,
+     "end": 63.54
+    }
+   ]
+  },
+  {
+   "id": "gains",
+   "kicker": "What the church gained",
+   "level": 0.5,
+   "start": 63.64,
+   "end": 89.58,
+   "lines": [
+    {
+     "text": "The gains were real. The church got its buildings back, and its clergy were freed from civic duties.",
+     "start": 64.54,
+     "end": 70.06
+    },
+    {
+     "text": "Bishops became judges the state honored, often fairer to the poor. In 321, Sunday became a public day of rest.",
+     "start": 70.68,
+     "end": 78.56
+    },
+    {
+     "text": "Only an emperor could gather bishops from across the world. Nicaea met in 325 because Constantine wanted it, paid for it, and sat in it.",
+     "start": 79.26,
+     "end": 88.68
+    }
+   ]
+  },
+  {
+   "id": "costs",
+   "kicker": "What it cost",
+   "level": 0.6,
+   "start": 88.78,
+   "end": 115.24,
+   "lines": [
+    {
+     "text": "But there was a price tag no one read. The first cost was the emperor himself, inside the church's own business.",
+     "start": 89.68,
+     "end": 96.92
+    },
+    {
+     "text": "Constantine enforced Nicaea's creed with exile. Later emperors exiled the other side.",
+     "start": 97.52,
+     "end": 103.12
+    },
+    {
+     "text": "The second cost was the crowd. As the faith became legal, then favored, then official in 380, people poured in, some in truth, some for careers.",
+     "start": 103.88,
+     "end": 114.34
+    }
+   ]
+  },
+  {
+   "id": "trier",
+   "kicker": "Trier, the 380s",
+   "level": 0.72,
+   "start": 114.44,
+   "end": 141.26,
+   "lines": [
+    {
+     "text": "The third cost has a name. At Trier in the 380s, a Spanish ascetic, Priscillian, was accused of heresy and sorcery.",
+     "start": 115.34,
+     "end": 123.72
+    },
+    {
+     "text": "Urged on by fellow bishops, the imperial authorities put him to death. Christians had begun executing Christians over doctrine.",
+     "start": 124.38,
+     "end": 131.96
+    },
+    {
+     "text": "Martin of Tours protested and broke communion with the bishops responsible. The church that had suffered under the sword had picked it up.",
+     "start": 132.62,
+     "end": 140.36
+    }
+   ]
+  },
+  {
+   "id": "sincere",
+   "kicker": "The dispute",
+   "level": 0.65,
+   "start": 140.46,
+   "end": 168.84,
+   "lines": [
+    {
+     "text": "Was Constantine sincere? The answer is disputed.",
+     "start": 141.36,
+     "end": 144.68
+    },
+    {
+     "text": "He kept the pagan title of chief priest, and the Unconquered Sun on his coins. He had his own son executed, and was baptized only on his deathbed.",
+     "start": 145.3,
+     "end": 154.68
+    },
+    {
+     "text": "Yet he endowed churches where favor bought him nothing. And deathbed baptism was common in his century.",
+     "start": 155.3,
+     "end": 161.66
+    },
+    {
+     "text": "Most historians now see a real believer, his faith and ambition tangled all the way down.",
+     "start": 162.34,
+     "end": 167.94
+    }
+   ]
+  },
+  {
+   "id": "held",
+   "kicker": "The line that held",
+   "level": 0.85,
+   "start": 168.04,
+   "end": 198.8,
+   "lines": [
+    {
+     "text": "The capture was never total. In 361 the emperor Julian tried to restore the old gods, and reigned under two years.",
+     "start": 168.94,
+     "end": 176.92
+    },
+    {
+     "text": "In 390, after a riot in Thessalonica, the emperor Theodosius ordered a reprisal that killed thousands.",
+     "start": 177.46,
+     "end": 184.6
+    },
+    {
+     "text": "Ambrose, the bishop of Milan, barred him from the Lord's table until he did public penance. And he did.",
+     "start": 185.22,
+     "end": 191.64
+    },
+    {
+     "text": "For once, the church judged the state's violence instead of blessing it. Such moments were rare.",
+     "start": 192.28,
+     "end": 197.9
+    }
+   ]
+  },
+  {
+   "id": "city",
+   "kicker": "Rome falls, 410",
+   "level": 0.7,
+   "start": 198.0,
+   "end": 221.8,
+   "lines": [
+    {
+     "text": "When Rome fell to Alaric in 410, pagans blamed the abandoned gods, and Augustine spent thirteen years answering.",
+     "start": 198.9,
+     "end": 206.18
+    },
+    {
+     "text": "Rome's fortunes, he argued, were never the measure of the kingdom of God. No city of man is the church's destiny.",
+     "start": 206.82,
+     "end": 213.58
+    },
+    {
+     "text": "Hebrews says the same.",
+     "start": 214.22,
+     "end": 215.4
+    },
+    {
+     "text": "For here we do not have a permanent city, but we are looking for the city that is to come.",
+     "start": 216.02,
+     "end": 220.9
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 221.0,
+   "end": 244.878,
+   "lines": [
+    {
+     "text": "Every generation since has met its own 312, some power offering protection in exchange for blessing.",
+     "start": 221.9,
+     "end": 228.8
+    },
+    {
+     "text": "Nothing in the fourth century says favor must corrupt. Everything in it says favor will try.",
+     "start": 229.56,
+     "end": 234.76
+    },
+    {
+     "text": "The martyrs were asked whether they'd die for their Lord. Constantine's age asked something harder.",
+     "start": 235.4,
+     "end": 240.88
+    },
+    {
+     "text": "Could the church hold power without worshiping it?",
+     "start": 241.48,
+     "end": 243.978
+    }
+   ]
+  }
+ ]
+}
