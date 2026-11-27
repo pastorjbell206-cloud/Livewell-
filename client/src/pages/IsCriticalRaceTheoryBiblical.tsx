@@ -32,7 +32,7 @@ export default function IsCriticalRaceTheoryBiblical() {
     <Layout>
       <SEOMeta
         title="Is Critical Race Theory Biblical?"
-        description="Race, justice, and what the church actually owes the world — a Scripture-first reckoning that refuses both wholesale adoption and reflexive dismissal."
+        description="Race, justice, and what the church actually owes the world, in a Scripture-first reckoning that refuses both wholesale adoption and reflexive dismissal."
         image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/critical-race-theory-biblical`}
         type="book"

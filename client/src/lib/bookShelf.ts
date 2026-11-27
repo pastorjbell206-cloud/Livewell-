@@ -30,7 +30,7 @@ export const BOOK_SHELF: ShelfBook[] = [
     sub: "Reclaiming Jesus from American Politics",
     kicker: "Politics and the church",
     blurb:
-      "A pastor's critique of political idolatry in the American church — from Scripture, from church history, and from inside the sanctuary. Not a case for the other party. A case for the kingdom that does not run for office.",
+      "A pastor's critique of political idolatry in the American church, drawn from Scripture, from church history, and from inside the sanctuary. Not a case for the other party. A case for the kingdom that does not run for office.",
   },
   {
     slug: "blind-spots",

@@ -51,7 +51,7 @@ export function HitRow({ hit, books, words }: { hit: BibleHit; books: BibleBook[
   const name = books[hit.book]?.name ?? hit.slug;
   return (
     <li style={{ padding: "12px 0", borderBottom: "1px solid var(--border)" }}>
-      <Link href={chapterHref(hit.slug, hit.chapter, hit.verse)} style={{ ...quietLink, display: "inline-flex", alignItems: "center", minHeight: "32px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
+      <Link href={chapterHref(hit.slug, hit.chapter, hit.verse)} style={{ ...quietLink, display: "inline-flex", alignItems: "center", minHeight: "44px", fontFamily: "var(--U)", fontSize: "14px", fontWeight: 600 }}>
         {name} {hit.chapter}:{hit.verse}
       </Link>
       <p style={{ margin: "2px 0 0", fontFamily: "var(--B)", fontSize: "16.5px", lineHeight: 1.7, color: "var(--ink)", maxWidth: "68ch" }}>

@@ -33,7 +33,7 @@ export default function TheReliabilityOfScripture() {
     <Layout>
       <SEOMeta
         title="The Reliability of Scripture — by James Bell"
-        description="Why we can trust the Bible we have — the manuscripts, the canon, the archaeology, and the difference between what inerrancy claims and what its critics attack."
+        description="Why we can trust the Bible we have: the manuscripts, the canon, the archaeology, and the difference between what inerrancy claims and what its critics attack."
         image={`${SITE_URL}${SHARE}`}
         url={`${SITE_URL}/books/the-reliability-of-scripture`}
         type="book"
