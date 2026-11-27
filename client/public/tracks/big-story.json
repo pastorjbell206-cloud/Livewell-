@@ -1,0 +1,604 @@
+{
+  "slug": "big-story",
+  "title": "The whole Bible as one story",
+  "for": "I've never read the Bible",
+  "subtitle": "Eleven short sessions for someone who has never read the Bible, or only in pieces: the whole story from creation to new creation, one act at a time, so any book or passage has a place to stand.",
+  "intro": [
+    "This track is for someone who has never read the Bible, or has read it only in scattered pieces: a psalm at a funeral, a verse on a card, a story half remembered from childhood. It assumes no background and plenty of intelligence. Its aim is simple to say and takes a while to do. By the end you should be able to tell the whole Bible as one story, in your own words, and know roughly where any book or passage you open sits inside it.",
+    "There are eleven sessions, one for each act of the story as the Study Bible lays it out. Each takes about ten minutes. You read a few paragraphs, open one page on this site and spend time with it, then come back for one question, one thing to do and one verse to keep. You can go alone, but it is better with someone else. Each session has a guide for a group at the bottom."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The whole Bible as one story, or sitting down with one friend to go through it together. The group is for adults who have never read the Bible, or who have read it only in pieces and never seen how the pieces fit. Some will be curious skeptics, some new Christians, some people who grew up in church and were never shown the whole. A leader doesn't need to be a scholar. A leader needs to know the story a little better than the group, and to be glad when someone asks a question the leader can't answer.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight people is a good size, and two people work just as well. Meet for about seventy-five minutes, once a week, for eleven meetings, and keep the end time you promised. Mix people if you can: someone who has read the Bible for years often sees the story again for the first time when a newcomer asks why the book of Judges is in there at all."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A kitchen table works well. Have a Bible for each person, printed or on a phone, and if possible a screen where the group can watch a short film together. Make it plain at the first meeting that no one is expected to know anything, that anyone may pass on any question, that nobody has to read aloud or pray aloud, and that what people say about their own lives stays in the room unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person tells the story so far in two or three minutes, from creation to this week's act. Take turns each week.",
+          "Ten minutes: one person reads the verse aloud, and a few verses around it.",
+          "Thirty minutes: the three questions to talk over, in order. Leave room for the questions people bring themselves.",
+          "Ten minutes: the prayer prompt, for those who pray, in their own words. Nobody has to pray aloud.",
+          "Five minutes: name the next act and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "People reading the whole Bible for the first time meet its hardest pages early: the flood, the conquest of Canaan, the violence in Judges, the fall of Jerusalem. Don't hurry past them, and don't pretend they are easy. The Study Bible's notes, the hard passages page and the case for the faith take many of them up honestly. If no one knows, say so, write it down, and bring something back the next week.",
+          "Where Christians read a passage differently, as they do on the days of creation, the dates of the exodus or the thousand years in Revelation, say that faithful readers differ, set out the views the pages give, and leave the question open. The aim of this track is the shape of the whole story, and none of those questions changes that shape."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "The Bible's story passes through loss, exile, injustice and death, and someone in the room will be living through one of them. When someone's own story comes into the room, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry them back to the session. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that anyone is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: grief that has taken their sleep or appetite for weeks, guilt or fear that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Creation: a good world, and the image of God",
+      "minutes": 10,
+      "teaching": [
+        "The Bible is a library of sixty-six books, written over more than a thousand years in three languages, by kings, shepherds, priests, fishermen and a tax collector. It is also one story, and the story begins before anyone could write anything down. Genesis 1 and 2 were first heard in a world full of other creation stories. In Babylon the world was made from the carcass of a defeated goddess, and human beings were made to do the gods' drudgery. Genesis answers point by point: one God, no battle, a world called good again and again, and human beings made not as slaves but as God's own image.",
+        "Christians who share the same confession, that God made everything, still differ on how these chapters relate to science and to the age of the earth. Every reading agrees on what they are for: to say who made the world, what it is for, and who we are in it. Watch the garden, too. It is a place where God walks with people. The rest of the Bible keeps returning to that picture, and its last chapters bring it home."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "Creation, the first act of the story",
+        "href": "/study/bible/story/creation",
+        "why": "It sets Genesis 1 and 2 in their ancient world, says what to watch for, and gives the chapters to read for this act."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The whole Bible in two minutes",
+          "href": "/study/explorer/watch/bible-two-minutes",
+          "why": "See the whole road from the garden to the city before you walk it, so each act has somewhere to sit."
+        },
+        {
+          "kind": "context",
+          "label": "Was Genesis 1 answering Babylon, not modern science?",
+          "href": "/resources/context/genesis-one-in-its-world",
+          "why": "A longer look at the stories Genesis was answering, and why the first hearers would have heard it as a challenge."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "What the Bible Is",
+          "href": "/study/bible/guides/what-is-the-bible",
+          "why": "If you have never held a Bible, this says what is in it, how it is arranged, and where most people begin."
+        }
+      ],
+      "question": "If you had to say in one sentence what Genesis 1 claims about human beings, what would you say?",
+      "do": "Read Genesis 1 and 2 in one sitting. Each time God calls something good, make a mark in the margin or on a piece of paper, and count them at the end.",
+      "verse": {
+        "ref": "Genesis 1:27",
+        "text": "So God created man in His own image; in the image of God He created him; male and female He created them."
+      },
+      "group": {
+        "open": "Before this week, what did you think the Bible was mostly about?",
+        "discuss": [
+          "Babylon's story made people to be the gods' slaves. Genesis makes them God's image. What difference would it make to believe one story rather than the other?",
+          "Why do you think Genesis says the world is good so many times?",
+          "What does it tell you about the whole Bible that it begins in a garden where God walks with people?"
+        ],
+        "pray": "For those who pray: give thanks for something good in the made world you noticed this week, in a sentence or two."
+      }
+    },
+    {
+      "n": 2,
+      "title": "The fall: how the world came apart",
+      "minutes": 10,
+      "teaching": [
+        "The second act is short and devastating. It runs from Genesis 3 to Genesis 11, and it tells how the world God called good came apart. It starts with one act of distrust: the first couple reach for knowledge on their own terms, as if God were holding out on them. Then it spreads. A brother murders a brother, violence fills the earth, and at Babel a whole humanity organizes itself against God. The Bible's word for this is sin, and Genesis shows it less as a rule broken than as a relationship broken, with God, with each other, and with the earth itself.",
+        "Watch the other thread, though, because it runs right alongside. God comes looking for the man and the woman while they hide. He clothes them before they leave the garden. He puts a mark of protection on Cain, keeps Noah's family through the flood, and makes a covenant with every living creature. And in the middle of the curse there is a promise that the woman's offspring will crush the serpent. The rest of the Bible is the long working out of that promise."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "The fall, the second act of the story",
+        "href": "/study/bible/story/fall",
+        "why": "It traces the spread from one act of distrust to Babel, sets the flood beside its ancient parallels, and points out the grace at every step."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Genesis 3, passage by passage",
+          "href": "/study/bible/genesis/3#plain",
+          "why": "The chapter the whole act turns on, with plain-words notes on the serpent, the hiding, the curse and the promise."
+        },
+        {
+          "kind": "film",
+          "label": "What sin is",
+          "href": "/study/explorer/watch/what-sin-is",
+          "why": "Six pictures of sin at its root, the four things it breaks, and the God who comes looking."
+        }
+      ],
+      "question": "Where in Genesis 3 to 11 did you notice God being kind to people who had just turned from him?",
+      "do": "Read Genesis 3 slowly. Underline every question God asks in it, then write down the one that you think the rest of the Bible keeps asking.",
+      "verse": {
+        "ref": "Genesis 3:15",
+        "text": "And I will put enmity between you and the woman, and between your seed and her seed. He will crush your head, and you will strike his heel."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn.",
+        "If this story frightens you, remember how it ends: God promises never to do it again (9:11). If you have lived through a flood or a storm, it was not a sign that God had shut a door on you. Talk to someone you trust about what you carry, and the Find Help page has people you can call."
+      ],
+      "group": {
+        "open": "What did you used to think the story of Adam and Eve was about?",
+        "discuss": [
+          "Genesis shows sin spreading from a couple to a family to a city. Where do you see that pattern in the world now?",
+          "The first thing God does after the man and woman hide is call out to them. What does that say about him?",
+          "Why does it matter that the promise of rescue comes in the same chapter as the curse?"
+        ],
+        "pray": "For those who pray: name one place in the world, or in your own life, where things have come apart, and ask God to mend it."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Abraham: a promise to one family for every family",
+      "minutes": 10,
+      "teaching": [
+        "After Babel, God's answer to a scattered humanity is surprising. He doesn't start with everyone. He starts with one man from the city of Ur, Abraham, and makes him a promise in Genesis 12: land, descendants, and a blessing that will reach all the families of the earth. The choosing of one family is for the sake of every family. That is worth holding onto, because the Bible will spend a long time on Abraham's descendants, and a reader who forgets why they were chosen will misread most of it.",
+        "Then watch how every chapter of the rest of Genesis threatens the promise. Sarah can't have children. Famine drives the family into Egypt. Brothers deceive and betray each other, and one of them is sold as a slave. God keeps the promise anyway, often through the least likely person: the younger son, the deceiver, the brother in prison. These are not stories about good people being rewarded. They are stories about a faithful God and a very flawed family."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "Abraham, the third act of the story",
+        "href": "/study/bible/story/abraham",
+        "why": "It sets the patriarchs in their world between the empires, says what to watch for, and gives the path through Genesis 12 to 50."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "A blessing for all nations",
+          "href": "/study/explorer/watch/all-nations",
+          "why": "Follow the promise to Abraham from Babel's scattering all the way to a crowd no one can count."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible atlas",
+          "href": "/study/atlas",
+          "why": "Find Ur, Haran, Canaan and Egypt on the map, and see how far one family travelled on a promise."
+        },
+        {
+          "kind": "explorer",
+          "label": "Abraham's road in the Bible Explorer",
+          "href": "/study/explorer/abrahams-road",
+          "why": "Walk the family's road stop by stop, from Ur to the land God promised."
+        }
+      ],
+      "question": "Why do you think God chose to bless the whole world by starting with one family?",
+      "do": "Read Genesis 12:1-9. Write the three parts of God's promise in three short lines, and keep the paper in your Bible for the rest of this track.",
+      "verse": {
+        "ref": "Genesis 12:3",
+        "text": "I will bless those who bless you and curse those who curse you; and all the families of the earth will be blessed through you."
+      },
+      "group": {
+        "open": "Has anyone ever made you a promise that took years to keep?",
+        "discuss": [
+          "Abraham is chosen for the sake of all the families of the earth. How would it change things if the people chosen always remembered that?",
+          "Which part of the promise seems most threatened in the chapters you read?",
+          "Why do you think the Bible tells the patriarchs' failures so plainly instead of hiding them?"
+        ],
+        "pray": "For those who pray: pray for a family you know, your own or another, that is far from what it hoped to be."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The exodus: rescued, then given a law",
+      "minutes": 10,
+      "teaching": [
+        "Abraham's family ends Genesis in Egypt, and Exodus opens centuries later with them enslaved there. God hears their cry, sends Moses, and brings them out through the sea. This rescue becomes the event the rest of the Old Testament keeps pointing back to, the way a family keeps telling the story of the day everything changed. Notice the order. God rescues Israel first and gives the law second. The Ten Commandments begin with a reminder, not a demand: “I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery” (Exodus 20:2).",
+        "At Mount Sinai God binds Israel to himself in a covenant, and then gives instructions for the tabernacle, a tent where he will live among them. Much of Exodus is about that tent, because the garden is being echoed: God wants to dwell with his people again. Leviticus asks how people who are not holy can live near a God who is. Numbers shows a generation that won't trust him, and Deuteronomy calls the next generation to love him with all their heart."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "The exodus, the fourth act of the story",
+        "href": "/study/bible/story/exodus",
+        "why": "It sets the exodus in Egypt's New Kingdom, lays out the debate over its date fairly, and walks Exodus to Deuteronomy as one act."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The Exodus: out of Egypt",
+          "href": "/study/explorer/watch/the-exodus",
+          "why": "The story as the Bible tells it, in seven pictures, from the brick yards to the far side of the sea."
+        },
+        {
+          "kind": "film",
+          "label": "God with his people",
+          "href": "/study/explorer/watch/god-with-his-people",
+          "why": "Follow God's presence from the garden to the tent in the wilderness, and see where the story takes it next."
+        },
+        {
+          "kind": "doctrine",
+          "label": "Covenant in the Study Bible",
+          "href": "/study/bible/doctrines/covenant",
+          "why": "The covenant at Sinai is one of several, and this traces how each one builds on the last."
+        }
+      ],
+      "question": "What changes when obedience comes after rescue instead of before it?",
+      "do": "Read Exodus 14 and Exodus 20:1-17. Notice where the commandments begin, then write one sentence about why that first line matters.",
+      "verse": {
+        "ref": "Exodus 20:2",
+        "text": "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery."
+      },
+      "group": {
+        "open": "What story does your family tell over and over, and why do you think it keeps being told?",
+        "discuss": [
+          "Why do you think the Old Testament keeps going back to the exodus?",
+          "The Ten Commandments start with what God has done. How does that change the way you hear the commands that follow?",
+          "Exodus spends chapters on a tent where God will live. What does that say about what God wants?"
+        ],
+        "pray": "For those who pray: pray for people who are not free today, and give thanks for any rescue you have known."
+      }
+    },
+    {
+      "n": 5,
+      "title": "The land and the judges: a people coming apart",
+      "minutes": 10,
+      "teaching": [
+        "Joshua tells how Israel entered Canaan, a land of fortified cities and small kingdoms, and ends with God's promises kept. Judges tells what happened next, and it is one of the darkest books in the Bible. The same cycle comes round again and again: the people turn to other gods, fall under oppression, cry out, and God raises up a deliverer. But each round goes lower than the last, and the deliverers themselves become more broken. The book's refrain is that in those days there was no king in Israel, and everyone did what was right in his own eyes.",
+        "The Baal of the Canaanites was a storm god who promised rain and harvest, so turning to him felt like common sense to farmers in a dry land. That is worth remembering before judging Israel quickly. Then, in the same dark days, comes the small book of Ruth: a foreign widow's loyalty and a kinsman's kindness. Its last line names her great-grandson. He is David, and the story is about to need a king."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "The land and the judges, the fifth act of the story",
+        "href": "/study/bible/story/land-judges",
+        "why": "It sets Joshua, Judges and Ruth in the collapse of the late Bronze Age, explains Baal, and shows the cycle to watch for."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Judges: a people coming apart",
+          "href": "/study/explorer/watch/book-judges",
+          "why": "The wheel that runs downhill, the flawed deliverers, and the darkest chapters named plainly."
+        },
+        {
+          "kind": "book",
+          "label": "Open Ruth in the Study Bible",
+          "href": "/study/bible/ruth",
+          "why": "Four short chapters you can read in one sitting, with notes beside every one."
+        },
+        {
+          "kind": "study-tool",
+          "label": "Hard passages",
+          "href": "/study/hard-passages",
+          "why": "The conquest and the worst stories in Judges raise honest questions, and this page gathers the notes that take them up."
+        }
+      ],
+      "question": "Where do you see the refrain of Judges, everyone doing what is right in his own eyes, in the world you live in?",
+      "do": "Read the whole book of Ruth in one sitting. Then read its last five verses again and write down why a story about a widow ends with a king's name.",
+      "verse": {
+        "ref": "Judges 21:25",
+        "text": "In those days there was no king in Israel; everyone did what was right in his own eyes."
+      },
+      "group": {
+        "open": "Have you ever been somewhere with no one in charge? What happened?",
+        "discuss": [
+          "Why would worshiping a rain god have felt like common sense to a farmer in Canaan? What are the gods that feel like common sense now?",
+          "Judges says things got worse each time round. Why do you think the Bible kept such a grim book?",
+          "How does Ruth change the feel of these dark years?"
+        ],
+        "pray": "For those who pray: pray for a place or a community you know that seems to be coming apart, and for one person in it."
+      }
+    },
+    {
+      "n": 6,
+      "title": "The kingdom: David's throne, and a kingdom split in two",
+      "minutes": 10,
+      "teaching": [
+        "Israel asks for a king, and gets Saul, about 1050 BC. Then comes David, a shepherd who becomes the king every later king is measured against. In 2 Samuel 7 God makes him a promise: a son on his throne forever. An inscription found at Tel Dan in 1993 mentions the house of David, the earliest reference to him outside the Bible. Solomon builds the temple in Jerusalem, where God puts his name, and the garden and the tent are echoed again in stone.",
+        "Then it comes apart. After Solomon the kingdom splits in two, Israel in the north and Judah in the south, and most of the kings after David are found wanting. Elijah and Elisha stand against the worship of Baal. In this act the Study Bible also reads the Psalms, Israel's prayer book, and the wisdom books, Proverbs, Job and Ecclesiastes, which argue honestly about what happens when life doesn't fit the pattern. The promise to David stays open. Everyone is waiting for the son who will keep it."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "The kingdom, the sixth act of the story",
+        "href": "/study/bible/story/kingdom",
+        "why": "It gives the dates of Saul, David and Solomon, the inscriptions that touch the story, and the path through Samuel, Kings, Chronicles, the Psalms and wisdom."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The king",
+          "href": "/study/explorer/watch/the-king",
+          "why": "Seven pictures follow one crown from a shepherd boy to the promise to David and on to the son of David."
+        },
+        {
+          "kind": "film",
+          "label": "David and Goliath",
+          "href": "/study/explorer/watch/david-and-goliath",
+          "why": "The famous story as the text itself tells it, and what it is really about."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "The kings of Israel and Judah",
+          "href": "/study/bible/guides/kings-of-israel-and-judah",
+          "why": "Once the kingdom splits there are two lines of kings, and this guide keeps them straight."
+        }
+      ],
+      "question": "Why do you think the Bible measures every king against David, a man whose own failures it tells so plainly?",
+      "do": "Read 2 Samuel 7. Write down every promise God makes to David, then mark the ones that are still open when the act ends.",
+      "verse": {
+        "ref": "2 Samuel 7:16",
+        "text": "Your house and kingdom will endure forever before Me, and your throne will be established forever."
+      },
+      "group": {
+        "open": "Who was the best leader you have ever known, and what made them good?",
+        "discuss": [
+          "Israel wanted a king like the nations had. What do you think they were hoping a king would fix?",
+          "The kingdom splits within a generation of David. What does that tell you about putting hope in a leader?",
+          "Why might it matter that the Psalms and the wisdom books sit inside this act and not outside the story?"
+        ],
+        "pray": "For those who pray: pray for people who lead, in your country, your town or your church, by name if you can."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The prophets and the exile: hope from the ruins",
+      "minutes": 10,
+      "teaching": [
+        "The prophets are best read as covenant messengers, not fortune tellers. Read beside the kings they spoke to, they call Israel back to the covenant made at Sinai, name idolatry and injustice, and warn of what is coming. And it comes. Assyria destroys Samaria, the northern capital, in 722 BC. Babylon destroys Jerusalem and the temple in 587 or 586 BC and carries the people away. The place where God put his name is a ruin, and the people of the promise are exiles in a foreign city.",
+        "This is the low point of the Old Testament, and it is also where its greatest hopes are spoken. Jeremiah promises a new covenant written on the heart. Ezekiel promises a new heart and a new spirit. Isaiah speaks of a servant who suffers for the sins of many, and Daniel of a son of man who receives a kingdom that will never end. The hope does not deny the ruin. It rises out of it."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "The prophets and the exile, the seventh act of the story",
+        "href": "/study/bible/story/prophets-exile",
+        "why": "It places each prophet in the reign he names, gives the dates of the falls of Samaria and Jerusalem, and walks the path through the ruins."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Exile and coming home",
+          "href": "/study/explorer/watch/exile-and-home",
+          "why": "Follow one road from the garden gate through Egypt and Babylon to a city whose gates are never shut."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible's timeline",
+          "href": "/study/timeline",
+          "why": "The prophets are easier to follow once you can see which kings and empires each one spoke under."
+        }
+      ],
+      "question": "Why do you think the Bible's most hopeful promises come at its darkest moment?",
+      "do": "Read Jeremiah 31:31-34 and Ezekiel 36:24-28. Write down what is new in each promise, and what God says he himself will do.",
+      "verse": {
+        "ref": "Ezekiel 36:26",
+        "text": "I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh."
+      },
+      "care": [
+        "If you feel forsaken right now and the feeling will not lift, please tell someone you trust, a pastor, a friend or a doctor. The Find Help page on this site lists places to turn.",
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever been far from home and unable to go back? What did you miss most?",
+        "discuss": [
+          "The prophets spoke mostly to their own time. What would a prophet name in ours?",
+          "The temple was where God had put his name. What would its destruction have done to people's faith?",
+          "Which of the four hopes, a new covenant, a new heart, a suffering servant or an everlasting kingdom, speaks most to you, and why?"
+        ],
+        "pray": "For those who pray: pray for anyone you know who feels far from home, in body or in spirit."
+      }
+    },
+    {
+      "n": 8,
+      "title": "The return and the long wait",
+      "minutes": 10,
+      "teaching": [
+        "Persia conquers Babylon, and from 539 or 538 BC its kings let deported peoples go home. Some of the exiles return to Jerusalem. The homecoming is real but small. When the foundation of the new temple is laid, the old men who remember the first one weep. Nehemiah rebuilds the city's walls under threat, and the people keep falling back into the same failures. In Esther, set in the Persian court, God is never named and never absent.",
+        "Then the Old Testament ends, looking forward. Malachi promises that the Lord will suddenly come to his temple, and that a messenger will prepare his way. More than four centuries pass before the New Testament opens, and they are not silent: Greek rule, a persecution that outlawed the faith, a revolt, an independent kingdom, then Rome and Herod. By the time Matthew begins, synagogues stand in every town and many people are waiting for a Messiah, though not all for the same kind."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "The return and the silence, the eighth act of the story",
+        "href": "/study/bible/story/return-silence",
+        "why": "It dates the return, the rebuilt temple, Ezra and Nehemiah, and reads Haggai, Zechariah and Malachi inside the history they speak to."
+      },
+      "also": [
+        {
+          "kind": "reading-guide",
+          "label": "Between the Testaments",
+          "href": "/study/bible/guides/between-the-testaments",
+          "why": "The four centuries between Malachi and Matthew, with a table of dates, so the New Testament's world makes sense."
+        },
+        {
+          "kind": "context",
+          "label": "What kind of Messiah was Israel waiting for?",
+          "href": "/resources/context/messianic-expectation",
+          "why": "Not everyone was hoping for the same thing, and knowing the hopes explains why Jesus surprised so many."
+        }
+      ],
+      "question": "What does it feel like to get back something you lost, only to find it smaller than you remembered?",
+      "do": "Read Ezra 3:10-13 and Malachi 3:1-4. Write down what each passage is waiting for.",
+      "verse": {
+        "ref": "Malachi 3:1",
+        "text": "Behold, I will send My messenger, who will prepare the way before Me."
+      },
+      "group": {
+        "open": "What is the longest you have ever had to wait for something that mattered?",
+        "discuss": [
+          "Some people at the temple's foundation wept and some shouted for joy. Why do you think both happened?",
+          "Esther never names God. What does it mean to say he is still present in that story?",
+          "Why do you think the Christian Old Testament ends with a promise instead of a conclusion?"
+        ],
+        "pray": "For those who pray: pray for anyone who is still waiting for something they have prayed for a long time."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Christ: the promises kept in Jesus",
+      "minutes": 10,
+      "teaching": [
+        "Jesus of Nazareth was born under the emperor Augustus, before Herod the Great died in 4 BC, and was crucified in Jerusalem under the Roman prefect Pontius Pilate, most likely in AD 30 or 33. The New Testament claims that in him every thread of the story so far is pulled together. He is the son of David the kingdom was waiting for, the servant Isaiah spoke of, the one in whom God himself comes to live with his people. John says it in one line: “The Word became flesh and made His dwelling among us” (John 1:14). The word for dwelling recalls the tent in the wilderness.",
+        "The four Gospels are four portraits of one person. Matthew shows the promised king, Mark the Son of God who came to serve and give his life, Luke the Savior of outsiders and the poor, John the eternal Word made flesh. Every one slows down at the last week, because the writers knew the cross was the centre. And every one reports the empty tomb, on which the rest of the New Testament stands."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "Christ, the ninth act of the story",
+        "href": "/study/bible/story/christ",
+        "why": "It sets Jesus in his Roman world, gives the dates and the writers outside the church who mention him, and reads the four Gospels as four portraits."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Sacrifice and the Lamb",
+          "href": "/study/explorer/watch/the-lamb",
+          "why": "Follow a thread from a covering in the garden to the Passover lamb, and see why John calls Jesus the Lamb of God."
+        },
+        {
+          "kind": "book",
+          "label": "Open Mark in the Study Bible",
+          "href": "/study/bible/mark",
+          "why": "The shortest Gospel, fast and vivid, the one most people should read first, with notes on every chapter."
+        }
+      ],
+      "question": "Which thread of the story so far, the garden, the promise to Abraham, the exodus, the king or the exile, did you most see picked up in Jesus?",
+      "do": "Read the whole Gospel of Mark this week, a few chapters a day. Each time you spot an echo of an earlier act, write down the chapter and the act.",
+      "verse": {
+        "ref": "John 1:14",
+        "text": "The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn.",
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Before this track, who did you think Jesus was?",
+        "discuss": [
+          "Why do you think the church kept four Gospels instead of blending them into one?",
+          "Every Gospel slows down at the last week of Jesus' life and reports the empty tomb. What does that tell you about what the writers thought mattered most?",
+          "John says the Word made his dwelling among us. How does that connect with the garden, the tent and the temple?"
+        ],
+        "pray": "For those who pray: give thanks for what you have seen of Jesus so far, and bring him one question you still have."
+      }
+    },
+    {
+      "n": 10,
+      "title": "The church and the Spirit",
+      "minutes": 10,
+      "teaching": [
+        "Acts opens with the risen Jesus telling his followers they will be his witnesses in Jerusalem, in Judea and Samaria, and to the ends of the earth, and the book follows that road. At Pentecost the Spirit is poured out, and the message moves outward along the roads and sea lanes of the Roman Empire, in Greek, the common language from Syria to Rome. The promise to Abraham, a blessing for all the families of the earth, is beginning to be kept.",
+        "That raised the great question of the early church: must Gentiles become Jews to follow Jesus? The letters were written into this movement, most by Paul in the 50s and early 60s, some by Peter, James, John and Jude, and one, Hebrews, by an author no one can name. Read each letter as one side of a real conversation with a real church. Follow its argument before you pull out a verse. A verse lifted out of its letter is like a sentence lifted out of someone else's phone call."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "The church and the Spirit, the tenth act of the story",
+        "href": "/study/bible/story/church-spirit",
+        "why": "It dates Paul's travels by fixed points, and reads each letter at the place in Acts where it was written."
+      },
+      "also": [
+        {
+          "kind": "explorer",
+          "label": "Paul's travels in the Bible Explorer",
+          "href": "/study/explorer/pauls-travels",
+          "why": "Follow Paul city by city on the map, and see where each of his letters was going."
+        },
+        {
+          "kind": "film",
+          "label": "The Holy Spirit through the Bible",
+          "href": "/study/explorer/watch/holy-spirit",
+          "why": "From the waters of Genesis 1 to the last invitation of Revelation, the Spirit through the whole story."
+        }
+      ],
+      "question": "What do you think it would have cost a first-century Jew to welcome Gentiles to the same table?",
+      "do": "Read Acts 1 and Acts 2. Then find Jerusalem, Samaria and Rome on a map and write down how far the message has to go.",
+      "verse": {
+        "ref": "Acts 1:8",
+        "text": "But you will receive power when the Holy Spirit comes upon you, and you will be My witnesses in Jerusalem, and in all Judea and Samaria, and to the ends of the earth."
+      },
+      "group": {
+        "open": "Have you ever been welcomed somewhere you didn't expect to belong?",
+        "discuss": [
+          "How does Acts 1:8 work as a map of the whole book?",
+          "Why do you think the question of the Gentiles was so hard for the first Christians?",
+          "What changes when you read a letter as one side of a conversation instead of a collection of verses?"
+        ],
+        "pray": "For those who pray: pray for the church in a country far from yours, and for people in your town who have never been welcomed."
+      }
+    },
+    {
+      "n": 11,
+      "title": "New creation: the story's end, and where it begins again",
+      "minutes": 10,
+      "teaching": [
+        "The last book of the Bible was written by a prophet named John, exiled on the island of Patmos, to seven churches in cities where loyalty to Rome was shown by worshiping the emperor. It is full of symbols, beasts and numbers, and Christians have read it in more than one way. But its centre is plain. In the throne room, John is told to look at the Lion of the tribe of Judah, and when he turns he sees a Lamb who was slain. The one who rules history is the one who gave himself.",
+        "Then watch the last two chapters bring the first two home. A river, the tree of life, no more curse, and God dwelling with his people. The Bible doesn't end with souls escaping the world. It ends with the world made new, and the garden become a city. You have now walked the whole road. The question this story leaves you with is not whether you can tell it. It is where you stand in it."
+      ],
+      "open": {
+        "kind": "story",
+        "label": "New creation, the last act of the story",
+        "href": "/study/bible/story/new-creation",
+        "why": "It sets Revelation in its Roman world, gives the debate over its date, and shows how its last chapters gather up the whole Bible."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The kingdom of God",
+          "href": "/study/explorer/watch/kingdom-of-god",
+          "why": "Seven pictures watch the kingdom grow from God's rule over all to the day it comes in full."
+        },
+        {
+          "kind": "plan",
+          "label": "The whole story, read through in 2027",
+          "href": "/study/bible/guides/whole-story-2027",
+          "why": "When you are ready to read every chapter along the story's line, this plan walks the path a day at a time."
+        },
+        {
+          "kind": "track",
+          "label": "The Old Testament, section by section",
+          "href": "/tracks/old-testament",
+          "why": "The next track in this program takes the Old Testament one section at a time, now that you know where each fits."
+        }
+      ],
+      "question": "Having walked the whole story, where do you think you stand in it now?",
+      "do": "Read Genesis 1 to 2 and Revelation 21 to 22 side by side. Then tell the whole story aloud to someone, in five minutes, from the garden to the city.",
+      "verse": {
+        "ref": "Revelation 21:5",
+        "text": "And the One seated on the throne said, “Behold, I make all things new.” Then He said, “Write this down, for these words are faithful and true.”"
+      },
+      "group": {
+        "open": "What did you expect the book of Revelation to be about?",
+        "discuss": [
+          "John is told to look for a lion and sees a slain lamb. What does that say about how God rules?",
+          "Which pictures from Genesis 1 and 2 come back in Revelation 21 and 22?",
+          "Now that you can tell the whole story, which act do you most want to read more of, and why?"
+        ],
+        "pray": "For those who pray: give thanks for something you have learned on this road, and pray for each person in the group by name."
+      }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 /**
  * The picture beside each room in the menu's panels (James, 2026-11-27: "I
  * want you to have those pictures drop down for all of those"): a plate of
- * the art kit (components/art/plates.tsx) for every room of the catalogue's
- * doors, and for each essay section. A room not listed shows its door's plate.
+ * the art kit (components/art/plates.tsx) for every room in the menu
+ * (nav/menu.ts). A room not listed shows its door's plate.
  */
 import type { PlateName } from "../art/Plate";
 
@@ -41,16 +41,24 @@ export const ROOM_PICTURE: Record<string, PlateName> = {
   "about.contact": "quill",
   "about.subscribe": "jar",
   "about.support": "tree",
-};
-
-/** The essay shelf's sections (lib/shelf.json), by slug. */
-export const SECTION_PICTURE: Record<string, PlateName> = {
-  "the-mirror": "lens",
-  "faith-and-power": "arch",
-  "after-christendom": "tree",
-  "american-church": "basilica",
-  "ancient-church": "jars",
-  "bible-in-its-world": "book",
-  doubt: "lantern",
-  "ordinary-faithfulness": "house",
+  "bible.word": "quill",
+  "bible.cross-references": "compass",
+  "bible.atlas": "arch",
+  "bible.timeline": "sundial",
+  "bible.explorer": "tree",
+  "bible.tracks": "lectern",
+  "tools.booklets": "letter",
+  "academy.exploring": "lantern",
+  "academy.new-to-faith": "house",
+  "academy.big-story": "books",
+  "academy.study": "lens",
+  "academy.books": "book",
+  "academy.beliefs": "lectern",
+  "academy.history": "basilica",
+  "academy.living": "table",
+  "academy.teens": "compass",
+  "academy.home": "jar",
+  "families.academy": "tree",
+  "publishing.essays": "quill",
+  "publishing.about": "letter",
 };

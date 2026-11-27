@@ -59,6 +59,12 @@ function answerSlugs() {
   return new Set([...read(p).matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)].map((m) => m[1]));
 }
 
+/** The names of the JSON files in a folder, without ".json". */
+function filesIn(dir) {
+  const full = join(ROOT, dir);
+  return existsSync(full) ? new Set(readdirSync(full).filter((f) => f.endsWith(".json")).map((f) => f.slice(0, -5))) : new Set();
+}
+
 function bibleBooks() {
   const books = json("client/public/bible/books.json") || [];
   return new Map(books.map((b) => [b.slug, b.chapters]));
@@ -95,6 +101,10 @@ function paramSources() {
     "/study/explorer/watch/:slug": new Set((json("client/public/explorer/index.json")?.films || []).filter((f) => f.status === "finished").map((f) => f.slug)),
     "/study/explorer/:slug": new Set((json("client/public/explorer/index.json")?.stops || []).filter((s) => s.status === "finished").map((s) => s.slug)),
     "/study/bible/:book": new Set(books.keys()),
+    // The Study Bible's own pages a track can open (added for the Academy, 2026-11-27).
+    "/study/bible/doctrines/:id": filesIn("client/public/bible/doctrines"),
+    "/study/bible/guides/:id": filesIn("client/public/bible/guides"),
+    "/study/bible/story/:act": new Set((json("client/public/bible/story.json")?.acts || []).map((a) => a.id)),
   };
 }
 

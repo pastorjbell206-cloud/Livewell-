@@ -496,6 +496,7 @@ const SECTION_BY_ROUTE = {
   "/how-tos/": { name: "How-To Library", path: "/how-tos" },
   "/plans/": { name: "Care Plans", path: "/plans" },
   "/tracks/": { name: "Tracks", path: "/tracks" },
+  "/academy/": { name: "Academy", path: "/academy" },
   "/theology/doctrine/": { name: "Theology", path: "/theology" },
   "/justice/topic/": { name: "Prophetic Justice", path: "/justice" },
   "/disruption/topic/": { name: "Prophetic Disruption", path: "/disruption" },
@@ -2317,6 +2318,35 @@ async function main() {
     }
     wrote += n;
     console.log(`[prerender] wrote ${n} track, session, leader's guide and print pages`);
+  }
+
+  // The Academy's programs (/academy/:program), from client/public/academy/programs.json:
+  // who each is for, what the reader will be able to do, and its tracks in order.
+  {
+    const programs = readJsonSafe("client/public/academy/programs.json")?.programs || [];
+    const index = readJsonSafe("client/public/tracks/index.json")?.tracks || [];
+    for (const p of programs) {
+      const route = `/academy/${p.slug}`;
+      const tracks = p.tracks.map((s) => index.find((t) => t.slug === s)).filter(Boolean);
+      const sessions = tracks.reduce((n, t) => n + t.sessions.length, 0);
+      const crumbs = [{ name: "Home", path: "" }, SECTION_BY_ROUTE["/academy/"], { name: p.title, path: route }];
+      writeRoute(
+        template,
+        { path: route },
+        buildHead({ title: `${p.title}: an Academy Program | LiveWell`, description: `${p.reader} ${p.outcome}`, url: `${SITE_URL}${route}`, image: ogImageUrl(p.title), schemas: [breadcrumbSchema(crumbs)] }),
+        article([
+          `<p class="pre-eyebrow"><a href="/academy">The LiveWell Academy</a></p>`,
+          `<h1>${escapeHtml(p.title)}</h1>`,
+          `<p class="pre-subtitle">${escapeHtml(p.reader)}</p>`,
+          `<p>${escapeHtml(p.outcome)}</p>`,
+          `<p>${tracks.length} tracks, ${sessions} sessions of about ten minutes.</p>`,
+          sec("The path", `<ol>\n${tracks.map((t) => `<li><a href="/tracks/${t.slug}">${escapeHtml(t.title)}</a>: ${escapeHtml(t.subtitle)}</li>`).join("\n")}\n</ol>`),
+          `<p>LiveWell Academy certificates are unaccredited. They record your own study on this site; they are not academic credit, a degree, a diploma or a credential for ordination or ministry.</p>`,
+        ]),
+      );
+      wrote++;
+    }
+    console.log(`[prerender] wrote ${programs.length} Academy program pages`);
   }
 
   // A page per finished stop of the Bible Explorer (/study/explorer/:slug).

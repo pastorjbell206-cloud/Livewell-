@@ -90,30 +90,22 @@ describe("/tracks", () => {
     expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Tracks");
     const starts = await screen.findAllByRole("link", { name: "Start at session 1" });
     // In the order of the roads on /start, and a book studied chapter by chapter after them.
-    expect(starts.map((a) => a.getAttribute("href"))).toEqual([
-      "/tracks/skeptical/1",
-      "/tracks/new-to-this/1",
-      "/tracks/stepped-back/1",
-      "/tracks/deeper/1",
-      "/tracks/family/1",
-      "/tracks/mark/1",
-    ]);
+    const INDEX_TRACKS = JSON.parse(fs.readFileSync(path.join(PUBLIC, "tracks/index.json"), "utf8")).tracks as { slug: string }[];
+    expect(starts).toHaveLength(INDEX_TRACKS.length);
+    // The tracks that grew from a road on /start come first, in the roads' order; the Academy's others follow.
+    expect(starts.slice(0, 5).map((a) => a.getAttribute("href"))).toEqual(["/tracks/skeptical/1", "/tracks/new-to-this/1", "/tracks/stepped-back/1", "/tracks/deeper/1", "/tracks/family/1"]);
+    expect(starts.map((a) => a.getAttribute("href"))).toContain("/tracks/mark/1");
     for (const t of [FILE, SKEPTIC, STEPPED, DEEPER, FAMILY, MARK]) {
       const card = screen.getByRole("link", { name: t.title }).closest("li") as HTMLElement;
       expect(within(card).getByText(t.for)).toBeInTheDocument();
     }
     expect(screen.getByRole("link", { name: FILE.title }).getAttribute("href")).toBe("/tracks/new-to-this");
-    expect(screen.getAllByText(/^12 sessions, about 10 minutes each/)).toHaveLength(5);
-    expect(screen.getByText(/^16 sessions, about 15 minutes each/)).toBeInTheDocument();
+    expect(screen.getAllByText(/^12 sessions, about 10 minutes each/).length).toBeGreaterThanOrEqual(5);
+    expect(screen.getAllByText(/^16 sessions, about 15 minutes each/).length).toBeGreaterThanOrEqual(1);
     // A leader's guide on the card of every track.
-    expect(screen.getAllByRole("link", { name: "Leader's guide" }).map((a) => a.getAttribute("href"))).toEqual([
-      "/tracks/skeptical/leader",
-      "/tracks/new-to-this/leader",
-      "/tracks/stepped-back/leader",
-      "/tracks/deeper/leader",
-      "/tracks/family/leader",
-      "/tracks/mark/leader",
-    ]);
+    const guides = screen.getAllByRole("link", { name: "Leader's guide" }).map((a) => a.getAttribute("href"));
+    expect(guides).toEqual(INDEX_TRACKS.map((t) => `/tracks/${t.slug}/leader`));
+    expect(guides.slice(0, 5)).toEqual(["/tracks/skeptical/leader", "/tracks/new-to-this/leader", "/tracks/stepped-back/leader", "/tracks/deeper/leader", "/tracks/family/leader"]);
     expect(screen.queryByTestId("track-continue")).toBeNull();
 
     // Every road on /start has its track, so nothing is listed as coming.

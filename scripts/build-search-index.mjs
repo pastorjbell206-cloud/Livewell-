@@ -225,6 +225,8 @@ const MAIN_PAGES = [
   { title: "Guides to reading the Bible", href: "/study/bible/guides", blurb: "Short guides to what the Bible is, how it came to us, and how to read it.", keywords: "how to read the bible who wrote the bible canon translations" },
   { title: "Read the whole story in 2027", href: "/study/bible/guides/whole-story-2027", blurb: "A plan for reading through the Bible's story in a year.", keywords: "reading plan bible in a year daily" },
   { title: "Bible reading plans", href: "/study/plans", blurb: "Every reading plan in one place, by length and by who is reading.", keywords: "reading plan reading plans bible in a year new testament psalms daily family devotional schedule" },
+  { title: "The LiveWell Academy", href: "/academy", blurb: "Ten programs that take you from never having opened the Bible to reading it well, knowing what Christians believe and why, and living it. Short sessions, your progress kept, certificates (unaccredited).", keywords: "academy bible school bible college course courses curriculum program programs class classes learn the bible from the beginning certificate certificates certification online bible course free beginner new believer teens teenagers skeptic how to study the bible theology church history" },
+  { title: "What I've learned", href: "/academy/learned", blurb: "Your Academy record: the sessions you have done, your own answers, and your certificates, kept on this device.", keywords: "academy progress record my answers certificates what i've learned" },
   { title: "Tracks", href: "/tracks", blurb: "Short sessions in order, with your place kept: for someone new to faith, for the skeptic, for someone who has stepped back, for going deeper in study, history and doctrine, for a parent leading a family, and through the Gospel of Mark a chapter at a time.", keywords: "family parents parenting children kids teenagers home table family devotions catechism tracks track discipleship pathway pathways steps step by step sessions lessons course new believer new christian first steps follow jesus group guide skeptic skeptical doubter apologetics stepped back left the church leaving church church hurt deconstruction deconstructing go deeper going deeper bible study how to study doctrine creeds church history theology gospel of mark bible study chapter by chapter leader's guide small group printable" },
   { title: "How to study the Bible", href: "/study/how-to-study", blurb: "Seven steps that work on any chapter, and a guided study that takes you through them one screen at a time.", keywords: "how to study the bible bible study method steps inductive observe interpret apply guided study" },
   { title: "Church history", href: "/theology/history", blurb: "The story of the church from the apostles to now: its eras, its people, its councils, and the false teachings it answered.", keywords: "history of the church christian history timeline early church fathers reformation councils" },
@@ -365,6 +367,19 @@ function studyBible() {
     return l ? [{ title: `${str(l.act)}: ${str(l.title)}`, blurb: clip(l.summary), facet: "The story of the Bible", keywords: str(l.range), href: `/study/bible/story/${a.id}` }] : [];
   });
   return [...books, ...guides, ...acts];
+}
+
+/** Each program of the Academy (client/public/academy/programs.json). */
+function academy() {
+  const file = "academy/programs.json";
+  if (!fs.existsSync(path.join(PUB, file))) return [];
+  return readJson(file).programs.map((p) => ({
+    title: str(p.title),
+    blurb: clip(`${p.reader} ${p.outcome}`),
+    facet: "Academy",
+    keywords: "academy program course curriculum certificate",
+    href: `/academy/${p.slug}`,
+  }));
 }
 
 /** Each track and each of its sessions, its leader's guide when it has one, and the whole track to print, from the tracks index (scripts/build-tracks-index.mjs). */
@@ -538,6 +553,7 @@ export function buildSearchIndex() {
       source("Honest Answers", "/answers", answers()),
       source("Christ and the Nation", "/nation", nation()),
       source("The Study Bible", "/study/bible", studyBible()),
+      ...(academy().length ? [source("Academy", "/academy", academy())] : []),
       ...(tracks().length ? [source("Tracks", "/tracks", tracks())] : []),
       source("Doctrine", "/study/bible/doctrines", doctrines()),
       source("Compare the Views", "/theology/compare", debatedDoctrines()),

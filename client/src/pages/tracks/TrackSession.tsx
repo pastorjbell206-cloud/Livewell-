@@ -13,7 +13,7 @@
  */
 import { useEffect, type ReactNode } from "react";
 import { Link, useRoute } from "wouter";
-import { ArrowRight, BookOpen, Check, CornerDownRight, HelpCircle, Lock, Milestone, Printer, Users } from "lucide-react";
+import { ArrowRight, Award, BookOpen, Check, CornerDownRight, HelpCircle, Lock, Milestone, Printer, Users } from "lucide-react";
 
 import Layout from "@/components/Layout";
 import LoadFailed from "@/components/LoadFailed";
@@ -24,6 +24,7 @@ import { RefText } from "@/components/VerseRef";
 import InnerHead from "@/components/art/InnerHead";
 import { KEPT_HERE } from "@/lib/study-method";
 import { TRACKS_PATH, fetchTrack, kindLabel, leaderHref, sessionHref, setReturn, trackHref, withDone, withNotes, withStarted, type Track, type TrackLink, type TrackSession as Session } from "@/lib/tracks";
+import { certificateHref, trackComplete } from "@/lib/academy";
 import { ProgressBar, useLoad, useTracksProgress } from "./parts";
 import "./tracks.css";
 
@@ -203,6 +204,10 @@ function SessionBody({ track, s }: { track: Track; s: Session }) {
                 {next ? (
                   <Link href={sessionHref(track.slug, next.n)} className="btn">
                     Go on to session {next.n} <ArrowRight aria-hidden="true" size={18} strokeWidth={1.75} />
+                  </Link>
+                ) : trackComplete(progress.tracks[track.slug], track.sessions.length) ? (
+                  <Link href={certificateHref("track", track.slug)} className="btn">
+                    <Award aria-hidden="true" size={18} strokeWidth={1.75} /> Track finished: your certificate
                   </Link>
                 ) : (
                   <Link href={trackHref(track.slug)} className="btn">

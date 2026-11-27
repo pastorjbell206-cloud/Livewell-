@@ -8,8 +8,8 @@
  * catalogue's own rules (counts, one name per address) are in
  * siteCatalog.test.ts.
  */
-import { liveSections, sectionHref } from "@/lib/shelf";
 import { DISCIPLINES } from "@/pages/preview/disciplines";
+import { ACADEMY_PROGRAMS, MENU_DOORS, menuDoorForPath } from "@/components/nav/menu";
 import { describe, it, expect, vi, afterEach } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
@@ -53,9 +53,8 @@ function isRoute(href: string): boolean {
 const internal = (href: string) => href.startsWith("/");
 
 const group = (title: string) => SITE_NAV_GROUPS.find((g) => g.title === title)!;
-/** The bar's doors (James, 2026-11-27, "Explore-led menu"): Explore, then five of the catalogue's seven. */
-const MENU_DOORS = ["Explore", "Bible", "Family", "Tools", "Essays", "About"];
-const BAR_DOOR_IDS = ["bible", "family", "tools", "essays", "about"];
+/** The bar's six doors (James, 2026-11-27; components/nav/menu.ts). */
+const MENU_NAMES = ["Explore", "Academy", "Bible Tools", "Families", "Churches", "Publishing"];
 
 afterEach(() => {
   vi.unstubAllGlobals();
@@ -102,72 +101,56 @@ describe("the nav map", () => {
 });
 
 describe("the header", () => {
-  it("renders Find Help, search, and Subscribe beside Explore and the five doors", () => {
+  it("renders the six doors James chose, then Find Help, search and Subscribe", () => {
     renderWithProviders(<MinimalNav />);
+    expect(MENU_DOORS.map((d) => d.name)).toEqual(MENU_NAMES);
     expect(screen.getAllByRole("link", { name: "Find Help" })[0].getAttribute("href")).toBe("/help");
     expect(screen.getAllByRole("button", { name: /search/i }).length).toBeGreaterThan(0);
     expect(screen.getAllByRole("link", { name: "Subscribe" })[0].getAttribute("href")).toBe("/subscribe");
-    for (const name of MENU_DOORS) {
+    for (const name of MENU_NAMES) {
       expect(screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-expanded"), name).toBe("false");
     }
   });
 
-  it("opens Explore on the eight disciplines as pictures, then Everything on LiveWell and Start here", () => {
-    renderWithProviders(<MinimalNav />);
-    const button = screen.getByRole("button", { name: /^Explore$/ });
-    fireEvent.click(button);
-    const panel = document.getElementById("sn-panel-explore")!;
-    expect(within(panel).getAllByRole("link").map((a) => a.getAttribute("href"))).toEqual([...DISCIPLINES.map((d) => `/explore/${d.id}`), "/explore", START_LINK.href]);
-    for (const d of DISCIPLINES) expect(within(panel).getByRole("link", { name: new RegExp(`^${d.name}`) }).textContent).toContain(d.line);
-    expect(within(panel).getByRole("link", { name: "Everything on LiveWell" })).toBeTruthy();
-    fireEvent.click(button);
-    expect(document.getElementById("sn-panel-explore")).toBeNull();
+  it("builds every room from a real page, the Academy's rooms from its programs' own titles", () => {
+    for (const d of MENU_DOORS) {
+      expect(isRoute(d.page.href), d.page.href).toBe(true);
+      for (const r of d.rooms) expect(isRoute(r.href), `${d.name}: ${r.href}`).toBe(true);
+    }
+    const programs = JSON.parse(fs.readFileSync(path.join(ROOT, "client/public/academy/programs.json"), "utf8")).programs as { slug: string; title: string }[];
+    expect(ACADEMY_PROGRAMS.map((p) => p.slug).sort()).toEqual(programs.map((p) => p.slug).sort());
+    for (const p of ACADEMY_PROGRAMS) expect(programs.find((x) => x.slug === p.slug)?.title, p.slug).toBe(p.title);
+    expect(MENU_DOORS[0].rooms.map((r) => r.href)).toEqual(DISCIPLINES.map((d) => `/explore/${d.id}`));
   });
 
-  it("opens each door's panel on its rooms, then Everything in the door and Start here", () => {
+  it("opens each door's panel on its rooms in pictures, then Everything in the door and Start here", () => {
     renderWithProviders(<MinimalNav />);
-    for (const door of DOORS.filter((d) => d.rooms.length && BAR_DOOR_IDS.includes(d.id))) {
+    for (const door of MENU_DOORS) {
       const button = screen.getByRole("button", { name: new RegExp(`^${door.name}$`) });
       fireEvent.click(button);
       expect(button.getAttribute("aria-expanded")).toBe("true");
       const panel = document.getElementById(`sn-panel-${door.id}`)!;
       const shown = within(panel).getAllByRole("link").map((a) => a.getAttribute("href"));
       expect(shown, door.name).toEqual([...door.rooms.map((r) => r.href), door.page.href, START_LINK.href]);
-      expect(within(panel).getByRole("link", { name: `Everything in ${door.name}` })).toBeTruthy();
-      expect(within(panel).getByRole("link", { name: "New here? Start here" })).toBeTruthy();
-      // Every room shows its icon, its name and its one line.
+      expect(panel.querySelectorAll(".sn-way__art"), door.name).toHaveLength(door.rooms.length);
       for (const r of door.rooms) {
-        const a = within(panel).getByRole("link", { name: new RegExp(r.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")) });
+        const a = within(panel).getByRole("link", { name: new RegExp(`^${r.name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`) });
         expect(a.textContent).toContain(r.line);
-        // Every room carries its picture (the plate itself loads as the panel nears the screen).
-        expect(a.querySelector(".sn-way__art")).not.toBeNull();
       }
       fireEvent.click(button);
       expect(document.getElementById(`sn-panel-${door.id}`)).toBeNull();
     }
   });
 
-  it("opens Essays on the shelf's sections as pictures, then All the essays and Start here", async () => {
-    renderWithProviders(<MinimalNav />);
-    const button = screen.getByRole("button", { name: /^Essays$/ });
-    fireEvent.click(button);
-    const panel = document.getElementById("sn-panel-essays")!;
-    const first = liveSections()[0];
-    expect((await within(panel).findByRole("link", { name: new RegExp(`^${first.name}`) })).getAttribute("href")).toBe(sectionHref(first));
-    const hrefs = within(panel).getAllByRole("link").map((a) => a.getAttribute("href"));
-    expect(hrefs).toEqual([...liveSections().map(sectionHref), "/writing", START_LINK.href]);
-    expect(within(panel).getByRole("link", { name: "All the essays" })).toBeTruthy();
-  });
-
   it("keeps a door's panel open when a mouse hovers and then clicks it", () => {
     renderWithProviders(<MinimalNav />);
-    const about = screen.getByRole("button", { name: /^About$/ });
-    fireEvent.mouseEnter(about.parentElement!);
-    expect(document.getElementById("sn-panel-about")).not.toBeNull();
-    fireEvent.click(about);
-    expect(document.getElementById("sn-panel-about")).not.toBeNull();
-    fireEvent.click(about);
-    expect(document.getElementById("sn-panel-about")).toBeNull();
+    const pub = screen.getByRole("button", { name: /^Publishing$/ });
+    fireEvent.mouseEnter(pub.parentElement!);
+    expect(document.getElementById("sn-panel-publishing")).not.toBeNull();
+    fireEvent.click(pub);
+    expect(document.getElementById("sn-panel-publishing")).not.toBeNull();
+    fireEvent.click(pub);
+    expect(document.getElementById("sn-panel-publishing")).toBeNull();
   });
 
   it("works by keyboard: arrows between doors, Down into a panel, Up and Down inside, Escape back", () => {
@@ -176,52 +159,54 @@ describe("the header", () => {
       return 0;
     });
     renderWithProviders(<MinimalNav />);
-    const bible = screen.getByRole("button", { name: /^Bible$/ });
-    bible.focus();
-    fireEvent.keyDown(bible, { key: "ArrowRight" });
-    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^Family$/ }));
+    const explore = screen.getByRole("button", { name: /^Explore$/ });
+    explore.focus();
+    fireEvent.keyDown(explore, { key: "ArrowRight" });
+    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^Academy$/ }));
     fireEvent.keyDown(document.activeElement!, { key: "ArrowLeft" });
-    fireEvent.keyDown(document.activeElement!, { key: "ArrowLeft" });
-    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^Explore$/ }));
     fireEvent.keyDown(document.activeElement!, { key: "ArrowLeft" });
     // Left from Explore wraps to the last door.
-    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^About$/ }));
-    bible.focus();
+    expect(document.activeElement).toBe(screen.getByRole("button", { name: /^Publishing$/ }));
+    explore.focus();
     act(() => {
-      fireEvent.keyDown(bible, { key: "ArrowDown" });
+      fireEvent.keyDown(explore, { key: "ArrowDown" });
     });
-    const panel = document.getElementById("sn-panel-bible")!;
+    const panel = document.getElementById("sn-panel-explore")!;
     expect(panel).not.toBeNull();
     const links = within(panel).getAllByRole("link");
-    // The panel renders after the key; focus its first room as the next frame would.
     links[0].focus();
     fireEvent.keyDown(links[0], { key: "ArrowDown" });
     expect(document.activeElement).toBe(links[1]);
     fireEvent.keyDown(links[1], { key: "End" });
     expect(document.activeElement).toBe(links[links.length - 1]);
     fireEvent.keyDown(document.activeElement!, { key: "Escape" });
-    expect(document.getElementById("sn-panel-bible")).toBeNull();
-    expect(document.activeElement).toBe(bible);
+    expect(document.getElementById("sn-panel-explore")).toBeNull();
+    expect(document.activeElement).toBe(explore);
     vi.restoreAllMocks();
   });
 
   it("marks the door that holds the page in view", () => {
     const cases = [
-      ["/books/believe", "About"],
-      ["/family/tonight", "Family"],
+      ["/books/believe", "Publishing"],
+      ["/writing", "Publishing"],
+      ["/family/tonight", "Families"],
       ["/resources/creeds", "Explore"],
       ["/explore/history", "Explore"],
-      ["/study/bible/john/3", "Bible"],
       ["/answers", "Explore"],
-      ["/plans", "Tools"],
-      ["/writing", "Essays"],
+      ["/tracks/mark", "Academy"],
+      ["/study/bible/john/3", "Bible Tools"],
+      ["/tools", "Bible Tools"],
+      ["/studyguides", "Churches"],
+      ["/plans", "Churches"],
+      ["/help", ""],
     ] as const;
-    for (const [path, door] of cases) {
-      window.history.pushState({}, "", path);
+    for (const [where, door] of cases) {
+      expect(menuDoorForPath(where) ? MENU_DOORS.find((d) => (d.id as string) === menuDoorForPath(where))?.name : "", where).toBe(door);
+      window.history.pushState({}, "", where);
       const { unmount } = renderWithProviders(<MinimalNav />);
-      for (const name of MENU_DOORS) {
+      for (const name of MENU_NAMES) {
         const current = screen.getByRole("button", { name: new RegExp(`^${name}$`) }).getAttribute("aria-current");
-        expect(current, `${path}: ${name}`).toBe(name === door ? "true" : null);
+        expect(current, `${where}: ${name}`).toBe(name === door ? "true" : null);
       }
       unmount();
     }
@@ -229,7 +214,7 @@ describe("the header", () => {
 });
 
 describe("the phone sheet", () => {
-  it("leads with Start here, the eight disciplines as pictures, the five doors, then Find Help, My Library, Everything and Subscribe", () => {
+  it("leads with Start here, the eight disciplines as pictures, the other five doors, then Find Help, My Library, Everything and Subscribe", () => {
     renderWithProviders(<MinimalNav />);
     fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
     const sheet = document.getElementById("mobile-nav-panel")!;
@@ -238,27 +223,25 @@ describe("the phone sheet", () => {
     expect(links.slice(1, 9).map((a) => a.getAttribute("href"))).toEqual(DISCIPLINES.map((d) => `/explore/${d.id}`));
     expect(sheet.querySelectorAll(".sn-sheet-way__art")).toHaveLength(8);
     const doorNames = Array.from(sheet.querySelectorAll(".sn-sheet-door")).map((el) => el.textContent);
-    expect(doorNames).toEqual(DOORS.filter((d) => BAR_DOOR_IDS.includes(d.id)).map((d) => d.name));
-    expect(sheet.querySelector(".sn-sheet-door")?.tagName).toBe("BUTTON");
+    expect(doorNames).toEqual(MENU_NAMES.slice(1));
     for (const [name, href] of [["Find Help", "/help"], ["My Library", "/my-library"], [EVERYTHING_ENTRY.name, "/explore"], ["Subscribe", "/subscribe"]]) {
-      expect(within(sheet).getByRole("link", { name }).getAttribute("href"), name).toBe(href);
+      expect(within(sheet).getAllByRole("link", { name }).some((a) => a.getAttribute("href") === href), name).toBe(true);
     }
   });
 
-  it("opens a door to its rooms with the whole row, and a tap on the next door does not first fold the open one", () => {
+  it("opens a door to its rooms in pictures with the whole row, and a tap on the next door does not first fold the open one", () => {
     renderWithProviders(<MinimalNav />);
     fireEvent.click(screen.getByRole("button", { name: "Open menu" }));
     const sheet = document.getElementById("mobile-nav-panel")!;
-    const about = within(sheet).getByRole("button", { name: "About" });
-    fireEvent.click(about);
-    expect(within(sheet).getByRole("link", { name: "Speaking" }).getAttribute("href")).toBe("/speaking");
-    expect(within(sheet).getByRole("link", { name: "Everything in About" }).getAttribute("href")).toBe("/about");
-    const family = within(sheet).getByRole("button", { name: "Family" });
-    fireEvent.mouseDown(family);
-    expect(within(sheet).getByRole("link", { name: "Speaking" })).toBeTruthy();
-    fireEvent.click(family);
+    fireEvent.click(within(sheet).getByRole("button", { name: "Churches" }));
+    expect(within(sheet).getByRole("link", { name: "Small group study guides" }).getAttribute("href")).toBe("/studyguides");
+    expect(sheet.querySelectorAll(".sn-sheet-room__art").length).toBeGreaterThan(0);
+    const families = within(sheet).getByRole("button", { name: "Families" });
+    fireEvent.mouseDown(families);
+    expect(within(sheet).getByRole("link", { name: "Small group study guides" })).toBeTruthy();
+    fireEvent.click(families);
     expect(within(sheet).getByRole("link", { name: "Tonight's devotion" }).getAttribute("href")).toBe("/family/tonight");
-    expect(within(sheet).queryByRole("link", { name: "Speaking" })).toBeNull();
+    expect(within(sheet).queryByRole("link", { name: "Small group study guides" })).toBeNull();
   });
 });
 

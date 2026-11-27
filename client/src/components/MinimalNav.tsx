@@ -19,26 +19,26 @@
  * in full on first render.
  */
 import { Link, useLocation } from "wouter";
-import { Suspense, lazy, useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
+import { useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "react";
 import { ChevronDown, Menu, Search, X } from "lucide-react";
 import AppBack from "./AppBack";
 
 import {
-  DOORS,
   APP_ENTRY,
   EVERYTHING_ENTRY,
   HELP_ENTRY,
   LIBRARY_ENTRY,
   START_LINK,
-  doorForPath,
+
   type CatalogEntry,
   type Door,
-  type DoorId,
+
 } from "@/lib/siteCatalog";
 import { ICONS, ICON_STROKE } from "@/lib/siteIcons";
 import { SEARCH_SHORTCUTS } from "@/lib/siteNav";
 import Plate from "./art/Plate";
 import { ROOM_PICTURE } from "./nav/navPictures";
+import { MENU_DOORS, menuDoorForPath } from "./nav/menu";
 import { DISCIPLINES } from "@/pages/preview/disciplines";
 import { followHash } from "@/lib/followHash";
 import type { PassageMatch } from "@/lib/siteSearch";
@@ -51,28 +51,14 @@ import "./site-nav.css";
  */
 const loadFind = () => import("@/lib/siteSearch");
 
-/** The bar's doors after Explore. History and Questions sit inside Explore. */
-const BAR_DOOR_IDS: DoorId[] = ["bible", "family", "tools", "essays", "about"];
-/** Doors whose pages Explore holds, so Explore is marked current on them. */
-const EXPLORE_HOLDS: DoorId[] = ["history", "questions"];
-type NavId = DoorId | "explore";
-
-/** Explore, drawn as a door: its rooms are the eight disciplines. */
-const EXPLORE: Door = {
-  id: "explore" as DoorId,
-  name: "Explore",
-  icon: "Compass",
-  plate: "compass",
-  page: EVERYTHING_ENTRY,
-  rooms: DISCIPLINES.map((d) => ({ id: `explore.${d.id}`, name: d.name, line: d.line, href: `/explore/${d.id}`, icon: "Compass" })),
-};
-const BAR_DOORS: Door[] = [EXPLORE, ...BAR_DOOR_IDS.map((id) => DOORS.find((d) => d.id === id)).filter((d): d is Door => !!d)];
+/** The bar's six doors (components/nav/menu.ts). Explore leads; its rooms are the eight disciplines. */
+const BAR_DOORS: Door[] = MENU_DOORS;
+const EXPLORE: Door = MENU_DOORS[0];
+type NavId = string;
 const PLATE_OF = new Map(DISCIPLINES.map((d) => [`/explore/${d.id}`, d.plate]));
 /** The picture beside a room in a panel: the discipline's plate, the room's own, or its door's. */
 const pictureFor = (door: Door, room: CatalogEntry) => PLATE_OF.get(room.href) ?? ROOM_PICTURE[room.id] ?? door.plate;
-/** Essays opens a panel of the essay sections; they load with the panel (nav/EssaysWays). */
-const EssaysWays = lazy(() => import("./nav/EssaysWays"));
-const hasPanel = (door: Door) => door.rooms.length > 0 || door.id === "essays";
+const hasPanel = (door: Door) => door.rooms.length > 0;
 
 /** A catalogue entry as a link: outbound in a new tab, in-app through wouter. */
 function EntryLink({
@@ -108,7 +94,7 @@ function EntryLink({
 }
 
 /** The panel lines up under its door; the last doors open leftward so they stay on screen. */
-const panelSide = (i: number) => (i >= 4 ? "sn-panel--end" : "sn-panel--start");
+const panelSide = (i: number) => (i >= 3 ? "sn-panel--end" : "sn-panel--start");
 
 /** Door controls in the bar, in order (the buttons and the Essays link). */
 const doorControls = (root: HTMLElement | null) =>
@@ -135,8 +121,7 @@ export default function MinimalNav() {
   // that panel open instead of folding it.
   const hoverOpened = useRef<NavId | null>(null);
 
-  const pageDoor = doorForPath(location);
-  const currentDoor: NavId | null = location.startsWith("/explore/") || (pageDoor && EXPLORE_HOLDS.includes(pageDoor)) ? "explore" : pageDoor;
+  const currentDoor: NavId | null = menuDoorForPath(location);
 
   const prepareSearch = () => {
     if (readPassage) return;
@@ -516,12 +501,7 @@ export default function MinimalNav() {
                       onKeyDown={onPanelKey(door)}
                     >
                       <ul className="sn-ways">
-                        {door.id === "essays" ? (
-                          <Suspense fallback={null}>
-                            <EssaysWays onNavigate={closeAll} />
-                          </Suspense>
-                        ) : (
-                          door.rooms.map((room) => (
+                        {door.rooms.map((room) => (
                             <li key={room.id}>
                               <EntryLink entry={room} className="sn-way" onNavigate={closeAll}>
                                 <span className="sn-way__art" aria-hidden="true">
@@ -533,12 +513,11 @@ export default function MinimalNav() {
                                 </span>
                               </EntryLink>
                             </li>
-                          ))
-                        )}
+                          ))}
                       </ul>
                       <div className="sn-foot">
                         <Link href={door.page.href} onClick={closeAll}>
-                          {door === EXPLORE ? EVERYTHING_ENTRY.name : door.id === "essays" ? "All the essays" : `Everything in ${door.name}`}
+                          {door === EXPLORE ? EVERYTHING_ENTRY.name : `Everything in ${door.name}`}
                         </Link>
                         <Link href={START_LINK.href} onClick={closeAll}>
                           {START_LINK.name}
@@ -655,12 +634,7 @@ export default function MinimalNav() {
                       </button>
                       {open && (
                         <ul id={`sn-sheet-${door.id}`} className="sn-sheet-rooms">
-                          {door.id === "essays" ? (
-                            <Suspense fallback={null}>
-                              <EssaysWays onNavigate={closeAll} variant="sheet" />
-                            </Suspense>
-                          ) : (
-                            door.rooms.map((room) => (
+                          {door.rooms.map((room) => (
                               <li key={room.id}>
                                 <EntryLink entry={room} className="sn-sheet-room" onNavigate={closeAll}>
                                   <span className="sn-sheet-room__art" aria-hidden="true">
@@ -669,11 +643,10 @@ export default function MinimalNav() {
                                   {room.name}
                                 </EntryLink>
                               </li>
-                            ))
-                          )}
+                            ))}
                           <li>
                             <Link href={door.page.href} className="sn-sheet-room sn-sheet-room--all" onClick={closeAll}>
-                              {door.id === "essays" ? "All the essays" : `Everything in ${door.name}`}
+                              {`Everything in ${door.name}`}
                             </Link>
                           </li>
                         </ul>

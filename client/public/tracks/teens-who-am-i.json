@@ -1,0 +1,434 @@
+{
+  "slug": "teens-who-am-i",
+  "title": "Who you are, and how to live it",
+  "for": "I'm a teenager figuring out who I am",
+  "subtitle": "Eight short sessions for teenagers on worth, feeling not enough, friends, phones, parents, messing up, anxiety and pressure, and following Jesus now rather than later.",
+  "intro": [
+    "This track is about the questions that take up most of your head: whether you're worth anything, whether you fit, what to do with your phone, your parents, your mistakes and the pressure. Each session takes about six minutes: a short reading, a page or a film, one question, one thing to do and one verse.",
+    "It won't hand you a list of rules or tell you everything will be fine. It will take you to what the Bible actually says, and leave you something to try. Take it alone, with friends, with a youth group, or with a parent."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for a youth leader or a parent taking teenagers through Who you are, and how to live it These sessions touch tender places: worth, loneliness, family, failure and anxiety. The leader's task is to keep the room honest and safe, to listen more than talk, and to make sure no one leaves the meeting carrying something heavy alone.",
+      "Each person takes the session on their own first: a short reading, a film or a page, and a passage. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight teenagers is a good size for a youth group, small enough that the quiet ones speak. A parent and one teenager can use the same guide at a kitchen table or in the car. Meet for about forty-five minutes, eight times, and keep the end time you promised. A leader doesn't need every answer. A leader needs to be honest, curious, and slow to lecture, and it helps to have a second trusted adult present whenever a group meets."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Pick somewhere ordinary: a living room, a kitchen, a corner with snacks. Sit in a circle so nobody faces a teacher. Phones can stay out for the film and the page, then go face down. Say at the first meeting that anyone may pass on any question, that what people share stays in the room unless someone is in danger, and that nobody will be made to pray aloud or to decide anything."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About forty-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Five minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: watch the session's film or look at its page together, if not everyone has.",
+          "Five minutes: one person reads the verse aloud, with a few verses around it.",
+          "Twenty minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else, then name the next session."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Teenagers often test whether a question is really welcome before they ask the one they care about. Welcome every one. Say what is true in an objection before answering it, and never treat a question as rebellion or a bad attitude. If nobody knows, say so, write it down, and bring something back next time. On worth and failure especially, resist the quick reassurance. A teenager who says they feel worthless needs to be heard before they are corrected.",
+          "Where Christians themselves disagree, say so plainly and show more than one answer. A leader who admits not knowing earns more trust than one who always has a line ready."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Some questions come with a wound attached: a family breaking up, a friend lost, a parent who is ill, a church that did harm. When that happens, stop the discussion. Listen, thank the person for saying it, and don't explain their pain for them. Afterwards, speak with them, with another adult nearby, and ask what would help.",
+          "If a young person says that anyone is harming them, or that they have thought about harming themselves, take it seriously and never promise to keep it secret. A youth leader may be required by law, and by the church's own policy, to report harm to a child; know that policy before the first meeting. A parent should get help the same day."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a teenager, or their parent, to Find Help when something has become too heavy to carry: worry that stops sleep or school, sadness that will not lift, harm at home or anywhere else, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. Stay with the young person while help is reached."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Made in God's image",
+      "minutes": 6,
+      "teaching": [
+        "Most of what you're told about your worth comes with conditions. Grades, looks, followers, how good you are at a sport: all of it can be lost, which is why it feels so fragile. Genesis says something older. Before you did anything at all, you were made in the image of God, made to know him and to reflect him. That isn't a reward for being impressive. It's what every human being is, including the kid nobody sits with at lunch. Worth you didn't earn can't be taken away by a bad week."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Creation and the image of God",
+        "href": "/study/explorer/watch/image-of-god",
+        "why": "Seven pictures on a world called very good and people made in God's image: what that means, and why it is a gift."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "The image of God",
+          "href": "/study/bible/doctrines/image",
+          "why": "The Study Bible's teaching on what it means to bear God's image, traced through Scripture from Genesis to Jesus."
+        },
+        {
+          "kind": "guide",
+          "label": "Who Am I, Really?",
+          "href": "/studyguides/youth-who-am-i",
+          "why": "A five-session Bible study for teenagers on identity, the phone, anxiety, friendship and a faith of your own."
+        }
+      ],
+      "question": "Where do you most often go to find out whether you're worth something?",
+      "do": "For one day, notice each time you check how you measure up: a mirror, a grade, a screen. Just notice. Don't try to fix anything yet.",
+      "verse": {
+        "ref": "Genesis 1:27",
+        "text": "So God created man in His own image; in the image of God He created him; male and female He created them."
+      },
+      "group": {
+        "open": "What's something people your age are judged on that has nothing to do with who they really are?",
+        "discuss": [
+          "What's the difference between worth you earn and worth you're given?",
+          "If every person bears God's image, how should that change the way you treat the person nobody likes?",
+          "Which is harder for you to believe: that you bear God's image, or that someone you dislike does?"
+        ],
+        "pray": "Those who pray can give thanks that their worth was given before they did anything, and pray for someone who feels worthless. Anyone who doesn't pray can think of one person to treat with more respect this week."
+      }
+    },
+    {
+      "n": 2,
+      "title": "When you feel like you're not enough",
+      "minutes": 6,
+      "teaching": [
+        "Almost everyone your age feels at some point that they're not enough: not smart enough, not good-looking enough, not liked enough. Comparison makes it worse, because you see everyone else's best moments next to your own worst. The Bible doesn't answer this by telling you you're amazing. It's more honest than that. It says nobody is enough on their own, and that God loves people before they've got it together. When Samuel went looking for a king, God told him to stop judging by appearance, and chose a boy his own family had left out in the fields."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "Where Does Your Identity and Worth Come From?",
+        "href": "/life/identity-and-worth",
+        "why": "Why worth built on performance never feels secure, and where Scripture locates a person's worth instead."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "Envy and Comparison",
+          "href": "/wisdom/envy-and-comparison",
+          "why": "What the Bible says about comparing yourself with others, and how to stop measuring your life against theirs."
+        },
+        {
+          "kind": "chapter",
+          "label": "1 Samuel 16, passage by passage",
+          "href": "/study/bible/1-samuel/16#plain",
+          "why": "Samuel looks at the tall brothers and God chooses the youngest, with plain notes on what God sees."
+        }
+      ],
+      "question": "Who do you compare yourself with most, and what does it usually do to you?",
+      "do": "Mute or unfollow one account that always leaves you feeling worse about yourself. Notice how you feel after a week.",
+      "verse": {
+        "ref": "1 Samuel 16:7",
+        "text": "But the LORD said to Samuel, “Do not consider his appearance or height, for I have rejected him; the LORD does not see as man does. For man sees the outward appearance, but the LORD sees the heart.”"
+      },
+      "group": {
+        "open": "When do you most often feel like you're not enough?",
+        "discuss": [
+          "Why does comparing your worst moments to other people's best ones never work out?",
+          "God told Samuel he looks at the heart. Is that comforting, or does it make you nervous?",
+          "David's own family forgot to call him in. What does it mean that God didn't forget him?"
+        ],
+        "pray": "Those who pray can tell God honestly where they feel they fall short, and pray for a friend who feels the same. Anyone who doesn't pray can name one thing they value in that friend."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Friends and loneliness",
+      "minutes": 6,
+      "teaching": [
+        "You can be surrounded by people all day and still feel alone. Group chats, lunch tables and teams can make it sharper, because you can see exactly who's in and who isn't. Loneliness isn't proof that something is wrong with you. At the very start of the Bible, God himself says it isn't good for a person to be alone. Real friendship is slower than popularity. It grows by being there for one or two people over time, being honest, and staying when it's awkward. Jesus called his disciples friends. Look for one person, not a crowd."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to handle loneliness",
+        "href": "/how-tos/rel-how-to-handle-loneliness",
+        "why": "Practical steps for the times you feel alone, and for reaching toward people when everything in you wants to hide."
+      },
+      "also": [
+        {
+          "kind": "wisdom",
+          "label": "Deep Friendship",
+          "href": "/wisdom/deep-friendship",
+          "why": "What Scripture says about real friendship: loyalty, honesty, and the kind of friend who stays."
+        },
+        {
+          "kind": "help",
+          "label": "I feel so alone",
+          "href": "/help/loneliness",
+          "why": "A page for the times loneliness gets heavy, with Scripture, honest words, and places to turn for help."
+        }
+      ],
+      "question": "Who is one person you could be a better friend to this month, and what would that take?",
+      "do": "Message one person you've drifted from, or sit with someone who's usually on their own. Do it once this week.",
+      "verse": {
+        "ref": "Ecclesiastes 4:9-10",
+        "text": "Two are better than one, because they have a good return for their labor. For if one falls down, his companion can lift him up; but pity the one who falls without another to help him up!"
+      },
+      "care": [
+        "If your grief is heavy, please do not carry it alone. Tell someone you trust: a pastor, a friend, a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What makes a friend a real friend, in your experience?",
+        "discuss": [
+          "Why can you feel lonely even when you're surrounded by people?",
+          "Jesus called his disciples friends. What kind of friend was he to them?",
+          "Who in your school or group is most often left out, and what could you actually do about it?"
+        ],
+        "pray": "Those who pray can give thanks for one friend by name and pray for someone who is alone. Anyone who doesn't pray can think of that person and how to reach them."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Phones and attention",
+      "minutes": 6,
+      "teaching": [
+        "Your phone isn't evil, and you don't need a lecture from adults who are on theirs just as much. But it's worth noticing that many apps are designed to hold your attention as long as possible, because your attention is what they sell. Whatever you keep looking at slowly shapes what you love. Jesus called the eye the lamp of the body. The question isn't whether to use a phone. It's who is deciding where your attention goes: you, or the people who designed the feed."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "How Does Your Phone Shape Your Attention and Soul?",
+        "href": "/life/technology-and-attention",
+        "why": "How screens shape attention and desire, and how to use them without being used by them."
+      },
+      "also": [
+        {
+          "kind": "howto",
+          "label": "How to unhook from your screens",
+          "href": "/how-tos/body-how-to-unhook-from-your-screens",
+          "why": "Small, practical changes that give you back some control over where your attention goes."
+        },
+        {
+          "kind": "wisdom",
+          "label": "Social Media and Attention",
+          "href": "/wisdom/social-media",
+          "why": "What the Bible says about the things social media does to people: comparison, outrage, image and attention."
+        }
+      ],
+      "question": "If your screen-time report could talk, what would it say you love most?",
+      "do": "Check how long you spent on your phone yesterday. Pick one app, keep it off for a full day, and notice what you do instead.",
+      "verse": {
+        "ref": "Matthew 6:22",
+        "text": "The eye is the lamp of the body. If your eyes are good, your whole body will be full of light."
+      },
+      "group": {
+        "open": "What app would be hardest for you to give up for a week, and why?",
+        "discuss": [
+          "Is it true that what you look at shapes what you love? Where have you seen that happen?",
+          "Adults are on their phones too. What would it look like for a family or a group to change together?",
+          "What's one good thing your phone does for you that you'd want to keep?"
+        ],
+        "pray": "Those who pray can ask for attention that is free, and give thanks for the people in the room who are worth looking up for. Anyone who doesn't pray can put their phone away for the rest of the meeting."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Parents and authority",
+      "minutes": 6,
+      "teaching": [
+        "Honor your father and mother is one of the Ten Commandments, and many teenagers find it the hardest. Notice what Paul does with it. He tells children to obey their parents and, in the same breath, tells fathers not to provoke their children or crush their spirit. Authority in the Bible runs both ways. Honoring your parents doesn't mean pretending they're perfect or never disagreeing. It means respect while you disagree, telling the truth, and remembering they're people too. It never means keeping quiet if someone at home is hurting you."
+      ],
+      "open": {
+        "kind": "howto",
+        "label": "How to have a hard conversation",
+        "href": "/how-tos/rel-how-to-have-a-hard-conversation",
+        "why": "How to say something difficult to someone you love, honestly and respectfully, without it turning into a fight."
+      },
+      "also": [
+        {
+          "kind": "catechism",
+          "label": "What does the law require of us toward others?",
+          "href": "/family/catechism#q20",
+          "why": "The catechism's question on what God's law asks of us toward others, beginning with honoring our parents."
+        },
+        {
+          "kind": "chapter",
+          "label": "Colossians 3, passage by passage",
+          "href": "/study/bible/colossians/3#plain",
+          "why": "Paul's words to children and to parents side by side, with plain notes on what each owes the other."
+        }
+      ],
+      "question": "What's one way you could honor a parent or guardian this week without pretending you agree with everything?",
+      "do": "Think of one thing you've been wanting to say to a parent or guardian. Write it down in two respectful sentences, then pick a calm moment to say it.",
+      "verse": {
+        "ref": "Colossians 3:20-21",
+        "text": "Children, obey your parents in everything, for this is pleasing to the Lord. Fathers, do not provoke your children, so they will not become discouraged."
+      },
+      "care": [
+        "If you are being hurt, at home, at work or in a church, tell someone you trust and get help. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What's one thing your parents or guardians get right that you rarely tell them?",
+        "discuss": [
+          "Paul tells children to obey and fathers not to provoke. Why do you think he puts both in the same breath?",
+          "What's the difference between honoring someone and agreeing with them?",
+          "For parents in the room: what would make it easier for your teenager to disagree with you respectfully?"
+        ],
+        "pray": "Those who pray can pray for their parents or guardians by name, for patience on both sides, and for homes that are safe. Anyone who doesn't pray can think of one thing to thank a parent for."
+      }
+    },
+    {
+      "n": 6,
+      "title": "When you mess up",
+      "minutes": 6,
+      "teaching": [
+        "Everyone messes up, and some of what you've done may still sit in your stomach. The Bible is blunt about it. It calls it sin, and it doesn't pretend it's small. But listen to the story Jesus told about a son who wasted everything and came home hoping to be taken on as a servant. His father saw him far off and ran to him. Grace is that run. It isn't God saying what you did didn't matter. It's God saying it's been paid for and you can come home, which means telling the truth about it, to God and sometimes to the person you hurt."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Does God still love me when I do wrong?",
+        "href": "/study/explorer/watch/love-when-i-do-wrong",
+        "why": "Jesus' own story of the lost son in seven pictures: grace that runs ahead, and wrong that still matters."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Luke 15, passage by passage",
+          "href": "/study/bible/luke/15#plain",
+          "why": "The lost sheep, the lost coin and the lost son, with plain notes on what Jesus was saying and to whom."
+        },
+        {
+          "kind": "film",
+          "label": "Grace: the gift no one earns",
+          "href": "/study/explorer/watch/grace",
+          "why": "Seven pictures on grace: a gift and not a wage, received with empty hands, never a licence, and meant to be passed on."
+        },
+        {
+          "kind": "howto",
+          "label": "How to confess sin and walk in repentance",
+          "href": "/how-tos/sf-how-to-confess-sin-and-walk-in-repentance",
+          "why": "What it actually looks like to own what you did, tell God the truth, and start putting things right."
+        }
+      ],
+      "question": "Is there something you've done that you're afraid God can't get past?",
+      "do": "Tell God plainly about one thing you've done wrong. If it hurt someone, decide whether you need to tell them too, and if so, when.",
+      "verse": {
+        "ref": "1 John 1:9",
+        "text": "If we confess our sins, He is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Why is it so hard to say sorry and mean it?",
+        "discuss": [
+          "The father runs before the son finishes his speech. What does that say about God?",
+          "What's the difference between grace and pretending something didn't matter?",
+          "The older brother is angry at the party. Where do you see yourself in him?"
+        ],
+        "pray": "Those who pray can thank God for grace that runs to meet them, and ask for courage to put one thing right. Anyone who doesn't pray can think of someone they need to forgive or ask forgiveness from."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Anxiety and pressure",
+      "minutes": 6,
+      "teaching": [
+        "Pressure from school, from home, from the future and from what everyone sees online can pile up until your chest is tight and your mind won't stop. That isn't a lack of faith. Some of the most faithful people in the Bible were overwhelmed. When Paul tells Christians not to be anxious, he isn't scolding them. He tells them to bring everything to God, and he wrote it while he was in prison. Prayer is part of the help. So are sleep, a trusted adult, and sometimes a doctor or counsellor. Getting help isn't failing at faith. It's one of the ways God cares for you."
+      ],
+      "open": {
+        "kind": "help",
+        "label": "I can't stop worrying",
+        "href": "/help/anxiety",
+        "why": "A page for when worry gets heavy: honest words, Scripture, what helps, and places to turn for help right now."
+      },
+      "also": [
+        {
+          "kind": "answer",
+          "label": "Is my anxiety a spiritual failure?",
+          "href": "/answers/is-anxiety-a-spiritual-failure",
+          "why": "Why anxiety is not a sign of weak faith, and how prayer and real help, including doctors, belong together."
+        },
+        {
+          "kind": "howto",
+          "label": "How to fight anxiety with Scripture",
+          "href": "/how-tos/sf-how-to-fight-anxiety-with-scripture",
+          "why": "Practical ways to bring specific passages to anxious thoughts, alongside every other kind of help."
+        }
+      ],
+      "question": "What's piling up on you right now, and who is one adult you could tell about it?",
+      "do": "Write down everything you're worried about this week. Circle what you can do something about. Bring the rest to God in prayer, one by one, and tell one adult.",
+      "verse": {
+        "ref": "1 Peter 5:7",
+        "text": "Cast all your anxiety on Him, because He cares for you."
+      },
+      "care": [
+        "This passage is not a rebuke of people who live with an anxiety disorder, panic attacks or depression. Those are real illnesses of body and mind, and they need care, not blame. Getting help is not a lack of faith, and nothing in this verse forbids it. A doctor, a counselor, medicine, one trusted person who will stay can all be part of how God cares for you. The Honest Answer ‘Is my anxiety a spiritual failure?’ says more. The Find Help page on this site lists places to turn.",
+        "If you have thoughts of hurting yourself, speak to someone today: a doctor, a pastor, a trusted friend, or a crisis line in your country. If you are in danger right now, call your local emergency number. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What's the biggest source of pressure for people your age right now?",
+        "discuss": [
+          "Why do some Christians treat anxiety as if it were a lack of faith, and why is that wrong?",
+          "Paul wrote about not being anxious from a prison cell. Does that make his words easier or harder to hear?",
+          "For parents in the room: how can you tell when your teenager needs more than encouragement?"
+        ],
+        "pray": "Those who pray can name their worries to God one at a time and pray for anyone in the room who is carrying a lot. Anyone who doesn't pray can name one worry out loud or in silence."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Following Jesus now, not later",
+      "minutes": 6,
+      "teaching": [
+        "Adults sometimes talk as if your real faith starts later, after school, once you're settled. The Bible doesn't. Paul told young Timothy not to let anyone look down on him for his age, and to set an example in how he spoke, lived, loved and trusted. When Jesus called fishermen, they left their nets in the middle of a working day. Following Jesus isn't a feeling you wait for. It's a direction you take, one day at a time: reading what he said, praying, belonging to his people, and doing the next right thing. That can start this week."
+      ],
+      "open": {
+        "kind": "life",
+        "label": "What Does It Mean to Be a Disciple of Jesus?",
+        "href": "/life/discipleship-following-jesus",
+        "why": "What following Jesus actually involves day to day, beyond a feeling or a single decision."
+      },
+      "also": [
+        {
+          "kind": "book",
+          "label": "Mark",
+          "href": "/study/bible/mark",
+          "why": "The fastest Gospel, a good first book to read through on your own if you want to know what you're following."
+        },
+        {
+          "kind": "track",
+          "label": "The rest of the Academy",
+          "href": "/tracks",
+          "why": "More tracks to keep going: Bible study, church history, hard questions, and more, each a few minutes at a time."
+        }
+      ],
+      "question": "What would following Jesus look like in your actual week, not someday?",
+      "do": "Choose one small thing to start this week: reading a chapter of Mark each day, praying before school, or going to church. Tell someone which one.",
+      "verse": {
+        "ref": "1 Timothy 4:12",
+        "text": "Let no one despise your youth, but set an example for the believers in speech, in conduct, in love, in faith, in purity."
+      },
+      "group": {
+        "open": "Has anyone ever made you feel too young to matter? What happened?",
+        "discuss": [
+          "Why do you think adults sometimes treat teenagers' faith as practice for later?",
+          "Paul lists speech, conduct, love, faith and purity. Which feels most possible for you right now?",
+          "What would help you keep going after these eight sessions end?"
+        ],
+        "pray": "Those who pray can ask for courage to follow Jesus this week, and pray for each person in the group by name. Anyone who doesn't pray can name one thing from these sessions they want to keep thinking about."
+      }
+    }
+  ]
+}

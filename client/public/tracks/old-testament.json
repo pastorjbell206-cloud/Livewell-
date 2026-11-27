@@ -1,0 +1,562 @@
+{
+  "slug": "old-testament",
+  "title": "The Old Testament, section by section",
+  "for": "I want to understand the Old Testament",
+  "subtitle": "Ten short sessions on the Old Testament one section at a time: how it is arranged, the Law, the histories, wisdom, the Psalms, the prophets, and how Jesus read the whole.",
+  "intro": [
+    "The Old Testament is three quarters of the Bible, and it is where most new readers give up. Usually that is because nobody told them what kind of book they had opened. A law code read as a story, a poem read as a report, or a prophet read as a fortune teller will lose anyone. This track takes the Old Testament one section at a time, says what each kind of writing is and how it works, and shows where its books sit in the one story.",
+    "It follows The whole Bible as one story, and it helps to have walked that first. There are ten sessions of about ten minutes. You read a few paragraphs, open one page on this site, then come back for one question, one thing to do and one verse to keep. Each session has a guide for a group at the bottom."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through The Old Testament, section by section, or sitting down with one friend to go through it together. The group is for adults who know the outline of the Bible's story, or have walked the track before this one, and now want to understand the Old Testament's books: what each section is, how to read it, and why Christians have always kept it. A leader doesn't need to read Hebrew. A leader needs to have read a little ahead, and to keep sending people back to the text itself.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight people is a good size, and two work just as well. Meet for about seventy-five minutes, once a week, for ten meetings, and keep the end time you promised. People who grew up in church and people who never did both belong here. The first often discover they were only ever given favourite verses; the second ask the questions the first stopped asking."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A kitchen table works well. Have a Bible for each person, printed if possible, since flipping between sections is part of the point, and a screen if the group will watch a film together. Make it plain at the first meeting that anyone may pass on any question, that no one has to read or pray aloud, and that what people say about their own lives stays in the room unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Fifteen minutes: read aloud the chapter or passage the session's thing to do names, or part of it.",
+          "Thirty minutes: the three questions to talk over, in order. Leave room for the questions people bring themselves.",
+          "Ten minutes: the prayer prompt, for those who pray, in their own words. Nobody has to pray aloud.",
+          "Ten minutes: name the next section and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "The Old Testament raises hard questions quickly: the violence of the conquest, laws that trouble modern readers, who wrote the books and when, whether the exodus happened. Welcome them. The Study Bible's notes, the hard passages page, the context guides and the case for the faith take many of them up honestly, setting out the views. If no one knows, say so, write it down, and bring something back.",
+          "Where faithful readers differ, as they do on the dating of Daniel, the authorship of the Torah or how Christians should keep the Law, set out the views as the pages do and leave the question open. Keep the group's attention on what the books say and how they say it."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Job, the psalms of lament and Lamentations itself put pain into words, and they will touch someone in the room. When someone's own story comes into the room, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry them back to the session. Job's friends are the Bible's own warning against tidy answers. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that anyone is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: grief that has taken their sleep or appetite for weeks, guilt or fear that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "How the Old Testament is arranged",
+      "minutes": 10,
+      "teaching": [
+        "Open a Christian Old Testament and you find thirty-nine books grouped by kind: five books of law, then the histories from Joshua to Esther, then the poetry and wisdom books from Job to the Song of Songs, then the prophets, the four long books before the twelve short ones. Open a Hebrew Bible and you find the same text in twenty-four books and three parts: the Torah, the five books of Moses; the Prophets, which include Joshua to Kings as well as Isaiah to Malachi; and the Writings, everything else, with the Psalms at their head.",
+        "Neither order is written into the books themselves. Both are ancient ways of reading the whole, and they end differently. The Hebrew Bible closes with Chronicles and the decree of Cyrus sending the exiles home, so it ends on the road back. The Christian Old Testament closes with Malachi's promise of a messenger, so it ends looking forward, and the next page is Matthew. Knowing which shelf a book sits on tells you how to read it."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "What the Bible Is",
+        "href": "/study/bible/guides/what-is-the-bible",
+        "why": "Read the section on how the Old Testament is arranged, where both orders are set side by side and their endings compared."
+      },
+      "also": [
+        {
+          "kind": "study-tool",
+          "label": "The 66 books at a glance",
+          "href": "/study/books-at-a-glance",
+          "why": "Every book's shape on one page, so you can see the thirty-nine as shelves before you take them one at a time."
+        },
+        {
+          "kind": "film",
+          "label": "How the 66 books fit together",
+          "href": "/study/explorer/watch/sixty-six-books",
+          "why": "Watch the books find their shelves, and the one story that runs through them all."
+        }
+      ],
+      "question": "Why do you think it matters whether the Old Testament ends on the road home or with a promise still to be kept?",
+      "do": "Open the contents page of a Bible. Draw four lines across it to mark the Law, the histories, the poetry and wisdom books, and the prophets, and keep it marked.",
+      "verse": {
+        "ref": "Nehemiah 8:8",
+        "text": "So they read from the Book of the Law of God, explaining it and giving insight, so that the people could understand what was being read."
+      },
+      "group": {
+        "open": "Which Old Testament book have you heard of most, and which had you never heard of?",
+        "discuss": [
+          "What changes when you know a book is poetry, or law, or prophecy, before you start reading it?",
+          "The Hebrew Bible calls Joshua to Kings prophets, not history. What might that tell you about how to read them?",
+          "Jesus speaks of the Law, the Prophets and the Psalms. Why might it matter that the Christian Bible kept Israel's Scriptures whole?"
+        ],
+        "pray": "For those who pray: ask for patience and understanding as you read books that are old and strange, and for one another as readers."
+      }
+    },
+    {
+      "n": 2,
+      "title": "The Torah: instruction inside a story",
+      "minutes": 10,
+      "teaching": [
+        "The first five books are called the Torah, or the Law, but the Hebrew word means instruction or teaching more than statute. A parent's advice in Proverbs is torah too. That matters, because the laws in these books sit inside a story. Genesis has almost no law. Exodus gives nineteen chapters of rescue before the first commandment. Israel is not told to obey in order to be rescued. It is told to live as a people already rescued.",
+        "Readers often stall in Leviticus because they expect a story and find a manual. It helps to know what the laws were for: how a people could live near a holy God, how to treat the poor, the stranger and the slave, how to worship and how to rest. Jewish readers have never treated the Law as a burden to escape but as a gift to be studied and loved. How Christians keep it after Christ is a real question, and the churches have answered it in more than one way."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Law",
+        "href": "/study/bible/guides/reading-law",
+        "why": "It explains command and case law, the covenant frame around the laws, the ones that trouble modern readers, and how Christians have read them."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "How is the law of Moses different from Hammurabi?",
+          "href": "/resources/context/torah-and-the-law-codes",
+          "why": "Set Israel's law beside the other law codes of its world and see what is the same and what is startlingly different."
+        },
+        {
+          "kind": "case",
+          "label": "Who wrote the first five books?",
+          "href": "/questions/old-testament/who-wrote-the-first-five-books",
+          "why": "The traditional answer and the scholarly theories, set out fairly, for anyone who has heard that Moses could not have written them."
+        }
+      ],
+      "question": "What would change in the way you hear a command if you heard it first as instruction from someone who had already rescued you?",
+      "do": "Read Deuteronomy 6:1-9. Write down every place the passage says these words should be kept, from the heart to the doorframe.",
+      "verse": {
+        "ref": "Deuteronomy 6:4-5",
+        "text": "Hear, O Israel: The LORD our God, the LORD is One. And you shall love the LORD your God with all your heart and with all your soul and with all your strength."
+      },
+      "group": {
+        "open": "What did the word law make you think of before this session?",
+        "discuss": [
+          "Why might it matter that nineteen chapters of rescue come before the first commandment?",
+          "Which law in the Torah surprised you by how much it protects the weak?",
+          "How do you think a Christian should decide which Old Testament laws still bind and how?"
+        ],
+        "pray": "For those who pray: give thanks for any instruction that has done you good, and ask for a heart that loves God's ways and not only knows them."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Genesis to Deuteronomy as one movement",
+      "minutes": 10,
+      "teaching": [
+        "The five books of Moses are best read as one movement, not five separate books. Genesis runs from creation to a family in Egypt. Exodus takes that family out of slavery to Sinai and gives them a covenant and a tent where God will live. Leviticus answers the question the tent raises: how can people who are not holy live near a God who is? Numbers is the wilderness, a generation that would not trust God and wandered for forty years. Deuteronomy is Moses' farewell on the edge of the land, calling the next generation to love the LORD with all their heart.",
+        "Notice where it stops. The Torah ends with Moses on a mountain looking into the land he will not enter, and the people still outside it. The promise to Abraham is partly kept and partly open. Jewish tradition has made these five books the heart of Scripture, read through in the synagogue year after year, and it is no accident that they end with the people waiting at the border."
+      ],
+      "open": {
+        "kind": "book",
+        "label": "Open Deuteronomy in the Study Bible",
+        "href": "/study/bible/deuteronomy",
+        "why": "Its introduction sets out Moses' three addresses and shows how the whole Torah is gathered up in a farewell."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Genesis: the book of beginnings",
+          "href": "/study/explorer/watch/book-genesis",
+          "why": "Genesis as a whole book: its two halves, its ten headings, and a faithful God with a flawed family."
+        },
+        {
+          "kind": "film",
+          "label": "Leviticus: living near a holy God",
+          "href": "/study/explorer/watch/book-leviticus",
+          "why": "The book where most readers stall, shown as the answer to one question, with its six parts and the Day of Atonement."
+        },
+        {
+          "kind": "chapter",
+          "label": "Deuteronomy 34, passage by passage",
+          "href": "/study/bible/deuteronomy/34#plain",
+          "why": "The last chapter of the Torah, Moses on the mountain, with plain-words notes on why it ends where it does."
+        }
+      ],
+      "question": "Why do you think the five books of Moses end before the people enter the land?",
+      "do": "Write one sentence for each of the five books saying what it adds to the story. Then read your five sentences together as one paragraph.",
+      "verse": {
+        "ref": "Deuteronomy 7:8",
+        "text": "But because the LORD loved you and kept the oath He swore to your fathers, He brought you out with a mighty hand and redeemed you from the house of slavery, from the hand of Pharaoh king of Egypt."
+      },
+      "group": {
+        "open": "Have you ever started reading the Bible at Genesis? How far did you get?",
+        "discuss": [
+          "How does reading Leviticus as the answer to a question change it?",
+          "Numbers shows a whole generation who would not trust God. What made trust so hard for them?",
+          "Deuteronomy says God chose Israel because he loved them, not because they were great. What does that do to pride?"
+        ],
+        "pray": "For those who pray: pray for anyone you know who is waiting at the edge of something new, and for courage to trust God there."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The histories: Joshua to Kings",
+      "minutes": 10,
+      "teaching": [
+        "Joshua, Judges, Samuel and Kings tell Israel's story from the entry into the land to the fall of Jerusalem. Christians call them historical books. The Hebrew Bible calls them the Former Prophets, and that name teaches something. These are not neutral chronicles. They are history told from inside the covenant, asking why things went as they did. The answer they keep giving is faithfulness: kings are measured by whether they kept the covenant, not by their wealth or their wars.",
+        "Biblical narrative has its own way of working. The narrator knows everything and says little, rarely tells you what to think, and lets a few details and a repeated word carry the meaning. The heroes are rarely models. Gideon, Samson, David and Solomon are shown with their failures in full view. Read slowly, ask why a detail is there, and don't assume that because the Bible records something it approves of it."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Stories",
+        "href": "/study/bible/guides/reading-narrative",
+        "why": "How biblical narrative works: the quiet narrator, repetition and key words, and why the heroes are rarely models."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Joshua: a promise kept",
+          "href": "/study/explorer/watch/book-joshua",
+          "why": "Joshua as a whole book, with its four movements and its hardest chapters faced plainly."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "The kings of Israel and Judah",
+          "href": "/study/bible/guides/kings-of-israel-and-judah",
+          "why": "Once the kingdom splits, two lines of kings run side by side, and this guide keeps them straight."
+        },
+        {
+          "kind": "case",
+          "label": "Jericho and the conquest",
+          "href": "/questions/old-testament/jericho-and-the-conquest",
+          "why": "What archaeology shows and what it does not, for anyone troubled by the conquest of Canaan or doubtful it happened."
+        }
+      ],
+      "question": "What changes when you read Israel's history as told by prophets rather than by court historians?",
+      "do": "Read 1 Samuel 16:1-13. Notice what the narrator tells you and what it leaves out, and write down the one sentence that carries the meaning.",
+      "verse": {
+        "ref": "Joshua 21:45",
+        "text": "Not one of all the LORD’s good promises to the house of Israel had failed; everything was fulfilled."
+      },
+      "group": {
+        "open": "Who is a person in history you admire whose failures you also know?",
+        "discuss": [
+          "Why might the Bible show its heroes' failures so plainly?",
+          "Kings are judged by faithfulness, not success. How would that change the way we judge leaders?",
+          "Which story from Joshua to Kings do you find hardest, and what would help you read it honestly?"
+        ],
+        "pray": "For those who pray: pray for the leaders of your country and your church, that they would be faithful more than successful."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Chronicles and the return: Ezra, Nehemiah and Esther",
+      "minutes": 10,
+      "teaching": [
+        "Chronicles tells much of the same history as Samuel and Kings, and a first reader wonders why. It was written for the community that came back from exile, a small people in a Persian province with a rebuilt temple and no king. So it tells the story again for them, with the spotlight on David's line, the temple and its worship, and God's readiness to restore those who return to him. It is the same history with a different question: who are we now, and do we still belong to the promise?",
+        "Ezra and Nehemiah tell how that community rebuilt the temple, the walls and their common life, and how the Law was read aloud and explained so the people could understand it. Esther is set among the Jews who stayed in Persia, at the court of Xerxes. God's name never appears in it, and yet a people under threat is preserved through ordinary courage and well-timed choices. It is a book for anyone who has wondered where God is when he seems absent."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Nehemiah: rebuilding the walls, and a people",
+        "href": "/study/explorer/watch/book-nehemiah",
+        "why": "A memoir of prayer and work, the wall in fifty-two days, justice for the poor and the Law read with joy."
+      },
+      "also": [
+        {
+          "kind": "book",
+          "label": "Open Esther in the Study Bible",
+          "href": "/study/bible/esther",
+          "why": "Ten chapters with notes beside each, on the story where God is never named and never absent."
+        },
+        {
+          "kind": "context",
+          "label": "What does it mean that Christians are exiles?",
+          "href": "/resources/context/exile-not-empire",
+          "why": "How the experience of exile shaped these books, and why the New Testament borrows the word for the church."
+        }
+      ],
+      "question": "Why do you think the Bible keeps two tellings of the same history, Kings and Chronicles, instead of one?",
+      "do": "Read Nehemiah 8:1-12. Write down what the people do when they hear the Law explained, and what Nehemiah tells them to do next.",
+      "verse": {
+        "ref": "Nehemiah 8:10",
+        "text": "Do not grieve, for the joy of the LORD is your strength."
+      },
+      "care": [
+        "Grief is not a lack of faith. If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever had to rebuild something, a home, a friendship, a life, after it fell apart?",
+        "discuss": [
+          "Chronicles tells the old story to a people asking who they are now. What story do you tell yourself about who you are?",
+          "Why would hearing the Law explained make the people weep, and why would Nehemiah tell them to stop?",
+          "Esther never names God. Where in the book did you see his hand anyway?"
+        ],
+        "pray": "For those who pray: pray for anyone rebuilding after a loss, and give thanks for small beginnings."
+      }
+    },
+    {
+      "n": 6,
+      "title": "The wisdom books: Job, Proverbs and Ecclesiastes",
+      "minutes": 10,
+      "teaching": [
+        "The three wisdom books are best read together, because they argue with one another and the Bible keeps the argument. Proverbs describes the moral order of a world God made: in general, wisdom leads to life and folly to ruin. A proverb is not a promise. It says how things usually go, not how they must go in every case. Job insists the rule has painful exceptions, that a righteous man can suffer for reasons no one on earth can see, and that applying the rule to every case can wound the suffering.",
+        "Ecclesiastes insists that human beings cannot see the whole, that every achievement passes, and that the fitting response is reverence, honest limits and grateful enjoyment of each day's gifts. Proverbs without Job becomes a formula for success. Job without Proverbs gives up on any moral order at all. Both without Ecclesiastes forget that we are small and life is short. All three rest on the same foundation, the fear of the LORD."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Wisdom Books",
+        "href": "/study/bible/guides/reading-wisdom",
+        "why": "What a proverb is and is not, how Job and Ecclesiastes push back, and how the three books stay in conversation."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Proverbs: skill for ordinary days",
+          "href": "/study/explorer/watch/book-proverbs",
+          "why": "A collection of collections, the fear of the LORD, two ways, and how to read a proverb without treating it as a promise."
+        },
+        {
+          "kind": "context",
+          "label": "Did Proverbs borrow from Egyptian wisdom writing?",
+          "href": "/resources/context/wisdom-and-the-nations",
+          "why": "Israel's wisdom had neighbours, and this shows what it shared with them and what it would not share."
+        },
+        {
+          "kind": "book",
+          "label": "Open Job in the Study Bible",
+          "href": "/study/bible/job",
+          "why": "The book's introduction and notes walk the long poem between the opening and the end, which most readers skip."
+        }
+      ],
+      "question": "Where has life taught you that a proverb is true in general but not in every case?",
+      "do": "Read Proverbs 3:1-12, then Job 1 and 2, then Ecclesiastes 3:1-15. Write down one thing each says that the other two need.",
+      "verse": {
+        "ref": "Proverbs 9:10",
+        "text": "The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding."
+      },
+      "care": [
+        "If you are suffering now, for your faith or for any other reason, you do not have to carry it alone. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What is a piece of advice you were given that turned out to be true?",
+        "discuss": [
+          "Why is it dangerous to read a proverb as a promise?",
+          "Job's friends said true things about God and still got Job wrong. How does that happen?",
+          "Ecclesiastes keeps saying life passes like a breath. Does that make life seem smaller to you, or more precious?"
+        ],
+        "pray": "For those who pray: ask for wisdom in one decision you are facing, and pray for anyone you know who is suffering without an explanation."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The Psalms and the Song of Songs",
+      "minutes": 10,
+      "teaching": [
+        "About a third of the Old Testament is poetry, and its heartbeat is parallelism: a line says something, and the next line says it again, sharpens it or answers it. Once you hear that rhythm, the poems open. The Psalms are Israel's prayer book, in five books, ending in a last Hallelujah. They include praise and thanks, but the most common kind is the lament: the prayer of someone in trouble who complains to God, pleads with him, and keeps talking to him. The Bible gives words for anger and grief as well as joy.",
+        "The Song of Songs is love poetry between a woman and a man, frank and unashamed. For most of its history Jews and Christians read it as a song of God's love for his people. Since the nineteenth century most readers have read it first as poetry celebrating love within a faithful bond, and many hold both together. Either way, it sits in Scripture as a witness that desire is a good gift, and a fire not to be stirred carelessly."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading Hebrew Poetry",
+        "href": "/study/bible/guides/reading-poetry",
+        "why": "Parallelism, images, acrostics, the kinds of psalms and how the Psalter is arranged, with a glossary of the headings."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Psalms: the prayer book of the Bible",
+          "href": "/study/explorer/watch/book-psalms",
+          "why": "A gateway, five books and a last Hallelujah: lament, praise, the LORD as king, and the prayers Jesus prayed."
+        },
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 13",
+          "href": "/tools/pray-the-psalms?psalm=13",
+          "why": "Pray a short lament slowly, line by line, and feel how a complaint can turn into trust without pretending."
+        },
+        {
+          "kind": "book",
+          "label": "Open the Song of Songs in the Study Bible",
+          "href": "/study/bible/song-of-solomon",
+          "why": "Its introduction sets out the ways the Song has been read, by the synagogue, the church and readers today."
+        }
+      ],
+      "question": "Which kind of psalm do you most need words for right now: praise, thanks or lament?",
+      "do": "Read Psalm 13 aloud. Mark where it complains, where it asks and where it trusts, then write a few lines of your own in the same shape.",
+      "verse": {
+        "ref": "Psalm 62:8",
+        "text": "Trust in Him at all times, O people; pour out your hearts before Him. God is our refuge."
+      },
+      "care": [
+        "If your own suffering does not feel light, you are not failing. Many of the psalms are cries of people for whom it did not feel light either. “How long, O LORD? Will You forget me forever?” (Psalm 13:1). God kept those prayers in his book. If it is heavy, please talk with someone you trust, a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Is there a song you go back to when life is hard?",
+        "discuss": [
+          "Why do you think the Bible includes so many prayers of complaint?",
+          "How does hearing the parallel lines change the way a psalm reads?",
+          "What does it say about the Bible that it contains a book of love poetry?"
+        ],
+        "pray": "For those who pray: use a psalm, any one, as your own prayer this week, and pray for anyone in the group carrying something heavy."
+      }
+    },
+    {
+      "n": 8,
+      "title": "The major prophets: Isaiah, Jeremiah, Ezekiel and Daniel",
+      "minutes": 10,
+      "teaching": [
+        "A prophet in the Bible is first of all a messenger, someone sent to speak God's word to his own time. The prophets did speak of the future, but most of what they said was addressed to the people in front of them: they confronted kings, condemned injustice and idolatry, called Israel back to the covenant, warned of judgment and promised restoration beyond it. The four long books are called major because of their length, not their importance. Read each oracle first in its own time, under the king it names.",
+        "Isaiah ranges from the threat of Assyria to comfort for exiles and a servant who suffers for others. Jeremiah warned Jerusalem for forty years and wept over it, then promised a new covenant written on the heart. Ezekiel, among the exiles, saw God's glory leave the temple and promised a new heart. Daniel joins faithful stories in a foreign court to visions of kingdoms rising and falling, and when it was written is debated. Lamentations, a lament over the fallen city, sits with Jeremiah."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Prophets",
+        "href": "/study/bible/guides/reading-prophets",
+        "why": "Who the prophets were, when they spoke, the forms they used, and how to read an oracle in its own time before asking what it means now."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Isaiah: the Holy One who comforts",
+          "href": "/study/explorer/watch/book-isaiah",
+          "why": "Isaiah's three parts, trust or ruin, the king and the Servant, and a new creation, in one film."
+        },
+        {
+          "kind": "film",
+          "label": "Jeremiah: the prophet who wept",
+          "href": "/study/explorer/watch/book-jeremiah",
+          "why": "Forty years of warning, honest prayer, a letter to the exiles and the promise of the new covenant."
+        },
+        {
+          "kind": "case",
+          "label": "When was Daniel written?",
+          "href": "/questions/old-testament/when-was-daniel-written",
+          "why": "The traditional date and the later one, each set out in the form its defenders give it, with the evidence on both sides."
+        }
+      ],
+      "question": "What would a prophet who spoke mostly to his own time say to yours?",
+      "do": "Read Isaiah 40:1-11. Write down who is being spoken to, what has happened to them, and what God promises.",
+      "verse": {
+        "ref": "Isaiah 40:8",
+        "text": "The grass withers and the flowers fall, but the word of our God stands forever."
+      },
+      "group": {
+        "open": "Have you ever been the one who had to say something no one wanted to hear?",
+        "discuss": [
+          "Why do you think the popular picture of a prophet is a fortune teller, when most of what they said was about their present?",
+          "Jeremiah wept over the city he warned. What does that show about how judgment should be spoken?",
+          "Which of the four books would you most like to read next, and why?"
+        ],
+        "pray": "For those who pray: pray for the courage to hear a hard word, and for your own city."
+      }
+    },
+    {
+      "n": 9,
+      "title": "The Twelve: the minor prophets",
+      "minutes": 10,
+      "teaching": [
+        "The twelve short books from Hosea to Malachi were counted as one book in the Hebrew Bible, because they fit on a single scroll. They are called minor only because they are short. Together they span about three centuries, from the prosperous northern kingdom under Jeroboam II to the small community that came back from exile, and they are best read beside the history they address. Hosea speaks of a God who loves a faithless people like a betrayed husband. Amos, a herdsman, tells a rich kingdom that its worship is worthless while it crushes the poor.",
+        "Jonah is the strangest of them: a prophet who runs from God, not out of cowardice, but because he knows God is merciful and doesn't want mercy shown to his enemies. Micah gathers the whole prophetic message into one line about justice, mercy and humility. Haggai and Zechariah urge the returned exiles to rebuild the temple, and Malachi closes the collection, and the Christian Old Testament, waiting for a messenger."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Amos: let justice roll on like a river",
+        "href": "/study/explorer/watch/book-amos",
+        "why": "A herdsman in a prosperous kingdom, the trap that closes on Israel, justice like a river and the plumb line."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Jonah: the prophet who ran from mercy",
+          "href": "/study/explorer/watch/book-jonah",
+          "why": "Four short chapters about a prophet angry at God's kindness, and the question the book leaves unanswered."
+        },
+        {
+          "kind": "chapter",
+          "label": "Micah 6, passage by passage",
+          "href": "/study/bible/micah/6#plain",
+          "why": "God's case against his people and the famous answer, with plain-words notes on what justice, mercy and humility meant."
+        },
+        {
+          "kind": "book",
+          "label": "Open Hosea in the Study Bible",
+          "href": "/study/bible/hosea",
+          "why": "The first of the Twelve, with an introduction on its setting under Jeroboam II and its picture of God's faithful love."
+        }
+      ],
+      "question": "Jonah was angry that God showed mercy to his enemies. Whose mercy would be hardest for you to accept?",
+      "do": "Read the whole book of Jonah in one sitting. Then read its last verse again and write the answer you think Jonah should have given.",
+      "verse": {
+        "ref": "Micah 6:8",
+        "text": "He has shown you, O man, what is good. And what does the LORD require of you but to act justly, to love mercy, and to walk humbly with your God?"
+      },
+      "group": {
+        "open": "Have you ever been angry that someone got kinder treatment than you thought they deserved?",
+        "discuss": [
+          "Amos says worship is worthless while the poor are crushed. Where might that word land today?",
+          "Why do you think the book of Jonah ends with a question instead of an answer?",
+          "Micah 6:8 sums up the prophets in three phrases. Which of the three is hardest for you, and why?"
+        ],
+        "pray": "For those who pray: pray for someone you find it hard to wish well, and for the poor in your own town."
+      }
+    },
+    {
+      "n": 10,
+      "title": "Where it points: how Jesus read the Old Testament",
+      "minutes": 10,
+      "teaching": [
+        "On the day of the resurrection, two of Jesus' followers walk to Emmaus, sad and confused, and a stranger joins them. Luke says that “beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself” (Luke 24:27). Later Jesus names the three parts of the Hebrew Bible, the Law of Moses, the Prophets and the Psalms, and says all of it must be fulfilled in him. The New Testament reads the Old this way on nearly every page.",
+        "That does not mean every verse is a hidden prediction, or that the Old Testament has no meaning of its own until Jesus arrives. It means the story you have read in these sessions was going somewhere: a promise to Abraham still open, a king whose throne was empty, a covenant the people kept breaking, prophets promising a new heart. The Christian claim is that these threads meet in one person. Whether you believe that or not, you now know what the claim is, and where in the Old Testament to go to test it."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Luke 24, passage by passage",
+        "href": "/study/bible/luke/24#plain",
+        "why": "The road to Emmaus and the evening that followed, with plain-words notes on how Jesus opened the Scriptures."
+      },
+      "also": [
+        {
+          "kind": "doctrine",
+          "label": "The Messiah in the Study Bible",
+          "href": "/study/bible/doctrines/messiah",
+          "why": "Follow the hope of an anointed king from the Old Testament's promises to the New Testament's claim."
+        },
+        {
+          "kind": "context",
+          "label": "What is the Septuagint, and why does it matter?",
+          "href": "/resources/context/septuagint-and-scripture",
+          "why": "The Greek Old Testament that many first Christians read, and why New Testament quotations sometimes differ from your Old Testament."
+        },
+        {
+          "kind": "track",
+          "label": "The New Testament, section by section",
+          "href": "/tracks/new-testament",
+          "why": "The next track in this program takes the New Testament one section at a time, beginning with the world between the testaments."
+        }
+      ],
+      "question": "Which thread in the Old Testament do you most want to follow into the New, and why?",
+      "do": "Read Luke 24:13-35. Then choose one Old Testament passage from these sessions and write down what you think the stranger on the road might have said about it.",
+      "verse": {
+        "ref": "Luke 24:27",
+        "text": "And beginning with Moses and all the Prophets, He explained to them what was written in all the Scriptures about Himself."
+      },
+      "group": {
+        "open": "What surprised you most in the Old Testament over these ten sessions?",
+        "discuss": [
+          "The two on the road knew the Scriptures and still didn't see. What do you think kept them from seeing?",
+          "How can a Christian read the Old Testament as pointing to Jesus without treating it as having no meaning of its own?",
+          "Which section of the Old Testament do you most want to go back and read whole?"
+        ],
+        "pray": "For those who pray: ask that your eyes would be opened as you read, and give thanks for each person in the group by name."
+      }
+    }
+  ]
+}

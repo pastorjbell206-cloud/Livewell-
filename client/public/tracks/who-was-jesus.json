@@ -1,0 +1,545 @@
+{
+  "slug": "who-was-jesus",
+  "title": "Who was Jesus? The history and the claims",
+  "for": "I want to know who Jesus was",
+  "subtitle": "Ten short sessions on the man at the center of it all: what historians across belief agree about Jesus, his world, his teaching, his claims, his death, the resurrection and the question he put to his friends.",
+  "intro": [
+    "This track is for someone who wants to know who Jesus was before deciding what to make of him. It has ten sessions of about ten minutes each. It starts with what historians who disagree about almost everything else agree on, then follows him through his world, his teaching, the company he kept, what he said about himself, why he was killed, and what his followers said happened three days later.",
+    "Each session gives you a few paragraphs, one page of this site to open, and then one question, one thing to do and one verse to keep, so that you meet the sources and not only someone's account of them. Where scholars disagree, the track says so and gives each side its due. Nothing here asks you to believe by the last session. Each session ends with a guide for a group, and nobody in the group needs to believe."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through Who was Jesus? The history and the claims. The group can hold people who believe, people who don't and people who have never thought much about it, and it is better when it does. The leader's task isn't to win anyone. It is to keep the group close to the sources, the Gospels themselves and what historians say about them, and to keep the room honest enough that every view can be spoken.",
+      "Each person reads the session and opens its page before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to eight people is a good size: small enough that everyone speaks, large enough that no one feels watched. Meet for about seventy-five minutes, weekly or every other week, for ten meetings, and keep the end time you promised. A leader doesn't need to be a historian or a theologian. A leader needs to be fair, curious about Jesus, and willing to admit not knowing when that is the truth."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A kitchen table or a quiet corner of a cafe works better than a classroom. Have a Bible or a phone with the Gospels open for each person, since most sessions send the group into a chapter. Say at the first meeting that anyone may pass on any question, that what people share about their own lives stays in the room, and that no one will be asked to pray aloud or to decide anything."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads aloud the passage the session asked everyone to read.",
+          "Forty minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Five minutes: the verse, read once more, and what anyone noticed in it this time.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else.",
+          "Five minutes: name the next session and the page it opens, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Welcome it. Questions about whether the Gospels can be trusted, whether Jesus really said what John reports, or whether the resurrection could be explained another way are the substance of this track, not interruptions to it. Say what is true in the objection first. If the page the session opened takes the question up, read that part aloud together. If no one knows, write the question down and bring it back the next week.",
+          "Keep the strongest form of every view in the room, including views the leader doesn't hold. Believers in the group should be able to state a skeptic's reading of Jesus so well that the skeptic recognizes it, and the reverse. Where Christians themselves disagree, say so."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Some sessions touch old wounds: a church that shamed someone, a father who was absent, a grief that hasn't lifted. When that happens, stop discussing. Listen, thank the person for saying it, and don't hurry them back to the topic or explain their pain for them. Ask whether they would like the group to go on or to pause, and afterwards speak with them on their own and ask what would help.",
+          "If someone says that anyone is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become more than a question: grief that has taken their sleep or appetite for weeks, guilt or fear that will not lift, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor, and the kindest thing is often to stay with the person while they make the first call."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "What historians agree on",
+      "minutes": 10,
+      "teaching": [
+        "Begin with what isn't in dispute, because it is more than most people expect. Historians who disagree about God, and about nearly everything the church says of Jesus, still agree on a short list. E. P. Sanders, who wrote as a historian rather than as a defender of the faith, set out facts he judged almost beyond dispute: Jesus was a Jew from Galilee, baptized by John, who called disciples, preached and healed, clashed with the authorities over the Temple, and was crucified by the Romans outside Jerusalem. His followers carried on afterward as a movement that would not go away.",
+        "Two writers who had no reason to help add their witness. Tacitus, a Roman historian who despised the movement, records that its founder was executed under Pontius Pilate. Josephus, a Jewish historian who never became a Christian, mentions James as the brother of Jesus who was called Christ. None of that tells you who Jesus was. It tells you the question concerns a real man in a real place, and that any honest answer has to account for the same short list. Luke, who says he investigated before he wrote, starts there too."
+      ],
+      "open": {
+        "kind": "essay",
+        "label": "Was Jesus real? What historians actually know",
+        "href": "/writing/the-historical-jesus",
+        "why": "What historians of the ancient world, believers or not, grant about Jesus, and why the theory that he never lived has so few defenders among them."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "Did the Gospels get Jesus right?",
+          "href": "/resources/context/did-the-gospels-get-jesus-right",
+          "why": "Whether the Gospels are the kind of writing that can be tested as history, and what the tests show when they are run."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible's timeline",
+          "href": "/study/timeline",
+          "why": "Places Jesus' life among the rulers and events of his century, so the dates in this track have somewhere to stand."
+        }
+      ],
+      "question": "Which of the facts historians agree on surprises you most, and why that one?",
+      "do": "Read Luke 1:1-4 and Luke 3:1-2. Write down every ruler and official Luke names, and notice that he is giving you ways to check him.",
+      "verse": {
+        "ref": "Luke 1:3-4",
+        "text": "Therefore, having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you, most excellent Theophilus, so that you may know the certainty of the things you have been taught."
+      },
+      "group": {
+        "open": "What did you assume about Jesus before you ever read anything about him?",
+        "discuss": [
+          "Why might historians who don't believe in Jesus still agree that he was crucified under Pilate?",
+          "Does knowing that Jesus lived change anything for you, or does it leave the real question untouched?",
+          "Luke says he investigated carefully. If you were checking his work, what would you want to check first?"
+        ],
+        "pray": "Those who pray may ask for an honest mind, willing to follow the evidence where it leads and to admit where it stops."
+      }
+    },
+    {
+      "n": 2,
+      "title": "His world: Israel under Rome",
+      "minutes": 10,
+      "teaching": [
+        "Jesus wasn't a timeless teacher dropped into nowhere. He was born into a small, occupied land where Rome ruled through client kings and governors, where Herod's sons held parts of the country and a Roman prefect held Judea, and where taxes, soldiers and crosses by the roadside were ordinary sights. The Jewish people there worshipped one God at one Temple, heard the same Scriptures read in their synagogues every Sabbath, and argued hard about how to stay faithful under foreign rule.",
+        "They didn't agree. Pharisees pressed for careful keeping of the law in daily life. Sadducees held the Temple and worked with Rome. Essenes withdrew to wait for God to act, and others hoped for a king who would drive the Romans out. Many were waiting for a Messiah, though they pictured him in more than one way. Every word Jesus spoke landed among those hopes. Read without them, he can sound like a greeting card. Read with them, he sounds dangerous."
+      ],
+      "open": {
+        "kind": "context",
+        "label": "Who were the Pharisees, Sadducees and Essenes?",
+        "href": "/resources/context/pharisees-sadducees-essenes",
+        "why": "The parties Jesus argued with and ate with, what each of them wanted, and why his words could not be neutral among them."
+      },
+      "also": [
+        {
+          "kind": "reading-guide",
+          "label": "The Herods and the governors",
+          "href": "/study/bible/guides/herods-and-governors",
+          "why": "Who ruled which part of the land in Jesus' lifetime, from Herod the Great to Pilate, so the names in the Gospels fall into place."
+        },
+        {
+          "kind": "context",
+          "label": "What kind of Messiah was Israel waiting for?",
+          "href": "/resources/context/messianic-expectation",
+          "why": "The hopes people carried about a coming king, and why Jesus fulfilled some of them and broke others."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible atlas",
+          "href": "/study/atlas",
+          "why": "Galilee, Samaria, Judea and the roads between them, so the places in the Gospels become a real country you can picture."
+        }
+      ],
+      "question": "What would a man announcing a kingdom have sounded like to people living under Roman soldiers?",
+      "do": "Read Mark 12:13-17, where Jesus is asked about paying taxes to Caesar. Write down who asked, why the question was a trap, and how his answer slipped out of it.",
+      "verse": {
+        "ref": "Galatians 4:4-5",
+        "text": "But when the time had fully come, God sent His Son, born of a woman, born under the law, to redeem those under the law, that we might receive our adoption as sons."
+      },
+      "group": {
+        "open": "Have you ever lived somewhere that the people in charge didn't feel like your own?",
+        "discuss": [
+          "Which of the groups in Jesus' day sounds most like people you know?",
+          "Why do you think the hope for a Messiah took so many different shapes?",
+          "What changes when you read Jesus as a man speaking into a crowded and tense political moment?"
+        ],
+        "pray": "Those who pray may ask to hear Jesus in his own world before deciding what he means in ours."
+      }
+    },
+    {
+      "n": 3,
+      "title": "The kingdom he announced",
+      "minutes": 10,
+      "teaching": [
+        "Mark gathers the whole of Jesus' preaching into a few words: “the kingdom of God is near” (Mark 1:15). To his hearers, kingdom didn't mean a place in the sky. It meant God taking up his rightful rule over the world, putting wrong things right, ending the long exile of his people and judging the powers that crushed them. The prophets had promised it. Many expected it to arrive with an army.",
+        "Jesus said it was arriving in him, and it came in a way nobody expected. He healed the sick, drove out evil spirits, ate with the wrong people and called fishermen rather than generals. His parables describe a kingdom that starts small, like a seed, and grows out of sight until it fills everything. He called people to repent, which means to turn around, and to trust that God was keeping his promise in front of them. You don't have to believe it to see that it was his central claim, and a claim about history, not only about the heart."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Mark 4, passage by passage",
+        "href": "/study/bible/mark/4#plain",
+        "why": "The parables of the kingdom, the sower and the seed that grows by itself and the mustard seed, with plain notes on what each meant to its first hearers."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The kingdom of God",
+          "href": "/study/explorer/watch/kingdom-of-god",
+          "why": "A short film on what the kingdom meant in Israel's Scriptures and what Jesus did with that long hope."
+        },
+        {
+          "kind": "film",
+          "label": "Mark: the story at a run",
+          "href": "/study/explorer/watch/book-mark",
+          "why": "The shape of the earliest Gospel from start to finish, so you can see where the first announcement of the kingdom leads."
+        }
+      ],
+      "question": "If Jesus meant that God was beginning to set the world right, what would you expect to see, and what do the Gospels show instead?",
+      "do": "Read the parables of the seed in Mark 4:26-32. Write one sentence on what they say about how the kingdom arrives, and one on whom that answer would have disappointed.",
+      "verse": {
+        "ref": "Mark 1:15",
+        "text": "“The time is fulfilled,” He said, “and the kingdom of God is near. Repent and believe in the gospel!”"
+      },
+      "group": {
+        "open": "If you could set one thing in the world right tomorrow, what would it be?",
+        "discuss": [
+          "Why do you think Jesus told stories about seeds rather than drawing up plans for a revolt?",
+          "What is the difference between a kingdom inside the heart and a kingdom that changes history?",
+          "Jesus called people to turn around. Turn from what, for people living under Rome?"
+        ],
+        "pray": "Those who pray may ask for God's kingdom to come, and to be shown where it is already growing unnoticed."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The Sermon on the Mount",
+      "minutes": 10,
+      "teaching": [
+        "Even people who reject everything else about Christianity tend to admire the Sermon on the Mount. Gandhi read it with reverence, and Tolstoy rebuilt his later life around it. It isn't hard to see why. It honours the poor in spirit and the meek, treats contempt as a kind of murder and lust as a kind of adultery, and tells people to turn the other cheek, to give in secret, to stop worrying about tomorrow, and to love their enemies and pray for those who persecute them.",
+        "Read closely, it isn't a set of tips. It is a picture of life under God's rule, and it asks more than any law. Again and again Jesus sets his own word beside the law of Moses setting what was said to those of old against what he now says, and no prophet before him spoke that way. The crowds noticed. Matthew says they were astonished, because he taught as one who had authority. The sermon people admire and the claim people resist turn out to live in the same three chapters."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Matthew 5, passage by passage",
+        "href": "/study/bible/matthew/5#plain",
+        "why": "The opening of the sermon, from the Beatitudes to love for enemies, with plain notes on what each saying meant in its world."
+      },
+      "also": [
+        {
+          "kind": "study",
+          "label": "Walk through Matthew 5",
+          "href": "/study/bible/matthew/5?study=walk",
+          "why": "A guided way to read the chapter slowly, step by step, so you meet the words yourself before anyone explains them."
+        },
+        {
+          "kind": "life",
+          "label": "Who is my neighbor?",
+          "href": "/life/the-neighbor-and-the-stranger",
+          "why": "What Jesus meant by neighbor and enemy, and what loving both would look like on an ordinary street."
+        }
+      ],
+      "question": "Which line of the Sermon on the Mount would be hardest for you to live, and why that one?",
+      "do": "Read Matthew 5 to 7 in one sitting; it takes about twenty minutes. Mark every place Jesus sets what was said of old against his own word, and count them.",
+      "verse": {
+        "ref": "Matthew 7:28-29",
+        "text": "When Jesus had finished saying these things, the crowds were astonished at His teaching, because He taught as one who had authority, and not as their scribes."
+      },
+      "group": {
+        "open": "Who taught you, by the way they lived, what it looks like to be good?",
+        "discuss": [
+          "Why do people who reject Christianity still admire this sermon?",
+          "Is the Sermon on the Mount a way anyone could actually live, or an impossible ideal? What would follow from each answer?",
+          "What does it say about Jesus that he set his own word beside the law of Moses?"
+        ],
+        "pray": "Those who pray may ask for the courage to love one enemy by name this week."
+      }
+    },
+    {
+      "n": 5,
+      "title": "How he treated outsiders",
+      "minutes": 10,
+      "teaching": [
+        "In Jesus' world, whom you ate with said who you were. A shared table meant acceptance, and a teacher who wanted to be taken seriously kept careful company. Jesus didn't. He touched lepers, whom the law kept outside the camp. He ate with tax collectors, Jews who worked for Rome and were counted traitors. He let a woman known in town for her sins wash his feet in a Pharisee's house, talked at length with a Samaritan woman at a well, and praised the faith of a Roman officer. His critics' complaint is on the record: “This man welcomes sinners and eats with them” (Luke 15:2).",
+        "He answered with three stories, about a lost sheep, a lost coin and a lost son, and the third ends with a father running down the road and an older brother refusing to come in to the party. Notice who it is aimed at. It is told to the religious people outside the door, and it ends without saying whether the brother went in. Jesus welcomed outsiders without pretending their lives were fine. He called it seeking the lost, and he seemed to think the respectable might be the most lost of all."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Luke 15, passage by passage",
+        "href": "/study/bible/luke/15#plain",
+        "why": "The three stories of the lost, told to people grumbling about the company Jesus kept, with notes on what a running father meant then."
+      },
+      "also": [
+        {
+          "kind": "context",
+          "label": "What does clean and unclean mean?",
+          "href": "/resources/context/purity-and-contagion",
+          "why": "Why touching a leper or eating with the wrong people mattered so much, and why Jesus' touch ran the other way from what everyone expected."
+        },
+        {
+          "kind": "film",
+          "label": "Luke: good news for the lost",
+          "href": "/study/explorer/watch/book-luke",
+          "why": "Luke's whole book in brief, a Gospel that keeps putting the poor, women and outsiders at the center of the story."
+        }
+      ],
+      "question": "In the story of the two sons, which one are you more like, and what does the father do with that son?",
+      "do": "Read Luke 15:11-32 aloud. Then write down whom, in your own world, you would least like to see welcomed at the party, and why.",
+      "verse": {
+        "ref": "Luke 19:10",
+        "text": "For the Son of Man came to seek and to save the lost."
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "When have you been the outsider in a room, and what did someone do that made a difference?",
+        "discuss": [
+          "Why would eating with tax collectors offend people more than teaching about love?",
+          "The story ends before we learn whether the older brother goes in. Why might Jesus leave it there?",
+          "Does welcoming someone mean approving of everything they do? How did Jesus hold the two apart?"
+        ],
+        "pray": "Those who pray may ask to see the people they keep outside the door, and to be found themselves."
+      }
+    },
+    {
+      "n": 6,
+      "title": "What he said about himself",
+      "minutes": 10,
+      "teaching": [
+        "In the first three Gospels Jesus never says in so many words that he is God. But his favourite name for himself was the Son of Man, the figure in Daniel's vision who comes with the clouds and receives an everlasting kingdom. When a paralysed man was lowered through a roof, Jesus told him his sins were forgiven, and the scholars in the room saw at once what that implied: “Who can forgive sins but God alone?” (Mark 2:7). At his trial he answered the high priest with Daniel's words, and was condemned for blasphemy.",
+        "John's Gospel says openly what the others show in action. There Jesus calls himself the bread of life, the light of the world, the good shepherd and the resurrection, and once he says, “before Abraham was born, I am” (John 8:58), taking the name God gave Moses at the burning bush. Historians argue over how much of John's long speeches records his own words. But the claim runs through every layer of the sources, and it is why the respectable verdict, a good teacher and nothing more, is so hard to hold. Good teachers don't talk like this."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Mark 2, passage by passage",
+        "href": "/study/bible/mark/2#plain",
+        "why": "The man through the roof, the claim to forgive, and the first arguments it started, with plain notes on why the scribes were alarmed."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "John: the Word made flesh",
+          "href": "/study/explorer/watch/book-john",
+          "why": "John's book in brief, built around the signs and the sayings that take up God's own name, so you can see the claim John makes plainly."
+        },
+        {
+          "kind": "answer",
+          "label": "Was Jesus just a good teacher?",
+          "href": "/answers/was-jesus-just-a-good-teacher",
+          "why": "Why the respectable verdict is the one the earliest sources make hardest to hold, and what that argument can and cannot do."
+        }
+      ],
+      "question": "If Jesus really said these things about himself, what are the possible explanations, and which seems most honest to you?",
+      "do": "Read Mark 14:53-65, the trial before the high priest. Write down the question he was asked, his answer, and why the court treated that answer as blasphemy.",
+      "verse": {
+        "ref": "Mark 14:62",
+        "text": "“I am,” said Jesus, “and you will see the Son of Man sitting at the right hand of Power and coming with the clouds of heaven.”"
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Whom have you known who made big claims about themselves, and did you believe them?",
+        "discuss": [
+          "Why would the scribes hear forgiving sins as blasphemy rather than kindness?",
+          "Is it possible to keep Jesus as a wise teacher and set aside what he said about himself? What would that cost?",
+          "Why might Jesus speak about himself in titles and riddles rather than plain statements?"
+        ],
+        "pray": "Those who pray may ask to hear what Jesus said about himself without softening it or explaining it away."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Why he was executed",
+      "minutes": 10,
+      "teaching": [
+        "Crucifixion was Rome's punishment for slaves, rebels and anyone who threatened public order. It was meant to be slow, public and shaming. Rome didn't nail gentle moral teachers to crosses. The Gospels give the charges plainly. The Temple leaders heard blasphemy and feared what a crowd might do at Passover, and the high priest is remembered as saying it was better for one man to die than for the whole nation to perish. Pilate heard a claim to be king, and the notice over the cross read, the King of the Jews.",
+        "So his death had political causes, and the Gospels don't hide them. But they insist it wasn't an accident. Jesus had walked toward Jerusalem knowing what waited, and he gave his own reason: “the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many” (Mark 10:45). Whether or not you accept that reading, it is the earliest his followers had. They took the most shameful death in the empire and called it the center of everything, which is a strange way to start a religion."
+      ],
+      "open": {
+        "kind": "context",
+        "label": "Why was crucifixion so shameful?",
+        "href": "/resources/context/honor-status-and-the-cross",
+        "why": "What a cross meant in the Roman world, and why preaching a crucified Messiah sounded like nonsense to Jews and Greeks alike."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Mark 15, passage by passage",
+          "href": "/study/bible/mark/15#plain",
+          "why": "The hearing before Pilate, the charge of kingship and the crucifixion itself, told in Mark's spare way with plain notes."
+        },
+        {
+          "kind": "film",
+          "label": "Why did Jesus die?",
+          "href": "/study/explorer/watch/why-jesus-died",
+          "why": "A short film on how the first Christians understood the cross, drawing on the sacrifices and promises of Israel's Scriptures."
+        },
+        {
+          "kind": "doctrine",
+          "label": "The atonement in the Study Bible",
+          "href": "/study/bible/doctrines/atonement",
+          "why": "The passages across both Testaments that explain what the cross accomplished, gathered so you can read them for yourself."
+        }
+      ],
+      "question": "Why would the first Christians build their message around the very death that should have ended it?",
+      "do": "Read Mark 15 slowly. List every person or group who had a hand in Jesus' death, and notice which of them thought they were doing the right thing.",
+      "verse": {
+        "ref": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+      },
+      "care": [
+        "If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What is the most humbling thing you have seen someone endure for the sake of another person?",
+        "discuss": [
+          "Were the priests and Pilate wicked men, or ordinary people protecting what they thought mattered? What follows from your answer?",
+          "Why might Rome treat a man who spoke of a kingdom as a danger, even if he raised no army?",
+          "What does it mean to call a death a ransom, and who would it be paid for?"
+        ],
+        "pray": "Those who pray may ask to see the cross as his first followers saw it, and not as a symbol worn without thought."
+      }
+    },
+    {
+      "n": 8,
+      "title": "The resurrection and the alternatives",
+      "minutes": 10,
+      "teaching": [
+        "Every serious account of how Christianity began has to explain one thing. A few weeks after Jesus died in disgrace, his followers were in Jerusalem saying that God had raised him bodily from the dead, and they kept saying it under threat. Paul passes on a list he had received of those who saw him: Peter, the twelve, more than five hundred at once, James his brother, and finally Paul himself, who had been persecuting the church. Most historians, skeptical ones included, date that list to within a few years of the crucifixion.",
+        "The alternatives deserve their full weight, and serious scholars hold them. Perhaps grieving disciples had visions, as bereaved people often do. Perhaps the story grew as legends grow. Perhaps someone moved the body, or Jesus didn't die on the cross. Each explains part of the evidence. The page this session opens grants what each gets right and asks what each leaves out: the empty tomb, the group appearances, the turning of enemies and skeptics, and the word resurrection itself, which meant a body raised, not a ghost. The weighing is yours."
+      ],
+      "open": {
+        "kind": "case",
+        "label": "Could the appearances be explained another way?",
+        "href": "/questions/jesus/the-appearances-and-the-alternatives",
+        "why": "Visions, legend, fraud and survival, each stated as its best defenders state it, then weighed against what the earliest sources report."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "The resurrection",
+          "href": "/study/explorer/watch/the-resurrection",
+          "why": "What the first Christians meant by resurrection, and why it was not the same as surviving death as a spirit."
+        },
+        {
+          "kind": "film",
+          "label": "Did Jesus really come back to life?",
+          "href": "/study/explorer/watch/did-jesus-come-back-to-life",
+          "why": "A short film that sets out the evidence and the questions side by side, for someone weighing the claim for the first time."
+        },
+        {
+          "kind": "essay",
+          "label": "Did the resurrection actually happen?",
+          "href": "/writing/did-the-resurrection-happen",
+          "why": "A longer essay on the historical case, for a reader who thinks the question deserves more than a slogan either way."
+        }
+      ],
+      "question": "Which explanation of the Easter reports seems strongest to you, and what part of the evidence does it struggle with?",
+      "do": "Read 1 Corinthians 15:1-20. Write down every person Paul names as a witness, and what Paul says would follow if the claim were false.",
+      "verse": {
+        "ref": "1 Corinthians 15:3-5",
+        "text": "For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that He was buried, that He was raised on the third day according to the Scriptures, and that He appeared to Cephas and then to the Twelve."
+      },
+      "care": [
+        "If you are grieving someone who has died, these verses do not ask you to stop grieving. Jesus wept at his friend's grave (John 11:35). Paul says believers grieve, but not “like the rest, who are without hope” (1 Thessalonians 4:13). If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Have you ever believed something because of who told you, rather than what you saw?",
+        "discuss": [
+          "Why do you think the first Christians said resurrection rather than saying they had seen his spirit?",
+          "Which of the natural explanations is most persuasive, and what does it leave unexplained?",
+          "Paul says the whole faith stands or falls on this. Why would a religion stake everything on one claim about history?"
+        ],
+        "pray": "Those who pray may ask for the honesty to weigh the evidence fairly, and for those in the group who doubt to be heard well."
+      }
+    },
+    {
+      "n": 9,
+      "title": "What the first Christians said about him",
+      "minutes": 10,
+      "teaching": [
+        "The first Christians were Jews who confessed every day that God is one. Within about twenty years of the crucifixion they were praying to Jesus, singing to him and giving him titles their Scriptures kept for God alone. Writing to Corinth in the mid 50s, Paul says there is one God, the Father, and one Lord, Jesus Christ, through whom all things came, and many scholars hear in it Israel's confession of the one God opened to include Jesus. Philippians 2, which many think Paul is quoting from an older hymn, gives Jesus the bow Isaiah said every knee would make to the LORD.",
+        "Outsiders noticed. Around the year 112 the Roman governor Pliny wrote to the emperor Trajan that Christians met before dawn and sang to Christ as to a god. The church spent centuries finding the right words for what it already did in worship, and at Nicaea in 325 it confessed him true God from true God. The careful language came late. The worship came first. Whether they were right is the question this whole track has been circling, but they weren't slowly talked into it."
+      ],
+      "open": {
+        "kind": "history",
+        "label": "The first Christians",
+        "href": "/theology/history/the-apostolic-age",
+        "why": "From Pentecost to the generation after the apostles: who the first believers were, what they faced, and what they said about Jesus."
+      },
+      "also": [
+        {
+          "kind": "case",
+          "label": "How did Jesus become God?",
+          "href": "/questions/jesus/how-did-jesus-become-god",
+          "why": "Bart Ehrman's case that belief about Jesus grew from an exalted man to God, at full strength, weighed against Paul's earliest letters."
+        },
+        {
+          "kind": "creed",
+          "label": "The Nicene Creed",
+          "href": "/resources/creeds/nicene-creed",
+          "why": "The words the church settled on for who Jesus is, so you can set them beside what the first letters already say."
+        }
+      ],
+      "question": "Why would Jews who confessed one God begin to worship a man they had known?",
+      "do": "Read Philippians 2:5-11 and Isaiah 45:22-23 side by side. Write down what Paul gives to Jesus that Isaiah gives to the LORD.",
+      "verse": {
+        "ref": "1 Corinthians 8:6",
+        "text": "yet for us there is but one God, the Father, from whom all things came and for whom we exist. And there is but one Lord, Jesus Christ, through whom all things came and through whom we exist."
+      },
+      "group": {
+        "open": "What is something you believed long before you could put it into words?",
+        "discuss": [
+          "Pliny was an outsider with no sympathy for Christians. Why does his description matter?",
+          "Bart Ehrman thinks belief about Jesus grew over time. What in the earliest letters supports him, and what pushes against him?",
+          "If the worship came before the creeds, what does that tell you about the creeds?"
+        ],
+        "pray": "Those who pray may give thanks for the long line of people who carried this confession, and ask to understand it better."
+      }
+    },
+    {
+      "n": 10,
+      "title": "The question he asked his friends",
+      "minutes": 10,
+      "teaching": [
+        "Halfway through Mark, near Caesarea Philippi, a city named for Caesar, Jesus asks his friends what people are saying about him. They give him the answers of the day: John the Baptist, Elijah, one of the prophets. Then he turns the question on them: “Who do you say I am?” (Mark 8:29). Peter answers that he is the Messiah, and at once Jesus begins to teach that the Messiah must suffer, be rejected, be killed and rise again. Peter, who has just got the title right, tries to talk him out of the cross.",
+        "This is where the track leaves you. You have seen what historians grant, the world he spoke into, the kingdom he announced, the company he kept, the claims he made, the death he died and what his friends said happened next. Thoughtful people have weighed the same evidence and answered differently, and no one can answer it for anyone else. Jesus didn't ask Peter to sum up the opinions. He asked what Peter himself would say, and then told him what following would cost. The question is still open, and it is still put to you."
+      ],
+      "open": {
+        "kind": "chapter",
+        "label": "Mark 8, passage by passage",
+        "href": "/study/bible/mark/8#plain",
+        "why": "Peter's answer near Caesarea Philippi, the first word about the cross and the cost of following, with notes on what Messiah meant."
+      },
+      "also": [
+        {
+          "kind": "film",
+          "label": "Who Jesus is",
+          "href": "/study/explorer/watch/who-jesus-is",
+          "why": "A short film gathering what the Bible says about Jesus, from the promises of the prophets to the confession of the first church."
+        },
+        {
+          "kind": "track",
+          "label": "Next: the hardest questions, faced honestly",
+          "href": "/tracks/hard-questions",
+          "why": "The next track in Exploring Christianity: other religions, hell, the wars of the Old Testament, slavery, miracles and the church's failures, each stated at its strongest."
+        }
+      ],
+      "question": "Who do you say Jesus was, and what would it take to change your answer?",
+      "do": "Write a paragraph, for no one but yourself, answering Jesus' question as honestly as you can today. Date it and keep it, and read it again when you finish the next track.",
+      "verse": {
+        "ref": "Mark 8:29",
+        "text": "“But what about you?” Jesus asked. “Who do you say I am?” Peter answered, “You are the Christ.”"
+      },
+      "care": [
+        "If your grief is so heavy that you cannot carry it, please tell someone: a pastor, a friend, a doctor or a counsellor. The Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "What answers about Jesus have you heard from the people around you?",
+        "discuss": [
+          "Why do you think Jesus asked what people were saying before he asked what his friends thought?",
+          "Peter got the title right and its meaning wrong. Is that still possible today?",
+          "What is the strongest reason you have heard to believe Jesus was who he said, and the strongest reason not to?"
+        ],
+        "pray": "Those who pray may ask Jesus to show them who he is, and for each person here to be free to answer honestly."
+      }
+    }
+  ]
+}

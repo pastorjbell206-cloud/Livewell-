@@ -1,0 +1,504 @@
+{
+  "slug": "reading-by-genre",
+  "title": "Reading each kind of book in the Bible",
+  "for": "I want to read each part rightly",
+  "subtitle": "Nine short sessions on how each kind of writing in the Bible asks to be read: law, story, poetry, wisdom, prophecy, the Gospels, the letters and the visions of Daniel and Revelation.",
+  "intro": [
+    "The Bible is one book and also a library, and its books don't all work the same way. A psalm is read differently from a law, and a letter differently from a vision. This track takes the main kinds of writing one at a time, opens the Study Bible's guide to each, and practises on a real chapter. It has nine sessions of about ten minutes, with a little reading between them.",
+    "Each session works the same way. You read a few short paragraphs, then open one page and use it, then come back to one question, one thing to do, and one verse to keep. It follows How to study a passage: seven steps, and the method from that track carries into every session here. Each session ends with a guide for a group."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for anyone leading a small group through Reading each kind of book in the Bible. The group is for people who read the Bible and want to read each part of it rightly, and who have noticed that a proverb, a parable and a vision can't all be handled the same way. The leader's task is to keep the group close to the text, fair to readers who see it differently, and patient with the parts of the Bible that feel strange.",
+      "Each person reads the session, opens its guide, and reads the chapter it names before the group meets. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Four to ten people is a good size. Meet for about seventy-five minutes, once a week, for nine meetings, and keep the end time you promised. The reading guides are long, so ask each person to read the part of the guide the session names and the chapter, and no more unless they want to. A leader doesn't need to be a scholar. A leader needs to have done the reading, and to be willing to say when they don't know."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "A table works best, with Bibles open in front of everyone, in print or on a phone, and paper for notes. Make it plain at the first meeting that anyone may pass on any question, that the group will disagree about some things and that this is allowed, and that no one has to read or pray aloud. What people say about their own lives stays in the room, unless someone is in danger."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About seventy-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Ten minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: one person reads the session's chapter aloud while the others follow.",
+          "Fifteen minutes: what each person learned from the guide about how this kind of writing works.",
+          "Thirty minutes: the three questions to talk over, in order. Ask where each answer is found in the text.",
+          "Five minutes: the prayer prompt, in your own words.",
+          "Five minutes: name the next session, the guide it opens and the chapter it reads, and say when you will meet."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Some of these sessions reach questions faithful Christians answer differently: how the law of Moses applies now, how to read the parables, and how to read Revelation, including the thousand years. When one comes up, name what order of question it is. These divide faithful churches but not the faith itself. Let each view be stated in a form its own defenders would accept, and leave it open where the church has long left it open.",
+          "If someone asks whether calling something poetry or vision is a way of not believing it, take the question seriously. The answer is to read the kind of writing from the text's own signals, never from our discomfort with what it says. If no one knows the answer, write the question down and bring it back the next week."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "A study group is never only study. A proverb about children can land on a parent whose grown child has walked away, and a psalm of lament can land on someone who has been praying it for months. When the study touches someone's life, stop and listen. Thank them for saying it, don't explain their suffering for them, and don't hurry back to the guide. Ask whether they would like the group to go on or to pause, and speak with them on their own afterwards.",
+          "If someone says that a partner, a leader or anyone else is harming them or a child, take it seriously and don't promise to keep it secret. A child who may be in danger is a matter for the authorities, not only for the group."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point someone to Find Help when what they carry has become too heavy to set down: sorrow that has taken their sleep or appetite for weeks, a weight on the conscience that will not let them rest, harm done to them at home or in a church, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. A leader is a friend in that moment, not a counsellor."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Why the kind of writing matters",
+      "minutes": 10,
+      "teaching": [
+        "You already read by kind without thinking about it. Nobody reads a recipe like a love letter, or a news report like a poem, and nobody is confused when a song says the hills are alive. The Bible is a library written over many centuries, holding law, story, song, proverb, oracle, biography, letter and vision. When a psalm says “the mountains skipped like rams, the hills like lambs” (Psalm 114:4), it isn't describing an earthquake in error. It's telling the truth about the exodus the way poetry tells it.",
+        "Some Christians worry that talk of genre becomes a way of escaping what the Bible says, calling a hard history a myth or a hard command a metaphor. That worry is fair, and the history of interpretation has examples of it. But the remedy isn't to read every page the same way. It's to let the text's own signals tell you what kind of writing it is, rather than your comfort or discomfort with what it says. Reading by kind isn't asking whether a passage is true. It's asking what kind of truth it tells, and how."
+      ],
+      "open": {
+        "kind": "bible",
+        "label": "Guides to reading the Bible",
+        "href": "/study/bible/guides",
+        "why": "The Study Bible's guides in one place: how each kind of book reads, and the background that helps you read it."
+      },
+      "also": [
+        {
+          "kind": "reading-guide",
+          "label": "What the Bible Is",
+          "href": "/study/bible/guides/what-is-the-bible",
+          "why": "A library of sixty-six books in two testaments and three languages: what is in it, how it is arranged, and what it claims to be."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The 66 books at a glance",
+          "href": "/study/books-at-a-glance",
+          "why": "Every book's shape on one page, so you can see at a glance how a law book, a prophet and a letter are each built."
+        },
+        {
+          "kind": "context",
+          "label": "How Does Being Western Change the Way We Read the Bible?",
+          "href": "/resources/context/misreading-with-western-eyes",
+          "why": "The habits a modern Western reader brings to an ancient book without noticing, and how to see them."
+        }
+      ],
+      "question": "Which part of the Bible have you been reading as if it were a different kind of writing than it is?",
+      "do": "Look over the books at a glance and sort the sixty-six books, roughly, into the kinds this track covers. Note any book you aren't sure how to sort, and keep the list for the sessions ahead.",
+      "verse": {
+        "ref": "2 Timothy 3:16",
+        "text": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness"
+      },
+      "group": {
+        "open": "What is a kind of writing you love to read, and one you find hard going?",
+        "discuss": [
+          "How does knowing Psalm 114 is a poem change the way we hear the mountains skipping?",
+          "Is the worry that genre becomes an escape from hard texts a fair one, and how would you answer it?",
+          "Which kind of writing in the Bible does the group find hardest to read, and why?"
+        ],
+        "pray": "Give thanks that God has spoken in many ways, through song and story and law and letter, and pray for patience to hear each one as it was given."
+      }
+    },
+    {
+      "n": 2,
+      "title": "Reading the law",
+      "minutes": 10,
+      "teaching": [
+        "Many readers stall in the law of Moses, and some feel it is the opposite of grace. But notice where the Ten Commandments begin: “I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery” (Exodus 20:2). Rescue comes first and command second. The Hebrew word torah means instruction or teaching more than a legal code, and the law is the shape of life for a people already rescued. Much of it is case law, a few examples that train judgment rather than cover every case. A railing around a flat roof, so no one falls, teaches a whole way of caring for a neighbour's life.",
+        "How the law applies to Christians now is a question faithful churches answer differently. Many in the Reformed tradition sort it into moral, civil and ceremonial law and hold the moral law still binding. Others read the whole law as fulfilled in Christ and binding as the New Testament takes it up. Both are trying to honour Jesus' own words that he came to fulfil the law. Hold this question with an open hand, and read the law first as Israel's grateful answer to the God who set it free."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Law",
+        "href": "/study/bible/guides/reading-law",
+        "why": "What the Torah is, how case law and command work, the covenant that frames the laws, and the main ways Jews and Christians have related the Law to life."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Exodus 20, the Ten Commandments",
+          "href": "/study/bible/exodus/20",
+          "why": "The commandments with notes on every verse, beginning with the rescue that comes before the first command."
+        },
+        {
+          "kind": "context",
+          "label": "How Is the Law of Moses Different From Hammurabi?",
+          "href": "/resources/context/torah-and-the-law-codes",
+          "why": "Israel's law beside the older law codes of its neighbours: what they share, and where Israel's law is strikingly different."
+        },
+        {
+          "kind": "film",
+          "label": "Leviticus: living near a holy God",
+          "href": "/study/explorer/watch/book-leviticus",
+          "why": "A short film on the book most readers give up in, showing what it is for and how it is put together."
+        }
+      ],
+      "question": "Does it change how you hear God's commands to know that the rescue came before them?",
+      "do": "Read Exodus 20 slowly, then read Deuteronomy 22:1-8. For each law, write the care for a neighbour it is trying to teach, and one way that care might look in your own week.",
+      "verse": {
+        "ref": "Psalm 19:7",
+        "text": "The Law of the LORD is perfect, reviving the soul; the testimony of the LORD is trustworthy, making wise the simple."
+      },
+      "group": {
+        "open": "What is a rule from your childhood home that made more sense to you once you were older?",
+        "discuss": [
+          "Why do you think the Ten Commandments begin with what God has already done?",
+          "What does a law like the railing on the roof teach beyond the single case it names?",
+          "How does your own church relate the law of Moses to Christians now, and how would you state the view of a church that differs?"
+        ],
+        "pray": "Give thanks for the rescue that comes before every command, and pray that God's instruction would be a delight to the group and not a weight."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Reading the stories",
+      "minutes": 10,
+      "teaching": [
+        "Much of the Bible is story, and its storytellers are restrained. They rarely tell you what to think of a character; they show you what he did and let you notice. They use repetition, dialogue and a well-placed silence. And their heroes are rarely models. Abraham lies about his wife, Jacob cheats his brother, and David, the man after God's own heart, takes another man's wife. Reading every story as an example to copy turns the Bible into a book of morals with a God who mostly watches.",
+        "Take David and Goliath. It's usually told as a lesson in facing your giants. Yet David himself tells the meaning before the stone flies: “for the battle is the LORD’s” (1 Samuel 17:47). Most of us stand in the story with Israel on the hillside, trembling and watching, while God saves through the one he chose. That doesn't mean stories never teach by example; Paul says the things that happened to Israel were written down as warnings for us. It means the first question of a story is what God is doing in it, and only after that what we should do."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Stories",
+        "href": "/study/bible/guides/reading-narrative",
+        "why": "How biblical narrative works: the narrator's restraint, dialogue, repetition, key words, why the heroes are rarely models, and how story and history relate."
+      },
+      "also": [
+        {
+          "kind": "study",
+          "label": "Study 1 Samuel 17, step by step",
+          "href": "/study/bible/1-samuel/17?study=walk",
+          "why": "The guided study on David and Goliath, with the chapter's setting, its key words and the hard question its notes take up."
+        },
+        {
+          "kind": "film",
+          "label": "David and Goliath",
+          "href": "/study/explorer/watch/david-and-goliath",
+          "why": "The story as the Bible tells it, in seven pictures, and what it is really about."
+        }
+      ],
+      "question": "In the story of David and Goliath, where do you honestly find yourself standing?",
+      "do": "Read 1 Samuel 17 straight through. Mark every place where someone speaks about God, and write one sentence on what the story says God is doing before you write anything about David.",
+      "verse": {
+        "ref": "Romans 15:4",
+        "text": "For everything that was written in the past was written for our instruction, so that through endurance and the encouragement of the Scriptures, we might have hope."
+      },
+      "group": {
+        "open": "What is a story you were told as a child that meant something different when you heard it again as an adult?",
+        "discuss": [
+          "Why might the Bible's narrators so rarely tell us what to think of the people in their stories?",
+          "What changes when the group reads 1 Samuel 17 from Israel's hillside rather than from David's sling?",
+          "Where is the line between learning from a biblical character and making them a model to copy?"
+        ],
+        "pray": "Give thanks that God works through flawed people in every story he tells, and pray for eyes to see what he is doing before asking what we should do."
+      }
+    },
+    {
+      "n": 4,
+      "title": "Reading the poetry",
+      "minutes": 10,
+      "teaching": [
+        "Much of the Old Testament is poetry, and Hebrew poetry works mostly by parallel lines. The second line echoes the first, sharpens it, or turns against it. “The heavens declare the glory of God; the skies proclaim the work of His hands” (Psalm 19:1). Read that as two separate claims and you miss the music. Read it as one thought said twice, the second time a little closer, and you are reading it the way it was made. Poetry also speaks in pictures. God is a rock, a shield, a shepherd, and each picture is true without being literal.",
+        "The Psalms are poems of a particular kind. They are prayers, given to God's people to say back to him, and they cover the whole range of a human life: praise, thanks, confession, rage, longing and lament. That range is a gift. It means there is no state you can be in that the Psalms have not already prayed. So read a psalm slowly, more than once, and then try praying it in your own voice. Poetry is understood best when it is spoken."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading Hebrew Poetry",
+        "href": "/study/bible/guides/reading-poetry",
+        "why": "How Hebrew poetry works: parallel lines, terseness, sound and imagery, the kinds of psalms, and what the headings like selah mean."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Psalm 19 with its notes",
+          "href": "/study/bible/psalms/19",
+          "why": "A psalm in two movements, the heavens and the law, with notes on its parallel lines and its images."
+        },
+        {
+          "kind": "psalms",
+          "label": "Pray Psalm 19",
+          "href": "/tools/pray-the-psalms?psalm=19",
+          "why": "A quiet way to pray a psalm line by line, putting its words into your own after you have studied them."
+        },
+        {
+          "kind": "film",
+          "label": "Psalms: the prayer book of the Bible",
+          "href": "/study/explorer/watch/book-psalms",
+          "why": "A short film on the Psalms: what the book is, how it is put together, and where to start reading."
+        }
+      ],
+      "question": "Which line of Psalm 19 did you understand differently once you read it as two halves of one thought?",
+      "do": "Read Psalm 19 aloud. For each pair of lines, write whether the second echoes, sharpens or turns against the first. Then pray the psalm once in your own words.",
+      "verse": {
+        "ref": "Psalm 19:1",
+        "text": "The heavens declare the glory of God; the skies proclaim the work of His hands."
+      },
+      "group": {
+        "open": "Is there a song or a poem you know by heart, and why do you think it stayed with you?",
+        "discuss": [
+          "What did the group find in Psalm 19 by reading it line by line in pairs?",
+          "Why might God have given his people a book of prayers to say back to him, rather than only teaching about prayer?",
+          "Which picture of God in the Psalms means most to you, and what does it say that a plain statement could not?"
+        ],
+        "pray": "Pray part of Psalm 19 together, each person putting a line into their own words, and give thanks for a God who speaks through the skies and through his law."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Reading the wisdom books",
+      "minutes": 10,
+      "teaching": [
+        "A proverb is a short saying that is generally true, not a promise with a guarantee attached. Proverbs shows this itself. “Do not answer a fool according to his folly, or you yourself will be like him. Answer a fool according to his folly, lest he become wise in his own eyes” (Proverbs 26:4-5). Side by side, that isn't a contradiction. It's wisdom. Some fools are best ignored and some must be answered, and knowing which is which is the skill the book is trying to give you.",
+        "Read a proverb as a guarantee and it will wound people. Parents who trained a child well and watched that child walk away have been told they must have failed, by readers who took a proverb about how life usually goes for a promise about how it always goes. Israel's wisdom books argue with each other on exactly this point. Proverbs shows the ordered world, Job shows the righteous man who suffers, and Ecclesiastes shows that time and chance happen to all. You need all three to be wise."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Wisdom Books",
+        "href": "/study/bible/guides/reading-wisdom",
+        "why": "Proverbs, Job and Ecclesiastes: what wisdom meant in Israel, what a proverb is and is not, and how the three books argue with each other."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Proverbs 26 with its notes",
+          "href": "/study/bible/proverbs/26",
+          "why": "Fools, slackers and smooth talkers, with the notes' answer to the two proverbs that seem to give opposite advice."
+        },
+        {
+          "kind": "context",
+          "label": "Did Proverbs Borrow From Egyptian Wisdom Writing?",
+          "href": "/resources/context/wisdom-and-the-nations",
+          "why": "Israel's wisdom beside the wisdom of its neighbours, and what it means that God's people learned from them and differed from them."
+        },
+        {
+          "kind": "film",
+          "label": "Proverbs: skill for ordinary days",
+          "href": "/study/explorer/watch/book-proverbs",
+          "why": "A short film on Proverbs: what the book is, how it is put together, and what to watch for."
+        }
+      ],
+      "question": "Is there a proverb you have treated as a promise, and what happens when you read it as wisdom instead?",
+      "do": "Read Proverbs 26. Choose one situation from your coming week and decide, writing down why, whether it calls for verse 4 or verse 5.",
+      "verse": {
+        "ref": "Proverbs 2:6",
+        "text": "For the LORD gives wisdom; from His mouth come knowledge and understanding."
+      },
+      "group": {
+        "open": "What is a piece of advice that was right for one moment of your life and wrong for another?",
+        "discuss": [
+          "How do the group read Proverbs 26:4 and 26:5 together, and when would each apply?",
+          "What harm can be done by reading a proverb as a guarantee, and how should a church speak to someone hurt by that reading?",
+          "Why do you think God gave Proverbs, Job and Ecclesiastes together rather than one of them alone?"
+        ],
+        "pray": "Ask God for wisdom in the particular choices each person faces this week, and pray for anyone who has been wounded by a proverb read as a promise."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Reading the prophets",
+      "minutes": 10,
+      "teaching": [
+        "The prophets are often treated as fortune tellers, and they did speak of what was coming. But most of what they said was spoken to their own people about their own day, calling Israel back to the covenant it had already made. Amos was a herdsman sent to a prosperous northern kingdom whose worship was busy and whose courts were bent. God's word through him is startling: “But let justice roll on like a river, and righteousness like an ever-flowing stream” (Amos 5:24). It comes right after God says he cannot stand their feasts.",
+        "So read an oracle in its own time before you read it in ours. Ask who the prophet was speaking to, what they were doing, and what they were being called back to. Then let it come forward, and be careful when you do. It is easy to cheer Amos on against someone else's injustice. It is harder to hear him speaking to people who sing loudly on Sunday and sleep well while their neighbours are cheated, and to wonder whether that describes us."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Prophets",
+        "href": "/study/bible/guides/reading-prophets",
+        "why": "Who the prophets were and when they spoke, the forms they used, prediction and fulfilment, and how to read an oracle in its own time first."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Amos 5 with its notes",
+          "href": "/study/bible/amos/5",
+          "why": "Seek the LORD and live, and let justice roll like a river, with the notes' answer to whether Amos rejects worship altogether."
+        },
+        {
+          "kind": "film",
+          "label": "Amos: let justice roll on like a river",
+          "href": "/study/explorer/watch/book-amos",
+          "why": "A short film on Amos, the herdsman God sent to a rich kingdom that forgot the poor."
+        }
+      ],
+      "question": "If Amos came to your town and your church, what do you think he would say first?",
+      "do": "Read Amos 5 in one sitting. Write down who Amos is speaking to and what they were doing, then write one honest sentence about where his words reach your own life.",
+      "verse": {
+        "ref": "Amos 5:24",
+        "text": "But let justice roll on like a river, and righteousness like an ever-flowing stream."
+      },
+      "group": {
+        "open": "Who is someone who told you a hard truth you needed to hear, and how did you take it at the time?",
+        "discuss": [
+          "Why would God say he could not stand his own people's feasts and songs?",
+          "What is gained by reading Amos in his own time before asking what he says to ours?",
+          "Where are we, the people in this room, most like the comfortable listeners Amos spoke to?"
+        ],
+        "pray": "Pray for justice where the group lives, naming particular people who are cheated or overlooked, and ask God to make our worship and our lives agree."
+      }
+    },
+    {
+      "n": 7,
+      "title": "Reading the Gospels",
+      "minutes": 10,
+      "teaching": [
+        "The Gospels are four accounts of one Jesus, each told from its own angle and for its own readers. Many scholars now read them as ancient biographies, a kind of writing that cared about a person's words and deeds and was free to arrange them by theme. That's why Matthew, Mark, Luke and John sometimes place the same event differently, and why each is best read whole, on its own terms, before being laid beside the others. John states his purpose plainly near the end: “But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name” (John 20:31).",
+        "Inside the Gospels is another kind of writing, the parable. For centuries the church read parables as allegories in which every detail stood for something. Many later scholars pressed the opposite case, that a parable makes one main point. Most readers now take a path between, attentive to the details a parable itself makes much of. However you hold that debate, notice that a parable is built to catch the listener, and often the person it catches is the one who thought it was about somebody else."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Gospels",
+        "href": "/study/bible/guides/reading-gospels",
+        "why": "What kind of books the Gospels are, who wrote them and when, the four portraits of one Jesus, and how to read them side by side and one at a time."
+      },
+      "also": [
+        {
+          "kind": "reading-guide",
+          "label": "Reading the Parables",
+          "href": "/study/bible/guides/reading-parables",
+          "why": "What a parable is, how Jesus used his, and the long history of how the church has read them, from allegory to the scholars of today."
+        },
+        {
+          "kind": "book",
+          "label": "The Gospel of Mark",
+          "href": "/study/bible/mark",
+          "why": "The shortest Gospel, with an introduction on who wrote it and why. Read it in one or two sittings as its first hearers would have."
+        },
+        {
+          "kind": "film",
+          "label": "Mark: the story at a run",
+          "href": "/study/explorer/watch/book-mark",
+          "why": "A short film on Mark: what the book is, how it is put together, and what to watch for."
+        }
+      ],
+      "question": "What did you see in Mark by reading it whole that you had missed reading the Gospels a story at a time?",
+      "do": "Read Mark straight through, in one sitting or two. Write down each time someone asks who Jesus is, and how the question is answered by the end.",
+      "verse": {
+        "ref": "John 20:31",
+        "text": "But these are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name."
+      },
+      "group": {
+        "open": "If four friends each wrote an account of your life, how might their stories differ?",
+        "discuss": [
+          "Why might God have given the church four Gospels rather than one harmonised account?",
+          "How did reading Mark whole change the way the group sees one story inside it?",
+          "Which parable has caught you when you thought it was about someone else?"
+        ],
+        "pray": "Give thanks for the four witnesses who wrote down the life of Jesus, and pray that each person would know him and not only know about him."
+      }
+    },
+    {
+      "n": 8,
+      "title": "Reading the letters",
+      "minutes": 10,
+      "teaching": [
+        "Reading a New Testament letter is reading someone else's mail. You hear one side of a conversation, written to a particular church with particular troubles, and you have to work out the other side from what the writer says. That's why a letter should be read whole and in one sitting, the way its first hearers heard it read aloud, before any verse is lifted out of it. Paul asked for exactly that: “I charge you before the Lord to have this letter read to all the brothers” (1 Thessalonians 5:27).",
+        "Philemon takes a few minutes to read, and it shows how much is at stake. Paul writes to a slave owner about Onesimus, a slave who has become a Christian, asking him to receive Onesimus “no longer as a slave, but better than a slave, as a beloved brother” (Philemon 1:16). Readers differ on how far Paul meant to go. Some see a quiet request for freedom in his confidence that Philemon will do even more than he asks; others see a letter that leaves the institution standing. The letter's own notes face that question honestly, and so should we."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading the Letters",
+        "href": "/study/bible/guides/reading-letters",
+        "why": "The ancient letter and how the New Testament letters use it, secretaries and couriers, and the art and risk of reading someone else's mail."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Philemon with its notes",
+          "href": "/study/bible/philemon/1",
+          "why": "The whole letter in one chapter, with notes on Onesimus and the hard question of why Paul does not condemn slavery outright."
+        },
+        {
+          "kind": "context",
+          "label": "Which Cities Did Paul Write To?",
+          "href": "/resources/context/the-cities-of-paul",
+          "why": "Corinth, Ephesus, Rome and the other cities behind Paul's letters, and what the first hearers' world explains in what he wrote."
+        }
+      ],
+      "question": "What can you work out about the other side of the conversation from reading Philemon alone?",
+      "do": "Read Philemon aloud in one sitting. Write down everything it tells you about Philemon, Onesimus and the church that met in Philemon's house, then read the notes and the hard question.",
+      "verse": {
+        "ref": "1 Thessalonians 5:27",
+        "text": "I charge you before the Lord to have this letter read to all the brothers."
+      },
+      "group": {
+        "open": "Have you ever read a letter or a message meant for someone else, and misunderstood it because you didn't know the background?",
+        "discuss": [
+          "What does Paul ask of Philemon, and how does he go about asking it?",
+          "How do you weigh the readings of Philemon that see a request for freedom and those that do not?",
+          "What is lost when a verse is lifted out of a letter and read on its own?"
+        ],
+        "pray": "Pray for the brothers and sisters each person finds hardest to receive as family, and give thanks that the gospel makes strangers into kin."
+      }
+    },
+    {
+      "n": 9,
+      "title": "Reading Daniel and Revelation",
+      "minutes": 15,
+      "teaching": [
+        "Daniel and Revelation belong to a kind of writing called apocalyptic, from a Greek word for unveiling. They speak in visions, symbols and numbers, and they were written for God's people under pressure from an empire. Revelation opens as a letter “To the seven churches in the province of Asia” (Revelation 1:4), real congregations with real troubles. Its central picture is not a timeline but a throne, and on it “a Lamb who appeared to have been slain” (Revelation 5:6). Whatever else the book means, it means that the world is ruled from there.",
+        "Christians read Revelation in four main ways. Preterists read much of it as fulfilled in the first centuries, historicists as a map of church history, futurists as chiefly about the end of the age, and idealists as a picture of the struggle in every age. Each has serious defenders, and the thousand years have divided faithful churches for centuries. Hold those questions open. Notice too that the book has often been used to name other people's enemies, when it was written to ask its own readers to keep faith. That is a word for us before it is a word about anyone else."
+      ],
+      "open": {
+        "kind": "reading-guide",
+        "label": "Reading Revelation and Daniel",
+        "href": "/study/bible/guides/reading-apocalyptic",
+        "why": "What apocalyptic writing is, how its visions, symbols and numbers work, and the four main schools of reading Revelation, with their history."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Revelation 1 with its notes",
+          "href": "/study/bible/revelation/1",
+          "why": "The risen Christ among the lampstands, with the notes' answer to how the time can be near two thousand years later."
+        },
+        {
+          "kind": "film",
+          "label": "Revelation: the Lamb on the throne",
+          "href": "/study/explorer/watch/book-revelation",
+          "why": "A short film on Revelation: what the book is, how it is put together, and what to watch for."
+        },
+        {
+          "kind": "track",
+          "label": "The world the Bible was written in",
+          "href": "/tracks/bible-world",
+          "why": "The next track in this program, The world the Bible was written in, opens the empires, cities, festivals and daily life behind every book you have read here."
+        }
+      ],
+      "question": "When you have read Revelation, have you been looking for a timeline, an enemy, or the Lamb on the throne?",
+      "do": "Read Revelation 1 to 5 in one sitting. Write down every picture of Christ you find, and one sentence on what the seven churches were being asked to do.",
+      "verse": {
+        "ref": "Revelation 1:3",
+        "text": "Blessed is the one who reads aloud the words of this prophecy, and blessed are those who hear and obey what is written in it, because the time is near."
+      },
+      "group": {
+        "open": "What were you taught about Revelation growing up, and how did it make you feel about the book?",
+        "discuss": [
+          "Why might the central picture of Revelation be a slain Lamb on a throne rather than a conquering warrior?",
+          "How would you state each of the four ways of reading Revelation so that its defenders would agree with you?",
+          "What would it mean for this group to read Revelation as it was first meant, as a call to keep faith?"
+        ],
+        "pray": "Give thanks that the Lamb is on the throne, and pray for Christians who live under pressure today, that they would keep faith and be kept."
+      }
+    }
+  ]
+}

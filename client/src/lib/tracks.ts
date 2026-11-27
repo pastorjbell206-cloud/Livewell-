@@ -132,6 +132,14 @@ export const KIND_LABEL: Record<string, string> = {
   bible: "Study Bible",
   context: "Bible background",
   explorer: "Bible Explorer",
+  doctrine: "Doctrine study",
+  story: "The Bible's story",
+  "reading-guide": "Reading guide",
+  "study-tool": "Study page",
+  theology: "Theology",
+  life: "Everyday life",
+  howto: "How-to guide",
+  essay: "Essay",
 };
 
 export const kindLabel = (kind: string) => KIND_LABEL[kind] ?? "Page";

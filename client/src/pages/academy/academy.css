@@ -1,0 +1,115 @@
+/* The Academy (/academy, /academy/:program, /academy/learned, /academy/certificate/...). Tokens only. */
+
+/* How it works: four plain facts. */
+.ac-how{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-3)}
+.ac-how li{display:flex;flex-direction:column;gap:10px;font-family:var(--U);font-size:15px;line-height:1.55;color:var(--ink-muted)}
+.ac-how svg{color:var(--ink)}
+.ac-how strong{display:block;font-family:var(--F);font-weight:500;font-size:1.3rem;line-height:1.2;color:var(--ink);margin-bottom:4px}
+
+/* The road: the programs in order, as numbered stops on one line. */
+.ac-road{list-style:none;margin:var(--s-3) 0 var(--s-4);padding:0;display:flex;flex-wrap:wrap;gap:10px 0;counter-reset:none}
+.ac-road li{display:flex;align-items:center}
+.ac-road li+li::before{content:"";width:22px;height:1.5px;background:var(--borderdk);margin:0 6px}
+.ac-road a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:4px 14px 4px 4px;border-radius:999px;background:var(--card);border:1px solid var(--border);font-family:var(--U);font-size:14.5px;font-weight:500;color:var(--ink);text-decoration:none;transition:border-color .2s var(--ease)}
+.ac-road a:hover,.ac-road a:focus-visible{border-color:var(--ink)}
+.ac-road__n{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--art-ink);background:var(--art-paper);font-family:var(--F);font-size:18px;line-height:1}
+.ac-road li.is-going .ac-road__n{border-color:var(--mustard);border-width:2px}
+.ac-road li.is-done .ac-road__n{background:var(--ink);border-color:var(--ink);color:var(--bone)}
+
+/* A program's card: the explore picture card, with who it is for and where the reader is. */
+.ac-card .pv-pcard__body{flex:1}
+.ac-card__reader{order:-1;font-family:var(--U);font-size:12.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mustard-text)}
+.ac-card__facts{font-family:var(--U);font-size:13.5px;color:var(--ink-muted);margin-top:4px}
+.ac-card__go{display:inline-flex;align-items:center;gap:6px;margin-top:auto;padding-top:var(--s-2);font-family:var(--U);font-size:15px;font-weight:600;color:var(--ink)}
+.ac-cards--one{max-width:30rem}
+.ac-meter{display:block;height:5px;border-radius:3px;background:var(--borderdk);overflow:hidden;margin-top:8px}
+.ac-meter>span{display:block;height:100%;background:var(--ink);border-radius:3px}
+.ac-meter--wide{margin-top:0}
+
+/* Your record, on the front door. */
+.ac-record{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s-3) var(--s-4);align-items:end}
+.ac-unaccredited{margin:var(--s-2) 0 0;padding:12px 16px;border-left:3px solid var(--mustard);background:var(--card);font-family:var(--U);font-size:14px;line-height:1.55;color:var(--ink-muted);max-width:68ch}
+
+/* A program's page: the outcome, and the tracks as a path. */
+.ac-outcome{margin:0 0 var(--s-3);font-family:var(--F);font-size:clamp(1.45rem,1.2rem + .8vw,1.9rem);line-height:1.25;color:var(--ink);text-wrap:pretty}
+.ac-outcome .eyebrow{display:block;margin-bottom:8px}
+.ac-path{list-style:none;margin:var(--s-3) 0 0;padding:0;position:relative}
+.ac-path::before{content:"";position:absolute;left:25px;top:26px;bottom:26px;width:1.5px;background:var(--borderdk)}
+.ac-stop{position:relative;display:grid;grid-template-columns:52px minmax(0,1fr);gap:var(--s-3);padding:0 0 var(--s-4)}
+.ac-stop__n{position:relative;z-index:1;display:grid;place-items:center;width:52px;height:52px;border:1.5px solid var(--art-ink);border-radius:50%;background:var(--art-paper);color:var(--ink);font-family:var(--F);font-size:24px;line-height:1}
+.ac-stop.is-done .ac-stop__n{background:var(--ink);border-color:var(--ink);color:var(--bone)}
+.ac-stop.is-next .ac-stop__n{border-color:var(--mustard);border-width:2.5px}
+.ac-stop__body{padding:18px 22px 20px;background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:0 18px 40px -36px var(--art-ink)}
+.ac-stop.is-next .ac-stop__body{border-color:var(--ink)}
+.ac-stop__for{margin:0 0 6px}
+.ac-stop__title{font-family:var(--F);font-weight:400;font-size:clamp(1.45rem,1.15rem + .9vw,1.9rem);line-height:1.1;letter-spacing:-.01em;color:var(--ink);margin:0 0 8px}
+.ac-stop__title a{color:inherit;text-decoration:none}
+.ac-stop__title a:hover{text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1.5px;text-underline-offset:.14em}
+.ac-stop__dek{font-family:var(--B);font-size:16.5px;line-height:1.6;color:var(--ink);margin:0 0 8px}
+.ac-stop__acts{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:14px}
+.ac-stop__acts .btn{gap:8px}
+.ac-award{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--s-3);margin-top:var(--s-2);padding:22px 24px;border:1.5px dashed var(--borderdk);border-radius:16px}
+.ac-award.is-earned{border-style:solid;border-color:var(--ink);background:var(--card)}
+.ac-award>svg{color:var(--ink-muted)}
+.ac-award.is-earned>svg{color:var(--mustard-text)}
+
+/* What I've learned. */
+.ac-empty{display:flex;flex-direction:column;align-items:flex-start;gap:var(--s-2);padding:var(--s-3) 0}
+.ac-tally{display:flex;flex-wrap:wrap;gap:var(--s-2) var(--s-4);margin:0 0 var(--s-4);padding:var(--s-2) 0;border-top:1.5px solid var(--ink);border-bottom:1px solid var(--borderdk);font-family:var(--U);font-size:14.5px;color:var(--ink-muted)}
+.ac-tally strong{display:block;font-family:var(--F);font-weight:400;font-size:2.4rem;line-height:1;color:var(--ink)}
+.ac-certs{margin:0 0 var(--s-4)}
+.ac-certs ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ac-certs li{display:flex;align-items:center;gap:10px;font-family:var(--U);font-size:16px}
+.ac-certs li svg{color:var(--mustard-text);flex:none}
+.ac-certs a,.ac-under a,.ac-answers a,.ac-track a{color:var(--ink);text-decoration:underline;text-decoration-color:var(--mustard);text-decoration-thickness:1.5px;text-underline-offset:.2em}
+.ac-under{list-style:none;margin:0 0 var(--s-4);padding:0;display:grid;gap:14px}
+.ac-under li{display:grid;gap:4px;font-family:var(--U);font-size:14.5px;color:var(--ink-muted)}
+.ac-under li a{font-family:var(--F);font-size:1.4rem;line-height:1.2}
+.ac-track{padding:var(--s-3) 0;border-top:1px solid var(--borderdk)}
+.ac-answers{list-style:none;margin:var(--s-2) 0 0;padding:0;display:grid;gap:14px}
+.ac-answers__s{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0;font-family:var(--U);font-size:15px;font-weight:500}
+.ac-answers__done{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted)}
+.ac-answers__a{margin:6px 0 0;padding:10px 16px;border-left:2px solid var(--ink);background:var(--card);font-family:var(--B);font-size:16.5px;line-height:1.6;color:var(--ink);white-space:pre-wrap}
+.ac-answers__none{margin:4px 0 0;font-family:var(--U);font-size:14px;color:var(--ink-muted)}
+
+/* The certificate. */
+.ac-cert-tools{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 16px;margin:0 auto var(--s-4);max-width:58rem}
+.ac-cert-name{display:grid;gap:6px;flex:1 1 18rem;font-family:var(--U);font-size:14px;font-weight:500;color:var(--ink)}
+.ac-cert-name input{min-height:48px;padding:10px 14px;border:1.5px solid var(--borderdk);border-radius:var(--radius-sm);background:var(--card);font-family:var(--F);font-size:1.4rem;color:var(--ink)}
+.ac-cert-name input:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.ac-cert{max-width:58rem;margin:0 auto;padding:14px;background:var(--card);border:1px solid var(--border);box-shadow:0 30px 60px -40px var(--art-ink)}
+.ac-cert__frame{display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(28px,5vw,60px) clamp(18px,5vw,64px) clamp(22px,3vw,34px);border:2px solid var(--ink);outline:1px solid var(--ink);outline-offset:-9px}
+.ac-cert__house{margin:0;font-family:var(--U);font-weight:500;font-size:.8rem;letter-spacing:.32em;text-transform:uppercase;color:var(--mustard-text)}
+.ac-cert__plate{display:block;width:min(150px,36vw);aspect-ratio:4 / 3;margin:16px 0 6px}
+.ac-cert__plate svg{width:100%;height:100%}
+.ac-cert__title{margin:0 0 18px;font-family:var(--F);font-weight:400;font-size:clamp(2rem,1.4rem + 2.6vw,3.4rem);line-height:1.05;letter-spacing:-.02em;color:var(--ink)}
+.ac-cert__small{margin:0;font-family:var(--B);font-style:italic;font-size:17px;color:var(--ink-muted)}
+.ac-cert__name{margin:8px 0 12px;padding:0 24px 6px;border-bottom:1px solid var(--ink);font-family:var(--F);font-size:clamp(2rem,1.5rem + 2.2vw,3rem);line-height:1.1;color:var(--ink);overflow-wrap:anywhere}
+.ac-cert__what{margin:8px 0 10px;font-family:var(--F);font-weight:500;font-size:clamp(1.5rem,1.2rem + 1.2vw,2.2rem);line-height:1.15;color:var(--ink);text-wrap:balance}
+.ac-cert__foot{display:flex;justify-content:space-between;gap:var(--s-4);width:100%;max-width:36rem;margin:34px 0 22px;font-family:var(--U);font-size:14px;color:var(--ink)}
+.ac-cert__foot>span{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1}
+.ac-cert__rule{display:block;width:100%;height:1px;background:var(--ink)}
+.ac-cert__notice{margin:0;max-width:46ch;font-family:var(--U);font-size:11.5px;line-height:1.5;color:var(--ink-muted)}
+
+@media (max-width:960px){
+  .ac-how{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .ac-how{grid-template-columns:1fr}
+  .ac-record{grid-template-columns:1fr}
+  .ac-road li+li::before{width:10px;margin:0 3px}
+  .ac-stop{grid-template-columns:40px minmax(0,1fr);gap:12px}
+  .ac-stop__n{width:40px;height:40px;font-size:19px}
+  .ac-path::before{left:19px}
+  .ac-stop__body{padding:16px}
+  .ac-cert__foot{flex-direction:column;gap:18px}
+}
+
+/* Printing the certificate: only the certificate, on one sheet. */
+@media print{
+  @page{size:letter landscape;margin:.4in}
+  body:has(.ac-cert) *{visibility:hidden}
+  body:has(.ac-cert) .ac-cert,body:has(.ac-cert) .ac-cert *{visibility:visible}
+  body:has(.ac-cert) .ac-cert{position:absolute;left:0;top:0;width:100%;max-width:none;margin:0;box-shadow:none;border:0;padding:0}
+  .ac-cert__frame{padding:36px 48px 24px}
+}
