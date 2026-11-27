@@ -1,0 +1,304 @@
+{
+ "length": 264.19,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "A bigger question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 18.56,
+   "lines": [
+    {
+     "text": "Is the Bible true? Other films here go deep on the copies, the dates and the books.",
+     "start": 2.6,
+     "end": 8.02
+    },
+    {
+     "text": "This one asks something earlier: what would it mean for this book to be true?",
+     "start": 8.56,
+     "end": 12.44
+    },
+    {
+     "text": "Copying words correctly doesn't make them true. A lie can be preserved perfectly.",
+     "start": 13.02,
+     "end": 17.66
+    }
+   ]
+  },
+  {
+   "id": "kinds",
+   "kicker": "Many kinds of writing",
+   "level": 0.3,
+   "start": 17.76,
+   "end": 38.36,
+   "lines": [
+    {
+     "text": "The Bible isn't one kind of writing. It holds histories, prayers, laws, prophets and letters.",
+     "start": 18.66,
+     "end": 24.84
+    },
+    {
+     "text": "Pause here and ask yourself: is a song true the same way a court record is?",
+     "start": 25.44,
+     "end": 29.84
+    },
+    {
+     "text": "Some Christians say Scripture is fully trustworthy in everything it sets out to teach. So ask what each part sets out to do.",
+     "start": 30.4,
+     "end": 37.46
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "History",
+   "level": 0.4,
+   "start": 37.56,
+   "end": 68.14,
+   "lines": [
+    {
+     "text": "Luke opens like a historian.",
+     "start": 38.46,
+     "end": 39.98
+    },
+    {
+     "text": "Having carefully investigated everything from the beginning, it seemed good also to me to write an orderly account for you",
+     "start": 40.5,
+     "end": 47.34
+    },
+    {
+     "text": "Most scholars now read the Gospels as ancient biographies. Richard Burridge's 1992 study, What Are the Gospels?, made that the consensus.",
+     "start": 47.84,
+     "end": 56.78
+    },
+    {
+     "text": "Ancient biographers arranged material by theme and summarized speeches as a matter of course.",
+     "start": 57.3,
+     "end": 62.64
+    },
+    {
+     "text": "But their center is a claim about what happened, one that could be proved false.",
+     "start": 63.18,
+     "end": 67.24
+    }
+   ]
+  },
+  {
+   "id": "prayer",
+   "kicker": "Prayers that argue",
+   "level": 0.5,
+   "start": 67.34,
+   "end": 85.02,
+   "lines": [
+    {
+     "text": "Some prayers argue with God.",
+     "start": 68.24,
+     "end": 69.88
+    },
+    {
+     "text": "How long, O LORD, must I call for help but You do not hear?",
+     "start": 70.5,
+     "end": 74.2
+    },
+    {
+     "text": "Job asks it chapter after chapter. Some psalms ask God to break the teeth of enemies.",
+     "start": 74.9,
+     "end": 80.28
+    },
+    {
+     "text": "Weigh this: what would it mean for a prayer like that to be true?",
+     "start": 80.84,
+     "end": 84.12
+    }
+   ]
+  },
+  {
+   "id": "law",
+   "kicker": "The hard laws",
+   "level": 0.55,
+   "start": 84.22,
+   "end": 106.2,
+   "lines": [
+    {
+     "text": "For many skeptics, the deepest problem isn't that the Bible's words were changed. It's that they weren't.",
+     "start": 85.12,
+     "end": 90.9
+    },
+    {
+     "text": "Laws that regulate slavery. Commands in Joshua to destroy whole towns.",
+     "start": 91.5,
+     "end": 96.1
+    },
+    {
+     "text": "That moves the question from, do we have the text, to, is the God of this text good? It's a better question, and it has pages of its own.",
+     "start": 96.66,
+     "end": 105.3
+    }
+   ]
+  },
+  {
+   "id": "prophets",
+   "kicker": "Prophets and letters",
+   "level": 0.45,
+   "start": 105.4,
+   "end": 122.18,
+   "lines": [
+    {
+     "text": "The Bible keeps sending prophets to people who already have the Scriptures. It expects its readers to get it wrong.",
+     "start": 106.3,
+     "end": 112.44
+    },
+    {
+     "text": "Paul's letters were read as Scripture very early. Yet one apostle admits another is hard to follow.",
+     "start": 113.06,
+     "end": 118.48
+    },
+    {
+     "text": "Some parts of his letters are hard to understand.",
+     "start": 119.02,
+     "end": 121.28
+    }
+   ]
+  },
+  {
+   "id": "claims",
+   "kicker": "What it claims",
+   "level": 0.55,
+   "start": 121.38,
+   "end": 139.28,
+   "lines": [
+    {
+     "text": "What does it claim about itself?",
+     "start": 122.28,
+     "end": 123.74
+    },
+    {
+     "text": "All Scripture is God-breathed and is useful for instruction, for conviction, for correction, and for training in righteousness.",
+     "start": 124.26,
+     "end": 132.26
+    },
+    {
+     "text": "And Jesus, resting an argument on one phrase of a psalm, said the Scripture cannot be broken.",
+     "start": 132.72,
+     "end": 138.38
+    }
+   ]
+  },
+  {
+   "id": "circle",
+   "kicker": "Isn't that circular?",
+   "level": 0.6,
+   "start": 138.48,
+   "end": 169.4,
+   "lines": [
+    {
+     "text": "Fair objection: isn't that a circle? It's true because it says so.",
+     "start": 139.38,
+     "end": 143.74
+    },
+    {
+     "text": "The first Christians couldn't have reasoned that way. They had no New Testament, only the Scriptures of Israel and the news that Jesus had been raised.",
+     "start": 144.32,
+     "end": 152.12
+    },
+    {
+     "text": "They trusted Him because they believed God had raised Him. Then they received the Scriptures the way He did.",
+     "start": 152.78,
+     "end": 158.18
+    },
+    {
+     "text": "He told experts in those Scriptures they'd missed what the book was for.",
+     "start": 158.8,
+     "end": 162.42
+    },
+    {
+     "text": "These are the very words that testify about Me, yet you refuse to come to Me to have life.",
+     "start": 162.64,
+     "end": 168.5
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.45,
+   "start": 168.6,
+   "end": 195.2,
+   "lines": [
+    {
+     "text": "Christians who confess the Bible as God's word differ on how to say it.",
+     "start": 169.5,
+     "end": 173.12
+    },
+    {
+     "text": "Many evangelical churches confess it's without error. The Chicago Statement of 1978 says that isn't negated by \u201cvariant selections of material in parallel accounts, or the use of free citations.\u201d",
+     "start": 173.72,
+     "end": 186.7
+    },
+    {
+     "text": "Others put the conviction differently. Faithful Christians still divide over which wording is right. This film doesn't choose.",
+     "start": 187.34,
+     "end": 194.3
+    }
+   ]
+  },
+  {
+   "id": "limits",
+   "kicker": "Honest limits",
+   "level": 0.5,
+   "start": 194.4,
+   "end": 231.58,
+   "lines": [
+    {
+     "text": "There are honest limits. In Mark, Jesus places a story in the days of Abiathar the high priest. First Samuel names Ahimelech, Abiathar's father.",
+     "start": 195.3,
+     "end": 204.82
+    },
+    {
+     "text": "When the young Bart Ehrman argued around it, his professor, Cullen Story, wrote, \u201cMaybe Mark just made a mistake.\u201d",
+     "start": 205.5,
+     "end": 211.74
+    },
+    {
+     "text": "That verse still has no explanation everyone accepts. And no stone can show that a man rose from the dead.",
+     "start": 212.48,
+     "end": 218.82
+    },
+    {
+     "text": "Many young Christians absorb a faith in which the Bible stands or falls with winning every argument about every verse. We taught them that, usually without meaning to. The Bible never did.",
+     "start": 219.54,
+     "end": 230.68
+    }
+   ]
+  },
+  {
+   "id": "read",
+   "kicker": "Read it whole",
+   "level": 0.3,
+   "start": 230.78,
+   "end": 258.089,
+   "lines": [
+    {
+     "text": "So ask yourself: what would it take for you to trust an ancient book, any ancient book?",
+     "start": 231.68,
+     "end": 236.94
+    },
+    {
+     "text": "Then read one Gospel whole. Mark is the shortest. Notice what it keeps that anyone managing a reputation would have cut: Peter's denial.",
+     "start": 237.66,
+     "end": 246.54
+    },
+    {
+     "text": "John tells you why he wrote.",
+     "start": 247.14,
+     "end": 248.54
+    },
+    {
+     "text": "These are written so that you may believe that Jesus is the Christ, the Son of God, and that by believing you may have life in His name.",
+     "start": 249.12,
+     "end": 257.189
+    }
+   ]
+  }
+ ]
+}

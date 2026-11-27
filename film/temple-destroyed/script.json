@@ -1,0 +1,189 @@
+{
+  "title": "Why did God let his temple be destroyed?",
+  "note": "Written on 2026-11-27 from the Bible Explorer film of the same slug (its older captions and ledger rows), the Prophets and Exile stop, the Study Bible notes on 2 Chronicles 36, Psalm 137, Lamentations and Jeremiah 7, 31 and 52, and the doctrine page on exile; every claim is sourced in film/temple-destroyed/facts.md, and Scripture is the Berean Standard Bible, checked by film/tools/write-script.py.",
+  "page": "/study/explorer/watch/temple-destroyed",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "house",
+      "kicker": "A house for God's name",
+      "level": 0.2,
+      "lines": [
+        "In 587 or 586 BC, Babylon's army burned the temple in Jerusalem. Historians give either year.",
+        "It was Solomon's temple, where God's Name dwelt.",
+        "Why would God let his own house be destroyed?",
+        "Solomon had given part of the answer on the day it was finished. Even heaven, the highest heaven, cannot contain You, much less this temple I have built.",
+        "The temple was never a box that held God."
+      ],
+      "scripture": {
+        "reference": "1 Kings 8:27",
+        "text": "Even heaven, the highest heaven, cannot contain You, much less this temple I have built.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "prophets",
+      "kicker": "Again and again",
+      "level": 0.3,
+      "lines": [
+        "For more than three centuries God sent prophets: Elijah, Amos, Hosea, Isaiah, Micah, Jeremiah and others.",
+        "Chronicles gives the reason. Again and again the LORD, the God of their fathers, sent word to His people through His messengers because He had compassion on them.",
+        "Every warning was an act of mercy."
+      ],
+      "scripture": {
+        "reference": "2 Chronicles 36:15",
+        "text": "Again and again the LORD, the God of their fathers, sent word to His people through His messengers because He had compassion on them",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "gate",
+      "kicker": "At the temple gate",
+      "level": 0.4,
+      "lines": [
+        "About 609 BC, God sent Jeremiah to the temple gate, the most public pulpit in Judah.",
+        "Since God had saved Jerusalem from Sennacherib in 701 BC, many decided he would never let his house fall.",
+        "So Jeremiah warned them. Do not trust in deceptive words, chanting: ‘This is the temple of the LORD, the temple of the LORD, the temple of the LORD.’",
+        "The sermon nearly cost him his life.",
+        "Pause here and ask yourself. What's the difference between trusting a place and trusting God?"
+      ],
+      "scripture": {
+        "reference": "Jeremiah 7:4",
+        "text": "Do not trust in deceptive words, chanting: ‘This is the temple of the LORD, the temple of the LORD, the temple of the LORD.’",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "glory",
+      "kicker": "The glory leaves",
+      "level": 0.45,
+      "lines": [
+        "Ezekiel, already an exile, saw in a vision that the glory of the LORD left the temple before the city fell.",
+        "The exile was not God losing a battle to Babylon's gods. It was God doing what he had said he would do."
+      ],
+      "scripture": {
+        "reference": "Ezekiel 10:18",
+        "text": "Then the glory of the LORD moved away from the threshold of the temple",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "fell",
+      "kicker": "The day it fell",
+      "level": 0.55,
+      "lines": [
+        "After a siege of about a year and a half, the temple, the palace and the city were burned, and many survivors were carried off to Babylon.",
+        "The Chronicler doesn't linger on the details. He gives the reason: God's messengers were mocked until there was no remedy."
+      ],
+      "scripture": {
+        "reference": "2 Kings 25:9",
+        "text": "He burned down the house of the LORD",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "grief",
+      "kicker": "Grief kept in Scripture",
+      "level": 0.4,
+      "lines": [
+        "The Bible doesn't treat the grief as small.",
+        "By the rivers of Babylon we sat and wept when we remembered Zion.",
+        "They hung their harps on the willows. How can we sing a song of the LORD in a foreign land?",
+        "The psalm ends with a raw cry for justice. It's a prayer, not a command, and it hands that demand to God.",
+        "Lamentations gives five poems to the same loss, four of them running through the Hebrew alphabet, grief from A to Z."
+      ],
+      "scripture": {
+        "reference": "Psalm 137:1",
+        "text": "By the rivers of Babylon we sat and wept when we remembered Zion.",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "why",
+      "kicker": "Was it punishment?",
+      "level": 0.6,
+      "lines": [
+        "Now weigh the hardest question fairly. Can suffering this great ever be proportionate?",
+        "Lamentations asks that, and leaves the question before God.",
+        "The prophets' answer is hard to hear. This came at the end of a long turning away, after warnings sent in compassion.",
+        "But that answer belongs to this event, not to every loss. Asked whose sin made a man blind, Jesus said, “Neither this man nor his parents sinned.”"
+      ],
+      "scripture": {
+        "reference": "John 9:3",
+        "text": "Neither this man nor his parents sinned",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "mercies",
+      "kicker": "Hope chosen in the dark",
+      "level": 0.5,
+      "lines": [
+        "At the center of Lamentations, one sufferer calls something to mind.",
+        "His mercies never fail. They are new every morning; great is Your faithfulness!",
+        "That hope isn't a feeling. It's chosen in the dark, resting on who God is.",
+        "And the book still ends asking whether God has rejected them for good. Scripture keeps that unanswered prayer too."
+      ],
+      "scripture": {
+        "reference": "Lamentations 3:22-23",
+        "text": "His mercies never fail. They are new every morning; great is Your faithfulness!",
+        "spoken": true,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "home",
+      "kicker": "More than was lost",
+      "level": 0.55,
+      "lines": [
+        "God went with his people. He told Ezekiel he had been a sanctuary for them in the lands where they had gone.",
+        "In 539 BC Cyrus of Persia took Babylon and let the exiles go home. A new temple was finished in 516 or 515 BC.",
+        "And the prophets promised more than had been lost: a covenant written on the heart."
+      ],
+      "scripture": {
+        "reference": "Jeremiah 31:33",
+        "text": "I will put My law in their minds and inscribe it on their hearts.",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "second",
+      "kicker": "A second fall",
+      "level": 0.6,
+      "lines": [
+        "Centuries later, Jesus wept over Jerusalem and foretold that it would be torn down again. That happened in AD 70.",
+        "In the temple courts he quoted Jeremiah's temple sermon. And he spoke of his own body as the temple, destroyed and raised in three days.",
+        "To this day the fast of Tisha B'Av remembers both temples."
+      ],
+      "scripture": {
+        "reference": "Luke 19:41",
+        "text": "As Jesus approached Jerusalem and saw the city, He wept over it",
+        "spoken": false,
+        "translation": "Berean Standard Bible"
+      }
+    },
+    {
+      "id": "close",
+      "kicker": "Never a box",
+      "level": 0.3,
+      "lines": [
+        "So why did God let it fall? The prophets say he did what he had warned, after long patience.",
+        "But the building was never what held him. He went with his people into exile, and he brought them home.",
+        "The temple fell. His mercies didn't."
+      ],
+      "titleCard": [
+        "A temple can fall. God's mercies never fail.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

@@ -74,6 +74,7 @@ function paramSources() {
     "/how-tos/:slug": slugsFrom(json("client/public/howtos/index.json")),
     "/wisdom/:id": slugsFrom(json("client/public/wisdom/topics.json"), "id"),
     "/studyguides/:slug": slugsFrom(json("client/public/studyguides/index.json")),
+    "/tracks/:slug": slugsFrom(json("client/public/tracks/index.json")?.tracks),
     "/plans/:slug": slugsFrom(json("client/public/plans/plans-index.json")),
     "/pathways/:slug": slugsFrom(json("client/public/pathways/index.json")),
     "/reading-paths/:slug": slugsFrom(json("client/public/reading-paths/index.json")),
