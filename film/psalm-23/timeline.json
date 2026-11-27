@@ -1,0 +1,279 @@
+{
+ "length": 257.82,
+ "chapters": [
+  {
+   "id": "shepherd",
+   "kicker": "A king who is a sheep",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 29.52,
+   "lines": [
+    {
+     "text": "Psalm 23 is the best-known psalm in the Bible. Read it slowly, one picture at a time.",
+     "start": 2.6,
+     "end": 8.42
+    },
+    {
+     "text": "The LORD is my shepherd; I shall not want.",
+     "start": 9.12,
+     "end": 11.9
+    },
+    {
+     "text": "In the ancient Near East, kings called themselves shepherds. Hammurabi of Babylon, in the eighteenth century BC, does it in the prologue to his laws. And God charged David to shepherd his people Israel.",
+     "start": 12.66,
+     "end": 24.52
+    },
+    {
+     "text": "Psalm 23 turns that around. The king is the sheep.",
+     "start": 25.1,
+     "end": 28.62
+    }
+   ]
+  },
+  {
+   "id": "david",
+   "kicker": "A Psalm of David",
+   "level": 0.3,
+   "start": 28.72,
+   "end": 46.44,
+   "lines": [
+    {
+     "text": "The heading says, A Psalm of David. Traditional readers note that David kept sheep before he was king. Many modern scholars read the heading as marking a collection, not an author.",
+     "start": 29.62,
+     "end": 39.9
+    },
+    {
+     "text": "No event is named, and it's been prayed in every generation because it isn't tied to one.",
+     "start": 40.52,
+     "end": 45.54
+    }
+   ]
+  },
+  {
+   "id": "pastures",
+   "kicker": "Green pastures",
+   "level": 0.35,
+   "start": 45.64,
+   "end": 68.88,
+   "lines": [
+    {
+     "text": "Shepherding in Judah was hard, dangerous work in dry country. Green grass and quiet water had to be found, sometimes far away.",
+     "start": 46.54,
+     "end": 54.54
+    },
+    {
+     "text": "He makes me lie down in green pastures; He leads me beside quiet waters.",
+     "start": 55.04,
+     "end": 59.82
+    },
+    {
+     "text": "Sheep won't lie down unless they're fed and unafraid. Pause and ask yourself what you want most, and what it would take for you to rest.",
+     "start": 60.34,
+     "end": 67.98
+    }
+   ]
+  },
+  {
+   "id": "paths",
+   "kicker": "Right paths",
+   "level": 0.45,
+   "start": 68.08,
+   "end": 86.58,
+   "lines": [
+    {
+     "text": "He restores my soul; He guides me in the paths of righteousness for the sake of His name.",
+     "start": 68.98,
+     "end": 74.52
+    },
+    {
+     "text": "Paths of righteousness can mean right paths: tracks that lead where they should, not dead ends.",
+     "start": 75.06,
+     "end": 80.46
+    },
+    {
+     "text": "And notice why: for his name's sake. He's faithful to his own name.",
+     "start": 81.0,
+     "end": 85.68
+    }
+   ]
+  },
+  {
+   "id": "valley",
+   "kicker": "The dark valley",
+   "level": 0.55,
+   "start": 85.78,
+   "end": 120.96,
+   "lines": [
+    {
+     "text": "Then the path drops into a ravine. The Hebrew word, traditionally the shadow of death, may simply mean deep darkness, where danger hides.",
+     "start": 86.68,
+     "end": 95.14
+    },
+    {
+     "text": "Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me.",
+     "start": 95.68,
+     "end": 101.74
+    },
+    {
+     "text": "Listen to the grammar turn. Until now the psalmist has spoken about God. At the darkest point, near the center of the poem, he speaks to him.",
+     "start": 102.28,
+     "end": 110.84
+    },
+    {
+     "text": "If you've come to this psalm carrying grief, notice what it doesn't promise. It doesn't promise a road around the valley. It promises company in it.",
+     "start": 111.38,
+     "end": 120.06
+    }
+   ]
+  },
+  {
+   "id": "rod",
+   "kicker": "The rod and the staff",
+   "level": 0.6,
+   "start": 120.16,
+   "end": 138.18,
+   "lines": [
+    {
+     "text": "Your rod and Your staff, they comfort me.",
+     "start": 121.06,
+     "end": 123.92
+    },
+    {
+     "text": "The rod was a club for driving off predators, the staff a longer stick for guiding and rescuing.",
+     "start": 124.46,
+     "end": 129.92
+    },
+    {
+     "text": "Comfort here isn't softness. It's someone armed and attentive, standing between the flock and whatever hunts it.",
+     "start": 130.6,
+     "end": 137.28
+    }
+   ]
+  },
+  {
+   "id": "table",
+   "kicker": "A table before enemies",
+   "level": 0.65,
+   "start": 137.38,
+   "end": 163.32,
+   "lines": [
+    {
+     "text": "Now the picture shifts from shepherd to host.",
+     "start": 138.28,
+     "end": 140.86
+    },
+    {
+     "text": "You prepare a table before me in the presence of my enemies.",
+     "start": 141.36,
+     "end": 144.6
+    },
+    {
+     "text": "A host who took a guest into his tent was bound to protect him, even from pursuers. So this is a fugitive welcomed as an honored guest while his enemies watch, unable to act.",
+     "start": 145.1,
+     "end": 155.34
+    },
+    {
+     "text": "Weigh this: the table is spread while the enemies are still there. Is that a smaller comfort, or a deeper one?",
+     "start": 155.92,
+     "end": 162.42
+    }
+   ]
+  },
+  {
+   "id": "cup",
+   "kicker": "Oil and a full cup",
+   "level": 0.7,
+   "start": 162.52,
+   "end": 176.7,
+   "lines": [
+    {
+     "text": "You anoint my head with oil; my cup overflows.",
+     "start": 163.42,
+     "end": 166.96
+    },
+    {
+     "text": "Oil on a guest's head meant welcome and honor. A cup that runs over meant lavish generosity. The guest gets more than safety.",
+     "start": 167.3,
+     "end": 175.8
+    }
+   ]
+  },
+  {
+   "id": "pursued",
+   "kicker": "Pursued by goodness",
+   "level": 0.75,
+   "start": 175.9,
+   "end": 198.96,
+   "lines": [
+    {
+     "text": "Surely goodness and mercy will follow me all the days of my life,",
+     "start": 176.8,
+     "end": 180.54
+    },
+    {
+     "text": "Mercy here is chesed: loving devotion, the loyal love God has pledged to his people, love that holds when they have no claim on it.",
+     "start": 181.26,
+     "end": 189.88
+    },
+    {
+     "text": "And follow can mean pursue. Enemies hunted him. Now goodness and loving devotion pursue him, all his days.",
+     "start": 190.5,
+     "end": 198.06
+    }
+   ]
+  },
+  {
+   "id": "house",
+   "kicker": "Home at the end",
+   "level": 0.6,
+   "start": 198.16,
+   "end": 217.74,
+   "lines": [
+    {
+     "text": "and I will dwell in the house of the LORD forever.",
+     "start": 199.06,
+     "end": 201.56
+    },
+    {
+     "text": "The Hebrew, as traditionally read, says I will return. The ancient Greek says dwell, spelled almost the same. Either way, the psalm ends at home in God's presence.",
+     "start": 202.28,
+     "end": 213.5
+    },
+    {
+     "text": "The psalm that began in a field ends in a house.",
+     "start": 214.1,
+     "end": 216.84
+    }
+   ]
+  },
+  {
+   "id": "good-shepherd",
+   "kicker": "The good shepherd",
+   "level": 0.8,
+   "start": 216.94,
+   "end": 251.72,
+   "lines": [
+    {
+     "text": "The prophets promised that God himself would shepherd his scattered people, and set over them one shepherd from David's line. Centuries later, Jesus said,",
+     "start": 217.84,
+     "end": 227.12
+    },
+    {
+     "text": "I am the good shepherd. The good shepherd lays down His life for the sheep.",
+     "start": 227.56,
+     "end": 231.52
+    },
+    {
+     "text": "Good means the shepherd as a shepherd ought to be. A hired hand runs from the wolf. This shepherd lays down his life, in order to take it up again.",
+     "start": 232.22,
+     "end": 241.04
+    },
+    {
+     "text": "The New Testament never quotes Psalm 23 directly. But it adds this: the shepherd who walks with his sheep through the dark valley went into death for them.",
+     "start": 241.62,
+     "end": 250.82
+    }
+   ]
+  }
+ ]
+}
