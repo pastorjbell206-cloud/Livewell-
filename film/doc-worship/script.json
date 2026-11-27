@@ -1,0 +1,127 @@
+{
+  "title": "Worship",
+  "note": "Doctrine film on the Study Bible page /study/bible/doctrines/worship. Every fact comes from client/public/bible/doctrines/worship.json (sections named in facts.md). Where Christians differ, the film names the regulative, normative, liturgical and free-church views in terms their holders would accept and takes no side. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/study/bible/doctrines/worship",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "What is worship, really? The singing on a Sunday morning? A quiet prayer? A feeling?",
+        "And who gets to say how it's done?"
+      ]
+    },
+    {
+      "id": "confess",
+      "kicker": "What Christians confess",
+      "level": 0.3,
+      "lines": [
+        "Christians confess that worship is the whole response of God's people to who God is and what He has done.",
+        "It's owed to the true God alone. And it can't be pulled apart from how we treat our neighbor."
+      ]
+    },
+    {
+      "id": "words",
+      "kicker": "Bowing and serving",
+      "level": 0.4,
+      "lines": [
+        "The Bible's words are concrete. The most common Hebrew word means to bow down.",
+        "Another means to serve. It names Israel's hard service to Pharaoh.",
+        "It also names the service the LORD called Israel out of Egypt to give Him."
+      ]
+    },
+    {
+      "id": "exodus",
+      "kicker": "The goal of the rescue",
+      "level": 0.5,
+      "lines": [
+        "So the exodus is a move from one service to another. God tells Moses the sign will be that they worship Him on this mountain.",
+        "Then comes the golden calf, and Aaron proclaims a feast to the LORD.",
+        "The people tried to worship the LORD in a form He had forbidden."
+      ]
+    },
+    {
+      "id": "prophets",
+      "kicker": "Songs and prophets",
+      "level": 0.55,
+      "lines": [
+        "The Psalms gave Israel words for praise and thanks, confession and lament.",
+        "But the prophets judged worship by obedience. Through Amos, the LORD says He hates the feasts of a people who deny justice.",
+        "Micah sums up what the LORD requires. To act justly, to love mercy, and to walk humbly with your God."
+      ]
+    },
+    {
+      "id": "jesus",
+      "kicker": "In spirit and in truth",
+      "level": 0.65,
+      "lines": [
+        "People fell down and worshiped Jesus. He accepted it, though He insisted worship belongs to God alone.",
+        "A Samaritan woman asked Him where worship belongs, on Mount Gerizim or in Jerusalem. Jesus replied.",
+        "But a time is coming and has now come when the true worshipers will worship the Father in spirit and in truth, for the Father is seeking such as these to worship Him.",
+        "The place of worship is no longer a mountain. It's a person."
+      ],
+      "scripture": {
+        "reference": "John 4:23",
+        "translation": "Berean Standard Bible",
+        "text": "But a time is coming and has now come when the true worshipers will worship the Father in spirit and in truth, for the Father is seeking such as these to worship Him.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "history",
+      "kicker": "The first gatherings",
+      "level": 0.7,
+      "lines": [
+        "The first Christians met in the temple courts and in homes, for teaching, fellowship, the breaking of bread and prayer.",
+        "Around 112, a Roman governor named Pliny reported that they met before dawn and sang a hymn to Christ as to a god.",
+        "Around 155, Justin Martyr described a Sunday in Rome. The apostles and prophets were read, bread and wine were blessed, and a collection was taken for widows, orphans and the needy."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.75,
+      "lines": [
+        "Christians differ over how to order worship.",
+        "Presbyterian and Reformed churches hold the regulative principle. In public worship, the church does only what God commands in Scripture.",
+        "Lutheran, Anglican and many other Protestants hold the normative principle. The church may use what Scripture doesn't forbid, if it agrees with the gospel and builds up the church.",
+        "Orthodox, Catholic and many Anglican and Lutheran Christians see their worship as sharing in heaven's worship, centered on the Eucharist and ordered by an ancient liturgy.",
+        "Many Baptist, free-church, Pentecostal and charismatic Christians prefer simple forms and freedom for the Spirit to lead, with everything done in order.",
+        "Every tradition has found that how a church worships shapes what it believes."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "The rest of the week",
+      "level": 0.85,
+      "lines": [
+        "Christ offered one sacrifice for sins for all time. So sacrifice now describes the whole of life.",
+        "Sunday's gathering trains the heart for the rest of the week. Work done honestly. Money shared. Enemies forgiven.",
+        "The kitchen, the office and the hospital room are places of service to God, as truly as the sanctuary.",
+        "And worship shapes the worshiper. What a person praises, fears and loves most will shape who they become."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Therefore I urge you, brothers, on account of God’s mercy, to offer your bodies as living sacrifices, holy and pleasing to God, which is your spiritual service of worship.",
+        "Worship begins with God's worth, not our mood. And the Bible ends in a city where His servants will worship Him."
+      ],
+      "scripture": {
+        "reference": "Romans 12:1",
+        "translation": "Berean Standard Bible",
+        "text": "Therefore I urge you, brothers, on account of God’s mercy, to offer your bodies as living sacrifices, holy and pleasing to God, which is your spiritual service of worship.",
+        "spoken": true
+      },
+      "titleCard": [
+        "All of life, offered to God.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
