@@ -1,0 +1,269 @@
+<!doctype html>
+<!-- "Welcome to LiveWell". An introduction to the site itself, for its homepage. The seven doors of the site are
+     plain engraved doors; each chapter opens one, and a small moving picture grows out of it, as if walking
+     through a house: two dots (NOT SURE, GOING DEEPER) arriving at one open door; an open book with a notes
+     column, then a drifting grid of film frames; two question cards and a balance (objection, evidence, what's
+     still open) that never quite stops moving; a timeline of fourteen ticks from the apostles to today; a house
+     with a lit window, a 52-week strip, a catechism card and a Bible map; ten steps of the Academy climbed by one
+     dot to a plain certificate; a quill line on a page and a shelf of three spines; the whole house of seven doors,
+     all opening at "Start wherever you are". God is never drawn. People are plain dots, all alike. No faces.
+     Words and timing come from script.json and timeline.json. Open with ?t=42 to freeze on second 42. -->
+<html lang="en"><head><meta charset="utf-8"><title>Welcome to LiveWell</title></head><body>
+<script src="../lib/engine.js"></script>
+<script>
+Film.make((F) => {
+  const { el, txt, set, op, draw, line, move, clamp, ease, up, span, mix, S, E, world, INK, BONE, WARM, MUTED, STONE, MUSTARD, LINE } = F;
+  const SC = Object.fromEntries(window.SCRIPT.chapters.map((c) => [c.id, c])), END = F.VOICE_END, PAPER = "#FBF9F5", GY = 470;
+  const at = (id, k, f) => S(id, k) + (E(id, k) - S(id, k)) * f;
+  const G = (p) => el("g", {}, p || world);
+  const dot = (p, x, y, r = 10) => el("circle", { cx: x, cy: y, r, fill: INK }, p);
+  const zoom = (g, k, cx = 640, cy = 360) => g.setAttribute("transform", `translate(${cx} ${cy}) scale(${k.toFixed(4)}) translate(${-cx} ${-cy})`);
+  const hinge = (g, k, x) => g.setAttribute("transform", `translate(${x} 0) scale(${k.toFixed(4)} 1) translate(${-x} 0)`);
+  const lab = (p, x, y, s, size = 15) => txt(p, "lab", x, y, s, size);
+  // a plain engraved door: frame, light behind, a panel that swings on its left hinge
+  const door = (p, x, y, w, h) => { const g = G(p);
+    const light = el("rect", { x, y, width: w, height: h, fill: MUSTARD }, g);
+    const panelG = G(g); el("rect", { x, y, width: w, height: h, fill: WARM, stroke: INK, "stroke-width": 2.5 }, panelG);
+    el("rect", { x: x + w * 0.16, y: y + h * 0.1, width: w * 0.68, height: h * 0.32, fill: "none", stroke: LINE, "stroke-width": 2 }, panelG);
+    el("rect", { x: x + w * 0.16, y: y + h * 0.5, width: w * 0.68, height: h * 0.38, fill: "none", stroke: LINE, "stroke-width": 2 }, panelG);
+    el("rect", { x: x + w * 0.8, y: y + h * 0.47, width: w * 0.08, height: 4, rx: 2, fill: INK }, panelG);
+    el("path", { d: `M${x - 6} ${y + h} V${y - 6} H${x + w + 6} V${y + h}`, fill: "none", stroke: INK, "stroke-width": 4, "stroke-linejoin": "round", "stroke-linecap": "round" }, g);
+    return { g, light, panel: panelG, x }; };
+  const openDoor = (d, k, glow = 0.32) => { hinge(d.panel, mix(1, 0.14, k), d.x); op(d.light, k * glow); };
+
+  const ground = line(world, `M-20 ${GY} H1300`, { "stroke-width": 3 });
+
+  // ================= 1 welcome: two dots, one open door =================
+  const W = (f) => at("welcome", 0, f), W0 = S("welcome", 0);
+  const gW = G();
+  const front = door(gW, 594, 300, 92, 170);
+  const frontLab = lab(gW, 640, 278, "LIVEWELL", 17);
+  const gNS = G(gW), qNS = txt(gNS, "disp", 230, 410, "?", 96, { fill: STONE });
+  const dotA = dot(gW, 230, 459); const labA = lab(gNS, 230, 506, "NOT SURE");
+  const pathPts = [...Array(30)].map((_, i) => { const k = i / 29; return [mix(1240, 980, k), 459 - 150 * (1 - k) * (1 - k)]; });
+  const gGD = G(gW), road = line(gGD, "M" + pathPts.map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join(" L"), { stroke: STONE, "stroke-width": 2.5 });
+  const labB = lab(gGD, 1080, 506, "GOING DEEPER");
+  const dotB = dot(gW, 1240, 309);
+
+  // ================= transition doors (questions to writing) =================
+  const tDoor = door(world, 602, 300, 76, 118);
+
+  // ================= 2 bible: notes beside every chapter; films =================
+  const B = (f) => at("bible", 0, f), B0 = S("bible", 0);
+  const gB = G(), gBook = G(gB);
+  const LP = "M580 262 Q480 242 340 256 V452 Q480 438 580 458 Z", RP = "M580 262 Q680 242 820 256 V452 Q680 438 580 458 Z";
+  el("path", { d: LP, fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gBook);
+  el("path", { d: RP, fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gBook);
+  const rulesL = [...Array(7)].map((_, i) => line(gBook, `M366 ${292 + i * 22} H${i === 6 ? 470 : 556}`, { "stroke-width": 2.5, stroke: STONE }));
+  const rulesR = [...Array(7)].map((_, i) => line(gBook, `M604 ${292 + i * 22} H${i === 6 ? 700 : 794}`, { "stroke-width": 2.5, stroke: STONE }));
+  const hiVerse = el("rect", { x: 602, y: 333, width: 194, height: 10, rx: 3, fill: MUSTARD }, gBook);
+  const turn = el("path", { d: RP, fill: PAPER, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gBook);
+  const gNotes = G(gBook); el("rect", { x: 856, y: 256, width: 92, height: 196, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, gNotes);
+  const noteRows = [0, 1, 2, 3, 4, 5, 6, 7].map((i) => line(gNotes, `M870 ${282 + i * 21} H${[934, 920, 930, 900, 934, 912, 926, 896][i]}`, { "stroke-width": 2.5, stroke: STONE }));
+  const tie = line(gBook, "M796 338 H866", { stroke: MUSTARD, "stroke-width": 3 });
+  const labNotes = lab(gB, 640, 506, "NOTES BESIDE EVERY CHAPTER");
+  const gFilms = G(gB), frames = [];
+  for (let c = 0; c < 8; c++) for (let r = 0; r < 3; r++) { const g = G(gFilms), x = 188 + c * 132, y = 214 + r * 88;
+    el("rect", { x, y, width: 112, height: 70, rx: 3, fill: WARM, stroke: INK, "stroke-width": 2.5 }, g);
+    el("path", { d: `M${x + 10} ${y + 54} Q${x + 36} ${y + 30 + ((c * 7 + r * 3) % 5) * 3} ${x + 62} ${y + 48} T${x + 102} ${y + 44}`, fill: "none", stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, g);
+    frames.push({ g, c, r, x, y }); }
+  const star = frames.find((f) => f.c === 3 && f.r === 1);
+  const play = el("path", { d: `M${star.x + 46} ${star.y + 20} L${star.x + 72} ${star.y + 35} L${star.x + 46} ${star.y + 50} Z`, fill: MUSTARD, stroke: INK, "stroke-width": 2, "stroke-linejoin": "round" }, star.g);
+  const prog = el("rect", { x: star.x + 6, y: star.y + 62, height: 4, rx: 2, fill: INK }, star.g);
+  const labFilms = lab(gB, 640, 506, "MORE THAN 100 FILMS");
+
+  // ================= 3 questions: two cards; the balance =================
+  const Q = (f) => at("questions", 0, f), Q0 = S("questions", 0);
+  const gQ = G();
+  const cards = [[420, "Does God exist?", 0.15], [860, "Can I trust the Bible?", 0.27]].map(([x, s, f]) => { const g = G(gQ);
+    el("rect", { x: -175, y: -55, width: 350, height: 110, rx: 4, fill: PAPER, stroke: INK, "stroke-width": 3 }, g);
+    const w = txt(g, "disp", 0, 12, s, 36); return { g, w, x, f }; });
+  const gBal = G(gQ);
+  el("path", { d: "M590 470 L610 446 H670 L690 470 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, gBal);
+  el("line", { x1: 640, x2: 640, y1: 446, y2: 268, stroke: INK, "stroke-width": 4, "stroke-linecap": "round" }, gBal);
+  el("path", { d: "M628 262 L640 246 L652 262 Z", fill: INK }, gBal);
+  const beam = el("line", { stroke: INK, "stroke-width": 5, "stroke-linecap": "round" }, gBal);
+  const pans = [0, 1].map(() => { const g = G(gBal);
+    el("path", { d: "M0 0 L-46 120 M0 0 L46 120", stroke: STONE, "stroke-width": 2, fill: "none" }, g);
+    el("path", { d: "M-64 120 H64 L52 134 H-52 Z", fill: WARM, stroke: INK, "stroke-width": 3, "stroke-linejoin": "round" }, g); return g; });
+  const weight = el("rect", { x: -34, y: 62, width: 68, height: 58, rx: 3, fill: INK }, pans[0]);
+  const evid = [[-50, 96, 30], [-16, 96, 30], [18, 96, 30], [-34, 72, 30], [0, 72, 30], [-17, 48, 30]].map(([x, y, w]) => el("rect", { x, y, width: w, height: 22, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, pans[1]));
+  const labObj = lab(gQ, 420, 526, "THE OBJECTION AT ITS STRONGEST", 14), labEv = lab(gQ, 860, 526, "THE EVIDENCE", 14);
+  const labOpen = lab(gQ, 640, 222, "WHAT'S STILL OPEN", 14);
+  const qOpen = txt(gQ, "disp", 640, 196, "?", 40, { fill: MUSTARD });
+
+  // ================= 4 history: fourteen lessons =================
+  const H = (f) => at("history", 0, f), H0 = S("history", 0);
+  const gH = G(), HX = (i) => 180 + i * (920 / 13);
+  const hLine = line(gH, "M180 400 H1100", { stroke: LINE, "stroke-width": 3 });
+  const hFill = line(gH, "M180 400 H1100", { stroke: MUSTARD, "stroke-width": 5 });
+  const ticks = [...Array(14)].map((_, i) => el("line", { x1: HX(i), x2: HX(i), y1: 390, y2: 410, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gH));
+  const lessons = [...Array(14)].map((_, i) => el("rect", { x: HX(i) - 10, y: i % 2 ? 334 : 344, width: 20, height: 26, rx: 2, fill: PAPER, stroke: INK, "stroke-width": 2.5 }, gH));
+  const walker = dot(gH, 180, 386);
+  lab(gH, 180, 446, "THE APOSTLES"); lab(gH, 1100, 446, "TODAY");
+  const labFourteen = lab(gH, 640, 280, "FOURTEEN LESSONS", 17);
+
+  // ================= 5 family: a lit window, 52 weeks, a catechism, a map =================
+  const M = (f) => at("family", 0, f), M0 = S("family", 0);
+  const gM = G(), gHouse = G(gM);
+  el("rect", { x: 110, y: 330, width: 230, height: 140, fill: PAPER, stroke: INK, "stroke-width": 3 }, gHouse);
+  const roof = line(gHouse, "M92 334 L225 236 L358 334", { "stroke-width": 3.5 });
+  el("rect", { x: 150, y: 358, width: 150, height: 84, fill: WARM, stroke: INK, "stroke-width": 3 }, gHouse);
+  const winLight = el("rect", { x: 152, y: 360, width: 146, height: 80, fill: MUSTARD }, gHouse);
+  el("line", { x1: 164, x2: 286, y1: 428, y2: 428, stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gHouse);
+  const family = [186, 212, 238, 264].map((x) => dot(gHouse, x, 416, 7));
+  const gCal = G(gM), labWeek = lab(gCal, 784, 202, "A DEVOTION FOR EVERY WEEK", 15);
+  const weeks = [...Array(52)].map((_, i) => el("rect", { x: 420 + (i % 26) * 28, y: 220 + Math.floor(i / 26) * 26, width: 20, height: 18, rx: 2, fill: PAPER, stroke: LINE, "stroke-width": 2 }, gCal));
+  const gCat = G(gM); el("rect", { x: 430, y: 300, width: 220, height: 160, rx: 3, fill: PAPER, stroke: INK, "stroke-width": 3 }, gCat);
+  lab(gCat, 540, 332, "CATECHISM", 14);
+  const catRows = [0, 1, 2, 3, 4].map((i) => line(gCat, `M${i % 2 ? 462 : 450} ${360 + i * 20} H${[610, 590, 620, 570, 600][i]}`, { stroke: i % 2 ? STONE : INK, "stroke-width": 2.5 }));
+  const gMap = G(gM); el("rect", { x: 690, y: 300, width: 460, height: 160, rx: 3, fill: WARM, stroke: INK, "stroke-width": 3 }, gMap);
+  line(gMap, "M760 300 Q730 340 752 380 Q776 420 744 460", { stroke: STONE, "stroke-width": 2.5 }).setAttribute("stroke-dashoffset", 0);
+  const route = line(gMap, "M790 430 Q840 330 900 390 Q960 450 1010 360 Q1050 300 1110 340", { stroke: INK, "stroke-width": 3, "stroke-dasharray": "0.02 0.012" });
+  const stops = [[790, 430], [900, 390], [1010, 360], [1110, 340]].map(([x, y]) => el("rect", { x: x - 7, y: y - 7, width: 14, height: 14, fill: MUSTARD, stroke: INK, "stroke-width": 2, transform: `rotate(45 ${x} ${y})` }, gMap));
+  const labMap = lab(gM, 920, 496, "BIBLE MAP · AGES 7 TO 16", 15);
+
+  // ================= 6 academy: ten steps and a certificate =================
+  const A = (f) => at("academy", 0, f), A0 = S("academy", 0);
+  const gA = G(), SX = (i) => 120 + i * 80, SY = (i) => 456 - i * 26;
+  const steps = [...Array(10)].map((_, i) => el("rect", { x: SX(i), y: SY(i), width: 60, height: 14, rx: 7, fill: i === 9 ? MUSTARD : WARM, stroke: INK, "stroke-width": 2.5 }, gA));
+  const climber = dot(gA, SX(0) + 30, SY(0) - 11);
+  const labTen = lab(gA, 330, 250, "TEN PROGRAMS", 15);
+  const labExp = lab(gA, 160, 506, "EXPLORING CHRISTIANITY", 14);
+  const gTeen = G(gA); lab(gTeen, 710, 194, "FAITH FOR TEENAGERS", 14); el("line", { x1: 710, x2: 710, y1: 206, y2: 262, stroke: LINE, "stroke-width": 2 }, gTeen);
+  const gCert = G(gA); el("rect", { x: 960, y: 296, width: 210, height: 140, rx: 3, fill: PAPER, stroke: INK, "stroke-width": 3 }, gCert);
+  el("rect", { x: 972, y: 308, width: 186, height: 116, fill: "none", stroke: LINE, "stroke-width": 2 }, gCert);
+  txt(gCert, "ital", 1065, 350, "Certificate", 30);
+  [[1005, 1125, 374], [1025, 1105, 392]].forEach(([a, b, y]) => el("line", { x1: a, x2: b, y1: y, y2: y, stroke: STONE, "stroke-width": 2.5, "stroke-linecap": "round" }, gCert));
+  el("rect", { x: 1054, y: 404, width: 22, height: 10, rx: 2, fill: MUSTARD }, gCert);
+  const labCert = lab(gA, 1065, 476, "UNACCREDITED · YOUR OWN STUDY", 14);
+
+  // ================= 7 writing: a quill line; a shelf =================
+  const R = (f) => at("writing", 0, f), R0 = S("writing", 0);
+  const gR = G(); el("rect", { x: 300, y: 220, width: 240, height: 230, fill: PAPER, stroke: INK, "stroke-width": 3 }, gR);
+  const hand = [...Array(7)].map((_, i) => { const y = 256 + i * 26, x1 = i === 6 ? 430 : 514; let d = `M326 ${y}`; for (let x = 326; x < x1; x += 16) d += ` q4 -7 8 0 t8 0`;
+    return { p: line(gR, d, { "stroke-width": 2.5 }), y, x1 }; });
+  const quill = G(gR); el("path", { d: "M0 0 L4 -12 Q30 -70 78 -112 Q58 -52 12 -8 Z", fill: WARM, stroke: INK, "stroke-width": 2.5, "stroke-linejoin": "round" }, quill);
+  el("line", { x1: 2, x2: 60, y1: -4, y2: -90, stroke: INK, "stroke-width": 2 }, quill);
+  lab(gR, 420, 490, "ESSAYS");
+  const shelf = line(gR, "M710 450 H1000 M730 450 V470 M980 450 V470", { "stroke-width": 4 });
+  const spines = [[770, 44, 170, MUTED], [820, 52, 150, WARM], [878, 40, 186, STONE]].map(([x, w, h, fill]) => { const g = G(gR);
+    el("rect", { x, y: 450 - h, width: w, height: h, rx: 2, fill, stroke: INK, "stroke-width": 2.5 }, g);
+    el("rect", { x: x + 6, y: 450 - h + 18, width: w - 12, height: 6, fill: fill === WARM ? MUSTARD : PAPER }, g); return g; });
+  lab(gR, 850, 490, "BOOKS");
+
+  // ================= 8 close: the house of seven doors =================
+  const C = (f) => at("close", 0, f), C0 = S("close", 0);
+  const gC = G();
+  const roofC = line(gC, "M96 262 L640 150 L1184 262", { "stroke-width": 3.5 });
+  el("path", { d: "M120 470 V258 M1160 470 V258", stroke: INK, "stroke-width": 3, "stroke-linecap": "round" }, gC);
+  const names = ["BIBLE", "HISTORY", "QUESTIONS", "FAMILY", "TOOLS", "ESSAYS", "ABOUT"];
+  const doors = names.map((n, i) => { const cx = 200 + i * (880 / 6), d = door(gC, cx - 40, 340, 80, 130); d.lab = lab(gC, cx, 504, n, 13); return d; });
+  const labLW = lab(gC, 640, 232, "LIVEWELL", 17);
+
+  F.title("Welcome to LiveWell", 72);
+  F.endCard(SC.close.titleCard, END + 0.7);
+  return (t) => {
+    const outAll = 1 - up(t, END + 0.55, 0.5);
+    draw(ground, up(t, 1.8, 1.4)); op(ground, outAll);
+    const out = (id) => 1 - up(t, S(id) - 1.0, 0.3);
+    const sIn = (g, s0) => { const k = up(t, s0 - 0.15, 0.6); zoom(g, mix(0.84, 1, k)); return k; };
+
+    // ----- 1 welcome -----
+    const bZoom = up(t, B0 - 0.85, 0.8);
+    op(gW, up(t, 2.3, 0.6) * (1 - up(t, B0 - 0.6, 0.5))); zoom(gW, mix(1, 3.4, bZoom), 640, 385);
+    openDoor(front, up(t, W(0.78), 0.8), 0.3 + 0.04 * Math.sin(t * 2));
+    op(frontLab, up(t, 2.6, 0.5) * (1 - clamp(bZoom * 4)));
+    op(gNS, up(t, W(0.02), 0.5) * (1 - up(t, W(0.84), 0.5))); qNS.setAttribute("transform", `translate(0 ${(3 * Math.sin(t * 2.2)).toFixed(1)})`);
+    const aWalk = up(t, W(0.83), 1.0), ax = mix(230, 630, aWalk);
+    set(dotA, { cx: (ax + 4 * Math.sin(t * 1.3) * (1 - aWalk)).toFixed(1), cy: (459 - 4 * Math.abs(Math.sin(t * 7)) * (aWalk > 0.02 && aWalk < 0.98 ? 1 : 0)).toFixed(1) });
+    op(dotA, up(t, W(0.02), 0.5) * (1 - up(t, W(0.83) + 0.85, 0.3)));
+    op(gGD, up(t, W(0.3), 0.5) * (1 - up(t, W(0.88), 0.5))); draw(road, up(t, W(0.32), 1.0));
+    const bk = up(t, W(0.36), 2.6), [bx, by] = pathPts[Math.min(29, Math.floor(bk * 29))], bWalk = up(t, W(0.9), 0.9);
+    set(dotB, { cx: mix(bx, 650, bWalk).toFixed(1), cy: (by - 4 * Math.abs(Math.sin(t * 7)) * ((bk > 0.02 && bk < 0.98) || (bWalk > 0.02 && bWalk < 0.98) ? 1 : 0)).toFixed(1) });
+    op(dotB, up(t, W(0.34), 0.4) * (1 - up(t, W(0.9) + 0.75, 0.3)));
+
+    // ----- transition doors -----
+    const tIds = ["questions", "history", "family", "academy", "writing"];
+    let td = 0, tk = 0, tz = 0;
+    for (const id of tIds) { const s = S(id), v = span(t, s - 0.72, s + 0.4, 0.25, 0.45); if (v > td) { td = v; tk = up(t, s - 0.5, 0.35); tz = up(t, s - 0.2, 0.6); } }
+    op(tDoor.g, td); openDoor(tDoor, tk, 0.4); zoom(tDoor.g, mix(1, 3.2, tz));
+
+    // ----- 2 bible -----
+    sIn(gB, B0 - 0.1); op(gB, up(t, B0 - 0.15, 0.5) * out("questions"));
+    const films = up(t, B(0.56), 0.6);
+    op(gBook, 1 - films); gBook.setAttribute("transform", `translate(${(-80 * films).toFixed(1)} 0)`);
+    const tf = up(t, B(0.02), 0.9); hinge(turn, mix(1, -1, tf), 580); op(turn, tf > 0.001 && tf < 0.999 ? 1 : 0);
+    rulesL.forEach((r, i) => draw(r, up(t, B(0.12) + i * 0.1, 0.3))); rulesR.forEach((r, i) => draw(r, up(t, B(0.16) + i * 0.1, 0.3)));
+    op(hiVerse, up(t, B(0.3), 0.4) * (0.75 + 0.15 * Math.sin(t * 2.5)));
+    op(gNotes, up(t, B(0.3), 0.4)); noteRows.forEach((r, i) => draw(r, up(t, B(0.33) + i * 0.08, 0.25))); draw(tie, up(t, B(0.34), 0.4));
+    op(labNotes, span(t, B(0.3), B(0.58), 0.4));
+    gFilms.setAttribute("transform", `translate(${(-60 * clamp((t - B(0.56)) / 4)).toFixed(1)} 0)`);
+    frames.forEach((f) => { const a = up(t, B(0.55) + (f.c + f.r) * 0.1, 0.35); op(f.g, a); f.g.setAttribute("transform", `translate(0 ${(12 * (1 - a)).toFixed(1)})`); });
+    op(play, up(t, B(0.78), 0.4)); set(prog, { width: (100 * clamp((t - B(0.8)) / 2.4)).toFixed(1) });
+    op(labFilms, up(t, B(0.7), 0.4));
+
+    // ----- 3 questions -----
+    sIn(gQ, Q0); op(gQ, up(t, Q0 - 0.3, 0.6) * out("history"));
+    const shrink = up(t, Q(0.44), 0.8);
+    cards.forEach((c, i) => { const a = up(t, Q0 + i * 0.25, 0.5); op(c.g, a); op(c.w, up(t, Q(c.f), 0.45));
+      move(c.g, c.x, mix(mix(380, 320, a), 150, shrink) + 3 * Math.sin(t * 1.6 + i), mix(1, 0.62, shrink)); });
+    op(gBal, up(t, Q(0.46), 0.6));
+    const tip = up(t, Q(0.62), 0.7), back = up(t, Q(0.79), 1.0), sway = up(t, Q(0.86), 0.6);
+    const ang = (-11 * tip + 9.5 * back + 2.2 * Math.sin(t * 1.7) * sway) * Math.PI / 180;
+    const ends = [-1, 1].map((sg) => [640 + sg * 220 * Math.cos(ang), 262 + sg * 220 * Math.sin(ang)]);
+    set(beam, { x1: ends[0][0].toFixed(1), y1: ends[0][1].toFixed(1), x2: ends[1][0].toFixed(1), y2: ends[1][1].toFixed(1) });
+    pans.forEach((p, i) => move(p, ends[i][0], ends[i][1]));
+    const wd = up(t, Q(0.6), 0.45); op(weight, wd); weight.setAttribute("transform", `translate(0 ${(-60 * (1 - wd)).toFixed(1)})`);
+    evid.forEach((e, i) => { const k = up(t, Q(0.77) + i * 0.12, 0.35); op(e, k); e.setAttribute("transform", `translate(0 ${(-40 * (1 - k)).toFixed(1)})`); });
+    op(labObj, up(t, Q(0.63), 0.4)); op(labEv, up(t, Q(0.79), 0.4)); op(labOpen, up(t, Q(0.88), 0.4));
+    op(qOpen, up(t, Q(0.9), 0.5) * (0.8 + 0.2 * Math.sin(t * 2))); qOpen.setAttribute("transform", `translate(0 ${(2 * Math.sin(t * 2)).toFixed(1)})`);
+
+    // ----- 4 history -----
+    sIn(gH, H0); op(gH, up(t, H0 - 0.3, 0.6) * out("family"));
+    draw(hLine, up(t, H0 - 0.1, 0.6));
+    const hk = up(t, H(0.12), 3.3); draw(hFill, hk);
+    ticks.forEach((k, i) => { const on = hk * 13 >= i - 0.01; k.setAttribute("stroke", on ? INK : LINE); });
+    lessons.forEach((l, i) => { const a = clamp((hk * 13 - i + 0.6) / 0.6); op(l, a); l.setAttribute("transform", `translate(0 ${(14 * (1 - a)).toFixed(1)})`); });
+    set(walker, { cx: mix(180, 1100, hk).toFixed(1), cy: (386 - 4 * Math.abs(Math.sin(t * 7)) * (hk > 0.01 && hk < 0.99 ? 1 : 0)).toFixed(1) });
+    op(labFourteen, up(t, H(0.2), 0.5));
+
+    // ----- 5 family -----
+    sIn(gM, M0); op(gM, up(t, M0 - 0.3, 0.6) * out("academy"));
+    draw(roof, up(t, M0 - 0.1, 0.7)); op(winLight, up(t, M(0.06), 0.6) * (0.26 + 0.05 * Math.sin(t * 2.1)));
+    family.forEach((d, i) => { op(d, up(t, M(0.08) + i * 0.15, 0.3)); d.setAttribute("cy", (416 - 1.5 * Math.sin(t * 2 + i * 1.7)).toFixed(1)); });
+    op(gCal, up(t, M(0.15), 0.5)); const wk = clamp((t - M(0.18)) / 2.6) * 52;
+    weeks.forEach((w, i) => { const f = clamp(wk - i); set(w, { fill: f >= 1 && i < Math.floor(wk) ? (i === Math.floor(wk) - 1 && wk < 52 ? MUSTARD : STONE) : PAPER, stroke: f > 0 ? INK : LINE }); });
+    op(gCat, up(t, M(0.46), 0.5)); gCat.setAttribute("transform", `translate(0 ${(16 * (1 - up(t, M(0.46), 0.5))).toFixed(1)})`);
+    catRows.forEach((r, i) => draw(r, up(t, M(0.48) + i * 0.15, 0.3)));
+    op(gMap, up(t, M(0.6), 0.5)); draw(route, up(t, M(0.64), 2.4));
+    stops.forEach((s, i) => op(s, up(t, M(0.64) + i * 0.6, 0.3)));
+    op(labMap, up(t, M(0.66), 0.5));
+
+    // ----- 6 academy -----
+    sIn(gA, A0); op(gA, up(t, A0 - 0.3, 0.6) * out("writing"));
+    steps.forEach((s, i) => { const a = up(t, A0 + i * 0.32, 0.4); op(s, a); s.setAttribute("transform", `translate(0 ${(10 * (1 - a)).toFixed(1)})`); });
+    const ck = clamp((t - A(0.14)) / (A(0.82) - A(0.14))) * 9, ci = Math.min(8, Math.floor(ck)), cf = ease(ck - ci);
+    const cx = ck >= 9 ? SX(9) + 30 : mix(SX(ci) + 30, SX(ci + 1) + 30, cf), cy = ck >= 9 ? SY(9) - 11 : mix(SY(ci), SY(ci + 1), cf) - 11 - 18 * Math.sin(Math.PI * cf);
+    set(climber, { cx: cx.toFixed(1), cy: cy.toFixed(1) }); op(climber, up(t, A0 + 0.3, 0.4));
+    op(labTen, up(t, A(0.3), 0.5)); op(labExp, up(t, A(0.5), 0.5)); op(gTeen, up(t, A(0.66), 0.5));
+    const ce = up(t, A(0.78), 0.6); op(gCert, ce); gCert.setAttribute("transform", `translate(0 ${(18 * (1 - ce)).toFixed(1)})`); op(labCert, up(t, A(0.86), 0.5));
+
+    // ----- 7 writing -----
+    sIn(gR, R0); op(gR, up(t, R0 - 0.3, 0.6) * out("close"));
+    const wk7 = clamp((t - R0) / 4.0) * 7, wi = Math.min(6, Math.floor(wk7)), wf = wk7 - wi;
+    hand.forEach((h, i) => draw(h.p, clamp(wk7 - i)));
+    const qx = wk7 >= 7 ? hand[6].x1 : mix(326, hand[wi].x1, wf), qy = hand[wi].y + 2 * Math.sin(t * 14);
+    move(quill, qx, qy, 1, 3 * Math.sin(t * 7));
+    draw(shelf, up(t, R0, 0.6));
+    spines.forEach((g, i) => { const a = up(t, R(0.25) + i * 0.4, 0.5); op(g, a); g.setAttribute("transform", `translate(0 ${(-40 * (1 - a)).toFixed(1)})`); });
+
+    // ----- 8 close -----
+    const cin = up(t, C0 - 0.6, 1.8); op(gC, up(t, C0 - 0.6, 0.6) * outAll); zoom(gC, mix(1.3, 1, cin), 640, 400);
+    draw(roofC, up(t, C0 - 0.4, 1.0)); op(labLW, up(t, C0 + 0.4, 0.5));
+    doors.forEach((d, i) => { op(d.g, up(t, C0 - 0.3 + i * 0.18, 0.4)); op(d.lab, up(t, C0 + i * 0.18, 0.4));
+      openDoor(d, up(t, C(0.72) + i * 0.12, 0.6), 0.28 + 0.04 * Math.sin(t * 2 + i)); });
+  };
+});
+</script>
+</body></html>
