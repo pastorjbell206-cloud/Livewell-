@@ -1,0 +1,442 @@
+{
+  "slug": "teens-big-story",
+  "title": "The Bible's story, start to finish",
+  "for": "I'm a teenager who's never read it",
+  "subtitle": "Eight short sessions that run through the whole Bible as one story: creation, the fall, Abraham, the Exodus, kings and exile, Jesus, the church and the new creation.",
+  "intro": [
+    "Most people who say the Bible is confusing have only ever seen it in pieces. This track gives you the whole story fast, in eight sessions of about six minutes each. Every session has a short film, one chapter to read, one question, one thing to do and one verse.",
+    "You don't need to know anything before you start, and you don't need to believe it to read it. By the end you'll know where any page of the Bible sits in the story. Take it alone, with friends, with a youth group, or with a parent."
+  ],
+  "leader": {
+    "about": [
+      "This guide is for a youth leader or a parent taking teenagers through The Bible's story, start to finish. Some in the group will have grown up with Bible stories and some will never have opened one, and both are welcome. The aim is not to test anyone on facts. It is to help each person see the Bible as one story, and to notice where they might stand in it.",
+      "Each person takes the session on their own first: a short reading, a film or a page, and a passage. The meeting doesn't repeat the teaching. It talks over what people found, using the group guide for that session, which is gathered below in order with the page each session opens and the question it asks."
+    ],
+    "sections": [
+      {
+        "id": "group",
+        "title": "The group",
+        "body": [
+          "Three to eight teenagers is a good size for a youth group, small enough that the quiet ones speak. A parent and one teenager can use the same guide at a kitchen table or in the car. Meet for about forty-five minutes, eight times, and keep the end time you promised. A leader doesn't need every answer. A leader needs to be honest, curious, and slow to lecture, and it helps to have a second trusted adult present whenever a group meets."
+        ]
+      },
+      {
+        "id": "room",
+        "title": "The room",
+        "body": [
+          "Pick somewhere ordinary: a living room, a kitchen, a corner with snacks. Sit in a circle so nobody faces a teacher. Phones can stay out for the film and the page, then go face down. Say at the first meeting that anyone may pass on any question, that what people share stays in the room unless someone is in danger, and that nobody will be made to pray aloud or to decide anything."
+        ]
+      },
+      {
+        "id": "order",
+        "title": "The order of a meeting",
+        "body": [
+          "About forty-five minutes, in this order. Keep to the times loosely and to the end time strictly."
+        ],
+        "steps": [
+          "Five minutes: the opening question, once round the circle. Anyone may pass.",
+          "Ten minutes: watch the session's film or look at its page together, if not everyone has.",
+          "Five minutes: one person reads the verse aloud, with a few verses around it.",
+          "Twenty minutes: the three questions to talk over, in order. Let a silence sit before you fill it.",
+          "Five minutes: the prayer prompt for those who pray, and quiet for everyone else, then name the next session."
+        ]
+      },
+      {
+        "id": "hard",
+        "title": "When a hard question comes",
+        "body": [
+          "Teenagers often test whether a question is really welcome before they ask the one they care about. Welcome every one. Say what is true in an objection before answering it, and never treat a question as rebellion or a bad attitude. If nobody knows, say so, write it down, and bring something back next time. If a question needs more than the meeting allows, the chapter notes and the films each session opens usually take it further.",
+          "Where Christians themselves disagree, say so plainly and show more than one answer. A leader who admits not knowing earns more trust than one who always has a line ready."
+        ]
+      },
+      {
+        "id": "hurting",
+        "title": "When someone is hurting",
+        "body": [
+          "Some questions come with a wound attached: a family breaking up, a friend lost, a parent who is ill, a church that did harm. When that happens, stop the discussion. Listen, thank the person for saying it, and don't explain their pain for them. Afterwards, speak with them, with another adult nearby, and ask what would help.",
+          "If a young person says that anyone is harming them, or that they have thought about harming themselves, take it seriously and never promise to keep it secret. A youth leader may be required by law, and by the church's own policy, to report harm to a child; know that policy before the first meeting. A parent should get help the same day."
+        ]
+      },
+      {
+        "id": "help",
+        "title": "When to point someone to Find Help",
+        "body": [
+          "Point a teenager, or their parent, to Find Help when something has become too heavy to carry: worry that stops sleep or school, sadness that will not lift, harm at home or anywhere else, or any sign that they no longer want to be alive. The Find Help page on this site lists places to turn, and its lines for help right now are open day and night. If anyone is in danger now, call your local emergency number. Stay with the young person while help is reached."
+        ]
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "n": 1,
+      "title": "Creation",
+      "minutes": 6,
+      "teaching": [
+        "The Bible isn't a pile of rules or a book of inspiring quotes. It's one story, told across many books and many centuries, and it starts with a world that God makes and calls good. Genesis 1 isn't trying to be a science textbook, and Christians read its days in more than one way. What it plainly says is that the world isn't an accident, that it's good, and that human beings are made in God's image to look after it. Watch the two-minute film first to see the whole road, then read the first chapter."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The whole Bible in two minutes",
+        "href": "/study/explorer/watch/bible-two-minutes",
+        "why": "The whole story from creation to new creation, drawn as one road in nine pictures, so every later session has somewhere to sit."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Genesis 1, passage by passage",
+          "href": "/study/bible/genesis/1#plain",
+          "why": "The first chapter with plain notes on what it says, what kind of writing it is, and where readers differ."
+        },
+        {
+          "kind": "explorer",
+          "label": "Creation, on the Bible Explorer",
+          "href": "/study/explorer/creation",
+          "why": "The first stop on the map of the whole story, with what happens, who is there, and where it leads next."
+        },
+        {
+          "kind": "reading-guide",
+          "label": "What the Bible Is",
+          "href": "/study/bible/guides/what-is-the-bible",
+          "why": "A short guide to what kind of book the Bible is, how it is put together, and how its parts fit."
+        }
+      ],
+      "question": "If the world was made on purpose and called good, what difference would that make to an ordinary school day?",
+      "do": "Read Genesis 1 out loud, quickly. Count how many times God looks at what he made and calls it good.",
+      "verse": {
+        "ref": "Genesis 1:31",
+        "text": "And God looked upon all that He had made, and indeed, it was very good. And there was evening, and there was morning—the sixth day."
+      },
+      "group": {
+        "open": "Before today, how would you have described what the Bible is about, in one sentence?",
+        "discuss": [
+          "The film draws the whole Bible as one road. What changes when you read it as a story instead of a rulebook?",
+          "Genesis 1 says the world is very good. Where do you see that, and where is it hard to see?",
+          "What does it mean that people were made to look after the world, not just use it?"
+        ],
+        "pray": "Those who pray can give thanks for one good thing in the world they noticed this week. Anyone who doesn't pray can simply name it."
+      }
+    },
+    {
+      "n": 2,
+      "title": "The Fall",
+      "minutes": 6,
+      "teaching": [
+        "Then it goes wrong. In Genesis 3 the first people decide they'd rather be their own gods than trust the one who made them, and everything cracks: their trust in God, in each other, in themselves, and their place in the world. The Bible calls this sin, and it's less about breaking rules than about breaking relationships. Watch what God does next. He doesn't walk away. He comes looking and calls out a question. The rest of the Bible is the long answer to what happens after that."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "What sin is",
+        "href": "/study/explorer/watch/what-sin-is",
+        "why": "Six pictures on sin at its root, the four things it breaks, why it touches everyone, and the God who comes looking."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Genesis 3, passage by passage",
+          "href": "/study/bible/genesis/3#plain",
+          "why": "The serpent, the fruit, the hiding and the question, with plain notes on what each part of the story is doing."
+        },
+        {
+          "kind": "explorer",
+          "label": "The Fall, on the Bible Explorer",
+          "href": "/study/explorer/fall",
+          "why": "The second stop on the map, from the garden to Babel, so you can see how far the cracks spread."
+        }
+      ],
+      "question": "Where do you see the same cracks Genesis 3 describes, in the world or in yourself?",
+      "do": "Read Genesis 3. Underline every place where someone hides or blames someone else.",
+      "verse": {
+        "ref": "Genesis 3:9",
+        "text": "But the LORD God called out to the man, “Where are you?”"
+      },
+      "care": [
+        "Sometimes guilt that will not lift needs more than a Bible verse. It can be part of anxiety, depression or a habit of the mind that keeps returning to the same fear. That is not a failure of faith. Talk with a pastor or a friend you trust. If the fear will not let you rest, a counsellor or a doctor can help too, and the Find Help page on this site lists places to turn."
+      ],
+      "group": {
+        "open": "Why do you think people find it so hard to admit when they're wrong?",
+        "discuss": [
+          "The man blames the woman, and the woman blames the serpent. Why is blame so natural?",
+          "The film says sin breaks four things. Which of them do you see most clearly around you?",
+          "God's first words after the fall are a question, not a sentence. What does that tell you about him?"
+        ],
+        "pray": "Those who pray can be honest with God about one place they've been hiding, and give thanks that he comes looking. Anyone who doesn't pray can sit quietly with God's question."
+      }
+    },
+    {
+      "n": 3,
+      "title": "Abraham",
+      "minutes": 6,
+      "teaching": [
+        "After the cracks spread, God does something odd. He doesn't fix the world all at once. He chooses one man, Abram, from an ordinary family, and makes him a promise: a land, a people, and a blessing that will reach every family on earth. Abraham isn't a hero. He lies to protect himself, he panics, and he tries to force the promise to come true his own way. The story keeps going because God keeps his word, not because Abraham keeps his. Hold on to that promise to bless all nations. It turns up again on the last page of the Bible."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "A blessing for all nations",
+        "href": "/study/explorer/watch/all-nations",
+        "why": "Follow the promise to Abraham from a tower left unfinished to a crowd from every nation that no one can count."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Genesis 12, passage by passage",
+          "href": "/study/bible/genesis/12#plain",
+          "why": "The call and the promise, then Abram's first failure in Egypt, with plain notes on both."
+        },
+        {
+          "kind": "explorer",
+          "label": "Abraham, on the Bible Explorer",
+          "href": "/study/explorer/abraham",
+          "why": "The third stop on the map: Abraham, Isaac, Jacob and Joseph, one family carrying the promise forward."
+        }
+      ],
+      "question": "Why might God choose to work through one flawed family instead of fixing everything at once?",
+      "do": "Read Genesis 12. Write down the three things God promises Abram, and who the last one is for.",
+      "verse": {
+        "ref": "Genesis 12:2-3",
+        "text": "I will make you into a great nation, and I will bless you; I will make your name great, so that you will be a blessing. I will bless those who bless you and curse those who curse you; and all the families of the earth will be blessed through you."
+      },
+      "group": {
+        "open": "Who in your family has kept a promise to you that mattered?",
+        "discuss": [
+          "Abraham lies and panics, and God doesn't drop him. What does that say about who God works with?",
+          "Why would God's plan for the whole world start with one family?",
+          "Where have you seen the promise to bless every nation already coming true?"
+        ],
+        "pray": "Those who pray can give thanks that God keeps promises when people don't, and pray for one family they know. Anyone who doesn't pray can think of a promise someone kept for them."
+      }
+    },
+    {
+      "n": 4,
+      "title": "The Exodus",
+      "minutes": 6,
+      "teaching": [
+        "Abraham's family ends up as slaves in Egypt, worked hard with no way out. Then God hears them. He calls Moses at a burning bush, confronts the most powerful ruler on earth, and brings the people out through the sea. This rescue becomes the pattern for everything after it. Later, when the prophets describe what God will do, they reach back to the Exodus, and when Jesus eats his last meal with his friends it's at Passover, the feast that remembers it. Notice that the law at Sinai comes after the rescue, not before. Nobody earned it."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The Exodus: out of Egypt",
+        "href": "/study/explorer/watch/the-exodus",
+        "why": "The rescue in seven pictures: slavery, the burning bush, Pharaoh, the Passover, the sea, the song, and the greater rescue it points to."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Exodus 14, passage by passage",
+          "href": "/study/bible/exodus/14#plain",
+          "why": "The crossing of the sea, with plain notes on what happens and why the Bible keeps coming back to it."
+        },
+        {
+          "kind": "story",
+          "label": "The Exodus, in the Bible's story",
+          "href": "/study/bible/story/exodus",
+          "why": "This act of the whole story, with the books it covers and how it connects to what comes before and after."
+        }
+      ],
+      "question": "Why do you think God rescues the people first and gives them the law afterward?",
+      "do": "Read Exodus 14. Write down how the people feel at the start of the chapter and how they feel at the end.",
+      "verse": {
+        "ref": "Exodus 20:2",
+        "text": "I am the LORD your God, who brought you out of the land of Egypt, out of the house of slavery."
+      },
+      "group": {
+        "open": "What's something you've been rescued from, big or small?",
+        "discuss": [
+          "The people are trapped between an army and the sea. Why does the story put them in such a tight spot?",
+          "What changes when rules come after a rescue instead of as a way to earn one?",
+          "Jesus' last meal was at Passover. What do you think he wanted his friends to connect?"
+        ],
+        "pray": "Those who pray can give thanks for a rescue in their own life and pray for people who are still trapped. Anyone who doesn't pray can remember someone who helped them out of a hard place."
+      }
+    },
+    {
+      "n": 5,
+      "title": "Kings and exile",
+      "minutes": 6,
+      "teaching": [
+        "In the land, the people ask for a king. They get Saul, then David, a shepherd who becomes Israel's greatest king and still does terrible wrong. God promises David a throne that will last forever. The kings after him mostly turn away from God, the prophets warn them again and again, and in the end Babylon destroys Jerusalem and carries the people off. It looks like the end of the story. But the prophets keep speaking in exile, and one of them writes the famous line about a future and a hope to people who would wait seventy years. The promise to David is still waiting for its king."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "The king",
+        "href": "/study/explorer/watch/the-king",
+        "why": "One crown followed through the whole Bible in seven pictures: the shepherd king, the promise to David, the empty throne, and the King to come."
+      },
+      "also": [
+        {
+          "kind": "explorer",
+          "label": "Exile, on the Bible Explorer",
+          "href": "/study/explorer/exile",
+          "why": "The stop on the map where the kingdom splits and falls, and the prophets speak into the ruins."
+        },
+        {
+          "kind": "chapter",
+          "label": "Jeremiah 29, passage by passage",
+          "href": "/study/bible/jeremiah/29#plain",
+          "why": "The letter to the exiles in Babylon, with plain notes on who it was written to and what it promised them."
+        },
+        {
+          "kind": "study-tool",
+          "label": "The Bible's timeline",
+          "href": "/study/timeline",
+          "why": "See where David, the kings, the prophets and the exile sit in time, so the story stops feeling like a blur."
+        }
+      ],
+      "question": "Jeremiah 29:11 is often printed on mugs and posters. How does it change when you know who it was first written to?",
+      "do": "Read Jeremiah 29:4-14. Write down what God tells the exiles to do while they wait.",
+      "verse": {
+        "ref": "Jeremiah 29:11",
+        "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, to give you a future and a hope."
+      },
+      "group": {
+        "open": "Have you ever had to wait a long time for something you were promised?",
+        "discuss": [
+          "David is the great king and still does terrible wrong. Why does the Bible tell the truth about its heroes?",
+          "God tells the exiles to build houses and seek the good of Babylon. What would that look like where you live?",
+          "Seventy years is a lifetime. What kind of hope lasts that long?"
+        ],
+        "pray": "Those who pray can pray for people who are far from home, and for patience in their own waiting. Anyone who doesn't pray can name something they're still waiting for."
+      }
+    },
+    {
+      "n": 6,
+      "title": "Jesus",
+      "minutes": 6,
+      "teaching": [
+        "Centuries later the story picks up with a builder from Nazareth. Mark tells it at a run. Jesus announces that God's kingdom has come near, heals, forgives, eats with people everyone else avoids, and claims an authority that belongs to God alone. He's the king David's line was waiting for, but he wins his throne on a cross, not a battlefield. On the third day the tomb is empty. Every thread so far runs through him: the image of God, the promise to Abraham, the rescue from slavery, the king. Watch the film, then read Mark's first chapter and feel how fast it moves."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Mark: the story at a run",
+        "href": "/study/explorer/watch/book-mark",
+        "why": "Mark as a whole book: its speed, its hinge at Peter's answer, the way of the cross, and the centurion's confession."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Mark 1, passage by passage",
+          "href": "/study/bible/mark/1#plain",
+          "why": "The opening of Mark with plain notes, so you can see how fast Jesus arrives and what he claims."
+        },
+        {
+          "kind": "explorer",
+          "label": "The cross, on the Bible Explorer",
+          "href": "/study/explorer/cross",
+          "why": "The stop on the map where the end of each Gospel is told, and the earlier threads meet."
+        },
+        {
+          "kind": "book",
+          "label": "Mark",
+          "href": "/study/bible/mark",
+          "why": "The whole book, short enough to read in one or two sittings, with a guide to how it is put together."
+        }
+      ],
+      "question": "Which part of the earlier story do you think Jesus finishes most clearly, and why?",
+      "do": "Read Mark 1 in one sitting. Count how many times the word 'immediately' or 'at once' turns up, and notice the pace.",
+      "verse": {
+        "ref": "Mark 10:45",
+        "text": "For even the Son of Man did not come to be served, but to serve, and to give His life as a ransom for many."
+      },
+      "group": {
+        "open": "If you'd been in the crowd in Mark 1, what would you have made of Jesus?",
+        "discuss": [
+          "Jesus wins his throne on a cross. Why is that so different from every other king in the story?",
+          "Which thread from the earlier sessions do you see most clearly in Jesus?",
+          "Mark 10:45 says he came to serve. How does that change what greatness looks like?"
+        ],
+        "pray": "Those who pray can give thanks for Jesus by name and ask to know him better through reading Mark. Anyone who doesn't pray can hold one thing he did in mind."
+      }
+    },
+    {
+      "n": 7,
+      "title": "The church",
+      "minutes": 6,
+      "teaching": [
+        "After Jesus rises, he doesn't leave behind a building or a book in his own handwriting. He leaves a group of ordinary people and sends God's Spirit to live in them. Acts tells how that small group in Jerusalem spills out across the Roman world, crossing lines of nation, language and class, which is the promise to Abraham coming true. The early church was messy, and most of Paul's letters were written to churches with problems. But it's where the story continues, and it's the part of the story you're living in now."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Acts: to the ends of the earth",
+        "href": "/study/explorer/watch/book-acts",
+        "why": "Luke's second volume: the road from Jerusalem to Rome, the Holy Spirit, witness and its cost, and a gospel that crosses every line."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Acts 2, passage by passage",
+          "href": "/study/bible/acts/2#plain",
+          "why": "The day the Spirit came, the first sermon, and the first church, with plain notes on what they did together."
+        },
+        {
+          "kind": "explorer",
+          "label": "The church, on the Bible Explorer",
+          "href": "/study/explorer/church",
+          "why": "The stop on the map covering Acts and the letters, where the story spreads outward to every nation."
+        }
+      ],
+      "question": "If the church is meant to be people from every background, what would that look like where you live?",
+      "do": "Read Acts 2:42-47. Write down four things the first Christians did together, and which one you've never seen.",
+      "verse": {
+        "ref": "Acts 2:42",
+        "text": "They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer."
+      },
+      "group": {
+        "open": "What's one thing you like about church, and one thing you find hard?",
+        "discuss": [
+          "Jesus left people, not a building. Why might he have done it that way?",
+          "The first Christians crossed lines of nation and language. Which lines are hardest to cross at your school?",
+          "Most of Paul's letters were written to churches with problems. Does that make the church easier or harder to trust?"
+        ],
+        "pray": "Those who pray can pray for their own church, or a church they know, and for the people in it who feel left out. Anyone who doesn't pray can think of one person who might need welcoming."
+      }
+    },
+    {
+      "n": 8,
+      "title": "New creation",
+      "minutes": 6,
+      "teaching": [
+        "The story doesn't end with people floating off to heaven. It ends with heaven coming down. In the last two chapters of Revelation, God makes everything new, lives with his people in a city whose gates are never shut, and wipes every tear from their eyes. The tree of life from the garden is there again, beside a river. People from every nation walk in its light, which is Abraham's promise kept in full. You've now run the whole road in eight sessions, and every page of the Bible you ever read sits somewhere on it."
+      ],
+      "open": {
+        "kind": "film",
+        "label": "Revelation: the Lamb on the throne",
+        "href": "/study/explorer/watch/book-revelation",
+        "why": "The last book as a whole: letters to seven churches, a throne, a Lamb who was slain, the ways Christians read it, and all things made new."
+      },
+      "also": [
+        {
+          "kind": "chapter",
+          "label": "Revelation 21, passage by passage",
+          "href": "/study/bible/revelation/21#plain",
+          "why": "The new heaven and new earth, with plain notes on its pictures and what they are saying."
+        },
+        {
+          "kind": "life",
+          "label": "Creation, Fall, Redemption, Restoration: The Bible's Story",
+          "href": "/life/the-story-we-live-in",
+          "why": "Creation, fall, redemption and restoration as the story an ordinary life is lived inside."
+        },
+        {
+          "kind": "track",
+          "label": "Who you are, and how to live it",
+          "href": "/tracks",
+          "why": "The next track in this program turns from the Bible's story to yours: worth, friends, phones, parents, grace and pressure."
+        }
+      ],
+      "question": "Now that you've seen the whole story, where do you think your own life fits on that road?",
+      "do": "Draw a line across a page with eight marks for the eight sessions. Under each, write one word. Then mark where you are on the line.",
+      "verse": {
+        "ref": "Revelation 21:5",
+        "text": "And the One seated on the throne said, “Behold, I make all things new.” Then He said, “Write this down, for these words are faithful and true.”"
+      },
+      "group": {
+        "open": "What surprised you most about the way the Bible's story ends?",
+        "discuss": [
+          "Why might it matter that the story ends with a renewed earth, not an escape from it?",
+          "Which earlier session do you now see differently, knowing how it all ends?",
+          "If you're living in the church part of the story, what would it mean to live it well this week?"
+        ],
+        "pray": "Those who pray can give thanks for the whole story, from the garden to the city, and ask for a part in it. Anyone who doesn't pray can name the part of the story that stayed with them."
+      }
+    }
+  ]
+}

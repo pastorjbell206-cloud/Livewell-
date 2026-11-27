@@ -9,7 +9,7 @@
  * siteCatalog.test.ts.
  */
 import { DISCIPLINES } from "@/pages/preview/disciplines";
-import { ACADEMY_PATHS, MENU_DOORS, menuDoorForPath } from "@/components/nav/menu";
+import { ACADEMY_PROGRAMS, MENU_DOORS, menuDoorForPath } from "@/components/nav/menu";
 import { describe, it, expect, vi, afterEach } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
@@ -112,13 +112,14 @@ describe("the header", () => {
     }
   });
 
-  it("builds every room from a real page, the Academy's paths from the tracks' own titles", () => {
+  it("builds every room from a real page, the Academy's rooms from its programs' own titles", () => {
     for (const d of MENU_DOORS) {
       expect(isRoute(d.page.href), d.page.href).toBe(true);
       for (const r of d.rooms) expect(isRoute(r.href), `${d.name}: ${r.href}`).toBe(true);
     }
-    const tracks = JSON.parse(fs.readFileSync(path.join(ROOT, "client/public/tracks/index.json"), "utf8")).tracks as { slug: string; title: string }[];
-    for (const p of ACADEMY_PATHS) expect(tracks.find((t) => t.slug === p.slug)?.title, p.slug).toBe(p.title);
+    const programs = JSON.parse(fs.readFileSync(path.join(ROOT, "client/public/academy/programs.json"), "utf8")).programs as { slug: string; title: string }[];
+    expect(ACADEMY_PROGRAMS.map((p) => p.slug).sort()).toEqual(programs.map((p) => p.slug).sort());
+    for (const p of ACADEMY_PROGRAMS) expect(programs.find((x) => x.slug === p.slug)?.title, p.slug).toBe(p.title);
     expect(MENU_DOORS[0].rooms.map((r) => r.href)).toEqual(DISCIPLINES.map((d) => `/explore/${d.id}`));
   });
 

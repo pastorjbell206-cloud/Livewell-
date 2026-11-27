@@ -198,6 +198,11 @@ const Track = lazy(() => import("./pages/tracks/Track"));
 const TrackSession = lazy(() => import("./pages/tracks/TrackSession"));
 const TrackLeader = lazy(() => import("./pages/tracks/TrackLeader"));
 const TrackPrint = lazy(() => import("./pages/tracks/TrackPrint"));
+// The Academy: programs of tracks in order, the reader's record, and certificates (lib/academy.ts).
+const Academy = lazy(() => import("./pages/academy/Academy"));
+const AcademyProgram = lazy(() => import("./pages/academy/AcademyProgram"));
+const AcademyLearned = lazy(() => import("./pages/academy/AcademyLearned"));
+const AcademyCertificate = lazy(() => import("./pages/academy/AcademyCertificate"));
 const ExplorerMap = lazy(() => import("./pages/explorer/ExplorerMap"));
 const ExplorerStop = lazy(() => import("./pages/explorer/ExplorerStop"));
 const ExplorerFilm = lazy(() => import("./pages/explorer/ExplorerFilm"));
@@ -670,6 +675,11 @@ function Router() {
         <Route path="/study/word/:strong" component={StudyWord} />
         <Route path="/study/word" component={StudyWord} />
         <Route path="/study/cross-references" component={FollowVerse} />
+        <Route path="/academy" component={Academy} />
+        {/* The reader's record and a certificate, before a program's own address. */}
+        <Route path="/academy/learned" component={AcademyLearned} />
+        <Route path="/academy/certificate/:kind/:slug" component={AcademyCertificate} />
+        <Route path="/academy/:program" component={AcademyProgram} />
         <Route path="/tracks" component={Tracks} />
         <Route path="/tracks/:slug" component={Track} />
         {/* A track's leader's guide and the whole track to print, before a session number. */}

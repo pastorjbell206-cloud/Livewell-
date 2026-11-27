@@ -5,11 +5,8 @@
  *
  * Every room is a page the site already has, taken from the site catalogue
  * (lib/siteCatalog.ts) by id, so its name, line and address are the ones the
- * rest of the site uses. The Academy's paths are the tracks
- * (client/public/tracks/index.json; siteNav.test.tsx holds each slug and
- * title to it), named in the menu by who each is for (James, 2026-11-27: "no
- * one knows what those are"). The
- * catalogue's seven doors stay as they are: the footer, the door pages and
+ * rest of the site uses. The Academy's rooms are its programs
+ * (ACADEMY_PROGRAMS below). The catalogue's seven doors stay as they are: the footer, the door pages and
  * /explore still read them.
  */
 import { DOORS, EVERYTHING_ENTRY, entryById, type CatalogEntry, type Door, type DoorId } from "@/lib/siteCatalog";
@@ -33,14 +30,27 @@ const door = (id: MenuId, name: string, page: CatalogEntry, rooms: CatalogEntry[
   rooms: rooms.map((r) => ({ ...r })),
 });
 
-/** The Academy's paths, in the tracks' own words; each opens at /tracks/<slug>. */
-export const ACADEMY_PATHS: { slug: string; title: string; label: string; line: string }[] = [
-  { slug: "new-to-this", title: "New to faith, or coming back", label: "New to faith? Start here", line: "Who Jesus is, how to read the Bible and pray. Twelve 10-minute sessions." },
-  { slug: "skeptical", title: "Weigh the case for yourself", label: "Not sure it's true? Weigh the evidence", line: "For skeptics: God, the Bible, the resurrection, with the case against first." },
-  { slug: "stepped-back", title: "Your questions, taken seriously", label: "Stepped back from faith?", line: "Honest answers to the questions that made you walk away." },
-  { slug: "deeper", title: "Study, history, doctrine", label: "Go deeper: study, history, doctrine", line: "How to study the Bible, what the church believes, and where it came from." },
-  { slug: "mark", title: "Deep in one: the Gospel of Mark", label: "Read a whole book: Mark", line: "One Gospel, chapter by chapter, in sixteen sessions." },
+/**
+ * The Academy's programs (client/public/academy/programs.json; siteNav.test.tsx
+ * and scripts/validate-academy.mjs hold each slug and title to it), named in
+ * the menu by who each is for (James, 2026-11-27: "no one knows what those
+ * are"). Each opens at /academy/<slug>.
+ */
+export const ACADEMY_PROGRAMS: { slug: string; title: string; label: string; line: string }[] = [
+  { slug: "exploring", title: "Exploring Christianity", label: "Not sure it's true? Explore", line: "Who Jesus was, the evidence, and the hardest objections, stated fairly." },
+  { slug: "new-to-faith", title: "New to Faith", label: "New to faith? Start here", line: "The gospel, prayer, the Bible, and the habits of a Christian life." },
+  { slug: "big-story", title: "The Bible's Big Story", label: "Never read the Bible? The whole story", line: "Creation to new creation, the Old Testament and the New, as one story." },
+  { slug: "study", title: "How to Study the Bible", label: "Learn to study the Bible", line: "Seven steps, each kind of book, the Bible's world, and the tools." },
+  { slug: "books", title: "Deep in One Book", label: "Know one book well", line: "Mark, John, Genesis, the Psalms and Romans, chapter by chapter." },
+  { slug: "beliefs", title: "What Christians Believe", label: "What Christians believe, and why", line: "The creed line by line, the core doctrines, and where Christians differ." },
+  { slug: "history", title: "Church History", label: "Church history in fourteen lessons", line: "Two thousand years of the church, and how each age read the Bible." },
+  { slug: "living", title: "Living It", label: "Faith for an ordinary week", line: "Marriage, work, money, rest, and the heavy seasons." },
+  { slug: "teens", title: "Faith for Teenagers", label: "For teenagers", line: "Is it true, the Bible's story, and who you are. Short sessions." },
+  { slug: "home", title: "Faith at Home", label: "For parents and families", line: "Leading faith at home, the hard questions, and the church year." },
 ];
+
+/** The Academy's front door (/academy). */
+export const ACADEMY_ENTRY: CatalogEntry = { id: "academy.home", name: "The Academy", line: "Ten programs, from your first questions to reading the Bible well.", href: "/academy", icon: "Route" };
 
 const EXPLORE: Door = door(
   "explore",
@@ -55,11 +65,8 @@ export const MENU_DOORS: Door[] = [
   door(
     "academy",
     "Academy",
-    E("bible.tracks"),
-    [
-      ...ACADEMY_PATHS.map((p): CatalogEntry => ({ id: `academy.${p.slug}`, name: p.label, line: p.line, href: `/tracks/${p.slug}`, icon: "Route" })),
-      { ...E("history.course"), name: "Church history in 14 lessons", line: "From the apostles to today, one lesson at a time." },
-    ],
+    ACADEMY_ENTRY,
+    ACADEMY_PROGRAMS.map((p): CatalogEntry => ({ id: `academy.${p.slug}`, name: p.label, line: p.line, href: `/academy/${p.slug}`, icon: "Route" })),
     "quill",
   ),
   door(
@@ -75,7 +82,7 @@ export const MENU_DOORS: Door[] = [
     doorPage("family"),
     [
       ...["family.tonight", "family.devotions", "family.catechism", "family.plans", "bible.explorer"].map(E),
-      { id: "academy.family", name: "Start at the table tonight", line: "A path for leading a family, twelve short sessions.", href: "/tracks/family", icon: "Route" },
+      { id: "families.academy", name: "Faith at Home, in the Academy", line: "Short tracks for parents: leading faith at home, and the church year.", href: "/academy/home", icon: "Route" },
     ],
     "house",
   ),
@@ -100,7 +107,7 @@ export function menuDoorForPath(path: string): MenuId | null {
   const p = path.split(/[?#]/)[0];
   const under = (...prefixes: string[]) => prefixes.some((x) => p === x || p.startsWith(`${x}/`));
   if (under("/explore", "/theology", "/topics", "/answers", "/questions", "/skeptics", "/resources/creeds", "/life", "/wisdom", "/how-tos")) return "explore";
-  if (under("/tracks")) return "academy";
+  if (under("/tracks", "/academy")) return "academy";
   if (under("/family")) return "families";
   if (under("/studyguides", "/downloads", "/plans", "/resources/hard-issues-series", "/speaking")) return "churches";
   if (under("/writing", "/books", "/about", "/connect", "/contact", "/subscribe", "/support")) return "publishing";

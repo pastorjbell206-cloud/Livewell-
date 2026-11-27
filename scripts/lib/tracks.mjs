@@ -51,6 +51,18 @@ export const KINDS = {
   bible: { name: "The Study Bible's own pages: its front page, the story, the doctrines, the guides", match: /^\/study\/bible(\/(story|doctrines|guides))?$/ },
   context: { name: "Bible background: a guide to the world it was written in, or all of them", match: /^\/resources\/context(\/[a-z0-9-]+)?$/ },
   explorer: { name: "The Bible Explorer: the map, or one of its stops", match: /^\/study\/explorer(\/[a-z0-9-]+)?$/ },
+  // Added for the Academy (2026-11-27): the rest of the site's teaching, so a session can open it.
+  doctrine: { name: "One doctrine study in the Study Bible", match: /^\/study\/bible\/doctrines\/[a-z0-9-]+$/ },
+  story: { name: "One part of the Bible's story", match: /^\/study\/bible\/story\/[a-z0-9-]+$/ },
+  "reading-guide": { name: "A guide to reading the Bible", match: /^\/study\/bible\/guides\/[a-z0-9-]+$/ },
+  "study-tool": {
+    name: "A Bible study page: the timeline, atlas, key words, hard passages, the books at a glance, key chapters, themes, a word study, cross-references or the films",
+    match: /^\/study\/(timeline|atlas|words|hard-passages|books-at-a-glance|key-chapters|themes|word|cross-references|films)$/,
+  },
+  theology: { name: "A theology page: how culture reads the Bible, the glossary, how to interpret, or a doctrine", match: /^\/theology\/(reading-the-bible|glossary|hermeneutics|biblical|doctrine\/[a-z0-9-]+)$/ },
+  life: { name: "An everyday-life guide", match: /^\/life\/[a-z0-9-]+$/ },
+  howto: { name: "A how-to guide", match: /^\/how-tos\/[a-z0-9-]+$/ },
+  essay: { name: "An essay on the public shelf", match: /^\/writing\/[a-z0-9-]+$/ },
 };
 
 /** A track uses at least this many kinds across its sessions. */

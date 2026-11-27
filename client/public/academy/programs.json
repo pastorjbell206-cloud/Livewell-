@@ -1,0 +1,130 @@
+{
+  "about": "The LiveWell Academy: ten programs that take a reader from never having opened the Bible to reading it well, knowing what the church believes and why, and living it. Each program is a few tracks in order; each track is a few sessions of about ten minutes. It is free, it is kept on your device, and its certificates are unaccredited.",
+  "programs": [
+    {
+      "slug": "exploring",
+      "title": "Exploring Christianity",
+      "reader": "Not sure any of it is true? Start here.",
+      "outcome": "You will be able to say what Christians actually claim about Jesus, weigh the evidence for and against, and give the strongest objections a fair hearing.",
+      "plate": "lantern",
+      "tracks": [
+        "skeptical",
+        "who-was-jesus",
+        "hard-questions"
+      ]
+    },
+    {
+      "slug": "new-to-faith",
+      "title": "New to Faith",
+      "reader": "Just started following Jesus, or coming back? Start here.",
+      "outcome": "You will know the gospel well enough to explain it, have the habits of prayer and Bible reading in place, and know what to do when you fail or doubt.",
+      "plate": "house",
+      "tracks": [
+        "new-to-this",
+        "first-habits",
+        "stepped-back"
+      ]
+    },
+    {
+      "slug": "big-story",
+      "title": "The Bible's Big Story",
+      "reader": "Never read the Bible, or only in pieces? Start here.",
+      "outcome": "You will be able to tell the whole Bible as one story, from creation to new creation, and place any book or passage inside it.",
+      "plate": "books",
+      "tracks": [
+        "big-story",
+        "old-testament",
+        "new-testament"
+      ]
+    },
+    {
+      "slug": "study",
+      "title": "How to Study the Bible",
+      "reader": "Want to read a passage for yourself and understand it?",
+      "outcome": "You will be able to study any passage on your own: observe it, read it as the kind of writing it is, place it in its world, follow its words, and apply it honestly.",
+      "plate": "lens",
+      "tracks": [
+        "study-method",
+        "reading-by-genre",
+        "bible-world",
+        "study-tools"
+      ]
+    },
+    {
+      "slug": "books",
+      "title": "Deep in One Book",
+      "reader": "Ready to know one book of the Bible well?",
+      "outcome": "You will have read five books of the Bible closely, chapter by chapter, from the first story of Genesis to Paul's letter to the Romans.",
+      "plate": "book",
+      "tracks": [
+        "mark",
+        "john",
+        "genesis",
+        "psalms",
+        "romans"
+      ]
+    },
+    {
+      "slug": "beliefs",
+      "title": "What Christians Believe",
+      "reader": "Want to know what the church has always believed, and why?",
+      "outcome": "You will be able to explain the creed line by line, trace each core doctrine to Scripture, and state the views on contested questions fairly.",
+      "plate": "lectern",
+      "tracks": [
+        "apostles-creed",
+        "core-doctrines",
+        "where-christians-differ",
+        "deeper"
+      ]
+    },
+    {
+      "slug": "history",
+      "title": "Church History",
+      "reader": "Want to know how we got here?",
+      "outcome": "You will know the church's story across two thousand years, its councils, its failures and its renewals, and how each age read the Bible.",
+      "plate": "basilica",
+      "tracks": [
+        "church-history",
+        "culture-and-the-bible"
+      ]
+    },
+    {
+      "slug": "teens",
+      "title": "Faith for Teenagers",
+      "reader": "Thirteen to eighteen? This is yours.",
+      "outcome": "You will have weighed whether it is true, seen the Bible's whole story, and thought hard about who you are and how to live it now.",
+      "plate": "compass",
+      "tracks": [
+        "teens-is-it-true",
+        "teens-big-story",
+        "teens-who-am-i"
+      ],
+      "beside": true
+    },
+    {
+      "slug": "living",
+      "title": "Living It",
+      "reader": "Want the faith to carry the weight of an ordinary week?",
+      "outcome": "You will have brought Scripture to bear on marriage, work, money, rest, grief and forgiveness, with the church's long wisdom beside you.",
+      "plate": "table",
+      "tracks": [
+        "living-marriage",
+        "living-work-money",
+        "living-hard-seasons"
+      ]
+    },
+    {
+      "slug": "home",
+      "title": "Faith at Home",
+      "reader": "Leading a family? Start at the table.",
+      "outcome": "You will have a way to lead faith at home that fits your children's ages, answers their hard questions honestly, and follows the church's year together.",
+      "plate": "jar",
+      "tracks": [
+        "family",
+        "parents-guide",
+        "family-church-year"
+      ],
+      "beside": true
+    }
+  ]
+}

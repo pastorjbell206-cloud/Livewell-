@@ -489,12 +489,12 @@ be set before the Vercel build. Auth model: bcrypt password → HMAC-SHA256
 
 ### CI gates (`.github/workflows/ci.yml`)
 
-On every PR, five blocking steps: `pnpm check` → the content-gates step (63
-commands, the workflow file is the list; among them: 25 validators: scripture, design, life, studyguides, pathways,
+On every PR, five blocking steps: `pnpm check` → the content-gates step (65
+commands, the workflow file is the list; among them: 26 validators: scripture, design, life, studyguides, pathways,
 theology, politics, no-emdash, essays, content-integrity, skeptic-track,
 answers, argument-cases, links, needs (pages and drafts), grow-links, plans,
 workbooks, family, grow-voice, verse-guides, topics, catalogue, bible,
-bible-notes; the history-source verifier `verify-sources`; and the `--check`
+bible-notes, academy; the history-source verifier `verify-sources`; and the `--check`
 drift checks for the family year map, family index, topics index, search
 index, passage index, the seven cross-book Bible indexes (timeline, atlas,
 key words, hard passages, books at a glance, key chapters, themes), the
@@ -893,6 +893,23 @@ and leave a one-line pointer. Length is not the enemy; dead weight is.
   one: the Gospel of Mark" (/tracks/mark). Every track has a leader's guide
   (/tracks/<slug>/leader) and prints at /tracks/<slug>/print; `tracks.test.ts`
   holds both. `docs/work/elite/tracks.md` says how to write the next.
+- **The Academy (James, 2026-11-27: "make this like one of the best Bible
+  academies in the world ... go from not understanding the Bible to being
+  able to fully understand the Bible ... multiple tracks ... certificates.
+  Let people know that's unaccredited")**: `/academy` arranges the tracks
+  into ten programs, read from `client/public/academy/programs.json` (gate:
+  `scripts/validate-academy.mjs`; every written track belongs to exactly one
+  program). A program only orders tracks; progress is the tracks' own record
+  (`livewell-progress-tracks-v1`), never a second store. `/academy/<program>`
+  lays out its tracks as a path; `/academy/learned` ("What I've learned")
+  shows the reader's sessions and own answers; a finished track or program
+  prints a certificate at `/academy/certificate/<track|program>/<slug>` with
+  the name the reader types (kept on the device, `livewell-academy-name-v1`).
+  Every certificate, and every page that offers one, carries the
+  unaccredited notice (`UNACCREDITED` in `lib/academy.ts`). No account, no
+  fee, nothing sent. The menu's Academy door lists the programs
+  (`ACADEMY_PROGRAMS` in `components/nav/menu.ts`). `docs/work/academy/`
+  holds the curriculum and the brief for writing a track.
 - **The films' recorded voice (2026-11-22; James: "continue to add these")**:
   Listen on a Bible Explorer film plays one small MP3 a frame, a level
   (`client/public/explorer/audio/`), fetched only once Listen is on, with the

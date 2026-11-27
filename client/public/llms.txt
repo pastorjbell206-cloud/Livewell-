@@ -49,15 +49,19 @@ the site holds.
 - How to study the Bible (seven steps that work on any chapter, and a guided
   study that walks a reader through them on one chapter, one screen at a
   time): https://www.livewellbyjamesbell.co/study/how-to-study
-- Tracks (a few short sessions in order; every session opens a page or tool
-  on the site and ends with one question, one thing to do and one verse to
-  keep, with a guide for a group; twelve sessions for someone new to faith or
-  coming back, twelve for the skeptic that state the case against first,
-  twelve for someone who has stepped back from faith or from church, twelve
-  for going deeper in study, history and doctrine, twelve for a parent or
-  anyone leading a family, and sixteen through the Gospel of Mark, a chapter
-  at a time; every track has a leader's guide at /tracks/<slug>/leader, and
-  prints whole at /tracks/<slug>/print):
+- The LiveWell Academy (a free curriculum of ten programs, laid out as one road
+  from never having opened the Bible to reading it well: Exploring
+  Christianity, New to Faith, the Bible's Big Story, How to Study the Bible,
+  Deep in One Book, What Christians Believe, Church History and Living It,
+  with Faith for Teenagers and Faith at Home beside them; each program is a
+  few tracks in order, progress is kept on the reader's device, and a reader
+  who finishes a track or program can print a certificate, which is
+  unaccredited): https://www.livewellbyjamesbell.co/academy
+- Tracks (the Academy's unit of learning: a few short sessions in order;
+  every session opens a page or tool on the site and ends with one question,
+  one thing to do and one verse to keep, with a guide for a group; every
+  track has a leader's guide at /tracks/<slug>/leader, and prints whole at
+  /tracks/<slug>/print):
   https://www.livewellbyjamesbell.co/tracks
 - Bible Explorer (the whole Bible as one story on one illustrated map, for
   ages 7 to 16, written at two reading levels, with a drawn scene, verses and
