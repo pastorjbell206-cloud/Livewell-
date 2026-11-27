@@ -1,0 +1,128 @@
+{
+  "title": "Nicaea to Chalcedon",
+  "note": "Church history film, lesson 'The Great Councils', written 2026-11-27. Every fact comes from the lesson file client/public/history/essays/the-great-councils.json (see facts.md). Scripture is the Berean Standard Bible, copied from client/public/bible/text/john/1.json.",
+  "page": "/theology/history/the-great-councils",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "A fight over words",
+      "level": 0.2,
+      "lines": [
+        "Why would Christians fight over one word? It sounds like the smallest argument there is.",
+        "But underneath the great councils sat the largest question anyone can ask. Who is Jesus, and what does it mean to call Him God?"
+      ]
+    },
+    {
+      "id": "stakes",
+      "kicker": "Why the words mattered",
+      "level": 0.3,
+      "lines": [
+        "The church had worshiped Jesus from the beginning. But it had no agreed words yet for what it had always believed.",
+        "The whole gospel hung on it. If Jesus isn't truly God, the cross is a noble death and nothing more.",
+        "If He isn't truly human, our flesh was never touched by salvation."
+      ]
+    },
+    {
+      "id": "arius",
+      "kicker": "Alexandria",
+      "level": 0.4,
+      "lines": [
+        "The first crisis carried the name of Arius, a priest in Alexandria.",
+        "He taught, with real intelligence and piety, that the Son was the highest creature, but still a creature.",
+        "It sounded reverent. But a created savior can't bridge the gap between God and man.",
+        "The argument split the eastern churches. Crowds chanted slogans in the streets."
+      ]
+    },
+    {
+      "id": "nicaea",
+      "kicker": "Nicaea, 325",
+      "level": 0.5,
+      "lines": [
+        "In 325 the emperor Constantine, wanting unity in his empire, called bishops from across the world to Nicaea.",
+        "It was the first time the scattered church had gathered like this.",
+        "They settled it. The Son is of the same substance as the Father, true God from true God, begotten, not made.",
+        "They borrowed a word that isn't in Scripture to protect what Scripture means.",
+        "In the beginning was the Word, and the Word was with God, and the Word was God."
+      ],
+      "scripture": {
+        "reference": "John 1:1",
+        "translation": "Berean Standard Bible",
+        "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "after",
+      "kicker": "The long fight",
+      "level": 0.55,
+      "lines": [
+        "Nicaea didn't end the fight. For most of the next fifty-six years, emperors backed the Arian side.",
+        "Athanasius of Alexandria, who defended Nicaea most stubbornly, was exiled five times.",
+        "The truth didn't win because it was powerful. It won slowly, against power."
+      ]
+    },
+    {
+      "id": "constantinople",
+      "kicker": "Constantinople, 381",
+      "level": 0.62,
+      "lines": [
+        "By 381 a new question had surfaced. If the Son is fully God, what about the Holy Spirit?",
+        "The council at Constantinople, under the emperor Theodosius, confessed the Spirit as Lord and giver of life, worshiped and glorified with the Father and the Son.",
+        "Three teachers called the Cappadocians showed how the one God is one substance and three persons. Not three gods, and not one God wearing masks."
+      ]
+    },
+    {
+      "id": "ephesus",
+      "kicker": "Ephesus, 431",
+      "level": 0.7,
+      "lines": [
+        "Then the church had to ask how one Christ could be both God and man at once.",
+        "The councils weren't pure. Rivalry between Alexandria and Antioch and imperial politics turned theology into a contest for power.",
+        "At Ephesus in 431 the dispute was whether Mary could be called the bearer of God, and so whether her child was truly God from the first moment.",
+        "Nestorius, the bishop of Constantinople, was condemned, partly for what he taught and partly for the politics that crushed him."
+      ]
+    },
+    {
+      "id": "chalcedon",
+      "kicker": "Chalcedon, 451",
+      "level": 0.78,
+      "lines": [
+        "At Chalcedon in 451 the church reached its great settlement. Jesus Christ is one person in two natures, fully God and fully man.",
+        "The natures are united without confusion, never blended into some third thing, and without separation, never split into two sons."
+      ]
+    },
+    {
+      "id": "cost",
+      "kicker": "What it cost",
+      "level": 0.85,
+      "lines": [
+        "Chalcedon itself didn't unite the church. Ancient churches in Egypt, Syria and the East did not accept it, and that break has never healed.",
+        "Christians still read that council differently, and that wound is real.",
+        "Yet the definitions hold. The man on the cross was God, so the love shown there is God's own.",
+        "And He was truly human, so our flesh and death were carried into God. Take either away and the gospel falls apart."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The Word became flesh and made His dwelling among us.",
+        "When you say Jesus is fully God and fully man, you stand on ground that quarreling bishops marked out under fire.",
+        "We didn't earn it. The least we owe is to know what it cost, and to hold it as carefully as they did."
+      ],
+      "scripture": {
+        "reference": "John 1:14",
+        "translation": "Berean Standard Bible",
+        "text": "The Word became flesh and made His dwelling among us.",
+        "spoken": true
+      },
+      "titleCard": [
+        "Hold it as carefully as they did.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

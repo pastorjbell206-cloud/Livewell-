@@ -1,0 +1,128 @@
+{
+  "title": "The age of the martyrs",
+  "note": "Church history film, lesson 'The Age of the Martyrs' (/theology/history/the-age-of-martyrs), written 2026-11-27. Every fact comes from client/public/history/essays/the-age-of-martyrs.json; see facts.md. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/theology/history/the-age-of-martyrs",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Many picture the early church under Rome as one long manhunt, legions combing the provinces for believers.",
+        "That picture is wrong. The real question is harder. Why would anyone die rather than say one word?"
+      ]
+    },
+    {
+      "id": "rome",
+      "kicker": "What Rome wanted",
+      "level": 0.3,
+      "lines": [
+        "From Nero in 64 until 313, persecution was mostly local and occasional, the work of mobs and governors.",
+        "Around 112 a governor named Pliny wrote to the emperor Trajan. Trajan answered, don't seek Christians out, but punish any who are accused and won't recant.",
+        "So the church lived legal enough to grow, and illegal enough to die."
+      ]
+    },
+    {
+      "id": "gesture",
+      "kicker": "A pinch of incense",
+      "level": 0.4,
+      "lines": [
+        "Rome didn't want agreement. It wanted a gesture. A pinch of incense, a word calling Caesar lord, and the accused walked free.",
+        "Rome had room for one more god. It couldn't tolerate refusal, and Christians would worship Jesus and no one else."
+      ]
+    },
+    {
+      "id": "witnesses",
+      "kicker": "The witnesses",
+      "level": 0.45,
+      "lines": [
+        "Around 165 the philosopher Justin was put to death in Rome. Asked to sacrifice, he said no right-thinking person deserts truth for falsehood.",
+        "In 177, in Lyons, a slave girl named Blandina, whom her friends thought too frail to hold out, died still confessing Christ."
+      ]
+    },
+    {
+      "id": "perpetua",
+      "kicker": "Perpetua and Felicity",
+      "level": 0.55,
+      "lines": [
+        "In 203, in Carthage, a twenty-two-year-old mother named Perpetua was arrested with a pregnant slave, Felicity.",
+        "In her prison diary, her father begs her, weeping, to think of her nursing son and say the word.",
+        "She points to a water jug. Can it be called anything but what it is? Neither can she. She is a Christian.",
+        "She and Felicity died together. A philosopher, a slave, a young mother, and not one would say the word."
+      ]
+    },
+    {
+      "id": "storms",
+      "kicker": "The storms",
+      "level": 0.65,
+      "lines": [
+        "Then plague, invasion and inflation shook the empire. Emperors looking for a cause found the people who wouldn't sacrifice.",
+        "In 250 Decius ordered everyone to sacrifice and carry a certificate proving it. Many died. Many more complied.",
+        "In 258 Cyprian, bishop of Carthage, was executed. He met the sentence with the words, thanks be to God.",
+        "In 303 Diocletian ordered churches torn down, Scriptures burned, and at last everyone made to sacrifice.",
+        "In 311 a dying Galerius granted grudging toleration. Two years later Constantine made the faith legal.",
+        "Rome hadn't grown kind. It had given up."
+      ]
+    },
+    {
+      "id": "lapsed",
+      "kicker": "The ones who failed",
+      "level": 0.75,
+      "lines": [
+        "Most Christians weren't heroes. Later the lapsed, who had given in, came back ashamed, asking to return.",
+        "A Roman priest named Novatian said they could never be restored. His case was serious. The martyrs had died rather than say the word.",
+        "Cyprian and the larger church chose a slower, harder way. The lapsed could return through real repentance, case by case.",
+        "After all, the church's own Lord had been abandoned by every man He trained.",
+        "Then everyone deserted Him and fled."
+      ],
+      "scripture": {
+        "reference": "Mark 14:50",
+        "translation": "Berean Standard Bible",
+        "text": "Then everyone deserted Him and fled.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "forgiven",
+      "kicker": "A company of the forgiven",
+      "level": 0.85,
+      "lines": [
+        "And afterward, on a beach, He fed them breakfast.",
+        "Jesus came and took the bread and gave it to them, and He did the same with the fish.",
+        "The body of Christ isn't a hall of the undefeated. It's a company of the forgiven."
+      ],
+      "scripture": {
+        "reference": "John 21:13",
+        "translation": "Berean Standard Bible",
+        "text": "Jesus came and took the bread and gave it to them, and He did the same with the fish.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "seed",
+      "kicker": "The seed",
+      "level": 0.7,
+      "lines": [
+        "Around 197 Tertullian told Rome the blood of Christians is seed. True, but deaths alone argued no one into faith.",
+        "Christians stayed in plague cities and nursed the dying, pagans too. They took in abandoned babies and seated slave beside senator.",
+        "The church refused to make dying a strategy. Courage was demanded when the hour came, never as a performance."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "Within a century, Christians held the empire's power and began to reach for the sword. The people of the catacombs became the people of the courtroom.",
+        "What held the martyrs up was a settled conviction that Jesus was Lord and Caesar was not.",
+        "Most of us have never been asked their question. The era asks for more than admiration. It asks whom we worship."
+      ],
+      "titleCard": [
+        "Whom do we worship?",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

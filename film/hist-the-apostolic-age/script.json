@@ -1,0 +1,123 @@
+{
+  "title": "The first Christians",
+  "note": "Church history film, lesson 'The Apostolic Age' (c. AD 30-150), written 2026-11-27. Every fact comes from the LiveWell history lesson client/public/history/essays/the-apostolic-age.json; see facts.md. The one line naming how traditions read the line of leaders is a fair description added at the brief's request and flagged for James. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/theology/history/the-apostolic-age",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "room",
+      "kicker": "One borrowed room",
+      "level": 0.2,
+      "lines": [
+        "How did a few dozen frightened people in one borrowed room in Jerusalem become a church across the Roman world?",
+        "They followed a teacher Rome had executed as a criminal. They had no army, no money and no protection. They should have vanished inside a generation."
+      ]
+    },
+    {
+      "id": "roads",
+      "kicker": "Along Roman roads",
+      "level": 0.3,
+      "lines": [
+        "They didn't. The message went on foot and by ship along Roman roads, and within a single lifetime there were assemblies in Antioch, Corinth, Ephesus and Rome.",
+        "No central office directed it. The believers spoke instead of a Spirit poured out at Pentecost, and a tomb they insisted was empty."
+      ]
+    },
+    {
+      "id": "scattered",
+      "kicker": "Scattered",
+      "level": 0.4,
+      "lines": [
+        "The first believers were Jews, and the first conflict was a family quarrel among Jews over whether the crucified Jesus was the promised Messiah.",
+        "Stephen was stoned, and the church in Jerusalem was scattered.",
+        "Those who had been scattered preached the word wherever they went.",
+        "And Saul of Tarsus, who had hunted believers, became the apostle Paul, founding their assemblies for the rest of his life."
+      ],
+      "scripture": {
+        "reference": "Acts 8:4",
+        "translation": "Berean Standard Bible",
+        "text": "Those who had been scattered preached the word wherever they went.",
+        "spoken": true
+      }
+    },
+    {
+      "id": "rome",
+      "kicker": "Rome",
+      "level": 0.5,
+      "lines": [
+        "Then Rome noticed. In 64, the emperor Nero blamed Christians for the fire that burned much of the city.",
+        "Peter and Paul are both remembered as dying there in those years.",
+        "The believers didn't fight back. But they refused what the empire demanded, a pinch of incense to Caesar as lord. They had only one Lord.",
+        "And some who watched them die so calmly came in."
+      ]
+    },
+    {
+      "id": "after",
+      "kicker": "After the apostles",
+      "level": 0.55,
+      "lines": [
+        "Then the apostles died. What happens to a movement when the eyewitnesses are gone?",
+        "The answer came through leaders we call the Apostolic Fathers, who had known the apostles or their students. Their letters are the earliest Christian writings we have outside the New Testament."
+      ]
+    },
+    {
+      "id": "fathers",
+      "kicker": "Three pastors",
+      "level": 0.65,
+      "lines": [
+        "Around the year 96, Clement of Rome wrote to the quarreling church at Corinth, pleading for order and humility.",
+        "Around 110, Ignatius of Antioch wrote letters from the road to his death in Rome, urging the churches to stay united around their bishop.",
+        "Polycarp of Smyrna, who had known the apostle John, was put to death as an old man, refusing to curse the Christ he had served for eighty-six years.",
+        "These were pastors under fire, writing to keep their people faithful and together."
+      ]
+    },
+    {
+      "id": "one-body",
+      "kicker": "One body",
+      "level": 0.7,
+      "lines": [
+        "Their churches sat hundreds of miles apart. News moved at the speed of a walking man or a sailing ship.",
+        "Yet they acted like one body. They carried letters, tested traveling teachers, and sent money to churches in famine.",
+        "Churches Ignatius had never seen sent delegates to meet him.",
+        "It wasn't perfect. But the pull toward one body was strong."
+      ]
+    },
+    {
+      "id": "held",
+      "kicker": "What held them",
+      "level": 0.8,
+      "lines": [
+        "So what held them? Not the New Testament as one book. Settling which writings belonged took most of two centuries.",
+        "Four things held them instead. A rule of faith, a short summary of the story passed down by word of mouth.",
+        "Worship, the baptism and the breaking of bread that bound a believer in Rome to a believer in Antioch.",
+        "A line of trusted leaders, who had learned from those who had learned from the apostles.",
+        "And the Spirit they believed lived among them."
+      ]
+    },
+    {
+      "id": "readings",
+      "kicker": "Read in different ways",
+      "level": 0.85,
+      "lines": [
+        "Christians read that line of leaders differently.",
+        "Catholic and Orthodox Christians see in it the line of bishops that has guarded the faith ever since. Many Protestants see faithful witnesses, whose words are weighed by Scripture.",
+        "Both start from the same letters. This film doesn't choose between them."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "We hold the finished Scripture, and it's easy to think the first believers had less than we do.",
+        "They had less paper. They didn't have less faith.",
+        "They held to a crucified and risen Lord, and they held to one another.",
+        "We came in late. We could learn from how they waited."
+      ],
+      "titleCard": [
+        "Less paper. Not less faith.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

@@ -18,6 +18,7 @@ import MoreOnThis from "@/components/MoreOnThis";
 import { toParagraphs } from "@/lib/prose";
 import { SEOMeta } from "@/components/SEOMeta";
 import PageHead from "@/components/art/PageHead";
+import NarratedFilm from "@/components/NarratedFilm";
 import Roundel from "@/components/art/Roundel";
 import { AGE_ID_BY_NAME } from "@/lib/historyAges";
 import PageEndNav from "@/components/PageEndNav";
@@ -139,6 +140,8 @@ export default function HistoryEssay() {
           </nav>
         )}
       </PageHead>
+
+      {slug && data && <NarratedFilm page={`/theology/history/${slug}`} />}
 
       {data?.sections.map((s, i) => (
         <section key={s.id} style={{ background: i % 2 ? "var(--bone-warm)" : "var(--bone)", padding: "var(--s-5) var(--gutter)" }}>

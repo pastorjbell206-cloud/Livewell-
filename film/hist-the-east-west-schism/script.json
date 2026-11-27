@@ -1,0 +1,114 @@
+{
+  "title": "1054",
+  "note": "Church history film, lesson the-east-west-schism, written 2026-11-27. Every fact comes from the LiveWell lesson client/public/history/essays/the-east-west-schism.json (\"Why the Catholic and Orthodox Churches Split in 1054\"). See facts.md. Catholic and Orthodox views are each told in their own terms; the film takes no side. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/theology/history/the-east-west-schism",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Why are there Catholic churches and Orthodox churches? For a thousand years, they were one church.",
+        "We tend to picture the split as a door slammed in 1054. It was really a slow drift, centuries long."
+      ]
+    },
+    {
+      "id": "language",
+      "kicker": "The first wall",
+      "level": 0.3,
+      "lines": [
+        "The first wall was language. The East spoke Greek, and the West spoke Latin.",
+        "In time, few on either side could read the other's books. The West read Augustine. The East barely knew him.",
+        "And when you can't read your brother's reasoning, you slowly stop trusting it."
+      ]
+    },
+    {
+      "id": "empire",
+      "kicker": "Two capitals",
+      "level": 0.4,
+      "lines": [
+        "Politics widened the gap. The empire came to have two centers, Rome and Constantinople.",
+        "In the fifth century the western empire collapsed, and the Latin church looked more and more to the bishop of Rome to lead.",
+        "In the East, the emperor still reigned, and the patriarch stood alongside him."
+      ]
+    },
+    {
+      "id": "authority",
+      "kicker": "Who has the last word",
+      "level": 0.5,
+      "lines": [
+        "Underneath it all sat one question. When the whole church must decide, who has the last word?",
+        "In the West, and in the Catholic Church today, the answer is Rome. The bishop of Rome, the successor of Peter, has real authority to govern and to settle disputes for the whole church.",
+        "In the East, and in the Orthodox Church today, the answer is the bishops together, gathered in council. Rome was honored as first, and the honor was meant. But a patriarch is a brother, not a sovereign.",
+        "Neither answer was foolish. One gave the church a center when empires fell. The other guarded against one bishop claiming too much.",
+        "But both couldn't be true of the same church at once."
+      ]
+    },
+    {
+      "id": "creed",
+      "kicker": "One word in the creed",
+      "level": 0.6,
+      "lines": [
+        "The sharpest wound came from one Latin word.",
+        "The creed agreed by the councils said the Holy Spirit proceeds from the Father. In time, churches in the West added, and the Son. In Latin, filioque.",
+        "The West meant it reverently, to guard the full divinity of the Son.",
+        "The East saw two problems. It feared the word blurred the Father's place as the single source within the Godhead. And no one region, it held, could change the whole church's creed without a council.",
+        "So one word carried two arguments, one about the Spirit and one about authority."
+      ]
+    },
+    {
+      "id": "rupture",
+      "kicker": "1054",
+      "level": 0.72,
+      "lines": [
+        "After earlier disputes with Rome, like those of the patriarch Photius in the ninth century, the formal break came in 1054.",
+        "A papal delegation led by Cardinal Humbert came to Constantinople, and the talks collapsed in anger.",
+        "Humbert laid an excommunication on the altar of Hagia Sophia against the patriarch, Michael Cerularius. Cerularius answered in kind.",
+        "Both men had probably gone beyond their authority, and the pope who sent Humbert had already died.",
+        "So 1054 didn't cause the split. It made visible a separation that was already real."
+      ]
+    },
+    {
+      "id": "sealed",
+      "kicker": "The wound sealed",
+      "level": 0.85,
+      "lines": [
+        "What sealed the wound came later. In 1204, a Western crusading army, supposedly bound for the Holy Land, sacked Constantinople instead.",
+        "Christians attacked fellow Christians. After that, reconciliation became almost impossible. The East didn't forget.",
+        "Later attempts at union were forced, and the Eastern faithful rejected them as betrayals."
+      ]
+    },
+    {
+      "id": "still",
+      "kicker": "Still two",
+      "level": 0.55,
+      "lines": [
+        "Catholic in the West and Orthodox in the East, the two communions have never reunited.",
+        "In 1965, the pope and the patriarch lifted the excommunications of 1054 as a gesture of repentance. That gesture matters. The division remains."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "There's no hero and no villain here. Just two faithful traditions that loved the same Lord and lost the ability to love each other.",
+        "Jesus told His disciples how everyone would know them.",
+        "By this everyone will know that you are My disciples, if you love one another.”",
+        "No church can take unity for granted. It has to be kept."
+      ],
+      "scripture": {
+        "reference": "John 13:35",
+        "translation": "Berean Standard Bible",
+        "text": "By this everyone will know that you are My disciples, if you love one another.”",
+        "spoken": true
+      },
+      "titleCard": [
+        "Unity has to be kept.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}

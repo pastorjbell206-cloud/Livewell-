@@ -1,0 +1,126 @@
+{
+  "title": "Born again",
+  "note": "Doctrine film on the Study Bible page /study/bible/doctrines/regeneration. Every fact comes from client/public/bible/doctrines/regeneration.json (sections named in facts.md). Where Christians differ, the film names two questions, the order of faith and new birth (Reformed; Wesleyan and Arminian) and baptism (Catholic, Orthodox, Lutheran and many Anglicans; Baptist and believers' churches), each in terms its holders would accept, and takes no side. Scripture is the Berean Standard Bible, copied from client/public/bible/text/.",
+  "page": "/study/bible/doctrines/regeneration",
+  "translation": "Berean Standard Bible",
+  "gap": 1.0,
+  "chapters": [
+    {
+      "id": "question",
+      "kicker": "The question",
+      "level": 0.2,
+      "lines": [
+        "Can a person really change? Not just try harder, but change at the root?",
+        "Christians answer with two familiar words. Born again."
+      ]
+    },
+    {
+      "id": "confess",
+      "kicker": "What Christians confess",
+      "level": 0.3,
+      "lines": [
+        "Theologians call it regeneration, God's act of giving spiritual life to people who can't give it to themselves.",
+        "It's the Holy Spirit's work inside a person, and it shows in a changed life."
+      ]
+    },
+    {
+      "id": "heart",
+      "kicker": "Trouble in the heart",
+      "level": 0.4,
+      "lines": [
+        "The Old Testament finds the trouble in the heart, which in Hebrew is the center of thought, will and desire.",
+        "Before the flood, the Lord sees that every inclination of the human heart is evil. After it, he says so again. The flood cleansed the earth, but not the heart."
+      ]
+    },
+    {
+      "id": "promise",
+      "kicker": "A new heart",
+      "level": 0.5,
+      "lines": [
+        "Through Ezekiel, a priest among the exiles in Babylon, God commands his people to make themselves a new heart.",
+        "Then he promises to give them one, a heart of flesh for a heart of stone.",
+        "Next, Ezekiel sees a valley of dry bones. Breath enters them, and they live."
+      ]
+    },
+    {
+      "id": "night",
+      "kicker": "By night",
+      "level": 0.55,
+      "lines": [
+        "Nicodemus, a Pharisee on the ruling council, comes to Jesus by night.",
+        "Jesus replied, “Truly, truly, I tell you, no one can see the kingdom of God unless he is born again.”",
+        "The Greek word can mean again, or from above. Nicodemus hears the first. Many interpreters think both are meant."
+      ],
+      "scripture": {
+        "reference": "John 3:3",
+        "translation": "Berean Standard Bible",
+        "text": "Jesus replied, “Truly, truly, I tell you, no one can see the kingdom of God unless he is born again.”",
+        "spoken": true
+      }
+    },
+    {
+      "id": "apostles",
+      "kicker": "A new creation",
+      "level": 0.6,
+      "lines": [
+        "Paul calls anyone in Christ a new creation.",
+        "He also writes that God saved us through the washing of new birth and renewal by the Holy Spirit.",
+        "And Peter writes that believers are born again through the living and enduring word of God."
+      ]
+    },
+    {
+      "id": "history",
+      "kicker": "Through the centuries",
+      "level": 0.65,
+      "lines": [
+        "The early church tied the new birth closely to baptism. Around the year 155, Justin Martyr wrote that believers were brought to water and regenerated.",
+        "In the eighteenth century, revivals made the new birth their banner, in the preaching of George Whitefield and John Wesley."
+      ]
+    },
+    {
+      "id": "differ",
+      "kicker": "Where Christians differ",
+      "level": 0.75,
+      "lines": [
+        "Christians differ on two questions. First, the order of faith and new birth.",
+        "Reformed Christians teach that people dead in sin can't believe until God makes them alive. So the new birth comes first, in logic if not in time.",
+        "Wesleyan and Arminian Christians teach that no one turns to God by their own power, but grace goes before, so a person can believe or refuse. When they believe, God gives the new birth.",
+        "Second, baptism. Jesus spoke of being born of water and the Spirit.",
+        "Catholic, Orthodox and Lutheran churches, and many Anglicans, teach that God gives the new birth through baptism, to infants as well as adults, a gift to be lived in faith and repentance.",
+        "Baptists and other believers' churches teach that the Spirit gives new birth through the word when a person believes, and baptism is its public sign, for those who profess faith.",
+        "All of them confess the new birth as God's work by his Spirit, not a fresh start you make yourself."
+      ]
+    },
+    {
+      "id": "life",
+      "kicker": "In ordinary life",
+      "level": 0.85,
+      "lines": [
+        "That's humbling. Nicodemus was a respected teacher, and still had to be born again.",
+        "It's hopeful, too. No one is too far gone. Ezekiel's dry bones lived by the breath God sent.",
+        "People come to faith in many ways, some suddenly, some so gradually they can't name the day.",
+        "What matters is the signs of life now. Trust in Christ, love for other believers, a desire to do right, a readiness to confess sin.",
+        "Those signs are often weak. A newborn is still newly born."
+      ]
+    },
+    {
+      "id": "close",
+      "kicker": "",
+      "level": 0.3,
+      "lines": [
+        "The wind blows where it wishes. You hear its sound, but you do not know where it comes from or where it is going. So it is with everyone born of the Spirit.”",
+        "The new birth starts a life that will grow, the first taste of the renewal God has promised the whole creation."
+      ],
+      "scripture": {
+        "reference": "John 3:8",
+        "translation": "Berean Standard Bible",
+        "text": "The wind blows where it wishes. You hear its sound, but you do not know where it comes from or where it is going. So it is with everyone born of the Spirit.”",
+        "spoken": true
+      },
+      "titleCard": [
+        "Born again. Born from above.",
+        "LiveWell by James Bell"
+      ]
+    }
+  ]
+}
