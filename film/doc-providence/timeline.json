@@ -1,0 +1,265 @@
+{
+ "length": 235.37,
+ "chapters": [
+  {
+   "id": "question",
+   "kicker": "The question",
+   "level": 0.2,
+   "start": 1.7,
+   "end": 11.94,
+   "lines": [
+    {
+     "text": "Some days everything falls into place. Other days it all falls apart.",
+     "start": 2.6,
+     "end": 7.26
+    },
+    {
+     "text": "Is anyone holding any of this? Or is it all just chance?",
+     "start": 7.94,
+     "end": 11.04
+    }
+   ]
+  },
+  {
+   "id": "confess",
+   "kicker": "What the church confesses",
+   "level": 0.3,
+   "start": 11.14,
+   "end": 35.4,
+   "lines": [
+    {
+     "text": "The church's answer is an old word. Providence.",
+     "start": 12.04,
+     "end": 15.1
+    },
+    {
+     "text": "It means God's continuing care for the world He made.",
+     "start": 15.56,
+     "end": 18.42
+    },
+    {
+     "text": "Rain and harvest, the rise and fall of kings, and ordinary people's choices all fall within His care.",
+     "start": 19.08,
+     "end": 25.68
+    },
+    {
+     "text": "He keeps all things in being. He acts in and with what His creatures really do. And He directs everything toward its appointed end.",
+     "start": 26.24,
+     "end": 34.5
+    }
+   ]
+  },
+  {
+   "id": "joseph",
+   "kicker": "One event, two intentions",
+   "level": 0.4,
+   "start": 34.6,
+   "end": 64.86,
+   "lines": [
+    {
+     "text": "The Old Testament's great story of providence is Joseph.",
+     "start": 35.5,
+     "end": 38.66
+    },
+    {
+     "text": "His brothers sell him out of envy. He's falsely accused and imprisoned. But at each step, the Lord is with him.",
+     "start": 39.28,
+     "end": 46.02
+    },
+    {
+     "text": "Years later he tells his brothers that what they intended for evil, God intended for good, to preserve many lives.",
+     "start": 46.68,
+     "end": 53.56
+    },
+    {
+     "text": "One event, two intentions. The brothers are guilty of theirs, and God's purpose is good. Joseph doesn't excuse them, and he doesn't call the evil good.",
+     "start": 54.18,
+     "end": 63.96
+    }
+   ]
+  },
+  {
+   "id": "quiet",
+   "kicker": "What looks like chance",
+   "level": 0.5,
+   "start": 64.06,
+   "end": 86.3,
+   "lines": [
+    {
+     "text": "Ruth, a widow, goes out to gather grain and happens to come to the field of Boaz. The reader sees a hand she doesn't.",
+     "start": 64.96,
+     "end": 72.02
+    },
+    {
+     "text": "Proverbs says even the cast lot, which looks like pure chance, is decided by the Lord.",
+     "start": 72.7,
+     "end": 78.1
+    },
+    {
+     "text": "But Job and Ecclesiastes keep this from becoming a formula. Providence is real, and it isn't transparent.",
+     "start": 78.88,
+     "end": 85.4
+    }
+   ]
+  },
+  {
+   "id": "sparrows",
+   "kicker": "What Jesus taught",
+   "level": 0.55,
+   "start": 85.5,
+   "end": 106.22,
+   "lines": [
+    {
+     "text": "Jesus makes providence a reason not to be afraid.",
+     "start": 86.4,
+     "end": 89.02
+    },
+    {
+     "text": "Are not two sparrows sold for a penny? Yet not one of them will fall to the ground apart from the will of your Father.",
+     "start": 89.72,
+     "end": 96.12
+    },
+    {
+     "text": "But He won't make it an easy answer to suffering. Of eighteen people killed when a tower at Siloam fell, He said they weren't worse sinners than others.",
+     "start": 97.04,
+     "end": 105.32
+    }
+   ]
+  },
+  {
+   "id": "cross",
+   "kicker": "The cross",
+   "level": 0.65,
+   "start": 105.42,
+   "end": 122.92,
+   "lines": [
+    {
+     "text": "The cross is the greatest case of the pattern seen in Joseph.",
+     "start": 106.32,
+     "end": 109.34
+    },
+    {
+     "text": "Peter said Jesus was delivered up by God's set plan, and put to death by lawless hands.",
+     "start": 110.16,
+     "end": 115.58
+    },
+    {
+     "text": "The act was lawless, and those who did it were guilty. It was also God's plan to save the world.",
+     "start": 116.24,
+     "end": 122.02
+    }
+   ]
+  },
+  {
+   "id": "history",
+   "kicker": "An old argument",
+   "level": 0.7,
+   "start": 122.12,
+   "end": 141.34,
+   "lines": [
+    {
+     "text": "The first Christians taught this in a world already arguing about it.",
+     "start": 123.02,
+     "end": 126.36
+    },
+    {
+     "text": "Stoics taught something close to impersonal fate. Epicureans said the gods took no interest in the world.",
+     "start": 127.0,
+     "end": 133.14
+    },
+    {
+     "text": "They rejected both. God is personal, He cares, and His rule doesn't erase human responsibility.",
+     "start": 133.76,
+     "end": 140.44
+    }
+   ]
+  },
+  {
+   "id": "differ",
+   "kicker": "Where Christians differ",
+   "level": 0.75,
+   "start": 140.54,
+   "end": 183.32,
+   "lines": [
+    {
+     "text": "Christians have long disagreed about how God's rule fits with free human choices.",
+     "start": 141.44,
+     "end": 145.78
+    },
+    {
+     "text": "In the Reformed and Thomist account, God ordains all that comes to pass, even free choices, which stay genuinely human and responsible. Evil remains wholly the creature's.",
+     "start": 146.46,
+     "end": 157.76
+    },
+    {
+     "text": "In the Arminian and Wesleyan account, God governs and knows all things, but gives people real freedom to choose otherwise. He permits much He doesn't cause, including sin.",
+     "start": 158.42,
+     "end": 169.68
+    },
+    {
+     "text": "In the Molinist account, God knows what any free creature would freely do in any situation, and chose a world where His purposes come about through free choices.",
+     "start": 170.04,
+     "end": 179.66
+    },
+    {
+     "text": "Each one points to Scripture for its answer.",
+     "start": 180.28,
+     "end": 182.42
+    }
+   ]
+  },
+  {
+   "id": "life",
+   "kicker": "What it changes",
+   "level": 0.85,
+   "start": 182.52,
+   "end": 215.5,
+   "lines": [
+    {
+     "text": "In 1563 the Heidelberg Catechism said providence teaches patience in hard times, thankfulness in good ones, and trust for the future.",
+     "start": 183.42,
+     "end": 192.78
+    },
+    {
+     "text": "That trust isn't knowing why each thing happens. Joseph saw his story only years later. Job was never told why.",
+     "start": 193.48,
+     "end": 200.52
+    },
+    {
+     "text": "It frees you to plan and work without believing everything depends on you.",
+     "start": 201.12,
+     "end": 204.74
+    },
+    {
+     "text": "When wrong is done to you, you can name it, grieve it, and still expect that the God who turned the cross into the world's salvation hasn't let go of your life.",
+     "start": 205.44,
+     "end": 214.6
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "kicker": "",
+   "level": 0.3,
+   "start": 214.7,
+   "end": 229.268,
+   "lines": [
+    {
+     "text": "Make your plans the way the letter of James teaches. If the Lord is willing.",
+     "start": 215.6,
+     "end": 219.76
+    },
+    {
+     "text": "A man\u2019s heart plans his course, but the LORD determines his steps.",
+     "start": 220.38,
+     "end": 224.42
+    },
+    {
+     "text": "Take the next step. The world isn't yours to carry.",
+     "start": 225.06,
+     "end": 228.368
+    }
+   ]
+  }
+ ]
+}
